@@ -1,35 +1,48 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact World Clean Biz for cleaning industry information, sourcing context, market reports, World Clean Expo, media, partnerships, and cooperation."
+    "Share your cleaning industry question with World Clean Biz for sourcing support, market information, industry connections, World Clean Expo interest, media cooperation, or business opportunities."
 };
 
-const inquiryPaths = [
-  "Industry topic or article suggestion",
-  "Sourcing or supplier context question",
-  "Market report or category research request",
-  "World Clean Expo, media, or partnership interest"
+const helpCards = [
+  {
+    title: "Industry Information",
+    text: "Market trends, category questions, industry developments and product signals."
+  },
+  {
+    title: "Sourcing / OEM",
+    text: "Product sourcing, OEM, ODM, private label and China supplier questions."
+  },
+  {
+    title: "Market Reports",
+    text: "Category research, market intelligence and report requests."
+  },
+  {
+    title: "World Clean Expo",
+    text: "Exhibiting, visiting, sponsorship and event cooperation."
+  },
+  {
+    title: "Media & Cooperation",
+    text: "Interviews, partnerships, content cooperation and industry collaboration."
+  }
 ];
 
-const inquiryExamples = [
+const reachOutReasons = [
   {
-    title: "Article or topic suggestion",
-    text: "Example: Please cover European floor care demand, distributor changes, or a product category update."
+    title: "Industry Knowledge",
+    text: "20+ years of cleaning industry experience across products, factories, brands and supply chains."
   },
   {
-    title: "Sourcing intelligence request",
-    text: "Example: We need context on robot vacuum suppliers for a mid-range private label program."
+    title: "Global Industry Network",
+    text: "Connections with manufacturers, suppliers, brands, buyers and industry professionals."
   },
   {
-    title: "Market report request",
-    text: "Example: We want a focused note on commercial cleaning equipment demand in a target region."
-  },
-  {
-    title: "Expo or media cooperation",
-    text: "Example: We are interested in exhibitor, sponsor, visitor, or editorial cooperation."
+    title: "Business Opportunities",
+    text: "Support for product opportunities, sourcing projects, market information and industry collaboration."
   }
 ];
 
@@ -38,61 +51,105 @@ export default function ContactPage() {
     <>
       <section className="page-hero page-hero-contact">
         <div className="container">
-          <p className="eyebrow">Contact</p>
+          <p className="eyebrow">Inquiry</p>
           <h1>Share Your Cleaning Industry Question</h1>
           <p>
-            Send a focused question about sourcing, product categories, market
-            reports, World Clean Expo, media cooperation or industry
-            collaboration.
+            Whether you're looking for sourcing support, market information,
+            industry connections or business opportunities, we'd love to hear
+            from you.
           </p>
+          <div className="hero-actions">
+            <Link className="button" href="#inquiry-form">
+              Send Your Inquiry
+            </Link>
+          </div>
         </div>
       </section>
+
       <section className="section">
-        <div className="container grid-2">
-          <div>
-            <h2>Submit a focused industry question</h2>
-            <p>
-              The first-phase contact system is intentionally simple. The form
-              opens an email draft to denny@worldcleanbiz.com with your inquiry
-              details, so the conversation can start with useful context.
-            </p>
-            <ul className="feature-list">
-              {inquiryPaths.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <div className="tag-list">
-              <span className="tag">Industry Information</span>
-              <span className="tag">Sourcing / OEM</span>
-              <span className="tag">World Clean Expo</span>
-              <span className="tag">Market Report</span>
-              <span className="tag">Media Cooperation</span>
-            </div>
-          </div>
-          <div className="card">
-            <ContactForm />
-          </div>
-        </div>
-      </section>
-      <section className="section section-soft">
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Inquiry Examples</p>
-              <h2>Examples of useful questions to send</h2>
+              <p className="eyebrow">Inquiry Types</p>
+              <h2>What Can We Help With?</h2>
               <p>
-                A clear question makes it easier to connect your request with
-                the right information, report direction, or cooperation path.
+                Choose the direction that best matches your question, project
+                or cooperation idea.
               </p>
             </div>
           </div>
-          <div className="case-grid">
-            {inquiryExamples.map((item) => (
-              <div className="case-card" key={item.title}>
+          <div className="case-grid contact-help-grid">
+            {helpCards.map((item) => (
+              <div className="case-card contact-help-card" key={item.title}>
+                <div className="platform-icon" aria-hidden="true">
+                  {item.title.slice(0, 1)}
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-soft" id="inquiry-form">
+        <div className="container grid-2">
+          <div>
+            <p className="eyebrow">Inquiry Form</p>
+            <h2>Send Your Inquiry</h2>
+            <p>
+              Tell us what you are exploring. The more specific your question,
+              the easier it is for us to understand how we can help.
+            </p>
+            <p className="meta">
+              Please include your product category, target market, expected
+              quantity or business goal if relevant.
+            </p>
+          </div>
+          <div className="contact-form-panel">
+            <ContactForm />
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">Why Reach Out</p>
+              <h2>Why Reach Out?</h2>
+              <p>
+                World Clean Biz connects industry knowledge, supplier context
+                and business opportunities across the cleaning industry.
+              </p>
+            </div>
+          </div>
+          <div className="grid-3">
+            {reachOutReasons.map((item) => (
+              <div className="card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container cta-band">
+          <div className="grid-2">
+            <div>
+              <h2>Every Great Business Opportunity Starts With A Conversation.</h2>
+              <p>
+                Tell us what you're exploring. We'll help you find the right
+                direction.
+              </p>
+            </div>
+            <div>
+              <Link className="button" href="#inquiry-form">
+                Send Your Inquiry
+              </Link>
+            </div>
           </div>
         </div>
       </section>

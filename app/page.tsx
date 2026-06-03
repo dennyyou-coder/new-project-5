@@ -1,42 +1,11 @@
 import Link from "next/link";
 import { getInsights } from "@/lib/content";
 
-const platformCards = [
-  {
-    title: "Signals",
-    text: "Track product, category and channel movement.",
-    href: "/insights",
-    cta: "Explore"
-  },
-  {
-    title: "Reports",
-    text: "Turn market noise into focused business context.",
-    href: "/market-reports",
-    cta: "View"
-  },
-  {
-    title: "Sourcing",
-    text: "Understand suppliers, OEM paths and buyer questions.",
-    href: "/sourcing",
-    cta: "Learn More"
-  },
-  {
-    title: "Expo",
-    text: "Follow trade show topics, exhibitors and opportunities.",
-    href: "/world-clean-expo",
-    cta: "Explore"
-  }
-];
-
-const centerModules = [
-  "Industry Insights",
-  "Market Reports",
-  "Sourcing Context",
-  "Expo Intelligence",
-  "Product Categories",
-  "Supplier-Side Context",
-  "Market Signals",
-  "Global Expo Intelligence"
+const capabilityPoints = [
+  "Industry Signals",
+  "Supplier Context",
+  "Market Notes",
+  "Expo Intelligence"
 ];
 
 const signalTitles: Record<string, string> = {
@@ -68,13 +37,6 @@ export default function HomePage() {
 
   return (
     <>
-      <div className="announcement">
-        <div className="container announcement-inner">
-          <span>The global home for cleaning industry intelligence, sourcing context, market signals, and expo insights.</span>
-          <Link href="/insights">Track latest signals</Link>
-        </div>
-      </div>
-
       <section className="hero">
         <div className="container hero-grid">
           <div>
@@ -155,42 +117,16 @@ export default function HomePage() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Platform Capability</p>
-              <h2>Organize signals before they become decisions</h2>
-              <p>
-                Market movement, sourcing context, category change and trade
-                show intelligence in one global industry view.
-              </p>
-            </div>
-          </div>
-          <div className="platform-grid platform-entry-grid">
-            {platformCards.map((card) => (
-              <Link className="platform-card platform-entry-card" href={card.href} key={card.title}>
-                <div className="platform-icon" aria-hidden="true">
-                  {card.title.slice(0, 1)}
-                </div>
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
-                <span>{card.cta}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-soft">
-        <div className="container grid-2">
-          <div className="image-panel image-panel-global">
-            <div>
-              <p className="eyebrow">Global Industry Center</p>
               <h2>Read the cleaning industry as a connected system</h2>
               <p>
-                Category movement, regional demand, supply capability and trade
-                show signals viewed together.
+                World Clean Biz connects market signals, supplier context,
+                sourcing questions and trade show intelligence into one
+                industry view.
               </p>
             </div>
           </div>
           <div className="module-grid">
-            {centerModules.map((item) => (
+            {capabilityPoints.map((item) => (
               <div className="module-chip" key={item}>
                 {item}
               </div>
@@ -224,39 +160,6 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-          <div className="insight-prompt">
-            <div>
-              <p className="eyebrow">Topic Requests</p>
-              <h3>Have a signal worth tracking?</h3>
-              <p>
-                Share a category, region, supplier question or expo topic.
-              </p>
-            </div>
-            <Link className="button" href="/contact">
-              Share Signal
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-soft">
-        <div className="container denny-section">
-          <div className="denny-panel">
-            <p className="eyebrow">Trust Source</p>
-            <h2>Built by Denny You</h2>
-            <p>
-              A cleaning industry operator connecting information, sourcing
-              context, supply-side knowledge and trade show opportunities.
-            </p>
-            <div className="denny-points">
-              <span>Two decades in the cleaning industry</span>
-              <span>Industry observer and content creator</span>
-              <span>Trade show organizer and supply chain connector</span>
-            </div>
-            <Link className="button" href="/contact">
-              Contact Denny You
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -264,15 +167,16 @@ export default function HomePage() {
         <div className="container cta-band">
           <div className="grid-2">
             <div>
-              <h2>Make your next cleaning industry move with better context</h2>
+              <h2>Have a cleaning industry question worth tracking?</h2>
               <p>
-                Ask about an industry topic, sourcing direction, market report,
-                expo cooperation, media request, or business opportunity.
+                Share a category, region, supplier question or expo topic. We
+                may turn it into a future signal, market note or sourcing
+                discussion.
               </p>
             </div>
             <div className="hero-actions">
               <Link className="button" href="/contact">
-                Submit an Inquiry
+                Share Inquiry
               </Link>
               <Link className="button-secondary" href="/insights">
                 Read Insights

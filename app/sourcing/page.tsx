@@ -4,65 +4,96 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Sourcing",
   description:
-    "Sourcing intelligence for cleaning buyers covering product categories, supplier types, OEM paths, private label options, and sourcing risks."
+    "Product opportunity and sourcing support for cleaning industry buyers, covering product decisions, supplier access, market opportunities, OEM, private label, and cleaning product development."
 };
 
-const sourcingIntelligenceTopics = [
-  "Buyer Questions",
-  "Supplier Signals",
-  "Category Context",
-  "OEM / ODM Paths",
-  "Private Label Considerations",
-  "Risk Checks"
-];
-
-const process = [
-  "Clarify category, target market, channel, and buyer requirements",
-  "Understand available supplier types and product directions",
-  "Compare OEM, ODM, private label, and purchasing paths",
-  "Prepare better questions before factory comparison or negotiation"
-];
-
-const buyerQuestions = [
-  "Which product category fits my target market?",
-  "Should I choose OEM, ODM, private label, or inventory purchasing?",
-  "What supplier profile is suitable for my channel?",
-  "How can I reduce quality, compliance, and after-sales risk?"
-];
-
-const sourcingSignals = [
-  "Product positioning and category maturity",
-  "Supplier capability and cooperation model",
-  "Market fit, compliance risk, and after-sales expectation",
-  "Channel demand, pricing pressure, and timing"
-];
-
-const sourcingScenarios = [
+const buyerAdvantages = [
   {
-    title: "Retail buyer building a robot vacuum line",
-    text: "Clarify price tier, navigation expectation, wet cleaning feature set, after-sales model, and supplier type."
+    title: "Deep Industry Access Few Others Have",
+    text: "World Clean Biz is built by Denny You, one of the most recognized voices in the global cleaning industry. Through industry media, conferences, factory visits and trade shows, he tracks product launches, technology shifts, supplier movements and market opportunities."
   },
   {
-    title: "Distributor comparing floor care equipment",
-    text: "Review category maturity, spare parts needs, local service requirements, and commercial buyer use cases."
+    title: "Industry Intelligence Before Everyone Else",
+    text: "Every year we speak with manufacturers, brands, distributors, retailers and industry decision makers across the cleaning industry. Most sourcing companies only see factories. We see the entire ecosystem."
   },
   {
-    title: "Brand exploring private label cleaning appliances",
-    text: "Map OEM and ODM options, packaging expectations, compliance questions, and channel positioning."
+    title: "20+ Years in the Cleaning Industry",
+    text: "Our team has spent more than two decades inside the cleaning industry, covering products, technologies, factories, costs, certifications and market trends across major cleaning categories."
   },
   {
-    title: "Importer reviewing special purchasing opportunities",
-    text: "Check product fit, market timing, inventory risk, specification gaps, and negotiation priorities."
+    title: "Find Winning Products Earlier",
+    text: "Instead of guessing what may sell next, buyers gain access to products, technologies and category opportunities already proving successful in the market."
+  },
+  {
+    title: "Launch 3-6 Months Faster",
+    text: "With direct access to manufacturers, suppliers and industry networks, we help buyers identify products, evaluate suppliers and start projects faster than building everything from scratch."
+  },
+  {
+    title: "Product Development Capabilities Similar to Leading Brands",
+    text: "We help evaluate product concepts, features, technologies, positioning and differentiation so buyers can build products that stand out, not products that look the same as everyone else's."
+  },
+  {
+    title: "Access More Than 50 Product Opportunities Every Year",
+    text: "Each year we review dozens of new products, supplier innovations and emerging technologies, giving buyers a continuous pipeline of opportunities."
+  },
+  {
+    title: "Make More Profit With Better Product Decisions",
+    text: "The difference between a successful product and an average product can be worth hundreds of thousands of dollars. Better products, better suppliers and faster execution create stronger long-term growth."
   }
 ];
 
-const supplierProfiles = [
-  "OEM factories with export-ready production systems",
-  "ODM partners with existing product platforms",
-  "Component and technology suppliers",
-  "Specialized category manufacturers",
-  "Inventory and project purchasing sources",
-  "Channel partners for distribution cooperation"
+const opportunityQuestions = [
+  "Which products are growing fastest",
+  "Which technologies are becoming mainstream",
+  "Which suppliers are worth talking to",
+  "Which opportunities competitors haven't discovered yet",
+  "Which categories are worth entering",
+  "Which products can generate meaningful profit"
+];
+
+const sourceCategories = [
+  {
+    title: "Vacuum Cleaners",
+    text: "Cordless stick vacuums, canister vacuums, upright vacuums, wet and dry vacuums and specialty cleaning products."
+  },
+  {
+    title: "Robot Vacuums",
+    text: "Robot vacuum cleaners, robot vacuum and mop combinations, navigation systems and related accessories."
+  },
+  {
+    title: "Floor Care Products",
+    text: "Floor washers, wet dry floor cleaners, carpet cleaners and related cleaning solutions."
+  },
+  {
+    title: "Pool Cleaning Products",
+    text: "Robotic pool cleaners, cordless pool cleaners, above-ground and in-ground pool cleaning systems."
+  },
+  {
+    title: "Commercial Cleaning Equipment",
+    text: "Commercial vacuum cleaners, floor scrubbers and professional cleaning solutions."
+  },
+  {
+    title: "Components & Accessories",
+    text: "Motors, batteries, brushes, filters, electronics and key cleaning product components."
+  }
+];
+
+const workSteps = [
+  "Share your product idea, category or sourcing goal.",
+  "We evaluate market opportunities, supplier landscape and product potential.",
+  "We identify suitable manufacturers and product options.",
+  "We coordinate quotations, samples and supplier communication.",
+  "We support product development, sourcing discussions and project follow-up."
+];
+
+const buyerRequests = [
+  "I need a private label robot vacuum.",
+  "I want to launch a cordless pool cleaner.",
+  "I need a reliable OEM supplier in China.",
+  "I want to compare multiple factories before making a decision.",
+  "I need new product ideas for my market.",
+  "I want a sourcing office in China without building a local team.",
+  "I want to find the next growth category before competitors."
 ];
 
 export default function SourcingPage() {
@@ -71,130 +102,107 @@ export default function SourcingPage() {
       <section className="page-hero page-hero-sourcing">
         <div className="container">
           <p className="eyebrow">Sourcing Intelligence</p>
-          <h1>Sourcing Intelligence for Cleaning Buyers</h1>
+          <h1>Make More Money With Better Product Decisions</h1>
           <p>
-            Understand product categories, supplier types, OEM paths, private
-            label options and sourcing risks before supplier comparison.
+            Most sourcing companies help you find factories. We help you find
+            the next million-dollar product.
           </p>
+          <div className="hero-actions">
+            <Link className="button" href="/contact">
+              Start My Sourcing Project
+            </Link>
+          </div>
         </div>
       </section>
+
       <section className="section">
         <div className="container grid-2">
-          <div>
-            <h2>Sourcing starts before supplier comparison</h2>
+          <div className="sourcing-lead">
+            <h2>The biggest mistake buyers make is not choosing the wrong supplier.</h2>
+            <p>It is choosing the wrong product.</p>
             <p>
-              World Clean Biz helps buyers clarify category movement, supplier
-              models, channel fit and risk signals before the factory shortlist.
+              A better factory might save you 5%. The right product can
+              increase your sales by 500%.
             </p>
-            <div className="tag-list">
-              {sourcingIntelligenceTopics.map((category) => (
-                <span className="tag" key={category}>
-                  {category}
-                </span>
-              ))}
-            </div>
-            <ul className="feature-list">
-              <li>Review product direction before contacting suppliers.</li>
-              <li>Match supplier profiles with category, channel, and positioning needs.</li>
-              <li>Support OEM, ODM, private label, and special purchasing opportunities.</li>
-            </ul>
+            <p>
+              That is why we start with market opportunities, product trends
+              and industry intelligence before discussing suppliers.
+            </p>
           </div>
           <div className="highlight-panel">
-            <div className="module-kicker">Sourcing Inquiry</div>
-            <h3>Need sourcing context before contacting suppliers?</h3>
-            <p>
-              Share your product category, target market, channel and sourcing
-              question. We help clarify the right direction before supplier
-              comparison.
-            </p>
-            <p>
-              <Link className="button" href="/contact">
-                Share Sourcing Inquiry
-              </Link>
-            </p>
+            <div className="module-kicker">Product Opportunity First</div>
+            <h3>The goal is not to buy products.</h3>
+            <p>The goal is to build profitable product businesses.</p>
+            <Link className="button" href="/contact">
+              Start My Sourcing Project
+            </Link>
           </div>
         </div>
       </section>
+
       <section className="section section-soft">
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Sourcing Intelligence</p>
-              <h2>Not a supplier directory. A decision context layer.</h2>
+              <p className="eyebrow">Why Buyers Work With Us</p>
+              <h2>Industry access, product judgment and supplier context</h2>
               <p>
-                A cleaner way to frame buyer questions, supplier signals,
-                category context and sourcing risk.
-              </p>
-            </div>
-          </div>
-          <div className="platform-grid">
-            {sourcingIntelligenceTopics.map((item) => (
-              <div className="platform-card compact-card" key={item}>
-                <div className="platform-icon" aria-hidden="true">
-                  {item.slice(0, 1)}
-                </div>
-                <h3>{item}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Buyer Questions</p>
-              <h2>Good sourcing starts with better questions</h2>
-              <p>
-                The goal is to understand product, supplier, market, channel
-                and risk level before cost negotiation begins.
-              </p>
-            </div>
-          </div>
-          <div className="grid-2">
-            {buyerQuestions.map((question) => (
-              <div className="card" key={question}>
-                <h3>{question}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="section section-soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Decision Signals</p>
-              <h2>Signals to clarify before supplier outreach</h2>
-              <p>
-                These signals affect product choice, partner fit, risk and
-                timing.
-              </p>
-            </div>
-          </div>
-          <div className="grid-2">
-            {sourcingSignals.map((item) => (
-              <div className="card" key={item}>
-                <h3>{item}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Example Scenarios</p>
-              <h2>What sourcing intelligence can look like in practice</h2>
-              <p>
-                These sample cases show the type of information a buyer may
-                need before supplier comparison becomes useful.
+                Buyers work with us because we see more than factories. We see
+                product signals, supplier movement, technology shifts and market
+                opportunities across the cleaning industry.
               </p>
             </div>
           </div>
           <div className="case-grid">
-            {sourcingScenarios.map((item) => (
+            {buyerAdvantages.map((item) => (
+              <div className="case-card sourcing-advantage-card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container grid-2">
+          <div>
+            <p className="eyebrow">What Makes Us Different</p>
+            <h2>Find the right opportunity before comparing suppliers</h2>
+            <p>
+              Most sourcing companies help you compare suppliers. We help you
+              identify the right opportunity before comparing suppliers.
+            </p>
+            <p>
+              Many buyers come to us not because they need a factory. They come
+              to us because they want to know what to build next.
+            </p>
+          </div>
+          <div className="card">
+            <h3>Buyer questions we help answer</h3>
+            <ul className="feature-list">
+              {opportunityQuestions.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-soft">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">What We Source</p>
+              <h2>Cleaning product categories with business potential</h2>
+              <p>
+                Finding a factory is easy. Finding the right product at the
+                right time is much harder.
+              </p>
+            </div>
+          </div>
+          <div className="case-grid">
+            {sourceCategories.map((item) => (
               <div className="case-card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
@@ -203,21 +211,21 @@ export default function SourcingPage() {
           </div>
         </div>
       </section>
+
       <section className="section">
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Process</p>
-              <h2>A practical inquiry path</h2>
+              <p className="eyebrow">How We Work</p>
+              <h2>From product idea to sourcing project</h2>
               <p>
-                The first-stage process keeps the discussion simple, but gives
-                enough structure to understand whether a request is ready for
-                deeper supplier or market review.
+                We start with product potential, then move into supplier
+                identification, quotation, samples and project follow-up.
               </p>
             </div>
           </div>
           <div className="grid-2">
-            {process.map((item, index) => (
+            {workSteps.map((item, index) => (
               <div className="card" key={item}>
                 <div className="meta">Step {index + 1}</div>
                 <h3>{item}</h3>
@@ -226,43 +234,49 @@ export default function SourcingPage() {
           </div>
         </div>
       </section>
+
       <section className="section section-soft">
         <div className="container grid-2">
           <div className="image-panel image-panel-sourcing">
             <div>
-              <p className="eyebrow">Supplier Landscape</p>
-              <h2>From product idea to supplier profile</h2>
+              <p className="eyebrow">Typical Buyer Requests</p>
+              <h2>Buyers come to us when product direction matters</h2>
               <p>
-                The right supplier is not only a factory with a price. It is a
-                match between category, capability, channel, service model, and
-                risk tolerance.
+                The right product can create years of growth. The wrong product
+                can waste months of supplier comparison.
               </p>
             </div>
           </div>
           <div className="card">
-            <h3>Supplier profiles to map</h3>
             <ul className="feature-list">
-              {supplierProfiles.map((item) => (
+              {buyerRequests.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
         </div>
       </section>
+
       <section className="section">
         <div className="container cta-band">
           <div className="grid-2">
             <div>
-              <h2>Need sourcing context before contacting suppliers?</h2>
+              <p className="eyebrow">Start My Sourcing Project</p>
+              <h2>Your next million-dollar product starts here</h2>
               <p>
-                Share your product category, target market, channel and
-                sourcing question. We help clarify the right direction before
-                supplier comparison.
+                Most buyers spend their time comparing suppliers. The most
+                successful buyers spend their time identifying the right
+                opportunity. Share your target market, product category or
+                business goal. Let us help you discover the next product worth
+                building before the market gets crowded.
+              </p>
+              <p className="meta">
+                Product Category / Target Market / Expected Quantity / Business Goal
               </p>
             </div>
             <div>
               <Link className="button" href="/contact">
-                Share Sourcing Inquiry
+                Start My Sourcing Project
               </Link>
             </div>
           </div>

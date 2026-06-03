@@ -4,68 +4,55 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Market Reports",
   description:
-    "Market intelligence for cleaning industry decisions, including focused notes, category research, and regional demand signals."
+    "Free market reports, category insights and opportunity analysis for cleaning industry buyers, brands, distributors and professionals."
 };
 
-const reports = [
-  "Category Reports",
-  "Regional Reports",
-  "Buyer & Channel Notes"
+const featuredHighlights = [
+  "Market Growth Trends",
+  "Leading Brands",
+  "Supplier Landscape",
+  "Product Opportunities",
+  "Future Outlook"
 ];
 
-const popularTopics = [
-  "Robot Vacuums",
-  "Floor Care",
-  "Pool Cleaning",
-  "Commercial Cleaning",
-  "Europe",
-  "North America",
-  "Middle East",
-  "Private Label"
-];
-
-const useCases = [
-  "Understand category demand before sourcing",
-  "Evaluate regional market opportunities",
-  "Prepare distributor or buyer discussions",
-  "Support product planning and positioning"
-];
-
-const reportMethod = [
-  "Start from a clear category, region, or buyer question",
-  "Collect visible market signals and supply-side context",
-  "Translate findings into decisions readers can act on"
-];
-
-const sampleReports = [
+const popularReports = [
   {
-    title: "Global Robot Vacuum Market Brief",
-    meta: "Category intelligence",
-    text: "A practical view of navigation upgrades, base station demand, premium pricing, and supplier readiness."
+    title: "European Pool Cleaner Market Overview",
+    text: "A focused look at pool cleaner demand, product categories, buyer channels and regional opportunity signals."
   },
   {
-    title: "Europe Floor Care Demand Outlook",
-    meta: "Regional market note",
-    text: "Signals from distributor channels, energy efficiency expectations, and professional floor care needs."
+    title: "Global Robot Vacuum Market Outlook",
+    text: "Understand category movement, navigation trends, premium features, supplier shifts and product opportunities."
   },
   {
-    title: "Commercial Cleaning Equipment Signals",
-    meta: "B2B demand report",
-    text: "Facility cleaning, labor-saving tools, service contractors, and procurement timing across key markets."
+    title: "Floor Care Market Trends",
+    text: "Track floor washer, scrubber, carpet cleaner and commercial floor care signals across key buyer channels."
   },
   {
-    title: "China Cleaning Supply Chain Map",
-    meta: "Supplier landscape",
-    text: "OEM and ODM capability, component shifts, export readiness, and factory specialization by category."
+    title: "Private Label Opportunities In Cleaning Products",
+    text: "Explore product categories, OEM and ODM paths, supplier context and private label opportunities."
   }
 ];
 
-const reportInputs = [
-  "Category and product scope",
-  "Target region or buyer channel",
-  "Key decision to support",
-  "Known suppliers or competitors",
-  "Timeline and depth required"
+const learnItems = [
+  "Market Size & Growth",
+  "Category Trends",
+  "Leading Brands",
+  "Supplier Landscape",
+  "Channel Developments",
+  "Technology Shifts",
+  "Private Label Opportunities",
+  "Emerging Product Categories"
+];
+
+const audienceItems = [
+  "Brands",
+  "Importers",
+  "Distributors",
+  "Retailers",
+  "Product Managers",
+  "Investors",
+  "OEM / ODM Buyers"
 ];
 
 export default function MarketReportsPage() {
@@ -74,166 +61,195 @@ export default function MarketReportsPage() {
       <section className="page-hero page-hero-reports">
         <div className="container">
           <p className="eyebrow">Market Reports</p>
-          <h1>Market Intelligence for Cleaning Industry Decisions</h1>
+          <h1>Market Intelligence For Better Business Decisions</h1>
           <p>
-            Focused market notes, category research and regional demand signals
-            for cleaning industry professionals.
+            Free market reports, category insights and opportunity analysis for
+            buyers, brands, distributors and cleaning industry professionals.
           </p>
+          <div className="hero-actions">
+            <Link className="button" href="#free-report">
+              Get Free Report
+            </Link>
+            <Link className="button-secondary" href="/contact">
+              Request Market Note
+            </Link>
+          </div>
         </div>
       </section>
+
       <section className="section">
-        <div className="container grid-2">
-          <div>
-            <h2>Report areas inside the intelligence platform</h2>
-            <p>
-              Practical market context for category planning, regional review,
-              buyer discussions and sourcing direction.
-            </p>
-            <div className="tag-list">
-              {reports.map((report) => (
-                <span className="tag" key={report}>
-                  {report}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="highlight-panel">
-            <div className="module-kicker">Research requests</div>
-            <h3>Request a Market Note</h3>
-            <p>
-              Ask for a category, region, buyer channel, or supplier landscape
-              note tailored to a specific industry or business question.
-            </p>
-            <p>
-              <Link className="button" href="/contact">
-                Request a Market Note
+        <div className="container">
+          <div className="featured-report-card">
+            <div>
+              <p className="eyebrow">Featured Report</p>
+              <h2>2026 Global Pool Cleaning Market Overview</h2>
+              <p>
+                Understand market trends, leading brands, supplier landscape,
+                product opportunities and future growth drivers.
+              </p>
+              <ul className="feature-list report-highlight-list">
+                {featuredHighlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <Link className="button" href="#free-report">
+                Get Free Report
               </Link>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="section section-soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Popular Report Topics</p>
-              <h2>Popular topics for focused market notes</h2>
-              <p>
-                Common starting points for category, regional and buyer-channel
-                questions.
-              </p>
             </div>
-          </div>
-          <div className="tag-list topic-cloud">
-            {popularTopics.map((topic) => (
-              <span className="tag topic-tag" key={topic}>
-                {topic}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="section section-soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Use Cases</p>
-              <h2>Turn market noise into decision context</h2>
-              <p>
-                Each report should connect market signals with product,
-                sourcing, channel, event or media decisions.
-              </p>
-            </div>
-          </div>
-          <div className="grid-2">
-            {useCases.map((item) => (
-              <div className="card" key={item}>
-                <h3>{item}</h3>
+            <div className="image-panel image-panel-reports">
+              <div>
+                <p className="eyebrow">Free Industry Report</p>
+                <h3>Pool cleaning opportunity signals for 2026</h3>
+                <p>
+                  Built for industry professionals who need earlier market
+                  context before product and sourcing decisions.
+                </p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
-      <section className="section">
+
+      <section className="section section-soft">
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Sample Report Library</p>
-              <h2>Example report formats for a global cleaning industry center</h2>
+              <p className="eyebrow">Popular Reports</p>
+              <h2>Free reports for cleaning industry opportunity discovery</h2>
               <p>
-                These sample cards show how market reports can become practical
-                business tools instead of abstract documents.
+                Start with a report, then turn useful market context into a
+                sourcing question, category decision or business conversation.
               </p>
             </div>
           </div>
           <div className="report-card-grid">
-            {sampleReports.map((item) => (
-              <div className="report-card" key={item.title}>
-                <div className="meta">{item.meta}</div>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+            {popularReports.map((report) => (
+              <div className="report-card" key={report.title}>
+                <h3>{report.title}</h3>
+                <p>{report.text}</p>
+                <Link href="#free-report">Get Free Report</Link>
               </div>
             ))}
           </div>
         </div>
       </section>
+
       <section className="section">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">Research Method</p>
-            <h2>Reports should answer a real industry question</h2>
+            <p className="eyebrow">What You'll Learn</p>
+            <h2>Signals that help buyers and brands see opportunities earlier</h2>
             <p>
-              The goal is not to publish heavy documents for their own sake.
-              The goal is to turn category movement, regional demand, and
-              channel signals into useful context for cleaning professionals.
+              These reports are designed to organize market movement, category
+              trends, supplier context and product opportunities into useful
+              business intelligence.
             </p>
           </div>
-          <div className="card">
-            <ul className="feature-list">
-              {reportMethod.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+          <div className="module-grid">
+            {learnItems.map((item) => (
+              <div className="module-chip" key={item}>
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
       <section className="section section-soft">
-        <div className="container grid-2">
-          <div className="image-panel image-panel-reports">
+        <div className="container">
+          <div className="section-head">
             <div>
-              <p className="eyebrow">Custom Research Inputs</p>
-              <h2>Better questions create better reports</h2>
+              <p className="eyebrow">Who These Reports Are For</p>
+              <h2>Built For Industry Decision Makers</h2>
               <p>
-                A focused request helps turn a broad category into a useful
-                report that supports product, sourcing, channel, or media
-                decisions.
+                Free market intelligence for people making product, sourcing,
+                channel, investment and category decisions.
               </p>
             </div>
           </div>
-          <div className="card">
-            <h3>Include these details</h3>
-            <ul className="feature-list">
-              {reportInputs.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+          <div className="module-grid audience-chip-grid">
+            {audienceItems.map((item) => (
+              <div className="module-chip" key={item}>
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container cta-band">
+
+      <section className="section" id="free-report">
+        <div className="container grid-2">
+          <div>
+            <p className="eyebrow">Get Instant Access</p>
+            <h2>Receive the report directly in your inbox</h2>
+            <p>
+              Enter your details below and receive the report directly in your
+              inbox.
+            </p>
+            <p className="meta">
+              This report is provided free of charge for industry professionals.
+            </p>
+          </div>
+          <form className="form report-capture-form">
+            <label>
+              Name
+              <input name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Company
+              <input name="company" placeholder="Company name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" placeholder="name@company.com" type="email" required />
+            </label>
+            <label>
+              Country
+              <input name="country" placeholder="Country or region" required />
+            </label>
+            <button className="button" type="submit">
+              Send Me The Report
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section className="section section-soft">
+        <div className="container cta-band market-note-band">
           <div className="grid-2">
             <div>
-              <h2>Request a Market Note</h2>
+              <p className="eyebrow">Custom Market Request</p>
+              <h2>Need Information About A Specific Market?</h2>
               <p>
-                Share a category, region, buyer channel, supplier landscape, or
-                product trend question that needs practical cleaning industry
-                context.
+                Looking for information about a specific category, country or
+                product opportunity? Tell us what you are exploring and we may
+                prepare a future market note.
               </p>
             </div>
             <div>
               <Link className="button" href="/contact">
-                Request a Market Note
+                Request Market Note
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container cta-band">
+          <div className="grid-2">
+            <div>
+              <h2>The Best Opportunities Are Usually Identified Early</h2>
+              <p>
+                Most companies discover opportunities after everyone is already
+                talking about them. The most successful companies discover them
+                before the market notices. Get the latest market intelligence
+                and stay ahead of the industry.
+              </p>
+            </div>
+            <div>
+              <Link className="button" href="#free-report">
+                Get Free Report
               </Link>
             </div>
           </div>

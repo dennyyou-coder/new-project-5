@@ -9,6 +9,57 @@ type Props = {
 
 const siteUrl = "https://worldcleanbiz.com";
 
+function getWhyThisMatters(category: string) {
+  if (category === "Pool Cleaning") {
+    return [
+      {
+        title: "For Brands",
+        text: "Understand how pool cleaning market developments may affect product strategy and future opportunities."
+      },
+      {
+        title: "For Suppliers",
+        text: "Identify shifts in demand, technology and customer expectations across the pool cleaning category."
+      },
+      {
+        title: "For Distributors",
+        text: "Track product movement and regional signals that may shape future channel decisions."
+      }
+    ];
+  }
+
+  if (category === "Vacuum" || category === "Floorcare") {
+    return [
+      {
+        title: "For Brands",
+        text: "Understand how category movement may affect product planning, positioning and future opportunities."
+      },
+      {
+        title: "For Retailers",
+        text: "Track product and customer expectation shifts that may influence assortment and channel decisions."
+      },
+      {
+        title: "For Manufacturers",
+        text: "Identify technology, feature and demand signals that may shape product development priorities."
+      }
+    ];
+  }
+
+  return [
+    {
+      title: "For Brands",
+      text: "Understand how market developments may affect product strategy and future opportunities."
+    },
+    {
+      title: "For Suppliers",
+      text: "Identify shifts in demand, technology and customer expectations."
+    },
+    {
+      title: "For Industry Professionals",
+      text: "Stay informed about developments shaping the future of the cleaning industry."
+    }
+  ];
+}
+
 export function generateStaticParams() {
   return getInsights().map((article) => ({ slug: article.slug }));
 }
@@ -64,7 +115,11 @@ export default async function InsightDetailPage({ params }: Props) {
       item.slug !== slug && !sameCategory.some((related) => related.slug === item.slug)
   );
   const related = [...sameCategory, ...fillers].slice(0, 3);
-  const takeaways = article.takeaways.length ? article.takeaways : [article.excerpt];
+  const hasTakeaways = article.takeaways.length > 0;
+  const summaryPoints = hasTakeaways
+    ? article.takeaways.slice(0, 3)
+    : [article.excerpt];
+  const whyThisMatters = getWhyThisMatters(article.category);
   const url = `${siteUrl}/insights/${article.slug}`;
   const schema = {
     "@context": "https://schema.org",
@@ -94,17 +149,42 @@ export default async function InsightDetailPage({ params }: Props) {
         </div>
       </section>
 
+      <section className="signal-summary-section">
+        <div className="container signal-summary-card">
+          <div>
+            <p className="eyebrow">Signal Summary</p>
+            <h2>Understand the value of this signal in 10 seconds</h2>
+          </div>
+          <div className="signal-summary-list">
+            {summaryPoints.map((point, index) => (
+              <div className="signal-summary-item" key={point}>
+                <span>
+                  {index === 0
+                    ? "What changed"
+                    : index === 1
+                      ? "Why it matters"
+                      : "What to watch next"}
+                </span>
+                <p>{point}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section signal-detail-section">
         <div className="container signal-detail-shell">
           <article className="article-prose signal-detail-main">
-            <div className="key-takeaways">
-              <div className="module-kicker">Key Takeaways</div>
-              <ul>
-                {takeaways.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-            </div>
+            {hasTakeaways ? (
+              <div className="key-takeaways">
+                <div className="module-kicker">Key Takeaways</div>
+                <ul>
+                  {article.takeaways.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
 
             {article.youtubeId ? (
               <div className="article-video">
@@ -122,23 +202,24 @@ export default async function InsightDetailPage({ params }: Props) {
                 __html: markdownToHtml(article.content)
               }}
             />
-
-            <div className="cta-band article-cta">
-              <h2>Turn This Signal Into a Business Question</h2>
-              <p>
-                If this market, category or sourcing signal is relevant to your
-                business, share your target product, market or sourcing question.
-              </p>
-              <div className="hero-actions">
-                <Link className="button" href="/contact">
-                  Share Inquiry
-                </Link>
-                <Link className="button-secondary" href="/sourcing">
-                  View Sourcing
-                </Link>
-              </div>
-            </div>
           </article>
+        </div>
+
+        <div className="container signal-business-context">
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">Why This Matters</p>
+              <h2>Turn this signal into business context</h2>
+            </div>
+          </div>
+          <div className="grid-3">
+            {whyThisMatters.map((item) => (
+              <div className="card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {related.length ? (
@@ -165,6 +246,56 @@ export default async function InsightDetailPage({ params }: Props) {
             </div>
           </div>
         ) : null}
+
+        <div className="container about-denny-signal">
+          <div className="grid-2">
+            <div>
+              <p className="eyebrow">About Denny You</p>
+              <h2>About Denny You</h2>
+              <p>
+                Denny You is one of the leading influencers and consultants in
+                China's cleaning products industry.
+              </p>
+              <p>
+                With more than 20 years of industry experience, he works across
+                manufacturing, sourcing, industry media and trade shows.
+              </p>
+              <p>
+                Through World Clean Biz, he helps industry professionals
+                understand markets, products, suppliers and opportunities.
+              </p>
+            </div>
+            <div>
+              <Link className="button" href="/about">
+                About Denny
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="cta-band article-cta">
+            <div className="grid-2">
+              <div>
+                <h2>Have A Question About This Signal?</h2>
+                <p>
+                  Industry signals become valuable only when they lead to better
+                  decisions. If this signal is relevant to your business, tell
+                  us what you're exploring. We may be able to help with
+                  sourcing, market intelligence or industry connections.
+                </p>
+              </div>
+              <div className="hero-actions">
+                <Link className="button" href="/contact">
+                  Share Inquiry
+                </Link>
+                <Link className="button-secondary" href="/insights">
+                  Explore Signals
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <script

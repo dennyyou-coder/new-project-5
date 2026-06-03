@@ -5,9 +5,9 @@ import { FormEvent, useState } from "react";
 const inquiryTypes = [
   "Industry Information",
   "Sourcing / OEM",
+  "Market Reports",
   "World Clean Expo",
-  "Market Report",
-  "Media / Content Cooperation",
+  "Media Cooperation",
   "General Cooperation"
 ];
 
@@ -71,7 +71,7 @@ export function ContactForm() {
         />
       </label>
       <button className="button" type="submit">
-        Share Your Cleaning Industry Question
+        Send Message
       </button>
       {status ? (
         <p className="form-status" role="status">
