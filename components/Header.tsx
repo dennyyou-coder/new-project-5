@@ -6,8 +6,7 @@ const navItems = [
   { href: "/sourcing", label: "Sourcing" },
   { href: "/market-reports", label: "Market Reports" },
   { href: "/world-clean-expo", label: "World Clean Expo" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
+  { href: "/about", label: "About" }
 ];
 
 export function Header() {

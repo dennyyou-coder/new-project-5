@@ -16,21 +16,6 @@ const insightPrinciples = [
   "Which business questions readers should ask next"
 ];
 
-const editorialStreams = [
-  {
-    title: "Category Signals",
-    text: "Product movement, feature changes, technology adoption, pricing pressure, and channel demand."
-  },
-  {
-    title: "Supply Chain Notes",
-    text: "Manufacturer capability, OEM and ODM context, component shifts, and supplier-side readiness."
-  },
-  {
-    title: "Buyer & Channel Views",
-    text: "Distributor questions, retail movement, commercial cleaning demand, and regional market needs."
-  }
-];
-
 export default function InsightsPage() {
   const articles = getInsights();
   const featured = articles[0];
@@ -96,31 +81,6 @@ export default function InsightsPage() {
             {insightPrinciples.map((item) => (
               <div className="card compact-card" key={item}>
                 <h3>{item}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="section section-soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Editorial Streams</p>
-              <h2>How industry intelligence can be organized</h2>
-              <p>
-                The insight library can grow into multiple streams, so readers
-                can quickly find the type of context they need.
-              </p>
-            </div>
-          </div>
-          <div className="platform-grid">
-            {editorialStreams.map((item) => (
-              <div className="platform-card" key={item.title}>
-                <div className="platform-icon" aria-hidden="true">
-                  {item.title.slice(0, 1)}
-                </div>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
               </div>
             ))}
           </div>
