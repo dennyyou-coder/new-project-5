@@ -1,14 +1,19 @@
 import fs from "node:fs";
 import path from "node:path";
+import { normalizeCategory } from "@/lib/categories";
 
 export type Insight = {
   slug: string;
   title: string;
+  excerpt: string;
   description: string;
   date: string;
   author: string;
   category: string;
   tags: string[];
+  featured: boolean;
+  readingTime: string;
+  takeaways: string[];
   coverImage?: string;
   youtubeId?: string;
   content: string;
@@ -52,15 +57,20 @@ export function getInsights(): Insight[] {
       const slug = file.replace(/\.mdx$/, "");
       const raw = fs.readFileSync(path.join(insightsDirectory, file), "utf8");
       const { data, content } = parseFrontmatter(raw);
+      const excerpt = String(data.excerpt || data.description || makeExcerpt(content));
 
       return {
         slug,
         title: String(data.title || slug),
-        description: String(data.description || ""),
+        excerpt,
+        description: excerpt,
         date: String(data.date || ""),
         author: String(data.author || "Denny You"),
-        category: String(data.category || "Insights"),
+        category: normalizeCategory(String(data.category || "")),
         tags: Array.isArray(data.tags) ? data.tags : [],
+        featured: String(data.featured || "false").toLowerCase() === "true",
+        readingTime: String(data.readingTime || estimateReadingTime(content)),
+        takeaways: Array.isArray(data.takeaways) ? data.takeaways : [],
         coverImage: data.coverImage ? String(data.coverImage) : undefined,
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
         content
@@ -76,13 +86,20 @@ export function getInsight(slug: string) {
 export function markdownToHtml(markdown: string) {
   const lines = markdown.split("\n");
   const html: string[] = [];
-  let listOpen = false;
+  let listOpen: "ul" | "ol" | false = false;
 
   function closeList() {
     if (listOpen) {
-      html.push("</ul>");
+      html.push(`</${listOpen}>`);
       listOpen = false;
     }
+  }
+
+  function openList(type: "ul" | "ol") {
+    if (listOpen === type) return;
+    closeList();
+    html.push(`<${type}>`);
+    listOpen = type;
   }
 
   for (const line of lines) {
@@ -98,12 +115,15 @@ export function markdownToHtml(markdown: string) {
     } else if (trimmed.startsWith("## ")) {
       closeList();
       html.push(`<h2>${inline(trimmed.slice(3))}</h2>`);
+    } else if (trimmed.startsWith("> ")) {
+      closeList();
+      html.push(`<blockquote>${inline(trimmed.slice(2))}</blockquote>`);
     } else if (trimmed.startsWith("- ")) {
-      if (!listOpen) {
-        html.push("<ul>");
-        listOpen = true;
-      }
+      openList("ul");
       html.push(`<li>${inline(trimmed.slice(2))}</li>`);
+    } else if (/^\d+\.\s/.test(trimmed)) {
+      openList("ol");
+      html.push(`<li>${inline(trimmed.replace(/^\d+\.\s/, ""))}</li>`);
     } else {
       closeList();
       html.push(`<p>${inline(trimmed)}</p>`);
@@ -112,6 +132,34 @@ export function markdownToHtml(markdown: string) {
 
   closeList();
   return html.join("\n");
+}
+
+function estimateReadingTime(content: string) {
+  const text = stripMarkdown(content);
+  const wordCount = text.split(/\s+/).filter(Boolean).length;
+  const minutes = Math.max(1, Math.ceil(wordCount / 220));
+
+  return `${minutes} min read`;
+}
+
+function makeExcerpt(content: string) {
+  const text = stripMarkdown(content);
+
+  if (text.length <= 155) {
+    return text;
+  }
+
+  return `${text.slice(0, 152).trim()}...`;
+}
+
+function stripMarkdown(content: string) {
+  return content
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/!\[(.*?)\]\((.*?)\)/g, "$1")
+    .replace(/\[(.*?)\]\((.*?)\)/g, "$1")
+    .replace(/[#>*_`~-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function inline(text: string) {

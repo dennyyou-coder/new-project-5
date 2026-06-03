@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getInsights } from "@/lib/content";
 
 const baseUrl = "https://worldcleanbiz.com";
+const lastModified = new Date("2026-06-03");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -17,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticRoutes.map((route) => ({
       url: `${baseUrl}${route}`,
-      lastModified: new Date()
+      lastModified
     })),
     ...getInsights().map((article) => ({
       url: `${baseUrl}/insights/${article.slug}`,

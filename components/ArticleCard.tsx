@@ -14,8 +14,8 @@ export function ArticleCard({ article }: { article: Insight }) {
           {article.category} / {article.date}
         </div>
         <h3>{article.title}</h3>
-        <p>{article.description}</p>
-        <div className="article-card-footer">Read insight</div>
+        <p>{article.excerpt}</p>
+        <div className="article-card-footer">Read Signal</div>
       </div>
     </Link>
   );

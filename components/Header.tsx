@@ -15,16 +15,28 @@ export function Header() {
     <header className="header">
       <div className="container header-inner">
         <Link className="brand" href="/">
-          <span className="brand-name">World Clean Biz</span>
-          <span className="brand-tagline">Industry Intelligence & Sourcing</span>
+          <span className="brand-mark" aria-hidden="true">
+            <span className="brand-core">W</span>
+          </span>
+          <span className="brand-copy">
+            <span className="brand-name">World Clean Biz</span>
+            <span className="brand-tagline">
+              Global Cleaning Industry Intelligence
+            </span>
+          </span>
         </Link>
-        <nav className="nav" aria-label="Main navigation">
-          {navItems.map((item) => (
-            <Link href={item.href} key={item.href}>
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <div className="header-actions">
+          <nav className="nav" aria-label="Main navigation">
+            {navItems.map((item) => (
+              <Link href={item.href} key={item.href}>
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+          <Link className="header-cta" href="/contact">
+            Share Inquiry
+          </Link>
+        </div>
       </div>
     </header>
   );

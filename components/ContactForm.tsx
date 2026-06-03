@@ -3,9 +3,11 @@
 import { FormEvent, useState } from "react";
 
 const inquiryTypes = [
+  "Industry Information",
   "Sourcing / OEM",
   "World Clean Expo",
   "Market Report",
+  "Media / Content Cooperation",
   "General Cooperation"
 ];
 
@@ -38,19 +40,19 @@ export function ContactForm() {
     <form className="form" onSubmit={handleSubmit}>
       <label>
         Name
-        <input name="name" required />
+        <input name="name" placeholder="Your name" required />
       </label>
       <label>
         Company
-        <input name="company" required />
+        <input name="company" placeholder="Company or organization" required />
       </label>
       <label>
         Email
-        <input name="email" type="email" required />
+        <input name="email" placeholder="name@company.com" type="email" required />
       </label>
       <label>
         Country
-        <input name="country" required />
+        <input name="country" placeholder="Country or region" required />
       </label>
       <label>
         Inquiry Type
@@ -62,12 +64,20 @@ export function ContactForm() {
       </label>
       <label>
         Message
-        <textarea name="message" required />
+        <textarea
+          name="message"
+          placeholder="Share the category, market, business question, timeline, or cooperation idea you want to discuss."
+          required
+        />
       </label>
       <button className="button" type="submit">
-        Send Inquiry
+        Share Your Cleaning Industry Question
       </button>
-      {status ? <p>{status}</p> : null}
+      {status ? (
+        <p className="form-status" role="status">
+          {status}
+        </p>
+      ) : null}
     </form>
   );
 }
