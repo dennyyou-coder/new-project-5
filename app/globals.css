@@ -2523,23 +2523,23 @@ h3 {
 }
 
 .sourcing-hero-final ~ .section {
-  padding: 112px 0;
+  padding: 100px 0;
 }
 
 .sourcing-hero-final + .section {
-  padding-top: 112px;
+  padding-top: 100px;
 }
 
 .sourcing-opportunity-section + .section {
-  padding-top: 112px;
+  padding-top: 100px;
 }
 
 .sourcing-opportunity-section + .section + .section {
-  padding-top: 112px;
+  padding-top: 100px;
 }
 
 .sourcing-opportunity-section + .section + .section + .section {
-  padding-top: 112px;
+  padding-top: 100px;
 }
 
 .sourcing-hero-final .eyebrow,
@@ -2560,13 +2560,17 @@ h3 {
   width: min(1200px, calc(100% - 40px));
 }
 
+.sourcing-hero-final ~ .section > .container:not(.cta-band) {
+  width: min(1080px, calc(100% - 40px));
+}
+
 .sourcing-hero-layout {
   display: block;
 }
 
 .sourcing-hero-panel {
   display: grid;
-  max-width: 860px;
+  max-width: 680px;
   gap: 28px;
   padding: 0;
 }
@@ -2591,7 +2595,6 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-top: 4px;
-  max-width: 820px;
 }
 
 .sourcing-hero-card {
@@ -2605,9 +2608,9 @@ h3 {
 
 .sourcing-hero-card p {
   color: var(--ink);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
-  line-height: 1.22;
+  line-height: 1.45;
 }
 
 .sourcing-hero-card em {
@@ -2624,9 +2627,9 @@ h3 {
   display: block;
   margin-top: 5px;
   color: var(--accent);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
-  line-height: 1.22;
+  line-height: 1.45;
 }
 
 .sourcing-hero-bottom {
@@ -2651,18 +2654,18 @@ h3 {
 
 .sourcing-hero-question span {
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 1.15;
+  line-height: 1.45;
 }
 
 .sourcing-hero-question strong {
   display: block;
   margin-top: 4px;
   color: var(--accent);
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.15;
 }
 
 .sourcing-hero-visual {
@@ -2684,14 +2687,14 @@ h3 {
 }
 
 .sourcing-centered-head h2 {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.15;
 }
 
 .sourcing-centered-head p {
-  font-size: 24px;
-  line-height: 1.35;
+  font-size: 22px;
+  line-height: 1.45;
 }
 
 .sourcing-change-grid {
@@ -2816,7 +2819,7 @@ h3 {
   max-width: 920px;
   margin-top: 10px;
   color: var(--ink);
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.15;
@@ -2824,9 +2827,9 @@ h3 {
 
 .sourcing-report-head > p {
   color: var(--muted);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 1.35;
+  line-height: 1.45;
 }
 
 .sourcing-rule-table {
@@ -2881,7 +2884,7 @@ h3 {
 .sourcing-old-rule strong {
   display: block;
   color: var(--ink);
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.35;
 }
@@ -2893,7 +2896,7 @@ h3 {
 .sourcing-new-rule strong {
   display: block;
   color: var(--accent);
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.35;
 }
@@ -2907,7 +2910,7 @@ h3 {
 
 .sourcing-report-quote strong {
   color: var(--ink);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -2916,7 +2919,7 @@ h3 {
   display: block;
   margin-top: 8px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
 }
 
@@ -2928,7 +2931,7 @@ h3 {
 
 .sourcing-rule-section,
 .sourcing-opportunity-section {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .sourcing-opportunity-memo {
@@ -2951,7 +2954,7 @@ h3 {
 .sourcing-opportunity-head h2 {
   margin-top: 10px;
   color: #050b16;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.15;
@@ -2961,9 +2964,9 @@ h3 {
   max-width: 620px;
   margin-top: 16px;
   color: var(--muted);
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 1.35;
+  line-height: 1.45;
 }
 
 .sourcing-opportunity-signal {
@@ -2984,7 +2987,7 @@ h3 {
 .sourcing-opportunity-signal strong {
   display: block;
   color: var(--ink);
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 600;
   line-height: 0.95;
 }
@@ -2993,9 +2996,9 @@ h3 {
   max-width: 520px;
   margin-top: 0;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.55;
 }
 
 .sourcing-opportunity-theses {
@@ -3038,9 +3041,9 @@ h3 {
 
 .sourcing-opportunity-thesis li {
   color: var(--muted);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 1.35;
+  line-height: 1.55;
 }
 
 .sourcing-opportunity-thesis li::before {
@@ -3267,7 +3270,7 @@ h3 {
   display: block;
   margin-top: 20px;
   color: var(--ink);
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.1;
 }
@@ -3288,7 +3291,7 @@ h3 {
 
 .sourcing-advantage-core dt {
   color: var(--ink);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -3296,8 +3299,8 @@ h3 {
 .sourcing-advantage-core dd {
   margin: 0;
   color: var(--muted);
-  font-size: 17px;
-  line-height: 1.35;
+  font-size: 16px;
+  line-height: 1.45;
 }
 
 .sourcing-advantage-list {
@@ -3316,15 +3319,15 @@ h3 {
 
 .sourcing-advantage-row h3 {
   color: var(--ink);
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.2;
 }
 
 .sourcing-advantage-row p {
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.55;
 }
 
 .sourcing-authority-layout {
@@ -3343,7 +3346,7 @@ h3 {
 .sourcing-authority-layout h2 {
   margin-top: 10px;
   color: var(--ink);
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.15;
 }
@@ -3361,7 +3364,7 @@ h3 {
   max-width: 720px;
   margin-top: 24px;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.55;
 }
 
@@ -3375,7 +3378,7 @@ h3 {
 .sourcing-authority-metric {
   border-top: 1px solid var(--line);
   background: white;
-  padding: 12px 12px;
+  padding: 10px 10px;
 }
 
 .sourcing-authority-metric strong,
@@ -3385,7 +3388,7 @@ h3 {
 
 .sourcing-authority-metric strong {
   color: var(--ink);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1;
 }
@@ -3393,7 +3396,7 @@ h3 {
 .sourcing-authority-metric span {
   margin-top: 8px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -4928,7 +4931,7 @@ h3 {
   }
 
   .sourcing-opportunity-signal strong {
-    font-size: 64px;
+    font-size: 56px;
   }
 
   .sourcing-opportunity-thesis {
