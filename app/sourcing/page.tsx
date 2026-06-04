@@ -139,30 +139,38 @@ export default function SourcingPage() {
     <>
       <section className="sourcing-hero-final">
         <div className="container">
-          <div className="sourcing-hero-panel">
-            <p className="eyebrow">Sourcing</p>
-            <h1>
-              You&apos;ve Been In The Industry For 20 Years.
-              <span>So Why Does It Feel Like You&apos;re Falling Behind?</span>
-            </h1>
-            <div className="sourcing-hero-card-grid">
-              {heroCards.map((item) => (
-                <div className="sourcing-hero-card" key={item.lead}>
-                  <p>{item.lead}</p>
-                  <em>{item.yet}</em>
-                  <strong dangerouslySetInnerHTML={{ __html: item.result }} />
-                </div>
-              ))}
-            </div>
-            <div className="sourcing-hero-bottom">
-              <Link className="button" href="/contact">
-                Talk With Denny <span aria-hidden="true">→</span>
-              </Link>
+          <div className="sourcing-hero-layout">
+            <div className="sourcing-hero-panel">
+              <div>
+                <p className="eyebrow">Sourcing</p>
+                <h1>
+                  You&apos;ve Been In The Industry For 20 Years.
+                  <span>So Why Does It Feel Like You&apos;re Falling Behind?</span>
+                </h1>
+              </div>
+              <div className="sourcing-hero-card-grid">
+                {heroCards.map((item) => (
+                  <div className="sourcing-hero-card" key={item.lead}>
+                    <p>{item.lead}</p>
+                    <em>{item.yet}</em>
+                    <strong dangerouslySetInnerHTML={{ __html: item.result }} />
+                  </div>
+                ))}
+              </div>
               <div className="sourcing-hero-question">
                 <span>The Industry Already Changed.</span>
                 <strong>Did You?</strong>
               </div>
+              <div className="sourcing-hero-bottom">
+                <Link className="button" href="/contact">
+                  Talk With Denny <span aria-hidden="true">→</span>
+                </Link>
+              </div>
             </div>
+            <div
+              className="sourcing-hero-visual"
+              aria-label="Trade show floor with sourcing and product conversations"
+            />
           </div>
         </div>
       </section>

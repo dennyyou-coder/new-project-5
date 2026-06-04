@@ -2514,11 +2514,7 @@ h3 {
   position: relative;
   height: 840px;
   border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.9) 42%, rgba(246, 250, 255, 0.36) 76%, rgba(246, 250, 255, 0.58) 100%),
-    url("https://unsplash.com/photos/NXhweP5ShCg/download?force=true&w=1800");
-  background-position: center;
-  background-size: cover;
+  background: #ffffff;
   padding: 56px 0;
 }
 
@@ -2556,11 +2552,24 @@ h3 {
   width: min(1200px, calc(100% - 40px));
 }
 
+.sourcing-hero-final .container {
+  width: min(1320px, calc(100% - 48px));
+  height: 100%;
+}
+
+.sourcing-hero-layout {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 40% 60%;
+  align-items: stretch;
+}
+
 .sourcing-hero-panel {
   display: grid;
   height: 100%;
   max-width: 720px;
   align-content: space-between;
+  padding: 8px 48px 8px 0;
 }
 
 .sourcing-hero-panel h1 {
@@ -2624,7 +2633,7 @@ h3 {
 .sourcing-hero-bottom {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 24px;
   margin-top: 28px;
 }
@@ -2637,7 +2646,7 @@ h3 {
 }
 
 .sourcing-hero-question {
-  text-align: right;
+  text-align: left;
   color: var(--ink);
 }
 
@@ -2655,6 +2664,14 @@ h3 {
   font-size: 44px;
   font-weight: 600;
   line-height: 1;
+}
+
+.sourcing-hero-visual {
+  min-height: 0;
+  border-left: 1px solid rgba(216, 229, 243, 0.82);
+  background-image: url("https://unsplash.com/photos/NXhweP5ShCg/download?force=true&w=1800");
+  background-position: center;
+  background-size: cover;
 }
 
 .sourcing-core-message strong {
@@ -4764,6 +4781,20 @@ h3 {
   .sourcing-final-cta {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .sourcing-hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sourcing-hero-panel {
+    padding: 0;
+  }
+
+  .sourcing-hero-visual {
+    min-height: 280px;
+    border-top: 1px solid rgba(216, 229, 243, 0.82);
+    border-left: 0;
   }
 
   .insights-grid {
