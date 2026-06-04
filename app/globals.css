@@ -2174,14 +2174,21 @@ h3 {
   background:
     radial-gradient(circle at 80% 18%, rgba(111, 168, 255, 0.22), transparent 30%),
     linear-gradient(135deg, #FFFFFF 0%, #F6FAFF 100%);
-  padding: 34px 0 30px;
+  padding: 42px 0 38px;
+}
+
+.sourcing-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.72fr);
+  gap: 44px;
+  align-items: center;
 }
 
 .sourcing-compact-intro h1 {
   max-width: 920px;
   margin-top: 8px;
   color: var(--ink);
-  font-size: clamp(34px, 4vw, 52px);
+  font-size: clamp(38px, 4.8vw, 64px);
   font-weight: 820;
   line-height: 1;
 }
@@ -2192,6 +2199,83 @@ h3 {
   color: var(--muted);
   font-size: 16px;
   line-height: 1.55;
+}
+
+.sourcing-opportunity-visual {
+  position: relative;
+  min-height: 360px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 70% 26%, rgba(47, 107, 255, 0.22), transparent 26%),
+    radial-gradient(circle at 24% 70%, rgba(111, 168, 255, 0.22), transparent 24%),
+    linear-gradient(90deg, rgba(47, 107, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(47, 107, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(135deg, #FFFFFF, #DCEBFF);
+  background-size: auto, auto, 38px 38px, 38px 38px, auto;
+  box-shadow: 0 18px 42px rgba(22, 59, 103, 0.1);
+  overflow: hidden;
+}
+
+.sourcing-opportunity-visual::before,
+.sourcing-opportunity-visual::after {
+  position: absolute;
+  content: "";
+  border: 1px solid rgba(47, 107, 255, 0.2);
+  border-radius: 50%;
+}
+
+.sourcing-opportunity-visual::before {
+  inset: 36px 48px;
+}
+
+.sourcing-opportunity-visual::after {
+  inset: 84px 112px 76px 76px;
+  transform: rotate(-18deg);
+}
+
+.sourcing-visual-card {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid rgba(216, 229, 243, 0.9);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.86);
+  padding: 14px 16px;
+  box-shadow: 0 14px 32px rgba(22, 59, 103, 0.1);
+}
+
+.sourcing-visual-card span {
+  display: block;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.sourcing-visual-card strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.15;
+}
+
+.sourcing-visual-card-main {
+  left: 32px;
+  top: 36px;
+  width: 210px;
+}
+
+.sourcing-visual-card-right {
+  right: 28px;
+  top: 132px;
+  width: 190px;
+}
+
+.sourcing-visual-card-bottom {
+  left: 70px;
+  bottom: 36px;
+  width: 200px;
 }
 
 .sourcing-pain-list {
@@ -3654,6 +3738,7 @@ h3 {
   .insights-featured-hero,
   .insights-page-shell,
   .insights-top-layout,
+  .sourcing-hero-grid,
   .sourcing-denny-layout,
   .content-layout,
   .editorial-layout,
@@ -3693,6 +3778,10 @@ h3 {
 
   .sourcing-denny-image {
     min-height: 320px;
+  }
+
+  .sourcing-opportunity-visual {
+    min-height: 300px;
   }
 
   .sourcing-final-cta {
@@ -3882,6 +3971,35 @@ h3 {
 
   .sourcing-denny-image {
     min-height: 260px;
+  }
+
+  .sourcing-opportunity-visual {
+    min-height: 280px;
+  }
+
+  .sourcing-visual-card {
+    padding: 12px;
+  }
+
+  .sourcing-visual-card-main,
+  .sourcing-visual-card-right,
+  .sourcing-visual-card-bottom {
+    width: 170px;
+  }
+
+  .sourcing-visual-card-main {
+    left: 18px;
+    top: 24px;
+  }
+
+  .sourcing-visual-card-right {
+    right: 18px;
+    top: 112px;
+  }
+
+  .sourcing-visual-card-bottom {
+    left: 42px;
+    bottom: 24px;
   }
 
   .platform-card,

@@ -131,25 +131,41 @@ export default function SourcingPage() {
   return (
     <>
       <section className="sourcing-compact-intro">
-        <div className="container">
-          <p className="eyebrow">Sourcing</p>
-          <h1>
-            Too Many Suppliers.
-            <br />
-            Too Few Opportunities.
-          </h1>
-          <ul className="sourcing-pain-list">
-            {painPoints.map((point) => (
-              <li key={point}>{point}</li>
-            ))}
-          </ul>
-          <div className="sourcing-statement">
-            We don&apos;t help you source products. We help you make more money.
+        <div className="container sourcing-hero-grid">
+          <div>
+            <p className="eyebrow">Sourcing</p>
+            <h1>Looking For The Next Winning Product?</h1>
+            <p>
+              Most companies don&apos;t need more suppliers. They need better
+              opportunities.
+            </p>
+            <ul className="sourcing-pain-list">
+              {painPoints.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+            <div className="sourcing-statement">
+              We don&apos;t help you source products. We help you make more money.
+            </div>
+            <div className="hero-actions">
+              <Link className="button" href="/contact">
+                Talk With Denny
+              </Link>
+            </div>
           </div>
-          <div className="hero-actions">
-            <Link className="button" href="/contact">
-              Talk With Denny
-            </Link>
+          <div className="sourcing-opportunity-visual" aria-label="Global industry network and opportunity map visual">
+            <div className="sourcing-visual-card sourcing-visual-card-main">
+              <span>01</span>
+              <strong>Product Opportunity</strong>
+            </div>
+            <div className="sourcing-visual-card sourcing-visual-card-right">
+              <span>02</span>
+              <strong>Supplier Network</strong>
+            </div>
+            <div className="sourcing-visual-card sourcing-visual-card-bottom">
+              <span>03</span>
+              <strong>Market Signals</strong>
+            </div>
           </div>
         </div>
       </section>
@@ -228,7 +244,7 @@ export default function SourcingPage() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Product Categories</p>
-              <h2>Explore Product Categories</h2>
+              <h2>Explore Product Opportunities</h2>
               <p>
                 Discover products and opportunities across the global cleaning
                 industry.
