@@ -98,7 +98,7 @@ const testimonials = [
     country: "United States",
     companyType: "Overseas Distributor",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=240&h=240&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=320&h=320&auto=format&fit=crop&crop=faces",
     quote:
       "World Clean Biz helps us understand which cleaning products and suppliers deserve attention before the market becomes crowded."
   },
@@ -108,7 +108,7 @@ const testimonials = [
     country: "China",
     companyType: "Cleaning Product Manufacturer",
     image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=240&h=240&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=320&h=320&auto=format&fit=crop&crop=faces",
     quote:
       "Denny understands both the factory side and the market side. His insights are practical for companies looking for global opportunities."
   },
@@ -118,7 +118,7 @@ const testimonials = [
     country: "Germany",
     companyType: "Industry Professional",
     image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=240&h=240&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=320&h=320&auto=format&fit=crop&crop=faces",
     quote:
       "This is not just industry news. It helps connect signals, suppliers and real business opportunities."
   }
