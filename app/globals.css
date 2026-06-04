@@ -2496,10 +2496,10 @@ h3 {
 .sourcing-cta-list li::before {
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 0;
   color: var(--accent);
-  content: "✓";
-  font-weight: 900;
+  content: "—";
+  font-weight: 600;
 }
 
 .sourcing-outcome {
@@ -3400,7 +3400,7 @@ h3 {
 .sourcing-authority-metric {
   border-top: 2px solid var(--accent);
   background: white;
-  padding: 14px 14px;
+  padding: 12px 12px;
 }
 
 .sourcing-authority-metric strong,
@@ -3410,7 +3410,7 @@ h3 {
 
 .sourcing-authority-metric strong {
   color: var(--ink);
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1;
 }
