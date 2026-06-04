@@ -45,59 +45,82 @@ const dennyPoints = [
   "Long-term observer of global cleaning industry trends"
 ];
 
-const dennyStats = [
-  { value: "20+ Years", label: "Cleaning industry experience" },
-  { value: "9,000+", label: "Industry professionals" },
-  { value: "100+ Brands", label: "Tracked across categories" },
-  { value: "Global Network", label: "Suppliers, brands and events" }
-];
-
-const helpCards: { icon: IconName; title: string; text: string; cta: string; href: string }[] = [
+const helpCards: {
+  icon: IconName;
+  title: string;
+  text: string;
+  cta: string;
+  href: string;
+  image: string;
+}[] = [
   {
     icon: "radio",
     title: "Industry Signals",
     text: "Follow the latest market changes, product shifts and business opportunities.",
     cta: "Explore Signals",
-    href: "/insights"
+    href: "/insights",
+    image:
+      "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=900&auto=format&fit=crop"
   },
   {
     icon: "search",
     title: "Sourcing Intelligence",
     text: "Understand suppliers, manufacturers and product opportunities before making sourcing decisions.",
     cta: "Learn About Sourcing",
-    href: "/sourcing"
+    href: "/sourcing",
+    image:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&auto=format&fit=crop"
   },
   {
     icon: "file",
     title: "Free Market Reports",
     text: "Get free cleaning industry reports and market insights.",
     cta: "Get Reports",
-    href: "/market-reports"
+    href: "/market-reports",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=900&auto=format&fit=crop"
   },
   {
     icon: "globe",
     title: "World Clean Expo",
     text: "Connect with manufacturers, brands, buyers and industry professionals.",
     cta: "Visit Expo Page",
-    href: "/world-clean-expo"
+    href: "/world-clean-expo",
+    image:
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=900&auto=format&fit=crop"
   }
 ];
 
 const testimonials = [
   {
+    name: "James Mitchell",
+    title: "Purchasing Director",
+    country: "United States",
+    companyType: "Overseas Distributor",
+    image:
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=240&h=240&auto=format&fit=crop",
     quote:
-      "World Clean Biz helps us understand which cleaning products and suppliers deserve attention before the market becomes crowded.",
-    label: "Overseas Distributor"
+      "World Clean Biz helps us understand which cleaning products and suppliers deserve attention before the market becomes crowded."
   },
   {
+    name: "Linda Chen",
+    title: "Product Development Manager",
+    country: "China",
+    companyType: "Cleaning Product Manufacturer",
+    image:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=240&h=240&auto=format&fit=crop",
     quote:
-      "Denny understands both the factory side and the market side. His insights are practical for companies looking for global opportunities.",
-    label: "Cleaning Product Manufacturer"
+      "Denny understands both the factory side and the market side. His insights are practical for companies looking for global opportunities."
   },
   {
+    name: "Markus Schneider",
+    title: "Industry Consultant",
+    country: "Germany",
+    companyType: "Industry Professional",
+    image:
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=240&h=240&auto=format&fit=crop",
     quote:
-      "This is not just industry news. It helps connect signals, suppliers and real business opportunities.",
-    label: "Industry Professional"
+      "This is not just industry news. It helps connect signals, suppliers and real business opportunities."
   }
 ];
 
@@ -198,13 +221,15 @@ export default function HomePage() {
               Learn More About Denny
             </Link>
           </div>
-          <div className="denny-stat-grid">
-            {dennyStats.map((item) => (
-              <div className="card denny-stat-card" key={item.value}>
-                <strong>{item.value}</strong>
-                <span>{item.label}</span>
-              </div>
-            ))}
+          <div className="denny-photo-panel">
+            <img
+              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
+              alt="Industry professionals in a business forum discussion"
+            />
+            <div className="denny-photo-caption">
+              <strong>Denny Connects The Industry</strong>
+              <span>Manufacturers, brands, suppliers and industry professionals.</span>
+            </div>
           </div>
         </div>
       </section>
@@ -215,6 +240,12 @@ export default function HomePage() {
             className="featured-signal-editorial"
             href="/insights/global-cleaning-industry-center-vision"
           >
+            <div className="featured-signal-cover">
+              <img
+                src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1400&auto=format&fit=crop"
+                alt="Global trade show audience and industry conference stage"
+              />
+            </div>
             <div className="featured-signal-copy">
               <p className="eyebrow">Featured Signal</p>
               <h2>Why The Global Cleaning Industry Needs A Shared Information Center</h2>
@@ -226,7 +257,6 @@ export default function HomePage() {
               </p>
               <span>Read Featured Signal</span>
             </div>
-            <div className="featured-signal-image" aria-hidden="true" />
           </Link>
         </div>
       </section>
@@ -238,19 +268,23 @@ export default function HomePage() {
               <p className="eyebrow">How We Help</p>
               <h2>How We Help</h2>
               <p>
-                World Clean Biz turns cleaning industry information into
-                practical paths for signals, sourcing, reports and industry
-                connections.
+                World Clean Biz helps industry professionals turn signals into
+                sourcing, market and business opportunities.
               </p>
             </div>
           </div>
           <div className="platform-grid">
             {helpCards.map((item) => (
-              <Link className="platform-card compact-card" href={item.href} key={item.title}>
-                <IconBadge name={item.icon} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                <span>{item.cta}</span>
+              <Link className="platform-card compact-card home-help-card" href={item.href} key={item.title}>
+                <div className="home-help-image">
+                  <img src={item.image} alt={`${item.title} industry scene`} />
+                </div>
+                <div className="home-help-body">
+                  <IconBadge name={item.icon} />
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                  <span>{item.cta}</span>
+                </div>
               </Link>
             ))}
           </div>
@@ -271,9 +305,17 @@ export default function HomePage() {
           </div>
           <div className="grid-3">
             {testimonials.map((item) => (
-              <div className="card testimonial-card" key={item.label}>
+              <div className="card testimonial-card" key={item.name}>
+                <div className="testimonial-person">
+                  <img src={item.image} alt={`${item.name}, ${item.title}`} />
+                  <div>
+                    <strong>{item.name}</strong>
+                    <span>{item.title}</span>
+                    <small>{item.country}</small>
+                  </div>
+                </div>
+                <div className="testimonial-type">{item.companyType}</div>
                 <p className="testimonial-quote">"{item.quote}"</p>
-                <strong>{item.label}</strong>
               </div>
             ))}
           </div>

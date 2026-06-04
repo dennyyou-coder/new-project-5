@@ -33,8 +33,8 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <Link className="header-cta" href="/contact">
-            Share Inquiry
+          <Link className="header-cta" href="/market-reports">
+            Get Free Reports
           </Link>
         </div>
       </div>

@@ -21,8 +21,10 @@ export function Footer() {
             business connections for the global cleaning industry.
           </p>
           <div className="footer-slogan">
-            <strong>Signals Before Decisions.</strong>
-            <span>Better information helps companies make better business decisions.</span>
+            <strong>
+              Signals Before Decisions. Better information helps companies make
+              better business decisions.
+            </strong>
           </div>
         </div>
         <div className="footer-links" aria-label="Footer navigation">
