@@ -62,15 +62,24 @@ function summaryFor(article: Insight) {
 }
 
 function ArticleFeedItem({ article, index }: { article: Insight; index: number }) {
+  const featured = index === 0;
+  const summary = featured
+    ? `${summaryFor(article)} The piece sets the tone for how World Clean Biz reads industry information: not as isolated news, but as signals that can help companies understand where products, suppliers and business opportunities may be moving next.`
+    : summaryFor(article);
+
   return (
-    <Link className="insights-feed-item" href={`/insights/${article.slug}`}>
+    <Link
+      className={`insights-feed-item${featured ? " insights-feed-item-featured" : ""}`}
+      href={`/insights/${article.slug}`}
+    >
       <div className="insights-feed-image">
         <img src={imageFor(article, index)} alt={`${article.title} cover`} />
       </div>
       <div className="insights-feed-copy">
+        {featured ? <span className="featured-feed-label">Featured Insight</span> : null}
         <span className="insights-category">{article.category}</span>
         <h2>{article.title}</h2>
-        <p>{summaryFor(article)}</p>
+        <p>{summary}</p>
         <div className="insights-card-meta">
           <span>{article.date}</span>
           <span>{article.readingTime}</span>
@@ -130,7 +139,7 @@ export default function InsightsPage() {
                   <span />
                   <span />
                 </div>
-                <h3>Get access to industry trends, supplier intelligence and market opportunities.</h3>
+                <h3>Get industry trends, supplier intelligence and market opportunities from World Clean Biz.</h3>
                 <Link className="button" href="/market-reports">
                   Get Free Reports
                 </Link>
@@ -141,11 +150,12 @@ export default function InsightsPage() {
                   src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=360&h=360&auto=format&fit=crop&crop=faces"
                   alt="Professional portrait placeholder for Denny You"
                 />
-                <h3>About Denny</h3>
+                <h3>Denny Connects The Industry</h3>
                 <ul>
                   <li>20+ Years In The Cleaning Industry</li>
-                  <li>9,000+ Industry Professionals In Network</li>
+                  <li>9,000+ Industry Professionals</li>
                   <li>Global Industry Events And Connections</li>
+                  <li>Supplier, Brand And Market Network</li>
                 </ul>
                 <Link href="/about">Learn More About Denny</Link>
               </div>
