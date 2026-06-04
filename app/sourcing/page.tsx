@@ -16,11 +16,12 @@ const trustMetrics = [
 ];
 
 const painPoints = [
-  "Too many supplier emails.",
-  "Too many copycat products.",
-  "Competitors launch faster.",
-  "Margins keep shrinking.",
-  "After-sales costs keep growing."
+  "Too Many Suppliers.",
+  "Too Few Opportunities.",
+  "Every Trade Show Looks The Same.",
+  "Competitors Launch Faster.",
+  "Margins Keep Shrinking.",
+  "High After-Sales. Low Profit."
 ];
 
 const reasons = [
@@ -134,10 +135,9 @@ export default function SourcingPage() {
         <div className="container sourcing-hero-grid">
           <div>
             <p className="eyebrow">Sourcing</p>
-            <h1>Looking For The Next Winning Product?</h1>
+            <h1>Everyone Can Find Suppliers. Few Can Find The Next Amazon Best Seller.</h1>
             <p>
-              Most companies don&apos;t need more suppliers. They need better
-              opportunities.
+              Most companies don&apos;t need more suppliers. They need better opportunities.
             </p>
             <ul className="sourcing-pain-list">
               {painPoints.map((point) => (
@@ -153,18 +153,10 @@ export default function SourcingPage() {
               </Link>
             </div>
           </div>
-          <div className="sourcing-opportunity-visual" aria-label="Global industry network and opportunity map visual">
-            <div className="sourcing-visual-card sourcing-visual-card-main">
-              <span>01</span>
-              <strong>Product Opportunity</strong>
-            </div>
-            <div className="sourcing-visual-card sourcing-visual-card-right">
-              <span>02</span>
-              <strong>Supplier Network</strong>
-            </div>
-            <div className="sourcing-visual-card sourcing-visual-card-bottom">
-              <span>03</span>
-              <strong>Market Signals</strong>
+          <div className="sourcing-opportunity-visual" aria-label="International trade show aisles and supplier booths">
+            <div className="sourcing-visual-caption">
+              <span>Trade Show Signal</span>
+              <strong>Too many suppliers. Too few obvious opportunities.</strong>
             </div>
           </div>
         </div>
