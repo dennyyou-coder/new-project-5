@@ -167,10 +167,6 @@ export default function SourcingPage() {
                 </Link>
               </div>
             </div>
-            <div
-              className="sourcing-hero-visual"
-              aria-label="Trade show floor with sourcing and product conversations"
-            />
           </div>
         </div>
       </section>
