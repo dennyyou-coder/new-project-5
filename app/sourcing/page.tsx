@@ -5,206 +5,188 @@ import { IconBadge, type IconName } from "@/components/Icon";
 export const metadata: Metadata = {
   title: "Sourcing",
   description:
-    "Product opportunity and sourcing support for cleaning industry buyers, covering product decisions, supplier access, market opportunities, OEM, private label, and cleaning product development."
+    "Work with Denny You and World Clean Biz to discover better cleaning product opportunities, stronger suppliers, higher-margin products, and global cleaning industry connections."
 };
 
-const buyerAdvantages = [
+const coreValues = [
   {
-    icon: "network",
-    title: "Deep Industry Access Few Others Have",
-    text: "World Clean Biz is built by Denny You, one of the most recognized voices in the global cleaning industry. Through industry media, conferences, factory visits and trade shows, he tracks product launches, technology shifts, supplier movements and market opportunities."
+    icon: "target",
+    title: "Discover Opportunities Earlier",
+    text: "Find emerging categories and market opportunities before competitors."
   },
   {
-    icon: "radar",
-    title: "Industry Intelligence Before Everyone Else",
-    text: "Every year we speak with manufacturers, brands, distributors, retailers and industry decision makers across the cleaning industry. Most sourcing companies only see factories. We see the entire ecosystem."
+    icon: "dollar",
+    title: "Build Products With Better Margins",
+    text: "Develop differentiated products with stronger pricing and long-term competitiveness."
   },
   {
-    icon: "badge",
-    title: "20+ Years in the Cleaning Industry",
-    text: "Our team has spent more than two decades inside the cleaning industry, covering products, technologies, factories, costs, certifications and market trends across major cleaning categories."
+    icon: "factory",
+    title: "Access Proven Supply Chains",
+    text: "Work with manufacturers trusted by leading brands and reduce costly sourcing mistakes."
+  }
+] satisfies { icon: IconName; title: string; text: string }[];
+
+const trustMetrics = [
+  "20+ Years Industry Experience",
+  "9,000+ Industry Professionals",
+  "Global Industry Network",
+  "Industry Events & Intelligence"
+];
+
+const reasons = [
+  {
+    icon: "star",
+    title: "Industry Leader, Influencer & Trusted Advisor",
+    text: "Denny connects brands, suppliers and markets across the global cleaning industry."
   },
   {
     icon: "target",
-    title: "Find Winning Products Earlier",
-    text: "Instead of guessing what may sell next, buyers gain access to products, technologies and category opportunities already proving successful in the market."
+    title: "Discover Opportunities Earlier",
+    text: "Identify emerging categories, market shifts and product opportunities before competitors."
   },
   {
-    icon: "rocket",
-    title: "Launch 3-6 Months Faster",
-    text: "With direct access to manufacturers, suppliers and industry networks, we help buyers identify products, evaluate suppliers and start projects faster than building everything from scratch."
+    icon: "dollar",
+    title: "Build Products With Better Margins",
+    text: "Create differentiated products with stronger pricing and healthier profitability."
   },
   {
     icon: "lightbulb",
-    title: "Product Development Capabilities Similar to Leading Brands",
-    text: "We help evaluate product concepts, features, technologies, positioning and differentiation so buyers can build products that stand out, not products that look the same as everyone else's."
+    title: "Know What To Build, Not Just What To Buy",
+    text: "Most sourcing companies help you buy products. Denny helps you decide which products are worth building."
   },
   {
-    icon: "boxes",
-    title: "Access More Than 50 Product Opportunities Every Year",
-    text: "Each year we review dozens of new products, supplier innovations and emerging technologies, giving buyers a continuous pipeline of opportunities."
+    icon: "factory",
+    title: "Access The Factories Behind Leading Brands",
+    text: "Work with manufacturers producing for some of the world's leading cleaning brands."
   },
   {
-    icon: "trending",
-    title: "Make More Profit With Better Product Decisions",
-    text: "The difference between a successful product and an average product can be worth hundreds of thousands of dollars. Better products, better suppliers and faster execution create stronger long-term growth."
+    icon: "wrench",
+    title: "Upgrade Products, Reduce Costs & Increase Competitiveness",
+    text: "Leverage the latest technologies, components and manufacturing innovations."
+  },
+  {
+    icon: "check",
+    title: "Reduce After-Sales Costs & Improve Customer Satisfaction",
+    text: "Build more reliable products, reduce returns and improve customer experience."
+  },
+  {
+    icon: "rocket",
+    title: "Focus On Sales. We Handle The Rest.",
+    text: "From product definition to shipment, Denny helps manage the process so your team can focus on growth."
   }
 ] satisfies { icon: IconName; title: string; text: string }[];
 
-const opportunityQuestions = [
-  "Which products are growing fastest",
-  "Which technologies are becoming mainstream",
-  "Which suppliers are worth talking to",
-  "Which opportunities competitors haven't discovered yet",
-  "Which categories are worth entering",
-  "Which products can generate meaningful profit"
-];
-
-const sourceCategories = [
+const productCategories = [
   {
-    icon: "wind",
-    title: "Vacuum Cleaners",
-    text: "Cordless stick vacuums, canister vacuums, upright vacuums, wet and dry vacuums and specialty cleaning products."
+    title: "Robotic Vacuums",
+    text: "Smart cleaning robots, docking systems and product upgrade opportunities.",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=900&auto=format&fit=crop"
   },
   {
-    icon: "bot",
-    title: "Robot Vacuums",
-    text: "Robot vacuum cleaners, robot vacuum and mop combinations, navigation systems and related accessories."
+    title: "Floor Washers",
+    text: "Wet dry floor cleaners, floor care systems and household cleaning innovation.",
+    image:
+      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=900&auto=format&fit=crop"
   },
   {
-    icon: "sparkles",
-    title: "Floor Care Products",
-    text: "Floor washers, wet dry floor cleaners, carpet cleaners and related cleaning solutions."
+    title: "Pool Cleaning Robots",
+    text: "Cordless pool cleaners, robotic pool systems and seasonal category opportunities.",
+    image:
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=900&auto=format&fit=crop"
   },
   {
-    icon: "waves",
-    title: "Pool Cleaning Products",
-    text: "Robotic pool cleaners, cordless pool cleaners, above-ground and in-ground pool cleaning systems."
+    title: "Robotic Lawn Mowers",
+    text: "Outdoor robotic products, navigation upgrades and emerging channel signals.",
+    image:
+      "https://images.unsplash.com/photo-1599686302990-d6a59e0d1f6c?q=80&w=900&auto=format&fit=crop"
   },
   {
-    icon: "building",
     title: "Commercial Cleaning Equipment",
-    text: "Commercial vacuum cleaners, floor scrubbers and professional cleaning solutions."
+    text: "Floor scrubbers, professional vacuums and equipment for facility operations.",
+    image:
+      "https://source.unsplash.com/INDGbj_ojG4/900x520"
   },
   {
-    icon: "cog",
-    title: "Components & Accessories",
-    text: "Motors, batteries, brushes, filters, electronics and key cleaning product components."
+    title: "Cleaning Chemicals",
+    text: "Category positioning, private label paths and supplier-side formulation context.",
+    image:
+      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=900&auto=format&fit=crop"
+  },
+  {
+    title: "Private Label Opportunities",
+    text: "OEM, ODM and brand-ready product directions for specific market needs.",
+    image:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&auto=format&fit=crop"
+  },
+  {
+    title: "Emerging Categories",
+    text: "New cleaning technologies, product shifts and opportunities before they become obvious.",
+    image:
+      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=900&auto=format&fit=crop"
   }
-] satisfies { icon: IconName; title: string; text: string }[];
-
-const workStepIcons: IconName[] = ["send", "search", "factory", "package", "check"];
-
-const workSteps = [
-  "Share your product idea, category or sourcing goal.",
-  "We evaluate market opportunities, supplier landscape and product potential.",
-  "We identify suitable manufacturers and product options.",
-  "We coordinate quotations, samples and supplier communication.",
-  "We support product development, sourcing discussions and project follow-up."
-];
-
-const buyerRequests = [
-  "I need a private label robot vacuum.",
-  "I want to launch a cordless pool cleaner.",
-  "I need a reliable OEM supplier in China.",
-  "I want to compare multiple factories before making a decision.",
-  "I need new product ideas for my market.",
-  "I want a sourcing office in China without building a local team.",
-  "I want to find the next growth category before competitors."
 ];
 
 export default function SourcingPage() {
   return (
     <>
-      <section className="page-hero page-hero-sourcing">
+      <section className="sourcing-compact-intro">
         <div className="container">
-          <p className="eyebrow">China Sourcing Office</p>
-          <h1>Make More Money With Better Product Decisions</h1>
+          <p className="eyebrow">Sourcing</p>
+          <h1>
+            Source Better Products.
+            <br />
+            Build Better Business.
+          </h1>
           <p>
-            Most sourcing companies help you find factories. We help you find
-            the next million-dollar product.
+            Leverage Denny&apos;s industry network, market intelligence and
+            supplier relationships to discover products, manufacturers and
+            opportunities that create long-term business value.
           </p>
+          <div className="sourcing-statement">
+            We don&apos;t help you source products. We help you make more money.
+          </div>
           <div className="hero-actions">
             <Link className="button" href="/contact">
-              Start My Sourcing Project
+              Contact Denny
+            </Link>
+            <Link className="button button-secondary" href="/contact">
+              Discuss Your Project
             </Link>
           </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="container grid-2">
-          <div className="sourcing-lead">
-            <h2>The biggest mistake buyers make is not choosing the wrong supplier.</h2>
-            <p>It is choosing the wrong product.</p>
-            <div className="highlight-panel">
-              <p>
-              A better factory might save you 5%. The right product can
-              increase your sales by 500%.
-              </p>
-            </div>
+        <div className="container sourcing-denny-layout">
+          <div className="sourcing-denny-image" aria-label="Industry forum and business networking placeholder" />
+          <div className="sourcing-denny-copy">
+            <p className="eyebrow">Why Companies Work With Denny</p>
+            <h2>Denny Connects Products, Suppliers And Markets</h2>
             <p>
-              That is why we start with market opportunities, product trends
-              and industry intelligence before discussing suppliers.
-            </p>
-          </div>
-          <div className="highlight-panel">
-            <div className="module-kicker">Product Opportunity First</div>
-            <h3>The goal is not to buy products.</h3>
-            <p>The goal is to build profitable product businesses.</p>
-            <Link className="button" href="/contact">
-              Start My Sourcing Project
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Why Buyers Work With Us</p>
-              <h2>Industry access, product judgment and supplier context</h2>
-              <p>
-                Buyers work with us because we see more than factories. We see
-                product signals, supplier movement, technology shifts and market
-                opportunities across the cleaning industry.
-              </p>
-            </div>
-          </div>
-          <div className="case-grid">
-            {buyerAdvantages.map((item) => (
-              <div className="case-card sourcing-advantage-card" key={item.title}>
-                <IconBadge name={item.icon} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container grid-2">
-          <div>
-            <p className="eyebrow">What Makes Us Different</p>
-            <h2>Find the right opportunity before comparing suppliers</h2>
-            <p>
-              Most sourcing companies help you compare suppliers. We help you
-              identify the right opportunity before comparing suppliers.
+              For more than 20 years, Denny has worked across the global
+              cleaning industry, connecting manufacturers, brands, distributors
+              and retailers.
             </p>
             <p>
-              Many buyers come to us not because they need a factory. They come
-              to us because they want to know what to build next.
+              His value is not helping companies source products. His value is
+              helping companies identify better opportunities, build stronger
+              products and create more profitable businesses.
             </p>
-          </div>
-          <div className="card">
-            <h3>Buyer questions we help answer</h3>
-            <ul className="feature-list">
-              {opportunityQuestions.map((item) => (
-                <li key={item}>{item}</li>
+            <div className="sourcing-value-grid">
+              {coreValues.map((item) => (
+                <div className="sourcing-value-card" key={item.title}>
+                  <IconBadge name={item.icon} />
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
               ))}
-            </ul>
+            </div>
+            <div className="sourcing-trust-row">
+              {trustMetrics.map((metric) => (
+                <span key={metric}>{metric}</span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -213,17 +195,18 @@ export default function SourcingPage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">What We Source</p>
-              <h2>Cleaning product categories with business potential</h2>
+              <p className="eyebrow">8 Reasons Companies Work With Denny</p>
+              <h2>Better products, stronger suppliers and clearer business direction</h2>
               <p>
-                Finding a factory is easy. Finding the right product at the
-                right time is much harder.
+                Denny helps companies move beyond factory comparison and focus
+                on product opportunities, margins, reliability and long-term
+                growth.
               </p>
             </div>
           </div>
-          <div className="case-grid">
-            {sourceCategories.map((item) => (
-              <div className="case-card" key={item.title}>
+          <div className="sourcing-reason-grid">
+            {reasons.map((item) => (
+              <div className="case-card sourcing-reason-card" key={item.title}>
                 <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
@@ -237,71 +220,47 @@ export default function SourcingPage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">How We Work</p>
-              <h2>From product idea to sourcing project</h2>
+              <p className="eyebrow">Product Categories</p>
+              <h2>Explore Product Categories</h2>
               <p>
-                We start with product potential, then move into supplier
-                identification, quotation, samples and project follow-up.
+                Discover products and opportunities across the global cleaning
+                industry.
               </p>
             </div>
           </div>
-          <div className="grid-2">
-            {workSteps.map((item, index) => (
-              <div className="card" key={item}>
-                <IconBadge name={workStepIcons[index]} />
-                <div className="meta">Step {index + 1}</div>
-                <h3>{item}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-soft">
-        <div className="container grid-2">
-          <div className="image-panel image-panel-sourcing">
-            <div>
-              <p className="eyebrow">Typical Buyer Requests</p>
-              <h2>Buyers come to us when product direction matters</h2>
-              <p>
-                The right product can create years of growth. The wrong product
-                can waste months of supplier comparison.
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <ul className="feature-list">
-              {buyerRequests.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container cta-band">
-          <div className="grid-2">
-            <div>
-              <IconBadge name="trophy" />
-              <p className="eyebrow">Start My Sourcing Project</p>
-              <h2>Your Next Million-Dollar Product Starts Here</h2>
-              <p>
-                Most buyers spend their time comparing suppliers. The most
-                successful buyers spend their time identifying the right
-                opportunity. Share your target market, product category or
-                business goal. Let us help you discover the next product worth
-                building before the market gets crowded.
-              </p>
-              <p className="meta">
-                Product Category / Target Market / Expected Quantity / Business Goal
-              </p>
-            </div>
-            <div>
-              <Link className="button" href="/contact">
-                Start My Sourcing Project
+          <div className="sourcing-category-grid">
+            {productCategories.map((item) => (
+              <Link className="sourcing-category-card" href="/contact" key={item.title}>
+                <img src={item.image} alt={`${item.title} category`} />
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                  <strong>Discuss category →</strong>
+                </div>
               </Link>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container cta-band sourcing-final-cta">
+          <div>
+            <p className="eyebrow">Discuss Your Project</p>
+            <h2>Looking For Better Products, Better Suppliers And Better Opportunities?</h2>
+            <p>
+              Let&apos;s discuss how Denny and World Clean Biz can help you
+              discover stronger suppliers, better products and more profitable
+              opportunities.
+            </p>
+          </div>
+          <div className="hero-actions">
+            <Link className="button" href="/contact">
+              Contact Denny
+            </Link>
+            <Link className="button button-secondary" href="/contact">
+              Discuss Your Project
+            </Link>
           </div>
         </div>
       </section>

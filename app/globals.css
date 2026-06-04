@@ -2169,6 +2169,215 @@ h3 {
   min-height: 260px;
 }
 
+.sourcing-compact-intro {
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 80% 18%, rgba(111, 168, 255, 0.22), transparent 30%),
+    linear-gradient(135deg, #FFFFFF 0%, #F6FAFF 100%);
+  padding: 52px 0 44px;
+}
+
+.sourcing-compact-intro h1 {
+  max-width: 920px;
+  margin-top: 12px;
+  color: var(--ink);
+  font-size: clamp(40px, 5vw, 68px);
+  font-weight: 820;
+  line-height: 0.98;
+}
+
+.sourcing-compact-intro p:not(.eyebrow) {
+  max-width: 780px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.62;
+}
+
+.sourcing-statement {
+  width: max-content;
+  max-width: 100%;
+  margin-top: 20px;
+  border: 1px solid rgba(47, 107, 255, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 14px 16px;
+  color: var(--ink);
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 860;
+  line-height: 1.25;
+  box-shadow: 0 12px 28px rgba(22, 59, 103, 0.06);
+}
+
+.sourcing-denny-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.sourcing-denny-image {
+  min-height: 420px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, rgba(22, 59, 103, 0.1), rgba(22, 59, 103, 0.5)),
+    url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 18px 42px rgba(22, 59, 103, 0.1);
+}
+
+.sourcing-denny-copy h2 {
+  max-width: 780px;
+  margin-top: 10px;
+  color: var(--ink);
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.04;
+}
+
+.sourcing-denny-copy > p:not(.eyebrow) {
+  max-width: 820px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.68;
+}
+
+.sourcing-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.sourcing-value-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.045);
+}
+
+.sourcing-value-card h3,
+.sourcing-reason-card h3,
+.sourcing-category-card h3 {
+  color: var(--ink);
+}
+
+.sourcing-value-card h3 {
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.sourcing-value-card p {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.sourcing-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.sourcing-trust-row span {
+  border: 1px solid rgba(47, 107, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(220, 235, 255, 0.58);
+  padding: 8px 12px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.sourcing-reason-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sourcing-reason-card {
+  min-height: 250px;
+}
+
+.sourcing-reason-card h3 {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 1.18;
+}
+
+.sourcing-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.sourcing-category-card {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.045);
+}
+
+.sourcing-category-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-3px);
+}
+
+.sourcing-category-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+}
+
+.sourcing-category-card div {
+  padding: 18px;
+}
+
+.sourcing-category-card h3 {
+  font-size: 21px;
+  line-height: 1.18;
+}
+
+.sourcing-category-card p {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.sourcing-category-card strong {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.sourcing-final-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.sourcing-final-cta h2 {
+  max-width: 840px;
+}
+
+.sourcing-final-cta p:not(.eyebrow) {
+  max-width: 760px;
+}
+
 .home-sidebar {
   display: grid;
   gap: 18px;
@@ -3376,6 +3585,7 @@ h3 {
   .insights-featured-hero,
   .insights-page-shell,
   .insights-top-layout,
+  .sourcing-denny-layout,
   .content-layout,
   .editorial-layout,
   .signal-summary-card,
@@ -3402,9 +3612,24 @@ h3 {
   .footer-links,
   .hero-stats,
   .metric-grid,
+  .sourcing-value-grid,
   .denny-points,
   .insight-principles {
     grid-template-columns: 1fr;
+  }
+
+  .sourcing-reason-grid,
+  .sourcing-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sourcing-denny-image {
+    min-height: 320px;
+  }
+
+  .sourcing-final-cta {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .insights-grid {
@@ -3568,6 +3793,27 @@ h3 {
 
   .section h2 {
     font-size: 28px;
+  }
+
+  .sourcing-compact-intro {
+    padding: 42px 0 34px;
+  }
+
+  .sourcing-compact-intro h1 {
+    font-size: 38px;
+  }
+
+  .sourcing-compact-intro p:not(.eyebrow) {
+    font-size: 16px;
+  }
+
+  .sourcing-reason-grid,
+  .sourcing-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sourcing-denny-image {
+    min-height: 260px;
   }
 
   .platform-card,
