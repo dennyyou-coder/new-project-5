@@ -19,6 +19,33 @@ const topics = [
   "Trade Shows"
 ];
 
+const categories = [
+  "All",
+  "Products",
+  "Brands",
+  "Manufacturing",
+  "Markets",
+  "Supply Chain",
+  "Trade Shows"
+];
+
+const summaryDetails: Record<string, string> = {
+  "global-cleaning-industry-center-vision":
+    "This signal explains why the cleaning industry needs a shared information center as products, suppliers, channels and trade shows become more connected. It looks at how scattered information slows business decisions and why a clearer industry view can help buyers, brands and suppliers identify opportunities earlier.",
+  "commercial-cleaning-equipment-demand-signals":
+    "Commercial cleaning equipment demand is being shaped by labor pressure, higher service standards and the need for better operating efficiency. This article looks at the signals behind category movement and why manufacturers, distributors and service-focused buyers should monitor how facility needs are changing.",
+  "robot-vacuum-market-trends-2026":
+    "The robot vacuum category is entering a more competitive phase as navigation, wet cleaning, docking systems and pricing expectations continue to shift. This article explores the product signals that matter for brands, suppliers and buyers watching where the next wave of category growth may come from.",
+  "trade-show-intelligence-for-cleaning-brands":
+    "Trade shows reveal more than exhibitor lists. They show category movement, buyer interest, supplier positioning and partnership opportunities. This article explains how cleaning brands and buyers can read trade show signals to better understand what is changing across the global industry.",
+  "private-label-cleaning-products-sourcing-context":
+    "Private label cleaning products require more than choosing a supplier from a catalog. This article looks at OEM paths, supplier fit, category expectations and sourcing risks that buyers should understand before comparing factories or committing to a new product direction.",
+  "europe-floor-care-demand-update":
+    "European floor care demand is influenced by regional channels, facility requirements and changing expectations around performance and reliability. This article breaks down the signals buyers and suppliers should monitor when evaluating floor care opportunities in mature but still active markets.",
+  "china-cleaning-supply-chain-update":
+    "China remains a critical supply chain base for cleaning products, components and OEM development. This article examines supplier capability, export readiness and the manufacturing signals global buyers should understand before building sourcing plans or comparing factory options."
+};
+
 const fallbackImages = [
   "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
@@ -30,6 +57,10 @@ function imageFor(article: Insight, index: number) {
   return article.coverImage || fallbackImages[index % fallbackImages.length];
 }
 
+function summaryFor(article: Insight) {
+  return summaryDetails[article.slug] || article.excerpt;
+}
+
 function ArticleFeedItem({ article, index }: { article: Insight; index: number }) {
   return (
     <Link className="insights-feed-item" href={`/insights/${article.slug}`}>
@@ -39,7 +70,7 @@ function ArticleFeedItem({ article, index }: { article: Insight; index: number }
       <div className="insights-feed-copy">
         <span className="insights-category">{article.category}</span>
         <h2>{article.title}</h2>
-        <p>{article.excerpt}</p>
+        <p>{summaryFor(article)}</p>
         <div className="insights-card-meta">
           <span>{article.date}</span>
           <span>{article.readingTime}</span>
@@ -69,6 +100,18 @@ export default function InsightsPage() {
           </p>
         </div>
       </section>
+
+      <div className="insights-filter-wrap">
+        <div className="insights-page-container">
+          <div className="insights-filter insights-filter-v3" aria-label="Insight categories">
+            {categories.map((category) => (
+              <button className={category === "All" ? "active" : ""} key={category} type="button">
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <section className="section insights-publication-section">
         <div className="insights-page-container">

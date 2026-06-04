@@ -1263,12 +1263,13 @@ h3 {
 
 .insights-featured {
   display: grid;
-  grid-template-columns: minmax(0, 0.96fr) minmax(360px, 1fr);
+  grid-template-columns: minmax(320px, 42%) minmax(0, 1fr);
   border: 1px solid var(--line);
   border-radius: 12px;
   background: white;
   box-shadow: var(--shadow-soft);
   overflow: hidden;
+  isolation: isolate;
 }
 
 .insights-featured:hover {
@@ -1278,8 +1279,10 @@ h3 {
 }
 
 .insights-featured-image {
+  position: relative;
+  z-index: 0;
   aspect-ratio: 16 / 9;
-  min-height: 360px;
+  min-height: 340px;
   background: var(--soft);
   overflow: hidden;
 }
@@ -1293,17 +1296,23 @@ h3 {
 }
 
 .insights-featured-copy {
+  position: relative;
+  z-index: 1;
   display: grid;
   align-content: center;
-  padding: clamp(30px, 4vw, 52px);
+  min-width: 0;
+  border-left: 1px solid var(--line);
+  background: white;
+  padding: clamp(28px, 3.6vw, 48px);
 }
 
 .insights-featured-copy h2 {
-  max-width: 680px;
+  max-width: 760px;
   color: var(--ink);
-  font-size: clamp(30px, 3.2vw, 46px);
+  font-size: clamp(28px, 3vw, 40px);
   font-weight: 760;
   line-height: 1.06;
+  overflow-wrap: anywhere;
 }
 
 .insights-featured-copy p:not(.eyebrow) {
@@ -1531,10 +1540,10 @@ h3 {
 }
 
 .insights-hero-v2 {
-  min-height: 390px;
+  min-height: 210px;
   display: grid;
   align-items: center;
-  padding: 78px 0;
+  padding: 38px 0 34px;
 }
 
 .insights-hero-v2::after {
@@ -1551,10 +1560,22 @@ h3 {
 
 .insights-hero-v2 p:not(.eyebrow) {
   max-width: 760px;
+  margin-top: 12px;
+  font-size: 17px;
+}
+
+.insights-filter-wrap {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.92);
+  padding: 14px 0;
+}
+
+.insights-filter-v3 {
+  margin-bottom: 0;
 }
 
 .insights-publication-section {
-  padding-top: 58px;
+  padding-top: 34px;
 }
 
 .insights-publication-layout {
@@ -1566,15 +1587,15 @@ h3 {
 
 .insights-feed {
   display: grid;
-  gap: 26px;
+  gap: 30px;
 }
 
 .insights-feed-item {
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
-  gap: 26px;
+  gap: 30px;
   border-bottom: 1px solid var(--line);
-  padding-bottom: 26px;
+  padding-bottom: 30px;
 }
 
 .insights-feed-item:hover h2 {
@@ -1611,10 +1632,10 @@ h3 {
 
 .insights-feed-copy p {
   max-width: 720px;
-  margin-top: 12px;
+  margin-top: 14px;
   color: var(--muted);
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 16.5px;
+  line-height: 1.68;
 }
 
 .insights-sidebar-v2 {
@@ -3301,6 +3322,11 @@ h3 {
 
   .insights-hero {
     padding: 56px 0 48px;
+  }
+
+  .insights-hero-v2 {
+    min-height: 180px;
+    padding: 34px 0 30px;
   }
 
   .insights-hero h1 {
