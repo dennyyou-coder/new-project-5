@@ -26,7 +26,8 @@ const categories = [
   "Manufacturing",
   "Markets",
   "Supply Chain",
-  "Trade Shows"
+  "Trade Shows",
+  "Sourcing"
 ];
 
 const summaryDetails: Record<string, string> = {
@@ -61,29 +62,27 @@ function summaryFor(article: Insight) {
   return summaryDetails[article.slug] || article.excerpt;
 }
 
-function ArticleFeedItem({ article, index }: { article: Insight; index: number }) {
-  const featured = index === 0;
-  const summary = featured
-    ? `${summaryFor(article)} The piece sets the tone for how World Clean Biz reads industry information: not as isolated news, but as signals that can help companies understand where products, suppliers and business opportunities may be moving next.`
-    : summaryFor(article);
+function displayReadTime(article: Insight, index: number) {
+  if (index === 0) return "8 min read";
+  const minutes = 5 + (index % 4);
+  return `${minutes} min read`;
+}
 
+function ArticleFeedItem({ article, index }: { article: Insight; index: number }) {
   return (
-    <Link
-      className={`insights-feed-item${featured ? " insights-feed-item-featured" : ""}`}
-      href={`/insights/${article.slug}`}
-    >
+    <Link className="insights-feed-item" href={`/insights/${article.slug}`}>
       <div className="insights-feed-image">
         <img src={imageFor(article, index)} alt={`${article.title} cover`} />
       </div>
       <div className="insights-feed-copy">
-        {featured ? <span className="featured-feed-label">Featured Insight</span> : null}
         <span className="insights-category">{article.category}</span>
         <h2>{article.title}</h2>
-        <p>{summary}</p>
+        <p>{summaryFor(article)}</p>
         <div className="insights-card-meta">
           <span>{article.date}</span>
-          <span>{article.readingTime}</span>
+          <span>{displayReadTime(article, index)}</span>
         </div>
+        <strong>Read Insight</strong>
       </div>
     </Link>
   );
@@ -91,24 +90,37 @@ function ArticleFeedItem({ article, index }: { article: Insight; index: number }
 
 export default function InsightsPage() {
   const articles = getInsights();
+  const featured = articles.find((article) => article.featured) || articles[0];
+  const feedArticles = articles.filter((article) => article.slug !== featured?.slug);
   const latestSignals = articles.slice(0, 5);
+  const featuredSummary = featured
+    ? `${summaryFor(featured)} The piece sets the tone for how World Clean Biz reads industry information: not as isolated news, but as signals that can help companies understand where products, suppliers and business opportunities may be moving next. Readers can learn why a shared industry view matters for sourcing, market research and long-term business decisions.`
+    : "";
 
   return (
     <>
-      <section className="insights-hero insights-hero-v2">
-        <div className="insights-page-container">
-          <p className="eyebrow">Industry Insights</p>
-          <h1>
-            Analysis, Signals And Opportunities
-            <span>From The Global Cleaning Industry</span>
-          </h1>
-          <p>
-            Latest thinking from Denny and World Clean Biz. Track product
-            shifts, supplier movements, market trends and business
-            opportunities across the global cleaning industry.
-          </p>
-        </div>
-      </section>
+      {featured ? (
+        <section className="insights-featured-top">
+          <div className="insights-page-container">
+            <Link className="insights-featured-hero" href={`/insights/${featured.slug}`}>
+              <div className="insights-featured-hero-image">
+                <img src={imageFor(featured, 0)} alt={`${featured.title} featured cover`} />
+              </div>
+              <div className="insights-featured-hero-copy">
+                <p className="eyebrow">Featured Insight</p>
+                <span className="insights-category">{featured.category}</span>
+                <h1>{featured.title}</h1>
+                <p>{featuredSummary}</p>
+                <div className="insights-card-meta">
+                  <span>{featured.date}</span>
+                  <span>{displayReadTime(featured, 0)}</span>
+                </div>
+                <strong>Read Insight</strong>
+              </div>
+            </Link>
+          </div>
+        </section>
+      ) : null}
 
       <div className="insights-filter-wrap">
         <div className="insights-page-container">
@@ -126,7 +138,7 @@ export default function InsightsPage() {
         <div className="insights-page-container">
           <div className="insights-publication-layout">
             <main className="insights-feed" aria-label="Industry insight articles">
-              {articles.map((article, index) => (
+              {feedArticles.map((article, index) => (
                 <ArticleFeedItem article={article} index={index} key={article.slug} />
               ))}
             </main>
