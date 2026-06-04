@@ -451,6 +451,24 @@ h3 {
   line-height: 1.45;
 }
 
+.hero-trust-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 680px;
+  margin-top: 28px;
+}
+
+.hero-trust-tags span {
+  border: 1px solid rgba(47, 107, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 9px 12px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 850;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -769,6 +787,78 @@ h3 {
 .card p {
   margin: 10px 0 0;
   color: var(--muted);
+}
+
+.home-intro-grid,
+.denny-section-grid {
+  align-items: center;
+}
+
+.home-intro-grid > div:first-child p:not(.eyebrow),
+.denny-section-grid > div:first-child p:not(.eyebrow) {
+  max-width: 620px;
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.opportunity-card {
+  min-height: 210px;
+}
+
+.opportunity-card h3 {
+  margin-top: 16px;
+}
+
+.denny-point-list {
+  margin: 24px 0 28px;
+}
+
+.denny-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.denny-stat-card {
+  min-height: 150px;
+}
+
+.denny-stat-card strong {
+  display: block;
+  color: var(--ink);
+  font-size: 25px;
+  line-height: 1.08;
+}
+
+.denny-stat-card span {
+  display: block;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.testimonial-card {
+  display: grid;
+  align-content: space-between;
+  min-height: 220px;
+}
+
+.testimonial-quote {
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 720;
+  line-height: 1.45;
+}
+
+.testimonial-card strong {
+  display: block;
+  margin-top: 24px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .tag-list {
@@ -2325,6 +2415,7 @@ h3 {
   .footer-links,
   .hero-stats,
   .metric-grid,
+  .denny-stat-grid,
   .denny-points,
   .insight-principles {
     grid-template-columns: 1fr;

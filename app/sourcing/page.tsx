@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
+import { IconBadge, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Sourcing",
@@ -138,7 +138,6 @@ export default function SourcingPage() {
             <h2>The biggest mistake buyers make is not choosing the wrong supplier.</h2>
             <p>It is choosing the wrong product.</p>
             <div className="highlight-panel">
-              <IconBadge name="target" />
               <p>
               A better factory might save you 5%. The right product can
               increase your sales by 500%.
@@ -188,10 +187,7 @@ export default function SourcingPage() {
       <section className="section">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">
-              <InlineIcon name="network" />
-              What Makes Us Different
-            </p>
+            <p className="eyebrow">What Makes Us Different</p>
             <h2>Find the right opportunity before comparing suppliers</h2>
             <p>
               Most sourcing companies help you compare suppliers. We help you
@@ -274,7 +270,6 @@ export default function SourcingPage() {
             </div>
           </div>
           <div className="card">
-            <IconBadge name="clipboard" />
             <ul className="feature-list">
               {buyerRequests.map((item) => (
                 <li key={item}>{item}</li>

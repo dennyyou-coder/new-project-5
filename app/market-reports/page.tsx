@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Market Reports",
@@ -8,56 +7,52 @@ export const metadata: Metadata = {
     "Free market reports, category insights and opportunity analysis for cleaning industry buyers, brands, distributors and professionals."
 };
 
-const featuredHighlights: { icon: IconName; label: string }[] = [
-  { icon: "trending", label: "Market Growth Trends" },
-  { icon: "badge", label: "Leading Brands" },
-  { icon: "factory", label: "Supplier Landscape" },
-  { icon: "target", label: "Product Opportunities" },
-  { icon: "telescope", label: "Future Outlook" }
+const featuredHighlights = [
+  "Market Growth Trends",
+  "Leading Brands",
+  "Supplier Landscape",
+  "Product Opportunities",
+  "Future Outlook"
 ];
 
 const popularReports = [
   {
-    icon: "file",
     title: "European Pool Cleaner Market Overview",
     text: "A focused look at pool cleaner demand, product categories, buyer channels and regional opportunity signals."
   },
   {
-    icon: "file",
     title: "Global Robot Vacuum Market Outlook",
     text: "Understand category movement, navigation trends, premium features, supplier shifts and product opportunities."
   },
   {
-    icon: "file",
     title: "Floor Care Market Trends",
     text: "Track floor washer, scrubber, carpet cleaner and commercial floor care signals across key buyer channels."
   },
   {
-    icon: "file",
     title: "Private Label Opportunities In Cleaning Products",
     text: "Explore product categories, OEM and ODM paths, supplier context and private label opportunities."
   }
-] satisfies { icon: IconName; title: string; text: string }[];
-
-const learnItems: { icon: IconName; label: string }[] = [
-  { icon: "trending", label: "Market Size & Growth" },
-  { icon: "activity", label: "Category Trends" },
-  { icon: "badge", label: "Leading Brands" },
-  { icon: "factory", label: "Supplier Landscape" },
-  { icon: "network", label: "Channel Developments" },
-  { icon: "cpu", label: "Technology Shifts" },
-  { icon: "target", label: "Private Label Opportunities" },
-  { icon: "boxes", label: "Emerging Product Categories" }
 ];
 
-const audienceItems: { icon: IconName; label: string }[] = [
-  { icon: "users", label: "Brands" },
-  { icon: "users", label: "Importers" },
-  { icon: "users", label: "Distributors" },
-  { icon: "users", label: "Retailers" },
-  { icon: "users", label: "Product Managers" },
-  { icon: "users", label: "Investors" },
-  { icon: "users", label: "OEM / ODM Buyers" }
+const learnItems = [
+  "Market Size & Growth",
+  "Category Trends",
+  "Leading Brands",
+  "Supplier Landscape",
+  "Channel Developments",
+  "Technology Shifts",
+  "Private Label Opportunities",
+  "Emerging Product Categories"
+];
+
+const audienceItems = [
+  "Brands",
+  "Importers",
+  "Distributors",
+  "Retailers",
+  "Product Managers",
+  "Investors",
+  "OEM / ODM Buyers"
 ];
 
 export default function MarketReportsPage() {
@@ -86,10 +81,7 @@ export default function MarketReportsPage() {
         <div className="container">
           <div className="featured-report-card">
             <div>
-              <p className="eyebrow">
-                <InlineIcon name="file" />
-                Featured Report
-              </p>
+              <p className="eyebrow">Featured Report</p>
               <h2>2026 Global Pool Cleaning Market Overview</h2>
               <p>
                 Understand market trends, leading brands, supplier landscape,
@@ -97,10 +89,7 @@ export default function MarketReportsPage() {
               </p>
               <ul className="feature-list report-highlight-list">
                 {featuredHighlights.map((item) => (
-                  <li key={item.label}>
-                    <InlineIcon name={item.icon} />
-                    {item.label}
-                  </li>
+                  <li key={item}>{item}</li>
                 ))}
               </ul>
               <Link className="button" href="#free-report">
@@ -136,7 +125,6 @@ export default function MarketReportsPage() {
           <div className="report-card-grid">
             {popularReports.map((report) => (
               <div className="report-card" key={report.title}>
-                <IconBadge name={report.icon} />
                 <h3>{report.title}</h3>
                 <p>{report.text}</p>
                 <Link href="#free-report">Get Free Report</Link>
@@ -159,9 +147,8 @@ export default function MarketReportsPage() {
           </div>
           <div className="module-grid">
             {learnItems.map((item) => (
-              <div className="module-chip" key={item.label}>
-                <InlineIcon name={item.icon} />
-                {item.label}
+              <div className="module-chip" key={item}>
+                {item}
               </div>
             ))}
           </div>
@@ -182,9 +169,8 @@ export default function MarketReportsPage() {
           </div>
           <div className="module-grid audience-chip-grid">
             {audienceItems.map((item) => (
-              <div className="module-chip" key={item.label}>
-                <InlineIcon name={item.icon} />
-                {item.label}
+              <div className="module-chip" key={item}>
+                {item}
               </div>
             ))}
           </div>
@@ -194,10 +180,7 @@ export default function MarketReportsPage() {
       <section className="section" id="free-report">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">
-              <InlineIcon name="mail" />
-              Get Instant Access
-            </p>
+            <p className="eyebrow">Get Instant Access</p>
             <h2>Receive the report directly in your inbox</h2>
             <p>
               Enter your details below and receive the report directly in your
@@ -235,10 +218,7 @@ export default function MarketReportsPage() {
         <div className="container cta-band market-note-band">
           <div className="grid-2">
             <div>
-              <p className="eyebrow">
-                <InlineIcon name="clipboard" />
-                Custom Market Request
-              </p>
+              <p className="eyebrow">Custom Market Request</p>
               <h2>Need Information About A Specific Market?</h2>
               <p>
                 Looking for information about a specific category, country or
@@ -259,7 +239,6 @@ export default function MarketReportsPage() {
         <div className="container cta-band">
           <div className="grid-2">
             <div>
-              <IconBadge name="trending" />
               <h2>The Best Opportunities Are Usually Identified Early</h2>
               <p>
                 Most companies discover opportunities after everyone is already

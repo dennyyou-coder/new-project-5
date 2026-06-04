@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "World Clean Expo",
@@ -8,12 +7,12 @@ export const metadata: Metadata = {
     "World Clean Expo is a future trade show and industry platform for global cleaning products, technologies and supply chains."
 };
 
-const whyHighlights: { icon: IconName; label: string }[] = [
-  { icon: "network", label: "Industry Connections" },
-  { icon: "search", label: "Product Discovery" },
-  { icon: "cpu", label: "Technology Trends" },
-  { icon: "bar-chart", label: "Market Intelligence" },
-  { icon: "handshake", label: "Global Business Opportunities" }
+const whyHighlights = [
+  "Industry Connections",
+  "Product Discovery",
+  "Technology Trends",
+  "Market Intelligence",
+  "Global Business Opportunities"
 ];
 
 const exhibitorTypes = [
@@ -40,41 +39,34 @@ const attendeeTypes = [
 
 const connectionCards = [
   {
-    icon: "package",
     title: "Products",
     text: "Discover new product categories and technologies."
   },
   {
-    icon: "factory",
     title: "Suppliers",
     text: "Connect with manufacturers and supply chain partners."
   },
   {
-    icon: "users",
     title: "Buyers",
     text: "Meet buyers from different markets and channels."
   },
   {
-    icon: "cpu",
     title: "Technology",
     text: "Explore innovations shaping the future of the industry."
   },
   {
-    icon: "bar-chart",
     title: "Market Intelligence",
     text: "Understand trends, opportunities and industry developments."
   },
   {
-    icon: "megaphone",
     title: "Media Exposure",
     text: "Increase visibility across industry media and professional networks."
   },
   {
-    icon: "handshake",
     title: "Business Opportunities",
     text: "Build new partnerships and growth opportunities."
   }
-] satisfies { icon: IconName; title: string; text: string }[];
+];
 
 const platformElements = [
   "Industry Intelligence",
@@ -123,10 +115,7 @@ export default function WorldCleanExpoPage() {
       <section className="section">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">
-              <InlineIcon name="globe" />
-              Why World Clean Expo
-            </p>
+            <p className="eyebrow">Why World Clean Expo</p>
             <h2>Why World Clean Expo</h2>
             <p>
               The cleaning industry is evolving rapidly. New technologies, new
@@ -143,10 +132,7 @@ export default function WorldCleanExpoPage() {
           <div className="card">
             <ul className="feature-list">
               {whyHighlights.map((item) => (
-                <li key={item.label}>
-                  <InlineIcon name={item.icon} />
-                  {item.label}
-                </li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
@@ -156,10 +142,7 @@ export default function WorldCleanExpoPage() {
       <section className="section section-soft">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">
-              <InlineIcon name="building" />
-              Who Should Exhibit
-            </p>
+            <p className="eyebrow">Who Should Exhibit</p>
             <h2>Who Should Exhibit</h2>
             <p>
               If your company develops, manufactures or supplies products and
@@ -181,10 +164,7 @@ export default function WorldCleanExpoPage() {
       <section className="section">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">
-              <InlineIcon name="users" />
-              Who Should Attend
-            </p>
+            <p className="eyebrow">Who Should Attend</p>
             <h2>Who Should Attend</h2>
             <p>
               World Clean Expo is designed for professionals looking to
@@ -218,7 +198,6 @@ export default function WorldCleanExpoPage() {
           <div className="case-grid">
             {connectionCards.map((item) => (
               <div className="case-card" key={item.title}>
-                <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
@@ -263,10 +242,7 @@ export default function WorldCleanExpoPage() {
       <section className="section section-soft" id="expo-interest">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">
-              <InlineIcon name="calendar" />
-              Share Expo Interest
-            </p>
+            <p className="eyebrow">Share Expo Interest</p>
             <h2>Interested In World Clean Expo?</h2>
             <p>
               Tell us whether you are interested in exhibiting, visiting,
@@ -317,7 +293,6 @@ export default function WorldCleanExpoPage() {
         <div className="container cta-band">
           <div className="grid-2">
             <div>
-              <IconBadge name="globe" />
               <h2>The Future Of The Cleaning Industry Will Be Built Together</h2>
               <p>
                 Manufacturers, brands, buyers, suppliers and industry

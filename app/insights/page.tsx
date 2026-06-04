@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { IconBadge, InlineIcon } from "@/components/Icon";
+import { InlineIcon } from "@/components/Icon";
 import { getInsights } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -16,10 +16,7 @@ export default function InsightsPage() {
     <>
       <section className="page-hero page-hero-insights">
         <div className="container">
-          <p className="eyebrow">
-            <InlineIcon name="radio" />
-            Signals
-          </p>
+          <p className="eyebrow">Signals</p>
           <h1>Signal Feed</h1>
           <p>
             Market movement, sourcing context and expo observations from the
@@ -49,7 +46,6 @@ export default function InsightsPage() {
           </div>
           <div className="insight-prompt insight-prompt-compact">
             <div>
-              <IconBadge name="message" />
               <p className="eyebrow">Topic Request</p>
               <h3>Have a signal worth tracking?</h3>
               <p>

@@ -1,102 +1,144 @@
 import Link from "next/link";
 import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
-import { getInsights } from "@/lib/content";
 
-const capabilityPoints: { icon: IconName; label: string }[] = [
-  { icon: "radio", label: "Industry Signals" },
-  { icon: "factory", label: "Supplier Context" },
-  { icon: "file", label: "Market Notes" },
-  { icon: "calendar", label: "Expo Intelligence" }
+const heroSignals: { icon: IconName; label: string }[] = [
+  { icon: "target", label: "Product Opportunities" },
+  { icon: "factory", label: "Supply Chain Signals" },
+  { icon: "trending", label: "Market Opportunities" },
+  { icon: "radio", label: "Industry Intelligence" }
 ];
 
-const heroTrackItems: { icon: IconName; label: string }[] = [
-  { icon: "activity", label: "Category Signals" },
-  { icon: "factory", label: "Supplier Context" },
-  { icon: "users", label: "Buyer Movement" },
-  { icon: "globe", label: "Expo Intelligence" }
+const credibilityTags = [
+  "20+ Years Industry Experience",
+  "9,000+ Industry Professionals",
+  "Global Supplier Network",
+  "Industry Events & Intelligence"
 ];
 
-const heroEntries: { icon: IconName; title: string; text: string }[] = [
+const opportunityCards: { icon: IconName; title: string; text: string }[] = [
+  {
+    icon: "target",
+    title: "Product Opportunities",
+    text: "Identify emerging cleaning products and category shifts."
+  },
+  {
+    icon: "factory",
+    title: "Supply Chain Opportunities",
+    text: "Understand manufacturers, suppliers and sourcing directions."
+  },
+  {
+    icon: "trending",
+    title: "Market Opportunities",
+    text: "Track regional demand, channel changes and buyer needs."
+  },
   {
     icon: "radio",
-    title: "Signals",
-    text: "Product, category and channel movement"
-  },
-  {
-    icon: "file",
-    title: "Reports",
-    text: "Focused market notes and regional demand"
-  },
-  {
-    icon: "search",
-    title: "Sourcing",
-    text: "Supplier-side context and OEM paths"
-  },
-  {
-    icon: "globe",
-    title: "Expo",
-    text: "Trade show signals and event opportunities"
+    title: "Industry Intelligence",
+    text: "Follow signals from brands, products, exhibitions and industry movements."
   }
 ];
 
-const signalTitles: Record<string, string> = {
-  "commercial-cleaning-equipment-demand-signals": "Commercial Cleaning Demand Signals",
-  "robot-vacuum-market-trends-2026": "Robot Vacuum Signals for 2026",
-  "trade-show-intelligence-for-cleaning-brands": "Trade Show Signals for Brands and Buyers",
-  "private-label-cleaning-products-sourcing-context": "Private Label Sourcing Context",
-  "europe-floor-care-demand-update": "Europe Floor Care Demand Update",
-  "china-cleaning-supply-chain-update": "China Supply Chain Signals"
-};
+const dennyPoints = [
+  "20+ years in the cleaning industry",
+  "Connected with manufacturers, brands and suppliers",
+  "Organizer of industry events and forums",
+  "Long-term observer of global cleaning industry trends"
+];
 
-const signalContexts: Record<string, string> = {
-  "commercial-cleaning-equipment-demand-signals":
-    "Labor pressure and service efficiency are shaping equipment demand.",
-  "robot-vacuum-market-trends-2026":
-    "Navigation, wet cleaning and buyer expectations are reshaping the category.",
-  "trade-show-intelligence-for-cleaning-brands":
-    "Exhibitor movement and buyer needs reveal useful trade show signals.",
-  "private-label-cleaning-products-sourcing-context":
-    "OEM paths, supplier fit and risk checks matter before comparison.",
-  "europe-floor-care-demand-update":
-    "Distributor channels and facility needs point to regional demand shifts.",
-  "china-cleaning-supply-chain-update":
-    "OEM capability, components and export readiness remain key signals."
-};
+const dennyStats = [
+  { value: "20+ Years", label: "Cleaning industry experience" },
+  { value: "9,000+", label: "Industry professionals" },
+  { value: "100+ Brands", label: "Tracked across categories" },
+  { value: "Global Network", label: "Suppliers, brands and events" }
+];
+
+const helpCards: { icon: IconName; title: string; text: string; cta: string; href: string }[] = [
+  {
+    icon: "radio",
+    title: "Industry Signals",
+    text: "Follow the latest market changes, product shifts and business opportunities.",
+    cta: "Explore Signals",
+    href: "/insights"
+  },
+  {
+    icon: "search",
+    title: "Sourcing Intelligence",
+    text: "Understand suppliers, manufacturers and product opportunities before making sourcing decisions.",
+    cta: "Learn About Sourcing",
+    href: "/sourcing"
+  },
+  {
+    icon: "file",
+    title: "Free Market Reports",
+    text: "Get free cleaning industry reports and market insights.",
+    cta: "Get Reports",
+    href: "/market-reports"
+  },
+  {
+    icon: "globe",
+    title: "World Clean Expo",
+    text: "Connect with manufacturers, brands, buyers and industry professionals.",
+    cta: "Visit Expo Page",
+    href: "/world-clean-expo"
+  }
+];
+
+const testimonials = [
+  {
+    quote:
+      "World Clean Biz helps us understand which cleaning products and suppliers deserve attention before the market becomes crowded.",
+    label: "Overseas Distributor"
+  },
+  {
+    quote:
+      "Denny understands both the factory side and the market side. His insights are practical for companies looking for global opportunities.",
+    label: "Cleaning Product Manufacturer"
+  },
+  {
+    quote:
+      "This is not just industry news. It helps connect signals, suppliers and real business opportunities.",
+    label: "Industry Professional"
+  }
+];
 
 export default function HomePage() {
-  const signalFeed = getInsights().slice(1, 5);
-
   return (
     <>
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <p className="eyebrow">Global Cleaning Industry Intelligence</p>
+            <p className="eyebrow">Providing Profitable Opportunities And Intelligence</p>
             <h1>
               Global Cleaning
               <span>Industry Intelligence</span>
             </h1>
             <p className="hero-copy">
-              Track cleaning industry signals before they become business
-              decisions.
+              Discover product opportunities, supply chain opportunities,
+              market opportunities and industry signals for the global cleaning
+              industry.
             </p>
             <div className="hero-actions">
               <Link className="button" href="/insights">
                 Explore Signals
               </Link>
-              <Link className="button-secondary" href="/contact">
-                Share Your Inquiry
+              <Link className="button-secondary" href="/market-reports">
+                Get Free Market Reports
               </Link>
+            </div>
+            <div className="hero-trust-tags" aria-label="World Clean Biz credibility">
+              {credibilityTags.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
             </div>
           </div>
           <div className="hero-panel hero-track-card">
             <div className="hero-panel-top">
-              <span>INTELLIGENCE TRACK</span>
+              <span>OPPORTUNITY INTELLIGENCE</span>
               <span>GLOBAL</span>
             </div>
             <strong>What We Track</strong>
             <ul className="hero-panel-list">
-              {heroTrackItems.map((item) => (
+              {heroSignals.map((item) => (
                 <li key={item.label}>
                   <InlineIcon name={item.icon} />
                   {item.label}
@@ -105,14 +147,65 @@ export default function HomePage() {
             </ul>
           </div>
         </div>
-        <div className="container hero-stats">
-          {heroEntries.map((item) => (
-            <div className="hero-stat" key={item.title}>
-              <IconBadge name={item.icon} />
-              <strong>{item.title}</strong>
-              <span>{item.text}</span>
-            </div>
-          ))}
+      </section>
+
+      <section className="section section-soft">
+        <div className="container grid-2 home-intro-grid">
+          <div>
+            <p className="eyebrow">What Is World Clean Biz?</p>
+            <h2>The Global Hub For Cleaning Industry Opportunities</h2>
+            <p>
+              World Clean Biz helps cleaning industry professionals discover
+              profitable opportunities, market signals and supply chain
+              intelligence across the global cleaning industry.
+            </p>
+            <p>
+              It is built for manufacturers, brands, distributors, retailers,
+              sourcing teams and industry professionals who need to understand
+              where the next business opportunities are coming from.
+            </p>
+          </div>
+          <div className="module-grid opportunity-card-grid">
+            {opportunityCards.map((item) => (
+              <div className="card opportunity-card" key={item.title}>
+                <IconBadge name={item.icon} />
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container grid-2 denny-section-grid">
+          <div>
+            <p className="eyebrow">Why Denny?</p>
+            <h2>Why Industry Leaders Follow Denny</h2>
+            <p>
+              Denny has spent more than 20 years in the cleaning industry,
+              connecting manufacturers, brands, suppliers, distributors and
+              industry professionals. World Clean Biz is built on his long-term
+              industry observation, supplier network and ability to identify
+              business opportunities before they become obvious.
+            </p>
+            <ul className="feature-list denny-point-list">
+              {dennyPoints.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <Link className="button-secondary" href="/about">
+              Learn More About Denny
+            </Link>
+          </div>
+          <div className="denny-stat-grid">
+            {dennyStats.map((item) => (
+              <div className="card denny-stat-card" key={item.value}>
+                <strong>{item.value}</strong>
+                <span>{item.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -124,10 +217,12 @@ export default function HomePage() {
           >
             <div className="featured-signal-copy">
               <p className="eyebrow">Featured Signal</p>
-              <h2>Why the Global Cleaning Industry Needs a Shared Information Center</h2>
+              <h2>Why The Global Cleaning Industry Needs A Shared Information Center</h2>
               <p>
-                The industry is connected, but information is scattered across
-                categories, suppliers, buyers, channels, and trade shows.
+                The cleaning industry is changing faster than ever. New
+                products, new manufacturers, new channels and new market
+                opportunities are emerging globally. World Clean Biz helps
+                industry professionals see these signals earlier.
               </p>
               <span>Read Featured Signal</span>
             </div>
@@ -136,25 +231,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-soft">
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Platform Capability</p>
-              <h2>Read the cleaning industry as a connected system</h2>
+              <p className="eyebrow">How We Help</p>
+              <h2>How We Help</h2>
               <p>
-                World Clean Biz connects market signals, supplier context,
-                sourcing questions and trade show intelligence into one
-                industry view.
+                World Clean Biz turns cleaning industry information into
+                practical paths for signals, sourcing, reports and industry
+                connections.
               </p>
             </div>
           </div>
-          <div className="module-grid">
-            {capabilityPoints.map((item) => (
-              <div className="module-chip" key={item.label}>
-                <InlineIcon name={item.icon} />
-                {item.label}
-              </div>
+          <div className="platform-grid">
+            {helpCards.map((item) => (
+              <Link className="platform-card compact-card" href={item.href} key={item.title}>
+                <IconBadge name={item.icon} />
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+                <span>{item.cta}</span>
+              </Link>
             ))}
           </div>
         </div>
@@ -162,27 +259,22 @@ export default function HomePage() {
 
       <section className="section">
         <div className="container">
-          <div className="section-head signal-feed-head">
+          <div className="section-head">
             <div>
-              <p className="eyebrow">Latest Signals</p>
-              <h2>Signal Feed</h2>
+              <p className="eyebrow">Industry Trust</p>
+              <h2>Trusted By Industry Professionals</h2>
               <p>
-                Market movement, sourcing context and expo observations worth
-                tracking.
+                Practical industry information, supplier context and market
+                signals for people making cleaning industry decisions.
               </p>
             </div>
-            <Link className="button-secondary" href="/insights">
-              View all signals
-            </Link>
           </div>
-          <div className="signal-feed-grid">
-            {signalFeed.map((article) => (
-              <Link className="signal-feed-card" href={`/insights/${article.slug}`} key={article.slug}>
-                <div className="meta">{article.category}</div>
-                <h3>{signalTitles[article.slug] || article.title}</h3>
-                <p>{signalContexts[article.slug] || article.description}</p>
-                <span>Read Signal</span>
-              </Link>
+          <div className="grid-3">
+            {testimonials.map((item) => (
+              <div className="card testimonial-card" key={item.label}>
+                <p className="testimonial-quote">"{item.quote}"</p>
+                <strong>{item.label}</strong>
+              </div>
             ))}
           </div>
         </div>
@@ -192,20 +284,19 @@ export default function HomePage() {
         <div className="container cta-band">
           <div className="grid-2">
             <div>
-              <IconBadge name="message" />
-              <h2>Have a cleaning industry question worth tracking?</h2>
+              <IconBadge name="trending" />
+              <h2>Stay Ahead Of The Cleaning Industry</h2>
               <p>
-                Share a category, region, supplier question or expo topic. We
-                may turn it into a future signal, market note or sourcing
-                discussion.
+                Get global cleaning industry intelligence, market insights and
+                profitable opportunities from World Clean Biz.
               </p>
             </div>
             <div className="hero-actions">
-              <Link className="button" href="/contact">
-                Share Inquiry
+              <Link className="button" href="/insights">
+                Explore Signals
               </Link>
-              <Link className="button-secondary" href="/insights">
-                Read Insights
+              <Link className="button-secondary" href="/market-reports">
+                Get Free Market Reports
               </Link>
             </div>
           </div>
