@@ -8,24 +8,6 @@ export const metadata: Metadata = {
     "Work with Denny You and World Clean Biz to discover better cleaning product opportunities, stronger suppliers, higher-margin products, and global cleaning industry connections."
 };
 
-const coreValues = [
-  {
-    icon: "target",
-    title: "Discover Opportunities Earlier",
-    text: "Find emerging categories and market opportunities before competitors."
-  },
-  {
-    icon: "dollar",
-    title: "Build Products With Better Margins",
-    text: "Develop differentiated products with stronger pricing and long-term competitiveness."
-  },
-  {
-    icon: "factory",
-    title: "Access Proven Supply Chains",
-    text: "Work with manufacturers trusted by leading brands and reduce costly sourcing mistakes."
-  }
-] satisfies { icon: IconName; title: string; text: string }[];
-
 const trustMetrics = [
   "20+ Years Industry Experience",
   "9,000+ Industry Professionals",
@@ -52,29 +34,39 @@ const reasons = [
   {
     icon: "lightbulb",
     title: "Know What To Build, Not Just What To Buy",
-    text: "Most sourcing companies help you buy products. Denny helps you decide which products are worth building."
+    text: "Decide which products are worth building before buying from factories."
   },
   {
     icon: "factory",
     title: "Access The Factories Behind Leading Brands",
-    text: "Work with manufacturers producing for some of the world's leading cleaning brands."
+    text: "Connect with manufacturers producing for leading cleaning brands."
   },
   {
     icon: "wrench",
     title: "Upgrade Products, Reduce Costs & Increase Competitiveness",
-    text: "Leverage the latest technologies, components and manufacturing innovations."
+    text: "Use better components, technologies and manufacturing innovation."
   },
   {
     icon: "check",
     title: "Reduce After-Sales Costs & Improve Customer Satisfaction",
-    text: "Build more reliable products, reduce returns and improve customer experience."
+    text: "Build more reliable products and reduce costly returns."
   },
   {
     icon: "rocket",
     title: "Focus On Sales. We Handle The Rest.",
-    text: "From product definition to shipment, Denny helps manage the process so your team can focus on growth."
+    text: "Let your team focus on growth while execution is managed."
   }
 ] satisfies { icon: IconName; title: string; text: string }[];
+
+const strategicReasons = reasons.slice(0, 4);
+const executionReasons = reasons.slice(4);
+
+const ctaPoints = [
+  "Discover where the next opportunity is emerging",
+  "Understand what leading brands are building and who is manufacturing it",
+  "Build products with higher margins and lower after-sales rates",
+  "Access the suppliers behind successful brands"
+];
 
 const productCategories = [
   {
@@ -204,15 +196,6 @@ export default function SourcingPage() {
               helping companies discover opportunities, build stronger
               products and create more profitable businesses.
             </p>
-            <div className="sourcing-value-grid">
-              {coreValues.map((item) => (
-                <div className="sourcing-value-card" key={item.title}>
-                  <IconBadge name={item.icon} />
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              ))}
-            </div>
             <div className="sourcing-trust-row">
               {trustMetrics.map((metric) => (
                 <span key={metric}>{metric}</span>
@@ -235,14 +218,29 @@ export default function SourcingPage() {
               </p>
             </div>
           </div>
-          <div className="sourcing-reason-grid">
-            {reasons.map((item) => (
-              <div className="case-card sourcing-reason-card" key={item.title}>
-                <IconBadge name={item.icon} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            ))}
+          <div className="sourcing-reason-block">
+            <div className="sourcing-reason-label">Strategic Advantages</div>
+            <div className="sourcing-reason-grid">
+              {strategicReasons.map((item) => (
+                <div className="case-card sourcing-reason-card" key={item.title}>
+                  <IconBadge name={item.icon} />
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="sourcing-reason-block">
+            <div className="sourcing-reason-label">Execution Advantages</div>
+            <div className="sourcing-reason-grid">
+              {executionReasons.map((item, index) => (
+                <div className={`case-card sourcing-reason-card sourcing-execution-card sourcing-execution-card-${index + 1}`} key={item.title}>
+                  <IconBadge name={item.icon} />
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -252,13 +250,11 @@ export default function SourcingPage() {
           <div>
             <p className="eyebrow">Discuss Your Project</p>
             <h2>Want To Discover The Next Winning Product?</h2>
-            <p>
-              Want to know where the next opportunity is emerging? Want to
-              understand what leading brands are building and who is
-              manufacturing it? Want to build products with higher margins,
-              lower after-sales rates and stronger long-term growth? Let&apos;s
-              talk.
-            </p>
+            <ul className="sourcing-cta-list">
+              {ctaPoints.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
             <strong className="sourcing-outcome">
               Better Products. Better Suppliers. Better Business.
             </strong>
