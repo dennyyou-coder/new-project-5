@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { IconBadge, InlineIcon } from "@/components/Icon";
 import { getInsights } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -15,7 +16,10 @@ export default function InsightsPage() {
     <>
       <section className="page-hero page-hero-insights">
         <div className="container">
-          <p className="eyebrow">Signals</p>
+          <p className="eyebrow">
+            <InlineIcon name="radio" />
+            Signals
+          </p>
           <h1>Signal Feed</h1>
           <p>
             Market movement, sourcing context and expo observations from the
@@ -28,7 +32,10 @@ export default function InsightsPage() {
           <div className="signal-library-list">
             {articles.map((article) => (
               <Link className="signal-library-card" href={`/insights/${article.slug}`} key={article.slug}>
-                <div className="meta">{article.category}</div>
+                <div className="meta">
+                  <InlineIcon name="trending" />
+                  {article.category}
+                </div>
                 <h2>{article.title}</h2>
                 <p>{article.excerpt}</p>
                 <div className="signal-library-footer">
@@ -42,6 +49,7 @@ export default function InsightsPage() {
           </div>
           <div className="insight-prompt insight-prompt-compact">
             <div>
+              <IconBadge name="message" />
               <p className="eyebrow">Topic Request</p>
               <h3>Have a signal worth tracking?</h3>
               <p>

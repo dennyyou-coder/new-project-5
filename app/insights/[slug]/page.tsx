@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { IconBadge, InlineIcon } from "@/components/Icon";
 import { getInsight, getInsights, markdownToHtml } from "@/lib/content";
 
 type Props = {
@@ -152,7 +153,10 @@ export default async function InsightDetailPage({ params }: Props) {
       <section className="signal-summary-section">
         <div className="container signal-summary-card">
           <div>
-            <p className="eyebrow">Signal Summary</p>
+            <p className="eyebrow">
+              <InlineIcon name="radio" />
+              Signal Summary
+            </p>
             <h2>Understand the value of this signal in 10 seconds</h2>
           </div>
           <div className="signal-summary-list">
@@ -177,7 +181,10 @@ export default async function InsightDetailPage({ params }: Props) {
           <article className="article-prose signal-detail-main">
             {hasTakeaways ? (
               <div className="key-takeaways">
-                <div className="module-kicker">Key Takeaways</div>
+                <div className="module-kicker">
+                  <InlineIcon name="clipboard" />
+                  Key Takeaways
+                </div>
                 <ul>
                   {article.takeaways.map((point) => (
                     <li key={point}>{point}</li>
@@ -208,7 +215,10 @@ export default async function InsightDetailPage({ params }: Props) {
         <div className="container signal-business-context">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Why This Matters</p>
+              <p className="eyebrow">
+                <InlineIcon name="lightbulb" />
+                Why This Matters
+              </p>
               <h2>Turn this signal into business context</h2>
             </div>
           </div>
@@ -226,7 +236,10 @@ export default async function InsightDetailPage({ params }: Props) {
           <div className="container related-signals">
             <div className="section-head">
               <div>
-                <p className="eyebrow">Related Signals</p>
+                <p className="eyebrow">
+                  <InlineIcon name="layers" />
+                  Related Signals
+                </p>
                 <h2>More industry context to track</h2>
               </div>
             </div>
@@ -250,7 +263,10 @@ export default async function InsightDetailPage({ params }: Props) {
         <div className="container about-denny-signal">
           <div className="grid-2">
             <div>
-              <p className="eyebrow">About Denny You</p>
+              <p className="eyebrow">
+                <InlineIcon name="user" />
+                About Denny You
+              </p>
               <h2>About Denny You</h2>
               <p>
                 Denny You is one of the leading influencers and consultants in
@@ -277,6 +293,7 @@ export default async function InsightDetailPage({ params }: Props) {
           <div className="cta-band article-cta">
             <div className="grid-2">
               <div>
+                <IconBadge name="message" />
                 <h2>Have A Question About This Signal?</h2>
                 <p>
                   Industry signals become valuable only when they lead to better

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
+import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -10,41 +11,49 @@ export const metadata: Metadata = {
 
 const helpCards = [
   {
+    icon: "radio",
     title: "Industry Information",
     text: "Market trends, category questions, industry developments and product signals."
   },
   {
+    icon: "factory",
     title: "Sourcing / OEM",
     text: "Product sourcing, OEM, ODM, private label and China supplier questions."
   },
   {
+    icon: "file",
     title: "Market Reports",
     text: "Category research, market intelligence and report requests."
   },
   {
+    icon: "calendar",
     title: "World Clean Expo",
     text: "Exhibiting, visiting, sponsorship and event cooperation."
   },
   {
+    icon: "megaphone",
     title: "Media & Cooperation",
     text: "Interviews, partnerships, content cooperation and industry collaboration."
   }
-];
+] satisfies { icon: IconName; title: string; text: string }[];
 
 const reachOutReasons = [
   {
+    icon: "badge",
     title: "Industry Knowledge",
     text: "20+ years of cleaning industry experience across products, factories, brands and supply chains."
   },
   {
+    icon: "network",
     title: "Global Industry Network",
     text: "Connections with manufacturers, suppliers, brands, buyers and industry professionals."
   },
   {
+    icon: "target",
     title: "Business Opportunities",
     text: "Support for product opportunities, sourcing projects, market information and industry collaboration."
   }
-];
+] satisfies { icon: IconName; title: string; text: string }[];
 
 export default function ContactPage() {
   return (
@@ -81,9 +90,7 @@ export default function ContactPage() {
           <div className="case-grid contact-help-grid">
             {helpCards.map((item) => (
               <div className="case-card contact-help-card" key={item.title}>
-                <div className="platform-icon" aria-hidden="true">
-                  {item.title.slice(0, 1)}
-                </div>
+                <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
@@ -95,7 +102,10 @@ export default function ContactPage() {
       <section className="section section-soft" id="inquiry-form">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">Inquiry Form</p>
+            <p className="eyebrow">
+              <InlineIcon name="send" />
+              Inquiry Form
+            </p>
             <h2>Send Your Inquiry</h2>
             <p>
               Tell us what you are exploring. The more specific your question,
@@ -127,6 +137,7 @@ export default function ContactPage() {
           <div className="grid-3">
             {reachOutReasons.map((item) => (
               <div className="card" key={item.title}>
+                <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
@@ -139,6 +150,7 @@ export default function ContactPage() {
         <div className="container cta-band">
           <div className="grid-2">
             <div>
+              <IconBadge name="message" />
               <h2>Every Great Business Opportunity Starts With A Conversation.</h2>
               <p>
                 Tell us what you're exploring. We'll help you find the right

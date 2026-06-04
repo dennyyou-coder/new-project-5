@@ -1,11 +1,42 @@
 import Link from "next/link";
+import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 import { getInsights } from "@/lib/content";
 
-const capabilityPoints = [
-  "Industry Signals",
-  "Supplier Context",
-  "Market Notes",
-  "Expo Intelligence"
+const capabilityPoints: { icon: IconName; label: string }[] = [
+  { icon: "radio", label: "Industry Signals" },
+  { icon: "factory", label: "Supplier Context" },
+  { icon: "file", label: "Market Notes" },
+  { icon: "calendar", label: "Expo Intelligence" }
+];
+
+const heroTrackItems: { icon: IconName; label: string }[] = [
+  { icon: "activity", label: "Category Signals" },
+  { icon: "factory", label: "Supplier Context" },
+  { icon: "users", label: "Buyer Movement" },
+  { icon: "globe", label: "Expo Intelligence" }
+];
+
+const heroEntries: { icon: IconName; title: string; text: string }[] = [
+  {
+    icon: "radio",
+    title: "Signals",
+    text: "Product, category and channel movement"
+  },
+  {
+    icon: "file",
+    title: "Reports",
+    text: "Focused market notes and regional demand"
+  },
+  {
+    icon: "search",
+    title: "Sourcing",
+    text: "Supplier-side context and OEM paths"
+  },
+  {
+    icon: "globe",
+    title: "Expo",
+    text: "Trade show signals and event opportunities"
+  }
 ];
 
 const signalTitles: Record<string, string> = {
@@ -65,30 +96,23 @@ export default function HomePage() {
             </div>
             <strong>What We Track</strong>
             <ul className="hero-panel-list">
-              <li>Category Signals</li>
-              <li>Supplier Context</li>
-              <li>Buyer Movement</li>
-              <li>Expo Intelligence</li>
+              {heroTrackItems.map((item) => (
+                <li key={item.label}>
+                  <InlineIcon name={item.icon} />
+                  {item.label}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
         <div className="container hero-stats">
-          <div className="hero-stat">
-            <strong>Signals</strong>
-            <span>Product, category and channel movement</span>
-          </div>
-          <div className="hero-stat">
-            <strong>Reports</strong>
-            <span>Focused market notes and regional demand</span>
-          </div>
-          <div className="hero-stat">
-            <strong>Sourcing</strong>
-            <span>Supplier-side context and OEM paths</span>
-          </div>
-          <div className="hero-stat">
-            <strong>Expo</strong>
-            <span>Trade show signals and event opportunities</span>
-          </div>
+          {heroEntries.map((item) => (
+            <div className="hero-stat" key={item.title}>
+              <IconBadge name={item.icon} />
+              <strong>{item.title}</strong>
+              <span>{item.text}</span>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -127,8 +151,9 @@ export default function HomePage() {
           </div>
           <div className="module-grid">
             {capabilityPoints.map((item) => (
-              <div className="module-chip" key={item}>
-                {item}
+              <div className="module-chip" key={item.label}>
+                <InlineIcon name={item.icon} />
+                {item.label}
               </div>
             ))}
           </div>
@@ -167,6 +192,7 @@ export default function HomePage() {
         <div className="container cta-band">
           <div className="grid-2">
             <div>
+              <IconBadge name="message" />
               <h2>Have a cleaning industry question worth tracking?</h2>
               <p>
                 Share a category, region, supplier question or expo topic. We

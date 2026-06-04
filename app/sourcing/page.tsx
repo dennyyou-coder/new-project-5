@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Sourcing",
@@ -9,38 +10,46 @@ export const metadata: Metadata = {
 
 const buyerAdvantages = [
   {
+    icon: "network",
     title: "Deep Industry Access Few Others Have",
     text: "World Clean Biz is built by Denny You, one of the most recognized voices in the global cleaning industry. Through industry media, conferences, factory visits and trade shows, he tracks product launches, technology shifts, supplier movements and market opportunities."
   },
   {
+    icon: "radar",
     title: "Industry Intelligence Before Everyone Else",
     text: "Every year we speak with manufacturers, brands, distributors, retailers and industry decision makers across the cleaning industry. Most sourcing companies only see factories. We see the entire ecosystem."
   },
   {
+    icon: "badge",
     title: "20+ Years in the Cleaning Industry",
     text: "Our team has spent more than two decades inside the cleaning industry, covering products, technologies, factories, costs, certifications and market trends across major cleaning categories."
   },
   {
+    icon: "target",
     title: "Find Winning Products Earlier",
     text: "Instead of guessing what may sell next, buyers gain access to products, technologies and category opportunities already proving successful in the market."
   },
   {
+    icon: "rocket",
     title: "Launch 3-6 Months Faster",
     text: "With direct access to manufacturers, suppliers and industry networks, we help buyers identify products, evaluate suppliers and start projects faster than building everything from scratch."
   },
   {
+    icon: "lightbulb",
     title: "Product Development Capabilities Similar to Leading Brands",
     text: "We help evaluate product concepts, features, technologies, positioning and differentiation so buyers can build products that stand out, not products that look the same as everyone else's."
   },
   {
+    icon: "boxes",
     title: "Access More Than 50 Product Opportunities Every Year",
     text: "Each year we review dozens of new products, supplier innovations and emerging technologies, giving buyers a continuous pipeline of opportunities."
   },
   {
+    icon: "trending",
     title: "Make More Profit With Better Product Decisions",
     text: "The difference between a successful product and an average product can be worth hundreds of thousands of dollars. Better products, better suppliers and faster execution create stronger long-term growth."
   }
-];
+] satisfies { icon: IconName; title: string; text: string }[];
 
 const opportunityQuestions = [
   "Which products are growing fastest",
@@ -53,30 +62,38 @@ const opportunityQuestions = [
 
 const sourceCategories = [
   {
+    icon: "wind",
     title: "Vacuum Cleaners",
     text: "Cordless stick vacuums, canister vacuums, upright vacuums, wet and dry vacuums and specialty cleaning products."
   },
   {
+    icon: "bot",
     title: "Robot Vacuums",
     text: "Robot vacuum cleaners, robot vacuum and mop combinations, navigation systems and related accessories."
   },
   {
+    icon: "sparkles",
     title: "Floor Care Products",
     text: "Floor washers, wet dry floor cleaners, carpet cleaners and related cleaning solutions."
   },
   {
+    icon: "waves",
     title: "Pool Cleaning Products",
     text: "Robotic pool cleaners, cordless pool cleaners, above-ground and in-ground pool cleaning systems."
   },
   {
+    icon: "building",
     title: "Commercial Cleaning Equipment",
     text: "Commercial vacuum cleaners, floor scrubbers and professional cleaning solutions."
   },
   {
+    icon: "cog",
     title: "Components & Accessories",
     text: "Motors, batteries, brushes, filters, electronics and key cleaning product components."
   }
-];
+] satisfies { icon: IconName; title: string; text: string }[];
+
+const workStepIcons: IconName[] = ["send", "search", "factory", "package", "check"];
 
 const workSteps = [
   "Share your product idea, category or sourcing goal.",
@@ -101,7 +118,7 @@ export default function SourcingPage() {
     <>
       <section className="page-hero page-hero-sourcing">
         <div className="container">
-          <p className="eyebrow">Sourcing Intelligence</p>
+          <p className="eyebrow">China Sourcing Office</p>
           <h1>Make More Money With Better Product Decisions</h1>
           <p>
             Most sourcing companies help you find factories. We help you find
@@ -120,10 +137,13 @@ export default function SourcingPage() {
           <div className="sourcing-lead">
             <h2>The biggest mistake buyers make is not choosing the wrong supplier.</h2>
             <p>It is choosing the wrong product.</p>
-            <p>
+            <div className="highlight-panel">
+              <IconBadge name="target" />
+              <p>
               A better factory might save you 5%. The right product can
               increase your sales by 500%.
-            </p>
+              </p>
+            </div>
             <p>
               That is why we start with market opportunities, product trends
               and industry intelligence before discussing suppliers.
@@ -156,6 +176,7 @@ export default function SourcingPage() {
           <div className="case-grid">
             {buyerAdvantages.map((item) => (
               <div className="case-card sourcing-advantage-card" key={item.title}>
+                <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
@@ -167,7 +188,10 @@ export default function SourcingPage() {
       <section className="section">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">What Makes Us Different</p>
+            <p className="eyebrow">
+              <InlineIcon name="network" />
+              What Makes Us Different
+            </p>
             <h2>Find the right opportunity before comparing suppliers</h2>
             <p>
               Most sourcing companies help you compare suppliers. We help you
@@ -204,6 +228,7 @@ export default function SourcingPage() {
           <div className="case-grid">
             {sourceCategories.map((item) => (
               <div className="case-card" key={item.title}>
+                <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
@@ -227,6 +252,7 @@ export default function SourcingPage() {
           <div className="grid-2">
             {workSteps.map((item, index) => (
               <div className="card" key={item}>
+                <IconBadge name={workStepIcons[index]} />
                 <div className="meta">Step {index + 1}</div>
                 <h3>{item}</h3>
               </div>
@@ -248,6 +274,7 @@ export default function SourcingPage() {
             </div>
           </div>
           <div className="card">
+            <IconBadge name="clipboard" />
             <ul className="feature-list">
               {buyerRequests.map((item) => (
                 <li key={item}>{item}</li>
@@ -261,8 +288,9 @@ export default function SourcingPage() {
         <div className="container cta-band">
           <div className="grid-2">
             <div>
+              <IconBadge name="trophy" />
               <p className="eyebrow">Start My Sourcing Project</p>
-              <h2>Your next million-dollar product starts here</h2>
+              <h2>Your Next Million-Dollar Product Starts Here</h2>
               <p>
                 Most buyers spend their time comparing suppliers. The most
                 successful buyers spend their time identifying the right

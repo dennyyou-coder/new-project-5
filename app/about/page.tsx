@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "About",
@@ -7,33 +8,37 @@ export const metadata: Metadata = {
     "About World Clean Biz, a global cleaning industry intelligence platform built by Denny You to help professionals understand markets, products, suppliers and opportunities."
 };
 
-const focusAreas = [
-  "Industry Signals",
-  "Market Intelligence",
-  "Product Opportunities",
-  "Supplier Context",
-  "Trade Show Intelligence",
-  "Global Industry Connections"
+const focusAreas: { icon: IconName; label: string }[] = [
+  { icon: "radio", label: "Industry Signals" },
+  { icon: "bar-chart", label: "Market Intelligence" },
+  { icon: "target", label: "Product Opportunities" },
+  { icon: "factory", label: "Supplier Context" },
+  { icon: "calendar", label: "Trade Show Intelligence" },
+  { icon: "globe", label: "Global Industry Connections" }
 ];
 
 const recognitionCards = [
   {
+    icon: "star",
     title: "Leading Industry Influencer",
     text: "One of the most recognized voices in China's cleaning products industry."
   },
   {
+    icon: "badge",
     title: "Leading Industry Consultant",
     text: "Trusted by manufacturers, brands, distributors and industry decision makers."
   },
   {
+    icon: "newspaper",
     title: "Industry Media Operator",
     text: "Long-term publisher of industry analysis, market observations and product insights."
   },
   {
+    icon: "calendar",
     title: "Trade Show & Conference Organizer",
     text: "Connecting manufacturers, suppliers, buyers and industry professionals through events and industry platforms."
   }
-];
+] satisfies { icon: IconName; title: string; text: string }[];
 
 const serveGroups = [
   "Brands",
@@ -72,7 +77,10 @@ export default function AboutPage() {
       <section className="section">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">What Is World Clean Biz</p>
+            <p className="eyebrow">
+              <InlineIcon name="globe" />
+              What Is World Clean Biz
+            </p>
             <h2>What Is World Clean Biz</h2>
             <p>
               World Clean Biz tracks industry signals, product trends, supplier
@@ -87,8 +95,9 @@ export default function AboutPage() {
           </div>
           <div className="module-grid">
             {focusAreas.map((item) => (
-              <div className="module-chip" key={item}>
-                {item}
+              <div className="module-chip" key={item.label}>
+                <InlineIcon name={item.icon} />
+                {item.label}
               </div>
             ))}
           </div>
@@ -149,6 +158,7 @@ export default function AboutPage() {
           <div className="case-grid">
             {recognitionCards.map((item) => (
               <div className="case-card" key={item.title}>
+                <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </div>
@@ -160,7 +170,10 @@ export default function AboutPage() {
       <section className="section section-soft">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">Industry Connector</p>
+            <p className="eyebrow">
+              <InlineIcon name="network" />
+              Industry Connector
+            </p>
             <h2>Denny Connects The Industry</h2>
             <p>Most people only see one part of the cleaning industry.</p>
             <p>
@@ -197,7 +210,10 @@ export default function AboutPage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Who We Serve</p>
+              <p className="eyebrow">
+                <InlineIcon name="users" />
+                Who We Serve
+              </p>
               <h2>Who We Serve</h2>
               <p>
                 World Clean Biz is designed for professionals looking to
@@ -219,7 +235,10 @@ export default function AboutPage() {
       <section className="section section-soft">
         <div className="container grid-2">
           <div>
-            <p className="eyebrow">Why It Matters</p>
+            <p className="eyebrow">
+              <InlineIcon name="lightbulb" />
+              Why It Matters
+            </p>
             <h2>Why It Matters</h2>
             <p>
               The cleaning industry is becoming more global, more technical and
@@ -250,6 +269,7 @@ export default function AboutPage() {
         <div className="container cta-band">
           <div className="grid-2">
             <div>
+              <IconBadge name="arrow" />
               <h2>Better Information Leads To Better Decisions</h2>
               <p>
                 Explore industry signals, discover new opportunities and

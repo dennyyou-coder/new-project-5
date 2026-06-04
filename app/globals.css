@@ -92,6 +92,52 @@ img {
   max-width: 100%;
 }
 
+.ui-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.icon-badge {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid rgba(216, 229, 243, 0.72);
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2F6BFF 0%, #6FA8FF 100%);
+  color: white;
+  box-shadow: 0 12px 26px rgba(47, 107, 255, 0.18);
+}
+
+.icon-badge .ui-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.inline-icon {
+  display: inline-grid;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  vertical-align: middle;
+}
+
+.inline-icon .ui-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.eyebrow .inline-icon,
+.meta .inline-icon,
+.module-kicker .inline-icon {
+  margin-right: 8px;
+}
+
 .site-shell {
   min-height: 100vh;
   display: flex;
