@@ -54,8 +54,17 @@ const fallbackImages = [
   "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1200&auto=format&fit=crop"
 ];
 
+const imageOverrides: Record<string, string> = {
+  "commercial-cleaning-equipment-demand-signals":
+    "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop",
+  "europe-floor-care-demand-update":
+    "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200&auto=format&fit=crop",
+  "private-label-cleaning-products-sourcing-context":
+    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop"
+};
+
 function imageFor(article: Insight, index: number) {
-  return article.coverImage || fallbackImages[index % fallbackImages.length];
+  return imageOverrides[article.slug] || article.coverImage || fallbackImages[index % fallbackImages.length];
 }
 
 function summaryFor(article: Insight) {
@@ -158,18 +167,17 @@ export default function InsightsPage() {
   const featured = articles.find((article) => article.featured) || articles[0];
   const feedArticles = articles.filter((article) => article.slug !== featured?.slug);
   const latestSignals = articles.slice(0, 5);
-  const featuredSummary = featured
-    ? `${summaryFor(featured)} The piece sets the tone for how World Clean Biz reads industry information: not as isolated news, but as signals that can help companies understand where products, suppliers and business opportunities may be moving next. Readers can learn why a shared industry view matters for sourcing, market research and long-term business decisions.`
-    : "";
+  const featuredSummary =
+    "This signal explains why the cleaning industry needs a shared information center as products, suppliers, channels and trade shows become more connected. It shows how scattered information slows business decisions and why a clearer industry view can help buyers, brands and suppliers identify opportunities earlier.";
   const featuredImage =
     "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop";
 
   return (
     <>
-      {featured ? (
-        <section className="insights-featured-top">
-          <div className="insights-page-container">
-            <div className="insights-top-layout">
+      <section className="insights-featured-top">
+        <div className="insights-page-container insights-page-shell">
+          <main className="insights-main-column" aria-label="Industry insight articles">
+            {featured ? (
               <Link className="insights-featured-hero" href={`/insights/${featured.slug}`}>
                 <div className="insights-featured-hero-image">
                   <img src={featuredImage} alt={`${featured.title} featured cover`} />
@@ -186,34 +194,35 @@ export default function InsightsPage() {
                   <strong>Read Insight →</strong>
                 </div>
               </Link>
-              <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-desktop" aria-label="Insights sidebar">
-                <SidebarContent latestSignals={latestSignals} />
-              </aside>
+            ) : null}
+
+            <div className="insights-filter-wrap insights-filter-panel">
+              <div className="insights-filter insights-filter-v3" aria-label="Insight categories">
+                {categories.map((category) => (
+                  <button className={category === "All" ? "active" : ""} key={category} type="button">
+                    {category}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      ) : null}
 
-      <div className="insights-filter-wrap">
-        <div className="insights-page-container">
-          <div className="insights-filter insights-filter-v3" aria-label="Insight categories">
-            {categories.map((category) => (
-              <button className={category === "All" ? "active" : ""} key={category} type="button">
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <section className="section insights-publication-section">
-        <div className="insights-page-container">
-          <main className="insights-feed" aria-label="Industry insight articles">
-            {feedArticles.map((article, index) => (
-              <ArticleFeedItem article={article} index={index} key={article.slug} />
-            ))}
+            <div className="insights-publication-section">
+              <div className="insights-feed">
+                {feedArticles.map((article, index) => (
+                  <ArticleFeedItem article={article} index={index} key={article.slug} />
+                ))}
+              </div>
+            </div>
           </main>
 
+          <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-desktop" aria-label="Insights sidebar">
+            <SidebarContent latestSignals={latestSignals} />
+          </aside>
+        </div>
+      </section>
+
+      <section className="section insights-mobile-sidebar-section">
+        <div className="insights-page-container">
           <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-mobile" aria-label="Insights sidebar">
             <SidebarContent latestSignals={latestSignals} />
           </aside>
