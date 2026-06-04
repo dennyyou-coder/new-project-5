@@ -2526,6 +2526,22 @@ h3 {
   padding: 120px 0;
 }
 
+.sourcing-hero-final + .section {
+  padding-top: 80px;
+}
+
+.sourcing-opportunity-section + .section {
+  padding-top: 140px;
+}
+
+.sourcing-opportunity-section + .section + .section {
+  padding-top: 120px;
+}
+
+.sourcing-opportunity-section + .section + .section + .section {
+  padding-top: 100px;
+}
+
 .sourcing-hero-final .eyebrow,
 .sourcing-hero-final ~ .section .eyebrow {
   font-size: 13px;
@@ -2550,7 +2566,7 @@ h3 {
 .sourcing-hero-panel h1 {
   margin-top: 10px;
   color: var(--ink);
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 1.08;
