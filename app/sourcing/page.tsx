@@ -28,95 +28,57 @@ const heroCards = [
 
 const industryChanges = [
   {
-    oldRule: "Offline channels define winners.",
-    newRule: [
-      "E-Commerce Will Win.",
-      "China Is Already There.",
-      "The Rest Of The World Is Just A Few Years Behind."
-    ]
+    then: "One Great Product Could Drive Growth For Years.",
+    today: "A Product Advantage Can Disappear In Months."
   },
   {
-    oldRule: "Innovation follows mature overseas markets.",
-    newRule: [
-      "China Is The New Innovation Center.",
-      "If You Don't Have R&D And Sourcing In China,",
-      "You Will Fall Behind."
-    ]
+    then: "Finding Suppliers Was The Challenge.",
+    today: "500 Suppliers Offer Similar Products. Finding Something Different Is The Challenge."
   },
   {
-    oldRule: "The biggest companies control the category.",
-    newRule: [
-      "Speed Will Beat Size.",
-      "The Fastest Brands Will Win.",
-      "Not Necessarily The Biggest Ones."
-    ]
+    then: "Winning A Distributor Meant Winning The Market.",
+    today: "Customers Compare Hundreds Of Products Before They Talk To Anyone."
   },
   {
-    oldRule: "Cleaning is a stable, slow-growth market.",
-    newRule: [
-      "The Biggest Growth Story Hasn't Happened Yet.",
-      "$40 Billion Today.",
-      "$140 Billion In The Next Decade."
-    ]
+    then: "Industry Experience Created Advantage.",
+    today: "Technology Moves Faster Than Experience."
   },
   {
-    oldRule: "The category leaders are already decided.",
-    newRule: [
-      "The Next Industry Giants Haven't Been Built Yet.",
-      "The Biggest Winners Of The Next 10 Years",
-      "May Not Exist Today."
-    ]
+    then: "Following Trends Was Enough.",
+    today: "By The Time Everyone Sees A Trend, The Opportunity Is Already Gone."
   }
 ];
 
-const opportunityGroups = [
+const directionCards = [
   {
-    group: "Home Cleaning",
-    signal: "Smart cleaning moves from single products into connected home systems.",
-    items: [
-      {
-        title: "Robotic Vacuums",
-        text: "The Category That Started The Smart Cleaning Revolution."
-      },
-      {
-        title: "Floor Washers",
-        text: "One Of China's Fastest Growing Cleaning Categories. Now Expanding Globally."
-      }
-    ]
+    title: "E-Commerce Will Win.",
+    text: "China is already there. The rest of the world is just a few years behind.",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=900&auto=format&fit=crop"
   },
   {
-    group: "Outdoor Cleaning",
-    signal: "Outdoor maintenance is becoming the next robotics frontier.",
-    items: [
-      {
-        title: "Pool Cleaning Robots",
-        text: "Still Early. Growing Fast."
-      },
-      {
-        title: "Lawn Robots",
-        text: "The Next Major Outdoor Robotics Category."
-      }
-    ]
+    title: "China Is The New Innovation Center.",
+    text: "If you don't have R&D and sourcing in China, you will fall behind.",
+    image:
+      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=900&auto=format&fit=crop"
   },
   {
-    group: "Commercial Cleaning",
-    signal: "Labor pressure and facility standards are pushing automation into professional environments.",
-    items: [
-      {
-        title: "Commercial Cleaning Automation",
-        text: "A Multi-Billion Dollar Market Just Beginning To Transform."
-      }
-    ]
+    title: "Speed Will Beat Size.",
+    text: "The fastest brands will win. Not necessarily the biggest ones.",
+    image:
+      "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=900&auto=format&fit=crop"
   },
   {
-    group: "Emerging Opportunities",
-    signal: "The next wave will come from categories most companies are not tracking yet.",
-    items: [
-      {
-        title: "What's Next?",
-        text: "The Opportunities Most Companies Haven't Seen Yet."
-      }
-    ]
+    title: "The Biggest Growth Story Hasn't Happened Yet.",
+    text: "$40 Billion today. $140 Billion in the next decade.",
+    image:
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=900&auto=format&fit=crop"
+  },
+  {
+    title: "The Next Industry Giants Haven't Been Built Yet.",
+    text: "The biggest winners of the next 10 years may not exist today.",
+    image:
+      "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=900&auto=format&fit=crop"
   }
 ];
 
@@ -184,9 +146,13 @@ export default function SourcingPage() {
               You&apos;ve Been In The Industry For 20 Years.
               <span>So Why Does It Feel Like You&apos;re Falling Behind?</span>
             </h1>
+            <p className="sourcing-hero-subcopy">
+              Experience used to be your advantage. But the industry has changed.
+            </p>
             <div className="sourcing-hero-card-grid">
-              {heroCards.map((item) => (
+              {heroCards.map((item, index) => (
                 <div className="sourcing-hero-card" key={item.lead}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
                   <p>{item.lead}</p>
                   <strong>{item.yet}</strong>
                 </div>
@@ -209,63 +175,63 @@ export default function SourcingPage() {
         <div className="container">
           <div className="sourcing-report-head">
             <div>
-              <p className="eyebrow">Industry Reality</p>
+              <p className="eyebrow">The Industry Already Changed</p>
               <h2>The Industry Already Changed.</h2>
             </div>
             <p>The Rules That Worked 10 Years Ago No Longer Work Today.</p>
           </div>
           <div className="sourcing-rule-table">
-            <div className="sourcing-rule-header">
-              <span>Old Rule</span>
-              <span>New Rule</span>
-            </div>
-            {industryChanges.map((item) => (
-              <div className="sourcing-rule-row" key={item.oldRule}>
-                <div className="sourcing-old-rule">{item.oldRule}</div>
+            {industryChanges.map((item, index) => (
+              <div className="sourcing-rule-row" key={item.then}>
+                <div className="sourcing-old-rule">
+                  <span>Then</span>
+                  <strong>{item.then}</strong>
+                </div>
+                <div className="sourcing-rule-arrow">→</div>
                 <div className="sourcing-new-rule">
-                  {item.newRule.map((line, index) =>
-                    index === 0 ? (
-                      <strong key={line}>{line}</strong>
-                    ) : (
-                      <span key={line}>{line}</span>
-                    )
-                  )}
+                  <span>Today</span>
+                  <strong>{item.today}</strong>
                 </div>
               </div>
             ))}
           </div>
+          <div className="sourcing-report-quote">
+            <strong>More Suppliers. More Products. More Competition.</strong>
+            <span>The winners aren&apos;t working harder. They&apos;re seeing what&apos;s next earlier.</span>
+          </div>
         </div>
       </section>
 
-      <section className="section section-soft">
+      <section className="section sourcing-direction-section">
         <div className="container">
-          <div className="section-head sourcing-centered-head">
+          <div className="sourcing-direction-head">
             <div>
-              <p className="eyebrow">Opportunity Map</p>
-              <h2>The Next $140 Billion Opportunity</h2>
-              <p>The Cleaning Industry Is Growing Faster Than Most People Realize.</p>
+              <p className="eyebrow">Where The Industry Is Heading</p>
+              <h2>Where The Industry Is Heading.</h2>
+              <p>
+                These are the changes I believe will reshape the cleaning
+                industry over the next 10 years.
+              </p>
             </div>
           </div>
-          <div className="sourcing-market-map">
-            <div className="sourcing-market-center">
-              <span>Opportunity Map</span>
-              <strong>$140B</strong>
-              <p>Next-decade cleaning industry growth potential</p>
-            </div>
-            {opportunityGroups.map((group) => (
-              <div className="sourcing-market-group" key={group.group}>
-                <h3>{group.group}</h3>
-                <p>{group.signal}</p>
-                <ul>
-                  {group.items.map((item) => (
-                    <li key={item.title}>
-                      <strong>{item.title}</strong>
-                      <span>{item.text}</span>
-                    </li>
-                  ))}
-                </ul>
+          <div className="sourcing-direction-card-row">
+            {directionCards.map((item, index) => (
+              <div className="sourcing-direction-card" key={item.title}>
+                <div>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+                <img src={item.image} alt={`${item.title} visual`} />
               </div>
             ))}
+          </div>
+          <div className="sourcing-direction-quote">
+            <span>“</span>
+            <strong>
+              The world is changing fast. The opportunity belongs to those who
+              <em> see it earlier.</em>
+            </strong>
           </div>
         </div>
       </section>
