@@ -56,9 +56,11 @@ const fallbackImages = [
 
 const imageOverrides: Record<string, string> = {
   "commercial-cleaning-equipment-demand-signals":
-    "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop",
+    "https://source.unsplash.com/INDGbj_ojG4/1200x675",
+  "robot-vacuum-market-trends-2026":
+    "https://source.unsplash.com/eSUOY0OImJc/1200x675",
   "europe-floor-care-demand-update":
-    "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200&auto=format&fit=crop",
+    "https://source.unsplash.com/yy-msv5-LFo/1200x675",
   "private-label-cleaning-products-sourcing-context":
     "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop"
 };
@@ -194,7 +196,7 @@ export default function InsightsPage() {
   const featuredSummary =
     "This signal explains why the cleaning industry needs a shared information center as products, suppliers, channels and trade shows become more connected. It shows how scattered information slows business decisions and why a clearer industry view can help buyers, brands and suppliers identify opportunities earlier.";
   const featuredImage =
-    "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop";
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop";
 
   return (
     <>
