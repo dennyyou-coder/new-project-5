@@ -3269,37 +3269,18 @@ h3 {
   display: grid;
   grid-template-columns: minmax(280px, 0.38fr) minmax(0, 1fr);
   gap: 40px;
-  align-items: center;
+  align-items: start;
 }
 
 .sourcing-advantage-core {
-  position: relative;
   display: grid;
-  min-height: 340px;
-  border: 1px solid rgba(47, 107, 255, 0.18);
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 50% 50%, rgba(47, 107, 255, 0.2), transparent 34%),
-    rgba(246, 250, 255, 0.88);
-  place-items: center;
-  text-align: center;
-}
-
-.sourcing-advantage-core::before,
-.sourcing-advantage-core::after {
-  position: absolute;
-  inset: 14%;
-  border: 1px solid rgba(47, 107, 255, 0.16);
-  border-radius: 50%;
-  content: "";
-}
-
-.sourcing-advantage-core::after {
-  inset: 28%;
+  border-top: 1px solid #050b16;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 24px 0 0;
 }
 
 .sourcing-advantage-core span {
-  z-index: 1;
   color: var(--accent);
   font-size: 13px;
   font-weight: 600;
@@ -3308,36 +3289,40 @@ h3 {
 }
 
 .sourcing-advantage-core strong {
-  position: absolute;
-  z-index: 1;
-  border: 1px solid rgba(47, 107, 255, 0.16);
-  border-radius: 999px;
-  background: white;
-  padding: 8px 11px;
+  display: block;
+  margin-top: 20px;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 32px;
   font-weight: 600;
-  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.06);
+  line-height: 1.1;
 }
 
-.sourcing-advantage-core strong:nth-of-type(1) {
-  top: 18%;
-  left: 13%;
+.sourcing-advantage-core dl {
+  display: grid;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 
-.sourcing-advantage-core strong:nth-of-type(2) {
-  top: 20%;
-  right: 12%;
+.sourcing-advantage-core dl div {
+  display: grid;
+  grid-template-columns: minmax(116px, 0.42fr) minmax(0, 1fr);
+  gap: 18px;
+  border-top: 1px solid var(--line);
+  padding: 16px 0;
 }
 
-.sourcing-advantage-core strong:nth-of-type(3) {
-  bottom: 20%;
-  left: 10%;
+.sourcing-advantage-core dt {
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
-.sourcing-advantage-core strong:nth-of-type(4) {
-  right: 14%;
-  bottom: 17%;
+.sourcing-advantage-core dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.35;
 }
 
 .sourcing-advantage-list {
@@ -4754,12 +4739,6 @@ h3 {
     min-height: 280px;
   }
 
-  .sourcing-advantage-core {
-    min-height: 340px;
-    max-width: 420px;
-    margin: 0 auto;
-  }
-
   .sourcing-authority-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4998,6 +4977,11 @@ h3 {
     gap: 12px;
   }
 
+  .sourcing-advantage-core dl div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
   .sourcing-hero-final {
     padding: 42px 0;
   }
@@ -5039,14 +5023,6 @@ h3 {
 
   .sourcing-direction-card img {
     height: 190px;
-  }
-
-  .sourcing-advantage-core {
-    min-height: 280px;
-  }
-
-  .sourcing-advantage-core strong {
-    font-size: 12px;
   }
 
   .sourcing-action-cta h2 span {

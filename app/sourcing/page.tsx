@@ -260,11 +260,26 @@ export default function SourcingPage() {
           </div>
           <div className="sourcing-advantage-map">
             <div className="sourcing-advantage-core">
-              <span>Denny You</span>
-              <strong>20+ Years</strong>
-              <strong>9,000+ Network</strong>
-              <strong>Forums</strong>
-              <strong>Trade Shows</strong>
+              <span>Signal Sources</span>
+              <strong>Denny You</strong>
+              <dl>
+                <div>
+                  <dt>20+ Years</dt>
+                  <dd>Inside The Industry</dd>
+                </div>
+                <div>
+                  <dt>9,000+ Network</dt>
+                  <dd>Industry Professionals</dd>
+                </div>
+                <div>
+                  <dt>Forums</dt>
+                  <dd>Industry Forums</dd>
+                </div>
+                <div>
+                  <dt>Trade Shows</dt>
+                  <dd>Trade Shows</dd>
+                </div>
+              </dl>
             </div>
             <div className="sourcing-advantage-list">
               {intelligenceSources.map((item) => (
