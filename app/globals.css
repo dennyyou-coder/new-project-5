@@ -2194,6 +2194,24 @@ h3 {
   line-height: 1.55;
 }
 
+.sourcing-pain-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 900px;
+  margin-top: 16px;
+}
+
+.sourcing-pain-list li {
+  border: 1px solid rgba(47, 107, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px 12px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 820;
+}
+
 .sourcing-statement {
   width: max-content;
   max-width: 100%;

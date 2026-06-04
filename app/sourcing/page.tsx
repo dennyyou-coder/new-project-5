@@ -15,6 +15,14 @@ const trustMetrics = [
   "Industry Events & Intelligence"
 ];
 
+const painPoints = [
+  "Too many supplier emails.",
+  "Too many copycat products.",
+  "Competitors launch faster.",
+  "Margins keep shrinking.",
+  "After-sales costs keep growing."
+];
+
 const reasons = [
   {
     icon: "star",
@@ -63,9 +71,9 @@ const executionReasons = reasons.slice(4);
 
 const ctaPoints = [
   "Discover where the next opportunity is emerging",
-  "Understand what leading brands are building and who is manufacturing it",
-  "Build products with higher margins and lower after-sales rates",
-  "Access the suppliers behind successful brands"
+  "Understand what leading brands are building",
+  "Access the factories behind successful products",
+  "Build products with higher margins and lower after-sales rates"
 ];
 
 const productCategories = [
@@ -126,52 +134,22 @@ export default function SourcingPage() {
         <div className="container">
           <p className="eyebrow">Sourcing</p>
           <h1>
-            Source Better Products.
+            Too Many Suppliers.
             <br />
-            Build Better Business.
+            Too Few Opportunities.
           </h1>
-          <p>
-            Leverage Denny&apos;s industry network, supplier relationships and
-            market intelligence to discover products, manufacturers and
-            opportunities that create long-term business value.
-          </p>
+          <ul className="sourcing-pain-list">
+            {painPoints.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
+          </ul>
           <div className="sourcing-statement">
             We don&apos;t help you source products. We help you make more money.
           </div>
           <div className="hero-actions">
             <Link className="button" href="/contact">
-              Contact Denny
+              Talk With Denny
             </Link>
-            <Link className="button button-secondary" href="/contact">
-              Discuss Your Project
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Product Categories</p>
-              <h2>Explore Product Categories</h2>
-              <p>
-                Discover products and opportunities across the global cleaning
-                industry.
-              </p>
-            </div>
-          </div>
-          <div className="sourcing-category-grid">
-            {productCategories.map((item) => (
-              <Link className="sourcing-category-card" href="/contact" key={item.title}>
-                <img src={item.image} alt={`${item.title} category`} />
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                  <strong>Discuss category →</strong>
-                </div>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
@@ -245,26 +223,50 @@ export default function SourcingPage() {
         </div>
       </section>
 
+      <section className="section section-soft">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">Product Categories</p>
+              <h2>Explore Product Categories</h2>
+              <p>
+                Discover products and opportunities across the global cleaning
+                industry.
+              </p>
+            </div>
+          </div>
+          <div className="sourcing-category-grid">
+            {productCategories.map((item) => (
+              <Link className="sourcing-category-card" href="/contact" key={item.title}>
+                <img src={item.image} alt={`${item.title} category`} />
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                  <strong>Discuss category →</strong>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container cta-band sourcing-final-cta">
           <div>
             <p className="eyebrow">Discuss Your Project</p>
-            <h2>Want To Discover The Next Winning Product?</h2>
+            <h2>Looking For The Next Best Seller?</h2>
             <ul className="sourcing-cta-list">
               {ctaPoints.map((point) => (
                 <li key={point}>{point}</li>
               ))}
             </ul>
             <strong className="sourcing-outcome">
-              Better Products. Better Suppliers. Better Business.
+              More Opportunities. More Profit. Less Guesswork.
             </strong>
           </div>
           <div className="hero-actions">
             <Link className="button" href="/contact">
-              Contact Denny
-            </Link>
-            <Link className="button button-secondary" href="/contact">
-              Discuss Your Project
+              Talk With Denny
             </Link>
           </div>
         </div>
