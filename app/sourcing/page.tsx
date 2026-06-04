@@ -139,8 +139,8 @@ export default function SourcingPage() {
             Build Better Business.
           </h1>
           <p>
-            Leverage Denny&apos;s industry network, market intelligence and
-            supplier relationships to discover products, manufacturers and
+            Leverage Denny&apos;s industry network, supplier relationships and
+            market intelligence to discover products, manufacturers and
             opportunities that create long-term business value.
           </p>
           <div className="sourcing-statement">
@@ -153,65 +153,6 @@ export default function SourcingPage() {
             <Link className="button button-secondary" href="/contact">
               Discuss Your Project
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container sourcing-denny-layout">
-          <div className="sourcing-denny-image" aria-label="Industry forum and business networking placeholder" />
-          <div className="sourcing-denny-copy">
-            <p className="eyebrow">Why Companies Work With Denny</p>
-            <h2>Denny Connects Products, Suppliers And Markets</h2>
-            <p>
-              For more than 20 years, Denny has worked across the global
-              cleaning industry, connecting manufacturers, brands, distributors
-              and retailers.
-            </p>
-            <p>
-              His value is not helping companies source products. His value is
-              helping companies identify better opportunities, build stronger
-              products and create more profitable businesses.
-            </p>
-            <div className="sourcing-value-grid">
-              {coreValues.map((item) => (
-                <div className="sourcing-value-card" key={item.title}>
-                  <IconBadge name={item.icon} />
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              ))}
-            </div>
-            <div className="sourcing-trust-row">
-              {trustMetrics.map((metric) => (
-                <span key={metric}>{metric}</span>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">8 Reasons Companies Work With Denny</p>
-              <h2>Better products, stronger suppliers and clearer business direction</h2>
-              <p>
-                Denny helps companies move beyond factory comparison and focus
-                on product opportunities, margins, reliability and long-term
-                growth.
-              </p>
-            </div>
-          </div>
-          <div className="sourcing-reason-grid">
-            {reasons.map((item) => (
-              <div className="case-card sourcing-reason-card" key={item.title}>
-                <IconBadge name={item.icon} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -243,16 +184,84 @@ export default function SourcingPage() {
         </div>
       </section>
 
+      <section className="section section-soft">
+        <div className="container sourcing-denny-layout">
+          <div className="sourcing-denny-image" aria-label="Industry forum and business networking placeholder" />
+          <div className="sourcing-denny-copy">
+            <p className="eyebrow">Why Companies Work With Denny</p>
+            <h2>Denny Connects Products, Suppliers And Markets</h2>
+            <p>
+              Denny is one of the leading influencers and industry consultants
+              in the global cleaning industry.
+            </p>
+            <p>
+              For more than 20 years, he has connected manufacturers, brands,
+              distributors, retailers, suppliers and industry professionals
+              across the industry.
+            </p>
+            <p>
+              His value is not helping companies source products. His value is
+              helping companies discover opportunities, build stronger
+              products and create more profitable businesses.
+            </p>
+            <div className="sourcing-value-grid">
+              {coreValues.map((item) => (
+                <div className="sourcing-value-card" key={item.title}>
+                  <IconBadge name={item.icon} />
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              ))}
+            </div>
+            <div className="sourcing-trust-row">
+              {trustMetrics.map((metric) => (
+                <span key={metric}>{metric}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">8 Reasons Companies Work With Denny</p>
+              <h2>Better products, stronger suppliers and clearer business direction</h2>
+              <p>
+                Denny helps companies move beyond factory comparison and focus
+                on product opportunities, margins, reliability and long-term
+                growth.
+              </p>
+            </div>
+          </div>
+          <div className="sourcing-reason-grid">
+            {reasons.map((item) => (
+              <div className="case-card sourcing-reason-card" key={item.title}>
+                <IconBadge name={item.icon} />
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container cta-band sourcing-final-cta">
           <div>
             <p className="eyebrow">Discuss Your Project</p>
-            <h2>Looking For Better Products, Better Suppliers And Better Opportunities?</h2>
+            <h2>Want To Discover The Next Winning Product?</h2>
             <p>
-              Let&apos;s discuss how Denny and World Clean Biz can help you
-              discover stronger suppliers, better products and more profitable
-              opportunities.
+              Want to know where the next opportunity is emerging? Want to
+              understand what leading brands are building and who is
+              manufacturing it? Want to build products with higher margins,
+              lower after-sales rates and stronger long-term growth? Let&apos;s
+              talk.
             </p>
+            <strong className="sourcing-outcome">
+              Better Products. Better Suppliers. Better Business.
+            </strong>
           </div>
           <div className="hero-actions">
             <Link className="button" href="/contact">

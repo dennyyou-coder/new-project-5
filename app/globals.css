@@ -2174,36 +2174,36 @@ h3 {
   background:
     radial-gradient(circle at 80% 18%, rgba(111, 168, 255, 0.22), transparent 30%),
     linear-gradient(135deg, #FFFFFF 0%, #F6FAFF 100%);
-  padding: 52px 0 44px;
+  padding: 34px 0 30px;
 }
 
 .sourcing-compact-intro h1 {
   max-width: 920px;
-  margin-top: 12px;
+  margin-top: 8px;
   color: var(--ink);
-  font-size: clamp(40px, 5vw, 68px);
+  font-size: clamp(34px, 4vw, 52px);
   font-weight: 820;
-  line-height: 0.98;
+  line-height: 1;
 }
 
 .sourcing-compact-intro p:not(.eyebrow) {
   max-width: 780px;
-  margin-top: 18px;
+  margin-top: 12px;
   color: var(--muted);
-  font-size: 18px;
-  line-height: 1.62;
+  font-size: 16px;
+  line-height: 1.55;
 }
 
 .sourcing-statement {
   width: max-content;
   max-width: 100%;
-  margin-top: 20px;
+  margin-top: 14px;
   border: 1px solid rgba(47, 107, 255, 0.18);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.82);
-  padding: 14px 16px;
+  padding: 12px 14px;
   color: var(--ink);
-  font-size: clamp(18px, 2vw, 24px);
+  font-size: clamp(17px, 1.7vw, 21px);
   font-weight: 860;
   line-height: 1.25;
   box-shadow: 0 12px 28px rgba(22, 59, 103, 0.06);
@@ -2376,6 +2376,14 @@ h3 {
 
 .sourcing-final-cta p:not(.eyebrow) {
   max-width: 760px;
+}
+
+.sourcing-outcome {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .home-sidebar {
