@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 };
 
 const topics = [
-  "Robotic Vacuums",
-  "Floor Washers",
-  "Pool Robots",
-  "Lawn Mowers",
+  "Cleaning Equipment",
+  "Sustainability",
   "Private Label",
-  "Supply Chain",
-  "Cleaning Chemicals",
-  "Trade Shows"
+  "E-commerce",
+  "Disinfection",
+  "Smart Cleaning",
+  "Hygiene",
+  "Innovation"
 ];
 
 const categories = [
@@ -68,6 +68,71 @@ function displayReadTime(article: Insight, index: number) {
   return `${minutes} min read`;
 }
 
+function displayDate(article: Insight) {
+  if (article.date === "2026-06-03") return "June 3, 2026";
+  return article.date;
+}
+
+function SidebarContent({ latestSignals }: { latestSignals: Insight[] }) {
+  return (
+    <>
+      <div className="sidebar-box market-report-priority">
+        <p className="eyebrow">Free Market Reports</p>
+        <div className="report-stack" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </div>
+        <h3>Get industry trends, supplier intelligence and market opportunities from World Clean Biz.</h3>
+        <Link className="button" href="/market-reports">
+          Get Free Reports
+        </Link>
+      </div>
+
+      <div className="sidebar-box about-denny-sidebar">
+        <img
+          src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=360&h=360&auto=format&fit=crop&crop=faces"
+          alt="Professional portrait placeholder for Denny You"
+        />
+        <h3>Denny Connects The Industry</h3>
+        <ul>
+          <li>20+ Years In The Cleaning Industry</li>
+          <li>9,000+ Industry Professionals</li>
+          <li>Global Industry Events And Connections</li>
+          <li>Supplier, Brand And Market Network</li>
+        </ul>
+        <Link href="/about">Learn More About Denny</Link>
+      </div>
+
+      <div className="sidebar-box">
+        <h3>Popular Topics</h3>
+        <div className="topic-list">
+          {topics.map((topic) => (
+            <Link href="/insights" key={topic}>
+              {topic}
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      <div className="sidebar-box latest-signals-sidebar">
+        <h3>Latest Signals</h3>
+        <div className="latest-signal-list">
+          {latestSignals.map((article, index) => (
+            <Link href={`/insights/${article.slug}`} key={article.slug}>
+              <img src={imageFor(article, index)} alt="" />
+              <span>
+                <strong>{article.title}</strong>
+                <small>{displayDate(article)}</small>
+              </span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
+
 function ArticleFeedItem({ article, index }: { article: Insight; index: number }) {
   return (
     <Link className="insights-feed-item" href={`/insights/${article.slug}`}>
@@ -79,7 +144,7 @@ function ArticleFeedItem({ article, index }: { article: Insight; index: number }
         <h2>{article.title}</h2>
         <p>{summaryFor(article)}</p>
         <div className="insights-card-meta">
-          <span>{article.date}</span>
+          <span>{displayDate(article)}</span>
           <span>{displayReadTime(article, index)}</span>
         </div>
         <strong>Read Insight</strong>
@@ -96,28 +161,35 @@ export default function InsightsPage() {
   const featuredSummary = featured
     ? `${summaryFor(featured)} The piece sets the tone for how World Clean Biz reads industry information: not as isolated news, but as signals that can help companies understand where products, suppliers and business opportunities may be moving next. Readers can learn why a shared industry view matters for sourcing, market research and long-term business decisions.`
     : "";
+  const featuredImage =
+    "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop";
 
   return (
     <>
       {featured ? (
         <section className="insights-featured-top">
           <div className="insights-page-container">
-            <Link className="insights-featured-hero" href={`/insights/${featured.slug}`}>
-              <div className="insights-featured-hero-image">
-                <img src={imageFor(featured, 0)} alt={`${featured.title} featured cover`} />
-              </div>
-              <div className="insights-featured-hero-copy">
-                <p className="eyebrow">Featured Insight</p>
-                <span className="insights-category">{featured.category}</span>
-                <h1>{featured.title}</h1>
-                <p>{featuredSummary}</p>
-                <div className="insights-card-meta">
-                  <span>{featured.date}</span>
-                  <span>{displayReadTime(featured, 0)}</span>
+            <div className="insights-top-layout">
+              <Link className="insights-featured-hero" href={`/insights/${featured.slug}`}>
+                <div className="insights-featured-hero-image">
+                  <img src={featuredImage} alt={`${featured.title} featured cover`} />
                 </div>
-                <strong>Read Insight</strong>
-              </div>
-            </Link>
+                <div className="insights-featured-hero-copy">
+                  <p className="eyebrow">Featured Insight</p>
+                  <span className="insights-category">Industry</span>
+                  <h1>{featured.title}</h1>
+                  <p>{featuredSummary}</p>
+                  <div className="insights-card-meta">
+                    <span>{displayDate(featured)}</span>
+                    <span>{displayReadTime(featured, 0)}</span>
+                  </div>
+                  <strong>Read Insight →</strong>
+                </div>
+              </Link>
+              <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-desktop" aria-label="Insights sidebar">
+                <SidebarContent latestSignals={latestSignals} />
+              </aside>
+            </div>
           </div>
         </section>
       ) : null}
@@ -136,69 +208,15 @@ export default function InsightsPage() {
 
       <section className="section insights-publication-section">
         <div className="insights-page-container">
-          <div className="insights-publication-layout">
-            <main className="insights-feed" aria-label="Industry insight articles">
-              {feedArticles.map((article, index) => (
-                <ArticleFeedItem article={article} index={index} key={article.slug} />
-              ))}
-            </main>
+          <main className="insights-feed" aria-label="Industry insight articles">
+            {feedArticles.map((article, index) => (
+              <ArticleFeedItem article={article} index={index} key={article.slug} />
+            ))}
+          </main>
 
-            <aside className="insights-sidebar insights-sidebar-v2" aria-label="Insights sidebar">
-              <div className="sidebar-box market-report-priority">
-                <p className="eyebrow">Free Market Reports</p>
-                <div className="report-stack" aria-hidden="true">
-                  <span />
-                  <span />
-                  <span />
-                </div>
-                <h3>Get industry trends, supplier intelligence and market opportunities from World Clean Biz.</h3>
-                <Link className="button" href="/market-reports">
-                  Get Free Reports
-                </Link>
-              </div>
-
-              <div className="sidebar-box about-denny-sidebar">
-                <img
-                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=360&h=360&auto=format&fit=crop&crop=faces"
-                  alt="Professional portrait placeholder for Denny You"
-                />
-                <h3>Denny Connects The Industry</h3>
-                <ul>
-                  <li>20+ Years In The Cleaning Industry</li>
-                  <li>9,000+ Industry Professionals</li>
-                  <li>Global Industry Events And Connections</li>
-                  <li>Supplier, Brand And Market Network</li>
-                </ul>
-                <Link href="/about">Learn More About Denny</Link>
-              </div>
-
-              <div className="sidebar-box">
-                <h3>Popular Topics</h3>
-                <div className="topic-list">
-                  {topics.map((topic) => (
-                    <Link href="/insights" key={topic}>
-                      {topic}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              <div className="sidebar-box latest-signals-sidebar">
-                <h3>Latest Signals</h3>
-                <div className="latest-signal-list">
-                  {latestSignals.map((article, index) => (
-                    <Link href={`/insights/${article.slug}`} key={article.slug}>
-                      <img src={imageFor(article, index)} alt="" />
-                      <span>
-                        <strong>{article.title}</strong>
-                        <small>{article.date}</small>
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </aside>
-          </div>
+          <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-mobile" aria-label="Insights sidebar">
+            <SidebarContent latestSignals={latestSignals} />
+          </aside>
 
           <nav className="insights-pagination insights-pagination-v2" aria-label="Insights pagination">
             <span>Previous</span>
