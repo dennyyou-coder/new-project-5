@@ -3,7 +3,7 @@ import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 
 const heroSignals: { icon: IconName; label: string }[] = [
   { icon: "target", label: "Product Opportunities" },
-  { icon: "factory", label: "Supply Chain Signals" },
+  { icon: "factory", label: "Supply Chain Opportunities" },
   { icon: "trending", label: "Market Opportunities" },
   { icon: "radio", label: "Industry Intelligence" }
 ];
