@@ -10,24 +10,24 @@ export const metadata: Metadata = {
 
 const heroCards = [
   {
-    lead: "500+ Suppliers",
+    lead: "You Meet 500+ Suppliers At Every Trade Show.",
     yet: "YET",
-    result: "The Same Products"
+    result: "You Fly Home With The Same Products You Saw Last Year."
   },
   {
-    lead: "12 Months Developing",
+    lead: "You Spend 12 Months Developing A New Product.",
     yet: "YET",
-    result: "A Better Product Already Ranks"
+    result: "A Better Product Is Already Ranking On Amazon Before You Even Launch."
   },
   {
-    lead: "Years Of Profit",
+    lead: "Your Best-Selling Product Generated Profits For Years.",
     yet: "YET",
-    result: "Inventory Drains Cash"
+    result: "Today It&apos;s The Inventory That&apos;s Draining Your Cash Flow."
   },
   {
-    lead: "20 Years Of Relationships",
+    lead: "You Spend 20 Years Building Customer And Channel Relationships.",
     yet: "YET",
-    result: "Customers Walk To Competitors"
+    result: "Your Biggest Customer Is Walking Into Your Competitor&apos;s Booth."
   }
 ];
 
@@ -35,74 +35,79 @@ const industryChanges = [
   {
     icon: "trophy",
     todayIcon: "calendar",
-    then: "One Great Product Could Drive Growth For Years.",
-    today: "A Product Advantage Can Disappear In Months."
+    then: "One Winning Product Could Build A Business.",
+    today: "A Winning Product Can Become Inventory Within A Year."
   },
   {
     icon: "factory",
     todayIcon: "users",
-    then: "Finding Suppliers Was The Challenge.",
-    today: "500 Suppliers Offer Similar Products. Finding Something Different Is The Challenge."
+    then: "Finding A Reliable Supplier Was The Advantage.",
+    today:
+      "Every Trade Show Has Hundreds Of Suppliers Selling Similar Products. The Advantage Is Finding What Others Haven&apos;t Seen Yet."
   },
   {
     icon: "handshake",
     todayIcon: "search",
-    then: "Winning A Distributor Meant Winning The Market.",
-    today: "Customers Compare Hundreds Of Products Before They Talk To Anyone."
+    then: "Most Competitors Were Familiar.",
+    today: "A New Chinese Brand Can Reshape An Entire Category In Just A Few Years."
   },
   {
     icon: "user",
     todayIcon: "cpu",
-    then: "Industry Experience Created Advantage.",
-    today: "Technology Moves Faster Than Experience."
+    then: "20 Years Of Experience Made You The Expert.",
+    today: "New Technologies Can Rewrite The Rules Overnight."
   },
   {
     icon: "trending",
     todayIcon: "calendar",
-    then: "Following Trends Was Enough.",
-    today: "By The Time Everyone Sees A Trend, The Opportunity Is Already Gone."
+    then: "Following The Market Was A Safe Strategy.",
+    today: "By The Time The Market Sees A Trend, The Opportunity Is Already Gone."
   }
 ] satisfies { icon: IconName; todayIcon: IconName; then: string; today: string }[];
 
 const opportunityGroups = [
   {
-    label: "Home Cleaning",
-    items: ["Robotic Vacuums", "Floor Washers"]
+    label: "E-Commerce Will Win.",
+    items: ["China Is Already There.", "The Rest Of The World Is Just A Few Years Behind."]
   },
   {
-    label: "Outdoor Cleaning",
-    items: ["Pool Robots", "Lawn Robots"]
+    label: "China Is The New Innovation Center.",
+    items: ["If You Don&apos;t Have R&D And Sourcing In China,", "You Will Fall Behind."]
   },
   {
-    label: "Commercial Cleaning",
-    items: ["Automation", "Robotics"]
+    label: "Speed Will Beat Size.",
+    items: ["The Fastest Brands Will Win.", "Not Necessarily The Biggest Ones."]
   },
   {
-    label: "Emerging Opportunities",
-    items: ["What's Next", "Future Categories"]
+    label: "The Biggest Growth Story Hasn&apos;t Happened Yet.",
+    items: ["$40 Billion Today.", "$140 Billion In The Next Decade."]
+  },
+  {
+    label: "The Next Industry Giants Haven&apos;t Been Built Yet.",
+    items: ["The Biggest Winners Of The Next 10 Years", "May Not Exist Today."]
   }
 ];
 
 const intelligenceSources = [
   {
-    label: "Factory Network",
-    detail: "Supplier movement, product upgrades and manufacturing capability."
+    label: "See What Most Companies Miss.",
+    detail: "Before Everyone Starts Talking About It."
   },
   {
-    label: "Brand Network",
-    detail: "What brands are testing, launching and asking factories to build."
+    label: "Understand Which Trends Actually Matter.",
+    detail: "And Ignore The Ones That Don&apos;t."
   },
   {
-    label: "Industry Forums",
-    detail: "Signals from product conversations, panels and private discussions."
+    label: "Know Which Products Are Worth Building.",
+    detail: "Before Spending A Year Building The Wrong One."
   },
   {
-    label: "Trade Shows",
-    detail: "Where products, competitors and category momentum become visible."
+    label: "Access The Factories Behind Leading Brands.",
+    detail: "Without Spending Years Building The Network Yourself."
   },
   {
-    label: "Global Intelligence Network",
-    detail: "Connections across buyers, suppliers, distributors and media."
+    label: "See The Market Earlier.",
+    detail: "Because Timing Matters More Than Ever."
   }
 ];
 
@@ -116,12 +121,16 @@ const aboutDenny = [
     label: "Industry Professionals"
   },
   {
-    value: "500+",
-    label: "Factory Visits"
+    value: "Events",
+    label: "Industry Forums & Events"
   },
   {
     value: "Global",
     label: "Cleaning Network"
+  },
+  {
+    value: "Network",
+    label: "Factory & Brand Connections"
   },
   {
     value: "Founder",
@@ -156,7 +165,7 @@ export default function SourcingPage() {
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <p>{item.lead}</p>
                   <em>{item.yet}</em>
-                  <strong>{item.result}</strong>
+                  <strong dangerouslySetInnerHTML={{ __html: item.result }} />
                 </div>
               ))}
             </div>
@@ -201,7 +210,7 @@ export default function SourcingPage() {
                   </div>
                   <div>
                     <span>Today</span>
-                    <strong>{item.today}</strong>
+                    <strong dangerouslySetInnerHTML={{ __html: item.today }} />
                   </div>
                 </div>
               </div>
@@ -209,7 +218,7 @@ export default function SourcingPage() {
           </div>
           <div className="sourcing-report-quote">
             <strong>More Suppliers. More Products. More Competition.</strong>
-            <span>The winners aren&apos;t working harder. They&apos;re seeing what&apos;s next earlier.</span>
+            <span>The Difference Is No Longer Access. The Difference Is Insight.</span>
           </div>
         </div>
       </section>
@@ -221,9 +230,7 @@ export default function SourcingPage() {
               <p className="eyebrow">Market Opportunity Map</p>
               <h2>The Next $140 Billion Opportunity</h2>
               <p>
-                The cleaning industry is no longer one product category. It is
-                becoming a connected landscape of home, outdoor, commercial and
-                emerging opportunities.
+                The Cleaning Industry Is Growing Faster Than Most People Realize.
               </p>
             </div>
           </div>
@@ -235,10 +242,10 @@ export default function SourcingPage() {
             </div>
             {opportunityGroups.map((group) => (
               <div className="sourcing-opportunity-node" key={group.label}>
-                <h3>{group.label}</h3>
+                <h3 dangerouslySetInnerHTML={{ __html: group.label }} />
                 <ul>
                   {group.items.map((item) => (
-                    <li key={item}>{item}</li>
+                    <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
                   ))}
                 </ul>
               </div>
@@ -252,11 +259,10 @@ export default function SourcingPage() {
           <div className="section-head sourcing-centered-head">
             <div>
               <p className="eyebrow">Authority Network</p>
-              <h2>Why Denny Sees Signals Earlier</h2>
+              <h2>Why Companies Work With Denny</h2>
               <p>
-                This is not about selling a service. It is about the source of
-                intelligence: factories, brands, forums, trade shows and
-                industry relationships feeding one connected view.
+                Most Companies Need More Than Supplier Lists. They Need Better
+                Judgement.
               </p>
             </div>
           </div>
@@ -285,7 +291,7 @@ export default function SourcingPage() {
           <div className="sourcing-denny-image" aria-label="Industry forum and trade show discussion placeholder" />
           <div>
             <p className="eyebrow">Industry Authority</p>
-            <h2>Denny You</h2>
+            <h2>20+ Years Inside The Global Cleaning Industry.</h2>
             <div className="sourcing-authority-metrics">
               {aboutDenny.map((item) => (
                 <div className="sourcing-authority-metric" key={item.label}>
