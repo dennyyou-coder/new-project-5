@@ -1546,7 +1546,7 @@ h3 {
     linear-gradient(180deg, rgba(47, 107, 255, 0.025) 1px, transparent 1px),
     linear-gradient(135deg, #FFFFFF 0%, #F6FAFF 100%);
   background-size: 42px 42px, 42px 42px, auto;
-  padding: 22px 0 0;
+  padding: 22px 0 18px;
 }
 
 .insights-page-shell,
@@ -1563,7 +1563,7 @@ h3 {
 
 .insights-featured-hero {
   display: grid;
-  grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1fr);
+  grid-template-columns: 1fr;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: white;
@@ -1578,7 +1578,7 @@ h3 {
 }
 
 .insights-featured-hero-image {
-  height: clamp(300px, 22vw, 360px);
+  height: clamp(190px, 18vw, 240px);
   background: var(--soft);
   overflow: hidden;
 }
@@ -1594,8 +1594,8 @@ h3 {
   display: grid;
   align-content: center;
   min-width: 0;
-  border-left: 1px solid var(--line);
-  padding: clamp(20px, 2.5vw, 30px);
+  border-top: 1px solid var(--line);
+  padding: clamp(20px, 2.4vw, 28px);
 }
 
 .insights-featured-hero-copy .insights-category {
@@ -1603,19 +1603,19 @@ h3 {
 }
 
 .insights-featured-hero-copy h1 {
-  max-width: 780px;
+  max-width: 980px;
   margin-top: 10px;
   color: var(--ink);
-  font-size: clamp(30px, 3vw, 42px);
+  font-size: clamp(34px, 3.8vw, 48px);
   font-weight: 760;
   line-height: 1.05;
 }
 
 .insights-featured-hero-copy p:not(.eyebrow) {
-  max-width: 780px;
+  max-width: 920px;
   margin-top: 12px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 15.5px;
   line-height: 1.5;
 }
 
@@ -1674,7 +1674,7 @@ h3 {
 }
 
 .insights-publication-section {
-  padding-top: 20px;
+  padding-top: 24px;
 }
 
 .insights-mobile-sidebar-section {
@@ -1798,31 +1798,112 @@ h3 {
 
 .report-stack {
   position: relative;
-  height: 116px;
-  margin: 14px 0 16px;
+  height: 162px;
+  margin: 14px 0 18px;
 }
 
-.report-stack span {
+.report-cover {
   position: absolute;
   inset: 0 auto auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 118px;
-  height: 94px;
+  height: 152px;
   border: 1px solid rgba(47, 107, 255, 0.18);
-  border-radius: 8px;
+  border-radius: 10px;
   background:
-    linear-gradient(135deg, rgba(47, 107, 255, 0.14), rgba(111, 168, 255, 0.24)),
+    radial-gradient(circle at 70% 18%, rgba(255, 255, 255, 0.9), transparent 22%),
+    linear-gradient(135deg, rgba(47, 107, 255, 0.18), rgba(111, 168, 255, 0.3)),
     linear-gradient(180deg, #FFFFFF, #F6FAFF);
-  box-shadow: 0 12px 26px rgba(22, 59, 103, 0.1);
+  padding: 10px;
+  box-shadow: 0 16px 32px rgba(22, 59, 103, 0.14);
+  overflow: hidden;
 }
 
-.report-stack span:nth-child(2) {
-  left: 56px;
-  top: 10px;
+.report-cover::before,
+.report-cover::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
 }
 
-.report-stack span:nth-child(3) {
-  left: 112px;
-  top: 20px;
+.report-cover::before {
+  inset: 44px 10px auto;
+  height: 42px;
+  border: 1px solid rgba(22, 59, 103, 0.12);
+  border-radius: 50%;
+}
+
+.report-cover::after {
+  right: -24px;
+  bottom: -22px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: rgba(47, 107, 255, 0.16);
+}
+
+.report-cover small,
+.report-cover strong,
+.report-cover span {
+  position: relative;
+  z-index: 1;
+}
+
+.report-cover small {
+  color: rgba(22, 59, 103, 0.68);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.report-cover strong {
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.report-cover span {
+  width: max-content;
+  border-radius: 999px;
+  background: rgba(47, 107, 255, 0.12);
+  padding: 3px 7px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.report-cover-market {
+  transform: rotate(-7deg);
+}
+
+.report-cover-category {
+  left: 64px;
+  top: 6px;
+  background:
+    radial-gradient(circle at 32% 36%, rgba(111, 168, 255, 0.34), transparent 23%),
+    linear-gradient(135deg, rgba(220, 235, 255, 0.92), #FFFFFF);
+  transform: rotate(1deg);
+}
+
+.report-cover-category::before {
+  border-radius: 12px;
+  transform: rotate(12deg);
+}
+
+.report-cover-supplier {
+  left: 130px;
+  top: 14px;
+  background:
+    linear-gradient(90deg, rgba(22, 59, 103, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(22, 59, 103, 0.08) 1px, transparent 1px),
+    linear-gradient(135deg, #FFFFFF, rgba(220, 235, 255, 0.94));
+  background-size: 18px 18px, 18px 18px, auto;
+  transform: rotate(6deg);
 }
 
 .market-report-priority h3 {

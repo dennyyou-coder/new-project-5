@@ -88,9 +88,33 @@ function SidebarContent({ latestSignals }: { latestSignals: Insight[] }) {
       <div className="sidebar-box market-report-priority">
         <p className="eyebrow">Free Market Reports</p>
         <div className="report-stack" aria-hidden="true">
-          <span />
-          <span />
-          <span />
+          <div className="report-cover report-cover-market">
+            <small>World Clean Biz</small>
+            <strong>
+              Global Cleaning
+              <br />
+              Market Outlook
+            </strong>
+            <span>2026</span>
+          </div>
+          <div className="report-cover report-cover-category">
+            <small>World Clean Biz</small>
+            <strong>
+              Cleaning Products
+              <br />
+              Category Trends
+            </strong>
+            <span>2026</span>
+          </div>
+          <div className="report-cover report-cover-supplier">
+            <small>World Clean Biz</small>
+            <strong>
+              Supplier Landscape
+              <br />
+              Report
+            </strong>
+            <span>2026</span>
+          </div>
         </div>
         <h3>Get industry trends, supplier intelligence and market opportunities from World Clean Biz.</h3>
         <Link className="button" href="/market-reports">
@@ -175,58 +199,55 @@ export default function InsightsPage() {
   return (
     <>
       <section className="insights-featured-top">
-        <div className="insights-page-container insights-page-shell">
-          <main className="insights-main-column" aria-label="Industry insight articles">
-            {featured ? (
-              <Link className="insights-featured-hero" href={`/insights/${featured.slug}`}>
-                <div className="insights-featured-hero-image">
-                  <img src={featuredImage} alt={`${featured.title} featured cover`} />
-                </div>
-                <div className="insights-featured-hero-copy">
-                  <p className="eyebrow">Featured Insight</p>
-                  <span className="insights-category">Industry</span>
-                  <h1>{featured.title}</h1>
-                  <p>{featuredSummary}</p>
-                  <div className="insights-card-meta">
-                    <span>{displayDate(featured)}</span>
-                    <span>{displayReadTime(featured, 0)}</span>
-                  </div>
-                  <strong>Read Insight →</strong>
-                </div>
-              </Link>
-            ) : null}
-
-            <div className="insights-filter-wrap insights-filter-panel">
-              <div className="insights-filter insights-filter-v3" aria-label="Insight categories">
-                {categories.map((category) => (
-                  <button className={category === "All" ? "active" : ""} key={category} type="button">
-                    {category}
-                  </button>
-                ))}
+        <div className="insights-page-container">
+          {featured ? (
+            <Link className="insights-featured-hero" href={`/insights/${featured.slug}`}>
+              <div className="insights-featured-hero-image">
+                <img src={featuredImage} alt={`${featured.title} featured cover`} />
               </div>
-            </div>
-
-            <div className="insights-publication-section">
-              <div className="insights-feed">
-                {feedArticles.map((article, index) => (
-                  <ArticleFeedItem article={article} index={index} key={article.slug} />
-                ))}
+              <div className="insights-featured-hero-copy">
+                <p className="eyebrow">Featured Insight</p>
+                <span className="insights-category">Industry</span>
+                <h1>{featured.title}</h1>
+                <p>{featuredSummary}</p>
+                <div className="insights-card-meta">
+                  <span>{displayDate(featured)}</span>
+                  <span>{displayReadTime(featured, 0)}</span>
+                </div>
+                <strong>Read Insight →</strong>
               </div>
+            </Link>
+          ) : null}
+
+          <div className="insights-filter-wrap insights-filter-panel">
+            <div className="insights-filter insights-filter-v3" aria-label="Insight categories">
+              {categories.map((category) => (
+                <button className={category === "All" ? "active" : ""} key={category} type="button">
+                  {category}
+                </button>
+              ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section insights-publication-section">
+        <div className="insights-page-container insights-publication-layout">
+          <main className="insights-feed" aria-label="Industry insight articles">
+            {feedArticles.map((article, index) => (
+              <ArticleFeedItem article={article} index={index} key={article.slug} />
+            ))}
           </main>
 
           <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-desktop" aria-label="Insights sidebar">
             <SidebarContent latestSignals={latestSignals} />
           </aside>
-        </div>
-      </section>
 
-      <section className="section insights-mobile-sidebar-section">
-        <div className="insights-page-container">
           <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-mobile" aria-label="Insights sidebar">
             <SidebarContent latestSignals={latestSignals} />
           </aside>
-
+        </div>
+        <div className="insights-page-container">
           <nav className="insights-pagination insights-pagination-v2" aria-label="Insights pagination">
             <span>Previous</span>
             <strong>1</strong>
