@@ -212,31 +212,36 @@ export default function SourcingPage() {
 
       <section className="section sourcing-opportunity-section">
         <div className="container">
-          <div className="sourcing-opportunity-head">
-            <div>
-              <p className="eyebrow">Market Opportunity Map</p>
-              <h2>The Next $140 Billion Opportunity</h2>
-              <p>
-                The Cleaning Industry Is Growing Faster Than Most People Realize.
-              </p>
-            </div>
-          </div>
-          <div className="sourcing-opportunity-landscape">
-            <div className="sourcing-opportunity-center">
-              <span>Growth Landscape</span>
-              <strong>$140B</strong>
-              <p>next-decade cleaning industry opportunity</p>
-            </div>
-            {opportunityGroups.map((group) => (
-              <div className="sourcing-opportunity-node" key={group.label}>
-                <h3 dangerouslySetInnerHTML={{ __html: group.label }} />
-                <ul>
-                  {group.items.map((item) => (
-                    <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
-                  ))}
-                </ul>
+          <div className="sourcing-opportunity-memo">
+            <div className="sourcing-opportunity-head">
+              <div>
+                <p className="eyebrow">Industry Thesis</p>
+                <h2>The Next $140 Billion Opportunity</h2>
+                <p>
+                  The Cleaning Industry Is Growing Faster Than Most People Realize.
+                </p>
               </div>
-            ))}
+              <div className="sourcing-opportunity-signal">
+                <span>Growth Landscape</span>
+                <strong>$140B</strong>
+                <p>next-decade cleaning industry opportunity</p>
+              </div>
+            </div>
+            <div className="sourcing-opportunity-theses">
+              {opportunityGroups.map((group, index) => (
+                <article className="sourcing-opportunity-thesis" key={group.label}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h3 dangerouslySetInnerHTML={{ __html: group.label }} />
+                    <ul>
+                      {group.items.map((item) => (
+                        <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
