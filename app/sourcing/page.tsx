@@ -1,151 +1,146 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { IconBadge, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Sourcing",
   description:
-    "Work with Denny You and World Clean Biz to discover better cleaning product opportunities, stronger suppliers, higher-margin products, and global cleaning industry connections."
+    "Work with Denny You and World Clean Biz to find the next growth opportunity through cleaning industry intelligence, supplier context and market direction."
 };
 
-const trustMetrics = [
-  "20+ Years Industry Experience",
-  "9,000+ Industry Professionals",
-  "Global Industry Network",
-  "Industry Events & Intelligence"
-];
-
-const painPoints = [
-  "Too Many Suppliers.",
-  "Too Few Opportunities.",
-  "Every Trade Show Looks The Same.",
-  "Competitors Launch Faster.",
-  "Margins Keep Shrinking.",
-  "High After-Sales. Low Profit."
-];
-
-const reasons = [
+const heroCards = [
   {
-    icon: "star",
-    title: "Industry Leader, Influencer & Trusted Advisor",
-    text: "Denny connects brands, suppliers and markets across the global cleaning industry."
+    lead: "You Meet 500+ Suppliers At Every Trade Show.",
+    yet: "Yet You Fly Home With The Same Products You Saw Last Year."
   },
   {
-    icon: "target",
-    title: "Discover Opportunities Earlier",
-    text: "Identify emerging categories, market shifts and product opportunities before competitors."
+    lead: "You Spend 12 Months Developing A New Product.",
+    yet: "Yet A Better Product Is Already Ranking On Amazon Before You Even Launch."
   },
   {
-    icon: "dollar",
-    title: "Build Products With Better Margins",
-    text: "Create differentiated products with stronger pricing and healthier profitability."
+    lead: "Your Best-Selling Product Generated Profits For Years.",
+    yet: "Yet Today It's The Inventory That's Draining Your Cash Flow."
   },
   {
-    icon: "lightbulb",
-    title: "Know What To Build, Not Just What To Buy",
-    text: "Decide which products are worth building before buying from factories."
-  },
-  {
-    icon: "factory",
-    title: "Access The Factories Behind Leading Brands",
-    text: "Connect with manufacturers producing for leading cleaning brands."
-  },
-  {
-    icon: "wrench",
-    title: "Upgrade Products, Reduce Costs & Increase Competitiveness",
-    text: "Use better components, technologies and manufacturing innovation."
-  },
-  {
-    icon: "check",
-    title: "Reduce After-Sales Costs & Improve Customer Satisfaction",
-    text: "Build more reliable products and reduce costly returns."
-  },
-  {
-    icon: "rocket",
-    title: "Focus On Sales. We Handle The Rest.",
-    text: "Let your team focus on growth while execution is managed."
+    lead: "You Spend 20 Years Building Customer And Channel Relationships.",
+    yet: "Yet Your Biggest Customer Is Walking Into Your Competitor's Booth."
   }
-] satisfies { icon: IconName; title: string; text: string }[];
-
-const strategicReasons = reasons.slice(0, 4);
-const executionReasons = reasons.slice(4);
-
-const ctaPoints = [
-  "Discover where the next opportunity is emerging",
-  "Understand what leading brands are building",
-  "Access the factories behind successful products",
-  "Build products with higher margins and lower after-sales rates"
 ];
 
-const productCategories = [
+const industryChanges = [
+  [
+    "E-Commerce Will Win.",
+    "China Is Already There.",
+    "The Rest Of The World Is Just A Few Years Behind."
+  ],
+  [
+    "China Is The New Innovation Center.",
+    "If You Don't Have R&D And Sourcing In China,",
+    "You Will Fall Behind."
+  ],
+  [
+    "Speed Will Beat Size.",
+    "The Fastest Brands Will Win.",
+    "Not Necessarily The Biggest Ones."
+  ],
+  [
+    "The Biggest Growth Story Hasn't Happened Yet.",
+    "$40 Billion Today.",
+    "$140 Billion In The Next Decade."
+  ],
+  [
+    "The Next Industry Giants Haven't Been Built Yet.",
+    "The Biggest Winners Of The Next 10 Years",
+    "May Not Exist Today."
+  ]
+];
+
+const opportunities = [
   {
     title: "Robotic Vacuums",
-    text: "Smart cleaning robots, docking systems and product upgrade opportunities.",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=900&auto=format&fit=crop"
+    text: "The Category That Started The Smart Cleaning Revolution."
   },
   {
     title: "Floor Washers",
-    text: "Wet dry floor cleaners, floor care systems and household cleaning innovation.",
-    image:
-      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=900&auto=format&fit=crop"
+    text: "One Of China's Fastest Growing Cleaning Categories. Now Expanding Globally."
   },
   {
     title: "Pool Cleaning Robots",
-    text: "Cordless pool cleaners, robotic pool systems and seasonal category opportunities.",
-    image:
-      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=900&auto=format&fit=crop"
+    text: "Still Early. Growing Fast."
   },
   {
-    title: "Robotic Lawn Mowers",
-    text: "Outdoor robotic products, navigation upgrades and emerging channel signals.",
-    image:
-      "https://images.unsplash.com/photo-1599686302990-d6a59e0d1f6c?q=80&w=900&auto=format&fit=crop"
+    title: "Lawn Robots",
+    text: "The Next Major Outdoor Robotics Category."
   },
   {
-    title: "Commercial Cleaning Equipment",
-    text: "Floor scrubbers, professional vacuums and equipment for facility operations.",
-    image:
-      "https://source.unsplash.com/INDGbj_ojG4/900x520"
+    title: "Commercial Cleaning Automation",
+    text: "A Multi-Billion Dollar Market Just Beginning To Transform."
   },
   {
-    title: "Cleaning Chemicals",
-    text: "Category positioning, private label paths and supplier-side formulation context.",
-    image:
-      "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=900&auto=format&fit=crop"
-  },
-  {
-    title: "Private Label Opportunities",
-    text: "OEM, ODM and brand-ready product directions for specific market needs.",
-    image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&auto=format&fit=crop"
-  },
-  {
-    title: "Emerging Categories",
-    text: "New cleaning technologies, product shifts and opportunities before they become obvious.",
-    image:
-      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=900&auto=format&fit=crop"
+    title: "What's Next?",
+    text: "The Opportunities Most Companies Haven't Seen Yet."
   }
+];
+
+const dennyValues = [
+  {
+    title: "See Opportunities Earlier.",
+    text: "Before They Become Crowded."
+  },
+  {
+    title: "Understand Market Direction.",
+    text: "Before Competitors Do."
+  },
+  {
+    title: "Access China's Best Innovation Ecosystem.",
+    text: "Without Building A Large Team."
+  },
+  {
+    title: "Avoid Expensive Product Mistakes.",
+    text: "Before They Become Inventory."
+  },
+  {
+    title: "Save Months Of Research.",
+    text: "And Years Of Trial And Error."
+  }
+];
+
+const aboutDenny = [
+  "20+ Years In The Cleaning Industry",
+  "9,000+ Industry Professionals",
+  "Industry Forums & Events",
+  "Global Cleaning Network",
+  "Founder Of World Clean Biz"
+];
+
+const finalPoints = [
+  "Discover Opportunities Earlier",
+  "Understand Market Changes Earlier",
+  "Build Better Products",
+  "Access The Right Partners"
 ];
 
 export default function SourcingPage() {
   return (
     <>
-      <section className="sourcing-compact-intro">
-        <div className="container sourcing-hero-grid">
-          <div>
+      <section className="sourcing-hero-final">
+        <div className="container">
+          <div className="sourcing-hero-panel">
             <p className="eyebrow">Sourcing</p>
-            <h1>Everyone Can Find Suppliers. Few Can Find The Next Amazon Best Seller.</h1>
-            <p>
-              Most companies don&apos;t need more suppliers. They need better opportunities.
-            </p>
-            <ul className="sourcing-pain-list">
-              {painPoints.map((point) => (
-                <li key={point}>{point}</li>
+            <h1>
+              You&apos;ve Been In The Industry For 20 Years.
+              <span>So Why Does It Feel Like You&apos;re Falling Behind?</span>
+            </h1>
+            <div className="sourcing-hero-card-grid">
+              {heroCards.map((item) => (
+                <div className="sourcing-hero-card" key={item.lead}>
+                  <p>{item.lead}</p>
+                  <strong>{item.yet}</strong>
+                </div>
               ))}
-            </ul>
-            <div className="sourcing-statement">
-              We don&apos;t help you source products. We help you make more money.
+            </div>
+            <div className="sourcing-core-message">
+              <span>We Don&apos;t Help You Source Products.</span>
+              <strong>We Help You Find The Next Growth Opportunity.</strong>
             </div>
             <div className="hero-actions">
               <Link className="button" href="/contact">
@@ -153,107 +148,94 @@ export default function SourcingPage() {
               </Link>
             </div>
           </div>
-          <div className="sourcing-opportunity-visual" aria-label="International trade show aisles and supplier booths">
-            <div className="sourcing-visual-caption">
-              <span>Trade Show Signal</span>
-              <strong>Too many suppliers. Too few obvious opportunities.</strong>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section-head sourcing-centered-head">
+            <div>
+              <p className="eyebrow">Industry Reality</p>
+              <h2>The Industry Already Changed.</h2>
+              <p>The Rules That Worked 10 Years Ago No Longer Work Today.</p>
             </div>
+          </div>
+          <div className="sourcing-change-grid">
+            {industryChanges.map((lines) => (
+              <div className="sourcing-change-card" key={lines[0]}>
+                {lines.map((line, index) =>
+                  index === 0 ? (
+                    <h3 key={line}>{line}</h3>
+                  ) : (
+                    <p key={line}>{line}</p>
+                  )
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="section section-soft">
-        <div className="container sourcing-denny-layout">
-          <div className="sourcing-denny-image" aria-label="Industry forum and business networking placeholder" />
-          <div className="sourcing-denny-copy">
-            <p className="eyebrow">Why Companies Work With Denny</p>
-            <h2>Denny Connects Products, Suppliers And Markets</h2>
-            <p>
-              Denny is one of the leading influencers and industry consultants
-              in the global cleaning industry.
-            </p>
-            <p>
-              For more than 20 years, he has connected manufacturers, brands,
-              distributors, retailers, suppliers and industry professionals
-              across the industry.
-            </p>
-            <p>
-              His value is not helping companies source products. His value is
-              helping companies discover opportunities, build stronger
-              products and create more profitable businesses.
-            </p>
-            <div className="sourcing-trust-row">
-              {trustMetrics.map((metric) => (
-                <span key={metric}>{metric}</span>
-              ))}
+        <div className="container">
+          <div className="section-head sourcing-centered-head">
+            <div>
+              <p className="eyebrow">Opportunity Map</p>
+              <h2>The Next $140 Billion Opportunity</h2>
+              <p>The Cleaning Industry Is Growing Faster Than Most People Realize.</p>
             </div>
+          </div>
+          <div className="sourcing-opportunity-map">
+            {opportunities.map((item) => (
+              <div className="sourcing-opportunity-card" key={item.title}>
+                <span />
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <div className="section-head">
+          <div className="section-head sourcing-centered-head">
             <div>
-              <p className="eyebrow">8 Reasons Companies Work With Denny</p>
-              <h2>Better products, stronger suppliers and clearer business direction</h2>
+              <p className="eyebrow">Why Denny</p>
+              <h2>Why Companies Work With Denny</h2>
               <p>
-                Denny helps companies move beyond factory comparison and focus
-                on product opportunities, margins, reliability and long-term
-                growth.
+                The value is not another supplier list. The value is knowing
+                which opportunity deserves attention before the market becomes crowded.
               </p>
             </div>
           </div>
-          <div className="sourcing-reason-block">
-            <div className="sourcing-reason-label">Strategic Advantages</div>
-            <div className="sourcing-reason-grid">
-              {strategicReasons.map((item) => (
-                <div className="case-card sourcing-reason-card" key={item.title}>
-                  <IconBadge name={item.icon} />
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="sourcing-reason-block">
-            <div className="sourcing-reason-label">Execution Advantages</div>
-            <div className="sourcing-reason-grid">
-              {executionReasons.map((item, index) => (
-                <div className={`case-card sourcing-reason-card sourcing-execution-card sourcing-execution-card-${index + 1}`} key={item.title}>
-                  <IconBadge name={item.icon} />
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              ))}
-            </div>
+          <div className="sourcing-denny-value-grid">
+            {dennyValues.map((item) => (
+              <div className="case-card sourcing-denny-value-card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="section section-soft">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Product Categories</p>
-              <h2>Explore Product Opportunities</h2>
-              <p>
-                Discover products and opportunities across the global cleaning
-                industry.
-              </p>
+        <div className="container sourcing-denny-layout">
+          <div className="sourcing-denny-image" aria-label="Industry forum and trade show discussion placeholder" />
+          <div className="sourcing-denny-copy">
+            <p className="eyebrow">About Denny</p>
+            <h2>Denny You</h2>
+            <p>
+              Denny has spent more than 20 years inside the global cleaning
+              industry, connecting brands, factories, distributors and product
+              innovators across China and overseas markets.
+            </p>
+            <div className="sourcing-about-list">
+              {aboutDenny.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
             </div>
-          </div>
-          <div className="sourcing-category-grid">
-            {productCategories.map((item) => (
-              <Link className="sourcing-category-card" href="/contact" key={item.title}>
-                <img src={item.image} alt={`${item.title} category`} />
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                  <strong>Discuss category →</strong>
-                </div>
-              </Link>
-            ))}
           </div>
         </div>
       </section>
@@ -261,21 +243,27 @@ export default function SourcingPage() {
       <section className="section">
         <div className="container cta-band sourcing-final-cta">
           <div>
-            <p className="eyebrow">Discuss Your Project</p>
-            <h2>Looking For The Next Best Seller?</h2>
+            <p className="eyebrow">Talk With Denny</p>
+            <h2>The Industry Is Moving Faster Than Ever.</h2>
+            <p>
+              The question is simple. Will you see the next opportunity before
+              everyone else?
+            </p>
             <ul className="sourcing-cta-list">
-              {ctaPoints.map((point) => (
+              {finalPoints.map((point) => (
                 <li key={point}>{point}</li>
               ))}
             </ul>
+          </div>
+          <div>
             <strong className="sourcing-outcome">
               More Opportunities. More Profit. Less Guesswork.
             </strong>
-          </div>
-          <div className="hero-actions">
-            <Link className="button" href="/contact">
-              Talk With Denny
-            </Link>
+            <div className="hero-actions">
+              <Link className="button" href="/contact">
+                Talk With Denny
+              </Link>
+            </div>
           </div>
         </div>
       </section>
