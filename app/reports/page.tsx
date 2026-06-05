@@ -15,38 +15,57 @@ const metrics = [
 
 const insideItems = [
   {
+    label: "Report Includes",
     title: "Product Opportunities",
     text: "The categories attracting the most attention and investment.",
     points: ["Pool Cleaning Robots", "Lawn Robots", "Commercial Cleaning"]
   },
   {
+    label: "Market Coverage",
     title: "Market Trends",
     text: "Where global demand is moving and why.",
     points: ["US Market", "Europe Market", "Emerging Regions"]
   },
   {
+    label: "Sourcing Context",
     title: "Supplier Signals",
     text: "Manufacturing and sourcing shifts worth watching.",
     points: ["Manufacturing Shifts", "ODM Landscape", "Cost Trends"]
   },
   {
+    label: "Competitive View",
     title: "Brand Landscape",
     text: "Which brands are gaining momentum across markets.",
     points: ["Leading Brands", "Fast Growing Brands", "New Entrants"]
   }
 ];
 
+const previewPages = [
+  {
+    title: "Market Map Preview",
+    text: "Category movement and opportunity signals across cleaning segments."
+  },
+  {
+    title: "Brand Landscape Preview",
+    text: "A view of established brands, fast movers and new entrants."
+  },
+  {
+    title: "Supplier Signals Preview",
+    text: "Manufacturing, ODM and sourcing shifts worth watching."
+  }
+];
+
 const comingSoonReports = [
-  "Pool Robots Outlook",
-  "Lawn Robots Outlook",
-  "Robot Vacuums Outlook",
-  "Supplier Guide"
+  { title: "Pool Robots Outlook", expected: "Q3 2026" },
+  { title: "Lawn Robots Outlook", expected: "Q3 2026" },
+  { title: "Robot Vacuums Outlook", expected: "Q4 2026" },
+  { title: "Supplier Guide", expected: "Q4 2026" }
 ];
 
 export default function ReportsPage() {
   return (
     <main className="reports-page reports-v1-page">
-      <section className="reports-v1-hero">
+      <section className="reports-v1-hero" id="top">
         <div className="reports-container reports-v1-hero-grid">
           <div className="reports-v1-hero-copy">
             <p className="reports-kicker">Global Cleaning Industry</p>
@@ -111,9 +130,9 @@ export default function ReportsPage() {
             <h2>20 Years In The Cleaning Industry</h2>
           </div>
           <ul>
-            <li>Organizer of World Clean Expo</li>
-            <li>Industry Researcher & Analyst</li>
-            <li>Connected with suppliers, brands and manufacturers</li>
+            <li>9000+ Industry Professionals Connected</li>
+            <li>1000+ Suppliers Covered</li>
+            <li>300+ Brands Monitored</li>
           </ul>
         </div>
       </section>
@@ -128,6 +147,7 @@ export default function ReportsPage() {
             {insideItems.map((item, index) => (
               <article key={item.title}>
                 <span>{String(index + 1).padStart(2, "0")}</span>
+                <small>{item.label}</small>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
                 <ul>
@@ -144,39 +164,44 @@ export default function ReportsPage() {
         </div>
       </section>
 
+      <section className="reports-v1-section reports-v2-preview-section">
+        <div className="reports-container">
+          <div className="reports-v1-section-head reports-v1-section-head-row">
+            <div>
+              <p className="reports-kicker">Report Preview</p>
+              <h2>Preview The Report</h2>
+            </div>
+            <p>
+              A quick look at selected preview pages from the report before
+              you unlock the full download.
+            </p>
+          </div>
+          <div className="reports-v2-preview-grid">
+            {previewPages.map((page, index) => (
+              <article key={page.title}>
+                <div>
+                  <span>Preview {String(index + 1).padStart(2, "0")}</span>
+                  <strong>{page.title}</strong>
+                  <p>{page.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="reports-v1-section reports-v1-lead-section" id="get-report">
         <div className="reports-container reports-v1-lead-band">
           <div>
             <p className="reports-kicker">Ready To Download?</p>
             <h2>Unlock the free report by email.</h2>
             <p>
-              Enter your details and receive the report download link by email.
+              Enter your email above to receive the report instantly.
             </p>
           </div>
-          <form className="reports-v1-lead-form">
-            <label>
-              Name
-              <input name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input
-                name="email"
-                placeholder="name@company.com"
-                required
-                type="email"
-              />
-            </label>
-            <label>
-              Company
-              <input name="company" placeholder="Company name" />
-            </label>
-            <label>
-              Country
-              <input name="country" placeholder="Country or region" />
-            </label>
-            <button type="submit">Unlock Free Report</button>
-          </form>
+          <Link className="reports-v1-inline-cta reports-v2-back-cta" href="#top">
+            Back To Download
+          </Link>
         </div>
       </section>
 
@@ -188,18 +213,33 @@ export default function ReportsPage() {
               <h2>Upcoming Intelligence Briefs</h2>
             </div>
             <p>
-              Get the 2026 report first, then receive future updates as new
-              category reports are released.
+              Download today&apos;s report and automatically receive future
+              reports as they are released.
             </p>
           </div>
           <div className="reports-v1-coming-grid">
             {comingSoonReports.map((report) => (
-              <article key={report}>
-                <h3>{report}</h3>
+              <article key={report.title}>
+                <h3>{report.title}</h3>
                 <span>Coming Next</span>
+                <p>
+                  Expected:
+                  <strong>{report.expected}</strong>
+                </p>
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="reports-v2-final-cta">
+        <div className="reports-container">
+          <h2>Stay Ahead Of The Industry</h2>
+          <p>
+            Join industry professionals receiving market intelligence, supplier
+            signals and future reports.
+          </p>
+          <Link href="#top">Unlock Free Report</Link>
         </div>
       </section>
     </main>
