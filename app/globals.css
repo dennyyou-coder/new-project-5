@@ -10293,26 +10293,18 @@ h3 {
   gap: 18px;
 }
 
-.reports-v2-preview-grid article {
+.reports-v2-preview-card {
   min-height: 330px;
   border: 1px solid #D8E5F3;
   border-radius: 8px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.96)),
-    repeating-linear-gradient(
-      180deg,
-      rgba(15, 23, 42, 0.12) 0,
-      rgba(15, 23, 42, 0.12) 1px,
-      transparent 1px,
-      transparent 18px
-    ),
-    #FFFFFF;
+  background: #FFFFFF;
   padding: 18px;
   box-shadow: 0 18px 42px rgba(15, 23, 42, 0.07);
   overflow: hidden;
 }
 
-.reports-v2-preview-grid article > div {
+.reports-v2-preview-card > div {
+  position: relative;
   min-height: 294px;
   display: flex;
   flex-direction: column;
@@ -10320,11 +10312,59 @@ h3 {
   border: 1px solid rgba(216, 229, 243, 0.88);
   border-radius: 6px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(15, 23, 42, 0.82)),
-    linear-gradient(135deg, rgba(37, 99, 235, 0.22), rgba(255, 255, 255, 0.18));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(15, 23, 42, 0.86)),
+    linear-gradient(135deg, rgba(37, 99, 235, 0.24), rgba(255, 255, 255, 0.18)),
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0,
+      rgba(255, 255, 255, 0.18) 1px,
+      transparent 1px,
+      transparent 18px
+    );
   padding: 22px;
   color: #FFFFFF;
   filter: saturate(0.92);
+  overflow: hidden;
+}
+
+.reports-v2-preview-card > div::before {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  left: 18px;
+  height: 112px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 18%, transparent 18% 23%, rgba(255, 255, 255, 0.22) 23% 44%, transparent 44% 50%, rgba(255, 255, 255, 0.18) 50% 72%, transparent 72%),
+    rgba(255, 255, 255, 0.08);
+  content: "";
+  opacity: 0.72;
+}
+
+.reports-v2-preview-card > div::after {
+  position: absolute;
+  top: 120px;
+  right: -26px;
+  color: rgba(255, 255, 255, 0.13);
+  content: "PREVIEW";
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: 0;
+  transform: rotate(-18deg);
+}
+
+.reports-v2-preview-chart > div::before {
+  background:
+    linear-gradient(180deg, transparent 0 22%, rgba(255, 255, 255, 0.18) 22% 24%, transparent 24% 48%, rgba(255, 255, 255, 0.18) 48% 50%, transparent 50%),
+    linear-gradient(90deg, transparent 0 8%, rgba(255, 255, 255, 0.34) 8% 22%, transparent 22% 28%, rgba(255, 255, 255, 0.26) 28% 48%, transparent 48% 54%, rgba(255, 255, 255, 0.2) 54% 78%, transparent 78%);
+}
+
+.reports-v2-preview-table > div::before {
+  background:
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 28px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.16) 0, rgba(255, 255, 255, 0.16) 1px, transparent 1px, transparent 33%),
+    rgba(255, 255, 255, 0.08);
 }
 
 .reports-v2-preview-grid span {
@@ -10335,6 +10375,17 @@ h3 {
   padding: 6px 9px;
   color: rgba(255, 255, 255, 0.84);
   font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.reports-v2-preview-grid i {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 11px;
+  font-style: normal;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -10351,6 +10402,22 @@ h3 {
   line-height: 1.5;
 }
 
+.reports-v2-preview-grid ul {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reports-v2-preview-grid li {
+  border-top: 1px solid rgba(255, 255, 255, 0.17);
+  padding-top: 6px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .reports-v2-back-cta {
   align-self: center;
 }
@@ -10360,6 +10427,10 @@ h3 {
   padding: 72px 0;
   color: #FFFFFF;
   text-align: center;
+}
+
+.reports-v2-final-cta .reports-kicker {
+  color: #8BB5FF;
 }
 
 .reports-v2-final-cta h2 {
@@ -10391,6 +10462,14 @@ h3 {
   padding: 0 24px;
   font-size: 14px;
   font-weight: 900;
+}
+
+.reports-v2-final-cta small {
+  display: block;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 13px;
+  font-weight: 800;
 }
 
 @media (max-width: 980px) {

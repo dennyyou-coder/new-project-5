@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 };
 
 const metrics = [
-  { value: "20+", label: "Years Experience" },
-  { value: "1000+", label: "Suppliers Tracked" },
-  { value: "300+", label: "Brands Monitored" }
+  { value: "01", label: "Product Opportunities" },
+  { value: "02", label: "Market Trends" },
+  { value: "03", label: "Supplier Signals" }
 ];
 
 const insideItems = [
@@ -43,15 +43,21 @@ const insideItems = [
 const previewPages = [
   {
     title: "Market Map Preview",
-    text: "Category movement and opportunity signals across cleaning segments."
+    text: "Category movement and opportunity signals across cleaning segments.",
+    type: "map",
+    rows: ["Robotic Cleaning", "Outdoor Automation", "Commercial Equipment"]
   },
   {
     title: "Brand Landscape Preview",
-    text: "A view of established brands, fast movers and new entrants."
+    text: "A view of established brands, fast movers and new entrants.",
+    type: "chart",
+    rows: ["Established Leaders", "Fast Growing Brands", "New Entrants"]
   },
   {
     title: "Supplier Signals Preview",
-    text: "Manufacturing, ODM and sourcing shifts worth watching."
+    text: "Manufacturing, ODM and sourcing shifts worth watching.",
+    type: "table",
+    rows: ["Manufacturing Shifts", "ODM Landscape", "Cost Trends"]
   }
 ];
 
@@ -101,7 +107,7 @@ export default function ReportsPage() {
           <div className="reports-v1-cover-wrap">
             <article className="reports-v1-cover" aria-label="2026 Global Cleaning Industry Report cover">
               <img
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=900&auto=format&fit=crop"
+                src="/images/sourcing/commercial-cleaning.png"
                 alt=""
               />
               <div>
@@ -178,30 +184,21 @@ export default function ReportsPage() {
           </div>
           <div className="reports-v2-preview-grid">
             {previewPages.map((page, index) => (
-              <article key={page.title}>
+              <article className={`reports-v2-preview-card reports-v2-preview-${page.type}`} key={page.title}>
                 <div>
                   <span>Preview {String(index + 1).padStart(2, "0")}</span>
+                  <i aria-hidden="true">World Clean Biz Preview</i>
                   <strong>{page.title}</strong>
                   <p>{page.text}</p>
+                  <ul>
+                    {page.rows.map((row) => (
+                      <li key={row}>{row}</li>
+                    ))}
+                  </ul>
                 </div>
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="reports-v1-section reports-v1-lead-section" id="get-report">
-        <div className="reports-container reports-v1-lead-band">
-          <div>
-            <p className="reports-kicker">Ready To Download?</p>
-            <h2>Unlock the free report by email.</h2>
-            <p>
-              Enter your email above to receive the report instantly.
-            </p>
-          </div>
-          <Link className="reports-v1-inline-cta reports-v2-back-cta" href="#top">
-            Back To Download
-          </Link>
         </div>
       </section>
 
@@ -213,8 +210,10 @@ export default function ReportsPage() {
               <h2>Upcoming Intelligence Briefs</h2>
             </div>
             <p>
-              Download today&apos;s report and automatically receive future
-              reports as they are released.
+              Download the 2026 report today and join our industry intelligence list.
+              <br />
+              You will automatically receive future reports, category outlooks,
+              supplier guides and market updates as they are released.
             </p>
           </div>
           <div className="reports-v1-coming-grid">
@@ -233,13 +232,15 @@ export default function ReportsPage() {
       </section>
 
       <section className="reports-v2-final-cta">
-        <div className="reports-container">
-          <h2>Stay Ahead Of The Industry</h2>
+        <div className="reports-container" id="get-report">
+          <p className="reports-kicker">Ready To Download?</p>
+          <h2>Unlock the full report by email.</h2>
           <p>
-            Join industry professionals receiving market intelligence, supplier
-            signals and future reports.
+            Enter your work email to receive the download link and future
+            cleaning industry intelligence updates.
           </p>
-          <Link href="#top">Unlock Free Report</Link>
+          <Link href="#top">Unlock The Full Report</Link>
+          <small>Free PDF / No spam / Industry updates only</small>
         </div>
       </section>
     </main>
