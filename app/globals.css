@@ -10013,6 +10013,65 @@ h3 {
   font-weight: 900;
 }
 
+.reports-v1-author-section {
+  border-bottom: 1px solid #D8E5F3;
+  background: #FFFFFF;
+  padding: 24px 0;
+}
+
+.reports-v1-author-strip {
+  display: grid;
+  grid-template-columns: auto minmax(0, 0.72fr) minmax(360px, 1fr);
+  gap: 22px;
+  align-items: center;
+  border: 1px solid #D8E5F3;
+  border-radius: 8px;
+  background: #FFFFFF;
+  padding: 20px;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.05);
+}
+
+.reports-v1-author-mark {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #2563EB;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.reports-v1-author-strip h2 {
+  margin: 0;
+  color: #0F172A;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.reports-v1-author-strip .reports-kicker {
+  margin-bottom: 8px;
+}
+
+.reports-v1-author-strip ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reports-v1-author-strip li {
+  border-left: 1px solid #D8E5F3;
+  padding: 0 16px;
+  color: #52677D;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
 .reports-v1-section {
   border-bottom: 1px solid #D8E5F3;
   background: #FFFFFF;
@@ -10061,7 +10120,7 @@ h3 {
 }
 
 .reports-v1-inside-grid article {
-  min-height: 230px;
+  min-height: 320px;
   border-right: 1px solid #D8E5F3;
   padding: 24px 22px 8px 0;
 }
@@ -10090,6 +10149,22 @@ h3 {
   margin: 12px 0 0;
   color: #52677D;
   line-height: 1.6;
+}
+
+.reports-v1-inside-grid ul {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reports-v1-inside-grid li {
+  border-top: 1px solid #D8E5F3;
+  padding-top: 8px;
+  color: #0F172A;
+  font-size: 14px;
+  font-weight: 900;
 }
 
 .reports-v1-inline-cta {
@@ -10182,9 +10257,26 @@ h3 {
 
 @media (max-width: 980px) {
   .reports-v1-hero-grid,
+  .reports-v1-author-strip,
   .reports-v1-section-head-row,
   .reports-v1-lead-band {
     grid-template-columns: 1fr;
+  }
+
+  .reports-v1-author-strip ul {
+    grid-template-columns: 1fr;
+    border-top: 1px solid #D8E5F3;
+    padding-top: 14px;
+  }
+
+  .reports-v1-author-strip li {
+    border-left: 0;
+    border-bottom: 1px solid #D8E5F3;
+    padding: 10px 0;
+  }
+
+  .reports-v1-author-strip li:last-child {
+    border-bottom: 0;
   }
 
   .reports-v1-cover-wrap {

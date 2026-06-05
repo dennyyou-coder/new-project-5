@@ -16,34 +16,23 @@ const metrics = [
 const insideItems = [
   {
     title: "Product Opportunities",
-    text: "The categories attracting the most attention and investment."
+    text: "The categories attracting the most attention and investment.",
+    points: ["Pool Cleaning Robots", "Lawn Robots", "Commercial Cleaning"]
   },
   {
     title: "Market Trends",
-    text: "Where global demand is moving and why."
+    text: "Where global demand is moving and why.",
+    points: ["US Market", "Europe Market", "Emerging Regions"]
   },
   {
     title: "Supplier Signals",
-    text: "Manufacturing and sourcing shifts worth watching."
+    text: "Manufacturing and sourcing shifts worth watching.",
+    points: ["Manufacturing Shifts", "ODM Landscape", "Cost Trends"]
   },
   {
     title: "Brand Landscape",
-    text: "Which brands are gaining momentum across markets."
-  }
-];
-
-const matterItems = [
-  {
-    title: "See Opportunities Earlier",
-    text: "Spot emerging categories before they become crowded."
-  },
-  {
-    title: "Make Better Decisions",
-    text: "Use industry signals instead of assumptions."
-  },
-  {
-    title: "Stay Ahead",
-    text: "Understand where the market is moving next."
+    text: "Which brands are gaining momentum across markets.",
+    points: ["Leading Brands", "Fast Growing Brands", "New Entrants"]
   }
 ];
 
@@ -112,6 +101,23 @@ export default function ReportsPage() {
         </div>
       </section>
 
+      <section className="reports-v1-author-section">
+        <div className="reports-container reports-v1-author-strip">
+          <div className="reports-v1-author-mark" aria-hidden="true">
+            DY
+          </div>
+          <div>
+            <p className="reports-kicker">Compiled by Denny You</p>
+            <h2>20 Years In The Cleaning Industry</h2>
+          </div>
+          <ul>
+            <li>Organizer of World Clean Expo</li>
+            <li>Industry Researcher & Analyst</li>
+            <li>Connected with suppliers, brands and manufacturers</li>
+          </ul>
+        </div>
+      </section>
+
       <section className="reports-v1-section">
         <div className="reports-container">
           <div className="reports-v1-section-head">
@@ -124,6 +130,11 @@ export default function ReportsPage() {
                 <span>{String(index + 1).padStart(2, "0")}</span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
+                <ul>
+                  {item.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>
@@ -133,54 +144,13 @@ export default function ReportsPage() {
         </div>
       </section>
 
-      <section className="reports-v1-section reports-v1-soft">
-        <div className="reports-container">
-          <div className="reports-v1-section-head">
-            <p className="reports-kicker">Why It Matters</p>
-            <h2>Why It Matters</h2>
-          </div>
-          <div className="reports-v1-matter-grid">
-            {matterItems.map((item) => (
-              <article key={item.title}>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="reports-v1-section">
-        <div className="reports-container">
-          <div className="reports-v1-section-head reports-v1-section-head-row">
-            <div>
-              <p className="reports-kicker">Coming Soon</p>
-              <h2>Upcoming Intelligence Briefs</h2>
-            </div>
-            <p>
-              Get the 2026 report first, then receive future updates as new
-              category reports are released.
-            </p>
-          </div>
-          <div className="reports-v1-coming-grid">
-            {comingSoonReports.map((report) => (
-              <article key={report}>
-                <h3>{report}</h3>
-                <span>Coming Next</span>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="reports-v1-section reports-v1-lead-section" id="get-report">
         <div className="reports-container reports-v1-lead-band">
           <div>
-            <p className="reports-kicker">Get The Report</p>
-            <h2>Get The Report</h2>
+            <p className="reports-kicker">Ready To Download?</p>
+            <h2>Unlock the free report by email.</h2>
             <p>
-              Join industry professionals receiving exclusive reports and
-              future updates from World Clean Biz.
+              Enter your details and receive the report download link by email.
             </p>
           </div>
           <form className="reports-v1-lead-form">
@@ -207,6 +177,29 @@ export default function ReportsPage() {
             </label>
             <button type="submit">Unlock Free Report</button>
           </form>
+        </div>
+      </section>
+
+      <section className="reports-v1-section">
+        <div className="reports-container">
+          <div className="reports-v1-section-head reports-v1-section-head-row">
+            <div>
+              <p className="reports-kicker">Coming Soon</p>
+              <h2>Upcoming Intelligence Briefs</h2>
+            </div>
+            <p>
+              Get the 2026 report first, then receive future updates as new
+              category reports are released.
+            </p>
+          </div>
+          <div className="reports-v1-coming-grid">
+            {comingSoonReports.map((report) => (
+              <article key={report}>
+                <h3>{report}</h3>
+                <span>Coming Next</span>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </main>
