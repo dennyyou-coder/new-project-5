@@ -1,0 +1,207 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "2026 Global Cleaning Industry Report",
+  description:
+    "Get early insights on product opportunities, market trends, supplier signals and the future of the global cleaning industry."
+};
+
+const metrics = [
+  { value: "20+", label: "Years Experience" },
+  { value: "1000+", label: "Suppliers Tracked" },
+  { value: "300+", label: "Brands Monitored" }
+];
+
+const insideItems = [
+  {
+    title: "Product Opportunities",
+    text: "The categories attracting the most attention and investment."
+  },
+  {
+    title: "Market Trends",
+    text: "Where global demand is moving and why."
+  },
+  {
+    title: "Supplier Signals",
+    text: "Manufacturing and sourcing shifts worth watching."
+  },
+  {
+    title: "Brand Landscape",
+    text: "Which brands are gaining momentum across markets."
+  }
+];
+
+const matterItems = [
+  {
+    title: "See Opportunities Earlier",
+    text: "Spot emerging categories before they become crowded."
+  },
+  {
+    title: "Make Better Decisions",
+    text: "Use industry signals instead of assumptions."
+  },
+  {
+    title: "Stay Ahead",
+    text: "Understand where the market is moving next."
+  }
+];
+
+const comingSoonReports = [
+  "Pool Robots Outlook",
+  "Lawn Robots Outlook",
+  "Robot Vacuums Outlook",
+  "Supplier Guide"
+];
+
+export default function ReportsPage() {
+  return (
+    <main className="reports-page reports-v1-page">
+      <section className="reports-v1-hero">
+        <div className="reports-container reports-v1-hero-grid">
+          <div className="reports-v1-hero-copy">
+            <p className="reports-kicker">Global Cleaning Industry</p>
+            <h1>2026 Global Cleaning Industry Report</h1>
+            <p>
+              Get early insights on product opportunities, market trends,
+              supplier signals, and the future of the global cleaning industry.
+            </p>
+            <div className="reports-v1-metrics" aria-label="Report credibility">
+              {metrics.map((item) => (
+                <span key={item.label}>
+                  <strong>{item.value}</strong>
+                  {item.label}
+                </span>
+              ))}
+            </div>
+            <form className="reports-v1-hero-form">
+              <label htmlFor="reports-v1-email">Email address</label>
+              <div>
+                <input
+                  id="reports-v1-email"
+                  name="email"
+                  placeholder="name@company.com"
+                  required
+                  type="email"
+                />
+                <button type="submit">Get Free Access</button>
+              </div>
+            </form>
+          </div>
+
+          <div className="reports-v1-cover-wrap">
+            <article className="reports-v1-cover" aria-label="2026 Global Cleaning Industry Report cover">
+              <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=900&auto=format&fit=crop"
+                alt=""
+              />
+              <div>
+                <span>World Clean Biz</span>
+                <strong>2026 Global Cleaning Industry Report</strong>
+                <small>Product Opportunities / Market Trends / Supplier Signals</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="reports-v1-section">
+        <div className="reports-container">
+          <div className="reports-v1-section-head">
+            <p className="reports-kicker">Inside The Report</p>
+            <h2>What&apos;s Inside The Report</h2>
+          </div>
+          <div className="reports-v1-inside-grid">
+            {insideItems.map((item, index) => (
+              <article key={item.title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+          <Link className="reports-v1-inline-cta" href="#get-report">
+            Get Access
+          </Link>
+        </div>
+      </section>
+
+      <section className="reports-v1-section reports-v1-soft">
+        <div className="reports-container">
+          <div className="reports-v1-section-head">
+            <p className="reports-kicker">Why It Matters</p>
+            <h2>Why It Matters</h2>
+          </div>
+          <div className="reports-v1-matter-grid">
+            {matterItems.map((item) => (
+              <article key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="reports-v1-section">
+        <div className="reports-container">
+          <div className="reports-v1-section-head reports-v1-section-head-row">
+            <div>
+              <p className="reports-kicker">Coming Soon</p>
+              <h2>More Reports Coming Soon</h2>
+            </div>
+            <p>
+              Get the 2026 report first, then receive future updates as new
+              category reports are released.
+            </p>
+          </div>
+          <div className="reports-v1-coming-grid">
+            {comingSoonReports.map((report) => (
+              <article key={report}>
+                <h3>{report}</h3>
+                <span>Coming Soon</span>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="reports-v1-section reports-v1-lead-section" id="get-report">
+        <div className="reports-container reports-v1-lead-band">
+          <div>
+            <p className="reports-kicker">Get The Report</p>
+            <h2>Get The Report</h2>
+            <p>
+              Join industry professionals receiving exclusive reports and
+              future updates from World Clean Biz.
+            </p>
+          </div>
+          <form className="reports-v1-lead-form">
+            <label>
+              Name
+              <input name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input
+                name="email"
+                placeholder="name@company.com"
+                required
+                type="email"
+              />
+            </label>
+            <label>
+              Company
+              <input name="company" placeholder="Company name" />
+            </label>
+            <label>
+              Country
+              <input name="country" placeholder="Country or region" />
+            </label>
+            <button type="submit">Send Me The Report</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  );
+}

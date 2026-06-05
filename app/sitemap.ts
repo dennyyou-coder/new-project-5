@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/insights",
     "/sourcing",
-    "/market-reports",
+    "/reports",
     "/world-clean-expo",
     "/about",
     "/contact"
