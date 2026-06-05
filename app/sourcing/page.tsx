@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { InlineIcon, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Sourcing",
@@ -10,98 +11,130 @@ export const metadata: Metadata = {
 const heroCards = [
   {
     number: "01",
-    lead: "You Meet 500+ Suppliers At Every Trade Show.",
+    lead: "Meet 500+ Suppliers At Every Trade Show.",
     yet: "Yet",
-    result: "You Fly Home With The Same Products You Saw Last Year."
+    result: "Fly Home With The Same Products You Saw Last Year."
   },
   {
     number: "02",
-    lead: "You Spend 12 Months Developing A New Product.",
+    lead: "Spend 12 Months Developing A New Product.",
     yet: "Yet",
     result: "A Better Product Is Already Ranking On Amazon Before You Even Launch."
   },
   {
     number: "03",
-    lead: "Your Best-Selling Product Generated Profits For Years.",
+    lead: "Best-Selling Product Generated Profits For Years.",
     yet: "Yet",
-    result: "Today It&apos;s The Inventory That&apos;s Draining Your Cash Flow."
+    result: "Today It's The Inventory That's Draining Your Cash Flow."
   },
   {
     number: "04",
-    lead: "You Spend 20 Years Building Customer And Channel Relationships.",
+    lead: "Spend 20 Years Building Customer And Channel Relationships.",
     yet: "Yet",
-    result: "Your Biggest Customer Is Walking Into Your Competitor&apos;s Booth."
+    result: "Your Biggest Customer Is Walking Into Your Competitor's Booth."
   }
 ];
 
 const industryChanges = [
   {
-    then: "One Winning Product Could Build A Business.",
-    today: "A Winning Product Can Become Inventory Within A Year."
+    then: "One winning product could build a business.",
+    today: "A winning product can become inventory within a year."
   },
   {
-    then: "Finding A Reliable Supplier Was The Advantage.",
+    then: "Finding a reliable supplier was the advantage.",
     today:
-      "Every Trade Show Has Hundreds Of Suppliers Selling Similar Products. The Advantage Is Finding What Others Haven&apos;t Seen Yet."
+      "Every trade show has hundreds of suppliers selling similar products. The advantage is finding what others haven&apos;t seen yet."
   },
   {
-    then: "Most Competitors Were Familiar.",
-    today: "A New Chinese Brand Can Reshape An Entire Category In Just A Few Years."
+    then: "Most competitors were familiar.",
+    today: "A new Chinese brand can reshape an entire category in just a few years."
   },
   {
-    then: "20 Years Of Experience Made You The Expert.",
-    today: "New Technologies Can Rewrite The Rules Overnight."
+    then: "20 years of experience made you the expert.",
+    today: "New technologies can rewrite the rules overnight."
   },
   {
-    then: "Following The Market Was A Safe Strategy.",
-    today: "By The Time The Market Sees A Trend, The Opportunity Is Already Gone."
+    then: "Following the market was a safe strategy.",
+    today: "By the time the market sees a trend, the opportunity is already gone."
   }
 ];
 
-const winnerSignals = [
-  "E-Commerce Will Win.",
-  "China Is Becoming The Innovation Center.",
-  "Speed Will Beat Size.",
-  "The Biggest Growth Story Hasn&apos;t Happened Yet.",
-  "The Next Industry Giants May Not Exist Today."
+const winnerSignals: { icon: IconName; title: string; description: string }[] = [
+  {
+    icon: "globe",
+    title: "E-commerce will win.",
+    description: "China is already there. The rest of the world is just a few years behind."
+  },
+  {
+    icon: "lightbulb",
+    title: "China is becoming the innovation center.",
+    description: "If you do not have R&D and sourcing in China, you will fall behind."
+  },
+  {
+    icon: "trending",
+    title: "Speed will beat size.",
+    description: "The fastest brands will win. Not necessarily the biggest ones."
+  },
+  {
+    icon: "bar-chart",
+    title: "The biggest growth story has not happened yet.",
+    description: "$40B today. $140B in the next decade."
+  },
+  {
+    icon: "users",
+    title: "The next industry giants may not exist today.",
+    description: "The biggest winners of the next 10 years may not exist today."
+  }
 ];
 
-const productOpportunities = [
+const productOpportunities: {
+  title: string;
+  description: string;
+  href: string;
+  icon: IconName;
+  image: string;
+}[] = [
   {
     title: "Pool Robots",
-    description: "Automation is moving from indoor cleaning into outdoor maintenance categories.",
+    description: "One of the fastest-growing cleaning categories globally. Premium positioning and strong international demand.",
     href: "/sourcing/pool-robots",
-    className: "sourcing-product-pool"
+    icon: "waves",
+    image: "/images/sourcing/pool-robots.png"
   },
   {
     title: "Lawn Robots",
-    description: "Outdoor robotics is becoming a new category frontier for cleaning-adjacent brands.",
+    description: "Potentially the largest opportunity of the next decade. Still early, with rapid adoption across Europe.",
     href: "/sourcing/lawn-robots",
-    className: "sourcing-product-lawn"
+    icon: "sparkles",
+    image: "/images/sourcing/lawn-robots.png"
   },
   {
     title: "Floor Washers",
-    description: "Floor care is shifting toward wet cleaning, smarter formats and faster replacement cycles.",
+    description: "Already transformed China. Global growth is only beginning across home and commercial formats.",
     href: "/sourcing/floor-washers",
-    className: "sourcing-product-floor"
+    icon: "wind",
+    image: "/images/sourcing/floor-washers.png"
   },
   {
     title: "Robotic Vacuums",
-    description: "Home cleaning robotics continues to shape consumer expectations and retail competition.",
+    description: "Largest category. Fast innovation cycle. Global competition is intense and still evolving.",
     href: "/sourcing/robotic-vacuums",
-    className: "sourcing-product-robot"
+    icon: "target",
+    image: "/images/sourcing/robotic-vacuums.png"
   },
   {
     title: "Commercial Cleaning",
-    description: "Labor pressure and productivity needs are creating demand for commercial automation.",
+    description: "Automation is reshaping the industry as labor pressure creates demand for better productivity.",
     href: "/sourcing/commercial-cleaning",
-    className: "sourcing-product-commercial"
+    icon: "building",
+    image: "/images/sourcing/commercial-cleaning.png"
   },
   {
     title: "Vacuum Cleaners",
-    description: "A mature category is still being reshaped by channels, price pressure and product upgrades.",
+    description: "Mature category. Still evolving globally through channel pressure and product upgrades.",
     href: "/sourcing/vacuum-cleaners",
-    className: "sourcing-product-vacuum"
+    icon: "layers",
+    image: "/images/sourcing/vacuum-cleaners.png"
   }
 ];
 
@@ -112,7 +145,7 @@ const intelligenceSources = [
   },
   {
     label: "Understand Which Trends Actually Matter.",
-    detail: "And Ignore The Ones That Don&apos;t."
+    detail: "And Ignore The Ones That Don't."
   },
   {
     label: "Know Which Products Are Worth Building.",
@@ -128,131 +161,149 @@ const intelligenceSources = [
   }
 ];
 
-const finalPoints = [
-  "Discover Opportunities Earlier",
-  "Understand Market Changes Earlier",
-  "Build Better Products",
-  "Access The Right Partners"
+const signalSources: { icon: IconName; label: string }[] = [
+  { icon: "calendar", label: "20+ Years In The Industry" },
+  { icon: "calendar", label: "Trade Shows Worldwide" },
+  { icon: "users", label: "9,000+ Industry Professionals" },
+  { icon: "message", label: "Industry Forums" },
+  { icon: "factory", label: "Factory & Brand Connections" }
+];
+
+const finalPoints: { icon: IconName; title: string; description: string }[] = [
+  {
+    icon: "target",
+    title: "Discover Opportunities Earlier",
+    description: "Find what others overlook."
+  },
+  {
+    icon: "trending",
+    title: "Understand Market Changes Earlier",
+    description: "Stay ahead of the curve."
+  },
+  {
+    icon: "package",
+    title: "Build Better Products",
+    description: "Make smarter product decisions."
+  },
+  {
+    icon: "handshake",
+    title: "Access The Right Partners",
+    description: "Connect with the right factories and innovators."
+  }
 ];
 
 export default function SourcingPage() {
   return (
-    <>
-      <section className="sourcing-hero-final">
-        <div className="container">
-          <div className="sourcing-hero-layout">
-            <div className="sourcing-hero-panel">
-              <div>
-                <p className="eyebrow">Sourcing</p>
-                <h1>
-                  You&apos;ve Been In The Industry
-                  <span>For 20 Years.</span>
-                  <span>
-                    So Why Does It Feel Like
-                    <br />
-                    You&apos;re Falling Behind?
-                  </span>
-                </h1>
-                <p className="sourcing-hero-intro">
-                  Experience used to be your advantage.
-                  <span>But the industry has changed.</span>
-                </p>
-              </div>
-              <div className="sourcing-hero-card-grid">
-                {heroCards.map((item) => (
-                  <div className="sourcing-hero-card" key={item.lead}>
-                    <span>{item.number}</span>
-                    <p>{item.lead}</p>
-                    <em>{item.yet}</em>
-                    <strong dangerouslySetInnerHTML={{ __html: item.result }} />
-                  </div>
-                ))}
-              </div>
-              <div className="sourcing-hero-question">
-                <span>The Industry Already Changed.</span>
-                <strong>Did You?</strong>
-              </div>
-              <div className="sourcing-hero-bottom">
-                <Link className="button" href="/contact">
-                  Talk With Denny
-                </Link>
-              </div>
+    <main className="sourcing-v3-page">
+      <section className="sourcing-v3-hero">
+        <div className="sourcing-v3-container">
+          <div className="sourcing-v3-hero-copy">
+            <p className="sourcing-v3-kicker">Sourcing</p>
+            <h1>
+              You&apos;ve Been In The Industry
+              <span>For 20 Years.</span>
+              <strong>
+                So Why Does It Feel Like
+                <br />
+                You&apos;re Falling Behind?
+              </strong>
+            </h1>
+            <p className="sourcing-v3-hero-subcopy">
+              Experience used to be your advantage.
+              <span>But the industry has changed.</span>
+            </p>
+            <div className="sourcing-v3-hero-rows">
+              {heroCards.map((item) => (
+                <div className="sourcing-v3-hero-row" key={item.lead}>
+                  <span>{item.number}</span>
+                  <p>
+                    <strong>
+                      <span>You</span> {item.lead}
+                    </strong>
+                    <em>
+                      <span>{item.yet}</span>{" "}
+                      <span dangerouslySetInnerHTML={{ __html: item.result }} />
+                    </em>
+                  </p>
+                </div>
+              ))}
             </div>
+            <div className="sourcing-v3-hero-close">
+              <span>The Industry Already Changed.</span>
+              <strong>Did You?</strong>
+            </div>
+            <Link className="sourcing-v3-button" href="/contact">
+              Talk With Denny →
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="section sourcing-rule-section">
-        <div className="container">
-          <div className="sourcing-report-head">
-            <div>
-              <p className="eyebrow">Market Reality</p>
+      <section className="sourcing-v3-section sourcing-v3-reality">
+        <div className="sourcing-v3-container sourcing-v3-reality-grid">
+          <div className="sourcing-v3-change">
+            <div className="sourcing-v3-section-head">
+              <p className="sourcing-v3-kicker">Market Reality</p>
               <h2>The Industry Already Changed.</h2>
+              <p>
+                The Rules That Worked 10 Years Ago
+                <span>No Longer Work Today.</span>
+              </p>
             </div>
-            <p>
-              The Rules That Worked 10 Years Ago
-              <span>No Longer Work Today.</span>
-            </p>
-          </div>
-          <div className="sourcing-rule-table">
-            {industryChanges.map((item) => (
-              <div className="sourcing-rule-row" key={item.then}>
-                <div className="sourcing-old-rule">
+            <div className="sourcing-v3-change-list">
+              {industryChanges.map((item) => (
+                <div className="sourcing-v3-change-row" key={item.then}>
                   <div>
-                    <span>Then</span>
+                    <span>Before</span>
                     <strong>{item.then}</strong>
                   </div>
-                </div>
-                <div className="sourcing-rule-arrow">→</div>
-                <div className="sourcing-new-rule">
+                  <span aria-hidden="true">→</span>
                   <div>
-                    <span>Today</span>
+                    <span>After</span>
                     <strong dangerouslySetInnerHTML={{ __html: item.today }} />
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <div className="sourcing-report-quote">
-            <strong>
-              More Suppliers.
-              <span>More Products.</span>
-              <span>More Competition.</span>
-            </strong>
-            <p>
-              The Difference Is No Longer Access.
-              <span>The Difference Is Insight.</span>
-            </p>
-          </div>
-          <div className="sourcing-winners">
-            <p className="eyebrow">What The Winners Already Know</p>
+          <aside className="sourcing-v3-winners">
+            <div className="sourcing-v3-section-head">
+              <p className="sourcing-v3-kicker">What The Winners Already Know</p>
+              <h2>The companies that move first are already acting on these signals.</h2>
+            </div>
             <ul>
               {winnerSignals.map((item) => (
-                <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
+                <li key={item.title}>
+                  <InlineIcon name={item.icon} />
+                  <div>
+                    <strong>{item.title}</strong>
+                    <p>{item.description}</p>
+                  </div>
+                </li>
               ))}
             </ul>
-          </div>
+          </aside>
         </div>
       </section>
 
-      <section className="section sourcing-opportunity-section">
-        <div className="container">
-          <div className="sourcing-opportunity-head">
-            <div>
-              <p className="eyebrow">Opportunity Map</p>
-              <h2>The Next $140 Billion Product Opportunity</h2>
-              <p>
-                Not Every Category Will Win.
-                <span>These Are The Markets We Are Watching Closely.</span>
-              </p>
-            </div>
+      <section className="sourcing-v3-section sourcing-v3-opportunity">
+        <div className="sourcing-v3-container">
+          <div className="sourcing-v3-title-block">
+            <p className="sourcing-v3-kicker">Opportunity Map</p>
+            <h2>The Next $140 Billion Product Opportunity</h2>
+            <p>Not Every Category Will Win. These Are The Markets We Are Watching Closely.</p>
           </div>
-          <div className="sourcing-product-grid">
+          <div className="sourcing-v3-product-grid">
             {productOpportunities.map((item) => (
-              <Link className="sourcing-product-item" href={item.href} key={item.title}>
-                <span className={`sourcing-product-image ${item.className}`} aria-hidden="true" />
-                <span>
-                  <strong>{item.title}</strong>
+              <Link className="sourcing-v3-product-card" href={item.href} key={item.title}>
+                <span className="sourcing-v3-product-image">
+                  <img src={item.image} alt="" />
+                </span>
+                <span className="sourcing-v3-product-copy">
+                  <span>
+                    <InlineIcon name={item.icon} />
+                    <strong>{item.title}</strong>
+                  </span>
                   <em>{item.description}</em>
                   <span>Explore →</span>
                 </span>
@@ -262,41 +313,25 @@ export default function SourcingPage() {
         </div>
       </section>
 
-      <section className="section sourcing-denny-section">
-        <div className="container">
-          <div className="section-head sourcing-denny-head">
-            <div>
-              <p className="eyebrow">Why Denny Sees It Earlier</p>
-              <h2>Why Denny Sees It Earlier</h2>
+      <section className="sourcing-v3-section sourcing-v3-denny">
+        <div className="sourcing-v3-container">
+          <div className="sourcing-v3-denny-grid">
+            <div className="sourcing-v3-sources">
+              <p className="sourcing-v3-kicker">Why Denny Sees It Earlier</p>
+              <h2>Most Companies Need More Than Supplier Lists.</h2>
+              <p>They Need Better Judgement.</p>
+              <ul>
+                {signalSources.map((item) => (
+                  <li key={item.label}>
+                    <InlineIcon name={item.icon} />
+                    {item.label}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-          <div className="sourcing-denny-v2">
-            <div className="sourcing-denny-profile">
-              <div className="sourcing-denny-photo" aria-hidden="true" />
-              <strong>Denny You</strong>
-              <dl>
-                <div>
-                  <dt>20+ Years</dt>
-                  <dd>Inside The Global Cleaning Industry</dd>
-                </div>
-                <div>
-                  <dt>9,000+</dt>
-                  <dd>Industry Professionals</dd>
-                </div>
-                <div>
-                  <dt>Founder</dt>
-                  <dd>Of World Clean Biz</dd>
-                </div>
-              </dl>
-              <p>
-                Denny has spent more than 20 years inside the global cleaning
-                industry, connecting brands, factories, distributors and
-                innovators across China and overseas markets.
-              </p>
-            </div>
-            <div className="sourcing-denny-signals">
+            <div className="sourcing-v3-judgement-list">
               {intelligenceSources.map((item, index) => (
-                <div className="sourcing-denny-signal" key={item.label}>
+                <div className="sourcing-v3-judgement-row" key={item.label}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <div>
                     <h3>{item.label}</h3>
@@ -309,27 +344,31 @@ export default function SourcingPage() {
         </div>
       </section>
 
-      <section className="section sourcing-cta-section">
-        <div className="container cta-band sourcing-final-cta sourcing-action-cta">
-          <div>
-            <p className="eyebrow">Next Step</p>
+      <section className="sourcing-v3-cta">
+        <div className="sourcing-v3-container">
+          <p className="sourcing-v3-kicker">Next Step</p>
+          <div className="sourcing-v3-cta-head">
             <h2>
               The Next Industry Giant Is Being Built Right Now.
               <span>Will You Be Part Of It?</span>
             </h2>
-            <ul className="sourcing-cta-list">
-              {finalPoints.map((point) => (
-                <li key={point}>{point}</li>
-              ))}
-            </ul>
           </div>
-          <div>
-            <Link className="button" href="/contact">
-              Talk With Denny
-            </Link>
-          </div>
+          <ul>
+            {finalPoints.map((point) => (
+              <li key={point.title}>
+                <InlineIcon name={point.icon} />
+                <span>
+                  <strong>{point.title}</strong>
+                  <em>{point.description}</em>
+                </span>
+              </li>
+            ))}
+          </ul>
+          <Link className="sourcing-v3-button" href="/contact">
+            Talk With Denny →
+          </Link>
         </div>
       </section>
-    </>
+    </main>
   );
 }
