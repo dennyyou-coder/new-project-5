@@ -84,8 +84,9 @@ export default function ReportsPage() {
                   required
                   type="email"
                 />
-                <button type="submit">Get Free Access</button>
+                <button type="submit">Unlock Free Report</button>
               </div>
+              <p>Enter your email to receive the download link.</p>
             </form>
           </div>
 
@@ -96,9 +97,15 @@ export default function ReportsPage() {
                 alt=""
               />
               <div>
-                <span>World Clean Biz</span>
+                <span>PDF Report</span>
                 <strong>2026 Global Cleaning Industry Report</strong>
+                <ul>
+                  <li>Product Opportunities</li>
+                  <li>Market Trends</li>
+                  <li>Supplier Signals</li>
+                </ul>
                 <small>Product Opportunities / Market Trends / Supplier Signals</small>
+                <em>Free Download / 2026 Edition</em>
               </div>
             </article>
           </div>
@@ -121,7 +128,7 @@ export default function ReportsPage() {
             ))}
           </div>
           <Link className="reports-v1-inline-cta" href="#get-report">
-            Get Access
+            Unlock Free Report
           </Link>
         </div>
       </section>
@@ -148,7 +155,7 @@ export default function ReportsPage() {
           <div className="reports-v1-section-head reports-v1-section-head-row">
             <div>
               <p className="reports-kicker">Coming Soon</p>
-              <h2>More Reports Coming Soon</h2>
+              <h2>Upcoming Intelligence Briefs</h2>
             </div>
             <p>
               Get the 2026 report first, then receive future updates as new
@@ -159,7 +166,7 @@ export default function ReportsPage() {
             {comingSoonReports.map((report) => (
               <article key={report}>
                 <h3>{report}</h3>
-                <span>Coming Soon</span>
+                <span>Coming Next</span>
               </article>
             ))}
           </div>
@@ -198,7 +205,7 @@ export default function ReportsPage() {
               Country
               <input name="country" placeholder="Country or region" />
             </label>
-            <button type="submit">Send Me The Report</button>
+            <button type="submit">Unlock Free Report</button>
           </form>
         </div>
       </section>
