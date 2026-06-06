@@ -222,7 +222,7 @@ export default function SourcingPage() {
                     </strong>
                     <em>
                       <span>{item.yet}</span>{" "}
-                      <span dangerouslySetInnerHTML={{ __html: item.result }} />
+                      <span>{item.result}</span>
                     </em>
                   </p>
                 </div>
@@ -260,7 +260,7 @@ export default function SourcingPage() {
                   <span aria-hidden="true">→</span>
                   <div>
                     <span>After</span>
-                    <strong dangerouslySetInnerHTML={{ __html: item.today }} />
+                    <strong>{item.today}</strong>
                   </div>
                 </div>
               ))}
@@ -297,7 +297,7 @@ export default function SourcingPage() {
             {productOpportunities.map((item) => (
               <Link className="sourcing-v3-product-card" href={item.href} key={item.title}>
                 <span className="sourcing-v3-product-image">
-                  <img src={item.image} alt="" />
+                  <img src={item.image} alt={`${item.title} product category`} />
                 </span>
                 <span className="sourcing-v3-product-copy">
                   <span>

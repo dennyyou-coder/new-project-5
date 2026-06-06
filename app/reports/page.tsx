@@ -229,7 +229,7 @@ export default function ReportsPage() {
             Enter your work email to receive the download link and future
             cleaning industry intelligence updates.
           </p>
-          <Link href="#top">Get Free Reports</Link>
+          <ReportsLeadForm />
           <small>Free PDF / No spam / Industry updates only</small>
         </div>
       </section>

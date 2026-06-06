@@ -1,8 +1,9 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useId, useState } from "react";
 
 const recipient = "denny@worldcleanbiz.com";
+const mailFallback = `If your email client does not open, please contact ${recipient} directly.`;
 
 function submitMailto(
   event: FormEvent<HTMLFormElement>,
@@ -22,19 +23,20 @@ function submitMailto(
 }
 
 export function ReportsLeadForm() {
+  const emailId = useId();
   const [status, setStatus] = useState("");
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     submitMailto(event, "World Clean Biz report request", ["Email"]);
-    setStatus("Your email client should open with the report request.");
+    setStatus(`Your email client should open with the report request. ${mailFallback}`);
   }
 
   return (
     <form className="reports-v1-hero-form" onSubmit={handleSubmit}>
-      <label htmlFor="reports-v1-email">Email address</label>
+      <label htmlFor={emailId}>Email address</label>
       <div>
         <input
-          id="reports-v1-email"
+          id={emailId}
           name="Email"
           placeholder="name@company.com"
           required
@@ -62,7 +64,7 @@ export function ExpoLeadForm({ roles }: { roles: string[] }) {
       "Country",
       "Role"
     ]);
-    setStatus("Your email client should open with the expo update request.");
+    setStatus(`Your email client should open with the expo update request. ${mailFallback}`);
   }
 
   return (
@@ -104,7 +106,7 @@ export function NewsletterLeadForm() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     submitMailto(event, "World Clean Biz newsletter and report request", ["Email"]);
-    setStatus("Your email client should open with the request.");
+    setStatus(`Your email client should open with the request. ${mailFallback}`);
   }
 
   return (

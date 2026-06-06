@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -11,10 +14,16 @@ const navItems = [
 ];
 
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function closeMenu() {
+    setIsMenuOpen(false);
+  }
+
   return (
     <header className="header">
       <div className="container header-inner">
-        <Link className="brand" href="/">
+        <Link className="brand" href="/" onClick={closeMenu}>
           <span className="brand-mark" aria-hidden="true">
             <span className="brand-core">W</span>
           </span>
@@ -25,15 +34,31 @@ export function Header() {
             </span>
           </span>
         </Link>
-        <div className="header-actions">
-          <nav className="nav" aria-label="Main navigation">
+        <button
+          className="mobile-menu-toggle"
+          type="button"
+          aria-label="Toggle main navigation"
+          aria-expanded={isMenuOpen}
+          aria-controls="main-navigation"
+          onClick={() => setIsMenuOpen((current) => !current)}
+        >
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </button>
+        <div className={`header-actions${isMenuOpen ? " is-menu-open" : ""}`}>
+          <nav
+            className={`nav${isMenuOpen ? " is-open" : ""}`}
+            id="main-navigation"
+            aria-label="Main navigation"
+          >
             {navItems.map((item) => (
-              <Link href={item.href} key={item.href}>
+              <Link href={item.href} key={item.href} onClick={closeMenu}>
                 {item.label}
               </Link>
             ))}
           </nav>
-          <Link className="header-cta" href="/reports">
+          <Link className="header-cta" href="/reports" onClick={closeMenu}>
             Get Free Reports
           </Link>
         </div>
