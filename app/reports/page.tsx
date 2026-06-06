@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ReportsLeadForm } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
   title: "2026 Global Cleaning Industry Report",
   description:
-    "Get early insights on product opportunities, market trends, supplier signals and the future of the global cleaning industry."
+    "Get field-informed cleaning industry intelligence on product opportunities, category movement, supplier signals and market trends."
 };
 
 const metrics = [
@@ -77,8 +78,9 @@ export default function ReportsPage() {
             <p className="reports-kicker">Global Cleaning Industry</p>
             <h1>2026 Global Cleaning Industry Report</h1>
             <p>
-              Get early insights on product opportunities, market trends,
-              supplier signals, and the future of the global cleaning industry.
+              Field-informed intelligence on product opportunities, category
+              movement, supplier signals and the future of the global cleaning
+              industry.
             </p>
             <div className="reports-v1-metrics" aria-label="Report credibility">
               {metrics.map((item) => (
@@ -88,26 +90,13 @@ export default function ReportsPage() {
                 </span>
               ))}
             </div>
-            <form className="reports-v1-hero-form">
-              <label htmlFor="reports-v1-email">Email address</label>
-              <div>
-                <input
-                  id="reports-v1-email"
-                  name="email"
-                  placeholder="name@company.com"
-                  required
-                  type="email"
-                />
-                <button type="submit">Unlock Free Report</button>
-              </div>
-              <p>Enter your email to receive the download link.</p>
-            </form>
+            <ReportsLeadForm />
           </div>
 
           <div className="reports-v1-cover-wrap">
             <article className="reports-v1-cover" aria-label="2026 Global Cleaning Industry Report cover">
               <img
-                src="/images/sourcing/commercial-cleaning.png"
+                src="/images/reports/reports-category-outlook.png"
                 alt=""
               />
               <div>
@@ -133,12 +122,12 @@ export default function ReportsPage() {
           </div>
           <div>
             <p className="reports-kicker">Compiled by Denny You</p>
-            <h2>20 Years In The Cleaning Industry</h2>
+            <h2>Built From Front-Line Industry Signals</h2>
           </div>
           <ul>
-            <li>9000+ Industry Professionals Connected</li>
-            <li>1000+ Suppliers Covered</li>
-            <li>300+ Brands Monitored</li>
+            <li>Inside The Industry Since 2006</li>
+            <li>Industry Analysis Since 2018</li>
+            <li>Products, Suppliers, Brands And Forums Tracked</li>
           </ul>
         </div>
       </section>
@@ -165,7 +154,7 @@ export default function ReportsPage() {
             ))}
           </div>
           <Link className="reports-v1-inline-cta" href="#get-report">
-            Unlock Free Report
+            Get Free Reports
           </Link>
         </div>
       </section>
@@ -178,8 +167,9 @@ export default function ReportsPage() {
               <h2>Preview The Report</h2>
             </div>
             <p>
-              A quick look at selected preview pages from the report before
-              you unlock the full download.
+              A quick look at selected preview pages built from product
+              signals, supplier observations, category movement and trade show
+              activity.
             </p>
           </div>
           <div className="reports-v2-preview-grid">
@@ -212,7 +202,7 @@ export default function ReportsPage() {
             <p>
               Download the 2026 report today and join our industry intelligence list.
               <br />
-              You will automatically receive future reports, category outlooks,
+              Future briefs will focus on field-informed category outlooks,
               supplier guides and market updates as they are released.
             </p>
           </div>
@@ -239,7 +229,7 @@ export default function ReportsPage() {
             Enter your work email to receive the download link and future
             cleaning industry intelligence updates.
           </p>
-          <Link href="#top">Unlock The Full Report</Link>
+          <Link href="#top">Get Free Reports</Link>
           <small>Free PDF / No spam / Industry updates only</small>
         </div>
       </section>

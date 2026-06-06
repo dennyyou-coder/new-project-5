@@ -1,18 +1,31 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 const inquiryTypes = [
-  "Industry Information",
-  "Sourcing / OEM",
-  "Market Reports",
-  "World Clean Expo",
-  "Media Cooperation",
-  "General Cooperation"
+  "Sourcing Inquiry",
+  "Expo Inquiry",
+  "Media Inquiry",
+  "General Inquiry"
 ];
 
+const inquiryTypeMap: Record<string, string> = {
+  sourcing: "Sourcing Inquiry",
+  expo: "Expo Inquiry",
+  media: "Media Inquiry",
+  general: "General Inquiry"
+};
+
 export function ContactForm() {
+  const [inquiryType, setInquiryType] = useState("Sourcing Inquiry");
   const [status, setStatus] = useState("");
+
+  useEffect(() => {
+    const type = new URLSearchParams(window.location.search).get("type");
+    if (type && inquiryTypeMap[type]) {
+      setInquiryType(inquiryTypeMap[type]);
+    }
+  }, []);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -26,6 +39,7 @@ export function ContactForm() {
         `Company: ${data.get("company") || ""}`,
         `Email: ${data.get("email") || ""}`,
         `Country: ${data.get("country") || ""}`,
+        `Website: ${data.get("website") || ""}`,
         `Inquiry Type: ${data.get("inquiryType") || ""}`,
         "",
         `${data.get("message") || ""}`
@@ -55,8 +69,20 @@ export function ContactForm() {
         <input name="country" placeholder="Country or region" required />
       </label>
       <label>
+        Website / Product Category / Event Name
+        <input
+          name="website"
+          placeholder="Optional: website, category, or event name"
+        />
+      </label>
+      <label>
         Inquiry Type
-        <select name="inquiryType" required>
+        <select
+          name="inquiryType"
+          onChange={(event) => setInquiryType(event.target.value)}
+          required
+          value={inquiryType}
+        >
           {inquiryTypes.map((type) => (
             <option key={type}>{type}</option>
           ))}
@@ -66,7 +92,7 @@ export function ContactForm() {
         Message
         <textarea
           name="message"
-          placeholder="Share the category, market, business question, timeline, or cooperation idea you want to discuss."
+          placeholder="Share your sourcing need, expo interest, media request, industry information, timeline, or cooperation idea."
           required
         />
       </label>
