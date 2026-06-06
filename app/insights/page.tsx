@@ -1,76 +1,47 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getInsights, type Insight } from "@/lib/content";
+import { NewsletterLeadForm } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Analysis, signals and opportunities from the global cleaning industry, covering product shifts, supplier movements, market trends and business opportunities."
+    "Cleaning industry signals and analysis shaped by front-line product, supplier, category and trade show observations."
 };
 
 const topics = [
-  "Cleaning Equipment",
-  "Sustainability",
-  "Private Label",
-  "E-commerce",
-  "Disinfection",
-  "Smart Cleaning",
-  "Hygiene",
-  "Innovation"
+  "Robot Vacuums",
+  "Robot Lawn Mowers",
+  "Robotic Pool Cleaners",
+  "Wet-Dry Floor Cleaners",
+  "Chinese Brands",
+  "Overseas Markets",
+  "Product Strategy",
+  "Category Signals"
 ];
 
 const categories = [
   "All",
-  "Products",
-  "Brands",
-  "Manufacturing",
-  "Markets",
-  "Supply Chain",
-  "Trade Shows",
-  "Sourcing"
+  "Floorcare",
+  "Pool Cleaning",
+  "Robotic Mowers",
+  "Industry",
+  "Market Signals"
 ];
-
-const summaryDetails: Record<string, string> = {
-  "global-cleaning-industry-center-vision":
-    "This signal explains why the cleaning industry needs a shared information center as products, suppliers, channels and trade shows become more connected. It looks at how scattered information slows business decisions and why a clearer industry view can help buyers, brands and suppliers identify opportunities earlier.",
-  "commercial-cleaning-equipment-demand-signals":
-    "Commercial cleaning equipment demand is being shaped by labor pressure, higher service standards and the need for better operating efficiency. This article looks at the signals behind category movement and why manufacturers, distributors and service-focused buyers should monitor how facility needs are changing.",
-  "robot-vacuum-market-trends-2026":
-    "The robot vacuum category is entering a more competitive phase as navigation, wet cleaning, docking systems and pricing expectations continue to shift. This article explores the product signals that matter for brands, suppliers and buyers watching where the next wave of category growth may come from.",
-  "trade-show-intelligence-for-cleaning-brands":
-    "Trade shows reveal more than exhibitor lists. They show category movement, buyer interest, supplier positioning and partnership opportunities. This article explains how cleaning brands and buyers can read trade show signals to better understand what is changing across the global industry.",
-  "private-label-cleaning-products-sourcing-context":
-    "Private label cleaning products require more than choosing a supplier from a catalog. This article looks at OEM paths, supplier fit, category expectations and sourcing risks that buyers should understand before comparing factories or committing to a new product direction.",
-  "europe-floor-care-demand-update":
-    "European floor care demand is influenced by regional channels, facility requirements and changing expectations around performance and reliability. This article breaks down the signals buyers and suppliers should monitor when evaluating floor care opportunities in mature but still active markets.",
-  "china-cleaning-supply-chain-update":
-    "China remains a critical supply chain base for cleaning products, components and OEM development. This article examines supplier capability, export readiness and the manufacturing signals global buyers should understand before building sourcing plans or comparing factory options."
-};
 
 const fallbackImages = [
-  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1200&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1200&auto=format&fit=crop"
+  "/images/industry/about-forum-stage-2025.jpg",
+  "/images/industry/sourcing-product-components-2025.jpg",
+  "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
+  "/images/industry/about-forum-audience-2025.jpg"
 ];
 
-const imageOverrides: Record<string, string> = {
-  "commercial-cleaning-equipment-demand-signals":
-    "https://source.unsplash.com/INDGbj_ojG4/1200x675",
-  "robot-vacuum-market-trends-2026":
-    "https://source.unsplash.com/eSUOY0OImJc/1200x675",
-  "europe-floor-care-demand-update":
-    "https://source.unsplash.com/yy-msv5-LFo/1200x675",
-  "private-label-cleaning-products-sourcing-context":
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop"
-};
-
 function imageFor(article: Insight, index: number) {
-  return imageOverrides[article.slug] || article.coverImage || fallbackImages[index % fallbackImages.length];
+  return article.coverImage || fallbackImages[index % fallbackImages.length];
 }
 
 function summaryFor(article: Insight) {
-  return summaryDetails[article.slug] || article.excerpt;
+  return article.excerpt;
 }
 
 function displayReadTime(article: Insight, index: number) {
@@ -118,25 +89,25 @@ function SidebarContent({ latestSignals }: { latestSignals: Insight[] }) {
             <span>2026</span>
           </div>
         </div>
-        <h3>Get industry trends, supplier intelligence and market opportunities from World Clean Biz.</h3>
-        <Link className="button" href="/market-reports">
+        <h3>Get field-informed industry trends, supplier intelligence and market opportunities from World Clean Biz.</h3>
+        <Link className="button" href="/reports">
           Get Free Reports
         </Link>
       </div>
 
       <div className="sidebar-box about-denny-sidebar">
         <img
-          src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=360&h=360&auto=format&fit=crop&crop=faces"
-          alt="Professional portrait placeholder for Denny You"
+          src="/images/industry/about-denny-portrait-event.jpg"
+          alt="Denny You at a cleaning industry event"
         />
-        <h3>Denny Connects The Industry</h3>
+        <h3>Industry Analysis From The Front Line</h3>
         <ul>
-          <li>20+ Years In The Cleaning Industry</li>
-          <li>9,000+ Industry Professionals</li>
-          <li>Global Industry Events And Connections</li>
-          <li>Supplier, Brand And Market Network</li>
+          <li>Inside The Industry Since 2006</li>
+          <li>Publishing Industry Analysis Since 2018</li>
+          <li>Product, Supplier And Category Signals</li>
+          <li>Forums, Trade Shows And Market Conversations</li>
         </ul>
-        <Link href="/about">Learn More About Denny</Link>
+        <Link href="/about">About Denny</Link>
       </div>
 
       <div className="sidebar-box">
@@ -193,10 +164,6 @@ export default function InsightsPage() {
   const featured = articles.find((article) => article.featured) || articles[0];
   const feedArticles = articles.filter((article) => article.slug !== featured?.slug);
   const latestSignals = articles.slice(0, 5);
-  const featuredSummary =
-    "This signal explains why the cleaning industry needs a shared information center as products, suppliers, channels and trade shows become more connected. It shows how scattered information slows business decisions and why a clearer industry view can help buyers, brands and suppliers identify opportunities earlier.";
-  const featuredImage =
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop";
 
   return (
     <>
@@ -205,13 +172,13 @@ export default function InsightsPage() {
           {featured ? (
             <Link className="insights-featured-hero" href={`/insights/${featured.slug}`}>
               <div className="insights-featured-hero-image">
-                <img src={featuredImage} alt={`${featured.title} featured cover`} />
+                <img src={imageFor(featured, 0)} alt={`${featured.title} featured cover`} />
               </div>
               <div className="insights-featured-hero-copy">
                 <p className="eyebrow">Featured Insight</p>
-                <span className="insights-category">Industry</span>
+                <span className="insights-category">{featured.category}</span>
                 <h1>{featured.title}</h1>
-                <p>{featuredSummary}</p>
+                <p>{featured.excerpt}</p>
                 <div className="insights-card-meta">
                   <span>{displayDate(featured)}</span>
                   <span>{displayReadTime(featured, 0)}</span>
@@ -264,22 +231,7 @@ export default function InsightsPage() {
 
       <section className="section">
         <div className="insights-page-container">
-          <form className="insights-newsletter-cta">
-            <div>
-              <p className="eyebrow">Newsletter & Reports</p>
-              <h2>Stay Ahead Of The Cleaning Industry</h2>
-              <p>
-                Get weekly signals, analysis and free market reports straight
-                to your inbox.
-              </p>
-            </div>
-            <div className="newsletter-form-row">
-              <input aria-label="Email Address" placeholder="Email Address" type="email" />
-              <button className="button" type="submit">
-                Get Free Reports
-              </button>
-            </div>
-          </form>
+          <NewsletterLeadForm />
         </div>
       </section>
     </>

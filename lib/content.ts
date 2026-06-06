@@ -34,17 +34,30 @@ function parseFrontmatter(source: string) {
     if (!key || rest.length === 0) continue;
     const value = rest.join(":").trim();
     if (value.startsWith("[") && value.endsWith("]")) {
-      data[key.trim()] = value
-        .slice(1, -1)
-        .split(",")
-        .map((item) => item.trim().replace(/^"|"$/g, ""))
-        .filter(Boolean);
+      data[key.trim()] = parseInlineArray(value);
     } else {
       data[key.trim()] = value.replace(/^"|"$/g, "");
     }
   }
 
   return { data, content: match[2].trim() };
+}
+
+function parseInlineArray(value: string) {
+  try {
+    const parsed = JSON.parse(value);
+    if (Array.isArray(parsed)) {
+      return parsed.map((item) => String(item)).filter(Boolean);
+    }
+  } catch {
+    // Fall back to a simple split for older hand-written frontmatter.
+  }
+
+  return value
+    .slice(1, -1)
+    .split(",")
+    .map((item) => item.trim().replace(/^"|"$/g, ""))
+    .filter(Boolean);
 }
 
 export function getInsights(): Insight[] {
@@ -115,6 +128,14 @@ export function markdownToHtml(markdown: string) {
     } else if (trimmed.startsWith("## ")) {
       closeList();
       html.push(`<h2>${inline(trimmed.slice(3))}</h2>`);
+    } else if (/^!\[(.*?)\]\((.*?)\)$/.test(trimmed)) {
+      closeList();
+      const image = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
+      if (image) {
+        html.push(
+          `<figure class="article-inline-image"><img src="${image[2]}" alt="${inline(image[1])}" /></figure>`
+        );
+      }
     } else if (trimmed.startsWith("> ")) {
       closeList();
       html.push(`<blockquote>${inline(trimmed.slice(2))}</blockquote>`);
