@@ -352,14 +352,13 @@ img {
   min-height: 680px;
   padding: 108px 0 0;
   background:
-    radial-gradient(circle at 76% 16%, rgba(79, 141, 255, 0.24), transparent 30%),
-    radial-gradient(circle at 14% 22%, rgba(111, 168, 255, 0.18), transparent 28%),
-    radial-gradient(circle at 92% 44%, rgba(47, 107, 255, 0.12), transparent 34%),
+    linear-gradient(90deg, rgba(246, 250, 255, 0.98) 0%, rgba(246, 250, 255, 0.9) 44%, rgba(246, 250, 255, 0.34) 72%),
+    linear-gradient(180deg, rgba(246, 250, 255, 0) 70%, rgba(246, 250, 255, 0.96) 100%),
     linear-gradient(90deg, rgba(47, 107, 255, 0.07) 1px, transparent 1px),
     linear-gradient(180deg, rgba(47, 107, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(135deg, #F4F9FF 0%, #DCEBFF 45%, #BFD7F5 100%);
-  background-position: center;
-  background-size: auto, auto, auto, 72px 72px, 72px 72px, auto;
+    url("/images/industry/home-hero-cleaning-forum-2025.jpg");
+  background-position: center, center, center, center, center;
+  background-size: auto, auto, 72px 72px, 72px 72px, cover;
   color: var(--ink);
 }
 
@@ -443,9 +442,25 @@ h3 {
   display: block;
 }
 
+.hero-declaration {
+  display: block;
+  max-width: 620px;
+  margin-top: 18px;
+  color: var(--ink);
+  font-size: clamp(20px, 2.2vw, 30px);
+  font-weight: 850;
+  line-height: 1.15;
+}
+
+.hero-declaration span {
+  display: block;
+  margin-top: 4px;
+  color: var(--primary);
+}
+
 .hero-copy {
   max-width: 590px;
-  margin: 26px 0 0;
+  margin: 20px 0 0;
   color: var(--muted);
   font-size: 20px;
   line-height: 1.45;
@@ -913,6 +928,57 @@ h3 {
   padding: 22px;
 }
 
+.trust-signal-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.trust-signal-card::before {
+  display: none;
+}
+
+.trust-signal-image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--soft);
+}
+
+.trust-signal-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.trust-signal-body {
+  display: grid;
+  align-content: start;
+  min-height: 190px;
+  padding: 22px;
+}
+
+.trust-signal-body span {
+  width: max-content;
+  margin-bottom: 14px;
+  border: 1px solid rgba(47, 107, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(220, 235, 255, 0.62);
+  padding: 7px 10px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.trust-signal-body h3 {
+  margin: 0;
+}
+
+.trust-signal-body p {
+  margin-top: 10px;
+}
+
 .testimonial-card {
   display: grid;
   align-content: start;
@@ -935,6 +1001,22 @@ h3 {
   object-fit: cover;
   object-position: center 32%;
   box-shadow: 0 10px 24px rgba(22, 59, 103, 0.12);
+}
+
+.testimonial-initials {
+  display: inline-flex;
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(47, 107, 255, 0.18);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #EAF3FF, #FFFFFF);
+  color: var(--blue);
+  font-size: 17px;
+  font-weight: 900;
+  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.1);
 }
 
 .testimonial-person strong {
@@ -967,6 +1049,10 @@ h3 {
   font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.testimonial-person .testimonial-type {
+  margin: 0 0 9px;
 }
 
 .testimonial-quote {
@@ -1195,7 +1281,7 @@ h3 {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.8)),
-    url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1800&auto=format&fit=crop");
+    url("/images/industry/about-forum-stage-2025.jpg");
   background-position: center;
   background-size: cover;
   content: "";
@@ -2208,7 +2294,7 @@ h3 {
   border-radius: 18px;
   background:
     linear-gradient(180deg, rgba(22, 59, 103, 0.08), rgba(22, 59, 103, 0.45)),
-    url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1400&auto=format&fit=crop");
+    url("/images/industry/about-forum-stage-2025.jpg");
   background-position: center;
   background-size: cover;
   box-shadow: 0 18px 42px rgba(22, 59, 103, 0.1);
@@ -2301,7 +2387,7 @@ h3 {
   border-radius: 16px;
   background:
     linear-gradient(180deg, rgba(22, 59, 103, 0.1), rgba(22, 59, 103, 0.5)),
-    url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop");
+    url("/images/industry/about-forum-stage-2025.jpg");
   background-position: center;
   background-size: cover;
   box-shadow: 0 18px 42px rgba(22, 59, 103, 0.1);
@@ -2395,19 +2481,19 @@ h3 {
 }
 
 .sourcing-execution-card-1 {
-  --execution-card-image: url("https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=900&auto=format&fit=crop");
+  --execution-card-image: url("/images/industry/expo-booth-cleaning-suppliers-2026.jpg");
 }
 
 .sourcing-execution-card-2 {
-  --execution-card-image: url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=900&auto=format&fit=crop");
+  --execution-card-image: url("/images/industry/sourcing-supplier-meeting-2026.jpg");
 }
 
 .sourcing-execution-card-3 {
-  --execution-card-image: url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&auto=format&fit=crop");
+  --execution-card-image: url("/images/industry/sourcing-supplier-meeting-2026.jpg");
 }
 
 .sourcing-execution-card-4 {
-  --execution-card-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=900&auto=format&fit=crop");
+  --execution-card-image: url("/images/industry/about-denny-consulting-stage.jpg");
 }
 
 .sourcing-category-grid {
@@ -2516,7 +2602,7 @@ h3 {
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.92) 52%, rgba(246, 250, 255, 0.7) 100%),
-    url("https://unsplash.com/photos/NXhweP5ShCg/download?force=true&w=1800");
+    url("/images/industry/sourcing-hero-expo-products-2026.jpg");
   background-position: center;
   background-size: cover;
   padding: 120px 0 100px;
@@ -3427,7 +3513,7 @@ h3 {
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(255, 255, 255, 0.96) 48%, rgba(246, 250, 255, 0.64) 62%, rgba(8, 24, 44, 0.4) 100%),
-    url("https://unsplash.com/photos/NXhweP5ShCg/download?force=true&w=1800");
+    url("/images/industry/sourcing-hero-expo-products-2026.jpg");
   background-position: center;
   background-size: cover;
   padding: 64px 0 56px;
@@ -4040,7 +4126,7 @@ h3 {
 .expo-feature {
   background:
     linear-gradient(180deg, rgba(22, 59, 103, 0.14), rgba(22, 59, 103, 0.62)),
-    url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop");
+    url("/images/industry/about-forum-stage-2025.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -4201,7 +4287,7 @@ h3 {
   border-radius: 8px;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.97), rgba(246, 250, 255, 0.9)),
-    url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop");
+    url("/images/industry/about-denny-consulting-stage.jpg");
   background-position: center right;
   background-size: cover;
   padding: 38px;
@@ -4273,23 +4359,23 @@ h3 {
 }
 
 .image-panel-global {
-  --image-panel-url: url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop");
+  --image-panel-url: url("/images/industry/home-industry-products-2025.jpg");
 }
 
 .image-panel-sourcing {
-  --image-panel-url: url("https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1400&auto=format&fit=crop");
+  --image-panel-url: url("/images/industry/expo-booth-cleaning-suppliers-2026.jpg");
 }
 
 .image-panel-reports {
-  --image-panel-url: url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop");
+  --image-panel-url: url("/images/industry/reports-market-preview-products-2025.jpg");
 }
 
 .image-panel-expo {
-  --image-panel-url: url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1400&auto=format&fit=crop");
+  --image-panel-url: url("/images/industry/about-forum-stage-2025.jpg");
 }
 
 .image-panel-about {
-  --image-panel-url: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop");
+  --image-panel-url: url("/images/industry/about-denny-consulting-stage.jpg");
 }
 
 .module-grid {
@@ -4437,16 +4523,657 @@ h3 {
   margin: 22px 0;
 }
 
-.contact-help-grid {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+.expo-hero {
+  position: relative;
+  padding: 82px 0 76px;
+  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 250, 255, 0.94) 47%, rgba(22, 59, 103, 0.2) 100%),
+    url("/images/expo/expo-hero-busy-exhibition.png");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
-.contact-help-card {
+.expo-hero::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(111, 168, 255, 0.36), transparent);
+  content: "";
+}
+
+.expo-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(420px, 0.9fr);
+  gap: 46px;
+  align-items: stretch;
+}
+
+.expo-hero-copy {
+  display: grid;
+  align-content: center;
+}
+
+.expo-hero h1 {
+  max-width: 820px;
+  color: var(--ink);
+  font-size: clamp(46px, 5.2vw, 76px);
+  font-weight: 760;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.expo-hero-copy > p:not(.eyebrow) {
+  max-width: 670px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.expo-hero-copy > p + p {
+  margin-top: 10px;
+}
+
+.expo-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.expo-hero-meta span {
+  border: 1px solid rgba(47, 107, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  padding: 8px 12px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.expo-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  max-width: 690px;
+  margin-top: 34px;
+  border: 1px solid rgba(217, 227, 239, 0.92);
+  border-radius: 8px;
+  background: rgba(217, 227, 239, 0.92);
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(22, 59, 103, 0.08);
+}
+
+.expo-hero-stats div {
+  background: rgba(255, 255, 255, 0.84);
+  padding: 18px;
+}
+
+.expo-hero-stats strong,
+.expo-hero-stats span {
+  display: block;
+}
+
+.expo-hero-stats strong {
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1.05;
+}
+
+.expo-hero-stats span {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.35;
+}
+
+.expo-hero-visual {
+  position: relative;
+  min-height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(22, 59, 103, 0), rgba(22, 59, 103, 0.32)),
+    url("/images/expo/expo-hero-busy-exhibition.png");
+  background-position: center;
+  background-size: cover;
+  box-shadow: var(--shadow-panel);
+  overflow: hidden;
+}
+
+.expo-visual-note {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+  padding: 18px;
+  backdrop-filter: blur(14px);
+}
+
+.expo-visual-note span {
+  display: block;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.expo-visual-note strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1.18;
+}
+
+.expo-intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 420px);
+  gap: 28px;
+  align-items: center;
+}
+
+.expo-intro-layout p:not(.eyebrow) {
+  max-width: 780px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.expo-intro-card {
+  display: grid;
+  align-content: center;
+  min-height: 260px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 88% 14%, rgba(111, 168, 255, 0.25), transparent 32%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(220, 235, 255, 0.72));
+  padding: 28px;
+  box-shadow: var(--shadow-soft);
+}
+
+.expo-intro-card strong {
+  display: block;
+  margin-top: 18px;
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1.18;
+}
+
+.expo-track-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.expo-track-card {
   min-height: 250px;
 }
 
-.contact-help-card .platform-icon {
-  margin-bottom: 20px;
+.expo-track-card h3 {
+  margin-top: 18px;
+}
+
+.expo-snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.expo-snapshot-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  min-height: 230px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 250, 255, 0.94)),
+    white;
+  padding: 24px;
+  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.05);
+  overflow: hidden;
+}
+
+.expo-snapshot-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2F6BFF 0%, #6FA8FF 100%);
+  content: "";
+}
+
+.expo-snapshot-card strong {
+  display: block;
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1.16;
+}
+
+.expo-snapshot-card span {
+  display: block;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.expo-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.expo-category-card {
+  position: relative;
+  min-height: 292px;
+  display: grid;
+  align-items: end;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background-color: var(--soft);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.05);
+  overflow: hidden;
+}
+
+.expo-category-card::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(22, 59, 103, 0.02), rgba(22, 59, 103, 0.64));
+  content: "";
+}
+
+.expo-category-card:hover {
+  transform: translateY(-2px);
+}
+
+.expo-category-card strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 22px;
+  color: white;
+  font-size: 22px;
+  line-height: 1.15;
+  text-shadow: 0 8px 22px rgba(22, 59, 103, 0.32);
+}
+
+.expo-category-robot-vacuum {
+  background-image: url("/images/expo/expo-category-robotic-vacuums.png");
+}
+
+.expo-category-floor-washer {
+  background-image: url("/images/sourcing/floor-washers.png");
+}
+
+.expo-category-pool-cleaner {
+  background-image: url("/images/expo/expo-category-pool-cleaners.png");
+}
+
+.expo-category-lawn-robot {
+  background-image: url("/images/expo/expo-category-lawn-robots.png");
+}
+
+.expo-category-commercial {
+  background-image: url("/images/expo/expo-category-commercial-cleaning.png");
+}
+
+.expo-category-components {
+  background-image: url("/images/expo/expo-category-components-technology.png");
+}
+
+.expo-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.expo-audience-card {
+  display: grid;
+  align-content: start;
+  min-height: 150px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(220, 235, 255, 0.74)),
+    white;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.05);
+}
+
+.expo-audience-card strong {
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.16;
+}
+
+.expo-audience-card span {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.expo-meeting-section {
+  background:
+    linear-gradient(90deg, rgba(9, 28, 52, 0.95), rgba(22, 59, 103, 0.78)),
+    url("/images/industry/expo-hero-shenzhen-2026.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.expo-meeting-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.expo-meeting-copy .eyebrow {
+  color: #9EC5FF;
+}
+
+.expo-meeting-copy h2 {
+  max-width: 720px;
+  color: white;
+  font-size: clamp(36px, 4.6vw, 62px);
+  line-height: 1.02;
+}
+
+.expo-meeting-copy p {
+  max-width: 680px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.expo-gathering-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.expo-gathering-list span {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 9px 12px;
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+  backdrop-filter: blur(10px);
+}
+
+.expo-gathering-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.expo-gathering-card {
+  min-height: 210px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.11);
+  padding: 22px;
+  backdrop-filter: blur(14px);
+}
+
+.expo-gathering-card .inline-icon {
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+}
+
+.expo-gathering-card h3 {
+  margin-top: 18px;
+  color: white;
+  font-size: 21px;
+}
+
+.expo-gathering-card p {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.expo-profile-grid {
+  margin-top: 24px;
+}
+
+.expo-value-card {
+  display: grid;
+  align-content: start;
+  min-height: 210px;
+}
+
+.expo-value-card h3 {
+  margin-top: 16px;
+}
+
+.expo-agenda-layout {
+  align-items: center;
+}
+
+.expo-agenda-list {
+  display: grid;
+  gap: 14px;
+}
+
+.expo-agenda-item {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.05);
+}
+
+.expo-agenda-item span {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-weight: 900;
+}
+
+.expo-agenda-item h3 {
+  font-size: 21px;
+}
+
+.expo-agenda-item p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.expo-interest-layout {
+  align-items: start;
+}
+
+.expo-interest-layout p:not(.eyebrow) {
+  max-width: 620px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.expo-denny-tags {
+  margin-top: 24px;
+}
+
+.expo-venue-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(232, 242, 255, 0.9)),
+    repeating-linear-gradient(90deg, rgba(47, 107, 255, 0.05) 0 1px, transparent 1px 38px),
+    repeating-linear-gradient(0deg, rgba(47, 107, 255, 0.045) 0 1px, transparent 1px 38px);
+  padding: 34px;
+  box-shadow: var(--shadow-soft);
+}
+
+.expo-venue-panel h2 {
+  margin-top: 6px;
+}
+
+.expo-venue-panel p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  font-weight: 760;
+}
+
+.expo-capture-section {
+  background:
+    linear-gradient(90deg, rgba(9, 28, 52, 0.96), rgba(16, 59, 103, 0.9)),
+    url("/images/industry/expo-hero-shenzhen-2026.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.expo-capture-copy {
+  display: grid;
+  align-content: center;
+}
+
+.expo-capture-copy .eyebrow {
+  color: #9EC5FF;
+}
+
+.expo-capture-copy h2 {
+  max-width: 660px;
+  color: white;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.05;
+}
+
+.expo-capture-copy p {
+  max-width: 680px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 18px !important;
+  line-height: 1.6;
+}
+
+.expo-capture-copy strong,
+.expo-capture-copy span {
+  display: block;
+}
+
+.expo-capture-copy strong {
+  margin-top: 28px;
+  color: white;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.expo-capture-copy span {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.expo-capture-form {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.expo-final-section {
+  background:
+    linear-gradient(180deg, rgba(9, 28, 52, 0.1), rgba(9, 28, 52, 0.16)),
+    white;
+}
+
+.expo-final-section .cta-band {
+  background:
+    linear-gradient(90deg, rgba(9, 28, 52, 0.92), rgba(22, 59, 103, 0.72)),
+    url("/images/industry/about-forum-audience-2025.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.expo-final-section .cta-band h2,
+.expo-final-section .cta-band p {
+  color: white;
+}
+
+.expo-final-section .cta-band .eyebrow {
+  color: #9EC5FF;
+}
+
+.expo-final-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.expo-final-cta h2 {
+  max-width: 820px;
+}
+
+.expo-final-cta p {
+  max-width: 760px;
+}
+
+.contact-help-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.contact-help-card {
+  display: grid;
+  align-content: start;
+  min-height: 292px;
+  color: inherit;
+}
+
+.contact-help-card .icon-badge {
+  margin-bottom: 18px;
+}
+
+.contact-help-card span:not(.icon-badge) {
+  align-self: end;
+  width: max-content;
+  margin-top: 22px;
+  border-bottom: 2px solid rgba(47, 107, 255, 0.32);
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.contact-help-card:hover {
+  border-color: #C9D9EA;
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-2px);
 }
 
 .contact-form-panel {
@@ -4457,6 +5184,116 @@ h3 {
     white;
   padding: 24px;
   box-shadow: var(--shadow-soft);
+}
+
+.contact-expertise {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+  gap: 26px;
+  align-items: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(220, 235, 255, 0.64)),
+    white;
+  padding: clamp(24px, 4vw, 34px);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-expertise h2 {
+  max-width: 680px;
+  font-size: clamp(28px, 3.2vw, 42px);
+}
+
+.contact-expertise p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.contact-expertise-media {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-expertise-photo {
+  position: relative;
+  height: clamp(170px, 18vw, 210px);
+  border: 1px solid rgba(201, 217, 234, 0.92);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 16px 34px rgba(22, 59, 103, 0.1);
+}
+
+.contact-expertise-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 34%;
+}
+
+.contact-expertise-photo::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(22, 59, 103, 0), rgba(22, 59, 103, 0.26));
+  content: "";
+}
+
+.contact-expertise-photo span {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 10px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.contact-expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid rgba(201, 217, 234, 0.9);
+  border-radius: 8px;
+  background: rgba(201, 217, 234, 0.9);
+  overflow: hidden;
+}
+
+.contact-expertise-stat {
+  min-height: 132px;
+  display: grid;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 20px;
+}
+
+.contact-expertise-stat strong {
+  color: var(--ink);
+  font-size: clamp(24px, 2.8vw, 34px);
+  line-height: 1;
+}
+
+.contact-expertise-stat span {
+  display: block;
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.contact-expertise-note {
+  margin: -2px 0 0 !important;
+  color: var(--muted) !important;
+  font-size: 13px !important;
+  font-weight: 760;
 }
 
 .about-quote {
@@ -4484,6 +5321,420 @@ h3 {
 .about-quote strong {
   margin-top: 16px;
   color: var(--blue);
+}
+
+.about-v1-hero {
+  padding: 64px 0;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 84% 16%, rgba(111, 168, 255, 0.22), transparent 32%),
+    linear-gradient(135deg, #F6FAFF 0%, #FFFFFF 54%, #DCEBFF 100%);
+}
+
+.about-v1-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(380px, 0.78fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.about-v1-hero-copy h1 {
+  max-width: 760px;
+  font-size: clamp(38px, 4.7vw, 62px);
+  font-weight: 760;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.about-v1-hero-copy > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1.48;
+}
+
+.about-v1-founder {
+  width: fit-content;
+  margin-top: 22px;
+  border-left: 3px solid var(--blue);
+  background: rgba(255, 255, 255, 0.78);
+  padding: 10px 14px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 850;
+  box-shadow: 0 10px 24px rgba(22, 59, 103, 0.06);
+}
+
+.about-v1-hero-photo,
+.about-v1-wide-photo,
+.about-v1-speaking-photo,
+.about-v1-photo,
+.about-v1-expo-image {
+  position: relative;
+  border: 1px solid rgba(201, 217, 234, 0.92);
+  background-position: center;
+  background-size: cover;
+  box-shadow: var(--shadow-panel);
+  overflow: hidden;
+}
+
+.about-v1-hero-photo::after,
+.about-v1-wide-photo::after,
+.about-v1-speaking-photo::after,
+.about-v1-photo::after,
+.about-v1-expo-image::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(22, 59, 103, 0.02), rgba(22, 59, 103, 0.34)),
+    linear-gradient(90deg, rgba(22, 59, 103, 0.22), transparent 64%);
+  content: "";
+}
+
+.about-v1-hero-photo span,
+.about-v1-wide-photo span,
+.about-v1-speaking-photo span,
+.about-v1-photo span,
+.about-v1-expo-image span {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.84);
+  padding: 9px 11px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+}
+
+.about-v1-hero-photo {
+  min-height: 520px;
+  border-radius: 10px;
+  background-image: url("/images/industry/about-denny-speaking-forum-2025.jpg");
+}
+
+.about-v1-narrow {
+  max-width: 900px;
+}
+
+.about-v1-mission h2 {
+  max-width: 820px;
+  font-size: clamp(34px, 4.4vw, 58px);
+  line-height: 1.04;
+}
+
+.about-v1-mission-copy {
+  display: grid;
+  gap: 10px;
+  max-width: 760px;
+  margin-top: 26px;
+}
+
+.about-v1-mission-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.52;
+}
+
+.about-v1-mission-copy p:nth-last-child(2),
+.about-v1-mission-copy p:last-child {
+  color: var(--ink);
+  font-weight: 760;
+}
+
+.about-v1-feature-photo {
+  padding: 0 0 28px;
+  background: white;
+}
+
+.about-v1-wide-photo {
+  min-height: 440px;
+  border-radius: 10px;
+  background-image: url("/images/industry/about-forum-audience-2025.jpg");
+}
+
+.about-v1-built-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.about-v1-speaking-photo {
+  min-height: 560px;
+  border-radius: 10px;
+  background-image: url("/images/industry/about-denny-consulting-stage.jpg");
+  background-position: 68% center;
+}
+
+.about-v1-built p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.about-v1-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.about-v1-stat {
+  min-height: 118px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #FFFFFF;
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.about-v1-stat strong,
+.about-v1-stat span {
+  display: block;
+}
+
+.about-v1-stat strong {
+  color: var(--ink);
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 850;
+  line-height: 1.05;
+}
+
+.about-v1-stat span {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.about-v1-section-head {
+  max-width: 840px;
+  margin-bottom: 30px;
+}
+
+.about-v1-section-head h2 {
+  font-size: clamp(32px, 3.8vw, 48px);
+  line-height: 1.06;
+  text-wrap: balance;
+}
+
+.about-v1-section-head p:not(.eyebrow) {
+  max-width: 780px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.58;
+}
+
+.about-v1-cover-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-v1-cover-card {
+  min-height: 250px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.about-v1-cover-card h3 {
+  margin-top: 18px;
+  font-size: 20px;
+}
+
+.about-v1-cover-card p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.about-v1-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 280px);
+  gap: 16px;
+}
+
+.about-v1-photo {
+  min-height: 220px;
+  border-radius: 8px;
+}
+
+.about-photo-forum {
+  background-image: url("/images/industry/about-forum-stage-2025.jpg");
+}
+
+.about-photo-speaking {
+  background-image: url("/images/industry/about-denny-speaking-forum-2025.jpg");
+}
+
+.about-photo-panel {
+  background-image: url("/images/industry/about-panel-discussion-2025.jpg");
+}
+
+.about-photo-network {
+  background-image: url("/images/industry/home-expo-networking-2025.jpg");
+}
+
+.about-v1-expo-section {
+  padding-top: 40px;
+}
+
+.about-v1-expo {
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(320px, 0.86fr);
+  gap: 34px;
+  align-items: center;
+  border: 1px solid rgba(201, 217, 234, 0.92);
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(111, 168, 255, 0.24), transparent 32%),
+    linear-gradient(135deg, #F6FAFF, #FFFFFF);
+  padding: clamp(24px, 4vw, 42px);
+  box-shadow: var(--shadow-panel);
+}
+
+.about-v1-expo h2 {
+  font-size: clamp(30px, 3.8vw, 48px);
+  line-height: 1.06;
+}
+
+.about-v1-expo p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.56;
+}
+
+.about-v1-expo .button-secondary {
+  margin-top: 24px;
+}
+
+.about-v1-expo-image {
+  min-height: 360px;
+  border-radius: 8px;
+  background-image: url("/images/industry/expo-forum-audience-2026.jpg");
+}
+
+.about-v1-cta-section {
+  padding-top: 32px;
+}
+
+.about-v1-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 86% 18%, rgba(111, 168, 255, 0.28), transparent 34%),
+    linear-gradient(135deg, #F6FAFF, #FFFFFF);
+  padding: clamp(26px, 4vw, 42px);
+  box-shadow: var(--shadow-panel);
+}
+
+.about-v1-cta h2 {
+  max-width: 780px;
+  font-size: clamp(30px, 3.6vw, 46px);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.about-v1-cta .hero-actions {
+  min-width: max-content;
+  margin-top: 0;
+}
+
+@media (max-width: 920px) {
+  .about-v1-hero-grid,
+  .about-v1-built-grid,
+  .about-v1-expo {
+    grid-template-columns: 1fr;
+  }
+
+  .about-v1-cover-grid,
+  .about-v1-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-v1-hero-photo,
+  .about-v1-speaking-photo,
+  .about-v1-expo-image {
+    min-height: 340px;
+  }
+
+  .about-v1-wide-photo {
+    min-height: 360px;
+  }
+
+  .about-v1-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .about-v1-cta .hero-actions {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-v1-hero {
+    padding: 46px 0 48px;
+  }
+
+  .about-v1-hero-copy h1 {
+    font-size: 38px;
+  }
+
+  .about-v1-hero-copy > p:not(.eyebrow),
+  .about-v1-mission-copy p,
+  .about-v1-section-head p:not(.eyebrow),
+  .about-v1-built p:not(.eyebrow),
+  .about-v1-expo p:not(.eyebrow) {
+    font-size: 16px;
+  }
+
+  .about-v1-hero-photo,
+  .about-v1-wide-photo,
+  .about-v1-speaking-photo,
+  .about-v1-expo-image {
+    min-height: 260px;
+  }
+
+  .about-v1-cover-grid,
+  .about-v1-stat-grid,
+  .about-v1-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-v1-photo-grid {
+    grid-template-rows: none;
+  }
+
+  .about-v1-photo {
+    min-height: 240px;
+  }
+
+  .about-v1-cta h2 {
+    font-size: 30px;
+  }
 }
 
 .market-note-band {
@@ -4616,27 +5867,27 @@ h3 {
 }
 
 .page-hero-about {
-  --page-hero-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1800&auto=format&fit=crop");
+  --page-hero-image: url("/images/industry/about-denny-consulting-stage.jpg");
 }
 
 .page-hero-insights {
-  --page-hero-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1800&auto=format&fit=crop");
+  --page-hero-image: url("/images/industry/home-industry-products-2025.jpg");
 }
 
 .page-hero-sourcing {
-  --page-hero-image: url("https://images.unsplash.com/photo-1565008447742-97f6f38c985c?q=80&w=1800&auto=format&fit=crop");
+  --page-hero-image: url("/images/industry/expo-booth-cleaning-suppliers-2026.jpg");
 }
 
 .page-hero-reports {
-  --page-hero-image: url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1800&auto=format&fit=crop");
+  --page-hero-image: url("/images/industry/reports-market-preview-products-2025.jpg");
 }
 
 .page-hero-expo {
-  --page-hero-image: url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1800&auto=format&fit=crop");
+  --page-hero-image: url("/images/industry/about-forum-stage-2025.jpg");
 }
 
 .page-hero-contact {
-  --page-hero-image: url("https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1800&auto=format&fit=crop");
+  --page-hero-image: url("/images/industry/contact-industry-networking-2026.jpg");
 }
 
 .page-hero h1 {
@@ -4879,6 +6130,18 @@ h3 {
   margin: 15px 0 0;
 }
 
+.article-inline-image {
+  margin: 30px 0;
+}
+
+.article-inline-image img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: var(--soft);
+}
+
 .article-prose a {
   color: var(--blue);
   font-weight: 800;
@@ -4906,6 +6169,174 @@ h3 {
   color: var(--ink);
   font-size: 19px;
   line-height: 1.62;
+  font-weight: 850;
+}
+
+.blog-article-hero {
+  border-bottom: 1px solid rgba(226, 232, 240, 0.92);
+  background: #fff;
+  padding: 76px 0 46px;
+}
+
+.blog-article-container {
+  width: min(100% - 40px, 780px);
+  margin: 0 auto;
+}
+
+.blog-article-hero .signal-detail-meta {
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.blog-article-hero .signal-detail-meta span {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.blog-article-hero .signal-detail-meta span + span::before {
+  margin-right: 8px;
+  color: rgba(100, 116, 139, 0.72);
+  content: "/";
+}
+
+.blog-article-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(38px, 4.6vw, 58px);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.blog-article-hero p {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.68;
+}
+
+.blog-article-section {
+  background: #fff;
+  padding: 48px 0 76px;
+}
+
+.blog-article-main {
+  width: 100%;
+  max-width: none;
+}
+
+.blog-article-main h2 {
+  margin-top: 44px;
+  border-top: 0;
+  padding-top: 0;
+  font-size: 25px;
+  line-height: 1.24;
+}
+
+.blog-article-main h3 {
+  margin-top: 32px;
+  font-size: 20px;
+}
+
+.blog-article-main p,
+.blog-article-main li {
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.blog-key-points {
+  margin: 0 0 34px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.92);
+  padding-bottom: 24px;
+}
+
+.blog-key-points strong {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.blog-key-points ul {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+.blog-key-points li {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.blog-author-note {
+  margin-top: 44px;
+  border-top: 1px solid rgba(226, 232, 240, 0.92);
+  padding-top: 22px;
+}
+
+.blog-author-note p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.blog-related-signals {
+  margin-top: 58px;
+  border-top: 1px solid rgba(226, 232, 240, 0.92);
+  padding-top: 34px;
+}
+
+.blog-related-signals h2 {
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.blog-related-signals .related-signal-grid {
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-top: 14px;
+}
+
+.blog-related-signals .related-signal-card {
+  min-height: auto;
+  border: 0;
+  border-top: 1px solid rgba(226, 232, 240, 0.92);
+  border-radius: 0;
+  padding: 20px 0;
+  box-shadow: none;
+}
+
+.blog-related-signals .related-signal-card:first-child {
+  border-top: 0;
+}
+
+.blog-related-signals .related-signal-card p {
+  max-width: 680px;
+}
+
+.blog-article-footer-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 28px;
+  border-top: 1px solid rgba(226, 232, 240, 0.92);
+  padding-top: 24px;
+}
+
+.blog-article-footer-cta a {
+  color: var(--blue);
+  font-size: 15px;
   font-weight: 850;
 }
 
@@ -5223,6 +6654,9 @@ h3 {
   }
 
   .hero-grid,
+  .expo-hero-grid,
+  .expo-intro-layout,
+  .expo-meeting-layout,
   .insights-hero-grid,
   .insights-publication-layout,
   .insights-featured-hero,
@@ -5241,12 +6675,17 @@ h3 {
   .grid-2,
   .grid-3,
   .platform-grid,
+  .expo-track-grid,
+  .expo-snapshot-grid,
+  .expo-category-grid,
   .category-grid,
   .audience-grid,
   .latest-grid,
   .signal-feed-grid,
   .related-signal-grid,
   .module-grid,
+  .expo-audience-grid,
+  .expo-gathering-grid,
   .audience-chip-grid,
   .contact-help-grid,
   .signal-grid,
@@ -5432,6 +6871,33 @@ h3 {
     flex-direction: column;
   }
 
+  .expo-hero {
+    padding: 56px 0 52px;
+  }
+
+  .expo-hero-visual {
+    min-height: 340px;
+  }
+
+  .expo-final-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-expertise {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-expertise-note {
+    grid-column: auto;
+    margin-top: -2px !important;
+  }
+
+  .expo-venue-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .page-hero {
     background:
       radial-gradient(circle at 80% 12%, rgba(111, 168, 255, 0.24), transparent 34%),
@@ -5602,6 +7068,15 @@ h3 {
     padding: 20px;
   }
 
+  .contact-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-expertise-stat {
+    min-height: auto;
+    padding: 18px;
+  }
+
   .insights-grid {
     grid-template-columns: 1fr;
   }
@@ -5701,6 +7176,44 @@ h3 {
   .button-secondary {
     width: 100%;
   }
+
+  .expo-hero h1 {
+    font-size: 38px;
+  }
+
+  .expo-hero-copy > p:not(.eyebrow) {
+    font-size: 16px;
+  }
+
+  .expo-hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .expo-hero-visual {
+    min-height: 280px;
+  }
+
+  .expo-visual-note {
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .expo-agenda-item {
+    grid-template-columns: 1fr;
+  }
+
+  .expo-category-card {
+    min-height: 210px;
+  }
+
+  .expo-meeting-copy h2 {
+    font-size: 38px;
+  }
+
+  .expo-capture-copy h2 {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 920px) {
@@ -5752,7 +7265,7 @@ h3 {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.98) 42%, rgba(255, 255, 255, 0.76) 58%, rgba(255, 255, 255, 0.14) 76%),
     linear-gradient(180deg, transparent 66%, rgba(255, 255, 255, 0.9) 100%),
-    url("https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2200&auto=format&fit=crop");
+    url("/images/industry/about-forum-audience-2025.jpg");
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -6459,7 +7972,7 @@ h3 {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.98) 40%, rgba(255, 255, 255, 0.8) 56%, rgba(255, 255, 255, 0.18) 76%),
     linear-gradient(180deg, rgba(255, 255, 255, 0) 62%, rgba(255, 255, 255, 0.92) 100%),
-    url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2200&auto=format&fit=crop");
+    url("/images/industry/expo-hero-shenzhen-2026.jpg");
   background-position: center;
   background-size: cover;
   padding: 92px 0 46px;
@@ -6689,7 +8202,7 @@ h3 {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.98) 38%, rgba(255, 255, 255, 0.78) 55%, rgba(255, 255, 255, 0.16) 74%),
     linear-gradient(180deg, rgba(255, 255, 255, 0) 68%, rgba(255, 255, 255, 0.9) 100%),
-    url("https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2200&auto=format&fit=crop");
+    url("/images/industry/about-forum-audience-2025.jpg");
   background-position: center;
   background-size: cover;
   padding: 58px 0 40px;
@@ -7078,7 +8591,7 @@ h3 {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.98) 34%, rgba(255, 255, 255, 0.74) 52%, rgba(255, 255, 255, 0.08) 72%),
     linear-gradient(180deg, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0.94) 100%),
-    url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2200&auto=format&fit=crop");
+    url("/images/industry/expo-hero-shenzhen-2026.jpg");
   background-position: center right;
   background-size: cover;
   padding: 44px 0 34px;
@@ -7706,7 +9219,7 @@ h3 {
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.99) 42%, rgba(255, 255, 255, 0.78) 58%, rgba(255, 255, 255, 0.1) 76%),
     linear-gradient(180deg, rgba(255, 255, 255, 0) 76%, rgba(255, 255, 255, 0.96) 100%),
-    url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2200&auto=format&fit=crop");
+    url("/images/industry/expo-hero-shenzhen-2026.jpg");
   background-position: center right;
   background-size: cover;
   padding: 42px 0 38px;
@@ -8950,9 +10463,9 @@ h3 {
 
 .sourcing-v3-hero {
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.99) 38%, rgba(255, 255, 255, 0.76) 55%, rgba(255, 255, 255, 0.1) 75%),
+    linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.98) 38%, rgba(255, 255, 255, 0.74) 55%, rgba(255, 255, 255, 0.14) 78%),
     linear-gradient(180deg, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0.96) 100%),
-    url("/images/sourcing/sourcing-hero-expo.png");
+    url("/images/sourcing/sourcing-hero-intelligence.png");
   background-position: center right;
   background-size: cover;
 }
@@ -9678,7 +11191,7 @@ h3 {
   min-height: 420px;
   background:
     linear-gradient(180deg, rgba(15, 23, 42, 0.18), rgba(15, 23, 42, 0.86)),
-    url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=900&auto=format&fit=crop");
+    url("/images/industry/reports-market-preview-products-2025.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -10312,15 +11825,10 @@ h3 {
   border: 1px solid rgba(216, 229, 243, 0.88);
   border-radius: 6px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(15, 23, 42, 0.86)),
-    linear-gradient(135deg, rgba(37, 99, 235, 0.24), rgba(255, 255, 255, 0.18)),
-    repeating-linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.18) 0,
-      rgba(255, 255, 255, 0.18) 1px,
-      transparent 1px,
-      transparent 18px
-    );
+    linear-gradient(180deg, rgba(15, 23, 42, 0.02), rgba(15, 23, 42, 0.82)),
+    var(--reports-preview-image);
+  background-position: center;
+  background-size: cover;
   padding: 22px;
   color: #FFFFFF;
   filter: saturate(0.92);
@@ -10328,43 +11836,23 @@ h3 {
 }
 
 .reports-v2-preview-card > div::before {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  left: 18px;
-  height: 112px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.28) 18%, transparent 18% 23%, rgba(255, 255, 255, 0.22) 23% 44%, transparent 44% 50%, rgba(255, 255, 255, 0.18) 50% 72%, transparent 72%),
-    rgba(255, 255, 255, 0.08);
-  content: "";
-  opacity: 0.72;
+  display: none;
 }
 
 .reports-v2-preview-card > div::after {
-  position: absolute;
-  top: 120px;
-  right: -26px;
-  color: rgba(255, 255, 255, 0.13);
-  content: "PREVIEW";
-  font-size: 46px;
-  font-weight: 900;
-  letter-spacing: 0;
-  transform: rotate(-18deg);
+  display: none;
 }
 
-.reports-v2-preview-chart > div::before {
-  background:
-    linear-gradient(180deg, transparent 0 22%, rgba(255, 255, 255, 0.18) 22% 24%, transparent 24% 48%, rgba(255, 255, 255, 0.18) 48% 50%, transparent 50%),
-    linear-gradient(90deg, transparent 0 8%, rgba(255, 255, 255, 0.34) 8% 22%, transparent 22% 28%, rgba(255, 255, 255, 0.26) 28% 48%, transparent 48% 54%, rgba(255, 255, 255, 0.2) 54% 78%, transparent 78%);
+.reports-v2-preview-map {
+  --reports-preview-image: url("/images/reports/reports-market-map.png");
 }
 
-.reports-v2-preview-table > div::before {
-  background:
-    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.2) 1px, transparent 1px, transparent 28px),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.16) 0, rgba(255, 255, 255, 0.16) 1px, transparent 1px, transparent 33%),
-    rgba(255, 255, 255, 0.08);
+.reports-v2-preview-chart {
+  --reports-preview-image: url("/images/reports/reports-brand-matrix.png");
+}
+
+.reports-v2-preview-table {
+  --reports-preview-image: url("/images/reports/reports-supplier-signals.png");
 }
 
 .reports-v2-preview-grid span {

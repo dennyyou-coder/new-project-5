@@ -3,157 +3,188 @@ import Link from "next/link";
 import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About World Clean Biz",
   description:
-    "About World Clean Biz, a global cleaning industry intelligence platform built by Denny You to help professionals understand markets, products, suppliers and opportunities."
+    "World Clean Biz is a global cleaning industry intelligence platform built from Denny You's front-line experience across products, brands, suppliers, forums and trade shows."
 };
 
-const focusAreas = [
-  "Industry Signals",
-  "Market Intelligence",
-  "Product Opportunities",
-  "Supplier Context",
-  "Trade Show Intelligence",
-  "Global Industry Connections"
+const stats = [
+  {
+    value: "Since 2006",
+    label: "Front-Line Industry Operator"
+  },
+  {
+    value: "Since 2018",
+    label: "Industry Analysis And Category Signals"
+  },
+  {
+    value: "500-Person",
+    label: "Industry Forums Organized"
+  },
+  {
+    value: "Forums & Trade Shows",
+    label: "Professional Networks Built"
+  }
 ];
 
-const recognitionCards = [
+const networkPhotos = [
   {
-    icon: "star",
-    title: "Leading Industry Influencer",
-    text: "One of the most recognized voices in China's cleaning products industry."
+    className: "about-photo-forum",
+    label: "Industry Forum"
   },
   {
-    icon: "badge",
-    title: "Leading Industry Consultant",
-    text: "Trusted by manufacturers, brands, distributors and industry decision makers."
+    className: "about-photo-speaking",
+    label: "Denny Speaking"
   },
   {
-    icon: "newspaper",
-    title: "Industry Media Operator",
-    text: "Long-term publisher of industry analysis, market observations and product insights."
+    className: "about-photo-panel",
+    label: "Panel Discussion"
   },
   {
-    icon: "calendar",
-    title: "Trade Show & Conference Organizer",
-    text: "Connecting manufacturers, suppliers, buyers and industry professionals through events and industry platforms."
+    className: "about-photo-network",
+    label: "Industry Networking"
   }
-] satisfies { icon: IconName; title: string; text: string }[];
+];
 
-const serveGroups = [
-  "Brands",
-  "Importers",
-  "Distributors",
-  "Retailers",
-  "Manufacturers",
-  "OEM / ODM Buyers",
-  "Investors",
-  "Industry Media"
+const authorityCards: { icon: IconName; title: string; text: string }[] = [
+  {
+    icon: "factory",
+    title: "Operator",
+    text: "Inside the industry since 2006, working directly with products, customers, suppliers and markets."
+  },
+  {
+    icon: "package",
+    title: "Builder",
+    text: "Helping build products, forums, trade shows, industry conversations and professional networks."
+  },
+  {
+    icon: "radio",
+    title: "Influencer",
+    text: "Publishing industry analysis since 2018 and helping professionals understand where the industry is moving."
+  },
+  {
+    icon: "handshake",
+    title: "Connector",
+    text: "Connecting brands, suppliers, buyers, researchers, media and industry professionals across the cleaning ecosystem."
+  }
 ];
 
 export default function AboutPage() {
   return (
     <>
-      <section className="page-hero page-hero-about">
-        <div className="container">
-          <p className="eyebrow">About World Clean Biz</p>
-          <h1>About World Clean Biz</h1>
-          <p>
-            A global cleaning industry intelligence platform built to help
-            industry professionals understand markets, products, suppliers and
-            opportunities.
-          </p>
-          <div className="hero-actions">
-            <Link className="button" href="/insights">
-              Explore Signals
-            </Link>
-            <Link className="button-secondary" href="/contact">
-              Share Inquiry
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container grid-2">
-          <div>
-            <p className="eyebrow">What Is World Clean Biz</p>
-            <h2>What Is World Clean Biz</h2>
+      <section className="about-v1-hero">
+        <div className="container about-v1-hero-grid">
+          <div className="about-v1-hero-copy">
+            <p className="eyebrow">About Denny You</p>
+            <h1>20 Years Inside The Cleaning Industry. Not Just Watching It. Helping Build It.</h1>
             <p>
-              World Clean Biz tracks industry signals, product trends, supplier
-              developments, market opportunities and trade show intelligence
-              across the global cleaning industry.
+              Denny You has worked across products, global customers,
+              suppliers, brands, forums and trade shows since 2006.
             </p>
-            <p>
-              The platform was created to help manufacturers, brands,
-              distributors, buyers and industry professionals make better
-              business decisions through better information.
-            </p>
-          </div>
-          <div className="module-grid">
-            {focusAreas.map((item) => (
-              <div className="module-chip" key={item}>
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section section-soft">
-        <div className="container grid-2">
-          <div className="image-panel image-panel-about">
-            <div>
-              <p className="eyebrow">Built By Denny You</p>
-              <h2>Built By Denny You</h2>
-              <p>
-                A cleaning industry operator, media voice and connector working
-                across products, suppliers, buyers and industry platforms.
-              </p>
+            <div className="about-v1-founder">
+              Operator. Builder. Influencer. Connector.
+            </div>
+            <div className="hero-actions">
+              <Link className="button" href="/reports">
+                Get Free Reports
+              </Link>
+              <Link className="button-secondary" href="/contact">
+                Submit Inquiry
+              </Link>
             </div>
           </div>
-          <div>
+          <div className="about-v1-hero-photo" aria-label="Industry forum audience">
+            <span>Industry forum network</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="section about-v1-mission">
+        <div className="container about-v1-narrow">
+          <p className="eyebrow">Why This Exists</p>
+          <h2>World Clean Biz exists because the cleaning industry is changing faster than ever.</h2>
+          <div className="about-v1-mission-copy">
+            <p>New categories are emerging.</p>
+            <p>Chinese manufacturers are becoming global brands.</p>
+            <p>Supply chains are evolving.</p>
+            <p>Distribution channels are shifting.</p>
             <p>
-              World Clean Biz was founded by Denny You, one of the most
-              recognized industry voices in China's cleaning products sector.
+              Yet much of the industry's most valuable information remains
+              fragmented.
             </p>
             <p>
-              For more than 20 years, Denny has worked across manufacturing,
-              product development, sourcing, industry media and trade shows
-              within the global cleaning industry.
+              World Clean Biz is built to turn those signals into intelligence,
+              and intelligence into meaningful industry connections.
             </p>
             <p>
-              Through years of industry research, factory visits, conferences,
-              interviews and market analysis, he has built one of the most
-              extensive professional networks in the cleaning industry supply
-              chain.
-            </p>
-            <p>
-              Today, Denny is widely recognized as one of the leading
-              influencers and consultants in China's cleaning products industry.
-              His work focuses on helping companies identify product
-              opportunities, understand industry trends and make better
-              business decisions.
+              The platform comes from Denny's years inside products, brands,
+              suppliers, customers, forums and trade shows.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className="about-v1-feature-photo">
         <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Industry Influence & Recognition</p>
-              <h2>Industry Influence & Recognition</h2>
-              <p>
-                World Clean Biz is built on Denny's industry media, consulting,
-                event and supply chain experience.
-              </p>
+          <div className="about-v1-wide-photo">
+            <span>Industry Forum</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="section about-v1-built">
+        <div className="container about-v1-built-grid">
+          <div className="about-v1-speaking-photo" aria-label="Denny speaking at an industry forum">
+            <span>Denny at industry forums</span>
+          </div>
+          <div>
+            <p className="eyebrow">Why Denny</p>
+            <h2>Because he has spent nearly two decades inside the industry.</h2>
+            <p>
+              Denny is not a desk analyst looking at the cleaning industry from
+              the outside. Since 2006, he has worked on the front line with
+              products, customers, suppliers and markets.
+            </p>
+            <p>
+              He has served international customers, participated in product
+              and category growth, and watched multiple cleaning brands move
+              from small teams into major global competitors.
+            </p>
+            <p>
+              Since 2018, he has published widely read industry analysis
+              covering robotic vacuums, floor cleaners, cordless vacuums, pool
+              cleaners, lawn robots, and the companies behind them.
+            </p>
+            <p>
+              He also shares cleaning industry insights with professional
+              research and investment audiences, but his authority starts from
+              the product, customer and market front line.
+            </p>
+            <div className="about-v1-stat-grid">
+              {stats.map((item) => (
+                <div className="about-v1-stat" key={item.label}>
+                  <strong>{item.value}</strong>
+                  <span>{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
-          <div className="case-grid">
-            {recognitionCards.map((item) => (
-              <div className="case-card" key={item.title}>
+        </div>
+      </section>
+
+      <section className="section section-soft about-v1-cover">
+        <div className="container">
+          <div className="about-v1-section-head">
+            <p className="eyebrow">Authority Layer</p>
+            <h2>Operator. Builder. Influencer. Connector.</h2>
+            <p>
+              Denny's authority comes from facts and field experience, not
+              empty titles.
+            </p>
+          </div>
+          <div className="about-v1-cover-grid">
+            {authorityCards.map((item) => (
+              <div className="about-v1-cover-card" key={item.title}>
                 <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
@@ -163,120 +194,69 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section section-soft">
-        <div className="container grid-2">
-          <div>
-            <p className="eyebrow">
-              <InlineIcon name="network" />
-              Industry Connector
-            </p>
-            <h2>Denny Connects The Industry</h2>
-            <p>Most people only see one part of the cleaning industry.</p>
-            <p>
-              Manufacturers see factories. Brands see products. Distributors
-              see channels. Retailers see customers.
-            </p>
-            <p>Denny connects them.</p>
-            <p>
-              For more than 20 years, he has worked with manufacturers, brands,
-              suppliers, distributors, retailers, investors and industry leaders
-              across the global cleaning industry.
-            </p>
-            <p>
-              Through industry media, conferences, sourcing projects and trade
-              shows, he continuously connects people, products, technologies
-              and opportunities.
-            </p>
-            <p>
-              This unique position provides access to information,
-              relationships and market opportunities that are difficult to see
-              from a single perspective. World Clean Biz was built on this
-              network.
-            </p>
-          </div>
-          <blockquote className="about-quote">
-            <span>Manufacturers build products.</span>
-            <span>Brands build markets.</span>
-            <strong>Denny connects them.</strong>
-          </blockquote>
-        </div>
-      </section>
-
-      <section className="section">
+      <section className="section about-v1-network">
         <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">
-                <InlineIcon name="users" />
-                Who We Serve
-              </p>
-              <h2>Who We Serve</h2>
-              <p>
-                World Clean Biz is designed for professionals looking to
-                understand the industry, discover opportunities and make better
-                business decisions.
-              </p>
-            </div>
+          <div className="about-v1-section-head">
+            <p className="eyebrow">Beyond Content</p>
+            <h2>Helping build industry conversations, forums and trade show networks.</h2>
+            <p>
+              From 500-person industry forums to professional trade show
+              networks, Denny has spent years helping cleaning professionals
+              meet, compare signals and build useful business connections.
+            </p>
           </div>
-          <div className="module-grid audience-chip-grid">
-            {serveGroups.map((item) => (
-              <div className="module-chip" key={item}>
-                {item}
+          <div className="about-v1-photo-grid">
+            {networkPhotos.map((item) => (
+              <div className={`about-v1-photo ${item.className}`} key={item.label}>
+                <span>{item.label}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section section-soft">
-        <div className="container grid-2">
-          <div>
-            <p className="eyebrow">Why It Matters</p>
-            <h2>Why It Matters</h2>
-            <p>
-              The cleaning industry is becoming more global, more technical and
-              more competitive.
-            </p>
-            <p>
-              New products, new technologies and new business models are
-              creating opportunities across the industry.
-            </p>
-            <p>
-              Better information helps companies make better decisions. World
-              Clean Biz exists to help industry professionals stay informed,
-              connected and prepared for what comes next.
-            </p>
-          </div>
-          <div className="highlight-panel">
-            <div className="module-kicker">Trust Page</div>
-            <h3>Better information helps companies make better decisions.</h3>
-            <p>
-              World Clean Biz connects industry signals, product opportunities,
-              supplier context and global industry relationships.
-            </p>
+      <section className="section about-v1-expo-section">
+        <div className="container">
+          <div className="about-v1-expo">
+            <div>
+              <p className="eyebrow">
+                <InlineIcon name="globe" />
+                World Clean Expo
+              </p>
+              <h2>From Industry Signals To Industry Connection</h2>
+              <p>
+                The same industry network behind World Clean Biz also supports
+                World Clean Expo.
+              </p>
+              <p>
+                World Clean Expo is designed to connect global buyers, cleaning
+                brands, Chinese manufacturers, component suppliers, and industry
+                service providers in one focused industry event.
+              </p>
+              <Link className="button-secondary" href="/world-clean-expo">
+                Get Expo Updates
+              </Link>
+            </div>
+            <div className="about-v1-expo-image" aria-label="World Clean Expo industry event">
+              <span>World Clean Expo</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container cta-band">
-          <div className="grid-2">
-            <div>
-              <h2>Better Information Leads To Better Decisions</h2>
-              <p>
-                Explore industry signals, discover new opportunities and
-                connect with the people shaping the future of the cleaning
-                industry.
-              </p>
-            </div>
-            <div className="hero-actions">
-              <Link className="button" href="/insights">
-                Explore Signals
-              </Link>
-              <Link className="button-secondary" href="/contact">
-                Share Inquiry
-              </Link>
-            </div>
+      <section className="section about-v1-cta-section">
+        <div className="container about-v1-cta">
+          <div>
+            <p className="eyebrow">Stay Connected to the Industry</p>
+            <h2>Get industry updates, supplier insights, market analysis, and World Clean Expo news.</h2>
+          </div>
+          <div className="hero-actions">
+            <Link className="button" href="/reports">
+              Get Free Reports
+            </Link>
+            <Link className="button-secondary" href="/contact">
+              Submit Inquiry
+            </Link>
           </div>
         </div>
       </section>

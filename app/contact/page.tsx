@@ -11,47 +11,61 @@ export const metadata: Metadata = {
 
 const helpCards = [
   {
-    icon: "radio",
-    title: "Industry Information",
-    text: "Market trends, category questions, industry developments and product signals."
-  },
-  {
     icon: "factory",
-    title: "Sourcing / OEM",
-    text: "Product sourcing, OEM, ODM, private label and China supplier questions."
-  },
-  {
-    icon: "file",
-    title: "Market Reports",
-    text: "Category research, market intelligence and report requests."
+    title: "Sourcing Inquiry",
+    text: "For buyers looking for China-based suppliers, OEM/ODM partners, private label opportunities, or product sourcing support.",
+    href: "/contact?type=sourcing#inquiry-form"
   },
   {
     icon: "calendar",
-    title: "World Clean Expo",
-    text: "Exhibiting, visiting, sponsorship and event cooperation."
+    title: "Expo Inquiry",
+    text: "For companies interested in exhibiting, visiting, partnering with, or promoting cleaning industry trade shows and events.",
+    href: "/contact?type=expo#inquiry-form"
   },
   {
-    icon: "megaphone",
-    title: "Media & Cooperation",
-    text: "Interviews, partnerships, content cooperation and industry collaboration."
+    icon: "newspaper",
+    title: "Media Inquiry",
+    text: "For interviews, press releases, market insights, editorial collaboration, and industry news submissions.",
+    href: "/contact?type=media#inquiry-form"
+  },
+  {
+    icon: "message",
+    title: "General Inquiry",
+    text: "For other business questions, partnership ideas, or general communication with World Clean Biz.",
+    href: "/contact?type=general#inquiry-form"
   }
-] satisfies { icon: IconName; title: string; text: string }[];
+] satisfies { icon: IconName; title: string; text: string; href: string }[];
 
-const reachOutReasons = [
+const expertiseStats = [
   {
-    icon: "badge",
-    title: "Industry Knowledge",
-    text: "20+ years of cleaning industry experience across products, factories, brands and supply chains."
+    value: "Since 2006",
+    label: "Inside the Cleaning Industry"
   },
   {
-    icon: "network",
-    title: "Global Industry Network",
-    text: "Connections with manufacturers, suppliers, brands, buyers and industry professionals."
+    value: "Real Network",
+    label: "Products, Sourcing, Media, Forums and Expo"
   },
   {
-    icon: "target",
-    title: "Business Opportunities",
-    text: "Support for product opportunities, sourcing projects, market information and industry collaboration."
+    value: "Industry Route",
+    label: "The Right Context To The Right Channel"
+  }
+] satisfies { value: string; label: string }[];
+
+const resourceCards = [
+  {
+    icon: "factory",
+    title: "Sourcing Context",
+    text: "Supplier, product category, OEM/ODM, and private label conversations."
+  },
+  {
+    icon: "calendar",
+    title: "Expo Connection",
+    text: "Trade show, exhibiting, visiting, sponsorship, and event cooperation inquiries."
+  },
+  {
+    icon: "radio",
+    title: "Industry Information",
+    text: "Market signals, editorial cooperation, interviews, and industry news submissions."
   }
 ] satisfies { icon: IconName; title: string; text: string }[];
 
@@ -60,16 +74,16 @@ export default function ContactPage() {
     <>
       <section className="page-hero page-hero-contact">
         <div className="container">
-          <p className="eyebrow">Inquiry</p>
-          <h1>Share Your Cleaning Industry Question</h1>
+          <p className="eyebrow">Contact World Clean Biz</p>
+          <h1>Choose the Right Channel for Your Cleaning Industry Inquiry</h1>
           <p>
-            Whether you're looking for sourcing support, market information,
-            industry connections or business opportunities, we'd love to hear
-            from you.
+            Tell us what you are looking for. Your inquiry will be routed
+            through a real cleaning industry network built from years of
+            product, sourcing, media, forum and expo experience.
           </p>
           <div className="hero-actions">
             <Link className="button" href="#inquiry-form">
-              Send Your Inquiry
+              Submit Inquiry
             </Link>
           </div>
         </div>
@@ -80,20 +94,25 @@ export default function ContactPage() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Inquiry Types</p>
-              <h2>What Can We Help With?</h2>
+              <h2>Choose the Right Channel</h2>
               <p>
-                Choose the direction that best matches your question, project
-                or cooperation idea.
+                Start with the entry that matches your need. The form will use
+                that category so your message goes in the right direction.
               </p>
             </div>
           </div>
           <div className="case-grid contact-help-grid">
             {helpCards.map((item) => (
-              <div className="case-card contact-help-card" key={item.title}>
+              <Link
+                className="case-card contact-help-card"
+                href={item.href}
+                key={item.title}
+              >
                 <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-              </div>
+                <span>Submit Inquiry</span>
+              </Link>
             ))}
           </div>
         </div>
@@ -108,12 +127,13 @@ export default function ContactPage() {
             </p>
             <h2>Send Your Inquiry</h2>
             <p>
-              Tell us what you are exploring. The more specific your question,
-              the easier it is for us to understand how we can help.
+              Share the business context behind your request. A specific note
+              helps us understand whether this is sourcing, expo, media,
+              market information, or another cooperation opportunity.
             </p>
             <p className="meta">
-              Please include your product category, target market, expected
-              quantity or business goal if relevant.
+              Useful details include product category, target market, expected
+              quantity, event name, website, timeline, or business goal.
             </p>
           </div>
           <div className="contact-form-panel">
@@ -124,18 +144,58 @@ export default function ContactPage() {
 
       <section className="section">
         <div className="container">
+          <div className="contact-expertise">
+            <div>
+              <p className="eyebrow">
+                <InlineIcon name="badge" />
+                Real Industry Network
+              </p>
+              <h2>Your Inquiry Goes Through A Real Cleaning Industry Network</h2>
+              <p>
+                World Clean Biz connects cleaning industry needs with the
+                right sourcing, expo, media, market information or business
+                context.
+              </p>
+            </div>
+            <div className="contact-expertise-media">
+              <div className="contact-expertise-photo">
+                <img
+                  src="/images/industry/about-denny-portrait-event.jpg"
+                  alt="Denny You at a cleaning industry event"
+                />
+                <span>Industry network</span>
+              </div>
+              <div className="contact-expertise-grid">
+                {expertiseStats.map((item) => (
+                  <div className="contact-expertise-stat" key={item.label}>
+                    <strong>{item.value}</strong>
+                    <span>{item.label}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="contact-expertise-note">
+                Specific context helps route each inquiry to the right channel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-soft">
+        <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Why Reach Out</p>
-              <h2>Why Reach Out?</h2>
+              <p className="eyebrow">World Clean Biz</p>
+              <h2>Connecting Cleaning Industry Needs With The Right Resources</h2>
               <p>
-                World Clean Biz connects industry knowledge, supplier context
-                and business opportunities across the cleaning industry.
+                World Clean Biz connects global cleaning industry professionals
+                with China sourcing opportunities, trade events, market
+                information, and media collaboration.
               </p>
             </div>
           </div>
           <div className="grid-3">
-            {reachOutReasons.map((item) => (
+            {resourceCards.map((item) => (
               <div className="card" key={item.title}>
                 <IconBadge name={item.icon} />
                 <h3>{item.title}</h3>
@@ -146,25 +206,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container cta-band">
-          <div className="grid-2">
-            <div>
-              <IconBadge name="message" />
-              <h2>Every Great Business Opportunity Starts With A Conversation.</h2>
-              <p>
-                Tell us what you're exploring. We'll help you find the right
-                direction.
-              </p>
-            </div>
-            <div>
-              <Link className="button" href="#inquiry-form">
-                Send Your Inquiry
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

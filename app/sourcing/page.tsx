@@ -5,7 +5,7 @@ import { InlineIcon, type IconName } from "@/components/Icon";
 export const metadata: Metadata = {
   title: "Sourcing",
   description:
-    "Work with Denny You and World Clean Biz to find the next growth opportunity through cleaning industry intelligence, supplier context and market direction."
+    "Work with Denny You and World Clean Biz on sourcing intelligence shaped by front-line cleaning industry product, supplier and market experience."
 };
 
 const heroCards = [
@@ -23,7 +23,7 @@ const heroCards = [
   },
   {
     number: "03",
-    lead: "Best-Selling Product Generated Profits For Years.",
+    lead: "Your Best-Selling Product Generated Profits For Years.",
     yet: "Yet",
     result: "Today It's The Inventory That's Draining Your Cash Flow."
   },
@@ -200,17 +200,17 @@ export default function SourcingPage() {
           <div className="sourcing-v3-hero-copy">
             <p className="sourcing-v3-kicker">Sourcing</p>
             <h1>
-              You&apos;ve Been In The Industry
-              <span>For 20 Years.</span>
+              Sourcing Intelligence
+              <span>From The Front Line.</span>
               <strong>
-                So Why Does It Feel Like
+                Supplier Access Is Not Enough
                 <br />
-                You&apos;re Falling Behind?
+                Without Better Judgement.
               </strong>
             </h1>
             <p className="sourcing-v3-hero-subcopy">
-              Experience used to be your advantage.
-              <span>But the industry has changed.</span>
+              Sourcing is no longer just finding suppliers.
+              <span>It requires judgement on products, factories, timing and market direction.</span>
             </p>
             <div className="sourcing-v3-hero-rows">
               {heroCards.map((item) => (
@@ -229,11 +229,11 @@ export default function SourcingPage() {
               ))}
             </div>
             <div className="sourcing-v3-hero-close">
-              <span>The Industry Already Changed.</span>
-              <strong>Did You?</strong>
+              <span>The advantage is knowing what still matters.</span>
+              <strong>Before the window closes.</strong>
             </div>
             <Link className="sourcing-v3-button" href="/contact">
-              Talk With Denny →
+              Submit Inquiry
             </Link>
           </div>
         </div>
@@ -319,7 +319,10 @@ export default function SourcingPage() {
             <div className="sourcing-v3-sources">
               <p className="sourcing-v3-kicker">Why Denny Sees It Earlier</p>
               <h2>Most Companies Need More Than Supplier Lists.</h2>
-              <p>They Need Better Judgement.</p>
+              <p>
+                They need judgement from someone who has worked with products,
+                customers, suppliers and markets from the front line.
+              </p>
               <ul>
                 {signalSources.map((item) => (
                   <li key={item.label}>
@@ -349,8 +352,8 @@ export default function SourcingPage() {
           <p className="sourcing-v3-kicker">Next Step</p>
           <div className="sourcing-v3-cta-head">
             <h2>
-              The Next Industry Giant Is Being Built Right Now.
-              <span>Will You Be Part Of It?</span>
+              The Next Opportunity Starts With Better Sourcing Intelligence.
+              <span>Send The Right Context First.</span>
             </h2>
           </div>
           <ul>
@@ -365,7 +368,7 @@ export default function SourcingPage() {
             ))}
           </ul>
           <Link className="sourcing-v3-button" href="/contact">
-            Talk With Denny →
+            Submit Inquiry
           </Link>
         </div>
       </section>

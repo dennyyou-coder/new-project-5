@@ -31,7 +31,7 @@ export function Footer() {
           <div>
             <strong>Platform</strong>
             <Link href="/insights">Insights</Link>
-            <Link href="/market-reports">Market Reports</Link>
+            <Link href="/reports">Market Reports</Link>
             <Link href="/sourcing">Sourcing</Link>
             <Link href="/world-clean-expo">World Clean Expo</Link>
           </div>
@@ -39,7 +39,7 @@ export function Footer() {
             <strong>Connect</strong>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
-            <Link href="/contact">Share Inquiry</Link>
+            <Link href="/contact">Submit Inquiry</Link>
           </div>
         </div>
       </div>

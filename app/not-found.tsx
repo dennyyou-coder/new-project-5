@@ -20,10 +20,10 @@ export default function NotFound() {
             </div>
             <div className="hero-actions">
               <Link className="button" href="/insights">
-                Explore Signals
+                Latest Industry Signals
               </Link>
               <Link className="button-secondary" href="/contact">
-                Share Inquiry
+                Submit Inquiry
               </Link>
             </div>
           </div>

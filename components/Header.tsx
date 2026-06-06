@@ -4,7 +4,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/insights", label: "Insights" },
   { href: "/sourcing", label: "Sourcing" },
-  { href: "/market-reports", label: "Market Reports" },
+  { href: "/reports", label: "Market Reports" },
   { href: "/world-clean-expo", label: "World Clean Expo" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" }
@@ -33,7 +33,7 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <Link className="header-cta" href="/market-reports">
+          <Link className="header-cta" href="/reports">
             Get Free Reports
           </Link>
         </div>

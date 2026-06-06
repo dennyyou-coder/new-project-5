@@ -9,10 +9,9 @@ const heroSignals: { icon: IconName; label: string }[] = [
 ];
 
 const credibilityTags = [
-  "20+ Years Industry Experience",
-  "9,000+ Industry Professionals",
-  "Global Supplier Network",
-  "Industry Events & Intelligence"
+  "Since 2006 - Front-Line Industry Operator",
+  "Since 2018 - Industry Analysis And Category Signals",
+  "Forums & Expos - Thousands Of Professionals"
 ];
 
 const opportunityCards: { icon: IconName; title: string; text: string }[] = [
@@ -39,10 +38,10 @@ const opportunityCards: { icon: IconName; title: string; text: string }[] = [
 ];
 
 const dennyPoints = [
-  "20+ years in the cleaning industry",
-  "Connected with manufacturers, brands and suppliers",
-  "Organizer of industry events and forums",
-  "Long-term observer of global cleaning industry trends"
+  "Operator inside the cleaning industry since 2006",
+  "Builder of products, forums, trade shows and industry networks",
+  "Industry analysis and category signals since 2018",
+  "Connector across brands, suppliers, buyers and professionals"
 ];
 
 const helpCards: {
@@ -57,70 +56,54 @@ const helpCards: {
     icon: "radio",
     title: "Industry Signals",
     text: "Follow the latest market changes, product shifts and business opportunities.",
-    cta: "Explore Signals",
+    cta: "Latest Industry Signals",
     href: "/insights",
-    image:
-      "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=900&auto=format&fit=crop"
+    image: "/images/industry/home-hero-cleaning-forum-2025.jpg"
   },
   {
     icon: "search",
     title: "Sourcing Intelligence",
     text: "Understand suppliers, manufacturers and product opportunities before making sourcing decisions.",
-    cta: "Learn About Sourcing",
+    cta: "Submit Inquiry",
     href: "/sourcing",
-    image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&auto=format&fit=crop"
+    image: "/images/industry/home-supplier-components-2025.jpg"
   },
   {
     icon: "file",
     title: "Free Market Reports",
     text: "Get free cleaning industry reports and market insights.",
-    cta: "Get Reports",
-    href: "/market-reports",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=900&auto=format&fit=crop"
+    cta: "Get Free Reports",
+    href: "/reports",
+    image: "/images/industry/reports-market-preview-products-2025.jpg"
   },
   {
     icon: "globe",
     title: "World Clean Expo",
     text: "Connect with manufacturers, brands, buyers and industry professionals.",
-    cta: "Visit Expo Page",
+    cta: "Get Expo Updates",
     href: "/world-clean-expo",
-    image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=900&auto=format&fit=crop"
+    image: "/images/industry/home-expo-networking-2025.jpg"
   }
 ];
 
-const testimonials = [
+const trustSignals = [
   {
-    name: "James Mitchell",
-    title: "Purchasing Director",
-    country: "United States",
-    companyType: "Overseas Distributor",
-    image:
-      "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=320&h=320&auto=format&fit=crop&crop=faces",
-    quote:
-      "World Clean Biz helps us understand which cleaning products and suppliers deserve attention before the market becomes crowded."
+    stat: "Since 2006",
+    title: "Inside The Cleaning Industry",
+    text: "Front-line work across products, suppliers, customers and category shifts.",
+    image: "/images/industry/home-industry-products-2025.jpg"
   },
   {
-    name: "Linda Chen",
-    title: "Product Development Manager",
-    country: "China",
-    companyType: "Cleaning Product Manufacturer",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=320&h=320&auto=format&fit=crop&crop=faces",
-    quote:
-      "Denny understands both the factory side and the market side. His insights are practical for companies looking for global opportunities."
+    stat: "Since 2018",
+    title: "Publishing Industry Signals",
+    text: "Long-running cleaning industry analysis helping professionals read category movement.",
+    image: "/images/industry/about-denny-speaking-forum-2025.jpg"
   },
   {
-    name: "Markus Schneider",
-    title: "Industry Consultant",
-    country: "Germany",
-    companyType: "Industry Professional",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=320&h=320&auto=format&fit=crop&crop=faces",
-    quote:
-      "This is not just industry news. It helps connect signals, suppliers and real business opportunities."
+    stat: "Forums & Expos",
+    title: "Real Industry Connections",
+    text: "Professional gatherings, trade show activity and direct industry conversations.",
+    image: "/images/industry/home-expo-networking-2025.jpg"
   }
 ];
 
@@ -130,22 +113,26 @@ export default function HomePage() {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <p className="eyebrow">Providing Profitable Opportunities And Intelligence</p>
+            <p className="eyebrow">Global Cleaning Industry Intelligence And Connections</p>
             <h1>
               Global Cleaning
               <span>Industry Intelligence</span>
             </h1>
+            <strong className="hero-declaration">
+              Built From 20 Years Inside The Cleaning Industry.
+              <span>Not Just Watching It. Helping Build It.</span>
+            </strong>
             <p className="hero-copy">
-              Discover product opportunities, supply chain opportunities,
-              market opportunities and industry signals for the global cleaning
-              industry.
+              World Clean Biz turns signals from products, suppliers, brands,
+              customers, forums and trade shows into practical intelligence and
+              meaningful industry connections.
             </p>
             <div className="hero-actions">
               <Link className="button" href="/insights">
-                Explore Signals
+                Latest Industry Signals
               </Link>
-              <Link className="button-secondary" href="/market-reports">
-                Get Free Market Reports
+              <Link className="button-secondary" href="/reports">
+                Get Free Reports
               </Link>
             </div>
             <div className="hero-trust-tags" aria-label="World Clean Biz credibility">
@@ -178,14 +165,15 @@ export default function HomePage() {
             <p className="eyebrow">What Is World Clean Biz?</p>
             <h2>The Global Hub For Cleaning Industry Opportunities</h2>
             <p>
-              World Clean Biz helps cleaning industry professionals discover
-              profitable opportunities, market signals and supply chain
-              intelligence across the global cleaning industry.
+              World Clean Biz is built from front-line cleaning industry
+              experience across products, brands, suppliers, customers, forums
+              and trade shows.
             </p>
             <p>
-              It is built for manufacturers, brands, distributors, retailers,
-              sourcing teams and industry professionals who need to understand
-              where the next business opportunities are coming from.
+              Its purpose is simple: turn industry signals into intelligence,
+              and intelligence into useful connections for manufacturers,
+              brands, distributors, retailers, sourcing teams and industry
+              professionals.
             </p>
           </div>
           <div className="module-grid opportunity-card-grid">
@@ -203,14 +191,12 @@ export default function HomePage() {
       <section className="section">
         <div className="container grid-2 denny-section-grid">
           <div>
-            <p className="eyebrow">Why Denny?</p>
-            <h2>Why Industry Leaders Follow Denny</h2>
+            <p className="eyebrow">The Person Behind The Industry Network</p>
+            <h2>Built By Someone Inside The Industry</h2>
             <p>
-              Denny has spent more than 20 years in the cleaning industry,
-              connecting manufacturers, brands, suppliers, distributors and
-              industry professionals. World Clean Biz is built on his long-term
-              industry observation, supplier network and ability to identify
-              business opportunities before they become obvious.
+              Denny has spent nearly two decades inside the cleaning industry,
+              not only watching category changes, but helping build products,
+              forums, trade shows and professional networks around them.
             </p>
             <ul className="feature-list denny-point-list">
               {dennyPoints.map((item) => (
@@ -218,13 +204,13 @@ export default function HomePage() {
               ))}
             </ul>
             <Link className="button-secondary" href="/about">
-              Learn More About Denny
+              About Denny
             </Link>
           </div>
           <div className="denny-photo-panel">
             <img
-              src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop"
-              alt="Industry professionals in a business forum discussion"
+              src="/images/industry/about-denny-speaking-forum-2025.jpg"
+              alt="Denny speaking at a cleaning industry forum"
             />
             <div className="denny-photo-caption">
               <strong>Denny Connects The Industry</strong>
@@ -238,22 +224,21 @@ export default function HomePage() {
         <div className="container">
           <Link
             className="featured-signal-editorial"
-            href="/insights/global-cleaning-industry-center-vision"
+            href="/insights/maytronics-forty-years-of-robotic-pool-cleaners"
           >
             <div className="featured-signal-cover">
               <img
-                src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=1400&auto=format&fit=crop"
-                alt="Global trade show audience and industry conference stage"
+                src="/images/industry/sourcing-hero-expo-products-2026.jpg"
+                alt="Robotic pool cleaner products at an industry exhibition"
               />
             </div>
             <div className="featured-signal-copy">
               <p className="eyebrow">Featured Signal</p>
-              <h2>Why The Global Cleaning Industry Needs A Shared Information Center</h2>
+              <h2>Maytronics And Forty Years Of Robotic Pool Cleaners</h2>
               <p>
-                The cleaning industry is changing faster than ever. New
-                products, new manufacturers, new channels and new market
-                opportunities are emerging globally. World Clean Biz helps
-                industry professionals see these signals earlier.
+                Maytronics built the Dolphin brand over decades, but the
+                robotic pool cleaner category is now moving into a more
+                competitive consumer electronics phase.
               </p>
               <span>Read Featured Signal</span>
             </div>
@@ -296,26 +281,24 @@ export default function HomePage() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Industry Trust</p>
-              <h2>Trusted By Industry Professionals</h2>
+              <h2>Industry Footprint</h2>
               <p>
-                Practical industry information, supplier context and market
-                signals for people making cleaning industry decisions.
+                World Clean Biz builds trust through real industry experience,
+                visible activity and long-term category involvement.
               </p>
             </div>
           </div>
           <div className="grid-3">
-            {testimonials.map((item) => (
-              <div className="card testimonial-card" key={item.name}>
-                <div className="testimonial-person">
-                  <img src={item.image} alt={`${item.name}, ${item.title}`} />
-                  <div>
-                    <strong>{item.name}</strong>
-                    <span>{item.title}</span>
-                    <small>{item.country}</small>
-                  </div>
+            {trustSignals.map((item) => (
+              <div className="card trust-signal-card" key={item.title}>
+                <div className="trust-signal-image">
+                  <img src={item.image} alt={`${item.title} visual proof`} />
                 </div>
-                <div className="testimonial-type">{item.companyType}</div>
-                <p className="testimonial-quote">"{item.quote}"</p>
+                <div className="trust-signal-body">
+                  <span>{item.stat}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -335,10 +318,10 @@ export default function HomePage() {
             </div>
             <div className="hero-actions">
               <Link className="button" href="/insights">
-                Explore Signals
+                Latest Industry Signals
               </Link>
-              <Link className="button-secondary" href="/market-reports">
-                Get Free Market Reports
+              <Link className="button-secondary" href="/reports">
+                Get Free Reports
               </Link>
             </div>
           </div>

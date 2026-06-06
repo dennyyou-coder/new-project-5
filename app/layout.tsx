@@ -24,9 +24,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Denny You" }],
   creator: "Denny You",
   publisher: "World Clean Biz",
-  alternates: {
-    canonical: "/"
-  },
   robots: {
     index: true,
     follow: true
