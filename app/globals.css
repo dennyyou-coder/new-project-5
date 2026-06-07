@@ -8541,6 +8541,48 @@ h3 {
   background: rgba(255, 255, 255, 0.94);
 }
 
+.tally-cta-panel {
+  display: grid;
+  gap: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(232, 241, 255, 0.72)),
+    #FFFFFF;
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.tally-cta-eyebrow {
+  margin: 0;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tally-cta-panel h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 26px;
+  line-height: 1.12;
+}
+
+.tally-cta-panel p:not(.tally-cta-eyebrow) {
+  max-width: 620px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.tally-cta-button {
+  width: fit-content;
+  min-width: 220px;
+  margin-top: 6px;
+}
+
 .expo-final-section {
   background:
     linear-gradient(180deg, rgba(9, 28, 52, 0.1), rgba(9, 28, 52, 0.16)),

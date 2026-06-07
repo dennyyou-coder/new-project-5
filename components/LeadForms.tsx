@@ -87,13 +87,16 @@ export function ReportsLeadForm() {
 
 export function ExpoLeadForm({ roles: _roles }: { roles: string[] }) {
   return (
-    <div className="form expo-interest-form expo-capture-form">
-      <TallyButton form="expo">
+    <div className="tally-cta-panel expo-capture-form">
+      <p className="tally-cta-eyebrow">World Clean Expo</p>
+      <h3>Receive Expo Updates</h3>
+      <p>
+        Get visitor registration timing, exhibitor news, forum agenda and
+        business matching updates.
+      </p>
+      <TallyButton className="button tally-cta-button" form="expo">
         Get Expo Updates
       </TallyButton>
-      <p className="form-status">
-        Complete a short form to receive World Clean Expo updates.
-      </p>
     </div>
   );
 }

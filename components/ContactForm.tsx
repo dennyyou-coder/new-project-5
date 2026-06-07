@@ -17,13 +17,16 @@ export function ContactForm() {
   const form = inquiryFormMap[type] || "contact";
 
   return (
-    <div className="form">
-      <TallyButton form={form}>
+    <div className="tally-cta-panel contact-tally-panel">
+      <p className="tally-cta-eyebrow">Lead Capture</p>
+      <h3>Choose The Right Inquiry Form</h3>
+      <p>
+        Your submission goes through Tally and is saved directly in Airtable for
+        follow-up.
+      </p>
+      <TallyButton className="button tally-cta-button" form={form}>
         Submit Inquiry
       </TallyButton>
-      <p className="form-status">
-        Complete a short form and your inquiry will be added to our lead system.
-      </p>
     </div>
   );
 }
