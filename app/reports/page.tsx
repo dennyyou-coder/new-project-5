@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ReportsLeadForm } from "@/components/LeadForms";
+import { ReportsLeadForm, TallyReportButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
   title: "2026 Global Cleaning Industry Report",
@@ -153,9 +152,7 @@ export default function ReportsPage() {
               </article>
             ))}
           </div>
-          <Link className="reports-v1-inline-cta" href="#get-report">
-            Get Free Reports
-          </Link>
+          <TallyReportButton className="reports-v1-inline-cta" />
         </div>
       </section>
 

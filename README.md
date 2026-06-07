@@ -27,3 +27,14 @@ npm run dev
 ```
 
 Then open `http://localhost:3000`.
+
+## Lead collection
+
+Website calls to action open Tally forms. Tally sends submissions to Airtable:
+
+- Get Free Reports: `https://tally.so/r/ZjeGvz`
+- Sourcing Inquiry: `https://tally.so/r/1ARG4M`
+- World Clean Expo Updates: `https://tally.so/r/lbzVN6`
+- Contact World Clean Biz: `https://tally.so/r/MeV8L8`
+
+The Airtable base is `World Clean Biz Leads`, table `Leads`.

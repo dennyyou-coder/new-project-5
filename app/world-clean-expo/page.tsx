@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 import { ExpoLeadForm } from "@/components/LeadForms";
+import { TALLY_FORMS } from "@/lib/tallyForms";
 
 export const metadata: Metadata = {
   title: "World Clean Expo 2026 | Global Cleaning Industry Updates",
@@ -222,7 +223,11 @@ export default function WorldCleanExpoPage() {
               <span>China</span>
             </div>
             <div className="hero-actions">
-              <Link className="button" href="#expo-updates">
+              <Link
+                className="button"
+                href={TALLY_FORMS.expo.url}
+                target="_blank"
+              >
                 Get Expo Updates
               </Link>
               <Link className="button-secondary" href="#why-visit">
@@ -471,7 +476,11 @@ export default function WorldCleanExpoPage() {
             <p>The future of the global cleaning industry starts here.</p>
           </div>
           <div className="hero-actions">
-            <Link className="button" href="#expo-updates">
+            <Link
+              className="button"
+              href={TALLY_FORMS.expo.url}
+              target="_blank"
+            >
               Get Expo Updates
             </Link>
           </div>

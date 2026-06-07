@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
+import { TallyReportButton } from "@/components/LeadForms";
+import { TALLY_FORMS } from "@/lib/tallyForms";
 
 export const metadata: Metadata = {
   title: "About World Clean Biz",
@@ -69,6 +71,39 @@ const authorityCards: { icon: IconName; title: string; text: string }[] = [
   }
 ];
 
+const dennyJourney = [
+  {
+    year: "2006",
+    title: "Industry Operator",
+    text: "Worked across products, brands and supply chains inside the cleaning industry."
+  },
+  {
+    year: "2009",
+    title: "Product Builder",
+    text: "Built and supported cleaning product businesses for global markets."
+  },
+  {
+    year: "2017",
+    title: "Industry Author & Influencer",
+    text: "Started publishing industry articles and videos followed by cleaning professionals."
+  },
+  {
+    year: "2019",
+    title: "Industry Forum Organizer",
+    text: "Hosted forums connecting cleaning brands, manufacturers and suppliers."
+  },
+  {
+    year: "2020",
+    title: "Investor & Analyst Speaker",
+    text: "Shared industry insights with investors, financial firms and venture capital audiences."
+  },
+  {
+    year: "2025+",
+    title: "World Clean Expo & Global Network",
+    text: "Building World Clean Expo and a global network for the cleaning industry."
+  }
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -85,49 +120,18 @@ export default function AboutPage() {
               Operator. Builder. Influencer. Connector.
             </div>
             <div className="hero-actions">
-              <Link className="button" href="/reports">
-                Get Free Reports
-              </Link>
-              <Link className="button-secondary" href="/contact">
+              <TallyReportButton />
+              <Link
+                className="button-secondary"
+                href={TALLY_FORMS.contact.url}
+                target="_blank"
+              >
                 Submit Inquiry
               </Link>
             </div>
           </div>
           <div className="about-v1-hero-photo" aria-label="Industry forum audience">
             <span>Industry forum network</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="section about-v1-mission">
-        <div className="container about-v1-narrow">
-          <p className="eyebrow">Why This Exists</p>
-          <h2>World Clean Biz exists because the cleaning industry is changing faster than ever.</h2>
-          <div className="about-v1-mission-copy">
-            <p>New categories are emerging.</p>
-            <p>Chinese manufacturers are becoming global brands.</p>
-            <p>Supply chains are evolving.</p>
-            <p>Distribution channels are shifting.</p>
-            <p>
-              Yet much of the industry's most valuable information remains
-              fragmented.
-            </p>
-            <p>
-              World Clean Biz is built to turn those signals into intelligence,
-              and intelligence into meaningful industry connections.
-            </p>
-            <p>
-              The platform comes from Denny's years inside products, brands,
-              suppliers, customers, forums and trade shows.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="about-v1-feature-photo">
-        <div className="container">
-          <div className="about-v1-wide-photo">
-            <span>Industry Forum</span>
           </div>
         </div>
       </section>
@@ -172,6 +176,31 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="about-v1-journey-section">
+        <div className="container">
+          <div className="about-v1-journey">
+            <div className="about-v1-journey-head">
+              <p className="eyebrow">From Operator To Industry Connector</p>
+              <h2>Denny&apos;s Industry Journey</h2>
+              <p>
+                A 20-year path across products, suppliers, content, forums,
+                investors and World Clean Expo.
+              </p>
+            </div>
+            <div className="about-v1-journey-line" aria-hidden="true" />
+            <div className="about-v1-journey-grid">
+              {dennyJourney.map((item) => (
+                <article className="about-v1-journey-card" key={item.year}>
+                  <span>{item.year}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section section-soft about-v1-cover">
         <div className="container">
           <div className="about-v1-section-head">
@@ -190,6 +219,39 @@ export default function AboutPage() {
                 <p>{item.text}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section about-v1-mission">
+        <div className="container about-v1-narrow">
+          <p className="eyebrow">Why This Exists</p>
+          <h2>World Clean Biz exists because the cleaning industry is changing faster than ever.</h2>
+          <div className="about-v1-mission-copy">
+            <p>New categories are emerging.</p>
+            <p>Chinese manufacturers are becoming global brands.</p>
+            <p>Supply chains are evolving.</p>
+            <p>Distribution channels are shifting.</p>
+            <p>
+              Yet much of the industry's most valuable information remains
+              fragmented.
+            </p>
+            <p>
+              World Clean Biz is built to turn those signals into intelligence,
+              and intelligence into meaningful industry connections.
+            </p>
+            <p>
+              The platform comes from Denny's years inside products, brands,
+              suppliers, customers, forums and trade shows.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-v1-feature-photo">
+        <div className="container">
+          <div className="about-v1-wide-photo">
+            <span>Industry Forum</span>
           </div>
         </div>
       </section>
@@ -233,7 +295,11 @@ export default function AboutPage() {
                 brands, Chinese manufacturers, component suppliers, and industry
                 service providers in one focused industry event.
               </p>
-              <Link className="button-secondary" href="/world-clean-expo">
+              <Link
+                className="button-secondary"
+                href={TALLY_FORMS.expo.url}
+                target="_blank"
+              >
                 Get Expo Updates
               </Link>
             </div>
@@ -251,10 +317,12 @@ export default function AboutPage() {
             <h2>Get industry updates, supplier insights, market analysis, and World Clean Expo news.</h2>
           </div>
           <div className="hero-actions">
-            <Link className="button" href="/reports">
-              Get Free Reports
-            </Link>
-            <Link className="button-secondary" href="/contact">
+            <TallyReportButton />
+            <Link
+              className="button-secondary"
+              href={TALLY_FORMS.contact.url}
+              target="_blank"
+            >
               Submit Inquiry
             </Link>
           </div>

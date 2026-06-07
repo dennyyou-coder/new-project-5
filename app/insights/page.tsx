@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { NewsletterLeadForm, TallyReportButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
-import { NewsletterLeadForm } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
   title: "Insights",
@@ -90,9 +90,7 @@ function SidebarContent({ latestSignals }: { latestSignals: Insight[] }) {
           </div>
         </div>
         <h3>Get field-informed industry trends, supplier intelligence and market opportunities from World Clean Biz.</h3>
-        <Link className="button" href="/reports">
-          Get Free Reports
-        </Link>
+        <TallyReportButton />
       </div>
 
       <div className="sidebar-box about-denny-sidebar">

@@ -1,6 +1,9 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
@@ -71,6 +74,9 @@ export default function RootLayout({
           <main id="main-content">{children}</main>
           <Footer />
         </div>
+        <Script src="https://tally.so/widgets/embed.js" strategy="afterInteractive" />
+        <GoogleAnalytics />
+        <Analytics />
       </body>
     </html>
   );

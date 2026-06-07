@@ -2,6 +2,7 @@
 .next
 node_modules
 site-screenshots
+mockups
 tsconfig.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*

@@ -1,116 +1,106 @@
 "use client";
 
-import { FormEvent, useId, useState } from "react";
+import { ReactNode } from "react";
+import { TALLY_FORMS, type TallyFormKey } from "@/lib/tallyForms";
 
-const recipient = "denny@worldcleanbiz.com";
-const mailFallback = `If your email client does not open, please contact ${recipient} directly.`;
+const popupWidth = 620;
 
-function submitMailto(
-  event: FormEvent<HTMLFormElement>,
-  subjectPrefix: string,
-  fields: string[]
-) {
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const subject = encodeURIComponent(subjectPrefix);
-  const body = encodeURIComponent(
-    fields
-      .map((field) => `${field}: ${data.get(field) || ""}`)
-      .join("\n")
+declare global {
+  interface Window {
+    Tally?: {
+      openPopup: (
+        formId: string,
+        options?: {
+          layout?: "modal";
+          width?: number;
+          emoji?: {
+            text: string;
+            animation: string;
+          };
+        }
+      ) => void;
+    };
+  }
+}
+
+export function TallyReportButton({
+  className = "button",
+  children = "Get Free Reports",
+  onOpen
+}: {
+  className?: string;
+  children?: ReactNode;
+  onOpen?: () => void;
+}) {
+  return (
+    <TallyButton className={className} form="reports" onOpen={onOpen}>
+      {children}
+    </TallyButton>
   );
+}
 
-  window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+export function TallyButton({
+  className = "button",
+  children,
+  form,
+  onOpen
+}: {
+  className?: string;
+  children: ReactNode;
+  form: TallyFormKey;
+  onOpen?: () => void;
+}) {
+  function openTallyForm() {
+    const tallyForm = TALLY_FORMS[form];
+
+    onOpen?.();
+
+    if (window.Tally?.openPopup) {
+      window.Tally.openPopup(tallyForm.id, {
+        layout: "modal",
+        width: popupWidth
+      });
+      return;
+    }
+
+    window.open(tallyForm.url, "_blank", "noopener,noreferrer");
+  }
+
+  return (
+    <button className={className} onClick={openTallyForm} type="button">
+      {children}
+    </button>
+  );
 }
 
 export function ReportsLeadForm() {
-  const emailId = useId();
-  const [status, setStatus] = useState("");
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    submitMailto(event, "World Clean Biz report request", ["Email"]);
-    setStatus(`Your email client should open with the report request. ${mailFallback}`);
-  }
-
   return (
-    <form className="reports-v1-hero-form" onSubmit={handleSubmit}>
-      <label htmlFor={emailId}>Email address</label>
+    <div className="reports-v1-hero-form" aria-label="Get free reports">
+      <label>Free report access</label>
       <div>
-        <input
-          id={emailId}
-          name="Email"
-          placeholder="name@company.com"
-          required
-          type="email"
-        />
-        <button type="submit">Get Free Reports</button>
+        <TallyReportButton />
       </div>
-      <p>Enter your email to receive the download link.</p>
-      {status ? (
-        <p className="form-status" role="status">
-          {status}
-        </p>
-      ) : null}
-    </form>
+      <p>Complete a short form to receive the report link.</p>
+    </div>
   );
 }
 
-export function ExpoLeadForm({ roles }: { roles: string[] }) {
-  const [status, setStatus] = useState("");
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    submitMailto(event, "World Clean Expo update request", [
-      "Email",
-      "Company",
-      "Country",
-      "Role"
-    ]);
-    setStatus(`Your email client should open with the expo update request. ${mailFallback}`);
-  }
-
+export function ExpoLeadForm({ roles: _roles }: { roles: string[] }) {
   return (
-    <form className="form expo-interest-form expo-capture-form" onSubmit={handleSubmit}>
-      <label>
-        Email
-        <input name="Email" placeholder="name@company.com" type="email" required />
-      </label>
-      <label>
-        Company
-        <input name="Company" placeholder="Company name" required />
-      </label>
-      <label>
-        Country
-        <input name="Country" placeholder="Country or region" required />
-      </label>
-      <label>
-        Role
-        <select name="Role" required>
-          {roles.map((item) => (
-            <option key={item}>{item}</option>
-          ))}
-        </select>
-      </label>
-      <button className="button" type="submit">
+    <div className="form expo-interest-form expo-capture-form">
+      <TallyButton form="expo">
         Get Expo Updates
-      </button>
-      {status ? (
-        <p className="form-status" role="status">
-          {status}
-        </p>
-      ) : null}
-    </form>
+      </TallyButton>
+      <p className="form-status">
+        Complete a short form to receive World Clean Expo updates.
+      </p>
+    </div>
   );
 }
 
 export function NewsletterLeadForm() {
-  const [status, setStatus] = useState("");
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    submitMailto(event, "World Clean Biz newsletter and report request", ["Email"]);
-    setStatus(`Your email client should open with the request. ${mailFallback}`);
-  }
-
   return (
-    <form className="insights-newsletter-cta" onSubmit={handleSubmit}>
+    <div className="insights-newsletter-cta">
       <div>
         <p className="eyebrow">Newsletter & Reports</p>
         <h2>Stay Ahead Of The Cleaning Industry</h2>
@@ -120,16 +110,8 @@ export function NewsletterLeadForm() {
         </p>
       </div>
       <div className="newsletter-form-row">
-        <input aria-label="Email Address" name="Email" placeholder="Email Address" type="email" required />
-        <button className="button" type="submit">
-          Get Free Reports
-        </button>
+        <TallyReportButton />
       </div>
-      {status ? (
-        <p className="form-status" role="status">
-          {status}
-        </p>
-      ) : null}
-    </form>
+    </div>
   );
 }
