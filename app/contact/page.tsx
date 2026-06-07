@@ -38,6 +38,27 @@ const helpCards = [
   }
 ] satisfies { icon: IconName; title: string; text: string; href: string }[];
 
+const inquiryRoutes = [
+  {
+    label: "Product / Supplier",
+    title: "Sourcing Inquiry",
+    text: "Share product category, target market, supplier criteria and timeline.",
+    href: TALLY_FORMS.sourcing.url
+  },
+  {
+    label: "Event / Network",
+    title: "Expo Updates",
+    text: "Receive World Clean Expo updates for visiting, exhibiting or partnership.",
+    href: TALLY_FORMS.expo.url
+  },
+  {
+    label: "General / Media",
+    title: "Contact World Clean Biz",
+    text: "Send media, report, partnership or general business questions.",
+    href: TALLY_FORMS.contact.url
+  }
+] satisfies { label: string; title: string; text: string; href: string }[];
+
 export default function ContactPage() {
   return (
     <>
@@ -93,15 +114,15 @@ export default function ContactPage() {
 
       <section className="section section-soft" id="inquiry-form">
         <div className="container contact-form-layout">
-          <div>
+          <div className="contact-form-copy">
             <p className="eyebrow">
               <InlineIcon name="send" />
               Inquiry Form
             </p>
-            <h2>Send Your Inquiry</h2>
+            <h2>Send The Right Context First</h2>
             <p>
-              Share the core business context behind your request. Keep it
-              short if you are not ready to provide details yet.
+              Choose the form that best matches your request. Each submission
+              goes through Tally and is saved in Airtable for follow-up.
             </p>
             <div
               className="contact-form-image"
@@ -109,6 +130,24 @@ export default function ContactPage() {
             />
           </div>
           <div className="contact-form-panel">
+            <div className="contact-route-head">
+              <p className="eyebrow">Choose A Route</p>
+              <h3>What do you want to discuss?</h3>
+            </div>
+            <div className="contact-route-list">
+              {inquiryRoutes.map((item) => (
+                <Link
+                  className="contact-route-card"
+                  href={item.href}
+                  key={item.title}
+                  target="_blank"
+                >
+                  <span>{item.label}</span>
+                  <strong>{item.title}</strong>
+                  <p>{item.text}</p>
+                </Link>
+              ))}
+            </div>
             <Suspense fallback={null}>
               <ContactForm />
             </Suspense>
