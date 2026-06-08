@@ -10087,6 +10087,17 @@ h3 {
   margin: 30px 0;
 }
 
+.article-inline-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 30px 0;
+}
+
+.article-inline-image-grid .article-inline-image {
+  margin: 0;
+}
+
 .article-inline-image img {
   display: block;
   width: 100%;
@@ -11157,6 +11168,10 @@ h3 {
 
   .article-prose {
     padding: 22px;
+  }
+
+  .article-inline-image-grid {
+    grid-template-columns: 1fr;
   }
 
   .signal-detail-main {

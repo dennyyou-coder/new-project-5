@@ -115,7 +115,12 @@ export function markdownToHtml(markdown: string) {
     listOpen = type;
   }
 
-  for (const line of lines) {
+  function markdownImage(line: string) {
+    return line.trim().match(/^!\[(.*?)\]\((.*?)\)$/);
+  }
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
     const trimmed = line.trim();
     if (!trimmed) {
       closeList();
@@ -128,10 +133,33 @@ export function markdownToHtml(markdown: string) {
     } else if (trimmed.startsWith("## ")) {
       closeList();
       html.push(`<h2>${inline(trimmed.slice(3))}</h2>`);
-    } else if (/^!\[(.*?)\]\((.*?)\)$/.test(trimmed)) {
+    } else if (markdownImage(trimmed)) {
       closeList();
-      const image = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
-      if (image) {
+      const images: RegExpMatchArray[] = [];
+      let cursor = index;
+      while (cursor < lines.length) {
+        const candidate = lines[cursor].trim();
+        if (!candidate) {
+          cursor += 1;
+          continue;
+        }
+        const image = markdownImage(candidate);
+        if (!image) break;
+        images.push(image);
+        cursor += 1;
+      }
+
+      if (images.length > 1) {
+        html.push(`<div class="article-inline-image-grid">`);
+        for (const image of images) {
+          html.push(
+            `<figure class="article-inline-image"><img src="${image[2]}" alt="${inline(image[1])}" /></figure>`
+          );
+        }
+        html.push(`</div>`);
+        index = cursor - 1;
+      } else {
+        const image = images[0];
         html.push(
           `<figure class="article-inline-image"><img src="${image[2]}" alt="${inline(image[1])}" /></figure>`
         );
