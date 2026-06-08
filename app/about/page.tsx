@@ -1,73 +1,56 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
-import { TallyReportButton } from "@/components/LeadForms";
-import { TALLY_FORMS } from "@/lib/tallyForms";
+import { IconBadge, type IconName } from "@/components/Icon";
+import { TallyButton, TallyReportButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
-  title: "About World Clean Biz",
+  title: "About Denny You | World Clean Biz",
   description:
-    "World Clean Biz is a global cleaning industry intelligence platform built from Denny You's front-line experience across products, brands, suppliers, forums and trade shows."
+    "Denny You helps cleaning industry professionals read category movement earlier, find the right resources and make better business decisions."
 };
 
-const stats = [
-  {
-    value: "Since 2006",
-    label: "Front-Line Industry Operator"
-  },
-  {
-    value: "Since 2018",
-    label: "Industry Analysis And Category Signals"
-  },
-  {
-    value: "500-Person",
-    label: "Industry Forums Organized"
-  },
-  {
-    value: "Forums & Trade Shows",
-    label: "Professional Networks Built"
-  }
-];
-
-const networkPhotos = [
-  {
-    className: "about-photo-forum",
-    label: "Industry Forum"
-  },
-  {
-    className: "about-photo-speaking",
-    label: "Denny Speaking"
-  },
-  {
-    className: "about-photo-panel",
-    label: "Panel Discussion"
-  },
-  {
-    className: "about-photo-network",
-    label: "Industry Networking"
-  }
-];
-
-const authorityCards: { icon: IconName; title: string; text: string }[] = [
+const proofCards: { icon: IconName; title: string; text: string }[] = [
   {
     icon: "factory",
-    title: "Operator",
-    text: "Inside the industry since 2006, working directly with products, customers, suppliers and markets."
+    title: "20+ Years Inside The Industry",
+    text: "Worked across products, customers, suppliers and markets since 2006."
   },
   {
     icon: "package",
-    title: "Builder",
-    text: "Helping build products, forums, trade shows, industry conversations and professional networks."
+    title: "Product & Supplier Front Line",
+    text: "Helped build and support cleaning product businesses for global markets."
   },
   {
-    icon: "radio",
-    title: "Influencer",
-    text: "Publishing industry analysis since 2018 and helping professionals understand where the industry is moving."
+    icon: "message",
+    title: "Industry Forums & Networks",
+    text: "Organized forums and built professional cleaning industry conversations."
   },
   {
     icon: "handshake",
-    title: "Connector",
-    text: "Connecting brands, suppliers, buyers, researchers, media and industry professionals across the cleaning ecosystem."
+    title: "Trusted By Industry Professionals",
+    text: "Followed by brands, suppliers, investors and cleaning professionals."
+  }
+];
+
+const proofPhotos = [
+  {
+    image: "/images/industry/about-denny-speaking-forum-2025.jpg",
+    label: "Denny Speaking"
+  },
+  {
+    image: "/images/industry/about-forum-audience-2025.jpg",
+    label: "Forum Audience"
+  },
+  {
+    image: "/images/industry/about-panel-discussion-2025.jpg",
+    label: "Panel Discussion"
+  },
+  {
+    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
+    label: "Supplier Meeting"
+  },
+  {
+    image: "/images/industry/expo-business-matching-2026.jpg",
+    label: "Business Matching"
   }
 ];
 
@@ -75,32 +58,32 @@ const dennyJourney = [
   {
     year: "2006",
     title: "Industry Operator",
-    text: "Worked across products, brands and supply chains inside the cleaning industry."
+    text: "Worked inside cleaning products, customers and supply chains."
   },
   {
     year: "2009",
     title: "Product Builder",
-    text: "Built and supported cleaning product businesses for global markets."
+    text: "Supported cleaning product businesses for global markets."
   },
   {
     year: "2017",
-    title: "Industry Author & Influencer",
-    text: "Started publishing industry articles and videos followed by cleaning professionals."
+    title: "Industry Author",
+    text: "Started publishing category analysis for cleaning professionals."
   },
   {
     year: "2019",
-    title: "Industry Forum Organizer",
-    text: "Hosted forums connecting cleaning brands, manufacturers and suppliers."
+    title: "Forum Organizer",
+    text: "Hosted forums connecting brands, manufacturers and suppliers."
   },
   {
     year: "2020",
     title: "Investor & Analyst Speaker",
-    text: "Shared industry insights with investors, financial firms and venture capital audiences."
+    text: "Shared industry views with financial and venture audiences."
   },
   {
     year: "2025+",
-    title: "World Clean Expo & Global Network",
-    text: "Building World Clean Expo and a global network for the cleaning industry."
+    title: "World Clean Expo",
+    text: "Building a global platform for cleaning industry connections."
   }
 ];
 
@@ -111,67 +94,68 @@ export default function AboutPage() {
         <div className="container about-v1-hero-grid">
           <div className="about-v1-hero-copy">
             <p className="eyebrow">About Denny You</p>
-            <h1>20 Years Inside The Cleaning Industry. Not Just Watching It. Helping Build It.</h1>
+            <h1>20 Years Inside The Cleaning Industry.</h1>
             <p>
-              Denny You has worked across products, global customers,
-              suppliers, brands, forums and trade shows since 2006.
+              Denny helps companies read category movement earlier, find the
+              right industry resources and make better business decisions.
             </p>
             <div className="about-v1-founder">
-              Operator. Builder. Influencer. Connector.
+              Operator. Product Builder. Forum Organizer. Industry Connector.
             </div>
             <div className="hero-actions">
-              <TallyReportButton />
-              <Link
-                className="button-secondary"
-                href={TALLY_FORMS.contact.url}
-                target="_blank"
-              >
-                Submit Inquiry
-              </Link>
+              <TallyButton className="button" form="contact">
+                Talk With Denny
+              </TallyButton>
+              <TallyReportButton className="button-secondary" />
             </div>
           </div>
-          <div className="about-v1-hero-photo" aria-label="Industry forum audience">
-            <span>Industry forum network</span>
+          <div className="about-v1-hero-photo" aria-label="Denny speaking at an industry forum">
+            <span>Denny Speaking</span>
           </div>
         </div>
       </section>
 
-      <section className="section about-v1-built">
-        <div className="container about-v1-built-grid">
-          <div className="about-v1-speaking-photo" aria-label="Denny speaking at an industry forum">
-            <span>Denny at industry forums</span>
+      <section className="section about-v1-cover">
+        <div className="container">
+          <div className="about-v1-section-head">
+            <p className="eyebrow">Why Denny Can Help</p>
+            <h2>Industry judgement built from front-line experience.</h2>
+            <p>
+              Denny&apos;s value comes from years of working with products,
+              suppliers, customers, forums and market conversations inside the
+              cleaning industry.
+            </p>
           </div>
-          <div>
-            <p className="eyebrow">Why Denny</p>
-            <h2>Because he has spent nearly two decades inside the industry.</h2>
+          <div className="about-v1-cover-grid">
+            {proofCards.map((item) => (
+              <div className="about-v1-cover-card" key={item.title}>
+                <IconBadge name={item.icon} />
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section about-proof-section">
+        <div className="container">
+          <div className="about-v1-section-head">
+            <p className="eyebrow">Industry Proof</p>
+            <h2>Proof From The Industry Front Line</h2>
             <p>
-              Denny is not a desk analyst looking at the cleaning industry from
-              the outside. Since 2006, he has worked on the front line with
-              products, customers, suppliers and markets.
+              Forums, supplier meetings, panels and industry conversations give
+              Denny a direct view of where cleaning industry opportunities are
+              moving.
             </p>
-            <p>
-              He has served international customers, participated in product
-              and category growth, and watched multiple cleaning brands move
-              from small teams into major global competitors.
-            </p>
-            <p>
-              Since 2018, he has published widely read industry analysis
-              covering robotic vacuums, floor cleaners, cordless vacuums, pool
-              cleaners, lawn robots, and the companies behind them.
-            </p>
-            <p>
-              He also shares cleaning industry insights with professional
-              research and investment audiences, but his authority starts from
-              the product, customer and market front line.
-            </p>
-            <div className="about-v1-stat-grid">
-              {stats.map((item) => (
-                <div className="about-v1-stat" key={item.label}>
-                  <strong>{item.value}</strong>
-                  <span>{item.label}</span>
-                </div>
-              ))}
-            </div>
+          </div>
+          <div className="about-proof-gallery">
+            {proofPhotos.map((photo, index) => (
+              <figure className={index === 0 ? "is-featured" : ""} key={photo.label}>
+                <img src={photo.image} alt="" />
+                <figcaption>{photo.label}</figcaption>
+              </figure>
+            ))}
           </div>
         </div>
       </section>
@@ -201,130 +185,20 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section section-soft about-v1-cover">
-        <div className="container">
-          <div className="about-v1-section-head">
-            <p className="eyebrow">Authority Layer</p>
-            <h2>Operator. Builder. Influencer. Connector.</h2>
-            <p>
-              Denny's authority comes from facts and field experience, not
-              empty titles.
-            </p>
-          </div>
-          <div className="about-v1-cover-grid">
-            {authorityCards.map((item) => (
-              <div className="about-v1-cover-card" key={item.title}>
-                <IconBadge name={item.icon} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section about-v1-mission">
-        <div className="container about-v1-narrow">
-          <p className="eyebrow">Why This Exists</p>
-          <h2>World Clean Biz exists because the cleaning industry is changing faster than ever.</h2>
-          <div className="about-v1-mission-copy">
-            <p>New categories are emerging.</p>
-            <p>Chinese manufacturers are becoming global brands.</p>
-            <p>Supply chains are evolving.</p>
-            <p>Distribution channels are shifting.</p>
-            <p>
-              Yet much of the industry's most valuable information remains
-              fragmented.
-            </p>
-            <p>
-              World Clean Biz is built to turn those signals into intelligence,
-              and intelligence into meaningful industry connections.
-            </p>
-            <p>
-              The platform comes from Denny's years inside products, brands,
-              suppliers, customers, forums and trade shows.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="about-v1-feature-photo">
-        <div className="container">
-          <div className="about-v1-wide-photo">
-            <span>Industry Forum</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="section about-v1-network">
-        <div className="container">
-          <div className="about-v1-section-head">
-            <p className="eyebrow">Beyond Content</p>
-            <h2>Helping build industry conversations, forums and trade show networks.</h2>
-            <p>
-              From 500-person industry forums to professional trade show
-              networks, Denny has spent years helping cleaning professionals
-              meet, compare signals and build useful business connections.
-            </p>
-          </div>
-          <div className="about-v1-photo-grid">
-            {networkPhotos.map((item) => (
-              <div className={`about-v1-photo ${item.className}`} key={item.label}>
-                <span>{item.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section about-v1-expo-section">
-        <div className="container">
-          <div className="about-v1-expo">
-            <div>
-              <p className="eyebrow">
-                <InlineIcon name="globe" />
-                World Clean Expo
-              </p>
-              <h2>From Industry Signals To Industry Connection</h2>
-              <p>
-                The same industry network behind World Clean Biz also supports
-                World Clean Expo.
-              </p>
-              <p>
-                World Clean Expo is designed to connect global buyers, cleaning
-                brands, Chinese manufacturers, component suppliers, and industry
-                service providers in one focused industry event.
-              </p>
-              <Link
-                className="button-secondary"
-                href={TALLY_FORMS.expo.url}
-                target="_blank"
-              >
-                Get Expo Updates
-              </Link>
-            </div>
-            <div className="about-v1-expo-image" aria-label="World Clean Expo industry event">
-              <span>World Clean Expo</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="section about-v1-cta-section">
         <div className="container about-v1-cta">
           <div>
-            <p className="eyebrow">Stay Connected to the Industry</p>
-            <h2>Get industry updates, supplier insights, market analysis, and World Clean Expo news.</h2>
+            <p className="eyebrow">Next Step</p>
+            <h2>Want Denny&apos;s View On Your Market?</h2>
+            <p>
+              Talk with Denny or get his free industry reports first.
+            </p>
           </div>
           <div className="hero-actions">
-            <TallyReportButton />
-            <Link
-              className="button-secondary"
-              href={TALLY_FORMS.contact.url}
-              target="_blank"
-            >
-              Submit Inquiry
-            </Link>
+            <TallyButton className="button" form="contact">
+              Talk With Denny
+            </TallyButton>
+            <TallyReportButton className="button-secondary" />
           </div>
         </div>
       </section>

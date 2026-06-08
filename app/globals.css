@@ -9335,6 +9335,63 @@ h3 {
   line-height: 1.5;
 }
 
+.about-proof-section {
+  background: #ffffff;
+}
+
+.about-proof-gallery {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  grid-auto-rows: 210px;
+  gap: 14px;
+}
+
+.about-proof-gallery figure {
+  position: relative;
+  min-height: 210px;
+  margin: 0;
+  border: 1px solid rgba(201, 217, 234, 0.92);
+  border-radius: 8px;
+  background: var(--soft);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.about-proof-gallery figure.is-featured {
+  grid-row: span 2;
+}
+
+.about-proof-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-proof-gallery figure::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(22, 59, 103, 0), rgba(22, 59, 103, 0.54));
+  content: "";
+}
+
+.about-proof-gallery figcaption {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  left: 14px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 10px 12px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+  backdrop-filter: blur(10px);
+}
+
 .about-v1-photo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -9429,6 +9486,14 @@ h3 {
   text-wrap: balance;
 }
 
+.about-v1-cta p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
 .about-v1-cta .hero-actions {
   min-width: max-content;
   margin-top: 0;
@@ -9443,8 +9508,13 @@ h3 {
 
   .about-v1-cover-grid,
   .about-v1-stat-grid,
-  .about-v1-journey-grid {
+  .about-v1-journey-grid,
+  .about-proof-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-proof-gallery figure.is-featured {
+    grid-row: span 1;
   }
 
   .about-v1-journey-line {
@@ -9502,8 +9572,13 @@ h3 {
   .about-v1-cover-grid,
   .about-v1-stat-grid,
   .about-v1-journey-grid,
-  .about-v1-photo-grid {
+  .about-v1-photo-grid,
+  .about-proof-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .about-proof-gallery {
+    grid-auto-rows: 220px;
   }
 
   .about-v1-journey-section {
