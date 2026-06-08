@@ -10223,6 +10223,22 @@ h3 {
   line-height: 1.62;
 }
 
+.blog-article-cover {
+  aspect-ratio: 16 / 9;
+  margin: 0 0 34px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: var(--soft);
+}
+
+.blog-article-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .blog-author-note {
   margin-top: 44px;
   border-top: 1px solid rgba(226, 232, 240, 0.92);

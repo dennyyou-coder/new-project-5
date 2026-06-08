@@ -109,6 +109,12 @@ export default async function InsightDetailPage({ params }: Props) {
               </div>
             ) : null}
 
+            {article.coverImage ? (
+              <figure className="blog-article-cover">
+                <img src={article.coverImage} alt={article.title} />
+              </figure>
+            ) : null}
+
             {article.youtubeId ? (
               <div className="article-video">
                 <iframe
