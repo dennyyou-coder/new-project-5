@@ -36,6 +36,7 @@ const CATEGORY_ALIASES: Record<string, Category> = {
   "Supply Chain": "Supply Chain",
   "Company Analysis": "Industry",
   Strategy: "Industry",
+  "Industry Analysis": "Industry",
   "Industry Strategy": "Industry",
   Industry: "Industry",
   "Industry Events": "Trade Shows",
