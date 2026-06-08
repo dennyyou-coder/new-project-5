@@ -35,59 +35,36 @@ const heroProducts = [
   }
 ];
 
-const patternCards = [
-  {
-    step: "01",
-    title: "Technology Breakthrough",
-    text: "Automation becomes reliable enough for daily use."
-  },
-  {
-    step: "02",
-    title: "Early Adoption",
-    text: "Early users prove the product solves a real problem."
-  },
-  {
-    step: "03",
-    title: "Brand And Supplier Expansion",
-    text: "New factories, brands and channels enter quickly."
-  },
-  {
-    step: "04",
-    title: "Mainstream Category",
-    text: "The product becomes a standard appliance or business tool."
-  }
-];
-
 const categoryCards = [
   {
     title: "Robotic Vacuums",
     image: "/images/sourcing/robotic-vacuums.png",
-    text: "The all-in-one robot vacuum is becoming a mainstream household appliance."
+    text: "Still reshaped by new functions, brands and channels."
   },
   {
     title: "Hard Floor Washers",
     image: "/images/sourcing/floor-washers.png",
-    text: "A fast-growing floorcare category changing how homes are cleaned."
+    text: "A fast-growing floorcare category with active product iteration."
   },
   {
     title: "Robotic Lawn Mowers",
     image: "/images/sourcing/lawn-robots.png",
-    text: "Outdoor robots are following the path once taken by robot vacuums."
+    text: "Outdoor robots are entering a faster adoption cycle."
   },
   {
     title: "Pool Robots",
     image: "/images/sourcing/pool-robots.png",
-    text: "Automated pool maintenance is moving into consumer channels."
+    text: "Automated maintenance is moving into broader retail channels."
   },
   {
     title: "Commercial Cleaning Robots",
     image: "/images/sourcing/commercial-cleaning.png",
-    text: "Commercial robots are entering buildings, facilities and service operations."
+    text: "Facilities and service operators are testing automation models."
   },
   {
     title: "Emerging Categories",
     image: "/images/industry/home-industry-products-2025.jpg",
-    text: "The next major cleaning category may still be early, fragmented or overlooked."
+    text: "The next category may still be early, fragmented or overlooked."
   }
 ];
 
@@ -178,44 +155,36 @@ const dennyJourney = [
 
 const sourcingItems = [
   {
-    step: "01",
-    title: "Find Hot-Selling Products Faster",
-    text: "Identify proven product opportunities earlier."
+    imageTitle: "Industry Signals",
+    imageText: "Trade Shows / Supplier Discovery / Market Trends",
+    image: "/images/industry/expo-hall-shenzhen-2026.jpg",
+    title: "Opportunity Discovery",
+    points: [
+      "Find categories and products worth sourcing before they become crowded",
+      "Track product and supplier movement from industry events and market signals"
+    ]
   },
   {
-    step: "02",
-    title: "Build Exclusive Products",
-    text: "Develop differentiated products with stronger margins."
+    imageTitle: "Product Development",
+    imageText: "Concept / Design / Testing / Iteration",
+    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
+    title: "Product Direction",
+    points: [
+      "Turn market signals into product ideas, features and differentiation",
+      "Avoid building another commodity product",
+      "Read component and supplier signals before product decisions"
+    ]
   },
   {
-    step: "03",
-    title: "Turn Market Signals Into Product Ideas",
-    text: "Transform industry intelligence into product direction."
-  },
-  {
-    step: "04",
-    title: "One-Stop Support From Idea To Production",
-    text: "Move from concept to manufacturing faster."
-  },
-  {
-    step: "05",
-    title: "Improve Quality And Reduce After-Sales Risk",
-    text: "Strengthen supplier selection and quality control."
-  },
-  {
-    step: "06",
-    title: "Get Continuous New Product Updates",
-    text: "Stay close to category shifts and supplier movement."
-  },
-  {
-    step: "07",
-    title: "Build Flexible Global Production Options",
-    text: "Support production across multiple regions."
-  },
-  {
-    step: "08",
-    title: "Control Competitiveness From The Component Supply Chain",
-    text: "Create advantage from key components upward."
+    imageTitle: "Supply Chain Execution",
+    imageText: "Manufacturing / Quality / Delivery",
+    image: "/images/industry/sourcing-product-components-2025.jpg",
+    title: "Execution Support",
+    points: [
+      "Connect sourcing direction with supplier evaluation and execution options",
+      "Reduce quality and after-sales risk before committing to production",
+      "Explore flexible production paths across supplier resources"
+    ]
   }
 ];
 
@@ -322,45 +291,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="home-v8-section home-v8-pattern-section">
-        <div className="home-v8-container">
-          <div className="home-v8-pattern-head">
-            <div>
-              <p className="home-v8-eyebrow">The Pattern</p>
-              <h2>We&apos;ve Seen This Story Before.</h2>
-            </div>
-            <div className="home-v8-pattern-copy">
-              <p>Fifteen years ago, robot vacuums were a niche product.</p>
-              <p>Today they are a mainstream household appliance.</p>
-              <p>
-                Now the same pattern is beginning to appear in robotic lawn
-                mowers, pool robots, commercial cleaning and other emerging
-                categories.
-              </p>
-              <p>
-                The companies that recognize the pattern early usually capture
-                the biggest opportunities.
-              </p>
-            </div>
-          </div>
-          <div className="home-v8-timeline">
-            {patternCards.map((card) => (
-              <article className="home-v8-card home-v8-timeline-card" key={card.step}>
-                <span>{card.step}</span>
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="home-v8-section home-v8-soft home-v8-categories-section">
         <div className="home-v8-container">
           <div className="home-v8-centered-head">
-            <p className="home-v8-eyebrow">Where The Growth Is Happening</p>
-            <h2>Six Categories Shaping The Next Decade Of Cleaning</h2>
-            <p>The same adoption cycle is now happening across multiple categories.</p>
+            <p className="home-v8-eyebrow">Where Opportunities Are Forming</p>
+            <h2>Categories Where The Next Opportunities Are Forming</h2>
+            <p>
+              World Clean Biz tracks fast-changing cleaning product categories
+              where new suppliers, brands and demand signals are emerging.
+            </p>
           </div>
           <div className="home-v8-category-grid">
             {categoryCards.map((category, index) => (
@@ -467,23 +406,30 @@ export default function HomePage() {
 
       <section className="home-v8-section home-v8-sourcing-section">
         <div className="home-v8-container home-v8-sourcing-grid">
-          <div className="home-v8-section-copy">
+          <div className="home-v8-centered-head home-v8-sourcing-head">
             <p className="home-v8-eyebrow">Sourcing Service</p>
-            <h2>Supplier Discovery For Cleaning Products</h2>
+            <h2>From Market Insight To Product Execution</h2>
             <p>
-              Find reliable manufacturers, compare products and connect with
-              factories across the global cleaning supply chain.
+              We help you move from category judgement to supplier direction,
+              product decisions and execution support.
             </p>
-            <Link className="button" href="/sourcing">
-              Start A Sourcing Inquiry
-            </Link>
           </div>
           <div className="home-v8-sourcing-items">
             {sourcingItems.map((item) => (
               <article className="home-v8-card home-v8-sourcing-card" key={item.title}>
-                <span>{item.step}</span>
+                <div className="home-v8-sourcing-image">
+                  <img src={item.image} alt={`${item.imageTitle} in the cleaning industry`} />
+                  <div>
+                    <strong>{item.imageTitle}</strong>
+                    <span>{item.imageText}</span>
+                  </div>
+                </div>
                 <h3>{item.title}</h3>
-                <p>{item.text}</p>
+                <ul>
+                  {item.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>
