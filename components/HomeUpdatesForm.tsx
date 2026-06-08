@@ -6,7 +6,7 @@ export function HomeUpdatesForm() {
       <label>Email Address</label>
       <div>
         <TallyButton form="reports">
-          Get Free Reports
+          Subscribe To Blog Updates
         </TallyButton>
       </div>
     </div>
