@@ -28,6 +28,7 @@ const CATEGORY_ALIASES: Record<string, Category> = {
   "Cleaning Appliances": "Floorcare",
   Vacuum: "Vacuum",
   Vacuums: "Vacuum",
+  "Power Tools": "Industry",
   "Robotic Mower": "Robotic Mowers",
   "Robotic Mowers": "Robotic Mowers",
   "Commercial Cleaning": "Commercial Cleaning",
@@ -47,6 +48,7 @@ const CATEGORY_ALIASES: Record<string, Category> = {
   "Sourcing Intelligence": "Sourcing",
   "Sourcing Context": "Sourcing",
   Sourcing: "Sourcing",
+  "Backyard Robotics": "Market Signals",
   "Market Trends": "Market Signals",
   "Product Trends": "Market Signals",
   "Market Signals": "Market Signals"
