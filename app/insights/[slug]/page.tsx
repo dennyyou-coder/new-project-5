@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { TallyButton, TallyReportButton } from "@/components/LeadForms";
 import { getInsight, getInsights, markdownToHtml } from "@/lib/content";
 
 type Props = {
@@ -136,7 +137,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
         {related.length ? (
           <div className="blog-related-signals">
-            <h2>Related Insights</h2>
+            <h2>Related Articles</h2>
             <div className="related-signal-grid">
               {related.map((item) => (
                 <Link
@@ -147,7 +148,7 @@ export default async function InsightDetailPage({ params }: Props) {
                   <div className="meta">{item.category}</div>
                   <h3>{item.title}</h3>
                   <p>{item.excerpt}</p>
-                  <span>Read Signal</span>
+                  <span>Read Article</span>
                 </Link>
               ))}
             </div>
@@ -155,8 +156,8 @@ export default async function InsightDetailPage({ params }: Props) {
         ) : null}
 
           <div className="blog-article-footer-cta">
-            <Link href="/contact">Submit Inquiry</Link>
-            <Link href="/insights">Latest Industry Signals</Link>
+            <TallyReportButton>Get Free Reports</TallyReportButton>
+            <TallyButton form="contact">Talk With Denny</TallyButton>
           </div>
         </div>
       </section>

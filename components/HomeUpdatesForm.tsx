@@ -1,6 +1,3 @@
-"use client";
-
-import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 
 export function HomeUpdatesForm() {
@@ -9,12 +6,9 @@ export function HomeUpdatesForm() {
       <label>Email Address</label>
       <div>
         <TallyButton form="reports">
-          Get Industry Signals
+          Get Free Reports
         </TallyButton>
       </div>
-      <Link className="button-secondary" href="/insights">
-        Explore Signals
-      </Link>
     </div>
   );
 }

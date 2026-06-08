@@ -59,7 +59,7 @@ function SidebarContent({ latestSignals }: { latestSignals: Insight[] }) {
   return (
     <>
       <div className="sidebar-box market-report-priority">
-        <p className="eyebrow">Free Market Reports</p>
+        <p className="eyebrow">Free Reports</p>
         <div className="report-stack" aria-hidden="true">
           <div className="report-cover report-cover-market">
             <small>World Clean Biz</small>
@@ -112,7 +112,7 @@ function SidebarContent({ latestSignals }: { latestSignals: Insight[] }) {
         <h3>Popular Topics</h3>
         <div className="topic-list">
           {topics.map((topic) => (
-            <Link href="/insights" key={topic}>
+            <Link href="/blog" key={topic}>
               {topic}
             </Link>
           ))}
@@ -120,7 +120,7 @@ function SidebarContent({ latestSignals }: { latestSignals: Insight[] }) {
       </div>
 
       <div className="sidebar-box latest-signals-sidebar">
-        <h3>Latest Signals</h3>
+        <h3>Latest Articles</h3>
         <div className="latest-signal-list">
           {latestSignals.map((article, index) => (
             <Link href={`/insights/${article.slug}`} key={article.slug}>
@@ -151,7 +151,7 @@ function ArticleFeedItem({ article, index }: { article: Insight; index: number }
           <span>{displayDate(article)}</span>
           <span>{displayReadTime(article, index)}</span>
         </div>
-        <strong>Read Insight</strong>
+        <strong>Read Article</strong>
       </div>
     </Link>
   );
@@ -173,7 +173,7 @@ export default function InsightsPage() {
                 <img src={imageFor(featured, 0)} alt={`${featured.title} featured cover`} />
               </div>
               <div className="insights-featured-hero-copy">
-                <p className="eyebrow">Featured Insight</p>
+                <p className="eyebrow">Featured Article</p>
                 <span className="insights-category">{featured.category}</span>
                 <h1>{featured.title}</h1>
                 <p>{featured.excerpt}</p>
@@ -181,7 +181,7 @@ export default function InsightsPage() {
                   <span>{displayDate(featured)}</span>
                   <span>{displayReadTime(featured, 0)}</span>
                 </div>
-                <strong>Read Insight →</strong>
+                <strong>Read Article →</strong>
               </div>
             </Link>
           ) : null}

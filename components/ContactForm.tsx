@@ -19,7 +19,7 @@ export function ContactForm() {
   return (
     <div className="contact-tally-panel">
       <TallyButton className="button tally-cta-button" form={form}>
-        Submit Inquiry
+        Talk With Denny
       </TallyButton>
       <p>Default contact form for general inquiries.</p>
     </div>

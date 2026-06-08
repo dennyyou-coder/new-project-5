@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TallyButton } from "@/components/LeadForms";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -30,7 +31,7 @@ export function Footer() {
         <div className="footer-links" aria-label="Footer navigation">
           <div>
             <strong>Platform</strong>
-            <Link href="/insights">Insights</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/reports">Market Reports</Link>
             <Link href="/sourcing">Sourcing</Link>
             <Link href="/world-clean-expo">World Clean Expo</Link>
@@ -39,7 +40,9 @@ export function Footer() {
             <strong>Connect</strong>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
-            <Link href="/contact">Submit Inquiry</Link>
+            <TallyButton className="footer-link-button" form="contact">
+              Talk With Denny
+            </TallyButton>
           </div>
         </div>
       </div>

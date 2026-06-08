@@ -14,16 +14,16 @@ export default function NotFound() {
                 existed.
               </p>
               <p>
-                Explore the latest cleaning industry signals or share your
+                Read the latest cleaning industry articles or share your
                 question with World Clean Biz.
               </p>
             </div>
             <div className="hero-actions">
-              <Link className="button" href="/insights">
-                Latest Industry Signals
+              <Link className="button" href="/blog">
+                Blog
               </Link>
               <Link className="button-secondary" href="/contact">
-                Submit Inquiry
+                Contact
               </Link>
             </div>
           </div>

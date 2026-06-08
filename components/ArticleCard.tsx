@@ -15,7 +15,7 @@ export function ArticleCard({ article }: { article: Insight }) {
         </div>
         <h3>{article.title}</h3>
         <p>{article.excerpt}</p>
-        <div className="article-card-footer">Read Signal</div>
+        <div className="article-card-footer">Read Article</div>
       </div>
     </Link>
   );

@@ -591,6 +591,7 @@
   grid-template-columns: 1.4fr 1fr 1fr;
   grid-template-rows: repeat(3, 135px);
   gap: 14px;
+  margin-top: 16px;
 }
 
 .home-v8-denny-photo {
@@ -10199,10 +10200,32 @@ h3 {
   padding-top: 24px;
 }
 
-.blog-article-footer-cta a {
+.blog-article-footer-cta a,
+.blog-article-footer-cta button {
+  border: 0;
+  background: transparent;
   color: var(--blue);
   font-size: 15px;
   font-weight: 850;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.footer-link-button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.footer-link-button:hover {
+  color: var(--blue);
 }
 
 .related-signals {

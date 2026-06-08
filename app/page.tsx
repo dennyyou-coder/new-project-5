@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
-import { TallyReportButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
-import { TALLY_FORMS } from "@/lib/tallyForms";
 
 const heroProducts = [
   {
@@ -303,10 +301,12 @@ export default function HomePage() {
               </p>
             </div>
             <div className="home-v8-actions">
-              <Link className="button" href="/insights">
-                Explore Growth Signals
+              <Link className="button" href="/reports">
+                Get Free Reports
               </Link>
-              <TallyReportButton className="button-secondary" />
+              <Link className="button-secondary" href="/sourcing">
+                Start A Sourcing Inquiry
+              </Link>
             </div>
           </div>
 
@@ -412,9 +412,6 @@ export default function HomePage() {
                 ))}
               </div>
             </div>
-            <Link className="button-secondary" href="/about">
-              About Denny
-            </Link>
           </div>
           <div className="home-v8-denny-gallery">
             {dennyPhotos.map((photo) => (
@@ -458,13 +455,6 @@ export default function HomePage() {
             </p>
             <div className="home-v8-actions">
               <Link className="button" href="/world-clean-expo">
-                Explore World Clean Expo
-              </Link>
-              <Link
-                className="button-secondary"
-                href={TALLY_FORMS.expo.url}
-                target="_blank"
-              >
                 Get Expo Updates
               </Link>
             </div>
@@ -484,12 +474,8 @@ export default function HomePage() {
               Find reliable manufacturers, compare products and connect with
               factories across the global cleaning supply chain.
             </p>
-            <Link
-              className="button"
-              href={TALLY_FORMS.sourcing.url}
-              target="_blank"
-            >
-              Start Sourcing
+            <Link className="button" href="/sourcing">
+              Start A Sourcing Inquiry
             </Link>
           </div>
           <div className="home-v8-sourcing-items">
@@ -539,7 +525,7 @@ export default function HomePage() {
               observations and front-line industry research.
             </p>
             <Link className="button" href="/reports">
-              Browse Reports
+              Get Free Reports
             </Link>
           </div>
           <div className="home-v8-report-covers">

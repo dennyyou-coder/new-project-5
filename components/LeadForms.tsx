@@ -105,15 +105,15 @@ export function NewsletterLeadForm() {
   return (
     <div className="insights-newsletter-cta">
       <div>
-        <p className="eyebrow">Newsletter & Reports</p>
-        <h2>Stay Ahead Of The Cleaning Industry</h2>
+        <p className="eyebrow">Blog Updates</p>
+        <h2>Get New Cleaning Industry Articles First</h2>
         <p>
-          Get field-informed signals, analysis and free market reports straight
-          to your inbox.
+          Subscribe to receive new World Clean Biz articles, market signals and
+          cleaning industry notes when they are published.
         </p>
       </div>
       <div className="newsletter-form-row">
-        <TallyReportButton />
+        <TallyReportButton>Subscribe To Blog Updates</TallyReportButton>
       </div>
     </div>
   );
