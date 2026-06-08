@@ -3,11 +3,15 @@ import Link from "next/link";
 import { NewsletterLeadForm, TallyReportButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
 
+type SearchParams = Promise<Record<string, string | string[] | undefined>>;
+
 export const metadata: Metadata = {
   title: "Insights",
   description:
     "Cleaning industry signals and analysis shaped by front-line product, supplier, category and trade show observations."
 };
+
+const articlesPerPage = 5;
 
 const topics = [
   "Robot Vacuums",
@@ -53,6 +57,21 @@ function displayReadTime(article: Insight, index: number) {
 function displayDate(article: Insight) {
   if (article.date === "2026-06-03") return "June 3, 2026";
   return article.date;
+}
+
+function pageHref(page: number) {
+  return `?page=${page}`;
+}
+
+function parsePage(value: string | string[] | undefined) {
+  const raw = Array.isArray(value) ? value[0] : value;
+  const parsed = Number(raw);
+
+  if (!Number.isInteger(parsed) || parsed < 1) {
+    return 1;
+  }
+
+  return parsed;
 }
 
 function SidebarContent({ latestSignals }: { latestSignals: Insight[] }) {
@@ -157,10 +176,15 @@ function ArticleFeedItem({ article, index }: { article: Insight; index: number }
   );
 }
 
-export default function InsightsPage() {
+export default async function InsightsPage({ searchParams }: { searchParams?: SearchParams }) {
   const articles = getInsights();
   const featured = articles.find((article) => article.featured) || articles[0];
   const feedArticles = articles.filter((article) => article.slug !== featured?.slug);
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const totalPages = Math.max(1, Math.ceil(feedArticles.length / articlesPerPage));
+  const currentPage = Math.min(parsePage(resolvedSearchParams.page), totalPages);
+  const pageStart = (currentPage - 1) * articlesPerPage;
+  const visibleFeedArticles = feedArticles.slice(pageStart, pageStart + articlesPerPage);
   const latestSignals = articles.slice(0, 5);
 
   return (
@@ -201,8 +225,8 @@ export default function InsightsPage() {
       <section className="section insights-publication-section">
         <div className="insights-page-container insights-publication-layout">
           <main className="insights-feed" aria-label="Industry insight articles">
-            {feedArticles.map((article, index) => (
-              <ArticleFeedItem article={article} index={index} key={article.slug} />
+            {visibleFeedArticles.map((article, index) => (
+              <ArticleFeedItem article={article} index={pageStart + index} key={article.slug} />
             ))}
           </main>
 
@@ -214,17 +238,35 @@ export default function InsightsPage() {
             <SidebarContent latestSignals={latestSignals} />
           </aside>
         </div>
-        <div className="insights-page-container">
-          <nav className="insights-pagination insights-pagination-v2" aria-label="Insights pagination">
-            <span>Previous</span>
-            <strong>1</strong>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>Next</span>
-          </nav>
-        </div>
+        {totalPages > 1 ? (
+          <div className="insights-page-container">
+            <nav className="insights-pagination insights-pagination-v2" aria-label="Insights pagination">
+              {currentPage > 1 ? (
+                <Link href={pageHref(currentPage - 1)}>Previous</Link>
+              ) : (
+                <span aria-disabled="true">Previous</span>
+              )}
+              {Array.from({ length: totalPages }, (_, index) => {
+                const page = index + 1;
+
+                return page === currentPage ? (
+                  <strong aria-current="page" key={page}>
+                    {page}
+                  </strong>
+                ) : (
+                  <Link href={pageHref(page)} key={page}>
+                    {page}
+                  </Link>
+                );
+              })}
+              {currentPage < totalPages ? (
+                <Link href={pageHref(currentPage + 1)}>Next</Link>
+              ) : (
+                <span aria-disabled="true">Next</span>
+              )}
+            </nav>
+          </div>
+        ) : null}
       </section>
 
       <section className="section">

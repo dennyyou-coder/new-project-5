@@ -5070,6 +5070,7 @@ h3 {
   margin-top: 30px;
 }
 
+.insights-pagination a,
 .insights-pagination span,
 .insights-pagination strong {
   display: grid;
@@ -5082,11 +5083,18 @@ h3 {
   color: var(--muted);
   font-size: 13px;
   font-weight: 850;
+  text-decoration: none;
 }
 
 .insights-pagination strong {
   border-color: rgba(47, 107, 255, 0.24);
   background: rgba(220, 235, 255, 0.7);
+  color: var(--accent);
+}
+
+.insights-pagination a:hover,
+.insights-pagination a:focus-visible {
+  border-color: rgba(47, 107, 255, 0.38);
   color: var(--accent);
 }
 
