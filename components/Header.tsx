@@ -6,7 +6,7 @@ import { TallyReportButton } from "@/components/LeadForms";
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/insights", label: "Insights" },
+  { href: "/blog", label: "Blog" },
   { href: "/sourcing", label: "Sourcing" },
   { href: "/reports", label: "Market Reports" },
   { href: "/world-clean-expo", label: "World Clean Expo" },
