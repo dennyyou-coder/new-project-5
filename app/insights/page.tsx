@@ -49,6 +49,7 @@ const topicMatchers: Record<string, string[]> = {
 const categories = [
   "All",
   "Floorcare",
+  "Vacuum",
   "Pool Cleaning",
   "Robotic Mowers",
   "Commercial Cleaning",
