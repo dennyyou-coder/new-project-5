@@ -6,6 +6,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/insights/a-century-of-cleaning-appliances",
+        destination: "/insights/hundred-years-of-cleaning-appliance-history",
+        permanent: true
+      },
+      {
         source: "/insights/dyson-hard-floor-washer-exposure",
         destination: "/insights/dyson-hard-floor-washer-exposed",
         permanent: true

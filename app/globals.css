@@ -10132,17 +10132,15 @@ h3 {
 
 .article-inline-image-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: stretch;
-  gap: 18px;
-  margin: 30px 0;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 34px 0;
 }
 
 .article-inline-image-grid .article-inline-image {
-  max-width: none;
-  margin: 0;
-  padding: 14px;
-  min-height: 180px;
+  max-width: min(100%, 900px);
+  margin: 0 auto;
+  padding: clamp(14px, 2vw, 24px);
 }
 
 .article-inline-image img {
@@ -10157,7 +10155,7 @@ h3 {
 .article-inline-image-grid .article-inline-image img {
   width: auto;
   max-width: 100%;
-  max-height: min(460px, 68vh);
+  max-height: min(720px, 82vh);
   border: 0;
   object-fit: contain;
 }
