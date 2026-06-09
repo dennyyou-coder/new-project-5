@@ -10095,15 +10095,33 @@ h3 {
 }
 
 .article-inline-image-grid .article-inline-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 8px;
+  background: #f8fafc;
   margin: 0;
+  padding: 14px;
 }
 
 .article-inline-image img {
   display: block;
   width: 100%;
+  max-height: 640px;
   border-radius: 8px;
   border: 1px solid rgba(226, 232, 240, 0.9);
   background: var(--soft);
+}
+
+.article-inline-image-grid .article-inline-image img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border: 0;
+  object-fit: contain;
 }
 
 .article-prose a {
