@@ -10139,10 +10139,10 @@ h3 {
 }
 
 .article-inline-image-grid .article-inline-image {
-  aspect-ratio: 4 / 3;
   max-width: none;
   margin: 0;
   padding: 14px;
+  min-height: 180px;
 }
 
 .article-inline-image img {
@@ -10155,9 +10155,9 @@ h3 {
 }
 
 .article-inline-image-grid .article-inline-image img {
-  width: 100%;
+  width: auto;
   max-width: 100%;
-  max-height: 100%;
+  max-height: min(460px, 68vh);
   border: 0;
   object-fit: contain;
 }
