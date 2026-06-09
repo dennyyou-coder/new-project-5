@@ -13,26 +13,34 @@ export const metadata: Metadata = {
 
 const articlesPerPage = 5;
 
-const topics = [
-  "Robot Vacuums",
-  "Robot Lawn Mowers",
-  "Robotic Pool Cleaners",
-  "Wet-Dry Floor Cleaners",
-  "Chinese Brands",
-  "Overseas Markets",
-  "Product Strategy",
-  "Category Signals"
+const brandTopics = [
+  "Dyson",
+  "Ecovacs",
+  "Tineco",
+  "Dreame",
+  "Roborock",
+  "Narwal",
+  "iRobot",
+  "SharkNinja",
+  "Anker",
+  "Aiper",
+  "Maytronics",
+  "Beatbot"
 ];
 
 const topicMatchers: Record<string, string[]> = {
-  "Robot Vacuums": ["robot vacuum", "roborock", "ecovacs", "dreame", "narwal", "irobot", "roomba"],
-  "Robot Lawn Mowers": ["robotic mower", "robot lawn mower", "lawn mower", "mower", "navimow", "mammotion"],
-  "Robotic Pool Cleaners": ["robotic pool cleaner", "pool robot", "pool cleaner", "pool cleaning", "aiper", "beatbot", "maytronics"],
-  "Wet-Dry Floor Cleaners": ["hard floor washer", "wet dry cleaner", "floor washer", "crosswave", "tineco"],
-  "Chinese Brands": ["chinese brands", "china brands", "china supply chain", "china cleaning", "chinese robot"],
-  "Overseas Markets": ["overseas", "globalization", "global brands", "north america", "europe", "retail"],
-  "Product Strategy": ["strategy", "product strategy", "portfolio strategy", "channel", "retail", "positioning"],
-  "Category Signals": ["category", "market signals", "industry analysis", "product trends", "category signals"]
+  Dyson: ["dyson"],
+  Ecovacs: ["ecovacs"],
+  Tineco: ["tineco"],
+  Dreame: ["dreame"],
+  Roborock: ["roborock"],
+  Narwal: ["narwal"],
+  iRobot: ["irobot", "roomba"],
+  SharkNinja: ["sharkninja", "shark", "ninja"],
+  Anker: ["anker", "eufy"],
+  Aiper: ["aiper", "aiper intelligent"],
+  Maytronics: ["maytronics", "dolphin"],
+  Beatbot: ["beatbot", "beatbot innovation"]
 };
 
 const categories = [
@@ -176,11 +184,11 @@ function SidebarContent({ latestSignals, selectedTopic }: { latestSignals: Insig
       </div>
 
       <div className="sidebar-box">
-        <h3>Popular Topics</h3>
+        <h3>Popular Brands</h3>
         <div className="topic-list">
-          {topics.map((topic) => (
-            <Link className={topic === selectedTopic ? "active" : undefined} href={makeHref({ topic })} key={topic}>
-              {topic}
+          {brandTopics.map((brand) => (
+            <Link className={brand === selectedTopic ? "active" : undefined} href={makeHref({ topic: brand })} key={brand}>
+              {brand}
             </Link>
           ))}
         </div>
