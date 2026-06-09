@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...getInsights().map((article) => ({
       url: `${baseUrl}/insights/${article.slug}`,
-      lastModified: article.date ? new Date(article.date) : new Date()
+      lastModified: article.publishedAt ? new Date(article.publishedAt) : article.date ? new Date(article.date) : new Date()
     }))
   ];
 }
