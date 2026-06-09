@@ -6,14 +6,15 @@ import { getInsights, type Insight } from "@/lib/content";
 type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
 export const metadata: Metadata = {
-  title: "Insights",
+  title: "Blog | World Clean Biz",
   description:
-    "Cleaning industry signals and analysis shaped by front-line product, supplier, category and trade show observations.",
+    "World Clean Biz publishes cleaning appliance industry analysis, brand strategy, product category signals, supplier intelligence and global market observations.",
   alternates: {
     canonical: "/blog"
   }
 };
 
+const siteUrl = "https://worldcleanbiz.com";
 const articlesPerPage = 10;
 
 const brandTopics = [
@@ -280,6 +281,17 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
   const pageStart = (currentPage - 1) * articlesPerPage;
   const visibleFeedArticles = feedArticles.slice(pageStart, pageStart + articlesPerPage);
   const latestSignals = articles.slice(0, 5);
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: hasFilter ? "Filtered World Clean Biz Articles" : "World Clean Biz Blog Articles",
+    itemListElement: visibleFeedArticles.map((article, index) => ({
+      "@type": "ListItem",
+      position: pageStart + index + 1,
+      url: `${siteUrl}/insights/${article.slug}`,
+      name: article.title
+    }))
+  };
 
   return (
     <>
@@ -384,6 +396,11 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
           <NewsletterLeadForm />
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
     </>
   );
 }

@@ -29,6 +29,21 @@ const nextConfig: NextConfig = {
         source: "/insights/bissell-tineco-patent-fight-hard-floor-washers",
         destination: "/insights/bissell-vs-tineco-patent-details",
         permanent: true
+      },
+      {
+        source: "/insights/batteries-vacuums-power-tools",
+        destination: "/insights/lithium-batteries-in-vacuums-and-power-tools",
+        permanent: true
+      },
+      {
+        source: "/insights/sharkninja-road-to-10-billion-dollar-sales",
+        destination: "/insights/sharkninja-road-to-10-billion-dollars",
+        permanent: true
+      },
+      {
+        source: "/insights/sharkninja-road-to-ten-billion-dollars",
+        destination: "/insights/sharkninja-road-to-10-billion-dollars",
+        permanent: true
       }
     ];
   }
