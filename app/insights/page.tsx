@@ -8,7 +8,10 @@ type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Cleaning industry signals and analysis shaped by front-line product, supplier, category and trade show observations."
+    "Cleaning industry signals and analysis shaped by front-line product, supplier, category and trade show observations.",
+  alternates: {
+    canonical: "/blog"
+  }
 };
 
 const articlesPerPage = 5;

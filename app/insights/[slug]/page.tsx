@@ -10,6 +10,15 @@ type Props = {
 
 const siteUrl = "https://worldcleanbiz.com";
 
+function absoluteUrl(pathOrUrl?: string) {
+  if (!pathOrUrl) return undefined;
+  if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) {
+    return pathOrUrl;
+  }
+
+  return `${siteUrl}${pathOrUrl.startsWith("/") ? pathOrUrl : `/${pathOrUrl}`}`;
+}
+
 export function generateStaticParams() {
   return getInsights().map((article) => ({ slug: article.slug }));
 }
@@ -23,6 +32,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const url = `${siteUrl}/insights/${article.slug}`;
+  const publishedTime = article.publishedAt || article.date;
+  const coverImage = absoluteUrl(article.coverImage);
 
   return {
     title: article.title,
@@ -34,16 +45,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: article.title,
       description: article.excerpt,
       type: "article",
-      publishedTime: article.date,
+      publishedTime,
+      modifiedTime: publishedTime,
       authors: [article.author],
       url,
-      images: article.coverImage ? [article.coverImage] : undefined
+      images: coverImage ? [coverImage] : undefined
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.excerpt,
-      images: article.coverImage ? [article.coverImage] : undefined
+      images: coverImage ? [coverImage] : undefined
     }
   };
 }
@@ -67,17 +79,54 @@ export default async function InsightDetailPage({ params }: Props) {
   const related = [...sameCategory, ...fillers].slice(0, 3);
   const hasTakeaways = article.takeaways.length > 0;
   const url = `${siteUrl}/insights/${article.slug}`;
-  const schema = {
+  const publishedTime = article.publishedAt || article.date;
+  const coverImage = absoluteUrl(article.coverImage);
+  const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url
+    },
     headline: article.title,
     description: article.excerpt,
-    datePublished: article.date,
+    datePublished: publishedTime,
+    dateModified: publishedTime,
+    image: coverImage ? [coverImage] : undefined,
     author: {
       "@type": "Person",
       name: article.author
     },
+    publisher: {
+      "@type": "Organization",
+      name: "World Clean Biz",
+      url: siteUrl
+    },
     url
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteUrl
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${siteUrl}/blog`
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: url
+      }
+    ]
   };
 
   return (
@@ -170,7 +219,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
       />
     </>
   );
