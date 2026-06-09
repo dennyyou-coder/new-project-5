@@ -327,19 +327,22 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
 
           <div className="insights-filter-wrap insights-filter-panel">
             <div className="insights-filter insights-filter-v3" aria-label="Insight categories">
-              {categories.map((category) => (
-                <Link
-                  className={
-                    (!selectedCategory && category === "All" && !selectedTopic) || selectedCategory === category
-                      ? "active"
-                      : undefined
-                  }
-                  href={makeHref({ category })}
-                  key={category}
-                >
-                  {category}
-                </Link>
-              ))}
+              {categories.map((category) => {
+                const isAllSelected = !selectedCategory && category === "All" && !selectedTopic;
+                const isCategorySelected = selectedCategory === category;
+                const isSelected = isAllSelected || isCategorySelected;
+
+                return (
+                  <Link
+                    aria-current={isSelected ? "true" : undefined}
+                    className={isSelected ? "active" : undefined}
+                    href={isCategorySelected ? "/blog" : makeHref({ category })}
+                    key={category}
+                  >
+                    {category}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
