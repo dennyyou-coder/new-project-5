@@ -214,11 +214,20 @@ function SidebarContent({ latestSignals, selectedTopic }: { latestSignals: Insig
       <div className="sidebar-box">
         <h3>Popular Brands</h3>
         <div className="topic-list">
-          {brandTopics.map((brand) => (
-            <Link className={brand === selectedTopic ? "active" : undefined} href={makeHref({ topic: brand })} key={brand}>
-              {brand}
-            </Link>
-          ))}
+          {brandTopics.map((brand) => {
+            const isSelected = brand === selectedTopic;
+
+            return (
+              <Link
+                aria-current={isSelected ? "true" : undefined}
+                className={isSelected ? "active" : undefined}
+                href={isSelected ? "/blog" : makeHref({ topic: brand })}
+                key={brand}
+              >
+                {brand}
+              </Link>
+            );
+          })}
         </div>
       </div>
 
