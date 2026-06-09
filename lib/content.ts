@@ -8,6 +8,7 @@ export type Insight = {
   excerpt: string;
   description: string;
   date: string;
+  publishedAt: string;
   author: string;
   category: string;
   tags: string[];
@@ -78,6 +79,7 @@ export function getInsights(): Insight[] {
         excerpt,
         description: excerpt,
         date: String(data.date || ""),
+        publishedAt: String(data.publishedAt || data.date || ""),
         author: String(data.author || "Denny You"),
         category: normalizeCategory(String(data.category || "")),
         tags: Array.isArray(data.tags) ? data.tags : [],
@@ -89,7 +91,7 @@ export function getInsights(): Insight[] {
         content
       };
     })
-    .sort((a, b) => b.date.localeCompare(a.date));
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
 }
 
 export function getInsight(slug: string) {
