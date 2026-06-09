@@ -9,6 +9,7 @@ export type Insight = {
   description: string;
   date: string;
   publishedAt: string;
+  sortDate: string;
   author: string;
   category: string;
   tags: string[];
@@ -64,7 +65,7 @@ function parseInlineArray(value: string) {
 export function getInsights(): Insight[] {
   if (!fs.existsSync(insightsDirectory)) return [];
 
-  return fs
+  const articles = fs
     .readdirSync(insightsDirectory)
     .filter((file) => file.endsWith(".mdx"))
     .map((file) => {
@@ -80,6 +81,7 @@ export function getInsights(): Insight[] {
         description: excerpt,
         date: String(data.date || ""),
         publishedAt: String(data.publishedAt || data.date || ""),
+        sortDate: String(data.sortDate || data.publishedAt || data.date || ""),
         author: String(data.author || "Denny You"),
         category: normalizeCategory(String(data.category || "")),
         tags: Array.isArray(data.tags) ? data.tags : [],
@@ -91,11 +93,151 @@ export function getInsights(): Insight[] {
         content
       };
     })
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+    .sort((a, b) => {
+      const rankDiff = articleSortRank(a) - articleSortRank(b);
+
+      if (rankDiff !== 0) {
+        return rankDiff;
+      }
+
+      return b.sortDate.localeCompare(a.sortDate);
+    });
+
+  return interleaveCurrentTopics(articles);
 }
 
 export function getInsight(slug: string) {
   return getInsights().find((article) => article.slug === slug);
+}
+
+function articleSortRank(article: Insight) {
+  const haystack = articleSearchText(article);
+
+  let rank = 40;
+  const isHistorical = /(2018|2019|2020|2021|2022|annual report|buying guide 2022|canton fair)/.test(haystack);
+
+  if (
+    article.category === "Pool Cleaning" ||
+    article.category === "Robotic Mowers" ||
+    /(pool robot|pool cleaner|pool cleaning|robotic mower|robot mower|lawn robot|backyard robot|yard cleaning|outdoor power equipment|\bope\b)/.test(haystack)
+  ) {
+    rank = 0;
+  } else if (
+    article.category === "Floorcare" ||
+    /(robot vacuum|hard floor washer|floorcare|floor care|wet-dry|cleaning robot|mijia|dji|romo|dreame|anker|laifen|irobot|roomba|dyson|roborock|lidar|slam)/.test(haystack)
+  ) {
+    rank = 10;
+  } else if (/(ifa|ces|awe|expo|trade show|canton fair)/.test(haystack)) {
+    rank = 20;
+  } else if (/(vacuum|cordless|battery|power tool|supply chain|sourcing)/.test(haystack)) {
+    rank = 30;
+  }
+
+  if (!/(dji|romo)/.test(haystack) && /(2025|ifa 2025|ces 2025)/.test(haystack)) {
+    rank += 15;
+  }
+
+  if (isHistorical) {
+    rank += 50;
+  }
+
+  if (!isHistorical && /(irobot|roomba)/.test(haystack) && /(crisis|bankrupt|bankruptcy|uncertain future|exits|exit|financial|amazon)/.test(haystack)) {
+    rank = Math.min(rank, 10);
+  }
+
+  if (!isHistorical && /(dyson|roborock)/.test(haystack) && /(crossroads|new product|romo|nautik|hard floor washer|strategy|targets|road|financial|oem|china|2025|2026)/.test(haystack)) {
+    rank = Math.min(rank, 10);
+  }
+
+  return rank;
+}
+
+function articleSearchText(article: Insight) {
+  return [
+    article.slug,
+    article.title,
+    article.category,
+    article.excerpt,
+    ...article.tags
+  ]
+    .join(" ")
+    .toLowerCase();
+}
+
+function topicBucket(article: Insight) {
+  const haystack = articleSearchText(article);
+
+  if (/(dreame|mova)/.test(haystack)) return "dreame";
+  if (/anker/.test(haystack)) return "anker";
+  if (/laifen/.test(haystack)) return "laifen";
+  if (/roborock/.test(haystack)) return "roborock";
+  if (/dyson/.test(haystack)) return "dyson";
+  if (/(sharkninja|shark|ninja)/.test(haystack)) return "sharkninja";
+  if (/(irobot|roomba)/.test(haystack)) return "irobot";
+  if (/(dji|romo)/.test(haystack)) return "dji";
+  if (
+    article.category === "Pool Cleaning" ||
+    article.category === "Robotic Mowers" ||
+    /(pool robot|pool cleaner|pool cleaning|robotic mower|robot mower|lawn robot|backyard robot|yard cleaning|outdoor power equipment|\bope\b)/.test(haystack)
+  ) {
+    return "backyard";
+  }
+  if (article.category === "Floorcare" || /(robot vacuum|hard floor washer|floorcare|floor care|wet-dry|cleaning robot)/.test(haystack)) {
+    return "floorcare";
+  }
+  return "current";
+}
+
+function interleaveCurrentTopics(articles: Insight[]) {
+  const current: Insight[] = [];
+  const archive: Insight[] = [];
+
+  for (const article of articles) {
+    if (articleSortRank(article) <= 10) {
+      current.push(article);
+    } else {
+      archive.push(article);
+    }
+  }
+
+  const bucketOrder = [
+    "backyard",
+    "dreame",
+    "anker",
+    "laifen",
+    "roborock",
+    "dyson",
+    "sharkninja",
+    "irobot",
+    "dji",
+    "floorcare",
+    "current"
+  ];
+  const buckets = new Map<string, Insight[]>(
+    bucketOrder.map((bucket) => [bucket, []])
+  );
+
+  for (const article of current) {
+    buckets.get(topicBucket(article))?.push(article);
+  }
+
+  const woven: Insight[] = [];
+  let hasArticles = true;
+
+  while (hasArticles) {
+    hasArticles = false;
+
+    for (const bucket of bucketOrder) {
+      const next = buckets.get(bucket)?.shift();
+
+      if (next) {
+        woven.push(next);
+        hasArticles = true;
+      }
+    }
+  }
+
+  return [...woven, ...archive];
 }
 
 export function markdownToHtml(markdown: string) {
