@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   }
 };
 
-const articlesPerPage = 5;
+const articlesPerPage = 10;
 
 const brandTopics = [
   "Dyson",
@@ -28,7 +28,19 @@ const brandTopics = [
   "Anker",
   "Aiper",
   "Maytronics",
-  "Beatbot"
+  "Beatbot",
+  "Bissell",
+  "Midea",
+  "Kingclean",
+  "Kärcher",
+  "Milwaukee",
+  "De’Longhi",
+  "DJI",
+  "Mijia",
+  "Laifen",
+  "Uwant",
+  "TTI",
+  "Bosch"
 ];
 
 const topicMatchers: Record<string, string[]> = {
@@ -43,7 +55,19 @@ const topicMatchers: Record<string, string[]> = {
   Anker: ["anker", "eufy"],
   Aiper: ["aiper", "aiper intelligent"],
   Maytronics: ["maytronics", "dolphin"],
-  Beatbot: ["beatbot", "beatbot innovation"]
+  Beatbot: ["beatbot", "beatbot innovation"],
+  Bissell: ["bissell", "crosswave", "barkbath"],
+  Midea: ["midea"],
+  Kingclean: ["kingclean", "mojie"],
+  Kärcher: ["kärcher", "karcher"],
+  Milwaukee: ["milwaukee"],
+  "De’Longhi": ["de’longhi", "de'longhi", "delonghi"],
+  DJI: ["dji", "romo"],
+  Mijia: ["mijia", "xiaomi"],
+  Laifen: ["laifen"],
+  Uwant: ["uwant"],
+  TTI: ["tti", "hoover", "oreck"],
+  Bosch: ["bosch"]
 };
 
 const categories = [
@@ -54,6 +78,7 @@ const categories = [
   "Robotic Mowers",
   "Commercial Cleaning",
   "Supply Chain",
+  "Sourcing",
   "Industry",
   "Trade Shows",
   "Market Signals"
@@ -74,10 +99,8 @@ function summaryFor(article: Insight) {
   return article.excerpt;
 }
 
-function displayReadTime(article: Insight, index: number) {
-  if (index === 0) return "8 min read";
-  const minutes = 5 + (index % 4);
-  return `${minutes} min read`;
+function displayReadTime(article: Insight) {
+  return article.readingTime;
 }
 
 function displayDate(article: Insight) {
@@ -228,7 +251,7 @@ function ArticleFeedItem({ article, index }: { article: Insight; index: number }
         <p>{summaryFor(article)}</p>
         <div className="insights-card-meta">
           <span>{displayDate(article)}</span>
-          <span>{displayReadTime(article, index)}</span>
+          <span>{displayReadTime(article)}</span>
         </div>
         <strong>Read Article</strong>
       </div>
@@ -274,7 +297,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
                 <p>{featured.excerpt}</p>
                 <div className="insights-card-meta">
                   <span>{displayDate(featured)}</span>
-                  <span>{displayReadTime(featured, 0)}</span>
+                  <span>{displayReadTime(featured)}</span>
                 </div>
                 <strong>Read Article →</strong>
               </div>
@@ -306,7 +329,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
           <main className="insights-feed" aria-label="Industry insight articles">
             {visibleFeedArticles.length ? (
               visibleFeedArticles.map((article, index) => (
-                <ArticleFeedItem article={article} index={pageStart + index} key={article.slug} />
+              <ArticleFeedItem article={article} index={pageStart + index} key={article.slug} />
               ))
             ) : !filteredArticles.length ? (
               <div className="insights-empty-state">
