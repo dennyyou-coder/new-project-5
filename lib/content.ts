@@ -68,13 +68,16 @@ export function getInsights(): Insight[] {
   const articles = fs
     .readdirSync(insightsDirectory)
     .filter((file) => file.endsWith(".mdx"))
-    .map((file) => {
+    .flatMap((file) => {
       const slug = file.replace(/\.mdx$/, "");
       const raw = fs.readFileSync(path.join(insightsDirectory, file), "utf8");
       const { data, content } = parseFrontmatter(raw);
+      if (String(data.hidden || "false").toLowerCase() === "true") {
+        return [];
+      }
       const excerpt = String(data.excerpt || data.description || makeExcerpt(content));
 
-      return {
+      return [{
         slug,
         title: String(data.title || slug),
         excerpt,
@@ -91,7 +94,7 @@ export function getInsights(): Insight[] {
         coverImage: data.coverImage ? String(data.coverImage) : undefined,
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
         content
-      };
+      }];
     })
     .sort((a, b) => {
       const rankDiff = articleSortRank(a) - articleSortRank(b);

@@ -6,6 +6,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/insights/anker-floorcare-strategy-problem",
+        destination: "/insights/anker-cleaning-appliance-strategy-analysis",
+        permanent: true
+      },
+      {
         source: "/insights/a-century-of-cleaning-appliances",
         destination: "/insights/hundred-years-of-cleaning-appliance-history",
         permanent: true
