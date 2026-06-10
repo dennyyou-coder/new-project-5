@@ -51,6 +51,26 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
+        source: "/insights/sharkninja-ten-billion-growth-path",
+        destination: "/insights/sharkninja-road-to-10-billion-dollars",
+        permanent: true
+      },
+      {
+        source: "/insights/kingclean-chairman-ni-formal-interview",
+        destination: "/insights/interview-with-kingclean-chairman-ni",
+        permanent: true
+      },
+      {
+        source: "/insights/robot-vacuum-crossroads-category-shift",
+        destination: "/insights/robot-vacuum-industry-at-crossroads",
+        permanent: true
+      },
+      {
+        source: "/insights/cordless-vacuum-industry-hidden-risks",
+        destination: "/insights/hidden-risks-in-cordless-vacuum-development",
+        permanent: true
+      },
+      {
         source: "/insights/amazon-as-the-first-signal-for-garden-robots",
         destination: "/insights/amazon-first-stop-for-backyard-robotics",
         permanent: true
@@ -102,7 +122,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/insights/robot-vacuum-market-trends-2026",
-        destination: "/insights/robot-vacuum-crossroads-category-shift",
+        destination: "/insights/robot-vacuum-industry-at-crossroads",
         permanent: true
       },
       {
