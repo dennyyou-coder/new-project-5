@@ -4,6 +4,8 @@ Purpose: recover first-batch brand assets that are blocked by local DNS, 403 res
 
 This plan is for source-library work only. Do not update website article images from these assets until a separate review pass approves them.
 
+Current operating rule from 2026-06-11: download first, then clean, review, and classify in a later pass. Uncertain assets may be collected into the source library or raw/review queue, but they are not approved for website use until review.
+
 ## Recovery Order
 
 | Priority | Workstream | Brands | Why |
@@ -30,6 +32,7 @@ Expected if successful:
 | Aiper | Experts Duo, Scuba V3, CES/Piscina event images | product evidence, event evidence |
 | Dreame | Matrix Series robot vacuum image | product evidence pending review |
 | iRobot | current logo, Roomba Max 705, homepage banner | logo/product/evidence pending review |
+| iRobot | Press Center logo and Roomba Max 705 media-kit photos | alternate official logo/product candidates pending review |
 
 If the script fails again:
 
@@ -120,6 +123,59 @@ Brand-specific product status:
 | Dyson | rejected V16 text lockup | Replace with a real official Dyson product photo. |
 | iRobot | missing | Retry official Roomba Max 705; manual capture if official page blocks direct image download. |
 | SharkNinja | body-only | Use PowerDetect assets as body evidence only unless a stronger product image is found. |
+
+## Official Source Discovery - 2026-06-11
+
+iRobot official Press Center / Media Kit is now the preferred alternate source for iRobot logo and Roomba product recovery.
+
+Source pages:
+
+```text
+https://media.irobot.com/
+https://media.irobot.com/media-kits?cat=5
+https://media.irobot.com/media-kits?cat=4
+https://media.irobot.com/media-kits?item=17
+https://media.irobot.com/media-kits?item=50
+```
+
+Manifest additions:
+
+```text
+irobot-media-kit-logo-black-print.jpg
+irobot-media-kit-logo-black-web.jpg
+irobot-roomba-max-705-media-kit-black.jpg
+irobot-roomba-max-705-media-kit-white.jpg
+```
+
+Review rule:
+
+- The media-kit logo files are official but may be thumbnail-sized; approve only after dimensions are checked.
+- The Roomba Max 705 media-kit photos are stronger product candidates than the homepage thumbnail if direct download succeeds.
+
+Download result:
+
+```text
+Downloaded: 4
+Skipped:    0
+Failed:     9
+```
+
+Downloaded iRobot Press Center files:
+
+| File | Dimensions | Initial Status |
+| --- | ---: | --- |
+| `brands/irobot/logos/irobot-media-kit-logo-black-print.jpg` | 360x100 | downloaded, needs review |
+| `brands/irobot/logos/irobot-media-kit-logo-black-web.jpg` | 175x100 | downloaded, likely too small for final cover use, needs review |
+| `brands/irobot/products/irobot-roomba-max-705-media-kit-black.jpg` | 2048x2048 | downloaded, product candidate for review |
+| `brands/irobot/products/irobot-roomba-max-705-media-kit-white.jpg` | 2048x2048 | downloaded, product candidate for review |
+
+Still failed:
+
+| Brand | Count | Failure Pattern |
+| --- | ---: | --- |
+| Aiper | 5 | official CloudFront hosts connect timeout |
+| Dreame | 1 | `www.dreametech.com` connect timeout |
+| iRobot homepage/static | 3 | official `www.irobot.com` static URLs return 403 |
 
 ## People / Portrait Handling
 

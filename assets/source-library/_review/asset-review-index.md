@@ -166,6 +166,52 @@ assets/source-library/_review/asset-source-recovery-plan-2026-06-11.md
 
 Use this plan to decide whether to retry official direct URLs, manually capture official assets into `raw/`, or keep candidates in review-only status.
 
+## Download-First Policy Update - 2026-06-11
+
+Current user direction:
+
+```text
+Download first. Clean, review, and classify after download.
+```
+
+Operational interpretation:
+
+- Collect official and credible candidate assets first.
+- Do not treat downloaded files as approved by default.
+- Keep uncertain people, weak logos, and ambiguous images in review-only status until the cleanup pass.
+- Do not update website article images during source collection.
+
+Brand-assets manifest run after policy update:
+
+```text
+./assets/source-library/download-assets.sh assets/source-library/download-manifest-brand-assets-v1.tsv
+```
+
+Result:
+
+```text
+Downloaded: 4
+Skipped:    0
+Failed:     9
+```
+
+New downloaded files:
+
+| Brand | File | Dimensions | Initial Status |
+|---|---|---:|---|
+| iRobot | `logos/irobot-media-kit-logo-black-print.jpg` | 360x100 | downloaded, needs review |
+| iRobot | `logos/irobot-media-kit-logo-black-web.jpg` | 175x100 | downloaded, likely reference-only pending review |
+| iRobot | `products/irobot-roomba-max-705-media-kit-black.jpg` | 2048x2048 | downloaded, needs review |
+| iRobot | `products/irobot-roomba-max-705-media-kit-white.jpg` | 2048x2048 | downloaded, needs review |
+
+Remaining failures:
+
+| Brand | Count | Failure Pattern |
+|---|---:|---|
+| Aiper | 5 | official CloudFront hosts connect timeout |
+| Dreame | 1 | `www.dreametech.com` connect timeout |
+| iRobot homepage/static | 3 | official `www.irobot.com` static URLs return 403 |
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:

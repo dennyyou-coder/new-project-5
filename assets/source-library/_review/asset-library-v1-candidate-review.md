@@ -52,6 +52,7 @@ SharkNinja
 | Dreame | Clean wordmark | Official Dreame homepage/header | needs-source-check | Official homepage shows the Dreame brand, but no direct clean wordmark file was captured. Do not use the 48x48 compact mark. |
 | Roborock | Logo | Needs official source | needs-source-check | Product images are in manifest; clean logo still needed. |
 | Roborock | Global icon | Official Roborock global homepage static asset | reject | Official direct file exists for the globe/region icon, but it is not the Roborock wordmark and should not be used as brand logo. |
+| iRobot | Press Center black print/web logo candidates | Official iRobot Press Center media kit | needs-source-check | Downloaded on 2026-06-11. Print candidate is 360x100; web candidate is 175x100. Official source is good, but both need cleanup/review before approval. |
 | SharkNinja | Group logo | Official SharkNinja investor relations static asset | approved | Downloaded as `sharkninja-official-ir-logo-white.svg`; official source, but SVG embeds PNG rather than pure vector paths. |
 | SharkNinja | Shark and Ninja logos | Official SharkNinja footer assets in manifest | approved | For SharkNinja group articles, may also need group-level corporate logo. |
 
@@ -79,6 +80,7 @@ Official pages checked:
 | Roborock | Saros Z70 / Saros 10R | Official Roborock homepage assets | approved / body-only | Saros Z70 transparent product image is cover-ready; Saros 10R wide image is body evidence only. |
 | Dyson | V16 Piston Animal | Official Dyson homepage asset | reject | Downloaded file is a V16 text lockup, not a product photo. Need real product image. |
 | iRobot | Roomba Max 705 | Official iRobot homepage asset | replace | Official URL returned 403 on 2026-06-10; still useful if an accessible official product source is found. |
+| iRobot | Roomba Max 705 Vac media-kit press photos | Official iRobot Press Center media kit | needs-source-check | Downloaded on 2026-06-11. Black and white product photos are both 2048x2048; strong product candidates pending cleanup/review. |
 | SharkNinja | Shark PowerDetect | Official SharkNinja product assets | body-only | Downloaded on rerun. Product image is small with lockup; use as product reference/body evidence, not cover hero. |
 
 ## Evidence / Event / Data Candidates
