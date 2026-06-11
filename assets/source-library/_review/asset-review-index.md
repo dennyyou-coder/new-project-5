@@ -133,6 +133,39 @@ Failed:     0
 
 No new assets were added because all three batch-2 SharkNinja files already existed locally.
 
+## Asset Library V1 Gap Audit - 2026-06-11
+
+Created:
+
+```text
+assets/source-library/_review/asset-library-v1-gap-audit-2026-06-11.md
+assets/source-library/download-manifest-brand-assets-v1.tsv
+```
+
+Committed by user:
+
+```text
+e45238f Add asset library v1 gap audit
+```
+
+New official retry manifest result:
+
+```text
+Downloaded: 0
+Skipped:    0
+Failed:     9
+```
+
+Failure pattern: local DNS could not resolve official Aiper CloudFront hosts, `www.dreametech.com`, or `www.irobot.com`. No files were added to `assets/source-library/brands/` by this run.
+
+Next recovery plan:
+
+```text
+assets/source-library/_review/asset-source-recovery-plan-2026-06-11.md
+```
+
+Use this plan to decide whether to retry official direct URLs, manually capture official assets into `raw/`, or keep candidates in review-only status.
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:
