@@ -349,6 +349,30 @@ Other approved assets in the formal approved manifest were not copied because th
 
 No website article images were updated.
 
+## Article Asset Integrity Audit V1 - 2026-06-11
+
+Created:
+
+```text
+assets/source-library/_review/article-asset-integrity-audit-v1-2026-06-11.md
+```
+
+Result:
+
+```text
+152 insight articles scanned
+1341 insight image files found
+1053 local image references found
+0 missing referenced files
+0 articles without coverImage
+45 articles with no body images
+38 covers smaller than 1200x675
+32 covers outside normal 16:9 tolerance
+289 unreferenced insight image files
+```
+
+No website content or images were changed in this audit.
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:
