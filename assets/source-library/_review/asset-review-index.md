@@ -331,6 +331,24 @@ User confirmed these raw people candidates:
 | SharkNinja | Mark Barrocas | `assets/source-library/brands/sharkninja/raw/people/mark-barrocas-verge-portrait.png` | identity-confirmed; source/licensing and role-timing review still needed |
 | Dyson | James Dyson | `assets/source-library/brands/dyson/raw/people/james-dyson-wikimedia-portrait.jpg` | identity-confirmed; source/licensing review and official-source comparison still needed |
 
+## Formal Library Approved V1 - 2026-06-11
+
+Created:
+
+```text
+assets/source-library/_review/asset-formal-library-approved-v1-2026-06-11.tsv
+```
+
+This pass promoted the first approved raw candidate into a formal product folder:
+
+```text
+assets/source-library/brands/beatbot/products/beatbot-aquasense-product-candidate.png
+```
+
+Other approved assets in the formal approved manifest were not copied because they already exist in formal folders.
+
+No website article images were updated.
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:

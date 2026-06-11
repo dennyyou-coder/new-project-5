@@ -40,3 +40,21 @@ Status: Partial source set collected; clean logo and verified founder image stil
 | `logos/beatbot-official-logo-prime-banner.webp` | Logo candidate | reject | none | This is a Prime Day activity graphic, not a Beatbot master logo. Replace with clean official logo. |
 
 Next action: find a clean Beatbot logo and verified founder / executive portrait before any founder-style or brand-analysis final cover.
+
+## Formal Library Approved V1 - 2026-06-11
+
+New formal product asset: `products/beatbot-aquasense-product-candidate.png`
+
+Source: `raw/products/beatbot-aquasense-product-candidate.png`
+
+Decision:
+
+- approved for formal source library
+- approved use candidates: body-product, cover-brand-analysis
+- still requires normal composition/crop review before website use
+
+Open gaps:
+
+- clean Beatbot master logo
+- verified founder / CEO portrait
+- event / booth photo extraction from raw source pages

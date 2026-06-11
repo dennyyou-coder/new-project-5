@@ -49,6 +49,13 @@ These can move into formal classification first, subject to normal cleanup and n
 | iRobot | `raw/products/irobot-roomba-max-705-media-kit-black.jpg` | `products/` | approved | Official iRobot Press Center photo; 2048x2048; already also exists in formal product folder. |
 | SharkNinja | `raw/logos/sharkninja-ir-logo-white.svg` | `logos/` | approved | Official IR logo; already also exists in formal logo folder. Keep PNG-embedded SVG technical note. |
 
+Formal library action completed in this pass:
+
+- Created `assets/source-library/_review/asset-formal-library-approved-v1-2026-06-11.tsv`.
+- Copied Beatbot `raw/products/beatbot-aquasense-product-candidate.png` to `products/beatbot-aquasense-product-candidate.png`.
+- No other approved files were copied because they already exist in formal folders.
+- No website article images were updated.
+
 ## Brand Classification
 
 ### Maytronics
@@ -117,6 +124,7 @@ Reject:
 Recommended use:
 
 - Add AquaSense candidate to product review queue.
+- Formal action: copied `raw/products/beatbot-aquasense-product-candidate.png` to `products/beatbot-aquasense-product-candidate.png` on 2026-06-11.
 - Clean master logo remains open.
 - Founder/CEO portrait remains review-only.
 
@@ -249,10 +257,12 @@ Best next extraction targets:
 4. Beatbot 36Kr / PR Newswire image candidates.
 5. Dreame Xinhua / Verge image candidates.
 
-## No File Moves In This Pass
+## Formal File Actions In This Pass
 
-No files were moved or copied from `raw/` to formal folders in this pass because:
+Only one file was copied from `raw/` to a formal folder:
 
-- several approved files already exist in formal folders;
-- backup assets still need source, licensing, role, or image extraction review;
-- keeping raw and formal source paths separate avoids duplicate or premature approval.
+- Beatbot `raw/products/beatbot-aquasense-product-candidate.png` -> `products/beatbot-aquasense-product-candidate.png`
+
+No other approved files were copied because they already exist in formal folders.
+
+No website article images were updated in this pass.
