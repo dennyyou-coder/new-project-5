@@ -41,3 +41,23 @@ Status: Logo collected; product image replacement needed.
 | `products/dyson-v16-piston-animal-official.png` | Product candidate | reject | none | Downloaded file is a text lockup reading "v16 piston animal", not a product photo. |
 
 Next action: replace the V16 text asset with a real official product photo before using Dyson in a cover or product evidence block.
+
+## People Identity Update - 2026-06-11
+
+User confirmed:
+
+```text
+James Dyson = Dyson company / founder candidate
+```
+
+Raw candidate:
+
+```text
+assets/source-library/brands/dyson/raw/people/james-dyson-wikimedia-portrait.jpg
+```
+
+Decision:
+
+- identity-confirmed by user
+- keep source/licensing review and compare against official Dyson source before final website use
+- good backup candidate for founder-profile or historical Dyson visual work after review

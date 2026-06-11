@@ -277,6 +277,60 @@ backup = source/candidate retained, needs extraction or verification
 reject = failed download or clearly not usable in this pass
 ```
 
+## Asset Cleanup Classification V1 - 2026-06-11
+
+Created:
+
+```text
+assets/source-library/_review/asset-cleanup-classification-v1-2026-06-11.md
+```
+
+This pass reviewed the raw candidates by brand and produced:
+
+```text
+approved / backup / reject
+reason
+suggested formal category
+recommended use
+remaining gaps
+```
+
+No files were moved out of `raw/` in this pass. Reason:
+
+- several approved files already exist in formal folders;
+- backup assets still need source, licensing, role, or image extraction review;
+- keeping raw and formal source paths separate avoids duplicate or premature approval.
+
+Strongest formal candidates after V1:
+
+| Brand | Asset |
+|---|---|
+| Maytronics | official logo, Dolphin LIBERTY 600, 1983 timeline |
+| Beatbot | AquaSense product candidate |
+| Roborock | Saros Z70 product candidate |
+| Dyson | official logo |
+| iRobot | Roomba Max 705 Press Center product photo |
+| SharkNinja | official IR group logo |
+
+Main open gaps:
+
+```text
+Aiper / Beatbot / Dreame / Roborock / iRobot clean master logos
+Aiper / Beatbot / Roborock / iRobot verified founder or CEO portraits
+Dreame and Dyson current official product photos
+Event / booth image extraction from downloaded HTML source pages
+```
+
+## People Identity Confirmations - 2026-06-11
+
+User confirmed these raw people candidates:
+
+| Brand | Person | Raw Asset | Status |
+|---|---|---|---|
+| Dreame | Yu Hao | `assets/source-library/brands/dreame/raw/people/yu-hao-xinhua-portrait.png` | identity-confirmed; source/licensing and role-timing review still needed |
+| SharkNinja | Mark Barrocas | `assets/source-library/brands/sharkninja/raw/people/mark-barrocas-verge-portrait.png` | identity-confirmed; source/licensing and role-timing review still needed |
+| Dyson | James Dyson | `assets/source-library/brands/dyson/raw/people/james-dyson-wikimedia-portrait.jpg` | identity-confirmed; source/licensing review and official-source comparison still needed |
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:

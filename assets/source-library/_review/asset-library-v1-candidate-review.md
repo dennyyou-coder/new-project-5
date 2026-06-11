@@ -34,11 +34,11 @@ SharkNinja
 | Maytronics | Rafi Benami | CEO | Official Maytronics corporate image, already downloaded | needs-source-check | Image quality is strong, but keep identity/current-role timing confirmation before cover or founder-profile use. |
 | Aiper | Richard Wang | Founder & CEO | Needs official or verified source | needs-source-check | Do not use AI-generated face. Use only official company, press, event, or credible media photo. |
 | Beatbot | Wang Xuefeng / company founder profile | Founder / CEO | Needs official or verified source | needs-source-check | Confirm English name and title before use. |
-| Dreame | Yu Hao | Founder & CEO | Needs official or verified source | needs-source-check | Use only verified portrait. Avoid AI-generated founder photo. |
+| Dreame | Yu Hao | Founder & CEO | Xinhua / raw candidate downloaded | needs-source-check | User confirmed identity as Dreame boss Yu Hao on 2026-06-11. Keep source/licensing and role-timing review before final use. Avoid AI-generated founder photo. |
 | Roborock | Chang Jing | Founder / Chairman | Needs official or verified source | needs-source-check | Confirm whether article needs founder, CEO, or company-level analysis. |
-| Dyson | James Dyson | Founder | Needs official Dyson or press source | needs-source-check | Strong candidate for founder-profile template. |
+| Dyson | James Dyson | Founder | Wikimedia raw candidate downloaded; official Dyson source still preferred | needs-source-check | User confirmed identity as Dyson company's James Dyson on 2026-06-11. Strong candidate for founder-profile template after source/licensing review. |
 | iRobot | Colin Angle | Co-founder / former CEO | Needs official or verified source | needs-source-check | Use only if article discusses founding history or strategic decline. |
-| SharkNinja | Mark Barrocas | CEO | Needs official investor / company source | needs-source-check | Good candidate for SharkNinja growth article. |
+| SharkNinja | Mark Barrocas | CEO | The Verge raw candidate downloaded; official/company source still preferred | needs-source-check | User confirmed identity as SharkNinja CEO Mark Barrocas on 2026-06-11. Good candidate for SharkNinja growth article after source/licensing review. |
 
 ## Logo Candidates Requiring Review
 

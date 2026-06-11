@@ -41,3 +41,23 @@ Status: Only a low-quality logo placeholder downloaded; official product image f
 | `products/dreame-x60-vs-x50-official.webp` | Product / evidence | failed | replace | dreametech.com timed out. Need alternate direct official image source. |
 
 Next action: source a clean Dreame wordmark and product-only images from official pages, media kit, or reliable public filings/interviews.
+
+## People Identity Update - 2026-06-11
+
+User confirmed:
+
+```text
+Yu Hao = Dreame boss / founder candidate
+```
+
+Raw candidate:
+
+```text
+assets/source-library/brands/dreame/raw/people/yu-hao-xinhua-portrait.png
+```
+
+Decision:
+
+- identity-confirmed by user
+- keep source/licensing and role-timing review before final website use
+- good backup candidate for founder/CEO-style visual work after review

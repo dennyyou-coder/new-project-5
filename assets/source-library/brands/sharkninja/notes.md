@@ -43,3 +43,23 @@ Status: Shark, Ninja, and group-level logos collected; product evidence started;
 | `evidence/shark-powerdetect-duoclean-official.jpg` | Evidence | downloaded | body evidence only | High-quality 1224x918 feature image. Strong promotional light effect, so use as technical evidence rather than main cover image. |
 
 Next action: extract article data for WCB-generated SharkNinja growth/category visuals; product hero image still needs a cleaner, less promotional official source if used on a cover.
+
+## People Identity Update - 2026-06-11
+
+User confirmed:
+
+```text
+Mark Barrocas = SharkNinja CEO
+```
+
+Raw candidate:
+
+```text
+assets/source-library/brands/sharkninja/raw/people/mark-barrocas-verge-portrait.png
+```
+
+Decision:
+
+- identity-confirmed by user
+- keep source/licensing and role-timing review before final website use
+- good backup candidate for CEO / strategy-story visual work after review
