@@ -444,6 +444,31 @@ First recommended sample:
 irobot-2018-annual-report-faithful-translation
 ```
 
+## iRobot 2018 Cover Sample Plan - 2026-06-11
+
+Created:
+
+```text
+assets/source-library/_review/irobot-2018-cover-sample-plan-2026-06-11.md
+```
+
+Result:
+
+```text
+1 cover sample plan written
+0 sample images generated
+0 article files changed
+0 live cover assignments changed
+```
+
+Recommended sample direction:
+
+```text
+Template E data visual
+Core message: 2018 was iRobot's strong year before the pressure cycle.
+Primary data: USD 1.092B revenue, +23.6% growth, USD 105.8M operating income, 25M+ consumer robots sold.
+```
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:
