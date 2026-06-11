@@ -1,0 +1,7 @@
+metric	value_usd_million	note
+Santrum debt	190.7	Debt acquired by Santrum, Picea subsidiary
+Picea payables	161.5	Direct manufacturing payables owed to Picea
+Overdue payables	90.9	Overdue portion within Picea payables
+Cash and equivalents	24.8	Cash and equivalents remaining
+Restricted cash exhausted	40.0	Amazon transaction restricted cash already exhausted
+Total Picea exposure	352.2	Santrum debt plus Picea payables
