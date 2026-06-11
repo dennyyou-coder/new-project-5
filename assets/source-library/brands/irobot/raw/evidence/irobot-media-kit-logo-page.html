@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html id="tagHtml" class="ua-ft" lang="en">
+<head>
+<!-- begin spin_special_output(head_start) -->
+<script type="text/javascript" wd_script_id="view_printable_script" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">
+	function view_printable() {
+		var loc = window.location;
+		var sep = (loc.search == "") ? "?" : "&";
+		var url = loc.protocol+"//"+loc.host+loc.pathname+loc.search+sep+"printable"+loc.hash;
+		window.open(url, "_blank", "");
+	}
+</script>
+<link href="thirdparty/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" wd_script_id="font-awesome.min.css">
+<style type="text/css" wd_script_id="toolbar_style" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">
+			div.wd_toolbar {
+				border-top: 1px solid #cccccc;
+				border-bottom: 1px solid #cccccc;
+				margin: 15px 0px 15px 0px;
+				padding: 5px;
+				line-height: 1;
+			}
+			div.wd_toolbar-page {
+				clear: both;
+			}
+			div.wd_toolbar ul.wd_tools {
+				display: inline-block;
+				width: 100%;
+				margin: 0;
+				padding: 5px 0;
+			}
+			div.wd_toolbar ul.wd_tools li.wd_tool {
+				display: block;
+				list-style-type: none;
+				margin-right: 5px;
+				padding: 0;
+				float: right;
+			}
+			span.wd_tool_icon > a:link,
+			span.wd_tool_icon > a:visited {
+				border-radius: 2px;
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				box-sizing: border-box;
+				margin: 0;
+				padding: 7px;
+				font-size: 16px;
+				line-height: 1;
+				text-align: center;
+				color: #ffffff;
+				background-color: #767676;
+			} 
+			span.wd_tool_icon > a:hover {
+				color: #ffffff;
+				background-color: #666666;
+				text-decoration: none;
+			}
+			div.wd_toolbar ul.wd_tools li.wd_tool-addthis {
+				float: left;
+			}
+		</style>
+<style type="text/css" wd_script_id="gallery_summary_style" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">
+.gallery_summary {
+	overflow: auto;
+}
+.gallery_summary_filmstrip {
+	position: relative;
+	height: 100px;
+	margin: 1em 0;
+}
+.gallery_summary_filmstrip .wd_carousel {
+	padding: 0 2.2em;
+}
+.gallery_summary_filmstrip .wd_carousel .wd_carousel-prev {
+	left: 0.2em;
+}
+.gallery_summary_filmstrip .wd_carousel .wd_carousel-next {
+	right: 0.2em;
+}
+	</style>
+<script type="text/javascript" src="js/jquery-webdriver.js" wd_script_id="jquery-webdriver.js" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw=="></script>
+<script type="text/javascript" src="js/webdriver.js" wd_script_id="webdriver.js" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw=="></script>
+<script type="text/javascript" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">webDriver.push_jQuery();</script>
+<script type="text/javascript" src="js/jquerypp.js" wd_script_id="jquerypp.js" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw=="></script>
+<script type="text/javascript" src="js/modernizr.js" wd_script_id="modernizr.js" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw=="></script>
+<script type="text/javascript" src="js/wd_resize.js" wd_script_id="wd_resize.js" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw=="></script>
+<script type="text/javascript" src="js/wd_imagesloaded.js" wd_script_id="wd_imagesloaded.js" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw=="></script>
+<link href="css/wd_carousel.css" type="text/css" rel="stylesheet" wd_script_id="wd_carousel.css">
+<script type="text/javascript" wd_script_id="wd_carousel_script" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">
+(function($, undefined) {
+	webDriver.loadCarousel = function() {
+		var options = {};
+		var options_string = $(this).attr("wd_carousel_options");
+		if (options_string)
+			options = JSON.parse(options_string);
+		$(this).wd_carousel(options);
+	}
+	
+	webDriver.resizeCarousel = function() {
+		$(this).find(".wd_carousel-list").wd_carousel("resize");
+		return false;
+	}
+	
+	var wd_carousel = function(element, options) {
+		this.init(element, options);
+	};
+	
+	wd_carousel.prototype = {
+		init: function(element, options) {
+			var self = this;
+			
+			this.$element = $(element);
+			this._options = {
+				selector: "li",
+				center: true,
+				slideSpeed: 500,
+				slideEasing: "linear",
+				infinite: true,
+				widthMode: "content", // content, columns, width
+				heightMode: "fixed", // content, fixed
+				columns: 3,
+				minWidth: 250,
+				scrollUnit: "item", // item, page
+				scrollSize: 1,
+				dragThreshold: 10,
+				"class": "",
+				autoScroll: 0
+			};
+			
+			this.options(options);
+			
+			this.$container = $("<div>").addClass("wd_carousel").attr("wd_resize","resizeCarousel").insertBefore(this.$element);
+			if (this._options["class"])
+				this.$container.addClass(this._options["class"]);
+			this.$cropper = $("<div>").addClass("wd_carousel-cropper").appendTo(this.$container);
+			this.$element
+					.addClass("wd_carousel-list")
+					.appendTo(this.$cropper)
+					.css({position:"absolute",top:0,left:0})
+					.on("dragstart", "*", function(event) {event.preventDefault();});
+			this.$prev = $("<a class=\"wd_carousel-arrow wd_carousel-prev fa fa-chevron-left\" href=\"#prev\"><\/a>")
+					.on("click", function(event) {
+						self.stop();
+						self.prev();
+						event.preventDefault();
+					})
+					.appendTo(this.$container);
+			this.$next = $("<a class=\"wd_carousel-arrow wd_carousel-next fa fa-chevron-right\" href=\"#next\"><\/a>")
+					.on("click", function(event) {
+						self.stop();
+						self.next();
+						event.preventDefault();
+					})
+					.appendTo(this.$container);
+			
+//			this.$dragger = $("<div>")
+//					.addClass("wd_carousel-dragger")
+//					.appendTo(this.$cropper)
+			this.$cropper
+					.on("click", function(event) {
+						self.onClick(event);
+					})
+					.on("mousedown touchstart", function(event) {
+						self.dragStart(event);
+					})
+					.on("mousemove touchmove", function(event) {
+						self.dragMove(event);
+					})
+					.on("mouseup touchend mouseleave touchcancel", function(event) {
+						self.dragEnd(event);
+					});
+			this.dragging = false;
+			this.dragged = false;
+			
+			this.$items = this.$element.children(this._options.selector);
+			this.$items.addClass("wd_carousel-item");
+			
+			// Remove any non-items (e.g. unintended text nodes)
+			this.$element.empty();
+			this.$element.append(this.$items);
+
+			this.navEnabled = true;
+			this.currentIndex = 0;
+			this.$currentItem = this.$items.eq(0);
+			
+			this.$clones = $([]);
+			
+			this.size_known = false;
+			this.$element.wd_imagesloaded(
+				function() {
+					self.size_known = true;					
+					self.resize();
+				},
+				"size"
+			);
+			
+			this.reset();
+			
+			this.start(this._options.autoScroll);
+		},
+		
+		options: function(options) {
+			if (options) {
+				$.extend(this._options, options);
+			} else {
+				return this._options;
+			}
+		},
+		
+		reload: function(options) {
+			if (options) {
+				this.options(options);
+			}
+			
+			this.resize();
+		},
+
+		reset: function() {
+			this.$items.data("wd_carousel-index", null);
+			this.$clones.data("wd_carousel-index", null);
+			this.$element.children(".wd_clone").detach();
+			
+			var $children = this.$element.children();
+			this.itemCount = $children.length;
+			$children.each(function(index) {
+				$(this).data("wd_carousel-index", index);
+			});
+			
+			if (this.itemCount > 0) {
+				var $last_child = $children.eq(-1);
+				this.listWidth = $last_child.position().left + $last_child.outerWidth();
+			} else {
+				this.listWidth = 0;
+			}
+			
+			var cropperWidth = this.$cropper.innerWidth();
+			
+			if (this.itemCount < 2 || this.listWidth <= cropperWidth) {
+				var position = this._options.center ? ((cropperWidth-this.listWidth)/2) : 0;
+				this.$element.css("left", position);
+				$children.addClass("wd_carousel-current");
+				if (this.itemCount > 0 && this.size_known) {
+					this.$currentItem = this.itemAt(this.listWidth/2);
+					this.currentIndex = this.$currentItem.data("wd_carousel-index");
+				}
+				this.hideNav(true);
+			} else {
+				var left = cropperWidth;
+				for (var i = -1; i > -$children.length; --i) {
+					var $item = $children.eq(i);
+					var $clone = $item.data("wd_carousel-clone-left");
+					if (!$clone)
+						$clone = this.clone($item, "left");
+					this.$element.prepend($clone);
+					$clone.data("wd_carousel-index", i);
+					left -= $item.outerWidth();
+					if (left <= 0)
+						break;
+				}
+				
+				var right = 0;
+				for (var i = 0; i < $children.length; ++i) {
+					var $item = $children.eq(i);
+					var $clone = $item.data("wd_carousel-clone-right");
+					if (!$clone)
+						$clone = this.clone($item, "right");
+					this.$element.append($clone);
+					$clone.data("wd_carousel-index", $children.length+i);
+					right += $item.outerWidth();
+					if (right >= cropperWidth)
+						break;
+				}
+
+				this.hideNav(false);
+
+				var index = this.$currentItem.data("wd_carousel-index");
+				if (!index)
+					index = 0;
+				this.scrollToIndex(index, true);
+			}
+		},
+				
+		clone: function($item, dir) {
+			var $clone = $item.clone(true)
+				.attr("id","")
+				.addClass("wd_clone")
+				.data("wd_carousel-cloned-from", $item);
+		
+			$clone.find("[id]").each(function() {
+				$(this).attr("id", "");
+			});
+
+			$item.data("wd_carousel-clone-"+dir, $clone);
+			
+			this.$clones = this.$clones.add($clone);
+			
+			return $clone;
+		},
+				
+		hideNav: function(hide) {
+			this.$prev.toggle(!hide);
+			this.$next.toggle(!hide);
+			this.navEnabled = !hide;
+		},
+				
+		next: function() {
+			return this.scrollBy(this._options.scrollSize, this._options.scrollUnit);
+		},
+
+		prev: function() {
+			return this.scrollBy(-this._options.scrollSize, this._options.scrollUnit);
+		},
+		
+		scrollBy: function(count, unit) {
+			if (!this.navEnabled)
+				return false;
+			
+			var index;
+			if (unit == "item") {
+				index = this.currentIndex + count;
+			} else { // unit == "page"
+				var pageWidth = this.$cropper.innerWidth();
+				var offset = count;
+				if (this._options.center) {
+					pageWidth /= 2;
+					++offset;
+				}
+				var position = offset * pageWidth - this.$element.position().left;
+				var $item = this.itemAt(position);
+				index = $item.data("wd_carousel-index");
+				if (index == this.currentIndex)
+					index += (count < 0) ? -1 : 1;
+			}
+			
+			return this.scrollToIndex(index);
+		},
+				
+		_doAutoScroll: function() {
+			if (this.navEnabled && this.autoScrollInterval > 0) {
+				var self = this;
+				this.autoScrollTimer = setTimeout(function() {
+						self.next();
+					},
+					this.autoScrollInterval
+				);
+			}
+		},
+		
+		start: function(interval) {
+			this.pause();
+			if (interval !== undefined)
+				this.autoScrollInterval = interval;
+			this._doAutoScroll();
+		},
+		
+		pause: function() {
+			if (this.autoScrollTimer) {
+				clearTimeout(this.autoScrollTimer);
+				this.autoScrollTimer = null;
+			}
+		},
+				
+		stop: function() {
+			this.pause();
+			this.autoScrollInterval = 0;
+		},
+		
+		scrollToIndex: function(index, now) {
+			if (this.itemCount == 0 || !this.navEnabled)
+				return false;
+			
+			this.pause();
+			
+			var $children = this.$element.children().not(".wd_clone");
+			
+			index = (index + $children.length) % $children.length;
+			var $child = $children.eq(index);
+			
+			this.$element.find(".wd_carousel-current").removeClass("wd_carousel-current");
+			$child.addClass("wd_carousel-current");
+			
+			var position = -$child.position().left;
+			if (this._options.center) {
+				position += this.$cropper.innerWidth()/2 - $child.outerWidth()/2;
+			}
+			
+			if (this._options.slideEasing && !now) {
+				this.$element.stop();
+				
+				var cur_offset = this._options.center ? (this.$cropper.innerWidth() / 2) : 0;
+				var cur_pos = this.$element.position().left;
+				var $cur_item = this.itemAt(cur_offset - cur_pos);
+				var cur_dist = Math.abs(position - cur_pos);
+				
+				var $clone, clone_pos, clone_dist;
+				$clone = $cur_item.data("wd_carousel-clone-left");
+				if ($clone) {
+					var clone_pos = -$clone.position().left;
+					if (this._options.center) {
+						clone_pos += this.$cropper.innerWidth()/2 - $clone.outerWidth()/2;
+					}
+					clone_dist = Math.abs(position - clone_pos);
+					if (clone_dist < cur_dist) {
+						cur_pos = clone_pos;
+						cur_dist = clone_dist;
+					}
+				}
+
+				$clone = $cur_item.data("wd_carousel-clone-right");
+				if ($clone) {
+					var clone_pos = -$clone.position().left;
+					if (this._options.center) {
+						clone_pos += this.$cropper.innerWidth()/2 - $clone.outerWidth()/2;
+					}
+					clone_dist = Math.abs(position - clone_pos);
+					if (clone_dist < cur_dist) {
+						cur_pos = clone_pos;
+						cur_dist = clone_dist;
+					}
+				}
+
+				var self = this;
+				this.$element.css("left", cur_pos);
+				this.$element.animate({left: position}, this._options.slideSpeed, this._options.slideEasing, function() {self.start();});
+			} else {
+				this.$element.css("left", position);
+				this.start();
+			}
+
+			this.currentIndex = index;
+			this.$currentItem = $child;
+		},
+				
+		scrollToItem: function(item) {
+			var index = $(item).data("wd_carousel-index");
+			if (index !== null)
+				this.scrollToIndex(index);
+		},
+				
+		makeItemCurrent: function(item) {
+			var $item = $(item);
+			if (!$item.hasClass("wd_carousel-current")) {
+				this.$element.find(".wd_carousel-current").removeClass("wd_carousel-current");
+				
+				var $clonedFrom = $item.data("wd_carousel-cloned-from");
+				if ($clonedFrom) {
+					var clone_pos = $item.position().left;
+					var item_pos = $clonedFrom.position().left;
+					var offset = clone_pos - item_pos;
+					this.$element.css("left", this.$element.css("left") + offset);
+					this.dragListX += offset;
+					$item = $clonedFrom;
+				}
+				
+				$item.addClass("wd_carousel-current");
+				this.currentIndex = $item.data("wd_carousel-index");
+				this.$currentItem = $item;
+			}
+		},
+				
+		itemAt: function(position) {
+			var $children = this.$element.children();
+			if ($children.length == 0)
+				return null;
+			
+			var $item = $children.eq(Math.floor($children.length/2));
+			var dir = 0;
+			while (true) {
+				if (position < $item.position().left) {
+					$item = $item.prev();
+					if (dir == 1)
+						break;
+					dir = -1;
+				} else if (position > $item.position().left + $item.outerWidth()) {
+					$item = $item.next();
+					if (dir == -1)
+						break;
+					dir = 1;
+				} else {
+					break;
+				}
+				if ($item.length == 0)
+					break;
+			}
+			
+			return $item;
+		},
+				
+		onClick: function(event) {
+			if (this.dragged) {
+				event.stopImmediatePropagation();
+				event.stopPropagation();
+				event.preventDefault();
+			}
+		},
+				
+		dragStart: function(event) {
+			this.dragged = false;
+
+			if (!this.navEnabled)
+				return;
+
+			this.pause();
+			this.dragIndex = this.currentIndex;
+			
+			this.dragStartX = this.eventPosition(event);
+			if (this.dragStartX === undefined)
+				return;
+			
+			this.dragListX = this.$element.position().left;
+
+//			this.$cropper.addClass("dragging");
+			this.dragging = true;
+		},
+				
+		dragMove: function(event) {
+			if (!this.dragging)
+				return;
+			
+			event.preventDefault();
+			
+			var pos = this.eventPosition(event);
+			var delta = pos - this.dragStartX;
+			
+			if (!this.dragged && Math.abs(delta) >= this._options.dragThreshold) {
+				this.$cropper.addClass("dragging");
+				this.dragged = true;
+			}
+			
+			if (this.dragged) {
+				var list_position = this.dragListX+delta;
+				this.$element.css("left", list_position);
+				
+				var offset = this._options.center ? (this.$cropper.innerWidth() / 2) : 0;
+				var position = offset - this.$element.position().left;
+				var $item = this.itemAt(position);
+				this.makeItemCurrent($item);
+			}
+		},
+				
+		dragEnd: function(event) {
+			if (!this.dragging)
+				return;
+			
+			if (this.dragged) {
+				var offset = this._options.center ? (this.$cropper.innerWidth() / 2) : 0;
+				var position = offset - this.$element.position().left;
+				var $item = this.itemAt(position);
+				var index = $item.data("wd_carousel-index");
+				if (index !== null && index != this.dragIndex)
+					this.stop();
+				this.scrollToIndex(index);
+			}
+
+			this.$cropper.removeClass("dragging");
+			this.dragging = false;
+			this.start();
+		},
+				
+		eventPosition: function(event) {
+			if (event.originalEvent && event.originalEvent.touches) {
+				var touches = event.originalEvent.touches;
+				if (touches.length != 1)
+					return undefined;
+				return touches[0].pageX;
+			} else {
+				return event.pageX;
+			}
+		},
+				
+		filter: function(selector) {
+			this.$element.children().detach();
+			var $items = this.$items;
+			if (selector)
+				$items = $items.filter(selector);
+			if ($items.length > 0)
+				this.$element.append($items);
+			this.reset();
+		},
+		
+		destroy: function() {
+			this.stop();
+			this.filter(false);
+			this.$clones = $([]);
+			this.$items
+				.removeClass("wd_carousel-item")
+				.data("wd_carousel-index", null)
+				.data("wd_carousel-clone-right", null)
+				.data("wd_carousel-clone-left", null);
+			this.$element
+				.removeClass("wd_carousel-list")
+				.insertBefore(this.$container);
+			this.$container.remove();
+		},
+		
+		resize: function() {
+			if (this._options.widthMode != "content") {
+				var totalWidth = this.$cropper.innerWidth();
+				var columns = this._options.columns;
+				if (this._options.widthMode == "width")
+					columns = Math.max(Math.floor(totalWidth / this._options.minWidth), 1);
+				var width = totalWidth / columns;
+				this.$items.outerWidth(width);
+				this.$clones.outerWidth(width);
+			}
+			
+			webDriver.doResize(this.$element);
+			
+			if (this._options.heightMode == "content") {
+				var height = this.$element.outerHeight();
+				this.$cropper.height(height);
+			}
+			
+			this.reset();
+		}
+	};
+
+	$.fn.wd_carousel = function(options) {
+		var args = Array.prototype.slice.call(arguments, 1);
+		var result = this;
+		
+		this.each(function() {
+			var instance = $(this).data("wd_carousel");
+			if (typeof options == "string") {
+				var res = instance[options].apply(instance, args);
+				if (typeof res != "undefined") {
+					result = res;
+					return false;
+				}
+			} else {
+                if (instance) {
+                    instance.reload(options);
+                } else {
+                    $(this).data("wd_carousel", new wd_carousel(this, options));
+                }
+			}
+        });
+		
+		return result;
+    };
+})(webDriver.jQuery);
+</script>
+<style type="text/css" wd_script_id="asset_display_style" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">
+			.wd_assets_container div.wd_asset_type_tabs {
+				background: #fff url(images/webdriver/assets_tab.gif) 0 bottom/contain repeat-x !important;
+				margin: 0;
+				padding: 0;
+				border-left: 1px solid #e1e1e1;
+				border-right: 1px solid #e1e1e1;
+				border-bottom: 1px solid #e1e1e1;
+				border-top: 1px solid #e1e1e1;
+				border-top-right-radius:4px;
+				border-top-left-radius:4px;
+				-webkit-border-top-right-radius:4px;
+				-webkit-border-top-left-radius:4px;
+				-moz-border-radius-topright: 4px;
+				-moz-border-radius-topleft: 4px;
+			}
+			.wd_assets_container ul.wd_asset_type_tabs {
+				overflow: hidden;
+				margin: 0px;
+				padding: 0px;
+			}
+			.wd_assets_container li.wd_asset_type_tab {
+				float: left;
+				display: block;
+			}
+			.wd_assets_container div.wd_asset_type_tabs li.wd_asset_type_tab a {
+				float: left;
+				border-left: 1px solid #fff;
+				border-right: 1px solid #e1e1e1;
+				display: block;
+				padding: 8px;
+				margin: 1px 0 0;
+			}
+			.wd_assets_container div.wd_asset_type_tabs li span.tab_close_icon {
+				display: none;
+			}
+			.wd_assets_container div.wd_asset_type_tabs li.wd_asset_type_tab span.wd_asset_count {
+				margin-left: 1ex;
+			}
+			.wd_assets_container div.wd_asset_type_tabs a span {
+				font-weight: normal;
+			}
+			.wd_assets_container li.tab-inactive a, .wd_assets_container li.tab-inactive a:hover {
+				background-color: transparent;
+				font-weight: normal;
+			}
+			.wd_assets_container li.tab-active a, .wd_assets_container li.tab-active a:hover {
+				background-color: #fff;
+				color: #333!important;
+				font-weight: bold;
+			}
+			.wd_assets_container div.wd_asset_type_tabs li.wd_asset_type_tab .wd_asset_icon {
+				color: #4f5051;
+				font-size: 1.2em;
+				margin: 0 5px 0 0;
+			}
+			img.wd_asset_icon {
+				vertical-align: middle;
+				margin: 0 5px 0 0;
+				border: 0;
+			}
+			.wd_assets_container .wd_assets {
+				clear: both;
+			}
+			@media(max-width:768px){
+				.wd_assets_container div.wd_asset_type_tabs li.wd_asset_type_tab a {
+					padding: 8px 5px 0;
+				}
+				.wd_assets_container div.wd_asset_type_tabs li.wd_asset_type_tab img.wd_asset_icon {
+					margin-right: 0px;
+				}
+				.wd_assets_container div.wd_asset_type_tabs li.wd_asset_type_tab span.wd_asset_label {
+					display: none;
+				}
+				.wd_assets_container div.wd_asset_type_tabs li.wd_asset_type_tab span.wd_asset_count {
+					margin-left: 1px;
+				}
+			}
+			
+		.wd_assets_container {
+			border: 0px none;
+			margin: 15px 0 0 0;
+			padding: 0 0 14px;
+			background: transparent url(images/webdriver/assets_shadow_full.png) center bottom no-repeat;
+			clear: both;
+		}
+
+		.wd_assets_container .wd_assets {
+			border-left: 1px solid #e1e1e1;
+			border-right: 1px solid #e1e1e1;
+			border-bottom: 1px solid #e1e1e1;
+			border-top: 1px solid #fff;
+			padding: 15px;
+		}
+
+		.wd_assets_container .wd_assets img {
+			max-width: 400px;
+		}
+
+		.wd_assets_container #wd_assets_closer .wd_assets {
+			border: 0px none;
+			overflow: auto;
+		}
+
+		.wd_assets_container #wd_assets_content {
+			border: 0px none;
+			margin: 0px;
+			padding: 0px 0px 25px 0px;
+		}
+
+		.wd_assets_container #wd_assets_content.wd_assets_noclose {
+			padding-bottom: 0px;
+		}
+
+		.wd_assets_container #wd_assets_closer {
+			border-left: 1px solid #e1e1e1;
+			border-right: 1px solid #e1e1e1;
+			border-bottom: 1px solid #e1e1e1;
+			border-top: 1px solid #fff;
+			margin: 0px;
+			padding: 0px;
+			position: relative;
+			height: 0px;
+			overflow: hidden;
+		}
+
+		.wd_assets_container #Documents_items a img, .wd_assets_container #Video_items a img {
+			padding: 15px 15px;
+			display: block;
+			margin-bottom: 1px;
+			border: 1px solid #e1e1e1;
+			background-color: #fcfcfc;
+		}
+
+		.wd_assets_container .summary_list_link {
+			margin: 5px 0px 5px 0px;
+		}
+
+		.wd_assets_container a.summary_detail_back_button, .wd_assets_container a:hover.summary_detail_back_button {
+			background: #fff url(images/webdriver/assets_left_arrow.gif) left center no-repeat;
+			border: 1px solid #dedede;
+			height: 22px;
+			padding: 4px 12px 2px 40px;
+			font-size: 12px;
+			text-decoration: none;
+		}
+
+		.wd_assets_container .assets_close_link {
+			text-align: right;
+			margin: 0px;
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
+
+		.wd_assets_container a.assets_close_button, .wd_assets_container a:hover.assets_close_button {
+			background: #fff url(images/webdriver/assets_up_arrow.gif) left center no-repeat;
+			border: 1px solid #dedede;
+			height: 22px;
+			padding: 4px 12px 2px 40px;
+			font-size: 12px;
+			text-decoration: none;
+		}
+		</style>
+<script type="text/javascript" src="js/wd_scriptloader.js" wd_script_id="wd_scriptloader.js" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw=="></script>
+<script type="text/javascript" src="js/wd_hashchange.js" wd_script_id="wd_hashchange.js" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw=="></script>
+<script type="text/javascript" wd_script_id="asset_display_script" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">
+		(function($) {
+		function show_asset_list(type) {
+			var obj = document.getElementById(type+"_summary_list");
+			if (obj) {
+				var tab_link = document.getElementById(type+"_tab_link");
+				if (tab_link)
+					tab_link.href = tab_link.href.replace(/#.*$/,"")+"#"+type;
+
+				obj.style.display = "";
+
+				obj = document.getElementById(type+"_summary_list_link");
+				if (obj)
+					obj.style.display = "none";
+
+				obj = document.getElementById(type+"_summary_detail");
+				if (obj)
+					obj.style.display = "none";
+					
+				assets_resize(false, type);
+			}
+		}
+
+		function load_asset_detail(type, id) {
+			var item = document.getElementById("item_"+type+":"+id);
+			if (!item || !item.attributes.wd_detail_url)
+				return;
+
+			var url = item.attributes.wd_detail_url.nodeValue;
+
+			var detail = document.getElementById(type+"_summary_detail");
+			if (!detail)
+				return;
+
+			var tab_link = document.getElementById(type+"_tab_link");
+			if (tab_link)
+				tab_link.href = tab_link.href.replace(/#.*$/,"")+"#"+type+((id != "") ? (":"+id) : "");
+
+			detail.innerHTML = "Loading...";
+			detail.style.display = "";
+
+			var request;
+
+			if (window.XMLHttpRequest) {
+				request = new XMLHttpRequest();
+				if (request.overrideMimeType)
+					request.overrideMimeType("text/html");
+			} else if (window.ActiveXObject) {
+				request = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+			if (!request)
+				return;
+
+			var obj = document.getElementById(type+"_summary_list");
+			if (obj)
+				obj.style.display = "none";
+
+			obj = document.getElementById(type+"_summary_list_link");
+			if (obj)
+				obj.style.display = "";
+
+			request.onreadystatechange = function (){
+				if (request.readyState == 4 && request.status == 200) {
+					detail.innerHTML = request.responseText;
+					var scripts = detail.getElementsByTagName("SCRIPT");
+					for (var i=0; i < scripts.length; ++i)
+						eval(scripts[i].text);
+					webDriver.queueCallback(function() {assets_resize(false, type);});
+				}
+			};
+
+			request.open("GET", url, true);
+			request.send(null);
+		}
+		
+		var active_tab = "assets_34135_17-122";
+		var default_hash = "#assets_34135_17-122";
+		var prev_hash = false;
+		function hash_update() {
+			var hash = window.location.hash;
+			if (!hash || hash == "#")
+				hash = default_hash;
+			if (hash == prev_hash) return;
+			var need_resize = (prev_hash === false);
+			prev_hash = hash;
+
+			// Lock height, so resize animation works
+			var closer = document.getElementById("wd_assets_closer");
+			if (closer)
+				$(closer).height($(closer).height());
+
+			id = hash.substr(1);
+
+			var hash_tab = id;
+			var hash_item = "";
+			var pos = id.indexOf(":");
+			if (pos >= 0) {
+				hash_tab = id.substr(0,pos);
+				hash_item = id.substr(pos+1);
+			}
+
+			if (hash_tab != active_tab) {
+				need_resize = true;
+				
+				if (active_tab != "") {
+					var old_tab = document.getElementById(active_tab+"_tab");
+					if (old_tab) {
+						old_tab.className = old_tab.className.replace(/\btab-active\b/, "tab-inactive");
+
+						var old_div = document.getElementById(active_tab+"_items");
+						if (old_div)
+							old_div.style.display = "none";
+					}
+					active_tab = "";
+				}
+
+				if (hash_tab != "") {
+					var new_tab = document.getElementById(hash_tab+"_tab");
+					if (new_tab) {
+						new_tab.className = new_tab.className.replace(/\btab-inactive\b/, "tab-active");
+
+						$("#"+hash_tab+"_items").show().trigger("wd_assets_show");
+
+						active_tab = hash_tab;
+					}
+				}
+				
+				asset_tabs_update_visibility();
+			}
+			
+			if (need_resize)
+				assets_resize(active_tab == "", active_tab);
+
+			if (active_tab != "") {
+				var old_item = "__Unknown__";
+				var tab_link = document.getElementById(active_tab+"_tab_link");
+				if (tab_link) {
+					var hpos = tab_link.href.indexOf("#");
+					if (hpos >= 0) {
+						var cpos = tab_link.href.indexOf(":", hpos);
+						if (cpos >= 0)
+							old_item = tab_link.href.substr(cpos+1);
+					}
+				}
+
+				if (hash_item != old_item) {
+					if (hash_item == "")
+						show_asset_list(active_tab);
+					else
+						load_asset_detail(active_tab, hash_item);
+						
+					$("#"+hash_tab+"_items").trigger("wd_asset_item", [hash_item]);
+				}
+			}
+		}
+		
+		function toggle_tab(tab) {
+			if (tab == active_tab) {
+				window.location.hash = "#Closed";
+				return false;
+			} else {
+				return true;
+			}
+		}
+		
+		function assets_resize(close, type) {
+			if (type != active_tab)
+				return;
+				
+			var closer = document.getElementById("wd_assets_closer");
+			if (!closer)
+				return;
+			
+			var new_height = 0;
+			if (!close) {
+				var content = document.getElementById("wd_assets_content");
+				if (content)
+					new_height = $(content).outerHeight();
+			}
+			
+			var my_close = close;
+			$(closer).animate({height:new_height},500,function() {if (!my_close) $(closer).css("height", "auto");});
+		}
+		
+		function asset_tabs_update_visibility() {
+			if (active_tab == "" || $("li.wd_asset_type_tab").css("float") != "none")
+				$(".wd_asset_type_tab.tab-inactive").slideDown(500);
+			else
+				$(".wd_asset_type_tab.tab-inactive").slideUp(500);
+		}
+
+		$(function() {
+			setTimeout(hash_update, 10);
+			$(window).hashchange(hash_update);
+			
+			asset_tabs_update_visibility();
+			$(window).resize(function() {
+				asset_tabs_update_visibility();
+			});
+		});
+		
+		$.extend(
+			webDriver,
+			{
+				toggle_tab: toggle_tab,
+				load_asset_detail: load_asset_detail
+			}
+		);
+		})(webDriver.jQuery);
+		</script>
+<style type="text/css" wd_script_id="template detail:stories:system style" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">
+.wd_stories-detail a:hover {
+	background: transparent;
+}
+.wd_stories-detail .wd_title {
+	font-size: 1.7em;
+	margin: 10px 0 5px;
+}
+.wd_stories-detail p {
+	margin: 0 0 0 0;
+	padding: 0 0 5px 0;
+}
+.wd_stories-detail .item_name a {
+	font-size: 1.2em;
+	font-weight: normal;
+}
+.wd_stories-detail tr:first-child {
+	border-top: 0px none;
+	margin: 0 0 5px;
+}
+</style>
+<script type="text/javascript" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">webDriver.pop_jQuery();</script>
+
+<!-- end spin_special_output(head_start) -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iRobot MediaKit - Media Kits</title>
+
+ <meta name="keywords" content="" />
+ <meta name="description" content="" />
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:title" content="iRobot logos" />
+ <meta property="og:site_name" content="iRobot MediaKit" />
+ <meta property="og:url" content="https://media.irobot.com/media-kits?item=17" />
+ <meta property="og:title" content="iRobot logos" />
+<link href="css/default.css" rel="stylesheet">
+<!--[if IE 9]>
+	<link href="/Base/Includes/css/navigation-ie9.css" rel="stylesheet" />
+<![endif]-->
+
+<script src="https://consent.trustarc.com/notice?domain=irobot.com&c=teconsent&js=nj&noticeType=bb&gtm=1&text=true"></script>
+<script src="https://consent.trustarc.com/autoblockasset/core.min.js?domain=irobot.com"></script>
+<script src="https://consent.trustarc.com/autoblockoptout?domain=irobot.com"></script>
+
+
+<link rel="icon" type="image/png" sizes="16x16" href="images/16x16.png" />
+<link rel="icon" type="image/png" sizes="24x24" href="images/24x24.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/32x32.png" />
+<link rel="icon" type="image/png" sizes="64x64" href="images/64x64.png" />
+<link rel="stylesheet" type="text/css" href="https://composer.irobot.com/Presentation/maestro/css/headerfooter.css">
+<link rel="stylesheet" type="text/css" href="css/wdcontent.css">
+<script src="//about.irobot.com/bundle/beacon"></script>
+
+<!-- begin spin_special_output(head_end) -->
+<script type="text/javascript" nonce="NGM5ZjUwZWQ1NjUxYTA1NjNmOTY2NDAwYzI3MzA3Njk3ZTMyMDI4Yw==">
+			(function($) {
+				$(function() {
+					var $carousel = $("#wd_gallery_slides_1");
+						$carousel.wd_carousel({
+						infinite: true,
+						show: 0,
+						scroll: 1,
+						center: true
+					});
+					$carousel.closest("div.wd_assets")
+						.bind("wd_assets_show", function () {$carousel.wd_carousel("resize");})
+						.bind("wd_asset_item", function(event, item_id) {
+							$(this).find("li.wd_item").each(function() {
+								if ($(this).attr("wd_asset_item_id") == item_id) {
+									$carousel.wd_carousel("scrollToItem", $(this));
+									return false;
+								}
+							});
+						});
+				});
+			})(webDriver.jQuery);
+		</script>
+<link rel="canonical" href="https://media.irobot.com/media-kits?item=17" />
+<!-- end spin_special_output(head_end) -->
+</head>
+<body class="wd_pageid_34135 wd_item_page wd_item_17">
+
+<div class="page-wrapper">
+	<div class="o-header-placeholder">
+		<div class="o-header__container">
+			<div class="o-header__leftheader">
+					<a href="/"><img class="brand_logo" src="images/logo_12-2022.png" alt="iRobot Logo" height="44"></a>
+			</div>
+		</div>
+	</div>
+	<style type='text/css'>
+	.o-header-placeholder {
+	    border-bottom: 7px solid #64a70b;
+	    width: 100%;
+	    background: #fff;
+	}
+
+	.o-header-placeholder .o-header__container {
+	    width: calc(100% - 338px);
+	    background: white;
+	    display: flex;
+	    justify-content: flex-start;
+	    align-items: center;
+	    padding: 10px 169px;
+	}
+	@media screen and (max-width: 1024px) {
+	    .o-header-placeholder .o-header__leftheader {
+	        margin: 0 auto;
+	        justify-content: space-between;
+	        align-items: center;
+	    }
+	   .o-header-placeholder .o-header__container {
+	        padding: 10px;
+			width:100%;
+	    }
+	}
+	</style>
+
+	<div class="page-content">
+	
+		<main id="wd_main_content">
+		<div class="container">
+			<!-- BEGIN CONTENT-WRAPPER -->  
+			<div class="content-wrapper page-content">
+								<!-- BEGIN CONTENT -->  
+				<div class="content singleColumn" >
+					<!--  <h1 class="title_shadow nonav" style="padding-left:0;">Media Kits</h1> -->
+					<div id="wd_printable_content" class="fr-view">
+<div class="wd_stories-detail">
+<div class="wd_title">iRobot logos</div>
+<div class="wd_toolbar wd_toolbar-detail"><ul class="wd_tools"><li class="wd_tool wd_tool-print"><span class="wd_tool_icon"><a onclick="view_printable(); return false;" rel="nofollow" href="#print" title="print"><span class="fa fa-print"></span></a></span></li><li class="wd_tool wd_tool-socialshare_facebook"><span class="wd_tool_icon">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmedia.irobot.com%2Findex.php%3Fs%3D34135%26item%3D17" target="_blank" title="Facebook Share" style="background-color:#4267B2;">
+                    <span class="fa fa-facebook"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable"></span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-socialshare_linkedin"><span class="wd_tool_icon">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmedia.irobot.com%2Findex.php%3Fs%3D34135%26item%3D17" target="_blank" title="Linkedin Share" style="background-color:#0077B5;">
+                    <span class="fa fa-linkedin"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable"></span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-socialshare_twitter"><span class="wd_tool_icon">
+                    <a href="https://twitter.com/share?url=https%3A%2F%2Fmedia.irobot.com%2Findex.php%3Fs%3D34135%26item%3D17" target="_blank" title="Twitter Share" style="background-color:#000;">
+                    <span class="fa fa-twitter"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable"></span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-email"><span class="wd_tool_icon"><a onclick="window.location.href = 'mailto:?subject=iRobot%20MediaKit%20-%20Media%20Kits&amp;body='+encodeURIComponent(window.location.href);return false;" href="#email" title="email"><span class="fa fa-envelope"></span></a></span></li></ul></div>
+
+			
+		
+
+
+<div class="wd_assets_container"><div class="wd_asset_type_tabs"><ul class="wd_asset_type_tabs"><li class="wd_asset_type_tab tab-active" id="assets_34135_17-122_tab" title="Photos"><a href="https://media.irobot.com/media-kits?item=17#assets_34135_17-122" id="assets_34135_17-122_tab_link"><span class="tab_close_icon"></span><span class="wd_asset_icon fa fa-photo" style="font-size: 1.2em;"></span><span class="wd_asset_label">Photos</span><span class="wd_asset_count">(4)</span></a></li></ul></div><div id="wd_assets_closer"><div id="wd_assets_content" class="wd_assets_noclose"><div class="wd_assets" id="assets_34135_17-122_items"><div class="gallery_summary"><div class="gallery_summary_filmstrip"><ul id="wd_gallery_slides_1" class="wd_gallery_slides wd_gallery_assets_34135_17-122_slides"><li class="wd_item" id="item_assets_34135_17-122:19370" wd_detail_url="https://media.irobot.com/media-kits?gallery=19370&pagetemplate=inset&itemtemplate=drawer" wd_asset_item_id="19370"><a href="https://media.irobot.com/media-kits?item=17#assets_34135_17-122:19370"><img src="/image/iRobot+Logo+Print+%28002%29+100px.jpg" border="0"  alt="" title="iRobot Print Logo" class="wd_item_thumbnail" style="width: 100%; max-width: 100px;" /></a></li><li class="wd_item" id="item_assets_34135_17-122:19368" wd_detail_url="https://media.irobot.com/media-kits?gallery=19368&pagetemplate=inset&itemtemplate=drawer" wd_asset_item_id="19368"><a href="https://media.irobot.com/media-kits?item=17#assets_34135_17-122:19368"><img src="/image/THUMBiRobot_Logo_Black_Print1.jpg" border="0"  alt="" title="iRobot Print Logo" class="wd_item_thumbnail" style="width: 100%; max-width: 360px;" /></a></li><li class="wd_item" id="item_assets_34135_17-122:19369" wd_detail_url="https://media.irobot.com/media-kits?gallery=19369&pagetemplate=inset&itemtemplate=drawer" wd_asset_item_id="19369"><a href="https://media.irobot.com/media-kits?item=17#assets_34135_17-122:19369"><img src="/image/THUMBiRobot_Logo_Black_Web1.jpg" border="0"  alt="" title="iRobot Web Logo" class="wd_item_thumbnail" style="width: 100%; max-width: 175px;" /></a></li><li class="wd_item" id="item_assets_34135_17-122:19371" wd_detail_url="https://media.irobot.com/media-kits?gallery=19371&pagetemplate=inset&itemtemplate=drawer" wd_asset_item_id="19371"><a href="https://media.irobot.com/media-kits?item=17#assets_34135_17-122:19371"><img src="/image/iRobot+Logo+Web+100px.png" border="0"  alt="" title="iRobot Web Logo" class="wd_item_thumbnail" style="width: 100%; max-width: 100px;" /></a></li></ul></div><div id="assets_34135_17-122_summary_detail" class="gallery_summary_detail"></div></div><script type="text/javascript">webDriver.load_asset_detail("assets_34135_17-122",19370);</script></div></div></div></div>
+ 
+				
+			
+
+</div>
+</div>				</div>
+				<!-- END CONTENT -->
+								<!-- END LEFT NAV -->
+			</div>
+			<!-- END CONTENT-WRAPPER -->        
+		</div>
+	</main>
+	
+	
+	</div>
+			
+	<div class="communityFooterBG" style="padding: 40px 0;">
+		<div class="communityFooter">
+			<div class="left">
+				<!-- <div class="newsletterSignup">
+					<iframe src="iframe/dw_email_signup_EN.html" id="phcommunityfooterleft_0_newsletterSignupIFrame" width="500" height="70" frameborder="0" scrolling="no"></iframe>
+				</div> -->
+			</div>
+			<div class="right">
+				<div class="socialIcons">
+					<div class="icons">
+					<ul id="phcommunityfooterright_0_ctl00_ulNav" class="nav nav-list nav-list--lvl1">
+						<li id="phcommunityfooterright_0_ctl00_rptNavigation_liNavItem_0" class="nav-item nav-item--lvl1 icon sitecore nodropdown">
+							<a id="phcommunityfooterright_0_ctl00_rptNavigation_hypNavigationItem_0" class="nav-link nav-link--lvl1" href="https://www.facebook.com/irobot/" target="_blank">
+								<span class="nav-link-text nav-link-text--lvl1">Find us on Facebook</span>
+								<span class="nav-img-wrap nav-img-wrap--lvl1"><img src="images/Facebook.svg" class="nav-img nav-img--lvl1" alt="Facebook icon" width="50" height="50"></span>
+								<span class="nav-aux-text nav-aux-text--lvl1">Find us on Facebook</span>
+							</a>
+						</li>
+						<li id="phcommunityfooterright_0_ctl00_rptNavigation_liNavItem_1" class="nav-item nav-item--lvl1 icon sitecore nodropdown">
+							<a id="phcommunityfooterright_0_ctl00_rptNavigation_hypNavigationItem_1" class="nav-link nav-link--lvl1" href="https://twitter.com/iRobot" target="_blank">
+								<span class="nav-link-text nav-link-text--lvl1">Follow us on Twitter</span>
+								<span class="nav-img-wrap nav-img-wrap--lvl1"><img src="images/Twitter.svg" class="nav-img nav-img--lvl1" alt="Twitter icon" width="50" height="50"></span>
+								<span class="nav-aux-text nav-aux-text--lvl1">Follow us on Twitter</span>
+							</a>
+						</li>
+						<li id="phcommunityfooterright_0_ctl00_rptNavigation_liNavItem_2" class="nav-item nav-item--lvl1 icon sitecore nodropdown">
+							<a id="phcommunityfooterright_0_ctl00_rptNavigation_hypNavigationItem_2" class="nav-link nav-link--lvl1" href="https://www.youtube.com/user/irobot" target="_blank">
+								<span class="nav-link-text nav-link-text--lvl1">Subscribe us on Youtube</span>
+								<span class="nav-img-wrap nav-img-wrap--lvl1"><img src="images/Youtube.svg" class="nav-img nav-img--lvl1" alt="Youtube icon" width="50" height="50"></span>
+								<span class="nav-aux-text nav-aux-text--lvl1">Subscribe to us on Youtube</span>
+							</a>
+						</li>
+						<li id="phcommunityfooterright_0_ctl00_rptNavigation_liNavItem_3" class="nav-item nav-item--lvl1 icon sitecore nodropdown">
+							<a id="phcommunityfooterright_0_ctl00_rptNavigation_hypNavigationItem_3" class="nav-link nav-link--lvl1" href="https://www.linkedin.com/company/irobot" target="_blank">
+								<span class="nav-link-text nav-link-text--lvl1">Connect with us on LinkedIn</span>
+								<span class="nav-img-wrap nav-img-wrap--lvl1"><img src="images/LinkedIn.svg" class="nav-img nav-img--lvl1" alt="LinkedIn icon" width="50" height="50"></span>
+								<span class="nav-aux-text nav-aux-text--lvl1">Connect with us on LinkedIn</span>
+							</a>
+						</li>
+						<li id="phcommunityfooterright_0_ctl00_rptNavigation_liNavItem_4" class="nav-item nav-item--lvl1 icon sitecore nodropdown">
+							<a id="phcommunityfooterright_0_ctl00_rptNavigation_hypNavigationItem_4" class="nav-link nav-link--lvl1" href="https://www.instagram.com/irobot/" target="_blank">
+								<span class="nav-link-text nav-link-text--lvl1">Follow us on Instagram</span>
+								<span class="nav-img-wrap nav-img-wrap--lvl1"><img src="images/Instagram-Legacy.svg" class="nav-img nav-img--lvl1" alt="Instagram icon" width="50" height="50"></span>
+								<span class="nav-aux-text nav-aux-text--lvl1">Follow us on Instagram</span>
+							</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-footer">
+	</div>
+</div>
+
+<div id="globalModal" class="global-modal global-modal-overlay">
+	<div class="global-modal-viewport-container">
+		<div class="global-modal-viewport">
+			<div class="global-modal-content"></div>
+		</div>
+		<button type="button" class="global-modal-close-btn">x</button>
+	</div>
+</div>
+
+<a href="https://www.irobot.com/About-iRobot/Company-Information.aspx#" class="mm-overlay"></a>
+
+<script src="js/default.js"></script>
+<script src="https://composer.irobot.com/Presentation/maestro/js/index.js"></script>
+
+           
+<script type="text/javascript">
+//HP Changes
+jQuery(document).ready(function(){
+	/*Wrap newsfeed items in grid layout*/
+	$('.wd_newsfeed_releases-teaser').append('<div class="wd_grid_container"></div>');
+	/*Look for .item within a given list/feed*/
+	$('.wd_newsfeed_releases-teaser .item').each(function(e){
+		var _url = $(this).find('a').attr('href');
+		$(this).append('<a class="btn --light" href="'+_url+'">Read More</a>')
+	//Append to wrap container        
+	}).appendTo('.wd_grid_container');
+	//Adding Classes to section elems       
+	$('.wd_featureboxes_news .more a').addClass('btn --light').text('View All Press Releases');        
+	$('.wd_featureboxes_news .wd_featurebox_title, .wd_featureboxes_bottom .wd_featurebox_title').addClass('irob_sec_title').wrapInner('<div class="inner_title"></div>');
+	//HP Add bacgrounds to Grid Boxes
+	$('.wd_featureboxes_boxes .wd_featurebox_container .wd_imagetable').each(function(e){
+		var wrapper = $(this).parents('.wd_featurebox_container')[0],
+			img_url = $(this).find('img').attr('src');
+			$(wrapper).css('background-image', 'url('+img_url+')');
+			$(this).remove();
+	})
+         
+/*Media Kits adding items thumbs img as items bg*/
+$('.wd_item_list .wd_item').each(function(e){
+	 var wrapper = $(this),
+		img_url = $(this).find('.wd_thumbnail img').attr('src');
+		$(this).find('.wd_thumbnail').remove();
+		$(this).css('background-image', 'url('+img_url+')');
+		$(this).find('.wd_item_wrapper').wrapInner('<div class="wd_item_col"></div>');
+		$(this).find('.wd_title a').addClass('btn');
+})
+/*Only for Base Mediakit Page... */
+if(!$('body').hasClass('wd_is_category') && !$('body').hasClass('wd_item_page')){
+	$('body').addClass('wd_mediakit_land');
+	$('.wd_category_link').each(function(e){
+		var wrapper = $(this),
+		img_url = wrapper.find('.wd_thumbnail img').attr('src');
+		wrapper.find('.wd_thumbnail').remove();
+		wrapper.css('background-image', 'url('+img_url+')');
+		wrapper.find('.wd_title a').addClass('btn play-btn');
+	})
+}
+/*Setting BG images for TOP FB*/
+$('.bg_images_fb_wrapper .wd_featureboxes_top .wd_featurebox_container').each(function(e){
+	var wrapper = $(this),
+		img_url = $(this).find('.wd_imagetable img').attr('src');
+		$(this).find('.wd_imagetable').remove();
+		$(this).css('background-image', 'url('+img_url+')');
+	})
+});
+</script>
+
+
+<div id="consent_blackbar" class="o-cookiebanner"></div><div id="teconsent" class="o-cookiebanner"></div>
+
+<!-- begin spin_special_output(body_end) -->
+<script wd_script_id="piwik_tracking_code"></script>
+<!-- Piwik Tracking Code -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+
+  _paq.push(["setCustomVariable", 1, "Content Type", "Stories", "page"]);
+
+  _paq.push(["setCustomVariable", 3, "Navigation Page", "Media Kits", "page"]);
+
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u="//stats.drivetheweb.com/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", 1825]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+    g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>
+	<img src="https://stats.drivetheweb.com/piwik.php?idsite=1825&rec=1" style="border:0" alt="" />
+</noscript>
+<!-- End Piwik Tracking Code -->
+		
+<!-- end spin_special_output(body_end) -->
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a09e6533ca1e2734',t:'MTc4MTE1NzYyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

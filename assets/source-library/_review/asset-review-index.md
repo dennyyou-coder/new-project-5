@@ -212,6 +212,71 @@ Remaining failures:
 | Dreame | 1 | `www.dreametech.com` connect timeout |
 | iRobot homepage/static | 3 | official `www.irobot.com` static URLs return 403 |
 
+## Raw Candidates Download Pass - 2026-06-11
+
+User direction:
+
+```text
+Do not keep forcing Aiper / Dreame official CDN.
+Build a raw candidates manifest.
+Download first, then clean, review, and classify.
+```
+
+Created:
+
+```text
+assets/source-library/download-manifest-raw-candidates-v1.tsv
+assets/source-library/_review/asset-raw-candidates-review-2026-06-11.tsv
+```
+
+Manifest coverage:
+
+```text
+8 first-batch brands
+5 candidate types per brand:
+logo / product / people / event / evidence
+```
+
+Download result:
+
+```text
+Downloaded: 34
+Skipped:    0
+Failed:     6
+```
+
+Main new usable download areas:
+
+| Brand | Progress |
+|---|---|
+| Maytronics | Raw copies of logo, product, people, timeline, and corporate page source captured. |
+| Aiper | Product candidate and official/press source pages captured without relying on blocked Aiper CDN image URLs. |
+| Beatbot | Product candidate and trusted media / PR Newswire source pages captured. |
+| Dreame | Wikimedia logo candidate, Xinhua Yu Hao portrait, Xinhua source page, and Verge product/source page captured. |
+| Roborock | Wikimedia logo candidate, official Saros Z70 product image, official newsroom/about, CES page, and press release captured. |
+| Dyson | Official logo, Wikimedia historical product photo, and James Dyson portrait candidate captured. |
+| iRobot | Official Press Center logo/product and media-kit source pages captured. |
+| SharkNinja | Official IR logo, product reference, Mark Barrocas portrait candidate, and Verge interview source page captured. |
+
+Failed candidates:
+
+| Brand | Candidate | Failure |
+|---|---|---|
+| Aiper | Authority Magazine / Medium Richard Wang page | timeout |
+| Dreame | Wikipedia company page | connection reset |
+| Dyson | James Dyson Wikipedia page | connection reset |
+| Dyson | Dyson company Wikipedia page | connection reset |
+| iRobot | Business Insider Colin Angle page | timeout |
+| SharkNinja | SharkNinja IR overview page | 403 |
+
+Initial review manifest uses:
+
+```text
+approved = strong candidate to keep for cleanup/classification, not direct website approval
+backup = source/candidate retained, needs extraction or verification
+reject = failed download or clearly not usable in this pass
+```
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:
