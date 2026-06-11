@@ -393,6 +393,34 @@ Result:
 
 No images were deleted, moved, renamed, or reconnected in this pass.
 
+## Cover Quality Priority Queue V1 - 2026-06-11
+
+Created:
+
+```text
+assets/source-library/_review/cover-quality-priority-queue-v1-2026-06-11.md
+```
+
+Result:
+
+```text
+38 flagged covers reviewed
+10 first-priority covers selected
+15 backup queue covers listed
+0 article images changed
+0 image files changed
+```
+
+Recommended first cover batch:
+
+```text
+irobot-2018-annual-report-faithful-translation
+two-sides-of-dyson
+xiaomi-ecosystem-at-a-crossroads
+hundred-years-of-cleaning-appliance-history
+who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era
+```
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:
