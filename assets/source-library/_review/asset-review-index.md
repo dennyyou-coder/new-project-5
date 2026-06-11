@@ -373,6 +373,26 @@ Result:
 
 No website content or images were changed in this audit.
 
+## Unused Insight Image Manifest V1 - 2026-06-11
+
+Created:
+
+```text
+assets/source-library/_review/unused-insight-image-manifest-v1-2026-06-11.tsv
+```
+
+Result:
+
+```text
+289 unreferenced insight image files classified
+161 keep
+88 migrate-candidate
+40 needs-review
+0 delete-candidate
+```
+
+No images were deleted, moved, renamed, or reconnected in this pass.
+
 ## Article Data Visual Library - 2026-06-10
 
 Created:
