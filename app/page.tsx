@@ -448,7 +448,7 @@ export default function HomePage() {
           </div>
           <div className="home-v8-insight-list">
             {featuredInsights.map((article, index) => (
-              <Link className="home-v8-card home-v8-mini-article" href={`/insights/${article.slug}`} key={article.slug}>
+              <Link className="home-v8-card home-v8-mini-article" href={`/blog/${article.slug}`} key={article.slug}>
                 <img src={imageFor(article, index)} alt={`${article.title} cover image`} />
                 <div>
                   <span>{article.category}</span>

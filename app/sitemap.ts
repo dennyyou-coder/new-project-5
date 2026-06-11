@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified
     })),
     ...getInsights().map((article) => ({
-      url: `${baseUrl}/insights/${article.slug}`,
+      url: `${baseUrl}/blog/${article.slug}`,
       lastModified: article.publishedAt ? new Date(article.publishedAt) : article.date ? new Date(article.date) : new Date()
     }))
   ];

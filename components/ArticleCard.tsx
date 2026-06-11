@@ -3,7 +3,7 @@ import type { Insight } from "@/lib/content";
 
 export function ArticleCard({ article }: { article: Insight }) {
   return (
-    <Link className="article-card" href={`/insights/${article.slug}`}>
+    <Link className="article-card" href={`/blog/${article.slug}`}>
       <div
         className="article-image"
         style={{ backgroundImage: article.coverImage ? `url(${article.coverImage})` : undefined }}
