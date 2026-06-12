@@ -14,6 +14,7 @@ export type Insight = {
   category: string;
   tags: string[];
   featured: boolean;
+  visualPriority: number;
   readingTime: string;
   takeaways: string[];
   coverImage?: string;
@@ -89,6 +90,7 @@ export function getInsights(): Insight[] {
         category: normalizeCategory(String(data.category || "")),
         tags: Array.isArray(data.tags) ? data.tags : [],
         featured: String(data.featured || "false").toLowerCase() === "true",
+        visualPriority: Number(data.visualPriority || 0),
         readingTime: String(data.readingTime || estimateReadingTime(content)),
         takeaways: Array.isArray(data.takeaways) ? data.takeaways : [],
         coverImage: data.coverImage ? String(data.coverImage) : undefined,
@@ -106,7 +108,7 @@ export function getInsights(): Insight[] {
       return b.sortDate.localeCompare(a.sortDate);
     });
 
-  return interleaveCurrentTopics(articles);
+  return prioritizeVisualArticles(articles);
 }
 
 export function getInsight(slug: string) {
@@ -165,6 +167,23 @@ function articleSearchText(article: Insight) {
   ]
     .join(" ")
     .toLowerCase();
+}
+
+function prioritizeVisualArticles(articles: Insight[]) {
+  const priority = articles
+    .filter((article) => Number.isFinite(article.visualPriority) && article.visualPriority > 0)
+    .sort((a, b) => {
+      const priorityDiff = a.visualPriority - b.visualPriority;
+
+      if (priorityDiff !== 0) {
+        return priorityDiff;
+      }
+
+      return b.sortDate.localeCompare(a.sortDate);
+    });
+  const standard = articles.filter((article) => !priority.includes(article));
+
+  return [...priority, ...interleaveCurrentTopics(standard)];
 }
 
 function topicBucket(article: Insight) {
