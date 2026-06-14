@@ -9,8 +9,8 @@ export function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-brand-heading">
-            <span className="brand-mark" aria-hidden="true">
-              <span className="brand-core">W</span>
+            <span className="footer-brand-logo" aria-hidden="true">
+              WCB
             </span>
             <div>
               <strong>World Clean Biz</strong>
@@ -47,7 +47,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {year} World Clean Biz. Built by Denny You.</span>
+        <span>© {year} World Clean Biz. Global Cleaning Industry Intelligence.</span>
       </div>
     </footer>
   );

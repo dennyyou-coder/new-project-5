@@ -25,14 +25,10 @@ export function Header() {
     <header className="header">
       <div className="container header-inner">
         <Link className="brand" href="/" onClick={closeMenu}>
-          <span className="brand-mark" aria-hidden="true">
-            <span className="brand-core">W</span>
-          </span>
+          <span className="brand-wcb-block" aria-hidden="true">WCB</span>
           <span className="brand-copy">
             <span className="brand-name">World Clean Biz</span>
-            <span className="brand-tagline">
-              Global Cleaning Industry Intelligence
-            </span>
+            <span className="brand-tagline">Global Cleaning Industry Intelligence</span>
           </span>
         </Link>
         <button
