@@ -9,17 +9,22 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
-    theme_color: "#06162d",
+    theme_color: "#0F2747",
     icons: [
       {
-        src: "/icon.svg",
+        src: "/brand/wcb-favicon-64.png",
         sizes: "64x64",
-        type: "image/svg+xml"
+        type: "image/png"
       },
       {
-        src: "/apple-icon.svg",
+        src: "/brand/wcb-favicon-180.png",
         sizes: "180x180",
-        type: "image/svg+xml"
+        type: "image/png"
+      },
+      {
+        src: "/brand/wcb-favicon-512.png",
+        sizes: "512x512",
+        type: "image/png"
       }
     ]
   };

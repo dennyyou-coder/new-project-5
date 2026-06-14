@@ -32,8 +32,12 @@ export const metadata: Metadata = {
     follow: true
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-icon.svg"
+    icon: [
+      { url: "/brand/wcb-favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand/wcb-favicon-64.png", sizes: "64x64", type: "image/png" },
+      { url: "/brand/wcb-favicon-512.png", sizes: "512x512", type: "image/png" }
+    ],
+    apple: "/brand/wcb-favicon-180.png"
   },
   manifest: "/manifest.webmanifest",
   openGraph: {
@@ -54,7 +58,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#06162d",
+  themeColor: "#0F2747",
   colorScheme: "light"
 };
 
