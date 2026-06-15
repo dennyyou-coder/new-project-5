@@ -19,6 +19,11 @@ const relatedArticleOverrides: Record<string, string[]> = {
     "how-to-find-reliable-cleaning-product-suppliers-in-china",
     "aiper-fluidra-pool-robotics-alliance",
     "pool-robotics-new-competitive-table"
+  ],
+  "robot-vacuum-cleaners-from-china": [
+    "how-to-find-reliable-cleaning-product-suppliers-in-china",
+    "robotic-pool-cleaner-manufacturers-china",
+    "the-hidden-front-brushless-motors"
   ]
 };
 
