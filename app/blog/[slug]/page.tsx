@@ -15,6 +15,11 @@ type Props = {
 
 const siteUrl = "https://worldcleanbiz.com";
 const relatedArticleOverrides: Record<string, string[]> = {
+  "floor-washer-manufacturers-china": [
+    "how-to-find-reliable-cleaning-product-suppliers-in-china",
+    "cordless-vacuum-cleaner-oem-manufacturers-china",
+    "robot-vacuum-cleaners-from-china"
+  ],
   "cordless-vacuum-cleaner-oem-manufacturers-china": [
     "how-to-find-reliable-cleaning-product-suppliers-in-china",
     "robot-vacuum-cleaners-from-china",
