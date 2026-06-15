@@ -83,6 +83,7 @@ const categories = [
   "Sourcing",
   "Industry",
   "Trade Shows",
+  "Buyer Guide",
   "Sourcing Guide",
   "Market Signals"
 ];

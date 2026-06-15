@@ -94,6 +94,7 @@ export function getInsights(): Insight[] {
       }
       const excerpt = String(data.excerpt || data.description || makeExcerpt(content));
       const metaDescription = String(data.meta_description || data.description || excerpt);
+      const coverImage = data.coverImage || data.cover_image;
 
       return [{
         slug,
@@ -111,7 +112,7 @@ export function getInsights(): Insight[] {
         visualPriority: Number(data.visualPriority || 0),
         readingTime: String(data.readingTime || estimateReadingTime(content)),
         takeaways: Array.isArray(data.takeaways) ? data.takeaways : [],
-        coverImage: data.coverImage ? String(data.coverImage) : firstMarkdownImage(content),
+        coverImage: coverImage ? String(coverImage) : firstMarkdownImage(content),
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
         content
       }];

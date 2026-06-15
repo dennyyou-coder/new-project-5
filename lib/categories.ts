@@ -8,6 +8,7 @@ export const CATEGORIES = [
   "Supply Chain Analysis",
   "Industry",
   "Trade Shows",
+  "Buyer Guide",
   "Sourcing Guide",
   "Sourcing",
   "Market Signals"
@@ -51,6 +52,7 @@ const CATEGORY_ALIASES: Record<string, Category> = {
   "Brand Strategy": "Industry",
   "News Roundup": "Industry",
   "Annual Report": "Industry",
+  "Buyer Guide": "Buyer Guide",
   "Buying Guide": "Industry",
   "Buying Guides": "Industry",
   "Legal & Patents": "Industry",
