@@ -79,6 +79,7 @@ const categories = [
   "Robotic Mowers",
   "Commercial Cleaning",
   "Supply Chain",
+  "Supply Chain Analysis",
   "Sourcing",
   "Industry",
   "Trade Shows",
