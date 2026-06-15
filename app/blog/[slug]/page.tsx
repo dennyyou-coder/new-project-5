@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { TallyButton, TallyReportButton } from "@/components/LeadForms";
-import { getInsight, getInsights, markdownToHtml } from "@/lib/content";
+import {
+  getInsight,
+  getInsights,
+  markdownToHtml,
+  removeLeadingArticleTitleAndCover
+} from "@/lib/content";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -37,13 +42,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: article.title,
-    description: article.excerpt,
+    description: article.metaDescription,
     alternates: {
       canonical: `/blog/${article.slug}`
     },
     openGraph: {
       title: article.title,
-      description: article.excerpt,
+      description: article.metaDescription,
       type: "article",
       publishedTime,
       modifiedTime: publishedTime,
@@ -54,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: article.title,
-      description: article.excerpt,
+      description: article.metaDescription,
       images: coverImage ? [coverImage] : undefined
     }
   };
@@ -78,6 +83,11 @@ export default async function InsightDetailPage({ params }: Props) {
   );
   const related = [...sameCategory, ...fillers].slice(0, 3);
   const hasTakeaways = article.takeaways.length > 0;
+  const articleContent = removeLeadingArticleTitleAndCover(
+    article.content,
+    article.title,
+    article.coverImage
+  );
   const url = `${siteUrl}/blog/${article.slug}`;
   const publishedTime = article.publishedAt || article.date;
   const coverImage = absoluteUrl(article.coverImage);
@@ -89,7 +99,7 @@ export default async function InsightDetailPage({ params }: Props) {
       "@id": url
     },
     headline: article.title,
-    description: article.excerpt,
+    description: article.metaDescription,
     datePublished: publishedTime,
     dateModified: publishedTime,
     image: coverImage ? [coverImage] : undefined,
@@ -140,6 +150,13 @@ export default async function InsightDetailPage({ params }: Props) {
           </div>
           <h1>{article.title}</h1>
           <p>{article.excerpt}</p>
+          {article.tags.length ? (
+            <div className="tag-list blog-article-tags" aria-label="Article tags">
+              {article.tags.map((tag) => (
+                <span className="tag" key={tag}>{tag}</span>
+              ))}
+            </div>
+          ) : null}
           <p className="signal-detail-author">By {article.author}</p>
         </div>
       </section>
@@ -177,7 +194,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
             <div
               dangerouslySetInnerHTML={{
-                __html: markdownToHtml(article.content)
+                __html: markdownToHtml(articleContent)
               }}
             />
 

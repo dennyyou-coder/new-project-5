@@ -7,6 +7,7 @@ export const CATEGORIES = [
   "Supply Chain",
   "Industry",
   "Trade Shows",
+  "Sourcing Guide",
   "Sourcing",
   "Market Signals"
 ] as const;
@@ -65,6 +66,7 @@ const CATEGORY_ALIASES: Record<string, Category> = {
   "Expo Intelligence": "Trade Shows",
   "Sourcing Intelligence": "Sourcing",
   "Sourcing Context": "Sourcing",
+  "Sourcing Guide": "Sourcing Guide",
   Sourcing: "Sourcing",
   "Backyard Robotics": "Market Signals",
   "Market Trends": "Market Signals",

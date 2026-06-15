@@ -7,6 +7,7 @@ export type Insight = {
   title: string;
   excerpt: string;
   description: string;
+  metaDescription: string;
   date: string;
   publishedAt: string;
   sortDate: string;
@@ -32,11 +33,26 @@ function parseFrontmatter(source: string) {
   }
 
   const data: Record<string, string | string[]> = {};
-  for (const line of match[1].split("\n")) {
+  const lines = match[1].split("\n");
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
     const [key, ...rest] = line.split(":");
     if (!key || rest.length === 0) continue;
     const value = rest.join(":").trim();
-    if (value.startsWith("[") && value.endsWith("]")) {
+    if (!value) {
+      const items: string[] = [];
+      let cursor = index + 1;
+      while (cursor < lines.length) {
+        const item = lines[cursor].trim().match(/^-\s+(.*)$/);
+        if (!item) break;
+        items.push(item[1].trim().replace(/^"|"$/g, ""));
+        cursor += 1;
+      }
+      if (items.length) {
+        data[key.trim()] = items;
+        index = cursor - 1;
+      }
+    } else if (value.startsWith("[") && value.endsWith("]")) {
       data[key.trim()] = parseInlineArray(value);
     } else {
       data[key.trim()] = value.replace(/^"|"$/g, "");
@@ -77,12 +93,14 @@ export function getInsights(): Insight[] {
         return [];
       }
       const excerpt = String(data.excerpt || data.description || makeExcerpt(content));
+      const metaDescription = String(data.meta_description || data.description || excerpt);
 
       return [{
         slug,
         title: String(data.title || slug),
         excerpt,
-        description: excerpt,
+        description: metaDescription,
+        metaDescription,
         date: String(data.date || ""),
         publishedAt: String(data.publishedAt || data.date || ""),
         sortDate: String(data.sortDate || data.publishedAt || data.date || ""),
@@ -93,7 +111,7 @@ export function getInsights(): Insight[] {
         visualPriority: Number(data.visualPriority || 0),
         readingTime: String(data.readingTime || estimateReadingTime(content)),
         takeaways: Array.isArray(data.takeaways) ? data.takeaways : [],
-        coverImage: data.coverImage ? String(data.coverImage) : undefined,
+        coverImage: data.coverImage ? String(data.coverImage) : firstMarkdownImage(content),
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
         content
       }];
@@ -285,6 +303,23 @@ export function markdownToHtml(markdown: string) {
     return line.trim().match(/^!\[(.*?)\]\((.*?)\)$/);
   }
 
+  function isTableDivider(line: string) {
+    return /^\|?[\s:-]+\|[\s|:-]*$/.test(line.trim());
+  }
+
+  function isTableRow(line: string) {
+    const trimmed = line.trim();
+    return trimmed.startsWith("|") && trimmed.endsWith("|") && trimmed.includes("|");
+  }
+
+  function tableCells(line: string) {
+    return line
+      .trim()
+      .replace(/^\||\|$/g, "")
+      .split("|")
+      .map((cell) => cell.trim());
+  }
+
   for (let index = 0; index < lines.length; index += 1) {
     const line = lines[index];
     const trimmed = line.trim();
@@ -293,12 +328,42 @@ export function markdownToHtml(markdown: string) {
       continue;
     }
 
-    if (trimmed.startsWith("### ")) {
+    if (trimmed === "---") {
+      closeList();
+      html.push(`<hr />`);
+    } else if (trimmed.startsWith("# ")) {
+      closeList();
+      html.push(`<h1>${inline(trimmed.slice(2))}</h1>`);
+    } else if (trimmed.startsWith("### ")) {
       closeList();
       html.push(`<h3>${inline(trimmed.slice(4))}</h3>`);
     } else if (trimmed.startsWith("## ")) {
       closeList();
       html.push(`<h2>${inline(trimmed.slice(3))}</h2>`);
+    } else if (isTableRow(trimmed) && isTableDivider(lines[index + 1] || "")) {
+      closeList();
+      const headers = tableCells(trimmed);
+      const rows: string[][] = [];
+      let cursor = index + 2;
+      while (cursor < lines.length && isTableRow(lines[cursor])) {
+        rows.push(tableCells(lines[cursor]));
+        cursor += 1;
+      }
+
+      html.push(`<div class="article-table-wrap"><table><thead><tr>`);
+      for (const header of headers) {
+        html.push(`<th>${inline(header)}</th>`);
+      }
+      html.push(`</tr></thead><tbody>`);
+      for (const row of rows) {
+        html.push(`<tr>`);
+        for (const cell of row) {
+          html.push(`<td>${inline(cell)}</td>`);
+        }
+        html.push(`</tr>`);
+      }
+      html.push(`</tbody></table></div>`);
+      index = cursor - 1;
     } else if (markdownImage(trimmed)) {
       closeList();
       const images: RegExpMatchArray[] = [];
@@ -365,6 +430,31 @@ function makeExcerpt(content: string) {
   }
 
   return `${text.slice(0, 152).trim()}...`;
+}
+
+function firstMarkdownImage(content: string) {
+  const image = content.match(/!\[(.*?)\]\((.*?)\)/);
+  return image ? image[2] : undefined;
+}
+
+export function removeLeadingArticleTitleAndCover(content: string, title: string, coverImage?: string) {
+  const lines = content.split("\n");
+  let cursor = 0;
+
+  while (!lines[cursor]?.trim() && cursor < lines.length) cursor += 1;
+
+  if (lines[cursor]?.trim() === `# ${title}`) {
+    cursor += 1;
+  }
+
+  while (!lines[cursor]?.trim() && cursor < lines.length) cursor += 1;
+
+  const image = lines[cursor]?.trim().match(/^!\[(.*?)\]\((.*?)\)$/);
+  if (coverImage && image?.[2] === coverImage) {
+    cursor += 1;
+  }
+
+  return lines.slice(cursor).join("\n").trim();
 }
 
 function stripMarkdown(content: string) {
