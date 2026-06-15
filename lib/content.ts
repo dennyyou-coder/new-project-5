@@ -297,7 +297,14 @@ export function markdownToHtml(markdown: string) {
   }
 
   function markdownImage(line: string) {
-    return line.trim().match(/^!\[(.*?)\]\((.*?)\)$/);
+    const match = line.trim().match(/^!\[(.*?)\]\((\S+?)(?:\s+"([^"]+)")?\)$/);
+    if (!match) return undefined;
+
+    return {
+      alt: match[1],
+      src: match[2],
+      caption: match[3]
+    };
   }
 
   function isTableDivider(line: string) {
@@ -362,7 +369,7 @@ export function markdownToHtml(markdown: string) {
       index = cursor - 1;
     } else if (markdownImage(trimmed)) {
       closeList();
-      const images: RegExpMatchArray[] = [];
+      const images: NonNullable<ReturnType<typeof markdownImage>>[] = [];
       let cursor = index;
       while (cursor < lines.length) {
         const candidate = lines[cursor].trim();
@@ -380,7 +387,7 @@ export function markdownToHtml(markdown: string) {
         html.push(`<div class="article-inline-image-grid">`);
         for (const image of images) {
           html.push(
-            `<figure class="article-inline-image"><img src="${image[2]}" alt="${inline(image[1])}" /></figure>`
+            `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}" />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
           );
         }
         html.push(`</div>`);
@@ -388,7 +395,7 @@ export function markdownToHtml(markdown: string) {
       } else {
         const image = images[0];
         html.push(
-          `<figure class="article-inline-image"><img src="${image[2]}" alt="${inline(image[1])}" /></figure>`
+          `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}" />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
         );
       }
     } else if (trimmed.startsWith("> ")) {
@@ -470,4 +477,8 @@ function inline(text: string) {
     .replace(/>/g, "&gt;")
     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
     .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>');
+}
+
+function escapeAttribute(text: string) {
+  return inline(text).replace(/"/g, "&quot;");
 }
