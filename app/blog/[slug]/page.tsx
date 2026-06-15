@@ -14,6 +14,13 @@ type Props = {
 };
 
 const siteUrl = "https://worldcleanbiz.com";
+const relatedArticleOverrides: Record<string, string[]> = {
+  "robotic-pool-cleaner-manufacturers-china": [
+    "how-to-find-reliable-cleaning-product-suppliers-in-china",
+    "aiper-fluidra-pool-robotics-alliance",
+    "pool-robotics-new-competitive-table"
+  ]
+};
 
 function absoluteUrl(pathOrUrl?: string) {
   if (!pathOrUrl) return undefined;
@@ -114,14 +121,23 @@ export default async function InsightDetailPage({ params }: Props) {
     notFound();
   }
 
+  const relatedOverrideSlugs = relatedArticleOverrides[slug] || [];
+  const relatedOverrides = relatedOverrideSlugs
+    .map((relatedSlug) => articles.find((item) => item.slug === relatedSlug))
+    .filter((item): item is NonNullable<typeof item> => Boolean(item));
   const sameCategory = articles.filter(
-    (item) => item.slug !== slug && item.category === article.category
+    (item) =>
+      item.slug !== slug &&
+      item.category === article.category &&
+      !relatedOverrideSlugs.includes(item.slug)
   );
   const fillers = articles.filter(
     (item) =>
-      item.slug !== slug && !sameCategory.some((related) => related.slug === item.slug)
+      item.slug !== slug &&
+      !relatedOverrideSlugs.includes(item.slug) &&
+      !sameCategory.some((related) => related.slug === item.slug)
   );
-  const related = [...sameCategory, ...fillers].slice(0, 3);
+  const related = [...relatedOverrides, ...sameCategory, ...fillers].slice(0, 3);
   const hasTakeaways = article.takeaways.length > 0;
   const articleContent = removeLeadingArticleTitleAndCover(
     article.content,
@@ -236,17 +252,23 @@ export default async function InsightDetailPage({ params }: Props) {
 
             <footer className="blog-author-note">
               {article.tags.length ? (
-                <div className="tag-list blog-article-tags" aria-label="Article tags">
-                  {article.tags.map((tag) => (
-                    <span className="tag" key={tag}>{tag}</span>
-                  ))}
+                <div className="blog-article-tag-panel">
+                  <span>Tags</span>
+                  <div className="tag-list blog-article-tags" aria-label="Article tags">
+                    {article.tags.map((tag) => (
+                      <span className="tag" key={tag}>{tag}</span>
+                    ))}
+                  </div>
                 </div>
               ) : null}
-              <p>
-                Denny You has worked inside the cleaning industry since 2006.
-                World Clean Biz turns front-line product, supplier and category
-                signals into practical industry intelligence.
-              </p>
+              <div className="blog-author-bio-box">
+                <strong>Denny You</strong>
+                <p>
+                  Denny You has worked inside the cleaning industry since 2006.
+                  World Clean Biz turns front-line product, supplier and category
+                  signals into practical industry intelligence.
+                </p>
+              </div>
             </footer>
           </article>
 
