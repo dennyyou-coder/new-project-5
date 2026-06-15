@@ -15,6 +15,11 @@ type Props = {
 
 const siteUrl = "https://worldcleanbiz.com";
 const relatedArticleOverrides: Record<string, string[]> = {
+  "how-to-evaluate-a-chinese-cleaning-appliance-supplier": [
+    "how-to-find-reliable-cleaning-product-suppliers-in-china",
+    "oem-vs-odm-cleaning-products",
+    "floor-washer-manufacturers-china"
+  ],
   "oem-vs-odm-cleaning-products": [
     "how-to-find-reliable-cleaning-product-suppliers-in-china",
     "robot-vacuum-cleaners-from-china",
@@ -259,7 +264,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
             {article.coverImage ? (
               <figure className="blog-article-cover">
-                <img src={article.coverImage} alt={article.title} />
+                <img src={article.coverImage} alt={article.coverAlt || article.title} />
               </figure>
             ) : null}
 

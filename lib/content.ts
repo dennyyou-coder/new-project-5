@@ -19,6 +19,7 @@ export type Insight = {
   readingTime: string;
   takeaways: string[];
   coverImage?: string;
+  coverAlt?: string;
   youtubeId?: string;
   content: string;
 };
@@ -113,6 +114,7 @@ export function getInsights(): Insight[] {
         readingTime: String(data.readingTime || estimateReadingTime(content)),
         takeaways: Array.isArray(data.takeaways) ? data.takeaways : [],
         coverImage: coverImage ? String(coverImage) : firstMarkdownImage(content),
+        coverAlt: data.cover_alt ? String(data.cover_alt) : undefined,
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
         content
       }];
