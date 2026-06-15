@@ -9,11 +9,13 @@ export function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-brand-heading">
-            <img
-              className="footer-brand-logo"
-              src="/brand/wcb-website-header-black-on-white.svg"
-              alt="World Clean Biz"
-            />
+            <span className="footer-brand-logo" aria-hidden="true">
+              WCB
+            </span>
+            <div>
+              <strong>World Clean Biz</strong>
+              <span>Global Cleaning Industry Intelligence</span>
+            </div>
           </div>
           <p>
             Industry signals, market intelligence, sourcing opportunities and
