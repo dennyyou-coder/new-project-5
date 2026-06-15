@@ -117,16 +117,10 @@ export function getInsights(): Insight[] {
       }];
     })
     .sort((a, b) => {
-      const rankDiff = articleSortRank(a) - articleSortRank(b);
-
-      if (rankDiff !== 0) {
-        return rankDiff;
-      }
-
       return b.sortDate.localeCompare(a.sortDate);
     });
 
-  return prioritizeVisualArticles(articles);
+  return articles;
 }
 
 export function getInsight(slug: string) {

@@ -283,7 +283,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
   const hasFilter = Boolean(selectedCategory && selectedCategory !== "All") || Boolean(selectedTopic);
   const featured = hasFilter
     ? filteredArticles[0]
-    : articles.find((article) => article.featured) || articles[0];
+    : articles[0];
   const feedArticles = hasFilter
     ? filteredArticles.filter((article) => article.slug !== featured?.slug)
     : articles.filter((article) => article.slug !== featured?.slug);
