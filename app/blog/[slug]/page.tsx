@@ -24,6 +24,46 @@ function absoluteUrl(pathOrUrl?: string) {
   return `${siteUrl}${pathOrUrl.startsWith("/") ? pathOrUrl : `/${pathOrUrl}`}`;
 }
 
+function extractFaqSchema(content: string, pageUrl: string) {
+  const faqStart = content.match(/^## FAQ\s*$/m);
+
+  if (!faqStart) return undefined;
+
+  const faqContent = content.slice(faqStart.index || 0);
+  const questionBlocks = faqContent.split(/^### /m).slice(1);
+  const mainEntity = questionBlocks.flatMap((block) => {
+    const [questionLine, ...answerLines] = block.split("\n");
+    const question = questionLine.trim();
+    const answer = answerLines
+      .join("\n")
+      .split(/^## /m)[0]
+      .replace(/\[(.*?)\]\((.*?)\)/g, "$1")
+      .replace(/[*_`>#-]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    if (!question || !answer) return [];
+
+    return [{
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer
+      }
+    }];
+  });
+
+  if (!mainEntity.length) return undefined;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${pageUrl}#faq`,
+    mainEntity
+  };
+}
+
 export function generateStaticParams() {
   return getInsights().map((article) => ({ slug: article.slug }));
 }
@@ -93,7 +133,7 @@ export default async function InsightDetailPage({ params }: Props) {
   const coverImage = absoluteUrl(article.coverImage);
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url
@@ -114,6 +154,7 @@ export default async function InsightDetailPage({ params }: Props) {
     },
     url
   };
+  const faqSchema = extractFaqSchema(articleContent, url);
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -138,6 +179,9 @@ export default async function InsightDetailPage({ params }: Props) {
       }
     ]
   };
+  const structuredData = faqSchema
+    ? [articleSchema, breadcrumbSchema, faqSchema]
+    : [articleSchema, breadcrumbSchema];
 
   return (
     <>
@@ -145,18 +189,10 @@ export default async function InsightDetailPage({ params }: Props) {
         <div className="blog-article-container">
           <div className="signal-detail-meta">
             <span>{article.category}</span>
-            <span>{article.date}</span>
             <span>{article.readingTime}</span>
           </div>
           <h1>{article.title}</h1>
           <p>{article.excerpt}</p>
-          {article.tags.length ? (
-            <div className="tag-list blog-article-tags" aria-label="Article tags">
-              {article.tags.map((tag) => (
-                <span className="tag" key={tag}>{tag}</span>
-              ))}
-            </div>
-          ) : null}
           <p className="signal-detail-author">By {article.author}</p>
         </div>
       </section>
@@ -199,6 +235,13 @@ export default async function InsightDetailPage({ params }: Props) {
             />
 
             <footer className="blog-author-note">
+              {article.tags.length ? (
+                <div className="tag-list blog-article-tags" aria-label="Article tags">
+                  {article.tags.map((tag) => (
+                    <span className="tag" key={tag}>{tag}</span>
+                  ))}
+                </div>
+              ) : null}
               <p>
                 Denny You has worked inside the cleaning industry since 2006.
                 World Clean Biz turns front-line product, supplier and category
@@ -236,7 +279,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([articleSchema, breadcrumbSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
     </>
   );

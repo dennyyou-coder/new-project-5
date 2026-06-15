@@ -322,9 +322,8 @@ export function markdownToHtml(markdown: string) {
       continue;
     }
 
-    if (trimmed === "---") {
+    if (trimmed === "---" || trimmed === "* * *") {
       closeList();
-      html.push(`<hr />`);
     } else if (trimmed.startsWith("# ")) {
       closeList();
       html.push(`<h1>${inline(trimmed.slice(2))}</h1>`);

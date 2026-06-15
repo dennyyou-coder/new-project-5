@@ -10080,8 +10080,10 @@ h3 {
 
 .article-table-wrap {
   width: 100%;
+  max-width: 100%;
   margin: 28px 0;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid rgba(226, 232, 240, 0.95);
   border-radius: 8px;
   background: #ffffff;
@@ -10091,6 +10093,10 @@ h3 {
   width: 100%;
   min-width: 760px;
   border-collapse: collapse;
+}
+
+.article-table-wrap th {
+  white-space: nowrap;
 }
 
 .article-table-wrap th,
