@@ -143,6 +143,25 @@ Before completion, confirm:
 - No broken image links
 - Build passes successfully
 
+## SEO Buyer Guide Publishing Rule
+
+When publishing a new World Clean Biz SEO Buyer Guide or Sourcing Guide from an Obsidian release package:
+
+- Copy the approved MDX source and approved images exactly as requested.
+- Do not rewrite the article body.
+- Do not change title, slug, meta_description, category, tags, excerpt, CTA, FAQ, JSON-LD, or image paths unless the user explicitly asks.
+- Ensure the article frontmatter includes publish sorting fields before build:
+
+```text
+date: "YYYY-MM-DD"
+publishedAt: "YYYY-MM-DDTHH:mm:ss+08:00"
+sortDate: "YYYY-MM-DDTHH:mm:ss+08:00"
+```
+
+- If the approved source package does not include these fields, add them using the actual publishing time for this article.
+- This timestamp update is required because the Blog index sorts by `sortDate`; without it, the article page may exist but not appear near the top of `/blog`.
+- After adding or verifying these fields, run build and confirm the new article appears in the expected Blog index order.
+
 ## Failure Rule
 
 If this folder does not exist:
