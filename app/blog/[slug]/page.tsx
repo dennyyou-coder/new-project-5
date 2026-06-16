@@ -15,6 +15,11 @@ type Props = {
 
 const siteUrl = "https://worldcleanbiz.com";
 const relatedArticleOverrides: Record<string, string[]> = {
+  "factory-audit-cleaning-appliance-suppliers-china": [
+    "how-to-evaluate-a-chinese-cleaning-appliance-supplier",
+    "sample-testing-cleaning-appliances-china",
+    "quality-control-cleaning-appliances-china"
+  ],
   "spare-parts-warranty-cleaning-appliances-china": [
     "sample-testing-cleaning-appliances-china",
     "quality-control-cleaning-appliances-china",
