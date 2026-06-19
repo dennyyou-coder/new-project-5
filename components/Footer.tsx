@@ -32,6 +32,7 @@ export function Footer() {
           <div>
             <strong>Platform</strong>
             <Link href="/blog">Blog</Link>
+            <Link href="/blog/archive">Article Archive</Link>
             <Link href="/reports">Market Reports</Link>
             <Link href="/sourcing">Sourcing</Link>
             <Link href="/world-clean-expo">World Clean Expo</Link>

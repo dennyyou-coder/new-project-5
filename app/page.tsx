@@ -218,9 +218,34 @@ const fallbackInsightImages = [
   "/images/industry/reports-market-preview-products-2025.jpg"
 ];
 
+const featuredInsightSlugs = [
+  "anker-prospectus-trillion-yuan-cleaning-industry",
+  "sharkninja-road-to-10-billion-dollars",
+  "tti-cleaning-appliance-strategy",
+  "china-cleaning-robot-giants-move-into-backyard"
+];
+
+function isGenericBuyerGuide(article: Insight) {
+  const haystack = `${article.slug} ${article.title} ${article.category}`.toLowerCase();
+
+  return (
+    article.category === "Buyer Guide" ||
+    article.category === "Sourcing Guide" ||
+    /\bbuyer('|’)?s? guide\b/.test(haystack) ||
+    /\bsourcing guide\b/.test(haystack)
+  );
+}
+
 function getFeaturedInsights(articles: Insight[]) {
-  const selected = articles.filter((article) => article.featured);
-  const candidates = selected.length >= 4 ? selected : [...selected, ...articles];
+  const priorityArticles = featuredInsightSlugs
+    .map((slug) => articles.find((article) => article.slug === slug))
+    .filter((article): article is Insight => Boolean(article));
+  const fallbackArticles = articles.filter(
+    (article) =>
+      !featuredInsightSlugs.includes(article.slug) &&
+      !isGenericBuyerGuide(article)
+  );
+  const candidates = [...priorityArticles, ...fallbackArticles];
   const unique = new Map<string, Insight>();
 
   for (const article of candidates) {
