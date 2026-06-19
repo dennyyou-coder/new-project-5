@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
+        source: "/market-reports",
+        destination: "/reports",
+        permanent: true
+      },
+      {
         source: "/insights/a-century-of-cleaning-appliances",
         destination: "/blog/hundred-years-of-cleaning-appliance-history",
         permanent: true
@@ -136,6 +141,11 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
+        source: "/insights/i-want-to-build-an-ifa-style-show",
+        destination: "/blog/why-china-needs-a-cleaning-appliance-ifa",
+        permanent: true
+      },
+      {
         source: "/insights/vactronics-from-odm-to-pool-robot-brand",
         destination: "/blog/pool-robotics-new-competitive-table",
         permanent: true
@@ -161,8 +171,8 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
-        source: "/insights/:slug",
-        destination: "/blog/:slug",
+        source: "/insights/:path*",
+        destination: "/blog/:path*",
         permanent: true
       }
     ];

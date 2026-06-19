@@ -5,17 +5,34 @@ import { getInsights, type Insight } from "@/lib/content";
 
 type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
-export const metadata: Metadata = {
-  title: "Blog | World Clean Biz",
-  description:
-    "World Clean Biz publishes cleaning appliance industry analysis, brand strategy, product category signals, supplier intelligence and global market observations.",
-  alternates: {
-    canonical: "/blog"
-  }
-};
-
 const siteUrl = "https://worldcleanbiz.com";
 const articlesPerPage = 10;
+
+export async function generateMetadata({ searchParams }: { searchParams?: SearchParams }): Promise<Metadata> {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const hasQueryParams = Object.values(resolvedSearchParams).some((value) => {
+    if (Array.isArray(value)) return value.length > 0;
+    return typeof value !== "undefined";
+  });
+
+  return {
+    title: "Blog | World Clean Biz",
+    description:
+      "World Clean Biz publishes cleaning appliance industry analysis, brand strategy, product category signals, supplier intelligence and global market observations.",
+    alternates: {
+      canonical: "/blog"
+    },
+    robots: hasQueryParams
+      ? {
+          index: false,
+          follow: true
+        }
+      : {
+          index: true,
+          follow: true
+        }
+  };
+}
 
 const brandTopics = [
   "Dyson",
