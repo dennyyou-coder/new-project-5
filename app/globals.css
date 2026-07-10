@@ -186,18 +186,27 @@
 .home-v9-pathway-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border: 1px solid var(--v9-line);
-  border-radius: 22px;
-  background: #fff;
-  box-shadow: 0 18px 50px rgba(22,59,103,.08);
+  gap: 18px;
 }
 
-.home-v9-pathway-grid article { padding: 34px; }
-.home-v9-pathway-grid article + article { border-left: 1px solid var(--v9-line); }
-.home-v9-pathway-grid article > span { color: var(--v9-blue); font-size: 13px; font-weight: 900; }
-.home-v9-pathway-grid article > p { margin: 24px 0 10px; color: var(--v9-blue); font-size: 12px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.home-v9-pathway-grid article {
+  overflow: hidden;
+  border: 1px solid var(--v9-line);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(22,59,103,.09);
+}
+.home-v9-pathway-media { position: relative; height: 190px; overflow: hidden; }
+.home-v9-pathway-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg,transparent 38%,rgba(5,31,64,.86)); }
+.home-v9-pathway-media img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .35s ease; }
+.home-v9-pathway-grid article:hover .home-v9-pathway-media img { transform: scale(1.035); }
+.home-v9-pathway-media span,
+.home-v9-pathway-media strong { position: absolute; z-index: 1; bottom: 16px; color: #fff; }
+.home-v9-pathway-media span { left: 18px; width: 32px; height: 32px; display: grid; place-items: center; border-radius: 50%; background: var(--v9-blue); font-size: 11px; font-weight: 900; }
+.home-v9-pathway-media strong { right: 18px; left: 62px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.home-v9-pathway-body { padding: 26px 28px 30px; }
 .home-v9-pathway-grid h3 { margin-bottom: 14px; color: var(--v9-navy); font-size: 25px; line-height: 1.15; }
-.home-v9-pathway-copy { min-height: 108px; color: var(--v9-muted); line-height: 1.65; }
+.home-v9-pathway-copy { min-height: 82px; color: var(--v9-muted); line-height: 1.65; }
 .home-v9-text-links { display: grid; gap: 9px; margin-top: 20px; }
 .home-v9-text-links a,
 .home-v9-inline-link { color: var(--v9-blue); font-weight: 850; }

@@ -35,7 +35,7 @@ test("homepage prioritizes sourcing and separates secondary lead intents", () =>
 
 test("homepage retains core category semantics without the duplicate category grid", () => {
   for (const term of [
-    "Global Cleaning Industry Intelligence",
+    "Global Cleaning Appliances, Robotics & Smart Equipment",
     "Robot Vacuums",
     "Floor Washers",
     "Pool Robots",
@@ -48,6 +48,13 @@ test("homepage retains core category semantics without the duplicate category gr
   assert.doesNotMatch(homeSource, /categoryCards/);
   assert.doesNotMatch(homeSource, /dennyJourney/);
   assert.doesNotMatch(homeSource, /sourcingItems/);
+});
+
+test("homepage pathways use industry imagery instead of text-only cards", () => {
+  assert.match(homeSource, /image: "\/images\/sourcing\/robotic-vacuums\.png"/);
+  assert.match(homeSource, /image: "\/images\/industry\/sourcing-supplier-meeting-2026\.jpg"/);
+  assert.match(homeSource, /image: "\/images\/industry\/expo-hall-shenzhen-2026\.jpg"/);
+  assert.match(homeSource, /className="home-v9-pathway-media"/);
 });
 
 test("homepage limits editorial proof to three insights and one report", () => {

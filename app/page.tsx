@@ -18,6 +18,8 @@ const pathways = [
     eyebrow: "Market Intelligence",
     title: "See The Shift Before It Becomes Obvious",
     text: "Follow category movement, companies, channels and product signals across the global cleaning industry.",
+    image: "/images/sourcing/robotic-vacuums.png",
+    imageAlt: "Robotic vacuum representing cleaning appliance market intelligence",
     links: [
       { href: "/blog", label: "Read Industry Insights" },
       { href: "/reports", label: "Explore Market Reports" }
@@ -28,6 +30,8 @@ const pathways = [
     eyebrow: "Product & Sourcing",
     title: "Turn Market Signals Into Product Decisions",
     text: "Connect category judgement with suppliers, OEM/ODM options, product direction and execution support.",
+    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
+    imageAlt: "Cleaning industry supplier and sourcing meeting",
     links: [{ href: "/sourcing", label: "Start A Sourcing Inquiry" }]
   },
   {
@@ -35,6 +39,8 @@ const pathways = [
     eyebrow: "World Clean Expo",
     title: "Move From Online Signals To Real Connections",
     text: "Meet manufacturers, brands, suppliers and buyers through the next global cleaning industry platform.",
+    image: "/images/industry/expo-hall-shenzhen-2026.jpg",
+    imageAlt: "Cleaning equipment exhibition and industry connections",
     links: [{ href: "/world-clean-expo", label: "Explore World Clean Expo" }]
   }
 ];
@@ -95,12 +101,12 @@ export default function HomePage() {
       <section className="home-v9-hero">
         <div className="home-v9-container home-v9-hero-grid">
           <div className="home-v9-hero-copy">
-            <p className="home-v9-eyebrow">Global Cleaning Industry Intelligence</p>
-            <h1>See The Industry Shift Earlier. Turn It Into Better Business Decisions.</h1>
+            <p className="home-v9-eyebrow">Global Cleaning Appliances, Robotics & Smart Equipment</p>
+            <h1>See What&apos;s Changing Across The Products Reshaping Cleaning.</h1>
             <p className="home-v9-hero-intro">
-              World Clean Biz connects market intelligence, product sourcing and
-              real industry access across robot vacuums, floor washers, pool robots,
-              robotic lawn mowers and commercial cleaning.
+              Market intelligence, sourcing connections and industry access across
+              robot vacuums, floor washers, pool robots, robotic lawn mowers,
+              commercial cleaning robots and emerging categories.
             </p>
             <div className="home-v9-actions">
               <Link className="button" href="/sourcing">Start A Sourcing Inquiry</Link>
@@ -128,14 +134,19 @@ export default function HomePage() {
           <div className="home-v9-pathway-grid">
             {pathways.map((pathway) => (
               <article key={pathway.number}>
-                <span>{pathway.number}</span>
-                <p>{pathway.eyebrow}</p>
-                <h3>{pathway.title}</h3>
-                <div className="home-v9-pathway-copy">{pathway.text}</div>
-                <div className="home-v9-text-links">
-                  {pathway.links.map((link) => (
-                    <Link href={link.href} key={link.href}>{link.label} <b aria-hidden="true">→</b></Link>
-                  ))}
+                <div className="home-v9-pathway-media">
+                  <img src={pathway.image} alt={pathway.imageAlt} />
+                  <span>{pathway.number}</span>
+                  <strong>{pathway.eyebrow}</strong>
+                </div>
+                <div className="home-v9-pathway-body">
+                  <h3>{pathway.title}</h3>
+                  <div className="home-v9-pathway-copy">{pathway.text}</div>
+                  <div className="home-v9-text-links">
+                    {pathway.links.map((link) => (
+                      <Link href={link.href} key={link.href}>{link.label} <b aria-hidden="true">→</b></Link>
+                    ))}
+                  </div>
                 </div>
               </article>
             ))}
