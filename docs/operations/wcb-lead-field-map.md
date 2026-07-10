@@ -1,6 +1,6 @@
 # WCB Lead Form Field Map
 
-Status: external configuration completed; end-to-end test submission and GA4 verification pending.
+Status: external configuration and Airtable end-to-end verification completed; GA4 DebugView verification pending.
 
 ## Airtable base
 
@@ -91,9 +91,27 @@ External configuration completed on 2026-07-10:
 - Website environment contains both new public form IDs.
 - Lead contract tests pass and the production build completes successfully.
 
-Before production release, record the following for all six form intents:
+First QA findings and remediation on 2026-07-10:
 
-- Published form ID and Tally-to-Airtable mapping verified
-- Test lead present in `Leads` with the expected Lead Type, Source Page and CTA Location
+- The first six test leads reached Airtable, but some tracking values were absent because the four existing forms had unpublished hidden-field drafts and the two new forms had incomplete saved mappings.
+- Published the ten hidden fields on Contact, Sourcing, Reports and WCE visitor.
+- Rebuilt, saved and reopened all six Tally-to-Airtable mappings. Reopening each integration confirmed no required tracking mapping was absent.
+- Re-ran the complete six-form submission flow after the fixes.
+
+Second QA verification on 2026-07-10:
+
+| Form intent | Airtable Lead Type | Source Page | CTA Location | Additional verification |
+| --- | --- | --- | --- | --- |
+| Contact | `contact` | `/contact/qa2` | `qa2_end_to_end` | Language and all UTM fields present |
+| Sourcing | `sourcing` | `/sourcing/qa2` | `qa2_end_to_end` | Language and all UTM fields present |
+| Reports | `reports` | `/reports/qa2` | `qa2_end_to_end` | `Report ID = qa_report_2`; language and all UTM fields present |
+| WCE visitor | `wce_visitor` | `/wce/visitor/qa2` | `qa2_end_to_end` | Language and all UTM fields present |
+| Newsletter | `newsletter` | `/newsletter/qa2` | `qa2_end_to_end` | Interests include Market Intelligence and Sourcing; language and all UTM fields present |
+| WCE exhibitor | `wce_exhibitor` | `/wce/qa2` | `qa2_end_to_end` | Language and all UTM fields present |
+
+All six QA2 submissions reached their Tally success pages and created distinct Airtable records. Field-by-field inspection confirmed `utm_source = codex`, `utm_medium = qa`, `utm_campaign = lead_pipeline_retest`, the expected per-form `utm_content`, and `utm_term = qa2` for every record.
+
+Before production release, complete the remaining verification:
+
 - GA4 DebugView observed `form_open`, `form_submit` and `form_success`
 - Preview URL and test date
