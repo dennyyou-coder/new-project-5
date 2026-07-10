@@ -24,6 +24,7 @@ Add these fields as single line text unless stated otherwise:
 | UTM Content | Single line text | `utm_content` |
 | UTM Term | Single line text | `utm_term` |
 | Report ID | Single line text | `report_id` |
+| Newsletter Interests | Multiple select | Newsletter `Interests` question |
 
 Add these `Lead Type` single-select choices if absent:
 
@@ -85,7 +86,8 @@ External configuration completed on 2026-07-10:
 - Airtable tracking fields created and verified: Source Page, CTA Location, Language, UTM Source, UTM Medium, UTM Campaign, UTM Content, UTM Term and Report ID.
 - Contact, Sourcing, Reports and WCE visitor forms: all ten hidden fields and Airtable mappings saved.
 - WCE exhibitor / partner: published and full visible-field plus tracking-field mapping saved.
-- Newsletter: published; Work email, role, source/language and tracking mappings configured. The Tally `Interests` multi-select cannot map to the existing Airtable `Interest` single-select field and remains available in Tally submissions only until a compatible Airtable multi-select field is added.
+- Newsletter: published; `Newsletter Interests` was added as a compatible Airtable multiple-select field, and all visible fields plus all ten tracking fields are mapped and saved.
+- Newsletter and WCE exhibitor / partner success messages were published and their public form pages were verified to load on 2026-07-10.
 - Website environment contains both new public form IDs.
 - Lead contract tests pass and the production build completes successfully.
 
