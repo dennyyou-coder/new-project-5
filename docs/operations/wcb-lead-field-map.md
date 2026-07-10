@@ -119,8 +119,9 @@ GA4 local QA verification on 2026-07-11:
 - Airtable record `recxwU7tzLgFtjBUz` was created with `Lead Type = contact`, `Source Page = /contact`, `CTA Location = contact_selected_route`, `Language = en`, and the complete QA3 UTM attribution.
 - Network inspection confirmed Google Analytics accepted `form_open`, `form_submit` and `form_success` with HTTP 204. Every event contained `debug_mode = true`, `form_type = contact`, `source_page = /contact`, `cta_location = contact_selected_route`, `utm_source = codex`, `utm_medium = qa`, `utm_campaign = ga4_debug_validation`, `utm_content = contact` and `utm_term = qa3`.
 - GA4 DebugView continued to display zero debug devices after refresh, and the Realtime event table had not yet surfaced these custom events. Treat the transport and parameter verification as passed, but do not mark the DebugView UI check complete until the GA interface displays the events.
+- Root cause confirmed in GA4 property settings: the Google tag has an internal-traffic rule named `Internal - current network` that assigns `traffic_type = internal`, while the property-level `Internal Traffic` data filter is active and excludes matching events. GA4 states that matching active-filter data is not processed, which explains why accepted HTTP requests from the current network do not appear in DebugView or Realtime.
 
 Before production release, complete the remaining verification:
 
-- Recheck GA4 DebugView for `form_open`, `form_submit` and `form_success`; investigate Analytics privacy/consent or property-side filtering if the device remains absent.
+- Recheck GA4 DebugView for `form_open`, `form_submit` and `form_success` from a network that is not covered by `Internal - current network` (recommended: a temporary phone hotspot). Do not disable the active internal-traffic filter solely for QA.
 - Production preview URL and release test date.
