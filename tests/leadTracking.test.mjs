@@ -1,11 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {
+import * as leadTracking from "../lib/leadTracking.ts";
+
+const {
   LEAD_FORM_TYPES,
   buildTallyUrl,
   createLeadAttribution,
   trackLeadEvent
-} from "../lib/leadTracking.ts";
+} = leadTracking;
 
 test("lead form types remain stable", () => {
   assert.deepEqual(LEAD_FORM_TYPES, [
@@ -88,6 +90,17 @@ test("trackLeadEvent is safe during server rendering", () => {
       cta_location: "contact_general",
       language: "en"
     }),
+    false
+  );
+});
+
+test("GA4 debug mode is limited to local hosts", () => {
+  assert.equal(typeof leadTracking.isLocalAnalyticsDebugHost, "function");
+  assert.equal(leadTracking.isLocalAnalyticsDebugHost("localhost"), true);
+  assert.equal(leadTracking.isLocalAnalyticsDebugHost("127.0.0.1"), true);
+  assert.equal(leadTracking.isLocalAnalyticsDebugHost("::1"), true);
+  assert.equal(
+    leadTracking.isLocalAnalyticsDebugHost("worldcleanbiz.com"),
     false
   );
 });

@@ -7,6 +7,16 @@ export const LEAD_FORM_TYPES = [
   "wce_visitor"
 ] as const;
 
+export const LOCAL_ANALYTICS_DEBUG_HOSTS = [
+  "localhost",
+  "127.0.0.1",
+  "::1"
+] as const;
+
+export function isLocalAnalyticsDebugHost(hostname: string): boolean {
+  return LOCAL_ANALYTICS_DEBUG_HOSTS.some((host) => host === hostname);
+}
+
 export type LeadFormType = (typeof LEAD_FORM_TYPES)[number];
 
 export type LeadEventName =
