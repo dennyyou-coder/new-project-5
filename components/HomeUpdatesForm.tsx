@@ -4,7 +4,7 @@ export function HomeUpdatesForm() {
   return (
     <div className="home-v4-email-form">
       <TallyButton ctaLocation="home_newsletter" form="newsletter">
-        Subscribe To Blog Updates
+        Get Industry Updates
       </TallyButton>
     </div>
   );

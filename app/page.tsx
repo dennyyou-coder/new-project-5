@@ -1,233 +1,58 @@
 import Link from "next/link";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
+import { TallyButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
 
 const heroProducts = [
-  {
-    label: "Robot Vacuums",
-    image: "/images/sourcing/robotic-vacuums.png",
-    alt: "Robot vacuum product category"
-  },
-  {
-    label: "Floor Washers",
-    image: "/images/sourcing/floor-washers.png",
-    alt: "Hard floor washer product category"
-  },
-  {
-    label: "Pool Robots",
-    image: "/images/sourcing/pool-robots.png",
-    alt: "Robotic pool cleaner product category"
-  },
-  {
-    label: "Robotic Lawn Mowers",
-    image: "/images/sourcing/lawn-robots.png",
-    alt: "Robotic lawn mower product category"
-  },
-  {
-    label: "Commercial Cleaning",
-    image: "/images/sourcing/commercial-cleaning.png",
-    alt: "Commercial cleaning robot product category"
-  },
-  {
-    label: "Emerging Categories",
-    image: "/images/industry/home-industry-products-2025.jpg",
-    alt: "Emerging cleaning product categories"
-  }
+  { label: "Robot Vacuums", image: "/images/sourcing/robotic-vacuums.png", alt: "Robot vacuum product category" },
+  { label: "Floor Washers", image: "/images/sourcing/floor-washers.png", alt: "Hard floor washer product category" },
+  { label: "Pool Robots", image: "/images/sourcing/pool-robots.png", alt: "Robotic pool cleaner product category" },
+  { label: "Robotic Lawn Mowers", image: "/images/sourcing/lawn-robots.png", alt: "Robotic lawn mower product category" },
+  { label: "Commercial Cleaning", image: "/images/sourcing/commercial-cleaning.png", alt: "Commercial cleaning robot product category" },
+  { label: "Emerging Categories", image: "/images/industry/home-industry-products-2025.jpg", alt: "Emerging cleaning product categories" }
 ];
 
-const categoryCards = [
+const pathways = [
   {
-    title: "Robotic Vacuums",
-    image: "/images/sourcing/robotic-vacuums.png",
-    text: "Still reshaped by new functions, brands and channels."
-  },
-  {
-    title: "Hard Floor Washers",
-    image: "/images/sourcing/floor-washers.png",
-    text: "A fast-growing floorcare category with active product iteration."
-  },
-  {
-    title: "Robotic Lawn Mowers",
-    image: "/images/sourcing/lawn-robots.png",
-    text: "Outdoor robots are entering a faster adoption cycle."
-  },
-  {
-    title: "Pool Robots",
-    image: "/images/sourcing/pool-robots.png",
-    text: "Automated maintenance is moving into broader retail channels."
-  },
-  {
-    title: "Commercial Cleaning Robots",
-    image: "/images/sourcing/commercial-cleaning.png",
-    text: "Facilities and service operators are testing automation models."
-  },
-  {
-    title: "Emerging Categories",
-    image: "/images/industry/home-industry-products-2025.jpg",
-    text: "The next category may still be early, fragmented or overlooked."
-  }
-];
-
-const dennyPhotos = [
-  {
-    label: "Public Speaking",
-    image: "/images/industry/about-denny-speaking-forum-2025.jpg",
-    alt: "Denny speaking at a cleaning industry forum"
-  },
-  {
-    label: "2025 Cleaning Forum",
-    image: "/images/industry/about-forum-audience-2025.jpg",
-    alt: "Cleaning industry forum audience"
-  },
-  {
-    label: "World Clean Expo",
-    image: "/images/industry/expo-hall-shenzhen-2026.jpg",
-    alt: "World Clean Expo exhibition floor"
-  },
-  {
-    label: "Supplier Meeting",
-    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
-    alt: "Supplier meeting at a cleaning industry exhibition"
-  },
-  {
-    label: "Factory Visit",
-    image: "/images/industry/sourcing-product-components-2025.jpg",
-    alt: "Cleaning product components during a factory visit"
-  },
-  {
-    label: "Industry Meetup",
-    image: "/images/industry/about-forum-stage-2025.jpg",
-    alt: "Cleaning industry meetup stage"
-  }
-];
-
-const dennyFocus = [
-  {
-    title: "Market Intelligence",
-    text: "Spot early category signals."
-  },
-  {
-    title: "Industry Connections",
-    text: "Connect brands and suppliers."
-  },
-  {
-    title: "Actionable Insights",
-    text: "Turn signals into decisions."
-  },
-  {
-    title: "Global Perspective",
-    text: "Read changes across markets."
-  }
-];
-
-const dennyJourney = [
-  {
-    year: "2006",
-    title: "Industry Operator",
-    text: "Worked across products, brands and supply chains."
-  },
-  {
-    year: "2009",
-    title: "Product Builder",
-    text: "Built and supported cleaning product businesses."
-  },
-  {
-    year: "2017",
-    title: "Industry Author & Influencer",
-    text: "Started publishing industry articles and videos."
-  },
-  {
-    year: "2019",
-    title: "Industry Forum Organizer",
-    text: "Hosted forums connecting brands and suppliers."
-  },
-  {
-    year: "2020",
-    title: "Investor & Analyst Speaker",
-    text: "Shared insights with investors and financial firms."
-  },
-  {
-    year: "2025+",
-    title: "World Clean Expo & Global Network",
-    text: "Building a global cleaning industry network."
-  }
-];
-
-const sourcingItems = [
-  {
-    imageTitle: "Industry Signals",
-    imageText: "Trade Shows / Supplier Discovery / Market Trends",
-    image: "/images/industry/expo-hall-shenzhen-2026.jpg",
-    title: "Opportunity Discovery",
-    points: [
-      "Find categories and products worth sourcing before they become crowded",
-      "Track product and supplier movement from industry events and market signals"
+    number: "01",
+    eyebrow: "Market Intelligence",
+    title: "See The Shift Before It Becomes Obvious",
+    text: "Follow category movement, companies, channels and product signals across the global cleaning industry.",
+    links: [
+      { href: "/blog", label: "Read Industry Insights" },
+      { href: "/reports", label: "Explore Market Reports" }
     ]
   },
   {
-    imageTitle: "Product Development",
-    imageText: "Concept / Design / Testing / Iteration",
-    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
-    title: "Product Direction",
-    points: [
-      "Turn market signals into product ideas, features and differentiation",
-      "Avoid building another commodity product",
-      "Read component and supplier signals before product decisions"
-    ]
+    number: "02",
+    eyebrow: "Product & Sourcing",
+    title: "Turn Market Signals Into Product Decisions",
+    text: "Connect category judgement with suppliers, OEM/ODM options, product direction and execution support.",
+    links: [{ href: "/sourcing", label: "Start A Sourcing Inquiry" }]
   },
   {
-    imageTitle: "Supply Chain Execution",
-    imageText: "Manufacturing / Quality / Delivery",
-    image: "/images/industry/sourcing-product-components-2025.jpg",
-    title: "Execution Support",
-    points: [
-      "Connect sourcing direction with supplier evaluation and execution options",
-      "Reduce quality and after-sales risk before committing to production",
-      "Explore flexible production paths across supplier resources"
-    ]
-  }
-];
-
-const reportCovers = [
-  {
-    title: "Robotic Mower Market Report",
-    category: "Outdoor Robotics",
-    meta: "June 2025 · 28 pages"
-  },
-  {
-    title: "Pool Robot Market Report",
-    category: "Pool Cleaning",
-    meta: "May 2025 · 24 pages"
-  },
-  {
-    title: "Vacuum Cleaner Industry Report",
-    category: "Floorcare",
-    meta: "April 2025 · 32 pages"
-  },
-  {
-    title: "Cleaning Industry Outlook",
-    category: "Market Trends",
-    meta: "2025 Edition · 36 pages"
+    number: "03",
+    eyebrow: "World Clean Expo",
+    title: "Move From Online Signals To Real Connections",
+    text: "Meet manufacturers, brands, suppliers and buyers through the next global cleaning industry platform.",
+    links: [{ href: "/world-clean-expo", label: "Explore World Clean Expo" }]
   }
 ];
 
 const fallbackInsightImages = [
   "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
   "/images/industry/sourcing-hero-expo-products-2026.jpg",
-  "/images/industry/home-industry-products-2025.jpg",
-  "/images/industry/reports-market-preview-products-2025.jpg"
+  "/images/industry/home-industry-products-2025.jpg"
 ];
 
 const featuredInsightSlugs = [
   "anker-prospectus-trillion-yuan-cleaning-industry",
   "sharkninja-road-to-10-billion-dollars",
-  "tti-cleaning-appliance-strategy",
-  "china-cleaning-robot-giants-move-into-backyard"
+  "tti-cleaning-appliance-strategy"
 ];
 
 function isGenericBuyerGuide(article: Insight) {
   const haystack = `${article.slug} ${article.title} ${article.category}`.toLowerCase();
-
   return (
     article.category === "Buyer Guide" ||
     article.category === "Sourcing Guide" ||
@@ -241,16 +66,13 @@ function getFeaturedInsights(articles: Insight[]) {
     .map((slug) => articles.find((article) => article.slug === slug))
     .filter((article): article is Insight => Boolean(article));
   const fallbackArticles = articles.filter(
-    (article) =>
-      !featuredInsightSlugs.includes(article.slug) &&
-      !isGenericBuyerGuide(article)
+    (article) => !featuredInsightSlugs.includes(article.slug) && !isGenericBuyerGuide(article)
   );
-  const candidates = [...priorityArticles, ...fallbackArticles];
   const unique = new Map<string, Insight>();
 
-  for (const article of candidates) {
+  for (const article of [...priorityArticles, ...fallbackArticles]) {
     unique.set(article.slug, article);
-    if (unique.size === 4) break;
+    if (unique.size === 3) break;
   }
 
   return Array.from(unique.values());
@@ -269,45 +91,26 @@ export default function HomePage() {
   const featuredInsights = getFeaturedInsights(getInsights());
 
   return (
-    <main className="home-v8">
-      <section className="home-v8-hero">
-        <div className="home-v8-container home-v8-hero-grid">
-          <div className="home-v8-hero-copy">
-            <p className="home-v8-eyebrow">Global Cleaning Industry Opportunities</p>
-            <h1>
-              <span className="home-v8-hero-category-line">
-                Robot Vacuums. Floor Washers. Pool Robots. Robotic Lawn Mowers.
-              </span>
-              <strong>
-                Together They Are Creating
-                <br />
-                An Entirely New Cleaning Industry.
-              </strong>
-            </h1>
-            <div className="home-v8-hero-text">
-              <p>
-                What happened to robot vacuums over the last decade is beginning
-                to happen across multiple cleaning categories.
-              </p>
-              <p>
-                The cleaning industry could grow from a $40B business into a
-                $100B market over the next decade.
-              </p>
-            </div>
-            <div className="home-v8-actions">
-              <Link className="button" href="/reports">
-                Get Free Reports
-              </Link>
-              <Link className="button-secondary" href="/sourcing">
-                Start A Sourcing Inquiry
-              </Link>
+    <main className="home-v9">
+      <section className="home-v9-hero">
+        <div className="home-v9-container home-v9-hero-grid">
+          <div className="home-v9-hero-copy">
+            <p className="home-v9-eyebrow">Global Cleaning Industry Intelligence</p>
+            <h1>See The Industry Shift Earlier. Turn It Into Better Business Decisions.</h1>
+            <p className="home-v9-hero-intro">
+              World Clean Biz connects market intelligence, product sourcing and
+              real industry access across robot vacuums, floor washers, pool robots,
+              robotic lawn mowers and commercial cleaning.
+            </p>
+            <div className="home-v9-actions">
+              <Link className="button" href="/sourcing">Start A Sourcing Inquiry</Link>
+              <HomeUpdatesForm />
             </div>
           </div>
 
-          <div className="home-v8-product-stage" aria-label="Cleaning automation product categories">
-            <div className="home-v8-product-orbit" />
-            {heroProducts.map((product, index) => (
-              <figure className={`home-v8-product-card home-v8-product-card-${index + 1}`} key={product.label}>
+          <div className="home-v9-product-board" aria-label="Cleaning industry product categories">
+            {heroProducts.map((product) => (
+              <figure key={product.label}>
                 <img src={product.image} alt={product.alt} />
                 <figcaption>{product.label}</figcaption>
               </figure>
@@ -316,215 +119,135 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="home-v8-section home-v8-soft home-v8-categories-section">
-        <div className="home-v8-container">
-          <div className="home-v8-centered-head">
-            <p className="home-v8-eyebrow">Where Opportunities Are Forming</p>
-            <h2>Categories Where The Next Opportunities Are Forming</h2>
-            <p>
-              World Clean Biz tracks fast-changing cleaning product categories
-              where new suppliers, brands and demand signals are emerging.
-            </p>
+      <section className="home-v9-section home-v9-pathways">
+        <div className="home-v9-container">
+          <div className="home-v9-heading">
+            <p className="home-v9-eyebrow">Choose Your Next Step</p>
+            <h2>Three Ways World Clean Biz Helps You Move Forward</h2>
           </div>
-          <div className="home-v8-category-grid">
-            {categoryCards.map((category, index) => (
-              <article className="home-v8-card home-v8-category-card" key={category.title}>
-                <img src={category.image} alt={`${category.title} category`} />
-                <div>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <h3>{category.title}</h3>
-                  <p>{category.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="home-v8-section home-v8-denny-section">
-        <div className="home-v8-container home-v8-denny-grid">
-          <div className="home-v8-section-copy">
-            <p className="home-v8-eyebrow">Inside The Industry Since 2006</p>
-            <div className="home-v8-denny-id">
-              <img src="/images/industry/about-denny-speaking-forum-2025.jpg" alt="Denny speaking at an industry forum" />
-              <div>
-                <strong>Denny You</strong>
-                <span>Founder, World Clean Biz</span>
-              </div>
-            </div>
-            <h2>Why Thousands Of Industry Professionals Follow Denny</h2>
-            <div className="home-v8-denny-copy">
-              <p>
-                Since 2006, Denny has worked across products, brands, and
-                supply chains in the global cleaning industry.
-              </p>
-              <p>
-                Over the past 20 years, he has held multiple roles—as
-                practitioner, industry influencer, and forum/expo organizer—
-                witnessing the rise of new players and the fall of established
-                giants.
-              </p>
-            </div>
-            <div className="home-v8-focus-block">
-              <h3>Core Focus</h3>
-              <div className="home-v8-focus-grid">
-                {dennyFocus.map((item) => (
-                  <article key={item.title}>
-                    <strong>{item.title}</strong>
-                    <p>{item.text}</p>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="home-v8-denny-gallery">
-            {dennyPhotos.map((photo) => (
-              <figure className="home-v8-denny-photo" key={photo.label}>
-                <img src={photo.image} alt={photo.alt} />
-                <figcaption>{photo.label}</figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-        <div className="home-v8-container home-v8-journey-band">
-          <div className="home-v8-journey-head">
-            <h3>Denny&apos;s Industry Journey</h3>
-          </div>
-          <div className="home-v8-journey-line" aria-hidden="true" />
-          <div className="home-v8-journey-grid">
-            {dennyJourney.map((item) => (
-              <article className="home-v8-card home-v8-journey-card" key={item.year}>
-                <span>{item.year}</span>
-                <h4>{item.title}</h4>
-                <p>{item.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="home-v8-section home-v8-soft home-v8-expo-section">
-        <div className="home-v8-container home-v8-expo-grid">
-          <div className="home-v8-section-copy">
-            <p className="home-v8-eyebrow">World Clean Expo</p>
-            <h2>
-              From Online Signals
-              <span>To Real Industry Connections</span>
-            </h2>
-            <p>Meet manufacturers, brands, suppliers and buyers face-to-face.</p>
-            <p>
-              World Clean Expo brings together brands, OEM manufacturers,
-              upstream and downstream suppliers, and service providers in one
-              place.
-            </p>
-            <div className="home-v8-actions">
-              <Link className="button" href="/world-clean-expo">
-                Get Expo Updates
-              </Link>
-            </div>
-          </div>
-          <div className="home-v8-expo-image">
-            <img src="/images/industry/world-clean-expo-global-tech-2026.png" alt="Large international cleaning technology exhibition floor" />
-          </div>
-        </div>
-      </section>
-
-      <section className="home-v8-section home-v8-sourcing-section">
-        <div className="home-v8-container home-v8-sourcing-grid">
-          <div className="home-v8-centered-head home-v8-sourcing-head">
-            <p className="home-v8-eyebrow">Sourcing Service</p>
-            <h2>From Market Insight To Product Execution</h2>
-            <p>
-              We help you move from category judgement to supplier direction,
-              product decisions and execution support.
-            </p>
-          </div>
-          <div className="home-v8-sourcing-items">
-            {sourcingItems.map((item) => (
-              <article className="home-v8-card home-v8-sourcing-card" key={item.title}>
-                <div className="home-v8-sourcing-image">
-                  <img src={item.image} alt={`${item.imageTitle} in the cleaning industry`} />
-                  <div>
-                    <strong>{item.imageTitle}</strong>
-                    <span>{item.imageText}</span>
-                  </div>
-                </div>
-                <h3>{item.title}</h3>
-                <ul>
-                  {item.points.map((point) => (
-                    <li key={point}>{point}</li>
+          <div className="home-v9-pathway-grid">
+            {pathways.map((pathway) => (
+              <article key={pathway.number}>
+                <span>{pathway.number}</span>
+                <p>{pathway.eyebrow}</p>
+                <h3>{pathway.title}</h3>
+                <div className="home-v9-pathway-copy">{pathway.text}</div>
+                <div className="home-v9-text-links">
+                  {pathway.links.map((link) => (
+                    <Link href={link.href} key={link.href}>{link.label} <b aria-hidden="true">→</b></Link>
                   ))}
-                </ul>
+                </div>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="home-v8-section home-v8-soft home-v8-insights-section">
-        <div className="home-v8-container">
-          <div className="home-v8-resource-head">
-            <p className="home-v8-eyebrow">What We&apos;re Seeing Right Now</p>
-            <h2>Industry Signals Worth Watching</h2>
+      <section className="home-v9-section home-v9-trust">
+        <div className="home-v9-container home-v9-trust-grid">
+          <div className="home-v9-trust-copy">
+            <p className="home-v9-eyebrow">Inside The Industry Since 2006</p>
+            <h2>Front-Line Experience Behind Every Industry Signal</h2>
             <p>
-              Read signals and follow category changes before they become
-              obvious.
+              Denny You has spent 20 years working across products, brands,
+              suppliers, forums and exhibitions in the global cleaning industry.
+              World Clean Biz turns that first-hand network into clearer market
+              judgement and more useful business connections.
             </p>
+            <ul>
+              <li><strong>20 years</strong><span>Across products and supply chains</span></li>
+              <li><strong>Industry network</strong><span>Brands, suppliers, buyers and experts</span></li>
+              <li><strong>Real access</strong><span>Forums, exhibitions and factory conversations</span></li>
+            </ul>
+            <Link className="home-v9-inline-link" href="/about">About Denny & World Clean Biz →</Link>
           </div>
-          <div className="home-v8-insight-list">
-            {featuredInsights.map((article, index) => (
-              <Link className="home-v8-card home-v8-mini-article" href={`/blog/${article.slug}`} key={article.slug}>
-                <img src={imageFor(article, index)} alt={`${article.title} cover image`} />
-                <div>
-                  <span>{article.category}</span>
-                  <h3>{article.title}</h3>
-                  <p>{excerptFor(article)}</p>
-                </div>
-              </Link>
-            ))}
+          <div className="home-v9-trust-gallery">
+            <figure className="home-v9-trust-main">
+              <img src="/images/industry/about-denny-speaking-forum-2025.jpg" alt="Denny speaking at an industry forum" />
+              <figcaption>Denny You · Founder, World Clean Biz</figcaption>
+            </figure>
+            <figure>
+              <img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Supplier meeting at a cleaning industry exhibition" />
+              <figcaption>Supplier Network</figcaption>
+            </figure>
+            <figure>
+              <img src="/images/industry/expo-hall-shenzhen-2026.jpg" alt="World Clean Expo exhibition floor" />
+              <figcaption>Industry Access</figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section className="home-v8-section home-v8-reports-section">
-        <div className="home-v8-container home-v8-reports-grid">
-          <div className="home-v8-section-copy">
-            <p className="home-v8-eyebrow">Free Industry Reports</p>
-            <h2>Research You Can Actually Use</h2>
-            <p>
-              Download category reports built from market signals, supplier
-              observations and front-line industry research.
-            </p>
-            <Link className="button" href="/reports">
-              Get Free Reports
-            </Link>
+      <section className="home-v9-section home-v9-commercial">
+        <div className="home-v9-container">
+          <div className="home-v9-heading home-v9-heading-light">
+            <p className="home-v9-eyebrow">From Insight To Opportunity</p>
+            <h2>Two Direct Business Paths</h2>
           </div>
-          <div className="home-v8-report-covers">
-            {reportCovers.map((report) => (
-              <Link className="home-v8-report-cover" href="/reports" key={report.title}>
-                <small>World Clean Biz</small>
-                <strong>
-                  <span>2025</span>
-                  {report.title}
-                </strong>
-                <i>{report.category}</i>
-                <b>{report.meta}</b>
-                <em>FREE</em>
-              </Link>
-            ))}
+          <div className="home-v9-commercial-grid">
+            <article>
+              <p>Product & Supply Chain</p>
+              <h3>Sourcing & Product Support</h3>
+              <div>For buyers, brands and product teams looking for suppliers, OEM/ODM partners, product direction or execution support.</div>
+              <Link className="button" href="/sourcing">Start A Sourcing Inquiry</Link>
+            </article>
+            <article>
+              <p>World Clean Expo</p>
+              <h3>Exhibit, Partner Or Follow The Show</h3>
+              <div>Connect with the platform as an exhibitor or partner, or receive visitor registration and event updates.</div>
+              <div className="home-v9-wce-actions">
+                <TallyButton ctaLocation="home_wce_exhibitor" form="wceExhibitor">Exhibit / Partner</TallyButton>
+                <TallyButton className="button-secondary" ctaLocation="home_wce_visitor" form="wceVisitor">Visit / Get Updates</TallyButton>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section className="home-v8-final">
-        <div className="home-v8-container home-v8-final-grid">
-          <div className="home-v8-final-copy">
-            <p className="home-v8-eyebrow">Don&apos;t Hear About It A Year Later</p>
-            <h2>
-              The Next Opportunity
-              <span>May Already Be Happening.</span>
-            </h2>
-            <p>Get industry signals, market reports and expo updates.</p>
+      <section className="home-v9-section home-v9-proof">
+        <div className="home-v9-container">
+          <div className="home-v9-proof-head">
+            <div className="home-v9-heading">
+              <p className="home-v9-eyebrow">Industry Intelligence</p>
+              <h2>Signals And Research You Can Use</h2>
+            </div>
+            <Link className="home-v9-inline-link" href="/blog">View All Insights →</Link>
+          </div>
+          <div className="home-v9-proof-grid">
+            <div className="home-v9-article-grid">
+              {featuredInsights.map((article, index) => (
+                <Link className="home-v9-article" href={`/blog/${article.slug}`} key={article.slug}>
+                  <img src={imageFor(article, index)} alt={`${article.title} cover image`} />
+                  <div>
+                    <span>{article.category}</span>
+                    <h3>{article.title}</h3>
+                    <p>{excerptFor(article)}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <aside className="home-v9-report">
+              <p>Featured Report</p>
+              <span>2026</span>
+              <h3>Global Cleaning Industry Report</h3>
+              <div>Market direction, category movement and the business signals shaping the next cleaning industry cycle.</div>
+              <Link className="button" href="/reports">Explore The Report</Link>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-v9-updates">
+        <div className="home-v9-container home-v9-updates-grid">
+          <div>
+            <p className="home-v9-eyebrow">Stay Ahead Of The Market</p>
+            <h2>Get The Signals That Match Your Business</h2>
+            <p>Receive selected market intelligence, sourcing opportunities and World Clean Expo updates.</p>
+            <div className="home-v9-interest-list" aria-label="Update topics">
+              <span>Market Intelligence</span>
+              <span>Sourcing</span>
+              <span>World Clean Expo</span>
+            </div>
           </div>
           <HomeUpdatesForm />
         </div>

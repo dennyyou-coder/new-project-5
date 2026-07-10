@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { TallyReportButton } from "@/components/LeadForms";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -55,11 +54,6 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <TallyReportButton
-            className="header-cta"
-            ctaLocation="header_reports"
-            onOpen={closeMenu}
-          />
         </div>
       </div>
     </header>
