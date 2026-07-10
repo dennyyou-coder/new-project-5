@@ -1,6 +1,6 @@
 # WCB Lead Form Field Map
 
-Status: external configuration and Airtable end-to-end verification completed; GA4 DebugView verification pending.
+Status: external configuration, Airtable end-to-end verification and GA4 transport verification completed; GA4 DebugView UI confirmation pending.
 
 ## Airtable base
 
@@ -111,7 +111,16 @@ Second QA verification on 2026-07-10:
 
 All six QA2 submissions reached their Tally success pages and created distinct Airtable records. Field-by-field inspection confirmed `utm_source = codex`, `utm_medium = qa`, `utm_campaign = lead_pipeline_retest`, the expected per-form `utm_content`, and `utm_term = qa2` for every record.
 
+GA4 local QA verification on 2026-07-11:
+
+- Added a local-host-only GA4 debug configuration for `localhost`, `127.0.0.1` and `::1`; production hosts do not enable debug mode.
+- Confirmed the World Clean Biz web data stream uses Measurement ID `G-6RW65B9CD0`.
+- Submitted one Contact QA record through the local-site Tally popup using `wcb.qa3+contact@example.com`; Tally displayed its submitted state and the website displayed its success status.
+- Airtable record `recxwU7tzLgFtjBUz` was created with `Lead Type = contact`, `Source Page = /contact`, `CTA Location = contact_selected_route`, `Language = en`, and the complete QA3 UTM attribution.
+- Network inspection confirmed Google Analytics accepted `form_open`, `form_submit` and `form_success` with HTTP 204. Every event contained `debug_mode = true`, `form_type = contact`, `source_page = /contact`, `cta_location = contact_selected_route`, `utm_source = codex`, `utm_medium = qa`, `utm_campaign = ga4_debug_validation`, `utm_content = contact` and `utm_term = qa3`.
+- GA4 DebugView continued to display zero debug devices after refresh, and the Realtime event table had not yet surfaced these custom events. Treat the transport and parameter verification as passed, but do not mark the DebugView UI check complete until the GA interface displays the events.
+
 Before production release, complete the remaining verification:
 
-- GA4 DebugView observed `form_open`, `form_submit` and `form_success`
-- Preview URL and test date
+- Recheck GA4 DebugView for `form_open`, `form_submit` and `form_success`; investigate Analytics privacy/consent or property-side filtering if the device remains absent.
+- Production preview URL and release test date.

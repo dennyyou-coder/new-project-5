@@ -160,7 +160,7 @@ Open event details and confirm:
 ```text
 form_type = contact
 source_page = /contact
-cta_location = contact_hero
+cta_location = contact_selected_route
 utm_source = codex
 utm_medium = qa
 utm_campaign = ga4_debug_validation
