@@ -213,7 +213,7 @@ function SidebarContent({ latestSignals, selectedTopic }: { latestSignals: Insig
           </div>
         </div>
         <h3>Get field-informed industry trends, supplier intelligence and market opportunities from World Clean Biz.</h3>
-        <TallyReportButton />
+        <TallyReportButton ctaLocation="blog_sidebar_reports" />
       </div>
 
       <div className="sidebar-box about-denny-sidebar">

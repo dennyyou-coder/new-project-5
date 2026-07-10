@@ -41,7 +41,11 @@ export function Footer() {
             <strong>Connect</strong>
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
-            <TallyButton className="footer-link-button" form="contact">
+            <TallyButton
+              className="footer-link-button"
+              ctaLocation="footer_contact"
+              form="contact"
+            >
               Talk With Denny
             </TallyButton>
           </div>

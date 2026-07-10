@@ -45,7 +45,7 @@ export function TallyReportButton({
 }: {
   className?: string;
   children?: ReactNode;
-  ctaLocation?: string;
+  ctaLocation: string;
   reportId?: string;
   onOpen?: () => void;
 }) {
@@ -73,7 +73,7 @@ export function TallyButton({
   className?: string;
   children: ReactNode;
   form: TallyFormKey;
-  ctaLocation?: string;
+  ctaLocation: string;
   reportId?: string;
   onOpen?: () => void;
 }) {
@@ -86,7 +86,7 @@ export function TallyButton({
     const attribution = createLeadAttribution({
       formType: tallyForm.formType,
       sourcePage: window.location.pathname,
-      ctaLocation: ctaLocation || "legacy_unmapped",
+      ctaLocation,
       language: document.documentElement.lang || "en",
       search: window.location.search,
       reportId
@@ -172,7 +172,10 @@ export function ReportsLeadForm() {
     <div className="reports-v1-hero-form" aria-label="Get free reports">
       <label>Free report access</label>
       <div>
-        <TallyReportButton />
+        <TallyReportButton
+          ctaLocation="reports_hero"
+          reportId="next-decade-cleaning-growth"
+        />
       </div>
       <p>Complete a short form to receive the report link.</p>
     </div>
@@ -188,7 +191,11 @@ export function ExpoLeadForm({ roles: _roles }: { roles: string[] }) {
         Get visitor registration timing, exhibitor news, forum agenda and
         business matching updates.
       </p>
-      <TallyButton className="button tally-cta-button" form="expo">
+      <TallyButton
+        className="button tally-cta-button"
+        ctaLocation="wce_footer_visitor"
+        form="expo"
+      >
         Get Expo Updates
       </TallyButton>
     </div>
@@ -207,7 +214,9 @@ export function NewsletterLeadForm() {
         </p>
       </div>
       <div className="newsletter-form-row">
-        <TallyReportButton>Subscribe To Blog Updates</TallyReportButton>
+        <TallyButton ctaLocation="blog_newsletter" form="newsletter">
+          Subscribe To Blog Updates
+        </TallyButton>
       </div>
     </div>
   );

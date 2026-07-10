@@ -152,7 +152,11 @@ export default function ReportsPage() {
               </article>
             ))}
           </div>
-          <TallyReportButton className="reports-v1-inline-cta" />
+          <TallyReportButton
+            className="reports-v1-inline-cta"
+            ctaLocation="reports_inline"
+            reportId="next-decade-cleaning-growth"
+          />
         </div>
       </section>
 

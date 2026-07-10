@@ -267,7 +267,11 @@ export default function SourcingPage() {
               Share your product category, target market and sourcing goal.
               Denny will review whether World Clean Biz can help.
             </p>
-            <TallyButton className="sourcing-v3-button" form="sourcing">
+            <TallyButton
+              className="sourcing-v3-button"
+              ctaLocation="sourcing_hero"
+              form="sourcing"
+            >
               Start A Sourcing Inquiry
             </TallyButton>
           </div>
@@ -371,7 +375,11 @@ export default function SourcingPage() {
           </div>
           <div className="sourcing-v3-mid-cta">
             <p>Have a product or supplier question?</p>
-            <TallyButton className="sourcing-v3-button" form="sourcing">
+            <TallyButton
+              className="sourcing-v3-button"
+              ctaLocation="sourcing_middle"
+              form="sourcing"
+            >
               Start A Sourcing Inquiry
             </TallyButton>
           </div>
@@ -459,7 +467,11 @@ export default function SourcingPage() {
               challenge. Denny will review where World Clean Biz can help.
             </p>
           </div>
-          <TallyButton className="sourcing-v3-button" form="sourcing">
+          <TallyButton
+            className="sourcing-v3-button"
+            ctaLocation="sourcing_footer"
+            form="sourcing"
+          >
             Start A Sourcing Inquiry
           </TallyButton>
         </div>

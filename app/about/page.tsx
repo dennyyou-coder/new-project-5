@@ -103,10 +103,17 @@ export default function AboutPage() {
               Operator. Product Builder. Forum Organizer. Industry Connector.
             </div>
             <div className="hero-actions">
-              <TallyButton className="button" form="contact">
+              <TallyButton
+                className="button"
+                ctaLocation="about_hero_contact"
+                form="contact"
+              >
                 Talk With Denny
               </TallyButton>
-              <TallyReportButton className="button-secondary" />
+              <TallyReportButton
+                className="button-secondary"
+                ctaLocation="about_hero_reports"
+              />
             </div>
           </div>
           <div className="about-v1-hero-photo" aria-label="Denny speaking at an industry forum">
@@ -195,10 +202,17 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="hero-actions">
-            <TallyButton className="button" form="contact">
+            <TallyButton
+              className="button"
+              ctaLocation="about_footer_contact"
+              form="contact"
+            >
               Talk With Denny
             </TallyButton>
-            <TallyReportButton className="button-secondary" />
+            <TallyReportButton
+              className="button-secondary"
+              ctaLocation="about_footer_reports"
+            />
           </div>
         </div>
       </section>

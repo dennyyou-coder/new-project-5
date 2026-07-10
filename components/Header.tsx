@@ -55,7 +55,11 @@ export function Header() {
               </Link>
             ))}
           </nav>
-          <TallyReportButton className="header-cta" onOpen={closeMenu} />
+          <TallyReportButton
+            className="header-cta"
+            ctaLocation="header_reports"
+            onOpen={closeMenu}
+          />
         </div>
       </div>
     </header>

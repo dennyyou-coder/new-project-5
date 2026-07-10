@@ -101,7 +101,11 @@ export default function WorldCleanExpoPage() {
               <span>China</span>
             </div>
             <div className="hero-actions">
-              <TallyButton className="button" form="expo">
+              <TallyButton
+                className="button"
+                ctaLocation="wce_hero_visitor"
+                form="expo"
+              >
                 Get Expo Updates
               </TallyButton>
               <Link className="button-secondary" href="#expo-updates">

@@ -18,7 +18,11 @@ export function ContactForm() {
 
   return (
     <div className="contact-tally-panel">
-      <TallyButton className="button tally-cta-button" form={form}>
+      <TallyButton
+        className="button tally-cta-button"
+        ctaLocation="contact_selected_route"
+        form={form}
+      >
         Talk With Denny
       </TallyButton>
     </div>
