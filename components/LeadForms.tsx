@@ -1,9 +1,19 @@
 "use client";
 
-import { ReactNode } from "react";
-import { TALLY_FORMS, type TallyFormKey } from "@/lib/tallyForms";
+import { ReactNode, useState } from "react";
+import { getTallyForm, type TallyFormKey } from "@/lib/tallyForms";
+import {
+  buildTallyUrl,
+  createLeadAttribution,
+  trackLeadEvent,
+  type LeadAttribution
+} from "@/lib/leadTracking";
 
 const popupWidth = 620;
+
+type TallySubmitPayload = {
+  responseId?: string;
+};
 
 declare global {
   interface Window {
@@ -17,6 +27,9 @@ declare global {
             text: string;
             animation: string;
           };
+          hiddenFields?: LeadAttribution;
+          onOpen?: () => void;
+          onSubmit?: (payload: TallySubmitPayload) => void;
         }
       ) => void;
     };
@@ -26,14 +39,24 @@ declare global {
 export function TallyReportButton({
   className = "button",
   children = "Get Free Reports",
+  ctaLocation,
+  reportId,
   onOpen
 }: {
   className?: string;
   children?: ReactNode;
+  ctaLocation?: string;
+  reportId?: string;
   onOpen?: () => void;
 }) {
   return (
-    <TallyButton className={className} form="reports" onOpen={onOpen}>
+    <TallyButton
+      className={className}
+      ctaLocation={ctaLocation}
+      form="reports"
+      onOpen={onOpen}
+      reportId={reportId}
+    >
       {children}
     </TallyButton>
   );
@@ -43,33 +66,104 @@ export function TallyButton({
   className = "button",
   children,
   form,
+  ctaLocation,
+  reportId,
   onOpen
 }: {
   className?: string;
   children: ReactNode;
   form: TallyFormKey;
+  ctaLocation?: string;
+  reportId?: string;
   onOpen?: () => void;
 }) {
+  const [status, setStatus] = useState<
+    "idle" | "unavailable" | "fallback" | "success"
+  >("idle");
+
   function openTallyForm() {
-    const tallyForm = TALLY_FORMS[form];
+    const tallyForm = getTallyForm(form);
+    const attribution = createLeadAttribution({
+      formType: tallyForm.formType,
+      sourcePage: window.location.pathname,
+      ctaLocation: ctaLocation || "legacy_unmapped",
+      language: document.documentElement.lang || "en",
+      search: window.location.search,
+      reportId
+    });
 
     onOpen?.();
 
-    if (window.Tally?.openPopup) {
-      window.Tally.openPopup(tallyForm.id, {
-        layout: "modal",
-        width: popupWidth
+    if (!tallyForm.id || !tallyForm.url) {
+      setStatus("unavailable");
+      trackLeadEvent("form_error", {
+        ...attribution,
+        error_reason: "missing_form_configuration"
       });
       return;
     }
 
-    window.open(tallyForm.url, "_blank", "noopener,noreferrer");
+    if (window.Tally?.openPopup) {
+      window.Tally.openPopup(tallyForm.id, {
+        layout: "modal",
+        width: popupWidth,
+        hiddenFields: attribution,
+        onOpen: () => {
+          trackLeadEvent("form_open", {
+            ...attribution,
+            open_method: "popup"
+          });
+        },
+        onSubmit: (payload) => {
+          trackLeadEvent("form_submit", {
+            ...attribution,
+            response_id: payload.responseId
+          });
+          setStatus("success");
+          trackLeadEvent("form_success", {
+            ...attribution,
+            response_id: payload.responseId
+          });
+        }
+      });
+      return;
+    }
+
+    const fallback = window.open(
+      buildTallyUrl(tallyForm.url, attribution),
+      "_blank",
+      "noopener,noreferrer"
+    );
+
+    if (!fallback) {
+      setStatus("unavailable");
+      trackLeadEvent("form_error", {
+        ...attribution,
+        error_reason: "popup_blocked"
+      });
+      return;
+    }
+
+    setStatus("fallback");
+    trackLeadEvent("form_open", {
+      ...attribution,
+      open_method: "fallback"
+    });
   }
 
   return (
-    <button className={className} onClick={openTallyForm} type="button">
-      {children}
-    </button>
+    <span className="lead-form-trigger">
+      <button className={className} onClick={openTallyForm} type="button">
+        {children}
+      </button>
+      <span aria-live="polite" className="lead-form-status" role="status">
+        {status === "unavailable" &&
+          "The form is temporarily unavailable. Please use the Contact page."}
+        {status === "fallback" && "The form opened in a new tab."}
+        {status === "success" &&
+          "Thank you. Your information was received successfully."}
+      </span>
+    </span>
   );
 }
 

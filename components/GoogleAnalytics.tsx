@@ -2,6 +2,7 @@ import Script from "next/script";
 
 const GA_MEASUREMENT_ID = "G-6RW65B9CD0";
 
+// The typed window.gtag contract is declared in lib/leadTracking.ts.
 export function GoogleAnalytics() {
   return (
     <>

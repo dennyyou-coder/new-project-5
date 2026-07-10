@@ -62,6 +62,24 @@ test("buildTallyUrl serializes hidden fields", () => {
   );
 });
 
+test("buildTallyUrl preserves existing parameters", () => {
+  const url = buildTallyUrl("https://tally.so/r/abc123?transparentBackground=1", {
+    form_type: "reports",
+    source_page: "/reports",
+    cta_location: "reports_hero",
+    language: "en",
+    utm_source: "",
+    utm_medium: "",
+    utm_campaign: "",
+    utm_content: "",
+    utm_term: "",
+    report_id: "next-decade-cleaning-growth"
+  });
+
+  assert.match(url, /transparentBackground=1/);
+  assert.match(url, /report_id=next-decade-cleaning-growth/);
+});
+
 test("trackLeadEvent is safe during server rendering", () => {
   assert.equal(
     trackLeadEvent("form_open", {
