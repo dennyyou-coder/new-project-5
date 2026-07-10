@@ -120,6 +120,8 @@ GA4 local QA verification on 2026-07-11:
 - Network inspection confirmed Google Analytics accepted `form_open`, `form_submit` and `form_success` with HTTP 204. Every event contained `debug_mode = true`, `form_type = contact`, `source_page = /contact`, `cta_location = contact_selected_route`, `utm_source = codex`, `utm_medium = qa`, `utm_campaign = ga4_debug_validation`, `utm_content = contact` and `utm_term = qa3`.
 - GA4 DebugView continued to display zero debug devices after refresh, and the Realtime event table had not yet surfaced these custom events. Treat the transport and parameter verification as passed, but do not mark the DebugView UI check complete until the GA interface displays the events.
 - Root cause confirmed in GA4 property settings: the Google tag has an internal-traffic rule named `Internal - current network` that assigns `traffic_type = internal`, while the property-level `Internal Traffic` data filter is active and excludes matching events. GA4 states that matching active-filter data is not processed, which explains why accepted HTTP requests from the current network do not appear in DebugView or Realtime.
+- GA4 reporting configuration completed on 2026-07-11: created event-scoped custom dimensions `Form Type` (`form_type`), `CTA Location` (`cta_location`) and `Report ID` (`report_id`). The saved list was reopened and all three names, scopes and event parameters were verified.
+- Preemptively registered `form_success` as a key event using the existing website-code event. The previously configured key events `close_convert_lead`, `purchase` and `qualify_lead` were preserved without changes.
 
 Before production release, complete the remaining verification:
 
