@@ -10,12 +10,24 @@ const sourcingSource = await readFile(new URL("../app/sourcing/page.tsx", import
 const contactSource = await readFile(new URL("../app/contact/page.tsx", import.meta.url), "utf8");
 const definitionSource = await readFile(new URL("../lib/inquiryConversion.ts", import.meta.url), "utf8");
 const globalStyles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+const leadFormsSource = await readFile(new URL("../components/LeadForms.tsx", import.meta.url), "utf8");
 
 test("defines six unique tracked sourcing categories", () => {
   assert.equal(SOURCING_CATEGORIES.length, 6);
+  assert.deepEqual(
+    SOURCING_CATEGORIES.map((item) => item.title),
+    [
+      "Robotic Cleaning Products",
+      "Floor Care Equipment",
+      "Vacuum Cleaners",
+      "Commercial Cleaning Equipment",
+      "Outdoor Cleaning Products",
+      "New & Emerging Products"
+    ]
+  );
   assert.equal(new Set(SOURCING_CATEGORIES.map((item) => item.value)).size, 6);
   for (const item of SOURCING_CATEGORIES) {
-    assert.match(item.ctaLocation, /^sourcing_category_/);
+    assert.match(item.ctaLocation, /^sourcing_opportunity_/);
     assert.equal("href" in item, false);
   }
 });
@@ -70,26 +82,46 @@ test("defines one tracked route for each Contact intent", () => {
   );
 });
 
-test("Sourcing presents a concise, accurate inquiry journey", () => {
-  assert.match(sourcingSource, /Cleaning Product Sourcing/);
-  assert.match(sourcingSource, /Submit Your Brief/);
-  assert.match(sourcingSource, /Initial Review/);
-  assert.match(sourcingSource, /Direction & Connections/);
-  assert.match(sourcingSource, /Next-Step Cooperation/);
-  assert.match(sourcingSource, /Discuss \{item\.title\} →/);
-  assert.match(sourcingSource, /href="\/about"/);
+test("Sourcing presents the approved opportunity-led funnel", () => {
+  const requiredMessages = [
+    "Don’t Just Source Another Product",
+    "Free Product Opportunity Shortlist",
+    "World Clean Biz Industry Estimate",
+    "Access Is No Longer The Advantage",
+    "Outdated Before Launch",
+    "Faster Sourcing Is Not Enough",
+    "How Denny Sees Opportunities Earlier",
+    "One Partner From Opportunity Discovery To Delivery",
+    "Denny Reviews. The Team Executes.",
+    "What New Cleaning Products Are Growing Fast?"
+  ];
 
-  assert.doesNotMatch(sourcingSource, /View Category →/);
-  assert.doesNotMatch(sourcingSource, /dennyJourney/);
-  assert.doesNotMatch(sourcingSource, /dennyPhotos/);
-  assert.doesNotMatch(sourcingSource, /9,000\+ Industry Professionals/);
-  assert.doesNotMatch(sourcingSource, /Helped Build Multiple Best-Selling/);
+  for (const message of requiredMessages) {
+    assert.match(sourcingSource, new RegExp(message.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+
+  assert.match(sourcingSource, /inquiryIntent="opportunity_discovery"/);
+  assert.match(sourcingSource, /inquiryIntent="specific_product"/);
+  assert.match(sourcingSource, /TallyInlineEmbed/);
+  assert.match(sourcingSource, /SOURCING_CATEGORIES\.map/);
+  assert.match(sourcingSource, /productCategory=\{item\.value\}/);
+  assert.match(sourcingSource, /Initial Response Within 8 Hours/);
+  assert.match(sourcingSource, /1–2 Business Days/);
+  assert.doesNotMatch(sourcingSource, /A Better Brief Creates A Better Search/);
+  assert.doesNotMatch(sourcingSource, /sourcing-v3-cta/);
 });
 
-test("Sourcing V4 owns the contrasting process and final CTA styles", () => {
-  assert.doesNotMatch(sourcingSource, /className="sourcing-v3-cta sourcing-v4-final"/);
-  assert.match(sourcingSource, /className="sourcing-v4-final"/);
-  assert.match(globalStyles, /\.sourcing-v4-process \.sourcing-v4-heading h2\s*\{[^}]*color:\s*#fff/s);
-  assert.match(globalStyles, /\.sourcing-v4-final\s*\{[^}]*background:/s);
-  assert.match(globalStyles, /\.sourcing-v4-final[^}]*color:\s*#fff/s);
+test("Sourcing opportunity styles are isolated from legacy sourcing sections", () => {
+  assert.match(sourcingSource, /className="sourcing-opportunity-page"/);
+  assert.match(globalStyles, /\.sourcing-opportunity-page/);
+  assert.match(globalStyles, /\.sourcing-opportunity-process[^}]*background:/s);
+  assert.doesNotMatch(sourcingSource, /className="[^"]*sourcing-v4/);
+});
+
+test("shared Tally transport supports a tracked inline sourcing form", () => {
+  assert.match(leadFormsSource, /export function TallyInlineEmbed/);
+  assert.match(leadFormsSource, /buildTallyUrl/);
+  assert.match(leadFormsSource, /Tally\.FormSubmitted/);
+  assert.match(leadFormsSource, /event\.origin !== "https:\/\/tally\.so"/);
+  assert.match(leadFormsSource, /inquiryIntent/);
 });

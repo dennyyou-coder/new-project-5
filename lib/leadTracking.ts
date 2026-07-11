@@ -40,6 +40,7 @@ export type LeadAttribution = {
   report_id: string;
   product_category: string;
   inquiry_type: string;
+  inquiry_intent: string;
 };
 
 type AttributionInput = {
@@ -51,6 +52,7 @@ type AttributionInput = {
   reportId?: string;
   productCategory?: string;
   inquiryType?: string;
+  inquiryIntent?: string;
 };
 
 type LeadEventParameters = Partial<LeadAttribution> & {
@@ -60,7 +62,7 @@ type LeadEventParameters = Partial<LeadAttribution> & {
   language: string;
   response_id?: string;
   error_reason?: string;
-  open_method?: "popup" | "fallback";
+  open_method?: "popup" | "fallback" | "inline";
   cta_type?: string;
   article_slug?: string;
   article_category?: string;
@@ -84,7 +86,8 @@ export function createLeadAttribution({
   search = "",
   reportId = "",
   productCategory = "",
-  inquiryType = ""
+  inquiryType = "",
+  inquiryIntent = ""
 }: AttributionInput): LeadAttribution {
   const params = new URLSearchParams(search);
 
@@ -100,7 +103,8 @@ export function createLeadAttribution({
     utm_term: params.get("utm_term") || "",
     report_id: reportId,
     product_category: productCategory,
-    inquiry_type: inquiryType
+    inquiry_type: inquiryType,
+    inquiry_intent: inquiryIntent
   };
 }
 

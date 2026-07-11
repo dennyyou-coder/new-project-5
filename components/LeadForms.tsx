@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import { getTallyForm, type TallyFormKey } from "@/lib/tallyForms";
 import {
   buildTallyUrl,
@@ -13,6 +13,14 @@ const popupWidth = 620;
 
 type TallySubmitPayload = {
   responseId?: string;
+};
+
+type TallyMessageData = {
+  event?: string;
+  payload?: {
+    formId?: string;
+    responseId?: string;
+  };
 };
 
 declare global {
@@ -70,6 +78,7 @@ export function TallyButton({
   reportId,
   productCategory,
   inquiryType,
+  inquiryIntent,
   trackClick = false,
   eventContext,
   onClickTrack,
@@ -82,6 +91,7 @@ export function TallyButton({
   reportId?: string;
   productCategory?: string;
   inquiryType?: string;
+  inquiryIntent?: string;
   trackClick?: boolean;
   eventContext?: {
     cta_type?: string;
@@ -107,7 +117,8 @@ export function TallyButton({
       search: window.location.search,
       reportId,
       productCategory,
-      inquiryType
+      inquiryType,
+      inquiryIntent
     });
 
     if (trackClick) {
@@ -195,6 +206,101 @@ export function TallyButton({
           "Thank you. Your information was received successfully."}
       </span>
     </span>
+  );
+}
+
+export function TallyInlineEmbed({
+  className = "",
+  ctaLocation,
+  form,
+  inquiryIntent,
+  productCategory,
+  title
+}: {
+  className?: string;
+  ctaLocation: string;
+  form: TallyFormKey;
+  inquiryIntent?: string;
+  productCategory?: string;
+  title: string;
+}) {
+  const tallyForm = getTallyForm(form);
+  const [embedUrl, setEmbedUrl] = useState(() => {
+    if (!tallyForm.id || !tallyForm.url) return "";
+    return buildTallyUrl(
+      `${tallyForm.url}?transparentBackground=1`,
+      createLeadAttribution({
+        formType: tallyForm.formType,
+        sourcePage: "/sourcing",
+        ctaLocation,
+        inquiryIntent,
+        productCategory
+      })
+    );
+  });
+  const attributionRef = useRef<LeadAttribution | null>(null);
+  const submittedRef = useRef(false);
+
+  useEffect(() => {
+    if (!tallyForm.id || !tallyForm.url) return;
+
+    const attribution = createLeadAttribution({
+      formType: tallyForm.formType,
+      sourcePage: window.location.pathname,
+      ctaLocation,
+      language: document.documentElement.lang || "en",
+      search: window.location.search,
+      inquiryIntent,
+      productCategory
+    });
+
+    attributionRef.current = attribution;
+    setEmbedUrl(
+      buildTallyUrl(`${tallyForm.url}?transparentBackground=1`, attribution)
+    );
+
+    function handleTallyMessage(event: MessageEvent<TallyMessageData>) {
+      if (event.origin !== "https://tally.so") return;
+      if (event.data?.event !== "Tally.FormSubmitted") return;
+      if (event.data.payload?.formId !== tallyForm.id) return;
+      if (!attributionRef.current || submittedRef.current) return;
+
+      submittedRef.current = true;
+      const payload = {
+        ...attributionRef.current,
+        response_id: event.data.payload.responseId
+      };
+      trackLeadEvent("form_submit", payload);
+      trackLeadEvent("form_success", payload);
+    }
+
+    window.addEventListener("message", handleTallyMessage);
+    return () => window.removeEventListener("message", handleTallyMessage);
+  }, [ctaLocation, inquiryIntent, productCategory, tallyForm.formType, tallyForm.id, tallyForm.url]);
+
+  if (!tallyForm.id || !tallyForm.url) {
+    return <p>The form is temporarily unavailable. Please use the Contact page.</p>;
+  }
+
+  if (!embedUrl) {
+    return <div aria-label="Loading inquiry form" className={className} />;
+  }
+
+  return (
+    <iframe
+      allow="clipboard-write"
+      className={className}
+      loading="lazy"
+      onLoad={() => {
+        if (!attributionRef.current) return;
+        trackLeadEvent("form_open", {
+          ...attributionRef.current,
+          open_method: "inline"
+        });
+      }}
+      src={embedUrl}
+      title={title}
+    />
   );
 }
 

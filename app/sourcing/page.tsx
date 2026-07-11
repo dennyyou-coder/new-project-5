@@ -1,257 +1,177 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InlineIcon } from "@/components/Icon";
-import { TallyButton } from "@/components/LeadForms";
+import { TallyButton, TallyInlineEmbed } from "@/components/LeadForms";
 import { SOURCING_CATEGORIES } from "@/lib/inquiryConversion";
 
 export const metadata: Metadata = {
-  title: "Cleaning Product Sourcing",
+  title: "Cleaning Product Opportunities & China Sourcing",
   description:
-    "Explore cleaning product categories, supplier direction and sourcing support with World Clean Biz.",
+    "Discover emerging cleaning product opportunities with Denny You, then develop, source and deliver market-ready OEM/ODM products from China.",
   alternates: { canonical: "/sourcing" },
   openGraph: {
-    title: "Cleaning Product Sourcing | World Clean Biz",
+    title: "Cleaning Product Opportunities & China Sourcing",
     description:
-      "Turn a product brief into clearer category direction, supplier options and practical next steps.",
+      "Find the next cleaning industry opportunity and turn it into a product you can source, brand and sell.",
     url: "/sourcing",
     images: ["/images/industry/sourcing-supplier-meeting-2026.jpg"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cleaning Product Sourcing | World Clean Biz",
+    title: "Cleaning Product Opportunities & China Sourcing",
     description:
-      "Turn a product brief into clearer category direction, supplier options and practical next steps.",
+      "Find the next cleaning industry opportunity and turn it into a product you can source, brand and sell.",
     images: ["/images/industry/sourcing-supplier-meeting-2026.jpg"]
   }
 };
 
-const sourcingNeeds = [
-  {
-    number: "01",
-    title: "Find The Right Product Direction",
-    text: "Compare category movement, product features and market signals before committing resources."
-  },
-  {
-    number: "02",
-    title: "Identify Relevant Supplier Options",
-    text: "Narrow a crowded supplier landscape around your market, product stage and commercial priorities."
-  },
-  {
-    number: "03",
-    title: "Reduce Early Sourcing Risk",
-    text: "Surface questions around differentiation, quality and execution before they become expensive."
-  }
+const marketDrivers = [
+  { title: "Automation Is Expanding", text: "More cleaning tasks are moving from manual tools and traditional machines to intelligent equipment." },
+  { title: "New Categories Are Forming", text: "Floor washers, pool robots, robotic mowers and commercial robots show how quickly a niche can become global." },
+  { title: "Distribution Is Moving Faster", text: "E-commerce and global supply chains allow new products and brands to reach buyers faster than before." }
 ];
 
-const deliveryPillars = [
-  {
-    image: "/images/industry/expo-hall-shenzhen-2026.jpg",
-    title: "Category Intelligence",
-    text: "Read product, supplier and trade-show signals to understand where a category is moving."
-  },
-  {
-    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
-    title: "Product & Supplier Direction",
-    text: "Connect your target market and product brief with more relevant options and questions."
-  },
-  {
-    image: "/images/industry/sourcing-product-components-2025.jpg",
-    title: "Execution Support",
-    text: "Clarify possible next steps for evaluation, development and supplier conversations."
-  }
+const industryShifts = [
+  { label: "Supply", then: "Finding a reliable supplier could be the advantage.", today: "Suppliers and products are abundant. The difficult part is knowing what to choose." },
+  { label: "Selection", then: "The sourcing question was: Who can make this?", today: "The question is: What should we sell next?" },
+  { label: "Speed", then: "A 12–15 month development cycle could still fit the market.", today: "Fast-moving categories can compress to roughly 6–8 months." },
+  { label: "Channels", then: "Long relationships could protect sales across product cycles.", today: "Channels now demand price, speed and stronger products—even from long-term partners." }
 ];
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Submit Your Brief",
-    text: "Share your company, target market, product category, stage and current sourcing objective."
-  },
-  {
-    number: "02",
-    title: "Initial Review",
-    text: "World Clean Biz reviews the request against its industry scope, context and available resources."
-  },
-  {
-    number: "03",
-    title: "Direction & Connections",
-    text: "Where there is a fit, we clarify useful category direction, supplier options or industry connections."
-  },
-  {
-    number: "04",
-    title: "Next-Step Cooperation",
-    text: "A relevant opportunity can move into a focused discussion, evaluation or defined support project."
-  }
+const riskCards = [
+  { title: "Outdated Before Launch", text: "A technical solution can be replaced while your product is still being developed." },
+  { title: "More Expensive Than Competitors", text: "Old components or the wrong factory architecture can leave you with a higher cost base." },
+  { title: "Slower To Market", text: "Immature or mismatched solutions create more redesign, tooling and compatibility work." }
+];
+
+const opportunitySignals = [
+  { number: "01", title: "Core Factory Pipeline Signals", text: "New projects moving through important Chinese cleaning equipment factories." },
+  { number: "02", title: "20 Years Of Product Experience", text: "Experience that separates a durable category shift from a short-lived novelty." },
+  { number: "03", title: "Components, Molds & Technology", text: "Changes that reveal when a product direction becomes technically and commercially viable." },
+  { number: "04", title: "Overseas Channel Feedback", text: "Buyer and distributor input that reveals unsolved needs in specific markets." }
+];
+
+const shortlistItems = [
+  "2–3 relevant category or product directions",
+  "Available product images",
+  "Basic specifications",
+  "Indicative pricing",
+  "An initial view of OEM/ODM feasibility"
+];
+
+const deliverySteps = [
+  "Product Selection", "Pricing", "Paid Samples", "OEM/ODM", "Production",
+  "Quality Control", "Compliance", "Export & Delivery", "After-Sales"
+];
+
+const faqs = [
+  { question: "What New Cleaning Products Are Growing Fast?", answer: "The answer changes as factory projects, components, technologies and overseas demand move. For a relevant B2B request, Denny reviews your market and the World Clean Biz team normally prepares 2–3 initial product or category directions within 1–2 business days." },
+  { question: "Is World Clean Biz A Factory Or A Trading Company?", answer: "World Clean Biz is an industry-focused product and sourcing partner, not a single factory. You can buy directly from us while we select and coordinate the right supply-chain resources for your project." },
+  { question: "Can You Support OEM/ODM Projects?", answer: "Yes. We can coordinate product features, appearance, packaging, branding, accessories, specifications and target-market requirements. Feasibility and MOQ depend on the product and level of customization." },
+  { question: "Can I Order Samples First?", answer: "Yes. Paid samples are available. Trial orders are welcome when they meet the applicable product or factory MOQ." },
+  { question: "How Do You Manage Product Quality?", answer: "We connect supplier evaluation, sample confirmation, production requirements, follow-up, inspection and issue resolution in one managed process." }
 ];
 
 export default function SourcingPage() {
   return (
-    <div className="sourcing-v4-page">
-      <section className="sourcing-v4-hero">
-        <div className="sourcing-v3-container sourcing-v4-hero-grid">
-          <div>
-            <p className="sourcing-v3-kicker">Cleaning Product Sourcing</p>
-            <h1>Move From A Broad Search To A Better Sourcing Decision.</h1>
-            <p className="sourcing-v4-lead">
-              World Clean Biz helps cleaning industry buyers and businesses
-              clarify product direction, identify relevant supplier options
-              and prepare better next steps.
-            </p>
-            <div className="sourcing-v4-actions">
-              <TallyButton
-                className="sourcing-v3-button"
-                ctaLocation="sourcing_hero"
-                form="sourcing"
-              >
-                Start A Sourcing Inquiry
+    <div className="sourcing-opportunity-page">
+      <section className="sourcing-opportunity-hero">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-hero-grid">
+          <div className="sourcing-opportunity-hero-copy">
+            <p className="sourcing-opportunity-eyebrow">Cleaning Product Opportunity Sourcing</p>
+            <h1>Don’t Just Source Another Product.<span>Find The Next Cleaning Industry Opportunity.</span></h1>
+            <p className="sourcing-opportunity-lead">Tell me what market you serve. I will help identify promising product directions, while the World Clean Biz team turns them into products you can source, brand and sell.</p>
+            <div className="sourcing-opportunity-actions">
+              <TallyButton className="sourcing-opportunity-button" ctaLocation="sourcing_hero_opportunity" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>
+                Get My Free Product Opportunity Shortlist
               </TallyButton>
-              <a href="#categories">Explore Product Categories</a>
+              <TallyButton className="sourcing-opportunity-button-secondary" ctaLocation="sourcing_hero_specific_product" form="sourcing" inquiryIntent="specific_product" trackClick>
+                I Already Have A Product Request
+              </TallyButton>
             </div>
-            <p className="sourcing-v4-boundary">
-              Built for focused B2B product, supplier, OEM/ODM and private
-              label inquiries in the cleaning industry.
-            </p>
+            <ul className="sourcing-opportunity-trust-signals">
+              <li>B2B Buyers Only</li><li>Serving Global Markets</li><li>Initial Response Within 8 Hours</li>
+            </ul>
           </div>
-          <figure className="sourcing-v4-hero-image">
-            <img
-              src="/images/industry/sourcing-supplier-meeting-2026.jpg"
-              alt="Cleaning industry buyers discussing sourcing with suppliers"
-            />
-            <figcaption>Industry context before supplier conversations.</figcaption>
+          <figure className="sourcing-opportunity-hero-proof">
+            <img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You discussing cleaning product opportunities with suppliers" />
+            <figcaption><strong>Denny You</strong><span>Founder, World Clean Biz</span><small>20 years inside the cleaning industry</small></figcaption>
           </figure>
         </div>
       </section>
 
-      <section className="sourcing-v4-section sourcing-v4-needs">
-        <div className="sourcing-v3-container">
-          <div className="sourcing-v4-heading">
-            <p className="sourcing-v3-kicker">Where We Add Value</p>
-            <h2>A Better Brief Creates A Better Search.</h2>
-          </div>
-          <div className="sourcing-v4-need-grid">
-            {sourcingNeeds.map((item) => (
-              <article key={item.number}>
-                <span>{item.number}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </article>
-            ))}
-          </div>
+      <section className="sourcing-opportunity-intents">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-intent-grid">
+          <article className="sourcing-opportunity-intent-primary"><span>01</span><h2>Show Me New Product Opportunities</h2><p>For brands and distributors looking for the next category, product direction or growth opportunity.</p><TallyButton className="sourcing-opportunity-text-button" ctaLocation="sourcing_intent_opportunity" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Discover Product Opportunities →</TallyButton></article>
+          <article><span>02</span><h2>I Know What I Need</h2><p>For buyers who already have a product, reference model or OEM/ODM request and need execution from China.</p><TallyButton className="sourcing-opportunity-text-button" ctaLocation="sourcing_intent_specific_product" form="sourcing" inquiryIntent="specific_product" trackClick>Request Products & Pricing →</TallyButton></article>
         </div>
       </section>
 
-      <section className="sourcing-v4-section sourcing-v4-categories" id="categories">
-        <div className="sourcing-v3-container">
-          <div className="sourcing-v4-heading">
-            <p className="sourcing-v3-kicker">Product Categories</p>
-            <h2>Start With The Category You Are Working On.</h2>
-            <p>
-              Choose a category to open a focused sourcing inquiry. The form
-              will carry the selected category into your request.
-            </p>
-          </div>
-          <div className="sourcing-v3-product-grid">
-            {SOURCING_CATEGORIES.map((item) => (
-              <TallyButton
-                className="sourcing-v3-product-card"
-                ctaLocation={item.ctaLocation}
-                form="sourcing"
-                key={item.value}
-                productCategory={item.value}
-                trackClick
-              >
-                <span className="sourcing-v3-product-image">
-                  <img src={item.image} alt={`${item.title} product category`} />
-                </span>
-                <span className="sourcing-v3-product-copy">
-                  <span>
-                    <InlineIcon name={item.icon} />
-                    <strong>{item.title}</strong>
-                  </span>
-                  <em>{item.description}</em>
-                  <span>Discuss {item.title} →</span>
-                </span>
-              </TallyButton>
-            ))}
-          </div>
+      <section className="sourcing-opportunity-section sourcing-opportunity-market">
+        <div className="sourcing-opportunity-shell">
+          <div className="sourcing-opportunity-heading"><p>Why This Market Matters Now</p><h2>The Cleaning Industry Is Entering A New Growth Cycle.</h2></div>
+          <div className="sourcing-opportunity-market-number"><div><small>Today</small><strong>&lt; RMB 300B</strong></div><span aria-hidden="true">→</span><div><small>Over The Next Decade</small><strong>Toward RMB 1T</strong></div></div>
+          <p className="sourcing-opportunity-estimate"><strong>World Clean Biz Industry Estimate.</strong> Scope includes major global indoor and outdoor cleaning equipment categories.</p>
+          <div className="sourcing-opportunity-driver-grid">{marketDrivers.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
         </div>
       </section>
 
-      <section className="sourcing-v4-section sourcing-v4-capabilities">
-        <div className="sourcing-v3-container">
-          <div className="sourcing-v4-heading">
-            <p className="sourcing-v3-kicker">How We Can Help</p>
-            <h2>From Market Context To Practical Next Steps.</h2>
-          </div>
-          <div className="sourcing-v4-capability-grid">
-            {deliveryPillars.map((item) => (
-              <article key={item.title}>
-                <img src={item.image} alt="" />
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
+      <section className="sourcing-opportunity-section sourcing-opportunity-shift">
+        <div className="sourcing-opportunity-shell">
+          <div className="sourcing-opportunity-heading"><p>The Competitive Reality</p><h2>The Market Is Growing. The Old Advantages Are Disappearing.</h2></div>
+          <div className="sourcing-opportunity-shift-grid">{industryShifts.map((item) => <article key={item.label}><h3>{item.label}</h3><div><small>Then</small><p>{item.then}</p></div><div><small>Today</small><p>{item.today}</p></div></article>)}</div>
+          <div className="sourcing-opportunity-shift-close"><strong>Access Is No Longer The Advantage. Judgment Is.</strong><span>Relationships still matter. But relationships cannot compensate for an uncompetitive product.</span></div>
         </div>
       </section>
 
-      <section className="sourcing-v4-section sourcing-v4-process">
-        <div className="sourcing-v3-container">
-          <div className="sourcing-v4-heading">
-            <p className="sourcing-v3-kicker">How It Works</p>
-            <h2>A Clear Path From Inquiry To Next Step.</h2>
-          </div>
-          <ol>
-            {processSteps.map((item) => (
-              <li key={item.number}>
-                <span>{item.number}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </li>
-            ))}
-          </ol>
+      <section className="sourcing-opportunity-section sourcing-opportunity-risk">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-risk-layout">
+          <div className="sourcing-opportunity-heading"><p>The Old Sourcing Model Is Too Slow</p><h2>Your Product Can Fall Behind Before It Reaches The Market.</h2><p>Technology, components, molds and factory capabilities keep changing. Choosing the wrong technical path can make a product cost more and take longer.</p></div>
+          <div className="sourcing-opportunity-risk-flow" aria-label="Supply chain change from technology to time to market">Technology <span>→</span> Components <span>→</span> Molds <span>→</span> Factories <span>→</span> Cost <span>→</span> Time To Market</div>
+          <div className="sourcing-opportunity-risk-grid">{riskCards.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
+          <p className="sourcing-opportunity-risk-close">Faster Sourcing Is Not Enough. You Need Earlier Judgment.</p>
         </div>
       </section>
 
-      <section className="sourcing-v4-section sourcing-v4-trust">
-        <div className="sourcing-v3-container sourcing-v4-trust-grid">
-          <img
-            src="/images/industry/about-denny-speaking-forum-2025.jpg"
-            alt="Denny You speaking at a cleaning industry forum"
-          />
-          <div>
-            <p className="sourcing-v3-kicker">Industry-Led Review</p>
-            <h2>Context Built Inside The Cleaning Industry Since 2006.</h2>
-            <p>
-              Denny You, founder of World Clean Biz, works across cleaning
-              products, suppliers, trade shows, industry content and business
-              connections. Each relevant inquiry is reviewed in that industry
-              context—not treated as a generic supplier-directory search.
-            </p>
-            <Link href="/about">About Denny & World Clean Biz →</Link>
-          </div>
+      <section className="sourcing-opportunity-section sourcing-opportunity-denny-method">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-method-grid">
+          <div><div className="sourcing-opportunity-heading"><p>Industry Signals Before Supplier Search</p><h2>How Denny Sees Opportunities Earlier</h2><p>The newest technology is not automatically the right choice. The advantage comes from knowing which solution is current, commercially mature and appropriate for your market.</p></div><div className="sourcing-opportunity-signal-grid">{opportunitySignals.map((item) => <article key={item.number}><span>{item.number}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div></div>
+          <figure><img src="/images/industry/about-denny-speaking-forum-2025.jpg" alt="Denny You sharing cleaning industry product insights" /><figcaption>Early Signals → Market Judgment → Product Direction → Supply Chain Execution</figcaption></figure>
         </div>
       </section>
 
-      <section className="sourcing-v4-final">
-        <div className="sourcing-v3-container">
-          <p className="sourcing-v3-kicker">Start With Context</p>
-          <h2>Tell Us What You Are Trying To Source.</h2>
-          <p>
-            Include your company, target market, product category, current
-            project stage and the supplier or decision you need help with.
-          </p>
-          <TallyButton
-            className="sourcing-v3-button"
-            ctaLocation="sourcing_footer"
-            form="sourcing"
-          >
-            Start A Sourcing Inquiry
-          </TallyButton>
+      <section className="sourcing-opportunity-section sourcing-opportunity-shortlist">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-shortlist-grid">
+          <div><p className="sourcing-opportunity-eyebrow">Free For Relevant B2B Requests</p><h2>Free Product Opportunity Shortlist</h2><p>Share your company, market and product interests. Denny reviews the opportunity and our team prepares a practical starting point.</p><TallyButton className="sourcing-opportunity-button" ctaLocation="sourcing_shortlist" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Get My Free Product Opportunity Shortlist</TallyButton></div>
+          <div><ul>{shortlistItems.map((item) => <li key={item}>{item}</li>)}</ul><div className="sourcing-opportunity-timing"><p><strong>Within 8 Hours</strong><span>Initial human contact</span></p><p><strong>Normally Within 1–2 Business Days</strong><span>Initial product or category directions</span></p></div></div>
         </div>
       </section>
+
+      <section className="sourcing-opportunity-section sourcing-opportunity-categories" id="opportunity-areas">
+        <div className="sourcing-opportunity-shell">
+          <div className="sourcing-opportunity-heading"><p>Product Opportunity Areas</p><h2>Where The Next Opportunity Could Begin.</h2></div>
+          <div className="sourcing-opportunity-category-grid">{SOURCING_CATEGORIES.map((item) => <TallyButton className="sourcing-opportunity-category-card" ctaLocation={item.ctaLocation} form="sourcing" inquiryIntent="opportunity_discovery" key={item.value} productCategory={item.value} trackClick><span className="sourcing-opportunity-category-image"><img src={item.image} alt={`${item.title} opportunity area`} /></span><span className="sourcing-opportunity-category-copy"><span><InlineIcon name={item.icon} /><strong>{item.title}</strong></span><em>{item.description}</em><span>Explore This Opportunity →</span></span></TallyButton>)}</div>
+          <p className="sourcing-opportunity-secondary-scope">We can also support relevant projects involving cleaning tools, consumables, chemicals, hygiene products, components and replacement parts.</p>
+        </div>
+      </section>
+
+      <section className="sourcing-opportunity-section sourcing-opportunity-process">
+        <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>From Insight To Execution</p><h2>One Partner From Opportunity Discovery To Delivery.</h2></div><ol>{deliverySteps.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></li>)}</ol><p className="sourcing-opportunity-compliance">Products are managed toward the compliance requirements agreed in writing for the specified target market, with testing and compliance partners involved where needed.</p></div>
+      </section>
+
+      <section className="sourcing-opportunity-section sourcing-opportunity-models">
+        <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Two Ways To Work With Us</p><h2>One Goal: A More Competitive Product.</h2></div><div className="sourcing-opportunity-model-grid"><article className="sourcing-opportunity-model-primary"><small>Primary</small><h3>Buy Directly From World Clean Biz</h3><p>We recommend products, provide one quotation and manage sourcing, OEM/ODM, production, quality, export and delivery.</p></article><article><small>Also Available</small><h3>Your China Sourcing Office</h3><p>We can find new suppliers or manage suppliers you already work with through a defined sourcing partnership.</p></article></div><p className="sourcing-opportunity-model-note">You do not need to choose a model now. We recommend the right approach after understanding your project.</p></div>
+      </section>
+
+      <section className="sourcing-opportunity-section sourcing-opportunity-team">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>20 years inside the cleaning industry</li><li>Industry insight for securities firms and investment banks</li><li>Current supply work for cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
+      </section>
+
+      <section className="sourcing-opportunity-section sourcing-opportunity-form-section" id="shortlist-form">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-form-grid"><div><p className="sourcing-opportunity-eyebrow">Tell Denny About Your Market</p><h2>Get Your Free Product Opportunity Shortlist.</h2><p>For relevant B2B requests, we respond within 8 hours and normally prepare 2–3 initial product or category directions within 1–2 Business Days.</p><ul><li>Business buyers only</li><li>Paid samples available</li><li>Trial orders subject to applicable MOQ</li></ul></div><TallyInlineEmbed className="sourcing-opportunity-inline-form" ctaLocation="sourcing_inline_form" form="sourcing" inquiryIntent="opportunity_discovery" title="Free Product Opportunity Shortlist inquiry form" /></div>
+      </section>
+
+      <section className="sourcing-opportunity-section sourcing-opportunity-faq"><div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Before You Start</p><h2>Frequently Asked Questions</h2></div><div className="sourcing-opportunity-faq-list">{faqs.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></div></section>
     </div>
   );
 }
