@@ -18,7 +18,7 @@ const pathways = [
     eyebrow: "Market Intelligence",
     title: "See The Shift Before It Becomes Obvious",
     text: "Follow category movement, companies, channels and product signals across the global cleaning industry.",
-    image: "/images/site-refresh/home/path-market-intelligence.webp",
+    image: "/images/site-refresh/system/market-intelligence.webp",
     imageAlt: "Robotic vacuum representing cleaning appliance market intelligence",
     links: [
       { href: "/blog", label: "Read Industry Insights" },
@@ -30,7 +30,7 @@ const pathways = [
     eyebrow: "Product & Sourcing",
     title: "Turn Market Signals Into Product Decisions",
     text: "Connect category judgement with suppliers, OEM/ODM options, product direction and execution support.",
-    image: "/images/site-refresh/home/path-product-sourcing.webp",
+    image: "/images/site-refresh/system/product-engineering.webp",
     imageAlt: "Cleaning industry supplier and sourcing meeting",
     links: [{ href: "/sourcing", label: "Start A Sourcing Inquiry" }]
   },
@@ -39,16 +39,16 @@ const pathways = [
     eyebrow: "World Clean Expo",
     title: "Move From Online Signals To Real Connections",
     text: "Meet manufacturers, brands, suppliers and buyers through the next global cleaning industry platform.",
-    image: "/images/site-refresh/home/path-world-clean-expo.webp",
+    image: "/images/site-refresh/system/expo-concept.webp",
     imageAlt: "Cleaning equipment exhibition and industry connections",
     links: [{ href: "/world-clean-expo", label: "Explore World Clean Expo" }]
   }
 ];
 
 const fallbackInsightImages = [
-  "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
-  "/images/industry/sourcing-hero-expo-products-2026.jpg",
-  "/images/industry/home-industry-products-2025.jpg"
+  "/images/site-refresh/system/market-intelligence.webp",
+  "/images/site-refresh/system/product-engineering.webp",
+  "/images/site-refresh/system/expo-concept.webp"
 ];
 
 const featuredInsightSlugs = [
@@ -206,11 +206,11 @@ export default function HomePage() {
               <figcaption>Denny You · Founder, World Clean Biz · Organizer, World Clean Expo</figcaption>
             </figure>
             <figure>
-              <img src="/images/site-refresh/home/trust-supplier-network.webp" alt="Supplier meeting at a cleaning industry exhibition" />
+              <img src="/images/site-refresh/system/business-roundtable.webp" alt="Cleaning industry business leaders reviewing a product" />
               <figcaption>Supplier Network</figcaption>
             </figure>
             <figure>
-              <img src="/images/site-refresh/home/trust-expo-access.webp" alt="World Clean Expo exhibition floor" />
+              <img src="/images/site-refresh/system/expo-concept.webp" alt="Concept for a premium cleaning technology exhibition" />
               <figcaption>Industry Access</figcaption>
             </figure>
           </div>

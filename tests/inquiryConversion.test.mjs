@@ -59,7 +59,7 @@ test("both pages include canonical and social metadata", () => {
 test("Contact explains the inquiry path with visual trust evidence", () => {
   assert.match(definitionSource, /title: "Sourcing"/);
   assert.match(contactSource, /What To Include In Your Inquiry/);
-  assert.match(contactSource, /sourcing-supplier-meeting-2026\.jpg/);
+  assert.match(contactSource, /site-refresh\/system\/business-advisory\.webp/);
   assert.match(contactSource, /Inside the cleaning industry since 2006/);
   assert.doesNotMatch(contactSource, /Follow-Up Depends On Fit/);
   assert.doesNotMatch(contactSource, /Send The Right Context First/);
@@ -183,12 +183,12 @@ test("Sourcing uses alternating sales bands and visual storytelling", () => {
   assert.match(globalStyles, /\.sourcing-opportunity-team\s*\{[^}]*background:\s*#eaf2ff/s);
 });
 
-test("Sourcing grounds key sales sections with real visual evidence", () => {
+test("Sourcing grounds key sales sections with unified visual evidence", () => {
   assert.match(sourcingSource, /sourcing-opportunity-market-visual/);
   assert.match(sourcingSource, /sourcing-opportunity-shortlist-preview/);
   assert.match(sourcingSource, /sourcing-opportunity-stage-image/);
   assert.match(sourcingSource, /sourcing-opportunity-model-image/);
-  assert.match(sourcingSource, /home-industry-products-2025\.jpg/);
-  assert.match(sourcingSource, /sourcing-product-components-2025\.jpg/);
-  assert.match(sourcingSource, /expo-business-matching-2026\.jpg/);
+  assert.match(sourcingSource, /site-refresh\/system\/product-selection\.webp/);
+  assert.match(sourcingSource, /site-refresh\/system\/product-engineering\.webp/);
+  assert.match(sourcingSource, /site-refresh\/system\/business-roundtable\.webp/);
 });

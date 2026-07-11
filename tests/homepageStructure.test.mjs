@@ -59,9 +59,9 @@ test("homepage restores a compact standalone six-category section", () => {
 });
 
 test("homepage pathways use industry imagery instead of text-only cards", () => {
-  assert.match(homeSource, /image: "\/images\/site-refresh\/home\/path-market-intelligence\.webp"/);
-  assert.match(homeSource, /image: "\/images\/site-refresh\/home\/path-product-sourcing\.webp"/);
-  assert.match(homeSource, /image: "\/images\/site-refresh\/home\/path-world-clean-expo\.webp"/);
+  assert.match(homeSource, /image: "\/images\/site-refresh\/system\/market-intelligence\.webp"/);
+  assert.match(homeSource, /image: "\/images\/site-refresh\/system\/product-engineering\.webp"/);
+  assert.match(homeSource, /image: "\/images\/site-refresh\/system\/expo-concept\.webp"/);
   assert.match(homeSource, /className="home-v9-pathway-media"/);
 });
 

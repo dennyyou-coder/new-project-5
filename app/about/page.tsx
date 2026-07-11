@@ -85,7 +85,7 @@ const businessPillars = [
     eyebrow: "READ THE MARKET",
     title: "Industry Intelligence",
     text: "Articles and reports that help companies understand category movement, product opportunities and China supply-chain signals.",
-    image: "/images/site-refresh/about/about-industry-analysis.webp",
+    image: "/images/site-refresh/system/market-intelligence.webp",
     href: "/reports",
     cta: "Explore Market Reports"
   },
@@ -93,7 +93,7 @@ const businessPillars = [
     eyebrow: "TURN SIGNALS INTO PRODUCTS",
     title: "Product & Sourcing Opportunities",
     text: "Product judgment, supplier access and project execution for overseas brands, importers and distributors.",
-    image: "/images/site-refresh/about/about-product-supplier-work.webp",
+    image: "/images/site-refresh/system/product-engineering.webp",
     href: "/sourcing",
     cta: "Explore Sourcing"
   },
@@ -101,7 +101,7 @@ const businessPillars = [
     eyebrow: "CONNECT THE INDUSTRY",
     title: "World Clean Expo & Business Connections",
     text: "A platform for products, companies, buyers, forums and commercial conversations across the cleaning industry.",
-    image: "/images/site-refresh/about/about-expo-connections.webp",
+    image: "/images/site-refresh/system/expo-concept.webp",
     href: "/world-clean-expo",
     cta: "Explore World Clean Expo"
   }
@@ -230,7 +230,7 @@ export default function AboutPage() {
               investors, experts and media.
             </p>
             <div className="about-network-reach-image">
-              <img src="/images/site-refresh/about/about-network-forum.webp" alt="Cleaning industry professionals at a forum" />
+              <img src="/images/site-refresh/system/business-roundtable.webp" alt="International cleaning industry business discussion" />
             </div>
           </div>
           <div className="about-network-group-grid">
@@ -293,7 +293,7 @@ export default function AboutPage() {
       <section className="section about-network-story">
         <div className="container about-network-story-layout">
           <div className="about-network-story-photo">
-            <img src="/images/site-refresh/about/about-team-execution.webp" alt="Denny You reviewing products with suppliers" />
+            <img src="/images/site-refresh/system/product-engineering.webp" alt="Cleaning product engineering and execution" />
             <div>Products · Suppliers · Markets · Connections</div>
           </div>
           <div>

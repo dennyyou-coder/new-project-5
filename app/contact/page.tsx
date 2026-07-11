@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     title: "Contact World Clean Biz",
     description: "Choose the right channel for sourcing, Expo, media, or general cleaning industry inquiries.",
     url: "/contact",
-    images: ["/images/industry/sourcing-supplier-meeting-2026.jpg"]
+    images: ["/images/site-refresh/system/business-advisory.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact World Clean Biz",
     description: "Choose the right channel for sourcing, Expo, media, or general cleaning industry inquiries.",
-    images: ["/images/industry/sourcing-supplier-meeting-2026.jpg"]
+    images: ["/images/site-refresh/system/business-advisory.webp"]
   }
 };
 
@@ -91,7 +91,7 @@ export default function ContactPage() {
           <div className="contact-response-visual">
             <img
               alt="Denny You discussing cleaning industry sourcing with suppliers"
-              src="/images/industry/sourcing-supplier-meeting-2026.jpg"
+              src="/images/site-refresh/system/business-advisory.webp"
             />
             <div className="contact-response-identity">
               <strong>Denny You</strong>

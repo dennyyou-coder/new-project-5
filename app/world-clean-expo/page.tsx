@@ -13,33 +13,33 @@ export const metadata: Metadata = {
     description:
       "Discover products, meet cleaning industry partners and register your exhibitor or visitor interest.",
     url: "/world-clean-expo",
-    images: ["/images/expo/expo-hero-busy-exhibition.png"]
+    images: ["/images/site-refresh/system/expo-concept.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "World Clean Expo 2026 | Exhibit, Visit & Connect",
     description:
       "Discover products, meet cleaning industry partners and register your exhibitor or visitor interest.",
-    images: ["/images/expo/expo-hero-busy-exhibition.png"]
+    images: ["/images/site-refresh/system/expo-concept.webp"]
   }
 };
 
 const reasons: { icon: IconName; image: string; title: string; text: string }[] = [
   {
     icon: "sparkles",
-    image: "/images/industry/world-clean-expo-global-tech-2026.png",
+    image: "/images/site-refresh/system/expo-concept.webp",
     title: "See New Categories Taking Shape",
     text: "Explore robotics, smart floor care, pool cleaning, outdoor equipment and commercial automation in one industry setting."
   },
   {
     icon: "search",
-    image: "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
+    image: "/images/site-refresh/system/product-selection.webp",
     title: "Find Products And Partners Faster",
     text: "Bring product discovery, supplier conversations and market feedback into a focused cleaning industry platform."
   },
   {
     icon: "handshake",
-    image: "/images/industry/expo-business-matching-2026.jpg",
+    image: "/images/site-refresh/system/business-roundtable.webp",
     title: "Turn Meetings Into Opportunities",
     text: "Connect manufacturers, brands, buyers and distributors around real product and market opportunities."
   }

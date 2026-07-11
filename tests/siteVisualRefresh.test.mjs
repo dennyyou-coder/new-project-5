@@ -24,7 +24,15 @@ const expectedAssets = [
   "public/images/site-refresh/about/about-product-supplier-work.webp",
   "public/images/site-refresh/about/about-expo-connections.webp",
   "public/images/site-refresh/about/about-network-forum.webp",
-  "public/images/site-refresh/about/about-team-execution.webp"
+  "public/images/site-refresh/about/about-team-execution.webp",
+  "public/images/site-refresh/system/market-intelligence.webp",
+  "public/images/site-refresh/system/product-engineering.webp",
+  "public/images/site-refresh/system/expo-concept.webp",
+  "public/images/site-refresh/system/business-roundtable.webp",
+  "public/images/site-refresh/system/product-selection.webp",
+  "public/images/site-refresh/system/smart-factory.webp",
+  "public/images/site-refresh/system/report-analysis.webp",
+  "public/images/site-refresh/system/business-advisory.webp"
 ];
 
 test("phase one production images all exist", () => {
@@ -36,7 +44,7 @@ test("phase one production images all exist", () => {
 test("homepage uses the local visual system and preserves article covers", () => {
   const source = read("app/page.tsx");
   assert.match(source, /\/images\/site-refresh\/home\/category-robot-vacuums\.webp/);
-  assert.match(source, /\/images\/site-refresh\/home\/path-market-intelligence\.webp/);
+  assert.match(source, /\/images\/site-refresh\/system\/market-intelligence\.webp/);
   assert.match(source, /\/images\/site-refresh\/home\/trust-denny-industry\.webp/);
   assert.match(source, /imageFor\(article, index\)/);
   assert.doesNotMatch(source, /https?:\/\//);
@@ -45,6 +53,6 @@ test("homepage uses the local visual system and preserves article covers", () =>
 test("About uses the local visual system", () => {
   const source = read("app/about/page.tsx");
   assert.match(source, /\/images\/site-refresh\/about\/about-hero-denny\.webp/);
-  assert.match(source, /\/images\/site-refresh\/about\/about-team-execution\.webp/);
+  assert.match(source, /\/images\/site-refresh\/system\/product-engineering\.webp/);
   assert.doesNotMatch(source, /https?:\/\//);
 });
