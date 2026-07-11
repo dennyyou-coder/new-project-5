@@ -38,6 +38,8 @@ export type LeadAttribution = {
   utm_content: string;
   utm_term: string;
   report_id: string;
+  product_category: string;
+  inquiry_type: string;
 };
 
 type AttributionInput = {
@@ -47,6 +49,8 @@ type AttributionInput = {
   language?: string;
   search?: string;
   reportId?: string;
+  productCategory?: string;
+  inquiryType?: string;
 };
 
 type LeadEventParameters = Partial<LeadAttribution> & {
@@ -78,7 +82,9 @@ export function createLeadAttribution({
   ctaLocation,
   language = "en",
   search = "",
-  reportId = ""
+  reportId = "",
+  productCategory = "",
+  inquiryType = ""
 }: AttributionInput): LeadAttribution {
   const params = new URLSearchParams(search);
 
@@ -92,7 +98,9 @@ export function createLeadAttribution({
     utm_campaign: params.get("utm_campaign") || "",
     utm_content: params.get("utm_content") || "",
     utm_term: params.get("utm_term") || "",
-    report_id: reportId
+    report_id: reportId,
+    product_category: productCategory,
+    inquiry_type: inquiryType
   };
 }
 

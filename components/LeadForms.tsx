@@ -68,6 +68,9 @@ export function TallyButton({
   form,
   ctaLocation,
   reportId,
+  productCategory,
+  inquiryType,
+  trackClick = false,
   eventContext,
   onClickTrack,
   onOpen
@@ -77,6 +80,9 @@ export function TallyButton({
   form: TallyFormKey;
   ctaLocation: string;
   reportId?: string;
+  productCategory?: string;
+  inquiryType?: string;
+  trackClick?: boolean;
   eventContext?: {
     cta_type?: string;
     article_slug?: string;
@@ -99,8 +105,17 @@ export function TallyButton({
       ctaLocation,
       language: document.documentElement.lang || "en",
       search: window.location.search,
-      reportId
+      reportId,
+      productCategory,
+      inquiryType
     });
+
+    if (trackClick) {
+      trackLeadEvent("cta_click", {
+        ...attribution,
+        ...eventContext
+      });
+    }
 
     onOpen?.();
 
