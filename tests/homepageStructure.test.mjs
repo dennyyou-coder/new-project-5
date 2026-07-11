@@ -74,6 +74,7 @@ test("homepage trust section includes three formal testimonials", () => {
   assert.match(homeSource, /Sourcing Director · North American Distributor/);
   assert.equal((homeSource.match(/<blockquote>/g) || []).length, 3);
   assert.match(cssSource, /testimonial-avatar-sprite\.jpg/);
+  assert.match(cssSource, /\.home-v9-testimonial-avatar[^}]*background-size:\s*200%\s+auto;/s);
   assert.match(homeSource, /home-v9-avatar-founder/);
   assert.match(homeSource, /home-v9-avatar-sourcing/);
   assert.match(homeSource, /home-v9-avatar-product/);
