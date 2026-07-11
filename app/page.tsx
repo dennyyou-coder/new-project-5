@@ -219,8 +219,8 @@ export default function HomePage() {
             <div>
               <p className="home-v9-eyebrow">Client Perspective</p>
               <h3>What Industry Professionals Value</h3>
+              <small>Illustrative placeholders — replace with approved client feedback before production.</small>
             </div>
-            <small>Draft layout copy — replace with approved client feedback before production.</small>
           </div>
           <div className="home-v9-testimonial-grid">
             <article>
@@ -240,6 +240,15 @@ export default function HomePage() {
                 supplier knowledge. Conversations are direct and commercially useful.
               </blockquote>
               <p>Sourcing Director · North American Distributor</p>
+            </article>
+            <article>
+              <div className="home-v9-testimonial-avatar home-v9-avatar-product" role="img" aria-label="Fictional placeholder portrait for Asian cleaning appliance product director" />
+              <span aria-hidden="true">“</span>
+              <blockquote>
+                WCB added useful market context to our product discussions and
+                helped us focus on the questions that mattered before moving forward.
+              </blockquote>
+              <p>Product Director · Asian Cleaning Appliance Manufacturer</p>
             </article>
           </div>
         </div>

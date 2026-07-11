@@ -67,13 +67,15 @@ test("homepage pathways use industry imagery instead of text-only cards", () => 
 
 test("homepage trust section includes clearly labelled draft testimonials", () => {
   assert.match(homeSource, /What Industry Professionals Value/);
-  assert.match(homeSource, /Draft layout copy — replace with approved client feedback before production/);
+  assert.match(homeSource, /Illustrative placeholders — replace with approved client feedback before production/);
   assert.match(homeSource, /Founder · European Floorcare Brand/);
   assert.match(homeSource, /Sourcing Director · North American Distributor/);
-  assert.equal((homeSource.match(/<blockquote>/g) || []).length, 2);
+  assert.equal((homeSource.match(/<blockquote>/g) || []).length, 3);
   assert.match(cssSource, /testimonial-avatar-sprite\.jpg/);
   assert.match(homeSource, /home-v9-avatar-founder/);
   assert.match(homeSource, /home-v9-avatar-sourcing/);
+  assert.match(homeSource, /home-v9-avatar-product/);
+  assert.match(cssSource, /testimonial-avatar-product-director\.png/);
 });
 
 test("homepage replaces the oversized business section with a compact conversion bar", () => {
