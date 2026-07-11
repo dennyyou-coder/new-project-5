@@ -126,6 +126,37 @@ The page may use World Clean Biz's industry estimate:
 
 The page should state that market growth alone does not guarantee profit. The advantage lies in selecting a category before products become commoditized and margins decline.
 
+### Development speed and supply-chain change
+
+World Clean Biz observes that, in many fast-moving cleaning equipment categories, product development cycles have compressed from roughly 12–15 months to 6–8 months.
+
+This observation must be framed as applying to fast-moving categories rather than every cleaning product. It should not be presented as a universal third-party statistic without new supporting evidence.
+
+The page must explain why the old sourcing model is no longer sufficient:
+
+- Technical solutions are replaced more quickly.
+- Components, molds and commercially mature architectures keep changing.
+- Factory capability and supply-chain economics shift as new solutions become mainstream.
+- A quotation-only sourcing process may select an outdated, expensive or slow technical path.
+
+The commercial consequences should be stated directly:
+
+- `Outdated Before Launch`
+- `More Expensive Than Competitors`
+- `Slower To Market`
+
+Recommended message:
+
+> Choose the wrong technical path and your product may cost more, take longer to develop and arrive behind the market.
+
+The page must distinguish between novelty and commercial suitability:
+
+> The newest technology is not automatically the right choice. The advantage comes from knowing which solution is current, commercially mature and appropriate for the buyer's market.
+
+Denny's role is to connect changes in technology, components, factories and overseas demand with cost, development speed and market competitiveness. The core conclusion is:
+
+> Faster sourcing is not enough. You need earlier judgment.
+
 ## 7. Core Lead Offer
 
 ### Offer name
@@ -292,40 +323,47 @@ The page may explain both models, but the first lead form must not require the v
 - Traditional product cycles moving too slowly.
 - Buyer implication: decide what to sell next and act faster.
 
-### Section 5: How Denny Sees Opportunities Earlier
+### Section 5: The Old Sourcing Model Is Too Slow
+
+- World Clean Biz observation: development cycles in many fast-moving categories have compressed from roughly 12–15 months to 6–8 months.
+- Supply-chain movement: `Technology -> Components -> Molds -> Factories -> Cost -> Time To Market`.
+- Three risks: outdated before launch, more expensive than competitors and slower to market.
+- Core message: faster sourcing is not enough; earlier judgment is required.
+
+### Section 6: How Denny Sees Opportunities Earlier
 
 - Four signal sources.
 - Signal-to-execution diagram.
 - Real Denny image; no fake operational evidence.
 
-### Section 6: Free Product Opportunity Shortlist
+### Section 7: Free Product Opportunity Shortlist
 
 - Deliverables.
 - 8-hour and one-to-two-business-day timelines.
 - Primary lead CTA.
 
-### Section 7: Product Opportunity Areas
+### Section 8: Product Opportunity Areas
 
 - Six primary opportunity categories.
 - Compact secondary scope statement.
 - Future-ready card structure.
 
-### Section 8: From Opportunity To Delivery
+### Section 9: From Opportunity To Delivery
 
 `Product Selection -> Pricing -> Paid Samples -> OEM/ODM -> Production -> Quality Control -> Compliance -> Export & Delivery -> After-Sales`
 
-### Section 9: Two Ways To Work With Us
+### Section 10: Two Ways To Work With Us
 
 - Larger Direct Purchase card.
 - Smaller China Sourcing Office card.
 - No required selection.
 
-### Section 10: Denny Reviews, The Team Executes
+### Section 11: Denny Reviews, The Team Executes
 
 - Personal authority and operational scalability.
 - Real images and truthful evidence only.
 
-### Section 11: Bottom Form And FAQ
+### Section 12: Bottom Form And FAQ
 
 - Visible short form.
 - Clear post-submit timeline.
