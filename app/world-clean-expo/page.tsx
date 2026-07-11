@@ -1,142 +1,193 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
-import { ExpoLeadForm, TallyButton } from "@/components/LeadForms";
+import { TallyButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
-  title: "World Clean Expo 2026 | Global Cleaning Industry Updates",
+  title: "World Clean Expo 2026 | Exhibit, Visit & Connect",
   description:
-    "Get World Clean Expo 2026 updates on visitor registration, exhibitor news, forum agenda, product categories and business matching opportunities."
+    "Discover cleaning products, suppliers and business opportunities at World Clean Expo 2026 in Suzhou, China. Register your exhibitor or visitor interest.",
+  alternates: { canonical: "/world-clean-expo" },
+  openGraph: {
+    title: "World Clean Expo 2026 | Exhibit, Visit & Connect",
+    description:
+      "Discover products, meet cleaning industry partners and register your exhibitor or visitor interest.",
+    url: "/world-clean-expo",
+    images: ["/images/expo/expo-hero-busy-exhibition.png"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "World Clean Expo 2026 | Exhibit, Visit & Connect",
+    description:
+      "Discover products, meet cleaning industry partners and register your exhibitor or visitor interest.",
+    images: ["/images/expo/expo-hero-busy-exhibition.png"]
+  }
 };
 
-const whyExpo: { icon: IconName; image: string; title: string; text: string }[] = [
+const reasons: { icon: IconName; image: string; title: string; text: string }[] = [
   {
     icon: "sparkles",
     image: "/images/industry/world-clean-expo-global-tech-2026.png",
-    title: "New Cleaning Categories Are Emerging",
-    text: "Robotics, smart floor care, pool cleaning and commercial automation are creating new product opportunities."
+    title: "See New Categories Taking Shape",
+    text: "Explore robotics, smart floor care, pool cleaning, outdoor equipment and commercial automation in one industry setting."
+  },
+  {
+    icon: "search",
+    image: "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
+    title: "Find Products And Partners Faster",
+    text: "Bring product discovery, supplier conversations and market feedback into a focused cleaning industry platform."
+  },
+  {
+    icon: "handshake",
+    image: "/images/industry/expo-business-matching-2026.jpg",
+    title: "Turn Meetings Into Opportunities",
+    text: "Connect manufacturers, brands, buyers and distributors around real product and market opportunities."
+  }
+];
+
+const exhibitorBenefits: { icon: IconName; title: string; text: string }[] = [
+  {
+    icon: "users",
+    title: "Meet Potential Buyers",
+    text: "Present your products to importers, distributors, brands, retailers and cleaning industry decision-makers."
+  },
+  {
+    icon: "megaphone",
+    title: "Show What Makes You Different",
+    text: "Give new products, technology and OEM/ODM capabilities a clearer industry stage."
   },
   {
     icon: "globe",
-    image: "/images/industry/expo-business-matching-2026.jpg",
-    title: "Global Buyers Need Better Discovery",
-    text: "Buyers need a clearer way to find suppliers, product directions, category signals and market opportunities."
-  },
-  {
-    icon: "handshake",
-    image: "/images/industry/expo-forum-audience-2026.jpg",
-    title: "The Industry Needs A Real Meeting Point",
-    text: "World Clean Expo is built to connect products, suppliers, buyers, forums and industry conversations."
+    title: "Build International Connections",
+    text: "Start conversations with overseas channels and potential business partners before and during the show."
   }
 ];
 
-const updateBenefits: { icon: IconName; title: string; text: string }[] = [
+const visitorBenefits: { icon: IconName; title: string; text: string }[] = [
   {
-    icon: "calendar",
-    title: "Visitor Registration Updates",
-    text: "Know when registration opens and how to plan your visit."
+    icon: "telescope",
+    title: "Discover New Products Earlier",
+    text: "See emerging cleaning categories and product directions before they become crowded."
   },
   {
+    icon: "factory",
+    title: "Compare Suppliers In One Place",
+    text: "Meet manufacturers and solution providers across multiple cleaning product categories."
+  },
+  {
+    icon: "trending",
+    title: "Understand Where The Market Is Moving",
+    text: "Use products, forums and industry conversations to sharpen your next business decision."
+  }
+];
+
+const categories = [
+  ["expo-category-robot-vacuum", "Robotic Vacuums"],
+  ["expo-category-floor-washer", "Floor Washers"],
+  ["expo-category-pool-cleaner", "Pool Cleaning Robots"],
+  ["expo-category-lawn-robot", "Outdoor & Lawn Robots"],
+  ["expo-category-commercial", "Commercial Cleaning"],
+  ["expo-category-components", "Components & Technology"]
+];
+
+const connectionAreas: { icon: IconName; title: string; text: string }[] = [
+  {
     icon: "package",
-    title: "Exhibitor And Product Highlights",
-    text: "Follow important suppliers, categories and product directions before the show."
+    title: "Product Discovery",
+    text: "See products, technologies and category directions across the cleaning industry."
+  },
+  {
+    icon: "handshake",
+    title: "Business Matching",
+    text: "Share what you sell or what you need so relevant introductions can be considered."
   },
   {
     icon: "message",
-    title: "Forum Agenda And Industry Signals",
-    text: "Receive updates on forum topics, speakers and market discussions."
+    title: "Industry Forums",
+    text: "Follow discussions around products, channels, technology and market development."
   },
   {
-    icon: "handshake",
-    title: "Business Matching Opportunities",
-    text: "Get selected updates on buyer, supplier and partnership opportunities."
+    icon: "network",
+    title: "Industry Connections",
+    text: "Meet suppliers, brands, buyers, distributors, media and industry professionals."
   }
 ];
 
-const audienceGroups = [
-  {
-    title: "Buyers / Importers / Distributors",
-    text: "Find product categories, suppliers and business opportunities worth tracking."
-  },
-  {
-    title: "Manufacturers / Suppliers",
-    text: "Understand buyer demand, product direction and global channel movement."
-  },
-  {
-    title: "Brands / Retailers / Amazon Sellers",
-    text: "Track category shifts before the market becomes crowded."
-  },
-  {
-    title: "Investors / Media / Industry Professionals",
-    text: "Follow the companies, products and conversations shaping the next cleaning industry cycle."
-  }
-];
-
-const roleOptions = [
-  "Brand",
-  "Importer / Distributor",
-  "Retailer",
-  "Amazon Seller",
-  "Manufacturer",
-  "Investor",
-  "Media",
-  "Other"
-];
+function IntentButtons({ location }: { location: "hero" | "footer" }) {
+  return (
+    <div className="expo-intent-actions">
+      <TallyButton
+        className="button expo-button-primary"
+        ctaLocation={
+          location === "hero" ? "wce_hero_exhibitor" : "wce_footer_exhibitor"
+        }
+        form="expo"
+        inquiryIntent="exhibitor_interest"
+        inquiryType="expo_exhibitor"
+      >
+        I Want To Exhibit
+      </TallyButton>
+      <TallyButton
+        className="button-secondary expo-button-secondary"
+        ctaLocation={
+          location === "hero" ? "wce_hero_visitor" : "wce_footer_visitor"
+        }
+        form="expo"
+        inquiryIntent="visitor_interest"
+        inquiryType="expo_visitor"
+      >
+        I Want To Visit
+      </TallyButton>
+    </div>
+  );
+}
 
 export default function WorldCleanExpoPage() {
   return (
-    <>
+    <div className="expo-conversion-page">
       <section className="expo-hero">
         <div className="container expo-hero-grid">
           <div className="expo-hero-copy">
             <p className="eyebrow">WORLD CLEAN EXPO 2026</p>
-            <h1>Follow The Next Global Cleaning Industry Platform</h1>
+            <h1>Discover Products. Meet Partners. Find What Comes Next.</h1>
             <p>
-              Get updates on visitor registration, exhibitor news, forum
-              agenda, product categories and business matching opportunities.
+              A cleaning industry platform connecting new products, Chinese
+              supply chains, global buyers and business opportunities.
             </p>
             <div className="expo-hero-meta" aria-label="Event details">
               <span>November 2026</span>
               <span>Suzhou International Expo Center</span>
               <span>China</span>
             </div>
-            <div className="hero-actions">
-              <TallyButton
-                className="button"
-                ctaLocation="wce_hero_visitor"
-                form="expo"
-              >
-                Get Expo Updates
-              </TallyButton>
-              <Link className="button-secondary" href="#expo-updates">
-                What You Will Receive
-              </Link>
-            </div>
+            <IntentButtons location="hero" />
+            <p className="expo-intent-note">
+              Leave your interest now to receive the relevant registration,
+              participation and event updates.
+            </p>
           </div>
-          <div className="expo-hero-visual" aria-label="International trade show floor">
+          <div className="expo-hero-visual" aria-label="Busy cleaning industry exhibition">
             <div className="expo-visual-note">
-              <span>World Clean Expo Updates</span>
-              <strong>Visitor registration, exhibitor news, forum agenda and business matching.</strong>
+              <span>One Industry. Two Ways To Take Part.</span>
+              <strong>Exhibit your products or discover your next business opportunity.</strong>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section" id="why-visit">
+      <section className="section expo-reasons-section">
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">Why It Matters</p>
-              <h2>Why World Clean Expo Matters</h2>
+              <p className="eyebrow">WHY WORLD CLEAN EXPO</p>
+              <h2>More Than A Show Floor. A Place To Make Better Business Decisions.</h2>
               <p>
-                The cleaning industry is changing quickly. World Clean Expo is
-                designed to help professionals see new products, supplier
-                movement and industry opportunities earlier.
+                The cleaning industry is changing quickly. World Clean Expo
+                brings product discovery, supplier access and business
+                conversations into one focused platform.
               </p>
             </div>
           </div>
-          <div className="expo-track-grid expo-simple-grid">
-            {whyExpo.map((item) => (
+          <div className="expo-track-grid">
+            {reasons.map((item) => (
               <article className="expo-visual-card" key={item.title}>
                 <img src={item.image} alt="" />
                 <div>
@@ -150,74 +201,136 @@ export default function WorldCleanExpoPage() {
         </div>
       </section>
 
-      <section className="section section-soft" id="expo-updates">
+      <section className="section section-soft expo-paths-section">
         <div className="container">
           <div className="section-head">
             <div>
-              <p className="eyebrow">What You Will Receive</p>
-              <h2>Get The Updates That Matter Before The Show</h2>
+              <p className="eyebrow">CHOOSE YOUR PATH</p>
+              <h2>What Do You Want To Achieve At World Clean Expo?</h2>
+              <p>Choose the path that matches your business objective.</p>
+            </div>
+          </div>
+          <div className="expo-path-grid">
+            <article className="expo-path-card expo-path-card-primary">
+              <div className="expo-path-image expo-path-image-exhibitor" />
+              <div className="expo-path-content">
+                <p className="eyebrow">For Exhibitors</p>
+                <h2>Put Your Products In Front Of The Right Industry Audience.</h2>
+                <div className="expo-path-benefits">
+                  {exhibitorBenefits.map((item) => (
+                    <div key={item.title}>
+                      <InlineIcon name={item.icon} />
+                      <span><strong>{item.title}</strong>{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+                <TallyButton
+                  className="button"
+                  ctaLocation="wce_path_exhibitor"
+                  form="expo"
+                  inquiryIntent="exhibitor_interest"
+                  inquiryType="expo_exhibitor"
+                >
+                  Request Exhibitor Information
+                </TallyButton>
+              </div>
+            </article>
+
+            <article className="expo-path-card">
+              <div className="expo-path-image expo-path-image-visitor" />
+              <div className="expo-path-content">
+                <p className="eyebrow">For Buyers &amp; Visitors</p>
+                <h2>Find Products, Suppliers And Market Signals Worth Acting On.</h2>
+                <div className="expo-path-benefits">
+                  {visitorBenefits.map((item) => (
+                    <div key={item.title}>
+                      <InlineIcon name={item.icon} />
+                      <span><strong>{item.title}</strong>{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+                <TallyButton
+                  className="button"
+                  ctaLocation="wce_path_visitor"
+                  form="expo"
+                  inquiryIntent="visitor_interest"
+                  inquiryType="expo_visitor"
+                >
+                  Get Visitor Registration Updates
+                </TallyButton>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section expo-categories-section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">PRODUCT CATEGORIES</p>
+              <h2>See The Cleaning Products Shaping The Next Market Cycle.</h2>
               <p>
-                Subscribe once and receive the practical information needed to
-                follow World Clean Expo before, during and after the event.
+                Follow established categories, fast-growing segments and the
+                technologies changing how cleaning work gets done.
               </p>
             </div>
           </div>
-          <div className="case-grid">
-            {updateBenefits.map((item) => (
-              <div className="case-card expo-value-card" key={item.title}>
+          <div className="expo-category-grid">
+            {categories.map(([className, title]) => (
+              <article className={`expo-category-card ${className}`} key={title}>
+                <strong>{title}</strong>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section expo-meeting-section">
+        <div className="container expo-meeting-layout">
+          <div className="expo-meeting-copy">
+            <p className="eyebrow">FROM DISCOVERY TO CONNECTION</p>
+            <h2>Products Bring People In. The Right Conversations Create Value.</h2>
+            <p>
+              World Clean Expo is designed around the commercial moments that
+              matter: seeing what is new, meeting relevant people and creating
+              the next conversation.
+            </p>
+            <div className="expo-gathering-list">
+              <span>Manufacturers</span><span>Brands</span><span>Buyers</span>
+              <span>Distributors</span><span>Industry Experts</span>
+            </div>
+          </div>
+          <div className="expo-gathering-grid">
+            {connectionAreas.map((item) => (
+              <article className="expo-gathering-card" key={item.title}>
                 <InlineIcon name={item.icon} />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Who Should Follow</p>
-              <h2>Built For Cleaning Industry Professionals</h2>
-              <p>
-                World Clean Expo updates are for people who need to track
-                products, suppliers, buyers, markets and industry conversations.
-              </p>
-            </div>
-          </div>
-          <div className="expo-audience-grid expo-audience-simple-grid">
-            {audienceGroups.map((item) => (
-              <div className="expo-audience-card" key={item.title}>
-                <strong>{item.title}</strong>
-                <span>{item.text}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section expo-capture-section">
-        <div className="container grid-2 expo-interest-layout">
-          <div className="expo-capture-copy">
-            <p className="eyebrow">Expo Updates</p>
-            <h2>Get World Clean Expo Updates</h2>
+      <section className="section expo-final-section" id="expo-interest">
+        <div className="container expo-final-conversion">
+          <div>
+            <p className="eyebrow">WORLD CLEAN EXPO 2026</p>
+            <h2>Tell Us How You Want To Take Part.</h2>
             <p>
-              Leave your email to receive visitor registration timing,
-              exhibitor news, forum agenda, selected product highlights and
-              business matching opportunities.
+              Select your interest and we will send the relevant exhibitor,
+              visitor registration and event updates as they become available.
             </p>
-            <strong>Be the first to know when visitor registration opens.</strong>
-            <span>November 2026 · Suzhou · China</span>
-            <div className="expo-capture-scenes" aria-label="World Clean Expo scenes">
-              <img src="/images/industry/expo-hall-shenzhen-2026.jpg" alt="" />
-              <img src="/images/industry/about-forum-audience-2025.jpg" alt="" />
-              <img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="" />
+            <div className="expo-final-meta">
+              <span>November 2026</span>
+              <span>Suzhou International Expo Center</span>
+              <span>China</span>
             </div>
           </div>
-          <ExpoLeadForm roles={roleOptions} />
+          <IntentButtons location="footer" />
         </div>
       </section>
-    </>
+    </div>
   );
 }
