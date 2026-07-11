@@ -48,6 +48,11 @@ test("Reports removes the ambiguous single-report preview module", () => {
   assert.doesNotMatch(reportsSource, /reports-v2-preview/);
 });
 
+test("Reports keeps the hero cover unobstructed by duplicated report counts", () => {
+  assert.doesNotMatch(reportsSource, /1 Current Report/);
+  assert.doesNotMatch(reportsSource, /4 upcoming intelligence briefs/);
+});
+
 test("Reports includes the approved cover and downloadable report assets", async () => {
   assert.match(
     reportsSource,

@@ -92,11 +92,6 @@ export default function ReportsPage() {
               src="/images/reports/wcb-cleaning-industry-growth-map-cover.png"
               alt="World Clean Biz report cover: The Next Decade of Cleaning Growth"
             />
-            <div>
-              <span>Available Now</span>
-              <strong>1 Current Report</strong>
-              <small>4 upcoming intelligence briefs</small>
-            </div>
           </div>
         </div>
       </section>
