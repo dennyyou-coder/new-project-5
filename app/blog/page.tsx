@@ -235,6 +235,8 @@ function SidebarContent({ latestSignals, selectedTopic }: { latestSignals: Insig
         <img
           src="/images/industry/about-denny-portrait-event.jpg"
           alt="Denny You at a cleaning industry event"
+          loading="lazy"
+          decoding="async"
         />
         <h3>Industry Analysis From The Front Line</h3>
         <ul>
@@ -271,7 +273,7 @@ function SidebarContent({ latestSignals, selectedTopic }: { latestSignals: Insig
         <div className="latest-signal-list">
           {latestSignals.map((article, index) => (
             <Link href={`/blog/${article.slug}`} key={article.slug}>
-              <img src={imageFor(article, index)} alt="" />
+              <img src={imageFor(article, index)} alt="" loading="lazy" decoding="async" />
               <span>
                 <strong>{article.title}</strong>
                 <small>{displayDate(article)}</small>
@@ -291,7 +293,7 @@ function ArticleFeedItem({ article, index }: { article: Insight; index: number }
   return (
     <Link className="insights-feed-item" href={`/blog/${article.slug}`}>
       <div className="insights-feed-image">
-        <img src={imageFor(article, index)} alt={`${article.title} cover`} />
+        <img src={imageFor(article, index)} alt={`${article.title} cover`} loading="lazy" decoding="async" />
       </div>
       <div className="insights-feed-copy">
         <span className="insights-category">{article.category}</span>
@@ -339,20 +341,53 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
       name: article.title
     }))
   };
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${siteUrl}/blog`,
+    name: "World Clean Biz Blog",
+    description: "Cleaning industry analysis, product signals and sourcing intelligence for global business decisions.",
+    url: `${siteUrl}/blog`,
+    mainEntity: itemListSchema
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}/blog` }
+    ]
+  };
 
   return (
     <>
+      <section className="blog-editorial-intro">
+        <div className="insights-page-container blog-editorial-intro-grid">
+          <div>
+            <p className="eyebrow">World Clean Biz Intelligence</p>
+            <h1>Cleaning Industry Analysis For Better Product And Market Decisions.</h1>
+            <p>
+              Follow product categories, companies, supply chains and market signals across the global cleaning industry.
+            </p>
+          </div>
+          <div className="blog-editorial-actions">
+            <span><strong>{articles.length}+</strong><small>Published articles and industry notes</small></span>
+            <Link className="button" href="/reports">Explore Market Reports</Link>
+            <Link className="button button-secondary" href="/sourcing">Discuss Product Opportunities</Link>
+          </div>
+        </div>
+      </section>
       <section className="insights-featured-top">
         <div className="insights-page-container">
           {featured ? (
             <Link className="insights-featured-hero" href={`/blog/${featured.slug}`}>
               <div className="insights-featured-hero-image">
-                <img src={imageFor(featured, 0)} alt={`${featured.title} featured cover`} />
+                <img src={imageFor(featured, 0)} alt={`${featured.title} featured cover`} fetchPriority="high" decoding="async" />
               </div>
               <div className="insights-featured-hero-copy">
                 <p className="eyebrow">Featured Article</p>
                 <span className="insights-category">{featured.category}</span>
-                <h1>{featured.title}</h1>
+                <h2>{featured.title}</h2>
                 <p>{featured.excerpt}</p>
                 <div className="insights-card-meta">
                   <span>{displayDate(featured)}</span>
@@ -402,11 +437,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
             ) : null}
           </main>
 
-          <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-desktop" aria-label="Insights sidebar">
-            <SidebarContent latestSignals={latestSignals} selectedTopic={selectedTopic} />
-          </aside>
-
-          <aside className="insights-sidebar insights-sidebar-v2 insights-sidebar-mobile" aria-label="Insights sidebar">
+          <aside className="insights-sidebar insights-sidebar-v2" aria-label="Insights sidebar">
             <SidebarContent latestSignals={latestSignals} selectedTopic={selectedTopic} />
           </aside>
         </div>
@@ -452,7 +483,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, itemListSchema, breadcrumbSchema]) }}
       />
     </>
   );

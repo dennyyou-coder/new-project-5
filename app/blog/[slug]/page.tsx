@@ -101,6 +101,16 @@ function absoluteUrl(pathOrUrl?: string) {
   return `${siteUrl}${pathOrUrl.startsWith("/") ? pathOrUrl : `/${pathOrUrl}`}`;
 }
 
+function displayPublishedDate(value: string) {
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return value;
+  return new Intl.DateTimeFormat("en", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  }).format(parsed);
+}
+
 function extractFaqSchema(content: string, pageUrl: string) {
   const faqStart = content.match(/^## FAQ\s*$/m);
 
@@ -229,14 +239,25 @@ export default async function InsightDetailPage({ params }: Props) {
     datePublished: publishedTime,
     dateModified: publishedTime,
     image: coverImage ? [coverImage] : undefined,
+    articleSection: article.category,
+    keywords: article.tags,
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${siteUrl}/blog`
+    },
     author: {
       "@type": "Person",
-      name: article.author
+      name: article.author,
+      url: `${siteUrl}/about`
     },
     publisher: {
       "@type": "Organization",
       name: "World Clean Biz",
-      url: siteUrl
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/icon.svg`
+      }
     },
     url
   };
@@ -273,13 +294,17 @@ export default async function InsightDetailPage({ params }: Props) {
     <>
       <section className="blog-article-hero">
         <div className="blog-article-container">
+          <nav className="blog-visible-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link><span>/</span><Link href="/blog">Blog</Link><span>/</span><span>{article.category}</span>
+          </nav>
           <div className="signal-detail-meta">
             <span>{article.category}</span>
+            <span>{displayPublishedDate(publishedTime)}</span>
             <span>{article.readingTime}</span>
           </div>
           <h1>{article.title}</h1>
           <p>{article.excerpt}</p>
-          <p className="signal-detail-author">By {article.author}</p>
+          <p className="signal-detail-author">By <Link href="/about">{article.author}</Link></p>
         </div>
       </section>
 
@@ -299,7 +324,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
             {article.coverImage ? (
               <figure className="blog-article-cover">
-                <img src={article.coverImage} alt={article.coverAlt || article.title} />
+                <img src={article.coverImage} alt={article.coverAlt || article.title} fetchPriority="high" decoding="async" />
               </figure>
             ) : null}
 
@@ -332,12 +357,15 @@ export default async function InsightDetailPage({ params }: Props) {
                 </div>
               ) : null}
               <div className="blog-author-bio-box">
-                <strong>Denny You</strong>
-                <p>
-                  Denny You has worked inside the cleaning industry since 2006.
-                  World Clean Biz turns front-line product, supplier and category
-                  signals into practical industry intelligence.
-                </p>
+                <img src="/images/site-refresh/about/about-hero-denny.webp" alt="Denny You, founder of World Clean Biz" loading="lazy" decoding="async" />
+                <div>
+                  <strong>Denny You</strong>
+                  <span>Founder, World Clean Biz · Organizer, World Clean Expo</span>
+                  <p>
+                    Inside the cleaning industry since 2006, Denny reviews product, supplier and category signals for practical business decisions.
+                  </p>
+                  <Link href="/about">About Denny &amp; World Clean Biz →</Link>
+                </div>
               </div>
             </footer>
           </article>
@@ -352,10 +380,13 @@ export default async function InsightDetailPage({ params }: Props) {
                   href={`/blog/${item.slug}`}
                   key={item.slug}
                 >
+                  <div className="related-signal-image">
+                    <img src={item.coverImage || "/images/site-refresh/real/city-architecture.webp"} alt="" loading="lazy" decoding="async" />
+                  </div>
                   <div className="meta">{item.category}</div>
                   <h3>{item.title}</h3>
                   <p>{item.excerpt}</p>
-                  <span>Read Article</span>
+                  <span>{item.readingTime} · Read Article</span>
                 </Link>
               ))}
             </div>
