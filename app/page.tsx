@@ -4,12 +4,12 @@ import { TallyButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
 
 const heroProducts = [
-  { label: "Robot Vacuums", image: "/images/sourcing/robotic-vacuums.png", alt: "Robot vacuum product category", text: "New functions, brands and channels continue to reshape floorcare." },
-  { label: "Floor Washers", image: "/images/sourcing/floor-washers.png", alt: "Hard floor washer product category", text: "Fast product iteration is expanding the hard-floor cleaning market." },
-  { label: "Pool Robots", image: "/images/sourcing/pool-robots.png", alt: "Robotic pool cleaner product category", text: "Automated pool maintenance is moving into broader retail channels." },
-  { label: "Robotic Lawn Mowers", image: "/images/sourcing/lawn-robots.png", alt: "Robotic lawn mower product category", text: "Outdoor robotics is entering a faster global adoption cycle." },
-  { label: "Commercial Cleaning", image: "/images/sourcing/commercial-cleaning.png", alt: "Commercial cleaning robot product category", text: "Facilities and service operators are testing new automation models." },
-  { label: "Emerging Categories", image: "/images/industry/home-industry-products-2025.jpg", alt: "Emerging cleaning product categories", text: "New equipment, components and formats are still taking shape." }
+  { label: "Robot Vacuums", image: "/images/site-refresh/home/category-robot-vacuums.webp", alt: "Robot vacuum product category", text: "New functions, brands and channels continue to reshape floorcare." },
+  { label: "Floor Washers", image: "/images/site-refresh/home/category-floor-washers.webp", alt: "Hard floor washer product category", text: "Fast product iteration is expanding the hard-floor cleaning market." },
+  { label: "Pool Robots", image: "/images/site-refresh/home/category-pool-robots.webp", alt: "Robotic pool cleaner product category", text: "Automated pool maintenance is moving into broader retail channels." },
+  { label: "Robotic Lawn Mowers", image: "/images/site-refresh/home/category-robotic-lawn-mowers.webp", alt: "Robotic lawn mower product category", text: "Outdoor robotics is entering a faster global adoption cycle." },
+  { label: "Commercial Cleaning", image: "/images/site-refresh/home/category-commercial-cleaning.webp", alt: "Commercial cleaning robot product category", text: "Facilities and service operators are testing new automation models." },
+  { label: "Emerging Categories", image: "/images/site-refresh/home/category-emerging-cleaning.webp", alt: "Emerging cleaning product categories", text: "New equipment, components and formats are still taking shape." }
 ];
 
 const pathways = [
@@ -18,7 +18,7 @@ const pathways = [
     eyebrow: "Market Intelligence",
     title: "See The Shift Before It Becomes Obvious",
     text: "Follow category movement, companies, channels and product signals across the global cleaning industry.",
-    image: "/images/sourcing/robotic-vacuums.png",
+    image: "/images/site-refresh/home/path-market-intelligence.webp",
     imageAlt: "Robotic vacuum representing cleaning appliance market intelligence",
     links: [
       { href: "/blog", label: "Read Industry Insights" },
@@ -30,7 +30,7 @@ const pathways = [
     eyebrow: "Product & Sourcing",
     title: "Turn Market Signals Into Product Decisions",
     text: "Connect category judgement with suppliers, OEM/ODM options, product direction and execution support.",
-    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
+    image: "/images/site-refresh/home/path-product-sourcing.webp",
     imageAlt: "Cleaning industry supplier and sourcing meeting",
     links: [{ href: "/sourcing", label: "Start A Sourcing Inquiry" }]
   },
@@ -39,7 +39,7 @@ const pathways = [
     eyebrow: "World Clean Expo",
     title: "Move From Online Signals To Real Connections",
     text: "Meet manufacturers, brands, suppliers and buyers through the next global cleaning industry platform.",
-    image: "/images/industry/expo-hall-shenzhen-2026.jpg",
+    image: "/images/site-refresh/home/path-world-clean-expo.webp",
     imageAlt: "Cleaning equipment exhibition and industry connections",
     links: [{ href: "/world-clean-expo", label: "Explore World Clean Expo" }]
   }
@@ -202,15 +202,15 @@ export default function HomePage() {
           </div>
           <div className="home-v9-trust-gallery">
             <figure className="home-v9-trust-main">
-              <img src="/images/industry/about-denny-speaking-forum-2025.jpg" alt="Denny speaking at an industry forum" />
+              <img src="/images/site-refresh/home/trust-denny-industry.webp" alt="Denny speaking at an industry forum" />
               <figcaption>Denny You · Founder, World Clean Biz · Organizer, World Clean Expo</figcaption>
             </figure>
             <figure>
-              <img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Supplier meeting at a cleaning industry exhibition" />
+              <img src="/images/site-refresh/home/trust-supplier-network.webp" alt="Supplier meeting at a cleaning industry exhibition" />
               <figcaption>Supplier Network</figcaption>
             </figure>
             <figure>
-              <img src="/images/industry/expo-hall-shenzhen-2026.jpg" alt="World Clean Expo exhibition floor" />
+              <img src="/images/site-refresh/home/trust-expo-access.webp" alt="World Clean Expo exhibition floor" />
               <figcaption>Industry Access</figcaption>
             </figure>
           </div>
