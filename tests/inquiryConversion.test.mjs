@@ -9,6 +9,7 @@ import {
 const sourcingSource = await readFile(new URL("../app/sourcing/page.tsx", import.meta.url), "utf8");
 const contactSource = await readFile(new URL("../app/contact/page.tsx", import.meta.url), "utf8");
 const definitionSource = await readFile(new URL("../lib/inquiryConversion.ts", import.meta.url), "utf8");
+const globalStyles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
 
 test("defines six unique tracked sourcing categories", () => {
   assert.equal(SOURCING_CATEGORIES.length, 6);
@@ -83,4 +84,12 @@ test("Sourcing presents a concise, accurate inquiry journey", () => {
   assert.doesNotMatch(sourcingSource, /dennyPhotos/);
   assert.doesNotMatch(sourcingSource, /9,000\+ Industry Professionals/);
   assert.doesNotMatch(sourcingSource, /Helped Build Multiple Best-Selling/);
+});
+
+test("Sourcing V4 owns the contrasting process and final CTA styles", () => {
+  assert.doesNotMatch(sourcingSource, /className="sourcing-v3-cta sourcing-v4-final"/);
+  assert.match(sourcingSource, /className="sourcing-v4-final"/);
+  assert.match(globalStyles, /\.sourcing-v4-process \.sourcing-v4-heading h2\s*\{[^}]*color:\s*#fff/s);
+  assert.match(globalStyles, /\.sourcing-v4-final\s*\{[^}]*background:/s);
+  assert.match(globalStyles, /\.sourcing-v4-final[^}]*color:\s*#fff/s);
 });

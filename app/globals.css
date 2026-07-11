@@ -17539,9 +17539,13 @@ h3 {
 }
 
 .sourcing-v4-need-grid article {
-  border-top: 3px solid var(--s4-blue);
-  background: #f7faff;
-  padding: 26px;
+  min-height: 220px;
+  border: 1px solid var(--s4-line);
+  border-top: 4px solid var(--s4-blue);
+  border-radius: 8px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 14px 32px rgba(16, 52, 96, 0.06);
 }
 
 .sourcing-v4-need-grid span,
@@ -17555,8 +17559,8 @@ h3 {
 .sourcing-v4-need-grid h3,
 .sourcing-v4-capability-grid h3,
 .sourcing-v4-process h3 {
-  margin: 22px 0 0;
-  font-size: 20px;
+  margin: 26px 0 0;
+  font-size: 21px;
   line-height: 1.2;
 }
 
@@ -17576,20 +17580,24 @@ h3 {
 }
 
 .sourcing-v4-capability-grid article {
+  display: grid;
+  grid-template-rows: 210px minmax(190px, auto);
   border: 1px solid var(--s4-line);
   border-radius: 8px;
+  background: #fff;
   overflow: hidden;
+  box-shadow: 0 16px 36px rgba(16, 52, 96, 0.07);
 }
 
 .sourcing-v4-capability-grid img {
   display: block;
   width: 100%;
-  aspect-ratio: 1.8 / 1;
+  height: 210px;
   object-fit: cover;
 }
 
 .sourcing-v4-capability-grid article > div {
-  padding: 24px;
+  padding: 28px;
 }
 
 .sourcing-v4-capability-grid h3 {
@@ -17603,6 +17611,10 @@ h3 {
 
 .sourcing-v4-process .sourcing-v3-kicker {
   color: #80a9ff;
+}
+
+.sourcing-v4-process .sourcing-v4-heading h2 {
+  color: #fff;
 }
 
 .sourcing-v4-process ol {
@@ -17644,13 +17656,33 @@ h3 {
 }
 
 .sourcing-v4-final {
+  background: linear-gradient(135deg, #061f4b 0%, #0b3b83 100%);
+  color: #fff;
   padding: 64px 0;
+  text-align: center;
+}
+
+.sourcing-v4-final .sourcing-v3-kicker {
+  color: #8db3ff;
+}
+
+.sourcing-v4-final h2 {
+  color: #fff;
 }
 
 .sourcing-v4-final > div > p:not(.sourcing-v3-kicker) {
   max-width: 680px;
   margin: 16px auto 26px;
   color: rgba(255, 255, 255, 0.74);
+}
+
+.sourcing-v4-final .lead-form-trigger {
+  display: inline-flex;
+}
+
+.sourcing-v4-final button.sourcing-v3-button {
+  min-width: 240px;
+  background: #2f6bff;
 }
 
 @media (max-width: 900px) {
@@ -17696,6 +17728,14 @@ h3 {
 
   .sourcing-v4-process li {
     min-height: 0;
+  }
+
+  .sourcing-v4-capability-grid article {
+    grid-template-rows: 190px auto;
+  }
+
+  .sourcing-v4-capability-grid img {
+    height: 190px;
   }
 }
 

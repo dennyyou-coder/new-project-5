@@ -235,7 +235,7 @@ export default function SourcingPage() {
         </div>
       </section>
 
-      <section className="sourcing-v3-cta sourcing-v4-final">
+      <section className="sourcing-v4-final">
         <div className="sourcing-v3-container">
           <p className="sourcing-v3-kicker">Start With Context</p>
           <h2>Tell Us What You Are Trying To Source.</h2>
