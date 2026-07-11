@@ -18351,3 +18351,76 @@ h3 {
     width: 100%;
   }
 }
+
+.sourcing-v3-product-grid > .lead-form-trigger,
+.contact-help-grid > .lead-form-trigger {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.sourcing-v3-product-card,
+.contact-help-card {
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+.sourcing-v3-product-card:focus-visible,
+.contact-help-card:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+.contact-help-card-copy {
+  align-content: start;
+  display: grid;
+  gap: 12px;
+}
+
+.contact-help-card .contact-help-card-copy,
+.contact-help-card .contact-help-card-copy span,
+.contact-help-card .contact-help-card-copy em {
+  border: 0;
+  color: inherit;
+  font-style: normal;
+  margin: 0;
+  width: auto;
+}
+
+.contact-help-card .contact-help-card-copy strong {
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.contact-help-card .contact-help-card-copy span {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+.contact-help-card .contact-help-card-copy em {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.contact-response-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {
+  .sourcing-v3-product-grid > .lead-form-trigger,
+  .sourcing-v3-product-card,
+  .contact-help-grid > .lead-form-trigger,
+  .contact-help-card {
+    width: 100%;
+  }
+
+  .contact-response-grid {
+    grid-template-columns: 1fr;
+  }
+}

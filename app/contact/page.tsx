@@ -1,63 +1,42 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Suspense } from "react";
-import { ContactForm } from "@/components/ContactForm";
-import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
-import { TALLY_FORMS } from "@/lib/tallyForms";
+import { TallyButton } from "@/components/LeadForms";
+import { IconBadge, InlineIcon } from "@/components/Icon";
+import { CONTACT_INQUIRIES } from "@/lib/inquiryConversion";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Share your cleaning industry question with World Clean Biz for sourcing support, market information, industry connections, World Clean Expo interest, media cooperation, or business opportunities."
+    "Share your cleaning industry question with World Clean Biz for sourcing support, market information, industry connections, World Clean Expo interest, media cooperation, or business opportunities.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact World Clean Biz",
+    description: "Choose the right channel for sourcing, Expo, media, or general cleaning industry inquiries.",
+    url: "/contact",
+    images: ["/images/industry/sourcing-supplier-meeting-2026.jpg"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact World Clean Biz",
+    description: "Choose the right channel for sourcing, Expo, media, or general cleaning industry inquiries.",
+    images: ["/images/industry/sourcing-supplier-meeting-2026.jpg"]
+  }
 };
 
-const helpCards = [
+const responseSteps = [
   {
-    icon: "factory",
-    title: "Sourcing Inquiry",
-    text: "For buyers looking for China-based suppliers, OEM/ODM partners, private label opportunities, or product sourcing support.",
-    href: TALLY_FORMS.sourcing.url
+    title: "Prepare The Right Context",
+    text: "Share your company, market, product category and the decision or opportunity you are working on."
   },
   {
-    icon: "calendar",
-    title: "Expo Inquiry",
-    text: "For companies interested in exhibiting, visiting, partnering with, or promoting cleaning industry trade shows and events.",
-    href: TALLY_FORMS.expo.url
+    title: "Your Inquiry Is Routed By Intent",
+    text: "Sourcing, Expo, media and general requests follow separate paths so the right context is reviewed first."
   },
   {
-    icon: "newspaper",
-    title: "Media Inquiry",
-    text: "For interviews, press releases, market insights, editorial collaboration, and industry news submissions.",
-    href: TALLY_FORMS.contact.url
-  },
-  {
-    icon: "message",
-    title: "General Inquiry",
-    text: "For other business questions, partnership ideas, or general communication with World Clean Biz.",
-    href: TALLY_FORMS.contact.url
+    title: "Follow-Up Depends On Fit",
+    text: "World Clean Biz reviews the information provided and follows up when the request fits its industry scope and available resources."
   }
-] satisfies { icon: IconName; title: string; text: string; href: string }[];
-
-const inquiryRoutes = [
-  {
-    label: "Product / Supplier",
-    title: "Sourcing Inquiry",
-    text: "Share product category, target market, supplier criteria and timeline.",
-    href: TALLY_FORMS.sourcing.url
-  },
-  {
-    label: "Event / Network",
-    title: "Expo Updates",
-    text: "Receive World Clean Expo updates for visiting, exhibiting or partnership.",
-    href: TALLY_FORMS.expo.url
-  },
-  {
-    label: "General / Media",
-    title: "Contact World Clean Biz",
-    text: "Send media, report, partnership or general business questions.",
-    href: TALLY_FORMS.contact.url
-  }
-] satisfies { label: string; title: string; text: string; href: string }[];
+];
 
 export default function ContactPage() {
   return (
@@ -77,80 +56,62 @@ export default function ContactPage() {
           </p>
           <div className="hero-actions">
             <Link className="button" href="#inquiry-form">
-              Submit Inquiry
+              Choose An Inquiry Type
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="section contact-inquiry-section">
+      <section className="section contact-inquiry-section" id="inquiry-form">
         <div className="container">
           <div className="section-head">
             <div>
               <p className="eyebrow">Inquiry Types</p>
               <h2>Choose the Right Channel</h2>
-              <p>
-                Start with the entry that best matches your need.
-              </p>
+              <p>Start with the entry that best matches your need.</p>
             </div>
           </div>
           <div className="case-grid contact-help-grid">
-            {helpCards.map((item) => (
-              <Link
+            {CONTACT_INQUIRIES.map((item) => (
+              <TallyButton
                 className="case-card contact-help-card"
-                href={item.href}
-                key={item.title}
-                target="_blank"
+                ctaLocation={item.ctaLocation}
+                form={item.form}
+                inquiryType={item.value}
+                key={item.value}
+                trackClick
               >
                 <IconBadge name={item.icon} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                <span>Submit Inquiry →</span>
-              </Link>
+                <span className="contact-help-card-copy">
+                  <strong>{item.title}</strong>
+                  <span>{item.description}</span>
+                  <em>{item.buttonLabel} →</em>
+                </span>
+              </TallyButton>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section section-soft" id="inquiry-form">
-        <div className="container contact-form-layout">
-          <div className="contact-form-copy">
-            <p className="eyebrow">
-              <InlineIcon name="send" />
-              Inquiry Form
-            </p>
-            <h2>Send The Right Context First</h2>
-            <p>
-              Choose the form that best matches your request. Each submission
-              goes through Tally and is saved in Airtable for follow-up.
-            </p>
-            <div
-              className="contact-form-image"
-              aria-label="Cleaning industry business discussion"
-            />
+      <section className="section section-soft contact-response-section">
+        <div className="container">
+          <div className="section-head">
+            <div>
+              <p className="eyebrow">
+                <InlineIcon name="send" />
+                What Happens Next
+              </p>
+              <h2>Send The Right Context First</h2>
+              <p>A focused inquiry helps World Clean Biz understand where it can add value.</p>
+            </div>
           </div>
-          <div className="contact-form-panel">
-            <div className="contact-route-head">
-              <p className="eyebrow">Choose A Route</p>
-              <h3>What do you want to discuss?</h3>
-            </div>
-            <div className="contact-route-list">
-              {inquiryRoutes.map((item) => (
-                <Link
-                  className="contact-route-card"
-                  href={item.href}
-                  key={item.title}
-                  target="_blank"
-                >
-                  <span>{item.label}</span>
-                  <strong>{item.title}</strong>
-                  <p>{item.text}</p>
-                </Link>
-              ))}
-            </div>
-            <Suspense fallback={null}>
-              <ContactForm />
-            </Suspense>
+          <div className="case-grid contact-response-grid">
+            {responseSteps.map((step) => (
+              <article className="case-card" key={step.title}>
+                <h3>{step.title}</h3>
+                <p>{step.text}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

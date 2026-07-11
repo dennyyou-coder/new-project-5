@@ -1,12 +1,25 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { InlineIcon, type IconName } from "@/components/Icon";
+import { InlineIcon } from "@/components/Icon";
 import { TallyButton } from "@/components/LeadForms";
+import { SOURCING_CATEGORIES } from "@/lib/inquiryConversion";
 
 export const metadata: Metadata = {
   title: "Sourcing",
   description:
-    "Work with Denny You and World Clean Biz on sourcing intelligence shaped by front-line cleaning industry product, supplier and market experience."
+    "Work with Denny You and World Clean Biz on sourcing intelligence shaped by front-line cleaning industry product, supplier and market experience.",
+  alternates: { canonical: "/sourcing" },
+  openGraph: {
+    title: "Cleaning Product Sourcing Intelligence",
+    description: "Find product categories, supplier direction and sourcing support for the global cleaning industry.",
+    url: "/sourcing",
+    images: ["/images/industry/sourcing-supplier-meeting-2026.jpg"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cleaning Product Sourcing Intelligence",
+    description: "Find product categories, supplier direction and sourcing support for the global cleaning industry.",
+    images: ["/images/industry/sourcing-supplier-meeting-2026.jpg"]
+  }
 };
 
 const heroCards = [
@@ -56,57 +69,6 @@ const industryChanges = [
   {
     then: "Following The Market Was Safe.",
     today: "By The Time Everyone Sees A Trend, The Opportunity Is Already Gone."
-  }
-];
-
-const productOpportunities: {
-  title: string;
-  description: string;
-  href: string;
-  icon: IconName;
-  image: string;
-}[] = [
-  {
-    title: "Pool Robots",
-    description: "The Category Is Just Getting Started.",
-    href: "/sourcing/pool-robots",
-    icon: "waves",
-    image: "/images/sourcing/pool-robots.png"
-  },
-  {
-    title: "Lawn Robots",
-    description: "The Next Outdoor Robotics Market.",
-    href: "/sourcing/lawn-robots",
-    icon: "sparkles",
-    image: "/images/sourcing/lawn-robots.png"
-  },
-  {
-    title: "Floor Washers",
-    description: "Still Early Outside China.",
-    href: "/sourcing/floor-washers",
-    icon: "wind",
-    image: "/images/sourcing/floor-washers.png"
-  },
-  {
-    title: "Robotic Vacuums",
-    description: "The Industry Is Entering A New Cycle.",
-    href: "/sourcing/robotic-vacuums",
-    icon: "target",
-    image: "/images/sourcing/robotic-vacuums.png"
-  },
-  {
-    title: "Commercial Cleaning",
-    description: "Automation Is Just Beginning.",
-    href: "/sourcing/commercial-cleaning",
-    icon: "building",
-    image: "/images/sourcing/commercial-cleaning.png"
-  },
-  {
-    title: "Vacuum Cleaners",
-    description: "A Mature Market Facing New Disruption.",
-    href: "/sourcing/vacuum-cleaners",
-    icon: "layers",
-    image: "/images/sourcing/vacuum-cleaners.png"
   }
 ];
 
@@ -228,7 +190,7 @@ const dennyPhotos = [
 
 export default function SourcingPage() {
   return (
-    <main className="sourcing-v3-page">
+    <div className="sourcing-v3-page">
       <section className="section-hero sourcing-v3-hero">
         <div className="sourcing-v3-container">
           <div className="sourcing-v3-hero-copy">
@@ -325,8 +287,15 @@ export default function SourcingPage() {
             </p>
           </div>
           <div className="sourcing-v3-product-grid">
-            {productOpportunities.map((item) => (
-              <Link className="sourcing-v3-product-card" href={item.href} key={item.title}>
+            {SOURCING_CATEGORIES.map((item) => (
+              <TallyButton
+                className="sourcing-v3-product-card"
+                ctaLocation={item.ctaLocation}
+                form="sourcing"
+                key={item.value}
+                productCategory={item.value}
+                trackClick
+              >
                 <span className="sourcing-v3-product-image">
                   <img src={item.image} alt={`${item.title} product category`} />
                 </span>
@@ -338,7 +307,7 @@ export default function SourcingPage() {
                   <em>{item.description}</em>
                   <span>View Category →</span>
                 </span>
-              </Link>
+              </TallyButton>
             ))}
           </div>
         </div>
@@ -476,6 +445,6 @@ export default function SourcingPage() {
           </TallyButton>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

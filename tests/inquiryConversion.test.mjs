@@ -1,9 +1,13 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
   CONTACT_INQUIRIES,
   SOURCING_CATEGORIES
 } from "../lib/inquiryConversion.ts";
+
+const sourcingSource = await readFile(new URL("../app/sourcing/page.tsx", import.meta.url), "utf8");
+const contactSource = await readFile(new URL("../app/contact/page.tsx", import.meta.url), "utf8");
 
 test("defines six unique tracked sourcing categories", () => {
   assert.equal(SOURCING_CATEGORIES.length, 6);
@@ -11,6 +15,30 @@ test("defines six unique tracked sourcing categories", () => {
   for (const item of SOURCING_CATEGORIES) {
     assert.match(item.ctaLocation, /^sourcing_category_/);
     assert.equal("href" in item, false);
+  }
+});
+
+test("Sourcing has no dead child links or nested main", () => {
+  assert.doesNotMatch(sourcingSource, /href: "\/sourcing\//);
+  assert.doesNotMatch(sourcingSource, /<main/);
+  assert.match(sourcingSource, /productCategory=\{item\.value\}/);
+  assert.match(sourcingSource, /trackClick/);
+});
+
+test("Contact renders one four-intent tracked choice set", () => {
+  assert.match(contactSource, /CONTACT_INQUIRIES\.map/);
+  assert.match(contactSource, /inquiryType=\{item\.value\}/);
+  assert.doesNotMatch(contactSource, /inquiryRoutes/);
+  assert.doesNotMatch(contactSource, /target="_blank"/);
+  assert.doesNotMatch(contactSource, /ContactForm/);
+});
+
+test("both pages include canonical and social metadata", () => {
+  for (const source of [sourcingSource, contactSource]) {
+    assert.match(source, /alternates:/);
+    assert.match(source, /canonical:/);
+    assert.match(source, /openGraph:/);
+    assert.match(source, /twitter:/);
   }
 });
 
