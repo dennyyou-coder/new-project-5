@@ -68,3 +68,19 @@ test("defines one tracked route for each Contact intent", () => {
     4
   );
 });
+
+test("Sourcing presents a concise, accurate inquiry journey", () => {
+  assert.match(sourcingSource, /Cleaning Product Sourcing/);
+  assert.match(sourcingSource, /Submit Your Brief/);
+  assert.match(sourcingSource, /Initial Review/);
+  assert.match(sourcingSource, /Direction & Connections/);
+  assert.match(sourcingSource, /Next-Step Cooperation/);
+  assert.match(sourcingSource, /Discuss \{item\.title\} →/);
+  assert.match(sourcingSource, /href="\/about"/);
+
+  assert.doesNotMatch(sourcingSource, /View Category →/);
+  assert.doesNotMatch(sourcingSource, /dennyJourney/);
+  assert.doesNotMatch(sourcingSource, /dennyPhotos/);
+  assert.doesNotMatch(sourcingSource, /9,000\+ Industry Professionals/);
+  assert.doesNotMatch(sourcingSource, /Helped Build Multiple Best-Selling/);
+});

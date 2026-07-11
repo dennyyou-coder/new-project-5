@@ -17420,6 +17420,285 @@ h3 {
   }
 }
 
+/* Sourcing V4: concise decision-led sourcing journey */
+.sourcing-v4-page {
+  --s4-ink: #071a34;
+  --s4-blue: #1762f6;
+  --s4-muted: #526982;
+  --s4-line: #dbe5f1;
+  background: #fff;
+  color: var(--s4-ink);
+}
+
+.sourcing-v4-hero {
+  padding: 64px 0;
+  background: linear-gradient(135deg, #f7faff 0%, #fff 60%);
+}
+
+.sourcing-v4-hero-grid,
+.sourcing-v4-trust-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.sourcing-v4-hero h1 {
+  max-width: 720px;
+  margin: 18px 0 0;
+  font-size: clamp(42px, 4.5vw, 64px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+}
+
+.sourcing-v4-lead {
+  max-width: 650px;
+  margin: 24px 0 0;
+  color: var(--s4-muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.sourcing-v4-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.sourcing-v4-actions > a,
+.sourcing-v4-trust a {
+  color: var(--s4-blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.sourcing-v4-boundary {
+  max-width: 650px;
+  margin: 22px 0 0;
+  border-top: 1px solid var(--s4-line);
+  color: #64758a;
+  font-size: 13px;
+  line-height: 1.5;
+  padding-top: 16px;
+}
+
+.sourcing-v4-hero-image {
+  margin: 0;
+  border-radius: 12px;
+  background: #0b2f65;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(10, 47, 105, 0.16);
+}
+
+.sourcing-v4-hero-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.2 / 1;
+  object-fit: cover;
+}
+
+.sourcing-v4-hero-image figcaption {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  padding: 13px 16px;
+}
+
+.sourcing-v4-section {
+  border-top: 1px solid var(--s4-line);
+  padding: 64px 0;
+}
+
+.sourcing-v4-heading {
+  max-width: 720px;
+  margin-bottom: 30px;
+}
+
+.sourcing-v4-heading h2,
+.sourcing-v4-trust h2,
+.sourcing-v4-final h2 {
+  margin: 14px 0 0;
+  font-size: clamp(30px, 3.2vw, 42px);
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.sourcing-v4-heading > p:not(.sourcing-v3-kicker) {
+  margin: 14px 0 0;
+  color: var(--s4-muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.sourcing-v4-need-grid,
+.sourcing-v4-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.sourcing-v4-need-grid article {
+  border-top: 3px solid var(--s4-blue);
+  background: #f7faff;
+  padding: 26px;
+}
+
+.sourcing-v4-need-grid span,
+.sourcing-v4-process li > span {
+  color: var(--s4-blue);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.sourcing-v4-need-grid h3,
+.sourcing-v4-capability-grid h3,
+.sourcing-v4-process h3 {
+  margin: 22px 0 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.sourcing-v4-need-grid p,
+.sourcing-v4-capability-grid p,
+.sourcing-v4-process p,
+.sourcing-v4-trust p,
+.sourcing-v4-final > div > p:not(.sourcing-v3-kicker) {
+  margin: 10px 0 0;
+  color: var(--s4-muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.sourcing-v4-categories {
+  background: #fbfdff;
+}
+
+.sourcing-v4-capability-grid article {
+  border: 1px solid var(--s4-line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sourcing-v4-capability-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.8 / 1;
+  object-fit: cover;
+}
+
+.sourcing-v4-capability-grid article > div {
+  padding: 24px;
+}
+
+.sourcing-v4-capability-grid h3 {
+  margin-top: 0;
+}
+
+.sourcing-v4-process {
+  background: #092d61;
+  color: #fff;
+}
+
+.sourcing-v4-process .sourcing-v3-kicker {
+  color: #80a9ff;
+}
+
+.sourcing-v4-process ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.18);
+  list-style: none;
+}
+
+.sourcing-v4-process li {
+  min-height: 230px;
+  background: #092d61;
+  padding: 26px;
+}
+
+.sourcing-v4-process h3 {
+  color: #fff;
+}
+
+.sourcing-v4-process p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.sourcing-v4-trust-grid > img {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.sourcing-v4-trust p {
+  max-width: 570px;
+  margin-bottom: 22px;
+  font-size: 16px;
+}
+
+.sourcing-v4-final {
+  padding: 64px 0;
+}
+
+.sourcing-v4-final > div > p:not(.sourcing-v3-kicker) {
+  max-width: 680px;
+  margin: 16px auto 26px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+@media (max-width: 900px) {
+  .sourcing-v4-hero-grid,
+  .sourcing-v4-trust-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .sourcing-v4-need-grid,
+  .sourcing-v4-capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sourcing-v4-process ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .sourcing-v4-hero,
+  .sourcing-v4-section,
+  .sourcing-v4-final {
+    padding: 44px 0;
+  }
+
+  .sourcing-v4-hero h1 {
+    font-size: 40px;
+  }
+
+  .sourcing-v4-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .sourcing-v4-actions > a {
+    text-align: center;
+  }
+
+  .sourcing-v4-process ol {
+    grid-template-columns: 1fr;
+  }
+
+  .sourcing-v4-process li {
+    min-height: 0;
+  }
+}
+
 .contact-help-card {
   grid-template-rows: auto auto 1fr;
   min-height: 270px;
@@ -18578,4 +18857,11 @@ button.contact-help-card > .contact-help-card-copy > span {
   .contact-response-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.sourcing-v4-page button.sourcing-v3-button {
+  border: 0;
+  background: var(--s4-blue);
+  color: #fff;
+  cursor: pointer;
 }
