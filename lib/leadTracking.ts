@@ -146,7 +146,7 @@ export function buildTallyUrl(
   const url = new URL(baseUrl);
 
   for (const [key, value] of Object.entries(attribution)) {
-    url.searchParams.set(key, value);
+    url.searchParams.set(key, String(value));
   }
 
   return url.toString();
