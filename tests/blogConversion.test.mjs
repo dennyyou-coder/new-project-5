@@ -10,6 +10,18 @@ const blogCtaSource = await readFile(
   new URL("../components/BlogConversionCta.tsx", import.meta.url),
   "utf8"
 ).catch(() => "");
+const blogSource = await readFile(
+  new URL("../app/blog/page.tsx", import.meta.url),
+  "utf8"
+);
+const articleSource = await readFile(
+  new URL("../app/blog/[slug]/page.tsx", import.meta.url),
+  "utf8"
+);
+const homeSource = await readFile(
+  new URL("../app/page.tsx", import.meta.url),
+  "utf8"
+);
 
 test("maps buying content to sourcing", () => {
   for (const category of ["Buyer Guide", "Sourcing Guide", "Sourcing"]) {
@@ -55,4 +67,27 @@ test("Blog CTA tracks views and clicks through the shared Tally transport", () =
   assert.match(blogCtaSource, /cta_click/);
   assert.match(blogCtaSource, /TallyButton/);
   assert.doesNotMatch(blogCtaSource, /category ===/);
+});
+
+test("Blog metadata relies on the root title template exactly once", () => {
+  assert.match(blogSource, /title: "Blog"/);
+  assert.doesNotMatch(blogSource, /title: "Blog \| World Clean Biz"/);
+  assert.match(blogSource, /openGraph:/);
+  assert.match(
+    blogSource,
+    /\/images\/industry\/about-forum-stage-2025\.jpg/
+  );
+});
+
+test("article footer uses one mapped conversion CTA", () => {
+  assert.match(articleSource, /<BlogConversionCta/);
+  assert.match(articleSource, /category=\{article\.category\}/);
+  assert.match(articleSource, /slug=\{article\.slug\}/);
+  assert.doesNotMatch(articleSource, /article_footer_contact/);
+  assert.doesNotMatch(articleSource, />Get Free Reports</);
+});
+
+test("Blog keeps a dedicated Newsletter form and homepage stays outside this batch", () => {
+  assert.match(blogSource, /<NewsletterLeadForm \/>/);
+  assert.doesNotMatch(homeSource, /BlogConversionCta/);
 });

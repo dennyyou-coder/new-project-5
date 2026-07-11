@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { TallyButton, TallyReportButton } from "@/components/LeadForms";
+import { BlogConversionCta } from "@/components/BlogConversionCta";
 import {
   getInsight,
   getInsights,
@@ -362,14 +362,11 @@ export default async function InsightDetailPage({ params }: Props) {
           </div>
         ) : null}
 
-          <div className="blog-article-footer-cta">
-            <TallyReportButton ctaLocation="article_footer_reports">
-              Get Free Reports
-            </TallyReportButton>
-            <TallyButton ctaLocation="article_footer_contact" form="contact">
-              Talk With Denny
-            </TallyButton>
-          </div>
+          <BlogConversionCta
+            category={article.category}
+            location="article_footer"
+            slug={article.slug}
+          />
         </div>
       </section>
 

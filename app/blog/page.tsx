@@ -16,11 +16,26 @@ export async function generateMetadata({ searchParams }: { searchParams?: Search
   });
 
   return {
-    title: "Blog | World Clean Biz",
+    title: "Blog",
     description:
       "World Clean Biz publishes cleaning appliance industry analysis, brand strategy, product category signals, supplier intelligence and global market observations.",
     alternates: {
       canonical: "/blog"
+    },
+    openGraph: {
+      title: "World Clean Biz Blog",
+      description:
+        "Cleaning appliance analysis, brand strategy, supplier intelligence and global market observations.",
+      type: "website",
+      url: "/blog",
+      images: ["/images/industry/about-forum-stage-2025.jpg"]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "World Clean Biz Blog",
+      description:
+        "Cleaning appliance analysis, brand strategy, supplier intelligence and global market observations.",
+      images: ["/images/industry/about-forum-stage-2025.jpg"]
     },
     robots: hasQueryParams
       ? {

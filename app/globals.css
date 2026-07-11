@@ -10894,6 +10894,33 @@ h3 {
   cursor: pointer;
 }
 
+.blog-conversion-cta {
+  align-items: center;
+  background: #0f2747;
+  color: #fff;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-top: 48px;
+  padding: 36px;
+}
+
+.blog-conversion-cta h2,
+.blog-conversion-cta p {
+  margin: 0;
+}
+
+.blog-conversion-cta h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  margin-top: 8px;
+}
+
+.blog-conversion-cta > div > p:last-child {
+  color: rgba(255, 255, 255, 0.78);
+  margin-top: 12px;
+  max-width: 680px;
+}
+
 .footer-link-button {
   border: 0;
   background: transparent;
@@ -18309,5 +18336,18 @@ h3 {
 
   .home-v7-hero-simple .home-v7-before {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .blog-conversion-cta {
+    align-items: stretch;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 24px;
+  }
+
+  .blog-conversion-cta .lead-form-trigger,
+  .blog-conversion-cta button {
+    width: 100%;
   }
 }
