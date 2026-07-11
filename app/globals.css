@@ -236,6 +236,16 @@
 .home-v9-trust-gallery img { width: 100%; height: 100%; object-fit: cover; }
 .home-v9-trust-gallery figcaption { position: absolute; right: 10px; bottom: 10px; left: 10px; border-radius: 9px; padding: 9px 12px; color: var(--v9-navy); background: rgba(255,255,255,.92); font-size: 12px; font-weight: 850; }
 
+.home-v9-testimonials { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--v9-line); }
+.home-v9-testimonial-head { display: flex; justify-content: space-between; gap: 32px; align-items: flex-end; margin-bottom: 24px; }
+.home-v9-testimonial-head h3 { margin: 0; color: var(--v9-navy); font-size: clamp(28px,3vw,38px); line-height: 1.1; }
+.home-v9-testimonial-head small { max-width: 390px; color: #8a5a18; font-size: 11px; line-height: 1.45; text-align: right; }
+.home-v9-testimonial-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.home-v9-testimonial-grid article { position: relative; border: 1px solid var(--v9-line); border-radius: 18px; padding: 28px; background: var(--v9-soft); }
+.home-v9-testimonial-grid article > span { display: block; height: 34px; color: var(--v9-blue); font-family: Georgia,serif; font-size: 54px; line-height: .9; }
+.home-v9-testimonial-grid blockquote { min-height: 168px; margin: 12px 0 22px; color: var(--v9-navy); font-size: 16px; font-weight: 650; line-height: 1.6; }
+.home-v9-testimonial-grid article > p { margin: 0; padding-top: 16px; border-top: 1px solid var(--v9-line); color: var(--v9-muted); font-size: 12px; font-weight: 850; line-height: 1.4; }
+
 .home-v9-commercial {
   color: #fff;
   background: linear-gradient(135deg, #061a34, #0b3264);
@@ -303,6 +313,11 @@
   .home-v9-trust-copy li { grid-template-columns: 1fr; gap: 4px; }
   .home-v9-trust-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 150px; }
   .home-v9-trust-gallery .home-v9-trust-main { grid-column: 1 / 3; grid-row: auto; }
+  .home-v9-testimonials { margin-top: 44px; padding-top: 38px; }
+  .home-v9-testimonial-head { display: block; }
+  .home-v9-testimonial-head small { display: block; margin-top: 14px; text-align: left; }
+  .home-v9-testimonial-grid { grid-template-columns: 1fr; }
+  .home-v9-testimonial-grid blockquote { min-height: auto; }
   .home-v9-commercial-grid h3 { font-size: 27px; }
   .home-v9-wce-actions,
   .home-v9-wce-actions .lead-form-trigger,

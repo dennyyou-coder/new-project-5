@@ -57,6 +57,14 @@ test("homepage pathways use industry imagery instead of text-only cards", () => 
   assert.match(homeSource, /className="home-v9-pathway-media"/);
 });
 
+test("homepage trust section includes clearly labelled draft testimonials", () => {
+  assert.match(homeSource, /What Industry Professionals Value/);
+  assert.match(homeSource, /Draft layout copy — replace with approved client feedback before production/);
+  assert.match(homeSource, /Founder · European Floorcare Brand/);
+  assert.match(homeSource, /Sourcing Director · North American Distributor/);
+  assert.equal((homeSource.match(/<blockquote>/g) || []).length, 3);
+});
+
 test("homepage limits editorial proof to three insights and one report", () => {
   assert.match(homeSource, /if \(unique\.size === 3\) break/);
   assert.doesNotMatch(homeSource, /reportCovers/);

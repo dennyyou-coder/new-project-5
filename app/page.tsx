@@ -187,6 +187,44 @@ export default function HomePage() {
             </figure>
           </div>
         </div>
+        <div className="home-v9-container home-v9-testimonials">
+          <div className="home-v9-testimonial-head">
+            <div>
+              <p className="home-v9-eyebrow">Client Perspective</p>
+              <h3>What Industry Professionals Value</h3>
+            </div>
+            <small>Draft layout copy — replace with approved client feedback before production.</small>
+          </div>
+          <div className="home-v9-testimonial-grid">
+            <article>
+              <span aria-hidden="true">“</span>
+              <blockquote>
+                Denny understands the cleaning industry from both the product
+                and business sides. His perspective helped us see the category
+                more clearly and ask better questions before making decisions.
+              </blockquote>
+              <p>Founder · European Floorcare Brand</p>
+            </article>
+            <article>
+              <span aria-hidden="true">“</span>
+              <blockquote>
+                Denny combines long-term industry experience with practical
+                knowledge of suppliers and product development. Conversations
+                with him are focused, direct and commercially useful.
+              </blockquote>
+              <p>Sourcing Director · North American Distributor</p>
+            </article>
+            <article>
+              <span aria-hidden="true">“</span>
+              <blockquote>
+                WCB brought useful context to the sourcing process—from product
+                trends and supplier capabilities to the practical questions we
+                needed to ask before making a decision.
+              </blockquote>
+              <p>Founder · European Floorcare Brand</p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section className="home-v9-section home-v9-commercial">
