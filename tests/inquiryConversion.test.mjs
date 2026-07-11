@@ -171,8 +171,8 @@ test("Sourcing does not repeat the two hero intent choices below the fold", () =
 });
 
 test("Sourcing uses alternating sales bands and visual storytelling", () => {
-  assert.match(sourcingSource, /sourcing-opportunity-stage-visual/);
-  assert.match(sourcingSource, /sourcing-opportunity-model-visual/);
+  assert.match(sourcingSource, /sourcing-opportunity-stage-image/);
+  assert.match(sourcingSource, /sourcing-opportunity-model-image/);
   assert.match(sourcingSource, /One Quotation/);
   assert.match(sourcingSource, /Managed Delivery/);
   assert.match(sourcingSource, /Supplier Search/);
@@ -181,4 +181,14 @@ test("Sourcing uses alternating sales bands and visual storytelling", () => {
   assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#eef5ff/s);
   assert.match(globalStyles, /\.sourcing-opportunity-models\s*\{[^}]*background:\s*#fff/s);
   assert.match(globalStyles, /\.sourcing-opportunity-team\s*\{[^}]*background:\s*#eaf2ff/s);
+});
+
+test("Sourcing grounds key sales sections with real visual evidence", () => {
+  assert.match(sourcingSource, /sourcing-opportunity-market-visual/);
+  assert.match(sourcingSource, /sourcing-opportunity-shortlist-preview/);
+  assert.match(sourcingSource, /sourcing-opportunity-stage-image/);
+  assert.match(sourcingSource, /sourcing-opportunity-model-image/);
+  assert.match(sourcingSource, /home-industry-products-2025\.jpg/);
+  assert.match(sourcingSource, /sourcing-product-components-2025\.jpg/);
+  assert.match(sourcingSource, /expo-business-matching-2026\.jpg/);
 });
