@@ -102,7 +102,7 @@ test("Sourcing presents the approved opportunity-led funnel", () => {
 
   assert.match(sourcingSource, /inquiryIntent="opportunity_discovery"/);
   assert.match(sourcingSource, /inquiryIntent="specific_product"/);
-  assert.match(sourcingSource, /TallyInlineEmbed/);
+  assert.match(sourcingSource, /ctaLocation="sourcing_footer"/);
   assert.match(sourcingSource, /SOURCING_CATEGORIES\.map/);
   assert.match(sourcingSource, /productCategory=\{item\.value\}/);
   assert.match(sourcingSource, /Initial Response Within 8 Hours/);
@@ -146,11 +146,19 @@ test("early sourcing sections use the shared icon system for scanning", () => {
   assert.match(sourcingSource, /InlineIcon name=\{item\.icon\}/);
 });
 
-test("Sourcing visual hierarchy separates opportunity, risk and action colors", () => {
-  assert.match(globalStyles, /--so-opportunity:\s*#0f8b8d/);
-  assert.match(globalStyles, /--so-warning:\s*#d98e04/);
-  assert.match(globalStyles, /\.sourcing-opportunity-driver-icon[^}]*color:\s*var\(--so-opportunity\)/s);
-  assert.match(globalStyles, /\.sourcing-opportunity-risk-icon[^}]*color:\s*var\(--so-warning\)/s);
+test("Sourcing visual hierarchy stays within the blue and white brand system", () => {
+  assert.doesNotMatch(globalStyles, /--so-opportunity:/);
+  assert.doesNotMatch(globalStyles, /--so-warning:/);
+  assert.match(globalStyles, /\.sourcing-opportunity-driver-icon[^}]*color:\s*var\(--so-blue\)/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-risk-icon[^}]*color:\s*#8eb3ff/s);
   assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#fff/s);
   assert.match(globalStyles, /\.sourcing-opportunity-process \.sourcing-opportunity-heading h2\s*\{[^}]*color:\s*var\(--so-ink\)/s);
+});
+
+test("all primary Sourcing conversion paths use visible blue buttons", () => {
+  assert.doesNotMatch(sourcingSource, /TallyInlineEmbed/);
+  assert.doesNotMatch(sourcingSource, /sourcing-opportunity-text-button/);
+  assert.match(sourcingSource, /sourcing-opportunity-intent-button/);
+  assert.match(sourcingSource, /sourcing-opportunity-category-cta/);
+  assert.match(sourcingSource, /sourcing-opportunity-final-cta/);
 });

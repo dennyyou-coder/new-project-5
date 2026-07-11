@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { InlineIcon } from "@/components/Icon";
-import { TallyButton, TallyInlineEmbed } from "@/components/LeadForms";
+import { TallyButton } from "@/components/LeadForms";
 import { SOURCING_CATEGORIES } from "@/lib/inquiryConversion";
 
 export const metadata: Metadata = {
@@ -104,8 +104,8 @@ export default function SourcingPage() {
 
       <section className="sourcing-opportunity-intents">
         <div className="sourcing-opportunity-shell sourcing-opportunity-intent-grid">
-          <article className="sourcing-opportunity-intent-primary"><span>01</span><h2>Show Me New Product Opportunities</h2><p>For brands and distributors looking for the next category, product direction or growth opportunity.</p><TallyButton className="sourcing-opportunity-text-button" ctaLocation="sourcing_intent_opportunity" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Discover Product Opportunities →</TallyButton></article>
-          <article><span>02</span><h2>I Know What I Need</h2><p>For buyers who already have a product, reference model or OEM/ODM request and need execution from China.</p><TallyButton className="sourcing-opportunity-text-button" ctaLocation="sourcing_intent_specific_product" form="sourcing" inquiryIntent="specific_product" trackClick>Request Products & Pricing →</TallyButton></article>
+          <article className="sourcing-opportunity-intent-primary"><span>01</span><h2>Show Me New Product Opportunities</h2><p>For brands and distributors looking for the next category, product direction or growth opportunity.</p><TallyButton className="sourcing-opportunity-intent-button" ctaLocation="sourcing_intent_opportunity" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Discover Product Opportunities</TallyButton></article>
+          <article><span>02</span><h2>I Know What I Need</h2><p>For buyers who already have a product, reference model or OEM/ODM request and need execution from China.</p><TallyButton className="sourcing-opportunity-intent-button" ctaLocation="sourcing_intent_specific_product" form="sourcing" inquiryIntent="specific_product" trackClick>Request Products & Pricing</TallyButton></article>
         </div>
       </section>
 
@@ -149,7 +149,7 @@ export default function SourcingPage() {
       <section className="sourcing-opportunity-section sourcing-opportunity-categories" id="opportunity-areas">
         <div className="sourcing-opportunity-shell">
           <div className="sourcing-opportunity-heading"><p>Product Opportunity Areas</p><h2>Where The Next Opportunity Could Begin.</h2></div>
-          <div className="sourcing-opportunity-category-grid">{SOURCING_CATEGORIES.map((item) => <TallyButton className="sourcing-opportunity-category-card" ctaLocation={item.ctaLocation} form="sourcing" inquiryIntent="opportunity_discovery" key={item.value} productCategory={item.value} trackClick><span className="sourcing-opportunity-category-image"><img src={item.image} alt={`${item.title} opportunity area`} /></span><span className="sourcing-opportunity-category-copy"><span><InlineIcon name={item.icon} /><strong>{item.title}</strong></span><em>{item.description}</em><span>Explore This Opportunity →</span></span></TallyButton>)}</div>
+          <div className="sourcing-opportunity-category-grid">{SOURCING_CATEGORIES.map((item) => <TallyButton className="sourcing-opportunity-category-card" ctaLocation={item.ctaLocation} form="sourcing" inquiryIntent="opportunity_discovery" key={item.value} productCategory={item.value} trackClick><span className="sourcing-opportunity-category-image"><img src={item.image} alt={`${item.title} opportunity area`} /></span><span className="sourcing-opportunity-category-copy"><span><InlineIcon name={item.icon} /><strong>{item.title}</strong></span><em>{item.description}</em><span className="sourcing-opportunity-category-cta">Explore This Opportunity</span></span></TallyButton>)}</div>
           <p className="sourcing-opportunity-secondary-scope">We can also support relevant projects involving cleaning tools, consumables, chemicals, hygiene products, components and replacement parts.</p>
         </div>
       </section>
@@ -159,15 +159,15 @@ export default function SourcingPage() {
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-models">
-        <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Two Ways To Work With Us</p><h2>One Goal: A More Competitive Product.</h2></div><div className="sourcing-opportunity-model-grid"><article className="sourcing-opportunity-model-primary"><small>Primary</small><h3>Buy Directly From World Clean Biz</h3><p>We recommend products, provide one quotation and manage sourcing, OEM/ODM, production, quality, export and delivery.</p></article><article><small>Also Available</small><h3>Your China Sourcing Office</h3><p>We can find new suppliers or manage suppliers you already work with through a defined sourcing partnership.</p></article></div><p className="sourcing-opportunity-model-note">You do not need to choose a model now. We recommend the right approach after understanding your project.</p></div>
+        <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Two Ways To Work With Us</p><h2>One Goal: A More Competitive Product.</h2></div><div className="sourcing-opportunity-model-grid"><article className="sourcing-opportunity-model-primary"><small>Primary</small><h3>Buy Directly From World Clean Biz</h3><p>We recommend products, provide one quotation and manage sourcing, OEM/ODM, production, quality, export and delivery.</p></article><article><small>Also Available</small><h3>Your China Sourcing Office</h3><p>We can find new suppliers or manage suppliers you already work with through a defined sourcing partnership.</p></article></div><p className="sourcing-opportunity-model-note">You do not need to choose a model now. We recommend the right approach after understanding your project.</p><TallyButton className="sourcing-opportunity-button" ctaLocation="sourcing_models" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Discuss My Product Opportunity</TallyButton></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-team">
         <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>20 years inside the cleaning industry</li><li>Industry insight for securities firms and investment banks</li><li>Currently supporting cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
       </section>
 
-      <section className="sourcing-opportunity-section sourcing-opportunity-form-section" id="shortlist-form">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-form-grid"><div><p className="sourcing-opportunity-eyebrow">Tell Denny About Your Market</p><h2>Get Your Free Product Opportunity Shortlist.</h2><p>For relevant B2B requests, we respond within 8 hours and normally prepare 2–3 initial product or category directions within 1–2 business days.</p><ul><li>Business buyers only</li><li>Paid samples available</li><li>Trial orders subject to applicable MOQ</li></ul></div><TallyInlineEmbed className="sourcing-opportunity-inline-form" ctaLocation="sourcing_inline_form" form="sourcing" inquiryIntent="opportunity_discovery" title="Free Product Opportunity Shortlist inquiry form" /></div>
+      <section className="sourcing-opportunity-section sourcing-opportunity-final-cta" id="shortlist-form">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-final-cta-card"><p className="sourcing-opportunity-eyebrow">Tell Denny About Your Market</p><h2>Get Your Free Product Opportunity Shortlist.</h2><p>For relevant B2B requests, we respond within 8 hours and normally prepare 2–3 initial product or category directions within 1–2 business days.</p><ul><li>Business buyers only</li><li>Paid samples available</li><li>Trial orders subject to applicable MOQ</li></ul><TallyButton className="sourcing-opportunity-button sourcing-opportunity-final-button" ctaLocation="sourcing_footer" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Get My Free Product Opportunity Shortlist</TallyButton></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-faq"><div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Before You Start</p><h2>Frequently Asked Questions</h2></div><div className="sourcing-opportunity-faq-list">{faqs.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></div></section>
