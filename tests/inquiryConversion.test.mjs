@@ -44,7 +44,7 @@ test("both pages include canonical and social metadata", () => {
 });
 
 test("Contact explains the inquiry path with visual trust evidence", () => {
-  assert.match(definitionSource, /Find Products & Suppliers/);
+  assert.match(definitionSource, /title: "Sourcing"/);
   assert.match(contactSource, /What To Include In Your Inquiry/);
   assert.match(contactSource, /sourcing-supplier-meeting-2026\.jpg/);
   assert.match(contactSource, /Inside the cleaning industry since 2006/);

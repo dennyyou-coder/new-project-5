@@ -18488,7 +18488,7 @@ h3 {
 
 .sourcing-v3-product-grid > .lead-form-trigger,
 .contact-help-grid > .lead-form-trigger {
-  display: block;
+  display: flex;
   height: 100%;
   width: 100%;
 }
@@ -18503,6 +18503,8 @@ h3 {
 }
 
 button.contact-help-card {
+  align-self: stretch;
+  height: 100%;
   grid-template-columns: minmax(0, 1fr);
 }
 

@@ -30,7 +30,7 @@ export type ContactInquiry = {
 };
 
 export const CONTACT_INQUIRIES: ContactInquiry[] = [
-  { icon: "factory", title: "Find Products & Suppliers", description: "For sourcing, OEM/ODM, private label and product development questions.", value: "sourcing", ctaLocation: "contact_sourcing", form: "sourcing", buttonLabel: "Start A Sourcing Inquiry" },
+  { icon: "factory", title: "Sourcing", description: "For sourcing, OEM/ODM, private label and product development questions.", value: "sourcing", ctaLocation: "contact_sourcing", form: "sourcing", buttonLabel: "Start A Sourcing Inquiry" },
   { icon: "calendar", title: "World Clean Expo", description: "For visiting, exhibiting, partnerships and event opportunities.", value: "expo", ctaLocation: "contact_expo", form: "expo", buttonLabel: "Send An Expo Inquiry" },
   { icon: "newspaper", title: "Media & Editorial", description: "For interviews, industry news, editorial collaboration and media requests.", value: "media", ctaLocation: "contact_media", form: "contact", buttonLabel: "Send A Media Inquiry" },
   { icon: "message", title: "General Business", description: "For partnerships and other cleaning industry business questions.", value: "general", ctaLocation: "contact_general", form: "contact", buttonLabel: "Send A General Inquiry" }
