@@ -1,169 +1,171 @@
-# World Clean Biz Site Visual Refresh — Phase 1 Design
+# World Clean Biz 全站视觉配图重制——第一阶段设计方案
 
-## Goal
+## 一、目标
 
-Raise the perceived quality of World Clean Biz by rebuilding the non-article image system around authentic industry access, disciplined art direction, and consistent image treatment.
+通过重新建立非文章页面的配图系统，提升 World Clean Biz 的整体档次与专业感。新的视觉系统以真实行业资源、统一的图片指导标准和一致的页面呈现为基础。
 
-Phase 1 covers the homepage and About page. It establishes the visual standard that will later be applied to Sourcing, Contact, Reports, and World Clean Expo.
+第一阶段处理首页和 About 页面，并由这两个页面建立全站统一标准。确认效果后，再把同一标准应用到 Sourcing、Contact、Reports 和 World Clean Expo。
 
-## Scope
+## 二、范围
 
-### Included
+### 本阶段包含
 
-- Homepage non-article imagery
-- About page imagery
-- Image selection, replacement, crop, grading, compression, and responsive presentation needed for those two pages
-- A small number of new generated or licensed visuals where suitable real photography is unavailable
-- Image-related CSS adjustments required to preserve composition on desktop and mobile
-- Metadata image references for the homepage and About page when their current image is replaced
+- 首页中不属于文章内容的配图
+- About 页面配图
+- 上述页面的图片筛选、替换、裁切、调色、压缩和响应式呈现
+- 在没有合适真实照片时，少量使用新生成或具有合法使用条件的图片
+- 为保证电脑端和移动端构图而进行的必要图片样式调整
+- 当首页或 About 的分享图片被替换时，同步更新对应的元数据图片路径
 
-### Excluded
+### 本阶段不包含
 
-- Blog article body images
-- Blog article cover images and editorial cards sourced from articles
-- Page copy, information architecture, navigation, forms, tracking, and business logic
-- Sourcing, Contact, Reports, and World Clean Expo image replacement in this phase
-- Unrelated redesign or component refactoring
+- 博客文章正文配图
+- 博客文章封面，以及首页文章卡片所使用的文章封面
+- 页面文案、信息结构、导航、表单、数据追踪和业务逻辑
+- Sourcing、Contact、Reports 和 World Clean Expo 的图片替换；这些页面放在第二阶段
+- 与配图无关的页面重构或组件优化
 
-## Approved Visual Direction
+## 三、已经确认的视觉方向
 
-The primary direction is **Premium Industrial Editorial**, supported by a restrained amount of **Cinematic Technology**.
+主方向是「高端工业纪实」，辅以少量「电影感科技视觉」。
 
-The site should look like an industry intelligence and business-access platform with real operating experience. It should not resemble a generic corporate stock-photo site, a consumer electronics advertisement, or an AI-generated concept gallery.
+网站应当呈现为一个拥有真实行业经验、行业情报能力和商业连接能力的平台，而不是普通企业图库网站、消费电子广告页面或 AI 概念图展示站。
 
-### Visual characteristics
+### 视觉特征
 
-- Authentic factories, exhibitions, products, forums, supplier meetings, and industry professionals
-- Strong geometry and uncluttered compositions
-- Controlled navy, steel grey, cool white, and neutral material tones
-- Natural skin, product, and material texture
-- Moderate contrast with clean highlights and readable shadow detail
-- Cinematic close product or technology details only where they add polish
-- Consistent horizon, perspective, crop logic, and visual density across image groups
+- 真实的工厂、展会、产品、论坛、供应商会议和行业人物
+- 构图清晰，主体明确，画面具有秩序感和空间感
+- 颜色以深蓝、钢灰、冷白和中性材质色为主
+- 人物肤色、产品材质和环境质感保持自然
+- 适度对比度，高光干净，暗部保留有效细节
+- 只在能够提升质感时使用电影感产品特写或技术细节
+- 同一组图片保持相近的视角、裁切逻辑、主体比例和画面密度
 
-### Avoid
+### 明确避免
 
-- Over-saturated colors and heavy gradients
-- Obvious AI artifacts or plastic-looking surfaces
-- Generic handshake, call-center, or anonymous office-team imagery
-- Low-resolution screenshots or noisy exhibition photos without a clear subject
-- Mixed illustration, product-render, documentary, and lifestyle styles within one section
-- Reusing one image to represent several unrelated business messages
-- Distorted aspect ratios, accidental head crops, or inconsistent subject scale
+- 过度饱和、廉价渐变和强烈滤镜
+- 明显的 AI 错误或塑料质感
+- 普通握手照、客服团队照和缺少行业特征的办公室图库照片
+- 低清晰度截图，或主体不明确、环境杂乱的展会照片
+- 在同一区域混用插画、产品渲染、纪实照片和生活方式照片
+- 用同一张图片表达多个没有直接关系的业务信息
+- 图片变形、意外切掉头顶或主体比例不一致
 
-## Asset Strategy
+## 四、素材策略
 
-Use a hybrid sourcing model in this order:
+采用混合素材方案，并严格按照以下优先顺序：
 
-1. **Real World Clean Biz photography** for Denny, forums, exhibitions, supplier meetings, and other trust evidence.
-2. **Carefully selected licensed or reusable photography** for product and technology scenes when an authentic owned image is not suitable.
-3. **AI-generated imagery only to fill genuine gaps**, mainly controlled product, technology, or abstract commercial scenes. Generated images must be checked for physical plausibility, brand confusion, malformed products, false event claims, and visible AI artifacts.
+1. Denny、论坛、展会、供应商会议和其他信任信息，优先使用 World Clean Biz 自有真实照片。
+2. 当自有照片不适合时，产品和技术场景使用经过严格筛选、具备合法使用条件的图片。
+3. 只有在真实素材确实无法满足要求时，才使用 AI 生成图片，主要用于可控的产品、技术或抽象商业场景。
 
-Every retained real image must earn its place through subject relevance, resolution, composition, and consistency. Existing assets are not preserved by default.
+所有 AI 图片必须检查物理合理性、产品结构、品牌混淆、虚假展会暗示和明显生成痕迹。
 
-## Homepage Image System
+现有图片不会默认保留。每张图片都必须在内容相关性、清晰度、构图和整体一致性方面达到标准。
 
-### Hero product categories
+## 五、首页图片系统
 
-Keep the existing six-category concept and layout. Rebuild the six images as one coherent visual family:
+### 首屏六类产品
 
-- Robot vacuums
-- Floor washers
-- Pool robots
-- Robotic lawn mowers
-- Commercial cleaning equipment
-- Emerging cleaning categories
+保留现有的六类产品逻辑和页面布局，但把六张图片重做为同一个视觉系列：
 
-All six should share comparable camera height, product scale, lighting quality, background cleanliness, and color treatment. Products must remain believable and category-specific. Avoid visible third-party logos when possible.
+- Robot Vacuums
+- Floor Washers
+- Pool Robots
+- Robotic Lawn Mowers
+- Commercial Cleaning Equipment
+- Emerging Cleaning Categories
 
-### Core category section
+六张图片需要保持相近的拍摄高度、产品比例、光线质量、背景整洁度和颜色处理。产品形态必须可信，并且能够准确代表对应品类。尽量避免出现清晰的第三方品牌标志。
 
-The same category family may reuse the approved six master images when the crop and size differ. This is intentional system reuse, not arbitrary repetition.
+### 核心品类区域
 
-### Three business pathways
+核心品类区域可以继续使用经过确认的六张主图片，但应采用适合该模块的新裁切比例。这属于视觉系统的统一复用，不属于无意义的重复用图。
 
-Use three clearly different editorial scenes:
+### 三个业务入口
 
-- Market Intelligence: product, market, or analytical observation
-- Product & Sourcing: product evaluation, supplier access, or supply-chain work
-- World Clean Expo: credible exhibition scale and industry connection
+分别使用三个内容明确、彼此不同的行业场景：
 
-Each scene should communicate its business purpose without relying on the caption.
+- Market Intelligence：产品观察、市场研究或分析判断场景
+- Product & Sourcing：产品评估、供应商资源或供应链执行场景
+- World Clean Expo：可信的展会规模和行业连接场景
 
-### Denny and trust section
+即使不看文字，图片本身也应当能够表达对应业务方向。
 
-Use authentic Denny and industry-network photography. Preserve documentary credibility while improving crop, color, clarity, and visual hierarchy. Do not turn Denny into an artificial studio portrait.
+### Denny 与信任区域
 
-The three testimonial portraits are retained unless a replacement set is clearly superior and visually consistent. They must not be mixed with event photography or generated identities.
+使用真实的 Denny 和行业人脉照片，在保留纪实可信度的基础上改善裁切、颜色、清晰度和视觉层级。不得把 Denny 处理成失真的影棚商业肖像。
 
-### Editorial article cards
+三张客户评价头像暂时保留。只有找到明显更好、且风格完全统一的一组素材时才考虑替换。客户头像不得与展会纪实照或 AI 生成人物混用。
 
-Article-derived cover images remain unchanged in Phase 1 because article imagery is excluded.
+### 文章卡片
 
-## About Page Image System
+首页文章卡片使用的图片来自文章封面，本阶段不做修改。
 
-### Hero
+## 六、About 页面图片系统
 
-Use a strong authentic image of Denny in a relevant industry environment. The image must support his role as founder, organizer, entrepreneur, and industry connector. It should allow safe desktop and mobile crops without cutting the head, hands, or primary context.
+### 首屏
 
-### Industry proof
+使用一张真实、有力量、能够体现 Denny 行业环境的照片。图片需要支持他作为创始人、主办方、创业者和行业连接者的身份，同时能够适配电脑端和移动端裁切，不能切掉头部、手部或关键环境信息。
 
-Use distinct scenes for:
+### 行业证明
 
-- Speaking and analysis
-- Product and supplier work
-- Expo and business connections
+以下三类信息使用不同的真实场景：
 
-Avoid using the same supplier-meeting photograph for multiple claims.
+- 演讲和行业分析
+- 产品与供应商工作
+- 展会与商务连接
 
-### Network and execution sections
+不再反复使用同一张供应商会议照片表达多个不同信息。
 
-Favor wider compositions with visible context and credible interaction. The image should show the environment and relationships, not just anonymous people standing together.
+### 行业网络与团队执行
 
-## Image Production Rules
+优先选择能够展示环境、互动和真实关系的较宽构图，而不是只有几个人站在一起的普通合影。图片需要体现人物所处场景和行业关系。
 
-- Prepare source masters before export; do not stretch images with CSS.
-- Export web images at an appropriate pixel size for their maximum rendered width and high-density displays.
-- Prefer WebP or AVIF for photographic assets when the project pipeline supports them; retain PNG only when transparency is necessary.
-- Use consistent aspect-ratio families per component rather than one crop for every context.
-- Preserve focal points through explicit `object-position` rules only when needed.
-- Compress files without visible banding, smearing, or loss of facial detail.
-- Use descriptive English filenames and alt text.
-- Do not introduce external runtime image dependencies; production assets must be stored locally in the project.
+## 七、图片制作规则
 
-## Implementation Boundaries
+- 先处理原始图片，再导出网页版本；禁止通过 CSS 拉伸图片。
+- 导出尺寸需要覆盖组件最大显示宽度和高清屏需求，但不能使用远超实际需要的大文件。
+- 照片优先使用 WebP 或 AVIF；只有需要透明背景时才保留 PNG。
+- 每种页面组件建立固定的图片比例，不强迫所有图片使用同一种裁切。
+- 只有在确实需要保护主体时，才单独设置 `object-position`。
+- 压缩后不得出现明显色带、涂抹感或人物细节丢失。
+- 文件名和替代文字使用准确、清晰的英文描述。
+- 正式网站不得依赖外部图片地址，最终图片必须保存在项目本地。
 
-The first implementation should change only:
+## 八、实施边界
 
-- Homepage and About page image references when replacements are needed
-- New or replaced assets under a dedicated non-article image location
-- Image-specific styles required for crop and responsive behavior
-- Tests that verify approved image references, page structure preservation, and absence of old rejected assets
+第一阶段实施只允许修改：
 
-The current copy, conversion flow, components, and page structure remain unchanged unless an image cannot be presented correctly without a small, isolated image-container adjustment.
+- 首页和 About 页面的图片引用
+- 新增或替换的非文章图片文件
+- 为图片裁切和响应式显示所必需的局部样式
+- 用于验证新图片路径、页面结构未变化和旧问题图片不再使用的测试
 
-## Validation
+当前页面文案、转化路径、组件和整体结构保持不变。只有当现有图片容器确实无法正确展示新图片时，才允许进行小范围、独立的图片容器调整。
 
-Phase 1 is ready for review when:
+## 九、验收标准
 
-- Homepage and About page load without broken images
-- All replaced images are local production assets
-- No article image or article content has changed
-- Existing homepage, About, and identity consistency tests pass
-- Full Next.js production build passes
-- `git diff --check` passes
-- Desktop and mobile browser checks show no stretching, unintended cropping, overflow, or layout regression
-- Browser console shows no new errors
-- The image family visibly follows the approved industrial-editorial direction
-- A Vercel Preview is available for one concentrated visual review before any merge to `main`
+达到以下条件后，第一阶段才可以交付预览：
 
-## Delivery Sequence
+- 首页和 About 页面所有图片正常加载
+- 所有替换后的图片均为项目内的本地正式素材
+- 博客文章图片和文章内容没有发生变化
+- 首页、About 和 Denny 身份一致性测试全部通过
+- Next.js 正式构建通过
+- `git diff --check` 通过
+- 电脑端和移动端不存在图片拉伸、异常裁切、溢出或页面结构回退
+- 浏览器控制台没有新增错误
+- 整组图片符合已确认的高端工业纪实方向
+- 提供一个 Vercel Preview，集中进行一次视觉验收
 
-1. Audit all homepage and About image slots and rank existing assets as retain, reprocess, or replace.
-2. Assemble a small candidate board for the key visual families.
-3. Produce and optimize the approved asset set.
-4. Wire assets into the existing pages with minimal image-container adjustments.
-5. Run automated and browser validation.
-6. Push the feature branch and provide one Vercel Preview for visual approval.
-7. Do not merge to `main` until the user explicitly approves publication.
+## 十、执行顺序
+
+1. 盘点首页和 About 的全部图片位置，把现有素材分为保留、重新处理和替换。
+2. 为主要视觉系列建立候选素材板。
+3. 制作、统一调色并优化正式图片文件。
+4. 在不改变页面结构的前提下替换图片，并进行必要的局部图片容器调整。
+5. 完成自动化测试和真实浏览器验证。
+6. 推送功能分支并提供 Vercel Preview，集中进行一次视觉确认。
+7. 未经用户明确确认发布，不得合并到 `main`。
 
