@@ -126,6 +126,50 @@ The page may use World Clean Biz's industry estimate:
 
 The page should state that market growth alone does not guarantee profit. The advantage lies in selecting a category before products become commoditized and margins decline.
 
+### From access and relationships to judgment and competitiveness
+
+The page should explain the industry's structural change through a compact `Then vs Today` comparison rather than adding a long historical narrative.
+
+#### 1. Supply
+
+**Then:** More than ten years ago, product supply was more limited. Finding a reliable supplier could itself create a commercial advantage, and a distributor could often place an order and sell at a profit.
+
+**Today:** Suppliers and products are abundant. A buyer may see dozens of nearly identical machines at one trade show and still not know which product, technology or factory is the right choice.
+
+Core conclusion:
+
+> Access is no longer the advantage. Judgment is.
+
+#### 2. Product selection
+
+**Then:** The main sourcing question was often `Who can make this?`
+
+**Today:** The more valuable questions are `What should we sell next?`, `Which solution is commercially mature?` and `How can we enter before the category becomes crowded?`
+
+#### 3. Development speed
+
+**Then:** A 12–15 month development cycle could still fit the pace of many product categories.
+
+**Today:** In fast-moving categories, development cycles may compress to roughly 6–8 months while technologies, components and factory capabilities continue to change.
+
+#### 4. Channel relationships
+
+**Then:** Long-term personal and channel relationships could protect sales across multiple product cycles. Partners who had worked together for 20 years often continued buying a broad range of products.
+
+**Today:** Those same distributors and retailers face pressure on price, growth, speed and product competitiveness. Even long-term partners may need to work with lower-cost or faster-moving Chinese brands.
+
+Core conclusion:
+
+> Relationships still matter. But relationships cannot compensate for an uncompetitive product.
+
+Do not claim that all overseas channels will abandon established partners. The point is that commercial pressure makes competitive products, cost and speed increasingly important alongside relationships.
+
+The final transition into Denny's role should be:
+
+> The sourcing question has changed from "Who can make this?" to "What should we sell next—and how can we bring it to market before everyone else?"
+
+Denny helps overseas brands and distributors move from relationship-based confidence to product-based competitiveness through earlier opportunity judgment, current technical solutions and the right China supply-chain response.
+
 ### Development speed and supply-chain change
 
 World Clean Biz observes that, in many fast-moving cleaning equipment categories, product development cycles have compressed from roughly 12–15 months to 6–8 months.
@@ -318,14 +362,17 @@ The page may explain both models, but the first lead form must not require the v
 
 ### Section 4: Competitive Reality
 
-- Chinese brands gaining ground.
-- Cross-border sellers building global channels.
-- Traditional product cycles moving too slowly.
+- Use one compact four-row `Then vs Today` comparison instead of a long narrative.
+- Supply: limited supply vs supplier and product overload.
+- Selection: finding a factory vs identifying the right opportunity.
+- Speed: 12–15 month cycles vs roughly 6–8 months in fast-moving categories.
+- Channels: relationship protection vs price, speed and product pressure.
+- Include the conclusions `Access is no longer the advantage. Judgment is.` and `Relationships cannot compensate for an uncompetitive product.`
 - Buyer implication: decide what to sell next and act faster.
 
 ### Section 5: The Old Sourcing Model Is Too Slow
 
-- World Clean Biz observation: development cycles in many fast-moving categories have compressed from roughly 12–15 months to 6–8 months.
+- Build on the speed row without repeating its full historical comparison.
 - Supply-chain movement: `Technology -> Components -> Molds -> Factories -> Cost -> Time To Market`.
 - Three risks: outdated before launch, more expensive than competitors and slower to market.
 - Core message: faster sourcing is not enough; earlier judgment is required.
