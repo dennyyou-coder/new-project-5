@@ -4,12 +4,12 @@ import { TallyButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
 
 const heroProducts = [
-  { label: "Robot Vacuums", image: "/images/sourcing/robotic-vacuums.png", alt: "Robot vacuum product category" },
-  { label: "Floor Washers", image: "/images/sourcing/floor-washers.png", alt: "Hard floor washer product category" },
-  { label: "Pool Robots", image: "/images/sourcing/pool-robots.png", alt: "Robotic pool cleaner product category" },
-  { label: "Robotic Lawn Mowers", image: "/images/sourcing/lawn-robots.png", alt: "Robotic lawn mower product category" },
-  { label: "Commercial Cleaning", image: "/images/sourcing/commercial-cleaning.png", alt: "Commercial cleaning robot product category" },
-  { label: "Emerging Categories", image: "/images/industry/home-industry-products-2025.jpg", alt: "Emerging cleaning product categories" }
+  { label: "Robot Vacuums", image: "/images/sourcing/robotic-vacuums.png", alt: "Robot vacuum product category", text: "New functions, brands and channels continue to reshape floorcare." },
+  { label: "Floor Washers", image: "/images/sourcing/floor-washers.png", alt: "Hard floor washer product category", text: "Fast product iteration is expanding the hard-floor cleaning market." },
+  { label: "Pool Robots", image: "/images/sourcing/pool-robots.png", alt: "Robotic pool cleaner product category", text: "Automated pool maintenance is moving into broader retail channels." },
+  { label: "Robotic Lawn Mowers", image: "/images/sourcing/lawn-robots.png", alt: "Robotic lawn mower product category", text: "Outdoor robotics is entering a faster global adoption cycle." },
+  { label: "Commercial Cleaning", image: "/images/sourcing/commercial-cleaning.png", alt: "Commercial cleaning robot product category", text: "Facilities and service operators are testing new automation models." },
+  { label: "Emerging Categories", image: "/images/industry/home-industry-products-2025.jpg", alt: "Emerging cleaning product categories", text: "New equipment, components and formats are still taking shape." }
 ];
 
 const pathways = [
@@ -125,6 +125,33 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="home-v9-section home-v9-categories">
+        <div className="home-v9-container">
+          <div className="home-v9-category-head">
+            <div>
+              <p className="home-v9-eyebrow">Core Product Categories</p>
+              <h2>Categories Where The Next Opportunities Are Forming</h2>
+            </div>
+            <p>
+              WCB follows the products where technology, suppliers, brands and
+              channel demand are changing fastest.
+            </p>
+          </div>
+          <div className="home-v9-category-grid">
+            {heroProducts.map((product, index) => (
+              <article key={product.label}>
+                <img src={product.image} alt={product.alt} />
+                <div>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <h3>{product.label}</h3>
+                  <p>{product.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="home-v9-section home-v9-pathways">
         <div className="home-v9-container">
           <div className="home-v9-heading">
@@ -197,6 +224,7 @@ export default function HomePage() {
           </div>
           <div className="home-v9-testimonial-grid">
             <article>
+              <div className="home-v9-testimonial-avatar home-v9-avatar-founder" role="img" aria-label="Fictional placeholder portrait for European floorcare brand founder" />
               <span aria-hidden="true">“</span>
               <blockquote>
                 Denny understands the cleaning industry from both the product
@@ -206,6 +234,7 @@ export default function HomePage() {
               <p>Founder · European Floorcare Brand</p>
             </article>
             <article>
+              <div className="home-v9-testimonial-avatar home-v9-avatar-sourcing" role="img" aria-label="Fictional placeholder portrait for North American distributor sourcing director" />
               <span aria-hidden="true">“</span>
               <blockquote>
                 Denny combines long-term industry experience with practical
@@ -215,6 +244,7 @@ export default function HomePage() {
               <p>Sourcing Director · North American Distributor</p>
             </article>
             <article>
+              <div className="home-v9-testimonial-avatar home-v9-avatar-founder" role="img" aria-label="Fictional placeholder portrait for European floorcare brand founder" />
               <span aria-hidden="true">“</span>
               <blockquote>
                 WCB brought useful context to the sourcing process—from product

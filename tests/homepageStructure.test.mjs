@@ -4,6 +4,7 @@ import test from "node:test";
 
 const homeSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
 const headerSource = await readFile(new URL("../components/Header.tsx", import.meta.url), "utf8");
+const cssSource = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
 const updatesSource = await readFile(
   new URL("../components/HomeUpdatesForm.tsx", import.meta.url),
   "utf8"
@@ -50,6 +51,13 @@ test("homepage retains core category semantics without the duplicate category gr
   assert.doesNotMatch(homeSource, /sourcingItems/);
 });
 
+test("homepage restores a compact standalone six-category section", () => {
+  assert.match(homeSource, /className="home-v9-section home-v9-categories"/);
+  assert.match(homeSource, /Categories Where The Next Opportunities Are Forming/);
+  assert.match(homeSource, /className="home-v9-category-grid"/);
+  assert.match(homeSource, /heroProducts\.map/);
+});
+
 test("homepage pathways use industry imagery instead of text-only cards", () => {
   assert.match(homeSource, /image: "\/images\/sourcing\/robotic-vacuums\.png"/);
   assert.match(homeSource, /image: "\/images\/industry\/sourcing-supplier-meeting-2026\.jpg"/);
@@ -63,6 +71,9 @@ test("homepage trust section includes clearly labelled draft testimonials", () =
   assert.match(homeSource, /Founder · European Floorcare Brand/);
   assert.match(homeSource, /Sourcing Director · North American Distributor/);
   assert.equal((homeSource.match(/<blockquote>/g) || []).length, 3);
+  assert.match(cssSource, /testimonial-avatar-sprite\.jpg/);
+  assert.match(homeSource, /home-v9-avatar-founder/);
+  assert.match(homeSource, /home-v9-avatar-sourcing/);
 });
 
 test("homepage limits editorial proof to three insights and one report", () => {
