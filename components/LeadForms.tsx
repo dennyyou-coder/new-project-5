@@ -304,19 +304,25 @@ export function TallyInlineEmbed({
   );
 }
 
-export function ReportsLeadForm() {
+export function ReportsLeadForm({
+  ctaLocation = "reports_footer",
+  reportId
+}: {
+  ctaLocation?: string;
+  reportId?: string;
+} = {}) {
   return (
     <div className="reports-v1-hero-form" aria-label="Get free reports">
-      <label>Get the WCB report</label>
+      <label>Select free World Clean Biz reports</label>
       <div>
         <TallyReportButton
-          ctaLocation="reports_hero"
-          reportId="next-decade-cleaning-growth"
+          ctaLocation={ctaLocation}
+          reportId={reportId}
         >
-          Get The Report
+          Select Free Reports
         </TallyReportButton>
       </div>
-      <p>Select your report and complete the form to receive the PDF link.</p>
+      <p>Complete the form to choose the reports you want to receive.</p>
     </div>
   );
 }
