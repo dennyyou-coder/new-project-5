@@ -1,422 +1,394 @@
-# World Clean Biz Sourcing Opportunity Funnel Design
+# World Clean Biz Sourcing 产品机会获客漏斗设计方案
 
-**Date:** 2026-07-11  
-**Status:** Approved design direction; copy and implementation pending
+**日期：** 2026-07-11  
+**状态：** 设计方向已确认，待实施
 
-## 1. Business Goal
+## 1. 经营目标
 
-Turn the Sourcing page into World Clean Biz's primary B2B lead-generation funnel for overseas cleaning brands, importers and distributors.
+将 Sourcing 页面建设成 World Clean Biz 面向海外清洁品牌商、进口商和经销商的核心 B2B Lead 获取页。
 
-The page must not position World Clean Biz as a supplier directory. Its core promise is to help overseas businesses identify emerging cleaning product opportunities, then turn those opportunities into market-ready products through China's supply chain.
+页面不把 World Clean Biz 定位为供应商目录。核心价值是：帮助海外客户更早发现清洁行业的下一个产品机会，再通过中国供应链把机会变成可采购、可品牌化、可销售的产品。
 
-The commercial path is:
+商业闭环：
 
-`Opportunity discovery -> market fit -> product direction -> China supply chain -> OEM/ODM -> direct purchase -> delivery`
+`发现机会 -> 判断市场 -> 定义产品 -> 组织中国供应链 -> OEM/ODM -> 客户直接采购 -> 交付`
 
-Direct purchase from World Clean Biz is the primary revenue path. China Sourcing Office service is a secondary option for customers who need an ongoing local sourcing team.
+客户直接向 World Clean Biz 采购是主要收入路径；China Sourcing Office 是针对需要长期中国采购团队的辅助服务。
 
-## 2. Audience
+## 2. 目标客户
 
-### Primary audiences
+### 主要客户
 
-- Overseas cleaning brands and importers seeking Chinese products, suppliers or OEM/ODM development.
-- Overseas distributors seeking emerging products with meaningful growth and profit potential.
+- 寻找中国产品、供应商或 OEM/ODM 服务的海外清洁品牌商和进口商。
+- 寻找具备增长和利润潜力新品的海外经销商。
 
-### Qualification
+### 客户筛选
 
-- Business buyers only.
-- No individual retail sales.
-- Global market coverage with no priority geography.
-- Paid samples are available.
-- Trial orders are possible when they meet the applicable product or factory MOQ.
+- 仅服务企业买家，不提供个人零售。
+- 面向全球市场，不设重点地区。
+- 支持付费样品。
+- 支持试单，但需满足对应产品或工厂 MOQ。
 
-### Language
+### 语言
 
-- English only.
-- The page does not serve Chinese supplier recruitment or Chinese-language export services.
+- 网站纯英文，面向海外市场。
+- 不承担中国供应商招募或中文出海服务。
 
-## 3. Positioning
+## 3. 核心定位
 
-### Core positioning
+### 主张
 
-World Clean Biz does not sell a supplier list. It helps cleaning businesses identify what could sell next and provides the product, supplier and execution resources needed to bring that opportunity to market.
+> Don’t Just Source Another Product. Find The Next Cleaning Industry Opportunity.
 
-### Primary promise
+中文含义：不要只是采购又一个普通产品，而要发现清洁行业的下一个产品机会。
 
-> Don't just source another product. Find the next cleaning industry opportunity.
+### 核心差异化
 
-### Differentiators
+1. 懂清洁行业和海外市场，不局限于单一工厂产品线。
+2. 通过一线行业与供应链信号更早发现新品机会。
+3. 具备 OEM/ODM 和产品差异化开发能力。
+4. 通过专业检测与合规合作方支持目标市场合规。
+5. 从机会判断到产品交付的完整执行能力。
 
-1. Deep understanding of the cleaning industry and overseas markets, independent of any single factory.
-2. Early product discovery through front-line industry and supply-chain signals.
-3. OEM/ODM and differentiated product development.
-4. Target-market compliance support through qualified testing and compliance partners.
-5. Complete commercial execution from product selection to delivery.
+### 语气
 
-### Tone
+- 首屏和机会判断模块强调 Denny 个人权威与第一人称邀请。
+- 执行、合规、质量和交付使用 World Clean Biz 公司口吻。
+- 自信但不使用无法验证的绝对化或夸张承诺。
 
-- Strong personal authority from Denny in the hero and opportunity-judgment sections.
-- Professional company voice for execution, compliance, quality and delivery.
-- Commercially confident without absolute, unverifiable or exaggerated claims.
-
-## 4. Denny And Team Roles
+## 4. Denny 与团队分工
 
 ### Denny
 
-- Reviews product and project opportunities.
-- Guides product direction and important decisions.
-- Maintains oversight of every active sourcing project.
-- Brings 20 years of cleaning industry experience.
-- Has provided industry insight to securities firms and investment banks.
-- Is a recognized cleaning industry voice with broad industry resources.
+- 审查产品和项目机会。
+- 指导产品方向和关键决策。
+- 关注和过问所有活跃采购项目。
+- 具备 20 年清洁行业经验。
+- 曾为券商、投资银行等专业机构提供行业咨询。
+- 是具有广泛行业资源的知名清洁行业意见领袖。
 
-### World Clean Biz team
+### World Clean Biz 团队
 
-- Manages daily buyer communication.
-- Coordinates quotations, samples and suppliers.
-- Manages OEM/ODM, production, quality, documentation and delivery.
+- 负责日常客户沟通。
+- 协调报价、样品和供应商。
+- 管理 OEM/ODM、生产、质量、文件和交付。
 
-### Public role statement
+对外表达：
 
 > Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, supplier coordination and execution.
 
-Do not claim that Denny personally performs every operational task.
+不宣称 Denny 亲自执行所有日常工作。
 
-## 5. Opportunity Method
+## 5. Denny 更早发现机会的方法
 
-The page must explain how Denny identifies opportunities rather than asking visitors to trust unsupported intuition.
+### 四类信号
 
-### Signal sources
+1. **核心工厂项目信号**：中国核心清洁设备工厂正在推进的新项目。
+2. **产品开发经验**：用 20 年产品和市场经验区分持久的品类变化与短期新奇概念。
+3. **零部件、模具和技术方案变化**：判断新产品何时进入技术成熟与商业可行阶段。
+4. **海外渠道反馈**：来自国际买家和经销商的未满足需求与市场反馈。
 
-1. **Core factory pipeline signals** — new projects moving through important Chinese cleaning equipment factories.
-2. **Product development experience** — 20 years of product and market experience used to separate durable category shifts from short-lived novelty.
-3. **Components, molds and technology movement** — changes that reveal when a new product becomes technically and commercially viable.
-4. **Overseas channel feedback** — input from international buyers and distributors about unsolved market needs.
-
-### Method flow
+方法流程：
 
 `Early Signals -> Market Judgment -> Product Direction -> Supply Chain Execution`
 
-No confidential factory or customer information should be disclosed.
+不公开工厂或客户的保密信息。
 
-## 6. Industry Opportunity Context
+## 6. 行业机会与竞争变化
 
-The page may use World Clean Biz's industry estimate:
+### 市场空间
+
+可使用 World Clean Biz 的行业估算：
 
 > World Clean Biz estimates that the global cleaning equipment market could expand from less than RMB 300 billion today toward RMB 1 trillion over the next decade.
 
-### Required qualification
+使用要求：
 
-- Clearly label the number as a `World Clean Biz industry estimate`.
-- Define the scope as major global indoor and outdoor cleaning equipment categories.
-- Do not present the number as a third-party market statistic.
-- Do not use the artificially precise RMB 250 billion figure without new supporting evidence.
+- 明确标注 `World Clean Biz industry estimate`。
+- 口径为全球主要室内与户外清洁整机品类。
+- 不包装为第三方权威市场统计。
+- 没有新证据时，不使用过度精确的人民币2,500亿数字。
 
-### Market drivers
+增长驱动力：自动化、新品类形成、电商与全球供应链带来的更快扩张。
 
-- Automation is expanding the number of cleaning tasks addressed by intelligent equipment.
-- New categories are forming across indoor, outdoor, residential and commercial cleaning.
-- E-commerce and global supply chains allow new products and brands to scale faster.
+### 竞争现实
 
-### Competitive context
+- 中国清洁品牌正在原本由传统国际品牌主导的品类中获得份额。
+- Amazon 原生和跨境卖家正在全球各市场建立销售渠道。
+- 传统品牌、进口商和经销商需要更早的产品判断与更快的执行。
 
-- Chinese cleaning brands are gaining share in categories previously led by established global names.
-- Amazon-native and cross-border sellers are building sales channels in markets worldwide.
-- Traditional brands, importers and distributors need earlier product judgment and faster execution.
+市场增长不等于自动获利。真正的优势是在产品同质化、利润下降前选对品类。
 
-The page should state that market growth alone does not guarantee profit. The advantage lies in selecting a category before products become commoditized and margins decline.
+### `Then vs Today` 四组行业转变
 
-### From access and relationships to judgment and competitiveness
+#### 1. 供应
 
-The page should explain the industry's structural change through a compact `Then vs Today` comparison rather than adding a long historical narrative.
+**过去：** 十多年前产品供应较少，找到可靠供应商就可以形成商业优势。
 
-#### 1. Supply
-
-**Then:** More than ten years ago, product supply was more limited. Finding a reliable supplier could itself create a commercial advantage, and a distributor could often place an order and sell at a profit.
-
-**Today:** Suppliers and products are abundant. A buyer may see dozens of nearly identical machines at one trade show and still not know which product, technology or factory is the right choice.
-
-Core conclusion:
+**现在：** 供应商和产品过剩。买家在展会看到几十台近似机器，仍可能不知道应该选产品、技术还是工厂。
 
 > Access is no longer the advantage. Judgment is.
 
-#### 2. Product selection
+#### 2. 选品
 
-**Then:** The main sourcing question was often `Who can make this?`
+**过去：** 采购的核心问题是 `Who can make this?`
 
-**Today:** The more valuable questions are `What should we sell next?`, `Which solution is commercially mature?` and `How can we enter before the category becomes crowded?`
+**现在：** 更有价值的问题是 `What should we sell next?`、哪个方案已商业成熟、如何在品类拥挤前进入。
 
-#### 3. Development speed
+#### 3. 开发速度
 
-**Then:** A 12–15 month development cycle could still fit the pace of many product categories.
+**过去：** 12–15 个月的开发周期可以适应许多品类节奏。
 
-**Today:** In fast-moving categories, development cycles may compress to roughly 6–8 months while technologies, components and factory capabilities continue to change.
+**现在：** 快速变化品类可能压缩到约 6–8 个月，同时技术、零部件和工厂能力仍在持续变化。
 
-#### 4. Channel relationships
+#### 4. 渠道关系
 
-**Then:** Long-term personal and channel relationships could protect sales across multiple product cycles. Partners who had worked together for 20 years often continued buying a broad range of products.
+**过去：** 长期人际和渠道关系可以保护多个产品周期的销售。
 
-**Today:** Those same distributors and retailers face pressure on price, growth, speed and product competitiveness. Even long-term partners may need to work with lower-cost or faster-moving Chinese brands.
-
-Core conclusion:
+**现在：** 同样的经销商和零售商也承受价格、增长、速度和产品竞争力压力，即使是长期伙伴也可能与更低价或更快的中国品牌合作。
 
 > Relationships still matter. But relationships cannot compensate for an uncompetitive product.
 
-Do not claim that all overseas channels will abandon established partners. The point is that commercial pressure makes competitive products, cost and speed increasingly important alongside relationships.
+不宣称所有海外渠道都会放弃旧伙伴。要表达的是：在关系之外，产品、成本和速度已变得更重要。
 
-The final transition into Denny's role should be:
+转入 Denny 角色的关键句：
 
-> The sourcing question has changed from "Who can make this?" to "What should we sell next—and how can we bring it to market before everyone else?"
+> The sourcing question has changed from “Who can make this?” to “What should we sell next—and how can we bring it to market before everyone else?”
 
-Denny helps overseas brands and distributors move from relationship-based confidence to product-based competitiveness through earlier opportunity judgment, current technical solutions and the right China supply-chain response.
+## 7. 传统 Sourcing 失效的根本原因
 
-### Development speed and supply-chain change
+很多快速变化的清洁设备品类中，World Clean Biz 观察到产品开发周期已从约 12–15 个月压缩到 6–8 个月。该判断不适用于所有清洁产品，不包装为通用第三方统计。
 
-World Clean Biz observes that, in many fast-moving cleaning equipment categories, product development cycles have compressed from roughly 12–15 months to 6–8 months.
+传统询价、比价式采购可能忽略：
 
-This observation must be framed as applying to fast-moving categories rather than every cleaning product. It should not be presented as a universal third-party statistic without new supporting evidence.
+- 技术方案被更新换代。
+- 零部件、模具和量产架构持续变化。
+- 新方案成为主流时，工厂能力与供应链成本随之变化。
+- 错误技术路径可能导致产品更贵、更慢且未上市就已落后。
 
-The page must explain why the old sourcing model is no longer sufficient:
-
-- Technical solutions are replaced more quickly.
-- Components, molds and commercially mature architectures keep changing.
-- Factory capability and supply-chain economics shift as new solutions become mainstream.
-- A quotation-only sourcing process may select an outdated, expensive or slow technical path.
-
-The commercial consequences should be stated directly:
+三个直接后果：
 
 - `Outdated Before Launch`
 - `More Expensive Than Competitors`
 - `Slower To Market`
 
-Recommended message:
+关键表达：
 
 > Choose the wrong technical path and your product may cost more, take longer to develop and arrive behind the market.
 
-The page must distinguish between novelty and commercial suitability:
-
-> The newest technology is not automatically the right choice. The advantage comes from knowing which solution is current, commercially mature and appropriate for the buyer's market.
-
-Denny's role is to connect changes in technology, components, factories and overseas demand with cost, development speed and market competitiveness. The core conclusion is:
+> The newest technology is not automatically the right choice. The advantage comes from knowing which solution is current, commercially mature and appropriate for the buyer’s market.
 
 > Faster sourcing is not enough. You need earlier judgment.
 
-## 7. Core Lead Offer
+## 8. 核心 Lead Offer
 
-### Offer name
+### 名称
 
 **Free Product Opportunity Shortlist**
 
-### Qualified customer receives
+### 合格客户将获得
 
-- Two to three initial category or product directions relevant to the stated market.
-- Available product images.
-- Basic specifications.
-- Indicative pricing.
-- An initial view of OEM/ODM feasibility.
+- 2–3 个适合其目标市场的初步品类或产品方向。
+- 可提供的产品图片。
+- 基础规格。
+- 初步参考价格。
+- OEM/ODM 可行性的初步判断。
 
-### Service timing
+### 服务时间
 
-- Initial human contact within 8 hours, including weekends and holidays.
-- Initial shortlist normally prepared within one to two business days.
-- The offer is free for relevant B2B leads.
+- 包括周末和节假日，8 小时内首次人工联系。
+- 通常在 1–2 个工作日内准备初步机会清单。
+- 对符合范围的真实 B2B 客户免费。
 
-### Required qualification language
+对外必须使用 `for relevant B2B requests` 和 `normally`，不对个人、垃圾信息、资料不完整或超出范围的需求无条件承诺免费报告。
 
-Use `for relevant B2B requests` and `normally` so the page does not promise a free custom report for individuals, spam, incomplete requests or out-of-scope categories.
+## 9. Lead 表单
 
-## 8. Lead Form
+### 形式
 
-### Form strategy
+- 首屏和页面中部 CTA 打开简短弹窗表单。
+- 页面底部直接显示同一套表单。
+- 不要求访客选择商业合作模式。
+- 使用隐藏字段记录 CTA 位置和询盘意图。
 
-- Hero and mid-page CTAs open a short popup form.
-- The bottom of the page shows the same form inline.
-- Do not require visitors to choose a commercial cooperation model.
-- Use hidden fields to record CTA location and inquiry intent.
+### 字段
 
-### Fields
+1. Company Name，必填。
+2. Website，选填。
+3. Country / Target Market，必填。
+4. Product or Category of Interest，必填，可直接粘贴参考链接。
+5. Contact Name，必填。
+6. Email，必填。
+7. WhatsApp，选填。
 
-1. Company Name — required.
-2. Website — optional.
-3. Country / Target Market — required.
-4. Product or Category of Interest — required; may include a reference link.
-5. Contact Name — required.
-6. Email — required.
-7. WhatsApp — optional.
+### 首次表单不收集
 
-### Excluded from the first form
+- 文件上传。
+- 预算。
+- 详细规格。
+- 订单数量。
+- 认证清单。
+- 强制合作模式选择。
 
-- File uploads.
-- Budget.
-- Detailed specifications.
-- Order quantity.
-- Certification list.
-- Mandatory cooperation-model selection.
+以上信息在后续 Email 或 WhatsApp 沟通中收集。
 
-These details are collected later by email or WhatsApp.
+### CTA
 
-### Primary CTAs
+- 主 CTA：`Get My Free Product Opportunity Shortlist`
+- 机会意图：`Discover Product Opportunities`
+- 明确产品意图：`I Already Have A Product Request`
 
-- `Get My Free Product Opportunity Shortlist`
-- `Discover Product Opportunities`
+两条路径使用同一表单，但传递不同的 `inquiry_intent` 隐藏值。
 
-### Secondary CTA
+## 10. 产品范围
 
-- `I Already Have A Product Request`
+### 主推六类
 
-The two intent paths use the same form but carry different hidden `inquiry_intent` values.
+1. Robotic Cleaning Products
+2. Floor Care Equipment
+3. Vacuum Cleaners
+4. Commercial Cleaning Equipment
+5. Outdoor Cleaning Products
+6. New & Emerging Products
 
-## 9. Product Scope
+### 辅助范围
 
-### Primary opportunity areas
+清洁工具、耗材、化学品、卫生用品、零部件和替换配件可按项目承接，但不在页面主推。
 
-1. Robotic Cleaning Products.
-2. Floor Care Equipment.
-3. Vacuum Cleaners.
-4. Commercial Cleaning Equipment.
-5. Outdoor Cleaning Products.
-6. New & Emerging Products.
+### 未来扩展
 
-### Secondary supported categories
+产品机会模块需预留以下扩展能力：
 
-Cleaning tools, consumables, chemicals, hygiene products, components and replacement parts may be supported when relevant, but should not dominate the page.
+- Product Opportunities 列表页。
+- 单个产品或型号详情页。
+- 自动携带产品名称和型号的询盘表单。
 
-### Future expansion
+本轮不建设产品列表或型号页。
 
-The opportunity-area module should support future links to:
+## 11. 完整服务范围
 
-- A Product Opportunities index.
-- Individual product/model pages.
-- Model-specific lead forms carrying product name and model context.
+World Clean Biz 可支持：
 
-No product index or model page is part of the current Sourcing redesign scope.
+- 产品推荐与选型。
+- 统一报价。
+- 付费样品安排。
+- OEM/ODM 沟通和差异化开发。
+- 供应商与工厂协调。
+- 包装和品牌定制。
+- 生产跟进。
+- 质量检查。
+- 出口文件。
+- 国际物流或货代协调。
+- 售后问题协调。
 
-## 10. Complete Service Scope
-
-World Clean Biz can support:
-
-- Product recommendation and selection.
-- Unified quotation.
-- Paid sample arrangements.
-- OEM/ODM communication and differentiated development.
-- Supplier and factory coordination.
-- Packaging and brand customization.
-- Production follow-up.
-- Quality inspection.
-- Export documentation.
-- International logistics or freight-forwarder coordination.
-- After-sales issue coordination.
-
-Core service statement:
+核心表达：
 
 > One partner from opportunity discovery to delivery.
 
-## 11. Compliance Boundary
+## 12. 合规边界
 
-World Clean Biz works with testing and compliance partners to identify requirements, verify available documentation and coordinate necessary testing for the destination market agreed with the customer.
+World Clean Biz 与检测和合规合作方一起，识别客户已确认目标市场的要求、核验现有文件并协调必要检测。
 
-The public page must not promise unconditional compliance with every law, channel rule or future regulatory change worldwide.
+页面不承诺无条件符合全球所有法律、渠道规则或未来法规变化。
 
-Recommended statement:
+推荐表达：
 
 > Products are managed toward the compliance requirements agreed in writing for the specified target market.
 
-Project quotations and contracts must define the destination, applicable standards, testing responsibility and costs.
+报价和合同必须界定目的地、适用标准、检测责任和费用。
 
-## 12. Commercial Models
+## 13. 两种合作模式
 
-### Primary: Direct Purchase
+### 主要：Direct Purchase
 
-- Customer purchases directly from World Clean Biz.
-- World Clean Biz recommends products, provides a unified quotation and manages the transaction and delivery.
+- 客户直接向 World Clean Biz 采购。
+- World Clean Biz 推荐产品、统一报价并管理交易和交付。
 
-### Secondary: China Sourcing Office
+### 辅助：China Sourcing Office
 
-- World Clean Biz acts as the buyer's local sourcing team in China.
-- The service can identify new suppliers or manage suppliers already selected by the customer.
-- Commercial terms may use order commission, a fixed monthly fee or a combination.
+- World Clean Biz 作为客户在中国的本地采购团队。
+- 可寻找新供应商，也可管理客户已经选定的供应商。
+- 可采用订单佣金、每月固定费用或组合方式。
 
-The page may explain both models, but the first lead form must not require the visitor to select one. World Clean Biz recommends the appropriate model after understanding the project.
+页面可解释两种模式，但首次表单不强制客户选择。了解项目后由 World Clean Biz 推荐合适方式。
 
-## 13. Page Architecture
+## 14. 页面信息架构
 
-### Section 1: Hero
+### 区块 1：Hero
 
-- Opportunity-led headline.
-- Denny first-person invitation.
-- Real image of Denny discussing products with suppliers.
-- Primary and secondary CTAs.
-- Trust labels: `B2B Buyers Only`, `Serving Global Markets`, `Initial Response Within 8 Hours`.
+- 机会导向主标题。
+- Denny 第一人称邀请。
+- Denny 与供应商讨论产品的真实图片。
+- 主次 CTA。
+- 信任标签：`B2B Buyers Only`、`Serving Global Markets`、`Initial Response Within 8 Hours`。
 
-### Section 2: Two Visitor Intents
+### 区块 2：两种访客意图
 
-- `Show Me New Product Opportunities` — primary.
-- `I Know What I Need` — secondary.
-- Same form, different hidden intent values.
+- `Show Me New Product Opportunities`，主路径。
+- `I Know What I Need`，次路径。
+- 同一表单，携带不同隐藏意图值。
 
-### Section 3: Why This Market Matters Now
+### 区块 3：Why This Market Matters Now
 
-- Less than RMB 300 billion toward RMB 1 trillion.
-- Clearly labeled WCB industry estimate.
-- Three market drivers.
+- 从不足人民币3,000亿走向人民币1万亿。
+- 明确标注 WCB 行业估算。
+- 展示三项市场驱动力。
 
-### Section 4: Competitive Reality
+### 区块 4：Competitive Reality
 
-- Use one compact four-row `Then vs Today` comparison instead of a long narrative.
-- Supply: limited supply vs supplier and product overload.
-- Selection: finding a factory vs identifying the right opportunity.
-- Speed: 12–15 month cycles vs roughly 6–8 months in fast-moving categories.
-- Channels: relationship protection vs price, speed and product pressure.
-- Include the conclusions `Access is no longer the advantage. Judgment is.` and `Relationships cannot compensate for an uncompetitive product.`
-- Buyer implication: decide what to sell next and act faster.
+- 使用紧凑的四行 `Then vs Today` 对比，不写长篇历史。
+- 供应：供应不足 vs 供应商和产品过剩。
+- 选品：找到工厂 vs 识别正确机会。
+- 速度：12–15 个月 vs 快速品类约 6–8 个月。
+- 渠道：关系保护 vs 价格、速度和产品压力。
 
-### Section 5: The Old Sourcing Model Is Too Slow
+### 区块 5：The Old Sourcing Model Is Too Slow
 
-- Build on the speed row without repeating its full historical comparison.
-- Supply-chain movement: `Technology -> Components -> Molds -> Factories -> Cost -> Time To Market`.
-- Three risks: outdated before launch, more expensive than competitors and slower to market.
-- Core message: faster sourcing is not enough; earlier judgment is required.
+- 不重复第 4 区块的完整历史对比。
+- 展示 `Technology -> Components -> Molds -> Factories -> Cost -> Time To Market`。
+- 展示三项直接风险。
+- 结论：只加快采购不够，需要更早判断。
 
-### Section 6: How Denny Sees Opportunities Earlier
+### 区块 6：How Denny Sees Opportunities Earlier
 
-- Four signal sources.
-- Signal-to-execution diagram.
-- Real Denny image; no fake operational evidence.
+- 四类信号来源。
+- 信号到执行的信息流图。
+- Denny 真实图片，不使用伪造运营证据。
 
-### Section 7: Free Product Opportunity Shortlist
+### 区块 7：Free Product Opportunity Shortlist
 
-- Deliverables.
-- 8-hour and one-to-two-business-day timelines.
-- Primary lead CTA.
+- 客户可获得的内容。
+- 8 小时与 1–2 工作日两个不同时间承诺。
+- 主 Lead CTA。
 
-### Section 8: Product Opportunity Areas
+### 区块 8：Product Opportunity Areas
 
-- Six primary opportunity categories.
-- Compact secondary scope statement.
-- Future-ready card structure.
+- 六类主要机会品类。
+- 紧凑的辅助范围说明。
+- 支持未来产品或型号页链接的卡片结构。
 
-### Section 9: From Opportunity To Delivery
+### 区块 9：From Opportunity To Delivery
 
 `Product Selection -> Pricing -> Paid Samples -> OEM/ODM -> Production -> Quality Control -> Compliance -> Export & Delivery -> After-Sales`
 
-### Section 10: Two Ways To Work With Us
+### 区块 10：Two Ways To Work With Us
 
-- Larger Direct Purchase card.
-- Smaller China Sourcing Office card.
-- No required selection.
+- 更大的 Direct Purchase 主卡片。
+- 更轻的 China Sourcing Office 辅卡片。
+- 不要求客户当场选择。
 
-### Section 11: Denny Reviews, The Team Executes
+### 区块 11：Denny Reviews, The Team Executes
 
-- Personal authority and operational scalability.
-- Real images and truthful evidence only.
+- 个人权威与可规模化执行能力。
+- 仅使用真实图片和可支持证据。
 
-### Section 12: Bottom Form And FAQ
+### 区块 12：底部表单与 FAQ
 
-- Visible short form.
-- Clear post-submit timeline.
-- Five focused FAQs.
+- 可见的简短表单。
+- 清晰的提交后时间说明。
+- 五个聚焦 FAQ。
 
-## 14. FAQ Topics
+## 15. FAQ
 
 1. What New Cleaning Products Are Growing Fast?
 2. Is World Clean Biz A Factory Or A Trading Company?
@@ -424,99 +396,97 @@ The page may explain both models, but the first lead form must not require the v
 4. Can I Order Samples First?
 5. How Do You Manage Product Quality?
 
-The first answer should explain that recommendations change with market and supply-chain signals. It should invite a qualified buyer to request a shortlist rather than publish a permanent list of "hot products."
+第一个答案需说明推荐会随市场与供应链信号变化，并邀请合格买家申请机会清单，而不是发布永久不变的“热门产品”名单。
 
-## 15. Visual Direction
+## 16. 视觉方向
 
-### Primary style
+主风格：行业情报 + Denny 个人权威。
 
-Industry intelligence plus personal authority.
+- 深海军蓝、白色与高亮蓝。
+- 强编辑感标题与数字信号。
+- Denny 真实图片放在高信任位置。
+- 产品卡片支持未来变成产品或型号链接。
+- 使用清晰流程图表达执行、合规和交付。
+- 机会叙事之下保持国际贸易公司的稳重感。
 
-- Navy, white and bright blue.
-- Strong editorial headlines and numerical signals.
-- Real Denny imagery in high-trust positions.
-- Product cards that can later become product/model links.
-- Clear process diagrams for execution, compliance and delivery.
-- Professional international trade-company discipline beneath the opportunity-led story.
+### 图像规则
 
-### Image rules
+- Denny 个人与权威证据仅使用真实图片。
+- 产品品类使用真实产品或品类图片。
+- 运营流程使用图标、信息图或明确的概念视觉。
+- 不把写实 AI 验厂、质检、出货或客户图片冒充真实 WCB 项目证据。
+- 未来案例位置仅使用真实或明确匿名的项目证据。
 
-- Use only real Denny images for personal and authority proof.
-- Use real product or category images for product areas.
-- Use icons, diagrams or clearly conceptual visuals for operational processes.
-- Do not use photorealistic AI factory, inspection, shipping or customer images as if they document real World Clean Biz projects.
-- Reserve future case-study space for real or explicitly anonymous project evidence.
+## 17. 声明与证据规则
 
-## 16. Claims And Evidence Rules
-
-Do not use unsupported claims such as:
+不使用：
 
 - `The most resourceful person in the global cleaning industry.`
-- Unqualified claims that World Clean Biz guarantees compliance with all laws worldwide.
-- Unsupported client counts, supplier counts, sales outcomes or bestseller claims.
-- Fabricated case studies or AI-generated operational evidence presented as real.
+- World Clean Biz 无条件保证符合全球所有法律的承诺。
+- 无证据的客户数、供应商数、销售成果或爆品声明。
+- 虚构案例，或把 AI 运营图片冒充真实项目证据。
 
-Prefer specific, supportable language about Denny's experience, signal sources, project oversight and current operating model.
+优先使用可支持的具体信息：Denny 的经验、信号来源、项目监督方式和当前业务模式。
 
-## 17. Measurement
+## 18. 数据追踪
 
-Track at minimum:
+至少追踪：
 
-- Hero primary CTA clicks.
-- Existing-product intent clicks.
-- Opportunity-discovery intent clicks.
-- Mid-page shortlist CTA clicks.
-- Inline form starts.
-- Form submissions and successful completion.
-- Product opportunity area selected.
-- Lead source, campaign, page and CTA location.
+- 首屏主 CTA 点击。
+- 明确产品意图点击。
+- 机会发现意图点击。
+- 中部机会清单 CTA 点击。
+- 内嵌表单开始。
+- 表单提交与成功。
+- 已选产品机会类别。
+- Lead 来源、活动、页面和 CTA 位置。
 
-Primary page outcome: qualified B2B lead submissions for the Free Product Opportunity Shortlist.
+主要页面成果：针对 `Free Product Opportunity Shortlist` 的合格 B2B Lead 提交。
 
-## 18. Responsive And Accessibility Requirements
+## 19. 移动端与可访问性
 
-- No horizontal overflow at 390px.
-- The hero must retain Denny identity, offer and CTA without requiring excessive scrolling.
-- Forms must remain usable with large touch targets and visible labels.
-- All buttons and interactive cards need visible keyboard focus.
-- Information diagrams must remain understandable as linear text on mobile.
-- Text contrast must meet accessible standards on navy and light backgrounds.
-- Images require accurate alt text; decorative diagrams should not create duplicate screen-reader content.
+- 390px 无水平溢出。
+- 首屏不需大量滚动就能看到 Denny 身份、Offer 和 CTA。
+- 表单具备清晰标签和足够大的触控区域。
+- 所有按钮与交互卡片需有可见键盘焦点。
+- 信息图在手机端变成可理解的线性文本。
+- 深蓝与浅色背景的文本对比度需达到可访问要求。
+- 图片使用准确 alt，装饰图不向读屏器重复内容。
 
-## 19. Scope Boundary
+## 20. 范围边界
 
-### In scope for the future implementation
+### 本轮实施范围
 
-- Sourcing page copy, content structure and page-specific styling.
-- Lead-form field and hidden-intent changes required by this funnel.
-- Sourcing-specific analytics.
-- Desktop and mobile rendering.
-- Sourcing metadata and structured content where appropriate.
+- Sourcing 页面英文文案、内容结构与页面专属样式。
+- 该漏斗需要的 Lead 表单字段和隐藏意图。
+- Sourcing 专属数据追踪。
+- 桌面和移动端呈现。
+- Sourcing SEO 信息和适当结构化内容。
 
-### Out of scope
+### 不在本轮范围
 
-- Homepage changes.
-- Product Opportunities index.
-- Individual model pages.
-- Chinese content.
-- Supplier recruitment.
-- Fabricated case studies.
-- Changes to unrelated pages or shared navigation.
+- 首页修改。
+- Product Opportunities 列表页。
+- 单个型号页。
+- 中文网站内容。
+- 供应商招募。
+- 虚构案例。
+- 其他页面或共享导航修改。
 
-## 20. Validation
+## 21. 验证
 
-Before a Preview can be presented:
+Preview 交付前必须：
 
-- Confirm every claim against this design.
-- Verify both intent paths carry the correct hidden value.
-- Verify popup and inline form fields and required states.
-- Verify 8-hour and one-to-two-business-day commitments are worded distinctly.
-- Verify no individual retail language ambiguity.
-- Verify all sourcing analytics events.
-- Run inquiry, lead, Blog and homepage regression tests.
-- Run the production build.
-- Inspect the full page at desktop and 390px mobile widths.
-- Confirm readable contrast, no overflow, visible focus and no broken images.
-- Push the feature branch and use a Git-triggered Vercel Preview.
-- Do not merge to `main` before Preview approval.
-- Do not use `vercel --prod`.
+- 根据本设计逐项核对公开声明。
+- 验证两条意图路径携带正确隐藏值。
+- 验证弹窗和底部表单字段与必填状态。
+- 区分 8 小时首次联系和 1–2 个工作日初步推荐两个承诺。
+- 确认不存在个人零售歧义。
+- 验证 Sourcing 全部数据事件。
+- 运行询盘、Lead、Blog 和首页回归测试。
+- 运行正式构建。
+- 检查桌面整页和 390px 手机整页。
+- 确认文字对比、无溢出、焦点可见且无破损图片。
+- 推送功能分支，使用 Git 触发的 Vercel Preview。
+- Preview 确认前不合并 `main`。
+- 禁止使用 `vercel --prod`。
