@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     description:
       "Inside the cleaning industry since 2006, connecting products, supply chains, buyers, capital and industry opportunities.",
     url: "/about",
-    images: ["/images/industry/about-denny-speaking-forum-2025.jpg"]
+    images: ["/images/site-refresh/about/about-hero-denny.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "About Denny You | World Clean Biz",
     description:
       "Inside the cleaning industry since 2006, connecting products, supply chains, buyers, capital and industry opportunities.",
-    images: ["/images/industry/about-denny-speaking-forum-2025.jpg"]
+    images: ["/images/site-refresh/about/about-hero-denny.webp"]
   }
 };
 
@@ -85,7 +85,7 @@ const businessPillars = [
     eyebrow: "READ THE MARKET",
     title: "Industry Intelligence",
     text: "Articles and reports that help companies understand category movement, product opportunities and China supply-chain signals.",
-    image: "/images/industry/about-denny-consulting-stage.jpg",
+    image: "/images/site-refresh/about/about-industry-analysis.webp",
     href: "/reports",
     cta: "Explore Market Reports"
   },
@@ -93,7 +93,7 @@ const businessPillars = [
     eyebrow: "TURN SIGNALS INTO PRODUCTS",
     title: "Product & Sourcing Opportunities",
     text: "Product judgment, supplier access and project execution for overseas brands, importers and distributors.",
-    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
+    image: "/images/site-refresh/about/about-product-supplier-work.webp",
     href: "/sourcing",
     cta: "Explore Sourcing"
   },
@@ -101,7 +101,7 @@ const businessPillars = [
     eyebrow: "CONNECT THE INDUSTRY",
     title: "World Clean Expo & Business Connections",
     text: "A platform for products, companies, buyers, forums and commercial conversations across the cleaning industry.",
-    image: "/images/industry/expo-business-matching-2026.jpg",
+    image: "/images/site-refresh/about/about-expo-connections.webp",
     href: "/world-clean-expo",
     cta: "Explore World Clean Expo"
   }
@@ -189,7 +189,7 @@ export default function AboutPage() {
           </div>
           <div className="about-network-hero-visual">
             <img
-              src="/images/industry/about-denny-speaking-forum-2025.jpg"
+              src="/images/site-refresh/about/about-hero-denny.webp"
               alt="Denny You speaking at a cleaning industry forum"
             />
             <div>
@@ -230,7 +230,7 @@ export default function AboutPage() {
               investors, experts and media.
             </p>
             <div className="about-network-reach-image">
-              <img src="/images/industry/expo-forum-audience-2026.jpg" alt="Cleaning industry professionals at a forum" />
+              <img src="/images/site-refresh/about/about-network-forum.webp" alt="Cleaning industry professionals at a forum" />
             </div>
           </div>
           <div className="about-network-group-grid">
@@ -293,7 +293,7 @@ export default function AboutPage() {
       <section className="section about-network-story">
         <div className="container about-network-story-layout">
           <div className="about-network-story-photo">
-            <img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing products with suppliers" />
+            <img src="/images/site-refresh/about/about-team-execution.webp" alt="Denny You reviewing products with suppliers" />
             <div>Products · Suppliers · Markets · Connections</div>
           </div>
           <div>
