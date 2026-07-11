@@ -10,12 +10,12 @@ const updatesSource = await readFile(
   "utf8"
 );
 
-test("homepage exposes the six-section commercial journey", () => {
+test("homepage exposes the streamlined commercial journey", () => {
   const sectionNames = [
     "home-v9-hero",
     "home-v9-pathways",
     "home-v9-trust",
-    "home-v9-commercial",
+    "home-v9-conversion",
     "home-v9-proof",
     "home-v9-updates"
   ];
@@ -70,10 +70,17 @@ test("homepage trust section includes clearly labelled draft testimonials", () =
   assert.match(homeSource, /Draft layout copy — replace with approved client feedback before production/);
   assert.match(homeSource, /Founder · European Floorcare Brand/);
   assert.match(homeSource, /Sourcing Director · North American Distributor/);
-  assert.equal((homeSource.match(/<blockquote>/g) || []).length, 3);
+  assert.equal((homeSource.match(/<blockquote>/g) || []).length, 2);
   assert.match(cssSource, /testimonial-avatar-sprite\.jpg/);
   assert.match(homeSource, /home-v9-avatar-founder/);
   assert.match(homeSource, /home-v9-avatar-sourcing/);
+});
+
+test("homepage replaces the oversized business section with a compact conversion bar", () => {
+  assert.match(homeSource, /className="[^"]*home-v9-conversion-bar/);
+  assert.match(homeSource, /Have A Product Or Sourcing Project\?/);
+  assert.match(homeSource, /Planning For World Clean Expo\?/);
+  assert.doesNotMatch(homeSource, /Two Direct Business Paths/);
 });
 
 test("homepage limits editorial proof to three insights and one report", () => {

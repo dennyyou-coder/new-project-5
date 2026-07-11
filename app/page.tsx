@@ -227,9 +227,8 @@ export default function HomePage() {
               <div className="home-v9-testimonial-avatar home-v9-avatar-founder" role="img" aria-label="Fictional placeholder portrait for European floorcare brand founder" />
               <span aria-hidden="true">“</span>
               <blockquote>
-                Denny understands the cleaning industry from both the product
-                and business sides. His perspective helped us see the category
-                more clearly and ask better questions before making decisions.
+                Denny sees both the product and business sides of cleaning. His
+                perspective helped us clarify the category before making decisions.
               </blockquote>
               <p>Founder · European Floorcare Brand</p>
             </article>
@@ -238,47 +237,34 @@ export default function HomePage() {
               <span aria-hidden="true">“</span>
               <blockquote>
                 Denny combines long-term industry experience with practical
-                knowledge of suppliers and product development. Conversations
-                with him are focused, direct and commercially useful.
+                supplier knowledge. Conversations are direct and commercially useful.
               </blockquote>
               <p>Sourcing Director · North American Distributor</p>
-            </article>
-            <article>
-              <div className="home-v9-testimonial-avatar home-v9-avatar-founder" role="img" aria-label="Fictional placeholder portrait for European floorcare brand founder" />
-              <span aria-hidden="true">“</span>
-              <blockquote>
-                WCB brought useful context to the sourcing process—from product
-                trends and supplier capabilities to the practical questions we
-                needed to ask before making a decision.
-              </blockquote>
-              <p>Founder · European Floorcare Brand</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section className="home-v9-section home-v9-commercial">
-        <div className="home-v9-container">
-          <div className="home-v9-heading home-v9-heading-light">
-            <p className="home-v9-eyebrow">From Insight To Opportunity</p>
-            <h2>Two Direct Business Paths</h2>
-          </div>
-          <div className="home-v9-commercial-grid">
-            <article>
+      <section className="home-v9-conversion">
+        <div className="home-v9-container home-v9-conversion-bar">
+          <div className="home-v9-conversion-item">
+            <div>
               <p>Product & Supply Chain</p>
-              <h3>Sourcing & Product Support</h3>
-              <div>For buyers, brands and product teams looking for suppliers, OEM/ODM partners, product direction or execution support.</div>
+              <h2>Have A Product Or Sourcing Project?</h2>
+            </div>
+            <div className="home-v9-conversion-actions">
               <Link className="button" href="/sourcing">Start A Sourcing Inquiry</Link>
-            </article>
-            <article>
+            </div>
+          </div>
+          <div className="home-v9-conversion-item">
+            <div>
               <p>World Clean Expo</p>
-              <h3>Exhibit, Partner Or Follow The Show</h3>
-              <div>Connect with the platform as an exhibitor or partner, or receive visitor registration and event updates.</div>
-              <div className="home-v9-wce-actions">
-                <TallyButton ctaLocation="home_wce_exhibitor" form="wceExhibitor">Exhibit / Partner</TallyButton>
-                <TallyButton className="button-secondary" ctaLocation="home_wce_visitor" form="wceVisitor">Visit / Get Updates</TallyButton>
-              </div>
-            </article>
+              <h2>Planning For World Clean Expo?</h2>
+            </div>
+            <div className="home-v9-conversion-actions">
+              <TallyButton ctaLocation="home_wce_exhibitor" form="wceExhibitor">Exhibit / Partner</TallyButton>
+              <TallyButton className="button-secondary" ctaLocation="home_wce_visitor" form="wceVisitor">Visit / Updates</TallyButton>
+            </div>
           </div>
         </div>
       </section>
