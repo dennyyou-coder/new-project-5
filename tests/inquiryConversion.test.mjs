@@ -151,7 +151,7 @@ test("Sourcing visual hierarchy stays within the blue and white brand system", (
   assert.doesNotMatch(globalStyles, /--so-warning:/);
   assert.match(globalStyles, /\.sourcing-opportunity-driver-icon[^}]*color:\s*var\(--so-blue\)/s);
   assert.match(globalStyles, /\.sourcing-opportunity-risk-icon[^}]*color:\s*#8eb3ff/s);
-  assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#fff/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#eef5ff/s);
   assert.match(globalStyles, /\.sourcing-opportunity-process \.sourcing-opportunity-heading h2\s*\{[^}]*color:\s*var\(--so-ink\)/s);
 });
 
@@ -161,4 +161,13 @@ test("all primary Sourcing conversion paths use visible blue buttons", () => {
   assert.match(sourcingSource, /sourcing-opportunity-intent-button/);
   assert.match(sourcingSource, /sourcing-opportunity-category-cta/);
   assert.match(sourcingSource, /sourcing-opportunity-final-cta/);
+});
+
+test("Sourcing uses alternating sales bands and visual storytelling", () => {
+  assert.match(sourcingSource, /sourcing-opportunity-stage-visual/);
+  assert.match(sourcingSource, /sourcing-opportunity-model-visual/);
+  assert.match(globalStyles, /\.sourcing-opportunity-shortlist\s*\{[^}]*background:\s*linear-gradient\([^}]*#071f47/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#eef5ff/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-models\s*\{[^}]*background:\s*#fff/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-team\s*\{[^}]*background:\s*#eaf2ff/s);
 });
