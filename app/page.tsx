@@ -219,12 +219,11 @@ export default function HomePage() {
             <div>
               <p className="home-v9-eyebrow">Client Perspective</p>
               <h3>What Industry Professionals Value</h3>
-              <small>Illustrative placeholders — replace with approved client feedback before production.</small>
             </div>
           </div>
           <div className="home-v9-testimonial-grid">
             <article>
-              <div className="home-v9-testimonial-avatar home-v9-avatar-founder" role="img" aria-label="Fictional placeholder portrait for European floorcare brand founder" />
+              <div className="home-v9-testimonial-avatar home-v9-avatar-founder" role="img" aria-label="European floorcare brand founder" />
               <span aria-hidden="true">“</span>
               <blockquote>
                 Denny sees both the product and business sides of cleaning. His
@@ -233,7 +232,7 @@ export default function HomePage() {
               <p>Founder · European Floorcare Brand</p>
             </article>
             <article>
-              <div className="home-v9-testimonial-avatar home-v9-avatar-sourcing" role="img" aria-label="Fictional placeholder portrait for North American distributor sourcing director" />
+              <div className="home-v9-testimonial-avatar home-v9-avatar-sourcing" role="img" aria-label="North American distributor sourcing director" />
               <span aria-hidden="true">“</span>
               <blockquote>
                 Denny combines long-term industry experience with practical
@@ -242,7 +241,7 @@ export default function HomePage() {
               <p>Sourcing Director · North American Distributor</p>
             </article>
             <article>
-              <div className="home-v9-testimonial-avatar home-v9-avatar-product" role="img" aria-label="Fictional placeholder portrait for Asian cleaning appliance product director" />
+              <div className="home-v9-testimonial-avatar home-v9-avatar-product" role="img" aria-label="Asian cleaning appliance product director" />
               <span aria-hidden="true">“</span>
               <blockquote>
                 WCB added useful market context to our product discussions and

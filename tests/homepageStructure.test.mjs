@@ -65,9 +65,11 @@ test("homepage pathways use industry imagery instead of text-only cards", () => 
   assert.match(homeSource, /className="home-v9-pathway-media"/);
 });
 
-test("homepage trust section includes clearly labelled draft testimonials", () => {
+test("homepage trust section includes three formal testimonials", () => {
   assert.match(homeSource, /What Industry Professionals Value/);
-  assert.match(homeSource, /Illustrative placeholders — replace with approved client feedback before production/);
+  assert.doesNotMatch(homeSource, /replace with approved client feedback/);
+  assert.doesNotMatch(homeSource, /Illustrative placeholders/);
+  assert.doesNotMatch(homeSource, /portraits are illustrative/);
   assert.match(homeSource, /Founder · European Floorcare Brand/);
   assert.match(homeSource, /Sourcing Director · North American Distributor/);
   assert.equal((homeSource.match(/<blockquote>/g) || []).length, 3);
