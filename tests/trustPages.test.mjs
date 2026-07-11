@@ -24,7 +24,7 @@ test("inquiry received page closes the loop without claiming a submission", () =
 
 test("privacy policy explains actual data handling and contact path", () => {
   assert.match(privacy, /Privacy Policy/);
-  assert.match(privacy, /Google Analytics/);
+  assert.match(privacy, /Google\s+Analytics/);
   assert.match(privacy, /Tally/);
   assert.match(privacy, /does not sell your personal information/i);
   assert.match(privacy, /href="\/contact"/);
@@ -32,7 +32,7 @@ test("privacy policy explains actual data handling and contact path", () => {
 
 test("terms define content and commercial boundaries", () => {
   assert.match(terms, /Terms of Use/);
-  assert.match(terms, /not investment, legal, tax, certification/i);
+  assert.match(terms, /not\s+investment, legal, tax, certification/i);
   assert.match(terms, /confirmed in writing/i);
   assert.match(terms, /href="\/contact"/);
 });

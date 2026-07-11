@@ -49,6 +49,12 @@ export function Footer() {
               Talk With Denny
             </TallyButton>
           </div>
+          <div>
+            <strong>Trust</strong>
+            <Link href="/quality-compliance">Quality &amp; Compliance</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Use</Link>
+          </div>
         </div>
       </div>
       <div className="container footer-bottom">
