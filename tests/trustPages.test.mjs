@@ -14,6 +14,7 @@ const [received, privacy, terms, quality, footer, styles] = await Promise.all([
 ]);
 
 test("inquiry received page closes the loop without claiming a submission", () => {
+  assert.match(received, /title: "Inquiry Received"/);
   assert.match(received, /Your Inquiry Is In The Right Place/);
   assert.match(received, /robots:\s*\{\s*index:\s*false,\s*follow:\s*true\s*\}/s);
   assert.match(received, /Review/);
@@ -23,6 +24,7 @@ test("inquiry received page closes the loop without claiming a submission", () =
 });
 
 test("privacy policy explains actual data handling and contact path", () => {
+  assert.match(privacy, /title: "Privacy Policy"/);
   assert.match(privacy, /Privacy Policy/);
   assert.match(privacy, /Google\s+Analytics/);
   assert.match(privacy, /Tally/);
@@ -31,6 +33,7 @@ test("privacy policy explains actual data handling and contact path", () => {
 });
 
 test("terms define content and commercial boundaries", () => {
+  assert.match(terms, /title: "Terms of Use"/);
   assert.match(terms, /Terms of Use/);
   assert.match(terms, /not\s+investment, legal, tax, certification/i);
   assert.match(terms, /confirmed in writing/i);

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | World Clean Biz",
+  title: "Privacy Policy",
   description:
     "Learn how World Clean Biz handles website analytics, report requests, subscriptions and business inquiry information.",
   alternates: { canonical: "/privacy" }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Inquiry Received | World Clean Biz",
+  title: "Inquiry Received",
   description:
     "See what happens after a World Clean Biz sourcing, Expo, report or business inquiry.",
   alternates: { canonical: "/inquiry-received" },

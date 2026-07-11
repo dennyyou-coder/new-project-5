@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | World Clean Biz",
+  title: "Terms of Use",
   description:
     "Read the terms governing World Clean Biz industry content, reports, sourcing opportunities and website use.",
   alternates: { canonical: "/terms" }
