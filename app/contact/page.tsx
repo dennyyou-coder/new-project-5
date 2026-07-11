@@ -95,7 +95,7 @@ export default function ContactPage() {
             />
             <div className="contact-response-identity">
               <strong>Denny You</strong>
-              <span>Founder, World Clean Biz</span>
+              <span>Founder, World Clean Biz · Organizer, World Clean Expo</span>
               <small>Inside the cleaning industry since 2006</small>
             </div>
           </div>

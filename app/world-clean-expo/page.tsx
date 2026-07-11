@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 import { TallyButton } from "@/components/LeadForms";
 
@@ -309,6 +310,34 @@ export default function WorldCleanExpoPage() {
                 <p>{item.text}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section expo-organizer-section">
+        <div className="container expo-organizer-layout">
+          <div className="expo-organizer-visual">
+            <img
+              src="/images/industry/about-denny-speaking-forum-2025.jpg"
+              alt="Denny You speaking to cleaning industry professionals"
+            />
+            <div><span>DENNY YOU</span><strong>Founder, World Clean Biz<br />Organizer, World Clean Expo</strong></div>
+          </div>
+          <div className="expo-organizer-copy">
+            <p className="eyebrow">ORGANIZER &amp; INDUSTRY NETWORK</p>
+            <h2>Business Matching Built On Real Industry Relationships.</h2>
+            <p>
+              Denny You, founder of World Clean Biz and organizer of World Clean
+              Expo, has worked inside the cleaning industry since 2006. His
+              professional network spans manufacturers, suppliers, brands,
+              buyers, investors and media.
+            </p>
+            <ul>
+              <li>A decade of cleaning industry articles and analysis</li>
+              <li>Product, hardware entrepreneurship and supply-chain experience</li>
+              <li>Connections across the people who build, buy, fund and shape the industry</li>
+            </ul>
+            <Link href="/about">About Denny &amp; World Clean Biz →</Link>
           </div>
         </div>
       </section>

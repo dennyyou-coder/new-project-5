@@ -191,9 +191,10 @@ export default function ReportsPage() {
               <h2>Intelligence Built For Better Business Decisions</h2>
             </div>
             <p>
-              Reports combine market evidence with 20 years inside the cleaning
-              industry and ongoing exposure to products, suppliers, brands and
-              trade shows.
+              For a decade, Denny has shared cleaning industry analysis with
+              professionals, securities firms and investment banks. Reports
+              combine that perspective with front-line exposure to products,
+              suppliers, brands and trade shows.
             </p>
           </div>
           <div className="reports-library-benefit-grid">
@@ -209,7 +210,7 @@ export default function ReportsPage() {
             <div aria-hidden="true">DY</div>
             <p>
               <strong>Reviewed by Denny You</strong>
-              Founder, World Clean Biz · Inside the cleaning industry since 2006
+              Founder, World Clean Biz · Inside the cleaning industry since 2006 · A decade of industry analysis
             </p>
           </div>
         </div>

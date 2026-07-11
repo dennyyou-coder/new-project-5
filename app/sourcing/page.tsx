@@ -46,7 +46,7 @@ const riskCards = [
 
 const opportunitySignals = [
   { number: "01", title: "Core Factory Pipeline Signals", text: "New projects moving through important Chinese cleaning equipment factories." },
-  { number: "02", title: "20 Years Of Product Experience", text: "Experience that separates a durable category shift from a short-lived novelty." },
+  { number: "02", title: "Product Experience Since 2006", text: "Experience that separates a durable category shift from a short-lived novelty." },
   { number: "03", title: "Components, Molds & Technology", text: "Changes that reveal when a product direction becomes technically and commercially viable." },
   { number: "04", title: "Overseas Channel Feedback", text: "Buyer and distributor input that reveals unsolved needs in specific markets." }
 ];
@@ -97,7 +97,7 @@ export default function SourcingPage() {
           </div>
           <figure className="sourcing-opportunity-hero-proof">
             <img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You discussing cleaning product opportunities with suppliers" />
-            <figcaption><strong>Denny You</strong><span>Founder, World Clean Biz</span><small>20 years inside the cleaning industry</small></figcaption>
+            <figcaption><strong>Denny You</strong><span>Founder, World Clean Biz</span><small>Inside the cleaning industry since 2006</small></figcaption>
           </figure>
         </div>
       </section>
@@ -156,7 +156,7 @@ export default function SourcingPage() {
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-team">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>20 years inside the cleaning industry</li><li>Industry insight for securities firms and investment banks</li><li>Currently supporting cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
+        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>Inside the cleaning industry since 2006</li><li>Cleaning industry hardware entrepreneur</li><li>Network across manufacturers, suppliers, brands and buyers</li><li>Currently supporting cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-final-cta" id="shortlist-form">

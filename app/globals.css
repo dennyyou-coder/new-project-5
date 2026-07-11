@@ -9392,6 +9392,116 @@ h3 {
   font-weight: 900;
 }
 
+.expo-organizer-section {
+  background: #eaf2ff;
+}
+
+.expo-organizer-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(38px, 6vw, 76px);
+  align-items: center;
+}
+
+.expo-organizer-visual {
+  position: relative;
+  min-height: 480px;
+  border: 1px solid rgba(201, 217, 234, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 26px 58px rgba(7, 31, 71, 0.14);
+  overflow: hidden;
+}
+
+.expo-organizer-visual::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 52%, rgba(7, 31, 71, 0.76));
+  content: "";
+}
+
+.expo-organizer-visual img {
+  display: block;
+  width: 100%;
+  min-height: 480px;
+  object-fit: cover;
+}
+
+.expo-organizer-visual > div {
+  position: absolute;
+  z-index: 1;
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+  color: white;
+}
+
+.expo-organizer-visual span,
+.expo-organizer-visual strong {
+  display: block;
+}
+
+.expo-organizer-visual span {
+  color: #a9cbff;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.expo-organizer-visual strong {
+  margin-top: 8px;
+  font-size: 21px;
+  line-height: 1.35;
+}
+
+.expo-organizer-copy h2 {
+  max-width: 760px;
+  margin-top: 10px;
+  color: var(--ink);
+  font-size: clamp(38px, 4.6vw, 60px);
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.expo-organizer-copy > p:not(.eyebrow) {
+  max-width: 760px;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.expo-organizer-copy ul {
+  display: grid;
+  gap: 11px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.expo-organizer-copy li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--ink);
+  font-weight: 760;
+  line-height: 1.5;
+}
+
+.expo-organizer-copy li::before {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  color: var(--blue);
+  content: "✓";
+  font-weight: 900;
+}
+
+.expo-organizer-copy a {
+  display: inline-flex;
+  margin-top: 26px;
+  color: var(--blue);
+  font-weight: 900;
+}
+
 @media (max-width: 600px) {
   .expo-hero {
     padding: 48px 0;
@@ -9417,7 +9527,9 @@ h3 {
   }
 
   .expo-hero-visual,
-  .expo-path-image {
+  .expo-path-image,
+  .expo-organizer-visual,
+  .expo-organizer-visual img {
     min-height: 300px;
   }
 
@@ -12080,7 +12192,8 @@ h3 {
   }
 
   .expo-path-grid,
-  .expo-final-conversion {
+  .expo-final-conversion,
+  .expo-organizer-layout {
     grid-template-columns: 1fr;
   }
 

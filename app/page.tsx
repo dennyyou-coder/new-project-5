@@ -187,22 +187,23 @@ export default function HomePage() {
             <p className="home-v9-eyebrow">Inside The Industry Since 2006</p>
             <h2>Front-Line Experience Behind Every Industry Signal</h2>
             <p>
-              Denny You has spent 20 years working across products, brands,
-              suppliers, forums and exhibitions in the global cleaning industry.
-              World Clean Biz turns that first-hand network into clearer market
-              judgement and more useful business connections.
+              Denny You is the founder of World Clean Biz and Organizer, World Clean Expo.
+              For a decade, he has shared cleaning industry analysis while
+              building products, companies and one of the industry&apos;s broadest
+              professional networks. World Clean Biz turns that experience into
+              clearer market judgement and more useful business connections.
             </p>
             <ul>
-              <li><strong>20 years</strong><span>Across products and supply chains</span></li>
-              <li><strong>Industry network</strong><span>Brands, suppliers, buyers and experts</span></li>
-              <li><strong>Real access</strong><span>Forums, exhibitions and factory conversations</span></li>
+              <li><strong>Since 2006</strong><span>Across products and supply chains</span></li>
+              <li><strong>For a decade</strong><span>Sharing industry articles and analysis</span></li>
+              <li><strong>Hardware entrepreneur</strong><span>Products, teams, capital and execution</span></li>
             </ul>
             <Link className="home-v9-inline-link" href="/about">About Denny & World Clean Biz →</Link>
           </div>
           <div className="home-v9-trust-gallery">
             <figure className="home-v9-trust-main">
               <img src="/images/industry/about-denny-speaking-forum-2025.jpg" alt="Denny speaking at an industry forum" />
-              <figcaption>Denny You · Founder, World Clean Biz</figcaption>
+              <figcaption>Denny You · Founder, World Clean Biz · Organizer, World Clean Expo</figcaption>
             </figure>
             <figure>
               <img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Supplier meeting at a cleaning industry exhibition" />
