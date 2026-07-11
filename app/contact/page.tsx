@@ -23,19 +23,11 @@ export const metadata: Metadata = {
   }
 };
 
-const responseSteps = [
-  {
-    title: "Prepare The Right Context",
-    text: "Share your company, market, product category and the decision or opportunity you are working on."
-  },
-  {
-    title: "Your Inquiry Is Routed By Intent",
-    text: "Sourcing, Expo, media and general requests follow separate paths so the right context is reviewed first."
-  },
-  {
-    title: "Follow-Up Depends On Fit",
-    text: "World Clean Biz reviews the information provided and follows up when the request fits its industry scope and available resources."
-  }
+const inquiryContext = [
+  "Your company and target market",
+  "Product category or business objective",
+  "Current project stage and timeline",
+  "The decision, supplier or connection you need"
 ];
 
 export default function ContactPage() {
@@ -72,15 +64,16 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="case-grid contact-help-grid">
-            {CONTACT_INQUIRIES.map((item) => (
+            {CONTACT_INQUIRIES.map((item, index) => (
               <TallyButton
-                className="case-card contact-help-card"
+                className={`case-card contact-help-card${index === 0 ? " contact-help-card-primary" : ""}`}
                 ctaLocation={item.ctaLocation}
                 form={item.form}
                 inquiryType={item.value}
                 key={item.value}
                 trackClick
               >
+                <span className="contact-help-card-number">0{index + 1}</span>
                 <IconBadge name={item.icon} />
                 <span className="contact-help-card-copy">
                   <strong>{item.title}</strong>
@@ -93,25 +86,38 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="section section-soft contact-response-section">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">
-                <InlineIcon name="send" />
-                What Happens Next
-              </p>
-              <h2>Send The Right Context First</h2>
-              <p>A focused inquiry helps World Clean Biz understand where it can add value.</p>
+      <section className="contact-response-section">
+        <div className="container contact-response-layout">
+          <div className="contact-response-visual">
+            <img
+              alt="Denny You discussing cleaning industry sourcing with suppliers"
+              src="/images/industry/sourcing-supplier-meeting-2026.jpg"
+            />
+            <div className="contact-response-identity">
+              <strong>Denny You</strong>
+              <span>Founder, World Clean Biz</span>
+              <small>Inside the cleaning industry since 2006</small>
             </div>
           </div>
-          <div className="case-grid contact-response-grid">
-            {responseSteps.map((step) => (
-              <article className="case-card" key={step.title}>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
-              </article>
-            ))}
+          <div className="contact-response-copy">
+            <div className="section-head">
+              <div>
+                <p className="eyebrow">
+                  <InlineIcon name="send" />
+                  What Happens Next
+                </p>
+                <h2>What To Include In Your Inquiry</h2>
+                <p>Clear context helps World Clean Biz understand your objective and route the request correctly.</p>
+              </div>
+            </div>
+            <ul className="contact-context-list">
+              {inquiryContext.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <p className="contact-response-note">
+              World Clean Biz reviews every relevant industry inquiry and routes it according to sourcing, Expo, media, or business intent.
+            </p>
           </div>
         </div>
       </section>

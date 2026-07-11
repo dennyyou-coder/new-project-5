@@ -8,6 +8,7 @@ import {
 
 const sourcingSource = await readFile(new URL("../app/sourcing/page.tsx", import.meta.url), "utf8");
 const contactSource = await readFile(new URL("../app/contact/page.tsx", import.meta.url), "utf8");
+const definitionSource = await readFile(new URL("../lib/inquiryConversion.ts", import.meta.url), "utf8");
 
 test("defines six unique tracked sourcing categories", () => {
   assert.equal(SOURCING_CATEGORIES.length, 6);
@@ -40,6 +41,15 @@ test("both pages include canonical and social metadata", () => {
     assert.match(source, /openGraph:/);
     assert.match(source, /twitter:/);
   }
+});
+
+test("Contact explains the inquiry path with visual trust evidence", () => {
+  assert.match(definitionSource, /Find Products & Suppliers/);
+  assert.match(contactSource, /What To Include In Your Inquiry/);
+  assert.match(contactSource, /sourcing-supplier-meeting-2026\.jpg/);
+  assert.match(contactSource, /Inside the cleaning industry since 2006/);
+  assert.doesNotMatch(contactSource, /Follow-Up Depends On Fit/);
+  assert.doesNotMatch(contactSource, /Send The Right Context First/);
 });
 
 test("defines one tracked route for each Contact intent", () => {
