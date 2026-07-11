@@ -8496,7 +8496,7 @@ h3 {
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 250, 255, 0.94) 47%, rgba(22, 59, 103, 0.2) 100%),
-    url("/images/site-refresh/system/expo-concept.webp");
+    url("/images/site-refresh/real/exhibition-hall.webp");
   background-position: center;
   background-size: cover;
   overflow: hidden;
@@ -8606,7 +8606,7 @@ h3 {
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(22, 59, 103, 0), rgba(22, 59, 103, 0.32)),
-    url("/images/site-refresh/system/expo-concept.webp");
+    url("/images/site-refresh/real/exhibition-hall.webp");
   background-position: center;
   background-size: cover;
   box-shadow: var(--shadow-panel);
@@ -9278,13 +9278,13 @@ h3 {
 .expo-path-image-exhibitor {
   background-image:
     linear-gradient(180deg, rgba(7, 31, 71, 0.02), rgba(7, 31, 71, 0.16)),
-    url("/images/site-refresh/system/expo-concept.webp");
+    url("/images/site-refresh/real/exhibition-hall.webp");
 }
 
 .expo-path-image-visitor {
   background-image:
     linear-gradient(180deg, rgba(7, 31, 71, 0.02), rgba(7, 31, 71, 0.16)),
-    url("/images/site-refresh/system/business-roundtable.webp");
+    url("/images/site-refresh/real/business-office.webp");
 }
 
 .expo-path-content {
@@ -11155,19 +11155,19 @@ h3 {
 }
 
 .page-hero-sourcing {
-  --page-hero-image: url("/images/site-refresh/system/product-engineering.webp");
+  --page-hero-image: url("/images/site-refresh/real/product-detail.webp");
 }
 
 .page-hero-reports {
-  --page-hero-image: url("/images/site-refresh/system/report-analysis.webp");
+  --page-hero-image: url("/images/site-refresh/real/city-architecture.webp");
 }
 
 .page-hero-expo {
-  --page-hero-image: url("/images/site-refresh/system/expo-concept.webp");
+  --page-hero-image: url("/images/site-refresh/real/exhibition-hall.webp");
 }
 
 .page-hero-contact {
-  --page-hero-image: url("/images/site-refresh/system/business-advisory.webp");
+  --page-hero-image: url("/images/site-refresh/about/about-hero-denny.webp");
 }
 
 .page-hero h1 {
@@ -18326,6 +18326,120 @@ h3 {
   }
 }
 
+/* Phase 2 visual alignment */
+.home-v9-pathway-grid,
+.home-v9-testimonial-grid,
+.about-network-pillar-grid,
+.reports-library-card-grid,
+.expo-track-grid,
+.expo-path-grid,
+.sourcing-opportunity-model-grid {
+  align-items: stretch;
+}
+
+.home-v9-pathway-grid article,
+.home-v9-testimonial-grid article,
+.about-network-pillar-grid article,
+.reports-library-card,
+.expo-visual-card,
+.expo-path-card,
+.sourcing-opportunity-model-grid article {
+  height: 100%;
+}
+
+.home-v9-pathway-grid article,
+.about-network-pillar-grid article,
+.reports-library-card,
+.expo-visual-card,
+.expo-path-card,
+.sourcing-opportunity-model-grid article {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-v9-pathway-body,
+.reports-library-card-body,
+.expo-visual-card > div,
+.expo-path-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.home-v9-text-links,
+.reports-library-card-button,
+.expo-path-content .button,
+.expo-path-content .lead-form-trigger {
+  margin-top: auto;
+}
+
+.home-v9-pathway-media img,
+.home-v9-trust-gallery img,
+.about-network-pillar-grid img,
+.about-network-story-photo img,
+.reports-library-card-media img,
+.expo-visual-card img,
+.expo-organizer-visual img,
+.sourcing-opportunity-hero-proof img,
+.sourcing-opportunity-stage-image img,
+.sourcing-opportunity-model-image img,
+.sourcing-opportunity-team-grid > img,
+.contact-response-visual > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-network-pillar-grid img,
+.reports-library-card-media img,
+.expo-visual-card img {
+  aspect-ratio: 16 / 9;
+}
+
+.sourcing-opportunity-stage-image,
+.sourcing-opportunity-model-image {
+  min-height: 190px;
+}
+
+.sourcing-opportunity-hero-proof img,
+.about-network-story-photo img,
+.sourcing-opportunity-team-grid > img,
+.contact-response-visual > img {
+  object-position: center 28%;
+}
+
+.contact-response-layout,
+.about-network-story-layout,
+.sourcing-opportunity-team-grid {
+  align-items: stretch;
+}
+
+.contact-response-visual,
+.about-network-story-photo,
+.sourcing-opportunity-team-grid > img {
+  min-height: 440px;
+}
+
+@media (max-width: 760px) {
+  .home-v9-pathway-grid article,
+  .home-v9-testimonial-grid article,
+  .about-network-pillar-grid article,
+  .reports-library-card,
+  .expo-visual-card,
+  .expo-path-card,
+  .sourcing-opportunity-model-grid article {
+    height: auto;
+  }
+
+  .contact-response-visual,
+  .about-network-story-photo,
+  .sourcing-opportunity-team-grid > img {
+    min-height: 320px;
+  }
+}
+
 /* Sourcing V4: concise decision-led sourcing journey */
 .reports-library-page {
   --rl-ink: #0b1f3a;
@@ -20570,4 +20684,33 @@ button.contact-help-card > .contact-help-card-copy > span {
   .sourcing-opportunity-final-cta .lead-form-trigger,
   .sourcing-opportunity-final-button { width: 100%; }
   .sourcing-opportunity-final-cta ul { align-items: center; flex-direction: column; }
+}
+
+/* Phase 2 final alignment overrides */
+.sourcing-opportunity-team-grid {
+  align-items: stretch;
+}
+
+.sourcing-opportunity-team-grid > img {
+  height: 100%;
+  min-height: 440px;
+  max-height: none;
+  object-position: center 28%;
+}
+
+.sourcing-opportunity-process ol,
+.sourcing-opportunity-model-grid {
+  align-items: stretch;
+}
+
+.sourcing-opportunity-process li,
+.sourcing-opportunity-model-grid article {
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  .sourcing-opportunity-team-grid > img {
+    height: 320px;
+    min-height: 0;
+  }
 }

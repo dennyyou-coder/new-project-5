@@ -59,7 +59,7 @@ test("both pages include canonical and social metadata", () => {
 test("Contact explains the inquiry path with visual trust evidence", () => {
   assert.match(definitionSource, /title: "Sourcing"/);
   assert.match(contactSource, /What To Include In Your Inquiry/);
-  assert.match(contactSource, /site-refresh\/system\/business-advisory\.webp/);
+  assert.match(contactSource, /site-refresh\/about\/about-hero-denny\.webp/);
   assert.match(contactSource, /Inside the cleaning industry since 2006/);
   assert.doesNotMatch(contactSource, /Follow-Up Depends On Fit/);
   assert.doesNotMatch(contactSource, /Send The Right Context First/);
@@ -188,7 +188,7 @@ test("Sourcing grounds key sales sections with unified visual evidence", () => {
   assert.match(sourcingSource, /sourcing-opportunity-shortlist-preview/);
   assert.match(sourcingSource, /sourcing-opportunity-stage-image/);
   assert.match(sourcingSource, /sourcing-opportunity-model-image/);
-  assert.match(sourcingSource, /site-refresh\/system\/product-selection\.webp/);
-  assert.match(sourcingSource, /site-refresh\/system\/product-engineering\.webp/);
-  assert.match(sourcingSource, /site-refresh\/system\/business-roundtable\.webp/);
+  assert.match(sourcingSource, /site-refresh\/real\/product-detail\.webp/);
+  assert.match(sourcingSource, /site-refresh\/real\/modern-factory\.webp/);
+  assert.match(sourcingSource, /site-refresh\/real\/business-office\.webp/);
 });

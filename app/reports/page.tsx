@@ -12,7 +12,7 @@ const upcomingReports = [
     title: "Pool Robot Channels And Service Costs",
     reportId: "pool-robot-channels-service-costs",
     ctaLocation: "reports_card_pool_robots",
-    image: "/images/site-refresh/home/category-pool-robots.webp",
+    image: "/images/site-refresh/real/product-detail.webp",
     alt: "Pool cleaning robot in a swimming pool",
     audience: "For brands and distributors evaluating the pool robot category.",
     points: ["Channel structure", "Service cost drivers", "Buyer considerations"]
@@ -21,7 +21,7 @@ const upcomingReports = [
     title: "Robotic Lawn Mower Supply Chains",
     reportId: "robotic-lawn-mower-supply-chains",
     ctaLocation: "reports_card_lawn_mowers",
-    image: "/images/site-refresh/home/category-robotic-lawn-mowers.webp",
+    image: "/images/site-refresh/real/city-architecture.webp",
     alt: "Robotic lawn mower operating outdoors",
     audience: "For buyers tracking outdoor robotics and emerging suppliers.",
     points: ["Technology paths", "Supplier landscape", "Market entry questions"]
@@ -30,7 +30,7 @@ const upcomingReports = [
     title: "Commercial Cleaning Robot ROI Model",
     reportId: "commercial-cleaning-robot-roi",
     ctaLocation: "reports_card_commercial_robots",
-    image: "/images/site-refresh/home/category-commercial-cleaning.webp",
+    image: "/images/site-refresh/real/modern-factory.webp",
     alt: "Commercial robotic cleaning equipment",
     audience: "For operators and distributors evaluating commercial automation.",
     points: ["Labor substitution", "Deployment economics", "Operational fit"]
@@ -39,7 +39,7 @@ const upcomingReports = [
     title: "China Cleaning Supplier Pack",
     reportId: "china-cleaning-supplier-pack",
     ctaLocation: "reports_card_supplier_pack",
-    image: "/images/site-refresh/system/business-roundtable.webp",
+    image: "/images/site-refresh/real/business-office.webp",
     alt: "Cleaning industry supplier meeting in China",
     audience: "For overseas buyers preparing to evaluate Chinese suppliers.",
     points: ["Supplier questions", "Quality checkpoints", "Sourcing preparation"]
