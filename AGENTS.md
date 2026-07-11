@@ -217,3 +217,22 @@ The system should automatically:
 3. Update images
 4. Validate build
 5. Return modified file list
+
+## Production Release Rule
+
+GitHub `main` is the only authoritative source for the production website.
+
+Required release sequence:
+
+1. Work on an isolated feature branch or worktree.
+2. Run relevant focused tests and `npm run build`.
+3. Push the feature branch to GitHub.
+4. Create a Vercel Preview deployment and validate desktop, mobile, forms, analytics, and browser errors as applicable.
+5. Obtain explicit user approval for production.
+6. Merge the approved branch into `main` and push `main` to GitHub.
+7. Allow the Vercel Git integration to deploy production automatically.
+8. Verify `worldcleanbiz.com` after deployment and report the commit and deployment result.
+
+Routine production releases must not use `vercel --prod` or another direct local-to-production deployment command.
+
+A direct CLI production deployment is allowed only for an explicitly approved emergency recovery when the GitHub-to-Vercel release path is unavailable. After emergency recovery, reconcile the deployed code back into GitHub `main` before any further release.
