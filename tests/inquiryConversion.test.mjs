@@ -145,3 +145,12 @@ test("early sourcing sections use the shared icon system for scanning", () => {
   assert.match(sourcingSource, /className="sourcing-opportunity-risk-icon"/);
   assert.match(sourcingSource, /InlineIcon name=\{item\.icon\}/);
 });
+
+test("Sourcing visual hierarchy separates opportunity, risk and action colors", () => {
+  assert.match(globalStyles, /--so-opportunity:\s*#0f8b8d/);
+  assert.match(globalStyles, /--so-warning:\s*#d98e04/);
+  assert.match(globalStyles, /\.sourcing-opportunity-driver-icon[^}]*color:\s*var\(--so-opportunity\)/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-risk-icon[^}]*color:\s*var\(--so-warning\)/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#fff/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-process \.sourcing-opportunity-heading h2\s*\{[^}]*color:\s*var\(--so-ink\)/s);
+});
