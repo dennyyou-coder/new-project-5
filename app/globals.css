@@ -18447,6 +18447,14 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.lead-form-expectation {
+  margin: 10px 0 0;
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.55;
+  opacity: .78;
+}
+
 /* Sourcing V4: concise decision-led sourcing journey */
 .reports-library-page {
   --rl-ink: #0b1f3a;

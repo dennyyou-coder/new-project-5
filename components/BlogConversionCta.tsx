@@ -29,6 +29,7 @@ export function BlogConversionCta({
         ctaLocation={location}
         eventContext={context}
         form={cta.form}
+        inquiryIntent={cta.inquiryIntent}
         reportId={cta.reportId}
       >
         {cta.buttonLabel}

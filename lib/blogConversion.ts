@@ -8,6 +8,7 @@ export type BlogCtaDefinition = {
   buttonLabel: string;
   form: "sourcing" | "reports" | "expo" | "newsletter";
   reportId?: string;
+  inquiryIntent?: string;
 };
 
 const CTA_BY_TYPE: Record<BlogCtaType, BlogCtaDefinition> = {
@@ -18,7 +19,8 @@ const CTA_BY_TYPE: Record<BlogCtaType, BlogCtaDefinition> = {
     description:
       "Share your category, target market and supplier requirements with World Clean Biz.",
     buttonLabel: "Start A Sourcing Inquiry",
-    form: "sourcing"
+    form: "sourcing",
+    inquiryIntent: "article_product_research"
   },
   reports: {
     type: "reports",
@@ -37,7 +39,8 @@ const CTA_BY_TYPE: Record<BlogCtaType, BlogCtaDefinition> = {
     description:
       "Receive visitor registration, exhibitor, forum and business matching updates.",
     buttonLabel: "Get Expo Updates",
-    form: "expo"
+    form: "expo",
+    inquiryIntent: "visitor_interest"
   },
   newsletter: {
     type: "newsletter",

@@ -379,7 +379,9 @@ export function ReportsLeadForm({
           Select Free Reports
         </TallyReportButton>
       </div>
-      <p>Complete the form to choose the reports you want to receive.</p>
+      <p className="lead-form-expectation">
+        For relevant business requests, share your company, market and business objective. Complete the form to choose the reports you want to receive.
+      </p>
     </div>
   );
 }
@@ -397,9 +399,13 @@ export function ExpoLeadForm({ roles: _roles }: { roles: string[] }) {
         className="button tally-cta-button"
         ctaLocation="wce_footer_visitor"
         form="expo"
+        inquiryIntent="visitor_interest"
       >
         Get Expo Updates
       </TallyButton>
+      <p className="lead-form-expectation">
+        Tell us whether you plan to visit, exhibit or connect. World Clean Biz reviews the request and routes it to the relevant team.
+      </p>
     </div>
   );
 }
@@ -420,6 +426,9 @@ export function NewsletterLeadForm() {
           Subscribe To Blog Updates
         </TallyButton>
       </div>
+      <p className="lead-form-expectation">
+        For readers who want selected cleaning industry articles and market signals. You can choose the updates relevant to your work.
+      </p>
     </div>
   );
 }

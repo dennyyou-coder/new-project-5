@@ -271,8 +271,8 @@ export default function HomePage() {
               <h2>Planning For World Clean Expo?</h2>
             </div>
             <div className="home-v9-conversion-actions">
-              <TallyButton ctaLocation="home_wce_exhibitor" form="wceExhibitor">Exhibit / Partner</TallyButton>
-              <TallyButton className="button-secondary" ctaLocation="home_wce_visitor" form="wceVisitor">Visit / Updates</TallyButton>
+              <TallyButton ctaLocation="home_wce_exhibitor" form="wceExhibitor" inquiryIntent="exhibitor_interest">Exhibit / Partner</TallyButton>
+              <TallyButton className="button-secondary" ctaLocation="home_wce_visitor" form="wceVisitor" inquiryIntent="visitor_interest">Visit / Updates</TallyButton>
             </div>
           </div>
         </div>

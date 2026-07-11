@@ -116,7 +116,7 @@ export default function ContactPage() {
               ))}
             </ul>
             <p className="contact-response-note">
-              World Clean Biz reviews every relevant industry inquiry and routes it according to sourcing, Expo, media, or business intent.
+              World Clean Biz reviews each relevant inquiry and routes it to the relevant team based on sourcing, Expo, media, or business intent.
             </p>
           </div>
         </div>
