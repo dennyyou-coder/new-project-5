@@ -2,190 +2,180 @@ import type { Metadata } from "next";
 import { ReportsLeadForm, TallyReportButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
-  title: "2026 Global Cleaning Industry Report",
+  title: "Free Cleaning Industry Reports & Market Intelligence",
   description:
-    "Get field-informed cleaning industry intelligence on product opportunities, category movement, supplier signals and market trends."
+    "Choose free World Clean Biz reports on cleaning markets, product categories and China supply chains and receive them by email."
 };
 
-const metrics = [
-  { value: "01", label: "Product Opportunities" },
-  { value: "02", label: "Market Trends" },
-  { value: "03", label: "Supplier Signals" }
+const upcomingReports = [
+  {
+    title: "Pool Robot Channels And Service Costs",
+    reportId: "pool-robot-channels-service-costs",
+    ctaLocation: "reports_card_pool_robots",
+    image: "/images/sourcing/pool-robots.png",
+    alt: "Pool cleaning robot in a swimming pool",
+    audience: "For brands and distributors evaluating the pool robot category.",
+    points: ["Channel structure", "Service cost drivers", "Buyer considerations"]
+  },
+  {
+    title: "Robotic Lawn Mower Supply Chains",
+    reportId: "robotic-lawn-mower-supply-chains",
+    ctaLocation: "reports_card_lawn_mowers",
+    image: "/images/sourcing/lawn-robots.png",
+    alt: "Robotic lawn mower operating outdoors",
+    audience: "For buyers tracking outdoor robotics and emerging suppliers.",
+    points: ["Technology paths", "Supplier landscape", "Market entry questions"]
+  },
+  {
+    title: "Commercial Cleaning Robot ROI Model",
+    reportId: "commercial-cleaning-robot-roi",
+    ctaLocation: "reports_card_commercial_robots",
+    image: "/images/sourcing/commercial-cleaning.png",
+    alt: "Commercial robotic cleaning equipment",
+    audience: "For operators and distributors evaluating commercial automation.",
+    points: ["Labor substitution", "Deployment economics", "Operational fit"]
+  },
+  {
+    title: "China Cleaning Supplier Pack",
+    reportId: "china-cleaning-supplier-pack",
+    ctaLocation: "reports_card_supplier_pack",
+    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
+    alt: "Cleaning industry supplier meeting in China",
+    audience: "For overseas buyers preparing to evaluate Chinese suppliers.",
+    points: ["Supplier questions", "Quality checkpoints", "Sourcing preparation"]
+  }
 ];
 
-const insideItems = [
+const intelligenceBenefits = [
   {
-    label: "Report Includes",
+    number: "01",
+    title: "Market Signals",
+    text: "Understand where demand, technology and category attention are moving."
+  },
+  {
+    number: "02",
     title: "Product Opportunities",
-    text: "The categories attracting the most attention and investment.",
-    points: ["Pool Cleaning Robots", "Lawn Robots", "Commercial Cleaning"]
+    text: "See product lines and commercial questions worth investigating earlier."
   },
   {
-    label: "Market Coverage",
-    title: "Market Trends",
-    text: "Where global demand is moving and why.",
-    points: ["US Market", "Europe Market", "Emerging Regions"]
-  },
-  {
-    label: "Sourcing Context",
-    title: "Supplier Signals",
-    text: "Manufacturing and sourcing shifts worth watching.",
-    points: ["Manufacturing Shifts", "ODM Landscape", "Cost Trends"]
-  },
-  {
-    label: "Competitive View",
-    title: "Brand Landscape",
-    text: "Which brands are gaining momentum across markets.",
-    points: ["Leading Brands", "Fast Growing Brands", "New Entrants"]
+    number: "03",
+    title: "China Supply Chains",
+    text: "Read supplier and sourcing developments through an industry-specific lens."
   }
-];
-
-const previewPages = [
-  {
-    title: "Market Map Preview",
-    text: "Category movement and opportunity signals across cleaning segments.",
-    type: "map",
-    rows: ["Robotic Cleaning", "Outdoor Automation", "Commercial Equipment"]
-  },
-  {
-    title: "Brand Landscape Preview",
-    text: "A view of established brands, fast movers and new entrants.",
-    type: "chart",
-    rows: ["Established Leaders", "Fast Growing Brands", "New Entrants"]
-  },
-  {
-    title: "Supplier Signals Preview",
-    text: "Manufacturing, ODM and sourcing shifts worth watching.",
-    type: "table",
-    rows: ["Manufacturing Shifts", "ODM Landscape", "Cost Trends"]
-  }
-];
-
-const comingSoonReports = [
-  { title: "Pool Robots Outlook", expected: "Q3 2026" },
-  { title: "Lawn Robots Outlook", expected: "Q3 2026" },
-  { title: "Robot Vacuums Outlook", expected: "Q4 2026" },
-  { title: "Supplier Guide", expected: "Q4 2026" }
 ];
 
 export default function ReportsPage() {
   return (
-    <main className="reports-page reports-v1-page">
-      <section className="reports-v1-hero" id="top">
-        <div className="reports-container reports-v1-hero-grid">
-          <div className="reports-v1-hero-copy">
-            <p className="reports-kicker">Global Cleaning Industry</p>
-            <h1>2026 Global Cleaning Industry Report</h1>
-            <p>
-              Field-informed intelligence on product opportunities, category
-              movement, supplier signals and the future of the global cleaning
-              industry.
-            </p>
-            <div className="reports-v1-metrics" aria-label="Report credibility">
-              {metrics.map((item) => (
-                <span key={item.label}>
-                  <strong>{item.value}</strong>
-                  {item.label}
-                </span>
-              ))}
-            </div>
-            <ReportsLeadForm />
-          </div>
-
-          <div className="reports-v1-cover-wrap">
-            <article className="reports-v1-cover" aria-label="2026 Global Cleaning Industry Report cover">
-              <img
-                src="/images/reports/reports-category-outlook.png"
-                alt=""
-              />
-              <div>
-                <span>PDF Report</span>
-                <strong>2026 Global Cleaning Industry Report</strong>
-                <ul>
-                  <li>Product Opportunities</li>
-                  <li>Market Trends</li>
-                  <li>Supplier Signals</li>
-                </ul>
-                <small>Product Opportunities / Market Trends / Supplier Signals</small>
-                <em>Free Download / 2026 Edition</em>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section className="reports-v1-author-section">
-        <div className="reports-container reports-v1-author-strip">
-          <div className="reports-v1-author-mark" aria-hidden="true">
-            DY
-          </div>
+    <main className="reports-library-page">
+      <section className="reports-library-hero" id="top">
+        <div className="reports-container reports-library-hero-grid">
           <div>
-            <p className="reports-kicker">Compiled by Denny You</p>
-            <h2>Built From Front-Line Industry Signals</h2>
+            <p className="reports-kicker">World Clean Biz Intelligence Library</p>
+            <h1>Free Cleaning Industry Reports</h1>
+            <p className="reports-library-hero-intro">
+              Choose the reports relevant to your market and receive them by
+              email. New category and sourcing intelligence will be added as it
+              becomes available.
+            </p>
+            <a className="reports-library-primary-button" href="#free-reports">
+              Explore Free Reports
+            </a>
+            <ul className="reports-library-trust-list">
+              <li>Free PDF reports</li>
+              <li>Business and market intelligence</li>
+              <li>New reports added regularly</li>
+            </ul>
           </div>
-          <ul>
-            <li>Inside The Industry Since 2006</li>
-            <li>Industry Analysis Since 2018</li>
-            <li>Products, Suppliers, Brands And Forums Tracked</li>
-          </ul>
+
+          <div className="reports-library-hero-visual" aria-label="World Clean Biz report library">
+            <img
+              src="/images/reports/wcb-cleaning-industry-growth-map-cover.png"
+              alt="World Clean Biz report cover: The Next Decade of Cleaning Growth"
+            />
+          </div>
         </div>
       </section>
 
-      <section className="reports-v1-section">
+      <section className="reports-library-section reports-library-catalog" id="free-reports">
         <div className="reports-container">
-          <div className="reports-v1-section-head">
-            <p className="reports-kicker">Inside The Report</p>
-            <h2>What&apos;s Inside The Report</h2>
-          </div>
-          <div className="reports-v1-inside-grid">
-            {insideItems.map((item, index) => (
-              <article key={item.title}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <small>{item.label}</small>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-                <ul>
-                  {item.points.map((point) => (
-                    <li key={point}>{point}</li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-          <TallyReportButton
-            className="reports-v1-inline-cta"
-            ctaLocation="reports_inline"
-            reportId="next-decade-cleaning-growth"
-          />
-        </div>
-      </section>
-
-      <section className="reports-v1-section reports-v2-preview-section">
-        <div className="reports-container">
-          <div className="reports-v1-section-head reports-v1-section-head-row">
+          <div className="reports-library-heading">
             <div>
-              <p className="reports-kicker">Report Preview</p>
-              <h2>Preview The Report</h2>
+              <p className="reports-kicker">Choose Your Intelligence</p>
+              <h2>Free Reports For Cleaning Industry Decisions</h2>
             </div>
             <p>
-              A quick look at selected preview pages built from product
-              signals, supplier observations, category movement and trade show
-              activity.
+              Get the current report now or register your interest in upcoming
+              category briefs. You can select more than one report in the form.
             </p>
           </div>
-          <div className="reports-v2-preview-grid">
-            {previewPages.map((page, index) => (
-              <article className={`reports-v2-preview-card reports-v2-preview-${page.type}`} key={page.title}>
-                <div>
-                  <span>Preview {String(index + 1).padStart(2, "0")}</span>
-                  <i aria-hidden="true">World Clean Biz Preview</i>
-                  <strong>{page.title}</strong>
-                  <p>{page.text}</p>
+
+          <article className="reports-library-featured-card">
+            <div className="reports-library-featured-cover">
+              <img
+                src="/images/reports/wcb-cleaning-industry-growth-map-cover.png"
+                alt="The Next Decade of Cleaning Growth report cover"
+              />
+            </div>
+            <div className="reports-library-featured-copy">
+              <span className="reports-library-status reports-library-status-available">
+                Available Now
+              </span>
+              <p className="reports-kicker">Featured Report · 13 Pages</p>
+              <h3>The Next Decade of Cleaning Growth</h3>
+              <p>
+                A practical view of how cleaning growth is spreading from indoor
+                appliances into yard robots, pool robots and commercial cleaning,
+                with context for overseas buyers reading China&apos;s supply chain.
+              </p>
+              <ul>
+                <li>2026E market scenario and research boundaries</li>
+                <li>Five cleaning product lines and representative players</li>
+                <li>Buyer and supplier evaluation checklists</li>
+              </ul>
+              <TallyReportButton
+                className="reports-library-card-button"
+                ctaLocation="reports_card_current"
+                reportId="next-decade-cleaning-growth"
+              >
+                Get This Report
+              </TallyReportButton>
+              <small>Free PDF · Delivered by email</small>
+            </div>
+          </article>
+
+          <div className="reports-library-upcoming-heading">
+            <div>
+              <p className="reports-kicker">Coming Soon</p>
+              <h2>Register Your Interest Early</h2>
+            </div>
+            <p>
+              Tell us which topics matter to you. We will notify you when the
+              selected report becomes available.
+            </p>
+          </div>
+
+          <div className="reports-library-card-grid">
+            {upcomingReports.map((report) => (
+              <article className="reports-library-card" key={report.reportId}>
+                <div className="reports-library-card-media">
+                  <img src={report.image} alt={report.alt} />
+                  <span className="reports-library-status">Coming Soon</span>
+                </div>
+                <div className="reports-library-card-body">
+                  <h3>{report.title}</h3>
+                  <p>{report.audience}</p>
                   <ul>
-                    {page.rows.map((row) => (
-                      <li key={row}>{row}</li>
+                    {report.points.map((point) => (
+                      <li key={point}>{point}</li>
                     ))}
                   </ul>
+                  <TallyReportButton
+                    className="reports-library-card-button reports-library-card-button-secondary"
+                    ctaLocation={report.ctaLocation}
+                    reportId={report.reportId}
+                  >
+                    Notify Me When Available
+                  </TallyReportButton>
                 </div>
               </article>
             ))}
@@ -193,45 +183,49 @@ export default function ReportsPage() {
         </div>
       </section>
 
-      <section className="reports-v1-section">
+      <section className="reports-library-section reports-library-value">
         <div className="reports-container">
-          <div className="reports-v1-section-head reports-v1-section-head-row">
+          <div className="reports-library-heading reports-library-heading-light">
             <div>
-              <p className="reports-kicker">Coming Soon</p>
-              <h2>Upcoming Intelligence Briefs</h2>
+              <p className="reports-kicker">Why World Clean Biz Reports</p>
+              <h2>Intelligence Built For Better Business Decisions</h2>
             </div>
             <p>
-              Download the 2026 report today and join our industry intelligence list.
-              <br />
-              Future briefs will focus on field-informed category outlooks,
-              supplier guides and market updates as they are released.
+              Reports combine market evidence with 20 years inside the cleaning
+              industry and ongoing exposure to products, suppliers, brands and
+              trade shows.
             </p>
           </div>
-          <div className="reports-v1-coming-grid">
-            {comingSoonReports.map((report) => (
-              <article key={report.title}>
-                <h3>{report.title}</h3>
-                <span>Coming Next</span>
-                <p>
-                  Expected:
-                  <strong>{report.expected}</strong>
-                </p>
+          <div className="reports-library-benefit-grid">
+            {intelligenceBenefits.map((item) => (
+              <article key={item.number}>
+                <span>{item.number}</span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
               </article>
             ))}
+          </div>
+          <div className="reports-library-author-row">
+            <div aria-hidden="true">DY</div>
+            <p>
+              <strong>Reviewed by Denny You</strong>
+              Founder, World Clean Biz · Inside the cleaning industry since 2006
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="reports-v2-final-cta">
-        <div className="reports-container" id="get-report">
-          <p className="reports-kicker">Ready To Download?</p>
-          <h2>Unlock the full report by email.</h2>
+      <section className="reports-library-final-cta">
+        <div className="reports-container">
+          <p className="reports-kicker">Build Your Report List</p>
+          <h2>Choose The Reports You Want To Receive.</h2>
           <p>
-            Enter your work email to receive the download link and future
-            cleaning industry intelligence updates.
+            Select the current report and any upcoming topics relevant to your
+            business. We will use your email only for report delivery and World
+            Clean Biz industry intelligence updates.
           </p>
           <ReportsLeadForm />
-          <small>Free PDF / No spam / Industry updates only</small>
+          <small>Free reports · No spam · Unsubscribe at any time</small>
         </div>
       </section>
     </main>
