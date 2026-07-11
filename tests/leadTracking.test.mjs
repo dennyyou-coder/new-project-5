@@ -4,8 +4,10 @@ import * as leadTracking from "../lib/leadTracking.ts";
 
 const {
   LEAD_FORM_TYPES,
+  buildContactFallbackUrl,
   buildTallyUrl,
   createLeadAttribution,
+  getConversionGroup,
   trackLeadEvent
 } = leadTracking;
 
@@ -20,6 +22,36 @@ test("lead form types remain stable", () => {
   ]);
 });
 
+test("lead form types map to stable business conversion groups", () => {
+  assert.equal(getConversionGroup("sourcing"), "sourcing");
+  assert.equal(getConversionGroup("reports"), "reports");
+  assert.equal(getConversionGroup("wce_exhibitor"), "expo");
+  assert.equal(getConversionGroup("wce_visitor"), "expo");
+  assert.equal(getConversionGroup("contact"), "contact");
+  assert.equal(getConversionGroup("newsletter"), "newsletter");
+});
+
+test("lead attribution includes conversion reporting fields", () => {
+  const result = createLeadAttribution({
+    formType: "sourcing",
+    sourcePage: "/sourcing",
+    ctaLocation: "sourcing_footer"
+  });
+
+  assert.equal(result.conversion_group, "sourcing");
+  assert.equal(result.conversion_value, 0);
+});
+
+test("contact fallback preserves conversion context", () => {
+  assert.equal(
+    buildContactFallbackUrl({
+      conversion_group: "reports",
+      cta_location: "reports_footer"
+    }),
+    "/contact?intent=reports&source=reports_footer"
+  );
+});
+
 test("createLeadAttribution keeps source and UTM context", () => {
   assert.deepEqual(
     createLeadAttribution({
@@ -31,6 +63,8 @@ test("createLeadAttribution keeps source and UTM context", () => {
     }),
     {
       form_type: "sourcing",
+      conversion_group: "sourcing",
+      conversion_value: 0,
       source_page: "/blog/example",
       cta_location: "article_footer_sourcing",
       language: "en",
@@ -50,6 +84,8 @@ test("createLeadAttribution keeps source and UTM context", () => {
 test("buildTallyUrl serializes hidden fields", () => {
   const url = buildTallyUrl("https://tally.so/r/abc123", {
     form_type: "newsletter",
+    conversion_group: "newsletter",
+    conversion_value: 0,
     source_page: "/",
     cta_location: "home_newsletter",
     language: "en",
@@ -66,13 +102,15 @@ test("buildTallyUrl serializes hidden fields", () => {
 
   assert.equal(
     url,
-    "https://tally.so/r/abc123?form_type=newsletter&source_page=%2F&cta_location=home_newsletter&language=en&utm_source=email&utm_medium=newsletter&utm_campaign=launch&utm_content=&utm_term=&report_id=&product_category=&inquiry_type=&inquiry_intent="
+    "https://tally.so/r/abc123?form_type=newsletter&conversion_group=newsletter&conversion_value=0&source_page=%2F&cta_location=home_newsletter&language=en&utm_source=email&utm_medium=newsletter&utm_campaign=launch&utm_content=&utm_term=&report_id=&product_category=&inquiry_type=&inquiry_intent="
   );
 });
 
 test("buildTallyUrl preserves existing parameters", () => {
   const url = buildTallyUrl("https://tally.so/r/abc123?transparentBackground=1", {
     form_type: "reports",
+    conversion_group: "reports",
+    conversion_value: 0,
     source_page: "/reports",
     cta_location: "reports_hero",
     language: "en",

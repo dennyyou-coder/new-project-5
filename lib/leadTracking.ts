@@ -19,6 +19,21 @@ export function isLocalAnalyticsDebugHost(hostname: string): boolean {
 
 export type LeadFormType = (typeof LEAD_FORM_TYPES)[number];
 
+export type ConversionGroup =
+  | "sourcing"
+  | "reports"
+  | "expo"
+  | "contact"
+  | "newsletter";
+
+export function getConversionGroup(formType: LeadFormType): ConversionGroup {
+  if (formType === "wce_exhibitor" || formType === "wce_visitor") {
+    return "expo";
+  }
+
+  return formType;
+}
+
 export type LeadEventName =
   | "cta_view"
   | "cta_click"
@@ -29,6 +44,8 @@ export type LeadEventName =
 
 export type LeadAttribution = {
   form_type: LeadFormType;
+  conversion_group: ConversionGroup;
+  conversion_value: number;
   source_page: string;
   cta_location: string;
   language: string;
@@ -93,6 +110,8 @@ export function createLeadAttribution({
 
   return {
     form_type: formType,
+    conversion_group: getConversionGroup(formType),
+    conversion_value: 0,
     source_page: sourcePage,
     cta_location: ctaLocation,
     language,
@@ -106,6 +125,18 @@ export function createLeadAttribution({
     inquiry_type: inquiryType,
     inquiry_intent: inquiryIntent
   };
+}
+
+export function buildContactFallbackUrl({
+  conversion_group,
+  cta_location
+}: Pick<LeadAttribution, "conversion_group" | "cta_location">): string {
+  const params = new URLSearchParams({
+    intent: conversion_group,
+    source: cta_location
+  });
+
+  return `/contact?${params.toString()}`;
 }
 
 export function buildTallyUrl(
