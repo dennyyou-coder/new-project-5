@@ -17436,23 +17436,6 @@ h3 {
   top: 18px;
 }
 
-.contact-help-card-primary {
-  background: linear-gradient(145deg, #0f2747, #163f73);
-  border-color: #0f2747;
-  color: #fff;
-}
-
-.contact-help-card-primary .contact-help-card-number,
-.contact-help-card-primary .contact-help-card-copy strong,
-.contact-help-card-primary .contact-help-card-copy span,
-.contact-help-card-primary .contact-help-card-copy em {
-  color: #fff;
-}
-
-.contact-help-card-primary .contact-help-card-copy span {
-  color: rgba(255, 255, 255, 0.76);
-}
-
 .contact-response-section {
   background: #0f2747;
   color: #fff;

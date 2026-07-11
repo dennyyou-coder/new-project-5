@@ -50,6 +50,7 @@ test("Contact explains the inquiry path with visual trust evidence", () => {
   assert.match(contactSource, /Inside the cleaning industry since 2006/);
   assert.doesNotMatch(contactSource, /Follow-Up Depends On Fit/);
   assert.doesNotMatch(contactSource, /Send The Right Context First/);
+  assert.doesNotMatch(contactSource, /contact-help-card-primary/);
 });
 
 test("defines one tracked route for each Contact intent", () => {

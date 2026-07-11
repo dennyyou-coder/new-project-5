@@ -66,7 +66,7 @@ export default function ContactPage() {
           <div className="case-grid contact-help-grid">
             {CONTACT_INQUIRIES.map((item, index) => (
               <TallyButton
-                className={`case-card contact-help-card${index === 0 ? " contact-help-card-primary" : ""}`}
+                className="case-card contact-help-card"
                 ctaLocation={item.ctaLocation}
                 form={item.form}
                 inquiryType={item.value}
