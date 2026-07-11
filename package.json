@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:lead": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/leadTracking.test.mjs"
+    "test:lead": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/leadTracking.test.mjs",
+    "test:blog": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/blogConversion.test.mjs",
+    "test:homepage": "node --test tests/homepageStructure.test.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
