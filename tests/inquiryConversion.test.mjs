@@ -158,9 +158,16 @@ test("Sourcing visual hierarchy stays within the blue and white brand system", (
 test("all primary Sourcing conversion paths use visible blue buttons", () => {
   assert.doesNotMatch(sourcingSource, /TallyInlineEmbed/);
   assert.doesNotMatch(sourcingSource, /sourcing-opportunity-text-button/);
-  assert.match(sourcingSource, /sourcing-opportunity-intent-button/);
+  assert.match(sourcingSource, /sourcing-opportunity-button-secondary/);
   assert.match(sourcingSource, /sourcing-opportunity-category-cta/);
   assert.match(sourcingSource, /sourcing-opportunity-final-cta/);
+});
+
+test("Sourcing does not repeat the two hero intent choices below the fold", () => {
+  assert.doesNotMatch(sourcingSource, /sourcing-opportunity-intents/);
+  assert.doesNotMatch(sourcingSource, /sourcing_intent_opportunity/);
+  assert.doesNotMatch(sourcingSource, /sourcing_intent_specific_product/);
+  assert.doesNotMatch(globalStyles, /\.sourcing-opportunity-intent-grid/);
 });
 
 test("Sourcing uses alternating sales bands and visual storytelling", () => {

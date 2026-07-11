@@ -18939,8 +18939,7 @@ button.contact-help-card > .contact-help-card-copy > span {
 .sourcing-opportunity-actions { display: flex; gap: 12px; align-items: flex-start; margin-top: 28px; }
 .sourcing-opportunity-hero-offer { max-width: 650px; margin: 13px 0 0; color: #4f6680; font-size: 13px; line-height: 1.45; }
 .sourcing-opportunity-button,
-.sourcing-opportunity-button-secondary,
-.sourcing-opportunity-intent-button { border: 0; cursor: pointer; font: inherit; }
+.sourcing-opportunity-button-secondary { border: 0; cursor: pointer; font: inherit; }
 .sourcing-opportunity-button { min-height: 48px; border-radius: 5px; background: var(--so-blue); color: #fff; font-size: 14px; font-weight: 850; padding: 0 22px; box-shadow: 0 12px 26px rgba(23,98,246,.2); }
 .sourcing-opportunity-button-secondary { min-height: 48px; border: 1px solid #b9cbe3; border-radius: 5px; background: #fff; color: var(--so-navy); font-size: 14px; font-weight: 800; padding: 0 20px; }
 .sourcing-opportunity-trust-signals { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 24px 0 0; border-top: 1px solid var(--so-line); padding: 16px 0 0; list-style: none; }
@@ -18952,19 +18951,6 @@ button.contact-help-card > .contact-help-card-copy > span {
 .sourcing-opportunity-hero-proof strong { font-size: 18px; }
 .sourcing-opportunity-hero-proof span,
 .sourcing-opportunity-hero-proof small { color: rgba(255,255,255,.72); }
-
-.sourcing-opportunity-intents { border-top: 1px solid var(--so-line); padding: 26px 0; }
-.sourcing-opportunity-intent-grid { display: grid; grid-template-columns: 1.18fr .82fr; gap: 16px; }
-.sourcing-opportunity-intent-grid article { display: flex; flex-direction: column; min-height: 250px; border: 1px solid #aac5ee; border-radius: 8px; background: #fff; padding: 28px 30px; box-shadow: 0 12px 30px rgba(8,43,98,.07); }
-.sourcing-opportunity-intent-grid .sourcing-opportunity-intent-primary { border-color: var(--so-navy); background: var(--so-navy); }
-.sourcing-opportunity-intent-primary h2 { color: #fff; }
-.sourcing-opportunity-intent-grid .sourcing-opportunity-intent-primary p { color: rgba(255,255,255,.74); }
-.sourcing-opportunity-intent-grid .sourcing-opportunity-intent-primary > span { color: #8eb3ff; }
-.sourcing-opportunity-intent-grid article > span { color: var(--so-blue); font-size: 12px; font-weight: 900; }
-.sourcing-opportunity-intent-grid h2 { margin: 11px 0 0; font-size: 24px; line-height: 1.12; }
-.sourcing-opportunity-intent-grid p { margin: 10px 0 0; color: var(--so-muted); line-height: 1.48; }
-.sourcing-opportunity-intent-grid .lead-form-trigger { display: flex; margin-top: auto; padding-top: 22px; }
-.sourcing-opportunity-intent-button { min-height: 44px; border-radius: 5px; background: var(--so-blue); color: #fff; font-weight: 850; padding: 0 20px; box-shadow: 0 10px 22px rgba(23,98,246,.2); }
 
 .sourcing-opportunity-market { background: #f5f9ff; }
 .sourcing-opportunity-market-number { display: grid; grid-template-columns: minmax(0,1fr) 70px minmax(0,1fr); align-items: center; max-width: 930px; border: 1px solid var(--so-line); background: #fff; }
@@ -19131,7 +19117,6 @@ button.contact-help-card > .contact-help-card-copy > span {
   .sourcing-opportunity-actions button,
   .sourcing-opportunity-shortlist .lead-form-trigger,
   .sourcing-opportunity-shortlist button { width: 100%; }
-  .sourcing-opportunity-intent-grid,
   .sourcing-opportunity-driver-grid,
   .sourcing-opportunity-risk-grid,
   .sourcing-opportunity-signal-grid,
@@ -19150,8 +19135,6 @@ button.contact-help-card > .contact-help-card-copy > span {
   .sourcing-opportunity-process ol { grid-template-columns: 1fr; }
   .sourcing-opportunity-process li { grid-template-columns: 32px 62px 1fr; gap: 10px; min-height: 0; padding: 18px; }
   .sourcing-opportunity-stage-visual { width: 62px; height: 58px; padding: 10px; }
-  .sourcing-opportunity-intent-grid .lead-form-trigger,
-  .sourcing-opportunity-intent-button,
   .sourcing-opportunity-final-cta .lead-form-trigger,
   .sourcing-opportunity-final-button { width: 100%; }
   .sourcing-opportunity-final-cta ul { align-items: center; flex-direction: column; }

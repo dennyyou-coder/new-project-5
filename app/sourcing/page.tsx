@@ -102,13 +102,6 @@ export default function SourcingPage() {
         </div>
       </section>
 
-      <section className="sourcing-opportunity-intents">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-intent-grid">
-          <article className="sourcing-opportunity-intent-primary"><span>01</span><h2>Show Me New Product Opportunities</h2><p>For brands and distributors looking for the next category, product direction or growth opportunity.</p><TallyButton className="sourcing-opportunity-intent-button" ctaLocation="sourcing_intent_opportunity" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Discover Product Opportunities</TallyButton></article>
-          <article><span>02</span><h2>I Know What I Need</h2><p>For buyers who already have a product, reference model or OEM/ODM request and need execution from China.</p><TallyButton className="sourcing-opportunity-intent-button" ctaLocation="sourcing_intent_specific_product" form="sourcing" inquiryIntent="specific_product" trackClick>Request Products & Pricing</TallyButton></article>
-        </div>
-      </section>
-
       <section className="sourcing-opportunity-section sourcing-opportunity-market">
         <div className="sourcing-opportunity-shell">
           <div className="sourcing-opportunity-heading"><p>Why This Market Matters Now</p><h2>The Cleaning Industry Is Entering A New Growth Cycle.</h2></div>
