@@ -63,9 +63,10 @@ test("creates stable article analytics context", () => {
 });
 
 test("Blog CTA tracks views and clicks through the shared Tally transport", () => {
-  assert.match(blogCtaSource, /cta_view/);
-  assert.match(blogCtaSource, /cta_click/);
   assert.match(blogCtaSource, /TallyButton/);
+  assert.match(blogCtaSource, /eventContext=\{context\}/);
+  assert.doesNotMatch(blogCtaSource, /useEffect/);
+  assert.doesNotMatch(blogCtaSource, /onClickTrack/);
   assert.doesNotMatch(blogCtaSource, /category ===/);
 });
 

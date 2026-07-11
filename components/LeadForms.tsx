@@ -1,10 +1,13 @@
 "use client";
 
 import { ReactNode, useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { getTallyForm, type TallyFormKey } from "@/lib/tallyForms";
 import {
+  buildContactFallbackUrl,
   buildTallyUrl,
   createLeadAttribution,
+  getConversionGroup,
   trackLeadEvent,
   type LeadAttribution
 } from "@/lib/leadTracking";
@@ -79,9 +82,7 @@ export function TallyButton({
   productCategory,
   inquiryType,
   inquiryIntent,
-  trackClick = false,
   eventContext,
-  onClickTrack,
   onOpen
 }: {
   className?: string;
@@ -104,11 +105,62 @@ export function TallyButton({
   const [status, setStatus] = useState<
     "idle" | "unavailable" | "fallback" | "success"
   >("idle");
+  const triggerRef = useRef<HTMLSpanElement>(null);
+  const viewedRef = useRef(false);
+  const submittedRef = useRef(false);
+  const tallyForm = getTallyForm(form);
+  const fallbackUrl = buildContactFallbackUrl({
+    conversion_group: getConversionGroup(tallyForm.formType),
+    cta_location: ctaLocation
+  });
+
+  useEffect(() => {
+    const node = triggerRef.current;
+    if (!node || viewedRef.current) return;
+
+    const sendView = () => {
+      if (viewedRef.current) return;
+      viewedRef.current = true;
+      const attribution = createLeadAttribution({
+        formType: tallyForm.formType,
+        sourcePage: window.location.pathname,
+        ctaLocation,
+        language: document.documentElement.lang || "en",
+        search: window.location.search,
+        reportId,
+        productCategory,
+        inquiryType,
+        inquiryIntent
+      });
+      trackLeadEvent("cta_view", { ...attribution, ...eventContext });
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      sendView();
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry?.isIntersecting) return;
+        sendView();
+        observer.disconnect();
+      },
+      { threshold: 0.35 }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [
+    ctaLocation,
+    eventContext,
+    inquiryIntent,
+    inquiryType,
+    productCategory,
+    reportId,
+    tallyForm.formType
+  ]);
 
   function openTallyForm() {
-    onClickTrack?.();
-
-    const tallyForm = getTallyForm(form);
     const attribution = createLeadAttribution({
       formType: tallyForm.formType,
       sourcePage: window.location.pathname,
@@ -121,12 +173,10 @@ export function TallyButton({
       inquiryIntent
     });
 
-    if (trackClick) {
-      trackLeadEvent("cta_click", {
-        ...attribution,
-        ...eventContext
-      });
-    }
+    trackLeadEvent("cta_click", {
+      ...attribution,
+      ...eventContext
+    });
 
     onOpen?.();
 
@@ -153,6 +203,8 @@ export function TallyButton({
           });
         },
         onSubmit: (payload) => {
+          if (submittedRef.current) return;
+          submittedRef.current = true;
           trackLeadEvent("form_submit", {
             ...attribution,
             ...eventContext,
@@ -162,6 +214,7 @@ export function TallyButton({
           trackLeadEvent("form_success", {
             ...attribution,
             ...eventContext,
+            conversion_value: 1,
             response_id: payload.responseId
           });
         }
@@ -194,13 +247,17 @@ export function TallyButton({
   }
 
   return (
-    <span className="lead-form-trigger">
+    <span className="lead-form-trigger" ref={triggerRef}>
       <button className={className} onClick={openTallyForm} type="button">
         {children}
       </button>
       <span aria-live="polite" className="lead-form-status" role="status">
-        {status === "unavailable" &&
-          "The form is temporarily unavailable. Please use the Contact page."}
+        {status === "unavailable" && (
+          <>
+            The form is temporarily unavailable.{" "}
+            <Link href={fallbackUrl}>Use the Contact page instead</Link>.
+          </>
+        )}
         {status === "fallback" && "The form opened in a new tab."}
         {status === "success" &&
           "Thank you. Your information was received successfully."}
@@ -271,7 +328,7 @@ export function TallyInlineEmbed({
         response_id: event.data.payload.responseId
       };
       trackLeadEvent("form_submit", payload);
-      trackLeadEvent("form_success", payload);
+      trackLeadEvent("form_success", { ...payload, conversion_value: 1 });
     }
 
     window.addEventListener("message", handleTallyMessage);

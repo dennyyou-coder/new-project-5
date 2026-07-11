@@ -18440,6 +18440,13 @@ h3 {
   }
 }
 
+.lead-form-status a {
+  color: currentColor;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* Sourcing V4: concise decision-led sourcing journey */
 .reports-library-page {
   --rl-ink: #0b1f3a;
