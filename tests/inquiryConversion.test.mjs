@@ -125,3 +125,23 @@ test("shared Tally transport supports a tracked inline sourcing form", () => {
   assert.match(leadFormsSource, /event\.origin !== "https:\/\/tally\.so"/);
   assert.match(leadFormsSource, /inquiryIntent/);
 });
+
+test("Sourcing detail polish keeps the offer early and the story compact", () => {
+  assert.match(sourcingSource, /Receive 2–3 product directions, images, basic specifications and indicative pricing/);
+  assert.match(sourcingSource, /Approx\. USD 40B\+/);
+  assert.match(sourcingSource, /Toward USD 140B/);
+  assert.match(sourcingSource, /title: "Discover"/);
+  assert.match(sourcingSource, /title: "Develop"/);
+  assert.match(sourcingSource, /title: "Deliver"/);
+  assert.match(sourcingSource, /1–2 business days/);
+  assert.match(sourcingSource, /Currently supporting cross-border sellers and international brands/);
+  assert.doesNotMatch(sourcingSource, /sourcing-opportunity-risk-layout/);
+  assert.match(globalStyles, /\.sourcing-opportunity-faq summary::after/);
+});
+
+test("early sourcing sections use the shared icon system for scanning", () => {
+  assert.match(sourcingSource, /className="sourcing-opportunity-driver-icon"/);
+  assert.match(sourcingSource, /className="sourcing-opportunity-shift-icon"/);
+  assert.match(sourcingSource, /className="sourcing-opportunity-risk-icon"/);
+  assert.match(sourcingSource, /InlineIcon name=\{item\.icon\}/);
+});

@@ -26,22 +26,22 @@ export const metadata: Metadata = {
 };
 
 const marketDrivers = [
-  { title: "Automation Is Expanding", text: "More cleaning tasks are moving from manual tools and traditional machines to intelligent equipment." },
-  { title: "New Categories Are Forming", text: "Floor washers, pool robots, robotic mowers and commercial robots show how quickly a niche can become global." },
-  { title: "Distribution Is Moving Faster", text: "E-commerce and global supply chains allow new products and brands to reach buyers faster than before." }
+  { icon: "bot" as const, title: "Automation Is Expanding", text: "More cleaning tasks are moving from manual tools and traditional machines to intelligent equipment." },
+  { icon: "sparkles" as const, title: "New Categories Are Forming", text: "Floor washers, pool robots, robotic mowers and commercial robots show how quickly a niche can become global." },
+  { icon: "globe" as const, title: "Distribution Is Moving Faster", text: "E-commerce and global supply chains allow new products and brands to reach buyers faster than before." }
 ];
 
 const industryShifts = [
-  { label: "Supply", then: "Finding a reliable supplier could be the advantage.", today: "Suppliers and products are abundant. The difficult part is knowing what to choose." },
-  { label: "Selection", then: "The sourcing question was: Who can make this?", today: "The question is: What should we sell next?" },
-  { label: "Speed", then: "A 12–15 month development cycle could still fit the market.", today: "Fast-moving categories can compress to roughly 6–8 months." },
-  { label: "Channels", then: "Long relationships could protect sales across product cycles.", today: "Channels now demand price, speed and stronger products—even from long-term partners." }
+  { icon: "factory" as const, label: "Supply", then: "Finding a reliable supplier could be the advantage.", today: "Suppliers and products are abundant. The difficult part is knowing what to choose." },
+  { icon: "search" as const, label: "Selection", then: "The sourcing question was: Who can make this?", today: "The question is: What should we sell next?" },
+  { icon: "rocket" as const, label: "Speed", then: "A 12–15 month development cycle could still fit the market.", today: "Fast-moving categories can compress to roughly 6–8 months." },
+  { icon: "handshake" as const, label: "Channels", then: "Long relationships could protect sales across product cycles.", today: "Channels now demand price, speed and stronger products—even from long-term partners." }
 ];
 
 const riskCards = [
-  { title: "Outdated Before Launch", text: "A technical solution can be replaced while your product is still being developed." },
-  { title: "More Expensive Than Competitors", text: "Old components or the wrong factory architecture can leave you with a higher cost base." },
-  { title: "Slower To Market", text: "Immature or mismatched solutions create more redesign, tooling and compatibility work." }
+  { icon: "cpu" as const, title: "Outdated Before Launch", text: "A technical solution can be replaced while your product is still being developed." },
+  { icon: "dollar" as const, title: "More Expensive Than Competitors", text: "Old components or the wrong factory architecture can leave you with a higher cost base." },
+  { icon: "activity" as const, title: "Slower To Market", text: "Immature or mismatched solutions create more redesign, tooling and compatibility work." }
 ];
 
 const opportunitySignals = [
@@ -59,9 +59,10 @@ const shortlistItems = [
   "An initial view of OEM/ODM feasibility"
 ];
 
-const deliverySteps = [
-  "Product Selection", "Pricing", "Paid Samples", "OEM/ODM", "Production",
-  "Quality Control", "Compliance", "Export & Delivery", "After-Sales"
+const deliveryStages = [
+  { title: "Discover", steps: ["Product Opportunity", "Selection", "Pricing"] },
+  { title: "Develop", steps: ["Paid Samples", "OEM/ODM", "Production"] },
+  { title: "Deliver", steps: ["Quality & Compliance", "Export & Delivery", "After-Sales"] }
 ];
 
 const faqs = [
@@ -89,6 +90,7 @@ export default function SourcingPage() {
                 I Already Have A Product Request
               </TallyButton>
             </div>
+            <p className="sourcing-opportunity-hero-offer">Receive 2–3 product directions, images, basic specifications and indicative pricing. Free for relevant B2B requests.</p>
             <ul className="sourcing-opportunity-trust-signals">
               <li>B2B Buyers Only</li><li>Serving Global Markets</li><li>Initial Response Within 8 Hours</li>
             </ul>
@@ -110,26 +112,23 @@ export default function SourcingPage() {
       <section className="sourcing-opportunity-section sourcing-opportunity-market">
         <div className="sourcing-opportunity-shell">
           <div className="sourcing-opportunity-heading"><p>Why This Market Matters Now</p><h2>The Cleaning Industry Is Entering A New Growth Cycle.</h2></div>
-          <div className="sourcing-opportunity-market-number"><div><small>Today</small><strong>&lt; RMB 300B</strong></div><span aria-hidden="true">→</span><div><small>Over The Next Decade</small><strong>Toward RMB 1T</strong></div></div>
-          <p className="sourcing-opportunity-estimate"><strong>World Clean Biz Industry Estimate.</strong> Scope includes major global indoor and outdoor cleaning equipment categories.</p>
-          <div className="sourcing-opportunity-driver-grid">{marketDrivers.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
+          <div className="sourcing-opportunity-market-number"><div><small>Today</small><strong>Approx. USD 40B+</strong></div><span aria-hidden="true">→</span><div><small>Over The Next Decade</small><strong>Toward USD 140B</strong></div></div>
+          <p className="sourcing-opportunity-estimate"><strong>World Clean Biz Industry Estimate.</strong> Based on less than RMB 300 billion today toward RMB 1 trillion over the next decade. Scope includes major global indoor and outdoor cleaning equipment categories; USD values are approximate.</p>
+          <div className="sourcing-opportunity-driver-grid">{marketDrivers.map((item) => <article key={item.title}><span className="sourcing-opportunity-driver-icon"><InlineIcon name={item.icon} /></span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
         </div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-shift">
         <div className="sourcing-opportunity-shell">
           <div className="sourcing-opportunity-heading"><p>The Competitive Reality</p><h2>The Market Is Growing. The Old Advantages Are Disappearing.</h2></div>
-          <div className="sourcing-opportunity-shift-grid">{industryShifts.map((item) => <article key={item.label}><h3>{item.label}</h3><div><small>Then</small><p>{item.then}</p></div><div><small>Today</small><p>{item.today}</p></div></article>)}</div>
+          <div className="sourcing-opportunity-shift-grid">{industryShifts.map((item) => <article key={item.label}><h3><span className="sourcing-opportunity-shift-icon"><InlineIcon name={item.icon} /></span>{item.label}</h3><div><small>Then</small><p>{item.then}</p></div><div><small>Today</small><p>{item.today}</p></div></article>)}</div>
           <div className="sourcing-opportunity-shift-close"><strong>Access Is No Longer The Advantage. Judgment Is.</strong><span>Relationships still matter. But relationships cannot compensate for an uncompetitive product.</span></div>
-        </div>
-      </section>
-
-      <section className="sourcing-opportunity-section sourcing-opportunity-risk">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-risk-layout">
-          <div className="sourcing-opportunity-heading"><p>The Old Sourcing Model Is Too Slow</p><h2>Your Product Can Fall Behind Before It Reaches The Market.</h2><p>Technology, components, molds and factory capabilities keep changing. Choosing the wrong technical path can make a product cost more and take longer.</p></div>
-          <div className="sourcing-opportunity-risk-flow" aria-label="Supply chain change from technology to time to market">Technology <span>→</span> Components <span>→</span> Molds <span>→</span> Factories <span>→</span> Cost <span>→</span> Time To Market</div>
-          <div className="sourcing-opportunity-risk-grid">{riskCards.map((item) => <article key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
-          <p className="sourcing-opportunity-risk-close">Faster Sourcing Is Not Enough. You Need Earlier Judgment.</p>
+          <div className="sourcing-opportunity-risk-panel">
+            <div><p>The Old Sourcing Model Is Too Slow</p><h3>Your Product Can Fall Behind Before It Reaches The Market.</h3></div>
+            <div className="sourcing-opportunity-risk-flow" aria-label="Supply chain change from technology to time to market">Technology <span>→</span> Components <span>→</span> Molds <span>→</span> Factories <span>→</span> Cost <span>→</span> Time To Market</div>
+            <div className="sourcing-opportunity-risk-grid">{riskCards.map((item) => <article key={item.title}><span className="sourcing-opportunity-risk-icon"><InlineIcon name={item.icon} /></span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
+            <p className="sourcing-opportunity-risk-close">Faster Sourcing Is Not Enough. You Need Earlier Judgment.</p>
+          </div>
         </div>
       </section>
 
@@ -156,7 +155,7 @@ export default function SourcingPage() {
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-process">
-        <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>From Insight To Execution</p><h2>One Partner From Opportunity Discovery To Delivery.</h2></div><ol>{deliverySteps.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></li>)}</ol><p className="sourcing-opportunity-compliance">Products are managed toward the compliance requirements agreed in writing for the specified target market, with testing and compliance partners involved where needed.</p></div>
+        <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>From Insight To Execution</p><h2>One Partner From Opportunity Discovery To Delivery.</h2></div><ol>{deliveryStages.map((stage, index) => <li key={stage.title}><span>{String(index + 1).padStart(2, "0")}</span><div><h3>{stage.title}</h3><p>{stage.steps.join(" → ")}</p></div></li>)}</ol><p className="sourcing-opportunity-compliance">Products are managed toward the compliance requirements agreed in writing for the specified target market, with testing and compliance partners involved where needed.</p></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-models">
@@ -164,11 +163,11 @@ export default function SourcingPage() {
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-team">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>20 years inside the cleaning industry</li><li>Industry insight for securities firms and investment banks</li><li>Current supply work for cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
+        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>20 years inside the cleaning industry</li><li>Industry insight for securities firms and investment banks</li><li>Currently supporting cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-form-section" id="shortlist-form">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-form-grid"><div><p className="sourcing-opportunity-eyebrow">Tell Denny About Your Market</p><h2>Get Your Free Product Opportunity Shortlist.</h2><p>For relevant B2B requests, we respond within 8 hours and normally prepare 2–3 initial product or category directions within 1–2 Business Days.</p><ul><li>Business buyers only</li><li>Paid samples available</li><li>Trial orders subject to applicable MOQ</li></ul></div><TallyInlineEmbed className="sourcing-opportunity-inline-form" ctaLocation="sourcing_inline_form" form="sourcing" inquiryIntent="opportunity_discovery" title="Free Product Opportunity Shortlist inquiry form" /></div>
+        <div className="sourcing-opportunity-shell sourcing-opportunity-form-grid"><div><p className="sourcing-opportunity-eyebrow">Tell Denny About Your Market</p><h2>Get Your Free Product Opportunity Shortlist.</h2><p>For relevant B2B requests, we respond within 8 hours and normally prepare 2–3 initial product or category directions within 1–2 business days.</p><ul><li>Business buyers only</li><li>Paid samples available</li><li>Trial orders subject to applicable MOQ</li></ul></div><TallyInlineEmbed className="sourcing-opportunity-inline-form" ctaLocation="sourcing_inline_form" form="sourcing" inquiryIntent="opportunity_discovery" title="Free Product Opportunity Shortlist inquiry form" /></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-faq"><div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Before You Start</p><h2>Frequently Asked Questions</h2></div><div className="sourcing-opportunity-faq-list">{faqs.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div></div></section>
