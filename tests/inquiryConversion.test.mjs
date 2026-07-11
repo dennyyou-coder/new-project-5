@@ -166,6 +166,10 @@ test("all primary Sourcing conversion paths use visible blue buttons", () => {
 test("Sourcing uses alternating sales bands and visual storytelling", () => {
   assert.match(sourcingSource, /sourcing-opportunity-stage-visual/);
   assert.match(sourcingSource, /sourcing-opportunity-model-visual/);
+  assert.match(sourcingSource, /One Quotation/);
+  assert.match(sourcingSource, /Managed Delivery/);
+  assert.match(sourcingSource, /Supplier Search/);
+  assert.doesNotMatch(sourcingSource, /<span>WCB<\/span><i \/><i \/><i \/>/);
   assert.match(globalStyles, /\.sourcing-opportunity-shortlist\s*\{[^}]*background:\s*linear-gradient\([^}]*#071f47/s);
   assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#eef5ff/s);
   assert.match(globalStyles, /\.sourcing-opportunity-models\s*\{[^}]*background:\s*#fff/s);

@@ -19073,10 +19073,13 @@ button.contact-help-card > .contact-help-card-copy > span {
 .sourcing-opportunity-model-grid p,
 .sourcing-opportunity-model-note { color: var(--so-muted); line-height: 1.5; }
 .sourcing-opportunity-models .sourcing-opportunity-button { margin-top: 8px; }
-.sourcing-opportunity-model-visual { display: grid; grid-template-columns: 54px repeat(3,1fr); gap: 9px; align-items: center; min-height: 76px; margin-bottom: 24px; border-radius: 7px; background: #eaf2ff; padding: 12px; }
-.sourcing-opportunity-model-visual span { display: grid; place-items: center; height: 50px; border-radius: 6px; background: var(--so-navy); color: #fff; font-size: 12px; font-weight: 900; }
-.sourcing-opportunity-model-visual i { height: 34px; border: 1px solid #b9cfed; border-radius: 5px; background: #fff; }
-.sourcing-opportunity-model-grid article:last-child .sourcing-opportunity-model-visual span { background: var(--so-blue); }
+.sourcing-opportunity-model-visual { display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: center; min-height: 104px; margin-bottom: 24px; border-radius: 8px; background: #eaf2ff; padding: 18px; }
+.sourcing-opportunity-model-visual > .inline-icon { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 8px; background: var(--so-navy); color: #fff; }
+.sourcing-opportunity-model-visual > .inline-icon .ui-icon { width: 32px; height: 32px; }
+.sourcing-opportunity-model-visual > div { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.sourcing-opportunity-model-visual strong { width: 100%; color: var(--so-navy); font-size: 17px; }
+.sourcing-opportunity-model-visual > div span { border: 1px solid #bdd0ea; border-radius: 4px; background: rgba(255,255,255,.72); color: #385574; font-size: 12px; font-weight: 750; padding: 6px 9px; }
+.sourcing-opportunity-model-grid article:last-child .sourcing-opportunity-model-visual > .inline-icon { background: var(--so-blue); }
 
 .sourcing-opportunity-team { background: #eaf2ff; }
 .sourcing-opportunity-team-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 54px; align-items: center; }
