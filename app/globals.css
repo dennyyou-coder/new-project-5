@@ -16783,6 +16783,13 @@ h3 {
   object-fit: cover;
 }
 
+.reports-v1-cover-full img {
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
 .reports-v1-cover div {
   min-height: 330px;
   display: flex;
@@ -17244,20 +17251,6 @@ h3 {
   color: rgba(255, 255, 255, 0.74);
   font-size: 18px;
   line-height: 1.65;
-}
-
-.reports-v2-final-cta a {
-  display: inline-flex;
-  min-height: 48px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  background: #2563EB;
-  color: #FFFFFF;
-  margin-top: 30px;
-  padding: 0 24px;
-  font-size: 14px;
-  font-weight: 900;
 }
 
 .reports-v2-final-cta .reports-v1-hero-form {

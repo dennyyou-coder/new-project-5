@@ -307,14 +307,16 @@ export function TallyInlineEmbed({
 export function ReportsLeadForm() {
   return (
     <div className="reports-v1-hero-form" aria-label="Get free reports">
-      <label>Free report access</label>
+      <label>Get the WCB report</label>
       <div>
         <TallyReportButton
           ctaLocation="reports_hero"
           reportId="next-decade-cleaning-growth"
-        />
+        >
+          Get The Report
+        </TallyReportButton>
       </div>
-      <p>Complete a short form to receive the report link.</p>
+      <p>Select your report and complete the form to receive the PDF link.</p>
     </div>
   );
 }

@@ -2,70 +2,70 @@ import type { Metadata } from "next";
 import { ReportsLeadForm, TallyReportButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
-  title: "2026 Global Cleaning Industry Report",
+  title: "The Next Decade of Cleaning Growth Report",
   description:
-    "Get field-informed cleaning industry intelligence on product opportunities, category movement, supplier signals and market trends."
+    "Download the World Clean Biz report on cleaning industry growth across indoor cleaning, yard robots, pool robots, commercial cleaning and China supply-chain capability."
 };
 
 const metrics = [
-  { value: "01", label: "Product Opportunities" },
-  { value: "02", label: "Market Trends" },
-  { value: "03", label: "Supplier Signals" }
+  { value: "13", label: "Pages" },
+  { value: "5", label: "Product Lines" },
+  { value: "2026E", label: "Scenario Base" }
 ];
 
 const insideItems = [
   {
-    label: "Report Includes",
-    title: "Product Opportunities",
-    text: "The categories attracting the most attention and investment.",
-    points: ["Pool Cleaning Robots", "Lawn Robots", "Commercial Cleaning"]
+    label: "Market Evidence",
+    title: "The Trillion-Yuan Scenario",
+    text: "A sourced view of the long-term smart cleaning appliance opportunity and the boundaries of WCB's scenario extrapolation.",
+    points: ["RMB 247.5B 2026E base", "RMB 992.6B 2036E scenario", "No forced category summation"]
   },
   {
-    label: "Market Coverage",
-    title: "Market Trends",
-    text: "Where global demand is moving and why.",
-    points: ["US Market", "Europe Market", "Emerging Regions"]
+    label: "Product Lines",
+    title: "Where Growth Is Spreading",
+    text: "The report separates the market into indoor cleaning, yard cleaning, pool cleaning, commercial cleaning and home cleaning systems.",
+    points: ["Indoor cleaning base", "Yard and pool growth", "Commercial ROI logic"]
+  },
+  {
+    label: "Representative Players",
+    title: "Brand and Category Map",
+    text: "Representative brands are used to explain product-line structure, not to imply market ranking or recommendation.",
+    points: ["Robot vacuum leaders", "Mower robot players", "Pool and commercial specialists"]
   },
   {
     label: "Sourcing Context",
-    title: "Supplier Signals",
-    text: "Manufacturing and sourcing shifts worth watching.",
-    points: ["Manufacturing Shifts", "ODM Landscape", "Cost Trends"]
-  },
-  {
-    label: "Competitive View",
-    title: "Brand Landscape",
-    text: "Which brands are gaining momentum across markets.",
-    points: ["Leading Brands", "Fast Growing Brands", "New Entrants"]
+    title: "Buyer and Supplier Checklists",
+    text: "The final sections turn market judgment into sourcing questions, supplier-pack requirements and WCB service context.",
+    points: ["Certification and QC", "After-sales responsibility", "Supplier communication"]
   }
 ];
 
 const previewPages = [
   {
-    title: "Market Map Preview",
-    text: "Category movement and opportunity signals across cleaning segments.",
+    title: "Market Evidence",
+    text: "A sourced scenario view of smart cleaning appliance growth and the limits of headline market-size interpretation.",
     type: "map",
-    rows: ["Robotic Cleaning", "Outdoor Automation", "Commercial Equipment"]
+    rows: ["2026E scenario base", "2036E extrapolation", "Research boundaries"]
   },
   {
-    title: "Brand Landscape Preview",
-    text: "A view of established brands, fast movers and new entrants.",
+    title: "Product-Line Map",
+    text: "A practical map of indoor, yard, pool and commercial cleaning opportunities.",
     type: "chart",
-    rows: ["Established Leaders", "Fast Growing Brands", "New Entrants"]
+    rows: ["Indoor cleaning", "Yard cleaning", "Pool cleaning"]
   },
   {
-    title: "Supplier Signals Preview",
-    text: "Manufacturing, ODM and sourcing shifts worth watching.",
+    title: "Buyer Checklist",
+    text: "Questions overseas buyers should ask before evaluating cleaning product suppliers.",
     type: "table",
-    rows: ["Manufacturing Shifts", "ODM Landscape", "Cost Trends"]
+    rows: ["Product-line fit", "Certification coverage", "Spare parts and service"]
   }
 ];
 
 const comingSoonReports = [
-  { title: "Pool Robots Outlook", expected: "Q3 2026" },
-  { title: "Lawn Robots Outlook", expected: "Q3 2026" },
-  { title: "Robot Vacuums Outlook", expected: "Q4 2026" },
-  { title: "Supplier Guide", expected: "Q4 2026" }
+  { title: "Pool Robot Channels And Service Costs", expected: "Next brief" },
+  { title: "Robotic Lawn Mower Supply Chains", expected: "Next brief" },
+  { title: "Commercial Cleaning Robot ROI Model", expected: "Next brief" },
+  { title: "China Cleaning Supplier Pack", expected: "Next brief" }
 ];
 
 export default function ReportsPage() {
@@ -75,11 +75,12 @@ export default function ReportsPage() {
         <div className="reports-container reports-v1-hero-grid">
           <div className="reports-v1-hero-copy">
             <p className="reports-kicker">Global Cleaning Industry</p>
-            <h1>2026 Global Cleaning Industry Report</h1>
+            <h1>The Next Decade of Cleaning Growth</h1>
             <p>
-              Field-informed intelligence on product opportunities, category
-              movement, supplier signals and the future of the global cleaning
-              industry.
+              A World Clean Biz report on how growth is spreading from indoor
+              cleaning into yard robots, pool robots and commercial cleaning,
+              and what overseas buyers should understand about China&apos;s
+              cleaning supply chain.
             </p>
             <div className="reports-v1-metrics" aria-label="Report credibility">
               {metrics.map((item) => (
@@ -93,22 +94,11 @@ export default function ReportsPage() {
           </div>
 
           <div className="reports-v1-cover-wrap">
-            <article className="reports-v1-cover" aria-label="2026 Global Cleaning Industry Report cover">
+            <article className="reports-v1-cover reports-v1-cover-full" aria-label="The Next Decade of Cleaning Growth report cover">
               <img
-                src="/images/reports/reports-category-outlook.png"
-                alt=""
+                src="/images/reports/wcb-cleaning-industry-growth-map-cover.png"
+                alt="World Clean Biz report cover: The Next Decade of Cleaning Growth"
               />
-              <div>
-                <span>PDF Report</span>
-                <strong>2026 Global Cleaning Industry Report</strong>
-                <ul>
-                  <li>Product Opportunities</li>
-                  <li>Market Trends</li>
-                  <li>Supplier Signals</li>
-                </ul>
-                <small>Product Opportunities / Market Trends / Supplier Signals</small>
-                <em>Free Download / 2026 Edition</em>
-              </div>
             </article>
           </div>
         </div>
@@ -121,12 +111,12 @@ export default function ReportsPage() {
           </div>
           <div>
             <p className="reports-kicker">Compiled by Denny You</p>
-            <h2>Built From Front-Line Industry Signals</h2>
+            <h2>Built For Buyers Reading The Cleaning Supply Chain</h2>
           </div>
           <ul>
             <li>Inside The Industry Since 2006</li>
             <li>Industry Analysis Since 2018</li>
-            <li>Products, Suppliers, Brands And Forums Tracked</li>
+            <li>Products, Suppliers, Brands And Trade Shows Tracked</li>
           </ul>
         </div>
       </section>
@@ -156,7 +146,9 @@ export default function ReportsPage() {
             className="reports-v1-inline-cta"
             ctaLocation="reports_inline"
             reportId="next-decade-cleaning-growth"
-          />
+          >
+            Get The Report
+          </TallyReportButton>
         </div>
       </section>
 
@@ -168,9 +160,9 @@ export default function ReportsPage() {
               <h2>Preview The Report</h2>
             </div>
             <p>
-              A quick look at selected preview pages built from product
-              signals, supplier observations, category movement and trade show
-              activity.
+              The report is written as a practical market map, not a generic
+              trend deck. It combines sourced data, representative product
+              lines and sourcing questions.
             </p>
           </div>
           <div className="reports-v2-preview-grid">
@@ -201,10 +193,10 @@ export default function ReportsPage() {
               <h2>Upcoming Intelligence Briefs</h2>
             </div>
             <p>
-              Download the 2026 report today and join our industry intelligence list.
+              Download this report today and join the WCB industry intelligence list.
               <br />
-              Future briefs will focus on field-informed category outlooks,
-              supplier guides and market updates as they are released.
+              Future briefs will go deeper into category-specific sourcing,
+              service models and buyer decision frameworks.
             </p>
           </div>
           <div className="reports-v1-coming-grid">
@@ -225,10 +217,11 @@ export default function ReportsPage() {
       <section className="reports-v2-final-cta">
         <div className="reports-container" id="get-report">
           <p className="reports-kicker">Ready To Download?</p>
-          <h2>Unlock the full report by email.</h2>
+          <h2>Get the full WCB report by email.</h2>
           <p>
-            Enter your work email to receive the download link and future
-            cleaning industry intelligence updates.
+            Complete the short form to select the report you want and receive
+            the PDF link, plus future cleaning industry intelligence updates
+            from World Clean Biz.
           </p>
           <ReportsLeadForm />
           <small>Free PDF / No spam / Industry updates only</small>
