@@ -11964,7 +11964,7 @@ h3 {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr) minmax(480px, 1fr);
   gap: 34px;
   align-items: flex-start;
 }
@@ -12052,7 +12052,7 @@ h3 {
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
   gap: 28px;
   border: 1px solid rgba(230, 232, 236, 0.95);
   border-radius: 8px;
@@ -20821,4 +20821,321 @@ button.contact-help-card > .contact-help-card-copy > span {
   .related-signal-grid { grid-template-columns: 1fr; }
   .blog-conversion-cta .button,
   .blog-conversion-cta button { width: 100%; }
+}
+
+/* Trust and conversion-closure pages */
+.trust-page {
+  color: var(--text);
+  background: #fff;
+}
+
+.trust-hero {
+  padding: 88px 0 82px;
+  background:
+    radial-gradient(circle at 78% 25%, rgba(111, 168, 255, .22), transparent 34%),
+    linear-gradient(135deg, #071d3a, #0e396d 68%, #174e9b);
+}
+
+.trust-hero-inner {
+  max-width: 880px;
+}
+
+.trust-hero .eyebrow {
+  color: #8eb8ff;
+}
+
+.trust-hero h1 {
+  max-width: 840px;
+  margin: 14px 0 24px;
+  color: #fff;
+  font-size: clamp(44px, 5.7vw, 72px);
+  line-height: 1.01;
+  letter-spacing: -.05em;
+}
+
+.trust-hero-lead {
+  max-width: 760px;
+  margin: 0 0 30px;
+  color: #c7d7e9;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.trust-hero .button-secondary {
+  border-color: rgba(255, 255, 255, .38);
+  color: #fff;
+  background: rgba(255, 255, 255, .06);
+}
+
+.trust-status-mark {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 26px;
+  border: 1px solid rgba(255, 255, 255, .32);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(47, 107, 255, .46);
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.trust-effective-date {
+  margin: 32px 0 0;
+  color: #8eb8ff;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.trust-section,
+.trust-legal-section,
+.trust-boundary-section,
+.trust-cta-section {
+  padding: 74px 0;
+}
+
+.trust-section-soft,
+.trust-legal-section {
+  background: #f5f9fe;
+}
+
+.trust-section-heading {
+  max-width: 800px;
+  margin-bottom: 34px;
+}
+
+.trust-section-heading h2,
+.trust-boundary-grid h2,
+.trust-cta h2 {
+  margin: 10px 0 16px;
+  color: var(--ink);
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.trust-section-heading > p:not(.eyebrow),
+.trust-boundary-grid p,
+.trust-cta p {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.trust-process-grid,
+.trust-next-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.trust-process-grid article,
+.trust-next-grid > a,
+.trust-responsibility-grid article {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 28px;
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(22, 59, 103, .065);
+}
+
+.trust-process-grid article > span,
+.trust-next-grid > a > span,
+.trust-content article > span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.trust-process-grid h3,
+.trust-next-grid h3,
+.trust-responsibility-grid h3 {
+  margin: 18px 0 11px;
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.trust-process-grid p,
+.trust-next-grid p,
+.trust-responsibility-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.trust-next-grid > a {
+  display: flex;
+  min-height: 250px;
+  flex-direction: column;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.trust-next-grid > a:hover {
+  transform: translateY(-3px);
+  border-color: #a9c4e5;
+  box-shadow: 0 20px 42px rgba(22, 59, 103, .1);
+}
+
+.trust-next-grid strong {
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--accent);
+}
+
+.trust-quality-process {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.trust-quality-process article {
+  min-height: 280px;
+  padding: 25px;
+}
+
+.trust-responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.trust-responsibility-grid h3 {
+  margin-top: 0;
+}
+
+.trust-boundary-section {
+  color: #fff;
+  background: #0b2e5a;
+}
+
+.trust-boundary-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.trust-boundary-grid h2,
+.trust-boundary-grid p {
+  color: #fff;
+}
+
+.trust-boundary-grid p {
+  margin-top: 0;
+  color: #c7d7e9;
+}
+
+.trust-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 48px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 40px;
+  background: #f5f9fe;
+}
+
+.trust-cta h2 {
+  max-width: 780px;
+  font-size: clamp(30px, 3.7vw, 46px);
+}
+
+.trust-cta p {
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
+.trust-content {
+  max-width: 820px;
+  display: grid;
+  gap: 16px;
+}
+
+.trust-content article {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 30px 34px;
+  background: #fff;
+}
+
+.trust-content h2 {
+  margin: 10px 0 13px;
+  color: var(--ink);
+  font-size: 25px;
+  line-height: 1.18;
+}
+
+.trust-content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.trust-content a {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 1080px) {
+  .trust-quality-process {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  .trust-process-grid,
+  .trust-quality-process,
+  .trust-next-grid,
+  .trust-responsibility-grid,
+  .trust-boundary-grid,
+  .trust-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-process-grid article,
+  .trust-quality-process article,
+  .trust-next-grid > a {
+    min-height: 0;
+  }
+
+  .trust-cta .button,
+  .trust-cta button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .trust-hero {
+    padding: 60px 0 56px;
+  }
+
+  .trust-hero h1 {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+
+  .trust-hero-lead {
+    font-size: 16px;
+  }
+
+  .trust-section,
+  .trust-legal-section,
+  .trust-boundary-section,
+  .trust-cta-section {
+    padding: 54px 0;
+  }
+
+  .trust-process-grid article,
+  .trust-next-grid > a,
+  .trust-responsibility-grid article,
+  .trust-content article,
+  .trust-cta {
+    padding: 24px;
+  }
 }
