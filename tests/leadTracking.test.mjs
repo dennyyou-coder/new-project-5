@@ -104,3 +104,24 @@ test("GA4 debug mode is limited to local hosts", () => {
     false
   );
 });
+
+test("trackLeadEvent sends article CTA context to GA4", () => {
+  const calls = [];
+  global.window = { gtag: (...args) => calls.push(args) };
+
+  assert.equal(
+    trackLeadEvent("cta_click", {
+      form_type: "sourcing",
+      source_page: "/blog/example",
+      cta_location: "article_footer",
+      language: "en",
+      cta_type: "sourcing",
+      article_slug: "example",
+      article_category: "Buyer Guide"
+    }),
+    true
+  );
+  assert.equal(calls[0][1], "cta_click");
+  assert.equal(calls[0][2].article_slug, "example");
+  delete global.window;
+});

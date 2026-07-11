@@ -1,9 +1,15 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 import {
   createBlogCtaContext,
   getBlogCta
 } from "../lib/blogConversion.ts";
+
+const blogCtaSource = await readFile(
+  new URL("../components/BlogConversionCta.tsx", import.meta.url),
+  "utf8"
+).catch(() => "");
 
 test("maps buying content to sourcing", () => {
   for (const category of ["Buyer Guide", "Sourcing Guide", "Sourcing"]) {
@@ -42,4 +48,11 @@ test("creates stable article analytics context", () => {
       cta_type: "sourcing"
     }
   );
+});
+
+test("Blog CTA tracks views and clicks through the shared Tally transport", () => {
+  assert.match(blogCtaSource, /cta_view/);
+  assert.match(blogCtaSource, /cta_click/);
+  assert.match(blogCtaSource, /TallyButton/);
+  assert.doesNotMatch(blogCtaSource, /category ===/);
 });

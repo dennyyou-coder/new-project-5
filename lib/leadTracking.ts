@@ -20,6 +20,8 @@ export function isLocalAnalyticsDebugHost(hostname: string): boolean {
 export type LeadFormType = (typeof LEAD_FORM_TYPES)[number];
 
 export type LeadEventName =
+  | "cta_view"
+  | "cta_click"
   | "form_open"
   | "form_submit"
   | "form_success"
@@ -55,6 +57,9 @@ type LeadEventParameters = Partial<LeadAttribution> & {
   response_id?: string;
   error_reason?: string;
   open_method?: "popup" | "fallback";
+  cta_type?: string;
+  article_slug?: string;
+  article_category?: string;
 };
 
 declare global {

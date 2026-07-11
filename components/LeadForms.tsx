@@ -68,6 +68,8 @@ export function TallyButton({
   form,
   ctaLocation,
   reportId,
+  eventContext,
+  onClickTrack,
   onOpen
 }: {
   className?: string;
@@ -75,6 +77,12 @@ export function TallyButton({
   form: TallyFormKey;
   ctaLocation: string;
   reportId?: string;
+  eventContext?: {
+    cta_type?: string;
+    article_slug?: string;
+    article_category?: string;
+  };
+  onClickTrack?: () => void;
   onOpen?: () => void;
 }) {
   const [status, setStatus] = useState<
@@ -82,6 +90,8 @@ export function TallyButton({
   >("idle");
 
   function openTallyForm() {
+    onClickTrack?.();
+
     const tallyForm = getTallyForm(form);
     const attribution = createLeadAttribution({
       formType: tallyForm.formType,
@@ -98,6 +108,7 @@ export function TallyButton({
       setStatus("unavailable");
       trackLeadEvent("form_error", {
         ...attribution,
+        ...eventContext,
         error_reason: "missing_form_configuration"
       });
       return;
@@ -111,17 +122,20 @@ export function TallyButton({
         onOpen: () => {
           trackLeadEvent("form_open", {
             ...attribution,
+            ...eventContext,
             open_method: "popup"
           });
         },
         onSubmit: (payload) => {
           trackLeadEvent("form_submit", {
             ...attribution,
+            ...eventContext,
             response_id: payload.responseId
           });
           setStatus("success");
           trackLeadEvent("form_success", {
             ...attribution,
+            ...eventContext,
             response_id: payload.responseId
           });
         }
@@ -139,6 +153,7 @@ export function TallyButton({
       setStatus("unavailable");
       trackLeadEvent("form_error", {
         ...attribution,
+        ...eventContext,
         error_reason: "popup_blocked"
       });
       return;
@@ -147,6 +162,7 @@ export function TallyButton({
     setStatus("fallback");
     trackLeadEvent("form_open", {
       ...attribution,
+      ...eventContext,
       open_method: "fallback"
     });
   }
