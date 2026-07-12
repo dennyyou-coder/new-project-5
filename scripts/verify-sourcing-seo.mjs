@@ -155,6 +155,18 @@ for (const visualClass of ["sourcing-lawn-landscape", "sourcing-lawn-channel-mat
     `visual system: ${visualClass} is not lawn scoped`
   );
 }
+for (const className of [
+  "sourcing-lawn-selector-workbench",
+  "sourcing-lawn-selector-media",
+  "sourcing-lawn-selector-summary",
+  "sourcing-lawn-selector-evidence",
+  "sourcing-lawn-selector-rail"
+]) {
+  requireValue(selectorSource.includes(className), `lawn selector: missing ${className}`);
+  requireValue(sourcingStyles.includes(`.sourcing-lawn-page .${className}`), `lawn selector: ${className} is not lawn scoped`);
+  const bareSelector = new RegExp(`(^|[}\\n])\\s*\\.${className}(?:[\\s,:.#>{+~]|\\{)`, "m");
+  requireValue(!bareSelector.test(sourcingStyles), `lawn selector: unscoped ${className} rule found`);
+}
 
 const hub = await readPage("/sourcing");
 for (const route of forbiddenRoutes) {

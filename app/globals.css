@@ -18420,3 +18420,117 @@ h3 {
   .sourcing-lawn-page .sourcing-lawn-evidence-flow > li::after { display: none; }
   .sourcing-lawn-page .sourcing-lawn-evidence-flow h3 { min-height: 0; }
 }
+
+/* Lawn robot layout polish */
+.sourcing-lawn-page .sourcing-lawn-selector-workbench {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(300px, 1fr) 188px;
+  grid-template-areas:
+    "image copy thumbs"
+    "facts facts thumbs";
+  gap: 16px;
+  align-items: start;
+}
+.sourcing-lawn-page .sourcing-lawn-selector-media { grid-area: image; width: 100%; max-height: none; align-self: start; }
+.sourcing-lawn-page .sourcing-lawn-selector-summary { grid-area: copy; align-self: stretch; }
+.sourcing-lawn-page .sourcing-lawn-selector-summary .sourcing-selector-actions { margin-top: 16px; }
+.sourcing-lawn-page .sourcing-lawn-selector-evidence {
+  grid-area: facts;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #c5d0d8;
+  border-radius: 10px;
+  background: #fff;
+}
+.sourcing-lawn-page .sourcing-lawn-selector-evidence > div { min-height: 142px; padding: 22px 24px; }
+.sourcing-lawn-page .sourcing-lawn-selector-evidence > div + div { border-left: 1px solid var(--lawn-rule); }
+.sourcing-lawn-page .sourcing-lawn-selector-evidence p { margin: 7px 0 0; color: var(--lawn-muted); line-height: 1.58; }
+.sourcing-lawn-page .sourcing-lawn-selector-rail {
+  grid-area: thumbs;
+  align-self: stretch;
+  height: 100%;
+  max-height: 570px;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.sourcing-lawn-page .sourcing-lawn-selector-rail button { flex: 0 0 auto; }
+.sourcing-lawn-page .sourcing-lawn-selector-workbench .sourcing-selector-swipe-hint { grid-area: hint; }
+
+.sourcing-lawn-page .sourcing-lawn-landscape-section,
+.sourcing-lawn-page .sourcing-lawn-channel-section,
+.sourcing-lawn-page .sourcing-lawn-success-section,
+.sourcing-lawn-page .sourcing-lawn-trust-section,
+.sourcing-lawn-page .sourcing-lawn-evidence-section,
+.sourcing-lawn-page .sourcing-lawn-faq-section { padding-block: 72px; }
+.sourcing-lawn-page .sourcing-lawn-visual-heading { grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr); gap: 56px; }
+.sourcing-lawn-page .sourcing-lawn-success-grid,
+.sourcing-lawn-page .sourcing-lawn-table-wrap,
+.sourcing-lawn-page .sourcing-lawn-evidence-flow { width: 100%; }
+.sourcing-lawn-page .sourcing-lawn-trust { max-width: none; }
+.sourcing-lawn-page .sourcing-lawn-faq { align-items: start; }
+
+@media (max-width: 1040px) {
+  .sourcing-lawn-page .sourcing-lawn-selector-workbench {
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 1fr);
+    grid-template-areas:
+      "image copy"
+      "facts facts"
+      "thumbs thumbs"
+      "hint hint";
+  }
+  .sourcing-lawn-page .sourcing-lawn-selector-rail {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 0 7px;
+  }
+  .sourcing-lawn-page .sourcing-lawn-selector-rail button { flex: 0 0 154px; }
+}
+
+@media (max-width: 760px) {
+  .sourcing-lawn-page .sourcing-lawn-landscape-section,
+  .sourcing-lawn-page .sourcing-lawn-channel-section,
+  .sourcing-lawn-page .sourcing-lawn-success-section,
+  .sourcing-lawn-page .sourcing-lawn-trust-section,
+  .sourcing-lawn-page .sourcing-lawn-evidence-section,
+  .sourcing-lawn-page .sourcing-lawn-faq-section { padding-block: 52px; }
+  .sourcing-lawn-page .sourcing-lawn-visual-heading { grid-template-columns: 1fr; gap: 12px; }
+  .sourcing-lawn-page .sourcing-lawn-selector-workbench {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "image"
+      "copy"
+      "facts"
+      "thumbs"
+      "hint";
+    gap: 12px;
+  }
+  .sourcing-lawn-page .sourcing-lawn-selector-summary { margin-top: 0; }
+  .sourcing-lawn-page .sourcing-lawn-selector-evidence { grid-template-columns: 1fr; }
+  .sourcing-lawn-page .sourcing-lawn-selector-evidence > div { min-height: 0; padding: 19px 18px; }
+  .sourcing-lawn-page .sourcing-lawn-selector-evidence > div + div { border-top: 1px solid var(--lawn-rule); border-left: 0; }
+  .sourcing-lawn-page .sourcing-lawn-selector-rail button { flex-basis: 132px; min-width: 132px; }
+  .sourcing-lawn-page .sourcing-lawn-selector-workbench .sourcing-selector-swipe-hint { display: block; margin: -4px 2px 0; }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .sourcing-lawn-page .sourcing-lawn-selector-workbench {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "image"
+      "copy"
+      "facts"
+      "thumbs"
+      "hint";
+  }
+  .sourcing-lawn-page .sourcing-lawn-selector-summary { margin-top: 0; }
+}
