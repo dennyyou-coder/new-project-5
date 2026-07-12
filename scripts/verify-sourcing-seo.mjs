@@ -85,6 +85,24 @@ requireValue(
   "/sourcing/pool-robots: lawn buyer-fit content leaked"
 );
 
+const sourcingPageSource = fs.readFileSync(path.join(process.cwd(), "components", "SourcingProductPage.tsx"), "utf8");
+const sourcingStyles = fs.readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
+requireValue(
+  sourcingPageSource.includes('isLawnRobotPage ? " sourcing-lawn-page" : ""'),
+  "visual system: missing lawn-only page scope"
+);
+for (const token of ["--lawn-ink:", "--lawn-surface:", "--lawn-accent:", "--lawn-rule:"]) {
+  requireValue(sourcingStyles.includes(token), `visual system: missing ${token}`);
+}
+requireValue(
+  sourcingStyles.includes(".sourcing-lawn-page .sourcing-lawn-problems-section"),
+  "visual system: buyer-risk treatment is not lawn scoped"
+);
+requireValue(
+  sourcingStyles.includes(".sourcing-lawn-page .sourcing-lawn-framework-grid"),
+  "visual system: decision framework is not lawn scoped"
+);
+
 const hub = await readPage("/sourcing");
 for (const route of forbiddenRoutes) {
   requireValue(!hub.html.includes(`href="${route}"`), `/sourcing: broken link remains ${route}`);
