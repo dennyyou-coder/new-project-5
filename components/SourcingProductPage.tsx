@@ -30,14 +30,14 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
         <section className="section-hero sourcing-product-hero sourcing-lawn-hero">
           <div className="sourcing-v3-container sourcing-product-hero-grid">
             <div>
-              <p className="sourcing-v3-kicker">Robotic Lawn Mower Sourcing in China</p>
-              <h1>Choose the Right Robotic Mower Platform Before You Choose a Supplier</h1>
-              <p className="sourcing-product-intro">Compare six robotic mower product directions from China, then request supplier matching for the platform closest to your market, channel and price position.</p>
+              <p className="sourcing-v3-kicker">Where the Next Robotic Mower Opportunities Are Forming</p>
+              <h1>Choose the Market Opportunity Before You Choose the Factory</h1>
+              <p className="sourcing-product-intro">Robotic mowers are separating into distinct product platforms—from mass-market vision models to RTK, slope specialists and professional large-area machines. The opportunity depends on which customer, channel and ownership problem the product is built to solve.</p>
               <div className="sourcing-lawn-hero-actions">
-                <a className="sourcing-v3-button" href="#product-options">Explore Product Options</a>
-                <TallyButton className="sourcing-lawn-secondary-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_hero_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>I Already Have a Product Brief</TallyButton>
+                <a className="sourcing-v3-button" href="#product-options">Explore the Product Opportunities</a>
+                <TallyButton className="sourcing-lawn-secondary-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_hero_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Test My Product Thesis</TallyButton>
               </div>
-              <p className="sourcing-lawn-hero-fit">For brands, importers, distributors and retailers sourcing robotic mower products from China.</p>
+              <p className="sourcing-lawn-hero-fit">For brands, importers, distributors and retailers deciding where to compete in robotic mowers—and which Chinese product platform can support that position.</p>
             </div>
             <img src={product.image} alt={product.imageAlt} />
           </div>
@@ -58,13 +58,13 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
       {isLawnRobotPage ? (
         <section className="section sourcing-lawn-audience-section">
           <div className="sourcing-v3-container">
-            <p className="sourcing-v3-kicker">Who This Is For</p>
-            <h2>Built for Buyers Developing or Expanding a Robotic Mower Range</h2>
+            <p className="sourcing-v3-kicker">The Decisions Buyers Are Facing</p>
+            <h2>Built for Buyers Deciding Where to Play in Robotic Mowers</h2>
             <div className="sourcing-lawn-audience-grid">
-              <article><span>Brands</span><h3>Brands developing a new robotic mower line</h3></article>
-              <article><span>Importers</span><h3>Importers looking for supplier alternatives</h3></article>
-              <article><span>Distributors</span><h3>Distributors expanding into backyard robotics</h3></article>
-              <article><span>Retailers</span><h3>Retailers testing a new product category</h3></article>
+              <article><span>Enter</span><h3>Choose a credible first platform for entering the category</h3></article>
+              <article><span>Expand</span><h3>Add a product that opens a new customer or price position</h3></article>
+              <article><span>Differentiate</span><h3>Find a platform with a visible reason to win beyond specifications</h3></article>
+              <article><span>De-risk</span><h3>Replace a weak supplier or one-season product before scaling</h3></article>
             </div>
           </div>
         </section>
@@ -74,25 +74,25 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
         <>
           <section className="section sourcing-lawn-problems-section">
             <div className="sourcing-v3-container">
-              <p className="sourcing-v3-kicker">Buyer Risks</p>
-              <h2>Why a Supplier List Is Not Enough</h2>
+              <p className="sourcing-v3-kicker">Opportunity Conditions</p>
+              <h2>What Turns a Robotic Mower Opportunity Into a Scalable Product</h2>
               <div className="sourcing-lawn-problems-grid">
-                <article><span>01</span><h3>Similar quotations can hide different product platforms</h3><p>Comparable prices and specifications may conceal major differences in navigation architecture, testing depth and long-term reliability.</p></article>
-                <article><span>02</span><h3>Real-world performance is difficult to judge from specifications</h3><p>Slopes, edges, tree cover, changing light and app stability need to be tested in conditions that reflect the target market.</p></article>
-                <article><span>03</span><h3>The lowest quotation may not produce the lowest total cost</h3><p>Certification, spare parts, returns, service preparation and quality problems can change the economics of the entire program.</p></article>
+                <article><span>01</span><h3>A clear customer problem—not another feature list</h3><p>The strongest platforms solve an obvious barrier: installation friction, difficult terrain, large-area coverage or the economics of opening the category at retail.</p></article>
+                <article><span>02</span><h3>Repeatable field performance—not a successful demonstration</h3><p>Edges, slopes, tree cover, weak signals, changing light and map recovery determine whether the product works in the buyer's real market.</p></article>
+                <article><span>03</span><h3>Channel economics that survive returns and service</h3><p>A compelling quotation is not a scalable business if setup support, software issues, spare parts and warranty claims consume the channel margin.</p></article>
               </div>
             </div>
           </section>
 
           <section className="section section-muted sourcing-lawn-deliverables">
             <div className="sourcing-v3-container">
-              <p className="sourcing-v3-kicker">What World Clean Biz Does</p>
-              <h2>What You Receive Before Making a Supplier Decision</h2>
+              <p className="sourcing-v3-kicker">Evidence Before Commitment</p>
+              <h2>What You Need to Know Before Backing a Product Platform</h2>
               <div className="sourcing-product-grid">
-                <article><span>01</span><h3>Product Direction Review</h3><p>Confirm the navigation route, target lawn, market, channel and product position before supplier outreach.</p></article>
-                <article><span>02</span><h3>Manufacturer Screening</h3><p>Identify manufacturer types with relevant platforms, testing capability and export readiness.</p></article>
-                <article><span>03</span><h3>Sample Comparison</h3><p>Compare navigation, mowing performance, app stability, safety and terrain capability.</p></article>
-                <article><span>04</span><h3>Pre-production Risk Review</h3><p>Review tooling, certification, spare parts, quality control and after-sales preparation.</p></article>
+                <article><span>01</span><h3>A Defensible Market Position</h3><p>Connect the navigation route and lawn use case to a target customer, channel, price position and reason to switch.</p></article>
+                <article><span>02</span><h3>Platform-Capable Suppliers</h3><p>Separate factories that can support the underlying technology and testing from those presenting a similar-looking finished product.</p></article>
+                <article><span>03</span><h3>Market-Critical Sample Evidence</h3><p>Compare the behaviors that determine adoption and returns: setup, edge performance, navigation recovery, safety, app stability and terrain capability.</p></article>
+                <article><span>04</span><h3>A Scalable Ownership Model</h3><p>Expose certification, software, spare-parts, quality-control and after-sales obligations before volume turns them into expensive problems.</p></article>
               </div>
             </div>
           </section>
@@ -101,10 +101,10 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
             <div className="sourcing-v3-container sourcing-lawn-trust">
               <img src="/images/industry/about-denny-portrait-event.jpg" alt="Denny, founder of World Clean Biz, at a cleaning industry event" />
               <div>
-                <p className="sourcing-v3-kicker">Industry Judgment Behind the Match</p>
-                <h2>Product and supplier decisions reviewed by Denny</h2>
-                <p>World Clean Biz combines product direction, supplier screening and market context before recommending the next sourcing step.</p>
-                <p>Denny leads the product, supplier and industry judgment. The team supports research, coordination and day-to-day execution.</p>
+                <p className="sourcing-v3-kicker">Industry judgment behind the product decision</p>
+                <h2>A platform can look convincing long before it becomes a viable business</h2>
+                <p>Denny reviews the product route through the realities of manufacturers, brands, channel expectations and product iteration—not through a quotation or specification sheet alone.</p>
+                <p>The judgment is whether the opportunity, supplier capability and execution model reinforce one another strongly enough to justify the next investment.</p>
                 <ul>
                   <li>Founder, World Clean Biz</li>
                   <li>Organizer, World Clean Expo</li>
@@ -116,48 +116,51 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
 
           <section className="section section-muted sourcing-lawn-process-section">
             <div className="sourcing-v3-container sourcing-lawn-process">
-              <div><p className="sourcing-v3-kicker">What happens after you share your brief</p><h2>How the Sourcing Discussion Works</h2><p>The first discussion clarifies the product direction, market and verification priorities before supplier decisions are made.</p></div>
+              <div><p className="sourcing-v3-kicker">From Market Thesis to Evidence</p><h2>Turn the Opportunity Into a Testable Product Direction</h2><p>The objective is not to collect more supplier options. It is to convert a market thesis into the product, supplier and field evidence required for a commercial decision.</p></div>
               <ol>
-                <li><strong>Share the direction</strong><span>Tell us your market, channel and preferred product route.</span></li>
-                <li><strong>Review the match</strong><span>World Clean Biz reviews the product route and relevant supplier types.</span></li>
-                <li><strong>Define next steps</strong><span>We identify the supplier, sample and verification questions for discussion.</span></li>
+                <li><strong>Define the opportunity</strong><span>Specify the target customer, lawn environment, channel, price position and reason the product should win.</span></li>
+                <li><strong>Identify the platform evidence</strong><span>Determine which supplier capabilities, field behaviors and ownership costs would prove or disprove the thesis.</span></li>
+                <li><strong>Make the next investment decision</strong><span>Use supplier and sample evidence to decide whether to proceed, change direction or stop before scale creates larger risk.</span></li>
               </ol>
             </div>
           </section>
 
           <section className="section sourcing-lawn-framework-section">
             <div className="sourcing-v3-container">
-              <p className="sourcing-v3-kicker">Decision Framework</p>
-              <h2>What We Look at Before Recommending the Next Step</h2>
+              <p className="sourcing-v3-kicker">Commercial Go / No-Go Framework</p>
+              <h2>The Four Decisions Behind a Scalable Robotic Mower Program</h2>
               <div className="sourcing-lawn-framework-grid">
-                <article><span>Product</span><h3>Is the product route credible?</h3><ul><li>Navigation system</li><li>Terrain performance</li><li>App stability</li></ul></article>
-                <article><span>Supplier</span><h3>Can the supplier support it?</h3><ul><li>Platform ownership</li><li>Testing capability</li><li>Production experience</li></ul></article>
-                <article><span>Market</span><h3>Does it fit the commercial plan?</h3><ul><li>Target channel</li><li>Price position</li><li>Service expectations</li></ul></article>
-                <article><span>Execution</span><h3>Can the program be delivered?</h3><ul><li>Certification</li><li>Spare parts</li><li>Quality control</li></ul></article>
+                <article><span>Opportunity</span><h3>Is the customer problem valuable enough?</h3><ul><li>Reason to switch</li><li>Addressable use case</li><li>Channel relevance</li></ul></article>
+                <article><span>Platform</span><h3>Does the product prove the promise?</h3><ul><li>Field performance</li><li>Navigation recovery</li><li>Ownership experience</li></ul></article>
+                <article><span>Supplier</span><h3>Can the capability survive scale?</h3><ul><li>Technology ownership</li><li>Test depth</li><li>Software and parts support</li></ul></article>
+                <article><span>Economics</span><h3>Does the business work after the sale?</h3><ul><li>Price and channel margin</li><li>Returns and service</li><li>Certification and quality cost</li></ul></article>
               </div>
             </div>
           </section>
 
           <section className="section section-muted sourcing-lawn-faq-section">
             <div className="sourcing-v3-container sourcing-lawn-faq">
-              <div><p className="sourcing-v3-kicker">Frequently Asked Questions</p><h2>Questions buyers often ask before starting</h2><p>These answers clarify how the product directions and sourcing discussion are intended to work.</p></div>
+              <div><p className="sourcing-v3-kicker">Industry Opportunity Questions</p><h2>The Product Decisions Buyers Are Debating Now</h2><p>These are not generic sourcing questions. They are the commercial and technical choices that shape where robotic mower growth can come from next.</p></div>
               <div>
-                <details><summary>Are the products shown verified factory models?</summary><p>No. The images represent illustrative product directions. Final supplier models, specifications and availability must be verified against your brief.</p></details>
-                <details><summary>Do you disclose factory names publicly?</summary><p>No. Factory information is not published as an open directory. Relevant supplier types and next steps are discussed in the context of a defined sourcing project.</p></details>
-                <details><summary>Can I submit my own product specification?</summary><p>Yes. You can use the custom Product Brief entry if you already have target specifications, reference products or channel requirements.</p></details>
-                <details><summary>Can you help compare samples from different suppliers?</summary><p>Sample comparison can cover navigation, mowing performance, app stability, safety, terrain capability and other agreed priorities.</p></details>
-                <details><summary>Do you support private-label and brand projects?</summary><p>Yes. The sourcing discussion can support established brands, private-label programs and buyers developing a new product range.</p></details>
-                <details><summary>Which markets do you support?</summary><p>Projects can be evaluated for North America, Europe, the UK and other markets when the target channel and requirements are clear.</p></details>
-                <details><summary>What information should I prepare before contacting you?</summary><p>Prepare your target market, sales channel, preferred product direction, project stage and any available specifications or reference products.</p></details>
+                <details><summary>Which robotic mower segment offers the strongest opportunity for new market entrants?</summary><p>The most accessible opening is often not the most technically ambitious machine. Installation-light products for smaller lawns and focused retail use cases can reach buyers that dealer-installed premium products do not. A new entrant still needs a sharp position: mass adoption, difficult terrain, large-area service or value—not a generic mower aimed at every lawn.</p></details>
+                <details><summary>Is the European market still led by premium products, or is it moving toward value models?</summary><p>Premium products remain important because reliability, installation and dealer support carry real value. The expansion opportunity is broader: simpler boundary-free products and proven value platforms can address households that rejected earlier prices or installation requirements. Value will grow only where lower price does not create higher returns, weak apps or unsustainable service cost.</p></details>
+                <details><summary>Can vision-based robotic mowers replace boundary-wire products?</summary><p>Vision can remove one of the category's largest adoption barriers, but it will not replace boundary wire in every environment. Smaller structured lawns are a strong opportunity when edges, obstacles and changing light are handled consistently. Boundary wire can remain commercially relevant where predictable operation and mature cost matter more than installation convenience.</p></details>
+                <details><summary>When does RTK create real customer value rather than functioning as a marketing feature?</summary><p>RTK creates value when it enables faster setup, reliable zone control and efficient coverage of medium or large open lawns. The feature becomes weak when trees, buildings, antenna placement or map recovery make ownership complicated. Buyers should evaluate the complete navigation system and installation journey, not the presence of RTK alone.</p></details>
+                <details><summary>Is there a meaningful market for AWD and slope-capable robotic mowers?</summary><p>Yes—when terrain capability solves a clearly underserved problem and the customer will pay for it. Sloped and uneven gardens give dealers a visible reason to recommend a specialist product. The opportunity depends on proving safe usable slope performance, turf protection and drivetrain durability rather than publishing an impressive maximum-angle claim.</p></details>
+                <details><summary>Which product direction is most suitable for ecommerce and mass retail?</summary><p>A compact, installation-light platform is easier to merchandise and explain, but simplicity must continue after delivery. Ecommerce and mass retail require resilient packaging, consumer-led setup, low support demand and return economics that protect channel margin. A technically advanced product with a difficult first-use experience is often a poor retail product.</p></details>
+                <details><summary>Where can Chinese robotic mower suppliers still differentiate from established European brands?</summary><p>The strongest openings are faster platform iteration, broader product portfolios, integration of new navigation approaches and adaptation to emerging channel needs. Cost alone is not durable differentiation. Buyers should look for suppliers that can turn manufacturing speed into stable software, repeatable field performance, parts support and a product position competitors cannot copy immediately.</p></details>
+                <details><summary>Which technical claims create the greatest sourcing risk?</summary><p>Maximum area, slope capability, obstacle avoidance and boundary-free navigation can all look stronger in specifications than in ordinary gardens. The risk is greatest where performance depends on signal conditions, lighting, lawn edges, moisture or software recovery. Claims should be converted into repeatable target-market test scenarios before they become packaging promises.</p></details>
+                <details><summary>What separates a scalable robotic mower platform from a one-season product?</summary><p>A scalable platform has a stable navigation architecture, controlled quality, software ownership, serviceable components and a supplier roadmap that supports more than one launch. A one-season product can still look competitive at sample stage but becomes difficult to sustain when returns, updates, spare parts and model changes begin to accumulate.</p></details>
+                <details><summary>What should buyers verify before committing to a product platform?</summary><p>Verify that the customer problem is valuable, field performance proves the product promise, the supplier controls the required technology, and the channel economics still work after setup, returns and service. If any one of those four conditions is weak, a lower quotation or impressive demonstration is not enough reason to commit.</p></details>
               </div>
             </div>
           </section>
 
           <section className="section sourcing-lawn-final-section">
             <div className="sourcing-v3-container sourcing-lawn-final-cta">
-              <div><p className="sourcing-v3-kicker">World Clean Biz Sourcing</p><h2>Turn Your Product Direction Into a Focused Supplier Search</h2><p>Share your market, channel and product requirements. World Clean Biz will use that context to identify the relevant product route, supplier types and verification priorities.</p></div>
+              <div><p className="sourcing-v3-kicker">Make the Opportunity Specific</p><h2>Turn a Market Opportunity Into a Product Brief</h2><p>Define the customer, lawn environment, channel, price position and reason the product should win. That is the starting point for identifying the platform, supplier capability and evidence worth pursuing.</p></div>
               <div className="sourcing-lawn-final-actions">
-                <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_final_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Start My Sourcing Brief</TallyButton>
+                <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_final_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Evaluate My Product Opportunity</TallyButton>
                 <a href="#product-options">Discuss a Selected Product</a>
               </div>
             </div>

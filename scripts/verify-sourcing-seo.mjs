@@ -34,12 +34,12 @@ for (const route of liveRoutes) {
 const lawn = await readPage("/sourcing/lawn-robots");
 const pool = await readPage("/sourcing/pool-robots");
 for (const value of [
-  "Choose the Right Robotic Mower Platform Before You Choose a Supplier",
-  "Explore Product Options",
-  "I Already Have a Product Brief",
+  "Choose the Market Opportunity Before You Choose the Factory",
+  "Explore the Product Opportunities",
+  "Test My Product Thesis",
   "Inside the cleaning industry since 2006",
-  "Product Direction Review",
-  "What happens after you share your brief"
+  "A Defensible Market Position",
+  "From Market Thesis to Evidence"
 ]) {
   requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing ${value}`);
 }
@@ -68,7 +68,7 @@ const fullLandingSections = [
   "The Four Decisions Behind a Scalable Robotic Mower Program",
   "Which robotic mower segment offers the strongest opportunity for new market entrants?",
   "Turn a Market Opportunity Into a Product Brief",
-  "Explore the Product Opportunities",
+  "Evaluate My Product Opportunity",
   "Related Intelligence"
 ];
 for (const value of fullLandingSections) {
