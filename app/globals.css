@@ -17970,6 +17970,12 @@ h3 {
 .sourcing-product-intro { max-width: 720px; font-size: 1.16rem; line-height: 1.75; margin: 24px 0 30px; }
 .sourcing-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 32px; }
 .sourcing-product-grid article { padding: 26px; border: 1px solid #dbe4ed; border-radius: 18px; background: #fff; }
+.sourcing-pool-page .sourcing-pool-related-card { display: flex; flex-direction: column; overflow: hidden; padding: 0; border-radius: 9px; }
+.sourcing-pool-page .sourcing-pool-related-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.sourcing-pool-page .sourcing-pool-related-card h3, .sourcing-pool-page .sourcing-pool-related-card p, .sourcing-pool-page .sourcing-pool-related-card a { margin-inline: 24px; }
+.sourcing-pool-page .sourcing-pool-related-card h3 { margin-top: 22px; }
+.sourcing-pool-page .sourcing-pool-related-card p { color: #52657a; line-height: 1.6; }
+.sourcing-pool-page .sourcing-pool-related-card a { margin-top: auto; margin-bottom: 24px; }
 .sourcing-product-grid h3 { margin-top: 0; }
 .sourcing-product-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 72px; }
 .sourcing-product-columns li { margin: 12px 0; }
