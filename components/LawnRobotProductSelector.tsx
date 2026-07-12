@@ -23,11 +23,11 @@ export function LawnRobotProductSelector({ products }: { products: ProductDirect
             <h3>{selected.name}</h3>
             <p className="sourcing-selector-positioning">{selected.positioning}</p>
             <div className="sourcing-selector-tags"><span>{selected.lawnContext}</span>{selected.markets.map((item) => <span key={item}>{item}</span>)}{selected.channels.map((item) => <span key={item}>{item}</span>)}</div>
-            <div className="sourcing-selector-facts"><div><strong>Why it is interesting</strong><p>{selected.opportunity}</p></div><div><strong>What buyers must verify</strong><p>{selected.verificationRisk}</p></div></div>
             <div className="sourcing-selector-actions">
               <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_product_selector" inquiryIntent="product_sourcing" productCategory="robotic_lawn_mower" productId={selected.id}>Request Suppliers for {selected.id}</TallyButton>
               <TallyButton className="sourcing-selector-secondary" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_selector_custom_brief" inquiryIntent="product_sourcing" productCategory="robotic_lawn_mower">Use My Own Product Brief</TallyButton>
             </div>
+            <div className="sourcing-selector-facts"><div><strong>Why it is interesting</strong><p>{selected.opportunity}</p></div><div><strong>What buyers must verify</strong><p>{selected.verificationRisk}</p></div></div>
           </div>
           <div className="sourcing-selector-thumbnails" aria-label="Choose a lawn robot product direction">
             {products.map((product) => <button key={product.id} type="button" aria-pressed={product.id === selected.id} onClick={() => setSelectedId(product.id)}><img src={product.image} alt="" /><strong>{product.id}</strong><span>{product.name}</span></button>)}
