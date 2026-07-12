@@ -38,8 +38,8 @@ for (const value of [
   "Explore the Product Opportunities",
   "Test My Product Thesis",
   "Inside the cleaning industry since 2006",
-  "A Defensible Market Position",
-  "From Market Thesis to Evidence"
+  "Where the Six Product Platforms Compete",
+  "Four Decisions Before You Back a Platform"
 ]) {
   requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing ${value}`);
 }
@@ -137,7 +137,7 @@ const decisionVisualSource = fs.existsSync(path.join(process.cwd(), "components"
   ? fs.readFileSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"), "utf8")
   : "";
 for (const productId of ["RM-01", "RM-02", "RM-03", "RM-04", "RM-05", "RM-06"]) {
-  requireValue(decisionVisualSource.includes(productId), `decision visuals: missing ${productId}`);
+  requireValue((decisionVisualSource.match(new RegExp(productId, "g")) || []).length >= 2, `decision visuals: ${productId} must appear in both landscape and matrix`);
 }
 
 const sourcingPageSource = fs.readFileSync(path.join(process.cwd(), "components", "SourcingProductPage.tsx"), "utf8");
@@ -149,14 +149,12 @@ requireValue(
 for (const token of ["--lawn-ink:", "--lawn-surface:", "--lawn-accent:", "--lawn-rule:"]) {
   requireValue(sourcingStyles.includes(token), `visual system: missing ${token}`);
 }
-requireValue(
-  sourcingStyles.includes(".sourcing-lawn-page .sourcing-lawn-problems-section"),
-  "visual system: buyer-risk treatment is not lawn scoped"
-);
-requireValue(
-  sourcingStyles.includes(".sourcing-lawn-page .sourcing-lawn-framework-grid"),
-  "visual system: decision framework is not lawn scoped"
-);
+for (const visualClass of ["sourcing-lawn-landscape", "sourcing-lawn-channel-matrix", "sourcing-lawn-success-grid", "sourcing-lawn-evidence-flow"]) {
+  requireValue(
+    sourcingStyles.includes(`.sourcing-lawn-page .${visualClass}`),
+    `visual system: ${visualClass} is not lawn scoped`
+  );
+}
 
 const hub = await readPage("/sourcing");
 for (const route of forbiddenRoutes) {

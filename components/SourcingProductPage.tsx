@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 import { LawnRobotProductSelector } from "@/components/LawnRobotProductSelector";
+import { LawnRobotChannelMatrix, LawnRobotEvidenceFlow, LawnRobotOpportunityLandscape, LawnRobotSuccessConditions } from "@/components/LawnRobotDecisionVisuals";
 import { getInsights } from "@/lib/content";
 import type { SourcingProduct } from "@/lib/sourcingProducts";
 
@@ -72,30 +73,9 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
       {product.directions ? <LawnRobotProductSelector products={product.directions} /> : null}
       {isLawnRobotPage ? (
         <>
-          <section className="section sourcing-lawn-problems-section">
-            <div className="sourcing-v3-container">
-              <p className="sourcing-v3-kicker">Opportunity Conditions</p>
-              <h2>What Turns a Robotic Mower Opportunity Into a Scalable Product</h2>
-              <div className="sourcing-lawn-problems-grid">
-                <article><span>01</span><h3>A clear customer problem—not another feature list</h3><p>The strongest platforms solve an obvious barrier: installation friction, difficult terrain, large-area coverage or the economics of opening the category at retail.</p></article>
-                <article><span>02</span><h3>Repeatable field performance—not a successful demonstration</h3><p>Edges, slopes, tree cover, weak signals, changing light and map recovery determine whether the product works in the buyer's real market.</p></article>
-                <article><span>03</span><h3>Channel economics that survive returns and service</h3><p>A compelling quotation is not a scalable business if setup support, software issues, spare parts and warranty claims consume the channel margin.</p></article>
-              </div>
-            </div>
-          </section>
-
-          <section className="section section-muted sourcing-lawn-deliverables">
-            <div className="sourcing-v3-container">
-              <p className="sourcing-v3-kicker">Evidence Before Commitment</p>
-              <h2>What You Need to Know Before Backing a Product Platform</h2>
-              <div className="sourcing-product-grid">
-                <article><span>01</span><h3>A Defensible Market Position</h3><p>Connect the navigation route and lawn use case to a target customer, channel, price position and reason to switch.</p></article>
-                <article><span>02</span><h3>Platform-Capable Suppliers</h3><p>Separate factories that can support the underlying technology and testing from those presenting a similar-looking finished product.</p></article>
-                <article><span>03</span><h3>Market-Critical Sample Evidence</h3><p>Compare the behaviors that determine adoption and returns: setup, edge performance, navigation recovery, safety, app stability and terrain capability.</p></article>
-                <article><span>04</span><h3>A Scalable Ownership Model</h3><p>Expose certification, software, spare-parts, quality-control and after-sales obligations before volume turns them into expensive problems.</p></article>
-              </div>
-            </div>
-          </section>
+          <LawnRobotOpportunityLandscape />
+          <LawnRobotChannelMatrix />
+          <LawnRobotSuccessConditions />
 
           <section className="section sourcing-lawn-trust-section">
             <div className="sourcing-v3-container sourcing-lawn-trust">
@@ -103,8 +83,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
               <div>
                 <p className="sourcing-v3-kicker">Industry judgment behind the product decision</p>
                 <h2>A platform can look convincing long before it becomes a viable business</h2>
-                <p>Denny reviews the product route through the realities of manufacturers, brands, channel expectations and product iteration—not through a quotation or specification sheet alone.</p>
-                <p>The judgment is whether the opportunity, supplier capability and execution model reinforce one another strongly enough to justify the next investment.</p>
+                <p>Denny reviews whether the opportunity, product evidence, supplier capability and execution model reinforce one another strongly enough to justify the next investment—not whether the quotation looks attractive.</p>
                 <ul>
                   <li>Founder, World Clean Biz</li>
                   <li>Organizer, World Clean Expo</li>
@@ -114,29 +93,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
             </div>
           </section>
 
-          <section className="section section-muted sourcing-lawn-process-section">
-            <div className="sourcing-v3-container sourcing-lawn-process">
-              <div><p className="sourcing-v3-kicker">From Market Thesis to Evidence</p><h2>Turn the Opportunity Into a Testable Product Direction</h2><p>The objective is not to collect more supplier options. It is to convert a market thesis into the product, supplier and field evidence required for a commercial decision.</p></div>
-              <ol>
-                <li><strong>Define the opportunity</strong><span>Specify the target customer, lawn environment, channel, price position and reason the product should win.</span></li>
-                <li><strong>Identify the platform evidence</strong><span>Determine which supplier capabilities, field behaviors and ownership costs would prove or disprove the thesis.</span></li>
-                <li><strong>Make the next investment decision</strong><span>Use supplier and sample evidence to decide whether to proceed, change direction or stop before scale creates larger risk.</span></li>
-              </ol>
-            </div>
-          </section>
-
-          <section className="section sourcing-lawn-framework-section">
-            <div className="sourcing-v3-container">
-              <p className="sourcing-v3-kicker">Commercial Go / No-Go Framework</p>
-              <h2>The Four Decisions Behind a Scalable Robotic Mower Program</h2>
-              <div className="sourcing-lawn-framework-grid">
-                <article><span>Opportunity</span><h3>Is the customer problem valuable enough?</h3><ul><li>Reason to switch</li><li>Addressable use case</li><li>Channel relevance</li></ul></article>
-                <article><span>Platform</span><h3>Does the product prove the promise?</h3><ul><li>Field performance</li><li>Navigation recovery</li><li>Ownership experience</li></ul></article>
-                <article><span>Supplier</span><h3>Can the capability survive scale?</h3><ul><li>Technology ownership</li><li>Test depth</li><li>Software and parts support</li></ul></article>
-                <article><span>Economics</span><h3>Does the business work after the sale?</h3><ul><li>Price and channel margin</li><li>Returns and service</li><li>Certification and quality cost</li></ul></article>
-              </div>
-            </div>
-          </section>
+          <LawnRobotEvidenceFlow />
 
           <section className="section section-muted sourcing-lawn-faq-section">
             <div className="sourcing-v3-container sourcing-lawn-faq">
