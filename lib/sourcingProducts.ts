@@ -13,7 +13,7 @@ export type ProductDirection = {
 };
 
 export type SourcingProduct = {
-  slug: "lawn-robots" | "pool-robots" | "floor-washers";
+  slug: "lawn-robots" | "pool-robots" | "floor-washers" | "robotic-vacuums";
   productCategory: string;
   title: string;
   metaDescription: string;
@@ -30,6 +30,29 @@ export type SourcingProduct = {
 };
 
 export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> = {
+  "robotic-vacuums": {
+    slug: "robotic-vacuums",
+    productCategory: "robot_vacuum",
+    title: "Robot Vacuum Manufacturers & Sourcing in China",
+    metaDescription: "Evaluate robot vacuum manufacturers in China through product opportunity, supplier capability, platform proof points and after-sales economics.",
+    eyebrow: "Robot Vacuum Sourcing",
+    intro: "Robot vacuum competition is no longer decided by suction figures alone. Navigation, obstacle handling, dock systems, mopping, app stability and after-sales readiness determine whether a platform can sustain a target market and channel.",
+    buyerProblems: ["Similar specifications can hide major navigation and ownership differences", "Docks, water systems and software can turn a product decision into a warranty decision", "Retail and ecommerce require a clear household story, not an undifferentiated flagship", "A product sample does not prove long-term service economics"],
+    services: ["Category and product opportunity review", "Manufacturer discovery and capability screening", "Specification, sample and differentiation review", "Quality-risk and execution support before production"],
+    evaluationPoints: ["Navigation, obstacle avoidance and map recovery", "Pickup, mopping and carpet-treatment performance", "Dock systems, water management and hygiene", "App, firmware and cloud-service readiness", "Testing depth, parts and warranty execution"],
+    marketNotes: ["North American launches need a clear position across households, pets, carpets and retail price bands.", "European buyers need product, privacy, compliance and service preparation that fits their chosen channel.", "Premium positioning depends on dependable automated ownership—not only a larger dock or a longer feature list."],
+    relatedArticleSlugs: ["how-to-source-robot-vacuum-cleaners-from-china", "roborock-at-a-crossroads", "roborock-channel-shift-online-to-offline-experience"],
+    image: "/images/sourcing/robotic-vacuums/rv-02-premium-dock-concept.png",
+    imageAlt: "Illustrative premium robot vacuum and self-cleaning dock for product evaluation",
+    directions: [
+      { id: "RV-01", name: "Retail Navigation Starter", positioning: "A credible first platform for households and retailers entering robot vacuum ownership without flagship complexity.", lawnContext: "Everyday hard floors and simple homes", markets: ["Europe", "North America"], channels: ["Retail", "Ecommerce"], technologyDirection: "LiDAR or structured-navigation consumer platform", opportunity: "A focused cleaning story and dependable setup can make the category more accessible than a feature-heavy flagship.", verificationRisk: "Verify mapping, recovery, pickup, app onboarding and return economics in ordinary homes.", image: "/images/sourcing/robotic-vacuums/rv-01-retail-starter-concept.png", imageAlt: "Illustrative entry robot vacuum with compact dock in a home" },
+      { id: "RV-02", name: "All-in-One Premium Platform", positioning: "A high-value automated-cleaning route where dock capability and maintenance convenience support a premium price.", lawnContext: "Premium multi-room homes", markets: ["United States", "Europe"], channels: ["Specialist dealer", "Premium retail"], technologyDirection: "Self-washing, drying and emptying dock", opportunity: "Premium value becomes credible when the dock reduces real daily maintenance, not when it only increases technical complexity.", verificationRisk: "Test dock reliability, leakage, washing and drying hygiene, consumables, water handling and service access.", image: "/images/sourcing/robotic-vacuums/rv-02-premium-dock-concept.png", imageAlt: "Illustrative robot vacuum with all-in-one dock" },
+      { id: "RV-03", name: "Low-Profile Reach Platform", positioning: "A differentiated route for homes where low furniture, access and cleaning coverage are a visible ownership problem.", lawnContext: "Low-clearance furniture and urban homes", markets: ["Europe", "Asia-Pacific"], channels: ["Ecommerce", "Specialist retail"], technologyDirection: "Low-profile navigation architecture", opportunity: "Visible under-furniture coverage creates a compelling reason to switch when it is proven without weakening navigation.", verificationRisk: "Verify clearance, navigation accuracy, obstacle handling, map stability and cleaning performance in low-light areas.", image: "/images/sourcing/robotic-vacuums/rv-03-low-profile-concept.png", imageAlt: "Illustrative low-profile robot vacuum cleaning under a sofa" },
+      { id: "RV-04", name: "Pet and Carpet Specialist", positioning: "A performance-led platform for households that need reliable hair handling and carpet cleaning rather than a generic robot.", lawnContext: "Pets, rugs and mixed floors", markets: ["North America", "Europe"], channels: ["Specialist dealer", "Ecommerce"], technologyDirection: "Hair-management and carpet-treatment platform", opportunity: "Pet hair and rugs create a visible problem that can support a more focused product and channel story.", verificationRisk: "Prove hair pickup, brush anti-tangle, carpet behaviour, noise, bin capacity and customer maintenance.", image: "/images/sourcing/robotic-vacuums/rv-04-pet-carpet-concept.png", imageAlt: "Illustrative robot vacuum for pet hair and carpet cleaning" },
+      { id: "RV-05", name: "Ecommerce Value Platform", positioning: "A concise online-first platform that combines a clear use case with controlled logistics and support demand.", lawnContext: "Compact apartments and first-time buyers", markets: ["North America", "Europe"], channels: ["Ecommerce", "Private label"], technologyDirection: "Compact value robot vacuum platform", opportunity: "A narrow promise can reduce the education burden and make online category entry more manageable.", verificationRisk: "Verify packaging, setup completion, support demand, parts availability and returns before committing to volume.", image: "/images/sourcing/robotic-vacuums/rv-05-ecommerce-value-concept.png", imageAlt: "Illustrative ecommerce robot vacuum in a compact apartment" },
+      { id: "RV-06", name: "Edge-Cleaning Premium Platform", positioning: "A high-value route for buyers who need a visible cleaning result at walls, corners and kitchen edges.", lawnContext: "Finished floors and detailed-edge cleaning", markets: ["Europe", "Middle East", "North America"], channels: ["Premium retail", "Specialist dealer"], technologyDirection: "Extending side brush or mop architecture", opportunity: "A demonstrable edge-cleaning result can create a sharper trade-up reason than a marginal suction claim.", verificationRisk: "Test arm durability, edge coverage, furniture interaction, water management and repairability under repeated use.", image: "/images/sourcing/robotic-vacuums/rv-06-edge-cleaning-concept.png", imageAlt: "Illustrative premium robot vacuum cleaning along a kitchen edge" }
+    ]
+  },
   "floor-washers": {
     slug: "floor-washers",
     productCategory: "hard_floor_washer",
