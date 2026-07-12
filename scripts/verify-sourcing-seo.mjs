@@ -58,18 +58,17 @@ for (const value of ["Request Suppliers for", "Use My Own Product Brief", "Produ
 }
 
 const fullLandingSections = [
-  "Built for Buyers Developing or Expanding a Robotic Mower Range",
-  "Brands developing a new robotic mower line",
-  "Explore six robotic mower product directions.",
-  "Why a Supplier List Is Not Enough",
-  "Similar quotations can hide different product platforms",
-  "What You Receive Before Making a Supplier Decision",
-  "Product and supplier decisions reviewed by Denny",
-  "How the Sourcing Discussion Works",
-  "What We Look at Before Recommending the Next Step",
-  "Are the products shown verified factory models?",
-  "Turn Your Product Direction Into a Focused Supplier Search",
-  "Start My Sourcing Brief",
+  "Choose the Market Opportunity Before You Choose the Factory",
+  "Built for Buyers Deciding Where to Play in Robotic Mowers",
+  "Six Product Platforms. Six Different Market Opportunities.",
+  "What Turns a Robotic Mower Opportunity Into a Scalable Product",
+  "What You Need to Know Before Backing a Product Platform",
+  "Industry judgment behind the product decision",
+  "From Market Thesis to Evidence",
+  "The Four Decisions Behind a Scalable Robotic Mower Program",
+  "Which robotic mower segment offers the strongest opportunity for new market entrants?",
+  "Turn a Market Opportunity Into a Product Brief",
+  "Explore the Product Opportunities",
   "Related Intelligence"
 ];
 for (const value of fullLandingSections) {
@@ -81,9 +80,33 @@ requireValue(
   "/sourcing/lawn-robots: full landing sections are out of order"
 );
 requireValue(
-  !pool.html.includes("Built for Buyers Developing or Expanding a Robotic Mower Range"),
+  !pool.html.includes("Built for Buyers Deciding Where to Play in Robotic Mowers"),
   "/sourcing/pool-robots: lawn buyer-fit content leaked"
 );
+
+for (const value of [
+  "Market opportunity",
+  "Why it can win",
+  "Critical proof points",
+  "Is the European market still led by premium products, or is it moving toward value models?",
+  "Can vision-based robotic mowers replace boundary-wire products?",
+  "When does RTK create real customer value rather than functioning as a marketing feature?",
+  "Is there a meaningful market for AWD and slope-capable robotic mowers?",
+  "Which product direction is most suitable for ecommerce and mass retail?",
+  "Where can Chinese robotic mower suppliers still differentiate from established European brands?",
+  "Which technical claims create the greatest sourcing risk?",
+  "What separates a scalable robotic mower platform from a one-season product?",
+  "What should buyers verify before committing to a product platform?"
+]) {
+  requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing opportunity signal ${value}`);
+}
+for (const value of [
+  "Questions buyers often ask before starting",
+  "Do you disclose factory names publicly?",
+  "What information should I prepare before contacting you?"
+]) {
+  requireValue(!lawn.html.includes(value), `/sourcing/lawn-robots: service-oriented FAQ remains ${value}`);
+}
 
 const sourcingPageSource = fs.readFileSync(path.join(process.cwd(), "components", "SourcingProductPage.tsx"), "utf8");
 const sourcingStyles = fs.readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
