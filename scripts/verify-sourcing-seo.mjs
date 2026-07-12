@@ -153,6 +153,17 @@ requireValue(
   sourcingStyles.includes(".sourcing-lawn-page .sourcing-lawn-faq-visual"),
   "lawn FAQ visual: style is not lawn scoped"
 );
+for (const selector of [
+  ".sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article",
+  ".sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid a",
+  ".sourcing-lawn-page a:focus-visible"
+]) {
+  requireValue(sourcingStyles.includes(`${selector} {`), `lawn CTA hierarchy: missing ${selector}`);
+}
+requireValue(
+  sourcingStyles.includes(".sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article {\n  display: flex;"),
+  "lawn CTA hierarchy: related cards do not align actions"
+);
 requireValue(
   sourcingPageSource.includes('isLawnRobotPage ? " sourcing-lawn-page" : ""'),
   "visual system: missing lawn-only page scope"

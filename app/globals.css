@@ -18277,7 +18277,55 @@ h3 {
 .sourcing-lawn-page .sourcing-lawn-final-actions { padding-left: 28px; border-left: 1px solid rgba(255,255,255,.25); }
 .sourcing-lawn-page .sourcing-lawn-final-actions a { border-radius: 4px; }
 .sourcing-lawn-page .sourcing-lawn-final-section + .section { padding-block: 62px; background: #fff; }
-.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article { border-radius: 8px; box-shadow: none; }
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article > p { flex: 1; }
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid a {
+  display: inline-flex;
+  min-height: 44px;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 18px;
+  padding: 10px 16px;
+  border: 1px solid #b8d1e8;
+  border-radius: 4px;
+  background: #e6f0fa;
+  color: var(--lawn-accent);
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background .18s ease, border-color .18s ease, color .18s ease, transform .18s ease;
+}
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid a::after { content: "\2192"; font-size: 1.05em; }
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid a:hover {
+  transform: translateY(-2px);
+  border-color: var(--lawn-accent);
+  background: var(--lawn-accent);
+  color: #fff;
+}
+.sourcing-lawn-page .sourcing-v3-button,
+.sourcing-lawn-page .sourcing-lawn-secondary-button,
+.sourcing-lawn-page .sourcing-selector-secondary,
+.sourcing-lawn-page .sourcing-lawn-final-actions a { transition: transform .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.sourcing-lawn-page .sourcing-v3-button:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(22,93,246,.28); }
+.sourcing-lawn-page .sourcing-lawn-secondary-button:hover,
+.sourcing-lawn-page .sourcing-lawn-final-actions a:hover { transform: translateY(-2px); background: rgba(255,255,255,.12); }
+.sourcing-lawn-page .sourcing-selector-secondary:hover { transform: translateY(-2px); border-color: var(--lawn-accent); background: #eaf2f8; }
+.sourcing-lawn-page a:focus-visible {
+  outline: 3px solid #79b7f2;
+  outline-offset: 3px;
+}
+.sourcing-lawn-page button:focus-visible {
+  outline: 3px solid #79b7f2;
+  outline-offset: 3px;
+}
 
 @media (max-width: 1040px) {
   .sourcing-lawn-page .sourcing-lawn-audience-grid article:nth-child(2) { border-right: 0; }
