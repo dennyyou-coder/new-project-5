@@ -24,7 +24,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
   ];
 
   return (
-    <main className="sourcing-v3-page">
+    <main className={`sourcing-v3-page${isLawnRobotPage ? " sourcing-lawn-page" : ""}`}>
       {schemas.map((schema, index) => <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />)}
       {isLawnRobotPage ? (
         <section className="section-hero sourcing-product-hero sourcing-lawn-hero">

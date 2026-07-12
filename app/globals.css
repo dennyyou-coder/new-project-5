@@ -18091,3 +18091,222 @@ h3 {
   .sourcing-lawn-process, .sourcing-lawn-faq, .sourcing-lawn-final-cta { gap: 32px; }
   .sourcing-lawn-framework-grid h3 { min-height: auto; }
 }
+
+/* Lawn robot landing page — Precision Industrial Editorial */
+.sourcing-lawn-page {
+  --lawn-ink: #102d4d;
+  --lawn-navy: #0c2744;
+  --lawn-navy-raised: #153b60;
+  --lawn-surface: #eef3f6;
+  --lawn-paper: #f8fafb;
+  --lawn-accent: #2d78c8;
+  --lawn-muted: #587087;
+  --lawn-rule: #ccd7df;
+  color: var(--lawn-ink);
+  background: #fff;
+}
+.sourcing-lawn-page .section { padding-block: 76px; }
+.sourcing-lawn-page .section-muted { background: var(--lawn-surface); }
+.sourcing-lawn-page h2 { max-width: 820px; letter-spacing: -.025em; line-height: 1.08; }
+.sourcing-lawn-page .sourcing-v3-kicker { color: var(--lawn-accent); letter-spacing: .14em; }
+.sourcing-lawn-page .sourcing-lawn-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 66px 0 70px;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px) 0 0 / 64px 64px,
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px) 0 0 / 64px 64px,
+    linear-gradient(135deg, #0b2541 0%, #12375a 72%, #17456f 100%);
+}
+.sourcing-lawn-page .sourcing-lawn-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -8% -58% 46%;
+  height: 90%;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.sourcing-lawn-page .sourcing-lawn-hero .sourcing-product-hero-grid { position: relative; z-index: 1; }
+.sourcing-lawn-page .sourcing-lawn-hero .sourcing-v3-kicker { color: #7eb8f2; }
+.sourcing-lawn-page .sourcing-lawn-hero h1 { max-width: 900px; letter-spacing: -.045em; }
+.sourcing-lawn-page .sourcing-lawn-hero img {
+  box-sizing: border-box;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 12px;
+  background: rgba(255,255,255,.055);
+  box-shadow: 0 24px 60px rgba(2,15,28,.26);
+}
+.sourcing-lawn-page .sourcing-lawn-secondary-button { border-radius: 4px; }
+.sourcing-lawn-page .sourcing-lawn-audience-section { padding-block: 58px; }
+.sourcing-lawn-page .sourcing-lawn-audience-grid { gap: 0; border-bottom: 1px solid var(--lawn-rule); }
+.sourcing-lawn-page .sourcing-lawn-audience-grid article {
+  min-height: 132px;
+  padding: 24px 24px 26px 0;
+  border-top: 1px solid var(--lawn-rule);
+  border-right: 1px solid var(--lawn-rule);
+}
+.sourcing-lawn-page .sourcing-lawn-audience-grid article:not(:first-child) { padding-left: 24px; }
+.sourcing-lawn-page .sourcing-lawn-audience-grid article:last-child { border-right: 0; }
+.sourcing-lawn-page .sourcing-lawn-audience-grid h3 { max-width: 240px; margin-top: 14px; }
+.sourcing-lawn-page .sourcing-selector-section {
+  padding-block: 80px;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,.58), transparent 50%),
+    var(--lawn-surface);
+  border-block: 1px solid var(--lawn-rule);
+}
+.sourcing-lawn-page .sourcing-selector-section > .sourcing-v3-container > h2 { max-width: 900px; font-size: clamp(2.1rem, 4vw, 3.35rem); }
+.sourcing-lawn-page .sourcing-selector { gap: 14px; margin-top: 34px; }
+.sourcing-lawn-page .sourcing-selector-image {
+  border-color: #bfcbd4;
+  border-radius: 10px;
+  background: #dfe7e3;
+  box-shadow: 0 18px 44px rgba(25,52,76,.12);
+}
+.sourcing-lawn-page .sourcing-selector-image > span { border: 1px solid rgba(16,45,77,.12); border-radius: 4px; }
+.sourcing-lawn-page .sourcing-selector-copy {
+  padding: 23px;
+  border-color: #c5d0d8;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(25,52,76,.07);
+}
+.sourcing-lawn-page .sourcing-selector-copy h3 { letter-spacing: -.035em; }
+.sourcing-lawn-page .sourcing-selector-tags span { border-radius: 3px; background: #e9f0f5; }
+.sourcing-lawn-page .sourcing-selector-facts { padding-block: 14px; border-block: 1px solid #dbe3e9; }
+.sourcing-lawn-page .sourcing-selector-thumbnails button { border-radius: 8px; transition: border-color .18s ease, background .18s ease, transform .18s ease; }
+.sourcing-lawn-page .sourcing-selector-thumbnails button:hover { transform: translateX(-2px); border-color: #9bb4c8; }
+.sourcing-lawn-page .sourcing-selector-thumbnails button[aria-pressed="true"] { border-color: var(--lawn-accent); background: #f4f8fc; box-shadow: inset 3px 0 var(--lawn-accent); }
+.sourcing-lawn-page .sourcing-selector-thumbnails img { border-radius: 4px; }
+.sourcing-lawn-page .sourcing-lawn-problems-section { background: var(--lawn-navy); color: #fff; }
+.sourcing-lawn-page .sourcing-lawn-problems-section h2 { color: #fff; }
+.sourcing-lawn-page .sourcing-lawn-problems-section .sourcing-v3-kicker,
+.sourcing-lawn-page .sourcing-lawn-problems-grid article > span { color: #78b5ef; }
+.sourcing-lawn-page .sourcing-lawn-problems-grid { gap: 0; border-block: 1px solid rgba(255,255,255,.18); }
+.sourcing-lawn-page .sourcing-lawn-problems-grid article {
+  min-height: 270px;
+  padding: 30px 34px 32px;
+  border: 0;
+  border-right: 1px solid rgba(255,255,255,.18);
+  border-radius: 0;
+  background: transparent;
+}
+.sourcing-lawn-page .sourcing-lawn-problems-grid article:first-child { padding-left: 0; }
+.sourcing-lawn-page .sourcing-lawn-problems-grid article:last-child { padding-right: 0; border-right: 0; }
+.sourcing-lawn-page .sourcing-lawn-problems-grid h3 { color: #fff; font-size: 1.22rem; }
+.sourcing-lawn-page .sourcing-lawn-problems-grid p { color: #b9cad9; }
+.sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid { gap: 0; border-block: 1px solid var(--lawn-rule); }
+.sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid article {
+  min-height: 260px;
+  padding: 28px 25px;
+  border: 0;
+  border-right: 1px solid var(--lawn-rule);
+  border-radius: 0;
+  background: transparent;
+}
+.sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid article:first-child { padding-left: 0; }
+.sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid article:last-child { border-right: 0; }
+.sourcing-lawn-page .sourcing-lawn-deliverables article > span { font-size: 1.8rem; letter-spacing: -.03em; }
+.sourcing-lawn-page .sourcing-lawn-trust-section { background: #fff; }
+.sourcing-lawn-page .sourcing-lawn-trust { max-width: 1120px; gap: 68px; }
+.sourcing-lawn-page .sourcing-lawn-trust > img {
+  aspect-ratio: 4 / 4.4;
+  border: 1px solid var(--lawn-rule);
+  border-radius: 10px;
+  box-shadow: 18px 18px 0 var(--lawn-surface);
+}
+.sourcing-lawn-page .sourcing-lawn-trust li {
+  flex: 1 1 180px;
+  padding: 13px 0;
+  border-block: 1px solid var(--lawn-rule);
+  border-radius: 0;
+  background: transparent;
+  color: var(--lawn-ink);
+}
+.sourcing-lawn-page .sourcing-lawn-process { gap: 76px; }
+.sourcing-lawn-page .sourcing-lawn-process ol { gap: 0; border-top: 1px solid var(--lawn-rule); }
+.sourcing-lawn-page .sourcing-lawn-process li {
+  min-height: 94px;
+  padding: 22px 20px 22px 70px;
+  border: 0;
+  border-bottom: 1px solid var(--lawn-rule);
+  border-radius: 0;
+  background: transparent;
+}
+.sourcing-lawn-page .sourcing-lawn-process li::before { top: 23px; left: 16px; border-radius: 4px; }
+.sourcing-lawn-page .sourcing-lawn-framework-section { background: #fff; }
+.sourcing-lawn-page .sourcing-lawn-framework-grid { gap: 0; border: 1px solid var(--lawn-rule); border-radius: 10px; overflow: hidden; }
+.sourcing-lawn-page .sourcing-lawn-framework-grid article {
+  min-height: 300px;
+  padding: 26px;
+  border: 0;
+  border-right: 1px solid var(--lawn-rule);
+  border-radius: 0;
+  background: var(--lawn-paper);
+}
+.sourcing-lawn-page .sourcing-lawn-framework-grid article:last-child { border-right: 0; }
+.sourcing-lawn-page .sourcing-lawn-framework-grid h3 { min-height: 72px; }
+.sourcing-lawn-page .sourcing-lawn-framework-grid li { padding: 11px 0; }
+.sourcing-lawn-page .sourcing-lawn-faq-section { background: var(--lawn-surface); }
+.sourcing-lawn-page .sourcing-lawn-faq { gap: 86px; }
+.sourcing-lawn-page .sourcing-lawn-faq details { border-color: #bfcdd7; }
+.sourcing-lawn-page .sourcing-lawn-faq summary { padding-block: 21px; }
+.sourcing-lawn-page .sourcing-lawn-faq details[open] summary { color: var(--lawn-accent); }
+.sourcing-lawn-page .sourcing-lawn-final-section {
+  position: relative;
+  overflow: hidden;
+  padding-block: 82px;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px) 0 0 / 56px 56px,
+    linear-gradient(135deg, #0a233d, #153e64);
+}
+.sourcing-lawn-page .sourcing-lawn-final-cta { position: relative; z-index: 1; }
+.sourcing-lawn-page .sourcing-lawn-final-section .sourcing-v3-kicker { color: #7eb8f2; }
+.sourcing-lawn-page .sourcing-lawn-final-actions { padding-left: 28px; border-left: 1px solid rgba(255,255,255,.25); }
+.sourcing-lawn-page .sourcing-lawn-final-actions a { border-radius: 4px; }
+.sourcing-lawn-page .sourcing-lawn-final-section + .section { padding-block: 62px; background: #fff; }
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article { border-radius: 8px; box-shadow: none; }
+
+@media (max-width: 1040px) {
+  .sourcing-lawn-page .sourcing-lawn-audience-grid article:nth-child(2) { border-right: 0; }
+  .sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid article:nth-child(2),
+  .sourcing-lawn-page .sourcing-lawn-framework-grid article:nth-child(2) { border-right: 0; }
+  .sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid article:nth-child(-n+2),
+  .sourcing-lawn-page .sourcing-lawn-framework-grid article:nth-child(-n+2) { border-bottom: 1px solid var(--lawn-rule); }
+}
+
+@media (max-width: 760px) {
+  .sourcing-lawn-page .section { padding-block: 54px; }
+  .sourcing-lawn-page h2 { font-size: clamp(1.8rem, 8vw, 2.25rem); }
+  .sourcing-lawn-page .sourcing-lawn-hero { padding-block: 46px 50px; }
+  .sourcing-lawn-page .sourcing-lawn-hero img { padding: 8px; border-radius: 8px; }
+  .sourcing-lawn-page .sourcing-lawn-audience-section { padding-block: 46px; }
+  .sourcing-lawn-page .sourcing-lawn-audience-grid { border-bottom: 0; }
+  .sourcing-lawn-page .sourcing-lawn-audience-grid article,
+  .sourcing-lawn-page .sourcing-lawn-audience-grid article:not(:first-child) { min-height: 0; padding: 18px 0 20px; border-right: 0; }
+  .sourcing-lawn-page .sourcing-selector-section { padding-block: 56px; }
+  .sourcing-lawn-page .sourcing-selector-section > .sourcing-v3-container > h2 { font-size: clamp(1.9rem, 8.5vw, 2.35rem); }
+  .sourcing-lawn-page .sourcing-selector { margin-top: 26px; }
+  .sourcing-lawn-page .sourcing-selector-image { border-radius: 8px; box-shadow: 0 12px 28px rgba(25,52,76,.1); }
+  .sourcing-lawn-page .sourcing-selector-copy { padding: 20px 18px; border-radius: 8px; box-shadow: none; }
+  .sourcing-lawn-page .sourcing-selector-thumbnails button:hover { transform: none; }
+  .sourcing-lawn-page .sourcing-lawn-problems-grid { border-bottom: 0; }
+  .sourcing-lawn-page .sourcing-lawn-problems-grid article,
+  .sourcing-lawn-page .sourcing-lawn-problems-grid article:first-child,
+  .sourcing-lawn-page .sourcing-lawn-problems-grid article:last-child { min-height: 0; padding: 25px 0 28px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+  .sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid,
+  .sourcing-lawn-page .sourcing-lawn-framework-grid { border-inline: 0; border-radius: 0; }
+  .sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid article,
+  .sourcing-lawn-page .sourcing-lawn-deliverables .sourcing-product-grid article:first-child,
+  .sourcing-lawn-page .sourcing-lawn-framework-grid article { min-height: 0; padding: 24px 0; border-right: 0; border-bottom: 1px solid var(--lawn-rule); }
+  .sourcing-lawn-page .sourcing-lawn-trust { gap: 38px; }
+  .sourcing-lawn-page .sourcing-lawn-trust > img { max-width: 310px; border-radius: 8px; box-shadow: 10px 10px 0 var(--lawn-surface); }
+  .sourcing-lawn-page .sourcing-lawn-trust ul { gap: 0; }
+  .sourcing-lawn-page .sourcing-lawn-process { gap: 34px; }
+  .sourcing-lawn-page .sourcing-lawn-process li { padding-left: 60px; }
+  .sourcing-lawn-page .sourcing-lawn-framework-grid h3 { min-height: 0; }
+  .sourcing-lawn-page .sourcing-lawn-faq { gap: 34px; }
+  .sourcing-lawn-page .sourcing-lawn-final-section { padding-block: 60px; }
+  .sourcing-lawn-page .sourcing-lawn-final-actions { padding: 26px 0 0; border-top: 1px solid rgba(255,255,255,.25); border-left: 0; }
+}
