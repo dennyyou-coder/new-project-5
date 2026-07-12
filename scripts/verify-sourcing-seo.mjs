@@ -61,11 +61,11 @@ const fullLandingSections = [
   "Choose the Market Opportunity Before You Choose the Factory",
   "Built for Buyers Deciding Where to Play in Robotic Mowers",
   "Six Product Platforms. Six Different Market Opportunities.",
-  "What Turns a Robotic Mower Opportunity Into a Scalable Product",
-  "What You Need to Know Before Backing a Product Platform",
+  "Where the Six Product Platforms Compete",
+  "Which Channels Fit Each Product Platform?",
+  "Three Conditions That Decide Whether the Opportunity Can Scale",
   "Industry judgment behind the product decision",
-  "From Market Thesis to Evidence",
-  "The Four Decisions Behind a Scalable Robotic Mower Program",
+  "Four Decisions Before You Back a Platform",
   "Which robotic mower segment offers the strongest opportunity for new market entrants?",
   "Turn a Market Opportunity Into a Product Brief",
   "Evaluate My Product Opportunity",
@@ -106,6 +106,38 @@ for (const value of [
   "What information should I prepare before contacting you?"
 ]) {
   requireValue(!lawn.html.includes(value), `/sourcing/lawn-robots: service-oriented FAQ remains ${value}`);
+}
+
+for (const value of [
+  "World Clean Biz editorial assessment",
+  "Accessible entry",
+  "Premium product and service value",
+  "Strong fit",
+  "Conditional fit",
+  "Retail",
+  "Ecommerce",
+  "Specialist dealer",
+  "Private label",
+  "Professional / project sales"
+]) {
+  requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing hybrid visual content ${value}`);
+}
+for (const value of [
+  "What You Need to Know Before Backing a Product Platform",
+  "Turn the Opportunity Into a Testable Product Direction",
+  "The Four Decisions Behind a Scalable Robotic Mower Program"
+]) {
+  requireValue(!lawn.html.includes(value), `/sourcing/lawn-robots: redundant text section remains ${value}`);
+}
+requireValue((lawn.html.match(/<details>/g) || []).length === 10, "/sourcing/lawn-robots: expected ten collapsed industry FAQs");
+requireValue(!/<details open/.test(lawn.html), "/sourcing/lawn-robots: FAQ should be collapsed on initial load");
+requireValue(!pool.html.includes("Where the Six Product Platforms Compete"), "/sourcing/pool-robots: lawn opportunity landscape leaked");
+
+const decisionVisualSource = fs.existsSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"))
+  ? fs.readFileSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"), "utf8")
+  : "";
+for (const productId of ["RM-01", "RM-02", "RM-03", "RM-04", "RM-05", "RM-06"]) {
+  requireValue(decisionVisualSource.includes(productId), `decision visuals: missing ${productId}`);
 }
 
 const sourcingPageSource = fs.readFileSync(path.join(process.cwd(), "components", "SourcingProductPage.tsx"), "utf8");
