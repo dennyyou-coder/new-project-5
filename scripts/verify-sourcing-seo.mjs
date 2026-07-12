@@ -44,8 +44,8 @@ for (const value of [
   requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing ${value}`);
 }
 requireValue(
-  pool.html.includes("Robotic Pool Cleaner Manufacturers &amp; Sourcing in China"),
-  "/sourcing/pool-robots: shared page presentation changed"
+  pool.html.includes("Choose the Market Opportunity Before You Choose the Factory"),
+  "/sourcing/pool-robots: missing decision-led hero"
 );
 requireValue(
   !pool.html.includes("Choose the Right Robotic Mower Platform"),
@@ -131,7 +131,25 @@ for (const value of [
 }
 requireValue((lawn.html.match(/<details>/g) || []).length === 10, "/sourcing/lawn-robots: expected ten collapsed industry FAQs");
 requireValue(!/<details open/.test(lawn.html), "/sourcing/lawn-robots: FAQ should be collapsed on initial load");
-requireValue(!pool.html.includes("Where the Six Product Platforms Compete"), "/sourcing/pool-robots: lawn opportunity landscape leaked");
+
+const poolLandingSections = [
+  "Choose the Market Opportunity Before You Choose the Factory",
+  "Built for Buyers Deciding Where to Play in Pool Robotics",
+  "Six Product Platforms. Six Different Market Opportunities.",
+  "Where the Six Product Platforms Compete",
+  "Which Channels Fit Each Product Platform?",
+  "Three Conditions That Decide Whether the Opportunity Can Scale",
+  "Industry judgment behind the product decision",
+  "Four Decisions Before You Back a Platform",
+  "Turn a Market Opportunity Into a Product Brief",
+  "Evaluate My Product Opportunity",
+  "Related Intelligence"
+];
+for (const value of poolLandingSections) {
+  requireValue(pool.html.includes(value), `/sourcing/pool-robots: missing full landing section ${value}`);
+}
+requireValue((pool.html.match(/<details>/g) || []).length === 10, "/sourcing/pool-robots: expected ten collapsed industry FAQs");
+requireValue(!/<details open/.test(pool.html), "/sourcing/pool-robots: FAQ should be collapsed on initial load");
 
 const decisionVisualSource = fs.existsSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"))
   ? fs.readFileSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"), "utf8")

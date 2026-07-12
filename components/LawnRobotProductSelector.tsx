@@ -4,7 +4,7 @@ import { useState } from "react";
 import { TallyButton } from "@/components/LeadForms";
 import type { ProductDirection } from "@/lib/sourcingProducts";
 
-export function LawnRobotProductSelector({ products }: { products: ProductDirection[] }) {
+export function LawnRobotProductSelector({ products, productCategory = "robotic_lawn_mower", ctaPrefix = "lawn_robot", ariaLabel = "Choose a lawn robot product direction" }: { products: ProductDirection[]; productCategory?: string; ctaPrefix?: string; ariaLabel?: string }) {
   const [selectedId, setSelectedId] = useState<ProductDirection["id"]>(products[0].id);
   const selected = products.find((product) => product.id === selectedId) || products[0];
   const selectedIndex = products.findIndex((product) => product.id === selected.id);
@@ -24,12 +24,12 @@ export function LawnRobotProductSelector({ products }: { products: ProductDirect
             <p className="sourcing-selector-positioning"><strong>Market opportunity</strong><br />{selected.positioning}</p>
             <div className="sourcing-selector-tags"><span>{selected.lawnContext}</span>{selected.markets.map((item) => <span key={item}>{item}</span>)}{selected.channels.map((item) => <span key={item}>{item}</span>)}</div>
             <div className="sourcing-selector-actions">
-              <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_product_selector" inquiryIntent="product_sourcing" productCategory="robotic_lawn_mower" productId={selected.id}>Request Suppliers for {selected.id}</TallyButton>
-              <TallyButton className="sourcing-selector-secondary" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_selector_custom_brief" inquiryIntent="product_sourcing" productCategory="robotic_lawn_mower">Use My Own Product Brief</TallyButton>
+              <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation={`${ctaPrefix}_product_selector`} inquiryIntent="product_sourcing" productCategory={productCategory} productId={selected.id}>Request Suppliers for {selected.id}</TallyButton>
+              <TallyButton className="sourcing-selector-secondary" form="sourcing" conversionGroup="sourcing" ctaLocation={`${ctaPrefix}_selector_custom_brief`} inquiryIntent="product_sourcing" productCategory={productCategory}>Use My Own Product Brief</TallyButton>
             </div>
           </div>
           <div className="sourcing-selector-facts sourcing-lawn-selector-evidence"><div><strong>Why it can win</strong><p>{selected.opportunity}</p></div><div><strong>Critical proof points</strong><p>{selected.verificationRisk}</p></div></div>
-          <div className="sourcing-selector-thumbnails sourcing-lawn-selector-rail" aria-label="Choose a lawn robot product direction">
+          <div className="sourcing-selector-thumbnails sourcing-lawn-selector-rail" aria-label={ariaLabel}>
             {products.map((product) => <button key={product.id} type="button" aria-pressed={product.id === selected.id} onClick={() => setSelectedId(product.id)}><img src={product.image} alt="" /><strong>{product.id}</strong><span>{product.name}</span></button>)}
           </div>
           <p className="sourcing-selector-swipe-hint">Swipe to compare more product directions →</p>
