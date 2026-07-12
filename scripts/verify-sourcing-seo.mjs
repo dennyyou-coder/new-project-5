@@ -43,7 +43,7 @@ const trackingSource = sourceFiles.map((file) => fs.readFileSync(file, "utf8")).
 for (const eventName of ["cta_view", "cta_click", "form_open", "form_submit", "form_success"]) {
   requireValue(trackingSource.includes(eventName), `tracking: missing ${eventName}`);
 }
-for (const parameter of ["conversion_group", "form_type", "source_page", "cta_location", "inquiry_intent", "product_category"]) {
+for (const parameter of ["conversion_group", "form_type", "source_page", "cta_location", "inquiry_intent", "product_category", "product_id"]) {
   requireValue(trackingSource.includes(parameter), `tracking: missing ${parameter}`);
 }
 

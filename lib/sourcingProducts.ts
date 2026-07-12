@@ -1,3 +1,17 @@
+export type ProductDirection = {
+  id: "RM-01" | "RM-02" | "RM-03" | "RM-04" | "RM-05" | "RM-06";
+  name: string;
+  positioning: string;
+  lawnContext: string;
+  markets: string[];
+  channels: string[];
+  technologyDirection: string;
+  opportunity: string;
+  verificationRisk: string;
+  image: string;
+  imageAlt: string;
+};
+
 export type SourcingProduct = {
   slug: "lawn-robots" | "pool-robots";
   productCategory: string;
@@ -12,6 +26,7 @@ export type SourcingProduct = {
   relatedArticleSlugs: string[];
   image: string;
   imageAlt: string;
+  directions?: ProductDirection[];
 };
 
 export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> = {
@@ -28,7 +43,15 @@ export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> 
     marketNotes: ["North American buyers need products suited to larger and more varied lawns.", "European and UK buyers often place greater weight on installation, safety, noise and channel service.", "A global launch plan should separate market requirements instead of using one specification everywhere."],
     relatedArticleSlugs: ["robotic-lawn-mower-manufacturers-china", "robotic-mowers-2026-breakthrough", "amazon-first-stop-for-backyard-robotics"],
     image: "/images/sourcing/lawn-robots.png",
-    imageAlt: "Robotic lawn mower sourcing and manufacturer evaluation"
+    imageAlt: "Robotic lawn mower sourcing and manufacturer evaluation",
+    directions: [
+      { id: "RM-01", name: "Compact Vision", positioning: "A compact, installation-light direction for brands serving smaller private gardens.", lawnContext: "Small and structured residential lawns", markets: ["UK", "Europe"], channels: ["Retail", "Ecommerce"], technologyDirection: "Camera-led navigation direction", opportunity: "Lower setup friction can make the category easier for first-time consumers to adopt.", verificationRisk: "Edge accuracy, obstacle recognition and performance under changing light need careful validation.", image: "/images/sourcing/lawn-robots/rm-01-compact-vision.png", imageAlt: "Concept compact vision robotic lawn mower on a small residential lawn" },
+      { id: "RM-02", name: "RTK Platform", positioning: "A boundary-wire-free platform direction for medium and larger residential lawns.", lawnContext: "Medium to large open lawns", markets: ["United States", "Europe"], channels: ["Specialist retail", "Direct-to-consumer"], technologyDirection: "RTK positioning with supporting sensors", opportunity: "Boundary-free setup supports a stronger premium story and faster installation.", verificationRisk: "Signal stability, tree cover, map recovery and installation workflow must be tested in the target market.", image: "/images/sourcing/lawn-robots/rm-02-rtk-platform.png", imageAlt: "Concept RTK robotic lawn mower on a large residential lawn" },
+      { id: "RM-03", name: "AWD Slope", positioning: "A higher-traction direction for buyers targeting slopes and more difficult terrain.", lawnContext: "Slopes, uneven ground and complex gardens", markets: ["Europe", "North America"], channels: ["Premium dealers", "Specialist ecommerce"], technologyDirection: "Four-wheel-drive mobility platform", opportunity: "Terrain capability creates a clearer reason to buy than another general-purpose mower.", verificationRisk: "Traction claims, rollover safety, turf damage, cleaning and long-term drivetrain reliability require evidence.", image: "/images/sourcing/lawn-robots/rm-03-awd-slope.png", imageAlt: "Concept all-wheel-drive robotic lawn mower on sloped terrain" },
+      { id: "RM-04", name: "Value Wire", positioning: "A mature boundary-wire direction for buyers prioritizing stability and controlled cost.", lawnContext: "Simple residential lawns with planned installation", markets: ["Europe", "Global value markets"], channels: ["Mass retail", "Private label"], technologyDirection: "Established boundary-wire platform", opportunity: "A proven architecture can reduce product and service complexity for entry programs.", verificationRisk: "Installation burden, app quality, repairability and margin after service costs must still be assessed.", image: "/images/sourcing/lawn-robots/rm-04-value-wire.png", imageAlt: "Concept value boundary-wire robotic lawn mower in a suburban garden" },
+      { id: "RM-05", name: "Large-Area Professional", positioning: "A professional platform direction for estates, facilities and specialist dealer networks.", lawnContext: "Large properties and professionally maintained grounds", markets: ["United States", "Europe"], channels: ["Professional dealers", "Project sales"], technologyDirection: "Large-area multi-sensor platform", opportunity: "Professional use cases can support higher value when service and uptime are part of the offer.", verificationRisk: "Coverage efficiency, fleet oversight, safety, parts supply and dealer service capability matter more than specifications alone.", image: "/images/sourcing/lawn-robots/rm-05-large-area-professional.png", imageAlt: "Concept professional robotic lawn mower on a large estate lawn" },
+      { id: "RM-06", name: "Compact Retail", positioning: "A shelf-friendly direction for brands testing robotic mowing through retail and ecommerce.", lawnContext: "Compact lawns and first-time robot mower households", markets: ["UK", "Europe", "Selected urban markets"], channels: ["Retail", "Ecommerce"], technologyDirection: "Compact consumer platform", opportunity: "Approachable design and simpler category entry can help retailers test demand.", verificationRisk: "The product still needs credible mowing quality, setup simplicity and after-sales economics to avoid becoming a novelty.", image: "/images/sourcing/lawn-robots/rm-06-compact-retail.png", imageAlt: "Concept compact retail robotic lawn mower in a modern small garden" }
+    ]
   },
   "pool-robots": {
     slug: "pool-robots",

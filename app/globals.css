@@ -17975,3 +17975,32 @@ h3 {
 .sourcing-product-columns li { margin: 12px 0; }
 .sourcing-product-cta { max-width: 850px; text-align: center; }
 @media (max-width: 760px) { .sourcing-product-hero-grid, .sourcing-product-columns { grid-template-columns: 1fr; } .sourcing-product-grid { grid-template-columns: 1fr; } .sourcing-product-hero { padding: 64px 0; } }
+.sourcing-selector-section { background: #eef3f6; }
+.sourcing-selector-section > .sourcing-v3-container > h2 { max-width: 780px; }
+.sourcing-selector-disclaimer { color: #52657a; margin-top: 8px; }
+.sourcing-selector { display: grid; grid-template-columns: minmax(0, 4fr) minmax(170px, 1fr); grid-template-areas: "image thumbs" "copy thumbs"; align-items: start; gap: 0 18px; margin-top: 30px; }
+.sourcing-selector-image { grid-area: image; position: relative; aspect-ratio: 3 / 2; overflow: hidden; border: 1px solid #d7e0e7; border-radius: 18px 18px 0 0; background: #dce5e0; }
+.sourcing-selector-image img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.sourcing-selector-image > span { position: absolute; top: 16px; left: 16px; padding: 7px 11px; border-radius: 999px; background: rgba(255,255,255,.92); color: #0f2747; font-weight: 800; }
+.sourcing-selector-copy { grid-area: copy; padding: 26px; border: 1px solid #d7e0e7; border-top: 0; border-radius: 0 0 18px 18px; background: #fff; }
+.sourcing-selector-copy h3 { margin: 6px 0 10px; font-size: clamp(1.8rem, 3vw, 2.8rem); }
+.sourcing-selector-id { color: #2678d4; font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.sourcing-selector-positioning { max-width: 800px; font-size: 1.05rem; line-height: 1.7; }
+.sourcing-selector-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+.sourcing-selector-tags span { padding: 7px 10px; border-radius: 999px; background: #edf3f8; color: #30475e; font-size: .78rem; }
+.sourcing-selector-facts { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; margin: 22px 0; }
+.sourcing-selector-facts strong { color: #0f2747; }
+.sourcing-selector-facts p { margin: 6px 0 0; line-height: 1.65; }
+.sourcing-selector-thumbnails { grid-area: thumbs; display: flex; flex-direction: column; gap: 10px; max-height: 780px; overflow-y: auto; padding-right: 3px; }
+.sourcing-selector-thumbnails button { width: 100%; padding: 8px; border: 1px solid #d5dee6; border-radius: 12px; background: #fff; text-align: left; cursor: pointer; }
+.sourcing-selector-thumbnails button[aria-pressed="true"] { border: 2px solid #287bd6; background: #f1f7fd; }
+.sourcing-selector-thumbnails img { width: 100%; aspect-ratio: 3 / 2; object-fit: contain; display: block; border-radius: 7px; background: #dce5e0; }
+.sourcing-selector-thumbnails strong, .sourcing-selector-thumbnails span { display: block; margin-top: 5px; color: #0f2747; }
+.sourcing-selector-thumbnails span { margin-top: 1px; font-size: .76rem; color: #596c7e; }
+@media (max-width: 760px) {
+  .sourcing-selector { grid-template-columns: 1fr; grid-template-areas: "image" "thumbs" "copy"; gap: 0; }
+  .sourcing-selector-thumbnails { flex-direction: row; overflow-x: auto; overflow-y: hidden; max-height: none; padding-bottom: 6px; }
+  .sourcing-selector-thumbnails button { flex: 0 0 108px; }
+  .sourcing-selector-facts { grid-template-columns: 1fr; }
+  .sourcing-selector-copy { padding: 20px; }
+}

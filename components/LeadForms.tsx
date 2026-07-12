@@ -55,7 +55,8 @@ export function TallyButton({
   conversionGroup,
   ctaLocation = "legacy_unmapped",
   inquiryIntent,
-  productCategory
+  productCategory,
+  productId
 }: {
   className?: string;
   children: ReactNode;
@@ -65,6 +66,7 @@ export function TallyButton({
   ctaLocation?: string;
   inquiryIntent?: string;
   productCategory?: string;
+  productId?: string;
 }) {
   const buttonRef = useRef<HTMLButtonElement>(null);
   const viewed = useRef(false);
@@ -77,7 +79,8 @@ export function TallyButton({
       source_page: window.location.pathname,
       cta_location: ctaLocation,
       inquiry_intent: inquiryIntent,
-      product_category: productCategory
+      product_category: productCategory,
+      product_id: productId
     };
   }
 

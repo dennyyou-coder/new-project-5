@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
+import { LawnRobotProductSelector } from "@/components/LawnRobotProductSelector";
 import { getInsights } from "@/lib/content";
 import type { SourcingProduct } from "@/lib/sourcingProducts";
 
@@ -35,6 +36,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
           <img src={product.image} alt={product.imageAlt} />
         </div>
       </section>
+      {product.directions ? <LawnRobotProductSelector products={product.directions} /> : null}
       <section className="section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Buyer Challenges</p><h2>Why supplier lists are not enough</h2><div className="sourcing-product-grid">{product.buyerProblems.map((item) => <article key={item}><p>{item}</p></article>)}</div></div></section>
       <section className="section section-muted"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">How We Help</p><h2>Support from product direction to execution</h2><div className="sourcing-product-grid">{product.services.map((item) => <article key={item}><h3>{item}</h3><p>Focused support shaped around your market, product stage and supplier requirements.</p></article>)}</div></div></section>
       <section className="section"><div className="sourcing-v3-container sourcing-product-columns"><div><p className="sourcing-v3-kicker">Supplier Evaluation</p><h2>What buyers should verify</h2><ul>{product.evaluationPoints.map((item) => <li key={item}>{item}</li>)}</ul></div><div><p className="sourcing-v3-kicker">Market Preparation</p><h2>One product does not fit every market</h2>{product.marketNotes.map((item) => <p key={item}>{item}</p>)}</div></div></section>

@@ -12,6 +12,7 @@ export type LeadEventPayload = {
   cta_location: string;
   inquiry_intent?: string;
   product_category?: string;
+  product_id?: string;
   utm_source?: string;
   utm_medium?: string;
   utm_campaign?: string;
