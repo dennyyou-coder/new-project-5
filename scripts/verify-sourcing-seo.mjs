@@ -142,6 +142,17 @@ for (const productId of ["RM-01", "RM-02", "RM-03", "RM-04", "RM-05", "RM-06"]) 
 
 const sourcingPageSource = fs.readFileSync(path.join(process.cwd(), "components", "SourcingProductPage.tsx"), "utf8");
 const sourcingStyles = fs.readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
+for (const value of [
+  "sourcing-lawn-faq-visual",
+  "/images/sourcing/lawn-robots/rm-03-awd-slope.png",
+  "All-wheel-drive robotic mower being evaluated on difficult residential terrain"
+]) {
+  requireValue(sourcingPageSource.includes(value), `lawn FAQ visual: missing ${value}`);
+}
+requireValue(
+  sourcingStyles.includes(".sourcing-lawn-page .sourcing-lawn-faq-visual"),
+  "lawn FAQ visual: style is not lawn scoped"
+);
 requireValue(
   sourcingPageSource.includes('isLawnRobotPage ? " sourcing-lawn-page" : ""'),
   "visual system: missing lawn-only page scope"

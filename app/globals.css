@@ -18250,6 +18250,17 @@ h3 {
 .sourcing-lawn-page .sourcing-lawn-framework-grid li { padding: 11px 0; }
 .sourcing-lawn-page .sourcing-lawn-faq-section { background: var(--lawn-surface); }
 .sourcing-lawn-page .sourcing-lawn-faq { gap: 86px; }
+.sourcing-lawn-page .sourcing-lawn-faq-visual {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin-top: 30px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--lawn-rule);
+  border-radius: 10px;
+  background: #dce5e0;
+}
 .sourcing-lawn-page .sourcing-lawn-faq details { border-color: #bfcdd7; }
 .sourcing-lawn-page .sourcing-lawn-faq summary { padding-block: 21px; }
 .sourcing-lawn-page .sourcing-lawn-faq details[open] summary { color: var(--lawn-accent); }
@@ -18308,6 +18319,7 @@ h3 {
   .sourcing-lawn-page .sourcing-lawn-framework-grid h3 { min-height: 0; }
   .sourcing-lawn-page .sourcing-lawn-faq { gap: 34px; }
   .sourcing-lawn-page .sourcing-lawn-final-section { padding-block: 60px; }
+  .sourcing-lawn-page .sourcing-lawn-faq-visual { margin-top: 22px; }
   .sourcing-lawn-page .sourcing-lawn-final-actions { padding: 26px 0 0; border-top: 1px solid rgba(255,255,255,.25); border-left: 0; }
 }
 
