@@ -1,7 +1,12 @@
 "use client";
 
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 import { TALLY_FORMS, type TallyFormKey } from "@/lib/tallyForms";
+import {
+  buildTrackedFormUrl,
+  trackLeadEvent,
+  type LeadEventPayload
+} from "@/lib/leadTracking";
 
 const popupWidth = 620;
 
@@ -17,6 +22,9 @@ declare global {
             text: string;
             animation: string;
           };
+          hiddenFields?: Record<string, string>;
+          onOpen?: () => void;
+          onSubmit?: () => void;
         }
       ) => void;
     };
@@ -43,31 +51,78 @@ export function TallyButton({
   className = "button",
   children,
   form,
-  onOpen
+  onOpen,
+  conversionGroup,
+  ctaLocation = "legacy_unmapped",
+  inquiryIntent,
+  productCategory
 }: {
   className?: string;
   children: ReactNode;
   form: TallyFormKey;
   onOpen?: () => void;
+  conversionGroup?: LeadEventPayload["conversion_group"];
+  ctaLocation?: string;
+  inquiryIntent?: string;
+  productCategory?: string;
 }) {
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const viewed = useRef(false);
+  const group = conversionGroup || form;
+
+  function eventPayload(): LeadEventPayload {
+    return {
+      conversion_group: group,
+      form_type: form,
+      source_page: window.location.pathname,
+      cta_location: ctaLocation,
+      inquiry_intent: inquiryIntent,
+      product_category: productCategory
+    };
+  }
+
+  useEffect(() => {
+    const button = buttonRef.current;
+    if (!button || viewed.current) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting || viewed.current) return;
+      viewed.current = true;
+      trackLeadEvent("cta_view", eventPayload());
+      observer.disconnect();
+    });
+    observer.observe(button);
+    return () => observer.disconnect();
+  }, []);
+
   function openTallyForm() {
     const tallyForm = TALLY_FORMS[form];
+    const payload = eventPayload();
 
     onOpen?.();
+    trackLeadEvent("cta_click", payload);
 
     if (window.Tally?.openPopup) {
       window.Tally.openPopup(tallyForm.id, {
         layout: "modal",
-        width: popupWidth
+        width: popupWidth,
+        hiddenFields: Object.fromEntries(
+          Object.entries(payload).filter((entry): entry is [string, string] => Boolean(entry[1]))
+        ),
+        onOpen: () => trackLeadEvent("form_open", payload),
+        onSubmit: () => {
+          trackLeadEvent("form_submit", payload);
+          trackLeadEvent("form_success", payload);
+        }
       });
       return;
     }
 
-    window.open(tallyForm.url, "_blank", "noopener,noreferrer");
+    trackLeadEvent("form_open", payload);
+    window.open(buildTrackedFormUrl(tallyForm.url, payload), "_blank", "noopener,noreferrer");
   }
 
   return (
-    <button className={className} onClick={openTallyForm} type="button">
+    <button ref={buttonRef} className={className} onClick={openTallyForm} type="button">
       {children}
     </button>
   );

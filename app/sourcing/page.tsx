@@ -83,28 +83,28 @@ const productOpportunities: {
   {
     title: "Floor Washers",
     description: "Still Early Outside China.",
-    href: "/sourcing/floor-washers",
+    href: "/sourcing#start-a-sourcing-inquiry",
     icon: "wind",
     image: "/images/sourcing/floor-washers.png"
   },
   {
     title: "Robotic Vacuums",
     description: "The Industry Is Entering A New Cycle.",
-    href: "/sourcing/robotic-vacuums",
+    href: "/sourcing#start-a-sourcing-inquiry",
     icon: "target",
     image: "/images/sourcing/robotic-vacuums.png"
   },
   {
     title: "Commercial Cleaning",
     description: "Automation Is Just Beginning.",
-    href: "/sourcing/commercial-cleaning",
+    href: "/sourcing#start-a-sourcing-inquiry",
     icon: "building",
     image: "/images/sourcing/commercial-cleaning.png"
   },
   {
     title: "Vacuum Cleaners",
     description: "A Mature Market Facing New Disruption.",
-    href: "/sourcing/vacuum-cleaners",
+    href: "/sourcing#start-a-sourcing-inquiry",
     icon: "layers",
     image: "/images/sourcing/vacuum-cleaners.png"
   }
@@ -447,7 +447,7 @@ export default function SourcingPage() {
         </div>
       </section>
 
-      <section className="section-action sourcing-v3-cta">
+      <section className="section-action sourcing-v3-cta" id="start-a-sourcing-inquiry">
         <div className="sourcing-v3-container">
           <p className="sourcing-v3-kicker">Next Step</p>
           <div className="sourcing-v3-cta-head">
