@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sourcing",
     "/sourcing/lawn-robots",
     "/sourcing/pool-robots",
+    "/sourcing/floor-washers",
     "/reports",
     "/world-clean-expo",
     "/about",

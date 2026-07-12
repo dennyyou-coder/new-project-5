@@ -3,9 +3,8 @@ import path from "node:path";
 
 const baseUrl = process.env.BASE_URL || "http://localhost:3000";
 const failures = [];
-const liveRoutes = ["/sourcing/lawn-robots", "/sourcing/pool-robots"];
+const liveRoutes = ["/sourcing/lawn-robots", "/sourcing/pool-robots", "/sourcing/floor-washers"];
 const forbiddenRoutes = [
-  "/sourcing/floor-washers",
   "/sourcing/robotic-vacuums",
   "/sourcing/commercial-cleaning",
   "/sourcing/vacuum-cleaners"
@@ -33,6 +32,7 @@ for (const route of liveRoutes) {
 
 const lawn = await readPage("/sourcing/lawn-robots");
 const pool = await readPage("/sourcing/pool-robots");
+const floor = await readPage("/sourcing/floor-washers");
 for (const value of [
   "Choose the Market Opportunity Before You Choose the Factory",
   "Explore the Product Opportunities",
@@ -151,6 +151,22 @@ for (const value of poolLandingSections) {
 requireValue((pool.html.match(/<details>/g) || []).length === 10, "/sourcing/pool-robots: expected ten collapsed industry FAQs");
 requireValue(!/<details open/.test(pool.html), "/sourcing/pool-robots: FAQ should be collapsed on initial load");
 
+for (const value of [
+  "Built for Buyers Deciding Where to Play in Hard Floor Care",
+  "Six Product Platforms. Six Different Market Opportunities.",
+  "Where the Six Product Platforms Compete",
+  "Which Channels Fit Each Product Platform?",
+  "Three Conditions That Decide Whether the Opportunity Can Scale",
+  "Four Decisions Before You Back a Platform",
+  "Turn a Market Opportunity Into a Product Brief",
+  "Evaluate My Product Opportunity",
+  "Related Intelligence"
+]) {
+  requireValue(floor.html.includes(value), `/sourcing/floor-washers: missing full landing section ${value}`);
+}
+requireValue((floor.html.match(/<details>/g) || []).length === 9, "/sourcing/floor-washers: expected nine collapsed industry FAQs");
+requireValue(!/<details open/.test(floor.html), "/sourcing/floor-washers: FAQ should be collapsed on initial load");
+
 const decisionVisualSource = fs.existsSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"))
   ? fs.readFileSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"), "utf8")
   : "";
@@ -227,6 +243,7 @@ for (const parameter of ["conversion_group", "form_type", "source_page", "cta_lo
 const insightDirectory = path.join(process.cwd(), "content", "insights");
 const insightFiles = fs.readdirSync(insightDirectory).filter((file) => file.endsWith(".mdx"));
 for (const route of liveRoutes) {
+  if (route === "/sourcing/floor-washers") continue;
   const linkSources = insightFiles.filter((file) => fs.readFileSync(path.join(insightDirectory, file), "utf8").includes(`](${route})`));
   requireValue(linkSources.length >= 3, `${route}: expected links from at least 3 articles, received ${linkSources.length}`);
 }

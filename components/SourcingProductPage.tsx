@@ -3,6 +3,7 @@ import { TallyButton } from "@/components/LeadForms";
 import { LawnRobotProductSelector } from "@/components/LawnRobotProductSelector";
 import { LawnRobotChannelMatrix, LawnRobotEvidenceFlow, LawnRobotOpportunityLandscape, LawnRobotSuccessConditions } from "@/components/LawnRobotDecisionVisuals";
 import { PoolRobotLanding } from "@/components/PoolRobotLanding";
+import { FloorWasherLanding } from "@/components/FloorWasherLanding";
 import { getInsights } from "@/lib/content";
 import type { SourcingProduct } from "@/lib/sourcingProducts";
 
@@ -10,6 +11,7 @@ const siteUrl = "https://worldcleanbiz.com";
 
 export function SourcingProductPage({ product }: { product: SourcingProduct }) {
   if (product.slug === "pool-robots") return <PoolRobotLanding product={product} />;
+  if (product.slug === "floor-washers") return <FloorWasherLanding product={product} />;
   const pageUrl = `${siteUrl}/sourcing/${product.slug}`;
   const isLawnRobotPage = Boolean(product.directions);
   const articles = getInsights();

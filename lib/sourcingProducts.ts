@@ -1,5 +1,5 @@
 export type ProductDirection = {
-  id: "RM-01" | "RM-02" | "RM-03" | "RM-04" | "RM-05" | "RM-06";
+  id: string;
   name: string;
   positioning: string;
   lawnContext: string;
@@ -13,7 +13,7 @@ export type ProductDirection = {
 };
 
 export type SourcingProduct = {
-  slug: "lawn-robots" | "pool-robots";
+  slug: "lawn-robots" | "pool-robots" | "floor-washers";
   productCategory: string;
   title: string;
   metaDescription: string;
@@ -30,6 +30,29 @@ export type SourcingProduct = {
 };
 
 export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> = {
+  "floor-washers": {
+    slug: "floor-washers",
+    productCategory: "hard_floor_washer",
+    title: "Hard Floor Washer Manufacturers & Sourcing in China",
+    metaDescription: "Evaluate hard floor washer manufacturers in China with support for product direction, supplier screening, sampling, quality-risk review and execution.",
+    eyebrow: "Hard Floor Washer Sourcing",
+    intro: "Hard floor washers are expanding beyond their early China-led adoption, but cleaning performance, self-cleaning, battery behaviour, leakage control and after-sales cost determine whether a product can scale in a target channel.",
+    buyerProblems: ["Similar specifications can hide major real-world cleaning differences", "Battery, dirty-water and self-cleaning systems create warranty risk", "Retail and ecommerce need a simple ownership story, not a feature list", "Roller, tank and consumable economics can reshape the margin after launch"],
+    services: ["Category and product opportunity review", "Manufacturer discovery and capability screening", "Specification, sample and differentiation review", "Quality-risk and execution support before production"],
+    evaluationPoints: ["Wet cleaning, pickup and edge performance", "Self-cleaning, drying and odor-control behaviour", "Battery, water tank, roller and leakage reliability", "Testing depth and production consistency", "Consumables, warranty and replacement-parts readiness"],
+    marketNotes: ["North American buyers need a clear use case against mops, vacuums and established floorcare routines.", "European and UK launches need channel-specific positioning, compliance and service preparation.", "Premium positioning depends on ownership convenience and durable performance, not the number of cleaning modes."],
+    relatedArticleSlugs: ["floor-washer-manufacturers-china", "story-of-hard-floor-washers", "laifen-hard-floor-washer-entry-strategy"],
+    image: "/images/sourcing/floor-washers/fw-02-cordless-premium-concept.png",
+    imageAlt: "Illustrative cordless hard floor washer for product and supplier evaluation",
+    directions: [
+      { id: "FW-01", name: "Retail Wet-Clean Starter", positioning: "A clear, approachable platform for first-time wet-cleaning buyers and retailers opening the category.", lawnContext: "Everyday kitchens and compact homes", markets: ["Europe", "North America"], channels: ["Retail", "Ecommerce"], technologyDirection: "Corded or entry cordless roller platform", opportunity: "A focused first-use story can make the category easier to explain than a broad premium feature list.", verificationRisk: "Verify pickup, streaking, tank handling, roller care and return economics with normal household messes.", image: "/images/sourcing/floor-washers/fw-01-corded-kitchen-concept.png", imageAlt: "Illustrative hard floor washer for a bright residential kitchen" },
+      { id: "FW-02", name: "Cordless Premium Platform", positioning: "A higher-value cordless route where mobility, edge cleaning and low-friction ownership justify a trade-up.", lawnContext: "Multi-room homes and premium floorcare", markets: ["United States", "Europe"], channels: ["Specialist retail", "Direct-to-consumer"], technologyDirection: "Cordless roller washer with dock", opportunity: "Premium pricing becomes credible when the product removes real cleaning and maintenance friction.", verificationRisk: "Test runtime under wet load, edge reach, tank seals, battery ageing and cleaning performance across floor types.", image: "/images/sourcing/floor-washers/fw-02-cordless-premium-concept.png", imageAlt: "Illustrative premium cordless hard floor washer with charging dock" },
+      { id: "FW-03", name: "Deep-Clean Design Platform", positioning: "A design-led platform for buyers who need visible cleaning performance in premium residential channels.", lawnContext: "Polished tile and finished hard floors", markets: ["Europe", "Middle East"], channels: ["Specialist dealer", "Premium retail"], technologyDirection: "High-visibility roller and water-control system", opportunity: "A premium product can win when results, handling and product design create a visible reason to choose it.", verificationRisk: "Prove roller coverage, water dosing, marks after drying, noise, hygiene and serviceability—not just appearance.", image: "/images/sourcing/floor-washers/fw-03-premium-hallway-concept.png", imageAlt: "Illustrative premium hard floor washer on polished tile" },
+      { id: "FW-04", name: "Ecommerce Value Platform", positioning: "A concise online-first offer built around a clear mess, a visible result and manageable ownership expectations.", lawnContext: "Urban homes and frequent kitchen spills", markets: ["North America", "Europe"], channels: ["Ecommerce", "Private label"], technologyDirection: "Compact cordless value architecture", opportunity: "A narrow use case can lower the education burden while preserving a credible reason to buy online.", verificationRisk: "Verify packaging resilience, onboarding, customer support demand, replacement consumables and returns before volume.", image: "/images/sourcing/floor-washers/fw-04-ecommerce-spill-concept.png", imageAlt: "Illustrative compact hard floor washer cleaning a kitchen spill" },
+      { id: "FW-05", name: "Light-Commercial Service Platform", positioning: "A durable route for boutique hospitality and small professional environments where uptime and recovery matter.", lawnContext: "Hotels, clinics and high-use hard floors", markets: ["Europe", "Middle East", "North America"], channels: ["Professional / project sales", "Specialist dealer"], technologyDirection: "High-capacity recovery and service platform", opportunity: "Higher value is possible when the platform reduces manual steps and supports predictable service in high-use sites.", verificationRisk: "Verify duty cycle, recovery capacity, component durability, field repair and parts availability before scaling.", image: "/images/sourcing/floor-washers/fw-05-commercial-concept.png", imageAlt: "Illustrative professional hard floor washer in a hospitality service area" },
+      { id: "FW-06", name: "Self-Cleaning Convenience Platform", positioning: "A premium ownership platform built around cleaner maintenance, docking and repeat use after the sale.", lawnContext: "Convenience-led households", markets: ["United States", "Europe", "Asia-Pacific"], channels: ["Ecommerce", "Premium retail"], technologyDirection: "Self-cleaning and drying dock architecture", opportunity: "A stronger maintenance story can support repeat use and a premium position when it is genuinely reliable.", verificationRisk: "Test self-cleaning completion, drying hygiene, odour control, dock leakage, consumable wear and customer maintenance steps.", image: "/images/sourcing/floor-washers/fw-06-self-cleaning-dock-concept.png", imageAlt: "Illustrative cordless hard floor washer on a self-cleaning dock" }
+    ]
+  },
   "lawn-robots": {
     slug: "lawn-robots",
     productCategory: "robotic_lawn_mower",
