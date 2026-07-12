@@ -57,6 +57,34 @@ for (const value of ["Request Suppliers for", "Use My Own Product Brief", "Produ
   requireValue(selectorSource.includes(value), `selector: missing ${value}`);
 }
 
+const fullLandingSections = [
+  "Built for Buyers Developing or Expanding a Robotic Mower Range",
+  "Brands developing a new robotic mower line",
+  "Explore six robotic mower product directions.",
+  "Why a Supplier List Is Not Enough",
+  "Similar quotations can hide different product platforms",
+  "What You Receive Before Making a Supplier Decision",
+  "Product and supplier decisions reviewed by Denny",
+  "How the Sourcing Discussion Works",
+  "What We Look at Before Recommending the Next Step",
+  "Are the products shown verified factory models?",
+  "Turn Your Product Direction Into a Focused Supplier Search",
+  "Start My Sourcing Brief",
+  "Related Intelligence"
+];
+for (const value of fullLandingSections) {
+  requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing full landing section ${value}`);
+}
+const sectionPositions = fullLandingSections.map((value) => lawn.html.indexOf(value));
+requireValue(
+  sectionPositions.every((position, index) => index === 0 || position > sectionPositions[index - 1]),
+  "/sourcing/lawn-robots: full landing sections are out of order"
+);
+requireValue(
+  !pool.html.includes("Built for Buyers Developing or Expanding a Robotic Mower Range"),
+  "/sourcing/pool-robots: lawn buyer-fit content leaked"
+);
+
 const hub = await readPage("/sourcing");
 for (const route of forbiddenRoutes) {
   requireValue(!hub.html.includes(`href="${route}"`), `/sourcing: broken link remains ${route}`);
