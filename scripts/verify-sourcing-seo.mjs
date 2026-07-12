@@ -31,6 +31,32 @@ for (const route of liveRoutes) {
   requireValue(html.includes('"@type":"BreadcrumbList"'), `${route}: missing BreadcrumbList schema`);
 }
 
+const lawn = await readPage("/sourcing/lawn-robots");
+const pool = await readPage("/sourcing/pool-robots");
+for (const value of [
+  "Choose the Right Robotic Mower Platform Before You Choose a Supplier",
+  "Explore Product Options",
+  "I Already Have a Product Brief",
+  "Inside the cleaning industry since 2006",
+  "Product Direction Review",
+  "What happens after you share your brief"
+]) {
+  requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing ${value}`);
+}
+requireValue(
+  pool.html.includes("Robotic Pool Cleaner Manufacturers &amp; Sourcing in China"),
+  "/sourcing/pool-robots: shared page presentation changed"
+);
+requireValue(
+  !pool.html.includes("Choose the Right Robotic Mower Platform"),
+  "/sourcing/pool-robots: lawn-only conversion content leaked"
+);
+
+const selectorSource = fs.readFileSync(path.join(process.cwd(), "components", "LawnRobotProductSelector.tsx"), "utf8");
+for (const value of ["Request Suppliers for", "Use My Own Product Brief", "Product {selectedIndex + 1} of", "productId={selected.id}"]) {
+  requireValue(selectorSource.includes(value), `selector: missing ${value}`);
+}
+
 const hub = await readPage("/sourcing");
 for (const route of forbiddenRoutes) {
   requireValue(!hub.html.includes(`href="${route}"`), `/sourcing: broken link remains ${route}`);
