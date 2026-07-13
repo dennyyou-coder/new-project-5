@@ -3,10 +3,8 @@ import path from "node:path";
 
 const baseUrl = process.env.BASE_URL || "http://localhost:3000";
 const failures = [];
-const liveRoutes = ["/sourcing/lawn-robots", "/sourcing/pool-robots", "/sourcing/floor-washers", "/sourcing/commercial-cleaning"];
-const forbiddenRoutes = [
-  "/sourcing/vacuum-cleaners"
-];
+const liveRoutes = ["/sourcing/lawn-robots", "/sourcing/pool-robots", "/sourcing/floor-washers", "/sourcing/commercial-cleaning", "/sourcing/vacuum-cleaners"];
+const forbiddenRoutes = [];
 
 function requireValue(condition, message) {
   if (!condition) failures.push(message);
@@ -32,6 +30,7 @@ const lawn = await readPage("/sourcing/lawn-robots");
 const pool = await readPage("/sourcing/pool-robots");
 const floor = await readPage("/sourcing/floor-washers");
 const commercial = await readPage("/sourcing/commercial-cleaning");
+const vacuum = await readPage("/sourcing/vacuum-cleaners");
 for (const value of [
   "Choose the Market Opportunity Before You Choose the Factory",
   "Explore the Product Opportunities",
@@ -183,6 +182,23 @@ for (const value of [
 requireValue((commercial.html.match(/<details>/g) || []).length === 9, "/sourcing/commercial-cleaning: expected nine collapsed industry FAQs");
 requireValue(!/<details open/.test(commercial.html), "/sourcing/commercial-cleaning: FAQ should be collapsed on initial load");
 
+for (const value of [
+  "Choose the Market Opportunity Before You Choose the Factory",
+  "Built for Buyers Deciding Where to Play in Vacuum Cleaners",
+  "Six Product Platforms. Six Different Market Opportunities.",
+  "Where the Six Product Platforms Compete",
+  "Which Channels Fit Each Product Platform?",
+  "Three Conditions That Decide Whether the Opportunity Can Scale",
+  "Four Decisions Before You Back a Platform",
+  "Turn a Market Opportunity Into a Product Brief",
+  "Evaluate My Product Opportunity",
+  "Related Intelligence"
+]) {
+  requireValue(vacuum.html.includes(value), `/sourcing/vacuum-cleaners: missing full landing section ${value}`);
+}
+requireValue((vacuum.html.match(/<details>/g) || []).length === 9, "/sourcing/vacuum-cleaners: expected nine collapsed industry FAQs");
+requireValue(!/<details open/.test(vacuum.html), "/sourcing/vacuum-cleaners: FAQ should be collapsed on initial load");
+
 const decisionVisualSource = fs.existsSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"))
   ? fs.readFileSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"), "utf8")
   : "";
@@ -259,7 +275,7 @@ for (const parameter of ["conversion_group", "form_type", "source_page", "cta_lo
 const insightDirectory = path.join(process.cwd(), "content", "insights");
 const insightFiles = fs.readdirSync(insightDirectory).filter((file) => file.endsWith(".mdx"));
 for (const route of liveRoutes) {
-  if (["/sourcing/floor-washers", "/sourcing/robotic-vacuums", "/sourcing/commercial-cleaning"].includes(route)) continue;
+  if (["/sourcing/floor-washers", "/sourcing/robotic-vacuums", "/sourcing/commercial-cleaning", "/sourcing/vacuum-cleaners"].includes(route)) continue;
   const linkSources = insightFiles.filter((file) => fs.readFileSync(path.join(insightDirectory, file), "utf8").includes(`](${route})`));
   requireValue(linkSources.length >= 3, `${route}: expected links from at least 3 articles, received ${linkSources.length}`);
 }

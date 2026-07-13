@@ -13,7 +13,7 @@ export type ProductDirection = {
 };
 
 export type SourcingProduct = {
-  slug: "lawn-robots" | "pool-robots" | "floor-washers" | "robotic-vacuums" | "commercial-cleaning";
+  slug: "lawn-robots" | "pool-robots" | "floor-washers" | "robotic-vacuums" | "commercial-cleaning" | "vacuum-cleaners";
   productCategory: string;
   title: string;
   metaDescription: string;
@@ -30,6 +30,125 @@ export type SourcingProduct = {
 };
 
 export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> = {
+  "vacuum-cleaners": {
+    slug: "vacuum-cleaners",
+    productCategory: "vacuum_cleaner",
+    title: "Vacuum Cleaner Manufacturers & Sourcing in China",
+    metaDescription: "Evaluate vacuum cleaner manufacturers in China through product opportunity, cleaning proof, supplier capability and after-sales economics.",
+    eyebrow: "Vacuum Cleaner Sourcing",
+    intro: "Vacuum cleaners are separating into channel-specific platforms, from accessible cordless sticks and premium docked systems to pet uprights, compact handhelds, canisters and light-commercial backpack machines.",
+    buyerProblems: [
+      "Similar power claims can hide major pickup, filtration and battery differences",
+      "A product that looks convincing in a sample may create weak ownership economics",
+      "Retail, ecommerce and professional channels require different platform logic",
+      "Consumables, batteries, accessories and service determine long-term margin"
+    ],
+    services: [
+      "Category and product opportunity review",
+      "Manufacturer discovery and capability screening",
+      "Specification, sample and differentiation review",
+      "Quality-risk and execution support before production"
+    ],
+    evaluationPoints: [
+      "Pickup across hard floors, rugs and target debris",
+      "Airflow, filtration, sealing and dust disposal",
+      "Battery, motor, brush and thermal reliability",
+      "Ergonomics, noise and maintenance experience",
+      "Accessories, consumables, parts and warranty readiness"
+    ],
+    marketNotes: [
+      "A credible product platform starts with a cleaning problem and route to market, not a maximum suction figure.",
+      "Premium cordless value depends on ergonomics, maintenance and dependable ownership as much as peak performance.",
+      "Professional platforms require durable systems and service economics that consumer products are not designed to provide."
+    ],
+    relatedArticleSlugs: [
+      "cordless-vacuum-cleaner-oem-manufacturers-china",
+      "hidden-risks-in-cordless-vacuum-development",
+      "german-vacuum-brands-in-the-cordless-wave"
+    ],
+    image: "/images/sourcing/vacuum-cleaners/vc-02-premium-dock-concept.png",
+    imageAlt: "Illustrative premium cordless vacuum cleaner with an automated storage dock",
+    directions: [
+      {
+        id: "VC-01",
+        name: "Retail Cordless Starter",
+        positioning: "An approachable first cordless platform for everyday cleaning and broad retail adoption.",
+        lawnContext: "Apartments and everyday hard-floor cleaning",
+        markets: ["Europe", "North America"],
+        channels: ["Retail", "Ecommerce"],
+        technologyDirection: "Accessible cordless stick architecture",
+        opportunity: "A clear everyday-cleaning promise can open the category without the complexity and price of a flagship system.",
+        verificationRisk: "Verify pickup, usable runtime, balance, noise, bin emptying and return economics in ordinary homes.",
+        image: "/images/sourcing/vacuum-cleaners/vc-01-retail-cordless-concept.png",
+        imageAlt: "Illustrative cordless stick vacuum for an accessible residential retail platform"
+      },
+      {
+        id: "VC-02",
+        name: "Premium Whole-Home Platform",
+        positioning: "A higher-value cordless route where cleaning range, ergonomics and a dock support premium ownership.",
+        lawnContext: "Multi-room homes and premium floorcare",
+        markets: ["North America", "Europe"],
+        channels: ["Premium retail", "Specialist dealer"],
+        technologyDirection: "High-performance cordless stick with service dock",
+        opportunity: "Premium value becomes credible when the complete system reduces storage, charging and dust-disposal friction.",
+        verificationRisk: "Test sustained performance, thermal behaviour, dock reliability, accessory use, filtration sealing and service access.",
+        image: "/images/sourcing/vacuum-cleaners/vc-02-premium-dock-concept.png",
+        imageAlt: "Illustrative premium cordless vacuum cleaner with an automated storage dock"
+      },
+      {
+        id: "VC-03",
+        name: "Pet & Carpet Specialist",
+        positioning: "A problem-led upright platform for homes where hair handling and deep carpet pickup matter most.",
+        lawnContext: "Pet households and carpeted homes",
+        markets: ["North America", "United Kingdom"],
+        channels: ["Retail", "Specialist dealer"],
+        technologyDirection: "Powered-brush upright with sealed filtration",
+        opportunity: "Pet hair and carpet create a visible reason to choose a specialist platform rather than a generic cordless product.",
+        verificationRisk: "Prove hair pickup, brush anti-tangle, carpet movement, filtration, hose use and customer maintenance under repeated use.",
+        image: "/images/sourcing/vacuum-cleaners/vc-03-pet-carpet-upright-concept.png",
+        imageAlt: "Illustrative upright vacuum cleaner for pet hair and carpet cleaning"
+      },
+      {
+        id: "VC-04",
+        name: "Compact Handheld Platform",
+        positioning: "A focused quick-clean route for small messes, cars and ecommerce-led add-on purchases.",
+        lawnContext: "Cars, kitchens and quick cleaning",
+        markets: ["North America", "Europe"],
+        channels: ["Ecommerce", "Private label"],
+        technologyDirection: "Compact cordless handheld with charging base",
+        opportunity: "A narrow, instantly understood use case can reduce education and make online merchandising more efficient.",
+        verificationRisk: "Verify usable suction, runtime, charge time, accessory retention, filter care, packaging and support demand.",
+        image: "/images/sourcing/vacuum-cleaners/vc-04-handheld-ecommerce-concept.png",
+        imageAlt: "Illustrative compact handheld vacuum cleaner with charging base"
+      },
+      {
+        id: "VC-05",
+        name: "Canister Value Platform",
+        positioning: "A proven bagged or bagless format for buyers prioritizing filtration, reach and established European cleaning habits.",
+        lawnContext: "European apartments and mixed surfaces",
+        markets: ["Europe", "Middle East"],
+        channels: ["Retail", "Private label"],
+        technologyDirection: "Compact canister with hose and telescopic wand",
+        opportunity: "The canister format can still win where familiar ownership, filtration and floor-tool versatility matter more than cordless fashion.",
+        verificationRisk: "Test airflow under load, hose durability, wheel movement, bag or bin sealing, nozzle performance and consumable availability.",
+        image: "/images/sourcing/vacuum-cleaners/vc-05-canister-value-concept.png",
+        imageAlt: "Illustrative compact canister vacuum cleaner for European residential use"
+      },
+      {
+        id: "VC-06",
+        name: "Light-Commercial Backpack",
+        positioning: "A service-led platform for hospitality and contract cleaning where mobility and duty-cycle economics matter.",
+        lawnContext: "Hotels, offices and contract cleaning",
+        markets: ["North America", "Europe"],
+        channels: ["Professional dealer", "Project sales"],
+        technologyDirection: "Ergonomic backpack vacuum system",
+        opportunity: "A professional platform can create value through mobility and productive cleaning in spaces where consumer machines are inefficient.",
+        verificationRisk: "Verify harness ergonomics, airflow, noise, filtration, cable or battery duty cycle, durability, parts and field-service readiness.",
+        image: "/images/sourcing/vacuum-cleaners/vc-06-backpack-commercial-concept.png",
+        imageAlt: "Illustrative professional cleaner using a backpack vacuum in a hotel corridor"
+      }
+    ]
+  },
   "commercial-cleaning": {
     slug: "commercial-cleaning",
     productCategory: "commercial_cleaning_robot",
