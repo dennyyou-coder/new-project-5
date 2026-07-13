@@ -10,7 +10,8 @@
     "test:lead": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/leadTracking.test.mjs",
     "test:blog": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/blogConversion.test.mjs",
     "test:homepage": "node --test tests/homepageStructure.test.mjs",
-    "test:inquiry": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/inquiryConversion.test.mjs"
+    "test:inquiry": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/inquiryConversion.test.mjs",
+    "verify:sourcing-seo": "node scripts/verify-sourcing-seo.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

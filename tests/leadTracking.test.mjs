@@ -75,6 +75,7 @@ test("createLeadAttribution keeps source and UTM context", () => {
       utm_term: "",
       report_id: "",
       product_category: "",
+      product_id: "",
       inquiry_type: "",
       inquiry_intent: ""
     }
@@ -96,13 +97,14 @@ test("buildTallyUrl serializes hidden fields", () => {
     utm_term: "",
     report_id: "",
     product_category: "",
+    product_id: "",
     inquiry_type: "",
     inquiry_intent: ""
   });
 
   assert.equal(
     url,
-    "https://tally.so/r/abc123?form_type=newsletter&conversion_group=newsletter&conversion_value=0&source_page=%2F&cta_location=home_newsletter&language=en&utm_source=email&utm_medium=newsletter&utm_campaign=launch&utm_content=&utm_term=&report_id=&product_category=&inquiry_type=&inquiry_intent="
+    "https://tally.so/r/abc123?form_type=newsletter&conversion_group=newsletter&conversion_value=0&source_page=%2F&cta_location=home_newsletter&language=en&utm_source=email&utm_medium=newsletter&utm_campaign=launch&utm_content=&utm_term=&report_id=&product_category=&product_id=&inquiry_type=&inquiry_intent="
   );
 });
 
@@ -121,6 +123,7 @@ test("buildTallyUrl preserves existing parameters", () => {
     utm_term: "",
     report_id: "next-decade-cleaning-growth",
     product_category: "",
+    product_id: "",
     inquiry_type: "",
     inquiry_intent: ""
   });
@@ -135,15 +138,21 @@ test("createLeadAttribution keeps product and inquiry context", () => {
     sourcePage: "/sourcing",
     ctaLocation: "sourcing_category_pool_robots",
     productCategory: "pool_robots",
+    productId: "RM-03",
     inquiryType: "sourcing",
     search: "?utm_source=google"
   });
 
   assert.equal(result.product_category, "pool_robots");
+  assert.equal(result.product_id, "RM-03");
   assert.equal(result.inquiry_type, "sourcing");
   assert.match(
     buildTallyUrl("https://tally.so/r/test", result),
     /product_category=pool_robots/
+  );
+  assert.match(
+    buildTallyUrl("https://tally.so/r/test", result),
+    /product_id=RM-03/
   );
 });
 

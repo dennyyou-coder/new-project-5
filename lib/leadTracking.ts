@@ -56,6 +56,7 @@ export type LeadAttribution = {
   utm_term: string;
   report_id: string;
   product_category: string;
+  product_id: string;
   inquiry_type: string;
   inquiry_intent: string;
 };
@@ -68,6 +69,7 @@ type AttributionInput = {
   search?: string;
   reportId?: string;
   productCategory?: string;
+  productId?: string;
   inquiryType?: string;
   inquiryIntent?: string;
 };
@@ -103,6 +105,7 @@ export function createLeadAttribution({
   search = "",
   reportId = "",
   productCategory = "",
+  productId = "",
   inquiryType = "",
   inquiryIntent = ""
 }: AttributionInput): LeadAttribution {
@@ -122,6 +125,7 @@ export function createLeadAttribution({
     utm_term: params.get("utm_term") || "",
     report_id: reportId,
     product_category: productCategory,
+    product_id: productId,
     inquiry_type: inquiryType,
     inquiry_intent: inquiryIntent
   };

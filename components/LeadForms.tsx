@@ -9,6 +9,7 @@ import {
   createLeadAttribution,
   getConversionGroup,
   trackLeadEvent,
+  type ConversionGroup,
   type LeadAttribution
 } from "@/lib/leadTracking";
 
@@ -80,6 +81,7 @@ export function TallyButton({
   ctaLocation,
   reportId,
   productCategory,
+  productId,
   inquiryType,
   inquiryIntent,
   eventContext,
@@ -90,7 +92,9 @@ export function TallyButton({
   form: TallyFormKey;
   ctaLocation: string;
   reportId?: string;
+  conversionGroup?: ConversionGroup;
   productCategory?: string;
+  productId?: string;
   inquiryType?: string;
   inquiryIntent?: string;
   trackClick?: boolean;
@@ -129,6 +133,7 @@ export function TallyButton({
         search: window.location.search,
         reportId,
         productCategory,
+        productId,
         inquiryType,
         inquiryIntent
       });
@@ -156,6 +161,7 @@ export function TallyButton({
     inquiryIntent,
     inquiryType,
     productCategory,
+    productId,
     reportId,
     tallyForm.formType
   ]);
@@ -169,6 +175,7 @@ export function TallyButton({
       search: window.location.search,
       reportId,
       productCategory,
+      productId,
       inquiryType,
       inquiryIntent
     });
