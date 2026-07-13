@@ -3,7 +3,7 @@ import path from "node:path";
 
 const baseUrl = process.env.BASE_URL || "http://localhost:3000";
 const failures = [];
-const liveRoutes = ["/sourcing/lawn-robots", "/sourcing/pool-robots", "/sourcing/floor-washers", "/sourcing/commercial-cleaning", "/sourcing/vacuum-cleaners"];
+const liveRoutes = ["/sourcing/lawn-robots", "/sourcing/pool-robots", "/sourcing/floor-washers", "/sourcing/robotic-vacuums", "/sourcing/commercial-cleaning", "/sourcing/vacuum-cleaners"];
 const forbiddenRoutes = [];
 
 function requireValue(condition, message) {
@@ -29,6 +29,7 @@ for (const route of liveRoutes) {
 const lawn = await readPage("/sourcing/lawn-robots");
 const pool = await readPage("/sourcing/pool-robots");
 const floor = await readPage("/sourcing/floor-washers");
+const robot = await readPage("/sourcing/robotic-vacuums");
 const commercial = await readPage("/sourcing/commercial-cleaning");
 const vacuum = await readPage("/sourcing/vacuum-cleaners");
 for (const value of [
@@ -166,6 +167,26 @@ requireValue((floor.html.match(/<details>/g) || []).length === 9, "/sourcing/flo
 requireValue(!/<details open/.test(floor.html), "/sourcing/floor-washers: FAQ should be collapsed on initial load");
 
 for (const value of [
+  "Built for Buyers Deciding Where to Play in Robot Vacuums",
+  "Six Product Platforms. Six Different Market Opportunities.",
+  "Where the Six Product Platforms Compete",
+  "Which Channels Fit Each Product Platform?",
+  "Three Conditions That Decide Whether the Opportunity Can Scale",
+  "Industry judgment behind the product decision",
+  "Four Decisions Before You Back a Platform",
+  "Turn a Market Opportunity Into a Product Brief",
+  "Evaluate My Product Opportunity",
+  "Related Intelligence"
+]) {
+  requireValue(robot.html.includes(value), `/sourcing/robotic-vacuums: missing full landing section ${value}`);
+}
+requireValue((robot.html.match(/<details>/g) || []).length === 9, "/sourcing/robotic-vacuums: expected nine collapsed industry FAQs");
+requireValue(!/<details open/.test(robot.html), "/sourcing/robotic-vacuums: FAQ should be collapsed on initial load");
+for (const slug of ["robot-vacuum-cleaners-from-china", "roborock-at-a-crossroads", "roborock-channel-shift-online-to-offline-experience"]) {
+  requireValue(robot.html.includes(`href="/blog/${slug}"`), `/sourcing/robotic-vacuums: missing related article ${slug}`);
+}
+
+for (const value of [
   "Choose the Facility Opportunity Before You Choose the Robot",
   "Built for Buyers Deciding Where to Deploy Commercial Cleaning Robots",
   "Six Product Platforms. Six Different Market Opportunities.",
@@ -257,6 +278,9 @@ for (const className of [
 }
 
 const hub = await readPage("/sourcing");
+for (const route of liveRoutes) {
+  requireValue(hub.html.includes(`href="${route}"`), `/sourcing: missing category link ${route}`);
+}
 for (const route of forbiddenRoutes) {
   requireValue(!hub.html.includes(`href="${route}"`), `/sourcing: broken link remains ${route}`);
 }
@@ -274,8 +298,11 @@ for (const parameter of ["conversion_group", "form_type", "source_page", "cta_lo
 
 const insightDirectory = path.join(process.cwd(), "content", "insights");
 const insightFiles = fs.readdirSync(insightDirectory).filter((file) => file.endsWith(".mdx"));
+const obsoleteRobotVacuumSlug = "how-to-source-robot-vacuum-cleaners-from-china";
+const obsoleteRobotVacuumSources = ["lib/sourcingProducts.ts", ...insightFiles.map((file) => `content/insights/${file}`)]
+  .filter((file) => fs.readFileSync(path.join(process.cwd(), file), "utf8").includes(obsoleteRobotVacuumSlug));
+requireValue(obsoleteRobotVacuumSources.length === 0, `obsolete robot vacuum link remains in ${obsoleteRobotVacuumSources.join(", ")}`);
 for (const route of liveRoutes) {
-  if (["/sourcing/floor-washers", "/sourcing/robotic-vacuums", "/sourcing/commercial-cleaning", "/sourcing/vacuum-cleaners"].includes(route)) continue;
   const linkSources = insightFiles.filter((file) => fs.readFileSync(path.join(insightDirectory, file), "utf8").includes(`](${route})`));
   requireValue(linkSources.length >= 3, `${route}: expected links from at least 3 articles, received ${linkSources.length}`);
 }

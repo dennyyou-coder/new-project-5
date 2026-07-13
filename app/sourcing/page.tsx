@@ -83,28 +83,28 @@ const productOpportunities: {
   {
     title: "Floor Washers",
     description: "Still Early Outside China.",
-    href: "/sourcing#start-a-sourcing-inquiry",
+    href: "/sourcing/floor-washers",
     icon: "wind",
     image: "/images/sourcing/floor-washers.png"
   },
   {
     title: "Robotic Vacuums",
     description: "The Industry Is Entering A New Cycle.",
-    href: "/sourcing#start-a-sourcing-inquiry",
+    href: "/sourcing/robotic-vacuums",
     icon: "target",
     image: "/images/sourcing/robotic-vacuums.png"
   },
   {
     title: "Commercial Cleaning",
     description: "Automation Is Just Beginning.",
-    href: "/sourcing#start-a-sourcing-inquiry",
+    href: "/sourcing/commercial-cleaning",
     icon: "building",
     image: "/images/sourcing/commercial-cleaning.png"
   },
   {
     title: "Vacuum Cleaners",
     description: "A Mature Market Facing New Disruption.",
-    href: "/sourcing#start-a-sourcing-inquiry",
+    href: "/sourcing/vacuum-cleaners",
     icon: "layers",
     image: "/images/sourcing/vacuum-cleaners.png"
   }

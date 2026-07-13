@@ -183,7 +183,7 @@ export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> 
     services: ["Category and product opportunity review", "Manufacturer discovery and capability screening", "Specification, sample and differentiation review", "Quality-risk and execution support before production"],
     evaluationPoints: ["Navigation, obstacle avoidance and map recovery", "Pickup, mopping and carpet-treatment performance", "Dock systems, water management and hygiene", "App, firmware and cloud-service readiness", "Testing depth, parts and warranty execution"],
     marketNotes: ["North American launches need a clear position across households, pets, carpets and retail price bands.", "European buyers need product, privacy, compliance and service preparation that fits their chosen channel.", "Premium positioning depends on dependable automated ownership—not only a larger dock or a longer feature list."],
-    relatedArticleSlugs: ["how-to-source-robot-vacuum-cleaners-from-china", "roborock-at-a-crossroads", "roborock-channel-shift-online-to-offline-experience"],
+    relatedArticleSlugs: ["robot-vacuum-cleaners-from-china", "roborock-at-a-crossroads", "roborock-channel-shift-online-to-offline-experience"],
     image: "/images/sourcing/robotic-vacuums/rv-02-premium-dock-concept.png",
     imageAlt: "Illustrative premium robot vacuum and self-cleaning dock for product evaluation",
     directions: [
