@@ -243,7 +243,7 @@ const dennyPhotos = [
 
 export default function SourcingPage() {
   return (
-    <main className="sourcing-v3-page">
+    <div className="sourcing-v3-page">
       <section className="section-hero sourcing-v3-hero">
         <div className="sourcing-v3-container">
           <div className="sourcing-v3-hero-copy">
@@ -479,6 +479,6 @@ export default function SourcingPage() {
           </TallyButton>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

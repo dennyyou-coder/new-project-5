@@ -44,6 +44,7 @@ test("Sourcing links all six live product opportunity pages", () => {
 
   assert.match(sourcingSource, /productOpportunities\.map/);
   assert.match(sourcingSource, /<Link className="sourcing-v3-product-card" href=\{item\.href\}/);
+  assert.doesNotMatch(sourcingSource, /<main/);
   for (const route of expectedRoutes) {
     assert.match(sourcingSource, new RegExp(route.replaceAll("/", "\\/")));
   }
