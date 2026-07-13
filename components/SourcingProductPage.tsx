@@ -133,7 +133,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
             </div>
           </section>
 
-          <section className="section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Related Intelligence</p><h2>Research the category before choosing a supplier</h2><div className="sourcing-product-grid">{related.map((article) => <article key={article.slug}><h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div></div></section>
+          <section className="section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Related Intelligence</p><h2>Research the category before choosing a supplier</h2><div className="sourcing-product-grid">{related.map((article) => <article key={article.slug}><img className="sourcing-lawn-related-image" src={article.coverImage || "/images/sourcing/lawn-robots/rm-03-awd-slope.png"} alt={article.coverImage ? `Cover image for ${article.title}` : "Robotic lawn mower product platform under industry assessment"} /><h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis →</Link></article>)}</div></div></section>
         </>
       ) : (
         <>

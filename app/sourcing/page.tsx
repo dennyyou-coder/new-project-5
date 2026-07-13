@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { InlineIcon } from "@/components/Icon";
 import { TallyButton } from "@/components/LeadForms";
+import { SourcingOpportunityCard } from "@/components/SourcingOpportunityCard";
 import { SOURCING_CATEGORIES } from "@/lib/inquiryConversion";
 
 export const metadata: Metadata = {
@@ -106,7 +107,7 @@ export default function SourcingPage() {
         <div className="sourcing-opportunity-shell">
           <div className="sourcing-opportunity-heading"><p>Why This Market Matters Now</p><h2>The Cleaning Industry Is Entering A New Growth Cycle.</h2></div>
           <div className="sourcing-opportunity-market-story"><div className="sourcing-opportunity-market-number"><div><small>Today</small><strong>Approx. USD 40B+</strong></div><span aria-hidden="true">→</span><div><small>Over The Next Decade</small><strong>Toward USD 140B</strong></div></div><figure className="sourcing-opportunity-market-visual"><img src="/images/site-refresh/real/product-detail.webp" alt="Product technology selected for market evaluation" /><figcaption>Product categories are expanding faster than traditional sourcing cycles.</figcaption></figure></div>
-          <p className="sourcing-opportunity-estimate"><strong>World Clean Biz Industry Estimate.</strong> Based on less than RMB 300 billion today toward RMB 1 trillion over the next decade. Scope includes major global indoor and outdoor cleaning equipment categories; USD values are approximate.</p>
+          <p className="sourcing-opportunity-estimate"><strong>World Clean Biz Industry Estimate.</strong> This is a directional editorial estimate, not audited market data. The 2026 reference view frames major global indoor and outdoor cleaning equipment categories at less than RMB 300 billion today and toward RMB 1 trillion over approximately the next decade; USD values are approximate conversions.</p>
           <div className="sourcing-opportunity-driver-grid">{marketDrivers.map((item) => <article key={item.title}><span className="sourcing-opportunity-driver-icon"><InlineIcon name={item.icon} /></span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
         </div>
       </section>
@@ -142,7 +143,7 @@ export default function SourcingPage() {
       <section className="sourcing-opportunity-section sourcing-opportunity-categories" id="opportunity-areas">
         <div className="sourcing-opportunity-shell">
           <div className="sourcing-opportunity-heading"><p>Product Opportunity Areas</p><h2>Where The Next Opportunity Could Begin.</h2></div>
-          <div className="sourcing-opportunity-category-grid">{SOURCING_CATEGORIES.map((item) => <Link className="sourcing-opportunity-category-card" href={item.href} key={item.value}><span className="sourcing-opportunity-category-image"><img src={item.image} alt={`${item.title} opportunity area`} /></span><span className="sourcing-opportunity-category-copy"><span><InlineIcon name={item.icon} /><strong>{item.title}</strong></span><em>{item.description}</em><span className="sourcing-opportunity-category-cta">Explore This Opportunity</span></span></Link>)}</div>
+          <div className="sourcing-opportunity-category-grid">{SOURCING_CATEGORIES.map((item) => <SourcingOpportunityCard item={item} key={item.value} />)}</div>
           <p className="sourcing-opportunity-secondary-scope">We can also support relevant projects involving cleaning tools, consumables, chemicals, hygiene products, components and replacement parts.</p>
         </div>
       </section>

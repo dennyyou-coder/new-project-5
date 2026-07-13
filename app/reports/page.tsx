@@ -4,7 +4,8 @@ import { ReportsLeadForm, TallyReportButton } from "@/components/LeadForms";
 export const metadata: Metadata = {
   title: "Free Cleaning Industry Reports & Market Intelligence",
   description:
-    "Choose free World Clean Biz reports on cleaning markets, product categories and China supply chains and receive them by email."
+    "Choose free World Clean Biz reports on cleaning markets, product categories and China supply chains and receive them by email.",
+  alternates: { canonical: "/reports" }
 };
 
 const upcomingReports = [

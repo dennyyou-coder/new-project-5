@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
 import { TallyButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" }
+};
 
 const heroProducts = [
   { label: "Robot Vacuums", image: "/images/site-refresh/home/category-robot-vacuums.webp", alt: "Robot vacuum product category", text: "New functions, brands and channels continue to reshape floorcare." },

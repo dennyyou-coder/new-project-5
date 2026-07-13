@@ -11,6 +11,7 @@ const contactSource = await readFile(new URL("../app/contact/page.tsx", import.m
 const definitionSource = await readFile(new URL("../lib/inquiryConversion.ts", import.meta.url), "utf8");
 const globalStyles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
 const leadFormsSource = await readFile(new URL("../components/LeadForms.tsx", import.meta.url), "utf8");
+const opportunityCardSource = await readFile(new URL("../components/SourcingOpportunityCard.tsx", import.meta.url), "utf8");
 
 test("defines six unique tracked sourcing categories", () => {
   assert.equal(SOURCING_CATEGORIES.length, 6);
@@ -43,8 +44,9 @@ test("defines six unique tracked sourcing categories", () => {
 });
 
 test("Sourcing links all six live product opportunity pages without nested main", () => {
-  assert.match(sourcingSource, /<Link/);
-  assert.match(sourcingSource, /href=\{item\.href\}/);
+  assert.match(sourcingSource, /<SourcingOpportunityCard/);
+  assert.match(opportunityCardSource, /<Link/);
+  assert.match(opportunityCardSource, /href=\{item\.href\}/);
   assert.doesNotMatch(sourcingSource, /<main/);
 });
 
@@ -113,7 +115,7 @@ test("Sourcing presents the approved opportunity-led funnel", () => {
   assert.match(sourcingSource, /inquiryIntent="specific_product"/);
   assert.match(sourcingSource, /ctaLocation="sourcing_footer"/);
   assert.match(sourcingSource, /SOURCING_CATEGORIES\.map/);
-  assert.match(sourcingSource, /href=\{item\.href\}/);
+  assert.match(opportunityCardSource, /href=\{item\.href\}/);
   assert.match(sourcingSource, /Initial Response Within 8 Hours/);
   assert.match(sourcingSource, /1–2 Business Days/);
   assert.doesNotMatch(sourcingSource, /A Better Brief Creates A Better Search/);
@@ -168,7 +170,7 @@ test("all primary Sourcing conversion paths use visible blue buttons", () => {
   assert.doesNotMatch(sourcingSource, /TallyInlineEmbed/);
   assert.doesNotMatch(sourcingSource, /sourcing-opportunity-text-button/);
   assert.match(sourcingSource, /sourcing-opportunity-button-secondary/);
-  assert.match(sourcingSource, /sourcing-opportunity-category-cta/);
+  assert.match(opportunityCardSource, /sourcing-opportunity-category-cta/);
   assert.match(sourcingSource, /sourcing-opportunity-final-cta/);
 });
 

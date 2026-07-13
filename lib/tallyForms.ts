@@ -26,14 +26,8 @@ export const TALLY_FORMS = {
   sourcing: defineForm("1ARG4M", "sourcing"),
   reports: defineForm("ZjeGvz", "reports"),
   expo: defineForm("lbzVN6", "wce_visitor"),
-  newsletter: defineForm(
-    process.env.NEXT_PUBLIC_TALLY_NEWSLETTER_FORM_ID,
-    "newsletter"
-  ),
-  wceExhibitor: defineForm(
-    process.env.NEXT_PUBLIC_TALLY_WCE_EXHIBITOR_FORM_ID,
-    "wce_exhibitor"
-  ),
+  newsletter: defineForm("xX1xZJ", "newsletter"),
+  wceExhibitor: defineForm("XxklMV", "wce_exhibitor"),
   wceVisitor: defineForm("lbzVN6", "wce_visitor")
 } as const;
 

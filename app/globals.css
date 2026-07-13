@@ -21464,9 +21464,25 @@ button.contact-help-card > .contact-help-card-copy > span {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  overflow: hidden;
+  padding: 0;
   border-radius: 8px;
   box-shadow: none;
 }
+.sourcing-lawn-page .sourcing-lawn-related-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article > h3,
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article > p,
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article > a {
+  margin-right: 26px;
+  margin-left: 26px;
+}
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article > h3 { margin-top: 22px; }
+.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article > a { margin-bottom: 26px; }
 .sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid article > p { flex: 1; }
 .sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid a {
   display: inline-flex;
@@ -21486,7 +21502,6 @@ button.contact-help-card > .contact-help-card-copy > span {
   text-decoration: none;
   transition: background .18s ease, border-color .18s ease, color .18s ease, transform .18s ease;
 }
-.sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid a::after { content: "\2192"; font-size: 1.05em; }
 .sourcing-lawn-page .sourcing-lawn-final-section + .section .sourcing-product-grid a:hover {
   transform: translateY(-2px);
   border-color: var(--lawn-accent);
