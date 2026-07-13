@@ -26,28 +26,26 @@ test("defines six unique tracked sourcing categories", () => {
     ]
   );
   assert.equal(new Set(SOURCING_CATEGORIES.map((item) => item.value)).size, 6);
+  assert.deepEqual(
+    SOURCING_CATEGORIES.map((item) => item.href),
+    [
+      "/sourcing/robotic-vacuums",
+      "/sourcing/floor-washers",
+      "/sourcing/vacuum-cleaners",
+      "/sourcing/commercial-cleaning",
+      "/sourcing/lawn-robots",
+      "/sourcing/pool-robots"
+    ]
+  );
   for (const item of SOURCING_CATEGORIES) {
     assert.match(item.ctaLocation, /^sourcing_opportunity_/);
-    assert.equal("href" in item, false);
   }
 });
 
-test("Sourcing links all six live product opportunity pages", () => {
-  const expectedRoutes = [
-    "/sourcing/pool-robots",
-    "/sourcing/lawn-robots",
-    "/sourcing/floor-washers",
-    "/sourcing/robotic-vacuums",
-    "/sourcing/commercial-cleaning",
-    "/sourcing/vacuum-cleaners"
-  ];
-
-  assert.match(sourcingSource, /productOpportunities\.map/);
-  assert.match(sourcingSource, /<Link className="sourcing-v3-product-card" href=\{item\.href\}/);
+test("Sourcing links all six live product opportunity pages without nested main", () => {
+  assert.match(sourcingSource, /<Link/);
+  assert.match(sourcingSource, /href=\{item\.href\}/);
   assert.doesNotMatch(sourcingSource, /<main/);
-  for (const route of expectedRoutes) {
-    assert.match(sourcingSource, new RegExp(route.replaceAll("/", "\\/")));
-  }
 });
 
 test("Contact renders one four-intent tracked choice set", () => {
@@ -95,30 +93,38 @@ test("defines one tracked route for each Contact intent", () => {
 
 test("Sourcing presents the approved opportunity-led funnel", () => {
   const requiredMessages = [
-    "You&apos;ve Been In The Industry For 20 Years",
-    "The Industry Already Changed.",
-    "Categories Worth Watching Before You Source",
-    "From Market Insight To Product Execution",
-    "Why Denny Can Help You Make Better Sourcing Decisions",
-    "Denny&apos;s Industry Journey",
-    "The Difference Is Insight."
+    "Don’t Just Source Another Product",
+    "Free Product Opportunity Shortlist",
+    "World Clean Biz Industry Estimate",
+    "Access Is No Longer The Advantage",
+    "Outdated Before Launch",
+    "Faster Sourcing Is Not Enough",
+    "How Denny Sees Opportunities Earlier",
+    "One Partner From Opportunity Discovery To Delivery",
+    "Denny Reviews. The Team Executes.",
+    "What New Cleaning Products Are Growing Fast?"
   ];
 
   for (const message of requiredMessages) {
     assert.match(sourcingSource, new RegExp(message.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
 
-  assert.match(sourcingSource, /ctaLocation="sourcing_hero"/);
-  assert.match(sourcingSource, /ctaLocation="sourcing_delivery"/);
-  assert.match(sourcingSource, /ctaLocation="sourcing_final"/);
-  assert.match(sourcingSource, /productOpportunities\.map/);
+  assert.match(sourcingSource, /inquiryIntent="opportunity_discovery"/);
+  assert.match(sourcingSource, /inquiryIntent="specific_product"/);
+  assert.match(sourcingSource, /ctaLocation="sourcing_footer"/);
+  assert.match(sourcingSource, /SOURCING_CATEGORIES\.map/);
+  assert.match(sourcingSource, /href=\{item\.href\}/);
+  assert.match(sourcingSource, /Initial Response Within 8 Hours/);
+  assert.match(sourcingSource, /1–2 Business Days/);
+  assert.doesNotMatch(sourcingSource, /A Better Brief Creates A Better Search/);
+  assert.doesNotMatch(sourcingSource, /sourcing-v3-cta/);
 });
 
-test("Sourcing hub styles remain isolated from product landing pages", () => {
-  assert.match(sourcingSource, /className="sourcing-v3-page"/);
-  assert.match(globalStyles, /\.sourcing-v3-page/);
-  assert.doesNotMatch(sourcingSource, /className="[^"]*sourcing-lawn-page/);
-  assert.doesNotMatch(sourcingSource, /className="[^"]*sourcing-opportunity-page/);
+test("Sourcing opportunity styles are isolated from legacy sourcing sections", () => {
+  assert.match(sourcingSource, /className="sourcing-opportunity-page"/);
+  assert.match(globalStyles, /\.sourcing-opportunity-page/);
+  assert.match(globalStyles, /\.sourcing-opportunity-process[^}]*background:/s);
+  assert.doesNotMatch(sourcingSource, /className="[^"]*sourcing-v4/);
 });
 
 test("shared Tally transport supports a tracked inline sourcing form", () => {
@@ -130,30 +136,40 @@ test("shared Tally transport supports a tracked inline sourcing form", () => {
 });
 
 test("Sourcing detail polish keeps the offer early and the story compact", () => {
-  assert.match(sourcingSource, /Start A Sourcing Inquiry/);
-  assert.match(sourcingSource, /View Category →/);
-  assert.match(sourcingSource, /productOpportunities\.map/);
-  assert.match(sourcingSource, /deliveryPillars\.map/);
-  assert.match(sourcingSource, /dennyJourney\.map/);
+  assert.match(sourcingSource, /Receive 2–3 product directions, images, basic specifications and indicative pricing/);
+  assert.match(sourcingSource, /Approx\. USD 40B\+/);
+  assert.match(sourcingSource, /Toward USD 140B/);
+  assert.match(sourcingSource, /title: "Discover"/);
+  assert.match(sourcingSource, /title: "Develop"/);
+  assert.match(sourcingSource, /title: "Deliver"/);
+  assert.match(sourcingSource, /1–2 business days/);
+  assert.match(sourcingSource, /Currently supporting cross-border sellers and international brands/);
   assert.doesNotMatch(sourcingSource, /sourcing-opportunity-risk-layout/);
+  assert.match(globalStyles, /\.sourcing-opportunity-faq summary::after/);
 });
 
 test("early sourcing sections use the shared icon system for scanning", () => {
-  assert.match(sourcingSource, /type IconName/);
+  assert.match(sourcingSource, /className="sourcing-opportunity-driver-icon"/);
+  assert.match(sourcingSource, /className="sourcing-opportunity-shift-icon"/);
+  assert.match(sourcingSource, /className="sourcing-opportunity-risk-icon"/);
   assert.match(sourcingSource, /InlineIcon name=\{item\.icon\}/);
 });
 
 test("Sourcing visual hierarchy stays within the blue and white brand system", () => {
-  assert.match(globalStyles, /\.sourcing-v3-page\s*\{/);
-  assert.match(globalStyles, /\.sourcing-v3-button\s*\{/);
-  assert.match(globalStyles, /\.sourcing-v3-hero\s*\{/);
-  assert.doesNotMatch(sourcingSource, /style=\{\{/);
+  assert.doesNotMatch(globalStyles, /--so-opportunity:/);
+  assert.doesNotMatch(globalStyles, /--so-warning:/);
+  assert.match(globalStyles, /\.sourcing-opportunity-driver-icon[^}]*color:\s*var\(--so-blue\)/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-risk-icon[^}]*color:\s*#8eb3ff/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#eef5ff/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-process \.sourcing-opportunity-heading h2\s*\{[^}]*color:\s*var\(--so-ink\)/s);
 });
 
 test("all primary Sourcing conversion paths use visible blue buttons", () => {
   assert.doesNotMatch(sourcingSource, /TallyInlineEmbed/);
-  assert.equal((sourcingSource.match(/className="sourcing-v3-button"/g) || []).length, 3);
-  assert.match(globalStyles, /\.sourcing-v3-button\s*\{[^}]*background:/s);
+  assert.doesNotMatch(sourcingSource, /sourcing-opportunity-text-button/);
+  assert.match(sourcingSource, /sourcing-opportunity-button-secondary/);
+  assert.match(sourcingSource, /sourcing-opportunity-category-cta/);
+  assert.match(sourcingSource, /sourcing-opportunity-final-cta/);
 });
 
 test("Sourcing does not repeat the two hero intent choices below the fold", () => {
@@ -164,15 +180,31 @@ test("Sourcing does not repeat the two hero intent choices below the fold", () =
 });
 
 test("Sourcing uses alternating sales bands and visual storytelling", () => {
-  assert.match(sourcingSource, /section-editorial sourcing-v3-section sourcing-v3-reality/);
-  assert.match(sourcingSource, /section-editorial sourcing-v3-section sourcing-v3-opportunity/);
-  assert.match(sourcingSource, /section-authority sourcing-v3-section sourcing-v3-deliver/);
-  assert.match(sourcingSource, /section-authority sourcing-v3-section sourcing-v3-denny-proof-section/);
+  assert.match(sourcingSource, /sourcing-opportunity-stage-image/);
+  assert.match(sourcingSource, /sourcing-opportunity-model-image/);
+  assert.match(sourcingSource, /One Quotation/);
+  assert.match(sourcingSource, /Managed Delivery/);
+  assert.match(sourcingSource, /Supplier Search/);
+  assert.doesNotMatch(sourcingSource, /<span>WCB<\/span><i \/><i \/><i \/>/);
+  assert.match(globalStyles, /\.sourcing-opportunity-shortlist\s*\{[^}]*background:\s*linear-gradient\([^}]*#071f47/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-process\s*\{[^}]*background:\s*#eef5ff/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-models\s*\{[^}]*background:\s*#fff/s);
+  assert.match(globalStyles, /\.sourcing-opportunity-team\s*\{[^}]*background:\s*#eaf2ff/s);
 });
 
 test("Sourcing grounds key sales sections with unified visual evidence", () => {
-  assert.match(sourcingSource, /images\/sourcing\/pool-robots\.png/);
-  assert.match(sourcingSource, /images\/sourcing\/lawn-robots\.png/);
-  assert.match(sourcingSource, /images\/industry\/sourcing-supplier-meeting-2026\.jpg/);
-  assert.match(sourcingSource, /images\/industry\/about-denny-speaking-forum-2025\.jpg/);
+  assert.match(sourcingSource, /sourcing-opportunity-market-visual/);
+  assert.match(sourcingSource, /sourcing-opportunity-shortlist-preview/);
+  assert.match(sourcingSource, /sourcing-opportunity-stage-image/);
+  assert.match(sourcingSource, /sourcing-opportunity-model-image/);
+  assert.match(sourcingSource, /site-refresh\/real\/product-detail\.webp/);
+  assert.match(sourcingSource, /site-refresh\/real\/modern-factory\.webp/);
+  assert.match(sourcingSource, /site-refresh\/real\/business-office\.webp/);
+});
+
+test("Sourcing keeps the July 11 approved opportunity-led homepage", () => {
+  assert.match(sourcingSource, /Don’t Just Source Another Product/);
+  assert.match(sourcingSource, /Find The Next Cleaning Industry Opportunity/);
+  assert.match(sourcingSource, /className="sourcing-opportunity-page"/);
+  assert.doesNotMatch(sourcingSource, /You&apos;ve Been In The Industry For 20 Years/);
 });
