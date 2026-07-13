@@ -3,10 +3,8 @@ import path from "node:path";
 
 const baseUrl = process.env.BASE_URL || "http://localhost:3000";
 const failures = [];
-const liveRoutes = ["/sourcing/lawn-robots", "/sourcing/pool-robots", "/sourcing/floor-washers"];
+const liveRoutes = ["/sourcing/lawn-robots", "/sourcing/pool-robots", "/sourcing/floor-washers", "/sourcing/commercial-cleaning"];
 const forbiddenRoutes = [
-  "/sourcing/robotic-vacuums",
-  "/sourcing/commercial-cleaning",
   "/sourcing/vacuum-cleaners"
 ];
 
@@ -33,6 +31,7 @@ for (const route of liveRoutes) {
 const lawn = await readPage("/sourcing/lawn-robots");
 const pool = await readPage("/sourcing/pool-robots");
 const floor = await readPage("/sourcing/floor-washers");
+const commercial = await readPage("/sourcing/commercial-cleaning");
 for (const value of [
   "Choose the Market Opportunity Before You Choose the Factory",
   "Explore the Product Opportunities",
@@ -167,6 +166,23 @@ for (const value of [
 requireValue((floor.html.match(/<details>/g) || []).length === 9, "/sourcing/floor-washers: expected nine collapsed industry FAQs");
 requireValue(!/<details open/.test(floor.html), "/sourcing/floor-washers: FAQ should be collapsed on initial load");
 
+for (const value of [
+  "Choose the Facility Opportunity Before You Choose the Robot",
+  "Built for Buyers Deciding Where to Deploy Commercial Cleaning Robots",
+  "Six Product Platforms. Six Different Market Opportunities.",
+  "Where the Six Commercial Platforms Compete",
+  "Which Commercial Routes Fit Each Product Platform?",
+  "Three Conditions That Decide Whether a Deployment Can Scale",
+  "Four Decisions Before You Back a Commercial Platform",
+  "Turn a Facility Opportunity Into a Deployment Brief",
+  "Evaluate My Deployment Opportunity",
+  "Related Intelligence"
+]) {
+  requireValue(commercial.html.includes(value), `/sourcing/commercial-cleaning: missing full landing section ${value}`);
+}
+requireValue((commercial.html.match(/<details>/g) || []).length === 9, "/sourcing/commercial-cleaning: expected nine collapsed industry FAQs");
+requireValue(!/<details open/.test(commercial.html), "/sourcing/commercial-cleaning: FAQ should be collapsed on initial load");
+
 const decisionVisualSource = fs.existsSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"))
   ? fs.readFileSync(path.join(process.cwd(), "components", "LawnRobotDecisionVisuals.tsx"), "utf8")
   : "";
@@ -243,7 +259,7 @@ for (const parameter of ["conversion_group", "form_type", "source_page", "cta_lo
 const insightDirectory = path.join(process.cwd(), "content", "insights");
 const insightFiles = fs.readdirSync(insightDirectory).filter((file) => file.endsWith(".mdx"));
 for (const route of liveRoutes) {
-  if (route === "/sourcing/floor-washers") continue;
+  if (["/sourcing/floor-washers", "/sourcing/robotic-vacuums", "/sourcing/commercial-cleaning"].includes(route)) continue;
   const linkSources = insightFiles.filter((file) => fs.readFileSync(path.join(insightDirectory, file), "utf8").includes(`](${route})`));
   requireValue(linkSources.length >= 3, `${route}: expected links from at least 3 articles, received ${linkSources.length}`);
 }

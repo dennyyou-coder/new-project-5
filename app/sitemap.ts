@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sourcing/pool-robots",
     "/sourcing/floor-washers",
     "/sourcing/robotic-vacuums",
+    "/sourcing/commercial-cleaning",
     "/reports",
     "/world-clean-expo",
     "/about",

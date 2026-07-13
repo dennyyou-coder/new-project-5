@@ -5,6 +5,7 @@ import { LawnRobotChannelMatrix, LawnRobotEvidenceFlow, LawnRobotOpportunityLand
 import { PoolRobotLanding } from "@/components/PoolRobotLanding";
 import { FloorWasherLanding } from "@/components/FloorWasherLanding";
 import { RobotVacuumLanding } from "@/components/RobotVacuumLanding";
+import { CommercialCleaningLanding } from "@/components/CommercialCleaningLanding";
 import { getInsights } from "@/lib/content";
 import type { SourcingProduct } from "@/lib/sourcingProducts";
 
@@ -14,6 +15,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
   if (product.slug === "pool-robots") return <PoolRobotLanding product={product} />;
   if (product.slug === "floor-washers") return <FloorWasherLanding product={product} />;
   if (product.slug === "robotic-vacuums") return <RobotVacuumLanding product={product} />;
+  if (product.slug === "commercial-cleaning") return <CommercialCleaningLanding product={product} />;
   const pageUrl = `${siteUrl}/sourcing/${product.slug}`;
   const isLawnRobotPage = Boolean(product.directions);
   const articles = getInsights();

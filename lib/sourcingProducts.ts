@@ -13,7 +13,7 @@ export type ProductDirection = {
 };
 
 export type SourcingProduct = {
-  slug: "lawn-robots" | "pool-robots" | "floor-washers" | "robotic-vacuums";
+  slug: "lawn-robots" | "pool-robots" | "floor-washers" | "robotic-vacuums" | "commercial-cleaning";
   productCategory: string;
   title: string;
   metaDescription: string;
@@ -30,6 +30,29 @@ export type SourcingProduct = {
 };
 
 export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> = {
+  "commercial-cleaning": {
+    slug: "commercial-cleaning",
+    productCategory: "commercial_cleaning_robot",
+    title: "Commercial Cleaning Robot Manufacturers & Sourcing in China",
+    metaDescription: "Evaluate commercial cleaning robot manufacturers in China through facility use case, deployment proof, supplier capability and service economics.",
+    eyebrow: "Commercial Cleaning Robot Sourcing",
+    intro: "Commercial cleaning robots are moving from controlled demonstrations into airports, retail, offices, healthcare and logistics. The opportunity depends on facility fit, deployment reliability and a service model that survives daily operation.",
+    buyerProblems: ["A showroom demonstration does not prove performance in a live facility", "Navigation and safety requirements change by site type", "Deployment, training and fleet software are part of the product", "Downtime, parts and local service determine the real operating cost"],
+    services: ["Facility and product opportunity review", "Manufacturer discovery and capability screening", "Pilot, deployment and service-model review", "Quality-risk and execution support before scaling"],
+    evaluationPoints: ["Navigation, safety and obstacle behaviour", "Scrubbing, sweeping and recovery performance", "Runtime, tanks, docking and duty cycle", "Deployment tools, fleet software and reporting", "Training, parts and field-service readiness"],
+    marketNotes: ["The best platform is defined by facility workflow, not by the longest specification sheet.", "Public environments require stronger safety evidence and deployment discipline than controlled demo spaces.", "Commercial scale depends on uptime, local support and repeatable site economics after the pilot."],
+    relatedArticleSlugs: ["commercial-cleaning-robot-manufacturers-china", "nilfisk-2018-annual-report-commercial-cleaning", "karcher-hidden-champion-in-cleaning-appliances"],
+    image: "/images/sourcing/commercial-cleaning/cc-02-retail-autonomous-concept.png",
+    imageAlt: "Illustrative autonomous commercial floor-cleaning robot in a retail environment",
+    directions: [
+      { id: "CC-01", name: "Retail Autonomous Scrubber", positioning: "A compact autonomous platform for supermarkets and large-format retail with repeatable open-floor routes.", lawnContext: "Supermarkets and large retail", markets: ["Europe", "North America"], channels: ["Specialist dealer", "Project sales"], technologyDirection: "Compact autonomous scrubber platform", opportunity: "Retail creates visible labor and consistency problems that can support automation when routes and operating windows are clear.", verificationRisk: "Verify aisle navigation, edge recovery, wet-floor safety, changing obstacles, operator handoff and daily maintenance.", image: "/images/sourcing/commercial-cleaning/cc-02-retail-autonomous-concept.png", imageAlt: "Illustrative autonomous floor scrubber in a supermarket aisle" },
+      { id: "CC-02", name: "Large-Facility Hybrid Platform", positioning: "A higher-capacity route for airports and terminals where manual and autonomous operation may need to coexist.", lawnContext: "Airports, terminals and large concourses", markets: ["Middle East", "North America", "Europe"], channels: ["Project sales", "Service contractors"], technologyDirection: "Ride-on or autonomous-ready scrubber architecture", opportunity: "Large sites can justify higher equipment and service value when the platform improves coverage, supervision and uptime.", verificationRisk: "Test public-space safety, route interruption, usable duty cycle, water recovery, remote support and manual fallback.", image: "/images/sourcing/commercial-cleaning/cc-01-airport-rider-concept.png", imageAlt: "Illustrative large commercial scrubber in an airport terminal" },
+      { id: "CC-03", name: "Office Service Platform", positioning: "A compact, low-disruption platform for offices, hotels and mixed-use lobbies where noise and presentation matter.", lawnContext: "Office, hospitality and mixed-use lobbies", markets: ["Europe", "Asia-Pacific"], channels: ["Facility services", "Specialist dealer"], technologyDirection: "Compact autonomous scrubber with charging dock", opportunity: "A quieter, smaller platform can open facilities where large industrial machines are operationally or visually unsuitable.", verificationRisk: "Verify noise, floor-finish compatibility, doorway access, dock reliability, night operation and staff workflow.", image: "/images/sourcing/commercial-cleaning/cc-03-office-lobby-concept.png", imageAlt: "Illustrative compact autonomous scrubber with dock in an office lobby" },
+      { id: "CC-04", name: "Warehouse Sweeping Platform", positioning: "A dry-debris and dust route for logistics facilities where wide areas and continuous contamination shape the use case.", lawnContext: "Warehouses and distribution centers", markets: ["North America", "Europe"], channels: ["Industrial dealer", "Project sales"], technologyDirection: "Autonomous commercial sweeping platform", opportunity: "Warehouse automation can win where it reduces repetitive labor without disrupting material movement.", verificationRisk: "Test dust capture, debris capacity, rack-edge behaviour, traffic interaction, mapping changes and service access.", image: "/images/sourcing/commercial-cleaning/cc-04-warehouse-sweeper-concept.png", imageAlt: "Illustrative autonomous commercial sweeper in a warehouse" },
+      { id: "CC-05", name: "Healthcare Hygiene Platform", positioning: "A controlled, narrow-footprint route for healthcare corridors and sensitive facilities with stricter operating conditions.", lawnContext: "Hospitals and healthcare corridors", markets: ["Europe", "North America"], channels: ["Healthcare dealer", "Project sales"], technologyDirection: "Hygiene-led autonomous scrubber platform", opportunity: "Healthcare can support higher product and service value when cleaning evidence, safety and workflow integration are credible.", verificationRisk: "Verify hygiene process, chemical compatibility, quiet operation, human interaction, reporting and service protocols.", image: "/images/sourcing/commercial-cleaning/cc-05-healthcare-concept.png", imageAlt: "Illustrative autonomous commercial scrubber in a healthcare corridor" },
+      { id: "CC-06", name: "Docked Fleet Service Platform", positioning: "A service-led platform for operators seeking lower-touch charging, water handling and repeatable multi-site deployment.", lawnContext: "Shopping malls and managed facility fleets", markets: ["Middle East", "Asia-Pacific", "Europe"], channels: ["Facility services", "Project sales"], technologyDirection: "Autonomous robot with service station", opportunity: "Docking and fleet tools can improve utilization when they reduce real operator work rather than add infrastructure complexity.", verificationRisk: "Test dock connection, charging, water handling, fault recovery, fleet software, site setup and local maintenance response.", image: "/images/sourcing/commercial-cleaning/cc-06-service-station-concept.png", imageAlt: "Illustrative commercial cleaning robot at a service station" }
+    ]
+  },
   "robotic-vacuums": {
     slug: "robotic-vacuums",
     productCategory: "robot_vacuum",
