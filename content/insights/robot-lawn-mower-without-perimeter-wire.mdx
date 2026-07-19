@@ -1,0 +1,261 @@
+---
+title: "How Do Robot Lawn Mowers Work Without Boundary Wires? RTK, LiDAR and Vision Explained"
+description: "Learn how wire-free robot lawn mowers use RTK, LiDAR, vision and virtual maps—and what buyers should verify before purchase or deployment."
+date: "2026-07-19"
+publishedAt: "2026-07-19T22:01:20+08:00"
+sortDate: "2026-07-19T22:01:20+08:00"
+slug: "robot-lawn-mower-without-perimeter-wire"
+author: "Denny You"
+category: "Robotic Mowers"
+tags: ["Robot Lawn Mowers", "Wire-Free Mowing", "RTK", "LiDAR", "Computer Vision", "Navigation", "Procurement"]
+coverImage: "/images/blog/wire-free-robot-mower-navigation-cover.webp"
+featured: "false"
+takeaways: ["A robot lawn mower without a perimeter wire replaces the buried cable with a digital map and RTK, LiDAR, vision or a combination of these systems.", "Wire-free does not mean infrastructure-free: a mower may still depend on a charging dock, RTK reference station, Network RTK, internet access, an App and regional services.", "The right navigation route depends on the site, so professional buyers should test coverage, boundaries, fallback behavior, connectivity, safety files and service before scaling."]
+article_type: "explainer_guide"
+article_focus: "technology"
+delivery_format: "wcb_search_article"
+source_fact_sheet: "20-写作系统/09-写作发布Loop/01-进行中/2026-07-19_无边界割草机器人导航技术_研究事实表.md"
+source_confirmed_final_version: "30-英文发布包/robot-lawn-mower-without-perimeter-wire/英文确认版.md"
+confirmed_english_version: "confirmed-v1.0"
+image_status: "confirmed-v1.0"
+worldcleanbiz_publish_status: "deployment_authorized"
+updated_at: "2026-07-19"
+---
+
+**A robot lawn mower without a perimeter wire replaces the buried cable with a digital map and a way to locate itself on that map. Depending on the model, it may use RTK-GNSS corrections, onboard LiDAR and SLAM, camera-based vision, or several systems working together.**
+
+The mower still needs a charging dock and software setup. Some models also require a local RTK reference station. Others obtain corrections through a Network RTK or cloud service. LiDAR- and vision-led products may remove the antenna, but they still use an App, stored maps, firmware and often Wi-Fi or 4G for connected functions.
+
+The practical answer is therefore simple: **wire-free does not mean infrastructure-free**. It means the physical loop around the lawn has been replaced by positioning, sensing and software.
+
+## Wire-Free Robot Mower Navigation at a Glance
+
+| Navigation route | How the boundary is created | Main infrastructure | What a buyer must verify |
+|---|---|---|---|
+| Physical boundary wire | A buried or pegged cable defines the work area | Loop wire, charging station and sometimes guide wire | Installation, cable breaks, future landscape changes and repair responsibility |
+| Local RTK-GNSS | An App stores virtual boundaries; a fixed reference station sends positioning corrections to the mower | GNSS visibility, reference station, radio link and map | Sky view, base placement, coverage, weak-signal areas and map recovery |
+| Network RTK or cloud RTK | The mower receives correction data from a regional reference network | Service coverage, internet or cellular connection, account and map | Geographic availability, free period, renewal cost, offline behavior and region restrictions |
+| LiDAR and SLAM | The mower scans surrounding geometry and builds a local map | LiDAR sensor, onboard processing, stored map and App | Mapping range, trees, walls, narrow passages, environmental change and sensor serviceability |
+| Camera-based vision | Cameras and trained models identify grass, surfaces, obstacles and boundaries | Camera, lighting, onboard model, firmware and sometimes field markers | Shadows, night operation, seasonal change, unclear edges, privacy and update support |
+| Sensor fusion | RTK, LiDAR, cameras, IMU or wheel data are combined | Depends on the exact model and operating mode | Which sensor performs localization, what happens when one input fails and how the system degrades |
+
+No row is the universal winner. The defensible choice starts with the site, not the technology label.
+
+## How Does a Traditional Perimeter Wire Work?
+
+A conventional robotic mower stays inside a loop of cable placed or buried around the lawn. The charging station energizes the loop, and the mower detects the signal as it approaches the boundary. Separate loops can form islands around flowerbeds, ponds or other excluded areas. Some systems also use a guide wire to help the mower return to its dock.
+
+Husqvarna’s [Automower explanation](https://www.husqvarna.com/us/discover/robotic-mowers/automower-how-it-works/) describes the boundary wire as a customizable physical limit around the work area and obstacles. Its support material also documents how owners locate and repair a broken loop.
+
+The technology is mature and the boundary is physically anchored to the site. The trade-off is installation and change management. A new garden bed, driveway, trench or damaged connector can require cable work. A distributor quoting a wired mower should include survey, installation, repair and future landscape-change responsibilities—not only the machine price.
+
+Wire-free systems remove that continuous perimeter cable. They do not remove the need to define where the cutting deck may operate.
+
+## How Does RTK Work in a Robot Lawn Mower?
+
+Standard satellite positioning is not precise enough by itself to control a mower close to a flowerbed, pool or path. Real-Time Kinematic positioning improves the result by comparing the mower’s satellite observations with correction data from a reference station at a known position.
+
+The U.S. National Geodetic Survey defines RTK as a process in which observations and corrections are transmitted in real time from a reference or base station to a rover receiver. In a mower installation, the rover is the machine.
+
+The usual workflow is:
+
+1. install the charging dock and, if required, the RTK reference station;
+2. use the App to drive or guide the mower around the lawn;
+3. save that route as a virtual boundary;
+4. add work zones, transport paths and stay-out areas;
+5. let the mower continually compare its calculated position with that virtual map.
+
+The important distinction is the source of the corrections.
+
+### Local RTK reference station
+
+A local station is installed at the property and communicates with the mower. It needs a stable position and suitable satellite visibility. Moving it can affect the coordinate relationship used by the stored map.
+
+Local RTK can reduce dependence on a third-party correction network, but it adds hardware, installation and service questions. A dealer should document the approved mounting position, power supply, radio coverage, lightning exposure and procedure after a station replacement.
+
+### Network RTK or cloud corrections
+
+A Network RTK product receives corrections from a regional network rather than a customer-installed station. Husqvarna’s current [EPOS support page](https://us-support.husqvarna.com/en/automower/KA-70323) gives two alternatives: Husqvarna Cloud in supported locations or a local reference station. Its cloud route needs a suitable internet connection across the work area.
+
+This can make installation cleaner, but it moves part of the operating package into the network. Coverage, data service, account region, renewal terms and service continuity become procurement questions.
+
+“No antenna” is not the same as “no external dependency.”
+
+## How Do LiDAR Robot Lawn Mowers Work?
+
+LiDAR measures distance by sending laser pulses and reading their reflections. A mower can turn those measurements into a local representation of trees, walls, buildings, garden furniture and other surrounding geometry.
+
+SLAM—simultaneous localization and mapping—uses successive observations to build a map while estimating the robot’s position inside it. In practical terms, the mower is not asking only, “Where am I on Earth?” It is also asking, “Where am I relative to the structures I have already mapped?”
+
+Current products demonstrate several LiDAR architectures:
+
+- Segway Navimow’s [i2 LiDAR](https://navimow.segway.com/products/navimow-i2-lidar-robot-lawn-mower) uses a solid-state LiDAR and camera system, automatic mapping and no RTK antenna.
+- Sunseeker’s [S4 specifications](https://sunseekertech.com/global/s4/specs) list 360-degree 3D LiDAR, AI vision, L-SLAM and V-SLAM.
+- MAMMOTION’s [LUBA 3](https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower) uses different combinations by model: the current U.S. 1500 version lists LiDAR plus dual-camera vision, while the 3000- and 5000-class versions add NetRTK.
+
+These examples show why “LiDAR mower” is not a complete specification. LiDAR may be the primary localization system, one layer in a fused system, or a perception sensor supporting another positioning route.
+
+A project test should cover the whole site: open grass, tree cover, narrow passages, walls, repeated landscaping, changing furniture, slopes and the route back to the dock. It should also confirm how maps are backed up and what happens after a LiDAR module, main board or complete mower is replaced.
+
+## How Does a Vision-Only Robot Mower Find the Lawn?
+
+A vision-led mower uses cameras and trained software to classify what it sees. The system may distinguish grass from paving, identify obstacles, recognize an edge and estimate motion from changes between frames.
+
+WORX says its [Landroid Vision](https://www.worx.com/landroid/vision-technology/) uses a trained neural network to identify what to mow, what to avoid and which limits not to cross. The platform does not require a continuous boundary cable or RTK antenna. Some multi-zone arrangements use RFID tags to guide movement between areas, which is a useful reminder that “no boundary wire” does not always mean “no field markers.”
+
+Vision can make deployment simple where lawn edges are visually clear. The purchase decision should still include a site trial across bright sun, deep shade, wet or dormant grass, leaves, worn edges and the intended operating hours. Those are verification conditions, not a blanket claim that all camera systems fail in the same way.
+
+Camera-based systems also create a data question. A procurement team should determine whether images remain on the mower, are transmitted for remote viewing or diagnostics, and which company controls the App and account data.
+
+## Why Do New Mowers Combine RTK, LiDAR and Vision?
+
+Outdoor lawns are not controlled factory floors. Satellite visibility changes beside buildings and trees. Local geometry can become less distinctive in an open field. Cameras see information that a distance sensor does not, while their results depend on the trained model and visible scene.
+
+Sensor fusion gives a manufacturer more than one source of information. It can combine absolute positioning from RTK, local geometry from LiDAR, semantic recognition from cameras, motion from an IMU and wheel movement from encoders.
+
+The phrase “sensor fusion” is still marketing shorthand unless the exact behavior is documented. Buyers should ask:
+
+- Which sensor creates the map?
+- Which sensor keeps the mower inside the virtual boundary?
+- Which sensors perform obstacle detection rather than localization?
+- Can the mower continue when GNSS, internet, LiDAR or a camera is unavailable?
+- Does degraded operation stop safely, slow down, use another sensor or leave an uncut area?
+- Which failure events are recorded for dealer diagnostics?
+
+A longer sensor list can improve coverage of difficult conditions. It can also add calibration, replacement cost, firmware complexity and service requirements. The operating logic matters more than the number of logos on the product page.
+
+![Wire-free robot mower navigation routes using RTK, LiDAR, vision and sensor fusion](/images/blog/wire-free-robot-mower-navigation-cover.webp)
+
+## Does Wire-Free Mean No Antenna, Internet or Subscription?
+
+No. These are separate questions.
+
+| Claim | What it can mean | What it does not prove |
+|---|---|---|
+| No perimeter wire | No continuous boundary cable around the lawn | No dock, map, App, account or setup |
+| No RTK antenna | No customer-installed local RTK station | No Network RTK, GNSS, internet or regional service |
+| LiDAR navigation | The mower can map local geometry with laser sensing | No camera, no cloud, no connectivity or unlimited operating area |
+| Vision navigation | Cameras help identify lawn and obstacles | Guaranteed performance in every light, season or boundary condition |
+| Free connectivity | A stated service is included for a defined period or model | Every digital feature remains free for the product’s life |
+
+For example, the current U.S. Navimow i2 LiDAR page describes no antenna installation but separately lists a built-in 4G module and a defined free-data period. MAMMOTION separates NetRTK/iNavi and 4G-related services across current LUBA 3 variants. Terms can differ by SKU, country and purchase date.
+
+A commercial quotation should itemize positioning corrections, cellular control, theft tracking, map storage, remote video and integrations separately. They may not share the same provider, free period or renewal rule.
+
+## Which Navigation Route Fits Different Sites?
+
+| Site or operating condition | Stronger starting point to investigate | Required field checks |
+|---|---|---|
+| Large lawn with open sky | Local RTK or Network RTK | Satellite and correction coverage at the dock, boundaries and all work zones |
+| Tree cover, walls or structured garden | LiDAR, vision or a fused system | Performance under cover, beside walls, through passages and after the scene changes |
+| Small lawn with visually clear edges | Vision or compact LiDAR system | Edge recognition, shadows, leaves, night operation and zone transitions |
+| Mixed open and obstructed areas | RTK plus LiDAR/vision, or a hybrid installation | Sensor handover, degraded behavior, map consistency and recovery after interruption |
+| Unreliable internet or strict cloud policy | Local RTK or primarily onboard navigation | Exactly which mowing, mapping, security and support functions remain offline |
+| Commercial site or mower fleet | Professionally supported platform with fleet tools | Roles, uptime, service-level agreement, parts, account ownership and data governance |
+
+This table is a screening framework, not a product winner. A model’s rated area, slope and positioning accuracy are manufacturer specifications until independently tested on the intended property.
+
+## What Should Be Checked During Installation?
+
+The fastest setup video is not the project acceptance test. A professional installation should document:
+
+1. **Site boundaries:** lawn edges, public paths, roads, water, retaining walls and drop-offs.
+2. **Dock location:** power, drainage, approach route, satellite view where required and network availability.
+3. **Positioning infrastructure:** local reference station, Network RTK coverage, LiDAR map or camera conditions.
+4. **Virtual zones:** work areas, stay-out zones, transport paths, disconnected lawns and seasonal changes.
+5. **Failure behavior:** loss of GNSS, internet, correction data, camera view or map confidence.
+6. **Map administration:** backup, restoration, account ownership and transfer to a replacement mower.
+7. **Physical performance:** slopes, lateral travel, wet traction, narrow passages, edge treatment and docking.
+8. **Safety controls:** blade stop, lift/tilt response, obstacle handling and required clearance from hazards.
+
+Virtual boundaries are software instructions. They should not be treated as physical barriers around pools, roads, steep drops or public access areas when the manufacturer’s instructions require additional protection.
+
+![Wire-free robot mower deployment and procurement verification map](/images/blog/wire-free-robot-mower-deployment-checklist.webp)
+
+## What Should a Distributor or Procurement Team Verify?
+
+The navigation route affects the full commercial package.
+
+### Exact product and territory
+
+- Complete SKU, area limit, cutting-height version and target country.
+- Navigation sensors actually fitted to that version.
+- Included and optional reference station, connectivity module and accessories.
+- Authorized sales territory and channel.
+
+### Digital service and data
+
+- Network RTK, Wi-Fi, 4G and cloud-map requirements.
+- Included service period, renewal price and service-area restrictions.
+- Account owner, map administrator and transfer procedure.
+- Camera, location, diagnostic and remote-access data responsibilities.
+
+### Safety and conformity
+
+IEC lists **IEC 60335-2-107:2017 with its 2020 and 2021 amendments** as the valid consolidated international safety standard for robotic battery-powered electrical lawnmowers. That reference does not by itself authorize sale in every market.
+
+The buyer should obtain the declarations, reports, labels, manuals and importer information required for the exact destination. Safety, battery, charger, radio, EMC, connected-product and language obligations can differ by country and configuration.
+
+### Service and lifecycle cost
+
+- Local repair location and diagnostic access.
+- Availability of LiDAR, cameras, wheels, motors, charging equipment, batteries and blades.
+- Responsibility for freight, seasonal downtime and replacement units.
+- Map rebuilding after main-board, sensor, base-station or whole-unit replacement.
+- Support horizon for App, firmware, correction services and spare parts.
+
+The lowest installation cost can become the highest lifecycle cost if the correction service is unavailable, the map cannot transfer, or a sensor replacement requires sending the entire mower overseas.
+
+## Are Boundary-Wire Mowers Obsolete?
+
+No. Wire-free products remove a major installation barrier and make zones easier to edit, but a physical boundary can remain useful where an existing installation is stable or satellite and visual conditions are difficult.
+
+Husqvarna’s current EPOS material is instructive. Some models can use virtual or physical boundaries, and the company offers `Support by Wire` in selected weak-satellite areas. The market is not simply moving from one universal technology to another. It is moving toward more installation choices.
+
+For a dealer, the better question is not “old or new?” It is “which boundary system can this team install, diagnose and support reliably at this property?”
+
+## Frequently Asked Questions
+
+### How does a robot lawn mower work without a boundary wire?
+
+It stores a digital map and uses RTK-GNSS, LiDAR, cameras or sensor fusion to estimate its position relative to virtual work zones and stay-out areas.
+
+### Does a wire-free robot mower need GPS?
+
+Not always. RTK systems use GNSS, while some LiDAR- or vision-led mowers can navigate without an RTK antenna. Connected security or remote-control functions may still use GPS or cellular services.
+
+### Is RTK better than LiDAR for a robot mower?
+
+Neither is universally better. RTK is a strong starting point for large sites with suitable sky and correction coverage. LiDAR can provide local mapping without a customer-installed RTK antenna. Mixed environments may benefit from sensor fusion.
+
+### Can a robot mower without a perimeter wire work under trees?
+
+Some models use LiDAR, vision or hybrid systems to maintain operation where satellite visibility is reduced. Performance depends on the exact mower, canopy, buildings, passages and fallback behavior, so the site should be tested.
+
+### Does no antenna mean there is no subscription?
+
+No. A mower may avoid a local antenna but still use 4G, cloud maps, Network RTK or other regional services. Check each service, free period and renewal term separately.
+
+### What is the best wire-free robot mower for commercial buyers?
+
+There is no brand-level answer without a site and service requirement. Commercial buyers should start with coverage, fleet management, local repair, parts, safety documentation, connectivity and a written uptime plan.
+
+## The Bottom Line
+
+A robot lawn mower without a perimeter wire replaces a physical loop with a positioning and mapping system. RTK provides corrected satellite positioning; LiDAR builds a geometric map; vision interprets the scene; fusion combines several inputs.
+
+The technology label is only the first filter. The actual operating package includes the dock, map, account, network or reference infrastructure, safety boundary, service route and replacement plan. For distributors and professional buyers, the best wire-free system is the one that can be verified on the real site and supported for the full product life.
+
+For related company and supply-chain research, see World Clean Biz’s guides to [robotic lawn mower manufacturers in China](https://worldcleanbiz.com/blog/robotic-lawn-mower-manufacturers-china), [MAMMOTION and LUBA](https://worldcleanbiz.com/blog/who-makes-luba-robot-mowers-mammotion-agilex), [Segway Navimow and Willand](https://worldcleanbiz.com/blog/who-owns-segway-navimow-ninebot-willand), [Husqvarna Automower](https://worldcleanbiz.com/blog/who-owns-husqvarna-automower-motorcycles) and [Sunseeker robot mowers](https://worldcleanbiz.com/blog/who-makes-sunseeker-robot-mowers-zhejiang-sunseeker).
+
+## Official Sources
+
+- [NOAA National Geodetic Survey real-time GNSS guidelines](https://www.ngs.noaa.gov/PUBS_LIB/NGSRealTimeUserGuidelines.v2.0.pdf)
+- [Husqvarna EPOS installation options](https://us-support.husqvarna.com/en/automower/KA-70323)
+- [Husqvarna EPOS technology and infrastructure](https://www.husqvarna.com/us/discover/products-and-innovations/epos/)
+- [Husqvarna EPOS Support by Wire](https://us-support.husqvarna.com/en/automower/KA-70234)
+- [MAMMOTION LUBA 3 product specifications](https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower)
+- [Segway Navimow i2 LiDAR product specifications](https://navimow.segway.com/products/navimow-i2-lidar-robot-lawn-mower)
+- [Sunseeker S4 specifications](https://sunseekertech.com/global/s4/specs)
+- [WORX Landroid Vision technology](https://www.worx.com/landroid/vision-technology/)
+- [IEC 60335-2-107 robotic lawnmower safety standard](https://webstore.iec.ch/en/publication/29806)
