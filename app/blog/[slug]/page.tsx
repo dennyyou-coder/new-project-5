@@ -357,9 +357,9 @@ export default async function InsightDetailPage({ params }: Props) {
                 </div>
               ) : null}
               <div className="blog-author-bio-box">
-                <img src="/images/site-refresh/about/about-hero-denny.webp" alt="Denny You, founder of World Clean Biz" loading="lazy" decoding="async" />
+                <img src="/images/site-refresh/about/about-hero-denny.webp" alt={`${article.author}, founder of World Clean Biz`} loading="lazy" decoding="async" />
                 <div>
-                  <strong>Denny You</strong>
+                  <strong>{article.author}</strong>
                   <span>Founder, World Clean Biz · Organizer, World Clean Expo</span>
                   <p>
                     Inside the cleaning industry since 2006, Denny reviews product, supplier and category signals for practical business decisions.

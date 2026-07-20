@@ -7,6 +7,7 @@ type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
 const siteUrl = "https://worldcleanbiz.com";
 const articlesPerPage = 10;
+const featuredSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 
 export async function generateMetadata({ searchParams }: { searchParams?: SearchParams }): Promise<Metadata> {
   const resolvedSearchParams = searchParams ? await searchParams : {};
@@ -319,9 +320,10 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
     return categoryMatches && matchesTopic(article, selectedTopic);
   });
   const hasFilter = Boolean(selectedCategory && selectedCategory !== "All") || Boolean(selectedTopic);
+  const latestFeaturedSeriesArticle = articles.find((article) => article.series === featuredSeries);
   const featured = hasFilter
     ? filteredArticles[0]
-    : articles[0];
+    : latestFeaturedSeriesArticle || articles[0];
   const feedArticles = hasFilter
     ? filteredArticles.filter((article) => article.slug !== featured?.slug)
     : articles.filter((article) => article.slug !== featured?.slug);

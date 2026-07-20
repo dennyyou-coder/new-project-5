@@ -155,8 +155,8 @@ export default function WorldCleanExpoPage() {
               supply chains, global buyers and business opportunities.
             </p>
             <div className="expo-hero-meta" aria-label="Event details">
-              <span>November 2026</span>
-              <span>Suzhou International Expo Center</span>
+              <span>November 18–20, 2026</span>
+              <span>Suzhou Shishan International Convention Center</span>
               <span>China</span>
             </div>
             <IntentButtons location="hero" />
@@ -352,8 +352,8 @@ export default function WorldCleanExpoPage() {
               visitor registration and event updates as they become available.
             </p>
             <div className="expo-final-meta">
-              <span>November 2026</span>
-              <span>Suzhou International Expo Center</span>
+              <span>November 18–20, 2026</span>
+              <span>Suzhou Shishan International Convention Center</span>
               <span>China</span>
             </div>
           </div>

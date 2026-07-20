@@ -21,6 +21,9 @@ export type Insight = {
   coverImage?: string;
   coverAlt?: string;
   youtubeId?: string;
+  series?: string;
+  seriesTitle?: string;
+  seriesEpisode?: string;
   content: string;
 };
 
@@ -116,6 +119,9 @@ export function getInsights(): Insight[] {
         coverImage: coverImage ? String(coverImage) : firstMarkdownImage(content),
         coverAlt: data.cover_alt ? String(data.cover_alt) : undefined,
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
+        series: data.series ? String(data.series) : undefined,
+        seriesTitle: data.series_title ? String(data.series_title) : undefined,
+        seriesEpisode: data.series_episode ? String(data.series_episode) : undefined,
         content
       }];
     })
