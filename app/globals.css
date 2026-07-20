@@ -20763,11 +20763,18 @@ button.contact-help-card > .contact-help-card-copy > span {
 .blog-editorial-actions .button-secondary { border-color: rgba(255,255,255,.42); color: #fff; background: transparent; }
 
 .insights-featured-hero-copy h2 {
-  margin: 10px 0 16px;
+  margin: 10px 0;
   color: var(--ink);
   font-size: clamp(32px, 4vw, 52px);
   line-height: 1.05;
   letter-spacing: -.035em;
+}
+.insights-featured-hero-copy p.insights-featured-episode-title {
+  margin: 0;
+  color: var(--primary);
+  font-size: clamp(18px, 1.8vw, 24px);
+  font-weight: 760;
+  line-height: 1.25;
 }
 .insights-feed-item,
 .blog-archive-item { content-visibility: auto; contain-intrinsic-size: 240px; }

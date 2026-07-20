@@ -389,7 +389,10 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
               <div className="insights-featured-hero-copy">
                 <p className="eyebrow">Featured Article</p>
                 <span className="insights-category">{featured.category}</span>
-                <h2>{featured.title}</h2>
+                <h2>{featured.seriesTitle || featured.title}</h2>
+                {featured.seriesTitle ? (
+                  <p className="insights-featured-episode-title">{featured.title}</p>
+                ) : null}
                 <p>{featured.excerpt}</p>
                 <div className="insights-card-meta">
                   <span>{displayDate(featured)}</span>
