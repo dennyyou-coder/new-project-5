@@ -111,6 +111,10 @@ function displayPublishedDate(value: string) {
   }).format(parsed);
 }
 
+function episodeDisplayTitle(title: string) {
+  return title.replace(/^Episode\s+\d+\s*[|:—–-]\s*/i, "");
+}
+
 function extractFaqSchema(content: string, pageUrl: string) {
   const faqStart = content.match(/^## FAQ\s*$/m);
 
@@ -218,6 +222,25 @@ export default async function InsightDetailPage({ params }: Props) {
       !sameCategory.some((related) => related.slug === item.slug)
   );
   const related = [...relatedOverrides, ...sameCategory, ...fillers].slice(0, 3);
+  const seriesArticles = article.series
+    ? articles
+        .filter((item) => item.series === article.series)
+        .sort((a, b) => {
+          const episodeA = Number.parseInt(a.seriesEpisode || "", 10);
+          const episodeB = Number.parseInt(b.seriesEpisode || "", 10);
+
+          if (Number.isFinite(episodeA) && Number.isFinite(episodeB) && episodeA !== episodeB) {
+            return episodeA - episodeB;
+          }
+
+          return a.sortDate.localeCompare(b.sortDate);
+        })
+    : [];
+  const seriesIndex = seriesArticles.findIndex((item) => item.slug === article.slug);
+  const previousEpisode = seriesIndex > 0 ? seriesArticles[seriesIndex - 1] : undefined;
+  const nextEpisode = seriesIndex >= 0 && seriesIndex < seriesArticles.length - 1
+    ? seriesArticles[seriesIndex + 1]
+    : undefined;
   const hasTakeaways = article.takeaways.length > 0;
   const articleContent = removeLeadingArticleTitleAndCover(
     article.content,
@@ -302,6 +325,9 @@ export default async function InsightDetailPage({ params }: Props) {
             <span>{displayPublishedDate(publishedTime)}</span>
             <span>{article.readingTime}</span>
           </div>
+          {article.seriesTitle ? (
+            <p className="blog-article-series-title">{article.seriesTitle}</p>
+          ) : null}
           <h1>{article.title}</h1>
           <p>{article.excerpt}</p>
           <p className="signal-detail-author">By <Link href="/about">{article.author}</Link></p>
@@ -369,6 +395,47 @@ export default async function InsightDetailPage({ params }: Props) {
               </div>
             </footer>
           </article>
+
+        {article.seriesTitle && seriesArticles.length ? (
+          <section className="blog-series-navigation" id="series-episodes" aria-labelledby="series-episodes-title">
+            <div className="blog-series-navigation-heading">
+              <p>{article.seriesTitle}</p>
+              <h2 id="series-episodes-title">All Episodes</h2>
+            </div>
+
+            {previousEpisode || nextEpisode ? (
+              <nav className="blog-series-directions" aria-label="Previous and next episodes">
+                {previousEpisode ? (
+                  <Link className="blog-series-direction" href={`/blog/${previousEpisode.slug}`}>
+                    <span>Previous Episode</span>
+                    <strong>{previousEpisode.title}</strong>
+                  </Link>
+                ) : null}
+                {nextEpisode ? (
+                  <Link className="blog-series-direction blog-series-direction-next" href={`/blog/${nextEpisode.slug}`}>
+                    <span>Next Episode</span>
+                    <strong>{nextEpisode.title}</strong>
+                  </Link>
+                ) : null}
+              </nav>
+            ) : null}
+
+            <ol className="blog-series-episode-list">
+              {seriesArticles.map((item) => {
+                const isCurrentEpisode = item.slug === article.slug;
+
+                return (
+                  <li className={isCurrentEpisode ? "is-current" : undefined} key={item.slug}>
+                    <Link href={`/blog/${item.slug}`} aria-current={isCurrentEpisode ? "page" : undefined}>
+                      <span>{item.seriesEpisode ? `Episode ${item.seriesEpisode}` : "Episode"}</span>
+                      <strong>{episodeDisplayTitle(item.title)}</strong>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ol>
+          </section>
+        ) : null}
 
         {related.length ? (
           <div className="blog-related-signals">
