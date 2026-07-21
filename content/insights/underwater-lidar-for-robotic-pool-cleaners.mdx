@@ -1,0 +1,57 @@
+---
+title: "Underwater LiDAR Is Becoming a System for Robotic Pool Cleaners"
+description: "Robotic pool cleaners need better positioning and path coverage. Benewake's underwater ToF LiDAR portfolio shows how sensing is moving from a single component to a tiered engineering system."
+slug: "underwater-lidar-for-robotic-pool-cleaners"
+author: "Denny You"
+language: en
+source_language: zh
+source_article_path: "30-发布版/泳池机器人的水下 LiDAR，开始有了系统性方案/发布版.md"
+source_article_title: "泳池机器人的水下 LiDAR，开始有了系统性方案"
+source_confirmed_final_version: "Chinese published version, 2026-07-12"
+source_updated_at: "2026-07-12"
+category: "Pool Robotics"
+tags: ["underwater LiDAR", "robotic pool cleaners", "Benewake", "ToF", "navigation"]
+takeaways: ["Navigation is becoming a key competitive layer in pool robotics.", "Underwater optics require purpose-built sensing rather than a direct transfer from robot vacuums.", "A tiered LiDAR portfolio can match flagship, mainstream and entry-level robots to different cost and performance needs."]
+coverImage: "/images/blog/underwater-lidar-for-robotic-pool-cleaners-image-001.webp"
+wechat_published_url: ""
+worldcleanbiz_url: ""
+english_version: "en-v0.1"
+confirmed_english_version: ""
+english_image_review: passed
+english_publish_review: passed
+worldcleanbiz_publish_status: ready_for_publish
+created_at: "2026-07-21"
+updated_at: "2026-07-21"
+---
+
+Robotic pool cleaners are moving beyond the basic question of whether a machine can work underwater. The next competition is whether it can understand its position, estimate the pool boundary and know which areas have already been cleaned.
+
+Robot vacuums improved through the same progression: random movement, laser navigation, vision and multi-sensor fusion. Better cleaning came not only from more suction, but from knowing where the robot was and where it should go next. Pool robots need the same intelligence in a much harder environment.
+
+![Why underwater positioning matters](/images/blog/underwater-lidar-for-robotic-pool-cleaners-image-002.webp)
+
+Underwater light is absorbed and scattered. The surface and floor create complex reflections, outdoor sunlight raises receiver noise, and irregular pools add steps, curves and depth transitions. A pool robot cannot simply move an indoor navigation stack into the water.
+
+Poor positioning affects path planning, edge cleaning, coverage and return behavior. The robot may repeat areas, miss corners or misjudge steps. Users do not see a sensor error; they see incomplete cleaning, confused movement and more returns.
+
+Earlier pool robots relied mainly on collisions, ultrasound, IMUs, wheel odometry and vision. Those technologies helped the category move from random cleaning toward basic planning. But as manufacturers compete on coverage, edge performance and irregular-pool handling, front-end sensing becomes the bottleneck.
+
+![From basic sensing to underwater ToF ranging](/images/blog/underwater-lidar-for-robotic-pool-cleaners-image-003.webp)
+
+## Underwater ToF is an engineering problem
+
+Benewake is addressing the problem with underwater time-of-flight LiDAR. The principle is simple: emit a light pulse and measure its round-trip time. The difficult part is adapting the optics, receiving chain, timing, noise control and echo-recognition algorithms to water.
+
+The TF-UW series is designed for outdoor pools with resistance to ambient light up to 100 klux. Benewake also specifies centimeter-level ranging accuracy and millimeter-level distance resolution. Those figures matter because a few centimeters of drift can become unstable edge tracking, poor turning or missed corners.
+
+For a robot manufacturer, a laboratory demonstration is not enough. The sensor must fit the product, pass waterproofing and reliability requirements, remain consistent in mass production and arrive within a highly seasonal production window.
+
+The next issue is product segmentation. A flagship robot handling irregular pools and steps may need 360-degree perception and longer range. A mainstream model needs stable performance without carrying unnecessary bill-of-material cost. An entry model may not need full mapping but still needs more reliable distance input than collision or ultrasound alone.
+
+![Benewake underwater LiDAR portfolio](/images/blog/underwater-lidar-for-robotic-pool-cleaners-image-004.webp)
+
+Benewake's portfolio reflects those layers. VLS-H5 provides 360-degree underwater scanning for complex geometry, while TF-UW500 offers up to five-meter single-point ranging for higher-end systems. TF-UW300 targets mainstream machines with a three-meter range. TF-UW150 uses shorter range, lower power and UART/IIC interfaces for cost- and space-sensitive products.
+
+The point is not to create more SKUs. It is to avoid a common mismatch: a sensor that is insufficient for a flagship robot, too expensive for a volume model and unaffordable for an entry product.
+
+Benewake says it has delivered more than 100,000 single-point LiDAR sensors to robotic pool-cleaner customers worldwide. That moves the discussion beyond proof of concept. As product cycles shorten, sensor selection, algorithm integration and production timing all affect whether a new robot reaches the market successfully. At this stage, helping manufacturers avoid the wrong sensing route is itself a competitive advantage.
