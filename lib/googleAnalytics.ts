@@ -47,3 +47,154 @@ export function shouldLoadGoogleAnalytics({
     isProductionAnalyticsHost(hostname) && !isAutomated && !isInternal
   );
 }
+
+type AnalyticsScriptElement = {
+  async: boolean;
+  id: string;
+  src: string;
+};
+
+export type GoogleAnalyticsWindow = {
+  location: {
+    hostname: string;
+    pathname: string;
+    search: string;
+    hash: string;
+  };
+  navigator: {
+    webdriver?: boolean;
+  };
+  localStorage: {
+    getItem(key: string): string | null;
+    setItem(key: string, value: string): void;
+    removeItem(key: string): void;
+  };
+  history: {
+    replaceState(
+      data: unknown,
+      unused: string,
+      url?: string | URL | null
+    ): void;
+  };
+  dataLayer?: unknown[][];
+  gtag?: (...args: unknown[]) => void;
+  [key: string]: unknown;
+};
+
+export type GoogleAnalyticsDocument = {
+  createElement(tagName: "script"): AnalyticsScriptElement;
+  getElementById(id: string): unknown | null;
+  head: {
+    appendChild(node: AnalyticsScriptElement): unknown;
+  };
+};
+
+export type AnalyticsInitializationResult = {
+  loaded: boolean;
+  reason:
+    | "allowed"
+    | "non-production-host"
+    | "automated"
+    | "internal-browser"
+    | "already-initialized";
+};
+
+function readInternalBrowserState(
+  windowLike: GoogleAnalyticsWindow
+): boolean {
+  const control = getInternalTrafficControl(windowLike.location.search);
+  let isInternal = control === "enable";
+
+  try {
+    if (control === "enable") {
+      windowLike.localStorage.setItem(INTERNAL_TRAFFIC_STORAGE_KEY, "1");
+    } else if (control === "disable") {
+      windowLike.localStorage.removeItem(INTERNAL_TRAFFIC_STORAGE_KEY);
+      isInternal = false;
+    } else {
+      isInternal =
+        windowLike.localStorage.getItem(INTERNAL_TRAFFIC_STORAGE_KEY) ===
+        "1";
+    }
+  } catch {
+    isInternal = control === "enable";
+  }
+
+  if (control) {
+    windowLike.history.replaceState(
+      null,
+      "",
+      cleanInternalTrafficUrl(
+        windowLike.location.pathname,
+        windowLike.location.search,
+        windowLike.location.hash
+      )
+    );
+  }
+
+  return isInternal;
+}
+
+export function initializeGoogleAnalytics(
+  windowLike: GoogleAnalyticsWindow,
+  documentLike: GoogleAnalyticsDocument
+): AnalyticsInitializationResult {
+  const isInternal = readInternalBrowserState(windowLike);
+  const isAutomated = windowLike.navigator.webdriver === true;
+  const disableKey = `ga-disable-${GOOGLE_ANALYTICS_MEASUREMENT_ID}`;
+
+  let exclusionReason:
+    | "non-production-host"
+    | "automated"
+    | "internal-browser"
+    | null = null;
+
+  if (!isProductionAnalyticsHost(windowLike.location.hostname)) {
+    exclusionReason = "non-production-host";
+  } else if (isAutomated) {
+    exclusionReason = "automated";
+  } else if (isInternal) {
+    exclusionReason = "internal-browser";
+  }
+
+  if (exclusionReason) {
+    windowLike[disableKey] = true;
+    return {
+      loaded: false,
+      reason: exclusionReason
+    };
+  }
+
+  delete windowLike[disableKey];
+
+  if (documentLike.getElementById(GOOGLE_ANALYTICS_SCRIPT_ID)) {
+    return {
+      loaded: true,
+      reason: "already-initialized"
+    };
+  }
+
+  const dataLayer = windowLike.dataLayer ?? [];
+  windowLike.dataLayer = dataLayer;
+  windowLike.gtag =
+    windowLike.gtag ??
+    ((...args: unknown[]) => {
+      dataLayer.push(args);
+    });
+
+  windowLike.gtag("js", new Date());
+  windowLike.gtag("config", GOOGLE_ANALYTICS_MEASUREMENT_ID);
+
+  const script = documentLike.createElement("script");
+  script.id = GOOGLE_ANALYTICS_SCRIPT_ID;
+  script.async = true;
+  script.src =
+    `https://www.googletagmanager.com/gtag/js?id=` +
+    GOOGLE_ANALYTICS_MEASUREMENT_ID;
+  documentLike.head.appendChild(script);
+
+  return {
+    loaded: true,
+    reason: "allowed"
+  };
+}
