@@ -11,6 +11,11 @@ const [landing, category, card, css] = await Promise.all([
   read("components/GuideCard.tsx"),
   read("app/globals.css")
 ]);
+const [header, footer, sitemap] = await Promise.all([
+  read("components/Header.tsx"),
+  read("components/Footer.tsx"),
+  read("app/sitemap.ts")
+]);
 
 test("Guides landing has reader-facing categories and editorial return path", () => {
   assert.match(landing, /Industry Guides/);
@@ -39,4 +44,11 @@ test("Guides have isolated responsive styles", () => {
   assert.match(css, /Guides content hub/);
   assert.match(css, /\.guides-category-grid/);
   assert.match(css, /\.guide-card/);
+});
+
+test("Guides are reachable from global navigation and sitemap", () => {
+  assert.match(header, /\{ href: "\/guides", label: "Guides" \}/);
+  assert.match(footer, /href="\/guides"/);
+  assert.match(sitemap, /"\/guides"/);
+  assert.match(sitemap, /GUIDE_TYPE_CONFIG/);
 });

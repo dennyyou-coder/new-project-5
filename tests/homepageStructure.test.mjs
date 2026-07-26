@@ -98,6 +98,7 @@ test("header keeps navigation but removes the fixed report CTA", () => {
   for (const label of [
     "Home",
     "Blog",
+    "Guides",
     "Sourcing",
     "Market Reports",
     "World Clean Expo",
@@ -109,4 +110,8 @@ test("header keeps navigation but removes the fixed report CTA", () => {
 
   assert.doesNotMatch(headerSource, /TallyReportButton/);
   assert.doesNotMatch(headerSource, /header-cta/);
+});
+
+test("homepage editorial proof excludes search guides", () => {
+  assert.match(homeSource, /getEditorialInsights\(getInsights\(\)\)/);
 });

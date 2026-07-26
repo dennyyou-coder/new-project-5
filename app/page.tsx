@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
 import { TallyButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
+import { getEditorialInsights } from "@/lib/insightCollections";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" }
@@ -99,7 +100,7 @@ function excerptFor(article: Insight) {
 }
 
 export default function HomePage() {
-  const featuredInsights = getFeaturedInsights(getInsights());
+  const featuredInsights = getFeaturedInsights(getEditorialInsights(getInsights()));
 
   return (
     <main className="home-v9">

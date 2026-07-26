@@ -1,15 +1,19 @@
 import type { MetadataRoute } from "next";
 import { getInsights } from "@/lib/content";
+import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
 
 const baseUrl = "https://worldcleanbiz.com";
 const lastModified = new Date("2026-06-03");
 const sourcingProductPublishedAt = new Date("2026-07-12T00:00:00+08:00");
+const guideRoutes = GUIDE_TYPE_CONFIG.map(({ href }) => href);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
     "/blog",
     "/blog/archive",
+    "/guides",
+    ...guideRoutes,
     "/sourcing",
     "/sourcing/lawn-robots",
     "/sourcing/pool-robots",
