@@ -65,7 +65,7 @@ export default function GuidesPage() {
   };
 
   return (
-    <main className="guides-hub">
+    <div className="guides-hub">
       <section className="guides-hero">
         <div className="insights-page-container guides-hero-grid">
           <div>
@@ -161,6 +161,6 @@ export default function GuidesPage() {
           ])
         }}
       />
-    </main>
+    </div>
   );
 }

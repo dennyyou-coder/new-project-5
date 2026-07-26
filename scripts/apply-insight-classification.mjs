@@ -83,18 +83,18 @@ function classifyGuideType(title, slug) {
     return "sourcing";
   }
   if (
-    /\bmaintenance\b|\bnot (?:picking up|dispensing)\b|\btroubleshoot|\brepair\b|\bhow long\b|\bcleaning cycle\b/.test(
-      text
-    )
-  ) {
-    return "maintenance";
-  }
-  if (
     /\bbuying guide\b|\bbuyer'?s guide\b|\bbest\b|\bfor pet hair\b|\bfor small yards\b/.test(
       text
     )
   ) {
     return "buying";
+  }
+  if (
+    /\bmaintenance\b|\bnot (?:picking up|dispensing)\b|\btroubleshoot|\brepair\b|\bhow long\b|\bcleaning cycle\b/.test(
+      text
+    )
+  ) {
+    return "maintenance";
   }
   return "explainer";
 }

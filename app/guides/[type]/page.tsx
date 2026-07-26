@@ -83,7 +83,7 @@ export default async function GuideTypePage({ params }: PageProps) {
   };
 
   return (
-    <main className="guides-hub guide-category-page">
+    <div className="guides-hub guide-category-page">
       <section className="guides-category-hero">
         <div className="insights-page-container">
           <nav className="blog-visible-breadcrumb" aria-label="Breadcrumb">
@@ -120,6 +120,6 @@ export default async function GuideTypePage({ params }: PageProps) {
           __html: JSON.stringify([itemListSchema, breadcrumbSchema])
         }}
       />
-    </main>
+    </div>
   );
 }

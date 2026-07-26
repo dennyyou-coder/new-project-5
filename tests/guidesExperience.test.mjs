@@ -46,6 +46,11 @@ test("Guides have isolated responsive styles", () => {
   assert.match(css, /\.guide-card/);
 });
 
+test("Guide routes do not introduce a second main landmark", () => {
+  assert.doesNotMatch(landing, /<main className="guides-hub"/);
+  assert.doesNotMatch(category, /<main className="guides-hub/);
+});
+
 test("Guides are reachable from global navigation and sitemap", () => {
   assert.match(header, /\{ href: "\/guides", label: "Guides" \}/);
   assert.match(footer, /href="\/guides"/);

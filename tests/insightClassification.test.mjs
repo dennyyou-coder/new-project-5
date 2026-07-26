@@ -65,3 +65,16 @@ test("six commercial guides have unique priorities and editorial articles have n
     [10, 20, 30, 40, 50, 60]
   );
 });
+
+test("articles titled as buying guides are classified for the buying journey", async () => {
+  const invalid = [];
+
+  for (const file of files) {
+    const source = await readFile(new URL(file, directory), "utf8");
+    if (!/^content_class:\s*"?search"?\s*$/m.test(source)) continue;
+    if (!/^title:\s*".*\bBuying Guide\b.*"\s*$/im.test(source)) continue;
+    if (!/^guide_type:\s*"?buying"?\s*$/m.test(source)) invalid.push(file);
+  }
+
+  assert.deepEqual(invalid, []);
+});

@@ -1078,7 +1078,7 @@
     {
       "slug": "portable-carpet-cleaner-buying-guide",
       "reason": "existing_explicit_class",
-      "guideType": "maintenance"
+      "guideType": "buying"
     },
     {
       "slug": "roborock-robot-mowers-product-line-dealer-rollout",
@@ -1215,7 +1215,7 @@
     {
       "slug": "robotic-pool-cleaner-buying-guide",
       "reason": "existing_explicit_class",
-      "guideType": "comparison"
+      "guideType": "buying"
     },
     {
       "slug": "robotic-pool-cleaner-cost-buying-guide",
@@ -1267,7 +1267,7 @@
     {
       "slug": "robotic-pool-skimmer-buying-guide",
       "reason": "existing_explicit_class",
-      "guideType": "maintenance"
+      "guideType": "buying"
     },
     {
       "slug": "robotic-trimmers-edge-cutting-robots",
