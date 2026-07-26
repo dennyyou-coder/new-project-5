@@ -20920,6 +20920,7 @@ button.contact-help-card > .contact-help-card-copy > span {
 .blog-archive-page { background: #f4f8fe; }
 .blog-archive-page .section-heading { max-width: 900px; }
 .blog-archive-actions { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; margin-top: 24px; }
+.blog-archive-actions span { display: inline-flex; gap: 4px; }
 .blog-archive-actions strong { color: var(--ink); }
 .blog-archive-actions a { color: var(--primary); font-weight: 800; }
 .archive-category-summary { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin: 36px 0; }

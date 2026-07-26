@@ -67,6 +67,7 @@ test("Content pages have isolated responsive and long-reading styles", () => {
   assert.match(css, /\.blog-visible-breadcrumb/);
   assert.match(css, /overflow-x:\s*auto/);
   assert.match(css, /content-visibility:\s*auto/);
+  assert.match(css, /\.blog-archive-actions span\s*\{[^}]*gap:\s*4px/);
 });
 
 test("Sitemap keeps Blog and Archive discoverable", () => {
