@@ -22213,6 +22213,47 @@ button.contact-help-card > .contact-help-card-copy > span {
   line-height: 1.4;
 }
 
+.archive-content-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0;
+}
+
+.archive-content-nav a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 9px 15px;
+  color: var(--text);
+  background: #fff;
+  font-weight: 800;
+}
+
+.archive-content-group {
+  scroll-margin-top: 96px;
+  padding-top: 42px;
+}
+
+.archive-content-group + .archive-content-group {
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.archive-content-group-heading {
+  max-width: 760px;
+  margin-bottom: 24px;
+}
+
+.archive-content-group-heading h2 {
+  margin: 0 0 8px;
+  color: var(--navy);
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.archive-content-group-heading p:last-child {
+  color: var(--muted);
+}
+
 @media (max-width: 900px) {
   .guides-hero-grid,
   .guides-category-grid,

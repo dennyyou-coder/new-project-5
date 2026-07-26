@@ -248,6 +248,9 @@ export default async function InsightDetailPage({ params }: Props) {
     article.coverImage
   );
   const url = `${siteUrl}/blog/${article.slug}`;
+  const isGuide = article.contentClass === "search" && article.guideType;
+  const collectionHref = isGuide ? `/guides/${article.guideType}` : "/blog";
+  const collectionName = isGuide ? "Guides" : "Blog";
   const publishedTime = article.publishedAt || article.date;
   const coverImage = absoluteUrl(article.coverImage);
   const articleSchema = {
@@ -265,8 +268,11 @@ export default async function InsightDetailPage({ params }: Props) {
     articleSection: article.category,
     keywords: article.tags,
     isPartOf: {
-      "@type": "Blog",
-      "@id": `${siteUrl}/blog`
+      "@type": "CollectionPage",
+      name: collectionName === "Guides"
+        ? "World Clean Biz Industry Guides"
+        : "World Clean Biz Blog",
+      url: `${siteUrl}${collectionHref}`
     },
     author: {
       "@type": "Person",
@@ -298,8 +304,8 @@ export default async function InsightDetailPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Blog",
-        item: `${siteUrl}/blog`
+        name: collectionName,
+        item: `${siteUrl}${collectionHref}`
       },
       {
         "@type": "ListItem",
@@ -318,7 +324,7 @@ export default async function InsightDetailPage({ params }: Props) {
       <section className="blog-article-hero">
         <div className="blog-article-container">
           <nav className="blog-visible-breadcrumb" aria-label="Breadcrumb">
-            <Link href="/">Home</Link><span>/</span><Link href="/blog">Blog</Link><span>/</span><span>{article.category}</span>
+            <Link href="/">Home</Link><span>/</span><Link href={collectionHref}>{collectionName}</Link><span>/</span><span>{article.category}</span>
           </nav>
           <div className="signal-detail-meta">
             <span>{article.category}</span>

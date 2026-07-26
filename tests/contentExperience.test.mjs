@@ -69,3 +69,21 @@ test("Sitemap keeps Blog and Archive discoverable", () => {
   assert.match(sitemap, /"\/blog"/);
   assert.match(sitemap, /"\/blog\/archive"/);
 });
+
+test("Archive separates analysis and guides without changing article links", () => {
+  assert.match(archive, /Analysis &amp; Insights/);
+  assert.match(archive, /Guides &amp; Comparisons/);
+  assert.match(archive, /href="#analysis"/);
+  assert.match(archive, /href="#guides"/);
+  assert.match(archive, /getEditorialInsights/);
+  assert.match(archive, /getGuideInsights/);
+  assert.match(archive, /href=\{`\/blog\/\$\{article\.slug\}`\}/);
+});
+
+test("article breadcrumbs reflect the reader-facing collection", () => {
+  assert.match(article, /article\.contentClass === "search"/);
+  assert.match(article, /\/guides\/\$\{article\.guideType\}/);
+  assert.match(article, /collectionName/);
+  assert.match(article, /World Clean Biz Industry Guides/);
+  assert.match(article, /url: `\$\{siteUrl\}\$\{collectionHref\}`/);
+});
