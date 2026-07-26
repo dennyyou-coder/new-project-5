@@ -467,7 +467,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
 
       <section className="section insights-publication-section">
         <div className="insights-page-container insights-publication-layout">
-          <main className="insights-feed" aria-label="Industry insight articles">
+          <section className="insights-feed" aria-label="Industry insight articles">
             {visibleFeedArticles.length ? (
               visibleFeedArticles.map((article, index) => (
               <ArticleFeedItem article={article} index={pageStart + index} key={article.slug} />
@@ -479,7 +479,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
                 <Link href="/blog">View all articles</Link>
               </div>
             ) : null}
-          </main>
+          </section>
 
           <aside className="insights-sidebar insights-sidebar-v2" aria-label="Insights sidebar">
             <SidebarContent

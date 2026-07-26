@@ -21,6 +21,10 @@ test("Blog has one responsive sidebar and clear commercial entry points", () => 
   assert.doesNotMatch(blog, /insights-sidebar-mobile/);
 });
 
+test("Blog feed does not introduce a nested main landmark", () => {
+  assert.doesNotMatch(blog, /<main className="insights-feed"/);
+});
+
 test("Blog images use intentional eager and lazy loading", () => {
   assert.match(blog, /fetchPriority="high"/);
   assert.match(blog, /loading="lazy"/);
