@@ -1,0 +1,1569 @@
+{
+  "generatedAt": "2026-07-26",
+  "total": 345,
+  "editorialCount": 174,
+  "searchCount": 171,
+  "unclassifiedCount": 0,
+  "editorial": [
+    {
+      "slug": "aiper-fluidra-pool-robotics-alliance",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "amazon-first-stop-for-backyard-robotics",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "american-factory-and-manufacturing-transfer",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "anker-cleaning-appliance-strategy-analysis",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "anker-innovation-lacks-methodology",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "anker-needs-a-hard-battle",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "anker-prospectus-trillion-yuan-cleaning-industry",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "anker-rmb-30-billion-shallow-sea-strategy",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "anker-shallow-sea-strategy-and-talent-platform",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "backyard-robotics-china-next-hardware-battlefield",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "backyard-robots-price-and-channel-war",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "beatbot-in-leifeng-coverage",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "bissell-barkbath-pet-vacuum-cleaner",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "bissell-crosswave-hard-floor-washer-logic",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "bissell-itc-337-investigation-against-tineco",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "bosch-cordless-dust-collector",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "can-dji-become-top-three-in-robot-vacuums",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "casual-gossip-on-dji-robot-vacuum",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "ces-2026-backyard-robot-war",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "china-cleaning-appliance-financial-reality-check",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "china-cleaning-robot-giants-move-into-backyard",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "china-premium-vacuum-brand-opportunity",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "china-us-trade-war-pause",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "chinese-backyard-robot-brands-global-ope-arena",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "chinese-cleaning-brands-at-ces-2026",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "chinese-cleaning-robot-brands-at-ces",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "cleaning-appliance-companies-at-awe",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "cleaning-appliance-industry-age-of-navigation",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "cleaning-appliance-moq-pricing-hidden-costs-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "cleaning-industry-news-roundup-2026-06-20",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "collapse-of-godfreys",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "commercial-cleaning-robot-manufacturers-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "commercial-robotic-mower-market-navimow-mammotion",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "compliance-certification-cleaning-appliances-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "deerma-floorcare-value-for-money-limit",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "delonghi-group-company-history-and-appliance-brands",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dewalts-rise-harvard-case",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dji-enters-robot-vacuums",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dji-goes-to-the-ground-dreame-and-insta360-go-to-the-sky",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dji-is-running-out-of-time",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dji-romo-launch-analysis",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dji-romo-robot-vacuum-preview",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dji-romo-weaknesses-exposed",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "do-you-still-need-trade-shows-if-you-know-the-suppliers",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dreame-douyin-counterattack-against-tineco",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dreame-new-disruptor-in-vacuums",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dreame-rise-to-10-billion-in-five-years",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-at-a-crossroads",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-fights-bosch-again",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-finally-sells-self-emptying-vacuum",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-hard-floor-washer-exposed",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-makes-another-big-move",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-nautik-is-not-a-real-hard-floor-washer",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-new-product-push-premium-innovation",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-new-product-review-2025",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dyson-new-product-review",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "dysons-anxiety",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "ecovacs-2018-annual-report-signals",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "ecovacs-2019-and-industry-landscape-shift",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "ecovacs-and-irobot-cooperation-agreement",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "ecovacs-at-a-crossroads",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "ecovacs-invests-in-battery-cell-factory",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "ecovacs-mid-year-report-reading",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "european-tool-brands-battery-alliances",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "eve-of-the-robot-vacuum-battle",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "first-major-industry-shift-in-2019",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "floor-washer-manufacturers-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "freudenberg-acquires-nilfisk",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "german-vacuum-brands-in-the-cordless-wave",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "global-power-tool-brands-reshaping-portfolios",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "groupe-seb-2018-annual-report-signals",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "hamilton-beach-2018-annual-report-faithful-translation",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "hard-floor-washers-have-no-profit",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "hidden-risks-in-cordless-vacuum-development",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "historic-opportunities-in-the-vacuum-industry",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "how-a-chinese-manufacturer-is-rebuilding-roomba",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "hundred-years-of-cleaning-appliance-history",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "husqvarna-robotic-mowers-after-eu-anti-dumping",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "i-want-to-become-an-influencer",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "ifa-2019-vacuum-cleaner-new-products-by-major-brands",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "impact-of-trump-reciprocal-tariffs",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "irobot-2018-annual-report-faithful-translation",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "irobot-at-a-crossroads",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "irobot-decline-and-the-new-robot-vacuum-order",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "irobot-exits-and-dji-enters",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "irobot-financial-crisis",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "irobot-fourth-quarter-and-full-year-revenue",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "irobot-uncertain-future",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "is-kingclean-mojie-a-good-product",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "jan-6-2026-yard-cleaning-and-tool-news",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "karcher-hidden-champion-in-cleaning-appliances",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "kingclean-chairman-ni-formal-interview",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "laifen-hard-floor-washer-entry-strategy",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "lawsuit-that-changed-robot-vacuum-industry-follow-up",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "lawsuit-that-shaped-the-handheld-vacuum-industry",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "lithium-batteries-in-vacuums-and-power-tools",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "london-talks-55-percent-tariff",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "major-battle-about-to-begin",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "maytronics-robotic-pool-cleaner-reinvention",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "midea-cleaning-appliance-past",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "midea-group-and-the-possible-philips-domestic-appliances-acquisition",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "midea-supplier-summit-review",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "miele-duoflex-hx2-floor-washer",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "migo-ascender-stair-climbing-robot",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "mijia-robot-vacuum-g1-and-xiaomi-ecosystem",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "milwaukee-2761-quiet-revolution-power-tools",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "milwaukee-2761-return-of-the-king",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "milwaukee-next-stop-20-billion",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "mova-took-me-to-meet-a-celebrity",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "narwal-and-the-self-cleaning-robot-vacuum",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "narwal-j6-and-technology-iteration",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "narwal-raises-new-funding",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "narwal-revival-story",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "navimow-robotic-mower-roadmap",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "nilfisk-2018-annual-report-commercial-cleaning",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "one-power-strategy-in-small-appliances",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "pool-and-lawn-robots-self-maintenance",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "pool-robotics-new-competitive-table",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "power-tools-new-cycle-cordless-specialization",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "private-label-cleaning-products-from-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "quality-control-cleaning-appliances-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "roborock-2019-annual-report-breakout-year",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "roborock-at-a-crossroads",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "roborock-channel-shift-online-to-offline-experience",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "roborock-ipo-prospectus-signals",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "roborock-road-to-100-billion-rmb",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "roborock-rockmow-first-generation",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "roborock-targets-70-billion-rmb-by-2029",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robot-vacuum-ceiling-question",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robot-vacuum-industry-at-crossroads",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robot-vacuum-industry-faces-dji-wang-tao",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robot-vacuum-navigation-solution-companies",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-lawn-mower-manufacturers-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-lawn-mower-market-size-yard-automation",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-mower-category-note",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-mower-new-king-2026",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-mower-sales-channels",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-mowers-2026-breakthrough",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-mowers-outdoor-power-equipment-channels",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-mowers-retail-expansion-phase",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-pool-cleaner-manufacturers-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "robotic-pool-cleaner-product-roadmap",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "sample-testing-cleaning-appliances-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "sharkninja-hit-product-pipeline",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "sharkninja-q1-2026-growth-strategy",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "sharkninja-road-to-10-billion-dollars",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "should-shark-and-ninja-be-one-brand",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "spare-parts-warranty-cleaning-appliances-china",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "story-of-hard-floor-washers",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "survival-guide-under-xiaomi-ecosystem-pressure",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "the-counterattack-of-chyson-vacuum-brands",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "the-hidden-front-brushless-motors",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "thoughts-on-mijia-mite-removal-vacuum",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "tineco-lacks-innovation",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "top-ten-vacuum-exporters-in-2019",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "trade-war-scenario-analysis",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "trump-return-and-end-of-trade-war",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "tti-2019-interim-report",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "tti-cleaning-appliance-strategy",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "tti-product-direction",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "two-sides-of-dyson",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "underwater-lidar-for-robotic-pool-cleaners",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "uwant-resilience-in-china-cleaning-appliances",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "vacuum-companies-at-2018-autumn-canton-fair",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "vacuum-industry-2018-review-2019-outlook",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "vietnam-development-and-industrial-hollowing",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "what-sharkninja-makes-us-think-about",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "when-chinese-brands-become-the-powers",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "who-benefits-from-china-us-trade-war-in-vacuums",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "who-is-china-cleaning-king",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "why-china-needs-a-cleaning-appliance-ifa",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "world-class-denny-or-world-class-bragging",
+      "reason": "existing_explicit_class"
+    },
+    {
+      "slug": "xiaomi-ecosystem-at-a-crossroads",
+      "reason": "existing_explicit_class"
+    }
+  ],
+  "search": [
+    {
+      "slug": "above-ground-vs-in-ground-robotic-pool-cleaners",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "aiper-robotic-pool-cleaner-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "aiper-surfer-s2-vs-betta-se-plus",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "aiper-vs-beatbot-fluidra-xingmai",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "aiper-vs-wybot-fluidra-wybotics",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "are-robot-lawn-mowers-safe",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "autonomous-floor-scrubber-roi-calculator",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "autonomous-floor-scrubber",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "beatbot-robotic-pool-cleaner-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "beatbot-vs-dolphin-xingmai-maytronics",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "beatbot-vs-polaris-robotic-pool-cleaners",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "best-robot-vacuum-buying-guide-2022",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "bissell-little-green-hydrosteam-vs-shark-stainstriker-hairpro",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "bissell-little-green-vs-hoover-cleanslate",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "bissell-little-green-vs-spotclean",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "bissell-robot-vacuums-flexclean-strategy",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "bissell-vs-tineco-patent-details",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "building-worlds-no-1-cleaning-show-from-scratch-episode-01",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "can-robot-lawn-mowers-handle-slopes",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "can-you-swim-with-a-robotic-pool-cleaner",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "car-vacuum-cleaner-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "car-vacuum-cleaner-oem-odm-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "carpet-extractor-vs-steam-cleaner",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "commercial-carpet-extractor-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "commercial-cleaning-robot-market",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "commercial-floor-scrubber-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "commercial-robot-mower-supplier-evaluation",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "commercial-robotic-lawn-mowers",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "commercial-robotic-pool-cleaners",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "complete-vacuum-cleaner-buying-guide-20221006",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "cordless-vacuum-cleaner-manufacturing-cost",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "cordless-vacuum-cleaner-oem-manufacturers-china",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "cordless-vacuum-cleaner-oem-odm-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing",
+      "guidePriority": 40
+    },
+    {
+      "slug": "cordless-vs-corded-robotic-pool-cleaners",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dji-romo-p-vs-ecovacs-deebot-x11",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dji-romo-p-vs-roborock-saros-10r",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dolphin-robotic-pool-cleaner-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "dolphin-vs-aiper-maytronics-fluidra",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dolphin-vs-hayward-robotic-pool-cleaners",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dolphin-vs-polaris-pool-cleaners",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dreame-a2-vs-ecovacs-goat-a3000-lidar",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dreame-vs-ecovacs-robot-vacuums",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dyson-china-oem-history",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "dyson-v15-detect-vs-gen5detect",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dyson-v16-piston-animal-vs-gen5detect",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "dyson-washg1-vs-tineco-floor-one",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "factory-audit-cleaning-appliance-suppliers-china",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing",
+      "guidePriority": 50
+    },
+    {
+      "slug": "factory-vs-trading-company-china-cleaning-appliances",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "floor-scrubber-maintenance-checklist",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "floor-scrubber-not-dispensing-water",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "floor-scrubber-not-picking-up-water",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "floor-scrubber-rental-vs-buy",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "floor-sweeper-vs-floor-scrubber",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "floor-washer-oem-odm-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "hard-floor-washer-buying-guide-2022",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "hard-floor-washer-market-brands-oem-opportunities",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "hayward-vs-pentair-vs-fluidra",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "hoover-cleanslate-vs-shark-stainstriker",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "how-long-do-robot-lawn-mowers-last",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "how-long-do-robotic-pool-cleaners-last",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "how-robot-lawn-mowers-work",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "how-robotic-pool-cleaners-work",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "how-to-evaluate-a-chinese-cleaning-appliance-supplier",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "how-to-find-reliable-cleaning-product-suppliers-in-china",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "how-to-understand-complete-supply-chain-transfer",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "husqvarna-automower-vs-mammotion-luba",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "industrial-cleaning-equipment-market",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "is-dreame-owned-by-xiaomi",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "is-roborock-owned-by-xiaomi",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "luba-vs-navimow-mammotion-ninebot",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "mammotion-luba-vs-yuka-robot-mowers",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "narwal-vs-ecovacs-robot-vacuums",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "oem-vs-odm-cleaning-products",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "portable-carpet-cleaner-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "roborock-robot-mowers-product-line-dealer-rollout",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "roborock-rockmow-z1-vs-mammotion-luba-3-awd",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "roborock-vs-dreame-global-strategies",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "roborock-vs-dreame-robot-vacuums",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "roborock-vs-ecovacs-robot-vacuums",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "roborock-vs-narwal-robot-vacuums",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "roborock-vs-roomba-robot-vacuums",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "robot-lawn-mower-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "buying",
+      "guidePriority": 60
+    },
+    {
+      "slug": "robot-lawn-mower-cost-installation-maintenance",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robot-lawn-mower-installation",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robot-lawn-mower-keeps-getting-stuck",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robot-lawn-mower-maintenance-winter-storage",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robot-lawn-mower-manufacturing-cost",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "robot-lawn-mower-not-charging",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robot-lawn-mower-without-perimeter-wire",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robot-lawn-mowers-for-large-lawns",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robot-lawn-mowers-for-small-yards",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "robot-mower-boundary-wire-break",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robot-mower-dealer-networks",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robot-vacuum-cleaners-from-china",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robot-vacuum-distributor-dealer-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing",
+      "guidePriority": 10
+    },
+    {
+      "slug": "robot-vacuum-for-pet-hair-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "buying"
+    },
+    {
+      "slug": "robot-vacuum-manufacturing-cost",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "robot-vacuum-oem-odm-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "robotic-lawn-mower-oem-odm-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "robotic-lawn-mowing-business",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robotic-pool-cleaner-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "robotic-pool-cleaner-cost-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robotic-pool-cleaner-distributor-dealer-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing",
+      "guidePriority": 20
+    },
+    {
+      "slug": "robotic-pool-cleaner-manufacturing-cost",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing",
+      "guidePriority": 30
+    },
+    {
+      "slug": "robotic-pool-cleaner-market-size",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robotic-pool-cleaner-not-charging",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robotic-pool-cleaner-not-climbing-walls",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robotic-pool-cleaner-not-moving",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robotic-pool-cleaner-not-picking-up-debris",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robotic-pool-cleaner-oem-odm-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "robotic-pool-skimmer-buying-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "maintenance"
+    },
+    {
+      "slug": "robotic-trimmers-edge-cutting-robots",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "robotic-vs-suction-vs-pressure-pool-cleaners",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "rtk-vs-lidar-robot-lawn-mowers",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "segway-navimow-vs-husqvarna-automower",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "segway-navimow-vs-worx-landroid-robot-mowers",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "self-emptying-robot-vacuum-market",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "shark-hydrovac-vs-bissell-crosswave",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "shark-powerdetect-speed-vs-dyson-v16-piston-animal",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "shark-stainstriker-vs-bissell-little-green",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "shark-vs-dyson-cordless-vacuums",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "spot-cleaner-manufacturing-cost",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "spot-cleaner-oem-odm-guide",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    },
+    {
+      "slug": "spot-cleaner-vs-carpet-cleaner",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "sunseeker-vs-mammotion-robot-mowers",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "tineco-vs-bissell-crosswave-floor-washers",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "tineco-vs-shark-hydrovac-floor-washers",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "ultrasonic-cleaning-market",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "vs-industry-bissell-three-year-agreement",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "vs-industry-dyson-bissell-supplier-shift",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "walk-behind-vs-ride-on-floor-scrubber",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "what-brands-does-fluidra-own",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "what-is-a-carpet-extractor",
+      "reason": "existing_explicit_class",
+      "guideType": "explainer"
+    },
+    {
+      "slug": "where-are-dyson-vacuums-made",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-makes-aquabot-pool-cleaners-bwt-aquatron",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-makes-dolphin-pool-cleaners-maytronics",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-makes-kenmore-vacuum-cleaners-cleva-transformco",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-makes-luba-robot-mowers-mammotion-agilex",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-makes-mova-robot-mowers-dreame-group",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-makes-philips-vacuum-cleaners-versuni",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-makes-sunseeker-robot-mowers-zhejiang-sunseeker",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-makes-wybot-pool-cleaners-wybotics-wangyuan",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-aeg-electrolux-relationship",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-aiper-fluidra-stake",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-beatbot-xingmai-manufacturing",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-bissell-family-sanitaire",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-black-and-decker-stanley-tools",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-bosch-appliances-bsh-siemens-brands",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-dewalt-stanley-black-decker",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-dyson-james-dyson-singapore-manufacturing",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-eufy-anker-smart-home",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-eureka-midea-electrolux-manufacturing",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-greenworks-globe-stihl",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-hayward-pool-products",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-hoover-tti-haier-candy",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-husqvarna-automower-motorcycles",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-irobot-roomba-picea-robotics",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-karcher-family-professional-cleaning-network",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-miele-family-manufacturing-network",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-narwal-yunjing-investors-manufacturing",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-polaris-pool-cleaners-fluidra-zodiac",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-ryobi-tti-kyocera",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-segway-navimow-ninebot-willand",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-sharkninja-js-global-joyoung",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-shop-vac-greatstar-manufacturing",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-tineco-ecovacs-group",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "who-owns-worx-positec-landroid-manufacturing",
+      "reason": "existing_explicit_class",
+      "guideType": "ownership"
+    },
+    {
+      "slug": "wybot-vs-dolphin-robotic-pool-cleaners",
+      "reason": "existing_explicit_class",
+      "guideType": "comparison"
+    },
+    {
+      "slug": "wybotics-from-oem-to-global-brand",
+      "reason": "existing_explicit_class",
+      "guideType": "sourcing"
+    }
+  ],
+  "unclassified": []
+}
