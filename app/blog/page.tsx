@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { NewsletterLeadForm, TallyReportButton } from "@/components/LeadForms";
 import { getInsights, type Insight } from "@/lib/content";
+import {
+  getEditorialInsights,
+  getFeaturedGuides
+} from "@/lib/insightCollections";
 
 type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
@@ -19,14 +23,14 @@ export async function generateMetadata({ searchParams }: { searchParams?: Search
   return {
     title: "Blog",
     description:
-      "World Clean Biz publishes cleaning appliance industry analysis, brand strategy, product category signals, supplier intelligence and global market observations.",
+      "Original World Clean Biz analysis of cleaning appliance companies, brand strategy, product category signals and global market developments.",
     alternates: {
       canonical: "/blog"
     },
     openGraph: {
       title: "World Clean Biz Blog",
       description:
-        "Cleaning appliance analysis, brand strategy, supplier intelligence and global market observations.",
+        "Original cleaning industry analysis, company strategy, market signals and global observations.",
       type: "website",
       url: "/blog",
       images: ["/images/industry/about-forum-stage-2025.jpg"]
@@ -35,7 +39,7 @@ export async function generateMetadata({ searchParams }: { searchParams?: Search
       card: "summary_large_image",
       title: "World Clean Biz Blog",
       description:
-        "Cleaning appliance analysis, brand strategy, supplier intelligence and global market observations.",
+        "Original cleaning industry analysis, company strategy, market signals and global observations.",
       images: ["/images/industry/about-forum-stage-2025.jpg"]
     },
     robots: hasQueryParams
@@ -194,7 +198,17 @@ function matchesTopic(article: Insight, topic?: string) {
   return needles.some((needle) => haystack.includes(needle.toLowerCase()));
 }
 
-function SidebarContent({ latestSignals, selectedTopic }: { latestSignals: Insight[]; selectedTopic?: string }) {
+function SidebarContent({
+  latestSignals,
+  practicalGuides,
+  selectedTopic,
+  visibleBrandTopics
+}: {
+  latestSignals: Insight[];
+  practicalGuides: Insight[];
+  selectedTopic?: string;
+  visibleBrandTopics: string[];
+}) {
   return (
     <>
       <div className="sidebar-box market-report-priority">
@@ -249,10 +263,25 @@ function SidebarContent({ latestSignals, selectedTopic }: { latestSignals: Insig
         <Link href="/about">About Denny</Link>
       </div>
 
+      <div className="sidebar-box practical-guides-sidebar">
+        <p className="eyebrow">Practical Guides</p>
+        <h3>Research For Product, Brand And Sourcing Decisions</h3>
+        <div className="practical-guides-list">
+          {practicalGuides.map((article) => (
+            <Link href={`/blog/${article.slug}`} key={article.slug}>
+              {article.title}
+            </Link>
+          ))}
+        </div>
+        <Link className="blog-archive-sidebar-link" href="/guides">
+          Explore All Guides
+        </Link>
+      </div>
+
       <div className="sidebar-box">
         <h3>Popular Brands</h3>
         <div className="topic-list">
-          {brandTopics.map((brand) => {
+          {visibleBrandTopics.map((brand) => {
             const isSelected = brand === selectedTopic;
 
             return (
@@ -311,7 +340,17 @@ function ArticleFeedItem({ article, index }: { article: Insight; index: number }
 }
 
 export default async function InsightsPage({ searchParams }: { searchParams?: SearchParams }) {
-  const articles = getInsights();
+  const allArticles = getInsights();
+  const articles = getEditorialInsights(allArticles);
+  const practicalGuides = getFeaturedGuides(allArticles, 5);
+  const visibleCategories = categories.filter(
+    (category) =>
+      category === "All" ||
+      articles.some((article) => article.category === category)
+  );
+  const visibleBrandTopics = brandTopics.filter((topic) =>
+    articles.some((article) => matchesTopic(article, topic))
+  );
   const resolvedSearchParams = searchParams ? await searchParams : {};
   const selectedCategory = queryValue(resolvedSearchParams.category);
   const selectedTopic = queryValue(resolvedSearchParams.topic);
@@ -348,7 +387,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
     "@type": "CollectionPage",
     "@id": `${siteUrl}/blog`,
     name: "World Clean Biz Blog",
-    description: "Cleaning industry analysis, product signals and sourcing intelligence for global business decisions.",
+    description: "Original cleaning industry analysis, company strategy, market signals and global observations.",
     url: `${siteUrl}/blog`,
     mainEntity: itemListSchema
   };
@@ -373,7 +412,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
             </p>
           </div>
           <div className="blog-editorial-actions">
-            <span><strong>{articles.length}+</strong><small>Published articles and industry notes</small></span>
+            <span><strong>{articles.length}+</strong><small>Original analysis and industry insights</small></span>
             <Link className="button" href="/reports">Explore Market Reports</Link>
             <Link className="button button-secondary" href="/sourcing">Discuss Product Opportunities</Link>
           </div>
@@ -405,7 +444,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
 
           <div className="insights-filter-wrap insights-filter-panel">
             <div className="insights-filter insights-filter-v3" aria-label="Insight categories">
-              {categories.map((category) => {
+              {visibleCategories.map((category) => {
                 const isAllSelected = !selectedCategory && category === "All" && !selectedTopic;
                 const isCategorySelected = selectedCategory === category;
                 const isSelected = isAllSelected || isCategorySelected;
@@ -443,7 +482,12 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
           </main>
 
           <aside className="insights-sidebar insights-sidebar-v2" aria-label="Insights sidebar">
-            <SidebarContent latestSignals={latestSignals} selectedTopic={selectedTopic} />
+            <SidebarContent
+              latestSignals={latestSignals}
+              practicalGuides={practicalGuides}
+              selectedTopic={selectedTopic}
+              visibleBrandTopics={visibleBrandTopics}
+            />
           </aside>
         </div>
         {totalPages > 1 ? (
