@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { normalizeCategory } from "@/lib/categories";
+import type { ContentClass, GuideType } from "@/lib/guideTaxonomy";
 
 export type Insight = {
   slug: string;
@@ -24,6 +25,9 @@ export type Insight = {
   series?: string;
   seriesTitle?: string;
   seriesEpisode?: string;
+  contentClass: ContentClass;
+  guideType?: GuideType;
+  guidePriority: number;
   content: string;
 };
 
@@ -122,6 +126,9 @@ export function getInsights(): Insight[] {
         series: data.series ? String(data.series) : undefined,
         seriesTitle: data.series_title ? String(data.series_title) : undefined,
         seriesEpisode: data.series_episode ? String(data.series_episode) : undefined,
+        contentClass: String(data.content_class || "") as ContentClass,
+        guideType: data.guide_type ? String(data.guide_type) as GuideType : undefined,
+        guidePriority: Number(data.guide_priority || 0),
         content
       }];
     })
