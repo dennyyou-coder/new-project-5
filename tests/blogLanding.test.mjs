@@ -6,6 +6,14 @@ const componentSource = await readFile(
   new URL("../components/BlogLanding.tsx", import.meta.url),
   "utf8"
 ).catch(() => "");
+const headerSource = await readFile(
+  new URL("../components/Header.tsx", import.meta.url),
+  "utf8"
+);
+const cssSource = await readFile(
+  new URL("../app/globals.css", import.meta.url),
+  "utf8"
+);
 
 test("article cards are ordinary whole-card links", () => {
   assert.match(componentSource, /className="blog-home-card"/);
@@ -22,4 +30,15 @@ test("landing components expose series, grid, and business modules", () => {
 test("series hero provides latest episode and all episodes links", () => {
   assert.match(componentSource, /Read latest episode/);
   assert.match(componentSource, /#series-episodes/);
+});
+
+test("primary navigation keeps Blog and removes Guides", () => {
+  assert.match(headerSource, /href: "\/blog", label: "Blog"/);
+  assert.doesNotMatch(headerSource, /href: "\/guides", label: "Guides"/);
+});
+
+test("Blog grids use three, two, and one columns at responsive breakpoints", () => {
+  assert.match(cssSource, /\.blog-home-grid\s*\{[^}]*grid-template-columns:\s*repeat\(3,/s);
+  assert.match(cssSource, /@media \(max-width: 900px\)[\s\S]*\.blog-home-grid\s*\{[^}]*repeat\(2,/);
+  assert.match(cssSource, /@media \(max-width: 760px\)[\s\S]*\.blog-home-grid\s*\{[^}]*grid-template-columns:\s*1fr/);
 });
