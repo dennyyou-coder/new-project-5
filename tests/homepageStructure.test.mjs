@@ -94,11 +94,10 @@ test("homepage limits editorial proof to three insights and one report", () => {
   assert.doesNotMatch(homeSource, /reportCovers/);
 });
 
-test("header keeps navigation but removes the fixed report CTA", () => {
+test("header keeps Blog, removes Guides, and removes the fixed report CTA", () => {
   for (const label of [
     "Home",
     "Blog",
-    "Guides",
     "Sourcing",
     "Market Reports",
     "World Clean Expo",
@@ -108,6 +107,7 @@ test("header keeps navigation but removes the fixed report CTA", () => {
     assert.match(headerSource, new RegExp(`label: "${label}"`));
   }
 
+  assert.doesNotMatch(headerSource, /label: "Guides"/);
   assert.doesNotMatch(headerSource, /TallyReportButton/);
   assert.doesNotMatch(headerSource, /header-cta/);
 });

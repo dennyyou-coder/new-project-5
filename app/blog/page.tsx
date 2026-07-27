@@ -107,7 +107,7 @@ export default function InsightsPage() {
         </div>
       </section>
 
-      <main className="blog-home-main">
+      <div className="blog-home-main">
         <div className="insights-page-container">
           {latestSeriesArticle ? <BlogSeriesHero article={latestSeriesArticle} /> : null}
           <BlogArticleGrid
@@ -133,7 +133,7 @@ export default function InsightsPage() {
           <NewsletterLeadForm />
           <BlogBusinessLinks />
         </div>
-      </main>
+      </div>
 
       <script
         type="application/ld+json"

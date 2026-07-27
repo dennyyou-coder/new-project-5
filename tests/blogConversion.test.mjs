@@ -110,3 +110,7 @@ test("Blog homepage no longer renders the legacy sidebar, filters, or pagination
   assert.doesNotMatch(blogSource, /insights-filter-panel/);
   assert.doesNotMatch(blogSource, /insights-pagination-v2/);
 });
+
+test("Blog homepage does not introduce a nested main landmark", () => {
+  assert.doesNotMatch(blogSource, /<main\b/);
+});
