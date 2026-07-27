@@ -4,10 +4,11 @@ import test from "node:test";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-const [blog, blogLanding, archive, article, css, sitemap] = await Promise.all([
+const [blog, blogLanding, archive, directory, article, css, sitemap] = await Promise.all([
   read("app/blog/page.tsx"),
   read("components/BlogLanding.tsx"),
   read("app/blog/archive/page.tsx"),
+  read("components/ContentDirectory.tsx"),
   read("app/blog/[slug]/page.tsx"),
   read("app/globals.css"),
   read("app/sitemap.ts")
@@ -33,15 +34,16 @@ test("Blog images use intentional eager and lazy loading", () => {
   assert.match(blogLanding, /decoding="async"/);
 });
 
-test("Archive exposes coverage, reading metadata, and structured data", () => {
-  assert.match(archive, /archive-category-summary/);
-  assert.match(archive, /articles\.length/);
-  assert.match(archive, /article\.readingTime/);
+test("Archive exposes paginated analysis, reading metadata, and structured data", () => {
+  assert.match(archive, /<ContentDirectory/);
+  assert.match(archive, /filteredArticles\.length/);
+  assert.match(directory, /article\.readingTime/);
   assert.match(archive, /CollectionPage/);
   assert.match(archive, /ItemList/);
   assert.match(archive, /BreadcrumbList/);
-  assert.match(archive, /Explore Market Reports/);
-  assert.match(archive, /Explore Sourcing/);
+  assert.match(archive, /Market Reports/);
+  assert.match(archive, /Sourcing Opportunities/);
+  assert.match(archive, /paginateDirectoryItems/);
 });
 
 test("Article template strengthens trust and related discovery without changing body conversion", () => {
@@ -65,7 +67,9 @@ test("Article schema includes author identity, section, keywords, and publisher 
 test("Content pages have isolated responsive and long-reading styles", () => {
   assert.match(css, /Content experience optimization/);
   assert.match(css, /\.blog-home-intro/);
-  assert.match(css, /\.archive-category-summary/);
+  assert.match(css, /Analysis and Guides directories/);
+  assert.match(css, /\.content-directory-layout/);
+  assert.match(css, /\.content-directory-sidebar/);
   assert.match(css, /\.blog-visible-breadcrumb/);
   assert.match(css, /overflow-x:\s*auto/);
   assert.match(css, /content-visibility:\s*auto/);
@@ -77,14 +81,13 @@ test("Sitemap keeps Blog and Archive discoverable", () => {
   assert.match(sitemap, /"\/blog\/archive"/);
 });
 
-test("Archive separates analysis and guides without changing article links", () => {
-  assert.match(archive, /Analysis &amp; Insights/);
-  assert.match(archive, /Guides &amp; Comparisons/);
-  assert.match(archive, /href="#analysis"/);
-  assert.match(archive, /href="#guides"/);
+test("Archive is an analysis-only directory without changing article links", () => {
+  assert.match(archive, /title="Analysis & Insights"/);
+  assert.match(archive, /id="analysis"/);
   assert.match(archive, /getEditorialInsights/);
-  assert.match(archive, /getGuideInsights/);
-  assert.match(archive, /href=\{`\/blog\/\$\{article\.slug\}`\}/);
+  assert.doesNotMatch(archive, /getGuideInsights/);
+  assert.doesNotMatch(archive, /Guides &amp; Comparisons/);
+  assert.match(archive, /<ContentDirectory/);
 });
 
 test("article breadcrumbs reflect the reader-facing collection", () => {

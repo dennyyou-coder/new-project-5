@@ -1,18 +1,28 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { GuideCard } from "@/components/GuideCard";
+import { ContentDirectory } from "@/components/ContentDirectory";
 import { getInsights } from "@/lib/content";
+import {
+  directoryHref,
+  paginateDirectoryItems,
+  parseDirectoryPage
+} from "@/lib/contentDirectory";
 import {
   GUIDE_TYPE_CONFIG,
   isGuideType
 } from "@/lib/guideTaxonomy";
-import { getGuideInsights } from "@/lib/insightCollections";
+import {
+  getFeaturedGuides,
+  getGuideInsights
+} from "@/lib/insightCollections";
 
 const siteUrl = "https://worldcleanbiz.com";
 
+type SearchParams = Promise<Record<string, string | string[] | undefined>>;
+
 type PageProps = {
   params: Promise<{ type: string }>;
+  searchParams?: SearchParams;
 };
 
 export const dynamicParams = false;
@@ -22,10 +32,15 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params
+  params,
+  searchParams
 }: PageProps): Promise<Metadata> {
   const { type } = await params;
   const config = GUIDE_TYPE_CONFIG.find((item) => item.type === type);
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const hasQueryParams = Object.values(resolvedSearchParams).some((value) =>
+    Array.isArray(value) ? value.length > 0 : typeof value !== "undefined"
+  );
 
   if (!config) return {};
 
@@ -33,6 +48,15 @@ export async function generateMetadata({
     title: config.label,
     description: config.description,
     alternates: { canonical: config.href },
+    robots: hasQueryParams
+      ? {
+          index: false,
+          follow: true
+        }
+      : {
+          index: true,
+          follow: true
+        },
     openGraph: {
       title: `${config.label} | World Clean Biz`,
       description: config.description,
@@ -42,25 +66,65 @@ export async function generateMetadata({
   };
 }
 
-export default async function GuideTypePage({ params }: PageProps) {
+export default async function GuideTypePage({
+  params,
+  searchParams
+}: PageProps) {
   const { type } = await params;
   if (!isGuideType(type)) notFound();
 
   const config = GUIDE_TYPE_CONFIG.find((item) => item.type === type);
   if (!config) notFound();
 
-  const articles = getGuideInsights(getInsights(), type);
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const allArticles = getInsights();
+  const articles = getGuideInsights(allArticles, type);
+  const {
+    items: visibleGuides,
+    currentPage,
+    totalPages,
+    pageStart
+  } = paginateDirectoryItems(
+    articles,
+    parseDirectoryPage(resolvedSearchParams.page)
+  );
+  const pagination = Array.from({ length: totalPages }, (_, index) => {
+    const page = index + 1;
+    return {
+      page,
+      href: directoryHref(config.href, page),
+      current: page === currentPage
+    };
+  });
+  const filters = [
+    { label: "All Guides", href: "/guides", active: false },
+    ...GUIDE_TYPE_CONFIG.map((guideType) => ({
+      label: guideType.label,
+      href: guideType.href,
+      active: guideType.type === type
+    }))
+  ];
+  const featuredGuides = getFeaturedGuides(allArticles, 5);
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: `${config.label} from World Clean Biz`,
     numberOfItems: articles.length,
-    itemListElement: articles.map((article, index) => ({
+    itemListElement: visibleGuides.map((article, index) => ({
       "@type": "ListItem",
-      position: index + 1,
+      position: pageStart + index + 1,
       name: article.title,
       url: `${siteUrl}/blog/${article.slug}`
     }))
+  };
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${siteUrl}${config.href}`,
+    name: `${config.label} | World Clean Biz`,
+    description: config.description,
+    url: `${siteUrl}${config.href}`,
+    mainEntity: itemListSchema
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -83,43 +147,52 @@ export default async function GuideTypePage({ params }: PageProps) {
   };
 
   return (
-    <div className="guides-hub guide-category-page">
-      <section className="guides-category-hero">
-        <div className="insights-page-container">
-          <nav className="blog-visible-breadcrumb" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span>/</span>
-            <Link href="/guides">Industry Guides</Link>
-            <span>/</span>
-            <span>{config.label}</span>
-          </nav>
-          <p className="eyebrow">World Clean Biz Guides</p>
-          <h1>{config.label}</h1>
-          <p>{config.description}</p>
-          <strong>{articles.length} published guides</strong>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="insights-page-container">
-          <div className="guide-category-list">
-            {articles.map((article) => (
-              <GuideCard article={article} key={article.slug} />
-            ))}
-          </div>
-          <div className="guide-category-footer">
-            <Link href="/guides">Explore All Industry Guides</Link>
-            <Link href="/blog">Read Industry Analysis</Link>
-          </div>
-        </div>
-      </section>
-
+    <>
+      <ContentDirectory
+        variant="guides"
+        eyebrow="World Clean Biz Guides"
+        title={config.label}
+        description={config.description}
+        totalLabel={`${articles.length} published guides`}
+        articles={visibleGuides}
+        filters={filters}
+        pagination={pagination}
+        previousHref={
+          currentPage > 1
+            ? directoryHref(config.href, currentPage - 1)
+            : undefined
+        }
+        nextHref={
+          currentPage < totalPages
+            ? directoryHref(config.href, currentPage + 1)
+            : undefined
+        }
+        sidebarPrimaryTitle="Guide Categories"
+        sidebarPrimaryLinks={[
+          { label: "All Industry Guides", href: "/guides" },
+          ...GUIDE_TYPE_CONFIG.map((guideType) => ({
+            label: guideType.label,
+            href: guideType.href,
+            active: guideType.type === type
+          }))
+        ]}
+        sidebarSecondaryTitle="High-Value Guides"
+        sidebarSecondaryLinks={featuredGuides.map((article) => ({
+          label: article.title,
+          href: `/blog/${article.slug}`
+        }))}
+        latestArticles={articles.slice(0, 5)}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([itemListSchema, breadcrumbSchema])
+          __html: JSON.stringify([
+            collectionSchema,
+            itemListSchema,
+            breadcrumbSchema
+          ])
         }}
       />
-    </div>
+    </>
   );
 }

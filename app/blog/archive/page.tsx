@@ -1,72 +1,109 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { getInsights, type Insight } from "@/lib/content";
+import { ContentDirectory } from "@/components/ContentDirectory";
+import { getInsights } from "@/lib/content";
 import {
-  getEditorialInsights,
-  getGuideInsights
-} from "@/lib/insightCollections";
+  directoryHref,
+  paginateDirectoryItems,
+  parseDirectoryPage
+} from "@/lib/contentDirectory";
+import { getEditorialInsights } from "@/lib/insightCollections";
+
+type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
 const siteUrl = "https://worldcleanbiz.com";
 
-export const metadata: Metadata = {
-  title: "World Clean Biz Article Archive",
-  description:
-    "Browse all World Clean Biz articles on cleaning robots, cordless vacuums, floor washers, pool robots, lawn robots, commercial cleaning robots, brands, suppliers, and global cleaning industry strategy.",
-  alternates: {
-    canonical: "/blog/archive"
-  }
-};
-
-function displayDate(date: string) {
-  return date || "Undated";
+function queryValue(value: string | string[] | undefined) {
+  return Array.isArray(value) ? value[0] : value;
 }
 
-function ArchiveList({
-  articles,
-  label
+export async function generateMetadata({
+  searchParams
 }: {
-  articles: Insight[];
-  label: string;
-}) {
-  return (
-    <div className="blog-archive-list" aria-label={label}>
-      {articles.map((article) => (
-        <article className="blog-archive-item" key={article.slug}>
-          <div className="insights-card-meta">
-            <span>{displayDate(article.date)}</span>
-            {article.category ? <span>{article.category}</span> : null}
-            <span>{article.readingTime}</span>
-          </div>
-          <h2>
-            <Link href={`/blog/${article.slug}`}>{article.title}</Link>
-          </h2>
-          {article.excerpt ? <p>{article.excerpt}</p> : null}
-        </article>
-      ))}
-    </div>
+  searchParams?: SearchParams;
+}): Promise<Metadata> {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const hasQueryParams = Object.values(resolvedSearchParams).some((value) =>
+    Array.isArray(value) ? value.length > 0 : typeof value !== "undefined"
   );
+
+  return {
+    title: "Analysis & Insights",
+    description:
+      "Browse original World Clean Biz analysis of cleaning robots, floorcare, pool cleaning, robotic mowers, brands, suppliers and global cleaning industry strategy.",
+    alternates: {
+      canonical: "/blog/archive"
+    },
+    robots: hasQueryParams
+      ? {
+          index: false,
+          follow: true
+        }
+      : {
+          index: true,
+          follow: true
+        }
+  };
 }
 
-export default function BlogArchivePage() {
-  const articles = getInsights();
-  const editorialArticles = getEditorialInsights(articles);
-  const guideArticles = getGuideInsights(articles);
-  const orderedArticles = [...editorialArticles, ...guideArticles];
-  const categoryCounts = Array.from(
-    articles.reduce((counts, article) => {
-      const category = article.category || "Industry";
-      counts.set(category, (counts.get(category) || 0) + 1);
-      return counts;
-    }, new Map<string, number>())
-  ).sort((a, b) => b[1] - a[1]);
+export default async function BlogArchivePage({
+  searchParams
+}: {
+  searchParams?: SearchParams;
+}) {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const editorialArticles = getEditorialInsights(getInsights());
+  const categories = Array.from(
+    new Set(editorialArticles.map((article) => article.category).filter(Boolean))
+  ).sort((a, b) => a.localeCompare(b));
+  const requestedCategory = queryValue(resolvedSearchParams.category);
+  const selectedCategory = categories.includes(requestedCategory || "")
+    ? requestedCategory
+    : undefined;
+  const filteredArticles = selectedCategory
+    ? editorialArticles.filter(
+        (article) => article.category === selectedCategory
+      )
+    : editorialArticles;
+  const {
+    items: visibleArticles,
+    currentPage,
+    totalPages,
+    pageStart
+  } = paginateDirectoryItems(
+    filteredArticles,
+    parseDirectoryPage(resolvedSearchParams.page)
+  );
+  const categoryParams = { category: selectedCategory };
+  const pagination = Array.from({ length: totalPages }, (_, index) => {
+    const page = index + 1;
+    return {
+      page,
+      href: directoryHref("/blog/archive", page, categoryParams),
+      current: page === currentPage
+    };
+  });
+  const filters = [
+    {
+      label: "All Analysis",
+      href: "/blog/archive",
+      active: !selectedCategory
+    },
+    ...categories.map((category) => ({
+      label: category,
+      href: directoryHref("/blog/archive", 1, { category }),
+      active: selectedCategory === category
+    }))
+  ];
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "World Clean Biz Article Archive",
-    numberOfItems: articles.length,
-    itemListElement: orderedArticles.map((article, index) => ({
+    name: selectedCategory
+      ? `${selectedCategory} analysis from World Clean Biz`
+      : "World Clean Biz Analysis & Insights",
+    numberOfItems: filteredArticles.length,
+    itemListElement: visibleArticles.map((article, index) => ({
       "@type": "ListItem",
-      position: index + 1,
+      position: pageStart + index + 1,
       name: article.title,
       url: `${siteUrl}/blog/${article.slug}`
     }))
@@ -75,7 +112,7 @@ export default function BlogArchivePage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": `${siteUrl}/blog/archive`,
-    name: "World Clean Biz Article Archive",
+    name: "World Clean Biz Analysis & Insights",
     url: `${siteUrl}/blog/archive`,
     mainEntity: itemListSchema
   };
@@ -85,66 +122,74 @@ export default function BlogArchivePage() {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
       { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}/blog` },
-      { "@type": "ListItem", position: 3, name: "Archive", item: `${siteUrl}/blog/archive` }
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Analysis & Insights",
+        item: `${siteUrl}/blog/archive`
+      }
     ]
   };
 
   return (
-    <>
-      <section className="section blog-archive-page" id="all-articles">
-        <div className="insights-page-container">
-        <div className="section-heading">
-          <p className="eyebrow">Article Archive</p>
-          <h1>World Clean Biz Article Archive</h1>
-          <p>
-            Browse all World Clean Biz articles on cleaning robots, cordless
-            vacuums, floor washers, pool robots, lawn robots, commercial
-            cleaning robots, brands, suppliers, and global cleaning industry
-            strategy.
-          </p>
-          <div className="blog-archive-actions">
-            <span><strong>{articles.length}</strong>All Articles</span>
-            <span><strong>{editorialArticles.length}</strong>Analysis &amp; Insights</span>
-            <span><strong>{guideArticles.length}</strong>Guides &amp; Comparisons</span>
-            <Link href="/blog">Return To Blog</Link>
-            <Link href="/guides">Explore Guides</Link>
-            <Link href="/reports">Explore Market Reports</Link>
-            <Link href="/sourcing">Explore Sourcing</Link>
-          </div>
-        </div>
-
-        <nav className="archive-content-nav" aria-label="Article archive sections">
-          <a href="#all-articles">All Articles</a>
-          <a href="#analysis">Analysis &amp; Insights</a>
-          <a href="#guides">Guides &amp; Comparisons</a>
-        </nav>
-
-        <div className="archive-category-summary" aria-label="Article categories">
-          {categoryCounts.map(([category, count]) => (
-            <span key={category}><strong>{count}</strong>{category}</span>
-          ))}
-        </div>
-
-        <section className="archive-content-group" id="analysis">
-          <div className="archive-content-group-heading">
-            <p className="eyebrow">Original Editorial</p>
-            <h2>Analysis &amp; Insights</h2>
-            <p>Industry shifts, company strategy, original research and market observations.</p>
-          </div>
-          <ArchiveList articles={editorialArticles} label="World Clean Biz analysis and insights" />
-        </section>
-
-        <section className="archive-content-group" id="guides">
-          <div className="archive-content-group-heading">
-            <p className="eyebrow">Practical Research</p>
-            <h2>Guides &amp; Comparisons</h2>
-            <p>Brand ownership, buying decisions, product comparisons, sourcing and maintenance research.</p>
-          </div>
-          <ArchiveList articles={guideArticles} label="World Clean Biz guides and comparisons" />
-        </section>
-        </div>
-      </section>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, itemListSchema, breadcrumbSchema]) }} />
-    </>
+    <div id="analysis">
+      <ContentDirectory
+        variant="analysis"
+        eyebrow="Original Editorial"
+        title="Analysis & Insights"
+        description="Industry shifts, company strategy, original research and market observations from across the global cleaning industry."
+        totalLabel={`${filteredArticles.length} analysis articles`}
+        articles={visibleArticles}
+        filters={filters}
+        pagination={pagination}
+        previousHref={
+          currentPage > 1
+            ? directoryHref(
+                "/blog/archive",
+                currentPage - 1,
+                categoryParams
+              )
+            : undefined
+        }
+        nextHref={
+          currentPage < totalPages
+            ? directoryHref(
+                "/blog/archive",
+                currentPage + 1,
+                categoryParams
+              )
+            : undefined
+        }
+        sidebarPrimaryTitle="Explore World Clean Biz"
+        sidebarPrimaryLinks={[
+          {
+            label: "All Analysis",
+            href: "/blog/archive",
+            active: !selectedCategory,
+          },
+          { label: "Industry Guides", href: "/guides" },
+          { label: "Back To Blog", href: "/blog" },
+          { label: "Market Reports", href: "/reports" },
+          { label: "Sourcing Opportunities", href: "/sourcing" }
+        ]}
+        sidebarSecondaryTitle="Popular Analysis Categories"
+        sidebarSecondaryLinks={categories.slice(0, 8).map((category) => ({
+          label: category,
+          href: directoryHref("/blog/archive", 1, { category }),
+          active: selectedCategory === category
+        }))}
+        latestArticles={editorialArticles.slice(0, 5)}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            collectionSchema,
+            itemListSchema,
+            breadcrumbSchema
+          ])
+        }}
+      />
+    </div>
   );
 }
