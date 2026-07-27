@@ -92,3 +92,21 @@ test("Blog keeps a dedicated Newsletter form and homepage stays outside this bat
   assert.match(blogSource, /<NewsletterLeadForm \/>/);
   assert.doesNotMatch(homeSource, /BlogConversionCta/);
 });
+
+test("Blog homepage composes the fixed series and two six-card sections", () => {
+  assert.match(blogSource, /getLatestSeriesInsight/);
+  assert.match(blogSource, /getBlogHomepageEditorial\(allArticles, featuredSeries, 6\)/);
+  assert.match(blogSource, /getBlogHomepageGuides\(allArticles, 6\)/);
+  assert.match(blogSource, /<BlogSeriesHero article=\{latestSeriesArticle\}/);
+  assert.match(blogSource, /title="Deep Analysis"/);
+  assert.match(blogSource, /title="Practical Guides"/);
+  assert.match(blogSource, /archiveHref="\/blog\/archive#analysis"/);
+  assert.match(blogSource, /archiveHref="\/guides"/);
+});
+
+test("Blog homepage no longer renders the legacy sidebar, filters, or pagination", () => {
+  assert.doesNotMatch(blogSource, /SidebarContent/);
+  assert.doesNotMatch(blogSource, /<aside/);
+  assert.doesNotMatch(blogSource, /insights-filter-panel/);
+  assert.doesNotMatch(blogSource, /insights-pagination-v2/);
+});

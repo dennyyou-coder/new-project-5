@@ -69,11 +69,10 @@ test("featured guides use explicit priority rather than fabricated dates", () =>
   );
 });
 
-test("Blog derives every discovery surface from editorial articles", () => {
-  assert.match(blogSource, /const articles = getEditorialInsights\(allArticles\)/);
-  assert.match(blogSource, /const visibleCategories = categories\.filter/);
-  assert.match(blogSource, /const visibleBrandTopics = brandTopics\.filter/);
-  assert.match(blogSource, /getFeaturedGuides\(allArticles, 5\)/);
+test("Blog homepage uses the approved unified content selection helpers", () => {
+  assert.match(blogSource, /getLatestSeriesInsight\(allArticles, featuredSeries\)/);
+  assert.match(blogSource, /getBlogHomepageEditorial\(allArticles, featuredSeries, 6\)/);
+  assert.match(blogSource, /getBlogHomepageGuides\(allArticles, 6\)/);
 });
 
 function insight(overrides) {
