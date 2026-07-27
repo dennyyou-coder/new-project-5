@@ -4,14 +4,16 @@ import test from "node:test";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-const [blog, blogLanding, archive, directory, article, css, sitemap] = await Promise.all([
+const [blog, blogLanding, archive, directory, article, css, sitemap, directorySeries, directorySidebar] = await Promise.all([
   read("app/blog/page.tsx"),
   read("components/BlogLanding.tsx"),
   read("app/blog/archive/page.tsx"),
   read("components/ContentDirectory.tsx"),
   read("app/blog/[slug]/page.tsx"),
   read("app/globals.css"),
-  read("app/sitemap.ts")
+  read("app/sitemap.ts"),
+  read("components/DirectorySeriesFeature.tsx"),
+  read("components/DirectorySidebar.tsx")
 ]);
 
 test("Blog uses the approved full-width landing without a sidebar", () => {
@@ -96,4 +98,14 @@ test("article breadcrumbs reflect the reader-facing collection", () => {
   assert.match(article, /collectionName/);
   assert.match(article, /World Clean Biz Industry Guides/);
   assert.match(article, /url: `\$\{siteUrl\}\$\{collectionHref\}`/);
+});
+
+test("directory feature and profile use approved existing content", () => {
+  assert.match(directorySeries, /Ongoing Series · Latest Episode/);
+  assert.match(directorySeries, /View all episodes/);
+  assert.match(directorySeries, /objectFit/);
+  assert.match(directorySidebar, /Denny You/);
+  assert.match(directorySidebar, /Founder, World Clean Biz/);
+  assert.match(directorySidebar, /Organizer, World Clean Expo/);
+  assert.match(directorySidebar, /since 2006/);
 });

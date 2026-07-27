@@ -42,6 +42,12 @@ test("Guide feed rows retain existing article URLs", () => {
   assert.match(directory, /href=\{`\/blog\/\$\{article\.slug\}`\}/);
 });
 
+test("directory sidebar supports guide categories and important content", () => {
+  assert.match(directory, /<DirectorySidebar/);
+  assert.match(directory, /featuredSeriesArticle/);
+  assert.doesNotMatch(directory, /Latest Articles/);
+});
+
 test("Guides have isolated responsive styles", () => {
   assert.match(css, /Analysis and Guides directories/);
   assert.match(css, /\.content-directory-layout/);

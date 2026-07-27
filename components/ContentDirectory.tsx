@@ -1,5 +1,10 @@
 import Link from "next/link";
 import type { Insight } from "@/lib/content";
+import { DirectorySeriesFeature } from "@/components/DirectorySeriesFeature";
+import {
+  DirectorySidebar,
+  type DirectorySidebarProps
+} from "@/components/DirectorySidebar";
 
 const fallbackImages = [
   "/images/industry/about-forum-stage-2025.jpg",
@@ -37,11 +42,8 @@ type ContentDirectoryProps = {
   pagination: DirectoryPaginationItem[];
   previousHref?: string;
   nextHref?: string;
-  sidebarPrimaryTitle: string;
-  sidebarPrimaryLinks: DirectoryLink[];
-  sidebarSecondaryTitle: string;
-  sidebarSecondaryLinks: DirectoryLink[];
-  latestArticles: Insight[];
+  featuredSeriesArticle?: Insight;
+  sidebar: DirectorySidebarProps;
 };
 
 function imageFor(article: Insight, index: number) {
@@ -59,11 +61,8 @@ export function ContentDirectory({
   pagination,
   previousHref,
   nextHref,
-  sidebarPrimaryTitle,
-  sidebarPrimaryLinks,
-  sidebarSecondaryTitle,
-  sidebarSecondaryLinks,
-  latestArticles
+  featuredSeriesArticle,
+  sidebar
 }: ContentDirectoryProps) {
   return (
     <div className="content-directory" data-variant={variant}>
@@ -77,6 +76,10 @@ export function ContentDirectory({
           <strong>{totalLabel}</strong>
         </div>
       </section>
+
+      {featuredSeriesArticle ? (
+        <DirectorySeriesFeature article={featuredSeriesArticle} />
+      ) : null}
 
       <nav
         className="content-directory-filters"
@@ -97,7 +100,10 @@ export function ContentDirectory({
       </nav>
 
       <section className="section content-directory-body">
-        <div className="insights-page-container content-directory-layout">
+        <div
+          className="insights-page-container content-directory-layout"
+          data-sidebar-mode={sidebar.mode}
+        >
           <section
             className="content-directory-feed"
             aria-label={`${title} articles`}
@@ -173,75 +179,7 @@ export function ContentDirectory({
             className="content-directory-sidebar"
             aria-label={`${title} sidebar`}
           >
-            <section className="content-directory-sidebar-box">
-              <h2>{sidebarPrimaryTitle}</h2>
-              <nav aria-label={sidebarPrimaryTitle}>
-                {sidebarPrimaryLinks.map((item) => (
-                  <Link
-                    aria-current={item.active ? "page" : undefined}
-                    className={item.active ? "active" : undefined}
-                    href={item.href}
-                    key={`${item.href}-${item.label}`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </nav>
-            </section>
-
-            <section className="content-directory-sidebar-box">
-              <h2>{sidebarSecondaryTitle}</h2>
-              <nav aria-label={sidebarSecondaryTitle}>
-                {sidebarSecondaryLinks.map((item) => (
-                  <Link
-                    aria-current={item.active ? "page" : undefined}
-                    className={item.active ? "active" : undefined}
-                    href={item.href}
-                    key={`${item.href}-${item.label}`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </nav>
-            </section>
-
-            <section className="content-directory-sidebar-box">
-              <h2>Latest Articles</h2>
-              <div className="content-directory-latest">
-                {latestArticles.map((article, index) => (
-                  <Link href={`/blog/${article.slug}`} key={article.slug}>
-                    <img
-                      src={imageFor(article, index)}
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <span>
-                      <strong>{article.title}</strong>
-                      {article.date ? <small>{article.date}</small> : null}
-                    </span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-
-            <section className="content-directory-sidebar-box content-directory-about">
-              {variant === "guides" ? (
-                <img
-                  src="/images/industry/about-denny-portrait-event.jpg"
-                  alt="Denny You at a cleaning industry event"
-                  loading="lazy"
-                  decoding="async"
-                />
-              ) : null}
-              <p className="eyebrow">World Clean Biz</p>
-              <h2>Research From Inside The Cleaning Industry</h2>
-              <p>
-                Original analysis and practical decision guides for buyers,
-                brands, distributors and manufacturers.
-              </p>
-              <Link href="/about">About Denny You →</Link>
-            </section>
+            <DirectorySidebar {...sidebar} />
           </aside>
         </div>
       </section>
