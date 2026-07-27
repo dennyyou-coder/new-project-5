@@ -8,6 +8,7 @@ import {
   markdownToHtml,
   removeLeadingArticleTitleAndCover
 } from "@/lib/content";
+import { orderSeriesInsights } from "@/lib/insightCollections";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -223,18 +224,10 @@ export default async function InsightDetailPage({ params }: Props) {
   );
   const related = [...relatedOverrides, ...sameCategory, ...fillers].slice(0, 3);
   const seriesArticles = article.series
-    ? articles
-        .filter((item) => item.series === article.series)
-        .sort((a, b) => {
-          const episodeA = Number.parseInt(a.seriesEpisode || "", 10);
-          const episodeB = Number.parseInt(b.seriesEpisode || "", 10);
-
-          if (Number.isFinite(episodeA) && Number.isFinite(episodeB) && episodeA !== episodeB) {
-            return episodeA - episodeB;
-          }
-
-          return a.sortDate.localeCompare(b.sortDate);
-        })
+    ? orderSeriesInsights(
+        articles.filter((item) => item.series === article.series),
+        "ascending"
+      )
     : [];
   const seriesIndex = seriesArticles.findIndex((item) => item.slug === article.slug);
   const previousEpisode = seriesIndex > 0 ? seriesArticles[seriesIndex - 1] : undefined;

@@ -96,7 +96,7 @@ test("Blog keeps a dedicated Newsletter form and homepage stays outside this bat
 test("Blog homepage composes the fixed series and two six-card sections", () => {
   assert.match(blogSource, /getLatestSeriesInsight/);
   assert.match(blogSource, /getBlogHomepageEditorial\(allArticles, featuredSeries, 6\)/);
-  assert.match(blogSource, /getBlogHomepageGuides\(allArticles, 6\)/);
+  assert.match(blogSource, /getBlogHomepageGuides\(allArticles, 6, excludedGuideSlugs\)/);
   assert.match(blogSource, /<BlogSeriesHero article=\{latestSeriesArticle\}/);
   assert.match(blogSource, /title="Deep Analysis"/);
   assert.match(blogSource, /title="Practical Guides"/);
@@ -113,4 +113,16 @@ test("Blog homepage no longer renders the legacy sidebar, filters, or pagination
 
 test("Blog homepage does not introduce a nested main landmark", () => {
   assert.doesNotMatch(blogSource, /<main\b/);
+});
+
+test("Blog emits ItemList only as the CollectionPage main entity", () => {
+  assert.match(blogSource, /mainEntity:\s*itemListSchema/);
+  assert.match(
+    blogSource,
+    /JSON\.stringify\(\[collectionSchema,\s*breadcrumbSchema\]\)/
+  );
+  assert.doesNotMatch(
+    blogSource,
+    /JSON\.stringify\(\[collectionSchema,\s*itemListSchema,/
+  );
 });

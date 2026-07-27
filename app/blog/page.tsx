@@ -58,7 +58,8 @@ export default function InsightsPage() {
   const allArticles = getInsights();
   const latestSeriesArticle = getLatestSeriesInsight(allArticles, featuredSeries);
   const analysisArticles = getBlogHomepageEditorial(allArticles, featuredSeries, 6);
-  const guideArticles = getBlogHomepageGuides(allArticles, 6);
+  const excludedGuideSlugs = latestSeriesArticle ? [latestSeriesArticle.slug] : [];
+  const guideArticles = getBlogHomepageGuides(allArticles, 6, excludedGuideSlugs);
   const visibleArticles = [
     ...(latestSeriesArticle ? [latestSeriesArticle] : []),
     ...analysisArticles,
@@ -137,7 +138,7 @@ export default function InsightsPage() {
 
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, itemListSchema, breadcrumbSchema]) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([collectionSchema, breadcrumbSchema]) }}
       />
     </>
   );

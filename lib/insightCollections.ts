@@ -56,31 +56,44 @@ export function getFeaturedGuides<T extends SortableInsight>(
     .slice(0, limit);
 }
 
+type SeriesOrder = "ascending" | "descending";
+
 function episodeNumber(value?: string) {
-  if (!value) return undefined;
-  const parsed = Number.parseInt(value, 10);
-  return Number.isFinite(parsed) ? parsed : undefined;
+  const trimmed = value?.trim();
+  if (!trimmed || !/^\d+$/.test(trimmed)) return undefined;
+  return BigInt(trimmed);
+}
+
+export function orderSeriesInsights<T extends SortableInsight>(
+  articles: T[],
+  order: SeriesOrder
+) {
+  const direction = order === "ascending" ? 1 : -1;
+
+  return [...articles].sort((a, b) => {
+    const episodeA = episodeNumber(a.seriesEpisode);
+    const episodeB = episodeNumber(b.seriesEpisode);
+
+    if (episodeA !== undefined && episodeB !== undefined && episodeA !== episodeB) {
+      return (episodeA < episodeB ? -1 : 1) * direction;
+    }
+
+    if (episodeA !== undefined && episodeB === undefined) return -1;
+    if (episodeA === undefined && episodeB !== undefined) return 1;
+
+    const dateComparison = a.sortDate.localeCompare(b.sortDate);
+    return dateComparison * direction || a.slug.localeCompare(b.slug);
+  });
 }
 
 export function getLatestSeriesInsight<T extends SortableInsight>(
   articles: T[],
   series: string
 ) {
-  return [...articles]
-    .filter((article) => article.series === series)
-    .sort((a, b) => {
-      const episodeA = episodeNumber(a.seriesEpisode);
-      const episodeB = episodeNumber(b.seriesEpisode);
-
-      if (episodeA !== undefined && episodeB !== undefined && episodeA !== episodeB) {
-        return episodeB - episodeA;
-      }
-
-      if (episodeA !== undefined) return -1;
-      if (episodeB !== undefined) return 1;
-
-      return b.sortDate.localeCompare(a.sortDate) || a.slug.localeCompare(b.slug);
-    })[0];
+  return orderSeriesInsights(
+    articles.filter((article) => article.series === series),
+    "descending"
+  )[0];
 }
 
 export function getBlogHomepageEditorial<T extends SortableInsight>(
@@ -95,9 +108,13 @@ export function getBlogHomepageEditorial<T extends SortableInsight>(
 
 export function getBlogHomepageGuides<T extends SortableInsight>(
   articles: T[],
-  limit = 6
+  limit = 6,
+  excludedSlugs: readonly string[] = []
 ) {
+  const excluded = new Set(excludedSlugs);
+
   return getGuideInsights(articles)
+    .filter((article) => !excluded.has(article.slug))
     .sort((a, b) => {
       const priorityA = a.guidePriority > 0 ? a.guidePriority : Number.MAX_SAFE_INTEGER;
       const priorityB = b.guidePriority > 0 ? b.guidePriority : Number.MAX_SAFE_INTEGER;

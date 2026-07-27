@@ -51,8 +51,9 @@ test("Guide routes do not introduce a second main landmark", () => {
   assert.doesNotMatch(category, /<main className="guides-hub/);
 });
 
-test("Guides are reachable from global navigation and sitemap", () => {
-  assert.match(header, /\{ href: "\/guides", label: "Guides" \}/);
+test("primary navigation consolidates Guides under Blog while discovery routes remain", () => {
+  assert.match(header, /\{ href: "\/blog", label: "Blog" \}/);
+  assert.doesNotMatch(header, /\{ href: "\/guides", label: "Guides" \}/);
   assert.match(footer, /href="\/guides"/);
   assert.match(sitemap, /"\/guides"/);
   assert.match(sitemap, /GUIDE_TYPE_CONFIG/);

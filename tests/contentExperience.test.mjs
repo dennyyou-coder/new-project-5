@@ -4,31 +4,33 @@ import test from "node:test";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-const [blog, archive, article, css, sitemap] = await Promise.all([
+const [blog, blogLanding, archive, article, css, sitemap] = await Promise.all([
   read("app/blog/page.tsx"),
+  read("components/BlogLanding.tsx"),
   read("app/blog/archive/page.tsx"),
   read("app/blog/[slug]/page.tsx"),
   read("app/globals.css"),
   read("app/sitemap.ts")
 ]);
 
-test("Blog has one responsive sidebar and clear commercial entry points", () => {
-  assert.match(blog, /blog-editorial-intro/);
-  assert.match(blog, /Explore Market Reports/);
-  assert.match(blog, /Discuss Product Opportunities/);
-  assert.equal((blog.match(/<SidebarContent/g) || []).length, 1);
-  assert.doesNotMatch(blog, /insights-sidebar-desktop/);
-  assert.doesNotMatch(blog, /insights-sidebar-mobile/);
+test("Blog uses the approved full-width landing without a sidebar", () => {
+  assert.match(blog, /blog-home-intro/);
+  assert.match(blog, /<BlogBusinessLinks \/>/);
+  assert.match(blogLanding, /Explore Market Reports/);
+  assert.match(blogLanding, /Discuss Product Opportunities/);
+  assert.doesNotMatch(blog, /SidebarContent/);
+  assert.doesNotMatch(blog, /<aside/);
 });
 
-test("Blog feed does not introduce a nested main landmark", () => {
+test("Blog landing does not introduce a nested main landmark", () => {
   assert.doesNotMatch(blog, /<main className="insights-feed"/);
+  assert.doesNotMatch(blogLanding, /<main\b/);
 });
 
 test("Blog images use intentional eager and lazy loading", () => {
-  assert.match(blog, /fetchPriority="high"/);
-  assert.match(blog, /loading="lazy"/);
-  assert.match(blog, /decoding="async"/);
+  assert.match(blogLanding, /fetchPriority="high"/);
+  assert.match(blogLanding, /loading="lazy"/);
+  assert.match(blogLanding, /decoding="async"/);
 });
 
 test("Archive exposes coverage, reading metadata, and structured data", () => {
@@ -62,7 +64,7 @@ test("Article schema includes author identity, section, keywords, and publisher 
 
 test("Content pages have isolated responsive and long-reading styles", () => {
   assert.match(css, /Content experience optimization/);
-  assert.match(css, /\.blog-editorial-intro/);
+  assert.match(css, /\.blog-home-intro/);
   assert.match(css, /\.archive-category-summary/);
   assert.match(css, /\.blog-visible-breadcrumb/);
   assert.match(css, /overflow-x:\s*auto/);

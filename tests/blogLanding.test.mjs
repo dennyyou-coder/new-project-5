@@ -49,3 +49,40 @@ test("Blog section variants bind through data attributes", () => {
   assert.match(cssSource, /\.blog-home-section\[data-variant="guide"\]/);
   assert.doesNotMatch(cssSource, /\.blog-home-section-guide/);
 });
+
+test("Blog landing links have a visible solid keyboard focus ring", () => {
+  const focusRule = cssSource.match(
+    /([^{}]*\.blog-home-card:focus-visible[^{}]*)\{([^}]*)\}/
+  );
+
+  assert.ok(focusRule);
+  for (const selector of [
+    ".blog-home-card:focus-visible",
+    ".blog-home-series-main:focus-visible",
+    ".blog-home-series-all:focus-visible",
+    ".blog-home-section-heading > a:focus-visible",
+    ".blog-home-business nav a:focus-visible"
+  ]) {
+    assert.ok(focusRule[1].includes(selector), `missing ${selector}`);
+  }
+  assert.match(focusRule[2], /outline:\s*3px solid\s+#[0-9a-f]{6}/i);
+});
+
+test("Blog landing respects reduced-motion preferences", () => {
+  assert.match(cssSource, /@media \(prefers-reduced-motion: reduce\)/);
+  assert.match(
+    cssSource,
+    /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.blog-home-card[\s\S]*transition:\s*none/
+  );
+  assert.match(
+    cssSource,
+    /@media \(prefers-reduced-motion: reduce\)[\s\S]*\.blog-home-card:hover[\s\S]*transform:\s*none/
+  );
+});
+
+test("Blog newsletter trigger and button are full width through 760px", () => {
+  assert.match(
+    cssSource,
+    /@media \(max-width: 760px\)[\s\S]*\.blog-home-main \.insights-newsletter-cta \.lead-form-trigger,\s*\.blog-home-main \.insights-newsletter-cta \.lead-form-trigger > button\s*\{[^}]*width:\s*100%/
+  );
+});
