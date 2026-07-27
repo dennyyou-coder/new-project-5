@@ -22338,14 +22338,14 @@ button.contact-help-card > .contact-help-card-copy > span {
 .blog-home-series-image {
   min-height: 360px;
   overflow: hidden;
-  background: #e8eef7;
+  background: #f8f4eb;
 }
 
 .blog-home-series-image img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .blog-home-series-copy {
@@ -22488,12 +22488,7 @@ button.contact-help-card > .contact-help-card-copy > span {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
-  transition: transform .25s ease;
-}
-
-.blog-home-card:hover .blog-home-card-image img {
-  transform: scale(1.025);
+  object-fit: contain;
 }
 
 .blog-home-card-copy {
@@ -22697,14 +22692,12 @@ button.contact-help-card > .contact-help-card-copy > span {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .blog-home-card,
-  .blog-home-card-image img {
+  .blog-home-card {
     transition: none;
   }
 
   .blog-home-card:hover,
-  .blog-home-card:focus-visible,
-  .blog-home-card:hover .blog-home-card-image img {
+  .blog-home-card:focus-visible {
     transform: none;
   }
 }

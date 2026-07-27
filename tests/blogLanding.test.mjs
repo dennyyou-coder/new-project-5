@@ -86,3 +86,18 @@ test("Blog newsletter trigger and button are full width through 760px", () => {
     /@media \(max-width: 760px\)[\s\S]*\.blog-home-main \.insights-newsletter-cta \.lead-form-trigger,\s*\.blog-home-main \.insights-newsletter-cta \.lead-form-trigger > button\s*\{[^}]*width:\s*100%/
   );
 });
+
+test("Blog landing artwork stays fully visible instead of being cropped", () => {
+  assert.match(
+    cssSource,
+    /\.blog-home-series-image img\s*\{[^}]*object-fit:\s*contain/
+  );
+  assert.match(
+    cssSource,
+    /\.blog-home-card-image img\s*\{[^}]*object-fit:\s*contain/
+  );
+  assert.doesNotMatch(
+    cssSource,
+    /\.blog-home-card:hover \.blog-home-card-image img\s*\{[^}]*transform:\s*scale/
+  );
+});
