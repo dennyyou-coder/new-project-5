@@ -102,7 +102,7 @@ export function BlogArticleGrid({
   variant
 }: BlogArticleGridProps) {
   return (
-    <section className={`blog-home-section blog-home-section-${variant}`} aria-labelledby={sectionId}>
+    <section className="blog-home-section" data-variant={variant} aria-labelledby={sectionId}>
       <div className="blog-home-section-heading">
         <div>
           <p className="eyebrow">{eyebrow}</p>

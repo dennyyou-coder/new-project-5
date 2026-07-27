@@ -42,3 +42,10 @@ test("Blog grids use three, two, and one columns at responsive breakpoints", () 
   assert.match(cssSource, /@media \(max-width: 900px\)[\s\S]*\.blog-home-grid\s*\{[^}]*repeat\(2,/);
   assert.match(cssSource, /@media \(max-width: 760px\)[\s\S]*\.blog-home-grid\s*\{[^}]*grid-template-columns:\s*1fr/);
 });
+
+test("Blog section variants bind through data attributes", () => {
+  assert.match(componentSource, /<section className="blog-home-section" data-variant=\{variant\}/);
+  assert.doesNotMatch(componentSource, /blog-home-section-\$\{variant\}/);
+  assert.match(cssSource, /\.blog-home-section\[data-variant="guide"\]/);
+  assert.doesNotMatch(cssSource, /\.blog-home-section-guide/);
+});

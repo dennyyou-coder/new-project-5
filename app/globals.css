@@ -22515,17 +22515,12 @@ button.contact-help-card > .contact-help-card-copy > span {
   margin-top: auto;
 }
 
-.blog-home-guides,
-.blog-home-section-guide {
+.blog-home-section[data-variant="guide"] {
   margin-top: 64px;
   border: 1px solid #d3e2f3;
   border-radius: 22px;
   padding: 38px;
   background: #edf5ff;
-}
-
-.blog-home-section-guide.blog-home-section {
-  padding-top: 38px;
 }
 
 .blog-home-card[data-variant="guide"] {
@@ -22665,15 +22660,10 @@ button.contact-help-card > .contact-help-card-copy > span {
     padding: 20px;
   }
 
-  .blog-home-guides,
-  .blog-home-section-guide {
+  .blog-home-section[data-variant="guide"] {
     margin: 46px -8px 0;
     border-radius: 18px;
     padding: 24px 16px;
-  }
-
-  .blog-home-section-guide.blog-home-section {
-    padding-top: 24px;
   }
 
   .blog-home-main .insights-newsletter-cta {
