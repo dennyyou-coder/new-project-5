@@ -48,6 +48,68 @@ export function shouldLoadGoogleAnalytics({
   );
 }
 
+export function getGoogleAnalyticsBootstrapScript(): string {
+  const measurementId = JSON.stringify(GOOGLE_ANALYTICS_MEASUREMENT_ID);
+  const internalParam = JSON.stringify(INTERNAL_TRAFFIC_PARAM);
+  const storageKey = JSON.stringify(INTERNAL_TRAFFIC_STORAGE_KEY);
+  const productionHosts = JSON.stringify([...PRODUCTION_ANALYTICS_HOSTS]);
+
+  return `
+(function () {
+  var measurementId = ${measurementId};
+  var disableKey = "ga-disable-" + measurementId;
+  var productionHosts = ${productionHosts};
+  var params = new URLSearchParams(window.location.search);
+  var control = params.get(${internalParam});
+  var isInternal = control === "1";
+
+  try {
+    if (control === "1") {
+      window.localStorage.setItem(${storageKey}, "1");
+    } else if (control === "0") {
+      window.localStorage.removeItem(${storageKey});
+      isInternal = false;
+    } else {
+      isInternal = window.localStorage.getItem(${storageKey}) === "1";
+    }
+  } catch (_) {
+    isInternal = control === "1";
+  }
+
+  if (control === "1" || control === "0") {
+    params.delete(${internalParam});
+    var nextSearch = params.toString();
+    window.history.replaceState(
+      null,
+      "",
+      window.location.pathname +
+        (nextSearch ? "?" + nextSearch : "") +
+        window.location.hash
+    );
+  }
+
+  var isProduction =
+    productionHosts.indexOf(window.location.hostname.toLowerCase()) !== -1;
+  var isAutomated = window.navigator.webdriver === true;
+
+  if (!isProduction || isAutomated || isInternal) {
+    window[disableKey] = true;
+    return;
+  }
+
+  delete window[disableKey];
+  window.dataLayer = window.dataLayer || [];
+  window.gtag =
+    window.gtag ||
+    function () {
+      window.dataLayer.push(arguments);
+    };
+  window.gtag("js", new Date());
+  window.gtag("config", measurementId);
+})();
+`.trim();
+}
+
 type AnalyticsScriptElement = {
   async: boolean;
   id: string;
