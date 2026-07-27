@@ -50,9 +50,15 @@ test("directory sidebar supports guide categories and important content", () => 
 
 test("Guides have isolated responsive styles", () => {
   assert.match(css, /Analysis and Guides directories/);
+  assert.match(css, /\.content-directory-series/);
+  assert.match(css, /\.content-directory-profile/);
+  assert.match(css, /\.content-directory-keywords/);
   assert.match(css, /\.content-directory-layout/);
   assert.match(css, /\.content-directory-feed-item/);
   assert.match(css, /\.content-directory-sidebar/);
+  assert.match(css, /data-sidebar-mode="analysis"/);
+  assert.match(css, /min-height:\s*44px/);
+  assert.match(css, /object-fit:\s*contain/);
 });
 
 test("Guide routes do not introduce a second main landmark", () => {

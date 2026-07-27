@@ -71,8 +71,14 @@ test("Content pages have isolated responsive and long-reading styles", () => {
   assert.match(css, /Content experience optimization/);
   assert.match(css, /\.blog-home-intro/);
   assert.match(css, /Analysis and Guides directories/);
+  assert.match(css, /\.content-directory-series/);
+  assert.match(css, /\.content-directory-profile/);
+  assert.match(css, /\.content-directory-keywords/);
   assert.match(css, /\.content-directory-layout/);
   assert.match(css, /\.content-directory-sidebar/);
+  assert.match(css, /data-sidebar-mode="analysis"/);
+  assert.match(css, /min-height:\s*44px/);
+  assert.match(css, /object-fit:\s*contain/);
   assert.match(css, /\.blog-visible-breadcrumb/);
   assert.match(css, /overflow-x:\s*auto/);
   assert.match(css, /content-visibility:\s*auto/);
