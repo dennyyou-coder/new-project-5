@@ -46,8 +46,8 @@ test("Expo no longer behaves like one generic newsletter signup", () => {
 });
 
 test("Expo preserves the current event information without invented scale claims", () => {
-  assert.match(expoSource, /November 2026/);
-  assert.match(expoSource, /Suzhou International Expo Center/);
+  assert.match(expoSource, /November 18–20, 2026/);
+  assert.match(expoSource, /Suzhou Shishan International Convention Center/);
   assert.match(expoSource, /China/);
   assert.doesNotMatch(expoSource, /\d+[,+]\s*(Exhibitors|Buyers|Visitors)/);
 });
