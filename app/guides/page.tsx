@@ -9,12 +9,14 @@ import {
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
 import {
   getFeaturedGuides,
-  getGuideInsights
+  getGuideInsights,
+  getLatestSeriesInsight
 } from "@/lib/insightCollections";
 
 type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
 const siteUrl = "https://worldcleanbiz.com";
+const featuredSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 
 export async function generateMetadata({
   searchParams
@@ -57,6 +59,9 @@ export default async function GuidesPage({
   searchParams?: SearchParams;
 }) {
   const resolvedSearchParams = searchParams ? await searchParams : {};
+  const hasQueryParams = Object.values(resolvedSearchParams).some((value) =>
+    Array.isArray(value) ? value.length > 0 : typeof value !== "undefined"
+  );
   const allArticles = getInsights();
   const guides = getGuideInsights(allArticles);
   const {
@@ -84,7 +89,10 @@ export default async function GuidesPage({
       active: false
     }))
   ];
-  const featuredGuides = getFeaturedGuides(allArticles, 5);
+  const latestSeriesArticle =
+    !hasQueryParams && currentPage === 1
+      ? getLatestSeriesInsight(allArticles, featuredSeries)
+      : undefined;
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -142,20 +150,21 @@ export default async function GuidesPage({
             ? directoryHref("/guides", currentPage + 1)
             : undefined
         }
-        sidebarPrimaryTitle="Guide Categories"
-        sidebarPrimaryLinks={[
-          { label: "All Industry Guides", href: "/guides", active: true },
-          ...GUIDE_TYPE_CONFIG.map((guideType) => ({
-            label: guideType.label,
-            href: guideType.href
-          }))
-        ]}
-        sidebarSecondaryTitle="High-Value Guides"
-        sidebarSecondaryLinks={featuredGuides.map((article) => ({
-          label: article.title,
-          href: `/blog/${article.slug}`
-        }))}
-        latestArticles={guides.slice(0, 5)}
+        featuredSeriesArticle={latestSeriesArticle}
+        sidebar={{
+          mode: "guides",
+          navigationTitle: "Guide Categories",
+          navigationLinks: [
+            { label: "All Industry Guides", href: "/guides", active: true },
+            ...GUIDE_TYPE_CONFIG.map((guideType) => ({
+              label: guideType.label,
+              href: guideType.href
+            }))
+          ],
+          importantTitle: "Essential Guides",
+          importantArticles: getFeaturedGuides(allArticles, 6),
+          importantMeta: "readingTime"
+        }}
       />
       <script
         type="application/ld+json"

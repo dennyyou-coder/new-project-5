@@ -104,7 +104,7 @@ export default async function GuideTypePage({
       active: guideType.type === type
     }))
   ];
-  const featuredGuides = getFeaturedGuides(allArticles, 5);
+  const featuredGuides = getFeaturedGuides(allArticles, 6);
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -167,21 +167,21 @@ export default async function GuideTypePage({
             ? directoryHref(config.href, currentPage + 1)
             : undefined
         }
-        sidebarPrimaryTitle="Guide Categories"
-        sidebarPrimaryLinks={[
-          { label: "All Industry Guides", href: "/guides" },
-          ...GUIDE_TYPE_CONFIG.map((guideType) => ({
-            label: guideType.label,
-            href: guideType.href,
-            active: guideType.type === type
-          }))
-        ]}
-        sidebarSecondaryTitle="High-Value Guides"
-        sidebarSecondaryLinks={featuredGuides.map((article) => ({
-          label: article.title,
-          href: `/blog/${article.slug}`
-        }))}
-        latestArticles={articles.slice(0, 5)}
+        sidebar={{
+          mode: "guides",
+          navigationTitle: "Guide Categories",
+          navigationLinks: [
+            { label: "All Industry Guides", href: "/guides", active: false },
+            ...GUIDE_TYPE_CONFIG.map((guideType) => ({
+              label: guideType.label,
+              href: guideType.href,
+              active: guideType.type === type
+            }))
+          ],
+          importantTitle: "Essential Guides",
+          importantArticles: featuredGuides,
+          importantMeta: "readingTime"
+        }}
       />
       <script
         type="application/ld+json"

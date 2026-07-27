@@ -140,6 +140,41 @@ test("Guides directory renders ten guide rows and guide-type navigation", async 
   );
 });
 
+test("Guides root shows the series and approved sidebar order", async () => {
+  const html = await page("/guides");
+
+  includesMatch(
+    html,
+    /class="[^"]*content-directory-series[^"]*"/,
+    "Guides shows the series"
+  );
+  includesMatch(html, />Denny You</, "Guides shows the author profile");
+  includesMatch(html, />Guide Categories</, "Guides shows categories");
+  includesMatch(html, />Essential Guides</, "Guides shows prioritized Guides");
+  excludesMatch(html, />Latest Articles</, "Guides removes the generic latest module");
+});
+
+test("Guide pagination and type pages do not repeat the series", async () => {
+  const pageTwo = await page("/guides?page=2");
+  const ownership = await page("/guides/ownership");
+
+  excludesMatch(
+    pageTwo,
+    /class="[^"]*content-directory-series[^"]*"/,
+    "Page 2 omits the series"
+  );
+  excludesMatch(
+    ownership,
+    /class="[^"]*content-directory-series[^"]*"/,
+    "Type pages omit the series"
+  );
+  includesMatch(
+    ownership,
+    /aria-current="page"[^>]*>Brand Ownership</,
+    "Guide type is active"
+  );
+});
+
 test("Guide category pages reuse the directory and preserve paginated canonicals", async () => {
   const html = await page("/guides/ownership?page=2");
 

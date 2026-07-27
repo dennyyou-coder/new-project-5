@@ -21,7 +21,7 @@ test("Guides landing has reader-facing categories and editorial return path", ()
   assert.match(landing, /Industry Guides/);
   assert.match(landing, /GUIDE_TYPE_CONFIG/);
   assert.match(landing, /Guide Categories/);
-  assert.match(landing, /High-Value Guides/);
+  assert.match(landing, /Essential Guides/);
   assert.match(landing, /<ContentDirectory/);
   assert.match(landing, /paginateDirectoryItems/);
   assert.doesNotMatch(
