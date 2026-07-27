@@ -6,11 +6,20 @@ import {
   paginateDirectoryItems,
   parseDirectoryPage
 } from "@/lib/contentDirectory";
-import { getEditorialInsights } from "@/lib/insightCollections";
+import {
+  filterArticlesByCompany,
+  getAvailableCompanyKeywords,
+  getCompanyKeyword
+} from "@/lib/companyKeywords";
+import {
+  getEditorialInsights,
+  getLatestSeriesInsight
+} from "@/lib/insightCollections";
 
 type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
 const siteUrl = "https://worldcleanbiz.com";
+const featuredSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 
 function queryValue(value: string | string[] | undefined) {
   return Array.isArray(value) ? value[0] : value;
@@ -51,19 +60,33 @@ export default async function BlogArchivePage({
   searchParams?: SearchParams;
 }) {
   const resolvedSearchParams = searchParams ? await searchParams : {};
-  const editorialArticles = getEditorialInsights(getInsights());
+  const hasQueryParams = Object.values(resolvedSearchParams).some((value) =>
+    Array.isArray(value) ? value.length > 0 : typeof value !== "undefined"
+  );
+  const allArticles = getInsights();
+  const editorialArticles = getEditorialInsights(allArticles);
   const categories = Array.from(
     new Set(editorialArticles.map((article) => article.category).filter(Boolean))
   ).sort((a, b) => a.localeCompare(b));
   const requestedCategory = queryValue(resolvedSearchParams.category);
-  const selectedCategory = categories.includes(requestedCategory || "")
-    ? requestedCategory
-    : undefined;
-  const filteredArticles = selectedCategory
-    ? editorialArticles.filter(
-        (article) => article.category === selectedCategory
-      )
-    : editorialArticles;
+  const requestedCompany = queryValue(resolvedSearchParams.company);
+  const availableCompanies = getAvailableCompanyKeywords(editorialArticles);
+  const selectedCompany = getCompanyKeyword(
+    requestedCompany,
+    availableCompanies
+  );
+  const selectedCategory = selectedCompany
+    ? undefined
+    : categories.includes(requestedCategory || "")
+      ? requestedCategory
+      : undefined;
+  const filteredArticles = selectedCompany
+    ? filterArticlesByCompany(editorialArticles, selectedCompany)
+    : selectedCategory
+      ? editorialArticles.filter(
+          (article) => article.category === selectedCategory
+        )
+      : editorialArticles;
   const {
     items: visibleArticles,
     currentPage,
@@ -73,12 +96,14 @@ export default async function BlogArchivePage({
     filteredArticles,
     parseDirectoryPage(resolvedSearchParams.page)
   );
-  const categoryParams = { category: selectedCategory };
+  const paginationParams = selectedCompany
+    ? { company: selectedCompany.value }
+    : { category: selectedCategory };
   const pagination = Array.from({ length: totalPages }, (_, index) => {
     const page = index + 1;
     return {
       page,
-      href: directoryHref("/blog/archive", page, categoryParams),
+      href: directoryHref("/blog/archive", page, paginationParams),
       current: page === currentPage
     };
   });
@@ -86,7 +111,7 @@ export default async function BlogArchivePage({
     {
       label: "All Analysis",
       href: "/blog/archive",
-      active: !selectedCategory
+      active: !selectedCategory && !selectedCompany
     },
     ...categories.map((category) => ({
       label: category,
@@ -94,11 +119,24 @@ export default async function BlogArchivePage({
       active: selectedCategory === category
     }))
   ];
+  const latestSeriesArticle = getLatestSeriesInsight(
+    allArticles,
+    featuredSeries
+  );
+  const featuredSeriesArticle =
+    !hasQueryParams &&
+    currentPage === 1 &&
+    !selectedCategory &&
+    !selectedCompany
+      ? latestSeriesArticle
+      : undefined;
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: selectedCategory
       ? `${selectedCategory} analysis from World Clean Biz`
+      : selectedCompany
+        ? `${selectedCompany.label} analysis from World Clean Biz`
       : "World Clean Biz Analysis & Insights",
     numberOfItems: filteredArticles.length,
     itemListElement: visibleArticles.map((article, index) => ({
@@ -147,7 +185,7 @@ export default async function BlogArchivePage({
             ? directoryHref(
                 "/blog/archive",
                 currentPage - 1,
-                categoryParams
+                paginationParams
               )
             : undefined
         }
@@ -156,29 +194,27 @@ export default async function BlogArchivePage({
             ? directoryHref(
                 "/blog/archive",
                 currentPage + 1,
-                categoryParams
+                paginationParams
               )
             : undefined
         }
-        sidebarPrimaryTitle="Explore World Clean Biz"
-        sidebarPrimaryLinks={[
-          {
-            label: "All Analysis",
-            href: "/blog/archive",
-            active: !selectedCategory,
-          },
-          { label: "Industry Guides", href: "/guides" },
-          { label: "Back To Blog", href: "/blog" },
-          { label: "Market Reports", href: "/reports" },
-          { label: "Sourcing Opportunities", href: "/sourcing" }
-        ]}
-        sidebarSecondaryTitle="Popular Analysis Categories"
-        sidebarSecondaryLinks={categories.slice(0, 8).map((category) => ({
-          label: category,
-          href: directoryHref("/blog/archive", 1, { category }),
-          active: selectedCategory === category
-        }))}
-        latestArticles={editorialArticles.slice(0, 5)}
+        featuredSeriesArticle={featuredSeriesArticle}
+        sidebar={{
+          mode: "analysis",
+          navigationTitle: "Company & Brand Index",
+          navigationLinks: availableCompanies.map((company) => ({
+            label: company.label,
+            href: directoryHref("/blog/archive", 1, {
+              company: company.value
+            }),
+            active: selectedCompany?.value === company.value
+          })),
+          importantTitle: "Important Analysis",
+          importantArticles: editorialArticles.filter(
+            (article) => article.featured
+          ),
+          importantMeta: "date"
+        }}
       />
       <script
         type="application/ld+json"

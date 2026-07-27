@@ -73,6 +73,56 @@ test("Analysis pagination and filters are server rendered", async () => {
   );
 });
 
+test("Analysis root shows the series, full company index and curated sidebar", async () => {
+  const html = await page("/blog/archive");
+  includesMatch(
+    html,
+    /class="[^"]*content-directory-series[^"]*"/,
+    "Analysis shows the series"
+  );
+  includesMatch(html, />Denny You</, "Analysis shows the author profile");
+  includesMatch(
+    html,
+    />Company &amp; Brand Index</,
+    "Analysis shows the company index"
+  );
+  includesMatch(html, />Important Analysis</, "Analysis shows curated articles");
+  excludesMatch(html, />View all company/i, "All company keywords are directly visible");
+  includesMatch(html, /company=dji-romo/, "Company keywords are linked filters");
+});
+
+test("Analysis company filters replace category state and preserve pagination", async () => {
+  const html = await page(
+    "/blog/archive?company=dji-romo&category=Robotic%20Mowers"
+  );
+  excludesMatch(
+    html,
+    /class="[^"]*content-directory-series[^"]*"/,
+    "Filtered Analysis omits the series"
+  );
+  includesMatch(
+    html,
+    /aria-current="page"[^>]*>DJI \/ ROMO</,
+    "Company is active"
+  );
+  includesMatch(
+    html,
+    /company=dji-romo&amp;page=2/,
+    "Company pagination is preserved"
+  );
+  excludesMatch(
+    html,
+    /href="\/blog\/archive\?company=[^"]*(?:&amp;|&)category=/,
+    "Company links do not retain category"
+  );
+  excludesMatch(
+    html,
+    /href="\/blog\/archive\?category=[^"]*(?:&amp;|&)company=/,
+    "Category links do not retain company"
+  );
+  includesMatch(html, /content="noindex, follow"/, "Company filters are noindex");
+});
+
 test("Guides directory renders ten guide rows and guide-type navigation", async () => {
   const html = await page("/guides");
 

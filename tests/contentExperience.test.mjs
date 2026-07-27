@@ -43,8 +43,9 @@ test("Archive exposes paginated analysis, reading metadata, and structured data"
   assert.match(archive, /CollectionPage/);
   assert.match(archive, /ItemList/);
   assert.match(archive, /BreadcrumbList/);
-  assert.match(archive, /Market Reports/);
-  assert.match(archive, /Sourcing Opportunities/);
+  assert.match(archive, /getAvailableCompanyKeywords/);
+  assert.match(archive, /navigationTitle: "Company & Brand Index"/);
+  assert.match(archive, /importantTitle: "Important Analysis"/);
   assert.match(archive, /paginateDirectoryItems/);
 });
 
