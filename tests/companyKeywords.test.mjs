@@ -36,7 +36,8 @@ test("public company index excludes channels, component suppliers, and secondary
     { title: "Amazon as a Sales Channel", tags: ["Amazon"] },
     { title: "Benewake Supplies Underwater LiDAR", tags: ["Benewake"] },
     { title: "EAI Navigation Components", tags: ["EAI"] },
-    { title: "Insta360 Enters Consumer Robotics", tags: ["Insta360"] }
+    { title: "Insta360 Enters Consumer Robotics", tags: ["Insta360"] },
+    { title: "Midea Expands Its Appliance Portfolio", tags: ["Midea"] }
   ]);
 
   assert.deepEqual(

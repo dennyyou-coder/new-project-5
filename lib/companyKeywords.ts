@@ -99,7 +99,6 @@ const PRIMARY_ANALYSIS_COMPANY_VALUES = new Set([
   "kress",
   "mammotion",
   "maytronics-dolphin",
-  "midea",
   "miele",
   "mova",
   "narwal",
