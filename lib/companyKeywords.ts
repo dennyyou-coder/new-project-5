@@ -82,6 +82,41 @@ export const ANALYSIS_COMPANY_KEYWORDS = [
   keyword("Yarbo", "yarbo", ["yarbo"])
 ] as const satisfies readonly CompanyKeyword[];
 
+const PRIMARY_ANALYSIS_COMPANY_VALUES = new Set([
+  "aiper",
+  "anker-eufy",
+  "beatbot",
+  "bissell",
+  "dji-romo",
+  "dreame",
+  "dyson",
+  "ecovacs",
+  "hoover",
+  "husqvarna",
+  "irobot-roomba",
+  "karcher",
+  "kingclean",
+  "kress",
+  "mammotion",
+  "maytronics-dolphin",
+  "midea",
+  "miele",
+  "mova",
+  "narwal",
+  "navimow-segway",
+  "nilfisk",
+  "pudu-robotics",
+  "roborock",
+  "sharkninja",
+  "stihl",
+  "sunseeker",
+  "tineco",
+  "tti-milwaukee",
+  "vorwerk",
+  "wybot",
+  "xiaomi-mijia"
+]);
+
 function normalize(value: string) {
   return value
     .normalize("NFKD")
@@ -108,6 +143,9 @@ export function getAvailableCompanyKeywords<T extends CompanyArticle>(
   articles: readonly T[]
 ) {
   return ANALYSIS_COMPANY_KEYWORDS
+    .filter((companyKeyword) =>
+      PRIMARY_ANALYSIS_COMPANY_VALUES.has(companyKeyword.value)
+    )
     .filter((companyKeyword) =>
       articles.some((article) => articleMatchesKeyword(article, companyKeyword))
     )

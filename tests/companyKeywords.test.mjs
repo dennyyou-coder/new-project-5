@@ -29,6 +29,22 @@ test("available keywords contain only groups with matching analysis articles", (
   );
 });
 
+test("public company index excludes channels, component suppliers, and secondary companies", () => {
+  const available = getAvailableCompanyKeywords([
+    { title: "Aiper Expands Its Pool Robot Line", tags: ["Aiper"] },
+    { title: "Tineco Builds the Floor Washer Category", tags: ["Tineco"] },
+    { title: "Amazon as a Sales Channel", tags: ["Amazon"] },
+    { title: "Benewake Supplies Underwater LiDAR", tags: ["Benewake"] },
+    { title: "EAI Navigation Components", tags: ["EAI"] },
+    { title: "Insta360 Enters Consumer Robotics", tags: ["Insta360"] }
+  ]);
+
+  assert.deepEqual(
+    available.map((keyword) => keyword.value),
+    ["aiper", "tineco"]
+  );
+});
+
 test("aliases return a combined company result set", () => {
   const available = getAvailableCompanyKeywords(articles);
   const keyword = getCompanyKeyword("dji-romo", available);
