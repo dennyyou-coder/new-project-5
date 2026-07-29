@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
 import { TallyButton } from "@/components/LeadForms";
+import { getSeriesArticles } from "@/lib/blogSeries";
 import { getInsights, type Insight } from "@/lib/content";
 import { getEditorialInsights } from "@/lib/insightCollections";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" }
 };
+
+const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 
 const heroProducts = [
   { label: "Robot Vacuums", image: "/images/site-refresh/home/category-robot-vacuums.webp", alt: "Robot vacuum product category", text: "New functions, brands and channels continue to reshape floorcare." },
@@ -100,7 +104,12 @@ function excerptFor(article: Insight) {
 }
 
 export default function HomePage() {
-  const featuredInsights = getFeaturedInsights(getEditorialInsights(getInsights()));
+  const allInsights = getInsights();
+  const latestFounderSeries = getSeriesArticles(allInsights, founderSeries).at(-1);
+  const featuredInsights = getFeaturedInsights(
+    getEditorialInsights(allInsights)
+      .filter((article) => article.slug !== latestFounderSeries?.slug)
+  );
 
   return (
     <main className="home-v9">
@@ -120,14 +129,18 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="home-v9-product-board" aria-label="Cleaning industry product categories">
-            {heroProducts.map((product) => (
-              <figure key={product.label}>
-                <img src={product.image} alt={product.alt} />
-                <figcaption>{product.label}</figcaption>
-              </figure>
-            ))}
-          </div>
+          {latestFounderSeries ? (
+            <HomeSeriesFeature article={latestFounderSeries} />
+          ) : (
+            <div className="home-v9-product-board" aria-label="Cleaning industry product categories">
+              {heroProducts.map((product) => (
+                <figure key={product.label}>
+                  <img src={product.image} alt={product.alt} />
+                  <figcaption>{product.label}</figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
