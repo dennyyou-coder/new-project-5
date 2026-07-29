@@ -6,6 +6,10 @@ const componentSource = await readFile(
   new URL("../components/HomeSeriesFeature.tsx", import.meta.url),
   "utf8"
 );
+const cssSource = await readFile(
+  new URL("../app/globals.css", import.meta.url),
+  "utf8"
+);
 
 test("founder-series card keeps the approved identity and semantic hierarchy", () => {
   assert.match(componentSource, /Founder Series · Latest Episode/);
@@ -34,4 +38,30 @@ test("founder-series card preserves cover metadata and has a local fallback", ()
     /building-worlds-no-1-cleaning-show-episode-01-cover\.webp/
   );
   assert.match(componentSource, /fetchPriority="high"/);
+});
+
+test("founder-series Hero styles keep the complete cover visible", () => {
+  assert.match(
+    cssSource,
+    /\.home-v9-series-media\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*9;/s
+  );
+  assert.match(
+    cssSource,
+    /\.home-v9-series-media img\s*\{[^}]*object-fit:\s*contain;/s
+  );
+});
+
+test("founder-series Hero stacks and exposes full-width mobile actions", () => {
+  assert.match(
+    cssSource,
+    /@media \(max-width: 1050px\)[\s\S]*?\.home-v9-series-card\s*\{[^}]*max-width:\s*720px;/s
+  );
+  assert.match(
+    cssSource,
+    /@media \(max-width: 720px\)[\s\S]*?\.home-v9-series-actions\s*\{[^}]*grid-template-columns:\s*1fr;/s
+  );
+  assert.match(
+    cssSource,
+    /\.home-v9-series-actions a:focus-visible\s*\{[^}]*outline:/s
+  );
 });
