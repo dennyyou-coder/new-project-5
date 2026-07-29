@@ -14,7 +14,7 @@
   "metaDescription": "Dreame company profile: ownership, Xiaomi and MOVA relationships, leadership, products, manufacturing, channels and strategy.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dreame, MOVA or Xiaomi. Dreame is privately held, and historical financing announcements do not establish a complete current cap table.",
   "headquarters": "Suzhou, Jiangsu, China",
-  "founded": "2017 (official pages trace the founding team's motor work to 2015)",
+  "founded": "Official pages conflict: Dreame's global Brand Story says the company was established in 2015, while its US and Korean About pages say 2017.",
   "heroImage": "/images/insights/dreame-douyin-counterattack-against-tineco-cover.jpg",
   "heroImageAlt": "Dreame robot vacuums and upright wet-and-dry floor cleaners displayed in a product showroom",
   "ownership": {
@@ -25,11 +25,6 @@
       "name": "Yu Hao",
       "role": "Founder and CEO",
       "context": "Official Dreame pages identify Yu Hao as founder; the company traces its technology roots to his team's high-speed digital motor work."
-    },
-    {
-      "name": "Ana Wang",
-      "role": "CEO, Dreame Technology North America",
-      "context": "Leads the company's North American business and has represented its premium robot-vacuum and retail expansion strategy."
     }
   ],
   "productPortfolio": [
@@ -57,8 +52,7 @@
   ],
   "marketsChannels": [
     "Dreame's current US company page says the brand reaches more than 120 countries and regions and operates more than 4,000 physical stores, alongside ecommerce and dealer channels.",
-    "The global contact page lists localized support across North America, Europe, Asia-Pacific, the Middle East and Latin America and provides a dedicated distribution contact.",
-    "The company's route to market is moving beyond marketplace-led growth toward branded retail and in-person product experience, while its product range broadens beyond floorcare."
+    "The global contact page lists localized support across North America, Europe, Asia-Pacific, the Middle East and Latin America and provides a dedicated distribution contact."
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Dreame combines a fast-widening portfolio—from robot and upright floorcare into yard, pool, personal-care and home appliances—with ecommerce, distributors and a growing physical-store network. Its Xiaomi ecosystem history accelerated the early business but does not define current legal ownership. The strategic pressure is organizational: Dreame must convert rapid category launches and high marketing intensity into durable service, quality and channel economics while Roborock and Ecovacs contest the same premium floorcare and offline experience space.",
@@ -70,36 +64,10 @@
   },
   "developments": [
     {
-      "date": "2026-07-29",
-      "title": "Dreame shows a broad global retail footprint",
-      "summary": "Dreame's current company profile reports operations across more than 120 countries and regions and more than 4,000 physical stores, marking a route-to-market expansion beyond online floorcare.",
-      "sourceIds": [
-        "dreame-about-us",
-        "dreame-contact"
-      ]
-    },
-    {
-      "date": "2024-01-01",
-      "title": "MOVA operates as a distinct consumer brand",
-      "summary": "MOVA's regional company page describes the brand as founded in 2024 and powered by Dreame Technology. The relationship supports shared technology context, not the assumption that every MOVA and Dreame legal entity or customer contract is the same.",
-      "sourceIds": [
-        "mova-about"
-      ]
-    },
-    {
       "date": "2020-09-07",
       "title": "Dreame announces Series B+ financing",
       "summary": "Dreame announced a nearly RMB 100 million round led by IDG Capital and identified Xiaomi Corporation and Shunwei Capital as returning shareholders, documenting investment without establishing Xiaomi control.",
       "sourceIds": [
-        "dreame-series-b-plus"
-      ]
-    },
-    {
-      "date": "2017-12-31",
-      "title": "Dreame joins the Xiaomi ecosystem",
-      "summary": "Dreame's official history says it joined the Xiaomi Technology Ecosystem at the end of 2017. Ecosystem participation is a commercial and product relationship, not a legal ownership category.",
-      "sourceIds": [
-        "dreame-brand-story",
         "dreame-series-b-plus"
       ]
     }
@@ -151,5 +119,5 @@
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T00:27:34+08:00"
+  "lastModified": "2026-07-30T00:45:16+08:00"
 }

@@ -93,14 +93,6 @@
       "sourceIds": [
         "roborock-2025-annual-report"
       ]
-    },
-    {
-      "date": "2014-07-01",
-      "title": "Roborock is founded in Beijing",
-      "summary": "Roborock's official history dates the company to July 2014; Xiaomi invested that September and Roborock entered the Xiaomi ecosystem without becoming a Xiaomi subsidiary.",
-      "sourceIds": [
-        "roborock-about"
-      ]
     }
   ],
   "sources": [
@@ -146,5 +138,5 @@
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T00:33:36+08:00"
+  "lastModified": "2026-07-30T00:45:16+08:00"
 }
