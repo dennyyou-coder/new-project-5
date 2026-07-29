@@ -9,6 +9,10 @@ const updatesSource = await readFile(
   new URL("../components/HomeUpdatesForm.tsx", import.meta.url),
   "utf8"
 );
+const seriesComponentSource = await readFile(
+  new URL("../components/HomeSeriesFeature.tsx", import.meta.url),
+  "utf8"
+);
 
 test("homepage exposes the streamlined commercial journey", () => {
   const sectionNames = [
@@ -113,5 +117,53 @@ test("header keeps navigation but removes the fixed report CTA", () => {
 });
 
 test("homepage editorial proof excludes search guides", () => {
-  assert.match(homeSource, /getEditorialInsights\(getInsights\(\)\)/);
+  assert.match(homeSource, /getEditorialInsights\(allInsights\)/);
+});
+
+test("homepage selects the latest founder-series episode without a fixed episode slug", () => {
+  assert.match(
+    homeSource,
+    /const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch"/
+  );
+  assert.match(
+    homeSource,
+    /getSeriesArticles\(allInsights, founderSeries\)\.at\(-1\)/
+  );
+  assert.match(homeSource, /<HomeSeriesFeature article=\{latestFounderSeries\}/);
+  assert.doesNotMatch(
+    homeSource,
+    /const latestFounderSeriesSlug = "building-worlds-no-1-cleaning-show-from-scratch-episode-/
+  );
+});
+
+test("homepage excludes the selected series episode from editorial proof", () => {
+  assert.match(
+    homeSource,
+    /\.filter\(\(article\) => article\.slug !== latestFounderSeries\?\.slug\)/
+  );
+  assert.match(
+    homeSource,
+    /getFeaturedInsights\(\s*getEditorialInsights\(allInsights\)\s*\.filter/
+  );
+});
+
+test("homepage retains the product board only as the missing-series fallback", () => {
+  assert.match(
+    homeSource,
+    /latestFounderSeries \? \(\s*<HomeSeriesFeature/
+  );
+  assert.match(
+    homeSource,
+    /\) : \(\s*<div className="home-v9-product-board"/
+  );
+  assert.match(homeSource, /heroProducts\.map/);
+});
+
+test("homepage keeps one H1 and presents the platform before the founder series", () => {
+  assert.equal((homeSource.match(/<h1/g) || []).length, 1);
+  assert.ok(
+    homeSource.indexOf("home-v9-hero-copy") <
+      homeSource.indexOf("<HomeSeriesFeature")
+  );
+  assert.doesNotMatch(seriesComponentSource, /<h1/);
 });
