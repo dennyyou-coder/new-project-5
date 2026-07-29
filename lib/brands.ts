@@ -293,3 +293,99 @@ export function getBrandPageData(slug: string, articles: BrandTaggedArticle[]): 
 
   return { profile, primaryArticles, relatedArticles };
 }
+
+export function buildBrandDirectorySchemas(
+  profiles: BrandProfile[],
+  siteUrl: string
+): object[] {
+  const directoryUrl = `${siteUrl}/brands`;
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "World Clean Biz Brand Intelligence",
+    numberOfItems: profiles.length,
+    itemListElement: profiles.map((profile, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: profile.name,
+      url: `${directoryUrl}/${profile.slug}`
+    }))
+  };
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": directoryUrl,
+      name: "Cleaning Industry Brand Intelligence",
+      description:
+        "Independent company intelligence for cleaning-industry buyers, distributors and market professionals.",
+      url: directoryUrl,
+      mainEntity: itemList
+    },
+    itemList,
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Brand Intelligence",
+          item: directoryUrl
+        }
+      ]
+    }
+  ];
+}
+
+export function buildBrandPageSchemas(
+  data: BrandPageData,
+  siteUrl: string
+): object[] {
+  const { profile } = data;
+  const pageUrl = `${siteUrl}/brands/${profile.slug}`;
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": pageUrl,
+      name: `${profile.name} Company Profile, Ownership, Products & Strategy`,
+      description: profile.metaDescription,
+      url: pageUrl,
+      datePublished: profile.publishedAt,
+      dateModified: profile.lastModified,
+      ...(profile.heroImage ? { image: `${siteUrl}${profile.heroImage}` } : {}),
+      about: { "@id": "#brand" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@id": "#brand",
+      "@type": "Organization",
+      name: profile.name,
+      legalName: profile.legalName,
+      url: profile.officialWebsite
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Brand Intelligence",
+          item: `${siteUrl}/brands`
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: profile.name,
+          item: pageUrl
+        }
+      ]
+    }
+  ];
+}
