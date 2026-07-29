@@ -1,0 +1,174 @@
+{
+  "status": "published",
+  "slug": "mammotion",
+  "name": "Mammotion",
+  "aliases": [
+    "MAMMOTION",
+    "LUBA",
+    "YUKA",
+    "SPINO"
+  ],
+  "legalEntityNote": "Mammotion is an operating brand used across several legal entities. Reviewed records name Shenzhen Mammotion Innovation Co., Limited for trademarks and newer equipment filings, Mammotion Technology Co., Limited in an early LUBA manufacturer record, MAMMOTION TECHNOLOGY LLC for U.S. sales and warranty, and Mammotion Technik GmbH for European and UK warranty operations.",
+  "officialWebsite": "https://mammotion.com/",
+  "headline": "Mammotion ownership, LUBA and YUKA robots, manufacturing and global channels",
+  "description": "A source-backed profile of Mammotion's multi-entity structure, Songling and AgileX history, LUBA and YUKA portfolio, model-level manufacturing evidence and regional sales entities.",
+  "metaDescription": "Mammotion company profile: LUBA maker, Songling and AgileX history, legal entities, manufacturing evidence, channels and outdoor-robot strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Mammotion, Songling Robot or AgileX Robotics. Trademark, regulatory and regional seller records are scoped to the named entity and product.",
+  "headquarters": "Shenzhen, China",
+  "founded": "January 2022 as Mammotion; the current company timeline traces its technology journey to 2016",
+  "heroImage": "/images/blog/luba-mammotion-songling-agilex-company-map-cover.webp",
+  "heroImageAlt": "Company map linking the Mammotion brand and LUBA product line to Songling, AgileX and named Mammotion legal entities",
+  "ownership": {
+    "summary": "Mammotion is privately held, and the reviewed official sources do not disclose a current cap table or controlling parent. A Canadian YUKA trademark record documents a change from Songling Robot (Shenzhen) Co., Ltd. to Shenzhen Mammotion Innovation Co., Ltd. effective 16 January 2024; a later MAMMOTION application names the Shenzhen entity directly. Those records establish a brand-history link, not current parent ownership. Mammotion's own 2022 launch material says the team inherited seven years of AgileX Robotics chassis and algorithm experience; that establishes technology lineage, not current AgileX ownership."
+  },
+  "leadership": [
+    {
+      "name": "Jidong (Jayden) Wei",
+      "role": "Founder and CEO",
+      "context": "The 2022 LUBA announcement names Jidong Wei as founder; Mammotion's 2026 announcement uses Jayden Wei as CEO."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "LUBA robotic lawn mowers",
+      "positioning": "All-wheel-drive wire-free mowers for complex terrain, spanning large-lawn and compact product families."
+    },
+    {
+      "name": "YUKA robotic lawn mowers",
+      "positioning": "Wire-free mowing platforms for smaller or moderate terrain, including models with optional sweeping and dumping workflows."
+    },
+    {
+      "name": "SPINO robotic pool cleaners",
+      "positioning": "A cordless pool-care extension launched in 2025 and expanded with a higher-end product in 2026."
+    },
+    {
+      "name": "Maston commercial mower concept",
+      "positioning": "A professional autonomous-mowing concept introduced at CES 2026 in feasibility and technology validation, not a mature shipping fleet platform in the reviewed announcement."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    "A 2022 LUBA FCC test report names Hong Kong-based Mammotion Technology Co., Limited as both applicant and manufacturer for the tested AWD 5000, LUBA0001 and AWD 3000 models. The report states that its results apply only to the tested object.",
+    "Newer LUBA 2 equipment records and a 2024 Canadian trademark application name Shenzhen Mammotion Innovation Co., Limited at Mammotion's Shenzhen address. Applicant or trademark status does not by itself prove the factory for every current mower.",
+    "Mammotion's current public pages do not provide a single manufacturer list covering every LUBA, YUKA and SPINO SKU. Procurement teams should match the rating label, declaration, importer, invoice and warranty entity for the exact generation and market."
+  ],
+  "marketsChannels": [
+    "Mammotion's current company page says it operates in more than 30 countries and regions, with local operating and service centers in the United States, Canada, the United Kingdom, Germany and Australia.",
+    "The company names Walmart, Home Depot, OBI, Bauhaus and Lowe's among major retail partners, while also selling through regional Mammotion stores and dealers.",
+    "The legal counterparty changes by region and channel. MAMMOTION TECHNOLOGY LLC operates the U.S. store and warranty; Mammotion Technik GmbH provides the reviewed UK warranty. Dealer buyers should verify which entity invoices, imports and services the product."
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Mammotion has moved from a wire-free AWD mower specialist into multiple lawn platforms, pool cleaning and a commercial concept, while building direct, retail and dealer reach across major markets. The breadth and pace of its navigation-led product launches make it a visible challenger to established outdoor-power brands. Its buyer-side constraint is organizational clarity: legal sellers, warranty providers and regulatory applicants differ by region and generation, and the public record does not justify simplifying Songling or AgileX history into current parent ownership or assigning one manufacturer to every SKU.",
+    "competitorSlugs": [
+      "husqvarna",
+      "segway-navimow",
+      "kress",
+      "sunseeker"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-01-07",
+      "title": "Mammotion introduces the Maston commercial mower concept",
+      "summary": "At CES 2026 Mammotion presented Maston as a purpose-built commercial wire-free mowing concept, while stating that it remained in feasibility and technology validation.",
+      "sourceIds": [
+        "mammotion-maston-2026"
+      ]
+    },
+    {
+      "date": "2025-06-17",
+      "title": "Mammotion enters robotic pool cleaning with SPINO E1",
+      "summary": "Mammotion announced its first pool-care product, extending its outdoor-robotics portfolio beyond LUBA and YUKA lawn mowers.",
+      "sourceIds": [
+        "mammotion-spino-2025"
+      ]
+    },
+    {
+      "date": "2022-06-19",
+      "title": "Mammotion launches LUBA",
+      "summary": "The company introduced its wire-free LUBA mower and described its team's AgileX Robotics experience, while naming Jidong Wei as founder.",
+      "sourceIds": [
+        "mammotion-luba-launch"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "mammotion-about",
+      "title": "About Mammotion",
+      "publisher": "Mammotion",
+      "url": "https://us.mammotion.com/pages/about-us",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-contact",
+      "title": "Contact Us",
+      "publisher": "Mammotion",
+      "url": "https://eu.mammotion.com/pages/contact",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-us-terms",
+      "title": "Terms and Sales",
+      "publisher": "Mammotion US",
+      "url": "https://us.mammotion.com/pages/terms-and-sales",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-uk-warranty",
+      "title": "Warranty Statement",
+      "publisher": "Mammotion UK",
+      "url": "https://uk.mammotion.com/pages/warranty-statement",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-cipo-trademark",
+      "title": "MAMMOTION Canadian Trademark Application 2367809",
+      "publisher": "Canadian Intellectual Property Office",
+      "url": "https://ised-isde.canada.ca/cipo/trademark-search/2367809",
+      "publishedAt": "2024-07-10",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-cipo-yuka-history",
+      "title": "YUKA Canadian Trademark Record 2207276",
+      "publisher": "Canadian Intellectual Property Office",
+      "url": "https://ised-isde.canada.ca/cipo/trademark-search/pdf/2207276?lang=eng",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-early-luba-test-report",
+      "title": "FCC Part 15.247 Test Report for LUBA AWD 5000",
+      "publisher": "Shenzhen CTL Testing Technology Co., Ltd. / FCC equipment filing",
+      "url": "https://fcc.report/FCC-ID/2A8QJ-LUBA/6344271.pdf",
+      "publishedAt": "2022-11-28",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-luba-launch",
+      "title": "Mammotion Launches LUBA, the Next-Generation of Robotic Lawn Mower Technology",
+      "publisher": "Mammotion",
+      "url": "https://mammotion.com/blogs/news/mammotion-launches-luba-the-next-generation-of-robotic-lawn-mower-technology-to-redefine-the-future-of-lawn-maintenance",
+      "publishedAt": "2022-06-19",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-spino-2025",
+      "title": "Mammotion Dives Into Pool Care With SPINO E1 Robotic Pool Cleaner",
+      "publisher": "Mammotion",
+      "url": "https://mammotion.com/blogs/news/mammotion-dives-into-pool-care-with-spino-e1-robotic-pool-cleaner",
+      "publishedAt": "2025-06-17",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-maston-2026",
+      "title": "Mammotion Announces Strategic Expansion into Commercial Robotic Mowers",
+      "publisher": "Mammotion via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/mammotion-announces-strategic-expansion-into-commercial-robotic-mowers-as-it-confirms-its-position-as-the-worlds-best-selling-wire-free-robotic-lawn-mower-brand-302655042.html",
+      "publishedAt": "2026-01-07",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T02:02:44+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T02:08:55+08:00"
+}

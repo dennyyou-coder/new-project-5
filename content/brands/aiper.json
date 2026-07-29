@@ -1,0 +1,151 @@
+{
+  "status": "published",
+  "slug": "aiper",
+  "name": "Aiper",
+  "aliases": [
+    "Aiper Group",
+    "Aiper Inc."
+  ],
+  "legalEntityNote": "Aiper is a consumer brand used across several entities. Aiper Inc. is the Cayman company in Fluidra's investment disclosure; Aiper Global Pte. Ltd. operates the global website and app services; regional sales, service and distribution documents name other Aiper entities.",
+  "officialWebsite": "https://aiper.com/",
+  "headline": "Aiper ownership, cordless pool robots, manufacturing and channel strategy",
+  "description": "A source-backed profile of Aiper's 27% Fluidra investment, joint-control structure, smart-yard portfolio, model-specific manufacturing evidence and omnichannel route to market.",
+  "metaDescription": "Aiper company profile: Fluidra's 27% stake, W&D relationship, leadership, pool robots, manufacturing partners, channels and strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Aiper, Fluidra or W&D United. Regulatory findings and company statements are identified separately from World Clean Biz analysis.",
+  "headquarters": "Not stated at group level in the reviewed sources; global digital services are operated from Singapore",
+  "founded": "2017",
+  "heroImage": "/images/insights/aiper-fluidra-pool-robotics-alliance-cover.jpg",
+  "heroImageAlt": "World Clean Biz cover about the Aiper and Fluidra investment alliance, with an Aiper robotic pool cleaner",
+  "ownership": {
+    "summary": "Fluidra completed a USD 100 million investment for 27% of Aiper Inc. on 23 December 2025. Fluidra reports the interest as an equity-accounted investment, not a consolidated subsidiary. Spain's CNMC described the transaction as changing Aiper from W&D United's sole control to joint control by W&D United and Fluidra. Fluidra has a conditional path to exceed 51% if specified sales and profitability thresholds are met; that future step was not complete in the reviewed evidence."
+  },
+  "leadership": [
+    {
+      "name": "Richard Wang",
+      "role": "Founder and CEO",
+      "context": "Identified in Fluidra's December 2025 transaction announcement."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Scuba robotic pool cleaners",
+      "positioning": "A cordless residential range spanning above-ground, mainstream in-ground and AI-vision models."
+    },
+    {
+      "name": "EcoSurfer robotic skimmers",
+      "positioning": "Solar-assisted surface-cleaning robots that extend Aiper from the pool floor to continuous surface care."
+    },
+    {
+      "name": "IrriSense smart irrigation",
+      "positioning": "A lawn-watering extension supporting Aiper's broader smart-yard positioning."
+    },
+    {
+      "name": "HydroComm smart pool care",
+      "positioning": "Pool monitoring and underwater communication products designed to connect cleaning and water-condition data."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    "Fluidra's April 2025 investor presentation described Aiper as operating two R&D centers and using manufacturing partners in China and Vietnam; the disclosure supports an external-partner model, not one universal Aiper-owned factory claim.",
+    "The U.S. CPSC's March 2025 Seagull Pro recall named Dongguan Yuanhong Intelligent Technology as manufacturer and Shenzhen Aiper Intelligent as distributor for model ZT6001. That model-specific record must not be generalized to every current Aiper product.",
+    "The CNMC transaction review described Aiper as active in manufacturing and commercialization and noted centers in the United States, China and Europe, while also documenting industry-wide international outsourcing. Buyers should verify the manufacturer and origin on the exact SKU and shipment documents."
+  ],
+  "marketsChannels": [
+    "Aiper's current company page says the brand reaches more than 57 countries and regions and over 10,000 retail stores; these are company-reported figures.",
+    "The U.S. authorized-seller list covers Aiper's own store, Amazon, Walmart, Lowe's, Leslie's, Home Depot, Best Buy and other digital or physical retailers. Aiper states that unauthorized-reseller purchases are outside its warranty policy.",
+    "Fluidra describes Aiper as an omnichannel consumer brand. The reviewed transaction material presents broader access to consumer and professional channels as a strategic benefit; it does not establish that Fluidra is already the seller for every Aiper market or SKU."
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Aiper combines a cordless-first pool-cleaner range with skimmers, monitoring and irrigation, giving distributors a broader smart-yard story than a single robot line. Its digital and mass-retail reach can accelerate volume, while Fluidra adds pool-industry access and a possible future majority transaction. The buyer-side pressure sits in execution: joint governance must not be confused with sole ownership, model-level OEM and origin records vary, and two U.S. recalls make authorized channels, warranty handling and product traceability material procurement checks.",
+    "competitorSlugs": [
+      "maytronics",
+      "wybot",
+      "beatbot"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2025-12-23",
+      "title": "Fluidra completes its initial 27% investment",
+      "summary": "Fluidra paid approximately USD 100 million for newly issued Aiper shares. Its financial statements record a 27% equity-accounted interest in Aiper Inc.; the CNMC decision describes W&D United and Fluidra as joint controllers after the transaction.",
+      "sourceIds": [
+        "aiper-fluidra-completion",
+        "aiper-fluidra-2025-statements",
+        "aiper-cnmc-decision"
+      ]
+    },
+    {
+      "date": "2025-03-20",
+      "title": "Aiper conducts a U.S. Seagull Pro recall",
+      "summary": "The CPSC announced a recall of about 32,660 Seagull Pro ZT6001 cleaners in the United States and identified the model's named manufacturer and distributor.",
+      "sourceIds": [
+        "aiper-cpsc-2025-recall"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "aiper-about",
+      "title": "About Aiper",
+      "publisher": "Aiper",
+      "url": "https://aiper.com/us/about-us",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "aiper-terms",
+      "title": "Terms of Service",
+      "publisher": "Aiper",
+      "url": "https://aiper.com/us/terms-of-service",
+      "publishedAt": "2026-06-09",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "aiper-authorized-channels",
+      "title": "Authorized Sales Channels",
+      "publisher": "Aiper",
+      "url": "https://aiper.com/us/authorized-sales-channels",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "aiper-fluidra-completion",
+      "title": "Fluidra completes an initial 27% investment in Aiper",
+      "publisher": "Fluidra",
+      "url": "https://www.fluidra.com/press-room/press-release/fluidra-completes-an-initial-27-investment-in-aiper/",
+      "publishedAt": "2025-12-23",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "aiper-fluidra-2025-statements",
+      "title": "Interim Condensed Consolidated Financial Statements 2025",
+      "publisher": "Fluidra, S.A.",
+      "url": "https://www.fluidra.com/wp-content/uploads/2026/02/Interim-Condensed-Consolidated-Financial-Statements-2025-v.230226.pdf",
+      "publishedAt": "2026-02-26",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "aiper-fluidra-investor-presentation",
+      "title": "Aiper Transaction Investor Presentation",
+      "publisher": "Fluidra, S.A.",
+      "url": "https://www.fluidra.com/wp-content/uploads/2025/04/Fluidra-IP-Signing-Project-Laoma-ENG.pdf",
+      "publishedAt": "2025-04-01",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "aiper-cnmc-decision",
+      "title": "C/1616/25 Fluidra / W&D / Aiper: Report and Proposed Resolution",
+      "publisher": "Comisión Nacional de los Mercados y la Competencia",
+      "url": "https://www.cnmc.es/sites/default/files/6510726.pdf",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "aiper-cpsc-2025-recall",
+      "title": "Aiper Seagull Pro Cordless Robotic Pool Vacuum Cleaners Recalled",
+      "publisher": "U.S. Consumer Product Safety Commission",
+      "url": "https://www.cpsc.gov/Recalls/2025/Aiper-Seagull-Pro-Cordless-Robotic-Pool-Vacuum-Cleaners-Recalled-Due-to-Burn-and-Fire-Hazards-Distributed-by-Shenzhen-Aiper-Intelligent-Co",
+      "publishedAt": "2025-03-20",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T02:02:44+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T02:08:55+08:00"
+}

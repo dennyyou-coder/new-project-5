@@ -1,0 +1,147 @@
+{
+  "status": "published",
+  "slug": "maytronics",
+  "name": "Maytronics",
+  "aliases": [
+    "Dolphin",
+    "Maytronics International"
+  ],
+  "legalName": "Maytronics Ltd.",
+  "officialWebsite": "https://www.maytronics.com/",
+  "headline": "Maytronics ownership, Dolphin pool robots, manufacturing and channel strategy",
+  "description": "A source-backed profile of Maytronics' listed-company control, Dolphin product-brand relationship, Israeli manufacturing footprint and global service channels.",
+  "metaDescription": "Maytronics company profile: who owns Dolphin, leadership, pool robots, Israeli manufacturing, dealer channels and competitive strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Maytronics or Dolphin. Company estimates and filings are identified separately from World Clean Biz analysis.",
+  "headquarters": "Kibbutz Yizre'el, Israel",
+  "founded": "1983",
+  "heroImage": "/images/insights/maytronics-robotic-pool-cleaner-reinvention-cover.jpg",
+  "heroImageAlt": "World Clean Biz Maytronics brand-analysis cover featuring a Dolphin Liberty 600 robotic pool cleaner",
+  "ownership": {
+    "summary": "Maytronics Ltd. is listed on the Tel Aviv Stock Exchange. Its 2025 annual report identifies Kibbutz Yizre'el Holdings (2004) ACS Ltd. as the company's controlling shareholder. Dolphin is Maytronics' principal robotic pool-cleaner product brand, not a separate parent company."
+  },
+  "leadership": [
+    {
+      "name": "Rafi Benami",
+      "role": "Chief Executive Officer",
+      "context": "Maytronics' current management page says he joined as CEO in 2026."
+    },
+    {
+      "name": "Dov Ofer",
+      "role": "Chairman",
+      "context": "Appointed to the board in 2025 and listed as chairman on Maytronics' current directors page."
+    },
+    {
+      "name": "Amit Magen",
+      "role": "Chief Financial Officer",
+      "context": "Joined Maytronics as CFO in July 2025."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Dolphin residential pool cleaners",
+      "positioning": "The core product brand, covering corded and cordless robots for different residential pool sizes, surfaces and service channels."
+    },
+    {
+      "name": "Dolphin commercial pool cleaners",
+      "positioning": "Heavy-duty systems for public, institutional and high-use pools, supported through professional sales and service channels."
+    },
+    {
+      "name": "Niya autonomous cleaners",
+      "positioning": "A Maytronics-owned value-expansion brand that the 2025 annual report says is built through cooperation with different manufacturers."
+    },
+    {
+      "name": "Pool safety, water treatment and adjacent products",
+      "positioning": "A group-level portfolio that includes drowning-detection systems, pool covers and water-treatment products through regional subsidiaries."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    "Maytronics' 2025 annual report says development and production are concentrated mainly in Israel. Dolphin residential and commercial robots are developed and manufactured by the company.",
+    "Maytronics operated robotic pool-cleaner production at Kibbutz Yizre'el and the Dalton Industrial Park from 2016. During 2025 it began gradually consolidating most robot assembly and component production at its expanded Yizre'el site; the filing also describes product-specific development and manufacturing activities in French and Australian subsidiaries.",
+    "During 2025 Maytronics was consolidating product lines and production capacity while moving the new Dolphin EON platform toward serial production. Niya uses cooperation with different manufacturers, so its supply model should not be treated as identical to Dolphin's."
+  ],
+  "marketsChannels": [
+    "The 2025 annual report divides sales into professional pool channels, mass market and online. The professional route includes distributors and specialist retailers; mass market uses direct-to-retail; online includes marketplaces, online dealers and Maytronics' own sites or app.",
+    "Maytronics sells and supports products through its Israeli headquarters, subsidiaries and distributors. The filing says the group operates in about 50 countries and earns approximately 98% of revenue outside Israel.",
+    "Regional subsidiaries in North America, France, Australia, Germany, Spain and Portugal support local sales, distribution and service. The buyer's actual seller, authorized service path and warranty terms remain market- and model-specific."
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Maytronics still offers one of the broadest pool-robot systems for distributors, from residential Dolphin models to commercial machines, backed by in-house Israeli production and a long-established dealer and service network. Its pressure is visible in the 2025 filing: cordless Asian entrants expanded from low prices into premium ranges, online comparison intensified and Maytronics was reducing inventory while consolidating product lines. Dolphin's installed channel remains an advantage, but Maytronics must renew the cordless offer without weakening service, product quality or channel economics.",
+    "competitorSlugs": [
+      "aiper",
+      "fluidra",
+      "wybot"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2025-11-30",
+      "title": "Maytronics reports third-quarter pressure and a 2026 product reset",
+      "summary": "Maytronics' third-quarter release described lower year-to-date revenue and gross profit while pointing to a new product portfolio and leadership transition for the 2026 season.",
+      "sourceIds": [
+        "maytronics-q3-2025-release"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "maytronics-2025-annual-report",
+      "title": "2025 Annual Report",
+      "publisher": "Maytronics Ltd. / Tel Aviv Stock Exchange filing",
+      "url": "https://brand.maytronics.com/asset/a6e748f3-5756-4108-9775-5f7401c1dc37/2025-Annual-Report-HEB.pdf",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "maytronics-company-profile",
+      "title": "Maytronics Company Profile",
+      "publisher": "Maytronics",
+      "url": "https://www.maytronics.com/corporate/investors/company-profile.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "maytronics-timeline",
+      "title": "Maytronics Timeline",
+      "publisher": "Maytronics",
+      "url": "https://www.maytronics.com/corporate/maytronics-timeline.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "maytronics-management",
+      "title": "Management Team",
+      "publisher": "Maytronics",
+      "url": "https://www.maytronics.com/corporate/Management-team.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "maytronics-directors",
+      "title": "Directors",
+      "publisher": "Maytronics",
+      "url": "https://www.maytronics.com/corporate/directors.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "maytronics-subsidiaries",
+      "title": "Maytronics Around the World",
+      "publisher": "Maytronics",
+      "url": "https://www.maytronics.com/corporate/maytronics-subsidiaries.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "maytronics-liberty-600",
+      "title": "Dolphin Liberty 600",
+      "publisher": "Maytronics",
+      "url": "https://www.maytronics.com/en-us/store/residential-pools/cordless-cleaners/dolphin-liberty-600/99998600-US.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "maytronics-q3-2025-release",
+      "title": "Maytronics Reports Third Quarter and Nine-Month Results for 2025",
+      "publisher": "Maytronics Ltd.",
+      "url": "https://brand.maytronics.com/m/4e705f7a71f9c73/original/Q3-2025-PR-EN.pdf",
+      "publishedAt": "2025-11-30",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T02:02:44+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T02:05:31+08:00"
+}
