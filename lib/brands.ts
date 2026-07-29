@@ -190,8 +190,27 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
   if (!hasText(candidate.competitivePosition?.summary)) {
     errors.push("competitivePosition.summary is required.");
   }
+  if (!hasText(candidate.ownership?.summary)) {
+    errors.push("ownership.summary is required.");
+  }
 
   const sources = Array.isArray(candidate.sources) ? candidate.sources : [];
+  sources.forEach((source, index) => {
+    const sourceNumber = index + 1;
+
+    for (const field of ["id", "title", "publisher", "accessedAt"] as const) {
+      if (!hasText(source?.[field])) {
+        errors.push(`source ${sourceNumber} ${field} is required.`);
+      }
+    }
+    if (hasText(source?.accessedAt) && !isValidDate(source.accessedAt)) {
+      errors.push(`source ${sourceNumber} accessedAt must be a valid date.`);
+    }
+    if (source?.publishedAt !== undefined && !isValidDate(source.publishedAt)) {
+      errors.push(`source ${sourceNumber} publishedAt must be a valid date.`);
+    }
+  });
+
   const sourceIds = sources.map((source) => source?.id).filter(hasText);
   const duplicateSourceIds = sourceIds.filter((id, index) => sourceIds.indexOf(id) !== index);
   if (duplicateSourceIds.length > 0) {
@@ -214,7 +233,14 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
       errors.push(`development ${index + 1} date must be a valid date.`);
     }
 
-    for (const sourceId of development?.sourceIds || []) {
+    const developmentSourceIds = Array.isArray(development?.sourceIds)
+      ? development.sourceIds.filter(hasText)
+      : [];
+    if (developmentSourceIds.length === 0) {
+      errors.push(`development ${index + 1} must reference at least one source.`);
+    }
+
+    for (const sourceId of developmentSourceIds) {
       if (!declaredSourceIds.has(sourceId)) {
         errors.push(`development ${index + 1} references unknown source ID: ${sourceId}.`);
       }

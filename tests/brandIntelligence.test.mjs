@@ -91,6 +91,27 @@ test("requires three unique valid HTTP(S) sources", () => {
   );
 });
 
+test("requires complete, uniquely identified, dated source metadata", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.sources[0] = {
+    ...invalidProfile.sources[0],
+    id: "",
+    title: "",
+    publisher: "",
+    accessedAt: "not-a-date",
+    publishedAt: "also-not-a-date"
+  };
+  invalidProfile.sources[1].id = "source-3";
+
+  const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+  assert.match(errors, /source 1 id is required/i);
+  assert.match(errors, /source 1 title is required/i);
+  assert.match(errors, /source 1 publisher is required/i);
+  assert.match(errors, /source 1 accessedAt must be a valid date/i);
+  assert.match(errors, /source 1 publishedAt must be a valid date/i);
+  assert.match(errors, /source IDs must be unique/i);
+});
+
 test("requires three distinct tagged articles", () => {
   assert.match(
     validateBrandProfile(profile, articles.slice(0, 2)).join("\n"),
@@ -105,6 +126,26 @@ test("rejects development source IDs that are not declared", () => {
   assert.match(
     validateBrandProfile(invalidProfile, articles).join("\n"),
     /unknown source ID/i
+  );
+});
+
+test("requires every development to cite at least one declared source", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.developments[0].sourceIds = [];
+
+  assert.match(
+    validateBrandProfile(invalidProfile, articles).join("\n"),
+    /development 1 must reference at least one source/i
+  );
+});
+
+test("requires an ownership summary", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.ownership.summary = " ";
+
+  assert.match(
+    validateBrandProfile(invalidProfile, articles).join("\n"),
+    /ownership\.summary is required/i
   );
 });
 
@@ -130,22 +171,39 @@ test("loads JSON profiles, groups articles without duplicates, and filters draft
     slug: "draft-brand",
     name: "Draft Brand"
   };
+  const malformedSourceProfile = {
+    ...profile,
+    slug: "malformed-source-brand",
+    name: "Malformed Source Brand",
+    sources: profile.sources.map((source, index) => index === 0 ? {
+      ...source,
+      title: "",
+      accessedAt: "not-a-date"
+    } : source)
+  };
   const draftArticles = articles.map((article) => ({
     ...article,
     slug: `draft-${article.slug}`,
     primaryBrands: ["draft-brand"],
     relatedBrands: []
   }));
+  const malformedSourceArticles = articles.map((article) => ({
+    ...article,
+    slug: `malformed-${article.slug}`,
+    primaryBrands: ["malformed-source-brand"],
+    relatedBrands: []
+  }));
 
   try {
     fs.writeFileSync(path.join(brandsDirectory, "sample-brand.json"), JSON.stringify(profile));
     fs.writeFileSync(path.join(brandsDirectory, "draft-brand.json"), JSON.stringify(draftProfile));
+    fs.writeFileSync(path.join(brandsDirectory, "malformed-source-brand.json"), JSON.stringify(malformedSourceProfile));
     fs.writeFileSync(path.join(brandsDirectory, "ignored.txt"), JSON.stringify({ name: "Ignored" }));
     process.chdir(temporaryDirectory);
 
-    assert.deepEqual(getBrandProfiles().map(({ name }) => name), ["Draft Brand", "Sample Brand"]);
+    assert.deepEqual(getBrandProfiles().map(({ name }) => name), ["Draft Brand", "Malformed Source Brand", "Sample Brand"]);
     assert.deepEqual(
-      getPublishedBrandProfiles([...articles, ...draftArticles]).map(({ slug }) => slug),
+      getPublishedBrandProfiles([...articles, ...draftArticles, ...malformedSourceArticles]).map(({ slug }) => slug),
       ["sample-brand"]
     );
 
