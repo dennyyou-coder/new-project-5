@@ -2,13 +2,7 @@ import {
   sortBrandDevelopmentsNewestFirst,
   type BrandProfile
 } from "@/lib/brands";
-
-function formatDate(value: string) {
-  return new Intl.DateTimeFormat("en", {
-    dateStyle: "medium",
-    timeZone: "UTC"
-  }).format(new Date(value));
-}
+import { formatBrandDate } from "@/lib/brandDates";
 
 export function BrandTimeline({ profile }: { profile: BrandProfile }) {
   if (profile.developments.length === 0) return null;
@@ -28,7 +22,7 @@ export function BrandTimeline({ profile }: { profile: BrandProfile }) {
         <ol className="brand-timeline">
           {developments.map((development) => (
             <li key={`${development.date}-${development.title}`}>
-              <time dateTime={development.date}>{formatDate(development.date)}</time>
+              <time dateTime={development.date}>{formatBrandDate(development.date)}</time>
               <h3>{development.title}</h3>
               <p>{development.summary}</p>
               <p>

@@ -8,6 +8,7 @@ import {
   buildBrandPageSchemas,
   sortBrandDevelopmentsNewestFirst
 } from "../lib/brands.ts";
+import { formatBrandDate } from "../lib/brandDates.ts";
 
 const read = (relativePath) =>
   fs.readFileSync(path.join(process.cwd(), relativePath), "utf8");
@@ -148,6 +149,28 @@ test("brand developments sort by parsed timestamps instead of lexical date order
   );
 });
 
+test("brand date output preserves source precision and the Shanghai calendar date", () => {
+  assert.equal(formatBrandDate("2026"), "2026");
+  assert.equal(formatBrandDate("2026-07"), "July 2026");
+  assert.equal(formatBrandDate("2026-07-30"), "Jul 30, 2026");
+  assert.equal(formatBrandDate("2026-07-30", "long"), "July 30, 2026");
+  assert.equal(
+    formatBrandDate("2026-07-30T00:00:00+08:00"),
+    "Jul 30, 2026"
+  );
+});
+
+test("all date-bearing brand components use the shared precision-preserving formatter", () => {
+  const hero = read("components/brands/BrandHero.tsx");
+  const timeline = read("components/brands/BrandTimeline.tsx");
+  const sources = read("components/brands/BrandSources.tsx");
+
+  for (const source of [hero, timeline, sources]) {
+    assert.match(source, /formatBrandDate/);
+    assert.doesNotMatch(source, /new Intl\.DateTimeFormat/);
+  }
+});
+
 test("competitor references only add hrefs for confirmed published profile slugs", () => {
   assert.deepEqual(
     buildBrandCompetitorReferences(
@@ -275,9 +298,7 @@ test("sitemap publishes the brand directory and valid profile modification dates
   assert.equal((source.match(/getInsights\(\)/g) || []).length, 1);
   assert.match(source, /const profiles = getPublishedBrandProfiles\(insights\)/);
   assert.match(source, /"\/brands"/);
-  assert.match(source, /profiles\.map\(\(profile\)\s*=>\s*\(\{/);
-  assert.match(source, /url:\s*`\$\{baseUrl\}\/brands\/\$\{profile\.slug\}`/);
-  assert.match(source, /lastModified:\s*profile\.lastModified/);
+  assert.match(source, /\.\.\.buildBrandSitemapEntries\(profiles,\s*baseUrl\)/);
 });
 
 test("footer exposes exactly one Brand Intelligence discovery link", () => {

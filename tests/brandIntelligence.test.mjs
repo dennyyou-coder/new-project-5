@@ -4,12 +4,17 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import {
+  buildBrandSitemapEntries,
+  buildBrandStaticParams,
   getBrandPageData,
   getBrandProfiles,
   getPublishedBrandProfiles,
   normalizeBrandSlugs,
+  sortBrandArticlesNewestFirst,
   validateBrandProfile
 } from "../lib/brands.ts";
+import { getInsights } from "../lib/content.ts";
+import sitemap from "../app/sitemap.ts";
 
 const profile = {
   status: "published",
@@ -242,6 +247,190 @@ test("rejects profile and development dates that cannot be parsed", () => {
   const errors = validateBrandProfile(invalidProfile, articles).join("\n");
   assert.match(errors, /lastVerified.*valid date/i);
   assert.match(errors, /development.*valid date/i);
+});
+
+test("rejects impossible calendar dates instead of accepting Date.parse normalization", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.lastVerified = "2026-02-30";
+
+  assert.match(
+    validateBrandProfile(invalidProfile, articles).join("\n"),
+    /lastVerified.*valid date/i
+  );
+});
+
+test("rejects malformed values at every nested BrandProfile boundary", () => {
+  const mutations = [
+    ["status", (candidate) => { candidate.status = "archived"; }, /status/i],
+    ["identity text", (candidate) => { candidate.name = 42; }, /name/i],
+    ["aliases", (candidate) => { candidate.aliases = ["Sample", null]; }, /aliases/i],
+    ["hero", (candidate) => { candidate.heroImageAlt = { alt: "Products" }; }, /heroImageAlt/i],
+    ["ownership", (candidate) => { candidate.ownership = null; }, /ownership/i],
+    ["ownership parent", (candidate) => { candidate.ownership.parentCompany = 42; }, /parentCompany/i],
+    ["leadership item", (candidate) => { candidate.leadership = [null]; }, /leadership/i],
+    ["leadership context", (candidate) => { candidate.leadership[0].context = 42; }, /leadership.*context/i],
+    ["portfolio item", (candidate) => { candidate.productPortfolio = [null]; }, /productPortfolio/i],
+    ["supply chain item", (candidate) => { candidate.manufacturingSupplyChain = [null]; }, /manufacturingSupplyChain/i],
+    ["markets array", (candidate) => { candidate.marketsChannels = null; }, /marketsChannels/i],
+    ["competitive position", (candidate) => { candidate.competitivePosition = null; }, /competitivePosition/i],
+    ["competitor slugs", (candidate) => { candidate.competitivePosition.competitorSlugs = null; }, /competitorSlugs/i],
+    ["competitor slug value", (candidate) => { candidate.competitivePosition.competitorSlugs = ["Not A Slug"]; }, /competitorSlugs/i],
+    ["developments array", (candidate) => { candidate.developments = null; }, /developments/i],
+    ["development item", (candidate) => { candidate.developments = [null]; }, /development 1/i],
+    ["development title", (candidate) => { candidate.developments[0].title = 42; }, /development 1 title/i],
+    ["sources array", (candidate) => { candidate.sources = null; }, /sources/i],
+    ["source item", (candidate) => { candidate.sources = [null, ...candidate.sources.slice(1)]; }, /source 1/i],
+    ["timestamp type", (candidate) => { candidate.publishedAt = { date: "2026-07-29" }; }, /publishedAt/i]
+  ];
+
+  for (const [label, mutate, expectedError] of mutations) {
+    const invalidProfile = structuredClone(profile);
+    mutate(invalidProfile);
+    assert.match(
+      validateBrandProfile(invalidProfile, articles).join("\n"),
+      expectedError,
+      label
+    );
+  }
+});
+
+test("nested validation errors retain original source and development indexes", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.sources[1] = null;
+  invalidProfile.sources[2].title = "";
+  invalidProfile.developments = [
+    null,
+    {
+      date: "2026-07-02",
+      title: "",
+      summary: "Second update",
+      sourceIds: ["source-1"]
+    }
+  ];
+
+  const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+  assert.match(errors, /source 2 must be an object/i);
+  assert.match(errors, /source 3 title is required/i);
+  assert.match(errors, /development 1 must be an object/i);
+  assert.match(errors, /development 2 title is required/i);
+});
+
+test("sorts brand articles by absolute time with deterministic invalid and tie fallbacks", () => {
+  const input = [
+    { slug: "invalid-b", sortDate: "not-a-date" },
+    { slug: "same-b", sortDate: "2026-07-30T00:00:00Z" },
+    { slug: "earlier", sortDate: "2026-07-30T01:00:00+08:00" },
+    { slug: "later", sortDate: "2026-07-29T18:00:00-07:00" },
+    { slug: "same-a", sortDate: "2026-07-30T00:00:00Z" },
+    { slug: "invalid-a", sortDate: "" }
+  ];
+
+  assert.deepEqual(
+    sortBrandArticlesNewestFirst(input).map(({ slug }) => slug),
+    ["later", "same-a", "same-b", "earlier", "invalid-a", "invalid-b"]
+  );
+  assert.deepEqual(input.map(({ slug }) => slug), [
+    "invalid-b",
+    "same-b",
+    "earlier",
+    "later",
+    "same-a",
+    "invalid-a"
+  ]);
+});
+
+test("the release gate validates the exact ten published profiles and approved article relationships", () => {
+  const expectedSlugs = [
+    "aiper",
+    "bissell",
+    "dreame",
+    "dyson",
+    "ecovacs",
+    "irobot",
+    "mammotion",
+    "maytronics",
+    "roborock",
+    "tineco"
+  ];
+  const expectedPrimaryBrands = {
+    "aiper-fluidra-pool-robotics-alliance": ["aiper"],
+    "aiper-vs-wybot-fluidra-wybotics": ["aiper"],
+    "bissell-crosswave-hard-floor-washer-logic": ["bissell"],
+    "bissell-robot-vacuums-flexclean-strategy": ["bissell"],
+    "commercial-robotic-mower-market-navimow-mammotion": ["mammotion"],
+    "dolphin-vs-aiper-maytronics-fluidra": ["maytronics", "aiper"],
+    "dreame-new-disruptor-in-vacuums": ["dreame"],
+    "dreame-rise-to-10-billion-in-five-years": ["dreame"],
+    "dyson-at-a-crossroads": ["dyson"],
+    "ecovacs-2018-annual-report-signals": ["ecovacs"],
+    "ecovacs-at-a-crossroads": ["ecovacs"],
+    "ecovacs-invests-in-battery-cell-factory": ["ecovacs"],
+    "irobot-decline-and-the-new-robot-vacuum-order": ["irobot"],
+    "irobot-financial-crisis": ["irobot"],
+    "is-dreame-owned-by-xiaomi": ["dreame"],
+    "is-roborock-owned-by-xiaomi": ["roborock"],
+    "mammotion-luba-vs-yuka-robot-mowers": ["mammotion"],
+    "maytronics-robotic-pool-cleaner-reinvention": ["maytronics"],
+    "roborock-channel-shift-online-to-offline-experience": ["roborock"],
+    "roborock-ipo-prospectus-signals": ["roborock"],
+    "tineco-lacks-innovation": ["tineco"],
+    "tineco-vs-bissell-crosswave-floor-washers": ["tineco", "bissell"],
+    "where-are-dyson-vacuums-made": ["dyson"],
+    "who-makes-dolphin-pool-cleaners-maytronics": ["maytronics"],
+    "who-makes-luba-robot-mowers-mammotion-agilex": ["mammotion"],
+    "who-owns-aiper-fluidra-stake": ["aiper"],
+    "who-owns-bissell-family-sanitaire": ["bissell"],
+    "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
+    "who-owns-irobot-roomba-picea-robotics": ["irobot"],
+    "who-owns-tineco-ecovacs-group": ["tineco"]
+  };
+
+  const realArticles = getInsights();
+  const articleBySlug = new Map(realArticles.map((article) => [article.slug, article]));
+  const loadedProfiles = getBrandProfiles();
+  const publishedProfiles = getPublishedBrandProfiles(realArticles);
+  const actualPrimaryBrands = Object.fromEntries(
+    realArticles
+      .filter((article) => article.primaryBrands.some((slug) => expectedSlugs.includes(slug)))
+      .map((article) => [article.slug, article.primaryBrands])
+      .sort(([a], [b]) => a.localeCompare(b))
+  );
+
+  assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
+  assert.equal(loadedProfiles.length, 10);
+  for (const candidate of loadedProfiles) {
+    assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
+  }
+
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 30);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 32);
+  assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
+  for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
+  assert.deepEqual(
+    Object.entries(expectedPrimaryBrands)
+      .filter(([, primaryBrands]) => primaryBrands.length === 2)
+      .map(([slug]) => slug)
+      .sort(),
+    [
+      "dolphin-vs-aiper-maytronics-fluidra",
+      "tineco-vs-bissell-crosswave-floor-washers"
+    ]
+  );
+
+  assert.deepEqual(buildBrandStaticParams(publishedProfiles), expectedSlugs.map((slug) => ({ slug })));
+  assert.deepEqual(
+    buildBrandSitemapEntries(publishedProfiles, "https://worldcleanbiz.com")
+      .map(({ url }) => url),
+    expectedSlugs.map((slug) => `https://worldcleanbiz.com/brands/${slug}`)
+  );
+  assert.deepEqual(
+    sitemap()
+      .map(({ url }) => url)
+      .filter((url) => url.startsWith("https://worldcleanbiz.com/brands/")),
+    expectedSlugs.map((slug) => `https://worldcleanbiz.com/brands/${slug}`)
+  );
+  assert.equal(publishedProfiles.some(({ slug }) => slug === "dolphin"), false);
+  assert.equal(buildBrandStaticParams(publishedProfiles).some(({ slug }) => slug === "dolphin"), false);
 });
 
 test("loads JSON profiles, groups articles without duplicates, and filters draft profiles", () => {

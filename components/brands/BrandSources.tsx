@@ -1,11 +1,5 @@
 import type { BrandProfile } from "@/lib/brands";
-
-function formatDate(value: string) {
-  return new Intl.DateTimeFormat("en", {
-    dateStyle: "medium",
-    timeZone: "UTC"
-  }).format(new Date(value));
-}
+import { formatBrandDate } from "@/lib/brandDates";
 
 export function BrandSources({ profile }: { profile: BrandProfile }) {
   if (profile.sources.length === 0) return null;
@@ -26,15 +20,15 @@ export function BrandSources({ profile }: { profile: BrandProfile }) {
               {" — "}
               {source.publisher}
               {source.publishedAt ? (
-                <> · Published {formatDate(source.publishedAt)}</>
+                <> · Published {formatBrandDate(source.publishedAt)}</>
               ) : null}
-              {" · "}Accessed {formatDate(source.accessedAt)}
+              {" · "}Accessed {formatBrandDate(source.accessedAt)}
             </li>
           ))}
         </ol>
-        <p>First published: {formatDate(profile.publishedAt)}</p>
-        <p>Last verified: {formatDate(profile.lastVerified)}</p>
-        <p>Last material modification: {formatDate(profile.lastModified)}</p>
+        <p>First published: {formatBrandDate(profile.publishedAt)}</p>
+        <p>Last verified: {formatBrandDate(profile.lastVerified)}</p>
+        <p>Last material modification: {formatBrandDate(profile.lastModified)}</p>
       </div>
     </section>
   );

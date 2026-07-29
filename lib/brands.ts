@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { isValidBrandDate } from "@/lib/brandDates";
 
 export type BrandProfile = {
   status: "draft" | "published";
@@ -86,7 +87,7 @@ function hasText(value: unknown): value is string {
 }
 
 function isValidDate(value: unknown) {
-  return hasText(value) && !Number.isNaN(Date.parse(value));
+  return hasText(value) && isValidBrandDate(value);
 }
 
 function isValidHttpUrl(value: unknown) {
@@ -98,6 +99,59 @@ function isValidHttpUrl(value: unknown) {
   } catch {
     return false;
   }
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function recordText(
+  record: Record<string, unknown>,
+  field: string,
+  label: string,
+  errors: string[]
+) {
+  if (!hasText(record[field])) {
+    errors.push(`${label} is required.`);
+  }
+}
+
+function optionalRecordText(
+  record: Record<string, unknown>,
+  field: string,
+  label: string,
+  errors: string[]
+) {
+  if (record[field] !== undefined && !hasText(record[field])) {
+    errors.push(`${label} must be a non-empty string when provided.`);
+  }
+}
+
+function textArray(
+  value: unknown,
+  label: string,
+  errors: string[],
+  minimum = 0
+): string[] {
+  if (!Array.isArray(value)) {
+    errors.push(`${label} must be an array.`);
+    return [];
+  }
+
+  if (value.length < minimum) {
+    errors.push(`${label} must include at least one item.`);
+  }
+
+  const values: string[] = [];
+  value.forEach((item, index) => {
+    if (!hasText(item)) {
+      errors.push(`${label} item ${index + 1} must be a non-empty string.`);
+      return;
+    }
+    values.push(item);
+  });
+
+  return values;
 }
 
 function uniqueArticles(
@@ -116,8 +170,32 @@ function uniqueArticles(
   });
 }
 
+export function sortBrandArticlesNewestFirst<
+  T extends Pick<BrandTaggedArticle, "slug" | "sortDate">
+>(articles: readonly T[]): T[] {
+  return articles
+    .map((article, index) => ({
+      article,
+      index,
+      timestamp: Date.parse(article.sortDate)
+    }))
+    .sort((a, b) => {
+      const aValid = Number.isFinite(a.timestamp);
+      const bValid = Number.isFinite(b.timestamp);
+
+      if (aValid && bValid && a.timestamp !== b.timestamp) {
+        return b.timestamp - a.timestamp;
+      }
+      if (aValid !== bValid) return aValid ? -1 : 1;
+
+      const slugOrder = a.article.slug.localeCompare(b.article.slug);
+      return slugOrder || a.index - b.index;
+    })
+    .map(({ article }) => article);
+}
+
 function sortArticles(articles: BrandTaggedArticle[]) {
-  return [...articles].sort((a, b) => b.sortDate.localeCompare(a.sortDate));
+  return sortBrandArticlesNewestFirst(articles);
 }
 
 export function normalizeBrandSlugs(value: unknown): string[] {
@@ -130,7 +208,7 @@ export function normalizeBrandSlugs(value: unknown): string[] {
   )];
 }
 
-export function getBrandProfiles(): BrandProfile[] {
+export function getBrandProfiles(): unknown[] {
   const directory = brandProfilesDirectory();
   if (!fs.existsSync(directory)) return [];
 
@@ -139,19 +217,26 @@ export function getBrandProfiles(): BrandProfile[] {
     .filter((filename) => filename.endsWith(".json"))
     .map((filename) => {
       try {
-        return JSON.parse(fs.readFileSync(path.join(directory, filename), "utf8")) as BrandProfile;
+        return JSON.parse(fs.readFileSync(path.join(directory, filename), "utf8")) as unknown;
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error);
         throw new Error(`Could not parse brand profile ${filename}: ${message}`);
       }
     })
-    .sort((a, b) => String(a.name).localeCompare(String(b.name)));
+    .sort((a, b) => {
+      const aName = isRecord(a) ? String(a.name ?? "") : "";
+      const bName = isRecord(b) ? String(b.name ?? "") : "";
+      return aName.localeCompare(bName);
+    });
 }
 
-export function validateBrandProfile(profile: BrandProfile, articles: BrandTaggedArticle[]): string[] {
+export function validateBrandProfile(profile: unknown, articles: BrandTaggedArticle[]): string[] {
   const errors: string[] = [];
-  const candidate = profile as Partial<BrandProfile>;
-  const requiredFields: Array<[keyof BrandProfile, string]> = [
+  if (!isRecord(profile)) {
+    return ["profile must be an object."];
+  }
+  const candidate = profile;
+  const requiredFields = [
     ["slug", "slug"],
     ["name", "name"],
     ["officialWebsite", "officialWebsite"],
@@ -164,12 +249,14 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
     ["publishedAt", "publishedAt"],
     ["lastVerified", "lastVerified"],
     ["lastModified", "lastModified"]
-  ];
+  ] as const;
 
   for (const [field, label] of requiredFields) {
-    if (!hasText(candidate[field])) {
-      errors.push(`${label} is required.`);
-    }
+    recordText(candidate, field, label, errors);
+  }
+
+  if (candidate.status !== "draft" && candidate.status !== "published") {
+    errors.push("status must be draft or published.");
   }
 
   const legalName = normalizeOptionalBrandText(candidate.legalName);
@@ -199,68 +286,169 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
     }
   }
 
+  textArray(candidate.aliases, "aliases", errors);
+
+  optionalRecordText(candidate, "heroImage", "heroImage", errors);
+  optionalRecordText(candidate, "heroImageAlt", "heroImageAlt", errors);
   if (hasText(candidate.heroImage) && !hasText(candidate.heroImageAlt)) {
     errors.push("heroImageAlt is required when heroImage is provided.");
   }
 
-  if (!Array.isArray(candidate.productPortfolio) || candidate.productPortfolio.length === 0) {
-    errors.push("productPortfolio must include at least one item.");
-  }
-  if (!Array.isArray(candidate.manufacturingSupplyChain) || candidate.manufacturingSupplyChain.length === 0) {
-    errors.push("manufacturingSupplyChain must include at least one item.");
-  }
-  if (!Array.isArray(candidate.marketsChannels) || candidate.marketsChannels.length === 0) {
-    errors.push("marketsChannels must include at least one item.");
-  }
-  if (!hasText(candidate.competitivePosition?.summary)) {
-    errors.push("competitivePosition.summary is required.");
-  }
-  if (!hasText(candidate.ownership?.summary)) {
-    errors.push("ownership.summary is required.");
+  if (!isRecord(candidate.ownership)) {
+    errors.push("ownership must be an object.");
+  } else {
+    recordText(candidate.ownership, "summary", "ownership.summary", errors);
+    optionalRecordText(
+      candidate.ownership,
+      "parentCompany",
+      "ownership.parentCompany",
+      errors
+    );
   }
 
-  const sources = Array.isArray(candidate.sources) ? candidate.sources : [];
-  sources.forEach((source, index) => {
+  if (!Array.isArray(candidate.leadership)) {
+    errors.push("leadership must be an array.");
+  } else {
+    candidate.leadership.forEach((item, index) => {
+      const label = `leadership item ${index + 1}`;
+      if (!isRecord(item)) {
+        errors.push(`${label} must be an object.`);
+        return;
+      }
+      recordText(item, "name", `${label} name`, errors);
+      recordText(item, "role", `${label} role`, errors);
+      optionalRecordText(item, "context", `${label} context`, errors);
+    });
+  }
+
+  if (!Array.isArray(candidate.productPortfolio)) {
+    errors.push("productPortfolio must be an array.");
+  } else {
+    if (candidate.productPortfolio.length === 0) {
+      errors.push("productPortfolio must include at least one item.");
+    }
+    candidate.productPortfolio.forEach((item, index) => {
+      const label = `productPortfolio item ${index + 1}`;
+      if (!isRecord(item)) {
+        errors.push(`${label} must be an object.`);
+        return;
+      }
+      recordText(item, "name", `${label} name`, errors);
+      recordText(item, "positioning", `${label} positioning`, errors);
+    });
+  }
+
+  textArray(
+    candidate.manufacturingSupplyChain,
+    "manufacturingSupplyChain",
+    errors,
+    1
+  );
+  textArray(candidate.marketsChannels, "marketsChannels", errors, 1);
+
+  if (!isRecord(candidate.competitivePosition)) {
+    errors.push("competitivePosition must be an object.");
+  } else {
+    recordText(
+      candidate.competitivePosition,
+      "summary",
+      "competitivePosition.summary",
+      errors
+    );
+    const competitorSlugs = textArray(
+      candidate.competitivePosition.competitorSlugs,
+      "competitivePosition.competitorSlugs",
+      errors
+    );
+    competitorSlugs.forEach((slug, index) => {
+      if (!slugPattern.test(slug)) {
+        errors.push(
+          `competitivePosition.competitorSlugs item ${index + 1} must use lowercase kebab-case.`
+        );
+      }
+    });
+  }
+
+  const sourceRecords: Array<{
+    source: Record<string, unknown>;
+    index: number;
+  }> = [];
+  if (!Array.isArray(candidate.sources)) {
+    errors.push("sources must be an array.");
+  } else {
+    candidate.sources.forEach((source, index) => {
+      if (!isRecord(source)) {
+        errors.push(`source ${index + 1} must be an object.`);
+        return;
+      }
+      sourceRecords.push({ source, index });
+    });
+  }
+
+  sourceRecords.forEach(({ source, index }) => {
     const sourceNumber = index + 1;
 
     for (const field of ["id", "title", "publisher", "accessedAt"] as const) {
-      if (!hasText(source?.[field])) {
+      if (!hasText(source[field])) {
         errors.push(`source ${sourceNumber} ${field} is required.`);
       }
     }
-    if (hasText(source?.accessedAt) && !isValidDate(source.accessedAt)) {
+    if (!isValidHttpUrl(source.url)) {
+      errors.push(`source ${sourceNumber} url must be a valid HTTP(S) URL.`);
+    }
+    if (hasText(source.accessedAt) && !isValidDate(source.accessedAt)) {
       errors.push(`source ${sourceNumber} accessedAt must be a valid date.`);
     }
-    if (source?.publishedAt !== undefined && !isValidDate(source.publishedAt)) {
+    if (source.publishedAt !== undefined && !isValidDate(source.publishedAt)) {
       errors.push(`source ${sourceNumber} publishedAt must be a valid date.`);
     }
   });
 
-  const sourceIds = sources.map((source) => source?.id).filter(hasText);
+  const sourceIds = sourceRecords.map(({ source }) => source.id).filter(hasText);
   const duplicateSourceIds = sourceIds.filter((id, index) => sourceIds.indexOf(id) !== index);
   if (duplicateSourceIds.length > 0) {
     errors.push("source IDs must be unique.");
   }
 
   const validSourceUrls = new Set(
-    sources
-      .filter((source) => isValidHttpUrl(source?.url))
-      .map((source) => new URL(source.url).href)
+    sourceRecords
+      .filter(({ source }) => isValidHttpUrl(source.url))
+      .map(({ source }) => new URL(String(source.url)).href)
   );
   if (validSourceUrls.size < 3) {
     errors.push("At least three unique valid HTTP(S) sources are required.");
   }
 
   const declaredSourceIds = new Set(sourceIds);
-  const developments = Array.isArray(candidate.developments) ? candidate.developments : [];
-  developments.forEach((development, index) => {
-    if (!isValidDate(development?.date)) {
+  const developmentRecords: Array<{
+    development: Record<string, unknown>;
+    index: number;
+  }> = [];
+  if (!Array.isArray(candidate.developments)) {
+    errors.push("developments must be an array.");
+  } else {
+    candidate.developments.forEach((development, index) => {
+      if (!isRecord(development)) {
+        errors.push(`development ${index + 1} must be an object.`);
+        return;
+      }
+      developmentRecords.push({ development, index });
+    });
+  }
+
+  developmentRecords.forEach(({ development, index }) => {
+    recordText(development, "title", `development ${index + 1} title`, errors);
+    recordText(development, "summary", `development ${index + 1} summary`, errors);
+    if (!isValidDate(development.date)) {
       errors.push(`development ${index + 1} date must be a valid date.`);
     }
 
-    const developmentSourceIds = Array.isArray(development?.sourceIds)
-      ? development.sourceIds.filter(hasText)
-      : [];
+    const developmentSourceIds = textArray(
+      development.sourceIds,
+      `development ${index + 1} sourceIds`,
+      errors,
+      1
+    );
     if (developmentSourceIds.length === 0) {
       errors.push(`development ${index + 1} must reference at least one source.`);
     }
@@ -272,7 +460,7 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
     }
   });
 
-  const slug = candidate.slug || "";
+  const slug = hasText(candidate.slug) ? candidate.slug : "";
   const primaryArticles = uniqueArticles(
     articles,
     (article) => Array.isArray(article.primaryBrands) && article.primaryBrands.includes(slug)
@@ -297,9 +485,13 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
 }
 
 export function getPublishedBrandProfiles(articles: BrandTaggedArticle[]): BrandProfile[] {
-  return getBrandProfiles().filter((profile) => (
-    profile.status === "published" && validateBrandProfile(profile, articles).length === 0
-  ));
+  return getBrandProfiles().filter(
+    (profile): profile is BrandProfile => (
+      isRecord(profile)
+      && profile.status === "published"
+      && validateBrandProfile(profile, articles).length === 0
+    )
+  );
 }
 
 export function getBrandPageData(slug: string, articles: BrandTaggedArticle[]): BrandPageData | undefined {
@@ -336,6 +528,20 @@ export function buildBrandCompetitorReferences(
       ? { slug, href: `/brands/${slug}` }
       : { slug }
   ));
+}
+
+export function buildBrandStaticParams(profiles: readonly BrandProfile[]) {
+  return profiles.map(({ slug }) => ({ slug }));
+}
+
+export function buildBrandSitemapEntries(
+  profiles: readonly BrandProfile[],
+  siteUrl: string
+) {
+  return profiles.map((profile) => ({
+    url: `${siteUrl}/brands/${profile.slug}`,
+    lastModified: profile.lastModified
+  }));
 }
 
 export function buildBrandDirectorySchemas(

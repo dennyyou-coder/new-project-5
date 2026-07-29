@@ -7,6 +7,7 @@ import { BrandSources } from "@/components/brands/BrandSources";
 import { BrandTimeline } from "@/components/brands/BrandTimeline";
 import {
   buildBrandPageSchemas,
+  buildBrandStaticParams,
   getBrandPageData,
   getPublishedBrandProfiles
 } from "@/lib/brands";
@@ -22,9 +23,7 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   const articles = getInsights();
-  return getPublishedBrandProfiles(articles).map((profile) => ({
-    slug: profile.slug
-  }));
+  return buildBrandStaticParams(getPublishedBrandProfiles(articles));
 }
 
 export async function generateMetadata({

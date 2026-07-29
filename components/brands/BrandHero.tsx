@@ -3,13 +3,7 @@ import {
   normalizeOptionalBrandText,
   type BrandProfile
 } from "@/lib/brands";
-
-function formatDate(value: string) {
-  return new Intl.DateTimeFormat("en", {
-    dateStyle: "long",
-    timeZone: "UTC"
-  }).format(new Date(value));
-}
+import { formatBrandDate } from "@/lib/brandDates";
 
 export function BrandHero({ profile }: { profile: BrandProfile }) {
   const legalName = normalizeOptionalBrandText(profile.legalName);
@@ -32,8 +26,8 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
             <h1>{profile.name}</h1>
             <p>{profile.headline}</p>
             <p>
-              First published {formatDate(profile.publishedAt)} · Last verified{" "}
-              {formatDate(profile.lastVerified)}
+              First published {formatBrandDate(profile.publishedAt, "long")} · Last verified{" "}
+              {formatBrandDate(profile.lastVerified, "long")}
             </p>
             <p>{profile.description}</p>
             <p>{profile.disclaimer}</p>
