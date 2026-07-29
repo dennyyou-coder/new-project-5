@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getBlogSeriesSlugs } from "@/lib/blogSeries";
+import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
 
@@ -10,10 +11,12 @@ const guideRoutes = GUIDE_TYPE_CONFIG.map(({ href }) => href);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const insights = getInsights();
+  const profiles = getPublishedBrandProfiles(insights);
   const staticRoutes = [
     "",
     "/blog",
     "/blog/archive",
+    "/brands",
     "/guides",
     ...guideRoutes,
     "/sourcing",
@@ -37,6 +40,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getBlogSeriesSlugs(insights).map((series) => ({
       url: `${baseUrl}/blog/series/${series}`,
       lastModified
+    })),
+    ...profiles.map((profile) => ({
+      url: `${baseUrl}/brands/${profile.slug}`,
+      lastModified: profile.lastModified
     })),
     ...insights.map((article) => ({
       url: `${baseUrl}/blog/${article.slug}`,

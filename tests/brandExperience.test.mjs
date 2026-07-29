@@ -183,3 +183,103 @@ test("brand experience shows independent positioning, disclaimer, sources, and u
   assert.match(brandSources, /Last verified/);
   assert.match(brandSources, /Last material modification/);
 });
+
+test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {
+  const component = read("components/ArticleBrandLinks.tsx");
+
+  assert.match(component, /brandSlugs:\s*string\[\]/);
+  assert.match(component, /profiles:\s*BrandProfile\[\]/);
+  assert.match(component, /new Set\(brandSlugs\)/);
+  assert.match(component, /profile\.status === "published"/);
+  assert.match(component, /if \(!linkedProfiles\.length\) return null/);
+  assert.match(component, />Brand Intelligence</);
+  assert.match(component, /href=\{`\/brands\/\$\{profile\.slug\}`\}/);
+});
+
+test("article route renders one published primary-brand link group between metadata and body", () => {
+  const source = read("app/blog/[slug]/page.tsx");
+
+  assert.equal((source.match(/<ArticleBrandLinks\b/g) || []).length, 1);
+  assert.equal((source.match(/getPublishedBrandProfiles\(articles\)/g) || []).length, 1);
+  assert.match(source, /brandSlugs=\{article\.primaryBrands\}/);
+  assert.match(source, /profiles=\{publishedBrandProfiles\}/);
+  assert.doesNotMatch(source, /brandSlugs=\{article\.relatedBrands\}/);
+
+  const metadataPosition = source.indexOf('className="signal-detail-meta"');
+  const brandLinksPosition = source.indexOf("<ArticleBrandLinks");
+  const bodyPosition = source.indexOf("dangerouslySetInnerHTML");
+  assert.ok(metadataPosition >= 0);
+  assert.ok(brandLinksPosition > metadataPosition);
+  assert.ok(bodyPosition > brandLinksPosition);
+});
+
+test("sitemap publishes the brand directory and valid profile modification dates", () => {
+  const source = read("app/sitemap.ts");
+
+  assert.equal((source.match(/getInsights\(\)/g) || []).length, 1);
+  assert.match(source, /const profiles = getPublishedBrandProfiles\(insights\)/);
+  assert.match(source, /"\/brands"/);
+  assert.match(source, /profiles\.map\(\(profile\)\s*=>\s*\(\{/);
+  assert.match(source, /url:\s*`\$\{baseUrl\}\/brands\/\$\{profile\.slug\}`/);
+  assert.match(source, /lastModified:\s*profile\.lastModified/);
+});
+
+test("footer exposes exactly one Brand Intelligence discovery link", () => {
+  const source = read("components/Footer.tsx");
+
+  assert.equal((source.match(/href="\/brands"/g) || []).length, 1);
+  assert.match(source, /<Link href="\/brands">Brand Intelligence<\/Link>/);
+});
+
+test("brand styles are isolated, cover images, and collapse multi-column layouts on mobile", () => {
+  const source = read("app/globals.css");
+  const marker = "/* Brand intelligence hub */";
+  const markerPosition = source.indexOf(marker);
+  assert.ok(markerPosition >= 0);
+
+  const brandStyles = source.slice(markerPosition);
+  [
+    ".brand-hub",
+    ".brand-directory-hero",
+    ".brand-directory-grid",
+    ".brand-directory-card",
+    ".brand-detail",
+    ".brand-detail-hero",
+    ".brand-snapshot-grid",
+    ".brand-section-grid",
+    ".brand-timeline",
+    ".brand-article-grid",
+    ".brand-sources",
+    ".article-brand-links"
+  ].forEach((selector) => assert.match(brandStyles, new RegExp(`\\${selector}\\b`)));
+
+  assert.match(
+    brandStyles,
+    /\.brand-directory-card img,[\s\S]*\.brand-detail-hero img,[\s\S]*\.brand-article-grid img\s*\{[\s\S]*object-fit:\s*cover/
+  );
+
+  const mobilePosition = brandStyles.indexOf("@media (max-width: 760px)");
+  assert.ok(mobilePosition >= 0);
+  const mobileStyles = brandStyles.slice(mobilePosition);
+  [
+    ".brand-directory-hero",
+    ".brand-directory-grid",
+    ".brand-detail-hero",
+    ".brand-snapshot-grid",
+    ".brand-section-grid",
+    ".brand-article-grid"
+  ].forEach((selector) => assert.match(
+    mobileStyles,
+    new RegExp(`\\${selector}[\\s\\S]*grid-template-columns:\\s*1fr`)
+  ));
+  assert.match(mobileStyles, /\.brand-sources a\s*\{[\s\S]*overflow-wrap:\s*anywhere/);
+  assert.match(mobileStyles, /\.brand-detail-hero img\s*\{[\s\S]*(?:aspect-ratio|height):/);
+});
+
+test("brand and article routes rely on the root layout main landmark", () => {
+  [
+    "app/brands/page.tsx",
+    "app/brands/[slug]/page.tsx",
+    "app/blog/[slug]/page.tsx"
+  ].forEach((route) => assert.doesNotMatch(read(route), /<main\b/));
+});

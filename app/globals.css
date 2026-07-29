@@ -22517,3 +22517,128 @@ button.contact-help-card > .contact-help-card-copy > span {
     flex-direction: column;
   }
 }
+
+/* Brand intelligence hub */
+
+.brand-hub,
+.brand-detail {
+  background: #fff;
+  color: var(--text);
+}
+
+.brand-directory-hero,
+.brand-detail-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 40px;
+  align-items: center;
+  width: min(100% - 48px, 1360px);
+  margin-inline: auto;
+}
+
+.brand-directory-grid,
+.brand-article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.brand-directory-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.brand-directory-card img,
+.brand-detail-hero img,
+.brand-article-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.brand-snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.brand-section-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.brand-timeline {
+  display: grid;
+  gap: 20px;
+  border-left: 2px solid var(--line);
+  padding-left: 24px;
+}
+
+.brand-sources {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.brand-sources a {
+  color: var(--accent);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.article-brand-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.article-brand-links > span {
+  font-weight: 850;
+}
+
+.article-brand-links > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.article-brand-links a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 10px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .brand-directory-hero,
+  .brand-directory-grid,
+  .brand-detail-hero,
+  .brand-snapshot-grid,
+  .brand-section-grid,
+  .brand-article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-directory-hero,
+  .brand-detail-hero {
+    gap: 24px;
+    width: min(100% - 32px, 1360px);
+  }
+
+  .brand-detail-hero img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .brand-sources a {
+    overflow-wrap: anywhere;
+  }
+}
