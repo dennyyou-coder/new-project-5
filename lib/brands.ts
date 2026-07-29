@@ -62,6 +62,11 @@ export type BrandPageData = {
   relatedArticles: BrandTaggedArticle[];
 };
 
+export type BrandCompetitorReference = {
+  slug: string;
+  href?: string;
+};
+
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function brandProfilesDirectory() {
@@ -292,6 +297,25 @@ export function getBrandPageData(slug: string, articles: BrandTaggedArticle[]): 
   ));
 
   return { profile, primaryArticles, relatedArticles };
+}
+
+export function sortBrandDevelopmentsNewestFirst(
+  developments: BrandProfile["developments"]
+): BrandProfile["developments"] {
+  return [...developments].sort(
+    (a, b) => Date.parse(b.date) - Date.parse(a.date)
+  );
+}
+
+export function buildBrandCompetitorReferences(
+  competitorSlugs: string[],
+  allowedCompetitorSlugs: ReadonlySet<string>
+): BrandCompetitorReference[] {
+  return competitorSlugs.map((slug) => (
+    allowedCompetitorSlugs.has(slug)
+      ? { slug, href: `/brands/${slug}` }
+      : { slug }
+  ));
 }
 
 export function buildBrandDirectorySchemas(

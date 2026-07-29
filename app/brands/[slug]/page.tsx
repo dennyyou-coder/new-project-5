@@ -55,6 +55,9 @@ export async function generateMetadata({
 export default async function BrandPage({ params }: PageProps) {
   const { slug } = await params;
   const articles = getInsights();
+  const publishedBrandSlugs = new Set(
+    getPublishedBrandProfiles(articles).map((profile) => profile.slug)
+  );
   const data = getBrandPageData(slug, articles);
   if (!data) notFound();
 
@@ -63,7 +66,10 @@ export default async function BrandPage({ params }: PageProps) {
   return (
     <div className="guides-hub">
       <BrandHero profile={data.profile} />
-      <BrandSections profile={data.profile} />
+      <BrandSections
+        profile={data.profile}
+        allowedCompetitorSlugs={publishedBrandSlugs}
+      />
       <BrandTimeline profile={data.profile} />
       <BrandArticles
         primaryArticles={data.primaryArticles}

@@ -1,4 +1,7 @@
-import type { BrandProfile } from "@/lib/brands";
+import {
+  sortBrandDevelopmentsNewestFirst,
+  type BrandProfile
+} from "@/lib/brands";
 
 function formatDate(value: string) {
   return new Intl.DateTimeFormat("en", {
@@ -13,9 +16,7 @@ export function BrandTimeline({ profile }: { profile: BrandProfile }) {
   const sourceNumbers = new Map(
     profile.sources.map((source, index) => [source.id, index + 1])
   );
-  const developments = [...profile.developments].sort(
-    (a, b) => b.date.localeCompare(a.date)
-  );
+  const developments = sortBrandDevelopmentsNewestFirst(profile.developments);
 
   return (
     <section className="section">

@@ -3,8 +3,10 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import {
+  buildBrandCompetitorReferences,
   buildBrandDirectorySchemas,
-  buildBrandPageSchemas
+  buildBrandPageSchemas,
+  sortBrandDevelopmentsNewestFirst
 } from "../lib/brands.ts";
 
 const read = (relativePath) =>
@@ -86,6 +88,47 @@ test("brand detail schemas use a WebPage about a separate verified organization 
   });
 });
 
+test("brand developments sort by parsed timestamps instead of lexical date order", () => {
+  const developments = [
+    {
+      date: "2026-07-01T01:00:00+02:00",
+      title: "Earlier absolute time",
+      summary: "Lexically later but chronologically earlier.",
+      sourceIds: ["source-1"]
+    },
+    {
+      date: "2026-07-01T00:00:00Z",
+      title: "Later absolute time",
+      summary: "Lexically earlier but chronologically later.",
+      sourceIds: ["source-1"]
+    }
+  ];
+
+  assert.deepEqual(
+    sortBrandDevelopmentsNewestFirst(developments).map(({ title }) => title),
+    ["Later absolute time", "Earlier absolute time"]
+  );
+  assert.deepEqual(
+    developments.map(({ title }) => title),
+    ["Earlier absolute time", "Later absolute time"]
+  );
+});
+
+test("competitor references only add hrefs for confirmed published profile slugs", () => {
+  assert.deepEqual(
+    buildBrandCompetitorReferences(
+      ["published-brand", "draft-brand", "invalid-brand", "missing-brand"],
+      new Set(["published-brand"])
+    ),
+    [
+      { slug: "published-brand", href: "/brands/published-brand" },
+      { slug: "draft-brand" },
+      { slug: "invalid-brand" },
+      { slug: "missing-brand" }
+    ]
+  );
+});
+
 test("brand directory route exposes one canonical collection with links for published profiles", () => {
   const source = read("app/brands/page.tsx");
 
@@ -109,6 +152,8 @@ test("brand detail route rejects invalid slugs and exposes static metadata and s
   assert.match(source, /if \(!data\) notFound\(\)/);
   assert.match(source, /buildBrandPageSchemas\(data,\s*siteUrl\)/);
   assert.match(source, /Company Profile, Ownership, Products & Strategy/);
+  assert.match(source, /getPublishedBrandProfiles\(articles\)/);
+  assert.match(source, /allowedCompetitorSlugs=\{publishedBrandSlugs\}/);
 
   const componentOrder = [
     "BrandHero",

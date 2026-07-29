@@ -1,5 +1,8 @@
 import Link from "next/link";
-import type { BrandProfile } from "@/lib/brands";
+import {
+  buildBrandCompetitorReferences,
+  type BrandProfile
+} from "@/lib/brands";
 
 function TextList({
   title,
@@ -20,7 +23,18 @@ function TextList({
   );
 }
 
-export function BrandSections({ profile }: { profile: BrandProfile }) {
+export function BrandSections({
+  profile,
+  allowedCompetitorSlugs
+}: {
+  profile: BrandProfile;
+  allowedCompetitorSlugs: ReadonlySet<string>;
+}) {
+  const competitorReferences = buildBrandCompetitorReferences(
+    profile.competitivePosition.competitorSlugs,
+    allowedCompetitorSlugs
+  );
+
   return (
     <section className="section">
       <div className="insights-page-container">
@@ -79,13 +93,15 @@ export function BrandSections({ profile }: { profile: BrandProfile }) {
             <section className="guides-category-panel">
               <h2>Competitive Position</h2>
               <p>{profile.competitivePosition.summary}</p>
-              {profile.competitivePosition.competitorSlugs.length > 0 ? (
+              {competitorReferences.length > 0 ? (
                 <p>
                   Related brand profiles:{" "}
-                  {profile.competitivePosition.competitorSlugs.map((slug, index) => (
-                    <span key={slug}>
+                  {competitorReferences.map((competitor, index) => (
+                    <span key={competitor.slug}>
                       {index > 0 ? ", " : ""}
-                      <Link href={`/brands/${slug}`}>{slug}</Link>
+                      {competitor.href ? (
+                        <Link href={competitor.href}>{competitor.slug}</Link>
+                      ) : competitor.slug}
                     </span>
                   ))}
                 </p>
