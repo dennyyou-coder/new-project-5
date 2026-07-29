@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { NewsletterLeadForm, TallyReportButton } from "@/components/LeadForms";
+import { getFeaturedSeriesLinks } from "@/lib/blogSeries";
 import { getInsights, type Insight } from "@/lib/content";
 import {
   getEditorialInsights,
@@ -363,6 +364,7 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
   const featured = hasFilter
     ? filteredArticles[0]
     : latestFeaturedSeriesArticle || articles[0];
+  const featuredLinks = featured ? getFeaturedSeriesLinks(featured) : undefined;
   const feedArticles = hasFilter
     ? filteredArticles.filter((article) => article.slug !== featured?.slug)
     : articles.filter((article) => article.slug !== featured?.slug);
@@ -421,25 +423,46 @@ export default async function InsightsPage({ searchParams }: { searchParams?: Se
       <section className="insights-featured-top">
         <div className="insights-page-container">
           {featured ? (
-            <Link className="insights-featured-hero" href={`/blog/${featured.slug}`}>
-              <div className="insights-featured-hero-image">
+            <article className="insights-featured-hero">
+              <Link
+                className="insights-featured-hero-image"
+                href={featuredLinks?.articleHref || `/blog/${featured.slug}`}
+                aria-label={`Read ${featured.title}`}
+              >
                 <img src={imageFor(featured, 0)} alt={`${featured.title} featured cover`} fetchPriority="high" decoding="async" />
-              </div>
+              </Link>
               <div className="insights-featured-hero-copy">
                 <p className="eyebrow">Featured Article</p>
                 <span className="insights-category">{featured.category}</span>
-                <h2>{featured.seriesTitle || featured.title}</h2>
+                <h2>
+                  <Link href={featuredLinks?.articleHref || `/blog/${featured.slug}`}>
+                    {featured.seriesTitle || featured.title}
+                  </Link>
+                </h2>
                 {featured.seriesTitle ? (
-                  <p className="insights-featured-episode-title">{featured.title}</p>
+                  <p className="insights-featured-episode-title">
+                    <Link href={featuredLinks?.articleHref || `/blog/${featured.slug}`}>
+                      {featured.title}
+                    </Link>
+                  </p>
                 ) : null}
                 <p>{featured.excerpt}</p>
                 <div className="insights-card-meta">
                   <span>{displayDate(featured)}</span>
                   <span>{displayReadTime(featured)}</span>
                 </div>
-                <strong>Read Article →</strong>
+                <div className="insights-featured-actions">
+                  <Link href={featuredLinks?.articleHref || `/blog/${featured.slug}`}>
+                    Read Article →
+                  </Link>
+                  {featuredLinks?.seriesHref ? (
+                    <Link href={featuredLinks.seriesHref}>
+                      View Full Series →
+                    </Link>
+                  ) : null}
+                </div>
               </div>
-            </Link>
+            </article>
           ) : null}
 
           <div className="insights-filter-wrap insights-filter-panel">
