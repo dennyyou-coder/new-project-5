@@ -9,6 +9,12 @@ type FeaturedArticle = {
   series?: string;
 };
 
+type SeriesPageArticle = SeriesArticle & {
+  seriesTitle?: string;
+  publishedAt?: string;
+  date?: string;
+};
+
 export function getSeriesArticles<T extends SeriesArticle>(
   articles: T[],
   series: string
@@ -47,5 +53,27 @@ export function getFeaturedSeriesLinks(article: FeaturedArticle) {
   return {
     articleHref: `/blog/${article.slug}`,
     seriesHref: article.series ? `/blog/series/${article.series}` : undefined
+  };
+}
+
+export function getBlogSeriesPageData<T extends SeriesPageArticle>(
+  articles: T[],
+  series: string
+) {
+  const episodes = getSeriesArticles(articles, series);
+
+  if (!episodes.length) {
+    return undefined;
+  }
+
+  const latestEpisode = [...episodes].sort((a, b) =>
+    b.sortDate.localeCompare(a.sortDate)
+  )[0];
+
+  return {
+    title: episodes.find((episode) => episode.seriesTitle)?.seriesTitle || series,
+    episodes,
+    latestPublishedAt:
+      latestEpisode.publishedAt || latestEpisode.date || latestEpisode.sortDate
   };
 }

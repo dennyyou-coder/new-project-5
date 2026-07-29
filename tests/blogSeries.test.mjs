@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   getBlogSeriesSlugs,
+  getBlogSeriesPageData,
   getFeaturedSeriesLinks,
   getSeriesArticles
 } from "../lib/blogSeries.ts";
@@ -82,4 +83,54 @@ test("builds separate article and full-series destinations", () => {
       seriesHref: undefined
     }
   );
+});
+
+test("builds series page data from its ordered episodes and latest publication", () => {
+  assert.deepEqual(
+    getBlogSeriesPageData(
+      [
+        {
+          slug: "episode-02",
+          series: "wcb-series",
+          seriesTitle: "WCB Original Series",
+          seriesEpisode: "02",
+          sortDate: "2026-07-28",
+          publishedAt: "2026-07-28T20:00:00+08:00"
+        },
+        {
+          slug: "episode-01",
+          series: "wcb-series",
+          seriesTitle: "WCB Original Series",
+          seriesEpisode: "01",
+          sortDate: "2026-07-20",
+          publishedAt: "2026-07-20T20:00:00+08:00"
+        }
+      ],
+      "wcb-series"
+    ),
+    {
+      title: "WCB Original Series",
+      episodes: [
+        {
+          slug: "episode-01",
+          series: "wcb-series",
+          seriesTitle: "WCB Original Series",
+          seriesEpisode: "01",
+          sortDate: "2026-07-20",
+          publishedAt: "2026-07-20T20:00:00+08:00"
+        },
+        {
+          slug: "episode-02",
+          series: "wcb-series",
+          seriesTitle: "WCB Original Series",
+          seriesEpisode: "02",
+          sortDate: "2026-07-28",
+          publishedAt: "2026-07-28T20:00:00+08:00"
+        }
+      ],
+      latestPublishedAt: "2026-07-28T20:00:00+08:00"
+    }
+  );
+
+  assert.equal(getBlogSeriesPageData(articles, "missing-series"), undefined);
 });

@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
+import { getBlogSeriesSlugs } from "@/lib/blogSeries";
 import { getInsights } from "@/lib/content";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
+import { getEditorialInsights } from "@/lib/insightCollections";
 
 const baseUrl = "https://worldcleanbiz.com";
 const lastModified = new Date("2026-06-03");
@@ -8,6 +10,7 @@ const sourcingProductPublishedAt = new Date("2026-07-12T00:00:00+08:00");
 const guideRoutes = GUIDE_TYPE_CONFIG.map(({ href }) => href);
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const insights = getInsights();
   const staticRoutes = [
     "",
     "/blog",
@@ -32,7 +35,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}${route}`,
       lastModified: route.startsWith("/sourcing/") ? sourcingProductPublishedAt : lastModified
     })),
-    ...getInsights().map((article) => ({
+    ...getBlogSeriesSlugs(getEditorialInsights(insights)).map((series) => ({
+      url: `${baseUrl}/blog/series/${series}`,
+      lastModified
+    })),
+    ...insights.map((article) => ({
       url: `${baseUrl}/blog/${article.slug}`,
       lastModified: article.publishedAt ? new Date(article.publishedAt) : article.date ? new Date(article.date) : new Date()
     }))
