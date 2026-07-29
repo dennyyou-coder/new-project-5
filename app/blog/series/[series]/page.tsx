@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBlogSeriesPageData, getBlogSeriesSlugs } from "@/lib/blogSeries";
 import { getInsights } from "@/lib/content";
-import { getEditorialInsights } from "@/lib/insightCollections";
 
 type PageParams = Promise<{ series: string }>;
 
@@ -14,10 +13,7 @@ const seriesDescriptions: Record<string, string> = {
 };
 
 function getSeriesData(series: string) {
-  return getBlogSeriesPageData(
-    getEditorialInsights(getInsights()),
-    series
-  );
+  return getBlogSeriesPageData(getInsights(), series);
 }
 
 function descriptionFor(series: string, title: string) {
@@ -30,7 +26,7 @@ function episodeTitle(title: string) {
 }
 
 export function generateStaticParams() {
-  return getBlogSeriesSlugs(getEditorialInsights(getInsights())).map((series) => ({
+  return getBlogSeriesSlugs(getInsights()).map((series) => ({
     series
   }));
 }
@@ -121,7 +117,7 @@ export default async function BlogSeriesPage({
 
   return (
     <>
-      <main className="blog-series-page">
+      <div className="blog-series-page">
         <section className="blog-series-page-hero">
           <div className="blog-series-page-container">
             <nav className="blog-series-breadcrumb" aria-label="Breadcrumb">
@@ -192,7 +188,7 @@ export default async function BlogSeriesPage({
             </Link>
           </div>
         </section>
-      </main>
+      </div>
 
       <script
         type="application/ld+json"

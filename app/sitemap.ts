@@ -2,7 +2,6 @@ import type { MetadataRoute } from "next";
 import { getBlogSeriesSlugs } from "@/lib/blogSeries";
 import { getInsights } from "@/lib/content";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
-import { getEditorialInsights } from "@/lib/insightCollections";
 
 const baseUrl = "https://worldcleanbiz.com";
 const lastModified = new Date("2026-06-03");
@@ -35,7 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}${route}`,
       lastModified: route.startsWith("/sourcing/") ? sourcingProductPublishedAt : lastModified
     })),
-    ...getBlogSeriesSlugs(getEditorialInsights(insights)).map((series) => ({
+    ...getBlogSeriesSlugs(insights).map((series) => ({
       url: `${baseUrl}/blog/series/${series}`,
       lastModified
     })),
