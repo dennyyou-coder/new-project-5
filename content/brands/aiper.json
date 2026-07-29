@@ -46,7 +46,7 @@
   ],
   "manufacturingSupplyChain": [
     "Fluidra's April 2025 investor presentation described Aiper as operating two R&D centers and using manufacturing partners in China and Vietnam; the disclosure supports an external-partner model, not one universal Aiper-owned factory claim.",
-    "The U.S. CPSC's March 2025 Seagull Pro recall named Dongguan Yuanhong Intelligent Technology as manufacturer and Shenzhen Aiper Intelligent as distributor for model ZT6001. That model-specific record must not be generalized to every current Aiper product.",
+    "The U.S. CPSC's March 2025 Seagull Pro recall named Dongguan Yuanhong Intelligent Technology as manufacturer and Shenzhen Aiper Intelligent as distributor for model ZT6001. Its August 2023 Elite Pro recall named Compurobot Technology as manufacturer and Shenzhen Aiper Intelligent as distributor for model GS100. These model-specific records must not be generalized to every current Aiper product.",
     "The CNMC transaction review described Aiper as active in manufacturing and commercialization and noted centers in the United States, China and Europe, while also documenting industry-wide international outsourcing. Buyers should verify the manufacturer and origin on the exact SKU and shipment documents."
   ],
   "marketsChannels": [
@@ -131,9 +131,18 @@
     },
     {
       "id": "aiper-cnmc-decision",
-      "title": "C/1616/25 Fluidra / W&D / Aiper: Report and Proposed Resolution",
+      "title": "C/1616/25 - Fluidra - W&D / Aiper",
       "publisher": "Comisión Nacional de los Mercados y la Competencia",
-      "url": "https://www.cnmc.es/sites/default/files/6510726.pdf",
+      "url": "https://www.cnmc.es/expedientes/c161625",
+      "publishedAt": "2025-12-17",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "aiper-cpsc-2023-recall",
+      "title": "Aiper Elite Pro GS100 Cordless Robotic Pool Vacuum Cleaners Recalled",
+      "publisher": "U.S. Consumer Product Safety Commission",
+      "url": "https://www.cpsc.gov/Recalls/2023/Aiper-Elite-Pro-Cordless-Robotic-Pool-Vacuum-Cleaners-Recalled-Due-to-Burn-and-Fire-Hazards-Distributed-by-Shenzhen-Aiper-Intelligent-Co-Recall-Alert",
+      "publishedAt": "2023-08-24",
       "accessedAt": "2026-07-30"
     },
     {
@@ -147,5 +156,5 @@
   ],
   "publishedAt": "2026-07-30T02:02:44+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T02:08:55+08:00"
+  "lastModified": "2026-07-30T02:22:38+08:00"
 }

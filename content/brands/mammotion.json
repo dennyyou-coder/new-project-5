@@ -15,7 +15,7 @@
   "metaDescription": "Mammotion company profile: LUBA maker, Songling and AgileX history, legal entities, manufacturing evidence, channels and outdoor-robot strategy.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Mammotion, Songling Robot or AgileX Robotics. Trademark, regulatory and regional seller records are scoped to the named entity and product.",
   "headquarters": "Shenzhen, China",
-  "founded": "January 2022 as Mammotion; the current company timeline traces its technology journey to 2016",
+  "founded": "2022 as Mammotion; the current company timeline traces its technology journey to 2016",
   "heroImage": "/images/blog/luba-mammotion-songling-agilex-company-map-cover.webp",
   "heroImageAlt": "Company map linking the Mammotion brand and LUBA product line to Songling, AgileX and named Mammotion legal entities",
   "ownership": {
@@ -48,8 +48,8 @@
   ],
   "manufacturingSupplyChain": [
     "A 2022 LUBA FCC test report names Hong Kong-based Mammotion Technology Co., Limited as both applicant and manufacturer for the tested AWD 5000, LUBA0001 and AWD 3000 models. The report states that its results apply only to the tested object.",
-    "Newer LUBA 2 equipment records and a 2024 Canadian trademark application name Shenzhen Mammotion Innovation Co., Limited at Mammotion's Shenzhen address. Applicant or trademark status does not by itself prove the factory for every current mower.",
-    "Mammotion's current public pages do not provide a single manufacturer list covering every LUBA, YUKA and SPINO SKU. Procurement teams should match the rating label, declaration, importer, invoice and warranty entity for the exact generation and market."
+    "The FCC equipment authorization record for FCC ID 2BFWS-LUBA2HM names Shenzhen Mammotion Innovation Co., Limited as the applicant and grantee for LUBA 2 AWD, with grants dated 23 and 24 December 2024. Applicant or grantee status establishes the named entity's regulatory filing relationship; it does not by itself identify the manufacturer or factory for every LUBA 2 configuration or current Mammotion product.",
+    "A 2024 Canadian trademark application also names Shenzhen Mammotion Innovation Co., Limited at Mammotion's Shenzhen address. Trademark status does not prove product origin, and Mammotion's current public pages do not provide one manufacturer list covering every LUBA, YUKA and SPINO SKU. Procurement teams should match the rating label, declaration, importer, invoice and warranty entity for the exact generation and market."
   ],
   "marketsChannels": [
     "Mammotion's current company page says it operates in more than 30 countries and regions, with local operating and service centers in the United States, Canada, the United Kingdom, Germany and Australia.",
@@ -144,6 +144,14 @@
       "accessedAt": "2026-07-30"
     },
     {
+      "id": "mammotion-fcc-luba2hm",
+      "title": "FCC ID 2BFWS-LUBA2HM: LUBA 2 AWD Equipment Authorization Record",
+      "publisher": "U.S. Federal Communications Commission equipment authorization data / FCC.report mirror",
+      "url": "https://fcc.report/FCC-ID/2BFWS-LUBA2HM",
+      "publishedAt": "2024-12-24",
+      "accessedAt": "2026-07-30"
+    },
+    {
       "id": "mammotion-luba-launch",
       "title": "Mammotion Launches LUBA, the Next-Generation of Robotic Lawn Mower Technology",
       "publisher": "Mammotion",
@@ -170,5 +178,5 @@
   ],
   "publishedAt": "2026-07-30T02:02:44+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T02:08:55+08:00"
+  "lastModified": "2026-07-30T02:22:38+08:00"
 }

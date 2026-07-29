@@ -65,7 +65,7 @@
     "Regional subsidiaries in North America, France, Australia, Germany, Spain and Portugal support local sales, distribution and service. The buyer's actual seller, authorized service path and warranty terms remain market- and model-specific."
   ],
   "competitivePosition": {
-    "summary": "World Clean Biz assessment: Maytronics still offers one of the broadest pool-robot systems for distributors, from residential Dolphin models to commercial machines, backed by in-house Israeli production and a long-established dealer and service network. Its pressure is visible in the 2025 filing: cordless Asian entrants expanded from low prices into premium ranges, online comparison intensified and Maytronics was reducing inventory while consolidating product lines. Dolphin's installed channel remains an advantage, but Maytronics must renew the cordless offer without weakening service, product quality or channel economics.",
+    "summary": "World Clean Biz assessment: Maytronics still offers one of the broadest pool-robot systems for distributors, from residential Dolphin models to commercial machines, backed by Israeli production and a long-established dealer and service network. The latest reported quarter shows that the reset is incomplete: first-quarter 2026 revenue fell 10.8%, or 0.8% at constant currency, gross margin declined to 28.4% and the company recorded a NIS 26.4 million net loss amid stronger competition, supply constraints, U.S. tariffs, currency effects and lower manufacturing efficiency. New products gained initial traction and order backlog rose 39%, but Maytronics must convert those signals into profitable supply and channel execution.",
     "competitorSlugs": [
       "aiper",
       "fluidra",
@@ -73,6 +73,14 @@
     ]
   },
   "developments": [
+    {
+      "date": "2026-05-28",
+      "title": "Maytronics reports first-quarter pressure and early new-product traction",
+      "summary": "Maytronics reported a 10.8% revenue decline, a 28.4% gross margin and a NIS 26.4 million net loss for the first quarter of 2026. The company cited competition, supply constraints, U.S. tariffs, currency effects and lower manufacturing efficiency, while reporting initial traction for new products and a 39% increase in order backlog.",
+      "sourceIds": [
+        "maytronics-q1-2026-release"
+      ]
+    },
     {
       "date": "2025-11-30",
       "title": "Maytronics reports third-quarter pressure and a 2026 product reset",
@@ -88,6 +96,7 @@
       "title": "2025 Annual Report",
       "publisher": "Maytronics Ltd. / Tel Aviv Stock Exchange filing",
       "url": "https://brand.maytronics.com/asset/a6e748f3-5756-4108-9775-5f7401c1dc37/2025-Annual-Report-HEB.pdf",
+      "publishedAt": "2026-04-19",
       "accessedAt": "2026-07-30"
     },
     {
@@ -133,6 +142,14 @@
       "accessedAt": "2026-07-30"
     },
     {
+      "id": "maytronics-q1-2026-release",
+      "title": "Maytronics Reports First Quarter 2026 Results",
+      "publisher": "Maytronics Ltd.",
+      "url": "https://brand.maytronics.com/asset/5cad6645-d2ba-4ff1-8026-16d51d39ad7e/Q1-2026-PR-EN.pdf",
+      "publishedAt": "2026-05-28",
+      "accessedAt": "2026-07-30"
+    },
+    {
       "id": "maytronics-q3-2025-release",
       "title": "Maytronics Reports Third Quarter and Nine-Month Results for 2025",
       "publisher": "Maytronics Ltd.",
@@ -143,5 +160,5 @@
   ],
   "publishedAt": "2026-07-30T02:02:44+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T02:05:31+08:00"
+  "lastModified": "2026-07-30T02:22:38+08:00"
 }
