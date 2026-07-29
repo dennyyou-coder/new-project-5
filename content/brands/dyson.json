@@ -2,12 +2,8 @@
   "status": "published",
   "slug": "dyson",
   "name": "Dyson",
-  "aliases": [
-    "Dyson Group",
-    "Dyson Technology",
-    "Dyson UK Group"
-  ],
-  "legalName": "Dyson Technology Limited",
+  "aliases": [],
+  "legalName": "Dyson Technology Limited (website, app and connected-product operating entity)",
   "officialWebsite": "https://www.dyson.com",
   "headline": "Dyson ownership, global engineering network and premium product strategy",
   "description": "A source-backed profile of Dyson's private ownership, Singapore global headquarters, UK engineering base, product portfolio and dated manufacturing network.",
@@ -18,7 +14,7 @@
   "heroImage": "/images/insights/dyson-at-a-crossroads-cover.jpg",
   "heroImageAlt": "World Clean Biz graphic about Dyson strategy featuring a Dyson cordless vacuum cleaner head",
   "ownership": {
-    "summary": "Dyson is privately held and family-controlled. Dyson's company-information page identifies Dyson Technology Limited as a company that operates its websites, apps and connected products with Dyson Limited. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. Dyson's April 2026 California disclosure names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting layers; the Singapore headquarters is not evidence of outside Singapore ownership."
+    "summary": "Dyson's company-information page identifies Dyson Technology Limited as one company that operates its websites, apps and connected products with Dyson Limited; it does not identify that entity as the legal company for every Dyson operation. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. That filing proves control of Dyson UK Group Limited, not by itself ultimate control across every Dyson group entity. Dyson's April 2026 California disclosure separately names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting scopes."
   },
   "leadership": [
     {
@@ -162,5 +158,5 @@
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T01:07:58+08:00"
+  "lastModified": "2026-07-30T01:22:31+08:00"
 }

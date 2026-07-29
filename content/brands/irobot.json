@@ -35,8 +35,8 @@
       "positioning": "A user-operated five-in-one hard-floor cleaner announced in July 2026, extending the Roomba name beyond autonomous robots."
     },
     {
-      "name": "iRobot Home app and iRobot Safe",
-      "positioning": "Software, mapping and data-governance layers supporting connected cleaning products and U.S.-anchored customer-data controls."
+      "name": "Roomba Home App",
+      "positioning": "The current consumer app for newer Roomba families; iRobot's app page says other models continue to use iRobot Home (Classic)."
     }
   ],
   "manufacturingSupplyChain": [
@@ -48,7 +48,8 @@
   "marketsChannels": [
     "iRobot says it has sold more than 50 million robots since introducing Roomba in 2002.",
     "Its July 2026 portfolio announcement covered five new Roomba robots and a user-operated hard-floor cleaner for North America, showing active product operations after the restructuring.",
-    "The company continues to use its direct website and retail partners, while product range, timing and service coverage vary by market."
+    "The company continues to use its direct website and retail partners, while product range, timing and service coverage vary by market.",
+    "The January 2026 transaction release describes iRobot Safe as a separate U.S.-based subsidiary responsible for protecting U.S. consumer data. It is a corporate data-governance safeguard, not a consumer product."
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: iRobot retains one of the category's best-known consumer names, a large installed base and U.S.-anchored product and software functions. Picea ownership can tighten the link between product development and Asian manufacturing, but the company must rebuild feature, cost and channel competitiveness after restructuring while Roborock, ECOVACS and Dreame sustain rapid launch cycles and broad multifunction-dock portfolios.",
@@ -148,9 +149,16 @@
       "url": "https://media.irobot.com/roomba-mini-march-2026",
       "publishedAt": "2026-03-10",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "irobot-roomba-home-app",
+      "title": "Roomba Home App",
+      "publisher": "iRobot",
+      "url": "https://www.irobot.com/en_US/roomba-home-app.html",
+      "accessedAt": "2026-07-30"
     }
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T01:06:01+08:00"
+  "lastModified": "2026-07-30T01:22:31+08:00"
 }

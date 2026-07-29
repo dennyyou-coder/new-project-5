@@ -42,7 +42,7 @@
     },
     {
       "name": "Pet-care products",
-      "positioning": "A 2026 expansion into grooming, stain control and pet-home products alongside established pet-focused floorcare."
+      "positioning": "A 2026 expansion represented by the CleanWell automatic litter box and HydrateWell water fountain."
     },
     {
       "name": "Sanitaire commercial cleaning",
@@ -72,8 +72,8 @@
   "developments": [
     {
       "date": "2026-05-18",
-      "title": "BISSELL marks 150 years with a pet-care expansion",
-      "summary": "BISSELL described itself as a fifth-generation, family-led company and announced new grooming, home and stain-care products beyond its established floorcare portfolio.",
+      "title": "BISSELL marks 150 years with two pet-care products",
+      "summary": "BISSELL described itself as a fifth-generation, family-led company and announced the CleanWell automatic litter box and HydrateWell water fountain.",
       "sourceIds": [
         "bissell-150-pet-care"
       ]
@@ -154,5 +154,5 @@
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T01:06:01+08:00"
+  "lastModified": "2026-07-30T01:22:31+08:00"
 }
