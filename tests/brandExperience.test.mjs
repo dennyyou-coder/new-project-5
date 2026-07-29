@@ -276,6 +276,36 @@ test("brand styles are isolated, cover images, and collapse multi-column layouts
   assert.match(mobileStyles, /\.brand-detail-hero img\s*\{[\s\S]*(?:aspect-ratio|height):/);
 });
 
+test("brand JSX connects every required CSS selector to rendered content", () => {
+  const directoryRoute = read("app/brands/page.tsx");
+  const detailRoute = read("app/brands/[slug]/page.tsx");
+  const directoryCard = read("components/brands/BrandDirectoryCard.tsx");
+  const hero = read("components/brands/BrandHero.tsx");
+  const sections = read("components/brands/BrandSections.tsx");
+  const timeline = read("components/brands/BrandTimeline.tsx");
+  const articles = read("components/brands/BrandArticles.tsx");
+  const sources = read("components/brands/BrandSources.tsx");
+  const articleBrandLinks = read("components/ArticleBrandLinks.tsx");
+
+  assert.match(directoryRoute, /className="guides-hub brand-hub"/);
+  assert.match(directoryRoute, /className="insights-page-container guides-hero-grid brand-directory-hero"/);
+  assert.match(directoryRoute, /className="guides-featured-grid brand-directory-grid"/);
+  assert.match(directoryCard, /className="guide-card brand-directory-card"/);
+
+  assert.match(detailRoute, /className="guides-hub brand-hub brand-detail"/);
+  assert.match(hero, /className="brand-detail-hero"/);
+  assert.match(hero, /className="brand-snapshot-grid"/);
+  assert.match(
+    hero,
+    /className="brand-detail-hero"[\s\S]*\{profile\.heroImage \? \([\s\S]*<img/
+  );
+  assert.match(sections, /className="guides-category-grid brand-section-grid"/);
+  assert.match(timeline, /<ol className="brand-timeline">/);
+  assert.match(articles, /className="guide-category-list brand-article-grid"/);
+  assert.match(sources, /<section className="section brand-sources">/);
+  assert.match(articleBrandLinks, /className="article-brand-links"/);
+});
+
 test("brand and article routes rely on the root layout main landmark", () => {
   [
     "app/brands/page.tsx",

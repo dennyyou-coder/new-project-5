@@ -29,9 +29,9 @@ export default function BrandsPage() {
   const schemas = buildBrandDirectorySchemas(profiles, siteUrl);
 
   return (
-    <div className="guides-hub">
+    <div className="guides-hub brand-hub">
       <section className="guides-hero">
-        <div className="insights-page-container guides-hero-grid">
+        <div className="insights-page-container guides-hero-grid brand-directory-hero">
           <div>
             <p className="eyebrow">Independent Brand Intelligence</p>
             <h1>Cleaning Industry Brand Intelligence</h1>
@@ -55,7 +55,7 @@ export default function BrandsPage() {
             <p className="eyebrow">Company Research</p>
             <h2>Browse Verified Brand Profiles.</h2>
           </div>
-          <div className="guides-featured-grid">
+          <div className="guides-featured-grid brand-directory-grid">
             {profiles.map((profile) => (
               <BrandDirectoryCard key={profile.slug} profile={profile} />
             ))}

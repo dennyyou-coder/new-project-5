@@ -14,7 +14,7 @@ export function BrandDirectoryCard({ profile }: { profile: BrandProfile }) {
   )];
 
   return (
-    <article className="guide-card">
+    <article className="guide-card brand-directory-card">
       <Link href={`/brands/${profile.slug}`}>
         {profile.heroImage ? (
           <img

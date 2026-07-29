@@ -11,7 +11,7 @@ export function BrandSources({ profile }: { profile: BrandProfile }) {
   if (profile.sources.length === 0) return null;
 
   return (
-    <section className="section">
+    <section className="section brand-sources">
       <div className="insights-page-container">
         <div className="section-heading guides-section-heading">
           <p className="eyebrow">Research Record</p>

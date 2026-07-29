@@ -25,7 +25,7 @@ export function BrandTimeline({ profile }: { profile: BrandProfile }) {
           <p className="eyebrow">Company Developments</p>
           <h2>Verified Timeline</h2>
         </div>
-        <ol>
+        <ol className="brand-timeline">
           {developments.map((development) => (
             <li key={`${development.date}-${development.title}`}>
               <time dateTime={development.date}>{formatDate(development.date)}</time>

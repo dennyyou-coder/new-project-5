@@ -13,7 +13,7 @@ function ArticleGroup({
   return (
     <section>
       <h2>{title}</h2>
-      <div className="guide-category-list">
+      <div className="guide-category-list brand-article-grid">
         {articles.map((article) => (
           <article className="guide-card" key={article.slug}>
             <Link href={`/blog/${article.slug}`}>

@@ -64,7 +64,7 @@ export default async function BrandPage({ params }: PageProps) {
   const schemas = buildBrandPageSchemas(data, siteUrl);
 
   return (
-    <div className="guides-hub">
+    <div className="guides-hub brand-hub brand-detail">
       <BrandHero profile={data.profile} />
       <BrandSections
         profile={data.profile}

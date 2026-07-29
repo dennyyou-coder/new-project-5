@@ -22532,8 +22532,15 @@ button.contact-help-card > .contact-help-card-copy > span {
   grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
   gap: 40px;
   align-items: center;
+}
+
+.brand-directory-hero {
   width: min(100% - 48px, 1360px);
   margin-inline: auto;
+}
+
+.brand-detail-hero {
+  width: 100%;
 }
 
 .brand-directory-grid,
@@ -22563,6 +22570,31 @@ button.contact-help-card > .contact-help-card-copy > span {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
+  margin-top: 28px;
+}
+
+.brand-snapshot-grid > div {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 16px;
+}
+
+.brand-snapshot-grid dt {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.brand-snapshot-grid dd {
+  margin: 6px 0 0;
+  color: #fff;
+  overflow-wrap: anywhere;
+}
+
+.brand-snapshot-grid a {
+  color: #fff;
 }
 
 .brand-section-grid {
@@ -22630,6 +22662,9 @@ button.contact-help-card > .contact-help-card-copy > span {
   .brand-directory-hero,
   .brand-detail-hero {
     gap: 24px;
+  }
+
+  .brand-directory-hero {
     width: min(100% - 32px, 1360px);
   }
 

@@ -20,19 +20,29 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
           <span>{profile.name}</span>
         </nav>
 
-        <p className="eyebrow">Independent Brand Intelligence</p>
-        <h1>{profile.name}</h1>
-        <p>{profile.headline}</p>
+        <div className="brand-detail-hero">
+          <div>
+            <p className="eyebrow">Independent Brand Intelligence</p>
+            <h1>{profile.name}</h1>
+            <p>{profile.headline}</p>
+            <p>
+              First published {formatDate(profile.publishedAt)} · Last verified{" "}
+              {formatDate(profile.lastVerified)}
+            </p>
+            <p>{profile.description}</p>
+            <p>{profile.disclaimer}</p>
+          </div>
 
-        {profile.heroImage ? (
-          <img
-            src={profile.heroImage}
-            alt={profile.heroImageAlt || ""}
-            decoding="async"
-          />
-        ) : null}
+          {profile.heroImage ? (
+            <img
+              src={profile.heroImage}
+              alt={profile.heroImageAlt || ""}
+              decoding="async"
+            />
+          ) : null}
+        </div>
 
-        <dl>
+        <dl className="brand-snapshot-grid">
           <div>
             <dt>Legal name</dt>
             <dd>{profile.legalName}</dd>
@@ -55,12 +65,6 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
           </div>
         </dl>
 
-        <p>
-          First published {formatDate(profile.publishedAt)} · Last verified{" "}
-          {formatDate(profile.lastVerified)}
-        </p>
-        <p>{profile.description}</p>
-        <p>{profile.disclaimer}</p>
       </div>
     </section>
   );

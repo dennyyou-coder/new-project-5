@@ -38,7 +38,7 @@ export function BrandSections({
   return (
     <section className="section">
       <div className="insights-page-container">
-        <div className="guides-category-grid">
+        <div className="guides-category-grid brand-section-grid">
           {profile.ownership.summary ? (
             <section className="guides-category-panel">
               <h2>Ownership</h2>
