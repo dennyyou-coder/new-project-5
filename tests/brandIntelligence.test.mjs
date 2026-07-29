@@ -7,6 +7,7 @@ import {
   getBrandPageData,
   getBrandProfiles,
   getPublishedBrandProfiles,
+  normalizeBrandSlugs,
   validateBrandProfile
 } from "../lib/brands.ts";
 
@@ -76,6 +77,16 @@ const articles = [
     relatedBrands: []
   }
 ];
+
+test("normalizes supported brand frontmatter values and removes malformed slugs", () => {
+  assert.deepEqual(normalizeBrandSlugs([" Roborock ", "roborock", "Dreame"]), [
+    "roborock",
+    "dreame"
+  ]);
+  assert.deepEqual(normalizeBrandSlugs("Roborock"), ["roborock"]);
+  assert.deepEqual(normalizeBrandSlugs(undefined), []);
+  assert.deepEqual(normalizeBrandSlugs(["", " ", "not a slug", "Dreame"]), ["dreame"]);
+});
 
 test("accepts a complete published brand profile", () => {
   assert.deepEqual(validateBrandProfile(profile, articles), []);
