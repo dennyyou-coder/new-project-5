@@ -1,0 +1,156 @@
+{
+  "status": "published",
+  "slug": "irobot",
+  "name": "iRobot",
+  "aliases": [
+    "Roomba",
+    "iRobot Corp."
+  ],
+  "legalName": "iRobot Corporation",
+  "officialWebsite": "https://www.irobot.com",
+  "headline": "iRobot ownership after Picea, Roomba portfolio and operating reset",
+  "description": "A source-backed profile of iRobot's 2026 transition to private Picea ownership, current leadership, U.S. operating base and renewed floorcare portfolio.",
+  "metaDescription": "iRobot company profile: current Picea ownership, private status, leadership, Roomba products, manufacturing relationship and strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with iRobot or Picea. Public-company and restructuring facts are dated because iRobot became privately held in January 2026.",
+  "headquarters": "Bedford, Massachusetts, United States",
+  "founded": "1990",
+  "ownership": {
+    "summary": "iRobot became privately held and wholly owned by Picea on January 23, 2026, after a U.S. court-supervised restructuring. iRobot's filing defines Picea collectively as Shenzhen PICEA Robotics Co., Ltd. and its wholly owned subsidiary Santrum Hong Kong Co., Limited. The old public equity was cancelled, and a January 26 Form 15 began terminating or suspending iRobot's former SEC registration and reporting obligations.",
+    "parentCompany": "Picea (Shenzhen PICEA Robotics Co., Ltd. and Santrum Hong Kong Co., Limited collectively)"
+  },
+  "leadership": [
+    {
+      "name": "Gary Cohen",
+      "role": "Chief Executive Officer",
+      "context": "Continued as CEO through the January 2026 transaction and was identified as CEO in iRobot's March 2026 Roomba Mini launch."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Roomba robot vacuums and vacuum-mop robots",
+      "positioning": "The core home-robotics franchise, covering compact robots, lidar-equipped systems and docked vacuum-and-mop configurations."
+    },
+    {
+      "name": "Roomba Electro Plus",
+      "positioning": "A user-operated five-in-one hard-floor cleaner announced in July 2026, extending the Roomba name beyond autonomous robots."
+    },
+    {
+      "name": "iRobot Home app and iRobot Safe",
+      "positioning": "Software, mapping and data-governance layers supporting connected cleaning products and U.S.-anchored customer-data controls."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    "Before the restructuring, Picea was iRobot's primary contract manufacturer and later its secured lender; the January 2026 transaction converted that supplier-creditor relationship into ownership.",
+    "iRobot's completion announcement says Picea has research, development and manufacturing operations in China and Vietnam.",
+    "The same announcement says iRobot remains headquartered in Bedford, with engineering, product development, marketing and corporate functions anchored in the United States.",
+    "Picea ownership does not establish one factory for every Roomba model; product labels and regulatory documents remain necessary for model-level origin."
+  ],
+  "marketsChannels": [
+    "iRobot says it has sold more than 50 million robots since introducing Roomba in 2002.",
+    "Its July 2026 portfolio announcement covered five new Roomba robots and a user-operated hard-floor cleaner for North America, showing active product operations after the restructuring.",
+    "The company continues to use its direct website and retail partners, while product range, timing and service coverage vary by market."
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: iRobot retains one of the category's best-known consumer names, a large installed base and U.S.-anchored product and software functions. Picea ownership can tighten the link between product development and Asian manufacturing, but the company must rebuild feature, cost and channel competitiveness after restructuring while Roborock, ECOVACS and Dreame sustain rapid launch cycles and broad multifunction-dock portfolios.",
+    "competitorSlugs": [
+      "roborock",
+      "ecovacs",
+      "dreame"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-07-07",
+      "title": "iRobot announces a wider floorcare portfolio",
+      "summary": "iRobot introduced five new Roomba robot models and the Roomba Electro Plus user-operated hard-floor cleaner for North America.",
+      "sourceIds": [
+        "irobot-july-2026-products"
+      ]
+    },
+    {
+      "date": "2026-01-26",
+      "title": "iRobot files Form 15 after becoming private",
+      "summary": "The filing reported one holder of record and began terminating or suspending the company's former SEC registration and reporting duties.",
+      "sourceIds": [
+        "irobot-form-15"
+      ]
+    },
+    {
+      "date": "2026-01-23",
+      "title": "Picea completes acquisition of iRobot",
+      "summary": "Picea acquired 100% of reorganized iRobot, making the company privately held while retaining its Bedford headquarters and U.S.-anchored engineering, product, marketing and corporate functions.",
+      "sourceIds": [
+        "irobot-transaction-release",
+        "irobot-january-8k"
+      ]
+    },
+    {
+      "date": "2025-12-14",
+      "title": "iRobot begins prepackaged Chapter 11 transaction",
+      "summary": "iRobot announced a court-supervised restructuring with Picea, then its primary contract manufacturer and secured lender.",
+      "sourceIds": [
+        "irobot-restructuring-announcement"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "irobot-january-8k",
+      "title": "Current Report on Form 8-K",
+      "publisher": "iRobot Corporation / U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/1159167/000115916726000006/irbt-20260122.htm",
+      "publishedAt": "2026-01-26",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "irobot-transaction-release",
+      "title": "iRobot Completes Court-Supervised Transaction with Picea, Enabling the Next Chapter of Growth",
+      "publisher": "iRobot",
+      "url": "https://www.sec.gov/Archives/edgar/data/1159167/000115916726000006/exhibit991.htm",
+      "publishedAt": "2026-01-23",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "irobot-form-15",
+      "title": "Certification and Notice of Termination of Registration on Form 15",
+      "publisher": "iRobot Corporation / U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/1159167/000115916726000007/form15.htm",
+      "publishedAt": "2026-01-26",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "irobot-july-2026-products",
+      "title": "iRobot Redefines Floor Care with the Introduction of a 5-in-1 Disinfecting Hard Floor Cleaner Along with a New Generation of Roomba Robots",
+      "publisher": "iRobot",
+      "url": "https://media.irobot.com/2026-07-07-iRobot-Redefines-Floor-Care-with-the-Introduction-of-a-5-in-1-Disinfecting-Hard-Floor-Cleaner-Along-with-a-New-Generation-of-Roomba-Robots",
+      "publishedAt": "2026-07-07",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "irobot-restructuring-announcement",
+      "title": "iRobot Announces Strategic Transaction to Drive Long-Term Growth Plan",
+      "publisher": "iRobot",
+      "url": "https://media.irobot.com/2025-12-14-iRobot-Announces-Strategic-Transaction-to-Drive-Long-Term-Growth-Plan",
+      "publishedAt": "2025-12-14",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "irobot-about",
+      "title": "About iRobot",
+      "publisher": "iRobot",
+      "url": "https://careers.irobot.com/about",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "irobot-mini-march-2026",
+      "title": "iRobot Introduces Roomba Mini",
+      "publisher": "iRobot",
+      "url": "https://media.irobot.com/roomba-mini-march-2026",
+      "publishedAt": "2026-03-10",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T01:06:01+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T01:06:01+08:00"
+}

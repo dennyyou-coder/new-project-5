@@ -1,0 +1,153 @@
+{
+  "status": "published",
+  "slug": "tineco",
+  "name": "Tineco",
+  "aliases": [
+    "TEK",
+    "Tineco Intelligent Technology"
+  ],
+  "legalName": "Tineco Intelligent Technology Co., Ltd.",
+  "officialWebsite": "https://global.tineco.com",
+  "headline": "Tineco ownership, floor-washer portfolio and Ecovacs group boundary",
+  "description": "A source-backed profile separating the Tineco consumer brand and operating company from ECOVACS Robotics, with products, manufacturing evidence and channels.",
+  "metaDescription": "Tineco company profile: Ecovacs group ownership, leadership, products, manufacturing evidence, retail channels and competitive strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Tineco or ECOVACS. Group-level disclosures and model-specific factory documents are identified separately and should not be generalized to every Tineco product.",
+  "headquarters": "Suzhou, Jiangsu, China",
+  "founded": "1998 operating and factory heritage; TEK rebranded as Tineco in 2018",
+  "heroImage": "/images/insights/tineco-lacks-innovation-cover.jpg",
+  "heroImageAlt": "Floor-washer demonstrations in a World Clean Biz analysis of Tineco",
+  "ownership": {
+    "summary": "Tineco is a consumer brand within Shanghai-listed Ecovacs Robotics Co., Ltd. The group's 2025 annual report identifies Tineco Intelligent Technology Co., Ltd. as a wholly owned subsidiary and describes ECOVACS and Tineco as a dual-brand structure. ECOVACS Robotics and Tineco are distinct consumer brands with different portfolios, even though they share listed-group control.",
+    "parentCompany": "Ecovacs Robotics Co., Ltd."
+  },
+  "leadership": [
+    {
+      "name": "Ling Leng",
+      "role": "CEO of Tineco",
+      "context": "Tineco's June 2025 release identifies Ling Leng as CEO; an Ecovacs filing says he has served as general manager of the Tineco brand since October 2020."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "FLOOR ONE floor washers",
+      "positioning": "The flagship wet-and-dry hard-floor category, emphasizing sensors, edge cleaning, low-profile access and dock-based self-cleaning."
+    },
+    {
+      "name": "Cordless stick vacuums",
+      "positioning": "Dry floorcare systems sold under the PURE ONE and A-series families."
+    },
+    {
+      "name": "Carpet cleaners",
+      "positioning": "Upright and portable deep-cleaning appliances that broaden the floorcare portfolio."
+    },
+    {
+      "name": "Kitchen and beauty appliances",
+      "positioning": "Cooking, hair-care and personal-care products positioned as smart lifestyle appliances rather than ECOVACS service robots."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    "Ecovacs Robotics Co., Ltd.'s 2025 annual report treats Tineco Intelligent Technology Co., Ltd. as a separate wholly owned subsidiary responsible for the Tineco side of the group's dual-brand strategy.",
+    "The annual report says the group mainly uses self-production and describes a planned Tineco project with designed annual capacity of 12 million high-end smart lifestyle appliances.",
+    "A January 2025 EU declaration for the A20 and A30 cordless-vacuum series names Tineco Intelligent Technology Co., Ltd. in Suzhou as manufacturer and Dechang Vietnam Co., Ltd. in Dong Nai as factory. That document is model-series evidence, not a factory map for all Tineco products.",
+    "Tineco's company history says its 1998 factory has grown beyond 80,000 square metres, but current model origin still needs product-level verification."
+  ],
+  "marketsChannels": [
+    "Tineco's company history dates a North American branch in Seattle to 2019, a Japan office to 2020 and a European branch in Düsseldorf to 2021.",
+    "Its June 2025 U.S. release names Amazon, Tineco's online store and more than 10,000 retail locations, including Target, Walmart, Best Buy, Costco, Home Depot and Canadian Tire.",
+    "Official country sites and distributor contacts support sales across North America, Europe and Asia, while exact availability and warranty terms remain market-specific."
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Tineco's strongest position is in sensor-led wet-and-dry floor washers, supported by broad U.S. retail distribution and the manufacturing scale of the Ecovacs group. Its main strategic risk is category concentration: rivals are rapidly matching self-cleaning, hot-wash, drying and lay-flat features, while expansion into kitchen and beauty appliances must build credibility without blurring the separate ECOVACS robotics brand.",
+    "competitorSlugs": [
+      "bissell",
+      "dyson",
+      "dreame",
+      "shark"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-04-25",
+      "title": "Listed group confirms Tineco subsidiary and dual-brand structure",
+      "summary": "Ecovacs Robotics Co., Ltd.'s 2025 annual report identifies Tineco Intelligent Technology Co., Ltd. as wholly owned and separates Tineco smart lifestyle appliances from ECOVACS service robots.",
+      "sourceIds": [
+        "ecovacs-2025-annual-report"
+      ]
+    },
+    {
+      "date": "2025-06-20",
+      "title": "Tineco details North American floor-washer channels",
+      "summary": "Tineco's U.S. release identifies Ling Leng as CEO and names major ecommerce and retail routes for its floor-washer portfolio.",
+      "sourceIds": [
+        "tineco-floor-washer-leadership"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "title": "EU declaration identifies an A20 and A30 series factory",
+      "summary": "The model-series declaration names Tineco Intelligent Technology Co., Ltd. as manufacturer and Dechang Vietnam Co., Ltd. as factory for the covered cordless vacuums.",
+      "sourceIds": [
+        "tineco-a20-a30-eu-doc"
+      ]
+    },
+    {
+      "date": "2018",
+      "title": "TEK consumer brand becomes Tineco",
+      "summary": "Tineco's company history dates the TEK-to-Tineco brand change to 2018.",
+      "sourceIds": [
+        "tineco-about"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ecovacs-2025-annual-report",
+      "title": "科沃斯机器人股份有限公司2025年年度报告",
+      "publisher": "Ecovacs Robotics Co., Ltd. / Shanghai Stock Exchange filing",
+      "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-25/603486_20260425_WFVJ.pdf",
+      "publishedAt": "2026-04-25",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "tineco-about",
+      "title": "About Tineco",
+      "publisher": "Tineco",
+      "url": "https://global.tineco.com/about/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "tineco-floor-washer-leadership",
+      "title": "Tineco Recognized as Global Leader in Emerging Floor Washer Category",
+      "publisher": "Tineco",
+      "url": "https://us.tineco.com/blog/tineco-recognized-as-global-leader-in-emerging-floor-washer-category/",
+      "publishedAt": "2025-06-20",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "tineco-a20-a30-eu-doc",
+      "title": "EU Declaration of Conformity for A20 and A30 Series",
+      "publisher": "Tineco",
+      "url": "https://static-ussite.tineco.com/EU%20DOC%20for%20A20%20%26%20A30%20SERIES.pdf_44c00450-8.pdf",
+      "publishedAt": "2025-01",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "ecovacs-tineco-ifa-2024",
+      "title": "ECOVACS Group Unveils Groundbreaking Floor Cleaning Innovations at IFA 2024",
+      "publisher": "ECOVACS",
+      "url": "https://www.ecovacs.com/global/newsroom/official-news/2024-ifa",
+      "publishedAt": "2024-09-06",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "tineco-contact",
+      "title": "Contact Tineco",
+      "publisher": "Tineco",
+      "url": "https://global.tineco.com/contact/",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T01:06:01+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T01:06:01+08:00"
+}

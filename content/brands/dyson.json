@@ -1,0 +1,166 @@
+{
+  "status": "published",
+  "slug": "dyson",
+  "name": "Dyson",
+  "aliases": [
+    "Dyson Group",
+    "Dyson Technology",
+    "Dyson UK Group"
+  ],
+  "legalName": "Dyson Technology Limited",
+  "officialWebsite": "https://www.dyson.com",
+  "headline": "Dyson ownership, global engineering network and premium product strategy",
+  "description": "A source-backed profile of Dyson's private ownership, Singapore global headquarters, UK engineering base, product portfolio and dated manufacturing network.",
+  "metaDescription": "Dyson company profile: private ownership, Singapore and UK headquarters, products, manufacturing network, channels and competitive strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dyson. Corporate and manufacturing statements are limited to the entities, facilities and dates covered by the cited sources; they do not establish the origin of every Dyson model.",
+  "headquarters": "Global headquarters: St James Power Station, Singapore; UK headquarters: Malmesbury, Wiltshire",
+  "founded": "1993 (Dyson Limited incorporated in 1991)",
+  "heroImage": "/images/insights/dyson-at-a-crossroads-cover.jpg",
+  "heroImageAlt": "World Clean Biz graphic about Dyson strategy featuring a Dyson cordless vacuum cleaner head",
+  "ownership": {
+    "summary": "Dyson is privately held and family-controlled. Dyson's company-information page identifies Dyson Technology Limited as a company that operates its websites, apps and connected products with Dyson Limited. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. Dyson's April 2026 California disclosure names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting layers; the Singapore headquarters is not evidence of outside Singapore ownership."
+  },
+  "leadership": [
+    {
+      "name": "Sir James Dyson",
+      "role": "Founder and Chairman",
+      "context": "Founder of the privately held technology group and the active person with significant control recorded for Dyson UK Group Limited."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Vacuum cleaners and floorcare",
+      "positioning": "The core consumer category, spanning cordless, upright, canister, wet-cleaning and robotic formats in selected markets."
+    },
+    {
+      "name": "Hair care",
+      "positioning": "Premium dryers, stylers and straighteners built around airflow, heat control and motor technology."
+    },
+    {
+      "name": "Air treatment",
+      "positioning": "Purifiers, humidifiers, fans and heaters that extend the brand into indoor environmental appliances."
+    },
+    {
+      "name": "Audio and wearable technology",
+      "positioning": "A newer category represented by headphones, adding personal electronics to Dyson's appliance portfolio."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    "Dyson's company history says production moved to Malaysia in 2003 to work near suppliers and contract manufacturers; that is a dated network statement, not proof that every current machine is assembled there.",
+    "Dyson says its Singapore motor facility opened in 2012. The company separately reported that facilities in Singapore and the Philippines had produced 150 million Hyperdymium motors by 2023.",
+    "The Philippines Technology Centre combines research, engineering and manufacturing capabilities, while Malmesbury and Hullavington remain important UK research, design and development locations.",
+    "Country of origin and final assembly can vary by model, batch and destination market, so a specific product's rating label and packaging remain the stronger model-level evidence."
+  ],
+  "marketsChannels": [
+    "Dyson says it operates across 84 markets, supported by its own websites, demonstration stores and third-party retail channels.",
+    "Singapore's St James Power Station is the global headquarters for research, engineering, commercial, advanced-manufacturing and supply-chain teams.",
+    "Malmesbury is described by Dyson as its UK headquarters, keeping a substantial UK engineering base alongside the Singapore-led global structure."
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Dyson's advantage is a premium global brand supported by proprietary motor and airflow engineering, a wide direct-to-consumer presence and expansion from floorcare into hair care, air treatment and audio. Its challenge is to convert that engineering investment into clearly differentiated products while fast-moving competitors narrow feature gaps and floorcare growth shifts toward wet cleaning and robotics.",
+    "competitorSlugs": [
+      "shark",
+      "bissell",
+      "tineco",
+      "dreame"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-04",
+      "title": "Dyson publishes its 2025 California supply-chain disclosure",
+      "summary": "The statement identifies Dyson Holdings Pte. Limited as the ultimate parent of the reporting U.S. entities and describes group supplier-audit and responsible-sourcing controls.",
+      "sourceIds": [
+        "dyson-california-2025"
+      ]
+    },
+    {
+      "date": "2023",
+      "title": "Singapore and Philippines facilities pass 150 million motors",
+      "summary": "Dyson said its motor-manufacturing facilities in Singapore and the Philippines had produced 150 million Hyperdymium motors.",
+      "sourceIds": [
+        "dyson-philippines"
+      ]
+    },
+    {
+      "date": "2022-03-25",
+      "title": "St James Power Station opens as global headquarters",
+      "summary": "Dyson opened its Singapore global headquarters with 18 laboratories and teams spanning research, engineering, commercial, advanced manufacturing and supply chain.",
+      "sourceIds": [
+        "singapore-edb-dyson-hq",
+        "dyson-company-history"
+      ]
+    },
+    {
+      "date": "2018",
+      "title": "Hullavington research campus opens",
+      "summary": "Dyson's company history dates the opening of its Hullavington research, design and development campus in Wiltshire to 2018.",
+      "sourceIds": [
+        "dyson-company-history"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "dyson-companies-house-psc",
+      "title": "Dyson UK Group Limited: persons with significant control",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07086916/persons-with-significant-control",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dyson-california-2025",
+      "title": "California Transparency in Supply Chains Act Statement 2025",
+      "publisher": "Dyson",
+      "url": "https://www.dyson.com/content/dam/dyson/documents/US/USA_Modern-Slavery-Statement-2025.pdf",
+      "publishedAt": "2026-04",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dyson-company-information",
+      "title": "Company Information",
+      "publisher": "Dyson",
+      "url": "https://www.dyson.com/inside-dyson/terms/company-information",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "singapore-edb-dyson-hq",
+      "title": "His Excellency Lee Hsien Loong officially opens Dyson new global headquarters at the historic St James Power Station",
+      "publisher": "Singapore Economic Development Board",
+      "url": "https://www.edb.gov.sg/en/about-edb/media-releases-publications/his-excellency-lee-hsien-loong-officially-opens-dyson-new-global-headquarters-at-the-historic-st-james-power-station.html",
+      "publishedAt": "2022-03-25",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dyson-james",
+      "title": "James Dyson",
+      "publisher": "Dyson",
+      "url": "https://www.dyson.com/james-dyson",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dyson-company-history",
+      "title": "Who we are",
+      "publisher": "Dyson Careers",
+      "url": "https://careers.dyson.com/en-gb/who-we-are/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dyson-philippines",
+      "title": "Philippines",
+      "publisher": "Dyson Careers",
+      "url": "https://careers.dyson.com/en-gb/where-we-are/asia-pacific/philippines/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dyson-motor-history",
+      "title": "Dyson reaches 100 million digital motors",
+      "publisher": "Dyson",
+      "url": "https://www.dyson.com/discover/news/latest/100m-digital-motors",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T01:06:01+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T01:07:58+08:00"
+}

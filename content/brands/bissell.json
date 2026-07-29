@@ -1,0 +1,158 @@
+{
+  "status": "published",
+  "slug": "bissell",
+  "name": "BISSELL",
+  "aliases": [
+    "Bissell",
+    "Bissell Homecare"
+  ],
+  "legalName": "BISSELL Homecare, Inc.",
+  "officialWebsite": "https://www.bissell.com",
+  "headline": "BISSELL family ownership, floorcare portfolio and Sanitaire boundary",
+  "description": "A source-backed profile of BISSELL's family ownership, consumer floorcare portfolio, international supply chain and separately positioned Sanitaire commercial brand.",
+  "metaDescription": "BISSELL company profile: family ownership, Homecare structure, Sanitaire scope, products, supply chain, channels and competitive strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with BISSELL or Sanitaire. Supply-chain countries do not identify the factory for a specific model, and Sanitaire commercial products are not presented as the entire BISSELL consumer portfolio.",
+  "headquarters": "Grand Rapids, Michigan, United States",
+  "founded": "1876",
+  "heroImage": "/images/insights/bissell-crosswave-hard-floor-washer-logic-cover.jpg",
+  "heroImageAlt": "BISSELL CrossWave 2.5 wet-dry floor cleaner in a Chinese-market product image",
+  "ownership": {
+    "summary": "BISSELL describes itself as a fifth-generation, family-owned and family-led private company. A U.S. federal-court filing by the companies states that BISSELL Homecare, Inc. is wholly owned by BISSELL Inc. Public sources do not provide a complete shareholder list or individual family ownership percentages, so the supported description is Bissell-family ownership rather than a percentage assigned to one person.",
+    "parentCompany": "BISSELL Inc."
+  },
+  "leadership": [
+    {
+      "name": "Max Bissell",
+      "role": "President of Global Markets",
+      "context": "Identified in BISSELL's May 2026 150th-anniversary and pet-care announcement."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Vacuums",
+      "positioning": "Upright, canister, cordless, handheld and robotic systems, with a strong emphasis on pet-hair cleaning."
+    },
+    {
+      "name": "CrossWave wet-dry floor cleaners",
+      "positioning": "A core multi-surface floorcare family combining debris pickup and wet cleaning in corded, cordless and steam-enabled formats."
+    },
+    {
+      "name": "Carpet and spot cleaners",
+      "positioning": "Deep-cleaning and portable extraction products that extend BISSELL's position beyond routine vacuuming."
+    },
+    {
+      "name": "Pet-care products",
+      "positioning": "A 2026 expansion into grooming, stain control and pet-home products alongside established pet-focused floorcare."
+    },
+    {
+      "name": "Sanitaire commercial cleaning",
+      "positioning": "A separately positioned brand owned by BISSELL Homecare, serving education, hospitality, healthcare and office facilities with commercial vacuums and floor machines."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    "BISSELL's 2025 Canadian supply-chain report says BISSELL Inc. is the Michigan parent of the reporting Canadian and Dutch subsidiaries and that the wider organization has more than 2,000 employees.",
+    "The same report says appliances are manufactured through the supply chain in Cambodia, China, Vietnam, Malaysia, Mexico and Indonesia, while cleaning formulas are made in the United States, United Kingdom and China.",
+    "Those country references describe the supply chain and do not establish BISSELL ownership of every factory or the origin of a specific model.",
+    "Sanitaire's site says the commercial brand is owned by BISSELL Homecare, Inc.; BISSELL acquired the Sanitaire commercial vacuum brand from Electrolux in 2018."
+  ],
+  "marketsChannels": [
+    "The 2025 supply-chain report says BISSELL products reach more than 50 countries through retailers, distributors and direct channels.",
+    "BISSELL combines its own ecommerce sites with mass retail, specialist retail and regional distributor networks.",
+    "Sanitaire addresses institutional and commercial customers in education, hospitality, healthcare and office environments, a different channel and use-case scope from the BISSELL consumer brand."
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: BISSELL's durable strengths are a broad floorcare portfolio, strong pet-cleaning association, CrossWave category equity and access to both consumer and Sanitaire commercial channels. Its challenge is to keep wet-cleaning and robot products technologically current against Tineco, Shark, Dyson and fast-iterating Asian brands while preserving clear distinctions between family ownership, BISSELL Homecare legal entities and the separately positioned Sanitaire brand.",
+    "competitorSlugs": [
+      "tineco",
+      "shark",
+      "dyson",
+      "hoover"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-05-18",
+      "title": "BISSELL marks 150 years with a pet-care expansion",
+      "summary": "BISSELL described itself as a fifth-generation, family-led company and announced new grooming, home and stain-care products beyond its established floorcare portfolio.",
+      "sourceIds": [
+        "bissell-150-pet-care"
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "title": "FlexClean FurForce expands the robot-vacuum line",
+      "summary": "BISSELL announced a two-in-one vacuum-and-mop robot with lidar navigation, app control and a self-emptying dock.",
+      "sourceIds": [
+        "bissell-flexclean-2026"
+      ]
+    },
+    {
+      "date": "2018-08-08",
+      "title": "BISSELL acquires the Sanitaire commercial vacuum brand",
+      "summary": "BISSELL acquired Sanitaire from Electrolux, adding a commercial cleaning brand that now sits under BISSELL Homecare.",
+      "sourceIds": [
+        "sanitaire-acquisition",
+        "sanitaire-why"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bissell-about",
+      "title": "About Us",
+      "publisher": "BISSELL",
+      "url": "https://www.bissell.com/about-us.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "bissell-150-pet-care",
+      "title": "From Home Care to Pet Care: BISSELL Marks 150 Years of Innovation with New Pet Care Line",
+      "publisher": "BISSELL",
+      "url": "https://www.bissell.com/en-us/news/from-home-care-to-pet-care-bissell-marks-150-years-of-innovation-with-new-pet-care-line/",
+      "publishedAt": "2026-05-18",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "bissell-canada-supply-chain-2025",
+      "title": "Canada Fighting Against Forced Labour and Child Labour in Supply Chains Act Report for 2025",
+      "publisher": "BISSELL",
+      "url": "https://www.bissell.com/en-ca/canada-slavery-act/",
+      "publishedAt": "2026-05-26",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "bissell-court-filing",
+      "title": "Complaint: BISSELL Inc. and BISSELL Homecare, Inc. v. Tineco Intelligent Technology Co., Ltd. et al.",
+      "publisher": "BISSELL Inc. and BISSELL Homecare, Inc. / U.S. District Court filing",
+      "url": "https://ai-lab.exparte.com/documents/dct/4300556/1-22-cv-00150_complaint_exparte.pdf",
+      "publishedAt": "2022-02-01",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "sanitaire-why",
+      "title": "Why Sanitaire",
+      "publisher": "Sanitaire",
+      "url": "https://www.sanitairecommercial.com/pages/why-sanitaire",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "sanitaire-acquisition",
+      "title": "BISSELL Acquires Commercial Vacuum Brand Sanitaire",
+      "publisher": "Sanitaire",
+      "url": "https://www.sanitairecommercial.com/blogs/articles/bissell-acquires-commercial-vacuum-brand-sanitaire",
+      "publishedAt": "2018-08-08",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "bissell-flexclean-2026",
+      "title": "BISSELL Tackles Ever-Present Pet Messes Automatically with New FlexClean FurForce",
+      "publisher": "BISSELL",
+      "url": "https://www.bissell.com/en-us/news/bissell-tackles-ever-present-pet-messes-automatically-with-new-flexclean-furforce-the-2-in-1-robot-that-vacuums-and-mops-anytime-anywhere/",
+      "publishedAt": "2026-03-02",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T01:06:01+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T01:06:01+08:00"
+}
