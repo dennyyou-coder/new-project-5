@@ -46,6 +46,35 @@ test("public company index excludes channels, component suppliers, and secondary
   );
 });
 
+test("public company index includes the primary robotic mower brands without duplicate Sunseeker labels", () => {
+  const available = getAvailableCompanyKeywords([
+    { title: "Navimow Robot Mower Roadmap", tags: ["Segway Navimow"] },
+    { title: "Mammotion Expands LUBA", tags: ["Mammotion"] },
+    { title: "Husqvarna Automower Strategy", tags: ["Husqvarna"] },
+    { title: "Sunseekers Robot Mower Review", tags: ["sunseekers"] },
+    { title: "RockMow Enters Robotic Mowers", tags: ["RockMow"] },
+    { title: "WORX Landroid Product Line", tags: ["WORX"] },
+    { title: "MOVA Enters Robotic Mowers", tags: ["MOVA"] },
+    { title: "Kress Robotic Mower Channels", tags: ["Kress"] },
+    { title: "Greenworks Expands Autonomous Mowers", tags: ["Greenworks"] }
+  ]);
+
+  assert.deepEqual(
+    available.map((keyword) => keyword.label),
+    [
+      "Greenworks",
+      "Husqvarna",
+      "Kress",
+      "Mammotion",
+      "MOVA",
+      "Navimow",
+      "RockMow",
+      "Sunseeker",
+      "WORX"
+    ]
+  );
+});
+
 test("aliases return a combined company result set", () => {
   const available = getAvailableCompanyKeywords(articles);
   const keyword = getCompanyKeyword("dji-romo", available);
