@@ -43,10 +43,18 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
         </div>
 
         <dl className="brand-snapshot-grid">
-          <div>
-            <dt>Legal name</dt>
-            <dd>{profile.legalName}</dd>
-          </div>
+          {profile.legalName ? (
+            <div>
+              <dt>Legal name</dt>
+              <dd>{profile.legalName}</dd>
+            </div>
+          ) : null}
+          {profile.legalEntityNote ? (
+            <div>
+              <dt>Legal entity scope</dt>
+              <dd>{profile.legalEntityNote}</dd>
+            </div>
+          ) : null}
           <div>
             <dt>Headquarters</dt>
             <dd>{profile.headquarters}</dd>

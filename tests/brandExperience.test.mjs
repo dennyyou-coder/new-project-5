@@ -88,6 +88,27 @@ test("brand detail schemas use a WebPage about a separate verified organization 
   });
 });
 
+test("brand detail schema omits legalName when the profile only has a legal entity scope note", () => {
+  const multiEntityProfile = structuredClone(profile);
+  delete multiEntityProfile.legalName;
+  multiEntityProfile.legalEntityNote =
+    "The consumer brand spans multiple legal entities; entity scope is stated in ownership.";
+
+  const schemas = buildBrandPageSchemas({
+    profile: multiEntityProfile,
+    primaryArticles: [],
+    relatedArticles: []
+  }, "https://worldcleanbiz.com");
+
+  assert.deepEqual(schemas[1], {
+    "@context": "https://schema.org",
+    "@id": "#brand",
+    "@type": "Organization",
+    name: "Sample Brand",
+    url: "https://example.com"
+  });
+});
+
 test("brand developments sort by parsed timestamps instead of lexical date order", () => {
   const developments = [
     {
@@ -182,6 +203,19 @@ test("brand experience shows independent positioning, disclaimer, sources, and u
   assert.match(brandSources, /First published/);
   assert.match(brandSources, /Last verified/);
   assert.match(brandSources, /Last material modification/);
+});
+
+test("brand hero labels legal names and multi-entity scope notes separately", () => {
+  const hero = read("components/brands/BrandHero.tsx");
+
+  assert.match(
+    hero,
+    /\{profile\.legalName \? \([\s\S]*?<dt>Legal name<\/dt>[\s\S]*?<dd>\{profile\.legalName\}<\/dd>[\s\S]*?\) : null\}/
+  );
+  assert.match(
+    hero,
+    /\{profile\.legalEntityNote \? \([\s\S]*?<dt>Legal entity scope<\/dt>[\s\S]*?<dd>\{profile\.legalEntityNote\}<\/dd>[\s\S]*?\) : null\}/
+  );
 });
 
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {

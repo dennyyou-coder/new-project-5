@@ -2,7 +2,7 @@
 
 Each brand profile is one JSON file in this folder. Its filename should match the profile `slug`.
 
-## Required profile fields
+## Profile fields
 
 Use these field names exactly:
 
@@ -10,7 +10,8 @@ Use these field names exactly:
 - `slug`
 - `name`
 - `aliases`
-- `legalName`
+- `legalName` (optional when `legalEntityNote` is present)
+- `legalEntityNote` (optional when `legalName` is present)
 - `officialWebsite`
 - `headline`
 - `description`
@@ -59,3 +60,4 @@ Use these field names exactly:
 - Change `lastVerified` only after a human source review.
 - Change `lastModified` only after a material profile edit.
 - Keep profiles in `draft` until `npm run test:brands` accepts them.
+- Provide at least one of `legalName` or `legalEntityNote`. Use `legalEntityNote` when no single reviewed legal entity truthfully represents the consumer brand.

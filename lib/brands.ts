@@ -6,7 +6,8 @@ export type BrandProfile = {
   slug: string;
   name: string;
   aliases: string[];
-  legalName: string;
+  legalName?: string;
+  legalEntityNote?: string;
   officialWebsite: string;
   headline: string;
   description: string;
@@ -146,7 +147,6 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
   const requiredFields: Array<[keyof BrandProfile, string]> = [
     ["slug", "slug"],
     ["name", "name"],
-    ["legalName", "legalName"],
     ["officialWebsite", "officialWebsite"],
     ["headline", "headline"],
     ["description", "description"],
@@ -163,6 +163,10 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
     if (!hasText(candidate[field])) {
       errors.push(`${label} is required.`);
     }
+  }
+
+  if (!hasText(candidate.legalName) && !hasText(candidate.legalEntityNote)) {
+    errors.push("legalName or legalEntityNote is required.");
   }
 
   if (!hasText(candidate.slug) || !slugPattern.test(candidate.slug)) {
@@ -389,7 +393,7 @@ export function buildBrandPageSchemas(
       "@id": "#brand",
       "@type": "Organization",
       name: profile.name,
-      legalName: profile.legalName,
+      ...(hasText(profile.legalName) ? { legalName: profile.legalName } : {}),
       url: profile.officialWebsite
     },
     {

@@ -3,11 +3,11 @@
   "slug": "dyson",
   "name": "Dyson",
   "aliases": [],
-  "legalName": "Dyson Technology Limited (website, app and connected-product operating entity)",
+  "legalEntityNote": "No single reviewed source identifies one legal entity as the company for every Dyson consumer-brand operation.",
   "officialWebsite": "https://www.dyson.com",
   "headline": "Dyson ownership, global engineering network and premium product strategy",
-  "description": "A source-backed profile of Dyson's private ownership, Singapore global headquarters, UK engineering base, product portfolio and dated manufacturing network.",
-  "metaDescription": "Dyson company profile: private ownership, Singapore and UK headquarters, products, manufacturing network, channels and competitive strategy.",
+  "description": "A source-backed profile of Dyson's multi-entity structure, Singapore global headquarters, UK engineering base, product portfolio and dated manufacturing network.",
+  "metaDescription": "Dyson company profile: legal-entity scope, Singapore and UK headquarters, products, manufacturing network, channels and competitive strategy.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dyson. Corporate and manufacturing statements are limited to the entities, facilities and dates covered by the cited sources; they do not establish the origin of every Dyson model.",
   "headquarters": "Global headquarters: St James Power Station, Singapore; UK headquarters: Malmesbury, Wiltshire",
   "founded": "1993 (Dyson Limited incorporated in 1991)",
@@ -20,7 +20,7 @@
     {
       "name": "Sir James Dyson",
       "role": "Founder and Chairman",
-      "context": "Founder of the privately held technology group and the active person with significant control recorded for Dyson UK Group Limited."
+      "context": "Companies House records him as the active person with significant control of Dyson UK Group Limited."
     }
   ],
   "productPortfolio": [
@@ -158,5 +158,5 @@
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T01:22:31+08:00"
+  "lastModified": "2026-07-30T01:33:47+08:00"
 }

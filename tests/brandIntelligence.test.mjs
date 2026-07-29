@@ -92,6 +92,26 @@ test("accepts a complete published brand profile", () => {
   assert.deepEqual(validateBrandProfile(profile, articles), []);
 });
 
+test("accepts a legal entity scope note when one legal name cannot represent the brand", () => {
+  const multiEntityProfile = structuredClone(profile);
+  delete multiEntityProfile.legalName;
+  multiEntityProfile.legalEntityNote =
+    "The consumer brand spans multiple legal entities; entity scope is stated in ownership.";
+
+  assert.deepEqual(validateBrandProfile(multiEntityProfile, articles), []);
+});
+
+test("requires either a legal name or a legal entity scope note", () => {
+  const unidentifiedProfile = structuredClone(profile);
+  delete unidentifiedProfile.legalName;
+  delete unidentifiedProfile.legalEntityNote;
+
+  assert.match(
+    validateBrandProfile(unidentifiedProfile, articles).join("\n"),
+    /legalName or legalEntityNote is required/i
+  );
+});
+
 test("requires three unique valid HTTP(S) sources", () => {
   const incompleteProfile = structuredClone(profile);
   incompleteProfile.sources = incompleteProfile.sources.slice(0, 2);
