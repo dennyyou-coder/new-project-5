@@ -112,6 +112,60 @@ test("requires either a legal name or a legal entity scope note", () => {
   );
 });
 
+[
+  {
+    name: "rejects an object legalName even when legalEntityNote is valid",
+    field: "legalName",
+    value: { entity: "Sample Brand Holdings Ltd." },
+    otherField: "legalEntityNote",
+    otherValue: "The consumer brand spans multiple legal entities."
+  },
+  {
+    name: "rejects a numeric legalEntityNote even when legalName is valid",
+    field: "legalEntityNote",
+    value: 2026,
+    otherField: "legalName",
+    otherValue: "Sample Brand Holdings Ltd."
+  },
+  {
+    name: "rejects an empty legalName even when legalEntityNote is valid",
+    field: "legalName",
+    value: "",
+    otherField: "legalEntityNote",
+    otherValue: "The consumer brand spans multiple legal entities."
+  },
+  {
+    name: "rejects a whitespace-only legalEntityNote even when legalName is valid",
+    field: "legalEntityNote",
+    value: "   ",
+    otherField: "legalName",
+    otherValue: "Sample Brand Holdings Ltd."
+  }
+].forEach(({ name, field, value, otherField, otherValue }) => {
+  test(name, () => {
+    const invalidProfile = structuredClone(profile);
+    invalidProfile[field] = value;
+    invalidProfile[otherField] = otherValue;
+
+    const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+    assert.match(
+      errors,
+      new RegExp(`${field} must be a non-empty string when provided`, "i")
+    );
+    assert.doesNotMatch(errors, /legalName or legalEntityNote is required/i);
+  });
+});
+
+test("an invalid optional legal entity value does not satisfy the either-or requirement", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.legalName = { entity: "Sample Brand Holdings Ltd." };
+  delete invalidProfile.legalEntityNote;
+
+  const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+  assert.match(errors, /legalName must be a non-empty string when provided/i);
+  assert.match(errors, /legalName or legalEntityNote is required/i);
+});
+
 test("requires three unique valid HTTP(S) sources", () => {
   const incompleteProfile = structuredClone(profile);
   incompleteProfile.sources = incompleteProfile.sources.slice(0, 2);

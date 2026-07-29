@@ -74,8 +74,15 @@ function brandProfilesDirectory() {
   return path.join(process.cwd(), "content", "brands");
 }
 
+export function normalizeOptionalBrandText(value: unknown): string | undefined {
+  if (typeof value !== "string") return undefined;
+
+  const normalized = value.trim();
+  return normalized.length > 0 ? normalized : undefined;
+}
+
 function hasText(value: unknown): value is string {
-  return typeof value === "string" && value.trim().length > 0;
+  return normalizeOptionalBrandText(value) !== undefined;
 }
 
 function isValidDate(value: unknown) {
@@ -165,7 +172,16 @@ export function validateBrandProfile(profile: BrandProfile, articles: BrandTagge
     }
   }
 
-  if (!hasText(candidate.legalName) && !hasText(candidate.legalEntityNote)) {
+  const legalName = normalizeOptionalBrandText(candidate.legalName);
+  const legalEntityNote = normalizeOptionalBrandText(candidate.legalEntityNote);
+
+  if (candidate.legalName !== undefined && !legalName) {
+    errors.push("legalName must be a non-empty string when provided.");
+  }
+  if (candidate.legalEntityNote !== undefined && !legalEntityNote) {
+    errors.push("legalEntityNote must be a non-empty string when provided.");
+  }
+  if (!legalName && !legalEntityNote) {
     errors.push("legalName or legalEntityNote is required.");
   }
 
@@ -374,6 +390,7 @@ export function buildBrandPageSchemas(
 ): object[] {
   const { profile } = data;
   const pageUrl = `${siteUrl}/brands/${profile.slug}`;
+  const legalName = normalizeOptionalBrandText(profile.legalName);
 
   return [
     {
@@ -393,7 +410,7 @@ export function buildBrandPageSchemas(
       "@id": "#brand",
       "@type": "Organization",
       name: profile.name,
-      ...(hasText(profile.legalName) ? { legalName: profile.legalName } : {}),
+      ...(legalName ? { legalName } : {}),
       url: profile.officialWebsite
     },
     {

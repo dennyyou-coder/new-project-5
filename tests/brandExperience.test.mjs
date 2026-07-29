@@ -109,6 +109,19 @@ test("brand detail schema omits legalName when the profile only has a legal enti
   });
 });
 
+test("brand detail schema trims a valid legal name before emitting JSON-LD", () => {
+  const paddedProfile = structuredClone(profile);
+  paddedProfile.legalName = "  Sample Brand Holdings Ltd.  ";
+
+  const schemas = buildBrandPageSchemas({
+    profile: paddedProfile,
+    primaryArticles: [],
+    relatedArticles: []
+  }, "https://worldcleanbiz.com");
+
+  assert.equal(schemas[1].legalName, "Sample Brand Holdings Ltd.");
+});
+
 test("brand developments sort by parsed timestamps instead of lexical date order", () => {
   const developments = [
     {
@@ -210,12 +223,21 @@ test("brand hero labels legal names and multi-entity scope notes separately", ()
 
   assert.match(
     hero,
-    /\{profile\.legalName \? \([\s\S]*?<dt>Legal name<\/dt>[\s\S]*?<dd>\{profile\.legalName\}<\/dd>[\s\S]*?\) : null\}/
+    /const legalName = normalizeOptionalBrandText\(profile\.legalName\)/
   );
   assert.match(
     hero,
-    /\{profile\.legalEntityNote \? \([\s\S]*?<dt>Legal entity scope<\/dt>[\s\S]*?<dd>\{profile\.legalEntityNote\}<\/dd>[\s\S]*?\) : null\}/
+    /const legalEntityNote = normalizeOptionalBrandText\(profile\.legalEntityNote\)/
   );
+  assert.match(
+    hero,
+    /\{legalName \? \([\s\S]*?<dt>Legal name<\/dt>[\s\S]*?<dd>\{legalName\}<\/dd>[\s\S]*?\) : null\}/
+  );
+  assert.match(
+    hero,
+    /\{legalEntityNote \? \([\s\S]*?<dt>Legal entity scope<\/dt>[\s\S]*?<dd>\{legalEntityNote\}<\/dd>[\s\S]*?\) : null\}/
+  );
+  assert.doesNotMatch(hero, /\{profile\.(?:legalName|legalEntityNote) \?/);
 });
 
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {

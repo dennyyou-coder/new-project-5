@@ -1,5 +1,8 @@
 import Link from "next/link";
-import type { BrandProfile } from "@/lib/brands";
+import {
+  normalizeOptionalBrandText,
+  type BrandProfile
+} from "@/lib/brands";
 
 function formatDate(value: string) {
   return new Intl.DateTimeFormat("en", {
@@ -9,6 +12,9 @@ function formatDate(value: string) {
 }
 
 export function BrandHero({ profile }: { profile: BrandProfile }) {
+  const legalName = normalizeOptionalBrandText(profile.legalName);
+  const legalEntityNote = normalizeOptionalBrandText(profile.legalEntityNote);
+
   return (
     <section className="guides-category-hero">
       <div className="insights-page-container">
@@ -43,16 +49,16 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
         </div>
 
         <dl className="brand-snapshot-grid">
-          {profile.legalName ? (
+          {legalName ? (
             <div>
               <dt>Legal name</dt>
-              <dd>{profile.legalName}</dd>
+              <dd>{legalName}</dd>
             </div>
           ) : null}
-          {profile.legalEntityNote ? (
+          {legalEntityNote ? (
             <div>
               <dt>Legal entity scope</dt>
-              <dd>{profile.legalEntityNote}</dd>
+              <dd>{legalEntityNote}</dd>
             </div>
           ) : null}
           <div>
