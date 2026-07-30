@@ -577,6 +577,14 @@ test("all local official logo files decode as transparent WebP images", async ()
     assert.ok(decoded.data.length > 0, `${candidate.slug} logo must decode to pixels`);
     assert.ok(decoded.info.width >= 600, `${candidate.slug} logo must be at least 600 px wide`);
     assert.ok(decoded.info.height > 0, `${candidate.slug} logo must have a positive height`);
+    const alphaChannelIndex = decoded.info.channels - 1;
+    assert.equal(
+      decoded.data.some(
+        (value, index) => index % decoded.info.channels === alphaChannelIndex && value < 255
+      ),
+      true,
+      `${candidate.slug} logo must contain transparent pixels`
+    );
   }
 });
 
