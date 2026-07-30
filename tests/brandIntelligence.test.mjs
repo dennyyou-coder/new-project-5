@@ -758,6 +758,40 @@ test("verified founders and current leaders use complete local portrait assets w
   }
 });
 
+test("Tineco uses a verified founder portrait without duplicating the leadership table", async () => {
+  const candidate = getBrandProfiles().find(({ slug }) => slug === "tineco");
+  assert.ok(candidate, "tineco profile must exist");
+
+  const { featuredLeader, tableLeaders } = partitionFeaturedLeadership(
+    candidate.leadership
+  );
+  assert.ok(featuredLeader, "tineco must expose one featured founder");
+  assert.equal(featuredLeader.name, "Qian Dongqi");
+  assert.equal(
+    featuredLeader.portrait.src,
+    "/images/brands/tineco/founder-qian-dongqi.webp"
+  );
+  assert.ok(featuredLeader.portrait.alt.includes("Qian Dongqi"));
+  assert.ok(featuredLeader.portrait.credit.trim().length > 0);
+  assert.match(featuredLeader.portrait.sourceUrl, /^https:\/\//);
+  assert.equal(
+    tableLeaders.some((leader) => leader.name === featuredLeader.name),
+    false,
+    "tineco featured founder must not be repeated in leadership table rows"
+  );
+
+  const portraitPath = path.join(
+    process.cwd(),
+    "public",
+    featuredLeader.portrait.src
+  );
+  assert.equal(fs.existsSync(portraitPath), true, "tineco portrait must exist");
+  const metadata = await sharp(portraitPath).metadata();
+  assert.equal(metadata.format, "webp", "tineco portrait must be WebP");
+  assert.equal(metadata.width, 720, "tineco portrait width");
+  assert.equal(metadata.height, 840, "tineco portrait height");
+});
+
 test("all local official logo files decode as transparent WebP images", async () => {
   for (const candidate of getBrandProfiles()) {
     const logoPath = path.join(process.cwd(), "public", candidate.logoImage);

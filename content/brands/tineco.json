@@ -45,6 +45,17 @@
   },
   "leadership": [
     {
+      "name": "Qian Dongqi",
+      "role": "Founder of Tineco",
+      "context": "Tineco's official Chinese company profile identifies Qian Dongqi as founder of the Tineco brand.",
+      "portrait": {
+        "src": "/images/brands/tineco/founder-qian-dongqi.webp",
+        "alt": "Qian Dongqi, founder of Tineco",
+        "credit": "Shanghai Securities News / CNStock; cropped by World Clean Biz",
+        "sourceUrl": "https://company.cnstock.com/company/scp_gsxw/202205/4885270.htm"
+      }
+    },
+    {
       "name": "Ling Leng",
       "role": "CEO of Tineco",
       "context": "Tineco's June 2025 release identifies Ling Leng as CEO; an Ecovacs filing says he has served as general manager of the Tineco brand since October 2020."
@@ -171,6 +182,14 @@
       "accessedAt": "2026-07-30"
     },
     {
+      "id": "tineco-founder-profile-cn",
+      "title": "添可品牌简介",
+      "publisher": "Tineco",
+      "url": "https://www.tineco.cn/news/detail-28.html",
+      "publishedAt": "2020-01-03",
+      "accessedAt": "2026-07-30"
+    },
+    {
       "id": "tineco-floor-washer-leadership",
       "title": "Tineco Recognized as Global Leader in Emerging Floor Washer Category",
       "publisher": "Tineco",
@@ -204,5 +223,5 @@
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T01:06:01+08:00"
+  "lastModified": "2026-07-30T19:55:10+08:00"
 }
