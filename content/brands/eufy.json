@@ -1,0 +1,175 @@
+{
+  "status": "published",
+  "slug": "eufy",
+  "name": "Eufy",
+  "aliases": ["eufy", "eufy Clean", "eufy Security", "Anker eufy"],
+  "legalName": "Anker Innovations Technology Co., Ltd.",
+  "legalEntityNote": "Eufy is a brand within Anker Innovations. Regional Anker entities, ecommerce sellers and product-level manufacturers may carry different legal responsibilities.",
+  "officialWebsite": "https://www.eufy.com/",
+  "headline": "Eufy ownership, robot vacuums, smart-home portfolio and Anker group structure",
+  "description": "A source-backed profile separating the Eufy brand from listed parent Anker Innovations, with cleaning products, smart-home categories, manufacturing evidence and market-specific buyer checks.",
+  "metaDescription": "Eufy brand profile: Anker Innovations ownership, robot vacuums, smart home products, manufacturing, channels and competitive strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Eufy or Anker Innovations. Group revenue, regional entities and model-specific manufacturer records are identified separately and should not be generalized to every Eufy product.",
+  "headquarters": "Changsha, Hunan, China (Anker Innovations group headquarters)",
+  "founded": "Eufy was introduced as an Anker smart-home brand in 2016; Anker Innovations was founded in 2011.",
+  "heroImage": "/images/brands/eufy/hero-omni-s2.webp",
+  "heroImageAlt": "Eufy Omni S2 robot vacuum and automated dock",
+  "logoImage": "/images/brands/eufy/logo.webp",
+  "logoImageAlt": "Eufy logo",
+  "logoSourceUrl": "https://www.eufy.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/who-owns-eufy-anker-smart-home-cover.webp",
+      "alt": "Company map connecting Eufy with Anker Innovations and its smart-home categories",
+      "caption": "This map separates the Eufy consumer brand from listed parent Anker Innovations and the group's other brands."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/eufy-commercial-responsibility-chain.webp",
+      "alt": "Eufy commercial responsibility chain from brand owner to factory, seller and warranty provider",
+      "caption": "This chain shows why brand ownership alone does not identify the manufacturer, seller, importer or warranty provider for a specific Eufy purchase."
+    }
+  ],
+  "ownership": {
+    "summary": "Eufy is a smart-home brand within Shenzhen-listed Anker Innovations Technology Co., Ltd., not an independent listed company. Anker's 2025 annual report describes its smart-innovation business as centered on Eufy, while the group privacy notice explicitly includes Eufy among Anker's brands. At 31 December 2025, founder Yang Meng held 43.40% of Anker Innovations and acted in concert with He Li, who held 3.64%; this shareholder structure belongs to the listed parent, not to a separate Eufy company.",
+    "parentCompany": "Anker Innovations Technology Co., Ltd."
+  },
+  "leadership": [
+    {
+      "name": "Steven Yang (Yang Meng)",
+      "role": "Founder and Chairman of Anker Innovations",
+      "context": "Anker's corporate history identifies Yang Meng as founder; the parent-company role should not be mistaken for a separate Eufy legal-entity appointment."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Robot vacuums and automated docks",
+      "positioning": "Eufy Clean systems span entry robots, self-emptying models and premium Omni platforms using model-dependent obstacle sensing, roller mopping and dock automation.",
+      "buyerRelevance": "Requires model-level comparison of navigation, carpet behavior, mop architecture, bags, consumables, app region and service."
+    },
+    {
+      "name": "Robotic lawn care",
+      "positioning": "Eufy has extended its home-robotics position from indoor floorcare into automated mowing.",
+      "buyerRelevance": "Adds outdoor installation, positioning, terrain, winter storage and local dealer-service requirements."
+    },
+    {
+      "name": "Home security",
+      "positioning": "Cameras, video doorbells, smart locks, NVR systems and local-storage hubs remain a major part of the Eufy smart-home portfolio.",
+      "buyerRelevance": "Creates a broader connected-home account but introduces separate privacy, network, subscription and installation checks from cleaning products."
+    },
+    {
+      "name": "Baby and family-care products",
+      "positioning": "Monitors, breast pumps and related family-care devices extend Eufy beyond cleaning and security.",
+      "buyerRelevance": "Requires category-specific compliance, privacy and after-sales programs rather than one universal Eufy offer."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Anker's annual report presents Eufy as part of the parent group's smart-innovation business and describes group-level research, sourcing and international operations.",
+      "scope": "Listed parent and business segment",
+      "buyerCheck": "Do not treat segment disclosure as the manufacturer record for an exact robot vacuum or security device."
+    },
+    {
+      "evidence": "Product labels, declarations and manuals can identify Anker Innovations entities, regional responsible parties and model-specific manufacturers differently.",
+      "scope": "Model and market documentation",
+      "buyerCheck": "Match the legal manufacturer, factory, importer and certification holder to the exact model and destination market."
+    },
+    {
+      "evidence": "Eufy's app, website and support services operate within Anker's wider digital and regional-entity framework.",
+      "scope": "Digital services and regional operations",
+      "buyerCheck": "Verify the app provider, data controller, contracting seller and warranty entity for the target country."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Eufy sells through official country sites, major ecommerce marketplaces and retail partners in multiple regions.",
+      "scope": "Omnichannel consumer distribution",
+      "buyerCheck": "Confirm seller authorization, market-specific model suffix and warranty coverage before purchase."
+    },
+    {
+      "evidence": "The Eufy portfolio and product availability differ between country sites, particularly across cleaning, security and emerging outdoor categories.",
+      "scope": "Country-specific assortment",
+      "buyerCheck": "Do not assume that a product, app function, accessory or service program transfers between regions."
+    },
+    {
+      "evidence": "Anker group entities may operate websites and services while a retailer or distributor becomes the invoice seller.",
+      "scope": "Contract and after-sales responsibility",
+      "buyerCheck": "Record the seller, importer, warranty provider and repair route in the purchase documentation."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Eufy benefits from Anker's global ecommerce capability, consumer-electronics execution and a smart-home portfolio that can connect cleaning with security and family-care accounts. Its robot-vacuum challenge is category depth: Roborock, ECOVACS, Dreame and Narwal have moved quickly in navigation, mopping and dock automation, so Eufy must translate parent-company scale into repeated floorcare innovation and dependable regional service.",
+    "competitorSlugs": ["roborock", "ecovacs", "dreame", "narwal"]
+  },
+  "developments": [
+    {
+      "date": "2026-04-10",
+      "title": "Anker reports its 2025 smart-innovation business",
+      "summary": "The listed parent's annual report continues to place Eufy at the center of Anker's smart-innovation segment and provides the current shareholder boundary.",
+      "sourceIds": ["anker-annual-2025"]
+    },
+    {
+      "date": "2025-09-04",
+      "title": "Anker presents Eufy within its multi-brand portfolio",
+      "summary": "Anker's IFA program positioned Anker, Eufy and Soundcore as distinct brands under one group strategy.",
+      "sourceIds": ["anker-ifa-2025"]
+    },
+    {
+      "date": "2016",
+      "title": "Anker introduces the Eufy smart-home brand",
+      "summary": "Eufy began as Anker's smart-home brand and later expanded from early household devices into cleaning, security and family-care systems.",
+      "sourceIds": ["eufy-about"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "anker-annual-2025",
+      "title": "Anker Innovations 2025 Annual Report",
+      "publisher": "Anker Innovations Technology Co., Ltd.",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-10/1225090973.PDF",
+      "publishedAt": "2026-04-10",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "eufy-about",
+      "title": "About Eufy",
+      "publisher": "Eufy",
+      "url": "https://www.eufy.com/about",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "anker-history",
+      "title": "Anker Innovations Story",
+      "publisher": "Anker Innovations",
+      "url": "https://ifa.anker-in.com/story",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "anker-ifa-2025",
+      "title": "Anker Innovations Unveils Next-Generation Products at IFA 2025",
+      "publisher": "Anker Innovations",
+      "url": "https://www.anker-in.com/posts/anker-innovations-unveils-next-generation-products-powered-by-advanced-ai-robotics-and-ultimate-innovation",
+      "publishedAt": "2025-09-04",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "anker-privacy",
+      "title": "Privacy Notice",
+      "publisher": "Anker Innovations",
+      "url": "https://www.anker-in.com/posts/privacy-policy",
+      "publishedAt": "2025-03-24",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "eufy-products",
+      "title": "Eufy Official Product Portfolio",
+      "publisher": "Eufy",
+      "url": "https://www.eufy.com/",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T23:20:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T23:20:00+08:00"
+}

@@ -1,0 +1,189 @@
+{
+  "status": "published",
+  "slug": "karcher",
+  "name": "Kärcher",
+  "aliases": ["Kaercher", "Karcher", "Alfred Kärcher", "Kärcher Professional"],
+  "legalName": "Alfred Kärcher SE & Co. KG",
+  "legalEntityNote": "Alfred Kärcher SE & Co. KG is the principal German operating entity and Kärcher SE is its general partner. Regional subsidiaries, product businesses and sales entities have separate responsibilities.",
+  "officialWebsite": "https://www.kaercher.com/int/",
+  "headline": "Kärcher ownership, professional cleaning portfolio, manufacturing network and channels",
+  "description": "A source-backed profile of Kärcher's family ownership, professional management, consumer and commercial cleaning portfolio, global production network and route to market.",
+  "metaDescription": "Kärcher brand profile: family ownership, management, pressure washers, professional cleaning equipment, factories, dealers, service and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Kärcher. Group statements, regional-company roles and factory disclosures are identified separately and must not be generalized to every product or market.",
+  "headquarters": "Winnenden, Baden-Württemberg, Germany",
+  "founded": "1935",
+  "heroImage": "/images/brands/karcher/hero-pressure-washer.webp",
+  "heroImageAlt": "Kärcher professional pressure washer on the brand's yellow background",
+  "logoImage": "/images/brands/karcher/logo.webp",
+  "logoImageAlt": "Kärcher logo",
+  "logoSourceUrl": "https://www.kaercher.com/int/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/karcher-family-group-manufacturing-map.webp",
+      "alt": "Map of Kärcher family ownership, management and manufacturing responsibilities",
+      "caption": "This map separates Kärcher's ownership and governance from regional companies, production sites and model-level responsibility."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/who-owns-karcher-family-cover.webp",
+      "alt": "Kärcher family-company and professional cleaning equipment overview",
+      "caption": "Kärcher spans consumer, professional, industrial and municipal cleaning rather than operating as a pressure-washer-only brand."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/freudenberg-nilfisk-vs-karcher.webp",
+      "alt": "Comparison of Freudenberg and Nilfisk with Kärcher in professional cleaning",
+      "caption": "This comparison places Kärcher against another large professional-cleaning platform and highlights differences in ownership and channel structure."
+    }
+  ],
+  "ownership": {
+    "summary": "Kärcher is a privately held German family business. Alfred Kärcher SE & Co. KG is the principal German operating entity, with Kärcher SE as its general partner. The official materials reviewed do not publish a current shareholder-percentage table. A professional management board led by Hartmut Jenner runs the group, while Franziska Kärcher chairs the supervisory board; those governance roles should not be treated as disclosures of personal equity percentages.",
+    "parentCompany": "Privately owned Kärcher family group"
+  },
+  "leadership": [
+    {
+      "name": "Hartmut Jenner",
+      "role": "CEO and Chairman of the Management Board",
+      "context": "Kärcher's international imprint identifies Hartmut Jenner as CEO and chairman of the management board."
+    },
+    {
+      "name": "Franziska Kärcher",
+      "role": "Chairwoman of the Supervisory Board",
+      "context": "Kärcher's international imprint identifies Franziska Kärcher as chairwoman of the supervisory board; the role represents governance rather than a disclosed individual ownership percentage."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Pressure washers and outdoor cleaning",
+      "positioning": "Consumer and professional cold- and hot-water pressure washers anchor the brand, supported by accessories and application-specific systems.",
+      "buyerRelevance": "Requires matching pressure, flow, duty cycle, power supply, accessories, detergent and service capability to the application."
+    },
+    {
+      "name": "Professional floorcare and vacuum systems",
+      "positioning": "Scrubber dryers, sweepers, wet-and-dry vacuums, carpet systems and industrial vacuums serve commercial and industrial accounts.",
+      "buyerRelevance": "Moves the decision from a single machine to fleet uptime, batteries, consumables, training, parts and service."
+    },
+    {
+      "name": "Home cleaning appliances",
+      "positioning": "Window vacuums, steam cleaners, wet-and-dry vacuums, floor cleaners and other home products extend the yellow Kärcher brand into indoor cleaning.",
+      "buyerRelevance": "Consumer ranges may use different channels, warranties and service routes from Kärcher Professional equipment."
+    },
+    {
+      "name": "Autonomous, municipal and industrial systems",
+      "positioning": "KIRA autonomous scrubbers, municipal machines, vehicle-wash systems and industrial solutions broaden the group beyond portable appliances.",
+      "buyerRelevance": "Enterprise deployments require site assessment, software and safety integration, service-level planning and clear regional responsibility."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Kärcher's sustainability reporting lists a multi-country production network across Germany and other locations in Europe, the Americas and Asia.",
+      "scope": "Group production network",
+      "buyerCheck": "Do not infer the factory or origin of a particular machine from the group country list; verify the model label and technical documents."
+    },
+    {
+      "evidence": "Different Kärcher plants and group companies specialize in different product families, components and regional functions.",
+      "scope": "Site and company specialization",
+      "buyerCheck": "Match the audited facility, manufacturer, exporter and serial-number range to the contracted SKU."
+    },
+    {
+      "evidence": "Kärcher's group brands and subsidiaries can use their own legal names even when they sit within the family-owned group.",
+      "scope": "Group-brand and legal-entity boundary",
+      "buyerCheck": "Identify the exact contracting party, trademark owner, manufacturer, importer and warranty provider."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Kärcher operates country websites, regional subsidiaries and direct commercial organizations across a broad international network.",
+      "scope": "Official regional organization",
+      "buyerCheck": "Confirm the local seller, importer, price terms, warranty and after-sales entity for the destination market."
+    },
+    {
+      "evidence": "Professional equipment is sold through direct account teams and specialist dealers, while consumer products also use retail and ecommerce channels.",
+      "scope": "Channel segmentation",
+      "buyerCheck": "Confirm whether the account is authorized for the relevant consumer or professional product family and service level."
+    },
+    {
+      "evidence": "Kärcher promotes a global service network covering maintenance, repairs, spare parts and fleet support.",
+      "scope": "After-sales network",
+      "buyerCheck": "Verify local technician coverage, response time, parts availability and exclusions in writing rather than relying on a global network figure."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Kärcher's advantage is the combination of a globally recognized consumer brand with deep professional, industrial and municipal cleaning capabilities. That breadth supports cross-category accounts and service-led relationships. Its principal buyer-side complexity is organizational: yellow consumer products, professional fleets, regional companies, factories and specialist group brands do not always share the same commercial route. The strongest purchasing process therefore pairs brand confidence with model-, entity- and service-level verification.",
+    "competitorSlugs": ["miele", "hoover", "bissell"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "Kärcher reports continued global scale",
+      "summary": "The company reported 2025 revenue of EUR 3.483 billion, about 17,000 employees and operations through 170 companies in 87 countries.",
+      "sourceIds": ["karcher-company"]
+    },
+    {
+      "date": "1959",
+      "title": "Irene Kärcher continues the family business",
+      "summary": "After Alfred Kärcher's death, Irene Kärcher led the company and developed its international growth.",
+      "sourceIds": ["karcher-about"]
+    },
+    {
+      "date": "1950",
+      "title": "Kärcher develops a European hot-water pressure cleaner",
+      "summary": "The DS 350 steam-jet cleaner established the high-pressure cleaning platform associated with the brand.",
+      "sourceIds": ["karcher-about"]
+    },
+    {
+      "date": "1935",
+      "title": "Alfred Kärcher establishes the company",
+      "summary": "Alfred Kärcher founded the enterprise in Stuttgart-Bad Cannstatt before it later moved to Winnenden.",
+      "sourceIds": ["karcher-about"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "karcher-about",
+      "title": "About Kärcher",
+      "publisher": "Kärcher",
+      "url": "https://www.kaercher.com/int/inside-kaercher/company/about-kaercher.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "karcher-company",
+      "title": "Kärcher Company",
+      "publisher": "Kärcher",
+      "url": "https://www.kaercher.com/int/inside-kaercher/company.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "karcher-imprint",
+      "title": "International Imprint",
+      "publisher": "Alfred Kärcher SE & Co. KG",
+      "url": "https://www.kaercher.com/int/inside-kaercher/company/legal/imprint.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "karcher-sustainability-numbers",
+      "title": "Sustainability in Numbers",
+      "publisher": "Kärcher",
+      "url": "https://www.kaercher.com/int/inside-kaercher/sustainability/sustainability-in-numbers.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "karcher-service",
+      "title": "Kärcher Service",
+      "publisher": "Kärcher",
+      "url": "https://www.kaercher.com/int/support/service.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "karcher-products",
+      "title": "Kärcher Products",
+      "publisher": "Kärcher",
+      "url": "https://www.kaercher.com/int/",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T23:40:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T23:40:00+08:00"
+}

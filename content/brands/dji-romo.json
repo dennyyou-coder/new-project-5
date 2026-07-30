@@ -1,0 +1,168 @@
+{
+  "status": "published",
+  "slug": "dji-romo",
+  "name": "DJI ROMO",
+  "aliases": ["ROMO", "DJI Robot Vacuum", "DJI ROMO P", "DJI ROMO A", "DJI ROMO S"],
+  "legalName": "SZ DJI Technology Co., Ltd.",
+  "legalEntityNote": "This profile covers DJI's ROMO cleaning-robot business. Regional DJI entities, ecommerce sellers and product-responsibility records may differ by market.",
+  "officialWebsite": "https://www.romo.tech/romo/",
+  "headline": "DJI ROMO ownership, cleaning-robot platform, product strategy and support boundaries",
+  "description": "A source-backed profile of DJI's ROMO robot-vacuum business, current platform, company boundary, product evidence, regional availability and buyer checks.",
+  "metaDescription": "DJI ROMO brand profile: DJI relationship, ROMO robot vacuums, navigation, mopping, docks, channels, support and competitive strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with DJI or ROMO. This page is scoped to DJI's cleaning-robot business; statements about ROMO products, regional support and model documentation must not be generalized to DJI's drone or camera businesses.",
+  "headquarters": "Shenzhen, Guangdong, China (DJI group headquarters)",
+  "founded": "ROMO launched as DJI's cleaning-robot brand in 2025; DJI was founded in 2006.",
+  "heroImage": "/images/brands/dji-romo/hero-romo-p.webp",
+  "heroImageAlt": "DJI ROMO P transparent robot vacuum and automated dock in a modern interior",
+  "logoImage": "/images/brands/dji-romo/logo.webp",
+  "logoImageAlt": "ROMO logo",
+  "logoSourceUrl": "https://www.romo.tech/romo/",
+  "contentVisuals": [
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/dji-romo-p-vs-roborock-saros-10r.webp",
+      "alt": "System comparison of DJI ROMO P and Roborock Saros 10R",
+      "caption": "This comparison places ROMO's perception, rotary-mop and dock architecture against an established premium robot-vacuum platform."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/dji-romo-p-vs-ecovacs-deebot-x11.webp",
+      "alt": "System comparison of DJI ROMO P and ECOVACS DEEBOT X11",
+      "caption": "This map helps buyers compare ROMO's bagged dock and rotary mops with a roller-mop and bagless-cyclone alternative."
+    }
+  ],
+  "ownership": {
+    "summary": "ROMO is a DJI cleaning-robot brand and product business, not a separate public company. Official ROMO manuals, release notes and websites carry DJI branding and copyright notices. DJI is privately held and founded by Frank Wang; the official materials reviewed do not provide a current public shareholder table for the private group. Brand ownership does not by itself identify the factory, importer, seller or warranty provider for every ROMO market.",
+    "parentCompany": "DJI"
+  },
+  "leadership": [
+    {
+      "name": "Frank Wang (Wang Tao)",
+      "role": "Founder and CEO of DJI",
+      "context": "DJI's corporate materials identify Frank Wang as founder and CEO. This parent-company role should not be presented as a separate ROMO legal-entity appointment."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "ROMO P series",
+      "positioning": "Transparent flagship robots and docks emphasizing multi-sensor perception, fine-object avoidance, strong airflow and automated hygiene functions.",
+      "buyerRelevance": "Targets premium accounts where obstacle handling and design matter, but transparent housings, consumables, dock maintenance and local service need evaluation."
+    },
+    {
+      "name": "ROMO A series",
+      "positioning": "A mixed transparent-and-white platform carrying much of the same cleaning architecture at a different design and price position.",
+      "buyerRelevance": "Requires model-specific comparison because visible enclosure differences do not necessarily indicate a different core cleaning system."
+    },
+    {
+      "name": "ROMO S series",
+      "positioning": "The white-bodied entry route into the ROMO platform.",
+      "buyerRelevance": "Creates a lower price tier but still depends on app-region support, dock consumables and authorized service."
+    },
+    {
+      "name": "App, accessories and consumables",
+      "positioning": "ROMO Home software, dust bags, brushes, mops, cleaning solution and maintenance parts complete the ownership system.",
+      "buyerRelevance": "Long-term value depends on regional app access, consumable availability, firmware support and repair parts rather than robot specifications alone."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "The official ROMO user manual, release notes and service materials identify the products and software as DJI ROMO and carry DJI copyright and support contacts.",
+      "scope": "Brand and product documentation",
+      "buyerCheck": "Use the exact market manual, rating label and declaration to identify the responsible legal entity for the purchased model."
+    },
+    {
+      "evidence": "The reviewed public materials do not establish one physical assembly factory for every ROMO model, generation and destination market.",
+      "scope": "Factory and country-of-origin boundary",
+      "buyerCheck": "Verify the factory, country of origin, exporter and batch traceability from product and shipment documents."
+    },
+    {
+      "evidence": "DJI says ROMO's perception and path-planning development draws on experience from its wider robotics and drone technology base.",
+      "scope": "Group technology transfer",
+      "buyerCheck": "Do not convert a technology-origin statement into a claim that the same team, factory or service network handles every DJI product."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "ROMO's official website provides market and language selection, product pages, downloads, firmware notes and after-sales information.",
+      "scope": "Official regional digital channel",
+      "buyerCheck": "Confirm that the exact model, app, consumables and warranty service are officially supported in the destination market."
+    },
+    {
+      "evidence": "Product availability, pricing, plumbing options and bundles differ across ROMO markets and generations.",
+      "scope": "Market-specific assortment",
+      "buyerCheck": "Match the SKU, plug, water system, app region and included accessories to the purchase contract."
+    },
+    {
+      "evidence": "Retailers and marketplaces may sell ROMO outside a buyer's normal regional support route.",
+      "scope": "Third-party sales channels",
+      "buyerCheck": "Verify seller authorization, importer, serial-number eligibility, returns, parts and written warranty before cross-border purchase."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: ROMO gives DJI a credible entry into premium robot vacuums by transferring perception, path-planning and industrial-design strengths into a high-attention consumer product. Fine-object avoidance and transparent design differentiate the launch, but floorcare is a repeated-use service category: mopping, hair handling, dock hygiene, consumables, firmware and repair response will determine durable competitiveness more than DJI's brand halo alone.",
+    "competitorSlugs": ["roborock", "ecovacs", "narwal", "dreame", "eufy"]
+  },
+  "developments": [
+    {
+      "date": "2026-04-13",
+      "title": "ROMO continues firmware development",
+      "summary": "Official release notes documented continued feature, language and stability updates across the ROMO platform.",
+      "sourceIds": ["romo-release-notes-2026"]
+    },
+    {
+      "date": "2025-11-03",
+      "title": "ROMO expands software and regional functions",
+      "summary": "The release notes added languages, network-region switching, voice control and cleaning-workflow changes.",
+      "sourceIds": ["romo-release-notes-2025"]
+    },
+    {
+      "date": "2025-08-06",
+      "title": "DJI launches the ROMO cleaning-robot platform",
+      "summary": "The initial A, S and P range brought DJI into robot vacuums with multi-sensor navigation, rotary mopping and automated docks.",
+      "sourceIds": ["romo-official", "romo-manual"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "romo-official",
+      "title": "DJI ROMO Official Website",
+      "publisher": "DJI ROMO",
+      "url": "https://www.romo.tech/romo/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "romo-manual",
+      "title": "DJI ROMO User Manual",
+      "publisher": "DJI",
+      "url": "https://dl.romo.tech/downloads/romo/20260409/ROMO_UM_EN_20260.pdf",
+      "publishedAt": "2026-04-09",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "romo-release-notes-2026",
+      "title": "DJI ROMO Release Notes",
+      "publisher": "DJI ROMO",
+      "url": "https://dl.romo.tech/downloads/romo/20260413/ROMO_release_notes_CHT_202604.pdf",
+      "publishedAt": "2026-04-13",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "romo-release-notes-2025",
+      "title": "DJI ROMO Release Notes",
+      "publisher": "DJI ROMO",
+      "url": "https://dl.romo.tech/downloads/romo/20251103/ROMO_release_notes_EN_20251103.pdf",
+      "publishedAt": "2025-11-03",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dji-about",
+      "title": "About DJI",
+      "publisher": "DJI",
+      "url": "https://www.dji.com/company",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T23:30:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T23:30:00+08:00"
+}

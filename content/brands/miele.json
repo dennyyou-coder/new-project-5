@@ -1,0 +1,222 @@
+{
+  "status": "published",
+  "slug": "miele",
+  "name": "Miele",
+  "aliases": ["Miele & Cie. KG", "Miele Professional", "Miele floorcare"],
+  "legalName": "Miele & Cie. KG",
+  "legalEntityNote": "Miele & Cie. KG is the principal German entity. Miele Professional is a business unit, while regional subsidiaries, factories and sales companies have distinct operating responsibilities.",
+  "officialWebsite": "https://www.miele.com/en/com/",
+  "headline": "Miele ownership, vacuum portfolio, manufacturing network and family-company strategy",
+  "description": "A source-backed profile of Miele's two-family ownership, management structure, floorcare and appliance portfolio, production network and market channels.",
+  "metaDescription": "Miele brand profile: Miele and Zinkann family ownership, management, vacuums, appliances, Professional products, factories, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Miele. Historical ownership percentages, current group disclosures and factory statements are dated and scoped separately; model origin and local responsibility require product-level verification.",
+  "headquarters": "Gütersloh, North Rhine-Westphalia, Germany",
+  "founded": "1899",
+  "heroImage": "/images/brands/miele/hero-duoflex-hx2.webp",
+  "heroImageAlt": "Miele Duoflex HX2 cordless floor-cleaning system",
+  "logoImage": "/images/brands/miele/logo.webp",
+  "logoImageAlt": "Miele logo",
+  "logoSourceUrl": "https://www.miele.com/en/com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/miele-family-company-manufacturing-map.webp",
+      "alt": "Map of Miele and Zinkann family ownership, management and production responsibilities",
+      "caption": "This map separates the founding families, legal entities, management, business units, regional companies and manufacturing sites."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/miele-duoflex-hx2-floor-washer-comparison.webp",
+      "alt": "Miele Duoflex HX2 floor washer and cordless vacuum system comparison",
+      "caption": "This comparison shows how Miele is extending its cordless platform from dry vacuuming into wet floor cleaning."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/who-owns-miele-family-cover.webp",
+      "alt": "Miele family-company, vacuum and manufacturing overview",
+      "caption": "Miele's premium positioning is supported by family-company continuity, a multi-country production network and a wider appliance and Professional portfolio."
+    }
+  ],
+  "ownership": {
+    "summary": "Miele is privately owned by the Miele and Zinkann founding families. The company's current management page describes around 80 family stakeholders who are direct descendants of founders Carl Miele and Reinhard Zinkann. A 2017 Miele disclosure reported a 51% Miele-family and 49% Zinkann-family split, but the current pages reviewed do not restate a current percentage table. Miele & Cie. KG is managed by two family co-proprietors and four non-family executive directors on an equal executive footing.",
+    "parentCompany": "Privately owned Miele and Zinkann family group"
+  },
+  "leadership": [
+    {
+      "name": "Dr Markus Miele",
+      "role": "Executive Director and Co-Proprietor",
+      "context": "Miele lists Markus Miele as a family co-proprietor and equal-ranking executive director."
+    },
+    {
+      "name": "Dr Reinhard Zinkann",
+      "role": "Executive Director and Co-Proprietor",
+      "context": "Miele lists Reinhard Zinkann as a family co-proprietor and equal-ranking executive director."
+    },
+    {
+      "name": "Rebecca Steinhage",
+      "role": "Executive Director",
+      "context": "Miele's management page assigns responsibility for Human Resources and Corporate Affairs within the equal-ranking executive team."
+    },
+    {
+      "name": "Dr Stefan Breit",
+      "role": "Executive Director",
+      "context": "Miele's management page assigns responsibility for Technology within the equal-ranking executive team."
+    },
+    {
+      "name": "Dr Axel Kniehl",
+      "role": "Executive Director",
+      "context": "Miele's management page assigns responsibility for Marketing and Sales within the equal-ranking executive team."
+    },
+    {
+      "name": "Dr Olaf Bartsch",
+      "role": "Executive Director",
+      "context": "Miele's management page assigns responsibility for Finance and Administration within the equal-ranking executive team."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Vacuum cleaners and cordless floorcare",
+      "positioning": "Bagged and bagless canisters, cordless Triflex and Duoflex systems, robot vacuums and floor-cleaning extensions form Miele's consumer floorcare offer.",
+      "buyerRelevance": "Premium positioning depends on model-specific filtration, batteries, tools, bags, rollers, parts and service availability."
+    },
+    {
+      "name": "Laundry, dishwashing and kitchen appliances",
+      "positioning": "Washing machines, tumble dryers, dishwashers, cooking, refrigeration and coffee systems make Miele a broad premium home-appliance brand.",
+      "buyerRelevance": "The wider installed base supports dealer and service relationships but uses category-specific factories, parts and compliance files."
+    },
+    {
+      "name": "Miele Professional",
+      "positioning": "Commercial laundry, dishwashing, laboratory and medical cleaning and disinfection equipment serve professional customers.",
+      "buyerRelevance": "Professional products require qualification, installation, validation and service arrangements distinct from consumer appliance channels."
+    },
+    {
+      "name": "Digital services, accessories and consumables",
+      "positioning": "Miele app services, detergents, vacuum bags, filters and care products support the installed hardware base.",
+      "buyerRelevance": "Lifecycle value depends on software support and market-specific access to genuine consumables, spare parts and trained service."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Miele's March 2026 business-development page described a global network of 19 production plants and 49 sales and service subsidiaries.",
+      "scope": "Current group network",
+      "buyerCheck": "Do not use the group totals to identify the plant for a specific model; verify the product label and technical file."
+    },
+    {
+      "evidence": "Miele's Bielefeld factory produces vacuum cleaners as well as domestic and professional cleaning and disinfection equipment.",
+      "scope": "Bielefeld site capability",
+      "buyerCheck": "Match the claimed German factory to the exact model, production period and factory record."
+    },
+    {
+      "evidence": "Miele's wholly owned Dongguan factory lists Swing H1, Compact C1, Compact C2 and Complete C2 vacuum-cleaner ranges and uses motors supplied from Euskirchen.",
+      "scope": "Named Dongguan vacuum ranges",
+      "buyerCheck": "Treat this as current range-level evidence, not proof that every Miele vacuum is made in China or Germany."
+    },
+    {
+      "evidence": "Miele's official production directory lists differentiated sites across Germany and other countries, each with distinct product and component roles.",
+      "scope": "Multi-country production directory",
+      "buyerCheck": "Confirm the manufacturer, assembly site, component origin, importer and traceability documents for the contracted SKU."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Miele operates country subsidiaries, direct websites, showrooms, authorized dealers and kitchen-studio relationships.",
+      "scope": "Consumer and premium appliance channels",
+      "buyerCheck": "Confirm the seller's authorization, model-market fit, installation scope and local warranty."
+    },
+    {
+      "evidence": "Miele Professional uses specialist sales, project, service and application-support routes for commercial and institutional customers.",
+      "scope": "Professional channels",
+      "buyerCheck": "Define commissioning, validation, training, uptime, consumables and response obligations in the contract."
+    },
+    {
+      "evidence": "Regional subsidiaries can act as the seller, importer, service provider or digital-service party without changing the group's founding-family ownership.",
+      "scope": "Regional legal responsibility",
+      "buyerCheck": "Identify the exact entity responsible for the order, data service, warranty and after-sales support."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Miele's advantage combines premium brand trust, long family ownership, a broad appliance base, professional applications and significant in-house manufacturing. In floorcare, however, Dyson and fast-moving Chinese brands set a rapid cordless and wet-cleaning feature cycle. Miele must translate durability, filtration, service and system quality into visibly competitive products while avoiding unsupported country-of-origin assumptions across its German and international plants.",
+    "competitorSlugs": ["dyson", "bissell", "hoover", "tineco", "dreame"]
+  },
+  "developments": [
+    {
+      "date": "2026-06-30",
+      "title": "Miele extends Duoflex into active floor washing",
+      "summary": "Miele announced a Duoflex HX2 platform that vacuums, washes and uses an automated cleaning function.",
+      "sourceIds": ["miele-duoflex"]
+    },
+    {
+      "date": "2026-03",
+      "title": "Miele reports a 19-plant global production network",
+      "summary": "The current business-development page described 19 production plants and 49 sales and service subsidiaries.",
+      "sourceIds": ["miele-business"]
+    },
+    {
+      "date": "2009",
+      "title": "Miele takes full ownership of the Dongguan factory",
+      "summary": "The Dongguan site, founded as a joint venture in 1996, became wholly owned by the Miele Group.",
+      "sourceIds": ["miele-dongguan"]
+    },
+    {
+      "date": "1899",
+      "title": "Carl Miele and Reinhard Zinkann found Miele",
+      "summary": "The two founders established the family company, which remains owned by their descendants.",
+      "sourceIds": ["miele-management"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "miele-management",
+      "title": "Miele Management",
+      "publisher": "Miele",
+      "url": "https://www.miele.com/en/com/management-2093.htm",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "miele-about",
+      "title": "About Miele",
+      "publisher": "Miele",
+      "url": "https://www.miele.com/en/com/about-us-2065.htm",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "miele-business",
+      "title": "Business Development",
+      "publisher": "Miele",
+      "url": "https://www.miele.com/en/com/business-development-2094.htm",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "miele-production",
+      "title": "Miele Production Sites",
+      "publisher": "Miele",
+      "url": "https://www.miele.com/en/com/production-sites-2157.htm",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "miele-bielefeld",
+      "title": "Bielefeld Factory",
+      "publisher": "Miele",
+      "url": "https://www.miele.com/en/com/germany-bielefeld-factory-2306.htm",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "miele-dongguan",
+      "title": "Dongguan Factory",
+      "publisher": "Miele",
+      "url": "https://www.miele.com/en/com/china-dongguan-factory-2315.htm",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "miele-duoflex",
+      "title": "Miele Battery Handstick Vacuums, Washes and Cleans Itself",
+      "publisher": "Miele",
+      "url": "https://www.miele.de/de/m/miele-akku-handstick-saugt-wischt-und-reinigt-sich-selbst-8348.htm",
+      "publishedAt": "2026-06-30",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T23:45:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T23:45:00+08:00"
+}

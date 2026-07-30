@@ -558,6 +558,7 @@ test("the release gate validates the exact twenty-two published profiles and app
     "ecovacs-2018-annual-report-signals": ["ecovacs"],
     "ecovacs-at-a-crossroads": ["ecovacs"],
     "ecovacs-invests-in-battery-cell-factory": ["ecovacs"],
+    "freudenberg-acquires-nilfisk": ["karcher"],
     "husqvarna-automower-vs-mammotion-luba": ["husqvarna", "mammotion"],
     "hoover-cleanslate-vs-shark-stainstriker": ["hoover", "shark"],
     "irobot-decline-and-the-new-robot-vacuum-order": ["irobot"],
@@ -567,7 +568,7 @@ test("the release gate validates the exact twenty-two published profiles and app
     "luba-vs-navimow-mammotion-ninebot": ["mammotion", "segway-navimow"],
     "mammotion-luba-vs-yuka-robot-mowers": ["mammotion"],
     "maytronics-robotic-pool-cleaner-reinvention": ["maytronics"],
-    "german-vacuum-brands-in-the-cordless-wave": ["karcher", "miele"],
+    "german-vacuum-brands-in-the-cordless-wave": ["miele"],
     "karcher-hidden-champion-in-cleaning-appliances": ["karcher"],
     "miele-duoflex-hx2-floor-washer": ["miele"],
     "mova-took-me-to-meet-a-celebrity": ["mova"],
@@ -640,8 +641,8 @@ test("the release gate validates the exact twenty-two published profiles and app
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 63);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 83);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 64);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 82);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.deepEqual(
@@ -657,7 +658,6 @@ test("the release gate validates the exact twenty-two published profiles and app
       "dji-romo-p-vs-ecovacs-deebot-x11",
       "dji-romo-p-vs-roborock-saros-10r",
       "dolphin-vs-aiper-maytronics-fluidra",
-      "german-vacuum-brands-in-the-cordless-wave",
       "hoover-cleanslate-vs-shark-stainstriker",
       "husqvarna-automower-vs-mammotion-luba",
       "is-dreame-owned-by-xiaomi",

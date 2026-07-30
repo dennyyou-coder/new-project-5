@@ -1,0 +1,189 @@
+{
+  "status": "published",
+  "slug": "hoover",
+  "name": "Hoover",
+  "aliases": ["Hoover US", "Hoover Europe", "TTI Floor Care North America", "Candy Hoover"],
+  "legalName": "Royal Appliance Mfg. Co. d/b/a TTI Floor Care North America",
+  "legalEntityNote": "The named legal entity applies to the U.S. route. Hoover in Europe operates through Haier Europe's Candy-Hoover structure, so there is no single universal Hoover contracting entity.",
+  "officialWebsite": "https://hoover.com/",
+  "headline": "Hoover ownership, regional brand split, floorcare portfolio and channel responsibility",
+  "description": "A source-backed profile explaining Hoover's TTI North America and Haier Europe ownership split, current floorcare categories, channels and buyer checks.",
+  "metaDescription": "Hoover brand profile: TTI North America and Haier Europe ownership, vacuums, carpet cleaners, channels, service and manufacturing boundaries.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Hoover, TTI, Candy, Haier or Haier Europe. Hoover ownership, products, seller entities and warranties differ by region and must be verified in the target market.",
+  "headquarters": "Charlotte, North Carolina, United States (TTI Floor Care North America); European Hoover operations sit within Haier Europe.",
+  "founded": "1908 brand and company origin, following Murray Spangler's 1907 suction-sweeper invention.",
+  "heroImage": "/images/brands/hoover/hero-cleanslate.webp",
+  "heroImageAlt": "Hoover CleanSlate portable carpet and upholstery spot cleaner",
+  "logoImage": "/images/brands/hoover/logo.webp",
+  "logoImageAlt": "Hoover logo",
+  "logoSourceUrl": "https://hoover.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/hoover-ownership-timeline-tti-haier-candy.webp",
+      "alt": "Timeline showing Hoover's ownership split between TTI and Haier's Candy business",
+      "caption": "This timeline explains why TTI ownership in North America and Haier ownership in Europe are both correct within different regional boundaries."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/bissell-hoover-portable-spot-cleaner-architecture.webp",
+      "alt": "Portable spot-cleaner architecture comparison between BISSELL and Hoover",
+      "caption": "This comparison places Hoover CleanSlate within the portable extraction workflow that buyers should evaluate."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/hoover-cleanslate-vs-shark-stainstriker.webp",
+      "alt": "Hoover CleanSlate and Shark StainStriker system comparison",
+      "caption": "This map compares Hoover's tools, tanks, hose cleaning and parts route with a competing spot-cleaner system."
+    }
+  ],
+  "ownership": {
+    "summary": "Hoover does not have one simple worldwide owner. In North America, Hoover floorcare is part of TTI Floor Care North America within Hong Kong-listed Techtronic Industries; U.S. legal notices name Royal Appliance Mfg. Co. doing business as TTI Floor Care North America. In Europe, Hoover is operated through the Candy-Hoover structure inside Haier Europe, part of Haier Smart Home. Candy acquired Hoover European Appliances in 1995, TTI acquired the Hoover floor-care business from Whirlpool in 2007, and Haier acquired Candy in 2019.",
+    "parentCompany": "Techtronic Industries in North American floorcare; Haier Smart Home through Haier Europe/Candy in Europe"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Upright, cordless and handheld vacuums",
+      "positioning": "North American Hoover ranges cover traditional uprights, cordless sticks, handhelds and commercial vacuum formats.",
+      "buyerRelevance": "Model suffixes, batteries, filters, tools and parts differ by region and retail channel."
+    },
+    {
+      "name": "Carpet cleaners and spot cleaners",
+      "positioning": "SmartWash, PowerScrub and CleanSlate systems cover full-size extraction and portable stain treatment.",
+      "buyerRelevance": "Requires comparison of water recovery, tanks, hose cleaning, tools, formulas, parts and warranty rather than unsupported suction claims."
+    },
+    {
+      "name": "Hard-floor cleaning",
+      "positioning": "Wet floor cleaners, steam products and cleaning solutions complement vacuum and carpet-care categories.",
+      "buyerRelevance": "Adds surface-compatibility, roller, detergent and maintenance requirements."
+    },
+    {
+      "name": "European home appliances",
+      "positioning": "Hoover in Europe extends beyond floorcare into laundry, dishwashing, refrigeration and other domestic appliances within Haier Europe's brand portfolio.",
+      "buyerRelevance": "A European appliance offer must not be confused with TTI's North American Hoover floorcare business."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Hoover's U.S. site identifies the brand as part of TTI Floor Care North America and names Royal Appliance Mfg. Co. in legal notices.",
+      "scope": "U.S. brand and legal operator",
+      "buyerCheck": "Match the legal entity, manufacturer, importer and origin to the exact North American SKU."
+    },
+    {
+      "evidence": "European Commission and Haier records place Candy and its Hoover European appliance operations inside Haier's European platform.",
+      "scope": "European group structure",
+      "buyerCheck": "Identify the Haier Europe or Candy-Hoover entity responsible for the exact country and product category."
+    },
+    {
+      "evidence": "Neither regional ownership statement establishes one factory for all Hoover products.",
+      "scope": "Factory and origin boundary",
+      "buyerCheck": "Verify the rating label, declaration, technical file and shipping documents for every model."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Hoover.com sells North American floorcare directly and supports retail distribution, manuals, parts, returns and service centers.",
+      "scope": "North American official channel",
+      "buyerCheck": "Confirm authorized seller status, model suffix and U.S. or Canadian warranty eligibility."
+    },
+    {
+      "evidence": "Haier Europe and country-specific Hoover sites operate the European brand and appliance assortment.",
+      "scope": "European official channel",
+      "buyerCheck": "Confirm the local ecommerce operator, importer, warranty provider and service network."
+    },
+    {
+      "evidence": "Hoover's international contacts direct different territories to TTI or Candy-Hoover organizations.",
+      "scope": "International regional allocation",
+      "buyerCheck": "Do not use a U.S. support route for a European appliance or assume a European warranty covers a North American floorcare import."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Hoover retains valuable awareness in floorcare and carpet extraction, supported in North America by TTI's battery, retail and product-development resources and in Europe by Haier's appliance platform. Its main strategic complication is the regional split itself: searchers see one brand, but products, owners, legal entities and service systems differ. Buyers who map those responsibilities correctly can use Hoover's category heritage; buyers who do not may import the wrong product or warranty route.",
+    "competitorSlugs": ["bissell", "shark", "dyson", "miele"]
+  },
+  "developments": [
+    {
+      "date": "2019-01-08",
+      "title": "Haier completes the acquisition of Candy",
+      "summary": "Candy and its European Hoover operations became part of Haier's European business platform.",
+      "sourceIds": ["haier-candy-completion"]
+    },
+    {
+      "date": "2007-01-31",
+      "title": "TTI acquires Hoover floor care from Whirlpool",
+      "summary": "TTI combined Hoover with its existing floorcare operations to create TTI Floor Care in North America.",
+      "sourceIds": ["tti-hoover-acquisition"]
+    },
+    {
+      "date": "1995",
+      "title": "Candy acquires Hoover European Appliances",
+      "summary": "The transaction established the European Hoover appliance path that later moved into Haier through Candy.",
+      "sourceIds": ["candy-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hoover-about",
+      "title": "About Hoover",
+      "publisher": "Hoover / TTI Floor Care North America",
+      "url": "https://hoover.com/pages/about-hoover",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "hoover-terms",
+      "title": "Hoover Terms and Privacy Notice",
+      "publisher": "Royal Appliance Mfg. Co. d/b/a TTI Floor Care North America",
+      "url": "https://hoover.com/policies/terms-of-service",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "tti-hoover-acquisition",
+      "title": "TTI Completes Hoover Floor Care Acquisition",
+      "publisher": "Techtronic Industries Co. Ltd.",
+      "url": "https://www.ttigroup.com/assets/pdf/press/eng/p070131.pdf",
+      "publishedAt": "2007-01-31",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "candy-history",
+      "title": "Candy Company History",
+      "publisher": "Candy",
+      "url": "https://www.candy-home.com/en_GB/about-us/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "haier-candy-completion",
+      "title": "Haier Completes the Acquisition of Candy",
+      "publisher": "Haier Smart Home",
+      "url": "https://smart-home.haier.com/en/xwycjrl/gsxw/P020210121755452281696.pdf",
+      "publishedAt": "2019-01-08",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "ec-haier-candy",
+      "title": "Case M.9139 Haier / Candy",
+      "publisher": "European Commission",
+      "url": "https://ec.europa.eu/competition/mergers/cases/decisions/m9139_181_3.pdf",
+      "publishedAt": "2018-12-06",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "haier-europe-hoover",
+      "title": "Hoover Brand",
+      "publisher": "Haier Europe",
+      "url": "https://corporate.haier-europe.com/our-brands/hoover/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "hoover-cleanslate",
+      "title": "CleanSlate Pet Carpet and Upholstery Spot Cleaner",
+      "publisher": "Hoover",
+      "url": "https://hoover.com/products/cleanslate-pet",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T23:35:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T23:35:00+08:00"
+}

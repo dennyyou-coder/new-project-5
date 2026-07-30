@@ -1,0 +1,189 @@
+{
+  "status": "published",
+  "slug": "mova",
+  "name": "MOVA",
+  "aliases": ["Mova", "MOVA Tech", "Spacewalker Technology", "Kutting Technology"],
+  "legalName": "Spacewalker Technology (Suzhou) Co., Ltd.",
+  "legalEntityNote": "MOVA is a Dreame Group brand. Spacewalker entities handle brand, app and regional operations, while Kutting Technology appears in current robotic-mower compliance records.",
+  "officialWebsite": "https://www.mova.tech/",
+  "headline": "MOVA ownership, cleaning robots, outdoor portfolio and Dreame group relationship",
+  "description": "A source-backed profile separating the MOVA brand from Dreame Group, Spacewalker regional entities and Kutting product responsibilities across indoor and outdoor robotics.",
+  "metaDescription": "MOVA brand profile: Dreame Group relationship, robot vacuums, lawn and pool robots, Spacewalker entities, manufacturing and channels.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with MOVA, Dreame Group, Spacewalker or Kutting. Brand, manufacturer, app, seller and warranty roles are identified separately and remain model- and market-specific.",
+  "headquarters": "Suzhou, Jiangsu, China (core Spacewalker and Kutting operating entities)",
+  "founded": "Presented internationally as the newest member of the Dreame family at IFA 2024; related operating entities may predate the brand launch.",
+  "heroImage": "/images/brands/mova/hero-v70-ultra.webp",
+  "heroImageAlt": "MOVA V70 Ultra robot vacuum and automated dock",
+  "logoImage": "/images/brands/mova/logo.webp",
+  "logoImageAlt": "MOVA logo",
+  "logoSourceUrl": "https://www.mova.tech/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/dreame-xiaomi-mova-relationship-map.webp",
+      "alt": "Relationship map separating Dreame, Xiaomi and MOVA",
+      "caption": "This map distinguishes Dreame's private group, its historical Xiaomi ecosystem connection and the MOVA brand."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/mova-robot-mower-dreame-group-cover.webp",
+      "alt": "MOVA robotic mower and company responsibility map",
+      "caption": "This visual places MOVA's outdoor-robotics products inside the wider Dreame Group operating system."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/mova-regional-entities-buyer-check.webp",
+      "alt": "MOVA regional entity, seller, app and warranty responsibility map",
+      "caption": "This buyer map separates Spacewalker regional operations, product compliance, local sellers and after-sales responsibility."
+    }
+  ],
+  "ownership": {
+    "summary": "MOVA is presented by Dreame as a member of the Dreame family and uses shared group technology, supply-chain, digital and channel resources. It should not be treated as a separate listed company. Official materials name Spacewalker Technology entities for the brand, MOVAhome app and regional websites, while robotic-mower declarations name Kutting Technology (Suzhou) Co., Ltd. These related roles do not make one entity the universal manufacturer or seller for every MOVA category.",
+    "parentCompany": "Dreame Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Robot vacuums",
+      "positioning": "A broad range from value-oriented models to premium roller-mop and highly automated dock platforms.",
+      "buyerRelevance": "Supports multiple price tiers but requires exact model checks for navigation, mopping, obstacle handling, consumables and regional service."
+    },
+    {
+      "name": "Wet-and-dry and cordless vacuums",
+      "positioning": "Manual floorcare extends MOVA beyond autonomous cleaning into sensor-led wet cleaning and dry vacuuming.",
+      "buyerRelevance": "Adds floorcare breadth while creating separate battery, roller, detergent and parts requirements."
+    },
+    {
+      "name": "Robotic lawn mowers and garden tools",
+      "positioning": "LiDAR- and vision-led wire-free mowers sit beside powered garden equipment in MOVA's outdoor ecosystem.",
+      "buyerRelevance": "Requires site survey, terrain, navigation, dealer installation, seasonal storage and local repair checks."
+    },
+    {
+      "name": "Pool, window and adjacent smart-living products",
+      "positioning": "Pool cleaners, window robots, pet care, personal care and small appliances expand MOVA into a wide smart-living portfolio.",
+      "buyerRelevance": "Creates cross-category opportunity but demands category-specific compliance and after-sales planning."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Official MOVA mower declarations place Kutting Technology (Suzhou) Co., Ltd. in manufacturer and compliance roles for named mower types.",
+      "scope": "Specified robotic-mower models",
+      "buyerCheck": "Match the declaration, manufacturer and factory information to the exact mower model and market."
+    },
+    {
+      "evidence": "Spacewalker Technology companies appear in MOVA brand, app, privacy and regional site records.",
+      "scope": "Brand, software and regional operations",
+      "buyerCheck": "Do not infer physical factory origin from an app developer, privacy issuer or ecommerce operator."
+    },
+    {
+      "evidence": "Dreame and MOVA share visible technology, supply-chain and channel infrastructure, but product records remain category- and model-specific.",
+      "scope": "Dreame Group resources",
+      "buyerCheck": "Verify the actual legal manufacturer, assembly site, exporter and quality owner for each contracted SKU."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "MOVA operates global and country websites with regional Spacewalker entities or authorized distributors named in terms and legal disclosures.",
+      "scope": "Official regional ecommerce",
+      "buyerCheck": "Identify the site operator, merchant of record, importer and warranty provider for the target country."
+    },
+    {
+      "evidence": "MOVA products are also sold through marketplaces, retailers and local distributors with market-specific assortments.",
+      "scope": "Third-party retail and distribution",
+      "buyerCheck": "Confirm authorization, model suffix, app region, parts access and written warranty terms."
+    },
+    {
+      "evidence": "The UK legal disclosure states that Beam Group operates the store as authorized distributor, seller and merchant of record without claiming the MOVA trademark.",
+      "scope": "Named UK route to market",
+      "buyerCheck": "Do not generalize the UK merchant structure to other countries."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: MOVA uses Dreame Group's engineering and international infrastructure to expand unusually quickly across indoor cleaning, lawn, pool and adjacent smart-living categories. That breadth creates distributor opportunity and strong launch velocity. The principal buyer risk is operating complexity: MOVA, Dreame, Spacewalker, Kutting and local distributors can each appear in different records, so category excitement must be matched with exact responsibility mapping and dependable regional service.",
+    "competitorSlugs": ["dreame", "roborock", "ecovacs", "mammotion", "segway-navimow"]
+  },
+  "developments": [
+    {
+      "date": "2026-04-17",
+      "title": "MOVA presents an expanded 2026 product lineup",
+      "summary": "The company announced new robot-vacuum, outdoor and smart-living products led by its V-series floorcare platform.",
+      "sourceIds": ["mova-launch-2026"]
+    },
+    {
+      "date": "2025-01-07",
+      "title": "MOVA and Kutting show LiDAR mower development",
+      "summary": "Hesai described Kutting as part of the Dreame ecosystem when presenting LiDAR-equipped MOVA mowers at CES.",
+      "sourceIds": ["hesai-mova-2025"]
+    },
+    {
+      "date": "2024-09",
+      "title": "Dreame introduces MOVA as a family brand at IFA",
+      "summary": "Dreame's official IFA materials presented MOVA inside the group's multi-brand expansion.",
+      "sourceIds": ["dreame-ifa-2024"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "dreame-ifa-2024",
+      "title": "Dreame at IFA 2024",
+      "publisher": "Dreame Technology",
+      "url": "https://fr.dreametech.com/pages/ifa-2024",
+      "publishedAt": "2024-09-01",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mova-global",
+      "title": "MOVA Official Global Website",
+      "publisher": "MOVA",
+      "url": "https://www.mova.tech/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mova-manuals",
+      "title": "User Manuals and FAQs",
+      "publisher": "MOVA",
+      "url": "https://www.mova.tech/pages/user-manuals-and-faqs",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mova-declarations",
+      "title": "Declarations of Conformity",
+      "publisher": "MOVA",
+      "url": "https://www.mova.tech/pages/declaration-of-conformity",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mova-privacy",
+      "title": "Privacy Policy",
+      "publisher": "MOVA / Spacewalker Technology Hong Kong Co., Limited",
+      "url": "https://www.mova.tech/policies/privacy-policy",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mova-uk-legal",
+      "title": "UK Legal Disclosure",
+      "publisher": "MOVA UK",
+      "url": "https://uk.mova.tech/pages/legal-disclosure",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "hesai-mova-2025",
+      "title": "Hesai 3D LiDARs to Empower MOVA Robotic Lawn Mowers",
+      "publisher": "Hesai Technology",
+      "url": "https://www.hesaitech.com/ces-2025-hesais-3d-lidars-to-empower-movas-robotic-lawn-mowers/",
+      "publishedAt": "2025-01-07",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mova-launch-2026",
+      "title": "2026 MOVA New Product Launch Event",
+      "publisher": "MOVA",
+      "url": "https://www.mova.tech/blogs/news",
+      "publishedAt": "2026-04-17",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T23:25:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T23:25:00+08:00"
+}
