@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { ArticleBrandLinks } from "@/components/ArticleBrandLinks";
 import { BlogConversionCta } from "@/components/BlogConversionCta";
+import { getPublishedBrandProfiles } from "@/lib/brands";
 import {
   getInsight,
   getInsights,
@@ -206,6 +208,7 @@ export default async function InsightDetailPage({ params }: Props) {
     notFound();
   }
 
+  const publishedBrandProfiles = getPublishedBrandProfiles(articles);
   const relatedOverrideSlugs = relatedArticleOverrides[slug] || [];
   const relatedOverrides = relatedOverrideSlugs
     .map((relatedSlug) => articles.find((item) => item.slug === relatedSlug))
@@ -330,6 +333,10 @@ export default async function InsightDetailPage({ params }: Props) {
           <h1>{article.title}</h1>
           <p>{article.excerpt}</p>
           <p className="signal-detail-author">By <Link href="/about">{article.author}</Link></p>
+          <ArticleBrandLinks
+            brandSlugs={article.primaryBrands}
+            profiles={publishedBrandProfiles}
+          />
         </div>
       </section>
 
