@@ -21,6 +21,14 @@ Use these field names exactly:
 - `founded`
 - `heroImage`
 - `heroImageAlt`
+- `logoImage`
+- `logoImageAlt`
+- `logoSourceUrl`
+- `contentVisuals`
+- `contentVisuals[].placement`
+- `contentVisuals[].src`
+- `contentVisuals[].alt`
+- `contentVisuals[].caption`
 - `ownership`
 - `ownership.summary`
 - `ownership.parentCompany`
@@ -31,8 +39,15 @@ Use these field names exactly:
 - `productPortfolio`
 - `productPortfolio[].name`
 - `productPortfolio[].positioning`
+- `productPortfolio[].buyerRelevance` (optional)
 - `manufacturingSupplyChain`
+- `manufacturingSupplyChain[].evidence`
+- `manufacturingSupplyChain[].scope`
+- `manufacturingSupplyChain[].buyerCheck`
 - `marketsChannels`
+- `marketsChannels[].evidence`
+- `marketsChannels[].scope`
+- `marketsChannels[].buyerCheck`
 - `competitivePosition`
 - `competitivePosition.summary`
 - `competitivePosition.competitorSlugs`
@@ -61,3 +76,29 @@ Use these field names exactly:
 - Change `lastModified` only after a material profile edit.
 - Keep profiles in `draft` until `npm run test:brands` accepts them.
 - Provide at least one of `legalName` or `legalEntityNote`. Use `legalEntityNote` when no single reviewed legal entity truthfully represents the consumer brand.
+
+## Logo and content visual rules
+
+- Published profiles require complete official Logo metadata: `logoImage`, `logoImageAlt` and `logoSourceUrl`.
+- Draft profiles may omit Logo fields. Any Logo field supplied on a draft must still meet the same field-level validation.
+- `logoImage` must use `/images/brands/{slug}/logo.webp`, and `logoImageAlt` must identify the brand logo.
+- `logoSourceUrl` must be a valid HTTP(S) URL for the brand's official website or official media or press-kit page. Use it only as the retrieval source for the exact official Logo asset; do not use third-party Logo repositories or redraw the mark.
+- `contentVisuals` must contain 2 or 3 items. Every `src` must begin with `/images/`, and every item requires factual, non-empty `alt` and `caption` text.
+- `contentVisuals[].placement` must be exactly one of `ownership`, `portfolio`, `operations` or `competition`.
+
+## Structured evidence rules
+
+Both `manufacturingSupplyChain` and `marketsChannels` are arrays of evidence objects:
+
+```json
+{
+  "evidence": "The existing source-backed conclusion, preserved verbatim.",
+  "scope": "The exact entity, model, market or reporting-period level covered by the evidence.",
+  "buyerCheck": "A concrete verification action for the buyer."
+}
+```
+
+- Keep the existing conclusion unchanged in `evidence`.
+- Use `scope` to prevent group-level, model-level, regional or dated evidence from being generalized.
+- Use `buyerCheck` for a concrete action such as checking exact SKU origin, seller authorization, warranty entity, shipment documents or a distributor agreement.
+- `productPortfolio[].buyerRelevance` is optional, but when present it must be a non-empty sentence grounded in the existing positioning and cited profile.

@@ -2,6 +2,25 @@ import fs from "node:fs";
 import path from "node:path";
 import { isValidBrandDate } from "@/lib/brandDates";
 
+export type BrandVisualPlacement =
+  | "ownership"
+  | "portfolio"
+  | "operations"
+  | "competition";
+
+export type BrandContentVisual = {
+  placement: BrandVisualPlacement;
+  src: string;
+  alt: string;
+  caption: string;
+};
+
+export type BrandEvidenceItem = {
+  evidence: string;
+  scope: string;
+  buyerCheck: string;
+};
+
 export type BrandProfile = {
   status: "draft" | "published";
   slug: string;
@@ -18,11 +37,19 @@ export type BrandProfile = {
   founded: string;
   heroImage?: string;
   heroImageAlt?: string;
+  logoImage: string;
+  logoImageAlt: string;
+  logoSourceUrl: string;
+  contentVisuals: BrandContentVisual[];
   ownership: { summary: string; parentCompany?: string };
   leadership: Array<{ name: string; role: string; context?: string }>;
-  productPortfolio: Array<{ name: string; positioning: string }>;
-  manufacturingSupplyChain: string[];
-  marketsChannels: string[];
+  productPortfolio: Array<{
+    name: string;
+    positioning: string;
+    buyerRelevance?: string;
+  }>;
+  manufacturingSupplyChain: BrandEvidenceItem[];
+  marketsChannels: BrandEvidenceItem[];
   competitivePosition: {
     summary: string;
     competitorSlugs: string[];
@@ -152,6 +179,31 @@ function textArray(
   });
 
   return values;
+}
+
+function recordArray(
+  value: unknown,
+  label: string,
+  errors: string[]
+): Array<{ record: Record<string, unknown>; index: number }> {
+  if (!Array.isArray(value)) {
+    errors.push(`${label} must be an array.`);
+    return [];
+  }
+
+  const records: Array<{
+    record: Record<string, unknown>;
+    index: number;
+  }> = [];
+  value.forEach((item, index) => {
+    if (!isRecord(item)) {
+      errors.push(`${label} item ${index + 1} must be an object.`);
+      return;
+    }
+    records.push({ record: item, index });
+  });
+
+  return records;
 }
 
 function uniqueArticles(
@@ -294,6 +346,56 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
     errors.push("heroImageAlt is required when heroImage is provided.");
   }
 
+  const logoFields = ["logoImage", "logoImageAlt", "logoSourceUrl"] as const;
+  for (const field of logoFields) {
+    if (candidate.status === "published" && candidate[field] === undefined) {
+      errors.push(`${field} is required for published profiles.`);
+    } else if (candidate[field] !== undefined && !hasText(candidate[field])) {
+      errors.push(`${field} must be a non-empty string when provided.`);
+    }
+  }
+  if (hasText(candidate.logoImage) && !candidate.logoImage.startsWith("/images/")) {
+    errors.push("logoImage must begin with /images/.");
+  }
+  if (hasText(candidate.logoSourceUrl) && !isValidHttpUrl(candidate.logoSourceUrl)) {
+    errors.push("logoSourceUrl must be a valid HTTP(S) URL.");
+  }
+
+  const visualRecords = recordArray(
+    candidate.contentVisuals,
+    "contentVisuals",
+    errors
+  );
+  if (
+    Array.isArray(candidate.contentVisuals)
+    && (candidate.contentVisuals.length < 2 || candidate.contentVisuals.length > 3)
+  ) {
+    errors.push("contentVisuals must include 2 or 3 items.");
+  }
+  const visualPlacements = new Set<BrandVisualPlacement>([
+    "ownership",
+    "portfolio",
+    "operations",
+    "competition"
+  ]);
+  visualRecords.forEach(({ record: visual, index }) => {
+    const label = `contentVisuals item ${index + 1}`;
+    if (
+      !hasText(visual.placement)
+      || !visualPlacements.has(visual.placement as BrandVisualPlacement)
+    ) {
+      errors.push(
+        `${label} placement must be ownership, portfolio, operations, or competition.`
+      );
+    }
+    recordText(visual, "src", `${label} src`, errors);
+    if (hasText(visual.src) && !visual.src.startsWith("/images/")) {
+      errors.push(`${label} src must begin with /images/.`);
+    }
+    recordText(visual, "alt", `${label} alt`, errors);
+    recordText(visual, "caption", `${label} caption`, errors);
+  });
+
   if (!isRecord(candidate.ownership)) {
     errors.push("ownership must be an object.");
   } else {
@@ -335,16 +437,50 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
       }
       recordText(item, "name", `${label} name`, errors);
       recordText(item, "positioning", `${label} positioning`, errors);
+      optionalRecordText(
+        item,
+        "buyerRelevance",
+        `${label} buyerRelevance`,
+        errors
+      );
     });
   }
 
-  textArray(
+  const manufacturingRecords = recordArray(
     candidate.manufacturingSupplyChain,
     "manufacturingSupplyChain",
-    errors,
-    1
+    errors
   );
-  textArray(candidate.marketsChannels, "marketsChannels", errors, 1);
+  if (
+    Array.isArray(candidate.manufacturingSupplyChain)
+    && candidate.manufacturingSupplyChain.length === 0
+  ) {
+    errors.push("manufacturingSupplyChain must include at least one item.");
+  }
+  manufacturingRecords.forEach(({ record: item, index }) => {
+    const label = `manufacturingSupplyChain item ${index + 1}`;
+    recordText(item, "evidence", `${label} evidence`, errors);
+    recordText(item, "scope", `${label} scope`, errors);
+    recordText(item, "buyerCheck", `${label} buyerCheck`, errors);
+  });
+
+  const marketRecords = recordArray(
+    candidate.marketsChannels,
+    "marketsChannels",
+    errors
+  );
+  if (
+    Array.isArray(candidate.marketsChannels)
+    && candidate.marketsChannels.length === 0
+  ) {
+    errors.push("marketsChannels must include at least one item.");
+  }
+  marketRecords.forEach(({ record: item, index }) => {
+    const label = `marketsChannels item ${index + 1}`;
+    recordText(item, "evidence", `${label} evidence`, errors);
+    recordText(item, "scope", `${label} scope`, errors);
+    recordText(item, "buyerCheck", `${label} buyerCheck`, errors);
+  });
 
   if (!isRecord(candidate.competitivePosition)) {
     errors.push("competitivePosition must be an object.");

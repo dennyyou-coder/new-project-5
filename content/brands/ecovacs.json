@@ -15,6 +15,29 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with ECOVACS or Tineco. This profile focuses on ECOVACS Robotics; Tineco product facts are identified as group-level context, not ECOVACS-brand facts.",
   "headquarters": "Suzhou, Jiangsu, China",
   "founded": "1998 (ECOVACS brand launched in 2006)",
+  "logoImage": "/images/brands/ecovacs/logo.webp",
+  "logoImageAlt": "ECOVACS logo",
+  "logoSourceUrl": "https://www.ecovacs.com/global",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/tineco-ecovacs-company-structure.webp",
+      "alt": "Company structure showing ECOVACS and Tineco within the listed group",
+      "caption": "This diagram helps readers distinguish the ECOVACS brand from the group's separate Tineco business."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/dreame-vs-ecovacs-robot-platforms.webp",
+      "alt": "Platform comparison of ECOVACS and Dreame robot vacuums",
+      "caption": "This comparison helps buyers understand how ECOVACS robot platforms differ from Dreame's offer."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/roborock-vs-ecovacs-robot-vacuums.webp",
+      "alt": "Comparison map of Roborock and ECOVACS robot vacuums",
+      "caption": "This diagram helps readers compare ECOVACS with Roborock across robot-vacuum product systems."
+    }
+  ],
   "ownership": {
     "summary": "ECOVACS Robotics is the service-robot brand of Shanghai-listed Ecovacs Robotics Co., Ltd. The 2025 annual report names Suzhou Chuangling Smart Investment Management Co., Ltd. as controlling shareholder and Qian Dongqi and David Cheng Qian as actual controllers. Tineco is a separate consumer brand inside the same listed group through wholly owned subsidiaries; its wet-and-dry appliances should not be presented as ECOVACS-branded products."
   },
@@ -38,30 +61,58 @@
   "productPortfolio": [
     {
       "name": "DEEBOT robot vacuums",
-      "positioning": "The core residential service-robot line, spanning vacuuming, mopping and multifunction station formats."
+      "positioning": "The core residential service-robot line, spanning vacuuming, mopping and multifunction station formats.",
+      "buyerRelevance": "Forms the core residential assortment with multiple cleaning and station configurations."
     },
     {
       "name": "WINBOT window-cleaning robots",
-      "positioning": "A specialist home service-robot category extending ECOVACS beyond floors."
+      "positioning": "A specialist home service-robot category extending ECOVACS beyond floors.",
+      "buyerRelevance": "Adds a specialist vertical-surface category beyond floorcare."
     },
     {
       "name": "GOAT robotic lawn mowers",
-      "positioning": "Outdoor service robots aimed at residential lawn care."
+      "positioning": "Outdoor service robots aimed at residential lawn care.",
+      "buyerRelevance": "Extends the ECOVACS assortment into residential outdoor robotics."
     },
     {
       "name": "DEEBOT PRO commercial cleaning robots",
-      "positioning": "B2B vacuuming and scrubbing systems for offices, retail, healthcare, transport and industrial sites."
+      "positioning": "B2B vacuuming and scrubbing systems for offices, retail, healthcare, transport and industrial sites.",
+      "buyerRelevance": "Requires a separate B2B sales, deployment and service model from residential DEEBOT products."
     }
   ],
   "manufacturingSupplyChain": [
-    "The 2025 annual report says the listed company mainly uses self-production and has built in-house capabilities from key components through finished robots.",
-    "Group-level upstream assets include motor and drive-component production plus a 2 GWh polymer lithium-ion battery project designed to supply customized pouch-cell solutions to both ECOVACS and Tineco.",
-    "The filing treats Tineco subsidiaries, ECOVACS home and commercial robotics entities, overseas sales companies and component businesses as distinct legal units within the consolidated group."
+    {
+      "evidence": "The 2025 annual report says the listed company mainly uses self-production and has built in-house capabilities from key components through finished robots.",
+      "scope": "Group disclosure",
+      "buyerCheck": "Confirm the manufacturer and origin for the exact ECOVACS SKU."
+    },
+    {
+      "evidence": "Group-level upstream assets include motor and drive-component production plus a 2 GWh polymer lithium-ion battery project designed to supply customized pouch-cell solutions to both ECOVACS and Tineco.",
+      "scope": "Group upstream assets",
+      "buyerCheck": "Verify the component supplier and battery specification for the contracted model."
+    },
+    {
+      "evidence": "The filing treats Tineco subsidiaries, ECOVACS home and commercial robotics entities, overseas sales companies and component businesses as distinct legal units within the consolidated group.",
+      "scope": "Consolidated legal entities",
+      "buyerCheck": "Confirm which legal entity manufactures, sells and warrants the exact product."
+    }
   ],
   "marketsChannels": [
-    "ECOVACS and Tineco each use diversified online and offline sales systems in China and overseas; channel facts in the listed-company report can therefore be group-level rather than ECOVACS-brand-only.",
-    "The ECOVACS brand operates in China and established overseas markets including the United States, Europe and Japan.",
-    "Commercial robotics adds a direct B2B route. At Interclean Amsterdam 2026, ECOVACS showed three DEEBOT PRO models and announced agreements with European customers."
+    {
+      "evidence": "ECOVACS and Tineco each use diversified online and offline sales systems in China and overseas; channel facts in the listed-company report can therefore be group-level rather than ECOVACS-brand-only.",
+      "scope": "Group channel disclosure",
+      "buyerCheck": "Confirm that the named seller and channel are authorized for ECOVACS rather than Tineco."
+    },
+    {
+      "evidence": "The ECOVACS brand operates in China and established overseas markets including the United States, Europe and Japan.",
+      "scope": "Named ECOVACS markets",
+      "buyerCheck": "Confirm local product availability, seller authorization and warranty coverage."
+    },
+    {
+      "evidence": "Commercial robotics adds a direct B2B route. At Interclean Amsterdam 2026, ECOVACS showed three DEEBOT PRO models and announced agreements with European customers.",
+      "scope": "European commercial robotics",
+      "buyerCheck": "Verify the direct B2B agreement, deployment scope and service responsibility for DEEBOT PRO."
+    }
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: ECOVACS spans residential floor, window and lawn robots plus commercial cleaning, supported by online and offline consumer channels and a developing B2B route. The listed group's self-production and component integration provide supply-chain leverage, while Tineco supplies a separate second growth engine. Strategic pressure comes from keeping those brand boundaries clear and turning breadth into product leadership as Roborock and Dreame compress launch cycles, premium features spread downward and ECOVACS invests upstream in capital-intensive components.",

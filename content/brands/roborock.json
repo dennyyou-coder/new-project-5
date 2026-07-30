@@ -16,6 +16,29 @@
   "founded": "July 2014",
   "heroImage": "/images/insights/roborock-ipo-prospectus-signals-cover.jpg",
   "heroImageAlt": "Chinese financial table showing Roborock revenue, profit and other company metrics from 2016 to 2018",
+  "logoImage": "/images/brands/roborock/logo.webp",
+  "logoImageAlt": "Roborock logo",
+  "logoSourceUrl": "https://global.roborock.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/is-roborock-owned-by-xiaomi-cover.webp",
+      "alt": "Ownership diagram distinguishing Roborock from Xiaomi",
+      "caption": "This diagram helps readers distinguish Xiaomi's minority investment relationship from control of Roborock."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/roborock-rockmow-product-map.webp",
+      "alt": "Product map linking Roborock floorcare with RockMow robotic lawn mowers",
+      "caption": "This map helps readers understand Roborock's expansion from indoor floorcare into robotic lawn mowing."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/roborock-vs-dreame-platform-comparison.webp",
+      "alt": "Platform comparison of Roborock and Dreame cleaning products",
+      "caption": "This diagram helps buyers compare Roborock and Dreame across their cleaning-product platforms."
+    }
+  ],
   "ownership": {
     "summary": "Roborock is a Shanghai Stock Exchange-listed company, not a Xiaomi subsidiary. Its 2025 annual report identified founder Chang Jing as controlling shareholder and actual controller with 20.99% at 31 December 2025. Tianjin Jinmi, an investment entity controlled within Xiaomi Communications' consolidated structure, held 2.49%; that is a minority investment, not legal control."
   },
@@ -34,30 +57,58 @@
   "productPortfolio": [
     {
       "name": "Robot vacuums",
-      "positioning": "The core business, spanning multiple price tiers and advanced navigation, mopping, dock and embodied-robotics features."
+      "positioning": "The core business, spanning multiple price tiers and advanced navigation, mopping, dock and embodied-robotics features.",
+      "buyerRelevance": "Forms the core assortment across price tiers, cleaning functions and dock configurations."
     },
     {
       "name": "Wet-and-dry floor cleaners",
-      "positioning": "A fast-growing adjacent floorcare category reported within other smart appliances."
+      "positioning": "A fast-growing adjacent floorcare category reported within other smart appliances.",
+      "buyerRelevance": "Adds an adjacent floorcare line that can extend the Roborock aisle beyond robots."
     },
     {
       "name": "Washer-dryers",
-      "positioning": "Large-appliance expansion built around Roborock's low-temperature molecular-sieve drying technology."
+      "positioning": "Large-appliance expansion built around Roborock's low-temperature molecular-sieve drying technology.",
+      "buyerRelevance": "Introduces a large-appliance category with different installation and service requirements."
     },
     {
       "name": "Robotic lawn mowers",
-      "positioning": "An outdoor robotics extension introduced through the RockMow and RockNeo product families."
+      "positioning": "An outdoor robotics extension introduced through the RockMow and RockNeo product families.",
+      "buyerRelevance": "Extends assortment planning into outdoor robotics through the RockMow and RockNeo platforms."
     }
   ],
   "manufacturingSupplyChain": [
-    "The 2025 annual report shows a mixed supply model: raw materials and processing remained the largest cost components, while purchased parts and finished units expanded as Roborock added ODM production for lower-priced products.",
-    "Roborock reports independent product development and testing capabilities, with R&D and branch offices in Beijing, Shanghai and Shenzhen; the filing does not support treating Xiaomi as Roborock's general manufacturer.",
-    "In 2025 Roborock reported higher production and inventory for robot vacuums and other smart appliances, with overseas stocking contributing to the inventory increase."
+    {
+      "evidence": "The 2025 annual report shows a mixed supply model: raw materials and processing remained the largest cost components, while purchased parts and finished units expanded as Roborock added ODM production for lower-priced products.",
+      "scope": "Reviewed reporting period",
+      "buyerCheck": "Confirm whether the exact SKU is self-produced, processed or supplied as an ODM finished unit."
+    },
+    {
+      "evidence": "Roborock reports independent product development and testing capabilities, with R&D and branch offices in Beijing, Shanghai and Shenzhen; the filing does not support treating Xiaomi as Roborock's general manufacturer.",
+      "scope": "Company R&D and branch offices",
+      "buyerCheck": "Verify the manufacturer for the exact model without assigning Xiaomi as manufacturer."
+    },
+    {
+      "evidence": "In 2025 Roborock reported higher production and inventory for robot vacuums and other smart appliances, with overseas stocking contributing to the inventory increase.",
+      "scope": "2025 production and inventory",
+      "buyerCheck": "Confirm current regional inventory ownership, shipment origin and replenishment terms."
+    }
   ],
   "marketsChannels": [
-    "Roborock sells through both direct and distributor models. Its 2025 annual report reported growth in each and described expanded direct multi-platform operations alongside broader distributor coverage.",
-    "Overseas main-business revenue exceeded domestic main-business revenue in 2025. The company attributed overseas growth to wider sales channels, product investment and channel promotion.",
-    "The company is adding localized overseas operations and physical retail exposure while retaining ecommerce as a major route to market."
+    {
+      "evidence": "Roborock sells through both direct and distributor models. Its 2025 annual report reported growth in each and described expanded direct multi-platform operations alongside broader distributor coverage.",
+      "scope": "Direct and distributor channels",
+      "buyerCheck": "Confirm whether the target account buys directly or through an authorized distributor."
+    },
+    {
+      "evidence": "Overseas main-business revenue exceeded domestic main-business revenue in 2025. The company attributed overseas growth to wider sales channels, product investment and channel promotion.",
+      "scope": "2025 overseas business",
+      "buyerCheck": "Confirm local channel coverage, promotional responsibility and regional warranty terms."
+    },
+    {
+      "evidence": "The company is adding localized overseas operations and physical retail exposure while retaining ecommerce as a major route to market.",
+      "scope": "Localized overseas channels",
+      "buyerCheck": "Verify the local selling entity and authorization across ecommerce and physical retail."
+    }
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Roborock has widened from robot vacuums into wet-and-dry cleaners, laundry and outdoor robotics, while shifting from its early Xiaomi-channel dependence toward direct ecommerce, distributors and offline experience. That breadth improves reach but also raises execution pressure: the 2025 filing shows faster growth alongside lower profit, heavier selling costs, more inventory and lower gross margins as Roborock moves technologies across price tiers and defends share against Dreame and Ecovacs.",

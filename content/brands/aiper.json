@@ -16,6 +16,29 @@
   "founded": "2017",
   "heroImage": "/images/insights/aiper-fluidra-pool-robotics-alliance-cover.jpg",
   "heroImageAlt": "World Clean Biz cover about the Aiper and Fluidra investment alliance, with an Aiper robotic pool cleaner",
+  "logoImage": "/images/brands/aiper/logo.webp",
+  "logoImageAlt": "Aiper logo",
+  "logoSourceUrl": "https://aiper.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/aiper-fluidra-ownership-control-cover.webp",
+      "alt": "Diagram showing Fluidra's stake and joint-control relationship with Aiper",
+      "caption": "This diagram helps readers distinguish Fluidra's minority investment from full ownership."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/aiper-pool-cleaner-model-selection-map.webp",
+      "alt": "Selection map comparing Aiper robotic pool cleaner models",
+      "caption": "This map helps buyers compare Aiper pool-cleaner models by use case and features."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/aiper-manufacturing-regional-responsibility-map.webp",
+      "alt": "Map of Aiper manufacturing and regional responsibility relationships",
+      "caption": "This diagram helps buyers separate model-level manufacturing evidence from regional commercial responsibility."
+    }
+  ],
   "ownership": {
     "summary": "Fluidra completed a USD 100 million investment for 27% of Aiper Inc. on 23 December 2025. Fluidra reports the interest as an equity-accounted investment, not a consolidated subsidiary. Spain's CNMC described the transaction as changing Aiper from W&D United's sole control to joint control by W&D United and Fluidra. Fluidra has a conditional path to exceed 51% if specified sales and profitability thresholds are met; that future step was not complete in the reviewed evidence."
   },
@@ -29,30 +52,58 @@
   "productPortfolio": [
     {
       "name": "Scuba robotic pool cleaners",
-      "positioning": "A cordless residential range spanning above-ground, mainstream in-ground and AI-vision models."
+      "positioning": "A cordless residential range spanning above-ground, mainstream in-ground and AI-vision models.",
+      "buyerRelevance": "Supports tiered residential pool-cleaner assortments across pool types and feature levels."
     },
     {
       "name": "EcoSurfer robotic skimmers",
-      "positioning": "Solar-assisted surface-cleaning robots that extend Aiper from the pool floor to continuous surface care."
+      "positioning": "Solar-assisted surface-cleaning robots that extend Aiper from the pool floor to continuous surface care.",
+      "buyerRelevance": "Adds surface care alongside pool-floor cleaning for a broader pool-care assortment."
     },
     {
       "name": "IrriSense smart irrigation",
-      "positioning": "A lawn-watering extension supporting Aiper's broader smart-yard positioning."
+      "positioning": "A lawn-watering extension supporting Aiper's broader smart-yard positioning.",
+      "buyerRelevance": "Extends assortment planning beyond pool care into connected yard irrigation."
     },
     {
       "name": "HydroComm smart pool care",
-      "positioning": "Pool monitoring and underwater communication products designed to connect cleaning and water-condition data."
+      "positioning": "Pool monitoring and underwater communication products designed to connect cleaning and water-condition data.",
+      "buyerRelevance": "Links monitoring and communication products to cleaning-led pool-care offers."
     }
   ],
   "manufacturingSupplyChain": [
-    "Fluidra's April 2025 investor presentation described Aiper as operating two R&D centers and using manufacturing partners in China and Vietnam; the disclosure supports an external-partner model, not one universal Aiper-owned factory claim.",
-    "The U.S. CPSC's March 2025 Seagull Pro recall named Dongguan Yuanhong Intelligent Technology as manufacturer and Shenzhen Aiper Intelligent as distributor for model ZT6001. Its August 2023 Elite Pro recall named Compurobot Technology as manufacturer and Shenzhen Aiper Intelligent as distributor for model GS100. These model-specific records must not be generalized to every current Aiper product.",
-    "The CNMC transaction review described Aiper as active in manufacturing and commercialization and noted centers in the United States, China and Europe, while also documenting industry-wide international outsourcing. Buyers should verify the manufacturer and origin on the exact SKU and shipment documents."
+    {
+      "evidence": "Fluidra's April 2025 investor presentation described Aiper as operating two R&D centers and using manufacturing partners in China and Vietnam; the disclosure supports an external-partner model, not one universal Aiper-owned factory claim.",
+      "scope": "Group disclosure",
+      "buyerCheck": "Confirm the manufacturer and origin for the exact contracted SKU."
+    },
+    {
+      "evidence": "The U.S. CPSC's March 2025 Seagull Pro recall named Dongguan Yuanhong Intelligent Technology as manufacturer and Shenzhen Aiper Intelligent as distributor for model ZT6001. Its August 2023 Elite Pro recall named Compurobot Technology as manufacturer and Shenzhen Aiper Intelligent as distributor for model GS100. These model-specific records must not be generalized to every current Aiper product.",
+      "scope": "Named models",
+      "buyerCheck": "Match the named manufacturer and distributor to model ZT6001 or GS100 before relying on the recall record."
+    },
+    {
+      "evidence": "The CNMC transaction review described Aiper as active in manufacturing and commercialization and noted centers in the United States, China and Europe, while also documenting industry-wide international outsourcing. Buyers should verify the manufacturer and origin on the exact SKU and shipment documents.",
+      "scope": "Reviewed transaction material",
+      "buyerCheck": "Verify the manufacturer and origin on the exact SKU and shipment documents."
+    }
   ],
   "marketsChannels": [
-    "Aiper's current company page says the brand reaches more than 57 countries and regions and over 10,000 retail stores; these are company-reported figures.",
-    "The U.S. authorized-seller list covers Aiper's own store, Amazon, Walmart, Lowe's, Leslie's, Home Depot, Best Buy and other digital or physical retailers. Aiper states that unauthorized-reseller purchases are outside its warranty policy.",
-    "Fluidra describes Aiper as an omnichannel consumer brand. The reviewed transaction material presents broader access to consumer and professional channels as a strategic benefit; it does not establish that Fluidra is already the seller for every Aiper market or SKU."
+    {
+      "evidence": "Aiper's current company page says the brand reaches more than 57 countries and regions and over 10,000 retail stores; these are company-reported figures.",
+      "scope": "Company-reported global reach",
+      "buyerCheck": "Confirm current local availability and service coverage in the target market."
+    },
+    {
+      "evidence": "The U.S. authorized-seller list covers Aiper's own store, Amazon, Walmart, Lowe's, Leslie's, Home Depot, Best Buy and other digital or physical retailers. Aiper states that unauthorized-reseller purchases are outside its warranty policy.",
+      "scope": "U.S. authorized sellers",
+      "buyerCheck": "Confirm that the seller appears on Aiper's current authorized list and that warranty coverage applies."
+    },
+    {
+      "evidence": "Fluidra describes Aiper as an omnichannel consumer brand. The reviewed transaction material presents broader access to consumer and professional channels as a strategic benefit; it does not establish that Fluidra is already the seller for every Aiper market or SKU.",
+      "scope": "Reviewed transaction material",
+      "buyerCheck": "Confirm the contracting and selling entity for the target market and SKU."
+    }
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Aiper combines a cordless-first pool-cleaner range with skimmers, monitoring and irrigation, giving distributors a broader smart-yard story than a single robot line. Its digital and mass-retail reach can accelerate volume, while Fluidra adds pool-industry access and a possible future majority transaction. The buyer-side pressure sits in execution: joint governance must not be confused with sole ownership, model-level OEM and origin records vary, and two U.S. recalls make authorized channels, warranty handling and product traceability material procurement checks.",

@@ -13,6 +13,29 @@
   "founded": "1993 (Dyson Limited incorporated in 1991)",
   "heroImage": "/images/insights/dyson-at-a-crossroads-cover.jpg",
   "heroImageAlt": "World Clean Biz graphic about Dyson strategy featuring a Dyson cordless vacuum cleaner head",
+  "logoImage": "/images/brands/dyson/logo.webp",
+  "logoImageAlt": "Dyson logo",
+  "logoSourceUrl": "https://www.dyson.com",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/dyson-ownership-headquarters-manufacturing-map.webp",
+      "alt": "Map of Dyson ownership, headquarters and manufacturing relationships",
+      "caption": "This diagram helps readers separate Dyson's ownership evidence from its global headquarters and manufacturing network."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/dyson-washg1-vs-tineco-floor-one-architecture.webp",
+      "alt": "Architecture comparison of Dyson WashG1 and Tineco Floor One",
+      "caption": "This comparison helps buyers understand the different floor-washing architectures used by Dyson and Tineco."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/dyson-global-vacuum-manufacturing-network.webp",
+      "alt": "Map of Dyson's global vacuum manufacturing network",
+      "caption": "This map helps readers understand the dated facility evidence behind Dyson's global manufacturing network."
+    }
+  ],
   "ownership": {
     "summary": "Dyson's company-information page identifies Dyson Technology Limited as one company that operates its websites, apps and connected products with Dyson Limited; it does not identify that entity as the legal company for every Dyson operation. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. That filing proves control of Dyson UK Group Limited, not by itself ultimate control across every Dyson group entity. Dyson's April 2026 California disclosure separately names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting scopes."
   },
@@ -26,31 +49,63 @@
   "productPortfolio": [
     {
       "name": "Vacuum cleaners and floorcare",
-      "positioning": "The core consumer category, spanning cordless, upright, canister, wet-cleaning and robotic formats in selected markets."
+      "positioning": "The core consumer category, spanning cordless, upright, canister, wet-cleaning and robotic formats in selected markets.",
+      "buyerRelevance": "Supports broad premium floorcare planning, with format availability checked by market."
     },
     {
       "name": "Hair care",
-      "positioning": "Premium dryers, stylers and straighteners built around airflow, heat control and motor technology."
+      "positioning": "Premium dryers, stylers and straighteners built around airflow, heat control and motor technology.",
+      "buyerRelevance": "Adds a distinct premium personal-care assortment built on Dyson's motor and airflow platform."
     },
     {
       "name": "Air treatment",
-      "positioning": "Purifiers, humidifiers, fans and heaters that extend the brand into indoor environmental appliances."
+      "positioning": "Purifiers, humidifiers, fans and heaters that extend the brand into indoor environmental appliances.",
+      "buyerRelevance": "Extends Dyson assortment planning into indoor air and climate categories."
     },
     {
       "name": "Audio and wearable technology",
-      "positioning": "A newer category represented by headphones, adding personal electronics to Dyson's appliance portfolio."
+      "positioning": "A newer category represented by headphones, adding personal electronics to Dyson's appliance portfolio.",
+      "buyerRelevance": "Introduces a newer personal-electronics category that needs separate demand and service planning."
     }
   ],
   "manufacturingSupplyChain": [
-    "Dyson's company history says production moved to Malaysia in 2003 to work near suppliers and contract manufacturers; that is a dated network statement, not proof that every current machine is assembled there.",
-    "Dyson says its Singapore motor facility opened in 2012. The company separately reported that facilities in Singapore and the Philippines had produced 150 million Hyperdymium motors by 2023.",
-    "The Philippines Technology Centre combines research, engineering and manufacturing capabilities, while Malmesbury and Hullavington remain important UK research, design and development locations.",
-    "Country of origin and final assembly can vary by model, batch and destination market, so a specific product's rating label and packaging remain the stronger model-level evidence."
+    {
+      "evidence": "Dyson's company history says production moved to Malaysia in 2003 to work near suppliers and contract manufacturers; that is a dated network statement, not proof that every current machine is assembled there.",
+      "scope": "Dated company history",
+      "buyerCheck": "Verify the current assembly location for the exact model rather than inferring Malaysia origin."
+    },
+    {
+      "evidence": "Dyson says its Singapore motor facility opened in 2012. The company separately reported that facilities in Singapore and the Philippines had produced 150 million Hyperdymium motors by 2023.",
+      "scope": "Named motor facilities",
+      "buyerCheck": "Confirm whether the contracted model uses a motor from the named facilities."
+    },
+    {
+      "evidence": "The Philippines Technology Centre combines research, engineering and manufacturing capabilities, while Malmesbury and Hullavington remain important UK research, design and development locations.",
+      "scope": "Named technology and engineering sites",
+      "buyerCheck": "Distinguish development responsibility from final assembly on model-specific documents."
+    },
+    {
+      "evidence": "Country of origin and final assembly can vary by model, batch and destination market, so a specific product's rating label and packaging remain the stronger model-level evidence.",
+      "scope": "Model, batch and destination market",
+      "buyerCheck": "Check the rating label and packaging for country of origin and final assembly."
+    }
   ],
   "marketsChannels": [
-    "Dyson says it operates across 84 markets, supported by its own websites, demonstration stores and third-party retail channels.",
-    "Singapore's St James Power Station is the global headquarters for research, engineering, commercial, advanced-manufacturing and supply-chain teams.",
-    "Malmesbury is described by Dyson as its UK headquarters, keeping a substantial UK engineering base alongside the Singapore-led global structure."
+    {
+      "evidence": "Dyson says it operates across 84 markets, supported by its own websites, demonstration stores and third-party retail channels.",
+      "scope": "Company-reported global channels",
+      "buyerCheck": "Confirm seller authorization, local warranty and service coverage for the target market."
+    },
+    {
+      "evidence": "Singapore's St James Power Station is the global headquarters for research, engineering, commercial, advanced-manufacturing and supply-chain teams.",
+      "scope": "Global headquarters",
+      "buyerCheck": "Confirm the regional commercial and supply-chain counterparty for the purchase."
+    },
+    {
+      "evidence": "Malmesbury is described by Dyson as its UK headquarters, keeping a substantial UK engineering base alongside the Singapore-led global structure.",
+      "scope": "UK headquarters",
+      "buyerCheck": "Confirm which Dyson entity carries the UK sales, warranty and service obligations."
+    }
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Dyson's advantage is a premium global brand supported by proprietary motor and airflow engineering, a wide direct-to-consumer presence and expansion from floorcare into hair care, air treatment and audio. Its challenge is to convert that engineering investment into clearly differentiated products while fast-moving competitors narrow feature gaps and floorcare growth shifts toward wet cleaning and robotics.",

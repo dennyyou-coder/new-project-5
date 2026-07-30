@@ -18,6 +18,29 @@
   "founded": "2022 as Mammotion; the current company timeline traces its technology journey to 2016",
   "heroImage": "/images/blog/luba-mammotion-songling-agilex-company-map-cover.webp",
   "heroImageAlt": "Company map linking the Mammotion brand and LUBA product line to Songling, AgileX and named Mammotion legal entities",
+  "logoImage": "/images/brands/mammotion/logo.webp",
+  "logoImageAlt": "Mammotion logo",
+  "logoSourceUrl": "https://mammotion.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/luba-mammotion-songling-agilex-company-map-cover.webp",
+      "alt": "Company map linking Mammotion and LUBA with Songling and AgileX",
+      "caption": "This diagram helps readers distinguish Mammotion's current brand structure from its Songling and AgileX history."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/mammotion-luba-vs-yuka-robot-mowers.webp",
+      "alt": "Product comparison map of Mammotion LUBA and YUKA robot mowers",
+      "caption": "This comparison helps buyers select between Mammotion's LUBA and YUKA mower platforms."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/mammotion-regional-entity-buyer-check.webp",
+      "alt": "Map of Mammotion regional entities and buyer verification points",
+      "caption": "This diagram helps buyers identify the regional seller, importer, warranty and service entity to verify."
+    }
+  ],
   "ownership": {
     "summary": "Mammotion is privately held, and the reviewed official sources do not disclose a current cap table or controlling parent. A Canadian YUKA trademark record documents a change from Songling Robot (Shenzhen) Co., Ltd. to Shenzhen Mammotion Innovation Co., Ltd. effective 16 January 2024; a later MAMMOTION application names the Shenzhen entity directly. Those records establish a brand-history link, not current parent ownership. Mammotion's own 2022 launch material says the team inherited seven years of AgileX Robotics chassis and algorithm experience; that establishes technology lineage, not current AgileX ownership."
   },
@@ -31,30 +54,58 @@
   "productPortfolio": [
     {
       "name": "LUBA robotic lawn mowers",
-      "positioning": "All-wheel-drive wire-free mowers for complex terrain, spanning large-lawn and compact product families."
+      "positioning": "All-wheel-drive wire-free mowers for complex terrain, spanning large-lawn and compact product families.",
+      "buyerRelevance": "Supports tiered wire-free mower assortments for complex terrain and different lawn sizes."
     },
     {
       "name": "YUKA robotic lawn mowers",
-      "positioning": "Wire-free mowing platforms for smaller or moderate terrain, including models with optional sweeping and dumping workflows."
+      "positioning": "Wire-free mowing platforms for smaller or moderate terrain, including models with optional sweeping and dumping workflows.",
+      "buyerRelevance": "Adds a smaller-terrain platform with optional debris-handling workflows."
     },
     {
       "name": "SPINO robotic pool cleaners",
-      "positioning": "A cordless pool-care extension launched in 2025 and expanded with a higher-end product in 2026."
+      "positioning": "A cordless pool-care extension launched in 2025 and expanded with a higher-end product in 2026.",
+      "buyerRelevance": "Extends Mammotion assortment planning from lawn robotics into cordless pool care."
     },
     {
       "name": "Maston commercial mower concept",
-      "positioning": "A professional autonomous-mowing concept introduced at CES 2026 in feasibility and technology validation, not a mature shipping fleet platform in the reviewed announcement."
+      "positioning": "A professional autonomous-mowing concept introduced at CES 2026 in feasibility and technology validation, not a mature shipping fleet platform in the reviewed announcement.",
+      "buyerRelevance": "Should be treated as a concept-stage commercial platform rather than a current shipping assortment."
     }
   ],
   "manufacturingSupplyChain": [
-    "A 2022 LUBA FCC test report names Hong Kong-based Mammotion Technology Co., Limited as both applicant and manufacturer for the tested AWD 5000, LUBA0001 and AWD 3000 models. The report states that its results apply only to the tested object.",
-    "The FCC equipment authorization record for FCC ID 2BFWS-LUBA2HM names Shenzhen Mammotion Innovation Co., Limited as the applicant and grantee for LUBA 2 AWD, with grants dated 23 and 24 December 2024. Applicant or grantee status establishes the named entity's regulatory filing relationship; it does not by itself identify the manufacturer or factory for every LUBA 2 configuration or current Mammotion product.",
-    "A 2024 Canadian trademark application also names Shenzhen Mammotion Innovation Co., Limited at Mammotion's Shenzhen address. Trademark status does not prove product origin, and Mammotion's current public pages do not provide one manufacturer list covering every LUBA, YUKA and SPINO SKU. Procurement teams should match the rating label, declaration, importer, invoice and warranty entity for the exact generation and market."
+    {
+      "evidence": "A 2022 LUBA FCC test report names Hong Kong-based Mammotion Technology Co., Limited as both applicant and manufacturer for the tested AWD 5000, LUBA0001 and AWD 3000 models. The report states that its results apply only to the tested object.",
+      "scope": "Named tested models",
+      "buyerCheck": "Match the FCC report to the exact AWD 5000, LUBA0001 or AWD 3000 model before relying on its manufacturer record."
+    },
+    {
+      "evidence": "The FCC equipment authorization record for FCC ID 2BFWS-LUBA2HM names Shenzhen Mammotion Innovation Co., Limited as the applicant and grantee for LUBA 2 AWD, with grants dated 23 and 24 December 2024. Applicant or grantee status establishes the named entity's regulatory filing relationship; it does not by itself identify the manufacturer or factory for every LUBA 2 configuration or current Mammotion product.",
+      "scope": "LUBA 2 AWD equipment authorization",
+      "buyerCheck": "Confirm the manufacturer and factory separately for the exact LUBA 2 configuration."
+    },
+    {
+      "evidence": "A 2024 Canadian trademark application also names Shenzhen Mammotion Innovation Co., Limited at Mammotion's Shenzhen address. Trademark status does not prove product origin, and Mammotion's current public pages do not provide one manufacturer list covering every LUBA, YUKA and SPINO SKU. Procurement teams should match the rating label, declaration, importer, invoice and warranty entity for the exact generation and market.",
+      "scope": "Exact generation and market",
+      "buyerCheck": "Match the rating label, declaration, importer, invoice and warranty entity for the exact generation and market."
+    }
   ],
   "marketsChannels": [
-    "Mammotion's current company page says it operates in more than 30 countries and regions, with local operating and service centers in the United States, Canada, the United Kingdom, Germany and Australia.",
-    "The company names Walmart, Home Depot, OBI, Bauhaus and Lowe's among major retail partners, while also selling through regional Mammotion stores and dealers.",
-    "The legal counterparty changes by region and channel. MAMMOTION TECHNOLOGY LLC operates the U.S. store and warranty; Mammotion Technik GmbH provides the reviewed UK warranty. Dealer buyers should verify which entity invoices, imports and services the product."
+    {
+      "evidence": "Mammotion's current company page says it operates in more than 30 countries and regions, with local operating and service centers in the United States, Canada, the United Kingdom, Germany and Australia.",
+      "scope": "Named regional operations",
+      "buyerCheck": "Confirm the local operating and service center responsible for the target market."
+    },
+    {
+      "evidence": "The company names Walmart, Home Depot, OBI, Bauhaus and Lowe's among major retail partners, while also selling through regional Mammotion stores and dealers.",
+      "scope": "Named retail and dealer channels",
+      "buyerCheck": "Confirm seller authorization and the regional dealer agreement before purchase."
+    },
+    {
+      "evidence": "The legal counterparty changes by region and channel. MAMMOTION TECHNOLOGY LLC operates the U.S. store and warranty; Mammotion Technik GmbH provides the reviewed UK warranty. Dealer buyers should verify which entity invoices, imports and services the product.",
+      "scope": "U.S. and UK regional entities",
+      "buyerCheck": "Verify which entity invoices, imports, warrants and services the exact product."
+    }
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Mammotion has moved from a wire-free AWD mower specialist into multiple lawn platforms, pool cleaning and a commercial concept, while building direct, retail and dealer reach across major markets. The breadth and pace of its navigation-led product launches make it a visible challenger to established outdoor-power brands. Its buyer-side constraint is organizational clarity: legal sellers, warranty providers and regulatory applicants differ by region and generation, and the public record does not justify simplifying Songling or AgileX history into current parent ownership or assigning one manufacturer to every SKU.",

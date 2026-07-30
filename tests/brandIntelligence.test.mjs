@@ -31,11 +31,40 @@ const profile = {
   founded: "2018",
   heroImage: "/images/insights/sample-cover.jpg",
   heroImageAlt: "Sample Brand products",
+  logoImage: "/images/brands/sample-brand/logo.webp",
+  logoImageAlt: "Sample Brand logo",
+  logoSourceUrl: "https://example.com/brand-assets",
+  contentVisuals: [
+    {
+      placement: "ownership",
+      src: "/images/blog/sample-brand-company-map.webp",
+      alt: "Diagram of Sample Brand company ownership",
+      caption: "Sample Brand ownership structure based on reviewed company records."
+    },
+    {
+      placement: "portfolio",
+      src: "/images/blog/sample-brand-product-map.webp",
+      alt: "Sample Brand product portfolio map",
+      caption: "Sample Brand product categories and positioning."
+    }
+  ],
   ownership: { summary: "Sample Brand Holdings Ltd. controls the brand." },
   leadership: [{ name: "Alex Example", role: "Founder" }],
-  productPortfolio: [{ name: "Robot vacuums", positioning: "Premium residential floorcare" }],
-  manufacturingSupplyChain: ["Manufacturing statement verified against the cited company source."],
-  marketsChannels: ["Direct ecommerce and distributor channels in named markets."],
+  productPortfolio: [{
+    name: "Robot vacuums",
+    positioning: "Premium residential floorcare",
+    buyerRelevance: "A core line for residential floorcare assortment planning."
+  }],
+  manufacturingSupplyChain: [{
+    evidence: "Manufacturing statement verified against the cited company source.",
+    scope: "Company disclosure",
+    buyerCheck: "Confirm the manufacturer and origin for the contracted SKU."
+  }],
+  marketsChannels: [{
+    evidence: "Direct ecommerce and distributor channels in named markets.",
+    scope: "Named regional markets",
+    buyerCheck: "Confirm seller authorization and local warranty coverage."
+  }],
   competitivePosition: {
     summary: "WCB assessment based on product breadth, channel reach and verified company disclosures.",
     competitorSlugs: ["other-brand"]
@@ -95,6 +124,84 @@ test("normalizes supported brand frontmatter values and removes malformed slugs"
 
 test("accepts a complete published brand profile", () => {
   assert.deepEqual(validateBrandProfile(profile, articles), []);
+});
+
+test("requires complete official logo metadata for a published profile", () => {
+  for (const field of ["logoImage", "logoImageAlt", "logoSourceUrl"]) {
+    const invalidProfile = structuredClone(profile);
+    delete invalidProfile[field];
+    assert.match(
+      validateBrandProfile(invalidProfile, articles).join("\n"),
+      new RegExp(field, "i")
+    );
+  }
+});
+
+test("allows a draft profile to omit official logo metadata", () => {
+  const draftProfile = structuredClone(profile);
+  draftProfile.status = "draft";
+  delete draftProfile.logoImage;
+  delete draftProfile.logoImageAlt;
+  delete draftProfile.logoSourceUrl;
+
+  assert.deepEqual(validateBrandProfile(draftProfile, articles), []);
+});
+
+test("validates any official logo metadata supplied by a draft profile", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.status = "draft";
+  invalidProfile.logoImage = "logo.webp";
+  invalidProfile.logoImageAlt = " ";
+  invalidProfile.logoSourceUrl = "ftp://example.com/logo";
+  const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+
+  assert.match(errors, /logoImage.*\/images\//i);
+  assert.match(errors, /logoImageAlt/i);
+  assert.match(errors, /logoSourceUrl.*HTTP\(S\)/i);
+});
+
+test("requires valid placed content visuals", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.contentVisuals[0].placement = "gallery";
+  invalidProfile.contentVisuals[1].caption = " ";
+  const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+  assert.match(errors, /contentVisuals item 1 placement/i);
+  assert.match(errors, /contentVisuals item 2 caption/i);
+});
+
+test("requires two or three content visuals with local image paths", () => {
+  const tooShortProfile = structuredClone(profile);
+  tooShortProfile.contentVisuals = tooShortProfile.contentVisuals.slice(0, 1);
+  assert.match(
+    validateBrandProfile(tooShortProfile, articles).join("\n"),
+    /contentVisuals.*2 or 3/i
+  );
+
+  const invalidPathProfile = structuredClone(profile);
+  invalidPathProfile.contentVisuals[0].src = "https://example.com/diagram.webp";
+  assert.match(
+    validateBrandProfile(invalidPathProfile, articles).join("\n"),
+    /contentVisuals item 1 src.*\/images\//i
+  );
+});
+
+test("requires structured manufacturing and channel evidence", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.manufacturingSupplyChain[0].scope = "";
+  invalidProfile.marketsChannels[0].buyerCheck = 42;
+  const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+  assert.match(errors, /manufacturingSupplyChain item 1 scope/i);
+  assert.match(errors, /marketsChannels item 1 buyerCheck/i);
+});
+
+test("requires non-empty buyer relevance when provided", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.productPortfolio[0].buyerRelevance = " ";
+
+  assert.match(
+    validateBrandProfile(invalidProfile, articles).join("\n"),
+    /productPortfolio item 1 buyerRelevance/i
+  );
 });
 
 test("accepts a legal entity scope note when one legal name cannot represent the brand", () => {

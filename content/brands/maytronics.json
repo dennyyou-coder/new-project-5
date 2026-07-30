@@ -16,6 +16,29 @@
   "founded": "1983",
   "heroImage": "/images/insights/maytronics-robotic-pool-cleaner-reinvention-cover.jpg",
   "heroImageAlt": "World Clean Biz Maytronics brand-analysis cover featuring a Dolphin Liberty 600 robotic pool cleaner",
+  "logoImage": "/images/brands/maytronics/logo.webp",
+  "logoImageAlt": "Maytronics logo",
+  "logoSourceUrl": "https://www.maytronics.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/dolphin-maytronics-manufacturer-ownership-cover.webp",
+      "alt": "Diagram showing Dolphin as a Maytronics product brand and Maytronics as manufacturer",
+      "caption": "This diagram helps readers distinguish the Dolphin product brand from its Maytronics manufacturer and owner."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/dolphin-pool-cleaner-selection-map.webp",
+      "alt": "Selection map of Dolphin residential and commercial pool cleaners",
+      "caption": "This map helps buyers navigate Dolphin cleaner families by pool and channel requirements."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/dolphin-regional-responsibility-sku-check.webp",
+      "alt": "Map of Dolphin regional responsibility and SKU verification points",
+      "caption": "This diagram helps buyers verify the regional seller, service path and SKU-specific responsibility."
+    }
+  ],
   "ownership": {
     "summary": "Maytronics Ltd. is listed on the Tel Aviv Stock Exchange. Its 2025 annual report identifies Kibbutz Yizre'el Holdings (2004) ACS Ltd. as the company's controlling shareholder. Dolphin is Maytronics' principal robotic pool-cleaner product brand, not a separate parent company."
   },
@@ -39,30 +62,58 @@
   "productPortfolio": [
     {
       "name": "Dolphin residential pool cleaners",
-      "positioning": "The core product brand, covering corded and cordless robots for different residential pool sizes, surfaces and service channels."
+      "positioning": "The core product brand, covering corded and cordless robots for different residential pool sizes, surfaces and service channels.",
+      "buyerRelevance": "Supports residential assortment planning by pool size, surface, power format and service channel."
     },
     {
       "name": "Dolphin commercial pool cleaners",
-      "positioning": "Heavy-duty systems for public, institutional and high-use pools, supported through professional sales and service channels."
+      "positioning": "Heavy-duty systems for public, institutional and high-use pools, supported through professional sales and service channels.",
+      "buyerRelevance": "Requires professional-channel service planning for institutional and high-use pools."
     },
     {
       "name": "Niya autonomous cleaners",
-      "positioning": "A Maytronics-owned value-expansion brand that the 2025 annual report says is built through cooperation with different manufacturers."
+      "positioning": "A Maytronics-owned value-expansion brand that the 2025 annual report says is built through cooperation with different manufacturers.",
+      "buyerRelevance": "Needs separate manufacturer and service verification from Dolphin products."
     },
     {
       "name": "Pool safety, water treatment and adjacent products",
-      "positioning": "A group-level portfolio that includes drowning-detection systems, pool covers and water-treatment products through regional subsidiaries."
+      "positioning": "A group-level portfolio that includes drowning-detection systems, pool covers and water-treatment products through regional subsidiaries.",
+      "buyerRelevance": "Extends group-level assortment planning into safety, covers and water treatment through regional subsidiaries."
     }
   ],
   "manufacturingSupplyChain": [
-    "Maytronics' 2025 annual report says development and production are concentrated mainly in Israel. Dolphin residential and commercial robots are developed and manufactured by the company.",
-    "Maytronics operated robotic pool-cleaner production at Kibbutz Yizre'el and the Dalton Industrial Park from 2016. During 2025 it began gradually consolidating most robot assembly and component production at its expanded Yizre'el site; the filing also describes product-specific development and manufacturing activities in French and Australian subsidiaries.",
-    "During 2025 Maytronics was consolidating product lines and production capacity while moving the new Dolphin EON platform toward serial production. Niya uses cooperation with different manufacturers, so its supply model should not be treated as identical to Dolphin's."
+    {
+      "evidence": "Maytronics' 2025 annual report says development and production are concentrated mainly in Israel. Dolphin residential and commercial robots are developed and manufactured by the company.",
+      "scope": "Dolphin residential and commercial robots",
+      "buyerCheck": "Confirm the origin and manufacturer for the exact Dolphin SKU."
+    },
+    {
+      "evidence": "Maytronics operated robotic pool-cleaner production at Kibbutz Yizre'el and the Dalton Industrial Park from 2016. During 2025 it began gradually consolidating most robot assembly and component production at its expanded Yizre'el site; the filing also describes product-specific development and manufacturing activities in French and Australian subsidiaries.",
+      "scope": "Named production sites and 2025 consolidation",
+      "buyerCheck": "Verify the current assembly site and regional manufacturing responsibility for the exact product."
+    },
+    {
+      "evidence": "During 2025 Maytronics was consolidating product lines and production capacity while moving the new Dolphin EON platform toward serial production. Niya uses cooperation with different manufacturers, so its supply model should not be treated as identical to Dolphin's.",
+      "scope": "Reviewed reporting period",
+      "buyerCheck": "Confirm serial-production status for Dolphin EON and identify the manufacturer for any Niya SKU."
+    }
   ],
   "marketsChannels": [
-    "The 2025 annual report divides sales into professional pool channels, mass market and online. The professional route includes distributors and specialist retailers; mass market uses direct-to-retail; online includes marketplaces, online dealers and Maytronics' own sites or app.",
-    "Maytronics sells and supports products through its Israeli headquarters, subsidiaries and distributors. The filing says the group operates in about 50 countries and earns approximately 98% of revenue outside Israel.",
-    "Regional subsidiaries in North America, France, Australia, Germany, Spain and Portugal support local sales, distribution and service. The buyer's actual seller, authorized service path and warranty terms remain market- and model-specific."
+    {
+      "evidence": "The 2025 annual report divides sales into professional pool channels, mass market and online. The professional route includes distributors and specialist retailers; mass market uses direct-to-retail; online includes marketplaces, online dealers and Maytronics' own sites or app.",
+      "scope": "Professional, mass-market and online channels",
+      "buyerCheck": "Confirm the authorized channel and service path for the target product."
+    },
+    {
+      "evidence": "Maytronics sells and supports products through its Israeli headquarters, subsidiaries and distributors. The filing says the group operates in about 50 countries and earns approximately 98% of revenue outside Israel.",
+      "scope": "Group global channels",
+      "buyerCheck": "Confirm the regional subsidiary or distributor responsible for sales and support."
+    },
+    {
+      "evidence": "Regional subsidiaries in North America, France, Australia, Germany, Spain and Portugal support local sales, distribution and service. The buyer's actual seller, authorized service path and warranty terms remain market- and model-specific.",
+      "scope": "Named regional subsidiaries",
+      "buyerCheck": "Verify the actual seller, authorized service path and warranty terms for the market and model."
+    }
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Maytronics still offers one of the broadest pool-robot systems for distributors, from residential Dolphin models to commercial machines, backed by Israeli production and a long-established dealer and service network. The latest reported quarter shows that the reset is incomplete: first-quarter 2026 revenue fell 10.8%, or 0.8% at constant currency, gross margin declined to 28.4% and the company recorded a NIS 26.4 million net loss amid stronger competition, supply constraints, U.S. tariffs, currency effects and lower manufacturing efficiency. New products gained initial traction and order backlog rose 39%, but Maytronics must convert those signals into profitable supply and channel execution.",

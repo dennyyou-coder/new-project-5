@@ -16,6 +16,29 @@
   "founded": "1876",
   "heroImage": "/images/insights/bissell-crosswave-hard-floor-washer-logic-cover.jpg",
   "heroImageAlt": "BISSELL CrossWave 2.5 wet-dry floor cleaner in a Chinese-market product image",
+  "logoImage": "/images/brands/bissell/logo.webp",
+  "logoImageAlt": "BISSELL logo",
+  "logoSourceUrl": "https://www.bissell.com",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/bissell-company-brand-foundation-map.webp",
+      "alt": "Diagram showing the BISSELL company, family ownership and brand foundation",
+      "caption": "This diagram helps readers understand the family-owned company structure behind the BISSELL brand."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/bissell-little-green-vs-spotclean-platforms.webp",
+      "alt": "Comparison map of BISSELL Little Green and SpotClean product platforms",
+      "caption": "This map helps buyers distinguish the roles of BISSELL's portable extraction platforms."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/tineco-vs-bissell-crosswave-floor-washer-systems.webp",
+      "alt": "System comparison of Tineco floor washers and BISSELL CrossWave",
+      "caption": "This comparison helps readers understand how BISSELL CrossWave competes with Tineco floor-washer systems."
+    }
+  ],
   "ownership": {
     "summary": "BISSELL describes itself as a fifth-generation, family-owned and family-led private company. A U.S. federal-court filing by the companies states that BISSELL Homecare, Inc. is wholly owned by BISSELL Inc. Public sources do not provide a complete shareholder list or individual family ownership percentages, so the supported description is Bissell-family ownership rather than a percentage assigned to one person.",
     "parentCompany": "BISSELL Inc."
@@ -30,35 +53,68 @@
   "productPortfolio": [
     {
       "name": "Vacuums",
-      "positioning": "Upright, canister, cordless, handheld and robotic systems, with a strong emphasis on pet-hair cleaning."
+      "positioning": "Upright, canister, cordless, handheld and robotic systems, with a strong emphasis on pet-hair cleaning.",
+      "buyerRelevance": "Supports a broad residential vacuum assortment with a clear pet-care emphasis."
     },
     {
       "name": "CrossWave wet-dry floor cleaners",
-      "positioning": "A core multi-surface floorcare family combining debris pickup and wet cleaning in corded, cordless and steam-enabled formats."
+      "positioning": "A core multi-surface floorcare family combining debris pickup and wet cleaning in corded, cordless and steam-enabled formats.",
+      "buyerRelevance": "Provides multiple formats for tiering wet-dry floorcare assortments."
     },
     {
       "name": "Carpet and spot cleaners",
-      "positioning": "Deep-cleaning and portable extraction products that extend BISSELL's position beyond routine vacuuming."
+      "positioning": "Deep-cleaning and portable extraction products that extend BISSELL's position beyond routine vacuuming.",
+      "buyerRelevance": "Adds deep-cleaning and portable extraction use cases beyond routine floorcare."
     },
     {
       "name": "Pet-care products",
-      "positioning": "A 2026 expansion represented by the CleanWell automatic litter box and HydrateWell water fountain."
+      "positioning": "A 2026 expansion represented by the CleanWell automatic litter box and HydrateWell water fountain.",
+      "buyerRelevance": "Creates a newer adjacent pet-care assortment that should be planned separately from floorcare."
     },
     {
       "name": "Sanitaire commercial cleaning",
-      "positioning": "A separately positioned brand owned by BISSELL Homecare, serving education, hospitality, healthcare and office facilities with commercial vacuums and floor machines."
+      "positioning": "A separately positioned brand owned by BISSELL Homecare, serving education, hospitality, healthcare and office facilities with commercial vacuums and floor machines.",
+      "buyerRelevance": "Requires separate commercial-channel, service and assortment planning from BISSELL consumer products."
     }
   ],
   "manufacturingSupplyChain": [
-    "BISSELL's 2025 Canadian supply-chain report says BISSELL Inc. is the Michigan parent of the reporting Canadian and Dutch subsidiaries and that the wider organization has more than 2,000 employees.",
-    "The same report says appliances are manufactured through the supply chain in Cambodia, China, Vietnam, Malaysia, Mexico and Indonesia, while cleaning formulas are made in the United States, United Kingdom and China.",
-    "Those country references describe the supply chain and do not establish BISSELL ownership of every factory or the origin of a specific model.",
-    "Sanitaire's site says the commercial brand is owned by BISSELL Homecare, Inc.; BISSELL acquired the Sanitaire commercial vacuum brand from Electrolux in 2018."
+    {
+      "evidence": "BISSELL's 2025 Canadian supply-chain report says BISSELL Inc. is the Michigan parent of the reporting Canadian and Dutch subsidiaries and that the wider organization has more than 2,000 employees.",
+      "scope": "2025 Canadian supply-chain report",
+      "buyerCheck": "Confirm the legal supplier named in the regional contract and shipment documents."
+    },
+    {
+      "evidence": "The same report says appliances are manufactured through the supply chain in Cambodia, China, Vietnam, Malaysia, Mexico and Indonesia, while cleaning formulas are made in the United States, United Kingdom and China.",
+      "scope": "Group supply chain",
+      "buyerCheck": "Check the exact SKU origin and manufacturer on product and shipment records."
+    },
+    {
+      "evidence": "Those country references describe the supply chain and do not establish BISSELL ownership of every factory or the origin of a specific model.",
+      "scope": "Country-level supply-chain disclosure",
+      "buyerCheck": "Do not infer factory ownership; verify the factory and origin for the contracted model."
+    },
+    {
+      "evidence": "Sanitaire's site says the commercial brand is owned by BISSELL Homecare, Inc.; BISSELL acquired the Sanitaire commercial vacuum brand from Electrolux in 2018.",
+      "scope": "Sanitaire brand",
+      "buyerCheck": "Confirm whether the purchase contract and service terms apply to Sanitaire or BISSELL-branded products."
+    }
   ],
   "marketsChannels": [
-    "The 2025 supply-chain report says BISSELL products reach more than 50 countries through retailers, distributors and direct channels.",
-    "BISSELL combines its own ecommerce sites with mass retail, specialist retail and regional distributor networks.",
-    "Sanitaire addresses institutional and commercial customers in education, hospitality, healthcare and office environments, a different channel and use-case scope from the BISSELL consumer brand."
+    {
+      "evidence": "The 2025 supply-chain report says BISSELL products reach more than 50 countries through retailers, distributors and direct channels.",
+      "scope": "Group channel disclosure",
+      "buyerCheck": "Confirm the authorized route to market and warranty entity in the target country."
+    },
+    {
+      "evidence": "BISSELL combines its own ecommerce sites with mass retail, specialist retail and regional distributor networks.",
+      "scope": "Consumer channels",
+      "buyerCheck": "Confirm seller authorization and the applicable regional distributor agreement."
+    },
+    {
+      "evidence": "Sanitaire addresses institutional and commercial customers in education, hospitality, healthcare and office environments, a different channel and use-case scope from the BISSELL consumer brand.",
+      "scope": "Commercial institutional channels",
+      "buyerCheck": "Verify that Sanitaire commercial service and warranty coverage matches the institutional use case."
+    }
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: BISSELL's durable strengths are a broad floorcare portfolio, strong pet-cleaning association, CrossWave category equity and access to both consumer and Sanitaire commercial channels. Its challenge is to keep wet-cleaning and robot products technologically current against Tineco, Shark, Dyson and fast-iterating Asian brands while preserving clear distinctions between family ownership, BISSELL Homecare legal entities and the separately positioned Sanitaire brand.",
