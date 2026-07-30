@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getFeaturedSeriesLinks } from "@/lib/blogSeries";
 import type { Insight } from "@/lib/content";
 
 const fallbackImages = [
@@ -13,11 +14,13 @@ function imageFor(article: Insight, index: number) {
 }
 
 export function BlogSeriesHero({ article }: { article: Insight }) {
+  const { articleHref, seriesHref } = getFeaturedSeriesLinks(article);
+
   return (
     <section className="blog-home-series" aria-labelledby="blog-series-title">
       <Link
         className="blog-home-series-main"
-        href={`/blog/${article.slug}`}
+        href={articleHref}
         aria-label={`Read ${article.title}`}
       >
         <div className="blog-home-series-image">
@@ -36,9 +39,11 @@ export function BlogSeriesHero({ article }: { article: Insight }) {
           <strong>Read latest episode →</strong>
         </div>
       </Link>
-      <Link className="blog-home-series-all" href={`/blog/${article.slug}#series-episodes`}>
-        View all episodes
-      </Link>
+      {seriesHref ? (
+        <Link className="blog-home-series-all" href={seriesHref}>
+          View all episodes
+        </Link>
+      ) : null}
     </section>
   );
 }
