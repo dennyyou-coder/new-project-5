@@ -38,7 +38,7 @@ export function BrandSections({
     <section className="section">
       <div className="insights-page-container">
         <div className="brand-content-sections">
-          <section className="brand-content-section">
+          <section className="brand-content-section" id="company-ownership">
             <h2>Company &amp; Ownership</h2>
             <div className={sectionLayoutClassName(ownershipVisual)}>
               <div className="brand-section-main">
@@ -66,7 +66,7 @@ export function BrandSections({
             </div>
           </section>
 
-          <section className="brand-content-section">
+          <section className="brand-content-section" id="product-portfolio">
             <h2>Product Portfolio</h2>
             <div className={sectionLayoutClassName(portfolioVisual)}>
               <div className="brand-section-main">
@@ -90,9 +90,10 @@ export function BrandSections({
             </div>
           </section>
 
-          <section className="brand-content-section">
+          <section className="brand-content-section" id="manufacturing-channels">
             <h2>Manufacturing &amp; Channels</h2>
-            <div className={sectionLayoutClassName(operationsVisual)}>
+            <div className="brand-section-layout brand-section-layout--operations">
+              {operationsVisual ? <BrandVisual visual={operationsVisual} /> : null}
               <div className="brand-section-tables">
                 <div className="brand-table-group">
                   <h3>Manufacturing &amp; Supply Chain</h3>
@@ -127,11 +128,10 @@ export function BrandSections({
                   />
                 </div>
               </div>
-              {operationsVisual ? <BrandVisual visual={operationsVisual} /> : null}
             </div>
           </section>
 
-          <section className="brand-content-section">
+          <section className="brand-content-section" id="competitive-position">
             <h2>Competitive Position</h2>
             <div className={sectionLayoutClassName(competitionVisual)}>
               <div className="brand-section-main">

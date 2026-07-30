@@ -10,10 +10,14 @@ function ArticleGroup({
 }) {
   if (articles.length === 0) return null;
 
+  const gridClassName = `guide-category-list brand-article-grid ${
+    articles.length === 4 ? "brand-article-grid--balanced" : ""
+  }`.trim();
+
   return (
     <section>
       <h2>{title}</h2>
-      <div className="guide-category-list brand-article-grid">
+      <div className={gridClassName}>
         {articles.map((article) => (
           <article className="guide-card" key={article.slug}>
             <Link href={`/blog/${article.slug}`}>
@@ -55,7 +59,7 @@ export function BrandArticles({
   }
 
   return (
-    <section className="section guides-featured-section">
+    <section className="section guides-featured-section" id="analysis">
       <div className="insights-page-container">
         <p className="eyebrow">World Clean Biz Research</p>
         <ArticleGroup articles={primaryArticles} title="Primary Analysis" />

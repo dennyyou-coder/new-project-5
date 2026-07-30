@@ -577,7 +577,7 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   assert.doesNotMatch(sectionVisualRule, /object-fit:\s*cover/);
   assert.match(
     brandStyles,
-    /\.brand-section-layout--visual\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)\s+minmax\(280px,\s*0\.8fr\)/
+    /\.brand-section-layout--visual\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1\.1fr\)\s+minmax\(280px,\s*0\.8fr\)/
   );
 
   const twoColumnPosition = brandStyles.indexOf("@media (max-width: 1249px)");
@@ -617,15 +617,31 @@ test("brand styles contain logos without cropping and collapse multi-column layo
     mobileStyles,
     new RegExp(`\\${selector}[\\s\\S]*grid-template-columns:\\s*1fr`)
   ));
+  assert.match(
+    mobileStyles,
+    /\.brand-data-table\s*\{[^}]*display:\s*block/
+  );
   assert.match(mobileStyles, /\.brand-data-table thead\s*\{[\s\S]*position:\s*absolute/);
   assert.match(mobileStyles, /\.brand-data-table tr\s*\{[\s\S]*display:\s*block/);
-  assert.match(mobileStyles, /\.brand-data-table td\s*\{[\s\S]*display:\s*grid/);
+  assert.match(mobileStyles, /\.brand-data-table td\s*\{[\s\S]*display:\s*block/);
   assert.match(
     mobileStyles,
     /\.brand-data-table td::before\s*\{[\s\S]*content:\s*attr\(data-label\)/
   );
+  assert.match(
+    mobileStyles,
+    /\.brand-data-table td::before\s*\{[\s\S]*display:\s*block/
+  );
   assert.match(mobileStyles, /\.brand-sources a\s*\{[\s\S]*overflow-wrap:\s*anywhere/);
   assert.match(mobileStyles, /\.brand-detail-hero img\s*\{[\s\S]*(?:aspect-ratio|height):/);
+  assert.match(
+    mobileStyles,
+    /\.brand-content-section,[\s\S]*#timeline,[\s\S]*#analysis,[\s\S]*\.brand-sources\s*\{[\s\S]*scroll-margin-top:\s*148px/
+  );
+  assert.match(
+    mobileStyles,
+    /\.brand-section-layout--operations \.brand-data-table th,[\s\S]*\.brand-section-layout--operations \.brand-data-table td\s*\{[\s\S]*width:\s*auto[\s\S]*min-width:\s*100%/
+  );
 });
 
 test("competitor links meet normal-text contrast and retain a non-color cue", () => {
@@ -753,31 +769,31 @@ test("hero wordmarks remain legible after asset whitespace at desktop and mobile
 
   assert.ok(heroLogoStageRule);
   assert.ok(heroLogoImageRule);
-  assert.match(heroLogoStageRule, /width:\s*min\(360px,\s*100%\)/);
-  assert.match(heroLogoStageRule, /min-height:\s*108px/);
-  assert.match(heroLogoStageRule, /padding:\s*10px/);
-  assert.match(heroLogoImageRule, /height:\s*88px/);
-  assert.match(heroLogoImageRule, /max-height:\s*88px/);
+  assert.match(heroLogoStageRule, /width:\s*min\(280px,\s*100%\)/);
+  assert.match(heroLogoStageRule, /min-height:\s*80px/);
+  assert.match(heroLogoStageRule, /padding:\s*8px/);
+  assert.match(heroLogoImageRule, /height:\s*64px/);
+  assert.match(heroLogoImageRule, /max-height:\s*64px/);
 
   const layouts = [
     {
-      label: "desktop 360px stage",
-      contentWidth: 340,
-      contentHeight: 88,
+      label: "desktop 280px stage",
+      contentWidth: 264,
+      contentHeight: 64,
       minimums: {
-        tineco: { width: 115, height: 20 },
-        dreame: { width: 165, height: 22.5 },
-        aiper: { width: 190, height: 55 }
+        tineco: { width: 80, height: 13 },
+        dreame: { width: 112, height: 15 },
+        aiper: { width: 132, height: 38 }
       }
     },
     {
-      label: "320px viewport with 292px container",
-      contentWidth: 272,
-      contentHeight: 88,
+      label: "mobile 260px stage",
+      contentWidth: 244,
+      contentHeight: 60,
       minimums: {
-        tineco: { width: 95, height: 16.5 },
-        dreame: { width: 136, height: 18.5 },
-        aiper: { width: 157, height: 45 }
+        tineco: { width: 75, height: 12 },
+        dreame: { width: 105, height: 14 },
+        aiper: { width: 124, height: 35 }
       }
     }
   ];
@@ -885,12 +901,62 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
   );
   assert.match(sections, /className="brand-content-sections"/);
   assert.match(sections, /className="brand-content-section"/);
+  assert.match(
+    sections,
+    /className="brand-section-layout brand-section-layout--operations"/
+  );
   assert.match(sections, /<BrandDataTable/);
   assert.match(sections, /<BrandVisual/);
   assert.match(timeline, /<ol className="brand-timeline">/);
-  assert.match(articles, /className="guide-category-list brand-article-grid"/);
-  assert.match(sources, /<section className="section brand-sources">/);
+  assert.match(
+    articles,
+    /const gridClassName = `guide-category-list brand-article-grid \$\{[\s\S]*brand-article-grid--balanced[\s\S]*className=\{gridClassName\}/
+  );
+  assert.match(sources, /<section className="section brand-sources" id="sources">/);
   assert.match(articleBrandLinks, /className="article-brand-links"/);
+});
+
+test("brand detail layout uses compact operations, navigation, and full-size visual affordances", () => {
+  const hero = read("components/brands/BrandHero.tsx");
+  const sections = read("components/brands/BrandSections.tsx");
+  const visual = read("components/brands/BrandVisual.tsx");
+  const styles = read("app/globals.css");
+  const brandStyles = styles.slice(styles.indexOf("/* Brand intelligence hub */"));
+
+  assert.match(hero, /className="brand-section-nav"/);
+  [
+    "#company-ownership",
+    "#product-portfolio",
+    "#manufacturing-channels",
+    "#competitive-position",
+    "#timeline",
+    "#analysis",
+    "#sources"
+  ].forEach((href) => assert.match(hero, new RegExp(`href="${href}"`)));
+
+  [
+    'id="company-ownership"',
+    'id="product-portfolio"',
+    'id="manufacturing-channels"',
+    'id="competitive-position"'
+  ].forEach((id) => assert.match(sections, new RegExp(id)));
+
+  assert.match(
+    brandStyles,
+    /\.brand-section-layout--operations\s*\{[^}]*display:\s*grid/
+  );
+  assert.match(
+    brandStyles,
+    /\.brand-section-layout--operations \.brand-section-tables\s*\{[^}]*order:\s*2/
+  );
+  assert.match(
+    brandStyles,
+    /\.brand-section-layout--operations \.brand-visual\s*\{[^}]*order:\s*1/
+  );
+  assert.match(
+    visual,
+    /<a[\s\S]*className="brand-visual-link"[\s\S]*target="_blank"/
+  );
 });
 
 test("brand and article routes rely on the root layout main landmark", () => {

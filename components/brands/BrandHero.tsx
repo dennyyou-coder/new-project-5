@@ -91,6 +91,16 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
             rows={keyFacts}
           />
         </div>
+
+        <nav className="brand-section-nav" aria-label="Brand profile sections">
+          <a href="#company-ownership">Ownership</a>
+          <a href="#product-portfolio">Products</a>
+          <a href="#manufacturing-channels">Supply Chain</a>
+          <a href="#competitive-position">Competition</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#analysis">Analysis</a>
+          <a href="#sources">Sources</a>
+        </nav>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ export function BrandTimeline({ profile }: { profile: BrandProfile }) {
   const developments = sortBrandDevelopmentsNewestFirst(profile.developments);
 
   return (
-    <section className="section">
+    <section className="section" id="timeline">
       <div className="insights-page-container">
         <div className="section-heading guides-section-heading">
           <p className="eyebrow">Company Developments</p>
