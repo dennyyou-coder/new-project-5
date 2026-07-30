@@ -14,8 +14,8 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Roborock or Xiaomi. Company statements and filings are identified separately from World Clean Biz analysis.",
   "headquarters": "Beijing, China",
   "founded": "July 2014",
-  "heroImage": "/images/insights/roborock-ipo-prospectus-signals-cover.jpg",
-  "heroImageAlt": "Chinese financial table showing Roborock revenue, profit and other company metrics from 2016 to 2018",
+  "heroImage": "/images/brands/roborock/hero-saros-z70.webp",
+  "heroImageAlt": "Roborock Saros Z70 robot vacuum using its OmniGrip mechanical arm",
   "logoImage": "/images/brands/roborock/logo.webp",
   "logoImageAlt": "Roborock logo",
   "logoSourceUrl": "https://global.roborock.com/",
@@ -169,6 +169,13 @@
       "accessedAt": "2026-07-30"
     },
     {
+      "id": "roborock-saros-z70",
+      "title": "Saros Z70",
+      "publisher": "Roborock",
+      "url": "https://global.roborock.com/pages/roborock-saros-z70",
+      "accessedAt": "2026-07-30"
+    },
+    {
       "id": "roborock-2026-results-release",
       "title": "Roborock Reports 56.51% Revenue Growth in 2025; Q1 2026 Revenue Up 23.31%",
       "publisher": "Roborock",
@@ -195,5 +202,5 @@
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T00:45:16+08:00"
+  "lastModified": "2026-07-30T21:15:00+08:00"
 }

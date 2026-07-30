@@ -16,8 +16,8 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Mammotion, Songling Robot or AgileX Robotics. Trademark, regulatory and regional seller records are scoped to the named entity and product.",
   "headquarters": "Shenzhen, China",
   "founded": "2022 as Mammotion; the current company timeline traces its technology journey to 2016",
-  "heroImage": "/images/blog/luba-mammotion-songling-agilex-company-map-cover.webp",
-  "heroImageAlt": "Company map linking the Mammotion brand and LUBA product line to Songling, AgileX and named Mammotion legal entities",
+  "heroImage": "/images/brands/mammotion/hero-robotic-mower-portfolio.webp",
+  "heroImageAlt": "Mammotion robotic mower portfolio including LUBA and YUKA product families",
   "logoImage": "/images/brands/mammotion/logo.webp",
   "logoImageAlt": "Mammotion logo",
   "logoSourceUrl": "https://uk.mammotion.com/pages/icon-reference",
@@ -157,6 +157,13 @@
       "accessedAt": "2026-07-30"
     },
     {
+      "id": "mammotion-luba-3-awd",
+      "title": "LUBA 3 AWD Robot Lawn Mower",
+      "publisher": "Mammotion",
+      "url": "https://us.mammotion.com/pages/luba-3-awd-robot-lawn-mower",
+      "accessedAt": "2026-07-30"
+    },
+    {
       "id": "mammotion-contact",
       "title": "Contact Us",
       "publisher": "Mammotion",
@@ -235,5 +242,5 @@
   ],
   "publishedAt": "2026-07-30T02:02:44+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T02:22:38+08:00"
+  "lastModified": "2026-07-30T21:15:00+08:00"
 }

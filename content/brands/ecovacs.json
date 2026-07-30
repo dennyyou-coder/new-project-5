@@ -15,6 +15,8 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with ECOVACS or Tineco. This profile focuses on ECOVACS Robotics; Tineco product facts are identified as group-level context, not ECOVACS-brand facts.",
   "headquarters": "Suzhou, Jiangsu, China",
   "founded": "1998 (ECOVACS brand launched in 2006)",
+  "heroImage": "/images/brands/ecovacs/hero-deebot-x12-omnicyclone.webp",
+  "heroImageAlt": "ECOVACS DEEBOT X12 OmniCyclone robot vacuum and self-cleaning station",
   "logoImage": "/images/brands/ecovacs/logo.webp",
   "logoImageAlt": "ECOVACS logo",
   "logoSourceUrl": "https://www.ecovacs.com/global",
@@ -189,6 +191,13 @@
       "accessedAt": "2026-07-30"
     },
     {
+      "id": "ecovacs-deebot-x12",
+      "title": "DEEBOT X12 OmniCyclone",
+      "publisher": "ECOVACS",
+      "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone",
+      "accessedAt": "2026-07-30"
+    },
+    {
       "id": "ecovacs-interclean-2026",
       "title": "ECOVACS Commercial Robotics Steps Up European Expansion with New M1 3D Debut at Interclean Amsterdam 2026",
       "publisher": "ECOVACS",
@@ -199,5 +208,5 @@
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T02:35:44+08:00"
+  "lastModified": "2026-07-30T21:15:00+08:00"
 }

@@ -14,8 +14,8 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with BISSELL or Sanitaire. Supply-chain countries do not identify the factory for a specific model, and Sanitaire commercial products are not presented as the entire BISSELL consumer portfolio.",
   "headquarters": "Grand Rapids, Michigan, United States",
   "founded": "1876",
-  "heroImage": "/images/insights/bissell-crosswave-hard-floor-washer-logic-cover.jpg",
-  "heroImageAlt": "BISSELL CrossWave 2.5 wet-dry floor cleaner in a Chinese-market product image",
+  "heroImage": "/images/brands/bissell/hero-crosswave-all-in-one.webp",
+  "heroImageAlt": "BISSELL CrossWave All-in-One multi-surface wet-dry cleaner with solution and storage tray",
   "logoImage": "/images/brands/bissell/logo.webp",
   "logoImageAlt": "BISSELL logo",
   "logoSourceUrl": "https://www.bissell.com/mobify/bundle/2347/static/img/global/logo.png",
@@ -161,6 +161,13 @@
       "accessedAt": "2026-07-30"
     },
     {
+      "id": "bissell-crosswave-1785a",
+      "title": "CrossWave All-in-One Multi-Surface Wet Dry Vac",
+      "publisher": "BISSELL",
+      "url": "https://www.bissell.com/en-us/product/bissell-crosswave-allinone-multisurface-wet-dry-vac-1785A.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
       "id": "bissell-150-pet-care",
       "title": "From Home Care to Pet Care: BISSELL Marks 150 Years of Innovation with New Pet Care Line",
       "publisher": "BISSELL",
@@ -210,5 +217,5 @@
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T01:22:31+08:00"
+  "lastModified": "2026-07-30T21:15:00+08:00"
 }

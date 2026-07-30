@@ -14,6 +14,8 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with iRobot or Picea. Public-company and restructuring facts are dated because iRobot became privately held in January 2026.",
   "headquarters": "Bedford, Massachusetts, United States",
   "founded": "1990",
+  "heroImage": "/images/brands/irobot/hero-roomba-mini.webp",
+  "heroImageAlt": "iRobot Roomba Mini robot vacuum cleaning beneath low furniture",
   "logoImage": "/images/brands/irobot/logo.webp",
   "logoImageAlt": "iRobot logo",
   "logoSourceUrl": "https://media.irobot.com/images/logo_12-2022.png",
@@ -219,5 +221,5 @@
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T01:33:47+08:00"
+  "lastModified": "2026-07-30T21:15:00+08:00"
 }

@@ -809,6 +809,54 @@ test("Tineco uses a dedicated official product photo for its brand hero", async 
   assert.equal(metadata.height, 1000, "tineco hero image height");
 });
 
+test("remaining brand profiles use dedicated high-resolution product heroes", async () => {
+  const expectedHeroes = {
+    bissell: {
+      src: "/images/brands/bissell/hero-crosswave-all-in-one.webp",
+      alt: /BISSELL CrossWave All-in-One/i
+    },
+    dyson: {
+      src: "/images/brands/dyson/hero-clean-wash-hygiene.webp",
+      alt: /Dyson Clean\+Wash Hygiene/i
+    },
+    ecovacs: {
+      src: "/images/brands/ecovacs/hero-deebot-x12-omnicyclone.webp",
+      alt: /ECOVACS DEEBOT X12 OmniCyclone/i
+    },
+    irobot: {
+      src: "/images/brands/irobot/hero-roomba-mini.webp",
+      alt: /iRobot Roomba Mini/i
+    },
+    mammotion: {
+      src: "/images/brands/mammotion/hero-robotic-mower-portfolio.webp",
+      alt: /Mammotion robotic mower portfolio/i
+    },
+    roborock: {
+      src: "/images/brands/roborock/hero-saros-z70.webp",
+      alt: /Roborock Saros Z70/i
+    }
+  };
+
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+
+  for (const [slug, expected] of Object.entries(expectedHeroes)) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.heroImage, expected.src, `${slug} hero path`);
+    assert.match(candidate.heroImageAlt, expected.alt, `${slug} hero alt`);
+
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero image must exist`);
+
+    const metadata = await sharp(heroPath).metadata();
+    assert.equal(metadata.format, "webp", `${slug} hero image must be WebP`);
+    assert.ok(metadata.width >= 1200, `${slug} hero image must be at least 1200 px wide`);
+    assert.ok(metadata.height >= 675, `${slug} hero image must be at least 675 px tall`);
+  }
+});
+
 test("all local official logo files decode as transparent WebP images", async () => {
   for (const candidate of getBrandProfiles()) {
     const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
