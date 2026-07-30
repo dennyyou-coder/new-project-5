@@ -14,6 +14,21 @@ import { formatBrandDate } from "../lib/brandDates.ts";
 const read = (relativePath) =>
   fs.readFileSync(path.join(process.cwd(), relativePath), "utf8");
 
+const readCssBlock = (source, marker) => {
+  const markerPosition = source.indexOf(marker);
+  assert.ok(markerPosition >= 0, `missing CSS block: ${marker}`);
+  const openingBrace = source.indexOf("{", markerPosition);
+  let depth = 0;
+
+  for (let index = openingBrace; index < source.length; index += 1) {
+    if (source[index] === "{") depth += 1;
+    if (source[index] === "}") depth -= 1;
+    if (depth === 0) return source.slice(markerPosition, index + 1);
+  }
+
+  assert.fail(`unclosed CSS block: ${marker}`);
+};
+
 const profile = {
   status: "published",
   slug: "sample-brand",
@@ -385,7 +400,7 @@ test("brand styles contain logos without cropping and collapse multi-column layo
     /\.brand-logo--card\s*\{[^}]*\}/
   )?.[0];
   assert.ok(cardLogoStageRule);
-  assert.match(cardLogoStageRule, /padding:\s*clamp\(14px,\s*2vw,\s*20px\)/);
+  assert.match(cardLogoStageRule, /padding:\s*clamp\(10px,\s*1\.5vw,\s*20px\)/);
   const cardLogoImageRule = brandStyles.match(
     /\.brand-logo--card img\s*\{[^}]*\}/
   )?.[0];
@@ -402,12 +417,36 @@ test("brand styles contain logos without cropping and collapse multi-column layo
     /\.brand-detail-hero img,[\s\S]*\.brand-article-grid img\s*\{[\s\S]*object-fit:\s*cover/
   );
 
+  const twoColumnPosition = brandStyles.indexOf("@media (max-width: 1249px)");
+  const oneColumnPosition = brandStyles.indexOf("@media (max-width: 840px)");
   const mobilePosition = brandStyles.indexOf("@media (max-width: 760px)");
-  assert.ok(mobilePosition >= 0);
-  const mobileStyles = brandStyles.slice(mobilePosition);
+  assert.ok(twoColumnPosition >= 0);
+  assert.ok(oneColumnPosition > twoColumnPosition);
+  assert.ok(mobilePosition > oneColumnPosition);
+
+  const twoColumnStyles = readCssBlock(
+    brandStyles,
+    "@media (max-width: 1249px)"
+  );
+  const oneColumnStyles = readCssBlock(
+    brandStyles,
+    "@media (max-width: 840px)"
+  );
+  const mobileStyles = readCssBlock(
+    brandStyles,
+    "@media (max-width: 760px)"
+  );
+  assert.match(
+    twoColumnStyles,
+    /\.brand-directory-grid\s*\{[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/
+  );
+  assert.match(
+    oneColumnStyles,
+    /\.brand-directory-grid\s*\{[^}]*grid-template-columns:\s*1fr/
+  );
+  assert.doesNotMatch(mobileStyles, /\.brand-directory-grid\b/);
   [
     ".brand-directory-hero",
-    ".brand-directory-grid",
     ".brand-detail-hero",
     ".brand-snapshot-grid",
     ".brand-section-grid",
@@ -420,11 +459,34 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   assert.match(mobileStyles, /\.brand-detail-hero img\s*\{[\s\S]*(?:aspect-ratio|height):/);
 });
 
-test("small directory wordmarks remain legible at the narrow desktop card width", async () => {
+test("directory wordmarks remain legible at real one, two, and three-column boundaries", async () => {
+  const layouts = [
+    {
+      viewportWidth: 390,
+      containerWidth: 362,
+      columns: 1,
+      gap: 24,
+      stagePadding: 10
+    },
+    {
+      viewportWidth: 841,
+      containerWidth: 793,
+      columns: 2,
+      gap: 24,
+      stagePadding: 12.615
+    },
+    {
+      viewportWidth: 1250,
+      containerWidth: 1202,
+      columns: 3,
+      gap: 24,
+      stagePadding: 18.75
+    }
+  ];
   const expectedMinimums = {
     tineco: { width: 120, height: 20 },
-    dreame: { width: 170, height: 24 },
-    aiper: { width: 200, height: 58 }
+    dreame: { width: 170, height: 23 },
+    aiper: { width: 198, height: 58 }
   };
 
   for (const [slug, minimum] of Object.entries(expectedMinimums)) {
@@ -461,22 +523,30 @@ test("small directory wordmarks remain legible at the narrow desktop card width"
 
     const visibleWidth = maximumVisibleX - minimumVisibleX + 1;
     const visibleHeight = maximumVisibleY - minimumVisibleY + 1;
-    const narrowCardContentWidth = 390 - (2 * 20);
-    const renderedCanvasHeight =
-      narrowCardContentWidth * decoded.info.height / decoded.info.width;
-    const renderedVisibleWidth =
-      narrowCardContentWidth * visibleWidth / decoded.info.width;
-    const renderedVisibleHeight =
-      renderedCanvasHeight * visibleHeight / decoded.info.height;
 
-    assert.ok(
-      renderedVisibleWidth >= minimum.width,
-      `${slug} must remain at least ${minimum.width}px wide; actual ${renderedVisibleWidth.toFixed(1)}px`
-    );
-    assert.ok(
-      renderedVisibleHeight >= minimum.height,
-      `${slug} must remain at least ${minimum.height}px high; actual ${renderedVisibleHeight.toFixed(1)}px`
-    );
+    for (const layout of layouts) {
+      const cardWidth =
+        (layout.containerWidth - layout.gap * (layout.columns - 1)) /
+        layout.columns;
+      const stageContentWidth = cardWidth - (2 * layout.stagePadding);
+      const stageContentHeight =
+        cardWidth * 7 / 16 - (2 * layout.stagePadding);
+      const scale = Math.min(
+        stageContentWidth / decoded.info.width,
+        stageContentHeight / decoded.info.height
+      );
+      const renderedVisibleWidth = visibleWidth * scale;
+      const renderedVisibleHeight = visibleHeight * scale;
+
+      assert.ok(
+        renderedVisibleWidth >= minimum.width,
+        `${slug} at ${layout.viewportWidth}px must remain at least ${minimum.width}px wide; actual ${renderedVisibleWidth.toFixed(1)}px`
+      );
+      assert.ok(
+        renderedVisibleHeight >= minimum.height,
+        `${slug} at ${layout.viewportWidth}px must remain at least ${minimum.height}px high; actual ${renderedVisibleHeight.toFixed(1)}px`
+      );
+    }
   }
 });
 

@@ -22567,7 +22567,7 @@ button.contact-help-card > .contact-help-card-copy > span {
   place-items: center;
   width: 100%;
   aspect-ratio: 16 / 7;
-  padding: clamp(14px, 2vw, 20px);
+  padding: clamp(10px, 1.5vw, 20px);
   background: #f4f7fb;
 }
 
@@ -22672,9 +22672,20 @@ button.contact-help-card > .contact-help-card-copy > span {
   font-weight: 800;
 }
 
+@media (max-width: 1249px) {
+  .brand-directory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 840px) {
+  .brand-directory-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 760px) {
   .brand-directory-hero,
-  .brand-directory-grid,
   .brand-detail-hero,
   .brand-snapshot-grid,
   .brand-section-grid,
