@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import sharp from "sharp";
 import test from "node:test";
 import {
   buildBrandCompetitorReferences,
@@ -380,14 +381,19 @@ test("brand styles contain logos without cropping and collapse multi-column layo
     brandStyles,
     /\.brand-logo--card\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*7[^}]*\}/
   );
+  const cardLogoStageRule = brandStyles.match(
+    /\.brand-logo--card\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(cardLogoStageRule);
+  assert.match(cardLogoStageRule, /padding:\s*clamp\(14px,\s*2vw,\s*20px\)/);
   const cardLogoImageRule = brandStyles.match(
     /\.brand-logo--card img\s*\{[^}]*\}/
   )?.[0];
   assert.ok(cardLogoImageRule);
   assert.match(cardLogoImageRule, /width:\s*100%/);
   assert.match(cardLogoImageRule, /height:\s*100%/);
-  assert.match(cardLogoImageRule, /max-width:/);
-  assert.match(cardLogoImageRule, /max-height:/);
+  assert.match(cardLogoImageRule, /max-width:\s*100%/);
+  assert.match(cardLogoImageRule, /max-height:\s*100%/);
   assert.match(cardLogoImageRule, /object-fit:\s*contain/);
   assert.doesNotMatch(cardLogoImageRule, /object-fit:\s*cover/);
   assert.doesNotMatch(cardLogoImageRule, /(?:filter|box-shadow):/);
@@ -412,6 +418,66 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   ));
   assert.match(mobileStyles, /\.brand-sources a\s*\{[\s\S]*overflow-wrap:\s*anywhere/);
   assert.match(mobileStyles, /\.brand-detail-hero img\s*\{[\s\S]*(?:aspect-ratio|height):/);
+});
+
+test("small directory wordmarks remain legible at the narrow desktop card width", async () => {
+  const expectedMinimums = {
+    tineco: { width: 120, height: 20 },
+    dreame: { width: 170, height: 24 },
+    aiper: { width: 200, height: 58 }
+  };
+
+  for (const [slug, minimum] of Object.entries(expectedMinimums)) {
+    const logoPath = path.join(
+      process.cwd(),
+      "public",
+      "images",
+      "brands",
+      slug,
+      "logo.webp"
+    );
+    const decoded = await sharp(logoPath)
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    const alphaChannelIndex = decoded.info.channels - 1;
+    let minimumVisibleX = decoded.info.width;
+    let minimumVisibleY = decoded.info.height;
+    let maximumVisibleX = -1;
+    let maximumVisibleY = -1;
+
+    for (let y = 0; y < decoded.info.height; y += 1) {
+      for (let x = 0; x < decoded.info.width; x += 1) {
+        const alphaIndex =
+          (y * decoded.info.width + x) * decoded.info.channels + alphaChannelIndex;
+        if (decoded.data[alphaIndex] > 0) {
+          minimumVisibleX = Math.min(minimumVisibleX, x);
+          minimumVisibleY = Math.min(minimumVisibleY, y);
+          maximumVisibleX = Math.max(maximumVisibleX, x);
+          maximumVisibleY = Math.max(maximumVisibleY, y);
+        }
+      }
+    }
+
+    const visibleWidth = maximumVisibleX - minimumVisibleX + 1;
+    const visibleHeight = maximumVisibleY - minimumVisibleY + 1;
+    const narrowCardContentWidth = 390 - (2 * 20);
+    const renderedCanvasHeight =
+      narrowCardContentWidth * decoded.info.height / decoded.info.width;
+    const renderedVisibleWidth =
+      narrowCardContentWidth * visibleWidth / decoded.info.width;
+    const renderedVisibleHeight =
+      renderedCanvasHeight * visibleHeight / decoded.info.height;
+
+    assert.ok(
+      renderedVisibleWidth >= minimum.width,
+      `${slug} must remain at least ${minimum.width}px wide; actual ${renderedVisibleWidth.toFixed(1)}px`
+    );
+    assert.ok(
+      renderedVisibleHeight >= minimum.height,
+      `${slug} must remain at least ${minimum.height}px high; actual ${renderedVisibleHeight.toFixed(1)}px`
+    );
+  }
 });
 
 test("brand JSX connects every required CSS selector to rendered content", () => {
