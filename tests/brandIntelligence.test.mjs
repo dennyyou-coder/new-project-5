@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import sharp from "sharp";
 import {
+  buildBrandPageSchemas,
   buildBrandSitemapEntries,
   buildBrandStaticParams,
   getBrandPageData,
@@ -125,6 +126,24 @@ test("normalizes supported brand frontmatter values and removes malformed slugs"
 
 test("accepts a complete published brand profile", () => {
   assert.deepEqual(validateBrandProfile(profile, articles), []);
+});
+
+test("page schema exposes the official logo while preserving the editorial hero image", () => {
+  const schemas = buildBrandPageSchemas(
+    { profile, primaryArticles: [], relatedArticles: [] },
+    "https://worldcleanbiz.com"
+  );
+  const organization = schemas.find((schema) => schema["@type"] === "Organization");
+  const webPage = schemas.find((schema) => schema["@type"] === "WebPage");
+
+  assert.equal(
+    organization.logo,
+    "https://worldcleanbiz.com/images/brands/sample-brand/logo.webp"
+  );
+  assert.equal(
+    webPage.image,
+    "https://worldcleanbiz.com/images/insights/sample-cover.jpg"
+  );
 });
 
 test("requires complete official logo metadata for a published profile", () => {
@@ -508,6 +527,27 @@ test("the release gate validates the exact ten published profiles and approved a
   assert.equal(loadedProfiles.length, 10);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
+  }
+  for (const candidate of publishedProfiles) {
+    const schemas = buildBrandPageSchemas(
+      { profile: candidate, primaryArticles: [], relatedArticles: [] },
+      "https://worldcleanbiz.com"
+    );
+    const organization = schemas.find((schema) => schema["@type"] === "Organization");
+    const webPage = schemas.find((schema) => schema["@type"] === "WebPage");
+
+    assert.equal(
+      organization.logo,
+      `https://worldcleanbiz.com${candidate.logoImage}`,
+      `${candidate.slug} Organization.logo must use the official brand logo`
+    );
+    assert.equal(
+      webPage.image,
+      candidate.heroImage
+        ? `https://worldcleanbiz.com${candidate.heroImage}`
+        : undefined,
+      `${candidate.slug} WebPage.image must remain the editorial hero image`
+    );
   }
 
   assert.equal(Object.keys(expectedPrimaryBrands).length, 30);

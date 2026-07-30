@@ -753,7 +753,8 @@ export function buildBrandPageSchemas(
       "@type": "Organization",
       name: profile.name,
       ...(legalName ? { legalName } : {}),
-      url: profile.officialWebsite
+      url: profile.officialWebsite,
+      logo: `${siteUrl}${profile.logoImage}`
     },
     {
       "@context": "https://schema.org",

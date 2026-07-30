@@ -72,6 +72,12 @@ const profile = {
   disclaimer: "World Clean Biz is not affiliated with Sample Brand.",
   headquarters: "Sample City",
   founded: "2018",
+  heroImage: "/images/insights/sample-cover.jpg",
+  heroImageAlt: "Sample Brand products",
+  logoImage: "/images/brands/sample-brand/logo.webp",
+  logoImageAlt: "Sample Brand logo",
+  logoSourceUrl: "https://example.com/brand-assets",
+  contentVisuals: [],
   ownership: { summary: "Sample Brand Holdings Ltd. controls the brand." },
   leadership: [],
   productPortfolio: [{ name: "Robot vacuums", positioning: "Premium residential floorcare" }],
@@ -131,7 +137,8 @@ test("brand detail schemas use a WebPage about a separate verified organization 
     "@type": "Organization",
     name: "Sample Brand",
     legalName: "Sample Brand Holdings Ltd.",
-    url: "https://example.com"
+    url: "https://example.com",
+    logo: "https://worldcleanbiz.com/images/brands/sample-brand/logo.webp"
   });
 });
 
@@ -152,7 +159,8 @@ test("brand detail schema omits legalName when the profile only has a legal enti
     "@id": "#brand",
     "@type": "Organization",
     name: "Sample Brand",
-    url: "https://example.com"
+    url: "https://example.com",
+    logo: "https://worldcleanbiz.com/images/brands/sample-brand/logo.webp"
   });
 });
 
