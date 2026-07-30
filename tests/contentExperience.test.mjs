@@ -4,42 +4,49 @@ import test from "node:test";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-const [blog, archive, article, css, sitemap] = await Promise.all([
+const [blog, blogLanding, archive, directory, article, css, sitemap, directorySeries, directorySidebar] = await Promise.all([
   read("app/blog/page.tsx"),
+  read("components/BlogLanding.tsx"),
   read("app/blog/archive/page.tsx"),
+  read("components/ContentDirectory.tsx"),
   read("app/blog/[slug]/page.tsx"),
   read("app/globals.css"),
-  read("app/sitemap.ts")
+  read("app/sitemap.ts"),
+  read("components/DirectorySeriesFeature.tsx"),
+  read("components/DirectorySidebar.tsx")
 ]);
 
-test("Blog has one responsive sidebar and clear commercial entry points", () => {
-  assert.match(blog, /blog-editorial-intro/);
-  assert.match(blog, /Explore Market Reports/);
-  assert.match(blog, /Discuss Product Opportunities/);
-  assert.equal((blog.match(/<SidebarContent/g) || []).length, 1);
-  assert.doesNotMatch(blog, /insights-sidebar-desktop/);
-  assert.doesNotMatch(blog, /insights-sidebar-mobile/);
+test("Blog uses the approved full-width landing without a sidebar", () => {
+  assert.match(blog, /blog-home-intro/);
+  assert.match(blog, /<BlogBusinessLinks \/>/);
+  assert.match(blogLanding, /Explore Market Reports/);
+  assert.match(blogLanding, /Discuss Product Opportunities/);
+  assert.doesNotMatch(blog, /SidebarContent/);
+  assert.doesNotMatch(blog, /<aside/);
 });
 
-test("Blog feed does not introduce a nested main landmark", () => {
+test("Blog landing does not introduce a nested main landmark", () => {
   assert.doesNotMatch(blog, /<main className="insights-feed"/);
+  assert.doesNotMatch(blogLanding, /<main\b/);
 });
 
 test("Blog images use intentional eager and lazy loading", () => {
-  assert.match(blog, /fetchPriority="high"/);
-  assert.match(blog, /loading="lazy"/);
-  assert.match(blog, /decoding="async"/);
+  assert.match(blogLanding, /fetchPriority="high"/);
+  assert.match(blogLanding, /loading="lazy"/);
+  assert.match(blogLanding, /decoding="async"/);
 });
 
-test("Archive exposes coverage, reading metadata, and structured data", () => {
-  assert.match(archive, /archive-category-summary/);
-  assert.match(archive, /articles\.length/);
-  assert.match(archive, /article\.readingTime/);
+test("Archive exposes paginated analysis, reading metadata, and structured data", () => {
+  assert.match(archive, /<ContentDirectory/);
+  assert.match(archive, /filteredArticles\.length/);
+  assert.match(directory, /article\.readingTime/);
   assert.match(archive, /CollectionPage/);
   assert.match(archive, /ItemList/);
   assert.match(archive, /BreadcrumbList/);
-  assert.match(archive, /Explore Market Reports/);
-  assert.match(archive, /Explore Sourcing/);
+  assert.match(archive, /getAvailableCompanyKeywords/);
+  assert.match(archive, /navigationTitle: "Company & Brand Index"/);
+  assert.match(archive, /importantTitle: "Important Analysis"/);
+  assert.match(archive, /paginateDirectoryItems/);
 });
 
 test("Article template strengthens trust and related discovery without changing body conversion", () => {
@@ -62,8 +69,16 @@ test("Article schema includes author identity, section, keywords, and publisher 
 
 test("Content pages have isolated responsive and long-reading styles", () => {
   assert.match(css, /Content experience optimization/);
-  assert.match(css, /\.blog-editorial-intro/);
-  assert.match(css, /\.archive-category-summary/);
+  assert.match(css, /\.blog-home-intro/);
+  assert.match(css, /Analysis and Guides directories/);
+  assert.match(css, /\.content-directory-series/);
+  assert.match(css, /\.content-directory-profile/);
+  assert.match(css, /\.content-directory-keywords/);
+  assert.match(css, /\.content-directory-layout/);
+  assert.match(css, /\.content-directory-sidebar/);
+  assert.match(css, /data-sidebar-mode="analysis"/);
+  assert.match(css, /min-height:\s*44px/);
+  assert.match(css, /object-fit:\s*contain/);
   assert.match(css, /\.blog-visible-breadcrumb/);
   assert.match(css, /overflow-x:\s*auto/);
   assert.match(css, /content-visibility:\s*auto/);
@@ -75,14 +90,13 @@ test("Sitemap keeps Blog and Archive discoverable", () => {
   assert.match(sitemap, /"\/blog\/archive"/);
 });
 
-test("Archive separates analysis and guides without changing article links", () => {
-  assert.match(archive, /Analysis &amp; Insights/);
-  assert.match(archive, /Guides &amp; Comparisons/);
-  assert.match(archive, /href="#analysis"/);
-  assert.match(archive, /href="#guides"/);
+test("Archive is an analysis-only directory without changing article links", () => {
+  assert.match(archive, /title="Analysis & Insights"/);
+  assert.match(archive, /id="analysis"/);
   assert.match(archive, /getEditorialInsights/);
-  assert.match(archive, /getGuideInsights/);
-  assert.match(archive, /href=\{`\/blog\/\$\{article\.slug\}`\}/);
+  assert.doesNotMatch(archive, /getGuideInsights/);
+  assert.doesNotMatch(archive, /Guides &amp; Comparisons/);
+  assert.match(archive, /<ContentDirectory/);
 });
 
 test("article breadcrumbs reflect the reader-facing collection", () => {
@@ -91,4 +105,14 @@ test("article breadcrumbs reflect the reader-facing collection", () => {
   assert.match(article, /collectionName/);
   assert.match(article, /World Clean Biz Industry Guides/);
   assert.match(article, /url: `\$\{siteUrl\}\$\{collectionHref\}`/);
+});
+
+test("directory feature and profile use approved existing content", () => {
+  assert.match(directorySeries, /Ongoing Series · Latest Episode/);
+  assert.match(directorySeries, /View all episodes/);
+  assert.match(directorySeries, /objectFit/);
+  assert.match(directorySidebar, /Denny You/);
+  assert.match(directorySidebar, /Founder, World Clean Biz/);
+  assert.match(directorySidebar, /Organizer, World Clean Expo/);
+  assert.match(directorySidebar, /since 2006/);
 });

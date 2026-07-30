@@ -1,41 +1,106 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { GuideCard } from "@/components/GuideCard";
+import { ContentDirectory } from "@/components/ContentDirectory";
 import { getInsights } from "@/lib/content";
+import {
+  directoryHref,
+  paginateDirectoryItems,
+  parseDirectoryPage
+} from "@/lib/contentDirectory";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
 import {
   getFeaturedGuides,
-  getGuideInsights
+  getGuideInsights,
+  getLatestSeriesInsight
 } from "@/lib/insightCollections";
 
+type SearchParams = Promise<Record<string, string | string[] | undefined>>;
+
 const siteUrl = "https://worldcleanbiz.com";
+const featuredSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 
-export const metadata: Metadata = {
-  title: "Industry Guides",
-  description:
-    "World Clean Biz guides help buyers and industry professionals research brands, compare cleaning products, evaluate suppliers and understand market technologies.",
-  alternates: { canonical: "/guides" },
-  openGraph: {
-    title: "World Clean Biz Industry Guides",
+export async function generateMetadata({
+  searchParams
+}: {
+  searchParams?: SearchParams;
+}): Promise<Metadata> {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const hasQueryParams = Object.values(resolvedSearchParams).some((value) =>
+    Array.isArray(value) ? value.length > 0 : typeof value !== "undefined"
+  );
+
+  return {
+    title: "Industry Guides",
     description:
-      "Brand ownership, product comparisons, buying guides, sourcing research and technology explainers for the global cleaning industry.",
-    type: "website",
-    url: "/guides",
-    images: ["/images/industry/sourcing-product-components-2025.jpg"]
-  }
-};
+      "World Clean Biz guides help buyers and industry professionals research brands, compare cleaning products, evaluate suppliers and understand market technologies.",
+    alternates: { canonical: "/guides" },
+    robots: hasQueryParams
+      ? {
+          index: false,
+          follow: true
+        }
+      : {
+          index: true,
+          follow: true
+        },
+    openGraph: {
+      title: "World Clean Biz Industry Guides",
+      description:
+        "Brand ownership, product comparisons, buying guides, sourcing research and technology explainers for the global cleaning industry.",
+      type: "website",
+      url: "/guides",
+      images: ["/images/industry/sourcing-product-components-2025.jpg"]
+    }
+  };
+}
 
-export default function GuidesPage() {
+export default async function GuidesPage({
+  searchParams
+}: {
+  searchParams?: SearchParams;
+}) {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const hasQueryParams = Object.values(resolvedSearchParams).some((value) =>
+    Array.isArray(value) ? value.length > 0 : typeof value !== "undefined"
+  );
   const allArticles = getInsights();
   const guides = getGuideInsights(allArticles);
-  const featuredGuides = getFeaturedGuides(allArticles, 6);
+  const {
+    items: visibleGuides,
+    currentPage,
+    totalPages,
+    pageStart
+  } = paginateDirectoryItems(
+    guides,
+    parseDirectoryPage(resolvedSearchParams.page)
+  );
+  const pagination = Array.from({ length: totalPages }, (_, index) => {
+    const page = index + 1;
+    return {
+      page,
+      href: directoryHref("/guides", page),
+      current: page === currentPage
+    };
+  });
+  const filters = [
+    { label: "All Guides", href: "/guides", active: true },
+    ...GUIDE_TYPE_CONFIG.map((guideType) => ({
+      label: guideType.label,
+      href: guideType.href,
+      active: false
+    }))
+  ];
+  const latestSeriesArticle =
+    !hasQueryParams && currentPage === 1
+      ? getLatestSeriesInsight(allArticles, featuredSeries)
+      : undefined;
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Featured World Clean Biz Industry Guides",
-    itemListElement: featuredGuides.map((article, index) => ({
+    name: "World Clean Biz Industry Guides",
+    numberOfItems: guides.length,
+    itemListElement: visibleGuides.map((article, index) => ({
       "@type": "ListItem",
-      position: index + 1,
+      position: pageStart + index + 1,
       name: article.title,
       url: `${siteUrl}/blog/${article.slug}`
     }))
@@ -65,92 +130,42 @@ export default function GuidesPage() {
   };
 
   return (
-    <div className="guides-hub">
-      <section className="guides-hero">
-        <div className="insights-page-container guides-hero-grid">
-          <div>
-            <p className="eyebrow">World Clean Biz Guides</p>
-            <h1>Industry Guides For Better Product, Brand And Sourcing Decisions.</h1>
-            <p>
-              Research brand ownership, compare cleaning products, evaluate
-              suppliers and understand the technologies shaping the market.
-            </p>
-          </div>
-          <div className="guides-hero-stat">
-            <strong>{guides.length}</strong>
-            <span>Practical guides across six decision areas</span>
-            <Link href="/blog">Read Industry Analysis</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section guides-featured-section">
-        <div className="insights-page-container">
-          <div className="section-heading guides-section-heading">
-            <p className="eyebrow">Featured Guides</p>
-            <h2>Start With High-Value Buyer And Sourcing Research.</h2>
-          </div>
-          <div className="guides-featured-grid">
-            {featuredGuides.map((article) => (
-              <GuideCard article={article} key={article.slug} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section guides-browse-section">
-        <div className="insights-page-container">
-          <div className="section-heading guides-section-heading">
-            <p className="eyebrow">Browse By Decision</p>
-            <h2>Find The Research That Matches Your Next Question.</h2>
-          </div>
-          <div className="guides-category-grid">
-            {GUIDE_TYPE_CONFIG.map((guideType) => {
-              const articles = getGuideInsights(allArticles, guideType.type).slice(
-                0,
-                4
-              );
-
-              return (
-                <section className="guides-category-panel" key={guideType.type}>
-                  <div className="guides-category-heading">
-                    <span>{articles.length ? `${getGuideInsights(allArticles, guideType.type).length} guides` : "New guides"}</span>
-                    <h2>{guideType.label}</h2>
-                    <p>{guideType.description}</p>
-                  </div>
-                  <div className="guides-category-links">
-                    {articles.map((article) => (
-                      <Link href={`/blog/${article.slug}`} key={article.slug}>
-                        {article.title}
-                      </Link>
-                    ))}
-                  </div>
-                  <Link className="guides-category-action" href={guideType.href}>
-                    View {guideType.label} →
-                  </Link>
-                </section>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      <section className="section guides-editorial-return">
-        <div className="insights-page-container guides-editorial-return-inner">
-          <div>
-            <p className="eyebrow">Analysis &amp; Insights</p>
-            <h2>Looking For Original Industry Analysis?</h2>
-            <p>
-              Follow company strategy, market shifts and category signals in
-              the World Clean Biz Blog.
-            </p>
-          </div>
-          <Link className="button" href="/blog">
-            Read Industry Analysis
-          </Link>
-        </div>
-      </section>
-
+    <>
+      <ContentDirectory
+        variant="guides"
+        eyebrow="World Clean Biz Guides"
+        title="Industry Guides"
+        description="Research brand ownership, compare cleaning products, evaluate suppliers and understand the technologies shaping the market."
+        totalLabel={`${guides.length} practical guides`}
+        articles={visibleGuides}
+        filters={filters}
+        pagination={pagination}
+        previousHref={
+          currentPage > 1
+            ? directoryHref("/guides", currentPage - 1)
+            : undefined
+        }
+        nextHref={
+          currentPage < totalPages
+            ? directoryHref("/guides", currentPage + 1)
+            : undefined
+        }
+        featuredSeriesArticle={latestSeriesArticle}
+        sidebar={{
+          mode: "guides",
+          navigationTitle: "Guide Categories",
+          navigationLinks: [
+            { label: "All Industry Guides", href: "/guides", active: true },
+            ...GUIDE_TYPE_CONFIG.map((guideType) => ({
+              label: guideType.label,
+              href: guideType.href
+            }))
+          ],
+          importantTitle: "Essential Guides",
+          importantArticles: getFeaturedGuides(allArticles, 6),
+          importantMeta: "readingTime"
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -161,6 +176,6 @@ export default function GuidesPage() {
           ])
         }}
       />
-    </div>
+    </>
   );
 }
