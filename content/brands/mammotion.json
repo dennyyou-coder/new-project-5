@@ -48,7 +48,13 @@
     {
       "name": "Jidong (Jayden) Wei",
       "role": "Founder and CEO",
-      "context": "The 2022 LUBA announcement names Jidong Wei as founder; Mammotion's 2026 announcement uses Jayden Wei as CEO."
+      "context": "The 2022 LUBA announcement names Jidong Wei as founder; Mammotion's 2026 announcement uses Jayden Wei as CEO.",
+      "portrait": {
+        "src": "/images/brands/mammotion/founder-jidong-wei.webp",
+        "alt": "Jidong (Jayden) Wei, founder and CEO of Mammotion",
+        "credit": "Green Industry Pros; cropped by World Clean Biz",
+        "sourceUrl": "https://www.greenindustrypros.com/mowing-maintenance/contact/22340213/jidong-wei"
+      }
     }
   ],
   "productPortfolio": [

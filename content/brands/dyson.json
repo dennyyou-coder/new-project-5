@@ -43,7 +43,13 @@
     {
       "name": "Sir James Dyson",
       "role": "Founder and Chairman",
-      "context": "Companies House records him as the active person with significant control of Dyson UK Group Limited."
+      "context": "Companies House records him as the active person with significant control of Dyson UK Group Limited.",
+      "portrait": {
+        "src": "/images/brands/dyson/founder-james-dyson.webp",
+        "alt": "Sir James Dyson, founder and chairman of Dyson",
+        "credit": "The Royal Society / Wikimedia Commons, CC BY-SA 4.0; cropped by World Clean Biz",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sir_James_Dyson_CBE_FREng_FRS.jpg"
+      }
     }
   ],
   "productPortfolio": [
