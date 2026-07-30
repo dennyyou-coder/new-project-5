@@ -511,18 +511,24 @@ test("sorts brand articles by absolute time with deterministic invalid and tie f
   ]);
 });
 
-test("the release gate validates the exact sixteen published profiles and approved article relationships", () => {
+test("the release gate validates the exact twenty-two published profiles and approved article relationships", () => {
   const expectedSlugs = [
     "aiper",
     "beatbot",
     "bissell",
+    "dji-romo",
     "dreame",
     "dyson",
     "ecovacs",
+    "eufy",
+    "hoover",
     "husqvarna",
     "irobot",
+    "karcher",
     "mammotion",
     "maytronics",
+    "miele",
+    "mova",
     "narwal",
     "roborock",
     "segway-navimow",
@@ -534,7 +540,10 @@ test("the release gate validates the exact sixteen published profiles and approv
     "aiper-fluidra-pool-robotics-alliance": ["aiper"],
     "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x": ["aiper", "beatbot"],
     "aiper-vs-wybot-fluidra-wybotics": ["aiper", "wybot"],
+    "anker-cleaning-appliance-strategy-analysis": ["eufy"],
+    "anker-needs-a-hard-battle": ["eufy"],
     "beatbot-vs-dolphin-xingmai-maytronics": ["beatbot", "maytronics"],
+    "bissell-little-green-vs-hoover-cleanslate": ["bissell", "hoover"],
     "bissell-crosswave-hard-floor-washer-logic": ["bissell"],
     "bissell-robot-vacuums-flexclean-strategy": ["bissell"],
     "commercial-robotic-mower-market-navimow-mammotion": ["mammotion"],
@@ -542,17 +551,26 @@ test("the release gate validates the exact sixteen published profiles and approv
     "dreame-new-disruptor-in-vacuums": ["dreame"],
     "dreame-rise-to-10-billion-in-five-years": ["dreame"],
     "dyson-at-a-crossroads": ["dyson"],
+    "dji-romo-launch-analysis": ["dji-romo"],
+    "dji-romo-p-vs-ecovacs-deebot-x11": ["dji-romo", "ecovacs"],
+    "dji-romo-p-vs-roborock-saros-10r": ["dji-romo", "roborock"],
+    "dji-romo-weaknesses-exposed": ["dji-romo"],
     "ecovacs-2018-annual-report-signals": ["ecovacs"],
     "ecovacs-at-a-crossroads": ["ecovacs"],
     "ecovacs-invests-in-battery-cell-factory": ["ecovacs"],
     "husqvarna-automower-vs-mammotion-luba": ["husqvarna", "mammotion"],
+    "hoover-cleanslate-vs-shark-stainstriker": ["hoover", "shark"],
     "irobot-decline-and-the-new-robot-vacuum-order": ["irobot"],
     "irobot-financial-crisis": ["irobot"],
-    "is-dreame-owned-by-xiaomi": ["dreame"],
+    "is-dreame-owned-by-xiaomi": ["dreame", "mova"],
     "is-roborock-owned-by-xiaomi": ["roborock"],
     "luba-vs-navimow-mammotion-ninebot": ["mammotion", "segway-navimow"],
     "mammotion-luba-vs-yuka-robot-mowers": ["mammotion"],
     "maytronics-robotic-pool-cleaner-reinvention": ["maytronics"],
+    "german-vacuum-brands-in-the-cordless-wave": ["karcher", "miele"],
+    "karcher-hidden-champion-in-cleaning-appliances": ["karcher"],
+    "miele-duoflex-hx2-floor-washer": ["miele"],
+    "mova-took-me-to-meet-a-celebrity": ["mova"],
     "narwal-vs-ecovacs-robot-vacuums": ["narwal", "ecovacs"],
     "roborock-channel-shift-online-to-offline-experience": ["roborock"],
     "roborock-ipo-prospectus-signals": ["roborock"],
@@ -565,14 +583,19 @@ test("the release gate validates the exact sixteen published profiles and approv
     "where-are-dyson-vacuums-made": ["dyson"],
     "who-makes-dolphin-pool-cleaners-maytronics": ["maytronics"],
     "who-makes-luba-robot-mowers-mammotion-agilex": ["mammotion"],
+    "who-makes-mova-robot-mowers-dreame-group": ["mova"],
     "who-makes-wybot-pool-cleaners-wybotics-wangyuan": ["wybot"],
     "who-owns-aiper-fluidra-stake": ["aiper"],
     "who-owns-beatbot-xingmai-manufacturing": ["beatbot"],
     "who-owns-bissell-family-sanitaire": ["bissell"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
     "who-owns-husqvarna-automower-motorcycles": ["husqvarna"],
+    "who-owns-hoover-tti-haier-candy": ["hoover"],
     "who-owns-irobot-roomba-picea-robotics": ["irobot"],
     "who-owns-narwal-yunjing-investors-manufacturing": ["narwal"],
+    "who-owns-eufy-anker-smart-home": ["eufy"],
+    "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
+    "who-owns-miele-family-manufacturing-network": ["miele"],
     "who-owns-segway-navimow-ninebot-willand": ["segway-navimow"],
     "who-owns-sharkninja-js-global-joyoung": ["shark"],
     "who-owns-tineco-ecovacs-group": ["tineco"],
@@ -591,7 +614,7 @@ test("the release gate validates the exact sixteen published profiles and approv
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 16);
+  assert.equal(loadedProfiles.length, 22);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -617,8 +640,8 @@ test("the release gate validates the exact sixteen published profiles and approv
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 46);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 59);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 63);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 83);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.deepEqual(
@@ -630,8 +653,14 @@ test("the release gate validates the exact sixteen published profiles and approv
       "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x",
       "aiper-vs-wybot-fluidra-wybotics",
       "beatbot-vs-dolphin-xingmai-maytronics",
+      "bissell-little-green-vs-hoover-cleanslate",
+      "dji-romo-p-vs-ecovacs-deebot-x11",
+      "dji-romo-p-vs-roborock-saros-10r",
       "dolphin-vs-aiper-maytronics-fluidra",
+      "german-vacuum-brands-in-the-cordless-wave",
+      "hoover-cleanslate-vs-shark-stainstriker",
       "husqvarna-automower-vs-mammotion-luba",
+      "is-dreame-owned-by-xiaomi",
       "luba-vs-navimow-mammotion-ninebot",
       "narwal-vs-ecovacs-robot-vacuums",
       "roborock-vs-narwal-robot-vacuums",
@@ -661,7 +690,7 @@ test("the release gate validates the exact sixteen published profiles and approv
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles();
-  assert.equal(profiles.length, 16);
+  assert.equal(profiles.length, 22);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -680,6 +709,57 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("third batch profiles use dedicated assets, article depth, and explicit identity boundaries", async () => {
+  const newSlugs = ["dji-romo", "eufy", "hoover", "karcher", "miele", "mova"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const articles = getInsights();
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+
+    assert.ok(
+      articles.filter((article) => article.primaryBrands.includes(slug)).length >= 3,
+      `${slug} must have at least three primary articles`
+    );
+  }
+
+  assert.match(
+    profilesBySlug.get("dji-romo").disclaimer,
+    /ROMO|cleaning/i,
+    "DJI ROMO must remain scoped to the cleaning-robot business"
+  );
+  assert.match(
+    profilesBySlug.get("hoover").ownership.summary,
+    /North America/i,
+    "Hoover ownership must identify the North American boundary"
+  );
+  assert.match(
+    profilesBySlug.get("hoover").ownership.summary,
+    /Europe|European/i,
+    "Hoover ownership must identify the European boundary"
+  );
 });
 
 test("second batch profiles use dedicated local logos, product heroes, and active competitor links", async () => {
