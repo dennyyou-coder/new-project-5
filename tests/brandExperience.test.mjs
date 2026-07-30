@@ -583,6 +583,123 @@ test("directory wordmarks remain legible at real one, two, and three-column boun
   }
 });
 
+test("hero wordmarks remain legible after asset whitespace at desktop and mobile widths", async () => {
+  const source = read("app/globals.css");
+  const brandStyles = source.slice(source.indexOf("/* Brand intelligence hub */"));
+  const heroLogoStageRule = brandStyles.match(
+    /\.brand-logo--hero\s*\{[^}]*\}/
+  )?.[0];
+  const heroLogoImageRule = brandStyles.match(
+    /\.brand-logo--hero img\s*\{[^}]*\}/
+  )?.[0];
+
+  assert.ok(heroLogoStageRule);
+  assert.ok(heroLogoImageRule);
+  assert.match(heroLogoStageRule, /width:\s*min\(360px,\s*100%\)/);
+  assert.match(heroLogoStageRule, /min-height:\s*108px/);
+  assert.match(heroLogoStageRule, /padding:\s*10px/);
+  assert.match(heroLogoImageRule, /height:\s*88px/);
+  assert.match(heroLogoImageRule, /max-height:\s*88px/);
+
+  const layouts = [
+    {
+      label: "desktop 360px stage",
+      contentWidth: 340,
+      contentHeight: 88,
+      minimums: {
+        tineco: { width: 115, height: 20 },
+        dreame: { width: 165, height: 22.5 },
+        aiper: { width: 190, height: 55 }
+      }
+    },
+    {
+      label: "320px viewport with 292px container",
+      contentWidth: 272,
+      contentHeight: 88,
+      minimums: {
+        tineco: { width: 95, height: 16.5 },
+        dreame: { width: 136, height: 18.5 },
+        aiper: { width: 157, height: 45 }
+      }
+    }
+  ];
+
+  for (const slug of ["tineco", "dreame", "aiper"]) {
+    const logoPath = path.join(
+      process.cwd(),
+      "public",
+      "images",
+      "brands",
+      slug,
+      "logo.webp"
+    );
+    const decoded = await sharp(logoPath)
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    const alphaChannelIndex = decoded.info.channels - 1;
+    let minimumVisibleX = decoded.info.width;
+    let minimumVisibleY = decoded.info.height;
+    let maximumVisibleX = -1;
+    let maximumVisibleY = -1;
+
+    for (let y = 0; y < decoded.info.height; y += 1) {
+      for (let x = 0; x < decoded.info.width; x += 1) {
+        const alphaIndex =
+          (y * decoded.info.width + x) * decoded.info.channels + alphaChannelIndex;
+        if (decoded.data[alphaIndex] > 0) {
+          minimumVisibleX = Math.min(minimumVisibleX, x);
+          minimumVisibleY = Math.min(minimumVisibleY, y);
+          maximumVisibleX = Math.max(maximumVisibleX, x);
+          maximumVisibleY = Math.max(maximumVisibleY, y);
+        }
+      }
+    }
+
+    const visibleWidth = maximumVisibleX - minimumVisibleX + 1;
+    const visibleHeight = maximumVisibleY - minimumVisibleY + 1;
+
+    for (const layout of layouts) {
+      const scale = Math.min(
+        layout.contentWidth / decoded.info.width,
+        layout.contentHeight / decoded.info.height
+      );
+      const renderedVisibleWidth = visibleWidth * scale;
+      const renderedVisibleHeight = visibleHeight * scale;
+      const minimum = layout.minimums[slug];
+
+      assert.ok(
+        renderedVisibleWidth >= minimum.width,
+        `${slug} in ${layout.label} must remain at least ${minimum.width}px wide; actual ${renderedVisibleWidth.toFixed(1)}px`
+      );
+      assert.ok(
+        renderedVisibleHeight >= minimum.height,
+        `${slug} in ${layout.label} must remain at least ${minimum.height}px high; actual ${renderedVisibleHeight.toFixed(1)}px`
+      );
+    }
+  }
+});
+
+test("mobile key-fact labels retain sufficient white opacity on the dark hero", () => {
+  const source = read("app/globals.css");
+  const brandStyles = source.slice(source.indexOf("/* Brand intelligence hub */"));
+  const mobileStyles = readCssBlock(brandStyles, "@media (max-width: 760px)");
+  const labelRule = mobileStyles.match(
+    /\.brand-key-facts \.brand-data-table td::before\s*\{[^}]*\}/
+  )?.[0];
+
+  assert.ok(labelRule);
+  const alpha = Number(
+    labelRule.match(
+      /color:\s*rgba\(255,\s*255,\s*255,\s*([0-9.]+)\)/
+    )?.[1]
+  );
+  assert.ok(
+    Number.isFinite(alpha) && alpha >= 0.68,
+    `mobile key-fact label opacity must be at least 0.68; actual ${alpha}`
+  );
+});
+
 test("brand JSX connects every required CSS selector to rendered content", () => {
   const directoryRoute = read("app/brands/page.tsx");
   const detailRoute = read("app/brands/[slug]/page.tsx");
