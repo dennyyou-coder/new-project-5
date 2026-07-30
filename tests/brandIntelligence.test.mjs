@@ -792,6 +792,23 @@ test("Tineco uses a verified founder portrait without duplicating the leadership
   assert.equal(metadata.height, 840, "tineco portrait height");
 });
 
+test("Tineco uses a dedicated official product photo for its brand hero", async () => {
+  const candidate = getBrandProfiles().find(({ slug }) => slug === "tineco");
+  assert.ok(candidate, "tineco profile must exist");
+  assert.equal(
+    candidate.heroImage,
+    "/images/brands/tineco/hero-floor-one-s9-artist-steam.webp"
+  );
+  assert.match(candidate.heroImageAlt, /Tineco FLOOR ONE S9 Artist Steam/i);
+
+  const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+  assert.equal(fs.existsSync(heroPath), true, "tineco hero image must exist");
+  const metadata = await sharp(heroPath).metadata();
+  assert.equal(metadata.format, "webp", "tineco hero image must be WebP");
+  assert.equal(metadata.width, 1300, "tineco hero image width");
+  assert.equal(metadata.height, 1000, "tineco hero image height");
+});
+
 test("all local official logo files decode as transparent WebP images", async () => {
   for (const candidate of getBrandProfiles()) {
     const logoPath = path.join(process.cwd(), "public", candidate.logoImage);

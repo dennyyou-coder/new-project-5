@@ -14,8 +14,8 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Tineco or ECOVACS. Group-level disclosures and model-specific factory documents are identified separately and should not be generalized to every Tineco product.",
   "headquarters": "Suzhou, Jiangsu, China",
   "founded": "1998 operating and factory heritage; TEK rebranded as Tineco in 2018",
-  "heroImage": "/images/insights/tineco-lacks-innovation-cover.jpg",
-  "heroImageAlt": "Floor-washer demonstrations in a World Clean Biz analysis of Tineco",
+  "heroImage": "/images/brands/tineco/hero-floor-one-s9-artist-steam.webp",
+  "heroImageAlt": "Tineco FLOOR ONE S9 Artist Steam floor washer in a home with a child and dog",
   "logoImage": "/images/brands/tineco/logo.webp",
   "logoImageAlt": "Tineco logo",
   "logoSourceUrl": "https://global.tineco.com/imgs/logo.png",
@@ -214,6 +214,13 @@
       "accessedAt": "2026-07-30"
     },
     {
+      "id": "tineco-floor-one-s9-artist-steam",
+      "title": "FLOOR ONE S9 Artist Steam",
+      "publisher": "Tineco",
+      "url": "https://us.tineco.com/products/floor-one-s9-artist-steam.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
       "id": "tineco-contact",
       "title": "Contact Tineco",
       "publisher": "Tineco",
@@ -223,5 +230,5 @@
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T19:55:10+08:00"
+  "lastModified": "2026-07-30T20:18:52+08:00"
 }
