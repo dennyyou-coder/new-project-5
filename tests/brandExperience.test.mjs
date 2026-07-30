@@ -382,7 +382,9 @@ test("brand sections pair structured tables with each configured visual placemen
   const sections = read("components/brands/BrandSections.tsx");
 
   assert.match(sections, /selectBrandContentVisuals\(profile\.contentVisuals\)/);
-  assert.match(sections, /buildLeadershipRows\(profile\.leadership\)/);
+  assert.match(sections, /partitionFeaturedLeadership\(\s*profile\.leadership\s*\)/);
+  assert.match(sections, /<BrandFounderCard leader=\{featuredLeader\}/);
+  assert.match(sections, /buildLeadershipRows\(tableLeaders\)/);
   [
     "ownership",
     "portfolio",
@@ -418,6 +420,7 @@ test("brand section helpers keep first unique visuals and provide an empty-leade
 
   assert.equal(typeof helpers?.selectBrandContentVisuals, "function");
   assert.equal(typeof helpers?.buildLeadershipRows, "function");
+  assert.equal(typeof helpers?.partitionFeaturedLeadership, "function");
 
   const visual = (placement, src) => ({
     placement,
@@ -445,6 +448,51 @@ test("brand section helpers keep first unique visuals and provide an empty-leade
       evidenceNote: "No named leader was identified in reviewed sources."
     }
   ]);
+
+  const founder = {
+    name: "Alex Example",
+    role: "Founder and CEO",
+    context: "Identified in the reviewed company announcement.",
+    portrait: {
+      src: "/images/brands/sample-brand/founder.webp",
+      alt: "Alex Example, founder and CEO of Sample Brand",
+      credit: "Sample Brand",
+      sourceUrl: "https://example.com/press"
+    }
+  };
+  const chair = {
+    name: "Taylor Example",
+    role: "Chair"
+  };
+
+  assert.deepEqual(
+    helpers.partitionFeaturedLeadership([founder, chair]),
+    {
+      featuredLeader: founder,
+      tableLeaders: [chair]
+    }
+  );
+  assert.deepEqual(
+    helpers.partitionFeaturedLeadership([chair]),
+    {
+      featuredLeader: undefined,
+      tableLeaders: [chair]
+    }
+  );
+});
+
+test("founder card exposes the portrait, leadership evidence, and image provenance", () => {
+  const founderCard = read("components/brands/BrandFounderCard.tsx");
+
+  assert.match(founderCard, /<figure className="brand-founder-card">/);
+  assert.match(founderCard, /src=\{leader\.portrait\.src\}/);
+  assert.match(founderCard, /alt=\{leader\.portrait\.alt\}/);
+  assert.match(founderCard, /\{leader\.name\}/);
+  assert.match(founderCard, /\{leader\.role\}/);
+  assert.match(founderCard, /leader\.context/);
+  assert.match(founderCard, /\{leader\.portrait\.credit\}/);
+  assert.match(founderCard, /href=\{leader\.portrait\.sourceUrl\}/);
+  assert.match(founderCard, /rel="noopener noreferrer"/);
 });
 
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {

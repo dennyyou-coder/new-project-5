@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { BrandDataTable } from "@/components/brands/BrandDataTable";
+import { BrandFounderCard } from "@/components/brands/BrandFounderCard";
 import { BrandVisual } from "@/components/brands/BrandVisual";
 import {
   buildLeadershipRows,
+  partitionFeaturedLeadership,
   selectBrandContentVisuals
 } from "@/components/brands/brandSectionData";
 import {
@@ -33,6 +35,9 @@ export function BrandSections({
     profile.competitivePosition.competitorSlugs,
     allowedCompetitorSlugs
   );
+  const { featuredLeader, tableLeaders } = partitionFeaturedLeadership(
+    profile.leadership
+  );
 
   return (
     <section className="section">
@@ -51,15 +56,20 @@ export function BrandSections({
                 ) : null}
                 <div className="brand-table-group">
                   <h3>Leadership</h3>
-                  <BrandDataTable
-                    caption="Leadership"
-                    columns={[
-                      { key: "person", label: "Person" },
-                      { key: "role", label: "Role" },
-                      { key: "evidenceNote", label: "Evidence note" }
-                    ]}
-                    rows={buildLeadershipRows(profile.leadership)}
-                  />
+                  {featuredLeader ? (
+                    <BrandFounderCard leader={featuredLeader} />
+                  ) : null}
+                  {!featuredLeader || tableLeaders.length > 0 ? (
+                    <BrandDataTable
+                      caption="Leadership"
+                      columns={[
+                        { key: "person", label: "Person" },
+                        { key: "role", label: "Role" },
+                        { key: "evidenceNote", label: "Evidence note" }
+                      ]}
+                      rows={buildLeadershipRows(tableLeaders)}
+                    />
+                  ) : null}
                 </div>
               </div>
               {ownershipVisual ? <BrandVisual visual={ownershipVisual} /> : null}
