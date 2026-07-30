@@ -209,7 +209,7 @@ marketsChannels: BrandEvidenceItem[];
 
 Validation rules:
 
-- published and draft profiles both require all three Logo fields;
+- published profiles require all three Logo fields; draft profiles may omit them, but any supplied Logo field must still be valid;
 - `logoImage` and every visual `src` must begin with `/images/`;
 - `logoSourceUrl` must be valid HTTP(S);
 - `contentVisuals` must contain 2 or 3 items;
