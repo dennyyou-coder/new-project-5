@@ -46,7 +46,13 @@
     {
       "name": "Chang Jing",
       "role": "Chairman and General Manager",
-      "context": "Founder, controlling shareholder and actual controller; role and control status verified in the 2025 annual report."
+      "context": "Founder, controlling shareholder and actual controller; role and control status verified in the 2025 annual report.",
+      "portrait": {
+        "src": "/images/brands/roborock/founder-chang-jing.webp",
+        "alt": "Chang Jing, founder and chairman of Roborock",
+        "credit": "Roborock; cropped by World Clean Biz",
+        "sourceUrl": "https://newsroom.roborock.com/au/aboutus"
+      }
     },
     {
       "name": "Quan Gang",

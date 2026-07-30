@@ -46,7 +46,13 @@
     {
       "name": "Rafi Benami",
       "role": "Chief Executive Officer",
-      "context": "Maytronics' current management page says he joined as CEO in 2026."
+      "context": "Maytronics' current management page says he joined as CEO in 2026.",
+      "portrait": {
+        "src": "/images/brands/maytronics/leader-rafi-benami.webp",
+        "alt": "Rafi Benami, chief executive officer of Maytronics",
+        "credit": "Maytronics; cropped by World Clean Biz",
+        "sourceUrl": "https://www.maytronics.com/corporate/Management-team.html"
+      }
     },
     {
       "name": "Dov Ofer",

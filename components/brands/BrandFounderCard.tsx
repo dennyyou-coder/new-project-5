@@ -3,6 +3,7 @@ import type {
   BrandLeadershipPerson,
   BrandLeadershipPortrait
 } from "@/lib/brands";
+import { getLeadershipProfileLabel } from "./brandSectionData";
 
 type FeaturedLeader = BrandLeadershipPerson & {
   portrait: BrandLeadershipPortrait;
@@ -24,7 +25,9 @@ export function BrandFounderCard({ leader }: { leader: FeaturedLeader }) {
         />
       </div>
       <figcaption className="brand-founder-details">
-        <p className="brand-founder-label">Founder profile</p>
+        <p className="brand-founder-label">
+          {getLeadershipProfileLabel(leader)}
+        </p>
         <h4>{leader.name}</h4>
         <p className="brand-founder-role">{leader.role}</p>
         <p className="brand-founder-context">

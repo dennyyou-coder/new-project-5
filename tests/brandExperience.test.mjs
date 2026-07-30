@@ -421,6 +421,7 @@ test("brand section helpers keep first unique visuals and provide an empty-leade
   assert.equal(typeof helpers?.selectBrandContentVisuals, "function");
   assert.equal(typeof helpers?.buildLeadershipRows, "function");
   assert.equal(typeof helpers?.partitionFeaturedLeadership, "function");
+  assert.equal(typeof helpers?.getLeadershipProfileLabel, "function");
 
   const visual = (placement, src) => ({
     placement,
@@ -479,6 +480,15 @@ test("brand section helpers keep first unique visuals and provide an empty-leade
       tableLeaders: [chair]
     }
   );
+  assert.equal(helpers.getLeadershipProfileLabel(founder), "Founder profile");
+  assert.equal(
+    helpers.getLeadershipProfileLabel({
+      name: "Morgan Example",
+      role: "Chief Executive Officer",
+      context: "Current company leader."
+    }),
+    "Leadership profile"
+  );
 });
 
 test("founder card exposes the portrait, leadership evidence, and image provenance", () => {
@@ -493,6 +503,8 @@ test("founder card exposes the portrait, leadership evidence, and image provenan
   assert.match(founderCard, /\{leader\.portrait\.credit\}/);
   assert.match(founderCard, /href=\{leader\.portrait\.sourceUrl\}/);
   assert.match(founderCard, /rel="noopener noreferrer"/);
+  assert.match(founderCard, /getLeadershipProfileLabel\(leader\)/);
+  assert.doesNotMatch(founderCard, />Founder profile</);
 });
 
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {

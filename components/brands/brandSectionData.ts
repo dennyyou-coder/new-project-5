@@ -75,3 +75,12 @@ export function partitionFeaturedLeadership(
     tableLeaders: leadership.filter((_, index) => index !== featuredIndex)
   };
 }
+
+export function getLeadershipProfileLabel(
+  leader: Pick<BrandLeadershipPerson, "role" | "context">
+) {
+  const evidence = `${leader.role} ${leader.context || ""}`;
+  return /\bfounder\b/i.test(evidence)
+    ? "Founder profile"
+    : "Leadership profile";
+}

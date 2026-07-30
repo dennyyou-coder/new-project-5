@@ -703,6 +703,61 @@ test("the first four founder profiles use complete local portrait assets without
   }
 });
 
+test("verified founders and current leaders use complete local portrait assets without table duplication", async () => {
+  const expectedPortraits = {
+    ecovacs: {
+      name: "Qian Dongqi",
+      src: "/images/brands/ecovacs/founder-qian-dongqi.webp"
+    },
+    irobot: {
+      name: "Gary Cohen",
+      src: "/images/brands/irobot/leader-gary-cohen.webp"
+    },
+    maytronics: {
+      name: "Rafi Benami",
+      src: "/images/brands/maytronics/leader-rafi-benami.webp"
+    },
+    roborock: {
+      name: "Chang Jing",
+      src: "/images/brands/roborock/founder-chang-jing.webp"
+    }
+  };
+  const profileBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+
+  for (const [slug, expected] of Object.entries(expectedPortraits)) {
+    const candidate = profileBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+
+    const { featuredLeader, tableLeaders } = partitionFeaturedLeadership(
+      candidate.leadership
+    );
+    assert.ok(featuredLeader, `${slug} must expose one featured leader`);
+    assert.equal(featuredLeader.name, expected.name);
+    assert.equal(featuredLeader.portrait.src, expected.src);
+    assert.ok(featuredLeader.portrait.alt.includes(expected.name));
+    assert.ok(featuredLeader.portrait.credit.trim().length > 0);
+    assert.match(featuredLeader.portrait.sourceUrl, /^https:\/\//);
+    assert.equal(
+      tableLeaders.some((leader) => leader.name === featuredLeader.name),
+      false,
+      `${slug} featured leader must not be repeated in leadership table rows`
+    );
+
+    const portraitPath = path.join(
+      process.cwd(),
+      "public",
+      featuredLeader.portrait.src
+    );
+    assert.equal(fs.existsSync(portraitPath), true, `${slug} portrait must exist`);
+    const metadata = await sharp(portraitPath).metadata();
+    assert.equal(metadata.format, "webp", `${slug} portrait must be WebP`);
+    assert.equal(metadata.width, 720, `${slug} portrait width`);
+    assert.equal(metadata.height, 840, `${slug} portrait height`);
+  }
+});
+
 test("all local official logo files decode as transparent WebP images", async () => {
   for (const candidate of getBrandProfiles()) {
     const logoPath = path.join(process.cwd(), "public", candidate.logoImage);

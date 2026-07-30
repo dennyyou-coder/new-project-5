@@ -45,7 +45,13 @@
     {
       "name": "Gary Cohen",
       "role": "Chief Executive Officer",
-      "context": "Continued as CEO through the January 2026 transaction and was identified as CEO in iRobot's March 2026 Roomba Mini launch."
+      "context": "Continued as CEO through the January 2026 transaction and was identified as CEO in iRobot's March 2026 Roomba Mini launch.",
+      "portrait": {
+        "src": "/images/brands/irobot/leader-gary-cohen.webp",
+        "alt": "Gary Cohen, chief executive officer of iRobot",
+        "credit": "iRobot via PR Newswire; cropped by World Clean Biz",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/irobot-names-gary-cohen-as-new-chief-executive-officer-302138536.html"
+      }
     }
   ],
   "productPortfolio": [

@@ -45,7 +45,13 @@
     {
       "name": "Qian Dongqi",
       "role": "Chairman",
-      "context": "Founder and one of the listed company's actual controllers."
+      "context": "Founder and one of the listed company's actual controllers.",
+      "portrait": {
+        "src": "/images/brands/ecovacs/founder-qian-dongqi.webp",
+        "alt": "Qian Dongqi, founder and chairman of ECOVACS",
+        "credit": "Shanghai Securities News / CNStock; cropped by World Clean Biz",
+        "sourceUrl": "https://company.cnstock.com/company/scp_gsxw/202205/4885270.htm"
+      }
     },
     {
       "name": "David Cheng Qian",
