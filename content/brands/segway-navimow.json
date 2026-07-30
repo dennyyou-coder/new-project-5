@@ -1,0 +1,193 @@
+{
+  "status": "published",
+  "slug": "segway-navimow",
+  "name": "Segway Navimow",
+  "aliases": ["Navimow", "Segway-Ninebot Navimow", "Willand", "未岚大陆"],
+  "legalName": "Willand (Beijing) Technology Co., Ltd.",
+  "officialWebsite": "https://navimow.segway.com/",
+  "headline": "Segway Navimow ownership, wire-free mowers and Willand operating structure",
+  "description": "A source-backed profile of Ninebot's controlling interest, Willand's manufacturing and trademark roles, Navimow mower platforms, regional entities and channels.",
+  "metaDescription": "Segway Navimow profile: Ninebot ownership, Willand manufacturer, X4 and i2 robotic mowers, regional entities, channels and strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Ninebot, Segway Navimow or Willand. Group ownership, legal-manufacturer records and regional company roles are identified separately and should not be generalized to every shipment.",
+  "headquarters": "Beijing, China",
+  "founded": "2021",
+  "heroImage": "/images/brands/segway-navimow/hero-x4-robotic-mower.webp",
+  "heroImageAlt": "Segway Navimow X4 robotic lawn mower on a reflective black and silver background",
+  "logoImage": "/images/brands/segway-navimow/logo.webp",
+  "logoImageAlt": "Segway Navimow logo",
+  "logoSourceUrl": "https://navimow.segway.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/segway-navimow-ninebot-willand-ownership-cover.webp",
+      "alt": "Ownership map connecting Segway Navimow, Willand and Ninebot",
+      "caption": "This map separates Ninebot's corporate control, Willand's operating role and the Navimow market brand."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/navimow-regional-entities-procurement-check.webp",
+      "alt": "Navimow regional entity and procurement responsibility map",
+      "caption": "This map helps buyers trace manufacturer, regional entity, seller, importer, software and warranty responsibility."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/segway-navimow-vs-husqvarna-automower.webp",
+      "alt": "Platform comparison between Segway Navimow and Husqvarna Automower",
+      "caption": "This comparison places Navimow's consumer-first wire-free platforms against Automower's broader dealer-led system."
+    }
+  ],
+  "ownership": {
+    "summary": "Segway Navimow is controlled by Ninebot Limited through its majority interest in Willand (Beijing) Technology and related Navimow entities. Ninebot reported a 69.26% group interest at 31 December 2025 after employee and core-team equity incentives, so the business is controlled but not wholly owned. Willand is the core operating company, owner of key Navimow trademarks and legal manufacturer named in current manuals. Xiaomi remains a minority investor in Ninebot and is not Navimow's parent company."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Navimow i series and i2",
+      "positioning": "Compact and mid-market wire-free mowers using model-dependent RTK, vision, LiDAR or AWD configurations.",
+      "buyerRelevance": "Creates a wide entry and mid-tier range, but navigation hardware, antenna requirements, lawn capacity and drive system must be checked by SKU."
+    },
+    {
+      "name": "Navimow H2 series",
+      "positioning": "Residential mowers using AI triple-fusion positioning across LiDAR, Network RTK and vision.",
+      "buyerRelevance": "Targets gardens with mixed signal conditions while adding network-coverage and sensor-support dependencies."
+    },
+    {
+      "name": "Navimow X3 and X4",
+      "positioning": "Large-lawn premium platforms combining multi-sensor positioning, stronger terrain capability and higher-capacity mowing.",
+      "buyerRelevance": "Supports flagship and large-property assortment tiers where site survey, slope, clearance and local service matter."
+    },
+    {
+      "name": "Navimow Terranox",
+      "positioning": "Commercial AWD mower platform for sports turf, golf, public green space and facilities, supported by NavimowFleet.",
+      "buyerRelevance": "Adds professional fleet procurement, commissioning, uptime, parts and field-service requirements beyond residential retail."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Current official i2 AWD and Terranox manuals name Willand (Beijing) Technology Co., Ltd. as manufacturer.",
+      "scope": "Named product manuals and legal manufacturer",
+      "buyerCheck": "Match the manufacturer record to the exact model, regional declaration and rating label."
+    },
+    {
+      "evidence": "A legal-manufacturer address identifies the responsible company but does not establish the physical assembly site or origin of every model and batch.",
+      "scope": "Physical factory and shipment origin",
+      "buyerCheck": "Verify the assembly factory, country of origin, exporter and batch traceability in supplier and customs documents."
+    },
+    {
+      "evidence": "Ninebot's annual report treats the Willand group as a product research, production and sales subsidiary and reported approximately RMB 1.98 billion in 2025 revenue.",
+      "scope": "Consolidated Willand group",
+      "buyerCheck": "Do not substitute a consolidated business figure for factory capacity or exact-SKU availability."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Navimow's official company page reports availability in more than 30 countries, seven branch offices and more than 3,000 online and offline distribution channels.",
+      "scope": "Company-reported global reach",
+      "buyerCheck": "Confirm current product availability, dealer authorization and service capacity in the target country."
+    },
+    {
+      "evidence": "Navimow B.V. is identified in Europe, Navimow Inc. appears in U.S. and privacy records, and Willand operates core product and software roles.",
+      "scope": "Named regional and group entities",
+      "buyerCheck": "Identify the invoice seller, importer, app provider, data controller, warranty entity and repair route for the transaction."
+    },
+    {
+      "evidence": "Official stores, authorized dealers and regional partners may carry different generations, connectivity plans and warranty terms.",
+      "scope": "Market-specific channels",
+      "buyerCheck": "Verify territory, channel, serial coverage, app region, subscription terms, parts and written warranty before purchase."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Navimow has developed from a boundary-wire-free residential challenger into a broad platform spanning compact, LiDAR, AWD, large-lawn and commercial fleet products. Ninebot's robotics and mobility background supports fast sensor integration, while Willand gives the mower business a defined operating center. Its buyer-side challenge is responsibility mapping: the consumer brand, controlling public company, manufacturer and regional entities are related but not interchangeable, and service maturity can vary by market.",
+    "competitorSlugs": ["husqvarna", "mammotion"]
+  },
+  "developments": [
+    {
+      "date": "2026-03-06",
+      "title": "Navimow presents its expanded 2026 mower lineup",
+      "summary": "The current official portfolio extends from i2 and H2 residential platforms through X4 and the Terranox commercial system.",
+      "sourceIds": ["navimow-about", "navimow-launch-2026"]
+    },
+    {
+      "date": "2025-12-31",
+      "title": "Ninebot reports a 69.26% group interest",
+      "summary": "Ninebot's 2025 annual report records continued control of Willand and the related Navimow entities after minority equity incentives.",
+      "sourceIds": ["ninebot-annual-2025"]
+    },
+    {
+      "date": "2024-02",
+      "title": "Navimow launches the i series",
+      "summary": "The company introduced its second-generation compact mower platform with vision-assisted obstacle recognition.",
+      "sourceIds": ["navimow-about"]
+    },
+    {
+      "date": "2021",
+      "title": "Segway-Ninebot establishes Navimow",
+      "summary": "Segway-Ninebot combined its home-service robotics division and AI and robotics research resources to form the mower business.",
+      "sourceIds": ["navimow-about"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ninebot-annual-2025",
+      "title": "Ninebot Limited Annual Report 2025",
+      "publisher": "Ninebot Limited",
+      "url": "https://pdf.dfcfw.com/pdf/H2_AN202603301820878510_1.pdf",
+      "publishedAt": "2026-03-30",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "navimow-about",
+      "title": "About Segway Navimow",
+      "publisher": "Segway Navimow",
+      "url": "https://navimow.segway.com/pages/about-us",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "navimow-launch-2026",
+      "title": "Navimow 2026 Europe Launch",
+      "publisher": "Segway Navimow",
+      "url": "https://navimow.segway.com/pages/navimow-europe-launch",
+      "publishedAt": "2026-01-07",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "navimow-trademark",
+      "title": "NAVIMOW Trademark Registration 2221033",
+      "publisher": "Canadian Intellectual Property Office",
+      "url": "https://ised-isde.canada.ca/cipo/trademark-search/2221033?lang=eng",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "navimow-i2-manual",
+      "title": "Navimow i2 AWD User Manual",
+      "publisher": "Segway Navimow",
+      "url": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55039632755097",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "navimow-terranox-manual",
+      "title": "Navimow Terranox User Manual",
+      "publisher": "Segway Navimow",
+      "url": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/56047220753049",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "navimow-legal",
+      "title": "Legal Notice",
+      "publisher": "Segway Navimow Europe",
+      "url": "https://navimow.segway.com/pages/legal-notice",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "navimow-privacy",
+      "title": "Privacy Policy",
+      "publisher": "Segway Navimow",
+      "url": "https://navimow.segway.com/policies/privacy-policy",
+      "publishedAt": "2025-03-04",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T23:45:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T23:45:00+08:00"
+}

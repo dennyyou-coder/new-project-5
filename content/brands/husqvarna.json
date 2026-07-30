@@ -1,0 +1,199 @@
+{
+  "status": "published",
+  "slug": "husqvarna",
+  "name": "Husqvarna",
+  "aliases": ["Husqvarna Group", "Husqvarna Automower", "Automower"],
+  "legalName": "Husqvarna AB (publ)",
+  "officialWebsite": "https://www.husqvarna.com/",
+  "headline": "Husqvarna ownership, Automower robotics and global manufacturing network",
+  "description": "A source-backed profile of Husqvarna AB's listed-company ownership, Automower portfolio, European robotics manufacturing, dealer channels and category licensing boundaries.",
+  "metaDescription": "Husqvarna company profile: Automower ownership, products, manufacturing in the UK and Poland, dealer channels and robotic-mower strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Husqvarna AB. Shareholder percentages are dated, and group or site disclosures should not be generalized to every Automower SKU or shipment.",
+  "headquarters": "Stockholm, Sweden",
+  "founded": "1689; Automower commercial history began in 1995",
+  "heroImage": "/images/brands/husqvarna/hero-automower-portfolio.webp",
+  "heroImageAlt": "Husqvarna Automower robotic lawn mower operating beside a tennis racket on grass",
+  "logoImage": "/images/brands/husqvarna/logo.webp",
+  "logoImageAlt": "Husqvarna logo",
+  "logoSourceUrl": "https://www.husqvarna.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/husqvarna-automower-ownership-map-cover.webp",
+      "alt": "Ownership map separating Husqvarna AB, Automower, shareholders and licensed categories",
+      "caption": "This map separates the listed Husqvarna company and Automower business from shareholders and separately licensed motorcycle and sewing-machine categories."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/husqvarna-automower-manufacturing-region-checklist.webp",
+      "alt": "Husqvarna Automower manufacturing and regional responsibility checklist",
+      "caption": "This checklist helps buyers distinguish group manufacturing capability, exact-model origin, regional seller and warranty responsibility."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/automower-vs-luba-platform-decision-map.webp",
+      "alt": "Decision map comparing Husqvarna Automower and Mammotion LUBA platforms",
+      "caption": "This comparison places Automower's broad dealer-supported range against a newer wire-free AWD challenger."
+    }
+  ],
+  "ownership": {
+    "summary": "Automower belongs to Husqvarna AB (publ), the Swedish company listed on Nasdaq Stockholm and operating as Husqvarna Group. The company has multiple public shareholders rather than one corporate parent. At 31 December 2025, Investor AB was the largest shareholder by votes, while Robert Bosch and L E Lundbergföretagen also held material positions. Electrolux distributed Husqvarna shares to its shareholders in 2006; KTM, Bajaj Mobility and SVP Worldwide relate to separately divested or licensed product categories and do not own the Automower business."
+  },
+  "leadership": [
+    {
+      "name": "Glen Instone",
+      "role": "President and Chief Executive Officer",
+      "context": "Husqvarna Group appointed Glen Instone CEO effective 11 August 2025; the current board page identifies him as CEO."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Residential Automower",
+      "positioning": "Robotic lawn mowers spanning physical-boundary and virtual-boundary models for different lawn sizes, including current iQ and NERA families.",
+      "buyerRelevance": "Provides a broad household assortment, but boundary system, positioning hardware, slope capability and connectivity must be matched by exact model."
+    },
+    {
+      "name": "AWD Automower",
+      "positioning": "Articulated all-wheel-drive robotic mowers intended for steeper or more complex terrain.",
+      "buyerRelevance": "Supports difficult-site applications where maximum slope and boundary-slope limits need separate verification."
+    },
+    {
+      "name": "Professional Automower and CEORA",
+      "positioning": "EPOS-enabled products and modular systems for commercial turf, sports facilities and multi-unit fleet use.",
+      "buyerRelevance": "Adds professional installation, fleet planning, dealer support and commercial-duty requirements beyond residential retail."
+    },
+    {
+      "name": "Automower Connect and EPOS",
+      "positioning": "App, connectivity and satellite-positioning layers supporting virtual boundaries, scheduling, monitoring and selected fleet workflows.",
+      "buyerRelevance": "Makes network coverage, account region, reference-station or cloud configuration and software support part of the system purchase."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Husqvarna AB issues model-specific conformity documents for Automower products, including a reviewed declaration for Automower 535 AWD.",
+      "scope": "Named model and legal manufacturer",
+      "buyerCheck": "Match the declaration, rating label and technical file to the exact model and regional configuration."
+    },
+    {
+      "evidence": "Husqvarna Group's current global-presence disclosure identifies robotic-mower manufacturing teams in Aycliffe, England, and Mielec, Poland, with robotics design and development functions in Sweden.",
+      "scope": "Current group robotics footprint",
+      "buyerCheck": "Do not infer that every mower, charging station or accessory comes from one site; verify the exact factory and country of origin."
+    },
+    {
+      "evidence": "The group reported that robotic lawn mowers represented approximately 17% of sales in 2025 and launched 13 new wire-free models.",
+      "scope": "Group scale and 2025 portfolio",
+      "buyerCheck": "Confirm production allocation, parts continuity and service readiness for the contracted generation and market."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Husqvarna sells through direct, dealer and retail channels in more than 100 countries, with a long-established outdoor-power-equipment dealer network.",
+      "scope": "Group-reported global reach",
+      "buyerCheck": "Confirm that the dealer is authorized for the target territory, customer type and exact Automower model."
+    },
+    {
+      "evidence": "The U.S. imprint names Husqvarna Professional Products, Inc.; other markets use different Husqvarna subsidiaries, distributors and dealers.",
+      "scope": "Regional commercial entities",
+      "buyerCheck": "Identify the invoice seller, importer, installer, warranty provider and service workshop for the transaction."
+    },
+    {
+      "evidence": "Husqvarna warranty and service routes depend on proof of purchase, model, market and authorized servicing arrangements.",
+      "scope": "Regional warranty programs",
+      "buyerCheck": "Verify warranty duration, registration conditions, parts route and field-service responsibility before cross-border purchase."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Husqvarna's main advantage is not one headline specification but a mature Automower portfolio connecting residential, AWD and professional products with installation, parts and dealer service. Its manufacturing history and outdoor-power channel depth create a different proposition from app-led robotics challengers. The pressure comes from faster wire-free product cycles and lower-friction direct sales, so buyers should price the complete installed and supported system rather than compare only area, slope or navigation claims.",
+    "competitorSlugs": ["mammotion", "segway-navimow"]
+  },
+  "developments": [
+    {
+      "date": "2025-08-11",
+      "title": "Glen Instone becomes chief executive",
+      "summary": "Husqvarna Group appointed Glen Instone to lead the group after serving as president of the Forest and Garden division.",
+      "sourceIds": ["husqvarna-ceo"]
+    },
+    {
+      "date": "2025",
+      "title": "Husqvarna expands its wire-free Automower range",
+      "summary": "The 2025 annual report described 13 new wire-free robotic-mower models and robotics equal to approximately 17% of group sales.",
+      "sourceIds": ["husqvarna-annual-2025"]
+    },
+    {
+      "date": "2006",
+      "title": "Husqvarna becomes independently listed",
+      "summary": "Electrolux distributed Husqvarna shares to its shareholders and Husqvarna was listed on the Stockholm Stock Exchange.",
+      "sourceIds": ["husqvarna-listing"]
+    },
+    {
+      "date": "1995",
+      "title": "Husqvarna launches its first commercial robotic mower",
+      "summary": "Husqvarna's company history dates its first commercial robotic lawn mower to 1995.",
+      "sourceIds": ["husqvarna-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "husqvarna-annual-2025",
+      "title": "Annual and Sustainability Report 2025",
+      "publisher": "Husqvarna Group",
+      "url": "https://www.husqvarnagroup.com/sites/husqvarna/files/2026-03/202603249629-1.pdf",
+      "publishedAt": "2026-03-24",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "husqvarna-global-presence",
+      "title": "Global Presence",
+      "publisher": "Husqvarna Group",
+      "url": "https://www.husqvarnagroup.com/en/global-presence",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "husqvarna-ceo",
+      "title": "Glen Instone appointed CEO of Husqvarna Group",
+      "publisher": "Husqvarna Group",
+      "url": "https://www.husqvarnagroup.com/en/press/glen-instone-appointed-ceo-husqvarna-group-2376778",
+      "publishedAt": "2025-07-17",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "husqvarna-listing",
+      "title": "Husqvarna listed on Stockholm Stock Exchange",
+      "publisher": "Husqvarna Group",
+      "url": "https://www.husqvarnagroup.com/en/press/husqvarna-listed-stockholm-stock-exchange-1043481",
+      "publishedAt": "2006-06-13",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "husqvarna-history",
+      "title": "History Timeline",
+      "publisher": "Husqvarna Group",
+      "url": "https://www.husqvarnagroup.com/en/history-timeline",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "husqvarna-doc",
+      "title": "EU Declaration of Conformity for Automower 535 AWD",
+      "publisher": "Husqvarna",
+      "url": "https://www.husqvarna.com/hbd/tdrdownload/v2/pub000093342/doc000234597/DOC/tLARNlFLflMlpyWfrcaUiSyXT2E",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "husqvarna-us-imprint",
+      "title": "United States Imprint",
+      "publisher": "Husqvarna",
+      "url": "https://www.husqvarna.com/us/imprint/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "husqvarna-us-warranty",
+      "title": "Warranty",
+      "publisher": "Husqvarna",
+      "url": "https://www.husqvarna.com/us/support/warranty/",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T23:40:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T23:40:00+08:00"
+}

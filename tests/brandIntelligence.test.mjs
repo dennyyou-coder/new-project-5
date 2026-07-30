@@ -532,7 +532,9 @@ test("the release gate validates the exact sixteen published profiles and approv
   ];
   const expectedPrimaryBrands = {
     "aiper-fluidra-pool-robotics-alliance": ["aiper"],
-    "aiper-vs-wybot-fluidra-wybotics": ["aiper"],
+    "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x": ["aiper", "beatbot"],
+    "aiper-vs-wybot-fluidra-wybotics": ["aiper", "wybot"],
+    "beatbot-vs-dolphin-xingmai-maytronics": ["beatbot", "maytronics"],
     "bissell-crosswave-hard-floor-washer-logic": ["bissell"],
     "bissell-robot-vacuums-flexclean-strategy": ["bissell"],
     "commercial-robotic-mower-market-navimow-mammotion": ["mammotion"],
@@ -543,24 +545,38 @@ test("the release gate validates the exact sixteen published profiles and approv
     "ecovacs-2018-annual-report-signals": ["ecovacs"],
     "ecovacs-at-a-crossroads": ["ecovacs"],
     "ecovacs-invests-in-battery-cell-factory": ["ecovacs"],
+    "husqvarna-automower-vs-mammotion-luba": ["husqvarna", "mammotion"],
     "irobot-decline-and-the-new-robot-vacuum-order": ["irobot"],
     "irobot-financial-crisis": ["irobot"],
     "is-dreame-owned-by-xiaomi": ["dreame"],
     "is-roborock-owned-by-xiaomi": ["roborock"],
+    "luba-vs-navimow-mammotion-ninebot": ["mammotion", "segway-navimow"],
     "mammotion-luba-vs-yuka-robot-mowers": ["mammotion"],
     "maytronics-robotic-pool-cleaner-reinvention": ["maytronics"],
+    "narwal-vs-ecovacs-robot-vacuums": ["narwal", "ecovacs"],
     "roborock-channel-shift-online-to-offline-experience": ["roborock"],
     "roborock-ipo-prospectus-signals": ["roborock"],
+    "roborock-vs-narwal-robot-vacuums": ["roborock", "narwal"],
+    "segway-navimow-vs-husqvarna-automower": ["segway-navimow", "husqvarna"],
+    "shark-hydrovac-vs-bissell-crosswave": ["shark", "bissell"],
+    "shark-powerdetect-speed-vs-dyson-v16-piston-animal": ["shark", "dyson"],
     "tineco-lacks-innovation": ["tineco"],
     "tineco-vs-bissell-crosswave-floor-washers": ["tineco", "bissell"],
     "where-are-dyson-vacuums-made": ["dyson"],
     "who-makes-dolphin-pool-cleaners-maytronics": ["maytronics"],
     "who-makes-luba-robot-mowers-mammotion-agilex": ["mammotion"],
+    "who-makes-wybot-pool-cleaners-wybotics-wangyuan": ["wybot"],
     "who-owns-aiper-fluidra-stake": ["aiper"],
+    "who-owns-beatbot-xingmai-manufacturing": ["beatbot"],
     "who-owns-bissell-family-sanitaire": ["bissell"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
+    "who-owns-husqvarna-automower-motorcycles": ["husqvarna"],
     "who-owns-irobot-roomba-picea-robotics": ["irobot"],
-    "who-owns-tineco-ecovacs-group": ["tineco"]
+    "who-owns-narwal-yunjing-investors-manufacturing": ["narwal"],
+    "who-owns-segway-navimow-ninebot-willand": ["segway-navimow"],
+    "who-owns-sharkninja-js-global-joyoung": ["shark"],
+    "who-owns-tineco-ecovacs-group": ["tineco"],
+    "wybot-vs-dolphin-robotic-pool-cleaners": ["wybot", "maytronics"]
   };
 
   const realArticles = getInsights();
@@ -601,8 +617,8 @@ test("the release gate validates the exact sixteen published profiles and approv
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 30);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 32);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 46);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 59);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.deepEqual(
@@ -611,8 +627,19 @@ test("the release gate validates the exact sixteen published profiles and approv
       .map(([slug]) => slug)
       .sort(),
     [
+      "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x",
+      "aiper-vs-wybot-fluidra-wybotics",
+      "beatbot-vs-dolphin-xingmai-maytronics",
       "dolphin-vs-aiper-maytronics-fluidra",
-      "tineco-vs-bissell-crosswave-floor-washers"
+      "husqvarna-automower-vs-mammotion-luba",
+      "luba-vs-navimow-mammotion-ninebot",
+      "narwal-vs-ecovacs-robot-vacuums",
+      "roborock-vs-narwal-robot-vacuums",
+      "segway-navimow-vs-husqvarna-automower",
+      "shark-hydrovac-vs-bissell-crosswave",
+      "shark-powerdetect-speed-vs-dyson-v16-piston-animal",
+      "tineco-vs-bissell-crosswave-floor-washers",
+      "wybot-vs-dolphin-robotic-pool-cleaners"
     ]
   );
 
