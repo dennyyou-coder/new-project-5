@@ -3,6 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import sharp from "sharp";
 import {
   buildBrandSitemapEntries,
   buildBrandStaticParams,
@@ -538,6 +539,45 @@ test("the release gate validates the exact ten published profiles and approved a
   );
   assert.equal(publishedProfiles.some(({ slug }) => slug === "dolphin"), false);
   assert.equal(buildBrandStaticParams(publishedProfiles).some(({ slug }) => slug === "dolphin"), false);
+});
+
+test("all published brand profiles have local official logos and two to three local visuals", () => {
+  const profiles = getBrandProfiles();
+  assert.equal(profiles.length, 10);
+
+  for (const candidate of profiles) {
+    assert.equal(candidate.status, "published");
+    assert.match(candidate.logoImage, /^\/images\/brands\/[a-z0-9-]+\/logo\.webp$/);
+    assert.equal(
+      fs.existsSync(path.join(process.cwd(), "public", candidate.logoImage)),
+      true,
+      `${candidate.slug} logo must exist`
+    );
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    for (const visual of candidate.contentVisuals) {
+      assert.equal(
+        fs.existsSync(path.join(process.cwd(), "public", visual.src)),
+        true,
+        `${candidate.slug} visual must exist: ${visual.src}`
+      );
+    }
+  }
+});
+
+test("all local official logo files decode as transparent WebP images", async () => {
+  for (const candidate of getBrandProfiles()) {
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    assert.equal(fs.existsSync(logoPath), true, `${candidate.slug} logo must exist`);
+
+    const metadata = await sharp(logoPath).metadata();
+    assert.equal(metadata.format, "webp", `${candidate.slug} logo must be WebP`);
+    assert.equal(metadata.hasAlpha, true, `${candidate.slug} logo must preserve transparency`);
+
+    const decoded = await sharp(logoPath).raw().toBuffer({ resolveWithObject: true });
+    assert.ok(decoded.data.length > 0, `${candidate.slug} logo must decode to pixels`);
+    assert.ok(decoded.info.width >= 600, `${candidate.slug} logo must be at least 600 px wide`);
+    assert.ok(decoded.info.height > 0, `${candidate.slug} logo must have a positive height`);
+  }
 });
 
 test("loads JSON profiles, groups articles without duplicates, and filters draft profiles", () => {
