@@ -4,10 +4,46 @@ import {
   type BrandProfile
 } from "@/lib/brands";
 import { formatBrandDate } from "@/lib/brandDates";
+import { BrandDataTable } from "./BrandDataTable";
+import { BrandLogo } from "./BrandLogo";
 
 export function BrandHero({ profile }: { profile: BrandProfile }) {
   const legalName = normalizeOptionalBrandText(profile.legalName);
   const legalEntityNote = normalizeOptionalBrandText(profile.legalEntityNote);
+  const legalEntityScope = legalName || legalEntityNote;
+  const ownershipType = profile.ownership.parentCompany
+    ? `Part of ${profile.ownership.parentCompany}`
+    : "See verified ownership analysis";
+  const keyFacts = [
+    {
+      fact: "Legal entity scope",
+      detail: legalEntityScope
+    },
+    {
+      fact: "Ownership type",
+      detail: ownershipType
+    },
+    {
+      fact: "Headquarters",
+      detail: profile.headquarters
+    },
+    {
+      fact: "Founded",
+      detail: profile.founded
+    },
+    {
+      fact: "Official website",
+      detail: (
+        <a href={profile.officialWebsite} rel="noopener noreferrer">
+          {profile.officialWebsite}
+        </a>
+      )
+    },
+    {
+      fact: "Last verified",
+      detail: formatBrandDate(profile.lastVerified, "long")
+    }
+  ];
 
   return (
     <section className="guides-category-hero">
@@ -22,6 +58,9 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
 
         <div className="brand-detail-hero">
           <div>
+            <div className="brand-hero-identity">
+              <BrandLogo profile={profile} variant="hero" />
+            </div>
             <p className="eyebrow">Independent Brand Intelligence</p>
             <h1>{profile.name}</h1>
             <p>{profile.headline}</p>
@@ -42,37 +81,16 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
           ) : null}
         </div>
 
-        <dl className="brand-snapshot-grid">
-          {legalName ? (
-            <div>
-              <dt>Legal name</dt>
-              <dd>{legalName}</dd>
-            </div>
-          ) : null}
-          {legalEntityNote ? (
-            <div>
-              <dt>Legal entity scope</dt>
-              <dd>{legalEntityNote}</dd>
-            </div>
-          ) : null}
-          <div>
-            <dt>Headquarters</dt>
-            <dd>{profile.headquarters}</dd>
-          </div>
-          <div>
-            <dt>Founded</dt>
-            <dd>{profile.founded}</dd>
-          </div>
-          <div>
-            <dt>Official website</dt>
-            <dd>
-              <a href={profile.officialWebsite} rel="noopener noreferrer">
-                {profile.officialWebsite}
-              </a>
-            </dd>
-          </div>
-        </dl>
-
+        <div className="brand-key-facts">
+          <BrandDataTable
+            caption="Key facts"
+            columns={[
+              { key: "fact", label: "Fact" },
+              { key: "detail", label: "Details" }
+            ]}
+            rows={keyFacts}
+          />
+        </div>
       </div>
     </section>
   );

@@ -257,7 +257,7 @@ test("brand experience shows independent positioning, disclaimer, sources, and u
   assert.match(brandSources, /Last material modification/);
 });
 
-test("brand hero labels legal names and multi-entity scope notes separately", () => {
+test("brand hero normalizes the available legal entity scope", () => {
   const hero = read("components/brands/BrandHero.tsx");
 
   assert.match(
@@ -270,13 +270,26 @@ test("brand hero labels legal names and multi-entity scope notes separately", ()
   );
   assert.match(
     hero,
-    /\{legalName \? \([\s\S]*?<dt>Legal name<\/dt>[\s\S]*?<dd>\{legalName\}<\/dd>[\s\S]*?\) : null\}/
-  );
-  assert.match(
-    hero,
-    /\{legalEntityNote \? \([\s\S]*?<dt>Legal entity scope<\/dt>[\s\S]*?<dd>\{legalEntityNote\}<\/dd>[\s\S]*?\) : null\}/
+    /const legalEntityScope = legalName \|\| legalEntityNote/
   );
   assert.doesNotMatch(hero, /\{profile\.(?:legalName|legalEntityNote) \?/);
+});
+
+test("brand hero separates official identity from editorial cover and renders key facts", () => {
+  const hero = read("components/brands/BrandHero.tsx");
+
+  assert.match(hero, /<BrandLogo\s+profile=\{profile\}\s+variant="hero"/);
+  assert.match(hero, /profile\.heroImage/);
+  assert.match(hero, /caption="Key facts"/);
+  [
+    "Legal entity scope",
+    "Ownership type",
+    "Headquarters",
+    "Founded",
+    "Official website",
+    "Last verified"
+  ].forEach((label) => assert.match(hero, new RegExp(label)));
+  assert.doesNotMatch(hero, /<dl className="brand-snapshot-grid"/);
 });
 
 test("brand visual primitives preserve logo geometry and semantic figures", () => {
@@ -384,7 +397,10 @@ test("brand styles contain logos without cropping and collapse multi-column layo
     ".brand-directory-card",
     ".brand-detail",
     ".brand-detail-hero",
-    ".brand-snapshot-grid",
+    ".brand-hero-identity",
+    ".brand-logo--hero",
+    ".brand-key-facts",
+    ".brand-data-table",
     ".brand-section-grid",
     ".brand-timeline",
     ".brand-article-grid",
@@ -412,6 +428,17 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   assert.match(cardLogoImageRule, /object-fit:\s*contain/);
   assert.doesNotMatch(cardLogoImageRule, /object-fit:\s*cover/);
   assert.doesNotMatch(cardLogoImageRule, /(?:filter|box-shadow):/);
+  const heroLogoStageRule = brandStyles.match(
+    /\.brand-logo--hero\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(heroLogoStageRule);
+  assert.match(heroLogoStageRule, /background:\s*#fff/);
+  const heroLogoImageRule = brandStyles.match(
+    /\.brand-logo--hero img\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(heroLogoImageRule);
+  assert.match(heroLogoImageRule, /object-fit:\s*contain/);
+  assert.doesNotMatch(heroLogoImageRule, /object-fit:\s*cover/);
   assert.match(
     brandStyles,
     /\.brand-detail-hero img,[\s\S]*\.brand-article-grid img\s*\{[\s\S]*object-fit:\s*cover/
@@ -448,13 +475,19 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   [
     ".brand-directory-hero",
     ".brand-detail-hero",
-    ".brand-snapshot-grid",
     ".brand-section-grid",
     ".brand-article-grid"
   ].forEach((selector) => assert.match(
     mobileStyles,
     new RegExp(`\\${selector}[\\s\\S]*grid-template-columns:\\s*1fr`)
   ));
+  assert.match(mobileStyles, /\.brand-data-table thead\s*\{[\s\S]*position:\s*absolute/);
+  assert.match(mobileStyles, /\.brand-data-table tr\s*\{[\s\S]*display:\s*block/);
+  assert.match(mobileStyles, /\.brand-data-table td\s*\{[\s\S]*display:\s*grid/);
+  assert.match(
+    mobileStyles,
+    /\.brand-data-table td::before\s*\{[\s\S]*content:\s*attr\(data-label\)/
+  );
   assert.match(mobileStyles, /\.brand-sources a\s*\{[\s\S]*overflow-wrap:\s*anywhere/);
   assert.match(mobileStyles, /\.brand-detail-hero img\s*\{[\s\S]*(?:aspect-ratio|height):/);
 });
@@ -568,7 +601,9 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
 
   assert.match(detailRoute, /className="guides-hub brand-hub brand-detail"/);
   assert.match(hero, /className="brand-detail-hero"/);
-  assert.match(hero, /className="brand-snapshot-grid"/);
+  assert.match(hero, /className="brand-hero-identity"/);
+  assert.match(hero, /className="brand-key-facts"/);
+  assert.match(hero, /<BrandDataTable/);
   assert.match(
     hero,
     /className="brand-detail-hero"[\s\S]*\{profile\.heroImage \? \([\s\S]*<img/

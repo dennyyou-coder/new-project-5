@@ -22589,35 +22589,95 @@ button.contact-help-card > .contact-help-card-copy > span {
   object-fit: cover;
 }
 
-.brand-snapshot-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 28px;
+.brand-hero-identity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
 }
 
-.brand-snapshot-grid > div {
+.brand-logo--hero {
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  width: min(240px, 58vw);
+  min-height: 80px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.brand-logo--hero img {
+  display: block;
+  width: 100%;
+  height: 52px;
+  max-width: 100%;
+  max-height: 52px;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.brand-key-facts {
+  margin-top: 28px;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.08);
-  padding: 16px;
 }
 
-.brand-snapshot-grid dt {
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 12px;
-  font-weight: 800;
-  text-transform: uppercase;
+.brand-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
-.brand-snapshot-grid dd {
-  margin: 6px 0 0;
-  color: #fff;
+.brand-data-table th,
+.brand-data-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
   overflow-wrap: anywhere;
 }
 
-.brand-snapshot-grid a {
+.brand-data-table th {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.brand-data-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.brand-data-table th:first-child,
+.brand-data-table td:first-child {
+  width: 28%;
+}
+
+.brand-key-facts .brand-data-table th,
+.brand-key-facts .brand-data-table td {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.brand-key-facts .brand-data-table th {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.brand-key-facts .brand-data-table td {
   color: #fff;
+}
+
+.brand-key-facts .brand-data-table td:first-child {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 800;
+}
+
+.brand-key-facts a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .brand-section-grid {
@@ -22687,7 +22747,6 @@ button.contact-help-card > .contact-help-card-copy > span {
 @media (max-width: 760px) {
   .brand-directory-hero,
   .brand-detail-hero,
-  .brand-snapshot-grid,
   .brand-section-grid,
   .brand-article-grid {
     grid-template-columns: 1fr;
@@ -22705,6 +22764,70 @@ button.contact-help-card > .contact-help-card-copy > span {
   .brand-detail-hero img {
     height: auto;
     aspect-ratio: 4 / 3;
+  }
+
+  .brand-logo--hero img {
+    height: 52px;
+    aspect-ratio: auto;
+  }
+
+  .brand-data-table {
+    table-layout: auto;
+  }
+
+  .brand-data-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .brand-data-table tbody {
+    display: block;
+  }
+
+  .brand-data-table tr {
+    display: block;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .brand-data-table tr:last-child {
+    border-bottom: 0;
+  }
+
+  .brand-data-table td {
+    display: grid;
+    grid-template-columns: minmax(112px, 0.42fr) minmax(0, 1fr);
+    gap: 16px;
+    width: 100%;
+    padding: 12px 16px;
+    border: 0;
+  }
+
+  .brand-data-table td::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .brand-data-table th:first-child,
+  .brand-data-table td:first-child {
+    width: 100%;
+  }
+
+  .brand-key-facts .brand-data-table tr {
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .brand-key-facts .brand-data-table td::before {
+    color: rgba(255, 255, 255, 0.62);
   }
 
   .brand-sources a {
