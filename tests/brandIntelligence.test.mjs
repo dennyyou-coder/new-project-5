@@ -588,6 +588,36 @@ test("all local official logo files decode as transparent WebP images", async ()
   }
 });
 
+test("all local official logos occupy at least thirty percent of their canvas width", async () => {
+  for (const candidate of getBrandProfiles()) {
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const decoded = await sharp(logoPath).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+    const alphaChannelIndex = decoded.info.channels - 1;
+    let minimumVisibleX = decoded.info.width;
+    let maximumVisibleX = -1;
+
+    for (let y = 0; y < decoded.info.height; y += 1) {
+      for (let x = 0; x < decoded.info.width; x += 1) {
+        const alphaIndex =
+          (y * decoded.info.width + x) * decoded.info.channels + alphaChannelIndex;
+        if (decoded.data[alphaIndex] > 0) {
+          minimumVisibleX = Math.min(minimumVisibleX, x);
+          maximumVisibleX = Math.max(maximumVisibleX, x);
+        }
+      }
+    }
+
+    const visibleWidth = maximumVisibleX >= minimumVisibleX
+      ? maximumVisibleX - minimumVisibleX + 1
+      : 0;
+    const visibleWidthRatio = visibleWidth / decoded.info.width;
+    assert.ok(
+      visibleWidthRatio >= 0.3,
+      `${candidate.slug} logo visible width must cover at least 30% of its canvas; actual ${(visibleWidthRatio * 100).toFixed(1)}%`
+    );
+  }
+});
+
 test("loads JSON profiles, groups articles without duplicates, and filters draft profiles", () => {
   const originalDirectory = process.cwd();
   const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "wcb-brands-"));
