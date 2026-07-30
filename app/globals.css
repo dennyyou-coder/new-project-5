@@ -24322,18 +24322,32 @@ button.contact-help-card > .contact-help-card-copy > span {
   }
 
   .brand-founder-card {
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: 104px minmax(0, 1fr);
   }
 
   .brand-founder-portrait {
     width: 100%;
-    max-height: 420px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
+    aspect-ratio: 3 / 4;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
   }
 
   .brand-founder-details {
-    padding: 16px;
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .brand-founder-details h4 {
+    font-size: 19px;
+  }
+
+  .brand-founder-context {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .brand-founder-credit {
+    font-size: 11px;
   }
 
   .brand-data-table {

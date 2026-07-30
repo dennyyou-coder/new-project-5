@@ -736,11 +736,11 @@ test("founder cards use a compact portrait grid and stack safely on mobile", () 
   const mobileRules = readCssBlock(brandStyles, "@media (max-width: 760px)");
   assert.match(
     mobileRules,
-    /\.brand-founder-card\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/
+    /\.brand-founder-card\s*\{[^}]*grid-template-columns:\s*104px\s+minmax\(0,\s*1fr\)/
   );
   assert.match(
     mobileRules,
-    /\.brand-founder-portrait\s*\{[^}]*width:\s*100%/
+    /\.brand-founder-portrait\s*\{[^}]*aspect-ratio:\s*3\s*\/\s*4/
   );
 });
 
