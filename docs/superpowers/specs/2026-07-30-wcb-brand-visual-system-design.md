@@ -268,4 +268,3 @@ contentVisuals: Array<{
 8. 验证 `worldcleanbiz.com/brands` 和品牌详情页。
 
 本设计确认不代表生产发布授权。
-
