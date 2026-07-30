@@ -692,6 +692,58 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   );
 });
 
+test("founder cards use a compact portrait grid and stack safely on mobile", () => {
+  const source = read("app/globals.css");
+  const brandStyles = source.slice(source.indexOf("/* Brand intelligence hub */"));
+
+  const cardRule = brandStyles.match(
+    /\.brand-founder-card\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(cardRule);
+  assert.match(
+    cardRule,
+    /grid-template-columns:\s*minmax\(0,\s*180px\)\s+minmax\(0,\s*1fr\)/
+  );
+  assert.match(cardRule, /min-width:\s*0/);
+  assert.match(cardRule, /overflow:\s*hidden/);
+
+  const portraitRule = brandStyles.match(
+    /\.brand-founder-portrait\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(portraitRule);
+  assert.match(portraitRule, /aspect-ratio:\s*6\s*\/\s*7/);
+
+  const portraitImageRule = brandStyles.match(
+    /\.brand-founder-portrait img\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(portraitImageRule);
+  assert.match(portraitImageRule, /object-fit:\s*cover/);
+  assert.match(portraitImageRule, /width:\s*100%/);
+  assert.match(portraitImageRule, /height:\s*100%/);
+
+  const detailsRule = brandStyles.match(
+    /\.brand-founder-details\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(detailsRule);
+  assert.match(detailsRule, /min-width:\s*0/);
+
+  const sourceLinkRule = brandStyles.match(
+    /\.brand-founder-credit a\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(sourceLinkRule);
+  assert.match(sourceLinkRule, /text-decoration:\s*underline/);
+
+  const mobileRules = readCssBlock(brandStyles, "@media (max-width: 760px)");
+  assert.match(
+    mobileRules,
+    /\.brand-founder-card\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/
+  );
+  assert.match(
+    mobileRules,
+    /\.brand-founder-portrait\s*\{[^}]*width:\s*100%/
+  );
+});
+
 test("competitor links meet normal-text contrast and retain a non-color cue", () => {
   const source = read("app/globals.css");
   const rootRule = source.match(/:root\s*\{[^}]*\}/)?.[0];
