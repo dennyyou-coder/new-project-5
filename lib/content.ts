@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { normalizeCategory } from "@/lib/categories";
+import { normalizeBrandSlugs } from "@/lib/brands";
 import type { ContentClass, GuideType } from "@/lib/guideTaxonomy";
 
 export type Insight = {
@@ -15,6 +16,8 @@ export type Insight = {
   author: string;
   category: string;
   tags: string[];
+  primaryBrands: string[];
+  relatedBrands: string[];
   featured: boolean;
   visualPriority: number;
   readingTime: string;
@@ -116,6 +119,8 @@ export function getInsights(): Insight[] {
         author: String(data.author || "Denny You"),
         category: normalizeCategory(String(data.category || "")),
         tags: Array.isArray(data.tags) ? data.tags : [],
+        primaryBrands: normalizeBrandSlugs(data.primary_brands),
+        relatedBrands: normalizeBrandSlugs(data.related_brands),
         featured: String(data.featured || "false").toLowerCase() === "true",
         visualPriority: Number(data.visualPriority || 0),
         readingTime: String(data.readingTime || estimateReadingTime(content)),

@@ -1,0 +1,170 @@
+{
+  "status": "published",
+  "slug": "dreame",
+  "name": "Dreame",
+  "aliases": [
+    "Dreame Technology",
+    "Dreametech",
+    "Zhui Mi"
+  ],
+  "legalName": "Dreame Innovation Technology (Suzhou) Co., Ltd.",
+  "officialWebsite": "https://www.dreametech.com/",
+  "headline": "Dreame ownership, products, manufacturing and global channel expansion",
+  "description": "A source-backed profile of Dreame's private-company ownership boundary, Xiaomi history, product expansion, Suzhou manufacturing and route to market.",
+  "metaDescription": "Dreame company profile: ownership, Xiaomi and MOVA relationships, leadership, products, manufacturing, channels and strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dreame, MOVA or Xiaomi. Dreame is privately held, and historical financing announcements do not establish a complete current cap table.",
+  "headquarters": "Suzhou, Jiangsu, China",
+  "founded": "Official pages conflict: Dreame's global Brand Story says the company was established in 2015, while its US and Korean About pages say 2017.",
+  "heroImage": "/images/insights/dreame-douyin-counterattack-against-tineco-cover.jpg",
+  "heroImageAlt": "Dreame robot vacuums and upright wet-and-dry floor cleaners displayed in a product showroom",
+  "logoImage": "/images/brands/dreame/logo.webp",
+  "logoImageAlt": "Dreame logo",
+  "logoSourceUrl": "https://www.dreametech.com/cdn/shop/files/home-page-logo.webp?v=1784104996",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/dreame-xiaomi-mova-relationship-map.webp",
+      "alt": "Relationship map connecting Dreame with Xiaomi and MOVA",
+      "caption": "This diagram helps readers distinguish Dreame's Xiaomi ecosystem history from ownership and its relationship with MOVA."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/dreame-vs-ecovacs-robot-platforms.webp",
+      "alt": "Platform comparison of Dreame and ECOVACS robot vacuums",
+      "caption": "This comparison helps buyers understand the product-platform choices across Dreame and ECOVACS robot vacuums."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/roborock-vs-dreame-expansion-systems-v3-r2-with-logos.webp",
+      "alt": "Comparison of Roborock and Dreame product expansion systems",
+      "caption": "This diagram helps readers compare how Dreame and Roborock extend from core floorcare into adjacent categories."
+    }
+  ],
+  "ownership": {
+    "summary": "Dreame is a privately held company founded and led by Yu Hao. A 2020 company financing announcement identified Xiaomi Corporation and Shunwei Capital as returning shareholders and said Dreame had joined the Xiaomi ecosystem in 2017; it did not identify Xiaomi as parent or controller. The current complete ownership and voting structure is not publicly disclosed. MOVA is a separate consumer brand described on its regional site as powered by Dreame Technology, but its products, apps and contracting entities should not be treated as interchangeable with Dreame."
+  },
+  "leadership": [
+    {
+      "name": "Yu Hao",
+      "role": "Founder and CEO",
+      "context": "Official Dreame pages identify Yu Hao as founder; the company traces its technology roots to his team's high-speed digital motor work."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Robot vacuums",
+      "positioning": "A core premium category built around navigation, obstacle avoidance, mopping and multifunction docks.",
+      "buyerRelevance": "Forms the premium core of a Dreame assortment and its dock-based service proposition."
+    },
+    {
+      "name": "Wet-and-dry floor cleaners",
+      "positioning": "Upright hard-floor cleaning systems spanning mainstream and premium models.",
+      "buyerRelevance": "Supports tiered hard-floor assortments across mainstream and premium price points."
+    },
+    {
+      "name": "Cordless stick vacuums",
+      "positioning": "The high-speed-motor category that helped establish Dreame's independent brand.",
+      "buyerRelevance": "Adds a dry-floorcare line tied to Dreame's core motor platform."
+    },
+    {
+      "name": "Home, yard and personal-care products",
+      "positioning": "A widening portfolio that now includes hair care, air care, kitchen appliances, robotic lawn mowers and robotic pool cleaners in selected markets.",
+      "buyerRelevance": "Requires market-specific assortment checks because adjacent categories are available only in selected markets."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Dreame's official brand history says it operates three production lines with annual throughput of one million units and can accept multi-category ODM orders.",
+      "scope": "Company disclosure",
+      "buyerCheck": "Confirm whether the contracted product is Dreame-branded production or an ODM order and identify its manufacturer."
+    },
+    {
+      "evidence": "The official contact page identifies a Dreame factory and headquarters site on Wuzhong Boulevard in Suzhou. A separate official Korean profile describes a 33,150-square-metre intelligent factory using manufacturing execution systems and automated robot-vacuum assembly.",
+      "scope": "Suzhou factory disclosure",
+      "buyerCheck": "Verify whether the exact SKU is assembled at the named Suzhou facility."
+    },
+    {
+      "evidence": "Manufacturer-of-record can vary by category and model. Buyers should verify the product label and compliance documents rather than assume every Dreame-branded product is made by the same legal entity.",
+      "scope": "Category and model",
+      "buyerCheck": "Verify the manufacturer on the product label and compliance documents for the exact model."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Dreame's current US company page says the brand reaches more than 120 countries and regions and operates more than 4,000 physical stores, alongside ecommerce and dealer channels.",
+      "scope": "Company-reported global reach",
+      "buyerCheck": "Confirm the authorized ecommerce, dealer and physical-store route in the target market."
+    },
+    {
+      "evidence": "The global contact page lists localized support across North America, Europe, Asia-Pacific, the Middle East and Latin America and provides a dedicated distribution contact.",
+      "scope": "Named regional support markets",
+      "buyerCheck": "Confirm the local support entity and distribution agreement for the target region."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Dreame combines a fast-widening portfolio—from robot and upright floorcare into yard, pool, personal-care and home appliances—with ecommerce, distributors and a growing physical-store network. Its Xiaomi ecosystem history accelerated the early business but does not define current legal ownership. The strategic pressure is organizational: Dreame must convert rapid category launches and high marketing intensity into durable service, quality and channel economics while Roborock and Ecovacs contest the same premium floorcare and offline experience space.",
+    "competitorSlugs": [
+      "roborock",
+      "ecovacs",
+      "tineco"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2020-09-07",
+      "title": "Dreame announces Series B+ financing",
+      "summary": "Dreame announced a nearly RMB 100 million round led by IDG Capital and identified Xiaomi Corporation and Shunwei Capital as returning shareholders, documenting investment without establishing Xiaomi control.",
+      "sourceIds": [
+        "dreame-series-b-plus"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "dreame-about-us",
+      "title": "About Us",
+      "publisher": "Dreame Technology",
+      "url": "https://www.dreametech.com/pages/about-us",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dreame-brand-story",
+      "title": "Brand Story",
+      "publisher": "Dreame Technology",
+      "url": "https://global.dreametech.com/pages/brand-story",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dreame-series-b-plus",
+      "title": "Smart Consumer Technology Startup Dreame Technology Raises Nearly USD 15 Million in Series B+ Funding Led by IDG Capital",
+      "publisher": "Dreame Technology via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/smart-consumer-technology-startup-dreame-technology-raises-nearly-usd-15-million-in-series-b-funding-led-by-idg-capital-301124948.html",
+      "publishedAt": "2020-09-07",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dreame-contact",
+      "title": "Contact Us",
+      "publisher": "Dreame Technology",
+      "url": "https://global.dreametech.com/pages/contact-us",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dreame-korea-about",
+      "title": "About Dreame",
+      "publisher": "Dreame Technology Korea",
+      "url": "https://store.kr.dreametech.com/pages/about",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mova-about",
+      "title": "About Us",
+      "publisher": "MOVA Malaysia",
+      "url": "https://www.mova.com.my/pages/about-us",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T00:27:34+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T00:45:16+08:00"
+}
