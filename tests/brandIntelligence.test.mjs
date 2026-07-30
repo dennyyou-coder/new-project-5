@@ -128,6 +128,49 @@ test("accepts a complete published brand profile", () => {
   assert.deepEqual(validateBrandProfile(profile, articles), []);
 });
 
+test("rejects incomplete leadership portrait metadata", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.leadership[0].portrait = {
+    src: "/images/brands/sample-brand/founder.webp",
+    alt: "Alex Example, founder of Sample Brand"
+  };
+
+  const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+  assert.match(errors, /leadership item 1 portrait credit is required/i);
+  assert.match(errors, /leadership item 1 portrait sourceUrl is required/i);
+});
+
+test("requires leadership portrait sources to use HTTPS", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.leadership[0].portrait = {
+    src: "/images/brands/sample-brand/founder.webp",
+    alt: "Alex Example, founder of Sample Brand",
+    credit: "Sample Brand",
+    sourceUrl: "http://example.com/press"
+  };
+
+  assert.match(
+    validateBrandProfile(invalidProfile, articles).join("\n"),
+    /leadership item 1 portrait sourceUrl must be a valid HTTPS URL/i
+  );
+});
+
+test("keeps leadership portraits inside the current brand asset directory", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.leadership[0].portrait = {
+    src: "/images/blog/founder.webp",
+    alt: "Alex Example, founder of Sample Brand",
+    credit: "Sample Brand",
+    sourceUrl: "https://example.com/press"
+  };
+
+  assert.ok(
+    validateBrandProfile(invalidProfile, articles).includes(
+      "leadership item 1 portrait src must begin with /images/brands/sample-brand/."
+    )
+  );
+});
+
 test("page schema exposes the official logo while preserving the editorial hero image", () => {
   const schemas = buildBrandPageSchemas(
     { profile, primaryArticles: [], relatedArticles: [] },

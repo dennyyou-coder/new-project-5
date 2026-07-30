@@ -21,6 +21,21 @@ export type BrandEvidenceItem = {
   buyerCheck: string;
 };
 
+export type BrandLeadershipPortrait = {
+  src: string;
+  alt: string;
+  credit: string;
+  sourceUrl: string;
+  objectPosition?: string;
+};
+
+export type BrandLeadershipPerson = {
+  name: string;
+  role: string;
+  context?: string;
+  portrait?: BrandLeadershipPortrait;
+};
+
 export type BrandProfile = {
   status: "draft" | "published";
   slug: string;
@@ -42,7 +57,7 @@ export type BrandProfile = {
   logoSourceUrl: string;
   contentVisuals: BrandContentVisual[];
   ownership: { summary: string; parentCompany?: string };
-  leadership: Array<{ name: string; role: string; context?: string }>;
+  leadership: BrandLeadershipPerson[];
   productPortfolio: Array<{
     name: string;
     positioning: string;
@@ -123,6 +138,16 @@ function isValidHttpUrl(value: unknown) {
   try {
     const url = new URL(value);
     return url.protocol === "http:" || url.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
+function isValidHttpsUrl(value: unknown) {
+  if (!hasText(value)) return false;
+
+  try {
+    return new URL(value).protocol === "https:";
   } catch {
     return false;
   }
@@ -420,6 +445,45 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
       recordText(item, "name", `${label} name`, errors);
       recordText(item, "role", `${label} role`, errors);
       optionalRecordText(item, "context", `${label} context`, errors);
+      if (item.portrait !== undefined) {
+        if (!isRecord(item.portrait)) {
+          errors.push(`${label} portrait must be an object.`);
+          return;
+        }
+
+        const portrait = item.portrait;
+        recordText(portrait, "src", `${label} portrait src`, errors);
+        recordText(portrait, "alt", `${label} portrait alt`, errors);
+        recordText(portrait, "credit", `${label} portrait credit`, errors);
+        recordText(
+          portrait,
+          "sourceUrl",
+          `${label} portrait sourceUrl`,
+          errors
+        );
+        optionalRecordText(
+          portrait,
+          "objectPosition",
+          `${label} portrait objectPosition`,
+          errors
+        );
+
+        if (
+          hasText(portrait.src)
+          && hasText(candidate.slug)
+          && !portrait.src.startsWith(`/images/brands/${candidate.slug}/`)
+        ) {
+          errors.push(
+            `${label} portrait src must begin with /images/brands/${candidate.slug}/.`
+          );
+        }
+        if (
+          hasText(portrait.sourceUrl)
+          && !isValidHttpsUrl(portrait.sourceUrl)
+        ) {
+          errors.push(`${label} portrait sourceUrl must be a valid HTTPS URL.`);
+        }
+      }
     });
   }
 
