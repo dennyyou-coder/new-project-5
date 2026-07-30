@@ -22557,7 +22557,30 @@ button.contact-help-card > .contact-help-card-copy > span {
   overflow: hidden;
 }
 
-.brand-directory-card img,
+.brand-directory-card > a {
+  grid-template-rows: auto 1fr;
+}
+
+.brand-logo--card {
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  padding: clamp(24px, 4vw, 42px);
+  background: #f4f7fb;
+}
+
+.brand-logo--card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 78%;
+  max-height: 62%;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
 .brand-detail-hero img,
 .brand-article-grid img {
   display: block;

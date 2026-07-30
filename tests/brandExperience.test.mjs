@@ -279,6 +279,16 @@ test("brand visual primitives preserve logo geometry and semantic figures", () =
   assert.match(table, /data-label=/);
 });
 
+test("brand directory cards use official logos instead of editorial hero images", () => {
+  const card = read("components/brands/BrandDirectoryCard.tsx");
+
+  assert.match(card, /<BrandLogo\s+profile=\{profile\}\s+variant="card"/);
+  assert.match(card, /categories\.slice\(0,\s*3\)/);
+  assert.doesNotMatch(card, /profile\.heroImage/);
+  assert.doesNotMatch(card, /profile\.heroImageAlt/);
+  assert.equal((card.match(/<Link\b/g) || []).length, 1);
+});
+
 test("brand data table caption is visually hidden without leaving the accessibility tree", () => {
   const table = read("components/brands/BrandDataTable.tsx");
 
@@ -344,7 +354,7 @@ test("footer exposes exactly one Brand Intelligence discovery link", () => {
   assert.match(source, /<Link href="\/brands">Brand Intelligence<\/Link>/);
 });
 
-test("brand styles are isolated, cover images, and collapse multi-column layouts on mobile", () => {
+test("brand styles contain logos without cropping and collapse multi-column layouts on mobile", () => {
   const source = read("app/globals.css");
   const marker = "/* Brand intelligence hub */";
   const markerPosition = source.indexOf(marker);
@@ -368,7 +378,22 @@ test("brand styles are isolated, cover images, and collapse multi-column layouts
 
   assert.match(
     brandStyles,
-    /\.brand-directory-card img,[\s\S]*\.brand-detail-hero img,[\s\S]*\.brand-article-grid img\s*\{[\s\S]*object-fit:\s*cover/
+    /\.brand-logo--card\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*7[^}]*\}/
+  );
+  const cardLogoImageRule = brandStyles.match(
+    /\.brand-logo--card img\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(cardLogoImageRule);
+  assert.match(cardLogoImageRule, /width:\s*100%/);
+  assert.match(cardLogoImageRule, /height:\s*100%/);
+  assert.match(cardLogoImageRule, /max-width:/);
+  assert.match(cardLogoImageRule, /max-height:/);
+  assert.match(cardLogoImageRule, /object-fit:\s*contain/);
+  assert.doesNotMatch(cardLogoImageRule, /object-fit:\s*cover/);
+  assert.doesNotMatch(cardLogoImageRule, /(?:filter|box-shadow):/);
+  assert.match(
+    brandStyles,
+    /\.brand-detail-hero img,[\s\S]*\.brand-article-grid img\s*\{[\s\S]*object-fit:\s*cover/
   );
 
   const mobilePosition = brandStyles.indexOf("@media (max-width: 760px)");
