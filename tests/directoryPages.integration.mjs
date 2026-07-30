@@ -38,6 +38,16 @@ test("Blog landing stays on the approved six-card layout", async () => {
   );
 });
 
+test("Blog series link opens the dedicated episode directory", async () => {
+  const html = await page("/blog");
+
+  includesMatch(
+    html,
+    /href="\/blog\/series\/building-worlds-no-1-cleaning-show-from-scratch"[^>]*>View all episodes</,
+    "View all episodes should link to the permanent series directory"
+  );
+});
+
 test("Analysis archive renders ten linked feed rows and a sidebar", async () => {
   const html = await page("/blog/archive");
 

@@ -29,7 +29,7 @@ test("landing components expose series, grid, and business modules", () => {
 
 test("series hero provides latest episode and all episodes links", () => {
   assert.match(componentSource, /Read latest episode/);
-  assert.match(componentSource, /#series-episodes/);
+  assert.match(componentSource, /View all episodes/);
 });
 
 test("primary navigation keeps Blog and removes Guides", () => {
