@@ -263,6 +263,22 @@ test("brand hero labels legal names and multi-entity scope notes separately", ()
   assert.doesNotMatch(hero, /\{profile\.(?:legalName|legalEntityNote) \?/);
 });
 
+test("brand visual primitives preserve logo geometry and semantic figures", () => {
+  const logo = read("components/brands/BrandLogo.tsx");
+  const visual = read("components/brands/BrandVisual.tsx");
+  const table = read("components/brands/BrandDataTable.tsx");
+
+  assert.match(logo, /variant:\s*"card"\s*\|\s*"hero"/);
+  assert.match(logo, /src=\{profile\.logoImage\}/);
+  assert.match(logo, /alt=\{profile\.logoImageAlt\}/);
+  assert.match(visual, /<figure/);
+  assert.match(visual, /<figcaption>/);
+  assert.match(table, /<table/);
+  assert.match(table, /<caption/);
+  assert.match(table, /scope="col"/);
+  assert.match(table, /data-label=/);
+});
+
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {
   const component = read("components/ArticleBrandLinks.tsx");
 
