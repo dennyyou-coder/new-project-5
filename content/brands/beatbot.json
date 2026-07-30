@@ -1,0 +1,190 @@
+{
+  "status": "published",
+  "slug": "beatbot",
+  "name": "Beatbot",
+  "aliases": [
+    "Xingmai Innovation",
+    "Xingmai Innovation Technology",
+    "星迈创新"
+  ],
+  "legalName": "Xingmai Innovation Technology (Suzhou) Co., Ltd.",
+  "officialWebsite": "https://beatbot.com/",
+  "headline": "Beatbot ownership, AquaSense pool robots and global operating network",
+  "description": "A source-backed profile of Beatbot's Xingmai operating company, founder Siler Wang, AquaSense and iSkim portfolio, manufacturing evidence, regional entities and channels.",
+  "metaDescription": "Beatbot company profile: Xingmai ownership, founder Siler Wang, AquaSense pool robots, manufacturing, channels and competitive strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Beatbot or Xingmai Innovation. Public financing reports do not provide a complete current cap table, and legal-manufacturer evidence does not identify every physical assembly factory.",
+  "headquarters": "Suzhou, Jiangsu, China",
+  "founded": "2022",
+  "heroImage": "/images/brands/beatbot/hero-aquasense-x.webp",
+  "heroImageAlt": "Beatbot AquaSense X robotic pool cleaner and auto-filter-cleaning station",
+  "logoImage": "/images/brands/beatbot/logo.webp",
+  "logoImageAlt": "Beatbot logo",
+  "logoSourceUrl": "https://beatbot.com/cdn/shop/files/logo_1.svg?v=1767610273",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/beatbot-xingmai-ownership-cover.webp",
+      "alt": "Ownership map connecting Beatbot with Xingmai Innovation and founder Siler Wang",
+      "caption": "This map separates the Beatbot consumer brand, its Suzhou operator, founder identity and outside financing."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/beatbot-global-entity-manufacturing-map.webp",
+      "alt": "Map of Beatbot regional entities and manufacturing responsibility",
+      "caption": "This map helps buyers distinguish Xingmai Suzhou, regional entities, legal-manufacturer evidence and the physical factory question."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/aiper-scuba-v3-ultra-vs-beatbot-aquasense-x.webp",
+      "alt": "Pool-robot platform comparison between Aiper Scuba V3 Ultra and Beatbot AquaSense X",
+      "caption": "This comparison places Beatbot AquaSense X against a current competing pool-robot system at product and service level."
+    }
+  ],
+  "ownership": {
+    "summary": "Beatbot is a technology brand operated by Xingmai Innovation Technology (Suzhou) Co., Ltd. The official brand story identifies Siler Wang as founder and CEO; Chinese public sources identify him as Wang Shengle. Public reports name institutional financing participants, but the reviewed sources do not disclose a complete current shareholder table, founder percentage or separate controlling parent company. Investment by a fund does not establish that the fund owns or controls the Beatbot brand."
+  },
+  "leadership": [
+    {
+      "name": "Siler Wang",
+      "role": "Founder and Chief Executive Officer",
+      "context": "Beatbot's official story identifies Siler Wang as founder and CEO; Chinese and German public records identify him as Wang Shengle (王生乐)."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "AquaSense X",
+      "positioning": "A premium robotic pool-cleaner system launched with an auto-filter-cleaning station.",
+      "buyerRelevance": "Adds a station-dependent workflow whose installation, consumables, service and freight differ from a standalone cordless robot."
+    },
+    {
+      "name": "AquaSense 2 Ultra and AquaSense 2",
+      "positioning": "Cordless pool robots spanning high-end AI-assisted multi-surface cleaning and lower-tier floor, wall and waterline configurations.",
+      "buyerRelevance": "Supports premium tiering but requires exact-model checks for navigation, surface coverage, clarifying and surface-skimming functions."
+    },
+    {
+      "name": "iSkim Ultra",
+      "positioning": "A solar-assisted robotic surface skimmer that handles floating debris separately from underwater cleaning.",
+      "buyerRelevance": "Enables a multi-robot pool-care package with separate charging, retrieval and service requirements."
+    },
+    {
+      "name": "Future backyard robotics",
+      "positioning": "Trademark and public strategy evidence points to a wider outdoor-robotics ambition beyond pool cleaning.",
+      "buyerRelevance": "Treat future categories as product-development direction until market-specific commercial models and support are verified."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Beatbot's European contact page identifies Xingmai Innovation Technology (Suzhou) Co., Ltd. as the brand operator; app, patent, trademark and product records repeatedly connect the brand to the Suzhou company.",
+      "scope": "Brand and legal operating company",
+      "buyerCheck": "Confirm that the legal entity named in the contract and product documents matches the relevant market role."
+    },
+    {
+      "evidence": "A European GPSR manufacturer-information document names Xingmai Suzhou as manufacturer, and reviewed FCC materials name the company as applicant or grantee for a robotic pool cleaner.",
+      "scope": "Covered product and regulatory records",
+      "buyerCheck": "Match each document to the exact model and do not infer the physical assembly factory solely from the legal-manufacturer address."
+    },
+    {
+      "evidence": "Public sources do not provide a complete current factory map for every Beatbot model and batch.",
+      "scope": "Physical assembly",
+      "buyerCheck": "Verify factory name, address, audit scope, origin, subcontracting and batch traceability in the supplier and shipment documents."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Beatbot combines direct ecommerce, authorized dealers and a company-reported network of more than 1,000 stores.",
+      "scope": "Company-reported global channels",
+      "buyerCheck": "Confirm authorized status, invoice entity and local product availability for the target store or ecommerce account."
+    },
+    {
+      "evidence": "Public records name Beatbot-related entities in Suzhou, Hong Kong, the United States and Germany, each appearing in different legal, software, website or market roles.",
+      "scope": "Named regional entities",
+      "buyerCheck": "Identify the seller, importer, app provider, warranty entity and IP owner relevant to the exact transaction."
+    },
+    {
+      "evidence": "Beatbot's warranty policy limits coverage by model, region, authorized seller, proof of purchase and service territory.",
+      "scope": "Regional warranty programs",
+      "buyerCheck": "Confirm the applicable policy and return route before cross-border or marketplace purchasing."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Beatbot positions itself at the high end of cordless pool robotics through integrated sensing, surface-skimming and station-based automation. Its focused premium design can differentiate the brand from broader volume players, while faster product cycles raise expectations for software, service and replacement support. The diligence risk is that the consumer-facing brand spans multiple public entities and regulatory roles without a fully disclosed factory or ownership chart.",
+    "competitorSlugs": [
+      "aiper",
+      "maytronics",
+      "wybot"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-01",
+      "title": "Beatbot launches AquaSense X",
+      "summary": "Beatbot's official story says the AquaSense X introduced an auto-filter-cleaning station for the pool-cleaner system.",
+      "sourceIds": [
+        "beatbot-story"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "title": "AquaSense 2 Ultra debuts at CES",
+      "summary": "The company presented its second-generation premium pool robot as an AI-led expansion of the AquaSense platform.",
+      "sourceIds": [
+        "beatbot-story"
+      ]
+    },
+    {
+      "date": "2024-01",
+      "title": "Beatbot launches its first AquaSense products",
+      "summary": "Beatbot's official timeline says AquaSense Pro and AquaSense launched at CES 2024.",
+      "sourceIds": [
+        "beatbot-story"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "beatbot-story",
+      "title": "Our Story",
+      "publisher": "Beatbot",
+      "url": "https://beatbot.com/pages/our-story",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "beatbot-contact",
+      "title": "Contact Us",
+      "publisher": "Beatbot Europe",
+      "url": "https://eu.beatbot.com/pages/contact-us",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "beatbot-warranty",
+      "title": "Warranty Policy",
+      "publisher": "Beatbot",
+      "url": "https://beatbot.com/pages/warranty-policy",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "beatbot-gpsr",
+      "title": "Beatbot GPSR Manufacturer Information",
+      "publisher": "Beatbot / Poolpowershop",
+      "url": "https://www.poolpowershop.de/media/f0/c9/ae/1747229855/herstellerinformationen-gpsr-beatbot.pdf",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "beatbot-app",
+      "title": "Beatbot App",
+      "publisher": "Apple App Store",
+      "url": "https://apps.apple.com/ie/app/beatbot/id6451108638",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "beatbot-de-imprint",
+      "title": "Impressum",
+      "publisher": "Beatbot Germany",
+      "url": "https://de.beatbot.com/pages/impressum",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T22:45:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T22:45:00+08:00"
+}

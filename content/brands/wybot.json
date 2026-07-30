@@ -1,0 +1,187 @@
+{
+  "status": "published",
+  "slug": "wybot",
+  "name": "WYBOT",
+  "aliases": [
+    "WYBOTICS",
+    "Wybotics",
+    "Wangyuan",
+    "Tianjin Wangyuan"
+  ],
+  "legalName": "WYBOTICS Co.,LTD",
+  "officialWebsite": "https://www.wybotpool.com/",
+  "headline": "WYBOT ownership, Tianjin manufacturing, products and regional channels",
+  "description": "A source-backed profile separating the WYBOT brand from WYBOTICS, with controlling-shareholder evidence, own-brand and ODM manufacturing, regional entities and model-level buyer checks.",
+  "metaDescription": "WYBOT company profile: WYBOTICS ownership, Tianjin manufacturing, pool robots, solar skimmers, ODM business, channels and strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with WYBOT or WYBOTICS. The April 2026 Hong Kong document was a draft application proof, and recall or factory evidence is applied only within its stated model, date and market scope.",
+  "headquarters": "Tianjin, China",
+  "founded": "2005 company heritage; WYBOT brand introduced in 2021",
+  "heroImage": "/images/brands/wybot/hero-s3-pool-cleaner.webp",
+  "heroImageAlt": "WYBOT C2 cordless pool cleaner and WYBOT S3 with docking system",
+  "logoImage": "/images/brands/wybot/logo.webp",
+  "logoImageAlt": "WYBOT logo",
+  "logoSourceUrl": "https://cdn.shopify.com/s/files/1/0714/0750/1589/files/WYBOTLOGOblk.png?v=1718764590",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/wybot-wybotics-wangyuan-manufacturer-cover.webp",
+      "alt": "Ownership and manufacturing map linking WYBOT, WYBOTICS and Wangyuan",
+      "caption": "This map separates the consumer brand, current manufacturer, historical corporate identity and disclosed controlling-shareholder group."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/wybot-regional-odm-sku-responsibility-map.webp",
+      "alt": "Map of WYBOT regional entities, ODM production and SKU responsibility",
+      "caption": "This map helps buyers distinguish group manufacturing, regional commercial roles, ODM relationships and exact-SKU responsibility."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/wybot-vs-dolphin-robotic-pool-cleaners.webp",
+      "alt": "Robotic pool-cleaner comparison between WYBOT and Dolphin",
+      "caption": "This comparison places WYBOT and Dolphin within different product, service and channel systems."
+    }
+  ],
+  "ownership": {
+    "summary": "WYBOT is a company-owned robotic pool-cleaner brand of WYBOTICS Co.,LTD, the Tianjin business formerly known as Tianjin Wangyuan Environmental Protection & Technology Co., Ltd. The April 2026 Hong Kong application proof said Fu Guilan, Yu Qian and controlled entities together held 71.58% of voting control as of 15 April 2026. That figure covers a defined controlling-shareholder group and does not mean the company was wholly family-owned. The filing was a draft application proof, not evidence of a completed listing."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "C- and B-series cordless pool cleaners",
+      "positioning": "Cordless residential robots spanning above-ground, mainstream in-ground, wall-climbing and AI-vision configurations.",
+      "buyerRelevance": "Supports price and feature tiering, but exact pool coverage, wall behavior, filters and battery specifications vary by model."
+    },
+    {
+      "name": "S-series intelligent pool cleaners",
+      "positioning": "Higher-tier robots with navigation, mapping, docking and solar-assisted options.",
+      "buyerRelevance": "Adds premium system requirements around docks, installation, app connectivity and market-specific service."
+    },
+    {
+      "name": "F1 solar pool skimmer",
+      "positioning": "A solar-powered surface-cleaning robot that complements floor and wall cleaning.",
+      "buyerRelevance": "Enables full-pool bundles but introduces a separate surface-care product and parts platform."
+    },
+    {
+      "name": "Winny and ODM pool robots",
+      "positioning": "WYBOTICS also sells its Winny brand and produces commissioned products for outside pool-equipment customers.",
+      "buyerRelevance": "Factory overlap does not prove product equivalence, shared certification, interchangeable parts or common warranty."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "WYBOTICS' April 2026 application proof says it manufactures substantially all products at owned facilities in Tianjin; the production base had three workshops and more than 10,000 square metres of gross floor area at the end of 2025.",
+      "scope": "Group manufacturing disclosure",
+      "buyerCheck": "Confirm that the exact contracted model and batch are produced at the disclosed Tianjin facility."
+    },
+    {
+      "evidence": "The filing says WYBOTICS develops and manufactures substantially all key components used in branded and ODM products in-house and assembles products at its self-owned base.",
+      "scope": "Branded and commissioned products",
+      "buyerCheck": "Treat substantially all as a group statement; verify the bill of materials, origin and subcontracting for the exact SKU."
+    },
+    {
+      "evidence": "A 2026 U.S. recall named WYBOTICS Co. Ltd. in Tianjin as manufacturer and Wybotics Inc. in California as importer for specified Osprey 700 Max and S1 units.",
+      "scope": "Named U.S. recall models and serial ranges",
+      "buyerCheck": "Screen the exact model and serial number and do not generalize the importer or recall to every WYBOT product."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "WYBOTICS combines own-brand ecommerce, Amazon, third-party merchants, wholesale and distributors across regional markets.",
+      "scope": "Multi-channel route to market",
+      "buyerCheck": "Confirm seller authorization, invoice identity and warranty eligibility for the target channel."
+    },
+    {
+      "evidence": "Disclosed subsidiaries include Wybotics Inc. in the United States, WYBOTICS EUROPE in France and WYBOTICS HONGKONG COMPANY LIMITED, with different commercial or after-sales functions.",
+      "scope": "Named regional group entities",
+      "buyerCheck": "Verify which entity is seller, importer, exporter, warranty provider and data operator for the order."
+    },
+    {
+      "evidence": "The U.S. warranty policy says coverage varies by model and generally ranges from 12 to 24 months, subject to territory, proof of purchase and authorized-channel conditions.",
+      "scope": "U.S. consumer warranty",
+      "buyerCheck": "Obtain the written warranty matrix for the exact SKU, country and commercial channel."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: WYBOTICS combines its own Tianjin manufacturing base with own-brand and ODM production, giving WYBOT a wider cost and product-development foundation than a marketing-only brand. Its range extends from value cordless cleaners to vision, solar-dock and surface-skimming systems. The strategic challenge is to translate manufacturing scale into consistent software, safety, spare parts and after-sales performance across regional sellers while keeping own-brand and commissioned products clearly separated.",
+    "competitorSlugs": [
+      "aiper",
+      "maytronics",
+      "beatbot"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-04-24",
+      "title": "WYBOTICS files a Hong Kong application proof",
+      "summary": "The draft filing documented the company's controlling-shareholder group, Tianjin production base, own brands, ODM business and regional subsidiaries; it did not confirm a completed listing.",
+      "sourceIds": [
+        "wybotics-application-proof"
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "title": "Specified WYBOT units enter a U.S. recall",
+      "summary": "The CPSC recalled named Osprey 700 Max and S1 models and separated the Tianjin manufacturer from the California importer.",
+      "sourceIds": [
+        "wybot-cpsc-2026"
+      ]
+    },
+    {
+      "date": "2021-12-31",
+      "title": "Wangyuan converts into WYBOTICS",
+      "summary": "The predecessor company converted into a joint stock limited company and adopted WYBOTICS Co.,LTD as its English corporate name.",
+      "sourceIds": [
+        "wybotics-application-proof"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wybot-about",
+      "title": "About WYBOT",
+      "publisher": "WYBOT Europe",
+      "url": "https://www.eu.wybotpool.com/pages/about-us",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "wybot-store",
+      "title": "WYBOT Official Store",
+      "publisher": "WYBOT",
+      "url": "https://www.wybotpool.com/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "wybotics-application-proof",
+      "title": "WYBOTICS Co.,LTD Application Proof",
+      "publisher": "Hong Kong Exchanges and Clearing",
+      "url": "https://www1.hkexnews.hk/app/sehk/2026/108465/documents/sehk26042403683.pdf",
+      "publishedAt": "2026-04-24",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "wybot-cpsc-2026",
+      "title": "Wybotics Recalls Robotic Pool Vacuums Due to Burn and Fire Hazards",
+      "publisher": "U.S. Consumer Product Safety Commission",
+      "url": "https://www.cpsc.gov/Recalls/2026/Wybotics-Recalls-Robotic-Pool-Vacuums-Due-to-Burn-and-Fire-Hazards",
+      "publishedAt": "2026-04-09",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "wybot-warranty",
+      "title": "Warranty and Refund Policy",
+      "publisher": "WYBOT",
+      "url": "https://www.wybotpool.com/pages/refund-policy",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "wybot-privacy",
+      "title": "Privacy Policy",
+      "publisher": "WYBOT Europe",
+      "url": "https://www.eu.wybotpool.com/pages/privacy-policy-1",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T22:45:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T22:45:00+08:00"
+}
