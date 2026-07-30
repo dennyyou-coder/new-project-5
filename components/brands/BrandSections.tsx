@@ -2,6 +2,10 @@ import Link from "next/link";
 import { BrandDataTable } from "@/components/brands/BrandDataTable";
 import { BrandVisual } from "@/components/brands/BrandVisual";
 import {
+  buildLeadershipRows,
+  selectBrandContentVisuals
+} from "@/components/brands/brandSectionData";
+import {
   buildBrandCompetitorReferences,
   type BrandContentVisual,
   type BrandProfile
@@ -20,9 +24,7 @@ export function BrandSections({
   profile: BrandProfile;
   allowedCompetitorSlugs: ReadonlySet<string>;
 }) {
-  const visualByPlacement = new Map(
-    profile.contentVisuals.map((visual) => [visual.placement, visual])
-  );
+  const visualByPlacement = selectBrandContentVisuals(profile.contentVisuals);
   const ownershipVisual = visualByPlacement.get("ownership");
   const portfolioVisual = visualByPlacement.get("portfolio");
   const operationsVisual = visualByPlacement.get("operations");
@@ -56,13 +58,7 @@ export function BrandSections({
                       { key: "role", label: "Role" },
                       { key: "evidenceNote", label: "Evidence note" }
                     ]}
-                    rows={profile.leadership.map((leader) => ({
-                      person: leader.name,
-                      role: leader.role,
-                      evidenceNote:
-                        leader.context ||
-                        "Role identified in the reviewed sources."
-                    }))}
+                    rows={buildLeadershipRows(profile.leadership)}
                   />
                 </div>
               </div>

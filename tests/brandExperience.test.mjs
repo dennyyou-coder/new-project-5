@@ -29,6 +29,36 @@ const readCssBlock = (source, marker) => {
   assert.fail(`unclosed CSS block: ${marker}`);
 };
 
+const parseHexColor = (value) => {
+  const normalized = value.trim().replace(/^#/, "");
+  assert.match(normalized, /^[0-9a-f]{6}$/i);
+  return [0, 2, 4].map((offset) =>
+    Number.parseInt(normalized.slice(offset, offset + 2), 16)
+  );
+};
+
+const relativeLuminance = (rgb) =>
+  rgb
+    .map((channel) => channel / 255)
+    .map((channel) =>
+      channel <= 0.04045
+        ? channel / 12.92
+        : ((channel + 0.055) / 1.055) ** 2.4
+    )
+    .reduce(
+      (luminance, channel, index) =>
+        luminance + channel * [0.2126, 0.7152, 0.0722][index],
+      0
+    );
+
+const contrastRatio = (foreground, background) => {
+  const foregroundLuminance = relativeLuminance(parseHexColor(foreground));
+  const backgroundLuminance = relativeLuminance(parseHexColor(background));
+  const lighter = Math.max(foregroundLuminance, backgroundLuminance);
+  const darker = Math.min(foregroundLuminance, backgroundLuminance);
+  return (lighter + 0.05) / (darker + 0.05);
+};
+
 const profile = {
   status: "published",
   slug: "sample-brand",
@@ -302,6 +332,8 @@ test("brand visual primitives preserve logo geometry and semantic figures", () =
   assert.match(logo, /alt=\{profile\.logoImageAlt\}/);
   assert.match(visual, /<figure/);
   assert.match(visual, /<figcaption>/);
+  assert.match(visual, /width=\{1600\}/);
+  assert.match(visual, /height=\{900\}/);
   assert.match(table, /<table/);
   assert.match(table, /<caption/);
   assert.match(table, /scope="col"/);
@@ -341,10 +373,8 @@ test("brand data table caption is visually hidden without leaving the accessibil
 test("brand sections pair structured tables with each configured visual placement", () => {
   const sections = read("components/brands/BrandSections.tsx");
 
-  assert.match(
-    sections,
-    /const visualByPlacement = new Map\([\s\S]*profile\.contentVisuals\.map/
-  );
+  assert.match(sections, /selectBrandContentVisuals\(profile\.contentVisuals\)/);
+  assert.match(sections, /buildLeadershipRows\(profile\.leadership\)/);
   [
     "ownership",
     "portfolio",
@@ -365,6 +395,48 @@ test("brand sections pair structured tables with each configured visual placemen
   assert.match(sections, /className="brand-competitor-links"/);
   assert.doesNotMatch(sections, /function TextList/);
   assert.doesNotMatch(sections, /guides-category-grid brand-section-grid/);
+});
+
+test("brand section helpers keep first unique visuals and provide an empty-leadership row", async () => {
+  let helpers;
+
+  try {
+    helpers = await import(
+      "../components/brands/brandSectionData.ts"
+    );
+  } catch (error) {
+    if (error?.code !== "ERR_MODULE_NOT_FOUND") throw error;
+  }
+
+  assert.equal(typeof helpers?.selectBrandContentVisuals, "function");
+  assert.equal(typeof helpers?.buildLeadershipRows, "function");
+
+  const visual = (placement, src) => ({
+    placement,
+    src,
+    alt: `${placement} visual`,
+    caption: `${placement} caption`
+  });
+  const selected = helpers.selectBrandContentVisuals([
+    visual("ownership", "/images/ownership-first.webp"),
+    visual("portfolio", "/images/ownership-first.webp"),
+    visual("ownership", "/images/ownership-second.webp"),
+    visual("competition", "/images/competition.webp"),
+    visual("portfolio", "/images/portfolio.webp")
+  ]);
+
+  assert.deepEqual([...selected.entries()], [
+    ["ownership", visual("ownership", "/images/ownership-first.webp")],
+    ["competition", visual("competition", "/images/competition.webp")],
+    ["portfolio", visual("portfolio", "/images/portfolio.webp")]
+  ]);
+  assert.deepEqual(helpers.buildLeadershipRows([]), [
+    {
+      person: "Not publicly identified",
+      role: "Not publicly identified",
+      evidenceNote: "No named leader was identified in reviewed sources."
+    }
+  ]);
 });
 
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {
@@ -483,8 +555,8 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   assert.ok(sectionVisualRule);
   assert.match(sectionVisualRule, /height:\s*auto/);
   assert.match(sectionVisualRule, /object-fit:\s*contain/);
+  assert.match(sectionVisualRule, /aspect-ratio:\s*16\s*\/\s*9/);
   assert.doesNotMatch(sectionVisualRule, /object-fit:\s*cover/);
-  assert.doesNotMatch(sectionVisualRule, /aspect-ratio:/);
   assert.match(
     brandStyles,
     /\.brand-section-layout--visual\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)\s+minmax\(280px,\s*0\.8fr\)/
@@ -536,6 +608,28 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   );
   assert.match(mobileStyles, /\.brand-sources a\s*\{[\s\S]*overflow-wrap:\s*anywhere/);
   assert.match(mobileStyles, /\.brand-detail-hero img\s*\{[\s\S]*(?:aspect-ratio|height):/);
+});
+
+test("competitor links meet normal-text contrast and retain a non-color cue", () => {
+  const source = read("app/globals.css");
+  const rootRule = source.match(/:root\s*\{[^}]*\}/)?.[0];
+  const linkRule = source.match(
+    /\.brand-competitor-links a\s*\{[^}]*\}/
+  )?.[0];
+
+  assert.ok(rootRule);
+  assert.ok(linkRule);
+  const navy = rootRule.match(/--navy:\s*(#[0-9a-f]{6})/i)?.[1];
+  const soft = rootRule.match(/--soft:\s*(#[0-9a-f]{6})/i)?.[1];
+  assert.ok(navy);
+  assert.ok(soft);
+  assert.match(linkRule, /color:\s*var\(--navy\)/);
+  assert.ok(
+    contrastRatio(navy, soft) >= 4.5,
+    `competitor link contrast must be at least 4.5:1; actual ${contrastRatio(navy, soft).toFixed(2)}:1`
+  );
+  assert.match(linkRule, /text-decoration:\s*underline/);
+  assert.match(linkRule, /text-underline-offset:/);
 });
 
 test("directory wordmarks remain legible at real one, two, and three-column boundaries", async () => {

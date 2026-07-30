@@ -22781,6 +22781,7 @@ button.contact-help-card > .contact-help-card-copy > span {
   width: 100%;
   max-width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: contain;
 }
 
@@ -22821,7 +22822,9 @@ button.contact-help-card > .contact-help-card-copy > span {
 }
 
 .brand-competitor-links a {
-  color: var(--accent);
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .brand-timeline {

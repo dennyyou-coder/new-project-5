@@ -6,6 +6,8 @@ export function BrandVisual({ visual }: { visual: BrandContentVisual }) {
       <img
         src={visual.src}
         alt={visual.alt}
+        width={1600}
+        height={900}
         loading="lazy"
         decoding="async"
       />
