@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import sharp from "sharp";
 import {
+  buildBrandCompetitorReferences,
   buildBrandPageSchemas,
   buildBrandSitemapEntries,
   buildBrandStaticParams,
@@ -510,18 +511,24 @@ test("sorts brand articles by absolute time with deterministic invalid and tie f
   ]);
 });
 
-test("the release gate validates the exact ten published profiles and approved article relationships", () => {
+test("the release gate validates the exact sixteen published profiles and approved article relationships", () => {
   const expectedSlugs = [
     "aiper",
+    "beatbot",
     "bissell",
     "dreame",
     "dyson",
     "ecovacs",
+    "husqvarna",
     "irobot",
     "mammotion",
     "maytronics",
+    "narwal",
     "roborock",
-    "tineco"
+    "segway-navimow",
+    "shark",
+    "tineco",
+    "wybot"
   ];
   const expectedPrimaryBrands = {
     "aiper-fluidra-pool-robotics-alliance": ["aiper"],
@@ -568,7 +575,7 @@ test("the release gate validates the exact ten published profiles and approved a
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 10);
+  assert.equal(loadedProfiles.length, 16);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -627,7 +634,7 @@ test("the release gate validates the exact ten published profiles and approved a
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles();
-  assert.equal(profiles.length, 10);
+  assert.equal(profiles.length, 16);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -646,6 +653,66 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("second batch profiles use dedicated local logos, product heroes, and active competitor links", async () => {
+  const newSlugs = [
+    "beatbot",
+    "husqvarna",
+    "narwal",
+    "segway-navimow",
+    "shark",
+    "wybot"
+  ];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(
+      candidate.heroImage,
+      new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`)
+    );
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.ok(
+      candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3,
+      `${slug} must use two or three content visuals`
+    );
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+  }
+
+  const expectedRoutes = {
+    shark: "/brands/shark",
+    wybot: "/brands/wybot",
+    beatbot: "/brands/beatbot",
+    husqvarna: "/brands/husqvarna",
+    "segway-navimow": "/brands/segway-navimow"
+  };
+  const publishedSlugs = new Set(getPublishedBrandProfiles(getInsights()).map(({ slug }) => slug));
+  const references = buildBrandCompetitorReferences(
+    Object.keys(expectedRoutes),
+    publishedSlugs
+  );
+
+  assert.deepEqual(
+    Object.fromEntries(references.map(({ slug, href }) => [slug, href])),
+    expectedRoutes
+  );
 });
 
 test("the first four founder profiles use complete local portrait assets without table duplication", async () => {
