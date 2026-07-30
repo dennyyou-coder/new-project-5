@@ -22680,10 +22680,148 @@ button.contact-help-card > .contact-help-card-copy > span {
   text-underline-offset: 3px;
 }
 
-.brand-section-grid {
+.brand-content-sections {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  gap: 32px;
+}
+
+.brand-content-section {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: clamp(22px, 3vw, 34px);
+  background: #fff;
+}
+
+.brand-content-section > h2 {
+  margin: 0 0 22px;
+  color: var(--navy);
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1.2;
+}
+
+.brand-section-layout {
+  min-width: 0;
+}
+
+.brand-section-layout--visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  gap: clamp(24px, 3vw, 40px);
+  align-items: start;
+}
+
+.brand-section-main,
+.brand-section-tables {
+  min-width: 0;
+}
+
+.brand-section-summary {
+  margin: 0 0 22px;
+  color: var(--text);
+  line-height: 1.72;
+}
+
+.brand-section-parent {
+  margin: -8px 0 22px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.brand-section-tables {
+  display: grid;
+  gap: 28px;
+}
+
+.brand-table-group {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.brand-table-group h3 {
+  margin: 0;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  color: var(--navy);
+  background: var(--soft);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.brand-section-main > .brand-data-table,
+.brand-section-main > .brand-table-group {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.brand-section-main > .brand-data-table {
+  overflow: hidden;
+}
+
+.brand-table-group .brand-data-table th,
+.brand-table-group .brand-data-table td,
+.brand-section-main > .brand-data-table th,
+.brand-section-main > .brand-data-table td {
+  padding-block: 15px;
+}
+
+.brand-visual {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft);
+}
+
+.brand-visual img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.brand-visual figcaption {
+  padding: 13px 16px 15px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  background: #fff;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.brand-competitor-links {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.brand-competitor-links > strong {
+  color: var(--navy);
+  font-size: 14px;
+}
+
+.brand-competitor-links > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.brand-competitor-links span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 11px;
+  color: var(--muted);
+  background: var(--soft);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.brand-competitor-links a {
+  color: var(--accent);
 }
 
 .brand-timeline {
@@ -22747,7 +22885,7 @@ button.contact-help-card > .contact-help-card-copy > span {
 @media (max-width: 760px) {
   .brand-directory-hero,
   .brand-detail-hero,
-  .brand-section-grid,
+  .brand-section-layout--visual,
   .brand-article-grid {
     grid-template-columns: 1fr;
   }
@@ -22769,6 +22907,18 @@ button.contact-help-card > .contact-help-card-copy > span {
   .brand-logo--hero img {
     height: 88px;
     aspect-ratio: auto;
+  }
+
+  .brand-content-sections {
+    gap: 24px;
+  }
+
+  .brand-content-section {
+    padding: 20px 16px;
+  }
+
+  .brand-section-layout--visual {
+    gap: 24px;
   }
 
   .brand-data-table {

@@ -338,6 +338,35 @@ test("brand data table caption is visually hidden without leaving the accessibil
   assert.doesNotMatch(table, /<caption[^>]*(?:hidden|display:\s*"none")/);
 });
 
+test("brand sections pair structured tables with each configured visual placement", () => {
+  const sections = read("components/brands/BrandSections.tsx");
+
+  assert.match(
+    sections,
+    /const visualByPlacement = new Map\([\s\S]*profile\.contentVisuals\.map/
+  );
+  [
+    "ownership",
+    "portfolio",
+    "operations",
+    "competition"
+  ].forEach((placement) => {
+    assert.match(
+      sections,
+      new RegExp(`visualByPlacement\\.get\\("${placement}"\\)`)
+    );
+  });
+  assert.match(sections, /caption="Leadership"/);
+  assert.match(sections, /caption="Product portfolio"/);
+  assert.match(sections, /caption="Manufacturing and supply-chain evidence"/);
+  assert.match(sections, /caption="Markets and channels evidence"/);
+  assert.match(sections, /buyerRelevance/);
+  assert.match(sections, /buyerCheck/);
+  assert.match(sections, /className="brand-competitor-links"/);
+  assert.doesNotMatch(sections, /function TextList/);
+  assert.doesNotMatch(sections, /guides-category-grid brand-section-grid/);
+});
+
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {
   const component = read("components/ArticleBrandLinks.tsx");
 
@@ -401,7 +430,12 @@ test("brand styles contain logos without cropping and collapse multi-column layo
     ".brand-logo--hero",
     ".brand-key-facts",
     ".brand-data-table",
-    ".brand-section-grid",
+    ".brand-content-sections",
+    ".brand-content-section",
+    ".brand-section-layout",
+    ".brand-section-tables",
+    ".brand-visual",
+    ".brand-competitor-links",
     ".brand-timeline",
     ".brand-article-grid",
     ".brand-sources",
@@ -443,6 +477,18 @@ test("brand styles contain logos without cropping and collapse multi-column layo
     brandStyles,
     /\.brand-detail-hero img,[\s\S]*\.brand-article-grid img\s*\{[\s\S]*object-fit:\s*cover/
   );
+  const sectionVisualRule = brandStyles.match(
+    /\.brand-visual img\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(sectionVisualRule);
+  assert.match(sectionVisualRule, /height:\s*auto/);
+  assert.match(sectionVisualRule, /object-fit:\s*contain/);
+  assert.doesNotMatch(sectionVisualRule, /object-fit:\s*cover/);
+  assert.doesNotMatch(sectionVisualRule, /aspect-ratio:/);
+  assert.match(
+    brandStyles,
+    /\.brand-section-layout--visual\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)\s+minmax\(280px,\s*0\.8fr\)/
+  );
 
   const twoColumnPosition = brandStyles.indexOf("@media (max-width: 1249px)");
   const oneColumnPosition = brandStyles.indexOf("@media (max-width: 840px)");
@@ -475,7 +521,7 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   [
     ".brand-directory-hero",
     ".brand-detail-hero",
-    ".brand-section-grid",
+    ".brand-section-layout--visual",
     ".brand-article-grid"
   ].forEach((selector) => assert.match(
     mobileStyles,
@@ -725,7 +771,10 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
     hero,
     /className="brand-detail-hero"[\s\S]*\{profile\.heroImage \? \([\s\S]*<img/
   );
-  assert.match(sections, /className="guides-category-grid brand-section-grid"/);
+  assert.match(sections, /className="brand-content-sections"/);
+  assert.match(sections, /className="brand-content-section"/);
+  assert.match(sections, /<BrandDataTable/);
+  assert.match(sections, /<BrandVisual/);
   assert.match(timeline, /<ol className="brand-timeline">/);
   assert.match(articles, /className="guide-category-list brand-article-grid"/);
   assert.match(sources, /<section className="section brand-sources">/);

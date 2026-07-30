@@ -1,26 +1,16 @@
 import Link from "next/link";
+import { BrandDataTable } from "@/components/brands/BrandDataTable";
+import { BrandVisual } from "@/components/brands/BrandVisual";
 import {
   buildBrandCompetitorReferences,
+  type BrandContentVisual,
   type BrandProfile
 } from "@/lib/brands";
 
-function TextList({
-  title,
-  items
-}: {
-  title: string;
-  items: string[];
-}) {
-  if (items.length === 0) return null;
-
-  return (
-    <section className="guides-category-panel">
-      <h2>{title}</h2>
-      <ul>
-        {items.map((item) => <li key={item}>{item}</li>)}
-      </ul>
-    </section>
-  );
+function sectionLayoutClassName(visual?: BrandContentVisual) {
+  return visual
+    ? "brand-section-layout brand-section-layout--visual"
+    : "brand-section-layout";
 }
 
 export function BrandSections({
@@ -30,6 +20,13 @@ export function BrandSections({
   profile: BrandProfile;
   allowedCompetitorSlugs: ReadonlySet<string>;
 }) {
+  const visualByPlacement = new Map(
+    profile.contentVisuals.map((visual) => [visual.placement, visual])
+  );
+  const ownershipVisual = visualByPlacement.get("ownership");
+  const portfolioVisual = visualByPlacement.get("portfolio");
+  const operationsVisual = visualByPlacement.get("operations");
+  const competitionVisual = visualByPlacement.get("competition");
   const competitorReferences = buildBrandCompetitorReferences(
     profile.competitivePosition.competitorSlugs,
     allowedCompetitorSlugs
@@ -38,76 +35,133 @@ export function BrandSections({
   return (
     <section className="section">
       <div className="insights-page-container">
-        <div className="guides-category-grid brand-section-grid">
-          {profile.ownership.summary ? (
-            <section className="guides-category-panel">
-              <h2>Ownership</h2>
-              <p>{profile.ownership.summary}</p>
-              {profile.ownership.parentCompany ? (
-                <p>Parent company: {profile.ownership.parentCompany}</p>
-              ) : null}
-            </section>
-          ) : null}
+        <div className="brand-content-sections">
+          <section className="brand-content-section">
+            <h2>Company &amp; Ownership</h2>
+            <div className={sectionLayoutClassName(ownershipVisual)}>
+              <div className="brand-section-main">
+                <p className="brand-section-summary">{profile.ownership.summary}</p>
+                {profile.ownership.parentCompany ? (
+                  <p className="brand-section-parent">
+                    <strong>Parent company:</strong>{" "}
+                    {profile.ownership.parentCompany}
+                  </p>
+                ) : null}
+                <div className="brand-table-group">
+                  <h3>Leadership</h3>
+                  <BrandDataTable
+                    caption="Leadership"
+                    columns={[
+                      { key: "person", label: "Person" },
+                      { key: "role", label: "Role" },
+                      { key: "evidenceNote", label: "Evidence note" }
+                    ]}
+                    rows={profile.leadership.map((leader) => ({
+                      person: leader.name,
+                      role: leader.role,
+                      evidenceNote:
+                        leader.context ||
+                        "Role identified in the reviewed sources."
+                    }))}
+                  />
+                </div>
+              </div>
+              {ownershipVisual ? <BrandVisual visual={ownershipVisual} /> : null}
+            </div>
+          </section>
 
-          {profile.leadership.length > 0 ? (
-            <section className="guides-category-panel">
-              <h2>Leadership</h2>
-              <dl>
-                {profile.leadership.map((leader) => (
-                  <div key={`${leader.name}-${leader.role}`}>
-                    <dt>{leader.name}</dt>
-                    <dd>
-                      {leader.role}
-                      {leader.context ? ` — ${leader.context}` : ""}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
-          ) : null}
+          <section className="brand-content-section">
+            <h2>Product Portfolio</h2>
+            <div className={sectionLayoutClassName(portfolioVisual)}>
+              <div className="brand-section-main">
+                <BrandDataTable
+                  caption="Product portfolio"
+                  columns={[
+                    { key: "category", label: "Category" },
+                    { key: "positioning", label: "Positioning" },
+                    { key: "buyerRelevance", label: "Buyer relevance" }
+                  ]}
+                  rows={profile.productPortfolio.map((product) => ({
+                    category: product.name,
+                    positioning: product.positioning,
+                    buyerRelevance:
+                      product.buyerRelevance ||
+                      "Review model and regional fit for the intended assortment."
+                  }))}
+                />
+              </div>
+              {portfolioVisual ? <BrandVisual visual={portfolioVisual} /> : null}
+            </div>
+          </section>
 
-          {profile.productPortfolio.length > 0 ? (
-            <section className="guides-category-panel">
-              <h2>Product Portfolio</h2>
-              <dl>
-                {profile.productPortfolio.map((product) => (
-                  <div key={product.name}>
-                    <dt>{product.name}</dt>
-                    <dd>{product.positioning}</dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
-          ) : null}
+          <section className="brand-content-section">
+            <h2>Manufacturing &amp; Channels</h2>
+            <div className={sectionLayoutClassName(operationsVisual)}>
+              <div className="brand-section-tables">
+                <div className="brand-table-group">
+                  <h3>Manufacturing &amp; Supply Chain</h3>
+                  <BrandDataTable
+                    caption="Manufacturing and supply-chain evidence"
+                    columns={[
+                      { key: "evidence", label: "Evidence" },
+                      { key: "scope", label: "Scope" },
+                      { key: "buyerCheck", label: "Buyer check" }
+                    ]}
+                    rows={profile.manufacturingSupplyChain.map((item) => ({
+                      evidence: item.evidence,
+                      scope: item.scope,
+                      buyerCheck: item.buyerCheck
+                    }))}
+                  />
+                </div>
+                <div className="brand-table-group">
+                  <h3>Markets &amp; Channels</h3>
+                  <BrandDataTable
+                    caption="Markets and channels evidence"
+                    columns={[
+                      { key: "evidence", label: "Evidence" },
+                      { key: "scope", label: "Scope" },
+                      { key: "buyerCheck", label: "Buyer check" }
+                    ]}
+                    rows={profile.marketsChannels.map((item) => ({
+                      evidence: item.evidence,
+                      scope: item.scope,
+                      buyerCheck: item.buyerCheck
+                    }))}
+                  />
+                </div>
+              </div>
+              {operationsVisual ? <BrandVisual visual={operationsVisual} /> : null}
+            </div>
+          </section>
 
-          <TextList
-            title="Manufacturing & Supply Chain"
-            items={profile.manufacturingSupplyChain}
-          />
-          <TextList
-            title="Markets & Channels"
-            items={profile.marketsChannels}
-          />
-
-          {profile.competitivePosition.summary ? (
-            <section className="guides-category-panel">
-              <h2>Competitive Position</h2>
-              <p>{profile.competitivePosition.summary}</p>
-              {competitorReferences.length > 0 ? (
-                <p>
-                  Related brand profiles:{" "}
-                  {competitorReferences.map((competitor, index) => (
-                    <span key={competitor.slug}>
-                      {index > 0 ? ", " : ""}
-                      {competitor.href ? (
-                        <Link href={competitor.href}>{competitor.slug}</Link>
-                      ) : competitor.slug}
-                    </span>
-                  ))}
+          <section className="brand-content-section">
+            <h2>Competitive Position</h2>
+            <div className={sectionLayoutClassName(competitionVisual)}>
+              <div className="brand-section-main">
+                <p className="brand-section-summary">
+                  {profile.competitivePosition.summary}
                 </p>
+                {competitorReferences.length > 0 ? (
+                  <div className="brand-competitor-links">
+                    <strong>Related brand profiles</strong>
+                    <div>
+                      {competitorReferences.map((competitor) => (
+                        <span key={competitor.slug}>
+                          {competitor.href ? (
+                            <Link href={competitor.href}>{competitor.slug}</Link>
+                          ) : competitor.slug}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+              {competitionVisual ? (
+                <BrandVisual visual={competitionVisual} />
               ) : null}
-            </section>
-          ) : null}
+            </div>
+          </section>
         </div>
       </div>
     </section>
