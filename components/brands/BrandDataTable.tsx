@@ -1,4 +1,17 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
+
+const visuallyHiddenCaptionStyle: CSSProperties = {
+  position: "absolute",
+  width: "1px",
+  height: "1px",
+  padding: 0,
+  margin: "-1px",
+  overflow: "hidden",
+  clip: "rect(0, 0, 0, 0)",
+  clipPath: "inset(50%)",
+  whiteSpace: "nowrap",
+  border: 0
+};
 
 type BrandDataColumn = {
   key: string;
@@ -18,7 +31,7 @@ export function BrandDataTable({
 }: BrandDataTableProps) {
   return (
     <table className="brand-data-table">
-      <caption className="sr-only">{caption}</caption>
+      <caption style={visuallyHiddenCaptionStyle}>{caption}</caption>
       <thead>
         <tr>
           {columns.map((column) => (

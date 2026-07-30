@@ -279,6 +279,26 @@ test("brand visual primitives preserve logo geometry and semantic figures", () =
   assert.match(table, /data-label=/);
 });
 
+test("brand data table caption is visually hidden without leaving the accessibility tree", () => {
+  const table = read("components/brands/BrandDataTable.tsx");
+
+  assert.match(table, /const visuallyHiddenCaptionStyle:\s*CSSProperties\s*=/);
+  assert.match(table, /position:\s*"absolute"/);
+  assert.match(table, /width:\s*"1px"/);
+  assert.match(table, /height:\s*"1px"/);
+  assert.match(table, /margin:\s*"-1px"/);
+  assert.match(table, /overflow:\s*"hidden"/);
+  assert.match(table, /clip:\s*"rect\(0, 0, 0, 0\)"/);
+  assert.match(table, /clipPath:\s*"inset\(50%\)"/);
+  assert.match(table, /whiteSpace:\s*"nowrap"/);
+  assert.match(table, /border:\s*0/);
+  assert.match(
+    table,
+    /<caption style=\{visuallyHiddenCaptionStyle\}>\{caption\}<\/caption>/
+  );
+  assert.doesNotMatch(table, /<caption[^>]*(?:hidden|display:\s*"none")/);
+});
+
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {
   const component = read("components/ArticleBrandLinks.tsx");
 
