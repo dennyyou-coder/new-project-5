@@ -1,0 +1,206 @@
+{
+  "status": "published",
+  "slug": "narwal",
+  "name": "Narwal",
+  "aliases": [
+    "Narwal Robotics",
+    "Yunjing Intelligence",
+    "Yunjing Intelligence Innovation",
+    "云鲸智能"
+  ],
+  "legalName": "Yunjing Intelligence Innovation (Shenzhen) Co., Ltd.",
+  "officialWebsite": "https://www.narwal.com/",
+  "headline": "Narwal ownership, robot-cleaning portfolio and manufacturing network",
+  "description": "A source-backed profile of Narwal's private-company ownership boundary, founder leadership, robot and wet-dry cleaning portfolio, regional entities and model-level manufacturing evidence.",
+  "metaDescription": "Narwal company profile: Yunjing ownership, founder Junbin Zhang, investors, robot vacuums, floor washers, manufacturing and channels.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Narwal or Yunjing Intelligence. Financing participants are identified as investors rather than parent companies, and factory evidence is limited to the models named in the reviewed documents.",
+  "headquarters": "Shenzhen, Guangdong, China",
+  "founded": "2016",
+  "heroImage": "/images/brands/narwal/hero-product-lineup.webp",
+  "heroImageAlt": "Narwal robot-vacuum docks and wet-dry floor washer in an official product lineup",
+  "logoImage": "/images/brands/narwal/logo.webp",
+  "logoImageAlt": "Narwal logo",
+  "logoSourceUrl": "https://us.narwal.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/narwal-yunjing-company-manufacturing-map.webp",
+      "alt": "Relationship map of Narwal, Yunjing entities, investors and manufacturing responsibilities",
+      "caption": "This map separates private-company investment, core operating entities, regional sellers and model-level manufacturing responsibility."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/narwal-vs-ecovacs-robot-vacuums.webp",
+      "alt": "Robot-vacuum platform comparison between Narwal and ECOVACS",
+      "caption": "This comparison helps buyers understand the different dock, mopping and navigation choices in Narwal and ECOVACS robot-vacuum systems."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/roborock-vs-narwal-robot-vacuums.webp",
+      "alt": "Robot-vacuum system comparison between Roborock and Narwal",
+      "caption": "This map compares the product-system positioning of Narwal and Roborock without treating brand-level claims as model test results."
+    }
+  ],
+  "ownership": {
+    "summary": "Narwal is a privately held Chinese home-robotics business built around Yunjing Intelligence Innovation (Shenzhen) Co., Ltd. Founder and CEO Junbin Zhang remains central to the company. Tencent, ByteDance, Source Code Capital, HongShan, Hillhouse and other institutions have participated in financing, but the complete current cap table and voting-control structure are not public. These investments do not establish Narwal as a subsidiary of Tencent, ByteDance, Xiaomi, Roborock or ECOVACS."
+  },
+  "leadership": [
+    {
+      "name": "Junbin Zhang",
+      "role": "Founder and Chief Executive Officer",
+      "context": "Narwal's official company materials identify Junbin Zhang, also written Zhang Junbin, as founder and CEO."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Flow and Freo robot vacuums",
+      "positioning": "Premium vacuum-and-mop robots organized around automated docks, obstacle avoidance, dirt sensing and different mopping architectures.",
+      "buyerRelevance": "Forms Narwal's core assortment, with important differences in dock, plumbing, mop and consumables requirements."
+    },
+    {
+      "name": "S-series wet-dry floor washers",
+      "positioning": "Upright hard-floor systems combining wet and dry pickup with roller and waste-management features.",
+      "buyerRelevance": "Extends the brand beyond robots into a manual floorcare category with separate service parts and cleaning-solution needs."
+    },
+    {
+      "name": "Cordless vacuums",
+      "positioning": "Dry floorcare products introduced as part of Narwal's broader home-cleaning expansion.",
+      "buyerRelevance": "Adds a distinct battery, accessory and filtration platform that should be planned separately from robot vacuums."
+    },
+    {
+      "name": "Mite-removal and adjacent cleaning appliances",
+      "positioning": "Specialized home-cleaning products shown in Narwal's wider category expansion.",
+      "buyerRelevance": "Requires market-specific availability and compliance checks because the extended assortment is not uniform globally."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Current official Narwal manuals identify Yunjing Intelligence Innovation (Shenzhen) Co., Ltd. as manufacturer for the covered products.",
+      "scope": "Current named product manuals",
+      "buyerCheck": "Match the manual and manufacturer name to the exact model before relying on it."
+    },
+    {
+      "evidence": "An older J2 manual named the Dongguan branch of the Shenzhen company as production enterprise, providing generation-specific factory evidence rather than a universal Narwal factory map.",
+      "scope": "J2 model generation",
+      "buyerCheck": "Do not generalize the Dongguan production reference to current or unrelated Narwal models."
+    },
+    {
+      "evidence": "Narwal's international network includes Shenzhen, Dongguan, Hong Kong and regional sales entities that may perform different manufacturing, trading, data or warranty functions.",
+      "scope": "Group and regional entities",
+      "buyerCheck": "Verify the manufacturer, production enterprise, seller, importer and warranty provider separately."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Narwal's current US site says the brand has entered more than 30 countries and markets and combines its own ecommerce with regional retail and marketplace channels.",
+      "scope": "Company-reported international reach",
+      "buyerCheck": "Confirm local product availability, seller authorization and service coverage for the target market."
+    },
+    {
+      "evidence": "US purchase terms name Narwal Robotics Corporation, a Delaware company, while other regional pages and product documents identify different Narwal or Yunjing entities.",
+      "scope": "Regional contracting entities",
+      "buyerCheck": "Confirm which entity is the seller and which entity carries warranty, data and recall responsibility."
+    },
+    {
+      "evidence": "Narwal publishes regional sites, local support contacts and authorized retail routes, but product ranges and app compatibility remain market-specific.",
+      "scope": "Regional sales and support",
+      "buyerCheck": "Verify the exact regional SKU, app region, warranty policy and authorized channel before importing."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Narwal helped normalize the self-washing mop dock and has expanded from premium robot vacuums into upright wet-dry and adjacent cleaning appliances. Its differentiation depends on translating mopping and dock innovation into reliable service across more markets. For buyers, the main diligence issue is the gap between a simple consumer brand and a more layered operating structure: private investors, core Yunjing companies, regional sellers and model-level production records answer different questions.",
+    "competitorSlugs": [
+      "roborock",
+      "ecovacs",
+      "dreame"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-07-30",
+      "title": "Narwal broadens its current US product range",
+      "summary": "The official US storefront lists Flow and Freo robot-vacuum families alongside S-series wet-dry floor washers, documenting the brand's move beyond one robot format.",
+      "sourceIds": [
+        "narwal-us-store"
+      ]
+    },
+    {
+      "date": "2025-04-15",
+      "title": "Narwal completes a USD 100 million financing",
+      "summary": "A Beijing government technology report said Tencent Investment and the Beijing Robot Industry Development Investment Fund led the round; financing participation does not by itself establish corporate control.",
+      "sourceIds": [
+        "narwal-2025-financing"
+      ]
+    },
+    {
+      "date": "2016",
+      "title": "Junbin Zhang founds Narwal",
+      "summary": "Narwal's official company story identifies Junbin Zhang as founder and traces the business to 2016.",
+      "sourceIds": [
+        "narwal-about"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "narwal-about",
+      "title": "About Narwal",
+      "publisher": "Narwal",
+      "url": "https://www.narwal.com/about-us",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "narwal-us-store",
+      "title": "Narwal Official US Store",
+      "publisher": "Narwal",
+      "url": "https://us.narwal.com/",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "narwal-us-terms",
+      "title": "Narwal Terms and Conditions of Website and Purchases",
+      "publisher": "Narwal",
+      "url": "https://us.narwal.com/pages/narwal-terms-and-conditions-of-website-and-purchases",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "narwal-privacy",
+      "title": "Narwal Global Privacy Policy",
+      "publisher": "Narwal",
+      "url": "https://narwal.com/web/Foreign/Privacypolicy_English.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "narwal-current-manual",
+      "title": "Narwal Product User Manual",
+      "publisher": "Narwal",
+      "url": "https://support.narwal.com/hc/en-us/article_attachments/35578985827981",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "narwal-j2-manual",
+      "title": "Narwal J2 User Manual",
+      "publisher": "Narwal",
+      "url": "https://help.narwal.com/helpcenter/vall/pdf/instruction-j2-1.pdf",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "narwal-australia-contact",
+      "title": "Contact Us",
+      "publisher": "Narwal Australia",
+      "url": "https://au.narwal.com/pages/contact-us-1",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "narwal-2025-financing",
+      "title": "Narwal Completes USD 100 Million Financing",
+      "publisher": "National Center for Science and Technology Innovation",
+      "url": "https://www.ncsti.gov.cn/kjdt/kjrd/rgzn_kjrd/202504/t20250415_201606.html",
+      "publishedAt": "2025-04-15",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T22:30:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T22:30:00+08:00"
+}

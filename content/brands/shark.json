@@ -1,0 +1,209 @@
+{
+  "status": "published",
+  "slug": "shark",
+  "name": "Shark",
+  "aliases": [
+    "SharkClean",
+    "Shark Home",
+    "SharkNinja"
+  ],
+  "legalName": "SharkNinja Operating LLC",
+  "officialWebsite": "https://www.sharkclean.com/",
+  "headline": "Shark ownership, cleaning portfolio, supply chain and channel strategy",
+  "description": "A source-backed profile separating the Shark consumer brand from listed parent SharkNinja, with current products, manufacturing evidence, regional licensing and buyer checks.",
+  "metaDescription": "Shark brand profile: SharkNinja ownership, leadership, vacuums, floorcare and beauty products, manufacturing, channels and strategy.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Shark or SharkNinja. Group-level supplier disclosures do not identify the factory for every Shark model, and the separate Ninja brand is outside the core scope of this profile.",
+  "headquarters": "Needham, Massachusetts, United States (SharkNinja group headquarters)",
+  "founded": "SharkNinja traces its cleaning-appliance origins to 1994; Shark is now one of the group's two principal global brands.",
+  "heroImage": "/images/brands/shark/hero-powerdetect-cordless.webp",
+  "heroImageAlt": "Shark PowerDetect cordless vacuum cleaner head cleaning debris",
+  "logoImage": "/images/brands/shark/logo.webp",
+  "logoImageAlt": "Shark logo",
+  "logoSourceUrl": "https://www.sharkninja.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/sharkninja-js-global-joyoung-relationship-map.webp",
+      "alt": "Relationship map separating SharkNinja, JS Global, Joyoung and JS&W",
+      "caption": "This map separates public-company ownership, beneficial shareholding, related-party sourcing and APAC brand licensing."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/tineco-shark-hydrovac-floor-washer-architecture.webp",
+      "alt": "Architecture comparison of Tineco and Shark HydroVac floor washers",
+      "caption": "This comparison helps buyers place Shark HydroVac within the wet-and-dry floor-washer category."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/shark-vs-dyson-cordless-platforms.webp",
+      "alt": "Cordless vacuum platform comparison between Shark and Dyson",
+      "caption": "This map compares Shark and Dyson cordless-vacuum product systems without treating brand claims as model-level test results."
+    }
+  ],
+  "ownership": {
+    "summary": "Shark is a consumer brand within SharkNinja, Inc., an independent NYSE-listed company. SharkNinja separated from former parent JS Global Lifestyle in July 2023. The 2026 proxy reported CJ Xuning Wang as the largest disclosed beneficial shareholder, mainly through JS&W entities; that holding is not the same as ownership by JS Global or Joyoung. JS Global retains licensed Shark and Ninja operations in specified Asia-Pacific markets under post-separation agreements.",
+    "parentCompany": "SharkNinja, Inc."
+  },
+  "leadership": [
+    {
+      "name": "Mark Rosenzweig",
+      "role": "Founder of SharkNinja",
+      "context": "SharkNinja's official company page identifies Mark Rosenzweig as founder."
+    },
+    {
+      "name": "Mark Barrocas",
+      "role": "Chief Executive Officer of SharkNinja",
+      "context": "SharkNinja identifies Mark Barrocas as CEO and Co-Refounder; he has led the company since 2008."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Corded and cordless vacuums",
+      "positioning": "Upright, cordless stick, handheld and canister systems built around pickup, hair management, filtration and flexible cleaning formats.",
+      "buyerRelevance": "Supports broad price and format coverage but requires model-level comparison of floor heads, filtration, batteries and accessory bundles."
+    },
+    {
+      "name": "Robot vacuums and vacuum-mop systems",
+      "positioning": "Connected floorcare products extending Shark from manual cleaning into automated navigation, self-emptying and mopping.",
+      "buyerRelevance": "Adds an app- and dock-dependent category with different service, software and consumables requirements from manual vacuums."
+    },
+    {
+      "name": "Hard-floor and carpet cleaning",
+      "positioning": "HydroVac wet-dry floor cleaners, steam systems, spot cleaners and the CarpetForce extraction portfolio.",
+      "buyerRelevance": "Broadens the cleaning assortment into wet maintenance, spot treatment and carpet extraction."
+    },
+    {
+      "name": "Home environment and beauty",
+      "positioning": "Air treatment, fans, hair-care and skincare devices sold under Shark-branded category extensions.",
+      "buyerRelevance": "Requires category-specific compliance, merchandising and service plans rather than one universal Shark floorcare program."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "SharkNinja's ESG reporting describes products manufactured by third-party original-equipment manufacturers through a diversified supplier base across China and Southeast Asia, including Vietnam, Malaysia, Thailand and Indonesia.",
+      "scope": "Group-level supplier network",
+      "buyerCheck": "Confirm the named manufacturer, factory and country of origin for the exact Shark SKU."
+    },
+    {
+      "evidence": "SharkNinja filings disclose related-party procurement from Joyoung and other JS Global entities for specified product categories; those agreements do not cover every Shark product.",
+      "scope": "Specified related-party sourcing",
+      "buyerCheck": "Do not generalize a Joyoung relationship to the entire Shark portfolio; match it to the contracted model and technical file."
+    },
+    {
+      "evidence": "Official Shark manuals can name SharkNinja Operating LLC as trademark owner or responsible company while also providing model-specific electrical, origin and supplier information.",
+      "scope": "Model documentation",
+      "buyerCheck": "Use the rating label, manual, declaration and shipment documents to identify the responsible entities for each model."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "SharkNinja says its products are sold through key retailers, online and offline, direct-to-consumer channels and distributors around the world.",
+      "scope": "Group route to market",
+      "buyerCheck": "Confirm the authorized seller and warranty route in the target market and channel."
+    },
+    {
+      "evidence": "The company unified its direct-to-consumer brand destination at SharkNinja.com in 2025 while continuing SharkClean country storefronts and retail distribution.",
+      "scope": "Direct-to-consumer and retail channels",
+      "buyerCheck": "Verify which site, local entity or retailer is the contracting seller for the purchase."
+    },
+    {
+      "evidence": "JS Global holds long-term rights to source, distribute and sell approved Shark and Ninja products in specified Asia-Pacific markets.",
+      "scope": "Licensed APAC markets",
+      "buyerCheck": "Confirm that the licensee or distributor has rights for the exact country, category and sales channel."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Shark combines high retail awareness with a wide cleaning portfolio and SharkNinja's rapid product-development and marketing system. Its advantage is the ability to extend recognizable feature platforms across vacuums, wet floorcare, carpet extraction, robots and adjacent home categories. The buyer-side risk is structural complexity: listed-company ownership, related-party sourcing, third-party OEM production and regional APAC licensing must be verified separately at market and model level.",
+    "competitorSlugs": [
+      "dyson",
+      "bissell",
+      "tineco",
+      "irobot"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-06-30",
+      "title": "Shark launches the PowerDetect Transformer system",
+      "summary": "SharkNinja introduced a modular Shark vacuum system combining upright, cordless and handheld cleaning formats.",
+      "sourceIds": [
+        "shark-powerdetect-transformer"
+      ]
+    },
+    {
+      "date": "2026-06-08",
+      "title": "Shark expands into CarpetForce extraction",
+      "summary": "The company announced a Shark carpet-cleaning collection that widens the brand's position beyond everyday vacuuming and spot care.",
+      "sourceIds": [
+        "shark-carpetforce"
+      ]
+    },
+    {
+      "date": "2023-07-31",
+      "title": "SharkNinja begins independent NYSE trading",
+      "summary": "The separation from JS Global ended the parent-subsidiary relationship and established SharkNinja as an independently listed company.",
+      "sourceIds": [
+        "sharkninja-2025-10k"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sharkninja-company",
+      "title": "Our Company",
+      "publisher": "SharkNinja",
+      "url": "https://www.sharkninja.com/about-us/our-company.html",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "sharkninja-2025-10k",
+      "title": "SharkNinja 2025 Form 10-K",
+      "publisher": "SharkNinja, Inc. / U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/1957132/000195713226000015/sharkninja-20251231.htm",
+      "publishedAt": "2026-02-13",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "sharkninja-2026-proxy",
+      "title": "SharkNinja 2026 Proxy Statement",
+      "publisher": "SharkNinja, Inc. / U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/1957132/000195713226000022/sharkninja-20260427.htm",
+      "publishedAt": "2026-04-27",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "sharkninja-esg-2023",
+      "title": "Innovating for Positive Impact: 2023 ESG Report",
+      "publisher": "SharkNinja",
+      "url": "https://newsroom.sharkninja.com/wp-content/uploads/2024/06/SharkNinja-ESG-Report-2023.pdf",
+      "publishedAt": "2024-06-01",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "shark-powerdetect",
+      "title": "Shark PowerDetect Cordless Stick Vacuum",
+      "publisher": "Shark",
+      "url": "https://www.sharkclean.com/products/shark-powerdetect-cordless-stick-vacuum-zidIP1251",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "shark-powerdetect-transformer",
+      "title": "SharkNinja Launches the Shark PowerDetect Transformer",
+      "publisher": "SharkNinja",
+      "url": "https://newsroom.sharkninja.com/sharkninja-launches-the-shark-powerdetect-transformer-three-vacuums-one-system-zero-compromises/",
+      "publishedAt": "2026-06-30",
+      "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "shark-carpetforce",
+      "title": "SharkNinja Introduces the Shark CarpetForce Collection",
+      "publisher": "SharkNinja",
+      "url": "https://newsroom.sharkninja.com/sharkninja-introduces-the-shark-carpetforce-collection-reinventing-carpet-cleaning-for-everyday-life/",
+      "publishedAt": "2026-06-08",
+      "accessedAt": "2026-07-30"
+    }
+  ],
+  "publishedAt": "2026-07-30T22:30:00+08:00",
+  "lastVerified": "2026-07-30",
+  "lastModified": "2026-07-30T22:30:00+08:00"
+}
