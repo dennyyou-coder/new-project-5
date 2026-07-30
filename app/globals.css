@@ -24038,6 +24038,93 @@ button.contact-help-card > .contact-help-card-copy > span {
   line-height: 1.35;
 }
 
+.brand-founder-card {
+  display: grid;
+  grid-template-columns: minmax(0, 180px) minmax(0, 1fr);
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.brand-founder-card:last-child {
+  border-bottom: 0;
+}
+
+.brand-founder-portrait {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 6 / 7;
+  overflow: hidden;
+  border-right: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.brand-founder-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-founder-details {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  min-width: 0;
+  padding: 16px 18px;
+}
+
+.brand-founder-label {
+  margin: 0;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.brand-founder-details h4 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.brand-founder-role,
+.brand-founder-context,
+.brand-founder-credit {
+  margin: 0;
+}
+
+.brand-founder-role {
+  color: var(--navy);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.brand-founder-context {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.brand-founder-credit {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.brand-founder-credit a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .brand-section-main > .brand-data-table,
 .brand-section-main > .brand-table-group {
   border: 1px solid var(--line);
@@ -24232,6 +24319,35 @@ button.contact-help-card > .contact-help-card-copy > span {
 
   .brand-section-layout--visual {
     gap: 20px;
+  }
+
+  .brand-founder-card {
+    grid-template-columns: 104px minmax(0, 1fr);
+  }
+
+  .brand-founder-portrait {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+
+  .brand-founder-details {
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .brand-founder-details h4 {
+    font-size: 19px;
+  }
+
+  .brand-founder-context {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .brand-founder-credit {
+    font-size: 11px;
   }
 
   .brand-data-table {

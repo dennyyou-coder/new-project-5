@@ -47,7 +47,13 @@
     {
       "name": "Yu Hao",
       "role": "Founder and CEO",
-      "context": "Official Dreame pages identify Yu Hao as founder; the company traces its technology roots to his team's high-speed digital motor work."
+      "context": "Official Dreame pages identify Yu Hao as founder; the company traces its technology roots to his team's high-speed digital motor work.",
+      "portrait": {
+        "src": "/images/brands/dreame/founder-yu-hao.webp",
+        "alt": "Yu Hao, founder and CEO of Dreame, holding a high-speed motor component",
+        "credit": "Dreame, via The Wire China; cropped by World Clean Biz",
+        "sourceUrl": "https://www.thewirechina.com/2026/06/28/mr-yus-dream-machine/"
+      }
     }
   ],
   "productPortfolio": [

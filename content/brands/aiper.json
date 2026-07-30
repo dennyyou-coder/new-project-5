@@ -46,7 +46,13 @@
     {
       "name": "Richard Wang",
       "role": "Founder and CEO",
-      "context": "Identified in Fluidra's December 2025 transaction announcement."
+      "context": "Identified in Fluidra's December 2025 transaction announcement.",
+      "portrait": {
+        "src": "/images/brands/aiper/founder-richard-wang.webp",
+        "alt": "Richard Wang, founder and CEO of Aiper, at the Aiper and Fluidra signing ceremony",
+        "credit": "Aiper, via PR Newswire; cropped by World Clean Biz",
+        "sourceUrl": "https://www.prnewswire.com/apac/news-releases/aiper-launches-global-strategic-hub-in-singapore-following-usd-100-million-strategic-investment-from-fluidra-302469142.html"
+      }
     }
   ],
   "productPortfolio": [

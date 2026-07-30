@@ -1,8 +1,14 @@
 import type {
   BrandContentVisual,
+  BrandLeadershipPerson,
+  BrandLeadershipPortrait,
   BrandProfile,
   BrandVisualPlacement
 } from "@/lib/brands";
+
+type FeaturedLeadershipPerson = BrandLeadershipPerson & {
+  portrait: BrandLeadershipPortrait;
+};
 
 export function selectBrandContentVisuals(
   visuals: readonly BrandContentVisual[]
@@ -47,4 +53,25 @@ export function buildLeadershipRows(
     evidenceNote:
       leader.context || "Role identified in the reviewed sources."
   }));
+}
+
+export function partitionFeaturedLeadership(
+  leadership: BrandProfile["leadership"]
+): {
+  featuredLeader: FeaturedLeadershipPerson | undefined;
+  tableLeaders: BrandProfile["leadership"];
+} {
+  const featuredIndex = leadership.findIndex((leader) => leader.portrait);
+
+  if (featuredIndex < 0) {
+    return {
+      featuredLeader: undefined,
+      tableLeaders: [...leadership]
+    };
+  }
+
+  return {
+    featuredLeader: leadership[featuredIndex] as FeaturedLeadershipPerson,
+    tableLeaders: leadership.filter((_, index) => index !== featuredIndex)
+  };
 }

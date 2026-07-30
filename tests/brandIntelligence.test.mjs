@@ -16,6 +16,7 @@ import {
   validateBrandProfile
 } from "../lib/brands.ts";
 import { getInsights } from "../lib/content.ts";
+import { partitionFeaturedLeadership } from "../components/brands/brandSectionData.ts";
 import sitemap from "../app/sitemap.ts";
 
 const profile = {
@@ -126,6 +127,49 @@ test("normalizes supported brand frontmatter values and removes malformed slugs"
 
 test("accepts a complete published brand profile", () => {
   assert.deepEqual(validateBrandProfile(profile, articles), []);
+});
+
+test("rejects incomplete leadership portrait metadata", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.leadership[0].portrait = {
+    src: "/images/brands/sample-brand/founder.webp",
+    alt: "Alex Example, founder of Sample Brand"
+  };
+
+  const errors = validateBrandProfile(invalidProfile, articles).join("\n");
+  assert.match(errors, /leadership item 1 portrait credit is required/i);
+  assert.match(errors, /leadership item 1 portrait sourceUrl is required/i);
+});
+
+test("requires leadership portrait sources to use HTTPS", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.leadership[0].portrait = {
+    src: "/images/brands/sample-brand/founder.webp",
+    alt: "Alex Example, founder of Sample Brand",
+    credit: "Sample Brand",
+    sourceUrl: "http://example.com/press"
+  };
+
+  assert.match(
+    validateBrandProfile(invalidProfile, articles).join("\n"),
+    /leadership item 1 portrait sourceUrl must be a valid HTTPS URL/i
+  );
+});
+
+test("keeps leadership portraits inside the current brand asset directory", () => {
+  const invalidProfile = structuredClone(profile);
+  invalidProfile.leadership[0].portrait = {
+    src: "/images/blog/founder.webp",
+    alt: "Alex Example, founder of Sample Brand",
+    credit: "Sample Brand",
+    sourceUrl: "https://example.com/press"
+  };
+
+  assert.ok(
+    validateBrandProfile(invalidProfile, articles).includes(
+      "leadership item 1 portrait src must begin with /images/brands/sample-brand/."
+    )
+  );
 });
 
 test("page schema exposes the official logo while preserving the editorial hero image", () => {
@@ -601,6 +645,61 @@ test("all published brand profiles have local official logos and two to three lo
         `${candidate.slug} visual must exist: ${visual.src}`
       );
     }
+  }
+});
+
+test("the first four founder profiles use complete local portrait assets without table duplication", async () => {
+  const expectedPortraits = {
+    aiper: {
+      name: "Richard Wang",
+      src: "/images/brands/aiper/founder-richard-wang.webp"
+    },
+    dreame: {
+      name: "Yu Hao",
+      src: "/images/brands/dreame/founder-yu-hao.webp"
+    },
+    dyson: {
+      name: "Sir James Dyson",
+      src: "/images/brands/dyson/founder-james-dyson.webp"
+    },
+    mammotion: {
+      name: "Jidong (Jayden) Wei",
+      src: "/images/brands/mammotion/founder-jidong-wei.webp"
+    }
+  };
+  const profileBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+
+  for (const [slug, expected] of Object.entries(expectedPortraits)) {
+    const candidate = profileBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+
+    const { featuredLeader, tableLeaders } = partitionFeaturedLeadership(
+      candidate.leadership
+    );
+    assert.ok(featuredLeader, `${slug} must expose one featured founder`);
+    assert.equal(featuredLeader.name, expected.name);
+    assert.equal(featuredLeader.portrait.src, expected.src);
+    assert.ok(featuredLeader.portrait.alt.includes(expected.name));
+    assert.ok(featuredLeader.portrait.credit.trim().length > 0);
+    assert.match(featuredLeader.portrait.sourceUrl, /^https:\/\//);
+    assert.equal(
+      tableLeaders.some((leader) => leader.name === featuredLeader.name),
+      false,
+      `${slug} featured founder must not be repeated in leadership table rows`
+    );
+
+    const portraitPath = path.join(
+      process.cwd(),
+      "public",
+      featuredLeader.portrait.src
+    );
+    assert.equal(fs.existsSync(portraitPath), true, `${slug} portrait must exist`);
+    const metadata = await sharp(portraitPath).metadata();
+    assert.equal(metadata.format, "webp", `${slug} portrait must be WebP`);
+    assert.equal(metadata.width, 720, `${slug} portrait width`);
+    assert.equal(metadata.height, 840, `${slug} portrait height`);
   }
 });
 

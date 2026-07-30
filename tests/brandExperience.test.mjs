@@ -382,7 +382,9 @@ test("brand sections pair structured tables with each configured visual placemen
   const sections = read("components/brands/BrandSections.tsx");
 
   assert.match(sections, /selectBrandContentVisuals\(profile\.contentVisuals\)/);
-  assert.match(sections, /buildLeadershipRows\(profile\.leadership\)/);
+  assert.match(sections, /partitionFeaturedLeadership\(\s*profile\.leadership\s*\)/);
+  assert.match(sections, /<BrandFounderCard leader=\{featuredLeader\}/);
+  assert.match(sections, /buildLeadershipRows\(tableLeaders\)/);
   [
     "ownership",
     "portfolio",
@@ -418,6 +420,7 @@ test("brand section helpers keep first unique visuals and provide an empty-leade
 
   assert.equal(typeof helpers?.selectBrandContentVisuals, "function");
   assert.equal(typeof helpers?.buildLeadershipRows, "function");
+  assert.equal(typeof helpers?.partitionFeaturedLeadership, "function");
 
   const visual = (placement, src) => ({
     placement,
@@ -445,6 +448,51 @@ test("brand section helpers keep first unique visuals and provide an empty-leade
       evidenceNote: "No named leader was identified in reviewed sources."
     }
   ]);
+
+  const founder = {
+    name: "Alex Example",
+    role: "Founder and CEO",
+    context: "Identified in the reviewed company announcement.",
+    portrait: {
+      src: "/images/brands/sample-brand/founder.webp",
+      alt: "Alex Example, founder and CEO of Sample Brand",
+      credit: "Sample Brand",
+      sourceUrl: "https://example.com/press"
+    }
+  };
+  const chair = {
+    name: "Taylor Example",
+    role: "Chair"
+  };
+
+  assert.deepEqual(
+    helpers.partitionFeaturedLeadership([founder, chair]),
+    {
+      featuredLeader: founder,
+      tableLeaders: [chair]
+    }
+  );
+  assert.deepEqual(
+    helpers.partitionFeaturedLeadership([chair]),
+    {
+      featuredLeader: undefined,
+      tableLeaders: [chair]
+    }
+  );
+});
+
+test("founder card exposes the portrait, leadership evidence, and image provenance", () => {
+  const founderCard = read("components/brands/BrandFounderCard.tsx");
+
+  assert.match(founderCard, /<figure className="brand-founder-card">/);
+  assert.match(founderCard, /src=\{leader\.portrait\.src\}/);
+  assert.match(founderCard, /alt=\{leader\.portrait\.alt\}/);
+  assert.match(founderCard, /\{leader\.name\}/);
+  assert.match(founderCard, /\{leader\.role\}/);
+  assert.match(founderCard, /leader\.context/);
+  assert.match(founderCard, /\{leader\.portrait\.credit\}/);
+  assert.match(founderCard, /href=\{leader\.portrait\.sourceUrl\}/);
+  assert.match(founderCard, /rel="noopener noreferrer"/);
 });
 
 test("article brand links preserve primary-brand order and exclude unpublished profiles", () => {
@@ -641,6 +689,58 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   assert.match(
     mobileStyles,
     /\.brand-section-layout--operations \.brand-data-table th,[\s\S]*\.brand-section-layout--operations \.brand-data-table td\s*\{[\s\S]*width:\s*auto[\s\S]*min-width:\s*100%/
+  );
+});
+
+test("founder cards use a compact portrait grid and stack safely on mobile", () => {
+  const source = read("app/globals.css");
+  const brandStyles = source.slice(source.indexOf("/* Brand intelligence hub */"));
+
+  const cardRule = brandStyles.match(
+    /\.brand-founder-card\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(cardRule);
+  assert.match(
+    cardRule,
+    /grid-template-columns:\s*minmax\(0,\s*180px\)\s+minmax\(0,\s*1fr\)/
+  );
+  assert.match(cardRule, /min-width:\s*0/);
+  assert.match(cardRule, /overflow:\s*hidden/);
+
+  const portraitRule = brandStyles.match(
+    /\.brand-founder-portrait\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(portraitRule);
+  assert.match(portraitRule, /aspect-ratio:\s*6\s*\/\s*7/);
+
+  const portraitImageRule = brandStyles.match(
+    /\.brand-founder-portrait img\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(portraitImageRule);
+  assert.match(portraitImageRule, /object-fit:\s*cover/);
+  assert.match(portraitImageRule, /width:\s*100%/);
+  assert.match(portraitImageRule, /height:\s*100%/);
+
+  const detailsRule = brandStyles.match(
+    /\.brand-founder-details\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(detailsRule);
+  assert.match(detailsRule, /min-width:\s*0/);
+
+  const sourceLinkRule = brandStyles.match(
+    /\.brand-founder-credit a\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(sourceLinkRule);
+  assert.match(sourceLinkRule, /text-decoration:\s*underline/);
+
+  const mobileRules = readCssBlock(brandStyles, "@media (max-width: 760px)");
+  assert.match(
+    mobileRules,
+    /\.brand-founder-card\s*\{[^}]*grid-template-columns:\s*104px\s+minmax\(0,\s*1fr\)/
+  );
+  assert.match(
+    mobileRules,
+    /\.brand-founder-portrait\s*\{[^}]*aspect-ratio:\s*3\s*\/\s*4/
   );
 });
 
