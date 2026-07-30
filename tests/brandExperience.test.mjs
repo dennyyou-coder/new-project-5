@@ -531,12 +531,22 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   )?.[0];
   assert.ok(cardLogoStageRule);
   assert.match(cardLogoStageRule, /padding:\s*clamp\(10px,\s*1\.5vw,\s*20px\)/);
+  assert.match(cardLogoStageRule, /min-width:\s*0/);
+  assert.match(cardLogoStageRule, /overflow:\s*hidden/);
+  const cardLinkRule = brandStyles.match(
+    /\.brand-directory-card > a\s*\{[^}]*\}/
+  )?.[0];
+  assert.ok(cardLinkRule);
+  assert.match(cardLinkRule, /grid-template-columns:\s*minmax\(0,\s*1fr\)/);
+  assert.match(cardLinkRule, /min-width:\s*0/);
   const cardLogoImageRule = brandStyles.match(
     /\.brand-logo--card img\s*\{[^}]*\}/
   )?.[0];
   assert.ok(cardLogoImageRule);
   assert.match(cardLogoImageRule, /width:\s*100%/);
   assert.match(cardLogoImageRule, /height:\s*100%/);
+  assert.match(cardLogoImageRule, /min-width:\s*0/);
+  assert.match(cardLogoImageRule, /min-height:\s*0/);
   assert.match(cardLogoImageRule, /max-width:\s*100%/);
   assert.match(cardLogoImageRule, /max-height:\s*100%/);
   assert.match(cardLogoImageRule, /object-fit:\s*contain/);
