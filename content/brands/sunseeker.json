@@ -1,0 +1,166 @@
+{
+  "status": "published",
+  "slug": "sunseeker",
+  "name": "Sunseeker",
+  "aliases": ["Sunseeker Elite", "Sunseeker Robotics", "SUNSEEKER 山科"],
+  "legalName": "Zhejiang Sunseeker Industrial Co., Ltd.",
+  "legalEntityNote": "Official English materials name Zhejiang Sunseeker Industrial Co., Ltd., while the corresponding Chinese corporate site uses Zhejiang White Horse Technology Co., Ltd. Public sources do not fully explain whether this is a rename, translation convention or affiliate relationship; Shanghai, European and U.S. entities have separate documented roles.",
+  "officialWebsite": "https://sunseekerelite.com/global",
+  "headline": "Sunseeker ownership boundary, robotic mowers, manufacturing and regional channels",
+  "description": "A source-backed profile of Sunseeker's private-company boundary, Zhejiang manufacturer, White Horse naming, mower platforms, regional entities and channels.",
+  "metaDescription": "Sunseeker profile: Zhejiang manufacturer, White Horse naming, X-series robot mowers, regional companies, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Sunseeker. Trademark, manufacturer, website operator, regional seller and warranty roles are identified separately, and model-specific evidence should not be generalized.",
+  "headquarters": "Jinhua, Zhejiang, China for the named manufacturer; Shanghai entities support robotics operations",
+  "founded": "Official brand history dates Sunseeker Robotics in Shanghai to 2009",
+  "heroImage": "/images/brands/sunseeker/hero-sunseeker.webp",
+  "heroImageAlt": "Sunseeker X9 robotic mower operating on a lawn at night",
+  "logoImage": "/images/brands/sunseeker/logo.webp",
+  "logoImageAlt": "Sunseeker Elite logo",
+  "logoSourceUrl": "https://sunseekerelite.com/global",
+  "contentVisuals": [
+    {
+      "placement": "operations",
+      "src": "/images/blog/sunseeker-regional-responsibility-buyer-check.webp",
+      "alt": "Map of Sunseeker manufacturer, regional seller, importer, app and warranty responsibilities",
+      "caption": "This map helps buyers separate the named Chinese manufacturer from European, U.S., dealer and connected-service roles."
+    },
+    {
+      "placement": "ownership",
+      "src": "/images/blog/sunseeker-robot-mower-company-manufacturer-cover.webp",
+      "alt": "Sunseeker robotic-mower company and manufacturer overview",
+      "caption": "Sunseeker branding spans several company names; the exact product and transaction documents determine responsibility."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/sunseeker-vs-mammotion-robot-mowers.webp",
+      "alt": "Sunseeker and Mammotion robotic mower platform comparison",
+      "caption": "This comparison places Sunseeker's mower range against another fast-growing Chinese wire-free platform."
+    }
+  ],
+  "ownership": {
+    "summary": "Sunseeker is a privately held Chinese garden-equipment and robotics brand. Zhejiang Sunseeker Industrial Co., Ltd. is the manufacturer named in reviewed product documentation and a registered owner of a mower-related SUNSEEKER trademark. The official Chinese company site uses the Zhejiang White Horse Technology name, while Shanghai, European and U.S. entities perform other functions. Reviewed public sources do not disclose a complete audited ultimate-shareholder chart.",
+    "parentCompany": "Private ownership; complete cap table not disclosed in reviewed official sources"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Sunseeker Elite X series",
+      "positioning": "Premium wire-free robotic mowers combine RTK, vision and model-dependent all-wheel drive for complex or larger lawns.",
+      "buyerRelevance": "Requires site-level checks for signal coverage, slopes, passages, terrain, connectivity and regional service."
+    },
+    {
+      "name": "S and V residential mower ranges",
+      "positioning": "Mainstream and value-oriented robotic mowers broaden the portfolio below the Elite flagship tier.",
+      "buyerRelevance": "Navigation method, boundary setup, app support and included accessories differ by model and market."
+    },
+    {
+      "name": "Commercial robotic mowing",
+      "positioning": "Sunseeker markets higher-capacity platforms and fleet-oriented concepts for professional turf applications.",
+      "buyerRelevance": "Professional projects need commissioning, remote management, uptime, parts, training and field-service commitments."
+    },
+    {
+      "name": "Outdoor power equipment",
+      "positioning": "The wider Zhejiang business also develops lithium and engine-powered garden tools.",
+      "buyerRelevance": "A broad OPE range may support dealers, but product responsibility and brand authorization must still be checked by category."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "The reviewed S4 EU declaration names Zhejiang Sunseeker Industrial Co., Ltd. as manufacturer for model RMR1001M20V.",
+      "scope": "Named model and legal manufacturer",
+      "buyerCheck": "Match the declaration, label, radio configuration and shipment documents to the exact mower."
+    },
+    {
+      "evidence": "Official corporate material describes a Chinese R&D and manufacturing business for garden tools and robotic mowers.",
+      "scope": "Company-reported operating footprint",
+      "buyerCheck": "Request the physical factory, current business licence, audit record and batch origin rather than relying on a company address."
+    },
+    {
+      "evidence": "The English and Chinese corporate sites use Zhejiang Sunseeker Industrial and Zhejiang White Horse Technology names for substantially matching operations.",
+      "scope": "Company-name boundary",
+      "buyerCheck": "Verify the current registered Chinese name, unified social credit code, English-name declaration, bank beneficiary and factory owner."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Sunseeker Intelligent Technology SE appears as the EU authorised representative and in European legal and support materials.",
+      "scope": "European regulatory and regional role",
+      "buyerCheck": "Do not equate an authorised representative with the manufacturer, invoice seller or parent company."
+    },
+    {
+      "evidence": "SUNSEEKER US, Inc. appears in U.S. website terms, while authorized dealers and distributors may issue local invoices and handle first-line warranty.",
+      "scope": "U.S. website and dealer channels",
+      "buyerCheck": "Confirm seller, importer, warranty administrator, app region and parts route for the exact transaction."
+    },
+    {
+      "evidence": "Sunseeker reports a growing international branch and dealer network for consumer and professional mower products.",
+      "scope": "Company-reported global reach",
+      "buyerCheck": "Verify current dealer authorization, installed base, technician coverage and seasonal parts inventory in the target market."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Sunseeker combines established garden-equipment manufacturing with a fast-expanding wire-free robotic-mower range spanning mainstream, AWD and professional applications. Its challenge is corporate legibility: private ownership, bilingual company naming, multiple regional entities and model-level manufacturing records require more diligence than a single public-company structure.",
+    "competitorSlugs": ["mammotion", "segway-navimow", "husqvarna"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "Sunseeker expands the X Gen 2 robotic-mower range",
+      "summary": "The current range extends the brand's premium wire-free and terrain-capable positioning.",
+      "sourceIds": ["sunseeker-xgen2", "sunseeker-x9"]
+    },
+    {
+      "date": "2024",
+      "title": "Sunseeker reports more than 180,000 robotic mowers sold",
+      "summary": "The figure is company reported and should be treated as a scale signal rather than an audited market-share result.",
+      "sourceIds": ["sunseeker-about"]
+    },
+    {
+      "date": "2019",
+      "title": "Sunseeker brand history dates first-generation robotic mowers",
+      "summary": "The company timeline places the first mower generation after a dedicated robotics R&D center was established in 2017.",
+      "sourceIds": ["sunseeker-about"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sunseeker-about",
+      "title": "Sunseeker Company Introduction",
+      "publisher": "Zhejiang Sunseeker Industrial Co., Ltd.",
+      "url": "https://sunseekerpower.com/introduce/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "sunseeker-x4-manual",
+      "title": "Sunseeker Elite X4 Manual",
+      "publisher": "Sunseeker",
+      "url": "https://sunseekerelite.com/global/docs/manual-x4-global.pdf",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "sunseeker-x9",
+      "title": "Sunseeker Elite X9",
+      "publisher": "Sunseeker",
+      "url": "https://sunseekerelite.com/global/x9",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "sunseeker-xgen2",
+      "title": "Sunseeker Robotics Unveils X Gen 2 Series",
+      "publisher": "Sunseeker",
+      "url": "https://sunseekerelite.com/global/news/sunseeker-robotics-unveils-x-gen-2-series-robot-mower-at-spring-spectacular",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "sunseeker-trademark",
+      "title": "SUNSEEKER Trademark Registration TMA1284622",
+      "publisher": "Canadian Intellectual Property Office",
+      "url": "https://ised-isde.canada.ca/cipo/trademark-search/2217672",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T15:30:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T15:30:00+08:00"
+}

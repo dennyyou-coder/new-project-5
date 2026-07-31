@@ -1,0 +1,166 @@
+{
+  "status": "published",
+  "slug": "nilfisk",
+  "name": "Nilfisk",
+  "aliases": ["Nilfisk Professional", "Nilfisk Advance", "Advance", "Viper"],
+  "legalName": "Nilfisk A/S",
+  "legalEntityNote": "Nilfisk entered private ownership under Freudenberg Home and Cleaning Solutions in April 2026. The Nilfisk brand, operating companies, Advance and Viper brands, production sites and regional sellers retain distinct roles during the post-acquisition period.",
+  "officialWebsite": "https://www.nilfisk.com/global/professional/",
+  "headline": "Nilfisk ownership, professional cleaning portfolio, manufacturing and channels",
+  "description": "A source-backed profile of Nilfisk's 2026 Freudenberg ownership, professional equipment range, production network, brands, service channels and buyer checks.",
+  "metaDescription": "Nilfisk profile: Freudenberg ownership, leadership, floor scrubbers, industrial vacuums, factories, Advance and Viper, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Nilfisk or Freudenberg. Acquisition ownership, Nilfisk operations, group brands, factories and regional commercial responsibilities are identified separately.",
+  "headquarters": "Brøndby, Denmark",
+  "founded": "1906",
+  "heroImage": "/images/brands/nilfisk/hero-nilfisk.webp",
+  "heroImageAlt": "Nilfisk SC25 autonomous floor scrubber",
+  "logoImage": "/images/brands/nilfisk/logo.webp",
+  "logoImageAlt": "Nilfisk logo",
+  "logoSourceUrl": "https://www.nilfisk.com/global/professional/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/freudenberg-nilfisk-acquisition-cover.webp",
+      "alt": "Freudenberg acquisition of Nilfisk and professional cleaning portfolio",
+      "caption": "Freudenberg's acquisition moved Nilfisk from public-market ownership into a broader home and professional cleaning group."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/freudenberg-nilfisk-vs-karcher.webp",
+      "alt": "Freudenberg and Nilfisk professional cleaning platform compared with Kärcher",
+      "caption": "This comparison shows how Nilfisk equipment complements Freudenberg's manual-cleaning brands while remaining a standalone market brand."
+    }
+  ],
+  "ownership": {
+    "summary": "Freudenberg Home and Cleaning Solutions completed its takeover offer for Nilfisk in April 2026 after acceptances representing approximately 94% of the shares. Freudenberg announced compulsory acquisition and delisting steps, moving Nilfisk into private industrial ownership. Nilfisk continues as a standalone brand within Freudenberg's cleaning portfolio rather than being renamed Vileda.",
+    "parentCompany": "Freudenberg Home and Cleaning Solutions"
+  },
+  "leadership": [
+    {
+      "name": "Jon Sintorn",
+      "role": "CEO of Nilfisk",
+      "context": "Nilfisk's takeover-completion announcement identifies Jon Sintorn as CEO and says the company will continue as a standalone brand."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Floor scrubbers, sweepers and autonomous machines",
+      "positioning": "Walk-behind, ride-on and robotic platforms cover commercial and industrial floor-cleaning applications.",
+      "buyerRelevance": "Fleet decisions depend on productivity, batteries, consumables, service response, software and site commissioning."
+    },
+    {
+      "name": "Industrial and commercial vacuum systems",
+      "positioning": "Wet-and-dry, hazardous-dust, continuous-duty and central-vacuum solutions serve demanding professional environments.",
+      "buyerRelevance": "Buyers must match dust class, certifications, duty cycle, filtration, accessories and local technical support."
+    },
+    {
+      "name": "Pressure washers and outdoor cleaning",
+      "positioning": "Cold- and hot-water pressure systems broaden Nilfisk beyond indoor floor care.",
+      "buyerRelevance": "Pressure, flow, heating, detergents, duty cycle and service availability determine fit for the application."
+    },
+    {
+      "name": "Advance and Viper portfolios",
+      "positioning": "Regional and value-positioned group brands extend Nilfisk's commercial equipment coverage and channel segmentation.",
+      "buyerRelevance": "Brand family, parts, warranty and distributor responsibilities may differ even within the same ownership group."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Nilfisk's 2026 company statement identifies five manufacturing sites in the United States, Mexico, Hungary, Italy and China.",
+      "scope": "Current group production network",
+      "buyerCheck": "Verify the model-specific factory, origin, serial range and component responsibility rather than using the country list alone."
+    },
+    {
+      "evidence": "Nilfisk's Dongguan operation provides an established Chinese manufacturing and development base connected with the Viper acquisition.",
+      "scope": "Named China manufacturing footprint",
+      "buyerCheck": "Confirm whether the contracted Nilfisk, Advance or Viper model is produced in Dongguan or another site."
+    },
+    {
+      "evidence": "Selected autonomous equipment, including the SC25, can involve technology partners alongside Nilfisk's sales and service organization.",
+      "scope": "Partner-enabled product platform",
+      "buyerCheck": "Document hardware manufacturer, software provider, data responsibility, spare parts and uptime support."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Nilfisk says products are sold in more than 100 countries and that more than 90% of sales come from professional customers.",
+      "scope": "Company-reported global and customer mix",
+      "buyerCheck": "Confirm the authorized regional seller and service organization for the exact equipment category."
+    },
+    {
+      "evidence": "Nilfisk uses direct sales teams, specialist distributors, dealers and service partners across professional markets.",
+      "scope": "Professional route to market",
+      "buyerCheck": "Verify account ownership, dealer authorization, technician coverage, response time and parts stocking."
+    },
+    {
+      "evidence": "Freudenberg's Vileda Professional and Vermop businesses bring adjacent manual-cleaning channels, but no universal integrated sales route has been announced.",
+      "scope": "Post-acquisition channel opportunity",
+      "buyerCheck": "Do not assume a Vileda or Vermop contract automatically covers Nilfisk equipment, pricing or service."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Nilfisk is a long-established professional-cleaning platform with strong industrial vacuuming, floor-care and pressure-washing positions, supported by five manufacturing sites and international service channels. Freudenberg adds patient private ownership and adjacent manual-cleaning brands. The near-term execution question is whether those assets become a coordinated system without weakening Nilfisk's specialist dealer and service relationships.",
+    "competitorSlugs": ["karcher", "tennant", "taski"]
+  },
+  "developments": [
+    {
+      "date": "2026-04-15",
+      "title": "Nilfisk becomes part of Freudenberg",
+      "summary": "Freudenberg completed the takeover after reaching approximately 94% acceptance and began compulsory acquisition and delisting steps.",
+      "sourceIds": ["nilfisk-takeover"]
+    },
+    {
+      "date": "2026",
+      "title": "Nilfisk reports EUR 996.3 million in 2025 revenue",
+      "summary": "The company also described about 4,500 employees, five manufacturing sites and sales in more than 100 countries.",
+      "sourceIds": ["nilfisk-takeover", "nilfisk-investors"]
+    },
+    {
+      "date": "1906",
+      "title": "Nilfisk begins in Copenhagen",
+      "summary": "The company later expanded from electric vacuums into industrial and professional cleaning equipment.",
+      "sourceIds": ["nilfisk-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nilfisk-takeover",
+      "title": "Nilfisk enters a new phase as part of Freudenberg",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/global/professional/news-and-articles/nilfisk-enters-a-new-phase-as-part-of-freudenberg-after-completion-of-takeover-offer/",
+      "publishedAt": "2026-04-15",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "nilfisk-investors",
+      "title": "Nilfisk Investor Relations",
+      "publisher": "Nilfisk",
+      "url": "https://investor.nilfisk.com/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "nilfisk-board",
+      "title": "Nilfisk Board of Directors",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/global/professional/about-nilfisk/about-nilfisk-group/nilfisk-board-of-directors/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "nilfisk-sc25",
+      "title": "Nilfisk SC25 Autonomous Floor Scrubber",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/global/professional/products/floor-cleaning/robotic-floor-cleaners/sc25%2B58001000/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "nilfisk-history",
+      "title": "The History of Nilfisk",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/global/professional/about-nilfisk/about-nilfisk-group/the-history-of-nilfisk/",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T15:30:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T15:30:00+08:00"
+}

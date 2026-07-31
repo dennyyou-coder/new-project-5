@@ -1,0 +1,172 @@
+{
+  "status": "published",
+  "slug": "midea",
+  "name": "Midea",
+  "aliases": ["Midea Group", "Midea Smart Home", "美的"],
+  "legalName": "Midea Group Co., Ltd.",
+  "legalEntityNote": "Midea is a brand and listed group spanning several business units and legal entities. Cleaning appliances can involve Midea Smart Home, Midea Robozone, regional Midea companies and model-specific factories; the separately marketed Eureka brand also belongs to Midea Group.",
+  "officialWebsite": "https://www.midea.com/global",
+  "headline": "Midea ownership, cleaning-appliance portfolio, manufacturing network and channels",
+  "description": "A source-backed profile of Midea Group's listed ownership, cleaning-appliance portfolio, Robozone and Eureka boundaries, global production network and channels.",
+  "metaDescription": "Midea brand profile: listed ownership, leadership, floor care, Midea Robozone, Eureka, factories, global channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Midea or Eureka. Group disclosures, regional-company roles, the separately marketed Eureka brand and model-specific factory records are identified separately and should not be generalized to every Midea product.",
+  "headquarters": "Beijiao, Foshan, Guangdong, China",
+  "founded": "1968",
+  "heroImage": "/images/brands/midea/hero-midea.webp",
+  "heroImageAlt": "Midea GX5 Pro wet-and-dry floor cleaner",
+  "logoImage": "/images/brands/midea/logo.webp",
+  "logoImageAlt": "Midea logo",
+  "logoSourceUrl": "https://www.midea.com/global",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/eureka-ownership-timeline-midea-electrolux.webp",
+      "alt": "Timeline of Eureka ownership from Electrolux to Midea",
+      "caption": "This timeline places Eureka inside Midea Group while keeping the Eureka brand, Midea entities and model-level manufacturing records separate."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/who-owns-eureka-midea-cover.webp",
+      "alt": "Midea and Eureka cleaning-appliance ownership overview",
+      "caption": "Midea reaches floor care through its own brand, specialized robotics operations and the separately marketed Eureka portfolio."
+    }
+  ],
+  "ownership": {
+    "summary": "Midea Group Co., Ltd. is a Shenzhen-listed Chinese technology and manufacturing group. Its Smart Home business covers consumer appliances, while specialized subsidiaries and regional companies can hold product, sales or manufacturing roles. Founder He Xiangjian and related parties remain important shareholders, but the public company—not any one product subsidiary—is the group-level ownership reference.",
+    "parentCompany": "Midea Group Co., Ltd."
+  },
+  "leadership": [
+    {
+      "name": "Fang Hongbo",
+      "role": "Chairman and President of Midea Group",
+      "context": "Midea's current investor materials identify Fang Hongbo as the group's chairman and president."
+    },
+    {
+      "name": "He Xiangjian",
+      "role": "Founder",
+      "context": "He Xiangjian founded the business that became Midea Group in 1968; the role is historical and does not replace current listed-company governance."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Wet-and-dry floor cleaners",
+      "positioning": "Midea-branded upright floor washers combine vacuuming, washing and self-cleaning features for hard floors.",
+      "buyerRelevance": "Retailers should compare cleaning architecture, edge reach, drying, consumables, warranty and local service by model."
+    },
+    {
+      "name": "Robot vacuums",
+      "positioning": "Midea and related operating companies develop robot-vacuum platforms with navigation, docking and app functions.",
+      "buyerRelevance": "Model-specific manufacturer, software, radio, app-region and factory evidence matter more than the group brand alone."
+    },
+    {
+      "name": "Cordless and canister vacuums",
+      "positioning": "Dry floor-care products extend Midea's small-appliance portfolio across multiple markets and price tiers.",
+      "buyerRelevance": "Range naming, voltage, filters, batteries, included tools and distribution can differ substantially by country."
+    },
+    {
+      "name": "Eureka cleaning appliances",
+      "positioning": "The historic Eureka brand is marketed separately within Midea Group across vacuums, floor washers and selected robotic products.",
+      "buyerRelevance": "A Eureka transaction may name different sellers, manufacturers and service entities from a Midea-branded product."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Midea reported 43 major overseas manufacturing bases and localized operations in 50 major countries in its 2025 investor materials.",
+      "scope": "Midea Group international network",
+      "buyerCheck": "Do not assign a group factory or country to a cleaning appliance without exact-SKU documentation."
+    },
+    {
+      "evidence": "Selected robot-vacuum manuals and regulatory records name Midea Robozone Technology Co., Ltd. for covered models.",
+      "scope": "Named robotic product documents",
+      "buyerCheck": "Match the legal manufacturer and factory evidence to the model number, regional suffix and shipment batch."
+    },
+    {
+      "evidence": "Midea combines its own manufacturing, specialized subsidiaries and external supply-chain partners across a large appliance portfolio.",
+      "scope": "Group production model",
+      "buyerCheck": "Verify factory, origin, exporter, component responsibility and change-control terms in the supply agreement."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Midea reported localized business in 50 major countries and overseas revenue of RMB 195.9 billion for 2025.",
+      "scope": "Company-reported international business",
+      "buyerCheck": "Confirm which local Midea company or distributor carries the exact floor-care product and warranty."
+    },
+    {
+      "evidence": "Midea products use national websites, retail chains, ecommerce marketplaces, distributors and project channels.",
+      "scope": "Multi-channel distribution",
+      "buyerCheck": "Check seller authorization, territory, channel rights, service stock and marketplace restrictions."
+    },
+    {
+      "evidence": "Eureka maintains separate brand presentation and regional commercial routes within the wider Midea Group.",
+      "scope": "Group-brand separation",
+      "buyerCheck": "Do not substitute a Midea authorization for documented Eureka rights, or vice versa."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Midea's advantage is manufacturing scale, broad appliance distribution and the ability to combine core Midea products with specialized robotics and the Eureka brand. Its cleaning portfolio can move quickly across price tiers, but that breadth creates buyer complexity: group, business unit, brand, regional seller, legal manufacturer and physical factory may be different layers.",
+    "competitorSlugs": ["tineco", "dreame", "philips-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "Midea reports RMB 458.5 billion in 2025 revenue",
+      "summary": "The current investor page also reports RMB 195.9 billion in overseas revenue, 29 R&D centers and 43 major overseas manufacturing bases.",
+      "sourceIds": ["midea-investors"]
+    },
+    {
+      "date": "2024",
+      "title": "Midea expands smart cleaning and robotic product development",
+      "summary": "The 2024 annual report describes continued product development in cleaning appliances within the Smart Home business.",
+      "sourceIds": ["midea-annual-2024"]
+    },
+    {
+      "date": "2016-12",
+      "title": "Midea acquires the Eureka brand business from Electrolux",
+      "summary": "The transaction moved Eureka into Midea Group while leaving Sanitaire and Eureka Forbes outside that ownership answer.",
+      "sourceIds": ["electrolux-eureka-sale"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "midea-investors",
+      "title": "Midea Group Investors",
+      "publisher": "Midea Group",
+      "url": "https://www.midea.com.cn/en/Investors",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "midea-annual-2024",
+      "title": "Midea Group Annual Report 2024",
+      "publisher": "Midea Group",
+      "url": "https://www.midea.com.cn/en/Investors/Financial_Reports",
+      "publishedAt": "2025",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "midea-gx5-pro",
+      "title": "Midea GX5 Pro Wet and Dry Vacuum Cleaner",
+      "publisher": "Midea",
+      "url": "https://www.midea.com/id-en/small-appliances/vacuum/wet-and-dry/midea-3in1-wet-dry-vacuum-cleaner-gx5-pro.gx5-pro",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "midea-s8-manual",
+      "title": "Midea S8 Series User Manual",
+      "publisher": "Midea",
+      "url": "https://www.midea.com/content/dam/midea-aem/de/kleingerate/staubsauger/s8-/Midea-S8-User-Manual-EN-DE-SE-NO-DK.pdf",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "electrolux-eureka-sale",
+      "title": "Electrolux divests Eureka brand",
+      "publisher": "Electrolux",
+      "url": "https://www.electroluxgroup.com/en/electrolux-divests-eureka-brand-22825/",
+      "publishedAt": "2016-12",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T15:30:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T15:30:00+08:00"
+}

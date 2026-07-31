@@ -1,0 +1,178 @@
+{
+  "status": "published",
+  "slug": "worx",
+  "name": "WORX",
+  "aliases": ["WORX Landroid", "Landroid", "WORX Tools"],
+  "legalEntityNote": "WORX is a Positec Group brand. Positec Group Limited holds reviewed trademark rights, while Positec Technology (China) Co., Ltd. and regional Positec companies can have separate manufacturer, seller, warranty, app or data roles.",
+  "officialWebsite": "https://eu.worx.com/",
+  "headline": "WORX ownership, Landroid robotic mowers, manufacturing and regional channels",
+  "description": "A source-backed profile of WORX's Positec ownership, Landroid platforms, multi-site manufacturing, regional companies and connected-service responsibilities.",
+  "metaDescription": "WORX profile: Positec ownership, Landroid robot mowers, China and Vietnam factories, regional entities, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with WORX or Positec. Group ownership, trademark, model manufacturer, factory, regional seller and connected-service roles are identified separately.",
+  "headquarters": "Suzhou, Jiangsu, China for Positec Group operations",
+  "founded": "WORX launched in 2003; Positec was founded in 1994",
+  "heroImage": "/images/brands/worx/hero-worx.webp",
+  "heroImageAlt": "WORX Landroid Vision AI robotic lawn mower",
+  "logoImage": "/images/brands/worx/logo.webp",
+  "logoImageAlt": "WORX logo",
+  "logoSourceUrl": "https://eu.worx.com/",
+  "contentVisuals": [
+    {
+      "placement": "operations",
+      "src": "/images/blog/worx-landroid-manufacturing-regional-responsibility.webp",
+      "alt": "WORX Landroid manufacturing and regional responsibility map",
+      "caption": "This map separates Positec's group factories, model manufacturer, regional seller, warranty and connected-service roles."
+    },
+    {
+      "placement": "ownership",
+      "src": "/images/blog/worx-positec-landroid-ownership-map-cover.webp",
+      "alt": "WORX, Positec and Landroid ownership overview",
+      "caption": "WORX is the brand, Landroid is the mower family and Positec is the operating group behind both."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/segway-navimow-vs-worx-landroid-robot-mowers.webp",
+      "alt": "Segway Navimow and WORX Landroid robotic mower comparison",
+      "caption": "This comparison contrasts Landroid's established retail and power-tool ecosystem with Navimow's wire-free robotics platform."
+    }
+  ],
+  "ownership": {
+    "summary": "WORX is a brand of privately held Positec Group. Reviewed trademark records name Positec Group Limited as owner for WORX rights in the relevant jurisdiction, and Positec describes WORX and Kress as group brands. A 2025 equity financing introduced institutional investors but did not publish a current shareholder-percentage table. Founder Don Gao remains the group's CEO.",
+    "parentCompany": "Positec Group"
+  },
+  "leadership": [
+    {
+      "name": "Don Gao",
+      "role": "Founder and CEO of Positec Group",
+      "context": "Positec's January 2025 financing announcement identifies Don Gao as founder and CEO."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Landroid Vision AI",
+      "positioning": "Camera- and AI-led robotic mowers target wire-free installation with model-dependent lawn capacity and features.",
+      "buyerRelevance": "Requires checks for terrain, edge handling, object recognition, lighting, app support and regional availability."
+    },
+    {
+      "name": "Landroid Vision Cloud",
+      "positioning": "Connected mower variants extend mapping and cloud-supported functions beyond the classic boundary-wire proposition.",
+      "buyerRelevance": "Cloud dependence adds account, data, subscription, firmware and service-continuity considerations."
+    },
+    {
+      "name": "Classic Landroid",
+      "positioning": "Established boundary-wire mower families cover multiple residential lawn sizes through mainstream retail channels.",
+      "buyerRelevance": "Creates a mature installed base, but model generations, accessories and warranty rules need exact-SKU matching."
+    },
+    {
+      "name": "WORX power and garden tools",
+      "positioning": "Cordless tools, batteries and outdoor power equipment give Landroid access to a broader home-improvement ecosystem.",
+      "buyerRelevance": "Shared brand and dealer access do not prove battery, service or legal-manufacturer compatibility across product categories."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Positec identifies manufacturing bases in Suzhou, Zhangjiagang and Kunshan in China and in Vietnam.",
+      "scope": "Positec Group manufacturing network",
+      "buyerCheck": "Verify the physical factory and origin for the exact mower, charger, battery and accessory."
+    },
+    {
+      "evidence": "A reviewed UK product-security statement names Positec Technology (China) Co., Ltd. as manufacturer for a listed set of Landroid models.",
+      "scope": "Named Landroid models",
+      "buyerCheck": "Match the model number and regulatory statement before relying on the Suzhou manufacturer record."
+    },
+    {
+      "evidence": "Positec reports R&D centers in Italy, Suzhou and Shanghai and manufacturing across four bases.",
+      "scope": "Group engineering and production footprint",
+      "buyerCheck": "Separate design center, legal manufacturer, assembly plant and component supplier in due-diligence records."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Positec says its products reach around 70 countries through WORX, Kress and other group brands.",
+      "scope": "Company-reported group reach",
+      "buyerCheck": "Confirm current WORX mower availability, dealer authorization and service maturity in the target country."
+    },
+    {
+      "evidence": "U.S. terms identify Positec Tool Corporation and related companies, while UK materials identify Positec (UK & Ireland) Limited for selected regional roles.",
+      "scope": "Regional selling, website and warranty entities",
+      "buyerCheck": "Record the invoice seller, importer, warranty party and payment beneficiary rather than contracting with a brand name."
+    },
+    {
+      "evidence": "European connected-product information can identify Positec Germany GmbH as a data holder while another Positec company operates the app or sells the mower.",
+      "scope": "Connected-service responsibility",
+      "buyerCheck": "Verify app region, data rights, firmware support, account transfer and service continuity."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: WORX gives Positec a recognizable retail brand, broad power-tool distribution and a long-running Landroid mower franchise. New vision and cloud variants modernize that installed base. Its main buyer-side challenge is responsibility mapping across the brand owner, model manufacturer, four production bases and regional companies that handle commerce, warranty and connected data.",
+    "competitorSlugs": ["segway-navimow", "husqvarna", "sunseeker"]
+  },
+  "developments": [
+    {
+      "date": "2025-01-14",
+      "title": "Positec secures USD 250 million in equity financing",
+      "summary": "The private-group financing added institutional capital without publishing a complete post-transaction ownership table.",
+      "sourceIds": ["positec-financing"]
+    },
+    {
+      "date": "2025",
+      "title": "WORX extends Landroid with Vision AI and cloud-connected variants",
+      "summary": "The current portfolio broadens the mower family beyond classic boundary-wire systems.",
+      "sourceIds": ["worx-landroid", "worx-vision-ai"]
+    },
+    {
+      "date": "1994",
+      "title": "Positec begins operations",
+      "summary": "The group later developed WORX, Kress and a multi-country tool and robotic-mower business.",
+      "sourceIds": ["positec-group"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "positec-group",
+      "title": "About Positec Group",
+      "publisher": "Positec Group",
+      "url": "https://www.positecgroup.com.cn/about/index.aspx?key=about",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "positec-quality",
+      "title": "Positec Quality and Manufacturing",
+      "publisher": "Positec Group",
+      "url": "https://www.positecgroup.com.cn/about/quality.aspx?key=about&type=%E4%B8%93%E4%B8%9A%E5%93%81%E8%B4%A8",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "positec-financing",
+      "title": "Positec Group Secures USD 250 Million in Equity Financing",
+      "publisher": "Positec Group / PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/global-technology-leader-positec-group-secures-250-million-in-equity-financing-302350717.html",
+      "publishedAt": "2025-01-14",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "worx-landroid",
+      "title": "WORX Landroid",
+      "publisher": "WORX",
+      "url": "https://eu.worx.com/en/landroid/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "worx-vision-ai",
+      "title": "WORX Landroid Vision AI WR206E",
+      "publisher": "WORX",
+      "url": "https://eu.worx.com/en/robot-mower-landroid-vision-ai-for-lawns-up-to-600-m2-wr206e/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "worx-psti",
+      "title": "WORX UK Product Security Statements",
+      "publisher": "WORX UK",
+      "url": "https://uk.worx.com/uk-psti-statement-of-compliance/",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T15:30:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T15:30:00+08:00"
+}

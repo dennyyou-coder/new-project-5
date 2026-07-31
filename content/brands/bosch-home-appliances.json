@@ -1,0 +1,160 @@
+{
+  "status": "published",
+  "slug": "bosch-home-appliances",
+  "name": "Bosch Home Appliances",
+  "aliases": ["Bosch Appliances", "Bosch Hausgeräte", "BSH Bosch"],
+  "legalName": "BSH Hausgeräte GmbH",
+  "legalEntityNote": "BSH Hausgeräte GmbH operates Bosch-branded home appliances under licence from Robert Bosch GmbH. Bosch Power Tools, mobility and other Bosch businesses sit outside BSH, while regional BSH companies may handle local sales, imports and service.",
+  "officialWebsite": "https://www.bosch-home.com/",
+  "headline": "Bosch appliance ownership, BSH operations, manufacturing network and channels",
+  "description": "A source-backed profile separating Bosch Home Appliances from the wider Bosch Group, with BSH ownership, brand licensing, products, factories and buyer checks.",
+  "metaDescription": "Bosch Home Appliances profile: BSH ownership, Bosch licensing, products, factories, regional entities, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Bosch or BSH. Bosch Group ownership, trademark licensing, BSH operations and model-level manufacturing evidence are separate layers and should not be generalized across all Bosch businesses.",
+  "headquarters": "Munich, Germany",
+  "founded": "1967 as the Bosch-Siemens home-appliance joint venture; wholly Bosch Group owned since 2015",
+  "heroImage": "/images/brands/bosch-home-appliances/hero-bosch-home-appliances.webp",
+  "heroImageAlt": "Bosch Unlimited 10 cordless vacuum and accessory system",
+  "logoImage": "/images/brands/bosch-home-appliances/logo.webp",
+  "logoImageAlt": "Bosch logo",
+  "logoSourceUrl": "https://www.bosch-home.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/bsh-bosch-siemens-ownership-licensing-map.webp",
+      "alt": "Map of Bosch Group ownership, BSH operations and Bosch and Siemens trademark licensing",
+      "caption": "This map separates Bosch Group ownership from BSH's operating role and the trademark licences used for Bosch and Siemens appliances."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/who-owns-bosch-appliances-cover.webp",
+      "alt": "Bosch home-appliance portfolio and BSH company structure",
+      "caption": "Bosch Home Appliances is one brand within BSH's multi-brand appliance portfolio, not the operating company for every Bosch-branded product."
+    }
+  ],
+  "ownership": {
+    "summary": "Bosch Home Appliances is operated by BSH Hausgeräte GmbH, which has been wholly owned by the Bosch Group since January 2015. BSH licenses the Bosch trademark from Robert Bosch GmbH and separately licenses the Siemens trademark from Siemens AG. The arrangement does not make BSH the operator of Bosch Power Tools or other Bosch divisions, and it does not make Bosch the owner of the Siemens trademark.",
+    "parentCompany": "Robert Bosch GmbH through the Bosch Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Major kitchen and laundry appliances",
+      "positioning": "Cooking, refrigeration, dishwashing and laundry systems form the core Bosch home-appliance range.",
+      "buyerRelevance": "Requires market-specific checks for voltage, dimensions, installation, energy labels, importer responsibility and service coverage."
+    },
+    {
+      "name": "Cordless and canister vacuum cleaners",
+      "positioning": "Bosch Unlimited cordless systems and market-specific canister ranges extend BSH into floor care.",
+      "buyerRelevance": "Battery platform, included accessories, filtration, origin, warranty and spare-part compatibility vary by model and region."
+    },
+    {
+      "name": "Coffee, food-preparation and small appliances",
+      "positioning": "Coffee machines, kitchen machines, blenders and other countertop products broaden the Bosch kitchen proposition.",
+      "buyerRelevance": "Small-appliance assortments may use different factories, distributors and after-sales routes from major appliances."
+    },
+    {
+      "name": "Home Connect ecosystem",
+      "positioning": "Connected features link selected appliances to apps, remote functions and partner services.",
+      "buyerRelevance": "Buyers should confirm app region, account provider, cybersecurity support, data terms and the useful life of connected functions."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "BSH reported 37 factories across Europe, North America, Africa and Asia as of March 2026.",
+      "scope": "BSH group production network",
+      "buyerCheck": "Verify the factory and country of origin for the exact model rather than assigning a group factory to the product."
+    },
+    {
+      "evidence": "BSH says its Bad Neustadt plant in Germany produces vacuum cleaners for Bosch and Siemens and made its two-millionth Bosch Unlimited 7 in March 2026.",
+      "scope": "Named factory and product family",
+      "buyerCheck": "Match the product family, model, rating plate and shipment documents before making a German-origin claim."
+    },
+    {
+      "evidence": "BSH operates a multi-brand network in which sites can serve more than one brand and regional companies can hold different sales, import or service roles.",
+      "scope": "Brand, factory and regional-entity boundary",
+      "buyerCheck": "Identify the trademark authorizer, contract seller, manufacturer, importer and warranty provider separately."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "BSH reports sales, production and service companies in around 50 countries and a portfolio led by Bosch, Siemens and Gaggenau.",
+      "scope": "Company-reported global network",
+      "buyerCheck": "Confirm which BSH company or authorized distributor serves the destination country and product category."
+    },
+    {
+      "evidence": "Bosch appliances are sold through national Bosch sites, retailers, kitchen specialists, builders and service partners, with availability varying by market.",
+      "scope": "Market-specific omnichannel distribution",
+      "buyerCheck": "Verify dealer authorization, installation responsibility, warranty coverage and local stock before purchase."
+    },
+    {
+      "evidence": "Local legal notices and transaction documents may name a regional BSH entity rather than BSH Hausgeräte GmbH in Munich.",
+      "scope": "Contracting and after-sales entity",
+      "buyerCheck": "Retain the quotation, invoice, importer label, warranty and Home Connect terms that identify each responsible party."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Bosch Home Appliances combines a high-trust global name with BSH's scale, broad kitchen and laundry portfolio and established manufacturing network. Its floor-care proposition benefits from the Unlimited battery platform and German production evidence for named ranges. The buyer-side risk is identity compression: Bosch Group, BSH, the Bosch trademark, regional companies and individual factories are related but not interchangeable.",
+    "competitorSlugs": ["miele", "philips-home-appliances", "dyson"]
+  },
+  "developments": [
+    {
+      "date": "2026-03",
+      "title": "BSH reports 37 factories and approximately EUR 15 billion in 2025 turnover",
+      "summary": "BSH's current company material describes more than 56,000 employees, 37 factories and operations in around 50 countries.",
+      "sourceIds": ["bsh-at-a-glance"]
+    },
+    {
+      "date": "2026-03",
+      "title": "Bad Neustadt produces its two-millionth Bosch Unlimited 7",
+      "summary": "The named German site provides model-family evidence for Bosch cordless-vacuum production without establishing the origin of every Bosch vacuum.",
+      "sourceIds": ["bsh-bad-neustadt"]
+    },
+    {
+      "date": "2015-01-05",
+      "title": "BSH becomes wholly owned by the Bosch Group",
+      "summary": "Bosch completed its acquisition of Siemens AG's 50% BSH stake while BSH retained the long-term Siemens-brand licence.",
+      "sourceIds": ["bsh-company-portrait"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bsh-company-portrait",
+      "title": "Company Portrait",
+      "publisher": "BSH Hausgeräte GmbH",
+      "url": "https://www.bsh-group.com/about-bsh",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "bsh-at-a-glance",
+      "title": "BSH at a Glance 2025",
+      "publisher": "BSH Hausgeräte GmbH",
+      "url": "https://press.bsh-group.com/documents/bsh-at-a-glance-2025-454117",
+      "publishedAt": "2026-03",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "bsh-bad-neustadt",
+      "title": "BSH Bad Neustadt vacuum-cleaner production",
+      "publisher": "BSH Hausgeräte GmbH",
+      "url": "https://press.bsh-group.com/pressreleases/bsh-in-bad-neustadt-celebrates-30-years-of-vacuum-cleaner-production-3395238",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "bosch-unlimited-10",
+      "title": "Bosch Unlimited 10 Cordless Vacuum",
+      "publisher": "Bosch Home Appliances",
+      "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BXS1042GUC",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "bsh-legal",
+      "title": "BSH Legal Notice",
+      "publisher": "BSH Hausgeräte GmbH",
+      "url": "https://www.bsh-group.com/legal-notice/",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T15:30:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T15:30:00+08:00"
+}

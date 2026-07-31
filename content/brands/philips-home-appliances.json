@@ -1,0 +1,166 @@
+{
+  "status": "published",
+  "slug": "philips-home-appliances",
+  "name": "Philips Home Appliances",
+  "aliases": ["Philips Domestic Appliances", "Philips Floor Care", "Versuni Philips"],
+  "legalEntityNote": "Philips-branded domestic appliances are operated by Versuni under licence from Koninklijke Philips N.V. Versuni is not a Royal Philips subsidiary, and Royal Philips continues to operate other Philips consumer-health categories outside Versuni.",
+  "officialWebsite": "https://www.philips.com/c-m-ho/home-living-care",
+  "headline": "Philips appliance ownership, Versuni licensing, floor-care products and channels",
+  "description": "A source-backed profile separating Philips-branded domestic appliances from Royal Philips, with Versuni ownership, licensing, products, manufacturing and channels.",
+  "metaDescription": "Philips Home Appliances profile: Versuni and Hillhouse ownership, Philips brand licence, floor care, manufacturing, regional entities and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Philips or Versuni. Trademark ownership, Versuni operations, regional sellers and model-level factory evidence are identified separately.",
+  "headquarters": "Amsterdam, Netherlands",
+  "founded": "2021 as an independent domestic-appliances business; renamed Versuni in 2023",
+  "heroImage": "/images/brands/philips-home-appliances/hero-philips-home-appliances.webp",
+  "heroImageAlt": "Philips OneUp electric mop being used on a hard floor",
+  "logoImage": "/images/brands/philips-home-appliances/logo.webp",
+  "logoImageAlt": "Philips logo",
+  "logoSourceUrl": "https://www.versuni.com/about-us/brands/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/philips-floorcare-responsibility-map.webp",
+      "alt": "Responsibility map separating Royal Philips, Versuni, regional companies and model factories",
+      "caption": "This map separates ownership of the Philips trademark from Versuni's product-business and regional responsibilities."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/philips-versuni-ownership-cover.webp",
+      "alt": "Philips floor-care products and Versuni ownership overview",
+      "caption": "Philips floor care sits inside Versuni's domestic-appliance portfolio and should not be confused with Royal Philips' health-technology businesses."
+    }
+  ],
+  "ownership": {
+    "summary": "Hillhouse acquired the former Philips Domestic Appliances business from Royal Philips in 2021. The independent company adopted the Versuni name in 2023 and continues to develop, market and support Philips-branded domestic appliances under a trademark licence from Koninklijke Philips N.V. Royal Philips retained the Philips trademark and does not directly own Versuni.",
+    "parentCompany": "Privately held Versuni, acquired by Hillhouse from Royal Philips"
+  },
+  "leadership": [
+    {
+      "name": "Haoyu Shen",
+      "role": "Interim CEO of Versuni",
+      "context": "Versuni announced Haoyu Shen as interim CEO effective 27 October 2025 after Veronique Pauwels stepped down."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Vacuum cleaners and AquaTrio systems",
+      "positioning": "Philips cordless, wet-and-dry and market-specific vacuum ranges address dry cleaning and hard-floor washing.",
+      "buyerRelevance": "Model architecture, included tools, filter supply, detergent rules and service terms need market-level verification."
+    },
+    {
+      "name": "OneUp electric mop",
+      "positioning": "A compact electric-mop platform introduced for routine hard-floor cleaning with separated clean and dirty water.",
+      "buyerRelevance": "Creates a lighter step below full wet-and-dry vacuums, but pads, cleaning solution and launch-market availability matter."
+    },
+    {
+      "name": "Kitchen and coffee appliances",
+      "positioning": "Airfryers, blenders, kettles, coffee systems and related appliances form a large part of Versuni's Philips portfolio.",
+      "buyerRelevance": "These categories may use different factories, certifications and channel partners from floor-care products."
+    },
+    {
+      "name": "Garment care and air treatment",
+      "positioning": "Irons, steamers, air purifiers and climate products extend the licensed Philips domestic-appliance range.",
+      "buyerRelevance": "Buyers should confirm which Versuni or regional entity supplies, imports and warrants the exact category."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Versuni identifies itself as the company responsible for Philips-branded domestic appliances and operates a mix of owned manufacturing and external suppliers.",
+      "scope": "Versuni product-business network",
+      "buyerCheck": "Do not infer a universal Philips factory; verify the legal manufacturer and production site for the exact SKU."
+    },
+    {
+      "evidence": "Current product documentation can name Versuni Holding B.V. or another Versuni company as the responsible manufacturer while the Philips mark is used under licence.",
+      "scope": "Model documentation and trademark licence",
+      "buyerCheck": "Match the model number, responsible company, declaration, rating label and origin statement."
+    },
+    {
+      "evidence": "Regional Versuni companies and distributors can have separate selling, importing, data and warranty roles.",
+      "scope": "Regional commercial responsibility",
+      "buyerCheck": "Identify the invoice seller, importer, app or data operator and warranty provider for the destination market."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Versuni says its brand portfolio reaches consumers in more than 100 countries.",
+      "scope": "Company-reported international reach",
+      "buyerCheck": "Confirm current category availability and after-sales capability in the target country."
+    },
+    {
+      "evidence": "Philips domestic appliances are sold through official country sites, retailers, marketplaces and distribution partners.",
+      "scope": "Omnichannel consumer distribution",
+      "buyerCheck": "Verify seller authorization, local warranty and grey-market restrictions before committing inventory."
+    },
+    {
+      "evidence": "The Philips brand also appears on Royal Philips products outside Versuni's domestic-appliance scope.",
+      "scope": "Brand-portfolio boundary",
+      "buyerCheck": "Confirm that the proposed product and agreement fall within Versuni's licensed appliance categories."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Philips Home Appliances benefits from a globally recognized trademark and Versuni's dedicated appliance organization, broad international reach and strong kitchen and garment-care categories. Floor care offers cross-category retailer access but competes against specialist platforms with faster product cycles. The main diligence risk is assuming that the Philips logo identifies Royal Philips as the product company, factory or warranty provider.",
+    "competitorSlugs": ["bosch-home-appliances", "midea", "tineco"]
+  },
+  "developments": [
+    {
+      "date": "2025-10-27",
+      "title": "Versuni appoints Haoyu Shen interim CEO",
+      "summary": "The leadership update followed Veronique Pauwels' decision to step down as CEO.",
+      "sourceIds": ["versuni-leadership"]
+    },
+    {
+      "date": "2025-02-25",
+      "title": "Versuni launches the Philips OneUp electric mop",
+      "summary": "The launch added a lightweight hard-floor format alongside Philips vacuum and AquaTrio systems.",
+      "sourceIds": ["philips-oneup"]
+    },
+    {
+      "date": "2023",
+      "title": "Philips Domestic Appliances becomes Versuni",
+      "summary": "The independent company adopted a new corporate name while continuing to use Philips and other licensed or owned appliance brands.",
+      "sourceIds": ["versuni-about", "versuni-brands"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "versuni-about",
+      "title": "About Versuni",
+      "publisher": "Versuni",
+      "url": "https://www.versuni.com/about-us/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "versuni-brands",
+      "title": "Our Brands",
+      "publisher": "Versuni",
+      "url": "https://www.versuni.com/about-us/brands/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "versuni-leadership",
+      "title": "CEO Leadership Update",
+      "publisher": "Versuni",
+      "url": "https://www.versuni.com/newsroom/ceo-leadership-update/",
+      "publishedAt": "2025-10-28",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "philips-oneup",
+      "title": "Philips OneUp Electric Mop",
+      "publisher": "Versuni",
+      "url": "https://www.versuni.com/newsroom/philips-oneup-electric-mop/",
+      "publishedAt": "2025-02-25",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "philips-aquatrio",
+      "title": "Philips AquaTrio Cordless Wet and Dry Vacuum 9000 Series",
+      "publisher": "Philips / Versuni",
+      "url": "https://www.philips.co.uk/c-p/XW9383_01/aquatrio-cordless-wet-dry-vacuum-9000-series",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T15:30:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T15:30:00+08:00"
+}
