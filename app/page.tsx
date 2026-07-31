@@ -4,6 +4,7 @@ import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
 import { TallyButton } from "@/components/LeadForms";
 import { getSeriesArticles } from "@/lib/blogSeries";
+import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights, type Insight } from "@/lib/content";
 import { getEditorialInsights } from "@/lib/insightCollections";
 
@@ -67,6 +68,15 @@ const featuredInsightSlugs = [
   "tti-cleaning-appliance-strategy"
 ];
 
+const featuredBrandSlugs = [
+  "aiper",
+  "dreame",
+  "ecovacs",
+  "maytronics",
+  "roborock",
+  "tineco"
+];
+
 function isGenericBuyerGuide(article: Insight) {
   const haystack = `${article.slug} ${article.title} ${article.category}`.toLowerCase();
   return (
@@ -105,6 +115,10 @@ function excerptFor(article: Insight) {
 
 export default function HomePage() {
   const allInsights = getInsights();
+  const brandProfiles = getPublishedBrandProfiles(allInsights);
+  const featuredBrands = featuredBrandSlugs
+    .map((slug) => brandProfiles.find((profile) => profile.slug === slug))
+    .filter((profile): profile is NonNullable<typeof profile> => Boolean(profile));
   const latestFounderSeries = getSeriesArticles(allInsights, founderSeries).at(-1);
   const featuredInsights = getFeaturedInsights(
     getEditorialInsights(allInsights)
@@ -166,6 +180,35 @@ export default function HomePage() {
                   <p>{product.text}</p>
                 </div>
               </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="home-v9-section home-v9-brands">
+        <div className="home-v9-container home-v9-brand-showcase">
+          <div className="home-v9-brand-copy">
+            <p className="home-v9-eyebrow">Independent Brand Intelligence</p>
+            <h2>Know Who Is Behind The Product</h2>
+            <p>
+              Verify ownership, product scope, manufacturing evidence and channel
+              responsibility before you choose a brand, supplier or route to market.
+            </p>
+            <Link className="home-v9-inline-link" href="/brands">
+              Explore all {brandProfiles.length} brand profiles →
+            </Link>
+          </div>
+          <div className="home-v9-brand-logos" aria-label="Featured brand profiles">
+            {featuredBrands.map((profile) => (
+              <Link href={`/brands/${profile.slug}`} key={profile.slug}>
+                <img
+                  src={profile.logoImage}
+                  alt={profile.logoImageAlt}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>{profile.name}</span>
+              </Link>
             ))}
           </div>
         </div>

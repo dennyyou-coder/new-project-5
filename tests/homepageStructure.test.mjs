@@ -17,6 +17,7 @@ const seriesComponentSource = await readFile(
 test("homepage exposes the streamlined commercial journey", () => {
   const sectionNames = [
     "home-v9-hero",
+    "home-v9-brands",
     "home-v9-pathways",
     "home-v9-trust",
     "home-v9-conversion",
@@ -62,6 +63,15 @@ test("homepage restores a compact standalone six-category section", () => {
   assert.match(homeSource, /heroProducts\.map/);
 });
 
+test("homepage gives Brand Intelligence a compact discovery entry", () => {
+  assert.match(homeSource, /getPublishedBrandProfiles\(allInsights\)/);
+  assert.match(homeSource, /className="home-v9-section home-v9-brands"/);
+  assert.match(homeSource, /Know Who Is Behind The Product/);
+  assert.match(homeSource, /Explore all \{brandProfiles\.length\} brand profiles/);
+  assert.match(homeSource, /className="home-v9-brand-logos"/);
+  assert.match(homeSource, /featuredBrandSlugs/);
+});
+
 test("homepage pathways use industry imagery instead of text-only cards", () => {
   assert.match(homeSource, /image: "\/images\/site-refresh\/real\/city-architecture\.webp"/);
   assert.match(homeSource, /image: "\/images\/site-refresh\/real\/product-detail\.webp"/);
@@ -102,6 +112,7 @@ test("header keeps one unified content entry and removes the fixed report CTA", 
   for (const label of [
     "Home",
     "Blog",
+    "Brand Intelligence",
     "Sourcing",
     "Market Reports",
     "World Clean Expo",
