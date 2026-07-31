@@ -1,0 +1,158 @@
+{
+  "status": "published",
+  "slug": "oreck",
+  "name": "Oreck",
+  "aliases": ["ORECK", "Oreck Commercial"],
+  "legalEntityNote": "Oreck is a TTI-owned floorcare brand. Techtronic Floor Care Technology Limited appears on the current site, while other TTI companies, factories, retailers and service providers can hold product-specific responsibilities.",
+  "officialWebsite": "https://oreck.com/",
+  "headline": "Oreck ownership, lightweight uprights and commercial floorcare strategy",
+  "description": "A source-backed profile of Oreck's TTI ownership, lightweight upright and commercial cleaning portfolio, Tennessee manufacturing evidence and channel scope.",
+  "metaDescription": "Oreck profile: TTI ownership, upright vacuums, commercial floorcare, manufacturing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Oreck or Techtronic Industries. Brand and group statements do not establish the factory, seller or warranty provider for every model.",
+  "headquarters": "United States; principal manufacturing identified by TTI in Cookeville, Tennessee",
+  "founded": "1963; acquired by TTI in 2013",
+  "heroImage": "/images/brands/oreck/hero-elevate-command-upright.webp",
+  "heroImageAlt": "Oreck Elevate Command lightweight upright vacuum",
+  "logoImage": "/images/brands/oreck/logo.webp",
+  "logoImageAlt": "Oreck logo",
+  "logoSourceUrl": "https://www.ttigroup.com/brands/oreck",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/tti-owned-licensed-regional-brands-map.webp",
+      "alt": "TTI brand map including Oreck",
+      "caption": "Oreck is an owned TTI floorcare brand acquired in 2013, not a currently independent family business."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/articles/tti-cleaning-appliance-strategy/02.png",
+      "alt": "TTI cleaning appliance portfolio including Oreck",
+      "caption": "Oreck operates beside Hoover, Vax and Dirt Devil in TTI's floorcare portfolio while retaining a distinct lightweight-upright position."
+    }
+  ],
+  "ownership": {
+    "summary": "Techtronic Industries Company Limited owns Oreck. TTI acquired the Oreck brand and floorcare business in 2013. The brand is therefore no longer an independent Oreck-family company, even though David Oreck's founder story remains central to its heritage.",
+    "parentCompany": "Techtronic Industries Company Limited"
+  },
+  "leadership": [
+    {
+      "name": "David Oreck",
+      "role": "Founder",
+      "context": "TTI's Oreck brand page dates the company to 1963, and the brand's official history identifies David Oreck as its founder."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Lightweight bagged upright vacuums",
+      "positioning": "Elevate and Discover products emphasize low weight, large bags, low-profile access and filtration.",
+      "buyerRelevance": "Compare brush speeds, filtration bags, cord length, floor compatibility and warranty by model."
+    },
+    {
+      "name": "Canister and handheld vacuums",
+      "positioning": "Portable products support above-floor, stair and detailed cleaning around the upright core.",
+      "buyerRelevance": "Confirm hose, wand, tool and replacement-bag compatibility."
+    },
+    {
+      "name": "Orbiter floor machines",
+      "positioning": "Multi-purpose floor machines extend Oreck into scrubbing, polishing and floor-maintenance tasks.",
+      "buyerRelevance": "Pads, brushes, chemicals and surface suitability require application-level checks."
+    },
+    {
+      "name": "Commercial vacuums and air products",
+      "positioning": "Commercial uprights, parts and selected air products broaden the brand beyond residential use.",
+      "buyerRelevance": "Separate residential and commercial warranties, service channels and duty-cycle expectations."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "TTI's current Oreck brand page identifies principal manufacturing in Cookeville, Tennessee.",
+      "scope": "Current brand-level manufacturing statement",
+      "buyerCheck": "Treat this as a principal footprint, not proof that every Oreck SKU is made in Tennessee."
+    },
+    {
+      "evidence": "TTI operates a broader global floorcare manufacturing and sourcing network.",
+      "scope": "Parent-group network",
+      "buyerCheck": "Check origin, manufacturer and factory on the exact product and compliance documents."
+    },
+    {
+      "evidence": "Oreck product manuals and support pages identify model-specific parts, ratings and warranty information.",
+      "scope": "Exact product documentation",
+      "buyerCheck": "Match the manual and service record to the full model number and production generation."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Oreck operates a U.S. ecommerce and support site for vacuums, bags, parts, product registration and service.",
+      "scope": "U.S. direct channel",
+      "buyerCheck": "Confirm seller authorization, return terms and whether commercial use changes coverage."
+    },
+    {
+      "evidence": "Oreck products also reach consumers through retail and specialist floorcare channels.",
+      "scope": "U.S. retail distribution",
+      "buyerCheck": "Verify the seller, bundle, warranty and access to genuine bags and parts."
+    },
+    {
+      "evidence": "The current site footer names Techtronic Floor Care Technology Limited.",
+      "scope": "Website corporate notice",
+      "buyerCheck": "Do not assume the website entity is the manufacturer, importer or invoice seller for every transaction."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Oreck differentiates through lightweight bagged uprights, loyal users and a credible commercial-cleaning heritage. TTI brings scale and sourcing support, but the brand must defend a narrower architecture against cordless, bagless and multifunction competitors while maintaining bags, parts and specialist service.",
+    "competitorSlugs": ["hoover", "bissell", "miele"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "TTI continues to identify Cookeville as principal Oreck manufacturing",
+      "summary": "TTI's current brand profile links the Oreck legacy to lightweight vacuums and principal manufacturing in Tennessee.",
+      "sourceIds": ["tti-oreck"]
+    },
+    {
+      "date": "2013",
+      "title": "TTI acquires Oreck",
+      "summary": "TTI's history records its acquisition of the Oreck brand and floorcare business.",
+      "sourceIds": ["tti-history"]
+    },
+    {
+      "date": "1963",
+      "title": "Oreck is founded",
+      "summary": "The official brand materials date Oreck's founding and lightweight-cleaning heritage to 1963.",
+      "sourceIds": ["tti-oreck"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tti-annual-2025",
+      "title": "Techtronic Industries Annual Report 2025",
+      "publisher": "Techtronic Industries",
+      "url": "https://www.ttigroup.com/documents/annual-report-2025/",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "tti-history",
+      "title": "TTI Company History",
+      "publisher": "Techtronic Industries",
+      "url": "https://www.ttigroup.com/company/history",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "tti-oreck",
+      "title": "ORECK Brand Profile",
+      "publisher": "Techtronic Industries",
+      "url": "https://www.ttigroup.com/brands/oreck",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "oreck-discover",
+      "title": "Oreck Discover Upright Vacuum",
+      "publisher": "Oreck",
+      "url": "https://oreck.com/products/discover-upright-vacuum",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T21:50:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T21:50:00+08:00"
+}

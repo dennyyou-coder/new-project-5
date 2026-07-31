@@ -1,0 +1,159 @@
+{
+  "status": "published",
+  "slug": "vax",
+  "name": "Vax",
+  "aliases": ["VAX", "Vax UK"],
+  "legalName": "Vax Limited",
+  "legalEntityNote": "Vax is a TTI-owned floorcare brand centered on the United Kingdom. Vax Limited, Techtronic Cordless GP, group factories, logistics providers, retailers and service partners can hold distinct roles.",
+  "officialWebsite": "https://www.vax.co.uk/",
+  "headline": "Vax ownership, ONEPWR floorcare portfolio and UK channel strategy",
+  "description": "A source-backed profile of Vax's TTI ownership, UK floorcare range, ONEPWR platform, manufacturing scope and direct-to-consumer route to market.",
+  "metaDescription": "Vax profile: TTI ownership, ONEPWR vacuums, carpet washers, floor cleaners, manufacturing, UK channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Vax or Techtronic Industries. TTI ownership does not identify the factory or warranty provider for every Vax product.",
+  "headquarters": "Droitwich, Worcestershire, United Kingdom",
+  "founded": "1977 brand history; acquired by TTI in 1999",
+  "heroImage": "/images/brands/vax/hero-onepwr-compact-carpet-cleaner.webp",
+  "heroImageAlt": "Vax ONEPWR compact cordless carpet cleaner in a home",
+  "logoImage": "/images/brands/vax/logo.webp",
+  "logoImageAlt": "Vax logo",
+  "logoSourceUrl": "https://www.ttigroup.com/brands/vax",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/tti-owned-licensed-regional-brands-map.webp",
+      "alt": "TTI owned and licensed brand map including Vax",
+      "caption": "Vax is an owned TTI floorcare brand, while Ryobi and AEG appear in the same map as licensed trademarks."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/articles/tti-cleaning-appliance-strategy/02.png",
+      "alt": "TTI cleaning appliance brand portfolio including Vax",
+      "caption": "Vax sits inside TTI's wider floorcare portfolio and has adopted the group's cordless platform logic."
+    }
+  ],
+  "ownership": {
+    "summary": "Techtronic Industries Company Limited owns Vax. TTI's history records its acquisition of the Vax brand and floorcare business in 1999, and the 2025 annual report lists Vax Limited as an indirectly held 100%-owned principal subsidiary.",
+    "parentCompany": "Techtronic Industries Company Limited"
+  },
+  "leadership": [
+    {
+      "name": "Alan Brazier",
+      "role": "Founder",
+      "context": "Vax's brand history identifies British engineer Alan Brazier as the founder associated with the original multifunction cleaning machine."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Cordless vacuum cleaners",
+      "positioning": "ONEPWR, HomePro and Blade families target everyday UK floorcare with removable-battery and pet variants.",
+      "buyerRelevance": "Confirm battery generation, included pack, floorhead, filtration, spares and regional warranty."
+    },
+    {
+      "name": "Carpet washers",
+      "positioning": "Platinum and related upright extractors form a core Vax category for deep carpet cleaning.",
+      "buyerRelevance": "Check solution requirements, brush and nozzle supply, tank capacity and service parts."
+    },
+    {
+      "name": "Spot cleaners",
+      "positioning": "Portable and cordless products target upholstery, stairs, vehicles and localized stains.",
+      "buyerRelevance": "Compare hose reach, battery format, tools, commercial-use limits and after-sales support."
+    },
+    {
+      "name": "Hard-floor and corded cleaners",
+      "positioning": "Wet cleaning, steam and upright products complete a broad UK home-floorcare assortment.",
+      "buyerRelevance": "Electrical, chemical and floor-surface requirements vary by model and market."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "TTI's annual report lists Vax Limited as a wholly owned principal subsidiary engaged in trading and manufacturing floorcare products.",
+      "scope": "Group legal-entity disclosure",
+      "buyerCheck": "Confirm whether Vax Limited, another TTI entity or a supplier is named for the exact model."
+    },
+    {
+      "evidence": "TTI operates a global manufacturing and sourcing network, including major Asian production capacity.",
+      "scope": "Parent-group network",
+      "buyerCheck": "Do not infer origin from Vax's UK brand position; check label, declaration and shipment documents."
+    },
+    {
+      "evidence": "Vax and sibling TTI floorcare brands can use related battery and product-platform strategies.",
+      "scope": "Group platform relationship",
+      "buyerCheck": "Shared architecture does not prove identical tooling, certification, software or factory for every SKU."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Vax operates a UK direct ecommerce site covering products, spares, registration and support.",
+      "scope": "UK direct-to-consumer channel",
+      "buyerCheck": "Confirm whether marketplace and third-party listings retain authorized warranty coverage."
+    },
+    {
+      "evidence": "The brand sells through major UK electrical, general-merchandise and online retailers.",
+      "scope": "UK retail distribution",
+      "buyerCheck": "Verify the exact retailer, product suffix, bundle and promotional warranty."
+    },
+    {
+      "evidence": "The official site footer identifies VAX as a trademark of Techtronic Cordless GP.",
+      "scope": "Current website trademark notice",
+      "buyerCheck": "Separate the trademark notice from the product seller, importer and warranty entity."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Vax retains strong UK floorcare recognition and a wide cleaning portfolio supported by TTI's cordless-system and sourcing scale. Its pressure points are intense Shark and BISSELL competition, overlapping TTI platforms and the need to keep product differentiation clear across vacuums, washers and spot cleaners.",
+    "competitorSlugs": ["shark", "hoover", "bissell"]
+  },
+  "developments": [
+    {
+      "date": "2026-03",
+      "title": "TTI presents a current Vax ONEPWR carpet-cleaning product",
+      "summary": "TTI's Vax brand page highlights a cordless compact carpet cleaner within the group's current floorcare portfolio.",
+      "sourceIds": ["tti-vax"]
+    },
+    {
+      "date": "1999",
+      "title": "TTI acquires Vax",
+      "summary": "TTI's official history records the acquisition of the Vax brand and floorcare business.",
+      "sourceIds": ["tti-history"]
+    },
+    {
+      "date": "1977",
+      "title": "Vax begins with a multifunction cleaning concept",
+      "summary": "Vax's brand history traces the company to Alan Brazier's original cleaning-machine development.",
+      "sourceIds": ["vax-site"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tti-annual-2025",
+      "title": "Techtronic Industries Annual Report 2025",
+      "publisher": "Techtronic Industries",
+      "url": "https://www.ttigroup.com/documents/annual-report-2025/",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "tti-history",
+      "title": "TTI Company History",
+      "publisher": "Techtronic Industries",
+      "url": "https://www.ttigroup.com/company/history",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "tti-vax",
+      "title": "VAX Brand Profile",
+      "publisher": "Techtronic Industries",
+      "url": "https://www.ttigroup.com/brands/vax",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "vax-site",
+      "title": "VAX Official Website",
+      "publisher": "Vax",
+      "url": "https://www.vax.co.uk/",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T21:45:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T21:45:00+08:00"
+}

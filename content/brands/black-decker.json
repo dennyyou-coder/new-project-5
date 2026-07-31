@@ -1,0 +1,165 @@
+{
+  "status": "published",
+  "slug": "black-decker",
+  "name": "BLACK+DECKER",
+  "aliases": ["Black & Decker", "BLACK AND DECKER", "Black+Decker"],
+  "legalName": "Stanley Black & Decker, Inc.",
+  "legalEntityNote": "BLACK+DECKER is a group-owned brand. Regional Stanley Black & Decker companies, licensees, suppliers, retailers and service providers can hold separate manufacturing, sales, import or warranty responsibilities.",
+  "officialWebsite": "https://www.blackanddecker.com/",
+  "headline": "BLACK+DECKER ownership, cleaning products, licensees and manufacturing scope",
+  "description": "A source-backed profile of BLACK+DECKER's Stanley Black & Decker ownership, dustbuster and home-cleaning portfolio, licensed products and model-level supply-chain checks.",
+  "metaDescription": "BLACK+DECKER profile: Stanley Black & Decker ownership, vacuums, cleaning products, licensees, manufacturing and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with BLACK+DECKER or Stanley Black & Decker. Group ownership does not identify the manufacturer, seller or warranty provider for every product.",
+  "headquarters": "New Britain, Connecticut, United States at parent-group level",
+  "founded": "1910",
+  "heroImage": "/images/brands/black-decker/hero-dustbuster-powerconnect.webp",
+  "heroImageAlt": "BLACK+DECKER dustbuster POWERCONNECT cordless handheld vacuum",
+  "logoImage": "/images/brands/black-decker/logo.webp",
+  "logoImageAlt": "BLACK+DECKER logo",
+  "logoSourceUrl": "https://www.blackanddecker.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/black-decker-stanley-ownership-manufacturing-map.webp",
+      "alt": "BLACK+DECKER and STANLEY ownership and product-responsibility map",
+      "caption": "BLACK+DECKER and STANLEY are sibling brands inside Stanley Black & Decker; the product-responsibility chain remains model- and market-specific."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/dewalt-product-responsibility-map.webp",
+      "alt": "Stanley Black and Decker product responsibility map",
+      "caption": "The same parent group can use owned factories, suppliers and licensees, so buyers must verify the exact BLACK+DECKER SKU."
+    }
+  ],
+  "ownership": {
+    "summary": "Stanley Black & Decker, Inc. owns BLACK+DECKER. The present group was formed when The Stanley Works and The Black & Decker Corporation completed their merger in March 2010. DEWALT, STANLEY and CRAFTSMAN are sibling brands; none is BLACK+DECKER's parent.",
+    "parentCompany": "Stanley Black & Decker, Inc."
+  },
+  "leadership": [
+    {
+      "name": "S. Duncan Black",
+      "role": "Co-founder",
+      "context": "The official brand history identifies S. Duncan Black as one of the two founders of the Baltimore machine shop opened in 1910."
+    },
+    {
+      "name": "Alonzo G. Decker",
+      "role": "Co-founder",
+      "context": "The official brand history identifies Alonzo G. Decker as the other co-founder of the business that became Black & Decker."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "dustbuster handheld vacuums",
+      "positioning": "Cordless handheld cleaners span quick-clean, pet, wet-dry and removable-battery formats.",
+      "buyerRelevance": "Compare voltage, battery inclusion, filtration, runtime, regional model number and replacement-filter availability."
+    },
+    {
+      "name": "Cordless stick and floorcare products",
+      "positioning": "POWERSERIES and related lines extend the brand into whole-home dry floorcare.",
+      "buyerRelevance": "Confirm battery-platform compatibility, floor tools, parts and warranty terms for the destination market."
+    },
+    {
+      "name": "Steam, wet-dry and surface cleaning",
+      "positioning": "Steam mops, wet-dry cleaners and portable products broaden BLACK+DECKER beyond dry vacuuming.",
+      "buyerRelevance": "Licensed and regional products may use different responsible companies and compliance files."
+    },
+    {
+      "name": "Power tools and outdoor equipment",
+      "positioning": "Home-improvement tools and yard equipment form the wider battery and retail ecosystem around cleaning products.",
+      "buyerRelevance": "Shared branding does not guarantee cross-category battery, accessory or service compatibility."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "BLACK+DECKER's official support page describes tools manufactured in the United States, Mexico, Brazil, China and the United Kingdom.",
+      "scope": "Brand support statement for tools",
+      "buyerCheck": "Do not generalize this footprint to a specific vacuum, steam cleaner or licensed home appliance."
+    },
+    {
+      "evidence": "The official U.S. terms say the website may sell licensed products made or distributed by third-party partners.",
+      "scope": "Licensed-product boundary",
+      "buyerCheck": "Identify the manufacturer, distributor and warranty company named for the exact SKU."
+    },
+    {
+      "evidence": "Stanley Black & Decker reports a multi-country manufacturing and sourcing network at group level.",
+      "scope": "Parent-group network",
+      "buyerCheck": "Match the product label, declaration, certification and shipment documents to the contracted batch."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "BLACK+DECKER sells through its own U.S. ecommerce site and major retail, online and dealer channels.",
+      "scope": "U.S. consumer channels",
+      "buyerCheck": "Confirm seller authorization and whether the purchase qualifies for local warranty coverage."
+    },
+    {
+      "evidence": "Stanley Black & Decker uses regional entities and country sites across major markets.",
+      "scope": "Regional group network",
+      "buyerCheck": "Use the legal name on the local terms, invoice, importer label and warranty policy."
+    },
+    {
+      "evidence": "The group maintains separate support paths for BLACK+DECKER, DEWALT, STANLEY and other portfolio brands.",
+      "scope": "Brand-specific after-sales routes",
+      "buyerCheck": "Do not route a BLACK+DECKER claim through a sibling brand's service system without confirmation."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: BLACK+DECKER combines exceptional consumer recognition with a broad dustbuster-led floorcare range and access to a large tool-and-outdoor platform. The commercial diligence risk is portfolio complexity: owned, sourced and licensed products may use different manufacturers and service routes.",
+    "competitorSlugs": ["dewalt", "ryobi", "bosch-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "Parent filing confirms BLACK+DECKER in the current brand portfolio",
+      "summary": "Stanley Black & Decker's 2025 Form 10-K continues to identify BLACK+DECKER as a significant Tools & Outdoor brand.",
+      "sourceIds": ["sbd-10k-2025"]
+    },
+    {
+      "date": "2010-03-12",
+      "title": "Stanley and Black & Decker complete their merger",
+      "summary": "The transaction created today's Stanley Black & Decker parent and placed BLACK+DECKER beside the combined group's other brands.",
+      "sourceIds": ["sbd-merger-8k"]
+    },
+    {
+      "date": "1910",
+      "title": "Black and Decker open their Baltimore shop",
+      "summary": "The official brand history dates the business to the machine shop opened by S. Duncan Black and Alonzo G. Decker.",
+      "sourceIds": ["black-decker-brand"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sbd-10k-2025",
+      "title": "Stanley Black & Decker 2025 Form 10-K",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000009/swk-20260103.htm",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "sbd-merger-8k",
+      "title": "Form 8-K reporting completion of the Stanley and Black & Decker merger",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/93556/000095015710000400/form8k.htm",
+      "publishedAt": "2010-03-12",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "black-decker-brand",
+      "title": "BLACK+DECKER Brand Profile",
+      "publisher": "Stanley Black & Decker",
+      "url": "https://www.stanleyblackanddecker.com/brands/tools/black-decker",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "black-decker-vacuums",
+      "title": "BLACK+DECKER Vacuums",
+      "publisher": "BLACK+DECKER",
+      "url": "https://www.blackanddecker.com/collections/vacuums",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T21:30:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T21:30:00+08:00"
+}

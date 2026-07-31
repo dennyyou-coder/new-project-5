@@ -1,0 +1,160 @@
+{
+  "status": "published",
+  "slug": "eureka",
+  "name": "Eureka",
+  "aliases": ["Eureka Vacuum", "Eureka US"],
+  "legalEntityNote": "Eureka is a Midea Group brand. Midea Group, Midea America Corp., Midea Robozone Technology Co., Ltd. and regional sellers can perform different ownership, website, product, compliance and service roles.",
+  "officialWebsite": "https://us.eureka.com/",
+  "headline": "Eureka ownership, vacuum portfolio and Midea manufacturing network",
+  "description": "A source-backed profile of Eureka's Midea ownership, Electrolux history, robot and floorcare range, U.S. operating entity and model-specific manufacturing evidence.",
+  "metaDescription": "Eureka profile: Midea ownership, Electrolux sale, vacuums, robot cleaners, manufacturing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Eureka, Midea or Electrolux. Midea Group ownership does not establish one manufacturer or legal entity for every Eureka product.",
+  "headquarters": "Parsippany, New Jersey for the visible U.S. operating entity; Foshan, China at Midea Group level",
+  "founded": "1909 in Detroit; acquired by Midea in 2016",
+  "heroImage": "/images/brands/eureka/hero-j15-evo-ultra.webp",
+  "heroImageAlt": "Eureka J15 Evo Ultra robot vacuum and self-emptying dock",
+  "logoImage": "/images/brands/eureka/logo.webp",
+  "logoImageAlt": "Eureka logo",
+  "logoSourceUrl": "https://us.eureka.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/eureka-ownership-timeline-midea-electrolux.webp",
+      "alt": "Eureka ownership timeline from Detroit through Electrolux to Midea",
+      "caption": "Eureka moved from Electrolux to Midea in 2016; Sanitaire and Eureka Forbes follow separate ownership paths."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/who-owns-eureka-midea-cover.webp",
+      "alt": "World Clean Biz cover about Eureka ownership and manufacturing",
+      "caption": "The brand now spans robot, wet-dry, upright, stick, canister and carpet-cleaning categories."
+    }
+  ],
+  "ownership": {
+    "summary": "Midea Group owns Eureka. Electrolux sold its North American Eureka vacuum brand and most related assets to Midea in December 2016. Electrolux's annual-report note disclosed gross consideration of about USD 40 million; the widely repeated USD 60 million figure was the business's prior annual sales.",
+    "parentCompany": "Midea Group Co., Ltd."
+  },
+  "leadership": [
+    {
+      "name": "Fred Wardell",
+      "role": "Founder",
+      "context": "Eureka's official history credits Fred Wardell with founding the company in Detroit in 1909."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Robot vacuums",
+      "positioning": "J-series and E-series robots combine self-emptying or multifunction docks with mapping and obstacle-avoidance features.",
+      "buyerRelevance": "Confirm software region, app support, dock functions, consumables and responsible manufacturer by model."
+    },
+    {
+      "name": "Wet-dry floor cleaners",
+      "positioning": "NEW and FloorShine products cover cordless hard-floor washing and self-cleaning use cases.",
+      "buyerRelevance": "Check solution requirements, roller supply, edge-cleaning features and market-specific warranty."
+    },
+    {
+      "name": "Upright, stick and canister vacuums",
+      "positioning": "A broad value-led range maintains Eureka's traditional U.S. floorcare presence.",
+      "buyerRelevance": "Product origin and operating entity can differ across families, so verify the exact SKU."
+    },
+    {
+      "name": "Carpet and upholstery cleaners",
+      "positioning": "Portable deep-cleaning products extend the assortment beyond routine dry floorcare.",
+      "buyerRelevance": "Confirm cleaning-solution availability, accessories, service parts and commercial-use limits."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "An official Midea V12 manual and declaration name Midea Robozone Technology Co., Ltd. and list Midea, Eureka, Comfee and obode trade names.",
+      "scope": "V12-related robot-vacuum platform",
+      "buyerCheck": "Do not generalize this multi-brand platform evidence to all Eureka products."
+    },
+    {
+      "evidence": "FCC records for the Eureka NER J20 Ultra identify Midea Robozone Technology Co., Ltd. as the applicant.",
+      "scope": "Named robot-vacuum model",
+      "buyerCheck": "Match the filing, model suffix and production version before relying on the record."
+    },
+    {
+      "evidence": "Midea Group provides broad appliance engineering and manufacturing resources, but the reviewed sources do not establish one universal Eureka factory.",
+      "scope": "Parent-group capability",
+      "buyerCheck": "Verify manufacturer, factory and origin on the exact product label and compliance file."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Midea America Corp. operates Eureka's U.S. website and appears in U.S. terms, privacy and customer-contact information.",
+      "scope": "U.S. digital and customer interface",
+      "buyerCheck": "Do not assume the U.S. website operator is the contracting entity in every country."
+    },
+    {
+      "evidence": "The current U.S. site sells through direct ecommerce and presents a broad assortment across multiple floorcare categories.",
+      "scope": "U.S. direct channel",
+      "buyerCheck": "Confirm the seller, fulfillment party, warranty eligibility and return route."
+    },
+    {
+      "evidence": "Midea presents Eureka in international product and exhibition materials, while availability remains market-specific.",
+      "scope": "International group positioning",
+      "buyerCheck": "Verify the authorized distributor and local service coverage in the destination market."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Eureka combines century-old U.S. brand recognition with Midea's appliance scale and an increasingly broad robot and wet-dry portfolio. Its diligence challenge is entity and platform complexity: Midea ownership does not make Midea America or Midea Robozone the universal manufacturer and seller.",
+    "competitorSlugs": ["midea", "tineco", "shark"]
+  },
+  "developments": [
+    {
+      "date": "2025-09",
+      "title": "Midea presents Eureka as a home-robotics cleaning brand",
+      "summary": "Midea's IFA 2025 report placed Eureka inside its current international cleaning and home-robotics portfolio.",
+      "sourceIds": ["midea-ifa-2025"]
+    },
+    {
+      "date": "2016-12",
+      "title": "Midea acquires Eureka from Electrolux",
+      "summary": "Electrolux completed the divestiture of the North American Eureka brand and most related assets to Midea.",
+      "sourceIds": ["electrolux-divestiture", "electrolux-2016-report"]
+    },
+    {
+      "date": "1909",
+      "title": "Eureka begins in Detroit",
+      "summary": "The official company history credits Fred Wardell with founding Eureka in Detroit.",
+      "sourceIds": ["eureka-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "electrolux-divestiture",
+      "title": "Electrolux to divest Eureka brand",
+      "publisher": "Electrolux Group",
+      "url": "https://www.electroluxgroup.com/en/electrolux-to-divest-eureka-brand-focus-on-strongest-u-s-small-appliances-categories-23085/",
+      "publishedAt": "2016-12-02",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "electrolux-2016-report",
+      "title": "2016 Annual Report Note 26: Acquired and divested operations",
+      "publisher": "Electrolux Group",
+      "url": "https://www.electroluxgroup.com/annualreports/2016/en/financial-reporting/notes/note-26-acquired-and-divested-operations/",
+      "publishedAt": "2017",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "eureka-history",
+      "title": "About Eureka",
+      "publisher": "Eureka",
+      "url": "https://us.eureka.com/pages/about-us",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "midea-ifa-2025",
+      "title": "Midea showcases transformative innovations at IFA 2025",
+      "publisher": "Midea Group",
+      "url": "https://www.midea.com/global/news/midea-showcases-master-your-home-at-ifa-2025-with-transformative-innovations",
+      "publishedAt": "2025",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T21:35:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T21:35:00+08:00"
+}

@@ -1,0 +1,165 @@
+{
+  "status": "published",
+  "slug": "milwaukee",
+  "name": "Milwaukee",
+  "aliases": ["MILWAUKEE", "Milwaukee Tool", "Milwaukee Electric Tool"],
+  "legalName": "Milwaukee Electric Tool Corporation",
+  "legalEntityNote": "Milwaukee Electric Tool Corporation is a TTI subsidiary. TTI parent reporting, regional Milwaukee entities, factories, distributors and service partners can represent different levels of responsibility.",
+  "officialWebsite": "https://www.milwaukeetool.com/",
+  "headline": "Milwaukee ownership, cordless cleaning equipment and professional platform strategy",
+  "description": "A source-backed profile of Milwaukee's TTI ownership, M12 and M18 cleaning equipment, professional-channel strategy and model-level supply-chain checks.",
+  "metaDescription": "Milwaukee profile: TTI ownership, M12 and M18 vacuums, dust management, manufacturing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Milwaukee Tool or Techtronic Industries. Parent-company disclosures do not identify the factory or seller for every Milwaukee SKU.",
+  "headquarters": "Brookfield, Wisconsin, United States",
+  "founded": "1924; acquired by TTI in 2005",
+  "heroImage": "/images/brands/milwaukee/hero-m12-fuel-wet-dry-vacuum.webp",
+  "heroImageAlt": "Milwaukee M12 FUEL 1.6 gallon wet-dry vacuum",
+  "logoImage": "/images/brands/milwaukee/logo.webp",
+  "logoImageAlt": "Milwaukee logo",
+  "logoSourceUrl": "https://www.milwaukeetool.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/tti-owned-licensed-regional-brands-map.webp",
+      "alt": "TTI owned and licensed brand map including Milwaukee",
+      "caption": "Milwaukee is owned by TTI, unlike the licensed Ryobi and AEG trademarks shown in the same group map."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/milwaukee-path-to-20-billion.webp",
+      "alt": "Milwaukee growth and professional platform map",
+      "caption": "Milwaukee's product strategy expands from cordless tools into equipment, storage, safety and the wider jobsite."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/milwaukee-tti-share-peer-growth.webp",
+      "alt": "Milwaukee share of TTI and peer growth comparison",
+      "caption": "TTI's reporting shows Milwaukee as the group's dominant growth platform, while exact product responsibility remains SKU-specific."
+    }
+  ],
+  "ownership": {
+    "summary": "Techtronic Industries Company Limited owns Milwaukee. TTI acquired the Milwaukee brand and power-tool business in 2005, and its 2025 annual report lists Milwaukee Electric Tool Corporation as an indirectly held 100%-owned principal subsidiary.",
+    "parentCompany": "Techtronic Industries Company Limited"
+  },
+  "leadership": [
+    {
+      "name": "A. H. Petersen",
+      "role": "Founder",
+      "context": "Milwaukee's official company story traces the business to A. H. Petersen's 1924 founding of the Milwaukee Electric Tool Corporation."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "M12 wet-dry and portable vacuums",
+      "positioning": "Compact professional cleaners use the 12-volt platform for service, installation and confined-space cleanup.",
+      "buyerRelevance": "Confirm bare-tool versus kit configuration, battery requirement, filtration and regional electrical standards."
+    },
+    {
+      "name": "M18 wet-dry vacuums and dust extractors",
+      "positioning": "Higher-capacity cleaners and dust-management systems serve jobsite and trade-specific applications.",
+      "buyerRelevance": "Match dust class, filter, hose, tool activation, runtime and compliance to the application."
+    },
+    {
+      "name": "Dust-management accessories",
+      "positioning": "Extractors, shrouds, adapters and drilling solutions connect cleaning to Milwaukee's professional tool ecosystem.",
+      "buyerRelevance": "System compatibility depends on the exact tool, extractor, hose diameter and regional certification."
+    },
+    {
+      "name": "M12, M18, MX FUEL and PACKOUT systems",
+      "positioning": "The wider cordless and storage platforms support Milwaukee's end-to-end professional jobsite strategy.",
+      "buyerRelevance": "Shared branding does not make every pack, charger, attachment or market SKU interchangeable."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "TTI's annual report lists Milwaukee Electric Tool Corporation as a wholly owned principal subsidiary engaged in trading and manufacturing power equipment products.",
+      "scope": "Group legal-entity disclosure",
+      "buyerCheck": "Use the product declaration and label to determine the responsible Milwaukee entity for the exact model."
+    },
+    {
+      "evidence": "TTI operates manufacturing, engineering and sourcing locations across North America, Asia and Europe.",
+      "scope": "Parent-group network",
+      "buyerCheck": "Do not infer product origin from Milwaukee's Wisconsin headquarters."
+    },
+    {
+      "evidence": "Milwaukee's product pages and manuals identify model-specific configurations, compliance and service information.",
+      "scope": "Exact product documentation",
+      "buyerCheck": "Match the model suffix, voltage, destination market and production date before ordering."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Milwaukee positions itself for professional trades and sells through authorized tool distributors and retail partners.",
+      "scope": "Professional and retail channels",
+      "buyerCheck": "Use an authorized partner to preserve authenticity, warranty and service eligibility."
+    },
+    {
+      "evidence": "The official site separates product information, authorized buying routes, service centers and warranty registration.",
+      "scope": "U.S. channel and service system",
+      "buyerCheck": "Confirm the destination market's authorized distributor and service network."
+    },
+    {
+      "evidence": "TTI describes Milwaukee as a global professional platform with R&D headquartered in Brookfield, Wisconsin.",
+      "scope": "Group-level positioning",
+      "buyerCheck": "Verify the contracting entity, importer and warranty provider for each country."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Milwaukee's cleaning advantage comes from professional user access, dense M12 and M18 ecosystems and integration with jobsite dust-management workflows. Its risk for buyers is configuration complexity: tool-only packs, battery systems, compliance variants and distributor authorization all require model-level control.",
+    "competitorSlugs": ["dewalt", "ryobi", "greenworks"]
+  },
+  "developments": [
+    {
+      "date": "2026-03",
+      "title": "TTI reports Milwaukee as its dominant growth platform",
+      "summary": "TTI's 2025 investor materials reported Milwaukee at roughly 70% of group revenue and identified continued professional-platform growth.",
+      "sourceIds": ["tti-2025-presentation"]
+    },
+    {
+      "date": "2005",
+      "title": "TTI acquires Milwaukee",
+      "summary": "TTI's official history records the acquisition of the Milwaukee brand and business.",
+      "sourceIds": ["tti-history"]
+    },
+    {
+      "date": "1924",
+      "title": "Milwaukee Electric Tool Corporation is founded",
+      "summary": "Milwaukee's company story traces the present business to its 1924 foundation.",
+      "sourceIds": ["milwaukee-story"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tti-2025-presentation",
+      "title": "TTI 2025 Annual Results Analyst Presentation",
+      "publisher": "Techtronic Industries",
+      "url": "https://www.ttigroup.com/sites/default/files/2026-03/AR25_Analyst_Presentation.pdf",
+      "publishedAt": "2026-03",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "tti-history",
+      "title": "TTI Company History",
+      "publisher": "Techtronic Industries",
+      "url": "https://www.ttigroup.com/company/history",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "milwaukee-story",
+      "title": "The Milwaukee Story",
+      "publisher": "Milwaukee Tool",
+      "url": "https://www.milwaukeetool.com/Company/Milwaukee-Story",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "milwaukee-vacuum",
+      "title": "M12 FUEL 1.6 Gallon Wet/Dry Vacuum",
+      "publisher": "Milwaukee Tool",
+      "url": "https://www.milwaukeetool.com/products/details/m12-fuel-1-6-gallon-wet-dry-vacuum/0960-20",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T21:40:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T21:40:00+08:00"
+}

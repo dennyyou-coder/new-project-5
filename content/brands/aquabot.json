@@ -1,0 +1,161 @@
+{
+  "status": "published",
+  "slug": "aquabot",
+  "name": "Aquabot",
+  "aliases": ["AquaBot", "Aquabot by Aquatron", "Aquabot Pro"],
+  "legalName": "Aquatron Robotic Technology Ltd.",
+  "legalEntityNote": "Aquatron identifies itself as Aquabot's brand owner and Israeli manufacturer. BWT is the parent group, while Steward Group LLC and other regional companies can serve as sellers, importers or warranty interfaces.",
+  "officialWebsite": "https://www.aquabot.co.il/eng",
+  "headline": "Aquabot ownership, Israeli manufacturing and BWT pool-robotics network",
+  "description": "A source-backed profile of Aquabot's Aquatron brand ownership and manufacturing, BWT parentage, Fluidra history, product range and regional responsibility.",
+  "metaDescription": "Aquabot profile: Aquatron manufacturing, BWT ownership, Fluidra history, pool robots, channels, warranty and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Aquabot, Aquatron, BWT or Fluidra. Current corporate and manufacturing evidence must be matched to the exact model and market.",
+  "headquarters": "Alon Tavor Industrial Zone, near Afula, Israel",
+  "founded": "More than 25 years of Aquatron robotic-pool-cleaner experience; exact founding year not stated in the reviewed sources",
+  "heroImage": "/images/brands/aquabot/hero-aquabot-cordless-pool-cleaner.webp",
+  "heroImageAlt": "Aquabot cordless robotic pool cleaner",
+  "logoImage": "/images/brands/aquabot/logo.webp",
+  "logoImageAlt": "Aquabot logo",
+  "logoSourceUrl": "https://www.aquabot.co.il/eng",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/aquabot-bwt-aquatron-ownership-manufacturing-cover.webp",
+      "alt": "Aquabot, Aquatron and BWT ownership and manufacturing structure",
+      "caption": "Aquatron owns and manufactures the Aquabot brand; BWT is the parent group and Fluidra is the former owner."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/aquabot-bwt-regional-responsibility-oem-check.webp",
+      "alt": "Aquabot regional seller, importer, warranty and OEM responsibility map",
+      "caption": "The manufacturer, contract seller, importer and warranty provider can be different parties in an Aquabot transaction."
+    }
+  ],
+  "ownership": {
+    "summary": "Aquatron Robotic Technology Ltd. says it owns the Aquabot brand and manufactures robotic pool cleaners in Israel. BWT Group acquired Aquatron in 2019. Fluidra was the former owner from 2011 until the 2019 divestiture and no longer owns Aquatron.",
+    "parentCompany": "BWT Holding GmbH"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Aquabot cordless residential robots",
+      "positioning": "Current Aquabot products use cordless operation, ultrasonic mapping, app control and self-parking features.",
+      "buyerRelevance": "Confirm model generation, battery, charger, app region, cleaning modes and local warranty."
+    },
+    {
+      "name": "Aquabot Pro residential robots",
+      "positioning": "Higher-specification residential models extend runtime, navigation and feature depth.",
+      "buyerRelevance": "Compare product suffix, pool-size limit, filtration, brushes and service support."
+    },
+    {
+      "name": "Commercial robotic pool cleaners",
+      "positioning": "Aquatron platforms cover public, semi-Olympic and Olympic-pool applications under Aquabot and other lines.",
+      "buyerRelevance": "Commercial buyers need duty-cycle, cable, filtration, trolley, repair and warranty checks."
+    },
+    {
+      "name": "OEM robotic pool-cleaner platforms",
+      "positioning": "Aquatron also develops and produces robots for other brands through an OEM model.",
+      "buyerRelevance": "An Aquabot distribution right is not the same as an OEM manufacturing agreement or private-label authorization."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Aquatron's official site says its robotic pool cleaners are manufactured by Aquatron Robotic Technology Ltd. in Israel.",
+      "scope": "Current manufacturer statement",
+      "buyerCheck": "Verify the exact product label and origin record, particularly where an Aquabot name appears on a third-party listing."
+    },
+    {
+      "evidence": "BWT Robotics describes the former Aquatron business as an OEM that designs, develops and produces robotic pool cleaners.",
+      "scope": "Parent-group OEM description",
+      "buyerCheck": "Separate Aquabot-branded products from other brands made on Aquatron platforms."
+    },
+    {
+      "evidence": "The European Commission's 2019 purchaser approval described the divested Aquatron business and manufacturing assets transferred from Fluidra to BWT.",
+      "scope": "Regulatory transaction evidence",
+      "buyerCheck": "Do not use the pre-2019 Fluidra structure as a current ownership map."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Aquatron says it serves partners in more than 50 countries through branded and OEM relationships.",
+      "scope": "Company-reported international reach",
+      "buyerCheck": "Confirm the authorized distributor and territorial rights for the destination market."
+    },
+    {
+      "evidence": "The U.S. Aquabot interface names Steward Group LLC DBA Aquabot, while BWT U.S. materials can use BWT Pool Products US.",
+      "scope": "U.S. sales and website entities",
+      "buyerCheck": "Match the invoice seller, importer and warranty company to the exact purchase."
+    },
+    {
+      "evidence": "BWT and Aquatron provide product registration, service-center and warranty routes for covered pool cleaners.",
+      "scope": "Regional after-sales network",
+      "buyerCheck": "Confirm seller authorization, proof-of-purchase rules, territory and residential or commercial coverage."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Aquabot combines long-standing Israeli robotic-pool-cleaner engineering with BWT's water-treatment and channel platform, plus a meaningful OEM capability. Its key market challenge is brand architecture: Aquabot, BWT Robotics, Aquatron and regional sellers must be explained clearly against better-known Maytronics and Fluidra portfolios.",
+    "competitorSlugs": ["maytronics", "polaris", "hayward"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "BWT Robotics presents a current cordless Aquabot line",
+      "summary": "The current product page describes cordless Aquabot models with ultrasonic mapping, app control and self-parking.",
+      "sourceIds": ["bwt-aquabot-product"]
+    },
+    {
+      "date": "2019-01",
+      "title": "BWT acquires Aquatron",
+      "summary": "BWT acquired the complete Aquatron business after European Commission purchaser approval and Fluidra's divestiture.",
+      "sourceIds": ["bwt-history", "ec-approval"]
+    },
+    {
+      "date": "2011",
+      "title": "Fluidra acquires Aqua Products and Aquatron",
+      "summary": "Fluidra's historical acquisition established the ownership chain that ended with the 2019 sale to BWT.",
+      "sourceIds": ["fluidra-2011"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "aquatron-about",
+      "title": "About Aquatron Robotic Technology",
+      "publisher": "Aquatron Robotic Technology Ltd.",
+      "url": "https://www.aquabot.co.il/eng/About",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "bwt-history",
+      "title": "BWT Company History",
+      "publisher": "BWT",
+      "url": "https://www.bwt.com/en-us/discover-bwt/about-bwt/company/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "ec-approval",
+      "title": "M.8738 Fluidra / Zodiac purchaser approval decision",
+      "publisher": "European Commission",
+      "url": "https://ec.europa.eu/competition/mergers/cases/decisions/m8738_1421_3.pdf",
+      "publishedAt": "2019-01",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "fluidra-2011",
+      "title": "Fluidra acquires the Aqua Products group and Aquatron",
+      "publisher": "Fluidra",
+      "url": "https://www.fluidra.com/press-room/press-release/fluidra-acquires-the-aqua-products-group-and-makes-a-strong-appearance-in-the-us-market/",
+      "publishedAt": "2011",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "bwt-aquabot-product",
+      "title": "Aquabot Cordless Robotic Pool Cleaner",
+      "publisher": "BWT Robotics",
+      "url": "https://www.bwt-robotics.com/en/products/residential-pool-cleaners/cordless/aquabot/",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T21:55:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T21:55:00+08:00"
+}
