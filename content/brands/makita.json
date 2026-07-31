@@ -1,0 +1,58 @@
+{
+  "status":"published",
+  "slug":"makita",
+  "name":"Makita",
+  "aliases":["Makita Corporation","Makita Tools","Makita U.S.A."],
+  "legalName":"Makita Corporation",
+  "legalEntityNote":"Makita Corporation is the Japanese listed parent. Makita U.S.A., Makita Corporation of America, regional subsidiaries, distributors and factories may each have different responsibilities for a product, contract and warranty.",
+  "officialWebsite":"https://www.makita.co.jp/",
+  "headline":"Makita ownership, cordless cleaning equipment and professional distribution network",
+  "description":"A source-backed profile of Makita Corporation's listed-company structure, LXT and XGT cleaning equipment, global manufacturing network and professional-channel checks.",
+  "metaDescription":"Makita profile: ownership, LXT and XGT vacuums and dust extraction, manufacturing, distributors and professional buyer checks.",
+  "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with Makita. Corporate network statements do not establish the responsible factory or seller for every product SKU.",
+  "headquarters":"Anjo, Aichi, Japan",
+  "founded":"1915",
+  "heroImage":"/images/brands/makita/hero-makita-cordless-professional-platform.webp",
+  "heroImageAlt":"Makita cordless professional-tool platform visual",
+  "logoImage":"/images/brands/makita/logo.webp",
+  "logoImageAlt":"Makita logo",
+  "logoSourceUrl":"https://makitatools.com/",
+  "contentVisuals":[
+    {"placement":"ownership","src":"/images/blog/european-tool-brands-battery-alliances-image-002-en-v2.webp","alt":"Professional tool battery platform landscape","caption":"Makita's battery platforms compete in a market where tool families and regional availability need separate verification."},
+    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-cover.jpg","alt":"Global power-tool brand portfolio visual","caption":"The professional tool category extends beyond drills into cleaning, dust management, outdoor equipment and storage workflows."},
+    {"placement":"operations","src":"/images/insights/power-tools-new-cycle-cordless-specialization-cover.jpg","alt":"Cordless power-tool specialization visual","caption":"Buyer value comes from platform fit, accessory compatibility and service support rather than brand familiarity alone."}
+  ],
+  "ownership":{"summary":"Makita Corporation is a Japanese public company. Its corporate materials trace the business to 1915 and describe a global network of manufacturing and assembly plants, regional operations and professional distribution. Makita U.S.A. and other local companies should not be mistaken for the Japanese parent or for each other.","parentCompany":"Makita Corporation"},
+  "leadership":[{"name":"Mosaburo Makita","role":"Founder","context":"Makita's official company history dates the business to Mosaburo Makita's 1915 electric-motor sales and repair company."}],
+  "productPortfolio":[
+    {"name":"LXT 18V and 36V cordless tools","positioning":"A broad cordless ecosystem supporting tools, outdoor equipment and cleaning applications.","buyerRelevance":"Confirm battery format, charge system, kit composition and regional electrical requirements."},
+    {"name":"XGT 40V and 80V max systems","positioning":"Higher-output cordless platform for professional jobsite and outdoor applications.","buyerRelevance":"Do not assume LXT and XGT interchangeability; verify tool, battery and charger compatibility."},
+    {"name":"Cordless vacuums and dust management","positioning":"Portable vacuums, extractors and dust-control accessories integrated into professional workflows.","buyerRelevance":"Match dust class, hose adapters, tool activation and applicable safety requirements."},
+    {"name":"Outdoor equipment and professional accessories","positioning":"Adjacent equipment extends the platform into landscaping, construction and facilities use.","buyerRelevance":"Validate dealer competence, service parts and local product approvals for the application."}
+  ],
+  "manufacturingSupplyChain":[
+    {"evidence":"Makita U.S.A. says the group operates ten manufacturing and assembly plants in eight countries.","scope":"Company-reported global network","buyerCheck":"Confirm origin, responsible manufacturer and compliance documentation for the exact SKU."},
+    {"evidence":"Makita's U.S. materials distinguish Makita U.S.A. distribution operations from Makita Corporation of America manufacturing and assembly in Georgia.","scope":"U.S. entity boundary","buyerCheck":"Identify the contracting, importing and warranty entity for the destination market."},
+    {"evidence":"The Makita Report provides group-level corporate disclosure but does not assign all model families to a common factory.","scope":"Listed-group reporting","buyerCheck":"Use current product labels, declarations and shipment records for origin claims."}
+  ],
+  "marketsChannels":[
+    {"evidence":"Makita says its U.S. network includes warehouse and distribution facilities plus innovation training centers for contractors and dealers.","scope":"U.S. channel system","buyerCheck":"Confirm authorized dealer status, service access and the relevant product program."},
+    {"evidence":"Makita operates as a global brand in more than 40 countries.","scope":"Company-reported reach","buyerCheck":"Check country-specific availability, voltage and warranty before ordering."},
+    {"evidence":"Professional distribution is supported by regional subsidiaries and dealer education.","scope":"Professional market positioning","buyerCheck":"Specify local sales, service and parts support in tender requirements."}
+  ],
+  "competitivePosition":{"summary":"World Clean Biz assessment: Makita's advantage is a large cordless platform combined with professional distribution and a global manufacturing footprint. For cleaning buyers, that becomes valuable where vacuums and extractors have to fit an installed battery ecosystem. The buyer-side discipline is configuration control: LXT, XGT, accessory and local-service choices are not interchangeable.","competitorSlugs":["milwaukee","dewalt","ryobi","black-decker"]},
+  "developments":[
+    {"date":"2025-07-30","title":"Makita publishes its 2025 integrated report","summary":"Makita's annual integrated report sets out group information and long-term value-creation disclosure.","sourceIds":["makita-report-2025"]},
+    {"date":"2005","title":"Makita expands its 18V lithium-ion platform","summary":"Makita's U.S. history describes the long-running expansion of its 18V cordless category.","sourceIds":["makita-about"]},
+    {"date":"1915","title":"Makita is founded as an electric-motor business","summary":"Makita traces its origin to a 1915 electric-motor sales and repair company.","sourceIds":["makita-about"]}
+  ],
+  "sources":[
+    {"id":"makita-report-2025","title":"Makita Report 2025","publisher":"Makita Corporation","url":"https://www.makita.co.jp/ir/library/library_05.html","publishedAt":"2025-07-30","accessedAt":"2026-07-31"},
+    {"id":"makita-about","title":"About Us","publisher":"Makita U.S.A.","url":"https://makitatools.com/company/about-us","accessedAt":"2026-07-31"},
+    {"id":"makita-vacuum","title":"Makita Expands 18V Compact Lithium-Ion Line-Up with New Cordless Vacuum","publisher":"Makita U.S.A.","url":"https://makitatools.com/company/press-releases/2009/makita-expands-18v-compact-lithium-ion-line-up-with-new-cordless-vacuum","publishedAt":"2009-10-15","accessedAt":"2026-07-31"},
+    {"id":"makita-home","title":"Makita USA","publisher":"Makita U.S.A.","url":"https://makitatools.com/","accessedAt":"2026-07-31"}
+  ],
+  "publishedAt":"2026-07-31T22:00:00+08:00",
+  "lastVerified":"2026-07-31",
+  "lastModified":"2026-07-31T22:00:00+08:00"
+}

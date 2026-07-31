@@ -1,0 +1,58 @@
+{
+  "status":"published",
+  "slug":"fluidra",
+  "name":"Fluidra",
+  "aliases":["Fluidra Group","Fluidra S.A.","Zodiac Fluidra"],
+  "legalName":"Fluidra, S.A.",
+  "legalEntityNote":"Fluidra, S.A. is the listed group parent. Its pool brands, regional subsidiaries, distributors and the entities named on product declarations can have different responsibilities for a customer, market or SKU.",
+  "officialWebsite":"https://www.fluidra.com/",
+  "headline":"Fluidra ownership, pool-brand portfolio and channel responsibility",
+  "description":"A source-backed profile of Fluidra's listed-group structure, AstralPool, Zodiac, Jandy and Polaris brand portfolio, pool-equipment operations and buyer checks.",
+  "metaDescription":"Fluidra profile: ownership, AstralPool, Zodiac, Jandy and Polaris brands, pool equipment, manufacturing, channels and buyer checks.",
+  "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with Fluidra or its brands. Group reporting, brand portfolio statements and model-level product responsibility are identified separately.",
+  "headquarters":"Sant Cugat del Vallès, Barcelona, Spain",
+  "founded":"1969; listed group created through the 2018 Fluidra–Zodiac merger",
+  "heroImage":"/images/brands/fluidra/hero-fluidra-pool-brand-portfolio.webp",
+  "heroImageAlt":"Fluidra pool and wellness brand portfolio map",
+  "logoImage":"/images/brands/fluidra/logo.webp",
+  "logoImageAlt":"Fluidra logo",
+  "logoSourceUrl":"https://www.fluidra.com/",
+  "contentVisuals":[
+    {"placement":"ownership","src":"/images/blog/fluidra-ownership-responsibility-check.webp","alt":"Fluidra ownership and regional responsibility diagram","caption":"A group brand does not by itself identify the seller, importer, warranty entity or factory for a specific pool product."},
+    {"placement":"portfolio","src":"/images/blog/fluidra-brand-portfolio-map.webp","alt":"Fluidra pool and wellness brand portfolio","caption":"Fluidra's leading brands serve different pool and wellness roles and regional markets."},
+    {"placement":"operations","src":"/images/blog/hayward-pentair-fluidra-buyer-responsibility-check.webp","alt":"Pool-equipment buyer responsibility comparison","caption":"The buyer check is to validate the local contracting entity, product serial range and service route."}
+  ],
+  "ownership":{"summary":"Fluidra, S.A. is a publicly listed pool and wellness group. Its corporate communications identify a portfolio that includes AstralPool, Zodiac, Jandy, Polaris, Gre, Cepex and CTXPro. Each mark should be distinguished from the group parent and the local seller or responsible entity for a particular product.","parentCompany":"Fluidra, S.A."},
+  "leadership":[{"name":"Eloi Planes","role":"Executive Chairman","context":"Fluidra's corporate materials identify Eloi Planes as Executive Chairman; current management roles should be checked against the latest annual report for transaction use."}],
+  "productPortfolio":[
+    {"name":"Pool circulation, filtration and water treatment","positioning":"Core residential and commercial pool equipment across Fluidra brand and regional portfolios.","buyerRelevance":"Specify the approved brand, voltage, hydraulic specification and local technical support at quotation stage."},
+    {"name":"Pool automation and connected systems","positioning":"Controls, monitoring and energy-management products under brands including Jandy and Zodiac.","buyerRelevance":"Confirm local app availability, installer support and compatibility with the existing pool pad."},
+    {"name":"Polaris and other pool cleaners","positioning":"Cleaning equipment spanning robotic, pressure-side and adjacent pool-maintenance formats.","buyerRelevance":"Match the cleaner type, pool system requirements and local parts/warranty route."},
+    {"name":"Commercial pool and wellness solutions","positioning":"Project-led equipment and service solutions for larger pools and wellness facilities.","buyerRelevance":"Validate engineering responsibility, tender scope and commissioning support by country."}
+  ],
+  "manufacturingSupplyChain":[
+    {"evidence":"Fluidra reports a global pool and wellness operation with manufacturing sites, sales branches and brands across multiple markets.","scope":"Group reporting","buyerCheck":"Do not turn a group footprint into a universal origin claim for a SKU."},
+    {"evidence":"Fluidra says it manufactures and/or distributes components used for residential and commercial pools.","scope":"Company statement","buyerCheck":"Confirm whether the exact product is manufactured, distributed or serviced by the local Fluidra entity."},
+    {"evidence":"Brand portfolio descriptions identify commercial families but not one factory or importer for every product.","scope":"Brand-level disclosure","buyerCheck":"Collect the declaration, label and shipment records for the contracted model."}
+  ],
+  "marketsChannels":[
+    {"evidence":"Fluidra reports sales branches and a network of group brands across more than 47 countries.","scope":"Company-reported global reach","buyerCheck":"Confirm the local legal entity and distributor before committing to a channel program."},
+    {"evidence":"The group supports residential, commercial pool and wellness buyers through brand-specific offerings.","scope":"Segment structure","buyerCheck":"Verify whether the relevant line is available to consumer retail, trade distribution or a project channel."},
+    {"evidence":"Regional brand availability varies across AstralPool, Zodiac, Jandy, Polaris and other marks.","scope":"Brand and market boundary","buyerCheck":"Check country catalogue, warranty and service documentation rather than relying on global branding."}
+  ],
+  "competitivePosition":{"summary":"World Clean Biz assessment: Fluidra's advantage is breadth: components, controls, cleaners and professional project access can sit under one listed group. That breadth increases the need for buyer discipline. Brand familiarity does not answer who is contracting, manufacturing, importing, installing or honouring warranty for a specific pool system.","competitorSlugs":["hayward","maytronics","polaris","aquabot"]},
+  "developments":[
+    {"date":"2026-03","title":"Fluidra publishes its 2025 integrated report","summary":"Fluidra's annual reporting sets out group results, global operations and portfolio context.","sourceIds":["fluidra-annual-2025"]},
+    {"date":"2025-12-23","title":"Fluidra completes initial Aiper investment","summary":"Fluidra announced completion of its initial 27% investment in Aiper Inc.; the investment does not make every Aiper SKU a Fluidra product.","sourceIds":["fluidra-aiper"]},
+    {"date":"2018","title":"Fluidra and Zodiac combination creates the current group platform","summary":"The merger established the listed group structure behind the expanded brand portfolio.","sourceIds":["fluidra-annual-2025"]}
+  ],
+  "sources":[
+    {"id":"fluidra-annual-2025","title":"Annual Integrated Report 2025","publisher":"Fluidra","url":"https://www.fluidra.com/investors/annual-integrated-report/","publishedAt":"2026-03","accessedAt":"2026-07-31"},
+    {"id":"fluidra-brands","title":"Fluidra Brands and Business","publisher":"Fluidra","url":"https://www.fluidra.com/","accessedAt":"2026-07-31"},
+    {"id":"fluidra-aiper","title":"Fluidra completes an initial 27% investment in Aiper","publisher":"Fluidra","url":"https://www.fluidra.com/press-room/press-release/fluidra-completes-an-initial-27-investment-in-aiper/","publishedAt":"2025-12-23","accessedAt":"2026-07-31"},
+    {"id":"fluidra-portfolio","title":"Fluidra Brand Portfolio","publisher":"Fluidra","url":"https://www.fluidra.com/brands/","accessedAt":"2026-07-31"}
+  ],
+  "publishedAt":"2026-07-31T22:00:00+08:00",
+  "lastVerified":"2026-07-31",
+  "lastModified":"2026-07-31T22:00:00+08:00"
+}

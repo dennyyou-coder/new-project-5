@@ -1,0 +1,59 @@
+{
+  "status": "published",
+  "slug": "dirt-devil",
+  "name": "Dirt Devil",
+  "aliases": ["Dirt Devil", "Royal Appliance", "TTI Floor Care North America"],
+  "legalName": "Royal Appliance Mfg. Co. d/b/a TTI Floor Care North America",
+  "legalEntityNote": "Dirt Devil's U.S. consumer business identifies TTI Floor Care North America as its corporate home. The contracting entity, seller, importer and warranty provider must be verified for the exact market and SKU.",
+  "officialWebsite": "https://dirtdevil.com/",
+  "headline": "Dirt Devil ownership, cordless vacuum portfolio and TTI Floor Care position",
+  "description": "A source-backed profile of Dirt Devil's position within TTI Floor Care North America, its cordless and handheld floorcare portfolio, and the buyer checks needed for supply and support.",
+  "metaDescription": "Dirt Devil brand profile: TTI Floor Care ownership, cordless and handheld vacuums, product range, channels and supplier checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dirt Devil, Royal Appliance, TTI Floor Care North America or Techtronic Industries. Group disclosures and brand statements are separated from model-level supplier evidence.",
+  "headquarters": "Charlotte, North Carolina, United States (TTI Floor Care North America)",
+  "founded": "1905 Royal Appliance heritage; Dirt Devil Hand Vac introduced in 1984",
+  "heroImage": "/images/brands/dirt-devil/hero-tti-floorcare-portfolio.webp",
+  "heroImageAlt": "World Clean Biz graphic locating Dirt Devil within the TTI floorcare brand portfolio",
+  "logoImage": "/images/brands/dirt-devil/logo.webp",
+  "logoImageAlt": "Dirt Devil logo",
+  "logoSourceUrl": "https://dirtdevil.com/pages/about",
+  "contentVisuals": [
+    {"placement":"ownership","src":"/images/blog/tti-owned-licensed-regional-brands-map.webp","alt":"Map distinguishing TTI-owned floorcare brands from licensed and regional brands","caption":"The group map distinguishes Dirt Devil's owned-brand position from TTI's licensed trademarks and Hoover's regional ownership boundary."},
+    {"placement":"portfolio","src":"/images/articles/tti-cleaning-appliance-strategy/02.png","alt":"World Clean Biz graphic showing Dirt Devil alongside Hoover, Milwaukee and Ryobi in the TTI portfolio","caption":"This portfolio visual places Dirt Devil in the wider product-development and channel system that informs its consumer-floorcare offer."},
+    {"placement":"operations","src":"/images/blog/who-owns-tti-cover.webp","alt":"World Clean Biz ownership graphic about Techtronic Industries and its brand portfolio","caption":"The ownership analysis explains why the brand on the product, the operating entity and the factory can be different parties."}
+  ],
+  "ownership": {"summary":"Dirt Devil says it is part of TTI Floor Care North America. TTI's 2025 annual report includes Dirt Devil in its Floorcare & Cleaning portfolio and identifies Royal Appliance Mfg. Co. in its subsidiary list. TTI's historical report records the 2003 acquisition of Royal Appliance, including the Dirt Devil line. These records establish ownership, but not the seller or factory for every current product.","parentCompany":"Techtronic Industries Company Limited through TTI Floor Care North America"},
+  "leadership": [],
+  "productPortfolio": [
+    {"name":"Cordless standing and stick vacuums","positioning":"Lightweight cordless floorcare including a self-standing, convertible stick-vac format.","buyerRelevance":"Verify voltage, runtime, included tools and regional battery or charger requirements by model."},
+    {"name":"Cordless hand vacuums","positioning":"Compact 8V, 12V and 16V lithium-ion hand-vac models for quick pickup, vehicle and wet-dry use cases.","buyerRelevance":"Check battery capacity, wet-use limits, charging stand contents and replacement-filter availability."},
+    {"name":"Upright and canister vacuums","positioning":"Multi-surface, upright and compact canister formats for broader residential floorcare.","buyerRelevance":"Confirm brush-roll, filtration, cord, bag and spare-parts specifications on the contracted SKU."},
+    {"name":"Carpet, steam and manual cleaning","positioning":"Adjacent home-cleaning categories including portable carpet, steam and manual-cleaning tools.","buyerRelevance":"Treat these as separate service and consumables systems rather than extensions of the vacuum warranty."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence":"TTI's 2025 annual report identifies Royal Appliance Mfg. Co. as a wholly owned principal subsidiary engaged in floorcare trading and manufacturing.","scope":"Group legal-entity disclosure","buyerCheck":"Confirm whether Royal Appliance, another TTI entity or a named factory is the contracted manufacturer and seller."},
+    {"evidence":"Dirt Devil's official site identifies the brand as part of TTI Floor Care North America and describes Royal, now TTI, as making floorcare products for major U.S. retailers.","scope":"U.S. brand and channel statement","buyerCheck":"Verify the authorized U.S. seller, warranty program and serial-range eligibility for the specific product."},
+    {"evidence":"TTI reports a global manufacturing and sourcing network, but that parent-level disclosure is not a factory declaration for every Dirt Devil model.","scope":"Parent-group operating context","buyerCheck":"Match origin, manufacturer, compliance declaration and shipment documentation to the exact SKU."}
+  ],
+  "marketsChannels": [
+    {"evidence":"Dirt Devil sells through its U.S. site and says Royal products are sold through major retailers across the country.","scope":"U.S. direct and retail routes","buyerCheck":"Confirm seller authorization, current stock, returns and warranty coverage for the target account."},
+    {"evidence":"Its product and manuals pages list individual models across cordless, upright, canister, spot-cleaning and steam categories.","scope":"Model-level U.S. product support","buyerCheck":"Use the exact model number when checking manuals, parts, safety documentation and service support."},
+    {"evidence":"TTI's annual report describes shared Floorcare & Cleaning management across Hoover, Dirt Devil, Oreck and Vax.","scope":"Group operating structure","buyerCheck":"Do not infer a common local distributor, warranty route or factory from the shared group structure alone."}
+  ],
+  "competitivePosition": {"summary":"World Clean Biz assessment: Dirt Devil occupies TTI's value-oriented consumer-floorcare portfolio, where compact cordless and handheld formats can support high-volume retail placement. The strategic advantage is access to a broader TTI product, manufacturing and channel system. The buyer-side constraint is the same as across the group: verify the exact legal entity, retail authorization, warranty and manufacturer instead of treating portfolio membership as a complete supply-chain answer.","competitorSlugs":["hoover","vax","oreck","bissell"]},
+  "developments": [
+    {"date":"2026-03-04","title":"TTI reports its 2025 Floorcare & Cleaning portfolio","summary":"TTI's annual report names Hoover, Dirt Devil, Oreck and Vax within Floorcare & Cleaning and describes a consolidated operating organization.","sourceIds":["tti-2025-annual"]},
+    {"date":"2003","title":"TTI acquires Royal Appliance and the Dirt Devil line","summary":"TTI's historical annual report records its acquisition of Royal Appliance, including the Dirt Devil product line.","sourceIds":["tti-2004-annual"]},
+    {"date":"1984","title":"Royal introduces the Dirt Devil Hand Vac","summary":"Dirt Devil's company history dates the original Dirt Devil Hand Vac to 1984.","sourceIds":["dirt-devil-about"]}
+  ],
+  "sources": [
+    {"id":"dirt-devil-about","title":"About Us","publisher":"Dirt Devil","url":"https://dirtdevil.com/pages/about","accessedAt":"2026-07-31"},
+    {"id":"dirt-devil-cordless-standing","title":"Cordless Standing Stick Vacuum","publisher":"Dirt Devil","url":"https://dirtdevil.com/products/cordless-standing-stick-vac-1","accessedAt":"2026-07-31"},
+    {"id":"dirt-devil-manuals","title":"Instructional Manuals","publisher":"Dirt Devil","url":"https://dirtdevil.com/pages/instructional-manuals","accessedAt":"2026-07-31"},
+    {"id":"tti-2025-annual","title":"Annual Report 2025","publisher":"Techtronic Industries","url":"https://www.ttigroup.com/sites/default/files/2026-03/ar2025.pdf","publishedAt":"2026-03-04","accessedAt":"2026-07-31"},
+    {"id":"tti-2004-annual","title":"Annual Report 2004","publisher":"Techtronic Industries","url":"https://www.ttigroup.com/sites/default/files/2022-09/04ar_Print.pdf","publishedAt":"2005","accessedAt":"2026-07-31"}
+  ],
+  "publishedAt": "2026-07-31T22:00:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T22:00:00+08:00"
+}

@@ -1,0 +1,58 @@
+{
+  "status":"published",
+  "slug":"pentair",
+  "name":"Pentair",
+  "aliases":["Pentair Pool","Pentair plc","Pentair Pool and Spa"],
+  "legalName":"Pentair plc",
+  "legalEntityNote":"Pentair plc is the public parent. Pentair Pool, Kreepy Krauly, Sta-Rite, local distributors and the entity on a declaration or warranty can have different responsibilities for the exact product and market.",
+  "officialWebsite":"https://www.pentair.com/",
+  "headline":"Pentair ownership, pool-equipment portfolio and professional channel strategy",
+  "description":"A source-backed profile of Pentair's public-company structure, pool equipment and cleaner portfolio, distribution model and buyer-side responsibility checks.",
+  "metaDescription":"Pentair profile: public-company ownership, pool equipment, robotic and suction cleaners, distribution, warranties and sourcing checks.",
+  "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with Pentair or its brands. Product, channel and manufacturer details must be verified by exact market and SKU.",
+  "headquarters":"Golden Valley, Minnesota, United States (management office)",
+  "founded":"1966",
+  "heroImage":"/images/brands/pentair/hero-pentair-pool-platforms.webp",
+  "heroImageAlt":"Pentair, Hayward and Fluidra pool-equipment platform comparison",
+  "logoImage":"/images/brands/pentair/logo.webp",
+  "logoImageAlt":"Pentair logo",
+  "logoSourceUrl":"https://www.pentair.com/",
+  "contentVisuals":[
+    {"placement":"ownership","src":"/images/blog/hayward-pentair-fluidra-buyer-responsibility-check.webp","alt":"Pentair, Hayward and Fluidra buyer responsibility check","caption":"The comparison separates brand claims from the local dealer, warranty and product-documentation checks."},
+    {"placement":"portfolio","src":"/images/blog/hayward-pentair-fluidra-platform-comparison.webp","alt":"Pentair and competing pool-equipment platforms","caption":"The pool equipment comparison explains why a cleaner should be evaluated as part of its pool-system compatibility."},
+    {"placement":"operations","src":"/images/blog/robotic-suction-pressure-pool-cleaner-systems.webp","alt":"Robotic, suction and pressure pool-cleaner system comparison","caption":"Pentair buyers must select among robotic, suction-side and pressure-side system dependencies rather than comparing brands alone."}
+  ],
+  "ownership":{"summary":"Pentair plc is a public company. Its 2025 annual report describes the Pool segment as designing, manufacturing and selling residential and commercial pool equipment and identifies Pentair Pool, Kreepy Krauly, Pleatco and Sta-Rite as primary Pool brands. The precise responsible entity remains product and country specific.","parentCompany":"Pentair plc"},
+  "leadership":[{"name":"John L. Stauch","role":"President and Chief Executive Officer","context":"Pentair's public reporting identifies John L. Stauch as President and CEO; buyers should use current investor reporting for transaction-time confirmation."}],
+  "productPortfolio":[
+    {"name":"Pumps, filters, heaters and water treatment","positioning":"Core pool-pad equipment for residential and commercial installations.","buyerRelevance":"Confirm hydraulics, voltage, local approval and installer support before combining equipment."},
+    {"name":"Automation and lighting","positioning":"Connected controls, pool monitoring and lighting within the Pentair pool platform.","buyerRelevance":"Check controller compatibility, app support and commissioning ownership."},
+    {"name":"Robotic, suction-side and pressure-side cleaners","positioning":"Automatic cleaners for different pool designs and system dependencies.","buyerRelevance":"Match pool type, booster or pump requirements, hose/cord configuration and service route."},
+    {"name":"Kreepy Krauly, Pleatco and Sta-Rite product families","positioning":"Associated pool brands and components within the wider Pentair portfolio.","buyerRelevance":"Specify the exact brand, replacement-part family and regional catalogue when ordering."}
+  ],
+  "manufacturingSupplyChain":[
+    {"evidence":"Pentair's 2025 annual report says the Pool segment designs, manufactures and sells a complete line of residential and commercial pool equipment.","scope":"Segment-level disclosure","buyerCheck":"Confirm the actual manufacturer, origin and certification for the specific product line."},
+    {"evidence":"The annual report identifies Pool segment brands but does not assign a common factory to every brand or cleaner model.","scope":"Portfolio disclosure","buyerCheck":"Do not generalize factory, country of origin or warranty from the Pentair name alone."},
+    {"evidence":"Product and catalogue pages list exact pool-cleaner configurations and accessory families.","scope":"Model-level product documentation","buyerCheck":"Match the part number, pool type and destination-market document before purchase."}
+  ],
+  "marketsChannels":[
+    {"evidence":"Pentair's annual report identifies wholesale and retail distribution businesses as Pool customers in residential and commercial verticals.","scope":"Segment channel disclosure","buyerCheck":"Confirm account authorization, commercial terms and reseller status for the target channel."},
+    {"evidence":"Pentair directs pool buyers to pool professionals, dealer locations, warranty and registration resources.","scope":"U.S. pool channel and support","buyerCheck":"Use the local dealer network to validate installation, support and warranty eligibility."},
+    {"evidence":"Pool demand and product offerings differ by climate, installation standards and market.","scope":"Market-specific execution","buyerCheck":"Check local electrical, hydraulic, warranty and service requirements."}
+  ],
+  "competitivePosition":{"summary":"World Clean Biz assessment: Pentair is a system-level pool equipment competitor, not just a cleaner brand. Its strength is the ability to connect cleaners, circulation, controls and service channels. For buyers, the important risk is system dependency: a cleaner, hose, booster, controller and warranty path need to be specified as one workable installation.","competitorSlugs":["hayward","polaris","maytronics","aquabot"]},
+  "developments":[
+    {"date":"2026-02","title":"Pentair reports 2025 Pool segment results","summary":"Pentair's 2025 annual report describes Pool products, brands, channel customers and seasonal demand.","sourceIds":["pentair-annual-2025"]},
+    {"date":"2025-09","title":"Pentair maintains its 2025–2026 pool product catalogue","summary":"The catalogue organizes pool equipment and automatic-cleaner categories for the current cycle.","sourceIds":["pentair-catalog"]},
+    {"date":"1966","title":"Pentair corporate history begins","summary":"Pentair identifies 1966 as its founding year.","sourceIds":["pentair-about"]}
+  ],
+  "sources":[
+    {"id":"pentair-annual-2025","title":"2025 Annual Report","publisher":"Pentair","url":"https://www.pentair.com/content/dam/extranet/enterprise/digital/enterprise-pages/Pentair-2025-Annual-Report.pdf","publishedAt":"2026-02","accessedAt":"2026-07-31"},
+    {"id":"pentair-catalog","title":"2025-2026 Pool & Spa Product Catalog","publisher":"Pentair","url":"https://www.pentair.com/en-us/pool-spa/products/catalog.html","accessedAt":"2026-07-31"},
+    {"id":"pentair-cleaners","title":"Robotic Pool Cleaners","publisher":"Pentair","url":"https://www.pentair.com/en-us/pool-spa/products/cleaners/robotic-pool-cleaners.html","accessedAt":"2026-07-31"},
+    {"id":"pentair-about","title":"Pentair Products","publisher":"Pentair","url":"https://www.pentair.com/en-us/products.html","accessedAt":"2026-07-31"}
+  ],
+  "publishedAt":"2026-07-31T22:00:00+08:00",
+  "lastVerified":"2026-07-31",
+  "lastModified":"2026-07-31T22:00:00+08:00"
+}

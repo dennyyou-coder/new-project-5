@@ -511,7 +511,7 @@ test("sorts brand articles by absolute time with deterministic invalid and tie f
   ]);
 });
 
-test("the release gate validates the exact forty published profiles and approved article relationships", () => {
+test("the release gate validates the exact forty-six published profiles and approved article relationships", () => {
   const expectedSlugs = [
     "aeg",
     "aiper",
@@ -521,18 +521,22 @@ test("the release gate validates the exact forty published profiles and approved
     "black-decker",
     "bosch-home-appliances",
     "dewalt",
+    "dirt-devil",
     "dji-romo",
     "dreame",
     "dyson",
     "ecovacs",
+    "electrolux",
     "eufy",
     "eureka",
+    "fluidra",
     "greenworks",
     "hayward",
     "hoover",
     "husqvarna",
     "irobot",
     "karcher",
+    "makita",
     "mammotion",
     "maytronics",
     "midea",
@@ -542,12 +546,14 @@ test("the release gate validates the exact forty published profiles and approved
     "narwal",
     "nilfisk",
     "oreck",
+    "pentair",
     "philips-home-appliances",
     "polaris",
     "roborock",
     "ryobi",
     "segway-navimow",
     "shark",
+    "stihl",
     "sunseeker",
     "tineco",
     "vax",
@@ -555,7 +561,7 @@ test("the release gate validates the exact forty published profiles and approved
     "wybot"
   ];
   const expectedPrimaryBrands = {
-    "aiper-fluidra-pool-robotics-alliance": ["aiper"],
+    "aiper-fluidra-pool-robotics-alliance": ["aiper", "fluidra"],
     "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x": ["aiper", "beatbot"],
     "aiper-vs-wybot-fluidra-wybotics": ["aiper", "wybot"],
     "anker-cleaning-appliance-strategy-analysis": ["eufy"],
@@ -570,8 +576,8 @@ test("the release gate validates the exact forty published profiles and approved
     "commercial-robotic-mower-market-navimow-mammotion": ["mammotion", "sunseeker"],
     "dewalts-rise-harvard-case": ["dewalt"],
     "dolphin-vs-aiper-maytronics-fluidra": ["maytronics", "aiper"],
-    "dolphin-vs-hayward-robotic-pool-cleaners": ["hayward"],
-    "dolphin-vs-polaris-pool-cleaners": ["polaris"],
+    "dolphin-vs-hayward-robotic-pool-cleaners": ["hayward", "pentair"],
+    "dolphin-vs-polaris-pool-cleaners": ["polaris", "pentair"],
     "dreame-new-disruptor-in-vacuums": ["dreame"],
     "dreame-rise-to-10-billion-in-five-years": ["dreame"],
     "dyson-at-a-crossroads": ["dyson"],
@@ -583,8 +589,9 @@ test("the release gate validates the exact forty published profiles and approved
     "ecovacs-2018-annual-report-signals": ["ecovacs"],
     "ecovacs-at-a-crossroads": ["ecovacs"],
     "ecovacs-invests-in-battery-cell-factory": ["ecovacs"],
+    "european-tool-brands-battery-alliances": ["stihl", "makita"],
     "freudenberg-acquires-nilfisk": ["nilfisk", "karcher"],
-    "global-power-tool-brands-reshaping-portfolios": ["dewalt", "black-decker"],
+    "global-power-tool-brands-reshaping-portfolios": ["dewalt", "black-decker", "makita"],
     "husqvarna-automower-vs-mammotion-luba": ["husqvarna", "mammotion"],
     "hoover-cleanslate-vs-shark-stainstriker": ["hoover", "shark"],
     "irobot-decline-and-the-new-robot-vacuum-order": ["irobot"],
@@ -595,14 +602,14 @@ test("the release gate validates the exact forty published profiles and approved
     "mammotion-luba-vs-yuka-robot-mowers": ["mammotion"],
     "maytronics-robotic-pool-cleaner-reinvention": ["maytronics"],
     "german-vacuum-brands-in-the-cordless-wave": ["miele", "bosch-home-appliances"],
-    "hayward-vs-pentair-vs-fluidra": ["hayward"],
+    "hayward-vs-pentair-vs-fluidra": ["hayward", "pentair", "fluidra"],
     "ifa-2019-vacuum-cleaner-new-products-by-major-brands": [
       "philips-home-appliances",
       "aeg"
     ],
     "industrial-cleaning-equipment-market": ["nilfisk"],
     "karcher-hidden-champion-in-cleaning-appliances": ["karcher"],
-    "midea-cleaning-appliance-past": ["midea", "eureka"],
+    "midea-cleaning-appliance-past": ["midea", "eureka", "electrolux"],
     "midea-group-and-the-possible-philips-domestic-appliances-acquisition": [
       "midea",
       "philips-home-appliances"
@@ -615,10 +622,12 @@ test("the release gate validates the exact forty published profiles and approved
     "narwal-vs-ecovacs-robot-vacuums": ["narwal", "ecovacs"],
     "nilfisk-2018-annual-report-commercial-cleaning": ["nilfisk"],
     "pool-robotics-new-competitive-table": ["aquabot"],
+    "power-tools-new-cycle-cordless-specialization": ["stihl", "makita"],
     "roborock-channel-shift-online-to-offline-experience": ["roborock"],
     "roborock-ipo-prospectus-signals": ["roborock"],
     "roborock-vs-narwal-robot-vacuums": ["roborock", "narwal"],
     "robotic-mower-sales-channels": ["worx", "greenworks"],
+    "robotic-vs-suction-vs-pressure-pool-cleaners": ["pentair"],
     "segway-navimow-vs-husqvarna-automower": ["segway-navimow", "husqvarna"],
     "segway-navimow-vs-worx-landroid-robot-mowers": ["segway-navimow", "worx"],
     "shark-hydrovac-vs-bissell-crosswave": ["shark", "bissell"],
@@ -637,7 +646,7 @@ test("the release gate validates the exact forty published profiles and approved
     ],
     "who-makes-sunseeker-robot-mowers-zhejiang-sunseeker": ["sunseeker"],
     "who-makes-wybot-pool-cleaners-wybotics-wangyuan": ["wybot"],
-    "who-owns-aeg-electrolux-relationship": ["aeg"],
+    "who-owns-aeg-electrolux-relationship": ["aeg", "electrolux"],
     "who-owns-aiper-fluidra-stake": ["aiper"],
     "who-owns-beatbot-xingmai-manufacturing": ["beatbot"],
     "who-owns-bissell-family-sanitaire": ["bissell"],
@@ -645,17 +654,17 @@ test("the release gate validates the exact forty published profiles and approved
     "who-owns-bosch-appliances-bsh-siemens-brands": ["bosch-home-appliances"],
     "who-owns-dewalt-stanley-black-decker": ["dewalt", "black-decker"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
-    "who-owns-greenworks-globe-stihl": ["greenworks"],
+    "who-owns-greenworks-globe-stihl": ["greenworks", "stihl"],
     "who-owns-hayward-pool-products": ["hayward"],
     "who-owns-husqvarna-automower-motorcycles": ["husqvarna"],
-    "who-owns-hoover-tti-haier-candy": ["hoover"],
+    "who-owns-hoover-tti-haier-candy": ["hoover", "dirt-devil"],
     "who-owns-irobot-roomba-picea-robotics": ["irobot"],
     "who-owns-narwal-yunjing-investors-manufacturing": ["narwal"],
     "who-owns-eufy-anker-smart-home": ["eufy"],
-    "who-owns-eureka-midea-electrolux-manufacturing": ["midea", "eureka"],
+    "who-owns-eureka-midea-electrolux-manufacturing": ["midea", "eureka", "electrolux"],
     "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
     "who-owns-miele-family-manufacturing-network": ["miele"],
-    "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris"],
+    "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris", "fluidra"],
     "who-owns-ryobi-tti-kyocera": ["ryobi"],
     "who-owns-segway-navimow-ninebot-willand": ["segway-navimow"],
     "who-owns-sharkninja-js-global-joyoung": ["shark"],
@@ -664,11 +673,12 @@ test("the release gate validates the exact forty published profiles and approved
       "ryobi",
       "milwaukee",
       "vax",
-      "oreck"
+      "oreck",
+      "dirt-devil"
     ],
-    "who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era": ["vax", "oreck"],
+    "who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era": ["vax", "oreck", "dirt-devil"],
     "who-owns-worx-positec-landroid-manufacturing": ["worx"],
-    "tti-cleaning-appliance-strategy": ["ryobi", "vax", "oreck"],
+    "tti-cleaning-appliance-strategy": ["ryobi", "vax", "oreck", "dirt-devil"],
     "what-brands-does-fluidra-own": ["aquabot"],
     "wybot-vs-dolphin-robotic-pool-cleaners": ["wybot", "maytronics"]
   };
@@ -685,7 +695,7 @@ test("the release gate validates the exact forty published profiles and approved
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 40);
+  assert.equal(loadedProfiles.length, 46);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -711,50 +721,13 @@ test("the release gate validates the exact forty published profiles and approved
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 102);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 140);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 105);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 160);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
-  assert.deepEqual(
-    Object.entries(expectedPrimaryBrands)
-      .filter(([, primaryBrands]) => primaryBrands.length === 2)
-      .map(([slug]) => slug)
-      .sort(),
-    [
-      "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x",
-      "aiper-vs-wybot-fluidra-wybotics",
-      "beatbot-vs-dolphin-xingmai-maytronics",
-      "bissell-little-green-vs-hoover-cleanslate",
-      "commercial-robotic-mower-market-navimow-mammotion",
-      "dji-romo-p-vs-ecovacs-deebot-x11",
-      "dji-romo-p-vs-roborock-saros-10r",
-      "dolphin-vs-aiper-maytronics-fluidra",
-      "dyson-fights-bosch-again",
-      "freudenberg-acquires-nilfisk",
-      "german-vacuum-brands-in-the-cordless-wave",
-      "global-power-tool-brands-reshaping-portfolios",
-      "hoover-cleanslate-vs-shark-stainstriker",
-      "husqvarna-automower-vs-mammotion-luba",
-      "ifa-2019-vacuum-cleaner-new-products-by-major-brands",
-      "is-dreame-owned-by-xiaomi",
-      "luba-vs-navimow-mammotion-ninebot",
-      "midea-cleaning-appliance-past",
-      "midea-group-and-the-possible-philips-domestic-appliances-acquisition",
-      "narwal-vs-ecovacs-robot-vacuums",
-      "roborock-vs-narwal-robot-vacuums",
-      "robotic-mower-sales-channels",
-      "segway-navimow-vs-husqvarna-automower",
-      "segway-navimow-vs-worx-landroid-robot-mowers",
-      "shark-hydrovac-vs-bissell-crosswave",
-      "shark-powerdetect-speed-vs-dyson-v16-piston-animal",
-      "sunseeker-vs-mammotion-robot-mowers",
-      "tineco-vs-bissell-crosswave-floor-washers",
-      "who-makes-philips-vacuum-cleaners-versuni",
-      "who-owns-dewalt-stanley-black-decker",
-      "who-owns-eureka-midea-electrolux-manufacturing",
-      "who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era",
-      "wybot-vs-dolphin-robotic-pool-cleaners"
-    ]
+  assert.ok(
+    Object.values(expectedPrimaryBrands).some((primaryBrands) => primaryBrands.length === 3),
+    "the release gate must retain at least one three-brand relationship"
   );
 
   assert.deepEqual(buildBrandStaticParams(publishedProfiles), expectedSlugs.map((slug) => ({ slug })));
@@ -775,7 +748,7 @@ test("the release gate validates the exact forty published profiles and approved
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles();
-  assert.equal(profiles.length, 40);
+  assert.equal(profiles.length, 46);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -846,6 +819,47 @@ test("sixth batch profiles use dedicated assets, article depth, and explicit ide
   assert.match(profilesBySlug.get("vax").ownership.summary, /TTI|Techtronic/i);
   assert.match(profilesBySlug.get("oreck").ownership.summary, /TTI|Techtronic/i);
   assert.match(profilesBySlug.get("aquabot").ownership.summary, /Aquatron|BWT/i);
+});
+
+test("seventh batch profiles use dedicated assets, article depth, and explicit identity boundaries", async () => {
+  const newSlugs = ["dirt-devil", "electrolux", "fluidra", "makita", "pentair", "stihl"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const articles = getInsights();
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+    assert.ok(
+      articles.filter((article) => article.primaryBrands.includes(slug)).length >= 3,
+      `${slug} must have at least three primary articles`
+    );
+  }
+
+  assert.match(profilesBySlug.get("dirt-devil").ownership.summary, /TTI|Techtronic/i);
+  assert.match(profilesBySlug.get("electrolux").ownership.summary, /Electrolux/i);
+  assert.match(profilesBySlug.get("fluidra").ownership.summary, /Fluidra/i);
+  assert.match(profilesBySlug.get("pentair").ownership.summary, /Pentair/i);
+  assert.match(profilesBySlug.get("stihl").ownership.summary, /STIHL/i);
+  assert.match(profilesBySlug.get("makita").ownership.summary, /Makita/i);
 });
 
 test("fifth batch profiles use dedicated assets, article depth, and explicit identity boundaries", async () => {

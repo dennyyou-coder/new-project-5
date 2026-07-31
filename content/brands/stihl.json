@@ -1,0 +1,57 @@
+{
+  "status":"published",
+  "slug":"stihl",
+  "name":"STIHL",
+  "aliases":["Stihl","STIHL Group","Andreas Stihl"],
+  "legalEntityNote":"STIHL is a family-owned group with several legal entities, including the founding company Andreas Stihl AG & Co. KG and the holding company Stihl Holding AG & Co. KG. Product, importer, dealer and factory responsibility varies by market and SKU.",
+  "officialWebsite":"https://corporate.stihl.com/",
+  "headline":"STIHL ownership, outdoor cleaning equipment and specialist-dealer network",
+  "description":"A source-backed profile of STIHL's family ownership, outdoor-power and cleaning-equipment portfolio, manufacturing network and authorized dealer model.",
+  "metaDescription":"STIHL profile: family ownership, wet-dry vacuums, outdoor power equipment, global manufacturing, dealers and buyer checks.",
+  "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with STIHL. Group figures and network disclosures must not be treated as a factory or warranty statement for every SKU.",
+  "headquarters":"Waiblingen, Germany",
+  "founded":"1926",
+  "heroImage":"/images/brands/stihl/hero-stihl-outdoor-power-equipment.webp",
+  "heroImageAlt":"STIHL outdoor power equipment and dealer-channel visual",
+  "logoImage":"/images/brands/stihl/logo.webp",
+  "logoImageAlt":"STIHL logo",
+  "logoSourceUrl":"https://www.stihl.com/",
+  "contentVisuals":[
+    {"placement":"ownership","src":"/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp","alt":"European tool-brand battery alliance landscape","caption":"STIHL's battery strategy sits within a fragmented platform landscape rather than a universal battery standard."},
+    {"placement":"portfolio","src":"/images/insights/robotic-mowers-outdoor-power-equipment-channels-cover.jpg","alt":"Outdoor power equipment and robotic mower channel visual","caption":"Dealer capability, installation and after-sales service are central to outdoor equipment adoption."},
+    {"placement":"operations","src":"/images/blog/european-tool-brands-battery-alliances-image-004-en-v2.webp","alt":"European tool-brand manufacturing and channel comparison","caption":"Global brand reach does not substitute for a model-specific origin, importer and parts check."}
+  ],
+  "ownership":{"summary":"STIHL is a family-owned, non-listed group. Its 2025 reporting describes Stihl Holding AG & Co. KG as the group holding company and Andreas Stihl AG & Co. KG as the founding company. This ownership structure is distinct from an individual dealer, importer or regional sales subsidiary.","parentCompany":"Stihl Holding AG & Co. KG"},
+  "leadership":[{"name":"Andreas Stihl","role":"Founder","context":"STIHL traces the group to Andreas Stihl's 1926 foundation in Germany."}],
+  "productPortfolio":[
+    {"name":"Forestry, landscape and garden equipment","positioning":"Core professional and consumer outdoor power tools across gasoline and battery formats.","buyerRelevance":"Specify user segment, power source, safety requirements and authorized servicing route."},
+    {"name":"Battery systems and charging platforms","positioning":"A growing cordless offer for professional and private users.","buyerRelevance":"Confirm battery-system compatibility, charger specification and local warranty coverage."},
+    {"name":"Wet-dry vacuums and dust extractors","positioning":"Workshop, vehicle, construction and outdoor-maintenance cleaning equipment.","buyerRelevance":"Match dust class, outlet/tool activation, filter specification and regional electrical rating."},
+    {"name":"Digital services and dealer support","positioning":"Connected solutions and specialist dealer support complement the equipment range.","buyerRelevance":"Validate local service competence, replacement-parts availability and account access."}
+  ],
+  "manufacturingSupplyChain":[
+    {"evidence":"STIHL reports manufacturing in eight countries and legally independent production companies within a global network.","scope":"Group production disclosure","buyerCheck":"Verify the producing entity and country of origin on the exact product label and declaration."},
+    {"evidence":"The group says its production companies manufacture components and finished goods, while certain operations also serve external customers.","scope":"Network boundary","buyerCheck":"Do not infer that every STIHL-branded product is made at the same facility or by one group entity."},
+    {"evidence":"Wet-dry vacuum and dust-extractor product pages define product-level specifications.","scope":"SKU documentation","buyerCheck":"Match the model suffix, accessory bundle and destination voltage before ordering."}
+  ],
+  "marketsChannels":[
+    {"evidence":"STIHL reports 40 sales and marketing companies, around 100 importers and more than 50,000 independent dealers in more than 160 countries.","scope":"Company-reported network","buyerCheck":"Confirm the authorized importer and servicing dealer for the destination market."},
+    {"evidence":"The group describes authorized servicing dealers as its core route to end users alongside expanding own online shops.","scope":"Dealer and direct channels","buyerCheck":"Check whether online or retail purchasing preserves installation, service and warranty support."},
+    {"evidence":"Products are designed for professional and consumer uses with local safety and configuration requirements.","scope":"Market execution","buyerCheck":"Verify local compliance, operator training and parts support."}
+  ],
+  "competitivePosition":{"summary":"World Clean Biz assessment: STIHL's edge is its dense specialist-dealer network and an outdoor-equipment portfolio that now spans battery, professional cleaning and digital services. The buyer risk is assuming that a familiar global mark equals universal support: product origin, authorised service and battery configuration still need model-level confirmation.","competitorSlugs":["husqvarna","greenworks","worx","sunseeker"]},
+  "developments":[
+    {"date":"2026","title":"STIHL marks 100 years since its foundation","summary":"The group enters its centenary year while continuing its transition toward battery-powered equipment.","sourceIds":["stihl-figures"]},
+    {"date":"2026-03","title":"STIHL publishes its 2025 integrated report","summary":"The report presents the 2025 financial year, production network and battery strategy.","sourceIds":["stihl-report-2025"]},
+    {"date":"1926","title":"Andreas Stihl founds the business","summary":"STIHL's corporate history dates the founding company to 1926.","sourceIds":["stihl-figures"]}
+  ],
+  "sources":[
+    {"id":"stihl-figures","title":"STIHL in Figures","publisher":"STIHL","url":"https://corporate.stihl.com/en/about-stihl/company/figures","accessedAt":"2026-07-31"},
+    {"id":"stihl-report-2025","title":"Integrated Corporate Report 2025","publisher":"STIHL","url":"https://icr.stihl.com/","publishedAt":"2026-03","accessedAt":"2026-07-31"},
+    {"id":"stihl-product","title":"SE 33 Wet & Dry Vacuum","publisher":"STIHL USA","url":"https://www.stihlusa.com/products/vacuums/wet-dry-vacuums/se33/","accessedAt":"2026-07-31"},
+    {"id":"stihl-network","title":"STIHL Group and Strategy","publisher":"STIHL","url":"https://sustainabilityreport.stihl.com/2024/content/stihl-group-and-strategy/index.html","accessedAt":"2026-07-31"}
+  ],
+  "publishedAt":"2026-07-31T22:00:00+08:00",
+  "lastVerified":"2026-07-31",
+  "lastModified":"2026-07-31T22:00:00+08:00"
+}

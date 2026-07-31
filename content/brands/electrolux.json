@@ -1,0 +1,58 @@
+{
+  "status":"published",
+  "slug":"electrolux",
+  "name":"Electrolux",
+  "aliases":["Electrolux Group","AB Electrolux","Electrolux Appliances"],
+  "legalName":"AB Electrolux (publ)",
+  "legalEntityNote":"AB Electrolux (publ) is the listed parent company. Electrolux, AEG, Frigidaire and regional subsidiaries are separate commercial and product-brand layers; a consumer-brand product may not be sold or warranted by the listed parent itself.",
+  "officialWebsite":"https://www.electroluxgroup.com/",
+  "headline":"Electrolux ownership, appliance brands and global operating boundary",
+  "description":"A source-backed profile of AB Electrolux's listed-group ownership, Electrolux/AEG/Frigidaire brand architecture, appliance portfolio and regional buyer checks.",
+  "metaDescription":"Electrolux profile: listed-group ownership, Electrolux, AEG and Frigidaire brands, appliance portfolio, manufacturing and distribution checks.",
+  "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with Electrolux Group, AEG, Frigidaire or their subsidiaries. Brand, legal-entity and SKU-level evidence are kept separate.",
+  "headquarters":"Stockholm, Sweden",
+  "founded":"1919",
+  "heroImage":"/images/brands/electrolux/hero-electrolux-aeg-portfolio.webp",
+  "heroImageAlt":"Electrolux and AEG brand relationship visual",
+  "logoImage":"/images/brands/electrolux/logo.webp",
+  "logoImageAlt":"Electrolux logo",
+  "logoSourceUrl":"https://www.electroluxgroup.com/en/images/logotype/",
+  "contentVisuals":[
+    {"placement":"ownership","src":"/images/blog/aeg-electrolux-brand-relationship-map.webp","alt":"Electrolux Group and AEG relationship map","caption":"The map separates the Electrolux Group parent from the AEG trademark and regional product responsibilities."},
+    {"placement":"portfolio","src":"/images/blog/who-owns-aeg-electrolux-cover.webp","alt":"Electrolux and AEG appliance portfolio graphic","caption":"Electrolux and AEG are group brands, but consumer positioning and local distribution vary by market."},
+    {"placement":"operations","src":"/images/blog/eureka-ownership-timeline-midea-electrolux.webp","alt":"Eureka and Electrolux ownership timeline","caption":"Historic Electrolux connections should not be treated as proof of current ownership for every Eureka or regional product."}
+  ],
+  "ownership":{"summary":"AB Electrolux (publ) is a Swedish public limited company listed on Nasdaq Stockholm and the parent of the Electrolux Group. The Group identifies Electrolux, AEG and Frigidaire as leading appliance brands. Brand use, operating companies and product availability remain market-specific.","parentCompany":"AB Electrolux (publ)"},
+  "leadership":[{"name":"Yannick Fierling","role":"President and CEO","context":"Electrolux Group's 2025 annual report identifies Yannick Fierling as President and CEO from 1 January 2025."}],
+  "productPortfolio":[
+    {"name":"Major kitchen and laundry appliances","positioning":"Core household appliances sold across Electrolux, AEG and regional brand structures.","buyerRelevance":"Confirm the brand, regional seller, electrical specification and after-sales route for the destination market."},
+    {"name":"Vacuum cleaners and small appliances","positioning":"Floorcare, air-quality and smaller domestic-appliance categories within the Group's wellbeing offer.","buyerRelevance":"Model availability and factory origin cannot be inferred from the group brand alone."},
+    {"name":"AEG premium appliances","positioning":"Premium European positioning within the group alongside Electrolux and regional brands.","buyerRelevance":"Validate whether the AEG mark is licensed, owned or operated by the local contracting entity."},
+    {"name":"Frigidaire and regional brands","positioning":"North American and local-market brand architecture alongside the global Electrolux offer.","buyerRelevance":"Use local catalogues and terms rather than assuming a universal assortment."}
+  ],
+  "manufacturingSupplyChain":[
+    {"evidence":"Electrolux Group's annual reporting describes a global parent and direct and indirect subsidiaries around the world.","scope":"Listed-group disclosure","buyerCheck":"Identify the exact subsidiary that will manufacture, import or warrant the contracted product."},
+    {"evidence":"The Group reports its leading brand portfolio and regional business areas, not one factory assignment for every appliance.","scope":"Group portfolio disclosure","buyerCheck":"Verify origin and responsible manufacturer on product declarations and labels."},
+    {"evidence":"Historic links to AEG and Eureka involve distinct trademark and ownership paths.","scope":"Brand-history boundary","buyerCheck":"Do not use an historic brand relationship as a present factory or ownership assertion."}
+  ],
+  "marketsChannels":[
+    {"evidence":"Electrolux Group says its leading brands sell household products in around 120 markets.","scope":"Company-reported reach","buyerCheck":"Confirm the current brand presence and service availability in the target country."},
+    {"evidence":"The Group uses different leading brands and market positions across regions.","scope":"Brand architecture","buyerCheck":"Match the buying entity and brand program to the destination market."},
+    {"evidence":"Product, retailer and warranty details are regionally administered.","scope":"Local commercial execution","buyerCheck":"Obtain current local reseller authorization and warranty terms before launch."}
+  ],
+  "competitivePosition":{"summary":"World Clean Biz assessment: Electrolux has the scale and multi-brand reach of a listed global appliance group, while the buyer-side challenge is precision. Electrolux, AEG, Frigidaire and historic brand relationships make brand recognition easy but can obscure the entity, factory, retailer and service provider responsible for a specific SKU.","competitorSlugs":["aeg","miele","bosch-home-appliances","eureka"]},
+  "developments":[
+    {"date":"2026-02-19","title":"Electrolux publishes its 2025 annual report","summary":"The Group reported 2025 results and restated its leading brand architecture around Electrolux, AEG and Frigidaire.","sourceIds":["electrolux-annual-2025"]},
+    {"date":"2025-01-01","title":"Yannick Fierling becomes President and CEO","summary":"The 2025 annual report identifies Fierling's CEO appointment from the start of 2025.","sourceIds":["electrolux-annual-2025"]},
+    {"date":"1919","title":"AB Electrolux is formed","summary":"The group traces its corporate history to 1919.","sourceIds":["electrolux-history"]}
+  ],
+  "sources":[
+    {"id":"electrolux-annual-2025","title":"Annual Report 2025","publisher":"Electrolux Group","url":"https://www.electroluxgroup.com/wp-content/uploads/sites/2/2026/02/Annual-Report-2025.pdf","publishedAt":"2026-02-19","accessedAt":"2026-07-31"},
+    {"id":"electrolux-history","title":"Annual Reports","publisher":"Electrolux Group","url":"https://www.electroluxgroup.com/en/annual-reports-27641/","accessedAt":"2026-07-31"},
+    {"id":"electrolux-logo","title":"Image Bank - Logotype","publisher":"Electrolux Group","url":"https://www.electroluxgroup.com/en/images/logotype/","accessedAt":"2026-07-31"},
+    {"id":"electrolux-small-appliances","title":"Small Appliances","publisher":"Electrolux Annual Report 2015","url":"https://www.electroluxgroup.com/annualreports/2015/en/markets-and-business-areas/small-appliances/","accessedAt":"2026-07-31"}
+  ],
+  "publishedAt":"2026-07-31T22:00:00+08:00",
+  "lastVerified":"2026-07-31",
+  "lastModified":"2026-07-31T22:00:00+08:00"
+}
