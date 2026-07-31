@@ -1,0 +1,159 @@
+{
+  "status": "published",
+  "slug": "dewalt",
+  "name": "DEWALT",
+  "aliases": ["DeWalt", "DeWALT", "DEWALT Industrial Tool"],
+  "legalName": "Stanley Black & Decker, Inc.",
+  "legalEntityNote": "DEWALT is a brand within Stanley Black & Decker. Regional affiliates, licensed product companies, suppliers and retailers can hold separate sales, manufacturing, import or warranty responsibilities.",
+  "officialWebsite": "https://www.dewalt.com/",
+  "headline": "DEWALT ownership, professional cleaning equipment, licensees and supply chain",
+  "description": "A source-backed profile of DEWALT's Stanley Black & Decker ownership, professional dust-management and outdoor portfolio, licensed products and model-level sourcing checks.",
+  "metaDescription": "DEWALT profile: Stanley Black & Decker ownership, cleaning and outdoor products, licensees, manufacturing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with DEWALT or Stanley Black & Decker. Group ownership does not identify the manufacturer, factory, seller or warranty provider for every DEWALT product.",
+  "headquarters": "New Britain, Connecticut, United States at parent-group level",
+  "founded": "1924; acquired by Black & Decker in 1960",
+  "heroImage": "/images/brands/dewalt/hero-dewalt-dust-management.webp",
+  "heroImageAlt": "DEWALT cordless hand vacuum and professional wet-dry dust extractor",
+  "logoImage": "/images/brands/dewalt/logo.webp",
+  "logoImageAlt": "DEWALT logo",
+  "logoSourceUrl": "https://www.dewalt.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/dewalt-ownership-cover.webp",
+      "alt": "DEWALT ownership inside Stanley Black and Decker",
+      "caption": "DEWALT, BLACK+DECKER, CRAFTSMAN and STANLEY are sibling brands inside the same listed group."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/dewalt-product-responsibility-map.webp",
+      "alt": "DEWALT product responsibility map from brand owner to licensee, manufacturer, seller and warranty provider",
+      "caption": "This map shows why DEWALT group ownership is not a complete answer for a licensed or supplier-made product."
+    }
+  ],
+  "ownership": {
+    "summary": "Stanley Black & Decker, Inc. owns DEWALT. Black & Decker acquired DeWalt in 1960, and the 2010 merger of The Stanley Works and The Black & Decker Corporation placed the brand inside today's listed Stanley Black & Decker group. BLACK+DECKER and CRAFTSMAN are sibling brands, not DEWALT's parents.",
+    "parentCompany": "Stanley Black & Decker, Inc."
+  },
+  "leadership": [
+    {
+      "name": "Raymond E. DeWalt",
+      "role": "Founder",
+      "context": "Stanley Black & Decker's brand history credits Raymond DeWalt with forming the DEWALT Products Company in 1924."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Dust management and wet-dry vacuums",
+      "positioning": "Professional dust extractors, wet-dry vacuums and jobsite collection systems support construction and industrial cleaning.",
+      "buyerRelevance": "Confirm filtration class, tool activation, electrical rating, accessories, compliance and service route by model."
+    },
+    {
+      "name": "Cordless hand and stick vacuums",
+      "positioning": "Battery-powered cleaning products extend the DEWALT system into portable jobsite and workshop cleanup.",
+      "buyerRelevance": "Battery platform compatibility, included pack, runtime and warranty depend on the exact regional SKU."
+    },
+    {
+      "name": "Pressure washers",
+      "positioning": "Electric and engine-driven pressure washers cover residential, professional and licensed-product applications.",
+      "buyerRelevance": "Some documented models use licensed manufacturers, so buyers must verify the product company and warranty route."
+    },
+    {
+      "name": "Professional power tools and outdoor equipment",
+      "positioning": "Cordless tools, storage, accessories and outdoor equipment form the wider platform around cleaning products.",
+      "buyerRelevance": "Common brand ownership does not guarantee battery, accessory, parts or service compatibility across every line."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Stanley Black & Decker reports manufacturing and sourcing operations across the United States, other Americas, Europe and Asia.",
+      "scope": "Parent-group network",
+      "buyerCheck": "Use the exact model label, declaration, certification and shipment records to identify origin."
+    },
+    {
+      "evidence": "The DXPW1200E manual says the pressure washer was manufactured under licence for DEWALT Industrial Tool Co. by FNA Group.",
+      "scope": "Documented pressure-washer model",
+      "buyerCheck": "Do not generalize the FNA relationship beyond the models covered by the official manual."
+    },
+    {
+      "evidence": "Supplier disclosures can show DEWALT authorization or customer relationships without mapping an exact SKU to a factory.",
+      "scope": "Supplier and licence evidence",
+      "buyerCheck": "Match the purchase order, audit, declaration and factory record to the contracted SKU and batch."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "DEWALT is a priority global professional brand in Stanley Black & Decker's Tools & Outdoor segment.",
+      "scope": "Global group positioning",
+      "buyerCheck": "Confirm the regional operating company and authorized channel for the destination market."
+    },
+    {
+      "evidence": "Home Depot and Lowe's are major Stanley Black & Decker customers, alongside professional distributors and online channels.",
+      "scope": "Retail and professional distribution",
+      "buyerCheck": "A retailer is a channel, not the brand owner; verify seller authorization and warranty eligibility."
+    },
+    {
+      "evidence": "UK, Ireland, Australia, Canada and other markets use named regional Stanley Black & Decker entities and local terms.",
+      "scope": "Regional legal-entity network",
+      "buyerCheck": "Use the legal name on the local contract, invoice, importer label and warranty policy."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: DEWALT carries a powerful professional-tool reputation into jobsite vacuums, dust management and pressure washing, reinforced by a broad battery and dealer ecosystem. Its main diligence challenge is operating complexity: group-owned, supplier-made and licensed products can use different manufacturers and warranty routes.",
+    "competitorSlugs": ["ryobi", "karcher", "nilfisk"]
+  },
+  "developments": [
+    {
+      "date": "2026-02",
+      "title": "DEWALT remains a priority global brand",
+      "summary": "Stanley Black & Decker's 2025 filing lists DEWALT and its major platform marks as significant trademarks in Tools & Outdoor.",
+      "sourceIds": ["sbd-10k-2025"]
+    },
+    {
+      "date": "2010",
+      "title": "Stanley and Black & Decker combine",
+      "summary": "The merger created today's Stanley Black & Decker parent group and placed DEWALT beside its current sibling brands.",
+      "sourceIds": ["dewalt-history"]
+    },
+    {
+      "date": "1960",
+      "title": "Black & Decker acquires DEWALT",
+      "summary": "The acquisition established the ownership lineage that later moved into the combined Stanley Black & Decker group.",
+      "sourceIds": ["dewalt-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sbd-10k-2025",
+      "title": "Stanley Black & Decker 2025 Form 10-K",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000009/swk-20260103.htm",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "dewalt-history",
+      "title": "DEWALT Brand History",
+      "publisher": "Stanley Black & Decker",
+      "url": "https://www.stanleyblackanddecker.com/brands/tools/dewalt",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "dewalt-dust-management",
+      "title": "DEWALT Dust Management",
+      "publisher": "DEWALT",
+      "url": "https://www.dewalt.com/en-us/products/power-tools/dust-management",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "dewalt-dxpw1200e-manual",
+      "title": "DXPW1200E Pressure Washer Instruction Manual",
+      "publisher": "DEWALT",
+      "url": "https://www.dewalt.com/GLOBALBOM/QU/DXPW1200E/0/Instruction_Manual/EN/7105624_DXPW1200E.pdf",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T19:05:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T19:05:00+08:00"
+}

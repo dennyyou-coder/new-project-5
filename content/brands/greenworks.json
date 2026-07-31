@@ -1,0 +1,175 @@
+{
+  "status": "published",
+  "slug": "greenworks",
+  "name": "Greenworks",
+  "aliases": ["Greenworks Tools", "Greenworks Commercial", "Globe Tools"],
+  "legalName": "Greenworks (Jiangsu) Co., Ltd.",
+  "legalEntityNote": "Greenworks is the listed Chinese operating group and consumer brand. Globe Holdings entities, Greenworks North America, regional licensees, importers and factories can hold separate ownership, sales, import, manufacturing or warranty roles.",
+  "officialWebsite": "https://www.greenworkstools.com/",
+  "headline": "Greenworks ownership, cordless outdoor equipment, robotic mowers and manufacturing",
+  "description": "A source-backed profile of Greenworks' listed-company control, Globe structure, STIHL-linked minority investment, robotic mowers, factories and regional channels.",
+  "metaDescription": "Greenworks profile: Globe and Yin Chen control, STIHL-linked minority stake, robotic mowers, manufacturing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Greenworks, Globe Tools or STIHL. Share ownership, brand ownership, importing, manufacturing and warranty responsibilities are identified separately.",
+  "headquarters": "Changzhou, Jiangsu, China",
+  "founded": "2002 group roots; Greenworks brand created in 2009",
+  "heroImage": "/images/brands/greenworks/hero-greenworks-robotic-mower.webp",
+  "heroImageAlt": "Greenworks robotic lawn mower on a light green background",
+  "logoImage": "/images/brands/greenworks/logo.webp",
+  "logoImageAlt": "Greenworks logo",
+  "logoSourceUrl": "https://www.greenworkstools.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/greenworks-ownership-cover.webp",
+      "alt": "Greenworks ownership map showing Yin Chen, Globe Holdings and the STIHL-linked minority stake",
+      "caption": "Greenworks is controlled through the Globe structure; STIHL's ZAMA subsidiary is a significant minority shareholder, not the parent company."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/greenworks-manufacturing-responsibility-map.webp",
+      "alt": "Greenworks manufacturing and regional responsibility map",
+      "caption": "Brand ownership does not identify the factory, importer, seller or warranty provider for every Greenworks model."
+    }
+  ],
+  "ownership": {
+    "summary": "Greenworks (Jiangsu) Co., Ltd. is listed on Shenzhen's ChiNext market under stock code 301260. Its April 2026 completion notice reported that founder Yin Chen and the Globe Holdings structure together controlled 57.13% after the purchase plan. ZAMA Corporation Limited, a wholly owned STIHL Group subsidiary, held 18.78% at March 31, 2026; that is a minority investment, not parent-company ownership.",
+    "parentCompany": "Public company controlled by founder Yin Chen through the Globe Holdings structure"
+  },
+  "leadership": [
+    {
+      "name": "Yin Chen",
+      "role": "Founder, chairman and general manager",
+      "context": "Greenworks' 2026 first-quarter report identifies Yin Chen as the company's actual controller, chairman and general manager."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "AiMowbot robotic lawn mowers",
+      "positioning": "Wire-free RTK and vision-based mower platforms extend Greenworks from cordless tools into autonomous lawn care.",
+      "buyerRelevance": "Verify navigation method, lawn-size rating, slope capability, connectivity, installation and local field support by model."
+    },
+    {
+      "name": "Cordless outdoor power equipment",
+      "positioning": "Battery platforms span mowers, blowers, trimmers, chainsaws, snow tools and professional grounds-care equipment.",
+      "buyerRelevance": "Voltage, pack, charger and accessory compatibility must be confirmed within the exact regional platform."
+    },
+    {
+      "name": "Pressure washers and cleaning tools",
+      "positioning": "Electric pressure washers, surface cleaners and portable cleaning products connect the brand to home and commercial cleaning.",
+      "buyerRelevance": "Confirm the legal manufacturer, pressure rating, fittings, compliance documentation and service parts for the contracted SKU."
+    },
+    {
+      "name": "Greenworks Commercial",
+      "positioning": "Higher-output tools and fleet-oriented battery systems target landscaping, municipal and professional users.",
+      "buyerRelevance": "Professional procurement requires battery-fleet economics, uptime, technician coverage, parts and service-level commitments."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Greenworks' annual report describes a vertically integrated group that researches, designs, manufactures and sells new-energy outdoor power equipment.",
+      "scope": "Listed-group disclosure",
+      "buyerCheck": "Confirm which group entity and physical factory are assigned to the exact product and purchase order."
+    },
+    {
+      "evidence": "The group reports production and supply-chain capacity in China, Vietnam and the United States, while key components are concentrated in its China and Vietnam network.",
+      "scope": "Group manufacturing footprint",
+      "buyerCheck": "Use the label, declaration, audit and shipment documents to establish the actual country of origin."
+    },
+    {
+      "evidence": "A U.S. CPSC recall for specified Kobalt yard tools names Greenworks North America as importer and China or Vietnam as manufacturing countries.",
+      "scope": "Named recalled models",
+      "buyerCheck": "Do not generalize the importer or origin evidence beyond the model numbers and production periods covered by the recall."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Greenworks sells through direct websites, retailers, dealers and professional distribution under consumer and commercial sub-brands.",
+      "scope": "Multi-channel route to market",
+      "buyerCheck": "Confirm seller authorization, territory rights, price policy and warranty eligibility for the target account."
+    },
+    {
+      "evidence": "Greenworks North America, LLC operates the U.S. website as a brand licensee, while Greenworks Tools Canada Inc. is named in Canadian terms.",
+      "scope": "Regional legal entities",
+      "buyerCheck": "Use the entity named on the local contract, invoice, importer label and warranty document."
+    },
+    {
+      "evidence": "The group also supplies retailer brands and reports a Kobalt 24V outdoor-equipment program with Lowe's.",
+      "scope": "Retailer-brand and OEM relationships",
+      "buyerCheck": "A shared supplier or platform does not make Kobalt and Greenworks the same brand; verify specifications and authorization separately."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Greenworks combines battery-platform breadth, component integration and international manufacturing with a fast-growing autonomous-mower offer. Its diligence challenge is structural complexity: listed-company control, Globe naming, a STIHL-linked minority investor and regional licensees can be confused with parent ownership or universal product responsibility.",
+    "competitorSlugs": ["worx", "sunseeker", "husqvarna"]
+  },
+  "developments": [
+    {
+      "date": "2026-05-06",
+      "title": "Greenworks discloses updated controlling holdings",
+      "summary": "The completion notice reported that Yin Chen and the Globe Holdings structure together held 57.13% after the purchase plan ended.",
+      "sourceIds": ["greenworks-share-notice"]
+    },
+    {
+      "date": "2026-03-31",
+      "title": "ZAMA remains a significant minority shareholder",
+      "summary": "The first-quarter shareholder table listed STIHL-owned ZAMA Corporation Limited at 18.78%.",
+      "sourceIds": ["greenworks-q1-2026", "stihl-zama"]
+    },
+    {
+      "date": "2009",
+      "title": "Greenworks brand is created",
+      "summary": "The listed company's annual report dates creation of its own Greenworks brand to 2009.",
+      "sourceIds": ["greenworks-annual-2025"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "greenworks-annual-2025",
+      "title": "Greenworks 2025 Annual Report",
+      "publisher": "Greenworks (Jiangsu) Co., Ltd.",
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12268792&stockid=301260",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "greenworks-q1-2026",
+      "title": "Greenworks 2026 First-Quarter Report",
+      "publisher": "Greenworks (Jiangsu) Co., Ltd. / CNInfo",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225248490.PDF",
+      "publishedAt": "2026-04-29",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "greenworks-share-notice",
+      "title": "Completion Notice for Controlling Shareholder Purchase Plan",
+      "publisher": "Greenworks (Jiangsu) Co., Ltd.",
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12298777&stockid=301260",
+      "publishedAt": "2026-05-06",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "stihl-zama",
+      "title": "STIHL Production Network: ZAMA",
+      "publisher": "STIHL",
+      "url": "https://corporate.stihl.com/en/about-stihl/production-sales/stihl-philippines",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "greenworks-about",
+      "title": "About Greenworks",
+      "publisher": "Greenworks",
+      "url": "https://www.greenworkstools.co.uk/pages/about-us",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "greenworks-warranty",
+      "title": "Greenworks Warranty",
+      "publisher": "Greenworks North America",
+      "url": "https://www.greenworkstools.com/pages/warranty",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T19:10:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T19:10:00+08:00"
+}

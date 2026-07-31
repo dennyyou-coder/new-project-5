@@ -1,0 +1,168 @@
+{
+  "status": "published",
+  "slug": "ryobi",
+  "name": "RYOBI",
+  "aliases": ["Ryobi Tools", "Ryobi Power Tools"],
+  "legalName": "Ryobi Limited",
+  "legalEntityNote": "Ryobi Limited owns the RYOBI trademark. Techtronic Industries uses it under licence for power tools and outdoor equipment in specified regions, while KYOCERA Industrial Tools succeeded to Ryobi Limited's former power-tool operation. Brand owner, licensee, seller and manufacturer are not interchangeable.",
+  "officialWebsite": "https://www.ryobi-group.co.jp/en/",
+  "headline": "RYOBI ownership, TTI licensing, Kyocera boundary and cleaning equipment",
+  "description": "A source-backed profile separating Ryobi Limited's trademark ownership from TTI and Kyocera operating routes, with cleaning products, manufacturing and channels.",
+  "metaDescription": "RYOBI profile: Ryobi Limited trademark ownership, TTI licence, Kyocera tool business, cleaning products, manufacturing and channels.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Ryobi Limited, TTI or Kyocera. Trademark ownership does not identify the seller, factory or warranty provider for every RYOBI product or country.",
+  "headquarters": "Fuchu, Hiroshima, Japan for Ryobi Limited",
+  "founded": "1943",
+  "heroImage": "/images/brands/ryobi/hero-ryobi-floorcare.webp",
+  "heroImageAlt": "RYOBI cordless floor-cleaning products on a bright green background",
+  "logoImage": "/images/brands/ryobi/logo.webp",
+  "logoImageAlt": "RYOBI logo",
+  "logoSourceUrl": "https://www.ryobi-group.co.jp/en/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/ryobi-ownership-cover.webp",
+      "alt": "RYOBI ownership map separating Ryobi Limited, TTI and Kyocera",
+      "caption": "Ryobi Limited owns the trademark; TTI and Kyocera participate through different licensed or acquired operating routes."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/ryobi-tti-kyocera-regional-map.webp",
+      "alt": "Regional map of RYOBI brand owner, TTI licence and Kyocera power-tool business",
+      "caption": "The responsible company can change by country and product category even when the same RYOBI mark appears."
+    }
+  ],
+  "ownership": {
+    "summary": "Ryobi Limited, a Tokyo Stock Exchange-listed Japanese company, owns the RYOBI trademark. TTI states that it uses RYOBI under licence and manufactures and distributes RYOBI power tools and lawn-and-garden equipment in the United States, Canada, Europe, Australia and New Zealand. Kyocera acquired Ryobi Limited's former power-tool business in 2018 and operates a separate route through KYOCERA Industrial Tools.",
+    "parentCompany": "Ryobi Limited is the independent public trademark owner"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Cordless vacuums and floorcare",
+      "positioning": "Hand vacuums, stick vacuums, scrubbers and carpet-care tools extend the battery platform into home and workshop cleaning.",
+      "buyerRelevance": "Confirm voltage platform, included battery, accessories, floor suitability and local warranty by exact regional SKU."
+    },
+    {
+      "name": "Wet-dry vacuums and jobsite cleaning",
+      "positioning": "Portable and higher-capacity wet-dry vacuums serve workshops, vehicles, jobsites and professional cleanup.",
+      "buyerRelevance": "Filtration, tank size, hose system, electrical rating and parts availability vary across models."
+    },
+    {
+      "name": "Pressure washers and outdoor cleaning",
+      "positioning": "Pressure washers, power cleaners and related accessories connect the brand's tool platform to exterior cleaning.",
+      "buyerRelevance": "Verify manufacturer, compliance, fittings, accessories, service entity and territorial licence for the destination market."
+    },
+    {
+      "name": "Outdoor power equipment",
+      "positioning": "Mowers, trimmers, blowers and other lawn equipment form a major licensed RYOBI ecosystem in TTI-served regions.",
+      "buyerRelevance": "The visible brand does not prove the same licensee, specification or battery system applies worldwide."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "TTI's annual report states that RYOBI is a Ryobi Limited trademark used under licence rather than a TTI-owned mark.",
+      "scope": "Trademark and licensee boundary",
+      "buyerCheck": "Identify the regional licensee and product company before mapping manufacturing responsibility."
+    },
+    {
+      "evidence": "Ryobi Limited's 2018 notice says TTI would continue to manufacture and distribute RYOBI power tools and lawn-and-garden equipment in five named regions.",
+      "scope": "Specified product categories and regions",
+      "buyerCheck": "Do not extend the TTI route to countries or product categories not covered by the relevant agreement."
+    },
+    {
+      "evidence": "KYOCERA Industrial Tools succeeded to the former Ryobi Limited power-tool business and now operates its own brand and product route.",
+      "scope": "Transferred Japanese power-tool operation",
+      "buyerCheck": "Confirm whether a product belongs to the TTI-licensed route, Kyocera route or another authorized regional arrangement."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "TTI distributes RYOBI power tools and outdoor equipment in the United States, Canada, Europe, Australia and New Zealand.",
+      "scope": "Officially named TTI regions",
+      "buyerCheck": "Use the local website, packaging, invoice and warranty terms to identify the responsible TTI entity."
+    },
+    {
+      "evidence": "RYOBI is positioned through mass retail, ecommerce and service networks connected to TTI's regional channel strategy.",
+      "scope": "Consumer and professional retail channels",
+      "buyerCheck": "Confirm seller authorization, gray-market restrictions, parts and warranty coverage."
+    },
+    {
+      "evidence": "Kyocera markets power tools through a separate business inherited from Ryobi Limited.",
+      "scope": "Kyocera-served markets and products",
+      "buyerCheck": "Do not assume products from the Kyocera route share specifications, batteries or warranty with TTI-served RYOBI products."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: RYOBI benefits from high consumer recognition and a broad battery ecosystem that can carry cleaning products beside tools and lawn equipment. Its main diligence risk is geographic and legal ambiguity: the trademark owner, TTI licensee, Kyocera successor business, manufacturer, seller and warranty provider can be different parties.",
+    "competitorSlugs": ["dewalt", "worx", "greenworks"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "TTI confirms the RYOBI licence in its annual report",
+      "summary": "TTI continues to distinguish the licensed RYOBI trademark from the brands it owns.",
+      "sourceIds": ["tti-annual-2025"]
+    },
+    {
+      "date": "2018",
+      "title": "Ryobi Limited transfers its power-tool operation",
+      "summary": "Kyocera acquired the former operating business while Ryobi Limited retained the trademark and TTI continued its named regional licence.",
+      "sourceIds": ["ryobi-2018-notice", "kyocera-history"]
+    },
+    {
+      "date": "1943",
+      "title": "Ryobi Limited is founded",
+      "summary": "The Japanese company began as Ryobi Seisakusho and later expanded across several industrial businesses.",
+      "sourceIds": ["ryobi-corporate"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tti-annual-2025",
+      "title": "Techtronic Industries 2025 Annual Report",
+      "publisher": "Techtronic Industries Co. Ltd.",
+      "url": "https://www.ttigroup.com/sites/default/files/2026-03/ar2025.pdf",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "ryobi-2018-notice",
+      "title": "Notice Regarding RYOBI Brand Power Tools",
+      "publisher": "Ryobi Limited",
+      "url": "https://www.ryobi-group.co.jp/en/news/powertools/006732.html",
+      "publishedAt": "2018",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "ryobi-stock",
+      "title": "Stock Information",
+      "publisher": "Ryobi Limited",
+      "url": "https://www.ryobi-group.co.jp/en/ir/stock_information.html",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "ryobi-corporate",
+      "title": "Ryobi Corporate Information",
+      "publisher": "Ryobi Limited",
+      "url": "https://www.ryobi-group.co.jp/en/corp/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "kyocera-history",
+      "title": "KYOCERA Industrial Tools History",
+      "publisher": "KYOCERA Industrial Tools Corporation",
+      "url": "https://www.kyocera-industrialtools.co.jp/en/company/history.html",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "ryobi-cleaning-product",
+      "title": "RYOBI Cordless Cleaning Product",
+      "publisher": "RYOBI Tools",
+      "url": "https://www.ryobitools.com/products/33287218493",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T19:15:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T19:15:00+08:00"
+}

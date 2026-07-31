@@ -1,0 +1,181 @@
+{
+  "status": "published",
+  "slug": "hayward",
+  "name": "Hayward",
+  "aliases": ["Hayward Pool Products", "Hayward Industries", "AquaVac"],
+  "legalName": "Hayward Holdings, Inc.",
+  "legalEntityNote": "Hayward Holdings is the listed parent. Hayward Industries is its primary operating subsidiary, while Hayward Pool Products and regional companies can appear as manufacturers, sellers or warrantors. Public shareholders and dealers are not parent companies.",
+  "officialWebsite": "https://www.hayward.com/",
+  "headline": "Hayward ownership, pool-equipment portfolio, manufacturing and distribution",
+  "description": "A source-backed profile of public Hayward Holdings, operating entities, pool-cleaner and equipment platforms, global factories, distribution and warranty checks.",
+  "metaDescription": "Hayward profile: public ownership, Hayward Industries and Pool Products entities, manufacturing, distribution, cleaners and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Hayward. Listed ownership, operating entities, beneficial shareholders, factories, dealers and warranty roles are identified separately.",
+  "headquarters": "Charlotte, North Carolina, United States",
+  "founded": "1925",
+  "heroImage": "/images/brands/hayward/hero-hayward-sharkvac.webp",
+  "heroImageAlt": "Hayward SharkVac robotic pool cleaner on a blue background",
+  "logoImage": "/images/brands/hayward/logo.webp",
+  "logoImageAlt": "Hayward logo",
+  "logoSourceUrl": "https://www.hayward.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/hayward-pool-products-ownership-entity-map.webp",
+      "alt": "Hayward ownership and entity map from public shareholders to product responsibilities",
+      "caption": "Hayward Holdings is the listed parent; operating companies and product-level parties require separate verification."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/hayward-buyer-responsibility-chain.webp",
+      "alt": "Hayward buyer responsibility chain covering manufacturer, factory, seller and warranty entity",
+      "caption": "A group factory list cannot identify the responsible party or origin for an exact Hayward SKU."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/hayward-pentair-fluidra-platform-comparison.webp",
+      "alt": "Hayward, Pentair and Fluidra pool-equipment platform comparison",
+      "caption": "Hayward competes as a broad pool-equipment platform rather than only a robotic-cleaner specialist."
+    }
+  ],
+  "ownership": {
+    "summary": "Hayward Holdings, Inc. is a publicly traded company listed on the New York Stock Exchange under HAYW and owned collectively by its shareholders. Hayward Industries, Inc. is its primary operating subsidiary. Large institutional beneficial holders disclosed in the 2026 proxy are shareholders, not a separate corporate parent for the Hayward brand.",
+    "parentCompany": "Hayward Holdings, Inc. is the public parent"
+  },
+  "leadership": [
+    {
+      "name": "Kevin Holleran",
+      "role": "President and Chief Executive Officer",
+      "context": "Hayward's 2025 Form 10-K and 2026 proxy identify Kevin Holleran as president and chief executive officer."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Automatic pool cleaners",
+      "positioning": "Robotic, suction, pressure and in-floor cleaner systems span residential and professional pool-care applications.",
+      "buyerRelevance": "Confirm cleaner architecture, pool compatibility, cable or hose system, parts, authorized service and model warranty."
+    },
+    {
+      "name": "Pumps and filtration",
+      "positioning": "Variable-speed pumps and filters form core circulation and water-quality platforms for new pools and replacement demand.",
+      "buyerRelevance": "System sizing, hydraulic compatibility, energy regulation, installer qualification and local approval must be checked."
+    },
+    {
+      "name": "Heating and sanitization",
+      "positioning": "Gas heaters, heat pumps, salt systems and sanitizers broaden Hayward into complete pool-environment management.",
+      "buyerRelevance": "Fuel, electrical, climate, water chemistry, certification and service requirements are market and model specific."
+    },
+    {
+      "name": "Automation, lighting and controls",
+      "positioning": "Connected controls, LED lighting and water-feature systems integrate multiple equipment categories.",
+      "buyerRelevance": "Buyers should verify ecosystem compatibility, software region, installer support, cybersecurity updates and replacement parts."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Hayward reported seven manufacturing facilities at the end of 2025: four in the United States, two in Spain and one in China.",
+      "scope": "Group manufacturing footprint",
+      "buyerCheck": "A factory list does not identify the plant or origin of an exact cleaner, pump, controller or replacement part."
+    },
+    {
+      "evidence": "Hayward says more than 3.8 million products were manufactured in its U.S. facilities in 2025 and represented 87% of sales value.",
+      "scope": "Company-reported U.S. production",
+      "buyerCheck": "Do not turn the group-level figure into a blanket Made in USA claim for every product."
+    },
+    {
+      "evidence": "Product manuals and legal exhibits name specific Hayward Pool Products entities for defined equipment or countries.",
+      "scope": "Model and regional legal-entity evidence",
+      "buyerCheck": "Match the manual, label, declaration and warranty to the exact SKU, market and production period."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Hayward estimates that about 80% of U.S. residential pool-equipment sales move through distributors, 15% directly to retailers and 5% to builders.",
+      "scope": "Management estimate for U.S. channels",
+      "buyerCheck": "Confirm the actual seller, distributor authorization and warranty route for the transaction."
+    },
+    {
+      "evidence": "The company estimates European sales at about 77% through distributors and 23% through direct sales.",
+      "scope": "Management estimate for European channels",
+      "buyerCheck": "Verify the regional company, importer, invoice seller, service center and applicable commercial terms."
+    },
+    {
+      "evidence": "Hayward serves other international markets through regional operations and established distributors.",
+      "scope": "International route to market",
+      "buyerCheck": "Confirm current territory rights, product availability, local approvals, parts stock and technician coverage."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Hayward's advantage is system breadth across circulation, filtration, heating, sanitization, cleaning, lighting and automation, reinforced by professional distribution and a substantial manufacturing footprint. Its diligence challenge is translating a public-company and factory-level picture into exact model responsibility across operating entities, distributors, dealers and warranty documents.",
+    "competitorSlugs": ["polaris", "maytronics", "aiper"]
+  },
+  "developments": [
+    {
+      "date": "2026-04",
+      "title": "Hayward reports current public ownership",
+      "summary": "The 2026 proxy identifies dated beneficial holders while confirming that Hayward Holdings remains the listed parent owned by shareholders.",
+      "sourceIds": ["hayward-proxy-2026"]
+    },
+    {
+      "date": "2026-02",
+      "title": "Hayward reports seven manufacturing facilities",
+      "summary": "The 2025 Form 10-K maps group facilities across the United States, Spain and China and details distribution channels.",
+      "sourceIds": ["hayward-10k-2025"]
+    },
+    {
+      "date": "2021-03-12",
+      "title": "Hayward begins trading on the NYSE",
+      "summary": "The IPO established the current public-company ownership era under ticker HAYW.",
+      "sourceIds": ["hayward-ipo"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hayward-10k-2025",
+      "title": "Hayward Holdings 2025 Form 10-K",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/1834622/000183462226000008/hayw-20251231.htm",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "hayward-proxy-2026",
+      "title": "Hayward Holdings 2026 Proxy Statement",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/1834622/000183462226000026/hayw-20260402.htm",
+      "publishedAt": "2026",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "hayward-ipo",
+      "title": "Hayward Holdings Announces Pricing of Initial Public Offering",
+      "publisher": "Hayward Holdings",
+      "url": "https://investor.hayward.com/investor-news/news-details/2021/Hayward-Holdings-Announces-Pricing-of-Initial-Public-Offering/default.aspx",
+      "publishedAt": "2021",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "hayward-manufacturing",
+      "title": "Hayward U.S. Manufacturing",
+      "publisher": "Hayward",
+      "url": "https://us.hayward.com/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "hayward-sharkvac",
+      "title": "SharkVac Robotic Pool Cleaner",
+      "publisher": "Hayward",
+      "url": "https://www.hayward.com/sharkvac-automatic-robotic-pool-cleaner-with-caddy-cart-open-line-w3rc9742cuby.html",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "hayward-warranty-sample",
+      "title": "Hayward Product Manual and Limited Warranty Sample",
+      "publisher": "Hayward",
+      "url": "https://hayward.com/media/akeneo_connector/asset_files/I/S/ISPFSERIES_RevG_c00b.pdf",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T19:25:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T19:25:00+08:00"
+}

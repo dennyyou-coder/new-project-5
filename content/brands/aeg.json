@@ -1,0 +1,159 @@
+{
+  "status": "published",
+  "slug": "aeg",
+  "name": "AEG",
+  "aliases": ["AEG Appliances", "AEG Hausgeräte"],
+  "legalName": "AB Electrolux (publ)",
+  "legalEntityNote": "AEG is an appliance brand owned by AB Electrolux. Regional Electrolux companies can operate websites, sell products or provide service, while licensed categories and individual factories require separate verification.",
+  "officialWebsite": "https://www.aeg.com/",
+  "headline": "AEG ownership, Electrolux relationship, floor care and manufacturing evidence",
+  "description": "A source-backed profile of AEG's Electrolux ownership, German brand heritage, appliance and floor-care portfolio, regional operators and model-level factory checks.",
+  "metaDescription": "AEG profile: Electrolux ownership, German heritage, vacuum and appliance portfolio, factories, regional entities and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with AEG or Electrolux. Brand ownership, regional operation, licensing, manufacturing and warranty responsibility are separate layers.",
+  "headquarters": "Stockholm, Sweden at parent-group level",
+  "founded": "1883 brand heritage; AEG Hausgeräte became wholly owned by Electrolux in 1994",
+  "heroImage": "/images/brands/aeg/hero-aeg-floorcare.webp",
+  "heroImageAlt": "AEG QX9 cordless floor-care system and accessories",
+  "logoImage": "/images/brands/aeg/logo.webp",
+  "logoImageAlt": "AEG logo",
+  "logoSourceUrl": "https://www.aeg.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/aeg-electrolux-brand-relationship-map.webp",
+      "alt": "Map of AB Electrolux ownership, AEG brand rights and related appliance brands",
+      "caption": "This map separates AEG's listed parent, brand rights, regional operators and historical floor-care relationships."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/blog/who-owns-aeg-electrolux-cover.webp",
+      "alt": "AEG ownership and appliance portfolio overview",
+      "caption": "AEG retains German engineering heritage while operating as a core appliance brand inside Sweden's Electrolux Group."
+    }
+  ],
+  "ownership": {
+    "summary": "AB Electrolux owns AEG. Electrolux acquired AEG Hausgeräte in 1994 and obtained worldwide rights to the AEG brand and corporate name in 2004. AEG is therefore a German-origin brand inside a Swedish listed appliance group, not an independent German appliance company today.",
+    "parentCompany": "AB Electrolux (publ)"
+  },
+  "leadership": [
+    {
+      "name": "Emil Rathenau",
+      "role": "Founder of the original AEG business",
+      "context": "Electrolux's AEG history traces the business to Emil Rathenau's 1883 electrical company; the role is historical and does not describe current group governance."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Cordless and canister vacuum cleaners",
+      "positioning": "AEG sells cordless stick, handheld and canister floor-care products in selected European markets.",
+      "buyerRelevance": "Check the exact regional range, battery, filtration, included tools, manufacturer, origin and warranty."
+    },
+    {
+      "name": "Laundry appliances",
+      "positioning": "Washing machines, tumble dryers and washer-dryers form a major part of AEG's precision-performance appliance position.",
+      "buyerRelevance": "Voltage, dimensions, energy labels, installation, connected services and service terms vary by market."
+    },
+    {
+      "name": "Cooking and kitchen appliances",
+      "positioning": "Ovens, hobs, cookers, refrigerators and dishwashers extend AEG across the fitted-kitchen system.",
+      "buyerRelevance": "Distributors should verify regional specifications, installation responsibility, energy performance and parts support."
+    },
+    {
+      "name": "Wellbeing and licensed extensions",
+      "positioning": "Electrolux can extend group brands into selected wellbeing or licensed product categories.",
+      "buyerRelevance": "A licensed AEG product may use a different operator, factory and warranty route from core Electrolux appliances."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Electrolux reports an EMEA/APAC production network spanning Germany, Poland, Italy, Hungary, Romania, Ukraine, Egypt, Thailand, China and Australia.",
+      "scope": "Electrolux group factory network",
+      "buyerCheck": "Do not assign a group factory or country to an AEG model without product-level evidence."
+    },
+    {
+      "evidence": "AEG and Electrolux products can share group technology, procurement or manufacturing resources while remaining separate commercial brands.",
+      "scope": "Shared group capabilities",
+      "buyerCheck": "Compare the exact model specification, declaration, rating plate and service documentation."
+    },
+    {
+      "evidence": "The AEG name can also be licensed beyond directly operated appliance lines.",
+      "scope": "Licensed categories",
+      "buyerCheck": "Identify the trademark authorizer, legal manufacturer, importer, factory and warrantor for the covered product."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "AEG is one of Electrolux Group's three main appliance brands and is particularly important in Europe and nearby markets.",
+      "scope": "Group brand positioning",
+      "buyerCheck": "Confirm that the target category is officially offered and supported in the destination market."
+    },
+    {
+      "evidence": "AEG's UK shop terms name Electrolux plc as the local site operator and seller route while identifying AB Electrolux as brand owner.",
+      "scope": "United Kingdom",
+      "buyerCheck": "Copy the actual contracting company from the local terms, invoice and warranty."
+    },
+    {
+      "evidence": "AEG appliances reach buyers through national sites, appliance retailers, kitchen specialists and service partners.",
+      "scope": "Market-specific omnichannel distribution",
+      "buyerCheck": "Verify seller authorization, delivery, installation, returns, parts and warranty coverage."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: AEG combines strong German engineering heritage with Electrolux Group scale and a broad European appliance portfolio. The brand can connect floor care to laundry and kitchen categories, but buyers must avoid converting brand heritage or group factory data into a blanket origin claim.",
+    "competitorSlugs": ["bosch-home-appliances", "miele", "philips-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2026-02",
+      "title": "Electrolux confirms AEG as a main group brand",
+      "summary": "The 2025 annual report positions AEG around precision performance and engineering excellence within the listed group.",
+      "sourceIds": ["electrolux-annual-report-2025"]
+    },
+    {
+      "date": "2004-06",
+      "title": "Electrolux obtains worldwide AEG brand rights",
+      "summary": "Electrolux's regulatory history records the acquisition of worldwide rights to the AEG brand and corporate name.",
+      "sourceIds": ["electrolux-aeg-history"]
+    },
+    {
+      "date": "1994",
+      "title": "AEG Hausgeräte becomes wholly owned by Electrolux",
+      "summary": "The appliance business moved fully into Electrolux, completing the core corporate ownership transition.",
+      "sourceIds": ["electrolux-aeg-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "electrolux-annual-report-2025",
+      "title": "Electrolux Group Annual Report 2025",
+      "publisher": "AB Electrolux",
+      "url": "https://www.electroluxgroup.com/wp-content/uploads/sites/2/2026/02/Annual-Report-2025-1.pdf",
+      "publishedAt": "2026-02",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "electrolux-aeg-history",
+      "title": "AEG history inside Electrolux Group",
+      "publisher": "Electrolux Group",
+      "url": "https://www.electroluxgroup.com/en/?p=28256",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "aeg-uk-terms",
+      "title": "AEG UK Shop Terms and Conditions",
+      "publisher": "AEG / Electrolux plc",
+      "url": "https://www.aeg.co.uk/overlays/shop-terms-and-conditions/",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "aeg-cordless-guide",
+      "title": "AEG Cordless Vacuum Cleaner Buying Guide",
+      "publisher": "AEG",
+      "url": "https://www.aeg.co.uk/wellbeing/discover/buying-guides/cordless-cleaners/",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T19:00:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T19:00:00+08:00"
+}

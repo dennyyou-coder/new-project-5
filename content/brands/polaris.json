@@ -1,0 +1,174 @@
+{
+  "status": "published",
+  "slug": "polaris",
+  "name": "Polaris",
+  "aliases": ["Polaris Pool", "Polaris Pool Cleaners", "Polaris Vac-Sweep"],
+  "legalName": "Zodiac Pool Systems LLC",
+  "legalEntityNote": "Polaris is a pool-equipment brand inside the Fluidra group. Zodiac Pool Systems LLC owns key Polaris cleaner trademarks and is a documented North American warranty entity. Fluidra, Zodiac, regional sellers, factories and dealers can have separate roles. Polaris pool cleaners are unrelated to powersports company Polaris Inc.",
+  "officialWebsite": "https://www.polarispool.com/",
+  "headline": "Polaris pool-cleaner ownership, Fluidra and Zodiac structure, products and channels",
+  "description": "A source-backed profile of Polaris pool cleaners inside Fluidra, the Zodiac trademark and warranty entities, product platforms, manufacturing checks and channels.",
+  "metaDescription": "Polaris pool-cleaner profile: Fluidra ownership, Zodiac entities, pressure and robotic cleaners, manufacturing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Polaris, Fluidra or Zodiac. This profile concerns Polaris pool cleaners, not Polaris Inc. powersports products.",
+  "headquarters": "Carlsbad, California, United States for Zodiac Pool Systems LLC; ultimate parent Fluidra is based in Spain",
+  "founded": "Polaris pool-cleaner history dates to the 1970s; acquired by Zodiac in 2005",
+  "heroImage": "/images/brands/polaris/hero-polaris-freedom-plus.webp",
+  "heroImageAlt": "Polaris FREEDOM Plus cordless robotic pool cleaner",
+  "logoImage": "/images/brands/polaris/logo.webp",
+  "logoImageAlt": "Polaris pool products logo",
+  "logoSourceUrl": "https://www.polarispool.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/blog/polaris-fluidra-zodiac-ownership-cover.webp",
+      "alt": "Polaris pool-cleaner ownership map from Fluidra through Zodiac",
+      "caption": "Polaris sits inside listed Fluidra through the Zodiac brand and entity history; it is not owned by Polaris Inc."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/blog/polaris-fluidra-regional-responsibility-map.webp",
+      "alt": "Polaris regional manufacturer, seller and warranty responsibility map",
+      "caption": "The Fluidra parent, trademark owner, regional seller, factory and warranty party are separate checks."
+    },
+    {
+      "placement": "competition",
+      "src": "/images/blog/beatbot-vs-polaris-robotic-pool-cleaners.webp",
+      "alt": "Beatbot and Polaris robotic pool-cleaner comparison",
+      "caption": "Polaris competes through both established pool channels and newer cordless robotic platforms."
+    }
+  ],
+  "ownership": {
+    "summary": "Polaris pool cleaners belong to Fluidra, S.A., the publicly listed Spanish pool-equipment group. Zodiac acquired Polaris Pool Systems in 2005, and the 2018 Fluidra-Zodiac merger brought Polaris into the combined group. Zodiac Pool Systems LLC remains the owner of key Polaris cleaner trademarks and a named North American warranty entity. This brand is unrelated to Polaris Inc.",
+    "parentCompany": "Fluidra, S.A."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Pressure-side pool cleaners",
+      "positioning": "Polaris built its long-standing identity around pressure-side cleaners and booster-pump systems.",
+      "buyerRelevance": "Confirm pool configuration, booster-pump need, hose kit, debris bag, parts and dealer support."
+    },
+    {
+      "name": "Robotic pool cleaners",
+      "positioning": "Corded robots cover residential and commercial pools through multiple navigation, filtration and cleaning tiers.",
+      "buyerRelevance": "Cable length, pool size, surface compatibility, cycle, caddy, app and warranty vary by model and market."
+    },
+    {
+      "name": "Cordless robotic cleaners",
+      "positioning": "The FREEDOM range brings battery-powered and app-connected options into Polaris' cleaner portfolio.",
+      "buyerRelevance": "Verify battery serviceability, charging conditions, retrieval method, connectivity and regional parts support."
+    },
+    {
+      "name": "Suction and specialty cleaners",
+      "positioning": "Suction-side, spa, surface and specialty products broaden the brand beyond one robotic architecture.",
+      "buyerRelevance": "Assortment planning should distinguish hydraulic, corded robotic and battery platforms rather than treating all Polaris cleaners alike."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Fluidra reports a global manufacturing network, but a group factory count does not map a particular Polaris cleaner to a plant.",
+      "scope": "Fluidra group footprint",
+      "buyerCheck": "Use the exact product label, declaration, invoice and shipment documents to identify manufacturer and origin."
+    },
+    {
+      "evidence": "Zodiac Pool Systems LLC owns key Polaris cleaner trademarks and issues a reviewed North American limited warranty.",
+      "scope": "Trademark and warranty roles",
+      "buyerCheck": "Do not treat trademark ownership or warranty administration as proof of the physical factory."
+    },
+    {
+      "evidence": "Polaris product families include hydraulic, corded robotic and cordless systems that can use different technical and sourcing routes.",
+      "scope": "Portfolio-level manufacturing boundary",
+      "buyerCheck": "Verify the legal manufacturer, model number, production batch, origin and spare-parts route for each platform."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Fluidra operates a large international branch and distribution network serving professional pool channels.",
+      "scope": "Group distribution infrastructure",
+      "buyerCheck": "Confirm which Fluidra or distributor entity sells the target product and territory."
+    },
+    {
+      "evidence": "Polaris products are sold through authorized pool dealers, distributors and selected online or retail channels.",
+      "scope": "Professional and consumer channels",
+      "buyerCheck": "Verify dealer authorization, installation requirements, serial-number eligibility and warranty coverage."
+    },
+    {
+      "evidence": "North American and Australian warranty documents name different regional Fluidra companies and publish market-specific terms.",
+      "scope": "Regional warranty structure",
+      "buyerCheck": "Use the warranty for the destination country and exact model; do not rely on another market's coverage."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Polaris combines one of the pool industry's best-known cleaner names with Fluidra's broad equipment, dealer and service platform. Its challenge is portfolio and entity complexity: buyers must separate hydraulic, corded and cordless products and confirm which Zodiac or Fluidra entity made, sold and warranted the exact unit.",
+    "competitorSlugs": ["maytronics", "aiper", "beatbot"]
+  },
+  "developments": [
+    {
+      "date": "2020",
+      "title": "North American Zodiac organization adopts Fluidra identity",
+      "summary": "The corporate integration retained product brands including Polaris while aligning the regional organization under Fluidra.",
+      "sourceIds": ["fluidra-north-america"]
+    },
+    {
+      "date": "2018-07",
+      "title": "Fluidra and Zodiac complete their merger",
+      "summary": "The transaction brought the Polaris brand into the combined listed Fluidra group.",
+      "sourceIds": ["fluidra-zodiac-merger"]
+    },
+    {
+      "date": "2005",
+      "title": "Zodiac acquires Polaris Pool Systems",
+      "summary": "The acquisition created the Zodiac ownership link that preceded the later Fluidra merger.",
+      "sourceIds": ["zodiac-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fluidra-north-america",
+      "title": "Fluidra Announces North American Integration",
+      "publisher": "Fluidra USA",
+      "url": "https://www.fluidrausa.com/news-media/press/2020/fluidra-merger",
+      "publishedAt": "2020",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "fluidra-zodiac-merger",
+      "title": "Fluidra and Zodiac Complete Merger",
+      "publisher": "Fluidra",
+      "url": "https://www.fluidra.com/uploads/media/default/0001/01/a2b0b4b587f3fcffaa73d698253494f0dab8f23e.pdf",
+      "publishedAt": "2018",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "zodiac-history",
+      "title": "Zodiac Corporate History",
+      "publisher": "Zodiac Australia",
+      "url": "https://www.zodiac.com.au/institutional/about-us",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "polaris-trademark",
+      "title": "POLARIS VAC-SWEEP Trademark Record",
+      "publisher": "Canadian Intellectual Property Office",
+      "url": "https://ised-isde.canada.ca/cipo/trademark-search/478687?wbdisable=true",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "polaris-warranty",
+      "title": "Polaris Limited Warranty",
+      "publisher": "Zodiac Pool Systems LLC",
+      "url": "https://www.fluidrausa.com/-/media/zodiac/global/downloads/corporate/h0355004.pdf?rev=-1",
+      "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "polaris-freedom-plus",
+      "title": "FREEDOM Plus Cordless Robotic Cleaner",
+      "publisher": "Polaris",
+      "url": "https://www.polarispool.com/products/pool-cleaners/robotic-pool-cleaners/freedom-plus-cordless-robotic-cleaner-p",
+      "accessedAt": "2026-07-31"
+    }
+  ],
+  "publishedAt": "2026-07-31T19:20:00+08:00",
+  "lastVerified": "2026-07-31",
+  "lastModified": "2026-07-31T19:20:00+08:00"
+}
