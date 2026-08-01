@@ -1,8 +1,16 @@
 import type { BrandContentVisual } from "@/lib/brands";
 
+const visualLabels: Record<BrandContentVisual["placement"], string> = {
+  ownership: "Ownership & entity evidence",
+  portfolio: "Product portfolio reference",
+  operations: "Manufacturing & channel evidence",
+  competition: "Competitive context"
+};
+
 export function BrandVisual({ visual }: { visual: BrandContentVisual }) {
   return (
     <figure className="brand-visual">
+      <div className="brand-visual__eyebrow">{visualLabels[visual.placement]}</div>
       <a
         className="brand-visual-link"
         href={visual.src}

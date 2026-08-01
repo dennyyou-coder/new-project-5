@@ -52,6 +52,7 @@ export type BrandProfile = {
   founded: string;
   heroImage?: string;
   heroImageAlt?: string;
+  heroImageCaption?: string;
   logoImage: string;
   logoImageAlt: string;
   logoSourceUrl: string;
@@ -367,6 +368,7 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
 
   optionalRecordText(candidate, "heroImage", "heroImage", errors);
   optionalRecordText(candidate, "heroImageAlt", "heroImageAlt", errors);
+  optionalRecordText(candidate, "heroImageCaption", "heroImageCaption", errors);
   if (hasText(candidate.heroImage) && !hasText(candidate.heroImageAlt)) {
     errors.push("heroImageAlt is required when heroImage is provided.");
   }

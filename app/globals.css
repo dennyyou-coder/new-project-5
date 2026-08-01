@@ -23835,6 +23835,47 @@ button.contact-help-card > .contact-help-card-copy > span {
   object-fit: cover;
 }
 
+.brand-hero-media {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 14px;
+  background: rgba(7, 26, 58, 0.28);
+  box-shadow: 0 18px 42px rgba(4, 18, 42, 0.18);
+}
+
+.brand-hero-media img {
+  aspect-ratio: 16 / 10;
+}
+
+.brand-hero-media__eyebrow {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  padding: 5px 8px;
+  color: #fff;
+  background: rgba(5, 23, 55, 0.76);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.brand-hero-media figcaption {
+  padding: 8px 12px 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(5, 23, 55, 0.66);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .brand-hero-identity {
   display: flex;
   align-items: center;
@@ -24166,6 +24207,18 @@ button.contact-help-card > .contact-help-card-copy > span {
   background: var(--soft);
 }
 
+.brand-visual__eyebrow {
+  padding: 9px 14px 8px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  background: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .brand-visual img {
   display: block;
   width: 100%;
@@ -24311,6 +24364,10 @@ button.contact-help-card > .contact-help-card-copy > span {
   .brand-detail-hero img {
     height: auto;
     aspect-ratio: 4 / 3;
+  }
+
+  .brand-hero-media img {
+    aspect-ratio: 16 / 10;
   }
 
   .brand-logo--hero {

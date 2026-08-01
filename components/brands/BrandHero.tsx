@@ -73,11 +73,17 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
           </div>
 
           {profile.heroImage ? (
-            <img
-              src={profile.heroImage}
-              alt={profile.heroImageAlt || ""}
-              decoding="async"
-            />
+            <figure className="brand-hero-media">
+              <div className="brand-hero-media__eyebrow">Brand product reference</div>
+              <img
+                src={profile.heroImage}
+                alt={profile.heroImageAlt || ""}
+                decoding="async"
+              />
+              {profile.heroImageCaption ? (
+                <figcaption>{profile.heroImageCaption}</figcaption>
+              ) : null}
+            </figure>
           ) : null}
         </div>
 

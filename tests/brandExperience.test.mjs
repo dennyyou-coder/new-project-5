@@ -340,6 +340,7 @@ test("brand visual primitives preserve logo geometry and semantic figures", () =
   assert.match(logo, /alt=\{profile\.logoImageAlt\}/);
   assert.match(visual, /<figure/);
   assert.match(visual, /<figcaption>/);
+  assert.match(visual, /className="brand-visual__eyebrow"/);
   assert.match(visual, /width=\{1600\}/);
   assert.match(visual, /height=\{900\}/);
   assert.match(table, /<table/);
@@ -1004,6 +1005,7 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
 
   assert.match(detailRoute, /className="guides-hub brand-hub brand-detail"/);
   assert.match(hero, /className="brand-detail-hero"/);
+  assert.match(hero, /className="brand-hero-media"/);
   assert.match(hero, /className="brand-hero-identity"/);
   assert.match(hero, /className="brand-key-facts"/);
   assert.match(hero, /<BrandDataTable/);
