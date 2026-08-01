@@ -113,6 +113,6 @@ test("directory feature and profile use approved existing content", () => {
   assert.match(directorySeries, /objectFit/);
   assert.match(directorySidebar, /Denny You/);
   assert.match(directorySidebar, /Founder, World Clean Biz/);
-  assert.match(directorySidebar, /Organizer, World Clean Expo/);
+  assert.match(directorySidebar, /Organizer, WCB Expo/);
   assert.match(directorySidebar, /since 2006/);
 });

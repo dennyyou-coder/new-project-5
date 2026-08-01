@@ -135,7 +135,7 @@ export function BlogBusinessLinks() {
       <nav aria-label="World Clean Biz business resources">
         <Link href="/reports">Explore Market Reports</Link>
         <Link href="/sourcing">Discuss Product Opportunities</Link>
-        <Link href="/world-clean-expo">Explore World Clean Expo</Link>
+        <Link href="/wcb-expo">Explore WCB Expo</Link>
       </nav>
     </section>
   );

@@ -6,7 +6,7 @@ import { TallyButton } from "@/components/LeadForms";
 export const metadata: Metadata = {
   title: "About Denny You | Cleaning Industry Entrepreneur & Connector",
   description:
-    "Meet Denny You, founder of World Clean Biz, organizer of World Clean Expo and a cleaning industry entrepreneur connected across products, supply chains, buyers and markets.",
+    "Meet Denny You, founder of World Clean Biz, organizer of WCB Expo and a cleaning industry entrepreneur connected across products, supply chains, buyers and markets.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Denny You | World Clean Biz",
@@ -42,7 +42,7 @@ const trustFacts: { icon: IconName; title: string; text: string }[] = [
   },
   {
     icon: "users",
-    title: "Organizer Of World Clean Expo",
+    title: "Organizer Of WCB Expo",
     text: "Building an industry platform that connects products, companies, buyers, experts, capital and media."
   }
 ];
@@ -99,11 +99,11 @@ const businessPillars = [
   },
   {
     eyebrow: "CONNECT THE INDUSTRY",
-    title: "World Clean Expo & Business Connections",
+    title: "WCB Expo & Business Connections",
     text: "A platform for products, companies, buyers, forums and commercial conversations across the cleaning industry.",
     image: "/images/site-refresh/real/exhibition-hall.webp",
-    href: "/world-clean-expo",
-    cta: "Explore World Clean Expo"
+    href: "/wcb-expo",
+    cta: "Explore WCB Expo"
   }
 ];
 
@@ -148,7 +148,7 @@ const journey = [
   },
   {
     marker: "TODAY",
-    title: "World Clean Biz & World Clean Expo",
+    title: "World Clean Biz & WCB Expo",
     text: "Connecting intelligence, products, supply chains, buyers and industry relationships on a global platform."
   }
 ];
@@ -163,13 +163,13 @@ export default function AboutPage() {
             <h1>Inside The Cleaning Industry Since 2006. Connected Across The Entire Value Chain.</h1>
             <p>
               Denny You is the founder of World Clean Biz and organizer of
-              World Clean Expo—an industry entrepreneur, product builder and
+              WCB Expo—an industry entrepreneur, product builder and
               professional voice connecting products, supply chains, buyers,
               capital and market opportunities.
             </p>
             <div className="about-network-hero-tags">
               <span>Industry Entrepreneur</span>
-              <span>World Clean Expo Organizer</span>
+              <span>WCB Expo Organizer</span>
               <span>Product &amp; Market Judgment</span>
             </div>
             <div className="hero-actions">
@@ -194,7 +194,7 @@ export default function AboutPage() {
             />
             <div>
               <span>DENNY YOU</span>
-              <strong>Founder, World Clean Biz<br />Organizer, World Clean Expo</strong>
+              <strong>Founder, World Clean Biz<br />Organizer, WCB Expo</strong>
             </div>
           </div>
         </div>
@@ -224,7 +224,7 @@ export default function AboutPage() {
             <p className="eyebrow">AN INDUSTRY-WIDE PROFESSIONAL NETWORK</p>
             <h2>Connected To The People Who Build, Buy, Fund And Shape The Industry.</h2>
             <p>
-              As the organizer of World Clean Expo, Denny has built one of the
+              As the organizer of WCB Expo, Denny has built one of the
               cleaning industry’s most extensive professional networks across
               manufacturers, suppliers, brands, buyers, distributors,
               investors, experts and media.
@@ -349,9 +349,9 @@ export default function AboutPage() {
               <Link className="button" href="/reports">Get Free Market Reports</Link>
             </article>
             <article>
-              <span>03</span><h3>Connect Through World Clean Expo</h3>
+              <span>03</span><h3>Connect Through WCB Expo</h3>
               <p>Follow exhibitor, visitor and business matching opportunities.</p>
-              <Link className="button" href="/world-clean-expo">Follow World Clean Expo</Link>
+              <Link className="button" href="/wcb-expo">Follow WCB Expo</Link>
             </article>
           </div>
         </div>

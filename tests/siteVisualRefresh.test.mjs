@@ -67,7 +67,7 @@ test("phase two mixes real photography with restrained generated visuals", () =>
     "app/page.tsx",
     "app/about/page.tsx",
     "app/reports/page.tsx",
-    "app/world-clean-expo/page.tsx"
+    "app/wcb-expo/page.tsx"
   ].map(read).join("\n");
   assert.match(files, /\/images\/site-refresh\/real\/city-architecture\.webp/);
   assert.match(files, /\/images\/site-refresh\/real\/modern-factory\.webp/);
@@ -80,7 +80,7 @@ test("Denny remains visible in the four trust-critical pages", () => {
   const about = read("app/about/page.tsx");
   const sourcing = read("app/sourcing/page.tsx");
   const contact = read("app/contact/page.tsx");
-  const expo = read("app/world-clean-expo/page.tsx");
+  const expo = read("app/wcb-expo/page.tsx");
   assert.match(about, /about-hero-denny\.webp/);
   assert.match(about, /sourcing-supplier-meeting-2026\.jpg/);
   assert.match(sourcing, /about-hero-denny\.webp/);

@@ -12,7 +12,7 @@ const blogCtaSource = await readFile(
 );
 const homeSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
 const reportsSource = await readFile(new URL("../app/reports/page.tsx", import.meta.url), "utf8");
-const expoSource = await readFile(new URL("../app/world-clean-expo/page.tsx", import.meta.url), "utf8");
+const expoSource = await readFile(new URL("../app/wcb-expo/page.tsx", import.meta.url), "utf8");
 const contactSource = await readFile(new URL("../app/contact/page.tsx", import.meta.url), "utf8");
 const blogConversionSource = await readFile(
   new URL("../lib/blogConversion.ts", import.meta.url),

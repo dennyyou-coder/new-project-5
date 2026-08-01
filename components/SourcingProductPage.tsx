@@ -96,7 +96,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
                 <p>Denny reviews whether the opportunity, product evidence, supplier capability and execution model reinforce one another strongly enough to justify the next investment—not whether the quotation looks attractive.</p>
                 <ul>
                   <li>Founder, World Clean Biz</li>
-                  <li>Organizer, World Clean Expo</li>
+                  <li>Organizer, WCB Expo</li>
                   <li>Inside the cleaning industry since 2006</li>
                 </ul>
               </div>

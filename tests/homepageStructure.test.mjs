@@ -17,6 +17,7 @@ const seriesComponentSource = await readFile(
 test("homepage exposes the streamlined commercial journey", () => {
   const sectionNames = [
     "home-v9-hero",
+    "home-v9-expo-campaign",
     "home-v9-brands",
     "home-v9-pathways",
     "home-v9-trust",
@@ -28,6 +29,18 @@ test("homepage exposes the streamlined commercial journey", () => {
   for (const sectionName of sectionNames) {
     assert.match(homeSource, new RegExp(`className=\\"[^\\"]*${sectionName}`));
   }
+});
+
+test("homepage gives the confirmed 2026 WCB Expo an immediate visitor entry", () => {
+  assert.match(homeSource, /2026 WCB International Cleaning Appliance Expo/);
+  assert.match(homeSource, /18–20 November 2026/);
+  assert.match(homeSource, /Suzhou, China/);
+  assert.match(homeSource, /href="\/wcb-expo#visitor-interest"/);
+  assert.match(homeSource, /Plan Your Visit/);
+  assert.ok(
+    homeSource.indexOf("home-v9-expo-campaign") <
+      homeSource.indexOf("home-v9-categories")
+  );
 });
 
 test("homepage prioritizes sourcing and separates secondary lead intents", () => {
@@ -127,7 +140,7 @@ test("homepage trust section includes three formal testimonials", () => {
 test("homepage replaces the oversized business section with a compact conversion bar", () => {
   assert.match(homeSource, /className="[^"]*home-v9-conversion-bar/);
   assert.match(homeSource, /Have A Product Or Sourcing Project\?/);
-  assert.match(homeSource, /Planning For World Clean Expo\?/);
+  assert.match(homeSource, /Planning For WCB Expo\?/);
   assert.doesNotMatch(homeSource, /Two Direct Business Paths/);
 });
 
@@ -143,7 +156,7 @@ test("header keeps one unified content entry and removes the fixed report CTA", 
     "Brand Intelligence",
     "Sourcing",
     "Market Reports",
-    "World Clean Expo",
+    "WCB Expo",
     "About",
     "Contact"
   ]) {

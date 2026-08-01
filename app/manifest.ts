@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "World Clean Biz",
     short_name: "World Clean Biz",
     description:
-      "Global cleaning industry intelligence, market reports, sourcing context, and World Clean Expo information.",
+      "Global cleaning industry intelligence, market reports, sourcing context, and WCB Expo information.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

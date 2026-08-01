@@ -47,12 +47,12 @@ const pathways = [
   },
   {
     number: "03",
-    eyebrow: "World Clean Expo",
+    eyebrow: "WCB Expo",
     title: "Move From Online Signals To Real Connections",
     text: "Meet manufacturers, brands, suppliers and buyers through the next global cleaning industry platform.",
     image: "/images/site-refresh/real/exhibition-hall.webp",
     imageAlt: "Cleaning equipment exhibition and industry connections",
-    links: [{ href: "/world-clean-expo", label: "Explore World Clean Expo" }]
+    links: [{ href: "/wcb-expo", label: "Explore WCB Expo" }]
   }
 ];
 
@@ -161,6 +161,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="home-v9-expo-campaign" aria-labelledby="home-wcb-expo-title">
+        <div className="home-v9-container home-v9-expo-campaign-grid">
+          <div className="home-v9-expo-campaign-mark" aria-hidden="true">
+            <strong>WCB</strong>
+            <span>2026</span>
+          </div>
+          <div className="home-v9-expo-campaign-copy">
+            <p>2026 WCB International Cleaning Appliance Expo</p>
+            <h2 id="home-wcb-expo-title">See The Products. Meet The People Behind Them.</h2>
+            <div>
+              <strong>18–20 November 2026</strong>
+              <span>Suzhou Shishan Convention Center · Suzhou, China</span>
+            </div>
+          </div>
+          <Link className="button" href="/wcb-expo#visitor-interest">
+            Plan Your Visit
+          </Link>
+        </div>
+      </section>
+
       <section className="home-v9-section home-v9-categories">
         <div className="home-v9-container">
           <div className="home-v9-category-head">
@@ -255,7 +275,7 @@ export default function HomePage() {
             <p className="home-v9-eyebrow">Inside The Industry Since 2006</p>
             <h2>Front-Line Experience Behind Every Industry Signal</h2>
             <p>
-              Denny You is the founder of World Clean Biz and Organizer, World Clean Expo.
+              Denny You is the founder of World Clean Biz and Organizer, WCB Expo.
               For a decade, he has shared cleaning industry analysis while
               building products, companies and one of the industry&apos;s broadest
               professional networks. World Clean Biz turns that experience into
@@ -271,7 +291,7 @@ export default function HomePage() {
           <div className="home-v9-trust-gallery">
             <figure className="home-v9-trust-main">
               <img src="/images/site-refresh/home/trust-denny-industry.webp" alt="Denny speaking at an industry forum" />
-              <figcaption>Denny You · Founder, World Clean Biz · Organizer, World Clean Expo</figcaption>
+              <figcaption>Denny You · Founder, World Clean Biz · Organizer, WCB Expo</figcaption>
             </figure>
             <figure>
               <img src="/images/site-refresh/real/modern-factory.webp" alt="Modern manufacturing and supply-chain environment" />
@@ -335,8 +355,8 @@ export default function HomePage() {
           </div>
           <div className="home-v9-conversion-item">
             <div>
-              <p>World Clean Expo</p>
-              <h2>Planning For World Clean Expo?</h2>
+              <p>WCB Expo</p>
+              <h2>Planning For WCB Expo?</h2>
             </div>
             <div className="home-v9-conversion-actions">
               <TallyButton ctaLocation="home_wce_exhibitor" form="wceExhibitor" inquiryIntent="exhibitor_interest">Exhibit / Partner</TallyButton>
@@ -384,11 +404,11 @@ export default function HomePage() {
           <div>
             <p className="home-v9-eyebrow">Stay Ahead Of The Market</p>
             <h2>Get The Signals That Match Your Business</h2>
-            <p>Receive selected market intelligence, sourcing opportunities and World Clean Expo updates.</p>
+            <p>Receive selected market intelligence, sourcing opportunities and WCB Expo updates.</p>
             <div className="home-v9-interest-list" aria-label="Update topics">
               <span>Market Intelligence</span>
               <span>Sourcing</span>
-              <span>World Clean Expo</span>
+              <span>WCB Expo</span>
             </div>
           </div>
           <HomeUpdatesForm />

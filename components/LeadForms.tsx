@@ -396,7 +396,7 @@ export function ReportsLeadForm({
 export function ExpoLeadForm({ roles: _roles }: { roles: string[] }) {
   return (
     <div className="tally-cta-panel expo-capture-form">
-      <p className="tally-cta-eyebrow">World Clean Expo</p>
+      <p className="tally-cta-eyebrow">WCB Expo</p>
       <h3>Receive Expo Updates</h3>
       <p>
         Get visitor registration timing, exhibitor news, forum agenda and

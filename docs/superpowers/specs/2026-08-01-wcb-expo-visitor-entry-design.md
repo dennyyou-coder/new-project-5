@@ -62,12 +62,14 @@ The visitor section receives a stable anchor, `#visitor-interest`, for homepage 
 
 ## Visual Treatment
 
-- Use the existing WCB navy and blue visual system so the strip feels native to the homepage.
-- Keep the strip compact enough that the homepage hero remains visible on a standard laptop viewport.
-- Use one short visual accent or the existing exhibition imagery; do not add decorative stock imagery.
-- Desktop layout places message, event details and actions on one balanced row or a compact two-column grid.
-- At 390px, content stacks in reading order, buttons remain full-width or safely wrapping, and no horizontal overflow is allowed.
-- The event page keeps the existing editorial layout and real photography while making the visitor path visually primary.
+- Implement the user-selected direction 1: a premium dark-navy expo campaign with realistic exhibition photography, bright blue accents, large event typography and a deliberate light/dark section rhythm.
+- Build one production hero asset without embedded text or logos. HTML owns the event name, date, venue and actions so copy remains accessible and maintainable.
+- The landing-page hero gives the left side to event information and the right side to realistic cleaning products in a trade-show setting.
+- Follow the hero with: prior-event proof, a seven-category visual strip, the complete industry supply-chain story, three event programs and a visitor-focused closing conversion section.
+- Use only confirmed proof: the November 2025 and March 2026 supply-chain events each recorded 100+ exhibitors and 1,000+ visitors. Do not add country counts, leadership claims, free-registration claims or unconfirmed show-floor scale.
+- Use the existing WCB visual system for typography and controls, while allowing the Expo page to use deeper navy surfaces and more cinematic imagery than editorial pages.
+- The homepage entry is a compact but unmistakable campaign module placed directly below the main homepage hero. It names the event, date and city and uses `Plan Your Visit` as the primary action.
+- At 390px, content stacks in reading order, the hero image retains the product focal point, buttons remain full-width or safely wrapping, and no horizontal overflow is allowed.
 
 ## Current-Copy Migration Boundary
 

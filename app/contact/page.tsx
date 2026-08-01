@@ -7,7 +7,7 @@ import { CONTACT_INQUIRIES } from "@/lib/inquiryConversion";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Share your cleaning industry question with World Clean Biz for sourcing support, market information, industry connections, World Clean Expo interest, media cooperation, or business opportunities.",
+    "Share your cleaning industry question with World Clean Biz for sourcing support, market information, industry connections, WCB Expo interest, media cooperation, or business opportunities.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact World Clean Biz",
@@ -95,7 +95,7 @@ export default function ContactPage() {
             />
             <div className="contact-response-identity">
               <strong>Denny You</strong>
-              <span>Founder, World Clean Biz · Organizer, World Clean Expo</span>
+              <span>Founder, World Clean Biz · Organizer, WCB Expo</span>
               <small>Inside the cleaning industry since 2006</small>
             </div>
           </div>

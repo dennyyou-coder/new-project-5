@@ -37,7 +37,7 @@ export function Footer() {
             <Link href="/blog/archive">Article Archive</Link>
             <Link href="/reports">Market Reports</Link>
             <Link href="/sourcing">Sourcing</Link>
-            <Link href="/world-clean-expo">World Clean Expo</Link>
+            <Link href="/wcb-expo">WCB Expo</Link>
           </div>
           <div>
             <strong>Connect</strong>
