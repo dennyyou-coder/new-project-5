@@ -163,28 +163,36 @@ export default function HomePage() {
 
       <section className="home-v9-expo-campaign" aria-labelledby="home-wcb-expo-title">
         <div className="home-v9-container home-v9-expo-campaign-grid">
-          <div className="home-v9-expo-campaign-mark" aria-hidden="true">
-            <strong>WCB</strong>
-            <span>2026</span>
-          </div>
-          <div className="home-v9-expo-campaign-copy">
-            <p>2026 WCB Expo Is Now In Preparation</p>
-            <h2 id="home-wcb-expo-title">
-              2026 WCB Expo Is Coming To Suzhou. We Invite You To Join Us.
-            </h2>
-            <p className="home-v9-expo-campaign-intro">
-              The 2026 WCB International Cleaning Appliance Expo is taking shape.
-              Buyers, distributors, brands and industry professionals are invited
-              to meet the people and products moving cleaning forward.
-            </p>
-            <div>
-              <strong>18–20 November 2026</strong>
-              <span>Suzhou Shishan Convention Center · Suzhou, China</span>
+          <div className="home-v9-expo-campaign-content">
+            <div className="home-v9-expo-campaign-mark" aria-hidden="true">
+              <strong>WCB</strong>
+              <span>2026</span>
             </div>
+            <div className="home-v9-expo-campaign-copy">
+              <p>2026 WCB Expo Is Now In Preparation</p>
+              <h2 id="home-wcb-expo-title">
+                2026 WCB Expo Is Coming To Suzhou. We Invite You To Join Us.
+              </h2>
+              <p className="home-v9-expo-campaign-intro">
+                The 2026 WCB International Cleaning Appliance Expo is taking shape.
+                Buyers, distributors, brands and industry professionals are invited
+                to meet the people and products moving cleaning forward.
+              </p>
+              <div>
+                <strong>18–20 November 2026</strong>
+                <span>Suzhou Shishan Convention Center · Suzhou, China</span>
+              </div>
+            </div>
+            <Link className="button" href="/wcb-expo#visitor-interest">
+              Plan Your Visit
+            </Link>
           </div>
-          <Link className="button" href="/wcb-expo#visitor-interest">
-            Plan Your Visit
-          </Link>
+          <div className="home-v9-expo-campaign-media">
+            <img
+              src="/images/expo/wcb-expo-2026-hero.png"
+              alt="WCB Expo visual showing cleaning appliances and an industry exhibition setting"
+            />
+          </div>
         </div>
       </section>
 

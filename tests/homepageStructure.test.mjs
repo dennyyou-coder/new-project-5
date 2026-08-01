@@ -42,6 +42,18 @@ test("homepage gives the confirmed 2026 WCB Expo an immediate visitor entry", ()
   assert.match(homeSource, /Suzhou, China/);
   assert.match(homeSource, /href="\/wcb-expo#visitor-interest"/);
   assert.match(homeSource, /Plan Your Visit/);
+  assert.match(homeSource, /className="home-v9-expo-campaign-content"/);
+  assert.match(homeSource, /className="home-v9-expo-campaign-media"/);
+  assert.match(homeSource, /src="\/images\/expo\/wcb-expo-2026-hero\.png"/);
+  assert.match(
+    homeSource,
+    /alt="WCB Expo visual showing cleaning appliances and an industry exhibition setting"/
+  );
+  assert.match(cssSource, /\.home-v9-expo-campaign\s*\{[^}]*background:\s*#eef5ff/s);
+  assert.doesNotMatch(
+    cssSource,
+    /\.home-v9-expo-campaign\s*\{[^}]*background-image:/s
+  );
   assert.doesNotMatch(homeSource, /See The Products\. Meet The People Behind Them\./);
   assert.ok(
     homeSource.indexOf("home-v9-expo-campaign") <
