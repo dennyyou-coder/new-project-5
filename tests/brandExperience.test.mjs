@@ -253,6 +253,19 @@ test("brand directory route exposes one canonical collection with links for publ
   assert.match(source, /Cleaning Industry Brand Intelligence/);
 });
 
+test("brand directory groups profiles below each product-category introduction", () => {
+  const source = read("app/brands/page.tsx");
+
+  assert.match(source, /categories\.map\(\(data(?:,\s*index)?\)\s*=>\s*\(/);
+  assert.match(source, /brand-category-list/);
+  assert.match(source, /data\.profiles\.map\(\(profile\)\s*=>\s*\(/);
+  assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
+  assert.doesNotMatch(source, /<BrandCategoryCard\b/);
+  assert.doesNotMatch(source, /Browse All Verified Brand Profiles/);
+  assert.doesNotMatch(source, /data\.category\.buyerFocus/);
+  assert.doesNotMatch(source, /Explore \{data\.category\.name\} intelligence/);
+});
+
 test("brand detail route rejects invalid slugs and exposes static metadata and schemas", () => {
   const source = read("app/brands/[slug]/page.tsx");
 

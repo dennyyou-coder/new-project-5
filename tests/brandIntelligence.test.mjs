@@ -19,6 +19,8 @@ import {
 import {
   buildBrandCategorySitemapEntries,
   buildBrandCategoryStaticParams,
+  getBrandCategoryForProfile,
+  getPublishedBrandCategories,
   validateBrandCategoryAssignments
 } from "../lib/brandCategories.ts";
 import { getInsights } from "../lib/content.ts";
@@ -120,6 +122,48 @@ const articles = [
     relatedBrands: []
   }
 ];
+
+test("verified cross-category brands appear in each relevant market and retain one primary category", () => {
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+  const membershipsFor = (slug) => categories
+    .filter(({ profiles }) => profiles.some((candidate) => candidate.slug === slug))
+    .map(({ category }) => category.slug);
+
+  assert.deepEqual(membershipsFor("aiper"), [
+    "lawn-garden-equipment",
+    "pool-equipment-pool-care"
+  ]);
+  assert.deepEqual(membershipsFor("black-decker"), [
+    "power-tools",
+    "lawn-garden-equipment",
+    "floorcare-home-cleaning"
+  ]);
+  assert.deepEqual(membershipsFor("ecovacs"), [
+    "lawn-garden-equipment",
+    "floorcare-home-cleaning",
+    "commercial-industrial-cleaning"
+  ]);
+  assert.deepEqual(membershipsFor("mammotion"), [
+    "lawn-garden-equipment",
+    "pool-equipment-pool-care"
+  ]);
+  assert.deepEqual(membershipsFor("karcher"), [
+    "floorcare-home-cleaning",
+    "commercial-industrial-cleaning"
+  ]);
+  assert.deepEqual(membershipsFor("worx"), [
+    "power-tools",
+    "lawn-garden-equipment"
+  ]);
+
+  assert.equal(getBrandCategoryForProfile("aiper")?.slug, "pool-equipment-pool-care");
+  assert.equal(getBrandCategoryForProfile("ecovacs")?.slug, "floorcare-home-cleaning");
+  assert.equal(getBrandCategoryForProfile("eufy")?.slug, "floorcare-home-cleaning");
+  assert.equal(getBrandCategoryForProfile("karcher")?.slug, "commercial-industrial-cleaning");
+  assert.equal(getBrandCategoryForProfile("mammotion")?.slug, "lawn-garden-equipment");
+  assert.equal(getBrandCategoryForProfile("worx")?.slug, "lawn-garden-equipment");
+});
 
 test("normalizes supported brand frontmatter values and removes malformed slugs", () => {
   assert.deepEqual(normalizeBrandSlugs([" Roborock ", "roborock", "Dreame"]), [

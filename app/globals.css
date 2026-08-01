@@ -23790,6 +23790,31 @@ button.contact-help-card > .contact-help-card-copy > span {
   padding-bottom: 0;
 }
 
+.brand-category-list {
+  scroll-margin-top: 96px;
+  background: #fff;
+}
+
+.brand-category-list--soft {
+  background: var(--soft);
+}
+
+.brand-category-list__intro {
+  max-width: 800px;
+  margin-bottom: 28px;
+}
+
+.brand-category-list__intro h2 {
+  margin: 8px 0 10px;
+  color: var(--navy);
+}
+
+.brand-category-list__intro > div:first-child > p:last-child {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.62;
+}
+
 .brand-category-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -23840,13 +23865,6 @@ button.contact-help-card > .contact-help-card-copy > span {
   margin: 0;
   color: var(--text);
   line-height: 1.55;
-}
-
-.brand-category-card__focus {
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 750;
-  line-height: 1.45;
 }
 
 .brand-category-card small {

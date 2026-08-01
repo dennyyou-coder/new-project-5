@@ -12,8 +12,8 @@ export type BrandCategory = {
   name: string;
   title: string;
   description: string;
-  buyerFocus: string;
   brandSlugs: string[];
+  primaryBrandSlugs: string[];
 };
 
 export const BRAND_CATEGORIES: BrandCategory[] = [
@@ -23,8 +23,24 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     title: "Power Tools Brand Intelligence",
     description:
       "Verified profiles of power-tool brands for professional buyers, distributors and industry teams evaluating cordless platforms, jobsite systems, channels and supply-chain boundaries.",
-    buyerFocus: "Cordless systems · Professional tools · Accessories · Dust management",
     brandSlugs: [
+      "black-decker",
+      "bosch-power-tools",
+      "craftsman",
+      "dewalt",
+      "dremel",
+      "festool",
+      "flex",
+      "hikoki",
+      "hilti",
+      "kobalt",
+      "makita",
+      "milwaukee",
+      "ryobi",
+      "skil",
+      "worx"
+    ],
+    primaryBrandSlugs: [
       "black-decker",
       "bosch-power-tools",
       "craftsman",
@@ -47,9 +63,31 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     title: "Lawn & Garden Equipment Brand Intelligence",
     description:
       "Verified profiles of lawn and garden equipment brands, with buyer-relevant coverage of robotic mowing, battery platforms, dealer channels and regional service responsibility.",
-    buyerFocus: "Robotic mowers · Outdoor power equipment · Battery platforms · Dealer support",
     brandSlugs: [
+      "aiper",
+      "black-decker",
+      "bosch-power-tools",
+      "craftsman",
+      "dewalt",
+      "dreame",
+      "ecovacs",
       "eufy",
+      "greenworks",
+      "hikoki",
+      "husqvarna",
+      "kobalt",
+      "makita",
+      "mammotion",
+      "mova",
+      "roborock",
+      "ryobi",
+      "segway-navimow",
+      "skil",
+      "stihl",
+      "sunseeker",
+      "worx"
+    ],
+    primaryBrandSlugs: [
       "greenworks",
       "husqvarna",
       "mammotion",
@@ -65,8 +103,20 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     title: "Pool Equipment & Pool Care Brand Intelligence",
     description:
       "Verified profiles of pool-equipment and pool-care brands for buyers assessing robotic cleaners, pumps, filtration, water treatment, automation and service-channel boundaries.",
-    buyerFocus: "Pool robots · Pumps and filtration · Water treatment · Automation",
     brandSlugs: [
+      "aiper",
+      "aquabot",
+      "beatbot",
+      "fluidra",
+      "hayward",
+      "mammotion",
+      "maytronics",
+      "mova",
+      "pentair",
+      "polaris",
+      "wybot"
+    ],
+    primaryBrandSlugs: [
       "aiper",
       "aquabot",
       "beatbot",
@@ -84,8 +134,36 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     title: "Floorcare & Home Cleaning Brand Intelligence",
     description:
       "Verified profiles of floorcare and home-cleaning brands, covering robot vacuums, floor washers, vacuum systems, home appliances and their ownership, channels and supply-chain evidence.",
-    buyerFocus: "Robot vacuums · Floor washers · Vacuum systems · Home appliances",
     brandSlugs: [
+      "aeg",
+      "bissell",
+      "black-decker",
+      "bosch-home-appliances",
+      "dewalt",
+      "dirt-devil",
+      "dji-romo",
+      "dreame",
+      "dyson",
+      "ecovacs",
+      "electrolux",
+      "eufy",
+      "eureka",
+      "hoover",
+      "irobot",
+      "karcher",
+      "midea",
+      "miele",
+      "mova",
+      "narwal",
+      "oreck",
+      "philips-home-appliances",
+      "roborock",
+      "ryobi",
+      "shark",
+      "tineco",
+      "vax"
+    ],
+    primaryBrandSlugs: [
       "aeg",
       "bissell",
       "bosch-home-appliances",
@@ -95,6 +173,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "dyson",
       "ecovacs",
       "electrolux",
+      "eufy",
       "eureka",
       "hoover",
       "irobot",
@@ -116,8 +195,8 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     title: "Commercial & Industrial Cleaning Brand Intelligence",
     description:
       "Verified profiles of commercial and industrial cleaning brands, focused on floorcare systems, autonomous equipment, pressure washing and professional distribution models.",
-    buyerFocus: "Scrubbers and sweepers · Industrial vacuums · Autonomous cleaning · Service networks",
-    brandSlugs: ["karcher", "nilfisk"]
+    brandSlugs: ["ecovacs", "karcher", "nilfisk", "oreck"],
+    primaryBrandSlugs: ["karcher", "nilfisk"]
   }
 ];
 
@@ -131,7 +210,19 @@ export function getBrandCategory(slug: string): BrandCategory | undefined {
 }
 
 export function getBrandCategoryForProfile(slug: string): BrandCategory | undefined {
-  return BRAND_CATEGORIES.find((category) => category.brandSlugs.includes(slug));
+  return BRAND_CATEGORIES.find((category) => category.primaryBrandSlugs.includes(slug));
+}
+
+export function getBrandCategoriesForProfile(slug: string): BrandCategory[] {
+  const primaryCategory = getBrandCategoryForProfile(slug);
+  const categories = BRAND_CATEGORIES.filter((category) => category.brandSlugs.includes(slug));
+
+  if (!primaryCategory) return categories;
+
+  return [
+    primaryCategory,
+    ...categories.filter((category) => category.slug !== primaryCategory.slug)
+  ];
 }
 
 export function getBrandCategoryPageData(
@@ -227,21 +318,46 @@ export function validateBrandCategoryAssignments(profiles: readonly unknown[]): 
     .map((profile) => profile.slug)
     .filter((slug): slug is string => typeof slug === "string");
   const assignedSlugs = BRAND_CATEGORIES.flatMap((category) => category.brandSlugs);
-  const duplicatedSlugs = assignedSlugs.filter(
-    (slug, index) => assignedSlugs.indexOf(slug) !== index
+  const primarySlugs = BRAND_CATEGORIES.flatMap((category) => category.primaryBrandSlugs);
+  const duplicatedPrimarySlugs = primarySlugs.filter(
+    (slug, index) => primarySlugs.indexOf(slug) !== index
+  );
+  const duplicatedCategorySlugs = BRAND_CATEGORIES.flatMap((category) =>
+    category.brandSlugs.filter(
+      (slug, index) => category.brandSlugs.indexOf(slug) !== index
+    ).map((slug) => `${category.slug}:${slug}`)
   );
   const missingSlugs = profileSlugs.filter((slug) => !assignedSlugs.includes(slug));
+  const missingPrimarySlugs = profileSlugs.filter((slug) => !primarySlugs.includes(slug));
   const unknownSlugs = assignedSlugs.filter((slug) => !profileSlugs.includes(slug));
+  const unknownPrimarySlugs = primarySlugs.filter((slug) => !profileSlugs.includes(slug));
+  const misplacedPrimarySlugs = BRAND_CATEGORIES.flatMap((category) =>
+    category.primaryBrandSlugs
+      .filter((slug) => !category.brandSlugs.includes(slug))
+      .map((slug) => `${category.slug}:${slug}`)
+  );
   const errors: string[] = [];
 
-  if (duplicatedSlugs.length > 0) {
-    errors.push(`Brand category assignment is duplicated: ${[...new Set(duplicatedSlugs)].join(", ")}.`);
+  if (duplicatedPrimarySlugs.length > 0) {
+    errors.push(`Primary brand category assignment is duplicated: ${[...new Set(duplicatedPrimarySlugs)].join(", ")}.`);
+  }
+  if (duplicatedCategorySlugs.length > 0) {
+    errors.push(`Brand category membership is duplicated: ${[...new Set(duplicatedCategorySlugs)].join(", ")}.`);
   }
   if (missingSlugs.length > 0) {
     errors.push(`Brand category assignment is missing: ${missingSlugs.join(", ")}.`);
   }
+  if (missingPrimarySlugs.length > 0) {
+    errors.push(`Primary brand category assignment is missing: ${missingPrimarySlugs.join(", ")}.`);
+  }
   if (unknownSlugs.length > 0) {
     errors.push(`Brand category assignment references an unknown profile: ${[...new Set(unknownSlugs)].join(", ")}.`);
+  }
+  if (unknownPrimarySlugs.length > 0) {
+    errors.push(`Primary brand category assignment references an unknown profile: ${[...new Set(unknownPrimarySlugs)].join(", ")}.`);
+  }
+  if (misplacedPrimarySlugs.length > 0) {
+    errors.push(`Primary brand category is not included in category membership: ${misplacedPrimarySlugs.join(", ")}.`);
   }
 
   return errors;
