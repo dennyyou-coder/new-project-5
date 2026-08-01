@@ -32,11 +32,17 @@ test("homepage exposes the streamlined commercial journey", () => {
 });
 
 test("homepage gives the confirmed 2026 WCB Expo an immediate visitor entry", () => {
+  assert.match(homeSource, /2026 WCB Expo Is Now In Preparation/);
+  assert.match(
+    homeSource,
+    /2026 WCB Expo Is Coming To Suzhou\. We Invite You To Join Us\./
+  );
   assert.match(homeSource, /2026 WCB International Cleaning Appliance Expo/);
   assert.match(homeSource, /18–20 November 2026/);
   assert.match(homeSource, /Suzhou, China/);
   assert.match(homeSource, /href="\/wcb-expo#visitor-interest"/);
   assert.match(homeSource, /Plan Your Visit/);
+  assert.doesNotMatch(homeSource, /See The Products\. Meet The People Behind Them\./);
   assert.ok(
     homeSource.indexOf("home-v9-expo-campaign") <
       homeSource.indexOf("home-v9-categories")

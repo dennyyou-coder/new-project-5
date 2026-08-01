@@ -25,16 +25,15 @@ Give the 2026 event a clear, current identity and make the homepage entry primar
 
 Add one compact event strip immediately below the main header and above the homepage hero. It is a homepage-only campaign entry, not a second navigation bar.
 
-The content hierarchy is:
+The strengthened content hierarchy is:
 
-1. Status: `Visitor Registration Opening Soon`
-2. Promise: `See the Next Generation of Cleaning Appliances`
+1. Status: `2026 WCB Expo Is Now In Preparation`
+2. Direct invitation: `2026 WCB Expo Is Coming To Suzhou. We Invite You To Join Us.`
 3. Event identity: `2026 WCB International Cleaning Appliance Expo`
 4. Event details: `18–20 November 2026 · Suzhou, China`
 5. Primary action: `Plan Your Visit`
-6. Secondary action: `Explore WCB Expo`
 
-Both actions lead to the event page. `Plan Your Visit` targets the visitor-interest section; `Explore WCB Expo` opens the top of the page. The strip does not contain an exhibitor application button.
+The single action leads to the event page visitor-interest section. The strip does not contain an exhibitor application button or a competing secondary action.
 
 The existing lower homepage event pathway remains, but its copy and links are updated to the new name and visitor-led purpose. The lower conversion section also changes from a general participation prompt to a visit-planning prompt. Exhibitor recruitment must not be duplicated as a prominent homepage action.
 
@@ -69,6 +68,13 @@ The visitor section receives a stable anchor, `#visitor-interest`, for homepage 
 - Use only confirmed proof: the November 2025 and March 2026 supply-chain events each recorded 100+ exhibitors and 1,000+ visitors. Do not add country counts, leadership claims, free-registration claims or unconfirmed show-floor scale.
 - Use the existing WCB visual system for typography and controls, while allowing the Expo page to use deeper navy surfaces and more cinematic imagery than editorial pages.
 - The homepage entry is a compact but unmistakable campaign module placed directly below the main homepage hero. It names the event, date and city and uses `Plan Your Visit` as the primary action.
+- The landing page states that the show is in preparation and directly invites cleaning-industry professionals to join in Suzhou; abstract campaign language cannot replace this message.
+- Add a compact preparation-status band below the hero with the confirmed date, venue, visitor-interest status and category scope.
+- Add an image-led `Why Visit` section covering new products, manufacturers, supply-chain access and industry forums.
+- Add a real-event gallery using existing WCB forum, booth, matchmaking and audience photography. Do not present these prior-event photographs as images of the November 2026 show.
+- Add an image-led `Who You Will Meet` section covering brands and buyers, complete-machine manufacturers, OEM/ODM partners and component suppliers.
+- Event-program cards use larger photography and a more editorial composition than ordinary utility cards.
+- The closing visitor invitation uses a full-width visual treatment and the line `Join The Global Cleaning Appliance Industry In Suzhou`.
 - At 390px, content stacks in reading order, the hero image retains the product focal point, buttons remain full-width or safely wrapping, and no horizontal overflow is allowed.
 
 ## Current-Copy Migration Boundary

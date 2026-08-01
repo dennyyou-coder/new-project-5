@@ -27,6 +27,8 @@ test("WCB Expo makes visitor planning primary while retaining exhibitor interest
 });
 
 test("WCB Expo uses the confirmed event identity and canonical route", () => {
+  assert.match(expoSource, /2026 WCB Expo Is Now In Preparation/);
+  assert.match(expoSource, /We Invite You To Join Us In Suzhou/);
   assert.match(expoSource, /2026 WCB International Cleaning Appliance Expo/);
   assert.match(expoSource, /2026 WCB 国际清洁电器博览会/);
   assert.match(expoSource, /18–20 November 2026/);
@@ -34,6 +36,33 @@ test("WCB Expo uses the confirmed event identity and canonical route", () => {
   assert.match(expoSource, /Suzhou, China/);
   assert.match(expoSource, /canonical: "\/wcb-expo"/);
   assert.match(legacyRouteSource, /permanentRedirect\("\/wcb-expo"\)/);
+});
+
+test("WCB Expo gives visitors an image-led reason to attend", () => {
+  for (const reason of [
+    "See New Products Up Close",
+    "Meet The Companies Building Them",
+    "Connect With The Supply Chain",
+    "Hear Where The Industry Is Going"
+  ]) {
+    assert.match(expoSource, new RegExp(reason));
+  }
+  assert.match(expoSource, /wcb-expo-why-grid/);
+  assert.match(globalStyles, /\.wcb-expo-why-card/);
+});
+
+test("WCB Expo uses clearly labelled prior-event photography", () => {
+  assert.match(expoSource, /Scenes From Previous WCB Industry Gatherings/);
+  for (const image of [
+    "expo-booth-cleaning-suppliers-2026.jpg",
+    "expo-business-matching-2026.jpg",
+    "expo-forum-audience-2026.jpg",
+    "home-expo-networking-2025.jpg"
+  ]) {
+    assert.match(expoSource, new RegExp(image));
+  }
+  assert.match(expoSource, /wcb-expo-gallery-grid/);
+  assert.match(globalStyles, /\.wcb-expo-gallery-grid/);
 });
 
 test("WCB Expo presents seven buyer categories with visual evidence", () => {
@@ -59,6 +88,11 @@ test("WCB Expo explains the supply chain and event programs", () => {
   for (const program of ["Industry Forums", "Procurement Matchmaking", "New Product Launches"]) {
     assert.match(expoSource, new RegExp(program));
   }
+});
+
+test("WCB Expo closes with a direct Suzhou invitation", () => {
+  assert.match(expoSource, /Join The Global Cleaning Appliance Industry In Suzhou/);
+  assert.match(expoSource, /wcb-expo-final-invitation/);
 });
 
 test("WCB Expo limits proof to organizer records from two prior supply-chain events", () => {
