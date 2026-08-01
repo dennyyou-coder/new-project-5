@@ -14,7 +14,6 @@ export function BrandCategoryCard({
         <p className="brand-category-card__eyebrow">Browse by buying category</p>
         <h2>{category.name}</h2>
         <p>{category.description}</p>
-        <span className="brand-category-card__focus">{category.buyerFocus}</span>
         <small>{profiles.length} verified brand profiles</small>
       </Link>
     </article>

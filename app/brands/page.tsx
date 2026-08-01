@@ -40,7 +40,9 @@ export default function BrandsPage() {
             <p>
               Verified company profiles help buyers, distributors and industry
               professionals evaluate ownership, products, supply chains,
-              channels and competitive strategy.
+              channels and competitive strategy. Brands with verified product
+              lines across markets appear in every relevant buying category;
+              the published total counts unique brand profiles.
             </p>
           </div>
           <div className="guides-hero-stat">

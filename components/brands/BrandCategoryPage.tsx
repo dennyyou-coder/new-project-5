@@ -31,10 +31,6 @@ export function BrandCategoryPage({ data }: { data: BrandCategoryPageData }) {
 
       <section className="section guides-featured-section">
         <div className="insights-page-container">
-          <div className="section-heading guides-section-heading">
-            <p className="eyebrow">Buyer focus</p>
-            <h2>{category.buyerFocus}</h2>
-          </div>
           <div className="guides-featured-grid brand-directory-grid">
             {profiles.map((profile) => (
               <BrandDirectoryCard key={profile.slug} profile={profile} />

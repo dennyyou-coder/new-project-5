@@ -23867,13 +23867,6 @@ button.contact-help-card > .contact-help-card-copy > span {
   line-height: 1.55;
 }
 
-.brand-category-card__focus {
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 750;
-  line-height: 1.45;
-}
-
 .brand-category-card small {
   margin-top: auto;
   color: var(--navy);
