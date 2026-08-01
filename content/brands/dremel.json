@@ -1,0 +1,55 @@
+{
+  "status": "draft",
+  "slug": "dremel",
+  "name": "Dremel",
+  "aliases": ["Dremel Tools", "Dremel 12V"],
+  "legalName": "Robert Bosch Tool Corporation (reviewed U.S. website and warranty entity)",
+  "legalEntityNote": "Dremel is one of the Bosch Power Tools division's brands. Robert Bosch Tool Corporation operates Dremel's reviewed U.S. website and warranty route, while product manufacturer, importer, seller and guarantor can differ by SKU and country.",
+  "officialWebsite": "https://www.dremel.com/",
+  "headline": "Dremel ownership, rotary-tool systems and U.S. warranty boundary",
+  "description": "A source-backed profile of Dremel within Bosch Power Tools, its rotary and compact-tool portfolio, U.S. warranty entity and buyer checks.",
+  "metaDescription": "Dremel profile: Bosch Power Tools ownership, rotary tools, compact systems, channels, warranty and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dremel, Bosch Power Tools or Robert Bosch Tool Corporation. The U.S. site and warranty entity do not prove a manufacturer, seller or warranty party for every Dremel product worldwide.",
+  "headquarters": "Mount Prospect, Illinois, United States (reviewed U.S. operating route); Bosch Power Tools division headquarters in Germany",
+  "founded": "1932 brand heritage; current Bosch Power Tools brand",
+  "heroImage": "/images/brands/dremel/hero.webp",
+  "heroImageAlt": "Dremel rotary tool used for detailed home-improvement work",
+  "logoImage": "/images/brands/dremel/logo.webp",
+  "logoImageAlt": "Dremel logo",
+  "logoSourceUrl": "https://www.dremel.com/us/en/service-and-support/terms-of-use",
+  "contentVisuals": [
+    {"placement":"ownership","src":"/images/insights/bosch-cordless-dust-collector-image-001.jpg","alt":"Bosch Power Tools professional equipment reference","caption":"Dremel is part of Bosch Power Tools, not BSH home appliances; a Bosch Group relationship does not determine model-specific responsibility."},
+    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Cordless tools and accessories in a platform assortment","caption":"Dremel's compact-tool range depends on exact accessory, speed, battery and country configuration."}
+  ],
+  "ownership": {"summary":"Dremel is a Bosch Power Tools division brand. Bosch Power Tools' official corporate profile lists Dremel among the division's brands; Dremel is separate from the Bosch-branded home-appliance operation run by BSH.","parentCompany":"Robert Bosch GmbH (Bosch Group, through Bosch Power Tools)"},
+  "leadership": [],
+  "productPortfolio": [
+    {"name":"Rotary tools and accessories","positioning":"Dremel's core offer centers on compact rotary tools and application-specific accessories for cutting, grinding, sanding, engraving and polishing.","buyerRelevance":"Specify the accessory, speed range, collet/attachment and material application for the exact tool."},
+    {"name":"12V and compact cordless tools","positioning":"Cordless compact products extend detailed-work applications into mobile use.","buyerRelevance":"Verify battery, charger, kit configuration and local approval for the precise SKU."},
+    {"name":"Multi-tools and specialty making tools","positioning":"Dremel also serves makers and home-improvement users through versatile, smaller-format systems.","buyerRelevance":"Confirm whether the product is consumer, trade or specialty-market specific before distribution."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence":"Bosch Power Tools identifies Dremel as a division brand but does not publish a universal factory assignment for Dremel products.","scope":"Division brand-portfolio disclosure","buyerCheck":"Use product labels, declarations and shipment documents to verify factory and origin by SKU."},
+    {"evidence":"Dremel's U.S. terms state that dremel.com is operated by Robert Bosch Tool Corporation.","scope":"United States website terms","buyerCheck":"Do not use website operator identity as a substitute for product manufacturer or importer evidence."},
+    {"evidence":"Dremel's U.S. warranty names Robert Bosch Tool Corporation for covered products in that market.","scope":"United States warranty policy","buyerCheck":"Confirm the local guarantor and authorized service route before buying outside the U.S."}
+  ],
+  "marketsChannels": [
+    {"evidence":"Dremel's U.S. website and warranty offer product support and a named U.S. operating route.","scope":"United States commercial and service information","buyerCheck":"Verify the local seller and service eligibility in the target market."},
+    {"evidence":"Bosch Power Tools operates global brand and country sites, but local assortments differ.","scope":"Global division structure","buyerCheck":"Use the destination country's official Dremel/Bosch channel for availability and warranty conditions."},
+    {"evidence":"The U.S. warranty terms are product and territory specific.","scope":"U.S. warranty policy","buyerCheck":"Keep a dated invoice and confirm that the exact purchase route is covered."}
+  ],
+  "competitivePosition": {"summary":"World Clean Biz assessment: Dremel has a distinctive compact-tool and accessory-driven position within Bosch Power Tools. It competes less on a full construction-tool ecosystem than on detailed-work versatility, which makes accessory selection, regional kits and warranty routing especially important for buyers.","competitorSlugs":["bosch-power-tools","makita","craftsman","dewalt"]},
+  "developments": [
+    {"date":"2026-03","title":"Dremel U.S. site terms updated","summary":"Dremel's reviewed U.S. terms identify Robert Bosch Tool Corporation as the site operator.","sourceIds":["dremel-terms"]},
+    {"date":"2026","title":"Bosch Power Tools confirms its brand portfolio","summary":"Bosch Power Tools' corporate profile lists Dremel within the division's six-brand portfolio.","sourceIds":["bosch-pt-about"]},
+    {"date":"1932","title":"Dremel brand heritage begins","summary":"Dremel's long-running rotary-tool history dates to 1932.","sourceIds":["dremel-warranty"]}
+  ],
+  "sources": [
+    {"id":"bosch-pt-about","title":"About Bosch Power Tools","publisher":"Bosch Power Tools","url":"https://www.bosch-pt.com/ww/en/company/about-us/","accessedAt":"2026-08-01"},
+    {"id":"dremel-terms","title":"Terms of Use","publisher":"Dremel","url":"https://www.dremel.com/us/en/service-and-support/terms-of-use","publishedAt":"2026-03-13","accessedAt":"2026-08-01"},
+    {"id":"dremel-warranty","title":"Dremel Warranty","publisher":"Dremel","url":"https://www.dremel.com/us/en/service-and-support/warranty","accessedAt":"2026-08-01"}
+  ],
+  "publishedAt": "2026-08-01T12:40:00+08:00",
+  "lastVerified": "2026-08-01",
+  "lastModified": "2026-08-01T12:40:00+08:00"
+}

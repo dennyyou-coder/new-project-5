@@ -16,6 +16,11 @@ import {
   sortBrandArticlesNewestFirst,
   validateBrandProfile
 } from "../lib/brands.ts";
+import {
+  buildBrandCategorySitemapEntries,
+  buildBrandCategoryStaticParams,
+  validateBrandCategoryAssignments
+} from "../lib/brandCategories.ts";
 import { getInsights } from "../lib/content.ts";
 import { partitionFeaturedLeadership } from "../components/brands/brandSectionData.ts";
 import sitemap from "../app/sitemap.ts";
@@ -511,7 +516,14 @@ test("sorts brand articles by absolute time with deterministic invalid and tie f
   ]);
 });
 
-test("the release gate validates the exact forty-six published profiles and approved article relationships", () => {
+test("the release gate validates the forty-six published profiles and approved article relationships", () => {
+  const expectedCategorySlugs = [
+    "power-tools",
+    "lawn-garden-equipment",
+    "pool-equipment-pool-care",
+    "floorcare-home-cleaning",
+    "commercial-industrial-cleaning"
+  ];
   const expectedSlugs = [
     "aeg",
     "aiper",
@@ -591,7 +603,20 @@ test("the release gate validates the exact forty-six published profiles and appr
     "ecovacs-invests-in-battery-cell-factory": ["ecovacs"],
     "european-tool-brands-battery-alliances": ["stihl", "makita"],
     "freudenberg-acquires-nilfisk": ["nilfisk", "karcher"],
-    "global-power-tool-brands-reshaping-portfolios": ["dewalt", "black-decker", "makita"],
+    "global-power-tool-brands-reshaping-portfolios": [
+      "dewalt",
+      "black-decker",
+      "makita",
+      "bosch-power-tools",
+      "craftsman",
+      "kobalt",
+      "skil",
+      "hilti",
+      "festool",
+      "hikoki",
+      "flex",
+      "dremel"
+    ],
     "husqvarna-automower-vs-mammotion-luba": ["husqvarna", "mammotion"],
     "hoover-cleanslate-vs-shark-stainstriker": ["hoover", "shark"],
     "irobot-decline-and-the-new-robot-vacuum-order": ["irobot"],
@@ -652,7 +677,7 @@ test("the release gate validates the exact forty-six published profiles and appr
     "who-owns-bissell-family-sanitaire": ["bissell"],
     "who-owns-black-and-decker-stanley-tools": ["black-decker"],
     "who-owns-bosch-appliances-bsh-siemens-brands": ["bosch-home-appliances"],
-    "who-owns-dewalt-stanley-black-decker": ["dewalt", "black-decker"],
+    "who-owns-dewalt-stanley-black-decker": ["dewalt", "black-decker", "craftsman"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
     "who-owns-greenworks-globe-stihl": ["greenworks", "stihl"],
     "who-owns-hayward-pool-products": ["hayward"],
@@ -695,7 +720,7 @@ test("the release gate validates the exact forty-six published profiles and appr
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 46);
+  assert.equal(loadedProfiles.length, 55);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -722,7 +747,7 @@ test("the release gate validates the exact forty-six published profiles and appr
   }
 
   assert.equal(Object.keys(expectedPrimaryBrands).length, 105);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 160);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 170);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -732,6 +757,11 @@ test("the release gate validates the exact forty-six published profiles and appr
 
   assert.deepEqual(buildBrandStaticParams(publishedProfiles), expectedSlugs.map((slug) => ({ slug })));
   assert.deepEqual(
+    buildBrandCategoryStaticParams(publishedProfiles),
+    expectedCategorySlugs.map((slug) => ({ slug }))
+  );
+  assert.deepEqual(validateBrandCategoryAssignments(loadedProfiles), []);
+  assert.deepEqual(
     buildBrandSitemapEntries(publishedProfiles, "https://worldcleanbiz.com")
       .map(({ url }) => url),
     expectedSlugs.map((slug) => `https://worldcleanbiz.com/brands/${slug}`)
@@ -740,14 +770,22 @@ test("the release gate validates the exact forty-six published profiles and appr
     sitemap()
       .map(({ url }) => url)
       .filter((url) => url.startsWith("https://worldcleanbiz.com/brands/")),
-    expectedSlugs.map((slug) => `https://worldcleanbiz.com/brands/${slug}`)
+    [
+      ...expectedSlugs.map((slug) => `https://worldcleanbiz.com/brands/${slug}`),
+      ...expectedCategorySlugs.map((slug) => `https://worldcleanbiz.com/brands/${slug}`)
+    ]
+  );
+  assert.deepEqual(
+    buildBrandCategorySitemapEntries(publishedProfiles, "https://worldcleanbiz.com")
+      .map(({ url }) => url),
+    expectedCategorySlugs.map((slug) => `https://worldcleanbiz.com/brands/${slug}`)
   );
   assert.equal(publishedProfiles.some(({ slug }) => slug === "dolphin"), false);
   assert.equal(buildBrandStaticParams(publishedProfiles).some(({ slug }) => slug === "dolphin"), false);
 });
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
-  const profiles = getBrandProfiles();
+  const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
   assert.equal(profiles.length, 46);
 
   for (const candidate of profiles) {

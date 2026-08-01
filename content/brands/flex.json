@@ -1,0 +1,55 @@
+{
+  "status": "draft",
+  "slug": "flex",
+  "name": "FLEX",
+  "aliases": ["FLEX Power Tools", "FLEX 24V"],
+  "legalName": "Chervon North America, Inc. (reviewed U.S./Canada warranty entity)",
+  "legalEntityNote": "FLEX became part of Chervon in 2013, according to Chervon's official brand information. Chervon North America, Inc. is the warrantor under the reviewed U.S./Canada policy; the brand, parent, product manufacturer, authorized dealer and warranty party are not interchangeable roles.",
+  "officialWebsite": "https://www.flexpowertools.com/",
+  "headline": "FLEX ownership, 24V professional system and warranty-channel checks",
+  "description": "A source-backed profile of FLEX within Chervon, its professional 24V system, North American warranty boundary and buyer checks.",
+  "metaDescription": "FLEX profile: Chervon ownership, 24V power tools, professional channels, warranty, manufacturing boundaries and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with FLEX or Chervon. Chervon ownership and a regional warranty policy do not identify the factory, seller or warranty entity for every global FLEX SKU.",
+  "headquarters": "Steinheim, Germany (FLEX brand heritage); regional operations vary",
+  "founded": "1922; joined Chervon in 2013",
+  "heroImage": "/images/brands/flex/hero.webp",
+  "heroImageAlt": "FLEX cordless circular saw and 24V professional tools",
+  "logoImage": "/images/brands/flex/logo.webp",
+  "logoImageAlt": "FLEX logo",
+  "logoSourceUrl": "https://www.flexpowertools.com/",
+  "contentVisuals": [
+    {"placement":"ownership","src":"/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp","alt":"European professional tool-brand industry visual","caption":"FLEX has German brand heritage and Chervon ownership; these are distinct from the responsible seller, service center or factory for a given product."},
+    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Professional cordless tool and battery-system assortment","caption":"FLEX 24V registrations can extend eligible warranty coverage, but eligibility must be confirmed for the particular product and market."}
+  ],
+  "ownership": {"summary":"FLEX is a Chervon Group brand. Chervon's official portfolio says FLEX joined the group in 2013; that acquisition statement does not merge FLEX with SKIL, EGO or any other Chervon brand.","parentCompany":"Chervon Group"},
+  "leadership": [],
+  "productPortfolio": [
+    {"name":"FLEX 24V tools, batteries and chargers","positioning":"A professional cordless system covers core construction, woodworking, cutting and fastening uses.","buyerRelevance":"Confirm the exact 24V tool, battery, charger, kit status and market registration requirement."},
+    {"name":"Legacy corded, 12V and 18V tools","positioning":"FLEX maintains legacy product families alongside its newer cordless offer.","buyerRelevance":"Do not assume a 24V warranty or battery policy applies to legacy models."},
+    {"name":"STACK PACK storage and attachments","positioning":"Storage and functional attachments extend the professional jobsite system.","buyerRelevance":"Verify product-family-specific warranty duration and mechanical compatibility."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence":"Chervon's official brand page confirms FLEX group ownership but does not provide a factory assignment for all FLEX tools.","scope":"Group portfolio disclosure","buyerCheck":"Verify manufacturer and origin with exact product labels, declarations and shipment documents."},
+    {"evidence":"FLEX's U.S./Canada warranty names Chervon North America, Inc. as warrantor and refers to authorized FLEX service dealers.","scope":"United States and Canada warranty policy","buyerCheck":"Do not treat that warranty entity as an all-market manufacturer or seller."},
+    {"evidence":"Warranty duration differs among 24V products, legacy tools, storage and attachments.","scope":"Product-family warranty terms","buyerCheck":"Map the exact model and registration status to the correct policy before purchasing."}
+  ],
+  "marketsChannels": [
+    {"evidence":"FLEX directs customers to authorized dealers and service dealers for U.S./Canada warranty support.","scope":"North American service and warranty channel","buyerCheck":"Confirm dealer authorization and retain the dated proof of purchase."},
+    {"evidence":"Registration may extend coverage for eligible FLEX 24V tools, batteries and chargers.","scope":"U.S./Canada warranty policy","buyerCheck":"Complete registration within the stated deadline and save confirmation."},
+    {"evidence":"Chervon portfolio ownership does not establish a universal retail partner or warranty route.","scope":"Group-level limitation","buyerCheck":"Check the local official site before opening distribution or retail supply."}
+  ],
+  "competitivePosition": {"summary":"World Clean Biz assessment: FLEX competes for professional users with a focused 24V system and long registered-warranty proposition. The due-diligence issue is precision: FLEX's historic German identity, Chervon ownership and regional sales/warranty execution must each be evidenced separately.","competitorSlugs":["skil","milwaukee","dewalt","bosch-power-tools"]},
+  "developments": [
+    {"date":"2025-11","title":"Reviewed North American warranty policy updated","summary":"FLEX's published warranty identifies Chervon North America, Inc., coverage lengths and authorized-service conditions.","sourceIds":["flex-warranty"]},
+    {"date":"2013","title":"FLEX joins Chervon","summary":"Chervon's brand portfolio dates the FLEX acquisition to 2013.","sourceIds":["chervon-brands"]},
+    {"date":"1922","title":"FLEX brand heritage begins","summary":"FLEX traces its brand history to 1922.","sourceIds":["chervon-brands"]}
+  ],
+  "sources": [
+    {"id":"chervon-brands","title":"Chervon Brands","publisher":"Chervon Group","url":"https://global.chervongroup.com/en/node/108","accessedAt":"2026-08-01"},
+    {"id":"flex-warranty","title":"FLEX Limited Warranty for the United States and Canada","publisher":"FLEX","url":"https://www.flexpowertools.com/warranty","accessedAt":"2026-08-01"},
+    {"id":"flex-home","title":"FLEX Power Tools","publisher":"FLEX","url":"https://www.flexpowertools.com/","accessedAt":"2026-08-01"}
+  ],
+  "publishedAt": "2026-08-01T12:35:00+08:00",
+  "lastVerified": "2026-08-01",
+  "lastModified": "2026-08-01T12:35:00+08:00"
+}

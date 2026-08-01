@@ -4,6 +4,7 @@ import {
   buildBrandSitemapEntries,
   getPublishedBrandProfiles
 } from "@/lib/brands";
+import { buildBrandCategorySitemapEntries } from "@/lib/brandCategories";
 import { getInsights } from "@/lib/content";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
 
@@ -45,6 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified
     })),
     ...buildBrandSitemapEntries(profiles, baseUrl),
+    ...buildBrandCategorySitemapEntries(profiles, baseUrl),
     ...insights.map((article) => ({
       url: `${baseUrl}/blog/${article.slug}`,
       lastModified: article.publishedAt ? new Date(article.publishedAt) : article.date ? new Date(article.date) : new Date()

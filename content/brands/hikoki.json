@@ -1,0 +1,56 @@
+{
+  "status": "draft",
+  "slug": "hikoki",
+  "name": "HiKOKI / Metabo HPT",
+  "aliases": ["HiKOKI", "Metabo HPT", "Hitachi Power Tools"],
+  "legalName": "Koki Holdings Co., Ltd.",
+  "legalEntityNote": "HiKOKI is Koki Holdings' international power-tool brand; Metabo HPT is the North American brand route operated by Koki Holdings America. Metabo is a distinct Koki Holdings brand and has its own separate World Clean Biz page boundary. Regional branding does not establish a common seller, factory, importer or warranty entity for every SKU.",
+  "officialWebsite": "https://www.koki-holdings.com/",
+  "headline": "HiKOKI and Metabo HPT ownership, regional brand roles and Multi Volt systems",
+  "description": "A source-backed profile of Koki Holdings' HiKOKI and Metabo HPT regional brand structure, Multi Volt platform and buyer checks that keep them separate from Metabo.",
+  "metaDescription": "HiKOKI and Metabo HPT profile: Koki Holdings ownership, regional branding, Multi Volt tools, channels, warranties and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Koki Holdings, HiKOKI, Metabo HPT or Metabo. HiKOKI/Metabo HPT and Metabo share Koki Holdings ownership but remain separate brands and product routes.",
+  "headquarters": "Tokyo, Japan (Koki Holdings); regional commercial entities vary",
+  "founded": "1948 Hitachi Koki heritage; HiKOKI brand introduced in 2018",
+  "heroImage": "/images/brands/hikoki/hero.webp",
+  "heroImageAlt": "HiKOKI cordless angle grinder and professional-tool product reference",
+  "logoImage": "/images/brands/hikoki/logo.webp",
+  "logoImageAlt": "HiKOKI logo",
+  "logoSourceUrl": "https://www.koki-holdings.com/corporate/history.html",
+  "contentVisuals": [
+    {"placement":"ownership","src":"/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp","alt":"European professional power-tool industry visual","caption":"HiKOKI, Metabo HPT and Metabo need to be separated by regional brand role and legal entity, even under a common Koki Holdings parent."},
+    {"placement":"portfolio","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Cordless professional-tool workflow","caption":"Multi Volt is a product-platform claim; tool, battery, service and regulatory compatibility must be checked by SKU and market."}
+  ],
+  "ownership": {"summary":"Koki Holdings' official corporate history identifies HiKOKI, Metabo HPT and Metabo as brands owned by the company. HiKOKI is the international brand, while Metabo HPT is the North American market brand; Metabo remains a separate brand rather than an alias for either one.","parentCompany":"Koki Holdings Co., Ltd."},
+  "leadership": [],
+  "productPortfolio": [
+    {"name":"Multi Volt cordless tools","positioning":"The high-voltage cordless platform supports professional drilling, fastening, cutting and trade applications.","buyerRelevance":"Verify whether the exact battery, tool and charger are offered under HiKOKI or Metabo HPT in the destination market."},
+    {"name":"Corded tools, nailers and air tools","positioning":"The brand range includes traditional corded and pneumatic categories alongside cordless products.","buyerRelevance":"Match regional voltage, fittings, safety approvals and service support."},
+    {"name":"Outdoor and specialty products","positioning":"Portfolio extensions vary by region and channel under the HiKOKI or Metabo HPT mark.","buyerRelevance":"Do not infer a universal assortment from another country website or brand name."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence":"Koki Holdings' history establishes brand ownership and regional brand evolution, not a model-by-model factory allocation.","scope":"Corporate history and brand disclosure","buyerCheck":"Use dated model labels, compliance files and shipment documents to identify manufacturer and origin."},
+    {"evidence":"Metabo HPT identifies Koki Holdings America as its U.S./Canada operating company.","scope":"North American company profile","buyerCheck":"Do not treat the regional operator as manufacturer or guarantor outside its stated market."},
+    {"evidence":"The 2025 North American integration announcement concerns brand presentation and continued service, not universal product interchangeability.","scope":"North American commercial transition","buyerCheck":"Confirm the exact product, pack, repair and warranty route after the branding transition."}
+  ],
+  "marketsChannels": [
+    {"evidence":"Metabo HPT describes itself as the North American brand for the HiKOKI international power-tool business.","scope":"United States and Canada brand route","buyerCheck":"Use the local Metabo HPT entity and authorized dealer information for North American purchases."},
+    {"evidence":"Koki Holdings operates HiKOKI as an international brand, with regional product and support structures.","scope":"Global brand architecture","buyerCheck":"Verify current seller, importer and warranty party in the target country."},
+    {"evidence":"Koki's 2025 North American announcement says Metabo and Metabo HPT product service, repairs and parts would continue during the branding transition.","scope":"North America transition communication","buyerCheck":"Obtain current written confirmation for legacy-product warranty and parts eligibility."}
+  ],
+  "competitivePosition": {"summary":"World Clean Biz assessment: HiKOKI/Metabo HPT brings a regional-brand model to a professional cordless and pneumatic tool offer. The core buyer risk is naming confusion: shared Koki Holdings ownership does not make HiKOKI, Metabo HPT and Metabo the same brand, product platform or warranty route.","competitorSlugs":["metabo","makita","bosch-power-tools","milwaukee"]},
+  "developments": [
+    {"date":"2025-11","title":"North American Metabo brand transition announced","summary":"Koki Group announced that Metabo North America would transition to Metabo HPT in phases, with service and parts continuity stated for existing customers.","sourceIds":["metabo-na-transition"]},
+    {"date":"2018-10","title":"HiKOKI brand launches internationally","summary":"Koki Holdings' corporate history records the change from Hitachi Power Tools to HiKOKI.","sourceIds":["koki-history"]},
+    {"date":"2016","title":"Koki acquires Metabo","summary":"Koki Holdings' history records the Metabo acquisition, while Metabo remains a separately positioned brand.","sourceIds":["koki-history"]}
+  ],
+  "sources": [
+    {"id":"koki-history","title":"Corporate History","publisher":"Koki Holdings","url":"https://www.koki-holdings.com/corporate/history.html","accessedAt":"2026-08-01"},
+    {"id":"metabo-hpt-about","title":"About Us","publisher":"Metabo HPT","url":"https://www.metabo-hpt.com/about/about-us","accessedAt":"2026-08-01"},
+    {"id":"metabo-na-transition","title":"Metabo North America to Become Metabo HPT","publisher":"Metabo / Koki Group","url":"https://www.metabo.com/us/enus/info/news/news/","publishedAt":"2025-11-17","accessedAt":"2026-08-01"},
+    {"id":"metabo-hpt-history","title":"Company History","publisher":"Metabo HPT","url":"https://www.metabo-hpt.com/about/company-history","accessedAt":"2026-08-01"}
+  ],
+  "publishedAt": "2026-08-01T12:30:00+08:00",
+  "lastVerified": "2026-08-01",
+  "lastModified": "2026-08-01T12:30:00+08:00"
+}

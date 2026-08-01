@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
+import { BrandCategoryPage } from "@/components/brands/BrandCategoryPage";
 import { BrandHero } from "@/components/brands/BrandHero";
 import { BrandSections } from "@/components/brands/BrandSections";
 import { BrandSources } from "@/components/brands/BrandSources";
@@ -11,6 +12,11 @@ import {
   getBrandPageData,
   getPublishedBrandProfiles
 } from "@/lib/brands";
+import {
+  buildBrandCategorySchemas,
+  buildBrandCategoryStaticParams,
+  getBrandCategoryPageData
+} from "@/lib/brandCategories";
 import { getInsights } from "@/lib/content";
 
 const siteUrl = "https://worldcleanbiz.com";
@@ -23,7 +29,11 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
   const articles = getInsights();
-  return buildBrandStaticParams(getPublishedBrandProfiles(articles));
+  const profiles = getPublishedBrandProfiles(articles);
+  return [
+    ...buildBrandStaticParams(profiles),
+    ...buildBrandCategoryStaticParams(profiles)
+  ];
 }
 
 export async function generateMetadata({
@@ -31,6 +41,24 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const articles = getInsights();
+  const profiles = getPublishedBrandProfiles(articles);
+  const categoryData = getBrandCategoryPageData(slug, profiles);
+  if (categoryData) {
+    const canonical = `/brands/${categoryData.category.slug}`;
+
+    return {
+      title: categoryData.category.title,
+      description: categoryData.category.description,
+      alternates: { canonical },
+      openGraph: {
+        title: `${categoryData.category.title} | World Clean Biz`,
+        description: categoryData.category.description,
+        type: "website",
+        url: canonical
+      }
+    };
+  }
+
   const data = getBrandPageData(slug, articles);
   if (!data) return {};
 
@@ -54,9 +82,23 @@ export async function generateMetadata({
 export default async function BrandPage({ params }: PageProps) {
   const { slug } = await params;
   const articles = getInsights();
-  const publishedBrandSlugs = new Set(
-    getPublishedBrandProfiles(articles).map((profile) => profile.slug)
-  );
+  const profiles = getPublishedBrandProfiles(articles);
+  const categoryData = getBrandCategoryPageData(slug, profiles);
+  if (categoryData) {
+    const schemas = buildBrandCategorySchemas(categoryData, siteUrl);
+
+    return (
+      <>
+        <BrandCategoryPage data={categoryData} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}
+        />
+      </>
+    );
+  }
+
+  const publishedBrandSlugs = new Set(profiles.map((profile) => profile.slug));
   const data = getBrandPageData(slug, articles);
   if (!data) notFound();
 

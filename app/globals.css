@@ -23786,6 +23786,76 @@ button.contact-help-card > .contact-help-card-copy > span {
   gap: 24px;
 }
 
+.brand-category-directory-section {
+  padding-bottom: 0;
+}
+
+.brand-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.brand-category-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft);
+  overflow: hidden;
+}
+
+.brand-category-card > a {
+  display: grid;
+  min-height: 100%;
+  gap: 10px;
+  padding: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-category-card:hover,
+.brand-category-card:focus-within {
+  border-color: var(--accent);
+  background: #fff;
+}
+
+.brand-category-card__eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.brand-category-card h2 {
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(20px, 2vw, 24px);
+  line-height: 1.2;
+}
+
+.brand-category-card > a > p:not(.brand-category-card__eyebrow) {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.brand-category-card__focus {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.brand-category-card small {
+  margin-top: auto;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 850;
+}
+
 .brand-article-grid--balanced {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -23880,6 +23950,28 @@ button.contact-help-card > .contact-help-card-copy > span {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+}
+
+.brand-category-link {
+  display: inline-flex;
+  margin: 0 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  padding: 5px 9px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brand-category-link:hover,
+.brand-category-link:focus-visible {
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .brand-logo--hero {
@@ -24336,10 +24428,18 @@ button.contact-help-card > .contact-help-card-copy > span {
   .brand-directory-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .brand-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 840px) {
   .brand-directory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-category-grid {
     grid-template-columns: 1fr;
   }
 }
