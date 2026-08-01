@@ -9,7 +9,7 @@ type PageParams = Promise<{ series: string }>;
 const siteUrl = "https://worldcleanbiz.com";
 const seriesDescriptions: Record<string, string> = {
   "building-worlds-no-1-cleaning-show-from-scratch":
-    "Follow You Denny’s public record of building World Clean Expo, from the industry experiences that shaped the idea to the decisions, setbacks and connections behind the show."
+    "Follow You Denny’s public record of building WCB Expo, from the industry experiences that shaped the idea to the decisions, setbacks and connections behind the show."
 };
 
 function getSeriesData(series: string) {

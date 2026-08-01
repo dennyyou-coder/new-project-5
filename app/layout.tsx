@@ -13,12 +13,12 @@ export const metadata: Metadata = {
     template: "%s | World Clean Biz"
   },
   description:
-    "A trusted information home for global cleaning industry professionals covering insights, market reports, sourcing intelligence, and World Clean Expo.",
+    "A trusted information home for global cleaning industry professionals covering insights, market reports, sourcing intelligence, and WCB Expo.",
   keywords: [
     "cleaning industry",
     "cleaning industry intelligence",
     "cleaning product sourcing",
-    "World Clean Expo",
+    "WCB Expo",
     "market reports",
     "floor care",
     "robot vacuum",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "World Clean Biz",
     description:
-      "Global cleaning industry insights, reports, sourcing intelligence, and expo information."
+      "Global cleaning industry insights, reports, sourcing intelligence, and WCB Expo information."
   }
 };
 

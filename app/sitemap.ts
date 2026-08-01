@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sourcing/commercial-cleaning",
     "/sourcing/vacuum-cleaners",
     "/reports",
-    "/world-clean-expo",
+    "/wcb-expo",
     "/about",
     "/contact"
   ];

@@ -4,7 +4,7 @@ import test from "node:test";
 
 const pages = Object.fromEntries(
   await Promise.all(
-    ["page", "sourcing/page", "contact/page", "reports/page", "world-clean-expo/page"].map(
+    ["page", "sourcing/page", "contact/page", "reports/page", "wcb-expo/page"].map(
       async (name) => [
         name,
         await readFile(new URL(`../app/${name}.tsx`, import.meta.url), "utf8")
@@ -14,7 +14,7 @@ const pages = Object.fromEntries(
 );
 
 test("homepage presents Denny's current industry identity without changing its structure", () => {
-  assert.match(pages.page, /Organizer, World Clean Expo/);
+  assert.match(pages.page, /Organizer, WCB Expo/);
   assert.match(pages.page, /For a decade/);
   assert.match(pages.page, /Hardware entrepreneur/);
   assert.match(pages.page, /Since 2006/);
@@ -29,7 +29,7 @@ test("Sourcing uses relevant operator, entrepreneur and network proof", () => {
 });
 
 test("Contact carries the compact founder and organizer identity", () => {
-  assert.match(pages["contact/page"], /Founder, World Clean Biz · Organizer, World Clean Expo/);
+  assert.match(pages["contact/page"], /Founder, World Clean Biz · Organizer, WCB Expo/);
   assert.match(pages["contact/page"], /Inside the cleaning industry since 2006/);
 });
 
@@ -41,8 +41,8 @@ test("Reports emphasizes Denny's decade of analysis and financial-market audienc
 });
 
 test("Expo identifies its organizer and explains the network behind matching", () => {
-  assert.match(pages["world-clean-expo/page"], /ORGANIZER &amp; INDUSTRY NETWORK/);
-  assert.match(pages["world-clean-expo/page"], /Denny You/);
-  assert.match(pages["world-clean-expo/page"], /organizer of World Clean\s+Expo/);
-  assert.match(pages["world-clean-expo/page"], /manufacturers, suppliers, brands,\s+buyers, investors and media/);
+  assert.match(pages["wcb-expo/page"], /ORGANIZER &amp; INDUSTRY NETWORK/);
+  assert.match(pages["wcb-expo/page"], /Denny You/);
+  assert.match(pages["wcb-expo/page"], /organizer of WCB Expo/);
+  assert.match(pages["wcb-expo/page"], /manufacturers, suppliers, brands,\s+buyers, investors and media/);
 });

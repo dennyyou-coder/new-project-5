@@ -44,7 +44,7 @@ export function DirectorySidebar({
         <p className="content-directory-profile-roles">
           Founder, World Clean Biz
           <br />
-          Organizer, World Clean Expo
+          Organizer, WCB Expo
           <br />
           Inside the cleaning industry since 2006.
         </p>

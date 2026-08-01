@@ -36,9 +36,9 @@ const nextSteps = [
   },
   {
     eyebrow: "INDUSTRY CONNECTIONS",
-    title: "Explore World Clean Expo",
+    title: "Explore WCB Expo",
     text: "See the exhibitor, visitor and business connection opportunities taking shape.",
-    href: "/world-clean-expo"
+    href: "/wcb-expo"
   },
   {
     eyebrow: "MARKET INTELLIGENCE",

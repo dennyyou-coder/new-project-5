@@ -34,7 +34,7 @@ const CTA_BY_TYPE: Record<BlogCtaType, BlogCtaDefinition> = {
   },
   expo: {
     type: "expo",
-    eyebrow: "World Clean Expo",
+    eyebrow: "WCB Expo",
     title: "Follow The Next Cleaning Industry Platform",
     description:
       "Receive visitor registration, exhibitor, forum and business matching updates.",

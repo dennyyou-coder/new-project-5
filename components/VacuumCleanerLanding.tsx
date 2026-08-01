@@ -128,7 +128,7 @@ export function VacuumCleanerLanding({ product }: { product: SourcingProduct }) 
       <section className="section sourcing-lawn-trust-section">
         <div className="sourcing-v3-container sourcing-lawn-trust">
           <img src="/images/industry/about-denny-portrait-event.jpg" alt="Denny, founder of World Clean Biz, at a cleaning industry event" />
-          <div><p className="sourcing-v3-kicker">Industry judgment behind the product decision</p><h2>A strong specification is not yet a sustainable vacuum cleaner business</h2><p>Denny reviews whether market opportunity, cleaning evidence, supplier capability and execution economics reinforce one another strongly enough to justify the next investment—not whether the sample looks impressive.</p><ul><li>Founder, World Clean Biz</li><li>Organizer, World Clean Expo</li><li>Inside the cleaning industry since 2006</li></ul></div>
+          <div><p className="sourcing-v3-kicker">Industry judgment behind the product decision</p><h2>A strong specification is not yet a sustainable vacuum cleaner business</h2><p>Denny reviews whether market opportunity, cleaning evidence, supplier capability and execution economics reinforce one another strongly enough to justify the next investment—not whether the sample looks impressive.</p><ul><li>Founder, World Clean Biz</li><li>Organizer, WCB Expo</li><li>Inside the cleaning industry since 2006</li></ul></div>
         </div>
       </section>
 

@@ -392,7 +392,7 @@ export default async function InsightDetailPage({ params }: Props) {
                 <img src="/images/site-refresh/about/about-hero-denny.webp" alt={`${article.author}, founder of World Clean Biz`} loading="lazy" decoding="async" />
                 <div>
                   <strong>{article.author}</strong>
-                  <span>Founder, World Clean Biz · Organizer, World Clean Expo</span>
+                  <span>Founder, World Clean Biz · Organizer, WCB Expo</span>
                   <p>
                     Inside the cleaning industry since 2006, Denny reviews product, supplier and category signals for practical business decisions.
                   </p>

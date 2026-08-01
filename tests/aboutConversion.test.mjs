@@ -12,7 +12,7 @@ const globalStyles = await readFile(
 );
 
 test("About leads with Denny's organizer role and value-chain network", () => {
-  assert.match(aboutSource, /Organizer Of World Clean Expo/);
+  assert.match(aboutSource, /Organizer Of WCB Expo/);
   assert.match(aboutSource, /Connected Across The Entire Value Chain/);
   assert.match(aboutSource, /one of the\s+cleaning industry’s most extensive professional networks/);
   assert.match(aboutSource, /Manufacturers/);
@@ -24,10 +24,10 @@ test("About leads with Denny's organizer role and value-chain network", () => {
 test("About explains the current World Clean Biz business platform", () => {
   assert.match(aboutSource, /Industry Intelligence/);
   assert.match(aboutSource, /Product & Sourcing Opportunities/);
-  assert.match(aboutSource, /World Clean Expo & Business Connections/);
+  assert.match(aboutSource, /WCB Expo & Business Connections/);
   assert.match(aboutSource, /href="\/sourcing"/);
   assert.match(aboutSource, /href="\/reports"/);
-  assert.match(aboutSource, /href="\/world-clean-expo"/);
+  assert.match(aboutSource, /href="\/wcb-expo"/);
 });
 
 test("About connects Denny's judgement to team execution", () => {
