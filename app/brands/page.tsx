@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BrandDirectoryCard } from "@/components/brands/BrandDirectoryCard";
-import { BrandCategoryCard } from "@/components/brands/BrandCategoryCard";
 import { getPublishedBrandCategories } from "@/lib/brandCategories";
 import {
   buildBrandDirectorySchemas,
@@ -52,33 +51,34 @@ export default function BrandsPage() {
         </div>
       </section>
 
-      <section className="section brand-category-directory-section">
-        <div className="insights-page-container">
-          <div className="section-heading guides-section-heading">
-            <p className="eyebrow">Buying categories</p>
-            <h2>Start with the product market.</h2>
+      {categories.map((data, index) => (
+        <section
+          className={`section brand-category-list${index % 2 === 1 ? " brand-category-list--soft" : ""}`}
+          id={data.category.slug}
+          key={data.category.slug}
+        >
+          <div className="insights-page-container">
+            <div className="brand-category-list__intro">
+              <div>
+                <p className="eyebrow">Buying category</p>
+                <h2>{data.category.name}</h2>
+                <p>{data.category.description}</p>
+              </div>
+              <div className="brand-category-list__meta">
+                <span>{data.category.buyerFocus}</span>
+                <Link href={`/brands/${data.category.slug}`}>
+                  Explore {data.category.name} intelligence
+                </Link>
+              </div>
+            </div>
+            <div className="guides-featured-grid brand-directory-grid">
+              {data.profiles.map((profile) => (
+                <BrandDirectoryCard key={profile.slug} profile={profile} />
+              ))}
+            </div>
           </div>
-          <div className="brand-category-grid">
-            {categories.map((data) => (
-              <BrandCategoryCard key={data.category.slug} data={data} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section guides-featured-section">
-        <div className="insights-page-container">
-          <div className="section-heading guides-section-heading">
-            <p className="eyebrow">Company Research</p>
-            <h2>Browse All Verified Brand Profiles.</h2>
-          </div>
-          <div className="guides-featured-grid brand-directory-grid">
-            {profiles.map((profile) => (
-              <BrandDirectoryCard key={profile.slug} profile={profile} />
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       <script
         type="application/ld+json"
