@@ -1,0 +1,54 @@
+{
+  "status": "draft",
+  "slug": "kobalt",
+  "name": "Kobalt",
+  "aliases": ["Kobalt Tools", "Kobalt 24V MAX"],
+  "legalEntityNote": "Kobalt is Lowe's retail-tool brand. The reviewed Lowe's material establishes channel positioning, while the 2026 CPSC recall identifies a named importer and factories only for covered Kobalt outdoor-power SKUs; it must not be used as a universal Kobalt manufacturing claim.",
+  "officialWebsite": "https://www.lowes.com/",
+  "headline": "Kobalt retail ownership, 24V platform and SKU-specific supply-chain checks",
+  "description": "A source-backed profile of Kobalt's Lowe's retail position, 24V cordless and outdoor portfolio, and the boundary between a recalled SKU's importer evidence and the wider brand.",
+  "metaDescription": "Kobalt profile: Lowe's retail position, 24V MAX tools, outdoor equipment, recall evidence, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Kobalt, Lowe's or Greenworks. Named importer, factory and recall evidence applies only to the recalled products and dates stated by the regulator.",
+  "headquarters": "Mooresville, North Carolina, United States (Lowe's corporate headquarters)",
+  "founded": "1998 (Kobalt brand); current Lowe's retail brand",
+  "heroImage": "/images/brands/kobalt/hero.webp",
+  "heroImageAlt": "Kobalt cordless power-tool platform assortment",
+  "logoImage": "/images/brands/kobalt/logo.webp",
+  "logoImageAlt": "Kobalt logo",
+  "logoSourceUrl": "https://corporate.lowes.com/newsroom/press-releases/kobalt-launches-24v-max-brushless-power-tools-06-01-16",
+  "contentVisuals": [
+    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Cordless platform and outdoor power equipment assortment","caption":"A retail private-label-style tool offer can span multiple product families without proving a single manufacturer for each SKU."},
+    {"placement":"operations","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Cordless tools used in a professional task workflow","caption":"Model-level label, importer and warranty documents remain the buyer's evidence for any Kobalt product."}
+  ],
+  "ownership": {"summary":"Kobalt is positioned by Lowe's as a retail-exclusive tool brand. The reviewed official Lowe's launch communication describes Kobalt as available exclusively at Lowe's; it does not establish a single Kobalt legal manufacturer across the catalogue.","parentCompany":"Lowe's Companies, Inc. (retail brand position)"},
+  "leadership": [],
+  "productPortfolio": [
+    {"name":"24V MAX cordless power tools","positioning":"Lowe's introduced Kobalt's 24V MAX brushless range as a cordless platform for tools and batteries.","buyerRelevance":"Check the exact battery, charger, tool configuration and product-year compatibility."},
+    {"name":"Outdoor power equipment","positioning":"Kobalt extends into battery outdoor equipment alongside core tool categories.","buyerRelevance":"Review current safety notices, importer identity, country of origin and service terms for every outdoor SKU."},
+    {"name":"Hand tools, storage and accessories","positioning":"Kobalt's Lowe's offer also encompasses non-powered tool and storage categories.","buyerRelevance":"Do not transfer warranty or manufacturer data from a power-tool SKU to a hand-tool or storage product."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence":"Lowe's official Kobalt communications present a retail brand and product range, not a universal factory roster.","scope":"Retail-brand disclosure","buyerCheck":"Treat the product label, importer declaration and shipment documents as the source for exact manufacturing responsibility."},
+    {"evidence":"The U.S. CPSC's July 2026 recall identifies Greenworks North America, LLC as importer and China/Vietnam factories for named Kobalt leaf-blower and outdoor-power SKUs with USB-C ports.","scope":"Specific recalled products sold January–May 2026","buyerCheck":"Match model number and production details before relying on this importer or origin evidence."},
+    {"evidence":"The CPSC notice is not a Kobalt-wide manufacturing map.","scope":"Regulatory boundary","buyerCheck":"Do not generalize the named recall manufacturer/importer to unlisted Kobalt products."}
+  ],
+  "marketsChannels": [
+    {"evidence":"Lowe's describes Kobalt as available exclusively at Lowe's in the reviewed 24V MAX launch.","scope":"Lowe's brand and channel statement","buyerCheck":"Verify current local retailer availability and seller authorization before purchase."},
+    {"evidence":"The recalled Kobalt products were sold at Lowe's stores and Lowes.com during the cited period.","scope":"CPSC recall record for named products","buyerCheck":"Check the current product listing and any updated remedy/recall instruction."},
+    {"evidence":"Retail-channel evidence does not identify the party that will warrant every product in every market.","scope":"Brand-level limitation","buyerCheck":"Obtain the market-specific warranty document and invoice entity."}
+  ],
+  "competitivePosition": {"summary":"World Clean Biz assessment: Kobalt's strength is retail accessibility and a visible cordless-platform proposition within Lowe's. Its sourcing risk is attribution: the brand, retailer, importer, factory and warranty party can differ by SKU, and a recall is model-specific evidence rather than a group supply-chain map.","competitorSlugs":["craftsman","ryobi","greenworks","dewalt"]},
+  "developments": [
+    {"date":"2026-07","title":"CPSC announces Kobalt outdoor-power recall","summary":"The regulator published a recall for named Kobalt leaf-blower and outdoor-power products with USB-C ports.","sourceIds":["cpsc-kobalt-2026"]},
+    {"date":"2016-06","title":"Lowe's launches Kobalt 24V MAX brushless range","summary":"Lowe's announced the Kobalt 24V MAX brushless platform and its Lowe's-exclusive retail positioning.","sourceIds":["lowes-kobalt-24v"]},
+    {"date":"1998","title":"Kobalt brand begins","summary":"Lowe's brand history identifies Kobalt as its tool brand introduced in 1998.","sourceIds":["lowes-kobalt-24v"]}
+  ],
+  "sources": [
+    {"id":"lowes-kobalt-24v","title":"Kobalt Launches 24V MAX Brushless Power Tools","publisher":"Lowe's Companies, Inc.","url":"https://corporate.lowes.com/newsroom/press-releases/kobalt-launches-24v-max-brushless-power-tools-06-01-16","publishedAt":"2016-06-01","accessedAt":"2026-08-01"},
+    {"id":"cpsc-kobalt-2026","title":"Greenworks Tools Recalls Kobalt Yard Power Tools with USB-C Batteries","publisher":"U.S. Consumer Product Safety Commission","url":"https://www.cpsc.gov/Recall-Products/Leaf-Blowers","publishedAt":"2026-07-09","accessedAt":"2026-08-01"},
+    {"id":"lowes-kobalt-product","title":"Kobalt product listing","publisher":"Lowe's","url":"https://www.lowes.com/pd/Kobalt-151-Steel-Cup-Holder/1000308969","accessedAt":"2026-08-01"}
+  ],
+  "publishedAt": "2026-08-01T12:10:00+08:00",
+  "lastVerified": "2026-08-01",
+  "lastModified": "2026-08-01T12:10:00+08:00"
+}

@@ -1,0 +1,56 @@
+{
+  "status": "draft",
+  "slug": "festool",
+  "name": "Festool",
+  "aliases": ["Festool Power Tools", "Festool SYSTEM"],
+  "legalName": "Festool GmbH",
+  "legalEntityNote": "Festool is a brand of TTS Tooltechnic Systems SE & Co. KG. Festool's warranty terms use territory-specific purchaser, dealer and service arrangements, so the group parent, brand operator, seller, factory and warranty administrator must not be collapsed into one role.",
+  "officialWebsite": "https://www.festool.com/",
+  "headline": "Festool ownership, premium system tools and European production footprint",
+  "description": "A source-backed profile of Festool within TTS Tooltechnic Systems, its professional-system portfolio, named production sites and market-specific warranty checks.",
+  "metaDescription": "Festool profile: TTS ownership, professional system tools, production sites, dealer routes, warranty and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Festool or TTS Tooltechnic Systems. Named sites and group disclosures do not establish the factory or warranty entity for every SKU and destination market.",
+  "headquarters": "Wendlingen am Neckar, Germany",
+  "founded": "1925 brand heritage; current Festool GmbH within TTS Tooltechnic Systems",
+  "heroImage": "/images/brands/festool/hero.webp",
+  "heroImageAlt": "Festool professional power tools and dust extractor system",
+  "logoImage": "/images/brands/festool/logo.webp",
+  "logoImageAlt": "Festool logo",
+  "logoSourceUrl": "https://www.festool.com/company/facts-and-figures",
+  "contentVisuals": [
+    {"placement":"portfolio","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Professional cordless and dust-control workflow","caption":"Festool's premium differentiation relies on connected work processes; exact accessory and extraction compatibility still needs SKU-level confirmation."},
+    {"placement":"operations","src":"/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp","alt":"European professional tool industry visual","caption":"European product development and named sites are useful context, but do not substitute for model-specific factory evidence."}
+  ],
+  "ownership": {"summary":"Festool and Tanos are brands of the family-run TTS Tooltechnic Systems SE & Co. KG, according to Festool's official facts-and-figures page. Festool GmbH is a group operating company; the brand should not be treated as a separate parent group.","parentCompany":"TTS Tooltechnic Systems SE & Co. KG"},
+  "leadership": [],
+  "productPortfolio": [
+    {"name":"Professional power tools","positioning":"Festool focuses on premium, trade-oriented drilling, sawing, routing, sanding and joining systems.","buyerRelevance":"Specify task, accessory, dust-control and regional electrical requirements in the purchase order."},
+    {"name":"Dust extractors and mobile workshop systems","positioning":"Extraction, Systainer storage and worksite systems connect tools into controlled woodworking and finishing workflows.","buyerRelevance":"Check extraction class, connector compatibility, consumables and local compliance."},
+    {"name":"Cordless and connected system products","positioning":"Cordless tools extend Festool's system approach into mobile professional use.","buyerRelevance":"Match the exact battery, charger, tool generation and market warranty conditions."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence":"Festool identifies production sites in Neidlingen, Illertissen and Česká Lípa in its official company facts.","scope":"Named group production footprint","buyerCheck":"Do not infer that a given tool is made at a named site; verify the exact SKU label and declaration."},
+    {"evidence":"TTS' supplier information identifies the current corporate name TTS Tooltechnic Systems SE & Co. KG from 1 January 2026.","scope":"Group legal-entity communication","buyerCheck":"Use the contracting entity shown on the purchase and warranty documents."},
+    {"evidence":"Festool's warranty terms set out buyer and dealer conditions rather than a global factory list.","scope":"Warranty terms","buyerCheck":"Confirm local warranty administration, registration and claim route before ordering."}
+  ],
+  "marketsChannels": [
+    {"evidence":"Festool reports its own subsidiaries in 25 countries and presence in 68 countries.","scope":"Company-reported geographic reach","buyerCheck":"Confirm the local selling entity, dealer authorization and service coverage."},
+    {"evidence":"The warranty terms cover purchases through Festool or authorized dealers in the stated territory.","scope":"Territory-specific warranty terms","buyerCheck":"Buy through an authorized route and retain the dated invoice and registration evidence."},
+    {"evidence":"Global contact information is organized by country and regional operating entity.","scope":"Official contact network","buyerCheck":"Use the target-market contact to validate current product and service availability."}
+  ],
+  "competitivePosition": {"summary":"World Clean Biz assessment: Festool occupies a premium professional position based on precision, extraction, storage and workflow integration. The buyer implication is a systems check rather than a logo check: verify the exact tool, accessories, extractor, local seller and warranty process together.","competitorSlugs":["hilti","bosch-power-tools","makita","milwaukee"]},
+  "developments": [
+    {"date":"2026-01","title":"TTS updates its legal corporate name","summary":"TTS supplier communication states the corporate name TTS Tooltechnic Systems SE & Co. KG from 1 January 2026.","sourceIds":["tts-suppliers"]},
+    {"date":"2025","title":"Festool reports global operating footprint","summary":"Festool's facts page reports production sites, country presence and group-brand structure.","sourceIds":["festool-facts"]},
+    {"date":"1925","title":"Festool traces its company history to 1925","summary":"Festool's company-history material records its early business history.","sourceIds":["festool-history"]}
+  ],
+  "sources": [
+    {"id":"festool-facts","title":"Facts and Figures","publisher":"Festool","url":"https://www.festool.com/company/facts-and-figures","accessedAt":"2026-08-01"},
+    {"id":"festool-warranty","title":"Warranty Terms and Conditions","publisher":"Festool","url":"https://www.festool.com/service/warranty-terms-and-conditions","accessedAt":"2026-08-01"},
+    {"id":"tts-suppliers","title":"Supplier Information","publisher":"Festool / TTS Tooltechnic Systems","url":"https://www.festool.com/suppliers","publishedAt":"2026-01","accessedAt":"2026-08-01"},
+    {"id":"festool-history","title":"Company History","publisher":"Festool","url":"https://www.festool.com/company/company-history","accessedAt":"2026-08-01"}
+  ],
+  "publishedAt": "2026-08-01T12:25:00+08:00",
+  "lastVerified": "2026-08-01",
+  "lastModified": "2026-08-01T12:25:00+08:00"
+}

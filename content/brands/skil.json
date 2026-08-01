@@ -1,0 +1,55 @@
+{
+  "status": "draft",
+  "slug": "skil",
+  "name": "SKIL",
+  "aliases": ["SKIL Power Tools", "SKIL PWRCORE"],
+  "legalName": "Chervon North America, Inc. (reviewed U.S./Canada warranty entity)",
+  "legalEntityNote": "SKIL is a Chervon Group brand. Chervon North America, Inc. is the warrantor for the reviewed U.S./Canada policy; that regional warranty statement does not identify the trademark owner, manufacturer, importer or guarantor for every country and SKU.",
+  "officialWebsite": "https://www.skil.com/",
+  "headline": "SKIL ownership, PWRCORE battery systems and regional warranty boundary",
+  "description": "A source-backed profile of SKIL within Chervon, PWRCORE product systems, regional warranty responsibilities and SKU-level buyer checks.",
+  "metaDescription": "SKIL profile: Chervon ownership, PWRCORE platforms, products, manufacturing boundaries, channels, warranties and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with SKIL or Chervon. Group ownership and a regional warranty policy do not prove the factory, seller or guarantor for each product in every market.",
+  "headquarters": "Grand Rapids, Michigan, United States (SKIL North America contact route); Chervon Group global operations",
+  "founded": "1924 brand heritage; current Chervon Group brand",
+  "heroImage": "/images/brands/skil/hero.webp",
+  "heroImageAlt": "SKIL cordless chainsaw in outdoor cutting use",
+  "logoImage": "/images/brands/skil/logo.webp",
+  "logoImageAlt": "SKIL logo",
+  "logoSourceUrl": "https://www.skil.com/",
+  "contentVisuals": [
+    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Cordless tool and outdoor equipment platform assortment","caption":"SKIL's PWRCORE product systems should be matched to the exact voltage platform and market rather than treated as a universal battery claim."},
+    {"placement":"operations","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Cordless-tool workflow in a professional application","caption":"Brand-platform evidence does not replace model-specific origin, importer and warranty checks."}
+  ],
+  "ownership": {"summary":"SKIL is a Chervon Group brand. Chervon's official brand page places SKIL in the group's portfolio alongside FLEX and other tool brands; it does not make SKIL a separate parent company.","parentCompany":"Chervon Group"},
+  "leadership": [],
+  "productPortfolio": [
+    {"name":"PWRCORE 12","positioning":"Compact cordless tools and batteries for lighter-duty and constrained-space tasks.","buyerRelevance":"Confirm the exact PWRCORE 12 tool, battery and charger rather than assuming compatibility with other voltage systems."},
+    {"name":"PWRCORE 20","positioning":"The broad core cordless system for home-improvement power tools.","buyerRelevance":"Check platform, included battery capacity and destination-market electrical/accessory specification."},
+    {"name":"PWRCORE 40 outdoor equipment","positioning":"Battery outdoor-power products extend the SKIL offer into lawn and garden work.","buyerRelevance":"Review product-specific safety, runtime, service and warranty terms."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence":"Chervon's brand page establishes SKIL as a group brand but does not allocate each SKIL model to a particular factory.","scope":"Group brand-portfolio disclosure","buyerCheck":"Use dated SKU labels, declarations and shipment documents to verify manufacturer and origin."},
+    {"evidence":"SKIL's reviewed warranty is issued by Chervon North America, Inc. for covered U.S. and Canadian products.","scope":"United States and Canada warranty terms","buyerCheck":"Do not treat the U.S./Canada warrantor as the manufacturer or universal global seller."},
+    {"evidence":"PWRCORE system pages describe platform families, not cross-platform or universal-product compatibility.","scope":"System-level product information","buyerCheck":"Verify the exact tool/battery/charger family before ordering."}
+  ],
+  "marketsChannels": [
+    {"evidence":"SKIL's warranty conditions reference purchases from authorized SKIL retailers and authorized service centers.","scope":"U.S./Canada warranty eligibility","buyerCheck":"Confirm seller authorization and retain proof of purchase."},
+    {"evidence":"The SKIL site separates product systems, support and warranty routes.","scope":"North American brand site","buyerCheck":"Use the destination market's official support route for service coverage."},
+    {"evidence":"Chervon's corporate portfolio operates internationally, while availability remains country and SKU specific.","scope":"Group-level positioning","buyerCheck":"Verify the local importer, distributor and warranty entity before launch."}
+  ],
+  "competitivePosition": {"summary":"World Clean Biz assessment: SKIL's position is a clear multi-voltage cordless ladder for DIY and outdoor users within the Chervon portfolio. The buyer risk is platform and entity overreach: PWRCORE names a system family, while seller authorization, origin and warranty remain product- and market-specific.","competitorSlugs":["ryobi","craftsman","flex","greenworks"]},
+  "developments": [
+    {"date":"2025-11","title":"Reviewed U.S./Canada warranty policy updated","summary":"SKIL's warranty terms identify Chervon North America, Inc. and the scope of covered products and authorized channels.","sourceIds":["skil-warranty"]},
+    {"date":"2025","title":"Chervon reports SKIL within its brand portfolio","summary":"Chervon's group brand information presents SKIL as one of its consumer and professional tool brands.","sourceIds":["chervon-brands"]},
+    {"date":"1924","title":"SKIL brand heritage begins","summary":"SKIL traces its tool-brand history to 1924.","sourceIds":["skil-systems"]}
+  ],
+  "sources": [
+    {"id":"chervon-brands","title":"Chervon Brands","publisher":"Chervon Group","url":"https://global.chervongroup.com/en/node/108","accessedAt":"2026-08-01"},
+    {"id":"skil-warranty","title":"SKIL Warranty","publisher":"SKIL","url":"https://www.skil.com/pages/warranty","publishedAt":"2025-11","accessedAt":"2026-08-01"},
+    {"id":"skil-systems","title":"PWRCORE Systems","publisher":"SKIL","url":"https://www.skil.com/core-systems","accessedAt":"2026-08-01"}
+  ],
+  "publishedAt": "2026-08-01T12:15:00+08:00",
+  "lastVerified": "2026-08-01",
+  "lastModified": "2026-08-01T12:15:00+08:00"
+}

@@ -4,10 +4,12 @@ import {
   type BrandProfile
 } from "@/lib/brands";
 import { formatBrandDate } from "@/lib/brandDates";
+import { getBrandCategoryForProfile } from "@/lib/brandCategories";
 import { BrandDataTable } from "./BrandDataTable";
 import { BrandLogo } from "./BrandLogo";
 
 export function BrandHero({ profile }: { profile: BrandProfile }) {
+  const category = getBrandCategoryForProfile(profile.slug);
   const legalName = normalizeOptionalBrandText(profile.legalName);
   const legalEntityNote = normalizeOptionalBrandText(profile.legalEntityNote);
   const legalEntityScope = legalName || legalEntityNote;
@@ -53,6 +55,12 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
           <span>/</span>
           <Link href="/brands">Brand Intelligence</Link>
           <span>/</span>
+          {category ? (
+            <>
+              <Link href={`/brands/${category.slug}`}>{category.name}</Link>
+              <span>/</span>
+            </>
+          ) : null}
           <span>{profile.name}</span>
         </nav>
 
@@ -62,6 +70,11 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
               <BrandLogo profile={profile} variant="hero" />
             </div>
             <p className="eyebrow">Independent Brand Intelligence</p>
+            {category ? (
+              <Link className="brand-category-link" href={`/brands/${category.slug}`}>
+                {category.name}
+              </Link>
+            ) : null}
             <h1>{profile.name}</h1>
             <p>{profile.headline}</p>
             <p>

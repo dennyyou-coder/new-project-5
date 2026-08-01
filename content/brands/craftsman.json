@@ -1,0 +1,55 @@
+{
+  "status": "draft",
+  "slug": "craftsman",
+  "name": "CRAFTSMAN",
+  "aliases": ["Craftsman Tools", "CRAFTSMAN V20"],
+  "legalName": "Stanley Black & Decker, Inc.",
+  "legalEntityNote": "CRAFTSMAN is a Stanley Black & Decker brand. The reviewed U.S. warranty describes eligibility and authorized sellers, but a brand-level ownership statement does not identify a universal manufacturer, importer or warranty entity for every product and country.",
+  "officialWebsite": "https://www.craftsman.com/",
+  "headline": "CRAFTSMAN ownership, V20 system and retail-channel checks",
+  "description": "A source-backed profile of CRAFTSMAN's Stanley Black & Decker ownership, power-tool and outdoor portfolio, authorized-selling requirements and SKU-level buyer checks.",
+  "metaDescription": "CRAFTSMAN profile: Stanley Black & Decker ownership, V20 tools, outdoor equipment, channels, warranties and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with CRAFTSMAN or Stanley Black & Decker. Brand ownership does not establish the manufacturer, seller, importer or warranty party for every CRAFTSMAN SKU.",
+  "headquarters": "Towson, Maryland, United States (Stanley Black & Decker group headquarters)",
+  "founded": "1927; owned at group level by Stanley Black & Decker",
+  "heroImage": "/images/brands/craftsman/hero.webp",
+  "heroImageAlt": "CRAFTSMAN cordless saw in a workshop application",
+  "logoImage": "/images/brands/craftsman/logo.webp",
+  "logoImageAlt": "CRAFTSMAN logo",
+  "logoSourceUrl": "https://press.craftsman.com/2026-05-21-CRAFTSMAN-R-Launches-New-V20-ADVANCED-TM-Batteries-to-Help-DIYers-Power-Through-More-Demanding-Jobs?asPDF=1",
+  "contentVisuals": [
+    {"placement":"ownership","src":"/images/blog/black-decker-stanley-ownership-manufacturing-map.webp","alt":"Stanley Black and Decker brand and responsibility map","caption":"CRAFTSMAN is a Stanley Black & Decker sibling brand; this relationship does not identify every product's factory or warranty party."},
+    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Cordless power-tool platform assortment","caption":"Battery platforms support assortment planning, but buyers must match the precise kit, battery and regional SKU."}
+  ],
+  "ownership": {"summary":"CRAFTSMAN is a Stanley Black & Decker brand. The group's and CRAFTSMAN's own materials position it alongside DEWALT and BLACK+DECKER rather than as a separate parent company.","parentCompany":"Stanley Black & Decker, Inc."},
+  "leadership": [],
+  "productPortfolio": [
+    {"name":"V20 cordless system","positioning":"A 20V MAX consumer and prosumer platform spanning drilling, cutting, fastening and outdoor use.","buyerRelevance":"Confirm the exact battery generation, charger, bare-tool or kit pack and local compatibility."},
+    {"name":"Hand tools, storage and workshop equipment","positioning":"CRAFTSMAN combines power tools with hand tools, storage and worksite accessories.","buyerRelevance":"Seller, warranty and replacement-part terms can differ by product family."},
+    {"name":"Outdoor power equipment","positioning":"The brand includes homeowner outdoor equipment alongside core tool categories.","buyerRelevance":"Verify safety documents, battery configuration and local service coverage for each outdoor model."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence":"CRAFTSMAN's reviewed material identifies a brand and platform offer, not a single factory map for all tools and outdoor products.","scope":"Brand-level product communication","buyerCheck":"Require an exact SKU label, declaration and factory/origin evidence before contracting."},
+    {"evidence":"Stanley Black & Decker is the group-level brand owner, while CRAFTSMAN warranty coverage is controlled by product and authorized-sales conditions.","scope":"Group ownership and U.S. warranty terms","buyerCheck":"Separate trademark ownership from the named seller, importer, manufacturer and guarantor."},
+    {"evidence":"CRAFTSMAN's support route separates product help, parts, service and warranty resources.","scope":"Official U.S. support information","buyerCheck":"Confirm the service route for the exact product family and country."}
+  ],
+  "marketsChannels": [
+    {"evidence":"CRAFTSMAN's 2026 battery release identifies participating Lowe's and Ace Hardware channels for the named launch.","scope":"Named U.S. launch channels","buyerCheck":"Confirm current authorized availability for the target retailer and model."},
+    {"evidence":"CRAFTSMAN warranty terms require purchase through CRAFTSMAN.com or an authorized retailer for the stated coverage.","scope":"U.S. warranty eligibility","buyerCheck":"Retain dated proof of purchase and verify seller authorization before ordering."},
+    {"evidence":"The official support page provides product, parts, warranty and service routes.","scope":"U.S. support structure","buyerCheck":"Use the appropriate local support route rather than relying on a reseller statement."}
+  ],
+  "competitivePosition": {"summary":"World Clean Biz assessment: CRAFTSMAN offers a broad homeowner and workshop proposition built around V20, hand tools and storage. Its buyer-side challenge is not brand recognition but accountability: the exact product, retailer and warranty terms should be verified independently of Stanley Black & Decker group ownership.","competitorSlugs":["dewalt","black-decker","ryobi","kobalt"]},
+  "developments": [
+    {"date":"2026-05","title":"CRAFTSMAN launches V20 ADVANCED batteries","summary":"CRAFTSMAN announced new V20 ADVANCED batteries and named participating Lowe's and Ace Hardware retail routes.","sourceIds":["craftsman-v20-2026"]},
+    {"date":"2025-11","title":"Reviewed warranty terms updated","summary":"CRAFTSMAN's reviewed warranty page sets out authorized-purchase and product-category coverage conditions.","sourceIds":["craftsman-warranty"]},
+    {"date":"1927","title":"CRAFTSMAN brand history begins","summary":"CRAFTSMAN traces the brand's heritage to 1927.","sourceIds":["craftsman-support"]}
+  ],
+  "sources": [
+    {"id":"craftsman-v20-2026","title":"CRAFTSMAN Launches New V20 ADVANCED Batteries","publisher":"CRAFTSMAN","url":"https://press.craftsman.com/2026-05-21-CRAFTSMAN-R-Launches-New-V20-ADVANCED-TM-Batteries-to-Help-DIYers-Power-Through-More-Demanding-Jobs?asPDF=1","publishedAt":"2026-05-21","accessedAt":"2026-08-01"},
+    {"id":"craftsman-warranty","title":"CRAFTSMAN Warranty","publisher":"CRAFTSMAN","url":"https://www.craftsman.com/pages/warranty?sku=CMZAS6JPS","accessedAt":"2026-08-01"},
+    {"id":"craftsman-support","title":"CRAFTSMAN Support","publisher":"CRAFTSMAN","url":"https://www.craftsman.com/en-us/support","accessedAt":"2026-08-01"}
+  ],
+  "publishedAt": "2026-08-01T12:05:00+08:00",
+  "lastVerified": "2026-08-01",
+  "lastModified": "2026-08-01T12:05:00+08:00"
+}
