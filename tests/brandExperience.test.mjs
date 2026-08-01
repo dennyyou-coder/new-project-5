@@ -262,6 +262,8 @@ test("brand directory groups profiles below each product-category introduction",
   assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
   assert.doesNotMatch(source, /<BrandCategoryCard\b/);
   assert.doesNotMatch(source, /Browse All Verified Brand Profiles/);
+  assert.doesNotMatch(source, /data\.category\.buyerFocus/);
+  assert.doesNotMatch(source, /Explore \{data\.category\.name\} intelligence/);
 });
 
 test("brand detail route rejects invalid slugs and exposes static metadata and schemas", () => {

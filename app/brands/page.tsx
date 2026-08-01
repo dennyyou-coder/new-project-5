@@ -64,12 +64,6 @@ export default function BrandsPage() {
                 <h2>{data.category.name}</h2>
                 <p>{data.category.description}</p>
               </div>
-              <div className="brand-category-list__meta">
-                <span>{data.category.buyerFocus}</span>
-                <Link href={`/brands/${data.category.slug}`}>
-                  Explore {data.category.name} intelligence
-                </Link>
-              </div>
             </div>
             <div className="guides-featured-grid brand-directory-grid">
               {data.profiles.map((profile) => (

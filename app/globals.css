@@ -23800,15 +23800,8 @@ button.contact-help-card > .contact-help-card-copy > span {
 }
 
 .brand-category-list__intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.55fr);
-  gap: 24px 48px;
-  align-items: end;
-  margin-bottom: 28px;
-}
-
-.brand-category-list__intro > div:first-child {
   max-width: 800px;
+  margin-bottom: 28px;
 }
 
 .brand-category-list__intro h2 {
@@ -23820,31 +23813,6 @@ button.contact-help-card > .contact-help-card-copy > span {
   margin: 0;
   color: var(--text);
   line-height: 1.62;
-}
-
-.brand-category-list__meta {
-  display: grid;
-  gap: 12px;
-  padding: 14px 0 2px;
-  border-top: 1px solid var(--line);
-}
-
-.brand-category-list__meta span {
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 750;
-  line-height: 1.5;
-}
-
-.brand-category-list__meta a {
-  color: var(--accent);
-  font-size: 14px;
-  font-weight: 850;
-}
-
-.brand-category-list__meta a:hover,
-.brand-category-list__meta a:focus-visible {
-  color: var(--navy);
 }
 
 .brand-category-grid {
@@ -24494,11 +24462,6 @@ button.contact-help-card > .contact-help-card-copy > span {
 @media (max-width: 840px) {
   .brand-directory-grid {
     grid-template-columns: 1fr;
-  }
-
-  .brand-category-list__intro {
-    grid-template-columns: 1fr;
-    gap: 18px;
   }
 
   .brand-category-grid {
