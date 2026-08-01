@@ -69,7 +69,35 @@ test("homepage gives Brand Intelligence a compact discovery entry", () => {
   assert.match(homeSource, /Know Who Is Behind The Product/);
   assert.match(homeSource, /Explore all \{brandProfiles\.length\} brand profiles/);
   assert.match(homeSource, /className="home-v9-brand-logos"/);
-  assert.match(homeSource, /featuredBrandSlugs/);
+  assert.match(homeSource, /featuredBrandSelections/);
+});
+
+test("homepage featured brands represent the five buying categories with six approved brands", () => {
+  for (const [slug, categoryLabel] of [
+    ["milwaukee", "Power Tools"],
+    ["husqvarna", "Lawn & Garden"],
+    ["maytronics", "Pool Equipment"],
+    ["roborock", "Floorcare"],
+    ["tineco", "Floorcare"],
+    ["karcher", "Commercial Cleaning"]
+  ]) {
+    assert.match(
+      homeSource,
+      new RegExp(`slug: "${slug}"[\\s\\S]*?categoryLabel: "${categoryLabel}"`)
+    );
+  }
+  assert.match(homeSource, /className="home-v9-brand-meta"/);
+  assert.doesNotMatch(homeSource, /slug: "(?:aiper|dreame|ecovacs)"/);
+});
+
+test("homepage featured brand wordmarks use the enlarged contained geometry", () => {
+  assert.match(
+    cssSource,
+    /\.home-v9-brand-logos img\s*\{[^}]*width:\s*min\(100%,\s*160px\)[^}]*height:\s*56px[^}]*object-fit:\s*contain/s
+  );
+  assert.match(cssSource, /\.home-v9-brand-meta\s*\{/);
+  assert.match(cssSource, /\.home-v9-brand-meta span\s*\{/);
+  assert.match(cssSource, /\.home-v9-brand-meta strong\s*\{/);
 });
 
 test("homepage pathways use industry imagery instead of text-only cards", () => {
