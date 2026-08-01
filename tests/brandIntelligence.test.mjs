@@ -620,6 +620,7 @@ test("the release gate validates the forty-six published profiles and approved a
     "aiper-fluidra-pool-robotics-alliance": ["aiper", "fluidra"],
     "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x": ["aiper", "beatbot"],
     "aiper-vs-wybot-fluidra-wybotics": ["aiper", "wybot"],
+    "amazon-first-stop-for-backyard-robotics": ["aiper", "mammotion", "segway-navimow"],
     "anker-cleaning-appliance-strategy-analysis": ["eufy"],
     "anker-needs-a-hard-battle": ["eufy"],
     "backyard-robots-price-and-channel-war": ["greenworks"],
@@ -628,6 +629,7 @@ test("the release gate validates the forty-six published profiles and approved a
     "bissell-little-green-vs-hoover-cleanslate": ["bissell", "hoover"],
     "bissell-crosswave-hard-floor-washer-logic": ["bissell"],
     "bissell-robot-vacuums-flexclean-strategy": ["bissell"],
+    "china-cleaning-robot-giants-move-into-backyard": ["dreame", "ecovacs", "roborock", "eufy"],
     "chinese-cleaning-brands-at-ces-2026": ["eureka"],
     "commercial-robotic-mower-market-navimow-mammotion": ["mammotion", "sunseeker"],
     "dewalts-rise-harvard-case": ["dewalt"],
@@ -677,6 +679,7 @@ test("the release gate validates the forty-six published profiles and approved a
       "aeg"
     ],
     "industrial-cleaning-equipment-market": ["nilfisk"],
+    "irobot-2018-annual-report-faithful-translation": ["irobot"],
     "karcher-hidden-champion-in-cleaning-appliances": ["karcher"],
     "midea-cleaning-appliance-past": ["midea", "eureka", "electrolux"],
     "midea-group-and-the-possible-philips-domestic-appliances-acquisition": [
@@ -694,6 +697,7 @@ test("the release gate validates the forty-six published profiles and approved a
     "power-tools-new-cycle-cordless-specialization": ["stihl", "makita"],
     "roborock-channel-shift-online-to-offline-experience": ["roborock"],
     "roborock-ipo-prospectus-signals": ["roborock"],
+    "roborock-targets-70-billion-rmb-by-2029": ["roborock"],
     "roborock-vs-narwal-robot-vacuums": ["roborock", "narwal"],
     "robotic-mower-sales-channels": ["worx", "greenworks"],
     "robotic-vs-suction-vs-pressure-pool-cleaners": ["pentair"],
@@ -792,8 +796,8 @@ test("the release gate validates the forty-six published profiles and approved a
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 107);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 173);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 111);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 182);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
