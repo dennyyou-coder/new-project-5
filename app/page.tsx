@@ -68,13 +68,13 @@ const featuredInsightSlugs = [
   "tti-cleaning-appliance-strategy"
 ];
 
-const featuredBrandSlugs = [
-  "aiper",
-  "dreame",
-  "ecovacs",
-  "maytronics",
-  "roborock",
-  "tineco"
+const featuredBrandSelections = [
+  { slug: "milwaukee", categoryLabel: "Power Tools" },
+  { slug: "husqvarna", categoryLabel: "Lawn & Garden" },
+  { slug: "maytronics", categoryLabel: "Pool Equipment" },
+  { slug: "roborock", categoryLabel: "Floorcare" },
+  { slug: "tineco", categoryLabel: "Floorcare" },
+  { slug: "karcher", categoryLabel: "Commercial Cleaning" }
 ];
 
 function isGenericBuyerGuide(article: Insight) {
@@ -116,9 +116,12 @@ function excerptFor(article: Insight) {
 export default function HomePage() {
   const allInsights = getInsights();
   const brandProfiles = getPublishedBrandProfiles(allInsights);
-  const featuredBrands = featuredBrandSlugs
-    .map((slug) => brandProfiles.find((profile) => profile.slug === slug))
-    .filter((profile): profile is NonNullable<typeof profile> => Boolean(profile));
+  const featuredBrands = featuredBrandSelections
+    .map((selection) => {
+      const profile = brandProfiles.find(({ slug }) => slug === selection.slug);
+      return profile ? { ...selection, profile } : null;
+    })
+    .filter((selection): selection is NonNullable<typeof selection> => Boolean(selection));
   const latestFounderSeries = getSeriesArticles(allInsights, founderSeries).at(-1);
   const featuredInsights = getFeaturedInsights(
     getEditorialInsights(allInsights)
@@ -199,7 +202,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="home-v9-brand-logos" aria-label="Featured brand profiles">
-            {featuredBrands.map((profile) => (
+            {featuredBrands.map(({ profile, categoryLabel }) => (
               <Link href={`/brands/${profile.slug}`} key={profile.slug}>
                 <img
                   src={profile.logoImage}
@@ -207,7 +210,10 @@ export default function HomePage() {
                   loading="lazy"
                   decoding="async"
                 />
-                <span>{profile.name}</span>
+                <div className="home-v9-brand-meta">
+                  <span>{categoryLabel}</span>
+                  <strong>{profile.name}</strong>
+                </div>
               </Link>
             ))}
           </div>
