@@ -28,8 +28,8 @@ This website-project record is the operational source of truth for the first too
 | 1 | Milwaukee | `who-owns-milwaukee-tools-tti-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-milwaukee-tools-tti-manufacturing |
 | 2 | Makita | `who-owns-makita-company-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-makita-company-manufacturing |
 | 3 | Bosch Power Tools | `who-owns-bosch-power-tools-robert-bosch` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-bosch-power-tools-robert-bosch |
-| 4 | CRAFTSMAN | `who-owns-craftsman-tools-stanley-black-decker` | `local_verified` | Build, desktop and 390px article-image checks passed on 2026-08-03 |
-| 5 | Kobalt | `who-makes-kobalt-tools-lowes-suppliers` | `queued` | Quality gate 1 triggers after publication |
+| 4 | CRAFTSMAN | `who-owns-craftsman-tools-stanley-black-decker` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
+| 5 | Kobalt | `who-makes-kobalt-tools-lowes-suppliers` | `local_verified` | Content tests, build, desktop and 390px article-image checks passed; quality gate 1 follows publication |
 | 6 | SKIL | `who-owns-skil-tools-chervon` | `queued` |  |
 | 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `queued` |  |
 | 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `queued` |  |
