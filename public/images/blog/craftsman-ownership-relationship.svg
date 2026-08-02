@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">CRAFTSMAN ownership, licensing, retail and product responsibility map</title>
+  <desc id="desc">Stanley Black and Decker owns the CRAFTSMAN brand. Sears-related channels received a perpetual licensed route in the 2017 transaction. Lowe's and other authorized sellers are retail channels, while manufacturer, importer and warranty responsibility must be checked by product and market.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#182132"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e13a35"/>
+      <stop offset="1" stop-color="#a71920"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity=".28"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <text x="100" y="105" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">CRAFTSMAN: Four Different Responsibility Layers</text>
+  <text x="100" y="155" fill="#aebbd0" font-family="Arial, Helvetica, sans-serif" font-size="25">Brand ownership does not identify every seller, factory, importer or warranty provider.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="100" y="230" width="410" height="190" rx="26" fill="#ffffff"/>
+    <text x="145" y="292" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">CORPORATE OWNER</text>
+    <text x="145" y="343" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">Stanley Black &amp; Decker</text>
+    <text x="145" y="382" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="20">Bought the CRAFTSMAN brand in 2017</text>
+
+    <rect x="595" y="230" width="410" height="190" rx="26" fill="url(#red)"/>
+    <text x="640" y="292" fill="#fee2e2" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">BRAND &amp; PRODUCT SYSTEMS</text>
+    <text x="640" y="346" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="39" font-weight="800">CRAFTSMAN</text>
+    <text x="640" y="378" fill="#fee2e2" font-family="Arial, Helvetica, sans-serif" font-size="18">V20 tools • outdoor equipment</text>
+    <text x="640" y="405" fill="#fee2e2" font-family="Arial, Helvetica, sans-serif" font-size="18">storage • wet/dry cleanup</text>
+
+    <rect x="1090" y="230" width="410" height="190" rx="26" fill="#ffffff"/>
+    <text x="1135" y="292" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">LICENSED HISTORICAL ROUTE</text>
+    <text x="1135" y="343" fill="#111827" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">Sears-related channels</text>
+    <text x="1135" y="382" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="20">Perpetual license created by the 2017 deal</text>
+  </g>
+
+  <path d="M510 325 H585" stroke="#94a3b8" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1005 325 H1080" stroke="#94a3b8" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="522" y="305" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="17">owns</text>
+  <text x="1012" y="305" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="17">licenses</text>
+
+  <g filter="url(#shadow)">
+    <rect x="100" y="520" width="430" height="220" rx="26" fill="#243044" stroke="#3b4a61" stroke-width="2"/>
+    <text x="145" y="580" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">RETAIL CHANNEL</text>
+    <text x="145" y="630" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">Lowe's + authorized sellers</text>
+    <text x="145" y="672" fill="#b8c5d8" font-family="Arial, Helvetica, sans-serif" font-size="20">Sell eligible products; they do not own</text>
+    <text x="145" y="703" fill="#b8c5d8" font-family="Arial, Helvetica, sans-serif" font-size="20">the CRAFTSMAN brand.</text>
+
+    <rect x="585" y="520" width="430" height="220" rx="26" fill="#243044" stroke="#3b4a61" stroke-width="2"/>
+    <text x="630" y="580" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">BATTERY PLATFORM</text>
+    <text x="630" y="630" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">V20 system</text>
+    <text x="630" y="672" fill="#b8c5d8" font-family="Arial, Helvetica, sans-serif" font-size="20">Compatibility is defined by current model</text>
+    <text x="630" y="703" fill="#b8c5d8" font-family="Arial, Helvetica, sans-serif" font-size="20">documentation—not group ownership.</text>
+
+    <rect x="1070" y="520" width="430" height="220" rx="26" fill="#243044" stroke="#3b4a61" stroke-width="2"/>
+    <text x="1115" y="580" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">PRODUCT RESPONSIBILITY</text>
+    <text x="1115" y="630" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">Check the exact SKU</text>
+    <text x="1115" y="672" fill="#b8c5d8" font-family="Arial, Helvetica, sans-serif" font-size="20">Manufacturer • origin • importer</text>
+    <text x="1115" y="703" fill="#b8c5d8" font-family="Arial, Helvetica, sans-serif" font-size="20">seller • warranty • service</text>
+  </g>
+
+  <path d="M800 420 V500" stroke="#94a3b8" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M730 455 C610 470 430 470 315 500" fill="none" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M870 455 C990 470 1170 470 1285 500" fill="none" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="100" y="830" fill="#8fa0b8" font-family="Arial, Helvetica, sans-serif" font-size="19">World Clean Biz • Relationship map based on Stanley Black &amp; Decker, CRAFTSMAN and U.S. regulatory disclosures reviewed August 2026.</text>
+</svg>
