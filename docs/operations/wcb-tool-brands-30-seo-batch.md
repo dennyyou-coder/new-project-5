@@ -29,7 +29,7 @@ This website-project record is the operational source of truth for the first too
 | 2 | Makita | `who-owns-makita-company-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-makita-company-manufacturing |
 | 3 | Bosch Power Tools | `who-owns-bosch-power-tools-robert-bosch` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-bosch-power-tools-robert-bosch |
 | 4 | CRAFTSMAN | `who-owns-craftsman-tools-stanley-black-decker` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
-| 5 | Kobalt | `who-makes-kobalt-tools-lowes-suppliers` | `local_verified` | Content tests, build, desktop and 390px article-image checks passed; quality gate 1 follows publication |
+| 5 | Kobalt | `who-makes-kobalt-tools-lowes-suppliers` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
 | 6 | SKIL | `who-owns-skil-tools-chervon` | `queued` |  |
 | 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `queued` |  |
 | 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `queued` |  |
@@ -61,3 +61,18 @@ This website-project record is the operational source of truth for the first too
 - Resume point: article 4, CRAFTSMAN.
 - Next after CRAFTSMAN: Kobalt, then quality gate 1 for articles 1–5, then SKIL.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
+
+## Quality gate 1 — articles 1–5
+
+Completed on 2026-08-03 after five `published_verified` articles.
+
+- All five production URLs returned 200 and appeared in `sitemap.xml` and `/guides/ownership`.
+- SEO title, H1, Meta Description, canonical and JSON-LD were present and correct on all five pages.
+- Article cover images loaded at 1600×900; the two new relationship diagrams also loaded at 1600×900.
+- All five pages matched the 390px viewport without horizontal overflow; the automated production pass reported no browser console errors.
+- Existing ownership-intent pages were reviewed for cannibalization. The separate Milwaukee 2761 product story, TTI parent-company guide, DeWalt ownership guide and Bosch appliance guide have distinct search intent.
+- CRAFTSMAN and Kobalt internal article links returned 200. The gate added related-article links to the first three articles and corrected Bosch Power Tools' canonical brand slug.
+- Ownership, manufacturing, supplier, battery-platform, recall and warranty boundaries were rechecked. No title, primary-keyword, slug or factual-boundary change was required.
+- The five articles retain brand-specific evidence and structure; no mechanical duplicate-body issue was found.
+- Content classification, brand tests and a 453-page production build passed after the gate fixes.
+- GSC query evidence is not yet meaningful for the newly published pages; review is deferred to the next maintenance window rather than treated as a failure.
