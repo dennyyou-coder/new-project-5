@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hilti ownership and direct-service business model</title>
+  <desc id="desc">A four-layer map separating Martin Hilti Family Trust ownership from the Hilti Group, manufacturing network, direct sales, Nuron tools and local service contracts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101b2c"/><stop offset="1" stop-color="#07101d"/></linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e83832"/><stop offset="1" stop-color="#9f1515"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1440" cy="110" r="260" fill="#e83832" opacity=".07"/>
+  <circle cx="130" cy="820" r="300" fill="#315d86" opacity=".12"/>
+  <text x="110" y="96" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">HILTI: FOUR DIFFERENT RESPONSIBILITIES</text>
+  <text x="110" y="142" fill="#b9c8d8" font-family="Arial, Helvetica, sans-serif" font-size="23">Ownership does not automatically identify a product's factory, seller or service contract.</text>
+  <g filter="url(#shadow)">
+    <rect x="110" y="205" width="1380" height="125" rx="24" fill="url(#red)"/>
+    <text x="155" y="255" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">1  ULTIMATE OWNERSHIP</text>
+    <text x="155" y="300" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Martin Hilti Family Trust</text>
+    <text x="965" y="280" fill="#ffe9e7" font-family="Arial, Helvetica, sans-serif" font-size="22">Private shareholder • long-term continuity</text>
+  </g>
+  <path d="M800 330v42" stroke="#7891a9" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="110" y="372" width="1380" height="125" rx="24" fill="#172c43" stroke="#315d86" stroke-width="2"/>
+    <text x="155" y="422" fill="#7eb4df" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">2  GROUP AND OPERATING COMPANIES</text>
+    <text x="155" y="467" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Hilti Aktiengesellschaft • country subsidiaries</text>
+    <text x="1030" y="445" fill="#c6d4e0" font-family="Arial, Helvetica, sans-serif" font-size="21">Strategy • contracts • invoices</text>
+  </g>
+  <path d="M800 497v42" stroke="#7891a9" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="110" y="539" width="660" height="170" rx="24" fill="#12253a" stroke="#315d86" stroke-width="2"/>
+    <text x="155" y="591" fill="#7eb4df" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">3A  PRODUCT AND SUPPLY</text>
+    <text x="155" y="636" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">Manufacturing network</text>
+    <text x="155" y="676" fill="#c6d4e0" font-family="Arial, Helvetica, sans-serif" font-size="21">Factory • origin • supplier • model</text>
+    <rect x="830" y="539" width="660" height="170" rx="24" fill="#12253a" stroke="#315d86" stroke-width="2"/>
+    <text x="875" y="591" fill="#7eb4df" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">3B  CUSTOMER ACCESS</text>
+    <text x="875" y="636" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">Direct sales and Hilti stores</text>
+    <text x="875" y="676" fill="#c6d4e0" font-family="Arial, Helvetica, sans-serif" font-size="21">Local seller • account • delivery terms</text>
+  </g>
+  <path d="M440 709v42M1160 709v42" stroke="#7891a9" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="110" y="751" width="1380" height="100" rx="24" fill="#f2f5f7"/>
+    <text x="155" y="797" fill="#a71919" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">4  MODEL-LEVEL BUYER CHECK</text>
+    <text x="155" y="831" fill="#172c43" font-family="Arial, Helvetica, sans-serif" font-size="22">Nuron compatibility • warranty or Fleet contract • dust-control setup • repair route • country of origin</text>
+  </g>
+</svg>
