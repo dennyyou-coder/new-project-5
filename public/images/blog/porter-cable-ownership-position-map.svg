@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Porter-Cable ownership, manufacturing and brand-position map</title>
+  <desc id="desc">Stanley Black and Decker ownership is separated from global manufacturing, Porter-Cable 20V MAX, retail distribution and model-level warranty.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d192a"/><stop offset="1" stop-color="#24100e"/></linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dd3932"/><stop offset="1" stop-color="#821b18"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".3"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="100" y="92" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">PORTER-CABLE: OWNERSHIP IS ONLY THE FIRST LAYER</text>
+  <text x="100" y="138" fill="#c6d1dd" font-family="Arial, Helvetica, sans-serif" font-size="23">A historic U.S. brand can still use global factories, regional channels and model-specific warranties.</text>
+  <g filter="url(#shadow)">
+    <rect x="100" y="190" width="1400" height="120" rx="24" fill="url(#red)"/>
+    <text x="145" y="238" fill="#ffe9e7" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">CURRENT PARENT</text>
+    <text x="145" y="282" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700">Stanley Black &amp; Decker • Tools &amp; Outdoor</text>
+  </g>
+  <path d="M800 310v48" stroke="#778da4" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="100" y="358" width="430" height="190" rx="24" fill="#172a40" stroke="#4e6d86" stroke-width="2"/>
+    <text x="140" y="408" fill="#f05a52" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">BRAND HERITAGE</text>
+    <text x="140" y="453" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Founded in 1906</text>
+    <text x="140" y="497" fill="#c6d4df" font-family="Arial, Helvetica, sans-serif" font-size="20">Woodworking • fastening • jobsite</text>
+    <rect x="585" y="358" width="430" height="190" rx="24" fill="#172a40" stroke="#4e6d86" stroke-width="2"/>
+    <text x="625" y="408" fill="#f05a52" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">MANUFACTURING</text>
+    <text x="625" y="453" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Global group network</text>
+    <text x="625" y="497" fill="#c6d4df" font-family="Arial, Helvetica, sans-serif" font-size="20">Origin must be checked by model</text>
+    <rect x="1070" y="358" width="430" height="190" rx="24" fill="#172a40" stroke="#4e6d86" stroke-width="2"/>
+    <text x="1110" y="408" fill="#f05a52" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">U.S. CHANNEL</text>
+    <text x="1110" y="453" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Tractor Supply</text>
+    <text x="1110" y="497" fill="#c6d4df" font-family="Arial, Helvetica, sans-serif" font-size="20">2021 cordless retail announcement</text>
+  </g>
+  <path d="M315 548v55M800 548v55M1285 548v55" stroke="#778da4" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="100" y="603" width="1400" height="110" rx="24" fill="#f3f5f7"/>
+    <text x="145" y="647" fill="#9e211d" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">PORTER-CABLE 20V MAX</text>
+    <text x="145" y="687" fill="#172a40" font-family="Arial, Helvetica, sans-serif" font-size="23">Approved Porter-Cable battery + charger — not DEWALT, CRAFTSMAN or BLACK+DECKER by default</text>
+  </g>
+  <path d="M800 713v45" stroke="#778da4" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="100" y="758" width="1400" height="94" rx="24" fill="#351816" stroke="#a12a25" stroke-width="2"/>
+    <text x="145" y="814" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="23">Verify model • type • date code • origin • battery • seller • warranty statement • parts</text>
+  </g>
+</svg>

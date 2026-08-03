@@ -34,7 +34,7 @@ This website-project record is the operational source of truth for the first too
 | 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-hilti-family-trust-manufacturing |
 | 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-festool-tts-tooltechnic-systems |
 | 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-metabo-metabo-hpt-hikoki |
-| 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `preview_verified` | Vercel preview returned 200 and passed desktop/mobile, metadata, schema, image, link and console checks; publish first, then run quality gate 2 |
+| 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-flex-tools-chervon-lowes; production verification and quality gate 2 passed on 2026-08-04 |
 | 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; release follows quality gate 2 |
 | 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; release follows quality gate 2 |
 | 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `queued` |  |
@@ -58,9 +58,9 @@ This website-project record is the operational source of truth for the first too
 
 ## Current checkpoint
 
-- Articles 1–6 are `published_verified`.
+- Articles 1–10 are `published_verified`.
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
-- Next after day 3 publication: article 10 FLEX, which triggers quality gate 2 after publication.
+- Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
 
 ## Publishing day 4 local gate — articles 10–12
@@ -73,6 +73,18 @@ This website-project record is the operational source of truth for the first too
 - The only local console error was the expected unavailable `/_vercel/insights/script.js`; preview and production verification remain required.
 - Release order is fixed: FLEX first, quality gate 2 for articles 6–10 second, then Porter-Cable and Dremel.
 - FLEX preview deployment passed with a 200 article response, the production canonical, both 1600×900 visuals, no mobile overflow and a clean browser console.
+
+## Quality gate 2 — articles 6–10
+
+Completed on 2026-08-04 after FLEX reached the production deployment.
+
+- SKIL, Hilti, Festool, Metabo / Metabo HPT / HiKOKI and FLEX all returned 200 on production.
+- Every page exposed the expected title, H1, meta description, production canonical and Article JSON-LD.
+- Both 1600×900 article visuals loaded on every page, and each article retained four production internal links.
+- `/guides/ownership` included FLEX and `sitemap.xml` included all five article slugs.
+- Desktop and 390px checks found no horizontal overflow; the production browser console reported no errors or warnings.
+- Cannibalization review found one exact ownership-intent guide per fixed brand target. SKIL and FLEX share Chervon context but keep distinct brand, history, battery and channel intent; the other three targets remain separate by owner, market identity and product-system scope.
+- Gate result: passed. Articles 11–12 may proceed without changing the fixed order or publishing more than the day's planned batch.
 
 ## Publishing day 3 local gate — articles 7–9
 
