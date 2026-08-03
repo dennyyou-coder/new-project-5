@@ -30,10 +30,10 @@ This website-project record is the operational source of truth for the first too
 | 3 | Bosch Power Tools | `who-owns-bosch-power-tools-robert-bosch` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-bosch-power-tools-robert-bosch |
 | 4 | CRAFTSMAN | `who-owns-craftsman-tools-stanley-black-decker` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
 | 5 | Kobalt | `who-makes-kobalt-tools-lowes-suppliers` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
-| 6 | SKIL | `who-owns-skil-tools-chervon` | `local_verified` | Content tests, build, desktop and 390px article-image checks passed |
-| 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `queued` |  |
-| 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `queued` |  |
-| 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `queued` |  |
+| 6 | SKIL | `who-owns-skil-tools-chervon` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-skil-tools-chervon |
+| 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `preview_verified` | 2,432 words; Vercel Preview desktop and 390px checks passed |
+| 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `preview_verified` | 2,302 words; Vercel Preview desktop and 390px checks passed |
+| 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `preview_verified` | 2,436 words; Vercel Preview desktop and 390px checks passed |
 | 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `queued` | Quality gate 2 triggers after publication |
 | 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `queued` |  |
 | 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `queued` |  |
@@ -58,9 +58,24 @@ This website-project record is the operational source of truth for the first too
 
 ## Current checkpoint
 
-- Resume point: article 4, CRAFTSMAN.
-- Next after CRAFTSMAN: Kobalt, then quality gate 1 for articles 1–5, then SKIL.
+- Articles 1–6 are `published_verified`.
+- Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `preview_verified` in PR #8 and authorized as the current publishing day's three releases.
+- Next after day 3 publication: article 10 FLEX, which triggers quality gate 2 after publication.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
+
+## Publishing day 3 local gate — articles 7–9
+
+Completed on 2026-08-03 in preparation for the next publishing day.
+
+- Hilti: 2,432 words, exact fixed title and slug, Family Trust ownership, multi-country manufacturing, direct-sales, Fleet Management, Nuron and dust-control boundaries verified.
+- Festool: 2,302 words, exact fixed title and slug, TTS/Festool/Tanos/TTS Cleantec/Festo identities and European production boundaries verified.
+- Metabo / Metabo HPT / HiKOKI: 2,436 words, exact fixed title and slug, 2016 acquisition, 2017 separation from Hitachi, regional naming and the 2025–2026 North American transition verified.
+- Each article has one original 1600×900 WebP cover and one deterministic 1600×900 SVG relationship map.
+- Content classification, 14 insight tests, 82 brand tests and a 457-page production build passed.
+- All three local production pages returned 200 with correct title, H1, Meta Description, canonical, JSON-LD, internal links and both article images.
+- Desktop and 390px browser checks found no horizontal overflow. The only console error was the expected local `/_vercel/insights/script.js` 404.
+- Draft PR #8 Vercel Preview returned 200 for all three pages; title, H1, Meta Description, canonical, JSON-LD, both 1600×900 visuals and internal links were verified again with no browser console errors.
+- Denny confirmed the publishing-day boundary after preview verification: CRAFTSMAN, Kobalt and SKIL belong to the previous day, so Hilti, Festool and Metabo / Metabo HPT / HiKOKI may publish as the current day's three articles.
 
 ## Quality gate 1 — articles 1–5
 

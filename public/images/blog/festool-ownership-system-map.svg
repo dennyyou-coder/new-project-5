@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Festool ownership and professional system map</title>
+  <desc id="desc">A visual separates the family-owned TTS group from Festool, Tanos, TTS Cleantec, European production and the tool-extraction-storage workflow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c1727"/><stop offset="1" stop-color="#08110f"/></linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#93c83e"/><stop offset="1" stop-color="#4f8f22"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".3"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1450" cy="120" r="280" fill="#91c83e" opacity=".07"/>
+  <text x="100" y="92" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700">FESTOOL: GROUP, BRANDS AND SYSTEM WORKFLOW</text>
+  <text x="100" y="139" fill="#bbcad2" font-family="Arial, Helvetica, sans-serif" font-size="23">The corporate family and the professional tool system answer different buyer questions.</text>
+  <g filter="url(#shadow)">
+    <rect x="100" y="190" width="1400" height="120" rx="24" fill="url(#green)"/>
+    <text x="145" y="239" fill="#102117" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">FAMILY-OWNED GROUP</text>
+    <text x="145" y="281" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">TTS Tooltechnic Systems SE &amp; Co. KG</text>
+    <text x="1110" y="264" fill="#eef8e5" font-family="Arial, Helvetica, sans-serif" font-size="21">Third generation</text>
+  </g>
+  <path d="M800 310v45" stroke="#6b8791" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="100" y="355" width="430" height="155" rx="24" fill="#15283a" stroke="#4b6c7d" stroke-width="2"/>
+    <text x="140" y="407" fill="#93c83e" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FESTOOL</text>
+    <text x="140" y="449" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Professional tools</text>
+    <text x="140" y="485" fill="#c8d5dc" font-family="Arial, Helvetica, sans-serif" font-size="20">Festool GmbH • local subsidiaries</text>
+    <rect x="585" y="355" width="430" height="155" rx="24" fill="#15283a" stroke="#4b6c7d" stroke-width="2"/>
+    <text x="625" y="407" fill="#93c83e" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">TANOS</text>
+    <text x="625" y="449" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Systainer transport</text>
+    <text x="625" y="485" fill="#c8d5dc" font-family="Arial, Helvetica, sans-serif" font-size="20">Related group brand, wider OEM use</text>
+    <rect x="1070" y="355" width="430" height="155" rx="24" fill="#15283a" stroke="#4b6c7d" stroke-width="2"/>
+    <text x="1110" y="407" fill="#93c83e" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">TTS CLEANTEC</text>
+    <text x="1110" y="449" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Dust extraction</text>
+    <text x="1110" y="485" fill="#c8d5dc" font-family="Arial, Helvetica, sans-serif" font-size="20">Illertissen production specialist</text>
+  </g>
+  <path d="M315 510v52M800 510v52M1285 510v52" stroke="#6b8791" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="100" y="562" width="1400" height="115" rx="24" fill="#f2f5f3"/>
+    <text x="145" y="608" fill="#356a20" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">EUROPEAN PRODUCTION FOOTPRINT</text>
+    <text x="145" y="647" fill="#13263a" font-family="Arial, Helvetica, sans-serif" font-size="23">Neidlingen • Weilheim/Teck • Illertissen • Česká Lípa — exact factory still depends on the model</text>
+  </g>
+  <path d="M800 677v47" stroke="#6b8791" stroke-width="5"/>
+  <g filter="url(#shadow)">
+    <rect x="100" y="724" width="1400" height="112" rx="24" fill="#173329" stroke="#4f8f22" stroke-width="2"/>
+    <text x="145" y="770" fill="#93c83e" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">PROFESSIONAL SYSTEM CHECK</text>
+    <text x="145" y="810" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="23">Tool + guide rail + 18V battery + extractor + filter + accessory + Systainer + local warranty</text>
+  </g>
+</svg>
