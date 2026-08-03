@@ -34,9 +34,9 @@ This website-project record is the operational source of truth for the first too
 | 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-hilti-family-trust-manufacturing |
 | 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-festool-tts-tooltechnic-systems |
 | 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-metabo-metabo-hpt-hikoki |
-| 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `queued` | Quality gate 2 triggers after publication |
-| 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `queued` |  |
-| 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `queued` |  |
+| 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; publish first, then run quality gate 2 |
+| 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; release follows quality gate 2 |
+| 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; release follows quality gate 2 |
 | 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `queued` |  |
 | 14 | STIHL | `who-owns-stihl-family-manufacturing` | `queued` |  |
 | 15 | Einhell | `who-owns-einhell-power-x-change` | `queued` | Quality gate 3 triggers after publication |
@@ -62,6 +62,16 @@ This website-project record is the operational source of truth for the first too
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Next after day 3 publication: article 10 FLEX, which triggers quality gate 2 after publication.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
+
+## Publishing day 4 local gate — articles 10–12
+
+- Checked 2026-08-04 after midnight (Asia/Shanghai).
+- `verify:content-classification`, `test:insights`, `test:brands` and the production build passed.
+- All three local article routes returned 200 with the expected title, H1, meta description, canonical URL and Article JSON-LD.
+- Both article visuals on every page decoded at 1600×900; internal links were present.
+- Desktop and 390px mobile checks found no horizontal overflow.
+- The only local console error was the expected unavailable `/_vercel/insights/script.js`; preview and production verification remain required.
+- Release order is fixed: FLEX first, quality gate 2 for articles 6–10 second, then Porter-Cable and Dremel.
 
 ## Publishing day 3 local gate — articles 7–9
 
