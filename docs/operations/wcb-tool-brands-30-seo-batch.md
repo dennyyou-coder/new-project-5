@@ -34,7 +34,7 @@ This website-project record is the operational source of truth for the first too
 | 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-hilti-family-trust-manufacturing |
 | 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-festool-tts-tooltechnic-systems |
 | 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-metabo-metabo-hpt-hikoki |
-| 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; publish first, then run quality gate 2 |
+| 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `preview_verified` | Vercel preview returned 200 and passed desktop/mobile, metadata, schema, image, link and console checks; publish first, then run quality gate 2 |
 | 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; release follows quality gate 2 |
 | 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; release follows quality gate 2 |
 | 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `queued` |  |
@@ -72,6 +72,7 @@ This website-project record is the operational source of truth for the first too
 - Desktop and 390px mobile checks found no horizontal overflow.
 - The only local console error was the expected unavailable `/_vercel/insights/script.js`; preview and production verification remain required.
 - Release order is fixed: FLEX first, quality gate 2 for articles 6–10 second, then Porter-Cable and Dremel.
+- FLEX preview deployment passed with a 200 article response, the production canonical, both 1600×900 visuals, no mobile overflow and a clean browser console.
 
 ## Publishing day 3 local gate — articles 7–9
 
