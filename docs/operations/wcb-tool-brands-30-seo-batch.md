@@ -31,9 +31,9 @@ This website-project record is the operational source of truth for the first too
 | 4 | CRAFTSMAN | `who-owns-craftsman-tools-stanley-black-decker` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
 | 5 | Kobalt | `who-makes-kobalt-tools-lowes-suppliers` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
 | 6 | SKIL | `who-owns-skil-tools-chervon` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-skil-tools-chervon |
-| 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `local_verified` | 2,432 words; tests, 457-page build, desktop and 390px checks passed |
-| 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `local_verified` | 2,302 words; tests, 457-page build, desktop and 390px checks passed |
-| 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `local_verified` | 2,436 words; tests, 457-page build, desktop and 390px checks passed |
+| 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `preview_verified` | 2,432 words; Vercel Preview desktop and 390px checks passed |
+| 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `preview_verified` | 2,302 words; Vercel Preview desktop and 390px checks passed |
+| 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `preview_verified` | 2,436 words; Vercel Preview desktop and 390px checks passed |
 | 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `queued` | Quality gate 2 triggers after publication |
 | 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `queued` |  |
 | 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `queued` |  |
@@ -59,7 +59,7 @@ This website-project record is the operational source of truth for the first too
 ## Current checkpoint
 
 - Articles 1–6 are `published_verified`.
-- Publishing day 3 articles 7–9 are `local_verified` and scheduled for the next publishing day; they must not be released on 2026-08-03 because that day's three-article maximum has already been reached.
+- Publishing day 3 articles 7–9 are `preview_verified` in Draft PR #8 and scheduled for the next publishing day; they must not be released on 2026-08-03 because that day's three-article maximum has already been reached.
 - Next after day 3 publication: article 10 FLEX, which triggers quality gate 2 after publication.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
 
@@ -74,6 +74,7 @@ Completed on 2026-08-03 in preparation for the next publishing day.
 - Content classification, 14 insight tests, 82 brand tests and a 457-page production build passed.
 - All three local production pages returned 200 with correct title, H1, Meta Description, canonical, JSON-LD, internal links and both article images.
 - Desktop and 390px browser checks found no horizontal overflow. The only console error was the expected local `/_vercel/insights/script.js` 404.
+- Draft PR #8 Vercel Preview returned 200 for all three pages; title, H1, Meta Description, canonical, JSON-LD, both 1600×900 visuals and internal links were verified again with no browser console errors.
 - Publication remains held until the next publishing day under the approved maximum of three new articles per publishing day.
 
 ## Quality gate 1 — articles 1–5
