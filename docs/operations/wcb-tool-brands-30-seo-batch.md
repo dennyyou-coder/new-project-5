@@ -35,8 +35,8 @@ This website-project record is the operational source of truth for the first too
 | 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-festool-tts-tooltechnic-systems |
 | 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-metabo-metabo-hpt-hikoki |
 | 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-flex-tools-chervon-lowes; production verification and quality gate 2 passed on 2026-08-04 |
-| 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; release follows quality gate 2 |
-| 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `local_verified` | Draft, original visuals, content checks, production build and desktop/mobile local verification passed; release follows quality gate 2 |
+| 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-porter-cable-stanley-black-decker; production verified on 2026-08-04 |
+| 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-dremel-bosch-manufacturing; production verified on 2026-08-04 |
 | 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `queued` |  |
 | 14 | STIHL | `who-owns-stihl-family-manufacturing` | `queued` |  |
 | 15 | Einhell | `who-owns-einhell-power-x-change` | `queued` | Quality gate 3 triggers after publication |
@@ -58,7 +58,7 @@ This website-project record is the operational source of truth for the first too
 
 ## Current checkpoint
 
-- Articles 1–10 are `published_verified`.
+- Articles 1–12 are `published_verified`.
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
@@ -73,6 +73,9 @@ This website-project record is the operational source of truth for the first too
 - The only local console error was the expected unavailable `/_vercel/insights/script.js`; preview and production verification remain required.
 - Release order is fixed: FLEX first, quality gate 2 for articles 6–10 second, then Porter-Cable and Dremel.
 - FLEX preview deployment passed with a 200 article response, the production canonical, both 1600×900 visuals, no mobile overflow and a clean browser console.
+- PR #12 published FLEX first; production deployment `dpl_66hRY4ZJAVFgnSBoGwjqhC7HubLM` reached READY and passed live verification before quality gate 2 was closed.
+- After gate 2 passed, PR #13 published Porter-Cable and Dremel. Production deployment `dpl_FqWNSbU7Bzqc6uzEQNi64BzhYdbF` reached READY.
+- Both final production pages returned 200 with the expected metadata, Article JSON-LD, four internal links and two 1600×900 visuals. Their 390px layouts had no overflow, the article browser console was clean, and both slugs appeared in Ownership Guides and `sitemap.xml`.
 
 ## Quality gate 2 — articles 6–10
 
