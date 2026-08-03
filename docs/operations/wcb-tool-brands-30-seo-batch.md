@@ -30,7 +30,7 @@ This website-project record is the operational source of truth for the first too
 | 3 | Bosch Power Tools | `who-owns-bosch-power-tools-robert-bosch` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-bosch-power-tools-robert-bosch |
 | 4 | CRAFTSMAN | `who-owns-craftsman-tools-stanley-black-decker` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
 | 5 | Kobalt | `who-makes-kobalt-tools-lowes-suppliers` | `published_verified` | Production deployment and live verification completed on 2026-08-03 |
-| 6 | SKIL | `who-owns-skil-tools-chervon` | `queued` |  |
+| 6 | SKIL | `who-owns-skil-tools-chervon` | `local_verified` | Content tests, build, desktop and 390px article-image checks passed |
 | 7 | Hilti | `who-owns-hilti-family-trust-manufacturing` | `queued` |  |
 | 8 | Festool | `who-owns-festool-tts-tooltechnic-systems` | `queued` |  |
 | 9 | Metabo / Metabo HPT / HiKOKI | `who-owns-metabo-metabo-hpt-hikoki` | `queued` |  |
