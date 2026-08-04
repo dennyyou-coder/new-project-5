@@ -40,9 +40,9 @@ This website-project record is the operational source of truth for the first too
 | 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-snap-on-tools-company-manufacturing; production verified on 2026-08-04 |
 | 14 | STIHL | `who-owns-stihl-family-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-stihl-family-manufacturing; production verified on 2026-08-04 |
 | 15 | Einhell | `who-owns-einhell-power-x-change` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-einhell-power-x-change; production verification and quality gate 3 passed on 2026-08-04 |
-| 16 | Kress | `who-owns-kress-positec-robot-mowers` | `queued` |  |
-| 17 | Parkside | `who-makes-parkside-tools-lidl-suppliers` | `queued` |  |
-| 18 | HART Tools | `who-makes-hart-tools-walmart-tti-2026` | `queued` | High time-sensitivity |
+| 16 | Kress | `who-owns-kress-positec-robot-mowers` | `local_verified` | Prepared for the next eligible publishing day after maintenance |
+| 17 | Parkside | `who-makes-parkside-tools-lidl-suppliers` | `local_verified` | Prepared for the next eligible publishing day after maintenance |
+| 18 | HART Tools | `who-makes-hart-tools-walmart-tti-2026` | `local_verified` | High time-sensitivity; TTI's end-2025 business discontinuation and retained-brand boundary verified |
 | 19 | Bauer | `who-makes-bauer-tools-harbor-freight` | `queued` |  |
 | 20 | Hercules | `who-makes-hercules-tools-harbor-freight` | `queued` | Quality gate 4 triggers after publication |
 | 21 | Masterforce | `who-makes-masterforce-tools-menards` | `queued` |  |
@@ -62,6 +62,20 @@ This website-project record is the operational source of truth for the first too
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
+
+## Next-batch local gate — articles 16–18
+
+Completed on 2026-08-04 for release on the next eligible publishing day after the required natural-day-6 maintenance window.
+
+- Kress: exact fixed title and slug, 2017 Positec acquisition, German history, group manufacturing footprint, 60V CyberSystem, RTKn and dealer-channel boundaries verified.
+- Parkside: exact fixed title and slug, Lidl private-label status, multiple product-specific responsible operators, IAN identity and X20V compatibility boundaries verified.
+- HART: exact fixed title and slug, TTI's December 11, 2025 announcement, end-2025 business discontinuation, retained brand, Walmart channel and installed-base warranty boundaries verified.
+- Each article has one original unbranded 1600×900 WebP cover and one deterministic 1600×900 SVG fact map.
+- Exact-title, exact-slug and primary-intent review found no duplicate WCB page. Existing Kress mentions concern WORX or robotic-mower categories rather than this ownership intent.
+- Content classification, 14 insight tests, 82 brand tests and a 467-page production build passed.
+- All three local production routes returned 200 with the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, two 1600×900 article visuals and three or more internal links.
+- Desktop and 390px mobile checks found no horizontal overflow. The only local failed resource was the expected unavailable `/_vercel/insights/script.js`.
+- Release remains on hold because the 2026-08-04 production day already exceeded the normal three-article limit under Denny's explicit immediate-publication override for articles 13–15. The override is not carried forward to articles 16–18.
 
 ## Publishing day 5 local gate — articles 13–15
 
