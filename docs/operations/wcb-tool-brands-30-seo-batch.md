@@ -40,9 +40,9 @@ This website-project record is the operational source of truth for the first too
 | 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-snap-on-tools-company-manufacturing; production verified on 2026-08-04 |
 | 14 | STIHL | `who-owns-stihl-family-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-stihl-family-manufacturing; production verified on 2026-08-04 |
 | 15 | Einhell | `who-owns-einhell-power-x-change` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-einhell-power-x-change; production verification and quality gate 3 passed on 2026-08-04 |
-| 16 | Kress | `who-owns-kress-positec-robot-mowers` | `local_verified` | Prepared for the next eligible publishing day after maintenance |
-| 17 | Parkside | `who-makes-parkside-tools-lidl-suppliers` | `local_verified` | Prepared for the next eligible publishing day after maintenance |
-| 18 | HART Tools | `who-makes-hart-tools-walmart-tti-2026` | `local_verified` | High time-sensitivity; TTI's end-2025 business discontinuation and retained-brand boundary verified |
+| 16 | Kress | `who-owns-kress-positec-robot-mowers` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-kress-positec-robot-mowers; production verified on 2026-08-04 |
+| 17 | Parkside | `who-makes-parkside-tools-lidl-suppliers` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-parkside-tools-lidl-suppliers; production verified on 2026-08-04 |
+| 18 | HART Tools | `who-makes-hart-tools-walmart-tti-2026` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-hart-tools-walmart-tti-2026; high-sensitivity boundary and production verified on 2026-08-04 |
 | 19 | Bauer | `who-makes-bauer-tools-harbor-freight` | `queued` |  |
 | 20 | Hercules | `who-makes-hercules-tools-harbor-freight` | `queued` | Quality gate 4 triggers after publication |
 | 21 | Masterforce | `who-makes-masterforce-tools-menards` | `queued` |  |
@@ -58,7 +58,7 @@ This website-project record is the operational source of truth for the first too
 
 ## Current checkpoint
 
-- Articles 1–15 are `published_verified`.
+- Articles 1–18 are `published_verified`.
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
@@ -75,7 +75,11 @@ Completed on 2026-08-04 for release on the next eligible publishing day after th
 - Content classification, 14 insight tests, 82 brand tests and a 467-page production build passed.
 - All three local production routes returned 200 with the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, two 1600×900 article visuals and three or more internal links.
 - Desktop and 390px mobile checks found no horizontal overflow. The only local failed resource was the expected unavailable `/_vercel/insights/script.js`.
-- Release remains on hold because the 2026-08-04 production day already exceeded the normal three-article limit under Denny's explicit immediate-publication override for articles 13–15. The override is not carried forward to articles 16–18.
+- Denny explicitly authorized deployment of articles 16–18 on 2026-08-04, overriding the recorded release hold for this batch.
+- PR #18 Preview deployment `dpl_J9uKFwttgM8rAFez8nBFZuqjMp8C` reached READY. The external Preview URL timed out from the current network, so the successful Vercel build and the complete local production-build browser pass were used before merge.
+- PR #18 was squash-merged at `3ff1e76fd2ff740b1690739535547c3319ed63ec`; production deployment `dpl_DkCdyW6XVQb4UMS16ZRd5wWnXko7` succeeded.
+- All three production routes returned 200 with the expected title, H1, meta description, canonical, BlogPosting JSON-LD, two 1600×900 visuals and three or more internal links.
+- Production desktop and 390px mobile checks found no horizontal overflow or console errors. `/guides/ownership` and `sitemap.xml` include all three slugs.
 
 ## Publishing day 5 local gate — articles 13–15
 
