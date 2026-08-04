@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import {
   cleanInternalTrafficUrl,
   getInternalTrafficControl,
@@ -261,4 +262,20 @@ test("initialization is idempotent", () => {
   assert.equal(second.reason, "already-initialized");
   assert.equal(runtime.appendedScripts.length, 1);
   assert.equal(runtime.window.dataLayer.length, 2);
+});
+
+test("GA4 is bootstrapped by Next Script instead of relying on a mount effect", async () => {
+  const analyticsModule = await import("../lib/googleAnalytics.ts");
+  const componentSource = await readFile(
+    new URL("../components/GoogleAnalytics.tsx", import.meta.url),
+    "utf8"
+  );
+
+  assert.equal(
+    typeof analyticsModule.getGoogleAnalyticsBootstrapScript,
+    "function"
+  );
+  assert.match(componentSource, /from "next\/script"/);
+  assert.match(componentSource, /getGoogleAnalyticsBootstrapScript/);
+  assert.doesNotMatch(componentSource, /useEffect/);
 });
