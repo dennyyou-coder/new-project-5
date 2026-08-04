@@ -37,9 +37,9 @@ This website-project record is the operational source of truth for the first too
 | 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-flex-tools-chervon-lowes; production verification and quality gate 2 passed on 2026-08-04 |
 | 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-porter-cable-stanley-black-decker; production verified on 2026-08-04 |
 | 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-dremel-bosch-manufacturing; production verified on 2026-08-04 |
-| 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `queued` |  |
-| 14 | STIHL | `who-owns-stihl-family-manufacturing` | `queued` |  |
-| 15 | Einhell | `who-owns-einhell-power-x-change` | `queued` | Quality gate 3 triggers after publication |
+| 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `local_verified` | Prepared for the 2026-08-05 publishing day; release after 00:00 Asia/Shanghai |
+| 14 | STIHL | `who-owns-stihl-family-manufacturing` | `local_verified` | Prepared for the 2026-08-05 publishing day; release after 00:00 Asia/Shanghai |
+| 15 | Einhell | `who-owns-einhell-power-x-change` | `local_verified` | Prepared for the 2026-08-05 publishing day; quality gate 3 triggers after publication |
 | 16 | Kress | `who-owns-kress-positec-robot-mowers` | `queued` |  |
 | 17 | Parkside | `who-makes-parkside-tools-lidl-suppliers` | `queued` |  |
 | 18 | HART Tools | `who-makes-hart-tools-walmart-tti-2026` | `queued` | High time-sensitivity |
@@ -62,6 +62,20 @@ This website-project record is the operational source of truth for the first too
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
+
+## Publishing day 5 local gate — articles 13–15
+
+Completed on 2026-08-04 for release only after 2026-08-05 00:00 (Asia/Shanghai).
+
+- Snap-on: 2,253 words, exact fixed title and slug, public-company ownership, portfolio, 15 U.S. and 21 non-U.S. facilities, franchise channel, cordless-system and warranty boundaries verified.
+- STIHL: 2,332 words, exact fixed title and slug, four family shareholders, professional-management structure, eight-country production network, AS/AK/AP systems and dated ALLPRO boundaries verified.
+- Einhell: 2,371 words, exact fixed title and slug, public listing, Thannhuber voting control, Power X-Change, China sourcing, Hungary battery production and warranty boundaries verified.
+- Each article has one original 1600×900 WebP cover and two deterministic 1600×900 SVG fact maps. Visual review found no unsupported logos or facts and retained readable key figures at reduced size.
+- Content classification, insight tests, brand relationship tests and a 464-page production build passed.
+- All three local production pages returned 200 with the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, three 1600×900 article visuals and internal links.
+- Desktop and 390px mobile checks found no horizontal overflow. The only local console error was the expected unavailable `/_vercel/insights/script.js`.
+- Exact-slug and ownership-intent checks found no duplicate WCB article. Existing STIHL coverage has different brand-profile, battery-alliance, Greenworks and robotic-mower intent.
+- Publication remains blocked by the daily release boundary until 2026-08-05 00:00 Asia/Shanghai. Preview verification is still required before merge.
 
 ## Publishing day 4 local gate — articles 10–12
 
