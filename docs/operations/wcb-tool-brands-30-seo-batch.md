@@ -37,9 +37,9 @@ This website-project record is the operational source of truth for the first too
 | 10 | FLEX | `who-owns-flex-tools-chervon-lowes` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-flex-tools-chervon-lowes; production verification and quality gate 2 passed on 2026-08-04 |
 | 11 | Porter-Cable | `who-owns-porter-cable-stanley-black-decker` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-porter-cable-stanley-black-decker; production verified on 2026-08-04 |
 | 12 | Dremel | `who-owns-dremel-bosch-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-dremel-bosch-manufacturing; production verified on 2026-08-04 |
-| 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `local_verified` | Prepared for the 2026-08-05 publishing day; release after 00:00 Asia/Shanghai |
-| 14 | STIHL | `who-owns-stihl-family-manufacturing` | `local_verified` | Prepared for the 2026-08-05 publishing day; release after 00:00 Asia/Shanghai |
-| 15 | Einhell | `who-owns-einhell-power-x-change` | `local_verified` | Prepared for the 2026-08-05 publishing day; quality gate 3 triggers after publication |
+| 13 | Snap-on | `who-owns-snap-on-tools-company-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-snap-on-tools-company-manufacturing; production verified on 2026-08-04 |
+| 14 | STIHL | `who-owns-stihl-family-manufacturing` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-stihl-family-manufacturing; production verified on 2026-08-04 |
+| 15 | Einhell | `who-owns-einhell-power-x-change` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-einhell-power-x-change; production verification and quality gate 3 passed on 2026-08-04 |
 | 16 | Kress | `who-owns-kress-positec-robot-mowers` | `queued` |  |
 | 17 | Parkside | `who-makes-parkside-tools-lidl-suppliers` | `queued` |  |
 | 18 | HART Tools | `who-makes-hart-tools-walmart-tti-2026` | `queued` | High time-sensitivity |
@@ -58,7 +58,7 @@ This website-project record is the operational source of truth for the first too
 
 ## Current checkpoint
 
-- Articles 1–12 are `published_verified`.
+- Articles 1–15 are `published_verified`.
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
@@ -75,7 +75,22 @@ Completed on 2026-08-04 for release only after 2026-08-05 00:00 (Asia/Shanghai).
 - All three local production pages returned 200 with the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, three 1600×900 article visuals and internal links.
 - Desktop and 390px mobile checks found no horizontal overflow. The only local console error was the expected unavailable `/_vercel/insights/script.js`.
 - Exact-slug and ownership-intent checks found no duplicate WCB article. Existing STIHL coverage has different brand-profile, battery-alliance, Greenworks and robotic-mower intent.
-- Publication remains blocked by the daily release boundary until 2026-08-05 00:00 Asia/Shanghai. Preview verification is still required before merge.
+- Denny explicitly instructed immediate publication on 2026-08-04, overriding the previously recorded 2026-08-05 release boundary for this batch.
+- PR #16 Preview deployment `dpl_8SawVSdNWotsRuAJ3xjfHrrHGzb3` reached READY. Its external URL required Vercel authentication, so the full local production-build browser pass and successful Vercel build were used before merge rather than weakening Preview protection.
+- PR #16 was squash-merged and production deployment `dpl_FqN4q4Xp6pw4PnXMnfBAdVAp67zT` succeeded. All three production pages passed the complete live checks listed below.
+
+## Quality gate 3 — articles 11–15
+
+Completed on 2026-08-04 after Snap-on, STIHL and Einhell reached production.
+
+- Porter-Cable, Dremel, Snap-on, STIHL and Einhell all returned 200 on production.
+- Every page exposed an H1, meta description, production canonical and BlogPosting JSON-LD.
+- All article visuals decoded at 1600×900: two each for Porter-Cable and Dremel, and three each for Snap-on, STIHL and Einhell.
+- Each page retained four or more internal article links. `/guides/ownership` and `sitemap.xml` included the three new slugs.
+- Desktop and 390px mobile checks found no horizontal overflow; the five production pages reported no browser-console errors or warnings.
+- Cannibalization review found one exact ownership-intent guide for each of the five fixed brand targets. The Greenworks ownership guide mentions STIHL only as a minority-investment relationship and does not duplicate the STIHL family-ownership intent.
+- Content classification, 14 insight tests, 82 brand tests and the 464-page production build passed before publication.
+- Gate result: passed. Articles 16–20 may proceed in fixed order, subject to the publishing-day rule and the next gate after article 20.
 
 ## Publishing day 4 local gate — articles 10–12
 
