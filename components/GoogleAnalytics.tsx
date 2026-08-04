@@ -1,19 +1,21 @@
-"use client";
-
-import { useEffect } from "react";
+import Script from "next/script";
 import {
-  type GoogleAnalyticsDocument,
-  type GoogleAnalyticsWindow,
-  initializeGoogleAnalytics
+  GOOGLE_ANALYTICS_MEASUREMENT_ID,
+  GOOGLE_ANALYTICS_SCRIPT_ID,
+  getGoogleAnalyticsBootstrapScript
 } from "@/lib/googleAnalytics";
 
 export function GoogleAnalytics() {
-  useEffect(() => {
-    initializeGoogleAnalytics(
-      window as unknown as GoogleAnalyticsWindow,
-      document as unknown as GoogleAnalyticsDocument
-    );
-  }, []);
-
-  return null;
+  return (
+    <>
+      <Script
+        id={`${GOOGLE_ANALYTICS_SCRIPT_ID}-library`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id={GOOGLE_ANALYTICS_SCRIPT_ID} strategy="afterInteractive">
+        {getGoogleAnalyticsBootstrapScript()}
+      </Script>
+    </>
+  );
 }
