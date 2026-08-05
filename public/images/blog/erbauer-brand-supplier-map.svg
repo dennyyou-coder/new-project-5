@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Erbauer brand control, suppliers and retail channels</title>
+  <desc id="desc">Kingfisher controls Erbauer and sourcing, global suppliers manufacture products, and retail banners sell and service the range.</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11191d"/><stop offset="1" stop-color="#123c3d"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-opacity=".28"/></filter></defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <text x="100" y="105" fill="#fff" font-family="Arial, sans-serif" font-size="53" font-weight="700">Erbauer's operating model</text>
+  <text x="100" y="158" fill="#a9c6c5" font-family="Arial, sans-serif" font-size="27">Brand control, production and retail service follow different paths</text>
+  <g font-family="Arial, sans-serif" filter="url(#s)">
+    <rect x="505" y="220" width="590" height="180" rx="32" fill="#e8f3f1"/>
+    <text x="800" y="285" text-anchor="middle" fill="#1a6b68" font-size="24" font-weight="700">BRAND + OFFER + SOURCING</text><text x="800" y="350" text-anchor="middle" fill="#182225" font-size="43" font-weight="700">Kingfisher</text>
+    <path d="M665 400L390 545M935 400l275 145" stroke="#42b6ae" stroke-width="8"/>
+    <rect x="100" y="530" width="575" height="210" rx="32" fill="#fff"/>
+    <text x="150" y="595" fill="#1a6b68" font-size="24" font-weight="700">GLOBAL VENDOR NETWORK</text><text x="150" y="655" fill="#182225" font-size="35" font-weight="700">Product-specific factories</text><text x="150" y="700" fill="#667276" font-size="23">Verify origin and responsible party by SKU</text>
+    <rect x="925" y="530" width="575" height="210" rx="32" fill="#fff"/>
+    <text x="975" y="595" fill="#1a6b68" font-size="24" font-weight="700">KINGFISHER BANNERS</text><text x="975" y="655" fill="#182225" font-size="35" font-weight="700">Screwfix • B&amp;Q • others</text><text x="975" y="700" fill="#667276" font-size="23">Local sales, returns and service route</text>
+  </g>
+  <text x="100" y="835" fill="#a9c6c5" font-family="Arial, sans-serif" font-size="24">One controlled brand can use multiple suppliers across categories and generations.</text>
+</svg>

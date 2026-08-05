@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ozito Power X-Change compatibility and verification boundaries</title>
+  <desc id="desc">Ozito PXC covers documented Australian products, while cross-market Einhell compatibility and warranty require exact regional documentation.</desc>
+  <rect width="1600" height="900" fill="#f4f0e8"/>
+  <text x="100" y="105" fill="#17231e" font-family="Arial, sans-serif" font-size="52" font-weight="700">Power X-Change: verify the boundary</text>
+  <text x="100" y="158" fill="#66756d" font-family="Arial, sans-serif" font-size="27">One regional ecosystem does not prove every cross-market combination</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="100" y="240" width="650" height="485" rx="34" fill="#173c2b"/>
+    <text x="155" y="310" fill="#9ed7ae" font-size="25" font-weight="700">DOCUMENTED OZITO PXC</text>
+    <circle cx="270" cy="460" r="105" fill="#ef5b4c"/><text x="270" y="449" fill="#fff" text-anchor="middle" font-size="33" font-weight="700">18V</text><text x="270" y="489" fill="#fff" text-anchor="middle" font-size="23">battery system</text>
+    <path d="M385 405h210M385 515h210" stroke="#9ed7ae" stroke-width="7" stroke-linecap="round"/>
+    <rect x="595" y="355" width="105" height="100" rx="18" fill="#fff"/><text x="647" y="415" text-anchor="middle" fill="#173c2b" font-size="22" font-weight="700">TOOLS</text>
+    <rect x="595" y="475" width="105" height="100" rx="18" fill="#fff"/><text x="647" y="535" text-anchor="middle" fill="#173c2b" font-size="22" font-weight="700">GARDEN</text>
+    <text x="155" y="655" fill="#fff" font-size="25">Match model, pack count and capacity</text>
+    <rect x="850" y="240" width="650" height="485" rx="34" fill="#fff" stroke="#d9d2c5" stroke-width="4"/>
+    <text x="905" y="310" fill="#9b342f" font-size="25" font-weight="700">DO NOT ASSUME</text>
+    <text x="905" y="385" fill="#17231e" font-size="34" font-weight="700">Ozito Australia</text><text x="905" y="430" fill="#66756d" font-size="24">+</text><text x="905" y="475" fill="#17231e" font-size="34" font-weight="700">Einhell overseas</text>
+    <path d="M930 535h485" stroke="#ef5b4c" stroke-width="8" stroke-dasharray="18 15"/>
+    <text x="905" y="600" fill="#66756d" font-size="25">Common owner ≠ automatic approval</text><text x="905" y="642" fill="#66756d" font-size="25">Physical fit ≠ warranty-safe use</text>
+    <rect x="260" y="770" width="1080" height="70" rx="22" fill="#eadfd3"/>
+    <text x="800" y="814" text-anchor="middle" fill="#392e2c" font-size="27" font-weight="700">Use the exact regional manual, battery code and warranty terms.</text>
+  </g>
+</svg>

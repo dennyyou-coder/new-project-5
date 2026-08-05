@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ozito ownership, retail channel and manufacturing responsibilities</title>
+  <desc id="desc">Einhell Group owns Ozito, Einhell Australia operates it, Bunnings provides the main retail and return channel, and factories are verified by model.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10271f"/><stop offset="1" stop-color="#1e1718"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-opacity=".25"/></filter></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="110" y="105" fill="#fff" font-family="Arial, sans-serif" font-size="54" font-weight="700">Who controls what?</text>
+  <text x="110" y="158" fill="#c9d8cf" font-family="Arial, sans-serif" font-size="27">Ownership, retail and production are separate roles</text>
+  <path d="M420 400H590M1010 400h170" stroke="#ef5b4c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M770 540v95" stroke="#85c89a" stroke-width="8" stroke-linecap="round"/>
+  <g filter="url(#s)" font-family="Arial, sans-serif">
+    <rect x="105" y="270" width="315" height="255" rx="30" fill="#f6f1e9"/>
+    <text x="150" y="335" fill="#8f2f2b" font-size="24" font-weight="700">OWNER</text><text x="150" y="405" fill="#17231e" font-size="39" font-weight="700">Einhell Group</text><text x="150" y="458" fill="#53635b" font-size="24">Acquired Ozito in 2013</text>
+    <rect x="590" y="245" width="420" height="295" rx="30" fill="#fff"/>
+    <text x="640" y="315" fill="#397953" font-size="24" font-weight="700">AUSTRALIAN OPERATOR</text><text x="640" y="385" fill="#17231e" font-size="39" font-weight="700">Einhell Australia</text><text x="640" y="430" fill="#17231e" font-size="28">Pty Ltd</text><text x="640" y="485" fill="#53635b" font-size="23">Formerly Ozito Industries Pty Ltd</text>
+    <rect x="1180" y="270" width="315" height="255" rx="30" fill="#f6f1e9"/>
+    <text x="1225" y="335" fill="#8f2f2b" font-size="24" font-weight="700">KEY CHANNEL</text><text x="1225" y="405" fill="#17231e" font-size="39" font-weight="700">Bunnings</text><text x="1225" y="458" fill="#53635b" font-size="24">Sales + warranty returns</text>
+    <rect x="470" y="635" width="660" height="155" rx="30" fill="#cfe9d7"/>
+    <text x="520" y="700" fill="#24583b" font-size="24" font-weight="700">MODEL-LEVEL EVIDENCE</text><text x="520" y="750" fill="#17231e" font-size="30" font-weight="700">Factory • origin • importer • warranty</text>
+  </g>
+  <text x="110" y="846" fill="#9fb0a7" font-family="Arial, sans-serif" font-size="22">Retail presence does not equal brand ownership or one universal manufacturer.</text>
+</svg>
