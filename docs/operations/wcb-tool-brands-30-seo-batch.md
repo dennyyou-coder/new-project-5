@@ -49,7 +49,7 @@ This website-project record is the operational source of truth for the first too
 | 22 | Ozito | `who-makes-ozito-tools-einhell-bunnings` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-ozito-tools-einhell-bunnings; production verified on 2026-08-05 |
 | 23 | Erbauer | `who-makes-erbauer-tools-kingfisher` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-erbauer-tools-kingfisher; production verified on 2026-08-05 |
 | 24 | Evolution Power Tools | `who-owns-evolution-power-tools` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-evolution-power-tools; high-sensitivity ownership refreshed and production verified on 2026-08-05 |
-| 25 | Triton Tools | `who-owns-triton-tools-kreg` | `queued` | Quality gate 5 triggers after publication; high time-sensitivity |
+| 25 | Triton Tools | `who-owns-triton-tools-timbecon` | `approved_for_publication` | Current Timbecon ownership replaces stale Kreg framing; quality gate 5 triggers after publication; high time-sensitivity |
 | 26 | FEIN | `who-owns-fein-tools-company-manufacturing` | `queued` |  |
 | 27 | Matco Tools | `who-owns-matco-tools-vontier` | `queued` |  |
 | 28 | Mac Tools | `who-owns-mac-tools-stanley-black-decker` | `queued` |  |
@@ -62,6 +62,19 @@ This website-project record is the operational source of truth for the first too
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
+
+## Triton local release gate — article 25
+
+Completed on 2026-08-05.
+
+- The stale Kreg ownership framing was replaced after a current-source check. Timbecon Pty Ltd is the current global owner; Toolstream Ltd is the former owner and Kreg is only a compatibility relationship.
+- Current ownership, December 2025 administration timing, Australian history, regional distribution, model-specific manufacturing and warranty-registration boundaries were verified from official sources.
+- The article has one original unbranded 1600×900 WebP cover and two deterministic 1600×900 SVG fact maps. Visual review corrected one long label and found no unsupported logo, product or factory implication.
+- Exact-slug, title and ownership-intent checks found no duplicate WCB article.
+- Content classification, 14 insight tests, 82 brand tests and a 474-page production build passed.
+- The local production route exposed the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and six internal article links.
+- Desktop and 390px mobile checks found no horizontal overflow. The only local browser error was the expected unavailable `/_vercel/insights/script.js`.
+- Publish Triton before FEIN and Matco, then run quality gate 5 across articles 21–25.
 
 ## Publishing day 7 local gate — articles 19–20
 

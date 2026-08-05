@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Triton Tools ownership transition and regional support</title>
+  <desc id="desc">Timbecon acquired Triton after Toolstream entered administration, with named distribution partners in the UK, Europe and North America.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101a22"/><stop offset="1" stop-color="#2d2118"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="10" stdDeviation="16" flood-opacity=".3"/></filter></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="100" y="110" fill="#fff" font-family="Arial, sans-serif" font-size="54" font-weight="700">Triton's ownership changed in 2026</text>
+  <text x="100" y="163" fill="#d4c5b9" font-family="Arial, sans-serif" font-size="27">Current brand owner and operating channels</text>
+  <g font-family="Arial, sans-serif" filter="url(#s)">
+    <rect x="100" y="245" width="430" height="250" rx="34" fill="#e7ddd2"/>
+    <text x="145" y="310" fill="#7f4c2a" font-size="24" font-weight="700">FORMER OWNER</text>
+    <text x="145" y="380" fill="#1c252b" font-size="43" font-weight="700">Toolstream Ltd</text>
+    <text x="145" y="430" fill="#596269" font-size="25">Entered administration</text>
+    <text x="145" y="466" fill="#596269" font-size="25">December 2025</text>
+    <path d="M530 370h170" stroke="#d77a38" stroke-width="10" stroke-linecap="round"/><path d="M665 340l45 30-45 30" fill="none" stroke="#d77a38" stroke-width="10"/>
+    <rect x="710" y="215" width="480" height="310" rx="38" fill="#fff"/>
+    <text x="760" y="285" fill="#a95525" font-size="24" font-weight="700">CURRENT GLOBAL OWNER</text>
+    <text x="760" y="363" fill="#182229" font-size="48" font-weight="700">Timbecon Pty Ltd</text>
+    <text x="760" y="417" fill="#5b656c" font-size="25">Australian woodworking business</text>
+    <text x="760" y="459" fill="#5b656c" font-size="23">Headquarters returned to Australia</text>
+  </g>
+  <text x="100" y="620" fill="#fff" font-family="Arial, sans-serif" font-size="31" font-weight="700">Regional routes named by Triton</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="100" y="670" width="420" height="125" rx="25" fill="#223949" stroke="#53768c" stroke-width="2"/><text x="310" y="720" text-anchor="middle" fill="#86c3dc" font-size="22" font-weight="700">UNITED KINGDOM</text><text x="310" y="762" text-anchor="middle" fill="#fff" font-size="28">TradeSafe Products</text>
+    <rect x="590" y="670" width="420" height="125" rx="25" fill="#223949" stroke="#53768c" stroke-width="2"/><text x="800" y="720" text-anchor="middle" fill="#86c3dc" font-size="22" font-weight="700">EUROPE</text><text x="800" y="762" text-anchor="middle" fill="#fff" font-size="28">sauter GmbH</text>
+    <rect x="1080" y="670" width="420" height="125" rx="25" fill="#223949" stroke="#53768c" stroke-width="2"/><text x="1290" y="720" text-anchor="middle" fill="#86c3dc" font-size="22" font-weight="700">NORTH AMERICA</text><text x="1290" y="762" text-anchor="middle" fill="#fff" font-size="28">Crimson Tool</text>
+  </g>
+</svg>
