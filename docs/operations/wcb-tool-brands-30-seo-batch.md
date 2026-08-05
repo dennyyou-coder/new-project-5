@@ -52,9 +52,9 @@ This website-project record is the operational source of truth for the first too
 | 25 | Triton Tools | `who-owns-triton-tools-timbecon` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-triton-tools-timbecon; Timbecon ownership refreshed; production verified and quality gate 5 passed on 2026-08-05 |
 | 26 | FEIN | `who-owns-fein-tools-company-manufacturing` | `approved_for_publication` | Local release gate passed on 2026-08-05 |
 | 27 | Matco Tools | `who-owns-matco-tools-vontier` | `approved_for_publication` | Local release gate passed on 2026-08-05 |
-| 28 | Mac Tools | `who-owns-mac-tools-stanley-black-decker` | `queued` |  |
-| 29 | Chervon | `who-owns-chervon-ego-flex-skil` | `queued` |  |
-| 30 | AEG Power Tools | `who-owns-aeg-power-tools-tti-license` | `queued` | Quality gate 6 triggers after publication; high time-sensitivity |
+| 28 | Mac Tools | `who-owns-mac-tools-stanley-black-decker` | `approved_for_publication` | Local release gate passed on 2026-08-05 |
+| 29 | Chervon | `who-owns-chervon-ego-flex-skil` | `approved_for_publication` | Local release gate passed on 2026-08-05 |
+| 30 | AEG Power Tools | `who-owns-aeg-power-tools-tti-license` | `approved_for_publication` | Local release gate passed on 2026-08-05; quality gate 6 triggers after publication; high time-sensitivity |
 
 ## Current checkpoint
 
@@ -99,6 +99,20 @@ Completed on 2026-08-05 after quality gate 5 passed.
 - Content classification, 14 insight tests, 82 brand tests and a 476-page production build passed.
 - Both local production routes exposed the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 visuals and six internal article links.
 - Desktop and 390px mobile checks found no horizontal overflow. The only local browser error was the expected unavailable `/_vercel/insights/script.js`.
+
+## Final batch local release gate — articles 28–30
+
+Prepared on 2026-08-05; automated and browser results are recorded after the fresh verification pass.
+
+- Mac Tools: exact fixed title and slug; Stanley Black & Decker ownership, independent mobile-franchise distribution, mixed group/supplier manufacturing, product-level 20V compatibility and warranty boundaries checked against official current sources.
+- Chervon: exact fixed title and slug; HKEX listing, dated controlling-shareholder disclosure, EGO/FLEX/SKIL brand separation, China/Vietnam integrated manufacturing and model-level origin boundary checked against official current sources.
+- AEG Power Tools: exact fixed title and slug; AB Electrolux trademark ownership, TTI's licensed power-tool operation since 2005, PRO18V and regional warranty boundaries checked against current official sources. The article remains distinct from WCB's appliance-focused AEG/Electrolux guide.
+- Each article includes one original unbranded 1600×900 WebP cover and two source-backed 1600×900 SVG fact maps. The AEG cover required one repair pass to remove generated pseudo-labels.
+- Content classification, 14 insight tests, 82 brand tests and a 479-page production build passed.
+- All three local production routes exposed the exact title and H1, meta description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and eight or more internal article links.
+- Desktop and 390px mobile checks found no horizontal overflow. The only local browser error was the expected unavailable `/_vercel/insights/script.js`.
+- Exact-slug and primary-intent review found no duplicate Mac or Chervon ownership guide. The existing AEG/Electrolux guide is appliance-focused; the new article is separated around the TTI power-tool license, PRO18V and tool-specific manufacturing and warranty intent.
+- Quality gate 6 remains mandatory after all three routes reach production and covers articles 26–30.
 
 ## Publishing day 7 local gate — articles 19–20
 
