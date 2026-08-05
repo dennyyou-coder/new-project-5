@@ -560,7 +560,7 @@ test("sorts brand articles by absolute time with deterministic invalid and tie f
   ]);
 });
 
-test("the release gate validates the forty-six published profiles and approved article relationships", () => {
+test("the release gate validates the fifty-six published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -576,25 +576,34 @@ test("the release gate validates the forty-six published profiles and approved a
     "bissell",
     "black-decker",
     "bosch-home-appliances",
+    "bosch-power-tools",
+    "craftsman",
     "dewalt",
     "dirt-devil",
     "dji-romo",
     "dreame",
+    "dremel",
     "dyson",
     "ecovacs",
     "electrolux",
     "eufy",
     "eureka",
+    "festool",
+    "flex",
     "fluidra",
     "greenworks",
     "hayward",
+    "hikoki",
+    "hilti",
     "hoover",
     "husqvarna",
     "irobot",
     "karcher",
+    "kobalt",
     "makita",
     "mammotion",
     "maytronics",
+    "metabo",
     "midea",
     "miele",
     "milwaukee",
@@ -609,6 +618,7 @@ test("the release gate validates the forty-six published profiles and approved a
     "ryobi",
     "segway-navimow",
     "shark",
+    "skil",
     "stihl",
     "sunseeker",
     "tineco",
@@ -629,6 +639,7 @@ test("the release gate validates the forty-six published profiles and approved a
     "bissell-little-green-vs-hoover-cleanslate": ["bissell", "hoover"],
     "bissell-crosswave-hard-floor-washer-logic": ["bissell"],
     "bissell-robot-vacuums-flexclean-strategy": ["bissell"],
+    "bosch-cordless-dust-collector": ["bosch-power-tools"],
     "china-cleaning-robot-giants-move-into-backyard": ["dreame", "ecovacs", "roborock", "eufy"],
     "chinese-cleaning-brands-at-ces-2026": ["eureka"],
     "commercial-robotic-mower-market-navimow-mammotion": ["mammotion", "sunseeker"],
@@ -711,6 +722,7 @@ test("the release gate validates the forty-six published profiles and approved a
     "where-are-dyson-vacuums-made": ["dyson"],
     "who-makes-aquabot-pool-cleaners-bwt-aquatron": ["aquabot"],
     "who-makes-dolphin-pool-cleaners-maytronics": ["maytronics"],
+    "who-makes-kobalt-tools-lowes-suppliers": ["kobalt"],
     "who-makes-luba-robot-mowers-mammotion-agilex": ["mammotion"],
     "who-makes-mova-robot-mowers-dreame-group": ["mova"],
     "who-makes-philips-vacuum-cleaners-versuni": [
@@ -725,24 +737,32 @@ test("the release gate validates the forty-six published profiles and approved a
     "who-owns-bissell-family-sanitaire": ["bissell"],
     "who-owns-black-and-decker-stanley-tools": ["black-decker"],
     "who-owns-bosch-appliances-bsh-siemens-brands": ["bosch-home-appliances"],
+    "who-owns-bosch-power-tools-robert-bosch": ["bosch-power-tools"],
+    "who-owns-craftsman-tools-stanley-black-decker": ["craftsman"],
     "who-owns-dewalt-stanley-black-decker": ["dewalt", "black-decker", "craftsman"],
+    "who-owns-dremel-bosch-manufacturing": ["dremel", "bosch-power-tools"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
     "who-owns-greenworks-globe-stihl": ["greenworks", "stihl"],
     "who-owns-hayward-pool-products": ["hayward"],
     "who-owns-husqvarna-automower-motorcycles": ["husqvarna"],
+    "who-owns-hilti-family-trust-manufacturing": ["hilti"],
     "who-owns-hoover-tti-haier-candy": ["hoover", "dirt-devil"],
     "who-owns-irobot-roomba-picea-robotics": ["irobot"],
     "who-owns-narwal-yunjing-investors-manufacturing": ["narwal"],
     "who-owns-eufy-anker-smart-home": ["eufy"],
     "who-owns-eureka-midea-electrolux-manufacturing": ["midea", "eureka", "electrolux"],
+    "who-owns-festool-tts-tooltechnic-systems": ["festool"],
+    "who-owns-flex-tools-chervon-lowes": ["flex"],
     "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
     "who-owns-makita-company-manufacturing": ["makita"],
     "who-owns-miele-family-manufacturing-network": ["miele"],
     "who-owns-milwaukee-tools-tti-manufacturing": ["milwaukee", "tti"],
+    "who-owns-metabo-metabo-hpt-hikoki": ["metabo", "hikoki"],
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris", "fluidra"],
     "who-owns-ryobi-tti-kyocera": ["ryobi"],
     "who-owns-segway-navimow-ninebot-willand": ["segway-navimow"],
     "who-owns-sharkninja-js-global-joyoung": ["shark"],
+    "who-owns-skil-tools-chervon": ["skil"],
     "who-owns-stihl-family-manufacturing": ["stihl"],
     "who-owns-tineco-ecovacs-group": ["tineco"],
     "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck": [
@@ -771,7 +791,7 @@ test("the release gate validates the forty-six published profiles and approved a
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 55);
+  assert.equal(loadedProfiles.length, 56);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -797,8 +817,8 @@ test("the release gate validates the forty-six published profiles and approved a
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 112);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 183);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 122);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 195);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -837,7 +857,7 @@ test("the release gate validates the forty-six published profiles and approved a
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 46);
+  assert.equal(profiles.length, 56);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -856,6 +876,67 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("power-tool completion profiles use dedicated assets, article depth, and distinct identities", async () => {
+  const slugs = [
+    "bosch-power-tools",
+    "craftsman",
+    "kobalt",
+    "skil",
+    "hilti",
+    "festool",
+    "hikoki",
+    "flex",
+    "dremel",
+    "metabo"
+  ];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const articles = getInsights();
+
+  for (const slug of slugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published", `${slug} must be published`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(
+      candidate.contentVisuals.every(
+        (visual) => visual.src.startsWith(`/images/brands/${slug}/`)
+          && !visual.src.includes("global-power-tool-brands-reshaping-portfolios-image-01")
+      ),
+      `${slug} must use dedicated, relevant content visuals`
+    );
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+
+    const relatedArticles = articles.filter(
+      (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+    );
+    assert.ok(relatedArticles.length >= 3, `${slug} must have at least three article relationships`);
+  }
+
+  const bosch = profilesBySlug.get("bosch-power-tools");
+  const hikoki = profilesBySlug.get("hikoki");
+  const metabo = profilesBySlug.get("metabo");
+  assert.match(bosch.ownership.summary, /distinct from BSH/i);
+  assert.match(hikoki.legalEntityNote, /Metabo is a distinct/i);
+  assert.match(metabo.legalEntityNote, /Metabo HPT.*North America/i);
+  assert.notEqual(hikoki.officialWebsite, metabo.officialWebsite);
 });
 
 test("sixth batch profiles use dedicated assets, article depth, and explicit identity boundaries", async () => {

@@ -1,10 +1,9 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "skil",
   "name": "SKIL",
   "aliases": ["SKIL Power Tools", "SKIL PWRCORE"],
-  "legalName": "Chervon North America, Inc. (reviewed U.S./Canada warranty entity)",
-  "legalEntityNote": "SKIL is a Chervon Group brand. Chervon North America, Inc. is the warrantor for the reviewed U.S./Canada policy; that regional warranty statement does not identify the trademark owner, manufacturer, importer or guarantor for every country and SKU.",
+  "legalEntityNote": "SKIL is a Chervon Group brand. Chervon North America, Inc. is the warrantor for the reviewed U.S./Canada policy, not a universal global brand legal entity, trademark owner, manufacturer, importer or guarantor for every country and SKU.",
   "officialWebsite": "https://www.skil.com/",
   "headline": "SKIL ownership, PWRCORE battery systems and regional warranty boundary",
   "description": "A source-backed profile of SKIL within Chervon, PWRCORE product systems, regional warranty responsibilities and SKU-level buyer checks.",
@@ -12,14 +11,14 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with SKIL or Chervon. Group ownership and a regional warranty policy do not prove the factory, seller or guarantor for each product in every market.",
   "headquarters": "Grand Rapids, Michigan, United States (SKIL North America contact route); Chervon Group global operations",
   "founded": "1924 brand heritage; current Chervon Group brand",
-  "heroImage": "/images/brands/skil/hero.webp",
+  "heroImage": "/images/brands/skil/hero-pwrcore-cordless-tools.webp",
   "heroImageAlt": "SKIL cordless chainsaw in outdoor cutting use",
   "logoImage": "/images/brands/skil/logo.webp",
   "logoImageAlt": "SKIL logo",
   "logoSourceUrl": "https://www.skil.com/",
   "contentVisuals": [
-    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Cordless tool and outdoor equipment platform assortment","caption":"SKIL's PWRCORE product systems should be matched to the exact voltage platform and market rather than treated as a universal battery claim."},
-    {"placement":"operations","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Cordless-tool workflow in a professional application","caption":"Brand-platform evidence does not replace model-specific origin, importer and warranty checks."}
+    {"placement":"ownership","src":"/images/brands/skil/ownership-map.webp","alt":"SKIL ownership history and Chervon relationship map","caption":"SKIL's ownership history culminates in Chervon Group control; the brand and its regional warranty entities remain distinct."},
+    {"placement":"operations","src":"/images/brands/skil/evidence-boundary.webp","alt":"SKIL parent, brand and regional warranty boundary","caption":"Chervon ownership and the reviewed U.S./Canada warranty entity do not establish every model's manufacturer or importer."}
   ],
   "ownership": {"summary":"SKIL is a Chervon Group brand. Chervon's official brand page places SKIL in the group's portfolio alongside FLEX and other tool brands; it does not make SKIL a separate parent company.","parentCompany":"Chervon Group"},
   "leadership": [],
@@ -50,6 +49,6 @@
     {"id":"skil-systems","title":"PWRCORE Systems","publisher":"SKIL","url":"https://www.skil.com/core-systems","accessedAt":"2026-08-01"}
   ],
   "publishedAt": "2026-08-01T12:15:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:15:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:27:00+08:00"
 }

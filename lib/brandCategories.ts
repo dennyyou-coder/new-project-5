@@ -35,6 +35,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "hilti",
       "kobalt",
       "makita",
+      "metabo",
       "milwaukee",
       "ryobi",
       "skil",
@@ -52,6 +53,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "hilti",
       "kobalt",
       "makita",
+      "metabo",
       "milwaukee",
       "ryobi",
       "skil"
@@ -255,7 +257,7 @@ export function buildBrandCategorySitemapEntries(
 ) {
   return getPublishedBrandCategories(profiles).map(({ category }) => ({
     url: `${siteUrl}/brands/${category.slug}`,
-    lastModified: "2026-08-01"
+    lastModified: "2026-08-05"
   }));
 }
 

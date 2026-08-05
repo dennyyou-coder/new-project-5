@@ -1,10 +1,9 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "craftsman",
   "name": "CRAFTSMAN",
   "aliases": ["Craftsman Tools", "CRAFTSMAN V20"],
-  "legalName": "Stanley Black & Decker, Inc.",
-  "legalEntityNote": "CRAFTSMAN is a Stanley Black & Decker brand. The reviewed U.S. warranty describes eligibility and authorized sellers, but a brand-level ownership statement does not identify a universal manufacturer, importer or warranty entity for every product and country.",
+  "legalEntityNote": "CRAFTSMAN is a Stanley Black & Decker brand. Stanley Black & Decker is the parent company, not a universal legal manufacturer, importer, seller or warranty entity for every CRAFTSMAN product and country; those roles require product- and market-specific documents.",
   "officialWebsite": "https://www.craftsman.com/",
   "headline": "CRAFTSMAN ownership, V20 system and retail-channel checks",
   "description": "A source-backed profile of CRAFTSMAN's Stanley Black & Decker ownership, power-tool and outdoor portfolio, authorized-selling requirements and SKU-level buyer checks.",
@@ -12,14 +11,14 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with CRAFTSMAN or Stanley Black & Decker. Brand ownership does not establish the manufacturer, seller, importer or warranty party for every CRAFTSMAN SKU.",
   "headquarters": "Towson, Maryland, United States (Stanley Black & Decker group headquarters)",
   "founded": "1927; owned at group level by Stanley Black & Decker",
-  "heroImage": "/images/brands/craftsman/hero.webp",
+  "heroImage": "/images/brands/craftsman/hero-v20-cordless-tools.webp",
   "heroImageAlt": "CRAFTSMAN cordless saw in a workshop application",
   "logoImage": "/images/brands/craftsman/logo.webp",
   "logoImageAlt": "CRAFTSMAN logo",
   "logoSourceUrl": "https://press.craftsman.com/2026-05-21-CRAFTSMAN-R-Launches-New-V20-ADVANCED-TM-Batteries-to-Help-DIYers-Power-Through-More-Demanding-Jobs?asPDF=1",
   "contentVisuals": [
-    {"placement":"ownership","src":"/images/blog/black-decker-stanley-ownership-manufacturing-map.webp","alt":"Stanley Black and Decker brand and responsibility map","caption":"CRAFTSMAN is a Stanley Black & Decker sibling brand; this relationship does not identify every product's factory or warranty party."},
-    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Cordless power-tool platform assortment","caption":"Battery platforms support assortment planning, but buyers must match the precise kit, battery and regional SKU."}
+    {"placement":"ownership","src":"/images/brands/craftsman/ownership-map.webp","alt":"CRAFTSMAN ownership and channel relationship map","caption":"Stanley Black & Decker owns CRAFTSMAN, while historic licensing and channel arrangements remain distinct from current SKU responsibility."},
+    {"placement":"operations","src":"/images/brands/craftsman/evidence-boundary.webp","alt":"CRAFTSMAN parent, brand and SKU responsibility boundary","caption":"Parent ownership does not identify the seller, importer, factory or warranty party for every CRAFTSMAN SKU."}
   ],
   "ownership": {"summary":"CRAFTSMAN is a Stanley Black & Decker brand. The group's and CRAFTSMAN's own materials position it alongside DEWALT and BLACK+DECKER rather than as a separate parent company.","parentCompany":"Stanley Black & Decker, Inc."},
   "leadership": [],
@@ -50,6 +49,6 @@
     {"id":"craftsman-support","title":"CRAFTSMAN Support","publisher":"CRAFTSMAN","url":"https://www.craftsman.com/en-us/support","accessedAt":"2026-08-01"}
   ],
   "publishedAt": "2026-08-01T12:05:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:05:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:25:00+08:00"
 }

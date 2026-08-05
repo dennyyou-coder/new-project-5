@@ -1,5 +1,5 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "hilti",
   "name": "Hilti",
   "aliases": ["Hilti Group", "Hilti Tools"],
@@ -12,14 +12,14 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Hilti. Group ownership, direct sales and country-specific warranty terms do not identify the factory or origin for every Hilti SKU.",
   "headquarters": "Schaan, Liechtenstein",
   "founded": "1941",
-  "heroImage": "/images/brands/hilti/hero.webp",
-  "heroImageAlt": "Hilti construction-tool product and application reference",
+  "heroImage": "/images/brands/hilti/hero-nuron-dsh-600-22.webp",
+  "heroImageAlt": "Hilti Nuron DSH 600-22 cut-off saw used on a construction site",
   "logoImage": "/images/brands/hilti/logo.webp",
   "logoImageAlt": "Hilti logo",
   "logoSourceUrl": "https://reports.hilti.group/2025/",
   "contentVisuals": [
-    {"placement":"portfolio","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Cordless construction-tool workflow","caption":"Hilti's tool, software and service positioning is construction-workflow specific; exact equipment terms remain contract and market dependent."},
-    {"placement":"operations","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Professional cordless tool platform assortment","caption":"Direct customer relationships and Fleet Management do not establish one factory or country of origin for every product."}
+    {"placement":"ownership","src":"/images/brands/hilti/ownership-map.webp","alt":"Hilti trust ownership and direct business model map","caption":"The Martin Hilti Family Trust owns the group; Hilti Aktiengesellschaft and country sales entities carry different responsibilities."},
+    {"placement":"operations","src":"/images/brands/hilti/evidence-boundary.webp","alt":"Hilti owner, operating company and country entity boundary","caption":"Private ownership and direct sales do not identify one factory, importer or warranty route for every Hilti product."}
   ],
   "ownership": {"summary":"Hilti is privately owned by the Martin Hilti Family Trust, according to Hilti Group's 2025 official business-results release. The group operates as a global construction-technology supplier rather than a publicly listed brand owner.","parentCompany":"Martin Hilti Family Trust"},
   "leadership": [{"name":"Jahangir Doongaji","role":"Hilti Group CEO","context":"Hilti's 2025 annual report identifies Jahangir Doongaji as Group CEO."}],
@@ -48,9 +48,10 @@
     {"id":"hilti-annual-2025","title":"Hilti 2025 Annual Report","publisher":"Hilti Group","url":"https://reports.hilti.group/2025/","accessedAt":"2026-08-01"},
     {"id":"hilti-ownership-2025","title":"Hilti Business Results 2025","publisher":"Hilti Group","url":"https://www.hilti.group/content/dam/documents/Media-Release/2025/business-result-1-8-2025/Hilti_Media-Release_Business-Result_1-8_2025_EN.pdf","publishedAt":"2025-08-01","accessedAt":"2026-08-01"},
     {"id":"hilti-us-terms","title":"Terms and Conditions of Sales","publisher":"Hilti USA","url":"https://www.hilti.com/content/hilti/W1/US/en/company/legal-and-footer-information/terms-conditions/terms-and-conditions-of-sales.html","publishedAt":"2025-02","accessedAt":"2026-08-01"},
-    {"id":"hilti-us-warranty","title":"Tool Warranty","publisher":"Hilti USA","url":"https://www.hilti.com/content/resources/tool-support/local/warranty?country=US&lang=EN","accessedAt":"2026-08-01"}
+    {"id":"hilti-us-warranty","title":"Tool Warranty","publisher":"Hilti USA","url":"https://www.hilti.com/content/resources/tool-support/local/warranty?country=US&lang=EN","accessedAt":"2026-08-01"},
+    {"id":"hilti-press-photos","title":"Hilti Press Photos","publisher":"Hilti Group","url":"https://www.hilti.group/content/hilti/CP/XX/en/company/media-relations/press-photos.html","accessedAt":"2026-08-05"}
   ],
   "publishedAt": "2026-08-01T12:20:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:20:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:28:00+08:00"
 }
