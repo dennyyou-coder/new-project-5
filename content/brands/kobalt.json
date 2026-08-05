@@ -1,9 +1,10 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "kobalt",
   "name": "Kobalt",
   "aliases": ["Kobalt Tools", "Kobalt 24V MAX"],
-  "legalEntityNote": "Kobalt is Lowe's retail-tool brand. The reviewed Lowe's material establishes channel positioning, while the 2026 CPSC recall identifies a named importer and factories only for covered Kobalt outdoor-power SKUs; it must not be used as a universal Kobalt manufacturing claim.",
+  "legalName": "LF, LLC (trademark owner identified in reviewed Lowe's product documentation)",
+  "legalEntityNote": "Kobalt is a Lowe's private brand. A Lowe's product manual identifies KOBALT and the K Design as registered trademarks of LF, LLC, and Lowe's historical SEC subsidiary list identifies LF, LLC within the group. That trademark role is distinct from Lowe's retail channel and from each SKU's manufacturer, importer, seller and warranty party.",
   "officialWebsite": "https://www.lowes.com/",
   "headline": "Kobalt retail ownership, 24V platform and SKU-specific supply-chain checks",
   "description": "A source-backed profile of Kobalt's Lowe's retail position, 24V cordless and outdoor portfolio, and the boundary between a recalled SKU's importer evidence and the wider brand.",
@@ -11,16 +12,16 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Kobalt, Lowe's or Greenworks. Named importer, factory and recall evidence applies only to the recalled products and dates stated by the regulator.",
   "headquarters": "Mooresville, North Carolina, United States (Lowe's corporate headquarters)",
   "founded": "1998 (Kobalt brand); current Lowe's retail brand",
-  "heroImage": "/images/brands/kobalt/hero.webp",
-  "heroImageAlt": "Kobalt cordless power-tool platform assortment",
+  "heroImage": "/images/brands/kobalt/hero-24v-brushless-combo.webp",
+  "heroImageAlt": "Kobalt 24V MAX brushless drill, driver, circular saw and sander kit",
   "logoImage": "/images/brands/kobalt/logo.webp",
   "logoImageAlt": "Kobalt logo",
   "logoSourceUrl": "https://corporate.lowes.com/newsroom/press-releases/kobalt-launches-24v-max-brushless-power-tools-06-01-16",
   "contentVisuals": [
-    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Cordless platform and outdoor power equipment assortment","caption":"A retail private-label-style tool offer can span multiple product families without proving a single manufacturer for each SKU."},
-    {"placement":"operations","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Cordless tools used in a professional task workflow","caption":"Model-level label, importer and warranty documents remain the buyer's evidence for any Kobalt product."}
+    {"placement":"ownership","src":"/images/brands/kobalt/ownership-map.webp","alt":"Kobalt retail control, supplier and model-responsibility map","caption":"Lowe's controls the Kobalt retail brand, while product suppliers, importers and factories remain model-specific."},
+    {"placement":"operations","src":"/images/brands/kobalt/evidence-boundary.webp","alt":"Kobalt trademark, retail and SKU responsibility boundary","caption":"LF, LLC's trademark role, Lowe's retail role and a named supplier or importer are separate evidence layers."}
   ],
-  "ownership": {"summary":"Kobalt is positioned by Lowe's as a retail-exclusive tool brand. The reviewed official Lowe's launch communication describes Kobalt as available exclusively at Lowe's; it does not establish a single Kobalt legal manufacturer across the catalogue.","parentCompany":"Lowe's Companies, Inc. (retail brand position)"},
+  "ownership": {"summary":"Kobalt is a Lowe's private brand. Lowe's 2026 Form 10-K says a wholly owned subsidiary owns and maintains private-brand names including Kobalt, and reviewed Lowe's product documentation identifies LF, LLC as the KOBALT trademark owner. Neither statement establishes one manufacturer for the catalogue.","parentCompany":"Lowe's Companies, Inc."},
   "leadership": [],
   "productPortfolio": [
     {"name":"24V MAX cordless power tools","positioning":"Lowe's introduced Kobalt's 24V MAX brushless range as a cordless platform for tools and batteries.","buyerRelevance":"Check the exact battery, charger, tool configuration and product-year compatibility."},
@@ -46,9 +47,12 @@
   "sources": [
     {"id":"lowes-kobalt-24v","title":"Kobalt Launches 24V MAX Brushless Power Tools","publisher":"Lowe's Companies, Inc.","url":"https://corporate.lowes.com/newsroom/press-releases/kobalt-launches-24v-max-brushless-power-tools-06-01-16","publishedAt":"2016-06-01","accessedAt":"2026-08-01"},
     {"id":"cpsc-kobalt-2026","title":"Greenworks Tools Recalls Kobalt Yard Power Tools with USB-C Batteries","publisher":"U.S. Consumer Product Safety Commission","url":"https://www.cpsc.gov/Recall-Products/Leaf-Blowers","publishedAt":"2026-07-09","accessedAt":"2026-08-01"},
-    {"id":"lowes-kobalt-product","title":"Kobalt product listing","publisher":"Lowe's","url":"https://www.lowes.com/pd/Kobalt-151-Steel-Cup-Holder/1000308969","accessedAt":"2026-08-01"}
+    {"id":"lowes-kobalt-10k","title":"Lowe's Companies 2026 Form 10-K","publisher":"U.S. Securities and Exchange Commission","url":"https://www.sec.gov/Archives/edgar/data/60667/000006066726000029/low-20260130.htm","publishedAt":"2026-03","accessedAt":"2026-08-05"},
+    {"id":"lowes-kobalt-manual","title":"Kobalt Product Manual and Trademark Notice","publisher":"Lowe's","url":"https://pdf.lowes.com/productdocuments/cef2b044-3152-4ad9-9fb5-db4d30ca66cc/04474731.pdf","accessedAt":"2026-08-05"},
+    {"id":"lowes-lf-subsidiary","title":"Lowe's Companies Subsidiaries Exhibit","publisher":"U.S. Securities and Exchange Commission","url":"https://www.sec.gov/Archives/edgar/data/60667/000006066704000188/exhibit21.htm","publishedAt":"2004","accessedAt":"2026-08-05"},
+    {"id":"lowes-kobalt-product","title":"Kobalt 24V Four-Tool Brushless Combo Kit","publisher":"Lowe's","url":"https://www.lowes.com/pd/Kobalt-24-volt-4-Tool-Brushless-Power-Tool-Combo-Kit-1-Batteries-Included-and-Charger-Included/5016595973","accessedAt":"2026-08-05"}
   ],
   "publishedAt": "2026-08-01T12:10:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:10:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:26:00+08:00"
 }

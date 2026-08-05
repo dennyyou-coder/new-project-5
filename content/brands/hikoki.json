@@ -1,25 +1,24 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "hikoki",
   "name": "HiKOKI / Metabo HPT",
   "aliases": ["HiKOKI", "Metabo HPT", "Hitachi Power Tools"],
-  "legalName": "Koki Holdings Co., Ltd.",
   "legalEntityNote": "HiKOKI is Koki Holdings' international power-tool brand; Metabo HPT is the North American brand route operated by Koki Holdings America. Metabo is a distinct Koki Holdings brand and has its own separate World Clean Biz page boundary. Regional branding does not establish a common seller, factory, importer or warranty entity for every SKU.",
-  "officialWebsite": "https://www.koki-holdings.com/",
+  "officialWebsite": "https://www.hikoki-powertools.com/",
   "headline": "HiKOKI and Metabo HPT ownership, regional brand roles and Multi Volt systems",
   "description": "A source-backed profile of Koki Holdings' HiKOKI and Metabo HPT regional brand structure, Multi Volt platform and buyer checks that keep them separate from Metabo.",
   "metaDescription": "HiKOKI and Metabo HPT profile: Koki Holdings ownership, regional branding, Multi Volt tools, channels, warranties and buyer checks.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Koki Holdings, HiKOKI, Metabo HPT or Metabo. HiKOKI/Metabo HPT and Metabo share Koki Holdings ownership but remain separate brands and product routes.",
   "headquarters": "Tokyo, Japan (Koki Holdings); regional commercial entities vary",
   "founded": "1948 Hitachi Koki heritage; HiKOKI brand introduced in 2018",
-  "heroImage": "/images/brands/hikoki/hero.webp",
-  "heroImageAlt": "HiKOKI cordless angle grinder and professional-tool product reference",
+  "heroImage": "/images/brands/hikoki/hero-c3607db-circular-saw.webp",
+  "heroImageAlt": "HiKOKI C3607DB Multi Volt cordless circular saw",
   "logoImage": "/images/brands/hikoki/logo.webp",
   "logoImageAlt": "HiKOKI logo",
   "logoSourceUrl": "https://www.koki-holdings.com/corporate/history.html",
   "contentVisuals": [
-    {"placement":"ownership","src":"/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp","alt":"European professional power-tool industry visual","caption":"HiKOKI, Metabo HPT and Metabo need to be separated by regional brand role and legal entity, even under a common Koki Holdings parent."},
-    {"placement":"portfolio","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Cordless professional-tool workflow","caption":"Multi Volt is a product-platform claim; tool, battery, service and regulatory compatibility must be checked by SKU and market."}
+    {"placement":"ownership","src":"/images/brands/hikoki/ownership-map.webp","alt":"Koki Holdings brand map for HiKOKI, Metabo HPT and Metabo","caption":"Koki Holdings owns three distinct brand routes: HiKOKI internationally, Metabo HPT in North America and Metabo as a separate German-origin brand."},
+    {"placement":"operations","src":"/images/brands/hikoki/evidence-boundary.webp","alt":"HiKOKI and Metabo HPT regional brand boundary","caption":"A shared parent does not make HiKOKI, Metabo HPT and Metabo products, batteries or service obligations interchangeable."}
   ],
   "ownership": {"summary":"Koki Holdings' official corporate history identifies HiKOKI, Metabo HPT and Metabo as brands owned by the company. HiKOKI is the international brand, while Metabo HPT is the North American market brand; Metabo remains a separate brand rather than an alias for either one.","parentCompany":"Koki Holdings Co., Ltd."},
   "leadership": [],
@@ -47,10 +46,11 @@
   "sources": [
     {"id":"koki-history","title":"Corporate History","publisher":"Koki Holdings","url":"https://www.koki-holdings.com/corporate/history.html","accessedAt":"2026-08-01"},
     {"id":"metabo-hpt-about","title":"About Us","publisher":"Metabo HPT","url":"https://www.metabo-hpt.com/about/about-us","accessedAt":"2026-08-01"},
-    {"id":"metabo-na-transition","title":"Metabo North America to Become Metabo HPT","publisher":"Metabo / Koki Group","url":"https://www.metabo.com/us/enus/info/news/news/","publishedAt":"2025-11-17","accessedAt":"2026-08-01"},
-    {"id":"metabo-hpt-history","title":"Company History","publisher":"Metabo HPT","url":"https://www.metabo-hpt.com/about/company-history","accessedAt":"2026-08-01"}
+    {"id":"metabo-na-transition","title":"Metabo North America to Become Metabo HPT","publisher":"Metabo HPT / Koki Group","url":"https://www.metabo-hpt.com/about/news/article/2025/11/17/metabo-north-america-to-become-metabo-hpt--unified-brand-strengthens-global-power-tool-portfolio","publishedAt":"2025-11-17","accessedAt":"2026-08-05"},
+    {"id":"metabo-hpt-history","title":"Company History","publisher":"Metabo HPT","url":"https://www.metabo-hpt.com/about/company-history","accessedAt":"2026-08-01"},
+    {"id":"hikoki-c3607db","title":"C3607DB Multi Volt Cordless Circular Saw","publisher":"HiKOKI","url":"https://www.hikoki-powertools.com/products/powertools/li-ion-saw/c3607db/c3607db.html","accessedAt":"2026-08-05"}
   ],
   "publishedAt": "2026-08-01T12:30:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:30:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:30:00+08:00"
 }

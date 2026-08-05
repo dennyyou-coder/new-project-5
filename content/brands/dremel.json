@@ -1,10 +1,9 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "dremel",
   "name": "Dremel",
   "aliases": ["Dremel Tools", "Dremel 12V"],
-  "legalName": "Robert Bosch Tool Corporation (reviewed U.S. website and warranty entity)",
-  "legalEntityNote": "Dremel is one of the Bosch Power Tools division's brands. Robert Bosch Tool Corporation operates Dremel's reviewed U.S. website and warranty route, while product manufacturer, importer, seller and guarantor can differ by SKU and country.",
+  "legalEntityNote": "Dremel is one of the Bosch Power Tools division's brands. Robert Bosch Tool Corporation operates the reviewed U.S. website and warranty route, not a universal Dremel legal entity; product manufacturer, importer, seller and guarantor can differ by SKU and country.",
   "officialWebsite": "https://www.dremel.com/",
   "headline": "Dremel ownership, rotary-tool systems and U.S. warranty boundary",
   "description": "A source-backed profile of Dremel within Bosch Power Tools, its rotary and compact-tool portfolio, U.S. warranty entity and buyer checks.",
@@ -12,14 +11,14 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dremel, Bosch Power Tools or Robert Bosch Tool Corporation. The U.S. site and warranty entity do not prove a manufacturer, seller or warranty party for every Dremel product worldwide.",
   "headquarters": "Mount Prospect, Illinois, United States (reviewed U.S. operating route); Bosch Power Tools division headquarters in Germany",
   "founded": "1932 brand heritage; current Bosch Power Tools brand",
-  "heroImage": "/images/brands/dremel/hero.webp",
+  "heroImage": "/images/brands/dremel/hero-rotary-tool-workstation.webp",
   "heroImageAlt": "Dremel rotary tool used for detailed home-improvement work",
   "logoImage": "/images/brands/dremel/logo.webp",
   "logoImageAlt": "Dremel logo",
   "logoSourceUrl": "https://www.dremel.com/us/en/service-and-support/terms-of-use",
   "contentVisuals": [
-    {"placement":"ownership","src":"/images/insights/bosch-cordless-dust-collector-image-001.jpg","alt":"Bosch Power Tools professional equipment reference","caption":"Dremel is part of Bosch Power Tools, not BSH home appliances; a Bosch Group relationship does not determine model-specific responsibility."},
-    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Cordless tools and accessories in a platform assortment","caption":"Dremel's compact-tool range depends on exact accessory, speed, battery and country configuration."}
+    {"placement":"ownership","src":"/images/brands/dremel/ownership-map.webp","alt":"Dremel and Bosch Power Tools business relationship map","caption":"Dremel is a Bosch Power Tools brand and is not part of the Bosch-branded home-appliance business operated by BSH."},
+    {"placement":"operations","src":"/images/brands/dremel/evidence-boundary.webp","alt":"Dremel brand and regional service responsibility boundary","caption":"Bosch Group ownership, the Dremel brand and a regional warranty route do not identify every SKU's manufacturer or importer."}
   ],
   "ownership": {"summary":"Dremel is a Bosch Power Tools division brand. Bosch Power Tools' official corporate profile lists Dremel among the division's brands; Dremel is separate from the Bosch-branded home-appliance operation run by BSH.","parentCompany":"Robert Bosch GmbH (Bosch Group, through Bosch Power Tools)"},
   "leadership": [],
@@ -47,9 +46,10 @@
   "sources": [
     {"id":"bosch-pt-about","title":"About Bosch Power Tools","publisher":"Bosch Power Tools","url":"https://www.bosch-pt.com/ww/en/company/about-us/","accessedAt":"2026-08-01"},
     {"id":"dremel-terms","title":"Terms of Use","publisher":"Dremel","url":"https://www.dremel.com/us/en/service-and-support/terms-of-use","publishedAt":"2026-03-13","accessedAt":"2026-08-01"},
-    {"id":"dremel-warranty","title":"Dremel Warranty","publisher":"Dremel","url":"https://www.dremel.com/us/en/service-and-support/warranty","accessedAt":"2026-08-01"}
+    {"id":"dremel-warranty","title":"Dremel Warranty","publisher":"Dremel","url":"https://www.dremel.com/us/en/service-and-support/warranty","accessedAt":"2026-08-01"},
+    {"id":"dremel-home","title":"Dremel Official Website","publisher":"Dremel","url":"https://www.dremel.com/us/en/","accessedAt":"2026-08-05"}
   ],
   "publishedAt": "2026-08-01T12:40:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:40:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:32:00+08:00"
 }

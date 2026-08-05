@@ -1,0 +1,194 @@
+{
+  "status": "published",
+  "slug": "metabo",
+  "name": "Metabo",
+  "aliases": ["Metabowerke", "Metabo CAS", "Metabo Power Tools"],
+  "legalName": "Metabowerke GmbH",
+  "legalEntityNote": "Metabowerke GmbH is the operating company named in Metabo's official imprint and is part of Koki Holdings. Metabo HPT is Koki Holdings' North American brand route; it is not a global alias for Metabo, and neither brand identity determines the seller, importer, factory or warranty entity for every SKU and country.",
+  "officialWebsite": "https://www.metabo.com/com/en/",
+  "headline": "Metabo ownership, Nürtingen manufacturing evidence and CAS platform boundary",
+  "description": "A source-backed profile of Metabo as a Koki Holdings brand operated by Metabowerke GmbH, with verified Nürtingen manufacturing disclosures, CAS battery-alliance context and regional buyer checks.",
+  "metaDescription": "Metabo profile: Koki Holdings ownership, Metabowerke GmbH, Nürtingen manufacturing evidence, CAS tools, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Metabo, Metabowerke GmbH or Koki Holdings. Named Nürtingen manufacturing evidence applies only to the products and processes stated by Metabo and must not be generalized to every SKU.",
+  "headquarters": "Nürtingen, Baden-Württemberg, Germany",
+  "founded": "1924 company foundation; Metabo brand name adopted in 1928",
+  "heroImage": "/images/brands/metabo/hero-2000w-brushless-grinder.webp",
+  "heroImageAlt": "Metabo 2000-watt brushless angle grinder used in a metalworking facility",
+  "logoImage": "/images/brands/metabo/logo.webp",
+  "logoImageAlt": "Metabo logo",
+  "logoSourceUrl": "https://de.metabo.com/de/info/aktuell/media/logos/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/metabo/ownership-map.webp",
+      "alt": "Koki Holdings brand map separating Metabo, HiKOKI and Metabo HPT",
+      "caption": "Koki Holdings owns Metabo, HiKOKI and Metabo HPT, but the three brand routes and battery ecosystems are not interchangeable."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/metabo/evidence-boundary.webp",
+      "alt": "Metabo parent, operating company and regional entity boundary",
+      "caption": "Metabowerke GmbH, Koki Holdings and each regional subsidiary or dealer carry different legal and commercial roles."
+    }
+  ],
+  "ownership": {
+    "summary": "Koki Holdings owns Metabo. Koki Holdings' corporate history records the 2016 acquisition, while Metabo's official imprint identifies Metabowerke GmbH as the operating company in Nürtingen. Metabo remains distinct from HiKOKI and the Metabo HPT North American brand route.",
+    "parentCompany": "Koki Holdings Co., Ltd."
+  },
+  "leadership": [
+    {
+      "name": "Pieter Vullinghs",
+      "role": "Chief Executive Officer of Metabowerke GmbH",
+      "context": "Metabo's reviewed official imprint names Pieter Vullinghs as managing director and CEO."
+    },
+    {
+      "name": "Albrecht Schnizler and Julius Closs",
+      "role": "Company founders",
+      "context": "Metabo's official history records their foundation of Schnizler GmbH on 19 February 1924."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "18V cordless tools and CAS",
+      "positioning": "Metabo's 18V platform anchors cordless professional tools and the cross-brand Cordless Alliance System.",
+      "buyerRelevance": "Confirm the exact CAS-compatible tool, battery generation, charger, destination market and warranty terms."
+    },
+    {
+      "name": "Metalworking and angle grinders",
+      "positioning": "Metabo positions corded and cordless grinders, cutting and metalworking tools as a core professional specialization.",
+      "buyerRelevance": "Match disc size, guard, switch, voltage, dust protection and local safety certification to the application."
+    },
+    {
+      "name": "Construction, renovation and woodworking tools",
+      "positioning": "Drilling, fastening, sawing, sanding, extraction and site equipment extend the brand beyond metalworking.",
+      "buyerRelevance": "Do not transfer factory, origin or service evidence from a named grinder to an unrelated product family."
+    },
+    {
+      "name": "Compressed-air tools and accessories",
+      "positioning": "Metabo's official portfolio also includes pneumatic tools, consumables and system accessories.",
+      "buyerRelevance": "Verify local conformity, fittings, consumable compatibility and the responsible regional service entity."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Metabo states that group-wide research and development is headquartered in Nürtingen, where it manufactures steel components and motors, molds plastic parts and processes aluminum components for many different machines.",
+      "scope": "Metabo's Nürtingen operations and the product range described on its Made by Metabo page",
+      "buyerCheck": "Use the exact product label, declaration and origin documents before assigning a specific model to Nürtingen."
+    },
+    {
+      "evidence": "Metabo says its tools are manufactured across the Nürtingen plant, Koki Holdings' international production network and production partners.",
+      "scope": "Brand-level manufacturing network disclosure",
+      "buyerCheck": "Do not infer one factory or country from the Metabo brand; verify the model, production date and destination-market paperwork."
+    },
+    {
+      "evidence": "Metabo states that it develops Marathon motors in-house and manufactures all motors for the angle grinders it builds in Nürtingen itself.",
+      "scope": "Motors for angle grinders that Metabo states are built in Nürtingen",
+      "buyerCheck": "Confirm that the ordered grinder family and production record fall inside this stated Nürtingen scope."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Metabo describes a worldwide branch and retailer network developed for country-specific voltages, standards, work practices and customer needs.",
+      "scope": "Global sales-network disclosure",
+      "buyerCheck": "Use the destination-country site or authorized distributor and verify voltage, certification, importer and service coverage."
+    },
+    {
+      "evidence": "The official subsidiary list names Metabo and Koki entities across multiple countries, with different company names by market.",
+      "scope": "Published regional subsidiary addresses",
+      "buyerCheck": "Identify the contracting seller and local warranty or service entity on the quotation and invoice."
+    },
+    {
+      "evidence": "Koki Group announced that Metabo North America would transition to Metabo HPT in phases while maintaining support for the installed Metabo base.",
+      "scope": "North American transition announced in November 2025",
+      "buyerCheck": "For North America, verify the brand at sale, battery system, parts route and warranty treatment for legacy Metabo products."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Metabo differentiates through professional metalworking depth, named Nürtingen engineering and manufacturing evidence, and the CAS cross-brand battery alliance. Buyer risk concentrates in regional brand transition, platform compatibility and overgeneralizing named German production evidence to the entire catalogue.",
+    "competitorSlugs": ["bosch-power-tools", "festool", "makita", "milwaukee"]
+  },
+  "developments": [
+    {
+      "date": "2025-11",
+      "title": "North American Metabo transition to Metabo HPT announced",
+      "summary": "Koki Group announced a phased North American brand transition while describing continuity for installed Metabo products.",
+      "sourceIds": ["metabo-na-transition"]
+    },
+    {
+      "date": "2016-03",
+      "title": "Koki Holdings predecessor completes Metabo acquisition",
+      "summary": "Hitachi Koki, now Koki Holdings, completed the acquisition and stated that Metabo would remain a distinct brand and business.",
+      "sourceIds": ["koki-metabo-acquisition", "koki-history"]
+    },
+    {
+      "date": "1924-02",
+      "title": "Schnizler GmbH is founded in Nürtingen",
+      "summary": "Metabo's official history records the company foundation by Albrecht Schnizler and Julius Closs.",
+      "sourceIds": ["metabo-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "metabo-imprint",
+      "title": "Metabo Imprint",
+      "publisher": "Metabo",
+      "url": "https://www.metabo.com/com/en/imprint",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "id": "koki-history",
+      "title": "Corporate History",
+      "publisher": "Koki Holdings",
+      "url": "https://www.koki-holdings.com/corporate/history.html",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "id": "koki-metabo-acquisition",
+      "title": "Acquisition of Metabo AG by Hitachi Koki Completed",
+      "publisher": "Hitachi Koki / Metabo",
+      "url": "https://www.koki-holdings.com/ir/newsrelease/2016/20160301.pdf",
+      "publishedAt": "2016-03-01",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "id": "metabo-made",
+      "title": "Made by Metabo",
+      "publisher": "Metabo",
+      "url": "https://www.metabo.com/com/en/company/about-metabo/made-by-metabo",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "id": "metabo-history",
+      "title": "Metabo History",
+      "publisher": "Metabo",
+      "url": "https://www.metabo.com/com/en/company/about-metabo/history",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "id": "metabo-cas",
+      "title": "Cordless Alliance System",
+      "publisher": "Metabo",
+      "url": "https://www.metabo.com/com/en/solutions/cas-cordless-alliance-system",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "id": "metabo-2000w-press",
+      "title": "New Metabo 2000-Watt Brushless Angle Grinder Series",
+      "publisher": "Metabo",
+      "url": "https://www.metabo.com/com/en/presse/neue-2000-watt-brushless-winkelschleifer-serie",
+      "publishedAt": "2024-09",
+      "accessedAt": "2026-08-05"
+    },
+    {
+      "id": "metabo-na-transition",
+      "title": "Metabo North America to Become Metabo HPT",
+      "publisher": "Metabo HPT / Koki Group",
+      "url": "https://www.metabo-hpt.com/about/news/article/2025/11/17/metabo-north-america-to-become-metabo-hpt--unified-brand-strengthens-global-power-tool-portfolio",
+      "publishedAt": "2025-11-17",
+      "accessedAt": "2026-08-05"
+    }
+  ],
+  "publishedAt": "2026-08-05T23:33:00+08:00",
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:33:00+08:00"
+}

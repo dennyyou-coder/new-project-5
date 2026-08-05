@@ -1,5 +1,5 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "bosch-power-tools",
   "name": "Bosch Power Tools",
   "aliases": ["Bosch Professional", "Bosch DIY", "Bosch Tools"],
@@ -12,14 +12,14 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Bosch Power Tools, Robert Bosch GmbH, Robert Bosch Power Tools GmbH or BSH. Bosch Power Tools must not be conflated with the separate Bosch-branded home-appliance business operated by BSH.",
   "headquarters": "Leinfelden-Echterdingen, Germany (Power Tools division)",
   "founded": "1932 (Bosch Power Tools history); current division of the Bosch Group",
-  "heroImage": "/images/brands/bosch-power-tools/hero.webp",
-  "heroImageAlt": "Bosch professional cordless angle grinder in metalworking use",
+  "heroImage": "/images/brands/bosch-power-tools/hero-professional-drilling-dust-control.webp",
+  "heroImageAlt": "Bosch Professional drill and dust-extraction system used on a brick wall",
   "logoImage": "/images/brands/bosch-power-tools/logo.webp",
   "logoImageAlt": "Bosch Power Tools logo",
   "logoSourceUrl": "https://www.bosch-pt.com/ww/en/company/about-us/",
   "contentVisuals": [
-    {"placement":"portfolio","src":"/images/insights/bosch-cordless-dust-collector-image-001.jpg","alt":"Bosch cordless dust-collection equipment in use","caption":"Bosch tool and dust-extraction selection depends on the exact regional tool, extractor and compliance pairing."},
-    {"placement":"operations","src":"/images/insights/bosch-cordless-dust-collector-image-002.jpg","alt":"Bosch power-tool workflow and dust-management reference","caption":"A power-tool platform does not establish a single factory, importer or warranty entity for all Bosch-branded SKUs."}
+    {"placement":"ownership","src":"/images/brands/bosch-power-tools/ownership-map.webp","alt":"Bosch Group, Bosch Power Tools and BSH home-appliance boundary map","caption":"Bosch Power Tools is a Bosch Group division and is separate from the Bosch-branded home-appliance business operated by BSH."},
+    {"placement":"operations","src":"/images/brands/bosch-power-tools/evidence-boundary.webp","alt":"Bosch Power Tools entity and buyer-verification boundary","caption":"Division ownership, regional sales entities and model-level manufacturer, importer and guarantor evidence answer different questions."}
   ],
   "ownership": {"summary":"Bosch Power Tools is a business division of the Bosch Group. The Bosch Power Tools corporate profile identifies the division as part of the group and lists Bosch and Dremel among its brands. It is distinct from BSH's Bosch-branded home-appliance operation.","parentCompany":"Robert Bosch GmbH (Bosch Group)"},
   "leadership": [{"name":"Michael Budde","role":"President of Bosch Power Tools","context":"Bosch Power Tools' corporate profile identifies Michael Budde as division president in the reviewed 2026 material."}],
@@ -47,9 +47,10 @@
   "sources": [
     {"id":"bosch-pt-about","title":"About Bosch Power Tools","publisher":"Bosch Power Tools","url":"https://www.bosch-pt.com/ww/en/company/about-us/","accessedAt":"2026-08-01"},
     {"id":"bosch-guarantee","title":"Bosch Professional Guarantee Terms","publisher":"Bosch Power Tools","url":"https://www.bosch-pt.com/ptlegalpages/gb/rbgb/en/pro360/guarantee","publishedAt":"2026-01-01","accessedAt":"2026-08-01"},
-    {"id":"bosch-us-warranty","title":"Product Warranty","publisher":"Bosch Tools","url":"https://www.boschtools.com/us/en/service/product-warranty/","accessedAt":"2026-08-01"}
+    {"id":"bosch-us-warranty","title":"Product Warranty","publisher":"Bosch Tools","url":"https://www.boschtools.com/us/en/service/product-warranty/","accessedAt":"2026-08-01"},
+    {"id":"bosch-gde-16","title":"PRO GDE 16 Cyl","publisher":"Bosch Professional","url":"https://www.bosch-professional.com/ro/ro/products/gde-16-cyl-1600A001FJ","accessedAt":"2026-08-05"}
   ],
   "publishedAt": "2026-08-01T12:00:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:00:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:24:00+08:00"
 }

@@ -1,5 +1,5 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "festool",
   "name": "Festool",
   "aliases": ["Festool Power Tools", "Festool SYSTEM"],
@@ -12,14 +12,14 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Festool or TTS Tooltechnic Systems. Named sites and group disclosures do not establish the factory or warranty entity for every SKU and destination market.",
   "headquarters": "Wendlingen am Neckar, Germany",
   "founded": "1925 brand heritage; current Festool GmbH within TTS Tooltechnic Systems",
-  "heroImage": "/images/brands/festool/hero.webp",
-  "heroImageAlt": "Festool professional power tools and dust extractor system",
+  "heroImage": "/images/brands/festool/hero-dtsc-200-sander.webp",
+  "heroImageAlt": "Festool DTSC 200 cordless delta sander",
   "logoImage": "/images/brands/festool/logo.webp",
   "logoImageAlt": "Festool logo",
   "logoSourceUrl": "https://www.festool.com/company/facts-and-figures",
   "contentVisuals": [
-    {"placement":"portfolio","src":"/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg","alt":"Professional cordless and dust-control workflow","caption":"Festool's premium differentiation relies on connected work processes; exact accessory and extraction compatibility still needs SKU-level confirmation."},
-    {"placement":"operations","src":"/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp","alt":"European professional tool industry visual","caption":"European product development and named sites are useful context, but do not substitute for model-specific factory evidence."}
+    {"placement":"ownership","src":"/images/brands/festool/ownership-map.webp","alt":"TTS Tooltechnic Systems and Festool ownership map","caption":"Festool is a TTS Tooltechnic Systems brand operated through Festool group entities; parent, brand and service roles remain distinct."},
+    {"placement":"operations","src":"/images/brands/festool/evidence-boundary.webp","alt":"Festool parent, operating brand and dealer-service boundary","caption":"Territory-specific dealers and service routes must be verified separately from group ownership and product-origin evidence."}
   ],
   "ownership": {"summary":"Festool and Tanos are brands of the family-run TTS Tooltechnic Systems SE & Co. KG, according to Festool's official facts-and-figures page. Festool GmbH is a group operating company; the brand should not be treated as a separate parent group.","parentCompany":"TTS Tooltechnic Systems SE & Co. KG"},
   "leadership": [],
@@ -48,9 +48,10 @@
     {"id":"festool-facts","title":"Facts and Figures","publisher":"Festool","url":"https://www.festool.com/company/facts-and-figures","accessedAt":"2026-08-01"},
     {"id":"festool-warranty","title":"Warranty Terms and Conditions","publisher":"Festool","url":"https://www.festool.com/service/warranty-terms-and-conditions","accessedAt":"2026-08-01"},
     {"id":"tts-suppliers","title":"Supplier Information","publisher":"Festool / TTS Tooltechnic Systems","url":"https://www.festool.com/suppliers","publishedAt":"2026-01","accessedAt":"2026-08-01"},
-    {"id":"festool-history","title":"Company History","publisher":"Festool","url":"https://www.festool.com/company/company-history","accessedAt":"2026-08-01"}
+    {"id":"festool-history","title":"Company History","publisher":"Festool","url":"https://www.festool.com/company/company-history","accessedAt":"2026-08-01"},
+    {"id":"festool-dtsc-press","title":"DTSC 200 Press Image","publisher":"Festool","url":"https://www.festool.com/-/media/tts/fcp/press/2025/dtsc-200/festool-dtsc200-cover-1500x1000px.webp","accessedAt":"2026-08-05"}
   ],
   "publishedAt": "2026-08-01T12:25:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:25:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:29:00+08:00"
 }

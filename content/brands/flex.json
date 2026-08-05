@@ -1,10 +1,9 @@
 {
-  "status": "draft",
+  "status": "published",
   "slug": "flex",
   "name": "FLEX",
   "aliases": ["FLEX Power Tools", "FLEX 24V"],
-  "legalName": "Chervon North America, Inc. (reviewed U.S./Canada warranty entity)",
-  "legalEntityNote": "FLEX became part of Chervon in 2013, according to Chervon's official brand information. Chervon North America, Inc. is the warrantor under the reviewed U.S./Canada policy; the brand, parent, product manufacturer, authorized dealer and warranty party are not interchangeable roles.",
+  "legalEntityNote": "FLEX became part of Chervon in 2013, according to Chervon's official brand information. Chervon North America, Inc. is the reviewed U.S./Canada warrantor, not a universal global brand legal entity; the brand, parent, product manufacturer, authorized dealer and warranty party are not interchangeable roles.",
   "officialWebsite": "https://www.flexpowertools.com/",
   "headline": "FLEX ownership, 24V professional system and warranty-channel checks",
   "description": "A source-backed profile of FLEX within Chervon, its professional 24V system, North American warranty boundary and buyer checks.",
@@ -12,14 +11,14 @@
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with FLEX or Chervon. Chervon ownership and a regional warranty policy do not identify the factory, seller or warranty entity for every global FLEX SKU.",
   "headquarters": "Steinheim, Germany (FLEX brand heritage); regional operations vary",
   "founded": "1922; joined Chervon in 2013",
-  "heroImage": "/images/brands/flex/hero.webp",
+  "heroImage": "/images/brands/flex/hero-24v-cordless-tools.webp",
   "heroImageAlt": "FLEX cordless circular saw and 24V professional tools",
   "logoImage": "/images/brands/flex/logo.webp",
   "logoImageAlt": "FLEX logo",
   "logoSourceUrl": "https://www.flexpowertools.com/",
   "contentVisuals": [
-    {"placement":"ownership","src":"/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp","alt":"European professional tool-brand industry visual","caption":"FLEX has German brand heritage and Chervon ownership; these are distinct from the responsible seller, service center or factory for a given product."},
-    {"placement":"portfolio","src":"/images/insights/global-power-tool-brands-reshaping-portfolios-image-01.jpg","alt":"Professional cordless tool and battery-system assortment","caption":"FLEX 24V registrations can extend eligible warranty coverage, but eligibility must be confirmed for the particular product and market."}
+    {"placement":"ownership","src":"/images/brands/flex/ownership-map.webp","alt":"FLEX, Chervon and Lowe's relationship map","caption":"Chervon owns FLEX, while Lowe's is a major retail channel in the reviewed U.S. market rather than the brand owner."},
+    {"placement":"operations","src":"/images/brands/flex/evidence-boundary.webp","alt":"FLEX parent, brand and regional warranty boundary","caption":"German brand heritage, Chervon ownership and regional warranty administration are separate evidence layers."}
   ],
   "ownership": {"summary":"FLEX is a Chervon Group brand. Chervon's official portfolio says FLEX joined the group in 2013; that acquisition statement does not merge FLEX with SKIL, EGO or any other Chervon brand.","parentCompany":"Chervon Group"},
   "leadership": [],
@@ -50,6 +49,6 @@
     {"id":"flex-home","title":"FLEX Power Tools","publisher":"FLEX","url":"https://www.flexpowertools.com/","accessedAt":"2026-08-01"}
   ],
   "publishedAt": "2026-08-01T12:35:00+08:00",
-  "lastVerified": "2026-08-01",
-  "lastModified": "2026-08-01T12:35:00+08:00"
+  "lastVerified": "2026-08-05",
+  "lastModified": "2026-08-05T23:31:00+08:00"
 }
