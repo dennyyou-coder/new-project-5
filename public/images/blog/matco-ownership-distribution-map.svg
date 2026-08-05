@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img">
+  <title>Matco ownership and mobile distribution</title>
+  <rect width="1600" height="900" fill="#191d22"/>
+  <g font-family="Arial,sans-serif">
+    <text x="100" y="115" fill="white" font-size="54" font-weight="700">Public parent, mobile route to technicians</text>
+    <text x="100" y="168" fill="#c7ccd0" font-size="27">Ownership and distribution are separate roles</text>
+    <rect x="100" y="270" width="420" height="280" rx="38" fill="#f5f5f5"/>
+    <text x="150" y="345" fill="#9f2731" font-size="24" font-weight="700">PUBLIC PARENT</text>
+    <text x="150" y="425" fill="#1c252b" font-size="48" font-weight="700">Vontier</text>
+    <text x="150" y="480" fill="#5e686e" font-size="26">NYSE: VNT</text>
+    <path d="M520 410h170" stroke="#d64550" stroke-width="10"/>
+    <path d="M655 380l45 30-45 30" fill="none" stroke="#d64550" stroke-width="10"/>
+    <rect x="700" y="240" width="430" height="340" rx="38" fill="white"/>
+    <text x="750" y="315" fill="#9f2731" font-size="24" font-weight="700">WHOLLY OWNED SUBSIDIARY</text>
+    <text x="750" y="395" fill="#1c252b" font-size="48" font-weight="700">Matco Tools</text>
+    <text x="750" y="450" fill="#5e686e" font-size="26">Repair Solutions</text>
+    <path d="M1130 410h120" stroke="#d64550" stroke-width="10"/>
+    <path d="M1215 380l45 30-45 30" fill="none" stroke="#d64550" stroke-width="10"/>
+    <rect x="1260" y="270" width="240" height="280" rx="38" fill="#e4e8ea"/>
+    <text x="1300" y="345" fill="#9f2731" font-size="22" font-weight="700">MOBILE STORES</text>
+    <text x="1295" y="415" fill="#1c252b" font-size="28" font-weight="700">Independent</text>
+    <text x="1295" y="458" fill="#1c252b" font-size="28" font-weight="700">franchisees</text>
+    <rect x="260" y="690" width="1080" height="95" rx="28" fill="#4a2025" stroke="#a83f49" stroke-width="3"/>
+    <text x="800" y="750" text-anchor="middle" fill="white" font-size="29" font-weight="700">A distributor owns the truck business, not the Matco brand.</text>
+  </g>
+</svg>

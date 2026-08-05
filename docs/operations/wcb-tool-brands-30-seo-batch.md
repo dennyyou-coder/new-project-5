@@ -49,9 +49,9 @@ This website-project record is the operational source of truth for the first too
 | 22 | Ozito | `who-makes-ozito-tools-einhell-bunnings` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-ozito-tools-einhell-bunnings; production verified on 2026-08-05 |
 | 23 | Erbauer | `who-makes-erbauer-tools-kingfisher` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-erbauer-tools-kingfisher; production verified on 2026-08-05 |
 | 24 | Evolution Power Tools | `who-owns-evolution-power-tools` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-evolution-power-tools; high-sensitivity ownership refreshed and production verified on 2026-08-05 |
-| 25 | Triton Tools | `who-owns-triton-tools-timbecon` | `approved_for_publication` | Current Timbecon ownership replaces stale Kreg framing; quality gate 5 triggers after publication; high time-sensitivity |
-| 26 | FEIN | `who-owns-fein-tools-company-manufacturing` | `queued` |  |
-| 27 | Matco Tools | `who-owns-matco-tools-vontier` | `queued` |  |
+| 25 | Triton Tools | `who-owns-triton-tools-timbecon` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-triton-tools-timbecon; Timbecon ownership refreshed; production verified and quality gate 5 passed on 2026-08-05 |
+| 26 | FEIN | `who-owns-fein-tools-company-manufacturing` | `approved_for_publication` | Local release gate passed on 2026-08-05 |
+| 27 | Matco Tools | `who-owns-matco-tools-vontier` | `approved_for_publication` | Local release gate passed on 2026-08-05 |
 | 28 | Mac Tools | `who-owns-mac-tools-stanley-black-decker` | `queued` |  |
 | 29 | Chervon | `who-owns-chervon-ego-flex-skil` | `queued` |  |
 | 30 | AEG Power Tools | `who-owns-aeg-power-tools-tti-license` | `queued` | Quality gate 6 triggers after publication; high time-sensitivity |
@@ -75,6 +75,30 @@ Completed on 2026-08-05.
 - The local production route exposed the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and six internal article links.
 - Desktop and 390px mobile checks found no horizontal overflow. The only local browser error was the expected unavailable `/_vercel/insights/script.js`.
 - Publish Triton before FEIN and Matco, then run quality gate 5 across articles 21–25.
+
+## Quality gate 5 — articles 21–25
+
+Completed on 2026-08-05 after Triton reached production.
+
+- Masterforce, Ozito, Erbauer, Evolution Power Tools and Triton all returned the expected production title, H1, meta description, canonical and BlogPosting JSON-LD.
+- All fifteen article visuals loaded at 1600×900. Each page retained three or more internal article links.
+- Desktop and 390px mobile checks found no horizontal overflow; article pages reported no console errors.
+- The Ownership Guides page includes Triton, and `sitemap.xml` includes all five slugs. The XML view alone requested the existing missing `/favicon.ico`, which does not affect article rendering or indexing.
+- Local exact-intent review found one canonical ownership/supplier article for each target. Ozito's mentions in the Einhell guide remain distinct parent-company context.
+- Current ownership and manufacturing boundaries remain supported. Triton's stale Kreg framing was replaced with Timbecon ownership before publication.
+- Gate result: passed. FEIN and Matco may proceed.
+
+## FEIN and Matco local release gate — articles 26–27
+
+Completed on 2026-08-05 after quality gate 5 passed.
+
+- FEIN: exact fixed title and slug, independent family-company status, more-than-90% in-house manufacturing statement, German/Asia/North America production boundary, 1967 oscillating-tool lineage, AMPShare partnership and registered warranty boundary verified.
+- Matco: exact fixed title and slug, wholly owned Vontier subsidiary status, Repair Solutions placement, Jamestown tool-storage manufacturing, product-specific imported origins, independent mobile-franchise model and category-specific warranty boundary verified.
+- Each article has one original unbranded 1600×900 WebP cover and two deterministic 1600×900 SVG fact maps. Visual review corrected one Matco label edge and found no unsupported logo or universal-factory implication.
+- Exact-title, slug and ownership-intent searches found no duplicate WCB article.
+- Content classification, 14 insight tests, 82 brand tests and a 476-page production build passed.
+- Both local production routes exposed the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 visuals and six internal article links.
+- Desktop and 390px mobile checks found no horizontal overflow. The only local browser error was the expected unavailable `/_vercel/insights/script.js`.
 
 ## Publishing day 7 local gate — articles 19–20
 
