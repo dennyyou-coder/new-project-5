@@ -45,7 +45,7 @@ This website-project record is the operational source of truth for the first too
 | 18 | HART Tools | `who-makes-hart-tools-walmart-tti-2026` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-hart-tools-walmart-tti-2026; high-sensitivity boundary and production verified on 2026-08-04 |
 | 19 | Bauer | `who-makes-bauer-tools-harbor-freight` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-bauer-tools-harbor-freight; production verified on 2026-08-05 |
 | 20 | Hercules | `who-makes-hercules-tools-harbor-freight` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-hercules-tools-harbor-freight; production verification and quality gate 4 passed on 2026-08-05 |
-| 21 | Masterforce | `who-makes-masterforce-tools-menards` | `local_verified` | Quality gate 4 passed; cleared for release |
+| 21 | Masterforce | `who-makes-masterforce-tools-menards` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-masterforce-tools-menards; production verified on 2026-08-05 |
 | 22 | Ozito | `who-makes-ozito-tools-einhell-bunnings` | `queued` |  |
 | 23 | Erbauer | `who-makes-erbauer-tools-kingfisher` | `queued` |  |
 | 24 | Evolution Power Tools | `who-owns-evolution-power-tools` | `queued` | High time-sensitivity |
@@ -58,7 +58,7 @@ This website-project record is the operational source of truth for the first too
 
 ## Current checkpoint
 
-- Articles 1–20 are `published_verified`.
+- Articles 1–21 are `published_verified`.
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
@@ -98,6 +98,9 @@ Completed on 2026-08-05 and cleared for release after quality gate 4.
 - Exact-title, exact-slug and ownership/supplier-intent checks found no duplicate WCB article.
 - Content classification, 14 insight tests, 82 brand tests and a 470-page production build passed.
 - Local production verification found the expected title, H1, description, canonical, BlogPosting JSON-LD, three 1600×900 visuals, three internal links and no desktop or mobile overflow.
+- PR #21 was squash-merged at `e40a90f913538f8baaeb5f8bb26647ef749b7e90`; production deployment `dpl_F3aA7x6qBkSZF6aeWgYLQSoV2hC3` reached READY.
+- The production route returned 200 with the expected title, H1, description, canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and three internal links.
+- Production desktop and 390px mobile checks found no horizontal overflow. `/guides/ownership` and `sitemap.xml` include the Masterforce slug.
 
 ## Next-batch local gate — articles 16–18
 
