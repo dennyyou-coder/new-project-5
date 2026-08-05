@@ -46,9 +46,9 @@ This website-project record is the operational source of truth for the first too
 | 19 | Bauer | `who-makes-bauer-tools-harbor-freight` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-bauer-tools-harbor-freight; production verified on 2026-08-05 |
 | 20 | Hercules | `who-makes-hercules-tools-harbor-freight` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-hercules-tools-harbor-freight; production verification and quality gate 4 passed on 2026-08-05 |
 | 21 | Masterforce | `who-makes-masterforce-tools-menards` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-masterforce-tools-menards; production verified on 2026-08-05 |
-| 22 | Ozito | `who-makes-ozito-tools-einhell-bunnings` | `local_verified` | Prepared and locally verified on 2026-08-05 |
-| 23 | Erbauer | `who-makes-erbauer-tools-kingfisher` | `local_verified` | Prepared and locally verified on 2026-08-05 |
-| 24 | Evolution Power Tools | `who-owns-evolution-power-tools` | `local_verified` | High time-sensitivity; current UK control checked and locally verified on 2026-08-05 |
+| 22 | Ozito | `who-makes-ozito-tools-einhell-bunnings` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-ozito-tools-einhell-bunnings; production verified on 2026-08-05 |
+| 23 | Erbauer | `who-makes-erbauer-tools-kingfisher` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-erbauer-tools-kingfisher; production verified on 2026-08-05 |
+| 24 | Evolution Power Tools | `who-owns-evolution-power-tools` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-evolution-power-tools; high-sensitivity ownership refreshed and production verified on 2026-08-05 |
 | 25 | Triton Tools | `who-owns-triton-tools-kreg` | `queued` | Quality gate 5 triggers after publication; high time-sensitivity |
 | 26 | FEIN | `who-owns-fein-tools-company-manufacturing` | `queued` |  |
 | 27 | Matco Tools | `who-owns-matco-tools-vontier` | `queued` |  |
@@ -102,9 +102,9 @@ Completed on 2026-08-05 and cleared for release after quality gate 4.
 - The production route returned 200 with the expected title, H1, description, canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and three internal links.
 - Production desktop and 390px mobile checks found no horizontal overflow. `/guides/ownership` and `sitemap.xml` include the Masterforce slug.
 
-## Next-batch local gate — articles 22–24
+## Articles 22–24 local and production gate
 
-Completed on 2026-08-05 and awaiting explicit deployment approval.
+Completed and published on 2026-08-05.
 
 - Ozito: exact fixed title and slug, Einhell's 2013 acquisition, current Einhell Australia operator, Bunnings retail/returns role, model-specific manufacturing and regional PXC compatibility boundaries verified.
 - Erbauer: exact fixed title and slug, Kingfisher own-exclusive-brand control, global vendor sourcing, Kingfisher banner channels, EXT voltage families and model-specific warranty boundaries verified.
@@ -114,7 +114,11 @@ Completed on 2026-08-05 and awaiting explicit deployment approval.
 - Content classification, 14 insight tests, 82 brand tests and a 473-page production build passed.
 - All three local production routes returned the expected title, H1, description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and six or more internal article links.
 - Desktop and 390px mobile checks found no horizontal overflow. The only local browser error was the expected unavailable `/_vercel/insights/script.js`.
-- Release remains local-only until Denny gives explicit deployment approval. Quality gate 5 does not trigger until article 25 is published.
+- PR #23 Preview deployment reached Ready. The external Preview URL required Vercel authentication, so the successful Vercel build and the complete local production-build browser pass were used before merge without weakening Preview protection.
+- PR #23 was squash-merged at `3b84164fc950da3ff5e5ce2260d177352f0b0227`; Vercel production deployment reference `97ZDZcPYbimLWfvxm4BcsdRdPkHM` reached success.
+- All three public article routes returned the expected title, H1, description, production canonical and BlogPosting JSON-LD. Each loaded three 1600×900 visuals and six or more internal article links.
+- Production desktop and 390px mobile checks found no horizontal overflow or console errors. `/guides/ownership` and `sitemap.xml` include all three slugs.
+- Quality gate 5 does not trigger until article 25 is published.
 
 ## Next-batch local gate — articles 16–18
 
