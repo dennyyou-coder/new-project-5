@@ -7,7 +7,7 @@ This file is the operational source of truth for the home-appliance ownership an
 - Research and batch plan approved by Denny on 2026-08-05.
 - Batch 1 publication, visual generation and normal GitHub/Vercel release authorized on 2026-08-05.
 - No per-article confirmation is required for the unchanged approved scope.
-- Maximum: three new production articles per natural day (Asia/Shanghai), including other WCB batches.
+- Daily publishing cap: cancelled by Denny on 2026-08-05. Articles are released by verified content batch.
 - Pause only for a material title, slug, factual-boundary, asset, permission or deployment problem.
 - Article bodies, visuals and release evidence remain in this website project.
 
@@ -25,8 +25,8 @@ This file is the operational source of truth for the home-appliance ownership an
 | No. | Brand/topic | Slug | Batch | Status | Production URL / note |
 |---:|---|---|---:|---|---|
 | 1 | Samsung | `who-makes-samsung-appliances-manufacturing-bespoke-ai` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
-| 2 | LG | `who-makes-lg-appliances-manufacturing-network` | 1 | `researching` |  |
-| 3 | Haier | `who-owns-haier-appliances-brand-portfolio` | 1 | `researching` |  |
+| 2 | LG | `who-makes-lg-appliances-manufacturing-network` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
+| 3 | Haier | `who-owns-haier-appliances-brand-portfolio` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
 | 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `planned` |  |
 | 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `planned` |  |
 | 6 | Midea | `who-owns-midea-appliances-brand-portfolio` | 2 | `planned` |  |
@@ -47,7 +47,7 @@ This file is the operational source of truth for the home-appliance ownership an
 
 - Baseline on `origin/main` commit `7061097`: content classification passed; 14 insight tests passed; 82 brand tests passed.
 - Exact local slugs were absent before writing. Official-source review is in progress.
-- FEIN and Matco were already published on 2026-08-05 at 20:58 and 21:02 Asia/Shanghai. The natural-day limit therefore leaves one production slot on 2026-08-05; the remaining Batch 1 pages must not be released before the next eligible day.
+- FEIN and Matco were already published on 2026-08-05. Denny subsequently cancelled the daily publishing cap, so Samsung, LG and Haier remain one release unit after all three pass verification.
 - Visual system: `industry_map`; each article uses one unbranded conceptual cover and two deterministic relationship/verification maps.
 
 ### Samsung local release gate
@@ -60,3 +60,25 @@ This file is the operational source of truth for the home-appliance ownership an
 - The local production route exposed the expected title, H1, description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and nine internal article links.
 - Desktop and 390px mobile checks found no horizontal overflow. The only local console error was the expected unavailable `/_vercel/insights/script.js`.
 - Independent Agent review was unavailable under the current execution constraint; a separate second-pass English, fact-boundary, image and release review returned `PASS`.
+
+### LG local release gate
+
+- The article contains 2,124 file words, five relevant internal article links and seven official LG sources, plus an at-a-glance table, procurement checklist, FAQ and final answer.
+- The responsibility boundary separates LG Electronics, the Home Appliance Solution Company, Changwon Smart Park, the Tennessee washing-machine plant, ThinQ services and model-level local responsibility.
+- One repaired unbranded 1600×900 WebP cover and two deterministic 1600×900 SVG maps passed visual review; matching raw PNGs are stored in the approved article asset folder.
+- The local production page exposed the expected title, H1, description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and five internal article links.
+- Desktop and 390px mobile checks found no horizontal overflow. The only console error was the expected unavailable local Vercel Insights script.
+
+### Haier local release gate
+
+- The article contains 2,146 file words, six relevant internal article links and eight official Haier or Haier Smart Home sources, plus an at-a-glance table, procurement checklist, FAQ and final answer.
+- The ownership boundary separates Haier Group from listed Haier Smart Home, then distinguishes GE Appliances' licensed trademark, Fisher & Paykel, Candy and the Hoover Europe/Americas regional split.
+- One repaired unbranded 1600×900 WebP cover and two deterministic 1600×900 SVG maps passed visual review; matching raw PNGs are stored in the approved article asset folder.
+- The local production page exposed the expected title, H1, description, production canonical, BlogPosting JSON-LD, three loaded 1600×900 article visuals and six internal article links.
+- Desktop and 390px mobile checks found no horizontal overflow. The only console error was the expected unavailable local Vercel Insights script.
+
+### Batch 1 local gate
+
+- Samsung, LG and Haier now form one verified release unit after the daily publishing cap was cancelled.
+- Content classification, 14 insight tests, 82 brand tests and a 479-page production build passed with all three articles present.
+- All three article routes use the established WCB ownership-guide structure and remain inside the approved content, image and operational-record scope.

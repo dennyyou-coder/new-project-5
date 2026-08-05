@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">LG home appliance business and manufacturing map</title>
+  <desc id="desc">LG Electronics operates the Home Appliance Solution Company, regional entities, manufacturing sites, ThinQ services and market-specific service responsibilities.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#151116"/><stop offset="1" stop-color="#321827"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".32"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#f37aa8"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g fill="none" stroke="#6c334e" stroke-width="1" opacity=".38"><path d="M0 180H1600M0 360H1600M0 540H1600M0 720H1600"/><path d="M320 0V900M640 0V900M960 0V900M1280 0V900"/></g>
+  <text x="100" y="105" fill="#fff7fa" font-family="Arial, sans-serif" font-size="48" font-weight="700">LG appliance responsibility map</text>
+  <text x="100" y="150" fill="#e1b4c7" font-family="Arial, sans-serif" font-size="24">Operating company, factory and local service remain distinct</text>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="555" y="200" width="490" height="120" rx="24" fill="#661d3c" stroke="#f37aa8" stroke-width="3"/>
+    <text x="800" y="253" text-anchor="middle" fill="#fff" font-size="35" font-weight="700">LG Electronics Inc.</text>
+    <text x="800" y="294" text-anchor="middle" fill="#ffd3e4" font-size="22">Listed operating company</text>
+    <path d="M800 320V382" stroke="#f37aa8" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="535" y="398" width="530" height="118" rx="22" fill="#472038" stroke="#db6895" stroke-width="2"/>
+    <text x="800" y="447" text-anchor="middle" fill="#fff" font-size="31" font-weight="700">Home Appliance Solution Company</text>
+    <text x="800" y="486" text-anchor="middle" fill="#f5c1d5" font-size="21">Major appliances · air solutions · floor care</text>
+    <path d="M535 457H420" stroke="#f37aa8" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M1065 457H1180" stroke="#f37aa8" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M800 516V608" stroke="#f37aa8" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="90" y="357" width="330" height="200" rx="22" fill="#2b1b28" stroke="#94506d" stroke-width="2"/>
+    <text x="255" y="405" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">Production network</text>
+    <text x="123" y="451" fill="#efbfd2" font-size="21">• Changwon Smart Park</text>
+    <text x="123" y="487" fill="#efbfd2" font-size="21">• Tennessee washer plant</text>
+    <text x="123" y="523" fill="#efbfd2" font-size="21">• Other regional sites</text>
+    <rect x="1180" y="357" width="330" height="200" rx="22" fill="#2b1b28" stroke="#94506d" stroke-width="2"/>
+    <text x="1345" y="405" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">Digital layer</text>
+    <text x="1215" y="451" fill="#efbfd2" font-size="21">• ThinQ and ThinQ AI</text>
+    <text x="1215" y="487" fill="#efbfd2" font-size="21">• Model-specific features</text>
+    <text x="1215" y="523" fill="#efbfd2" font-size="21">• Regional service terms</text>
+    <rect x="350" y="625" width="900" height="150" rx="24" fill="#291a27" stroke="#94506d" stroke-width="2"/>
+    <text x="800" y="674" text-anchor="middle" fill="#fff" font-size="29" font-weight="700">Local market responsibility</text>
+    <text x="800" y="720" text-anchor="middle" fill="#efbfd2" font-size="22">Seller · importer · conformity · warranty · parts and service</text>
+    <text x="800" y="756" text-anchor="middle" fill="#ff91b8" font-size="20">The product label identifies the exact route—not the master brand alone</text>
+  </g>
+  <text x="100" y="840" fill="#bd859d" font-family="Arial, sans-serif" font-size="20">Source basis: LG Electronics corporate, factory and product disclosures.</text>
+</svg>
