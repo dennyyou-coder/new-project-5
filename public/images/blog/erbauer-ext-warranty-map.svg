@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Erbauer EXT compatibility and warranty verification</title>
+  <desc id="desc">Buyers should match platform, voltage, model and warranty document rather than relying on the Erbauer name alone.</desc>
+  <rect width="1600" height="900" fill="#eef2f0"/>
+  <text x="100" y="105" fill="#172326" font-family="Arial, sans-serif" font-size="52" font-weight="700">EXT: four checks before you buy</text>
+  <text x="100" y="158" fill="#68777a" font-family="Arial, sans-serif" font-size="27">Brand name alone is not a compatibility or warranty specification</text>
+  <g font-family="Arial, sans-serif">
+    <path d="M280 430H1320" stroke="#8db6b1" stroke-width="10" stroke-linecap="round"/>
+    <g><circle cx="280" cy="430" r="108" fill="#163d3d"/><text x="280" y="420" text-anchor="middle" fill="#fff" font-size="30" font-weight="700">1. Platform</text><text x="280" y="461" text-anchor="middle" fill="#b8ddda" font-size="22">EXT marking</text></g>
+    <g><circle cx="625" cy="430" r="108" fill="#1e6f6a"/><text x="625" y="420" text-anchor="middle" fill="#fff" font-size="30" font-weight="700">2. Voltage</text><text x="625" y="461" text-anchor="middle" fill="#d8f1ef" font-size="22">12V / 18V / 36V</text></g>
+    <g><circle cx="970" cy="430" r="108" fill="#318f87"/><text x="970" y="420" text-anchor="middle" fill="#fff" font-size="30" font-weight="700">3. Model</text><text x="970" y="461" text-anchor="middle" fill="#edffff" font-size="22">pack code + count</text></g>
+    <g><circle cx="1320" cy="430" r="108" fill="#df775b"/><text x="1320" y="420" text-anchor="middle" fill="#fff" font-size="30" font-weight="700">4. Terms</text><text x="1320" y="461" text-anchor="middle" fill="#fff4ef" font-size="22">current manual</text></g>
+    <rect x="170" y="650" width="1260" height="130" rx="30" fill="#fff"/>
+    <text x="800" y="705" text-anchor="middle" fill="#172326" font-size="29" font-weight="700">Warranty varies by product and document</text>
+    <text x="800" y="750" text-anchor="middle" fill="#68777a" font-size="24">A current tool manual may say 3 years; batteries and chargers can differ.</text>
+  </g>
+</svg>

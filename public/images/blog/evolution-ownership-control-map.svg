@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Evolution Power Tools ownership and control</title>
+  <desc id="desc">Evolution Power Tools Ltd is an active UK private company controlled by Matthew Gavins with more than 50 percent but less than 75 percent of shares.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171819"/><stop offset="1" stop-color="#392318"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".3"/></filter></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="105" y="110" fill="#fff" font-family="Arial, sans-serif" font-size="53" font-weight="700">Private company, majority control</text>
+  <text x="105" y="164" fill="#d6c3b6" font-family="Arial, sans-serif" font-size="27">Current UK register — verify again before transaction-level use</text>
+  <g font-family="Arial, sans-serif" filter="url(#s)">
+    <rect x="110" y="265" width="560" height="350" rx="38" fill="#fff"/>
+    <text x="165" y="335" fill="#bd5525" font-size="24" font-weight="700">CONTROLLING SHAREHOLDER</text><text x="165" y="410" fill="#202224" font-size="43" font-weight="700">Matthew Gavins</text><text x="165" y="490" fill="#bd5525" font-size="66" font-weight="700">&gt;50% and &lt;75%</text><text x="165" y="550" fill="#697074" font-size="25">of shares recorded in PSC register</text>
+    <path d="M670 440h240" stroke="#ed762e" stroke-width="10" stroke-linecap="round"/><path d="M875 410l45 30-45 30" fill="none" stroke="#ed762e" stroke-width="10"/>
+    <rect x="920" y="265" width="570" height="350" rx="38" fill="#f0e4d9"/>
+    <text x="975" y="335" fill="#8d421f" font-size="24" font-weight="700">LEGAL COMPANY</text><text x="975" y="400" fill="#202224" font-size="39" font-weight="700">Evolution Power</text><text x="975" y="447" fill="#202224" font-size="39" font-weight="700">Tools Ltd</text><text x="975" y="500" fill="#52595c" font-size="27">Active UK private company</text><text x="975" y="542" fill="#52595c" font-size="27">Incorporated 30 Sep 1997</text><text x="975" y="584" fill="#52595c" font-size="27">Company no. 03442268</text>
+  </g>
+  <rect x="330" y="700" width="940" height="90" rx="28" fill="#522e20" stroke="#a85a31" stroke-width="3"/>
+  <text x="800" y="755" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="29" font-weight="700">Majority control does not mean 100% ownership.</text>
+</svg>
