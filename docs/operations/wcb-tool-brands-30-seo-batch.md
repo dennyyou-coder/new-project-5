@@ -43,9 +43,9 @@ This website-project record is the operational source of truth for the first too
 | 16 | Kress | `who-owns-kress-positec-robot-mowers` | `published_verified` | https://worldcleanbiz.com/blog/who-owns-kress-positec-robot-mowers; production verified on 2026-08-04 |
 | 17 | Parkside | `who-makes-parkside-tools-lidl-suppliers` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-parkside-tools-lidl-suppliers; production verified on 2026-08-04 |
 | 18 | HART Tools | `who-makes-hart-tools-walmart-tti-2026` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-hart-tools-walmart-tti-2026; high-sensitivity boundary and production verified on 2026-08-04 |
-| 19 | Bauer | `who-makes-bauer-tools-harbor-freight` | `local_verified` | Prepared in publishing-day-7 package |
-| 20 | Hercules | `who-makes-hercules-tools-harbor-freight` | `local_verified` | Quality gate 4 triggers after publication |
-| 21 | Masterforce | `who-makes-masterforce-tools-menards` | `queued` | Prepared locally; held until quality gate 4 passes |
+| 19 | Bauer | `who-makes-bauer-tools-harbor-freight` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-bauer-tools-harbor-freight; production verified on 2026-08-05 |
+| 20 | Hercules | `who-makes-hercules-tools-harbor-freight` | `published_verified` | https://worldcleanbiz.com/blog/who-makes-hercules-tools-harbor-freight; production verification and quality gate 4 passed on 2026-08-05 |
+| 21 | Masterforce | `who-makes-masterforce-tools-menards` | `local_verified` | Quality gate 4 passed; cleared for release |
 | 22 | Ozito | `who-makes-ozito-tools-einhell-bunnings` | `queued` |  |
 | 23 | Erbauer | `who-makes-erbauer-tools-kingfisher` | `queued` |  |
 | 24 | Evolution Power Tools | `who-owns-evolution-power-tools` | `queued` | High time-sensitivity |
@@ -58,14 +58,14 @@ This website-project record is the operational source of truth for the first too
 
 ## Current checkpoint
 
-- Articles 1–18 are `published_verified`.
+- Articles 1–20 are `published_verified`.
 - Denny clarified that CRAFTSMAN, Kobalt and SKIL count toward the previous publishing day. Articles 7–9 are `published_verified` as the current publishing day's three releases.
 - Quality gate 2 passed after FLEX publication; Porter-Cable and Dremel are cleared for release.
 - Existing unrelated local work in the main checkout must not be mixed into this batch.
 
 ## Publishing day 7 local gate — articles 19–20
 
-Completed on 2026-08-05 and held for deployment confirmation.
+Completed and published on 2026-08-05.
 
 - Bauer: exact fixed title and slug, Harbor Freight trademark ownership, exclusive channel, unpublished universal-OEM boundary, 65+ product 20V platform, 90-day product-page warranty and item 58671 recall boundaries verified.
 - Hercules: exact fixed title and slug, Harbor Freight trademark ownership, professional positioning, unpublished universal-OEM boundary, separate 12V/20V systems and the qualifying 20V brushless five-year warranty boundary verified.
@@ -74,7 +74,30 @@ Completed on 2026-08-05 and held for deployment confirmation.
 - Content classification, 14 insight tests, 82 brand tests and a 469-page production build passed.
 - Both local production routes returned 200 with the expected title, H1, meta description, production canonical, BlogPosting JSON-LD, three 1600×900 article visuals and three internal links.
 - Desktop and 390px mobile checks found no horizontal overflow or failed article resources. Body visuals render at 288×162 in the mobile article column.
-- Quality gate 4 must run immediately after article 20 reaches `published_verified`, before article 21 can be treated as a completed production release.
+- PR #20 was squash-merged at `70c5118701ef6a6c5895969a4bac2137dc7b1b08`; production deployment `dpl_FnYumhXMhMoYQrx7BG4dh15GUYc1` reached READY.
+- Both production routes returned 200 and passed title, H1, description, canonical, BlogPosting JSON-LD, image, internal-link, desktop and mobile checks. Ownership Guides and sitemap include both slugs.
+
+## Quality gate 4 — articles 16–20
+
+Completed on 2026-08-05 after Bauer and Hercules reached production.
+
+- Kress, Parkside, HART, Bauer and Hercules all returned 200 on production.
+- Every page exposed the expected H1, meta description, production canonical and BlogPosting JSON-LD.
+- All article visuals loaded at 1600×900: two each for Kress, Parkside and HART; three each for Bauer and Hercules.
+- Every page had at least three internal article links and no horizontal overflow at desktop or 390px mobile width.
+- Bauer and Hercules appeared in `/guides/ownership` and `sitemap.xml`.
+- No page console errors were found. The XML sitemap view alone requested an unrelated missing `/favicon.ico`, which does not affect article rendering or indexing.
+- Quality gate 4 passed, clearing article 21 for release.
+
+## Publishing day 7 Masterforce local gate — article 21
+
+Completed on 2026-08-05 and cleared for release after quality gate 4.
+
+- Exact fixed title and slug, Menard, Inc. trademark ownership, private-label supplier model, FlexPower/BOOST compatibility, category-specific warranty and the historical Great Star model-only boundary verified.
+- The article has one original unbranded 1600×900 WebP cover and two deterministic 1600×900 SVG fact maps.
+- Exact-title, exact-slug and ownership/supplier-intent checks found no duplicate WCB article.
+- Content classification, 14 insight tests, 82 brand tests and a 470-page production build passed.
+- Local production verification found the expected title, H1, description, canonical, BlogPosting JSON-LD, three 1600×900 visuals, three internal links and no desktop or mobile overflow.
 
 ## Next-batch local gate — articles 16–18
 
