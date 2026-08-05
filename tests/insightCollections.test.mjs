@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 import * as insightCollections from "../lib/insightCollections.ts";
 
@@ -293,4 +293,29 @@ test("fixed series hero cannot also fill the six-guide grid", () => {
     ]
   );
   assert.equal(guides.some((article) => article.slug === latestSeries?.slug), false);
+});
+
+test("published insight metadata never advertises a future publication time", async () => {
+  const contentDirectory = new URL("../content/insights/", import.meta.url);
+  const files = (await readdir(contentDirectory)).filter((file) => file.endsWith(".mdx"));
+  const latestAllowedTime = Date.now() + 5 * 60 * 1000;
+  const violations = [];
+
+  for (const file of files) {
+    const source = await readFile(new URL(file, contentDirectory), "utf8");
+    const frontmatter = source.match(/^---\n([\s\S]*?)\n---/)?.[1] || "";
+
+    if (/^hidden:\s*["']?true["']?\s*$/im.test(frontmatter)) continue;
+
+    for (const field of ["publishedAt", "sortDate"]) {
+      const value = frontmatter.match(new RegExp(`^${field}:\\s*["']?([^"'\\n]+)`, "m"))?.[1]?.trim();
+      const timestamp = value ? Date.parse(value) : Number.NaN;
+
+      if (Number.isFinite(timestamp) && timestamp > latestAllowedTime) {
+        violations.push(`${file}: ${field}=${value}`);
+      }
+    }
+  }
+
+  assert.deepEqual(violations, []);
 });
