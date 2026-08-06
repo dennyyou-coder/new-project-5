@@ -114,3 +114,16 @@ This file is the operational source of truth for the home-appliance ownership an
 - Content classification, 15 insight tests, 83 brand tests and a 495-page production build passed with the Midea route present.
 - The local route returned `200` with the expected title, H1, description, production canonical, BlogPosting JSON-LD and three loaded 1600×900 article visuals. The Brand Ownership guide and sitemap included the slug.
 - Desktop and 390px mobile checks found no horizontal overflow. The only local console error was the expected unavailable `/_vercel/insights/script.js`; the separate second-pass English, fact-boundary, image and release review passed.
+
+### Quality Gate 1 — first five articles
+
+- Samsung, LG, Haier, GE Appliances and Fisher & Paykel all returned `200` on their exact production URLs on 2026-08-06.
+- All five appeared in the Brand Ownership guide and production sitemap.
+- Desktop and 390px mobile verification confirmed the expected H1, title, canonical, BlogPosting and BreadcrumbList schema, three loaded 1600×900 visuals, relevant internal links and no horizontal overflow.
+- No production console errors or warnings were observed on the five article routes.
+
+### Midea factual-boundary correction
+
+- Production deployment `dpl_7FUiQsksSeYWuiZdyfYntrkh6V61` for commit `21e8522b2e38895ac2054e7f9875451461b9052f` reached `READY` after PR #32, but the published headline and body did not fully expose the approved Toshiba, Eureka and Teka transaction boundaries.
+- The same slug and existing visual package were retained. The correction adds Toshiba Lifestyle's 80.1% stake and 40-year brand license, the Eureka asset boundary, Teka's April 2025 closing and Teka Rus exclusion, plus the related primary sources.
+- No duplicate article or asset set is introduced; the superseded duplicate PR #33 remains unmerged.
