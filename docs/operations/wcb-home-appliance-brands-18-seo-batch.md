@@ -24,11 +24,11 @@ This file is the operational source of truth for the home-appliance ownership an
 
 | No. | Brand/topic | Slug | Batch | Status | Production URL / note |
 |---:|---|---|---:|---|---|
-| 1 | Samsung | `who-makes-samsung-appliances-manufacturing-bespoke-ai` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
-| 2 | LG | `who-makes-lg-appliances-manufacturing-network` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
-| 3 | Haier | `who-owns-haier-appliances-brand-portfolio` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
-| 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `planned` |  |
-| 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `planned` |  |
+| 1 | Samsung | `who-makes-samsung-appliances-manufacturing-bespoke-ai` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-makes-samsung-appliances-manufacturing-bespoke-ai |
+| 2 | LG | `who-makes-lg-appliances-manufacturing-network` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-makes-lg-appliances-manufacturing-network |
+| 3 | Haier | `who-owns-haier-appliances-brand-portfolio` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-haier-appliances-brand-portfolio |
+| 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `local_verified` | R2A local release gate passed on 2026-08-06 |
+| 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `local_verified` | R2A local release gate passed on 2026-08-06 |
 | 6 | Midea | `who-owns-midea-appliances-brand-portfolio` | 2 | `planned` |  |
 | 7 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | 3 | `planned` |  |
 | 8 | Whirlpool | `who-owns-whirlpool-appliances-beko-europe` | 3 | `planned` |  |
@@ -82,3 +82,19 @@ This file is the operational source of truth for the home-appliance ownership an
 - Samsung, LG and Haier now form one verified release unit after the daily publishing cap was cancelled.
 - Content classification, 14 insight tests, 82 brand tests and a 479-page production build passed with all three articles present.
 - All three article routes use the established WCB ownership-guide structure and remain inside the approved content, image and operational-record scope.
+
+### Batch 1 production verification
+
+- GitHub PR #28 merged to `main` as commit `f138c6288fbbfdaf79b47399fb6c30eae514b7cd`.
+- Samsung, LG and Haier returned `200` on their exact production URLs after the Git-linked Vercel deployment became `READY`.
+- All three appeared in the production sitemap and the Brand Ownership guide; titles, descriptions, canonicals, schema, visuals and responsive layouts were rechecked.
+
+## Batch 2 R2A checkpoint
+
+- Exact GE Appliances and Fisher & Paykel target slugs were absent locally and returned `404` on production before writing.
+- GE Appliances contains 2,170 file words, five related-article links and seven official or primary sources. It separates Haier Smart Home ownership, Haier US Appliance Solutions' operating identity, the licensed GE name, the U.S. brand portfolio and model-level origin.
+- Fisher & Paykel contains 2,263 file words, five related-article links and seven official or primary sources. It separates Haier ownership, the New Zealand operating identity, DCS, the international factory network, supplier production and regional warranty responsibility.
+- Each article contains one reviewed 1600×900 unbranded conceptual WebP cover and two deterministic 1600×900 SVG fact maps. Raw cover and map PNGs are archived in the approved Desktop asset folders.
+- Content classification, 15 insight tests, 83 brand tests and a 494-page production build passed with both routes present.
+- Both local production pages exposed the expected title, H1, description, production canonical and three loaded 1600×900 article visuals. Desktop and 390px mobile checks found no horizontal overflow.
+- The only local console error was the expected unavailable `/_vercel/insights/script.js`. Independent Agent review was unavailable under the current execution constraint; a separate second-pass English, fact-boundary, image and release review passed.
