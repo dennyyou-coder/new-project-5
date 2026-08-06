@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Beko corporate and European operation map</title>
+  <desc id="desc">A map showing Arcelik, Beko BV, Beko Europe and the Whirlpool trademark licence after June 2026.</desc>
+  <rect width="1600" height="900" fill="#061925"/>
+  <text x="100" y="110" fill="#f7fbfc" font-family="Arial, sans-serif" font-size="56" font-weight="700">Beko: corporate control and licensed rights</text>
+  <text x="100" y="168" fill="#9eb5c2" font-family="Arial, sans-serif" font-size="28">The June 2026 transaction changed equity ownership, not every brand licence</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="100" y="235" width="410" height="170" rx="24" fill="#0f3043" stroke="#20b4a6" stroke-width="3"/><text x="145" y="292" fill="#20b4a6" font-size="23" font-weight="700">PARENT GROUP</text><text x="145" y="350" fill="#ffffff" font-size="39" font-weight="700">Arçelik A.Ş.</text>
+    <path d="M510 320 H595" stroke="#20b4a6" stroke-width="6"/><polygon points="595,320 565,302 565,338" fill="#20b4a6"/>
+    <rect x="595" y="235" width="410" height="170" rx="24" fill="#0f3043" stroke="#20b4a6" stroke-width="3"/><text x="640" y="292" fill="#20b4a6" font-size="23" font-weight="700">DIRECT OWNER</text><text x="640" y="350" fill="#ffffff" font-size="39" font-weight="700">Beko B.V.</text>
+    <path d="M1005 320 H1090" stroke="#20b4a6" stroke-width="6"/><polygon points="1090,320 1060,302 1060,338" fill="#20b4a6"/>
+    <rect x="1090" y="235" width="410" height="170" rx="24" fill="#0f3043" stroke="#20b4a6" stroke-width="3"/><text x="1135" y="292" fill="#20b4a6" font-size="23" font-weight="700">100% OWNED</text><text x="1135" y="350" fill="#ffffff" font-size="39" font-weight="700">Beko Europe</text>
+    <rect x="100" y="495" width="600" height="205" rx="24" fill="#10293a" stroke="#f3a35c" stroke-width="3"/><text x="145" y="552" fill="#f3a35c" font-size="23" font-weight="700">SEPARATE CORPORATE GROUP</text><text x="145" y="610" fill="#ffffff" font-size="37" font-weight="700">Whirlpool Corporation</text><text x="145" y="657" fill="#bbccd5" font-size="24">No longer a Beko Europe shareholder.</text>
+    <path d="M700 595 H1090" stroke="#f3a35c" stroke-width="6" stroke-dasharray="18 12"/><polygon points="1090,595 1060,577 1060,613" fill="#f3a35c"/><text x="770" y="555" fill="#f3a35c" font-size="24" font-weight="700">WHIRLPOOL TRADEMARK LICENCE</text>
+    <rect x="1090" y="495" width="410" height="205" rx="24" fill="#10293a" stroke="#f3a35c" stroke-width="3"/><text x="1135" y="552" fill="#f3a35c" font-size="23" font-weight="700">REGIONAL SCOPE</text><text x="1135" y="610" fill="#ffffff" font-size="34" font-weight="700">Market-specific use</text><text x="1135" y="657" fill="#bbccd5" font-size="24">Verify licence and operator.</text>
+  </g>
+  <text x="100" y="790" fill="#c4d2da" font-family="Arial, sans-serif" font-size="27">Equity control, trademark permission, manufacturer and warranty are four different facts.</text>
+  <text x="100" y="852" fill="#718b99" font-family="Arial, sans-serif" font-size="22">World Clean Biz evidence map · reviewed 6 August 2026</text>
+</svg>

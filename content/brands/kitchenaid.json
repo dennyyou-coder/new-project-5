@@ -1,0 +1,176 @@
+{
+  "status": "published",
+  "slug": "kitchenaid",
+  "name": "KitchenAid",
+  "aliases": ["KitchenAid Appliances", "KitchenAid brand"],
+  "legalEntityNote": "KitchenAid is a consumer brand in Whirlpool Corporation's portfolio. Official KitchenAid terms identify Whirlpool Properties, Inc. as the KitchenAid trademark owner in the cited market. Major appliances, countertop appliances and licensed categories can use different operating, manufacturing, sales and warranty entities by model and country.",
+  "officialWebsite": "https://www.kitchenaid.com/",
+  "headline": "KitchenAid ownership, trademark, manufacturing and category boundaries",
+  "description": "A source-backed profile separating Whirlpool ownership, the KitchenAid trademark, major and countertop appliances, licensed categories, Greenville manufacturing and warranty responsibility.",
+  "metaDescription": "KitchenAid brand profile: Whirlpool ownership, trademark, small and major appliances, manufacturing, licensing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with KitchenAid or Whirlpool Corporation. Evidence for a named KitchenAid plant or product category should not be generalized to every appliance, market, licensee or warranty.",
+  "headquarters": "Benton Harbor, Michigan, United States (Whirlpool Corporation and Global Small Domestic Appliances)",
+  "founded": "1919 for the KitchenAid stand-mixer brand",
+  "heroImage": "/images/brands/kitchenaid/hero-artisan-plus.webp",
+  "heroImageAlt": "KitchenAid Artisan Plus stand mixer in an official kitchen image",
+  "heroImageCaption": "Official KitchenAid image of the Artisan Plus stand mixer, a current product in the brand's small-appliance portfolio.",
+  "logoImage": "/images/brands/kitchenaid/logo.webp",
+  "logoImageAlt": "KitchenAid logo",
+  "logoSourceUrl": "https://www.whirlpoolcorp.com/logos.html",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/kitchenaid/ownership-category-map.svg",
+      "alt": "KitchenAid ownership, trademark and product-category relationship map",
+      "caption": "Whirlpool Corporation owns the brand portfolio; Whirlpool Properties is identified as trademark owner, while major, countertop and licensed categories follow distinct responsibility chains."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/kitchenaid/operations-model-check.svg",
+      "alt": "KitchenAid model, factory, licence, seller and warranty verification map",
+      "caption": "Greenville evidence supports named small appliances, not every KitchenAid product; exact-model records complete the manufacturing and warranty answer."
+    }
+  ],
+  "ownership": {
+    "summary": "KitchenAid is part of Whirlpool Corporation's current brand portfolio. Official KitchenAid terms identify Whirlpool Properties, Inc. as the registered trademark owner in the cited market. Whirlpool Corporation expressly retained its EMEA KitchenAid small- and major-domestic-appliance business when Beko Europe was formed, so Beko Europe's regional Whirlpool licence does not transfer KitchenAid ownership.",
+    "parentCompany": "Whirlpool Corporation"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Stand mixers and attachments",
+      "positioning": "The iconic stand mixer anchors KitchenAid's premium culinary identity, supported by attachments and accessories.",
+      "buyerRelevance": "Verify model compatibility, voltage, bowl and attachment standards, origin, parts and authorized regional warranty."
+    },
+    {
+      "name": "Countertop appliances",
+      "positioning": "Current ranges include blenders, hand mixers, food processors, espresso, grain and rice cookers and cordless appliances.",
+      "buyerRelevance": "Do not assign the entire range to Greenville; check the legal manufacturer and origin for each model family."
+    },
+    {
+      "name": "Major kitchen appliances",
+      "positioning": "KitchenAid sells refrigerators, ranges, dishwashers, ovens, cooktops, microwaves, undercounter products and ventilation in selected markets.",
+      "buyerRelevance": "Use model-level factory, installation, conformity, parts and warranty evidence from the destination market."
+    },
+    {
+      "name": "Licensed categories",
+      "positioning": "Whirlpool Corporation lists KitchenAid outdoor grills and barbecue accessories among licensed product categories.",
+      "buyerRelevance": "Confirm licensee authorization, territory, manufacturer and warranty instead of assuming a Whirlpool plant."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Whirlpool Corporation states that its Greenville, Ohio plant makes KitchenAid small appliances including the iconic stand mixer.",
+      "scope": "Named Greenville KitchenAid small-appliance production",
+      "buyerCheck": "Verify the model label before extending Greenville origin to a particular stand mixer or other small appliance."
+    },
+    {
+      "evidence": "Whirlpool Corporation operates multiple North American major-appliance factories and reports U.S. portfolio-level domestic production.",
+      "scope": "Whirlpool Corporation major-appliance network, not a KitchenAid-only plant assignment",
+      "buyerCheck": "Require exact KitchenAid model origin, manufacturer and factory documentation."
+    },
+    {
+      "evidence": "KitchenAid-branded licensed categories can be manufactured and warranted by approved licensees.",
+      "scope": "Product categories listed by Whirlpool Corporation licensing",
+      "buyerCheck": "Obtain the licence scope and identify the licensee, plant, seller and warranty provider."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "KitchenAid's official U.S. site separates major appliances, countertop appliances and their service contacts.",
+      "scope": "KitchenAid U.S. direct and service channels",
+      "buyerCheck": "Use the correct product-category contact and confirm authorized retail or distribution status."
+    },
+    {
+      "evidence": "Whirlpool Corporation retained its EMEA KitchenAid small- and major-appliance business in the Beko Europe transaction.",
+      "scope": "EMEA KitchenAid ownership and operating boundary",
+      "buyerCheck": "Do not route KitchenAid sourcing or warranty requests to Beko Europe solely because it licenses Whirlpool."
+    },
+    {
+      "evidence": "Official KitchenAid warranties name different Whirlpool entities and guarantors by product category and market.",
+      "scope": "Market- and category-specific after-sales responsibility",
+      "buyerCheck": "Retain the invoice, model-specific warranty and local service terms before cross-border resale."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: KitchenAid combines a globally recognized premium culinary brand with Whirlpool Corporation's major- and small-appliance capabilities. Its breadth makes category control essential: a stand mixer, refrigerator and licensed grill can carry the same trademark but follow different manufacturing and warranty chains.",
+    "competitorSlugs": ["whirlpool", "miele", "samsung-home-appliances", "lg-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "Whirlpool launches the KitchenAid Artisan Plus",
+      "summary": "Whirlpool Corporation's 2025 annual report names the Artisan Plus among 2026 product launches, reinforcing KitchenAid's global small-appliance role.",
+      "sourceIds": ["whirlpool-annual-2025", "kitchenaid-artisan-plus"]
+    },
+    {
+      "date": "2024-04-02",
+      "title": "Whirlpool retains EMEA KitchenAid in the Beko Europe transaction",
+      "summary": "The official closing announcement expressly retained both small and major KitchenAid appliance activities in EMEA.",
+      "sourceIds": ["whirlpool-emea-close"]
+    },
+    {
+      "date": "1919",
+      "title": "KitchenAid stand mixer launches",
+      "summary": "KitchenAid traces its brand heritage to the launch of the stand mixer in 1919.",
+      "sourceIds": ["kitchenaid-site"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "whirlpool-annual-2025",
+      "title": "Whirlpool Corporation 2025 Annual Report",
+      "publisher": "Whirlpool Corporation",
+      "url": "https://ar.whirlpoolcorp.com/Whirlpool_2025_AR.pdf",
+      "publishedAt": "2026",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "kitchenaid-site",
+      "title": "Premium Kitchen Appliances From KitchenAid",
+      "publisher": "KitchenAid",
+      "url": "https://www.kitchenaid.com/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "kitchenaid-terms",
+      "title": "KitchenAid Terms and Conditions",
+      "publisher": "KitchenAid",
+      "url": "https://www.kitchenaid.com/countertop-appliances/e-shop-terms/terms-and-condition",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "kitchenaid-warranty",
+      "title": "KitchenAid Major Appliance Limited Warranty",
+      "publisher": "KitchenAid",
+      "url": "https://www.kitchenaid.com/content/dam/global/documents/202302/warranty-w11655296-revA.pdf",
+      "publishedAt": "2023",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "kitchenaid-greenville",
+      "title": "Whirlpool Corp. Sponsors Manufacturing Camp at Greenville",
+      "publisher": "Whirlpool Corporation",
+      "url": "https://www.whirlpoolcorp.com/latest-news/whirlpool-corp-sponsors-7th-and-8th-grade-manufacturing-camp.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "whirlpool-emea-close",
+      "title": "Whirlpool Corporation Completes the EMEA Transaction",
+      "publisher": "Whirlpool Corporation",
+      "url": "https://www.whirlpoolcorp.com/latest-news/whirlpool-corporation-completes-major-milestone-in-its-portfolio-transformation-with-closing-of-emea-transaction.html",
+      "publishedAt": "2024-04-02",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "kitchenaid-artisan-plus",
+      "title": "Meet the Artisan Plus Stand Mixer",
+      "publisher": "KitchenAid",
+      "url": "https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/artisan-plus",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T14:30:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T14:30:00+08:00"
+}
