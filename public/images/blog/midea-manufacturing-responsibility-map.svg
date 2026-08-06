@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Midea manufacturing and model responsibility verification map</title>
+  <desc id="desc">Midea's global manufacturing scale leads to a product-level verification chain for brand, model, factory, origin, importer, compliance and warranty.</desc>
+  <defs><linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071928"/><stop offset="1" stop-color="#153b4c"/></linearGradient><filter id="s2"><feDropShadow dx="0" dy="11" stdDeviation="13" flood-opacity=".23"/></filter><marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#f28a5d"/></marker></defs>
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+  <text x="90" y="88" fill="#fff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Global scale is context; shipment documents assign responsibility</text>
+  <text x="90" y="138" fill="#acc8d3" font-family="Arial, sans-serif" font-size="24">Midea, Toshiba, Eureka and Teka models can follow different production routes.</text>
+
+  <rect x="90" y="205" width="1420" height="205" rx="28" fill="#eff5f6" filter="url(#s2)"/>
+  <text x="135" y="260" fill="#0c3040" font-family="Arial, sans-serif" font-size="30" font-weight="700">Midea Group's localized production system</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="135" y="302" width="300" height="66" rx="17" fill="#d7e9ec"/><text x="285" y="344" fill="#174757" font-size="24" font-weight="700">Core Midea plants</text>
+    <rect x="475" y="302" width="300" height="66" rx="17" fill="#d7e9ec"/><text x="625" y="344" fill="#174757" font-size="24" font-weight="700">Specialized units</text>
+    <rect x="815" y="302" width="300" height="66" rx="17" fill="#d7e9ec"/><text x="965" y="344" fill="#174757" font-size="24" font-weight="700">Acquired factories</text>
+    <rect x="1155" y="302" width="310" height="66" rx="17" fill="#d7e9ec"/><text x="1310" y="344" fill="#174757" font-size="24" font-weight="700">Approved suppliers</text>
+  </g>
+
+  <path d="M800 425V480" stroke="#f28a5d" stroke-width="7" marker-end="url(#a2)"/>
+  <rect x="90" y="500" width="1420" height="275" rx="28" fill="#0d2e3d" stroke="#3c6371" stroke-width="2" filter="url(#s2)"/>
+  <text x="135" y="555" fill="#fff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Verify one exact product program</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="135" y="585" width="410" height="66" rx="15" fill="#17485b"/><text x="165" y="611" fill="#ffb28f" font-size="19" font-weight="700">1  BRAND</text><text x="165" y="638" fill="#deedf1" font-size="19">Rights and territory</text>
+    <rect x="595" y="585" width="410" height="66" rx="15" fill="#17485b"/><text x="625" y="611" fill="#ffb28f" font-size="19" font-weight="700">2  MODEL</text><text x="625" y="638" fill="#deedf1" font-size="19">SKU and serial range</text>
+    <rect x="1055" y="585" width="410" height="66" rx="15" fill="#17485b"/><text x="1085" y="611" fill="#ffb28f" font-size="19" font-weight="700">3  FACTORY</text><text x="1085" y="638" fill="#deedf1" font-size="19">Approved production site</text>
+    <rect x="135" y="675" width="410" height="66" rx="15" fill="#17485b"/><text x="165" y="701" fill="#ffb28f" font-size="19" font-weight="700">4  ORIGIN</text><text x="165" y="728" fill="#deedf1" font-size="19">Unit and shipment proof</text>
+    <rect x="595" y="675" width="410" height="66" rx="15" fill="#17485b"/><text x="625" y="701" fill="#ffb28f" font-size="19" font-weight="700">5  MARKET</text><text x="625" y="728" fill="#deedf1" font-size="19">Seller, importer and signatory</text>
+    <rect x="1055" y="675" width="410" height="66" rx="15" fill="#17485b"/><text x="1085" y="701" fill="#ffb28f" font-size="19" font-weight="700">6  SERVICE</text><text x="1085" y="728" fill="#deedf1" font-size="19">Warranty and parts</text>
+  </g>
+
+  <rect x="90" y="800" width="1420" height="58" rx="18" fill="#f28a5d"/>
+  <text x="800" y="838" text-anchor="middle" fill="#092736" font-family="Arial, sans-serif" font-size="23" font-weight="700">Do not turn a group factory count into a country-of-origin claim for one SKU.</text>
+</svg>
