@@ -29,7 +29,7 @@ This file is the operational source of truth for the home-appliance ownership an
 | 3 | Haier | `who-owns-haier-appliances-brand-portfolio` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-haier-appliances-brand-portfolio |
 | 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-ge-appliances-haier-manufacturing |
 | 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-fisher-paykel-haier-manufacturing |
-| 6 | Midea | `who-owns-midea-appliances-brand-portfolio` | 2 | `local_verified` | Local release gate passed on 2026-08-06 |
+| 6 | Midea | `who-owns-midea-appliances-brand-portfolio` | 2 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-midea-appliances-brand-portfolio |
 | 7 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | 3 | `planned` |  |
 | 8 | Whirlpool | `who-owns-whirlpool-appliances-beko-europe` | 3 | `planned` |  |
 | 9 | KitchenAid | `who-makes-kitchenaid-appliances-whirlpool` | 3 | `planned` |  |
@@ -127,3 +127,10 @@ This file is the operational source of truth for the home-appliance ownership an
 - Production deployment `dpl_7FUiQsksSeYWuiZdyfYntrkh6V61` for commit `21e8522b2e38895ac2054e7f9875451461b9052f` reached `READY` after PR #32, but the published headline and body did not fully expose the approved Toshiba, Eureka and Teka transaction boundaries.
 - The same slug and existing visual package were retained. The correction adds Toshiba Lifestyle's 80.1% stake and 40-year brand license, the Eureka asset boundary, Teka's April 2025 closing and Teka Rus exclusion, plus the related primary sources.
 - No duplicate article or asset set is introduced; the superseded duplicate PR #33 remains unmerged.
+
+### Midea production verification
+
+- Corrective GitHub PR #34 merged to `main` as commit `4660cd8750545015497a5ca7efb1141b1cf5e4a0`; Vercel production deployment `dpl_EQbiG46J3un1Brt8YSfLDtpom2PN` reached `READY` on 2026-08-06.
+- The exact production route returned `200`, and the slug appeared in both the Brand Ownership guide and production sitemap.
+- Production verification confirmed the approved title, description, canonical, BlogPosting and BreadcrumbList schema, nine internal links and three loaded 1600×900 article visuals.
+- Desktop and 390px mobile layouts had no horizontal overflow, and the production browser reported no console errors or warnings.
