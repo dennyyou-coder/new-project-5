@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Groupe SEB group and brand boundary</title>
+  <desc id="desc">SEB S.A., Groupe SEB portfolio brands, operating companies and exact product responsibility.</desc>
+  <rect width="1600" height="900" fill="#f7f5f4"/>
+  <text x="110" y="112" fill="#172033" font-family="Arial, sans-serif" font-size="54" font-weight="700">The group name is not every product mark</text>
+  <text x="110" y="164" fill="#5f6878" font-family="Arial, sans-serif" font-size="25">Start with SEB S.A., then follow the relevant portfolio brand and operating entity.</text>
+  <rect x="110" y="245" width="1380" height="125" rx="28" fill="#c92d38"/>
+  <text x="165" y="298" fill="#ffe4e6" font-family="Arial, sans-serif" font-size="22" font-weight="700">LISTED GROUP LEVEL</text>
+  <text x="165" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="31" font-weight="700">SEB S.A. · corporate group and multi-brand portfolio</text>
+  <path d="M800 370V425" stroke="#dc7e86" stroke-width="6"/><polygon points="786,413 800,438 814,413" fill="#dc7e86"/>
+  <rect x="110" y="435" width="1380" height="125" rx="28" fill="#ffffff" stroke="#c92d38" stroke-width="5"/>
+  <text x="165" y="488" fill="#c92d38" font-family="Arial, sans-serif" font-size="22" font-weight="700">BRAND AND OPERATING LEVEL</text>
+  <text x="165" y="529" fill="#172033" font-family="Arial, sans-serif" font-size="30" font-weight="700">Consumer · premium · professional brand · responsible subsidiary</text>
+  <path d="M800 560V615" stroke="#dc7e86" stroke-width="6"/><polygon points="786,603 800,628 814,603" fill="#dc7e86"/>
+  <rect x="110" y="625" width="1380" height="125" rx="28" fill="#ffffff" stroke="#b58b8f" stroke-width="4"/>
+  <text x="165" y="678" fill="#8c5d62" font-family="Arial, sans-serif" font-size="22" font-weight="700">PRODUCT AND MARKET LEVEL</text>
+  <text x="165" y="719" fill="#172033" font-family="Arial, sans-serif" font-size="29" font-weight="700">Trademark · maker · factory · importer · seller · warrantor · service</text>
+  <text x="1490" y="858" fill="#748293" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 6 August 2026</text>
+</svg>

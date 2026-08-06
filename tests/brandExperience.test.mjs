@@ -275,7 +275,7 @@ test("brand detail route rejects invalid slugs and exposes static metadata and s
   assert.match(source, /if \(!data\) return \{\}/);
   assert.match(source, /if \(!data\) notFound\(\)/);
   assert.match(source, /buildBrandPageSchemas\(data,\s*siteUrl\)/);
-  assert.match(source, /Company Profile, Ownership, Products & Strategy/);
+  assert.match(source, /buildBrandPageTitle\(profile\)/);
   assert.match(source, /getPublishedBrandProfiles\(articles\)/);
   assert.match(source, /allowedCompetitorSlugs=\{publishedBrandSlugs\}/);
 
@@ -351,6 +351,7 @@ test("brand visual primitives preserve logo geometry and semantic figures", () =
   assert.match(logo, /variant:\s*"card"\s*\|\s*"hero"/);
   assert.match(logo, /src=\{profile\.logoImage\}/);
   assert.match(logo, /alt=\{profile\.logoImageAlt\}/);
+  assert.match(logo, /brand-logo--\$\{profile\.slug\}/);
   assert.match(visual, /<figure/);
   assert.match(visual, /<figcaption>/);
   assert.match(visual, /className="brand-visual__eyebrow"/);
@@ -637,6 +638,14 @@ test("brand styles contain logos without cropping and collapse multi-column layo
   assert.ok(heroLogoImageRule);
   assert.match(heroLogoImageRule, /object-fit:\s*contain/);
   assert.doesNotMatch(heroLogoImageRule, /object-fit:\s*cover/);
+  assert.match(
+    brandStyles,
+    /\.brand-logo--hero\.brand-logo--groupe-seb\s*\{[^}]*min-height:\s*160px[^}]*\}/
+  );
+  assert.match(
+    brandStyles,
+    /\.brand-logo--hero\.brand-logo--groupe-seb img\s*\{[^}]*height:\s*144px[^}]*max-height:\s*144px[^}]*\}/
+  );
   assert.match(
     brandStyles,
     /\.brand-detail-hero img,[\s\S]*\.brand-article-grid img\s*\{[\s\S]*object-fit:\s*cover/

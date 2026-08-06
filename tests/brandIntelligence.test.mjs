@@ -10,6 +10,7 @@ import {
   buildBrandSitemapEntries,
   buildBrandStaticParams,
   getBrandPageData,
+  buildBrandPageTitle,
   getBrandProfiles,
   getPublishedBrandProfiles,
   normalizeBrandSlugs,
@@ -184,6 +185,17 @@ test("verified cross-category brands appear in each relevant market and retain o
     "floorcare-home-cleaning",
     "home-appliances-small-appliances"
   ]);
+  assert.deepEqual(membershipsFor("hisense"), [
+    "floorcare-home-cleaning",
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("delonghi"), [
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("groupe-seb"), [
+    "floorcare-home-cleaning",
+    "home-appliances-small-appliances"
+  ]);
 
   assert.equal(getBrandCategoryForProfile("aiper")?.slug, "pool-equipment-pool-care");
   assert.equal(getBrandCategoryForProfile("ecovacs")?.slug, "floorcare-home-cleaning");
@@ -221,6 +233,18 @@ test("verified cross-category brands appear in each relevant market and retain o
   );
   assert.equal(
     getBrandCategoryForProfile("panasonic")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("hisense")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("delonghi")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("groupe-seb")?.slug,
     "home-appliances-small-appliances"
   );
 });
@@ -678,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the sixty-seven published profiles and approved article relationships", () => {
+test("the release gate validates the seventy published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -698,6 +722,7 @@ test("the release gate validates the sixty-seven published profiles and approved
     "bosch-home-appliances",
     "bosch-power-tools",
     "craftsman",
+    "delonghi",
     "dewalt",
     "dirt-devil",
     "dji-romo",
@@ -714,10 +739,12 @@ test("the release gate validates the sixty-seven published profiles and approved
     "fluidra",
     "ge-appliances",
     "greenworks",
+    "groupe-seb",
     "haier-home-appliances",
     "hayward",
     "hikoki",
     "hilti",
+    "hisense",
     "hoover",
     "hotpoint",
     "husqvarna",
@@ -933,7 +960,7 @@ test("the release gate validates the sixty-seven published profiles and approved
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 67);
+  assert.equal(loadedProfiles.length, 70);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -942,13 +969,13 @@ test("the release gate validates the sixty-seven published profiles and approved
       { profile: candidate, primaryArticles: [], relatedArticles: [] },
       "https://worldcleanbiz.com"
     );
-    const organization = schemas.find((schema) => schema["@type"] === "Organization");
+    const brandEntity = schemas.find((schema) => schema["@id"] === "#brand");
     const webPage = schemas.find((schema) => schema["@type"] === "WebPage");
 
     assert.equal(
-      organization.logo,
+      brandEntity.logo,
       `https://worldcleanbiz.com${candidate.logoImage}`,
-      `${candidate.slug} Organization.logo must use the official brand logo`
+      `${candidate.slug} brand entity logo must use the official brand logo`
     );
     assert.equal(
       webPage.image,
@@ -999,7 +1026,7 @@ test("the release gate validates the sixty-seven published profiles and approved
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 67);
+  assert.equal(profiles.length, 70);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1017,6 +1044,75 @@ test("all published brand profiles have local official logos and two to three lo
         `${candidate.slug} visual must exist: ${visual.src}`
       );
     }
+  }
+});
+
+test("home-appliance batch five profiles publish independently with dedicated official assets", async () => {
+  const newSlugs = ["delonghi", "groupe-seb", "hisense"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published", `${slug} must be published`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.match(candidate.heroSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(
+      candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)),
+      `${slug} must use dedicated content visuals`
+    );
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+
+    const taggedArticles = realArticles.filter(
+      (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+    );
+    assert.equal(taggedArticles.length, 0, `${slug} must not modify ownership article relationships`);
+  }
+
+  assert.match(profilesBySlug.get("hisense").legalEntityNote, /multiple|regional|group/i);
+  assert.match(profilesBySlug.get("delonghi").legalEntityNote, /listed|regional|entity/i);
+  assert.equal(profilesBySlug.get("groupe-seb").legalName, "SEB S.A.");
+  assert.equal(profilesBySlug.get("hisense").schemaEntityType, "Brand");
+  assert.equal(profilesBySlug.get("delonghi").schemaEntityType, "Brand");
+  assert.equal(profilesBySlug.get("groupe-seb").schemaEntityType, "Organization");
+  assert.equal(profilesBySlug.get("groupe-seb").ownership.parentCompany, undefined);
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    const schemas = buildBrandPageSchemas(
+      { profile: candidate, primaryArticles: [], relatedArticles: [] },
+      "https://worldcleanbiz.com"
+    );
+    assert.equal(
+      schemas.find((schema) => schema["@id"] === "#brand")["@type"],
+      candidate.schemaEntityType
+    );
+    assert.match(
+      schemas.find((schema) => schema["@type"] === "WebPage").name,
+      candidate.schemaEntityType === "Brand" ? /Brand Profile/ : /Corporate Profile/
+    );
+    assert.match(
+      buildBrandPageTitle(candidate),
+      candidate.schemaEntityType === "Brand" ? /Brand Profile/ : /Corporate Profile/
+    );
   }
 });
 

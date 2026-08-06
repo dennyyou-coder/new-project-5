@@ -43,6 +43,7 @@ export type BrandProfile = {
   aliases: string[];
   legalName?: string;
   legalEntityNote?: string;
+  schemaEntityType?: "Brand" | "Organization";
   officialWebsite: string;
   headline: string;
   description: string;
@@ -53,6 +54,7 @@ export type BrandProfile = {
   heroImage?: string;
   heroImageAlt?: string;
   heroImageCaption?: string;
+  heroSourceUrl?: string;
   logoImage: string;
   logoImageAlt: string;
   logoSourceUrl: string;
@@ -369,8 +371,19 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
   optionalRecordText(candidate, "heroImage", "heroImage", errors);
   optionalRecordText(candidate, "heroImageAlt", "heroImageAlt", errors);
   optionalRecordText(candidate, "heroImageCaption", "heroImageCaption", errors);
+  optionalRecordText(candidate, "heroSourceUrl", "heroSourceUrl", errors);
   if (hasText(candidate.heroImage) && !hasText(candidate.heroImageAlt)) {
     errors.push("heroImageAlt is required when heroImage is provided.");
+  }
+  if (hasText(candidate.heroSourceUrl) && !isValidHttpsUrl(candidate.heroSourceUrl)) {
+    errors.push("heroSourceUrl must be a valid HTTPS URL.");
+  }
+  if (
+    candidate.schemaEntityType !== undefined
+    && candidate.schemaEntityType !== "Brand"
+    && candidate.schemaEntityType !== "Organization"
+  ) {
+    errors.push("schemaEntityType must be Brand or Organization when provided.");
   }
 
   const logoFields = ["logoImage", "logoImageAlt", "logoSourceUrl"] as const;
@@ -778,13 +791,15 @@ export function buildBrandPageSchemas(
   const { profile } = data;
   const pageUrl = `${siteUrl}/brands/${profile.slug}`;
   const legalName = normalizeOptionalBrandText(profile.legalName);
+  const schemaEntityType = profile.schemaEntityType ?? "Organization";
+  const pageTitle = buildBrandPageTitle(profile);
 
   return [
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "@id": pageUrl,
-      name: `${profile.name} Company Profile, Ownership, Products & Strategy`,
+      name: pageTitle,
       description: profile.metaDescription,
       url: pageUrl,
       datePublished: profile.publishedAt,
@@ -795,9 +810,9 @@ export function buildBrandPageSchemas(
     {
       "@context": "https://schema.org",
       "@id": "#brand",
-      "@type": "Organization",
+      "@type": schemaEntityType,
       name: profile.name,
-      ...(legalName ? { legalName } : {}),
+      ...(schemaEntityType === "Organization" && legalName ? { legalName } : {}),
       url: profile.officialWebsite,
       logo: `${siteUrl}${profile.logoImage}`
     },
@@ -821,4 +836,9 @@ export function buildBrandPageSchemas(
       ]
     }
   ];
+}
+
+export function buildBrandPageTitle(profile: BrandProfile): string {
+  const subject = profile.schemaEntityType === "Brand" ? "Brand" : "Corporate";
+  return `${profile.name} ${subject} Profile, Ownership, Products & Strategy`;
 }

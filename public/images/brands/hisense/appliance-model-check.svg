@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hisense appliance model verification</title>
+  <desc id="desc">Five checks for a Hisense appliance or floorcare product in its destination market.</desc>
+  <rect width="1600" height="900" fill="#f2f8f7"/>
+  <text x="110" y="112" fill="#172033" font-family="Arial, sans-serif" font-size="54" font-weight="700">Verify the exact model in its market</text>
+  <text x="110" y="164" fill="#5f6878" font-family="Arial, sans-serif" font-size="25">A country product page proves a local offer, not a universal supply-chain answer.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="270" width="250" height="360" rx="28" fill="#008f83"/><text x="150" y="332" fill="#c7fff7" font-size="23" font-weight="700">01</text><text x="150" y="385" fill="#fff" font-size="28" font-weight="700">Market</text><text x="150" y="438" fill="#dcfffb" font-size="20">Country site</text><text x="150" y="470" fill="#dcfffb" font-size="20">Model suffix</text><text x="150" y="502" fill="#dcfffb" font-size="20">Availability</text>
+    <rect x="392" y="270" width="250" height="360" rx="28" fill="#ffffff" stroke="#008f83" stroke-width="4"/><text x="432" y="332" fill="#008f83" font-size="23" font-weight="700">02</text><text x="432" y="385" fill="#172033" font-size="28" font-weight="700">Identity</text><text x="432" y="438" fill="#5f6878" font-size="20">Rating label</text><text x="432" y="470" fill="#5f6878" font-size="20">Legal maker</text><text x="432" y="502" fill="#5f6878" font-size="20">Origin</text>
+    <rect x="674" y="270" width="250" height="360" rx="28" fill="#ffffff" stroke="#008f83" stroke-width="4"/><text x="714" y="332" fill="#008f83" font-size="23" font-weight="700">03</text><text x="714" y="385" fill="#172033" font-size="28" font-weight="700">Compliance</text><text x="714" y="438" fill="#5f6878" font-size="20">Declarations</text><text x="714" y="470" fill="#5f6878" font-size="20">Energy data</text><text x="714" y="502" fill="#5f6878" font-size="20">Battery rules</text>
+    <rect x="956" y="270" width="250" height="360" rx="28" fill="#ffffff" stroke="#72aaa5" stroke-width="4"/><text x="996" y="332" fill="#477f7a" font-size="23" font-weight="700">04</text><text x="996" y="385" fill="#172033" font-size="28" font-weight="700">Channel</text><text x="996" y="438" fill="#5f6878" font-size="20">Invoice seller</text><text x="996" y="470" fill="#5f6878" font-size="20">Importer</text><text x="996" y="502" fill="#5f6878" font-size="20">Authorization</text>
+    <rect x="1238" y="270" width="250" height="360" rx="28" fill="#ffffff" stroke="#72aaa5" stroke-width="4"/><text x="1278" y="332" fill="#477f7a" font-size="23" font-weight="700">05</text><text x="1278" y="385" fill="#172033" font-size="28" font-weight="700">Support</text><text x="1278" y="438" fill="#5f6878" font-size="20">Warrantor</text><text x="1278" y="470" fill="#5f6878" font-size="20">Parts</text><text x="1278" y="502" fill="#5f6878" font-size="20">Service route</text>
+  </g>
+  <rect x="110" y="704" width="1378" height="86" rx="22" fill="#172033"/>
+  <text x="799" y="758" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700">Keep the local product page, label, declaration, invoice and warranty terms together.</text>
+  <text x="1490" y="858" fill="#748293" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 6 August 2026</text>
+</svg>

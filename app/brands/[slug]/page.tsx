@@ -10,6 +10,7 @@ import {
   buildBrandPageSchemas,
   buildBrandStaticParams,
   getBrandPageData,
+  buildBrandPageTitle,
   getPublishedBrandProfiles
 } from "@/lib/brands";
 import {
@@ -64,13 +65,14 @@ export async function generateMetadata({
 
   const { profile } = data;
   const canonical = `/brands/${profile.slug}`;
+  const pageTitle = buildBrandPageTitle(profile);
 
   return {
-    title: `${profile.name} Company Profile, Ownership, Products & Strategy`,
+    title: pageTitle,
     description: profile.metaDescription,
     alternates: { canonical },
     openGraph: {
-      title: `${profile.name} Company Profile, Ownership, Products & Strategy`,
+      title: pageTitle,
       description: profile.metaDescription,
       type: "website",
       url: canonical,
