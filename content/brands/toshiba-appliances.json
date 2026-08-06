@@ -1,0 +1,178 @@
+{
+  "status": "published",
+  "slug": "toshiba-appliances",
+  "name": "Toshiba Appliances",
+  "aliases": ["Toshiba Home Appliances", "Toshiba Lifestyle", "TOSHIBA"],
+  "legalEntityNote": "Toshiba Appliances is the consumer-facing home-appliance use of the TOSHIBA brand. Toshiba Lifestyle Products & Services Corporation develops, manufactures and sells the relevant home appliances and became a subsidiary of Midea Group in 2016. Toshiba Corporation retained the trademark relationship and granted Midea a 40-year worldwide licence for home appliances; Toshiba Corporation, Toshiba Lifestyle, Midea, regional sales companies, factories, importers and warrantors remain distinct roles.",
+  "officialWebsite": "https://www.toshiba-lifestyle.com/",
+  "headline": "Toshiba home appliances, brand licence and operating responsibility",
+  "description": "A source-backed profile of Toshiba home appliances, separating the TOSHIBA trademark, Toshiba Lifestyle's operating role, Midea Group control, product scope, factories, channels and buyer checks.",
+  "metaDescription": "Toshiba Appliances profile: Toshiba Lifestyle, Midea Group, 40-year brand licence, products, manufacturing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Toshiba Corporation, Toshiba Lifestyle or Midea Group. A trademark licence and group relationship do not identify the manufacturer, origin, importer or warrantor for every Toshiba-branded appliance.",
+  "headquarters": "Kawasaki, Kanagawa, Japan (Toshiba Lifestyle Products & Services Corporation)",
+  "founded": "Toshiba Lifestyle Products & Services Corporation was established in 2014; the official appliance history dates key products to 1930",
+  "heroImage": "/images/brands/toshiba-appliances/hero-cordless-vacuum.webp",
+  "heroImageAlt": "Toshiba VC-CLZ74DS cordless vacuum and dock in a home setting",
+  "heroImageCaption": "Official Toshiba Lifestyle image of the VC-CLZ74DS cordless vacuum and dust station in a residential interior.",
+  "logoImage": "/images/brands/toshiba-appliances/logo.webp",
+  "logoImageAlt": "Toshiba logo",
+  "logoSourceUrl": "https://www.toshiba-lifestyle.com/jp/corporate/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/toshiba-appliances/brand-licence-boundary.svg",
+      "alt": "Toshiba trademark, Toshiba Lifestyle and Midea Group relationship map",
+      "caption": "Toshiba Corporation granted the home-appliance brand licence; Toshiba Lifestyle operates the business as a Midea Group subsidiary."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/toshiba-appliances/appliance-buyer-check.svg",
+      "alt": "Toshiba appliance model, factory, importer and warranty verification workflow",
+      "caption": "Toshiba Lifestyle's group factory list shows operating scale, but buyers still need model-level maker, origin, importer and warranty records."
+    }
+  ],
+  "ownership": {
+    "summary": "Toshiba Corporation and Midea agreed in 2016 that Midea would acquire 80.1% of Toshiba Lifestyle Products & Services Corporation and receive a 40-year worldwide licence to use the TOSHIBA brand for home appliances. Toshiba's completion notice states that Toshiba Lifestyle became a Midea subsidiary. Current Toshiba Lifestyle materials continue to identify the company as the developer, manufacturer and seller of TOSHIBA-brand home appliances within Midea Group.",
+    "parentCompany": "Midea Group, with the TOSHIBA home-appliance trademark used under licence from Toshiba Corporation"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Refrigeration, laundry and cooking appliances",
+      "positioning": "Toshiba Lifestyle's current Japanese range covers refrigerators, washing and drying, microwave ovens, rice cookers and other kitchen appliances.",
+      "buyerRelevance": "Verify the exact country assortment, voltage, energy label, installation, importer, parts and warranty before cross-border sourcing."
+    },
+    {
+      "name": "Vacuum cleaners and floorcare",
+      "positioning": "The current portfolio includes cordless, cyclone and bagged vacuum cleaners, including models with dust stations and sensor-led cleaning features.",
+      "buyerRelevance": "Confirm battery and charger specification, consumables, radio or app approvals, local service and model-specific origin."
+    },
+    {
+      "name": "Air, comfort and small domestic appliances",
+      "positioning": "Regional ranges also include air conditioners, fans, humidifiers, irons, garment care, beverage and other small appliances.",
+      "buyerRelevance": "Do not assume that one regional Toshiba Lifestyle company or factory supplies every category or market."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Toshiba Lifestyle's company profile states that its business is the development, manufacture and sale of home appliances.",
+      "scope": "Toshiba Lifestyle Products & Services Corporation and its home-appliance business",
+      "buyerCheck": "Identify the contracting Toshiba Lifestyle group company and request the exact SKU's legal manufacturer and origin documents."
+    },
+    {
+      "evidence": "The official company profile lists manufacturing companies in Japan, Thailand and China alongside separate sales and service companies.",
+      "scope": "Named Toshiba Lifestyle group-company network as of 1 July 2026",
+      "buyerCheck": "Do not assign a model to a listed factory from geography alone; match the rating label, factory declaration and shipment records."
+    },
+    {
+      "evidence": "Toshiba Lifestyle's quality page describes collaboration with Midea's Nansha smart factory for household air-conditioner production.",
+      "scope": "The cited Nansha air-conditioner operation and the period described by the official page",
+      "buyerCheck": "Do not generalize this evidence to refrigerators, laundry, vacuums or other categories; verify each SKU separately."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Toshiba Lifestyle maintains official product, ecommerce, manual, repair and customer-support channels in Japan.",
+      "scope": "Japanese Toshiba home-appliance consumer and after-sales operation",
+      "buyerCheck": "Confirm the named seller, warranty provider and support eligibility for the model and serial number."
+    },
+    {
+      "evidence": "Toshiba Lifestyle states that it delivers home appliances in Japan and worldwide, supported by domestic and overseas group companies.",
+      "scope": "Company-reported global home-appliance activity; product availability varies by country",
+      "buyerCheck": "Use the destination country's official catalogue and legal terms to identify importer, distributor, certification and service route."
+    },
+    {
+      "evidence": "Current official regional sites list materially different Toshiba vacuum and appliance assortments.",
+      "scope": "Market-specific direct, retail and distributor channels",
+      "buyerCheck": "Verify channel authorization, app region, consumables, spare parts, returns and warranty before resale or cross-border procurement."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Toshiba Appliances combines a long Japanese appliance heritage with Midea Group's global operating scale. The key buyer issue is separating the TOSHIBA trademark licence from Toshiba Lifestyle's operating role and then validating the exact factory and regional seller for each model.",
+    "competitorSlugs": ["midea", "haier-home-appliances", "panasonic", "samsung-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2025-08-28",
+      "title": "Toshiba Lifestyle opens Tokyo Design Center",
+      "summary": "The company opened a Shibuya design base and described its role in advancing Toshiba-brand home appliances within Midea Group.",
+      "sourceIds": ["toshiba-design-center"]
+    },
+    {
+      "date": "2016-06-30",
+      "title": "Toshiba Lifestyle becomes a Midea subsidiary",
+      "summary": "Toshiba completed the transfer of an 80.1% interest, while the home-appliance business continued under the Toshiba Lifestyle name and TOSHIBA brand licence.",
+      "sourceIds": ["toshiba-midea-agreement", "toshiba-midea-completion"]
+    },
+    {
+      "date": "1930",
+      "title": "Early Japanese refrigerator and washing-machine milestones",
+      "summary": "Toshiba Lifestyle's official history records the launch of Japan's first domestically produced washing machine and household electric refrigerator by a Toshiba predecessor.",
+      "sourceIds": ["toshiba-lifestyle-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "toshiba-lifestyle-overview",
+      "title": "Company Overview",
+      "publisher": "Toshiba Lifestyle Products & Services Corporation",
+      "url": "https://www.toshiba-lifestyle.com/jp/corporate/overview/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "toshiba-lifestyle-history",
+      "title": "Corporate History",
+      "publisher": "Toshiba Lifestyle Products & Services Corporation",
+      "url": "https://www.toshiba-lifestyle.com/jp/corporate/history/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "toshiba-midea-agreement",
+      "title": "Toshiba and Midea Agree on the Transfer of Toshiba's Home Appliances Business",
+      "publisher": "Toshiba Corporation and Midea Group",
+      "url": "https://www.global.toshiba/ww/news/corporate/2016/03/pr3001.html",
+      "publishedAt": "2016-03-30",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "toshiba-midea-completion",
+      "title": "Completion of Share Transfer of Toshiba Lifestyle Products & Services Corporation to Midea",
+      "publisher": "Toshiba Corporation",
+      "url": "https://www.global.toshiba/content/dam/toshiba/migration/corp/irAssets/about/ir/en/news/20160630_1.pdf",
+      "publishedAt": "2016-06-30",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "toshiba-current-vacuums",
+      "title": "Vacuum Cleaners",
+      "publisher": "Toshiba Lifestyle Products & Services Corporation",
+      "url": "https://www.toshiba-lifestyle.com/jp/vacuum_cleaners/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "toshiba-vc-clz74ds",
+      "title": "VC-CLZ74DS Cordless Vacuum Cleaner",
+      "publisher": "Toshiba Lifestyle Products & Services Corporation",
+      "url": "https://www.toshiba-lifestyle.com/jp/vacuum_cleaners/vc-clz74DS/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "toshiba-quality",
+      "title": "Made with Toshiba Quality",
+      "publisher": "Toshiba Lifestyle Products & Services Corporation",
+      "url": "https://www.toshiba-lifestyle.com/jp/corporate/brand/quality/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "toshiba-design-center",
+      "title": "Tokyo Design Center Opens in Shibuya",
+      "publisher": "Toshiba Lifestyle Products & Services Corporation",
+      "url": "https://www.toshiba-lifestyle.com/jp/press/2025/08/28/3442/",
+      "publishedAt": "2025-08-28",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T18:00:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T18:00:00+08:00"
+}

@@ -1,0 +1,178 @@
+{
+  "status": "published",
+  "slug": "hotpoint",
+  "name": "Hotpoint",
+  "aliases": ["Hotpoint Appliances", "Hotpoint UK", "Hotpoint Americas"],
+  "legalEntityNote": "Hotpoint is a consumer appliance brand with separate regional rights and operating structures. In Europe, Hotpoint is operated within Beko Europe; in North America and the wider Americas, Hotpoint is owned and operated by GE Appliances, a Haier company. The trademark owner, seller, manufacturer, importer and warrantor must therefore be identified by market and product rather than inferred from the brand name alone.",
+  "officialWebsite": "https://www.hotpoint.co.uk/",
+  "headline": "Hotpoint appliances, regional operators and buyer responsibility",
+  "description": "A source-backed Hotpoint brand profile separating the European Beko Europe operation from GE Appliances in the Americas, with products, manufacturing evidence, channels and model-level buyer checks.",
+  "metaDescription": "Hotpoint brand profile: European and Americas operators, appliances, manufacturing evidence, channels, warranties and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Hotpoint, Beko Europe, Beko, GE Appliances or Haier. Hotpoint rights and responsibilities differ by territory; this profile does not assign a factory, importer or warranty provider to an individual model without model-specific evidence.",
+  "headquarters": "No single global Hotpoint operating headquarters; regional operations include Beko Europe and GE Appliances",
+  "founded": "Official regional histories trace Hotpoint to 1903 in the United States and 1911 in the United Kingdom",
+  "heroImage": "/images/brands/hotpoint/hero-laundry-appliance.webp",
+  "heroImageAlt": "Hotpoint washing machine in a real home laundry setting",
+  "heroImageCaption": "Official Hotpoint UK image showing a current Hotpoint laundry appliance in a household setting.",
+  "logoImage": "/images/brands/hotpoint/logo.webp",
+  "logoImageAlt": "Hotpoint logo",
+  "logoSourceUrl": "https://www.bekoeurope.com/en/press-room/logos/hotpoint/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/hotpoint/regional-brand-boundary.svg",
+      "alt": "Hotpoint Europe and Americas regional operating boundary",
+      "caption": "Hotpoint is not one global operating entity: Beko Europe covers the European business while GE Appliances is the brand owner and service route in the Americas."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/hotpoint/model-responsibility-check.svg",
+      "alt": "Hotpoint market, model, factory, importer and warranty verification workflow",
+      "caption": "The same Hotpoint name can lead to different factories, sellers and warranty entities, so buyers must verify the exact model and destination market."
+    }
+  ],
+  "ownership": {
+    "summary": "Hotpoint has separate regional structures. Current Hotpoint UK material places the European brand operation within Beko Europe. Hotpoint's Americas support site states that GE Appliances owns the Hotpoint brand in the Americas and directs appliance registration and service through GE Appliances. These regional positions must not be merged into one global ownership or warranty conclusion.",
+    "parentCompany": "Regional structure: Beko Europe in Europe; GE Appliances, a Haier company, in the Americas"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "European laundry appliances",
+      "positioning": "Hotpoint UK currently offers washing machines, washer dryers and tumble dryers with household fabric-care and energy-efficiency positioning.",
+      "buyerRelevance": "Confirm model capacity, voltage, energy label, installation, spare-parts route and the Beko Europe country entity responsible for warranty."
+    },
+    {
+      "name": "European kitchen and refrigeration appliances",
+      "positioning": "The European range includes ovens, hobs, cookers, dishwashers, refrigerators and freezers.",
+      "buyerRelevance": "Verify the destination-market assortment, installation standard, conformity documents, importer and local after-sales provider."
+    },
+    {
+      "name": "Americas major appliances and home comfort",
+      "positioning": "Hotpoint's U.S. range includes refrigeration, cooking, dishwashing, laundry, packaged terminal air conditioning and ductless systems.",
+      "buyerRelevance": "Use the U.S. model record and GE Appliances support documents; do not apply European product, warranty or service terms."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Beko Europe reports 11 production sites in Italy, Poland, Romania and Slovakia supporting its 16-brand European portfolio, which includes Hotpoint.",
+      "scope": "Beko Europe multi-brand production network as currently reported; not a Hotpoint model-to-plant list",
+      "buyerCheck": "Require the exact Hotpoint SKU's rating plate, declaration of conformity and factory or origin statement before naming a Beko Europe plant."
+    },
+    {
+      "evidence": "GE Appliances states that its Decatur, Alabama operation produces GE and Hotpoint top-freezer refrigerators.",
+      "scope": "Named U.S. top-freezer refrigerator production at the Decatur facility",
+      "buyerCheck": "Match the factory statement to the exact refrigerator model; do not extend it to Hotpoint laundry, cooking or HVAC products."
+    },
+    {
+      "evidence": "Hotpoint's Americas ductless warranty names GE Appliances, a Haier company, as the warranty provider for covered ductless products.",
+      "scope": "Specified Hotpoint ductless split and side-discharge units in the United States, District of Columbia and Canada",
+      "buyerCheck": "Read the model list, territory, registration rules and warranty exclusions instead of treating the document as coverage for every Hotpoint appliance."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Hotpoint UK sells major appliances directly and provides product registration, manuals, repairs and spare-parts support for the UK market.",
+      "scope": "Hotpoint UK consumer channel and service operation",
+      "buyerCheck": "Confirm the contracting seller, delivery territory, installer, returns process and warranty entity on the order documents."
+    },
+    {
+      "evidence": "Hotpoint's Americas support site routes appliance registration through GE Appliances and service through Bodewell, the GE Appliances service brand.",
+      "scope": "Hotpoint appliances purchased in the Americas, subject to product and territory terms",
+      "buyerCheck": "Verify that the product was sourced for the Americas and that the serial number is eligible for local registration and service."
+    },
+    {
+      "evidence": "The European and Americas Hotpoint sites maintain separate product catalogues and support routes.",
+      "scope": "Regional ecommerce, retail, distributor and after-sales channels",
+      "buyerCheck": "Do not cross-ship based on brand recognition alone; verify voltage, certification, importer, parts and warranty in the destination market."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Hotpoint is a broad, value-oriented major-appliance brand with strong regional recognition. Its sourcing challenge is the sharp Europe-Americas split, making territorial rights and the exact seller, factory and warranty provider central to due diligence.",
+    "competitorSlugs": ["beko", "whirlpool", "ge-appliances", "haier-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2024-04-02",
+      "title": "Beko Europe begins operating the combined European appliance business",
+      "summary": "The European combination brought Hotpoint into Beko Europe's multi-brand manufacturing, sales and after-sales platform while the Americas Hotpoint operation remained separate.",
+      "sourceIds": ["beko-europe-about", "beko-contribution-agreement"]
+    },
+    {
+      "date": "2026",
+      "title": "Current Hotpoint UK profile identifies Beko Europe",
+      "summary": "Hotpoint UK's current About Us page states that Hotpoint is part of Beko Europe in the UK and Europe.",
+      "sourceIds": ["hotpoint-uk-about"]
+    },
+    {
+      "date": "1903",
+      "title": "Americas brand origin",
+      "summary": "Hotpoint's U.S. history traces the name to Earl Richardson's lightweight electric iron and the hot point at its tip.",
+      "sourceIds": ["hotpoint-us-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hotpoint-uk-about",
+      "title": "About Us",
+      "publisher": "Hotpoint UK",
+      "url": "https://www.hotpoint.co.uk/about-us",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hotpoint-uk-appliances",
+      "title": "Hotpoint Appliances",
+      "publisher": "Hotpoint UK",
+      "url": "https://www.hotpoint.co.uk/appliances",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-europe-about",
+      "title": "About Beko Europe",
+      "publisher": "Beko Europe",
+      "url": "https://www.bekoeurope.com/en/about-us/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-contribution-agreement",
+      "title": "Arçelik Announces Contribution Agreement to Form a New Standalone European Home Appliance Business with Whirlpool",
+      "publisher": "Beko Europe",
+      "url": "https://www.bekoeurope.com/en/press-room/press-releases/arcelik-announces-contribution-agreement-to-form-a-new-standalone-european-home/",
+      "publishedAt": "2023-01-17",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hotpoint-us-support",
+      "title": "Hotpoint Support",
+      "publisher": "Hotpoint / GE Appliances",
+      "url": "https://www.hotpoint.com/appliance-support/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hotpoint-us-history",
+      "title": "Hotpoint History",
+      "publisher": "Hotpoint / GE Appliances",
+      "url": "https://www.hotpoint.com/hotpoint-history/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "ge-decatur-2026",
+      "title": "GE Appliances Invests $28 Million in Factory Upgrades at Morgan County Facility",
+      "publisher": "GE Appliances",
+      "url": "https://pressroom.geappliances.com/news/investing-in-alabama-ge-appliances-invests-28-million-in-factory-upgrades-and-on-site-primary-care-clinic-at-morgan-county-facility",
+      "publishedAt": "2026",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hotpoint-ductless-warranty",
+      "title": "Hotpoint Ductless Limited Warranty",
+      "publisher": "GE Appliances",
+      "url": "https://www.hotpoint.com/ductless-systems/Hotpoint_Ductless_Warranty.pdf",
+      "publishedAt": "2024-03-25",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T18:00:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T18:00:00+08:00"
+}
