@@ -575,6 +575,55 @@ test("sorts brand articles by absolute time with deterministic invalid and tie f
   ]);
 });
 
+test("home-appliance analysis exposes only the verified primary and related brand relationships", () => {
+  const articleBySlug = new Map(getInsights().map((article) => [article.slug, article]));
+  const expectedRelationships = {
+    "cleaning-appliance-companies-at-awe": {
+      primaryBrands: ["midea", "lg-home-appliances"],
+      relatedBrands: []
+    },
+    "dyson-finally-sells-self-emptying-vacuum": {
+      primaryBrands: ["dyson"],
+      relatedBrands: ["lg-home-appliances", "samsung-home-appliances"]
+    },
+    "ifa-2019-vacuum-cleaner-new-products-by-major-brands": {
+      primaryBrands: ["philips-home-appliances", "aeg", "samsung-home-appliances"],
+      relatedBrands: []
+    },
+    "who-makes-lg-appliances-manufacturing-network": {
+      primaryBrands: ["lg-home-appliances"],
+      relatedBrands: []
+    },
+    "who-makes-samsung-appliances-manufacturing-bespoke-ai": {
+      primaryBrands: ["samsung-home-appliances"],
+      relatedBrands: []
+    },
+    "who-owns-fisher-paykel-haier-manufacturing": {
+      primaryBrands: ["fisher-paykel"],
+      relatedBrands: ["haier-home-appliances", "ge-appliances"]
+    },
+    "who-owns-ge-appliances-haier-manufacturing": {
+      primaryBrands: ["ge-appliances"],
+      relatedBrands: ["haier-home-appliances", "fisher-paykel"]
+    },
+    "who-owns-haier-appliances-brand-portfolio": {
+      primaryBrands: ["haier-home-appliances"],
+      relatedBrands: ["ge-appliances", "fisher-paykel"]
+    },
+    "who-owns-midea-appliances-brand-portfolio": {
+      primaryBrands: ["midea"],
+      relatedBrands: ["eureka"]
+    }
+  };
+
+  for (const [slug, expected] of Object.entries(expectedRelationships)) {
+    const article = articleBySlug.get(slug);
+    assert.ok(article, `${slug} must exist`);
+    assert.deepEqual(article.primaryBrands, expected.primaryBrands, `${slug} primary brands`);
+    assert.deepEqual(article.relatedBrands, expected.relatedBrands, `${slug} related brands`);
+  }
+});
+
 test("the release gate validates the sixty-one published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
@@ -663,6 +712,7 @@ test("the release gate validates the sixty-one published profiles and approved a
     "bosch-cordless-dust-collector": ["bosch-power-tools"],
     "china-cleaning-robot-giants-move-into-backyard": ["dreame", "ecovacs", "roborock", "eufy"],
     "chinese-cleaning-brands-at-ces-2026": ["eureka"],
+    "cleaning-appliance-companies-at-awe": ["midea", "lg-home-appliances"],
     "commercial-robotic-mower-market-navimow-mammotion": ["mammotion", "sunseeker"],
     "dewalts-rise-harvard-case": ["dewalt"],
     "dolphin-vs-aiper-maytronics-fluidra": ["maytronics", "aiper"],
@@ -672,6 +722,7 @@ test("the release gate validates the sixty-one published profiles and approved a
     "dreame-rise-to-10-billion-in-five-years": ["dreame"],
     "dyson-at-a-crossroads": ["dyson"],
     "dyson-fights-bosch-again": ["dyson", "bosch-home-appliances"],
+    "dyson-finally-sells-self-emptying-vacuum": ["dyson"],
     "dji-romo-launch-analysis": ["dji-romo"],
     "dji-romo-p-vs-ecovacs-deebot-x11": ["dji-romo", "ecovacs"],
     "dji-romo-p-vs-roborock-saros-10r": ["dji-romo", "roborock"],
@@ -708,7 +759,8 @@ test("the release gate validates the sixty-one published profiles and approved a
     "hayward-vs-pentair-vs-fluidra": ["hayward", "pentair", "fluidra"],
     "ifa-2019-vacuum-cleaner-new-products-by-major-brands": [
       "philips-home-appliances",
-      "aeg"
+      "aeg",
+      "samsung-home-appliances"
     ],
     "industrial-cleaning-equipment-market": ["nilfisk"],
     "irobot-2018-annual-report-faithful-translation": ["irobot"],
@@ -750,6 +802,8 @@ test("the release gate validates the sixty-one published profiles and approved a
       "philips-home-appliances",
       "aeg"
     ],
+    "who-makes-lg-appliances-manufacturing-network": ["lg-home-appliances"],
+    "who-makes-samsung-appliances-manufacturing-bespoke-ai": ["samsung-home-appliances"],
     "who-makes-sunseeker-robot-mowers-zhejiang-sunseeker": ["sunseeker"],
     "who-makes-wybot-pool-cleaners-wybotics-wangyuan": ["wybot"],
     "who-owns-aeg-electrolux-relationship": ["aeg", "electrolux"],
@@ -773,10 +827,14 @@ test("the release gate validates the sixty-one published profiles and approved a
     "who-owns-eufy-anker-smart-home": ["eufy"],
     "who-owns-eureka-midea-electrolux-manufacturing": ["midea", "eureka", "electrolux"],
     "who-owns-festool-tts-tooltechnic-systems": ["festool"],
+    "who-owns-fisher-paykel-haier-manufacturing": ["fisher-paykel"],
     "who-owns-flex-tools-chervon-lowes": ["flex"],
+    "who-owns-ge-appliances-haier-manufacturing": ["ge-appliances"],
     "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
+    "who-owns-haier-appliances-brand-portfolio": ["haier-home-appliances"],
     "who-owns-makita-company-manufacturing": ["makita"],
     "who-owns-miele-family-manufacturing-network": ["miele"],
+    "who-owns-midea-appliances-brand-portfolio": ["midea"],
     "who-owns-milwaukee-tools-tti-manufacturing": ["milwaukee", "tti"],
     "who-owns-metabo-metabo-hpt-hikoki": ["metabo", "hikoki"],
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris", "fluidra"],
@@ -838,8 +896,8 @@ test("the release gate validates the sixty-one published profiles and approved a
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 122);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 195);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 130);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 205);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
