@@ -156,6 +156,13 @@ test("verified cross-category brands appear in each relevant market and retain o
     "power-tools",
     "lawn-garden-equipment"
   ]);
+  assert.deepEqual(membershipsFor("samsung-home-appliances"), [
+    "floorcare-home-cleaning",
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("fisher-paykel"), [
+    "home-appliances-small-appliances"
+  ]);
 
   assert.equal(getBrandCategoryForProfile("aiper")?.slug, "pool-equipment-pool-care");
   assert.equal(getBrandCategoryForProfile("ecovacs")?.slug, "floorcare-home-cleaning");
@@ -163,6 +170,14 @@ test("verified cross-category brands appear in each relevant market and retain o
   assert.equal(getBrandCategoryForProfile("karcher")?.slug, "commercial-industrial-cleaning");
   assert.equal(getBrandCategoryForProfile("mammotion")?.slug, "lawn-garden-equipment");
   assert.equal(getBrandCategoryForProfile("worx")?.slug, "lawn-garden-equipment");
+  assert.equal(
+    getBrandCategoryForProfile("samsung-home-appliances")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("ge-appliances")?.slug,
+    "home-appliances-small-appliances"
+  );
 });
 
 test("normalizes supported brand frontmatter values and removes malformed slugs", () => {
@@ -560,13 +575,14 @@ test("sorts brand articles by absolute time with deterministic invalid and tie f
   ]);
 });
 
-test("the release gate validates the fifty-six published profiles and approved article relationships", () => {
+test("the release gate validates the sixty-one published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
     "pool-equipment-pool-care",
     "floorcare-home-cleaning",
-    "commercial-industrial-cleaning"
+    "commercial-industrial-cleaning",
+    "home-appliances-small-appliances"
   ];
   const expectedSlugs = [
     "aeg",
@@ -589,9 +605,12 @@ test("the release gate validates the fifty-six published profiles and approved a
     "eufy",
     "eureka",
     "festool",
+    "fisher-paykel",
     "flex",
     "fluidra",
+    "ge-appliances",
     "greenworks",
+    "haier-home-appliances",
     "hayward",
     "hikoki",
     "hilti",
@@ -600,6 +619,7 @@ test("the release gate validates the fifty-six published profiles and approved a
     "irobot",
     "karcher",
     "kobalt",
+    "lg-home-appliances",
     "makita",
     "mammotion",
     "maytronics",
@@ -616,6 +636,7 @@ test("the release gate validates the fifty-six published profiles and approved a
     "polaris",
     "roborock",
     "ryobi",
+    "samsung-home-appliances",
     "segway-navimow",
     "shark",
     "skil",
@@ -791,7 +812,7 @@ test("the release gate validates the fifty-six published profiles and approved a
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 56);
+  assert.equal(loadedProfiles.length, 61);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -857,7 +878,7 @@ test("the release gate validates the fifty-six published profiles and approved a
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 56);
+  assert.equal(profiles.length, 61);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -876,6 +897,63 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("home-appliance launch profiles have dedicated assets, article depth, and explicit identity boundaries", async () => {
+  const newSlugs = [
+    "samsung-home-appliances",
+    "lg-home-appliances",
+    "haier-home-appliances",
+    "ge-appliances",
+    "fisher-paykel"
+  ];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const articles = getInsights();
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published", `${slug} must be published`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(
+      candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)),
+      `${slug} must use dedicated content visuals`
+    );
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+
+    const relatedArticles = articles.filter(
+      (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+    );
+    assert.ok(relatedArticles.length >= 3, `${slug} must have at least three article relationships`);
+  }
+
+  assert.match(profilesBySlug.get("samsung-home-appliances").ownership.summary, /Samsung Electronics/i);
+  assert.match(profilesBySlug.get("lg-home-appliances").ownership.summary, /LG Electronics/i);
+  assert.match(
+    profilesBySlug.get("haier-home-appliances").ownership.summary,
+    /Haier Smart Home.*Haier Group/i
+  );
+  assert.match(profilesBySlug.get("ge-appliances").legalEntityNote, /Haier US Appliance Solutions/i);
+  assert.match(profilesBySlug.get("ge-appliances").ownership.summary, /license|licensed/i);
+  assert.match(profilesBySlug.get("fisher-paykel").ownership.summary, /Haier/i);
+  assert.match(profilesBySlug.get("fisher-paykel").legalEntityNote, /Fisher & Paykel Appliances Limited/i);
 });
 
 test("power-tool completion profiles use dedicated assets, article depth, and distinct identities", async () => {
