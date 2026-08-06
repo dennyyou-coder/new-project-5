@@ -24,12 +24,12 @@ This file is the operational source of truth for the home-appliance ownership an
 
 | No. | Brand/topic | Slug | Batch | Status | Production URL / note |
 |---:|---|---|---:|---|---|
-| 1 | Samsung | `who-makes-samsung-appliances-manufacturing-bespoke-ai` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
-| 2 | LG | `who-makes-lg-appliances-manufacturing-network` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
-| 3 | Haier | `who-owns-haier-appliances-brand-portfolio` | 1 | `local_verified` | Local release gate passed on 2026-08-05 |
-| 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `planned` |  |
-| 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `planned` |  |
-| 6 | Midea | `who-owns-midea-appliances-brand-portfolio` | 2 | `planned` |  |
+| 1 | Samsung | `who-makes-samsung-appliances-manufacturing-bespoke-ai` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-makes-samsung-appliances-manufacturing-bespoke-ai |
+| 2 | LG | `who-makes-lg-appliances-manufacturing-network` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-makes-lg-appliances-manufacturing-network |
+| 3 | Haier | `who-owns-haier-appliances-brand-portfolio` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-haier-appliances-brand-portfolio |
+| 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `local_verified` | Local release gate passed on 2026-08-06 |
+| 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `local_verified` | Local release gate passed on 2026-08-06 |
+| 6 | Midea | `who-owns-midea-appliances-brand-portfolio` | 2 | `local_verified` | Local release gate passed on 2026-08-06 |
 | 7 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | 3 | `planned` |  |
 | 8 | Whirlpool | `who-owns-whirlpool-appliances-beko-europe` | 3 | `planned` |  |
 | 9 | KitchenAid | `who-makes-kitchenaid-appliances-whirlpool` | 3 | `planned` |  |
@@ -82,3 +82,41 @@ This file is the operational source of truth for the home-appliance ownership an
 - Samsung, LG and Haier now form one verified release unit after the daily publishing cap was cancelled.
 - Content classification, 14 insight tests, 82 brand tests and a 479-page production build passed with all three articles present.
 - All three article routes use the established WCB ownership-guide structure and remain inside the approved content, image and operational-record scope.
+
+### Batch 1 production gate
+
+- PR #28 was merged to `main` at commit `f138c628`; Vercel production deployment `dpl_ChZVxqXbYkxyzMa2qEexHB3TJP34` reached `READY` on 2026-08-05.
+- The Samsung, LG and Haier production routes returned `200` with the expected title, canonical, structured data and article visuals.
+- The Brand Ownership guide and production sitemap both exposed all three slugs; desktop and 390px mobile production checks passed.
+
+## Batch 2 checkpoint
+
+- Baseline on `origin/main` commit `96f298d`: content classification passed; 15 insight tests passed; 83 brand tests passed.
+- Exact repository, production-route, ownership-guide and sitemap checks found no existing GE Appliances, Fisher & Paykel or Midea target slug before writing. Each target route returned `404`.
+- Research used current first-party corporate, investor, legal, manufacturing and warranty disclosures. Ownership, trademark, factory, seller and warranty responsibilities are kept separate at model and market level.
+- Visual system: `industry_map`; each article uses one reviewed unbranded 1600×900 WebP cover and two deterministic 1600×900 relationship or verification maps.
+
+### GE Appliances local release gate
+
+- The article contains 1,973 file words, five relevant internal links, official GE Appliances, General Electric and Haier Smart Home sources, an at-a-glance table, buyer checklist, FAQ and final answer.
+- The responsibility boundary separates Haier Smart Home ownership, Haier US Appliance Solutions as legal operator, GE trademark licensing, U.S. manufacturing examples and model-level warranty responsibility.
+- One repaired unbranded cover and two repaired deterministic maps passed the final visual review.
+
+### Fisher & Paykel local release gate
+
+- The article contains 1,915 file words, five relevant internal links, official Fisher & Paykel and Haier sources, an at-a-glance table, buyer checklist, FAQ and final answer.
+- The responsibility boundary distinguishes the 2009 and 2012 ownership steps, the continuing premium brand identity, current factory countries, supplier production and regional warranty entities.
+- One repaired unbranded cover and two repaired deterministic maps passed the final visual review.
+
+### Midea local release gate
+
+- The article contains 2,109 file words, five relevant internal links, current Midea Group investor and regional warranty sources, an at-a-glance table, buyer checklist, FAQ and final answer.
+- The responsibility boundary separates listed Midea Group, its Smart Home business, selected appliance brands, overseas operating scale, model origin, local seller and warranty provider.
+- One repaired unbranded cover and two repaired deterministic maps passed the final visual review.
+
+### Batch 2 local gate
+
+- Content classification, 15 insight tests, 83 brand tests and a 495-page production build passed with all three articles present.
+- Each local article route returned `200` and exposed the expected title, H1, description, production canonical, BlogPosting JSON-LD and three loaded 1600×900 article visuals.
+- The Brand Ownership guide and sitemap included all three slugs. Desktop and 390px mobile checks found no horizontal overflow.
+- The only local console error was the expected unavailable `/_vercel/insights/script.js`; the separate second-pass English, fact-boundary, image and release review returned `PASS`.

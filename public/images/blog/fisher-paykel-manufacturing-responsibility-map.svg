@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Fisher and Paykel manufacturing and responsibility map</title>
+  <desc id="desc">Official sources identify manufacturing in Thailand, China, Italy and Mexico, while company and supplier production and regional warranties require model-level checks.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f1ea"/><stop offset="1" stop-color="#dce9e5"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".16"/></filter></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="92" y="105" fill="#203b3b" font-family="Arial, sans-serif" font-size="49" font-weight="700">A global network with model-level responsibility</text>
+  <text x="92" y="155" fill="#607876" font-family="Arial, sans-serif" font-size="24">Current company sources identify four manufacturing countries—not one universal factory</text>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <rect x="90" y="230" width="940" height="500" rx="28" fill="#ffffff"/>
+    <text x="145" y="292" fill="#203b3b" font-size="26" font-weight="700">CURRENTLY IDENTIFIED MANUFACTURING COUNTRIES</text>
+    <g fill="#e6f1ed" stroke="#8eb9ac" stroke-width="2">
+      <rect x="145" y="345" width="380" height="125" rx="20"/><rect x="590" y="345" width="380" height="125" rx="20"/>
+      <rect x="145" y="525" width="380" height="125" rx="20"/><rect x="590" y="525" width="380" height="125" rx="20"/>
+    </g>
+    <text x="335" y="422" text-anchor="middle" fill="#234846" font-size="38" font-weight="700">Thailand</text>
+    <text x="780" y="422" text-anchor="middle" fill="#234846" font-size="38" font-weight="700">China</text>
+    <text x="335" y="602" text-anchor="middle" fill="#234846" font-size="38" font-weight="700">Italy</text>
+    <text x="780" y="602" text-anchor="middle" fill="#234846" font-size="38" font-weight="700">Mexico</text>
+    <rect x="1090" y="230" width="420" height="500" rx="28" fill="#263e3e"/>
+    <text x="1140" y="292" fill="#d5ebe4" font-size="25" font-weight="700">VERIFY FOR EACH SKU</text>
+    <g fill="#ffffff" font-size="29" font-weight="700">
+      <text x="1140" y="370">1. Model and serial label</text>
+      <text x="1140" y="435">2. Legal manufacturer</text>
+      <text x="1140" y="500">3. Country of origin</text>
+      <text x="1140" y="565">4. Importer and seller</text>
+      <text x="1140" y="630">5. Regional warrantor</text>
+    </g>
+  </g>
+  <rect x="220" y="776" width="1160" height="72" rx="18" fill="#c28754"/>
+  <text x="800" y="822" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="23" font-weight="700">Some appliances are made in group factories; others are made on its behalf by suppliers</text>
+</svg>
