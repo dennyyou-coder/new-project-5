@@ -1,0 +1,225 @@
+{
+  "status": "published",
+  "slug": "groupe-seb",
+  "name": "Groupe SEB",
+  "aliases": ["SEB Group", "SEB S.A.", "Groupe SEB S.A."],
+  "legalName": "SEB S.A.",
+  "legalEntityNote": "Groupe SEB is the corporate identity of the group headed by listed SEB S.A.; it is not the consumer product mark on every appliance. The group's consumer, premium and professional brands, regional subsidiaries, manufacturers, sourcing partners, distributors, importers and warranty entities can each carry different responsibilities for a specific SKU.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.groupeseb.com/en",
+  "headline": "Groupe SEB brand portfolio, floorcare and industrial network",
+  "description": "A source-backed corporate brand profile of Groupe SEB, separating SEB S.A., its multi-brand portfolio, operating companies, production and sourcing network, channels and product-level buyer checks.",
+  "metaDescription": "Groupe SEB profile: SEB S.A., appliance and floorcare brands, industrial network, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with SEB S.A. Group-level disclosures do not establish the trademark owner, legal manufacturer, factory, origin, importer, seller or warrantor for every product sold under a Groupe SEB portfolio brand.",
+  "headquarters": "Écully, France (SEB S.A.)",
+  "founded": "1857",
+  "heroImage": "/images/brands/groupe-seb/hero-production-site.webp",
+  "heroImageAlt": "Groupe SEB employee at an official European production-site setting",
+  "heroImageCaption": "Official Groupe SEB production-site image illustrating the people and industrial network behind its multi-brand appliance portfolio.",
+  "heroSourceUrl": "https://www.groupeseb.com/en/industrial-expertise",
+  "logoImage": "/images/brands/groupe-seb/logo.webp",
+  "logoImageAlt": "Groupe SEB logo",
+  "logoSourceUrl": "https://www.groupeseb.com/en/media-kit",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/groupe-seb/group-brand-boundary.svg",
+      "alt": "SEB S.A., Groupe SEB portfolio brands, operating subsidiaries and product responsibility map",
+      "caption": "Groupe SEB is the corporate group; procurement starts with the actual portfolio brand and then identifies the operating and product-responsible entities."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/groupe-seb/industrial-channel-check.svg",
+      "alt": "Groupe SEB brand, model, production, channel and after-sales verification workflow",
+      "caption": "A global industrial and sourcing network provides scale, but every SKU still needs plant, channel and warranty evidence for its destination market."
+    }
+  ],
+  "ownership": {
+    "summary": "Groupe SEB is headed by listed SEB S.A. and operates a large portfolio of consumer, premium and professional brands. Official disclosures also describe a family shareholder concert with long-term influence. These corporate facts do not make Groupe SEB the product trademark, manufacturer or contracting party for every Tefal, Rowenta, WMF, Supor or other portfolio-brand SKU. No separate parent company is listed because SEB S.A. is the listed group head, not its own parent."
+  },
+  "leadership": [
+    {
+      "name": "Stanislas de Gramont",
+      "role": "Chief Executive Officer, Groupe SEB",
+      "context": "Groupe SEB's current governance and management pages identify Stanislas de Gramont as Chief Executive Officer."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Cooking and food preparation",
+      "positioning": "The group portfolio spans cookware, electrical cooking, food preparation and beverage appliances through brands including Tefal, Moulinex, Krups and Supor.",
+      "buyerRelevance": "Confirm the exact brand owner or license, model specification, regional operator, factory, origin and warranty entity."
+    },
+    {
+      "name": "Floorcare and home care",
+      "positioning": "Rowenta and other regional portfolio brands participate in vacuum cleaners and home-care appliances, and the group reported positive floorcare momentum in 2025.",
+      "buyerRelevance": "Verify the actual brand, dust or water system, battery, accessories, local product listing, legal maker, repair route and consumables."
+    },
+    {
+      "name": "Linen, personal care and home comfort",
+      "positioning": "The portfolio includes ironing, garment care, personal care, fans, heaters and other home-comfort products across multiple brands and markets.",
+      "buyerRelevance": "Do not assume a globally uniform assortment; check market-specific voltage, compliance, range and after-sales responsibility."
+    },
+    {
+      "name": "Premium and professional equipment",
+      "positioning": "Groupe SEB also operates premium kitchen and professional coffee and hotel-equipment brands, separate from its mass-market consumer portfolio.",
+      "buyerRelevance": "Separate professional distribution, installation, service and commercial warranty requirements from consumer-appliance channels."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Groupe SEB describes a global industrial footprint combining internal production with sourcing, organized to support its portfolio across regions and product categories.",
+      "scope": "Group-level industrial model; it does not assign every portfolio-brand SKU to an internal plant or external source",
+      "buyerCheck": "Require the legal manufacturer, site, origin and conformity records for the exact model instead of assigning a factory from the group network."
+    },
+    {
+      "evidence": "The group's industrial-expertise page identifies production capabilities by site, including categories made at the Shaoxing, China facility.",
+      "scope": "Named facilities and categories disclosed on the official page; not all models within those categories",
+      "buyerCheck": "Match the supplier's factory claim to model-level declarations, packaging, customs and quality documents."
+    },
+    {
+      "evidence": "The 2025 Universal Registration Document reports the current industrial and financial perimeter of SEB S.A. and its consolidated group.",
+      "scope": "Companies and operations consolidated in the 2025 reporting period",
+      "buyerCheck": "Check whether the quoted supplier and factory are within the reported perimeter or are external partners, and document the contractual relationship."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Groupe SEB reports sales in more than 150 countries through a multi-brand and multi-channel model.",
+      "scope": "Group-wide presence across consumer, premium and professional brands; individual brands and products vary by country",
+      "buyerCheck": "Confirm that the exact brand and model are officially offered in the destination country and identify the responsible group company or distributor."
+    },
+    {
+      "evidence": "The group's official FAQ describes distribution through retail networks, branded stores and e-commerce channels.",
+      "scope": "Group-level channel architecture, not proof that every seller is authorized for every brand",
+      "buyerCheck": "Validate dealer status with the relevant brand or regional entity and retain the invoice and warranty conditions."
+    },
+    {
+      "evidence": "The 2025 results highlight continued e-commerce development and differentiated regional performance across the group's categories.",
+      "scope": "2025 group results and channel trends",
+      "buyerCheck": "Assess digital and offline sellers separately for authorization, stock origin, pricing terms, return route and after-sales support."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Groupe SEB competes through portfolio breadth, regional brands, industrial scale and established retail and e-commerce channels. The main buyer diligence task is to move from the group name to the actual product brand, operating company and model-specific production and warranty evidence.",
+    "competitorSlugs": ["delonghi", "philips-home-appliances", "midea", "electrolux"]
+  },
+  "developments": [
+    {
+      "date": "2026-02-26",
+      "title": "Groupe SEB reports 2025 full-year results",
+      "summary": "The group reported 2025 sales of approximately €8.2 billion and cited good momentum in floorcare and continued e-commerce development.",
+      "sourceIds": ["seb-2025-results", "seb-urd-2025"]
+    },
+    {
+      "date": "2021-12-16",
+      "title": "Family shareholders strengthen control structure",
+      "summary": "Groupe SEB announced a family holding-company arrangement designed to strengthen long-term family control of SEB S.A.",
+      "sourceIds": ["seb-family-control"]
+    },
+    {
+      "date": "1973",
+      "title": "Groupe SEB takes shape",
+      "summary": "The group history records the creation of Groupe SEB following the combination of key French household-equipment businesses.",
+      "sourceIds": ["seb-history"]
+    },
+    {
+      "date": "1857",
+      "title": "SEB industrial origins",
+      "summary": "Groupe SEB traces its origins to a tinsmith workshop founded in Burgundy in 1857.",
+      "sourceIds": ["seb-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "seb-urd-2025",
+      "title": "Universal Registration Document and Annual Financial Report 2025",
+      "publisher": "SEB S.A.",
+      "url": "https://www.groupeseb.com/sites/default/files/2026-06/Groupe-SEB-Universal_Registration_Document_and_Annual_Financial_Report-2025.pdf",
+      "publishedAt": "2026",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-2025-results",
+      "title": "2025 Full-Year Results",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/index.php/en/news/2025-full-year-results",
+      "publishedAt": "2026-02-26",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-multi-brand",
+      "title": "Multi-brand Strategy",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/fr/strategie-multi-marques",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-rowenta",
+      "title": "Rowenta",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/fr/rowenta",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-industrial-expertise",
+      "title": "Industrial Expertise",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/en/industrial-expertise",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-governance",
+      "title": "Governance",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/en/governance",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-management",
+      "title": "Head of Management",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/en/head-management",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-faq",
+      "title": "Groupe SEB FAQ",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/en/faq",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-legal",
+      "title": "Legal Notices",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/en/legals",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-family-control",
+      "title": "Creation of a Holding Company to Strengthen Family Control",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/en/news/creation-holding-company-strengthen-family-control",
+      "publishedAt": "2021-12-16",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-history",
+      "title": "Groupe SEB History",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/en/history",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "seb-media-kit",
+      "title": "Media Kit",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/en/media-kit",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T22:54:58+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T22:54:58+08:00"
+}

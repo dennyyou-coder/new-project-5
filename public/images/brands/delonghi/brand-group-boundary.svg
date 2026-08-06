@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">De'Longhi brand and group boundary</title>
+  <desc id="desc">De'Longhi consumer brand, listed group, regional operator and model-level responsibility.</desc>
+  <rect width="1600" height="900" fill="#f5f6fa"/>
+  <text x="110" y="112" fill="#172033" font-family="Arial, sans-serif" font-size="54" font-weight="700">Brand, group and contract are different layers</text>
+  <text x="110" y="164" fill="#5f6878" font-family="Arial, sans-serif" font-size="25">The De'Longhi mark does not replace destination-market legal and warranty checks.</text>
+  <rect x="110" y="245" width="1380" height="125" rx="28" fill="#1d2e63"/>
+  <text x="165" y="298" fill="#ccd8ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">CONSUMER BRAND</text>
+  <text x="165" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="31" font-weight="700">De'Longhi · coffee, kitchen and home-comfort appliances</text>
+  <path d="M800 370V425" stroke="#7891d2" stroke-width="6"/><polygon points="786,413 800,438 814,413" fill="#7891d2"/>
+  <rect x="110" y="435" width="1380" height="125" rx="28" fill="#ffffff" stroke="#1d2e63" stroke-width="5"/>
+  <text x="165" y="488" fill="#1d2e63" font-family="Arial, sans-serif" font-size="22" font-weight="700">CORPORATE AND REGIONAL LEVEL</text>
+  <text x="165" y="529" fill="#172033" font-family="Arial, sans-serif" font-size="30" font-weight="700">De' Longhi S.p.A. · regional sales company or authorized dealer</text>
+  <path d="M800 560V615" stroke="#7891d2" stroke-width="6"/><polygon points="786,603 800,628 814,603" fill="#7891d2"/>
+  <rect x="110" y="625" width="1380" height="125" rx="28" fill="#ffffff" stroke="#8290b6" stroke-width="4"/>
+  <text x="165" y="678" fill="#59688f" font-family="Arial, sans-serif" font-size="22" font-weight="700">MODEL AND MARKET LEVEL</text>
+  <text x="165" y="719" fill="#172033" font-family="Arial, sans-serif" font-size="29" font-weight="700">Plant or partner · origin · importer · seller · warrantor · service</text>
+  <text x="1490" y="858" fill="#748293" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 6 August 2026</text>
+</svg>

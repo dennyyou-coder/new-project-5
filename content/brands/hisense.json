@@ -1,0 +1,209 @@
+{
+  "status": "published",
+  "slug": "hisense",
+  "name": "Hisense",
+  "aliases": ["Hisense Group", "Hisense Group Holdings Co., Ltd."],
+  "legalEntityNote": "Hisense is a consumer brand used across multiple companies in the Hisense group, not one universal legal entity for every product or market. Hisense's official legal statement defines the referenced group as Hisense Group Holdings Co., Ltd. and its affiliated companies. Hisense Home Appliances Group Co., Ltd., regional operating companies, distributors, product manufacturers, importers and warranty providers can hold different roles for a specific model.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://global.hisense.com/",
+  "headline": "Hisense home appliances, floorcare and regional responsibility",
+  "description": "A source-backed profile of Hisense home appliances and floorcare, separating the consumer brand, group companies, listed appliance platform, regional operators and model-level buyer checks.",
+  "metaDescription": "Hisense brand profile: home appliances, vacuum cleaners, group-company boundaries, regional channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Hisense. Group and portfolio evidence do not identify the legal manufacturer, factory, origin, importer, seller or warrantor for every Hisense-branded SKU.",
+  "headquarters": "Qingdao, Shandong, China (Hisense group)",
+  "founded": "1969",
+  "heroImage": "/images/brands/hisense/hero-floor-cleaner.webp",
+  "heroImageAlt": "Hisense HFC433170A wet and dry floor cleaner",
+  "heroImageCaption": "Official Hisense product cutout of the HFC433170A wet and dry floor cleaner, presented in a restrained World Clean Biz editorial frame.",
+  "heroSourceUrl": "https://pl.hisense.com/produkty/dom-i-opieka/odkurzacze/FLOOR-CLEANER-HFC433170A-HSN/p/000000000000742340",
+  "logoImage": "/images/brands/hisense/logo.webp",
+  "logoImageAlt": "Hisense logo",
+  "logoSourceUrl": "https://pl.hisense.com/produkty/dom-i-opieka/odkurzacze/FLOOR-CLEANER-HFC433170A-HSN/p/000000000000742340",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/hisense/brand-entity-boundary.svg",
+      "alt": "Hisense group brand, appliance business, regional operator and model-level responsibility map",
+      "caption": "The Hisense brand and group affiliation are distinct from the companies responsible for a particular product, contract and warranty."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/hisense/appliance-model-check.svg",
+      "alt": "Hisense appliance market, model, compliance, channel and support verification workflow",
+      "caption": "Buyers should keep a destination-specific evidence chain from the official product listing through label, importer, invoice and warranty terms."
+    }
+  ],
+  "ownership": {
+    "summary": "Hisense is associated with Hisense Group Holdings Co., Ltd. and affiliated companies. The group operates multiple listed and operating platforms, including Hisense Home Appliances Group Co., Ltd. Hisense's own legal statement makes clear that references to Hisense may include affiliated companies, so the brand name alone cannot establish the maker, contracting party or warranty provider for every product.",
+    "parentCompany": "Hisense Group Holdings Co., Ltd."
+  },
+  "leadership": [
+    {
+      "name": "Fisher Yu",
+      "role": "Chief Executive Officer, Hisense Group",
+      "context": "Hisense's July 2026 global strategy announcement identifies Fisher Yu as CEO of Hisense Group."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Refrigeration and kitchen appliances",
+      "positioning": "Hisense's appliance businesses cover refrigerators, freezers, dishwashers, ovens and other cooking products, with assortment varying by country.",
+      "buyerRelevance": "Confirm local energy labels, installation requirements, model suffixes, legal maker, importer and service coverage."
+    },
+    {
+      "name": "Laundry appliances",
+      "positioning": "Regional Hisense ranges include washing machines, tumble dryers and washer-dryers within the group's broader home-appliance business.",
+      "buyerRelevance": "Verify electrical and water standards, capacity conventions, spare parts and destination-market warranty terms."
+    },
+    {
+      "name": "Climate and air care",
+      "positioning": "Hisense markets residential and commercial air-conditioning and other environmental appliances through market-specific ranges.",
+      "buyerRelevance": "Check installer requirements, refrigerant and efficiency rules, local certifications and the exact responsible sales and service entity."
+    },
+    {
+      "name": "Vacuum cleaners and floorcare",
+      "positioning": "Current official European ranges include cordless vacuum cleaners and wet-and-dry floor cleaners such as HFC433170A.",
+      "buyerRelevance": "Confirm the product code, battery and charger specification, filters and consumables, EU responsible operator where applicable, origin and local after-sales route."
+    },
+    {
+      "name": "Televisions and consumer electronics",
+      "positioning": "Hisense also operates a major global television and consumer-electronics business alongside appliances.",
+      "buyerRelevance": "Do not assume that electronics and appliance products share the same manufacturer, distributor or service structure in a destination market."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Hisense's official industrial-group description separates multimedia, home-appliance and intelligent-technology business groups and identifies refrigeration, air-conditioning, laundry, kitchen and environmental-appliance activities within the home-appliance platform.",
+      "scope": "Published group-level business structure; it does not map every Hisense model to a legal manufacturer or factory",
+      "buyerCheck": "Obtain the rating label, declaration, factory and country-of-origin record for the exact model rather than assigning it from the group chart."
+    },
+    {
+      "evidence": "Hisense Home Appliances Group's reporting identifies the listed company and its subsidiaries as the reporting group and discloses named operating and production entities.",
+      "scope": "Hisense Home Appliances Group Co., Ltd. and consolidated subsidiaries covered by the cited filing",
+      "buyerCheck": "Match any disclosed entity to the actual SKU, purchase contract and destination market before treating it as manufacturer or supplier."
+    },
+    {
+      "evidence": "The official HVC6264BKUK product page names Gorenje gospodinjski aparati, d.o.o. as the EU responsible economic operator for that product.",
+      "scope": "The cited HVC6264BKUK offer and its EU responsibility disclosure; not all Hisense floorcare products or markets",
+      "buyerCheck": "Check the same responsibility field on the exact product page, packaging and accompanying documents for each proposed SKU."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Hisense states that it operates internationally and uses country-specific consumer sites that publish local catalogues, support information and purchase routes.",
+      "scope": "Hisense group and official regional consumer channels; local ranges and legal entities vary",
+      "buyerCheck": "Confirm the SKU on the destination-country site and record the named seller, importer, distributor and service provider."
+    },
+    {
+      "evidence": "The UK official site currently lists cordless vacuum models with specifications, downloads and where-to-buy routes.",
+      "scope": "Current Hisense UK floorcare listings, including the cited HVC6264BKUK model",
+      "buyerCheck": "Do not transfer UK model codes, voltage, pricing or warranty terms to another market without matching local documentation."
+    },
+    {
+      "evidence": "The Polish official site currently lists the HFC433170A wet-and-dry floor cleaner with product data and official imagery.",
+      "scope": "The cited Polish HFC433170A listing",
+      "buyerCheck": "Confirm local availability, invoice seller, importer, warranty provider and consumables before purchase."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Hisense combines scale in major appliances and consumer electronics with market-specific floorcare participation. Its sourcing advantage is broad category reach; its diligence challenge is identifying which group or regional company is legally responsible for each SKU.",
+    "competitorSlugs": ["haier-home-appliances", "midea", "lg-home-appliances", "samsung-home-appliances", "toshiba-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2026-07-21",
+      "title": "Hisense presents an AI-powered global growth strategy",
+      "summary": "At its 2026 global partner conference, Hisense described a connected smart-home direction and identified Fisher Yu as group CEO.",
+      "sourceIds": ["hisense-ai-strategy"]
+    },
+    {
+      "date": "2025-11-28",
+      "title": "Regional range highlights compact household appliances",
+      "summary": "Hisense Austria presented current Hisense and Gorenje kitchen and household helpers, illustrating market-specific appliance assortment.",
+      "sourceIds": ["hisense-austria-household"]
+    },
+    {
+      "date": "1993",
+      "title": "Hisense trademark adopted",
+      "summary": "Hisense's official history records the use and registration of the Hisense name in 1993.",
+      "sourceIds": ["hisense-history"]
+    },
+    {
+      "date": "1969",
+      "title": "Hisense origins",
+      "summary": "Hisense traces its founding to a radio factory established in Qingdao in 1969.",
+      "sourceIds": ["hisense-overview", "hisense-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hisense-overview",
+      "title": "Hisense Overview",
+      "publisher": "Hisense",
+      "url": "https://global.hisense.com/about-hisense/overview/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hisense-industrial-groups",
+      "title": "Hisense Industrial Groups",
+      "publisher": "Hisense",
+      "url": "https://global.hisense.com/about-hisense/industrial-group",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hisense-history",
+      "title": "Hisense History",
+      "publisher": "Hisense",
+      "url": "https://global.hisense.com/about-hisense/history",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hisense-legal",
+      "title": "Legal Statement",
+      "publisher": "Hisense",
+      "url": "https://www.hisense.com/law.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hisense-ai-strategy",
+      "title": "Hisense Unveils AI-Powered Growth Strategy to Shape the Next Era of Intelligent Living",
+      "publisher": "Hisense",
+      "url": "https://www.hisense.com/global/newsdetail/1701.html",
+      "publishedAt": "2026-07-21",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hisense-uk-vacuum",
+      "title": "HVC6264BKUK Stick Vacuum Cleaner",
+      "publisher": "Hisense UK",
+      "url": "https://uk.hisense.com/products/home-care/vacuum-cleaners/VACUUM-CLEANER-HVC6264BKUK-HSN/p/000000000000738921",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hisense-poland-floor-cleaner",
+      "title": "HFC433170A Floor Cleaner",
+      "publisher": "Hisense Poland",
+      "url": "https://pl.hisense.com/produkty/dom-i-opieka/odkurzacze/FLOOR-CLEANER-HFC433170A-HSN/p/000000000000742340",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hisense-austria-household",
+      "title": "Smarte Küchen- und Haushaltshelfer von Hisense und Gorenje",
+      "publisher": "Hisense Austria",
+      "url": "https://at.hisense.com/presse/smarte-kuchen-haushaltshelfer",
+      "publishedAt": "2025-11-28",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "hisense-home-appliances-filing",
+      "title": "Hisense Home Appliances Group 2025 Environmental, Social and Governance Report",
+      "publisher": "Hisense Home Appliances Group Co., Ltd. / Hong Kong Exchanges and Clearing Limited",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0429/2026042900113.pdf",
+      "publishedAt": "2026-04-29",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T22:54:58+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T22:54:58+08:00"
+}

@@ -8,7 +8,7 @@ export function BrandLogo({
   variant: "card" | "hero";
 }) {
   return (
-    <div className={`brand-logo brand-logo--${variant}`}>
+    <div className={`brand-logo brand-logo--${variant} brand-logo--${profile.slug}`}>
       <img
         src={profile.logoImage}
         alt={profile.logoImageAlt}

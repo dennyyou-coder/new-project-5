@@ -24855,6 +24855,15 @@ button.contact-help-card > .contact-help-card-copy > span {
   object-fit: contain;
 }
 
+.brand-logo--hero.brand-logo--groupe-seb {
+  min-height: 160px;
+}
+
+.brand-logo--hero.brand-logo--groupe-seb img {
+  height: 144px;
+  max-height: 144px;
+}
+
 .brand-key-facts {
   margin-top: 20px;
   overflow: hidden;

@@ -1,0 +1,195 @@
+{
+  "status": "published",
+  "slug": "delonghi",
+  "name": "De’Longhi",
+  "aliases": ["De'Longhi", "De Longhi", "De’ Longhi S.p.A."],
+  "legalEntityNote": "De’Longhi is the historic consumer brand of listed De’ Longhi S.p.A., but the brand name is not the contracting entity for every market. The group uses regional subsidiaries, its own plants and manufacturing or assembly partners. The seller, importer, legal manufacturer and warranty provider therefore remain entity-, model- and market-specific.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.delonghi.com/en",
+  "headline": "De’Longhi coffee, small appliances and global operating network",
+  "description": "A source-backed profile of De’Longhi, separating the consumer brand, listed group, controlling shareholder, regional companies, production network, channels and model-level buyer checks.",
+  "metaDescription": "De’Longhi brand profile: coffee and small appliances, listed company, production network, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with De’ Longhi S.p.A. Group-level portfolio and manufacturing disclosures do not identify the factory, origin, seller, importer or warrantor for every De’Longhi-branded product.",
+  "headquarters": "Treviso, Italy (De’ Longhi S.p.A.)",
+  "founded": "De’Longhi traces its origins to 1902; the De’Longhi brand was created in 1974",
+  "heroImage": "/images/brands/delonghi/hero-rivelia.webp",
+  "heroImageAlt": "De’Longhi Rivelia coffee machine in a home kitchen setting",
+  "heroImageCaption": "Official De’Longhi brand image of the Rivelia coffee machine, showing the brand's current coffee-led consumer positioning.",
+  "heroSourceUrl": "https://www.delonghigroup.com/en/foto",
+  "logoImage": "/images/brands/delonghi/logo.webp",
+  "logoImageAlt": "De’Longhi logo",
+  "logoSourceUrl": "https://www.delonghigroup.com/en/foto",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/delonghi/brand-group-boundary.svg",
+      "alt": "De’Longhi consumer brand, listed group, regional company and product responsibility map",
+      "caption": "The De’Longhi mark, De’ Longhi S.p.A., regional sales companies and each model's manufacturer or warrantor are related but distinct roles."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/delonghi/portfolio-channel-check.svg",
+      "alt": "De’Longhi category, model, production, channel and after-sales verification workflow",
+      "caption": "Global portfolio evidence establishes brand scope; procurement still requires an exact model and destination-market evidence chain."
+    }
+  ],
+  "ownership": {
+    "summary": "De’Longhi is a core consumer brand within listed De’ Longhi S.p.A. The group's 2025 annual report identifies De Longhi Industrial S.A. as the controlling parent. Other portfolio brands, licensed marks, regional subsidiaries, plants and partners must not be treated as interchangeable with the De’Longhi consumer brand or with the contracting entity for a specific order.",
+    "parentCompany": "De’ Longhi S.p.A."
+  },
+  "leadership": [
+    {
+      "name": "Fabio de’ Longhi",
+      "role": "Chairman and Chief Executive Officer, De’ Longhi S.p.A.",
+      "context": "The group's current management page identifies Fabio de’ Longhi as Chairman and CEO."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Hot beverage and coffee appliances",
+      "positioning": "Coffee is the center of the De’Longhi brand, including automatic and manual espresso machines, hot-beverage systems and related accessories.",
+      "buyerRelevance": "Verify model code, beverage system, voltage, water treatment, consumables, local repair capability and commercial-use limitations."
+    },
+    {
+      "name": "Food preparation and cooking",
+      "positioning": "Current De’Longhi ranges include kitchen appliances such as hot-air fryers and cooking products, while the wider group also operates other kitchen brands.",
+      "buyerRelevance": "Distinguish the De’Longhi-branded range from Kenwood, Braun-licensed, Ariete and Nutribullet products and confirm the relevant seller and warranty terms."
+    },
+    {
+      "name": "Home comfort",
+      "positioning": "The brand's current consumer scope includes portable heating, cooling and air-treatment products in selected markets.",
+      "buyerRelevance": "Confirm destination availability, energy and refrigerant requirements, seasonal assortment, certification and service coverage."
+    },
+    {
+      "name": "Wider group appliance portfolio",
+      "positioning": "De’ Longhi S.p.A.'s household division also includes Kenwood, Braun household products under licence, Ariete and Nutribullet; professional coffee brands form a separate division.",
+      "buyerRelevance": "Do not attribute a portfolio brand's trademark, factory, specifications or channel obligations to De’Longhi without product-specific evidence."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "The group's official profile states that products are manufactured in its own plants and through manufacturing and assembly partners, with all products tested according to group standards.",
+      "scope": "De’ Longhi Group production model across its portfolio; it does not assign every De’Longhi SKU to a factory",
+      "buyerCheck": "Request the exact legal manufacturer, production site, origin and applicable conformity documents for the contracted model."
+    },
+    {
+      "evidence": "The 2025 annual report describes six household-appliance production plants in Italy, Romania and China and three professional-coffee plants in Italy and Switzerland.",
+      "scope": "Group production footprint reported for 2025; household and professional divisions cover multiple brands",
+      "buyerCheck": "Do not infer a plant from category or country alone; match the model to factory and origin documentation."
+    },
+    {
+      "evidence": "The group reports dedicated research and development facilities and a global quality-control framework across internal and partner production.",
+      "scope": "Group-level R&D and quality system, not product-specific certification or supplier identity",
+      "buyerCheck": "Obtain current test reports and market certificates for the exact SKU and intended use."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "De’ Longhi Group reports commercial operations in more than 120 markets through over 50 commercial branches.",
+      "scope": "Group-wide international presence reported for 2025; product assortment and contracting entities vary",
+      "buyerCheck": "Identify the regional De’Longhi company or authorized distributor named on the quotation, invoice and warranty."
+    },
+    {
+      "evidence": "De’Longhi operates country-specific consumer sites and official where-to-buy pages that direct customers to selected retailers and local support.",
+      "scope": "Official regional consumer channels; dealer status and product availability are country-specific",
+      "buyerCheck": "Validate the seller through the relevant country site and retain evidence of authorization at the transaction date."
+    },
+    {
+      "evidence": "The group's 2025 reporting describes omnichannel distribution across retail, specialist, direct and digital routes.",
+      "scope": "Group-level distribution model across brands and markets",
+      "buyerCheck": "Confirm whether the proposed channel includes local warranty, spare parts and commercial invoice support for the exact product."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: De’Longhi has a focused consumer identity led by coffee and reinforced by kitchen and comfort appliances, supported by a wider multi-brand group. Buyers gain access to an established international network but still need to separate brand positioning from the legal maker, regional seller and warranty provider.",
+    "competitorSlugs": ["groupe-seb", "philips-home-appliances", "kitchenaid", "midea"]
+  },
+  "developments": [
+    {
+      "date": "2025-04-30",
+      "title": "Fabio de’ Longhi appointed Chairman",
+      "summary": "The current governance record identifies Fabio de’ Longhi as Chairman while continuing as Chief Executive Officer.",
+      "sourceIds": ["delonghi-management"]
+    },
+    {
+      "date": "2001",
+      "title": "De’ Longhi lists in Milan",
+      "summary": "The group's official history records its listing on the Milan stock exchange in 2001.",
+      "sourceIds": ["delonghi-history"]
+    },
+    {
+      "date": "1974",
+      "title": "De’Longhi consumer brand created",
+      "summary": "The group's history identifies 1974 as the birth of the De’Longhi brand and its first branded product.",
+      "sourceIds": ["delonghi-history", "delonghi-brand"]
+    },
+    {
+      "date": "1902",
+      "title": "Industrial origins in Treviso",
+      "summary": "De’Longhi traces its origins to a family workshop established in Treviso in 1902.",
+      "sourceIds": ["delonghi-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "delonghi-annual-report-2025",
+      "title": "Annual Financial Report 2025",
+      "publisher": "De’ Longhi S.p.A.",
+      "url": "https://www.delonghigroup.com/sites/default/files/Financial%20Annual%20Report%202025_coutesy%20copy.pdf",
+      "publishedAt": "2026",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "delonghi-profile",
+      "title": "Group Profile",
+      "publisher": "De’ Longhi S.p.A.",
+      "url": "https://www.delonghigroup.com/en/group/profile",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "delonghi-history",
+      "title": "Group History",
+      "publisher": "De’ Longhi S.p.A.",
+      "url": "https://www.delonghigroup.com/en/group/history",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "delonghi-brand",
+      "title": "De’Longhi Brand",
+      "publisher": "De’ Longhi S.p.A.",
+      "url": "https://www.delonghigroup.com/en/brand/de-longhi",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "delonghi-portfolio",
+      "title": "Brand Portfolio",
+      "publisher": "De’ Longhi S.p.A.",
+      "url": "https://www.delonghigroup.com/en/brand/portfolio",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "delonghi-management",
+      "title": "Management",
+      "publisher": "De’ Longhi S.p.A.",
+      "url": "https://www.delonghigroup.com/en/governance/management",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "delonghi-share-information",
+      "title": "Share Information",
+      "publisher": "De’ Longhi S.p.A.",
+      "url": "https://www.delonghigroup.com/en/investor/share-information",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "delonghi-where-to-buy",
+      "title": "Where to Buy",
+      "publisher": "De’Longhi USA",
+      "url": "https://www.delonghi.com/en-us/customer-service/where-to-buy",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T22:54:58+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T22:54:58+08:00"
+}

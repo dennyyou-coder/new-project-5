@@ -12,6 +12,7 @@ Use these field names exactly:
 - `aliases`
 - `legalName` (optional when `legalEntityNote` is present)
 - `legalEntityNote` (optional when `legalName` is present)
+- `schemaEntityType` (optional; `Brand` or `Organization`, defaults to `Organization`)
 - `officialWebsite`
 - `headline`
 - `description`
@@ -21,6 +22,7 @@ Use these field names exactly:
 - `founded`
 - `heroImage`
 - `heroImageAlt`
+- `heroSourceUrl` (recommended official HTTPS source for the exact Hero asset)
 - `logoImage`
 - `logoImageAlt`
 - `logoSourceUrl`
@@ -74,6 +76,7 @@ Use these field names exactly:
 - Clearly separate World Clean Biz analysis from reported fact.
 - Change `lastVerified` only after a human source review.
 - Change `lastModified` only after a material profile edit.
+- Use `schemaEntityType: "Brand"` when the page subject is a consumer brand rather than a legal company. Use `Organization` for a corporate group or operating company.
 - Keep profiles in `draft` until `npm run test:brands` accepts them.
 - Provide at least one of `legalName` or `legalEntityNote`. Use `legalEntityNote` when no single reviewed legal entity truthfully represents the consumer brand.
 
@@ -83,6 +86,7 @@ Use these field names exactly:
 - Draft profiles may omit Logo fields. Any Logo field supplied on a draft must still meet the same field-level validation.
 - `logoImage` must use `/images/brands/{slug}/logo.webp`, and `logoImageAlt` must identify the brand logo.
 - `logoSourceUrl` must be a valid HTTP(S) URL for the brand's official website or official media or press-kit page. Use it only as the retrieval source for the exact official Logo asset; do not use third-party Logo repositories or redraw the mark.
+- `heroSourceUrl`, when supplied, must be the official HTTPS product, media-library or press-kit page used to retrieve the Hero image.
 - `contentVisuals` must contain 2 or 3 items. Every `src` must begin with `/images/`, and every item requires factual, non-empty `alt` and `caption` text.
 - `contentVisuals[].placement` must be exactly one of `ownership`, `portfolio`, `operations` or `competition`.
 
