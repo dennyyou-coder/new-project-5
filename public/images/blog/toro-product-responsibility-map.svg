@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Toro model-level responsibility workflow</title><desc id="desc">Verify brand, model, origin, component supplier and service route.</desc>
+  <rect width="1600" height="900" fill="#180b0c"/><text x="90" y="125" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">FROM GROUP FACT TO PRODUCT PROOF</text><text x="90" y="185" fill="#e5bfc1" font-family="Arial,sans-serif" font-size="31">A model-level check for Toro equipment</text>
+  <g font-family="Arial,sans-serif">
+    <g fill="#3a1418" stroke="#ef6b72" stroke-width="3"><rect x="80" y="275" width="270" height="330" rx="26"/><rect x="375" y="275" width="270" height="330" rx="26"/><rect x="670" y="275" width="270" height="330" rx="26"/><rect x="965" y="275" width="270" height="330" rx="26"/><rect x="1260" y="275" width="270" height="330" rx="26"/></g>
+    <g fill="#ff949a" font-size="48" font-weight="700"><text x="115" y="350">01</text><text x="410" y="350">02</text><text x="705" y="350">03</text><text x="1000" y="350">04</text><text x="1295" y="350">05</text></g>
+    <g fill="#fff" font-size="33" font-weight="700"><text x="115" y="425">BRAND</text><text x="410" y="425">MODEL</text><text x="705" y="425">ORIGIN</text><text x="1000" y="425">COMPONENT</text><text x="1295" y="425">SERVICE</text></g>
+    <g fill="#f3d7d9" font-size="29"><text x="115" y="485">Toro or another</text><text x="115" y="530">group identity</text><text x="410" y="485">Serial range</text><text x="410" y="530">Manual + parts</text><text x="705" y="485">Product label</text><text x="705" y="530">Shipment proof</text><text x="1000" y="485">Engine / battery</text><text x="1000" y="530">Supplier warranty</text><text x="1295" y="485">Authorized dealer</text><text x="1295" y="530">Local policy</text></g>
+    <rect x="210" y="700" width="1180" height="100" rx="24" fill="#42171b"/><text x="300" y="765" fill="#fff" font-size="38" font-weight="700">The exact model and serial record control the answer.</text>
+  </g>
+</svg>

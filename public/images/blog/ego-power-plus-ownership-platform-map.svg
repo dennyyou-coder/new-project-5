@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">EGO Power+ ownership and operating model</title><desc id="desc">Chervon owns EGO, the 56V platform connects EGO products, and regional entities handle sales and warranty.</desc>
+  <rect width="1600" height="900" fill="#07120f"/><rect x="60" y="54" width="1480" height="792" rx="36" fill="#0d211a" stroke="#55d98a" stroke-width="3"/>
+  <text x="110" y="145" fill="#f2fff7" font-family="Arial,sans-serif" font-size="54" font-weight="700">EGO POWER+ — THREE SEPARATE LAYERS</text>
+  <text x="110" y="205" fill="#a8cdb8" font-family="Arial,sans-serif" font-size="31">Three separate layers answer three separate buyer questions</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="110" y="285" width="400" height="350" rx="28" fill="#15372a" stroke="#55d98a" stroke-width="3"/>
+    <text x="150" y="370" fill="#55d98a" font-size="34" font-weight="700">CORPORATE OWNER</text><text x="150" y="450" fill="#fff" font-size="54" font-weight="700">CHERVON</text>
+    <text x="150" y="520" fill="#cce8d6" font-size="31">Group strategy, R&amp;D,</text><text x="150" y="565" fill="#cce8d6" font-size="31">manufacturing and portfolio</text>
+    <rect x="600" y="285" width="400" height="350" rx="28" fill="#17362d" stroke="#7ee8a5" stroke-width="3"/>
+    <text x="640" y="370" fill="#7ee8a5" font-size="29" font-weight="700">PRODUCT PLATFORM</text><text x="640" y="450" fill="#fff" font-size="54" font-weight="700">EGO 56V</text>
+    <text x="640" y="520" fill="#cce8d6" font-size="31">Compatibility applies inside</text><text x="640" y="565" fill="#cce8d6" font-size="31">the documented EGO system</text>
+    <rect x="1090" y="285" width="400" height="350" rx="28" fill="#15372a" stroke="#55d98a" stroke-width="3"/>
+    <text x="1130" y="370" fill="#55d98a" font-size="26" font-weight="700">MARKET RESPONSIBILITY</text><text x="1130" y="450" fill="#fff" font-size="38" font-weight="700">REGIONAL ENTITY</text>
+    <text x="1130" y="520" fill="#cce8d6" font-size="31">Seller, importer, dealer</text><text x="1130" y="565" fill="#cce8d6" font-size="31">and warranty issuer vary</text>
+    <text x="535" y="475" fill="#55d98a" font-size="72">→</text><text x="1025" y="475" fill="#55d98a" font-size="72">→</text>
+    <rect x="110" y="700" width="1380" height="92" rx="22" fill="#091813"/><text x="220" y="760" fill="#f2fff7" font-size="38" font-weight="700">Common ownership does not make batteries interchangeable.</text>
+  </g>
+</svg>

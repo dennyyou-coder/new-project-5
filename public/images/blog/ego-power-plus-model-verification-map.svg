@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">EGO product verification workflow</title><desc id="desc">A five-step workflow to verify model, battery, origin, seller and warranty.</desc>
+  <rect width="1600" height="900" fill="#07120f"/><text x="90" y="125" fill="#f4fff7" font-family="Arial,sans-serif" font-size="62" font-weight="700">VERIFY THE PRODUCT — NOT JUST THE PARENT</text><text x="90" y="185" fill="#a8cdb8" font-family="Arial,sans-serif" font-size="31">An EGO purchasing and sourcing workflow</text>
+  <g font-family="Arial,sans-serif">
+    <g fill="#143527" stroke="#55d98a" stroke-width="3"><rect x="80" y="275" width="270" height="330" rx="26"/><rect x="375" y="275" width="270" height="330" rx="26"/><rect x="670" y="275" width="270" height="330" rx="26"/><rect x="965" y="275" width="270" height="330" rx="26"/><rect x="1260" y="275" width="270" height="330" rx="26"/></g>
+    <g fill="#55d98a" font-size="50" font-weight="700"><text x="115" y="350">01</text><text x="410" y="350">02</text><text x="705" y="350">03</text><text x="1000" y="350">04</text><text x="1295" y="350">05</text></g>
+    <g fill="#fff" font-size="36" font-weight="700"><text x="115" y="425">MODEL</text><text x="410" y="425">BATTERY</text><text x="705" y="425">ORIGIN</text><text x="1000" y="425">SELLER</text><text x="1295" y="425">WARRANTY</text></g>
+    <g fill="#cce8d6" font-size="27"><text x="115" y="485">SKU + revision</text><text x="115" y="530">Serial range</text><text x="410" y="485">Tool + pack</text><text x="410" y="530">Charger + manual</text><text x="705" y="485">Label + carton</text><text x="705" y="530">Shipment records</text><text x="1000" y="485">Authorized channel</text><text x="1000" y="530">Importer record</text><text x="1295" y="485">Market + use</text><text x="1295" y="530">Named issuer</text></g>
+    <rect x="190" y="690" width="1220" height="105" rx="24" fill="#173c2d"/><text x="275" y="755" fill="#fff" font-size="38" font-weight="700">Product documents identify the exact responsibility chain.</text>
+  </g>
+</svg>
