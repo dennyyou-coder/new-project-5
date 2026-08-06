@@ -1,0 +1,161 @@
+{
+  "status": "published",
+  "slug": "fisher-paykel",
+  "name": "Fisher & Paykel",
+  "aliases": ["Fisher and Paykel", "Fisher & Paykel Appliances", "F&P Appliances"],
+  "legalName": "Fisher & Paykel Appliances Limited",
+  "legalEntityNote": "Fisher & Paykel Appliances Limited is the principal appliance operating company and has been Haier-owned since 2012. Regional entities can handle sales, imports and warranty obligations; in the United States, official warranty information identifies Fisher & Paykel Appliances, Inc. as warrantor. DCS is a separately marketed cooking brand owned by Fisher & Paykel.",
+  "officialWebsite": "https://www.fisherpaykel.com/",
+  "headline": "Fisher & Paykel ownership, premium appliance portfolio, manufacturing and channels",
+  "description": "A source-backed profile of Fisher & Paykel Appliances, Haier ownership, DCS boundaries, premium kitchen and laundry products, manufacturing and buyer checks.",
+  "metaDescription": "Fisher & Paykel profile: Haier ownership, legal entities, DCS boundary, premium appliances, manufacturing network, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Fisher & Paykel or Haier. Parent ownership, the Fisher & Paykel and DCS brands, regional entities, factories, suppliers, importers and warranty providers are separate layers and should not be generalized.",
+  "headquarters": "Auckland, New Zealand",
+  "founded": "1934",
+  "heroImage": "/images/brands/fisher-paykel/hero-integrated-kitchen.webp",
+  "heroImageAlt": "Fisher & Paykel built-in ovens in a premium integrated kitchen",
+  "heroImageCaption": "Official Fisher & Paykel product scene showing its integrated built-in oven portfolio.",
+  "logoImage": "/images/brands/fisher-paykel/logo.webp",
+  "logoImageAlt": "Fisher & Paykel logo",
+  "logoSourceUrl": "https://www.fisherpaykel.com/us/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/fisher-paykel/ownership-structure.svg",
+      "alt": "Fisher & Paykel ownership and operating identity map",
+      "caption": "Haier ownership, Fisher & Paykel Appliances Limited, regional entities and the separate DCS brand represent different diligence layers."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/fisher-paykel/operations-verification.svg",
+      "alt": "Fisher & Paykel manufacturing network and buyer verification map",
+      "caption": "The disclosed international manufacturing network and supplier model still require factory and origin checks for each appliance."
+    }
+  ],
+  "ownership": {
+    "summary": "Fisher & Paykel Appliances Limited is a New Zealand-rooted premium appliance company acquired by Haier in 2012 and reported within Haier's global home-appliance portfolio. Fisher & Paykel continues as a distinct brand and operating business; Haier Group, Haier Smart Home, Fisher & Paykel Appliances Limited, regional subsidiaries and the separately marketed DCS brand are related but not interchangeable.",
+    "parentCompany": "Haier Smart Home Co., Ltd., within Haier Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Premium cooking appliances",
+      "positioning": "Built-in ovens, cooktops, ranges and ventilation emphasize integrated kitchen design and premium materials.",
+      "buyerRelevance": "Verify dimensions, fuel, voltage, ventilation, installation certification and local service capacity by model."
+    },
+    {
+      "name": "Refrigeration and dishwashing",
+      "positioning": "Integrated refrigeration and DishDrawer dishwashers are distinctive parts of the Fisher & Paykel design system.",
+      "buyerRelevance": "Cabinet specifications, water connections, panels, accessories, energy labels and spare parts require market-specific checks."
+    },
+    {
+      "name": "Laundry appliances",
+      "positioning": "Washers and dryers extend the brand's coordinated whole-home offer in selected markets.",
+      "buyerRelevance": "Range availability, capacity, origin, voltage and warranty vary by country and product generation."
+    },
+    {
+      "name": "DCS outdoor cooking",
+      "positioning": "DCS is an owned but separately marketed professional-style outdoor cooking brand.",
+      "buyerRelevance": "Distribution or trademark authorization for Fisher & Paykel should not be assumed to include DCS."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Haier's official Fisher & Paykel profile reports manufacturing operations in Thailand, China, Italy and Mexico.",
+      "scope": "Current company-level manufacturing network",
+      "buyerCheck": "Match the exact product, model, factory and country-of-origin record rather than assuming one location serves the full range."
+    },
+    {
+      "evidence": "Fisher & Paykel's supply-chain statement says products can be manufactured by group operations or by suppliers on the group's behalf.",
+      "scope": "Group manufacturing and supplier model",
+      "buyerCheck": "Identify the legal manufacturer, physical factory, critical suppliers, audit rights and engineering-change controls for each SKU."
+    },
+    {
+      "evidence": "The company's history reflects a New Zealand origin, while current production is an international network.",
+      "scope": "Historical identity versus current model origin",
+      "buyerCheck": "Do not use brand heritage as an origin claim; rely on the rating plate, customs and supplier documentation."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Fisher & Paykel operates regional websites and sells through premium appliance dealers, kitchen designers, architects, builders and selected direct channels.",
+      "scope": "Market-specific premium distribution",
+      "buyerCheck": "Confirm dealer authorization, project territory, display obligations, installation scope and after-sales coverage."
+    },
+    {
+      "evidence": "Regional Fisher & Paykel entities can carry local sales, import and warranty responsibilities.",
+      "scope": "Regional legal-entity roles",
+      "buyerCheck": "Retain the quotation, invoice, importer label, compliance declaration and warranty naming each responsible entity."
+    },
+    {
+      "evidence": "The U.S. warranty identifies Fisher & Paykel Appliances, Inc. as warrantor for covered North American products.",
+      "scope": "United States and applicable North American warranty terms",
+      "buyerCheck": "Do not extend the U.S. warrantor or coverage period to another market without its local terms."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Fisher & Paykel competes through integrated premium design, distinctive products such as DishDrawer and a specialist dealer and design channel. Haier ownership adds scale without eliminating the brand's separate operating identity. Buyers should focus on regional entity, factory, origin, installer and warranty evidence rather than relying on New Zealand heritage or parent ownership alone.",
+    "competitorSlugs": ["miele", "bosch-home-appliances", "ge-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2012-11-23",
+      "title": "Fisher & Paykel joins Haier",
+      "summary": "Haier completed its acquisition while Fisher & Paykel continued as a distinct appliance company and brand.",
+      "sourceIds": ["fp-history", "haier-fp-profile"]
+    },
+    {
+      "date": "2004-01-01",
+      "title": "Fisher & Paykel acquires DCS",
+      "summary": "The acquisition added a separately marketed outdoor-cooking brand to the appliance business.",
+      "sourceIds": ["fp-history"]
+    },
+    {
+      "date": "1934-01-01",
+      "title": "Fisher & Paykel is founded in New Zealand",
+      "summary": "The company's New Zealand heritage begins in 1934, distinct from the current international manufacturing footprint.",
+      "sourceIds": ["fp-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fp-history",
+      "title": "Fisher & Paykel History",
+      "publisher": "Fisher & Paykel",
+      "url": "https://www.fisherpaykel.com/us/our-story/history/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "fp-about",
+      "title": "About Fisher & Paykel",
+      "publisher": "Fisher & Paykel",
+      "url": "https://www.fisherpaykel.com/us/our-story/about-us",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "haier-fp-profile",
+      "title": "Fisher & Paykel Profile",
+      "publisher": "Haier",
+      "url": "https://www.haier.com/global/haier-ecosystem/haier/fisherandpaykel/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "fp-modern-slavery",
+      "title": "Fisher & Paykel Appliances Group Modern Slavery Statement FY22",
+      "publisher": "Fisher & Paykel Appliances",
+      "url": "https://www.fisherpaykel.com/on/demandware.static/-/Library-Sites-FisherPaykelSharedLibrary/default/dwb1aa5119/pdfs/legal-documents/FPA-UK-Modern-Slavery-Act-Statement-FY22.pdf",
+      "publishedAt": "2022",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "fp-us-warranty",
+      "title": "Fisher & Paykel North American Warranty Information",
+      "publisher": "Fisher & Paykel",
+      "url": "https://www.fisherpaykel.com/us/help-and-support/warranty-information/",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T11:35:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T11:35:00+08:00"
+}

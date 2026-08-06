@@ -250,7 +250,7 @@ test("brand directory route exposes one canonical collection with links for publ
   assert.match(source, /profiles\.map\(\(profile\)\s*=>\s*\(/);
   assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
   assert.match(source, /href="\/blog"/);
-  assert.match(source, /Cleaning Industry Brand Intelligence/);
+  assert.match(source, /Cleaning & Home Appliance Brand Intelligence/);
 });
 
 test("brand directory groups profiles below each product-category introduction", () => {

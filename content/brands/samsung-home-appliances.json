@@ -1,0 +1,164 @@
+{
+  "status": "published",
+  "slug": "samsung-home-appliances",
+  "name": "Samsung Home Appliances",
+  "aliases": ["Samsung Appliances", "Samsung Bespoke", "Samsung Digital Appliances"],
+  "legalName": "Samsung Electronics Co., Ltd.",
+  "legalEntityNote": "Samsung Electronics Co., Ltd. operates the Samsung home-appliance business through its Device eXperience organization and regional subsidiaries. Samsung Electronics America and Samsung Electronics Home Appliances America have defined U.S. sales or manufacturing roles; those entities, physical factories and local warranty providers should not be treated as interchangeable.",
+  "officialWebsite": "https://www.samsung.com/us/home-appliances/",
+  "headline": "Samsung appliance ownership, Bespoke portfolio, manufacturing and buyer checks",
+  "description": "A source-backed profile of Samsung Electronics' home-appliance business, Bespoke and Jet portfolios, named manufacturing evidence, regional entities and channels.",
+  "metaDescription": "Samsung Home Appliances profile: Samsung Electronics ownership, Bespoke and Jet products, Newberry manufacturing evidence, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Samsung. Group ownership, regional sales companies, trademark rights, named factories and model-level origin or warranty evidence are separate facts and should not be generalized across every Samsung appliance.",
+  "headquarters": "Suwon, Gyeonggi-do, South Korea",
+  "founded": "1969 as Samsung Electronics",
+  "heroImage": "/images/brands/samsung-home-appliances/hero-bespoke-ai-jet-lite.webp",
+  "heroImageAlt": "Samsung Bespoke AI Jet Lite cordless vacuum cleaners with charging stations",
+  "heroImageCaption": "Official Samsung product image for the Bespoke AI Jet Lite cordless-vacuum range.",
+  "logoImage": "/images/brands/samsung-home-appliances/logo.webp",
+  "logoImageAlt": "Samsung logo",
+  "logoSourceUrl": "https://news.samsung.com/global/samsung-launches-bespoke-ai-jet-lite-light-yet-powerful-cordless-stick-vacuum",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/samsung-home-appliances/ownership-structure.svg",
+      "alt": "Samsung home-appliance business and regional entity map",
+      "caption": "Samsung Electronics is the listed operating company, while regional subsidiaries, factories and service entities can carry narrower market-specific roles."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/samsung-home-appliances/operations-verification.svg",
+      "alt": "Samsung appliance manufacturing and buyer verification map",
+      "caption": "Newberry evidence supports specified U.S. residential washers, not every Samsung appliance or cleaning product."
+    }
+  ],
+  "ownership": {
+    "summary": "Samsung Home Appliances is a consumer business of Samsung Electronics Co., Ltd. The company's Digital Appliances organization develops and markets major appliances and cleaning products under Samsung, Bespoke and Jet product names. Samsung Electronics is part of the wider Samsung group, but the group name does not replace the listed operating company, regional contracting entity, manufacturer, factory, importer or warrantor for a transaction.",
+    "parentCompany": "Samsung Electronics Co., Ltd."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Refrigeration, cooking and dishwashing",
+      "positioning": "Samsung combines conventional and Bespoke-design major appliances with connected functions in selected markets.",
+      "buyerRelevance": "Dimensions, finish systems, voltage, app region, installation and service coverage must be checked by exact model and country."
+    },
+    {
+      "name": "Laundry appliances",
+      "positioning": "Washers, dryers and combined laundry systems are a core Samsung appliance category, including selected AI-assisted functions.",
+      "buyerRelevance": "Newberry manufacturing evidence applies to specified U.S. residential washers; origin and factory require model-level documents."
+    },
+    {
+      "name": "Jet cordless and robotic floor care",
+      "positioning": "Jet cordless vacuums, Clean Station systems and Jet Bot robotic products extend Samsung into premium floor care.",
+      "buyerRelevance": "Confirm batteries, docks, consumables, app availability, radio approvals, warranty and local service for the exact regional SKU."
+    },
+    {
+      "name": "Bespoke AI and SmartThings ecosystem",
+      "positioning": "Bespoke AI is a product and experience layer supported by SmartThings connectivity rather than a separate legal manufacturer.",
+      "buyerRelevance": "Buyers should review account ownership, data terms, supported integrations, cybersecurity support and offline product capability."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Samsung's official South Carolina materials identify Newberry as a U.S. home-appliance manufacturing facility producing residential washing machines.",
+      "scope": "Named Newberry facility and covered U.S. washer production",
+      "buyerCheck": "Match the model, rating label, country-of-origin marking and shipment documents before making a U.S.-manufacturing claim."
+    },
+    {
+      "evidence": "Samsung Electronics reports a global network of subsidiaries and production sites across its businesses.",
+      "scope": "Samsung Electronics group network, not a model-level factory list",
+      "buyerCheck": "Require the exact legal manufacturer, factory address, exporter and change-control terms for each sourced model."
+    },
+    {
+      "evidence": "Official product launches identify Digital Appliances as the Samsung Electronics business responsible for named appliance innovations.",
+      "scope": "Business ownership and named product families",
+      "buyerCheck": "Do not substitute a business-unit name for the legal entity shown on compliance, import, invoice or warranty documents."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Samsung operates country-specific appliance websites and sells through direct ecommerce, authorized retailers and service networks.",
+      "scope": "Market-specific Samsung channels",
+      "buyerCheck": "Verify seller authorization, territory, channel rights, installation responsibility and local after-sales coverage."
+    },
+    {
+      "evidence": "Regional Samsung Electronics subsidiaries can handle sales and support while other entities operate manufacturing facilities.",
+      "scope": "Regional entity separation",
+      "buyerCheck": "Record the contracting seller, importer of record, manufacturer and warrantor separately in the transaction file."
+    },
+    {
+      "evidence": "Samsung's U.S. warranty page applies product- and market-specific terms to covered home appliances.",
+      "scope": "United States warranty information",
+      "buyerCheck": "Do not copy U.S. coverage to another country; retain the exact model warranty and authorized-service terms."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Samsung combines major-appliance scale, design-led Bespoke ranges, SmartThings connectivity and a visible Jet floor-care portfolio. The principal buyer risk is identity compression: Samsung group, Samsung Electronics, a regional subsidiary, a named factory and a warranty provider may all be related while carrying different legal responsibilities.",
+    "competitorSlugs": ["lg-home-appliances", "haier-home-appliances", "dyson"]
+  },
+  "developments": [
+    {
+      "date": "2025-04-28",
+      "title": "Samsung launches Bespoke AI Jet Lite",
+      "summary": "The official launch adds a lighter cordless model with AI Cleaning Mode 2.0 to Samsung's Jet floor-care portfolio.",
+      "sourceIds": ["samsung-jet-lite"]
+    },
+    {
+      "date": "2023-01-12",
+      "title": "Newberry facility marks five years of U.S. appliance production",
+      "summary": "Samsung's announcement describes the South Carolina operation and its residential washing-machine production scope.",
+      "sourceIds": ["samsung-newberry-five-years"]
+    },
+    {
+      "date": "2017-06-28",
+      "title": "Samsung announces South Carolina appliance facility",
+      "summary": "The company established a Newberry manufacturing operation for specified U.S. home-appliance production.",
+      "sourceIds": ["samsung-newberry-faq"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "samsung-interim-2025",
+      "title": "Samsung Electronics 2025 Half-year Business Report",
+      "publisher": "Samsung Electronics",
+      "url": "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_Half_Interim_Report.pdf",
+      "publishedAt": "2025",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "samsung-newberry-faq",
+      "title": "FAQs: Samsung South Carolina Home Appliance Facility",
+      "publisher": "Samsung Electronics America",
+      "url": "https://news.samsung.com/us/faqs-samsung-south-carolina-home-appliance-facility",
+      "publishedAt": "2017-06-28",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "samsung-newberry-five-years",
+      "title": "Samsung Home Appliances America Celebrates 5 Years in South Carolina",
+      "publisher": "Samsung Electronics America",
+      "url": "https://news.samsung.com/us/samsung-home-appliances-america-celebrates-5-years-in-south-carolina-seha/",
+      "publishedAt": "2023-01-12",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "samsung-jet-lite",
+      "title": "Samsung Launches Bespoke AI Jet Lite",
+      "publisher": "Samsung Electronics",
+      "url": "https://news.samsung.com/global/samsung-launches-bespoke-ai-jet-lite-light-yet-powerful-cordless-stick-vacuum",
+      "publishedAt": "2025-04-28",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "samsung-us-warranty",
+      "title": "Samsung Home Appliance Warranty",
+      "publisher": "Samsung Electronics America",
+      "url": "https://www.samsung.com/us/home-appliances/warranty/",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T11:31:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T11:31:00+08:00"
+}

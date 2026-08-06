@@ -11,12 +11,12 @@ import { getInsights } from "@/lib/content";
 const siteUrl = "https://worldcleanbiz.com";
 
 export const metadata: Metadata = {
-  title: "Cleaning Industry Brand Intelligence",
+  title: "Cleaning & Home Appliance Brand Intelligence",
   description:
-    "Independent brand profiles for cleaning-industry buyers, distributors and market professionals.",
+    "Independent brand profiles for cleaning- and home-appliance buyers, distributors and market professionals.",
   alternates: { canonical: "/brands" },
   openGraph: {
-    title: "Cleaning Industry Brand Intelligence | World Clean Biz",
+    title: "Cleaning & Home Appliance Brand Intelligence | World Clean Biz",
     description:
       "Research company ownership, product portfolios, manufacturing, channels and strategy.",
     type: "website",
@@ -36,13 +36,14 @@ export default function BrandsPage() {
         <div className="insights-page-container guides-hero-grid brand-directory-hero">
           <div>
             <p className="eyebrow">Independent Brand Intelligence</p>
-            <h1>Cleaning Industry Brand Intelligence</h1>
+            <h1>Cleaning & Home Appliance Brand Intelligence</h1>
             <p>
-              Verified company profiles help buyers, distributors and industry
-              professionals evaluate ownership, products, supply chains,
-              channels and competitive strategy. Brands with verified product
-              lines across markets appear in every relevant buying category;
-              the published total counts unique brand profiles.
+              Verified company profiles help cleaning and home-appliance buyers,
+              distributors and industry professionals evaluate ownership,
+              trademarks, operating companies, products, supply chains, channels
+              and competitive strategy. Brands with verified product lines across
+              markets appear in every relevant buying category; the published
+              total counts unique brand profiles.
             </p>
           </div>
           <div className="guides-hero-stat">
