@@ -1,7 +1,7 @@
 # 家电品牌扩展证据审计记录
 
-审查日期：2026-08-06  
-目标分支：`codex/home-appliance-brand-expansion`  
+审查日期：2026-08-06
+目标分支：`codex/home-appliance-brand-expansion`
 基线：`origin/main` @ `21e8522b2e38895ac2054e7f9875451461b9052f`
 
 ## 范围与发布门

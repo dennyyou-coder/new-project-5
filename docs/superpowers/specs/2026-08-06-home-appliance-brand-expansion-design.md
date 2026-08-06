@@ -93,4 +93,3 @@ The existing brand-detail component system remains unchanged unless verification
 ## Failure Handling
 
 An identity conflict, uncertain trademark or operating boundary, missing official logo, unsuitable real hero, fewer than three legitimate article relationships, failed build or failed Preview keeps the affected profile in draft and blocks the one-time release. The implementation does not overwrite an uncertain slug, invent a relationship, weaken a test or mix the user's unrelated working-tree files into the branch.
-
