@@ -5,7 +5,8 @@ export type BrandCategorySlug =
   | "lawn-garden-equipment"
   | "pool-equipment-pool-care"
   | "floorcare-home-cleaning"
-  | "commercial-industrial-cleaning";
+  | "commercial-industrial-cleaning"
+  | "home-appliances-small-appliances";
 
 export type BrandCategory = {
   slug: BrandCategorySlug;
@@ -150,9 +151,11 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "electrolux",
       "eufy",
       "eureka",
+      "haier-home-appliances",
       "hoover",
       "irobot",
       "karcher",
+      "lg-home-appliances",
       "midea",
       "miele",
       "mova",
@@ -161,30 +164,25 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "philips-home-appliances",
       "roborock",
       "ryobi",
+      "samsung-home-appliances",
       "shark",
       "tineco",
       "vax"
     ],
     primaryBrandSlugs: [
-      "aeg",
       "bissell",
-      "bosch-home-appliances",
       "dirt-devil",
       "dji-romo",
       "dreame",
       "dyson",
       "ecovacs",
-      "electrolux",
       "eufy",
       "eureka",
       "hoover",
       "irobot",
-      "midea",
-      "miele",
       "mova",
       "narwal",
       "oreck",
-      "philips-home-appliances",
       "roborock",
       "shark",
       "tineco",
@@ -199,6 +197,39 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "Verified profiles of commercial and industrial cleaning brands, focused on floorcare systems, autonomous equipment, pressure washing and professional distribution models.",
     brandSlugs: ["ecovacs", "karcher", "nilfisk", "oreck"],
     primaryBrandSlugs: ["karcher", "nilfisk"]
+  },
+  {
+    slug: "home-appliances-small-appliances",
+    name: "Home Appliances & Small Appliances",
+    title: "Home Appliances & Small Appliances Brand Intelligence",
+    description:
+      "Verified profiles of home-appliance and small-appliance brands for buyers assessing ownership, trademark and operating-company boundaries, product portfolios, manufacturing networks, channels and after-sales responsibility.",
+    brandSlugs: [
+      "aeg",
+      "bosch-home-appliances",
+      "electrolux",
+      "fisher-paykel",
+      "ge-appliances",
+      "haier-home-appliances",
+      "lg-home-appliances",
+      "midea",
+      "miele",
+      "philips-home-appliances",
+      "samsung-home-appliances"
+    ],
+    primaryBrandSlugs: [
+      "aeg",
+      "bosch-home-appliances",
+      "electrolux",
+      "fisher-paykel",
+      "ge-appliances",
+      "haier-home-appliances",
+      "lg-home-appliances",
+      "midea",
+      "miele",
+      "philips-home-appliances",
+      "samsung-home-appliances"
+    ]
   }
 ];
 
