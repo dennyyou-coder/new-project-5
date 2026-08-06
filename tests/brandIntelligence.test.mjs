@@ -163,6 +163,16 @@ test("verified cross-category brands appear in each relevant market and retain o
   assert.deepEqual(membershipsFor("fisher-paykel"), [
     "home-appliances-small-appliances"
   ]);
+  assert.deepEqual(membershipsFor("beko"), [
+    "floorcare-home-cleaning",
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("whirlpool"), [
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("kitchenaid"), [
+    "home-appliances-small-appliances"
+  ]);
 
   assert.equal(getBrandCategoryForProfile("aiper")?.slug, "pool-equipment-pool-care");
   assert.equal(getBrandCategoryForProfile("ecovacs")?.slug, "floorcare-home-cleaning");
@@ -176,6 +186,18 @@ test("verified cross-category brands appear in each relevant market and retain o
   );
   assert.equal(
     getBrandCategoryForProfile("ge-appliances")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("beko")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("kitchenaid")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("whirlpool")?.slug,
     "home-appliances-small-appliances"
   );
 });
@@ -613,6 +635,18 @@ test("home-appliance analysis exposes only the verified primary and related bran
     "who-owns-midea-appliances-brand-portfolio": {
       primaryBrands: ["midea"],
       relatedBrands: ["eureka"]
+    },
+    "who-owns-whirlpool-appliances-beko-europe": {
+      primaryBrands: ["whirlpool"],
+      relatedBrands: ["beko", "kitchenaid"]
+    },
+    "who-makes-kitchenaid-appliances-whirlpool": {
+      primaryBrands: ["kitchenaid"],
+      relatedBrands: ["whirlpool", "beko"]
+    },
+    "who-owns-beko-appliances-beko-europe": {
+      primaryBrands: ["beko"],
+      relatedBrands: ["whirlpool", "kitchenaid"]
     }
   };
 
@@ -624,7 +658,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the sixty-one published profiles and approved article relationships", () => {
+test("the release gate validates the sixty-four published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -638,6 +672,7 @@ test("the release gate validates the sixty-one published profiles and approved a
     "aiper",
     "aquabot",
     "beatbot",
+    "beko",
     "bissell",
     "black-decker",
     "bosch-home-appliances",
@@ -667,6 +702,7 @@ test("the release gate validates the sixty-one published profiles and approved a
     "husqvarna",
     "irobot",
     "karcher",
+    "kitchenaid",
     "kobalt",
     "lg-home-appliances",
     "makita",
@@ -693,6 +729,7 @@ test("the release gate validates the sixty-one published profiles and approved a
     "sunseeker",
     "tineco",
     "vax",
+    "whirlpool",
     "worx",
     "wybot"
   ];
@@ -836,6 +873,9 @@ test("the release gate validates the sixty-one published profiles and approved a
     "who-owns-miele-family-manufacturing-network": ["miele"],
     "who-owns-midea-appliances-brand-portfolio": ["midea"],
     "who-owns-milwaukee-tools-tti-manufacturing": ["milwaukee", "tti"],
+    "who-makes-kitchenaid-appliances-whirlpool": ["kitchenaid"],
+    "who-owns-beko-appliances-beko-europe": ["beko"],
+    "who-owns-whirlpool-appliances-beko-europe": ["whirlpool"],
     "who-owns-metabo-metabo-hpt-hikoki": ["metabo", "hikoki"],
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris", "fluidra"],
     "who-owns-ryobi-tti-kyocera": ["ryobi"],
@@ -870,7 +910,7 @@ test("the release gate validates the sixty-one published profiles and approved a
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 61);
+  assert.equal(loadedProfiles.length, 64);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -896,8 +936,8 @@ test("the release gate validates the sixty-one published profiles and approved a
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 130);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 205);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 133);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 208);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -936,7 +976,7 @@ test("the release gate validates the sixty-one published profiles and approved a
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 61);
+  assert.equal(profiles.length, 64);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -955,6 +995,53 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("home-appliance batch three profiles use dedicated assets, article depth, and current entity boundaries", async () => {
+  const newSlugs = ["beko", "kitchenaid", "whirlpool"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const articles = getInsights();
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published", `${slug} must be published`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(
+      candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)),
+      `${slug} must use dedicated content visuals`
+    );
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+
+    const relatedArticles = articles.filter(
+      (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+    );
+    assert.ok(relatedArticles.length >= 3, `${slug} must have at least three article relationships`);
+  }
+
+  assert.match(profilesBySlug.get("whirlpool").ownership.summary, /Whirlpool Corporation/i);
+  assert.match(profilesBySlug.get("whirlpool").ownership.summary, /Beko Europe.*licen[cs]/i);
+  assert.match(profilesBySlug.get("kitchenaid").ownership.summary, /Whirlpool Corporation/i);
+  assert.match(profilesBySlug.get("kitchenaid").legalEntityNote, /major.*countertop|countertop.*major/i);
+  assert.match(profilesBySlug.get("beko").ownership.summary, /Beko Europe.*100%|100%.*Beko Europe/i);
+  assert.match(profilesBySlug.get("beko").legalEntityNote, /Arçelik A\.Ş\./i);
 });
 
 test("home-appliance launch profiles have dedicated assets, article depth, and explicit identity boundaries", async () => {

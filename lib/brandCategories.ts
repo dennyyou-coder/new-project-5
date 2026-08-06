@@ -139,6 +139,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "Verified profiles of floorcare and home-cleaning brands, covering robot vacuums, floor washers, vacuum systems, home appliances and their ownership, channels and supply-chain evidence.",
     brandSlugs: [
       "aeg",
+      "beko",
       "bissell",
       "black-decker",
       "bosch-home-appliances",
@@ -206,29 +207,35 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "Verified profiles of home-appliance and small-appliance brands for buyers assessing ownership, trademark and operating-company boundaries, product portfolios, manufacturing networks, channels and after-sales responsibility.",
     brandSlugs: [
       "aeg",
+      "beko",
       "bosch-home-appliances",
       "electrolux",
       "fisher-paykel",
       "ge-appliances",
       "haier-home-appliances",
+      "kitchenaid",
       "lg-home-appliances",
       "midea",
       "miele",
       "philips-home-appliances",
-      "samsung-home-appliances"
+      "samsung-home-appliances",
+      "whirlpool"
     ],
     primaryBrandSlugs: [
       "aeg",
+      "beko",
       "bosch-home-appliances",
       "electrolux",
       "fisher-paykel",
       "ge-appliances",
       "haier-home-appliances",
+      "kitchenaid",
       "lg-home-appliances",
       "midea",
       "miele",
       "philips-home-appliances",
-      "samsung-home-appliances"
+      "samsung-home-appliances",
+      "whirlpool"
     ]
   }
 ];
@@ -288,7 +295,7 @@ export function buildBrandCategorySitemapEntries(
 ) {
   return getPublishedBrandCategories(profiles).map(({ category }) => ({
     url: `${siteUrl}/brands/${category.slug}`,
-    lastModified: "2026-08-05"
+    lastModified: "2026-08-06"
   }));
 }
 

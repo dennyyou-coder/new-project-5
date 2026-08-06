@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Whirlpool appliance buyer verification workflow</title>
+  <desc id="desc">A five-step workflow for verifying Whirlpool product identity, territory, manufacture, import and warranty.</desc>
+  <rect width="1600" height="900" fill="#f4f1e8"/>
+  <text x="100" y="110" fill="#0b2538" font-family="Arial, sans-serif" font-size="56" font-weight="700">Verify the Whirlpool product, not only the brand name</text>
+  <text x="100" y="168" fill="#536c7d" font-family="Arial, sans-serif" font-size="28">A model-level procurement check for regional rights and after-sales accountability</text>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(100 255)"><circle cx="75" cy="75" r="72" fill="#0d6973"/><text x="75" y="91" text-anchor="middle" fill="#fff" font-size="46" font-weight="700">1</text><text x="0" y="190" fill="#0b2538" font-size="29" font-weight="700">Model label</text><text x="0" y="232" fill="#536c7d" font-size="23">Capture model, serial</text><text x="0" y="264" fill="#536c7d" font-size="23">and rating plate.</text></g>
+    <path d="M280 330 H390" stroke="#d1833d" stroke-width="6"/><polygon points="390,330 360,312 360,348" fill="#d1833d"/>
+    <g transform="translate(400 255)"><circle cx="75" cy="75" r="72" fill="#0d6973"/><text x="75" y="91" text-anchor="middle" fill="#fff" font-size="46" font-weight="700">2</text><text x="0" y="190" fill="#0b2538" font-size="29" font-weight="700">Territory</text><text x="0" y="232" fill="#536c7d" font-size="23">Confirm the official</text><text x="0" y="264" fill="#536c7d" font-size="23">country catalogue.</text></g>
+    <path d="M580 330 H690" stroke="#d1833d" stroke-width="6"/><polygon points="690,330 660,312 660,348" fill="#d1833d"/>
+    <g transform="translate(700 255)"><circle cx="75" cy="75" r="72" fill="#0d6973"/><text x="75" y="91" text-anchor="middle" fill="#fff" font-size="46" font-weight="700">3</text><text x="0" y="190" fill="#0b2538" font-size="29" font-weight="700">Manufacturer</text><text x="0" y="232" fill="#536c7d" font-size="23">Read the declared</text><text x="0" y="264" fill="#536c7d" font-size="23">legal entity.</text></g>
+    <path d="M880 330 H990" stroke="#d1833d" stroke-width="6"/><polygon points="990,330 960,312 960,348" fill="#d1833d"/>
+    <g transform="translate(1000 255)"><circle cx="75" cy="75" r="72" fill="#0d6973"/><text x="75" y="91" text-anchor="middle" fill="#fff" font-size="46" font-weight="700">4</text><text x="0" y="190" fill="#0b2538" font-size="29" font-weight="700">Importer</text><text x="0" y="232" fill="#536c7d" font-size="23">Match invoice and</text><text x="0" y="264" fill="#536c7d" font-size="23">local compliance.</text></g>
+    <path d="M1180 330 H1290" stroke="#d1833d" stroke-width="6"/><polygon points="1290,330 1260,312 1260,348" fill="#d1833d"/>
+    <g transform="translate(1300 255)"><circle cx="75" cy="75" r="72" fill="#0d6973"/><text x="75" y="91" text-anchor="middle" fill="#fff" font-size="46" font-weight="700">5</text><text x="0" y="190" fill="#0b2538" font-size="29" font-weight="700">Warranty</text><text x="0" y="232" fill="#536c7d" font-size="23">Identify the liable</text><text x="0" y="264" fill="#536c7d" font-size="23">service entity.</text></g>
+  </g>
+  <rect x="100" y="625" width="1400" height="150" rx="26" fill="#0b2538"/>
+  <text x="150" y="688" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Do not infer a factory from group ownership.</text>
+  <text x="150" y="738" fill="#bcd0da" font-family="Arial, sans-serif" font-size="26">Request declarations and warranty terms for the exact SKU, market and production period.</text>
+  <text x="100" y="842" fill="#687d88" font-family="Arial, sans-serif" font-size="22">World Clean Biz buyer verification map · reviewed 6 August 2026</text>
+</svg>

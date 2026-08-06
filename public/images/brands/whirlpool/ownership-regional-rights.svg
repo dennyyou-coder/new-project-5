@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Whirlpool ownership and regional rights map</title>
+  <desc id="desc">A sourcing map separating Whirlpool Corporation ownership from Beko Europe regional trademark licensing.</desc>
+  <rect width="1600" height="900" fill="#071827"/>
+  <text x="110" y="115" fill="#f5f2e9" font-family="Arial, sans-serif" font-size="54" font-weight="700">Whirlpool: ownership is not the same as regional operation</text>
+  <text x="110" y="172" fill="#9fb3c2" font-family="Arial, sans-serif" font-size="28">Current structure after the June 2026 Beko Europe share acquisition</text>
+  <rect x="110" y="245" width="600" height="250" rx="24" fill="#102b40" stroke="#42c5b3" stroke-width="3"/>
+  <text x="155" y="315" fill="#42c5b3" font-family="Arial, sans-serif" font-size="24" font-weight="700">BRAND OWNER / GLOBAL GROUP</text>
+  <text x="155" y="380" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Whirlpool Corporation</text>
+  <text x="155" y="430" fill="#c6d2db" font-family="Arial, sans-serif" font-size="26">Whirlpool remains a core corporate brand.</text>
+  <text x="155" y="468" fill="#c6d2db" font-family="Arial, sans-serif" font-size="26">Ownership alone does not identify each seller or factory.</text>
+  <path d="M710 370 H875" stroke="#f0a65a" stroke-width="6" stroke-dasharray="18 12"/>
+  <polygon points="875,370 845,352 845,388" fill="#f0a65a"/>
+  <text x="735" y="335" fill="#f0a65a" font-family="Arial, sans-serif" font-size="24" font-weight="700">TRADEMARK LICENCE</text>
+  <rect x="875" y="245" width="615" height="250" rx="24" fill="#102b40" stroke="#f0a65a" stroke-width="3"/>
+  <text x="920" y="315" fill="#f0a65a" font-family="Arial, sans-serif" font-size="24" font-weight="700">EUROPEAN OPERATOR</text>
+  <text x="920" y="380" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Beko Europe</text>
+  <text x="920" y="430" fill="#c6d2db" font-family="Arial, sans-serif" font-size="26">100% owned by Beko B.V. after 23 June 2026.</text>
+  <text x="920" y="468" fill="#c6d2db" font-family="Arial, sans-serif" font-size="26">Uses licensed Whirlpool rights within stated scope.</text>
+  <rect x="110" y="570" width="1380" height="205" rx="24" fill="#0c2233"/>
+  <text x="155" y="630" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700">Buyer implication</text>
+  <text x="155" y="684" fill="#c6d2db" font-family="Arial, sans-serif" font-size="27">Verify the model label, market, importer and warranty entity. A shared brand name does not prove</text>
+  <text x="155" y="728" fill="#c6d2db" font-family="Arial, sans-serif" font-size="27">that the same company manufactured or supports every Whirlpool-labelled appliance worldwide.</text>
+  <text x="110" y="842" fill="#718b9d" font-family="Arial, sans-serif" font-size="22">World Clean Biz evidence map · reviewed 6 August 2026</text>
+</svg>

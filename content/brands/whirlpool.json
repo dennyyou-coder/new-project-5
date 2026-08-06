@@ -1,0 +1,179 @@
+{
+  "status": "published",
+  "slug": "whirlpool",
+  "name": "Whirlpool",
+  "aliases": ["Whirlpool Appliances", "Whirlpool brand"],
+  "legalEntityNote": "Whirlpool is a consumer appliance brand owned by Whirlpool Corporation. Regional Whirlpool companies operate retained markets, while Beko Europe B.V. uses the Whirlpool brand under a licence limited to specified European jurisdictions. The legal seller, manufacturer, importer and warrantor vary by product and country.",
+  "officialWebsite": "https://www.whirlpool.com/",
+  "headline": "Whirlpool brand ownership, Beko Europe licensing and appliance responsibility",
+  "description": "A source-backed profile separating the Whirlpool consumer brand, Whirlpool Corporation, Beko Europe's regional licence and model-level manufacturing and warranty responsibility.",
+  "metaDescription": "Whirlpool brand profile: Whirlpool Corporation ownership, Beko Europe licensing, products, manufacturing, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Whirlpool Corporation or Beko Europe. Global brand ownership, regional licences, operating companies, factories, importers and warranties are separate layers and should not be generalized to every Whirlpool appliance.",
+  "headquarters": "Benton Harbor, Michigan, United States (Whirlpool Corporation)",
+  "founded": "1911 for the company that became Whirlpool Corporation",
+  "heroImage": "/images/brands/whirlpool/hero-laundry-appliances.webp",
+  "heroImageAlt": "Whirlpool Corporation employees working on an appliance production line",
+  "heroImageCaption": "Official Whirlpool Corporation image of a U.S. appliance manufacturing operation, published with its June 2026 laundry-investment announcement.",
+  "logoImage": "/images/brands/whirlpool/logo.webp",
+  "logoImageAlt": "Whirlpool brand logo",
+  "logoSourceUrl": "https://www.whirlpoolcorp.com/logos.html",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/whirlpool/ownership-regional-rights.svg",
+      "alt": "Whirlpool Corporation, Beko Europe and regional trademark licence map",
+      "caption": "Whirlpool Corporation owns the brand; Beko Europe is a licensed operator in specified jurisdictions and became 100% Beko-owned in June 2026."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/whirlpool/operations-buyer-check.svg",
+      "alt": "Whirlpool model, territory, factory, importer and warranty verification workflow",
+      "caption": "A regional licence or group plant list cannot replace exact-model origin, manufacturer, importer, conformity and warranty records."
+    }
+  ],
+  "ownership": {
+    "summary": "Whirlpool Corporation owns the Whirlpool consumer brand and includes it in its current global portfolio. Beko Europe B.V. operates Whirlpool-branded major appliances under a licence limited to specified European jurisdictions. Beko B.V. acquired Whirlpool Corporation's remaining 25% Beko Europe interest in June 2026, but the trademark licence stayed in force; Beko Europe is a licensee, not the global Whirlpool brand owner.",
+    "parentCompany": "Whirlpool Corporation"
+  },
+  "leadership": [
+    {
+      "name": "Marc Bitzer",
+      "role": "Chairman and Chief Executive Officer, Whirlpool Corporation",
+      "context": "Named in Whirlpool Corporation's 2025 Annual Report; this is corporate leadership rather than a separate Whirlpool-brand legal entity."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Laundry appliances",
+      "positioning": "Whirlpool offers washers, dryers, laundry centers and all-in-one formats with regional feature and capacity differences.",
+      "buyerRelevance": "Verify model capacity, voltage, installation, app region, origin, parts and warranty for the destination market."
+    },
+    {
+      "name": "Refrigeration and kitchen appliances",
+      "positioning": "The brand spans refrigerators, cooking appliances, dishwashers and related major-appliance categories in retained and licensed markets.",
+      "buyerRelevance": "Confirm whether Whirlpool Corporation, Beko Europe or another regional company is the legal seller and service provider."
+    },
+    {
+      "name": "Licensed home-comfort and water products",
+      "positioning": "Whirlpool Corporation lists selected licensed categories including air purifiers, compact refrigeration, dehumidification, room air, water heating and filtration.",
+      "buyerRelevance": "Request the licensee, category scope, territory, manufacturer and warranty rather than assuming Whirlpool Corporation made the product."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Whirlpool Corporation reported that 80% of the major appliances it sold in the United States came from its U.S. factories in 2025.",
+      "scope": "Whirlpool Corporation U.S. major-appliance sales in 2025",
+      "buyerCheck": "Use the exact SKU label and origin documents; the portfolio statistic does not identify a model's plant."
+    },
+    {
+      "evidence": "Beko Europe reports an 11-site European production network supporting its multi-brand operation.",
+      "scope": "Beko Europe regional industrial network, including owned and licensed brands",
+      "buyerCheck": "Require a factory declaration for the exact Whirlpool-branded model before naming a Beko Europe plant."
+    },
+    {
+      "evidence": "Whirlpool Corporation operates licensed product categories outside its core major-appliance chain.",
+      "scope": "Categories listed on the official Whirlpool Corporation licensing page",
+      "buyerCheck": "Identify the licensee, legal manufacturer, factory and warranty provider for each licensed category."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Whirlpool Corporation reports principal major-appliance businesses in North America and Latin America and retains the Whirlpool brand in its portfolio.",
+      "scope": "Whirlpool Corporation retained operating segments",
+      "buyerCheck": "Identify the regional Whirlpool legal entity, authorized channel and local warranty for the destination country."
+    },
+    {
+      "evidence": "Beko Europe lists Whirlpool among brands used under a licence limited to certain jurisdictions.",
+      "scope": "Specified European markets and licensed product scope",
+      "buyerCheck": "Confirm that the seller's authorization and the product's trademark licence cover the destination market."
+    },
+    {
+      "evidence": "Whirlpool products are sold through direct sites, retailers, distributors, builders and professional channels, with assortment and terms varying by region.",
+      "scope": "Market-specific consumer and trade channels",
+      "buyerCheck": "Verify territory, ecommerce rights, installation, spare parts, returns and warranty obligations in the contract."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Whirlpool combines a strong Americas-centered owner-manufacturer platform with licensed European brand operation. The regional model broadens reach but makes territory, licence, legal seller and model-level factory verification essential for buyers.",
+    "competitorSlugs": ["beko", "haier-home-appliances", "midea", "samsung-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2026-06-23",
+      "title": "Beko completes acquisition of Whirlpool's Beko Europe stake",
+      "summary": "The regulatory completion entry records Beko B.V.'s acquisition of Whirlpool EMEA Holdings LLC's 25% interest, taking Beko Europe ownership to 100% while the trademark licence remained in force.",
+      "sourceIds": ["beko-stake-completion", "beko-stake-agreement"]
+    },
+    {
+      "date": "2024-04-02",
+      "title": "Whirlpool and Arçelik close the EMEA transaction",
+      "summary": "Whirlpool Corporation contributed its European major-appliance business to Beko Europe and retained its EMEA KitchenAid business.",
+      "sourceIds": ["whirlpool-emea-close"]
+    },
+    {
+      "date": "1911-11-11",
+      "title": "Company origins",
+      "summary": "Whirlpool Corporation traces its history to 1911 and reports more than a century in kitchen and laundry appliances.",
+      "sourceIds": ["whirlpool-annual-2025"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "whirlpool-annual-2025",
+      "title": "Whirlpool Corporation 2025 Annual Report",
+      "publisher": "Whirlpool Corporation",
+      "url": "https://ar.whirlpoolcorp.com/Whirlpool_2025_AR.pdf",
+      "publishedAt": "2026",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "whirlpool-emea-close",
+      "title": "Whirlpool Corporation Completes Major Milestone in its Portfolio Transformation with Closing of EMEA Transaction",
+      "publisher": "Whirlpool Corporation",
+      "url": "https://www.whirlpoolcorp.com/latest-news/whirlpool-corporation-completes-major-milestone-in-its-portfolio-transformation-with-closing-of-emea-transaction.html",
+      "publishedAt": "2024-04-02",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-stake-agreement",
+      "title": "Acquisition of the 25% Minority Shares in Beko Europe B.V. by Beko B.V.",
+      "publisher": "Public Disclosure Platform of Türkiye",
+      "url": "https://www.kap.org.tr/en/Bildirim/1618806",
+      "publishedAt": "2026-06-19",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-stake-completion",
+      "title": "Completion of the Acquisition of the 25% Minority Shares in Beko Europe B.V.",
+      "publisher": "Public Disclosure Platform of Türkiye",
+      "url": "https://kap.org.tr/en/bildirim-sorgu-sonuc?member=4028e4a240e95dc90140ed55b43900cf",
+      "publishedAt": "2026-06-23",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-europe-brands",
+      "title": "Beko Europe Brands",
+      "publisher": "Beko Europe",
+      "url": "https://www.bekoeurope.com/en/brands/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "whirlpool-licensing",
+      "title": "Brand Licensing",
+      "publisher": "Whirlpool Corporation",
+      "url": "https://www.whirlpoolcorp.com/licensing.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "whirlpool-laundry-investment",
+      "title": "Whirlpool Corporation Announces $300 Million Investment in U.S. Laundry Operations",
+      "publisher": "Whirlpool Corporation",
+      "url": "https://www.whirlpoolcorp.com/latest-news/whirlpool-corporation-announces--300-million-investment-in--u-s-.html",
+      "publishedAt": "2026-06-02",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T14:30:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T14:30:00+08:00"
+}

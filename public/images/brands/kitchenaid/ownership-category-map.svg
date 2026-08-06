@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">KitchenAid ownership and product-category map</title>
+  <desc id="desc">A map distinguishing Whirlpool ownership from KitchenAid category operations and model manufacturing.</desc>
+  <rect width="1600" height="900" fill="#081722"/>
+  <text x="105" y="112" fill="#fff8ef" font-family="Arial, sans-serif" font-size="56" font-weight="700">KitchenAid: one brand, multiple evidence questions</text>
+  <text x="105" y="170" fill="#aabcc7" font-family="Arial, sans-serif" font-size="28">Ownership does not answer who made every mixer, appliance or licensed product</text>
+  <rect x="105" y="235" width="1390" height="140" rx="24" fill="#153143" stroke="#cb3138" stroke-width="4"/>
+  <text x="155" y="292" fill="#e96a70" font-family="Arial, sans-serif" font-size="24" font-weight="700">CORPORATE OWNER</text>
+  <text x="155" y="345" fill="#ffffff" font-family="Arial, sans-serif" font-size="40" font-weight="700">Whirlpool Corporation</text>
+  <path d="M800 375 V455" stroke="#e96a70" stroke-width="6"/><polygon points="800,455 782,425 818,425" fill="#e96a70"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="105" y="455" width="420" height="235" rx="24" fill="#102838"/><text x="145" y="515" fill="#e96a70" font-size="23" font-weight="700">COUNTERTOP</text><text x="145" y="572" fill="#ffffff" font-size="32" font-weight="700">Stand mixers &amp; tools</text><text x="145" y="620" fill="#b9c9d2" font-size="24">Verify model, label, country</text><text x="145" y="655" fill="#b9c9d2" font-size="24">and warranty statement.</text>
+    <rect x="590" y="455" width="420" height="235" rx="24" fill="#102838"/><text x="630" y="515" fill="#e96a70" font-size="23" font-weight="700">MAJOR APPLIANCES</text><text x="630" y="572" fill="#ffffff" font-size="32" font-weight="700">Cooking &amp; dishwashing</text><text x="630" y="620" fill="#b9c9d2" font-size="24">Regional portfolio and legal</text><text x="630" y="655" fill="#b9c9d2" font-size="24">seller may differ.</text>
+    <rect x="1075" y="455" width="420" height="235" rx="24" fill="#102838"/><text x="1115" y="515" fill="#e96a70" font-size="23" font-weight="700">LICENSED ADJACENCIES</text><text x="1115" y="572" fill="#ffffff" font-size="32" font-weight="700">Category-specific rights</text><text x="1115" y="620" fill="#b9c9d2" font-size="24">Check the named licensee</text><text x="1115" y="655" fill="#b9c9d2" font-size="24">and support entity.</text>
+  </g>
+  <rect x="105" y="745" width="1390" height="80" rx="20" fill="#cb3138"/>
+  <text x="800" y="797" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="700">A brand relationship is not model-level manufacturing evidence.</text>
+  <text x="105" y="866" fill="#718898" font-family="Arial, sans-serif" font-size="21">World Clean Biz evidence map · reviewed 6 August 2026</text>
+</svg>

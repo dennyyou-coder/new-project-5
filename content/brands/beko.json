@@ -1,0 +1,185 @@
+{
+  "status": "published",
+  "slug": "beko",
+  "name": "Beko",
+  "aliases": ["Beko Appliances", "Beko Corporate", "Arçelik"],
+  "legalEntityNote": "Beko is a consumer appliance brand and the global corporate identity used by the appliance group whose current regulatory and legal records continue to name the listed entity Arçelik A.Ş. Beko B.V., Beko Europe B.V. and country subsidiaries are distinct legal entities with separate ownership, operating, sales, manufacturing or warranty roles.",
+  "officialWebsite": "https://www.beko.com/",
+  "headline": "Beko ownership, Arçelik legal identity, Beko Europe and appliance operations",
+  "description": "A source-backed profile separating the Beko consumer brand and corporate identity, Arçelik A.Ş., Beko Europe, licensed Whirlpool rights, factories, channels and buyer responsibility.",
+  "metaDescription": "Beko brand profile: Arçelik legal identity, Beko Europe ownership, Whirlpool licensing, products, manufacturing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Beko, Arçelik A.Ş., Beko Europe or Whirlpool Corporation. Corporate identity, listed entity, brand ownership, regional licences, factories and product warranties must be verified separately.",
+  "headquarters": "Istanbul, Türkiye (Beko / Arçelik A.Ş.)",
+  "founded": "1955 for the enterprise history reported by Beko",
+  "heroImage": "/images/brands/beko/hero-home-appliance-portfolio.webp",
+  "heroImageAlt": "Beko home appliances displayed at the official EuroCucina 2026 brand booth",
+  "heroImageCaption": "Official Beko press image of its EuroCucina 2026 booth, showing the Beko brand in a real appliance exhibition setting.",
+  "logoImage": "/images/brands/beko/logo.webp",
+  "logoImageAlt": "Beko logo",
+  "logoSourceUrl": "https://www.bekocorporate.com/en/company/press-room/logos/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/beko/ownership-company-europe.svg",
+      "alt": "Beko brand, Arçelik, Beko B.V. and Beko Europe ownership map",
+      "caption": "Beko is the consumer and corporate identity; Arçelik A.Ş. remains the listed legal issuer, and Beko B.V. owns 100% of Beko Europe after June 2026."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/beko/operations-model-check.svg",
+      "alt": "Beko model, factory, licence, importer and warranty verification map",
+      "caption": "Beko's global and European plant networks show scale but not the origin or responsible entity for an individual SKU."
+    }
+  ],
+  "ownership": {
+    "summary": "Beko is a consumer appliance brand and the global corporate identity used by the group whose listed legal entity remains Arçelik A.Ş. Wholly owned Beko B.V. completed the acquisition of Whirlpool Corporation's remaining 25% stake in Beko Europe in June 2026 and now owns Beko Europe 100%. Beko Europe continues to use the Whirlpool brand under a licence limited to specified jurisdictions; that licence is not global Whirlpool ownership.",
+    "parentCompany": "Arçelik A.Ş., within the Koç Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Major home appliances",
+      "positioning": "Beko offers refrigeration, laundry, cooking and dishwashing products across broad international markets.",
+      "buyerRelevance": "Verify country assortment, energy label, installation, origin, importer, parts and warranty for each model."
+    },
+    {
+      "name": "Small domestic appliances",
+      "positioning": "Regional portfolios include food preparation, beverage, ironing and other household appliances.",
+      "buyerRelevance": "Check whether the exact model is a group-manufactured, joint-venture, licensed or supplier-produced program."
+    },
+    {
+      "name": "Floorcare and home cleaning",
+      "positioning": "Official country sites list cordless, canister, wet-and-dry and robot vacuum products in selected markets.",
+      "buyerRelevance": "Confirm local app region, radio approval, consumables, battery service and warranty; availability is not universal."
+    },
+    {
+      "name": "Regional owned and licensed brand portfolio",
+      "positioning": "Beko's group portfolio includes owned, licensed and joint-venture brands, while Beko Europe uses Whirlpool in specified jurisdictions.",
+      "buyerRelevance": "Do not convert a portfolio list into one ownership or manufacturing conclusion; read each licence note and legal entity."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Beko reports 38 production facilities across Europe, Asia, Africa and the Middle East.",
+      "scope": "Beko/Arçelik consolidated global production network",
+      "buyerCheck": "Require the exact SKU factory and origin rather than assigning a product to the nearest group plant."
+    },
+    {
+      "evidence": "Beko Europe reports 11 production sites in Italy, Poland, Romania and Slovakia.",
+      "scope": "Beko Europe multi-brand European network",
+      "buyerCheck": "Identify whether the model is Beko, licensed Whirlpool or another portfolio program and obtain its plant declaration."
+    },
+    {
+      "evidence": "Official Beko manuals and country pages identify regional product ranges and local responsibility details.",
+      "scope": "Named market and model documentation",
+      "buyerCheck": "Match the manual, rating label, declaration and warranty to the same model and destination country."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Beko reports subsidiaries in more than 55 countries and consumer-brand presence in more than 100 countries.",
+      "scope": "Company-reported global reach",
+      "buyerCheck": "Identify the local seller, importer, authorized distributor and service company rather than contracting with a brand name."
+    },
+    {
+      "evidence": "Beko Europe operates a European multi-brand sales and distribution platform that includes owned and licensed brands.",
+      "scope": "European regional operation",
+      "buyerCheck": "Confirm brand, territory and channel authorization for Beko and any licensed Whirlpool products separately."
+    },
+    {
+      "evidence": "Beko floorcare availability varies materially by country site.",
+      "scope": "Selected official Beko national assortments",
+      "buyerCheck": "Verify destination-market listing, consumables, app support, repair capability and warranty before cross-border sourcing."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Beko combines European scale, a broad global brand portfolio and a localized manufacturing network. Its strength is breadth; its buyer risk is conflating Beko the consumer brand, Beko the corporate identity, Arçelik A.Ş., Beko Europe and licensed Whirlpool rights.",
+    "competitorSlugs": ["whirlpool", "midea", "haier-home-appliances", "electrolux"]
+  },
+  "developments": [
+    {
+      "date": "2026-06-23",
+      "title": "Beko completes the acquisition of Whirlpool's Beko Europe interest",
+      "summary": "Beko B.V. completed the 25% stake purchase and moved to 100% ownership of Beko Europe while the Whirlpool trademark licence remained effective.",
+      "sourceIds": ["beko-stake-completion", "beko-stake-agreement"]
+    },
+    {
+      "date": "2024-04-02",
+      "title": "Beko Europe begins operation",
+      "summary": "The combined European home-appliance company launched with Beko/Arçelik at 75% and Whirlpool Corporation at 25%, before the later 2026 stake purchase.",
+      "sourceIds": ["beko-europe-about", "whirlpool-emea-close"]
+    },
+    {
+      "date": "1955",
+      "title": "Beko reports the start of its company journey",
+      "summary": "Beko's corporate history traces the enterprise journey to 1955.",
+      "sourceIds": ["beko-overview"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "beko-overview",
+      "title": "Beko Corporate Overview",
+      "publisher": "Beko",
+      "url": "https://www.bekocorporate.com/en/company/about-us/overview/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-legal",
+      "title": "Beko Corporate Website Privacy Notice",
+      "publisher": "Beko / Arçelik A.Ş.",
+      "url": "https://www.bekocorporate.com/company/privacy-cookies/website-privacy-notice/",
+      "publishedAt": "2024-06",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-europe-about",
+      "title": "About Beko Europe",
+      "publisher": "Beko Europe",
+      "url": "https://www.bekoeurope.com/en/about-us/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-stake-agreement",
+      "title": "Acquisition of the 25% Minority Shares in Beko Europe B.V. by Beko B.V.",
+      "publisher": "Public Disclosure Platform of Türkiye",
+      "url": "https://www.kap.org.tr/en/Bildirim/1618806",
+      "publishedAt": "2026-06-19",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-stake-completion",
+      "title": "Completion of the Acquisition of the 25% Minority Shares in Beko Europe B.V.",
+      "publisher": "Public Disclosure Platform of Türkiye",
+      "url": "https://kap.org.tr/en/bildirim-sorgu-sonuc?member=4028e4a240e95dc90140ed55b43900cf",
+      "publishedAt": "2026-06-23",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "whirlpool-emea-close",
+      "title": "Whirlpool Corporation Completes the EMEA Transaction",
+      "publisher": "Whirlpool Corporation",
+      "url": "https://www.whirlpoolcorp.com/latest-news/whirlpool-corporation-completes-major-milestone-in-its-portfolio-transformation-with-closing-of-emea-transaction.html",
+      "publishedAt": "2024-04-02",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-vacuums",
+      "title": "Beko Cordless Vacuum Cleaners",
+      "publisher": "Beko",
+      "url": "https://www.beko.com/mu-en/products/cordless-vacuum-cleaners",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "beko-eurocucina-2026",
+      "title": "Beko Brings the Future of Kitchen Living to EuroCucina 2026",
+      "publisher": "Beko",
+      "url": "https://www.bekocorporate.com/company/press-room/press-releases/beko-brings-the-future-of-kitchen-living-to-eurocucina-2026/",
+      "publishedAt": "2026-04-21",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T14:30:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T14:30:00+08:00"
+}
