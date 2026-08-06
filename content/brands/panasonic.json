@@ -1,0 +1,200 @@
+{
+  "status": "published",
+  "slug": "panasonic",
+  "name": "Panasonic",
+  "aliases": ["Panasonic Corporation", "Panasonic Group"],
+  "legalEntityNote": "Panasonic is a group brand, not a single legal entity for every product and market. Panasonic Holdings Corporation governs the group brand. From 1 April 2026, the reorganized Panasonic Corporation operates the group's consumer major-appliance, small-appliance and AVC businesses, including vacuum cleaners. Regional sales companies, legal manufacturers, importers, distributors and warranty providers remain model- and market-specific roles.",
+  "officialWebsite": "https://www.panasonic.com/global/",
+  "headline": "Panasonic home appliances, floorcare and operating responsibility",
+  "description": "A source-backed profile of Panasonic consumer appliances, separating the group brand, holding company, current operating company, regional channels, product scope and model-level buyer checks.",
+  "metaDescription": "Panasonic brand profile: current consumer-appliance operator, home appliances, vacuum cleaners, regional channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Panasonic Holdings Corporation or Panasonic Corporation. Group structure and portfolio evidence do not identify the manufacturer, factory, importer, seller or warrantor for every Panasonic-branded SKU.",
+  "headquarters": "Tokyo, Japan (Panasonic Corporation)",
+  "founded": "Panasonic Group traces its founding to 1918; the Panasonic brand was first used in 1955; the current Panasonic Corporation began operations on 1 April 2026",
+  "heroImage": "/images/brands/panasonic/hero-cordless-vacuum.webp",
+  "heroImageAlt": "Panasonic MC-SB53 cordless vacuum cleaner and accessories",
+  "heroImageCaption": "Official Panasonic product image of the MC-SB53 cordless vacuum cleaner, a current floorcare product in Panasonic's regional consumer range.",
+  "logoImage": "/images/brands/panasonic/logo.webp",
+  "logoImageAlt": "Panasonic logo",
+  "logoSourceUrl": "https://holdings.panasonic/global/corporate/brand/our-brand.html",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/panasonic/consumer-business-boundary.svg",
+      "alt": "Panasonic group brand, holding company, consumer operating company and regional responsibility map",
+      "caption": "The Panasonic group brand and holding company are distinct from the current consumer-appliance operator and each market's seller, importer and warrantor."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/panasonic/appliance-model-check.svg",
+      "alt": "Panasonic appliance model, manufacturer, origin, importer and warranty verification workflow",
+      "caption": "Portfolio-level evidence establishes category participation; buyers still need model- and destination-specific responsibility records."
+    }
+  ],
+  "ownership": {
+    "summary": "Panasonic Holdings Corporation is the group holding company and steward of the Panasonic group brand. Panasonic's official April 2026 reorganization created the current Panasonic Corporation as the operating company for Major Appliances, Small Appliances and AVC businesses. The published organization explicitly places refrigerators and laundry in Major Appliances and vacuum cleaners and kitchen appliances in Small Appliances.",
+    "parentCompany": "Panasonic Holdings Corporation"
+  },
+  "leadership": [
+    {
+      "name": "Akira Toyoshima",
+      "role": "Chief Executive Officer, Panasonic Corporation",
+      "context": "Panasonic Corporation's current corporate profile identifies Akira Toyoshima as CEO following the April 2026 operating-company reorganization."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Major home appliances",
+      "positioning": "Panasonic Corporation's current organization places refrigerators and laundry appliances in its Major Appliances Business Division, with regional ranges also covering cooking and household equipment.",
+      "buyerRelevance": "Verify destination-market voltage, energy label, installation requirements, model suffix, importer, parts and warranty coverage."
+    },
+    {
+      "name": "Vacuum cleaners and floorcare",
+      "positioning": "The Small Appliances Business Division explicitly includes vacuum cleaners, and current regional ranges include cordless, canister and other floorcare formats.",
+      "buyerRelevance": "Confirm battery and charger specification, dust bags or filters, local service, product certification and the exact model's country of origin."
+    },
+    {
+      "name": "Small domestic and kitchen appliances",
+      "positioning": "Panasonic's consumer portfolio includes kitchen appliances and other small appliances alongside beauty, wellness and household categories, with assortment varying by country.",
+      "buyerRelevance": "Use the local official catalogue and legal terms rather than assuming a global range or a single contracting entity."
+    },
+    {
+      "name": "Consumer audio-visual products",
+      "positioning": "The reorganized Panasonic Corporation also operates AVC businesses, including televisions and related consumer products.",
+      "buyerRelevance": "Treat AVC and appliance distribution, certification and service arrangements as separate unless the market documents show the same responsible entity."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Panasonic Corporation's current profile defines its business as the development, manufacture and sale of household appliances, beauty and health appliances, and AVC products.",
+      "scope": "Panasonic Corporation's business scope after the 1 April 2026 reorganization",
+      "buyerCheck": "Identify the exact legal manufacturer and contracting Panasonic company from the rating label, declaration and purchase documents."
+    },
+    {
+      "evidence": "The current organization separates Major Appliances, Small Appliances and AVC into named business divisions.",
+      "scope": "Published Panasonic Corporation organizational structure; it does not assign individual models to factories",
+      "buyerCheck": "Do not infer a factory from the business division; obtain model-specific origin, factory and certification records."
+    },
+    {
+      "evidence": "Panasonic's consumer history documents product milestones across decades, including its first cylinder vacuum cleaner in 1958 and RULO robotic cleaner in 2015.",
+      "scope": "Historical product-development milestones, not evidence of current model manufacturing locations",
+      "buyerCheck": "Use current product labels and conformity documents for present-day sourcing decisions."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Panasonic operates country and regional consumer websites with market-specific product catalogues, support and purchase routes.",
+      "scope": "Official Panasonic consumer channels; product availability and responsible entities vary by market",
+      "buyerCheck": "Confirm that the SKU appears on the destination-market site and identify the named seller, importer and warranty provider."
+    },
+    {
+      "evidence": "The current Malaysian consumer site lists the MC-SB53 cordless vacuum with local specifications, support and retailer links.",
+      "scope": "The cited Malaysian MC-SB53 offer and local channel",
+      "buyerCheck": "Do not apply Malaysian specifications or warranty terms to another destination; compare exact regional model suffixes and legal terms."
+    },
+    {
+      "evidence": "Panasonic's regional corporate pages identify local legal companies responsible for sales and support in their territories.",
+      "scope": "Named regional Panasonic companies and territories, not a single worldwide contracting party",
+      "buyerCheck": "Record the invoice seller, importer of record, authorized distributor and service route for every destination market."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Panasonic combines a long appliance and floorcare history with a broad current consumer portfolio. For buyers, the central diligence task is to separate the Panasonic group brand and holding company from the post-April-2026 operating company and the legal entities responsible for each regional SKU.",
+    "competitorSlugs": ["toshiba-appliances", "midea", "samsung-home-appliances", "lg-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2026-04-01",
+      "title": "New Panasonic Corporation begins operations",
+      "summary": "Panasonic completed its operating-company reorganization, assigning major appliances, small appliances and AVC businesses to the current Panasonic Corporation.",
+      "sourceIds": ["panasonic-reorganization", "panasonic-organization"]
+    },
+    {
+      "date": "2015",
+      "title": "RULO robotic vacuum milestone",
+      "summary": "Panasonic's official consumer history records the RULO triangular robotic vacuum cleaner as a 2015 product milestone.",
+      "sourceIds": ["panasonic-consumer-history"]
+    },
+    {
+      "date": "1958",
+      "title": "First Panasonic cylinder vacuum cleaner",
+      "summary": "Panasonic's official consumer history records the MC-8 cylinder vacuum cleaner in 1958.",
+      "sourceIds": ["panasonic-consumer-history"]
+    },
+    {
+      "date": "1918",
+      "title": "Panasonic Group founding",
+      "summary": "Panasonic's official brand history traces the group to the business founded by Konosuke Matsushita in 1918; the Panasonic brand name was first used in 1955.",
+      "sourceIds": ["panasonic-brand-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "panasonic-about",
+      "title": "About Panasonic Group",
+      "publisher": "Panasonic Holdings Corporation",
+      "url": "https://www.panasonic.com/global/about/aboutus.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "panasonic-corporate-profile",
+      "title": "Panasonic Corporation Corporate Profile",
+      "publisher": "Panasonic Corporation",
+      "url": "https://www.panasonic.com/global/about/corporate-profile/overview.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "panasonic-organization",
+      "title": "Panasonic Corporation Organization",
+      "publisher": "Panasonic Corporation",
+      "url": "https://www.panasonic.com/global/about/corporate-profile/organization.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "panasonic-reorganization",
+      "title": "Panasonic Corporation Starts Operations under New Business Structure",
+      "publisher": "Panasonic Corporation",
+      "url": "https://news.panasonic.com/global/press/en260401-4",
+      "publishedAt": "2026-04-01",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "panasonic-brand-history",
+      "title": "History of the Panasonic Brand",
+      "publisher": "Panasonic Holdings Corporation",
+      "url": "https://holdings.panasonic/global/corporate/brand/history.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "panasonic-brand-identity",
+      "title": "Our Brand",
+      "publisher": "Panasonic Holdings Corporation",
+      "url": "https://holdings.panasonic/global/corporate/brand/our-brand.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "panasonic-consumer-history",
+      "title": "Panasonic Consumer Product History",
+      "publisher": "Panasonic Corporation",
+      "url": "https://www.panasonic.com/global/consumer/history.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "panasonic-mc-sb53",
+      "title": "MC-SB53 Cordless Stick Vacuum Cleaner",
+      "publisher": "Panasonic Malaysia",
+      "url": "https://www.panasonic.com/my/consumer/home-appliance/vacuum-cleaner/handheld-vacuum-cleaner/mc-sb53kh147.html",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "panasonic-uk-profile",
+      "title": "Panasonic UK and Ireland Corporate Profile",
+      "publisher": "Panasonic UK & Ireland",
+      "url": "https://www.panasonic.com/uk/corporate/profile/overview.html",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T19:30:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T19:30:00+08:00"
+}

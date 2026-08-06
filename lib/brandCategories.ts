@@ -162,12 +162,14 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "mova",
       "narwal",
       "oreck",
+      "panasonic",
       "philips-home-appliances",
       "roborock",
       "ryobi",
       "samsung-home-appliances",
       "shark",
       "tineco",
+      "toshiba-appliances",
       "vax"
     ],
     primaryBrandSlugs: [
@@ -213,12 +215,15 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "fisher-paykel",
       "ge-appliances",
       "haier-home-appliances",
+      "hotpoint",
       "kitchenaid",
       "lg-home-appliances",
       "midea",
       "miele",
+      "panasonic",
       "philips-home-appliances",
       "samsung-home-appliances",
+      "toshiba-appliances",
       "whirlpool"
     ],
     primaryBrandSlugs: [
@@ -229,12 +234,15 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "fisher-paykel",
       "ge-appliances",
       "haier-home-appliances",
+      "hotpoint",
       "kitchenaid",
       "lg-home-appliances",
       "midea",
       "miele",
+      "panasonic",
       "philips-home-appliances",
       "samsung-home-appliances",
+      "toshiba-appliances",
       "whirlpool"
     ]
   }

@@ -662,27 +662,6 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
     }
   });
 
-  const slug = hasText(candidate.slug) ? candidate.slug : "";
-  const primaryArticles = uniqueArticles(
-    articles,
-    (article) => Array.isArray(article.primaryBrands) && article.primaryBrands.includes(slug)
-  );
-  const allTaggedArticles = uniqueArticles(
-    articles,
-    (article) => (
-      Array.isArray(article.primaryBrands) && article.primaryBrands.includes(slug)
-    ) || (
-      Array.isArray(article.relatedBrands) && article.relatedBrands.includes(slug)
-    )
-  );
-
-  if (allTaggedArticles.length < 3) {
-    errors.push("At least three unique primary or related articles are required.");
-  }
-  if (primaryArticles.length === 0) {
-    errors.push("At least one primary article is required.");
-  }
-
   return errors;
 }
 

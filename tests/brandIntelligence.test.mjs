@@ -173,6 +173,17 @@ test("verified cross-category brands appear in each relevant market and retain o
   assert.deepEqual(membershipsFor("kitchenaid"), [
     "home-appliances-small-appliances"
   ]);
+  assert.deepEqual(membershipsFor("hotpoint"), [
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("toshiba-appliances"), [
+    "floorcare-home-cleaning",
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("panasonic"), [
+    "floorcare-home-cleaning",
+    "home-appliances-small-appliances"
+  ]);
 
   assert.equal(getBrandCategoryForProfile("aiper")?.slug, "pool-equipment-pool-care");
   assert.equal(getBrandCategoryForProfile("ecovacs")?.slug, "floorcare-home-cleaning");
@@ -200,6 +211,18 @@ test("verified cross-category brands appear in each relevant market and retain o
     getBrandCategoryForProfile("whirlpool")?.slug,
     "home-appliances-small-appliances"
   );
+  assert.equal(
+    getBrandCategoryForProfile("hotpoint")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("toshiba-appliances")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("panasonic")?.slug,
+    "home-appliances-small-appliances"
+  );
 });
 
 test("normalizes supported brand frontmatter values and removes malformed slugs", () => {
@@ -214,6 +237,10 @@ test("normalizes supported brand frontmatter values and removes malformed slugs"
 
 test("accepts a complete published brand profile", () => {
   assert.deepEqual(validateBrandProfile(profile, articles), []);
+});
+
+test("accepts a complete standalone brand profile without tagged articles", () => {
+  assert.deepEqual(validateBrandProfile(profile, []), []);
 });
 
 test("rejects incomplete leadership portrait metadata", () => {
@@ -460,13 +487,6 @@ test("requires complete, uniquely identified, dated source metadata", () => {
   assert.match(errors, /source IDs must be unique/i);
 });
 
-test("requires three distinct tagged articles", () => {
-  assert.match(
-    validateBrandProfile(profile, articles.slice(0, 2)).join("\n"),
-    /at least three unique primary or related articles/i
-  );
-});
-
 test("rejects development source IDs that are not declared", () => {
   const invalidProfile = structuredClone(profile);
   invalidProfile.developments[0].sourceIds = ["unknown-source"];
@@ -658,7 +678,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the sixty-four published profiles and approved article relationships", () => {
+test("the release gate validates the sixty-seven published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -699,6 +719,7 @@ test("the release gate validates the sixty-four published profiles and approved 
     "hikoki",
     "hilti",
     "hoover",
+    "hotpoint",
     "husqvarna",
     "irobot",
     "karcher",
@@ -716,6 +737,7 @@ test("the release gate validates the sixty-four published profiles and approved 
     "narwal",
     "nilfisk",
     "oreck",
+    "panasonic",
     "pentair",
     "philips-home-appliances",
     "polaris",
@@ -728,6 +750,7 @@ test("the release gate validates the sixty-four published profiles and approved 
     "stihl",
     "sunseeker",
     "tineco",
+    "toshiba-appliances",
     "vax",
     "whirlpool",
     "worx",
@@ -910,7 +933,7 @@ test("the release gate validates the sixty-four published profiles and approved 
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 64);
+  assert.equal(loadedProfiles.length, 67);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -976,7 +999,7 @@ test("the release gate validates the sixty-four published profiles and approved 
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 64);
+  assert.equal(profiles.length, 67);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -995,6 +1018,51 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("home-appliance batch four profiles publish independently with dedicated official assets", async () => {
+  const newSlugs = ["hotpoint", "panasonic", "toshiba-appliances"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published", `${slug} must be published`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(
+      candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)),
+      `${slug} must use dedicated content visuals`
+    );
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+
+    const taggedArticles = realArticles.filter(
+      (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+    );
+    assert.equal(taggedArticles.length, 0, `${slug} must not modify ownership article relationships`);
+  }
+
+  assert.match(profilesBySlug.get("hotpoint").legalEntityNote, /Europe|European/i);
+  assert.match(profilesBySlug.get("hotpoint").legalEntityNote, /North America|United States/i);
+  assert.match(profilesBySlug.get("toshiba-appliances").legalEntityNote, /home appliance|home-appliance/i);
+  assert.match(profilesBySlug.get("panasonic").productPortfolio.map(({ name }) => name).join(" "), /vacuum/i);
 });
 
 test("home-appliance batch three profiles use dedicated assets, article depth, and current entity boundaries", async () => {

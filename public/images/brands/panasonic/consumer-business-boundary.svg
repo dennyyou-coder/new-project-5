@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Panasonic consumer business responsibility</title>
+  <desc id="desc">Panasonic group brand, Panasonic Holdings, Panasonic Corporation and regional product responsibility.</desc>
+  <rect width="1600" height="900" fill="#f3f7fb"/>
+  <text x="110" y="112" fill="#172033" font-family="Arial, sans-serif" font-size="54" font-weight="700">From group brand to product responsibility</text>
+  <text x="110" y="164" fill="#5f6878" font-family="Arial, sans-serif" font-size="25">The April 2026 structure clarifies the operator, but each SKU still needs local evidence.</text>
+  <rect x="110" y="245" width="1380" height="125" rx="28" fill="#003b78"/>
+  <text x="165" y="298" fill="#a9d7ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">GROUP LEVEL</text>
+  <text x="165" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="31" font-weight="700">Panasonic Holdings Corporation · group brand stewardship</text>
+  <path d="M800 370V425" stroke="#6ca6d8" stroke-width="6"/><polygon points="786,413 800,438 814,413" fill="#6ca6d8"/>
+  <rect x="110" y="435" width="1380" height="125" rx="28" fill="#ffffff" stroke="#0072c6" stroke-width="5"/>
+  <text x="165" y="488" fill="#0072c6" font-family="Arial, sans-serif" font-size="22" font-weight="700">OPERATING LEVEL · FROM 1 APRIL 2026</text>
+  <text x="165" y="529" fill="#172033" font-family="Arial, sans-serif" font-size="31" font-weight="700">Panasonic Corporation · major appliances, small appliances and AVC</text>
+  <path d="M800 560V615" stroke="#6ca6d8" stroke-width="6"/><polygon points="786,603 800,628 814,603" fill="#6ca6d8"/>
+  <rect x="110" y="625" width="1380" height="125" rx="28" fill="#ffffff" stroke="#69a8d8" stroke-width="4"/>
+  <text x="165" y="678" fill="#497898" font-family="Arial, sans-serif" font-size="22" font-weight="700">MODEL AND MARKET LEVEL</text>
+  <text x="165" y="719" fill="#172033" font-family="Arial, sans-serif" font-size="29" font-weight="700">Legal maker · factory · seller · importer · warrantor · service route</text>
+  <text x="1490" y="858" fill="#748293" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 6 August 2026</text>
+</svg>

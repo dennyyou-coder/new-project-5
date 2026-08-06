@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hotpoint model responsibility verification</title>
+  <desc id="desc">A four-step workflow for verifying a Hotpoint appliance by model and destination.</desc>
+  <rect width="1600" height="900" fill="#f8f7f4"/>
+  <text x="110" y="112" fill="#211d1a" font-family="Arial, sans-serif" font-size="54" font-weight="700">Verify the appliance, not just the badge</text>
+  <text x="110" y="164" fill="#675f58" font-family="Arial, sans-serif" font-size="25">A regional brand structure makes model-level documents essential.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="258" width="310" height="330" rx="30" fill="#ffffff" stroke="#e85d22" stroke-width="4"/>
+    <text x="152" y="326" fill="#e85d22" font-size="25" font-weight="700">01 · IDENTIFY</text>
+    <text x="152" y="390" fill="#211d1a" font-size="29" font-weight="700">Exact SKU</text>
+    <text x="152" y="440" fill="#514a45" font-size="22">Model suffix</text><text x="152" y="475" fill="#514a45" font-size="22">Rating label</text><text x="152" y="510" fill="#514a45" font-size="22">Destination market</text>
+    <rect x="466" y="258" width="310" height="330" rx="30" fill="#ffffff" stroke="#e85d22" stroke-width="4"/>
+    <text x="508" y="326" fill="#e85d22" font-size="25" font-weight="700">02 · SEPARATE</text>
+    <text x="508" y="390" fill="#211d1a" font-size="29" font-weight="700">Legal roles</text>
+    <text x="508" y="440" fill="#514a45" font-size="22">Brand owner</text><text x="508" y="475" fill="#514a45" font-size="22">Manufacturer</text><text x="508" y="510" fill="#514a45" font-size="22">Invoice seller</text>
+    <rect x="822" y="258" width="310" height="330" rx="30" fill="#ffffff" stroke="#294c60" stroke-width="4"/>
+    <text x="864" y="326" fill="#294c60" font-size="25" font-weight="700">03 · VERIFY</text>
+    <text x="864" y="390" fill="#211d1a" font-size="29" font-weight="700">Market fit</text>
+    <text x="864" y="440" fill="#514a45" font-size="22">Origin and import</text><text x="864" y="475" fill="#514a45" font-size="22">Energy approvals</text><text x="864" y="510" fill="#514a45" font-size="22">Voltage and install</text>
+    <rect x="1178" y="258" width="310" height="330" rx="30" fill="#ffffff" stroke="#294c60" stroke-width="4"/>
+    <text x="1220" y="326" fill="#294c60" font-size="25" font-weight="700">04 · CONFIRM</text>
+    <text x="1220" y="390" fill="#211d1a" font-size="29" font-weight="700">After-sales</text>
+    <text x="1220" y="440" fill="#514a45" font-size="22">Warrantor</text><text x="1220" y="475" fill="#514a45" font-size="22">Parts route</text><text x="1220" y="510" fill="#514a45" font-size="22">Authorized service</text>
+  </g>
+  <path d="M260 678H1340" stroke="#d8cec4" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="260" cy="678" r="14" fill="#e85d22"/><circle cx="620" cy="678" r="14" fill="#e85d22"/><circle cx="980" cy="678" r="14" fill="#294c60"/><circle cx="1340" cy="678" r="14" fill="#294c60"/>
+  <text x="800" y="765" fill="#211d1a" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700">A group or regional claim never replaces the product file.</text>
+  <text x="1490" y="858" fill="#81766d" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 6 August 2026</text>
+</svg>

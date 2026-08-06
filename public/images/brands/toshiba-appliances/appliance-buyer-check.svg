@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Toshiba appliance buyer verification</title>
+  <desc id="desc">A buyer workflow that moves from current market listing to legal manufacturer, origin and after-sales evidence.</desc>
+  <rect width="1600" height="900" fill="#f5f7fa"/>
+  <text x="110" y="112" fill="#172033" font-family="Arial, sans-serif" font-size="54" font-weight="700">Turn a Toshiba listing into a verifiable product file</text>
+  <text x="110" y="164" fill="#5f6878" font-family="Arial, sans-serif" font-size="25">Group factory lists show scale; the SKU documents establish responsibility.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="110" y="255" width="1380" height="115" rx="24" fill="#ffffff" stroke="#e60012" stroke-width="4"/>
+    <circle cx="178" cy="312" r="31" fill="#e60012"/><text x="178" y="322" fill="#fff" text-anchor="middle" font-size="27" font-weight="700">1</text>
+    <text x="240" y="300" fill="#172033" font-size="27" font-weight="700">Confirm the exact regional model</text><text x="240" y="337" fill="#5f6878" font-size="21">Official catalogue · model suffix · voltage · destination certification</text>
+    <rect x="110" y="397" width="1380" height="115" rx="24" fill="#ffffff" stroke="#c9ced8" stroke-width="4"/>
+    <circle cx="178" cy="454" r="31" fill="#263e73"/><text x="178" y="464" fill="#fff" text-anchor="middle" font-size="27" font-weight="700">2</text>
+    <text x="240" y="442" fill="#172033" font-size="27" font-weight="700">Match manufacturer and factory evidence</text><text x="240" y="479" fill="#5f6878" font-size="21">Rating label · declaration · country of origin · shipment records</text>
+    <rect x="110" y="539" width="1380" height="115" rx="24" fill="#ffffff" stroke="#c9ced8" stroke-width="4"/>
+    <circle cx="178" cy="596" r="31" fill="#00a1c9"/><text x="178" y="606" fill="#fff" text-anchor="middle" font-size="27" font-weight="700">3</text>
+    <text x="240" y="584" fill="#172033" font-size="27" font-weight="700">Name the commercial and service parties</text><text x="240" y="621" fill="#5f6878" font-size="21">Invoice seller · importer · distributor · warrantor · authorized repair</text>
+  </g>
+  <rect x="110" y="710" width="1380" height="84" rx="22" fill="#172033"/>
+  <text x="800" y="763" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700">Keep the trademark licence separate from the product compliance file.</text>
+  <text x="1490" y="858" fill="#7a8290" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 6 August 2026</text>
+</svg>

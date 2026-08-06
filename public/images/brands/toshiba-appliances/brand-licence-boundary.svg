@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Toshiba home-appliance licence and operating boundary</title>
+  <desc id="desc">The relationship among Toshiba Corporation, Midea Group and Toshiba Lifestyle for Toshiba home appliances.</desc>
+  <rect width="1600" height="900" fill="#f5f7fa"/>
+  <text x="110" y="112" fill="#172033" font-family="Arial, sans-serif" font-size="54" font-weight="700">Trademark licence and business control are different roles</text>
+  <text x="110" y="164" fill="#5f6878" font-family="Arial, sans-serif" font-size="25">The 2016 transaction created a three-part boundary for Toshiba home appliances.</text>
+  <rect x="110" y="250" width="400" height="350" rx="32" fill="#ffffff" stroke="#e60012" stroke-width="5"/>
+  <text x="155" y="330" fill="#e60012" font-family="Arial, sans-serif" font-size="29" font-weight="700">Toshiba Corporation</text>
+  <text x="155" y="390" fill="#172033" font-family="Arial, sans-serif" font-size="27" font-weight="700">Brand licensor</text>
+  <text x="155" y="442" fill="#5f6878" font-family="Arial, sans-serif" font-size="22">Granted a 40-year worldwide</text><text x="155" y="476" fill="#5f6878" font-family="Arial, sans-serif" font-size="22">home-appliance brand licence.</text>
+  <rect x="600" y="250" width="400" height="350" rx="32" fill="#ffffff" stroke="#263e73" stroke-width="5"/>
+  <text x="645" y="330" fill="#263e73" font-family="Arial, sans-serif" font-size="29" font-weight="700">Midea Group</text>
+  <text x="645" y="390" fill="#172033" font-family="Arial, sans-serif" font-size="27" font-weight="700">Controlling shareholder</text>
+  <text x="645" y="442" fill="#5f6878" font-family="Arial, sans-serif" font-size="22">Acquired 80.1% of Toshiba</text><text x="645" y="476" fill="#5f6878" font-family="Arial, sans-serif" font-size="22">Lifestyle in 2016.</text>
+  <rect x="1090" y="250" width="400" height="350" rx="32" fill="#ffffff" stroke="#00a1c9" stroke-width="5"/>
+  <text x="1135" y="330" fill="#008aa9" font-family="Arial, sans-serif" font-size="29" font-weight="700">Toshiba Lifestyle</text>
+  <text x="1135" y="390" fill="#172033" font-family="Arial, sans-serif" font-size="27" font-weight="700">Appliance operator</text>
+  <text x="1135" y="442" fill="#5f6878" font-family="Arial, sans-serif" font-size="22">Develops, manufactures and sells</text><text x="1135" y="476" fill="#5f6878" font-family="Arial, sans-serif" font-size="22">the relevant home appliances.</text>
+  <path d="M510 425H600" stroke="#9ea6b4" stroke-width="5"/><path d="M1000 425H1090" stroke="#9ea6b4" stroke-width="5"/>
+  <polygon points="588,413 608,425 588,437" fill="#9ea6b4"/><polygon points="1078,413 1098,425 1078,437" fill="#9ea6b4"/>
+  <rect x="110" y="690" width="1380" height="100" rx="24" fill="#172033"/>
+  <text x="800" y="750" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700">None of these facts alone proves the maker or factory of a specific SKU.</text>
+  <text x="1490" y="858" fill="#7a8290" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 6 August 2026</text>
+</svg>
