@@ -27,8 +27,8 @@ This file is the operational source of truth for the home-appliance ownership an
 | 1 | Samsung | `who-makes-samsung-appliances-manufacturing-bespoke-ai` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-makes-samsung-appliances-manufacturing-bespoke-ai |
 | 2 | LG | `who-makes-lg-appliances-manufacturing-network` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-makes-lg-appliances-manufacturing-network |
 | 3 | Haier | `who-owns-haier-appliances-brand-portfolio` | 1 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-haier-appliances-brand-portfolio |
-| 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `local_verified` | Local release gate passed on 2026-08-06 |
-| 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `local_verified` | Local release gate passed on 2026-08-06 |
+| 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-ge-appliances-haier-manufacturing |
+| 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-fisher-paykel-haier-manufacturing |
 | 6 | Midea | `who-owns-midea-appliances-brand-portfolio` | 2 | `local_verified` | Local release gate passed on 2026-08-06 |
 | 7 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | 3 | `planned` |  |
 | 8 | Whirlpool | `who-owns-whirlpool-appliances-beko-europe` | 3 | `planned` |  |
@@ -83,40 +83,34 @@ This file is the operational source of truth for the home-appliance ownership an
 - Content classification, 14 insight tests, 82 brand tests and a 479-page production build passed with all three articles present.
 - All three article routes use the established WCB ownership-guide structure and remain inside the approved content, image and operational-record scope.
 
-### Batch 1 production gate
+### Batch 1 production verification
 
-- PR #28 was merged to `main` at commit `f138c628`; Vercel production deployment `dpl_ChZVxqXbYkxyzMa2qEexHB3TJP34` reached `READY` on 2026-08-05.
-- The Samsung, LG and Haier production routes returned `200` with the expected title, canonical, structured data and article visuals.
-- The Brand Ownership guide and production sitemap both exposed all three slugs; desktop and 390px mobile production checks passed.
+- GitHub PR #28 merged to `main` as commit `f138c6288fbbfdaf79b47399fb6c30eae514b7cd`.
+- Samsung, LG and Haier returned `200` on their exact production URLs after the Git-linked Vercel deployment became `READY`.
+- All three appeared in the production sitemap and the Brand Ownership guide; titles, descriptions, canonicals, schema, visuals and responsive layouts were rechecked.
 
-## Batch 2 checkpoint
+## Batch 2 R2A checkpoint
 
-- Baseline on `origin/main` commit `96f298d`: content classification passed; 15 insight tests passed; 83 brand tests passed.
-- Exact repository, production-route, ownership-guide and sitemap checks found no existing GE Appliances, Fisher & Paykel or Midea target slug before writing. Each target route returned `404`.
-- Research used current first-party corporate, investor, legal, manufacturing and warranty disclosures. Ownership, trademark, factory, seller and warranty responsibilities are kept separate at model and market level.
-- Visual system: `industry_map`; each article uses one reviewed unbranded 1600×900 WebP cover and two deterministic 1600×900 relationship or verification maps.
+- Exact GE Appliances and Fisher & Paykel target slugs were absent locally and returned `404` on production before writing.
+- GE Appliances contains 2,170 file words, five related-article links and seven official or primary sources. It separates Haier Smart Home ownership, Haier US Appliance Solutions' operating identity, the licensed GE name, the U.S. brand portfolio and model-level origin.
+- Fisher & Paykel contains 2,263 file words, five related-article links and seven official or primary sources. It separates Haier ownership, the New Zealand operating identity, DCS, the international factory network, supplier production and regional warranty responsibility.
+- Each article contains one reviewed 1600×900 unbranded conceptual WebP cover and two deterministic 1600×900 SVG fact maps. Raw cover and map PNGs are archived in the approved Desktop asset folders.
+- Content classification, 15 insight tests, 83 brand tests and a 494-page production build passed with both routes present.
+- Both local production pages exposed the expected title, H1, description, production canonical and three loaded 1600×900 article visuals. Desktop and 390px mobile checks found no horizontal overflow.
+- The only local console error was the expected unavailable `/_vercel/insights/script.js`. Independent Agent review was unavailable under the current execution constraint; a separate second-pass English, fact-boundary, image and release review passed.
 
-### GE Appliances local release gate
+### GE Appliances and Fisher & Paykel production gate
 
-- The article contains 1,973 file words, five relevant internal links, official GE Appliances, General Electric and Haier Smart Home sources, an at-a-glance table, buyer checklist, FAQ and final answer.
-- The responsibility boundary separates Haier Smart Home ownership, Haier US Appliance Solutions as legal operator, GE trademark licensing, U.S. manufacturing examples and model-level warranty responsibility.
-- One repaired unbranded cover and two repaired deterministic maps passed the final visual review.
-
-### Fisher & Paykel local release gate
-
-- The article contains 1,915 file words, five relevant internal links, official Fisher & Paykel and Haier sources, an at-a-glance table, buyer checklist, FAQ and final answer.
-- The responsibility boundary distinguishes the 2009 and 2012 ownership steps, the continuing premium brand identity, current factory countries, supplier production and regional warranty entities.
-- One repaired unbranded cover and two repaired deterministic maps passed the final visual review.
+- GitHub PR #31 merged to `main` as commit `0ae2414a90f90e4f12af4455e190949a6606bd59`; Vercel production deployment `dpl_9szdWcFcM7f1rxJVvb6x6zyJB2tV` reached `READY` on 2026-08-06.
+- Both production routes returned `200` and appeared in the Brand Ownership guide and production sitemap.
+- Titles, descriptions, canonicals, schema, article visuals and 390px responsive layouts passed production verification.
 
 ### Midea local release gate
 
-- The article contains 2,109 file words, five relevant internal links, current Midea Group investor and regional warranty sources, an at-a-glance table, buyer checklist, FAQ and final answer.
+- The exact Midea target slug was absent locally and returned `404` on production before writing.
+- The article contains 2,109 file words, five relevant internal links and current official Midea Group investor and regional warranty sources, plus an at-a-glance table, buyer checklist, FAQ and final answer.
 - The responsibility boundary separates listed Midea Group, its Smart Home business, selected appliance brands, overseas operating scale, model origin, local seller and warranty provider.
-- One repaired unbranded cover and two repaired deterministic maps passed the final visual review.
-
-### Batch 2 local gate
-
-- Content classification, 15 insight tests, 83 brand tests and a 495-page production build passed with all three articles present.
-- Each local article route returned `200` and exposed the expected title, H1, description, production canonical, BlogPosting JSON-LD and three loaded 1600×900 article visuals.
-- The Brand Ownership guide and sitemap included all three slugs. Desktop and 390px mobile checks found no horizontal overflow.
-- The only local console error was the expected unavailable `/_vercel/insights/script.js`; the separate second-pass English, fact-boundary, image and release review returned `PASS`.
+- One repaired unbranded 1600×900 WebP cover and two repaired deterministic 1600×900 SVG maps passed final visual review.
+- Content classification, 15 insight tests, 83 brand tests and a 495-page production build passed with the Midea route present.
+- The local route returned `200` with the expected title, H1, description, production canonical, BlogPosting JSON-LD and three loaded 1600×900 article visuals. The Brand Ownership guide and sitemap included the slug.
+- Desktop and 390px mobile checks found no horizontal overflow. The only local console error was the expected unavailable `/_vercel/insights/script.js`; the separate second-pass English, fact-boundary, image and release review passed.

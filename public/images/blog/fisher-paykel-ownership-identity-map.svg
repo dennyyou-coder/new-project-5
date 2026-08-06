@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Fisher and Paykel ownership and identity map</title>
+  <desc id="desc">Haier ownership connects to Fisher and Paykel Appliances while its New Zealand headquarters, premium brand and DCS business remain distinct operating identities.</desc>
+  <defs><linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#121a1d"/><stop offset="1" stop-color="#244842"/></linearGradient><filter id="fs"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-opacity=".24"/></filter><marker id="fa" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#75c9b7"/></marker></defs>
+  <rect width="1600" height="900" fill="url(#fbg)"/>
+  <text x="95" y="90" fill="#f7f4ee" font-family="Arial, sans-serif" font-size="50" font-weight="700">Fisher &amp; Paykel: group ownership, distinct operating identity</text>
+  <text x="95" y="140" fill="#b8cdc8" font-family="Arial, sans-serif" font-size="24">Haier ownership adds scale without erasing the New Zealand business or brand.</text>
+
+  <g font-family="Arial, sans-serif" filter="url(#fs)">
+    <rect x="95" y="220" width="360" height="140" rx="24" fill="#173e3b" stroke="#75c9b7" stroke-width="2"/>
+    <text x="130" y="270" fill="#98ddcf" font-size="21" font-weight="700">WIDER GROUP</text><text x="130" y="320" fill="#fff" font-size="37" font-weight="700">Haier Group</text>
+    <rect x="620" y="220" width="360" height="140" rx="24" fill="#173e3b" stroke="#75c9b7" stroke-width="2"/>
+    <text x="655" y="270" fill="#98ddcf" font-size="21" font-weight="700">LISTED APPLIANCE PLATFORM</text><text x="655" y="320" fill="#fff" font-size="34" font-weight="700">Haier Smart Home</text>
+    <rect x="1145" y="220" width="360" height="140" rx="24" fill="#f0ebe1"/>
+    <text x="1180" y="270" fill="#55726c" font-size="21" font-weight="700">OPERATING BUSINESS</text><text x="1180" y="314" fill="#152c2a" font-size="28" font-weight="700">Fisher &amp; Paykel</text><text x="1180" y="344" fill="#55726c" font-size="22">Appliances Limited</text>
+  </g>
+  <path d="M455 290H605" stroke="#75c9b7" stroke-width="7" marker-end="url(#fa)"/><path d="M980 290H1130" stroke="#75c9b7" stroke-width="7" marker-end="url(#fa)"/>
+
+  <rect x="95" y="445" width="1410" height="300" rx="28" fill="#f6f2ea" filter="url(#fs)"/>
+  <text x="140" y="505" fill="#152c2a" font-family="Arial, sans-serif" font-size="31" font-weight="700">What remains distinct beneath the parent</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="140" y="550" width="305" height="145" rx="20" fill="#dce9e4"/><text x="175" y="595" fill="#21473f" font-size="25" font-weight="700">New Zealand base</text><text x="175" y="632" fill="#55726c" font-size="20">Founded 1934</text><text x="175" y="662" fill="#55726c" font-size="20">Auckland headquarters</text>
+    <rect x="475" y="550" width="305" height="145" rx="20" fill="#dce9e4"/><text x="510" y="595" fill="#21473f" font-size="25" font-weight="700">Premium design</text><text x="510" y="632" fill="#55726c" font-size="20">Own product language</text><text x="510" y="662" fill="#55726c" font-size="20">Kitchen and fabric care</text>
+    <rect x="810" y="550" width="305" height="145" rx="20" fill="#dce9e4"/><text x="845" y="595" fill="#21473f" font-size="25" font-weight="700">DCS business</text><text x="845" y="632" fill="#55726c" font-size="20">Acquired in 2004</text><text x="845" y="662" fill="#55726c" font-size="20">Premium cooking focus</text>
+    <rect x="1145" y="550" width="315" height="145" rx="20" fill="#dce9e4"/><text x="1180" y="595" fill="#21473f" font-size="25" font-weight="700">Regional entities</text><text x="1180" y="632" fill="#55726c" font-size="20">Local sales and service</text><text x="1180" y="662" fill="#55726c" font-size="20">Market-specific warranty</text>
+  </g>
+  <rect x="95" y="795" width="1410" height="60" rx="18" fill="#153d39"/>
+  <text x="800" y="834" text-anchor="middle" fill="#eef9f6" font-family="Arial, sans-serif" font-size="23">Equity ownership does not make every brand, product team, factory or contract interchangeable.</text>
+</svg>
