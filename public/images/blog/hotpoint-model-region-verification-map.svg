@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hotpoint product responsibility workflow</title><desc id="desc">Verify region, model, legal entity, origin and warranty in that order.</desc>
+  <rect width="1600" height="900" fill="#0a1525"/><text x="90" y="125" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="700">HOTPOINT PRODUCT CHECK</text><text x="90" y="185" fill="#b8cbe8" font-family="Arial,sans-serif" font-size="31">Five records turn a regional brand history into a product-level answer</text>
+  <g font-family="Arial,sans-serif">
+    <g fill="#122b4d" stroke="#6faeff" stroke-width="3"><rect x="80" y="275" width="270" height="330" rx="26"/><rect x="375" y="275" width="270" height="330" rx="26"/><rect x="670" y="275" width="270" height="330" rx="26"/><rect x="965" y="275" width="270" height="330" rx="26"/><rect x="1260" y="275" width="270" height="330" rx="26"/></g>
+    <g fill="#8fc2ff" font-size="48" font-weight="700"><text x="115" y="350">01</text><text x="410" y="350">02</text><text x="705" y="350">03</text><text x="1000" y="350">04</text><text x="1295" y="350">05</text></g>
+    <g fill="#fff" font-size="34" font-weight="700"><text x="115" y="425">REGION</text><text x="410" y="425">MODEL</text><text x="705" y="425">ENTITY</text><text x="1000" y="425">ORIGIN</text><text x="1295" y="425">SERVICE</text></g>
+    <g fill="#d9e7fb" font-size="29"><text x="115" y="485">Country of sale</text><text x="115" y="530">Sale date</text><text x="410" y="485">SKU + serial</text><text x="410" y="530">Electrical spec</text><text x="705" y="485">Seller + importer</text><text x="705" y="530">Warrantor</text><text x="1000" y="485">Rating plate</text><text x="1000" y="530">Shipment proof</text><text x="1295" y="485">Parts catalogue</text><text x="1295" y="530">Local support</text></g>
+    <rect x="200" y="700" width="1200" height="100" rx="24" fill="#56311d"/><text x="300" y="765" fill="#fff" font-size="38" font-weight="700">Do not assume shared parts or warranty across regions.</text>
+  </g>
+</svg>
