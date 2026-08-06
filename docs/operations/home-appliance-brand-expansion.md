@@ -93,8 +93,8 @@
 3. [Haier Smart Home global brand portfolio](https://www.haier.com/global/smart_home/?to=0) — Haier、GE Appliances、Fisher & Paykel 等组合边界。
 4. [Haier India robot vacuum launch](https://www.haier.com/in/about-haier/news/haier-introduces-all-new-robot-vacuum-cleaner.shtml) — 指定清洁产品和官方实拍图。
 5. [Haier Smart Home 2025 interim report](https://smart-home.haier.com/media/ydmoueww/interim-report-2025.pdf) — 上市公司结构和经营网络。
-6. Logo 来源：Haier 印度官方页面页头资产 `https://image.haier.com/in/images/hw2024_head_logo_center.png`。
-7. Hero 来源：Haier 印度机器人吸尘器官方发布页 `https://image.haier.com/in/about-haier/news/W020220530687823080777_p1911.JPG`。
+6. Logo 来源：Haier 全球官网实际页头资产 `https://imagegroup1.haier.com/global/images/hg2020_header_logo_2026.png`，使用官方蓝色字标以确保白底可见。
+7. Hero 来源：Haier 印度机器人吸尘器官方发布页 `https://image.haier.com/in/about-haier/news/W020220530687824011809.JPG`。
 
 ### 站内文章关系
 
@@ -156,7 +156,7 @@
 4. [Fisher & Paykel group structure and manufacturing statement](https://www.fisherpaykel.com/on/demandware.static/-/Library-Sites-FisherPaykelSharedLibrary/default/dwb1aa5119/pdfs/legal-documents/FPA-UK-Modern-Slavery-Act-Statement-FY22.pdf) — 运营实体、制造及供应商边界。
 5. [Fisher & Paykel North American warranty](https://www.fisherpaykel.com/us/help-and-support/warranty-information/) — Fisher & Paykel Appliances, Inc. 保修主体。
 6. Logo 来源：Fisher & Paykel 美国官网使用的官方 SVG symbol `svg-logo-fisherandpaykel`，位于其官方 `fpa-svg-icons.svg` 资产。
-7. Hero 来源：Fisher & Paykel 美国官网官方家电场景 `fp_01_00_brand-video-hp-web-banner-loop-2025-16x9_glo_2400.jpg`。
+7. Hero 来源：Fisher & Paykel 美国官网官方集成厨房产品场景 `fp_02_00_00_kitchen-lifestyle-minimal-ovens-4399_glo_2400.jpg`。
 
 ### 站内文章关系
 

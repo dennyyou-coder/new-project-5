@@ -1,0 +1,157 @@
+{
+  "status": "published",
+  "slug": "lg-home-appliances",
+  "name": "LG Home Appliances",
+  "aliases": ["LG Appliances", "LG Home Appliance Solution", "LG CordZero"],
+  "legalName": "LG Electronics Inc.",
+  "legalEntityNote": "LG Electronics Inc. operates the home-appliance business through its Home Appliance Solution Company. Country subsidiaries, factories, importers and warranty providers can hold narrower regional roles; other companies within the wider LG group are not automatically appliance manufacturers or contract parties.",
+  "officialWebsite": "https://www.lg.com/global/",
+  "headline": "LG appliance ownership, CordZero portfolio, factories and channels",
+  "description": "A source-backed profile of LG Electronics' Home Appliance Solution business, CordZero cleaning products, named factories, regional channels and buyer checks.",
+  "metaDescription": "LG Home Appliances profile: LG Electronics ownership, CordZero and ThinQ, Changwon and Tennessee factory evidence, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with LG. LG Electronics, the wider LG group, business divisions, regional subsidiaries, factories, importers and warranty providers are separate layers and should not be generalized across every model or market.",
+  "headquarters": "Seoul, South Korea",
+  "founded": "1958 as GoldStar, now LG Electronics",
+  "heroImage": "/images/brands/lg-home-appliances/hero-cordzero-cleaning-lineup.webp",
+  "heroImageAlt": "LG CordZero robot, stick and canister vacuum cleaner lineup",
+  "heroImageCaption": "Official LG image of its intelligent vacuum-cleaner lineup introduced for IFA 2025.",
+  "logoImage": "/images/brands/lg-home-appliances/logo.webp",
+  "logoImageAlt": "LG logo",
+  "logoSourceUrl": "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-introduces-intelligent-innovative-cleaning-with-new-vacuums-at-ifa-2025/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/lg-home-appliances/ownership-structure.svg",
+      "alt": "LG Electronics home-appliance business structure map",
+      "caption": "LG Electronics and its Home Appliance Solution Company are the core business references; regional legal entities retain their own transaction roles."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/lg-home-appliances/operations-verification.svg",
+      "alt": "LG appliance manufacturing and buyer verification map",
+      "caption": "Changwon and Tennessee are documented facilities with defined scopes, not universal origin evidence for every LG appliance."
+    }
+  ],
+  "ownership": {
+    "summary": "LG Home Appliances is operated by LG Electronics Inc. through its Home Appliance Solution Company. LG Electronics is affiliated with the wider LG group, but the appliance operating company, its business division, regional sales subsidiaries, physical factories and local warranty entities are distinct. ThinQ, ThinQ AI and CordZero are product or platform names rather than separate appliance companies.",
+    "parentCompany": "LG Electronics Inc."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Kitchen and refrigeration appliances",
+      "positioning": "Refrigerators, cooking appliances and dishwashers combine broad household coverage with selected premium and connected features.",
+      "buyerRelevance": "Verify regional dimensions, voltage, installation, energy labels, connectivity and service parts by exact model."
+    },
+    {
+      "name": "Laundry and garment care",
+      "positioning": "Washers, dryers, WashTower systems and Styler products form a central part of LG's home-appliance range.",
+      "buyerRelevance": "Tennessee evidence is specific to named washer production; origin, warranty and installation remain model- and market-specific."
+    },
+    {
+      "name": "CordZero floor care",
+      "positioning": "CordZero spans stick, robot and selected canister vacuum formats with docking and automation features.",
+      "buyerRelevance": "Compare docking architecture, batteries, bags, filters, app functions, radio approvals and after-sales availability."
+    },
+    {
+      "name": "ThinQ connected services",
+      "positioning": "ThinQ links selected LG appliances with monitoring, automation and AI-assisted functions.",
+      "buyerRelevance": "Confirm supported country, account terms, data processing, cybersecurity support and offline operation before procurement."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "LG identifies Changwon Smart Park in South Korea as a production base for home appliances and describes it as a World Economic Forum Lighthouse Factory.",
+      "scope": "Named Changwon home-appliance facility",
+      "buyerCheck": "Match a product family and model to factory and origin documents rather than applying the site evidence to all LG appliances."
+    },
+    {
+      "evidence": "LG's official Tennessee announcement defines the Clarksville facility around washing-machine production for the U.S. market.",
+      "scope": "Named Tennessee washer facility",
+      "buyerCheck": "Check the exact model, production label, origin statement and shipment batch before making a U.S.-manufacturing claim."
+    },
+    {
+      "evidence": "LG Electronics operates global production and regional business entities across multiple appliance categories.",
+      "scope": "Company network, not exact-SKU manufacturing proof",
+      "buyerCheck": "Require manufacturer, factory, exporter, importer and engineering-change documentation for each sourced appliance."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "LG sells appliances through country websites, direct ecommerce in selected markets, authorized retailers, installers and service networks.",
+      "scope": "Market-specific omnichannel distribution",
+      "buyerCheck": "Confirm authorized territory, channel rights, installation responsibility and local warranty before purchase."
+    },
+    {
+      "evidence": "Regional LG Electronics subsidiaries can serve as sales, import or support entities under local legal notices and product documents.",
+      "scope": "Regional legal-entity roles",
+      "buyerCheck": "Retain the invoice, importer label, compliance declaration and warranty identifying the responsible entity."
+    },
+    {
+      "evidence": "CordZero assortments and ThinQ features vary across countries and product generations.",
+      "scope": "Regional product and software availability",
+      "buyerCheck": "Validate model suffix, app region, consumables, accessories and service stock in the destination market."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: LG combines a broad major-appliance portfolio, credible smart-factory investment, ThinQ services and a multi-format CordZero floor-care range. Buyers still need to separate LG Electronics from the wider group and match each model to its regional seller, factory evidence, importer and warranty provider.",
+    "competitorSlugs": ["samsung-home-appliances", "haier-home-appliances", "dyson"]
+  },
+  "developments": [
+    {
+      "date": "2026-01-30",
+      "title": "LG reports 2025 results for its Home Appliance Solution business",
+      "summary": "The company reports the current HS Company structure and performance within LG Electronics.",
+      "sourceIds": ["lg-results-2025"]
+    },
+    {
+      "date": "2025-09-03",
+      "title": "LG introduces an expanded intelligent vacuum lineup at IFA",
+      "summary": "The official release covers robot, stick and canister formats within the CordZero cleaning portfolio.",
+      "sourceIds": ["lg-ifa-vacuums"]
+    },
+    {
+      "date": "2022-03-30",
+      "title": "Changwon Smart Park is named a Lighthouse Factory",
+      "summary": "LG details the technology and production role of its named South Korean home-appliance facility.",
+      "sourceIds": ["lg-smart-park"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "lg-results-2025",
+      "title": "LG Electronics Releases Fourth-Quarter and Full-Year 2025 Financial Results",
+      "publisher": "LG Electronics",
+      "url": "https://www.lg.com/global/newsroom/news/corporate/lg-electronics-releases-fourth-quarter-and-full-year-2025-financial-results/",
+      "publishedAt": "2026-01-30",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "lg-ifa-vacuums",
+      "title": "LG Introduces Intelligent, Innovative Cleaning With New Vacuums at IFA 2025",
+      "publisher": "LG Electronics",
+      "url": "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-introduces-intelligent-innovative-cleaning-with-new-vacuums-at-ifa-2025/",
+      "publishedAt": "2025-09-03",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "lg-smart-park",
+      "title": "LG Smart Park Named Lighthouse Factory for Futuristic Manufacturing Technology",
+      "publisher": "LG Electronics",
+      "url": "https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-smart-park-named-lighthouse-factory-for-futuristic-manufacturing-technology/",
+      "publishedAt": "2022-03-30",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "lg-tennessee",
+      "title": "LG Electronics to Build U.S. Factory for Home Appliances in Tennessee",
+      "publisher": "LG Electronics",
+      "url": "https://www.lg.com/global/newsroom/news/corporate/lg-electronics-to-build-u-s-factory-for-home-appliances-in-tennessee/",
+      "publishedAt": "2017-03-01",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T11:32:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T11:32:00+08:00"
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Samsung appliance business and responsibility map</title>
+  <desc id="desc">Samsung Electronics operates Digital Appliances within the DX organization. Regional entities, manufacturing sites, product categories, SmartThings and local service responsibilities remain distinct.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#102b49"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity=".28"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#58b9ff"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g fill="none" stroke="#234b70" stroke-width="1" opacity=".45"><path d="M0 180H1600M0 360H1600M0 540H1600M0 720H1600"/><path d="M320 0V900M640 0V900M960 0V900M1280 0V900"/></g>
+  <text x="100" y="105" fill="#f4f8ff" font-family="Arial, sans-serif" font-size="48" font-weight="700">Samsung appliance responsibility map</text>
+  <text x="100" y="150" fill="#a8c9e8" font-family="Arial, sans-serif" font-size="24">Brand, business, factory and warranty are separate layers</text>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="560" y="205" width="480" height="120" rx="24" fill="#0c3e69" stroke="#55b9ff" stroke-width="3"/>
+    <text x="800" y="258" text-anchor="middle" fill="#fff" font-size="34" font-weight="700">Samsung Electronics Co., Ltd.</text>
+    <text x="800" y="298" text-anchor="middle" fill="#bfe1ff" font-size="22">Listed operating company</text>
+    <path d="M800 325V390" stroke="#58b9ff" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="560" y="405" width="480" height="112" rx="22" fill="#123653" stroke="#4aa9ed" stroke-width="2"/>
+    <text x="800" y="452" text-anchor="middle" fill="#fff" font-size="30" font-weight="700">DX organization</text>
+    <text x="800" y="489" text-anchor="middle" fill="#bfe1ff" font-size="22">Digital Appliances business</text>
+    <path d="M560 461H430" stroke="#58b9ff" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M1040 461H1170" stroke="#58b9ff" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M800 517V610" stroke="#58b9ff" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="95" y="365" width="335" height="190" rx="22" fill="#102a43" stroke="#326f9e" stroke-width="2"/>
+    <text x="262" y="413" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">Regional operations</text>
+    <text x="130" y="458" fill="#bfe1ff" font-size="21">• Local sales companies</text>
+    <text x="130" y="493" fill="#bfe1ff" font-size="21">• Importers and factories</text>
+    <text x="130" y="528" fill="#bfe1ff" font-size="21">• Market-specific service</text>
+    <rect x="1170" y="365" width="335" height="190" rx="22" fill="#102a43" stroke="#326f9e" stroke-width="2"/>
+    <text x="1337" y="413" text-anchor="middle" fill="#fff" font-size="28" font-weight="700">Connected platform</text>
+    <text x="1205" y="458" fill="#bfe1ff" font-size="21">• Bespoke AI products</text>
+    <text x="1205" y="493" fill="#bfe1ff" font-size="21">• SmartThings services</text>
+    <text x="1205" y="528" fill="#bfe1ff" font-size="21">• Features vary by market</text>
+    <rect x="385" y="625" width="830" height="150" rx="24" fill="#0d2942" stroke="#326f9e" stroke-width="2"/>
+    <text x="800" y="674" text-anchor="middle" fill="#fff" font-size="29" font-weight="700">Product categories</text>
+    <text x="800" y="722" text-anchor="middle" fill="#bfe1ff" font-size="23">Refrigeration · Laundry · Cooking · Dishwashing · Jet floor care</text>
+    <text x="800" y="757" text-anchor="middle" fill="#79c8ff" font-size="20">Model documents—not the logo alone—identify origin and responsibility</text>
+  </g>
+  <text x="100" y="840" fill="#86a9c8" font-family="Arial, sans-serif" font-size="20">Source basis: Samsung Electronics corporate reporting and official regional manufacturing disclosures.</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">LG appliance buyer verification chain</title>
+  <desc id="desc">Buyers should connect an LG model to factory evidence, importer and conformity records, ThinQ service terms, warranty and replacement parts.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#181117"/><stop offset="1" stop-color="#3a1a2b"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity=".3"/></filter><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#f084ad"/></marker></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="100" y="105" fill="#fff7fa" font-family="Arial, sans-serif" font-size="48" font-weight="700">Verify the exact LG appliance route</text>
+  <text x="100" y="150" fill="#e5b6c9" font-family="Arial, sans-serif" font-size="24">Six records turn a brand claim into a procurement answer</text>
+  <g font-family="Arial, sans-serif" filter="url(#shadow)">
+    <g fill="#4b2036" stroke="#d86694" stroke-width="2"><rect x="80" y="280" width="210" height="190" rx="22"/><rect x="325" y="280" width="210" height="190" rx="22"/><rect x="570" y="280" width="210" height="190" rx="22"/><rect x="815" y="280" width="210" height="190" rx="22"/><rect x="1060" y="280" width="210" height="190" rx="22"/><rect x="1305" y="280" width="210" height="190" rx="22"/></g>
+    <g fill="#fff" font-size="25" font-weight="700" text-anchor="middle"><text x="185" y="328">1. Model</text><text x="430" y="328">2. Factory</text><text x="675" y="328">3. Market</text><text x="920" y="328">4. Software</text><text x="1165" y="328">5. Warranty</text><text x="1410" y="328">6. Parts</text></g>
+    <g fill="#efbfd2" font-size="19" text-anchor="middle"><text x="185" y="374"><tspan x="185">Rating plate</tspan><tspan x="185" dy="30">serial and origin</tspan></text><text x="430" y="374"><tspan x="430">Site evidence</tspan><tspan x="430" dy="30">for that SKU</tspan></text><text x="675" y="374"><tspan x="675">Seller, importer</tspan><tspan x="675" dy="30">and conformity</tspan></text><text x="920" y="374"><tspan x="920">ThinQ region</tspan><tspan x="920" dy="30">and dependencies</tspan></text><text x="1165" y="374"><tspan x="1165">Provider, labor</tspan><tspan x="1165" dy="30">and exclusions</tspan></text><text x="1410" y="374"><tspan x="1410">Filters, batteries</tspan><tspan x="1410" dy="30">and repair plan</tspan></text></g>
+    <g stroke="#f084ad" stroke-width="3" marker-end="url(#arrow)"><path d="M290 375H317"/><path d="M535 375H562"/><path d="M780 375H807"/><path d="M1025 375H1052"/><path d="M1270 375H1297"/></g>
+    <rect x="265" y="590" width="1070" height="120" rx="24" fill="#291a27" stroke="#9a526f" stroke-width="2"/>
+    <text x="800" y="640" text-anchor="middle" fill="#fff" font-size="29" font-weight="700">Approved supplier or locally supportable product</text>
+    <text x="800" y="681" text-anchor="middle" fill="#f39cbd" font-size="21">All six records should point to the same model, entity and destination market</text>
+  </g>
+  <text x="100" y="840" fill="#bd859d" font-family="Arial, sans-serif" font-size="20">A genuine product can still be unsuitable for a market if voltage, software or warranty does not match.</text>
+</svg>

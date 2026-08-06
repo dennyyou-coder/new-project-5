@@ -1,0 +1,162 @@
+{
+  "status": "published",
+  "slug": "ge-appliances",
+  "name": "GE Appliances",
+  "aliases": ["GE Profile", "GE Appliances, a Haier company", "Haier US Appliance Solutions"],
+  "legalName": "Haier US Appliance Solutions, Inc.",
+  "legalEntityNote": "Haier US Appliance Solutions, Inc. does business as GE Appliances and is owned through Haier Smart Home within Haier Group. The company continues to use the GE Appliances name under a long-term trademark license; ownership of the operating company and ownership of the GE trademark are therefore separate facts.",
+  "officialWebsite": "https://www.geappliances.com/",
+  "headline": "GE Appliances ownership, GE trademark license, U.S. operations and channels",
+  "description": "A source-backed profile separating GE Appliances' Haier ownership, licensed GE name, U.S. operating company, brand portfolio, factories and buyer checks.",
+  "metaDescription": "GE Appliances profile: Haier Smart Home ownership, licensed GE name, Haier US Appliance Solutions, U.S. factories, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with GE Appliances, Haier or GE. Company ownership, the licensed GE name, portfolio brands, legal entities, factories, model origin and warranty obligations are separate facts and should not be generalized.",
+  "headquarters": "Louisville, Kentucky, United States",
+  "founded": "Appliance heritage traced to 1907; acquired by Haier in 2016",
+  "heroImage": "/images/brands/ge-appliances/hero-us-manufacturing.webp",
+  "heroImageAlt": "GE Appliances employee working in a United States appliance factory",
+  "heroImageCaption": "Official GE Appliances corporate image showing a worker in its U.S. manufacturing operations.",
+  "logoImage": "/images/brands/ge-appliances/logo.webp",
+  "logoImageAlt": "GE Appliances, a Haier company logo",
+  "logoSourceUrl": "https://geappliancesco.com/about-us",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/ge-appliances/ownership-structure.svg",
+      "alt": "GE Appliances Haier ownership and licensed-brand map",
+      "caption": "Haier owns the appliance operating company, while continued use of the GE Appliances name rests on a long-term trademark license."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/ge-appliances/operations-verification.svg",
+      "alt": "GE Appliances manufacturing network and buyer verification map",
+      "caption": "Company-level U.S. manufacturing evidence must be matched to the product family, factory and exact model before an origin claim is made."
+    }
+  ],
+  "ownership": {
+    "summary": "GE Appliances is operated by Haier US Appliance Solutions, Inc., a Haier Smart Home-owned company within Haier Group. Haier completed the appliance-business acquisition in 2016, while the GE Appliances name continues under a long-term trademark license. GE Appliances' operating company, Haier ownership, the GE trademark, its portfolio brands and individual factories therefore represent related but distinct identity layers.",
+    "parentCompany": "Haier Smart Home Co., Ltd., within Haier Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Cooking and refrigeration",
+      "positioning": "GE Appliances serves U.S. households across GE, GE Profile, Café and Monogram product tiers.",
+      "buyerRelevance": "Brand tier, dimensions, fuel type, connectivity, installation and service terms need exact-model comparison."
+    },
+    {
+      "name": "Laundry and dishwashing",
+      "positioning": "Washers, dryers and dishwashers are supported by category-specific U.S. manufacturing and service operations.",
+      "buyerRelevance": "Do not convert company-level U.S. investment claims into model origin without factory and label evidence."
+    },
+    {
+      "name": "Water, air and small appliances",
+      "positioning": "Selected market ranges extend into water treatment, room air products, disposers and countertop appliances.",
+      "buyerRelevance": "Categories can use different factories, suppliers, channels and warranty structures from major appliances."
+    },
+    {
+      "name": "Multi-brand U.S. portfolio",
+      "positioning": "The operating company presents Monogram, Café, GE Profile, GE, Haier and U.S.-market Hotpoint as distinct brands or ranges.",
+      "buyerRelevance": "Authorization and trademark rights must be verified for the named brand and category, not inferred from the parent company."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "GE Appliances reports U.S. manufacturing operations across five states, including Appliance Park in Louisville and other product-specialized sites.",
+      "scope": "Company-reported U.S. manufacturing network",
+      "buyerCheck": "Match the exact product and model to a named facility, rating label and country-of-origin record."
+    },
+    {
+      "evidence": "GE Appliances' operations page assigns distinct manufacturing and business functions to named U.S. locations.",
+      "scope": "Named facilities and stated functions",
+      "buyerCheck": "Verify whether the facility makes the covered finished product, a component or a different product family."
+    },
+    {
+      "evidence": "The operating legal entity is Haier US Appliance Solutions, Inc. doing business as GE Appliances.",
+      "scope": "Corporate identity, not automatic model-manufacturer proof",
+      "buyerCheck": "Compare the contract, compliance label, customs record and warranty to identify each responsible entity."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "GE Appliances uses direct websites, national retailers, dealers, builders, distributors and authorized service channels in the United States.",
+      "scope": "United States distribution",
+      "buyerCheck": "Confirm dealer authorization, project-channel restrictions, installation scope and local service coverage."
+    },
+    {
+      "evidence": "GE Appliances, GE Profile, Café, Monogram, Haier and Hotpoint occupy distinct positions within the U.S. portfolio.",
+      "scope": "Named U.S. brand portfolio",
+      "buyerCheck": "Secure rights for the specific brand and product class rather than relying on a general GE Appliances relationship."
+    },
+    {
+      "evidence": "Warranty and service obligations are defined in product-specific GE Appliances documents and can name the operating or service entity.",
+      "scope": "Product- and market-specific after-sales",
+      "buyerCheck": "Retain the exact warranty, model serial information and authorized-servicer terms for the sale."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: GE Appliances combines a familiar U.S. market identity, a tiered brand portfolio, substantial domestic manufacturing operations and Haier Smart Home backing. Its defining diligence issue is the licensed-name structure: buyers must keep the GE trademark, the Haier-owned operating company, portfolio brands and model-level manufacturing evidence separate.",
+    "competitorSlugs": ["samsung-home-appliances", "lg-home-appliances", "fisher-paykel"]
+  },
+  "developments": [
+    {
+      "date": "2022-05-16",
+      "title": "GE Appliances expands its U.S. manufacturing investment",
+      "summary": "Company materials describe a multi-state manufacturing footprint and product-specialized facilities, subject to model-level verification.",
+      "sourceIds": ["gea-about", "gea-operations"]
+    },
+    {
+      "date": "2016-06-06",
+      "title": "Haier completes the GE Appliances acquisition",
+      "summary": "The transaction transferred the appliance operating business and established continued use of the GE Appliances brand under a long-term license.",
+      "sourceIds": ["haier-ge-acquisition"]
+    },
+    {
+      "date": "1907-01-01",
+      "title": "GE appliance heritage begins in the United States",
+      "summary": "GE Appliances traces its appliance history to the early twentieth century; that heritage is distinct from the current post-2016 ownership structure.",
+      "sourceIds": ["gea-about"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "gea-about",
+      "title": "About GE Appliances",
+      "publisher": "GE Appliances",
+      "url": "https://geappliancesco.com/about-us",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "gea-overview",
+      "title": "GE Appliances Company Overview",
+      "publisher": "GE Appliances",
+      "url": "https://geappliancesco.com/company-overview/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "gea-operations",
+      "title": "GE Appliances Operations",
+      "publisher": "GE Appliances",
+      "url": "https://geappliancesco.com/operations/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "haier-ge-acquisition",
+      "title": "Haier Completes Acquisition of GE Appliances",
+      "publisher": "Haier",
+      "url": "https://www.haier.com/global/press-events/news/20160607_142585.shtml",
+      "publishedAt": "2016-06-06",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "gea-gri",
+      "title": "GE Appliances GRI Content Index 2021",
+      "publisher": "GE Appliances",
+      "url": "https://geappliancesco.com/content/pdf/GEA_GRI_Content_Index_2021.pdf",
+      "publishedAt": "2021",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T11:34:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T11:34:00+08:00"
+}

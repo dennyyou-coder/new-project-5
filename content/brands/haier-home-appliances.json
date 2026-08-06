@@ -1,0 +1,170 @@
+{
+  "status": "published",
+  "slug": "haier-home-appliances",
+  "name": "Haier Home Appliances",
+  "aliases": ["Haier Appliances", "Haier Smart Home", "海尔智家"],
+  "legalName": "Haier Smart Home Co., Ltd.",
+  "legalEntityNote": "Haier is a consumer appliance brand operated within Haier Smart Home Co., Ltd., the listed home-appliance platform controlled within the wider Haier Group. GE Appliances, Fisher & Paykel, Candy and other portfolio businesses retain separate brand and operating identities; regional Haier entities can hold local sales, manufacturing, import or service roles.",
+  "officialWebsite": "https://www.haier.com/global/",
+  "headline": "Haier appliance ownership, global portfolio, manufacturing and channels",
+  "description": "A source-backed profile separating the Haier consumer brand, Haier Smart Home and Haier Group, with products, global operations, regional entities and buyer checks.",
+  "metaDescription": "Haier Home Appliances profile: Haier Smart Home and Haier Group boundaries, product portfolio, global operations, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Haier. Haier Group, Haier Smart Home, the Haier consumer brand, acquired portfolio companies, regional entities and physical factories are distinct layers and should not be generalized to every appliance or SKU.",
+  "headquarters": "Qingdao, Shandong, China",
+  "founded": "1984 for the enterprise that developed into today's Haier",
+  "heroImage": "/images/brands/haier-home-appliances/hero-robot-vacuum.webp",
+  "heroImageAlt": "Haier robot vacuum cleaner in an official product image",
+  "heroImageCaption": "Official Haier India product image showing a Haier robot vacuum cleaner.",
+  "logoImage": "/images/brands/haier-home-appliances/logo.webp",
+  "logoImageAlt": "Haier logo",
+  "logoSourceUrl": "https://www.haier.com/global/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/haier-home-appliances/ownership-structure.svg",
+      "alt": "Haier Group, Haier Smart Home and appliance brand portfolio map",
+      "caption": "Haier Smart Home is the listed appliance platform within Haier Group; portfolio companies remain distinct brands and operating businesses."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/haier-home-appliances/operations-verification.svg",
+      "alt": "Haier regional ownership and appliance verification map",
+      "caption": "Global local-for-local operations do not identify the factory, seller, importer or warrantor for an individual model."
+    }
+  ],
+  "ownership": {
+    "summary": "Haier Home Appliances is a consumer brand within Haier Smart Home Co., Ltd., the listed home-appliance platform controlled within the wider Haier Group. Haier Smart Home also reports a multi-brand portfolio that includes GE Appliances and Fisher & Paykel, but those companies are not interchangeable with the Haier brand or with one another. Regional legal entities, manufacturers, importers and service providers must be verified independently.",
+    "parentCompany": "Haier Smart Home Co., Ltd., within Haier Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Refrigeration and kitchen appliances",
+      "positioning": "Haier-branded refrigerators, freezers, cooking appliances and dishwashers serve broad household segments across regional assortments.",
+      "buyerRelevance": "Buyers should compare dimensions, climate class, voltage, installation, energy labels and service coverage by market and model."
+    },
+    {
+      "name": "Laundry appliances",
+      "positioning": "Washers, dryers and combined laundry formats are central to Haier's global smart-home portfolio.",
+      "buyerRelevance": "Verify manufacturer, factory, capacity claims, local certification, spare parts and warranty for the exact regional SKU."
+    },
+    {
+      "name": "Air, water and home-comfort products",
+      "positioning": "Regional Haier ranges can include air conditioning, water heating and other connected home systems.",
+      "buyerRelevance": "Category scope and installation obligations vary sharply by country, so local contracting and compliance evidence is essential."
+    },
+    {
+      "name": "Cleaning appliances in selected markets",
+      "positioning": "Haier markets products such as robot and handheld vacuums in selected countries, including an officially documented India range.",
+      "buyerRelevance": "Do not infer a global cleaning assortment from one market; check app region, accessories, batteries, filters and service availability."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Haier Smart Home describes a local-for-local global system spanning research, manufacturing, marketing and service.",
+      "scope": "Haier Smart Home global operating model",
+      "buyerCheck": "Require exact-SKU factory, origin, exporter and compliance evidence rather than assigning a global platform site to the product."
+    },
+    {
+      "evidence": "Haier Smart Home reports multiple portfolio businesses and regional operating networks under the listed company.",
+      "scope": "Group portfolio and regional network",
+      "buyerCheck": "Keep Haier, GE Appliances, Fisher & Paykel and other brand-company records separate in supplier qualification."
+    },
+    {
+      "evidence": "Haier India's official launch documents named robot-vacuum products for that market.",
+      "scope": "Specified India cleaning-product range",
+      "buyerCheck": "Verify the regional model number, legal manufacturer, origin, radio approval, app and warranty before cross-border sourcing."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Haier Smart Home reports a global network designed around localized brands, products, channels and service.",
+      "scope": "Company-reported international operating model",
+      "buyerCheck": "Identify the local contracting company, authorized distributor, importer and after-sales provider for the destination market."
+    },
+    {
+      "evidence": "Haier appliances are sold through country sites, retailers, ecommerce channels, distributors and project channels, with assortments varying by region.",
+      "scope": "Market-specific channel structure",
+      "buyerCheck": "Confirm channel authorization, territory, installation duties, spare-parts support and marketplace restrictions."
+    },
+    {
+      "evidence": "The Haier Smart Home portfolio uses multiple independent consumer brands rather than a single universal channel identity.",
+      "scope": "Multi-brand channel boundary",
+      "buyerCheck": "Do not treat a Haier authorization as rights to GE Appliances, Fisher & Paykel or another portfolio brand."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Haier's strength is a large localized appliance platform with broad categories and a portfolio of independently operated global brands. That same breadth makes identity control essential: Haier Group, Haier Smart Home, the Haier consumer brand, acquired companies and local entities have related but different roles.",
+    "competitorSlugs": ["midea", "samsung-home-appliances", "lg-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2026-04-02",
+      "title": "Haier Smart Home reports FY2025 results",
+      "summary": "The official results describe the listed appliance platform, global brand portfolio and localized operating strategy.",
+      "sourceIds": ["haier-results-2025"]
+    },
+    {
+      "date": "2022-05-30",
+      "title": "Haier introduces robot vacuum cleaners in India",
+      "summary": "The official regional launch documents a named Haier cleaning-appliance range without establishing a universal global assortment.",
+      "sourceIds": ["haier-india-robot"]
+    },
+    {
+      "date": "2012-11-23",
+      "title": "Haier completes the acquisition of Fisher & Paykel Appliances",
+      "summary": "The acquisition added Fisher & Paykel to the wider appliance portfolio while preserving a distinct company and brand identity.",
+      "sourceIds": ["haier-fp-profile"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "haier-results-2025",
+      "title": "Haier Smart Home Reports FY2025 Results",
+      "publisher": "Haier Smart Home",
+      "url": "https://www.haier.com/global/press-events/news/20260402_288863.shtml",
+      "publishedAt": "2026-04-02",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "haier-about",
+      "title": "About Haier",
+      "publisher": "Haier Group",
+      "url": "https://www.haier.com/global/about-haier/",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "haier-portfolio",
+      "title": "Haier Smart Home Global Brand Portfolio",
+      "publisher": "Haier",
+      "url": "https://www.haier.com/global/smart_home/?to=0",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "haier-interim-2025",
+      "title": "Haier Smart Home 2025 Interim Report",
+      "publisher": "Haier Smart Home",
+      "url": "https://smart-home.haier.com/media/ydmoueww/interim-report-2025.pdf",
+      "publishedAt": "2025",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "haier-india-robot",
+      "title": "Haier Introduces All-New Robot Vacuum Cleaner",
+      "publisher": "Haier India",
+      "url": "https://www.haier.com/in/about-haier/news/haier-introduces-all-new-robot-vacuum-cleaner.shtml",
+      "publishedAt": "2022-05-30",
+      "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "haier-fp-profile",
+      "title": "Fisher & Paykel Profile",
+      "publisher": "Haier",
+      "url": "https://www.haier.com/global/haier-ecosystem/haier/fisherandpaykel/",
+      "accessedAt": "2026-08-06"
+    }
+  ],
+  "publishedAt": "2026-08-06T11:33:00+08:00",
+  "lastVerified": "2026-08-06",
+  "lastModified": "2026-08-06T11:33:00+08:00"
+}
