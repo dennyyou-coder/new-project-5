@@ -218,24 +218,30 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     description:
       "Verified profiles of commercial and industrial cleaning brands, focused on floorcare systems, autonomous equipment, pressure washing and professional distribution models.",
     brandSlugs: [
+      "dulevo",
       "ecovacs",
       "gausium",
       "hako",
       "ipc",
       "karcher",
+      "lionsbot",
       "nilfisk",
       "numatic",
       "oreck",
+      "pudu-robotics",
       "taski",
       "tennant"
     ],
     primaryBrandSlugs: [
+      "dulevo",
       "gausium",
       "hako",
       "ipc",
       "karcher",
+      "lionsbot",
       "nilfisk",
       "numatic",
+      "pudu-robotics",
       "taski",
       "tennant"
     ]
