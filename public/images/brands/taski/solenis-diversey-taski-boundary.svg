@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Solenis Diversey TASKI brand boundary</title><desc id="desc">A diagram showing group, operating structures, brand and market contract layers.</desc>
+  <rect width="1200" height="720" fill="#f8f7f4"/>
+  <text x="80" y="90" font-family="Arial" font-size="39" font-weight="700" fill="#202b35">TASKI is a brand—not one universal legal entity</text>
+  <text x="80" y="134" font-family="Arial" font-size="21" fill="#5f6b73">Official sources connect TASKI to both Solenis and Diversey structures.</text>
+  <g font-family="Arial">
+    <rect x="80" y="200" width="245" height="300" rx="24" fill="#243746"/><text x="110" y="250" font-size="18" fill="#bcd0da">GROUP</text><text x="110" y="300" font-size="29" font-weight="700" fill="#fff">Solenis</text><text x="110" y="365" font-size="18" fill="#d7e3e8">Acquired Diversey</text><text x="110" y="402" font-size="18" fill="#d7e3e8">in July 2023</text>
+    <path d="M345 350h55" stroke="#e66b18" stroke-width="6"/><path d="m388 335 22 15-22 15" fill="none" stroke="#e66b18" stroke-width="6"/>
+    <rect x="410" y="200" width="245" height="300" rx="24" fill="#fff" stroke="#d8d4cc" stroke-width="2"/><text x="440" y="250" font-size="18" fill="#ad4b0b">BUSINESS STRUCTURE</text><text x="440" y="300" font-size="29" font-weight="700" fill="#202b35">Diversey</text><text x="440" y="365" font-size="18" fill="#5f6b73">Trademark owner</text><text x="440" y="402" font-size="18" fill="#5f6b73">or licensee context</text>
+    <path d="M675 350h55" stroke="#e66b18" stroke-width="6"/><path d="m718 335 22 15-22 15" fill="none" stroke="#e66b18" stroke-width="6"/>
+    <rect x="740" y="200" width="380" height="300" rx="24" fill="#fff0e5"/><text x="775" y="250" font-size="18" fill="#ad4b0b">PROFESSIONAL CLEANING BRAND</text><text x="775" y="300" font-size="29" font-weight="700" fill="#202b35">TASKI</text><text x="775" y="365" font-size="18" fill="#5f6b73">Machines + service</text><text x="775" y="402" font-size="18" fill="#5f6b73">Regional seller varies</text>
+  </g>
+  <rect x="80" y="560" width="1040" height="80" rx="20" fill="#ffe0c9"/>
+  <text x="600" y="610" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#71350d">Check the quotation, invoice, importer and warranty—not the brand name alone.</text>
+</svg>

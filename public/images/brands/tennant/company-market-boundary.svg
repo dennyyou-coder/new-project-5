@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Tennant company and market responsibility boundary</title>
+  <desc id="desc">A diagram separating Tennant Company from regional sellers, service providers and product-level verification.</desc>
+  <rect width="1200" height="720" fill="#f4f7f5"/>
+  <text x="80" y="90" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#16362b">Company context is not SKU proof</text>
+  <text x="80" y="132" font-family="Arial, sans-serif" font-size="21" fill="#456158">Keep the listed company, market contract and machine evidence separate.</text>
+  <rect x="80" y="190" width="300" height="330" rx="24" fill="#ffffff" stroke="#b8ccc4" stroke-width="2"/>
+  <circle cx="130" cy="245" r="24" fill="#087f5b"/><text x="121" y="254" font-family="Arial" font-size="24" font-weight="700" fill="#fff">1</text>
+  <text x="175" y="255" font-family="Arial" font-size="26" font-weight="700" fill="#16362b">Tennant Company</text>
+  <text x="115" y="320" font-family="Arial" font-size="20" fill="#456158">NYSE-listed company</text>
+  <text x="115" y="362" font-family="Arial" font-size="20" fill="#456158">Tennant equipment brand</text>
+  <text x="115" y="404" font-family="Arial" font-size="20" fill="#456158">Global manufacturing network</text>
+  <text x="115" y="466" font-family="Arial" font-size="18" fill="#70857e">Group disclosure</text>
+  <path d="M400 355h70" stroke="#087f5b" stroke-width="6"/><path d="m458 340 22 15-22 15" fill="none" stroke="#087f5b" stroke-width="6"/>
+  <rect x="480" y="190" width="300" height="330" rx="24" fill="#ffffff" stroke="#b8ccc4" stroke-width="2"/>
+  <circle cx="530" cy="245" r="24" fill="#087f5b"/><text x="521" y="254" font-family="Arial" font-size="24" font-weight="700" fill="#fff">2</text>
+  <text x="575" y="255" font-family="Arial" font-size="26" font-weight="700" fill="#16362b">Market contract</text>
+  <text x="515" y="320" font-family="Arial" font-size="20" fill="#456158">Regional subsidiary</text>
+  <text x="515" y="362" font-family="Arial" font-size="20" fill="#456158">Authorized distributor</text>
+  <text x="515" y="404" font-family="Arial" font-size="20" fill="#456158">Service organization</text>
+  <text x="515" y="466" font-family="Arial" font-size="18" fill="#70857e">Country-specific responsibility</text>
+  <path d="M800 355h70" stroke="#087f5b" stroke-width="6"/><path d="m858 340 22 15-22 15" fill="none" stroke="#087f5b" stroke-width="6"/>
+  <rect x="880" y="190" width="240" height="330" rx="24" fill="#16362b"/>
+  <circle cx="930" cy="245" r="24" fill="#d6f5e8"/><text x="921" y="254" font-family="Arial" font-size="24" font-weight="700" fill="#16362b">3</text>
+  <text x="975" y="255" font-family="Arial" font-size="26" font-weight="700" fill="#fff">SKU proof</text>
+  <text x="915" y="320" font-family="Arial" font-size="20" fill="#d6f5e8">Factory and origin</text>
+  <text x="915" y="362" font-family="Arial" font-size="20" fill="#d6f5e8">Software and data</text>
+  <text x="915" y="404" font-family="Arial" font-size="20" fill="#d6f5e8">Warranty and parts</text>
+  <text x="915" y="466" font-family="Arial" font-size="18" fill="#a8c8bd">Verify in writing</text>
+  <rect x="80" y="575" width="1040" height="76" rx="18" fill="#dff3eb"/>
+  <text x="600" y="623" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#16362b">The 11-site network does not identify the source of a specific machine.</text>
+</svg>

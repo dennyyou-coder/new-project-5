@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Hako production and service check</title><desc id="desc">Buyer workflow from company footprint to model and site proof.</desc>
+  <rect width="1200" height="720" fill="#172633"/>
+  <text x="80" y="92" font-family="Arial" font-size="39" font-weight="700" fill="#fff">From network evidence to contract proof</text>
+  <text x="80" y="136" font-family="Arial" font-size="21" fill="#c3d1d8">Three plants and a broad service network are starting points—not final answers.</text>
+  <g font-family="Arial">
+    <rect x="80" y="205" width="310" height="330" rx="24" fill="#fff"/><text x="115" y="260" font-size="18" fill="#a01d17">COMPANY FOOTPRINT</text><text x="115" y="310" font-size="28" font-weight="700" fill="#172633">Map the network</text><text x="115" y="370" font-size="19" fill="#536573">Production sites</text><text x="115" y="407" font-size="19" fill="#536573">Supplier geography</text><text x="115" y="444" font-size="19" fill="#536573">Service technicians</text><text x="115" y="490" font-size="17" fill="#71818b">Source: company reporting</text>
+    <path d="M410 370h60" stroke="#e1251b" stroke-width="6"/><path d="m458 355 22 15-22 15" fill="none" stroke="#e1251b" stroke-width="6"/>
+    <rect x="480" y="205" width="310" height="330" rx="24" fill="#fdeceb"/><text x="515" y="260" font-size="18" fill="#a01d17">MODEL EVIDENCE</text><text x="515" y="310" font-size="28" font-weight="700" fill="#172633">Name the machine</text><text x="515" y="370" font-size="19" fill="#536573">Factory + origin</text><text x="515" y="407" font-size="19" fill="#536573">Serial range</text><text x="515" y="444" font-size="19" fill="#536573">Parts responsibility</text><text x="515" y="490" font-size="17" fill="#71818b">Record in procurement file</text>
+    <path d="M810 370h60" stroke="#e1251b" stroke-width="6"/><path d="m858 355 22 15-22 15" fill="none" stroke="#e1251b" stroke-width="6"/>
+    <rect x="880" y="205" width="240" height="330" rx="24" fill="#e7f2f6"/><text x="915" y="260" font-size="18" fill="#31596c">SITE SUPPORT</text><text x="915" y="310" font-size="28" font-weight="700" fill="#172633">Test locally</text><text x="915" y="370" font-size="19" fill="#536573">Response time</text><text x="915" y="407" font-size="19" fill="#536573">Parts stock</text><text x="915" y="444" font-size="19" fill="#536573">Cleaning result</text><text x="915" y="490" font-size="17" fill="#71818b">Accept before rollout</text>
+  </g>
+  <text x="600" y="628" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#f5d0cd">Do not infer a machine's factory or service level from group totals.</text>
+</svg>

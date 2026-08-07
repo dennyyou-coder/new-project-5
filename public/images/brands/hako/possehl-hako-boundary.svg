@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Possehl and Hako responsibility boundary</title><desc id="desc">Diagram separating shareholder, operating company, group brands and local contract.</desc>
+  <rect width="1200" height="720" fill="#f6f7f9"/>
+  <text x="80" y="92" font-family="Arial" font-size="39" font-weight="700" fill="#172633">Ownership is one layer of the buying decision</text>
+  <text x="80" y="136" font-family="Arial" font-size="21" fill="#536573">Hako has been wholly owned by Possehl since 2007.</text>
+  <g font-family="Arial">
+    <rect x="80" y="200" width="1040" height="100" rx="22" fill="#243b4a"/><text x="120" y="245" font-size="19" fill="#bcd1dc">SHAREHOLDER</text><text x="120" y="278" font-size="27" font-weight="700" fill="#fff">Possehl Group</text><text x="760" y="260" font-size="19" fill="#dce8ed">Ownership does not prove SKU origin</text>
+    <path d="M600 300v45" stroke="#e1251b" stroke-width="6"/>
+    <rect x="80" y="345" width="1040" height="100" rx="22" fill="#fff" stroke="#cad5db" stroke-width="2"/><text x="120" y="390" font-size="19" fill="#7f1915">OPERATING COMPANY + BRAND</text><text x="120" y="423" font-size="27" font-weight="700" fill="#172633">Hako GmbH</text><text x="760" y="405" font-size="19" fill="#536573">Products, operations and group network</text>
+    <path d="M600 445v45" stroke="#e1251b" stroke-width="6"/>
+    <rect x="80" y="490" width="500" height="120" rx="22" fill="#fdeceb"/><text x="115" y="535" font-size="19" fill="#7f1915">GROUP BRANDS / SUBSIDIARIES</text><text x="115" y="574" font-size="22" font-weight="700" fill="#172633">Separate roles and product lines</text>
+    <rect x="620" y="490" width="500" height="120" rx="22" fill="#e7f2f6"/><text x="655" y="535" font-size="19" fill="#31596c">LOCAL CONTRACT</text><text x="655" y="574" font-size="22" font-weight="700" fill="#172633">Seller · importer · service · warranty</text>
+  </g>
+  <text x="600" y="666" text-anchor="middle" font-family="Arial" font-size="21" font-weight="700" fill="#172633">Verify the lower layers for each model and country.</text>
+</svg>

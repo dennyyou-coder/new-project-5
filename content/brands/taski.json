@@ -1,0 +1,186 @@
+{
+  "status": "published",
+  "slug": "taski",
+  "name": "TASKI",
+  "aliases": ["TASKI by Diversey", "TASKI Machines"],
+  "legalEntityNote": "TASKI is a professional-cleaning brand rather than a standalone legal company. TASKI's official site identifies it as a Solenis brand, while official materials also place it within Diversey and state that referenced trademarks are owned by or licensed to Diversey, Inc. The applicable seller, importer, service and warranty entity varies by market and product.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://taski.com/",
+  "headline": "TASKI brand, Solenis and Diversey boundary, machines, manufacturing and service",
+  "description": "A source-backed profile of TASKI as a Solenis professional-cleaning brand operating through Diversey structures, with its machine portfolio, Swiss manufacturing evidence, service model and buyer checks.",
+  "metaDescription": "TASKI profile: Solenis and Diversey boundary, scrubber dryers, robotics, Swiss manufacturing evidence, service channels and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with TASKI, Diversey or Solenis. Brand ownership, trademark statements, regional operating entities and model-level manufacturing or warranty responsibilities are treated separately.",
+  "headquarters": "Swiss heritage; brand operations within the Solenis and Diversey organization",
+  "founded": "1955",
+  "heroImage": "/images/brands/taski/hero-ultimaxx-healthcare.webp",
+  "heroImageAlt": "Operator using a TASKI ULTIMAXX floor scrubber in a healthcare corridor",
+  "heroSourceUrl": "https://taski.com/wp-content/uploads/2025/02/TASKI-ULTIMAXX-1900-Healthcare-1-1-scaled-1.jpg",
+  "logoImage": "/images/brands/taski/logo.webp",
+  "logoImageAlt": "TASKI logo",
+  "logoSourceUrl": "https://taski.com/wp-content/themes/taski/images/taski-logo.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/taski/solenis-diversey-taski-boundary.svg",
+      "alt": "Solenis, Diversey and TASKI brand responsibility boundary",
+      "caption": "TASKI is presented as a Solenis brand and as a Diversey business area; the trademark, operating and contracting entities must be checked separately."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/taski/model-region-service-check.svg",
+      "alt": "TASKI model, region, manufacturing and service buyer checklist",
+      "caption": "Swiss manufacturing evidence applies to named products and operations, so buyers should verify each model, market seller and service agreement."
+    }
+  ],
+  "ownership": {
+    "summary": "TASKI's official website calls TASKI a Solenis brand. Solenis acquired Diversey in July 2023, and official TASKI materials describe TASKI as one of Diversey's business areas while assigning relevant marks to Diversey, Inc. or its licensors. These statements support a group and brand relationship, not a single universal legal entity for every market contract.",
+    "parentCompany": "Solenis"
+  },
+  "leadership": [
+    {
+      "name": "Alfred Sutter",
+      "role": "Founder of the business that developed TASKI",
+      "context": "TASKI's official history traces the brand to Alfred Sutter's 1955 founding in Switzerland."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Scrubber dryers",
+      "positioning": "ULTIMAXX and swingo platforms cover compact to larger professional floor-cleaning applications.",
+      "buyerRelevance": "Buyers should assess floor type, productivity, batteries, brushes, chemical dosing, ergonomics and local maintenance capacity."
+    },
+    {
+      "name": "Vacuum, steam and carpet-care equipment",
+      "positioning": "TASKI complements hard-floor machines with professional vacuuming, steam and carpet-cleaning solutions.",
+      "buyerRelevance": "Filtration, accessories, cleaning chemistry, consumables and application training should be verified for the use case."
+    },
+    {
+      "name": "Robotics, telemetry and service",
+      "positioning": "Autonomous machines and IntelliTrail fleet tools extend TASKI from equipment supply into connected operations and service support.",
+      "buyerRelevance": "Robotic procurement should identify the hardware and software providers, data responsibilities, connectivity, uptime terms and manual fallback."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "TASKI's official hospitality brochure states that every TASKI machine is tested before leaving its factory in Münchwilen, Switzerland.",
+      "scope": "Factory and testing statement in the reviewed TASKI brochure",
+      "buyerCheck": "Confirm that the exact purchased model and serial range are covered by the Münchwilen statement and verify country-of-origin documents."
+    },
+    {
+      "evidence": "TASKI states that the ULTIMAXX 360 was designed and manufactured in Switzerland.",
+      "scope": "Named ULTIMAXX 360 model only",
+      "buyerCheck": "Do not generalize this origin claim to other ULTIMAXX, swingo, vacuum or robotic products; verify each SKU separately."
+    },
+    {
+      "evidence": "TASKI's robotics offer includes machines and technologies presented through the TASKI portfolio, but public product pages do not establish that TASKI manufactures every hardware and software component.",
+      "scope": "Partner-enabled and connected cleaning products",
+      "buyerCheck": "Document the original equipment manufacturer, autonomy provider, data controller, spare-parts owner and support escalation path."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "TASKI is marketed through the international Solenis and Diversey commercial organization and regional TASKI websites.",
+      "scope": "Global brand route to market; legal seller varies by country",
+      "buyerCheck": "Identify the exact Diversey, Solenis, distributor or other entity named on the quotation, invoice and import documents."
+    },
+    {
+      "evidence": "TASKI offers service programs covering maintenance, repairs, parts and fleet support for professional machines.",
+      "scope": "Official service proposition; availability and terms vary by market",
+      "buyerCheck": "Obtain written technician coverage, response times, preventive-maintenance scope, parts stocking and exclusions for the buyer's sites."
+    },
+    {
+      "evidence": "TASKI's North American warranty document names regional Diversey entities and product-specific warranty terms.",
+      "scope": "North American products and terms covered by the reviewed warranty document",
+      "buyerCheck": "Use the current warranty for the destination country and exact model rather than applying North American terms globally."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: TASKI is a recognized professional floor-care brand combining machines, cleaning-process know-how, service and connected tools within the broader Solenis and Diversey platform. Its procurement complexity comes from the distinction between brand, trademark holder or licensee, regional seller, technology partner and warranty provider.",
+    "competitorSlugs": ["hako", "karcher", "nilfisk", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2024-06-12",
+      "title": "Solenis introduces a unified global brand identity",
+      "summary": "Solenis announced its post-Diversey brand identity while retaining product brands used across the combined organization.",
+      "sourceIds": ["solenis-rebrand"]
+    },
+    {
+      "date": "2023-07-05",
+      "title": "Solenis completes acquisition of Diversey",
+      "summary": "Solenis completed its acquisition of Diversey, bringing TASKI's professional machine business into the combined group.",
+      "sourceIds": ["solenis-diversey-acquisition"]
+    },
+    {
+      "date": "1955",
+      "title": "TASKI's Swiss history begins",
+      "summary": "TASKI's timeline traces the brand's origins to Alfred Sutter's business founded in Switzerland in 1955.",
+      "sourceIds": ["taski-timeline"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "taski-about",
+      "title": "About TASKI",
+      "publisher": "TASKI",
+      "url": "https://taski.com/why-taski/about-taski/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "taski-timeline",
+      "title": "TASKI Timeline",
+      "publisher": "TASKI",
+      "url": "https://nam.taski.com/timeline/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "taski-hospitality-brochure",
+      "title": "TASKI Hospitality Sector Brochure",
+      "publisher": "TASKI",
+      "url": "https://taski.com/wp-content/uploads/2025/02/TASKI-Hospitality-Sector-Brochure.pdf",
+      "publishedAt": "2025-02-01",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "taski-ultimaxx-360",
+      "title": "TASKI ULTIMAXX 360",
+      "publisher": "TASKI",
+      "url": "https://taski.com/taski-products/ultimaxx-360/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "taski-service",
+      "title": "TASKI Service",
+      "publisher": "TASKI",
+      "url": "https://taski.com/service/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "solenis-diversey-acquisition",
+      "title": "Solenis Completes Acquisition of Diversey",
+      "publisher": "Solenis",
+      "url": "https://www.solenis.com/globalassets/resources/miscellaneous/diversey/news-releases/solenis-diversey_en-v01.pdf",
+      "publishedAt": "2023-07-05",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "solenis-rebrand",
+      "title": "Solenis Introduces New Brand Identity",
+      "publisher": "Solenis",
+      "url": "https://www.solenis.com/en/resources/news-releases/2024/solenis-rebrand/",
+      "publishedAt": "2024-06-12",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "taski-warranty-na",
+      "title": "TASKI North America Warranty Policy",
+      "publisher": "TASKI",
+      "url": "https://nam.taski.com/wp-content/uploads/2024/11/103401-LIT-TASKI_Warranty-Policy_CAN-LTR-en-HRNC-1-1.pdf",
+      "publishedAt": "2024-11-01",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T01:38:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T01:38:00+08:00"
+}

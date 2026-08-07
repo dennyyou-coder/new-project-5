@@ -702,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the eighty-six published profiles and approved article relationships", () => {
+test("the release gate validates the eighty-nine published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -747,6 +747,7 @@ test("the release gate validates the eighty-six published profiles and approved 
     "greenworks",
     "groupe-seb",
     "haier-home-appliances",
+    "hako",
     "hamilton-beach",
     "hayward",
     "hikoki",
@@ -788,7 +789,9 @@ test("the release gate validates the eighty-six published profiles and approved 
     "stihl",
     "sunseeker",
     "supor",
+    "taski",
     "teka",
+    "tennant",
     "tineco",
     "toro",
     "toshiba-appliances",
@@ -976,7 +979,7 @@ test("the release gate validates the eighty-six published profiles and approved 
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 86);
+  assert.equal(loadedProfiles.length, 89);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1042,7 +1045,7 @@ test("the release gate validates the eighty-six published profiles and approved 
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 86);
+  assert.equal(profiles.length, 89);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1061,6 +1064,52 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("commercial-cleaning batch twelve publishes Tennant, Hako and TASKI without article relationships", async () => {
+  const newSlugs = ["hako", "taski", "tennant"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published");
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.match(candidate.heroSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)));
+
+    const logoMetadata = await sharp(path.join(process.cwd(), "public", candidate.logoImage)).metadata();
+    const heroMetadata = await sharp(path.join(process.cwd(), "public", candidate.heroImage)).metadata();
+    assert.equal(logoMetadata.format, "webp");
+    assert.equal(logoMetadata.hasAlpha, true);
+    assert.ok(logoMetadata.width >= 600);
+    assert.equal(heroMetadata.format, "webp");
+    assert.equal(heroMetadata.width, 1600);
+    assert.equal(heroMetadata.height, 1000);
+
+    const taggedArticles = realArticles.filter(
+      (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+    );
+    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    const memberships = categories
+      .filter(({ profiles }) => profiles.some((profile) => profile.slug === slug))
+      .map(({ category }) => category.slug);
+    assert.deepEqual(memberships, ["commercial-industrial-cleaning"]);
+    assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
+  }
+
+  assert.equal(profilesBySlug.get("tennant").schemaEntityType, "Organization");
+  assert.equal(profilesBySlug.get("hako").schemaEntityType, "Organization");
+  assert.equal(profilesBySlug.get("taski").schemaEntityType, "Brand");
+  assert.match(profilesBySlug.get("taski").legalEntityNote, /Solenis|Diversey/i);
 });
 
 test("outdoor-equipment batch eleven publishes LawnMaster with verified Cleva and regional boundaries", async () => {

@@ -1,0 +1,170 @@
+{
+  "status": "published",
+  "slug": "tennant",
+  "name": "Tennant",
+  "aliases": ["Tennant Company", "Tennant Co."],
+  "legalName": "Tennant Company",
+  "legalEntityNote": "Tennant Company is the listed operating company behind the Tennant equipment brand. The company, its IPC group brand, regional subsidiaries, distributors and model-specific technology partners should not be treated as interchangeable contracting, manufacturing or warranty entities.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.tennantco.com/",
+  "headline": "Tennant company, professional floor-cleaning portfolio, manufacturing and channels",
+  "description": "A source-backed profile of Tennant Company, its professional floor-cleaning and autonomous equipment portfolio, global manufacturing footprint, sales channels and buyer verification points.",
+  "metaDescription": "Tennant profile: listed-company identity, leadership, scrubbers, sweepers, autonomous equipment, manufacturing, channels, service and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Tennant Company. Company-level disclosures do not establish the manufacturer, origin, software provider, seller or warranty entity for every model and market.",
+  "headquarters": "Eden Prairie, Minnesota, United States",
+  "founded": "1870",
+  "heroImage": "/images/brands/tennant/hero-x6-rovr-autonomous-scrubber.webp",
+  "heroImageAlt": "Tennant X6 ROVR autonomous floor scrubber",
+  "heroSourceUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/x6-rovr/images/x6-rovr-right.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+  "logoImage": "/images/brands/tennant/logo.webp",
+  "logoImageAlt": "Tennant logo",
+  "logoSourceUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/images-web/tennant-logo-150x70.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/tennant/company-market-boundary.svg",
+      "alt": "Tennant company, regional channel and product responsibility boundary",
+      "caption": "Tennant Company is the listed group and brand owner; the contracting seller, service organization and model supply chain still require market-level verification."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/tennant/fleet-buyer-check.svg",
+      "alt": "Tennant professional cleaning fleet buyer verification checklist",
+      "caption": "Equipment buyers should verify the machine, autonomy stack, batteries, service coverage and data terms as separate workstreams."
+    }
+  ],
+  "ownership": {
+    "summary": "Tennant Company is a Minnesota corporation whose common stock trades on the New York Stock Exchange under TNC. The reviewed filings identify no parent company. Tennant also reports the IPC group brand within its business, but brand, subsidiary and regional seller responsibilities remain distinct."
+  },
+  "leadership": [
+    {
+      "name": "Dave Huml",
+      "role": "President and Chief Executive Officer",
+      "context": "Tennant's 2025 full-year results identify Dave Huml as President and CEO."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Floor scrubbers and sweepers",
+      "positioning": "Walk-behind, ride-on and compact machines cover commercial and industrial floor-maintenance applications.",
+      "buyerRelevance": "Buyers should compare productivity, surface compatibility, batteries, consumables, operator training and local service support."
+    },
+    {
+      "name": "Autonomous cleaning machines",
+      "positioning": "The ROVR and autonomous mobile robot portfolio adds repeatable robotic floor-cleaning workflows to staffed operations.",
+      "buyerRelevance": "Site mapping, safety validation, connectivity, software terms, uptime support and manual fallback must be evaluated alongside hardware."
+    },
+    {
+      "name": "Vacuums, extractors, parts and service",
+      "positioning": "Commercial vacuuming, carpet care, genuine parts and service programs broaden Tennant beyond hard-floor machines.",
+      "buyerRelevance": "A fleet contract should specify parts availability, response times, preventive maintenance and the responsible regional service entity."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Tennant's 2025 Form 10-K reports 11 global manufacturing locations supporting its commercial and industrial cleaning business.",
+      "scope": "Tennant Company global network for the year ended December 31, 2025",
+      "buyerCheck": "Verify the exact model's factory, country of origin, serial range and shipment documents; the global site count does not identify a specific SKU source."
+    },
+    {
+      "evidence": "Tennant reports one operating and reportable segment covering the design, manufacture and marketing of cleaning solutions and related products.",
+      "scope": "Company-level financial reporting, not a model-level manufacturing statement",
+      "buyerCheck": "Request a bill of materials responsibility map and product compliance documents for the purchased model and market."
+    },
+    {
+      "evidence": "The X6 ROVR is marketed by Tennant as an autonomous floor scrubber within its ROVR product line.",
+      "scope": "Named X6 ROVR product platform",
+      "buyerCheck": "Confirm hardware manufacturer, autonomy software provider, data controller, cybersecurity support and replacement-parts responsibility in the contract."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Tennant reports serving more than 40,000 customers through direct and distributor channels across the Americas, Europe, the Middle East, Africa and Asia Pacific.",
+      "scope": "Company-reported global commercial footprint for 2025",
+      "buyerCheck": "Verify whether the quotation comes from Tennant, a subsidiary or an authorized distributor and identify the contracting entity."
+    },
+    {
+      "evidence": "Tennant publishes regional contact and location resources for sales, service and support.",
+      "scope": "Markets covered by Tennant's official regional websites and location directory",
+      "buyerCheck": "Confirm technician coverage, response time, parts stock, commissioning capability and escalation contacts at the buyer's site."
+    },
+    {
+      "evidence": "Tennant sells machines, parts and service while also working through distributors in selected markets.",
+      "scope": "Route-to-market model; exact coverage varies by country and product line",
+      "buyerCheck": "Obtain current distributor authorization and written warranty responsibility for the exact model and territory."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Tennant is a focused global professional-cleaning specialist with a broad hard-floor portfolio, established service capabilities and a growing autonomous offer. Its differentiation is strongest where buyers value fleet uptime, application support and lifecycle service, while procurement still needs model- and market-specific checks for origin, software and channel responsibility.",
+    "competitorSlugs": ["hako", "karcher", "nilfisk", "taski"]
+  },
+  "developments": [
+    {
+      "date": "2026-02-19",
+      "title": "Tennant reports 2025 full-year results",
+      "summary": "The results update confirmed Dave Huml as CEO and provided current company performance and strategy context.",
+      "sourceIds": ["tennant-2025-results"]
+    },
+    {
+      "date": "2025-12-31",
+      "title": "Tennant reports an 11-site manufacturing network",
+      "summary": "The 2025 Form 10-K describes the company's global manufacturing and commercial footprint.",
+      "sourceIds": ["tennant-10k-2025"]
+    },
+    {
+      "date": "1870",
+      "title": "Tennant begins operations",
+      "summary": "Tennant's official history traces the business to George H. Tennant's woodworking operation in Minneapolis.",
+      "sourceIds": ["tennant-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tennant-10k-2025",
+      "title": "Tennant Company 2025 Form 10-K",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/97134/000009713426000008/tnc-20251231.htm",
+      "publishedAt": "2026-02-19",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-2025-results",
+      "title": "Tennant Company Reports 2025 Fourth Quarter and Full Year Results",
+      "publisher": "Tennant Company",
+      "url": "https://investors.tennantco.com/news/news-details/2026/Tennant-Company-Reports-2025-Fourth-Quarter-and-Full-Year-Results/default.aspx",
+      "publishedAt": "2026-02-19",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-about",
+      "title": "About Tennant Company",
+      "publisher": "Tennant Company",
+      "url": "https://www.tennantco.com/en_gb/about-us.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-history",
+      "title": "Tennant Company History",
+      "publisher": "Tennant Company",
+      "url": "https://www.tennantco.com/en_eu/about-us/history.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-x6",
+      "title": "X6 ROVR Autonomous Floor Scrubber",
+      "publisher": "Tennant Company",
+      "url": "https://www.tennantco.com/en_us/1/machines/scrubbers/product.x6-rovr.autonomous-floor-scrubber.2000140.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-locations",
+      "title": "Tennant Global Locations",
+      "publisher": "Tennant Company",
+      "url": "https://www.tennantco.com/en_la/about-us/global-locations.html",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T01:38:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T01:38:00+08:00"
+}
