@@ -1,0 +1,120 @@
+{
+  "status": "published",
+  "slug": "gorenje",
+  "name": "Gorenje",
+  "aliases": ["GORENJE"],
+  "legalEntityNote": "Gorenje is a consumer home-appliance brand, not one universal contracting entity. The brand joined Hisense Group in 2018. Gorenje gospodinjski aparati, d.o.o., Hisense Europe companies, regional sales businesses, factories, importers, retailers and warranty providers can each hold different roles for a specific product and market. The reviewed sources did not establish one trademark-holding entity for every jurisdiction, so buyers should confirm the relevant registry record separately.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://international.gorenje.com/",
+  "headline": "Gorenje home appliances, floorcare and Hisense Europe boundaries",
+  "description": "A source-backed profile of Gorenje, separating the consumer brand, Gorenje operating company, Hisense Europe, Hisense Group, European production network, channels and model-level checks.",
+  "metaDescription": "Gorenje brand profile: Hisense ownership, home appliances and floorcare, European operations, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Gorenje, Hisense Europe or Hisense Group. Group and factory disclosures do not establish the manufacturer, plant, origin, seller, importer or warrantor for every Gorenje SKU.",
+  "headquarters": "Velenje, Slovenia (Gorenje operating base)",
+  "founded": "1950",
+  "heroImage": "/images/brands/gorenje/hero-velenje-production.webp",
+  "heroImageAlt": "Official Hisense Europe image of appliance production in Velenje, Slovenia",
+  "heroImageCaption": "Official Hisense Europe media image from the Velenje production complex; it illustrates the European operating network and is not a factory claim for every Gorenje SKU.",
+  "heroSourceUrl": "https://hisense.hgecdn.net/medias/gorenje-proizvodnja-avgust-2024-foto-marinsek-99.jpg?context=bWFzdGVyfGltYWdlc3wxNjI1NTk4M3xpbWFnZS9qcGVnfGFHSXlMMmhtT0M4eE5UZzVNRGN4TmpFNU5qZzVOQzluYjNKbGJtcGxYM0J5YjJsNmRtOWtibXBoWDJGMlozVnpkRjh5TURJMFgyWnZkRzlmYldGeWFXNXpaV3RmT1RrdWFuQm58NzQyMDNlZTdjZmI1NjU5NTQzZTM5ODE5MzA5NWVlMjlmOWRkZTMyOWUzZDhjZmY5YzBlODBlYmRiYWU5ZWM1OA",
+  "logoImage": "/images/brands/gorenje/logo.webp",
+  "logoImageAlt": "Gorenje Life Simplified logo",
+  "logoSourceUrl": "https://hisense.hgecdn.net/medias/gorenje-life-simplified-logotype-positive.jpg?context=bWFzdGVyfGltYWdlc3w0Nzg3OTZ8aW1hZ2UvanBlZ3xhR1UzTDJnMlpDOHhOVGc0T0RZd056VTBNek15Tmk5bmIzSmxibXBsWDJ4cFptVmZjMmx0Y0d4cFptbGxaRjlzYjJkdmRIbHdaVjl3YjNOcGRHbDJaUzVxY0djfDMxYzMxOGE2MDFlMDA0M2UxNmQxZTY2YTM3YmYwNWQzMzgwNmM4YzYzYWQ2NzI1YTM3ZmJjNDhhZjFiODA5NmM",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/gorenje/brand-entity-boundary.svg",
+      "alt": "Gorenje brand, Gorenje operating company, Hisense Europe and product responsibility map",
+      "caption": "The Gorenje brand sits within Hisense Group, while operating, factory, importer, seller and warranty roles remain product- and market-specific."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/brands/gorenje/appliance-floorcare-check.svg",
+      "alt": "Gorenje major appliance, small appliance, floorcare and buyer verification map",
+      "caption": "Gorenje spans major and small appliances, including floorcare; buyers should verify the exact local range, model and responsible entity."
+    }
+  ],
+  "ownership": {
+    "summary": "Gorenje joined Hisense Group in 2018. Hisense Europe describes itself as the integrated European business combining Hisense's global scale with the Gorenje company and brand tradition, and identifies Gorenje as one of its three global brands alongside Hisense and ASKO.",
+    "parentCompany": "Hisense Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Cooling, cooking and dishwashing",
+      "positioning": "Gorenje's current international range covers refrigerators and freezers, ovens, hobs, cookers, hoods, microwave ovens and dishwashers.",
+      "buyerRelevance": "Confirm the local model suffix, dimensions, energy label, installation standard, responsible operator and service network."
+    },
+    {
+      "name": "Laundry appliances",
+      "positioning": "Washing machines, tumble dryers and washer-dryers form a core Gorenje major-appliance category.",
+      "buyerRelevance": "Verify electrical and water requirements, capacity conventions, spare parts, commercial-use limitations and destination warranty."
+    },
+    {
+      "name": "Small kitchen and home-care appliances",
+      "positioning": "The official catalogue includes food-preparation appliances, kettles, coffee products, irons, humidifiers, fans and other small domestic appliances.",
+      "buyerRelevance": "Separate small-appliance ranges from major-appliance supply and confirm model-level maker, origin, conformity and support."
+    },
+    {
+      "name": "Vacuum cleaners and floorcare",
+      "positioning": "The current international floorcare category lists canister vacuums, stick vacuums, a floor cleaner and a handheld vacuum, including dry and wet-and-dry models.",
+      "buyerRelevance": "Check the exact model, battery and charger, filtration, brushes, consumables, local product listing and after-sales route."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Hisense Europe identifies three large European production centers in Velenje, Valjevo and Mariánské Údolí plus five European R&D centers.",
+      "scope": "Hisense Europe industrial network described in 2026; it includes multiple brands and product families and does not assign every Gorenje SKU to a site",
+      "buyerCheck": "Require the exact model's legal manufacturer, plant, origin, declaration and rating-label evidence before assigning a factory."
+    },
+    {
+      "evidence": "The official Hisense Europe media library identifies the main Gorenje production complex in Velenje and publishes factory images for production and warehouse operations.",
+      "scope": "Named Velenje facilities shown in the official media library; not all appliances or current floorcare models",
+      "buyerCheck": "Match any Velenje production claim to model-specific production, customs and quality documentation."
+    },
+    {
+      "evidence": "A current official Gorenje product page names Gorenje gospodinjski aparati, d.o.o. at Partizanska cesta 12, Velenje as the EU responsible economic operator for the cited dryer.",
+      "scope": "The DPNE92/GNLWIFI product listing and its EU responsibility field; not all Gorenje products",
+      "buyerCheck": "Check the responsible-person field, packaging and declaration for the exact SKU rather than extending one model's operator to the full brand."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Hisense Europe reports 27 sales business units across Europe and provides a country selector for official Gorenje markets.",
+      "scope": "Hisense Europe and official Gorenje regional presence; catalogue, seller and warranty entity vary by country",
+      "buyerCheck": "Use the destination-country site to confirm the model and identify the contracting seller, importer and local service organization."
+    },
+    {
+      "evidence": "Gorenje's international site publishes product pages, manuals, registration and support routes, while warranty terms distinguish major and small appliances.",
+      "scope": "Official international consumer support; local warranty duration and eligibility may differ",
+      "buyerCheck": "Retain the country-specific warranty terms and verify professional-use coverage, parts availability and authorized service."
+    },
+    {
+      "evidence": "Current official floorcare pages expose filters by vacuum type, cleaning method, filtration and brush, with model codes and local availability determined by market.",
+      "scope": "Official Gorenje floorcare catalogue at the review date",
+      "buyerCheck": "Confirm the quoted model appears in the intended market and match the product page to the supplier invoice and compliance pack."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Gorenje combines a recognized European appliance identity with Hisense Group scale and a broad catalogue that reaches into floorcare. The main diligence task is connecting the brand promise to the correct Hisense Europe company, factory, local seller and warranty route.",
+    "competitorSlugs": ["beko", "bosch-home-appliances", "electrolux", "miele"]
+  },
+  "developments": [
+    {"date": "2025-04-05", "title": "Gorenje celebrates its 75th anniversary", "summary": "Hisense Europe marked 75 years since Gorenje's 1950 origin and described its continuing home-appliance expansion.", "sourceIds": ["gorenje-75-years"]},
+    {"date": "2018", "title": "Gorenje joins Hisense Group", "summary": "Hisense Europe and Gorenje's anniversary record identify 2018 as the year Gorenje joined Hisense Group.", "sourceIds": ["hisense-europe-about", "gorenje-75-years"]},
+    {"date": "1960", "title": "Production moves to Velenje", "summary": "The official anniversary history records the relocation to Velenje in 1960.", "sourceIds": ["gorenje-75-years"]},
+    {"date": "1950", "title": "Gorenje begins in Slovenia", "summary": "The company began in the village of Gorenje, Slovenia, in 1950.", "sourceIds": ["gorenje-75-years"]}
+  ],
+  "sources": [
+    {"id": "gorenje-75-years", "title": "Gorenje Celebrates 75 Years of Simplifying Life", "publisher": "Hisense Europe", "url": "https://hisense-europe.com/news/gorenje-celebrates-75-years-of-simplifying-life", "publishedAt": "2025-04-04", "accessedAt": "2026-08-07"},
+    {"id": "hisense-europe-about", "title": "Hisense Europe – Innovating for Life Simplified", "publisher": "Hisense Europe", "url": "https://hisense-europe.com/about-us", "accessedAt": "2026-08-07"},
+    {"id": "gorenje-brand", "title": "Gorenje Brand", "publisher": "Hisense Europe", "url": "https://hisense-europe.com/gorenje-page", "accessedAt": "2026-08-07"},
+    {"id": "gorenje-floorcare", "title": "Vacuum Cleaners", "publisher": "Gorenje", "url": "https://international.gorenje.com/products/home-and-personal-care/vacuum-cleaners/c/gohome01", "accessedAt": "2026-08-07"},
+    {"id": "gorenje-media", "title": "Photos and Logotypes", "publisher": "Hisense Europe", "url": "https://hisense-europe.com/photos-and-logotypes", "accessedAt": "2026-08-07"},
+    {"id": "gorenje-accessibility", "title": "Accessibility Statement", "publisher": "Gorenje", "url": "https://international.gorenje.com/accessibility-statement", "accessedAt": "2026-08-07"},
+    {"id": "gorenje-dryer-operator", "title": "DPNE92/GNLWIFI Tumble Dryer", "publisher": "Gorenje", "url": "https://international.gorenje.com/products/washing-and-drying/tumble-dryers/DRYER-SP22-45D2-DPNE92-GNLWIFI-GOR/p/000000000000743265", "accessedAt": "2026-08-07"},
+    {"id": "gorenje-warranty", "title": "Gorenje Warranty", "publisher": "Gorenje", "url": "https://international.gorenje.com/support/warranty", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T11:16:50+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T11:16:50+08:00"
+}

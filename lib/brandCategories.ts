@@ -152,6 +152,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "electrolux",
       "eufy",
       "eureka",
+      "gorenje",
       "groupe-seb",
       "haier-home-appliances",
       "hisense",
@@ -167,9 +168,11 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "panasonic",
       "philips-home-appliances",
       "roborock",
+      "rowenta",
       "ryobi",
       "samsung-home-appliances",
       "shark",
+      "supor",
       "tineco",
       "toshiba-appliances",
       "vax"
@@ -189,6 +192,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "narwal",
       "oreck",
       "roborock",
+      "rowenta",
       "shark",
       "tineco",
       "vax"
@@ -217,6 +221,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "electrolux",
       "fisher-paykel",
       "ge-appliances",
+      "gorenje",
       "groupe-seb",
       "haier-home-appliances",
       "hisense",
@@ -227,7 +232,9 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "miele",
       "panasonic",
       "philips-home-appliances",
+      "rowenta",
       "samsung-home-appliances",
+      "supor",
       "toshiba-appliances",
       "whirlpool"
     ],
@@ -239,6 +246,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "electrolux",
       "fisher-paykel",
       "ge-appliances",
+      "gorenje",
       "groupe-seb",
       "haier-home-appliances",
       "hisense",
@@ -250,6 +258,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "panasonic",
       "philips-home-appliances",
       "samsung-home-appliances",
+      "supor",
       "toshiba-appliances",
       "whirlpool"
     ]
@@ -311,7 +320,7 @@ export function buildBrandCategorySitemapEntries(
 ) {
   return getPublishedBrandCategories(profiles).map(({ category }) => ({
     url: `${siteUrl}/brands/${category.slug}`,
-    lastModified: "2026-08-06"
+    lastModified: "2026-08-07"
   }));
 }
 

@@ -24864,6 +24864,10 @@ button.contact-help-card > .contact-help-card-copy > span {
   max-height: 144px;
 }
 
+.brand-logo--rowenta {
+  background: #071f42;
+}
+
 .brand-key-facts {
   margin-top: 20px;
   overflow: hidden;

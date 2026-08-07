@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Gorenje brand and entity boundary</title>
+  <desc id="desc">Gorenje consumer brand, operating company, Hisense Europe and model responsibility layers.</desc>
+  <rect width="1600" height="900" fill="#f2f8f7"/>
+  <text x="110" y="112" fill="#172033" font-family="Arial, sans-serif" font-size="54" font-weight="700">A brand inside an integrated European group</text>
+  <text x="110" y="164" fill="#5f6878" font-family="Arial, sans-serif" font-size="25">The Hisense relationship does not make every group company responsible for every Gorenje SKU.</text>
+  <rect x="110" y="245" width="1380" height="125" rx="28" fill="#04a89d"/>
+  <text x="165" y="298" fill="#d3fffb" font-family="Arial, sans-serif" font-size="22" font-weight="700">CONSUMER BRAND</text>
+  <text x="165" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="700">Gorenje · major appliances · small appliances · floorcare</text>
+  <path d="M800 370V425" stroke="#75cbc5" stroke-width="6"/><polygon points="786,413 800,438 814,413" fill="#75cbc5"/>
+  <rect x="110" y="435" width="1380" height="125" rx="28" fill="#ffffff" stroke="#04a89d" stroke-width="5"/>
+  <text x="165" y="488" fill="#04877f" font-family="Arial, sans-serif" font-size="22" font-weight="700">OPERATING AND GROUP LAYERS</text>
+  <text x="165" y="529" fill="#172033" font-family="Arial, sans-serif" font-size="29" font-weight="700">Gorenje gospodinjski aparati · Hisense Europe · Hisense Group</text>
+  <path d="M800 560V615" stroke="#75cbc5" stroke-width="6"/><polygon points="786,603 800,628 814,603" fill="#75cbc5"/>
+  <rect x="110" y="625" width="1380" height="125" rx="28" fill="#ffffff" stroke="#6fa8a4" stroke-width="4"/>
+  <text x="165" y="678" fill="#477f7a" font-family="Arial, sans-serif" font-size="22" font-weight="700">MODEL AND MARKET RESPONSIBILITY</text>
+  <text x="165" y="719" fill="#172033" font-family="Arial, sans-serif" font-size="29" font-weight="700">Factory · responsible operator · importer · seller · warranty route</text>
+  <text x="1490" y="858" fill="#748293" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 7 August 2026</text>
+</svg>

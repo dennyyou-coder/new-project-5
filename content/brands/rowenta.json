@@ -1,0 +1,141 @@
+{
+  "status": "published",
+  "slug": "rowenta",
+  "name": "Rowenta",
+  "aliases": ["ROWENTA"],
+  "legalEntityNote": "Rowenta is a consumer brand in Groupe SEB's portfolio, not one universal legal entity for every market or product. Rowenta France S.A.S. appears on certain product declarations, while SEB Développement edits the global website and regional Groupe SEB companies, distributors, retailers, importers and warranty providers can hold different responsibilities. The reviewed sources did not establish one trademark-holding entity for every jurisdiction, so buyers should confirm the relevant registry record separately.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.rowenta.com/",
+  "headline": "Rowenta floorcare, home care and Groupe SEB operating boundaries",
+  "description": "A source-backed profile of Rowenta, separating the consumer brand, SEB S.A., Rowenta France, regional operators, floorcare manufacturing evidence, channels and model-level buyer checks.",
+  "metaDescription": "Rowenta brand profile: Groupe SEB ownership, floorcare and home-care portfolio, operations, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Rowenta or Groupe SEB. Group, brand and site-level evidence does not identify the legal manufacturer, factory, origin, importer, seller or warrantor for every Rowenta SKU.",
+  "headquarters": "Écully, France (Groupe SEB); Rowenta originated in Offenbach, Germany",
+  "founded": "1884 origins; Rowenta name adopted in 1909",
+  "heroImage": "/images/brands/rowenta/hero-floorcare.webp",
+  "heroImageAlt": "Rowenta cordless vacuum cleaner head cleaning a hard floor",
+  "heroImageCaption": "Official Groupe SEB Rowenta brand image showing a current cordless floorcare product in use.",
+  "heroSourceUrl": "https://www.groupeseb.com/sites/default/files/2025-05/Design%20sans%20titre%20%2822%29_0.png",
+  "logoImage": "/images/brands/rowenta/logo.webp",
+  "logoImageAlt": "Rowenta logo",
+  "logoSourceUrl": "https://dam.groupeseb.com/m/2c0faee40a4aae06/Digital-Logo-Rowenta-Techline.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/rowenta/brand-entity-boundary.svg",
+      "alt": "Rowenta brand, Groupe SEB parent, operating entities and product responsibility map",
+      "caption": "Groupe SEB ownership establishes the portfolio relationship; it does not replace the model-specific manufacturer, seller, importer or warrantor check."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/rowenta/floorcare-buyer-check.svg",
+      "alt": "Rowenta floorcare model, factory, channel and after-sales verification workflow",
+      "caption": "Buyers should connect the exact Rowenta reference to its declaration, factory evidence, authorized channel and destination-market support terms."
+    }
+  ],
+  "ownership": {
+    "summary": "Groupe SEB acquired Rowenta and its subsidiaries in 1988. Rowenta is now one of the group's consumer brands under listed parent SEB S.A.; Rowenta France S.A.S. and other Groupe SEB entities may perform manufacturing, compliance, website, sales or service roles without being interchangeable.",
+    "parentCompany": "SEB S.A."
+  },
+  "leadership": [
+    {
+      "name": "Robert Weintraud",
+      "role": "Founder of the business that became Rowenta",
+      "context": "Rowenta's official history traces the brand to Weintraud GmbH, founded by Robert Weintraud in Offenbach in 1884, and records the Rowenta name from 1909."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Vacuum cleaners and floor washers",
+      "positioning": "Rowenta's current floorcare range includes bagged and bagless vacuums, cordless sticks, wet-and-dry cleaners, robot vacuums, handheld products and steam cleaners in selected markets.",
+      "buyerRelevance": "Confirm the exact reference, battery and charger, filtration, brush and consumable set, destination-market listing and repair route."
+    },
+    {
+      "name": "Linen and garment care",
+      "positioning": "Steam irons, garment steamers and related linen-care products remain a core part of Rowenta's official brand history and current positioning.",
+      "buyerRelevance": "Verify voltage, plug, water-quality requirements, soleplate and boiler specifications, commercial-use limits and local warranty."
+    },
+    {
+      "name": "Air treatment and personal care",
+      "positioning": "Official Rowenta materials also identify fans, air purifiers and personal-care products, with assortment varying by country.",
+      "buyerRelevance": "Check the local catalogue, replacement filters or accessories, applicable safety rules and the responsible regional company."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "A December 2024 EU declaration for X-Plorer S70 and S70+ robot vacuums names Rowenta France S.A.S. – Groupe SEB and states that the products are sold by Groupe SEB subsidiaries.",
+      "scope": "The RR84 and RG84 product codifications and commercial references covered by declaration 24DOC129-00; not all Rowenta vacuums",
+      "buyerCheck": "Obtain the declaration for the exact commercial reference and match its manufacturer, model coding and destination-market documents."
+    },
+    {
+      "evidence": "Groupe SEB's official home-cleaning manufacturing account describes the Vernon site as a floorcare expertise and high-end vacuum production hub, with product allocation between France and China and selected outsourcing.",
+      "scope": "Groupe SEB home-cleaning organization described for the mid-2010s; it is historical group-level evidence, not a current factory assignment for every Rowenta SKU",
+      "buyerCheck": "Require current model-to-factory, country-of-origin and supplier evidence instead of applying the historical footprint to a new order."
+    },
+    {
+      "evidence": "The 2025 Groupe SEB Universal Registration Document includes Rowenta within the group's brand and industrial perimeter and lists Rowenta France S.A.S. among major French legal entities.",
+      "scope": "SEB S.A. consolidated reporting perimeter for 2025; it does not assign every product to Rowenta France or a specific plant",
+      "buyerCheck": "Identify whether the proposed supplier is an internal Groupe SEB company or an external partner, then document the exact legal maker and production site."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Rowenta operates country-specific official sites and contact pages for Europe and other regions, with local catalogues, support and purchase routes.",
+      "scope": "Official regional Rowenta consumer channels; product ranges and responsible entities vary by country",
+      "buyerCheck": "Verify the reference on the destination-country site and record the seller, importer and warranty entity named for that market."
+    },
+    {
+      "evidence": "Rowenta's official warranty pages direct consumers to authorized repairers or the original point of sale and state that terms depend on product range and market.",
+      "scope": "Published consumer warranty and repair process; commercial-use and country terms can differ",
+      "buyerCheck": "Retain the local warranty document and confirm whether commercial use, spare parts and authorized repair coverage apply to the intended deployment."
+    },
+    {
+      "evidence": "Groupe SEB has used both official brand stores and external retail or marketplace channels for Rowenta products.",
+      "scope": "Group-level channel architecture and named Rowenta channels; it is not proof that every marketplace seller is authorized",
+      "buyerCheck": "Validate seller authorization, invoice issuer, stock origin and return route with the applicable regional Rowenta or Groupe SEB entity."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Rowenta combines a long-standing German-origin brand identity with Groupe SEB's floorcare, retail and service infrastructure. Buyers should use that scale as a starting point while still verifying the legal and operational chain for each model.",
+    "competitorSlugs": ["dyson", "miele", "tineco", "philips-home-appliances"]
+  },
+  "developments": [
+    {
+      "date": "2024",
+      "title": "Rowenta marks 140 years of brand origins",
+      "summary": "Official Rowenta history materials marked 140 years from Robert Weintraud's 1884 company foundation.",
+      "sourceIds": ["rowenta-history"]
+    },
+    {
+      "date": "1988",
+      "title": "Groupe SEB acquires Rowenta",
+      "summary": "Groupe SEB's official history records the acquisition of Rowenta and its eight subsidiaries in 1988.",
+      "sourceIds": ["seb-rowenta-acquisition", "seb-urd-2025"]
+    },
+    {
+      "date": "1909-12-30",
+      "title": "Rowenta name adopted",
+      "summary": "The official brand history records the change from Weintraud GmbH to Rowenta on 30 December 1909.",
+      "sourceIds": ["rowenta-history"]
+    },
+    {
+      "date": "1884",
+      "title": "Business founded in Offenbach",
+      "summary": "Robert Weintraud founded Weintraud GmbH in Offenbach, Germany, in 1884.",
+      "sourceIds": ["rowenta-history"]
+    }
+  ],
+  "sources": [
+    {"id": "rowenta-brand", "title": "Rowenta", "publisher": "Groupe SEB", "url": "https://www.groupeseb.com/en/rowenta", "accessedAt": "2026-08-07"},
+    {"id": "rowenta-history", "title": "About Rowenta: Innovation and Sustainable Design", "publisher": "Rowenta USA / Groupe SEB", "url": "https://www.rowentausa.com/about-us", "accessedAt": "2026-08-07"},
+    {"id": "seb-rowenta-acquisition", "title": "1988: Acquisition of Rowenta and Its Eight Subsidiaries", "publisher": "Groupe SEB", "url": "https://www.groupeseb.com/en/1988", "accessedAt": "2026-08-07"},
+    {"id": "seb-urd-2025", "title": "Universal Registration Document and Annual Financial Report 2025", "publisher": "SEB S.A.", "url": "https://www.groupeseb.com/sites/default/files/2026-03/SEB_DEU_2025_EN.pdf", "publishedAt": "2026", "accessedAt": "2026-08-07"},
+    {"id": "rowenta-declaration-rr84", "title": "EU Declaration of Conformity 24DOC129-00 for X-Plorer S70 and S70+", "publisher": "Rowenta France S.A.S. / Groupe SEB", "url": "https://dam.groupeseb.com/m/6e597e21977704bd/original/24DOC129-00_RR84-RG84_X-Plorer-S70-S70.pdf", "publishedAt": "2024-12-09", "accessedAt": "2026-08-07"},
+    {"id": "seb-home-cleaning", "title": "Home Cleaning, Strong Growth", "publisher": "Groupe SEB", "url": "https://www.groupeseb.com/en/webzine/home-cleaning-strong-growth", "accessedAt": "2026-08-07"},
+    {"id": "rowenta-legal", "title": "Legal Terms and Terms of Use", "publisher": "Rowenta / SEB Développement", "url": "https://www.rowenta.com/legal-terms", "accessedAt": "2026-08-07"},
+    {"id": "rowenta-warranty", "title": "Rowenta Guarantee and Repair", "publisher": "Rowenta", "url": "https://www.rowenta.com/guarantee", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T11:16:50+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T11:16:50+08:00"
+}
