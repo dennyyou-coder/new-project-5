@@ -175,7 +175,8 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "supor",
       "tineco",
       "toshiba-appliances",
-      "vax"
+      "vax",
+      "xiaomi-mijia"
     ],
     primaryBrandSlugs: [
       "bissell",
@@ -195,7 +196,8 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "rowenta",
       "shark",
       "tineco",
-      "vax"
+      "vax",
+      "xiaomi-mijia"
     ]
   },
   {
@@ -217,6 +219,8 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "aeg",
       "beko",
       "bosch-home-appliances",
+      "braun-household",
+      "breville-sage",
       "delonghi",
       "electrolux",
       "fisher-paykel",
@@ -236,12 +240,15 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "samsung-home-appliances",
       "supor",
       "toshiba-appliances",
-      "whirlpool"
+      "whirlpool",
+      "xiaomi-mijia"
     ],
     primaryBrandSlugs: [
       "aeg",
       "beko",
       "bosch-home-appliances",
+      "braun-household",
+      "breville-sage",
       "delonghi",
       "electrolux",
       "fisher-paykel",

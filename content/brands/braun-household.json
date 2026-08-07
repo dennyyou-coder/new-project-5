@@ -1,0 +1,68 @@
+{
+  "status": "published",
+  "slug": "braun-household",
+  "name": "Braun Household",
+  "aliases": ["Braun Haushaltsgeräte", "BRAUN Household", "Braun small household appliances"],
+  "legalEntityNote": "Braun Household is the consumer identity for small household appliances operated under De’Longhi's perpetual licence; it is not a universal Braun legal entity. Procter & Gamble holds the Braun trademark, while De’Longhi's official filings say P&G assigned the group a perpetual licence for Braun-branded small household appliances. Braun personal care, shavers and Oral-B remain outside this household-appliance scope, and regional De’Longhi companies can hold different sales, website and warranty roles.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.braunhousehold.com/en",
+  "headline": "Braun Household appliances across trademark, licence and operating boundaries",
+  "description": "A source-backed profile of Braun Household, separating P&G trademark ownership, De’Longhi's household-appliance licence, regional operators, product portfolio, channels and model checks.",
+  "metaDescription": "Braun Household brand profile: P&G trademark, De’Longhi licence, appliance portfolio, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Braun, P&G or De’ Longhi S.p.A. Trademark and licence evidence does not identify the legal manufacturer, factory, importer, seller or warrantor for every Braun household appliance.",
+  "headquarters": "Neu-Isenburg, Germany (Braun Household brand office); Treviso, Italy (De’ Longhi S.p.A.)",
+  "founded": "Braun founded in 1921; household-appliance licence transferred to De’Longhi in 2012",
+  "heroImage": "/images/brands/braun-household/hero-multiquick.webp",
+  "heroImageAlt": "Braun MultiQuick hand blender and food preparation attachments",
+  "heroImageCaption": "Official De’Longhi Group Braun image showing the MultiQuick household food-preparation system.",
+  "heroSourceUrl": "https://www.delonghigroup.com/sites/default/files/banner_images/Stage-Banner_MQ9_Corporate-Website_3Formats-gray.jpg",
+  "logoImage": "/images/brands/braun-household/logo.webp",
+  "logoImageAlt": "Braun logo",
+  "logoSourceUrl": "https://www.braunhousehold.com/en",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/braun-household/trademark-license-boundary.svg", "alt": "Braun trademark holder, De’Longhi household licence and product responsibility map", "caption": "P&G trademark ownership and De’Longhi's household-appliance licence are distinct from the legal chain for an exact product and market."},
+    {"placement": "portfolio", "src": "/images/brands/braun-household/household-category-check.svg", "alt": "Braun household appliance scope separated from personal care", "caption": "Braun Household covers licensed small-appliance categories; personal care, shavers and Oral-B must not be merged into the same operating or warranty chain."}
+  ],
+  "ownership": {
+    "summary": "Procter & Gamble holds the Braun trademark. De’Longhi's official 2012 reporting states that P&G assigned De’Longhi a perpetual licence for Braun-branded small household appliances. This licensed operating relationship is narrower and more precise than saying De’Longhi owns the Braun trademark; personal-care categories remain separate."
+  },
+  "leadership": [
+    {"name": "Max Braun", "role": "Founder of Braun", "context": "Braun's official brand history traces the business to engineer Max Braun in 1921; current household-appliance operations sit within the later P&G trademark and De’Longhi licence structure."}
+  ],
+  "productPortfolio": [
+    {"name": "Food preparation", "positioning": "Braun Household's current portfolio includes hand blenders, food processors, blenders, juicers and related preparation systems.", "buyerRelevance": "Verify attachment compatibility, motor and voltage, food-contact declarations, replacement parts and service for the exact model."},
+    {"name": "Breakfast and cooking", "positioning": "Official regional catalogues include coffee makers, kettles, toasters and selected cooking appliances.", "buyerRelevance": "Check the destination-market assortment, plug, electrical certification, consumables, commercial-use limits and warranty provider."},
+    {"name": "Garment care", "positioning": "Steam irons and ironing systems form another Braun Household category under the licensed small-appliance scope.", "buyerRelevance": "Confirm water requirements, voltage, soleplate or boiler specification, spare parts and local repair coverage."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "De’Longhi's 2012 filing states that P&G assigned the group a perpetual licence for the design, manufacture and distribution of Braun-branded small household appliances.", "scope": "The licensed small-household-appliance categories described in the filing; not Braun personal care or every model's factory", "buyerCheck": "Confirm that the proposed product falls inside the household licence and identify its exact legal manufacturer and factory from model documentation."},
+    {"evidence": "De’Longhi Group reports a mix of own plants and manufacturing or assembly partners across its household-appliance portfolio.", "scope": "Group-level production model across multiple brands, including licensed products; not a Braun model-to-factory map", "buyerCheck": "Require current model-to-factory, origin and quality-control evidence rather than assigning a group plant by assumption."},
+    {"evidence": "The reviewed public materials did not disclose one factory or one legal maker for every Braun Household SKU worldwide.", "scope": "Public sources reviewed through 7 August 2026", "buyerCheck": "Match the product label, declaration, importer record and supplier documents for the contracted destination-market reference."}
+  ],
+  "marketsChannels": [
+    {"evidence": "Braun Household operates regional official sites with country-specific catalogues, retailers, support and warranty information.", "scope": "Official household-appliance consumer channels; product ranges and operating entities vary by country", "buyerCheck": "Validate the model and seller on the destination-country site and retain evidence of authorization at purchase."},
+    {"evidence": "The US Braun Household privacy policy identifies De’Longhi America as the operator for the reviewed site and related services.", "scope": "Reviewed United States digital and service context; not a universal global operating-company statement", "buyerCheck": "Identify the regional De’Longhi company, distributor or seller on the local terms, invoice and warranty."},
+    {"evidence": "De’Longhi Group lists a Braun Household brand contact office in Neu-Isenburg, Germany while maintaining regional commercial companies elsewhere.", "scope": "Group contact architecture and brand office; not proof of the contracting entity for a purchase", "buyerCheck": "Confirm quotation issuer, importer, returns route, parts supply and warranty entity for the destination market."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Braun Household combines a recognized design heritage with De’Longhi's small-appliance operating platform. Its trademark-licence structure makes category and entity separation a central procurement check, especially where buyers may confuse household and personal-care products.",
+    "competitorSlugs": ["delonghi", "breville-sage", "philips-home-appliances", "groupe-seb"]
+  },
+  "developments": [
+    {"date": "2012", "title": "De’Longhi receives perpetual household-appliance licence", "summary": "De’Longhi's official reporting records P&G's assignment of a perpetual Braun trademark licence for small household appliances.", "sourceIds": ["delonghi-q3-2012", "delonghi-annual-report-2012"]},
+    {"date": "2005", "title": "P&G obtains Braun through Gillette acquisition", "summary": "Braun's official account places the trademark within P&G following its acquisition of Gillette.", "sourceIds": ["braun-about"]},
+    {"date": "1921", "title": "Max Braun founds Braun", "summary": "Braun's official history traces the company to Max Braun's engineering workshop founded in 1921.", "sourceIds": ["braun-about"]}
+  ],
+  "sources": [
+    {"id": "delonghi-q3-2012", "title": "Quarterly Report at 30 September 2012", "publisher": "De’ Longhi S.p.A.", "url": "https://www.delonghigroup.com/sites/default/files/quarterly-report-30-september-2012.pdf", "publishedAt": "2012", "accessedAt": "2026-08-07"},
+    {"id": "delonghi-annual-report-2012", "title": "Consolidated Annual Report 2012", "publisher": "De’ Longhi S.p.A.", "url": "https://www.delonghigroup.com/sites/default/files/consolidated-annual-report-2012.pdf", "publishedAt": "2012", "accessedAt": "2026-08-07"},
+    {"id": "delonghi-braun-brand", "title": "Braun Brand", "publisher": "De’ Longhi S.p.A.", "url": "https://www.delonghigroup.com/en/brand/braun", "accessedAt": "2026-08-07"},
+    {"id": "braun-about", "title": "About Braun", "publisher": "Braun Household", "url": "https://www.braunhousehold.com/en-us/e/about-braun", "accessedAt": "2026-08-07"},
+    {"id": "braun-household", "title": "Braun Household Appliances", "publisher": "Braun Household", "url": "https://www.braunhousehold.com/en", "accessedAt": "2026-08-07"},
+    {"id": "braun-privacy", "title": "Privacy Policy", "publisher": "De’Longhi America / Braun Household", "url": "https://www.braunhousehold.com/en-us/privacy-policy", "accessedAt": "2026-08-07"},
+    {"id": "delonghi-contacts", "title": "Media Contacts", "publisher": "De’ Longhi S.p.A.", "url": "https://www.delonghigroup.com/en/media/contacts", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T14:52:59+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T14:52:59+08:00"
+}
