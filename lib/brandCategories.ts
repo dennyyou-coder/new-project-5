@@ -172,10 +172,12 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "ryobi",
       "samsung-home-appliances",
       "shark",
+      "sharp-appliances",
       "supor",
       "tineco",
       "toshiba-appliances",
       "vax",
+      "vestel",
       "xiaomi-mijia"
     ],
     primaryBrandSlugs: [
@@ -239,10 +241,13 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "panasonic",
       "philips-home-appliances",
       "rowenta",
+      "russell-hobbs",
       "samsung-home-appliances",
+      "sharp-appliances",
       "supor",
       "teka",
       "toshiba-appliances",
+      "vestel",
       "whirlpool",
       "xiaomi-mijia"
     ],
@@ -269,10 +274,13 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "miele",
       "panasonic",
       "philips-home-appliances",
+      "russell-hobbs",
       "samsung-home-appliances",
+      "sharp-appliances",
       "supor",
       "teka",
       "toshiba-appliances",
+      "vestel",
       "whirlpool"
     ]
   }
