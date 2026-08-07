@@ -1,0 +1,69 @@
+{
+  "status": "published",
+  "slug": "breville-sage",
+  "name": "Breville / Sage",
+  "aliases": ["Breville", "Sage", "Sage Appliances", "BRG Group"],
+  "legalEntityNote": "Breville and Sage are regional consumer brands within Breville Group Limited's portfolio, not one universal legal entity. BRG's 2025 annual report states that the Breville® brand in the United Kingdom and Europe is not owned or operated by BRG and that its premium products are marketed there under Sage®. Regional companies such as Breville USA, Breville Canada and Sage Appliances GmbH can hold different sales, website and warranty roles.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.breville.com/en-us",
+  "headline": "Breville and Sage premium appliances across regional brand boundaries",
+  "description": "A source-backed profile of Breville and Sage, separating the regional consumer marks, Breville Group, operating companies, premium appliance portfolio, channels and model-level buyer checks.",
+  "metaDescription": "Breville Sage brand profile: regional brand rights, premium kitchen appliances, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Breville Group Limited. Group and brand evidence does not identify the legal manufacturer, factory, importer, seller or warrantor for every Breville- or Sage-branded product.",
+  "headquarters": "Sydney, Australia (Breville Group Limited)",
+  "founded": "Breville founded in Sydney in 1932",
+  "heroImage": "/images/brands/breville-sage/hero-food-processors.webp",
+  "heroImageAlt": "Breville food processor range with prepared foods",
+  "heroImageCaption": "Official Breville product image showing three current food-processor sizes and their meal-preparation positioning.",
+  "heroSourceUrl": "https://breville.scene7.com/is/image/brevilleprod/BFP_USCM_CLP_1920x1080_KV_01_RGB_v1",
+  "logoImage": "/images/brands/breville-sage/logo.webp",
+  "logoImageAlt": "Breville logo",
+  "logoSourceUrl": "https://breville.scene7.com/is/image/brevilleprod/breville-logo-purple?fmt=png-alpha",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/breville-sage/breville-sage-region-map.svg", "alt": "Breville Group, Breville and Sage regional brand boundary", "caption": "BRG markets premium appliances under Breville in many markets and under Sage in the UK and Europe, where it says it does not own or operate Breville®."},
+    {"placement": "operations", "src": "/images/brands/breville-sage/appliance-channel-check.svg", "alt": "Breville Sage market, model, channel and support verification workflow", "caption": "Buyers should confirm the destination-market mark, exact model, invoice chain and local service entity together."}
+  ],
+  "ownership": {
+    "summary": "Breville Group Limited is the listed parent of the BRG Group and its global premium appliance business. Breville and Sage are consumer marks used according to regional rights. In the UK and Europe, BRG markets its premium products as Sage and explicitly says it does not own or operate the Breville® brand there.",
+    "parentCompany": "Breville Group Limited"
+  },
+  "leadership": [
+    {"name": "Jim Clayton", "role": "Group Chief Executive Officer of Breville Group Limited", "context": "BRG's 2025 annual report identifies Jim Clayton as Group CEO; regional sales and warranty responsibilities remain with the applicable local entity."}
+  ],
+  "productPortfolio": [
+    {"name": "Coffee and espresso", "positioning": "Home espresso machines, grinders, drip coffee and accessories are central to the group's premium consumer positioning.", "buyerRelevance": "Verify brew system, voltage, water treatment, cleaning supplies, intended usage limits, spare parts and qualified service."},
+    {"name": "Cooking and countertop ovens", "positioning": "The official portfolio includes countertop ovens, air fryers, pizza ovens, cookers, grills and related cooking appliances.", "buyerRelevance": "Confirm capacity, electrical load, ventilation, food-contact compliance, regional reference and commercial-use eligibility."},
+    {"name": "Food preparation, blending and water", "positioning": "Food processors, blenders, juicers, mixers, kettles and other preparation products extend the kitchen platform.", "buyerRelevance": "Check attachments, replacement parts, food-contact declarations, local assortment and whether Breville or Sage is the authorized regional mark."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "BRG's 2025 annual report describes a global product-development and supply model for premium appliances while reporting the business at group and regional levels.", "scope": "Breville Group consolidated operations; not a factory assignment for every Breville or Sage model", "buyerCheck": "Request the exact legal manufacturer, production site, origin and current compliance file for the contracted reference."},
+    {"evidence": "Official product pages use market-specific model references and specifications across the Breville and Sage sites.", "scope": "Products listed in the relevant regional catalogue", "buyerCheck": "Match the quotation and product label to the destination-market reference, voltage and certification rather than substituting a similar regional model."},
+    {"evidence": "The reviewed public sources did not publish a complete model-to-factory map for the Breville and Sage portfolios.", "scope": "Public materials reviewed through 7 August 2026", "buyerCheck": "Obtain factory, origin, supplier and quality-control evidence directly for the proposed model and order."}
+  ],
+  "marketsChannels": [
+    {"evidence": "BRG reports a multi-region business and explicitly distinguishes Breville markets from Sage branding in the UK and Europe.", "scope": "Regional brand architecture disclosed in the 2025 annual report", "buyerCheck": "Confirm which mark is authorized at destination and ensure packaging, listing, invoice and warranty use the correct regional identity."},
+    {"evidence": "Breville's US warranty defines Breville by jurisdiction as Breville USA or Breville Canada.", "scope": "Published North American consumer warranty terms", "buyerCheck": "Identify the local warrantor and confirm whether commercial or cross-border purchases qualify for coverage."},
+    {"evidence": "Sage's European terms identify Sage Appliances GmbH for the reviewed regional website and transactions.", "scope": "The reviewed Sage European terms and covered transactions; other countries can use different entities", "buyerCheck": "Record the seller, invoice issuer, importer, return route and service provider for the destination country."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Breville and Sage compete through premium design, coffee expertise and a broad countertop-kitchen platform. Their dual-mark geography makes regional rights, model coding and after-sales entity checks especially important for cross-border buyers.",
+    "competitorSlugs": ["delonghi", "kitchenaid", "braun-household", "groupe-seb"]
+  },
+  "developments": [
+    {"date": "2025", "title": "BRG reiterates the Breville and Sage regional split", "summary": "The 2025 annual report states that BRG does not own or operate Breville® in the UK and Europe and markets its premium products there under Sage®.", "sourceIds": ["breville-annual-report-2025"]},
+    {"date": "2001", "title": "Group lists on the Australian Securities Exchange", "summary": "Breville Group's corporate reporting identifies its ASX-listed structure and global brand business.", "sourceIds": ["breville-annual-report-2025"]},
+    {"date": "1932", "title": "Breville founded in Sydney", "summary": "The group traces the Breville business to Bill O'Brien and Harry Norville in Sydney in 1932.", "sourceIds": ["breville-about"]}
+  ],
+  "sources": [
+    {"id": "breville-annual-report-2025", "title": "Annual Report 2025", "publisher": "Breville Group Limited", "url": "https://brevillegroup.com/wp-content/uploads/2025/08/Annual-Report-2025.pdf", "publishedAt": "2025", "accessedAt": "2026-08-07"},
+    {"id": "breville-products", "title": "Breville Products", "publisher": "Breville", "url": "https://www.breville.com/us/en/products.html", "accessedAt": "2026-08-07"},
+    {"id": "breville-food-processors", "title": "Breville Food Processors", "publisher": "Breville", "url": "https://www.breville.com/en-us/landing/food-processors", "accessedAt": "2026-08-07"},
+    {"id": "breville-warranty", "title": "Breville Warranty", "publisher": "Breville USA / Breville Canada", "url": "https://www.breville.com/us/en/support/warranty.html", "accessedAt": "2026-08-07"},
+    {"id": "breville-terms", "title": "Terms of Use", "publisher": "Breville USA, Inc.", "url": "https://www.breville.com/us/en/legal/terms-of-use.html/", "accessedAt": "2026-08-07"},
+    {"id": "sage-terms", "title": "Terms and Conditions", "publisher": "Sage Appliances GmbH", "url": "https://www.sageappliances.com/eu/es/legal/terms-and-conditions.html", "accessedAt": "2026-08-07"},
+    {"id": "breville-about", "title": "About Breville", "publisher": "Breville", "url": "https://www.breville.com/en-us/about-breville", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T14:52:59+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T14:52:59+08:00"
+}

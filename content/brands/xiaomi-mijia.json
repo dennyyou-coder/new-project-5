@@ -1,0 +1,70 @@
+{
+  "status": "published",
+  "slug": "xiaomi-mijia",
+  "name": "Xiaomi / Mijia",
+  "aliases": ["Xiaomi Home Appliances", "Mijia", "MIJIA", "米家"],
+  "legalEntityNote": "Xiaomi and Mijia are consumer-facing identities within Xiaomi Corporation's smart-home ecosystem, not one universal legal entity or manufacturer for every appliance. Xiaomi group companies, regional operators and ecosystem companies can hold different design, manufacturing, compliance, import, sales, platform and warranty roles. An ecosystem relationship or Xiaomi Home compatibility does not establish the legal manufacturer or factory of a specific SKU.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.mi.com/global/",
+  "headline": "Xiaomi and Mijia smart appliances, ecosystem boundaries and model checks",
+  "description": "A source-backed profile of Xiaomi and Mijia home appliances, separating the consumer identities, Xiaomi Corporation, ecosystem participants, product categories, channels and model-level responsibility.",
+  "metaDescription": "Xiaomi Mijia brand profile: smart appliances, floorcare, ecosystem boundaries, channels and buyer verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Xiaomi Corporation. Brand, platform and ecosystem evidence does not identify the legal manufacturer, factory, origin, importer, seller or warrantor for every Xiaomi- or Mijia-branded appliance.",
+  "headquarters": "Beijing, China (Xiaomi Corporation)",
+  "founded": "Xiaomi founded in 2010; Mijia brand introduced in 2016",
+  "heroImage": "/images/brands/xiaomi-mijia/hero-smart-home.webp",
+  "heroImageAlt": "Xiaomi and Mijia smart appliances in a connected home kitchen",
+  "heroImageCaption": "Official Xiaomi smart-appliance campaign image showing a connected home setting with Mijia large appliances and other ecosystem products.",
+  "heroSourceUrl": "https://i02.appmifile.com/activity-mi-web/fly-birds/smart-tech-appliances/pc/bgvsufhfus98ewyfbnusaj98hu.jpg",
+  "logoImage": "/images/brands/xiaomi-mijia/logo.webp",
+  "logoImageAlt": "Xiaomi logo",
+  "logoSourceUrl": "https://i01.appmifile.com/webfile/globalimg/mobile/logo/mi.png",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/xiaomi-mijia/brand-ecosystem-boundary.svg", "alt": "Xiaomi and Mijia brand, group, ecosystem and product responsibility map", "caption": "Xiaomi Corporation and its ecosystem provide context, but each appliance still requires a model-specific legal and supply-chain check."},
+    {"placement": "operations", "src": "/images/brands/xiaomi-mijia/model-manufacturer-check.svg", "alt": "Xiaomi Mijia model, compliance, factory, channel and support verification workflow", "caption": "Buyers should connect the exact destination-market model to its declaration, maker, factory, importer, seller and warranty route."}
+  ],
+  "ownership": {
+    "summary": "Xiaomi and Mijia sit within the consumer and smart-home brand architecture of listed Xiaomi Corporation. The group also works with invested and ecosystem companies, but that relationship must not be converted into a blanket claim that Xiaomi Corporation or one ecosystem company manufactures every branded or connected product.",
+    "parentCompany": "Xiaomi Corporation"
+  },
+  "leadership": [
+    {"name": "Lei Jun", "role": "Founder, Chairman and Chief Executive Officer of Xiaomi Corporation", "context": "Xiaomi's current corporate materials identify Lei Jun as founder, chairman and CEO of the listed group; this does not make him the operating lead of every ecosystem company."}
+  ],
+  "productPortfolio": [
+    {"name": "Floorcare and cleaning", "positioning": "Official Xiaomi smart-home pages list robot vacuums, cordless stick vacuums and wet-and-dry cleaning products, with availability varying by market.", "buyerRelevance": "Verify navigation and app-region support, consumables, battery and charger, floor compatibility, data terms and local repair coverage."},
+    {"name": "Major home appliances", "positioning": "Mijia-branded refrigerators, air conditioners and laundry appliances are part of Xiaomi's expanding smart large-appliance portfolio in selected markets.", "buyerRelevance": "Confirm the exact regional model, dimensions, voltage, energy label, installation responsibility, refrigerant or water requirements and service network."},
+    {"name": "Air, kitchen and lifestyle appliances", "positioning": "The official smart-home portfolio includes air purifiers and a broad range of connected kitchen and lifestyle appliances under Xiaomi or Mijia identities.", "buyerRelevance": "Check local catalogue status, replacement filters or accessories, app dependence, compliance documentation and the responsible regional company."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Xiaomi's annual reporting describes smartphones and AIoT or lifestyle products as a group business while also distinguishing ecosystem partners and supply-chain relationships.", "scope": "Xiaomi Corporation group-level reporting; it does not assign a factory or legal manufacturer to every home-appliance SKU", "buyerCheck": "Obtain the product label, declaration and supplier documentation for the exact model rather than inferring the maker from ecosystem membership."},
+    {"evidence": "Xiaomi publishes product declarations and compliance documents through a global support portal, with document coverage tied to named products or model families.", "scope": "Only the models and markets covered by each published declaration", "buyerCheck": "Match the commercial reference and destination market to its declaration, legal maker, standards and importer information."},
+    {"evidence": "The reviewed public materials did not disclose one factory map covering all Xiaomi- and Mijia-branded home appliances.", "scope": "Public sources reviewed through 7 August 2026", "buyerCheck": "Require current model-to-factory, country-of-origin and quality-control evidence from the contracting supplier."}
+  ],
+  "marketsChannels": [
+    {"evidence": "Xiaomi operates global and country-specific consumer sites and Xiaomi Store channels with product ranges and support that vary by market.", "scope": "Official Xiaomi regional consumer channels; assortment, seller and service entities differ by country", "buyerCheck": "Validate the model on the destination-country site and record the invoice issuer, importer and warranty provider."},
+    {"evidence": "The Xiaomi Home application is an operating layer for many connected devices, while compatibility and available functions can vary by product and region.", "scope": "Connected products supported by Xiaomi Home; not every function or device is globally available", "buyerCheck": "Test destination-region account support, language, cloud dependence, data terms, firmware and required integrations before purchase."},
+    {"evidence": "Xiaomi's warranty portal publishes country- and product-specific after-sales terms rather than one universal global warranty.", "scope": "Consumer warranty routes published for participating markets", "buyerCheck": "Retain the exact local warranty terms and confirm commercial-use coverage, spare parts and authorized repair access."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Xiaomi and Mijia combine broad connected-home distribution with an expanding appliance portfolio. The ecosystem can improve product interoperability and reach, but procurement risk increases if buyers confuse the platform owner, brand, ecosystem participant and model-specific legal maker.",
+    "competitorSlugs": ["midea", "haier-home-appliances", "samsung-home-appliances", "dreame"]
+  },
+  "developments": [
+    {"date": "2026", "title": "Global smart-appliance campaign expands the visible portfolio", "summary": "Xiaomi's official global campaign presented Mijia major appliances alongside floorcare and connected-home products.", "sourceIds": ["xiaomi-smart-appliances"]},
+    {"date": "2024", "title": "Smart large appliances support AIoT growth", "summary": "Xiaomi's official results highlighted growth in smart large appliances within its IoT and lifestyle business.", "sourceIds": ["xiaomi-results-2024"]},
+    {"date": "2016", "title": "Mijia identity introduced", "summary": "Xiaomi introduced Mijia as a consumer identity for its smart-home ecosystem.", "sourceIds": ["xiaomi-annual-reports"]},
+    {"date": "2010", "title": "Xiaomi founded", "summary": "Xiaomi Corporation traces its foundation to 2010 in Beijing.", "sourceIds": ["xiaomi-annual-reports"]}
+  ],
+  "sources": [
+    {"id": "xiaomi-annual-reports", "title": "Annual and Interim Reports", "publisher": "Xiaomi Corporation", "url": "https://ir.mi.com/financial-information/annual-interim-reports", "accessedAt": "2026-08-07"},
+    {"id": "xiaomi-results-2024", "title": "Xiaomi Announces 2024 Annual Results", "publisher": "Xiaomi Corporation", "url": "https://www.mi.com/global/discover/article?id=4474", "publishedAt": "2025", "accessedAt": "2026-08-07"},
+    {"id": "xiaomi-smart-appliances", "title": "Smart Tech Appliances", "publisher": "Xiaomi", "url": "https://www.mi.com/global/event/2026/smart-tech-appliances/", "accessedAt": "2026-08-07"},
+    {"id": "xiaomi-smart-home", "title": "Xiaomi Smart Home", "publisher": "Xiaomi", "url": "https://www.mi.com/global/app/smart-home/", "accessedAt": "2026-08-07"},
+    {"id": "xiaomi-declarations", "title": "Product Declarations", "publisher": "Xiaomi", "url": "https://www.mi.com/global/support/terms/declaration/", "accessedAt": "2026-08-07"},
+    {"id": "xiaomi-warranty", "title": "Xiaomi Warranty", "publisher": "Xiaomi", "url": "https://www.mi.com/global/support/warranty/", "accessedAt": "2026-08-07"},
+    {"id": "xiaomi-media-kit", "title": "Xiaomi Media Kit", "publisher": "Xiaomi", "url": "https://www.mi.com/global/about/mediakit/", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T14:52:59+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T14:52:59+08:00"
+}
