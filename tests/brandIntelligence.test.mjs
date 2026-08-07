@@ -702,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the eighty-five published profiles and approved article relationships", () => {
+test("the release gate validates the eighty-six published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -759,6 +759,7 @@ test("the release gate validates the eighty-five published profiles and approved
     "karcher",
     "kitchenaid",
     "kobalt",
+    "lawnmaster",
     "lg-home-appliances",
     "makita",
     "mammotion",
@@ -975,7 +976,7 @@ test("the release gate validates the eighty-five published profiles and approved
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 85);
+  assert.equal(loadedProfiles.length, 86);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1041,7 +1042,7 @@ test("the release gate validates the eighty-five published profiles and approved
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 85);
+  assert.equal(profiles.length, 86);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1060,6 +1061,49 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("outdoor-equipment batch eleven publishes LawnMaster with verified Cleva and regional boundaries", async () => {
+  const slug = "lawnmaster";
+  const candidate = getBrandProfiles().find((profile) => profile.slug === slug);
+  const realArticles = getInsights();
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+  const memberships = categories
+    .filter(({ profiles }) => profiles.some((profile) => profile.slug === slug))
+    .map(({ category }) => category.slug);
+
+  assert.ok(candidate, `${slug} profile must exist`);
+  assert.equal(candidate.status, "published");
+  assert.equal(candidate.schemaEntityType, "Brand");
+  assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+  assert.match(candidate.heroImage, /^\/images\/brands\/lawnmaster\/hero-.+\.webp$/);
+  assert.match(candidate.logoSourceUrl, /^https:\/\//);
+  assert.match(candidate.heroSourceUrl, /^https:\/\//);
+  assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+  assert.ok(candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)));
+
+  const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+  const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+  assert.equal(fs.existsSync(logoPath), true);
+  assert.equal(fs.existsSync(heroPath), true);
+  const logoMetadata = await sharp(logoPath).metadata();
+  const heroMetadata = await sharp(heroPath).metadata();
+  assert.equal(logoMetadata.format, "webp");
+  assert.equal(logoMetadata.hasAlpha, true);
+  assert.ok(logoMetadata.width >= 600);
+  assert.equal(heroMetadata.format, "webp");
+  assert.equal(heroMetadata.width, 1600);
+  assert.equal(heroMetadata.height, 1000);
+
+  const taggedArticles = realArticles.filter(
+    (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+  );
+  assert.deepEqual(taggedArticles, [], "LawnMaster must not create article relationships");
+  assert.deepEqual(memberships, ["lawn-garden-equipment"]);
+  assert.equal(getBrandCategoryForProfile(slug)?.slug, "lawn-garden-equipment");
+  assert.match(candidate.ownership.summary, /Cleva/i);
+  assert.match(candidate.legalEntityNote, /trademark|regional|Cleva North America|Cleva Europe/i);
 });
 
 test("outdoor-equipment batch ten profiles publish with verified brand and operating boundaries", async () => {
