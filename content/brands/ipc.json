@@ -1,0 +1,159 @@
+{
+  "status": "published",
+  "slug": "ipc",
+  "name": "IPC",
+  "aliases": ["IPC by Tennant Company", "IPC Eagle", "Integrated Professional Cleaning"],
+  "legalEntityNote": "IPC is a professional-cleaning brand and group of product lines within Tennant Company rather than one universal legal entity. Official IPC documents identify entities including IP Cleaning S.r.l. and IPC Tools S.p.A.; the applicable manufacturer, seller, importer, service and warranty entity depends on the product and market.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.ipcworldwide.com/",
+  "headline": "IPC brand, Tennant ownership, professional cleaning portfolio and operating entities",
+  "description": "A source-backed profile of IPC as a Tennant professional-cleaning brand, its Italian operating-entity boundary, equipment portfolio, global channels and buyer checks.",
+  "metaDescription": "IPC profile: Tennant ownership, Italian entity boundary, scrubbers, vacuums, tools, channels, service and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with IPC or Tennant Company. Group ownership and brand statements do not identify the manufacturer, origin, seller or warranty provider for every IPC product and territory.",
+  "headquarters": "Italy; brand operations within Tennant Company",
+  "founded": "2005",
+  "heroImage": "/images/brands/ipc/hero-ct231-ride-on-scrubber.webp",
+  "heroImageAlt": "IPC CT231 ride-on floor scrubber dryer",
+  "heroSourceUrl": "https://www.ipcworldwide.com/us/wp-content/uploads/sites/7/2024/02/new-ct231-ride-on-scrubber-drier.png",
+  "logoImage": "/images/brands/ipc/logo.webp",
+  "logoImageAlt": "IPC logo",
+  "logoSourceUrl": "https://www.ipcworldwide.com/wp-content/uploads/2016/05/main-logo.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/ipc/tennant-ipc-entity-boundary.svg",
+      "alt": "Tennant ownership, IPC brand and Italian operating entity boundary",
+      "caption": "Tennant owns the IPC business, while IPC branding, Italian operating entities and regional contracting responsibilities remain distinct."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/ipc/product-entity-service-check.svg",
+      "alt": "IPC product, manufacturing entity, seller and service buyer checklist",
+      "caption": "IPC's broad portfolio spans multiple product lines, so buyers should verify the exact manufacturer, origin, seller, parts and warranty path."
+    }
+  ],
+  "ownership": {
+    "summary": "Tennant Company completed its acquisition of IPC Group in April 2017. IPC now appears as IPC by Tennant Company, while official product and compliance documents continue to identify specific Italian and regional entities. Ownership does not make Tennant Company the model-level manufacturer or warranty entity for every IPC SKU.",
+    "parentCompany": "Tennant Company"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Floor scrubbers, sweepers and floor machines",
+      "positioning": "IPC offers compact, walk-behind and ride-on scrubbers, vacuum sweepers, burnishers and extractors for professional environments.",
+      "buyerRelevance": "Surface type, productivity, battery system, consumables, ergonomics and local service capacity should be tested at site level."
+    },
+    {
+      "name": "Commercial and industrial vacuums",
+      "positioning": "The vacuum portfolio covers commercial, wet-and-dry and specialist industrial applications.",
+      "buyerRelevance": "Filtration, hazardous-dust classification, electrical standard, accessories and product-specific manufacturer evidence require verification."
+    },
+    {
+      "name": "High-pressure, window and manual cleaning",
+      "positioning": "Pressure washers, pure-water and window-cleaning systems, tools and microfiber solutions broaden IPC beyond powered floor equipment.",
+      "buyerRelevance": "The responsible product-line entity, spare-parts system, consumables and warranty path may differ across the portfolio."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "IPC's official US About page describes IPC as a manufacturer of cleaning equipment and tools with a broad professional portfolio.",
+      "scope": "Brand-level portfolio statement; it does not name a factory for every product",
+      "buyerCheck": "Identify the manufacturer, factory, country of origin and conformity documentation for the exact model and serial range."
+    },
+    {
+      "evidence": "A current IPC industrial-vacuum product sheet names IP Cleaning S.r.l. in Summaga di Portogruaro, Italy and states that Tennant and IPC marks belong to Tennant or affiliated companies.",
+      "scope": "Named industrial vacuum document and issuing entity, not the full IPC range",
+      "buyerCheck": "Use the technical sheet and declaration for the exact SKU; do not generalize this entity or location to scrubbers, tools or other lines."
+    },
+    {
+      "evidence": "IPC's whistleblowing policy identifies both IP Cleaning S.r.l. and IPC Tools S.p.A. as IPC data controllers within the Tennant Group.",
+      "scope": "Named Italian legal entities and governance context, not proof of model-level production",
+      "buyerCheck": "Map each ordered product to its legal manufacturer, invoice entity, importer, parts owner and warranty provider."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "IPC publishes regional sites and country selection across Europe, the Americas, India and other markets.",
+      "scope": "Official international route to market; product availability and legal seller vary",
+      "buyerCheck": "Confirm the authorized local seller, contracting entity, import responsibility and territory-specific warranty."
+    },
+    {
+      "evidence": "IPC's official About page says it supports partners through consulting, marketing, logistics, learning and assistance services.",
+      "scope": "Brand-level partner support proposition",
+      "buyerCheck": "Request written commissioning, training, technician response, parts availability and escalation commitments for the buyer's sites."
+    },
+    {
+      "evidence": "IPC product inquiries distinguish distributors, contract cleaners, final users and sales points.",
+      "scope": "Channel roles exposed through official IPC contact forms",
+      "buyerCheck": "Record which channel role the counterparty holds and verify its authorization for the exact product family."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: IPC gives Tennant a broad professional-cleaning portfolio extending from floor machines and vacuums to pressure, window and manual tools. The breadth creates sourcing value but also requires careful mapping of product-line entity, origin, seller, parts and warranty responsibilities.",
+    "competitorSlugs": ["hako", "karcher", "nilfisk", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2017-04-06",
+      "title": "Tennant completes acquisition of IPC Group",
+      "summary": "Tennant announced completion of the IPC Group acquisition, bringing IPC into the Tennant organization.",
+      "sourceIds": ["tennant-ipc-acquisition"]
+    },
+    {
+      "date": "2005",
+      "title": "IPC Group is formed",
+      "summary": "IPC's official history traces the integrated professional-cleaning group to 2005.",
+      "sourceIds": ["ipc-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tennant-ipc-acquisition",
+      "title": "Tennant Company Completes Acquisition of IPC Group",
+      "publisher": "Tennant Company",
+      "url": "https://investors.tennantco.com/news/news-details/2017/Tennant-Company-Completes-Acquisition-of-IPC-Group/default.aspx",
+      "publishedAt": "2017-04-06",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ipc-about",
+      "title": "About IPC",
+      "publisher": "IPC by Tennant Company",
+      "url": "https://www.ipcworldwide.com/us/about-us/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ipc-history",
+      "title": "Our History",
+      "publisher": "IPC by Tennant Company",
+      "url": "https://www.ipcworldwide.com/us/history/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ipc-privacy",
+      "title": "Privacy Notice",
+      "publisher": "IPC by Tennant Company",
+      "url": "https://www.ipcworldwide.com/it/privacy-policy/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ipc-whistleblowing",
+      "title": "IPC Whistleblowing Policy",
+      "publisher": "IPC by Tennant Company",
+      "url": "https://www.ipcworldwide.com/it/wp-content/uploads/sites/2/2025/09/IPC_Whistleblowing-Policy_ENG.pdf",
+      "publishedAt": "2025-09",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ipc-industrial-vacuum",
+      "title": "GC 1/35 OIL Industrial Vacuum Product Sheet",
+      "publisher": "IP Cleaning S.r.l.",
+      "url": "https://www.ipcworldwide.com/wp-content/uploads/2017/04/GC-1-35-OIL_LF-EXP_2025.pdf",
+      "publishedAt": "2025",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T02:50:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T02:50:00+08:00"
+}
