@@ -25,12 +25,12 @@ This is the website operational record for the traffic-prioritized brand SEO que
 | 10 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | D | `published_verified` |
 | 11 | GARDENA | `who-owns-gardena-husqvarna-sileno-manufacturing` | D | `published_verified` |
 | 12 | Braun Appliances | `who-owns-braun-appliances-delonghi-pg-license` | D | `published_verified` |
-| 13 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | E | `local_verified` |
-| 14 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | E | `local_verified` |
-| 15 | Gorenje | `who-owns-gorenje-appliances-hisense` | E | `local_verified` |
-| 16 | ASKO Appliances | `who-owns-asko-appliances-hisense-gorenje` | F | `planned` |
-| 17 | Hamilton Beach | `who-owns-hamilton-beach-brands-sourcing` | F | `planned` |
-| 18 | Teka Appliances | `who-owns-teka-appliances-midea` | F | `planned` |
+| 13 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | E | `published_verified` |
+| 14 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | E | `published_verified` |
+| 15 | Gorenje | `who-owns-gorenje-appliances-hisense` | E | `published_verified` |
+| 16 | ASKO Appliances | `who-owns-asko-appliances-hisense-gorenje` | F | `local_verified` |
+| 17 | Hamilton Beach | `who-owns-hamilton-beach-brands-sourcing` | F | `local_verified` |
+| 18 | Teka Appliances | `who-owns-teka-appliances-midea` | F | `local_verified` |
 | 19 | LawnMaster | `lock before research` | G | `planned` |
 | 20 | SUPOR | `who-owns-supor-groupe-seb-manufacturing` | G | `planned` |
 
@@ -104,7 +104,7 @@ Slugs after Batch A remain queue locks and must still pass exact-intent collisio
 
 ## Next starting point
 
-After Batch E is production-verified, the next fixed batch is: **ASKO Appliances, Hamilton Beach, Teka Appliances**.
+After Batch F is production-verified, the next fixed batch is: **LawnMaster and SUPOR**.
 
 ## Batch B production checkpoint synchronized in this release
 
@@ -198,5 +198,37 @@ After Batch E is production-verified, the next fixed batch is: **ASKO Appliances
 
 - Local gate passed after rebasing onto the latest `main`: content classification, 15 insight tests, 95 brand tests and the 547-page production build all succeeded.
 - Rendered desktop and 390 px mobile checks passed for all three pages: correct August 8, 2026 date, title, H1, canonical and BlogPosting schema; all nine article images loaded at 1600×900 with no horizontal overflow.
+- The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it is not an application error in the Git-linked deployment.
+- Preview, merge, Git-linked Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
+
+## Batch E production checkpoint synchronized in this release
+
+- Groupe SEB, Rowenta and Gorenje were published through PR #52 and production commit `72d9d8321f31145ba417029972986ff511be7016`.
+- Vercel production deployment `dpl_DBeEwTRkxHJvi1uEXgFTBUMLf6Ba` reached `READY`; all three exact production URLs, metadata, images and responsive layouts passed live verification.
+- Their article and queue statuses are mechanically corrected to `published_verified` in this substantive Batch F release.
+
+## Batch F fixed titles
+
+1. **Who Owns ASKO Appliances? Hisense, Gorenje and Manufacturing Explained**
+2. **Who Owns Hamilton Beach? Brands, Manufacturing and Sourcing Explained**
+3. **Who Owns Teka Appliances? Midea, Manufacturing and Brand Structure Explained**
+
+## Batch F collision and factual boundary
+
+- All three exact repository slugs were absent on `origin/main` commit `72d9d8321f31145ba417029972986ff511be7016`, and each exact production URL returned `404` before writing.
+- ASKO is distinct from the published Hisense and Gorenje guides. It focuses on ASKO's Swedish origin, Hisense Group ownership, Hisense Europe operating context, Velenje laundry evidence and model-level responsibility.
+- Hamilton Beach is distinct from the 2018 annual-report editorial. It answers current ownership and separates the NYSE-listed holding company, principal operating subsidiary, consumer brand, sourcing network and exact-product warranty.
+- Teka is distinct from the broader Midea guide. It focuses on the April 2025 acquisition completion, the express Teka Rus LLC exclusion, Teka's product portfolio and post-acquisition factory verification.
+
+## Batch F article and visual review
+
+- Each article contains a direct answer, at-a-glance table, ownership and manufacturing boundaries, buyer checklist, FAQ, final answer, official primary sources and approved Brand Intelligence links.
+- Each package contains one reviewed 1600×900 unbranded WebP cover and two deterministic 1600×900 SVG fact maps using the `industry_map` system.
+- Covers contain no real brand logos or trademarks. Information diagrams keep corporate ownership, operating entities, exclusions, factories and product-specific responsibility visibly separate.
+
+## Batch F local release gate
+
+- Local gate passed after rebasing onto the latest `main`: content classification, 15 insight tests, 96 brand tests and the 553-page production build all succeeded.
+- Rendered desktop and 390 px mobile checks passed for all three pages: correct August 8, 2026 date, title, H1, description, canonical and BlogPosting schema; all nine article visuals loaded at 1600×900 with no horizontal overflow.
 - The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it is not an application error in the Git-linked deployment.
 - Preview, merge, Git-linked Vercel production deployment and final live verification remain required before these rows can become `published_verified`.

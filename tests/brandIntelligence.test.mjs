@@ -1337,11 +1337,12 @@ test("home-appliance batch eight profiles publish with current ownership and ope
   const newSlugs = ["asko", "hamilton-beach", "teka"];
   const expectedTaggedArticles = new Map([
     ["asko", [
+      "who-owns-asko-appliances-hisense-gorenje",
       "who-owns-gorenje-appliances-hisense",
       "who-owns-hisense-appliances-gorenje-asko",
     ]],
-    ["hamilton-beach", []],
-    ["teka", []],
+    ["hamilton-beach", ["who-owns-hamilton-beach-brands-sourcing"]],
+    ["teka", ["who-owns-teka-appliances-midea"]],
   ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
@@ -1503,6 +1504,7 @@ test("home-appliance batch six profiles publish independently with verified enti
   const newSlugs = ["gorenje", "rowenta", "supor"];
   const expectedTaggedArticles = new Map([
     ["gorenje", [
+      "who-owns-asko-appliances-hisense-gorenje",
       "who-owns-gorenje-appliances-hisense",
       "who-owns-hisense-appliances-gorenje-asko",
     ]],
@@ -1615,6 +1617,7 @@ test("home-appliance batch five profiles publish independently with dedicated of
       "who-owns-groupe-seb-brands-supor",
     ]],
     ["hisense", [
+      "who-owns-asko-appliances-hisense-gorenje",
       "who-owns-gorenje-appliances-hisense",
       "who-owns-hisense-appliances-gorenje-asko",
     ]],
