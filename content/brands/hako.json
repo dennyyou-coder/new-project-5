@@ -1,0 +1,187 @@
+{
+  "status": "published",
+  "slug": "hako",
+  "name": "Hako",
+  "aliases": ["Hako GmbH", "Hako Group"],
+  "legalName": "Hako GmbH",
+  "legalEntityNote": "Hako GmbH is the German operating company and professional-cleaning brand within Possehl Group. Hako subsidiaries, group brands such as Minuteman and PowerBoss, distributors, factories and warranty providers retain distinct legal and commercial responsibilities.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.hako.com/",
+  "headline": "Hako ownership, professional cleaning portfolio, production and service network",
+  "description": "A source-backed profile of Hako GmbH, its Possehl ownership, professional cleaning and municipal equipment, production footprint, service network and buyer checks.",
+  "metaDescription": "Hako profile: Possehl ownership, management, scrubbers, sweepers, municipal equipment, production, service channels and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Hako or Possehl. Group ownership and network disclosures do not identify the manufacturer, seller or warranty entity for every product and country.",
+  "headquarters": "Bad Oldesloe, Germany",
+  "founded": "1948",
+  "heroImage": "/images/brands/hako/hero-scrubmaster-b35-b50.webp",
+  "heroImageAlt": "Hako Scrubmaster B35 and B50 floor scrubbers",
+  "heroSourceUrl": "https://www.hako.com/fileadmin/user_upload/Scrubmaster/Scrubmaster_B35_B50/b35_b50_Header4.webp",
+  "logoImage": "/images/brands/hako/logo.webp",
+  "logoImageAlt": "Hako logo",
+  "logoSourceUrl": "https://www.hako.com/fileadmin/Icons_Logos/hako_logo_2025.svg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/hako/possehl-hako-boundary.svg",
+      "alt": "Possehl ownership and Hako operating boundary",
+      "caption": "Possehl owns Hako, while Hako GmbH, its subsidiaries, brands and regional sellers retain separate operating and contractual roles."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/hako/production-service-check.svg",
+      "alt": "Hako production and service buyer verification workflow",
+      "caption": "Hako's group production and service footprint is useful context, but buyers still need model, factory, seller and local-support confirmation."
+    }
+  ],
+  "ownership": {
+    "summary": "Hako GmbH has been wholly owned by the family-controlled Possehl Group since 2007. Hako operates as a professional-cleaning and municipal-technology business with subsidiaries and additional group brands, while Possehl ownership should not be read as model-level manufacturing or warranty evidence.",
+    "parentCompany": "Possehl Group"
+  },
+  "leadership": [
+    {
+      "name": "Joachim Blache",
+      "role": "Managing Director, Operations",
+      "context": "Hako's official management page lists Joachim Blache with responsibility for Operations."
+    },
+    {
+      "name": "Axel Jensen",
+      "role": "Managing Director, Technology & Products",
+      "context": "Hako's official management page lists Axel Jensen with responsibility for Technology & Products."
+    },
+    {
+      "name": "Frank Ulbricht",
+      "role": "Managing Director, Sales & Marketing",
+      "context": "Hako's official management page lists Frank Ulbricht with responsibility for Sales & Marketing."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Scrubber-driers and sweepers",
+      "positioning": "Scrubmaster and Sweepmaster machines cover compact, walk-behind and ride-on professional floor-cleaning tasks.",
+      "buyerRelevance": "Buyers should compare floor type, productivity, batteries, brushes, filtration, operator ergonomics and local service."
+    },
+    {
+      "name": "Municipal and outdoor equipment",
+      "positioning": "Citymaster and Multicar platforms extend Hako into municipal cleaning, grounds care and multi-purpose vehicle applications.",
+      "buyerRelevance": "Vehicle homologation, attachments, seasonal duty, operator licensing and municipal service capability require market-specific checks."
+    },
+    {
+      "name": "Vacuum, carpet and water-jet solutions",
+      "positioning": "Professional vacuuming and carpet-care equipment is complemented by Oertzen high-pressure systems within the Hako group.",
+      "buyerRelevance": "Confirm which brand and legal entity supplies the product, accessories, parts and warranty in the destination market."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Hako's sustainability report identifies three production plants and nine sales offices in Germany.",
+      "scope": "Hako GmbH German footprint described in the reviewed sustainability report",
+      "buyerCheck": "Verify which named plant produces the contracted model and record the country of origin and serial range in procurement documents."
+    },
+    {
+      "evidence": "The same report says 69% of Hako suppliers are based in Germany and about 90% are based in Europe.",
+      "scope": "Company-reported supplier geography for the report period, not a model-specific bill of materials",
+      "buyerCheck": "Request component-origin, critical-supplier and continuity information for the exact equipment platform."
+    },
+    {
+      "evidence": "Hako reports 27 subsidiaries and identifies Minuteman, PowerBoss, Multi-Clean and Oertzen within its international group structure.",
+      "scope": "Corporate network and group brands, not proof that all products share factories or parts",
+      "buyerCheck": "Separate the quoted brand, manufacturer, importer, seller, parts system and warranty provider before contracting."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Hako describes an international organization of subsidiaries and sales and service partners serving professional customers.",
+      "scope": "Group-level international route to market",
+      "buyerCheck": "Confirm the authorized seller and contracting entity for the exact country, product family and tender."
+    },
+    {
+      "evidence": "Hako's service page describes a Europe-wide network with approximately 650 service technicians.",
+      "scope": "Hako-reported European service network; local density and response vary",
+      "buyerCheck": "Obtain site-specific response times, technician location, parts availability, maintenance scope and escalation terms."
+    },
+    {
+      "evidence": "Hako markets industry solutions for logistics, retail, healthcare, industry, municipalities and other professional environments.",
+      "scope": "Application positioning on official Hako product pages",
+      "buyerCheck": "Require an on-site trial and documented cleaning result for the buyer's flooring, soil load, traffic and operating constraints."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Hako combines specialist indoor floor-care equipment with municipal vehicles, European service capacity and a predominantly European supplier base. Its breadth is attractive for multi-application fleets, while buyers must keep Possehl ownership, Hako operations, group brands and local contractual responsibility clearly separated.",
+    "competitorSlugs": ["karcher", "nilfisk", "taski", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2025",
+      "title": "Hako presents its current management team",
+      "summary": "The official management page lists Joachim Blache, Axel Jensen and Frank Ulbricht across operations, technology and products, and sales and marketing.",
+      "sourceIds": ["hako-management"]
+    },
+    {
+      "date": "2007",
+      "title": "Hako becomes wholly owned by Possehl",
+      "summary": "Hako's sustainability report identifies Possehl Group as its sole shareholder since 2007.",
+      "sourceIds": ["hako-sustainability-report"]
+    },
+    {
+      "date": "1948",
+      "title": "Hans Koch founds Hako",
+      "summary": "Hako's official history traces the business to Hans Koch's 1948 founding in Pinneberg.",
+      "sourceIds": ["hako-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "hako-sustainability-report",
+      "title": "Hako Sustainability Report",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/fileadmin/PDFs/Downloads/Nachhaltigkeitsbericht_20240307_EN.pdf",
+      "publishedAt": "2024-03-07",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-management",
+      "title": "Management",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/en/business/about-us/management",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-products",
+      "title": "Product Overview",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/en/products/overview",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-service",
+      "title": "Hako Service",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/en/services/service",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-group",
+      "title": "Hako Group",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/en/hako-group-1",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-history",
+      "title": "Hako Success Story",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/unternehmen/ueber-uns/erfolgsgeschichte",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-legal",
+      "title": "Data Protection and Company Details",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/en/data-protection",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T01:38:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T01:38:00+08:00"
+}
