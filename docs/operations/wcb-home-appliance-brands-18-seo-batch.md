@@ -40,7 +40,7 @@ This file is the operational source of truth for the home-appliance ownership an
 | 14 | Panasonic | `who-owns-panasonic-appliances-vacuum-manufacturing` | 5 | `published_verified` | Published through cross-category Batch C |
 | 15 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | 5 | `published_verified` | Published through cross-category Batch E |
 | 16 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | 6 | `published_verified` | Published through cross-category Batch E |
-| 17 | SUPOR | `who-owns-supor-groupe-seb-manufacturing` | 6 | `planned` |  |
+| 17 | SUPOR | `who-owns-supor-groupe-seb-manufacturing` | 6 | `local_verified` | Cross-category Batch G |
 | 18 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | 6 | `published_verified` | Batch D |
 
 ## Batch 1 checkpoint

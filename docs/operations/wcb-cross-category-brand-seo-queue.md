@@ -28,11 +28,11 @@ This is the website operational record for the traffic-prioritized brand SEO que
 | 13 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | E | `published_verified` |
 | 14 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | E | `published_verified` |
 | 15 | Gorenje | `who-owns-gorenje-appliances-hisense` | E | `published_verified` |
-| 16 | ASKO Appliances | `who-owns-asko-appliances-hisense-gorenje` | F | `local_verified` |
-| 17 | Hamilton Beach | `who-owns-hamilton-beach-brands-sourcing` | F | `local_verified` |
-| 18 | Teka Appliances | `who-owns-teka-appliances-midea` | F | `local_verified` |
-| 19 | LawnMaster | `lock before research` | G | `planned` |
-| 20 | SUPOR | `who-owns-supor-groupe-seb-manufacturing` | G | `planned` |
+| 16 | ASKO Appliances | `who-owns-asko-appliances-hisense-gorenje` | F | `published_verified` |
+| 17 | Hamilton Beach | `who-owns-hamilton-beach-brands-sourcing` | F | `published_verified` |
+| 18 | Teka Appliances | `who-owns-teka-appliances-midea` | F | `published_verified` |
+| 19 | LawnMaster | `who-owns-lawnmaster-cleva-manufacturing` | G | `local_verified` |
+| 20 | SUPOR | `who-owns-supor-groupe-seb-manufacturing` | G | `local_verified` |
 
 Slugs after Batch A remain queue locks and must still pass exact-intent collision checks immediately before writing. If reliable evidence requires a material title or slug change, stop that target instead of silently renaming it.
 
@@ -104,7 +104,7 @@ Slugs after Batch A remain queue locks and must still pass exact-intent collisio
 
 ## Next starting point
 
-After Batch F is production-verified, the next fixed batch is: **LawnMaster and SUPOR**.
+Batch G is the final fixed release in this queue. After LawnMaster and SUPOR are production-verified, the 20-topic cross-category plan is complete. A future “next batch” requires a newly refreshed, GSC-informed queue rather than an unreviewed extension of this list.
 
 ## Batch B production checkpoint synchronized in this release
 
@@ -232,3 +232,34 @@ After Batch F is production-verified, the next fixed batch is: **LawnMaster and 
 - Rendered desktop and 390 px mobile checks passed for all three pages: correct August 8, 2026 date, title, H1, description, canonical and BlogPosting schema; all nine article visuals loaded at 1600×900 with no horizontal overflow.
 - The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it is not an application error in the Git-linked deployment.
 - Preview, merge, Git-linked Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
+
+## Batch F production checkpoint synchronized in this release
+
+- ASKO, Hamilton Beach and Teka were published through PR #54 and production commit `afafcf8e67e1d45f2c6b3c4b590707e09a17e28a`.
+- Vercel production deployment `dpl_8xajFFkQCtebjcwDJeADKf7y8ifd` reached `READY`; all three exact production URLs, metadata, images and responsive layouts passed live verification.
+- Their article and queue statuses are mechanically corrected to `published_verified` in this substantive Batch G release.
+
+## Batch G fixed titles
+
+1. **Who Owns LawnMaster? Cleva, Manufacturing and Regional Operations Explained**
+2. **Who Owns SUPOR? Groupe SEB, Manufacturing and Brand Structure Explained**
+
+## Batch G collision and factual boundary
+
+- Neither exact article slug existed on `origin/main` commit `afafcf8e67e1d45f2c6b3c4b590707e09a17e28a` before writing. LawnMaster's pre-writing lock is now `who-owns-lawnmaster-cleva-manufacturing`; SUPOR retains its approved locked slug.
+- LawnMaster separates the consumer brand, reviewed United States trademark evidence for Suzhou Cleva, Cleva North America's operating role, Cleva Europe's market role and model-level factory or warranty responsibility.
+- SUPOR separates the consumer brand, listed Zhejiang Supor, direct parent SEB INTERNATIONALE S.A.S., ultimate parent SEB S.A., the published manufacturing network and exact-SKU supply responsibilities.
+- Both articles are distinct from existing parent-level guides: the Cleva-related Kenmore article and the broader Groupe SEB portfolio article remain supporting internal links rather than duplicated targets.
+
+## Batch G article and visual review
+
+- Each article contains a direct answer, at-a-glance table, ownership and manufacturing boundaries, buyer checklist, FAQ, final answer, official primary sources and approved Brand Intelligence links.
+- Each package contains one reviewed 1600×900 unbranded WebP cover and two deterministic 1600×900 SVG fact maps using the `industry_map` system.
+- Covers contain no real brand logos or trademarks. The maps separate trademark evidence, parent companies, regional operators, factories, importer and product-level warranty responsibilities.
+
+## Batch G local release gate
+
+- Local gate passed on the latest `main`: content classification, 15 insight tests, 96 brand tests and the 555-page production build all succeeded.
+- Rendered desktop and 400 px responsive checks passed for both pages: correct August 8, 2026 date, title, H1, description, canonical and BlogPosting schema; all six article visuals are present at 1600×900 with no visible horizontal overflow.
+- The local browser exposed only the expected external analytics request error outside Vercel; the article routes, navigation and internal links rendered normally.
+- Preview, merge, Git-linked Vercel production deployment and final live verification remain required before these two rows can become `published_verified`.

@@ -1204,7 +1204,11 @@ test("outdoor-equipment batch eleven publishes LawnMaster with verified Cleva an
   const taggedArticles = realArticles.filter(
     (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
   );
-  assert.deepEqual(taggedArticles, [], "LawnMaster must not create article relationships");
+  assert.deepEqual(
+    taggedArticles.map((article) => article.slug),
+    ["who-owns-lawnmaster-cleva-manufacturing"],
+    "LawnMaster must expose only its approved ownership article relationship"
+  );
   assert.deepEqual(memberships, ["lawn-garden-equipment"]);
   assert.equal(getBrandCategoryForProfile(slug)?.slug, "lawn-garden-equipment");
   assert.match(candidate.ownership.summary, /Cleva/i);
@@ -1512,7 +1516,10 @@ test("home-appliance batch six profiles publish independently with verified enti
       "who-owns-rowenta-groupe-seb-vacuums",
       "who-owns-groupe-seb-brands-supor",
     ]],
-    ["supor", ["who-owns-groupe-seb-brands-supor"]],
+    ["supor", [
+      "who-owns-supor-groupe-seb-manufacturing",
+      "who-owns-groupe-seb-brands-supor",
+    ]],
   ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
@@ -1613,6 +1620,7 @@ test("home-appliance batch five profiles publish independently with dedicated of
       "who-owns-delonghi-appliance-group-brands",
     ]],
     ["groupe-seb", [
+      "who-owns-supor-groupe-seb-manufacturing",
       "who-owns-rowenta-groupe-seb-vacuums",
       "who-owns-groupe-seb-brands-supor",
     ]],
