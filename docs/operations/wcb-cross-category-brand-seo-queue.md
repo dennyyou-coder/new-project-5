@@ -13,12 +13,12 @@ This is the website operational record for the traffic-prioritized brand SEO que
 
 | Order | Topic | Slug / pre-writing lock | Batch | Status |
 |---:|---|---|---:|---|
-| 1 | EGO Power+ | `who-owns-ego-power-plus-chervon-manufacturing` | A | `local_verified` |
-| 2 | Hotpoint Appliances | `who-owns-hotpoint-appliances-regional-split` | A | `local_verified` |
-| 3 | Toro | `who-owns-toro-company-brands-manufacturing` | A | `local_verified` |
-| 4 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | B | `planned` |
-| 5 | Xiaomi / Mijia Home Appliances | `who-makes-xiaomi-mijia-home-appliances` | B | `planned` |
-| 6 | Nilfisk | `lock before research` | B | `planned` |
+| 1 | EGO Power+ | `who-owns-ego-power-plus-chervon-manufacturing` | A | `published_verified` |
+| 2 | Hotpoint Appliances | `who-owns-hotpoint-appliances-regional-split` | A | `published_verified` |
+| 3 | Toro | `who-owns-toro-company-brands-manufacturing` | A | `published_verified` |
+| 4 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | B | `local_verified` |
+| 5 | Xiaomi / Mijia Home Appliances | `who-makes-xiaomi-mijia-home-appliances` | B | `local_verified` |
+| 6 | Nilfisk | `who-owns-nilfisk-freudenberg-manufacturing` | B | `local_verified` |
 | 7 | Hisense Appliances | `who-owns-hisense-appliances-gorenje-asko` | C | `planned` |
 | 8 | Panasonic Appliances | `who-owns-panasonic-appliances-vacuum-manufacturing` | C | `planned` |
 | 9 | Breville / Sage | `who-owns-breville-sage-regional-brand-rights` | C | `planned` |
@@ -70,6 +70,38 @@ Slugs after Batch A remain queue locks and must still pass exact-intent collisio
 - Whirlpool, KitchenAid and Beko were published through PR #37 and production commit `1e7e99a9870eb29afc845d50bcc18298b397cfd4`.
 - Their three article status fields and rows in `wcb-home-appliance-brands-18-seo-batch.md` are mechanically corrected to `published_verified` in this substantive Batch A release.
 
+## Batch B fixed titles
+
+1. **Who Owns Toshiba Appliances? Midea, Toshiba Lifestyle and the 40-Year Brand License Explained**
+2. **Who Makes Xiaomi and Mijia Home Appliances? Brand Ownership, Ecosystem Partners and Manufacturing Explained**
+3. **Who Owns Nilfisk? Freudenberg, Manufacturing and Professional Cleaning Brands Explained**
+
+## Batch B collision and factual boundary
+
+- All three exact repository slugs were absent on `origin/main` commit `50dda134a8a9200662156f552869736e81513127` before writing, and each exact production URL returned `404`.
+- Toshiba is distinct from its Brand Intelligence profile. The article separates Midea's 80.1% control of Toshiba Lifestyle from Toshiba Corporation's ownership of the trademark and the 40-year home-appliance license.
+- Xiaomi / Mijia is distinct from the published Roborock and Dreame ownership pages. It answers the broader model-level manufacturer question without treating ecosystem membership, investment, app integration or contract manufacturing as the same relationship.
+- Nilfisk is distinct from the published Freudenberg transaction article. It provides the direct current-ownership answer, separates Nilfisk, Advance and Viper, and keeps factory, autonomous-technology and service roles model-specific.
+
+## Batch B article and visual review
+
+- Each article contains a direct answer, at-a-glance table, model-level responsibility boundaries, FAQ, final answer, official primary sources and verified internal links.
+- Each package contains one reviewed 1600×900 unbranded WebP cover and two deterministic 1600×900 SVG fact maps.
+- Covers contain no brand logos, trademarks, people or readable generated text. The generated concepts were converted to WebP and reviewed after final cropping.
+- A separate second visual pass repaired title and card-edge overflow in the Toshiba, Xiaomi / Mijia and Nilfisk diagrams; final article-width renders passed.
+
+## Cumulative quality checkpoint before Batch B
+
+- The six most recent cross-category and appliance ownership articles—Whirlpool, KitchenAid, Beko, EGO, Hotpoint and Toro—were rechecked on production before Batch B.
+- All six canonical article URLs returned HTTP 200. The remaining metadata, image and responsive checks are repeated in the Batch B production acceptance gate.
+
+## Batch B local release gate
+
+- Local gate passed: content classification, 15 insight tests, 89 brand tests and the 522-page production build all succeeded.
+- Rendered desktop and 390 px mobile checks passed for all three pages: HTTP 200, correct title, H1, description, canonical and BlogPosting schema; all nine article images loaded at 1600×900 with no horizontal overflow or unexpected failed requests.
+- The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it does not occur as an application error in the Git-linked deployment.
+- Preview, merge, Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
+
 ## Next starting point
 
-After Batch A is production-verified, the next fixed batch is: **Toshiba Appliances, Xiaomi / Mijia Home Appliances, Nilfisk**.
+After Batch B is production-verified, the next fixed batch is: **Hisense Appliances, Panasonic Appliances, Breville / Sage**.
