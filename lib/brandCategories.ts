@@ -74,7 +74,9 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "dewalt",
       "dreame",
       "ecovacs",
+      "ego-power-plus",
       "eufy",
+      "gardena",
       "greenworks",
       "hikoki",
       "husqvarna",
@@ -88,15 +90,19 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "skil",
       "stihl",
       "sunseeker",
+      "toro",
       "worx"
     ],
     primaryBrandSlugs: [
+      "ego-power-plus",
+      "gardena",
       "greenworks",
       "husqvarna",
       "mammotion",
       "segway-navimow",
       "stihl",
       "sunseeker",
+      "toro",
       "worx"
     ]
   },

@@ -1,0 +1,67 @@
+{
+  "status": "published",
+  "slug": "toro",
+  "name": "Toro",
+  "aliases": ["Toro Equipment", "Toro Yard Care"],
+  "legalEntityNote": "Toro is the flagship equipment brand of The Toro Company, not a separate universal legal entity and not interchangeable with the listed company itself. The Toro Company, its subsidiaries, manufacturing sites, outside suppliers, distributors, dealers, retailers and warranty providers can hold different responsibilities by product and market.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.toro.com/",
+  "headline": "Toro across The Toro Company, robotic mowing, professional turf and model-level supply evidence",
+  "description": "A source-backed profile of the Toro brand, separating it from The Toro Company, mapping its residential and professional portfolio, disclosed manufacturing network, dealer channels and buyer verification actions.",
+  "metaDescription": "Toro brand profile: The Toro Company boundary, robotic and conventional mowers, manufacturing, channels, warranty and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Toro or The Toro Company. Company-level facility and supplier disclosures do not identify the factory, engine, origin, seller or warranty route for every Toro model.",
+  "headquarters": "Bloomington, Minnesota, United States (The Toro Company context)",
+  "founded": "1914 (The Toro Company); Toro product brand",
+  "heroImage": "/images/brands/toro/hero-haven-robotic-mower.webp",
+  "heroImageAlt": "Toro Haven vision-based robotic lawn mower",
+  "heroImageCaption": "Official Toro product image of the Haven Robotic Mower VM125 with onboard vision navigation.",
+  "heroSourceUrl": "https://cdn.thetorocompany.com/api/assetstorage/623_8bc65240-f1af-4bd5-b75f-cf22ca0e9a7a/Large",
+  "logoImage": "/images/brands/toro/logo.webp",
+  "logoImageAlt": "Toro logo",
+  "logoSourceUrl": "https://cdn2.toro.com/en/-/media/Files/Toro/Brand-Manager/downloads/Download-Toro-Logo-Red.ashx?hash=0759E2AEFDFC0B092283F9EC7F0A79BC280D9FCE&la=en",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/toro/company-brand-boundary.svg", "alt": "Toro product brand and The Toro Company corporate identity boundary", "caption": "Toro is a product-facing brand of The Toro Company; the two names should not collapse product, seller, factory and warranty responsibilities."},
+    {"placement": "operations", "src": "/images/brands/toro/model-channel-check.svg", "alt": "Toro residential, professional and robotic product verification", "caption": "Toro's broad portfolio uses different products and channels, so buyers need model-, market- and service-specific evidence."}
+  ],
+  "ownership": {
+    "summary": "The Toro Company designs, manufactures and markets products under the Toro brand and is a publicly traded company listed on the New York Stock Exchange. Toro is the product brand; The Toro Company is the corporate entity behind it. No separate parent company is asserted on this page."
+  },
+  "leadership": [
+    {"name": "Richard M. Olson", "role": "Chairman and Chief Executive Officer, The Toro Company", "context": "Corporate leadership of The Toro Company, not a separate Toro brand company."}
+  ],
+  "productPortfolio": [
+    {"name": "Residential lawn and snow equipment", "positioning": "Toro's consumer range includes walk-behind and riding mowers, battery yard tools, snow blowers and related outdoor equipment.", "buyerRelevance": "Confirm model, power source, battery or engine configuration, accessories, local certification and seasonal parts availability."},
+    {"name": "Robotic mowing", "positioning": "The current Haven robotic mower uses onboard vision navigation and smart scheduling without a conventional boundary wire.", "buyerRelevance": "Validate lawn-size rating, terrain limits, wireless coverage, installation, app region, theft protection and local service capability."},
+    {"name": "Professional turf, golf and irrigation", "positioning": "The Toro brand also spans commercial turf maintenance, golf, sports-field and irrigation equipment.", "buyerRelevance": "Separate residential offers from professional specifications, dealer support, operator training, parts contracts and commercial warranty terms."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "The Toro Company's 2025 annual report lists manufacturing operations in the United States, Mexico, the United Kingdom, Italy, Romania, Germany, Poland and China.", "scope": "Company-wide manufacturing footprint across brands and categories; not a Toro model-to-plant map", "buyerCheck": "Request the exact model's legal manufacturer, plant, origin and shipment documentation rather than assigning a factory from the group list."},
+    {"evidence": "The annual report states that the company also purchases components and finished products from outside vendors.", "scope": "Company-level sourcing model", "buyerCheck": "Identify the engine, battery, control system and finished-good supplier where relevant, and obtain product-specific compliance evidence."},
+    {"evidence": "Toro's Haven product page documents a vision-based robotic mower with current model specifications and a limited warranty.", "scope": "Haven VM125 product page and reviewed market", "buyerCheck": "Confirm the exact article number, software region, included hardware, installation conditions and written warranty for the destination country."}
+  ],
+  "marketsChannels": [
+    {"evidence": "The Toro Company states that its products are marketed in more than 125 countries through distributors, dealers, mass retailers and other channels.", "scope": "Company-wide global channel disclosure", "buyerCheck": "Verify that the quoted seller is authorized for the exact product category and destination market."},
+    {"evidence": "Toro directs owners to authorized service dealers for warranty service and repair support.", "scope": "Reviewed Toro support route; terms vary by product and market", "buyerCheck": "Record the dealer, warranty issuer, proof-of-purchase rules, transport responsibility and expected parts lead time before purchase."},
+    {"evidence": "The Toro Company has announced strategic retail distribution including Lowe's for selected residential products.", "scope": "Selected United States residential products and announced channel relationship", "buyerCheck": "Do not generalize one retail relationship to professional equipment or other countries; verify SKU authorization and after-sales route."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Toro combines a century-old equipment brand, deep professional turf channels and a newer vision-based robotic-mower proposition. Its breadth is a procurement strength, but it also makes product-specific manufacturer, powertrain, dealer and warranty checks essential.",
+    "competitorSlugs": ["husqvarna", "gardena", "ego-power-plus", "greenworks"]
+  },
+  "developments": [
+    {"date": "2026-06-10", "title": "The Toro Company publishes its 2025 sustainability impact report", "summary": "The release restated the company's global scale and identified Richard M. Olson as chairman and chief executive officer.", "sourceIds": ["toro-sustainability"]},
+    {"date": "2025", "title": "Haven robotic mower enters the current Toro portfolio", "summary": "Toro's current Haven VM125 page presents vision navigation and smart scheduling as an alternative to conventional boundary-wire installation.", "sourceIds": ["toro-haven"]},
+    {"date": "1914", "title": "The Toro Company is founded", "summary": "The company traces its origins to 1914 and now operates a multi-brand outdoor-equipment business.", "sourceIds": ["toro-annual"]}
+  ],
+  "sources": [
+    {"id": "toro-annual", "title": "2025 Annual Report", "publisher": "The Toro Company", "url": "https://www.thetorocompany.com/static-files/32d21e16-1397-4d42-ba4d-e9cd5158d32e", "publishedAt": "2026", "accessedAt": "2026-08-07"},
+    {"id": "toro-brands", "title": "Our Brands", "publisher": "The Toro Company", "url": "https://www.thetorocompany.com/brands", "accessedAt": "2026-08-07"},
+    {"id": "toro-haven", "title": "Haven Robotic Mower VM125", "publisher": "Toro", "url": "https://www.toro.com/en/product/20460", "accessedAt": "2026-08-07"},
+    {"id": "toro-warranty", "title": "Warranty, Service and Repair Information", "publisher": "Toro", "url": "https://www.toro.com/en/customer-support/warranty-service-and-repair-information", "accessedAt": "2026-08-07"},
+    {"id": "toro-lowes", "title": "The Toro Company and Lowe's Announce Strategic Partnership", "publisher": "The Toro Company", "url": "https://www.thetorocompany.com/news-releases/news-release-details/toro-company-and-lowes-announce-strategic-partnership", "accessedAt": "2026-08-07"},
+    {"id": "toro-sustainability", "title": "The Toro Company Publishes 2025 Global Sustainability Impact Report", "publisher": "The Toro Company", "url": "https://www.thetorocompany.com/news-releases/news-release-details/toro-company-publishes-2025-global-sustainability-impact-report", "publishedAt": "2026-06-10", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T23:50:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T23:50:00+08:00"
+}
