@@ -1,0 +1,69 @@
+{
+  "status": "published",
+  "slug": "lawnmaster",
+  "name": "LawnMaster",
+  "aliases": ["LAWNMASTER", "LawnMaster OcuMow", "LawnMaster by Cleva"],
+  "legalEntityNote": "LawnMaster is a garden-equipment brand within the Cleva manufacturing group, not one universal legal entity. A reviewed United States trademark record identifies Suzhou Cleva Electric Appliance Co., Ltd. for the LAWNMASTER mark. Cleva North America, Inc. operates the reviewed North American brand, sales and support site, while Cleva Europe Ltd and other regional entities can hold sales, importing, service and warranty responsibilities in their markets.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://lawnmaster.com/",
+  "headline": "LawnMaster across Cleva trademark ownership, regional operators and robotic lawn-care supply",
+  "description": "A source-backed profile of LawnMaster, separating the product brand, reviewed Cleva trademark owner, North American and European operators, robotic and conventional garden portfolio, manufacturing evidence and buyer checks.",
+  "metaDescription": "LawnMaster brand profile: Cleva relationship, regional operators, OcuMow robot mowers, manufacturing evidence, warranty and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with LawnMaster or Cleva. A trademark registration, group manufacturing statement or regional catalogue does not establish the legal manufacturer, factory, origin, importer, seller or warranty provider for every LawnMaster SKU worldwide.",
+  "headquarters": "Suzhou, China (Cleva global manufacturing context); regional operations in North America and Europe",
+  "founded": "Cleva founded in 2004; LawnMaster U.S. trademark application filed in 2006",
+  "heroImage": "/images/brands/lawnmaster/hero-ocumow-vision-mowers.webp",
+  "heroImageAlt": "Two LawnMaster OcuMow vision robotic lawn mowers",
+  "heroImageCaption": "Official Cleva UK image presenting LawnMaster OcuMow vision robotic lawn mowers.",
+  "heroSourceUrl": "https://cdn.shopify.com/s/files/1/0050/9811/1010/files/OcuMow_18_New_Hero_Banner_mowers_2244ac44-8c61-472c-85c6-0fa157d053e0.webp?v=1740998698&width=2000",
+  "logoImage": "/images/brands/lawnmaster/logo.webp",
+  "logoImageAlt": "LawnMaster logo",
+  "logoSourceUrl": "https://cdn11.bigcommerce.com/s-ecj2z/images/stencil/475x95/lawnmasterlogo_1592500506__64078.original.png",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/lawnmaster/brand-entity-boundary.svg", "alt": "LawnMaster brand, Suzhou Cleva trademark and regional Cleva operating boundary", "caption": "The reviewed trademark owner and regional sales or support companies are related Cleva entities but should not be treated as one universal contracting party."},
+    {"placement": "operations", "src": "/images/brands/lawnmaster/model-region-check.svg", "alt": "LawnMaster model, navigation, factory, seller and warranty verification workflow", "caption": "North American, UK and European LawnMaster ranges require model- and destination-specific verification."}
+  ],
+  "ownership": {
+    "summary": "LawnMaster is presented by Cleva North America and Cleva Europe as a Cleva brand. The reviewed United States trademark record for LAWNMASTER identifies Suzhou Cleva Electric Appliance Co., Ltd.; that registration is useful ownership evidence for its jurisdiction and mark, but it does not replace market-specific checks for the operating, importing, selling and warranty entities."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {"name": "OcuMow robotic lawn mowers", "positioning": "Current LawnMaster catalogues include OcuMow vision and optical-navigation robotic mowers, with boundary-wire-free, auto-charging or drop-and-mow configurations varying by model and region.", "buyerRelevance": "Confirm the exact model, lawn-area rating, navigation method, boundary requirements, charging arrangement, slope limits and local service capability."},
+    {"name": "Cordless lawn and garden tools", "positioning": "Regional ranges include cordless lawn mowers, trimmers, blowers, chainsaws and hedge tools across market-specific battery platforms such as MX 24V and other voltage families.", "buyerRelevance": "Verify battery and charger compatibility within the destination catalogue rather than assuming cross-region or cross-generation interchangeability."},
+    {"name": "Corded and engine-powered equipment", "positioning": "The North American portfolio also presents corded electric products and No-Pull equipment combining push-button starting with selected two-cycle engine tools.", "buyerRelevance": "Check emissions, electrical standard, noise requirements, consumables, commercial-use limitations and local parts support for the quoted SKU."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Cleva Europe states that Cleva designs and manufactures home and garden appliances in-house and reports more than 80 million appliances manufactured since the group was founded in 2004.", "scope": "Cleva group capability statement covering multiple brands and appliance categories; not a LawnMaster model-to-factory map", "buyerCheck": "Request the exact LawnMaster model's legal manufacturer, factory address, country of origin and production documentation."},
+    {"evidence": "A reviewed official European LawnMaster manual identifies Suzhou Cleva Electric Appliance Co., Ltd. for the specified CLMF3637E lawn-mower documentation.", "scope": "Named European manual and model documentation; not every LawnMaster SKU or market", "buyerCheck": "Match the supplier evidence to the exact article number and current revision rather than extending one manual to the whole range."},
+    {"evidence": "Cleva's European distributor materials describe an ISO 9001-compliant manufacturing plant and engineering resources covering vacuums, lawn mowers and garden power equipment.", "scope": "Cleva group manufacturing and engineering disclosure", "buyerCheck": "Obtain the relevant factory certificate, audit scope, quality plan and shipment records for the contracted product."}
+  ],
+  "marketsChannels": [
+    {"evidence": "Cleva North America operates the reviewed LawnMaster United States site and directs orders, returns, registration, parts and service enquiries through Cleva North America contacts.", "scope": "Reviewed United States site and North American support context", "buyerCheck": "Confirm seller authorization, invoice issuer, importer, serial eligibility, service route and written warranty for the destination market."},
+    {"evidence": "Cleva Europe Ltd states that it was established in the United Kingdom in 2016 and provides direct LawnMaster sales and after-sales support in Europe.", "scope": "Cleva Europe and reviewed UK or European direct-sales operations", "buyerCheck": "Identify the exact European contracting entity, VAT/import responsibility, delivery territory and warranty provider before purchase."},
+    {"evidence": "The reviewed United States warranty varies by product family and sharply limits coverage for commercial, industrial or rental use, while the UK store presents a separate two-year guarantee framework.", "scope": "Reviewed United States and United Kingdom warranty presentations; terms are not universal", "buyerCheck": "Capture the model-specific warranty document, usage classification, proof-of-purchase requirements, exclusions and freight responsibility."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: LawnMaster combines Cleva's appliance-manufacturing base with value-oriented conventional garden tools and a growing vision-based robotic-mower line. Its main procurement complexity is regional: model names, battery systems, sellers, warranty terms and support routes differ across North America and Europe.",
+    "competitorSlugs": ["gardena", "worx", "greenworks", "sunseeker"]
+  },
+  "developments": [
+    {"date": "2026", "title": "LawnMaster expands current OcuMow vision robotic-mower offers", "summary": "The reviewed UK and European ranges present current OcuMow models using camera or sensor navigation, including auto-charging and drop-and-mow configurations.", "sourceIds": ["lawnmaster-uk-range", "lawnmaster-eu-range"]},
+    {"date": "2016", "title": "Cleva Europe establishes its UK operation", "summary": "Cleva Europe states that the UK company was established to support European sales, product development and after-sales activity.", "sourceIds": ["cleva-uk-about"]},
+    {"date": "2006", "title": "LAWNMASTER United States trademark application is filed", "summary": "The reviewed United States trademark proceeding record identifies the application and Suzhou Cleva Electric Appliance Co., Ltd.", "sourceIds": ["uspto-lawnmaster"]},
+    {"date": "2004", "title": "Cleva traces its founding to 2004", "summary": "Cleva Europe describes the group's start in 2004 and later growth as a home and garden appliance manufacturer.", "sourceIds": ["cleva-uk-about"]}
+  ],
+  "sources": [
+    {"id": "lawnmaster-about", "title": "About LawnMaster", "publisher": "LawnMaster / Cleva North America", "url": "https://lawnmaster.com/about-lawnmaster/about-us", "accessedAt": "2026-08-08"},
+    {"id": "cleva-na", "title": "Cleva North America", "publisher": "Cleva North America, Inc.", "url": "https://www.cleva-na.com/", "accessedAt": "2026-08-08"},
+    {"id": "lawnmaster-warranty", "title": "LawnMaster Warranty Information", "publisher": "LawnMaster / Cleva North America", "url": "https://lawnmaster.com/warranty-information-old/", "accessedAt": "2026-08-08"},
+    {"id": "cleva-uk-about", "title": "About Cleva", "publisher": "Cleva Europe Ltd", "url": "https://www.cleva-uk.com/pages/about", "accessedAt": "2026-08-08"},
+    {"id": "lawnmaster-uk-range", "title": "LawnMaster Lawn Mowers and Garden Power", "publisher": "Cleva UK", "url": "https://www.cleva-uk.com/collections/lawnmaster", "accessedAt": "2026-08-08"},
+    {"id": "lawnmaster-eu-range", "title": "LawnMaster Official EU Store", "publisher": "Cleva Europe", "url": "https://eu.cleva.com/collections/lawnmaster", "accessedAt": "2026-08-08"},
+    {"id": "cleva-distributors", "title": "Distributor Enquiries", "publisher": "Cleva UK", "url": "https://www.cleva-uk.com/pages/distributor-enquiries", "accessedAt": "2026-08-08"},
+    {"id": "uspto-lawnmaster", "title": "LAWNMASTER Trademark Proceeding Record", "publisher": "United States Patent and Trademark Office", "url": "https://ttabvue.uspto.gov/ttabvue/v?eno=20&mode=frame&pno=91180537&pty=OPP", "accessedAt": "2026-08-08"},
+    {"id": "lawnmaster-manual", "title": "CLMF3637E Original Instruction Manual", "publisher": "LawnMaster / Cleva", "url": "https://www.cleva-services.fr/fichiers/produit_fichier/9062-l951466-clmf3637e-manual-v1-2019.1.4.pdf", "accessedAt": "2026-08-08"}
+  ],
+  "publishedAt": "2026-08-08T00:50:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T00:50:00+08:00"
+}
