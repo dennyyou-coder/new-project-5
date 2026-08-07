@@ -110,7 +110,8 @@ function displayPublishedDate(value: string) {
   return new Intl.DateTimeFormat("en", {
     year: "numeric",
     month: "long",
-    day: "numeric"
+    day: "numeric",
+    timeZone: "Asia/Shanghai"
   }).format(parsed);
 }
 

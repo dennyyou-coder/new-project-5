@@ -88,6 +88,10 @@ test("article footer uses one mapped conversion CTA", () => {
   assert.doesNotMatch(articleSource, />Get Free Reports</);
 });
 
+test("article publication dates use the WCB editorial timezone", () => {
+  assert.match(articleSource, /timeZone:\s*"Asia\/Shanghai"/);
+});
+
 test("Blog keeps a dedicated Newsletter form and homepage stays outside this batch", () => {
   assert.match(blogSource, /<NewsletterLeadForm \/>/);
   assert.doesNotMatch(homeSource, /BlogConversionCta/);
