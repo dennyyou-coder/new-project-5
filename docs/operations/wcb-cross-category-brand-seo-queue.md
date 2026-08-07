@@ -16,12 +16,12 @@ This is the website operational record for the traffic-prioritized brand SEO que
 | 1 | EGO Power+ | `who-owns-ego-power-plus-chervon-manufacturing` | A | `published_verified` |
 | 2 | Hotpoint Appliances | `who-owns-hotpoint-appliances-regional-split` | A | `published_verified` |
 | 3 | Toro | `who-owns-toro-company-brands-manufacturing` | A | `published_verified` |
-| 4 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | B | `local_verified` |
-| 5 | Xiaomi / Mijia Home Appliances | `who-makes-xiaomi-mijia-home-appliances` | B | `local_verified` |
-| 6 | Nilfisk | `who-owns-nilfisk-freudenberg-manufacturing` | B | `local_verified` |
-| 7 | Hisense Appliances | `who-owns-hisense-appliances-gorenje-asko` | C | `planned` |
-| 8 | Panasonic Appliances | `who-owns-panasonic-appliances-vacuum-manufacturing` | C | `planned` |
-| 9 | Breville / Sage | `who-owns-breville-sage-regional-brand-rights` | C | `planned` |
+| 4 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | B | `published_verified` |
+| 5 | Xiaomi / Mijia Home Appliances | `who-makes-xiaomi-mijia-home-appliances` | B | `published_verified` |
+| 6 | Nilfisk | `who-owns-nilfisk-freudenberg-manufacturing` | B | `published_verified` |
+| 7 | Hisense Appliances | `who-owns-hisense-appliances-gorenje-asko` | C | `local_verified` |
+| 8 | Panasonic Appliances | `who-owns-panasonic-appliances-vacuum-manufacturing` | C | `local_verified` |
+| 9 | Breville / Sage | `who-owns-breville-sage-regional-brand-rights` | C | `local_verified` |
 | 10 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | D | `planned` |
 | 11 | GARDENA | `lock before research` | D | `planned` |
 | 12 | Braun Appliances | `who-owns-braun-appliances-delonghi-pg-license` | D | `planned` |
@@ -104,4 +104,35 @@ Slugs after Batch A remain queue locks and must still pass exact-intent collisio
 
 ## Next starting point
 
-After Batch B is production-verified, the next fixed batch is: **Hisense Appliances, Panasonic Appliances, Breville / Sage**.
+After Batch C is production-verified, the next fixed batch is: **De'Longhi, GARDENA, Braun Appliances**.
+
+## Batch B production checkpoint synchronized in this release
+
+- Toshiba Appliances, Xiaomi / Mijia and Nilfisk were published through PR #43 and production commit `f98697c8b616636fb0c4d30d0075b058fed21fb2`.
+- Their exact production URLs, metadata, images and responsive layouts passed live verification. Their article and queue statuses are mechanically corrected to `published_verified` in this substantive Batch C release.
+
+## Batch C fixed titles
+
+1. **Who Owns Hisense Appliances? Gorenje, ASKO and Manufacturing Explained**
+2. **Who Owns Panasonic Appliances? Vacuum Cleaners and Manufacturing Explained**
+3. **Who Owns Breville and Sage? Regional Brand Rights Explained**
+
+## Batch C collision and factual boundary
+
+- All three exact repository slugs were absent on `origin/main` commit `f98697c8b616636fb0c4d30d0075b058fed21fb2` before writing, and each exact production URL returned `404`.
+- Hisense is distinct from its Brand Intelligence profile and the planned standalone Gorenje and ASKO guides. This article answers the higher-volume Hisense ownership query while keeping the brands and model-level manufacturing responsibilities separate.
+- Panasonic uses the operating structure effective 1 April 2026. The article distinguishes Panasonic Holdings, Panasonic Corporation, appliance divisions and local legal entities rather than repeating the pre-reorganization structure.
+- Breville / Sage explains the regional trademark boundary disclosed by Breville Group and does not claim that similar regional models, legal sellers or warranties are identical.
+
+## Batch C article and visual review
+
+- Each article contains a direct answer, at-a-glance table, legal and manufacturing boundaries, buyer checklist, FAQ, final answer, official primary sources and approved Brand Intelligence relationship.
+- Each package contains one reviewed 1600×900 unbranded WebP cover and two deterministic 1600×900 SVG fact maps using the `industry_map` visual system.
+- Covers contain no brand logos, trademarks, people or readable generated text. Diagrams separate ownership, operating responsibility and model-level verification.
+
+## Batch C local release gate
+
+- Local gate passed on the latest `main`: content classification, 15 insight tests, 91 brand tests and the 531-page production build all succeeded.
+- Rendered desktop and 390 px mobile checks passed for all three pages: HTTP 200, correct title, H1, description, canonical and BlogPosting schema; all nine article images loaded at 1600×900 with no horizontal overflow.
+- The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it is not an application error in the Git-linked deployment.
+- Preview, merge, Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
