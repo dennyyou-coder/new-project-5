@@ -1,0 +1,149 @@
+{
+  "status": "published",
+  "slug": "fimap",
+  "name": "Fimap",
+  "aliases": ["FIMAP", "Fimap SpA", "Fimap S.p.A."],
+  "legalName": "Fimap S.p.A.",
+  "legalEntityNote": "Fimap S.p.A. is the Italian company named in the official company details and site footer. Fimap's official privacy policy says the company belongs to a group controlled by Comac S.p.A.; this does not make the two legal entities interchangeable. A model document may identify another manufacturer or agent for a specific machine, so seller, manufacturer, importer and warranty roles require model-level verification.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.fimap.com/en/",
+  "headline": "Fimap cleaning machines, Italian production and procurement checks",
+  "description": "A source-backed profile of Fimap S.p.A., its Italian-designed cleaning-machine range, autonomous CB-1 platform, international reach and model-level buyer checks.",
+  "metaDescription": "Fimap profile: Italian company, scrubber dryers, sweepers, CB-1 autonomous cleaning, global markets and procurement verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Fimap. Company-level design, production and export statements do not establish the manufacturer, component origin, importer or warranty entity for every model and market.",
+  "headquarters": "Santa Maria di Zevio, Verona, Italy",
+  "founded": "Not disclosed in the reviewed official sources",
+  "heroImage": "/images/brands/fimap/hero-cb1-autonomous-scrubbers.webp",
+  "heroImageAlt": "Two Fimap CB-1 autonomous scrubbers operating in a shopping-centre interior",
+  "heroSourceUrl": "https://www.fimap.com/assets/repository/img/tipologie/gallery/cb-1_2_0_shopping_mall_aisle_03_rgb.jpg",
+  "logoImage": "/images/brands/fimap/logo.webp",
+  "logoImageAlt": "Fimap logo",
+  "logoSourceUrl": "https://www.fimap.com/assets/img/logo/logo.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/fimap/company-brand-manufacturer-boundary.svg",
+      "alt": "Fimap company brand manufacturer seller and service responsibility boundary",
+      "caption": "Fimap S.p.A. is the page subject, but the exact model's manufacturer, seller, importer and warranty provider remain separate verification points."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/fimap/machine-fleet-service-check.svg",
+      "alt": "Fimap machine fleet deployment and service verification checklist",
+      "caption": "Commercial cleaning equipment should be checked as a site-specific system covering machine, deployment, consumables and aftersales."
+    }
+  ],
+  "ownership": {
+    "summary": "Official Fimap materials identify Fimap S.p.A. as the company behind the brand. Fimap's privacy policy says Fimap belongs to a group controlled by Comac S.p.A. This supports a group-control relationship but does not disclose the exact direct shareholding chain; model-specific manufacturing references remain separate evidence and should not be used to infer the manufacturer of every Fimap machine.",
+    "parentCompany": "Comac S.p.A. (group control disclosed; direct shareholding chain not disclosed)"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Scrubber dryers",
+      "positioning": "Fimap offers walk-behind, ride-on and performance-oriented scrubber dryers for commercial and industrial floorcare.",
+      "buyerRelevance": "Compare cleaning width, tanks, brush system, battery, drying, gradients and measured productivity on the intended floor."
+    },
+    {
+      "name": "Autonomous scrubbing machines",
+      "positioning": "The CB-1 collaborative robot is positioned for repetitive large-floor cleaning alongside human operators.",
+      "buyerRelevance": "Test navigation, safety, edge coverage, intervention rate, connectivity, charging and reporting in the real facility."
+    },
+    {
+      "name": "Sweepers and sweeper-scrubbers",
+      "positioning": "Sweeping and combined platforms address debris removal and floor washing in larger facilities.",
+      "buyerRelevance": "Specify debris, dust control, filtration, discharge, aisle dimensions and the required sweep-scrub sequence."
+    },
+    {
+      "name": "Vacuum and specialist floorcare machines",
+      "positioning": "Vacuum cleaners, spray-extraction cleaners and single-disc machines complement the mechanized range.",
+      "buyerRelevance": "Confirm filtration, accessories, chemical compatibility, power standard, consumables and local repair capability."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Fimap's official company page says it designs and produces its machines in Italy.",
+      "scope": "Fimap's company-level statement, not proof for every component or individual SKU",
+      "buyerCheck": "Verify the exact machine's manufacturer plate, assembly site, origin documents and conformity declaration."
+    },
+    {
+      "evidence": "Fimap's official portfolio covers autonomous scrubbers, multiple scrubber families, sweeper-scrubbers, sweepers, vacuums, extractors and single-disc machines.",
+      "scope": "Current official portfolio taxonomy",
+      "buyerCheck": "Do not extend the supply-chain evidence for one family or manual to another without model documentation."
+    },
+    {
+      "evidence": "The official CB-1 page describes a collaborative autonomous scrubber for repetitive floor-cleaning work.",
+      "scope": "CB-1 product family",
+      "buyerCheck": "Freeze robot hardware, software, safety features, connectivity, battery, accessories and documentation in the purchase specification."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Fimap says it exports machines to 80 countries around the world.",
+      "scope": "Company-reported international reach",
+      "buyerCheck": "Identify the authorized local seller, importing entity, service organization and spare-parts source before purchase."
+    },
+    {
+      "evidence": "Fimap Academy publishes training for operators, site managers, business owners and commercial personnel.",
+      "scope": "Company training framework; local availability may vary",
+      "buyerCheck": "Include operator, supervisor and technician training, refresher access and language requirements in the contract."
+    },
+    {
+      "evidence": "The CB-1 page identifies warehouses, airports, shopping centres, supermarkets and schools as target applications.",
+      "scope": "Reference applications rather than guaranteed suitability",
+      "buyerCheck": "Require a site survey and trial using actual traffic, surfaces, obstacles, shifts and cleaning standards."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Fimap combines a broad Italian professional-floorcare range with autonomous cleaning and training tools. Competitive evaluation should focus on model-level responsibility, real site productivity, software terms and local aftersales execution.",
+    "competitorSlugs": ["comac", "hako", "nilfisk", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "CB-1 2.0 is featured in Fimap's autonomous range",
+      "summary": "Fimap's current official materials present CB-1 as a collaborative autonomous floor-scrubbing platform for large facilities.",
+      "sourceIds": ["fimap-cb1"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fimap-company",
+      "title": "This Is Fimap",
+      "publisher": "Fimap",
+      "url": "https://www.fimap.com/en/fimap/2/this-is-fimap.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fimap-details",
+      "title": "Company Details",
+      "publisher": "Fimap",
+      "url": "https://www.fimap.com/en/company-details.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fimap-cb1",
+      "title": "FIMAP CB-1",
+      "publisher": "Fimap",
+      "url": "https://www.fimap.com/en/machine-range/autonomous-scrubbing-machines/95/cb-1.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fimap-products",
+      "title": "Fimap Professional Cleaning Machines",
+      "publisher": "Fimap",
+      "url": "https://www.fimap.com/en/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fimap-privacy",
+      "title": "Fimap Fleet Management Privacy Policy",
+      "publisher": "Fimap",
+      "url": "https://ffm.fimap.com/privacy",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T17:00:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T17:00:00+08:00"
+}

@@ -1,0 +1,166 @@
+{
+  "status": "published",
+  "slug": "cleanfix",
+  "name": "Cleanfix",
+  "aliases": ["Cleanfix AG", "Cleanfix Reinigungssysteme", "Cleanfix Reinigungssysteme AG"],
+  "legalName": "Cleanfix Reinigungssysteme AG",
+  "legalEntityNote": "Cleanfix Reinigungssysteme AG is the Swiss company named in the official imprint and the owner of the Cleanfix word mark and logo. Dealers, international ventures, importers and local service providers can be separate entities.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.cleanfix.com/en",
+  "headline": "Cleanfix Swiss cleaning machines, production and buyer checks",
+  "description": "A source-backed profile of Cleanfix Reinigungssysteme AG, its family-run Swiss operations, cleaning-machine portfolio, international reach, production depth and service checks.",
+  "metaDescription": "Cleanfix profile: Swiss company and trademark owner, cleaning machines and robots, Henau production, global channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Cleanfix. Company-level Swiss production and service statements do not establish the origin, seller, importer or warranty terms of every machine in every market.",
+  "headquarters": "Henau-Uzwil, St. Gallen, Switzerland",
+  "founded": "1976 as Siprotech; renamed Cleanfix Reinigungssysteme AG in 1995",
+  "heroImage": "/images/brands/cleanfix/hero-swiss-production-team.webp",
+  "heroImageAlt": "Cleanfix production team working on cleaning-machine manufacturing equipment in Switzerland",
+  "heroSourceUrl": "https://www.cleanfix.com/_default_upload_bucket/7440/image-thumb__7440__special_teaser/cleanfix_manufacturing_010@2x.jpg",
+  "logoImage": "/images/brands/cleanfix/logo.webp",
+  "logoImageAlt": "Cleanfix logo",
+  "logoSourceUrl": "https://www.cleanfix.com/static/images/logo.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/cleanfix/company-trademark-channel-boundary.svg",
+      "alt": "Cleanfix company trademark dealer importer and service responsibility boundary",
+      "caption": "The Swiss company owns the Cleanfix name and logo, while contracting, import and aftersales roles depend on the destination market."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/cleanfix/machine-origin-service-check.svg",
+      "alt": "Cleanfix machine origin configuration dealer and repair verification checklist",
+      "caption": "Swiss company-level production claims still require exact-machine origin, configuration, dealer and warranty verification."
+    }
+  ],
+  "ownership": {
+    "summary": "Cleanfix describes itself as a family-run company, while the official imprint identifies Cleanfix Reinigungssysteme AG as the website operator and owner of the Cleanfix word mark and logo. The reviewed official sources do not name a parent company or disclose the family's current shareholding structure."
+  },
+  "leadership": [
+    {
+      "name": "Mr. Loosli",
+      "role": "Founder of Siprotech",
+      "context": "Cleanfix's official milestones say Mr. Loosli founded Siprotech in Henau in 1976; the business adopted the Cleanfix Reinigungssysteme AG name in 1995."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Vacuum and spray-extraction cleaners",
+      "positioning": "Wet and dry vacuums and extraction machines cover routine professional cleaning and carpet or textile applications.",
+      "buyerRelevance": "Confirm filtration, electrical standard, tank capacity, accessories, chemical compatibility and consumable supply."
+    },
+    {
+      "name": "Scrubber dryers and single-disc machines",
+      "positioning": "Compact through ride-on scrubbers and single-disc platforms cover hard-floor cleaning and maintenance.",
+      "buyerRelevance": "Match floor, working width, brush or pad system, tanks, battery, drying and practical duty cycle."
+    },
+    {
+      "name": "Sweepers",
+      "positioning": "Manual and powered sweepers support indoor and outdoor debris removal.",
+      "buyerRelevance": "Specify debris, dust control, filtration, surface, gradient, storage and local wear-parts support."
+    },
+    {
+      "name": "Autonomous cleaning robots",
+      "positioning": "Robotic platforms extend Cleanfix's range into automated commercial floor cleaning.",
+      "buyerRelevance": "Evaluate navigation, safety, site preparation, reporting, connectivity, intervention rate and service response."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Cleanfix says it develops and manufactures cleaning machines at Henau-Uzwil in Switzerland.",
+      "scope": "Company-level statement about the Henau-Uzwil operation",
+      "buyerCheck": "Verify the exact model's manufacturer, assembly site, serial plate, origin and production date."
+    },
+    {
+      "evidence": "Cleanfix reports in-house plastic injection moulding, pump production, mechanical production and assembly.",
+      "scope": "Named capabilities at company level, not a claim that every part is made in-house",
+      "buyerCheck": "Ask which major assemblies and replacement parts for the quoted model are in-house, locally sourced or externally supplied."
+    },
+    {
+      "evidence": "Cleanfix says most components it does not make itself are sourced locally and describes solar-powered operations in Switzerland and India.",
+      "scope": "Company sustainability and sourcing statement",
+      "buyerCheck": "Request current model-level supplier, origin and environmental evidence if these attributes affect the tender."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Cleanfix says its machines are used in more than 90 countries.",
+      "scope": "Company-reported international reach",
+      "buyerCheck": "Confirm the authorized local dealer, importer, contracting seller and service territory."
+    },
+    {
+      "evidence": "Cleanfix publishes a dealer directory and service routes for consultation, spare parts, maintenance and repair.",
+      "scope": "Published channel and service framework; local execution can vary",
+      "buyerCheck": "Record technician coverage, parts stock, response time, workshop location and escalation route in the contract."
+    },
+    {
+      "evidence": "Under its Switzerland service section, Cleanfix states that service and repairs are provided on site or in its workshops and that service and repair support is guaranteed for at least ten years after purchase.",
+      "scope": "Cleanfix's published Service (Switzerland) statement; it is not evidence of a worldwide guarantee",
+      "buyerCheck": "For Switzerland, obtain written confirmation of the ten-year repair-support scope, exclusions, labor, travel and parts terms; in every other market, obtain the locally applicable service commitment."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Cleanfix differentiates through a broad professional-cleaning range, Swiss production capabilities and a repair-oriented service message. Buyers should translate those company claims into exact-machine origin evidence and a locally enforceable service agreement.",
+    "competitorSlugs": ["comac", "fimap", "karcher", "nilfisk"]
+  },
+  "developments": [
+    {
+      "date": "2023",
+      "title": "Cleanfix joins the Cordless Alliance System",
+      "summary": "The official milestones list Cleanfix's 2023 entry into the multi-brand CAS battery alliance.",
+      "sourceIds": ["cleanfix-milestones"]
+    },
+    {
+      "date": "1995",
+      "title": "Company adopts the Cleanfix name",
+      "summary": "Cleanfix says Siprotech changed its name to Cleanfix Reinigungssysteme AG in 1995.",
+      "sourceIds": ["cleanfix-milestones"]
+    },
+    {
+      "date": "1976",
+      "title": "Siprotech is founded in Henau",
+      "summary": "The official timeline identifies the 1976 founding by Mr. Loosli as the company's origin.",
+      "sourceIds": ["cleanfix-milestones"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "cleanfix-imprint",
+      "title": "Imprint",
+      "publisher": "Cleanfix",
+      "url": "https://www.cleanfix.com/en/impressum-en",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "cleanfix-inside",
+      "title": "Inside Cleanfix",
+      "publisher": "Cleanfix",
+      "url": "https://www.cleanfix.com/en/cleanfix_international/inside_cleanfix",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "cleanfix-milestones",
+      "title": "Cleanfix Milestones",
+      "publisher": "Cleanfix",
+      "url": "https://www.cleanfix.com/en/cleanfix_international/milestones",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "cleanfix-international",
+      "title": "Cleanfix International",
+      "publisher": "Cleanfix",
+      "url": "https://www.cleanfix.com/en/cleanfix_international",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "cleanfix-services",
+      "title": "Cleanfix Services",
+      "publisher": "Cleanfix",
+      "url": "https://www.cleanfix.com/en/services",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T17:00:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T17:00:00+08:00"
+}
