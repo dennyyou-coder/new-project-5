@@ -1,0 +1,156 @@
+{
+  "status": "published",
+  "slug": "gausium",
+  "name": "Gausium",
+  "aliases": ["Gaussian Robotics", "高仙机器人"],
+  "legalEntityNote": "Gausium is the commercial brand used for autonomous cleaning robots and software. Official privacy and software terms identify Shanghai Gaussian Automation Technology Development Co., Ltd. as a legal entity developing and producing the robot and services; regional affiliates, dealers, integrators, cloud services and warranty providers may be different entities.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://gausium.com/",
+  "headline": "Gausium brand, Shanghai operating entity, autonomous cleaning robots and channels",
+  "description": "A source-backed profile of Gausium, its Shanghai legal-entity boundary, autonomous commercial cleaning portfolio, software and global channel verification points.",
+  "metaDescription": "Gausium profile: brand and Shanghai entity boundary, cleaning robots, cloud software, global channels, support and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Gausium. Brand, legal entity, hardware production, software, data processing, dealer and warranty responsibilities must be verified for each market and contract.",
+  "headquarters": "Shanghai, China",
+  "founded": "2013",
+  "heroImage": "/images/brands/gausium/hero-autonomous-cleaning-contract-services.webp",
+  "heroImageAlt": "Gausium autonomous floor-cleaning robot operating in a commercial facility",
+  "heroSourceUrl": "https://gausium.com/wp-content/uploads/2025/05/contract-cleaning-homepage-1254x640.jpg",
+  "logoImage": "/images/brands/gausium/logo.webp",
+  "logoImageAlt": "Gausium logo",
+  "logoSourceUrl": "https://gausium.com/wp-content/uploads/2024/07/gausium-logotype.svg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/gausium/brand-entity-platform-boundary.svg",
+      "alt": "Gausium brand, Shanghai legal entity, platform and regional channel boundary",
+      "caption": "The Gausium brand, Shanghai legal entity, cloud platform and regional contracting or support entities are related but not interchangeable."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/gausium/site-software-service-check.svg",
+      "alt": "Gausium robot site, software, data and service buyer checklist",
+      "caption": "Autonomous-cleaning procurement should validate the machine, mapped site, software and data terms, integrator and service coverage together."
+    }
+  ],
+  "ownership": {
+    "summary": "Gausium is the market-facing brand. Reviewed official privacy and software documents identify Shanghai Gaussian Automation Technology Development Co., Ltd. as the relevant developer and producer, while the public materials reviewed do not establish one universal contracting, data or warranty entity for every country."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Autonomous scrubbers and multi-purpose floor robots",
+      "positioning": "Phantas, Mira, Marvel, Omnie and Scrubber 75 target commercial facilities of different sizes and operating complexity.",
+      "buyerRelevance": "Buyers should validate floor type, route complexity, cleaning modes, edge performance, safety, uptime and manual intervention requirements."
+    },
+    {
+      "name": "Robotic sweeping and vacuuming",
+      "positioning": "Beetle and Vacuum 40 extend the portfolio into industrial sweeping and indoor commercial vacuuming.",
+      "buyerRelevance": "Dust load, debris type, filtration, consumables, battery runtime and charging workflow require site trials."
+    },
+    {
+      "name": "Docking, cloud and application software",
+      "positioning": "Workstations, mobile water systems, cloud tools and apps support unattended operations and fleet management.",
+      "buyerRelevance": "Contracts should define software subscription, data hosting, cybersecurity, integrations, update support and ownership of performance data."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Gausium's official user privacy policy identifies Shanghai Gaussian Automation Technology Development Co., Ltd. as independently developing and producing the cleaning robot.",
+      "scope": "Robots and connected services covered by the reviewed privacy policy",
+      "buyerCheck": "Confirm the exact model's manufacturer, factory, country of origin, serial range and conformity documentation; the policy does not name a factory."
+    },
+    {
+      "evidence": "Gausium's official site describes the company as an autonomous cleaning robot manufacturer and provider.",
+      "scope": "Company-level commercial positioning, not a component or factory disclosure",
+      "buyerCheck": "Request a component-responsibility map for batteries, sensors, compute, chargers, docks and consumables."
+    },
+    {
+      "evidence": "The product portfolio combines robot hardware, docking stations, cloud platform and application software.",
+      "scope": "Current Gausium commercial cleaning solution stack",
+      "buyerCheck": "Separate hardware warranty, software availability, cloud-data processing, connectivity and third-party integration obligations in the agreement."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Gausium reports more than 6,500 customers across more than 70 countries and regions.",
+      "scope": "Company-reported global footprint on the current company profile",
+      "buyerCheck": "Verify current references in a comparable facility and identify the authorized local seller or integrator."
+    },
+    {
+      "evidence": "Gausium publishes global office contacts and a dealer-partnership route, with Shanghai identified as headquarters.",
+      "scope": "Official contact and partner network; coverage varies by country",
+      "buyerCheck": "Confirm the contracting entity, distributor authorization, commissioning team, spare-parts stock and escalation path for each site."
+    },
+    {
+      "evidence": "Gausium publishes support contacts and promotes training, integration and optimization for facility-service deployments.",
+      "scope": "Official support proposition; exact service levels depend on contract and territory",
+      "buyerCheck": "Define response time, remote diagnostics, on-site coverage, replacement units, software support and end-of-service terms in writing."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Gausium is a specialist autonomous-cleaning brand with a broad robot and software stack for professional facilities. Its value depends on reliable deployment and lifecycle support, making site validation, software and data terms, channel responsibility and service capacity as important as hardware specifications.",
+    "competitorSlugs": ["ecovacs", "nilfisk", "taski", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2024",
+      "title": "Gausium broadens its cleaning robot portfolio",
+      "summary": "The company profile records the introduction of Beetle and Omnie alongside Phantas, Scrubber and Vacuum products.",
+      "sourceIds": ["gausium-company-profile"]
+    },
+    {
+      "date": "2017",
+      "title": "Gausium introduces Scrubber 75",
+      "summary": "Gausium's official timeline says its first floor-cleaning robot was presented at CCE Shanghai in 2017.",
+      "sourceIds": ["gausium-company-profile"]
+    },
+    {
+      "date": "2013",
+      "title": "Gausium's business begins",
+      "summary": "Current official company materials identify 2013 as the founding year.",
+      "sourceIds": ["gausium-facility-services"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "gausium-company-profile",
+      "title": "Company Profile",
+      "publisher": "Gausium",
+      "url": "https://gausium.com/company-profile/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "gausium-products",
+      "title": "Autonomous Cleaning Products",
+      "publisher": "Gausium",
+      "url": "https://gausium.com/products/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "gausium-privacy",
+      "title": "Gausium User Privacy Policy",
+      "publisher": "Gausium",
+      "url": "https://gausium.com/th/privacy-policy/",
+      "publishedAt": "2024-03-28",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "gausium-contact",
+      "title": "Contact and Global Offices",
+      "publisher": "Gausium",
+      "url": "https://gausium.com/contact/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "gausium-facility-services",
+      "title": "Commercial Cleaning Robots: The New Standard in Facility Services",
+      "publisher": "Gausium",
+      "url": "https://gausium.com/pt/2026/06/16/commercial-cleaning-robots-facility-services/",
+      "publishedAt": "2026-06-16",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T02:50:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T02:50:00+08:00"
+}

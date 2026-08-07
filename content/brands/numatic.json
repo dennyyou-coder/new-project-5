@@ -1,0 +1,156 @@
+{
+  "status": "published",
+  "slug": "numatic",
+  "name": "Numatic",
+  "aliases": ["Numatic International", "Henry"],
+  "legalName": "Numatic International Limited",
+  "legalEntityNote": "Numatic International Limited is the UK company behind the Numatic professional-cleaning portfolio and Henry home-care products. Overseas subsidiaries and independent distributors provide regional sales and support, but they are not interchangeable with the UK manufacturer or with the seller and warranty entity named in a local contract.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://numatic.com/",
+  "headline": "Numatic company, UK manufacturing, professional cleaning and Henry floorcare",
+  "description": "A source-backed profile of Numatic International Limited, its UK manufacturing base, professional and home floorcare portfolio, distributor network and buyer verification points.",
+  "metaDescription": "Numatic profile: UK company identity, Henry and professional cleaning products, Chard manufacturing, distributors, support and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Numatic. Company-level UK manufacturing statements do not replace model, serial, seller, import, origin or warranty verification.",
+  "headquarters": "Chard, Somerset, United Kingdom",
+  "founded": "1969",
+  "heroImage": "/images/brands/numatic/hero-nx1k-scrubber-dryer-range.webp",
+  "heroImageAlt": "Numatic NX1K professional scrubber dryer range",
+  "heroSourceUrl": "https://numatic.com/wp-content/uploads/2024/01/NX1K-Product-trio.png",
+  "logoImage": "/images/brands/numatic/logo.webp",
+  "logoImageAlt": "Numatic logo",
+  "logoSourceUrl": "https://numatic.com/wp-content/uploads/numatic-logo-2026-1-1.svg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/numatic/company-channel-boundary.svg",
+      "alt": "Numatic company, subsidiary, distributor and contract boundary",
+      "caption": "Numatic International Limited is the UK company; regional subsidiaries, distributors, sellers and warranty providers require separate confirmation."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/numatic/model-origin-service-check.svg",
+      "alt": "Numatic model, origin, seller and service buyer checklist",
+      "caption": "The UK production footprint is strong evidence at company level, while each order still needs model, origin, seller and warranty checks."
+    }
+  ],
+  "ownership": {
+    "summary": "The reviewed official materials identify Numatic International Limited as the company behind the brand and provide no parent company. Numatic describes a UK head office and manufacturing plant supported by overseas distribution subsidiaries and dealers; those roles should remain separate in procurement."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Professional vacuums and dust control",
+      "positioning": "CleanCare and ProCare cover commercial wet-and-dry, cordless and specialist filtration applications.",
+      "buyerRelevance": "Filtration class, accessories, duty cycle, battery platform and local parts support should be matched to the worksite."
+    },
+    {
+      "name": "Scrubber dryers and floor machines",
+      "positioning": "FloorCare includes compact, walk-behind and ride-on machines, including the NX1K battery range.",
+      "buyerRelevance": "Buyers should compare productivity, floor type, battery warranty, charging, consumables, training and service response."
+    },
+    {
+      "name": "Janitorial systems and home floorcare",
+      "positioning": "VersaCare trolleys and systems complement the Henry-led HomeCare vacuum range.",
+      "buyerRelevance": "Commercial and consumer lines may use different channels, terms and support arrangements, so the quoted SKU and responsible entity matter."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Numatic states that its professional equipment is designed, engineered and made in the UK.",
+      "scope": "Current company-level statement on the official About page",
+      "buyerCheck": "Verify that the exact model and serial range are covered and obtain country-of-origin and conformity documents for the destination market."
+    },
+    {
+      "evidence": "Numatic's 2024 modern-slavery statement describes its Chard head office and sole manufacturing plant, with parts assembled into final products at the UK site.",
+      "scope": "Numatic International Limited structure and supply chain described for 2024",
+      "buyerCheck": "Request the exact product's factory record, critical-component origin and supplier-continuity information rather than assuming every component is UK-made."
+    },
+    {
+      "evidence": "Numatic's history says it acquired the Chard location in 1990 and continued expanding production facilities there.",
+      "scope": "Company history and site development, not a current SKU-level origin certificate",
+      "buyerCheck": "Tie the purchased model to current production and shipping records, especially where regional variants or sourced components are involved."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Numatic publishes a supplier locator and says its distributor network covers many countries.",
+      "scope": "Official international dealer and distributor route to market",
+      "buyerCheck": "Confirm current authorization, contracting entity, import responsibility and warranty coverage for the exact country and product."
+    },
+    {
+      "evidence": "Numatic's history records distribution subsidiaries in France, South Africa, Germany, the Netherlands, Switzerland, Portugal and Spain.",
+      "scope": "Named subsidiaries and dates disclosed in the official company history",
+      "buyerCheck": "Identify whether the quotation is from a subsidiary or independent dealer and record who owns service and warranty obligations."
+    },
+    {
+      "evidence": "Numatic links customers to product documentation, training and support services, including Nu-Assist and Clean 360.",
+      "scope": "Official service resources; availability varies by product and market",
+      "buyerCheck": "Obtain local response times, technician coverage, parts stock, training scope and escalation contacts in writing."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Numatic spans professional vacuums, floor machines, janitorial systems and the widely recognized Henry home-care line, supported by a concentrated UK production base. Buyers benefit from portfolio breadth but should verify regional seller, service and warranty responsibility separately.",
+    "competitorSlugs": ["karcher", "nilfisk", "taski", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "Numatic presents the NX1K professional scrubber-dryer range",
+      "summary": "The current NX1K page positions lithium-powered scrubber dryers within Numatic's professional FloorCare portfolio.",
+      "sourceIds": ["numatic-nx1k"]
+    },
+    {
+      "date": "1990",
+      "title": "Numatic acquires its Chard production location",
+      "summary": "The official history describes the move into the Chard site and continuing expansion of its production facilities.",
+      "sourceIds": ["numatic-history"]
+    },
+    {
+      "date": "1969",
+      "title": "Numatic begins in Crewkerne",
+      "summary": "Numatic's official history traces the company to a six-person operation producing an early commercial vacuum design.",
+      "sourceIds": ["numatic-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "numatic-about",
+      "title": "About Numatic International",
+      "publisher": "Numatic International Limited",
+      "url": "https://numatic.com/about-numatic/about-numatic-international/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "numatic-history",
+      "title": "Company History",
+      "publisher": "Numatic International Limited",
+      "url": "https://numatic.com/about-numatic/company-history/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "numatic-modern-slavery",
+      "title": "Anti-slavery and Human Trafficking Statement 2024",
+      "publisher": "Numatic International Limited",
+      "url": "https://numatic.com/wp-content/uploads/Numatic-Anti-slavery-and-human-trafficking-statement-2024.pdf",
+      "publishedAt": "2024",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "numatic-nx1k",
+      "title": "NX1K Next Generation Lithium Power",
+      "publisher": "Numatic International Limited",
+      "url": "https://numatic.com/nx1k/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "numatic-supplier-locator",
+      "title": "Supplier Locator",
+      "publisher": "Numatic International Limited",
+      "url": "https://numatic.com/contact/supplier-locator/",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T02:50:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T02:50:00+08:00"
+}

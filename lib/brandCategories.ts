@@ -172,6 +172,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "miele",
       "mova",
       "narwal",
+      "numatic",
       "oreck",
       "panasonic",
       "philips-home-appliances",
@@ -216,8 +217,28 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     title: "Commercial & Industrial Cleaning Brand Intelligence",
     description:
       "Verified profiles of commercial and industrial cleaning brands, focused on floorcare systems, autonomous equipment, pressure washing and professional distribution models.",
-    brandSlugs: ["ecovacs", "hako", "karcher", "nilfisk", "oreck", "taski", "tennant"],
-    primaryBrandSlugs: ["hako", "karcher", "nilfisk", "taski", "tennant"]
+    brandSlugs: [
+      "ecovacs",
+      "gausium",
+      "hako",
+      "ipc",
+      "karcher",
+      "nilfisk",
+      "numatic",
+      "oreck",
+      "taski",
+      "tennant"
+    ],
+    primaryBrandSlugs: [
+      "gausium",
+      "hako",
+      "ipc",
+      "karcher",
+      "nilfisk",
+      "numatic",
+      "taski",
+      "tennant"
+    ]
   },
   {
     slug: "home-appliances-small-appliances",
