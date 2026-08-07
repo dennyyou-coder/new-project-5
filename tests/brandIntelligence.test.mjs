@@ -702,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the seventy-three published profiles and approved article relationships", () => {
+test("the release gate validates the seventy-six published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -721,6 +721,8 @@ test("the release gate validates the seventy-three published profiles and approv
     "black-decker",
     "bosch-home-appliances",
     "bosch-power-tools",
+    "braun-household",
+    "breville-sage",
     "craftsman",
     "delonghi",
     "dewalt",
@@ -784,7 +786,8 @@ test("the release gate validates the seventy-three published profiles and approv
     "vax",
     "whirlpool",
     "worx",
-    "wybot"
+    "wybot",
+    "xiaomi-mijia"
   ];
   const expectedPrimaryBrands = {
     "aiper-fluidra-pool-robotics-alliance": ["aiper", "fluidra"],
@@ -963,7 +966,7 @@ test("the release gate validates the seventy-three published profiles and approv
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 73);
+  assert.equal(loadedProfiles.length, 76);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1029,7 +1032,7 @@ test("the release gate validates the seventy-three published profiles and approv
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 73);
+  assert.equal(profiles.length, 76);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1048,6 +1051,82 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("home-appliance batch seven profiles publish with regional brand and operating boundaries", async () => {
+  const newSlugs = ["braun-household", "breville-sage", "xiaomi-mijia"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+  const membershipsFor = (slug) => categories
+    .filter(({ profiles }) => profiles.some((candidate) => candidate.slug === slug))
+    .map(({ category }) => category.slug);
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published", `${slug} must be published`);
+    assert.equal(candidate.schemaEntityType, "Brand", `${slug} must remain a brand entity`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.match(candidate.heroSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(
+      candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)),
+      `${slug} must use dedicated content visuals`
+    );
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.ok(logoMetadata.width >= 600, `${slug} logo width`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+
+    const taggedArticles = realArticles.filter(
+      (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+    );
+    assert.equal(taggedArticles.length, 0, `${slug} must not modify ownership article relationships`);
+  }
+
+  assert.match(profilesBySlug.get("xiaomi-mijia").ownership.summary, /Xiaomi Corporation/i);
+  assert.match(profilesBySlug.get("xiaomi-mijia").legalEntityNote, /ecosystem|manufacturer/i);
+  assert.match(profilesBySlug.get("breville-sage").ownership.summary, /Breville Group Limited|BRG Group/i);
+  assert.match(profilesBySlug.get("breville-sage").legalEntityNote, /United Kingdom|Europe|regional/i);
+  assert.match(profilesBySlug.get("braun-household").ownership.summary, /De.?Longhi.*perpetual licen[cs]e/i);
+  assert.match(profilesBySlug.get("braun-household").legalEntityNote, /P&G|Procter.*Gamble/i);
+  assert.match(profilesBySlug.get("braun-household").legalEntityNote, /personal care/i);
+
+  assert.deepEqual(membershipsFor("xiaomi-mijia"), [
+    "floorcare-home-cleaning",
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("breville-sage"), [
+    "home-appliances-small-appliances"
+  ]);
+  assert.deepEqual(membershipsFor("braun-household"), [
+    "home-appliances-small-appliances"
+  ]);
+  assert.equal(getBrandCategoryForProfile("xiaomi-mijia")?.slug, "floorcare-home-cleaning");
+  assert.equal(
+    getBrandCategoryForProfile("breville-sage")?.slug,
+    "home-appliances-small-appliances"
+  );
+  assert.equal(
+    getBrandCategoryForProfile("braun-household")?.slug,
+    "home-appliances-small-appliances"
+  );
 });
 
 test("home-appliance batch six profiles publish independently with verified entity boundaries", async () => {
