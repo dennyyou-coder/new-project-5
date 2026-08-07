@@ -4,7 +4,7 @@
   "name": "Fimap",
   "aliases": ["FIMAP", "Fimap SpA", "Fimap S.p.A."],
   "legalName": "Fimap S.p.A.",
-  "legalEntityNote": "Fimap S.p.A. is the Italian company named in the official company details and site footer. A model document may identify another manufacturer or agent for a specific machine, so seller, manufacturer, importer and warranty roles require model-level verification.",
+  "legalEntityNote": "Fimap S.p.A. is the Italian company named in the official company details and site footer. Fimap's official privacy policy says the company belongs to a group controlled by Comac S.p.A.; this does not make the two legal entities interchangeable. A model document may identify another manufacturer or agent for a specific machine, so seller, manufacturer, importer and warranty roles require model-level verification.",
   "schemaEntityType": "Organization",
   "officialWebsite": "https://www.fimap.com/en/",
   "headline": "Fimap cleaning machines, Italian production and procurement checks",
@@ -34,7 +34,8 @@
     }
   ],
   "ownership": {
-    "summary": "Official Fimap materials identify Fimap S.p.A. as the company behind the brand. The reviewed official sources do not name a parent company and do not establish that Comac S.p.A. owns Fimap; model-specific manufacturing references should not be converted into a group-level ownership conclusion."
+    "summary": "Official Fimap materials identify Fimap S.p.A. as the company behind the brand. Fimap's privacy policy says Fimap belongs to a group controlled by Comac S.p.A. This supports a group-control relationship but does not disclose the exact direct shareholding chain; model-specific manufacturing references remain separate evidence and should not be used to infer the manufacturer of every Fimap machine.",
+    "parentCompany": "Comac S.p.A. (group control disclosed; direct shareholding chain not disclosed)"
   },
   "leadership": [],
   "productPortfolio": [
@@ -132,6 +133,13 @@
       "title": "Fimap Professional Cleaning Machines",
       "publisher": "Fimap",
       "url": "https://www.fimap.com/en/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fimap-privacy",
+      "title": "Fimap Fleet Management Privacy Policy",
+      "publisher": "Fimap",
+      "url": "https://ffm.fimap.com/privacy",
       "accessedAt": "2026-08-08"
     }
   ],

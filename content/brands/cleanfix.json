@@ -94,9 +94,9 @@
       "buyerCheck": "Record technician coverage, parts stock, response time, workshop location and escalation route in the contract."
     },
     {
-      "evidence": "Cleanfix states that service and repairs are provided on site or in its workshops and that service and repair support is guaranteed for at least ten years after purchase.",
-      "scope": "Company service statement; contractual and geographic conditions must be checked",
-      "buyerCheck": "Obtain the applicable market warranty and written confirmation of ten-year repair support, exclusions, labor, travel and parts terms."
+      "evidence": "Under its Switzerland service section, Cleanfix states that service and repairs are provided on site or in its workshops and that service and repair support is guaranteed for at least ten years after purchase.",
+      "scope": "Cleanfix's published Service (Switzerland) statement; it is not evidence of a worldwide guarantee",
+      "buyerCheck": "For Switzerland, obtain written confirmation of the ten-year repair-support scope, exclusions, labor, travel and parts terms; in every other market, obtain the locally applicable service commitment."
     }
   ],
   "competitivePosition": {

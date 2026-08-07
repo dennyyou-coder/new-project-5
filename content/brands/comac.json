@@ -4,7 +4,7 @@
   "name": "Comac",
   "aliases": ["COMAC", "Comac SpA", "Comac S.p.A."],
   "legalName": "Comac S.p.A.",
-  "legalEntityNote": "Comac S.p.A. is the Italian company identified by the official company-data page. Distributors, destination-market importers, service partners and contracting sellers can hold separate responsibilities.",
+  "legalEntityNote": "Comac S.p.A. is the Italian company identified by the official company-data page and the controlling company named in the official Comac and Fimap privacy materials. Distributors, destination-market importers, service partners and contracting sellers can hold separate responsibilities.",
   "schemaEntityType": "Organization",
   "officialWebsite": "https://www.comac.it/en/",
   "headline": "Comac professional cleaning machines, Italian company and buyer checks",
@@ -18,7 +18,7 @@
   "heroSourceUrl": "https://www.comac.it/assets/repository/img/prodotti/top/1712762659145-selfy_1_3840x1600.webp",
   "logoImage": "/images/brands/comac/logo.webp",
   "logoImageAlt": "Comac logo",
-  "logoSourceUrl": "https://www.comac.it/assets/img/logo.svg",
+  "logoSourceUrl": "https://www.comac.it/assets/repository/docs/catalogo/Comac-Product-Catalog-Solutions-for-professional-cleaning-and-sanitizing.pdf",
   "contentVisuals": [
     {
       "placement": "ownership",
@@ -34,7 +34,7 @@
     }
   ],
   "ownership": {
-    "summary": "Official materials identify Comac S.p.A. as the company behind the Comac professional-cleaning portfolio. The reviewed official sources do not name a parent company, and they do not establish an ownership relationship with Fimap S.p.A.; the two legal entities should therefore not be merged or treated as parent and subsidiary."
+    "summary": "Official materials identify Comac S.p.A. as the company behind the Comac professional-cleaning portfolio. Comac's privacy policy refers to a group controlled by Comac S.p.A., and Fimap's official privacy policy says Fimap belongs to that controlled group. The reviewed sources do not name a parent above Comac or disclose the exact direct shareholding chain, so Comac and Fimap remain separate legal entities even though the control relationship is disclosed."
   },
   "leadership": [
     {
@@ -149,6 +149,13 @@
       "title": "Comac Worldwide",
       "publisher": "Comac",
       "url": "https://www.comac.it/en/contacts/comac-worldwide",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "comac-privacy",
+      "title": "Privacy Policy",
+      "publisher": "Comac",
+      "url": "https://www.comac.it/en/privacy",
       "accessedAt": "2026-08-08"
     }
   ],

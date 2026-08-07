@@ -1093,7 +1093,7 @@ test("commercial-cleaning batch fifteen publishes Cleanfix, Comac and Fimap with
     assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
     assert.match(candidate.logoSourceUrl, /^https:\/\//);
     assert.match(candidate.heroSourceUrl, /^https:\/\//);
-    assert.equal(candidate.ownership.parentCompany, undefined);
+    if (slug !== "fimap") assert.equal(candidate.ownership.parentCompany, undefined);
     assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
     assert.ok(candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)));
 
@@ -1125,6 +1125,7 @@ test("commercial-cleaning batch fifteen publishes Cleanfix, Comac and Fimap with
   assert.equal(profilesBySlug.get("cleanfix").legalName, "Cleanfix Reinigungssysteme AG");
   assert.equal(profilesBySlug.get("comac").legalName, "Comac S.p.A.");
   assert.equal(profilesBySlug.get("fimap").legalName, "Fimap S.p.A.");
+  assert.match(profilesBySlug.get("fimap").ownership.parentCompany, /Comac S\.p\.A\./);
 });
 
 test("commercial-cleaning batch fourteen publishes PUDU Robotics, LionsBot and Dulevo without article relationships", async () => {
