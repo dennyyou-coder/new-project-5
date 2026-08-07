@@ -1,0 +1,162 @@
+{
+  "status": "published",
+  "slug": "pudu-robotics",
+  "name": "PUDU Robotics",
+  "aliases": ["PUDU", "Pudu Robotics", "Pudu Tech"],
+  "legalName": "Shenzhen Pudu Technology Co., Ltd.",
+  "legalEntityNote": "PUDU Robotics is the commercial identity used by Shenzhen Pudu Technology Co., Ltd. and its subsidiaries and affiliates. Regional sales companies, distributors, integrators, cloud-service terms, factories and warranty providers may carry different responsibilities.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.pudurobotics.com/en/",
+  "headline": "PUDU Robotics commercial-cleaning systems, company scope and deployment checks",
+  "description": "A source-backed profile of PUDU Robotics, its named Shenzhen legal entity, autonomous cleaning portfolio, reported factory and service network, and site-level procurement checks.",
+  "metaDescription": "PUDU Robotics profile: legal entity, CC1 and MT1 cleaning robots, factories, global service network, software and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with PUDU Robotics. Company-level factory, shipment and service-network statements do not identify the manufacturer, seller, data controller or warranty provider for every robot and market.",
+  "headquarters": "Shenzhen and Hong Kong, China (company-reported global headquarters)",
+  "founded": "2016",
+  "heroImage": "/images/brands/pudu-robotics/hero-cc1-pro-retail-cleaning.webp",
+  "heroImageAlt": "PUDU CC1 Pro autonomous cleaning robot operating in a retail aisle",
+  "heroSourceUrl": "https://cdn.pudutech.com/official-website/product/CC1Pro/S5-1.webp",
+  "logoImage": "/images/brands/pudu-robotics/logo.webp",
+  "logoImageAlt": "PUDU Robotics logo",
+  "logoSourceUrl": "https://www.pudurobotics.com/logo.svg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/pudu-robotics/entity-system-boundary.svg",
+      "alt": "PUDU Robotics brand, legal entity and regional deployment responsibility boundary",
+      "caption": "PUDU is the commercial brand; the named Shenzhen company, regional seller, cloud terms and service provider still need to be identified for the contract."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/pudu-robotics/site-software-service-check.svg",
+      "alt": "PUDU Robotics site software configuration and lifecycle verification checklist",
+      "caption": "Commercial-robot acceptance should combine a site trial with configuration, digital-service and lifecycle commitments."
+    }
+  ],
+  "ownership": {
+    "summary": "Reviewed official materials identify Shenzhen Pudu Technology Co., Ltd. and its subsidiaries and affiliates as the company scope behind PUDU products and services. They describe multiple financing rounds but do not disclose a parent company or a complete current control table, so investment history is not treated as proof of parent ownership."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "CC1 and CC1 Pro autonomous cleaning robots",
+      "positioning": "Four-in-one commercial floorcare platforms combining sweeping, scrubbing, vacuuming and dust mopping with navigation, reporting and optional docking.",
+      "buyerRelevance": "Validate floor coverage, edge performance, water handling, dock requirements, elevator integration and acceptance metrics at the actual site."
+    },
+    {
+      "name": "MT1 cleaning-robot family",
+      "positioning": "AI-enabled sweepers and vacuum variants for large commercial, industrial and mixed indoor or semi-outdoor environments.",
+      "buyerRelevance": "Match debris type, surface, aisle clearance, weather limits, filtration, runtime and charging strategy to the duty cycle."
+    },
+    {
+      "name": "PUDU Link and fleet services",
+      "positioning": "Software supports robot status, task management, operational reporting and connected multi-site deployments.",
+      "buyerRelevance": "Document subscription, hosting region, user access, cybersecurity, retention, update and offboarding terms."
+    },
+    {
+      "name": "Delivery, industrial and embodied-AI robots",
+      "positioning": "The wider company portfolio spans service delivery, industrial delivery and general embodied-AI products beyond cleaning.",
+      "buyerRelevance": "Do not assume that a regional partner accredited for one PUDU product line can supply and support every other line."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "PUDU's current company page reports three factories in Jiangsu, Zhejiang and Jiangxi.",
+      "scope": "Company-reported current factory network",
+      "buyerCheck": "Confirm the producing entity, factory, serial range and country of origin for the ordered model instead of assigning every robot to the group network."
+    },
+    {
+      "evidence": "The company page describes proprietary research across navigation, multi-robot scheduling, motion control and integrated robot modules.",
+      "scope": "Company technology capability",
+      "buyerCheck": "Request the applicable safety, radio, cybersecurity and product-compliance documents for the destination market."
+    },
+    {
+      "evidence": "Official CC1 Pro and MT1 pages define different cleaning modes, sensors, capacities, accessories and docking requirements.",
+      "scope": "Product-family specifications",
+      "buyerCheck": "Freeze the exact model, hardware revision, dock, consumables, software package and optional accessories in the purchase order."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "PUDU reports a global network of overseas subsidiaries and hundreds of service centers across dozens of countries and regions.",
+      "scope": "Company-reported global distribution and service footprint",
+      "buyerCheck": "Identify the authorized local seller and the service center that will hold parts and meet response-time commitments for the site."
+    },
+    {
+      "evidence": "PUDU markets cleaning robots to retail, hospitality, healthcare, transport, education, manufacturing and property-service environments.",
+      "scope": "Target applications, not guaranteed site performance",
+      "buyerCheck": "Run a representative pilot and record measurable acceptance criteria for traffic, surfaces, obstacles, edges and operator intervention."
+    },
+    {
+      "evidence": "PUDU's privacy policy applies to PUDU Link and related platforms offered by the named company and its affiliates.",
+      "scope": "Digital-service and personal-information terms",
+      "buyerCheck": "Have IT and legal teams verify the contracting entity, data locations, sub-processors, access controls, retention and deletion process."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: PUDU brings commercial-cleaning products into a broad service-robot platform with a large reported deployment and service footprint. Buyer value depends on system execution rather than the robot alone: site fit, docking, networking, data terms, local technician capacity and software continuity should be contracted together.",
+    "competitorSlugs": ["gausium", "lionsbot", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2026-03",
+      "title": "PUDU launches the BG1 cleaning series",
+      "summary": "The company timeline records the launch of AI-native large scrubber-dryer robots as an expansion of its cleaning portfolio.",
+      "sourceIds": ["pudu-company"]
+    },
+    {
+      "date": "2025-05-27",
+      "title": "PUDU introduces CC1 Pro",
+      "summary": "The official product record positions CC1 Pro as an AI-powered four-in-one autonomous commercial cleaner.",
+      "sourceIds": ["pudu-cc1-pro"]
+    },
+    {
+      "date": "2021-11",
+      "title": "PUDU launches the original CC1 cleaning robot",
+      "summary": "PUDU's company timeline records its move into commercial cleaning with the CC1 launch.",
+      "sourceIds": ["pudu-company"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "pudu-company",
+      "title": "About PUDU",
+      "publisher": "PUDU Robotics",
+      "url": "https://www.pudurobotics.com/en/company",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "pudu-privacy",
+      "title": "Privacy Policy",
+      "publisher": "PUDU Robotics",
+      "url": "https://www.pudurobotics.com/it/privacy",
+      "publishedAt": "2025-04-10",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "pudu-cc1-pro",
+      "title": "PUDU CC1 Pro",
+      "publisher": "PUDU Robotics",
+      "url": "https://www.pudurobotics.com/en/products/cc1-pro",
+      "publishedAt": "2025-05-27",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "pudu-mt1",
+      "title": "PUDU MT1 AI Powered Robotic Sweeper",
+      "publisher": "PUDU Robotics",
+      "url": "https://www.pudurobotics.com/en/products/mt1",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "pudu-downloads",
+      "title": "PUDU Product and Company Downloads",
+      "publisher": "PUDU Robotics",
+      "url": "https://www.pudurobotics.com/en/download",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T06:21:18+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T06:21:18+08:00"
+}

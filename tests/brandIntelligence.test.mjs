@@ -702,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the ninety-two published profiles and approved article relationships", () => {
+test("the release gate validates the ninety-five published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -731,6 +731,7 @@ test("the release gate validates the ninety-two published profiles and approved 
     "dji-romo",
     "dreame",
     "dremel",
+    "dulevo",
     "dyson",
     "ecovacs",
     "ego-power-plus",
@@ -764,6 +765,7 @@ test("the release gate validates the ninety-two published profiles and approved 
     "kobalt",
     "lawnmaster",
     "lg-home-appliances",
+    "lionsbot",
     "makita",
     "mammotion",
     "maytronics",
@@ -780,6 +782,7 @@ test("the release gate validates the ninety-two published profiles and approved 
     "pentair",
     "philips-home-appliances",
     "polaris",
+    "pudu-robotics",
     "roborock",
     "rowenta",
     "russell-hobbs",
@@ -982,7 +985,7 @@ test("the release gate validates the ninety-two published profiles and approved 
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 92);
+  assert.equal(loadedProfiles.length, 95);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1048,7 +1051,7 @@ test("the release gate validates the ninety-two published profiles and approved 
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 92);
+  assert.equal(profiles.length, 95);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1067,6 +1070,59 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("commercial-cleaning batch fourteen publishes PUDU Robotics, LionsBot and Dulevo without article relationships", async () => {
+  const newSlugs = ["dulevo", "lionsbot", "pudu-robotics"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published");
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.match(candidate.heroSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)));
+
+    const logoMetadata = await sharp(path.join(process.cwd(), "public", candidate.logoImage)).metadata();
+    const heroMetadata = await sharp(path.join(process.cwd(), "public", candidate.heroImage)).metadata();
+    assert.equal(logoMetadata.format, "webp");
+    assert.equal(logoMetadata.hasAlpha, true);
+    assert.ok(logoMetadata.width >= 600);
+    assert.equal(heroMetadata.format, "webp");
+    assert.equal(heroMetadata.width, 1600);
+    assert.equal(heroMetadata.height, 1000);
+
+    assert.deepEqual(
+      realArticles.filter(
+        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+      ),
+      [],
+      `${slug} must not create article relationships`
+    );
+    assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
+    assert.deepEqual(
+      categories
+        .filter(({ profiles }) => profiles.some((profile) => profile.slug === slug))
+        .map(({ category }) => category.slug),
+      ["commercial-industrial-cleaning"]
+    );
+  }
+
+  assert.equal(profilesBySlug.get("pudu-robotics").schemaEntityType, "Brand");
+  assert.equal(profilesBySlug.get("lionsbot").schemaEntityType, "Organization");
+  assert.equal(profilesBySlug.get("dulevo").schemaEntityType, "Brand");
+  assert.match(profilesBySlug.get("pudu-robotics").legalEntityNote, /Shenzhen Pudu Technology/i);
+  assert.match(profilesBySlug.get("lionsbot").legalName, /LionsBot International Pte/i);
+  assert.match(profilesBySlug.get("dulevo").ownership.parentCompany, /FAYAT/i);
 });
 
 test("commercial-cleaning batch thirteen publishes Numatic, Gausium and IPC without article relationships", async () => {

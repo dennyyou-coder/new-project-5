@@ -1,0 +1,163 @@
+{
+  "status": "published",
+  "slug": "dulevo",
+  "name": "Dulevo",
+  "aliases": ["Dulevo Fayat", "Dulevo International", "Dulevo International S.p.A."],
+  "legalName": "Dulevo International S.p.A.",
+  "legalEntityNote": "Dulevo is operated by the Italian company Dulevo International S.p.A. within FAYAT Group and FAYAT Environmental Solutions. Regional Dulevo companies, dealers, vehicle homologation parties and service organizations can hold separate responsibilities.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.dulevo.com/",
+  "headline": "Dulevo industrial and urban sweepers, FAYAT ownership and buyer checks",
+  "description": "A source-backed profile of Dulevo International, its FAYAT ownership, Italian production, industrial and street-cleaning portfolio, global dealer network and machine-level checks.",
+  "metaDescription": "Dulevo profile: FAYAT ownership, Italian company, industrial and street sweepers, scrubbers, production, dealers and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dulevo or FAYAT. Group ownership and company-level production statements do not establish the origin, homologation, importer or warranty terms of every machine.",
+  "headquarters": "Fontanellato, Parma, Italy",
+  "founded": "1976 origin; Dulevo International established in 1991",
+  "heroImage": "/images/brands/dulevo/hero-dulevo-6000-street-sweeper.webp",
+  "heroImageAlt": "Dulevo 6000 ride-on street sweeper",
+  "heroSourceUrl": "https://www.dulevo.com/media/dgsldmrr/6000eu6.png",
+  "logoImage": "/images/brands/dulevo/logo.webp",
+  "logoImageAlt": "Dulevo FAYAT Group logo",
+  "logoSourceUrl": "https://www.dulevo.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/dulevo/fayat-dulevo-entity-boundary.svg",
+      "alt": "FAYAT Group Dulevo International and regional service responsibility boundary",
+      "caption": "FAYAT owns Dulevo, but the Italian operating company, regional seller, homologation party and warranty provider remain separate roles."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/dulevo/machine-market-service-check.svg",
+      "alt": "Dulevo application configuration compliance and lifecycle verification checklist",
+      "caption": "Industrial and road-cleaning machines need application, configuration, compliance and service checks at model and destination-market level."
+    }
+  ],
+  "ownership": {
+    "summary": "Dulevo's official history says FAYAT Group acquired the company in 2021. Dulevo now operates within FAYAT Environmental Solutions while Dulevo International S.p.A. remains the named Italian company on the official site and privacy materials.",
+    "parentCompany": "FAYAT Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Industrial sweepers",
+      "positioning": "Walk-behind and ride-on machines for factories, logistics, heavy industry and dusty working environments.",
+      "buyerRelevance": "Specify debris, dust class, filtration, aisle width, gradient, unloading method, power source and working hours."
+    },
+    {
+      "name": "Street sweepers",
+      "positioning": "Compact and high-capacity municipal sweepers spanning electric, diesel and alternative-fuel configurations.",
+      "buyerRelevance": "Verify road homologation, emissions stage, noise, axle load, driving licence, seasonal duty and local parts support."
+    },
+    {
+      "name": "Scrubber-dryers and combination machines",
+      "positioning": "BOOST scrubbers and combined sweep-scrub platforms cover commercial and industrial floorcare duties.",
+      "buyerRelevance": "Match floor type, cleaning width, tanks, chemical compatibility, brush system, drying result and practical productivity."
+    },
+    {
+      "name": "Street washers and specialist vehicles",
+      "positioning": "Road-washing and specialist variants extend the portfolio into urban sanitation and municipal operations.",
+      "buyerRelevance": "Treat chassis, attachments, water systems, vehicle approvals and service requirements as a configured machine rather than a generic brand purchase."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Dulevo's 50-year company page describes a 20,000-square-metre production footprint and traces company-owned production to Italy.",
+      "scope": "Company-reported Dulevo production footprint",
+      "buyerCheck": "Confirm the manufacturer, assembly site, vehicle identification, origin and production date for the exact machine."
+    },
+    {
+      "evidence": "The company history says Dulevo acquired Tecnosystem in 2020 as a production hub for truck-mounted products.",
+      "scope": "Named truck-mounted production capability",
+      "buyerCheck": "Do not extend that statement to compact, industrial or scrubber product families without model documentation."
+    },
+    {
+      "evidence": "The official Dulevo 6000 page publishes machine-level dimensions, power supply, filtration and performance specifications.",
+      "scope": "Dulevo 6000 product family",
+      "buyerCheck": "Freeze the exact engine, emissions stage, brushes, options, homologation and destination-market documentation in the tender."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Dulevo reports operations in more than 80 countries and positions itself across commercial, industrial and urban cleaning.",
+      "scope": "Company-reported international reach",
+      "buyerCheck": "Identify the authorized local dealer, importing entity and service territory for the machine before award."
+    },
+    {
+      "evidence": "The official site provides dealer-finding, assistance, product registration, used-equipment and rental routes.",
+      "scope": "Dulevo's published channel and service framework",
+      "buyerCheck": "Confirm which services are actually available locally and record technician coverage, parts stock, response time and training."
+    },
+    {
+      "evidence": "Dulevo says its machines serve municipal authorities as well as cement, mining and other demanding industrial applications.",
+      "scope": "Reference applications rather than guaranteed suitability",
+      "buyerCheck": "Require an application survey, demonstration and duty-cycle calculation using the buyer's debris, dust, route and climate."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Dulevo combines specialist sweeping technology with a broad industrial and municipal vehicle range and FAYAT's road-equipment context. Procurement risk sits in configuration and local execution: emissions, homologation, attachments, filtration, application duty and dealer support can change the delivered result materially.",
+    "competitorSlugs": ["hako", "ipc", "nilfisk", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2026",
+      "title": "Dulevo marks 50 years",
+      "summary": "The company published a 50-year history covering its production, international development and current FAYAT position.",
+      "sourceIds": ["dulevo-50"]
+    },
+    {
+      "date": "2021",
+      "title": "FAYAT Group acquires Dulevo",
+      "summary": "Dulevo's official history identifies the FAYAT acquisition as a major ownership and operating milestone.",
+      "sourceIds": ["dulevo-50", "dulevo-sustainability"]
+    },
+    {
+      "date": "1976",
+      "title": "The first Dulevo sweeper prototype is developed",
+      "summary": "Dulevo traces its origin to a Parma engineering team's first industrial-sweeper prototype.",
+      "sourceIds": ["dulevo-50"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "dulevo-50",
+      "title": "50 Years on the Road, Together",
+      "publisher": "Dulevo",
+      "url": "https://www.dulevo.com/50-years/",
+      "publishedAt": "2026",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "dulevo-values",
+      "title": "Dulevo Values and Global Presence",
+      "publisher": "Dulevo",
+      "url": "https://www.dulevo.com/about-us/our-values/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "dulevo-6000",
+      "title": "Dulevo 6000 Street Sweeper",
+      "publisher": "Dulevo",
+      "url": "https://www.dulevo.com/products/street-sweepers/dulevo-6000/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "dulevo-privacy",
+      "title": "Privacy Policy",
+      "publisher": "Dulevo",
+      "url": "https://www.dulevo.com/privacy-policy/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "dulevo-sustainability",
+      "title": "Dulevo Sustainability Report 2024",
+      "publisher": "Dulevo",
+      "url": "https://www.dulevo.com/media/j1ak4rhd/dulevo_report2024_eng_s.pdf",
+      "publishedAt": "2025",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T06:21:18+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T06:21:18+08:00"
+}

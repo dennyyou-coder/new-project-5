@@ -1,0 +1,194 @@
+{
+  "status": "published",
+  "slug": "lionsbot",
+  "name": "LionsBot",
+  "aliases": ["Lionsbot", "LionsBot International", "LionsBot International Pte. Ltd."],
+  "legalName": "LionsBot International Pte. Ltd.",
+  "legalEntityNote": "LionsBot International Pte. Ltd. is the Singapore company named in the official privacy policy and site footer. Its Singapore factory, regional offices, distributors, certified technicians and collaboration partners have different operational and contractual roles.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.lionsbot.com/",
+  "headline": "LionsBot autonomous cleaning robots, Singapore manufacturing and service checks",
+  "description": "A source-backed profile of LionsBot International, its founders, Singapore cleaning-robot factory, product and software portfolio, regional channels and lifecycle checks.",
+  "metaDescription": "LionsBot profile: Singapore company, founders, R3 and R12 cleaning robots, factory, LionsOS, dealers, support and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with LionsBot. Factory capacity, global-office and dealer statements do not identify the seller, importer, software terms or warranty provider for every country and project.",
+  "headquarters": "Singapore",
+  "founded": "2018",
+  "heroImage": "/images/brands/lionsbot/hero-r3-scrub-pro-public-space.webp",
+  "heroImageAlt": "LionsBot R3 Scrub Pro autonomous floor-cleaning robot in a large public interior",
+  "heroSourceUrl": "https://www.lionsbot.com/wp-content/uploads/2025/09/Hotel.jpg",
+  "logoImage": "/images/brands/lionsbot/logo.webp",
+  "logoImageAlt": "LionsBot logo",
+  "logoSourceUrl": "https://www.lionsbot.com/wp-content/uploads/2022/05/Frame-948.svg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/lionsbot/company-factory-channel-boundary.svg",
+      "alt": "LionsBot International company factory and regional service-channel boundary",
+      "caption": "The Singapore company and factory are distinct from regional offices, dealers, commissioning teams and local warranty obligations."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/lionsbot/robot-cloud-service-check.svg",
+      "alt": "LionsBot robot LionsOS deployment and lifecycle support checklist",
+      "caption": "A cleaning-robot procurement decision should cover hardware, LionsOS, deployment and support as one lifecycle service."
+    }
+  ],
+  "ownership": {
+    "summary": "Official materials identify LionsBot International Pte. Ltd. as a Singapore-incorporated company founded by Dylan Ng, Michelle Seow and robotics professor Mohan Rajesh Elara. The reviewed official sources do not name a parent company; product collaborations such as the Nilfisk SC25 do not establish ownership of LionsBot."
+  },
+  "leadership": [
+    {
+      "name": "Dylan Ng",
+      "role": "Co-founder and CEO",
+      "context": "LionsBot's official factory announcement and product-collaboration release identify Dylan Ng as CEO and co-founder."
+    },
+    {
+      "name": "Michelle Seow",
+      "role": "Co-founder",
+      "context": "The official company story names Michelle Seow as a co-founder who developed the original concept with Dylan Ng."
+    },
+    {
+      "name": "Mohan Rajesh Elara",
+      "role": "Co-founder and robotics professor",
+      "context": "The official company story says the founders teamed with Professor Mohan Rajesh Elara to build the first cleaning robot."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "R3 Scrub Pro",
+      "positioning": "Compact autonomous scrubber for airports, supermarkets, healthcare and other constrained commercial spaces.",
+      "buyerRelevance": "Test aisle clearance, edge performance, squeegee dryness, dock requirements, floor chemistry and practical hourly output."
+    },
+    {
+      "name": "R3 Vac and R5",
+      "positioning": "Autonomous vacuuming and compact cleaning platforms for carpeted and mixed commercial environments.",
+      "buyerRelevance": "Confirm filtration, surface compatibility, consumables, runtime, navigation and manual-recovery workflow."
+    },
+    {
+      "name": "R12 Rex Scrub",
+      "positioning": "Large-area autonomous scrubber for warehouses, factories and high-capacity industrial applications.",
+      "buyerRelevance": "Validate turning space, floor loading, water logistics, brush pressure, safety separation and recovery procedures."
+    },
+    {
+      "name": "LionsOS and fleet services",
+      "positioning": "Cloud and application tools support scheduling, robot monitoring, cleaning analytics and multi-robot operation.",
+      "buyerRelevance": "Contract data access, cybersecurity, service availability, software updates, subscriptions and transition assistance."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "LionsBot's 2024 factory announcement describes a 4,908-square-metre Singapore manufacturing and R&D facility with component warehousing, sub-assembly, final assembly, calibration, testing and quality checks.",
+      "scope": "LionsBot's Singapore factory as announced in April 2024",
+      "buyerCheck": "Request the build record, manufacturer identification, serial range and conformity documents for the exact robot."
+    },
+    {
+      "evidence": "The same announcement states that the facility can manufacture up to 4,000 robots annually on a single-shift basis.",
+      "scope": "Company-reported nominal capacity, not guaranteed available supply",
+      "buyerCheck": "Confirm production allocation, lead time, configuration freeze and spare-parts availability in the supply agreement."
+    },
+    {
+      "evidence": "LionsBot says the Nilfisk SC25 introduced in 2024 is made at LionsBot's Singapore production facility as a collaboration between the two companies.",
+      "scope": "Named SC25 collaboration",
+      "buyerCheck": "For a co-branded or partner-channel model, identify the contracting seller, firmware owner, service provider and warranty entity."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "LionsBot lists offices in Singapore, the Netherlands, the United States and India, alongside a Singapore factory.",
+      "scope": "Current official contact-page locations",
+      "buyerCheck": "Confirm which office or legal entity will contract, invoice, import and support the destination market."
+    },
+    {
+      "evidence": "The support page describes local-dealer aftersales, remote headquarters support and certified dealer technicians.",
+      "scope": "Company service model",
+      "buyerCheck": "Name the local technician organization, parts stock, response time, preventive-maintenance schedule and escalation route in writing."
+    },
+    {
+      "evidence": "LionsBot says warranty covers manufacturer defects while consumable wear is excluded and battery coverage has a defined duration.",
+      "scope": "General warranty statement rather than a complete market contract",
+      "buyerCheck": "Obtain the destination-market warranty document covering duration, battery, exclusions, labor, travel and return logistics before purchase."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: LionsBot differentiates through a focused cleaning-robot portfolio, in-house Singapore manufacturing and an integrated robot, cloud and dealer-support model. Buyers should turn that proposition into project-level proof through site trials, software review, local technician capacity and measurable uptime obligations.",
+    "competitorSlugs": ["gausium", "pudu-robotics", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2026-03-31",
+      "title": "LionsBot announces the SPARK robotics program",
+      "summary": "The company announced a five-year Singapore initiative focused on physical-AI and robotics skills.",
+      "sourceIds": ["lionsbot-spark"]
+    },
+    {
+      "date": "2024-04-18",
+      "title": "LionsBot opens an expanded Singapore factory",
+      "summary": "The company opened a manufacturing and R&D facility designed for cleaning-robot assembly, calibration, test and quality control.",
+      "sourceIds": ["lionsbot-factory"]
+    },
+    {
+      "date": "2018",
+      "title": "LionsBot International is established",
+      "summary": "Official company and collaboration materials date LionsBot International's establishment to 2018 in Singapore.",
+      "sourceIds": ["lionsbot-about", "lionsbot-nilfisk"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "lionsbot-about",
+      "title": "About LionsBot",
+      "publisher": "LionsBot",
+      "url": "https://www.lionsbot.com/about-us/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lionsbot-privacy",
+      "title": "Privacy Policy",
+      "publisher": "LionsBot",
+      "url": "https://www.lionsbot.com/privacy-policy-private/",
+      "publishedAt": "2022-06-17",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lionsbot-r3",
+      "title": "R3 Scrub Pro",
+      "publisher": "LionsBot",
+      "url": "https://www.lionsbot.com/r3-scrub-pro-compact-robotic-floor-scrubber/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lionsbot-factory",
+      "title": "LionsBot Factory Opening 2024",
+      "publisher": "LionsBot",
+      "url": "https://www.lionsbot.com/lionsbot-factory-opening-2024/",
+      "publishedAt": "2024-04-18",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lionsbot-support",
+      "title": "Support and Warranty",
+      "publisher": "LionsBot",
+      "url": "https://www.lionsbot.com/support-warranty/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lionsbot-nilfisk",
+      "title": "Nilfisk and LionsBot Unveil New Robotic Cleaning Machine",
+      "publisher": "LionsBot",
+      "url": "https://www.lionsbot.com/nilfisk-x-lionsbot-unveil-new-robotic-cleaning-machine-at-interclean-amsterdam-2024/",
+      "publishedAt": "2024-05-14",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lionsbot-spark",
+      "title": "LionsBot Launches SPARK Programme",
+      "publisher": "LionsBot",
+      "url": "https://www.lionsbot.com/lionsbot-spark-programme/",
+      "publishedAt": "2026-03-31",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T06:21:18+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T06:21:18+08:00"
+}
