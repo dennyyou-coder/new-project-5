@@ -1058,6 +1058,11 @@ test("all published brand profiles have local official logos and two to three lo
 
 test("home-appliance batch eight profiles publish with current ownership and operating boundaries", async () => {
   const newSlugs = ["asko", "hamilton-beach", "teka"];
+  const expectedTaggedArticles = new Map([
+    ["asko", ["who-owns-hisense-appliances-gorenje-asko"]],
+    ["hamilton-beach", []],
+    ["teka", []],
+  ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
   );
@@ -1100,7 +1105,11 @@ test("home-appliance batch eight profiles publish with current ownership and ope
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    assert.deepEqual(
+      taggedArticles.map((article) => article.slug),
+      expectedTaggedArticles.get(slug),
+      `${slug} must expose only approved ownership article relationships`
+    );
     assert.deepEqual(membershipsFor(slug), ["home-appliances-small-appliances"]);
     assert.equal(
       getBrandCategoryForProfile(slug)?.slug,
@@ -1126,7 +1135,7 @@ test("home-appliance batch seven profiles publish with regional brand and operat
   const newSlugs = ["braun-household", "breville-sage", "xiaomi-mijia"];
   const expectedTaggedArticles = new Map([
     ["braun-household", []],
-    ["breville-sage", []],
+    ["breville-sage", ["who-owns-breville-sage-regional-brand-rights"]],
     ["xiaomi-mijia", ["who-makes-xiaomi-mijia-home-appliances"]],
   ]);
   const profilesBySlug = new Map(
@@ -1209,6 +1218,11 @@ test("home-appliance batch seven profiles publish with regional brand and operat
 
 test("home-appliance batch six profiles publish independently with verified entity boundaries", async () => {
   const newSlugs = ["gorenje", "rowenta", "supor"];
+  const expectedTaggedArticles = new Map([
+    ["gorenje", ["who-owns-hisense-appliances-gorenje-asko"]],
+    ["rowenta", []],
+    ["supor", []],
+  ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
   );
@@ -1251,7 +1265,11 @@ test("home-appliance batch six profiles publish independently with verified enti
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.equal(taggedArticles.length, 0, `${slug} must not modify ownership article relationships`);
+    assert.deepEqual(
+      taggedArticles.map((article) => article.slug),
+      expectedTaggedArticles.get(slug),
+      `${slug} must expose only approved ownership article relationships`
+    );
   }
 
   assert.match(profilesBySlug.get("rowenta").ownership.summary, /SEB/i);
@@ -1298,6 +1316,11 @@ test("home-appliance batch six profiles publish independently with verified enti
 
 test("home-appliance batch five profiles publish independently with dedicated official assets", async () => {
   const newSlugs = ["delonghi", "groupe-seb", "hisense"];
+  const expectedTaggedArticles = new Map([
+    ["delonghi", []],
+    ["groupe-seb", []],
+    ["hisense", ["who-owns-hisense-appliances-gorenje-asko"]],
+  ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
   );
@@ -1333,7 +1356,11 @@ test("home-appliance batch five profiles publish independently with dedicated of
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.equal(taggedArticles.length, 0, `${slug} must not modify ownership article relationships`);
+    assert.deepEqual(
+      taggedArticles.map((article) => article.slug),
+      expectedTaggedArticles.get(slug),
+      `${slug} must expose only approved ownership article relationships`
+    );
   }
 
   assert.match(profilesBySlug.get("hisense").legalEntityNote, /multiple|regional|group/i);
@@ -1369,7 +1396,7 @@ test("home-appliance batch four profiles publish independently with dedicated of
   const newSlugs = ["hotpoint", "panasonic", "toshiba-appliances"];
   const expectedTaggedArticles = new Map([
     ["hotpoint", []],
-    ["panasonic", []],
+    ["panasonic", ["who-owns-panasonic-appliances-vacuum-manufacturing"]],
     ["toshiba-appliances", ["who-owns-toshiba-appliances-midea-lifestyle"]],
   ]);
   const profilesBySlug = new Map(
