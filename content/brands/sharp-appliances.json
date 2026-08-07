@@ -1,0 +1,71 @@
+{
+  "status": "published",
+  "slug": "sharp-appliances",
+  "name": "Sharp Appliances",
+  "aliases": ["SHARP", "Sharp Home Appliances", "Sharp Home"],
+  "legalEntityNote": "Sharp Appliances is the appliance-facing use of the SHARP consumer brand, not one universal legal entity. Sharp Corporation is the Japanese listed brand company and identifies Hon Hai Precision Industry Co., Ltd. as its parent under Japanese law and accounting standards. Regional Sharp subsidiaries, Vestel companies operating the European major- and small-appliance business, factories, importers, retailers and warranty providers can hold different responsibilities.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://global.sharp/",
+  "headline": "Sharp appliances across Sharp Corporation, Hon Hai control and regional operating models",
+  "description": "A source-backed profile of Sharp Appliances, separating the consumer brand, Sharp Corporation, Hon Hai parent status, Vestel's European appliance role, product portfolio, manufacturing evidence and market-level buyer checks.",
+  "metaDescription": "Sharp Appliances brand profile: Hon Hai parent status, regional operators, home and cleaning appliances, manufacturing and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Sharp, Hon Hai or Vestel. Parent-company, regional partnership and group manufacturing disclosures do not identify the trademark license, factory, origin, importer, seller or warrantor for every Sharp appliance SKU.",
+  "headquarters": "Osaka, Japan (Sharp Corporation context)",
+  "founded": "1912; incorporated in 1935",
+  "heroImage": "/images/brands/sharp-appliances/hero-dishwasher-kitchen.webp",
+  "heroImageAlt": "Sharp dishwasher installed in a bright modern kitchen",
+  "heroImageCaption": "Official Sharp Home Europe image presenting a Sharp dishwasher in a current kitchen setting.",
+  "heroSourceUrl": "https://cdn.shopify.com/s/files/1/0722/9485/8997/files/BM_771f7db9-47af-43bc-9d82-9ddf87cbebc8.jpg?v=1775114987",
+  "logoImage": "/images/brands/sharp-appliances/logo.webp",
+  "logoImageAlt": "Sharp logo",
+  "logoSourceUrl": "https://cdn.shopify.com/s/files/1/0722/9485/8997/files/logo.avif?v=1757944150",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/sharp-appliances/parent-regional-boundary.svg", "alt": "Sharp brand, Sharp Corporation, Hon Hai parent and regional appliance operator boundary", "caption": "Sharp Corporation identifies Hon Hai as its parent, while the consumer brand and regional appliance operators remain separate identities."},
+    {"placement": "operations", "src": "/images/brands/sharp-appliances/regional-appliance-check.svg", "alt": "Sharp appliance model, region, factory and warranty verification workflow", "caption": "Sharp's global appliance portfolio does not establish one operator or factory for every market; buyers need model- and destination-specific evidence."}
+  ],
+  "ownership": {
+    "summary": "Sharp Corporation is the listed Japanese company behind the SHARP brand and identifies Hon Hai Precision Industry Co., Ltd. as its parent. Sharp's June 2026 disclosure reported 34.1% direct and indirect Hon Hai voting rights and 54.2% when closely related holdings were included under the disclosed Japanese-law assessment.",
+    "parentCompany": "Hon Hai Precision Industry Co., Ltd."
+  },
+  "leadership": [
+    {"name": "Tetsuji Kawamura", "role": "President and Chief Executive Officer, Sharp Corporation", "context": "Sharp's current corporate overview identifies Kawamura as President and CEO; this is leadership of Sharp Corporation, not a separate Sharp Appliances legal company."}
+  ],
+  "productPortfolio": [
+    {"name": "Major home appliances", "positioning": "Sharp's official business materials cover refrigerators, washing machines, air conditioners, dishwashers and other large appliances, with regional catalogues differing materially.", "buyerRelevance": "Confirm the exact regional model, capacity, energy label, electrical standard, installer and warranty entity."},
+    {"name": "Cleaning and air treatment", "positioning": "Sharp's current corporate and sustainability materials include vacuum cleaners, stick vacuums, air purifiers, dehumidifiers, humidifiers and Plasmacluster-related products.", "buyerRelevance": "Verify current local availability, filtration claims, consumables, app region and service support for the quoted model."},
+    {"name": "Cooking and small appliances", "positioning": "Microwave ovens, superheated-steam ovens, small cooking appliances and regional kitchen lines sit within Sharp's wider Smart Life activity.", "buyerRelevance": "Match food-contact documentation, voltage, installation, accessories and responsible operator to the destination market."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Sharp's official sustainability materials list multiple appliance-related overseas entities and manufacturing sites, including operations in Thailand, Malaysia, Indonesia and Europe.", "scope": "Sharp group network disclosure; not a current model-to-plant map", "buyerCheck": "Request the exact model's legal manufacturer, factory address, origin, declaration and quality records rather than assigning a plant from group presence."},
+    {"evidence": "Sharp Home Europe states that its European major- and small-domestic-appliance business is operated in collaboration with Vestel and uses Vestel manufacturing and design capability.", "scope": "European major and small domestic appliances presented through Sharp Home Europe", "buyerCheck": "For European supply, identify the specific Vestel or other regional entity, factory, importer and warranty provider on the product and contract documents."},
+    {"evidence": "Sharp's 2025 sustainability report describes closed-loop recycled-plastic use across appliances including washing machines, refrigerators, air conditioners and stick vacuum cleaners.", "scope": "Reported Sharp environmental program and named product categories; not every SKU", "buyerCheck": "Treat material-program evidence separately from model composition and obtain the bill of materials or supplier declaration for the purchased SKU."}
+  ],
+  "marketsChannels": [
+    {"evidence": "Sharp's global product portal routes users to regional Sharp companies and websites rather than presenting one universal appliance seller.", "scope": "Global web and regional company structure", "buyerCheck": "Use the destination-country site and verify the invoice issuer, authorized dealer, importer and service company."},
+    {"evidence": "Sharp Home Europe's imprint names different Vestel companies or branches for France, Germany, Italy, the Netherlands, Poland and the United Kingdom.", "scope": "Reviewed European website operators and country responsibilities", "buyerCheck": "Record the country-specific contracting and warranty entity instead of relying only on the Sharp brand name."},
+    {"evidence": "Sharp Corporation operates its own AIoT appliance services and describes Sharp-brand connected appliances through regional support terms.", "scope": "Eligible connected products and supported regions", "buyerCheck": "Confirm app availability, cloud region, data controller, wireless compatibility and service continuity for the exact destination."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Sharp combines long appliance heritage, air-treatment technology and broad regional reach, but its operating model is unusually market-sensitive. Procurement quality depends on separating Sharp Corporation and Hon Hai ownership from the regional licensee, manufacturer, importer, seller and after-sales chain.",
+    "competitorSlugs": ["panasonic", "hisense", "samsung-home-appliances", "lg-home-appliances"]
+  },
+  "developments": [
+    {"date": "2026-06-23", "title": "Sharp updates its controlling-shareholder disclosure", "summary": "Sharp again identified Hon Hai as its parent and explained the direct, indirect and closely related voting-right relationships assessed under Japanese law and accounting standards.", "sourceIds": ["sharp-controlling-2026"]},
+    {"date": "2026-06", "title": "Smart Life business briefing emphasizes appliance and AIoT growth", "summary": "Sharp's 2026 business briefing covered high-value laundry, air-conditioning, kitchen and AIoT initiatives under the Smart Life Business Group.", "sourceIds": ["sharp-business-2026"]},
+    {"date": "2016", "title": "Sharp forms its strategic alliance with Hon Hai", "summary": "Sharp's official chronology records the Hon Hai alliance and share subscription completed in 2016.", "sourceIds": ["sharp-history"]},
+    {"date": "1912", "title": "Sharp traces its founding to Tokuji Hayakawa", "summary": "Sharp's corporate overview dates the original metalworking shop to September 1912.", "sourceIds": ["sharp-overview"]}
+  ],
+  "sources": [
+    {"id": "sharp-controlling-2026", "title": "Matters Concerning Controlling Shareholder, Etc.", "publisher": "Sharp Corporation", "url": "https://global.sharp/corporate/ir/topics/pdf/260623-1.pdf", "publishedAt": "2026-06-23", "accessedAt": "2026-08-07"},
+    {"id": "sharp-overview", "title": "Corporate Overview", "publisher": "Sharp Corporation", "url": "https://global.sharp/corporate/info/outline/index.html", "accessedAt": "2026-08-07"},
+    {"id": "sharp-business", "title": "Business Activities", "publisher": "Sharp Corporation", "url": "https://global.sharp/corporate/info/outline/business/", "accessedAt": "2026-08-07"},
+    {"id": "sharp-business-2026", "title": "FY2025 Financial Summary and Business Strategy", "publisher": "Sharp Corporation", "url": "https://global.sharp/corporate/ir/event/policy_meeting/pdf/26meeting_en.pdf", "publishedAt": "2026-06", "accessedAt": "2026-08-07"},
+    {"id": "sharp-europe", "title": "About Us", "publisher": "Sharp Home Europe", "url": "https://sharphome.eu/en-gb/pages/about-us", "accessedAt": "2026-08-07"},
+    {"id": "sharp-europe-imprint", "title": "Imprint", "publisher": "Sharp Home Europe", "url": "https://sharphome.eu/en-gb/pages/impressum", "accessedAt": "2026-08-07"},
+    {"id": "sharp-sustainability-2025", "title": "Sustainability Report 2025", "publisher": "Sharp Corporation", "url": "https://global.sharp/corporate/eco/report/pdf/ssr2025_e.pdf?v=2025", "publishedAt": "2025", "accessedAt": "2026-08-07"},
+    {"id": "sharp-history", "title": "Sharp Chronology", "publisher": "Sharp Corporation", "url": "https://global.sharp/corporate/info/history/chronology/", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T22:20:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T22:20:00+08:00"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "published",
+  "slug": "russell-hobbs",
+  "name": "Russell Hobbs",
+  "aliases": ["Russell Hobbs®", "RUSSELL HOBBS"],
+  "legalEntityNote": "Russell Hobbs is a consumer appliance brand owned within Spectrum Brands, not the same entity as Spectrum Brands Holdings, Inc., Spectrum Brands, Inc. or a regional operator. Spectrum Brands (UK) Limited, Russell Hobbs Deutschland GmbH, Spectrum Brands Australia Pty Ltd, local distributors, retailers and warranty providers can each hold different market responsibilities.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://en.russellhobbs.com/",
+  "headline": "Russell Hobbs small appliances across Spectrum Brands and regional operators",
+  "description": "A source-backed profile of Russell Hobbs, separating the owned consumer brand, Spectrum Brands holding and operating companies, regional legal entities, small-appliance portfolio, outsourced supply chain and market-specific buyer checks.",
+  "metaDescription": "Russell Hobbs brand profile: Spectrum Brands ownership, regional operators, small appliances, outsourced supply chain and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Russell Hobbs or Spectrum Brands. Brand ownership and segment disclosures do not establish the factory, origin, importer, seller, legal manufacturer or warrantor for every Russell Hobbs SKU or market.",
+  "headquarters": "Manchester, United Kingdom (European operating context); parent headquartered in Middleton, Wisconsin",
+  "founded": "1952",
+  "heroImage": "/images/brands/russell-hobbs/hero-midnight-fabric-care.webp",
+  "heroImageAlt": "Russell Hobbs Midnight Collection fabric-care appliances",
+  "heroImageCaption": "Official 2026 Russell Hobbs collection image showing branded irons and garment-care products.",
+  "heroSourceUrl": "https://cdn-img.russellhobbs.com/manager/russellhobbs_com/banners/collections/large_midnight_collection_banner_desktop_rh_2026.jpg",
+  "logoImage": "/images/brands/russell-hobbs/logo.webp",
+  "logoImageAlt": "Russell Hobbs logo",
+  "logoSourceUrl": "https://cdn.russellhobbs.com/images/logo/rh_logo_black.png?v=1774370108",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/russell-hobbs/brand-operating-boundary.svg", "alt": "Russell Hobbs brand, Spectrum Brands companies and regional operator boundary", "caption": "Spectrum Brands owns Russell Hobbs, but the listed holding company, operating companies and regional legal entities must not be treated as one identity."},
+    {"placement": "operations", "src": "/images/brands/russell-hobbs/supplier-market-check.svg", "alt": "Russell Hobbs supplier, model, regional operator and warranty verification workflow", "caption": "Spectrum Brands reports extensive third-party appliance manufacturing, so buyers need an exact model and destination-market evidence file."}
+  ],
+  "ownership": {
+    "summary": "Spectrum Brands Holdings, Inc. reports Russell Hobbs as an owned Kitchen & Home Appliances brand in its Home and Personal Care segment. Its fiscal 2025 Form 10-K states that the segment's brands and trade names are company-owned except specified licensed brands, with Russell Hobbs not listed among those exceptions.",
+    "parentCompany": "Spectrum Brands Holdings, Inc."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {"name": "Kettles, toasters and beverage appliances", "positioning": "Russell Hobbs' current official range centers on kettles and toasters and extends to coffee makers and beverage preparation.", "buyerRelevance": "Verify voltage, plug, capacity, food-contact documentation, temperature controls and local replacement parts."},
+    {"name": "Food preparation and cooking", "positioning": "The official range includes blenders, food preparation, grills, slow cookers, air fryers, ovens and other countertop cooking products.", "buyerRelevance": "Confirm household-use limits, wattage, cooking capacity, accessories, coating declarations and destination certification."},
+    {"name": "Irons and garment care", "positioning": "Irons, steam generators and handheld garment steamers remain a core product group, including the 2026 Midnight Collection shown in the official Hero.", "buyerRelevance": "Check water specification, anti-scale consumables, steam output, electrical standard and warranty service for the exact model."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Spectrum Brands' fiscal 2025 Form 10-K states that substantially all Home and Personal Care segment products are manufactured by third-party suppliers in the Asia-Pacific region.", "scope": "Spectrum Brands Home and Personal Care segment; not a factory assignment for each Russell Hobbs model", "buyerCheck": "Obtain the exact SKU's supplier, factory, origin, inspection plan, compliance file and change-control process."},
+    {"evidence": "The same filing says Spectrum Brands maintains ownership of most tooling and molds used by its suppliers and continuously evaluates supplier quality, cost and capacity.", "scope": "Segment-level sourcing model in fiscal 2025", "buyerCheck": "Confirm tooling ownership and approved-supplier status for the quoted model rather than assuming all factories are company-owned."},
+    {"evidence": "The reviewed public sources do not publish a complete Russell Hobbs model-to-factory map.", "scope": "Public official materials reviewed through 7 August 2026", "buyerCheck": "Require current model, plant, origin, legal manufacturer and conformity documents as contract deliverables."}
+  ],
+  "marketsChannels": [
+    {"evidence": "Spectrum Brands reports Home and Personal Care sales through large retailers, e-commerce, wholesalers, distributors, warehouse clubs and specialty outlets.", "scope": "Segment channel structure in fiscal 2025", "buyerCheck": "Verify seller authorization, destination assortment and whether commercial resale rights are included."},
+    {"evidence": "Russell Hobbs UK's consumer terms identify Spectrum Brands (UK) Limited as the seller and legal manufacturer for covered EU-market products, with Russell Hobbs Deutschland GmbH as EU authorised representative.", "scope": "Products and transactions covered by the reviewed UK/EU terms", "buyerCheck": "Use the exact destination's terms and product label because the UK/EU roles do not automatically apply worldwide."},
+    {"evidence": "The Australia and New Zealand official terms identify Spectrum Brands Australia Pty Ltd as the website operator for the covered regional site.", "scope": "Reviewed Australia/New Zealand web operations", "buyerCheck": "Confirm the regional invoice issuer, importer, warranty provider and spare-parts route before cross-border supply."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Russell Hobbs benefits from strong British small-appliance recognition, broad category coverage and Spectrum Brands' retail network. Its main procurement risk is the gap between one global brand and multiple regional operators and third-party factories.",
+    "competitorSlugs": ["breville-sage", "delonghi", "kitchenaid", "hamilton-beach", "groupe-seb"]
+  },
+  "developments": [
+    {"date": "2025-11-18", "title": "Spectrum Brands reports Russell Hobbs as an owned HPC brand", "summary": "The fiscal 2025 Form 10-K lists Russell Hobbs in Kitchen & Home Appliances and distinguishes it from specified licensed brands.", "sourceIds": ["spectrum-10k-2025"]},
+    {"date": "2010-06", "title": "Russell Hobbs business joins Spectrum Brands", "summary": "Spectrum Brands completed the combination that brought the Russell Hobbs appliance portfolio into its operating structure.", "sourceIds": ["spectrum-rh-2010"]},
+    {"date": "1952", "title": "Russell Hobbs product heritage begins", "summary": "The official product site dates the first Russell Hobbs product to 1952.", "sourceIds": ["rh-products"]}
+  ],
+  "sources": [
+    {"id": "spectrum-10k-2025", "title": "Form 10-K for the Fiscal Year Ended September 30, 2025", "publisher": "Spectrum Brands Holdings, Inc.", "url": "https://www.sec.gov/Archives/edgar/data/109177/000010917725000043/spb-20250930.htm", "publishedAt": "2025-11-18", "accessedAt": "2026-08-07"},
+    {"id": "spectrum-brands", "title": "Spectrum Brands", "publisher": "Spectrum Brands", "url": "https://www.spectrumbrands.com/", "accessedAt": "2026-08-07"},
+    {"id": "spectrum-rh-2010", "title": "Spectrum Brands Adds Russell Hobbs to Its Portfolio", "publisher": "Spectrum Brands", "url": "https://investor.spectrumbrands.com/news-releases/news-release-details/spectrum-brands-adds-russell-hobbs-its-portfolio-create-3/", "publishedAt": "2010-02-09", "accessedAt": "2026-08-07"},
+    {"id": "rh-products", "title": "Russell Hobbs Product Range", "publisher": "Russell Hobbs Europe", "url": "https://en.russellhobbs.com/products", "accessedAt": "2026-08-07"},
+    {"id": "rh-uk-terms", "title": "Consumer Terms and Conditions", "publisher": "Russell Hobbs UK", "url": "https://uk.russellhobbs.com/terms-and-conditions", "accessedAt": "2026-08-07"},
+    {"id": "rh-au-terms", "title": "Terms and Conditions", "publisher": "Russell Hobbs Australia", "url": "https://au.russellhobbs.com/terms-and-conditions", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T22:20:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T22:20:00+08:00"
+}

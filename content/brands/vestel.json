@@ -1,0 +1,71 @@
+{
+  "status": "published",
+  "slug": "vestel",
+  "name": "Vestel",
+  "aliases": ["VESTEL", "Vestel Group"],
+  "legalEntityNote": "Vestel is a consumer brand and group-facing name, not one universal legal company. Vestel Elektronik Sanayi ve Ticaret A.Ş. is the listed company controlled by Zorlu Holding AŞ; Vestel Beyaz Eşya Sanayi ve Ticaret A.Ş. manufactures major appliances; Vestel Ticaret A.Ş. handles sales and marketing and operates the Turkish online store. Regional subsidiaries, ODM customers, licensees, importers and service providers can hold other responsibilities.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.vestel.com.tr/",
+  "headline": "Vestel appliances across Zorlu control, listed operations, manufacturing and retail entities",
+  "description": "A source-backed profile of Vestel, separating the consumer brand, Zorlu Holding, Vestel Elektronik, Vestel Beyaz Eşya, Vestel Ticaret, the appliance and cleaning portfolio, ODM manufacturing and buyer checks.",
+  "metaDescription": "Vestel brand profile: Zorlu control, Vestel Elektronik, appliance manufacturing, vacuums, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Vestel or Zorlu Holding. Group ownership, factory and ODM disclosures do not establish the brand owner, manufacturer, plant, origin, importer, seller or warrantor for every Vestel or customer-brand SKU.",
+  "headquarters": "Istanbul and Manisa, Türkiye (corporate and manufacturing context)",
+  "founded": "1984; acquired by Zorlu Group in 1994",
+  "heroImage": "/images/brands/vestel/hero-h30-vacuum.webp",
+  "heroImageAlt": "Vestel H30 M canister vacuum cleaner",
+  "heroImageCaption": "Official Vestel product image of the current H30 M bagless vacuum cleaner.",
+  "heroSourceUrl": "https://statics.vestel.com.tr/productimages/20264754_r1_1000_1000.jpg",
+  "logoImage": "/images/brands/vestel/logo.webp",
+  "logoImageAlt": "Vestel logo",
+  "logoSourceUrl": "https://static.vrunibex.com/template/31243d42-b008-4e0f-a728-177a9bf1da51.png",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/vestel/group-brand-boundary.svg", "alt": "Zorlu Holding, Vestel Elektronik, Vestel Beyaz Esya, Vestel Ticaret and consumer brand boundary", "caption": "Zorlu control, the listed company, manufacturing and sales subsidiaries and the Vestel consumer brand represent different roles."},
+    {"placement": "operations", "src": "/images/brands/vestel/product-channel-check.svg", "alt": "Vestel branded product and ODM supply-chain verification workflow", "caption": "Vestel's large manufacturing scale serves both branded and ODM business; model-level documents must identify whose brand, factory and warranty apply."}
+  ],
+  "ownership": {
+    "summary": "Vestel Elektronik Sanayi ve Ticaret A.Ş. is the listed core company behind the Vestel group and brand architecture. Zorlu Holding AŞ holds 52.77% of Vestel Elektronik's capital according to the current official ownership structure, while the remainder is free float.",
+    "parentCompany": "Zorlu Holding AŞ"
+  },
+  "leadership": [
+    {"name": "Gökhan Sığın", "role": "Chief Executive Officer, Vestel Group of Companies", "context": "Vestel's current management page says Sığın assumed the group CEO role on 19 January 2026; this is group leadership rather than a separate consumer-brand company."}
+  ],
+  "productPortfolio": [
+    {"name": "Major domestic appliances", "positioning": "Vestel's appliance business covers refrigerators, washing machines, tumble dryers, dishwashers, cooking appliances, air conditioners and water heaters.", "buyerRelevance": "Confirm whether the quoted product is Vestel-branded or ODM, then verify model, energy label, plant, origin and destination certification."},
+    {"name": "Vacuums and home cleaning", "positioning": "The current Turkish Vestel catalogue includes robot, cordless stick, bagged, bagless and wet-dry cordless vacuum categories.", "buyerRelevance": "Check the exact manufacturer, battery and filter supply, app region, spare parts, noise data and warranty route."},
+    {"name": "Small appliances and consumer electronics", "positioning": "Vestel also sells coffee, beverage, food-preparation, cooking, ironing, television and connected-home products under the consumer brand.", "buyerRelevance": "Separate compliance, after-sales and category-specific legal entities across appliances, electronics and food-contact products."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Vestel's official factory page places electronics and home-appliance production at the Vestel City complex in Manisa and describes automated Industry 4.0 operations.", "scope": "Vestel group manufacturing complex; not proof that every Vestel or ODM model is produced there", "buyerCheck": "Obtain the specific product's plant, line, legal manufacturer, origin and inspection records."},
+    {"evidence": "Vestel Beyaz Eşya's 2024 integrated report covers six Manisa production facilities for refrigerators, washing machines, dryers, dishwashers, air conditioning, water heaters and cooking appliances.", "scope": "Vestel Beyaz Eşya major-appliance facilities and 2024 reporting perimeter", "buyerCheck": "Map the quoted model to one disclosed facility using current supplier and conformity documentation."},
+    {"evidence": "Vestel Beyaz Eşya reports both ODM sales and branded sales under owned local and licensed global brands.", "scope": "Major domestic appliance business model", "buyerCheck": "Do not infer the consumer-facing brand from factory ownership; contractually record brand authorization, model, tooling, specifications and destination rights."}
+  ],
+  "marketsChannels": [
+    {"evidence": "Vestel's 2024 reports identify Vestel Ticaret A.Ş., a wholly owned Vestel Elektronik subsidiary, as the sales and marketing company for domestic and international appliance activity.", "scope": "Reported group sales and marketing structure", "buyerCheck": "Confirm whether Vestel Ticaret or a regional subsidiary is the contracting party for the destination market."},
+    {"evidence": "The Turkish Vestel online sales contract names Vestel Ticaret Anonim Şirketi Istanbul Branch as the seller.", "scope": "Transactions covered by vestel.com.tr terms", "buyerCheck": "Do not apply the Turkish online-store seller identity to export or other-country transactions without local terms."},
+    {"evidence": "Vestel's official Turkish site provides authorized dealer, service, installation, spare-parts and extended-cover routes across its current product range.", "scope": "Turkish consumer channel and support system", "buyerCheck": "For other markets, verify the authorized importer, dealer, service network, parts commitment and warranty document separately."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Vestel combines a large, flexible European manufacturing base with consumer-brand distribution and a substantial ODM business. That scale is attractive to buyers, but it also makes brand, customer, factory and contracting-party separation essential.",
+    "competitorSlugs": ["beko", "arcelik", "hisense", "gorenje", "midea"]
+  },
+  "developments": [
+    {"date": "2026-01-19", "title": "Gökhan Sığın becomes Vestel group CEO", "summary": "Vestel's official management page records Sığın's appointment as CEO of the Vestel Group of Companies.", "sourceIds": ["vestel-management"]},
+    {"date": "2024", "title": "Zorlu Holding ownership declines to 52.77%", "summary": "Vestel Elektronik reported the lower Zorlu Holding stake after a 2024 institutional share sale, while Zorlu remained the controlling shareholder.", "sourceIds": ["vestel-ownership", "vestel-ar-2024"]},
+    {"date": "1994", "title": "Vestel joins Zorlu Group", "summary": "Vestel's official corporate reporting records Zorlu's acquisition of Vestel in 1994.", "sourceIds": ["vestel-ar-2024"]},
+    {"date": "1984", "title": "Vestel is founded", "summary": "Vestel's corporate history dates the business to 1984.", "sourceIds": ["vestel-ar-2024"]}
+  ],
+  "sources": [
+    {"id": "vestel-ownership", "title": "Ownership Structure", "publisher": "Vestel Elektronik", "url": "https://vestelinternational.com/investor-relations/corporate-governance/ownership-structure", "accessedAt": "2026-08-07"},
+    {"id": "vestel-ar-2024", "title": "Vestel Elektronik Integrated Annual Report 2024", "publisher": "Vestel Elektronik", "url": "https://vestelinternational.com/Content/files/uploads/103/integrated-annual-report-2024.pdf", "publishedAt": "2025", "accessedAt": "2026-08-07"},
+    {"id": "vestel-whitegoods-2024", "title": "Vestel Beyaz Eşya Integrated Annual Report 2024", "publisher": "Vestel Beyaz Eşya", "url": "https://vestelinternational.com/Content/files/uploads/738/vbe-integrated-annual-report-2024.pdf", "publishedAt": "2025", "accessedAt": "2026-08-07"},
+    {"id": "vestel-factory", "title": "Factory", "publisher": "Vestel International", "url": "https://vestelinternational.com/our-business/innovation-design/factory", "accessedAt": "2026-08-07"},
+    {"id": "vestel-management", "title": "Top Management", "publisher": "Vestel International", "url": "https://vestelinternational.com/investor-relations/corporate-governance/top-management", "accessedAt": "2026-08-07"},
+    {"id": "vestel-products", "title": "Small Appliances and Vacuums", "publisher": "Vestel", "url": "https://www.vestel.com.tr/kucuk-ev-aletleri-supurge-c-1833", "accessedAt": "2026-08-07"},
+    {"id": "vestel-h30", "title": "Vestel H30 M Electric Vacuum Cleaner", "publisher": "Vestel", "url": "https://www.vestel.com.tr/vestel-h30-m-toz-torbasiz-elektrikli-supurge-p-1898", "accessedAt": "2026-08-07"},
+    {"id": "vestel-sales-terms", "title": "Sales Contract", "publisher": "Vestel", "url": "https://www.vestel.com.tr/content/satis-sozlesmesi", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T22:20:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T22:20:00+08:00"
+}
