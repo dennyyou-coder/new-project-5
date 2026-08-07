@@ -217,6 +217,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "Verified profiles of home-appliance and small-appliance brands for buyers assessing ownership, trademark and operating-company boundaries, product portfolios, manufacturing networks, channels and after-sales responsibility.",
     brandSlugs: [
       "aeg",
+      "asko",
       "beko",
       "bosch-home-appliances",
       "braun-household",
@@ -228,6 +229,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "gorenje",
       "groupe-seb",
       "haier-home-appliances",
+      "hamilton-beach",
       "hisense",
       "hotpoint",
       "kitchenaid",
@@ -239,12 +241,14 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "rowenta",
       "samsung-home-appliances",
       "supor",
+      "teka",
       "toshiba-appliances",
       "whirlpool",
       "xiaomi-mijia"
     ],
     primaryBrandSlugs: [
       "aeg",
+      "asko",
       "beko",
       "bosch-home-appliances",
       "braun-household",
@@ -256,6 +260,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "gorenje",
       "groupe-seb",
       "haier-home-appliances",
+      "hamilton-beach",
       "hisense",
       "hotpoint",
       "kitchenaid",
@@ -266,6 +271,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "philips-home-appliances",
       "samsung-home-appliances",
       "supor",
+      "teka",
       "toshiba-appliances",
       "whirlpool"
     ]

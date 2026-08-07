@@ -1,0 +1,67 @@
+{
+  "status": "published",
+  "slug": "teka",
+  "name": "Teka",
+  "aliases": ["TEKA", "Teka Group"],
+  "legalEntityNote": "Teka is a consumer appliance brand and Teka Group is a multi-brand operating business; neither name should be treated as one universal contracting entity. Midea completed its acquisition of Teka Group in April 2025 excluding Teka Rus LLC. Regional Teka companies, factories, importers, retailers and warranty providers can hold different roles, and the exclusion means Russian-market identity and rights require separate verification.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.teka.com/global/",
+  "headline": "Teka appliances after Midea's 2025 acquisition of Teka Group",
+  "description": "A source-backed profile of Teka, separating the consumer brand, Teka Group, Midea ownership, the Teka Rus exclusion, product portfolio, manufacturing network and market-level buyer checks.",
+  "metaDescription": "Teka brand profile: Midea ownership, 2025 acquisition scope, appliances, factories, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Teka or Midea Group. Acquisition and group-level manufacturing disclosures do not establish the trademark owner, manufacturer, plant, origin, importer, seller or warrantor for every Teka SKU.",
+  "headquarters": "Madrid, Spain (Teka Group operating context)",
+  "founded": "1924 origins; Teka trademark created in 1957",
+  "heroImage": "/images/brands/teka/hero-integrated-kitchen.webp",
+  "heroImageAlt": "Teka integrated oven and refrigeration appliances in a modern kitchen",
+  "heroImageCaption": "Official Teka homepage image showing an integrated kitchen appliance setting and current brand presentation.",
+  "heroSourceUrl": "https://www.teka.com/global/wp-content/uploads/sites/3/2026/06/INLINE_WEB_DESKTOP_1920X888_OPEN-FILE.jpg",
+  "logoImage": "/images/brands/teka/logo.webp",
+  "logoImageAlt": "Teka logo",
+  "logoSourceUrl": "https://teka-assets.b-cdn.net/global/wp-content/themes/teka/img/teka-new-logo.svg",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/teka/acquisition-scope.svg", "alt": "Midea acquisition of Teka Group with Teka Rus exclusion", "caption": "Midea completed the Teka Group acquisition in April 2025, but the official announcement expressly excluded Teka Rus LLC."},
+    {"placement": "operations", "src": "/images/brands/teka/model-market-check.svg", "alt": "Teka portfolio, factory, market and warranty verification workflow", "caption": "Teka Group's scale does not identify the factory or responsible entity for an individual appliance; buyers need a model- and market-specific file."}
+  ],
+  "ownership": {
+    "summary": "Midea Group completed the acquisition of Teka Group on 30 April 2025, excluding Teka Rus LLC. The acquired business includes the Teka consumer brand alongside other group brands, while model-level operating and legal responsibilities remain with the applicable entities.",
+    "parentCompany": "Midea Group Co., Ltd."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {"name": "Cooking and ventilation", "positioning": "Teka's official catalogue includes ovens, microwaves, hobs, free-standing cookers, hoods and built-in coffee machines.", "buyerRelevance": "Confirm local model suffixes, dimensions, energy or gas requirements, installation clearances and certification."},
+    {"name": "Refrigeration, dishwashing and laundry", "positioning": "Major-appliance categories include refrigerators, wine coolers, dishwashers and washing machines.", "buyerRelevance": "Verify energy labels, water and electrical standards, responsible operator, spare parts and destination warranty."},
+    {"name": "Sinks, taps and small appliances", "positioning": "Teka combines kitchen appliances with sinks, taps, accessories and a current small-appliance range.", "buyerRelevance": "Separate appliance, plumbing and food-contact compliance files and confirm the legal manufacturer and service route for each category."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Teka's 2024 divestment announcement described Teka Group as operating 10 factories and producing more than three million products annually at that time.", "scope": "Teka Group at the announced 2024 transaction stage; the disclosure is not a current model-to-plant map", "buyerCheck": "Request the exact product's current factory, origin, legal manufacturer, quality plan and declaration rather than assigning one of the group factories by inference."},
+    {"evidence": "The official history records expansion from sinks into cookers, ovens and hoods and later investment in product and factory upgrades.", "scope": "Teka's historical group development; not evidence for the current factory of a quoted SKU", "buyerCheck": "Connect historical capability claims to current model-specific production and conformity documents."},
+    {"evidence": "The reviewed public sources do not publish a complete current mapping of Teka models to factories after the Midea acquisition.", "scope": "Public materials reviewed through 7 August 2026", "buyerCheck": "Obtain a post-acquisition supplier declaration covering the proposed model, plant, origin and responsible company."}
+  ],
+  "marketsChannels": [
+    {"evidence": "Teka states that its products are available in more than 120 countries and operates country-specific websites and support routes.", "scope": "Teka's disclosed international presence; assortment, seller and service arrangements differ by market", "buyerCheck": "Confirm the model on the destination-country site and identify the local importer, invoice issuer and warranty provider."},
+    {"evidence": "The official global site provides product catalogues, manuals and support access across major and small appliances.", "scope": "Current official global web catalogue; it does not guarantee local availability", "buyerCheck": "Match the exact model, manual, language, voltage, certification and warranty terms to the destination market."},
+    {"evidence": "The completed acquisition excluded Teka Rus LLC.", "scope": "The transaction perimeter disclosed on 30 April 2025", "buyerCheck": "For Russia or adjacent cross-border supply, verify ownership, trademark authorization, contracting company and sanctions or export-control status separately."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Teka combines a broad kitchen and appliance offer with Midea's scale, while the 2025 transaction and explicit Teka Rus exclusion make current entity and territory checks central to cross-border procurement.",
+    "competitorSlugs": ["midea", "bosch-home-appliances", "electrolux", "gorenje"]
+  },
+  "developments": [
+    {"date": "2025-04-30", "title": "Midea completes the acquisition of Teka Group", "summary": "Teka announced completion of the Midea transaction, expressly excluding Teka Rus LLC from the acquisition perimeter.", "sourceIds": ["teka-midea-completion"]},
+    {"date": "2024-06-07", "title": "Heritage B agrees to divest Teka Group to Midea", "summary": "The initial agreement described Teka Group's international scale and remained subject to regulatory approvals and other conditions.", "sourceIds": ["teka-midea-agreement"]},
+    {"date": "1957", "title": "Teka is created as a trademark", "summary": "The official history says the Teka name was formed from Thielmann and Klein after Helmut Klein joined the business.", "sourceIds": ["teka-history"]},
+    {"date": "1924", "title": "Business origins in Germany", "summary": "Teka traces its origins to Karl Thielmann's agricultural machinery company founded in Germany in 1924.", "sourceIds": ["teka-history"]}
+  ],
+  "sources": [
+    {"id": "teka-midea-completion", "title": "Teka begins a new century as part of Midea Group", "publisher": "Teka", "url": "https://www.teka.com/fr-fr/actualite/actualites-de-lentreprise/teka-entame-un-nouveau-siecle-au-sein-du-groupe-midea/", "publishedAt": "2025-04-30", "accessedAt": "2026-08-07"},
+    {"id": "teka-midea-agreement", "title": "Heritage B announces the successful divestment of Teka Group to Midea", "publisher": "Teka", "url": "https://www.teka.com/global/news/corporate/heritage-b-announces-the-successful-divestment-of-teka-group-to-midea/", "publishedAt": "2024-06-07", "accessedAt": "2026-08-07"},
+    {"id": "teka-history", "title": "The history behind Teka brand", "publisher": "Teka", "url": "https://www.teka.com/global/about-us/history/", "accessedAt": "2026-08-07"},
+    {"id": "teka-products", "title": "Teka Appliances", "publisher": "Teka", "url": "https://www.teka.com/global/", "accessedAt": "2026-08-07"},
+    {"id": "teka-downloads", "title": "Teka catalogues and downloads", "publisher": "Teka", "url": "https://www.teka.com/global/downloads/", "accessedAt": "2026-08-07"},
+    {"id": "teka-support", "title": "Teka Support", "publisher": "Teka", "url": "https://www.teka.com/global/support/", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T17:35:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T17:35:00+08:00"
+}

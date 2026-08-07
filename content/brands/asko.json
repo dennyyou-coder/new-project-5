@@ -1,0 +1,67 @@
+{
+  "status": "published",
+  "slug": "asko",
+  "name": "ASKO",
+  "aliases": ["Asko", "ASKO Appliances"],
+  "legalEntityNote": "ASKO is a consumer appliance brand within Hisense Group, not one universal legal entity. Hisense Europe integrates the ASKO and Gorenje businesses in Europe, while entities such as Gorenje gospodinjski aparati, d.o.o., ASKO Appliances companies and regional sales or service companies can hold different operating, import, sales, privacy and warranty roles. The reviewed public sources do not identify one trademark owner, manufacturer or warrantor for every jurisdiction and model.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://global.asko.com/",
+  "headline": "ASKO premium appliances within Hisense Europe's operating network",
+  "description": "A source-backed profile of ASKO, separating the Swedish consumer brand, Hisense Group ownership, Hisense Europe and Gorenje operating layers, product portfolio, production evidence and model-level buyer checks.",
+  "metaDescription": "ASKO brand profile: Hisense ownership, premium laundry and kitchen appliances, European operations and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with ASKO, Hisense Europe, Gorenje or Hisense Group. Brand and facility evidence does not identify the manufacturer, factory, origin, importer, seller or warrantor for every ASKO SKU.",
+  "headquarters": "Swedish brand; Hisense Europe operating context in Velenje, Slovenia",
+  "founded": "1950 in Vara, Sweden",
+  "heroImage": "/images/brands/asko/hero-washing-appliance-production.webp",
+  "heroImageAlt": "Robotic preassembly of an ASKO washing-appliance drum in Velenje",
+  "heroImageCaption": "Official Hisense Europe media image identified as robotic preassembly of ASKO washing appliances in Velenje; it is facility evidence, not a factory assignment for every ASKO model.",
+  "heroSourceUrl": "https://hisense.hgecdn.net/medias/ENG-Press-Rooms-Velenje-img-5-CMS-900x500.webp?context=bWFzdGVyfGltYWdlc3w4NzgwNHxpbWFnZS93ZWJwfGFHWTRMMmcwTnk4eE5UZzNPRE0zTlRBeE5EUXpNQzlGVGtkZlVISmxjM05mVW05dmJYTmZWbVZzWlc1cVpWOXBiV2RmTlMxRFRWTXRPVEF3ZURVd01DNTNaV0p3fDdmYjhlZDQyNTEyYjliODNmMTczNTQ0MWIwODZkNDZjNGY0MGVhNWZlNDVlZDIzY2UzN2RlZmZjNDJmODY0YTk",
+  "logoImage": "/images/brands/asko/logo.webp",
+  "logoImageAlt": "ASKO logo",
+  "logoSourceUrl": "https://hisense.hgecdn.net/medias/ASKO-logo-black-no-byline.png?context=bWFzdGVyfGltYWdlc3wyNDMxM3xpbWFnZS9wbmd8YUdWaEwyZzJZUzh4TlRnNE9EWXdOell3T0RnMk1pOUJVMHRQSUd4dloyOGdZbXhoWTJzZ0xTQnVieUJpZVd4cGJtVXVjRzVufGM5YjcwYTViYzM5MzZkODQ4MDlhMWNhOWRlMTdjMGM1YzExMTRmNDFhOTcwNGI2ODc5Y2RmMzE3OGE0MTU3NzQ",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/asko/brand-operating-boundary.svg", "alt": "ASKO brand, Hisense Group, Hisense Europe and local responsibility boundary", "caption": "Hisense Group ownership and Hisense Europe operations do not replace model- and market-level checks for the contracting, manufacturing and warranty entities."},
+    {"placement": "operations", "src": "/images/brands/asko/appliance-evidence-check.svg", "alt": "ASKO portfolio and appliance procurement verification workflow", "caption": "ASKO's premium portfolio spans laundry, dishwashing, cooking, cooling and wine care; every quotation still needs a model-specific evidence pack."}
+  ],
+  "ownership": {
+    "summary": "Hisense Group identifies ASKO as one of its owned brands, while Hisense Europe describes ASKO as a global brand in its integrated European appliance business alongside Hisense and Gorenje. This establishes group ownership and an operating context, not one legal entity for all ASKO products and markets.",
+    "parentCompany": "Hisense Group"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {"name": "Laundry care", "positioning": "ASKO's official range includes washing machines, tumble dryers, drying cabinets and integrated laundry accessories positioned around Scandinavian design and durability.", "buyerRelevance": "Confirm model code, capacity, voltage, water connection, professional-use eligibility, parts and local service coverage."},
+    {"name": "Dishwashers", "positioning": "Domestic and selected professional dishwashing products form a long-standing ASKO category.", "buyerRelevance": "Verify installation format, local energy and water labels, sanitation claims, rack configuration, responsible operator and warranty."},
+    {"name": "Cooking, cooling and wine care", "positioning": "The current portfolio extends to ovens, hobs, hoods, refrigeration and wine climate cabinets.", "buyerRelevance": "Check the destination-market assortment, exact dimensions, electrical or gas requirements, conformity documents and after-sales route."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Hisense Europe's official media library labels a Velenje image as robotic preassembly of ASKO washing appliances.", "scope": "The depicted washing-appliance operation in Velenje at the time of the official media record; not every ASKO product or model", "buyerCheck": "Require the exact model's legal manufacturer, production site, country of origin and current declaration before assigning Velenje production."},
+    {"evidence": "ASKO's official product collection states that selected washing machines, dryers and dishwashers are designed and tested for a 20-year lifecycle.", "scope": "The product families and test assumptions described in the cited collection; not a universal warranty or service-life promise", "buyerCheck": "Request the referenced test basis, duty cycle, warranty terms, spare-parts plan and maintenance requirements for the offered model."},
+    {"evidence": "The reviewed public sources do not provide a complete current model-to-factory map for ASKO's global portfolio.", "scope": "Public materials reviewed through 7 August 2026", "buyerCheck": "Obtain factory, supplier, origin, inspection and compliance evidence for each contracted SKU."}
+  ],
+  "marketsChannels": [
+    {"evidence": "ASKO operates through country and regional websites with market-specific catalogues and support routes.", "scope": "Official ASKO markets reviewed; range, seller and warranty entity vary by country", "buyerCheck": "Use the destination-country site and obtain the local seller, importer, invoice issuer and warranty provider in writing."},
+    {"evidence": "Hisense Europe connects ASKO to its integrated European business and multi-country sales organization.", "scope": "Hisense Europe's disclosed European operating network; not a contract counterparty for every transaction", "buyerCheck": "Identify the actual company named on the quotation, invoice, product label, privacy terms and warranty."},
+    {"evidence": "Official ASKO product and support materials use market-specific model references and terms.", "scope": "Products and support documents published for the relevant market", "buyerCheck": "Match the complete model suffix, voltage, certification, manual and warranty to the intended destination before ordering."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: ASKO competes as a premium Scandinavian-design appliance brand backed by Hisense Europe's scale. Its buyer diligence challenge is connecting the brand promise and selective factory evidence to the exact model, responsible company and service route.",
+    "competitorSlugs": ["miele", "gorenje", "bosch-home-appliances", "fisher-paykel"]
+  },
+  "developments": [
+    {"date": "2018", "title": "ASKO enters the Hisense Group operating context", "summary": "Hisense's acquisition of Gorenje placed ASKO within Hisense Group and the later integrated Hisense Europe structure.", "sourceIds": ["hisense-sustainability-2023", "hisense-europe-about"]},
+    {"date": "2014", "title": "ASKO records a Swedish head-office move", "summary": "ASKO's official history records the ASKO Appliances AB head office moving to Lidköping, Sweden.", "sourceIds": ["asko-why"]},
+    {"date": "1950", "title": "First ASKO washing machine is produced in Vara", "summary": "ASKO traces its appliance history to Karl-Erik Andersson's first washing machine and the Junga Verkstäder workshop in Vara, Sweden.", "sourceIds": ["asko-history", "asko-why"]}
+  ],
+  "sources": [
+    {"id": "asko-history", "title": "History", "publisher": "ASKO", "url": "https://si.asko.com/history", "accessedAt": "2026-08-07"},
+    {"id": "asko-why", "title": "Why choose ASKO", "publisher": "ASKO", "url": "https://www.asko.com/th/why-asko", "accessedAt": "2026-08-07"},
+    {"id": "hisense-europe-about", "title": "Hisense Europe – Innovating for Life Simplified", "publisher": "Hisense Europe", "url": "https://hisense-europe.com/about-us", "accessedAt": "2026-08-07"},
+    {"id": "hisense-europe-media", "title": "Photos and Logotypes", "publisher": "Hisense Europe", "url": "https://hisense-europe.com/press-rooms-page", "accessedAt": "2026-08-07"},
+    {"id": "hisense-sustainability-2023", "title": "Hisense Group Sustainability Report 2023", "publisher": "Hisense Group", "url": "https://www.hisense.com/upload/accessory/202410/p1ibb445n55ecn3417ao17tta6u4.pdf", "publishedAt": "2024", "accessedAt": "2026-08-07"},
+    {"id": "asko-collection-2024", "title": "ASKO Collection 2024", "publisher": "ASKO", "url": "https://static18.asko.com/files/default/Thailand/product-images/ASKO-COLLECTION-2024_compressed.pdf", "publishedAt": "2024", "accessedAt": "2026-08-07"},
+    {"id": "asko-privacy", "title": "Privacy Policy", "publisher": "ASKO", "url": "https://www.asko.com/th/privacy-policy", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T17:35:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T17:35:00+08:00"
+}

@@ -1,0 +1,69 @@
+{
+  "status": "published",
+  "slug": "hamilton-beach",
+  "name": "Hamilton Beach",
+  "aliases": ["Hamilton Beach®", "HamiltonBeach.com"],
+  "legalEntityNote": "Hamilton Beach is a consumer brand, not the same entity as Hamilton Beach Brands Holding Company or its principal operating subsidiary Hamilton Beach Brands, Inc. The group also uses distinct names such as Hamilton Beach Commercial and Hamilton Beach Professional and licenses other brands. Regional sellers, importers and warranty providers can differ, so the holding company, operating company, brand, commercial lines and local contracting entities must not be treated as interchangeable.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://hamiltonbeach.com/",
+  "headline": "Hamilton Beach small appliances across consumer and operating-company boundaries",
+  "description": "A source-backed profile of Hamilton Beach, separating the consumer brand, listed holding company, operating subsidiary, commercial brand extensions, product portfolio, sourcing model and local buyer checks.",
+  "metaDescription": "Hamilton Beach brand profile: holding company, operating company, small appliances, sourcing, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Hamilton Beach Brands Holding Company or Hamilton Beach Brands, Inc. Group and brand disclosures do not establish the legal manufacturer, factory, origin, importer, seller or warrantor for every Hamilton Beach product.",
+  "headquarters": "Glen Allen, Virginia, United States (group and operating-company context)",
+  "founded": "1910 brand origins",
+  "heroImage": "/images/brands/hamilton-beach/hero-countertop-appliances.webp",
+  "heroImageAlt": "Hamilton Beach countertop cooking appliances in a kitchen",
+  "heroImageCaption": "Official Hamilton Beach website sharing image showing several branded countertop appliances in a home kitchen.",
+  "heroSourceUrl": "https://hamiltonbeach.com/media/hamilton_beach_social.jpg",
+  "logoImage": "/images/brands/hamilton-beach/logo.webp",
+  "logoImageAlt": "Hamilton Beach logo",
+  "logoSourceUrl": "https://hamiltonbeach.com/img/logolg.png",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/hamilton-beach/corporate-brand-boundary.svg", "alt": "Hamilton Beach brand, holding company, operating company and commercial line boundary", "caption": "The consumer brand, listed holding company, operating subsidiary and Hamilton Beach Commercial are related but distinct identities."},
+    {"placement": "operations", "src": "/images/brands/hamilton-beach/sourcing-channel-check.svg", "alt": "Hamilton Beach sourcing, model, channel and warranty verification workflow", "caption": "Group sourcing disclosures do not identify a product's factory or local warrantor; buyers should verify the exact model and transaction chain."}
+  ],
+  "ownership": {
+    "summary": "Hamilton Beach Brands Holding Company is the listed operating holding company for Hamilton Beach Brands, Inc., which owns and markets the Hamilton Beach consumer brand as part of a wider owned and licensed portfolio. The brand is therefore distinct from both the holding company and principal operating subsidiary.",
+    "parentCompany": "Hamilton Beach Brands Holding Company"
+  },
+  "leadership": [
+    {"name": "R. Scott Tidey", "role": "President and Chief Executive Officer", "context": "Official 2026 governance and results materials identify Tidey as CEO of both Hamilton Beach Brands Holding Company and Hamilton Beach Brands, Inc.; this does not make the consumer brand a legal company."}
+  ],
+  "productPortfolio": [
+    {"name": "Cooking and food preparation", "positioning": "Hamilton Beach's current consumer range spans air fryers, blenders, food processors, mixers, slow cookers, toaster ovens, grills and related preparation appliances.", "buyerRelevance": "Confirm the exact household-use model, voltage, capacity, food-contact declarations, attachments, replacement parts and professional-use restrictions."},
+    {"name": "Coffee and beverage", "positioning": "Coffee makers, grinders, electric kettles and other beverage products are prominent parts of the brand's catalogue.", "buyerRelevance": "Verify brew format, electrical standard, water-contact materials, cleaning requirements, consumables and local warranty."},
+    {"name": "Home environment and garment care", "positioning": "The official site also lists air purifiers, odor eliminators, garment steamers, irons, vacuum sealers and other home products.", "buyerRelevance": "Check filter or consumable continuity, claims evidence, regional model code, compliance file and after-sales route."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Hamilton Beach Brands' 2025 results discuss diversifying the sourcing base and tariff impacts on imports from China.", "scope": "Consolidated company sourcing and 2025 tariff exposure; not a factory or origin assignment for every Hamilton Beach SKU", "buyerCheck": "Request the offered model's legal manufacturer, current factory, origin, tariff classification and compliance documents."},
+    {"evidence": "The holding company's public materials describe a portfolio business managed through Hamilton Beach Brands, Inc. and multiple consumer, commercial and licensed brands.", "scope": "Group-level operating structure; it does not identify which factory makes a specific consumer product", "buyerCheck": "Ensure supplier evidence names the Hamilton Beach brand, exact model and responsible legal entities rather than relying on group affiliation."},
+    {"evidence": "The reviewed public sources do not disclose a complete model-to-factory map for the Hamilton Beach consumer catalogue.", "scope": "Public materials reviewed through 7 August 2026", "buyerCheck": "Obtain current factory, origin, inspection, quality and conformity evidence for each contracted model."}
+  ],
+  "marketsChannels": [
+    {"evidence": "HamiltonBeach.com sells and presents consumer products by category while linking separately to Hamilton Beach Commercial and Hamilton Beach Professional.", "scope": "Official US consumer website and linked brand architecture", "buyerCheck": "Confirm whether the quotation is for a household Hamilton Beach product or a distinct commercial/professional line and retain the corresponding specification and warranty."},
+    {"evidence": "Official warranty documents can name Hamilton Beach Brands, Inc. and restrict coverage by country of purchase, authorized dealer or intended use.", "scope": "The cited product warranty and its covered countries and conditions; terms vary by model and market", "buyerCheck": "Obtain the warranty document for the exact model and destination and confirm the local service provider before purchase."},
+    {"evidence": "The official product catalogue and support pages use model-specific manuals, parts and customer-service routes.", "scope": "Products supported through the reviewed official sites", "buyerCheck": "Match the complete model number on product, packaging, manual, invoice and parts lookup and confirm cross-border eligibility."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Hamilton Beach competes through a very broad, accessible small-appliance assortment and established retail distribution. The main procurement risk is confusing the consumer brand with the holding company, operating subsidiary or separate commercial and licensed lines.",
+    "competitorSlugs": ["breville-sage", "kitchenaid", "groupe-seb", "delonghi"]
+  },
+  "developments": [
+    {"date": "2026-02-25", "title": "Company reports 2025 results under new CEO", "summary": "Hamilton Beach Brands Holding Company reported 2025 results and identified sourcing diversification as one response to tariff disruption.", "sourceIds": ["hbb-2025-results"]},
+    {"date": "2017", "title": "Hamilton Beach Brands Holding Company becomes separately listed", "summary": "The current holding-company structure dates from the 2017 spin-off and separates the listed parent from Hamilton Beach Brands, Inc.", "sourceIds": ["hbb-annual-report-2025"]},
+    {"date": "1910", "title": "Hamilton Beach brand origins", "summary": "The business traces its name and early electric-appliance history to L.H. Hamilton and Chester Beach.", "sourceIds": ["hbb-company"]}
+  ],
+  "sources": [
+    {"id": "hbb-company", "title": "About Our Company", "publisher": "Hamilton Beach Brands Holding Company", "url": "https://www.hamiltonbeachbrands.com/about-our-company/about-our-company/default.aspx", "accessedAt": "2026-08-07"},
+    {"id": "hbb-annual-report-2025", "title": "2025 Annual Report", "publisher": "Hamilton Beach Brands Holding Company", "url": "https://www.hamiltonbeachbrands.com/investors/annual-meeting-materials/default.aspx", "publishedAt": "2026", "accessedAt": "2026-08-07"},
+    {"id": "hbb-2025-results", "title": "Fourth Quarter and Full Year 2025 Results", "publisher": "Hamilton Beach Brands Holding Company", "url": "https://www.hamiltonbeachbrands.com/news/news-details/2026/HAMILTON-BEACH-BRANDS-HOLDING-COMPANY-ANNOUNCES-FOURTH-QUARTER-AND-FULL-YEAR-2025-RESULTS/default.aspx", "publishedAt": "2026-02-25", "accessedAt": "2026-08-07"},
+    {"id": "hbb-governance", "title": "Corporate Governance", "publisher": "Hamilton Beach Brands Holding Company", "url": "https://www.hamiltonbeachbrands.com/investors/corporate-governance/default.aspx", "accessedAt": "2026-08-07"},
+    {"id": "hamilton-products", "title": "Hamilton Beach Products", "publisher": "Hamilton Beach", "url": "https://hamiltonbeach.com/", "accessedAt": "2026-08-07"},
+    {"id": "hamilton-warranty", "title": "Limited Warranty", "publisher": "Hamilton Beach Brands, Inc.", "url": "https://useandcares.hamiltonbeach.com/files/850352401.pdf", "accessedAt": "2026-08-07"},
+    {"id": "hamilton-faq", "title": "Frequently Asked Questions", "publisher": "Hamilton Beach", "url": "https://hamiltonbeach.com/frequently-asked-questions", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T17:35:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T17:35:00+08:00"
+}
