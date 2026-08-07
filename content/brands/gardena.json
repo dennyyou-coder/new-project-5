@@ -1,0 +1,67 @@
+{
+  "status": "published",
+  "slug": "gardena",
+  "name": "GARDENA",
+  "aliases": ["Gardena", "Gardena Division", "GARDENA smart system"],
+  "legalEntityNote": "GARDENA is a consumer garden-equipment brand and the name of a reporting division within Husqvarna Group, not one universal legal entity. Husqvarna AB is the listed group parent; GARDENA Manufacturing GmbH is a German operating, webshop and service entity in reviewed terms, while other Husqvarna group companies, factories, importers, retailers and warranty providers can be responsible in other markets.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.gardena.com/",
+  "headline": "GARDENA across Husqvarna Group, the Gardena Division and connected lawn-care procurement",
+  "description": "A source-backed profile of GARDENA, separating the consumer brand, Husqvarna AB ownership, Gardena Division, regional legal entities, robotic mowing portfolio, channels and buyer checks.",
+  "metaDescription": "GARDENA brand profile: Husqvarna ownership, Gardena Division, robotic mowers, regional entities, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with GARDENA or Husqvarna Group. Group and division disclosures do not identify the legal manufacturer, plant, importer, seller, app operator or warranty entity for every GARDENA SKU.",
+  "headquarters": "Ulm, Germany (GARDENA context)",
+  "founded": "1961",
+  "heroImage": "/images/brands/gardena/hero-smart-sileno-max.webp",
+  "heroImageAlt": "GARDENA smart SILENO max robotic lawn mower",
+  "heroImageCaption": "Official GARDENA product image of a current smart SILENO max robotic lawn mower.",
+  "heroSourceUrl": "https://media.husqvarnagroup.com/image/FP-955232.png?fit=bounds&format=webp&width=1600",
+  "logoImage": "/images/brands/gardena/logo.webp",
+  "logoImageAlt": "GARDENA logo",
+  "logoSourceUrl": "https://www.gardena.com/on/demandware.static/-/Library-Sites-Gardena/default/dw6cee842c/images/logo.svg",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/gardena/group-division-boundary.svg", "alt": "Husqvarna AB, Gardena Division, GARDENA brand and regional entity boundary", "caption": "Husqvarna AB, the Gardena Division, the GARDENA brand and market-level sellers are related but distinct identity layers."},
+    {"placement": "operations", "src": "/images/brands/gardena/robotic-mower-check.svg", "alt": "GARDENA robotic mower model, app, supply and warranty checks", "caption": "Connected robotic mowers require model, installation, app-region, factory, service and warranty checks."}
+  ],
+  "ownership": {
+    "summary": "GARDENA has been part of Husqvarna Group since 2007. Husqvarna AB is the listed parent company, while Gardena Division is a group reporting segment and GARDENA is the product-facing consumer brand.",
+    "parentCompany": "Husqvarna AB"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {"name": "Watering systems", "positioning": "GARDENA's core portfolio includes hose systems, sprinklers, irrigation controls, pumps and related garden-water products.", "buyerRelevance": "Confirm connection standards, pressure range, water-contact compliance, spare fittings and local winterization requirements."},
+    {"name": "Lawn care and robotic mowing", "positioning": "The current range includes conventional lawn tools and smart SILENO robotic mowers with connected and virtual-boundary features on selected models.", "buyerRelevance": "Match lawn area, slope, boundary method, wireless coverage, app region, installation and local technical support."},
+    {"name": "Garden tools and battery products", "positioning": "GARDENA covers tree and shrub care, soil cultivation and cordless products, including participation in the Bosch-led POWER FOR ALL Alliance.", "buyerRelevance": "Verify battery-generation compatibility, included packs and chargers, tool-specific certification and warranty treatment."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Husqvarna Group reports Gardena as a distinct division within its group structure and financial reporting.", "scope": "Group and division reporting; not a model-to-factory assignment", "buyerCheck": "Request the exact model's legal manufacturer, production site, country of origin and declaration of conformity."},
+    {"evidence": "GARDENA's official history states that the brand joined Husqvarna Group in 2007 and continues as a separate Gardena Division.", "scope": "Brand and organizational history", "buyerCheck": "Do not treat group ownership as proof that Husqvarna AB manufactures or warrants every GARDENA product."},
+    {"evidence": "Official regional terms identify GARDENA Manufacturing GmbH as the German webshop and service contracting entity in reviewed contexts.", "scope": "Reviewed German and selected European online-sales or service terms", "buyerCheck": "For each destination, verify the seller, importer, service company and warranty provider printed in local terms and product documents."}
+  ],
+  "marketsChannels": [
+    {"evidence": "GARDENA states that its products are available in more than 100 countries.", "scope": "Global brand reach; product range and operator vary by market", "buyerCheck": "Use the destination-country catalogue and confirm the contracting seller, authorized retailer, importer and parts route."},
+    {"evidence": "The current smart SILENO pages connect supported robotic mowers to GARDENA smart app and Husqvarna Group account services.", "scope": "Supported current connected models and regions", "buyerCheck": "Confirm app-store availability, account region, wireless requirements, data terms and offline fallback before purchase."},
+    {"evidence": "GARDENA provides product registration and market-specific warranty and support information through regional websites.", "scope": "Regional support model; eligibility and duration vary", "buyerCheck": "Capture the written warranty, issuing entity, registration deadline, proof-of-purchase rules and repair logistics for the exact SKU."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: GARDENA combines strong European garden-care recognition, watering-system depth and a connected robotic-mower range within Husqvarna Group. Buyers should separate group scale from the exact model's manufacturer, regional seller, app service and warranty chain.",
+    "competitorSlugs": ["husqvarna", "worx", "toro", "ego-power-plus"]
+  },
+  "developments": [
+    {"date": "2020", "title": "GARDENA joins the POWER FOR ALL Alliance", "summary": "GARDENA's official history records its participation in the cross-brand 18V battery alliance initiated with Bosch.", "sourceIds": ["gardena-about"]},
+    {"date": "2016", "title": "GARDENA introduces its smart system", "summary": "The official history dates the connected garden system to 2016.", "sourceIds": ["gardena-about"]},
+    {"date": "2007", "title": "GARDENA joins Husqvarna Group", "summary": "GARDENA became part of Husqvarna Group while retaining a separate division identity.", "sourceIds": ["gardena-about"]},
+    {"date": "1961", "title": "GARDENA is founded in Ulm", "summary": "Werner Kress and Eberhard Kastner founded the business that became GARDENA.", "sourceIds": ["gardena-about"]}
+  ],
+  "sources": [
+    {"id": "gardena-about", "title": "About GARDENA", "publisher": "GARDENA", "url": "https://www.gardena.com/int/c/about/gardena", "accessedAt": "2026-08-07"},
+    {"id": "gardena-robots", "title": "Robotic Lawnmowers", "publisher": "GARDENA", "url": "https://www.gardena.com/int/c/discover/products/lawn-care/robotic-lawnmowers", "accessedAt": "2026-08-07"},
+    {"id": "gardena-sileno", "title": "smart SILENO max 800 m² Robotic Lawn Mower", "publisher": "GARDENA", "url": "https://www.gardena.com/int/products/lawn-care/robotic-lawnmowers/smart-sileno-max-800-m-robotic-lawn-mower/970620803.html", "accessedAt": "2026-08-07"},
+    {"id": "gardena-terms", "title": "General Terms and Conditions for Consumer Services", "publisher": "GARDENA", "url": "https://www.gardena.com/de/c/ueber-gardena/agb/agb-serviceleistungen-verbraucher", "accessedAt": "2026-08-07"},
+    {"id": "gardena-warranty", "title": "How to obtain the GARDENA warranty", "publisher": "GARDENA Help Center", "url": "https://help.gardena.com/hc/de/articles/7991782887324-Wie-erhalte-ich-die-GARDENA-Garantie", "publishedAt": "2026-03-19", "accessedAt": "2026-08-07"},
+    {"id": "husqvarna-annual", "title": "Annual Report 2025", "publisher": "Husqvarna Group", "url": "https://www.husqvarnagroup.com/sites/husqvarna/files/2026-03/202603249629-1.pdf", "publishedAt": "2026-03", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T23:50:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T23:50:00+08:00"
+}

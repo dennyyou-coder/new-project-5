@@ -1,0 +1,66 @@
+{
+  "status": "published",
+  "slug": "ego-power-plus",
+  "name": "EGO Power+",
+  "aliases": ["EGO", "EGO 56V", "EGO Commercial"],
+  "legalEntityNote": "EGO Power+ is an outdoor-power-equipment brand within the Chervon group, not one universal legal entity. Chervon Holdings Limited provides group and brand context; regional operating companies, Chervon Green Power manufacturing entities, importers, retailers and warranty providers can hold different responsibilities. In the United States and Canada, the reviewed EGO limited warranty is issued by Chervon North America, Inc.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://egopowerplus.com/",
+  "headline": "EGO Power+ across Chervon ownership, the 56V platform and regional supply responsibility",
+  "description": "A source-backed profile of EGO Power+, separating the consumer brand, Chervon group ownership, regional operators, 56V product platform, disclosed production network and model-level buyer checks.",
+  "metaDescription": "EGO Power+ brand profile: Chervon ownership, 56V tools, manufacturing network, channels, warranty entity and buyer checks.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with EGO or Chervon. Group ownership, platform compatibility and facility disclosures do not establish the factory, origin, importer, seller or warranty terms for every EGO SKU.",
+  "headquarters": "Naperville, Illinois, United States (Chervon North America context)",
+  "founded": "Brand launched in 2014",
+  "heroImage": "/images/brands/ego-power-plus/hero-mower-lineup.webp",
+  "heroImageAlt": "Lineup of EGO Power+ 56V cordless lawn mowers",
+  "heroImageCaption": "Official EGO product image showing the current cordless mower lineup on the shared 56V platform.",
+  "heroSourceUrl": "https://egopowerplus.com/media/contentmanager/content/Desktop_1920x700_7.jpg?auto=webp&format=pjpg&optimize=medium",
+  "logoImage": "/images/brands/ego-power-plus/logo.webp",
+  "logoImageAlt": "EGO Power+ logo",
+  "logoSourceUrl": "https://egopowerplus.com/static/version1785947597/frontend/Chervon/ego/en_US/images/logo.svg",
+  "contentVisuals": [
+    {"placement": "ownership", "src": "/images/brands/ego-power-plus/ownership-boundary.svg", "alt": "EGO Power+ brand, Chervon group and regional operating boundary", "caption": "EGO is a Chervon brand, while regional sales, production, importing and warranty responsibilities require separate evidence."},
+    {"placement": "operations", "src": "/images/brands/ego-power-plus/model-verification.svg", "alt": "EGO model, battery, supply and support verification workflow", "caption": "The shared 56V platform supports compatibility checks but does not identify one factory, origin or warranty route for every SKU."}
+  ],
+  "ownership": {
+    "summary": "Chervon presents EGO as one of its global brands and states that the EGO platform was launched in 2014. Chervon Holdings Limited is the listed holding company for the group; EGO remains the product-facing brand rather than a substitute name for every Chervon legal entity.",
+    "parentCompany": "Chervon Holdings Limited"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {"name": "56V lawn and garden equipment", "positioning": "EGO's official range covers walk-behind and riding mowers, blowers, trimmers, chainsaws, snow equipment and other outdoor tools on its ARC Lithium platform.", "buyerRelevance": "Verify the exact tool, bare-tool or kit configuration, battery capacity, charger, attachment interface and destination-market certification."},
+    {"name": "Commercial outdoor equipment", "positioning": "EGO Commercial extends the battery platform into products intended for professional landscape work.", "buyerRelevance": "Confirm commercial-use warranty terms, duty cycle, fleet charging, service turnaround and locally stocked parts."},
+    {"name": "Portable power and cleaning-adjacent products", "positioning": "The current official catalogue also includes portable power, a pressure washer and a wet/dry vacuum.", "buyerRelevance": "Do not treat portfolio presence as proof of commercial-cleaning suitability; verify rating, accessories, consumables and application-specific compliance."}
+  ],
+  "manufacturingSupplyChain": [
+    {"evidence": "Chervon's official outdoor-power-equipment page identifies Chervon Green Power production operations in Nanjing, China and Binh Duong, Vietnam.", "scope": "Disclosed Chervon outdoor-power-equipment production network; not a model-to-factory assignment", "buyerCheck": "Request the exact model's legal manufacturer, factory address, country of origin and shipment documents."},
+    {"evidence": "Chervon describes a group value chain spanning research and development, sourcing, manufacturing, testing, marketing, distribution and after-sales service.", "scope": "Group capability statement, not proof that one entity performs every step for every EGO SKU", "buyerCheck": "Identify the contracting entity and obtain product-specific quality, compliance and supplier records."},
+    {"evidence": "EGO markets a common 56V ARC Lithium battery system across a broad tool portfolio.", "scope": "Compatibility claims for supported current EGO tools and batteries", "buyerCheck": "Confirm model-generation compatibility, included battery, charger standard and software or firmware requirements before ordering."}
+  ],
+  "marketsChannels": [
+    {"evidence": "Chervon states that EGO serves markets including North America, Europe and Australia, while EGO operates regional websites and support routes.", "scope": "Named regional market presence; catalogue and operator vary by country", "buyerCheck": "Use the destination-country catalogue and verify the importer, invoice issuer, authorized dealer and local service route."},
+    {"evidence": "EGO's United States and Canada warranty names Chervon North America, Inc. as issuer and directs claims through EGO customer service and authorized service centres.", "scope": "United States and Canada limited warranty last updated 25 November 2025", "buyerCheck": "For other markets, obtain the local warranty document and confirm the issuing entity, registration deadline and commercial-use exclusions."},
+    {"evidence": "EGO sells through authorized retail and dealer channels with product and service availability varying by market.", "scope": "Current regional channel model", "buyerCheck": "Confirm dealer authorization, serial eligibility, spare-parts access and who carries return freight and repair responsibility."}
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: EGO's differentiation is a broad, high-visibility 56V cordless ecosystem spanning residential and professional outdoor equipment. Procurement risk sits less in the brand identity than in model compatibility, regional operator, factory, channel and warranty differences.",
+    "competitorSlugs": ["greenworks", "stihl", "ryobi", "husqvarna"]
+  },
+  "developments": [
+    {"date": "2025-11-25", "title": "North American warranty policy is updated", "summary": "The current policy identifies Chervon North America, Inc. as the warranty issuer for covered EGO products in the United States and Canada.", "sourceIds": ["ego-warranty"]},
+    {"date": "2014", "title": "EGO platform launches", "summary": "Chervon's official outdoor-power-equipment history dates the EGO launch to 2014.", "sourceIds": ["chervon-ope"]},
+    {"date": "1993", "title": "Chervon traces its manufacturing business to 1993", "summary": "EGO's official company page places the brand within an international manufacturing business established in 1993.", "sourceIds": ["ego-about"]}
+  ],
+  "sources": [
+    {"id": "ego-home", "title": "EGO Power+ Official Website", "publisher": "EGO Power+", "url": "https://egopowerplus.com/", "accessedAt": "2026-08-07"},
+    {"id": "ego-about", "title": "About EGO", "publisher": "EGO Power+", "url": "https://egopowerplus.com/about-ego", "accessedAt": "2026-08-07"},
+    {"id": "ego-warranty", "title": "Warranty Policy", "publisher": "EGO Power+", "url": "https://egopowerplus.com/warranty-policy", "publishedAt": "2025-11-25", "accessedAt": "2026-08-07"},
+    {"id": "chervon-brands", "title": "Our Brands: EGO", "publisher": "Chervon", "url": "https://global.chervongroup.com/en/node/108", "accessedAt": "2026-08-07"},
+    {"id": "chervon-ope", "title": "Outdoor Power Equipment Business Unit", "publisher": "Chervon", "url": "https://global.chervongroup.com/en/who-we-are/business-units/outdoor-power-equipment", "accessedAt": "2026-08-07"},
+    {"id": "chervon-group", "title": "Chervon Group", "publisher": "Chervon", "url": "https://global.chervongroup.com/", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T23:50:00+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T23:50:00+08:00"
+}

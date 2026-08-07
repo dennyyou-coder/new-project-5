@@ -702,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the eighty-two published profiles and approved article relationships", () => {
+test("the release gate validates the eighty-five published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -733,6 +733,7 @@ test("the release gate validates the eighty-two published profiles and approved 
     "dremel",
     "dyson",
     "ecovacs",
+    "ego-power-plus",
     "electrolux",
     "eufy",
     "eureka",
@@ -740,6 +741,7 @@ test("the release gate validates the eighty-two published profiles and approved 
     "fisher-paykel",
     "flex",
     "fluidra",
+    "gardena",
     "ge-appliances",
     "gorenje",
     "greenworks",
@@ -787,6 +789,7 @@ test("the release gate validates the eighty-two published profiles and approved 
     "supor",
     "teka",
     "tineco",
+    "toro",
     "toshiba-appliances",
     "vax",
     "vestel",
@@ -972,7 +975,7 @@ test("the release gate validates the eighty-two published profiles and approved 
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 82);
+  assert.equal(loadedProfiles.length, 85);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1038,7 +1041,7 @@ test("the release gate validates the eighty-two published profiles and approved 
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 82);
+  assert.equal(profiles.length, 85);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1057,6 +1060,63 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("outdoor-equipment batch ten profiles publish with verified brand and operating boundaries", async () => {
+  const newSlugs = ["ego-power-plus", "gardena", "toro"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+  const membershipsFor = (slug) => categories
+    .filter(({ profiles }) => profiles.some((candidate) => candidate.slug === slug))
+    .map(({ category }) => category.slug);
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published", `${slug} must be published`);
+    assert.equal(candidate.schemaEntityType, "Brand", `${slug} must remain a brand entity`);
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.match(candidate.heroSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(
+      candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)),
+      `${slug} must use dedicated content visuals`
+    );
+
+    const logoPath = path.join(process.cwd(), "public", candidate.logoImage);
+    const heroPath = path.join(process.cwd(), "public", candidate.heroImage);
+    assert.equal(fs.existsSync(logoPath), true, `${slug} logo must exist`);
+    assert.equal(fs.existsSync(heroPath), true, `${slug} hero must exist`);
+
+    const logoMetadata = await sharp(logoPath).metadata();
+    const heroMetadata = await sharp(heroPath).metadata();
+    assert.equal(logoMetadata.format, "webp", `${slug} logo format`);
+    assert.equal(logoMetadata.hasAlpha, true, `${slug} logo transparency`);
+    assert.ok(logoMetadata.width >= 600, `${slug} logo width`);
+    assert.equal(heroMetadata.format, "webp", `${slug} hero format`);
+    assert.equal(heroMetadata.width, 1600, `${slug} hero width`);
+    assert.equal(heroMetadata.height, 1000, `${slug} hero height`);
+
+    const taggedArticles = realArticles.filter(
+      (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+    );
+    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    assert.deepEqual(membershipsFor(slug), ["lawn-garden-equipment"]);
+    assert.equal(getBrandCategoryForProfile(slug)?.slug, "lawn-garden-equipment");
+  }
+
+  assert.match(profilesBySlug.get("ego-power-plus").ownership.summary, /Chervon/i);
+  assert.match(profilesBySlug.get("ego-power-plus").legalEntityNote, /brand|regional|warranty/i);
+  assert.match(profilesBySlug.get("gardena").ownership.summary, /Husqvarna/i);
+  assert.match(profilesBySlug.get("gardena").legalEntityNote, /brand|division|regional/i);
+  assert.match(profilesBySlug.get("toro").ownership.summary, /The Toro Company/i);
+  assert.match(profilesBySlug.get("toro").legalEntityNote, /brand|company|regional/i);
 });
 
 test("home-appliance batch nine profiles publish with verified brand and operating boundaries", async () => {
