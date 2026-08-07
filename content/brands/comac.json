@@ -1,0 +1,158 @@
+{
+  "status": "published",
+  "slug": "comac",
+  "name": "Comac",
+  "aliases": ["COMAC", "Comac SpA", "Comac S.p.A."],
+  "legalName": "Comac S.p.A.",
+  "legalEntityNote": "Comac S.p.A. is the Italian company identified by the official company-data page. Distributors, destination-market importers, service partners and contracting sellers can hold separate responsibilities.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.comac.it/en/",
+  "headline": "Comac professional cleaning machines, Italian company and buyer checks",
+  "description": "A source-backed profile of Comac S.p.A., its Italian cleaning-equipment history, floorcare portfolio, autonomous SELF.Y platform, international channel and procurement checks.",
+  "metaDescription": "Comac profile: Italian company, scrubber dryers, sweepers, SELF.Y autonomous cleaning, international channels and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Comac. Company history and product-page statements do not establish the manufacturer, origin, importer, conformity route or warranty provider for every configured machine and market.",
+  "headquarters": "Santa Maria di Zevio, Verona, Italy",
+  "founded": "1974",
+  "heroImage": "/images/brands/comac/hero-selfy-autonomous-scrubber.webp",
+  "heroImageAlt": "Comac SELF.Y autonomous scrubber in a large modern interior",
+  "heroSourceUrl": "https://www.comac.it/assets/repository/img/prodotti/top/1712762659145-selfy_1_3840x1600.webp",
+  "logoImage": "/images/brands/comac/logo.webp",
+  "logoImageAlt": "Comac logo",
+  "logoSourceUrl": "https://www.comac.it/assets/img/logo.svg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/comac/company-channel-responsibility-boundary.svg",
+      "alt": "Comac company distributor importer and service responsibility boundary",
+      "caption": "Comac S.p.A. is the named Italian company, while the contracting seller, importer and warranty provider must be confirmed for each market."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/comac/machine-market-service-check.svg",
+      "alt": "Comac machine configuration market compliance and service verification checklist",
+      "caption": "Machine model, configuration, compliance documents and local service coverage need project-level verification."
+    }
+  ],
+  "ownership": {
+    "summary": "Official materials identify Comac S.p.A. as the company behind the Comac professional-cleaning portfolio. The reviewed official sources do not name a parent company, and they do not establish an ownership relationship with Fimap S.p.A.; the two legal entities should therefore not be merged or treated as parent and subsidiary."
+  },
+  "leadership": [
+    {
+      "name": "Giancarlo Ruffo",
+      "role": "Co-founder",
+      "context": "Comac's official history says Giancarlo Ruffo and Domenico Accadia created Costruzione Macchine, shortened to Comac, in 1974."
+    },
+    {
+      "name": "Domenico Accadia",
+      "role": "Co-founder",
+      "context": "Comac's official history identifies mechanic Domenico Accadia as the co-founder who developed the original Italian floor-scrubber venture with Giancarlo Ruffo."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Scrubber dryers",
+      "positioning": "Walk-behind and ride-on floor scrubbers cover commercial and industrial cleaning duties across multiple machine sizes.",
+      "buyerRelevance": "Match cleaning path, tank volume, floor type, brush system, battery, gradient and realistic productivity to the site."
+    },
+    {
+      "name": "Sweepers and street sweepers",
+      "positioning": "Indoor and outdoor sweepers extend the range from compact facilities to heavier industrial and urban applications.",
+      "buyerRelevance": "Verify debris type, filtration, unloading, traction, emissions or road approval and operator requirements for the exact configuration."
+    },
+    {
+      "name": "SELF.Y autonomous scrubber",
+      "positioning": "SELF.Y is presented as a cobot floor scrubber for airports, supermarkets, offices, healthcare and other large spaces.",
+      "buyerRelevance": "Require a live site trial covering mapping, obstacle behavior, edge cleaning, recovery, data access, charging and manual fallback."
+    },
+    {
+      "name": "Vacuum cleaners and single-disc machines",
+      "positioning": "Supporting floorcare machines broaden the range beyond mechanized scrubbing and sweeping.",
+      "buyerRelevance": "Confirm filtration, accessories, chemicals, electrical standard, consumables and local parts availability."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Comac's official history traces the business to Italian production of floor scrubbers beginning in 1974 and documents early production lines in the Verona area.",
+      "scope": "Company history and early Comac production, not every current model or component",
+      "buyerCheck": "Request the exact machine's manufacturer plate, production site, serial number, country of origin and conformity declaration."
+    },
+    {
+      "evidence": "The official SELF.Y page publishes model-level applications and technical material for the autonomous scrubber.",
+      "scope": "SELF.Y product family and the configuration offered in the destination market",
+      "buyerCheck": "Freeze hardware, software, safety options, battery, accessories and destination-market certification in the quotation."
+    },
+    {
+      "evidence": "Comac's product navigation separates scrubbers, sweepers, autonomous machines, vacuums and single-disc machines into distinct families.",
+      "scope": "Official portfolio taxonomy rather than a claim of one manufacturing route",
+      "buyerCheck": "Do not generalize one product family's origin or supplier arrangement to the rest of the portfolio."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Comac publishes a worldwide contact route and invites companies to apply to become distributors.",
+      "scope": "Company-published international channel framework",
+      "buyerCheck": "Confirm the authorized distributor, importing entity, contracting seller and service territory for the destination market."
+    },
+    {
+      "evidence": "The SELF.Y page positions the machine for airports, supermarkets, offices and healthcare facilities.",
+      "scope": "Reference applications for SELF.Y, not guaranteed suitability",
+      "buyerCheck": "Conduct a supervised trial on the buyer's actual floors, traffic conditions and cleaning schedule before award."
+    },
+    {
+      "evidence": "Comac provides product-specific pages and downloadable documentation through its official website.",
+      "scope": "Published information available for named models",
+      "buyerCheck": "Archive the exact-market manual, parts list, warranty, software terms and compliance documents that govern the purchased machine."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Comac competes as a broad Italian professional-cleaning equipment supplier spanning conventional and autonomous floorcare. Buyers should compare delivered configuration, local service capacity and lifecycle cost rather than relying on portfolio breadth alone.",
+    "competitorSlugs": ["fimap", "hako", "nilfisk", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2024",
+      "title": "Comac marks 50 years from its 1974 origin",
+      "summary": "The official history presents five decades of product and company development in professional floor cleaning.",
+      "sourceIds": ["comac-history"]
+    },
+    {
+      "date": "1974",
+      "title": "Costruzione Macchine is created",
+      "summary": "Comac says Giancarlo Ruffo and Domenico Accadia created Costruzione Macchine, shortened to Comac, to produce floor scrubbers in Italy.",
+      "sourceIds": ["comac-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "comac-history",
+      "title": "The History of Comac: Innovation in Cleaning Since 1974",
+      "publisher": "Comac",
+      "url": "https://www.comac.it/en/why-comac/history",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "comac-company",
+      "title": "Company Data",
+      "publisher": "Comac",
+      "url": "https://www.comac.it/en/company-data",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "comac-selfy",
+      "title": "SELF.Y Cobot Floor Scrubber",
+      "publisher": "Comac",
+      "url": "https://www.comac.it/en/models/cobot-floor-scrubber/71/self.y",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "comac-worldwide",
+      "title": "Comac Worldwide",
+      "publisher": "Comac",
+      "url": "https://www.comac.it/en/contacts/comac-worldwide",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T17:00:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T17:00:00+08:00"
+}

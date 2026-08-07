@@ -218,8 +218,11 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     description:
       "Verified profiles of commercial and industrial cleaning brands, focused on floorcare systems, autonomous equipment, pressure washing and professional distribution models.",
     brandSlugs: [
+      "cleanfix",
+      "comac",
       "dulevo",
       "ecovacs",
+      "fimap",
       "gausium",
       "hako",
       "ipc",
@@ -233,7 +236,10 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "tennant"
     ],
     primaryBrandSlugs: [
+      "cleanfix",
+      "comac",
       "dulevo",
+      "fimap",
       "gausium",
       "hako",
       "ipc",
