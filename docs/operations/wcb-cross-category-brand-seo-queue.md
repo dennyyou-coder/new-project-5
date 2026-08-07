@@ -97,7 +97,7 @@ Slugs after Batch A remain queue locks and must still pass exact-intent collisio
 
 ## Batch B local release gate
 
-- Local gate passed: content classification, 15 insight tests, 89 brand tests and the 522-page production build all succeeded.
+- Local gate passed on the latest `main`: content classification, 15 insight tests, 90 brand tests and the 525-page production build all succeeded.
 - Rendered desktop and 390 px mobile checks passed for all three pages: HTTP 200, correct title, H1, description, canonical and BlogPosting schema; all nine article images loaded at 1600×900 with no horizontal overflow or unexpected failed requests.
 - The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it does not occur as an application error in the Git-linked deployment.
 - Preview, merge, Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
