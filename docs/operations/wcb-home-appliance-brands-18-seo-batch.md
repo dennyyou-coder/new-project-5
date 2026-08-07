@@ -36,12 +36,12 @@ This file is the operational source of truth for the home-appliance ownership an
 | 10 | Beko | `who-owns-beko-appliances-beko-europe` | 4 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-beko-appliances-beko-europe |
 | 11 | Hotpoint | `who-owns-hotpoint-appliances-regional-split` | 4 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-hotpoint-appliances-regional-split |
 | 12 | Hisense | `who-owns-hisense-appliances-gorenje-asko` | 4 | `published_verified` | Published through cross-category Batch C |
-| 13 | Gorenje | `who-owns-gorenje-appliances-hisense` | 5 | `planned` |  |
+| 13 | Gorenje | `who-owns-gorenje-appliances-hisense` | 5 | `local_verified` | Batch E |
 | 14 | Panasonic | `who-owns-panasonic-appliances-vacuum-manufacturing` | 5 | `published_verified` | Published through cross-category Batch C |
-| 15 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | 5 | `planned` |  |
-| 16 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | 6 | `planned` |  |
+| 15 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | 5 | `local_verified` | Batch E |
+| 16 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | 6 | `local_verified` | Batch E |
 | 17 | SUPOR | `who-owns-supor-groupe-seb-manufacturing` | 6 | `planned` |  |
-| 18 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | 6 | `planned` |  |
+| 18 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | 6 | `published_verified` | Batch D |
 
 ## Batch 1 checkpoint
 

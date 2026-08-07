@@ -22,12 +22,12 @@ This is the website operational record for the traffic-prioritized brand SEO que
 | 7 | Hisense Appliances | `who-owns-hisense-appliances-gorenje-asko` | C | `published_verified` |
 | 8 | Panasonic Appliances | `who-owns-panasonic-appliances-vacuum-manufacturing` | C | `published_verified` |
 | 9 | Breville / Sage | `who-owns-breville-sage-regional-brand-rights` | C | `published_verified` |
-| 10 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | D | `local_verified` |
-| 11 | GARDENA | `who-owns-gardena-husqvarna-sileno-manufacturing` | D | `local_verified` |
-| 12 | Braun Appliances | `who-owns-braun-appliances-delonghi-pg-license` | D | `local_verified` |
-| 13 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | E | `planned` |
-| 14 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | E | `planned` |
-| 15 | Gorenje | `who-owns-gorenje-appliances-hisense` | E | `planned` |
+| 10 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | D | `published_verified` |
+| 11 | GARDENA | `who-owns-gardena-husqvarna-sileno-manufacturing` | D | `published_verified` |
+| 12 | Braun Appliances | `who-owns-braun-appliances-delonghi-pg-license` | D | `published_verified` |
+| 13 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | E | `local_verified` |
+| 14 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | E | `local_verified` |
+| 15 | Gorenje | `who-owns-gorenje-appliances-hisense` | E | `local_verified` |
 | 16 | ASKO Appliances | `who-owns-asko-appliances-hisense-gorenje` | F | `planned` |
 | 17 | Hamilton Beach | `who-owns-hamilton-beach-brands-sourcing` | F | `planned` |
 | 18 | Teka Appliances | `who-owns-teka-appliances-midea` | F | `planned` |
@@ -104,7 +104,7 @@ Slugs after Batch A remain queue locks and must still pass exact-intent collisio
 
 ## Next starting point
 
-After Batch D is production-verified, the next fixed batch is: **Groupe SEB, Rowenta, Gorenje**.
+After Batch E is production-verified, the next fixed batch is: **ASKO Appliances, Hamilton Beach, Teka Appliances**.
 
 ## Batch B production checkpoint synchronized in this release
 
@@ -168,3 +168,35 @@ After Batch D is production-verified, the next fixed batch is: **Groupe SEB, Row
 - Rendered desktop and 390 px mobile checks passed for all three pages: HTTP 200, correct August 8, 2026 date, title, H1, canonical and BlogPosting schema; all nine article images loaded at 1600 × 900 with no horizontal overflow.
 - The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it is not an application error in the Git-linked deployment.
 - Preview, merge, Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
+
+## Batch D production checkpoint synchronized in this release
+
+- De’Longhi, GARDENA and Braun Appliances were published through content PR #48 and production commit `c4cf4011be567692618996b8c75996686b504b15`; Vercel deployment `dpl_4LD5ThcVXvQSKbZxxV65U99odm6M` reached `READY`.
+- The display-date correction was published through PR #50 and final production commit `b3c3483bed491ecaba75b2974442b9f0be4e4b54`; deployment `dpl_8sA7mV7tirq7HGLPzG6nyqajMnaS` reached `READY`.
+- All three exact production URLs returned HTTP 200 and passed metadata, image and responsive checks with the correct August 8, 2026 date. Their article and queue statuses are mechanically corrected to `published_verified` in this substantive Batch E release.
+
+## Batch E fixed titles
+
+1. **Who Owns Groupe SEB? Brands, SUPOR, Manufacturing and Family Control Explained**
+2. **Who Owns Rowenta? Groupe SEB, Vacuum Cleaners and Manufacturing Explained**
+3. **Who Owns Gorenje Appliances? Hisense, ASKO and Manufacturing Explained**
+
+## Batch E collision and factual boundary
+
+- All three exact repository slugs were absent on `origin/main` commit `b3c3483bed491ecaba75b2974442b9f0be4e4b54`, and each exact production URL returned `404` before writing.
+- Groupe SEB is distinct from the 2018 annual-report editorial. This guide answers current listed ownership, founder-family influence, brand portfolio and production responsibility, and links to the historical page instead of repeating it.
+- Rowenta focuses on the brand, its 1988 acquisition, floorcare portfolio and model-level production evidence. It remains separate from the broader Groupe SEB corporate guide.
+- Gorenje is distinct from the existing Hisense parent guide. It focuses on Gorenje's position inside Hisense Europe, the European industrial network and model-level operating responsibility.
+
+## Batch E article and visual review
+
+- Each article contains a direct answer, at-a-glance table, legal and manufacturing boundaries, buyer checklist, FAQ, final answer, official primary sources and approved Brand Intelligence links.
+- Each package contains one reviewed 1600×900 unbranded WebP cover and two deterministic 1600×900 SVG fact maps using the `industry_map` system.
+- Covers contain no real brand logos or trademarks. Information diagrams keep ownership, regional operations, factories and product-specific responsibility visibly separate.
+
+## Batch E local release gate
+
+- Local gate passed after rebasing onto the latest `main`: content classification, 15 insight tests, 95 brand tests and the 547-page production build all succeeded.
+- Rendered desktop and 390 px mobile checks passed for all three pages: correct August 8, 2026 date, title, H1, canonical and BlogPosting schema; all nine article images loaded at 1600×900 with no horizontal overflow.
+- The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it is not an application error in the Git-linked deployment.
+- Preview, merge, Git-linked Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
