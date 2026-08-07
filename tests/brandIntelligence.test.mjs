@@ -1280,7 +1280,10 @@ test("home-appliance batch nine profiles publish with verified brand and operati
 test("home-appliance batch eight profiles publish with current ownership and operating boundaries", async () => {
   const newSlugs = ["asko", "hamilton-beach", "teka"];
   const expectedTaggedArticles = new Map([
-    ["asko", ["who-owns-hisense-appliances-gorenje-asko"]],
+    ["asko", [
+      "who-owns-gorenje-appliances-hisense",
+      "who-owns-hisense-appliances-gorenje-asko",
+    ]],
     ["hamilton-beach", []],
     ["teka", []],
   ]);
@@ -1443,9 +1446,15 @@ test("home-appliance batch seven profiles publish with regional brand and operat
 test("home-appliance batch six profiles publish independently with verified entity boundaries", async () => {
   const newSlugs = ["gorenje", "rowenta", "supor"];
   const expectedTaggedArticles = new Map([
-    ["gorenje", ["who-owns-hisense-appliances-gorenje-asko"]],
-    ["rowenta", []],
-    ["supor", []],
+    ["gorenje", [
+      "who-owns-gorenje-appliances-hisense",
+      "who-owns-hisense-appliances-gorenje-asko",
+    ]],
+    ["rowenta", [
+      "who-owns-rowenta-groupe-seb-vacuums",
+      "who-owns-groupe-seb-brands-supor",
+    ]],
+    ["supor", ["who-owns-groupe-seb-brands-supor"]],
   ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
@@ -1545,8 +1554,14 @@ test("home-appliance batch five profiles publish independently with dedicated of
       "who-owns-braun-appliances-delonghi-pg-license",
       "who-owns-delonghi-appliance-group-brands",
     ]],
-    ["groupe-seb", []],
-    ["hisense", ["who-owns-hisense-appliances-gorenje-asko"]],
+    ["groupe-seb", [
+      "who-owns-rowenta-groupe-seb-vacuums",
+      "who-owns-groupe-seb-brands-supor",
+    ]],
+    ["hisense", [
+      "who-owns-gorenje-appliances-hisense",
+      "who-owns-hisense-appliances-gorenje-asko",
+    ]],
   ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
