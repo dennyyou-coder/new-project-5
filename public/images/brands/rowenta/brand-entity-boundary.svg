@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Rowenta brand and entity boundary</title>
+  <desc id="desc">Rowenta consumer brand, SEB parent, operating companies and model responsibility layers.</desc>
+  <rect width="1600" height="900" fill="#fbf5f4"/>
+  <text x="110" y="112" fill="#201b24" font-family="Arial, sans-serif" font-size="54" font-weight="700">Ownership is only the first layer</text>
+  <text x="110" y="164" fill="#6f6269" font-family="Arial, sans-serif" font-size="25">Rowenta belongs to Groupe SEB, but a brand name is not a complete supply-chain answer.</text>
+  <rect x="110" y="245" width="1380" height="125" rx="28" fill="#9e1628"/>
+  <text x="165" y="298" fill="#ffd9de" font-family="Arial, sans-serif" font-size="22" font-weight="700">CONSUMER BRAND</text>
+  <text x="165" y="339" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="700">Rowenta · floorcare · linen care · air and personal care</text>
+  <path d="M800 370V425" stroke="#d7909b" stroke-width="6"/><polygon points="786,413 800,438 814,413" fill="#d7909b"/>
+  <rect x="110" y="435" width="1380" height="125" rx="28" fill="#ffffff" stroke="#9e1628" stroke-width="5"/>
+  <text x="165" y="488" fill="#9e1628" font-family="Arial, sans-serif" font-size="22" font-weight="700">GROUP AND OPERATING ENTITIES</text>
+  <text x="165" y="529" fill="#201b24" font-family="Arial, sans-serif" font-size="30" font-weight="700">SEB S.A. · Rowenta France · regional Groupe SEB companies</text>
+  <path d="M800 560V615" stroke="#d7909b" stroke-width="6"/><polygon points="786,603 800,628 814,603" fill="#d7909b"/>
+  <rect x="110" y="625" width="1380" height="125" rx="28" fill="#ffffff" stroke="#ba7c86" stroke-width="4"/>
+  <text x="165" y="678" fill="#8d505b" font-family="Arial, sans-serif" font-size="22" font-weight="700">MODEL AND MARKET RESPONSIBILITY</text>
+  <text x="165" y="719" fill="#201b24" font-family="Arial, sans-serif" font-size="29" font-weight="700">Legal maker · factory · origin · seller · importer · warrantor</text>
+  <text x="1490" y="858" fill="#897a81" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · reviewed 7 August 2026</text>
+</svg>

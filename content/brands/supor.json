@@ -1,0 +1,119 @@
+{
+  "status": "published",
+  "slug": "supor",
+  "name": "SUPOR",
+  "aliases": ["Supor", "苏泊尔"],
+  "legalEntityNote": "SUPOR is a consumer brand closely associated with listed Zhejiang Supor Co., Ltd., but the brand name does not identify every contracting or manufacturing entity. Zhejiang Supor's direct parent is SEB INTERNATIONALE S.A.S. and its ultimate parent is SEB S.A.; subsidiaries, factories, exporters, distributors, retailers, importers and after-sales entities can hold separate responsibilities. The reviewed sources did not establish one trademark-holding entity for every jurisdiction, so buyers should confirm the relevant registry record separately.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.supor.com/",
+  "headline": "SUPOR cookware, appliances and Groupe SEB ownership boundaries",
+  "description": "A source-backed profile of SUPOR, separating the consumer brand, Zhejiang Supor, SEB INTERNATIONALE, SEB S.A., product portfolio, manufacturing network, channels and buyer checks.",
+  "metaDescription": "SUPOR brand profile: Zhejiang Supor, Groupe SEB ownership, cookware and appliances, manufacturing, channels and verification.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with SUPOR, Zhejiang Supor or Groupe SEB. Company and site-level evidence does not identify the manufacturer, factory, origin, exporter, importer, seller or warrantor for every SUPOR SKU.",
+  "headquarters": "Hangzhou, Zhejiang, China (Zhejiang Supor head office)",
+  "founded": "1994 business origins; current listed legal entity registered in 2000",
+  "heroImage": "/images/brands/supor/hero-kitchen-appliance.webp",
+  "heroImageAlt": "SUPOR electric steamer kitchen appliance",
+  "heroImageCaption": "Official Groupe SEB SUPOR brand image showing a branded kitchen appliance from the portfolio.",
+  "heroSourceUrl": "https://www.groupeseb.com/sites/default/files/2018-07/MARQUES-Supor.jpg",
+  "logoImage": "/images/brands/supor/logo.webp",
+  "logoImageAlt": "SUPOR 苏泊尔 logo",
+  "logoSourceUrl": "https://www.supor.com/bocupload/at/file/20250328/17431283641857318IwD.pdf",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/supor/brand-company-boundary.svg",
+      "alt": "SUPOR brand, Zhejiang Supor, SEB INTERNATIONALE and SEB S.A. ownership map",
+      "caption": "The SUPOR consumer brand, listed operating company, direct parent and ultimate parent are related but distinct identity layers."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/supor/portfolio-supply-check.svg",
+      "alt": "SUPOR cookware, kitchen appliance, home-environment product and supply verification workflow",
+      "caption": "Portfolio breadth and factory-network evidence do not replace model-level checks for producer, site, exporter, importer and warranty coverage."
+    }
+  ],
+  "ownership": {
+    "summary": "Zhejiang Supor's official reporting identifies SEB INTERNATIONALE S.A.S. as its parent company and SEB S.A. as its ultimate parent. The listed Zhejiang company and its subsidiaries operate the SUPOR business, while the SUPOR wordmark remains a consumer brand rather than a substitute for the legal entity on each contract or product.",
+    "parentCompany": "SEB INTERNATIONALE S.A.S."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Cookware and kitchen tools",
+      "positioning": "SUPOR's core portfolio covers pressure cookers, woks, frying pans, steamers and other cookware and kitchen tools.",
+      "buyerRelevance": "Verify material grade, coating system, food-contact compliance, intended heat source, factory, origin and packaging claims."
+    },
+    {
+      "name": "Small electric kitchen appliances",
+      "positioning": "Official SUPOR materials identify rice cookers, electric pressure cookers, induction cookers, kettles, blenders, air fryers and other small appliances.",
+      "buyerRelevance": "Confirm voltage, model code, controller and heating specifications, food-contact documentation, spare parts and local service."
+    },
+    {
+      "name": "Home-environment and garment-care appliances",
+      "positioning": "SUPOR's official foreign-trade profile lists air filters, vacuum cleaners and garment steamers as expansion beyond the kitchen.",
+      "buyerRelevance": "Confirm whether the exact environmental or cleaning product is current in the destination market and identify its maker, filters or consumables, certification and warranty route."
+    },
+    {
+      "name": "Large kitchen appliances",
+      "positioning": "The company also reports a large-kitchen-appliance business alongside cookware and small domestic appliances.",
+      "buyerRelevance": "Separate built-in or large-appliance installation, certification and service obligations from the small-appliance channel."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Zhejiang Supor's 2025 annual reporting describes the company and subsidiaries as operating independent procurement, production and sales systems under the listed-company structure.",
+      "scope": "Zhejiang Supor Co., Ltd. and consolidated subsidiaries in the 2025 reporting period; not every SUPOR-branded SKU or external supplier",
+      "buyerCheck": "Match the quoted legal manufacturer and factory to the annual-report entity list, product declaration, packaging and customs documentation."
+    },
+    {
+      "evidence": "SUPOR's official foreign-trade page identifies R&D and manufacturing sites in Hangzhou, Wuhan, Shaoxing, Yuhuan and Vietnam and describes category specialization by site.",
+      "scope": "Factory network described on the official foreign-trade page, whose operating figures reference 2017 and should not be treated as a current model allocation",
+      "buyerCheck": "Request current factory ownership, audit, production-line and model-assignment evidence before relying on the published site map."
+    },
+    {
+      "evidence": "Groupe SEB's 2025 Universal Registration Document includes SUPOR in the group perimeter and records the group's majority investment history.",
+      "scope": "SEB S.A. consolidated group and investment history; it does not make another Groupe SEB factory the producer of a SUPOR SKU",
+      "buyerCheck": "Keep ownership evidence separate from model-level factory and country-of-origin evidence."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "SUPOR's official company materials describe broad mainland-China retail and online channels and international distribution through Groupe SEB's network.",
+      "scope": "Official corporate channel description with historical operating figures; current seller counts and authorization require fresh confirmation",
+      "buyerCheck": "Validate the current distributor or retailer with Zhejiang Supor or the relevant regional company and retain dated authorization evidence."
+    },
+    {
+      "evidence": "The official foreign-trade site publishes market-specific contact routes for Europe, the United States, the Americas, Asia and Africa.",
+      "scope": "SUPOR foreign-trade contact structure published on the official site; it does not by itself prove product registration or importer status",
+      "buyerCheck": "Confirm the exporter, destination importer, product compliance and warranty responsibilities in the contract."
+    },
+    {
+      "evidence": "SUPOR publishes investor relations, customer service and an official after-sales hotline on its corporate site.",
+      "scope": "China-facing corporate and after-sales channels; overseas service arrangements can differ",
+      "buyerCheck": "Identify the local warrantor and repair or replacement route before purchasing for an overseas market."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: SUPOR combines a leading China cookware and small-appliance identity with a listed operating platform and Groupe SEB control. Its opportunity for cleaning buyers lies in the broader home-environment portfolio; the diligence challenge is proving that a current model, maker and support chain exist in the target market.",
+    "competitorSlugs": ["midea", "philips-home-appliances", "panasonic", "beko"]
+  },
+  "developments": [
+    {"date": "2026-04-03", "title": "Zhejiang Supor publishes its 2025 annual report", "summary": "The listed company released its 2025 annual report through the official investor-relations site.", "sourceIds": ["supor-annual-report-2025"]},
+    {"date": "2007", "title": "Groupe SEB acquires a majority stake", "summary": "Groupe SEB's 2025 registration document records its acquisition of a majority stake in SUPOR in 2007.", "sourceIds": ["seb-urd-2025"]},
+    {"date": "2004", "title": "SUPOR lists in Shenzhen", "summary": "SUPOR's official company history records its 2004 listing as the first cookware company on the Shenzhen Stock Exchange.", "sourceIds": ["supor-foreign-trade"]},
+    {"date": "1994", "title": "SUPOR business origins", "summary": "SUPOR's official history identifies 1994 as the establishment of the Zhejiang Supor business.", "sourceIds": ["supor-foreign-trade"]}
+  ],
+  "sources": [
+    {"id": "supor-brand", "title": "Supor", "publisher": "Groupe SEB", "url": "https://www.groupeseb.com/en/supor", "accessedAt": "2026-08-07"},
+    {"id": "supor-annual-report-2025", "title": "Annual Report 2025", "publisher": "Zhejiang Supor Co., Ltd.", "url": "https://www.supor.com/bocupload/at/file/20260403/1775185251697755HL2s.pdf", "publishedAt": "2026-04-03", "accessedAt": "2026-08-07"},
+    {"id": "supor-annual-report-2024", "title": "2024 Annual Report of Zhejiang Supor Co., Ltd.", "publisher": "Zhejiang Supor Co., Ltd.", "url": "https://www.supor.com/bocupload/at/file/20250328/1743126790848935SE5W.pdf", "publishedAt": "2025-03-28", "accessedAt": "2026-08-07"},
+    {"id": "supor-foreign-trade", "title": "Company Brief Introduction and Foreign Trade", "publisher": "Zhejiang Supor Co., Ltd.", "url": "https://www.supor.com/foreigntrade.html", "accessedAt": "2026-08-07"},
+    {"id": "supor-about", "title": "About SUPOR", "publisher": "Zhejiang Supor Co., Ltd.", "url": "https://www.supor.com/Culture/About/", "accessedAt": "2026-08-07"},
+    {"id": "seb-urd-2025", "title": "Universal Registration Document and Annual Financial Report 2025", "publisher": "SEB S.A.", "url": "https://www.groupeseb.com/sites/default/files/2026-03/SEB_DEU_2025_EN.pdf", "publishedAt": "2026", "accessedAt": "2026-08-07"},
+    {"id": "supor-investor-relations", "title": "Investor Relations", "publisher": "Zhejiang Supor Co., Ltd.", "url": "https://www.supor.com/culture/investor.html", "accessedAt": "2026-08-07"}
+  ],
+  "publishedAt": "2026-08-07T11:16:50+08:00",
+  "lastVerified": "2026-08-07",
+  "lastModified": "2026-08-07T11:16:50+08:00"
+}
