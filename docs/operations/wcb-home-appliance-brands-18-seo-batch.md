@@ -30,11 +30,11 @@ This file is the operational source of truth for the home-appliance ownership an
 | 4 | GE Appliances | `who-owns-ge-appliances-haier-manufacturing` | 2 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-ge-appliances-haier-manufacturing |
 | 5 | Fisher & Paykel | `who-owns-fisher-paykel-haier-manufacturing` | 2 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-fisher-paykel-haier-manufacturing |
 | 6 | Midea | `who-owns-midea-appliances-brand-portfolio` | 2 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-midea-appliances-brand-portfolio |
-| 7 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | 3 | `planned` |  |
+| 7 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | 3 | `local_verified` | Included in cross-category Batch B |
 | 8 | Whirlpool | `who-owns-whirlpool-appliances-beko-europe` | 3 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-whirlpool-appliances-beko-europe |
 | 9 | KitchenAid | `who-makes-kitchenaid-appliances-whirlpool` | 3 | `published_verified` | https://worldcleanbiz.com/blog/who-makes-kitchenaid-appliances-whirlpool |
 | 10 | Beko | `who-owns-beko-appliances-beko-europe` | 4 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-beko-appliances-beko-europe |
-| 11 | Hotpoint | `who-owns-hotpoint-appliances-regional-split` | 4 | `local_verified` | Included in cross-category Batch A |
+| 11 | Hotpoint | `who-owns-hotpoint-appliances-regional-split` | 4 | `published_verified` | https://worldcleanbiz.com/blog/who-owns-hotpoint-appliances-regional-split |
 | 12 | Hisense | `who-owns-hisense-appliances-gorenje-asko` | 4 | `planned` |  |
 | 13 | Gorenje | `who-owns-gorenje-appliances-hisense` | 5 | `planned` |  |
 | 14 | Panasonic | `who-owns-panasonic-appliances-vacuum-manufacturing` | 5 | `planned` |  |

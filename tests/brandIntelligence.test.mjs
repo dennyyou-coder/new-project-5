@@ -1055,6 +1055,11 @@ test("all published brand profiles have local official logos and two to three lo
 
 test("home-appliance batch seven profiles publish with regional brand and operating boundaries", async () => {
   const newSlugs = ["braun-household", "breville-sage", "xiaomi-mijia"];
+  const expectedTaggedArticles = new Map([
+    ["braun-household", []],
+    ["breville-sage", []],
+    ["xiaomi-mijia", ["who-makes-xiaomi-mijia-home-appliances"]],
+  ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
   );
@@ -1097,7 +1102,11 @@ test("home-appliance batch seven profiles publish with regional brand and operat
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.equal(taggedArticles.length, 0, `${slug} must not modify ownership article relationships`);
+    assert.deepEqual(
+      taggedArticles.map((article) => article.slug),
+      expectedTaggedArticles.get(slug),
+      `${slug} must expose only approved ownership article relationships`
+    );
   }
 
   assert.match(profilesBySlug.get("xiaomi-mijia").ownership.summary, /Xiaomi Corporation/i);
@@ -1289,6 +1298,11 @@ test("home-appliance batch five profiles publish independently with dedicated of
 
 test("home-appliance batch four profiles publish independently with dedicated official assets", async () => {
   const newSlugs = ["hotpoint", "panasonic", "toshiba-appliances"];
+  const expectedTaggedArticles = new Map([
+    ["hotpoint", []],
+    ["panasonic", []],
+    ["toshiba-appliances", ["who-owns-toshiba-appliances-midea-lifestyle"]],
+  ]);
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
   );
@@ -1323,7 +1337,11 @@ test("home-appliance batch four profiles publish independently with dedicated of
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.equal(taggedArticles.length, 0, `${slug} must not modify ownership article relationships`);
+    assert.deepEqual(
+      taggedArticles.map((article) => article.slug),
+      expectedTaggedArticles.get(slug),
+      `${slug} must expose only approved ownership article relationships`
+    );
   }
 
   assert.match(profilesBySlug.get("hotpoint").legalEntityNote, /Europe|European/i);
