@@ -19,12 +19,12 @@ This is the website operational record for the traffic-prioritized brand SEO que
 | 4 | Toshiba Appliances | `who-owns-toshiba-appliances-midea-lifestyle` | B | `published_verified` |
 | 5 | Xiaomi / Mijia Home Appliances | `who-makes-xiaomi-mijia-home-appliances` | B | `published_verified` |
 | 6 | Nilfisk | `who-owns-nilfisk-freudenberg-manufacturing` | B | `published_verified` |
-| 7 | Hisense Appliances | `who-owns-hisense-appliances-gorenje-asko` | C | `local_verified` |
-| 8 | Panasonic Appliances | `who-owns-panasonic-appliances-vacuum-manufacturing` | C | `local_verified` |
-| 9 | Breville / Sage | `who-owns-breville-sage-regional-brand-rights` | C | `local_verified` |
-| 10 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | D | `planned` |
-| 11 | GARDENA | `lock before research` | D | `planned` |
-| 12 | Braun Appliances | `who-owns-braun-appliances-delonghi-pg-license` | D | `planned` |
+| 7 | Hisense Appliances | `who-owns-hisense-appliances-gorenje-asko` | C | `published_verified` |
+| 8 | Panasonic Appliances | `who-owns-panasonic-appliances-vacuum-manufacturing` | C | `published_verified` |
+| 9 | Breville / Sage | `who-owns-breville-sage-regional-brand-rights` | C | `published_verified` |
+| 10 | De'Longhi | `who-owns-delonghi-appliance-group-brands` | D | `local_verified` |
+| 11 | GARDENA | `who-owns-gardena-husqvarna-sileno-manufacturing` | D | `local_verified` |
+| 12 | Braun Appliances | `who-owns-braun-appliances-delonghi-pg-license` | D | `local_verified` |
 | 13 | Groupe SEB | `who-owns-groupe-seb-brands-supor` | E | `planned` |
 | 14 | Rowenta | `who-owns-rowenta-groupe-seb-vacuums` | E | `planned` |
 | 15 | Gorenje | `who-owns-gorenje-appliances-hisense` | E | `planned` |
@@ -104,7 +104,7 @@ Slugs after Batch A remain queue locks and must still pass exact-intent collisio
 
 ## Next starting point
 
-After Batch C is production-verified, the next fixed batch is: **De'Longhi, GARDENA, Braun Appliances**.
+After Batch D is production-verified, the next fixed batch is: **Groupe SEB, Rowenta, Gorenje**.
 
 ## Batch B production checkpoint synchronized in this release
 
@@ -134,5 +134,37 @@ After Batch C is production-verified, the next fixed batch is: **De'Longhi, GARD
 
 - Local gate passed on the latest `main`: content classification, 15 insight tests, 91 brand tests and the 531-page production build all succeeded.
 - Rendered desktop and 390 px mobile checks passed for all three pages: HTTP 200, correct title, H1, description, canonical and BlogPosting schema; all nine article images loaded at 1600×900 with no horizontal overflow.
+- The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it is not an application error in the Git-linked deployment.
+- Preview, merge, Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
+
+## Batch C production checkpoint synchronized in this release
+
+- Hisense Appliances, Panasonic Appliances and Breville / Sage were published through PR #45 and production commit `b32384867369ded8de6d163c64cd669629e73ce6`.
+- Vercel production deployment `dpl_GVEocsoP1W9YWKFqhHphMmgLmFaY` reached `READY`; the three exact production URLs, metadata, images and responsive layouts passed live verification.
+- Their article and queue statuses are mechanically corrected to `published_verified` in this substantive Batch D release.
+
+## Batch D fixed titles
+
+1. **Who Owns De’Longhi? Appliance Group Brands, Shareholders and Manufacturing Explained**
+2. **Who Owns GARDENA? Husqvarna Group, SILENO Robot Mowers and Manufacturing Explained**
+3. **Who Owns Braun Appliances? De’Longhi, P&G and the Household Brand License Explained**
+
+## Batch D collision and factual boundary
+
+- All three exact repository slugs were absent on `origin/main` commit `082f425941b0ed01432f8fb774d46618e107234a`, and each exact production URL returned `404` before writing.
+- De’Longhi is distinct from the older company-history article. This search guide answers current control, group brands, manufacturing and service responsibility; it links to rather than duplicates the historical chronology.
+- GARDENA is a separate Husqvarna Group division. The article does not infer battery compatibility, factory origin, software responsibility or warranty from common group ownership.
+- P&G owns the Braun trademark while De’Longhi holds a perpetual license for defined household categories. The article keeps household appliances separate from shavers, grooming and Oral-B.
+
+## Batch D article and visual review
+
+- Each article contains a direct answer, at-a-glance table, model-level responsibility boundaries, FAQ, final answer, official primary sources and approved Brand Intelligence relationships.
+- Each package contains one reviewed 1600×900 unbranded WebP cover and two deterministic 1600×900 SVG fact maps using the `industry_map` system.
+- Covers contain no real brand logos or trademarks. A separate second pass checked crop safety, product realism, diagram labels and the ownership-versus-license boundaries.
+
+## Batch D local release gate
+
+- Local gate passed after rebasing onto the latest `main`: content classification, 15 insight tests, 93 brand tests and the 540-page production build all succeeded.
+- Rendered desktop and 390 px mobile checks passed for all three pages: HTTP 200, correct August 8, 2026 date, title, H1, canonical and BlogPosting schema; all nine article images loaded at 1600 × 900 with no horizontal overflow.
 - The only local console message was the expected unavailable `/_vercel/insights/script.js` endpoint outside Vercel; it is not an application error in the Git-linked deployment.
 - Preview, merge, Vercel production deployment and final live verification remain required before these rows can become `published_verified`.
