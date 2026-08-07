@@ -1262,7 +1262,10 @@ test("home-appliance batch eight profiles publish with current ownership and ope
 test("home-appliance batch seven profiles publish with regional brand and operating boundaries", async () => {
   const newSlugs = ["braun-household", "breville-sage", "xiaomi-mijia"];
   const expectedTaggedArticles = new Map([
-    ["braun-household", []],
+    ["braun-household", [
+      "who-owns-braun-appliances-delonghi-pg-license",
+      "who-owns-delonghi-appliance-group-brands",
+    ]],
     ["breville-sage", ["who-owns-breville-sage-regional-brand-rights"]],
     ["xiaomi-mijia", ["who-makes-xiaomi-mijia-home-appliances"]],
   ]);
@@ -1445,7 +1448,10 @@ test("home-appliance batch six profiles publish independently with verified enti
 test("home-appliance batch five profiles publish independently with dedicated official assets", async () => {
   const newSlugs = ["delonghi", "groupe-seb", "hisense"];
   const expectedTaggedArticles = new Map([
-    ["delonghi", []],
+    ["delonghi", [
+      "who-owns-braun-appliances-delonghi-pg-license",
+      "who-owns-delonghi-appliance-group-brands",
+    ]],
     ["groupe-seb", []],
     ["hisense", ["who-owns-hisense-appliances-gorenje-asko"]],
   ]);
