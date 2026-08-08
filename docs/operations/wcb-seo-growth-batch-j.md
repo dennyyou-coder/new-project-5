@@ -12,9 +12,9 @@ This is the operational record for three high-intent ownership and manufacturing
 
 | Order | Fixed title | Slug | Intent boundary | Status |
 |---:|---|---|---|---|
-| 1 | Who Owns Frigidaire? Electrolux, Manufacturing and Brand History Explained | `who-owns-frigidaire-electrolux-manufacturing` | Frigidaire child brand; distinct from the Electrolux parent-company guide | `local_verified` |
-| 2 | Who Owns Maytag? Whirlpool, Manufacturing and the Appliance Brand Explained | `who-owns-maytag-whirlpool-manufacturing` | Maytag child brand; distinct from the Whirlpool parent and regional licensing guide | `local_verified` |
-| 3 | Who Makes Henry Vacuum Cleaners? Numatic, UK Manufacturing and the Product Family Explained | `who-makes-henry-vacuum-cleaners-numatic` | Henry product family; distinct from the Numatic Brand Intelligence profile and historical commentary | `local_verified` |
+| 1 | Who Owns Frigidaire? Electrolux, Manufacturing and Brand History Explained | `who-owns-frigidaire-electrolux-manufacturing` | Frigidaire child brand; distinct from the Electrolux parent-company guide | `published_verified` |
+| 2 | Who Owns Maytag? Whirlpool, Manufacturing and the Appliance Brand Explained | `who-owns-maytag-whirlpool-manufacturing` | Maytag child brand; distinct from the Whirlpool parent and regional licensing guide | `published_verified` |
+| 3 | Who Makes Henry Vacuum Cleaners? Numatic, UK Manufacturing and the Product Family Explained | `who-makes-henry-vacuum-cleaners-numatic` | Henry product family; distinct from the Numatic Brand Intelligence profile and historical commentary | `published_verified` |
 
 ## Collision and intent checks
 
@@ -79,4 +79,7 @@ This is the operational record for three high-intent ownership and manufacturing
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- Ready PR: #62.
+- Squash-merge commit on `main`: `00b94cbd85ed5cc2d7670e87ea9210b78be5d794`.
+- Git-linked Vercel production deployment: `dpl_EnDeAnYwRtiKm7wgroMwhaKsU4Su`, status `READY`.
+- Live verification passed for the three article URLs, all nine article visuals, ownership-guide discovery, sitemap discovery, metadata/schema and desktop/mobile rendering.
