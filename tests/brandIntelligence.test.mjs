@@ -702,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the ninety-eight published profiles and approved article relationships", () => {
+test("the release gate validates the one-hundred-and-one published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -725,6 +725,7 @@ test("the release gate validates the ninety-eight published profiles and approve
     "braun-household",
     "breville-sage",
     "cleanfix",
+    "columbus",
     "comac",
     "craftsman",
     "delonghi",
@@ -804,8 +805,10 @@ test("the release gate validates the ninety-eight published profiles and approve
     "tineco",
     "toro",
     "toshiba-appliances",
+    "truvox",
     "vax",
     "vestel",
+    "wetrok",
     "whirlpool",
     "worx",
     "wybot",
@@ -988,7 +991,7 @@ test("the release gate validates the ninety-eight published profiles and approve
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 98);
+  assert.equal(loadedProfiles.length, 101);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1054,7 +1057,7 @@ test("the release gate validates the ninety-eight published profiles and approve
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 98);
+  assert.equal(profiles.length, 101);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1073,6 +1076,67 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("commercial-cleaning batch sixteen publishes Columbus, Truvox and Wetrok without article relationships", async () => {
+  const newSlugs = ["columbus", "truvox", "wetrok"];
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published");
+    assert.equal(candidate.schemaEntityType, "Organization");
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.match(candidate.logoSourceUrl, /^https:\/\//);
+    assert.match(candidate.heroSourceUrl, /^https:\/\//);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)));
+
+    const logoMetadata = await sharp(path.join(process.cwd(), "public", candidate.logoImage)).metadata();
+    const heroMetadata = await sharp(path.join(process.cwd(), "public", candidate.heroImage)).metadata();
+    assert.equal(logoMetadata.format, "webp");
+    assert.equal(logoMetadata.hasAlpha, true);
+    assert.ok(logoMetadata.width >= 600);
+    assert.equal(heroMetadata.format, "webp");
+    assert.equal(heroMetadata.width, 1600);
+    assert.equal(heroMetadata.height, 1000);
+
+    assert.deepEqual(
+      realArticles.filter(
+        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+      ),
+      [],
+      `${slug} must not create article relationships`
+    );
+    assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
+    assert.deepEqual(
+      categories
+        .filter(({ profiles }) => profiles.some((profile) => profile.slug === slug))
+        .map(({ category }) => category.slug),
+      ["commercial-industrial-cleaning"]
+    );
+  }
+
+  assert.equal(profilesBySlug.get("columbus").legalName, "G. Staehle GmbH u. Co. KG");
+  assert.equal(profilesBySlug.get("truvox").legalName, "Truvox International Limited");
+  assert.equal(profilesBySlug.get("wetrok").legalName, "Wetrok AG");
+  assert.match(profilesBySlug.get("truvox").ownership.parentCompany, /Tacony Corporation/i);
+  assert.match(profilesBySlug.get("truvox").ownership.summary, /wholly owned subsidiary/i);
+  assert.match(profilesBySlug.get("truvox").ownership.summary, /immediate parent/i);
+  assert.match(profilesBySlug.get("truvox").ownership.summary, /no single ultimate controlling party/i);
+  assert.match(profilesBySlug.get("wetrok").ownership.parentCompany, /Diethelm Keller/i);
+  assert.match(profilesBySlug.get("wetrok").ownership.summary, /Wetrok AG remains the named Swiss operating company/i);
+  assert.match(profilesBySlug.get("wetrok").ownership.summary, /Diethelm Keller Group/i);
+  assert.equal(profilesBySlug.get("columbus").ownership.parentCompany, undefined);
+  assert.match(profilesBySlug.get("columbus").ownership.summary, /Staehle Verwaltungs GmbH as general partner/i);
+  assert.match(profilesBySlug.get("columbus").ownership.summary, /do not name a parent company/i);
 });
 
 test("commercial-cleaning batch fifteen publishes Cleanfix, Comac and Fimap without article relationships", async () => {

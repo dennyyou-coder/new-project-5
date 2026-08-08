@@ -1,0 +1,169 @@
+{
+  "status": "published",
+  "slug": "wetrok",
+  "name": "Wetrok",
+  "aliases": ["Wetrok AG", "WETROK"],
+  "legalName": "Wetrok AG",
+  "legalEntityNote": "Wetrok AG is the Swiss company named in the official imprint. Diethelm Keller Group identifies Wetrok as its industrial operating unit; regional Wetrok entities, authorized dealers, importers, contracting sellers and service providers can carry separate responsibilities.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://wetrok.com/ch_en/company",
+  "headline": "Wetrok professional cleaning systems, Swiss operations and buyer checks",
+  "description": "A source-backed profile of Wetrok AG, its Diethelm Keller Group ownership, Swiss professional-cleaning portfolio, international channel model and procurement checks.",
+  "metaDescription": "Wetrok profile: Diethelm Keller ownership, Swiss cleaning machines and chemicals, international channels, manufacturing scope and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Wetrok or Diethelm Keller Group. Group and company statements do not establish the manufacturer, origin, importer, seller or warranty provider for every Wetrok SKU in every market.",
+  "headquarters": "Kloten, Zurich, Switzerland",
+  "founded": "1948; part of Diethelm Keller Group since 1955",
+  "heroImage": "/images/brands/wetrok/hero-professional-cleaning-portfolio.webp",
+  "heroImageAlt": "Historical Wetrok professional cleaning machines and tools arranged in an official company photograph",
+  "heroImageCaption": "Wetrok's official company image documents the breadth of its professional-cleaning heritage; current configurations require model-level verification.",
+  "heroSourceUrl": "https://s3.eu-central-2.wasabisys.com/files.wetrok.ch/p/assets/unternehmen/wetrok_antik.jpg",
+  "logoImage": "/images/brands/wetrok/logo.webp",
+  "logoImageAlt": "Wetrok logo",
+  "logoSourceUrl": "https://wetrok.com/unternehmen",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/wetrok/group-company-market-boundary.svg",
+      "alt": "Diethelm Keller Group Wetrok AG and market responsibility boundary",
+      "caption": "Wetrok has belonged to Diethelm Keller Group since 1955, while destination-market contracting, import and service roles require separate confirmation."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/wetrok/model-origin-service-check.svg",
+      "alt": "Wetrok model origin application market entity and lifecycle service verification checklist",
+      "caption": "Swiss company-level engineering and production statements should be converted into exact-model origin, application, entity and support checks."
+    }
+  ],
+  "ownership": {
+    "summary": "Diethelm Keller Group's official industrial-unit page says Wetrok has been part of the group since 1955. The group describes itself as family-owned and identifies Wetrok as its Swiss B2B professional-cleaning operation. Wetrok AG remains the named Swiss operating company; the reviewed sources do not disclose an intermediate legal holding chain above Wetrok AG.",
+    "parentCompany": "Diethelm Keller Group"
+  },
+  "leadership": [
+    {
+      "name": "Benjamin Merz",
+      "role": "Managing Director",
+      "context": "Diethelm Keller Group's official industrial-unit page identifies Benjamin Merz as Wetrok's Managing Director."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Professional cleaning machines",
+      "positioning": "Scrubber-driers, sweepers, single-disc machines, wet and dry vacuums and cleaning robots cover mechanized professional floorcare.",
+      "buyerRelevance": "Match working width, tank, battery, floor, filtration, safety and realistic productivity to the site and exact model."
+    },
+    {
+      "name": "Cleaning and disinfection chemicals",
+      "positioning": "Cleaning, care, protection and disinfection products support Wetrok's integrated systems approach.",
+      "buyerRelevance": "Verify formulation, intended surface, dilution, safety data, ecolabel scope, local registration and machine compatibility."
+    },
+    {
+      "name": "Tools, carts and consumables",
+      "positioning": "Manual tools, transport systems, hygiene supplies and consumables extend the portfolio beyond machines.",
+      "buyerRelevance": "Confirm replacement availability, compatibility, material durability and local replenishment terms."
+    },
+    {
+      "name": "Methods, training and digital systems",
+      "positioning": "Cleaning concepts, application training and digital support connect products to standardized professional workflows.",
+      "buyerRelevance": "Define training language, reporting access, implementation responsibilities and measurable process outcomes."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Diethelm Keller Group states that Wetrok's research, development and production are based in Switzerland.",
+      "scope": "Group statement about Wetrok's operating model; it does not prove Swiss origin for every finished SKU or component",
+      "buyerCheck": "Request the exact product's manufacturer, production site, serial plate, country of origin and applicable declaration."
+    },
+    {
+      "evidence": "Wetrok says its own engineering department, chemistry laboratory and internal teams develop and test machines and cleaning agents in company laboratories and production facilities.",
+      "scope": "Company-level engineering, laboratory and production capabilities",
+      "buyerCheck": "Ask which design, formulation, assembly and testing steps apply to the quoted product and which components are externally sourced."
+    },
+    {
+      "evidence": "Wetrok's product catalogue separates machines, chemicals, tools and consumables into different product systems.",
+      "scope": "Portfolio taxonomy, not evidence of one common manufacturing route",
+      "buyerCheck": "Do not generalize the origin or supplier chain of one category to another; verify each contracted line."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Wetrok says subsidiaries serve customers in Germany, Poland, Sweden and Austria, while authorized dealers cover about 40 additional countries.",
+      "scope": "Company-published international channel structure",
+      "buyerCheck": "Confirm the authorized local entity, dealer territory, importer, contracting seller and warranty provider."
+    },
+    {
+      "evidence": "Wetrok's Swiss sales and service terms identify Wetrok AG as the contracting party for named professional-customer transactions and service agreements.",
+      "scope": "Switzerland and the stated terms; not a global contracting rule",
+      "buyerCheck": "Obtain the destination market's current sales, warranty and service terms from the named legal entity."
+    },
+    {
+      "evidence": "Wetrok combines product sales with advice, training, machine service and spare-parts routes.",
+      "scope": "Published support framework; local delivery capability can vary",
+      "buyerCheck": "Record technician coverage, parts stock, response time, training scope and escalation contacts in the contract."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Wetrok competes through a long-established Swiss professional-cleaning system that combines machines, chemistry, methods and training. Buyers should test whether that integrated proposition is backed by exact-model evidence and locally enforceable service capacity.",
+    "competitorSlugs": ["cleanfix", "hako", "karcher", "nilfisk"]
+  },
+  "developments": [
+    {
+      "date": "2008",
+      "title": "Wetrok integrates Minatol",
+      "summary": "Wetrok's official history says the traditional Swiss Minatol brand was acquired and integrated in 2008.",
+      "sourceIds": ["wetrok-company"]
+    },
+    {
+      "date": "1955",
+      "title": "Wetrok joins Diethelm Keller Group",
+      "summary": "Wetrok and Diethelm Keller Group both identify 1955 as the start of the group relationship.",
+      "sourceIds": ["wetrok-company", "diethelm-keller-industrial"]
+    },
+    {
+      "date": "1948",
+      "title": "Wetrok begins with a single-disc machine",
+      "summary": "The official company history traces Wetrok to a 1948 technology business and its first single-disc cleaning machine.",
+      "sourceIds": ["wetrok-company"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "wetrok-company",
+      "title": "About Wetrok",
+      "publisher": "Wetrok",
+      "url": "https://shop.wetrok.com/en-us/ueber-uns",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "wetrok-imprint",
+      "title": "Imprint",
+      "publisher": "Wetrok",
+      "url": "https://shop.wetrok.com/en-us/imprint",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "wetrok-innovation",
+      "title": "Innovation at Wetrok",
+      "publisher": "Wetrok",
+      "url": "https://wetrok.com/innovation",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "wetrok-terms",
+      "title": "General Terms and Conditions for Product Sales",
+      "publisher": "Wetrok",
+      "url": "https://wetrok.com/agb",
+      "publishedAt": "2025-05-16",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "diethelm-keller-industrial",
+      "title": "Industrial: Wetrok",
+      "publisher": "Diethelm Keller Group",
+      "url": "https://www.diethelmkeller.com/en/operating-units/industrial/",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T08:35:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T08:35:00+08:00"
+}
