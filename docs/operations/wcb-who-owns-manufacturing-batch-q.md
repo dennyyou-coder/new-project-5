@@ -58,4 +58,9 @@ This record covers the fourth three-page release in the sitewide manufacturing-a
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- GitHub PR: `#73`.
+- Squash-merge commit: `94777cac106e1f5f8a97a537544497c2bf4801ed`.
+- Git-linked Vercel production deployment: `dpl_BtmPvmtiaRNidVuRYPY5QBDU9d5q`, status `READY`.
+- The live Beko, Tineco and Eufy routes each returned HTTP 200 and passed desktop 1440px plus mobile 390px checks for title, H1, description, canonical, BlogPosting schema, direct manufacturing answer and zero horizontal overflow.
+- All seven live article visuals loaded completely. All 12 unique WCB internal links, Ownership Guide discovery and sitemap inclusion passed; no unexpected browser-console error remained.
+- The scheduled quality gate covering the first ten refreshed pages also passed: 20 desktop/mobile viewport combinations generated complete screenshots and retained the expected metadata, manufacturing answer, schema, canonical and responsive layout. A dedicated lazy-loading pass confirmed 34/34 article-area images, including author cards, loaded completely; all 92 checked internal links passed. Ownership Guide discovery passed on pages 1, 3, 9 and 10 as applicable, and all ten sitemap entries passed.
