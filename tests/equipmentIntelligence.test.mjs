@@ -241,7 +241,7 @@ test("published floor scrubber is included in production sitemap discovery", () 
   assert.equal(urls.some((url) => url.endsWith("/equipment")), true);
 });
 
-test("second equipment batch meets evidence relationship and visual gates", () => {
+test("second equipment batch meets evidence relationship and visual gates", async () => {
   const realPublishedBrandSlugs = new Set(
     getPublishedBrandProfiles(getInsights()).map(({ slug }) => slug)
   );
@@ -264,6 +264,28 @@ test("second equipment batch meets evidence relationship and visual gates", () =
     );
     assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
     assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 1);
+
+    const heroMetadata = await sharp(
+      path.join(process.cwd(), "public", profile.heroImage)
+    ).metadata();
+    assert.equal(heroMetadata.format, "webp");
+    assert.ok((heroMetadata.width ?? 0) >= 1600);
+    assert.ok((heroMetadata.height ?? 0) >= 1000);
+
+    for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo")) {
+      const metadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+      assert.equal(metadata.format, "webp");
+      assert.ok((metadata.width ?? 0) >= 1500);
+      assert.ok((metadata.height ?? 0) >= 900);
+    }
+
+    const diagram = profile.contentVisuals.find(({ visualType }) => visualType === "wcb-diagram");
+    const diagramSource = readFileSync(path.join(process.cwd(), "public", diagram.src), "utf8");
+    const mobileDiagramSource = readFileSync(path.join(process.cwd(), "public", diagram.mobileSrc), "utf8");
+    assert.match(diagramSource, /<svg/);
+    assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
+    assert.match(mobileDiagramSource, /<svg/);
+    assert.match(mobileDiagramSource, /Family labels do not establish cross-model compatibility/);
   }
 });
 
