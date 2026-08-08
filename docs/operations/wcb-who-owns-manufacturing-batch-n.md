@@ -10,9 +10,9 @@ This record covers the first three traffic-led updates in the sitewide manufactu
 
 | Order | Updated page | Existing slug | Main update | Status |
 |---:|---|---|---|---|
-| 1 | Who Owns Dyson? James Dyson, Private Status and Origin | `who-owns-dyson-james-dyson-singapore-manufacturing` | Direct first-screen answer covering own motor plants, external manufacturers and the model-level boundary | `local_verified` |
-| 2 | Who Owns Kärcher? Family Ownership, Origin and Factories | `who-owns-karcher-family-professional-cleaning-network` | Direct first-screen answer and an explicit Who Makes section heading | `local_verified` |
-| 3 | Who Owns Eureka? Midea, Brand Origin & Where Vacuums Are Made | `who-owns-eureka-midea-electrolux-manufacturing` | Direct Midea Group versus Midea Robozone model-specific manufacturing answer | `local_verified` |
+| 1 | Who Owns Dyson? James Dyson, Private Status and Origin | `who-owns-dyson-james-dyson-singapore-manufacturing` | Direct first-screen answer covering own motor plants, external manufacturers and the model-level boundary | `published_verified` |
+| 2 | Who Owns Kärcher? Family Ownership, Origin and Factories | `who-owns-karcher-family-professional-cleaning-network` | Direct first-screen answer and an explicit Who Makes section heading | `published_verified` |
+| 3 | Who Owns Eureka? Midea, Brand Origin & Where Vacuums Are Made | `who-owns-eureka-midea-electrolux-manufacturing` | Direct Midea Group versus Midea Robozone model-specific manufacturing answer | `published_verified` |
 
 ## Search and collision decision
 
@@ -57,4 +57,9 @@ This record covers the first three traffic-led updates in the sitewide manufactu
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- Ready PR: #69.
+- Squash merge on `main`: `ff484c3e70a4a297d28c90bd7f0f1a433ff81371`.
+- Git-linked Vercel production deployment: `dpl_BnXfNQDUyMJuhrnsH4fEhBVSmkdY`, status `READY`.
+- Live verification passed for Dyson, Kärcher and Eureka: HTTP 200, expected title, H1, description, canonical, BlogPosting schema, direct manufacturing answer and complete article visuals.
+- Desktop 1440px and mobile 390px rendering passed with zero horizontal overflow and no production console errors.
+- All nine article-level internal links, ownership-guide discovery and sitemap entries passed.
