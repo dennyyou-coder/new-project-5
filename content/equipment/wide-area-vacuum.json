@@ -1,0 +1,874 @@
+{
+  "status": "published",
+  "slug": "wide-area-vacuum",
+  "name": "Wide-Area Vacuum",
+  "aliases": [
+    "wide area commercial vacuum",
+    "wide path carpet vacuum",
+    "commercial wide area vacuum cleaner"
+  ],
+  "definition": "A commercial dry vacuum explicitly identified by its manufacturer for wide-area or large-carpet cleaning, using a broad floor head, powered brush system and onboard dust collection in a push or ride/stand-on format.",
+  "includedScope": [
+    "Manufacturer-identified wide-area vacuums",
+    "Broad push brush vacuums for large carpeted routes",
+    "Stand-on vacuums explicitly positioned as wide-area alternatives"
+  ],
+  "excludedScope": [
+    "Ordinary upright, canister and backpack vacuums without wide-area positioning",
+    "Carpet extractors and sweepers without vacuum filtration",
+    "Wet pickup and hazardous-dust applications unless specifically rated"
+  ],
+  "primaryApplications": [
+    "Hotels and convention centres",
+    "Airports and terminals",
+    "Large carpeted corridors and lobbies",
+    "Education, retail and public facilities"
+  ],
+  "headline": "Wide-area vacuum types, carpet metrics, filtration and buyer checks",
+  "description": "Technical reference for commercial wide-area vacuums covering push and stand-on formats, brush and filtration systems, representative models and route-based procurement verification.",
+  "metaDescription": "Wide-area vacuum guide covering cleaning paths, brushes, filtration, representative models, carpet tests and buyer checks.",
+  "disclaimer": "Independent category reference, not carpet-care, indoor-air, electrical, ergonomic or certification advice. Verify the exact regional model, carpet approval, filter and bag configuration, cable or battery and service parts.",
+  "heroImage": "/images/equipment/wide-area-vacuum/hero.webp",
+  "heroImageAlt": "Kärcher CV 66/2 commercial wide-area vacuum",
+  "heroImageCaption": "Official Kärcher product image of the CV 66/2 wide-area vacuum. Product width alone does not establish achieved site productivity or carpet suitability.",
+  "heroSourceUrl": "https://s1.kaercher-media.com/mam/10125880/mainproduct/26952/d0.jpg",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/wide-area-vacuum/type-wide-area.webp",
+      "alt": "Nilfisk GU700A commercial wide-area upright vacuum",
+      "caption": "Official Nilfisk product image illustrating a heavy-duty broad upright format.",
+      "sourceUrl": "https://www.nilfisk.com/product-images-1920/GU700APJ-ps-Original-JPJEHS.webp"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/wide-area-vacuum/application-carpet.webp",
+      "alt": "Nilfisk GU700A vacuum cleaning a meeting-room carpet",
+      "caption": "Official Nilfisk application image. Carpet pickup, filtration and productivity must be verified for the actual site.",
+      "sourceUrl": "https://www.nilfisk.com/product-images-1920/GU700_meeting-room-ps-Original-JPJENJ.webp"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/wide-area-vacuum/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/wide-area-vacuum/component-verification-map-mobile.svg",
+      "alt": "WCB wide area vacuum component verification map",
+      "caption": "WCB verification map. Family labels do not establish cross-model compatibility; verify the exact product number, configuration and parts documentation.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "Manufacturer wide-area positioning and system architecture take priority; no universal cleaning-width threshold defines the category.",
+      "evidence": "Reviewed official product pages use the stated operating format and equipment architecture for the named machines.",
+      "scope": "Named models and reviewed regional configurations; no universal dimensional threshold is inferred.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Primary work interface",
+      "value": "Broad powered brush head, suction airflow and onboard bag or filter system.",
+      "evidence": "Official sources document wide cleaning paths, powered brushes, vacuum motors and bag/filtration systems.",
+      "scope": "Exact brush, pad, nozzle, floor and consumable configuration.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Productivity boundary",
+      "value": "Manufacturer area rates are source-specific, not achieved-site guarantees",
+      "evidence": "Official sources publish model-specific widths, speeds or stated productivity figures under their own reporting conventions.",
+      "scope": "Named manufacturer figures only; no cross-brand normalization or ranking.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Configuration boundary",
+      "value": "Width, brush setting, bag, filter, cable or battery and regional voltage are model-specific.",
+      "evidence": "Reviewed official pages publish materially different configurations and reporting methods.",
+      "scope": "Delivered product number, voltage, battery or cable, consumables and local service terms.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Brush contact",
+      "componentFamily": "Powered roller brush and height setting",
+      "role": "Agitates carpet pile and moves soil toward pickup.",
+      "evidence": "Official sources document powered brushes and height adjustment.",
+      "scope": "Exact carpet, brush and setting.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Air pickup",
+      "componentFamily": "Nozzle, airflow path and vacuum motors",
+      "role": "Transports loosened dry soil into the collection system.",
+      "evidence": "Manufacturers publish model-specific motor and airflow data.",
+      "scope": "Source methods and regional electrical configuration.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Separation and collection",
+      "componentFamily": "Bag, prefilter and exhaust filtration",
+      "role": "Retains collected soil and conditions exhaust air.",
+      "evidence": "Official sources publish bag capacities and filtration options.",
+      "scope": "Exact installed bag and filter part numbers.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Route operation",
+      "componentFamily": "Handle or stand-on controls, cord or battery",
+      "role": "Moves the cleaning head across the planned area.",
+      "evidence": "Reviewed models include push corded and stand-on battery formats.",
+      "scope": "Route, operator, cable management and battery duty.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Push wide-area brush vacuum",
+      "taskScale": "Large open carpet routes",
+      "operatorRelationship": "Operator walks behind and steers a broad head",
+      "spaceConstraints": "Turning, furniture, doors and cord routing can limit use",
+      "limitations": "Wide heads increase edge and detail work in congested areas.",
+      "evidence": "Kärcher, NSS, Truvox and Tornado explicitly label push models as wide-area vacuums.",
+      "scope": "Named models; no fixed width threshold.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Heavy-duty broad upright",
+      "taskScale": "Large carpet areas with an upright-like chassis",
+      "operatorRelationship": "Operator guides a powered-brush body",
+      "spaceConstraints": "Weight and storage differ from conventional uprights",
+      "limitations": "A broad upright label is not universal wide-area equivalence.",
+      "evidence": "Nilfisk positions GU700A for daily cleaning of large carpet areas.",
+      "scope": "Named model and reviewed product number.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Stand-on wide-area alternative",
+      "taskScale": "Large routes requiring powered travel",
+      "operatorRelationship": "Operator rides on a standing platform",
+      "spaceConstraints": "Turning, load, charging and operator training require review",
+      "limitations": "Stand-on architecture is not interchangeable with push units.",
+      "evidence": "Kärcher positions Chariot 3 CV 86/1 where a wide-area vacuum could be used.",
+      "scope": "Named Canadian configuration.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Cleaning path",
+      "purchasingMeaning": "Nominal brush or nozzle width",
+      "reportingBoundary": "Exact regional model and installed head",
+      "comparisonCaution": "Width alone does not establish pickup or achieved output.",
+      "evidence": "Official sources publish widths from 64 to 86 cm for reviewed models.",
+      "scope": "Named machines only.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Brush system and height",
+      "purchasingMeaning": "Matches agitation to carpet pile and soil",
+      "reportingBoundary": "Brush geometry, speed and setting method vary",
+      "comparisonCaution": "Higher speed or more positions do not prove better cleaning.",
+      "evidence": "Manufacturers document counter-rotating, single-brush and adjustable systems.",
+      "scope": "Exact brush and carpet.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Airflow, vacuum and motor data",
+      "purchasingMeaning": "Describes parts of the pickup system",
+      "reportingBoundary": "Test points, units and electrical configurations differ",
+      "comparisonCaution": "Do not rank cross-brand cleaning from CFM, kPa or watts alone.",
+      "evidence": "Official sources publish different subsets of motor, airflow and vacuum data.",
+      "scope": "Source method and named configuration.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Bag and filtration",
+      "purchasingMeaning": "Supports dust capacity and indoor-air planning",
+      "reportingBoundary": "Media, test method, seal and installed option must be known",
+      "comparisonCaution": "HEPA or efficiency wording is not comparable without the complete system and test basis.",
+      "evidence": "Nilfisk, NSS, Truvox and Tornado publish bag and filtration details.",
+      "scope": "Exact installed parts and cited test claim.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Area productivity",
+      "purchasingMeaning": "Planning input for open routes",
+      "reportingBoundary": "Manufacturer theoretical or practical convention",
+      "comparisonCaution": "Obstacles, edge work, bag changes and cable moves reduce achieved output.",
+      "evidence": "Selected official pages publish source-specific area rates.",
+      "scope": "Source conditions only; no normalized ranking.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Large open carpeted routes",
+      "wcbAssessment": "Wide-area machines can reduce passes, but achieved labor savings must include support and edge work.",
+      "basis": "Official wide-area positioning and cleaning paths.",
+      "limitations": "No site result is established.",
+      "buyerAction": "Run a timed route trial with normal obstacles and bag changes.",
+      "engineeringCheck": "Record cleaned area, passes, cable moves, edge work and rework.",
+      "evidence": "Manufacturers position reviewed machines for large carpet areas.",
+      "scope": "Named models and actual site.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "Wide-area machines can reduce passes, but achieved labor savings must include support and edge work."
+    },
+    {
+      "application": "Congested rooms and detailed edges",
+      "wcbAssessment": "A narrower upright or backpack may complement rather than be replaced by a wide-area machine.",
+      "basis": "Broad heads and turning envelopes shown in official data.",
+      "limitations": "No universal congestion threshold exists.",
+      "buyerAction": "Map inaccessible area and price the complete equipment mix.",
+      "engineeringCheck": "Measure door, turn and under-furniture clearance.",
+      "evidence": "Official dimensions and product imagery show wide-head architecture.",
+      "scope": "Actual layout and delivered configuration.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "A narrower upright or backpack may complement rather than be replaced by a wide-area machine."
+    },
+    {
+      "application": "Carpet pickup verification",
+      "wcbAssessment": "Use a repeatable soil and appearance trial instead of motor wattage claims.",
+      "basis": "ASTM F608 defines a laboratory embedded-dirt method; site soil remains different.",
+      "limitations": "F608 results do not establish all soil pickup or site productivity.",
+      "buyerAction": "Request relevant test evidence and conduct a site acceptance trial.",
+      "engineeringCheck": "Control carpet, soil load, passes, bag/filter state and brush setting.",
+      "evidence": "ASTM publishes F608-24 for carpet embedded-dirt removal evaluation.",
+      "scope": "The standard's laboratory scope and actual site separately.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "Use a repeatable soil and appearance trial instead of motor wattage claims."
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Brush roll and drive",
+      "role": "Agitates carpet and supports soil pickup.",
+      "variants": [
+        "Single roller",
+        "Counter-rotating rollers",
+        "Height-adjustable brush"
+      ],
+      "criticalChecks": [
+        "Brush part number",
+        "Belt or drive",
+        "Pile setting",
+        "Wear limit"
+      ],
+      "evidence": "Official sources document model-specific brush systems.",
+      "scope": "No cross-model compatibility.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Nozzle and airflow path",
+      "role": "Moves loosened soil to collection.",
+      "variants": [
+        "Broad floor nozzle",
+        "Twin vacuum motors",
+        "Hose and seals"
+      ],
+      "criticalChecks": [
+        "Blockage access",
+        "Seal condition",
+        "Motor configuration",
+        "Test point"
+      ],
+      "evidence": "Manufacturers publish distinct airflow architectures.",
+      "scope": "Exact model and regional voltage.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Bag and filtration stack",
+      "role": "Contains soil and filters exhaust air.",
+      "variants": [
+        "Paper bag",
+        "Cloth outer bag",
+        "HEPA option",
+        "Multi-stage filters"
+      ],
+      "criticalChecks": [
+        "Bag code",
+        "Filter code",
+        "Seal",
+        "Efficiency test basis"
+      ],
+      "evidence": "Official sources list bags and filtration stages or options.",
+      "scope": "Installed system, not family name alone.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Power and controls",
+      "role": "Supplies propulsion, brush and vacuum functions.",
+      "variants": [
+        "Corded push",
+        "Battery stand-on",
+        "Brush safety switch"
+      ],
+      "criticalChecks": [
+        "Voltage",
+        "Cord and plug",
+        "Battery and charger",
+        "Circuit protection"
+      ],
+      "evidence": "Reviewed products include corded and battery formats.",
+      "scope": "Delivered regional configuration.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "CV 66/2",
+      "subtype": "Push wide-area brush vacuum",
+      "distinguishingSpecifications": [
+        "26 in / 66 cm cleaning path",
+        "Two counter-rotating brushes",
+        "75 ft cable on US page"
+      ],
+      "marketScope": "Kärcher US product 1.012-588.0",
+      "evidence": "The official manufacturer source identifies the named model and cited configuration features.",
+      "scope": "Exact regional product number, electrical supply, filtration and consumables.",
+      "sourceIds": [
+        "karcher-cv66"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "Chariot 3 CV 86/1 RS Bp",
+      "subtype": "Stand-on wide-area vacuum alternative",
+      "distinguishingSpecifications": [
+        "Stand-on battery format",
+        "Multi-surface positioning",
+        "Onboard charging on reviewed Canadian page"
+      ],
+      "marketScope": "Kärcher Canada product 1.008-146.0",
+      "evidence": "The official manufacturer source identifies the named model and cited configuration features.",
+      "scope": "Exact regional product number, electrical supply, filtration and consumables.",
+      "sourceIds": [
+        "karcher-cv86"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "GU700A",
+      "subtype": "Heavy-duty wide upright",
+      "distinguishingSpecifications": [
+        "64 cm cleaning path",
+        "Two vacuum motors and one brush motor",
+        "35 L bag capacity"
+      ],
+      "marketScope": "Nilfisk global product 56330910",
+      "evidence": "The official manufacturer source identifies the named model and cited configuration features.",
+      "scope": "Exact regional product number, electrical supply, filtration and consumables.",
+      "sourceIds": [
+        "nilfisk-gu700"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nss",
+      "brandName": "NSS",
+      "modelName": "Pacer 30",
+      "subtype": "Push wide-area vacuum",
+      "distinguishingSpecifications": [
+        "30 in / 76 cm working width",
+        "12 gal / 53 L bag",
+        "Standard or HEPA filtration options"
+      ],
+      "marketScope": "TASKI North America NSS range",
+      "evidence": "The official manufacturer source identifies the named model and cited configuration features.",
+      "scope": "Exact regional product number, electrical supply, filtration and consumables.",
+      "sourceIds": [
+        "nss-pacer30"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "truvox",
+      "brandName": "Truvox",
+      "modelName": "Valet Wide Area Vac",
+      "subtype": "Push wide-area vacuum",
+      "distinguishingSpecifications": [
+        "70 cm cleaning path",
+        "40 L capacity",
+        "Twin 1000 W vacuum motors on brochure"
+      ],
+      "marketScope": "Truvox UK brochure configuration",
+      "evidence": "The official manufacturer source identifies the named model and cited configuration features.",
+      "scope": "Exact regional product number, electrical supply, filtration and consumables.",
+      "sourceIds": [
+        "truvox-vwav"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "tornado-industries",
+      "brandName": "Tornado Industries",
+      "modelName": "CK 3030",
+      "subtype": "Push wide-area vacuum",
+      "distinguishingSpecifications": [
+        "30 in cleaning width",
+        "75 ft cord",
+        "Four-stage clean-air filtration"
+      ],
+      "marketScope": "Tornado US item 93030",
+      "evidence": "The official manufacturer source identifies the named model and cited configuration features.",
+      "scope": "Exact regional product number, electrical supply, filtration and consumables.",
+      "sourceIds": [
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Large open carpet maintenance",
+      "attributeToVerify": "Achieved area per labor hour and pickup result",
+      "comparisonTrap": "Choosing by cleaning width or advertised ft²/h alone",
+      "assessment": "Use a timed route and repeatable soil trial.",
+      "basis": "Manufacturer rates use different conventions.",
+      "limitations": "No universal conversion exists.",
+      "buyerAction": "Measure normal obstacles, edge work and consumable changes.",
+      "engineeringCheck": "Record passes, rework, bag state and brush setting.",
+      "evidence": "Official sources publish model-specific widths and rates.",
+      "scope": "Source conditions and actual site.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Indoor-air and filtration requirement",
+      "attributeToVerify": "Complete installed filtration system and cited test basis",
+      "comparisonTrap": "Treating HEPA wording as proof of whole-machine performance",
+      "assessment": "Specify part numbers and evidence for the delivered system.",
+      "basis": "Reviewed models offer different standard and optional filtration.",
+      "limitations": "Filter-media efficiency is not automatically whole-machine capture.",
+      "buyerAction": "Require the bag, filter and seal configuration in the quote.",
+      "engineeringCheck": "Inspect bypass paths and replacement intervals.",
+      "evidence": "NSS, Truvox, Nilfisk and Tornado publish different filtration configurations.",
+      "scope": "Exact delivered configuration.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Push versus stand-on route",
+      "attributeToVerify": "Turning, transport, operator controls, cable or battery duty",
+      "comparisonTrap": "Assuming all wide-area formats impose the same workflow",
+      "assessment": "Select the architecture after mapping the route and support process.",
+      "basis": "Reviewed products include push corded and stand-on battery formats.",
+      "limitations": "Operator and facility constraints vary.",
+      "buyerAction": "Demonstrate the complete route with intended operators.",
+      "engineeringCheck": "Check doors, turns, ramps, storage, charging and egress.",
+      "evidence": "Kärcher documents both push wide-area and stand-on alternatives.",
+      "scope": "Named models and actual route.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Carpet and brush setting",
+      "reason": "Brush contact affects pickup, pile appearance, drive load and wear.",
+      "buyerAction": "Obtain carpet approval and trial all representative zones.",
+      "evidence": "Official sources publish adjustable brush systems.",
+      "scope": "Actual carpet and exact brush.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Bag and filter identity",
+      "reason": "Capacity and filtration claims depend on installed consumables and seals.",
+      "buyerAction": "Record every bag and filter part number.",
+      "evidence": "Official pages publish model-specific collection and filter options.",
+      "scope": "Delivered configuration.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Cord, plug or battery package",
+      "reason": "Route length, outlet layout and charging change usable productivity.",
+      "buyerAction": "Map outlets or charging and confirm regional electrical parts.",
+      "evidence": "Reviewed products use different cord and battery systems.",
+      "scope": "Exact site and product number.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Service access and transport",
+      "reason": "Large heads and heavier bodies affect storage, stairs and maintenance.",
+      "buyerAction": "Demonstrate transport and routine brush, bag and blockage access.",
+      "evidence": "Official dimensions and manuals show model-specific service architecture.",
+      "scope": "Exact machine and facility route.",
+      "sourceIds": [
+        "karcher-cv66",
+        "karcher-cv86",
+        "nilfisk-gu700",
+        "nss-pacer30",
+        "truvox-vwav",
+        "tornado-ck3030"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-69:2021",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety scope for wet and dry commercial vacuum cleaners, including power brush provisions; it is not a carpet-cleaning performance ranking.",
+      "evidence": "IEC publishes the edition, date and scope.",
+      "scope": "Confirm regional adoption, dust class where relevant and exact product conformity.",
+      "sourceIds": [
+        "iec-69"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "ASTM F608-24",
+      "jurisdiction": "Internationally referenced laboratory method",
+      "version": "2024",
+      "applicability": "Laboratory evaluation of carpet embedded-dirt removal for upright, canister and combination vacuum cleaners; not a site productivity standard.",
+      "evidence": "ASTM publishes the method title and scope.",
+      "scope": "Use only where the exact product and test report are within scope.",
+      "sourceIds": [
+        "astm-f608"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2021-06-17",
+      "title": "IEC commercial vacuum safety edition published",
+      "summary": "IEC published edition 6.0 of IEC 60335-2-69.",
+      "evidence": "IEC catalogue records the publication date and scope.",
+      "scope": "Safety scope only.",
+      "sourceIds": [
+        "iec-69"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "date": "2024-01-01",
+      "title": "ASTM F608-24 issued",
+      "summary": "ASTM lists the 2024 revision of its carpet embedded-dirt removal test method.",
+      "evidence": "ASTM catalogue identifies F608-24.",
+      "scope": "Laboratory method; no category ranking is inferred.",
+      "sourceIds": [
+        "astm-f608"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iec-69",
+      "title": "IEC 60335-2-69:2021",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64777",
+      "publishedAt": "2021-06-17",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "astm-f608",
+      "title": "ASTM F608-24 Carpet Embedded Dirt Removal Test Method",
+      "publisher": "ASTM International",
+      "sourceType": "standard",
+      "url": "https://www.astm.org/f0608-24.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-cv66",
+      "title": "CV 66/2 Wide-Area Vacuum",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/commercial/vacuum-cleaners/wide-area/cv-66-2-wide-area-vacuum-10125880.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-cv86",
+      "title": "Chariot 3 CV 86/1 RS Bp",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/ca/professional/vacuums/stand-on/chariot-3-cv-86-atv-234ah-agm-obc-10081460.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-gu700",
+      "title": "GU700A Upright Vacuum",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/professional/products/commercial-vacuum-cleaners/upright-vacuum-cleaners/nilfisk-gu-700a%2B56330910/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nss-pacer30",
+      "title": "Pacer 30 Wide Area Vacuum",
+      "publisher": "TASKI / NSS",
+      "sourceType": "manufacturer",
+      "url": "https://nam.taski.com/nss-products/pacer-30-2/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "truvox-vwav",
+      "title": "Valet Wide Area Vac Sales Literature",
+      "publisher": "Truvox",
+      "sourceType": "manufacturer",
+      "url": "https://www.truvox.com/wp-content/uploads/2023/11/UK-VWAV-REV.04-0324-2.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tornado-ck3030",
+      "title": "CK 3030 Wide Area Vacuum",
+      "publisher": "Tornado Industries",
+      "sourceType": "manufacturer",
+      "url": "https://www.tornadovac.com/ck-3030-wide-area-vacuum-93030.html",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}

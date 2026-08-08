@@ -1,0 +1,800 @@
+{
+  "status": "published",
+  "slug": "walk-behind-floor-scrubber",
+  "name": "Walk-Behind Floor Scrubber",
+  "aliases": [
+    "walk-behind scrubber dryer",
+    "push floor scrubber",
+    "pedestrian scrubber dryer"
+  ],
+  "definition": "A powered commercial scrubber-dryer that applies solution, mechanically agitates a hard floor and recovers dirty liquid while an operator walks behind and guides the machine.",
+  "includedScope": [
+    "Manufacturer-identified walk-behind or push scrubber-dryers",
+    "Traction-drive and manually propelled walk-behind machines",
+    "Disc, cylindrical/roller and orbital walk-behind configurations"
+  ],
+  "excludedScope": [
+    "Ride-on, stand-on and autonomous scrubbers",
+    "Single-disc floor machines without liquid recovery",
+    "Domestic floor washers and carpet extractors"
+  ],
+  "primaryApplications": [
+    "Retail and public buildings",
+    "Healthcare and education",
+    "Hospitality and facility services",
+    "Commercial and light-industrial hard floors"
+  ],
+  "headline": "Walk-behind floor scrubber types, route fit, performance and buyer checks",
+  "description": "Technical reference for walk-behind scrubber dryers covering operator format, deck and recovery systems, representative models, comparable metrics and site verification.",
+  "metaDescription": "Walk-behind floor scrubber guide covering types, working widths, tanks, batteries, representative models and procurement checks.",
+  "disclaimer": "Independent category reference, not model-specific purchasing, safety, chemical or floor-compatibility advice. Verify the exact regional product, manual, route, floor, battery, charger and service support.",
+  "heroImage": "/images/equipment/walk-behind-floor-scrubber/hero.webp",
+  "heroImageAlt": "Operator using a TASKI ULTIMAXX walk-behind floor scrubber in a healthcare corridor",
+  "heroImageCaption": "Official TASKI application image showing a walk-behind scrubber in a healthcare corridor. It does not establish universal floor, noise or infection-control suitability.",
+  "heroSourceUrl": "https://taski.com/wp-content/uploads/2025/02/TASKI-ULTIMAXX-1900-Healthcare-1-1-scaled-1.jpg",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/walk-behind-floor-scrubber/type-walk-behind.webp",
+      "alt": "Hako Scrubmaster B35 and B50 walk-behind scrubbers",
+      "caption": "Official Hako image illustrating current walk-behind formats; exact head and battery configurations vary.",
+      "sourceUrl": "https://www.hako.com/fileadmin/user_upload/Scrubmaster/Scrubmaster_B35_B50/b35_b50_Header4.webp"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/walk-behind-floor-scrubber/application-healthcare.webp",
+      "alt": "Kärcher B 50 W walk-behind scrubber application montage",
+      "caption": "Official Kärcher image showing B 50 W application contexts. Site fit and performance remain application-specific.",
+      "sourceUrl": "https://s1.kaercher-media.com/media/image/selection/182384/d0/bildmotiv_800x800px_ly02.jpg"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/walk-behind-floor-scrubber/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/walk-behind-floor-scrubber/component-verification-map-mobile.svg",
+      "alt": "WCB walk behind floor scrubber component verification map",
+      "caption": "WCB verification map. Family labels do not establish cross-model compatibility; verify the exact product number, configuration and parts documentation.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "Operator walks behind and directly guides the machine; manufacturer classification takes priority over width or area claims.",
+      "evidence": "Reviewed official product pages use the stated operating format and equipment architecture for the named machines.",
+      "scope": "Named models and reviewed regional configurations; no universal dimensional threshold is inferred.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Primary work interface",
+      "value": "A powered scrub deck followed by squeegee and vacuum recovery.",
+      "evidence": "Official product pages document disc, cylindrical/roller or orbital heads with solution and recovery systems.",
+      "scope": "Exact brush, pad, nozzle, floor and consumable configuration.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Productivity boundary",
+      "value": "Manufacturer area rates are source-specific, not achieved-site guarantees",
+      "evidence": "Official sources publish model-specific widths, speeds or stated productivity figures under their own reporting conventions.",
+      "scope": "Named manufacturer figures only; no cross-brand normalization or ranking.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Configuration boundary",
+      "value": "Traction, deck, battery, charger and dosing options can change within one model family.",
+      "evidence": "Reviewed product families publish multiple head and energy configurations.",
+      "scope": "Delivered product number, voltage, battery or cable, consumables and local service terms.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Solution delivery",
+      "componentFamily": "Fresh-water tank, dosing path and control",
+      "role": "Meters approved cleaning solution to the working area.",
+      "evidence": "Manufacturer manuals and pages document solution tanks and delivery controls.",
+      "scope": "Exact model, chemistry and flow setting.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Mechanical agitation",
+      "componentFamily": "Disc, roller or orbital deck",
+      "role": "Loosens soil through the selected brush or pad interface.",
+      "evidence": "Official pages document model-specific deck choices.",
+      "scope": "Deck, consumable, floor and pressure are configuration-specific.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Squeegee collection",
+      "componentFamily": "Squeegee body, blades and adjustment",
+      "role": "Channels liquid toward the suction path.",
+      "evidence": "Commercial scrubber documentation identifies squeegee recovery assemblies.",
+      "scope": "Exact blade material, geometry and adjustment.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Vacuum recovery",
+      "componentFamily": "Vacuum motor, hose and recovery tank",
+      "role": "Collects dirty solution for controlled disposal.",
+      "evidence": "Official specifications publish separate recovery systems and tanks.",
+      "scope": "Achieved dryness depends on setup, floor, blades and speed.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Compact manually propelled",
+      "taskScale": "Small rooms and constrained routes",
+      "operatorRelationship": "Operator supplies guidance and some travel force",
+      "spaceConstraints": "Prioritizes access and storage",
+      "limitations": "Smaller tanks can increase support time.",
+      "evidence": "Hako positions B25 as a compact walk-behind.",
+      "scope": "Named model; no fixed size threshold.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Traction-drive medium walk-behind",
+      "taskScale": "Routine medium-area work",
+      "operatorRelationship": "Powered travel reduces push effort but still requires walking",
+      "spaceConstraints": "Door, squeegee and turning envelope remain critical",
+      "limitations": "Travel assist does not establish ergonomic suitability.",
+      "evidence": "Tennant, Nilfisk, Kärcher and Hako publish powered walk-behind models.",
+      "scope": "Named models and options.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Disc, roller or orbital deck",
+      "taskScale": "Surface- and soil-specific agitation choices",
+      "operatorRelationship": "Operator selects approved settings and consumables",
+      "spaceConstraints": "Deck and squeegee width change fit",
+      "limitations": "Deck labels do not prove equivalent results.",
+      "evidence": "Tennant and Kärcher publish multiple deck architectures.",
+      "scope": "Exact option and consumable.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Working width",
+      "purchasingMeaning": "Nominal installed deck width",
+      "reportingBoundary": "Exact head configuration and source unit",
+      "comparisonCaution": "Width alone does not establish route fit or achieved output.",
+      "evidence": "Manufacturers publish configuration-specific cleaning widths.",
+      "scope": "Named configurations only.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Solution and recovery capacity",
+      "purchasingMeaning": "Supports refill and dump planning",
+      "reportingBoundary": "Nominal tank values, not usable-cycle proof",
+      "comparisonCaution": "Tank size does not include travel, refill or cleaning time.",
+      "evidence": "Official specifications publish separate tank capacities.",
+      "scope": "Named products and stated units.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Theoretical area performance",
+      "purchasingMeaning": "A planning input based on stated width and travel assumptions",
+      "reportingBoundary": "Manufacturer method and source conditions",
+      "comparisonCaution": "Do not treat theoretical output as achieved site productivity.",
+      "evidence": "Official pages publish model-specific theoretical figures for selected machines.",
+      "scope": "Source figures only; no cross-brand normalization.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Battery runtime and charging",
+      "purchasingMeaning": "Supports shift, charger and battery planning",
+      "reportingBoundary": "Exact battery chemistry, capacity, charger and duty",
+      "comparisonCaution": "Maximum runtime is not guaranteed shift output.",
+      "evidence": "Manufacturers publish battery or charger options by configuration.",
+      "scope": "Delivered battery and site duty.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Open hard-floor routes",
+      "wcbAssessment": "Route geometry and support time should be measured before selecting width or tank size.",
+      "basis": "Documented working widths and tank systems.",
+      "limitations": "No site result is established.",
+      "buyerAction": "Map doors, turns, refill points and disposal route; run a witnessed trial.",
+      "engineeringCheck": "Record achieved clean-and-dry area per labor hour.",
+      "evidence": "Manufacturers position reviewed scrubbers for commercial hard-floor cleaning.",
+      "scope": "Approved floors and named machines.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "Route geometry and support time should be measured before selecting width or tank size."
+    },
+    {
+      "application": "Occupied or noise-sensitive facilities",
+      "wcbAssessment": "Daytime suitability requires local sound, traffic and residual-moisture acceptance.",
+      "basis": "Official application positioning and model-specific sound data.",
+      "limitations": "A marketing application image is not a universal safety result.",
+      "buyerAction": "Trial during the intended operating window and document controls.",
+      "engineeringCheck": "Check sound method, visibility, stopping distance and dryness.",
+      "evidence": "Official sources show or position selected machines in public and healthcare settings.",
+      "scope": "Exact site procedure and regional model.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "Daytime suitability requires local sound, traffic and residual-moisture acceptance."
+    },
+    {
+      "application": "Structured or uneven hard floors",
+      "wcbAssessment": "Deck and squeegee choice should be proven on the actual surface.",
+      "basis": "Manufacturers offer disc, roller and orbital heads plus different squeegees.",
+      "limitations": "No head is universally best.",
+      "buyerAction": "Use a soil-and-floor test panel in the acceptance trial.",
+      "engineeringCheck": "Inspect edge cleaning, solution recovery and surface change.",
+      "evidence": "Official pages document alternative deck systems and recovery features.",
+      "scope": "Exact floor, soil, chemical and consumable.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "Deck and squeegee choice should be proven on the actual surface."
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Scrub deck and consumable interface",
+      "role": "Provides floor agitation.",
+      "variants": [
+        "Disc brush or pad driver",
+        "Cylindrical roller",
+        "Orbital head"
+      ],
+      "criticalChecks": [
+        "Deck model",
+        "Working width",
+        "Brush or pad part number",
+        "Floor approval"
+      ],
+      "evidence": "Official sources publish several deck architectures.",
+      "scope": "No cross-model compatibility is inferred.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Squeegee and recovery path",
+      "role": "Collects and transports dirty solution.",
+      "variants": [
+        "Curved squeegee",
+        "Blade sets",
+        "Recovery hose and vacuum motor"
+      ],
+      "criticalChecks": [
+        "Assembly width",
+        "Blade material",
+        "Hose fit",
+        "Adjustment"
+      ],
+      "evidence": "Official documentation treats recovery parts as model-specific assemblies.",
+      "scope": "Exact model and serial range.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Tank and chemical system",
+      "role": "Stores and meters clean solution and recovered liquid.",
+      "variants": [
+        "Manual dilution",
+        "Onboard dosing",
+        "Auto-fill or rinse options"
+      ],
+      "criticalChecks": [
+        "Tank seals",
+        "Approved chemistry",
+        "Dose range",
+        "Drain access"
+      ],
+      "evidence": "Manufacturers publish configuration-specific tank and dosing features.",
+      "scope": "Exact chemistry and machine option.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Battery, charger and controls",
+      "role": "Supplies traction, scrubbing and recovery power.",
+      "variants": [
+        "Flooded or sealed lead-acid",
+        "Lithium-ion",
+        "Onboard or off-board charger"
+      ],
+      "criticalChecks": [
+        "Voltage",
+        "Chemistry",
+        "Connector",
+        "Charger pairing"
+      ],
+      "evidence": "Official pages document multiple battery configurations.",
+      "scope": "Exact product number and local electrical supply.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "tennant",
+      "brandName": "Tennant",
+      "modelName": "T300",
+      "subtype": "Walk-behind",
+      "distinguishingSpecifications": [
+        "430, 500 or 600 mm published cleaning paths",
+        "42 L solution tank"
+      ],
+      "marketScope": "Tennant US",
+      "evidence": "The official manufacturer source identifies the named walk-behind model and the cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "tennant-t300"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "tennant",
+      "brandName": "Tennant",
+      "modelName": "T500",
+      "subtype": "Walk-behind",
+      "distinguishingSpecifications": [
+        "650, 700 or 800 mm published cleaning paths",
+        "85 L solution tank",
+        "Disc, cylindrical or orbital deck options"
+      ],
+      "marketScope": "Tennant US",
+      "evidence": "The official manufacturer source identifies the named walk-behind model and the cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "tennant-t500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "SC500",
+      "subtype": "Walk-behind",
+      "distinguishingSpecifications": [
+        "530 mm family cleaning width",
+        "45 L solution and recovery tanks"
+      ],
+      "marketScope": "Nilfisk GB product 9087351020",
+      "evidence": "The official manufacturer source identifies the named walk-behind model and the cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "nilfisk-sc500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "B 50 W",
+      "subtype": "Walk-behind push scrubber dryer",
+      "distinguishingSpecifications": [
+        "D51, D60, R55 or O51 heads",
+        "50 L tank family"
+      ],
+      "marketScope": "Kärcher International",
+      "evidence": "The official manufacturer source identifies the named walk-behind model and the cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "hako",
+      "brandName": "Hako",
+      "modelName": "Scrubmaster B25",
+      "subtype": "Compact walk-behind",
+      "distinguishingSpecifications": [
+        "43 cm working width",
+        "25 L fresh and dirty water tanks"
+      ],
+      "marketScope": "Hako International",
+      "evidence": "The official manufacturer source identifies the named walk-behind model and the cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "hako-b25"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "hako",
+      "brandName": "Hako",
+      "modelName": "Scrubmaster B50",
+      "subtype": "Traction-drive walk-behind",
+      "distinguishingSpecifications": [
+        "55 cm working width",
+        "50 L fresh and dirty water tanks"
+      ],
+      "marketScope": "Hako international 2026 range",
+      "evidence": "The official manufacturer source identifies the named walk-behind model and the cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "hako-b50"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "taski",
+      "brandName": "TASKI",
+      "modelName": "ULTIMAXX 1900",
+      "subtype": "Walk-behind scrubber dryer",
+      "distinguishingSpecifications": [
+        "Multiple double-disc, roller and orbital variants",
+        "Configuration-specific working widths"
+      ],
+      "marketScope": "TASKI international range",
+      "evidence": "The official manufacturer source identifies the named walk-behind model and the cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Routine hard-floor maintenance",
+      "attributeToVerify": "Route fit, achieved productivity and recovery quality",
+      "comparisonTrap": "Buying by theoretical m²/h alone",
+      "assessment": "Use a timed site trial including support work.",
+      "basis": "Manufacturer figures omit some site variables.",
+      "limitations": "No universal correction factor exists.",
+      "buyerAction": "Measure fill, travel, cleaning, dump and post-clean time.",
+      "engineeringCheck": "Record floor area, obstacles, turns and achieved dryness.",
+      "evidence": "Official sources publish widths, tanks and selected theoretical output.",
+      "scope": "Source-specific figures and actual site.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Battery-powered shift work",
+      "attributeToVerify": "Battery chemistry, runtime, charger and opportunity-charging rules",
+      "comparisonTrap": "Assuming amp-hours or maximum runtime are directly comparable",
+      "assessment": "Approve a complete energy package, not the machine alone.",
+      "basis": "Battery options vary by product and market.",
+      "limitations": "Battery aging and duty vary.",
+      "buyerAction": "Require exact battery and charger part numbers in the quote.",
+      "engineeringCheck": "Model energy, charging window, ventilation and electrical input.",
+      "evidence": "Official sources list model-specific battery choices.",
+      "scope": "Delivered configuration.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Multiple floor types",
+      "attributeToVerify": "Deck, consumable, chemistry and squeegee for every surface",
+      "comparisonTrap": "Treating one brush or pad as universal",
+      "assessment": "Use a configuration matrix by floor and soil.",
+      "basis": "Official ranges offer different working heads.",
+      "limitations": "Compatibility must be confirmed by the machine and floor suppliers.",
+      "buyerAction": "Require written approvals and sample cleaning.",
+      "engineeringCheck": "Lock consumable part numbers and settings into the SOP.",
+      "evidence": "Manufacturers publish disc, roller and orbital options on selected models.",
+      "scope": "Exact machine, floor and consumable.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Door, aisle and turning envelope",
+      "reason": "Nominal cleaning width is smaller than the machine or squeegee envelope.",
+      "buyerAction": "Measure the complete route and demonstrate turns.",
+      "evidence": "Official pages publish dimensions and widths separately.",
+      "scope": "Exact delivered configuration.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Floor and chemical compatibility",
+      "reason": "Brush, pad, pressure and detergent can affect finish and recovery.",
+      "buyerAction": "Obtain written approvals and trial the actual surface.",
+      "evidence": "Manufacturers specify model-specific decks and chemical systems.",
+      "scope": "Actual floor, coating, soil and chemistry.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Parts and service configuration",
+      "reason": "Decks, blades, batteries and chargers differ within a model family.",
+      "buyerAction": "Record serial range and all consumable part numbers.",
+      "evidence": "Official product families expose multiple configurations.",
+      "scope": "Quoted regional product number.",
+      "sourceIds": [
+        "tennant-t500",
+        "nilfisk-sc500",
+        "karcher-b50",
+        "hako-b50",
+        "taski-u1900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72:2021",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety scope for powered ride-on and powered walk-behind commercial floor-treatment machines; it does not rank cleaning performance.",
+      "evidence": "IEC publishes the edition, date and scope.",
+      "scope": "Confirm regional adoption and the exact machine classification.",
+      "sourceIds": [
+        "iec-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2021-07-12",
+      "title": "IEC commercial floor-treatment safety edition published",
+      "summary": "IEC published edition 5.0 of IEC 60335-2-72.",
+      "evidence": "IEC catalogue records the publication date and scope.",
+      "scope": "Safety scope only; not a performance ranking.",
+      "sourceIds": [
+        "iec-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iec-72",
+      "title": "IEC 60335-2-72:2021",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64778",
+      "publishedAt": "2021-07-12",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tennant-t300",
+      "title": "T300 Walk-Behind Floor Scrubber",
+      "publisher": "Tennant Company",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/machines/scrubbers/product.t300.walk-behind-floor-scrubber.m-t300.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tennant-t500",
+      "title": "T500 Walk-Behind Floor Scrubber",
+      "publisher": "Tennant Company",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/machines/scrubbers/product.t500.scrubber-walk-behind-t500.2000093.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-sc500",
+      "title": "SC500 Walk-Behind Scrubber Dryer",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/en-gb/professional/products/floor-cleaning/scrubber-dryers/walk-behind-scrubber-and-dryers/medium/sc500%2B9087351020/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-b50",
+      "title": "B 50 W Push Scrubber Dryer",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/professional/floor-scrubbers-scrubber-driers/b-50-w-push-scrubber-dryer.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "hako-b25",
+      "title": "Scrubmaster B25",
+      "publisher": "Hako",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/en/products/cleaning-technology/scrubber-driers/walk-behind-scrubber-driers/scrubmaster-b25",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "hako-b50",
+      "title": "Scrubmaster B35/B50",
+      "publisher": "Hako",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/produkte/reinigungstechnik/scheuersaugmaschinen/walk-behind-scheuersaugmaschinen/scrubmaster-b35/b50",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "taski-u1900",
+      "title": "ULTIMAXX 1900 Scrubber Dryer Range",
+      "publisher": "TASKI",
+      "sourceType": "manufacturer",
+      "url": "https://nam.taski.com/products-innovations-solutions/products/scrubber-driers",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}
