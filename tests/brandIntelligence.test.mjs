@@ -913,6 +913,7 @@ test("the release gate validates the one-hundred-and-one published profiles and 
     "where-are-dyson-vacuums-made": ["dyson"],
     "who-makes-aquabot-pool-cleaners-bwt-aquatron": ["aquabot"],
     "who-makes-dolphin-pool-cleaners-maytronics": ["maytronics"],
+    "who-makes-henry-vacuum-cleaners-numatic": ["numatic"],
     "who-makes-kobalt-tools-lowes-suppliers": ["kobalt"],
     "who-makes-luba-robot-mowers-mammotion-agilex": ["mammotion"],
     "who-makes-mova-robot-mowers-dreame-group": ["mova"],
@@ -949,10 +950,12 @@ test("the release gate validates the one-hundred-and-one published profiles and 
     "who-owns-festool-tts-tooltechnic-systems": ["festool"],
     "who-owns-fisher-paykel-haier-manufacturing": ["fisher-paykel"],
     "who-owns-flex-tools-chervon-lowes": ["flex"],
+    "who-owns-frigidaire-electrolux-manufacturing": ["electrolux"],
     "who-owns-ge-appliances-haier-manufacturing": ["ge-appliances"],
     "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
     "who-owns-haier-appliances-brand-portfolio": ["haier-home-appliances"],
     "who-owns-makita-company-manufacturing": ["makita"],
+    "who-owns-maytag-whirlpool-manufacturing": ["whirlpool"],
     "who-owns-miele-family-manufacturing-network": ["miele"],
     "who-owns-midea-appliances-brand-portfolio": ["midea"],
     "who-owns-milwaukee-tools-tti-manufacturing": ["milwaukee", "tti"],
@@ -1019,8 +1022,8 @@ test("the release gate validates the one-hundred-and-one published profiles and 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 135);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 212);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 138);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 215);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -1247,7 +1250,7 @@ test("commercial-cleaning batch fourteen publishes PUDU Robotics, LionsBot and D
   assert.match(profilesBySlug.get("dulevo").ownership.parentCompany, /FAYAT/i);
 });
 
-test("commercial-cleaning batch thirteen publishes Numatic, Gausium and IPC without article relationships", async () => {
+test("commercial-cleaning batch thirteen publishes Numatic, Gausium and IPC with only the approved Henry relationship", async () => {
   const newSlugs = ["gausium", "ipc", "numatic"];
   const profilesBySlug = new Map(
     getBrandProfiles().map((candidate) => [candidate.slug, candidate])
@@ -1276,12 +1279,13 @@ test("commercial-cleaning batch thirteen publishes Numatic, Gausium and IPC with
     assert.equal(heroMetadata.width, 1600);
     assert.equal(heroMetadata.height, 1000);
 
+    const relationships = realArticles
+      .filter((article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
+      .map((article) => article.slug);
     assert.deepEqual(
-      realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
-      ),
-      [],
-      `${slug} must not create article relationships`
+      relationships,
+      slug === "numatic" ? ["who-makes-henry-vacuum-cleaners-numatic"] : [],
+      `${slug} must expose only the approved article relationships`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
   }

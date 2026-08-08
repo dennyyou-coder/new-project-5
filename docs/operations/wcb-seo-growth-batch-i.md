@@ -12,9 +12,9 @@ This is the operational record for three new ownership-and-manufacturing guides 
 
 | Order | Fixed title | Slug | Intent boundary | Status |
 |---:|---|---|---|---|
-| 1 | Who Makes Kenmore Appliances? Transformco, Brand Licensing and Manufacturers Explained | `who-makes-kenmore-appliances-transformco-manufacturers` | Broad appliances; distinct from the Cleva floor-care license page | `local_verified` |
-| 2 | Who Owns ECOVACS? Public Company, Tineco and Manufacturing Explained | `who-owns-ecovacs-tineco-manufacturing` | Listed parent and ECOVACS brand; distinct from Tineco ownership and product comparisons | `local_verified` |
-| 3 | Who Owns Electrolux? Shareholders, Brands and Manufacturing Explained | `who-owns-electrolux-brands-manufacturing` | AB Electrolux parent; distinct from the AEG child-brand relationship page | `local_verified` |
+| 1 | Who Makes Kenmore Appliances? Transformco, Brand Licensing and Manufacturers Explained | `who-makes-kenmore-appliances-transformco-manufacturers` | Broad appliances; distinct from the Cleva floor-care license page | `published_verified` |
+| 2 | Who Owns ECOVACS? Public Company, Tineco and Manufacturing Explained | `who-owns-ecovacs-tineco-manufacturing` | Listed parent and ECOVACS brand; distinct from Tineco ownership and product comparisons | `published_verified` |
+| 3 | Who Owns Electrolux? Shareholders, Brands and Manufacturing Explained | `who-owns-electrolux-brands-manufacturing` | AB Electrolux parent; distinct from the AEG child-brand relationship page | `published_verified` |
 
 ## Collision and intent checks
 
@@ -82,4 +82,7 @@ This is the operational record for three new ownership-and-manufacturing guides 
 
 ## Production evidence
 
-Add PR, merge commit, Vercel deployment and live verification after the production gate passes.
+- Ready PR: `#60`.
+- Production commit: `349e0305252d6f8f21d81161c7cdeb819c0d5117`.
+- Git-linked Vercel production deployment: `dpl_CTy1AQR3hHnikLK5Bp8127dGpw13`, status `READY`.
+- Live verification passed for all three article routes, all nine visual assets, Brand Ownership discovery and sitemap inclusion.
