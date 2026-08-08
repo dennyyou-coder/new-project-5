@@ -22,7 +22,7 @@ export function EquipmentTechnicalSections({ profile }: { profile: EquipmentProf
             <h2>What the performance metrics do—and do not—mean</h2>
           </div>
           <BrandDataTable
-            caption="Floor scrubber performance metric dictionary"
+            caption={`${profile.name} performance metric dictionary`}
             columns={[
               { key: "metric", label: "Metric" },
               { key: "meaning", label: "Purchasing meaning" },
@@ -52,7 +52,7 @@ export function EquipmentTechnicalSections({ profile }: { profile: EquipmentProf
           {applicationVisual ? (
             <EquipmentContentVisualFigure
               visual={applicationVisual}
-              guidance="Treat the photographed setting as context only. Validate aisle and turn dimensions, occupied-space noise, residual moisture, floor finish and the planned cleaning window on site."
+              guidance="Treat the photographed setting as context only. Validate utilities, surface compatibility, operating space, operator controls, environmental conditions and the planned work process on site."
             />
           ) : null}
           <div className="equipment-assessment-list">

@@ -285,7 +285,10 @@ test("second equipment batch meets evidence relationship and visual gates", asyn
     assert.match(diagramSource, /<svg/);
     assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
     assert.match(mobileDiagramSource, /<svg/);
-    assert.match(mobileDiagramSource, /Family labels do not establish cross-model compatibility/);
+    assert.match(
+      mobileDiagramSource.replace(/<[^>]+>/g, " ").replace(/\s+/g, " "),
+      /Family labels do not establish cross-model compatibility/
+    );
   }
 });
 
@@ -296,7 +299,7 @@ test("published second equipment batch is included in production sitemap discove
   }
 });
 
-test("third equipment batch meets draft evidence relationship and visual gates", async () => {
+test("third equipment batch meets published evidence relationship and visual gates", async () => {
   const realPublishedBrandSlugs = new Set(
     getPublishedBrandProfiles(getInsights()).map(({ slug }) => slug)
   );
@@ -305,7 +308,7 @@ test("third equipment batch meets draft evidence relationship and visual gates",
   for (const slug of ["single-disc-floor-machine", "floor-burnisher", "commercial-pressure-washer"]) {
     const profile = profiles.find((candidate) => candidate?.slug === slug);
     assert.ok(profile, `${slug} profile should exist`);
-    assert.equal(profile.status, "draft");
+    assert.equal(profile.status, "published");
     assert.deepEqual(validateEquipmentProfile(profile, realPublishedBrandSlugs), []);
     assert.ok(profile.sources.length >= 5);
     assert.ok(profile.representativeModels.length >= 6);
@@ -319,6 +322,14 @@ test("third equipment batch meets draft evidence relationship and visual gates",
     );
     assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
     assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 1);
+    if (slug === "commercial-pressure-washer") {
+      assert.match(profile.sources.find(({ id }) => id === "karcher-hd615")?.url ?? "", /hd-6-15-m-11509300/);
+    } else {
+      assert.equal(
+        profile.sources.find(({ id }) => id === "iec-floor-treatment")?.url,
+        "https://webstore.iec.ch/en/publication/64775"
+      );
+    }
 
     const heroMetadata = await sharp(path.join(process.cwd(), "public", profile.heroImage)).metadata();
     assert.equal(heroMetadata.format, "webp");
@@ -338,7 +349,17 @@ test("third equipment batch meets draft evidence relationship and visual gates",
     assert.match(diagramSource, /<svg/);
     assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
     assert.match(mobileDiagramSource, /<svg/);
-    assert.match(mobileDiagramSource, /Family labels do not establish cross-model compatibility/);
+    assert.match(
+      mobileDiagramSource.replace(/<[^>]+>/g, " ").replace(/\s+/g, " "),
+      /Family labels do not establish cross-model compatibility/
+    );
+  }
+});
+
+test("published third equipment batch is included in production sitemap discovery", () => {
+  const urls = sitemap().map(({ url }) => url);
+  for (const slug of ["single-disc-floor-machine", "floor-burnisher", "commercial-pressure-washer"]) {
+    assert.equal(urls.some((url) => url.endsWith(`/equipment/${slug}`)), true);
   }
 });
 

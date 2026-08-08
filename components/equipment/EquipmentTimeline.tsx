@@ -8,7 +8,7 @@ export function EquipmentTimeline({ profile }: { profile: EquipmentProfile }) {
       <div className="insights-page-container">
         <div className="equipment-section-heading">
           <p className="eyebrow">Technical developments</p>
-          <h2>Selected changes in floor scrubber systems</h2>
+          <h2>Selected changes in {profile.name.toLowerCase()} systems</h2>
         </div>
         <ol className="equipment-timeline">
           {developments.map((item) => (

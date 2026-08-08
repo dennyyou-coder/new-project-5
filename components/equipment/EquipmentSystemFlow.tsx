@@ -8,7 +8,7 @@ export function EquipmentSystemFlow({ profile }: { profile: EquipmentProfile }) 
       <div className="insights-page-container">
         <div className="equipment-section-heading">
           <p className="eyebrow">WCB explanatory visual</p>
-          <h2>How a floor scrubber works</h2>
+          <h2>{profile.name} working system</h2>
           <p>An original system map synthesized from reviewed operator manuals. It explains functional flow, not a universal machine architecture.</p>
         </div>
         <ol className="equipment-system-flow">

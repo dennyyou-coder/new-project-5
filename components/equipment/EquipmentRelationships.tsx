@@ -27,7 +27,7 @@ export function EquipmentRelationships({ profile }: { profile: EquipmentProfile 
         </div>
         <div className="equipment-table-scroll">
           <BrandDataTable
-            caption="Representative floor scrubber models"
+            caption={`Representative ${profile.name.toLowerCase()} models`}
             columns={[
               { key: "brand", label: "Brand" },
               { key: "model", label: "Model" },
