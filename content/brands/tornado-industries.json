@@ -1,0 +1,151 @@
+{
+  "status": "published",
+  "slug": "tornado-industries",
+  "name": "Tornado",
+  "aliases": ["Tornado Industries", "Tornado Vac"],
+  "legalEntityNote": "Tornado is a Tacony commercial-floorcare brand. The current official website identifies Tornado Industries, Inc. as the business delivering the equipment and after-sale service, while historical manuals and warranty materials may name Tornado Industries, LLC. Those legacy references do not establish the current contracting, trademark, seller, importer or warranty entity for every product and market.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.tornadovac.com/",
+  "headline": "Tornado commercial floorcare, Tacony ownership and U.S. operations",
+  "description": "A source-backed profile of Tornado as a Tacony commercial-floorcare brand, with current operating-company, product, manufacturing and service boundaries.",
+  "metaDescription": "Tornado profile: Tacony ownership, Tornado Industries entity boundary, scrubbers, vacuums, U.S. operations and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Tornado or Tacony. Current web statements, legacy documents and product pages do not by themselves establish the legal seller, manufacturer, origin, importer or warranty provider for every SKU.",
+  "headquarters": "Fenton, Missouri, United States",
+  "founded": "1927 (brand history stated by Tacony)",
+  "heroImage": "/images/brands/tornado-industries/hero-bd-26-20-scrubber.webp",
+  "heroImageAlt": "Tornado BD 26/20 walk-behind commercial floor scrubber",
+  "heroSourceUrl": "https://www.tornadovac.com/media/catalog/product/t/s/ts530-w26-u_3ql.jpg",
+  "logoImage": "/images/brands/tornado-industries/logo.webp",
+  "logoImageAlt": "Tornado logo",
+  "logoSourceUrl": "https://www.tornadovac.com/static/version1784197549/frontend/Snowdog/Tornado/en_US/images/logo.png",
+  "contentVisuals": [
+    {
+      "placement": "portfolio",
+      "src": "/images/brands/tornado-industries/br-33-30-ride-on-scrubber.webp",
+      "alt": "Tornado BR 33/30 ride-on commercial floor scrubber",
+      "caption": "Tornado's portfolio extends from compact machines to larger ride-on scrubbers for high-productivity facilities."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/tornado-industries/day-one-pro-machine-design.webp",
+      "alt": "Tornado machine detail and Day-One Pro design message",
+      "caption": "Tornado emphasizes operator-focused product design, while buyers still need model-specific training and service evidence."
+    }
+  ],
+  "ownership": {
+    "summary": "Tacony's official brand portfolio presents Tornado within its commercial floor-care business and dates the brand's floorcare history to 1927. The Tornado website names Tornado Industries, Inc. as the current equipment and service business. Tacony is therefore the parent group, while the brand, operating company and local channel responsibilities remain separate.",
+    "parentCompany": "Tacony Corporation"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Automatic scrubbers",
+      "positioning": "Compact, walk-behind, stand-on and ride-on platforms cover a wide range of commercial hard-floor cleaning duties.",
+      "buyerRelevance": "Verify deck type, cleaning path, tank size, productivity, batteries, charger, noise, accessories and operator fit."
+    },
+    {
+      "name": "Vacuums and carpet equipment",
+      "positioning": "Upright, backpack, wet/dry and jumbo vacuums sit alongside spotters, extractors and air-moving equipment.",
+      "buyerRelevance": "Confirm filtration, electrical or battery standard, tool package, chemical process, drying performance and replacement consumables."
+    },
+    {
+      "name": "Floor machines, burnishers and sweepers",
+      "positioning": "Single-disc floor machines, burnishers, sweepers and specialty units broaden whole-facility floorcare coverage.",
+      "buyerRelevance": "Match speed, dust control, brushes or pads, debris type, safety requirements and local repair capability to the task."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Tornado's current overview says it has manufacturing operations at product-management and development centers in St. James, Missouri, and Fort Worth, Texas.",
+      "scope": "Company-level current statement; it does not prove U.S. manufacture for every finished product or component",
+      "buyerCheck": "Request the exact machine's manufacturer plate, production site, country of origin and serial-level configuration record."
+    },
+    {
+      "evidence": "Tornado describes integrated development, engineering and assembly teams supporting its equipment business.",
+      "scope": "Organizational capability described by Tornado",
+      "buyerCheck": "Ask which engineering, assembly and testing steps apply to the quoted model and which assemblies are externally sourced."
+    },
+    {
+      "evidence": "Official product pages provide model-specific specifications, manuals and parts information.",
+      "scope": "Named models and document revisions",
+      "buyerCheck": "Archive the exact manual, specification sheet, parts list and configuration accepted in the purchase order."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Tornado markets through quote, demonstration and dealer-support routes for professional cleaning customers.",
+      "scope": "Official U.S. commercial route to market",
+      "buyerCheck": "Verify dealer authorization, territory, invoicing entity, delivery responsibility and demonstration configuration."
+    },
+    {
+      "evidence": "Tornado publishes technical-support and service-center locator routes alongside warranty registration and policy information.",
+      "scope": "Published support framework; actual capacity and terms vary by location and model",
+      "buyerCheck": "Confirm technician coverage, parts stock, response time, claim authorization and escalation contacts before award."
+    },
+    {
+      "evidence": "Current product pages state model-level warranty periods and direct customers to manuals and specification sheets.",
+      "scope": "Named U.S. product page terms at the reviewed date",
+      "buyerCheck": "Obtain the current signed warranty for the exact SKU, seller, serial number and destination rather than relying on a catalogue summary."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Tornado combines a nearly century-old professional floorcare brand with Tacony's commercial-floorcare platform and a broad machine catalogue. Buyers should reconcile current Tornado Industries, Inc. references with legacy LLC documents and confirm model-level U.S. production, seller and warranty roles.",
+    "competitorSlugs": ["factory-cat", "minuteman", "nss", "truvox"]
+  },
+  "developments": [
+    {
+      "date": "1927",
+      "title": "Tornado floorcare history begins",
+      "summary": "Tacony's official brand portfolio dates Tornado's development of floorcare products to 1927.",
+      "sourceIds": ["tacony-brands"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tornado-overview",
+      "title": "Tornado Overview",
+      "publisher": "Tornado Industries",
+      "url": "https://www.tornadovac.com/overview",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tornado-history",
+      "title": "Tornado History",
+      "publisher": "Tornado Industries",
+      "url": "https://www.tornadovac.com/history",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tornado-scrubbers",
+      "title": "Tornado Scrubbers",
+      "publisher": "Tornado Industries",
+      "url": "https://www.tornadovac.com/scrubbers.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tornado-bd-26-20",
+      "title": "BD 26/20 Walk-Behind Disk Scrubbers",
+      "publisher": "Tornado Industries",
+      "url": "https://www.tornadovac.com/bd-26-20-walk-behind-disk-scrubbers.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tornado-legacy-taskforce-manual",
+      "title": "Taskforce 15 and Taskforce 20 Operation and Maintenance Manual",
+      "publisher": "Tornado Industries, LLC",
+      "url": "https://www.tornadovac.com/amfile/file/download/file/979/product/49516/",
+      "publishedAt": "2017-11",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tacony-brands",
+      "title": "Brands and Innovation: Tornado",
+      "publisher": "Tacony Corporation",
+      "url": "https://www.tacony.com/brands-innovation.html",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T15:45:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T15:45:00+08:00"
+}

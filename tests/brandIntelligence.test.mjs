@@ -702,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the one-hundred-and-ten published profiles and approved article relationships", () => {
+test("the release gate validates the one-hundred-and-thirteen published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -742,6 +742,7 @@ test("the release gate validates the one-hundred-and-ten published profiles and 
     "electrolux",
     "eufy",
     "eureka",
+    "factory-cat",
     "festool",
     "fimap",
     "fiorentini",
@@ -786,6 +787,7 @@ test("the release gate validates the one-hundred-and-ten published profiles and 
     "mova",
     "narwal",
     "nilfisk",
+    "nss",
     "numatic",
     "oertzen",
     "oreck",
@@ -812,6 +814,7 @@ test("the release gate validates the one-hundred-and-ten published profiles and 
     "teka",
     "tennant",
     "tineco",
+    "tornado-industries",
     "toro",
     "toshiba-appliances",
     "truvox",
@@ -1005,7 +1008,7 @@ test("the release gate validates the one-hundred-and-ten published profiles and 
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 110);
+  assert.equal(loadedProfiles.length, 113);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1071,7 +1074,7 @@ test("the release gate validates the one-hundred-and-ten published profiles and 
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 110);
+  assert.equal(profiles.length, 113);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1090,6 +1093,96 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("commercial-cleaning batch twenty publishes Factory Cat, NSS and Tornado without article relationships", async () => {
+  const newSlugs = ["factory-cat", "nss", "tornado-industries"];
+  const officialSourceDomains = {
+    "factory-cat": {
+      logo: "factorycat.com",
+      hero: "rps-cms-app-public.nyc3.digitaloceanspaces.com",
+    },
+    nss: { logo: "nam.taski.com", hero: "nam.taski.com" },
+    "tornado-industries": { logo: "tornadovac.com", hero: "tornadovac.com" },
+  };
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published");
+    assert.equal(candidate.schemaEntityType, "Brand");
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.equal(new URL(candidate.logoSourceUrl).hostname.replace(/^www\./, ""), officialSourceDomains[slug].logo);
+    assert.equal(new URL(candidate.heroSourceUrl).hostname.replace(/^www\./, ""), officialSourceDomains[slug].hero);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)));
+
+    const logoMetadata = await sharp(path.join(process.cwd(), "public", candidate.logoImage)).metadata();
+    const heroMetadata = await sharp(path.join(process.cwd(), "public", candidate.heroImage)).metadata();
+    assert.equal(logoMetadata.format, "webp");
+    assert.ok(logoMetadata.width >= 600);
+    assert.equal(heroMetadata.format, "webp");
+    assert.equal(heroMetadata.width, 1600);
+    assert.equal(heroMetadata.height, 1000);
+    for (const visual of candidate.contentVisuals) {
+      const visualMetadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+      assert.equal(visualMetadata.format, "webp");
+      assert.equal(visualMetadata.width, 1600);
+      assert.equal(visualMetadata.height, 900);
+    }
+
+    assert.deepEqual(
+      realArticles.filter(
+        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+      ),
+      [],
+      `${slug} must not create article relationships`
+    );
+    assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
+    assert.deepEqual(
+      categories
+        .filter(({ profiles }) => profiles.some((profile) => profile.slug === slug))
+        .map(({ category }) => category.slug),
+      ["commercial-industrial-cleaning"]
+    );
+  }
+
+  const factoryCat = profilesBySlug.get("factory-cat");
+  assert.equal(factoryCat.legalName, undefined);
+  assert.equal(factoryCat.ownership.parentCompany, "RPS Corporation");
+  assert.match(factoryCat.legalEntityNote, /RPS Corporation/i);
+  assert.match(factoryCat.ownership.summary, /family-owned/i);
+  assert.ok(factoryCat.aliases.every((alias) => !/^CAT$/i.test(alias)));
+
+  const nss = profilesBySlug.get("nss");
+  assert.equal(nss.legalName, undefined);
+  assert.equal(nss.ownership.parentCompany, "Solenis");
+  assert.match(nss.legalEntityNote, /NSS Enterprises, Inc\./i);
+  assert.match(nss.legalEntityNote, /operating|seller|warranty/i);
+  assert.match(nss.ownership.summary, /TASKI.*Solenis brand/i);
+  assert.ok(nss.aliases.every((alias) => !/^TASKI$/i.test(alias)));
+
+  const tornado = profilesBySlug.get("tornado-industries");
+  assert.equal(tornado.legalName, undefined);
+  assert.equal(tornado.ownership.parentCompany, "Tacony Corporation");
+  assert.match(tornado.legalEntityNote, /Tornado Industries, Inc\./i);
+  assert.match(tornado.legalEntityNote, /legacy|historical/i);
+  assert.match(tornado.legalEntityNote, /LLC/i);
+  assert.ok(tornado.sources.some((source) => source.url === "https://www.tornadovac.com/overview"));
+  assert.ok(
+    tornado.sources.some(
+      (source) =>
+        source.url ===
+        "https://www.tornadovac.com/amfile/file/download/file/979/product/49516/"
+    )
+  );
 });
 
 test("commercial-cleaning batch nineteen publishes Fiorentini, Ghibli and Lindhaus without article relationships", async () => {

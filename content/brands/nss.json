@@ -1,0 +1,150 @@
+{
+  "status": "published",
+  "slug": "nss",
+  "name": "NSS",
+  "aliases": ["NSS cleaning equipment", "NSS floor machines"],
+  "legalEntityNote": "NSS is now presented as a commercial-cleaning brand in the TASKI family. TASKI's official timeline says it acquired NSS Enterprises, Inc. in 2023, while current and legacy product documents may still name NSS Enterprises, Inc. The reviewed public materials do not establish one universal current operating, seller, importer or warranty entity for every NSS product and market.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://nam.taski.com/why-taski/about-nss/",
+  "headline": "NSS brand, TASKI and Solenis boundary, Toledo production and buyer checks",
+  "description": "A source-backed profile of NSS after joining TASKI, with Toledo production evidence, scrubbers, burnishers, vacuums, channels and legal-entity checks.",
+  "metaDescription": "NSS profile: TASKI and Solenis relationship, Toledo production, scrubbers, burnishers, vacuums and buyer verification.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with NSS, TASKI, Diversey or Solenis. Brand ownership, acquired company, manufacturer, regional seller, importer, service and warranty roles are treated separately.",
+  "headquarters": "Toledo, Ohio, United States (NSS production heritage and current TASKI/NSS operation)",
+  "founded": "More than 100 years of NSS history; exact founding year not confirmed in the reviewed current public materials",
+  "heroImage": "/images/brands/nss/hero-toledo-team-training.webp",
+  "heroImageAlt": "Cleaning-equipment professionals gathered around a machine at the Toledo TASKI and NSS operation",
+  "heroSourceUrl": "https://nam.taski.com/wp-content/uploads/2024/11/diversified-team-shot-1.jpg",
+  "logoImage": "/images/brands/nss/logo.webp",
+  "logoImageAlt": "NSS logo",
+  "logoSourceUrl": "https://nam.taski.com/wp-content/uploads/2024/09/nss-logo-off.jpg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/nss/taski-toledo-production.webp",
+      "alt": "TASKI Toledo team and U.S. production announcement",
+      "caption": "TASKI's official U.S. production announcement follows its acquisition of NSS and places TASKI and NSS machine production together in Toledo."
+    },
+    {
+      "placement": "portfolio",
+      "src": "/images/brands/nss/wrangler-2730-scrubber.webp",
+      "alt": "NSS Wrangler 2730 DB walk-behind floor scrubber",
+      "caption": "The Wrangler range represents NSS's walk-behind scrubber portfolio; specifications and origin must be verified at model and serial level."
+    }
+  ],
+  "ownership": {
+    "summary": "TASKI's official timeline says TASKI acquired NSS Enterprises, Inc. in 2023, and the current NSS page says the NSS brand has joined the TASKI family. TASKI is itself identified as a Solenis brand. These statements establish the brand and group relationship but do not make TASKI, Solenis or a historic NSS company name the automatic contracting or warranty entity in every market.",
+    "parentCompany": "Solenis"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Walk-behind and ride-on scrubbers",
+      "positioning": "Wrangler and Champ machines span compact walk-behind through larger rider floor-scrubbing applications.",
+      "buyerRelevance": "Confirm cleaning path, deck, tank size, traction, batteries, charger, run time, squeegee and local parts support."
+    },
+    {
+      "name": "Floor machines and burnishers",
+      "positioning": "Charger, Galaxy, Mustang and eForce platforms cover low-speed floor work and high-speed burnishing.",
+      "buyerRelevance": "Verify pad speed, dust control, electrical standard, battery configuration, floor-finish compatibility and operator safeguards."
+    },
+    {
+      "name": "Commercial vacuums and extraction",
+      "positioning": "Pacer, Colt, Rally and other NSS lines address upright, wet/dry, specialty vacuum and extraction tasks.",
+      "buyerRelevance": "Match filtration, tank and pump specifications, tools, noise, electrical standard and repair network to the application."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "The current NSS page says TASKI and NSS machines are manufactured side by side at the Toledo, Ohio operation.",
+      "scope": "Current company-level Toledo production statement; it does not identify every covered model, component or origin rule",
+      "buyerCheck": "Confirm that the exact SKU and serial range are produced in Toledo and request nameplate and country-of-origin evidence."
+    },
+    {
+      "evidence": "TASKI announced in 2024 that Swiss-engineered TASKI floor-care machines would be produced at the 200,000-square-foot Toledo site after the NSS acquisition.",
+      "scope": "Named TASKI expansion and facility statement, not a blanket NSS model-origin claim",
+      "buyerCheck": "Separate TASKI and NSS model claims and document the manufacturing entity and production steps for the purchased machine."
+    },
+    {
+      "evidence": "NSS product and parts documents identify model-specific specifications, parts and authorized-service requirements.",
+      "scope": "Named models and document revisions; some documents retain the acquired NSS Enterprises, Inc. name",
+      "buyerCheck": "Use the current manual and parts list for the exact serial number, then confirm which entity now honors service and parts obligations."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "NSS product pages are now integrated into TASKI's North American product and contact structure.",
+      "scope": "North American web route; contracting and distribution entities may differ",
+      "buyerCheck": "Identify the legal seller, distributor, importer and invoice entity before placing an order."
+    },
+    {
+      "evidence": "Official NSS manuals direct repair work to authorized service centers.",
+      "scope": "Machines and document versions carrying that service condition",
+      "buyerCheck": "Verify current authorization, technician coverage, response time, parts stock and warranty-claim acceptance for the destination."
+    },
+    {
+      "evidence": "TASKI provides product, contact and parts-store routes alongside the NSS range.",
+      "scope": "Published North American support framework",
+      "buyerCheck": "Confirm availability and commercial terms for parts, batteries, consumables and technical support for the exact NSS model."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: NSS contributes a long-established, durability-led North American machine range to TASKI's broader professional-cleaning platform. The key procurement issue is separating the NSS brand and acquired company history from the present seller, manufacturer, service and warranty entities.",
+    "competitorSlugs": ["clarke", "minuteman", "taski", "tornado-industries"]
+  },
+  "developments": [
+    {
+      "date": "2024-03-20",
+      "title": "TASKI expands floor-machine production in Toledo",
+      "summary": "TASKI announced U.S. production at the Toledo facility following its NSS acquisition, while the current NSS page says TASKI and NSS machines are produced there side by side.",
+      "sourceIds": ["taski-us-production", "nss-about"]
+    },
+    {
+      "date": "2023",
+      "title": "TASKI acquires NSS Enterprises, Inc.",
+      "summary": "TASKI's official timeline records its acquisition of NSS Enterprises, Inc. and the addition of the NSS brand to the TASKI family.",
+      "sourceIds": ["taski-timeline", "nss-about"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nss-about",
+      "title": "About NSS",
+      "publisher": "TASKI",
+      "url": "https://nam.taski.com/why-taski/about-nss/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "taski-timeline",
+      "title": "TASKI Timeline",
+      "publisher": "TASKI",
+      "url": "https://nam.taski.com/timeline/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "taski-us-production",
+      "title": "TASKI Expands Production of Swiss-Engineered Floor Care Machines to the U.S.",
+      "publisher": "TASKI",
+      "url": "https://nam.taski.com/taski-expands-production-of-swiss-engineered-floor-care-machines-to-the-u-s/",
+      "publishedAt": "2024-03-20",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "nss-scrubbers",
+      "title": "NSS Scrubber Driers",
+      "publisher": "TASKI",
+      "url": "https://nam.taski.com/products-innovations-solutions/products/scrubber-driers",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "nss-vacuums",
+      "title": "NSS Vacuum Cleaners",
+      "publisher": "TASKI",
+      "url": "https://nam.taski.com/products-innovations-solutions/products/vacuum-cleaners/",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T15:45:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T15:45:00+08:00"
+}
