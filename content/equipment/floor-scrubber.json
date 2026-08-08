@@ -1,0 +1,752 @@
+{
+  "status": "draft",
+  "slug": "floor-scrubber",
+  "name": "Floor Scrubber",
+  "aliases": ["automatic floor scrubber", "scrubber dryer", "auto scrubber"],
+  "definition": "A powered commercial floor-treatment machine that applies cleaning solution, mechanically agitates a hard floor, then collects the resulting liquid through a squeegee and vacuum-recovery system.",
+  "includedScope": [
+    "Powered walk-behind, stand-on, ride-on and autonomous machines that scrub and recover liquid in the same operating cycle",
+    "Commercial and industrial hard-floor applications within the limits stated by the machine manufacturer"
+  ],
+  "excludedScope": [
+    "Single-disc rotary floor machines that do not recover liquid",
+    "Carpet extractors, domestic floor washers, road sweepers and sweeper-scrubbers",
+    "Model-specific repair instructions or universal component compatibility claims"
+  ],
+  "primaryApplications": ["Retail and public buildings", "Warehousing and manufacturing", "Healthcare and education", "Hospitality and facility services"],
+  "headline": "Floor scrubber systems, equipment types, performance metrics, components and buyer verification",
+  "description": "This technical profile separates documented equipment facts from World Clean Biz procurement interpretation so buyers and engineers can compare floor scrubbers without treating unlike specifications as equivalent.",
+  "metaDescription": "Floor scrubber technical profile covering scrubber dryer types, working systems, specifications, components, representative models and buyer checks.",
+  "disclaimer": "This is an independent category reference, not model-specific purchasing, safety, compatibility or repair advice. Confirm the current manual, configuration, serial range, local compliance and service terms before procurement or engineering work.",
+  "heroImage": "/images/equipment/floor-scrubber/hero.webp",
+  "heroImageAlt": "Hako Scrubmaster B120 R ride-on floor scrubber shown as an official product reference",
+  "heroImageCaption": "Official Hako product image of the Scrubmaster B120 R, used as a real-equipment reference for the floor scrubber category; the category includes other formats and brands.",
+  "heroSourceUrl": "https://www.hako.com/fileadmin/user_upload/Scrubmaster/Hero-Bilder_SCM_2026/SCM-B120R_1000x1000.png",
+  "keyFacts": [
+    {
+      "label": "Cleaning mechanism",
+      "value": "Cleaning solution, rotating or orbital agitation, squeegee collection and vacuum recovery",
+      "evidence": "Official operator documentation describes solution delivered to the floor, brushes or pads scrubbing it, and a squeegee/vacuum system recovering the dirty solution.",
+      "scope": "Commercial walk-behind scrubbers represented by the Tennant T300 and Kärcher B 50 W manuals; other designs require model confirmation.",
+      "sourceIds": ["tennant-t300-manual", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "label": "Operator formats",
+      "value": "Walk-behind, stand-on, ride-on and autonomous/robotic",
+      "evidence": "Reviewed official manufacturer ranges identify walk-behind, ride-on and autonomous scrubber formats; stand-on terminology appears in manufacturer product classifications.",
+      "scope": "Terminology used by the reviewed international and US manufacturer pages; names can vary by market.",
+      "sourceIds": ["tennant-t300", "hako-b120", "karcher-kira", "nilfisk-sc500"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "label": "Common power source",
+      "value": "Battery power is common; battery chemistry, voltage, charger and runtime are configuration-specific",
+      "evidence": "Official model sources describe battery-powered configurations including lead-acid, gel/AGM and lithium-ion options.",
+      "scope": "The reviewed Tennant, Kärcher, Nilfisk and Hako configurations; not a universal statement for every floor scrubber.",
+      "sourceIds": ["tennant-t300", "karcher-b50", "nilfisk-sc500", "hako-b25"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "label": "Tank arrangement",
+      "value": "Separate fresh/solution and recovery tanks are typical in the reviewed machines",
+      "evidence": "Official specifications list separate solution/fresh-water and recovery/dirty-water capacities.",
+      "scope": "Reviewed model configurations only.",
+      "sourceIds": ["tennant-t300", "nilfisk-sc500-manual", "hako-b25", "hako-b120"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "label": "Cleaning decks",
+      "value": "Disc, cylindrical/roller and orbital systems appear in current commercial ranges",
+      "evidence": "Official product pages list disc, cylindrical/roller and orbital head options across the reviewed models.",
+      "scope": "Available options depend on exact model and configuration.",
+      "sourceIds": ["tennant-t500", "karcher-b50", "hako-b120"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Solution delivery",
+      "componentFamily": "Fresh-water tank, valve/pump and fluid path",
+      "role": "Meters water or cleaning solution to the working area.",
+      "evidence": "The reviewed manuals describe filling the solution/fresh-water tank and controlling water or detergent delivery during cleaning.",
+      "scope": "Generic flow synthesized from the reviewed walk-behind manuals; hardware differs by configuration.",
+      "sourceIds": ["tennant-t300-manual", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "order": 2,
+      "name": "Mechanical agitation",
+      "componentFamily": "Brush, pad driver or orbital deck",
+      "role": "Applies motion and contact to loosen soil from the floor surface.",
+      "evidence": "Official manuals and product pages identify rotating brush/pad and optional deck technologies used for scrubbing.",
+      "scope": "Deck mechanism and suitable consumable are model- and floor-specific.",
+      "sourceIds": ["tennant-t300-manual", "tennant-t500", "karcher-b50"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "order": 3,
+      "name": "Soil suspension",
+      "componentFamily": "Solution, detergent and dwell interface",
+      "role": "Combines liquid and agitation so loosened soil can be transported toward recovery.",
+      "evidence": "The manuals describe wet cleaning with solution and agitation before recovery of dirty liquid.",
+      "scope": "Explanatory WCB system step based on the documented wet-cleaning cycle; chemistry and dwell requirements are not universal.",
+      "sourceIds": ["tennant-t300-manual", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "order": 4,
+      "name": "Squeegee collection",
+      "componentFamily": "Squeegee body and blades",
+      "role": "Channels liquid toward the vacuum pickup path.",
+      "evidence": "Official documentation identifies the squeegee as part of the water-recovery system and provides blade inspection or replacement instructions.",
+      "scope": "Reviewed walk-behind machines; blade geometry and material vary by model and application.",
+      "sourceIds": ["tennant-t300-manual", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "order": 5,
+      "name": "Vacuum recovery",
+      "componentFamily": "Suction motor, hose and airflow path",
+      "role": "Creates airflow to move collected liquid away from the floor.",
+      "evidence": "The reviewed manuals describe activating suction/vacuuming and maintaining the recovery path.",
+      "scope": "Functional category description; motor performance and airflow test methods are model-specific.",
+      "sourceIds": ["tennant-t300-manual", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "order": 6,
+      "name": "Recovery storage",
+      "componentFamily": "Recovery tank, float/shutoff and drain path",
+      "role": "Retains recovered liquid for controlled emptying and cleaning.",
+      "evidence": "Official manuals and specifications identify recovery/dirty-water tanks and service procedures.",
+      "scope": "Reviewed commercial machines; tank safeguards and drain systems differ.",
+      "sourceIds": ["tennant-t300", "nilfisk-sc500-manual", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Compact",
+      "taskScale": "Small hard-floor areas and constrained rooms",
+      "operatorRelationship": "Usually walk-behind or hand-guided",
+      "spaceConstraints": "Prioritizes maneuverability and storage footprint",
+      "limitations": "Smaller tanks and working width can increase refill and transit time.",
+      "evidence": "Official compact/walk-behind product positioning emphasizes confined spaces and smaller areas.",
+      "scope": "Category positioning, not a fixed dimensional threshold.",
+      "sourceIds": ["hako-b25", "karcher-b50"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Walk-behind",
+      "taskScale": "Small to medium areas; some larger-area models exist",
+      "operatorRelationship": "Operator walks behind and steers the machine",
+      "spaceConstraints": "Requires route width, turning room and manageable operator travel",
+      "limitations": "Theoretical output does not account for refill, turns, obstacles or operator pace.",
+      "evidence": "Tennant, Nilfisk, Kärcher and Hako identify the reviewed models as walk-behind machines.",
+      "scope": "Reviewed manufacturer terminology.",
+      "sourceIds": ["tennant-t300", "tennant-t500", "nilfisk-sc500", "karcher-b50", "hako-b25"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Stand-on",
+      "taskScale": "Facilities balancing travel speed with a compact operator footprint",
+      "operatorRelationship": "Operator stands on an integrated platform",
+      "spaceConstraints": "Turning envelope, ramps and platform access require site review",
+      "limitations": "Manufacturers do not use the term consistently across regions.",
+      "evidence": "Official manufacturer classification distinguishes stand-on/ride-on machines from walk-behind models.",
+      "scope": "Manufacturer-labelled products only; no universal category boundary is asserted.",
+      "sourceIds": ["nilfisk-sc500", "tennant-t300"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Ride-on",
+      "taskScale": "Medium to large areas and longer operating routes",
+      "operatorRelationship": "Seated operator drives the machine",
+      "spaceConstraints": "Confirm aisle turn, doorway, elevator, slope and transport limits",
+      "limitations": "Larger nominal productivity can be offset by congestion, edge work and support time.",
+      "evidence": "Hako positions the B120 R ride-on machine for shopping centres, production halls, stations and airports and publishes dimensions and output.",
+      "scope": "Hako B120 R configurations and comparable ride-on procurement questions.",
+      "sourceIds": ["hako-b120"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Autonomous or robotic",
+      "taskScale": "Repeatable routes on mapped medium-to-large hard-floor areas",
+      "operatorRelationship": "Automated cleaning still requires setup, supervision, exception handling and service processes",
+      "spaceConstraints": "Traffic, obstacles, docking access, connectivity and approved operating zones require validation",
+      "limitations": "Autonomy claims are model-specific and do not establish unattended suitability for every site.",
+      "evidence": "Kärcher describes KIRA B 50 as an autonomous scrubber dryer and states an optional docking station can refill, drain, rinse and charge it.",
+      "scope": "Kärcher KIRA B 50 official international materials.",
+      "sourceIds": ["karcher-kira"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Cleaning path",
+      "purchasingMeaning": "Nominal working width of the installed cleaning head",
+      "reportingBoundary": "Configuration-specific dimension, often reported in millimetres and inches",
+      "comparisonCaution": "A wider path does not alone establish achieved output or fit through aisles and doors.",
+      "evidence": "Official model pages publish one or more cleaning paths tied to head configurations.",
+      "scope": "Reviewed representative models.",
+      "sourceIds": ["tennant-t300", "tennant-t500", "hako-b25", "hako-b120"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Theoretical area performance",
+      "purchasingMeaning": "Nominal output derived from speed and working width under defined assumptions",
+      "reportingBoundary": "Manufacturer-reported theoretical or estimated productivity",
+      "comparisonCaution": "Do not present it as practical cleaned area after turns, overlap, refill, transport and interruptions.",
+      "evidence": "Official pages label area performance as theoretical or estimated for reviewed models.",
+      "scope": "Values retain each manufacturer's stated label and basis.",
+      "sourceIds": ["tennant-t300", "hako-b25", "hako-b120", "karcher-kira"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Solution and recovery capacity",
+      "purchasingMeaning": "Indicates liquid carried and recovered before refill or drain",
+      "reportingBoundary": "Nominal tank capacity, not usable cycle volume",
+      "comparisonCaution": "Tank size alone does not determine runtime because water flow, dosing, soil load and route differ.",
+      "evidence": "Official specifications list separate solution/fresh and recovery/dirty-water capacities.",
+      "scope": "Reviewed model configurations.",
+      "sourceIds": ["tennant-t300", "nilfisk-sc500-manual", "hako-b25", "hako-b120"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Brush or pad pressure",
+      "purchasingMeaning": "A manufacturer-reported contact-force parameter for a named deck/configuration",
+      "reportingBoundary": "Maximum or operating pressure can use different definitions",
+      "comparisonCaution": "Higher stated pressure is not a universal cleaning-quality score and can affect floor finish and consumable wear.",
+      "evidence": "Tennant publishes maximum down-pressure values for the T300 and T500 configurations.",
+      "scope": "Tennant source terminology; cross-brand equivalence is not established.",
+      "sourceIds": ["tennant-t300", "tennant-t500"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Runtime and charging",
+      "purchasingMeaning": "Constrains shift coverage, opportunity charging and spare-machine planning",
+      "reportingBoundary": "Battery, charger, settings, floor resistance and accessory dependent",
+      "comparisonCaution": "Do not compare a maximum runtime with an achieved duty cycle or assume charger interchangeability.",
+      "evidence": "Official model sources state battery configurations, runtime or charging options.",
+      "scope": "Named configurations only.",
+      "sourceIds": ["tennant-t300", "karcher-b50", "hako-b25"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Sound level",
+      "purchasingMeaning": "Supports evaluation of occupied-space and daytime-cleaning constraints",
+      "reportingBoundary": "Reported value depends on operating mode and measurement standard",
+      "comparisonCaution": "Compare only values with compatible standards, distance, mode and uncertainty.",
+      "evidence": "Official sources publish sound values or low-noise modes for named configurations.",
+      "scope": "Tennant T300 and Hako B25 official claims; not a category-wide threshold.",
+      "sourceIds": ["tennant-t300", "hako-b25"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Turning and maneuverability",
+      "purchasingMeaning": "Affects route fit, end-of-aisle turns and edge coverage",
+      "reportingBoundary": "Machine geometry, squeegee width, steering and operating context",
+      "comparisonCaution": "A quoted turning measure must be checked against the full configured envelope and actual route.",
+      "evidence": "Official ride-on and autonomous materials emphasize maneuverability and confined-space application boundaries.",
+      "scope": "Reviewed Hako B120 R and Kärcher KIRA B 50 materials.",
+      "sourceIds": ["hako-b120", "karcher-kira"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Retail",
+      "evidence": "Official product materials identify shops, supermarkets and other public-use spaces among applications for reviewed scrubbers.",
+      "scope": "Named Tennant, Nilfisk, Hako and IEC commercial-use examples; floor and configuration remain site-specific.",
+      "sourceIds": ["nilfisk-sc500", "hako-b120", "iec-safety"],
+      "verifiedAt": "2026-08-08",
+      "wcbAssessment": "A compact or maneuverable machine may reduce aisle disruption where recovery quality and occupied-space noise are validated.",
+      "assessment": "Match route width, opening hours, floor finish and residual-moisture performance rather than selecting on theoretical output alone.",
+      "basis": "Official application statements plus documented size, noise and recovery attributes.",
+      "limitations": "The reviewed sources do not establish suitability for every retail floor, traffic pattern or cleaning chemical.",
+      "buyerAction": "Map minimum aisle and turn dimensions, then run a timed trial during representative traffic."
+    },
+    {
+      "application": "Warehousing and manufacturing",
+      "evidence": "Official sources identify factories, production halls and industrial locations as commercial floor-treatment environments.",
+      "scope": "Indoor hard-floor cleaning within manufacturer limits; not explosive, corrosive or road-sweeping environments.",
+      "sourceIds": ["tennant-t500-manual", "hako-b120", "iec-safety"],
+      "verifiedAt": "2026-08-08",
+      "wcbAssessment": "Route length, debris load, floor joints, slopes and service access can outweigh nominal cleaning width.",
+      "assessment": "Evaluate pre-sweeping needs and whether a scrubber alone matches the soil profile.",
+      "basis": "Official intended-use boundaries and large-area application statements.",
+      "limitations": "No reviewed source supports hazardous-area use or universal oil/chemical removal.",
+      "buyerAction": "Document soil type, slope, joints and debris; obtain written configuration approval and a site trial."
+    },
+    {
+      "application": "Healthcare",
+      "evidence": "Manufacturer and IEC sources include hospitals or hygiene-sensitive facilities among commercial-use examples.",
+      "scope": "General facility-floor application; infection-control protocol and chemical efficacy are outside the equipment-category evidence.",
+      "sourceIds": ["nilfisk-sc500", "hako-b25", "iec-safety"],
+      "verifiedAt": "2026-08-08",
+      "wcbAssessment": "Noise, cleanability of tanks, water recovery and local infection-control procedures require joint review.",
+      "assessment": "An equipment specification cannot substitute for a validated hygiene process.",
+      "basis": "Official application and low-noise/hygiene feature descriptions.",
+      "limitations": "The sources do not establish disinfection efficacy or healthcare-protocol compliance.",
+      "buyerAction": "Have infection-control, facilities and service teams approve the complete cleaning process and trial."
+    },
+    {
+      "application": "Education",
+      "evidence": "Official sources name schools and classrooms as representative commercial environments.",
+      "scope": "Hard floors and named model positioning; furniture density and occupied-hour rules vary.",
+      "sourceIds": ["tennant-t500-manual", "hako-b25", "iec-safety"],
+      "verifiedAt": "2026-08-08",
+      "wcbAssessment": "Compact geometry, handle clearance, sound and simple controls can matter more than peak output in furnished areas.",
+      "assessment": "Separate corridor productivity from classroom maneuverability requirements.",
+      "basis": "Official intended-use and product application descriptions.",
+      "limitations": "No single reviewed configuration is proven suitable for every campus surface.",
+      "buyerAction": "Trial the machine in the tightest furnished room and longest corridor using the intended operator group."
+    },
+    {
+      "application": "Hospitality",
+      "evidence": "Tennant's intended-use statement includes hotels and Nilfisk lists hotels among SC500 applications.",
+      "scope": "Commercial hard-floor areas, not carpet extraction or guest-room domestic cleaning.",
+      "sourceIds": ["tennant-t500-manual", "nilfisk-sc500"],
+      "verifiedAt": "2026-08-08",
+      "wcbAssessment": "Daytime noise, elevator fit, storage, appearance and service response should be weighted alongside output.",
+      "assessment": "A mixed-surface property may require more than one equipment category.",
+      "basis": "Official intended-use statements and machine dimensions/features.",
+      "limitations": "The sources do not support carpet or every specialty floor treatment.",
+      "buyerAction": "Confirm elevator and storage dimensions and test each representative hard-floor finish."
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Brush, pad and cleaning deck",
+      "role": "Provides mechanical agitation at the floor interface.",
+      "variants": ["Disc brush", "cylindrical/roller brush", "pad driver", "orbital head"],
+      "criticalChecks": ["Deck model and working width", "brush/pad interface", "approved material for floor and chemistry", "wear limit and part number"],
+      "evidence": "Official sources list multiple deck technologies and model-specific replacement procedures.",
+      "scope": "Named configurations; no cross-machine interchangeability is implied.",
+      "sourceIds": ["tennant-t500", "karcher-b50", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Squeegee assembly and blades",
+      "role": "Collects liquid behind the cleaning path and directs it to suction pickup.",
+      "variants": ["Straight or curved assemblies", "natural rubber or other model-approved blade materials"],
+      "criticalChecks": ["Assembly width and geometry", "front/rear blade part number", "blade material", "adjustment and wear"],
+      "evidence": "Official pages and manuals identify squeegee design, blade options and maintenance.",
+      "scope": "Reviewed models; material suitability and fit are model/application-specific.",
+      "sourceIds": ["karcher-b50", "nilfisk-sc500-manual", "tennant-t300-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Solution system",
+      "role": "Stores and meters water or cleaning solution to the deck.",
+      "variants": ["Gravity/valve delivery", "pump-controlled flow", "detergent dosing options"],
+      "criticalChecks": ["Tank and hose cleanliness", "filter and valve/pump part numbers", "approved detergent", "flow setting"],
+      "evidence": "Official manuals describe solution tanks, water adjustment and optional dosing systems.",
+      "scope": "Functional grouping; exact hydraulic architecture varies.",
+      "sourceIds": ["tennant-t300-manual", "karcher-b50-manual", "karcher-b50"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Vacuum and recovery path",
+      "role": "Moves recovered liquid through the hose into the recovery tank.",
+      "variants": ["Model-specific suction motor and airflow path", "float or shutoff safeguards"],
+      "criticalChecks": ["Suction motor specification", "hose sealing and blockage", "tank lid gasket", "float/shutoff operation"],
+      "evidence": "Official manuals identify vacuum operation and recovery-path service points.",
+      "scope": "Reviewed walk-behind machines; airflow values are not normalized across brands.",
+      "sourceIds": ["tennant-t300-manual", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Battery and charger",
+      "role": "Supplies and replenishes electrical energy for traction, deck and recovery systems.",
+      "variants": ["Flooded lead-acid", "gel/AGM", "lithium-ion", "on-board or external charger"],
+      "criticalChecks": ["Voltage and chemistry", "battery management requirements", "charger part number and input supply", "approved capacity and mass"],
+      "evidence": "Official model sources publish different battery and charger options.",
+      "scope": "Named configurations only; chemistry or charger substitution is not authorized.",
+      "sourceIds": ["tennant-t300", "karcher-b50", "hako-b25"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "Traction, controls and sensors",
+      "role": "Controls movement, operating modes, safety interlocks and, on robotic machines, navigation.",
+      "variants": ["Push assist", "self-propelled traction", "ride-on controls", "autonomous sensor/navigation stack"],
+      "criticalChecks": ["Configured drive type", "braking and slope limits", "control software/version", "sensor cleaning and approved operating zone"],
+      "evidence": "Official sources describe self-propelled operation, control features and autonomous navigation/docking functions.",
+      "scope": "Features vary materially by model and option package.",
+      "sourceIds": ["karcher-b50-manual", "tennant-t500", "karcher-kira"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "tennant",
+      "brandName": "Tennant",
+      "modelName": "T300",
+      "subtype": "Walk-behind",
+      "distinguishingSpecifications": ["Cleaning path: 17, 20 or 24 in / 430, 500 or 600 mm", "Solution tank: 11 gal / 42 L", "Estimated runtime: up to 3.8 hours"],
+      "marketScope": "Tennant US product page",
+      "evidence": "Tennant identifies T300 as a battery-powered walk-behind floor scrubber and publishes the listed configuration ranges.",
+      "scope": "US page and options available when reviewed; confirm the quoted regional configuration.",
+      "sourceIds": ["tennant-t300"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "brandSlug": "tennant",
+      "brandName": "Tennant",
+      "modelName": "T500",
+      "subtype": "Walk-behind",
+      "distinguishingSpecifications": ["Cleaning path: 26, 28 or 32 in / 650, 700 or 800 mm", "Solution tank: 22.5 gal / 85 L", "Disc, cylindrical or orbital head options"],
+      "marketScope": "Tennant US product page",
+      "evidence": "Tennant identifies T500 as a walk-behind scrubber and publishes multiple cleaning paths and deck choices.",
+      "scope": "US page and named options; not every combination is available in every market.",
+      "sourceIds": ["tennant-t500"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "SC500 20D Li-Ion",
+      "subtype": "Walk-behind",
+      "distinguishingSpecifications": ["Cleaning width: 530 mm in the SC500 manual", "Solution and recovery tanks: 45 L each in the SC500 manual", "Li-ion configuration product number 56394690 on the US page"],
+      "marketScope": "Nilfisk US product page with SC500 official instruction manual",
+      "evidence": "Nilfisk lists SC500 20D Li-Ion as a walk-behind floor scrubber and the SC500 manual supplies the cited family dimensions and capacities.",
+      "scope": "US product configuration and SC500 53 B/53R B manual family; confirm exact product-number specification before purchase.",
+      "sourceIds": ["nilfisk-sc500", "nilfisk-sc500-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "B 50 W",
+      "subtype": "Walk-behind",
+      "distinguishingSpecifications": ["Tank volume: 50 L", "D51, D60, R55 and O51 head choices", "Gel/AGM or optional lithium-ion battery configurations"],
+      "marketScope": "Kärcher International category page",
+      "evidence": "Kärcher describes B 50 W as a walk-behind scrubber dryer and lists the stated tank, head and battery choices.",
+      "scope": "International overview; exact pack and feature availability must be confirmed by regional product number.",
+      "sourceIds": ["karcher-b50"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "KIRA B 50",
+      "subtype": "Autonomous scrubber dryer",
+      "distinguishingSpecifications": ["Area performance: up to 2,300 m²/h", "Optional docking station supports fresh-water fill, dirty-water empty/rinse and charging", "Medium-to-large hard-floor application positioning"],
+      "marketScope": "Kärcher International cleaning-robots page",
+      "evidence": "Kärcher identifies KIRA B 50 as a scrubber dryer robot and publishes its stated area performance and docking functions.",
+      "scope": "International product-family page; site safety and autonomous operating approval remain project-specific.",
+      "sourceIds": ["karcher-kira"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "brandSlug": "hako",
+      "brandName": "Hako",
+      "modelName": "Scrubmaster B25",
+      "subtype": "Walk-behind",
+      "distinguishingSpecifications": ["Working width: 43 cm", "Theoretical area performance: 1,700 m²/h", "Fresh and dirty water tanks: 25 L each"],
+      "marketScope": "Hako international English product page",
+      "evidence": "Hako identifies Scrubmaster B25 as a walk-behind scrubber-drier and publishes the cited technical data.",
+      "scope": "Official international product page; options and battery configuration require quotation confirmation.",
+      "sourceIds": ["hako-b25"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "brandSlug": "hako",
+      "brandName": "Hako",
+      "modelName": "Scrubmaster B120 R",
+      "subtype": "Ride-on",
+      "distinguishingSpecifications": ["Working widths: 70–90 cm depending on configuration", "Theoretical area performance: 4,500–5,800 m²/h", "Solution and recovery tanks: 120 L each"],
+      "marketScope": "Hako international English product page",
+      "evidence": "Hako identifies B120 R as a ride-on scrubber-drier and publishes disc/cylindrical configuration data.",
+      "scope": "Official international configurations TB750, WB700, TB900 and WB850.",
+      "sourceIds": ["hako-b120"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Daily maintenance cleaning",
+      "attributeToVerify": "Achieved route productivity",
+      "comparisonTrap": "Selecting from theoretical area performance alone",
+      "evidence": "Official sources label productivity as theoretical, estimated or up to for representative models.",
+      "scope": "Published manufacturer values for named models.",
+      "sourceIds": ["tennant-t300", "hako-b25", "hako-b120", "karcher-kira"],
+      "verifiedAt": "2026-08-08",
+      "assessment": "Use a timed site route including turns, overlap, refill, drain and transit.",
+      "basis": "Different source labels and site losses prevent a like-for-like achieved-output ranking.",
+      "limitations": "WCB has not independently performance-tested these models.",
+      "buyerAction": "Put the route, soil condition, operator and acceptance measure into the demonstration protocol.",
+      "engineeringCheck": "Confirm the installed deck, programmed speed and flow settings used during the trial."
+    },
+    {
+      "intendedTask": "Occupied-space cleaning",
+      "attributeToVerify": "Sound measurement and water pickup",
+      "comparisonTrap": "Comparing dBA values without mode or test method",
+      "evidence": "Official model sources report low-noise modes or sound values under named conditions.",
+      "scope": "Named model configurations only.",
+      "sourceIds": ["tennant-t300", "hako-b25"],
+      "verifiedAt": "2026-08-08",
+      "assessment": "Noise and residual moisture should be assessed together in the real occupied route.",
+      "basis": "Low-noise operation may change machine settings and reported values are not automatically comparable.",
+      "limitations": "Published values do not represent every room acoustic or floor condition.",
+      "buyerAction": "Measure a representative pass during operating hours and document the configured mode.",
+      "engineeringCheck": "Record measurement standard, distance, operating mode and squeegee/blade setup."
+    },
+    {
+      "intendedTask": "Multi-shift operation",
+      "attributeToVerify": "Battery, charger and duty cycle",
+      "comparisonTrap": "Treating maximum runtime as shift coverage",
+      "evidence": "Official sources show multiple battery chemistries, capacities and charging options.",
+      "scope": "Named configurations; local packs can differ.",
+      "sourceIds": ["tennant-t300", "karcher-b50", "hako-b25"],
+      "verifiedAt": "2026-08-08",
+      "assessment": "Model the full energy window including cleaning load, opportunity charge, cooling and battery life policy.",
+      "basis": "Runtime depends on configuration and operating settings.",
+      "limitations": "Public sources do not establish the buyer's achieved duty cycle.",
+      "buyerAction": "Require a written energy balance for the contracted battery and charger combination.",
+      "engineeringCheck": "Verify voltage, chemistry, BMS, charger part number, input supply and warranty pairing."
+    },
+    {
+      "intendedTask": "Tight or furnished routes",
+      "attributeToVerify": "Full configured envelope",
+      "comparisonTrap": "Using cleaning width as machine width or turning clearance",
+      "evidence": "Official specifications separately report working width, squeegee width and overall dimensions for reviewed models.",
+      "scope": "Named model/configuration dimensions.",
+      "sourceIds": ["tennant-t300", "nilfisk-sc500-manual", "hako-b25", "hako-b120"],
+      "verifiedAt": "2026-08-08",
+      "assessment": "The route should be checked with the installed squeegee, deck and operator position.",
+      "basis": "The widest and longest operating envelope can differ from nominal cleaning path.",
+      "limitations": "Published dimensions do not reproduce local obstacles or turning behavior.",
+      "buyerAction": "Measure the narrowest opening, turn and storage point, then conduct a physical route trial.",
+      "engineeringCheck": "Confirm configuration-specific width, length, turning data, slope and transport limits."
+    },
+    {
+      "intendedTask": "Autonomous cleaning",
+      "attributeToVerify": "Operational design domain and exception workflow",
+      "comparisonTrap": "Equating autonomous operation with unsupervised suitability everywhere",
+      "evidence": "Kärcher describes KIRA B 50 autonomous functions, sensors and optional docking support.",
+      "scope": "Kärcher KIRA B 50 international materials.",
+      "sourceIds": ["karcher-kira"],
+      "verifiedAt": "2026-08-08",
+      "assessment": "A deployment plan must cover mapping, traffic, obstacles, docking, alerts, supervision and manual edge work.",
+      "basis": "Product capability statements do not define the buyer's complete operating environment.",
+      "limitations": "WCB has not validated a deployment at the buyer's site.",
+      "buyerAction": "Run a representative pilot with logged interventions and agreed acceptance thresholds.",
+      "engineeringCheck": "Verify safety certification scope, software/version control, connectivity, docking utilities and escalation ownership."
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Battery and charger identity",
+      "reason": "Voltage, chemistry, BMS and charge profile must match the approved machine configuration.",
+      "buyerAction": "Confirm machine serial range, battery part number, charger part number, input supply and written warranty pairing.",
+      "evidence": "Official sources show configuration-specific battery and charger options.",
+      "scope": "Named models; no substitution approval is implied.",
+      "sourceIds": ["tennant-t300", "karcher-b50", "hako-b25"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "check": "Deck and consumable interface",
+      "reason": "Working width alone does not establish brush, pad driver or orbital consumable fit.",
+      "buyerAction": "Verify deck model, drive interface, diameter, material, speed, wear limit and exact part number.",
+      "evidence": "Official sources list multiple deck technologies and model-specific replacement instructions.",
+      "scope": "Reviewed models and official accessories only.",
+      "sourceIds": ["tennant-t500", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "check": "Squeegee assembly and blade",
+      "reason": "Geometry, width, blade material and adjustment affect pickup and physical fit.",
+      "buyerAction": "Match assembly and blade part numbers to model, deck, serial range, floor/chemical and regional parts catalog.",
+      "evidence": "Official manuals identify model-specific squeegee service and blade options.",
+      "scope": "Reviewed Tennant, Nilfisk and Kärcher families.",
+      "sourceIds": ["tennant-t300-manual", "nilfisk-sc500-manual", "karcher-b50-manual"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "check": "Electrical and safety scope",
+      "reason": "Commercial floor-treatment machines and chargers are subject to market-specific safety and electrical requirements.",
+      "buyerAction": "Obtain the declaration, certification markings, manual and charger input specification for the exact destination-market configuration.",
+      "evidence": "IEC 60335-2-72 defines safety scope for powered commercial floor-treatment machines, including battery machines and built-in chargers.",
+      "scope": "International standard scope; national adoption and legal obligations require local verification.",
+      "sourceIds": ["iec-safety"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "check": "Service and warranty entity",
+      "reason": "Brand identity does not establish the local contracting, commissioning, parts or warranty provider.",
+      "buyerAction": "Name the seller, importer, commissioning party, authorized service entity, response time, parts commitment and warranty territory in writing.",
+      "evidence": "Official sources direct buyers to regional contacts, authorized retailers or service support for configuration and parts.",
+      "scope": "Commercial procurement action; no ownership relationship is inferred.",
+      "sourceIds": ["hako-b25", "nilfisk-sc500", "tennant-t300"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72:2021",
+      "jurisdiction": "International standard; adoption and legal effect vary by market",
+      "version": "Edition 5.0, 2021",
+      "applicability": "Safety requirements for powered ride-on and walk-behind floor-treatment machines for commercial use within the standard's stated scope.",
+      "evidence": "IEC states the standard covers commercial machines used for scrubbing and related floor-treatment applications, including battery-powered machines and built-in chargers.",
+      "scope": "Standard scope only; purchasers must verify destination-market adoption, certification and exact machine configuration.",
+      "sourceIds": ["iec-safety"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "name": "IEC 62885-9:2019",
+      "jurisdiction": "International performance-measurement standard",
+      "version": "Edition 1.0, 2019",
+      "applicability": "Methods and characteristic performance parameters for commercial walk-behind and ride-on floor scrubbers, sweepers and related floor-cleaning machines.",
+      "evidence": "IEC states the document lists performance parameters and measurement methods for machines within its scope.",
+      "scope": "The existence of the standard does not prove that a particular published specification was measured to it unless the manufacturer says so.",
+      "sourceIds": ["iec-performance"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2024-03-28",
+      "title": "Autonomous scrubber platforms add docking and mapped-route workflows",
+      "summary": "Kärcher's official KIRA B 50 materials describe autonomous scrubbing, sensor-based navigation and optional docking for water, waste and charging tasks.",
+      "evidence": "Kärcher published KIRA B 50 autonomous capability and docking functions in its official product and media materials.",
+      "scope": "Kärcher KIRA B 50; not a claim that all autonomous scrubbers have the same functions.",
+      "sourceIds": ["karcher-kira", "karcher-kira-release"],
+      "verifiedAt": "2026-08-08"
+    },
+    {
+      "date": "2022-12-19",
+      "title": "Walk-behind platforms combine multiple deck and battery choices",
+      "summary": "Kärcher's B 50 W overview presents disc, roller and orbital head choices with lead-acid and optional lithium-ion configurations plus connected settings.",
+      "evidence": "The official B 50 W page describes the named deck, battery and connectivity options.",
+      "scope": "Kärcher B 50 W international overview and its later page updates.",
+      "sourceIds": ["karcher-b50"],
+      "verifiedAt": "2026-08-08"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tennant-t300",
+      "title": "T300 Walk-Behind Floor Scrubber",
+      "publisher": "Tennant Company",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/machines/scrubbers/product.t300.walk-behind-floor-scrubber.m-t300.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-t300-manual",
+      "title": "T300 Walk-Behind Floor Scrubber Operator Manual",
+      "publisher": "Tennant Company",
+      "sourceType": "manual",
+      "url": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/T300-T300e/operator-parts-manual/9014501.pdf",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-t500",
+      "title": "T500 Walk-Behind Floor Scrubber",
+      "publisher": "Tennant Company",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/machines/scrubbers/product.t500.scrubber-walk-behind-t500.2000093.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-t500-manual",
+      "title": "T500 Walk-Behind Floor Scrubber Operator Manual",
+      "publisher": "Tennant Company",
+      "sourceType": "manual",
+      "url": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/T500-T500e/operator-parts-manual/9015531.pdf",
+      "publishedAt": "2024-09-01",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "nilfisk-sc500",
+      "title": "SC500 20D Li-Ion",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/en-us/professional/products/floor-cleaning/floor-scrubbers/walk-behind-floor-scrubbers/medium/sc500-20d-li-ion%2B56394690/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "nilfisk-sc500-manual",
+      "title": "SC500 Instructions for Use",
+      "publisher": "Nilfisk",
+      "sourceType": "manual",
+      "url": "https://www.nilfisk.com/media/gfdjquw1/sc500the-instruction-for-use.pdf",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "karcher-b50",
+      "title": "B 50 W Push Scrubber Dryer",
+      "publisher": "Kärcher International",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/professional/floor-scrubbers-scrubber-driers/b-50-w-push-scrubber-dryer.html",
+      "publishedAt": "2022-12-19",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "karcher-b50-manual",
+      "title": "B 50 W Original Operating Instructions",
+      "publisher": "Kärcher",
+      "sourceType": "manual",
+      "url": "https://www.kaercher.com/documents/manuals/html/BTA-5765072-000-12/EN.html",
+      "publishedAt": "2024-08-01",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "karcher-kira",
+      "title": "Cleaning Robots: KIRA B 50 Scrubber Dryer Robot",
+      "publisher": "Kärcher International",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/professional/cleaning-robots.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "karcher-kira-release",
+      "title": "KIRA B 50 Wins iF Design Award",
+      "publisher": "Kärcher International",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/inside-kaercher/company/media-information/media-information/3262-kira-b-50-wins-if-design-award.html",
+      "publishedAt": "2024-03-28",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-b25",
+      "title": "Scrubmaster B25",
+      "publisher": "Hako",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/en/products/cleaning-technology/scrubber-driers/walk-behind-scrubber-driers/scrubmaster-b25",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-b120",
+      "title": "Scrubmaster B120 R",
+      "publisher": "Hako",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/en/products/cleaning-technology/scrubber-driers/ride-on-scrubber-driers/scrubmaster-b120-r",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "iec-safety",
+      "title": "IEC 60335-2-72:2021",
+      "publisher": "International Electrotechnical Commission",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64778",
+      "publishedAt": "2021-07-12",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "iec-performance",
+      "title": "IEC 62885-9:2019",
+      "publisher": "International Electrotechnical Commission",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/62389",
+      "publishedAt": "2019-10-14",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08"
+}

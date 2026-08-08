@@ -1,13 +1,18 @@
 import assert from "node:assert/strict";
+import path from "node:path";
 import test from "node:test";
+import sharp from "sharp";
 import {
   buildEquipmentPageSchemas,
   buildEquipmentSitemapEntries,
   buildEquipmentStaticParams,
+  getEquipmentProfiles,
   getPublishedEquipmentProfiles,
   isEquipmentDraftVisible,
   validateEquipmentProfile
 } from "../lib/equipment.ts";
+import { getPublishedBrandProfiles } from "../lib/brands.ts";
+import { getInsights } from "../lib/content.ts";
 
 const evidence = {
   evidence: "The official manual describes the cleaning system.",
@@ -141,4 +146,28 @@ test("published loader, sitemap and schemas exclude unsupported semantics", () =
   assert.doesNotMatch(schemaText, /Organization|aggregateRating|offers|manufacturer/);
   assert.match(schemaText, /Product/);
   assert.match(schemaText, /BreadcrumbList/);
+});
+
+test("floor scrubber pilot meets evidence, relationship and image gates", async () => {
+  const realPublishedBrandSlugs = new Set(
+    getPublishedBrandProfiles(getInsights()).map(({ slug }) => slug)
+  );
+  const floorScrubber = getEquipmentProfiles().find(
+    (candidate) => candidate?.slug === "floor-scrubber"
+  );
+  assert.ok(floorScrubber);
+  assert.equal(floorScrubber.status, "draft");
+  assert.deepEqual(validateEquipmentProfile(floorScrubber, realPublishedBrandSlugs), []);
+  assert.ok(floorScrubber.sources.length >= 5);
+  assert.ok(floorScrubber.representativeModels.length >= 6);
+  assert.ok(floorScrubber.representativeModels.length <= 8);
+  assert.ok(new Set(floorScrubber.representativeModels.map(({ brandSlug }) => brandSlug)).size >= 4);
+  assert.equal(floorScrubber.componentStack.some((item) => "href" in item), false);
+
+  const heroMetadata = await sharp(
+    path.join(process.cwd(), "public", floorScrubber.heroImage)
+  ).metadata();
+  assert.equal(heroMetadata.format, "webp");
+  assert.ok((heroMetadata.width ?? 0) >= 1600);
+  assert.ok((heroMetadata.height ?? 0) >= 1000);
 });
