@@ -25647,7 +25647,16 @@ button.contact-help-card > .contact-help-card-copy > span {
   padding: 18px;
   border: 1px solid var(--equipment-line);
   border-radius: 16px;
+  color: var(--equipment-ink);
   background: #fff;
+}
+
+.equipment-scope-grid > div strong {
+  color: var(--equipment-ink);
+}
+
+.equipment-scope-grid > div li {
+  color: var(--equipment-muted);
 }
 
 .equipment-scope-grid ul,
