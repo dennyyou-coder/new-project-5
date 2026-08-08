@@ -10,13 +10,13 @@ export function EquipmentTypeComparison({ profile }: { profile: EquipmentProfile
       <div className="insights-page-container">
         <div className="equipment-section-heading">
           <p className="eyebrow">Equipment taxonomy</p>
-          <h2>Main floor scrubber formats</h2>
+          <h2>Main {profile.name.toLowerCase()} formats</h2>
           <p>These formats describe operator relationship and task scale. None is a universal winner.</p>
         </div>
         {visual ? (
           <EquipmentContentVisualFigure
             visual={visual}
-            guidance="Use the format as a starting point, then compare route width, turning space, tank cycle, operator travel and the exact configured machine."
+            guidance="Use the format as a starting point, then compare the operating envelope, utilities, duty cycle, operator workflow, accessory system and the exact configured machine."
           />
         ) : null}
         <div className="equipment-type-grid">

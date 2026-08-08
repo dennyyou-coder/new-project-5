@@ -285,13 +285,80 @@ test("second equipment batch meets evidence relationship and visual gates", asyn
     assert.match(diagramSource, /<svg/);
     assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
     assert.match(mobileDiagramSource, /<svg/);
-    assert.match(mobileDiagramSource, /Family labels do not establish cross-model compatibility/);
+    assert.match(
+      mobileDiagramSource.replace(/<[^>]+>/g, " ").replace(/\s+/g, " "),
+      /Family labels do not establish cross-model compatibility/
+    );
   }
 });
 
 test("published second equipment batch is included in production sitemap discovery", () => {
   const urls = sitemap().map(({ url }) => url);
   for (const slug of ["floor-sweeper", "carpet-extractor", "wet-dry-vacuum"]) {
+    assert.equal(urls.some((url) => url.endsWith(`/equipment/${slug}`)), true);
+  }
+});
+
+test("third equipment batch meets published evidence relationship and visual gates", async () => {
+  const realPublishedBrandSlugs = new Set(
+    getPublishedBrandProfiles(getInsights()).map(({ slug }) => slug)
+  );
+  const profiles = getEquipmentProfiles();
+
+  for (const slug of ["single-disc-floor-machine", "floor-burnisher", "commercial-pressure-washer"]) {
+    const profile = profiles.find((candidate) => candidate?.slug === slug);
+    assert.ok(profile, `${slug} profile should exist`);
+    assert.equal(profile.status, "published");
+    assert.deepEqual(validateEquipmentProfile(profile, realPublishedBrandSlugs), []);
+    assert.ok(profile.sources.length >= 5);
+    assert.ok(profile.representativeModels.length >= 6);
+    assert.ok(profile.representativeModels.length <= 8);
+    assert.ok(new Set(profile.representativeModels.map(({ brandSlug }) => brandSlug)).size >= 4);
+    assert.equal(profile.componentStack.some((item) => "href" in item), false);
+    assert.equal(profile.contentVisuals.length, 3);
+    assert.deepEqual(
+      new Set(profile.contentVisuals.map(({ placement }) => placement)),
+      new Set(["equipment-types", "application-fit", "component-stack"])
+    );
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 1);
+    if (slug === "commercial-pressure-washer") {
+      assert.match(profile.sources.find(({ id }) => id === "karcher-hd615")?.url ?? "", /hd-6-15-m-11509300/);
+    } else {
+      assert.equal(
+        profile.sources.find(({ id }) => id === "iec-floor-treatment")?.url,
+        "https://webstore.iec.ch/en/publication/64775"
+      );
+    }
+
+    const heroMetadata = await sharp(path.join(process.cwd(), "public", profile.heroImage)).metadata();
+    assert.equal(heroMetadata.format, "webp");
+    assert.ok((heroMetadata.width ?? 0) >= 1600);
+    assert.ok((heroMetadata.height ?? 0) >= 1000);
+
+    for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo")) {
+      const metadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+      assert.equal(metadata.format, "webp");
+      assert.ok((metadata.width ?? 0) >= 1500);
+      assert.ok((metadata.height ?? 0) >= 900);
+    }
+
+    const diagram = profile.contentVisuals.find(({ visualType }) => visualType === "wcb-diagram");
+    const diagramSource = readFileSync(path.join(process.cwd(), "public", diagram.src), "utf8");
+    const mobileDiagramSource = readFileSync(path.join(process.cwd(), "public", diagram.mobileSrc), "utf8");
+    assert.match(diagramSource, /<svg/);
+    assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
+    assert.match(mobileDiagramSource, /<svg/);
+    assert.match(
+      mobileDiagramSource.replace(/<[^>]+>/g, " ").replace(/\s+/g, " "),
+      /Family labels do not establish cross-model compatibility/
+    );
+  }
+});
+
+test("published third equipment batch is included in production sitemap discovery", () => {
+  const urls = sitemap().map(({ url }) => url);
+  for (const slug of ["single-disc-floor-machine", "floor-burnisher", "commercial-pressure-washer"]) {
     assert.equal(urls.some((url) => url.endsWith(`/equipment/${slug}`)), true);
   }
 });

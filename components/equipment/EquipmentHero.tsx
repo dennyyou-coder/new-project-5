@@ -55,7 +55,7 @@ export function EquipmentHero({ profile, isDraft }: { profile: EquipmentProfile;
 
         <div className="equipment-key-facts">
           <BrandDataTable
-            caption="Floor scrubber key facts"
+            caption={`${profile.name} key facts`}
             columns={[
               { key: "fact", label: "Fact" },
               { key: "detail", label: "Technical reference" },

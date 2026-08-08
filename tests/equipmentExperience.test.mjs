@@ -58,6 +58,21 @@ test("system and type visuals are semantic original UI rather than copied diagra
   assert.doesNotMatch(types, /<img/);
 });
 
+test("shared equipment sections derive labels from the active profile", () => {
+  for (const file of [
+    "components/equipment/EquipmentHero.tsx",
+    "components/equipment/EquipmentSystemFlow.tsx",
+    "components/equipment/EquipmentTechnicalSections.tsx",
+    "components/equipment/EquipmentTypeComparison.tsx",
+    "components/equipment/EquipmentRelationships.tsx",
+    "components/equipment/EquipmentTimeline.tsx"
+  ]) {
+    const source = read(file);
+    assert.doesNotMatch(source, /floor scrubber/i, `${file} should not hard-code the pilot category`);
+    assert.match(source, /profile\.name/, `${file} should derive category labels from profile.name`);
+  }
+});
+
 test("technical sections visibly separate evidence, WCB assessment and compatibility boundaries", () => {
   const technical = read("components/equipment/EquipmentTechnicalSections.tsx");
   const evidence = read("components/equipment/EquipmentEvidence.tsx");
