@@ -25,12 +25,12 @@ The first four pages are ordered by observed GSC exposure. Remaining pages are g
 
 | Priority | Existing slug | Required update | Status |
 |---:|---|---|---|
-| 1 | `who-owns-dyson-james-dyson-singapore-manufacturing` | Add direct group-versus-model manufacturing answer near the top | `local_verified` |
-| 2 | `who-owns-karcher-family-professional-cleaning-network` | Add direct answer and explicit Who Makes heading | `local_verified` |
-| 3 | `who-owns-eureka-midea-electrolux-manufacturing` | Add direct Midea-group versus Midea Robozone model boundary near the top | `local_verified` |
-| 4 | `who-owns-tti-milwaukee-ryobi-hoover-vax-oreck` | Add direct group-manufacturing answer and clearer section | queued |
-| 5 | `who-owns-ecovacs-tineco-manufacturing` | Move explicit manufacturer answer into the first screen | queued |
-| 6 | `who-owns-electrolux-brands-manufacturing` | Move explicit manufacturer answer into the first screen | queued |
+| 1 | `who-owns-dyson-james-dyson-singapore-manufacturing` | Add direct group-versus-model manufacturing answer near the top | `published_verified` |
+| 2 | `who-owns-karcher-family-professional-cleaning-network` | Add direct answer and explicit Who Makes heading | `published_verified` |
+| 3 | `who-owns-eureka-midea-electrolux-manufacturing` | Add direct Midea-group versus Midea Robozone model boundary near the top | `published_verified` |
+| 4 | `who-owns-tti-milwaukee-ryobi-hoover-vax-oreck` | Add direct group-manufacturing answer and clearer section | `local_verified` |
+| 5 | `who-owns-ecovacs-tineco-manufacturing` | Move explicit manufacturer answer into the first screen | `local_verified` |
+| 6 | `who-owns-electrolux-brands-manufacturing` | Move explicit manufacturer answer into the first screen | `local_verified` |
 | 7 | `who-owns-bissell-family-sanitaire` | Move explicit manufacturer answer into the first screen | queued |
 | 8 | `who-owns-whirlpool-appliances-beko-europe` | Move explicit manufacturer answer into the first screen | queued |
 | 9 | `who-owns-hoover-tti-haier-candy` | Move current market-specific manufacturing answer into the first screen | queued |
