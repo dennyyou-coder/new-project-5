@@ -25705,6 +25705,7 @@ button.contact-help-card > .contact-help-card-copy > span {
 .equipment-hero-media img {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 8 / 5;
   object-fit: cover;
 }
@@ -26252,7 +26253,12 @@ button.contact-help-card > .contact-help-card-copy > span {
   }
 
   .equipment-content-visual--component-stack .equipment-content-visual__media {
-    aspect-ratio: 1 / 2;
+    aspect-ratio: auto;
+  }
+
+  .equipment-content-visual--component-stack .equipment-content-visual__media picture,
+  .equipment-content-visual--component-stack .equipment-content-visual__media img {
+    height: auto;
   }
 
   .equipment-kicker-row,
