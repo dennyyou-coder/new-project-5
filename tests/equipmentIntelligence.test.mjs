@@ -40,6 +40,32 @@ const validProfile = {
   heroImageAlt: "Sample equipment operating on a commercial floor",
   heroImageCaption: "Official product reference.",
   heroSourceUrl: "https://example.com/official-image",
+  contentVisuals: [
+    {
+      placement: "equipment-types",
+      visualType: "official-photo",
+      src: "/images/equipment/sample-equipment/types.webp",
+      alt: "Sample walk-behind machine",
+      caption: "Representative official image.",
+      sourceUrl: "https://example.com/types.webp"
+    },
+    {
+      placement: "application-fit",
+      visualType: "official-photo",
+      src: "/images/equipment/sample-equipment/application.webp",
+      alt: "Sample machine in use",
+      caption: "Representative application image.",
+      sourceUrl: "https://example.com/application.webp"
+    },
+    {
+      placement: "component-stack",
+      visualType: "wcb-diagram",
+      src: "/images/equipment/sample-equipment/components.svg",
+      alt: "Component verification zones",
+      caption: "WCB verification diagram.",
+      sourceIds: ["source-1"]
+    }
+  ],
   keyFacts: [{ label: "Mechanism", value: "Mechanical agitation and liquid recovery", ...evidence }],
   systemFlow: [
     { order: 1, name: "Solution delivery", componentFamily: "Solution system", role: "Applies solution", ...evidence }
@@ -132,6 +158,10 @@ test("validator rejects evidence and relationship failures", () => {
   invalid.componentStack[0].href = "/components/squeegee";
   invalid.variants[0].spaceConstraints = "";
   invalid.sources[0].sourceType = "blog";
+  invalid.contentVisuals[0].src = "/images/brands/sample.webp";
+  invalid.contentVisuals[1].placement = "equipment-types";
+  delete invalid.contentVisuals[1].sourceUrl;
+  invalid.contentVisuals[2].sourceIds = ["missing-source"];
   const errors = validateEquipmentProfile(invalid, publishedBrandSlugs).join("\n");
   assert.match(errors, /at least five sources/i);
   assert.match(errors, /unknown source/i);
@@ -140,6 +170,10 @@ test("validator rejects evidence and relationship failures", () => {
   assert.match(errors, /component links/i);
   assert.match(errors, /spaceConstraints/i);
   assert.match(errors, /sourceType is not supported/i);
+  assert.match(errors, /contentVisuals row 1 src/i);
+  assert.match(errors, /contentVisuals row 2 placement must be unique/i);
+  assert.match(errors, /contentVisuals row 2 sourceUrl/i);
+  assert.match(errors, /contentVisuals row 3 references unknown source/i);
 });
 
 test("published loader, sitemap and schemas exclude unsupported semantics", () => {

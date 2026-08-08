@@ -37,6 +37,21 @@ export type EquipmentModelRelationship = EquipmentEvidence & {
   marketScope: string;
 };
 
+export type EquipmentContentVisualPlacement =
+  | "equipment-types"
+  | "application-fit"
+  | "component-stack";
+
+export type EquipmentContentVisual = {
+  placement: EquipmentContentVisualPlacement;
+  visualType: "official-photo" | "wcb-diagram";
+  src: string;
+  alt: string;
+  caption: string;
+  sourceUrl?: string;
+  sourceIds?: string[];
+};
+
 export type EquipmentProfile = {
   status: EquipmentStatus;
   slug: string;
@@ -54,6 +69,7 @@ export type EquipmentProfile = {
   heroImageAlt: string;
   heroImageCaption: string;
   heroSourceUrl: string;
+  contentVisuals?: EquipmentContentVisual[];
   keyFacts: Array<EquipmentEvidence & { label: string; value: string }>;
   systemFlow: Array<EquipmentEvidence & { order: number; name: string; componentFamily: string; role: string }>;
   variants: Array<EquipmentEvidence & { name: string; taskScale: string; operatorRelationship: string; spaceConstraints: string; limitations: string }>;
@@ -75,6 +91,9 @@ const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 const sourceTypes = new Set([
   "manual", "specification", "manufacturer", "standard", "regulator", "service", "technical"
+]);
+const contentVisualPlacements = new Set<EquipmentContentVisualPlacement>([
+  "equipment-types", "application-fit", "component-stack"
 ]);
 
 function equipmentDirectory() {
@@ -194,6 +213,54 @@ export function validateEquipmentProfile(
     if (!isHttpUrl(source.url)) errors.push(`${label} url must be HTTP(S).`);
     if (!sourceTypes.has(String(source.sourceType ?? ""))) errors.push(`${label} sourceType is not supported.`);
     if (!datePattern.test(String(source.accessedAt ?? ""))) errors.push(`${label} accessedAt must use YYYY-MM-DD.`);
+  });
+
+  const contentVisuals = Array.isArray(profile.contentVisuals) ? profile.contentVisuals : [];
+  if (profile.status === "published" && (contentVisuals.length < 2 || contentVisuals.length > 3)) {
+    errors.push("published profiles must declare two or three contentVisuals.");
+  } else if (profile.contentVisuals !== undefined && (contentVisuals.length < 2 || contentVisuals.length > 3)) {
+    errors.push("contentVisuals must contain two or three rows when provided.");
+  }
+  const visualPlacements = new Set<string>();
+  contentVisuals.forEach((visual, index) => {
+    const label = `contentVisuals row ${index + 1}`;
+    requireFields(visual, label, ["placement", "visualType", "src", "alt", "caption"], errors);
+    if (!isRecord(visual)) return;
+
+    if (!contentVisualPlacements.has(visual.placement as EquipmentContentVisualPlacement)) {
+      errors.push(`${label} placement is not supported.`);
+    } else if (visualPlacements.has(String(visual.placement))) {
+      errors.push(`${label} placement must be unique.`);
+    } else {
+      visualPlacements.add(String(visual.placement));
+    }
+
+    const localPrefix = `/images/equipment/${String(profile.slug ?? "")}/`;
+    if (!hasText(visual.src) || !visual.src.startsWith(localPrefix)) {
+      errors.push(`${label} src must be inside the profile image directory.`);
+    }
+
+    if (visual.visualType === "official-photo") {
+      if (!hasText(visual.src) || !visual.src.endsWith(".webp")) {
+        errors.push(`${label} official-photo src must be WebP.`);
+      }
+      if (!isHttpUrl(visual.sourceUrl)) {
+        errors.push(`${label} sourceUrl must be a valid official HTTP(S) URL.`);
+      }
+    } else if (visual.visualType === "wcb-diagram") {
+      if (!hasText(visual.src) || !visual.src.endsWith(".svg")) {
+        errors.push(`${label} wcb-diagram src must be SVG.`);
+      }
+      if (!textArray(visual.sourceIds)) {
+        errors.push(`${label} sourceIds must contain at least one source.`);
+      } else {
+        for (const sourceId of visual.sourceIds as string[]) {
+          if (!sourceIds.has(sourceId)) errors.push(`${label} references unknown source ID: ${sourceId}.`);
+        }
+      }
+    } else {
+      errors.push(`${label} visualType is not supported.`);
+    }
   });
 
   const evidenceCollections = [
