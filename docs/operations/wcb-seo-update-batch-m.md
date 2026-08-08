@@ -10,9 +10,9 @@ This operational record covers three existing ownership and manufacturing guides
 
 | Order | Updated page | Existing slug | Main update | Status |
 |---:|---|---|---|---|
-| 1 | Who Owns Polaris Pool Cleaners? Fluidra, Zodiac & Where Made | `who-owns-polaris-pool-cleaners-fluidra-zodiac` | Shorter result title and explicit group owner versus model-level manufacturing answer | `local_verified` |
-| 2 | Who Owns MOVA? Dreame Group, Country of Origin & Mowers | `who-makes-mova-robot-mowers-dreame-group` | Broader owner/origin intent while preserving the existing mower URL and model-level Kutting evidence | `local_verified` |
-| 3 | Who Owns Eureka? Midea, Brand Origin & Where Vacuums Are Made | `who-owns-eureka-midea-electrolux-manufacturing` | American origin, Chinese ownership and model-specific manufacturing answers moved into the result and first screen | `local_verified` |
+| 1 | Who Owns Polaris Pool Cleaners? Fluidra, Zodiac & Where Made | `who-owns-polaris-pool-cleaners-fluidra-zodiac` | Shorter result title and explicit group owner versus model-level manufacturing answer | `published_verified` |
+| 2 | Who Owns MOVA? Dreame Group, Country of Origin & Mowers | `who-makes-mova-robot-mowers-dreame-group` | Broader owner/origin intent while preserving the existing mower URL and model-level Kutting evidence | `published_verified` |
+| 3 | Who Owns Eureka? Midea, Brand Origin & Where Vacuums Are Made | `who-owns-eureka-midea-electrolux-manufacturing` | American origin, Chinese ownership and model-specific manufacturing answers moved into the result and first screen | `published_verified` |
 
 ## Search and collision decision
 
@@ -66,4 +66,8 @@ This operational record covers three existing ownership and manufacturing guides
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- Ready PR: #67.
+- Squash merge on `main`: `e50ce45ce39a92987d9b4091bccbac20c652dd89`.
+- Git-linked Vercel production deployment containing the merge: `dpl_2PUgWYdrZr9wm7XN4ZpkXymMFqRX`, production commit `757af59c839078fe36f88150d8215370293668aa`, status `READY`.
+- Live verification passed for Polaris, MOVA and Eureka: HTTP 200, expected title, H1, description, canonical, BlogPosting schema, two complete 1600x900 article visuals, ownership-guide discovery and sitemap entry.
+- Desktop and 390px mobile rendering passed with no horizontal overflow and no production console errors.
