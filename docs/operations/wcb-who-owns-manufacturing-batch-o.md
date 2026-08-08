@@ -59,4 +59,7 @@ This record covers the second three-page release in the sitewide manufacturing-a
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- GitHub PR [#70](https://github.com/dennyyou-coder/new-project-5/pull/70) was squash-merged into `main` as `a884250f4eb682b96b88e8a6ddb0485c0a5bd6ce`.
+- Git-linked Vercel production deployment `dpl_8Q7TGpHGmH8sm656Hzpo2CFfCwyk` reached `READY` for that exact merge commit.
+- All three canonical production URLs returned HTTP 200 on desktop and 390px mobile with the expected title, H1, description, canonical, BlogPosting schema, direct manufacturing answer and zero horizontal overflow.
+- All eight article visuals, all 13 unique article-level internal links, Ownership Guide discovery and sitemap entries passed on production. Article-page browser consoles were clean; the sitemap XML view only requested a missing `/favicon.ico`, which did not affect article delivery or indexing.
