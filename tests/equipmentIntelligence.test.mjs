@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import sharp from "sharp";
@@ -181,4 +182,25 @@ test("draft floor scrubber is excluded from production sitemap discovery", () =>
   const urls = sitemap().map(({ url }) => url);
   assert.equal(urls.some((url) => url.endsWith("/equipment/floor-scrubber")), false);
   assert.equal(urls.some((url) => url.endsWith("/equipment")), false);
+});
+
+test("equipment layout avoids empty title columns and balances odd card grids", () => {
+  const styles = readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
+
+  assert.match(
+    styles,
+    /\.equipment-assessment-card\s*\{[^}]*grid-template-areas:\s*"heading assessment"\s*"evidence assessment"/s
+  );
+  assert.match(
+    styles,
+    /\.equipment-(?:type|decision)-card:last-child:nth-child\(odd\)[^{]*\{[^}]*grid-column:\s*1\s*\/\s*-1/s
+  );
+  assert.match(
+    styles,
+    /@media \(max-width:\s*840px\)[\s\S]*?\.equipment-assessment-card\s*\{[^}]*grid-template-areas:\s*"heading"\s*"evidence"\s*"assessment"/s
+  );
+  assert.match(
+    styles,
+    /\.equipment-key-facts \.brand-data-table (?:th|td)[^{]*\{[^}]*color:\s*var\(--equipment-ink\)/s
+  );
 });

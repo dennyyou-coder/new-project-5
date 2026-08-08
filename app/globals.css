@@ -25729,6 +25729,11 @@ button.contact-help-card > .contact-help-card-copy > span {
   width: 18%;
 }
 
+.equipment-key-facts .brand-data-table th,
+.equipment-key-facts .brand-data-table td {
+  color: var(--equipment-ink);
+}
+
 .equipment-section-nav {
   display: flex;
   flex-wrap: wrap;
@@ -25868,9 +25873,9 @@ button.contact-help-card > .contact-help-card-copy > span {
   gap: 18px;
 }
 
-.equipment-type-grid .equipment-type-card:first-child,
-.equipment-type-grid .equipment-type-card:last-child {
-  grid-column: auto;
+.equipment-type-card:last-child:nth-child(odd),
+.equipment-decision-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 
 .equipment-type-card dl,
@@ -25930,20 +25935,31 @@ button.contact-help-card > .contact-help-card-copy > span {
 
 .equipment-assessment-card {
   display: grid;
-  grid-template-columns: minmax(180px, 0.32fr) minmax(0, 0.68fr) minmax(280px, 0.75fr);
-  gap: 24px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
+  grid-template-areas:
+    "heading assessment"
+    "evidence assessment";
+  gap: 12px 24px;
   align-items: start;
 }
 
 .equipment-assessment-card h3 {
+  grid-area: heading;
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 1.35rem;
 }
 
 .equipment-assessment-card > .equipment-evidence-meta {
+  grid-area: evidence;
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+.equipment-assessment-card > .equipment-wcb-block {
+  grid-area: assessment;
+  align-self: stretch;
 }
 
 .equipment-wcb-block {
@@ -26075,21 +26091,21 @@ button.contact-help-card > .contact-help-card-copy > span {
     grid-template-columns: minmax(0, 1fr) minmax(360px, 0.8fr);
     gap: 32px;
   }
-
-  .equipment-assessment-card {
-    grid-template-columns: minmax(160px, 0.3fr) minmax(0, 0.7fr);
-  }
-
-  .equipment-assessment-card .equipment-wcb-block {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 840px) {
   .equipment-directory-hero,
-  .equipment-hero-grid,
+  .equipment-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
   .equipment-assessment-card {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "heading"
+      "evidence"
+      "assessment";
+    gap: 18px;
   }
 
   .equipment-directory-grid,
@@ -26122,6 +26138,11 @@ button.contact-help-card > .contact-help-card-copy > span {
   .equipment-metric-evidence,
   .equipment-scope-grid {
     grid-template-columns: 1fr;
+  }
+
+  .equipment-type-card:last-child:nth-child(odd),
+  .equipment-decision-card:last-child:nth-child(odd) {
+    grid-column: auto;
   }
 
   .equipment-kicker-row,
