@@ -49,10 +49,10 @@ The first four pages are ordered by observed GSC exposure. Remaining pages are g
 | 22 | `who-owns-gardena-husqvarna-sileno-manufacturing` | Add direct Husqvarna-group manufacturing answer near the top | `published_verified` |
 | 23 | `who-owns-hayward-pool-products` | Add direct group-versus-product manufacturing answer near the top | `published_verified` |
 | 24 | `who-owns-nilfisk-freudenberg-manufacturing` | Add direct production-network answer near the top | `published_verified` |
-| 25 | `who-owns-mac-tools-stanley-black-decker` | Add direct brand, sourcing and manufacturer answer near the top | `local_verified` |
-| 26 | `who-owns-triton-tools-timbecon` | Add direct current manufacturer/sourcing answer near the top | queued |
-| 27 | `who-owns-ridgid-wet-dry-vacuums-emerson` | Add an explicit manufacturing section and direct first-screen answer | queued |
-| 28 | `who-owns-shop-vac-greatstar-manufacturing` | Add an explicit manufacturing section and direct first-screen answer | queued |
+| 25 | `who-owns-mac-tools-stanley-black-decker` | Add direct brand, sourcing and manufacturer answer near the top | `published_verified` |
+| 26 | `who-owns-triton-tools-timbecon` | Add direct current manufacturer/sourcing answer near the top | `local_verified` |
+| 27 | `who-owns-ridgid-wet-dry-vacuums-emerson` | Add an explicit manufacturing section and direct first-screen answer | `local_verified` |
+| 28 | `who-owns-shop-vac-greatstar-manufacturing` | Add an explicit manufacturing section and direct first-screen answer | `local_verified` |
 
 ## Batch rule
 
