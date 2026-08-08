@@ -1,0 +1,156 @@
+{
+  "status": "published",
+  "slug": "clarke",
+  "name": "Clarke",
+  "aliases": ["Clarke Floorcare", "Clarke Floor Maintenance", "Clarke by Nilfisk"],
+  "legalEntityNote": "Clarke is treated here as a commercial floorcare brand rather than a standalone current company. Nilfisk's official United States pages present Clarke within the Nilfisk family of brands and identify Nilfisk Inc. as the site entity. Nilfisk is now part of Freudenberg Home and Cleaning Solutions. The contracting seller, importer, manufacturer, warranty provider and service station remain order- and market-specific roles.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.nilfisk.com/en-us/professional/about-nilfisk/brands/clarke/",
+  "headline": "Clarke commercial floorcare, Nilfisk operation and buyer checks",
+  "description": "A source-backed profile of the Clarke commercial floorcare brand, its Nilfisk operating context, Freudenberg ownership layer, product portfolio, channel roles and model-level procurement checks.",
+  "metaDescription": "Clarke floorcare profile: Nilfisk operation, Freudenberg ownership, scrubbers, burnishers, sweepers, channels, warranty and sourcing checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Clarke, Nilfisk or Freudenberg. Brand, operating company, group owner, manufacturer, seller and warranty provider must not be treated as interchangeable without transaction evidence.",
+  "headquarters": "Nilfisk Inc.: Brooklyn Park, Minnesota, United States",
+  "founded": "1916",
+  "heroImage": "/images/brands/clarke/hero-clarke-supermarket.webp",
+  "heroImageAlt": "Clarke ride-on floor scrubber cleaning a supermarket aisle",
+  "heroSourceUrl": "https://www.nilfisk.com/media/dwmj0jbp/clarke-hero.jpg",
+  "logoImage": "/images/brands/clarke/logo.webp",
+  "logoImageAlt": "Clarke logo",
+  "logoSourceUrl": "https://www.clarkeus.com/~/media/159E597BD1544246A4630465E1967C3D.ashx",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/clarke/brand-operator-owner-boundary.svg",
+      "alt": "Clarke brand Nilfisk operator and Freudenberg ownership boundary",
+      "caption": "Clarke is a brand presented by Nilfisk; Nilfisk Inc. is the named US site entity, while Nilfisk sits within Freudenberg Home and Cleaning Solutions. Transaction roles still require separate verification."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/clarke/model-service-check.svg",
+      "alt": "Clarke model origin warranty and service procurement checklist",
+      "caption": "Brand-level claims should be converted into exact model, serial, origin, warranty and authorized-service evidence before award."
+    }
+  ],
+  "ownership": {
+    "summary": "Nilfisk's official family-of-brands pages present Clarke as a Nilfisk commercial floorcare brand. In April 2026, Freudenberg Home and Cleaning Solutions completed its takeover offer for Nilfisk and stated that Nilfisk had become part of FHCS and the Freudenberg Group. This ownership chain does not determine the legal manufacturer, seller, importer or warranty provider of every Clarke SKU.",
+    "parentCompany": "Nilfisk Group (Freudenberg Home and Cleaning Solutions)"
+  },
+  "leadership": [
+    {
+      "name": "Alex A. Clarke",
+      "role": "Founder",
+      "context": "Nilfisk's official Canadian family-of-brands page states that inventor Alex A. Clarke created the Clarke Company in 1916."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Walk-behind and ride-on scrubbers",
+      "positioning": "Clarke scrubber platforms span compact walk-behind, stand-on and ride-on formats for commercial floor maintenance.",
+      "buyerRelevance": "Compare working width, tank capacity, brush system, battery, charger, realistic runtime, ramp limits and turning space."
+    },
+    {
+      "name": "Floor machines and burnishers",
+      "positioning": "Single-disc floor machines and burnishers support stripping, scrubbing, polishing and high-speed finishing tasks.",
+      "buyerRelevance": "Confirm pad size, speed, down pressure, dust control, electrical standard, cord or battery configuration and surface process."
+    },
+    {
+      "name": "Sweepers, extractors and vacuums",
+      "positioning": "The historic and current Clarke offer extends into sweepers, carpet care and vacuum equipment for facility cleaning.",
+      "buyerRelevance": "Validate debris type, filtration, recovery performance, accessories, consumables and local parts coverage for the selected model."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Nilfisk's current US product pages list Clarke-branded machines and identify product numbers, specifications, documents and accessories.",
+      "scope": "The exact models published on Nilfisk's US site; the pages do not establish one factory or origin for the entire Clarke range",
+      "buyerCheck": "Request the delivered machine's manufacturer plate, serial number, production site, country of origin and conformity file."
+    },
+    {
+      "evidence": "Nilfisk's official brand page describes Clarke as rugged and reliable floor maintenance equipment for commercial applications.",
+      "scope": "Current brand positioning, not model-specific manufacturing or performance proof",
+      "buyerCheck": "Require a site demonstration and acceptance criteria for the intended floor, soil, shift length and operator workflow."
+    },
+    {
+      "evidence": "Official product pages provide model-linked brochures, manuals, accessories and quote routes.",
+      "scope": "Documents available for the selected product and market at the time of review",
+      "buyerCheck": "Archive the exact datasheet, manual, parts list, accessory configuration and revision supplied with the quotation."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Nilfisk markets Clarke through its US professional-cleaning website and routes buyers to quotation and contact workflows.",
+      "scope": "United States web channel; commercial arrangements and coverage vary by buyer and territory",
+      "buyerCheck": "Identify the entity issuing the quote and invoice and confirm whether it is an authorized seller for the exact model."
+    },
+    {
+      "evidence": "The official Clarke brand page links product warranty registration and Nilfisk support resources.",
+      "scope": "Published US support framework; warranty terms and accepting service stations remain model- and territory-specific",
+      "buyerCheck": "Obtain the applicable warranty document, registration requirement, exclusions, travel coverage and accepting service station in writing."
+    },
+    {
+      "evidence": "Nilfisk describes Clarke equipment for a range of commercial applications.",
+      "scope": "Brand-level market positioning rather than proof of suitability for every facility",
+      "buyerCheck": "Require a comparable-site reference or documented demonstration before relying on productivity and cleaning-result claims."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Clarke competes as a long-established commercial floorcare brand within Nilfisk's broader professional-cleaning platform. Buyers should evaluate the exact machine and local service chain rather than infer manufacturer, origin or support solely from the brand or group name.",
+    "competitorSlugs": ["karcher", "minuteman", "nilfisk", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2026-04-15",
+      "title": "Freudenberg completes takeover offer for Nilfisk",
+      "summary": "Freudenberg Home and Cleaning Solutions announced completion of its takeover offer and stated that Nilfisk had become part of FHCS and the Freudenberg Group.",
+      "sourceIds": ["freudenberg-takeover"]
+    },
+    {
+      "date": "1916",
+      "title": "Alex A. Clarke creates the Clarke Company",
+      "summary": "Nilfisk's official family-of-brands page traces Clarke to Alex A. Clarke and a faster sanding machine in 1916.",
+      "sourceIds": ["nilfisk-family-ca"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nilfisk-clarke",
+      "title": "Clarke",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/en-us/professional/about-nilfisk/brands/clarke/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "nilfisk-family-us",
+      "title": "Nilfisk Family of Brands",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/en-us/professional/about-nilfisk/brands/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "nilfisk-family-ca",
+      "title": "Family of Brands",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/en-ca/professional/about-nilfisk/family-of-brands/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "clarke-product",
+      "title": "Clarke MA50 15B 15-inch Scrubber",
+      "publisher": "Nilfisk Inc.",
+      "url": "https://www.nilfisk.com/en-us/professional/products/floor-cleaning/floor-scrubbers/walk-behind-floor-scrubbers/small/clarke-ma50-15b-15inch-scrubber%2BCLARKE380B/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "freudenberg-takeover",
+      "title": "Freudenberg Home and Cleaning Solutions Completes Takeover Offer of Nilfisk",
+      "publisher": "Freudenberg Group",
+      "url": "https://www.freudenberg.com/en/company/press-media/news-detail/freudenberg-home-and-cleaning-solutions-completes-takeover-offer-of-nilfisk",
+      "publishedAt": "2026-04-15",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T11:30:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T11:30:00+08:00"
+}

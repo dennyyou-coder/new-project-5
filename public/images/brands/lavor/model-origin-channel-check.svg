@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Lavor professional cleaning equipment buyer checks</title>
+  <desc id="desc">A checklist covering model configuration, production evidence, destination compliance and after-sales support.</desc>
+  <rect width="1200" height="720" rx="38" fill="#153b32"/>
+  <text x="70" y="84" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#fff">Convert a broad portfolio into model-level evidence</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="70" y="145" width="330" height="220" rx="26" fill="#ffcf21"/><text x="105" y="200" font-size="27" font-weight="700" fill="#153b32">Exact configuration</text><text x="105" y="247" font-size="21" fill="#153b32">pressure / flow / width</text><text x="105" y="285" font-size="21" fill="#153b32">power and battery</text><text x="105" y="323" font-size="21" fill="#153b32">attachments and options</text>
+    <rect x="435" y="145" width="330" height="220" rx="26" fill="#286b5c"/><text x="470" y="200" font-size="27" font-weight="700" fill="#fff">Origin record</text><text x="470" y="247" font-size="21" fill="#d7eee7">manufacturer plate</text><text x="470" y="285" font-size="21" fill="#d7eee7">factory and country</text><text x="470" y="323" font-size="21" fill="#d7eee7">serial and declaration</text>
+    <rect x="800" y="145" width="330" height="220" rx="26" fill="#286b5c"/><text x="835" y="200" font-size="27" font-weight="700" fill="#fff">Local readiness</text><text x="835" y="247" font-size="21" fill="#d7eee7">authorized distributor</text><text x="835" y="285" font-size="21" fill="#d7eee7">parts and technicians</text><text x="835" y="323" font-size="21" fill="#d7eee7">warranty exclusions</text>
+    <rect x="70" y="415" width="1060" height="140" rx="28" fill="#fff"/><text x="110" y="472" font-size="27" font-weight="700" fill="#153b32">Evidence must match the destination market</text><text x="110" y="518" font-size="22" fill="#5b6f69">Electrical standard, compliance file, seller identity and service capacity can differ by country.</text>
+  </g>
+  <text x="600" y="640" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#d7eee7">Confirm responsibility before price, delivery and warranty commitments are locked.</text>
+</svg>

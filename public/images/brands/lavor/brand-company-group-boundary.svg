@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Lavor brand, Lavorwash company and Comet Group boundary</title>
+  <desc id="desc">Lavor is the market brand, Lavorwash S.p.A. is the operating company named by official materials, and the business is part of Comet Group.</desc>
+  <rect width="1200" height="720" rx="38" fill="#f5f7f6"/>
+  <text x="70" y="82" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#153b32">Lavor: brand identity inside the Comet Group structure</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <rect x="90" y="155" width="300" height="145" rx="25" fill="#004c3f"/><text x="240" y="215" font-size="40" font-weight="700" fill="#fff">LAVOR</text><text x="240" y="258" font-size="21" fill="#d7eee7">product and market brand</text>
+    <path d="M390 228H500" stroke="#70857f" stroke-width="6" marker-end="url(#arrow)"/>
+    <rect x="500" y="155" width="330" height="145" rx="25" fill="#1c6656"/><text x="665" y="211" font-size="29" font-weight="700" fill="#fff">Lavorwash S.p.A.</text><text x="665" y="254" font-size="20" fill="#d7eee7">operating company</text>
+    <path d="M830 228H920" stroke="#70857f" stroke-width="6" marker-end="url(#arrow)"/>
+    <rect x="920" y="155" width="210" height="145" rx="25" fill="#163c34"/><text x="1025" y="211" font-size="28" font-weight="700" fill="#fff">Comet</text><text x="1025" y="254" font-size="20" fill="#d7eee7">group owner</text>
+    <rect x="145" y="390" width="910" height="175" rx="28" fill="#fff" stroke="#8da39d" stroke-width="4"/><text x="600" y="447" font-size="27" font-weight="700" fill="#153b32">Regional roles still require confirmation</text><text x="600" y="493" font-size="22" fill="#5b6f69">branch • distributor • importer • contracting seller • service provider</text><text x="600" y="531" font-size="20" fill="#5b6f69">Group membership alone does not identify the entity responsible for a specific order.</text>
+  </g>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#70857f"/></marker></defs>
+</svg>

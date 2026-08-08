@@ -218,6 +218,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     description:
       "Verified profiles of commercial and industrial cleaning brands, focused on floorcare systems, autonomous equipment, pressure washing and professional distribution models.",
     brandSlugs: [
+      "clarke",
       "cleanfix",
       "columbus",
       "comac",
@@ -228,6 +229,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "hako",
       "ipc",
       "karcher",
+      "lavor",
       "lionsbot",
       "minuteman",
       "nilfisk",
@@ -236,12 +238,14 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "oreck",
       "powerboss",
       "pudu-robotics",
+      "rcm",
       "taski",
       "tennant",
       "truvox",
       "wetrok"
     ],
     primaryBrandSlugs: [
+      "clarke",
       "cleanfix",
       "columbus",
       "comac",
@@ -251,6 +255,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "hako",
       "ipc",
       "karcher",
+      "lavor",
       "lionsbot",
       "minuteman",
       "nilfisk",
@@ -258,6 +263,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "oertzen",
       "powerboss",
       "pudu-robotics",
+      "rcm",
       "taski",
       "tennant",
       "truvox",
