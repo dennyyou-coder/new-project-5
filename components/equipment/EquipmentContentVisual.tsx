@@ -14,15 +14,18 @@ export function EquipmentContentVisualFigure({
     : "WCB technical diagram";
 
   return (
-    <figure className={`equipment-content-visual equipment-content-visual--${visual.visualType}`}>
+    <figure className={`equipment-content-visual equipment-content-visual--${visual.visualType} equipment-content-visual--${visual.placement}`}>
       <div className="equipment-content-visual__media">
-        <Image
-          src={visual.src}
-          alt={visual.alt}
-          width={1600}
-          height={1000}
-          sizes="(max-width: 840px) calc(100vw - 28px), 62vw"
-        />
+        <picture>
+          {visual.mobileSrc ? <source media="(max-width: 760px)" srcSet={visual.mobileSrc} /> : null}
+          <Image
+            src={visual.src}
+            alt={visual.alt}
+            width={1600}
+            height={1000}
+            sizes="(max-width: 840px) calc(100vw - 28px), 62vw"
+          />
+        </picture>
       </div>
       <figcaption>
         <span className="equipment-content-visual__label">{label}</span>

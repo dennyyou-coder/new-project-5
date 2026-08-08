@@ -50,6 +50,7 @@ export type EquipmentContentVisual = {
   caption: string;
   sourceUrl?: string;
   sourceIds?: string[];
+  mobileSrc?: string;
 };
 
 export type EquipmentProfile = {
@@ -239,6 +240,13 @@ export function validateEquipmentProfile(
     if (!hasText(visual.src) || !visual.src.startsWith(localPrefix)) {
       errors.push(`${label} src must be inside the profile image directory.`);
     }
+    if (visual.mobileSrc !== undefined && (
+      !hasText(visual.mobileSrc)
+      || !visual.mobileSrc.startsWith(localPrefix)
+      || !visual.mobileSrc.endsWith(".svg")
+    )) {
+      errors.push(`${label} mobileSrc must be a local SVG inside the profile image directory.`);
+    }
 
     if (visual.visualType === "official-photo") {
       if (!hasText(visual.src) || !visual.src.endsWith(".webp")) {
@@ -257,6 +265,9 @@ export function validateEquipmentProfile(
         for (const sourceId of visual.sourceIds as string[]) {
           if (!sourceIds.has(sourceId)) errors.push(`${label} references unknown source ID: ${sourceId}.`);
         }
+      }
+      if (!hasText(visual.mobileSrc)) {
+        errors.push(`${label} wcb-diagram mobileSrc is required.`);
       }
     } else {
       errors.push(`${label} visualType is not supported.`);

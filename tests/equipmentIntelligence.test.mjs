@@ -63,7 +63,8 @@ const validProfile = {
       src: "/images/equipment/sample-equipment/components.svg",
       alt: "Component verification zones",
       caption: "WCB verification diagram.",
-      sourceIds: ["source-1"]
+      sourceIds: ["source-1"],
+      mobileSrc: "/images/equipment/sample-equipment/components-mobile.svg"
     }
   ],
   keyFacts: [{ label: "Mechanism", value: "Mechanical agitation and liquid recovery", ...evidence }],
@@ -227,8 +228,11 @@ test("floor scrubber pilot meets evidence, relationship and image gates", async 
 
   const diagram = floorScrubber.contentVisuals.find(({ visualType }) => visualType === "wcb-diagram");
   const diagramSource = readFileSync(path.join(process.cwd(), "public", diagram.src), "utf8");
+  const mobileDiagramSource = readFileSync(path.join(process.cwd(), "public", diagram.mobileSrc), "utf8");
   assert.match(diagramSource, /<svg/);
   assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
+  assert.match(mobileDiagramSource, /<svg/);
+  assert.match(mobileDiagramSource, /Family labels do not establish cross-model compatibility/);
 });
 
 test("draft floor scrubber is excluded from production sitemap discovery", () => {

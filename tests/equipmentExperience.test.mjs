@@ -77,6 +77,8 @@ test("approved content visuals render through one provenance-aware figure", () =
 
   assert.match(visual, /import Image from "next\/image"/);
   assert.match(visual, /equipment-content-visual/);
+  assert.match(visual, /equipment-content-visual--\$\{visual\.placement\}/);
+  assert.match(visual, /<source media="\(max-width: 760px\)" srcSet=\{visual\.mobileSrc\}/);
   assert.match(visual, /Official image source/);
   assert.match(visual, /rel="noopener noreferrer"/);
   assert.match(visual, /guidance/);
@@ -118,9 +120,16 @@ test("equipment styles preserve scoped desktop and mobile layouts", () => {
   for (const selector of [
     ".equipment-hub", ".equipment-hero-grid", ".equipment-key-facts",
     ".equipment-section-nav", ".equipment-system-flow", ".equipment-type-grid",
-    ".equipment-evidence-meta", ".equipment-table-scroll", ".equipment-source-list"
+    ".equipment-evidence-meta", ".equipment-table-scroll", ".equipment-source-list",
+    ".equipment-content-visual", ".equipment-content-visual__media",
+    ".equipment-content-visual__guidance"
   ]) assert.match(styles, new RegExp(selector.replace(".", "\\.")));
+  assert.match(styles, /\.equipment-content-visual\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1\.2fr\)\s+minmax\(280px,\s*0\.8fr\)/s);
+  assert.match(styles, /\.equipment-content-visual--application-fit\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*0\.8fr\)\s+minmax\(0,\s*1\.2fr\)/s);
+  assert.match(styles, /\.equipment-content-visual--application-fit \.equipment-content-visual__media\s*\{[^}]*aspect-ratio:\s*1\s*\/\s*1/s);
+  assert.match(styles, /@media \(max-width: 760px\)[\s\S]*?\.equipment-content-visual--component-stack \.equipment-content-visual__media\s*\{[^}]*aspect-ratio:\s*1\s*\/\s*2/s);
   assert.match(styles, /@media \(max-width: 840px\)/);
+  assert.match(styles, /@media \(max-width: 840px\)[\s\S]*?\.equipment-content-visual\s*\{[^}]*grid-template-columns:\s*1fr/s);
   assert.match(styles, /@media \(max-width: 760px\)/);
   assert.match(styles, /min-width: 0/);
   assert.match(styles, /overflow-wrap: anywhere/);

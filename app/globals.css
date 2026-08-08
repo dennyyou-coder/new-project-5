@@ -25775,6 +25775,100 @@ button.contact-help-card > .contact-help-card-copy > span {
   color: var(--equipment-muted);
 }
 
+.equipment-content-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  min-width: 0;
+  margin: 0 0 28px;
+  overflow: hidden;
+  border: 1px solid var(--equipment-line);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.equipment-content-visual__media {
+  min-width: 0;
+  overflow: hidden;
+  aspect-ratio: 8 / 5;
+  background: #e8f1ef;
+}
+
+.equipment-content-visual__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.equipment-content-visual__media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.equipment-content-visual--wcb-diagram .equipment-content-visual__media img {
+  object-fit: contain;
+}
+
+.equipment-content-visual--application-fit {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+}
+
+.equipment-content-visual--application-fit .equipment-content-visual__media {
+  aspect-ratio: 1 / 1;
+}
+
+.equipment-content-visual figcaption {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 26px;
+  color: var(--equipment-muted);
+}
+
+.equipment-content-visual figcaption > p {
+  margin: 14px 0 0;
+}
+
+.equipment-content-visual__label {
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: #07584f;
+  background: var(--equipment-accent-soft);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.equipment-content-visual__guidance {
+  padding-top: 14px;
+  border-top: 1px solid var(--equipment-line);
+  color: var(--equipment-ink);
+}
+
+.equipment-content-visual__guidance strong,
+.equipment-content-visual__sources strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--equipment-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.equipment-content-visual a {
+  width: fit-content;
+  margin-top: 16px;
+  color: var(--equipment-accent);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
 .equipment-system-flow {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -26108,6 +26202,10 @@ button.contact-help-card > .contact-help-card-copy > span {
     gap: 18px;
   }
 
+  .equipment-content-visual {
+    grid-template-columns: 1fr;
+  }
+
   .equipment-directory-grid,
   .equipment-system-flow,
   .equipment-type-grid,
@@ -26143,6 +26241,18 @@ button.contact-help-card > .contact-help-card-copy > span {
   .equipment-type-card:last-child:nth-child(odd),
   .equipment-decision-card:last-child:nth-child(odd) {
     grid-column: auto;
+  }
+
+  .equipment-content-visual {
+    border-radius: 16px;
+  }
+
+  .equipment-content-visual figcaption {
+    padding: 18px;
+  }
+
+  .equipment-content-visual--component-stack .equipment-content-visual__media {
+    aspect-ratio: 1 / 2;
   }
 
   .equipment-kicker-row,

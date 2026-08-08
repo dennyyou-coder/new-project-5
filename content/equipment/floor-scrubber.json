@@ -43,6 +43,7 @@
       "placement": "component-stack",
       "visualType": "wcb-diagram",
       "src": "/images/equipment/floor-scrubber/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/floor-scrubber/component-verification-map-mobile.svg",
       "alt": "WCB diagram of four floor scrubber component verification zones",
       "caption": "WCB verification map showing the identifiers and interfaces to confirm for the cleaning deck, recovery path, tanks, and battery and charger configuration.",
       "sourceIds": ["tennant-t300-manual", "karcher-b50-manual", "nilfisk-sc500-manual", "hako-b25"]
