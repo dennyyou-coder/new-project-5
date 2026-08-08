@@ -10,9 +10,9 @@ This operational record covers three existing ownership guides selected from a f
 
 | Order | Updated page | Existing slug | Main update | Status |
 |---:|---|---|---|---|
-| 1 | Who Owns Dyson? James Dyson, Private Status and Origin | `who-owns-dyson-james-dyson-singapore-manufacturing` | Shorter result title plus explicit private-company and country-of-origin answer | `local_verified` |
-| 2 | Who Owns Miele? Family Ownership, Origin and Factories | `who-owns-miele-family-manufacturing-network` | Shorter result title plus direct German-origin answer | `local_verified` |
-| 3 | Who Owns Kärcher? Family Ownership, Origin and Factories | `who-owns-karcher-family-professional-cleaning-network` | Shorter result title plus direct German-origin answer | `local_verified` |
+| 1 | Who Owns Dyson? James Dyson, Private Status and Origin | `who-owns-dyson-james-dyson-singapore-manufacturing` | Shorter result title plus explicit private-company and country-of-origin answer | `published_verified` |
+| 2 | Who Owns Miele? Family Ownership, Origin and Factories | `who-owns-miele-family-manufacturing-network` | Shorter result title plus direct German-origin answer | `published_verified` |
+| 3 | Who Owns Kärcher? Family Ownership, Origin and Factories | `who-owns-karcher-family-professional-cleaning-network` | Shorter result title plus direct German-origin answer | `published_verified` |
 
 ## Search and collision decision
 
@@ -67,4 +67,8 @@ This operational record covers three existing ownership guides selected from a f
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- Ready PR: #65.
+- Squash merge on `main`: `4826a7181e2d8ae14e9ea15b165560e1681417b3`.
+- Git-linked Vercel production deployment: `dpl_8x8wqJP62HkS46tzF7QzYRqNTGTn`, status `READY`.
+- Live verification passed for all three unchanged URLs: HTTP 200, expected title, H1, description, canonical, BlogPosting schema, article visuals, ownership-guide discovery and sitemap entry.
+- Desktop and 390px mobile rendering passed with no horizontal overflow and no production console errors.
