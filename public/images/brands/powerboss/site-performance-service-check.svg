@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">PowerBoss site performance and service verification</title>
+  <desc id="desc">A buyer checklist covering debris and floor conditions, measured performance, consumables and authorized warranty service.</desc>
+  <rect width="1200" height="720" rx="38" fill="#20242b"/>
+  <text x="70" y="84" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#fff">Industrial machines must be proven on the real site</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="70" y="140" width="500" height="205" rx="28" fill="#ef431e"/><text x="110" y="195" font-size="27" font-weight="700" fill="#fff">Application fit</text><text x="110" y="238" font-size="21" fill="#fff">• debris, dust and floor type</text><text x="110" y="274" font-size="21" fill="#fff">• aisle, gradient and dump height</text><text x="110" y="310" font-size="21" fill="#fff">• fuel, battery and ventilation limits</text>
+    <rect x="630" y="140" width="500" height="205" rx="28" fill="#343c48"/><text x="670" y="195" font-size="27" font-weight="700" fill="#fff">Demonstration evidence</text><text x="670" y="238" font-size="21" fill="#d8dee7">• measured coverage and pickup</text><text x="670" y="274" font-size="21" fill="#d8dee7">• water, fuel and battery use</text><text x="670" y="310" font-size="21" fill="#d8dee7">• operator visibility and safety</text>
+    <rect x="70" y="390" width="500" height="205" rx="28" fill="#343c48"/><text x="110" y="445" font-size="27" font-weight="700" fill="#fff">Life-cycle supply</text><text x="110" y="488" font-size="21" fill="#d8dee7">• brushes, filters and squeegees</text><text x="110" y="524" font-size="21" fill="#d8dee7">• engines, batteries and chargers</text><text x="110" y="560" font-size="21" fill="#d8dee7">• parts lead time and substitutes</text>
+    <rect x="630" y="390" width="500" height="205" rx="28" fill="#ef431e"/><text x="670" y="445" font-size="27" font-weight="700" fill="#fff">Warranty and service</text><text x="670" y="488" font-size="21" fill="#fff">• authorized service center</text><text x="670" y="524" font-size="21" fill="#fff">• maintenance records and intervals</text><text x="670" y="560" font-size="21" fill="#fff">• response, travel and exclusions</text>
+  </g>
+  <text x="600" y="660" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#d8dee7">Attach the agreed test results and service commitments to the purchase order.</text>
+</svg>

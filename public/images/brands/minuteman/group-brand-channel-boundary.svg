@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Minuteman group, company, brand and channel boundary</title>
+  <desc id="desc">Possehl Group contains Hako Group, which contains Minuteman International. The Minuteman and PowerBoss brands sit below the US company while dealers and service providers remain separate.</desc>
+  <rect width="1200" height="720" rx="38" fill="#f6f7f9"/>
+  <text x="70" y="82" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#172033">Who owns and who serves?</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <rect x="80" y="145" width="260" height="105" rx="22" fill="#172033"/><text x="210" y="208" font-size="28" font-weight="700" fill="#fff">Possehl Group</text>
+    <path d="M340 198H430" stroke="#7d8797" stroke-width="6"/>
+    <rect x="430" y="145" width="260" height="105" rx="22" fill="#32445f"/><text x="560" y="208" font-size="28" font-weight="700" fill="#fff">Hako Group</text>
+    <path d="M690 198H780" stroke="#7d8797" stroke-width="6"/>
+    <rect x="780" y="125" width="340" height="145" rx="22" fill="#930039"/><text x="950" y="185" font-size="27" font-weight="700" fill="#fff">Minuteman International, Inc.</text><text x="950" y="226" font-size="20" fill="#ffe8f0">US operating company</text>
+    <path d="M950 270V352M950 352H455M950 352H1045" stroke="#7d8797" stroke-width="6" fill="none"/>
+    <rect x="310" y="380" width="290" height="110" rx="22" fill="#fff" stroke="#930039" stroke-width="4"/><text x="455" y="435" font-size="30" font-weight="700" fill="#930039">Minuteman</text><text x="455" y="468" font-size="19" fill="#596477">brand / portfolio</text>
+    <rect x="900" y="380" width="290" height="110" rx="22" fill="#fff" stroke="#ef431e" stroke-width="4"/><text x="1045" y="435" font-size="30" font-weight="700" fill="#d83a1c">PowerBoss</text><text x="1045" y="468" font-size="19" fill="#596477">separate brand / company</text>
+    <rect x="80" y="555" width="1040" height="95" rx="22" fill="#e7ebf0"/><text x="600" y="597" font-size="25" font-weight="700" fill="#172033">Dealer • contracting seller • importer • service provider</text><text x="600" y="630" font-size="20" fill="#596477">Confirm each market role on the quote, invoice, warranty and service agreement.</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Oertzen pressure, configuration, origin and service checks</title>
+  <desc id="desc">A professional waterjet procurement checklist covering pressure and flow, duty cycle, exact configuration, safety and local service.</desc>
+  <rect width="1200" height="720" rx="38" fill="#172033"/>
+  <text x="70" y="84" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#fff">Specify the waterjet system, not just the pressure number</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="70" y="140" width="330" height="205" rx="26" fill="#eb001b"/><text x="105" y="192" font-size="26" font-weight="700" fill="#fff">Cleaning duty</text><text x="105" y="235" font-size="20" fill="#fff">Pressure + flow</text><text x="105" y="270" font-size="20" fill="#fff">Cold / hot water</text><text x="105" y="305" font-size="20" fill="#fff">Continuous duty cycle</text>
+    <rect x="435" y="140" width="330" height="205" rx="26" fill="#34445b"/><text x="470" y="192" font-size="26" font-weight="700" fill="#fff">Delivered system</text><text x="470" y="235" font-size="20" fill="#d9e2ef">Pump and drive</text><text x="470" y="270" font-size="20" fill="#d9e2ef">Hose, lance and nozzle</text><text x="470" y="305" font-size="20" fill="#d9e2ef">Trailer / frame / options</text>
+    <rect x="800" y="140" width="330" height="205" rx="26" fill="#34445b"/><text x="835" y="192" font-size="26" font-weight="700" fill="#fff">Evidence pack</text><text x="835" y="235" font-size="20" fill="#d9e2ef">Serial and origin</text><text x="835" y="270" font-size="20" fill="#d9e2ef">Conformity and manual</text><text x="835" y="305" font-size="20" fill="#d9e2ef">Safety training record</text>
+    <rect x="70" y="390" width="1060" height="190" rx="28" fill="#f5f6f8"/><text x="110" y="445" font-size="27" font-weight="700" fill="#20242b">Before award, verify:</text><text x="110" y="492" font-size="22" fill="#596477">water quality and supply • wastewater and noise controls • operator PPE • spare pump and seal availability</text><text x="110" y="535" font-size="22" fill="#596477">authorized seller • contracting entity • service territory • response time • export partner • warranty exclusions</text>
+  </g>
+  <text x="600" y="650" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#d9e2ef">High-pressure capability must be matched to the task, environment and support network.</text>
+</svg>
