@@ -1,7 +1,10 @@
 import type { EquipmentProfile } from "@/lib/equipment";
+import { EquipmentContentVisualFigure } from "./EquipmentContentVisual";
 import { EquipmentEvidenceMeta } from "./EquipmentEvidence";
 
 export function EquipmentTypeComparison({ profile }: { profile: EquipmentProfile }) {
+  const visual = profile.contentVisuals?.find(({ placement }) => placement === "equipment-types");
+
   return (
     <section className="section equipment-section equipment-section--soft" id="equipment-types">
       <div className="insights-page-container">
@@ -10,6 +13,12 @@ export function EquipmentTypeComparison({ profile }: { profile: EquipmentProfile
           <h2>Main floor scrubber formats</h2>
           <p>These formats describe operator relationship and task scale. None is a universal winner.</p>
         </div>
+        {visual ? (
+          <EquipmentContentVisualFigure
+            visual={visual}
+            guidance="Use the format as a starting point, then compare route width, turning space, tank cycle, operator travel and the exact configured machine."
+          />
+        ) : null}
         <div className="equipment-type-grid">
           {profile.variants.map((variant) => (
             <article key={variant.name} className="equipment-type-card">

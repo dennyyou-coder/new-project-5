@@ -70,6 +70,23 @@ test("technical sections visibly separate evidence, WCB assessment and compatibi
   assert.match(technical, /No component link or cross-model compatibility is claimed/);
 });
 
+test("approved content visuals render through one provenance-aware figure", () => {
+  const visual = read("components/equipment/EquipmentContentVisual.tsx");
+  const types = read("components/equipment/EquipmentTypeComparison.tsx");
+  const technical = read("components/equipment/EquipmentTechnicalSections.tsx");
+
+  assert.match(visual, /import Image from "next\/image"/);
+  assert.match(visual, /equipment-content-visual/);
+  assert.match(visual, /Official image source/);
+  assert.match(visual, /rel="noopener noreferrer"/);
+  assert.match(visual, /guidance/);
+  assert.match(types, /placement === "equipment-types"/);
+  assert.match(types, /EquipmentContentVisualFigure/);
+  assert.match(technical, /placement === "application-fit"/);
+  assert.match(technical, /placement === "component-stack"/);
+  assert.equal((technical.match(/<EquipmentContentVisualFigure/g) || []).length, 2);
+});
+
 test("representative models link published brands without ownership or OEM claims", () => {
   const source = read("components/equipment/EquipmentRelationships.tsx");
   assert.match(source, /href=\{`\/brands\/\$\{model\.brandSlug\}`\}/);

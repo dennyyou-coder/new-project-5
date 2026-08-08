@@ -1,8 +1,11 @@
 import { BrandDataTable } from "@/components/brands/BrandDataTable";
 import type { EquipmentProfile } from "@/lib/equipment";
+import { EquipmentContentVisualFigure } from "./EquipmentContentVisual";
 import { EquipmentEvidenceMeta } from "./EquipmentEvidence";
 
 export function EquipmentTechnicalSections({ profile }: { profile: EquipmentProfile }) {
+  const applicationVisual = profile.contentVisuals?.find(({ placement }) => placement === "application-fit");
+  const componentVisual = profile.contentVisuals?.find(({ placement }) => placement === "component-stack");
   const metrics = profile.performanceMetrics.map((metric) => ({
     metric: metric.name,
     meaning: metric.purchasingMeaning,
@@ -46,6 +49,12 @@ export function EquipmentTechnicalSections({ profile }: { profile: EquipmentProf
             <h2>Application-fit matrix</h2>
             <p>Official application evidence does not establish automatic suitability. Each row shows what still needs to be tested.</p>
           </div>
+          {applicationVisual ? (
+            <EquipmentContentVisualFigure
+              visual={applicationVisual}
+              guidance="Treat the photographed setting as context only. Validate aisle and turn dimensions, occupied-space noise, residual moisture, floor finish and the planned cleaning window on site."
+            />
+          ) : null}
           <div className="equipment-assessment-list">
             {profile.applicationFit.map((item) => (
               <article key={item.application} className="equipment-assessment-card">
@@ -73,6 +82,12 @@ export function EquipmentTechnicalSections({ profile }: { profile: EquipmentProf
             <h2>Component families and compatibility boundaries</h2>
             <p>Component families are labels only. No component link or cross-model compatibility is claimed.</p>
           </div>
+          {componentVisual ? (
+            <EquipmentContentVisualFigure
+              visual={componentVisual}
+              guidance="Before substitution or service work, match the current manual, model and serial range, part number, physical interface, approved material or chemistry, and electrical configuration."
+            />
+          ) : null}
           <div className="equipment-component-grid">
             {profile.componentStack.map((component) => (
               <article key={component.name} className="equipment-component-card">
