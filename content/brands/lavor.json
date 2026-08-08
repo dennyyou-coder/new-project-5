@@ -1,0 +1,154 @@
+{
+  "status": "published",
+  "slug": "lavor",
+  "name": "Lavor",
+  "aliases": ["LAVOR", "Lavor Cleaning"],
+  "legalEntityNote": "Lavor is treated here as the market brand. Official company materials name Lavorwash S.p.A. as the operating company and describe Lavor as part of Comet Group. Regional branches, distributors, importers, contracting sellers and warranty or service providers remain separate roles and must be checked for each destination market.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://lavor.com/en/",
+  "headline": "Lavor cleaning equipment, Comet Group structure and buyer checks",
+  "description": "A source-backed profile of the Lavor brand, Lavorwash operating-company boundary, Comet Group ownership, professional and consumer cleaning portfolio, international channels and model-level sourcing checks.",
+  "metaDescription": "Lavor profile: Lavorwash operator, Comet Group ownership, pressure washers, vacuums, scrubber dryers, sweepers, channels and origin checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Lavor, Lavorwash or Comet. Group-level presence and manufacturing statements do not prove the factory, origin, seller or warranty entity of every product.",
+  "headquarters": "Pegognaga, Mantua, Italy",
+  "founded": "1975",
+  "heroImage": "/images/brands/lavor/hero-professional-scrubber.webp",
+  "heroImageAlt": "Lavor professional ride-on floor scrubber operating in a warehouse",
+  "heroSourceUrl": "https://lavor.com/images/testata-professional.jpg",
+  "logoImage": "/images/brands/lavor/logo.webp",
+  "logoImageAlt": "Lavor logo",
+  "logoSourceUrl": "https://lavor.com/images/logo.jpg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/lavor/brand-company-group-boundary.svg",
+      "alt": "Lavor brand Lavorwash operating company and Comet Group boundary",
+      "caption": "Official materials connect the Lavor brand to Lavorwash S.p.A. within Comet Group, while regional transaction and service entities still require separate confirmation."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/lavor/model-origin-channel-check.svg",
+      "alt": "Lavor model origin channel and service verification checklist",
+      "caption": "A broad international portfolio should be translated into exact configuration, manufacturer, origin, compliance, seller and service evidence."
+    }
+  ],
+  "ownership": {
+    "summary": "Lavor's official 50th-anniversary account states that the brand is part of Comet Group and that integration took place in 2017. Current official Lavor and Comet Cleaning pages present the cleaning-equipment business through Lavorwash S.p.A. This structure does not make each branch, distributor, importer or service partner the same legal entity.",
+    "parentCompany": "Comet S.p.A. (Comet Group)"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Professional pressure washers",
+      "positioning": "Cold- and hot-water pressure-washing systems serve professional, industrial and specialist cleaning applications.",
+      "buyerRelevance": "Specify pressure, flow, temperature, pump, duty cycle, power source, water quality, accessories and destination compliance."
+    },
+    {
+      "name": "Scrubber dryers and sweepers",
+      "positioning": "Walk-behind and ride-on floorcare platforms address indoor and outdoor commercial cleaning duties.",
+      "buyerRelevance": "Compare working width, tank capacity, traction, filtration, battery, realistic productivity, ramps and serviceability."
+    },
+    {
+      "name": "Professional and industrial vacuums",
+      "positioning": "Wet/dry, industrial and application-specific vacuum platforms extend the offer beyond powered floorcare.",
+      "buyerRelevance": "Confirm filtration class, airflow, recovery material, electrical standard, accessories, containment and consumables."
+    },
+    {
+      "name": "Home and outdoor cleaning",
+      "positioning": "The brand also markets consumer pressure washers, vacuums, steam cleaners and outdoor cleaning products.",
+      "buyerRelevance": "Do not substitute consumer models for professional duty without written workload, warranty and service confirmation."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Lavor's official company page identifies Lavorwash's 1975 establishment in Pegognaga and describes development into an international cleaning-equipment group.",
+      "scope": "Company and group history; it does not establish one production site or origin for every current SKU",
+      "buyerCheck": "Request the exact model's legal manufacturer, production site, origin, serial record and conformity declaration."
+    },
+    {
+      "evidence": "Official Lavor pages separate professional and home-outdoor ranges and list multiple equipment families.",
+      "scope": "Current published portfolio; regional range, configuration and availability can differ",
+      "buyerCheck": "Lock the model code, voltage, battery, accessories, documentation language and destination configuration in the contract."
+    },
+    {
+      "evidence": "The company describes technical research, product development and a multi-country group footprint.",
+      "scope": "Group-level capability; it does not identify the factory responsible for every machine or component",
+      "buyerCheck": "Separate group capability from SKU evidence and obtain factory, origin and quality-control records for the ordered unit."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Lavor states that it operates in more than 130 countries and names branches in Europe, the Americas and China.",
+      "scope": "Company-described international footprint; branch roles and active product coverage vary by market and time",
+      "buyerCheck": "Confirm the current local branch or authorized distributor, its territory, product authorization and contracting role."
+    },
+    {
+      "evidence": "Official sites provide dealer, contact and product-information routes for professional and consumer ranges.",
+      "scope": "Published channel framework; local stock, technicians, parts and response times are not uniform",
+      "buyerCheck": "Document importer, seller, commissioning provider, parts stock, service response time and escalation contact."
+    },
+    {
+      "evidence": "The Lavor portfolio spans both professional and home-outdoor product families.",
+      "scope": "Brand-wide portfolio segmentation, not evidence that warranty or duty ratings transfer between ranges",
+      "buyerCheck": "Confirm the product's commercial-use warranty, duty cycle and after-sales terms rather than relying on brand familiarity."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Lavor combines a broad professional cleaning range with consumer-market reach inside Comet Group. Buyers should use that breadth for category comparison while requiring exact model, factory, origin, channel and service evidence.",
+    "competitorSlugs": ["comac", "ipc", "karcher", "nilfisk"]
+  },
+  "developments": [
+    {
+      "date": "2025",
+      "title": "Lavor marks 50 years",
+      "summary": "Lavor's official anniversary account reviews the business from its 1975 establishment through its international expansion and Comet Group integration.",
+      "sourceIds": ["lavor-50-years"]
+    },
+    {
+      "date": "2017",
+      "title": "Lavor integrates into Comet Group",
+      "summary": "The official Lavor anniversary article identifies 2017 as the integration of Lavor into Comet Group.",
+      "sourceIds": ["lavor-50-years"]
+    },
+    {
+      "date": "1975",
+      "title": "Lavorwash is established in Pegognaga",
+      "summary": "Lavor's official company page dates the company's establishment in Pegognaga, Mantua, to 1975.",
+      "sourceIds": ["lavor-company"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "lavor-company",
+      "title": "Company",
+      "publisher": "Lavorwash S.p.A.",
+      "url": "https://lavor.com/en/company/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lavor-50-years",
+      "title": "50 Years of Success: Happy Birthday Lavor",
+      "publisher": "Lavorwash S.p.A.",
+      "url": "https://blog.lavor.com/en/50-years-of-success-happy-birthday-lavor",
+      "publishedAt": "2025",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lavor-professional",
+      "title": "Lavor Professional",
+      "publisher": "Lavorwash S.p.A.",
+      "url": "https://lavor.com/en/professional/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "comet-cleaning",
+      "title": "Company",
+      "publisher": "Comet S.p.A.",
+      "url": "https://comet-cleaning.com/company",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T11:30:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T11:30:00+08:00"
+}

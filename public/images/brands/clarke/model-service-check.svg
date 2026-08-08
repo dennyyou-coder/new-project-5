@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Clarke commercial floorcare procurement checks</title>
+  <desc id="desc">A buyer checklist for Clarke model configuration, origin, warranty and local service evidence.</desc>
+  <rect width="1200" height="720" rx="38" fill="#172033"/>
+  <text x="70" y="84" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#fff">Verify the delivered Clarke machine</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="70" y="145" width="330" height="215" rx="26" fill="#ed1c24"/><text x="105" y="200" font-size="27" font-weight="700" fill="#fff">Application fit</text><text x="105" y="246" font-size="21" fill="#fff">floor type and soil</text><text x="105" y="284" font-size="21" fill="#fff">working width and tanks</text><text x="105" y="322" font-size="21" fill="#fff">battery and runtime</text>
+    <rect x="435" y="145" width="330" height="215" rx="26" fill="#34445b"/><text x="470" y="200" font-size="27" font-weight="700" fill="#fff">Machine evidence</text><text x="470" y="246" font-size="21" fill="#d9e2ef">model and serial</text><text x="470" y="284" font-size="21" fill="#d9e2ef">manufacturer and origin</text><text x="470" y="322" font-size="21" fill="#d9e2ef">manual and conformity</text>
+    <rect x="800" y="145" width="330" height="215" rx="26" fill="#34445b"/><text x="835" y="200" font-size="27" font-weight="700" fill="#fff">Support proof</text><text x="835" y="246" font-size="21" fill="#d9e2ef">authorized seller</text><text x="835" y="284" font-size="21" fill="#d9e2ef">warranty territory</text><text x="835" y="322" font-size="21" fill="#d9e2ef">parts and response time</text>
+    <rect x="70" y="410" width="1060" height="145" rx="28" fill="#f5f6f8"/><text x="110" y="468" font-size="27" font-weight="700" fill="#20242b">Do not generalize from the brand name</text><text x="110" y="515" font-size="22" fill="#596477">Tie manufacturer, factory, origin and warranty statements to the exact SKU and destination market.</text>
+  </g>
+  <text x="600" y="640" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#d9e2ef">The contract and serialized machine should support every material procurement claim.</text>
+</svg>

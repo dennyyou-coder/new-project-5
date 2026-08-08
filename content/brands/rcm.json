@@ -1,0 +1,149 @@
+{
+  "status": "published",
+  "slug": "rcm",
+  "name": "RCM",
+  "aliases": ["Raimondi Costruzioni Meccaniche", "RCM S.p.A.", "RCM Cleaning Machines"],
+  "legalName": "RCM S.p.A.",
+  "legalEntityNote": "RCM S.p.A. is the family-owned Italian manufacturer named by the official company profile and website. RCM's international dealers, distributors, importers, contracting sellers and service partners remain separate legal and transaction roles.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.rcm.it/en/",
+  "headline": "RCM industrial floor-cleaning machines and buyer checks",
+  "description": "A source-backed profile of RCM S.p.A., its family-owned Italian manufacturer identity, industrial sweepers and scrubber dryers, global dealer model, production claims and procurement checks.",
+  "metaDescription": "RCM profile: family-owned Italian manufacturer, sweepers, scrubber dryers, combined machines, dealer channels, origin and service checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with RCM. Company-level design and manufacturing statements do not prove the factory, origin or configuration of every model, component or destination-market unit.",
+  "headquarters": "Casinalbo, Modena, Italy",
+  "founded": "1967",
+  "heroImage": "/images/brands/rcm/hero-supra-industrial-floor.webp",
+  "heroImageAlt": "RCM Supra ride-on floor-cleaning machine on an industrial floor surface",
+  "heroSourceUrl": "https://rcm.it/wp-content/uploads/2023/11/supra-sito1.png",
+  "logoImage": "/images/brands/rcm/logo.webp",
+  "logoImageAlt": "RCM logo",
+  "logoSourceUrl": "https://www.rcm.it/wp-content/themes/rcm/images/logo-rcm.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/rcm/company-channel-boundary.svg",
+      "alt": "RCM manufacturer dealer importer and buyer responsibility boundary",
+      "caption": "RCM S.p.A. identifies itself as a family-owned Italian manufacturer, while dealers, importers, sellers and service partners remain separate transaction roles."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/rcm/model-productivity-service-check.svg",
+      "alt": "RCM machine productivity origin commissioning and service checklist",
+      "caption": "Catalogue specifications should be tested against the buyer's real floor, debris, shift, operator and local support conditions."
+    }
+  ],
+  "ownership": {
+    "summary": "RCM's official website and company profile describe RCM S.p.A. as a family-owned business led by the Raimondi family's fourth generation. The reviewed official materials do not identify a parent company. Distribution and service partners should not be presented as owners or as the manufacturer.",
+    "ownershipType": "Family-owned company"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Industrial sweepers",
+      "positioning": "Walk-behind and ride-on sweepers address indoor and outdoor debris collection across industrial, logistics and public environments.",
+      "buyerRelevance": "Match debris, dust class, filtration, hopper, dumping height, aisle width, gradients and power source to the site."
+    },
+    {
+      "name": "Scrubber dryers",
+      "positioning": "Walk-behind and ride-on scrubber dryers cover routine and heavy-duty hard-floor cleaning.",
+      "buyerRelevance": "Compare working width, brush system, tanks, traction, battery, realistic runtime, squeegee performance and chemical process."
+    },
+    {
+      "name": "Combined machines",
+      "positioning": "Combined sweeping and scrubbing platforms target larger areas where debris pickup and wet cleaning are integrated.",
+      "buyerRelevance": "Validate one-pass cleaning results, dust control, water recovery, maneuverability, refill and disposal workflow in a site trial."
+    },
+    {
+      "name": "Vacuums and single-disc machines",
+      "positioning": "Complementary vacuums and single-disc machines broaden the professional floor-maintenance offer.",
+      "buyerRelevance": "Confirm filtration, accessories, power standard, pads or brushes, consumables and local parts support."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "RCM's official company profile states that the company designs, manufactures and sells industrial and urban cleaning machines.",
+      "scope": "Company-level capability; it does not identify the production site or origin of every current model and component",
+      "buyerCheck": "Request the exact machine's manufacturer plate, serial number, production site, country of origin and declaration of conformity."
+    },
+    {
+      "evidence": "RCM identifies its base in the Modena area and describes continuous product development since 1967.",
+      "scope": "Corporate history and headquarters context rather than model-specific origin proof",
+      "buyerCheck": "Separate headquarters, design activity and manufacturing origin in the tender and supporting evidence."
+    },
+    {
+      "evidence": "Official product pages publish product families and model information for sweepers, scrubber dryers and combined machines.",
+      "scope": "Current published portfolio; exact configuration and documents can vary by model and destination",
+      "buyerCheck": "Archive the quoted model's datasheet, manual, parts list, battery or engine configuration and document revisions."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "RCM says it sells globally and supports customers through a worldwide dealer network.",
+      "scope": "Company-described channel model; dealer authorization, territory and capability vary",
+      "buyerCheck": "Confirm current dealer authorization, territory, contracting entity, importer and escalation path directly with RCM."
+    },
+    {
+      "evidence": "RCM describes network support including recommendation, training and assistance.",
+      "scope": "Published support model, not a guaranteed response time or parts stock in every destination",
+      "buyerCheck": "Document commissioning, operator training, technician coverage, parts inventory, response time and warranty labor terms."
+    },
+    {
+      "evidence": "Official materials position RCM machines across industrial, commercial and urban cleaning applications.",
+      "scope": "Company-described applications; actual productivity and cleaning outcome depend on site conditions",
+      "buyerCheck": "Run a documented acceptance test using representative debris, floor, gradients, aisle widths and shift duration."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: RCM competes as a specialist, family-owned Italian producer with depth in industrial sweepers, scrubber dryers and combined machines. Buyers should validate local dealer capability and model-level origin, configuration and productivity evidence.",
+    "competitorSlugs": ["comac", "dulevo", "hako", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2023",
+      "title": "RCM publishes its current company profile",
+      "summary": "The official company profile presents RCM's family ownership, Modena base, global sales and industrial-cleaning portfolio.",
+      "sourceIds": ["rcm-company-profile"]
+    },
+    {
+      "date": "1967",
+      "title": "RCM begins operations",
+      "summary": "RCM's official site dates the company's industrial and urban cleaning-machine activity to 1967.",
+      "sourceIds": ["rcm-home"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "rcm-home",
+      "title": "RCM Cleaning Machines",
+      "publisher": "RCM S.p.A.",
+      "url": "https://www.rcm.it/en/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "rcm-company-profile",
+      "title": "RCM Company Profile",
+      "publisher": "RCM S.p.A.",
+      "url": "https://www.rcm.it/wp-content/uploads/2023/05/company-profile-rcm.pdf",
+      "publishedAt": "2023",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "rcm-sweepers",
+      "title": "Industrial Sweepers",
+      "publisher": "RCM S.p.A.",
+      "url": "https://www.rcm.it/en/products/electric-sweeper/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "rcm-scrubber-dryers",
+      "title": "Industrial Scrubber Dryers",
+      "publisher": "RCM S.p.A.",
+      "url": "https://www.rcm.it/en/products/professional-scrubbers-dryer/",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T11:30:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T11:30:00+08:00"
+}

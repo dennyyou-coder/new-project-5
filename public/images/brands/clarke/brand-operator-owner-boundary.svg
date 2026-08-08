@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Clarke brand, Nilfisk operator and Freudenberg ownership boundary</title>
+  <desc id="desc">Clarke is a commercial floorcare brand presented by Nilfisk. Nilfisk Inc. is the named United States site entity, while Nilfisk is part of Freudenberg Home and Cleaning Solutions.</desc>
+  <rect width="1200" height="720" rx="38" fill="#f6f7f8"/>
+  <text x="70" y="82" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#20242b">Clarke: keep brand, operator and owner separate</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <rect x="80" y="155" width="285" height="135" rx="24" fill="#ed1c24"/><text x="222" y="214" font-size="38" font-weight="700" fill="#fff">CLARKE</text><text x="222" y="255" font-size="21" fill="#fff">commercial floorcare brand</text>
+    <path d="M365 222H455" stroke="#7f8996" stroke-width="6" marker-end="url(#arrow)"/>
+    <rect x="455" y="155" width="300" height="135" rx="24" fill="#243752"/><text x="605" y="211" font-size="30" font-weight="700" fill="#fff">Nilfisk Inc.</text><text x="605" y="252" font-size="20" fill="#d9e2ef">US site and channel entity</text>
+    <path d="M755 222H845" stroke="#7f8996" stroke-width="6" marker-end="url(#arrow)"/>
+    <rect x="845" y="135" width="275" height="175" rx="24" fill="#172033"/><text x="982" y="190" font-size="27" font-weight="700" fill="#fff">Nilfisk Group</text><text x="982" y="230" font-size="19" fill="#d9e2ef">part of FHCS</text><text x="982" y="265" font-size="19" fill="#d9e2ef">Freudenberg Group</text>
+    <rect x="140" y="385" width="920" height="185" rx="28" fill="#fff" stroke="#a9b1bc" stroke-width="4"/><text x="600" y="442" font-size="28" font-weight="700" fill="#20242b">Transaction responsibility remains order-specific</text><text x="600" y="492" font-size="22" fill="#596477">seller • importer • warranty provider • service station</text><text x="600" y="532" font-size="21" fill="#596477">Confirm each role on the quote, invoice and warranty document.</text>
+  </g>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#7f8996"/></marker></defs>
+</svg>
