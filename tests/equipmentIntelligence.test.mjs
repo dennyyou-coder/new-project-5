@@ -197,7 +197,7 @@ test("floor scrubber pilot meets evidence, relationship and image gates", async 
     (candidate) => candidate?.slug === "floor-scrubber"
   );
   assert.ok(floorScrubber);
-  assert.equal(floorScrubber.status, "draft");
+  assert.equal(floorScrubber.status, "published");
   assert.deepEqual(validateEquipmentProfile(floorScrubber, realPublishedBrandSlugs), []);
   assert.ok(floorScrubber.sources.length >= 5);
   assert.ok(floorScrubber.representativeModels.length >= 6);
@@ -235,10 +235,10 @@ test("floor scrubber pilot meets evidence, relationship and image gates", async 
   assert.match(mobileDiagramSource, /Family labels do not establish cross-model compatibility/);
 });
 
-test("draft floor scrubber is excluded from production sitemap discovery", () => {
+test("published floor scrubber is included in production sitemap discovery", () => {
   const urls = sitemap().map(({ url }) => url);
-  assert.equal(urls.some((url) => url.endsWith("/equipment/floor-scrubber")), false);
-  assert.equal(urls.some((url) => url.endsWith("/equipment")), false);
+  assert.equal(urls.some((url) => url.endsWith("/equipment/floor-scrubber")), true);
+  assert.equal(urls.some((url) => url.endsWith("/equipment")), true);
 });
 
 test("equipment layout avoids empty title columns and balances odd card grids", () => {
