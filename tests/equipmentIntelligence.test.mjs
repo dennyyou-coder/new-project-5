@@ -250,7 +250,7 @@ test("second equipment batch meets evidence relationship and visual gates", asyn
   for (const slug of ["floor-sweeper", "carpet-extractor", "wet-dry-vacuum"]) {
     const profile = profiles.find((candidate) => candidate?.slug === slug);
     assert.ok(profile, `${slug} profile should exist`);
-    assert.equal(profile.status, "draft");
+    assert.equal(profile.status, "published");
     assert.deepEqual(validateEquipmentProfile(profile, realPublishedBrandSlugs), []);
     assert.ok(profile.sources.length >= 5);
     assert.ok(profile.representativeModels.length >= 6);
@@ -286,6 +286,13 @@ test("second equipment batch meets evidence relationship and visual gates", asyn
     assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
     assert.match(mobileDiagramSource, /<svg/);
     assert.match(mobileDiagramSource, /Family labels do not establish cross-model compatibility/);
+  }
+});
+
+test("published second equipment batch is included in production sitemap discovery", () => {
+  const urls = sitemap().map(({ url }) => url);
+  for (const slug of ["floor-sweeper", "carpet-extractor", "wet-dry-vacuum"]) {
+    assert.equal(urls.some((url) => url.endsWith(`/equipment/${slug}`)), true);
   }
 });
 
