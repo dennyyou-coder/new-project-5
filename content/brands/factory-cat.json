@@ -1,0 +1,136 @@
+{
+  "status": "published",
+  "slug": "factory-cat",
+  "name": "Factory Cat",
+  "aliases": ["FactoryCat", "Factory Cat Floor Equipment"],
+  "legalEntityNote": "Factory Cat is a commercial floor-equipment brand manufactured and marketed by RPS Corporation. RPS says it was incorporated in Wisconsin in 1986 and remains family-owned. Factory Cat is not the CAT or Caterpillar brand; the applicable distributor, seller, importer, service and warranty entity must still be identified for each market.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://factorycat.com/",
+  "headline": "Factory Cat, RPS Corporation and U.S. industrial floor-equipment buyer checks",
+  "description": "A source-backed profile of Factory Cat as an RPS Corporation brand, covering scrubbers, sweepers, Racine operations, distributor support and model-level sourcing checks.",
+  "metaDescription": "Factory Cat profile: RPS Corporation ownership, industrial scrubbers and sweepers, Racine operations, channels and procurement checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Factory Cat or RPS Corporation. Company-level sourcing and manufacturing statements do not establish the origin, manufacturer, seller, importer or warranty provider for every SKU.",
+  "headquarters": "Racine, Wisconsin, United States (RPS Corporation)",
+  "founded": "1986 (RPS Corporation)",
+  "heroImage": "/images/brands/factory-cat/hero-mag-hd-industrial-cleaning.webp",
+  "heroImageAlt": "Factory Cat MAG-HD scrubber cleaning an industrial vehicle-service floor",
+  "heroSourceUrl": "https://rps-cms-app-public.nyc3.digitaloceanspaces.com/FC_MAG_HD_CYLINDRICAL_CLEANING_65_04e81160c3.jpg",
+  "logoImage": "/images/brands/factory-cat/logo.webp",
+  "logoImageAlt": "Factory Cat logo",
+  "logoSourceUrl": "https://factorycat.com/_next/static/media/full_fc_logo.180f6712.png",
+  "contentVisuals": [
+    {
+      "placement": "portfolio",
+      "src": "/images/brands/factory-cat/floor-equipment-lineup.webp",
+      "alt": "Factory Cat commercial scrubber and sweeper lineup",
+      "caption": "Factory Cat presents walk-behind and ride-on scrubbers and sweepers across a broad industrial floor-equipment range."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/factory-cat/rebel-ride-on-scrubber.webp",
+      "alt": "Factory Cat Rebel ride-on floor scrubber",
+      "caption": "Factory Cat offers configurable ride-on platforms such as Rebel; buyers should verify the exact deck, battery and option package."
+    }
+  ],
+  "ownership": {
+    "summary": "Factory Cat's official website says the equipment is built by RPS Corporation, a Wisconsin corporation founded in 1986. RPS describes itself as a second-generation, family-owned manufacturer. This supports RPS as the operating and manufacturing company behind Factory Cat, while regional sales and warranty responsibilities may sit with separate distributors or dealers.",
+    "parentCompany": "RPS Corporation"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Walk-behind scrubbers",
+      "positioning": "MicroMini, Mini-HD, Micro-HD and MAG-HD platforms cover compact through heavy-duty floor scrubbing.",
+      "buyerRelevance": "Match cleaning width, deck type, tank capacity, batteries, charger, squeegee and practical productivity to the site."
+    },
+    {
+      "name": "Ride-on scrubbers",
+      "positioning": "GTR, GTX, Pilot, XR and related platforms address larger industrial and commercial facilities.",
+      "buyerRelevance": "Verify turning radius, ramps, operator visibility, run time, charging infrastructure, service access and transport constraints."
+    },
+    {
+      "name": "Sweepers and specialty configurations",
+      "positioning": "Factory Cat adds industrial sweepers and configurable deck, battery and accessory packages.",
+      "buyerRelevance": "Confirm dust control, filtration, debris type, brushes, approved options and exact configured bill of materials."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Factory Cat states that RPS Corporation manufactures Factory Cat equipment in Racine, Wisconsin.",
+      "scope": "Company and brand-level statement; not proof that every component or finished SKU has U.S. origin",
+      "buyerCheck": "Inspect the exact machine nameplate, serial record, country-of-origin documentation and supplier declaration."
+    },
+    {
+      "evidence": "RPS says it performs design, prototyping and testing and conducts fabrication and rotational molding activities in house.",
+      "scope": "RPS operational capabilities described on the official Factory Cat about page",
+      "buyerCheck": "Ask which of these stages apply to the quoted model and which assemblies, batteries, motors or controls are externally sourced."
+    },
+    {
+      "evidence": "RPS states that more than 95% of its components are sourced from American suppliers.",
+      "scope": "Company-reported aggregate sourcing statement, not a model-level origin certification",
+      "buyerCheck": "Do not convert the aggregate percentage into a specific SKU origin claim; request model-level component and customs evidence."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Factory Cat offers demonstrations and routes customers through a distributor-based sales model.",
+      "scope": "Official North American website route to market; availability varies by territory",
+      "buyerCheck": "Verify the authorized distributor, sales territory, invoicing entity and demonstration configuration."
+    },
+    {
+      "evidence": "Factory Cat highlights distributor training, parts availability and technical support as parts of its commercial offer.",
+      "scope": "Company-level support proposition",
+      "buyerCheck": "Obtain technician coverage, parts stocking, response times, escalation contacts and loan-machine terms in writing."
+    },
+    {
+      "evidence": "Official product literature provides model specifications and documentation for the Factory Cat range.",
+      "scope": "Named models and document revisions",
+      "buyerCheck": "Archive the exact specification sheet, manual, options list and warranty terms incorporated into the purchase contract."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Factory Cat competes as an industrial floor-equipment brand combining a broad red-machine portfolio with RPS's Wisconsin engineering and distributor support. Buyers should distinguish the brand from RPS Corporation and from unrelated CAT branding, then verify each configured machine and local service route.",
+    "competitorSlugs": ["minuteman", "powerboss", "tennant", "tornado-industries"]
+  },
+  "developments": [
+    {
+      "date": "1986",
+      "title": "RPS Corporation is established in Wisconsin",
+      "summary": "Factory Cat's official company page dates RPS Corporation's incorporation and family-owned manufacturing history to 1986.",
+      "sourceIds": ["factory-cat-about"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "factory-cat-about",
+      "title": "About Factory Cat and RPS Corporation",
+      "publisher": "Factory Cat",
+      "url": "https://factorycat.com/about",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "factory-cat-home",
+      "title": "Factory Cat Industrial Floor Cleaning Equipment",
+      "publisher": "Factory Cat",
+      "url": "https://factorycat.com/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "factory-cat-full-line",
+      "title": "Factory Cat Full Line Brochure",
+      "publisher": "Factory Cat",
+      "url": "https://assets.factorycat.com/documentation/full-line-brochures/FC-FULLLINE-V2-BROCHURE-EN.pdf",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "rps-home",
+      "title": "RPS Corporation",
+      "publisher": "RPS Corporation",
+      "url": "https://www.rpscorporation.com/",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T15:45:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T15:45:00+08:00"
+}

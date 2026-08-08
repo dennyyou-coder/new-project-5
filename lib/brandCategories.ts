@@ -225,6 +225,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "comac",
       "dulevo",
       "ecovacs",
+      "factory-cat",
       "fimap",
       "fiorentini",
       "gausium",
@@ -237,6 +238,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "lionsbot",
       "minuteman",
       "nilfisk",
+      "nss",
       "numatic",
       "oertzen",
       "oreck",
@@ -245,6 +247,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "rcm",
       "taski",
       "tennant",
+      "tornado-industries",
       "truvox",
       "wetrok"
     ],
@@ -254,6 +257,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "columbus",
       "comac",
       "dulevo",
+      "factory-cat",
       "fimap",
       "fiorentini",
       "gausium",
@@ -266,6 +270,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "lionsbot",
       "minuteman",
       "nilfisk",
+      "nss",
       "numatic",
       "oertzen",
       "powerboss",
@@ -273,6 +278,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "rcm",
       "taski",
       "tennant",
+      "tornado-industries",
       "truvox",
       "wetrok"
     ]
