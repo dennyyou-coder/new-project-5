@@ -6,6 +6,10 @@ import {
 } from "@/lib/brands";
 import { buildBrandCategorySitemapEntries } from "@/lib/brandCategories";
 import { getInsights } from "@/lib/content";
+import {
+  buildEquipmentSitemapEntries,
+  getPublishedEquipmentProfiles
+} from "@/lib/equipment";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
 
 const baseUrl = "https://worldcleanbiz.com";
@@ -16,11 +20,14 @@ const guideRoutes = GUIDE_TYPE_CONFIG.map(({ href }) => href);
 export default function sitemap(): MetadataRoute.Sitemap {
   const insights = getInsights();
   const profiles = getPublishedBrandProfiles(insights);
+  const publishedBrandSlugs = new Set(profiles.map(({ slug }) => slug));
+  const equipmentProfiles = getPublishedEquipmentProfiles(publishedBrandSlugs);
   const staticRoutes = [
     "",
     "/blog",
     "/blog/archive",
     "/brands",
+    ...(equipmentProfiles.length > 0 ? ["/equipment"] : []),
     "/guides",
     ...guideRoutes,
     "/sourcing",
@@ -47,6 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...buildBrandSitemapEntries(profiles, baseUrl),
     ...buildBrandCategorySitemapEntries(profiles, baseUrl),
+    ...buildEquipmentSitemapEntries(equipmentProfiles, baseUrl),
     ...insights.map((article) => ({
       url: `${baseUrl}/blog/${article.slug}`,
       lastModified: article.publishedAt ? new Date(article.publishedAt) : article.date ? new Date(article.date) : new Date()

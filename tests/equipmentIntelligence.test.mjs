@@ -13,6 +13,7 @@ import {
 } from "../lib/equipment.ts";
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
 import { getInsights } from "../lib/content.ts";
+import sitemap from "../app/sitemap.ts";
 
 const evidence = {
   evidence: "The official manual describes the cleaning system.",
@@ -170,4 +171,10 @@ test("floor scrubber pilot meets evidence, relationship and image gates", async 
   assert.equal(heroMetadata.format, "webp");
   assert.ok((heroMetadata.width ?? 0) >= 1600);
   assert.ok((heroMetadata.height ?? 0) >= 1000);
+});
+
+test("draft floor scrubber is excluded from production sitemap discovery", () => {
+  const urls = sitemap().map(({ url }) => url);
+  assert.equal(urls.some((url) => url.endsWith("/equipment/floor-scrubber")), false);
+  assert.equal(urls.some((url) => url.endsWith("/equipment")), false);
 });
