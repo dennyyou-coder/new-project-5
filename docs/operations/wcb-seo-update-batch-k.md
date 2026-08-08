@@ -10,9 +10,9 @@ This operational record covers three existing high-impression ownership and manu
 
 | Order | Updated page | Existing slug | Main update | Status |
 |---:|---|---|---|---|
-| 1 | Who Makes Philips Vacuum Cleaners? Versuni and Philips Licensing Explained | `who-makes-philips-vacuum-cleaners-versuni` | Shorter result title, clearer first-screen answer and current 2024 Versuni supply-chain disclosure | `local_verified` |
-| 2 | Who Owns Greenworks? Globe Tools, STIHL and Manufacturing Explained | `who-owns-greenworks-globe-stihl` | Search-friendly title and an explicit who-makes answer without changing ownership conclusions | `local_verified` |
-| 3 | Who Owns WORX? Positec, Landroid and Manufacturing Explained | `who-owns-worx-positec-landroid-manufacturing` | Explicit who-makes answer and corrected publication status | `local_verified` |
+| 1 | Who Makes Philips Vacuum Cleaners? Versuni and Philips Licensing Explained | `who-makes-philips-vacuum-cleaners-versuni` | Shorter result title, clearer first-screen answer and current 2024 Versuni supply-chain disclosure | `published_verified` |
+| 2 | Who Owns Greenworks? Globe Tools, STIHL and Manufacturing Explained | `who-owns-greenworks-globe-stihl` | Search-friendly title and an explicit who-makes answer without changing ownership conclusions | `published_verified` |
+| 3 | Who Owns WORX? Positec, Landroid and Manufacturing Explained | `who-owns-worx-positec-landroid-manufacturing` | Explicit who-makes answer and corrected publication status | `published_verified` |
 
 ## Search and collision decision
 
@@ -68,4 +68,8 @@ This operational record covers three existing high-impression ownership and manu
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- Ready PR: #64.
+- Squash merge on `main`: `7c038177d3f5fca3e2faaa0b1e46ef009c7ba9d8`.
+- Git-linked Vercel production deployment: `dpl_FKeHhkkF55mj4vwMabioxMb65AkL`, status `READY`.
+- Live verification passed for all three unchanged URLs: HTTP 200, expected title, H1, description, canonical, BlogPosting schema, article visuals, ownership-guide discovery and sitemap entry.
+- Desktop and 390px mobile rendering passed with no horizontal overflow and no production console errors.
