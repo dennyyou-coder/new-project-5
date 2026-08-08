@@ -14,7 +14,7 @@
   "headquarters": "Casinalbo, Modena, Italy",
   "founded": "1967",
   "heroImage": "/images/brands/rcm/hero-supra-industrial-floor.webp",
-  "heroImageAlt": "RCM Supra ride-on industrial floor-cleaning machine on a warehouse floor",
+  "heroImageAlt": "RCM Supra ride-on floor-cleaning machine on an industrial floor surface",
   "heroSourceUrl": "https://rcm.it/wp-content/uploads/2023/11/supra-sito1.png",
   "logoImage": "/images/brands/rcm/logo.webp",
   "logoImageAlt": "RCM logo",
@@ -34,8 +34,8 @@
     }
   ],
   "ownership": {
-    "summary": "RCM's official website and company profile describe RCM S.p.A. as an independent, family-owned business led by the Raimondi family's fourth generation. The reviewed official materials do not identify a parent company. Distribution and service partners should not be presented as owners or as the manufacturer.",
-    "ownershipType": "Family-owned independent company"
+    "summary": "RCM's official website and company profile describe RCM S.p.A. as a family-owned business led by the Raimondi family's fourth generation. The reviewed official materials do not identify a parent company. Distribution and service partners should not be presented as owners or as the manufacturer.",
+    "ownershipType": "Family-owned company"
   },
   "leadership": [],
   "productPortfolio": [
@@ -132,14 +132,14 @@
       "id": "rcm-sweepers",
       "title": "Industrial Sweepers",
       "publisher": "RCM S.p.A.",
-      "url": "https://www.rcm.it/en/products/industrial-sweepers/",
+      "url": "https://www.rcm.it/en/products/electric-sweeper/",
       "accessedAt": "2026-08-08"
     },
     {
       "id": "rcm-scrubber-dryers",
       "title": "Industrial Scrubber Dryers",
       "publisher": "RCM S.p.A.",
-      "url": "https://www.rcm.it/en/products/industrial-scrubber-dryers/",
+      "url": "https://www.rcm.it/en/products/professional-scrubbers-dryer/",
       "accessedAt": "2026-08-08"
     }
   ],

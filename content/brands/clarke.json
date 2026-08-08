@@ -13,7 +13,7 @@
   "headquarters": "Nilfisk Inc.: Brooklyn Park, Minnesota, United States",
   "founded": "1916",
   "heroImage": "/images/brands/clarke/hero-clarke-supermarket.webp",
-  "heroImageAlt": "Clarke ride-on floor scrubber cleaning a supermarket aisle",
+  "heroImageAlt": "Clarke walk-behind floor scrubber cleaning a supermarket aisle",
   "heroSourceUrl": "https://www.nilfisk.com/media/dwmj0jbp/clarke-hero.jpg",
   "logoImage": "/images/brands/clarke/logo.webp",
   "logoImageAlt": "Clarke logo",
@@ -33,7 +33,7 @@
     }
   ],
   "ownership": {
-    "summary": "Nilfisk's official family-of-brands pages present Clarke as a Nilfisk commercial floorcare brand. In April 2026, Freudenberg Home and Cleaning Solutions completed its takeover offer for Nilfisk and stated that Nilfisk had become part of FHCS and the Freudenberg Group. This ownership chain does not determine the legal manufacturer, seller, importer or warranty provider of every Clarke SKU.",
+    "summary": "Nilfisk's official family-of-brands pages present Clarke as a Nilfisk commercial floorcare brand. Nilfisk's April 2026 announcement states that, after completion of the takeover offer, Nilfisk became part of Freudenberg Home and Cleaning Solutions. This ownership chain does not determine the legal manufacturer, seller, importer or warranty provider of every Clarke SKU.",
     "parentCompany": "Nilfisk Group (Freudenberg Home and Cleaning Solutions)"
   },
   "leadership": [
@@ -102,8 +102,8 @@
     {
       "date": "2026-04-15",
       "title": "Freudenberg completes takeover offer for Nilfisk",
-      "summary": "Freudenberg Home and Cleaning Solutions announced completion of its takeover offer and stated that Nilfisk had become part of FHCS and the Freudenberg Group.",
-      "sourceIds": ["freudenberg-takeover"]
+      "summary": "Nilfisk announced that it had become part of Freudenberg Home and Cleaning Solutions after completion of the takeover offer; the offer settled for shareholders representing about 94% of the share capital.",
+      "sourceIds": ["nilfisk-takeover"]
     },
     {
       "date": "1916",
@@ -139,6 +139,14 @@
       "title": "Clarke MA50 15B 15-inch Scrubber",
       "publisher": "Nilfisk Inc.",
       "url": "https://www.nilfisk.com/en-us/professional/products/floor-cleaning/floor-scrubbers/walk-behind-floor-scrubbers/small/clarke-ma50-15b-15inch-scrubber%2BCLARKE380B/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "nilfisk-takeover",
+      "title": "Nilfisk Enters a New Phase as Part of Freudenberg After Completion of Takeover Offer",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/global/professional/news-and-articles/nilfisk-enters-a-new-phase-as-part-of-freudenberg-after-completion-of-takeover-offer/",
+      "publishedAt": "2026-04-15",
       "accessedAt": "2026-08-08"
     },
     {

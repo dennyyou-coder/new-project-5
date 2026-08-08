@@ -1137,6 +1137,10 @@ test("commercial-cleaning batch eighteen publishes Clarke, Lavor and RCM without
   assert.equal(profilesBySlug.get("clarke").legalName, undefined);
   assert.match(profilesBySlug.get("clarke").legalEntityNote, /Nilfisk Inc\./i);
   assert.match(profilesBySlug.get("clarke").ownership.parentCompany, /Nilfisk/i);
+  assert.match(
+    profilesBySlug.get("clarke").ownership.parentCompany,
+    /Freudenberg Home and Cleaning Solutions/i
+  );
 
   assert.equal(profilesBySlug.get("lavor").schemaEntityType, "Brand");
   assert.equal(profilesBySlug.get("lavor").legalName, undefined);
