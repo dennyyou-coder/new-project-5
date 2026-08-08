@@ -45,4 +45,8 @@ This record covers priority 25 and the priorities 21–25 production quality gat
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment, Mac Tools live verification and the priorities 21–25 quality-gate result after production passes.
+- GitHub PR: `#81`.
+- Squash-merge commit: `268afe8fafdfbc92232b3232b22afbdfd2aa6ee1`.
+- Git-linked Vercel production deployment: `dpl_9ZrBYiKgEXAKhfSKp6wLkDzGLL8q`, status `READY` with the `worldcleanbiz.com` and `www.worldcleanbiz.com` aliases and no alias error.
+- The live Mac Tools route returned HTTP 200 and passed desktop 1440px plus mobile 390px checks for title, H1, description, canonical, BlogPosting schema, direct manufacturing answer and zero horizontal overflow.
+- The production quality gate for priorities 21–25 passed all ten desktop/mobile page combinations, 15 unique image URLs, 19 unique internal links, Ownership Guide pages 2, 2, 7, 3 and 4, sitemap inclusion and browser-console review for Breville/Sage, GARDENA, Hayward, Nilfisk and Mac Tools.
