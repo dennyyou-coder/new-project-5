@@ -1,0 +1,811 @@
+{
+  "status": "published",
+  "slug": "hot-water-pressure-washer",
+  "name": "Hot-Water Pressure Washer",
+  "aliases": [
+    "hot water high-pressure cleaner",
+    "heated pressure washer",
+    "professional hot-water power washer"
+  ],
+  "definition": "A professional pressure washer with an integrated or manufacturer-defined water-heating system that supplies pressurised hot water or a model-specific steam stage through a rated pump, hose, trigger gun, lance and nozzle.",
+  "includedScope": [
+    "Mobile professional hot-water high-pressure cleaners",
+    "Oil-fired, electrically heated and engine-driven configurations"
+  ],
+  "excludedScope": [
+    "Cold-water machines connected to an unverified external heat source",
+    "Separate hot-box modules, steam-only generators and vehicle wash tunnels",
+    "Water-jet cutting or operation above the exact machine and accessory ratings"
+  ],
+  "primaryApplications": [
+    "Fleet and heavy-equipment degreasing",
+    "Agriculture and food-area washdown where approved",
+    "Industrial floor, tank and component cleaning",
+    "Workshops and transport facilities"
+  ],
+  "headline": "Hot-water pressure washer heating systems, temperature, pressure and buyer checks",
+  "description": "This profile separates pump drive from heat source and explains temperature, pressure, flow, fuel or electrical demand, exhaust, scale control and rated spray-system verification.",
+  "metaDescription": "Hot-water pressure washer guide covering oil-fired and electric heating, pressure, flow, temperature, models, components and buyer checks.",
+  "disclaimer": "This independent category reference is not operating, surface, chemical, hygiene or safety advice. Hot pressurised water, steam, fuel, exhaust and chemicals can cause severe injury or damage. Confirm the current manual, exact configuration, utilities, ventilation, rated accessories and local rules before procurement or use.",
+  "heroImage": "/images/equipment/hot-water-pressure-washer/hero.webp",
+  "heroImageAlt": "Operator using a Nilfisk hot-water pressure washer to clean heavy agricultural equipment",
+  "heroImageCaption": "Official Nilfisk application image showing pressure washing of heavy agricultural equipment; the exact temperature, pressure, runoff and surface controls remain task-specific.",
+  "heroSourceUrl": "https://www.nilfisk.com/product-images-1920/MH3-8-agri1-ps-Original-JLUTCHD.webp",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/hot-water-pressure-washer/type-format.webp",
+      "alt": "Kärcher HDS 3.0/20-4 Ea/Eg hot-water pressure washer",
+      "caption": "Official Kärcher product image illustrating an electric-pump, diesel-heated mobile format.",
+      "sourceUrl": "https://s1.kaercher-media.com/mam/11091530/mainproduct/be197cc4-7af9-48e2-9c23-94c091841903/d0.jpg"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/hot-water-pressure-washer/application-use.webp",
+      "alt": "Operator pressure washing a commercial tanker vehicle",
+      "caption": "Official Nilfisk application image of commercial vehicle cleaning; asset-maker restrictions and wastewater controls must be verified.",
+      "sourceUrl": "https://www.nilfisk.com/product-images-1920/MH3-8-auto5-ps-Original-JLUTTEP.webp"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/hot-water-pressure-washer/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/hot-water-pressure-washer/component-verification-map-mobile.svg",
+      "alt": "WCB hot-water pressure washer component verification map",
+      "caption": "WCB diagram separating water, pump, heater, fuel or electrical, spray-system and runoff checks. It does not establish part compatibility.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "ipc-pwh21",
+        "oertzen-h120"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "Integrated or manufacturer-defined water-heating system",
+      "evidence": "Reviewed official ranges identify an onboard boiler, electric heater or other defined heat system.",
+      "scope": "Named products; separate aftermarket hot boxes are excluded.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "ipc-pwh21",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Two energy paths",
+      "value": "Pump drive and water heating may use different energy sources",
+      "evidence": "Official products combine electric or engine pump drive with diesel-fired or electric heating in different ways.",
+      "scope": "Exact regional configuration.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Temperature boundary",
+      "value": "Maximum water and steam-stage temperatures are model-specific",
+      "evidence": "Manufacturer sources publish distinct water-temperature or steam-stage limits.",
+      "scope": "Exact model, mode, flow and accessories.",
+      "sourceIds": [
+        "karcher-hdse",
+        "nilfisk-mh40",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Buyer verification",
+      "value": "Match pressure, flow, temperature, fuel or circuit, exhaust, water treatment and spray equipment",
+      "evidence": "Official specifications use configuration-specific utility and performance boundaries.",
+      "scope": "Quoted product number and actual site.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "ipc-pwh21",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Water preparation",
+      "componentFamily": "Inlet, filter and scale-control system",
+      "role": "Supplies water within cleanliness, pressure, flow and hardness limits.",
+      "evidence": "Official pages identify header tanks, filters or scale-control arrangements.",
+      "scope": "Exact water supply and chemistry.",
+      "sourceIds": [
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Pressure generation",
+      "componentFamily": "Motor or engine, pump and unloader",
+      "role": "Raises water pressure and controls bypass or stop behaviour.",
+      "evidence": "Manufacturers publish pump-drive and control details.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "karcher-hds30",
+        "nilfisk-mh40",
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Heat generation",
+      "componentFamily": "Boiler, burner or electric heater",
+      "role": "Raises outlet temperature within the selected mode.",
+      "evidence": "Official sources distinguish diesel-fired and electric heating.",
+      "scope": "No heat-output equivalence is inferred.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Hot-water transfer",
+      "componentFamily": "Rated hose, gun, lance and nozzle",
+      "role": "Contains and directs pressurised hot water or approved steam-stage output.",
+      "evidence": "Official product systems list model-specific spray equipment and operating modes.",
+      "scope": "Every component must match pressure and temperature.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "ipc-pwh21",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 5,
+      "name": "Runoff and shutdown",
+      "componentFamily": "Drainage, cooldown and pressure relief",
+      "role": "Controls contaminated water and leaves the system in its prescribed safe state.",
+      "evidence": "Safety and manufacturer sources define machine controls; site drainage remains buyer-managed.",
+      "scope": "Exact task and jurisdiction.",
+      "sourceIds": [
+        "iec-pressure-safety",
+        "karcher-hds30",
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Oil-fired mobile",
+      "taskScale": "Fleet, agriculture and industrial routes",
+      "operatorRelationship": "Operator moves the washer and handles fuel, hose, gun and lance",
+      "spaceConstraints": "Fuel storage, exhaust separation, water and electrical or engine supply",
+      "limitations": "Heating fuel and pump power are separate planning loads.",
+      "evidence": "Official ranges show mobile oil-fired formats.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "karcher-hds30",
+        "nilfisk-mh40",
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Electrically heated",
+      "taskScale": "Indoor or exhaust-restricted locations with suitable electrical infrastructure",
+      "operatorRelationship": "Operator manages high electrical load and the spray system",
+      "spaceConstraints": "Voltage, phase, circuit capacity and cable routing",
+      "limitations": "No-exhaust heating does not remove steam, heat or wastewater controls.",
+      "evidence": "Kärcher describes an electrically heated special-class model for locations where exhaust gases are undesirable.",
+      "scope": "Reviewed 24 kW configuration.",
+      "sourceIds": [
+        "karcher-hdse"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Compact commercial trolley",
+      "taskScale": "Smaller commercial duties and service routes",
+      "operatorRelationship": "Operator works from a compact mobile chassis",
+      "spaceConstraints": "Water, power or fuel, drainage and service access",
+      "limitations": "Compact dimensions do not establish light duty or universal indoor suitability.",
+      "evidence": "Official sources cover compact commercial hot-water configurations.",
+      "scope": "Named products.",
+      "sourceIds": [
+        "ipc-pwh21",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Working pressure",
+      "purchasingMeaning": "Hydraulic pressure at the stated operating configuration",
+      "reportingBoundary": "Working, maximum and unloading values may differ",
+      "comparisonCaution": "Do not rank by maximum pressure alone.",
+      "evidence": "Official sources report configuration-specific pressure.",
+      "scope": "Named products.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "ipc-pwh21",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Water flow",
+      "purchasingMeaning": "Rinsing volume and an input to heating demand",
+      "reportingBoundary": "Maximum, rated and effective values may use different conditions",
+      "comparisonCaution": "Compare at matched pressure and temperature modes.",
+      "evidence": "Manufacturers publish litres per hour or gallons per minute.",
+      "scope": "Source-specific methods.",
+      "sourceIds": [
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Outlet temperature",
+      "purchasingMeaning": "Thermal input available for the approved soil and surface",
+      "reportingBoundary": "Water and steam stages can use different flow and pressure",
+      "comparisonCaution": "Maximum temperature does not prove better cleaning or surface suitability.",
+      "evidence": "Official sources publish model- and mode-specific temperature claims.",
+      "scope": "Exact machine and mode.",
+      "sourceIds": [
+        "karcher-hdse",
+        "oertzen-h120",
+        "nilfisk-mh40"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Heating energy",
+      "purchasingMeaning": "Fuel or electrical infrastructure and operating cost",
+      "reportingBoundary": "Burner fuel, electric heating and pump-drive power are separate",
+      "comparisonCaution": "Motor input cannot be used as boiler efficiency.",
+      "evidence": "Official products disclose distinct drive and heating systems.",
+      "scope": "Exact regional configuration.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hose and nozzle envelope",
+      "purchasingMeaning": "Safe reach and jet formation at rated pressure and temperature",
+      "reportingBoundary": "Included accessories vary by product code",
+      "comparisonCaution": "Visual fit does not establish pressure-temperature approval.",
+      "evidence": "Manufacturer documentation identifies model-specific spray systems.",
+      "scope": "No cross-model compatibility.",
+      "sourceIds": [
+        "iec-pressure-safety",
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Oily fleet and equipment soil",
+      "wcbAssessment": "A witnessed trial should compare the lowest effective temperature, pressure, flow and chemistry.",
+      "assessment": "A witnessed trial should compare the lowest effective temperature, pressure, flow and chemistry.",
+      "basis": "Official automotive, agriculture and equipment-cleaning positioning.",
+      "limitations": "No asset-maker approval or degreasing result is implied.",
+      "buyerAction": "Record soil, surface, temperature, nozzle, distance, time, water and chemical use.",
+      "evidence": "Manufacturers position named machines for vehicle, agriculture or industrial cleaning.",
+      "scope": "Approved surfaces and runoff controls.",
+      "sourceIds": [
+        "karcher-hds30",
+        "nilfisk-mh40",
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Indoor hygiene or food-adjacent areas",
+      "wcbAssessment": "Electric heating may remove burner exhaust but does not prove hygienic efficacy or food-area authorization.",
+      "assessment": "Electric heating may remove burner exhaust but does not prove hygienic efficacy or food-area authorization.",
+      "basis": "Official exhaust-restricted application positioning.",
+      "limitations": "No disinfection, food-contact or microbiological result is established.",
+      "buyerAction": "Obtain written site, chemistry, temperature-contact and sanitation requirements.",
+      "evidence": "Kärcher positions electric heating for hygiene areas and other exhaust-sensitive locations.",
+      "scope": "Named model and local requirements.",
+      "sourceIds": [
+        "karcher-hdse"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Dedicated wash bay",
+      "wcbAssessment": "Utility capacity, ventilation, scale control and wastewater handling should be designed as one system.",
+      "assessment": "Utility capacity, ventilation, scale control and wastewater handling should be designed as one system.",
+      "basis": "Official mobile and stationary system architectures.",
+      "limitations": "No facility design approval is provided.",
+      "buyerAction": "Have qualified parties verify water, power, fuel, flue, drainage and service clearances.",
+      "evidence": "Official sources describe commercial and fixed-use architectures.",
+      "scope": "Actual facility.",
+      "sourceIds": [
+        "oertzen-h120",
+        "ipc-pwh21"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Pump and unloader",
+      "role": "Generates and regulates high-pressure flow.",
+      "variants": [
+        "Axial or in-line piston pump",
+        "Flow- or pressure-controlled stop system"
+      ],
+      "criticalChecks": [
+        "Pump part number",
+        "Working pressure and flow",
+        "Seal temperature rating",
+        "Service interval"
+      ],
+      "evidence": "Official sources describe product-specific pumps and controls.",
+      "scope": "Family labels do not establish cross-model compatibility.",
+      "sourceIds": [
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Heating system",
+      "role": "Transfers fuel or electrical energy into the water stream.",
+      "variants": [
+        "Oil-fired boiler",
+        "Electric resistance heater",
+        "Model-defined steam stage"
+      ],
+      "criticalChecks": [
+        "Heat source",
+        "Rated output temperature",
+        "Fuel or circuit",
+        "Flue and service access"
+      ],
+      "evidence": "Manufacturer pages identify distinct heat architectures.",
+      "scope": "Exact model and regional version.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Scale and water treatment",
+      "role": "Protects heater and hydraulic paths from unsuitable supply water.",
+      "variants": [
+        "Inlet filtration",
+        "Dosing or anti-scale system",
+        "Header tank"
+      ],
+      "criticalChecks": [
+        "Water hardness limit",
+        "Consumable part number",
+        "Dosing instruction",
+        "Winterisation"
+      ],
+      "evidence": "Official pages identify scale-protection features.",
+      "scope": "Site water quality and exact system.",
+      "sourceIds": [
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hot-rated spray system",
+      "role": "Transfers and controls pressurised heated water.",
+      "variants": [
+        "High-pressure hose",
+        "Trigger gun and lance",
+        "Fan or rotary nozzle"
+      ],
+      "criticalChecks": [
+        "Pressure rating",
+        "Temperature rating",
+        "Coupling and product code",
+        "Recoil and PPE"
+      ],
+      "evidence": "Manufacturer sources list exact spray systems.",
+      "scope": "No visual or cross-brand fit inference.",
+      "sourceIds": [
+        "iec-pressure-safety",
+        "karcher-hds30",
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Fuel, electrical and exhaust system",
+      "role": "Supplies pump drive and heat while controlling combustion or circuit loads.",
+      "variants": [
+        "Electric pump plus oil burner",
+        "All-electric heating",
+        "Engine-driven pump"
+      ],
+      "criticalChecks": [
+        "Voltage and phase",
+        "Fuel type and tank",
+        "Ventilation or flue",
+        "Local emissions rules"
+      ],
+      "evidence": "Official sources distinguish energy configurations.",
+      "scope": "Exact installation and jurisdiction.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "HDS 3.0/20-4 Ea/Eg Standard",
+      "subtype": "Electric-pump, diesel-heated mobile unit",
+      "distinguishingSpecifications": [
+        "3 gal/min flow",
+        "2000 psi operating pressure",
+        "208–230 V single-phase reviewed version"
+      ],
+      "marketScope": "Kärcher US commercial page",
+      "evidence": "Kärcher publishes the cited product architecture and data.",
+      "scope": "Order number 1.109-153.0.",
+      "sourceIds": [
+        "karcher-hds30"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "HDS-E 8/16-4 M 24 kW",
+      "subtype": "Electrically heated hot-water unit",
+      "distinguishingSpecifications": [
+        "24 kW heating output",
+        "Maximum stated operating temperature 85 °C",
+        "Exhaust-free electric heating"
+      ],
+      "marketScope": "Kärcher India professional page",
+      "evidence": "Kärcher publishes the cited electric-heating data.",
+      "scope": "Order number 1.030-904.0 regional version.",
+      "sourceIds": [
+        "karcher-hdse"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "MH40M-190/940 PA",
+      "subtype": "Mobile medium-class hot-water washer",
+      "distinguishingSpecifications": [
+        "190/940 model designation",
+        "MH Standard hot-water platform",
+        "Biofuel-compatible claim on reviewed page"
+      ],
+      "marketScope": "Nilfisk global product page",
+      "evidence": "Nilfisk identifies the exact product number and platform features.",
+      "scope": "Product number 107147113; verify regional electrical and fuel configuration.",
+      "sourceIds": [
+        "nilfisk-mh40"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "lavor",
+      "brandName": "Lavor",
+      "modelName": "DARWIN PRO 1310 LP",
+      "subtype": "Compact oil-fired hot-water washer",
+      "distinguishingSpecifications": [
+        "135 bar operating pressure",
+        "600 l/h delivery rate",
+        "230 V / 50 Hz reviewed version"
+      ],
+      "marketScope": "Lavor professional product page",
+      "evidence": "Lavor publishes the cited exact variant data.",
+      "scope": "Product code 36093-00017.",
+      "sourceIds": [
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "ipc",
+      "brandName": "IPC",
+      "modelName": "PW-H21 PLUS",
+      "subtype": "Compact hot-water high-pressure washer",
+      "distinguishingSpecifications": [
+        "PLUS configuration",
+        "PW-H21 hot-water series",
+        "Agriculture, HORECA, light-industry and automotive positioning"
+      ],
+      "marketScope": "IPC global product page",
+      "evidence": "IPC identifies the series, PLUS variant and cited applications.",
+      "scope": "Exact regional model and specifications must be requested.",
+      "sourceIds": [
+        "ipc-pwh21"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "oertzen",
+      "brandName": "Oertzen",
+      "modelName": "H120-9 E.D",
+      "subtype": "Compact commercial hot-water washer",
+      "distinguishingSpecifications": [
+        "120 bar maximum working pressure",
+        "540 l/h maximum flow",
+        "140 °C stated maximum water temperature"
+      ],
+      "marketScope": "Hako-hosted Oertzen product page",
+      "evidence": "The official Oertzen page publishes the cited model data.",
+      "scope": "Order number 710.000.017; verify current regional configuration.",
+      "sourceIds": [
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Remove oily or persistent soil",
+      "attributeToVerify": "Result at the lowest effective heat, pressure, flow and chemistry",
+      "comparisonTrap": "Assuming maximum temperature replaces process testing",
+      "assessment": "Specify a controlled site trial and record all settings.",
+      "basis": "Cleaning result depends on the complete thermal, hydraulic and chemical process.",
+      "limitations": "No normalized cross-brand cleaning test was found.",
+      "buyerAction": "Test representative soil and calculate labor, fuel, water and chemical use.",
+      "engineeringCheck": "Confirm surface temperature tolerance and rated spray system.",
+      "evidence": "Official sources publish different thermal and hydraulic configurations.",
+      "scope": "Actual site and quoted model.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "ipc-pwh21",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Operate indoors",
+      "attributeToVerify": "Heat source, exhaust, ventilation and electrical capacity",
+      "comparisonTrap": "Treating electric pump drive as electric water heating",
+      "assessment": "Read the energy architecture line by line.",
+      "basis": "Pump and heater can use different sources.",
+      "limitations": "No indoor approval is inferred.",
+      "buyerAction": "Obtain a written configuration and qualified ventilation or electrical assessment.",
+      "engineeringCheck": "Confirm burner, flue, fuel, phase, current and protective devices.",
+      "evidence": "Official products demonstrate mixed and all-electric architectures.",
+      "scope": "Exact delivered machine.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Run a daily wash bay",
+      "attributeToVerify": "Duty cycle, scale control, service access and wastewater",
+      "comparisonTrap": "Buying by pressure-flow headline alone",
+      "assessment": "Cost the heater, pump, consumables, maintenance and downtime as one system.",
+      "basis": "Hot-water machines add boiler and water-treatment service needs.",
+      "limitations": "No common duty-cycle definition is available.",
+      "buyerAction": "Request written duty limits, service intervals and local parts inventory.",
+      "engineeringCheck": "Verify coil, burner or heater, pump, filters, seals and treatment consumables.",
+      "evidence": "Official sources document heater, pump and treatment features.",
+      "scope": "Quoted configuration and service market.",
+      "sourceIds": [
+        "nilfisk-mh40",
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Pressure-temperature compatibility",
+      "reason": "Every wetted high-pressure component must withstand the selected mode.",
+      "buyerAction": "Match hose, gun, lance, nozzle and coupling part numbers to the exact model.",
+      "evidence": "Safety and manufacturer sources define model-specific spray systems.",
+      "scope": "No cross-brand compatibility.",
+      "sourceIds": [
+        "iec-pressure-safety",
+        "karcher-hds30",
+        "lavor-darwin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Combustion and ventilation",
+      "reason": "Oil-fired or engine configurations create fuel, exhaust and heat hazards.",
+      "buyerAction": "Document permitted location, ventilation, flue, fuel storage and fire controls.",
+      "evidence": "Official sources disclose combustion heating or drive.",
+      "scope": "Actual site and jurisdiction.",
+      "sourceIds": [
+        "karcher-hds30",
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Electrical load",
+      "reason": "Pump motors and electric heaters can require different voltage, phase and circuit capacity.",
+      "buyerAction": "Have the exact nameplate and installation checked by a qualified party.",
+      "evidence": "Official pages publish model-specific electrical data.",
+      "scope": "Regional product and site circuit.",
+      "sourceIds": [
+        "karcher-hds30",
+        "karcher-hdse"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Water quality and runoff",
+      "reason": "Scale can affect the heater and dislodged soil may require controlled disposal.",
+      "buyerAction": "Test supply water and document treatment, drainage and contaminant handling.",
+      "evidence": "Official sources identify scale control while discharge obligations remain site-specific.",
+      "scope": "Actual water and task.",
+      "sourceIds": [
+        "lavor-darwin",
+        "oertzen-h120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-79:2021",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety scope for covered high-pressure cleaners, subject to pressure range, drive type, regional adoption and listed exclusions.",
+      "evidence": "IEC publishes the standard scope and revision.",
+      "scope": "Confirm exact product conformity and regional adoption.",
+      "sourceIds": [
+        "iec-pressure-safety"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "IEC 62885-5:2018",
+      "jurisdiction": "International",
+      "version": "2018",
+      "applicability": "Methods for describing characteristic performance parameters of covered high-pressure cleaners and steam cleaners.",
+      "evidence": "IEC publishes the performance-method scope.",
+      "scope": "Does not make unmatched catalogue values directly comparable.",
+      "sourceIds": [
+        "iec-pressure-performance"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2021-06-23",
+      "title": "IEC high-pressure-cleaner safety edition published",
+      "summary": "IEC published edition 5.0 of IEC 60335-2-79 with revised scope and requirements.",
+      "evidence": "IEC records the publication date and revision.",
+      "scope": "International base standard.",
+      "sourceIds": [
+        "iec-pressure-safety"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iec-pressure-safety",
+      "title": "IEC 60335-2-79:2021",
+      "publisher": "International Electrotechnical Commission",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64779",
+      "publishedAt": "2021-06-23",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "iec-pressure-performance",
+      "title": "IEC 62885-5:2018",
+      "publisher": "International Electrotechnical Commission",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/27171",
+      "publishedAt": "2018-08-29",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-hds30",
+      "title": "HDS 3.0/20-4 Ea/Eg Standard",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/commercial/pressure-washers/hot-water/electric/hds-3-0-20-4-ea-eg-standard-11091530.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-hdse",
+      "title": "HDS-E 8/16-4 M 24 kW",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/in/professional/high-pressure-cleaners/hot-water-high-pressure-cleaners/special-class/hds-e-8-16-4-m-24-kw-10309040.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-mh40",
+      "title": "MH40M-190/940 PA 230/3/50 NO",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/professional/products/pressure-washers/mobile-pressure-washers/mobile-hot-water-pressure-washers/medium/mh40m-190-940-pa-230-3-50-no%2B107147113/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "lavor-darwin",
+      "title": "DARWIN PRO Hot Water High Pressure Cleaner",
+      "publisher": "Lavor",
+      "sourceType": "manufacturer",
+      "url": "https://lavor.com/en/product/professional/high-pressure-cleaners-pro/darwin-pro36093-00017/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "ipc-pwh21",
+      "title": "PW-H21 PLUS Hot Water High Pressure Washer",
+      "publisher": "IPC",
+      "sourceType": "manufacturer",
+      "url": "https://www.ipcworldwide.com/product/pw-h21-plus/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "oertzen-h120",
+      "title": "Oertzen H120-9 E.D",
+      "publisher": "Hako / Oertzen",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/produkte/wasserstrahltechnik/oertzen-hochdruckreiniger/hochdruckreiniger/elektromotoren-heisswasser-hochdruckreiniger/h120-9-ed",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}

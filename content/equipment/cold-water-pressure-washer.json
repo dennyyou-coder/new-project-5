@@ -1,0 +1,858 @@
+{
+  "status": "published",
+  "slug": "cold-water-pressure-washer",
+  "name": "Cold-Water Pressure Washer",
+  "aliases": [
+    "cold water high-pressure cleaner",
+    "professional cold-water power washer",
+    "unheated pressure washer"
+  ],
+  "definition": "A professional pressure washer without an integrated water-heating system that uses a pump to deliver water through a rated hose, trigger gun, lance and nozzle within model-specific inlet-temperature, pressure, flow and duty limits.",
+  "includedScope": [
+    "Mobile professional cold-water high-pressure cleaners",
+    "Electric and combustion-engine pump-drive configurations"
+  ],
+  "excludedScope": [
+    "Machines with an integrated burner or electric water heater",
+    "External hot-box modules and unverified heated-water feeds",
+    "Water-jet cutting, explosive-atmosphere or specialist surface-removal work without exact approval"
+  ],
+  "primaryApplications": [
+    "Commercial vehicle and equipment washing",
+    "Agriculture and industrial exterior cleaning",
+    "Construction and facility maintenance",
+    "Workshops and service fleets"
+  ],
+  "headline": "Cold-water pressure washer pumps, pressure, flow, nozzles and buyer checks",
+  "description": "This profile explains cold-water washer boundaries, pump and drive formats, working pressure versus maximum pressure, flow, inlet temperature, spray equipment and site verification.",
+  "metaDescription": "Cold-water pressure washer guide covering electric and engine types, pumps, pressure, flow, nozzles, models, components and buyer checks.",
+  "disclaimer": "This independent category reference is not operating, surface, chemical, water-system or safety advice. High-pressure jets can cause severe injury and damage. Confirm the current manual, exact product number, rated accessories, inlet water, utilities, PPE, exclusion zone and local rules before procurement or use.",
+  "heroImage": "/images/equipment/cold-water-pressure-washer/hero.webp",
+  "heroImageAlt": "Nilfisk MC 5M cold-water pressure washer cleaning industrial equipment outdoors",
+  "heroImageCaption": "Official Nilfisk application image illustrating industrial cold-water pressure washing; pressure, flow, nozzle, standoff and runoff remain task-specific.",
+  "heroSourceUrl": "https://www.nilfisk.com/product-images-1920/MC5M_industry_10-ps-Original-JLPNJPM.webp",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/cold-water-pressure-washer/type-format.webp",
+      "alt": "Kärcher HD 6/15 M Cage professional cold-water pressure washer",
+      "caption": "Official Kärcher product image of a framed mobile electric cold-water format.",
+      "sourceUrl": "https://s1.kaercher-media.com/mam/11509700/mainproduct/92418/d0.jpg"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/cold-water-pressure-washer/application-use.webp",
+      "alt": "Nilfisk MC 5M pressure washer used in an agricultural setting",
+      "caption": "Official Nilfisk agricultural application image; biosecurity, animal-area and wastewater controls require site review.",
+      "sourceUrl": "https://www.nilfisk.com/product-images-1920/MC5M_agri_09-ps-Original-JLPNUCF.webp"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/cold-water-pressure-washer/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/cold-water-pressure-washer/component-verification-map-mobile.svg",
+      "alt": "WCB cold-water pressure washer component verification map",
+      "caption": "WCB diagram separating inlet, pump drive, hose, gun, lance, nozzle and runoff checks. It does not establish part compatibility.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "No integrated water-heating system",
+      "evidence": "Reviewed official products are identified as cold-water high-pressure cleaners or publish unheated architectures.",
+      "scope": "Named products; external heaters are excluded.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Inlet temperature",
+      "value": "Cold-water naming does not create one universal inlet limit",
+      "evidence": "Manufacturer sources publish model-specific inlet-water temperature limits.",
+      "scope": "Exact machine and operating mode.",
+      "sourceIds": [
+        "karcher-hd615",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Comparison basis",
+      "value": "Working pressure and flow must be compared together",
+      "evidence": "Official specifications separately report pressure and delivery rate.",
+      "scope": "Named configurations and source methods.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Buyer verification",
+      "value": "Match water supply, pressure, flow, pump drive, hose, gun, lance and nozzle",
+      "evidence": "Official sources use model- and configuration-specific hydraulic and accessory boundaries.",
+      "scope": "Quoted regional product and actual site.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Water supply",
+      "componentFamily": "Inlet, filter and feed hose",
+      "role": "Provides water within flow, pressure, cleanliness and temperature limits.",
+      "evidence": "Official documentation publishes inlet and filtration requirements.",
+      "scope": "Exact model and supply mode.",
+      "sourceIds": [
+        "karcher-hd615",
+        "stihl-re150",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Pump drive",
+      "componentFamily": "Electric motor or combustion engine",
+      "role": "Supplies mechanical power to the pump.",
+      "evidence": "Manufacturer pages identify electrical and pump-drive systems.",
+      "scope": "Regional voltage, phase or engine configuration.",
+      "sourceIds": [
+        "karcher-hd615",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Pressure generation",
+      "componentFamily": "Pump, unloader and protection system",
+      "role": "Raises and regulates water pressure.",
+      "evidence": "Official sources describe piston pumps, bypass or protective controls.",
+      "scope": "Exact machine architecture.",
+      "sourceIds": [
+        "karcher-hd615",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Jet delivery",
+      "componentFamily": "Rated hose, trigger gun, lance and nozzle",
+      "role": "Transfers water and forms the selected spray pattern.",
+      "evidence": "Official manuals and product pages list model-specific spray equipment.",
+      "scope": "Only approved components.",
+      "sourceIds": [
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 5,
+      "name": "Runoff and shutdown",
+      "componentFamily": "Work-zone, drainage and pressure relief",
+      "role": "Controls contaminated water and leaves the system in its prescribed safe state.",
+      "evidence": "Safety and manufacturer sources define machine controls; site runoff remains buyer-managed.",
+      "scope": "Actual task and jurisdiction.",
+      "sourceIds": [
+        "iec-pressure-safety",
+        "karcher-hd615"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Single-phase electric mobile",
+      "taskScale": "Routine commercial work near suitable utilities",
+      "operatorRelationship": "Operator moves the trolley and manages cables, hoses and lance",
+      "spaceConstraints": "Circuit, cable, water and drainage routes",
+      "limitations": "Plug style and current draw vary by market.",
+      "evidence": "Official ranges include mobile single-phase products.",
+      "scope": "Named regional versions.",
+      "sourceIds": [
+        "karcher-hd615",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Three-phase electric heavy-duty",
+      "taskScale": "Longer industrial routes and higher flow configurations",
+      "operatorRelationship": "Operator works from mobile or fixed industrial equipment",
+      "spaceConstraints": "Three-phase supply, service access and water capacity",
+      "limitations": "Higher input power does not prove cleaning result or continuous duty.",
+      "evidence": "Official sources publish industrial electric models.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "nilfisk-mc5m",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Engine-driven mobile",
+      "taskScale": "Remote or construction work without mains power",
+      "operatorRelationship": "Operator manages engine, fuel, pump and spray system",
+      "spaceConstraints": "Fuel, exhaust, ventilation, noise and transport controls",
+      "limitations": "Combustion engines may be prohibited indoors or in confined areas.",
+      "evidence": "Lavor's official Thermic 9 L data sheet identifies a petrol-engine cold-water professional pressure washer.",
+      "scope": "Thermic 9 L reviewed configuration; combustion use remains site-specific.",
+      "sourceIds": [
+        "lavor-thermic9"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Working pressure",
+      "purchasingMeaning": "Nominal pressure during the stated operating condition",
+      "reportingBoundary": "Working, maximum and permissible pressure can differ",
+      "comparisonCaution": "Do not compare maximum pressure with another model's working pressure.",
+      "evidence": "Manufacturers use distinct pressure labels.",
+      "scope": "Named products.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Delivery rate",
+      "purchasingMeaning": "Water volume available for rinsing and soil transport",
+      "reportingBoundary": "Rated and maximum values may use different conditions",
+      "comparisonCaution": "Flow and pressure must be compared as a pair.",
+      "evidence": "Official specifications publish flow separately from pressure.",
+      "scope": "Source-specific reporting.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Inlet water limit",
+      "purchasingMeaning": "Defines supply-water and seal boundary",
+      "reportingBoundary": "Temperature and supply mode are model-specific",
+      "comparisonCaution": "Do not infer hot-water compatibility from a metal pump head or commercial label.",
+      "evidence": "Manufacturer documents publish inlet limits.",
+      "scope": "Exact product and mode.",
+      "sourceIds": [
+        "karcher-hd615",
+        "stihl-re150",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Nozzle and spray pattern",
+      "purchasingMeaning": "Controls jet angle, local impact and coverage",
+      "reportingBoundary": "Included and optional nozzle sets differ",
+      "comparisonCaution": "A rotary nozzle changes local impact without changing pump rating.",
+      "evidence": "Official sources list model-specific nozzles or lances.",
+      "scope": "Exact approved accessory.",
+      "sourceIds": [
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Power and duty",
+      "purchasingMeaning": "Supports circuit, generator, fuel and operating-window planning",
+      "reportingBoundary": "Motor input, engine power and pump speed are not directly comparable",
+      "comparisonCaution": "Power alone does not establish duty cycle.",
+      "evidence": "Manufacturers publish configuration-specific power and pump data.",
+      "scope": "Exact regional model.",
+      "sourceIds": [
+        "karcher-hd615",
+        "bosch-ghp575x",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Vehicle and equipment washing",
+      "wcbAssessment": "Sensitive seals, bearings, electronics, coatings and labels should be mapped before the trial.",
+      "assessment": "Sensitive seals, bearings, electronics, coatings and labels should be mapped before the trial.",
+      "basis": "Official vehicle and machinery positioning.",
+      "limitations": "No asset-maker approval is implied.",
+      "buyerAction": "Obtain restrictions and trial the lowest effective pressure and safest nozzle-distance process.",
+      "evidence": "Manufacturers position named machines for vehicle, agriculture or industrial work.",
+      "scope": "Approved surfaces and components.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "lavor-lite2w"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Construction and exterior surfaces",
+      "wcbAssessment": "Surface strength, water intrusion, rebound and drainage may matter more than maximum pressure.",
+      "assessment": "Surface strength, water intrusion, rebound and drainage may matter more than maximum pressure.",
+      "basis": "Official professional exterior-cleaning positioning.",
+      "limitations": "No façade, sealant, coating or mortar approval is established.",
+      "buyerAction": "Create an approved test area and record pressure, nozzle, angle and standoff.",
+      "evidence": "Official sources include professional or industrial surface work.",
+      "scope": "Exact substrate and site.",
+      "sourceIds": [
+        "bosch-ghp575x",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Agriculture and industrial areas",
+      "wcbAssessment": "Biosecurity, contaminants and wastewater should define the process before equipment ranking.",
+      "assessment": "Biosecurity, contaminants and wastewater should define the process before equipment ranking.",
+      "basis": "Official agriculture and industrial positioning.",
+      "limitations": "No animal-health, food or environmental compliance is implied.",
+      "buyerAction": "Document contaminants and obtain the site's water and discharge requirements.",
+      "evidence": "Manufacturers position reviewed machines for agriculture and industry.",
+      "scope": "Actual site and approved chemicals.",
+      "sourceIds": [
+        "nilfisk-mc5m",
+        "karcher-hd615"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Inlet and filter",
+      "role": "Supplies and protects the pump.",
+      "variants": [
+        "Pressurised feed",
+        "Approved suction mode",
+        "Serviceable inlet filter"
+      ],
+      "criticalChecks": [
+        "Minimum flow",
+        "Supply pressure",
+        "Temperature limit",
+        "Filter part number"
+      ],
+      "evidence": "Official sources publish supply requirements.",
+      "scope": "Family labels do not establish cross-model compatibility.",
+      "sourceIds": [
+        "karcher-hd615",
+        "stihl-re150",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Pump and unloader",
+      "role": "Generates and regulates high-pressure flow.",
+      "variants": [
+        "Axial piston pump",
+        "Triplex or in-line plunger pump",
+        "Bypass or total-stop system"
+      ],
+      "criticalChecks": [
+        "Pump part number",
+        "Pressure-flow envelope",
+        "Seal and valve kit",
+        "Service interval"
+      ],
+      "evidence": "Manufacturer pages describe model-specific pumps.",
+      "scope": "No service-life equivalence.",
+      "sourceIds": [
+        "karcher-hd615",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Motor or engine",
+      "role": "Drives the pump.",
+      "variants": [
+        "Single-phase electric",
+        "Three-phase electric",
+        "Combustion engine"
+      ],
+      "criticalChecks": [
+        "Voltage and phase",
+        "Circuit or generator",
+        "Fuel and exhaust",
+        "Motor protection"
+      ],
+      "evidence": "Official sources publish different drive systems.",
+      "scope": "Exact delivered configuration.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "High-pressure hose and gun",
+      "role": "Contains flow and gives the operator discharge control.",
+      "variants": [
+        "Reinforced hose",
+        "Hose-reel package",
+        "Quick-coupling system"
+      ],
+      "criticalChecks": [
+        "Pressure rating",
+        "Temperature rating",
+        "End fittings",
+        "Product-number approval"
+      ],
+      "evidence": "Official sources list exact hose and gun packages.",
+      "scope": "No cross-brand fit inference.",
+      "sourceIds": [
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Lance and nozzle",
+      "role": "Forms the cleaning jet at the surface.",
+      "variants": [
+        "Fan nozzle",
+        "Rotary nozzle",
+        "Adjustable or multi-function lance"
+      ],
+      "criticalChecks": [
+        "Nozzle orifice",
+        "Spray angle",
+        "Pressure-flow match",
+        "Recoil and standoff"
+      ],
+      "evidence": "Official sources identify model-specific spray accessories.",
+      "scope": "Exact approved system.",
+      "sourceIds": [
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "HD 6/15 M",
+      "subtype": "Mobile electric cold-water washer",
+      "distinguishingSpecifications": [
+        "150 bar working pressure",
+        "560 l/h flow",
+        "Three-piston axial pump with brass cylinder head"
+      ],
+      "marketScope": "Kärcher regional professional page",
+      "evidence": "Kärcher publishes the cited specifications.",
+      "scope": "Reviewed 230 V regional configuration.",
+      "sourceIds": [
+        "karcher-hd615"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "MC 5M-200/1000",
+      "subtype": "Medium-class electric cold-water washer",
+      "distinguishingSpecifications": [
+        "200/1000 model designation",
+        "Mobile professional format",
+        "Industrial and agriculture positioning"
+      ],
+      "marketScope": "Nilfisk official specification",
+      "evidence": "Nilfisk identifies the exact variant and specifications.",
+      "scope": "EU model; confirm electrical package.",
+      "sourceIds": [
+        "nilfisk-mc5m"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "stihl",
+      "brandName": "STIHL",
+      "modelName": "RE 150 PLUS",
+      "subtype": "Compact electric pressure washer",
+      "distinguishingSpecifications": [
+        "140 bar working pressure on reviewed version",
+        "612 l/h maximum water throughput",
+        "12 m high-pressure hose"
+      ],
+      "marketScope": "STIHL official instruction manual",
+      "evidence": "STIHL publishes the cited specifications.",
+      "scope": "Reviewed 230 V / 50 Hz version.",
+      "sourceIds": [
+        "stihl-re150"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "bosch-power-tools",
+      "brandName": "Bosch Power Tools",
+      "modelName": "GHP 5-75 X",
+      "subtype": "Compact professional electric washer",
+      "distinguishingSpecifications": [
+        "140 bar operating pressure",
+        "570 l/h maximum flow",
+        "10 m reinforced hose and reel"
+      ],
+      "marketScope": "Bosch Professional India page",
+      "evidence": "Bosch publishes the cited regional data.",
+      "scope": "Order number 0 600 910 8F0.",
+      "sourceIds": [
+        "bosch-ghp575x"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "lavor",
+      "brandName": "Lavor",
+      "modelName": "LITE 2W 1510 XP",
+      "subtype": "Electric professional cold-water washer",
+      "distinguishingSpecifications": [
+        "135 bar operating pressure",
+        "600 l/h flow",
+        "2900 W single-phase input"
+      ],
+      "marketScope": "Lavor professional page",
+      "evidence": "Lavor publishes the cited exact-variant data.",
+      "scope": "Product code 36016-00023.",
+      "sourceIds": [
+        "lavor-lite2w"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "oertzen",
+      "brandName": "Oertzen",
+      "modelName": "C230-15 E",
+      "subtype": "Industrial electric cold-water washer",
+      "distinguishingSpecifications": [
+        "Up to 230 bar across reviewed family",
+        "900–1800 l/h family flow range",
+        "400 V three-phase family"
+      ],
+      "marketScope": "Hako-hosted Oertzen product page",
+      "evidence": "The official page publishes the family and model data.",
+      "scope": "C230-15 E must be quoted separately from related C230-21 E and C200-30 E configurations.",
+      "sourceIds": [
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "lavor",
+      "brandName": "Lavor",
+      "modelName": "Thermic 9 L",
+      "subtype": "Petrol-engine cold-water washer",
+      "distinguishingSpecifications": [
+        "220 bar operating pressure",
+        "900 l/h delivery rate",
+        "9 hp petrol engine"
+      ],
+      "marketScope": "Lavor official professional data sheet",
+      "evidence": "Lavor publishes the cited engine, pump and output data.",
+      "scope": "Code 8.601.0188C reviewed data sheet.",
+      "sourceIds": [
+        "lavor-thermic9"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Remove heavy exterior soil",
+      "attributeToVerify": "Result at working pressure, flow, nozzle and standoff",
+      "comparisonTrap": "Selecting by maximum pressure alone",
+      "assessment": "Specify a result-based trial at the lowest effective settings.",
+      "basis": "Jet impact and rinsing depend on the complete hydraulic and nozzle system.",
+      "limitations": "No normalized cross-brand cleaning test is available.",
+      "buyerAction": "Record pressure setting, flow, nozzle, distance, time and water use.",
+      "engineeringCheck": "Confirm rated hose, gun, lance, nozzle and supply.",
+      "evidence": "Official sources distinguish pressure, flow and accessory boundaries.",
+      "scope": "Exact model and representative surface.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "stihl-re150",
+        "bosch-ghp575x",
+        "lavor-lite2w",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Daily commercial route",
+      "attributeToVerify": "Duty cycle, utilities and service support",
+      "comparisonTrap": "Assuming professional naming proves continuous duty",
+      "assessment": "Include setup, hose handling, thermal stops, maintenance and downtime.",
+      "basis": "Machine architecture and site utilities determine availability.",
+      "limitations": "Duty definitions differ or are undisclosed.",
+      "buyerAction": "Request a written duty statement and local parts schedule.",
+      "engineeringCheck": "Verify pump, motor protection, inlet filter, seals and service inventory.",
+      "evidence": "Official pages disclose architecture but not one normalized duty method.",
+      "scope": "Quoted model and market.",
+      "sourceIds": [
+        "karcher-hd615",
+        "nilfisk-mc5m",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Use a warm-water feed",
+      "attributeToVerify": "Exact inlet-temperature and supply-mode approval",
+      "comparisonTrap": "Treating cold-water naming as a universal numerical temperature limit",
+      "assessment": "Use the current manual and written supplier confirmation for the exact product number.",
+      "basis": "Manufacturers publish different inlet boundaries.",
+      "limitations": "No category-wide feed temperature is established.",
+      "buyerAction": "Record actual supply temperature and obtain written approval.",
+      "engineeringCheck": "Confirm seals, hose, inlet path and pump rating.",
+      "evidence": "Official sources publish model-specific limits.",
+      "scope": "Exact machine and supply.",
+      "sourceIds": [
+        "karcher-hd615",
+        "stihl-re150",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Rated spray-system compatibility",
+      "reason": "Hose, gun, lance, coupling and nozzle must contain the machine output.",
+      "buyerAction": "Verify every component part number and rating against the exact model.",
+      "evidence": "Safety and manufacturer sources define model-specific equipment.",
+      "scope": "No visual or cross-brand compatibility.",
+      "sourceIds": [
+        "iec-pressure-safety",
+        "stihl-re150",
+        "bosch-ghp575x"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Water supply",
+      "reason": "Insufficient or unsuitable inlet water can affect operation and pump protection.",
+      "buyerAction": "Measure available flow, pressure and temperature and confirm filtration.",
+      "evidence": "Manufacturer sources publish inlet requirements.",
+      "scope": "Actual site and mode.",
+      "sourceIds": [
+        "karcher-hd615",
+        "stihl-re150",
+        "oertzen-c230"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Electrical or engine drive",
+      "reason": "Drive configuration changes circuit, exhaust, fuel and operating controls.",
+      "buyerAction": "Match voltage, phase, protective device, generator or engine-use plan.",
+      "evidence": "Official sources disclose configuration-specific drives.",
+      "scope": "Exact regional unit.",
+      "sourceIds": [
+        "nilfisk-mc5m",
+        "oertzen-c230",
+        "lavor-thermic9"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Surface and wastewater",
+      "reason": "Jet impact can damage surfaces and runoff may carry regulated contaminants.",
+      "buyerAction": "Approve a test area, exclusion zone and disposal path before work.",
+      "evidence": "Safety guidance supports controlled operation; discharge requirements remain site-specific.",
+      "scope": "Actual surface and jurisdiction.",
+      "sourceIds": [
+        "iec-pressure-safety",
+        "karcher-hd615"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-79:2021",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety of covered non-traction high-pressure cleaners within the stated standard scope.",
+      "evidence": "IEC publishes the pressure and machine scope.",
+      "scope": "Confirm regional adoption and exact conformity.",
+      "sourceIds": [
+        "iec-pressure-safety"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "IEC 62885-5:2018",
+      "jurisdiction": "International",
+      "version": "2018",
+      "applicability": "Methods for describing characteristic performance parameters of covered high-pressure cleaners.",
+      "evidence": "IEC publishes the performance-method scope.",
+      "scope": "Unmatched reporting boundaries remain non-comparable.",
+      "sourceIds": [
+        "iec-pressure-performance"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2021-06-23",
+      "title": "IEC high-pressure-cleaner safety edition published",
+      "summary": "IEC published edition 5.0 of IEC 60335-2-79 and revised the covered high-pressure-cleaner scope.",
+      "evidence": "IEC records the publication and technical revision.",
+      "scope": "International base standard.",
+      "sourceIds": [
+        "iec-pressure-safety"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "date": "2018-08-29",
+      "title": "IEC performance-method standard published",
+      "summary": "IEC published IEC 62885-5 for characteristic performance parameters of high-pressure cleaners and steam cleaners.",
+      "evidence": "IEC records the publication date and scope.",
+      "scope": "Measurement framework, not a product ranking.",
+      "sourceIds": [
+        "iec-pressure-performance"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iec-pressure-safety",
+      "title": "IEC 60335-2-79:2021",
+      "publisher": "International Electrotechnical Commission",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64779",
+      "publishedAt": "2021-06-23",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "iec-pressure-performance",
+      "title": "IEC 62885-5:2018",
+      "publisher": "International Electrotechnical Commission",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/27171",
+      "publishedAt": "2018-08-29",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-hd615",
+      "title": "HD 6/15 M Professional Cold-water High-pressure Cleaner",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/th/professional/high-pressure-cleaners/cold-water-high-pressure-cleaners/middle-class/hd-6-15-m-11509300.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-mc5m",
+      "title": "MC 5M-200/1000 EU",
+      "publisher": "Nilfisk",
+      "sourceType": "specification",
+      "url": "https://www.nilfisk.com/media/itfajqrt/mc-5m-200_1000-v1.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "stihl-re150",
+      "title": "STIHL RE 150 PLUS / RE 170 PLUS Instruction Manual",
+      "publisher": "STIHL",
+      "sourceType": "manual",
+      "url": "https://static.stihl.com/api/BaOnline/Download/ZBA0458-663-0121-A%20%20%20%20%20%20%20%20%20%2001ZBA/0458-663-0121-A_ZBA_01_02.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "bosch-ghp575x",
+      "title": "PRO GHP 5-75 X",
+      "publisher": "Bosch Professional",
+      "sourceType": "manufacturer",
+      "url": "https://www.bosch-professional.com/in/en/products/ghp-5-75-x-06009108F0",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "lavor-lite2w",
+      "title": "LITE 2W Professional High-pressure Cleaner",
+      "publisher": "Lavor",
+      "sourceType": "manufacturer",
+      "url": "https://lavor.com/en/product/professional/high-pressure-cleaners-pro/lite-2w36016-00023/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "oertzen-c230",
+      "title": "Oertzen C230-15 E / C230-21 E / C200-30 E",
+      "publisher": "Hako / Oertzen",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/en/products/waterjet-technology/oertzen-high-pressure-cleaners-1/high-pressure-cleaners/cold-water-units-with-electric-motors/c230-15-e",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "lavor-thermic9",
+      "title": "Thermic 9 L Professional Data Sheet",
+      "publisher": "Lavor",
+      "sourceType": "specification",
+      "url": "https://lavor.com/ASSETS/Professional/idropulitrici/acqua%20fredda%20motore%20a%20scoppio/THERMIC%209L/scheda-dati/Scheda%20Thermic%209L_EN.pdf",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}
