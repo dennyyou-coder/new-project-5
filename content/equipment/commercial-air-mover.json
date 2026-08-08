@@ -1,0 +1,836 @@
+{
+  "status": "published",
+  "slug": "commercial-air-mover",
+  "name": "Commercial Air Mover",
+  "aliases": [
+    "carpet dryer",
+    "floor drying fan",
+    "restoration air mover",
+    "commercial blower"
+  ],
+  "definition": "A portable commercial blower used to accelerate evaporation by directing high-velocity airflow across approved wet carpets, upholstery, floors or building surfaces after cleaning, spills or water-loss work.",
+  "includedScope": [
+    "Portable centrifugal and compact commercial air movers",
+    "Carpet-extraction drying and approved water-loss airflow applications"
+  ],
+  "excludedScope": [
+    "Dehumidifiers, air scrubbers, heaters and HVAC blowers",
+    "Ordinary comfort fans without commercial task evidence",
+    "Any claim that airflow alone completes structural drying, mould remediation or hygienic decontamination"
+  ],
+  "primaryApplications": [
+    "Carpet extraction follow-up",
+    "Spill and water-loss response",
+    "Floor and upholstery drying",
+    "Facility and restoration contractor routes"
+  ],
+  "headline": "Commercial air mover airflow, placement, electrical loading and buyer checks",
+  "description": "This profile explains air-mover formats, airflow reporting, outlet direction, speed, positioning, electrical loading, daisy chaining and the boundary between evaporation and moisture removal.",
+  "metaDescription": "Commercial air mover guide covering carpet dryers, airflow, speed settings, placement, electrical load, representative models and buyer checks.",
+  "disclaimer": "This independent category reference is not restoration, electrical, mould, indoor-air-quality or structural-drying advice. Air movers can spread contaminants, overload circuits or create trip hazards. Confirm the current manual, electrical listing, site contamination status, placement plan, monitoring method and local requirements before use.",
+  "heroImage": "/images/equipment/commercial-air-mover/hero.webp",
+  "heroImageAlt": "Kärcher AB 84 professional commercial air mover",
+  "heroImageCaption": "Official Kärcher product image of a three-speed commercial air mover; actual drying depends on placement, moisture load, temperature, humidity and dehumidification.",
+  "heroSourceUrl": "https://s1.kaercher-media.com/mam/10040390/mainproduct/69135/d0.jpg",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/commercial-air-mover/type-format.webp",
+      "alt": "Truvox AM3000 commercial air mover",
+      "caption": "Official Truvox product image showing a compact three-speed centrifugal-style air mover.",
+      "sourceUrl": "https://www.truvox.com/wp-content/uploads/2023/11/AM3000-website-1.png"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/commercial-air-mover/application-use.webp",
+      "alt": "Truvox AM3000 air outlet positioned close to carpet",
+      "caption": "Official Truvox detail image illustrating outlet direction near carpet; safe placement and drying verification remain site-specific.",
+      "sourceUrl": "https://www.truvox.com/wp-content/uploads/2023/11/AM3000-features-Effective.jpg"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/commercial-air-mover/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/commercial-air-mover/component-verification-map-mobile.svg",
+      "alt": "WCB commercial air mover component verification map",
+      "caption": "WCB diagram separating intake, motor, fan, outlet, placement, circuit and moisture-monitoring checks. It does not establish part compatibility.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-air",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "Moves air to accelerate evaporation; it does not remove moisture from the space",
+      "evidence": "Manufacturers position reviewed machines to speed drying after extraction cleaning, spills or water damage.",
+      "scope": "Named air movers; dehumidifiers are excluded.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-air",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Airflow reporting",
+      "value": "CFM, m³/min, m³/h and outlet velocity are not interchangeable claims",
+      "evidence": "Official sources publish different airflow quantities and units.",
+      "scope": "Source-specific test points and modes.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Electrical planning",
+      "value": "Current draw, voltage, outlets and daisy-chain limits are model-specific",
+      "evidence": "Official sources publish distinct amperage and outlet features.",
+      "scope": "Exact regional version and circuit.",
+      "sourceIds": [
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Buyer verification",
+      "value": "Validate placement, electrical load, contamination, noise and measured moisture progress",
+      "evidence": "Manufacturer sources describe adjustable positions, speeds and drying uses but not one universal site result.",
+      "scope": "Actual task and monitored site.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-air",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Air intake",
+      "componentFamily": "Intake guard and housing",
+      "role": "Admits room air while separating users and debris from moving components.",
+      "evidence": "Official product and manual sources identify protected housings and fan systems.",
+      "scope": "Exact machine and inspection condition.",
+      "sourceIds": [
+        "karcher-ab84",
+        "minuteman-a3s",
+        "clarke-directair"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Motor drive",
+      "componentFamily": "Electric motor and thermal protection",
+      "role": "Drives the fan at one or more selected speeds.",
+      "evidence": "Official specifications publish motor, speed or thermal-protection data.",
+      "scope": "Regional voltage and exact model.",
+      "sourceIds": [
+        "truvox-brochure",
+        "minuteman-a3s",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Air acceleration",
+      "componentFamily": "Centrifugal or model-specific fan",
+      "role": "Creates the airflow delivered through the outlet.",
+      "evidence": "Manufacturers publish fan or airflow characteristics.",
+      "scope": "No normalized cross-brand efficiency claim.",
+      "sourceIds": [
+        "karcher-ab84",
+        "minuteman-a3s",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Air direction",
+      "componentFamily": "Outlet, housing angle and stand",
+      "role": "Directs moving air across the intended surface or cavity only where approved.",
+      "evidence": "Official sources identify three or four operating positions.",
+      "scope": "Named products and approved placements.",
+      "sourceIds": [
+        "truvox-brochure",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 5,
+      "name": "Moisture control",
+      "componentFamily": "Site monitoring and dehumidification plan",
+      "role": "Tracks moisture movement and provides removal capacity where required.",
+      "evidence": "Air-mover sources describe evaporation support, not complete moisture removal.",
+      "scope": "WCB boundary derived from the disclosed machine function; site plan remains professional responsibility.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-air",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Traditional centrifugal air mover",
+      "taskScale": "Carpet, floor and water-loss routes",
+      "operatorRelationship": "Operator places and repositions a wheeled or handled blower",
+      "spaceConstraints": "Intake clearance, outlet path, cord and circuit management",
+      "limitations": "Large headline airflow may use an unmatched test method.",
+      "evidence": "Official sources show portable multi-speed blower formats.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "karcher-ab84",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Compact low-profile blower",
+      "taskScale": "Tight rooms, spot drying and transport-intensive routes",
+      "operatorRelationship": "Operator carries, stacks and aims the compact unit",
+      "spaceConstraints": "Smaller footprint but the same circuit and trip controls apply",
+      "limitations": "Compact size does not prove lower noise or faster drying.",
+      "evidence": "Truvox and Minuteman publish compact air-mover formats.",
+      "scope": "Named products.",
+      "sourceIds": [
+        "truvox-brochure",
+        "minuteman-a3s"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Low-wear EC-motor format",
+      "taskScale": "Occupied or noise-sensitive commercial areas where approved",
+      "operatorRelationship": "Operator selects speed and monitors access",
+      "spaceConstraints": "Placement must preserve exits and intake clearance",
+      "limitations": "Manufacturer drying-time claims remain application-specific.",
+      "evidence": "Kärcher describes a compact EC-motor blower for faster carpet drying and low-noise use.",
+      "scope": "AB 20/1 Ec reviewed regional range.",
+      "sourceIds": [
+        "karcher-ab20"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Airflow volume",
+      "purchasingMeaning": "Nominal quantity of air moved at a stated speed",
+      "reportingBoundary": "CFM, m³/min and m³/h can use different test methods and points",
+      "comparisonCaution": "Do not compare converted units unless measurement conditions match.",
+      "evidence": "Official sources publish different airflow units.",
+      "scope": "Named models and stated speeds.",
+      "sourceIds": [
+        "karcher-ab84",
+        "minuteman-a3s",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Outlet velocity",
+      "purchasingMeaning": "Local air speed reported at an unspecified or stated point",
+      "reportingBoundary": "Not the same quantity as volumetric airflow",
+      "comparisonCaution": "m/s cannot be ranked directly against CFM.",
+      "evidence": "Truvox reports airflow rate in m/s for the reviewed models.",
+      "scope": "Catalogue reporting boundary.",
+      "sourceIds": [
+        "truvox-brochure"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Speed settings",
+      "purchasingMeaning": "Allows airflow and noise adjustment",
+      "reportingBoundary": "Three settings do not imply matched outputs across machines",
+      "comparisonCaution": "Speed count alone does not establish useful drying range.",
+      "evidence": "Official sources identify three-speed products.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "karcher-ab84",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Current draw and voltage",
+      "purchasingMeaning": "Circuit loading and fleet deployment",
+      "reportingBoundary": "Regional voltage and outlet features differ",
+      "comparisonCaution": "Daisy chaining is limited by the exact manual, circuit and downstream load.",
+      "evidence": "Official specifications publish amperage, voltage or outlet limits.",
+      "scope": "Exact regional configuration.",
+      "sourceIds": [
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Sound and placement",
+      "purchasingMeaning": "Occupied-area acceptance and safe route planning",
+      "reportingBoundary": "Sound values and test methods may be absent or unmatched",
+      "comparisonCaution": "Quiet positioning claims do not replace site measurement.",
+      "evidence": "Official sources describe low-noise or multiple-position use.",
+      "scope": "Named products and actual space.",
+      "sourceIds": [
+        "karcher-ab20",
+        "truvox-brochure"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "After carpet extraction",
+      "wcbAssessment": "Use airflow to support evaporation only after confirming the textile, backing, adhesive and room process.",
+      "assessment": "Use airflow to support evaporation only after confirming the textile, backing, adhesive and room process.",
+      "basis": "Official post-extraction drying positioning.",
+      "limitations": "No universal drying-time reduction is established.",
+      "buyerAction": "Record baseline and completion moisture, humidity, temperature, placement and time.",
+      "evidence": "Manufacturers position reviewed blowers for carpet drying after wet cleaning.",
+      "scope": "Approved textiles and room conditions.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-brochure"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Water-loss response",
+      "wcbAssessment": "Contamination class, material condition and moisture map should be established before airflow starts.",
+      "assessment": "Contamination class, material condition and moisture map should be established before airflow starts.",
+      "basis": "Official water-damage positioning plus the risk that air movement redistributes contaminants.",
+      "limitations": "This profile does not establish remediation protocol or project completion.",
+      "buyerAction": "Obtain the responsible restoration plan and document every machine location and reading.",
+      "evidence": "Official sources cite flood or water-damage work.",
+      "scope": "Only professionally approved sites.",
+      "sourceIds": [
+        "karcher-ab84",
+        "truvox-brochure",
+        "clarke-directair"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Spills and hard-floor drying",
+      "wcbAssessment": "Airflow must not create slip, aerosol, dust or pedestrian hazards.",
+      "assessment": "Airflow must not create slip, aerosol, dust or pedestrian hazards.",
+      "basis": "Official floor and spill-drying positioning.",
+      "limitations": "No occupied-area safety approval is implied.",
+      "buyerAction": "Isolate the area, remove bulk water and verify the surface dry before reopening.",
+      "evidence": "Official sources include spills and varied surface drying.",
+      "scope": "Approved surfaces and controlled access.",
+      "sourceIds": [
+        "truvox-brochure",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Housing and intake guard",
+      "role": "Protects the fan path and supports transport and stacking.",
+      "variants": [
+        "Impact-resistant housing",
+        "Stackable shell",
+        "Wheeled or handled chassis"
+      ],
+      "criticalChecks": [
+        "Cracks and guard condition",
+        "Stacking limit",
+        "Intake clearance",
+        "Cleaning method"
+      ],
+      "evidence": "Official sources describe protected, portable and stackable designs.",
+      "scope": "Family labels do not establish cross-model compatibility.",
+      "sourceIds": [
+        "karcher-ab84",
+        "minuteman-a3s",
+        "clarke-directair"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Motor and fan",
+      "role": "Generate the air stream.",
+      "variants": [
+        "Universal or sealed motor",
+        "EC motor",
+        "Centrifugal fan"
+      ],
+      "criticalChecks": [
+        "Part number",
+        "Speed settings",
+        "Thermal protection",
+        "Bearing and fan condition"
+      ],
+      "evidence": "Official sources identify motor and protection features.",
+      "scope": "Exact model.",
+      "sourceIds": [
+        "karcher-ab20",
+        "minuteman-a3s",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Outlet and position system",
+      "role": "Directs airflow at the intended surface.",
+      "variants": [
+        "Three-position housing",
+        "Four-position housing",
+        "Kickstand"
+      ],
+      "criticalChecks": [
+        "Approved angles",
+        "Outlet obstruction",
+        "Tip stability",
+        "Clearance"
+      ],
+      "evidence": "Manufacturer sources publish positioning features.",
+      "scope": "Named product only.",
+      "sourceIds": [
+        "truvox-brochure",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Cord and power distribution",
+      "role": "Connects the air mover to a suitable circuit.",
+      "variants": [
+        "Single cord",
+        "Onboard receptacles",
+        "Model-approved daisy chain"
+      ],
+      "criticalChecks": [
+        "Voltage and current",
+        "Cord condition",
+        "GFCI or local protection",
+        "Downstream load limit"
+      ],
+      "evidence": "Official sources publish electrical and outlet features.",
+      "scope": "Exact regional unit and circuit.",
+      "sourceIds": [
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Moisture-monitoring system",
+      "role": "Verifies whether the drying objective is progressing and complete.",
+      "variants": [
+        "Material moisture readings",
+        "Ambient temperature and RH log",
+        "Dehumidifier integration"
+      ],
+      "criticalChecks": [
+        "Baseline",
+        "Reading locations",
+        "Target criteria",
+        "Responsible reviewer"
+      ],
+      "evidence": "Reviewed air movers do not provide a universal completion measurement.",
+      "scope": "Site-specific professional plan; no component compatibility implied.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-air",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "AB 84",
+      "subtype": "High-output mobile air blower",
+      "distinguishingSpecifications": [
+        "Three speed levels",
+        "56 / 70 / 84 m³/min stated airflow",
+        "Integrated wheels and handle"
+      ],
+      "marketScope": "Kärcher US commercial page",
+      "evidence": "Kärcher publishes the cited features and specifications.",
+      "scope": "Order number 1.004-039.0.",
+      "sourceIds": [
+        "karcher-ab84"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "AB 20/1 Ec",
+      "subtype": "Compact EC-motor air blower",
+      "distinguishingSpecifications": [
+        "Compact professional format",
+        "Three-stage EC motor described on regional page",
+        "Carpet-drying positioning"
+      ],
+      "marketScope": "Kärcher UK professional range",
+      "evidence": "Kärcher identifies the cited format and use.",
+      "scope": "Regional availability and exact product number require confirmation.",
+      "sourceIds": [
+        "karcher-ab20"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "truvox",
+      "brandName": "Truvox",
+      "modelName": "AM3000",
+      "subtype": "Traditional multi-position air mover",
+      "distinguishingSpecifications": [
+        "500 W motor",
+        "16 m/s catalogue airflow rate",
+        "Three speeds and 10.2 kg"
+      ],
+      "marketScope": "Truvox 2024 catalogue",
+      "evidence": "Truvox publishes the cited catalogue data.",
+      "scope": "230 V / 50 Hz catalogue version.",
+      "sourceIds": [
+        "truvox-air",
+        "truvox-brochure"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "truvox",
+      "brandName": "Truvox",
+      "modelName": "Hybrid Blower 3400",
+      "subtype": "Compact room and carpet dryer",
+      "distinguishingSpecifications": [
+        "320 W motor",
+        "14 m/s catalogue airflow rate",
+        "Three speeds and 8 kg"
+      ],
+      "marketScope": "Truvox 2024 catalogue",
+      "evidence": "Truvox publishes the cited model and data.",
+      "scope": "220–240 V / 50 Hz catalogue version.",
+      "sourceIds": [
+        "truvox-air",
+        "truvox-brochure"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "minuteman",
+      "brandName": "Minuteman",
+      "modelName": "A3S",
+      "subtype": "Stackable low-amperage air mover",
+      "distinguishingSpecifications": [
+        "1/3 hp motor",
+        "Three speeds",
+        "1050 CFM and 2.9 A stated data"
+      ],
+      "marketScope": "Minuteman official product page",
+      "evidence": "Minuteman publishes the cited specifications.",
+      "scope": "115 V / 60 Hz version.",
+      "sourceIds": [
+        "minuteman-a3s"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "clarke",
+      "brandName": "Clarke",
+      "modelName": "DirectAir Pro",
+      "subtype": "Three-position restoration air mover",
+      "distinguishingSpecifications": [
+        "1/3 hp motor",
+        "Three speeds",
+        "Onboard outlets for model-defined daisy chaining"
+      ],
+      "marketScope": "Clarke official fact sheet",
+      "evidence": "Clarke publishes the cited architecture and outlet feature.",
+      "scope": "Reviewed North American fact sheet; verify current availability.",
+      "sourceIds": [
+        "clarke-directair"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "ipc",
+      "brandName": "IPC",
+      "modelName": "AM3",
+      "subtype": "Four-position portable air mover",
+      "distinguishingSpecifications": [
+        "1/2 hp motor",
+        "Three speeds",
+        "2500 CFM and 5.0 A stated data"
+      ],
+      "marketScope": "IPC official specification sheet",
+      "evidence": "IPC publishes the cited specifications.",
+      "scope": "Reviewed 115 V-market document; verify current exact code.",
+      "sourceIds": [
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Accelerate carpet drying",
+      "attributeToVerify": "Measured moisture progress at the planned placement and room conditions",
+      "comparisonTrap": "Selecting by the largest airflow number",
+      "assessment": "Compare complete drying trials with matched initial conditions.",
+      "basis": "Airflow units and test points differ, and room conditions affect evaporation.",
+      "limitations": "No normalized drying-time test was found.",
+      "buyerAction": "Log moisture, RH, temperature, position, speed and elapsed time.",
+      "engineeringCheck": "Verify outlet direction, intake clearance and textile approval.",
+      "evidence": "Official sources publish differing airflow and positioning data.",
+      "scope": "Actual carpet and room.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-air",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Deploy multiple units",
+      "attributeToVerify": "Total current, receptacle limits, cord route and circuit protection",
+      "comparisonTrap": "Assuming onboard outlets permit any number of connected machines",
+      "assessment": "Build a circuit schedule from the exact manual and nameplate.",
+      "basis": "Electrical configurations and daisy-chain limits differ.",
+      "limitations": "No universal chain count is established.",
+      "buyerAction": "Have the planned circuit and downstream load checked before use.",
+      "engineeringCheck": "Confirm voltage, amperage, cord, GFCI or local protection and outlet rating.",
+      "evidence": "Official sources publish different electrical and outlet features.",
+      "scope": "Exact units and site circuit.",
+      "sourceIds": [
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Water-loss restoration",
+      "attributeToVerify": "Contamination assessment, moisture map, dehumidification and completion criteria",
+      "comparisonTrap": "Treating air movement as moisture removal",
+      "assessment": "Use air movers only as one controlled part of the documented drying system.",
+      "basis": "The machine function accelerates evaporation into the surrounding air.",
+      "limitations": "No remediation result or structural safety is established.",
+      "buyerAction": "Obtain the responsible professional drying plan and signed completion criteria.",
+      "engineeringCheck": "Verify material condition, airflow path, containment and moisture-removal capacity.",
+      "evidence": "Official sources cite water-damage use but do not establish universal project completion.",
+      "scope": "Actual site and professional scope.",
+      "sourceIds": [
+        "karcher-ab84",
+        "truvox-brochure",
+        "clarke-directair"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Electrical loading",
+      "reason": "Multiple air movers can overload a branch circuit or extension arrangement.",
+      "buyerAction": "Calculate nameplate current and every downstream load against the exact circuit.",
+      "evidence": "Official sources publish model-specific current and outlet features.",
+      "scope": "Regional unit and site circuit.",
+      "sourceIds": [
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Contamination and aerosol movement",
+      "reason": "Airflow can redistribute dust, microbes or other contaminants.",
+      "buyerAction": "Complete the site's contamination assessment before starting airflow.",
+      "evidence": "Manufacturers cite water-loss and drying uses; contamination suitability is not established.",
+      "scope": "Actual site and responsible professional decision.",
+      "sourceIds": [
+        "karcher-ab84",
+        "truvox-brochure"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Placement and stability",
+      "reason": "Blocked intakes, unstable angles, cords and outlets can create operating hazards.",
+      "buyerAction": "Follow exact approved positions and maintain intake, exit and pedestrian clearance.",
+      "evidence": "Official sources publish model-specific positions and portability features.",
+      "scope": "Exact model.",
+      "sourceIds": [
+        "truvox-brochure",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Moisture completion",
+      "reason": "A dry-looking surface does not prove concealed materials or the room have reached the target.",
+      "buyerAction": "Define and record material and ambient readings before, during and after operation.",
+      "evidence": "Air-mover product sources do not provide one universal completion criterion.",
+      "scope": "Actual material system and project plan.",
+      "sourceIds": [
+        "karcher-ab84",
+        "karcher-ab20",
+        "truvox-air",
+        "truvox-brochure",
+        "minuteman-a3s",
+        "clarke-directair",
+        "ipc-am3"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-80:2024",
+      "jurisdiction": "International",
+      "version": "2024",
+      "applicability": "Electrical-fan safety for products within its household-and-similar scope, including certain appliances used in shops and light industry.",
+      "evidence": "IEC publishes the standard scope and exclusions.",
+      "scope": "Do not assume it applies to an exact commercial air mover without its conformity documentation.",
+      "sourceIds": [
+        "iec-fan-safety"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2024-10-30",
+      "title": "IEC fan-safety edition published",
+      "summary": "IEC published the fourth edition of IEC 60335-2-80 with alignment and technical revisions for covered electric fans.",
+      "evidence": "IEC records the edition and publication date.",
+      "scope": "Applicability to an exact air mover requires confirmation.",
+      "sourceIds": [
+        "iec-fan-safety"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "karcher-ab84",
+      "title": "AB 84 Air Blower",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/commercial/air-blower/ab-84-10040390.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-ab20",
+      "title": "AB 20/1 Ec Professional Air Blower",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/uk/professional/carpet-upholstery-cleaners/air-blower.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "truvox-air",
+      "title": "Air Movers",
+      "publisher": "Truvox",
+      "sourceType": "manufacturer",
+      "url": "https://www.truvox.com/product-category/air-movers/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "truvox-brochure",
+      "title": "Truvox Product Catalogue 2024 - Air Movers",
+      "publisher": "Truvox",
+      "sourceType": "specification",
+      "url": "https://www.truvox.com/wp-content/uploads/2024/04/Truvox-Brochure-2024-ENGLISH-HiRES.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "minuteman-a3s",
+      "title": "A3S Air Mover",
+      "publisher": "Minuteman",
+      "sourceType": "manufacturer",
+      "url": "https://www.minutemanintl.com/ourproducts/carpet-care/a3s/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "clarke-directair",
+      "title": "DirectAir Pro Air Mover Fact Sheet",
+      "publisher": "Clarke",
+      "sourceType": "specification",
+      "url": "https://www.clarkeus.com/~/media/02-16/Clarke2/L3356C%20DirectAir%20Pro%20FS.ashx",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "ipc-am3",
+      "title": "AM3 Portable Air Mover",
+      "publisher": "IPC",
+      "sourceType": "specification",
+      "url": "https://www.ipcworldwide.com/wp-content/uploads/sites/7/2017/11/AM3.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "iec-fan-safety",
+      "title": "IEC 60335-2-80:2024",
+      "publisher": "International Electrotechnical Commission",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/70375",
+      "publishedAt": "2024-10-30",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}
