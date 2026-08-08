@@ -1,0 +1,182 @@
+{
+  "status": "published",
+  "slug": "truvox",
+  "name": "Truvox",
+  "aliases": ["Truvox International", "Truvox International Limited", "TRUVOX"],
+  "legalName": "Truvox International Limited",
+  "legalEntityNote": "Truvox International Limited is the active UK company named in the official site, warranty terms and Companies House record. Its latest filed 2025 group accounts identify Tacony Corporation as immediate parent and state that there is no single ultimate controlling party. Distributors, dealers and service agents can carry separate customer-facing responsibilities.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.truvox.com/",
+  "headline": "Truvox commercial floorcare, Tacony ownership and buyer checks",
+  "description": "A source-backed profile of Truvox International Limited, its Tacony ownership, UK commercial-floorcare portfolio, international distributor model and warranty checks.",
+  "metaDescription": "Truvox profile: Tacony ownership, UK floorcare company, scrubbers, vacuums, carpet machines, global channels and warranty checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Truvox or Tacony. Company and catalogue statements do not establish the manufacturer, origin, seller, importer, warranty or service route for every SKU and market.",
+  "headquarters": "Hedge End, Southampton, England, United Kingdom",
+  "founded": "Product history dates to 1960; Truvox International Limited was incorporated in 1962",
+  "heroImage": "/images/brands/truvox/hero-multiwash-pro-steam.webp",
+  "heroImageAlt": "Truvox Multiwash PRO Steam scrubber dryer shown in use and as a product view",
+  "heroSourceUrl": "https://www.truvox.com/wp-content/uploads/2024/05/MWPRO-Steam-1.png",
+  "logoImage": "/images/brands/truvox/logo.webp",
+  "logoImageAlt": "Truvox logo",
+  "logoSourceUrl": "https://www.truvox.com/wp-content/uploads/2023/11/truvox-logo.svg",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/truvox/tacony-company-channel-boundary.svg",
+      "alt": "Tacony Corporation Truvox International Limited and market channel responsibility boundary",
+      "caption": "The latest filed accounts identify Tacony Corporation as Truvox's immediate parent, while distributors, sellers and service providers remain distinct market roles."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/truvox/machine-warranty-check.svg",
+      "alt": "Truvox model serial seller warranty and service verification checklist",
+      "caption": "Truvox warranty acceptance depends on purchase and serial evidence, so seller authorization and local service capability should be documented before ordering."
+    }
+  ],
+  "ownership": {
+    "summary": "Truvox International Limited's group accounts for the year ended 31 December 2025 state that the company is a wholly owned subsidiary of Tacony Corporation, identify Tacony as the immediate parent and say there is no single ultimate controlling party. Tacony's official site says it acquired Truvox in 2007 and continues to present Truvox in its commercial-floorcare brand family.",
+    "parentCompany": "Tacony Corporation"
+  },
+  "leadership": [
+    {
+      "name": "Malcolm Robert Eneas",
+      "role": "Operations Director",
+      "context": "Companies House lists Malcolm Robert Eneas as an active director, and Truvox conformity materials identify him as Operations Director."
+    },
+    {
+      "name": "Gordon Robert McVean",
+      "role": "Director",
+      "context": "Companies House lists Gordon Robert McVean as an active director of Truvox International Limited."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Scrubber dryers",
+      "positioning": "Multiwash and related scrubber platforms target commercial and industrial hard-floor cleaning across different widths and power options.",
+      "buyerRelevance": "Validate floor type, brush, solution capacity, cable or battery, drying result, sanitation claim and practical productivity."
+    },
+    {
+      "name": "Single-disc and three-brush machines",
+      "positioning": "Orbis rotary machines and Cimex three-brush systems address polishing, scrubbing and specialist floor treatment.",
+      "buyerRelevance": "Confirm speed, pad or brush, chemical process, operator training and application-specific accessories."
+    },
+    {
+      "name": "Carpet and spray-extraction cleaners",
+      "positioning": "Hydromist and related extractors serve carpet and upholstery cleaning duties.",
+      "buyerRelevance": "Match pump, vacuum recovery, heater, tool set, chemical compatibility and drying time to the site."
+    },
+    {
+      "name": "Commercial vacuums, sweepers and air movers",
+      "positioning": "Valet vacuums, backpack and upright platforms, sweepers and air movers broaden routine facility-cleaning coverage.",
+      "buyerRelevance": "Check filtration, noise, electrical standard, batteries, bags, wear parts and authorized local support."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Truvox describes itself as a manufacturer and supplier of commercial and industrial floorcare machines based in Southampton, England.",
+      "scope": "Company-level positioning; it does not prove UK manufacture for every finished model or component",
+      "buyerCheck": "Request the exact model's manufacturer plate, production location, serial number, origin and conformity declaration."
+    },
+    {
+      "evidence": "Tacony says the Truvox International operation in Southampton designs, produces and supplies products internationally.",
+      "scope": "Parent-company description of the Truvox operation",
+      "buyerCheck": "Ask which design, assembly and test stages occur in Southampton for the contracted model and which assemblies are externally sourced."
+    },
+    {
+      "evidence": "Truvox publishes product-specific manuals, parts lists and technical literature through its official download centre.",
+      "scope": "Named product documentation and versions",
+      "buyerCheck": "Archive the exact-market manual, parts list, conformity document and configuration record delivered with the machine."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Truvox's 2024 catalogue says its machines are supplied in more than 70 countries.",
+      "scope": "Company-reported geographic reach at catalogue publication",
+      "buyerCheck": "Confirm the current authorized distributor, dealer territory, importer and service route in the destination country."
+    },
+    {
+      "evidence": "Truvox warranty terms say distributors, dealers and other resellers are responsible for warranty to their customers and require an original invoice carrying the machine serial number.",
+      "scope": "Published 2024 Truvox warranty terms and their stated product periods and conditions",
+      "buyerCheck": "Obtain the locally applicable warranty, retain the original serialized invoice and identify who accepts and resolves claims."
+    },
+    {
+      "evidence": "Truvox provides sales, downloads and support routes for product literature, manuals, parts and fault finding.",
+      "scope": "Company-published support framework; local capability varies",
+      "buyerCheck": "Confirm parts stock, trained technicians, response time, loan-machine policy and escalation contacts before award."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Truvox combines a long UK floorcare history with Tacony's broader commercial-floorcare platform and a multi-brand product architecture. Buyers should manage complexity through exact model, serial, distributor and warranty records.",
+    "competitorSlugs": ["columbus", "numatic", "taski", "wetrok"]
+  },
+  "developments": [
+    {
+      "date": "2007",
+      "title": "Tacony acquires Truvox International",
+      "summary": "Tacony's official brand history records its 2007 acquisition of Truvox International Limited.",
+      "sourceIds": ["tacony-brands"]
+    },
+    {
+      "date": "1962-07-31",
+      "title": "Truvox International Limited is incorporated",
+      "summary": "Companies House records the active UK company as incorporated on 31 July 1962 under its former Truvox Floorcraft name.",
+      "sourceIds": ["truvox-companies-house"]
+    },
+    {
+      "date": "1960",
+      "title": "Truvox floorcare history begins",
+      "summary": "The official product catalogue dates Truvox's floorcare history to 1960 and its early electrical polishing machines.",
+      "sourceIds": ["truvox-catalogue"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "truvox-home",
+      "title": "Truvox Global Floorcare Solutions",
+      "publisher": "Truvox",
+      "url": "https://www.truvox.com/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "truvox-catalogue",
+      "title": "Truvox Product Catalogue 2024",
+      "publisher": "Truvox",
+      "url": "https://www.truvox.com/wp-content/uploads/2024/04/Truvox-Brochure-2024-ENGLISH-HiRES.pdf",
+      "publishedAt": "2024",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "truvox-warranty",
+      "title": "Warranty Terms and Conditions 2024",
+      "publisher": "Truvox",
+      "url": "https://www.truvox.com/wp-content/uploads/2024/02/BP0053-Warranty-Terms-Issue-12.pdf",
+      "publishedAt": "2024-02-23",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "truvox-accounts-2025",
+      "title": "Group Accounts for the Year Ended 31 December 2025",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00731273/filing-history/MzUzMDMzNjcyOGFkaXF6a2N4/document?download=0&format=pdf",
+      "publishedAt": "2026-07-03",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "truvox-companies-house",
+      "title": "Truvox International Limited Company Overview",
+      "publisher": "UK Companies House",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/00731273",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tacony-brands",
+      "title": "Brands and Innovation: Truvox",
+      "publisher": "Tacony Corporation",
+      "url": "https://www.tacony.com/brands-innovation.html",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T08:35:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T08:35:00+08:00"
+}

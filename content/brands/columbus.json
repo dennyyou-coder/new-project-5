@@ -1,0 +1,182 @@
+{
+  "status": "published",
+  "slug": "columbus",
+  "name": "Columbus",
+  "aliases": ["columbus", "Columbus Cleaning Machines", "G. Staehle GmbH u. Co. KG"],
+  "legalName": "G. Staehle GmbH u. Co. KG",
+  "legalEntityNote": "G. Staehle GmbH u. Co. KG is the legal entity named in the Columbus website imprint and company profile. The company describes itself as a Stuttgart family business that remains owner-managed, but the reviewed public sources do not disclose the exact family shareholding chain. Dealers, importers and service partners can be separate entities.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.columbus-clean.com/en/",
+  "headline": "Columbus German cleaning machines, family business and buyer checks",
+  "description": "A source-backed profile of the Columbus cleaning-machine business operated by G. Staehle GmbH u. Co. KG, its Stuttgart production claims, portfolio and service checks.",
+  "metaDescription": "Columbus profile: G. Staehle company, Stuttgart cleaning-machine production, scrubbers, vacuums, channels, service and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Columbus or G. Staehle. Company and product statements do not establish the origin, importer, seller, configuration or warranty terms of every machine in every market.",
+  "headquarters": "Stuttgart, Baden-Württemberg, Germany",
+  "founded": "Columbus cleaning-machine history began in 1926; the Staehle business dates to 1899",
+  "heroImage": "/images/brands/columbus/hero-ara-66-bm-70-scrubber.webp",
+  "heroImageAlt": "Columbus ARA 66 BM 70 ride-on scrubber dryer in an official product image",
+  "heroSourceUrl": "https://www.columbus-clean.com/wp-content/uploads/2019/03/ARA66BM70-gb-01-scrubber-dryer-floor-scrubber-cleaning-machine-front.jpg",
+  "logoImage": "/images/brands/columbus/logo.webp",
+  "logoImageAlt": "Columbus logo",
+  "logoSourceUrl": "https://www.columbus-clean.com/wp-content/uploads/2025/09/logo-c.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/columbus/company-brand-channel-boundary.svg",
+      "alt": "Columbus legal company brand dealer importer and service responsibility boundary",
+      "caption": "G. Staehle GmbH u. Co. KG is the named Stuttgart operator, while owner-managed status does not disclose exact shares and local market roles remain separate."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/columbus/stuttgart-machine-check.svg",
+      "alt": "Columbus machine origin configuration productivity and local service verification checklist",
+      "caption": "Stuttgart production claims should be checked against the serial plate, delivered configuration, site performance and local service contract."
+    }
+  ],
+  "ownership": {
+    "summary": "Columbus identifies G. Staehle GmbH u. Co. KG as the company behind its cleaning-machine business and describes the operation as a Stuttgart family business that is still owner-managed. The official imprint names Staehle Verwaltungs GmbH as general partner and Jörg Peter Staehle and Marc Oliver Staehle as its managing directors. The reviewed sources do not name a parent company or disclose the exact current shareholding structure."
+  },
+  "leadership": [
+    {
+      "name": "Jörg Peter Staehle",
+      "role": "Managing Director of the general partner",
+      "context": "The official imprint identifies Jörg Peter Staehle as a managing director of Staehle Verwaltungs GmbH, the general partner representing G. Staehle GmbH u. Co. KG."
+    },
+    {
+      "name": "Marc Oliver Staehle",
+      "role": "Managing Director of the general partner",
+      "context": "The official imprint identifies Marc Oliver Staehle as a managing director of Staehle Verwaltungs GmbH, the general partner representing G. Staehle GmbH u. Co. KG."
+    },
+    {
+      "name": "Gustav Staehle",
+      "role": "Founder of the Columbus cleaning-machine line",
+      "context": "The official company history says Gustav Staehle invented a polishing machine with suction and brought the Columbus brand to life in 1926."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Scrubber dryers",
+      "positioning": "Walk-behind and ride-on machines span compact professional cleaning through large-area floorcare.",
+      "buyerRelevance": "Match working width, tank, brush pressure, battery, gradient, noise and realistic coverage to the facility."
+    },
+    {
+      "name": "Sweepers and industrial vacuums",
+      "positioning": "Sweeping and high-duty extraction equipment covers dry debris and demanding industrial environments.",
+      "buyerRelevance": "Specify debris, dust class, filtration, disposal, electrical standard and replacement-filter supply."
+    },
+    {
+      "name": "Commercial vacuums and spray extraction",
+      "positioning": "Dry, wet and spray-extraction systems support routine facility and textile cleaning.",
+      "buyerRelevance": "Confirm suction, filtration, accessories, chemical compatibility, noise and serviceable wear parts."
+    },
+    {
+      "name": "Single-disc, excenter and specialist machines",
+      "positioning": "Single-disc, excenter, escalator and walkway machines extend the full-range floorcare offer.",
+      "buyerRelevance": "Validate the exact floor process, pad or brush, operator training, transport and local accessory availability."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Columbus says it develops and produces cleaning machines in the heart of Stuttgart.",
+      "scope": "Company-level statement; it does not prove Stuttgart manufacture for every product, component or configured SKU",
+      "buyerCheck": "Request the exact machine's manufacturer plate, production site, serial number, country of origin and conformity declaration."
+    },
+    {
+      "evidence": "The official E 500|S page says Columbus has developed and manufactured single-disc machines in Stuttgart for more than 70 years and labels that family Made in Germany.",
+      "scope": "E 500|S and the stated single-disc machine tradition, not the entire portfolio",
+      "buyerCheck": "Do not extend this product-family claim to scrubbers, vacuums, robots or outsourced accessories without model evidence."
+    },
+    {
+      "evidence": "The ARA 66|BM 70 page provides model-specific dimensions, capacity, battery, motor, brush and option data.",
+      "scope": "ARA 66|BM 70 product family and offered configuration",
+      "buyerCheck": "Freeze the exact battery, charger, brush, dosing, safety options and market version in the purchase specification."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Columbus describes itself as Swabian and international and says its machines are distributed around the world.",
+      "scope": "Company positioning; it does not identify every active authorized distributor",
+      "buyerCheck": "Confirm dealer authorization, destination-market importer, contracting seller and service territory in writing."
+    },
+    {
+      "evidence": "Columbus provides product consultation, quotations, demonstrations and service routes through its official contact system.",
+      "scope": "Published company contact framework",
+      "buyerCheck": "Require a site demonstration with measured productivity, cleaning quality, refill time and operator feedback."
+    },
+    {
+      "evidence": "The German repair page states that repair support is centrally coordinated through more than 40 Columbus service bases and advertises a 48-hour repair or exchange service.",
+      "scope": "Germany-facing service statement; not evidence of the same coverage or response outside Germany",
+      "buyerCheck": "Obtain the local service provider, response commitment, parts stock, exclusions and exchange terms for the destination market."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Columbus competes as a long-established, owner-managed German cleaning-machine supplier with broad floorcare coverage and a durability-led service message. Buyers should separate model-specific German production evidence from wider portfolio and local-channel claims.",
+    "competitorSlugs": ["comac", "hako", "karcher", "wetrok"]
+  },
+  "developments": [
+    {
+      "date": "2010",
+      "title": "Columbus expands as a full-range provider",
+      "summary": "The official history says that from the 2010s Columbus added machine categories and digital fleet-management services.",
+      "sourceIds": ["columbus-company-profile"]
+    },
+    {
+      "date": "2002",
+      "title": "First Columbus ride-on automatic cleaning machine launches",
+      "summary": "Columbus identifies the ARA 80/100 BM 150 as its first ride-on automatic cleaning machine.",
+      "sourceIds": ["columbus-company-profile"]
+    },
+    {
+      "date": "1976",
+      "title": "RA 40 automatic cleaning machine launches",
+      "summary": "The company history records the design-award-winning RA 40 as Columbus's first automatic cleaning machine.",
+      "sourceIds": ["columbus-company-profile"]
+    },
+    {
+      "date": "1926",
+      "title": "Gustav Staehle creates the Columbus machine",
+      "summary": "Columbus traces its cleaning-machine history to Gustav Staehle's polishing machine with suction.",
+      "sourceIds": ["columbus-company-profile"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "columbus-company-profile",
+      "title": "Company Profile",
+      "publisher": "Columbus",
+      "url": "https://www.columbus-clean.com/en/about-us/company-profile/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "columbus-imprint",
+      "title": "Site Notice",
+      "publisher": "Columbus",
+      "url": "https://www.columbus-clean.com/en/imprint/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "columbus-ara",
+      "title": "ARA 66 BM 70 Ride-on Scrubber Dryer",
+      "publisher": "Columbus",
+      "url": "https://www.columbus-clean.com/en/product/ara-66bm-70/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "columbus-e500",
+      "title": "E 500 S Single-disc Machine",
+      "publisher": "Columbus",
+      "url": "https://www.columbus-clean.com/en/product/e-500s/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "columbus-service",
+      "title": "Repair and Maintenance",
+      "publisher": "Columbus",
+      "url": "https://www.columbus-clean.com/services/reparatur-wartung/",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T08:35:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T08:35:00+08:00"
+}
