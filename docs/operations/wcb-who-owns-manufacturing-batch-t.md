@@ -56,4 +56,9 @@ This record covers the seventh three-page release in the sitewide manufacturing-
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment, live verification and the priorities 16–20 quality-gate result after production passes.
+- GitHub PR: `#77`.
+- Squash-merge commit: `1dc2c974f0b4d91812090a9acf235195be012c52`.
+- Git-linked Vercel production deployment: `dpl_7skbuKKZ6wUmvBX9Ecu2vKGLnwDE`, status `READY` with the `worldcleanbiz.com` and `www.worldcleanbiz.com` aliases and no alias error.
+- The live De’Longhi, Braun Household and Breville/Sage routes each returned HTTP 200 and passed desktop 1440px plus mobile 390px checks for title, H1, description, canonical, BlogPosting schema, direct manufacturing answer and zero horizontal overflow.
+- All nine target article visuals and the shared author asset were available. All eight unique target-page internal links, Ownership Guide page 2 discovery, sitemap entries and browser-console checks passed.
+- The priorities 16–20 production quality gate passed across Einhell, Metabo/Metabo HPT, AEG Power Tools, De’Longhi and Braun Household: ten desktop/mobile combinations, image availability, internal links, Guide discovery, sitemap and console review were clean, and ten top-of-page screenshots had no clipping or overflow.
