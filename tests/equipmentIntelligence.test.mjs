@@ -203,6 +203,13 @@ test("floor scrubber pilot meets evidence, relationship and image gates", async 
   assert.ok(floorScrubber.representativeModels.length <= 8);
   assert.ok(new Set(floorScrubber.representativeModels.map(({ brandSlug }) => brandSlug)).size >= 4);
   assert.equal(floorScrubber.componentStack.some((item) => "href" in item), false);
+  assert.equal(floorScrubber.contentVisuals.length, 3);
+  assert.deepEqual(
+    new Set(floorScrubber.contentVisuals.map(({ placement }) => placement)),
+    new Set(["equipment-types", "application-fit", "component-stack"])
+  );
+  assert.equal(floorScrubber.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
+  assert.equal(floorScrubber.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 1);
 
   const heroMetadata = await sharp(
     path.join(process.cwd(), "public", floorScrubber.heroImage)
@@ -210,6 +217,18 @@ test("floor scrubber pilot meets evidence, relationship and image gates", async 
   assert.equal(heroMetadata.format, "webp");
   assert.ok((heroMetadata.width ?? 0) >= 1600);
   assert.ok((heroMetadata.height ?? 0) >= 1000);
+
+  for (const visual of floorScrubber.contentVisuals.filter(({ visualType }) => visualType === "official-photo")) {
+    const metadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+    assert.equal(metadata.format, "webp");
+    assert.ok((metadata.width ?? 0) >= 1500);
+    assert.ok((metadata.height ?? 0) >= 900);
+  }
+
+  const diagram = floorScrubber.contentVisuals.find(({ visualType }) => visualType === "wcb-diagram");
+  const diagramSource = readFileSync(path.join(process.cwd(), "public", diagram.src), "utf8");
+  assert.match(diagramSource, /<svg/);
+  assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
 });
 
 test("draft floor scrubber is excluded from production sitemap discovery", () => {

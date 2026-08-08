@@ -22,6 +22,32 @@
   "heroImageAlt": "Hako Scrubmaster B120 R ride-on floor scrubber shown as an official product reference",
   "heroImageCaption": "Official Hako product image of the Scrubmaster B120 R, used as a real-equipment reference for the floor scrubber category; the category includes other formats and brands.",
   "heroSourceUrl": "https://www.hako.com/fileadmin/user_upload/Scrubmaster/Hero-Bilder_SCM_2026/SCM-B120R_1000x1000.png",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/floor-scrubber/type-walk-behind-hako.webp",
+      "alt": "Two Hako Scrubmaster walk-behind floor scrubbers on a hard floor",
+      "caption": "Official Hako image of the Scrubmaster B35 and B50. It illustrates one walk-behind product format and does not define the whole category or constitute a product recommendation.",
+      "sourceUrl": "https://www.hako.com/fileadmin/user_upload/Scrubmaster/Scrubmaster_B35_B50/b35_b50_Header4.webp"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/floor-scrubber/application-healthcare-taski.webp",
+      "alt": "Operator using a TASKI ULTIMAXX floor scrubber in a healthcare corridor",
+      "caption": "Official TASKI healthcare-use image. The scene highlights occupied-space factors that still require site-specific assessment, including route width, people, noise, floor compatibility and recovery quality.",
+      "sourceUrl": "https://taski.com/wp-content/uploads/2025/02/TASKI-ULTIMAXX-1900-Healthcare-1-1-scaled-1.jpg"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/floor-scrubber/component-verification-map.svg",
+      "alt": "WCB diagram of four floor scrubber component verification zones",
+      "caption": "WCB verification map showing the identifiers and interfaces to confirm for the cleaning deck, recovery path, tanks, and battery and charger configuration.",
+      "sourceIds": ["tennant-t300-manual", "karcher-b50-manual", "nilfisk-sc500-manual", "hako-b25"]
+    }
+  ],
   "keyFacts": [
     {
       "label": "Cleaning mechanism",
