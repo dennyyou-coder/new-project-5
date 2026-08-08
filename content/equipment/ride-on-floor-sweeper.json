@@ -1,0 +1,695 @@
+{
+  "status": "published",
+  "slug": "ride-on-floor-sweeper",
+  "name": "Ride-On Floor Sweeper",
+  "aliases": [
+    "ride-on sweeper",
+    "rider floor sweeper",
+    "seated vacuum sweeper"
+  ],
+  "definition": "A commercial sweeper with an integrated seated operator position used during normal sweeping, with model-specific brush, hopper, dumping, dust-control, traction and power systems.",
+  "includedScope": [
+    "Battery and engine ride-on floor sweepers",
+    "Low-dump and high-dump commercial vacuum sweepers"
+  ],
+  "excludedScope": [
+    "Walk-behind, stand-on and autonomous sweepers",
+    "Street sweepers and combination sweeper-scrubbers",
+    "Hazardous-area use without explicit approval"
+  ],
+  "primaryApplications": [
+    "Warehouses and manufacturing",
+    "Logistics and parking areas",
+    "Retail and public buildings",
+    "Facility-service routes"
+  ],
+  "headline": "Ride-on floor sweeper types, hopper dumping, route geometry and buyer checks",
+  "description": "This profile explains seated ride-on sweepers, brush and filtration systems, low- and high-dump hoppers, turning and overhead constraints, representative models and procurement verification.",
+  "metaDescription": "Ride-on floor sweeper technical guide covering low- and high-dump types, dust control, specifications, models, route fit and buyer checks.",
+  "disclaimer": "This independent category reference is not model-specific purchasing, safety, hazardous-material, textile-care or repair advice. Confirm the current manual, exact configuration, serial range, local compliance and service terms before procurement or use.",
+  "heroImage": "/images/equipment/ride-on-floor-sweeper/hero.webp",
+  "heroImageAlt": "Operator driving a Hako Sweepmaster ride-on floor sweeper in a production hall",
+  "heroImageCaption": "Official Hako application image of a ride-on sweeper in a production environment; route and debris suitability remain site-specific.",
+  "heroSourceUrl": "https://www.hako.com/fileadmin/Hero_Images/Kehrsaugmaschine-sweepmaster-1200-rh-fertigungshalle-reinigen.jpg",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/ride-on-floor-sweeper/type-format.webp",
+      "alt": "Tennant S16 ride-on sweeper operating in a warehouse",
+      "caption": "Official Tennant application image illustrating a compact seated sweeper in a warehouse.",
+      "sourceUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/sweeper%20riders/s16/images/s16-warehouse.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/ride-on-floor-sweeper/application-use.webp",
+      "alt": "Tennant S16 ride-on sweeper with access panels open",
+      "caption": "Official Tennant image showing service access; the exact maintenance and isolation procedure must follow the current manual.",
+      "sourceUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/sweeper%20riders/s16/images/s16-all-open.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/ride-on-floor-sweeper/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/ride-on-floor-sweeper/component-verification-map-mobile.svg",
+      "alt": "WCB ride-on floor sweeper component verification map",
+      "caption": "WCB diagram separating driver envelope, brush path, hopper, filter, power system checks. It does not establish part compatibility.",
+      "sourceIds": [
+        "tennant-s16",
+        "nilfisk-ride",
+        "karcher-km100",
+        "hako-1200",
+        "taski-6500"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "Integrated seated operator position",
+      "evidence": "Reviewed official sources classify the named machines as ride-on sweepers.",
+      "scope": "Named commercial models; stand-on machines are excluded.",
+      "sourceIds": [
+        "tennant-s16",
+        "nilfisk-ride",
+        "karcher-km100",
+        "hako-1200",
+        "taski-6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Dumping formats",
+      "value": "Manual low dump or powered high dump",
+      "evidence": "Official specifications distinguish low- and high-dump configurations.",
+      "scope": "Named machines and options.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100",
+        "taski-6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Route constraints",
+      "value": "Turning, slope, overhead and operating mass are configuration-specific",
+      "evidence": "Manufacturer sources publish dimensions, turning and selected operating limits.",
+      "scope": "Exact delivered configuration.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100",
+        "wetrok-zefir"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Buyer verification",
+      "value": "Witness turning, braking, slopes, dumping, filter service and a full representative route",
+      "evidence": "Official specifications use model- and configuration-specific reporting boundaries.",
+      "scope": "Quoted regional configuration and actual buyer site.",
+      "sourceIds": [
+        "tennant-s16",
+        "nilfisk-ride",
+        "karcher-km100",
+        "hako-1200",
+        "taski-6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Edge gathering",
+      "componentFamily": "Side brush",
+      "role": "Extends the sweeping path and gathers edge debris.",
+      "evidence": "Official sources publish single- and dual-side-brush paths.",
+      "scope": "Fitted configuration.",
+      "sourceIds": [
+        "tennant-s16",
+        "taski-6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Main sweeping",
+      "componentFamily": "Main roller brush",
+      "role": "Transfers debris into the hopper path.",
+      "evidence": "Manufacturer sources identify main brush systems.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Collection and dump",
+      "componentFamily": "Hopper and lift",
+      "role": "Stores and discharges collected debris.",
+      "evidence": "Official pages describe low- or high-dump arrangements.",
+      "scope": "Configuration-specific limits.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Dust and propulsion",
+      "componentFamily": "Filter, vacuum and drive",
+      "role": "Controls dust and moves the seated machine.",
+      "evidence": "Official sources publish filtration and power-system details.",
+      "scope": "No hazardous-dust approval inferred.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100",
+        "wetrok-zefir"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Compact low dump",
+      "taskScale": "Medium indoor routes",
+      "operatorRelationship": "Seated driving with manual hopper removal",
+      "spaceConstraints": "Compact turning and storage still required",
+      "limitations": "Manual dumping can add labor and exposure.",
+      "evidence": "TASKI and Tennant publish compact ride-on configurations.",
+      "scope": "Named machines.",
+      "sourceIds": [
+        "taski-6500",
+        "tennant-s16"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "High dump",
+      "taskScale": "Longer industrial routes",
+      "operatorRelationship": "Seated operation with powered hopper lift",
+      "spaceConstraints": "Dump height and overhead envelope increase",
+      "limitations": "Raised-hopper stability and clearance require exact manual limits.",
+      "evidence": "Tennant and Kärcher describe high-dump systems.",
+      "scope": "Named configurations.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Battery or engine power",
+      "taskScale": "Duty cycle and environment determine power choice",
+      "operatorRelationship": "Powered traction, brushes and vacuum",
+      "spaceConstraints": "Charging, fuel, ventilation and emissions differ",
+      "limitations": "Indoor suitability cannot be inferred from size.",
+      "evidence": "Official ranges disclose configuration-specific power systems.",
+      "scope": "Named regional products.",
+      "sourceIds": [
+        "tennant-s16",
+        "hako-1200",
+        "wetrok-zefir"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Sweeping path",
+      "purchasingMeaning": "Nominal width with stated side-brush fitment",
+      "reportingBoundary": "Single or dual side brush",
+      "comparisonCaution": "Compare like configurations only.",
+      "evidence": "Official sources publish multiple paths.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "tennant-s16",
+        "taski-6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hopper and dump height",
+      "purchasingMeaning": "Collection duty cycle and container interface",
+      "reportingBoundary": "Volume and mechanism, not debris mass",
+      "comparisonCaution": "Raised-hopper clearance and load limits are separate.",
+      "evidence": "Official pages publish hopper and dumping data.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Turning and dimensions",
+      "purchasingMeaning": "Aisle, doorway, lift and storage fit",
+      "reportingBoundary": "Machine with quoted options",
+      "comparisonCaution": "Working width is not the full operating envelope.",
+      "evidence": "Manufacturer specifications publish dimensions and turning data.",
+      "scope": "Named configurations.",
+      "sourceIds": [
+        "tennant-s16",
+        "taski-6500",
+        "wetrok-zefir"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Theoretical productivity",
+      "purchasingMeaning": "Nominal width-speed output",
+      "reportingBoundary": "Manufacturer calculation",
+      "comparisonCaution": "Dumping, turns and filter service are excluded.",
+      "evidence": "Official sources publish theoretical or maximum output.",
+      "scope": "Source-specific definitions.",
+      "sourceIds": [
+        "tennant-s16",
+        "taski-6500",
+        "wetrok-zefir"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Large warehouse routes",
+      "wcbAssessment": "Use a route trial including narrow aisles, travel and a full dumping cycle.",
+      "basis": "Official industrial positioning and dimensional data.",
+      "limitations": "No achieved output is established.",
+      "buyerAction": "Measure clean area per labor hour and residual dust.",
+      "evidence": "Manufacturers position named ride-on sweepers for warehouses and industry.",
+      "scope": "Approved dry debris and surfaces.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "assessment": "Use a route trial including narrow aisles, travel and a full dumping cycle.",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Parking and logistics areas",
+      "wcbAssessment": "Gradients, rough joints, wind and overhead barriers need witnessed checks.",
+      "basis": "Official indoor/outdoor application statements.",
+      "limitations": "Road approval and wet pickup are excluded.",
+      "buyerAction": "Trial representative ramps and surfaces.",
+      "evidence": "Reviewed ranges include indoor and outdoor use.",
+      "scope": "Manufacturer-approved conditions.",
+      "sourceIds": [
+        "tennant-s16",
+        "taski-6500"
+      ],
+      "assessment": "Gradients, rough joints, wind and overhead barriers need witnessed checks.",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Dust-sensitive interiors",
+      "wcbAssessment": "Battery power does not by itself establish dust containment.",
+      "basis": "Published filter and power-system data.",
+      "limitations": "No hazardous-dust rating inferred.",
+      "buyerAction": "Verify whole-machine sealing and approved dust class in writing.",
+      "evidence": "Official sources describe battery and filtration systems.",
+      "scope": "Named configurations.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "assessment": "Battery power does not by itself establish dust containment.",
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Brush system",
+      "role": "Gathers and lifts debris.",
+      "variants": [
+        "Single or dual side brush",
+        "Model-specific main roller"
+      ],
+      "criticalChecks": [
+        "Part number",
+        "Bristle material",
+        "Wear adjustment"
+      ],
+      "evidence": "Official manuals identify model-specific brushes.",
+      "scope": "No cross-model compatibility.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hopper and lift",
+      "role": "Contains and discharges debris.",
+      "variants": [
+        "Low dump",
+        "Hydraulic high dump"
+      ],
+      "criticalChecks": [
+        "Volume and load",
+        "Dump height",
+        "Raised clearance",
+        "Interlocks"
+      ],
+      "evidence": "Official sources document different dumping systems.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Filter and vacuum path",
+      "role": "Controls airborne dust.",
+      "variants": [
+        "Panel filter",
+        "Round filter",
+        "Optional HEPA stage"
+      ],
+      "criticalChecks": [
+        "Filter identifier",
+        "Seal condition",
+        "Cleaning mechanism",
+        "Approved dust"
+      ],
+      "evidence": "Manufacturer pages describe filtration systems.",
+      "scope": "No hazardous-dust performance inferred.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Drive, brakes and power",
+      "role": "Supports seated propulsion and machine functions.",
+      "variants": [
+        "Battery electric",
+        "Engine on selected ranges"
+      ],
+      "criticalChecks": [
+        "Operating mass",
+        "Brake",
+        "Slope limit",
+        "Battery and charger"
+      ],
+      "evidence": "Official sources publish configuration-specific drive data.",
+      "scope": "Named machines.",
+      "sourceIds": [
+        "tennant-s16",
+        "hako-1200",
+        "wetrok-zefir"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "tennant",
+      "brandName": "Tennant",
+      "modelName": "S16",
+      "subtype": "Compact battery ride-on",
+      "distinguishingSpecifications": [
+        "150 L hopper",
+        "low- and high-dump versions"
+      ],
+      "marketScope": "Tennant Europe",
+      "evidence": "Official page identifies format and configurations.",
+      "scope": "European product page.",
+      "sourceIds": [
+        "tennant-s16"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "SW4000",
+      "subtype": "Ride-on sweeper",
+      "distinguishingSpecifications": [
+        "seated format",
+        "configuration-specific side brushes"
+      ],
+      "marketScope": "Nilfisk global",
+      "evidence": "Official range identifies SW4000 as a ride-on sweeper.",
+      "scope": "Global ride-on range.",
+      "sourceIds": [
+        "nilfisk-ride"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "KM 100/120 R Bp",
+      "subtype": "Battery high-dump ride-on vacuum sweeper",
+      "distinguishingSpecifications": [
+        "120 L container",
+        "hydraulic high dump"
+      ],
+      "marketScope": "Kärcher Kenya",
+      "evidence": "Official page publishes format and features.",
+      "scope": "Regional product number.",
+      "sourceIds": [
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "hako",
+      "brandName": "Hako",
+      "modelName": "Sweepmaster 1200 RH",
+      "subtype": "Ride-on vacuum sweeper",
+      "distinguishingSpecifications": [
+        "ride-on format",
+        "high-dump configuration"
+      ],
+      "marketScope": "Hako international",
+      "evidence": "Official Hako page identifies format.",
+      "scope": "International range.",
+      "sourceIds": [
+        "hako-1200"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "taski",
+      "brandName": "TASKI",
+      "modelName": "balimat 6500",
+      "subtype": "Compact battery ride-on",
+      "distinguishingSpecifications": [
+        "up to 110 cm working width",
+        "90 L hopper"
+      ],
+      "marketScope": "TASKI global",
+      "evidence": "Official page publishes specifications.",
+      "scope": "Global page.",
+      "sourceIds": [
+        "taski-6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "wetrok",
+      "brandName": "Wetrok",
+      "modelName": "Speedmatic Zefir",
+      "subtype": "Battery ride-on sweeper",
+      "distinguishingSpecifications": [
+        "145 cm working width",
+        "150 L tank"
+      ],
+      "marketScope": "Wetrok webshop",
+      "evidence": "Official range publishes type and specifications.",
+      "scope": "Reviewed online configuration.",
+      "sourceIds": [
+        "wetrok-zefir"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Large-area sweeping",
+      "attributeToVerify": "Achieved full-route output",
+      "comparisonTrap": "Buying by theoretical m²/h",
+      "assessment": "Time travel, turns, dumping and filter care.",
+      "basis": "Nominal figures exclude site losses.",
+      "limitations": "No universal correction factor.",
+      "buyerAction": "Run a representative witnessed trial.",
+      "engineeringCheck": "Record area, debris, stops and residual dust.",
+      "evidence": "Official sources publish nominal output.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "tennant-s16",
+        "taski-6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Container dumping",
+      "attributeToVerify": "Dump interface and raised envelope",
+      "comparisonTrap": "Comparing hopper litres alone",
+      "assessment": "Match the machine to the actual disposal container.",
+      "basis": "Dump mechanism and clearance change the workflow.",
+      "limitations": "No site container is assessed.",
+      "buyerAction": "Witness a full load and dump cycle.",
+      "engineeringCheck": "Verify load limit, height, reach and interlocks.",
+      "evidence": "Official sources distinguish low and high dump.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Indoor battery operation",
+      "attributeToVerify": "Battery, charger, filtration and duty cycle",
+      "comparisonTrap": "Assuming battery power proves indoor suitability",
+      "assessment": "Review emissions, dust, runtime and charging together.",
+      "basis": "Power source and dust control are separate systems.",
+      "limitations": "No indoor approval is inferred.",
+      "buyerAction": "Request exact electrical and filter configuration.",
+      "engineeringCheck": "Confirm chemistry, input supply, seals and approved dust.",
+      "evidence": "Official sources publish battery and filter data.",
+      "scope": "Named configurations.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Turning, slope and overhead envelope",
+      "reason": "Safe operation and dumping require more than nominal width.",
+      "buyerAction": "Measure and demonstrate the full route and dump point.",
+      "evidence": "Official specifications publish dimensions and selected limits.",
+      "scope": "Delivered configuration.",
+      "sourceIds": [
+        "tennant-s16",
+        "taski-6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Operating mass and floor loading",
+      "reason": "Battery and hopper configuration change mass.",
+      "buyerAction": "Obtain configured mass and verify lifts and floor limits.",
+      "evidence": "Manufacturer specifications identify configuration-specific weights.",
+      "scope": "Exact quoted machine.",
+      "sourceIds": [
+        "tennant-s16",
+        "karcher-km100"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Brush, filter, battery and charger IDs",
+      "reason": "Service and electrical interfaces are model-specific.",
+      "buyerAction": "Record model, serial and every quoted part number.",
+      "evidence": "Official documentation is configuration-specific.",
+      "scope": "No compatibility inferred.",
+      "sourceIds": [
+        "tennant-s16",
+        "wetrok-zefir"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72:2021",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Particular safety requirements for powered commercial floor-treatment machines, including sweepers; it is not a cleaning-performance ranking.",
+      "evidence": "IEC publishes edition 5.0 and its commercial floor-treatment scope.",
+      "scope": "Confirm regional adoption and exact machine classification.",
+      "sourceIds": [
+        "iec-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2021-06-17",
+      "title": "IEC commercial floor-treatment safety edition published",
+      "summary": "IEC published edition 5.0 of IEC 60335-2-72.",
+      "evidence": "The IEC catalogue records the edition and publication date.",
+      "scope": "Safety scope only; not a category-wide performance claim.",
+      "sourceIds": [
+        "iec-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iec-72",
+      "title": "IEC 60335-2-72:2021",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64778",
+      "publishedAt": "2021-06-17",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tennant-s16",
+      "title": "S16 Battery-Powered Compact Ride-On Sweeper",
+      "publisher": "Tennant Company",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_eu/1/machines/sweepers/product.s16.battery-powered-compact-ride-on-sweeper.m-s16h.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-ride",
+      "title": "Ride-On Sweepers",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/professional/products/floor-cleaning/sweepers/ride-on-sweepers/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-km100",
+      "title": "KM 100/120 R Bp Ride-On Vacuum Sweeper",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.karcher.com/ke/professional/sweepers-and-vacuum-sweepers/vacuum-sweepers-ride-on/km-100-120-r-bp-12801700.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "hako-1200",
+      "title": "Sweepmaster 1200 RH",
+      "publisher": "Hako",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/produkte/reinigungstechnik/kehr-und-kehrsaugmaschinen/ride-on-kehrsaugmaschinen/sweepmaster-1200-rh",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "taski-6500",
+      "title": "balimat 6500",
+      "publisher": "TASKI",
+      "sourceType": "manufacturer",
+      "url": "https://taski.com/taski-products/balimat-6500/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "wetrok-zefir",
+      "title": "Wetrok Sweepers Range",
+      "publisher": "Wetrok",
+      "sourceType": "manufacturer",
+      "url": "https://shop.wetrok.com/en-us/machines/sweepers/sweepers/",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}

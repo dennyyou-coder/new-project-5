@@ -1,0 +1,690 @@
+{
+  "status": "published",
+  "slug": "walk-behind-floor-sweeper",
+  "name": "Walk-Behind Floor Sweeper",
+  "aliases": [
+    "walk-behind sweeper",
+    "pedestrian sweeper",
+    "push floor sweeper"
+  ],
+  "definition": "A commercial sweeper whose operator walks behind and steers the machine during normal sweeping, with manual propulsion or powered traction and model-specific brush, hopper and dust-control systems.",
+  "includedScope": [
+    "Manual push sweepers",
+    "Battery or engine powered walk-behind vacuum sweepers"
+  ],
+  "excludedScope": [
+    "Ride-on, stand-on and autonomous sweepers",
+    "Street sweepers and sweeper-scrubbers",
+    "Hazardous or combustible-dust work without explicit approval"
+  ],
+  "primaryApplications": [
+    "Warehouses and manufacturing",
+    "Logistics and parking areas",
+    "Retail and public buildings",
+    "Facility-service routes"
+  ],
+  "headline": "Walk-behind floor sweeper types, dust control, hopper systems and buyer checks",
+  "description": "This profile separates manual and powered walk-behind sweepers and explains brush paths, hopper handling, dust control, route fit and model-specific procurement evidence.",
+  "metaDescription": "Walk-behind floor sweeper technical guide covering manual and powered types, dust filters, hoppers, specifications, models and buyer checks.",
+  "disclaimer": "This independent category reference is not model-specific purchasing, safety, hazardous-material, textile-care or repair advice. Confirm the current manual, exact configuration, serial range, local compliance and service terms before procurement or use.",
+  "heroImage": "/images/equipment/walk-behind-floor-sweeper/hero.webp",
+  "heroImageAlt": "Kärcher KM 75/40 W Bp walk-behind floor sweeper",
+  "heroImageCaption": "Official Kärcher product image showing a powered walk-behind vacuum sweeper; manual push formats are also included.",
+  "heroSourceUrl": "https://s1.kaercher-media.com/mam/98407390/mainproduct/52157/d0.jpg",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/walk-behind-floor-sweeper/type-format.webp",
+      "alt": "Tennant S10 walk-behind sweeper operating in a warehouse",
+      "caption": "Official Tennant application image of an S10 in a warehouse; achieved pickup and route output require a site trial.",
+      "sourceUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/sweeper%20walk-behinds/S10/Images/S10--warehouse.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/walk-behind-floor-sweeper/application-use.webp",
+      "alt": "Operator emptying the hopper of a Tennant S10 walk-behind sweeper",
+      "caption": "Official Tennant image illustrating manual hopper handling, an important labor and dust-exposure check.",
+      "sourceUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/sweeper%20walk-behinds/S10/Images/S10-env-hopper-dump.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/walk-behind-floor-sweeper/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/walk-behind-floor-sweeper/component-verification-map-mobile.svg",
+      "alt": "WCB walk-behind floor sweeper component verification map",
+      "caption": "WCB diagram separating brush path, hopper, filter, traction, operator route checks. It does not establish part compatibility.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900",
+        "karcher-km75",
+        "hako-m600",
+        "taski-walk"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "Operator walks behind during normal sweeping",
+      "evidence": "Reviewed official ranges explicitly classify manual and powered machines as walk-behind sweepers.",
+      "scope": "Named commercial models; no universal width threshold.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900",
+        "karcher-km75",
+        "hako-m600",
+        "taski-walk"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Propulsion",
+      "value": "Manual push or powered traction",
+      "evidence": "Official sources distinguish manual, battery and powered walk-behind formats.",
+      "scope": "Named models and regional configurations.",
+      "sourceIds": [
+        "karcher-km75",
+        "tennant-s10",
+        "taski-walk",
+        "wetrok-twister"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Dust control",
+      "value": "Passive collection or active vacuum and filtration",
+      "evidence": "Powered vacuum sweeper sources publish filter systems; manual products may omit active suction.",
+      "scope": "Exact machine architecture.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900",
+        "karcher-km75"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Buyer verification",
+      "value": "Measure complete width, turning, operator force, hopper handling and dust exposure",
+      "evidence": "Official specifications use model- and configuration-specific reporting boundaries.",
+      "scope": "Quoted regional configuration and actual buyer site.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900",
+        "karcher-km75",
+        "hako-m600",
+        "taski-walk"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Edge gathering",
+      "componentFamily": "Side brush",
+      "role": "Moves edge debris toward the main path.",
+      "evidence": "Official product sources identify one or two side brushes.",
+      "scope": "Fitted configurations.",
+      "sourceIds": [
+        "karcher-km75",
+        "taski-walk"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Main sweeping",
+      "componentFamily": "Main brush or tandem rollers",
+      "role": "Transfers loose debris toward the hopper.",
+      "evidence": "Manufacturer sources identify cylindrical or tandem brush systems.",
+      "scope": "Named machines only.",
+      "sourceIds": [
+        "tennant-s10",
+        "taski-walk"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Collection",
+      "componentFamily": "Debris hopper",
+      "role": "Stores material for manual emptying.",
+      "evidence": "Official specifications publish hopper volume and handling features.",
+      "scope": "Volume is not a mass rating.",
+      "sourceIds": [
+        "nilfisk-sw900",
+        "wetrok-twister"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Dust management",
+      "componentFamily": "Vacuum fan and filter",
+      "role": "Reduces airborne dust on equipped machines.",
+      "evidence": "Powered-model sources describe filtration and filter cleaning.",
+      "scope": "No hazardous-dust approval is inferred.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Manual push",
+      "taskScale": "Small areas and rapid spot routes",
+      "operatorRelationship": "Operator provides propulsion",
+      "spaceConstraints": "Compact storage and tight turns",
+      "limitations": "Operator effort and dust control differ from powered vacuum sweepers.",
+      "evidence": "TASKI lists manual walk-behind models.",
+      "scope": "Named manual products.",
+      "sourceIds": [
+        "taski-walk"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Battery walk-behind",
+      "taskScale": "Small to medium commercial routes",
+      "operatorRelationship": "Operator walks behind powered traction or brush drive",
+      "spaceConstraints": "Charging and turning clearance required",
+      "limitations": "Runtime and productivity depend on configuration and route.",
+      "evidence": "Nilfisk, Kärcher and Wetrok list battery walk-behind machines.",
+      "scope": "Named regional configurations.",
+      "sourceIds": [
+        "nilfisk-sw900",
+        "karcher-km75",
+        "wetrok-twister"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Industrial powered walk-behind",
+      "taskScale": "Heavier debris and longer routes",
+      "operatorRelationship": "Powered drive with manual steering and dumping",
+      "spaceConstraints": "Larger aisle-turn and hopper handling space",
+      "limitations": "Dust and debris approval remains model-specific.",
+      "evidence": "Tennant identifies S10 as an industrial walk-behind sweeper.",
+      "scope": "S10 documentation.",
+      "sourceIds": [
+        "tennant-s10"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Sweeping path",
+      "purchasingMeaning": "Nominal brush coverage",
+      "reportingBoundary": "With stated side-brush fitment",
+      "comparisonCaution": "Do not convert width directly into achieved output.",
+      "evidence": "Official sources publish configuration-specific paths.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900",
+        "karcher-km75"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hopper volume",
+      "purchasingMeaning": "Nominal debris storage",
+      "reportingBoundary": "Volume, not debris mass",
+      "comparisonCaution": "Density and emptying ergonomics affect usable duty cycle.",
+      "evidence": "Official sources publish hopper volumes.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900",
+        "wetrok-twister"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Theoretical area performance",
+      "purchasingMeaning": "Nominal width-speed output",
+      "reportingBoundary": "Manufacturer calculation",
+      "comparisonCaution": "Turns, dumping and filter service are excluded.",
+      "evidence": "Nilfisk and Wetrok publish theoretical figures.",
+      "scope": "Source definitions only.",
+      "sourceIds": [
+        "nilfisk-sw900",
+        "wetrok-twister"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Machine envelope",
+      "purchasingMeaning": "Door, aisle, lift and storage fit",
+      "reportingBoundary": "Complete delivered configuration",
+      "comparisonCaution": "Cleaning path is narrower than total machine or turning space.",
+      "evidence": "Official specifications publish dimensions separately from working width.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Warehouse aisles",
+      "wcbAssessment": "A full-route trial should include tight turns, representative debris and hopper emptying.",
+      "basis": "Official industrial positioning and dimensional data.",
+      "limitations": "No achieved site output is established.",
+      "buyerAction": "Time a complete route and inspect residual dust.",
+      "evidence": "Manufacturers position reviewed machines for warehouses and industry.",
+      "scope": "Approved dry debris and surfaces.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900"
+      ],
+      "assessment": "A full-route trial should include tight turns, representative debris and hopper emptying.",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Entrances and public areas",
+      "wcbAssessment": "Noise, operator force, dust release and pedestrian separation matter more than maximum width.",
+      "basis": "Compact manual and battery formats.",
+      "limitations": "Occupied-area suitability is not established.",
+      "buyerAction": "Trial the machine during representative traffic conditions.",
+      "evidence": "TASKI and Kärcher position compact sweepers for indoor and outdoor commercial areas.",
+      "scope": "Named products.",
+      "sourceIds": [
+        "taski-walk",
+        "karcher-km75"
+      ],
+      "assessment": "Noise, operator force, dust release and pedestrian separation matter more than maximum width.",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Parking and perimeter routes",
+      "wcbAssessment": "Surface joints, gradients, wind and wet debris require demonstration.",
+      "basis": "Official indoor/outdoor positioning.",
+      "limitations": "Road use and wet pickup are outside scope.",
+      "buyerAction": "Test ramps and rough sections and confirm storage conditions.",
+      "evidence": "Reviewed sources include indoor and outdoor use for selected models.",
+      "scope": "Manufacturer-approved surfaces.",
+      "sourceIds": [
+        "nilfisk-sw900",
+        "wetrok-twister"
+      ],
+      "assessment": "Surface joints, gradients, wind and wet debris require demonstration.",
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Main and side brushes",
+      "role": "Gather and lift debris.",
+      "variants": [
+        "Single roller",
+        "Tandem rollers",
+        "One or two side brushes"
+      ],
+      "criticalChecks": [
+        "Part number",
+        "Bristle material",
+        "Wear adjustment"
+      ],
+      "evidence": "Official sources document model-specific brush systems.",
+      "scope": "No cross-model compatibility.",
+      "sourceIds": [
+        "tennant-s10",
+        "taski-walk"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hopper",
+      "role": "Contains collected debris.",
+      "variants": [
+        "Lift-out bin",
+        "Wheeled hopper"
+      ],
+      "criticalChecks": [
+        "Volume",
+        "Mass limit",
+        "Lift and dump ergonomics"
+      ],
+      "evidence": "Manufacturer sources publish hopper arrangements.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "nilfisk-sw900",
+        "tennant-s10"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Filter and vacuum path",
+      "role": "Controls airborne dust on vacuum sweepers.",
+      "variants": [
+        "Panel filter",
+        "Manual or automatic shaker"
+      ],
+      "criticalChecks": [
+        "Filter identifier",
+        "Seal condition",
+        "Approved dust type"
+      ],
+      "evidence": "Powered-model sources describe filtration.",
+      "scope": "No hazardous-dust rating inferred.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Traction and controls",
+      "role": "Supports propulsion and steering.",
+      "variants": [
+        "Manual",
+        "Battery traction"
+      ],
+      "criticalChecks": [
+        "Operator force",
+        "Speed control",
+        "Brake",
+        "Battery and charger"
+      ],
+      "evidence": "Official sources distinguish manual and powered formats.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "karcher-km75",
+        "wetrok-twister"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "tennant",
+      "brandName": "Tennant",
+      "modelName": "S10",
+      "subtype": "Industrial battery walk-behind",
+      "distinguishingSpecifications": [
+        "860 mm cleaning path",
+        "79 L hopper"
+      ],
+      "marketScope": "Tennant US",
+      "evidence": "Official page identifies format and specifications.",
+      "scope": "US configuration.",
+      "sourceIds": [
+        "tennant-s10"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "SW900",
+      "subtype": "Battery walk-behind vacuum sweeper",
+      "distinguishingSpecifications": [
+        "60 L hopper",
+        "up to two side brooms"
+      ],
+      "marketScope": "Nilfisk global",
+      "evidence": "Official page publishes format and specifications.",
+      "scope": "Global product family.",
+      "sourceIds": [
+        "nilfisk-sw900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "KM 75/40 W Bp",
+      "subtype": "Battery walk-behind vacuum sweeper",
+      "distinguishingSpecifications": [
+        "750 mm path with side brush",
+        "40 L container"
+      ],
+      "marketScope": "Kärcher US",
+      "evidence": "Official page identifies the walk-behind format.",
+      "scope": "US product number.",
+      "sourceIds": [
+        "karcher-km75"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "hako",
+      "brandName": "Hako",
+      "modelName": "Sweepmaster M600",
+      "subtype": "Manual push sweeper",
+      "distinguishingSpecifications": [
+        "Manual propulsion",
+        "compact format"
+      ],
+      "marketScope": "Hako international",
+      "evidence": "Official Hako page classifies the model as manual walk-behind.",
+      "scope": "International page.",
+      "sourceIds": [
+        "hako-m600"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "taski",
+      "brandName": "TASKI",
+      "modelName": "balimat 3300",
+      "subtype": "Large walk-behind sweeper",
+      "distinguishingSpecifications": [
+        "Tandem roller system",
+        "dual side brushes"
+      ],
+      "marketScope": "TASKI global",
+      "evidence": "Official range identifies the model and format.",
+      "scope": "Global range page.",
+      "sourceIds": [
+        "taski-walk"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "wetrok",
+      "brandName": "Wetrok",
+      "modelName": "Speedmatic Twister",
+      "subtype": "Battery walk-behind sweeper",
+      "distinguishingSpecifications": [
+        "78 cm working width",
+        "40 L tank"
+      ],
+      "marketScope": "Wetrok webshop",
+      "evidence": "Official page publishes type and specifications.",
+      "scope": "Reviewed online configuration.",
+      "sourceIds": [
+        "wetrok-twister"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Routine dry-debris removal",
+      "attributeToVerify": "Achieved route productivity",
+      "comparisonTrap": "Treating theoretical m²/h as delivered output",
+      "assessment": "Use a timed full route.",
+      "basis": "Official values exclude site losses.",
+      "limitations": "No universal correction factor.",
+      "buyerAction": "Include travel, turns, dumping and filter care.",
+      "engineeringCheck": "Record debris load and remaining dust.",
+      "evidence": "Manufacturers publish nominal or theoretical outputs.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "nilfisk-sw900",
+        "wetrok-twister"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Dust-sensitive indoor work",
+      "attributeToVerify": "Whole-machine dust control",
+      "comparisonTrap": "Buying by filter area alone",
+      "assessment": "Inspect media, seals, airflow and cleaning together.",
+      "basis": "Published attributes have different boundaries.",
+      "limitations": "No hazardous-dust approval.",
+      "buyerAction": "Obtain written approval for the dust and trial the machine.",
+      "engineeringCheck": "Verify filter and seal part numbers.",
+      "evidence": "Official sources describe model-specific filters.",
+      "scope": "Named vacuum sweepers.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Multi-floor deployment",
+      "attributeToVerify": "Operator handling and route fit",
+      "comparisonTrap": "Selecting by cleaning width alone",
+      "assessment": "Measure the entire route and emptying task.",
+      "basis": "Machine and turning envelopes exceed brush width.",
+      "limitations": "Published data cannot represent every obstruction.",
+      "buyerAction": "Demonstrate doors, turns, ramps and storage.",
+      "engineeringCheck": "Measure operator push, lift and dump demands.",
+      "evidence": "Official sources publish dimensions and hopper arrangements.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "tennant-s10",
+        "karcher-km75"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Debris and dust classification",
+      "reason": "Wet, hot, toxic or combustible material may be prohibited.",
+      "buyerAction": "Document material and obtain written manufacturer approval.",
+      "evidence": "Manufacturer documentation limits intended material and use.",
+      "scope": "Exact model and environment.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Complete route envelope",
+      "reason": "Brush width does not equal machine or turning width.",
+      "buyerAction": "Measure doors, aisles, ramps, lifts and storage.",
+      "evidence": "Specifications separate path and dimensions.",
+      "scope": "Delivered configuration.",
+      "sourceIds": [
+        "tennant-s10",
+        "nilfisk-sw900"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Brush, filter and battery identifiers",
+      "reason": "Wear parts and electrical systems are model-specific.",
+      "buyerAction": "Record model, serial range and exact service part numbers.",
+      "evidence": "Official sources describe configuration-specific systems.",
+      "scope": "No compatibility inferred.",
+      "sourceIds": [
+        "tennant-s10",
+        "karcher-km75"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72:2021",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Particular safety requirements for powered commercial floor-treatment machines, including sweepers; it is not a cleaning-performance ranking.",
+      "evidence": "IEC publishes edition 5.0 and its commercial floor-treatment scope.",
+      "scope": "Confirm regional adoption and exact machine classification.",
+      "sourceIds": [
+        "iec-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2021-06-17",
+      "title": "IEC commercial floor-treatment safety edition published",
+      "summary": "IEC published edition 5.0 of IEC 60335-2-72.",
+      "evidence": "The IEC catalogue records the edition and publication date.",
+      "scope": "Safety scope only; not a category-wide performance claim.",
+      "sourceIds": [
+        "iec-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iec-72",
+      "title": "IEC 60335-2-72:2021",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64778",
+      "publishedAt": "2021-06-17",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tennant-s10",
+      "title": "S10 Walk-Behind Sweeper",
+      "publisher": "Tennant Company",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/machines/sweepers/product.s10.sweeper-walk-behind-s10.2000050.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-sw900",
+      "title": "SW900 Walk-Behind Sweeper",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/professional/products/floor-cleaning/sweepers/walk-behind-sweepers/sw900%2B9084110010/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-km75",
+      "title": "KM 75/40 W Bp Walk-Behind Sweeper",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/professional/floor-sweepers/walk-behind-floor-sweepers/km-75-40-w-bp-98407390.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "hako-m600",
+      "title": "Sweepmaster M600",
+      "publisher": "Hako",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/produkte/reinigungstechnik/kehr-und-kehrsaugmaschinen/walk-behind-kehrsaugmaschinen/sweepmaster-m600",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "taski-walk",
+      "title": "Walk Behind Sweepers",
+      "publisher": "TASKI",
+      "sourceType": "manufacturer",
+      "url": "https://taski.com/products-innovations-solutions/products/sweepers/walk-behind-sweepers/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "wetrok-twister",
+      "title": "Speedmatic Twister",
+      "publisher": "Wetrok",
+      "sourceType": "manufacturer",
+      "url": "https://shop.wetrok.com/en-us/machines/sweepers/sweepers/speedmatic-twister/speedmatic-twister-71500",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}

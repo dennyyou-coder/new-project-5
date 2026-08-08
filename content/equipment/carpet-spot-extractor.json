@@ -1,0 +1,715 @@
+{
+  "status": "published",
+  "slug": "carpet-spot-extractor",
+  "name": "Carpet Spot Extractor",
+  "aliases": [
+    "carpet spotter",
+    "portable spot extractor",
+    "upholstery spot extractor"
+  ],
+  "definition": "A portable commercial spray-extraction machine intended for localised carpet, stair, upholstery or vehicle-interior cleaning by applying solution through a hand or small floor tool and recovering the liquid into a separate tank.",
+  "includedScope": [
+    "Portable commercial carpet and upholstery spotters",
+    "Compact spray extractors supplied with hand or small floor tools"
+  ],
+  "excludedScope": [
+    "Domestic-only spot cleaners",
+    "Self-contained full-area carpet extractors",
+    "Steam cleaners and dry-compound systems",
+    "Textiles not approved by their manufacturer"
+  ],
+  "primaryApplications": [
+    "Carpet spill response",
+    "Upholstery and stairs",
+    "Hotel and office touch-up",
+    "Vehicle interiors"
+  ],
+  "headline": "Carpet spot extractor tanks, spray systems, recovery performance and buyer checks",
+  "description": "This technical profile defines commercial portable spot extractors and explains solution delivery, recovery, tanks, tools, textile boundaries, representative models and procurement verification.",
+  "metaDescription": "Commercial carpet spot extractor guide covering portable spotters, tanks, spray pressure, vacuum recovery, tools, representative models and buyer checks.",
+  "disclaimer": "This independent category reference is not model-specific purchasing, safety, hazardous-material, textile-care or repair advice. Confirm the current manual, exact configuration, serial range, local compliance and service terms before procurement or use.",
+  "heroImage": "/images/equipment/carpet-spot-extractor/hero.webp",
+  "heroImageAlt": "Kärcher Puzzi 8/1 carpet spot extractor used on hotel upholstery",
+  "heroImageCaption": "Official Kärcher application image showing portable spray extraction on upholstery; textile approval and chemistry remain site-specific.",
+  "heroSourceUrl": "https://s1.kaercher-media.com/images/pim/Puzzi_8_1_Adv_sofa_hotel_app_04_CI20502x502.jpg",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/carpet-spot-extractor/type-format.webp",
+      "alt": "Kärcher Puzzi 8/1 portable spray extractor and upholstery tool",
+      "caption": "Official Kärcher product image illustrating a compact separate-tank spray extractor.",
+      "sourceUrl": "https://s1.kaercher-media.com/mam/11002400/mainproduct/196789/d0.jpg"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/carpet-spot-extractor/application-use.webp",
+      "alt": "BISSELL Little Green Pro commercial spot cleaner",
+      "caption": "Official BISSELL Commercial image illustrating a smaller portable spot-cleaner format; specifications are model-specific.",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0756/6380/2517/files/BGSS1481_01_1200x1200.jpg"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/carpet-spot-extractor/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/carpet-spot-extractor/component-verification-map-mobile.svg",
+      "alt": "WCB carpet spot extractor component verification map",
+      "caption": "WCB diagram separating solution tank, pump, tool, recovery airflow, waste tank checks. It does not establish part compatibility.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "karcher-manual",
+        "bissell-bgss",
+        "tornado-ps",
+        "tornado-marathon"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "Portable localised spray extraction",
+      "evidence": "Reviewed official sources position named machines for spots, upholstery, stairs or small textile areas.",
+      "scope": "Commercial portable products; no universal tank or pressure threshold.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "karcher-manual",
+        "bissell-bgss",
+        "tornado-ps",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Fluid path",
+      "value": "Clean solution delivery and separate dirty-water recovery",
+      "evidence": "Official manuals and product pages describe spray application and vacuum recovery.",
+      "scope": "Named products and supplied tools.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "truvox-hml",
+        "tornado-ps"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Textile boundary",
+      "value": "Fibre, backing, adhesive, dye and care-code approval remain site-specific",
+      "evidence": "Manufacturer instructions require suitability checks and define intended textile use.",
+      "scope": "Exact textile and chemistry.",
+      "sourceIds": [
+        "karcher-manual",
+        "bissell-bgss"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Buyer verification",
+      "value": "Trial the exact textile, chemical, tool and technique; measure recovery and drying",
+      "evidence": "Official specifications use model- and configuration-specific reporting boundaries.",
+      "scope": "Quoted regional configuration and actual buyer site.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "karcher-manual",
+        "bissell-bgss",
+        "tornado-ps",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Solution preparation",
+      "componentFamily": "Clean-water tank and chemistry",
+      "role": "Holds approved cleaning solution.",
+      "evidence": "Official sources publish solution tank arrangements.",
+      "scope": "Approved chemistry and temperature only.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Pressurised delivery",
+      "componentFamily": "Pump, hose and spray jet",
+      "role": "Applies solution through the selected tool.",
+      "evidence": "Manufacturer pages publish spray pressure or pump details for named models.",
+      "scope": "Exact tool and configuration.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-marathon",
+        "clarke-bext"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Agitation and contact",
+      "componentFamily": "Hand, stair or floor tool",
+      "role": "Contacts the textile and supports soil release.",
+      "evidence": "Official sources list supplied or optional tools.",
+      "scope": "Tool and textile-specific use.",
+      "sourceIds": [
+        "bissell-bgss",
+        "tornado-ps"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Liquid recovery",
+      "componentFamily": "Vacuum motor and waste tank",
+      "role": "Recovers applied solution and suspended soil.",
+      "evidence": "Official specifications publish vacuum and recovery-tank attributes.",
+      "scope": "Published values do not establish achieved drying.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Hand-tool spotter",
+      "taskScale": "Spills, upholstery and vehicle interiors",
+      "operatorRelationship": "Operator carries or rolls the tank and works through a hose tool",
+      "spaceConstraints": "Compact transport and storage",
+      "limitations": "Small tanks increase refill and dump frequency.",
+      "evidence": "BISSELL, Kärcher and Tornado position compact hand-tool products for spot tasks.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "bissell-bgss",
+        "karcher-puzzi",
+        "tornado-ps"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Portable floor-and-upholstery extractor",
+      "taskScale": "Spots, stairs and small carpet areas",
+      "operatorRelationship": "Separate tank unit follows a hose and floor or hand tool",
+      "spaceConstraints": "Hose reach and cord routing required",
+      "limitations": "Not a self-contained full-area machine.",
+      "evidence": "Tornado and Clarke list compact spotter packages with tools.",
+      "scope": "Named packages.",
+      "sourceIds": [
+        "tornado-marathon",
+        "clarke-bext"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Heated or unheated",
+      "taskScale": "Chemistry and soil-dependent",
+      "operatorRelationship": "Operator manages electrical load and solution temperature",
+      "spaceConstraints": "Heated variants can change supply requirements",
+      "limitations": "Heat is not universally suitable for every textile or chemical.",
+      "evidence": "Official products disclose heated or unheated configurations.",
+      "scope": "Exact model and approved textile.",
+      "sourceIds": [
+        "bissell-bgss",
+        "truvox-hml"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Solution and recovery tank volume",
+      "purchasingMeaning": "Refill and dump interval",
+      "reportingBoundary": "Nominal volume, not usable cycle",
+      "comparisonCaution": "Recovery capacity and foaming may stop work before nominal fill.",
+      "evidence": "Official pages publish tank capacities.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "bissell-bgss",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Spray pressure and flow",
+      "purchasingMeaning": "Solution-delivery characteristics",
+      "reportingBoundary": "Pump and tool configuration",
+      "comparisonCaution": "Higher pressure does not prove safer or better textile cleaning.",
+      "evidence": "Manufacturer specifications publish pressure or flow for selected models.",
+      "scope": "Exact configuration.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-marathon",
+        "clarke-bext"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Airflow and water lift",
+      "purchasingMeaning": "Inputs to recovery-system comparison",
+      "reportingBoundary": "Measurement method and reporting point vary",
+      "comparisonCaution": "Neither value alone establishes residual moisture or drying time.",
+      "evidence": "Official sources publish model-specific vacuum data.",
+      "scope": "Named models and source methods.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hose, cord and weight",
+      "purchasingMeaning": "Reach, transport and operator handling",
+      "reportingBoundary": "Supplied package and regional voltage",
+      "comparisonCaution": "Long reach can increase trip and cable-management risk.",
+      "evidence": "Official specifications publish dimensions, weight or reach.",
+      "scope": "Exact regional package.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "bissell-bgss",
+        "tornado-ps"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Carpet spill response",
+      "wcbAssessment": "Response speed and a verified spotting process matter more than maximum tank size.",
+      "basis": "Official spot-cleaning positioning.",
+      "limitations": "No stain-removal guarantee.",
+      "buyerAction": "Trial representative spills on an approved sample and document dwell and recovery passes.",
+      "evidence": "Manufacturers position named machines for spots and stains.",
+      "scope": "Approved carpet and chemistry.",
+      "sourceIds": [
+        "bissell-bgss",
+        "tornado-ps"
+      ],
+      "assessment": "Response speed and a verified spotting process matter more than maximum tank size.",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Upholstery and stairs",
+      "wcbAssessment": "Tool geometry, hose handling and textile care approval should be jointly tested.",
+      "basis": "Official hand-tool and upholstery positioning.",
+      "limitations": "Not every fabric is wet-cleanable.",
+      "buyerAction": "Check the textile care code and test an inconspicuous sample.",
+      "evidence": "Kärcher, BISSELL and Truvox describe upholstery use.",
+      "scope": "Approved textiles.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "bissell-bgss",
+        "truvox-hml"
+      ],
+      "assessment": "Tool geometry, hose handling and textile care approval should be jointly tested.",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Vehicle interiors",
+      "wcbAssessment": "Compact transport and residual moisture are critical to turnaround.",
+      "basis": "Official vehicle-interior positioning.",
+      "limitations": "Electronics and material-specific restrictions remain outside this profile.",
+      "buyerAction": "Protect electrical areas and record drying time before return to service.",
+      "evidence": "Official sources include vehicle-interior applications.",
+      "scope": "Approved surfaces and tools.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-ps"
+      ],
+      "assessment": "Compact transport and residual moisture are critical to turnaround.",
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Clean-solution tank and pump",
+      "role": "Stores and delivers approved solution.",
+      "variants": [
+        "Removable or fixed tank",
+        "Heated or unheated system"
+      ],
+      "criticalChecks": [
+        "Tank part number",
+        "Pump pressure",
+        "Temperature limit",
+        "Chemical approval"
+      ],
+      "evidence": "Official sources publish tank and delivery attributes.",
+      "scope": "Exact model.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hose and extraction tool",
+      "role": "Applies and recovers solution at the textile.",
+      "variants": [
+        "Upholstery tool",
+        "Stair tool",
+        "Small floor wand"
+      ],
+      "criticalChecks": [
+        "Coupling",
+        "Jet",
+        "Tool width",
+        "Hose set"
+      ],
+      "evidence": "Manufacturers list supplied and optional tools.",
+      "scope": "No cross-model compatibility.",
+      "sourceIds": [
+        "bissell-bgss",
+        "tornado-ps",
+        "clarke-bext"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Vacuum motor and airflow path",
+      "role": "Recovers liquid and suspended soil.",
+      "variants": [
+        "Model-specific vacuum motors",
+        "Different hose and tool paths"
+      ],
+      "criticalChecks": [
+        "Motor part number",
+        "Seal condition",
+        "Float shutoff",
+        "Hose integrity"
+      ],
+      "evidence": "Official specifications and manuals describe recovery systems.",
+      "scope": "No achieved drying inferred.",
+      "sourceIds": [
+        "karcher-manual",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Recovery tank and controls",
+      "role": "Contains waste liquid and supports safe shutdown and disposal.",
+      "variants": [
+        "Lift-out tank",
+        "Removable bucket"
+      ],
+      "criticalChecks": [
+        "Capacity",
+        "Full-tank shutoff",
+        "Drain and rinse access",
+        "Switch and cord"
+      ],
+      "evidence": "Official sources describe recovery-tank handling.",
+      "scope": "Named products.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "Puzzi 8/1",
+      "subtype": "Compact upholstery and spot spray extractor",
+      "distinguishingSpecifications": [
+        "8/7 L fresh/dirty tanks",
+        "short upholstery nozzle"
+      ],
+      "marketScope": "Kärcher international",
+      "evidence": "Official page publishes intended use and specifications.",
+      "scope": "220–240 V international configuration.",
+      "sourceIds": [
+        "karcher-puzzi"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "Puzzi 10/1",
+      "subtype": "Portable carpet spray extractor",
+      "distinguishingSpecifications": [
+        "portable tank format",
+        "floor and upholstery tool configurations"
+      ],
+      "marketScope": "Kärcher professional range",
+      "evidence": "Official manufacturer range identifies the model.",
+      "scope": "Confirm regional product number.",
+      "sourceIds": [
+        "karcher-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "bissell",
+      "brandName": "BISSELL",
+      "modelName": "BGSS1481 Little Green Pro",
+      "subtype": "Commercial portable spot cleaner",
+      "distinguishingSpecifications": [
+        "0.75 gal tank",
+        "corded unheated format"
+      ],
+      "marketScope": "BISSELL Commercial US",
+      "evidence": "Official page publishes commercial spot-cleaner specifications.",
+      "scope": "US model.",
+      "sourceIds": [
+        "bissell-bgss"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "tornado-industries",
+      "brandName": "Tornado",
+      "modelName": "PS 8220 Spotter",
+      "subtype": "Professional portable spotter",
+      "distinguishingSpecifications": [
+        "2 gal recovery tank",
+        "1.2 hp vacuum motor"
+      ],
+      "marketScope": "Tornado US",
+      "evidence": "Official page publishes format and specifications.",
+      "scope": "US model 98220.",
+      "sourceIds": [
+        "tornado-ps"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "tornado-industries",
+      "brandName": "Tornado",
+      "modelName": "Marathon 350",
+      "subtype": "Portable carpet spotter with tools",
+      "distinguishingSpecifications": [
+        "1.3 gal solution tank",
+        "1.5 gal recovery tank"
+      ],
+      "marketScope": "Tornado US",
+      "evidence": "Official page publishes package and specifications.",
+      "scope": "US model 98132.",
+      "sourceIds": [
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "clarke",
+      "brandName": "Clarke",
+      "modelName": "BextSpot",
+      "subtype": "Compact carpet spotting system",
+      "distinguishingSpecifications": [
+        "2.5 gal recovery tank",
+        "55 psi solution spray"
+      ],
+      "marketScope": "Clarke US brochure",
+      "evidence": "Official brochure publishes format and specifications.",
+      "scope": "Brochure package.",
+      "sourceIds": [
+        "clarke-bext"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "truvox",
+      "brandName": "Truvox",
+      "modelName": "Hydromist Lite",
+      "subtype": "Portable carpet and upholstery extractor",
+      "distinguishingSpecifications": [
+        "commercial indoor use",
+        "carpet and upholstery scope"
+      ],
+      "marketScope": "Truvox manual",
+      "evidence": "Official manual identifies model and intended use.",
+      "scope": "Manual issue reviewed.",
+      "sourceIds": [
+        "truvox-hml"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Rapid spot response",
+      "attributeToVerify": "Setup, tool access and achieved recovery",
+      "comparisonTrap": "Selecting by tank litres alone",
+      "assessment": "Trial the complete response process.",
+      "basis": "Portability and workflow are separate from capacity.",
+      "limitations": "No stain-removal guarantee.",
+      "buyerAction": "Time setup, treatment, recovery, disposal and cleanup.",
+      "engineeringCheck": "Record residual moisture and return-to-service time.",
+      "evidence": "Official sources position compact products for spot tasks.",
+      "scope": "Named products and approved textiles.",
+      "sourceIds": [
+        "bissell-bgss",
+        "tornado-ps"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Textile-safe cleaning",
+      "attributeToVerify": "Fibre, dye, backing, adhesive and chemistry approval",
+      "comparisonTrap": "Assuming commercial equipment is safe for every textile",
+      "assessment": "Use written textile and chemical approval plus a sample test.",
+      "basis": "Wet-cleaning suitability is material-specific.",
+      "limitations": "This profile does not assess a particular textile.",
+      "buyerAction": "Document the care code and test inconspicuously.",
+      "engineeringCheck": "Record solution temperature, concentration and dwell.",
+      "evidence": "Manufacturer instructions define intended use and cautions.",
+      "scope": "Exact textile and chemistry.",
+      "sourceIds": [
+        "karcher-manual",
+        "bissell-bgss"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Low-moisture turnaround",
+      "attributeToVerify": "Achieved liquid recovery and drying",
+      "comparisonTrap": "Ranking by airflow or water lift alone",
+      "assessment": "Measure the result under controlled technique.",
+      "basis": "Published vacuum metrics have different boundaries.",
+      "limitations": "No cross-brand laboratory comparison.",
+      "buyerAction": "Use the same textile, soil, solution dose and passes in a trial.",
+      "engineeringCheck": "Weigh or moisture-test before and after recovery where practical.",
+      "evidence": "Official sources publish selected recovery-system inputs.",
+      "scope": "Named models.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "tornado-marathon"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Textile and chemistry approval",
+      "reason": "Wet cleaning can affect dye, backing, adhesive and finish.",
+      "buyerAction": "Obtain written approval and test an inconspicuous area.",
+      "evidence": "Official instructions limit intended use and technique.",
+      "scope": "Exact textile and solution.",
+      "sourceIds": [
+        "karcher-manual",
+        "bissell-bgss"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Electrical supply and cord management",
+      "reason": "Voltage, wet work and hose or cord routing create site constraints.",
+      "buyerAction": "Confirm regional voltage, protection and a safe work-zone plan.",
+      "evidence": "Official specifications publish electrical configurations.",
+      "scope": "Exact regional model and local rules.",
+      "sourceIds": [
+        "karcher-puzzi",
+        "bissell-bgss"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Tool, hose and tank identifiers",
+      "reason": "Couplings, jets, seals and shutoffs are model-specific.",
+      "buyerAction": "Record all model, serial and service part numbers.",
+      "evidence": "Official manuals and parts information are model-specific.",
+      "scope": "No compatibility inferred.",
+      "sourceIds": [
+        "karcher-manual",
+        "tornado-ps"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "BS/EN 60335-2-68",
+      "jurisdiction": "United Kingdom and Europe",
+      "version": "Applied edition cited by manufacturer",
+      "applicability": "Commercial wet-and-dry vacuum-cleaner safety standard cited in the Truvox Hydromist Lite declaration; it does not rank cleaning or drying performance.",
+      "evidence": "The official Truvox manual cites BS/EN 60335-2-68 in its conformity declaration.",
+      "scope": "Hydromist Lite declaration and applicable regional requirements; verify each quoted model separately.",
+      "sourceIds": [
+        "truvox-hml"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2022-12-08",
+      "title": "Hydromist Lite conformity declaration dated",
+      "summary": "Truvox dated the reviewed Hydromist Lite declaration and cited applied harmonised standards.",
+      "evidence": "The official manual records the date and cited standards.",
+      "scope": "Named model manual only; not category-wide certification.",
+      "sourceIds": [
+        "truvox-hml"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "karcher-puzzi",
+      "title": "Puzzi 8/1 Spray Extraction Machine",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/professional/carpet-cleaner/spray-extraction-machines/puzzi-8-1-11002400.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-manual",
+      "title": "Puzzi 8/1 Operating Instructions",
+      "publisher": "Kärcher",
+      "sourceType": "manual",
+      "url": "https://www.kaercher.com/documents/manuals/html/BTA-5765075-000-01/EN.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "bissell-bgss",
+      "title": "BGSS1481 Little Green Pro Commercial Spot Cleaner",
+      "publisher": "BISSELL Commercial",
+      "sourceType": "manufacturer",
+      "url": "https://www.bissellcommercial.com/products/bgss1481",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tornado-ps",
+      "title": "PS 8220 Spotter",
+      "publisher": "Tornado Industries",
+      "sourceType": "manufacturer",
+      "url": "https://tornadovac.com/store/product44ff.html?pid=18",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tornado-marathon",
+      "title": "Marathon 350 Carpet Spotter",
+      "publisher": "Tornado Industries",
+      "sourceType": "manufacturer",
+      "url": "https://www.tornadovac.com/tornado-industries-marathon-350-carpet-extractor-98132.html?pid=258",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "clarke-bext",
+      "title": "BextSpot Carpet Cleaning System",
+      "publisher": "Clarke",
+      "sourceType": "specification",
+      "url": "https://www.clarkeus.com/~/media/Products/Carpet%20Extractors/ClarkeUS/PDF/BextSpot/CarEx79701A9-09BextSpotCFS.ashx",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "truvox-hml",
+      "title": "Hydromist Lite User Manual",
+      "publisher": "Truvox International",
+      "sourceType": "manual",
+      "url": "https://www.truvox.com/wp-content/uploads/2023/11/03-8179-0000-Hydromist-Lite-User-Manual-Issue-6-12-22.pdf",
+      "publishedAt": "2022-12-08",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}
