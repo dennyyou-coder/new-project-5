@@ -48,4 +48,8 @@ This record covers the eighth three-page release in the sitewide manufacturing-a
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- GitHub PR: `#79`.
+- Squash-merge commit: `44da1a4a7db978cb318df6fecca34df31ec092d0`.
+- Git-linked Vercel production deployment: `dpl_E8KAEHn1kXgMZDDzBxHH1RFgkH7Z`, status `READY` with the `worldcleanbiz.com` and `www.worldcleanbiz.com` aliases and no alias error.
+- The live GARDENA, Hayward and Nilfisk routes each returned HTTP 200 and passed desktop 1440px plus mobile 390px checks for title, H1, description, canonical, BlogPosting schema, direct manufacturing answer and zero horizontal overflow.
+- All nine unique target-page image URLs, all 12 unique internal links, Ownership Guide pages 2, 7 and 3, sitemap entries and browser-console checks passed.
