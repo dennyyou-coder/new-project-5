@@ -73,6 +73,9 @@ export type EquipmentProfile = {
 
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+const sourceTypes = new Set([
+  "manual", "specification", "manufacturer", "standard", "regulator", "service", "technical"
+]);
 
 function equipmentDirectory() {
   return path.join(process.cwd(), "content", "equipment");
@@ -189,6 +192,7 @@ export function validateEquipmentProfile(
       sourceIds.add(source.id);
     }
     if (!isHttpUrl(source.url)) errors.push(`${label} url must be HTTP(S).`);
+    if (!sourceTypes.has(String(source.sourceType ?? ""))) errors.push(`${label} sourceType is not supported.`);
     if (!datePattern.test(String(source.accessedAt ?? ""))) errors.push(`${label} accessedAt must use YYYY-MM-DD.`);
   });
 
@@ -201,6 +205,45 @@ export function validateEquipmentProfile(
     if (rows.length === 0) errors.push(`${collection} must contain at least one row.`);
     rows.forEach((row, index) => validateEvidence(row, `${collection} row ${index + 1}`, sourceIds, errors));
   }
+
+  const requiredCollectionFields: Record<string, string[]> = {
+    keyFacts: ["label", "value"],
+    systemFlow: ["name", "componentFamily", "role"],
+    variants: ["name", "taskScale", "operatorRelationship", "spaceConstraints", "limitations"],
+    performanceMetrics: ["name", "purchasingMeaning", "reportingBoundary", "comparisonCaution"],
+    applicationFit: ["application", "wcbAssessment", "basis", "limitations", "buyerAction"],
+    componentStack: ["name", "role"],
+    procurementDecisions: ["intendedTask", "attributeToVerify", "comparisonTrap", "assessment", "basis", "limitations", "buyerAction"],
+    engineeringChecks: ["check", "reason", "buyerAction"],
+    standards: ["name", "jurisdiction", "applicability"],
+    developments: ["date", "title", "summary"]
+  };
+  for (const [collection, fields] of Object.entries(requiredCollectionFields)) {
+    const rows = Array.isArray(profile[collection]) ? profile[collection] : [];
+    rows.forEach((row, index) => requireFields(row, `${collection} row ${index + 1}`, fields, errors));
+  }
+
+  const systemOrders = new Set<number>();
+  (Array.isArray(profile.systemFlow) ? profile.systemFlow : []).forEach((row, index) => {
+    if (!isRecord(row) || !Number.isInteger(row.order) || Number(row.order) < 1) {
+      errors.push(`systemFlow row ${index + 1} order must be a positive integer.`);
+    } else if (systemOrders.has(Number(row.order))) {
+      errors.push(`systemFlow row ${index + 1} order must be unique.`);
+    } else {
+      systemOrders.add(Number(row.order));
+    }
+  });
+
+  (Array.isArray(profile.componentStack) ? profile.componentStack : []).forEach((row, index) => {
+    if (!isRecord(row) || !textArray(row.variants)) errors.push(`componentStack row ${index + 1} variants is required.`);
+    if (!isRecord(row) || !textArray(row.criticalChecks)) errors.push(`componentStack row ${index + 1} criticalChecks is required.`);
+  });
+
+  (Array.isArray(profile.developments) ? profile.developments : []).forEach((row, index) => {
+    if (!isRecord(row) || !datePattern.test(String(row.date ?? ""))) {
+      errors.push(`developments row ${index + 1} date must use YYYY-MM-DD.`);
+    }
+  });
 
   const assessmentCollections = ["applicationFit", "procurementDecisions"] as const;
   for (const collection of assessmentCollections) {

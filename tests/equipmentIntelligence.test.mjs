@@ -129,12 +129,16 @@ test("validator rejects evidence and relationship failures", () => {
   invalid.applicationFit[0].limitations = "";
   invalid.representativeModels[0].brandSlug = "unpublished-brand";
   invalid.componentStack[0].href = "/components/squeegee";
+  invalid.variants[0].spaceConstraints = "";
+  invalid.sources[0].sourceType = "blog";
   const errors = validateEquipmentProfile(invalid, publishedBrandSlugs).join("\n");
   assert.match(errors, /at least five sources/i);
   assert.match(errors, /unknown source/i);
   assert.match(errors, /limitations/i);
   assert.match(errors, /published brand/i);
   assert.match(errors, /component links/i);
+  assert.match(errors, /spaceConstraints/i);
+  assert.match(errors, /sourceType is not supported/i);
 });
 
 test("published loader, sitemap and schemas exclude unsupported semantics", () => {
