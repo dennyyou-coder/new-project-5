@@ -241,6 +241,32 @@ test("published floor scrubber is included in production sitemap discovery", () 
   assert.equal(urls.some((url) => url.endsWith("/equipment")), true);
 });
 
+test("second equipment batch meets evidence relationship and visual gates", () => {
+  const realPublishedBrandSlugs = new Set(
+    getPublishedBrandProfiles(getInsights()).map(({ slug }) => slug)
+  );
+  const profiles = getEquipmentProfiles();
+
+  for (const slug of ["floor-sweeper", "carpet-extractor", "wet-dry-vacuum"]) {
+    const profile = profiles.find((candidate) => candidate?.slug === slug);
+    assert.ok(profile, `${slug} profile should exist`);
+    assert.equal(profile.status, "draft");
+    assert.deepEqual(validateEquipmentProfile(profile, realPublishedBrandSlugs), []);
+    assert.ok(profile.sources.length >= 5);
+    assert.ok(profile.representativeModels.length >= 6);
+    assert.ok(profile.representativeModels.length <= 8);
+    assert.ok(new Set(profile.representativeModels.map(({ brandSlug }) => brandSlug)).size >= 4);
+    assert.equal(profile.componentStack.some((item) => "href" in item), false);
+    assert.equal(profile.contentVisuals.length, 3);
+    assert.deepEqual(
+      new Set(profile.contentVisuals.map(({ placement }) => placement)),
+      new Set(["equipment-types", "application-fit", "component-stack"])
+    );
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 1);
+  }
+});
+
 test("equipment layout avoids empty title columns and balances odd card grids", () => {
   const styles = readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
 
