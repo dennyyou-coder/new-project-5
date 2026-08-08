@@ -932,6 +932,8 @@ test("the release gate validates the ninety-eight published profiles and approve
     "who-owns-dewalt-stanley-black-decker": ["dewalt", "black-decker", "craftsman"],
     "who-owns-dremel-bosch-manufacturing": ["dremel", "bosch-power-tools"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
+    "who-owns-ecovacs-tineco-manufacturing": ["ecovacs", "tineco"],
+    "who-owns-electrolux-brands-manufacturing": ["electrolux", "aeg"],
     "who-owns-greenworks-globe-stihl": ["greenworks", "stihl"],
     "who-owns-hayward-pool-products": ["hayward"],
     "who-owns-husqvarna-automower-motorcycles": ["husqvarna"],
@@ -1014,8 +1016,8 @@ test("the release gate validates the ninety-eight published profiles and approve
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 133);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 208);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 135);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 212);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(

@@ -12,9 +12,9 @@ This is the operational record for the controlled update-first SEO batch coverin
 
 | Order | Page | Existing slug | Action | Status |
 |---:|---|---|---|---|
-| 1 | DeWalt | `who-owns-dewalt-stanley-black-decker` | Update existing page; no new `who makes` URL | `local_verified` |
-| 2 | Husqvarna | `who-owns-husqvarna-automower-motorcycles` | Update existing page; no new `who makes` URL | `local_verified` |
-| 3 | Ryobi | `who-owns-ryobi-tti-kyocera` | Update existing page; no new `who makes` URL | `local_verified` |
+| 1 | DeWalt | `who-owns-dewalt-stanley-black-decker` | Update existing page; no new `who makes` URL | `published_verified` |
+| 2 | Husqvarna | `who-owns-husqvarna-automower-motorcycles` | Update existing page; no new `who makes` URL | `published_verified` |
+| 3 | Ryobi | `who-owns-ryobi-tti-kyocera` | Update existing page; no new `who makes` URL | `published_verified` |
 
 ## GSC baseline
 
@@ -72,3 +72,10 @@ The site-level baseline was 91 clicks, 17,200 impressions, 0.5% CTR and average 
 - Day 7: crawl/indexing, canonical, title rewriting and technical checks only.
 - Day 14: early query coverage and CTR signal; no automatic rollback for short-term volatility.
 - Day 28: compare against the baseline above. Expand the update-first method only after reviewing CTR, average position, clicks and newly covered manufacturing queries.
+
+## Production release evidence
+
+- GitHub PR: `#57`
+- Production commit: `303040c`
+- Vercel deployment: `dpl_39aNm5sB8VwaeYzFfbdRJUfBjn2J`
+- Production verification: all three retained URLs returned HTTP 200 with the expected title, H1, canonical, BlogPosting schema, visuals and ownership-guide discovery.
