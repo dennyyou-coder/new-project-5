@@ -702,7 +702,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the one-hundred-and-seven published profiles and approved article relationships", () => {
+test("the release gate validates the one-hundred-and-ten published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -744,12 +744,14 @@ test("the release gate validates the one-hundred-and-seven published profiles an
     "eureka",
     "festool",
     "fimap",
+    "fiorentini",
     "fisher-paykel",
     "flex",
     "fluidra",
     "gardena",
     "gausium",
     "ge-appliances",
+    "ghibli",
     "gorenje",
     "greenworks",
     "groupe-seb",
@@ -771,6 +773,7 @@ test("the release gate validates the one-hundred-and-seven published profiles an
     "lavor",
     "lawnmaster",
     "lg-home-appliances",
+    "lindhaus",
     "lionsbot",
     "makita",
     "mammotion",
@@ -1002,7 +1005,7 @@ test("the release gate validates the one-hundred-and-seven published profiles an
   );
 
   assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 107);
+  assert.equal(loadedProfiles.length, 110);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1068,7 +1071,7 @@ test("the release gate validates the one-hundred-and-seven published profiles an
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 107);
+  assert.equal(profiles.length, 110);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1087,6 +1090,92 @@ test("all published brand profiles have local official logos and two to three lo
       );
     }
   }
+});
+
+test("commercial-cleaning batch nineteen publishes Fiorentini, Ghibli and Lindhaus without article relationships", async () => {
+  const newSlugs = ["fiorentini", "ghibli", "lindhaus"];
+  const officialSourceDomains = {
+    fiorentini: "fiorentinispa.com",
+    ghibli: "ghibli.com",
+    lindhaus: "lindhaus.com",
+  };
+  const profilesBySlug = new Map(
+    getBrandProfiles().map((candidate) => [candidate.slug, candidate])
+  );
+  const realArticles = getInsights();
+  const publishedProfiles = getBrandProfiles().filter(({ status }) => status === "published");
+  const categories = getPublishedBrandCategories(publishedProfiles);
+
+  for (const slug of newSlugs) {
+    const candidate = profilesBySlug.get(slug);
+    assert.ok(candidate, `${slug} profile must exist`);
+    assert.equal(candidate.status, "published");
+    assert.equal(candidate.logoImage, `/images/brands/${slug}/logo.webp`);
+    assert.match(candidate.heroImage, new RegExp(`^/images/brands/${slug}/hero-.+\\.webp$`));
+    assert.equal(new URL(candidate.logoSourceUrl).hostname.replace(/^www\./, ""), officialSourceDomains[slug]);
+    assert.equal(new URL(candidate.heroSourceUrl).hostname.replace(/^www\./, ""), officialSourceDomains[slug]);
+    assert.ok(candidate.contentVisuals.length >= 2 && candidate.contentVisuals.length <= 3);
+    assert.ok(candidate.contentVisuals.every((visual) => visual.src.startsWith(`/images/brands/${slug}/`)));
+
+    const logoMetadata = await sharp(path.join(process.cwd(), "public", candidate.logoImage)).metadata();
+    const heroMetadata = await sharp(path.join(process.cwd(), "public", candidate.heroImage)).metadata();
+    assert.equal(logoMetadata.format, "webp");
+    assert.ok(logoMetadata.width >= 600);
+    assert.equal(heroMetadata.format, "webp");
+    assert.equal(heroMetadata.width, 1600);
+    assert.equal(heroMetadata.height, 1000);
+    for (const visual of candidate.contentVisuals) {
+      const visualMetadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+      assert.equal(visualMetadata.format, "webp");
+      assert.equal(visualMetadata.width, 1600);
+      assert.equal(visualMetadata.height, 900);
+    }
+
+    assert.deepEqual(
+      realArticles.filter(
+        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+      ),
+      [],
+      `${slug} must not create article relationships`
+    );
+    assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
+  }
+
+  for (const slug of ["fiorentini", "ghibli"]) {
+    assert.deepEqual(
+      categories
+        .filter(({ profiles }) => profiles.some((profile) => profile.slug === slug))
+        .map(({ category }) => category.slug),
+      ["commercial-industrial-cleaning"]
+    );
+  }
+  assert.deepEqual(
+    categories
+      .filter(({ profiles }) => profiles.some((profile) => profile.slug === "lindhaus"))
+      .map(({ category }) => category.slug),
+    ["floorcare-home-cleaning", "commercial-industrial-cleaning"]
+  );
+
+  assert.equal(profilesBySlug.get("ghibli").schemaEntityType, "Brand");
+  assert.equal(profilesBySlug.get("ghibli").legalName, undefined);
+  assert.ok(profilesBySlug.get("ghibli").aliases.every((alias) => !/Wirbel/i.test(alias)));
+  assert.match(profilesBySlug.get("ghibli").legalEntityNote, /Riello Cleaning Machines S\.p\.A\./i);
+  assert.match(profilesBySlug.get("ghibli").legalEntityNote, /operating company/i);
+  assert.match(profilesBySlug.get("ghibli").ownership.summary, /operated by Riello Cleaning Machines S\.p\.A\./i);
+  assert.match(profilesBySlug.get("ghibli").ownership.summary, /part of Riello Group/i);
+  assert.match(profilesBySlug.get("ghibli").ownership.parentCompany, /Riello Cleaning Machines S\.p\.A\./i);
+  assert.match(profilesBySlug.get("ghibli").ownership.parentCompany, /Riello Group/i);
+
+  assert.equal(profilesBySlug.get("lindhaus").schemaEntityType, "Organization");
+  assert.equal(profilesBySlug.get("lindhaus").legalName, "Lindhaus S.r.l.");
+  assert.equal(profilesBySlug.get("lindhaus").ownership.parentCompany, undefined);
+  assert.match(profilesBySlug.get("lindhaus").ownership.summary, /family business/i);
+  assert.doesNotMatch(profilesBySlug.get("lindhaus").ownership.summary, /family-owned/i);
+
+  assert.equal(profilesBySlug.get("fiorentini").schemaEntityType, "Organization");
+  assert.equal(profilesBySlug.get("fiorentini").legalName, "Ing. O. Fiorentini S.p.A.");
+  assert.equal(profilesBySlug.get("fiorentini").ownership.parentCompany, undefined);
+  assert.doesNotMatch(profilesBySlug.get("fiorentini").ownership.summary, /independent|family-owned/i);
 });
 
 test("commercial-cleaning batch eighteen publishes Clarke, Lavor and RCM without article relationships", async () => {

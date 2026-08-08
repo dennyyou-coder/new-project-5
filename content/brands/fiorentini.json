@@ -1,0 +1,167 @@
+{
+  "status": "published",
+  "slug": "fiorentini",
+  "name": "Fiorentini",
+  "aliases": ["Ing. O. Fiorentini", "Fiorentini S.p.A."],
+  "legalName": "Ing. O. Fiorentini S.p.A.",
+  "legalEntityNote": "Ing. O. Fiorentini S.p.A. is the Italian manufacturer and website operator identified in current official materials. Its named offices, overseas companies, local partners, distributors, importers, contracting sellers and after-sales providers can have separate legal responsibilities.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://fiorentinispa.com/",
+  "headline": "Fiorentini industrial cleaning machines, Italian production and buyer checks",
+  "description": "A source-backed profile of Ing. O. Fiorentini S.p.A., its founder-led history, professional and industrial cleaning portfolio, Italian production, international channels and procurement checks.",
+  "metaDescription": "Fiorentini profile: Italian manufacturer, industrial cleaning machines, in-house production, international offices, service and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Fiorentini. Company-level production and service statements do not prove the factory, origin, configuration or warranty entity of every machine and component.",
+  "headquarters": "Piancaldoli, Firenzuola, Florence, Italy",
+  "founded": "1978 (company profile); business roots traced to 1961 in the official history",
+  "heroImage": "/images/brands/fiorentini/hero-production-floor.webp",
+  "heroImageAlt": "Fiorentini production worker operating moulding equipment at an Italian factory",
+  "heroImageCaption": "Official Fiorentini production photo showing an operator and industrial moulding equipment.",
+  "heroSourceUrl": "https://fiorentinispa.com/wp-content/uploads/2026/01/02-assemblaggio-interno-macchine-pulizia-industriale.webp",
+  "logoImage": "/images/brands/fiorentini/logo.webp",
+  "logoImageAlt": "Fiorentini logo",
+  "logoSourceUrl": "https://fiorentinispa.com/wp-content/uploads/2025/02/Screenshot-2025-02-05-alle-09.39.54.png",
+  "contentVisuals": [
+    {
+      "placement": "portfolio",
+      "src": "/images/brands/fiorentini/portfolio-scrubber-dryer.webp",
+      "alt": "Fiorentini walk-behind scrubber dryer on a large indoor floor",
+      "caption": "The official homepage presents Fiorentini scrubber dryers within a broad professional and industrial cleaning-machine range."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/fiorentini/operations-production-team.webp",
+      "alt": "Three Fiorentini production team members in front of moulding machinery",
+      "caption": "The official production page describes in-house design, manufacturing, assembly and final controls in Italy."
+    }
+  ],
+  "ownership": {
+    "summary": "Current official materials identify Ing. O. Fiorentini S.p.A. as the operating manufacturer and trace the business to founder Osvaldo Fiorentini. The reviewed official sources do not disclose current shareholders, share percentages or a parent company, so this page does not infer an ownership structure from the founder history or company name."
+  },
+  "leadership": [
+    {
+      "name": "Osvaldo Fiorentini",
+      "role": "Founder",
+      "context": "Fiorentini's official history attributes the creation and development of the cleaning-machine business to engineer Osvaldo Fiorentini."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Scrubber dryers",
+      "positioning": "Walk-behind and ride-on scrubber dryers address professional and industrial hard-floor cleaning.",
+      "buyerRelevance": "Compare working width, brush deck, tanks, traction, battery, realistic runtime, gradients, squeegee performance and service access."
+    },
+    {
+      "name": "Sweepers and urban cleaning machines",
+      "positioning": "Walk-behind, ride-on and road-sweeping platforms extend the range into industrial sites and urban applications.",
+      "buyerRelevance": "Specify debris, dust control, hopper, dumping height, surface, road approval, gradients, filtration and destination rules."
+    },
+    {
+      "name": "Vacuums, pressure washers and textile cleaners",
+      "positioning": "Professional vacuums, pressure washers and textile-surface cleaners cover complementary cleaning processes.",
+      "buyerRelevance": "Confirm filtration, pressure and flow, temperature, power standard, chemical compatibility, attachments and consumables."
+    },
+    {
+      "name": "Autonomous and specialist equipment",
+      "positioning": "Autonomous machines, single-disc units, tow tractors and steam equipment broaden the industrial offer.",
+      "buyerRelevance": "Validate autonomy, safety, navigation, site integration, duty cycle, local support and application-specific compliance."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Fiorentini's current official production page says design, production and assembly of its professional and industrial cleaning machines are retained in Italy.",
+      "scope": "Company-level Made in Italy statement; it does not establish the origin of every component or every model revision",
+      "buyerCheck": "Request the exact model's legal manufacturer, production site, serial plate, country of origin and conformity declaration."
+    },
+    {
+      "evidence": "The current site identifies Piancaldoli and Castel San Pietro as production plants and describes Castel San Pietro as a central production operation with processing, assembly and final controls.",
+      "scope": "Current named company sites; allocation of a specific ordered model still requires confirmation",
+      "buyerCheck": "Obtain written confirmation of the factory assigned to the contracted SKU and the production and final-inspection records for its lot."
+    },
+    {
+      "evidence": "Fiorentini describes an integrated production model with direct control over materials, processes, manufacturing and in-house assembly.",
+      "scope": "Corporate operating model rather than a claim that all parts are manufactured internally",
+      "buyerCheck": "Ask which batteries, motors, electronics, pumps, moulded parts and other major assemblies are internally produced or externally supplied."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Fiorentini's official locations page lists Italian production and commercial sites plus dedicated operations or local structures in the Middle East, UAE and Morocco.",
+      "scope": "Named locations current at review time; legal, contracting and service roles differ by market",
+      "buyerCheck": "Confirm the authorized local company or partner, territory, contracting seller, importer and warranty provider for the destination."
+    },
+    {
+      "evidence": "The official site offers consultation, purchasing or rental routes and after-sales support through internal technicians trained across the range.",
+      "scope": "Published service framework; technician coverage, parts stock and response times can vary outside directly served areas",
+      "buyerCheck": "Document commissioning, training, parts inventory, workshop location, response time, travel charges and warranty labor terms."
+    },
+    {
+      "evidence": "Fiorentini presents machines for healthcare, retail, cleaning contractors, transport, industry and logistics.",
+      "scope": "Company-described applications, not proof of performance in a buyer's actual site",
+      "buyerCheck": "Run a documented acceptance trial using representative floors, debris, gradients, aisle widths, shifts and cleaning chemistry."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Fiorentini competes as an Italian industrial manufacturer with a wide machine portfolio, named production sites and direct-service claims. Buyers should verify factory allocation, model configuration and locally enforceable after-sales commitments for each tender.",
+    "competitorSlugs": ["comac", "dulevo", "fimap", "rcm"]
+  },
+  "developments": [
+    {
+      "date": "1980",
+      "title": "Fiorentini presents the compact ICM 38 ride-on scrubber",
+      "summary": "The official history says Osvaldo Fiorentini presented the compact ride-on ICM 38 at the 1980 ISSA Show in Chicago.",
+      "sourceIds": ["fiorentini-history"]
+    },
+    {
+      "date": "1978",
+      "title": "Company profile dates industrial cleaning-machine activity to 1978",
+      "summary": "Fiorentini's official company profile states that Ing. O. Fiorentini S.p.A. has designed and produced industrial cleaning machines since 1978.",
+      "sourceIds": ["fiorentini-company-profile"]
+    },
+    {
+      "date": "1961",
+      "title": "Official history traces the business roots to cleaning-equipment distribution",
+      "summary": "Fiorentini's official history says Osvaldo Fiorentini obtained the Italian exclusivity for Clarke Floor Machine Co. in 1961 before moving into replacement parts and complete machines.",
+      "sourceIds": ["fiorentini-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fiorentini-history",
+      "title": "The History of Fiorentini",
+      "publisher": "Ing. O. Fiorentini S.p.A.",
+      "url": "https://fiorentinispa.com/la-nostra-storia/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fiorentini-production",
+      "title": "In-House Production",
+      "publisher": "Ing. O. Fiorentini S.p.A.",
+      "url": "https://fiorentinispa.com/produzione-interna/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fiorentini-range",
+      "title": "Professional Cleaning Machine Range",
+      "publisher": "Ing. O. Fiorentini S.p.A.",
+      "url": "https://fiorentinispa.com/gamma-prodotti/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fiorentini-locations",
+      "title": "Locations",
+      "publisher": "Ing. O. Fiorentini S.p.A.",
+      "url": "https://fiorentinispa.com/store-locations/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "fiorentini-company-profile",
+      "title": "Company Profile",
+      "publisher": "Ing. O. Fiorentini S.p.A.",
+      "url": "https://www.fiorentinispa.com/files/fotoSchede/download/59_2_ing_oli.pdf",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T20:30:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T20:30:00+08:00"
+}

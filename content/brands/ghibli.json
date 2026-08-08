@@ -1,0 +1,163 @@
+{
+  "status": "published",
+  "slug": "ghibli",
+  "name": "Ghibli",
+  "aliases": ["Ghibli Professional"],
+  "legalEntityNote": "Ghibli is treated here as the current professional-cleaning brand. The official site identifies Riello Cleaning Machines S.p.A. as the operating company and says Ghibli & Wirbel adopted the Riello Cleaning Machines company identity in 2025. Wirbel, dealers, importers, contracting sellers and service partners remain separate roles.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.ghibli.com/en/",
+  "headline": "Ghibli professional cleaning machines, Riello boundary and buyer checks",
+  "description": "A source-backed profile of the Ghibli brand, Riello Cleaning Machines operating-company boundary, Riello Group ownership, Italian production, professional portfolio and procurement checks.",
+  "metaDescription": "Ghibli profile: Riello Cleaning Machines operator, Riello Group ownership, Italian production, vacuums, scrubber dryers and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Ghibli, Riello Cleaning Machines or Riello Group. Company-level production statements do not prove the factory, origin or configuration of every model, component or destination-market unit.",
+  "headquarters": "Dorno, Pavia, Italy (operating site); registered office in Verona, Italy",
+  "founded": "1968 (Ghibli brand history)",
+  "heroImage": "/images/brands/ghibli/hero-industrial-vacuum.webp",
+  "heroImageAlt": "Ghibli industrial vacuum positioned beside paper-production machinery",
+  "heroImageCaption": "Official Ghibli product scene showing an industrial vacuum in a production environment.",
+  "heroSourceUrl": "https://www.ghibli.com/en/F003858_Power_Indust_AX_60_2000x1000.jpg",
+  "logoImage": "/images/brands/ghibli/logo.webp",
+  "logoImageAlt": "Ghibli logo",
+  "logoSourceUrl": "https://www.ghibli.com/en/F002759_logo.svg",
+  "contentVisuals": [
+    {
+      "placement": "portfolio",
+      "src": "/images/brands/ghibli/portfolio-scrubber-dryers.webp",
+      "alt": "Front and rear views of a Ghibli Rush ride-on scrubber dryer",
+      "caption": "The official product image shows the ride-on format within Ghibli's professional scrubber-dryer range."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/ghibli/operations-dorno-site.webp",
+      "alt": "Aerial view of the Riello Cleaning Machines operating site in Dorno Italy",
+      "caption": "The official company page identifies Dorno as Riello Cleaning Machines' operating and production location."
+    }
+  ],
+  "ownership": {
+    "summary": "Ghibli is a professional-cleaning brand operated by Riello Cleaning Machines S.p.A. The official history says Riello Industries Group reached 100% ownership of the company in 2021, and the current company page describes Riello Cleaning Machines as part of Riello Group. The 2025 identity change applies to the operating company; it does not erase the Ghibli product brand.",
+    "parentCompany": "Riello Cleaning Machines S.p.A. (part of Riello Group)"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Professional and industrial vacuums",
+      "positioning": "Dry, wet-and-dry and industrial vacuum families address routine through continuous-duty professional applications.",
+      "buyerRelevance": "Confirm dust class, filtration, airflow, hazardous-area rating, recovery material, duty cycle and accessories for the exact model."
+    },
+    {
+      "name": "Scrubber dryers",
+      "positioning": "Walk-behind and ride-on scrubber dryers cover compact interiors through larger commercial and industrial floors.",
+      "buyerRelevance": "Compare working width, brush deck, tanks, traction, battery, realistic runtime, squeegee result and gradients."
+    },
+    {
+      "name": "Sweepers and single-disc machines",
+      "positioning": "Sweeping and single-disc platforms extend the range across debris removal, washing, stripping and polishing.",
+      "buyerRelevance": "Specify debris, dust control, surface, pads or brushes, power source, productivity and wear-parts availability."
+    },
+    {
+      "name": "Carpet, steam and pressure-cleaning equipment",
+      "positioning": "Carpet extractors, steam generators and professional pressure washers broaden the brand's indoor-cleaning offer.",
+      "buyerRelevance": "Verify application fit, temperature and pressure, chemical compatibility, electrical standard, attachments and local service."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Riello Cleaning Machines' official production page describes product-specific assembly lines for vacuums, industrial vacuums, single-disc machines, steam generators and scrubber dryers.",
+      "scope": "Company-level production capability at the Dorno operation; it does not establish the origin of every component or model",
+      "buyerCheck": "Request the exact machine's legal manufacturer, production site, serial plate, country of origin and declaration of conformity."
+    },
+    {
+      "evidence": "The company says it moulds most components used in the machines it assembles and operates automated injection-moulding lines.",
+      "scope": "Company statement about in-house moulding; it is not a claim that every component is made internally",
+      "buyerCheck": "Ask which tanks, housings, motors, batteries, electronics and other major assemblies in the quoted model are made in-house or externally sourced."
+    },
+    {
+      "evidence": "Official technical sheets identify Riello Cleaning Machines' registered office and the Dorno place of manufacturing for named Ghibli models.",
+      "scope": "Models covered by the cited technical documentation; other products and revisions require their own evidence",
+      "buyerCheck": "Archive the exact model's current technical sheet, manual, parts list, battery or motor configuration and production label."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Ghibli's official site provides dealer, sales-office, contact and service routes for professional customers.",
+      "scope": "Published channel framework; authorization, territory, inventory and service capability vary by market",
+      "buyerCheck": "Confirm the authorized dealer, importer, contracting seller, service territory and escalation path directly with Riello Cleaning Machines."
+    },
+    {
+      "evidence": "The official company page presents Ghibli as a professional indoor-cleaning brand serving partners with a multi-family equipment range.",
+      "scope": "Brand-wide positioning rather than a destination-market availability guarantee",
+      "buyerCheck": "Lock model code, voltage, battery, accessories, documentation language, delivery lead time and destination compliance in the contract."
+    },
+    {
+      "evidence": "Riello Cleaning Machines separates the Ghibli brand from the operating company and from the Wirbel product heritage.",
+      "scope": "Brand and company identity; transaction and warranty entities can still differ by destination",
+      "buyerCheck": "Record the brand, legal manufacturer, seller, importer, invoicing entity and warranty provider as separate fields."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Ghibli competes through a broad professional indoor-cleaning portfolio backed by Riello Cleaning Machines' Italian production platform. Buyers should translate company-level capability into model-specific origin, configuration and local-service evidence.",
+    "competitorSlugs": ["fimap", "ipc", "karcher", "lavor"]
+  },
+  "developments": [
+    {
+      "date": "2025-07-08",
+      "title": "Ghibli & Wirbel company adopts the Riello Cleaning Machines identity",
+      "summary": "The official announcement says Ghibli & Wirbel joined the Riello Group family of companies and the operating company adopted the Riello Cleaning Machines name.",
+      "sourceIds": ["ghibli-riello-identity"]
+    },
+    {
+      "date": "2021",
+      "title": "Riello Industries Group reaches full company ownership",
+      "summary": "Ghibli's official history says Riello Industries Group reached 100% of the company's share capital in 2021.",
+      "sourceIds": ["ghibli-history"]
+    },
+    {
+      "date": "1968",
+      "title": "Ghibli is founded",
+      "summary": "The official history dates Ghibli's founding to 1968.",
+      "sourceIds": ["ghibli-history"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ghibli-company",
+      "title": "About Us",
+      "publisher": "Riello Cleaning Machines S.p.A.",
+      "url": "https://www.ghibli.com/en/8-Company.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ghibli-history",
+      "title": "Our History",
+      "publisher": "Riello Cleaning Machines S.p.A.",
+      "url": "https://www.ghibli.com/it/205-Our-history.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ghibli-production",
+      "title": "Production",
+      "publisher": "Riello Cleaning Machines S.p.A.",
+      "url": "https://www.ghibli.com/it/207-Produzione.html",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ghibli-riello-identity",
+      "title": "Riello Cleaning Machines: The New Identity of Ghibli & Wirbel",
+      "publisher": "Riello Cleaning Machines S.p.A.",
+      "url": "https://www.ghibli.com/en/493-Riello-Cleaning-Machines.html",
+      "publishedAt": "2025-07-08",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "ghibli-green-pro",
+      "title": "Green Pro Product Range Brochure",
+      "publisher": "Riello Cleaning Machines S.p.A.",
+      "url": "https://www.ghibli.com/engine/public/base/dwl.php?F=003838_Brochure_Green_Pro_Ghibli_-_EN.pdf&co=411",
+      "publishedAt": "2026",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T20:30:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T20:30:00+08:00"
+}

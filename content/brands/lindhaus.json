@@ -1,0 +1,149 @@
+{
+  "status": "published",
+  "slug": "lindhaus",
+  "name": "Lindhaus",
+  "aliases": ["Lindhaus Professional", "Lindhaus USA"],
+  "legalName": "Lindhaus S.r.l.",
+  "legalEntityNote": "Lindhaus S.r.l. is the Italian company named in official product documents and website materials. The official history describes a family business and separately identifies Rotafil as the family company's electric-motor manufacturer; distributors, importers, contracting sellers and warranty providers remain separate roles.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://lindhaus.com/en/",
+  "headline": "Lindhaus Italian cleaning machines, production and buyer checks",
+  "description": "A source-backed profile of Lindhaus S.r.l., its family-business identity, Italian professional and domestic cleaning portfolio, manufacturing statements, international channels and procurement checks.",
+  "metaDescription": "Lindhaus profile: family business, Italian production, scrubber dryers, vacuums, sweepers, domestic floorcare, channels and buyer checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Lindhaus. Company-level Made in Italy and supply-chain statements do not prove the origin, configuration, seller or warranty terms of every model and component.",
+  "headquarters": "Padua, Italy",
+  "founded": "1987",
+  "heroImage": "/images/brands/lindhaus/hero-professional-range.webp",
+  "heroImageAlt": "Studio lineup of Lindhaus professional vacuums upright cleaners sweepers and scrubber dryers",
+  "heroImageCaption": "Official Lindhaus lineup illustrating the breadth of its indoor professional-cleaning range.",
+  "heroSourceUrl": "https://lindhaus.com/wp-content/uploads/2025/09/Linea-professional-1.webp",
+  "logoImage": "/images/brands/lindhaus/logo.webp",
+  "logoImageAlt": "Lindhaus logo",
+  "logoSourceUrl": "https://lindhaus.com/wp-content/uploads/2025/09/cropped-logo-lindhaus-1-e1758115992432.webp",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/lindhaus/ownership-family-business.webp",
+      "alt": "Three generations of the Lindhaus family business pictured at the company",
+      "caption": "Lindhaus's official history describes a family business in which a new generation works alongside the longstanding team; the page does not disclose current share percentages."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/lindhaus/operations-product-testing.webp",
+      "alt": "Lindhaus technician testing a floor-cleaning machine in an in-house laboratory",
+      "caption": "The official company page says Lindhaus directly controls design, production, testing and quality in Italy."
+    }
+  ],
+  "ownership": {
+    "summary": "Lindhaus's official company history describes it as a family business and says a new generation works with the longstanding team. The reviewed official sources do not disclose current shareholders, share percentages or a parent company, so this page does not infer current ownership from that family-business identity. Rotafil is identified as the family company's electric-motor manufacturer and should not be presented as a distributor or as proof of every model's component origin."
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Professional vacuums and upright cleaners",
+      "positioning": "Corded and cordless upright, canister and backpack vacuums form a central part of the professional indoor-cleaning range.",
+      "buyerRelevance": "Confirm filtration, airflow, brush head, battery or voltage, noise, accessories, consumables and commercial-use warranty."
+    },
+    {
+      "name": "Scrubber dryers and floor washers",
+      "positioning": "Compact scrubber dryers and floor washers target hard-floor cleaning in professional and domestic settings.",
+      "buyerRelevance": "Compare brush system, tanks, edge reach, drying, battery, realistic runtime, floor compatibility and maintenance access."
+    },
+    {
+      "name": "Sweepers and carpet-cleaning equipment",
+      "positioning": "Sweepers, carpet cleaners and electric brush systems extend the offer across textile and hard-floor applications.",
+      "buyerRelevance": "Validate debris and carpet types, cleaning path, extraction result, filtration, consumables and local parts availability."
+    },
+    {
+      "name": "Domestic floorcare and health products",
+      "positioning": "Lindhaus also markets domestic vacuums, upright cleaners, floor washers and selected air or surface-care products.",
+      "buyerRelevance": "Separate domestic and professional duty ratings, certifications, warranty terms and channel support when building an assortment."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Lindhaus says all of its machines are designed and manufactured in Italy and that it directly controls product development and quality.",
+      "scope": "Company-level statement across the published range; it does not disclose the origin of every component",
+      "buyerCheck": "Request the exact model's legal manufacturer, production site, serial plate, country of origin and conformity documentation."
+    },
+    {
+      "evidence": "The official 2026 full-line brochure dates Lindhaus to 1987 and describes total supply-chain control, while identifying Rotafil as the family company's electric-motor manufacturer.",
+      "scope": "Official company history and supply-chain positioning; motor and component fit still vary by model",
+      "buyerCheck": "Ask which motor, battery, electronics, pump and other major assemblies are used in the contracted SKU and who supplies them."
+    },
+    {
+      "evidence": "The company describes in-house design, functional and safety testing, component selection and durability verification.",
+      "scope": "Published development and quality process rather than a model-specific inspection record",
+      "buyerCheck": "Obtain the quoted model's test standards, certification reports, quality plan, change-control process and production-lot records."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Lindhaus maintains international website editions and an official world-contact page, and its full-line brochure says the machines are sold worldwide.",
+      "scope": "Company-described international reach; active models, authorization and support vary by country",
+      "buyerCheck": "Confirm the authorized distributor, importer, contracting seller, product authorization and service territory directly with Lindhaus."
+    },
+    {
+      "evidence": "The official brochure identifies a U.S. office opened in Minneapolis in 1992 for domestic-machine distribution.",
+      "scope": "U.S. historical and channel context; it does not define current responsibilities in every North American transaction",
+      "buyerCheck": "Verify the current U.S. contracting, inventory, warranty and service entities for the quoted product."
+    },
+    {
+      "evidence": "Lindhaus publishes separate professional and domestic lines and invites prospective distributors through its official site.",
+      "scope": "Brand channel structure; professional and domestic warranty or duty terms should not be assumed equivalent",
+      "buyerCheck": "Lock the applicable range, commercial-use warranty, parts stock, technician coverage, response time and escalation route."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Lindhaus differentiates through specialised indoor floorcare, Italian production claims and an overlap between professional and domestic ranges. Buyers should verify exact-model origin, duty rating and destination-market service rather than generalising from the brand-wide Made in Italy message.",
+    "competitorSlugs": ["columbus", "numatic", "truvox", "wetrok"]
+  },
+  "developments": [
+    {
+      "date": "1992",
+      "title": "Lindhaus opens a U.S. distribution office",
+      "summary": "The official 2026 full-line brochure says an office opened in Minneapolis in 1992 to distribute domestic machines in the U.S. market.",
+      "sourceIds": ["lindhaus-full-line"]
+    },
+    {
+      "date": "1987",
+      "title": "Lindhaus is established",
+      "summary": "The official full-line brochure dates the birth of Lindhaus as a cleaning-machine designer and manufacturer to 1987.",
+      "sourceIds": ["lindhaus-full-line"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "lindhaus-about",
+      "title": "About Us",
+      "publisher": "Lindhaus S.r.l.",
+      "url": "https://lindhaus.com/en/about-us/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lindhaus-professional",
+      "title": "Professional Cleaning",
+      "publisher": "Lindhaus S.r.l.",
+      "url": "https://lindhaus.com/en/professional-cleaning/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lindhaus-world",
+      "title": "Lindhaus in the World",
+      "publisher": "Lindhaus S.r.l.",
+      "url": "https://lindhaus.com/lindhaus-nel-mondo/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "lindhaus-full-line",
+      "title": "Lindhaus Full Line 2026",
+      "publisher": "Lindhaus S.r.l.",
+      "url": "https://lindhaus.com/wp-content/uploads/2026/01/Full-line-2026-USA-web.pdf",
+      "publishedAt": "2026",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T20:30:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T20:30:00+08:00"
+}
