@@ -1,0 +1,162 @@
+{
+  "status": "published",
+  "slug": "oertzen",
+  "name": "Oertzen",
+  "aliases": ["OERTZEN", "von Oertzen", "von Oertzen GmbH", "Oertzen Waterjet Technology"],
+  "legalEntityNote": "Oertzen is treated here as a brand, not as a currently separate operating company. Historic official materials name von Oertzen GmbH in Ammersbek, while Hako's sustainability report states that a merger with von Oertzen GmbH took place in 2023 and current Hako product pages market Oertzen equipment through Hako GmbH. Buyers should verify the current contracting, manufacturing, export, warranty and service entity for their order.",
+  "schemaEntityType": "Brand",
+  "officialWebsite": "https://www.hako.com/en/products/waterjet-technology/oertzen-high-pressure-cleaners-1",
+  "headline": "Oertzen professional waterjet systems, Hako operation and buyer checks",
+  "description": "A source-backed profile of the Oertzen waterjet brand, its transition into Hako GmbH, Possehl ownership context, high-pressure portfolio, production evidence, export channels and service checks.",
+  "metaDescription": "Oertzen profile: Hako operator, Possehl ownership, professional pressure washers, waterjet systems, origin, export and service checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Oertzen, Hako or Possehl. Historical company identity, brand use and current contracting responsibility must not be treated as interchangeable without transaction evidence.",
+  "headquarters": "Hako GmbH: Bad Oldesloe, Germany; historic von Oertzen operation: Ammersbek, Germany",
+  "founded": "Official Oertzen materials state more than 70 years of waterjet experience",
+  "heroImage": "/images/brands/oertzen/hero-weco-waterjet-system.webp",
+  "heroImageAlt": "Oertzen waterjet system and trailer performing professional high-pressure cleaning",
+  "heroSourceUrl": "https://www.hako.com/fileadmin/user_upload/Kommunaltechnik/Wildkraut/Weco_Geraete/Header-Oertzen-Weco-690x425.jpg",
+  "logoImage": "/images/brands/oertzen/logo.webp",
+  "logoImageAlt": "Oertzen logo",
+  "logoSourceUrl": "https://www.hako.com/fileadmin/Oertzen/PDFs/Oertzen_Kaltwasser_Heisswasser_DE.pdf",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/oertzen/brand-operator-merger-boundary.svg",
+      "alt": "Oertzen brand former von Oertzen company Hako operator and Possehl ownership boundary",
+      "caption": "Hako reports a 2023 merger with von Oertzen GmbH and now markets the Oertzen range, so the brand should not be presented as a separate current company without fresh registry evidence."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/oertzen/pressure-origin-service-check.svg",
+      "alt": "Oertzen waterjet pressure configuration origin safety and service verification checklist",
+      "caption": "Professional waterjet procurement requires pressure and flow, duty cycle, configuration, safety, origin and service evidence for the exact system."
+    }
+  ],
+  "ownership": {
+    "summary": "Hako's sustainability report says the merger with von Oertzen GmbH in 2023 added waterjet products to Hako GmbH's range. Current Hako pages market Oertzen high-pressure cleaners through Hako GmbH, and Hako is wholly owned within the Possehl Group. Historic Oertzen company references should therefore be distinguished from the present Oertzen brand and Hako operating responsibility.",
+    "parentCompany": "Hako GmbH"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Cold-water high-pressure cleaners",
+      "positioning": "Electric, petrol, diesel and power-take-off platforms cover mobile and stationary professional cleaning duties.",
+      "buyerRelevance": "Specify pressure, flow, drive, water supply, duty cycle, hose, lance, nozzle, filtration and transport requirements."
+    },
+    {
+      "name": "Hot-water cleaners and heating modules",
+      "positioning": "Hot-water systems and HOT BOX modules target oil, grease, paint and other difficult contamination with reduced chemical demand.",
+      "buyerRelevance": "Confirm temperature, burner fuel, pressure loss, water quality, emissions, chemical process and destination compliance."
+    },
+    {
+      "name": "Ultra-high-pressure and customised systems",
+      "positioning": "Industrial waterjet platforms extend into coating removal, rust removal, renovation and specialised continuous-duty applications.",
+      "buyerRelevance": "Require task-specific engineering, guarding, PPE, training, exclusion zones, wastewater controls and documented acceptance testing."
+    },
+    {
+      "name": "Weco weed control and extinguishing systems",
+      "positioning": "Hot-water weed control, watering and high-pressure extinguishing applications broaden the waterjet portfolio.",
+      "buyerRelevance": "Validate vehicle or trailer integration, flow, thermal output, public-space safety, operator certification and local service."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Hako's current product pages describe Oertzen professional high-pressure cleaners as part of Hako's waterjet technology offer.",
+      "scope": "Current Hako marketing and product responsibility; exact legal manufacturer and plant remain model-specific",
+      "buyerCheck": "Request the delivered unit's manufacturer plate, serial, production site, country of origin and declaration of conformity."
+    },
+    {
+      "evidence": "The official Oertzen waterjet brochure presents cold- and hot-water units, model specifications and a Made in Germany claim.",
+      "scope": "Products and editions covered by the brochure; it does not automatically cover every accessory, component or later model",
+      "buyerCheck": "Tie any German-origin requirement to the exact model, configuration and origin document rather than the brand as a whole."
+    },
+    {
+      "evidence": "Hako offers Oertzen product pages, technical data, accessories, brochures and service contact through its current site.",
+      "scope": "Published Hako product and support framework",
+      "buyerCheck": "Archive the exact datasheet, accessories list, manual, safety information and service commitment for the ordered system."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Oertzen materials describe use in industry, agriculture, transport, workshops, construction, municipalities, aviation, shipping and food applications.",
+      "scope": "Company-described applications; suitability depends on the exact process and configuration",
+      "buyerCheck": "Require a task-specific demonstration or engineered acceptance test with the intended contamination, surface and duty cycle."
+    },
+    {
+      "evidence": "The official brochure says service technicians support customers across Germany and export partners provide support in Europe and other continents.",
+      "scope": "Published service model; partner identity and capability vary by destination and time",
+      "buyerCheck": "Confirm the current authorized export partner, importer, service territory, technician competence, parts stock and response time."
+    },
+    {
+      "evidence": "Current Oertzen product pages route consultation and contact through Hako GmbH.",
+      "scope": "Current Hako website contact framework",
+      "buyerCheck": "Identify whether Hako, a dealer, an export partner or another entity issues the quote, invoice, conformity file and warranty."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Oertzen adds specialist professional and industrial waterjet depth to Hako's broader cleaning platform. Buyers should focus on engineered application fit and distinguish the historic von Oertzen company from the current brand, Hako operator and local export-service chain.",
+    "competitorSlugs": ["hako", "karcher", "nilfisk"]
+  },
+  "developments": [
+    {
+      "date": "2023",
+      "title": "Hako reports merger with von Oertzen GmbH",
+      "summary": "Hako's sustainability report says a merger with von Oertzen GmbH in 2023 added waterjet products to Hako GmbH's range.",
+      "sourceIds": ["hako-sustainability"]
+    },
+    {
+      "date": "2018",
+      "title": "Hako expands its waterjet competence through von Oertzen",
+      "summary": "Hako's official success story records expansion into waterjet technology through acquisition of von Oertzen.",
+      "sourceIds": ["hako-history"]
+    },
+    {
+      "date": "2007-01-01",
+      "title": "Hako becomes fully owned by Possehl Group",
+      "summary": "Hako's sustainability report records the complete takeover of Hako by the Possehl Group on 1 January 2007.",
+      "sourceIds": ["hako-sustainability"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "oertzen-product-page",
+      "title": "Oertzen High-pressure Cleaners",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/en/products/waterjet-technology/oertzen-high-pressure-cleaners-1",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "oertzen-brochure",
+      "title": "Waterjetting Systems: Cold and Hot Water High-pressure Cleaners",
+      "publisher": "von Oertzen GmbH / Hako Group",
+      "url": "https://www.hako.com/fileadmin/PDFs/Downloads/22-008_OERT_Bro_Kaltwasser_Heisswasser_EN_web.pdf",
+      "publishedAt": "2022",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-sustainability",
+      "title": "Hako Sustainability Report",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/fileadmin/PDFs/Downloads/Nachhaltigkeitsbericht_20240307_EN.pdf",
+      "publishedAt": "2024",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-history",
+      "title": "Hako Success Story",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/unternehmen/ueber-uns/erfolgsgeschichte",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "possehl-cleaning",
+      "title": "Cleaning Technology Division",
+      "publisher": "Possehl Group",
+      "url": "https://www.possehl.de/en/divisions/cleaning-technology",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T10:10:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T10:10:00+08:00"
+}

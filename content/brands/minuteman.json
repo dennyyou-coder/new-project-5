@@ -1,0 +1,164 @@
+{
+  "status": "published",
+  "slug": "minuteman",
+  "name": "Minuteman",
+  "aliases": ["Minuteman International", "Minuteman International, Inc.", "Minuteman Intl"],
+  "legalName": "Minuteman International, Inc.",
+  "legalEntityNote": "Minuteman International, Inc. is the US operating company named in the current official warranty and Hako group materials. It operates the Minuteman business and is also described by Hako as the American parent company of the Minuteman, PowerBoss and Multi-Clean brands. Dealers, importers, contracting sellers and service stations remain separate market roles.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.minutemanintl.com/",
+  "headline": "Minuteman commercial floorcare, Hako ownership and buyer checks",
+  "description": "A source-backed profile of Minuteman International, Inc., its Hako and Possehl group position, commercial floorcare portfolio, US manufacturing claims, channels and warranty checks.",
+  "metaDescription": "Minuteman profile: Hako ownership, US operating company, scrubbers, sweepers, vacuums, autonomous floorcare, channels and warranty checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Minuteman, Hako or Possehl. Company-level production and Made in USA statements do not prove the manufacturer, origin or factory of every model, component or market configuration.",
+  "headquarters": "Pingree Grove, Illinois, United States",
+  "founded": "The official site states more than 60 years of cleaning experience",
+  "heroImage": "/images/brands/minuteman/hero-roboscrub-warehouse.webp",
+  "heroImageAlt": "Minuteman RoboScrub autonomous floor scrubber operating in a warehouse",
+  "heroSourceUrl": "https://www.hako.com/fileadmin/user_upload/Unternehmen/Hako_Group/Roboscrub_Lager_Comp.jpg",
+  "logoImage": "/images/brands/minuteman/logo.webp",
+  "logoImageAlt": "Minuteman logo",
+  "logoSourceUrl": "https://www.hako.com/fileadmin/user_upload/Unternehmen/Hako_Group/Minuteman_logo.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/minuteman/group-brand-channel-boundary.svg",
+      "alt": "Possehl Hako Minuteman company brand dealer and service responsibility boundary",
+      "caption": "Minuteman International is the US operating company within Hako Group, while the Minuteman and PowerBoss brands and local market roles must remain distinct."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/minuteman/model-origin-service-check.svg",
+      "alt": "Minuteman model origin warranty and service verification checklist",
+      "caption": "Company-level manufacturing claims should be converted into model, serial, origin, warranty and authorized-service evidence before purchase."
+    }
+  ],
+  "ownership": {
+    "summary": "Hako identifies Minuteman International, Inc. as a subsidiary of Hako Group and as the American parent company of the Minuteman and PowerBoss brands, alongside Multi-Clean in the reviewed group description. Hako Group is an independent cleaning-technology division within the Possehl Group. This group chain does not make every distributor, seller, importer or service station the same legal entity.",
+    "parentCompany": "Hako Group (Possehl Group)"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Autonomous and ride-on floorcare",
+      "positioning": "RoboScrub and ride-on scrubber platforms address larger commercial and industrial floor areas.",
+      "buyerRelevance": "Validate navigation environment, safety controls, working width, battery, tank capacity, realistic productivity and human supervision."
+    },
+    {
+      "name": "Walk-behind scrubbers, sweepers and floor machines",
+      "positioning": "Walk-behind scrubbers, sweepers, burnishers and orbital machines cover routine hard-floor cleaning and surface preparation.",
+      "buyerRelevance": "Match pad or brush, pressure, power source, charger, chemical process, noise and operator ergonomics to the site."
+    },
+    {
+      "name": "Carpet care and commercial vacuums",
+      "positioning": "Extractors, commercial vacuums and wet/dry systems extend the range into textile and general facility cleaning.",
+      "buyerRelevance": "Confirm pump, recovery, filtration, bags, accessories, electrical standard and chemical compatibility."
+    },
+    {
+      "name": "Critical-filter and specialist vacuums",
+      "positioning": "Critical-filter systems target hazardous or sensitive recovery applications named by the company.",
+      "buyerRelevance": "Require application-specific filtration certification, containment procedure, approved consumables, operator training and disposal controls."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Hako describes Minuteman International in Illinois as a producer of commercial and industrial floor-cleaning machines, small commercial-cleaning equipment and special vacuums.",
+      "scope": "Company-level Hako description; it does not identify the factory or origin of every model and component",
+      "buyerCheck": "Request the exact model's manufacturer plate, production site, serial number, country of origin and conformity documentation."
+    },
+    {
+      "evidence": "The Minuteman site presents a Made in the USA statement at company-site level.",
+      "scope": "General website claim; not proof that every finished machine, option, battery, engine or component is US-made",
+      "buyerCheck": "Obtain model-specific origin substantiation and separate finished-unit origin from major-component origin."
+    },
+    {
+      "evidence": "Minuteman publishes model manuals, serial lookup, technical bulletins and warranty workflows.",
+      "scope": "Named documents and serial records available through official support systems",
+      "buyerCheck": "Archive the delivered manual, parts list, serial lookup result, configuration record and applicable technical bulletins."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Minuteman lists JanSan, manufacturing, government, healthcare, aviation, education, hospitality, retail and warehouse applications.",
+      "scope": "Company-described target markets, not evidence of every distributor's capability",
+      "buyerCheck": "Require references and a site demonstration in an application comparable to the intended facility."
+    },
+    {
+      "evidence": "The current commercial warranty requires claims through factory-authorized repair stations and directs users to the selling dealer when difficulty develops.",
+      "scope": "Published Minuteman commercial warranty effective May 2025, with stated US and Canada scope",
+      "buyerCheck": "Confirm dealer authorization, warranty registration, serialized invoice, coverage period, travel limits and the accepting repair station."
+    },
+    {
+      "evidence": "Minuteman provides quote, demo, service-request, parts, manual and warranty routes on its official site.",
+      "scope": "Company support framework; destination-market response and inventory vary",
+      "buyerCheck": "Document contracting seller, importer, parts stock, technician coverage, response time and escalation contact before award."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Minuteman offers broad US commercial floorcare coverage inside Hako's global cleaning platform, with particular breadth in vacuums and specialist recovery. Buyers should turn broad portfolio and production claims into exact model, serial, origin and service evidence.",
+    "competitorSlugs": ["hako", "nilfisk", "numatic", "tennant"]
+  },
+  "developments": [
+    {
+      "date": "2025-05",
+      "title": "Current commercial warranty revision takes effect",
+      "summary": "Minuteman's published Revision W commercial warranty states an effective date in May 2025 and defines authorized-repair and market-scope conditions.",
+      "sourceIds": ["minuteman-warranty"]
+    },
+    {
+      "date": "2018",
+      "title": "RoboScrub autonomous floorcare is presented",
+      "summary": "Minuteman's official site presents RoboScrub 20 in its autonomous floorcare portfolio and links the 2018 product video.",
+      "sourceIds": ["minuteman-home"]
+    },
+    {
+      "date": "2007-01-01",
+      "title": "Hako becomes fully owned by Possehl Group",
+      "summary": "Hako's sustainability report records the complete takeover of Hako by the Possehl Group on 1 January 2007.",
+      "sourceIds": ["hako-sustainability"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "minuteman-home",
+      "title": "Minuteman Floor Cleaning and Maintenance Machines",
+      "publisher": "Minuteman International",
+      "url": "https://www.minutemanintl.com/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "minuteman-warranty",
+      "title": "Minuteman International Commercial Limited Warranty, Revision W",
+      "publisher": "Minuteman International",
+      "url": "https://www.minutemanintl.com/wp-content/uploads/Minuteman-warranty-revW.pdf",
+      "publishedAt": "2025-05",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "minuteman-product-guide",
+      "title": "Minuteman Product Guide 2026",
+      "publisher": "Minuteman International",
+      "url": "https://www.minutemanintl.com/wp-content/uploads/MINUTEMAN_PRO_BRO_UPDATE_MAY_2026.pdf",
+      "publishedAt": "2026-05",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-group",
+      "title": "Hako Group",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/en/hako-group-1",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-sustainability",
+      "title": "Hako Sustainability Report",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/fileadmin/PDFs/Downloads/Nachhaltigkeitsbericht_20240307_EN.pdf",
+      "publishedAt": "2024",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T10:10:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T10:10:00+08:00"
+}

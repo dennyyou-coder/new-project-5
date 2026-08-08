@@ -1,0 +1,164 @@
+{
+  "status": "published",
+  "slug": "powerboss",
+  "name": "PowerBoss",
+  "aliases": ["PowerBoss Inc.", "PowerBoss Industrial", "Minuteman PowerBoss Corp."],
+  "legalName": "PowerBoss Inc.",
+  "legalEntityNote": "Current Hako group materials and a 2025 PowerBoss user manual name PowerBoss Inc. at the Pingree Grove address. Hako's 2024 sustainability report instead uses Minuteman PowerBoss Corp. for the US subsidiary. This profile uses the current customer-facing company name while preserving the documentary difference; buyers should verify the exact legal contracting, tax, warranty and import entity on current transaction documents.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.powerboss.com/",
+  "headline": "PowerBoss industrial floorcare, Minuteman ownership and buyer checks",
+  "description": "A source-backed profile of PowerBoss Inc., its Minuteman and Hako ownership chain, industrial sweepers and scrubbers, US manufacturing claims, distributor service and legal-entity checks.",
+  "metaDescription": "PowerBoss profile: Minuteman and Hako ownership, industrial sweepers, scrubbers, manufacturing, distributor service and entity checks.",
+  "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with PowerBoss, Minuteman, Hako or Possehl. Brand and company statements do not prove the origin, manufacturer, configuration, seller or warranty route for every machine and market.",
+  "headquarters": "Pingree Grove, Illinois, United States",
+  "founded": "1985, according to the official PowerBoss site",
+  "heroImage": "/images/brands/powerboss/hero-armadillo-industrial-sweeper.webp",
+  "heroImageAlt": "PowerBoss Armadillo industrial sweeper at a heavy manufacturing site",
+  "heroSourceUrl": "https://www.powerboss.com/wp-content/uploads/2022/10/2022_POWERBOSS_FULL-LINE-BRO2.pdf",
+  "logoImage": "/images/brands/powerboss/logo.webp",
+  "logoImageAlt": "PowerBoss logo",
+  "logoSourceUrl": "https://www.hako.com/fileadmin/user_upload/Unternehmen/Hako_Group/powerboss_logo.png",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/powerboss/company-name-boundary.svg",
+      "alt": "PowerBoss Minuteman Hako ownership and legal company name evidence boundary",
+      "caption": "PowerBoss is a Minuteman subsidiary within Hako Group; current materials use PowerBoss Inc., while a group report uses Minuteman PowerBoss Corp."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/powerboss/site-performance-service-check.svg",
+      "alt": "PowerBoss site performance consumables warranty and service verification checklist",
+      "caption": "Industrial machine selection should be supported by a site test, life-cycle parts plan and named authorized warranty route."
+    }
+  ],
+  "ownership": {
+    "summary": "Hako's current group page identifies PowerBoss Inc. as a subsidiary of Minuteman International and therefore part of the Hako group of companies. Hako Group is positioned within the Possehl Group. This ownership chain is distinct from the contracting seller, destination importer, distributor and authorized service center.",
+    "parentCompany": "Minuteman International, Inc. (Hako Group)"
+  },
+  "leadership": [],
+  "productPortfolio": [
+    {
+      "name": "Industrial rider sweepers",
+      "positioning": "Armadillo, Atlas, Apex and related rider platforms target warehouses, foundries, parking, construction and heavy industrial debris.",
+      "buyerRelevance": "Match sweeping path, filter, hopper, dump height, fuel or battery, aisle width, gradient and dust-control option to the application."
+    },
+    {
+      "name": "Rider scrubbers and sweeper-scrubbers",
+      "positioning": "Nautilus and other ride-on systems address high-duty scrubbing and combined one-pass sweeping and scrubbing.",
+      "buyerRelevance": "Validate tank, brush pressure, recovery, thermal option, fuel or battery, ventilation, water use and measured site productivity."
+    },
+    {
+      "name": "Walk-behind scrubbers and sweepers",
+      "positioning": "Smaller industrial platforms extend the range to constrained spaces and lower-volume sites.",
+      "buyerRelevance": "Check working width, traction, battery and charger, filtration, transport, ergonomics and local consumables."
+    },
+    {
+      "name": "HEPA sweepers and cleaning additives",
+      "positioning": "HEPA configurations and scrubber-focused chemical additives address specialist dust and cleaning processes.",
+      "buyerRelevance": "Require exact filter performance evidence, sealed handling procedure, chemical approval and compatibility with the selected machine."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "PowerBoss says it has manufactured industrial cleaning equipment since 1985 in Pingree Grove, Illinois.",
+      "scope": "Company-level current-site statement; it does not prove Pingree Grove manufacture or US origin for every model and component",
+      "buyerCheck": "Request the exact machine's manufacturer plate, production location, serial, country of origin and configuration record."
+    },
+    {
+      "evidence": "The PowerBoss site presents a Made in the USA statement and a current Pingree Grove corporate office.",
+      "scope": "General website claim; engines, batteries, chargers, options and individual machines require separate evidence",
+      "buyerCheck": "Obtain origin substantiation for the finished unit and identify the source and warranty of major third-party components."
+    },
+    {
+      "evidence": "PowerBoss publishes model manuals, technical bulletins, parts systems, serial lookup and service-request routes shared with Minuteman infrastructure.",
+      "scope": "Published support architecture and named documents",
+      "buyerCheck": "Archive the applicable manual, parts catalogue, serial record, service bulletins and maintenance schedule for the delivered unit."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "PowerBoss lists manufacturing, warehousing, food and beverage, trucking, recycling, utilities, hospitals, government, parking and construction applications.",
+      "scope": "Company-described target markets",
+      "buyerCheck": "Require a reference and a supervised demonstration under comparable debris, dust, gradient and duty-cycle conditions."
+    },
+    {
+      "evidence": "PowerBoss says worldwide factory-trained service and parts distributors support its machines.",
+      "scope": "Company channel statement; authorization, stock and response capability vary by territory",
+      "buyerCheck": "Verify the named distributor's current authorization, technician training, parts inventory, travel area and escalation path."
+    },
+    {
+      "evidence": "A current PowerBoss manual says maintenance must be performed by an authorized PowerBoss service center and documented for warranty purposes.",
+      "scope": "PHX 28/30/33 manual and its stated warranty framework; sales-contract terms can vary",
+      "buyerCheck": "Attach the governing warranty, maintenance intervals, authorized center, record format, exclusions and responsibility for travel and freight."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: PowerBoss is positioned toward rugged, high-duty North American industrial sweeping and scrubbing within Minuteman and Hako's broader platform. Procurement risk concentrates in exact application fit, legal contracting name, model origin and local service capacity.",
+    "competitorSlugs": ["hako", "nilfisk", "tennant", "dulevo"]
+  },
+  "developments": [
+    {
+      "date": "2025-09",
+      "title": "Current PHX manual names the Pingree Grove PowerBoss operation",
+      "summary": "The PHX 28/30/33 user manual identifies PowerBoss Inc. at the current Pingree Grove address and defines authorized-service warranty conditions.",
+      "sourceIds": ["powerboss-phx-manual"]
+    },
+    {
+      "date": "1985",
+      "title": "PowerBoss operating history begins",
+      "summary": "The official site dates PowerBoss's industrial cleaning-equipment manufacturing history to 1985.",
+      "sourceIds": ["powerboss-home"]
+    },
+    {
+      "date": "2007-01-01",
+      "title": "Hako becomes fully owned by Possehl Group",
+      "summary": "Hako's sustainability report records the complete takeover of Hako by the Possehl Group on 1 January 2007.",
+      "sourceIds": ["hako-sustainability"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "powerboss-home",
+      "title": "PowerBoss Industrial Floor Cleaning Machines",
+      "publisher": "PowerBoss",
+      "url": "https://www.powerboss.com/",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "powerboss-product-guide",
+      "title": "PowerBoss Industrial Product Guide",
+      "publisher": "PowerBoss",
+      "url": "https://www.powerboss.com/wp-content/uploads/2022/10/2022_POWERBOSS_FULL-LINE-BRO2.pdf",
+      "publishedAt": "2022",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "powerboss-phx-manual",
+      "title": "PHX 28 30 33 User Manual",
+      "publisher": "PowerBoss",
+      "url": "https://www.powerboss.com/wp-content/uploads/2025/09/988745UMPB-User-Manual-PHX28_30_33-Rev-A.pdf",
+      "publishedAt": "2025-09",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-group",
+      "title": "Hako Group",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/en/hako-group-1",
+      "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "hako-sustainability",
+      "title": "Hako Sustainability Report",
+      "publisher": "Hako GmbH",
+      "url": "https://www.hako.com/fileadmin/PDFs/Downloads/Nachhaltigkeitsbericht_20240307_EN.pdf",
+      "publishedAt": "2024",
+      "accessedAt": "2026-08-08"
+    }
+  ],
+  "publishedAt": "2026-08-08T10:10:00+08:00",
+  "lastVerified": "2026-08-08",
+  "lastModified": "2026-08-08T10:10:00+08:00"
+}

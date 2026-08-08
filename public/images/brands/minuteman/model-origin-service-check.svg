@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Minuteman model, origin, warranty and service checks</title>
+  <desc id="desc">A four-step procurement checklist covering model configuration, manufacturer plate and origin, warranty evidence and authorized service.</desc>
+  <rect width="1200" height="720" rx="38" fill="#172033"/>
+  <text x="70" y="88" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#fff">Turn a catalogue choice into a verifiable order</text>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(70 145)"><circle cx="55" cy="55" r="55" fill="#930039"/><text x="55" y="67" text-anchor="middle" font-size="34" font-weight="700" fill="#fff">1</text><text x="135" y="46" font-size="27" font-weight="700" fill="#fff">Freeze the exact model</text><text x="135" y="82" font-size="20" fill="#cbd3df">Battery, charger, brush, filtration, tools and market version</text></g>
+    <g transform="translate(70 275)"><circle cx="55" cy="55" r="55" fill="#930039"/><text x="55" y="67" text-anchor="middle" font-size="34" font-weight="700" fill="#fff">2</text><text x="135" y="46" font-size="27" font-weight="700" fill="#fff">Verify manufacturer and origin</text><text x="135" y="82" font-size="20" fill="#cbd3df">Serial plate, production site, origin document and conformity file</text></g>
+    <g transform="translate(70 405)"><circle cx="55" cy="55" r="55" fill="#930039"/><text x="55" y="67" text-anchor="middle" font-size="34" font-weight="700" fill="#fff">3</text><text x="135" y="46" font-size="27" font-weight="700" fill="#fff">Lock warranty evidence</text><text x="135" y="82" font-size="20" fill="#cbd3df">Authorized seller, registration, invoice, coverage and exclusions</text></g>
+    <g transform="translate(70 535)"><circle cx="55" cy="55" r="55" fill="#930039"/><text x="55" y="67" text-anchor="middle" font-size="34" font-weight="700" fill="#fff">4</text><text x="135" y="46" font-size="27" font-weight="700" fill="#fff">Test the service route</text><text x="135" y="82" font-size="20" fill="#cbd3df">Parts stock, trained technicians, response time and escalation owner</text></g>
+  </g>
+</svg>
