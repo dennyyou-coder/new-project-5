@@ -37,12 +37,12 @@ The first four pages are ordered by observed GSC exposure. Remaining pages are g
 | 10 | `who-owns-beko-appliances-beko-europe` | Add direct Beko Europe manufacturing answer near the top | `published_verified` |
 | 11 | `who-owns-tineco-ecovacs-group` | Add direct group-versus-model manufacturing answer near the top | `published_verified` |
 | 12 | `who-owns-eufy-anker-smart-home` | Add direct Anker-group versus supplier/factory answer near the top | `published_verified` |
-| 13 | `who-owns-bosch-appliances-bsh-siemens-brands` | Add an explicit manufacturing section and direct first-screen answer | `local_verified` |
-| 14 | `who-owns-skil-tools-chervon` | Add direct Chervon manufacturing answer near the top | `local_verified` |
-| 15 | `who-owns-stihl-family-manufacturing` | Add direct global production-network answer near the top | `local_verified` |
-| 16 | `who-owns-einhell-power-x-change` | Add direct manufacturer and sourcing-network answer near the top | queued |
-| 17 | `who-owns-metabo-metabo-hpt-hikoki` | Add brand-specific manufacturer answer near the top | queued |
-| 18 | `who-owns-aeg-power-tools-tti-license` | Add direct trademark-owner, licensee and manufacturer boundary near the top | queued |
+| 13 | `who-owns-bosch-appliances-bsh-siemens-brands` | Add an explicit manufacturing section and direct first-screen answer | `published_verified` |
+| 14 | `who-owns-skil-tools-chervon` | Add direct Chervon manufacturing answer near the top | `published_verified` |
+| 15 | `who-owns-stihl-family-manufacturing` | Add direct global production-network answer near the top | `published_verified` |
+| 16 | `who-owns-einhell-power-x-change` | Add direct manufacturer and sourcing-network answer near the top | `local_verified` |
+| 17 | `who-owns-metabo-metabo-hpt-hikoki` | Add brand-specific manufacturer answer near the top | `local_verified` |
+| 18 | `who-owns-aeg-power-tools-tti-license` | Add direct trademark-owner, licensee and manufacturer boundary near the top | `local_verified` |
 | 19 | `who-owns-delonghi-appliance-group-brands` | Add direct group-manufacturing answer near the top | queued |
 | 20 | `who-owns-braun-appliances-delonghi-pg-license` | Add direct licensee/manufacturer answer near the top | queued |
 | 21 | `who-owns-breville-sage-regional-brand-rights` | Add direct regional-brand and manufacturer answer near the top | queued |

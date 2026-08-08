@@ -56,4 +56,8 @@ This record covers the fifth three-page release in the sitewide manufacturing-an
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- GitHub PR: `#74`.
+- Squash-merge commit: `67541c96f32560a2f85769f600ae324a44ea7ebf`.
+- Git-linked Vercel production deployment: `dpl_3sCL9K4wevp9X1Guw87xKU1zpm8Q`, status `READY` with the `worldcleanbiz.com` alias and no alias error.
+- The live Bosch Appliances, SKIL and STIHL routes each returned HTTP 200 and passed desktop 1440px plus mobile 390px checks for title, H1, description, canonical, BlogPosting schema, direct manufacturing answer and zero horizontal overflow.
+- All seven live article visuals loaded completely. All 27 unique WCB internal links, Ownership Guide discovery on pages 9, 6 and 5 respectively, and all three sitemap entries passed; no unexpected browser-console error remained.
