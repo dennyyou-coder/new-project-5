@@ -58,4 +58,9 @@ This record covers the third three-page release in the sitewide manufacturing-an
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- GitHub PR [#72](https://github.com/dennyyou-coder/new-project-5/pull/72) was squash-merged into `main` as `8bd412c30218819f3e808edddc4218c3470eabb8`.
+- Git-linked Vercel production deployment `dpl_GXQLLioGkLNJWcXPxb7n5twxCMNb` reached `READY` for that exact merge commit.
+- The live BISSELL, Whirlpool and Hoover URLs returned HTTP 200 and passed desktop 1440px plus mobile 390px checks for title, H1, description, canonical, BlogPosting schema, first-screen manufacturing answer, zero horizontal overflow and complete visuals.
+- All seven live article visuals and all 11 unique article-level internal links loaded successfully.
+- Ownership Guide discovery passed on page 10 for BISSELL and Hoover and page 3 for Whirlpool; all three sitemap entries were present.
+- A cumulative regression check covered the first nine refreshed articles at both desktop and mobile sizes: all 18 page/viewport combinations passed with zero failures or browser errors, and the exact-intent collision check found no competing ownership/manufacturing URL.
