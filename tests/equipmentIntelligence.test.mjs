@@ -363,7 +363,7 @@ test("published third equipment batch is included in production sitemap discover
   }
 });
 
-test("fourth equipment batch meets draft evidence relationship and visual gates", async () => {
+test("fourth equipment batch meets published evidence relationship and visual gates", async () => {
   const realPublishedBrandSlugs = new Set(
     getPublishedBrandProfiles(getInsights()).map(({ slug }) => slug)
   );
@@ -372,7 +372,7 @@ test("fourth equipment batch meets draft evidence relationship and visual gates"
   for (const slug of ["commercial-dry-vacuum", "backpack-vacuum", "commercial-steam-cleaner"]) {
     const profile = profiles.find((candidate) => candidate?.slug === slug);
     assert.ok(profile, `${slug} profile should exist`);
-    assert.equal(profile.status, "draft");
+    assert.equal(profile.status, "published");
     assert.deepEqual(validateEquipmentProfile(profile, realPublishedBrandSlugs), []);
     assert.ok(profile.sources.length >= 5);
     assert.ok(profile.representativeModels.length >= 6);
@@ -412,8 +412,20 @@ test("fourth equipment batch meets draft evidence relationship and visual gates"
   }
 });
 
+test("published fourth equipment batch is included in production sitemap discovery", () => {
+  const urls = sitemap().map(({ url }) => url);
+  for (const slug of ["commercial-dry-vacuum", "backpack-vacuum", "commercial-steam-cleaner"]) {
+    assert.equal(urls.some((url) => url.endsWith(`/equipment/${slug}`)), true);
+  }
+});
+
 test("equipment layout avoids empty title columns and balances odd card grids", () => {
   const styles = readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
+
+  assert.match(
+    styles,
+    /\.equipment-hero-media img\s*\{[^}]*height:\s*auto/s
+  );
 
   assert.match(
     styles,

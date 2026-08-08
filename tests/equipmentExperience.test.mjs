@@ -142,7 +142,8 @@ test("equipment styles preserve scoped desktop and mobile layouts", () => {
   assert.match(styles, /\.equipment-content-visual\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1\.2fr\)\s+minmax\(280px,\s*0\.8fr\)/s);
   assert.match(styles, /\.equipment-content-visual--application-fit\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*0\.8fr\)\s+minmax\(0,\s*1\.2fr\)/s);
   assert.match(styles, /\.equipment-content-visual--application-fit \.equipment-content-visual__media\s*\{[^}]*aspect-ratio:\s*1\s*\/\s*1/s);
-  assert.match(styles, /@media \(max-width: 760px\)[\s\S]*?\.equipment-content-visual--component-stack \.equipment-content-visual__media\s*\{[^}]*aspect-ratio:\s*1\s*\/\s*2/s);
+  assert.match(styles, /@media \(max-width: 760px\)[\s\S]*?\.equipment-content-visual--component-stack \.equipment-content-visual__media\s*\{[^}]*aspect-ratio:\s*auto/s);
+  assert.match(styles, /@media \(max-width: 760px\)[\s\S]*?\.equipment-content-visual--component-stack \.equipment-content-visual__media img\s*\{[^}]*height:\s*auto/s);
   assert.match(styles, /@media \(max-width: 840px\)/);
   assert.match(styles, /@media \(max-width: 840px\)[\s\S]*?\.equipment-content-visual\s*\{[^}]*grid-template-columns:\s*1fr/s);
   assert.match(styles, /@media \(max-width: 760px\)/);
