@@ -40,12 +40,12 @@ The first four pages are ordered by observed GSC exposure. Remaining pages are g
 | 13 | `who-owns-bosch-appliances-bsh-siemens-brands` | Add an explicit manufacturing section and direct first-screen answer | `published_verified` |
 | 14 | `who-owns-skil-tools-chervon` | Add direct Chervon manufacturing answer near the top | `published_verified` |
 | 15 | `who-owns-stihl-family-manufacturing` | Add direct global production-network answer near the top | `published_verified` |
-| 16 | `who-owns-einhell-power-x-change` | Add direct manufacturer and sourcing-network answer near the top | `local_verified` |
-| 17 | `who-owns-metabo-metabo-hpt-hikoki` | Add brand-specific manufacturer answer near the top | `local_verified` |
-| 18 | `who-owns-aeg-power-tools-tti-license` | Add direct trademark-owner, licensee and manufacturer boundary near the top | `local_verified` |
-| 19 | `who-owns-delonghi-appliance-group-brands` | Add direct group-manufacturing answer near the top | queued |
-| 20 | `who-owns-braun-appliances-delonghi-pg-license` | Add direct licensee/manufacturer answer near the top | queued |
-| 21 | `who-owns-breville-sage-regional-brand-rights` | Add direct regional-brand and manufacturer answer near the top | queued |
+| 16 | `who-owns-einhell-power-x-change` | Add direct manufacturer and sourcing-network answer near the top | `published_verified` |
+| 17 | `who-owns-metabo-metabo-hpt-hikoki` | Add brand-specific manufacturer answer near the top | `published_verified` |
+| 18 | `who-owns-aeg-power-tools-tti-license` | Add direct trademark-owner, licensee and manufacturer boundary near the top | `published_verified` |
+| 19 | `who-owns-delonghi-appliance-group-brands` | Add direct group-manufacturing answer near the top | `local_verified` |
+| 20 | `who-owns-braun-appliances-delonghi-pg-license` | Add direct licensee/manufacturer answer near the top | `local_verified` |
+| 21 | `who-owns-breville-sage-regional-brand-rights` | Add direct regional-brand and manufacturer answer near the top | `local_verified` |
 | 22 | `who-owns-gardena-husqvarna-sileno-manufacturing` | Add direct Husqvarna-group manufacturing answer near the top | queued |
 | 23 | `who-owns-hayward-pool-products` | Add direct group-versus-product manufacturing answer near the top | queued |
 | 24 | `who-owns-nilfisk-freudenberg-manufacturing` | Add direct production-network answer near the top | queued |
