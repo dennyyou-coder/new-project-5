@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Ride-on ride-on floor scrubber component verification map</title>
+  <desc id="desc">Four model-specific verification zones covering the cleaning deck, recovery system, tanks, and battery and charger configuration.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b2930"/>
+      <stop offset="1" stop-color="#123f43"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#061c20" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" rx="34" fill="#eff6f4"/>
+  <rect width="1600" height="210" rx="34" fill="url(#background)"/>
+  <rect y="176" width="1600" height="34" fill="url(#background)"/>
+
+  <text x="80" y="72" fill="#7fe0cf" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="4">WCB TECHNICAL DIAGRAM</text>
+  <text x="80" y="132" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800">Model-specific component verification boundary</text>
+  <text x="80" y="178" fill="#c7dcda" font-family="Arial, Helvetica, sans-serif" font-size="24">Confirm identifiers and interfaces before parts, configuration or service decisions.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="260" width="690" height="270" rx="26" fill="#ffffff" stroke="#c7dbd7" stroke-width="2"/>
+    <rect x="830" y="260" width="690" height="270" rx="26" fill="#ffffff" stroke="#c7dbd7" stroke-width="2"/>
+    <rect x="80" y="570" width="690" height="270" rx="26" fill="#ffffff" stroke="#c7dbd7" stroke-width="2"/>
+    <rect x="830" y="570" width="690" height="270" rx="26" fill="#ffffff" stroke="#c7dbd7" stroke-width="2"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <circle cx="140" cy="324" r="34" fill="#0d766e"/>
+    <text x="140" y="334" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="800">01</text>
+    <text x="196" y="316" fill="#123846" font-size="30" font-weight="800">Deck + consumable interface</text>
+    <text x="196" y="354" fill="#557076" font-size="21">Mechanical cleaning contact</text>
+    <line x1="120" y1="390" x2="730" y2="390" stroke="#d5e1df" stroke-width="2"/>
+    <text x="120" y="432" fill="#183b40" font-size="22" font-weight="700">CHECK</text>
+    <text x="218" y="432" fill="#365960" font-size="22">turning envelope · slope · seat controls · deck / pad ID</text>
+    <text x="120" y="475" fill="#183b40" font-size="22" font-weight="700">VERIFY</text>
+    <text x="218" y="475" fill="#365960" font-size="22">brush / pad interface · material · wear limit</text>
+
+    <circle cx="890" cy="324" r="34" fill="#0d766e"/>
+    <text x="890" y="334" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="800">02</text>
+    <text x="946" y="316" fill="#123846" font-size="30" font-weight="800">Squeegee + recovery path</text>
+    <text x="946" y="354" fill="#557076" font-size="21">Liquid pickup and containment</text>
+    <line x1="870" y1="390" x2="1480" y2="390" stroke="#d5e1df" stroke-width="2"/>
+    <text x="870" y="432" fill="#183b40" font-size="22" font-weight="700">CHECK</text>
+    <text x="968" y="432" fill="#365960" font-size="22">assembly width · blade geometry · hose path</text>
+    <text x="870" y="475" fill="#183b40" font-size="22" font-weight="700">VERIFY</text>
+    <text x="968" y="475" fill="#365960" font-size="22">front / rear blade ID · material · adjustment</text>
+
+    <circle cx="140" cy="634" r="34" fill="#0d766e"/>
+    <text x="140" y="644" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="800">03</text>
+    <text x="196" y="626" fill="#123846" font-size="30" font-weight="800">Solution + recovery tanks</text>
+    <text x="196" y="664" fill="#557076" font-size="21">Fluid capacity and chemistry boundary</text>
+    <line x1="120" y1="700" x2="730" y2="700" stroke="#d5e1df" stroke-width="2"/>
+    <text x="120" y="742" fill="#183b40" font-size="22" font-weight="700">CHECK</text>
+    <text x="218" y="742" fill="#365960" font-size="22">usable volume · seals · filters · drain access</text>
+    <text x="120" y="785" fill="#183b40" font-size="22" font-weight="700">VERIFY</text>
+    <text x="218" y="785" fill="#365960" font-size="22">approved chemistry · dosing · cleaning procedure</text>
+
+    <circle cx="890" cy="634" r="34" fill="#0d766e"/>
+    <text x="890" y="644" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="800">04</text>
+    <text x="946" y="626" fill="#123846" font-size="30" font-weight="800">Battery + charger configuration</text>
+    <text x="946" y="664" fill="#557076" font-size="21">Electrical and duty-cycle boundary</text>
+    <line x1="870" y1="700" x2="1480" y2="700" stroke="#d5e1df" stroke-width="2"/>
+    <text x="870" y="742" fill="#183b40" font-size="22" font-weight="700">CHECK</text>
+    <text x="968" y="742" fill="#365960" font-size="22">voltage · chemistry · BMS · connector</text>
+    <text x="870" y="785" fill="#183b40" font-size="22" font-weight="700">VERIFY</text>
+    <text x="968" y="785" fill="#365960" font-size="22">battery / charger · tanks · transport load · service access</text>
+  </g>
+
+  <rect x="80" y="886" width="1440" height="72" rx="20" fill="#dff2ee"/>
+  <text x="800" y="932" text-anchor="middle" fill="#07584f" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="800">Family labels do not establish cross-model compatibility.</text>
+</svg>

@@ -24,19 +24,19 @@ These are procurement subcategories, not rankings. A manufacturer label, cleanin
 
 Include commercial scrubber-dryers whose operator walks behind and steers the machine during normal cleaning. Include traction-assisted and pad-assist designs only when the official source states the operating relationship. Exclude ride-on, stand-on, autonomous and domestic floor washers. Keep working width, tanks, traction, brush pressure, theoretical productivity, battery, charger and recovery performance tied to the exact regional configuration.
 
-Representative models are Tennant T500, Nilfisk SC500, Kärcher B 50 W Bp, Hako Scrubmaster B50, TASKI ULTIMAXX 1900 and Fimap EMx 50.
+Representative models are Tennant T300 and T500, Nilfisk SC500, Kärcher B 50 W, Hako Scrubmaster B25 and B50, and TASKI ULTIMAXX 1900.
 
 ### Ride-On Floor Scrubber
 
 Include commercial scrubber-dryers with an integrated seated operator position used during normal cleaning. Exclude stand-on machines, autonomous-only operation, sweeper-scrubbers and ordinary walk-behind scrubbers. Separate nominal productivity from achieved route output, and verify steering envelope, gradeability, braking, deck or squeegee overhang, transport mass, batteries, charger and tanks for the exact quoted configuration.
 
-Representative models are Tennant T16, Nilfisk SC6500, Kärcher B 150 R, Hako Scrubmaster B120 R, TASKI ULTIMAXX 900 and Comac C130.
+Representative models are Tennant T16 and T17, Nilfisk SC6500 and SC6000, Kärcher B 150 R and Hako Scrubmaster B120 R. TASKI ULTIMAXX 900 is explicitly a walk-behind machine and is excluded from this ride-on profile.
 
 ### Wide-Area Vacuum
 
 Include commercial dry vacuums officially described as wide-area, large-area or equivalent higher-width carpet machines, including walk-behind and ride-on formats. Exclude ordinary tub vacuums, backpacks, domestic uprights, carpet extractors and sweepers. Do not establish a universal width threshold. Brush path, bag or container capacity, airflow, vacuum, filtration, sound, cord or battery, transport and turning requirements remain model-specific.
 
-Representative models are Kärcher CV 66/2 and CV 85/1 RS Bp, Nilfisk GU 700 A, NSS Pacer 30, Truvox Valet Wide Area Vac and TASKI jet 50.
+Representative models are Kärcher CV 66/2 and Chariot 3 CV 86/1 RS Bp, Nilfisk GU 700 A, NSS Pacer 30, Truvox Valet Wide Area Vac and Tornado CK 3030.
 
 ## Evidence design
 

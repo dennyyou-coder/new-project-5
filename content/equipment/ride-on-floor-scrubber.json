@@ -1,0 +1,819 @@
+{
+  "status": "published",
+  "slug": "ride-on-floor-scrubber",
+  "name": "Ride-On Floor Scrubber",
+  "aliases": [
+    "ride-on scrubber dryer",
+    "rider floor scrubber",
+    "seated floor scrubber"
+  ],
+  "definition": "A powered commercial scrubber-dryer with an integrated seated operator station that applies solution, agitates hard floors and recovers dirty liquid while the operator drives the machine.",
+  "includedScope": [
+    "Manufacturer-identified seated ride-on scrubber-dryers",
+    "Battery and documented engine-powered rider configurations",
+    "Disc and cylindrical ride-on scrubber configurations"
+  ],
+  "excludedScope": [
+    "Walk-behind and stand-on scrubbers",
+    "Autonomous machines without a seated operating format",
+    "Sweepers without wet scrubbing and liquid recovery"
+  ],
+  "primaryApplications": [
+    "Warehouses and logistics",
+    "Manufacturing and industrial halls",
+    "Airports, stations and large retail",
+    "Parking and large public facilities"
+  ],
+  "headline": "Ride-on floor scrubber types, turning fit, productivity and buyer checks",
+  "description": "Technical reference for seated ride-on scrubber dryers covering route geometry, deck and recovery systems, batteries, representative models and procurement verification.",
+  "metaDescription": "Ride-on floor scrubber guide covering widths, tanks, batteries, turning space, representative models and buyer checks.",
+  "disclaimer": "Independent category reference, not driving, safety, slope, battery, chemical or floor-compatibility advice. Verify the exact manual, load, route, ramp, product number, battery and local service support.",
+  "heroImage": "/images/equipment/ride-on-floor-scrubber/hero.webp",
+  "heroImageAlt": "Hako Scrubmaster B120 R seated ride-on floor scrubber",
+  "heroImageCaption": "Official Hako product image of the Scrubmaster B120 R. It illustrates the seated rider format, not universal route, slope or productivity suitability.",
+  "heroSourceUrl": "https://www.hako.com/fileadmin/user_upload/Scrubmaster/Hero-Bilder_SCM_2026/SCM-B120R_1000x1000.png",
+  "contentVisuals": [
+    {
+      "placement": "equipment-types",
+      "visualType": "official-photo",
+      "src": "/images/equipment/ride-on-floor-scrubber/type-ride-on.webp",
+      "alt": "Tennant T16 battery ride-on floor scrubber",
+      "caption": "Official Tennant product image showing the seated rider format; options vary by configuration.",
+      "sourceUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20riders/T16/Images/T16-right-ec-H2O-logo.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "placement": "application-fit",
+      "visualType": "official-photo",
+      "src": "/images/equipment/ride-on-floor-scrubber/application-airport.webp",
+      "alt": "Tennant T16 ride-on scrubber cleaning an airport floor",
+      "caption": "Official Tennant application image. It does not establish achieved airport productivity or fit for another route.",
+      "sourceUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20riders/T16/Images/t16-card-image.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "placement": "component-stack",
+      "visualType": "wcb-diagram",
+      "src": "/images/equipment/ride-on-floor-scrubber/component-verification-map.svg",
+      "mobileSrc": "/images/equipment/ride-on-floor-scrubber/component-verification-map-mobile.svg",
+      "alt": "WCB ride on floor scrubber component verification map",
+      "caption": "WCB verification map. Family labels do not establish cross-model compatibility; verify the exact product number, configuration and parts documentation.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Category boundary",
+      "value": "Operator sits on an integrated station and drives the scrubber; manufacturer classification takes priority over machine width or productivity.",
+      "evidence": "Reviewed official product pages use the stated operating format and equipment architecture for the named machines.",
+      "scope": "Named models and reviewed regional configurations; no universal dimensional threshold is inferred.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Primary work interface",
+      "value": "Driven chassis, powered scrub deck, squeegee and vacuum recovery.",
+      "evidence": "Official pages document rider controls, traction, scrub heads, tanks and recovery systems.",
+      "scope": "Exact brush, pad, nozzle, floor and consumable configuration.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Productivity boundary",
+      "value": "Manufacturer area rates are source-specific, not achieved-site guarantees",
+      "evidence": "Official sources publish model-specific widths, speeds or stated productivity figures under their own reporting conventions.",
+      "scope": "Named manufacturer figures only; no cross-brand normalization or ranking.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Configuration boundary",
+      "value": "Deck, side-brush, battery, charger, traction and tank options vary by product number.",
+      "evidence": "Reviewed rider families publish materially different configurations.",
+      "scope": "Delivered product number, voltage, battery or cable, consumables and local service terms.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemFlow": [
+    {
+      "order": 1,
+      "name": "Solution delivery",
+      "componentFamily": "Fresh-water tank, dosing path and control",
+      "role": "Meters approved cleaning solution to the working area.",
+      "evidence": "Manufacturer manuals and pages document solution tanks and delivery controls.",
+      "scope": "Exact model, chemistry and flow setting.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Mechanical agitation",
+      "componentFamily": "Disc, roller or orbital deck",
+      "role": "Loosens soil through the selected brush or pad interface.",
+      "evidence": "Official pages document model-specific deck choices.",
+      "scope": "Deck, consumable, floor and pressure are configuration-specific.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Squeegee collection",
+      "componentFamily": "Squeegee body, blades and adjustment",
+      "role": "Channels liquid toward the suction path.",
+      "evidence": "Commercial scrubber documentation identifies squeegee recovery assemblies.",
+      "scope": "Exact blade material, geometry and adjustment.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Vacuum recovery",
+      "componentFamily": "Vacuum motor, hose and recovery tank",
+      "role": "Collects dirty solution for controlled disposal.",
+      "evidence": "Official specifications publish separate recovery systems and tanks.",
+      "scope": "Achieved dryness depends on setup, floor, blades and speed.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Compact seated rider",
+      "taskScale": "Medium routes needing seated travel in constrained facilities",
+      "operatorRelationship": "Seated driver with steering and travel controls",
+      "spaceConstraints": "Doorway, turning circle, elevator and visibility require measurement",
+      "limitations": "Compact marketing does not prove fit.",
+      "evidence": "Hako and Kärcher publish rider dimensions and maneuverability features.",
+      "scope": "Named configurations.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Large battery rider",
+      "taskScale": "Long routes and large indoor areas",
+      "operatorRelationship": "Seated driver; battery and refill support shape the shift",
+      "spaceConstraints": "Transport weight, ramps, storage and charging are material",
+      "limitations": "Theoretical output omits interruptions.",
+      "evidence": "Tennant and Nilfisk position reviewed riders for large facilities.",
+      "scope": "Named machines and source conditions.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Disc or cylindrical rider",
+      "taskScale": "Floor- and soil-specific scrubbing with optional debris collection",
+      "operatorRelationship": "Driver selects approved operating mode and settings",
+      "spaceConstraints": "Deck and squeegee envelope varies",
+      "limitations": "Pre-sweep or cylindrical labels do not replace site trials.",
+      "evidence": "Official pages document disc and cylindrical configurations.",
+      "scope": "Exact deck and consumable.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "name": "Working width",
+      "purchasingMeaning": "Nominal installed deck width",
+      "reportingBoundary": "Exact head configuration and source unit",
+      "comparisonCaution": "Width alone does not establish route fit or achieved output.",
+      "evidence": "Manufacturers publish configuration-specific cleaning widths.",
+      "scope": "Named configurations only.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Solution and recovery capacity",
+      "purchasingMeaning": "Supports refill and dump planning",
+      "reportingBoundary": "Nominal tank values, not usable-cycle proof",
+      "comparisonCaution": "Tank size does not include travel, refill or cleaning time.",
+      "evidence": "Official specifications publish separate tank capacities.",
+      "scope": "Named products and stated units.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Theoretical area performance",
+      "purchasingMeaning": "A planning input based on stated width and travel assumptions",
+      "reportingBoundary": "Manufacturer method and source conditions",
+      "comparisonCaution": "Do not treat theoretical output as achieved site productivity.",
+      "evidence": "Official pages publish model-specific theoretical figures for selected machines.",
+      "scope": "Source figures only; no cross-brand normalization.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Battery runtime and charging",
+      "purchasingMeaning": "Supports shift, charger and battery planning",
+      "reportingBoundary": "Exact battery chemistry, capacity, charger and duty",
+      "comparisonCaution": "Maximum runtime is not guaranteed shift output.",
+      "evidence": "Manufacturers publish battery or charger options by configuration.",
+      "scope": "Delivered battery and site duty.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationFit": [
+    {
+      "application": "Open hard-floor routes",
+      "wcbAssessment": "Route geometry and support time should be measured before selecting width or tank size.",
+      "basis": "Documented working widths and tank systems.",
+      "limitations": "No site result is established.",
+      "buyerAction": "Map doors, turns, refill points and disposal route; run a witnessed trial.",
+      "engineeringCheck": "Record achieved clean-and-dry area per labor hour.",
+      "evidence": "Manufacturers position reviewed scrubbers for commercial hard-floor cleaning.",
+      "scope": "Approved floors and named machines.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "Route geometry and support time should be measured before selecting width or tank size."
+    },
+    {
+      "application": "Occupied or noise-sensitive facilities",
+      "wcbAssessment": "Daytime suitability requires local sound, traffic and residual-moisture acceptance.",
+      "basis": "Official application positioning and model-specific sound data.",
+      "limitations": "A marketing application image is not a universal safety result.",
+      "buyerAction": "Trial during the intended operating window and document controls.",
+      "engineeringCheck": "Check sound method, visibility, stopping distance and dryness.",
+      "evidence": "Official sources show or position selected machines in public and healthcare settings.",
+      "scope": "Exact site procedure and regional model.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "Daytime suitability requires local sound, traffic and residual-moisture acceptance."
+    },
+    {
+      "application": "Structured or uneven hard floors",
+      "wcbAssessment": "Deck and squeegee choice should be proven on the actual surface.",
+      "basis": "Manufacturers offer disc, roller and orbital heads plus different squeegees.",
+      "limitations": "No head is universally best.",
+      "buyerAction": "Use a soil-and-floor test panel in the acceptance trial.",
+      "engineeringCheck": "Inspect edge cleaning, solution recovery and surface change.",
+      "evidence": "Official pages document alternative deck systems and recovery features.",
+      "scope": "Exact floor, soil, chemical and consumable.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09",
+      "assessment": "Deck and squeegee choice should be proven on the actual surface."
+    }
+  ],
+  "componentStack": [
+    {
+      "name": "Scrub deck and consumable interface",
+      "role": "Provides floor agitation.",
+      "variants": [
+        "Disc brush or pad driver",
+        "Cylindrical roller",
+        "Orbital head"
+      ],
+      "criticalChecks": [
+        "Deck model",
+        "Working width",
+        "Brush or pad part number",
+        "Floor approval"
+      ],
+      "evidence": "Official sources publish several deck architectures.",
+      "scope": "No cross-model compatibility is inferred.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Squeegee and recovery path",
+      "role": "Collects and transports dirty solution.",
+      "variants": [
+        "Curved squeegee",
+        "Blade sets",
+        "Recovery hose and vacuum motor"
+      ],
+      "criticalChecks": [
+        "Assembly width",
+        "Blade material",
+        "Hose fit",
+        "Adjustment"
+      ],
+      "evidence": "Official documentation treats recovery parts as model-specific assemblies.",
+      "scope": "Exact model and serial range.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Tank and chemical system",
+      "role": "Stores and meters clean solution and recovered liquid.",
+      "variants": [
+        "Manual dilution",
+        "Onboard dosing",
+        "Auto-fill or rinse options"
+      ],
+      "criticalChecks": [
+        "Tank seals",
+        "Approved chemistry",
+        "Dose range",
+        "Drain access"
+      ],
+      "evidence": "Manufacturers publish configuration-specific tank and dosing features.",
+      "scope": "Exact chemistry and machine option.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Battery, charger and controls",
+      "role": "Supplies traction, scrubbing and recovery power.",
+      "variants": [
+        "Flooded or sealed lead-acid",
+        "Lithium-ion",
+        "Onboard or off-board charger"
+      ],
+      "criticalChecks": [
+        "Voltage",
+        "Chemistry",
+        "Connector",
+        "Charger pairing"
+      ],
+      "evidence": "Official pages document multiple battery configurations.",
+      "scope": "Exact product number and local electrical supply.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeModels": [
+    {
+      "brandSlug": "tennant",
+      "brandName": "Tennant",
+      "modelName": "T16",
+      "subtype": "Battery ride-on",
+      "distinguishingSpecifications": [
+        "900, 1145 or 1170 mm published cleaning paths",
+        "190 L standard solution tank"
+      ],
+      "marketScope": "Tennant US",
+      "evidence": "The official manufacturer source identifies the named ride-on model and cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "tennant-t16"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "tennant",
+      "brandName": "Tennant",
+      "modelName": "T17",
+      "subtype": "Heavy-duty battery ride-on",
+      "distinguishingSpecifications": [
+        "Multiple disc or cylindrical configurations",
+        "Large-capacity battery options"
+      ],
+      "marketScope": "Tennant US",
+      "evidence": "The official manufacturer source identifies the named ride-on model and cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "tennant-t17"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "SC6500",
+      "subtype": "Large ride-on",
+      "distinguishingSpecifications": [
+        "Up to 1300 mm family working width",
+        "265 L solution and recovery tanks"
+      ],
+      "marketScope": "Nilfisk global product 56414022",
+      "evidence": "The official manufacturer source identifies the named ride-on model and cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "nilfisk-sc6500"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "nilfisk",
+      "brandName": "Nilfisk",
+      "modelName": "SC6000 910C",
+      "subtype": "Ride-on cylindrical scrubber",
+      "distinguishingSpecifications": [
+        "910 mm named configuration",
+        "Large indoor area positioning"
+      ],
+      "marketScope": "Nilfisk global product 56116003",
+      "evidence": "The official manufacturer source identifies the named ride-on model and cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "nilfisk-sc6000"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "karcher",
+      "brandName": "Kärcher",
+      "modelName": "B 150 R",
+      "subtype": "Battery ride-on",
+      "distinguishingSpecifications": [
+        "90 cm disc head on reviewed pack",
+        "150 L fresh and waste tanks"
+      ],
+      "marketScope": "Kärcher International product 1.246-156.0",
+      "evidence": "The official manufacturer source identifies the named ride-on model and cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "karcher-b150"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "brandSlug": "hako",
+      "brandName": "Hako",
+      "modelName": "Scrubmaster B120 R",
+      "subtype": "Ride-on",
+      "distinguishingSpecifications": [
+        "70–90 cm configuration range",
+        "120 L fresh and dirty water tanks"
+      ],
+      "marketScope": "Hako International",
+      "evidence": "The official manufacturer source identifies the named ride-on model and cited configuration features.",
+      "scope": "Exact regional product number and delivered options.",
+      "sourceIds": [
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedTask": "Large-area route cleaning",
+      "attributeToVerify": "Achieved output including turns, edges, refill, dump and charging",
+      "comparisonTrap": "Buying by theoretical m²/h alone",
+      "assessment": "Use a timed site trial including support work.",
+      "basis": "Manufacturer figures omit some site variables.",
+      "limitations": "No universal correction factor exists.",
+      "buyerAction": "Measure fill, travel, cleaning, dump and post-clean time.",
+      "engineeringCheck": "Record floor area, obstacles, turns and achieved dryness.",
+      "evidence": "Official sources publish widths, tanks and selected theoretical output.",
+      "scope": "Source-specific figures and actual site.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Battery-powered shift work",
+      "attributeToVerify": "Battery chemistry, runtime, charger and opportunity-charging rules",
+      "comparisonTrap": "Assuming amp-hours or maximum runtime are directly comparable",
+      "assessment": "Approve a complete energy package, not the machine alone.",
+      "basis": "Battery options vary by product and market.",
+      "limitations": "Battery aging and duty vary.",
+      "buyerAction": "Require exact battery and charger part numbers in the quote.",
+      "engineeringCheck": "Model energy, charging window, ventilation and electrical input.",
+      "evidence": "Official sources list model-specific battery choices.",
+      "scope": "Delivered configuration.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedTask": "Routes with ramps, doors or elevators",
+      "attributeToVerify": "Machine envelope, rated grade, total mass, floor loading and visibility",
+      "comparisonTrap": "Using cleaning width as the route-fit dimension",
+      "assessment": "Treat route compatibility as an engineering acceptance gate.",
+      "basis": "Official sources publish separate widths, dimensions, weights and grade data.",
+      "limitations": "Site approvals and local rules vary.",
+      "buyerAction": "Survey the complete route and demonstrate it loaded.",
+      "engineeringCheck": "Verify ramp, turning, doorway, elevator capacity and emergency egress.",
+      "evidence": "Manufacturers publish configuration-specific dimensions and operating data.",
+      "scope": "Exact delivered machine and route.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Door, aisle and turning envelope",
+      "reason": "Nominal cleaning width is smaller than the machine or squeegee envelope.",
+      "buyerAction": "Measure the complete route and demonstrate turns.",
+      "evidence": "Official pages publish dimensions and widths separately.",
+      "scope": "Exact delivered configuration.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Floor and chemical compatibility",
+      "reason": "Brush, pad, pressure and detergent can affect finish and recovery.",
+      "buyerAction": "Obtain written approvals and trial the actual surface.",
+      "evidence": "Manufacturers specify model-specific decks and chemical systems.",
+      "scope": "Actual floor, coating, soil and chemistry.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Parts and service configuration",
+      "reason": "Decks, blades, batteries and chargers differ within a model family.",
+      "buyerAction": "Record serial range and all consumable part numbers.",
+      "evidence": "Official product families expose multiple configurations.",
+      "scope": "Quoted regional product number.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Slope, braking and transport load",
+      "reason": "A seated rider is a driven vehicle with configuration-specific mass and grade limits.",
+      "buyerAction": "Verify the manual, route survey, elevator and charging area before acceptance.",
+      "evidence": "Official rider sources publish weight, grade or drive configuration data.",
+      "scope": "Exact product and site.",
+      "sourceIds": [
+        "tennant-t16",
+        "tennant-t17",
+        "nilfisk-sc6500",
+        "nilfisk-sc6000",
+        "karcher-b150",
+        "hako-b120"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72:2021",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety scope for powered ride-on and powered walk-behind commercial floor-treatment machines; it does not rank cleaning performance.",
+      "evidence": "IEC publishes the edition, date and scope.",
+      "scope": "Confirm regional adoption and the exact machine classification.",
+      "sourceIds": [
+        "iec-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2021-07-12",
+      "title": "IEC commercial floor-treatment safety edition published",
+      "summary": "IEC published edition 5.0 of IEC 60335-2-72.",
+      "evidence": "IEC catalogue records the publication date and scope.",
+      "scope": "Safety scope only; not a performance ranking.",
+      "sourceIds": [
+        "iec-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "iec-72",
+      "title": "IEC 60335-2-72:2021",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64778",
+      "publishedAt": "2021-07-12",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tennant-t16",
+      "title": "T16 Battery Ride-On Floor Scrubber",
+      "publisher": "Tennant Company",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/machines/scrubbers/product.t16.battery-ride-on-floor-scrubber.2000070.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tennant-t17",
+      "title": "T17 Battery-Powered Ride-On Scrubber",
+      "publisher": "Tennant Company",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/machines/scrubbers/product.t17.battery-powered-ride-on-floor-scrubber.2000071.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-sc6500",
+      "title": "SC6500 Ride-On Scrubber Dryer",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/professional/products/floor-cleaning/scrubber-dryers/stand-onride-on-scrubberdryers/sc6500-ride-on-schrobzuigmachine%2B56414022/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-sc6000",
+      "title": "SC6000 910C Ride-On Scrubber Dryer",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/professional/products/floor-cleaning/scrubber-dryers/stand-onride-on-scrubberdryers/sc6000%2B56116003/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-b150",
+      "title": "B 150 R Bp Pack 170Ah AGM D90",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/professional/floor-scrubbers-scrubber-driers/ride-on-step-on-scrubber-driers/b-150-r-bp-pack-170ah-agm-d-90-12461560.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "hako-b120",
+      "title": "Scrubmaster B120 R",
+      "publisher": "Hako",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/en/products/cleaning-technology/scrubber-driers/ride-on-scrubber-driers/scrubmaster-b120-r",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}
