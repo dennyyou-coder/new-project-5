@@ -57,4 +57,8 @@ This record covers the sixth three-page release in the sitewide manufacturing-an
 
 ## Production evidence
 
-Add PR, merge commit, Git-linked Vercel production deployment and live verification after the production gate passes.
+- GitHub PR: `#76`.
+- Squash-merge commit: `7cc96bb147d7bd5d7c2dde43c390b9ff6abaf0f7`.
+- Git-linked Vercel production deployment: `dpl_HnmbotXyo2my41V9zU8WSW9uVhLH`, status `READY` with the `worldcleanbiz.com` alias and no alias error.
+- The live Einhell, Metabo/Metabo HPT and AEG Power Tools routes each returned HTTP 200 and passed desktop 1440px plus mobile 390px checks for title, H1, description, canonical, BlogPosting schema, direct manufacturing answer and zero horizontal overflow.
+- All eight live article visuals loaded completely. All 12 unique WCB internal links, Ownership Guide discovery on pages 5, 6 and 4 respectively, and all three sitemap entries passed; no browser-console error remained.
