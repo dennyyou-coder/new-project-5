@@ -10,9 +10,9 @@ This release refreshes three existing robotic-pool-cleaner ownership and manufac
 
 | Order | Existing guide | Locked slug | 28-day clicks | 28-day impressions | CTR | Average position | Status |
 |---:|---|---|---:|---:|---:|---:|---|
-| 1 | Who Makes Aquabot Pool Cleaners? | `who-makes-aquabot-pool-cleaners-bwt-aquatron` | 4 | 231 | 1.73% | 7.17 | `local_verified` |
-| 2 | Who Makes WYBOT Pool Cleaners? | `who-makes-wybot-pool-cleaners-wybotics-wangyuan` | 3 | 218 | 1.38% | 6.51 | `local_verified` |
-| 3 | Who Owns Aiper? | `who-owns-aiper-fluidra-stake` | 1 | 186 | 0.54% | 8.20 | `local_verified` |
+| 1 | Who Makes Aquabot Pool Cleaners? | `who-makes-aquabot-pool-cleaners-bwt-aquatron` | 4 | 231 | 1.73% | 7.17 | `published_verified` |
+| 2 | Who Makes WYBOT Pool Cleaners? | `who-makes-wybot-pool-cleaners-wybotics-wangyuan` | 3 | 218 | 1.38% | 6.51 | `published_verified` |
+| 3 | Who Owns Aiper? | `who-owns-aiper-fluidra-stake` | 1 | 186 | 0.54% | 8.20 | `published_verified` |
 
 ## Search and collision decision
 
@@ -53,10 +53,10 @@ This release refreshes three existing robotic-pool-cleaner ownership and manufac
 
 ## Production evidence
 
-- PR: pending.
-- Squash merge: pending.
-- Git-linked Vercel production deployment: pending.
-- Live verification: pending.
+- PR: [#94](https://github.com/dennyyou-coder/new-project-5/pull/94).
+- Squash merge: `602ab02d3e1741bdbc483c807cc3ab8d18373aab`.
+- Git-linked Vercel production deployment: `dpl_Cwu5vNcTgAk2pYwFVsnGKYA9L6Ds` (`READY`).
+- Live verification passed for all three URLs: HTTP 200; expected title, H1, description, canonical and BlogPosting schema; two complete 1600x900 visuals per page; no mobile horizontal overflow; all eight unique internal WCB links including `/about` returned HTTP 200; Aquabot appeared on ownership guide page 8, WYBOT and Aiper on page 9; each slug appeared exactly once in the sitemap; and no console or runtime error remained.
 
 ## Next traffic-first queue
 
