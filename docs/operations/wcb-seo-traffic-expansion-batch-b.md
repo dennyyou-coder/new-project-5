@@ -10,9 +10,9 @@ This release implements the three new traffic topics locked as the next queue in
 
 | Order | New guide | Locked slug | Primary intent | Status |
 |---:|---|---|---|---|
-| 1 | Who Makes RIDGID Power Tools? TTI, Emerson and Home Depot Explained | `who-makes-ridgid-power-tools-tti-emerson` | Separate Emerson's trademark ownership, TTI's licensed power-tool operation, OWT/TTI product evidence and Home Depot retail | `local_verified` |
-| 2 | Who Makes Insignia Appliances? Best Buy and Its Suppliers Explained | `who-makes-insignia-appliances-best-buy-suppliers` | Explain Best Buy's private-label ownership and the model-specific supplier-factory system | `local_verified` |
-| 3 | Who Makes Amana Appliances? Whirlpool and the HVAC Brand Split Explained | `who-makes-amana-appliances-whirlpool-hvac-split` | Separate Whirlpool major appliances, licensed Daikin/Goodman HVAC and XLS room-air products | `local_verified` |
+| 1 | Who Makes RIDGID Power Tools? TTI, Emerson and Home Depot Explained | `who-makes-ridgid-power-tools-tti-emerson` | Separate Emerson's trademark ownership, TTI's licensed power-tool operation, OWT/TTI product evidence and Home Depot retail | `published_verified` |
+| 2 | Who Makes Insignia Appliances? Best Buy and Its Suppliers Explained | `who-makes-insignia-appliances-best-buy-suppliers` | Explain Best Buy's private-label ownership and the model-specific supplier-factory system | `published_verified` |
+| 3 | Who Makes Amana Appliances? Whirlpool and the HVAC Brand Split Explained | `who-makes-amana-appliances-whirlpool-hvac-split` | Separate Whirlpool major appliances, licensed Daikin/Goodman HVAC and XLS room-air products | `published_verified` |
 
 ## Search and collision decision
 
@@ -54,15 +54,15 @@ This release implements the three new traffic topics locked as the next queue in
 
 ## Production evidence
 
-- PR: pending.
-- Squash merge: pending.
-- Git-linked Vercel production deployment: pending.
-- Live verification: pending.
+- PR: [#90](https://github.com/dennyyou-coder/new-project-5/pull/90).
+- Squash merge: `6ebf86e28893b47cd8444e154fb304c10f73331b`.
+- Git-linked Vercel production deployment: `dpl_H4oK3r9QjaYxPeyHT9LqdJ3FXKUy`, `READY`.
+- Live verification: all three production URLs returned HTTP 200 and passed expected title, H1, description, canonical, BlogPosting schema, guide discovery, sitemap presence, complete visuals, internal links, and desktop/390px checks without horizontal overflow.
 
 ## Next traffic-first queue
 
-1. `who-owns-dewalt-stanley-black-decker`
-2. `who-makes-philips-vacuum-cleaners-versuni`
-3. `who-owns-worx-positec-landroid-manufacturing`
+1. `who-makes-dolphin-pool-cleaners-maytronics`
+2. `who-makes-luba-robot-mowers-mammotion-agilex`
+3. `who-owns-segway-navimow-ninebot-willand`
 
-These are the next update-first candidates from the same 28-day GSC export, led by high impressions and low click-through rate. Reconfirm current queries, page state and intent overlap before editing.
+The earlier DeWalt, Philips-vacuum and WORX queue was superseded after recovery against current `main`: DeWalt had already shipped in Batch H, while Philips vacuum and WORX had already shipped in Batch K. The three entries above are the next unrefreshed update-first candidates from the same 28-day GSC export.
