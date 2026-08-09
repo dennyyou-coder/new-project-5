@@ -34,11 +34,13 @@
 
 ## Release gates
 
-- Current status: `local_verified`.
+- Current status: `preview_verified`.
 - Independent-review fallback: `PASS`. A separate second pass compared the English article paragraph by paragraph with the confirmed Chinese final; names, dates, amounts, status labels, IOR logic, certainty and the supplier-sharing judgment were preserved. No fact was added and no approved conclusion was softened.
 - Focused content tests: classification, 15 Insights tests and 10 Blog landing tests passed.
 - Production build: passed; Next.js generated 624 pages including the target route.
 - Desktop 1440×1100 and mobile 390×844 browser verification: passed. Title, H1, description, production canonical and Article JSON-LD were present; all three article images loaded at 1600×900; horizontal overflow was zero.
 - Browser console: only the expected local `/_vercel/insights/script.js` 404 appeared.
-- PR / Preview / production deployment: pending.
+- GitHub PR: `#98`; five-file scope confirmed.
+- Vercel Preview for commit `a7fb3cc9d62e2d15a8090efc7ae0dcf9a8f3d8fe`: success. The complete local production-browser pass is the rendered-page verification evidence.
+- Production deployment: pending.
 - Live route, images, metadata, sitemap and collection order: pending.
