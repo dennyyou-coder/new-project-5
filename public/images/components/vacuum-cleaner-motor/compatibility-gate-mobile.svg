@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1350" viewBox="0 0 720 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Vacuum motor compatibility verification gate mobile diagram</title>
+  <desc id="desc">Vertical WCB checklist for identity, electrical, mechanical, system and safety evidence.</desc>
+  <rect width="720" height="1350" rx="30" fill="#eef5f8"/>
+  <g font-family="Arial, sans-serif">
+    <text x="50" y="70" fill="#172d43" font-size="33" font-weight="700">Compatibility requires</text><text x="50" y="110" fill="#172d43" font-size="33" font-weight="700">five evidence gates</text>
+    <g fill="#fff" stroke="#b9ceda" stroke-width="3">
+      <rect x="50" y="165" width="620" height="145" rx="24"/><rect x="50" y="330" width="620" height="145" rx="24"/><rect x="50" y="495" width="620" height="145" rx="24"/><rect x="50" y="660" width="620" height="145" rx="24"/><rect x="50" y="825" width="620" height="145" rx="24"/>
+    </g>
+    <g fill="#146b9c" font-size="20" font-weight="700"><text x="85" y="210">01 · IDENTITY</text><text x="85" y="375">02 · ELECTRICAL</text><text x="85" y="540">03 · MECHANICAL</text><text x="85" y="705">04 · SYSTEM</text><text x="85" y="870">05 · SAFETY</text></g>
+    <g fill="#172d43" font-size="22"><text x="85" y="255">Part number · revision · model / serial</text><text x="85" y="420">Voltage · frequency · controls · wiring · protection</text><text x="85" y="585">Envelope · mount · fan · seals · duct · connector</text><text x="85" y="750">Operating point · cooling path · wet / dry boundary</text><text x="85" y="915">Insulation · approvals · current service document</text></g>
+    <rect x="50" y="1010" width="620" height="155" rx="24" fill="#fff0cf"/>
+    <text x="85" y="1055" fill="#7b5400" font-size="20" font-weight="700">DO NOT SUBSTITUTE:</text><text x="85" y="1095" fill="#7b5400" font-size="19">appearance, wattage, family name, ownership</text><text x="85" y="1128" fill="#7b5400" font-size="19">or seller wording for exact documentation.</text>
+    <rect x="50" y="1200" width="620" height="100" rx="24" fill="#172d43"/>
+    <text x="360" y="1260" text-anchor="middle" fill="#fff" font-size="25" font-weight="700">Pass every relevant gate—or stop.</text>
+  </g>
+</svg>

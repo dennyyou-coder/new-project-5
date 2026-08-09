@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vacuum motor compatibility verification gate</title>
+  <desc id="desc">WCB diagram requiring identity, electrical, mechanical, system and safety checks before component approval.</desc>
+  <rect width="1600" height="900" rx="36" fill="#eef5f8"/>
+  <g font-family="Arial, sans-serif">
+    <text x="80" y="90" fill="#172d43" font-size="42" font-weight="700">Compatibility is a chain of evidence—not a visual match</text>
+    <text x="80" y="138" fill="#587086" font-size="24">A failed gate stops approval and sends the part back to engineering or the manufacturer.</text>
+    <g fill="#fff" stroke="#b9ceda" stroke-width="3">
+      <rect x="80" y="230" width="250" height="250" rx="28"/><rect x="380" y="230" width="250" height="250" rx="28"/><rect x="680" y="230" width="250" height="250" rx="28"/><rect x="980" y="230" width="250" height="250" rx="28"/><rect x="1280" y="230" width="240" height="250" rx="28"/>
+    </g>
+    <g fill="#146b9c" font-size="21" font-weight="700"><text x="115" y="280">01 · IDENTITY</text><text x="415" y="280">02 · ELECTRICAL</text><text x="715" y="280">03 · MECHANICAL</text><text x="1015" y="280">04 · SYSTEM</text><text x="1315" y="280">05 · SAFETY</text></g>
+    <g fill="#172d43" font-size="24" font-weight="700"><text x="115" y="335">Part number</text><text x="115" y="370">Revision</text><text x="115" y="405">Model / serial</text><text x="415" y="335">Voltage / frequency</text><text x="415" y="370">Controls / wiring</text><text x="415" y="405">Protection</text><text x="715" y="335">Envelope / mount</text><text x="715" y="370">Fan / seal / duct</text><text x="715" y="405">Rotation / connector</text><text x="1015" y="335">Operating point</text><text x="1015" y="370">Cooling path</text><text x="1015" y="405">Wet / dry boundary</text><text x="1315" y="335">Insulation</text><text x="1315" y="370">Approvals</text><text x="1315" y="405">Service document</text></g>
+    <g stroke="#146b9c" stroke-width="8" stroke-linecap="round"><path d="M340 355h28"/><path d="M640 355h28"/><path d="M940 355h28"/><path d="M1240 355h28"/></g>
+    <rect x="80" y="555" width="950" height="230" rx="30" fill="#fff0cf"/>
+    <text x="120" y="615" fill="#7b5400" font-size="25" font-weight="700">These shortcuts do not pass the gate</text>
+    <text x="120" y="670" fill="#7b5400" font-size="23">Physical resemblance  •  matching wattage  •  generic family name</text>
+    <text x="120" y="715" fill="#7b5400" font-size="23">group ownership  •  seller claim  •  “fits many models” wording</text>
+    <text x="120" y="760" fill="#7b5400" font-size="20">Missing evidence means “not verified,” not “probably compatible.”</text>
+    <rect x="1080" y="555" width="440" height="230" rx="30" fill="#172d43"/>
+    <text x="1130" y="625" fill="#9ad5ef" font-size="23" font-weight="700">APPROVAL OUTPUT</text>
+    <text x="1130" y="682" fill="#fff" font-size="31" font-weight="700">Exact documented fit</text>
+    <text x="1130" y="730" fill="#c6d8e2" font-size="21">or stop and escalate</text>
+  </g>
+</svg>

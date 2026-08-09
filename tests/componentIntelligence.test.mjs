@@ -2,10 +2,13 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import fs from "node:fs";
 import path from "node:path";
+import sharp from "sharp";
 import {
   buildComponentPageSchemas,
   buildComponentSitemapEntries,
   buildComponentStaticParams,
+  getComponentPageData,
+  getComponentProfiles,
   getPublishedComponentProfiles,
   isComponentDraftVisible,
   validateComponentProfile
@@ -133,4 +136,41 @@ test("site discovery integrates published components without hard-coding the pil
   assert.match(source, /componentProfiles\.length > 0 \? \["\/components"\] : \[\]/);
   assert.match(source, /buildComponentSitemapEntries\(componentProfiles, baseUrl\)/);
   assert.doesNotMatch(source, /vacuum-cleaner-motor/);
+});
+
+test("vacuum cleaner motor pilot meets evidence relationship and visual gates", async () => {
+  const profile = getComponentProfiles().find((candidate) => candidate?.slug === "vacuum-cleaner-motor");
+  assert.ok(profile);
+  assert.equal(profile.status, "draft");
+  assert.deepEqual(validateComponentProfile(profile), []);
+  assert.equal(getComponentPageData(profile.slug, { includeDrafts: false }), undefined);
+  assert.equal(getComponentPageData(profile.slug, { includeDrafts: true })?.slug, profile.slug);
+  assert.ok(profile.sources.length >= 5);
+  assert.equal(profile.contentVisuals.length, 4);
+  assert.deepEqual(new Set(profile.contentVisuals.map(({ placement }) => placement)), new Set([
+    "architecture-families", "performance-boundaries", "application-context", "compatibility-gate"
+  ]));
+  assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
+  assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 2);
+  assert.ok(profile.representativeFamilies.length >= 6 && profile.representativeFamilies.length <= 8);
+  assert.ok(new Set(profile.representativeFamilies.map(({ manufacturer }) => manufacturer)).size >= 3);
+
+  const hero = await sharp(path.join(process.cwd(), "public", profile.heroImage)).metadata();
+  assert.equal(hero.format, "webp");
+  assert.ok((hero.width ?? 0) >= 1600 && (hero.height ?? 0) >= 1000);
+  for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo")) {
+    const metadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+    assert.equal(metadata.format, "webp");
+    assert.ok((metadata.width ?? 0) >= 1500 && (metadata.height ?? 0) >= 900);
+    assert.match(visual.sourceUrl, /^https:\/\//);
+  }
+  for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram")) {
+    const desktop = fs.readFileSync(path.join(process.cwd(), "public", visual.src), "utf8");
+    const mobile = fs.readFileSync(path.join(process.cwd(), "public", visual.mobileSrc), "utf8");
+    assert.match(desktop, /<svg/);
+    assert.match(mobile, /<svg/);
+  }
+  const compatibility = fs.readFileSync(path.join(process.cwd(), "public/images/components/vacuum-cleaner-motor/compatibility-gate.svg"), "utf8");
+  assert.match(compatibility, /Physical resemblance/);
+  assert.match(compatibility, /matching wattage/);
 });

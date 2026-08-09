@@ -40,12 +40,14 @@ test("hero has one H1 scope draft label provenance and section navigation", () =
 test("technical UI separates evidence assessment and compatibility boundaries", () => {
   const evidence = read("components/component-intelligence/ComponentEvidence.tsx");
   const compatibility = read("components/component-intelligence/ComponentCompatibility.tsx");
+  const service = read("components/component-intelligence/ComponentServiceSections.tsx");
   const technical = read("components/component-intelligence/ComponentTechnicalSections.tsx");
   for (const label of [">Evidence<", ">Scope<", ">Verified<", ">Sources<"]) assert.match(evidence, new RegExp(label));
   assert.match(technical, /WCB assessment/);
   assert.match(compatibility, /Physical resemblance/);
   assert.match(compatibility, /matching wattage/);
   assert.match(compatibility, /not establish compatibility/);
+  assert.match(service, /WCB inspection categories/);
 });
 
 test("four content visual placements are wired to provenance-aware figures", () => {
