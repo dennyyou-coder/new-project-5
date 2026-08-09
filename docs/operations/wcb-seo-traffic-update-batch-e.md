@@ -5,7 +5,7 @@ This release refreshes three existing ownership and manufacturing guides selecte
 ## Authorization and scope
 
 - Denny said `continue next batch`; the fixed WCB loop authorizes research, editing, visual review, PR, merge, Git-linked Vercel production and live verification without routine confirmation.
-- Work is isolated in `codex/seo-traffic-update-batch-e-20260809` and began from `origin/main` at `1d0a212c89bb94d0dd0e845ea3bcead9dcc13843`.
+- Work is isolated in `codex/seo-traffic-update-batch-e-20260809` and began from `origin/main` at `1d0a212c89bb94d0dd0e845ea3bcead9dcc13843`. Before release it was synchronized with the newer `origin/main` at `77986aa5df90e3885dc8b378d75408b5b7e6ff10` and fully revalidated.
 - The saved Search Console export covers July 9 through August 5, 2026. Artifact: `/private/tmp/wcb-gsc-20260808.UsNvPd/`; `网页.csv` SHA-256: `a6d7f7bbd6208e8fd55b54fe842ecdff380e35fc0f30ce0375d8252cb717193c`; `查询数.csv` SHA-256: `f1d333bf591543376681b4dcd2ec7b2d786602c6f8f2906e499b349eaf4ed27f`.
 
 | Order | Existing guide | Locked slug | 28-day clicks | 28-day impressions | CTR | Average position | Status |
@@ -50,9 +50,9 @@ The exact iRobot ownership URL did not appear in the top-page export. It remains
 ## Release gates
 
 - Clean baseline passed content classification, 15 insight tests, 103 brand tests and 42 equipment tests before editing.
-- Final content classification, all 15 insight tests, all 103 brand tests and all 42 equipment tests passed. The complete production build passed and generated 623 static pages.
+- After the latest-main synchronization, final content classification, all 15 insight tests, all 103 brand tests and all 44 equipment tests passed. The complete production build passed and generated 626 static pages.
 - Desktop and 390px browser checks passed for all three routes: expected title, H1, description, canonical and BlogPosting schema; two complete 1600x900 article visuals per page; and no horizontal overflow. All 11 unique in-article WCB links returned HTTP 200, Sunseeker appeared on ownership guide page 8, Beatbot on page 9 and iRobot/Roomba on the final page 11, and every slug appeared exactly once in the sitemap. The only local console error was the expected unavailable `/_vercel/insights/script.js` request outside Vercel.
-- A separated second review rechecked the exact diff, unchanged slugs and publication dates, Search Console rows and file hashes, source boundaries, all six original-resolution visuals, latest-main alignment and every release gate. No release blocker remained; an external reviewer was unavailable under the current no-subagent constraint.
+- A separated second review rechecked the exact diff, unchanged slugs and publication dates, Search Console rows and file hashes, source boundaries, all six original-resolution visuals, latest-main alignment and every release gate. The review and all desktop/mobile browser checks were repeated after synchronizing with `77986aa5`; no release blocker remained. An external reviewer was unavailable under the current no-subagent constraint.
 - Production requires Vercel `READY`, HTTP 200, expected title/H1/description/canonical/BlogPosting, guide discovery, sitemap presence, complete visuals, internal links and clean desktop/mobile browser checks.
 
 ## Production evidence
