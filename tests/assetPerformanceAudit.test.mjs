@@ -57,3 +57,21 @@ test("referenced raster assets stay within the one MiB transfer budget", () => {
       .join("\n")}`
   );
 });
+
+test("article image dimensions come from the generated manifest", () => {
+  const manifestPath = path.join(root, "lib", "generated", "image-dimensions.json");
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  const articleSources = walk(path.join(root, "content", "insights"))
+    .filter((file) => file.endsWith(".mdx"))
+    .map((file) => fs.readFileSync(file, "utf8"))
+    .join("\n");
+  const articleReferences = new Set(
+    [...articleSources.matchAll(rasterReference)].map((match) => match[1])
+  );
+  const missingDimensions = [...articleReferences].filter((reference) => {
+    const dimensions = manifest[reference];
+    return !dimensions || dimensions.width <= 0 || dimensions.height <= 0;
+  });
+
+  assert.deepEqual(missingDimensions, []);
+});

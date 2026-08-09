@@ -60,6 +60,16 @@ assert.deepEqual(
     .join("\n")}`
 );
 
+const brandTracePath = path.join(root, ".next/server/app/brands/[slug]/page.js.nft.json");
+assert.equal(fs.existsSync(brandTracePath), true, "Missing brands/[slug] server trace");
+const brandTrace = JSON.parse(fs.readFileSync(brandTracePath, "utf8"));
+const tracedPublicAssets = brandTrace.files.filter((file) => file.includes("/public/"));
+assert.deepEqual(
+  tracedPublicAssets,
+  [],
+  `brands/[slug] server trace unexpectedly includes ${tracedPublicAssets.length} public assets`
+);
+
 console.log(`Shared CSS: ${sharedBytes} bytes across ${sharedFiles.size} file(s)`);
 for (const { route, bytes, files } of routeTotals) {
   console.log(`${route}: ${bytes} bytes (${files.join(", ")})`);
