@@ -11,9 +11,9 @@ This release refreshes three existing ownership and manufacturing guides selecte
 
 | Order | Existing guide | Locked slug | 28-day clicks | 28-day impressions | CTR | Average position | Status |
 |---:|---|---|---:|---:|---:|---:|---|
-| 1 | Who Makes Dolphin Pool Cleaners? | `who-makes-dolphin-pool-cleaners-maytronics` | 1 | 584 | 0.17% | 8.85 | `local_verified` |
-| 2 | Who Makes LUBA Robot Mowers? | `who-makes-luba-robot-mowers-mammotion-agilex` | 7 | 540 | 1.30% | 8.93 | `local_verified` |
-| 3 | Who Owns Segway Navimow? | `who-owns-segway-navimow-ninebot-willand` | 2 | 354 | 0.56% | 9.91 | `local_verified` |
+| 1 | Who Makes Dolphin Pool Cleaners? | `who-makes-dolphin-pool-cleaners-maytronics` | 1 | 584 | 0.17% | 8.85 | `published_verified` |
+| 2 | Who Makes LUBA Robot Mowers? | `who-makes-luba-robot-mowers-mammotion-agilex` | 7 | 540 | 1.30% | 8.93 | `published_verified` |
+| 3 | Who Owns Segway Navimow? | `who-owns-segway-navimow-ninebot-willand` | 2 | 354 | 0.56% | 9.91 | `published_verified` |
 
 ## Search and collision decision
 
@@ -54,10 +54,10 @@ This release refreshes three existing ownership and manufacturing guides selecte
 
 ## Production evidence
 
-- PR: pending.
-- Squash merge: pending.
-- Git-linked Vercel production deployment: pending.
-- Live verification: pending.
+- PR: [#92](https://github.com/dennyyou-coder/new-project-5/pull/92).
+- Squash merge: `bc9a24a87e0871891a2dc958c77274679e472be1`.
+- Git-linked Vercel production deployment: `dpl_3wWmBekYF3qDVfMMmcynyDMdHDGx`, `READY`.
+- Live verification: all three production URLs returned HTTP 200 and passed expected title, H1, description, canonical, BlogPosting schema, ownership-guide discovery, unique sitemap presence, two complete 1600x900 visuals, 15 internal WCB links, desktop and 390px checks without horizontal overflow or runtime errors.
 
 ## Next traffic-first queue
 
