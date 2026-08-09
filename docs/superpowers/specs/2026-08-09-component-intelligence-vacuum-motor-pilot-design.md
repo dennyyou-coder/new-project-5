@@ -23,7 +23,7 @@ The pilot succeeds when:
 - WCB analysis is visibly separated from source-backed facts.
 - The page never implies exact part compatibility, OEM supply, factory origin, or brand-to-supplier relationships without direct evidence for that exact claim.
 - Desktop and 390 px layouts have no blank structural gaps, misaligned cards, clipped text, or horizontal overflow.
-- The page includes one official real motor hero image, one additional official technical/product-family image, and one original WCB explanatory diagram with a mobile variant.
+- The page includes one official real motor hero image plus four information-bearing body visuals distributed through the page: two official images and two original WCB diagrams with mobile variants where needed.
 - Focused component tests and the production build pass before Preview delivery.
 
 ## 3. Scope boundaries
@@ -68,7 +68,10 @@ The component contract must be independent from `EquipmentProfile`. Shared visua
 ### Assets
 
 - `public/images/components/{slug}/hero.webp`
-- `public/images/components/{slug}/family-reference.webp`
+- `public/images/components/{slug}/architecture-family.webp`
+- `public/images/components/{slug}/application-reference.webp`
+- `public/images/components/{slug}/performance-boundaries.svg`
+- `public/images/components/{slug}/performance-boundaries-mobile.svg`
 - `public/images/components/{slug}/compatibility-gate.svg`
 - `public/images/components/{slug}/compatibility-gate-mobile.svg`
 
@@ -91,7 +94,7 @@ The first screen contains:
 - A compact key-facts table.
 - Section navigation.
 
-The hero should inherit the visual rhythm of the equipment pages but use a distinct component accent treatment so users can recognize the database type.
+The hero should inherit the visual rhythm of the equipment pages but use a distinct component accent treatment so users can recognize the database type. It must not be followed by several uninterrupted text-heavy sections.
 
 ### 5.2 Role in the vacuum system
 
@@ -118,6 +121,8 @@ Cards compare only documented technical boundaries, including where supported:
 
 Each family row records operating principle, typical application boundary, benefits, limitations, and the buyer check. No family is presented as a universal winner.
 
+Place an official motor-family or motor-construction photograph beside this section. It must visibly match the architecture being discussed; a generic vacuum-appliance image is not sufficient.
+
 ### 5.4 Specification dictionary
 
 A mobile-safe table defines:
@@ -138,11 +143,15 @@ A mobile-safe table defines:
 
 Every row includes purchasing meaning, reporting boundary, comparison caution, evidence, and scope. Values from different test methods or system boundaries must not be normalized into a ranking.
 
+Follow the dictionary with an original WCB visual showing why input power, airflow, sealed vacuum, and air watts are different measurement boundaries rather than interchangeable ranking numbers. Provide a simplified mobile version so labels remain legible at 390 px.
+
 ### 5.5 Application matrix
 
 The page maps documented motor characteristics to vacuum categories without claiming automatic fit. Candidate contexts include upright, canister, stick, wet/dry, central, backpack, and commercial vacuums.
 
 Each row contains official application evidence, a labelled WCB assessment, basis, limitations, and a concrete buyer or engineering action.
+
+Use a second official photograph here to show a documented motor application or product-family context. Its caption must state the exact photographed context and must not imply universal applicability.
 
 ### 5.6 Compatibility gate
 
@@ -160,6 +169,8 @@ This is the primary differentiator of the page. It consists of an original WCB d
 - current service bulletin or approved-parts documentation.
 
 The diagram must explicitly state that physical resemblance, group ownership, generic family names, seller claims, and matching wattage alone do not establish compatibility.
+
+The compatibility diagram must appear before the long checklist, not after it, so it creates a visual reading break and gives readers the decision sequence before the detailed fields.
 
 ### 5.7 Failure modes and service signals
 
@@ -193,7 +204,7 @@ The profile should include these top-level groups:
 - definition, included scope, excluded scope, applications;
 - headline, description, meta description, disclaimer;
 - hero asset and exact official provenance;
-- two or three content visuals with placement and provenance;
+- exactly four pilot content visuals with distinct placements and complete provenance;
 - key facts;
 - system role flow;
 - architecture families;
@@ -226,7 +237,7 @@ Every WCB judgement requires:
 
 The validator must reject empty collections, unknown source IDs, unsupported source types, invalid dates or URLs, missing provenance, images outside the component profile directory, and compatibility language that bypasses the required verification boundary.
 
-Published profiles require at least five reliable sources, two or three content visuals, and six to eight representative official product families from at least three component manufacturers. Draft profiles may remain incomplete only where the loader still reports validation errors during tests; the pilot delivered to Preview should meet the full published contract while retaining `status: "draft"` for review.
+Published profiles require at least five reliable sources, three to five content visuals, and six to eight representative official product families from at least three component manufacturers. The pilot specifically requires four body visuals. Draft profiles may remain incomplete only where the loader still reports validation errors during tests; the pilot delivered to Preview should meet the full published contract while retaining `status: "draft"` for review.
 
 ## 7. Evidence and editorial rules
 
@@ -247,6 +258,9 @@ Source text and WCB synthesis remain visibly distinct. When a required fact is n
 - Hero: real matching motor or official motor-family scene, minimum 1600 x 1000 after conversion to WebP.
 - Official content visual: minimum 1500 x 900 after conversion to WebP, with exact official page or asset URL.
 - WCB diagram: original SVG and separate mobile SVG, derived from cited technical sources and labelled as WCB explanatory material.
+- Pilot visual rhythm: hero plus four body visuals, placed at architecture families, specification boundaries, application context, and compatibility gate. Do not group them into one gallery.
+- Reading-density target: avoid more than two consecutive major sections without a visual, table, flow, or compact card system; break long explanations into scannable evidence blocks.
+- Every body visual must carry an explanatory caption and either an exact official source link or the source IDs used to create the WCB diagram.
 - No AI-generated product imagery, third-party logos, search screenshots, copied manual diagrams, or decorative images without information value.
 - Alt text and captions describe only what the image visibly shows; they must not infer application, customer, factory, or compatibility.
 
@@ -272,7 +286,7 @@ This pilot changes shared architecture and therefore uses upgraded validation:
 
 1. Write component contract and experience tests before implementation.
 2. Test valid and invalid profiles, source references, draft visibility, sitemap inclusion, metadata, and unsupported compatibility semantics.
-3. Test image existence, file type, minimum dimensions, official provenance, SVG presence, and mobile SVG.
+3. Test the required four distinct visual placements, image existence, file type, minimum dimensions, official provenance, SVG presence, and mobile SVG variants.
 4. Test the detail-page section order, one-H1 rule, evidence labels, compatibility warnings, directory filtering, and responsive CSS safeguards.
 5. Run existing brand and equipment focused tests to detect regression.
 6. Run the new component test suite.
