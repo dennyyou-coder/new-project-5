@@ -195,6 +195,63 @@ test("Markdown and raw HTML body images gain safe lowercase responsive attribute
   assert.match(rawImage, /sizes="\(max-width: 800px\) calc\(100vw - 32px\), 900px"/);
 });
 
+test("the real removal path preserves intro copy while removing a conventional Markdown cover block", () => {
+  const cover = "/images/articles/aiper-fluidra-pool-robotics-alliance/01-cover.webp";
+  const source = `# Fixture title\n\nOpening analysis stays.\n\nSecond introduction stays.\n\n![Cover duplicate](${cover} "Cover caption")\n\n## Evidence\n\nBody copy stays.`;
+
+  const body = content.removeLeadingArticleTitleAndCover(source, "Fixture title", cover);
+  const html = content.markdownToHtml(body);
+
+  assert.doesNotMatch(html, /<h1>Fixture title<\/h1>/);
+  assert.match(html, /<p>Opening analysis stays\.<\/p>/);
+  assert.match(html, /<p>Second introduction stays\.<\/p>/);
+  assert.match(html, /<h2>Evidence<\/h2>/);
+  assert.match(html, /<p>Body copy stays\.<\/p>/);
+  assert.doesNotMatch(html, /Cover duplicate|Cover caption/);
+  assert.doesNotMatch(html, new RegExp(cover.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+});
+
+test("the real removal path recognizes a conventional raw HTML cover after intro copy", () => {
+  const cover = "/images/articles/aiper-fluidra-pool-robotics-alliance/01-cover.webp";
+  const source = `Intro before raw image.\n\n<img class="legacy-cover" src="${cover}?v=1" alt="Raw cover duplicate" />\n\nCopy after raw image.`;
+
+  const html = content.markdownToHtml(
+    content.removeLeadingArticleTitleAndCover(source, "Fixture title", cover)
+  );
+
+  assert.match(html, /<p>Intro before raw image\.<\/p>/);
+  assert.match(html, /<p>Copy after raw image\.<\/p>/);
+  assert.doesNotMatch(html, /Raw cover duplicate|legacy-cover|01-cover\.webp/);
+});
+
+test("the real removal path leaves a later cover unchanged when another image appears first", () => {
+  const cover = "/images/articles/aiper-fluidra-pool-robotics-alliance/01-cover.webp";
+  const other = "/images/articles/aiper-fluidra-pool-robotics-alliance/02-alliance-complementary-strengths.webp";
+  const cases = [
+    `Intro.\n\n![External first](https://cdn.example.com/first.jpg)\n\n![Cover later](${cover})`,
+    `Intro.\n\n![Other local first](${other})\n\n![Cover later](${cover})`
+  ];
+
+  for (const source of cases) {
+    const body = content.removeLeadingArticleTitleAndCover(source, "Fixture title", cover);
+    assert.equal(body, source);
+  }
+});
+
+test("a current article with intro prose no longer renders its conventional body cover duplicate", () => {
+  const article = content.getInsight("above-ground-vs-in-ground-robotic-pool-cleaners");
+  assert.ok(article);
+  const body = content.removeLeadingArticleTitleAndCover(
+    article.content,
+    article.title,
+    article.coverImage
+  );
+  const html = content.markdownToHtml(body);
+
+  assert.match(html, /That distinction matters to consumers/);
+  assert.doesNotMatch(html, /above-ground-vs-in-ground-pool-robots\.webp/);
+});
+
 test("the real ArticleCard renders its editorial cover as a lazy responsive image", () => {
   const { ArticleCard } = loadTsxModule("components/ArticleCard.tsx", {
     jsxRuntime,

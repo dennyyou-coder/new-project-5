@@ -519,6 +519,14 @@ function firstMarkdownImage(content: string) {
   return image ? image[2] : undefined;
 }
 
+const bodyImageReference = /!\[[^\]]*\]\(\s*(?:<([^>]+)>|([^\s)]+))[^)]*\)|<img\b[^>]*?\bsrc\s*=\s*(?:"([^"]+)"|'([^']+)')[^>]*>/i;
+
+function comparableImageReference(reference: string) {
+  const trimmed = reference.trim();
+  if (!trimmed.startsWith("/images/")) return trimmed;
+  return path.posix.normalize(trimmed.split(/[?#]/, 1)[0]);
+}
+
 export function removeLeadingArticleTitleAndCover(content: string, title: string, coverImage?: string) {
   const lines = content.split("\n");
   let cursor = 0;
@@ -529,14 +537,14 @@ export function removeLeadingArticleTitleAndCover(content: string, title: string
     cursor += 1;
   }
 
-  while (!lines[cursor]?.trim() && cursor < lines.length) cursor += 1;
+  const body = lines.slice(cursor).join("\n").trim();
+  const image = body.match(bodyImageReference);
+  if (!coverImage || !image) return body;
 
-  const image = lines[cursor]?.trim().match(/^!\[(.*?)\]\((.*?)\)$/);
-  if (coverImage && image?.[2] === coverImage) {
-    cursor += 1;
-  }
+  const reference = image[1] ?? image[2] ?? image[3] ?? image[4];
+  if (comparableImageReference(reference) !== comparableImageReference(coverImage)) return body;
 
-  return lines.slice(cursor).join("\n").trim();
+  return `${body.slice(0, image.index)}${body.slice(image.index! + image[0].length)}`.trim();
 }
 
 function stripMarkdown(content: string) {
