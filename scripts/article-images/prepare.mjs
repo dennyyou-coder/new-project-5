@@ -179,13 +179,23 @@ function sourceDescriptor(file, basename) {
   };
 }
 
-function exactKeys(value, allowed, context) {
-  if (!value || typeof value !== "object" || Array.isArray(value)) {
+function isPlainObject(value) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const prototype = Object.getPrototypeOf(value);
+  return prototype === Object.prototype || prototype === null;
+}
+
+function requirePlainObject(value, context) {
+  if (!isPlainObject(value)) {
     throw failure(`${context} must be an object.`, {
       code: "INVALID_IMAGE_CONFIG",
       recommendedAction: "Use the documented image-config.json object schema."
     });
   }
+}
+
+function exactKeys(value, allowed, context) {
+  requirePlainObject(value, context);
   const unknown = Object.keys(value).filter((key) => !allowed.has(key));
   if (unknown.length) {
     throw failure(`Unknown ${context} field: ${unknown.join(", ")}`, {
@@ -193,6 +203,21 @@ function exactKeys(value, allowed, context) {
       recommendedAction: "Remove unsupported fields from image-config.json."
     });
   }
+}
+
+function configErrorWithArticle(error, slug, configPath) {
+  const structured = error instanceof ArticleImagePreparationError
+    ? error
+    : failure(`Invalid image-config.json: ${error.message}`, {
+      code: "INVALID_IMAGE_CONFIG",
+      recommendedAction: "Correct the JSON syntax and rerun preparation."
+    });
+  structured.slug ??= slug;
+  structured.file ??= configPath;
+  if (!structured.message.startsWith(`Article ${slug} (`)) {
+    structured.message = `Article ${slug} (${configPath}): ${structured.message}`;
+  }
+  return structured;
 }
 
 function validatePoint(point, filename) {
@@ -216,47 +241,44 @@ function validateCrop(crop, filename) {
   }
 }
 
-async function readImageConfig(sourceRoot, descriptors) {
+async function readImageConfig(sourceRoot, descriptors, slug) {
   const configPath = path.join(sourceRoot, "image-config.json");
   if (!fs.existsSync(configPath)) return {};
-  let parsed;
   try {
-    parsed = JSON.parse(await fsp.readFile(configPath, "utf8"));
+    const parsed = JSON.parse(await fsp.readFile(configPath, "utf8"));
+    exactKeys(parsed, new Set(["images"]), "image-config.json");
+    requirePlainObject(parsed.images, "image-config images");
+    const known = new Set(descriptors.map(({ basename }) => basename));
+    for (const filename of Object.keys(parsed.images)) {
+      if (!known.has(filename)) {
+        throw failure(`image-config.json contains unknown filename ${filename}.`, {
+          code: "UNKNOWN_CONFIG_IMAGE", imageName: filename,
+          recommendedAction: "Use an exact filename that exists in the source folder."
+        });
+      }
+    }
+    for (const [filename, entry] of Object.entries(parsed.images)) {
+      exactKeys(entry, new Set(["kind", "crop", "focalPoint"]), `configuration for ${filename}`);
+      if (entry.kind !== undefined && !["photo", "chart"].includes(entry.kind)) {
+        throw failure(`Unsupported kind ${entry.kind} for ${filename}.`, {
+          code: "UNSUPPORTED_IMAGE_KIND", imageName: filename,
+          observedValue: entry.kind, permittedValue: "photo or chart",
+          recommendedAction: "Use photo or chart; transparency is detected automatically."
+        });
+      }
+      if (entry.crop && entry.focalPoint) {
+        throw failure(`Conflicting crop and focal-point declarations for ${filename}.`, {
+          code: "CONFLICTING_CROP", imageName: filename,
+          recommendedAction: "Keep either crop or focalPoint, not both."
+        });
+      }
+      if (entry.crop) validateCrop(entry.crop, filename);
+      if (entry.focalPoint) validatePoint(entry.focalPoint, filename);
+    }
+    return parsed.images;
   } catch (error) {
-    throw failure(`Invalid image-config.json: ${error.message}`, {
-      code: "INVALID_IMAGE_CONFIG",
-      recommendedAction: "Correct the JSON syntax and rerun preparation."
-    });
+    throw configErrorWithArticle(error, slug, configPath);
   }
-  exactKeys(parsed, new Set(["images"]), "image-config.json");
-  const known = new Set(descriptors.map(({ basename }) => basename));
-  for (const filename of Object.keys(parsed.images)) {
-    if (!known.has(filename)) {
-      throw failure(`image-config.json contains unknown filename ${filename}.`, {
-        code: "UNKNOWN_CONFIG_IMAGE", imageName: filename,
-        recommendedAction: "Use an exact filename that exists in the source folder."
-      });
-    }
-  }
-  for (const [filename, entry] of Object.entries(parsed.images)) {
-    exactKeys(entry, new Set(["kind", "crop", "focalPoint"]), `configuration for ${filename}`);
-    if (entry.kind !== undefined && !["photo", "chart"].includes(entry.kind)) {
-      throw failure(`Unsupported kind ${entry.kind} for ${filename}.`, {
-        code: "UNSUPPORTED_IMAGE_KIND", imageName: filename,
-        observedValue: entry.kind, permittedValue: "photo or chart",
-        recommendedAction: "Use photo or chart; transparency is detected automatically."
-      });
-    }
-    if (entry.crop && entry.focalPoint) {
-      throw failure(`Conflicting crop and focal-point declarations for ${filename}.`, {
-        code: "CONFLICTING_CROP", imageName: filename,
-        recommendedAction: "Keep either crop or focalPoint, not both."
-      });
-    }
-    if (entry.crop) validateCrop(entry.crop, filename);
-    if (entry.focalPoint) validatePoint(entry.focalPoint, filename);
-  }
-  return parsed.images;
 }
 
 async function discoverSourceImages(sourceRoot) {
@@ -462,7 +484,7 @@ function isGitTracked(projectRoot, file) {
 
 async function planSourceArticle(context, slug, sourceRoot) {
   const { descriptors, sequences } = await discoverSourceImages(sourceRoot);
-  const config = await readImageConfig(sourceRoot, descriptors);
+  const config = await readImageConfig(sourceRoot, descriptors, slug);
   const article = context.currentInventory.articles[slug];
   const stageOutputs = [];
   const processed = {};
@@ -657,6 +679,7 @@ function validateOutputCollisions(context, plans) {
   for (const plan of plans) {
     for (const output of plan.stageOutputs) {
       const destination = publicUrlFile(context.publicRoot, output.url);
+      assertRepositoryPath(destination, context.publicRoot, "publish destination");
       if (!fs.existsSync(destination)) continue;
       if (output.mobile) {
         const owner = Object.values(context.existingManifest.assets ?? {}).find((asset) => asset.mobile?.src === output.url);
@@ -808,14 +831,19 @@ async function commitPlans(context, plans, manifestStage) {
   const writes = [];
   for (const plan of plans) {
     for (const output of plan.stageOutputs) {
-      writes.push({ destination: publicUrlFile(context.publicRoot, output.url), source: output.stageFile });
+      const destination = publicUrlFile(context.publicRoot, output.url);
+      assertRepositoryPath(destination, context.publicRoot, "publish replacement");
+      writes.push({ destination, source: output.stageFile });
     }
     if (plan.updatedSource !== await fsp.readFile(plan.article.file, "utf8")) {
+      assertRepositoryPath(plan.article.file, context.contentRoot, "target MDX replacement");
       writes.push({ destination: plan.article.file, source: plan.mdxStage });
     }
   }
+  assertExactRepositoryPath(context.manifestPath, context.expectedManifestPath, "manifest replacement");
   writes.push({ destination: context.manifestPath, source: manifestStage });
   const removals = [...new Set(plans.flatMap((plan) => plan.removable))];
+  for (const removal of removals) assertRepositoryPath(removal, context.publicRoot, "publish removal");
   const touched = [...new Set([...writes.map(({ destination }) => destination), ...removals])];
   const backups = new Map();
   for (const file of touched) backups.set(file, fs.existsSync(file) ? await fsp.readFile(file) : null);
@@ -846,12 +874,74 @@ async function commitPlans(context, plans, manifestStage) {
   }
 }
 
+function canonicalPath(candidate) {
+  let cursor = path.resolve(candidate);
+  const remainder = [];
+  while (!fs.existsSync(cursor)) {
+    const parent = path.dirname(cursor);
+    if (parent === cursor) break;
+    remainder.unshift(path.basename(cursor));
+    cursor = parent;
+  }
+  const existing = fs.existsSync(cursor) ? fs.realpathSync.native(cursor) : cursor;
+  return path.resolve(existing, ...remainder);
+}
+
+function pathIsContained(root, candidate) {
+  const relative = path.relative(root, candidate);
+  return relative === "" || (!relative.startsWith(`..${path.sep}`) && relative !== ".." && !path.isAbsolute(relative));
+}
+
+function repositoryPathError(label, observed, permitted) {
+  return failure(`Invalid repository path for ${label}: ${observed}; expected ${permitted}.`, {
+    code: "INVALID_REPOSITORY_PATH",
+    observedValue: observed,
+    permittedValue: permitted,
+    recommendedAction: "Keep repository roots and write targets inside their standard projectRoot areas."
+  });
+}
+
+function assertRepositoryPath(candidate, expectedRoot, label) {
+  const canonicalRoot = canonicalPath(expectedRoot);
+  const canonicalCandidate = canonicalPath(candidate);
+  if (!pathIsContained(canonicalRoot, canonicalCandidate)) {
+    throw repositoryPathError(label, canonicalCandidate, canonicalRoot);
+  }
+  return canonicalCandidate;
+}
+
+function assertExactRepositoryPath(candidate, expected, label) {
+  const canonicalCandidate = canonicalPath(candidate);
+  const canonicalExpected = canonicalPath(expected);
+  if (canonicalCandidate !== canonicalExpected) {
+    throw repositoryPathError(label, canonicalCandidate, canonicalExpected);
+  }
+  return canonicalCandidate;
+}
+
 function resolveContext(options) {
-  const projectRoot = path.resolve(options.projectRoot ?? process.cwd());
-  const contentRoot = path.resolve(options.contentRoot ?? path.join(projectRoot, "content"));
-  const publicRoot = path.resolve(options.publicRoot ?? path.join(projectRoot, "public"));
-  const manifestPath = path.resolve(options.manifestPath ?? path.join(projectRoot, "lib", "generated", "article-image-manifest.json"));
-  return { projectRoot, contentRoot, publicRoot, manifestPath, dryRun: Boolean(options.dryRun) };
+  const requestedProjectRoot = path.resolve(options.projectRoot ?? process.cwd());
+  if (!fs.existsSync(requestedProjectRoot) || !fs.statSync(requestedProjectRoot).isDirectory()) {
+    throw repositoryPathError("projectRoot", requestedProjectRoot, "an existing project directory");
+  }
+  const projectRoot = fs.realpathSync.native(requestedProjectRoot);
+  const expectedContentRoot = path.join(projectRoot, "content");
+  const expectedPublicRoot = path.join(projectRoot, "public");
+  const expectedManifestPath = path.join(projectRoot, "lib", "generated", "article-image-manifest.json");
+  const contentRoot = assertExactRepositoryPath(options.contentRoot ?? expectedContentRoot, expectedContentRoot, "contentRoot");
+  const publicRoot = assertExactRepositoryPath(options.publicRoot ?? expectedPublicRoot, expectedPublicRoot, "publicRoot");
+  const manifestPath = assertExactRepositoryPath(options.manifestPath ?? expectedManifestPath, expectedManifestPath, "manifestPath");
+  assertRepositoryPath(contentRoot, projectRoot, "contentRoot");
+  assertRepositoryPath(publicRoot, projectRoot, "publicRoot");
+  assertRepositoryPath(manifestPath, projectRoot, "manifestPath");
+  return {
+    projectRoot,
+    contentRoot,
+    publicRoot,
+    manifestPath,
+    expectedManifestPath,
+    dryRun: Boolean(options.dryRun)
+  };
 }
 
 async function prepareSelection(options, mode) {
@@ -871,6 +961,7 @@ async function prepareSelection(options, mode) {
         recommendedAction: "Use the exact basename of an existing article MDX file."
       });
     }
+    for (const file of files.values()) assertRepositoryPath(file, context.contentRoot, "article MDX");
     const sourceRoots = new Map();
     for (const slug of requestedSlugs) {
       const sourceRoot = mode === "single"
@@ -886,6 +977,10 @@ async function prepareSelection(options, mode) {
     }
     const inventoryPublicRoot = await inventoryPublicOverlay(context, [...sourceRoots.keys()], files);
     context.currentInventory = discoverArticleInventory({ contentRoot: context.contentRoot, publicRoot: inventoryPublicRoot });
+    for (const url of Object.keys(context.currentInventory.assets)) {
+      const repositoryAsset = publicUrlFile(context.publicRoot, url);
+      if (fs.existsSync(repositoryAsset)) assertRepositoryPath(repositoryAsset, context.publicRoot, "published source asset");
+    }
     context.existingManifest = await readManifest(context.manifestPath);
     const plans = [];
     for (const slug of requestedSlugs) {
@@ -895,6 +990,10 @@ async function prepareSelection(options, mode) {
       } else {
         plans.push(await planSourceArticle(context, slug, sourceRoot));
       }
+    }
+    for (const plan of plans) {
+      assertRepositoryPath(plan.article.file, context.contentRoot, "target MDX");
+      for (const removal of plan.removable) assertRepositoryPath(removal, context.publicRoot, "publish removal");
     }
     validateOutputCollisions(context, plans);
     const candidate = applyPlansToInventory(context.currentInventory, plans, context.stageRoot);

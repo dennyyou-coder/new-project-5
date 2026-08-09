@@ -9,6 +9,7 @@ import test from "node:test";
 import sharp from "sharp";
 
 import {
+  ArticleImagePreparationError,
   prepareAllArticleImages,
   prepareArticleImages
 } from "../scripts/article-images/prepare.mjs";
@@ -341,6 +342,92 @@ test("validates the exact image-config schema before transforming", async () => 
       prepareArticleImages({ slug: fixture.slug, projectRoot: fixture.projectRoot, sourceRoot: fixture.folder }),
       message
     );
+  }
+});
+
+test("rejects missing or non-object image-config images with article and sidecar details", async () => {
+  for (const config of [{}, { images: null }, { images: [] }, { images: "01-cover.png" }]) {
+    const fixture = await validFixture({ slug: `config-shape-${temporaryRoots.length}` });
+    const configPath = path.join(fixture.folder, "image-config.json");
+    fs.writeFileSync(configPath, JSON.stringify(config));
+
+    await assert.rejects(
+      prepareArticleImages({ slug: fixture.slug, projectRoot: fixture.projectRoot, sourceRoot: fixture.folder }),
+      (error) => {
+        assert.equal(error instanceof ArticleImagePreparationError, true);
+        assert.equal(error.code, "INVALID_IMAGE_CONFIG");
+        assert.equal(error.slug, fixture.slug);
+        assert.equal(error.file, configPath);
+        assert.match(error.message, new RegExp(fixture.slug));
+        assert.match(error.message, /image-config\.json/);
+        return true;
+      }
+    );
+  }
+});
+
+test("rejects repository root overrides outside projectRoot without mutating them", async (t) => {
+  for (const rootName of ["contentRoot", "publicRoot", "manifestPath"]) {
+    await t.test(rootName, async () => {
+      const fixture = await validFixture({ slug: `outside-${rootName.toLowerCase()}` });
+      const outside = path.join(fixture.root, `outside-${rootName}`);
+      fs.mkdirSync(outside, { recursive: true });
+      let override;
+      if (rootName === "contentRoot") {
+        override = path.join(outside, "content");
+        fs.cpSync(path.join(fixture.projectRoot, "content"), override, { recursive: true });
+      } else if (rootName === "publicRoot") {
+        override = path.join(outside, "public");
+        fs.cpSync(path.join(fixture.projectRoot, "public"), override, { recursive: true });
+      } else {
+        override = path.join(outside, "article-image-manifest.json");
+        fs.writeFileSync(override, "outside manifest must remain unchanged");
+      }
+      const before = readTree(outside);
+
+      await assert.rejects(
+        prepareArticleImages({
+          slug: fixture.slug,
+          projectRoot: fixture.projectRoot,
+          sourceRoot: fixture.folder,
+          [rootName]: override
+        }),
+        (error) => error instanceof ArticleImagePreparationError && error.code === "INVALID_REPOSITORY_PATH"
+      );
+      assert.deepEqual(readTree(outside), before);
+    });
+  }
+});
+
+test("rejects content, public, and manifest symlink escapes without mutating external files", async (t) => {
+  for (const area of ["content", "public", "manifest"]) {
+    await t.test(area, async () => {
+      const fixture = await validFixture({ slug: `symlink-${area}` });
+      const outside = path.join(fixture.root, `outside-${area}`);
+      fs.mkdirSync(outside, { recursive: true });
+      if (area === "content") {
+        const externalContent = path.join(outside, "content");
+        fs.renameSync(path.join(fixture.projectRoot, "content"), externalContent);
+        fs.symlinkSync(externalContent, path.join(fixture.projectRoot, "content"));
+      } else if (area === "public") {
+        const externalPublic = path.join(outside, "public");
+        fs.renameSync(path.join(fixture.projectRoot, "public"), externalPublic);
+        fs.symlinkSync(externalPublic, path.join(fixture.projectRoot, "public"));
+      } else {
+        const externalGenerated = path.join(outside, "generated");
+        fs.mkdirSync(externalGenerated, { recursive: true });
+        fs.writeFileSync(path.join(externalGenerated, "marker.txt"), "must remain unchanged");
+        fs.mkdirSync(path.join(fixture.projectRoot, "lib"), { recursive: true });
+        fs.symlinkSync(externalGenerated, path.join(fixture.projectRoot, "lib", "generated"));
+      }
+      const before = readTree(outside);
+
+      await assert.rejects(
+        prepareArticleImages({ slug: fixture.slug, projectRoot: fixture.projectRoot, sourceRoot: fixture.folder }),
+        (error) => error instanceof ArticleImagePreparationError && error.code === "INVALID_REPOSITORY_PATH"
+      );
+      assert.deepEqual(readTree(outside), before);
+    });
   }
 });
 
