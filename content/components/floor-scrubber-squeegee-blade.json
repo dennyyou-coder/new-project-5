@@ -1,0 +1,767 @@
+{
+  "status": "published",
+  "slug": "floor-scrubber-squeegee-blade",
+  "name": "Floor Scrubber Squeegee Blade",
+  "aliases": [
+    "scrubber dryer squeegee",
+    "floor machine recovery blade",
+    "front squeegee blade",
+    "rear squeegee blade"
+  ],
+  "definition": "A floor-scrubber squeegee-blade profile covers the front and rear elastomer blades, material, edge geometry, length, holes, notches and mounting position that seal the recovery airflow path; it does not make blades interchangeable by length or color.",
+  "includedScope": [
+    "Natural rubber, polyurethane, Linatex and named manufacturer materials",
+    "Front and rear position, blade profile, edge, hole and machine or deck checks",
+    "Walk-behind, stand-on and ride-on scrubber-dryer recovery systems"
+  ],
+  "excludedScope": [
+    "Complete squeegee-tool assemblies unless explicitly cited",
+    "Universal chemical-resistance claims",
+    "Unverified cut-to-length or cross-machine substitutions"
+  ],
+  "primaryApplications": [
+    "Walk-behind scrubber dryers",
+    "Stand-on scrubbers",
+    "Ride-on floor scrubbers",
+    "Documented replacement blade kits"
+  ],
+  "headline": "Length alone does not establish fit—material, profile, hole pattern, front or rear position and exact machine scope all matter.",
+  "description": "This profile separates squeegee materials, recovery behavior and exact machine or deck checks so buyers can compare documented replacement blade families without assuming universal fit.",
+  "metaDescription": "Floor scrubber squeegee blade materials, front and rear profiles, dimensions, chemical boundaries, recovery symptoms and compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, electrical and control specification, mechanical and fluid or airflow interfaces, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/floor-scrubber-squeegee-blade/hero.webp",
+  "heroImageAlt": "Nilfisk SC450 walk-behind scrubber dryer in use",
+  "heroImageCaption": "Official Nilfisk SC450 application image on a WCB canvas; the machine context does not establish a blade kit until the exact model and part number are matched.",
+  "heroSourceUrl": "https://www.nilfisk.com/product-images-1920/SC450-ps-Original-THCTCF.webp",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-squeegee-blade/architecture-family.webp",
+      "alt": "Kärcher polyurethane squeegee blade set 6.273-229.0",
+      "caption": "Official Kärcher blade-set image on a WCB canvas, showing a named 890 mm polyurethane front and rear set within its listed machine scope.",
+      "sourceUrl": "https://s1.kaercher-media.com/mam/62732290/mainproduct/71085/d0.jpg"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-squeegee-blade/performance-boundaries.svg",
+      "mobileSrc": "/images/components/floor-scrubber-squeegee-blade/performance-boundaries-mobile.svg",
+      "alt": "Floor Scrubber Squeegee Blade performance reporting boundary diagram",
+      "caption": "WCB reporting-boundary map: retain the stated unit, operating point, test method and product scope before comparing values.",
+      "sourceIds": [
+        "tennant-t291",
+        "tennant-t500e",
+        "karcher-229",
+        "nilfisk-sc450",
+        "nilfisk-scrubtec"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-squeegee-blade/application-reference.webp",
+      "alt": "Nilfisk SC450 scrubber dryer application context",
+      "caption": "Official Nilfisk SC450 application image on a WCB canvas. Use the live machine page and exact kit number for replacement approval.",
+      "sourceUrl": "https://www.nilfisk.com/product-images-1920/SC450-ps-Original-THCTCF.webp"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-squeegee-blade/compatibility-gate.svg",
+      "mobileSrc": "/images/components/floor-scrubber-squeegee-blade/compatibility-gate-mobile.svg",
+      "alt": "Floor Scrubber Squeegee Blade compatibility approval gate",
+      "caption": "WCB compatibility gate: an undocumented field stops approval rather than becoming a probable match.",
+      "sourceIds": [
+        "tennant-t291",
+        "tennant-t500e",
+        "karcher-229",
+        "nilfisk-sc450",
+        "nilfisk-scrubtec"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Position boundary",
+      "value": "Front and rear blades can use different geometry and function",
+      "evidence": "Official parts documents identify front and rear blade sets and position-specific parts.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "karcher-229"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Material boundary",
+      "value": "Natural rubber, polyurethane and Linatex are offered for different application conditions",
+      "evidence": "Manufacturer sources publish distinct material options for named machines.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "karcher-linard",
+        "nilfisk-scrubtec"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Machine scope",
+      "value": "Exact model and deck or squeegee width control the approved kit",
+      "evidence": "Official product pages tie blade kits to listed machines and part numbers.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Solution gathering",
+      "role": "The front blade meters recovered liquid and debris into the squeegee chamber.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "tennant-t500e"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Air seal",
+      "role": "The rear blade maintains contact so recovery vacuum can lift remaining liquid.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-bulletin",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Floor conformity",
+      "role": "Flexible blade edges follow the floor within the machine's adjustment range.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "karcher-natural"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Wear surface",
+      "role": "Reversible or multi-edge designs may permit documented edge rotation before replacement.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t500e",
+        "karcher-linard"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Natural-rubber blade",
+      "operatingPrinciple": "An elastomer edge flexes against the floor to maintain a recovery seal.",
+      "applicationBoundary": "General cleaning conditions within the manufacturer's stated scope.",
+      "benefits": [
+        "Flexible sealing",
+        "Common standard option"
+      ],
+      "limitations": [
+        "Oil and chemical resistance varies",
+        "Storage and edge set affect performance"
+      ],
+      "buyerCheck": "Confirm material, hardness, length, profile, holes and approved chemical environment.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-natural",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Polyurethane blade",
+      "operatingPrinciple": "A polyurethane profile provides a manufacturer-defined wear and chemical-resistance option.",
+      "applicationBoundary": "Named oily or demanding floor conditions where the maker specifies PU.",
+      "benefits": [
+        "Published oil-resistant options",
+        "Distinct wear behavior"
+      ],
+      "limitations": [
+        "Stiffness and floor conformity differ",
+        "Not a universal upgrade"
+      ],
+      "buyerCheck": "Match the exact PU kit, machine, front or rear position and floor or chemical duty.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "nilfisk-scrubtec"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Linatex or named premium elastomer",
+      "operatingPrinciple": "A proprietary natural-rubber-based material is supplied in specific OEM kits.",
+      "applicationBoundary": "Named machine and application families only.",
+      "benefits": [
+        "Manufacturer-positioned wear and recovery characteristics"
+      ],
+      "limitations": [
+        "Brand or material name does not define geometry",
+        "Cost and availability vary"
+      ],
+      "buyerCheck": "Require the exact kit and do not transfer performance claims across blade profiles.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "karcher-linard"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Blade material",
+      "purchasingMeaning": "Frames expected wear, chemical and floor behavior",
+      "reportingBoundary": "Trade names and formulations are manufacturer-specific",
+      "comparisonCaution": "Do not approve by color alone.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "karcher-229"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Length and profile",
+      "purchasingMeaning": "Defines coverage and squeegee geometry",
+      "reportingBoundary": "Nominal length omits curvature, thickness and molded features",
+      "comparisonCaution": "Two 890 mm blades can still be incompatible.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Hole and notch pattern",
+      "purchasingMeaning": "Controls mounting and liquid or debris flow",
+      "reportingBoundary": "Front and rear patterns may differ",
+      "comparisonCaution": "Do not drill or cut without approved instructions.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t500e",
+        "tennant-bulletin"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Usable edges",
+      "purchasingMeaning": "Supports wear-life planning",
+      "reportingBoundary": "Rotation depends on symmetric geometry and service guidance",
+      "comparisonCaution": "Do not assume every edge is reversible.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t500e",
+        "karcher-linard"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Routine indoor floor cleaning",
+      "wcbAssessment": "Standard natural-rubber options may apply where the machine maker lists them.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-natural",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Oil-exposed floors",
+      "wcbAssessment": "Use only a material explicitly listed as oil-resistant for the exact machine.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "High-wear duty",
+      "wcbAssessment": "Premium materials can be compared only inside the same geometry and machine scope.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "karcher-linard"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact kit and blade number",
+      "requiredMatch": "Current manufacturer part number and revision",
+      "why": "A machine family can have several widths and material kits.",
+      "buyerAction": "Document current manufacturer part number and revision before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Machine model and deck width",
+      "requiredMatch": "Explicit parts-list compatibility",
+      "why": "Model suffixes and squeegee assemblies can change geometry.",
+      "buyerAction": "Document explicit parts-list compatibility before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "nilfisk-scrubtec"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Front or rear position",
+      "requiredMatch": "Correct position-specific blade",
+      "why": "Flow notches and sealing edges serve different roles.",
+      "buyerAction": "Document correct position-specific blade before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t500e",
+        "karcher-229"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Material and duty",
+      "requiredMatch": "Documented floor, oil and chemical boundary",
+      "why": "A durable material in one duty may recover poorly in another.",
+      "buyerAction": "Document documented floor, oil and chemical boundary before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "karcher-natural"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Water streaks",
+      "possibleCauses": [
+        "Worn or nicked rear edge",
+        "Incorrect adjustment",
+        "Debris trapped under blade",
+        "Wrong material or profile"
+      ],
+      "safetyBoundary": "Stop the machine before clearing or inspecting the squeegee assembly.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-bulletin",
+        "tennant-t500e"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Poor recovery across full width",
+      "possibleCauses": [
+        "Incorrect blade installation",
+        "Blocked recovery path",
+        "Vacuum fault",
+        "Squeegee not level"
+      ],
+      "safetyBoundary": "Separate blade symptoms from vacuum-system faults using the service procedure.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-bulletin",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Rapid edge wear",
+      "possibleCauses": [
+        "Excess down pressure",
+        "Abrasive floor",
+        "Chemical incompatibility",
+        "Wrong blade material"
+      ],
+      "safetyBoundary": "Do not compensate for poor recovery with unapproved pressure or geometry changes.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "karcher-linard"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Tennant",
+      "familyName": "T291 Linatex kit 9015731",
+      "architecture": "Linatex front and rear blade kit",
+      "applicationScope": "T291 Tennant-design squeegee scope",
+      "distinguishingSpecifications": [
+        "Kit 9015731"
+      ],
+      "marketScope": "Europe / documented market",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Tennant",
+      "familyName": "T291 urethane kit 9015732",
+      "architecture": "Urethane front and rear blade kit",
+      "applicationScope": "T291 Tennant-design squeegee scope",
+      "distinguishingSpecifications": [
+        "Kit 9015732"
+      ],
+      "marketScope": "Europe / documented market",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Tennant",
+      "familyName": "T500 and T500e blade families",
+      "architecture": "Position- and material-specific service parts",
+      "applicationScope": "Named T500 and T500e parts-manual scope",
+      "distinguishingSpecifications": [
+        "Parts-manual controlled geometry"
+      ],
+      "marketScope": "Global / documented market",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t500e"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "6.273-229.0 squeegee blades",
+      "architecture": "Polyurethane front and rear set",
+      "applicationScope": "Listed scrubber dryers",
+      "distinguishingSpecifications": [
+        "890 mm",
+        "Oil-resistant",
+        "PU"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "6.680-372.0 natural-rubber blades",
+      "architecture": "Grooved standard natural-rubber set",
+      "applicationScope": "Listed machine scope",
+      "distinguishingSpecifications": [
+        "Natural rubber",
+        "Grooved"
+      ],
+      "marketScope": "International",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-natural"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Nilfisk",
+      "familyName": "SC450 gum-rubber kit 9100000279",
+      "architecture": "Gum-rubber blade kit",
+      "applicationScope": "SC450 machine scope",
+      "distinguishingSpecifications": [
+        "Kit 9100000279"
+      ],
+      "marketScope": "Global",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Nilfisk",
+      "familyName": "Scrubtec 337 PU kit 9099027000",
+      "architecture": "Polyurethane blade kit",
+      "applicationScope": "Scrubtec 337 scope",
+      "distinguishingSpecifications": [
+        "Kit 9099027000"
+      ],
+      "marketScope": "Global",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-scrubtec"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "Replacement sourcing",
+      "attributeToVerify": "Exact part, model/serial and interface scope",
+      "comparisonTrap": "Approving by appearance, family name or one rating",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "tennant-t500e",
+        "karcher-229"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "New product design",
+      "attributeToVerify": "Operating envelope and integration specification",
+      "comparisonTrap": "Using a catalogue maximum outside its test boundary",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "tennant-t500e",
+        "karcher-229",
+        "nilfisk-sc450",
+        "nilfisk-scrubtec"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Aftermarket supplier qualification",
+      "attributeToVerify": "Traceability, test evidence and change control",
+      "comparisonTrap": "Treating a seller fit list as engineering approval",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "nilfisk-sc450",
+        "nilfisk-scrubtec"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact kit and blade number",
+      "reason": "A machine family can have several widths and material kits.",
+      "buyerAction": "Approve current manufacturer part number and revision in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Machine model and deck width",
+      "reason": "Model suffixes and squeegee assemblies can change geometry.",
+      "buyerAction": "Approve explicit parts-list compatibility in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "nilfisk-scrubtec"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Front or rear position",
+      "reason": "Flow notches and sealing edges serve different roles.",
+      "buyerAction": "Approve correct position-specific blade in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t500e",
+        "karcher-229"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Material and duty",
+      "reason": "A durable material in one duty may recover poorly in another.",
+      "buyerAction": "Approve documented floor, oil and chemical boundary in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-229",
+        "karcher-natural"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "Manufacturer service and parts documentation",
+      "jurisdiction": "Model-specific",
+      "applicability": "The exact machine parts manual and service bulletin control blade position, kit number and installation; this row is not a third-party certification claim.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-bulletin",
+        "tennant-t291",
+        "nilfisk-sc450"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-09",
+      "title": "Floor Scrubber Squeegee Blade comparison boundary documented",
+      "summary": "WCB consolidated current official material, kit and machine-scope evidence without asserting cross-machine compatibility.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t291",
+        "tennant-t500e",
+        "karcher-229",
+        "nilfisk-sc450",
+        "nilfisk-scrubtec"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tennant-bulletin",
+      "title": "Squeegee blade replacement instruction 340268",
+      "publisher": "Tennant",
+      "sourceType": "service",
+      "url": "https://www.tennantco.com/content/dam/tennant/tennantco/products/Instruction%20Bulletins%20%28IBs%29/340268.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tennant-t291",
+      "title": "T291 parts manual—Tennant design squeegee",
+      "publisher": "Tennant",
+      "sourceType": "manual",
+      "url": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/t291/operator-parts-manuals/9023251_rev00%20-%20T291%20Parts%20Manual%20EU%20%28Tennant%20Design%20Squeegee.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "tennant-t500e",
+      "title": "T500 and T500e parts manual",
+      "publisher": "Tennant",
+      "sourceType": "manual",
+      "url": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/T500-T500e/operator-parts-manual/4195232.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-229",
+      "title": "Squeegee blades 6.273-229.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/squeegee-blades-35-62732290.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-natural",
+      "title": "Standard grooved natural-rubber squeegee blades",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/accessory/squeegee-blades-standard-grooved-66803720.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-linard",
+      "title": "Linard squeegee blades 4.400-104.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/accessory/linard-squeegee-blades-44001040.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-sc450",
+      "title": "SC450 walk-behind scrubber dryer and accessories",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/professional/products/floor-cleaning/scrubber-dryers/walk-behind-scrubber-and-dryers/medium/sc450-53-e%2B9087372020/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-scrubtec",
+      "title": "Scrubtec 337 and polyurethane blade kit",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/professional/products/floor-cleaning/scrubber-dryers/walk-behind-scrubber-and-dryers/small/scrubtec-337%2B9087302020/",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}

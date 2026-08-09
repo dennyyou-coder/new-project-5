@@ -50,6 +50,14 @@ test("technical UI separates evidence assessment and compatibility boundaries", 
   assert.match(service, /WCB inspection categories/);
 });
 
+test("shared component section copy stays product-neutral", () => {
+  const source = [
+    "ComponentSystemRole.tsx", "ComponentArchitecture.tsx",
+    "ComponentTechnicalSections.tsx", "ComponentRelationships.tsx"
+  ].map((file) => read(`components/component-intelligence/${file}`)).join("\n");
+  assert.doesNotMatch(source, /motor constructions|motor specifications|motor product families|vacuum system|vacuum model|vacuum-brand/i);
+});
+
 test("four content visual placements are wired to provenance-aware figures", () => {
   const visual = read("components/component-intelligence/ComponentVisual.tsx");
   assert.match(visual, /Official image source/);
