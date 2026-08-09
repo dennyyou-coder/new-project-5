@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Insignia brand, Best Buy and supplier-factory relationship</title>
+  <desc id="desc">Best Buy owns and manages Insignia, supplier factories manufacture products, and Best Buy and Insignia manage the retail and support path.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0d1724"/><stop offset="1" stop-color="#173a57"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="100" y="105" fill="#ffffff" font-family="Arial" font-size="48" font-weight="700">Insignia appliances: one brand, multiple factories</text>
+  <text x="100" y="150" fill="#bfd0df" font-family="Arial" font-size="23">Best Buy controls the product program; supplier assignments remain model-specific</text>
+  <rect x="100" y="235" width="420" height="285" rx="30" fill="#f0f5f8"/>
+  <text x="145" y="300" fill="#587080" font-family="Arial" font-size="21">BRAND + PROGRAM OWNER</text><text x="145" y="360" fill="#132a3b" font-family="Arial" font-size="40" font-weight="700">Best Buy</text>
+  <text x="145" y="415" fill="#526978" font-family="Arial" font-size="22">Customer insight · requirements</text><text x="145" y="452" fill="#526978" font-family="Arial" font-size="22">Sourcing · compliance · assortment</text>
+  <path d="M520 375h230" stroke="#53b6e8" stroke-width="9"/><path d="M720 354l36 21-36 21" fill="#53b6e8"/><text x="635" y="337" text-anchor="middle" fill="#a6e2ff" font-family="Arial" font-size="22" font-weight="700">CONTRACTS</text>
+  <rect x="755" y="235" width="440" height="285" rx="30" fill="#1979a8"/>
+  <text x="800" y="300" fill="#d4f0ff" font-family="Arial" font-size="21">SUPPLIER NETWORK</text><text x="800" y="360" fill="#ffffff" font-family="Arial" font-size="38" font-weight="700">Partner factories</text>
+  <text x="800" y="415" fill="#daf2ff" font-family="Arial" font-size="22">Engineering · production</text><text x="800" y="452" fill="#daf2ff" font-family="Arial" font-size="22">Testing · packaging</text>
+  <path d="M1195 375h150" stroke="#53b6e8" stroke-width="9"/><path d="M1315 354l36 21-36 21" fill="#53b6e8"/>
+  <rect x="1350" y="235" width="150" height="285" rx="30" fill="#263b4d" stroke="#6e91a9" stroke-width="2"/>
+  <text x="1425" y="310" text-anchor="middle" fill="#a6e2ff" font-family="Arial" font-size="19">MARKET</text><text x="1425" y="370" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="25" font-weight="700">Retail</text><text x="1425" y="407" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="25" font-weight="700">Support</text><text x="1425" y="460" text-anchor="middle" fill="#cad8e2" font-family="Arial" font-size="18">Best Buy</text>
+  <rect x="100" y="610" width="1400" height="155" rx="28" fill="#101c27" stroke="#476980" stroke-width="2"/>
+  <text x="145" y="665" fill="#9bdcff" font-family="Arial" font-size="22" font-weight="700">DO NOT GENERALIZE</text>
+  <text x="145" y="715" fill="#ffffff" font-family="Arial" font-size="29">A supplier or country identified for one Insignia model is not the answer for every refrigerator,</text><text x="145" y="752" fill="#ffffff" font-family="Arial" font-size="29">washer, television, microwave or small appliance.</text>
+  <text x="100" y="835" fill="#9eb3c3" font-family="Arial" font-size="20">The exact factory, importer and warranty route must be verified from current model evidence.</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Amana product-category and manufacturer verification checklist</title>
+  <desc id="desc">A four-step checklist identifies the category, model, origin and service route before assigning an Amana manufacturer.</desc>
+  <rect width="1600" height="900" fill="#151719"/>
+  <text x="100" y="105" fill="#ffffff" font-family="Arial" font-size="48" font-weight="700">Before assigning an Amana manufacturer</text>
+  <text x="100" y="150" fill="#c6cdd3" font-family="Arial" font-size="23">Brand history cannot replace the current product record</text>
+  <g font-family="Arial">
+    <rect x="100" y="235" width="325" height="250" rx="28" fill="#33373b"/><text x="145" y="295" fill="#f0ae77" font-size="21">01 · CATEGORY</text><text x="145" y="350" fill="#ffffff" font-size="31" font-weight="700">Appliance path</text><text x="145" y="397" fill="#d7dce0" font-size="21">Major · central HVAC</text><text x="145" y="432" fill="#d7dce0" font-size="21">Room air</text>
+    <rect x="458" y="235" width="325" height="250" rx="28" fill="#276986"/><text x="503" y="295" fill="#d9f2ff" font-size="21">02 · MODEL</text><text x="503" y="350" fill="#ffffff" font-size="31" font-weight="700">Exact unit</text><text x="503" y="397" fill="#dcf2fc" font-size="21">Serial · install date</text><text x="503" y="432" fill="#dcf2fc" font-size="21">Market version</text>
+    <rect x="816" y="235" width="325" height="250" rx="28" fill="#33373b"/><text x="861" y="295" fill="#f0ae77" font-size="21">03 · ORIGIN</text><text x="861" y="350" fill="#ffffff" font-size="31" font-weight="700">Label + factory</text><text x="861" y="397" fill="#d7dce0" font-size="21">Maker · importer</text><text x="861" y="432" fill="#d7dce0" font-size="21">Country · components</text>
+    <rect x="1174" y="235" width="326" height="250" rx="28" fill="#8e4822"/><text x="1219" y="295" fill="#ffe1cd" font-size="21">04 · SERVICE</text><text x="1219" y="350" fill="#ffffff" font-size="31" font-weight="700">Correct channel</text><text x="1219" y="397" fill="#ffe1cd" font-size="21">Whirlpool · Daikin</text><text x="1219" y="432" fill="#ffe1cd" font-size="21">XLS Products</text>
+  </g>
+  <rect x="100" y="600" width="650" height="155" rx="26" fill="#f1eee9"/><text x="145" y="660" fill="#6f645b" font-family="Arial" font-size="20">PORTFOLIO EVIDENCE CAN SHOW</text><text x="145" y="710" fill="#221f1c" font-family="Arial" font-size="28" font-weight="700">Ownership and production capability</text>
+  <rect x="850" y="600" width="650" height="155" rx="26" fill="#276986"/><text x="895" y="660" fill="#d9f2ff" font-family="Arial" font-size="20">PRODUCT EVIDENCE MUST SHOW</text><text x="895" y="710" fill="#ffffff" font-family="Arial" font-size="28" font-weight="700">Maker, origin, installer and warranty</text>
+  <text x="800" y="835" text-anchor="middle" fill="#a4adb4" font-family="Arial" font-size="20">Amana's Iowa origin does not identify the current factory behind an individual appliance or HVAC unit.</text>
+</svg>

@@ -48,10 +48,10 @@ This operational record covers three existing search guides selected from the la
 
 ## Production evidence
 
-- PR: pending.
-- Squash merge: pending.
-- Git-linked Vercel production deployment: pending.
-- Live verification: pending.
+- PR: [#88](https://github.com/dennyyou-coder/new-project-5/pull/88).
+- Squash merge: `215bbac674fda07aea8ffec9c386d70375f52273`.
+- Git-linked Vercel production deployment: `dpl_3gzrvczmHSXns36UGrKFoNHuzs7K`, `READY`.
+- Live verification: all three canonical URLs returned HTTP 200 and passed title, H1, description, canonical, BlogPosting schema, 1600x900 article-image, desktop, 390px, guide-discovery, sitemap, internal-link and browser-console checks. No runtime errors were found in the post-deploy scan.
 
 ## Next queue after this batch
 

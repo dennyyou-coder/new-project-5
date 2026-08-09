@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Amana major-appliance, HVAC and room-air operating structure</title>
+  <desc id="desc">Whirlpool operates Amana major appliances, Daikin and Goodman operate Amana HVAC under license, and XLS Products manufactures selected room-air products under license.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#171515"/><stop offset="1" stop-color="#243a4b"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="100" y="105" fill="#ffffff" font-family="Arial" font-size="48" font-weight="700">Amana: identify the product category first</text>
+  <text x="100" y="150" fill="#c7ced5" font-family="Arial" font-size="23">One trademark system supports three different operating paths</text>
+  <rect x="430" y="205" width="740" height="145" rx="28" fill="#f3eee8"/>
+  <text x="800" y="260" text-anchor="middle" fill="#6e6259" font-family="Arial" font-size="20">AMANA TRADEMARK SYSTEM</text><text x="800" y="310" text-anchor="middle" fill="#211e1b" font-family="Arial" font-size="35" font-weight="700">Whirlpool Corporation + Maytag entities</text>
+  <path d="M800 350v90M300 440h1000" stroke="#e89655" stroke-width="7"/><path d="M300 440v55M800 440v55M1300 440v55" stroke="#e89655" stroke-width="7"/>
+  <rect x="100" y="495" width="420" height="260" rx="28" fill="#f0eee9"/>
+  <text x="145" y="555" fill="#73675e" font-family="Arial" font-size="20">CORE MAJOR APPLIANCES</text><text x="145" y="610" fill="#211e1b" font-family="Arial" font-size="34" font-weight="700">Whirlpool</text><text x="145" y="660" fill="#625951" font-family="Arial" font-size="21">Refrigeration · cooking</text><text x="145" y="696" fill="#625951" font-family="Arial" font-size="21">Dishwashing · laundry</text>
+  <rect x="590" y="495" width="420" height="260" rx="28" fill="#236181"/>
+  <text x="635" y="555" fill="#d5efff" font-family="Arial" font-size="20">CENTRAL HVAC · LICENSE</text><text x="635" y="610" fill="#ffffff" font-family="Arial" font-size="34" font-weight="700">Daikin + Goodman</text><text x="635" y="660" fill="#d8effb" font-family="Arial" font-size="21">Furnaces · heat pumps</text><text x="635" y="696" fill="#d8effb" font-family="Arial" font-size="21">Central air systems</text>
+  <rect x="1080" y="495" width="420" height="260" rx="28" fill="#8e4822"/>
+  <text x="1125" y="555" fill="#ffe2cf" font-family="Arial" font-size="20">ROOM AIR · LICENSE</text><text x="1125" y="610" fill="#ffffff" font-family="Arial" font-size="34" font-weight="700">XLS Products</text><text x="1125" y="660" fill="#ffe2cf" font-family="Arial" font-size="21">Room + portable AC</text><text x="1125" y="696" fill="#ffe2cf" font-family="Arial" font-size="21">Dehumidifiers</text>
+  <text x="100" y="835" fill="#a9b2b9" font-family="Arial" font-size="20">The product label, model manual and warranty determine the exact manufacturer, factory and claim route.</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">RIDGID power-tool model verification checklist</title>
+  <desc id="desc">Four evidence layers identify a RIDGID tool model, responsible company, factory and origin, and service eligibility.</desc>
+  <rect width="1600" height="900" fill="#131211"/>
+  <text x="100" y="105" fill="#ffffff" font-family="Arial" font-size="48" font-weight="700">Verify the RIDGID model—not only the orange brand</text>
+  <text x="100" y="150" fill="#bfb6ae" font-family="Arial" font-size="23">Four evidence layers for purchasing, compliance and service</text>
+  <g font-family="Arial">
+    <rect x="100" y="235" width="325" height="250" rx="28" fill="#312b27"/><text x="145" y="295" fill="#ffad70" font-size="21">01 · IDENTITY</text><text x="145" y="350" fill="#ffffff" font-size="31" font-weight="700">Exact model</text><text x="145" y="397" fill="#d2c8c1" font-size="21">Revision · serial range</text><text x="145" y="432" fill="#d2c8c1" font-size="21">Market version</text>
+    <rect x="458" y="235" width="325" height="250" rx="28" fill="#a74617"/><text x="503" y="295" fill="#ffe0ca" font-size="21">02 · COMPANY</text><text x="503" y="350" fill="#ffffff" font-size="31" font-weight="700">Maker + importer</text><text x="503" y="397" fill="#ffe0ca" font-size="21">Label · manual</text><text x="503" y="432" fill="#ffe0ca" font-size="21">Safety filing</text>
+    <rect x="816" y="235" width="325" height="250" rx="28" fill="#312b27"/><text x="861" y="295" fill="#ffad70" font-size="21">03 · ORIGIN</text><text x="861" y="350" fill="#ffffff" font-size="31" font-weight="700">Factory + country</text><text x="861" y="397" fill="#d2c8c1" font-size="21">Origin mark · carton</text><text x="861" y="432" fill="#d2c8c1" font-size="21">Shipment record</text>
+    <rect x="1174" y="235" width="326" height="250" rx="28" fill="#312b27"/><text x="1219" y="295" fill="#ffad70" font-size="21">04 · SERVICE</text><text x="1219" y="350" fill="#ffffff" font-size="31" font-weight="700">Warranty + LSA</text><text x="1219" y="397" fill="#d2c8c1" font-size="21">Receipt · registration</text><text x="1219" y="432" fill="#d2c8c1" font-size="21">Authorized channel</text>
+  </g>
+  <rect x="100" y="600" width="650" height="155" rx="26" fill="#f1ede8"/><text x="145" y="660" fill="#6b6159" font-family="Arial" font-size="20">GROUP EVIDENCE CAN SHOW</text><text x="145" y="710" fill="#211e1b" font-family="Arial" font-size="28" font-weight="700">Trademark, license and product operator</text>
+  <rect x="850" y="600" width="650" height="155" rx="26" fill="#ad4918"/><text x="895" y="660" fill="#ffe0ca" font-family="Arial" font-size="20">PRODUCT EVIDENCE MUST SHOW</text><text x="895" y="710" fill="#ffffff" font-family="Arial" font-size="28" font-weight="700">Factory, origin and claim eligibility</text>
+  <text x="800" y="835" text-anchor="middle" fill="#9e948c" font-family="Arial" font-size="20">A TTI relationship does not prove cross-brand battery compatibility or one factory for the full RIDGID range.</text>
+</svg>
