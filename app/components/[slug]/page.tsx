@@ -11,6 +11,7 @@ import { ComponentSystemRole } from "@/components/component-intelligence/Compone
 import { ComponentTechnicalSections } from "@/components/component-intelligence/ComponentTechnicalSections";
 import { ComponentTimeline } from "@/components/component-intelligence/ComponentTimeline";
 import { buildComponentPageSchemas, buildComponentPageTitle, buildComponentStaticParams, getComponentPageData, getPublishedComponentProfiles, isComponentDraftVisible } from "@/lib/componentProfiles";
+import { buildWebsiteMetadata } from "@/lib/seo";
 
 const siteUrl = "https://worldcleanbiz.com";
 type PageProps = { params: Promise<{ slug: string }> };
@@ -30,7 +31,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!profile) return {};
   const title = buildComponentPageTitle(profile);
   const canonical = `/components/${profile.slug}`;
-  return { title, description: profile.metaDescription, alternates: { canonical }, robots: profile.status === "draft" ? { index: false, follow: false } : undefined, openGraph: { title, description: profile.metaDescription, type: "website", url: canonical, images: [profile.heroImage] } };
+  return buildWebsiteMetadata({ title, description: profile.metaDescription, canonical, image: profile.heroImage, robots: profile.status === "draft" ? { index: false, follow: false } : undefined });
 }
 
 export default async function ComponentPage({ params }: PageProps) {

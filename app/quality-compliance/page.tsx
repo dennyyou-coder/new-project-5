@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import "../styles/trust.css";
 import { TallyButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
-  title: "Quality & Compliance | Cleaning Product Sourcing",
+  title: "Quality & Compliance",
   description:
     "Understand how World Clean Biz coordinates product requirements, supplier evaluation, samples, quality activities and market-specific compliance work.",
   alternates: { canonical: "/quality-compliance" }
@@ -57,7 +58,7 @@ const responsibilities = [
 
 export default function QualityCompliancePage() {
   return (
-    <main className="trust-page trust-quality-page">
+    <div className="trust-page trust-quality-page">
       <section className="trust-hero trust-quality-hero">
         <div className="container trust-hero-inner">
           <p className="eyebrow">QUALITY &amp; COMPLIANCE</p>
@@ -170,6 +171,6 @@ export default function QualityCompliancePage() {
           </TallyButton>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

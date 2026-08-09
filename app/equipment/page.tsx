@@ -3,11 +3,14 @@ import { EquipmentDirectoryCard } from "@/components/equipment/EquipmentDirector
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
 import { getPublishedEquipmentProfiles } from "@/lib/equipment";
+import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Cleaning Equipment Technical Intelligence",
   description: "Evidence-backed technical profiles for commercial cleaning equipment, systems, specifications, components and buyer verification.",
-  alternates: { canonical: "/equipment" }
+  alternates: { canonical: "/equipment" },
+  openGraph: { title: "Cleaning Equipment Technical Intelligence", description: "Evidence-backed technical profiles for commercial cleaning equipment, systems, specifications, components and buyer verification.", type: "website", url: "/equipment", images: [DEFAULT_SOCIAL_IMAGE] },
+  twitter: { card: "summary_large_image", title: "Cleaning Equipment Technical Intelligence", description: "Evidence-backed technical profiles for commercial cleaning equipment, systems, specifications, components and buyer verification.", images: [DEFAULT_SOCIAL_IMAGE] }
 };
 
 export default function EquipmentDirectoryPage() {

@@ -1,5 +1,26 @@
 export const DIRECTORY_PAGE_SIZE = 10;
 
+import type { Insight } from "@/lib/content";
+import type { DirectoryArticle } from "@/components/ContentDirectory";
+
+export function toDirectoryArticle(article: Insight): DirectoryArticle {
+  return {
+    slug: article.slug,
+    title: article.title,
+    excerpt: article.excerpt,
+    date: article.date,
+    readingTime: article.readingTime,
+    category: article.category,
+    coverImage: article.coverImage,
+    coverAlt: article.coverAlt,
+    coverWidth: article.coverWidth,
+    coverHeight: article.coverHeight,
+    featured: article.featured,
+    tags: article.tags,
+    seriesTitle: article.seriesTitle
+  };
+}
+
 export function parseDirectoryPage(
   value: string | string[] | undefined
 ): number {

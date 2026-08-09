@@ -56,11 +56,11 @@ test("Reports keeps the hero cover unobstructed by duplicated report counts", ()
 test("Reports includes the approved cover and downloadable report assets", async () => {
   assert.match(
     reportsSource,
-    /wcb-cleaning-industry-growth-map-cover\.png/
+    /wcb-cleaning-industry-growth-map-cover\.webp/
   );
   await access(
     new URL(
-      "../public/images/reports/wcb-cleaning-industry-growth-map-cover.png",
+      "../public/images/reports/wcb-cleaning-industry-growth-map-cover.webp",
       import.meta.url
     )
   );

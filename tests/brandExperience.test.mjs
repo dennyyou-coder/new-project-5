@@ -10,9 +10,11 @@ import {
   sortBrandDevelopmentsNewestFirst
 } from "../lib/brands.ts";
 import { formatBrandDate } from "../lib/brandDates.ts";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const read = (relativePath) =>
   fs.readFileSync(path.join(process.cwd(), relativePath), "utf8");
+const brandStylesSource = readRouteStyles("brands.css");
 
 const readCssBlock = (source, marker) => {
   const markerPosition = source.indexOf(marker);
@@ -568,7 +570,7 @@ test("footer exposes exactly one Brand Intelligence discovery link", () => {
 });
 
 test("brand styles contain logos without cropping and collapse multi-column layouts on mobile", () => {
-  const source = read("app/globals.css");
+  const source = brandStylesSource;
   const marker = "/* Brand intelligence hub */";
   const markerPosition = source.indexOf(marker);
   assert.ok(markerPosition >= 0);
@@ -728,7 +730,7 @@ test("brand styles contain logos without cropping and collapse multi-column layo
 });
 
 test("founder cards use a compact portrait grid and stack safely on mobile", () => {
-  const source = read("app/globals.css");
+  const source = brandStylesSource;
   const brandStyles = source.slice(source.indexOf("/* Brand intelligence hub */"));
 
   const cardRule = brandStyles.match(
@@ -780,7 +782,7 @@ test("founder cards use a compact portrait grid and stack safely on mobile", () 
 });
 
 test("competitor links meet normal-text contrast and retain a non-color cue", () => {
-  const source = read("app/globals.css");
+  const source = brandStylesSource;
   const rootRule = source.match(/:root\s*\{[^}]*\}/)?.[0];
   const linkRule = source.match(
     /\.brand-competitor-links a\s*\{[^}]*\}/
@@ -893,7 +895,7 @@ test("directory wordmarks remain legible at real one, two, and three-column boun
 });
 
 test("hero wordmarks remain legible after asset whitespace at desktop and mobile widths", async () => {
-  const source = read("app/globals.css");
+  const source = brandStylesSource;
   const brandStyles = source.slice(source.indexOf("/* Brand intelligence hub */"));
   const heroLogoStageRule = brandStyles.match(
     /\.brand-logo--hero\s*\{[^}]*\}/
@@ -990,7 +992,7 @@ test("hero wordmarks remain legible after asset whitespace at desktop and mobile
 });
 
 test("mobile key-fact labels retain sufficient white opacity on the dark hero", () => {
-  const source = read("app/globals.css");
+  const source = brandStylesSource;
   const brandStyles = source.slice(source.indexOf("/* Brand intelligence hub */"));
   const mobileStyles = readCssBlock(brandStyles, "@media (max-width: 760px)");
   const labelRule = mobileStyles.match(
@@ -1056,7 +1058,7 @@ test("brand detail layout uses compact operations, navigation, and full-size vis
   const hero = read("components/brands/BrandHero.tsx");
   const sections = read("components/brands/BrandSections.tsx");
   const visual = read("components/brands/BrandVisual.tsx");
-  const styles = read("app/globals.css");
+  const styles = brandStylesSource;
   const brandStyles = styles.slice(styles.indexOf("/* Brand intelligence hub */"));
 
   assert.match(hero, /className="brand-section-nav"/);

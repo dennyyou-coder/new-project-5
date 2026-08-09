@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
-import Script from "next/script";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
+import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://worldcleanbiz.com"),
@@ -47,13 +47,15 @@ export const metadata: Metadata = {
     url: "https://worldcleanbiz.com",
     siteName: "World Clean Biz",
     locale: "en_US",
-    type: "website"
+    type: "website",
+    images: [DEFAULT_SOCIAL_IMAGE]
   },
   twitter: {
     card: "summary_large_image",
     title: "World Clean Biz",
     description:
-      "Global cleaning industry insights, reports, sourcing intelligence, and WCB Expo information."
+      "Global cleaning industry insights, reports, sourcing intelligence, and WCB Expo information.",
+    images: [DEFAULT_SOCIAL_IMAGE]
   }
 };
 
@@ -78,7 +80,6 @@ export default function RootLayout({
           <main id="main-content">{children}</main>
           <Footer />
         </div>
-        <Script src="https://tally.so/widgets/embed.js" strategy="afterInteractive" />
         <GoogleAnalytics />
         <Analytics />
       </body>

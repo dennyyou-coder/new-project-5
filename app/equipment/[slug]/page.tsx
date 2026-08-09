@@ -18,6 +18,7 @@ import {
   getPublishedEquipmentProfiles,
   isEquipmentDraftVisible
 } from "@/lib/equipment";
+import { buildWebsiteMetadata } from "@/lib/seo";
 
 const siteUrl = "https://worldcleanbiz.com";
 type PageProps = { params: Promise<{ slug: string }> };
@@ -44,13 +45,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!profile) return {};
   const title = buildEquipmentPageTitle(profile);
   const canonical = `/equipment/${profile.slug}`;
-  return {
+  return buildWebsiteMetadata({
     title,
     description: profile.metaDescription,
-    alternates: { canonical },
-    robots: profile.status === "draft" ? { index: false, follow: false } : undefined,
-    openGraph: { title, description: profile.metaDescription, type: "website", url: canonical, images: [profile.heroImage] }
-  };
+    canonical,
+    image: profile.heroImage,
+    robots: profile.status === "draft" ? { index: false, follow: false } : undefined
+  });
 }
 
 export default async function EquipmentPage({ params }: PageProps) {

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const root = process.cwd();
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
@@ -128,7 +129,7 @@ test("decision, engineering, standards, timeline and sources are auditable", () 
 });
 
 test("equipment styles preserve scoped desktop and mobile layouts", () => {
-  const source = read("app/globals.css");
+  const source = readRouteStyles("equipment.css");
   const marker = source.indexOf("/* Equipment intelligence */");
   assert.ok(marker >= 0);
   const styles = source.slice(marker);

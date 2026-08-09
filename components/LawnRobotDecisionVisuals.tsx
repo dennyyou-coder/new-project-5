@@ -74,9 +74,9 @@ export function LawnRobotChannelMatrix() {
 
 export function LawnRobotSuccessConditions() {
   const conditions = [
-    { number: "01", image: "/images/sourcing/lawn-robots/rm-01-compact-vision.png", alt: "Vision robotic mower representing a clear residential customer use case", title: "A clear customer problem", text: "Installation friction, difficult terrain or large-area labor must give the buyer an obvious reason to switch." },
-    { number: "02", image: "/images/sourcing/lawn-robots/rm-03-awd-slope.png", alt: "All-wheel-drive robotic mower representing repeatable difficult-terrain performance", title: "Repeatable field performance", text: "The platform has to work across the edges, slopes, signals and recovery conditions buyers actually face." },
-    { number: "03", image: "/images/sourcing/lawn-robots/rm-05-large-area-professional.png", alt: "Professional robotic mower representing serviceable channel economics", title: "Channel economics after the sale", text: "Setup, software, returns, parts and service cannot consume the margin that made the quotation attractive." }
+    { number: "01", image: "/images/sourcing/lawn-robots/rm-01-compact-vision.webp", alt: "Vision robotic mower representing a clear residential customer use case", title: "A clear customer problem", text: "Installation friction, difficult terrain or large-area labor must give the buyer an obvious reason to switch." },
+    { number: "02", image: "/images/sourcing/lawn-robots/rm-03-awd-slope.webp", alt: "All-wheel-drive robotic mower representing repeatable difficult-terrain performance", title: "Repeatable field performance", text: "The platform has to work across the edges, slopes, signals and recovery conditions buyers actually face." },
+    { number: "03", image: "/images/sourcing/lawn-robots/rm-05-large-area-professional.webp", alt: "Professional robotic mower representing serviceable channel economics", title: "Channel economics after the sale", text: "Setup, software, returns, parts and service cannot consume the margin that made the quotation attractive." }
   ];
   return (
     <section className="section sourcing-lawn-success-section">

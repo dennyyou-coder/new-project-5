@@ -19,6 +19,7 @@ import {
   getBrandCategoryPageData
 } from "@/lib/brandCategories";
 import { getInsights } from "@/lib/content";
+import { buildWebsiteMetadata } from "@/lib/seo";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -47,17 +48,11 @@ export async function generateMetadata({
   if (categoryData) {
     const canonical = `/brands/${categoryData.category.slug}`;
 
-    return {
+    return buildWebsiteMetadata({
       title: categoryData.category.title,
       description: categoryData.category.description,
-      alternates: { canonical },
-      openGraph: {
-        title: `${categoryData.category.title} | World Clean Biz`,
-        description: categoryData.category.description,
-        type: "website",
-        url: canonical
-      }
-    };
+      canonical
+    });
   }
 
   const data = getBrandPageData(slug, articles);
@@ -67,18 +62,12 @@ export async function generateMetadata({
   const canonical = `/brands/${profile.slug}`;
   const pageTitle = buildBrandPageTitle(profile);
 
-  return {
+  return buildWebsiteMetadata({
     title: pageTitle,
     description: profile.metaDescription,
-    alternates: { canonical },
-    openGraph: {
-      title: pageTitle,
-      description: profile.metaDescription,
-      type: "website",
-      url: canonical,
-      images: profile.heroImage ? [profile.heroImage] : undefined
-    }
-  };
+    canonical,
+    image: profile.heroImage
+  });
 }
 
 export default async function BrandPage({ params }: PageProps) {

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import "../styles/trust.css";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className="trust-page trust-legal-page">
+    <div className="trust-page trust-legal-page">
       <section className="trust-hero trust-legal-hero">
         <div className="container trust-hero-inner">
           <p className="eyebrow">WORLD CLEAN BIZ</p>
@@ -126,6 +127,6 @@ export default function PrivacyPage() {
           </article>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

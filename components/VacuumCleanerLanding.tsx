@@ -51,7 +51,7 @@ export function VacuumCleanerLanding({ product }: { product: SourcingProduct }) 
   const pageUrl = "https://worldcleanbiz.com/sourcing/vacuum-cleaners";
 
   return (
-    <main className="sourcing-v3-page sourcing-lawn-page sourcing-vacuum-page">
+    <div className="sourcing-v3-page sourcing-lawn-page sourcing-vacuum-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Service", name: product.title, description: product.metaDescription, provider: { "@type": "Organization", name: "World Clean Biz", url: "https://worldcleanbiz.com" }, areaServed: "Worldwide", url: pageUrl }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://worldcleanbiz.com" }, { "@type": "ListItem", position: 2, name: "Sourcing", item: "https://worldcleanbiz.com/sourcing" }, { "@type": "ListItem", position: 3, name: product.eyebrow, item: pageUrl }] }) }} />
 
@@ -67,7 +67,7 @@ export function VacuumCleanerLanding({ product }: { product: SourcingProduct }) 
             </div>
             <p className="sourcing-lawn-hero-fit">For brands, importers, distributors and retailers deciding where to compete in vacuum cleaners—and which product platform can support that position.</p>
           </div>
-          <img src={product.image} alt={product.imageAlt} />
+          <img src={product.image} alt={product.imageAlt} fetchPriority="high" decoding="async" />
         </div>
       </section>
 
@@ -127,7 +127,7 @@ export function VacuumCleanerLanding({ product }: { product: SourcingProduct }) 
 
       <section className="section sourcing-lawn-trust-section">
         <div className="sourcing-v3-container sourcing-lawn-trust">
-          <img src="/images/industry/about-denny-portrait-event.jpg" alt="Denny, founder of World Clean Biz, at a cleaning industry event" />
+          <img src="/images/industry/about-denny-portrait-event.jpg" alt="Denny, founder of World Clean Biz, at a cleaning industry event" loading="lazy" decoding="async" />
           <div><p className="sourcing-v3-kicker">Industry judgment behind the product decision</p><h2>A strong specification is not yet a sustainable vacuum cleaner business</h2><p>Denny reviews whether market opportunity, cleaning evidence, supplier capability and execution economics reinforce one another strongly enough to justify the next investment—not whether the sample looks impressive.</p><ul><li>Founder, World Clean Biz</li><li>Organizer, WCB Expo</li><li>Inside the cleaning industry since 2006</li></ul></div>
         </div>
       </section>
@@ -147,7 +147,7 @@ export function VacuumCleanerLanding({ product }: { product: SourcingProduct }) 
 
       <section className="section section-muted sourcing-lawn-faq-section">
         <div className="sourcing-v3-container sourcing-lawn-faq">
-          <div><p className="sourcing-v3-kicker">Industry Opportunity Questions</p><h2>The Product Decisions Buyers Are Debating Now</h2><p>These commercial and technical choices shape where vacuum cleaner growth can come from next.</p><img className="sourcing-lawn-faq-visual" src={directions[4]?.image || product.image} alt={directions[4]?.imageAlt || product.imageAlt} /></div>
+          <div><p className="sourcing-v3-kicker">Industry Opportunity Questions</p><h2>The Product Decisions Buyers Are Debating Now</h2><p>These commercial and technical choices shape where vacuum cleaner growth can come from next.</p><img className="sourcing-lawn-faq-visual" src={directions[4]?.image || product.image} alt={directions[4]?.imageAlt || product.imageAlt} loading="lazy" decoding="async" /></div>
           <div>{faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div>
         </div>
       </section>
@@ -163,9 +163,9 @@ export function VacuumCleanerLanding({ product }: { product: SourcingProduct }) 
         <div className="sourcing-v3-container">
           <p className="sourcing-v3-kicker">Related Intelligence</p>
           <h2>Research the category before choosing a supplier</h2>
-          <div className="sourcing-product-grid">{related.map((article) => <article className="sourcing-pool-related-card" key={article.slug}>{article.coverImage ? <img src={article.coverImage} alt={article.coverAlt || article.title} /> : null}<h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div>
+          <div className="sourcing-product-grid">{related.map((article) => <article className="sourcing-pool-related-card" key={article.slug}>{article.coverImage ? <img src={article.coverImage} alt={article.coverAlt || article.title} loading="lazy" decoding="async" /> : null}<h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

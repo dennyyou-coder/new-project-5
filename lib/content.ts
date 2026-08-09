@@ -12,6 +12,7 @@ export type Insight = {
   metaDescription: string;
   date: string;
   publishedAt: string;
+  updatedAt: string;
   sortDate: string;
   author: string;
   category: string;
@@ -24,6 +25,8 @@ export type Insight = {
   takeaways: string[];
   coverImage?: string;
   coverAlt?: string;
+  coverWidth?: number;
+  coverHeight?: number;
   youtubeId?: string;
   series?: string;
   seriesTitle?: string;
@@ -106,6 +109,10 @@ export function getInsights(): Insight[] {
       const excerpt = String(data.excerpt || data.description || makeExcerpt(content));
       const metaDescription = String(data.meta_description || data.description || excerpt);
       const coverImage = data.coverImage || data.cover_image;
+      const resolvedCoverImage = coverImage ? String(coverImage) : firstMarkdownImage(content);
+      const coverDimensions = resolvedCoverImage
+        ? localImageDimensions(resolvedCoverImage)
+        : undefined;
 
       return [{
         slug,
@@ -115,6 +122,7 @@ export function getInsights(): Insight[] {
         metaDescription,
         date: String(data.date || ""),
         publishedAt: String(data.publishedAt || data.date || ""),
+        updatedAt: String(data.updatedAt || data.updated_at || data.publishedAt || data.date || ""),
         sortDate: String(data.sortDate || data.publishedAt || data.date || ""),
         author: String(data.author || "Denny You"),
         category: normalizeCategory(String(data.category || "")),
@@ -125,8 +133,10 @@ export function getInsights(): Insight[] {
         visualPriority: Number(data.visualPriority || 0),
         readingTime: String(data.readingTime || estimateReadingTime(content)),
         takeaways: Array.isArray(data.takeaways) ? data.takeaways : [],
-        coverImage: coverImage ? String(coverImage) : firstMarkdownImage(content),
+        coverImage: resolvedCoverImage,
         coverAlt: data.cover_alt ? String(data.cover_alt) : undefined,
+        coverWidth: coverDimensions?.width,
+        coverHeight: coverDimensions?.height,
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
         series: data.series ? String(data.series) : undefined,
         seriesTitle: data.series_title ? String(data.series_title) : undefined,
@@ -325,6 +335,15 @@ export function markdownToHtml(markdown: string) {
     };
   }
 
+  function imageAttributes(src: string) {
+    const dimensions = localImageDimensions(src);
+    const size = dimensions
+      ? ` width="${dimensions.width}" height="${dimensions.height}"`
+      : "";
+
+    return ` loading="lazy" decoding="async"${size}`;
+  }
+
   function isTableDivider(line: string) {
     return /^\|?[\s:-]+\|[\s|:-]*$/.test(line.trim());
   }
@@ -405,7 +424,7 @@ export function markdownToHtml(markdown: string) {
         html.push(`<div class="article-inline-image-grid">`);
         for (const image of images) {
           html.push(
-            `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}" />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
+            `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}"${imageAttributes(image.src)} />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
           );
         }
         html.push(`</div>`);
@@ -413,7 +432,7 @@ export function markdownToHtml(markdown: string) {
       } else {
         const image = images[0];
         html.push(
-          `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}" />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
+          `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}"${imageAttributes(image.src)} />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
         );
       }
     } else if (trimmed.startsWith("> ")) {
@@ -433,6 +452,92 @@ export function markdownToHtml(markdown: string) {
 
   closeList();
   return html.join("\n");
+}
+
+function localImageDimensions(src: string) {
+  if (!src.startsWith("/") || src.startsWith("//")) return undefined;
+
+  const cleanSrc = src.split(/[?#]/, 1)[0];
+  const filePath = path.join(process.cwd(), "public", cleanSrc);
+  if (!fs.existsSync(filePath)) return undefined;
+
+  try {
+    return readImageDimensions(fs.readFileSync(filePath));
+  } catch {
+    return undefined;
+  }
+}
+
+function readImageDimensions(buffer: Buffer) {
+  if (
+    buffer.length >= 24 &&
+    buffer.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))
+  ) {
+    return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
+  }
+
+  if (buffer.length >= 10 && buffer[0] === 0xff && buffer[1] === 0xd8) {
+    let offset = 2;
+    while (offset + 9 < buffer.length) {
+      if (buffer[offset] !== 0xff) {
+        offset += 1;
+        continue;
+      }
+
+      const marker = buffer[offset + 1];
+      if (marker === 0xd8 || marker === 0xd9) {
+        offset += 2;
+        continue;
+      }
+
+      const length = buffer.readUInt16BE(offset + 2);
+      if (length < 2) break;
+      if (
+        (marker >= 0xc0 && marker <= 0xc3) ||
+        (marker >= 0xc5 && marker <= 0xc7) ||
+        (marker >= 0xc9 && marker <= 0xcb) ||
+        (marker >= 0xcd && marker <= 0xcf)
+      ) {
+        return {
+          width: buffer.readUInt16BE(offset + 7),
+          height: buffer.readUInt16BE(offset + 5)
+        };
+      }
+      offset += 2 + length;
+    }
+  }
+
+  if (
+    buffer.length >= 30 &&
+    buffer.toString("ascii", 0, 4) === "RIFF" &&
+    buffer.toString("ascii", 8, 12) === "WEBP"
+  ) {
+    const format = buffer.toString("ascii", 12, 16);
+    if (format === "VP8X") {
+      return {
+        width: 1 + buffer.readUIntLE(24, 3),
+        height: 1 + buffer.readUIntLE(27, 3)
+      };
+    }
+    if (format === "VP8L" && buffer[20] === 0x2f) {
+      const bits = buffer.readUInt32LE(21);
+      return {
+        width: 1 + (bits & 0x3fff),
+        height: 1 + ((bits >> 14) & 0x3fff)
+      };
+    }
+    if (format === "VP8 ") {
+      const frameHeader = buffer.indexOf(Buffer.from([0x9d, 0x01, 0x2a]), 20);
+      if (frameHeader >= 0 && frameHeader + 7 <= buffer.length) {
+        return {
+          width: buffer.readUInt16LE(frameHeader + 3) & 0x3fff,
+          height: buffer.readUInt16LE(frameHeader + 5) & 0x3fff
+        };
+      }
+    }
+  }
+
+  return undefined;
 }
 
 function estimateReadingTime(content: string) {

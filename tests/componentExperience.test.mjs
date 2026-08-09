@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const root = process.cwd();
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8");
@@ -74,7 +75,7 @@ test("four content visual placements are wired to provenance-aware figures", () 
 });
 
 test("component styles provide dense desktop layouts and safe 390 px collapse", () => {
-  const source = read("app/globals.css");
+  const source = readRouteStyles("components.css");
   const marker = source.indexOf("/* Component intelligence */");
   assert.ok(marker >= 0);
   const styles = source.slice(marker);
@@ -88,7 +89,7 @@ test("component styles provide dense desktop layouts and safe 390 px collapse", 
 });
 
 test("light component surfaces reset text inherited from the dark hero", () => {
-  const source = read("app/globals.css");
+  const source = readRouteStyles("components.css");
   const marker = source.indexOf("/* Component intelligence */");
   assert.ok(marker >= 0);
   const styles = source.slice(marker);

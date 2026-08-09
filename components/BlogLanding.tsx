@@ -27,6 +27,8 @@ export function BlogSeriesHero({ article }: { article: Insight }) {
           <img
             src={imageFor(article, 0)}
             alt={`${article.seriesTitle || article.title} cover`}
+            width={article.coverWidth}
+            height={article.coverHeight}
             fetchPriority="high"
             decoding="async"
           />
@@ -68,6 +70,8 @@ function BlogHomeCard({
         <img
           src={imageFor(article, index)}
           alt={`${article.title} cover`}
+          width={article.coverWidth}
+          height={article.coverHeight}
           loading="lazy"
           decoding="async"
         />

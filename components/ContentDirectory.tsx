@@ -31,22 +31,39 @@ export type DirectoryPaginationItem = {
   current: boolean;
 };
 
+export type DirectoryArticle = Pick<
+  Insight,
+  | "slug"
+  | "title"
+  | "excerpt"
+  | "date"
+  | "readingTime"
+  | "category"
+  | "coverImage"
+  | "coverAlt"
+  | "coverWidth"
+  | "coverHeight"
+  | "featured"
+  | "tags"
+  | "seriesTitle"
+>;
+
 type ContentDirectoryProps = {
   variant: "analysis" | "guides";
   eyebrow: string;
   title: string;
   description: string;
   totalLabel: string;
-  articles: Insight[];
+  articles: DirectoryArticle[];
   filters: DirectoryFilter[];
   pagination: DirectoryPaginationItem[];
   previousHref?: string;
   nextHref?: string;
-  featuredSeriesArticle?: Insight;
+  featuredSeriesArticle?: DirectoryArticle;
   sidebar: DirectorySidebarProps;
 };
 
-function imageFor(article: Insight, index: number) {
+function imageFor(article: DirectoryArticle, index: number) {
   return article.coverImage || fallbackImages[index % fallbackImages.length];
 }
 
@@ -120,6 +137,8 @@ export function ContentDirectory({
                     <img
                       src={imageFor(article, index)}
                       alt={article.coverAlt || `${article.title} cover`}
+                      width={article.coverWidth}
+                      height={article.coverHeight}
                       loading={index === 0 ? "eager" : "lazy"}
                       decoding="async"
                     />

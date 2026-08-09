@@ -1,15 +1,13 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const componentSource = await readFile(
   new URL("../components/HomeSeriesFeature.tsx", import.meta.url),
   "utf8"
 );
-const cssSource = await readFile(
-  new URL("../app/globals.css", import.meta.url),
-  "utf8"
-);
+const cssSource = readRouteStyles("home.css");
 
 test("founder-series card keeps the approved identity and semantic hierarchy", () => {
   assert.match(componentSource, /Founder Series · Latest Episode/);

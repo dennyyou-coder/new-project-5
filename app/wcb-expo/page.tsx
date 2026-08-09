@@ -3,7 +3,7 @@ import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
-  title: "2026 WCB International Cleaning Appliance Expo",
+  title: "WCB Expo 2026 | Suzhou",
   description:
     "Plan your visit to the 2026 WCB International Cleaning Appliance Expo, 18–20 November 2026 at Suzhou Shishan Convention Center in Suzhou, China.",
   alternates: { canonical: "/wcb-expo" },
@@ -12,50 +12,50 @@ export const metadata: Metadata = {
     description:
       "Meet cleaning appliance brands, manufacturers, supply-chain companies and industry professionals in Suzhou, China.",
     url: "/wcb-expo",
-    images: ["/images/expo/wcb-expo-2026-hero.png"]
+    images: ["/images/expo/wcb-expo-2026-hero.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "2026 WCB International Cleaning Appliance Expo",
     description: "18–20 November 2026 · Suzhou, China",
-    images: ["/images/expo/wcb-expo-2026-hero.png"]
+    images: ["/images/expo/wcb-expo-2026-hero.webp"]
   }
 };
 
 const categories = [
   {
     title: "Robot Vacuums",
-    image: "/images/expo/expo-category-robotic-vacuums.png",
+    image: "/images/expo/expo-category-robotic-vacuums.webp",
     alt: "Robot vacuum product category"
   },
   {
     title: "Floor Washers",
-    image: "/images/expo/expo-category-floor-washers.png",
+    image: "/images/expo/expo-category-floor-washers.webp",
     alt: "Wet and dry floor washer product category"
   },
   {
     title: "Vacuum Cleaners",
-    image: "/images/sourcing/vacuum-cleaners.png",
+    image: "/images/sourcing/vacuum-cleaners.webp",
     alt: "Cordless vacuum cleaner product category"
   },
   {
     title: "Pool Robots",
-    image: "/images/expo/expo-category-pool-cleaners.png",
+    image: "/images/expo/expo-category-pool-cleaners.webp",
     alt: "Robotic pool cleaner product category"
   },
   {
     title: "Lawn Robots",
-    image: "/images/expo/expo-category-lawn-robots.png",
+    image: "/images/expo/expo-category-lawn-robots.webp",
     alt: "Robotic lawn mower product category"
   },
   {
     title: "Commercial Cleaning",
-    image: "/images/expo/expo-category-commercial-cleaning.png",
+    image: "/images/expo/expo-category-commercial-cleaning.webp",
     alt: "Commercial cleaning equipment category"
   },
   {
     title: "Components & Accessories",
-    image: "/images/expo/expo-category-components-technology.png",
+    image: "/images/expo/expo-category-components-technology.webp",
     alt: "Cleaning appliance components and accessories"
   }
 ];

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ReportsLeadForm, TallyReportButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
-  title: "Free Cleaning Industry Reports & Market Intelligence",
+  title: "Free Cleaning Industry Reports",
   description:
     "Choose free World Clean Biz reports on cleaning markets, product categories and China supply chains and receive them by email.",
   alternates: { canonical: "/reports" }
@@ -67,7 +67,7 @@ const intelligenceBenefits = [
 
 export default function ReportsPage() {
   return (
-    <main className="reports-library-page">
+    <div className="reports-library-page">
       <section className="reports-library-hero" id="top">
         <div className="reports-container reports-library-hero-grid">
           <div>
@@ -90,7 +90,7 @@ export default function ReportsPage() {
 
           <div className="reports-library-hero-visual" aria-label="World Clean Biz report library">
             <img
-              src="/images/reports/wcb-cleaning-industry-growth-map-cover.png"
+              src="/images/reports/wcb-cleaning-industry-growth-map-cover.webp"
               alt="World Clean Biz report cover: The Next Decade of Cleaning Growth"
             />
           </div>
@@ -113,7 +113,7 @@ export default function ReportsPage() {
           <article className="reports-library-featured-card">
             <div className="reports-library-featured-cover">
               <img
-                src="/images/reports/wcb-cleaning-industry-growth-map-cover.png"
+                src="/images/reports/wcb-cleaning-industry-growth-map-cover.webp"
                 alt="The Next Decade of Cleaning Growth report cover"
               />
             </div>
@@ -230,6 +230,6 @@ export default function ReportsPage() {
           <small>Free reports · No spam · Unsubscribe at any time</small>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

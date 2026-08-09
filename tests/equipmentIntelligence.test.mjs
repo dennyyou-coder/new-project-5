@@ -15,6 +15,7 @@ import {
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
 import { getInsights } from "../lib/content.ts";
 import sitemap from "../app/sitemap.ts";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const evidence = {
   evidence: "The official manual describes the cleaning system.",
@@ -1090,7 +1091,7 @@ test("published fifteenth equipment batch is included in production sitemap disc
 });
 
 test("equipment layout avoids empty title columns and balances odd card grids", () => {
-  const styles = readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
+  const styles = readRouteStyles("equipment.css");
 
   assert.match(
     styles,
