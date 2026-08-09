@@ -1,10 +1,10 @@
 import Link from "next/link";
-import type { Insight } from "@/lib/content";
+import type { DirectoryArticle } from "@/components/ContentDirectory";
 
 const fallbackCover =
   "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp";
 
-export function DirectorySeriesFeature({ article }: { article: Insight }) {
+export function DirectorySeriesFeature({ article }: { article: DirectoryArticle }) {
   const seriesTitle = article.seriesTitle || article.title;
 
   return (
@@ -16,6 +16,8 @@ export function DirectorySeriesFeature({ article }: { article: Insight }) {
         <img
           src={article.coverImage || fallbackCover}
           alt={article.coverAlt || `${seriesTitle} cover`}
+          width={article.coverWidth}
+          height={article.coverHeight}
           fetchPriority="high"
           decoding="async"
           style={{ objectFit: "contain" }}

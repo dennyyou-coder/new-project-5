@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 import {
   CONTACT_INQUIRIES,
   SOURCING_CATEGORIES
@@ -9,7 +10,7 @@ import {
 const sourcingSource = await readFile(new URL("../app/sourcing/page.tsx", import.meta.url), "utf8");
 const contactSource = await readFile(new URL("../app/contact/page.tsx", import.meta.url), "utf8");
 const definitionSource = await readFile(new URL("../lib/inquiryConversion.ts", import.meta.url), "utf8");
-const globalStyles = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+const globalStyles = readRouteStyles("sourcing.css");
 const leadFormsSource = await readFile(new URL("../components/LeadForms.tsx", import.meta.url), "utf8");
 const opportunityCardSource = await readFile(new URL("../components/SourcingOpportunityCard.tsx", import.meta.url), "utf8");
 

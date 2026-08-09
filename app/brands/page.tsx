@@ -11,7 +11,7 @@ import { getInsights } from "@/lib/content";
 const siteUrl = "https://worldcleanbiz.com";
 
 export const metadata: Metadata = {
-  title: "Cleaning & Home Appliance Brand Intelligence",
+  title: "Cleaning Appliance Brand Intelligence",
   description:
     "Independent brand profiles for cleaning- and home-appliance buyers, distributors and market professionals.",
   alternates: { canonical: "/brands" },
@@ -20,7 +20,15 @@ export const metadata: Metadata = {
     description:
       "Research company ownership, product portfolios, manufacturing, channels and strategy.",
     type: "website",
-    url: "/brands"
+    url: "/brands",
+    images: ["/images/industry/about-forum-stage-2025.jpg"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cleaning & Home Appliance Brand Intelligence",
+    description:
+      "Research company ownership, product portfolios, manufacturing, channels and strategy.",
+    images: ["/images/industry/about-forum-stage-2025.jpg"]
   }
 };
 

@@ -11,6 +11,7 @@ import {
   removeLeadingArticleTitleAndCover
 } from "@/lib/content";
 import { orderSeriesInsights } from "@/lib/insightCollections";
+import { seoDescription, seoTitle } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -173,28 +174,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const url = `${siteUrl}/blog/${article.slug}`;
   const publishedTime = article.publishedAt || article.date;
+  const modifiedTime = article.updatedAt || publishedTime;
   const coverImage = absoluteUrl(article.coverImage);
+  const metadataTitle = seoTitle(article.title);
+  const metadataDescription = seoDescription(article.metaDescription);
 
   return {
-    title: article.title,
-    description: article.metaDescription,
+    title: { absolute: metadataTitle },
+    description: metadataDescription,
     alternates: {
       canonical: `/blog/${article.slug}`
     },
     openGraph: {
-      title: article.title,
-      description: article.metaDescription,
+      title: metadataTitle,
+      description: metadataDescription,
       type: "article",
       publishedTime,
-      modifiedTime: publishedTime,
+      modifiedTime,
       authors: [article.author],
       url,
       images: coverImage ? [coverImage] : undefined
     },
     twitter: {
       card: "summary_large_image",
-      title: article.title,
-      description: article.metaDescription,
+      title: metadataTitle,
+      description: metadataDescription,
       images: coverImage ? [coverImage] : undefined
     }
   };
@@ -249,6 +253,7 @@ export default async function InsightDetailPage({ params }: Props) {
   const collectionHref = isGuide ? `/guides/${article.guideType}` : "/blog";
   const collectionName = isGuide ? "Guides" : "Blog";
   const publishedTime = article.publishedAt || article.date;
+  const modifiedTime = article.updatedAt || publishedTime;
   const coverImage = absoluteUrl(article.coverImage);
   const articleSchema = {
     "@context": "https://schema.org",
@@ -260,7 +265,7 @@ export default async function InsightDetailPage({ params }: Props) {
     headline: article.title,
     description: article.metaDescription,
     datePublished: publishedTime,
-    dateModified: publishedTime,
+    dateModified: modifiedTime,
     image: coverImage ? [coverImage] : undefined,
     articleSection: article.category,
     keywords: article.tags,
@@ -357,7 +362,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
             {article.coverImage ? (
               <figure className="blog-article-cover">
-                <img src={article.coverImage} alt={article.coverAlt || article.title} fetchPriority="high" decoding="async" />
+                <img src={article.coverImage} alt={article.coverAlt || article.title} width={article.coverWidth} height={article.coverHeight} fetchPriority="high" decoding="async" />
               </figure>
             ) : null}
 
@@ -455,7 +460,7 @@ export default async function InsightDetailPage({ params }: Props) {
                   key={item.slug}
                 >
                   <div className="related-signal-image">
-                    <img src={item.coverImage || "/images/site-refresh/real/city-architecture.webp"} alt="" loading="lazy" decoding="async" />
+                    <img src={item.coverImage || "/images/site-refresh/real/city-architecture.webp"} alt="" width={item.coverWidth} height={item.coverHeight} loading="lazy" decoding="async" />
                   </div>
                   <div className="meta">{item.category}</div>
                   <h3>{item.title}</h3>

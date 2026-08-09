@@ -15,6 +15,7 @@ import {
   getFeaturedGuides,
   getGuideInsights
 } from "@/lib/insightCollections";
+import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -32,36 +33,29 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params,
-  searchParams
-}: PageProps): Promise<Metadata> {
+  params
+}: Pick<PageProps, "params">): Promise<Metadata> {
   const { type } = await params;
   const config = GUIDE_TYPE_CONFIG.find((item) => item.type === type);
-  const resolvedSearchParams = searchParams ? await searchParams : {};
-  const hasQueryParams = Object.values(resolvedSearchParams).some((value) =>
-    Array.isArray(value) ? value.length > 0 : typeof value !== "undefined"
-  );
-
   if (!config) return {};
 
   return {
     title: config.label,
     description: config.description,
     alternates: { canonical: config.href },
-    robots: hasQueryParams
-      ? {
-          index: false,
-          follow: true
-        }
-      : {
-          index: true,
-          follow: true
-        },
+    robots: { index: true, follow: true },
     openGraph: {
       title: `${config.label} | World Clean Biz`,
       description: config.description,
       type: "website",
-      url: config.href
+      url: config.href,
+      images: [DEFAULT_SOCIAL_IMAGE]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${config.label} | World Clean Biz`,
+      description: config.description,
+      images: [DEFAULT_SOCIAL_IMAGE]
     }
   };
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import "../styles/trust.css";
 
 export const metadata: Metadata = {
   title: "Inquiry Received",
@@ -50,7 +51,7 @@ const nextSteps = [
 
 export default function InquiryReceivedPage() {
   return (
-    <main className="trust-page trust-received-page">
+    <div className="trust-page trust-received-page">
       <section className="trust-hero trust-received-hero">
         <div className="container trust-hero-inner">
           <span className="trust-status-mark" aria-hidden="true">✓</span>
@@ -108,6 +109,6 @@ export default function InquiryReceivedPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

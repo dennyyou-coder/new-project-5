@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import "../styles/about.css";
 import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
 import { TallyButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {
-  title: "About Denny You | Cleaning Industry Entrepreneur & Connector",
+  title: "About Denny You | Cleaning Industry",
   description:
-    "Meet Denny You, founder of World Clean Biz, organizer of WCB Expo and a cleaning industry entrepreneur connected across products, supply chains, buyers and markets.",
+    "Meet Denny You, founder of World Clean Biz and organizer of WCB Expo, connecting cleaning products, supply chains, buyers and global markets.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Denny You | World Clean Biz",

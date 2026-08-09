@@ -3,6 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 import sharp from "sharp";
 import {
   buildBrandCompetitorReferences,
@@ -2078,10 +2079,7 @@ test("home-appliance batch six profiles publish independently with verified enti
   assert.deepEqual(profilesBySlug.get("gorenje").aliases, ["GORENJE"]);
   assert.deepEqual(profilesBySlug.get("supor").aliases, ["Supor", "苏泊尔"]);
 
-  const brandStyles = fs.readFileSync(
-    path.join(process.cwd(), "app", "globals.css"),
-    "utf8"
-  );
+  const brandStyles = readRouteStyles("brands.css");
   assert.match(brandStyles, /\.brand-logo--rowenta/);
 
   assert.deepEqual(membershipsFor("rowenta"), [

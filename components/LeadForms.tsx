@@ -14,6 +14,46 @@ import {
 } from "@/lib/leadTracking";
 
 const popupWidth = 620;
+const tallyWidgetSrc = "https://tally.so/widgets/embed.js";
+let tallyWidgetPromise: Promise<void> | undefined;
+
+function loadTallyWidget() {
+  if (window.Tally?.openPopup) return Promise.resolve();
+  if (tallyWidgetPromise) return tallyWidgetPromise;
+
+  tallyWidgetPromise = new Promise<void>((resolve, reject) => {
+    const existing = document.querySelector<HTMLScriptElement>(
+      `script[src="${tallyWidgetSrc}"]`
+    );
+    const script = existing || document.createElement("script");
+    const timeout = window.setTimeout(
+      () => reject(new Error("Tally widget timed out")),
+      5000
+    );
+    const finish = (callback: () => void) => {
+      window.clearTimeout(timeout);
+      callback();
+    };
+
+    script.addEventListener("load", () => finish(resolve), { once: true });
+    script.addEventListener(
+      "error",
+      () => finish(() => reject(new Error("Tally widget failed to load"))),
+      { once: true }
+    );
+
+    if (!existing) {
+      script.src = tallyWidgetSrc;
+      script.async = true;
+      document.head.append(script);
+    }
+  }).catch((error) => {
+    tallyWidgetPromise = undefined;
+    throw error;
+  });
+
+  return tallyWidgetPromise;
+}
 
 type TallySubmitPayload = {
   responseId?: string;
@@ -166,7 +206,7 @@ export function TallyButton({
     tallyForm.formType
   ]);
 
-  function openTallyForm() {
+  async function openTallyForm() {
     const attribution = createLeadAttribution({
       formType: tallyForm.formType,
       sourcePage: window.location.pathname,
@@ -195,6 +235,12 @@ export function TallyButton({
         error_reason: "missing_form_configuration"
       });
       return;
+    }
+
+    try {
+      await loadTallyWidget();
+    } catch {
+      // The direct form URL below remains available if the widget is blocked.
     }
 
     if (window.Tally?.openPopup) {

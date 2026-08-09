@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { ComponentDirectoryCard } from "@/components/component-intelligence/ComponentDirectoryCard";
 import { getPublishedComponentProfiles } from "@/lib/componentProfiles";
+import { DEFAULT_SOCIAL_IMAGE } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Cleaning Equipment Component Intelligence",
   description: "Evidence-backed profiles of cleaning-equipment components, specifications, failure boundaries and buyer verification actions.",
-  alternates: { canonical: "/components" }
+  alternates: { canonical: "/components" },
+  openGraph: { title: "Cleaning Equipment Component Intelligence", description: "Evidence-backed profiles of cleaning-equipment components, specifications, failure boundaries and buyer verification actions.", type: "website", url: "/components", images: [DEFAULT_SOCIAL_IMAGE] },
+  twitter: { card: "summary_large_image", title: "Cleaning Equipment Component Intelligence", description: "Evidence-backed profiles of cleaning-equipment components, specifications, failure boundaries and buyer verification actions.", images: [DEFAULT_SOCIAL_IMAGE] }
 };
 
 export default function ComponentDirectoryPage() {

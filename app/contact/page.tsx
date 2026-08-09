@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import "../styles/trust.css";
 import { TallyButton } from "@/components/LeadForms";
 import { IconBadge, InlineIcon } from "@/components/Icon";
 import { CONTACT_INQUIRIES } from "@/lib/inquiryConversion";
@@ -7,7 +8,7 @@ import { CONTACT_INQUIRIES } from "@/lib/inquiryConversion";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Share your cleaning industry question with World Clean Biz for sourcing support, market information, industry connections, WCB Expo interest, media cooperation, or business opportunities.",
+    "Contact World Clean Biz for sourcing support, market information, industry connections, WCB Expo, media cooperation or business opportunities.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact World Clean Biz",

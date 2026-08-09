@@ -1,10 +1,11 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const homeSource = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
 const headerSource = await readFile(new URL("../components/Header.tsx", import.meta.url), "utf8");
-const cssSource = await readFile(new URL("../app/globals.css", import.meta.url), "utf8");
+const cssSource = readRouteStyles("home.css");
 const updatesSource = await readFile(
   new URL("../components/HomeUpdatesForm.tsx", import.meta.url),
   "utf8"
@@ -44,7 +45,7 @@ test("homepage gives the confirmed 2026 WCB Expo an immediate visitor entry", ()
   assert.match(homeSource, /Plan Your Visit/);
   assert.match(homeSource, /className="home-v9-expo-campaign-content"/);
   assert.match(homeSource, /className="home-v9-expo-campaign-media"/);
-  assert.match(homeSource, /src="\/images\/expo\/wcb-expo-2026-hero\.png"/);
+  assert.match(homeSource, /src="\/images\/expo\/wcb-expo-2026-hero\.webp"/);
   assert.match(
     homeSource,
     /alt="WCB Expo visual showing cleaning appliances and an industry exhibition setting"/

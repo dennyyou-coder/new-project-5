@@ -1,15 +1,13 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const aboutSource = await readFile(
   new URL("../app/about/page.tsx", import.meta.url),
   "utf8"
 );
-const globalStyles = await readFile(
-  new URL("../app/globals.css", import.meta.url),
-  "utf8"
-);
+const globalStyles = readRouteStyles("about.css");
 
 test("About leads with Denny's organizer role and value-chain network", () => {
   assert.match(aboutSource, /Organizer Of WCB Expo/);

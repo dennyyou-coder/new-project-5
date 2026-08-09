@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import "./styles/home.css";
 import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
 import { TallyButton } from "@/components/LeadForms";
@@ -127,9 +128,30 @@ export default function HomePage() {
     getEditorialInsights(allInsights)
       .filter((article) => article.slug !== latestFounderSeries?.slug)
   );
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://worldcleanbiz.com/#organization",
+    name: "World Clean Biz",
+    url: "https://worldcleanbiz.com",
+    logo: "https://worldcleanbiz.com/brand/wcb-favicon-512.png",
+    founder: {
+      "@type": "Person",
+      name: "Denny You",
+      url: "https://worldcleanbiz.com/about"
+    }
+  };
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://worldcleanbiz.com/#website",
+    name: "World Clean Biz",
+    url: "https://worldcleanbiz.com",
+    publisher: { "@id": "https://worldcleanbiz.com/#organization" }
+  };
 
   return (
-    <main className="home-v9">
+    <div className="home-v9">
       <section className="home-v9-hero">
         <div className="home-v9-container home-v9-hero-grid">
           <div className="home-v9-hero-copy">
@@ -189,8 +211,10 @@ export default function HomePage() {
           </div>
           <div className="home-v9-expo-campaign-media">
             <img
-              src="/images/expo/wcb-expo-2026-hero.png"
+              src="/images/expo/wcb-expo-2026-hero.webp"
               alt="WCB Expo visual showing cleaning appliances and an industry exhibition setting"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
@@ -211,7 +235,7 @@ export default function HomePage() {
           <div className="home-v9-category-grid">
             {heroProducts.map((product, index) => (
               <article key={product.label}>
-                <img src={product.image} alt={product.alt} />
+                <img src={product.image} alt={product.alt} loading="lazy" decoding="async" />
                 <div>
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <h3>{product.label}</h3>
@@ -265,7 +289,7 @@ export default function HomePage() {
             {pathways.map((pathway) => (
               <article key={pathway.number}>
                 <div className="home-v9-pathway-media">
-                  <img src={pathway.image} alt={pathway.imageAlt} />
+                  <img src={pathway.image} alt={pathway.imageAlt} loading="lazy" decoding="async" />
                   <span>{pathway.number}</span>
                   <strong>{pathway.eyebrow}</strong>
                 </div>
@@ -305,15 +329,15 @@ export default function HomePage() {
           </div>
           <div className="home-v9-trust-gallery">
             <figure className="home-v9-trust-main">
-              <img src="/images/site-refresh/home/trust-denny-industry.webp" alt="Denny speaking at an industry forum" />
+              <img src="/images/site-refresh/home/trust-denny-industry.webp" alt="Denny speaking at an industry forum" loading="lazy" decoding="async" />
               <figcaption>Denny You · Founder, World Clean Biz · Organizer, WCB Expo</figcaption>
             </figure>
             <figure>
-              <img src="/images/site-refresh/real/modern-factory.webp" alt="Modern manufacturing and supply-chain environment" />
+              <img src="/images/site-refresh/real/modern-factory.webp" alt="Modern manufacturing and supply-chain environment" loading="lazy" decoding="async" />
               <figcaption>Supplier Network</figcaption>
             </figure>
             <figure>
-              <img src="/images/site-refresh/real/exhibition-hall.webp" alt="International industry audience in a modern venue" />
+              <img src="/images/site-refresh/real/exhibition-hall.webp" alt="International industry audience in a modern venue" loading="lazy" decoding="async" />
               <figcaption>Industry Access</figcaption>
             </figure>
           </div>
@@ -394,7 +418,7 @@ export default function HomePage() {
             <div className="home-v9-article-grid">
               {featuredInsights.map((article, index) => (
                 <Link className="home-v9-article" href={`/blog/${article.slug}`} key={article.slug}>
-                  <img src={imageFor(article, index)} alt={`${article.title} cover image`} />
+                  <img src={imageFor(article, index)} alt={`${article.title} cover image`} width={article.coverWidth} height={article.coverHeight} loading="lazy" decoding="async" />
                   <div>
                     <span>{article.category}</span>
                     <h3>{article.title}</h3>
@@ -429,6 +453,12 @@ export default function HomePage() {
           <HomeUpdatesForm />
         </div>
       </section>
-    </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([organizationSchema, websiteSchema])
+        }}
+      />
+    </div>
   );
 }

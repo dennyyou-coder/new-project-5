@@ -8,19 +8,10 @@ import {
   getLatestSeriesInsight
 } from "@/lib/insightCollections";
 
-type SearchParams = Promise<Record<string, string | string[] | undefined>>;
-
 const siteUrl = "https://worldcleanbiz.com";
 const featuredSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 
-export async function generateMetadata({ searchParams }: { searchParams?: SearchParams }): Promise<Metadata> {
-  const resolvedSearchParams = searchParams ? await searchParams : {};
-  const hasQueryParams = Object.values(resolvedSearchParams).some((value) => {
-    if (Array.isArray(value)) return value.length > 0;
-    return typeof value !== "undefined";
-  });
-
-  return {
+export const metadata: Metadata = {
     title: "Blog",
     description:
       "Original World Clean Biz cleaning industry analysis and practical guides for product, sourcing and market decisions.",
@@ -42,17 +33,8 @@ export async function generateMetadata({ searchParams }: { searchParams?: Search
         "Original cleaning industry analysis and practical guides for buyers, brands, distributors and manufacturers.",
       images: ["/images/industry/about-forum-stage-2025.jpg"]
     },
-    robots: hasQueryParams
-      ? {
-          index: false,
-          follow: true
-        }
-      : {
-          index: true,
-          follow: true
-        }
-  };
-}
+    robots: { index: true, follow: true }
+};
 
 export default function InsightsPage() {
   const allArticles = getInsights();

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBlogSeriesPageData, getBlogSeriesSlugs } from "@/lib/blogSeries";
 import { getInsights } from "@/lib/content";
+import { seoDescription, seoTitle } from "@/lib/seo";
 
 type PageParams = Promise<{ series: string }>;
 
@@ -43,18 +44,19 @@ export async function generateMetadata({
     return {};
   }
 
-  const description = descriptionFor(series, data.title);
+  const title = seoTitle(data.title);
+  const description = seoDescription(descriptionFor(series, data.title));
   const latestEpisode = data.episodes.at(-1);
   const canonical = `/blog/series/${series}`;
 
   return {
-    title: data.title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical
     },
     openGraph: {
-      title: data.title,
+      title,
       description,
       type: "website",
       url: canonical,
@@ -62,7 +64,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: data.title,
+      title,
       description,
       images: latestEpisode?.coverImage ? [latestEpisode.coverImage] : []
     }

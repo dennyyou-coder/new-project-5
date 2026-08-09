@@ -3,6 +3,7 @@ import path from "node:path";
 import { normalizeCategory } from "@/lib/categories";
 import { normalizeBrandSlugs } from "@/lib/brands";
 import type { ContentClass, GuideType } from "@/lib/guideTaxonomy";
+import imageDimensions from "@/lib/generated/image-dimensions.json" with { type: "json" };
 
 export type Insight = {
   slug: string;
@@ -12,6 +13,7 @@ export type Insight = {
   metaDescription: string;
   date: string;
   publishedAt: string;
+  updatedAt: string;
   sortDate: string;
   author: string;
   category: string;
@@ -24,6 +26,8 @@ export type Insight = {
   takeaways: string[];
   coverImage?: string;
   coverAlt?: string;
+  coverWidth?: number;
+  coverHeight?: number;
   youtubeId?: string;
   series?: string;
   seriesTitle?: string;
@@ -106,6 +110,10 @@ export function getInsights(): Insight[] {
       const excerpt = String(data.excerpt || data.description || makeExcerpt(content));
       const metaDescription = String(data.meta_description || data.description || excerpt);
       const coverImage = data.coverImage || data.cover_image;
+      const resolvedCoverImage = coverImage ? String(coverImage) : firstMarkdownImage(content);
+      const coverDimensions = resolvedCoverImage
+        ? localImageDimensions(resolvedCoverImage)
+        : undefined;
 
       return [{
         slug,
@@ -115,6 +123,7 @@ export function getInsights(): Insight[] {
         metaDescription,
         date: String(data.date || ""),
         publishedAt: String(data.publishedAt || data.date || ""),
+        updatedAt: String(data.updatedAt || data.updated_at || data.publishedAt || data.date || ""),
         sortDate: String(data.sortDate || data.publishedAt || data.date || ""),
         author: String(data.author || "Denny You"),
         category: normalizeCategory(String(data.category || "")),
@@ -125,8 +134,10 @@ export function getInsights(): Insight[] {
         visualPriority: Number(data.visualPriority || 0),
         readingTime: String(data.readingTime || estimateReadingTime(content)),
         takeaways: Array.isArray(data.takeaways) ? data.takeaways : [],
-        coverImage: coverImage ? String(coverImage) : firstMarkdownImage(content),
+        coverImage: resolvedCoverImage,
         coverAlt: data.cover_alt ? String(data.cover_alt) : undefined,
+        coverWidth: coverDimensions?.width,
+        coverHeight: coverDimensions?.height,
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
         series: data.series ? String(data.series) : undefined,
         seriesTitle: data.series_title ? String(data.series_title) : undefined,
@@ -325,6 +336,15 @@ export function markdownToHtml(markdown: string) {
     };
   }
 
+  function imageAttributes(src: string) {
+    const dimensions = localImageDimensions(src);
+    const size = dimensions
+      ? ` width="${dimensions.width}" height="${dimensions.height}"`
+      : "";
+
+    return ` loading="lazy" decoding="async"${size}`;
+  }
+
   function isTableDivider(line: string) {
     return /^\|?[\s:-]+\|[\s|:-]*$/.test(line.trim());
   }
@@ -405,7 +425,7 @@ export function markdownToHtml(markdown: string) {
         html.push(`<div class="article-inline-image-grid">`);
         for (const image of images) {
           html.push(
-            `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}" />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
+            `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}"${imageAttributes(image.src)} />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
           );
         }
         html.push(`</div>`);
@@ -413,7 +433,7 @@ export function markdownToHtml(markdown: string) {
       } else {
         const image = images[0];
         html.push(
-          `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}" />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
+          `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}"${imageAttributes(image.src)} />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
         );
       }
     } else if (trimmed.startsWith("> ")) {
@@ -433,6 +453,13 @@ export function markdownToHtml(markdown: string) {
 
   closeList();
   return html.join("\n");
+}
+
+function localImageDimensions(src: string) {
+  if (!src.startsWith("/") || src.startsWith("//")) return undefined;
+
+  const cleanSrc = src.split(/[?#]/, 1)[0];
+  return (imageDimensions as Record<string, { width: number; height: number }>)[cleanSrc];
 }
 
 function estimateReadingTime(content: string) {

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const read = (path) =>
   readFile(new URL(`../${path}`, import.meta.url), "utf8").catch(() => "");
@@ -9,7 +10,7 @@ const [landing, category, directory, css] = await Promise.all([
   read("app/guides/page.tsx"),
   read("app/guides/[type]/page.tsx"),
   read("components/ContentDirectory.tsx"),
-  read("app/globals.css")
+  Promise.resolve(readRouteStyles("content-directories.css"))
 ]);
 const [header, footer, sitemap] = await Promise.all([
   read("components/Header.tsx"),

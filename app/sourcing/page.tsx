@@ -6,7 +6,7 @@ import { SourcingOpportunityCard } from "@/components/SourcingOpportunityCard";
 import { SOURCING_CATEGORIES } from "@/lib/inquiryConversion";
 
 export const metadata: Metadata = {
-  title: "Cleaning Product Opportunities & China Sourcing",
+  title: "Cleaning Product Sourcing",
   description:
     "Discover emerging cleaning product opportunities with Denny You, then develop, source and deliver market-ready OEM/ODM products from China.",
   alternates: { canonical: "/sourcing" },

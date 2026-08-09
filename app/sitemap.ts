@@ -17,9 +17,16 @@ import {
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
 
 const baseUrl = "https://worldcleanbiz.com";
-const lastModified = new Date("2026-06-03");
-const sourcingProductPublishedAt = new Date("2026-07-12T00:00:00+08:00");
 const guideRoutes = GUIDE_TYPE_CONFIG.map(({ href }) => href);
+
+function wcbDate(value?: string) {
+  if (!value) return undefined;
+  const parsed = /^\d{4}-\d{2}-\d{2}$/.test(value)
+    ? new Date(`${value}T00:00:00+08:00`)
+    : new Date(value);
+
+  return Number.isNaN(parsed.getTime()) ? undefined : parsed;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const insights = getInsights();
@@ -46,17 +53,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reports",
     "/wcb-expo",
     "/about",
-    "/contact"
+    "/contact",
+    "/quality-compliance"
   ];
 
   return [
-    ...staticRoutes.map((route) => ({
-      url: `${baseUrl}${route}`,
-      lastModified: route.startsWith("/sourcing/") ? sourcingProductPublishedAt : lastModified
-    })),
+    ...staticRoutes.map((route) => ({ url: `${baseUrl}${route}` })),
     ...getBlogSeriesSlugs(insights).map((series) => ({
       url: `${baseUrl}/blog/series/${series}`,
-      lastModified
+      lastModified: undefined
     })),
     ...buildBrandSitemapEntries(profiles, baseUrl),
     ...buildBrandCategorySitemapEntries(profiles, baseUrl),
@@ -64,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...buildComponentSitemapEntries(componentProfiles, baseUrl),
     ...insights.map((article) => ({
       url: `${baseUrl}/blog/${article.slug}`,
-      lastModified: article.publishedAt ? new Date(article.publishedAt) : article.date ? new Date(article.date) : new Date()
+      lastModified: wcbDate(article.updatedAt || article.publishedAt || article.date)
     }))
   ];
 }

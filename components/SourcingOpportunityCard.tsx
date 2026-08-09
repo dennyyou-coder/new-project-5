@@ -63,7 +63,7 @@ export function SourcingOpportunityCard({
       onClick={() => trackLeadEvent("cta_click", getAttribution(item))}
     >
       <span className="sourcing-opportunity-category-image">
-        <img src={item.image} alt={`${item.title} opportunity area`} />
+        <img src={item.image} alt={`${item.title} opportunity area`} loading="lazy" decoding="async" />
       </span>
       <span className="sourcing-opportunity-category-copy">
         <span>

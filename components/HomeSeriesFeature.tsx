@@ -20,6 +20,8 @@ export function HomeSeriesFeature({ article }: { article: Insight }) {
         <img
           src={article.coverImage || fallbackCover}
           alt={article.coverAlt || `${seriesTitle} cover`}
+          width={article.coverWidth}
+          height={article.coverHeight}
           fetchPriority="high"
           decoding="async"
         />

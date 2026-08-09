@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const componentSource = await readFile(
   new URL("../components/BlogLanding.tsx", import.meta.url),
@@ -10,10 +11,7 @@ const headerSource = await readFile(
   new URL("../components/Header.tsx", import.meta.url),
   "utf8"
 );
-const cssSource = await readFile(
-  new URL("../app/globals.css", import.meta.url),
-  "utf8"
-);
+const cssSource = readRouteStyles("content-directories.css");
 
 test("article cards are ordinary whole-card links", () => {
   assert.match(componentSource, /className="blog-home-card"/);

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 async function source(path) {
   return readFile(new URL(path, import.meta.url), "utf8").catch(() => "");
@@ -14,7 +15,7 @@ const opportunityCardSource = await source(
   "../components/SourcingOpportunityCard.tsx"
 );
 const productPageSource = await source("../components/SourcingProductPage.tsx");
-const stylesSource = await source("../app/globals.css");
+const stylesSource = readRouteStyles("sourcing.css");
 
 test("public newsletter and exhibitor forms do not depend on missing build variables", () => {
   assert.match(tallyFormsSource, /newsletter: defineForm\("xX1xZJ"/);

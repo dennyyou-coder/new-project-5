@@ -1,6 +1,5 @@
 import Link from "next/link";
-import type { Insight } from "@/lib/content";
-import type { DirectoryLink } from "@/components/ContentDirectory";
+import type { DirectoryArticle, DirectoryLink } from "@/components/ContentDirectory";
 
 const fallbackImages = [
   "/images/industry/about-forum-stage-2025.jpg",
@@ -14,11 +13,11 @@ export type DirectorySidebarProps = {
   navigationTitle: string;
   navigationLinks: DirectoryLink[];
   importantTitle: string;
-  importantArticles: Insight[];
+  importantArticles: DirectoryArticle[];
   importantMeta: "date" | "readingTime";
 };
 
-function imageFor(article: Insight, index: number) {
+function imageFor(article: DirectoryArticle, index: number) {
   return article.coverImage || fallbackImages[index % fallbackImages.length];
 }
 
@@ -85,6 +84,8 @@ export function DirectorySidebar({
                 <img
                   src={imageFor(article, index)}
                   alt=""
+                  width={article.coverWidth}
+                  height={article.coverHeight}
                   loading="lazy"
                   decoding="async"
                 />

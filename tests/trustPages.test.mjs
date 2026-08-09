@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
@@ -10,7 +11,7 @@ const [received, privacy, terms, quality, footer, styles] = await Promise.all([
   read("app/terms/page.tsx"),
   read("app/quality-compliance/page.tsx"),
   read("components/Footer.tsx"),
-  read("app/globals.css")
+  Promise.resolve(readRouteStyles("trust.css"))
 ]);
 
 test("inquiry received page closes the loop without claiming a submission", () => {
