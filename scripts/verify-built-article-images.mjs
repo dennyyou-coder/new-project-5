@@ -195,18 +195,12 @@ export async function verifyBuiltArticleImages(options = {}) {
           { slug, url }
         ));
       }
-      if (url) reportMissingCandidate(failures, paths.publicRoot, slug, attributes.src, "src");
-      if (!asset) continue;
+      if (!url) continue;
+      reportMissingCandidate(failures, paths.publicRoot, slug, attributes.src, "src");
       if (!attributes.width || !attributes.height) {
         failures.push(finding(
           "BUILT_DIMENSIONS_MISSING",
-          `${slug} ${url}: intrinsic dimensions actual ${String(attributes.width)}x${String(attributes.height)}; allowed ${asset.width}x${asset.height}.`,
-          { slug, url }
-        ));
-      } else if (Number(attributes.width) !== asset.width || Number(attributes.height) !== asset.height) {
-        failures.push(finding(
-          "BUILT_DIMENSIONS_MISMATCH",
-          `${slug} ${url}: intrinsic dimensions actual ${attributes.width}x${attributes.height}; allowed ${asset.width}x${asset.height}.`,
+          `${slug} ${url}: intrinsic dimensions actual ${String(attributes.width)}x${String(attributes.height)}; allowed positive width and height attributes.`,
           { slug, url }
         ));
       }
@@ -214,6 +208,22 @@ export async function verifyBuiltArticleImages(options = {}) {
         failures.push(finding(
           "BUILT_SIZES_MISSING",
           `${slug} ${url}: responsive sizes actual missing; allowed a context-appropriate sizes attribute.`,
+          { slug, url }
+        ));
+      }
+      if (!asset) {
+        failures.push(finding(
+          "BUILT_UNREGISTERED_LOCAL_IMAGE",
+          `${slug} ${url}: rendered local article image actual absent from manifest; allowed a registered primary article image.`,
+          { slug, url }
+        ));
+        continue;
+      }
+      if (attributes.width && attributes.height
+        && (Number(attributes.width) !== asset.width || Number(attributes.height) !== asset.height)) {
+        failures.push(finding(
+          "BUILT_DIMENSIONS_MISMATCH",
+          `${slug} ${url}: intrinsic dimensions actual ${attributes.width}x${attributes.height}; allowed ${asset.width}x${asset.height}.`,
           { slug, url }
         ));
       }

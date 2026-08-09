@@ -72,11 +72,14 @@ export function verifyArticleBudget(article, assets) {
   const urls = selectedArticleUrls(article);
   const requestedClass = article.budgetClass ?? "standard";
   const explicitClass = explicitImageBudget(article);
+  const bodyImageCount = article.body?.length ?? 0;
   let budgetClass = requestedClass;
-  if (requestedClass === "deep" && (explicitClass !== "deep" || (article.body?.length ?? 0) <= 8)) {
+  const ineligibleExplicitDeep = explicitClass === "deep" && bodyImageCount <= 8;
+  const unapprovedDeep = requestedClass === "deep" && explicitClass !== "deep";
+  if (ineligibleExplicitDeep || unapprovedDeep) {
     failures.push(finding(
       "DEEP_BUDGET_NOT_ELIGIBLE",
-      `${article.slug}: deep budget requires explicit image_budget: deep and more than 8 body images; actual image_budget ${String(explicitClass)} with ${(article.body?.length ?? 0)} body images, allowed explicit deep with minimum 9 body images.`,
+      `${article.slug}: deep budget requires explicit image_budget: deep and more than 8 body images; actual image_budget ${String(explicitClass)} with ${bodyImageCount} body images, allowed explicit deep with minimum 9 body images.`,
       { slug: article.slug }
     ));
     budgetClass = "standard";
@@ -208,24 +211,26 @@ function sanitizeStem(value) {
     .replace(/^-+|-+$/g, "");
 }
 
-function sourceLogicalOutput(basename) {
+function sourceLogicalKey(basename) {
   const extension = path.extname(basename);
   const match = basename.slice(0, -extension.length).match(/^(\d{2})-(.+)$/);
   if (!match) return null;
   const semantic = sanitizeStem(match[2]);
-  return semantic ? `${match[1]}-${semantic}.webp` : null;
+  return semantic ? `${match[1]}-${semantic}` : null;
 }
 
 function exactSourceFiles(sourceLibraryRoot, owners, url) {
-  if (!sourceLibraryRoot || path.posix.extname(url).toLowerCase() !== ".webp") return [];
-  const expected = path.posix.basename(url).toLowerCase();
+  const outputExtension = path.posix.extname(url).toLowerCase();
+  if (!sourceLibraryRoot || ![".webp", ".jpg", ".jpeg", ".png"].includes(outputExtension)) return [];
+  const expected = sourceLogicalKey(path.posix.basename(url));
+  if (!expected) return [];
   const files = [];
   for (const slug of [...(owners.get(url)?.slugs ?? [])].sort()) {
     const folder = path.join(sourceLibraryRoot, slug);
     if (!fs.existsSync(folder) || !fs.statSync(folder).isDirectory()) continue;
     for (const entry of fs.readdirSync(folder, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
       if (!entry.isFile() || !SOURCE_IMAGE.test(entry.name)) continue;
-      if (sourceLogicalOutput(entry.name)?.toLowerCase() === expected) files.push({ slug, file: path.join(folder, entry.name) });
+      if (sourceLogicalKey(entry.name) === expected) files.push({ slug, file: path.join(folder, entry.name) });
     }
   }
   return files;
@@ -473,7 +478,16 @@ export async function verifyManifestFiles(options = {}) {
     const inspected = await inspectManifestFile({ publicRoot: paths.publicRoot, url, recorded: asset, slug, failures });
     if (inspected) verifiedAssets += 1;
 
-    for (const source of exactSourceFiles(paths.sourceLibraryRoot, owners, url)) {
+    const exactSources = exactSourceFiles(paths.sourceLibraryRoot, owners, url);
+    if (exactSources.length > 1) {
+      const sourceFiles = exactSources.map((source) => source.file).sort();
+      failures.push(finding(
+        "AMBIGUOUS_EXTERNAL_SOURCE",
+        `${slug} ${url}: external source match actual ${sourceFiles.join(", ")}; allowed exactly one source with the same sequence and semantic stem.`,
+        { slug, url }
+      ));
+    }
+    for (const source of exactSources.length === 1 ? exactSources : []) {
       const actualSourceHash = sha256(source.file);
       if (HASH_PATTERN.test(String(asset.sourceHash ?? "")) && actualSourceHash !== asset.sourceHash) {
         failures.push(finding(

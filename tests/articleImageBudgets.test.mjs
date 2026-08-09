@@ -119,6 +119,28 @@ async function validManifestProject({ slug = "verified-article", mobile = true, 
   return { ...project, slug, cover, body, coverMobile, articleFile, manifest, exactSourceFile };
 }
 
+async function validPngChartSourceProject({ slug = "verified-chart" } = {}) {
+  const project = temporaryProject();
+  const chart = `/images/articles/${slug}/03-market-chart.png`;
+  const articleFile = path.join(project.contentRoot, "insights", `${slug}.mdx`);
+  fs.writeFileSync(articleFile, `---\ntitle: "Verified chart"\n---\n\n![Market chart](${chart})\n`);
+  await writeImage(publicFile(project, chart), { width: 1200, height: 800, format: "png", color: "#147a8c" });
+  const exactSourceFile = path.join(project.sourceLibraryRoot, slug, "03-market-chart.png");
+  await writeImage(exactSourceFile, { width: 1200, height: 800, format: "png", color: "#b35826" });
+
+  const inventory = discoverArticleInventory(project);
+  const processedAssets = {
+    [chart]: await manifestFacts(publicFile(project, chart), {
+      role: "chart",
+      kind: "graphic",
+      sourceHash: sha256(exactSourceFile)
+    })
+  };
+  const manifest = buildManifest({ inventory, processedAssets, processorVersion: "1" });
+  writeManifest(project, manifest);
+  return { ...project, slug, chart, articleFile, manifest, exactSourceFile };
+}
+
 function findingCodes(report) {
   return report.failures.map(({ code }) => code);
 }
@@ -219,6 +241,20 @@ test("deep budget eligibility requires an effective explicit deep class and more
   assert.match(implicit.failures.find(({ code }) => code === "ARTICLE_BUDGET_EXCEEDED").message, /actual 1800000 bytes.*allowed 1500000 bytes/);
 });
 
+test("aggregate verification blocks an explicit deep declaration with eight or fewer body images", async () => {
+  const project = await validManifestProject({ mobile: false });
+  const source = fs.readFileSync(project.articleFile, "utf8")
+    .replace('title: "Verified article"', 'title: "Verified article"\nimage_budget: deep');
+  fs.writeFileSync(project.articleFile, source);
+
+  const result = await verifyArticleImages(project);
+  const deepFinding = result.failures.find(({ code }) => code === "DEEP_BUDGET_NOT_ELIGIBLE");
+
+  assert.ok(deepFinding);
+  assert.equal(deepFinding.slug, project.slug);
+  assert.match(deepFinding.message, /actual image_budget deep with 1 body images.*minimum 9 body images/);
+});
+
 test("manifest verification accepts exact real facts and checks a present external source without requiring it in CI", async () => {
   const project = await validManifestProject({ exactSource: true });
   const present = await verifyManifestFiles(project);
@@ -234,6 +270,29 @@ test("manifest verification accepts exact real facts and checks a present extern
   await writeImage(project.exactSourceFile, { width: 1600, height: 900, format: "png", color: "#111111" });
   const changedSource = await verifyManifestFiles(project);
   assert.ok(findingCodes(changedSource).includes("SOURCE_HASH_MISMATCH"));
+});
+
+test("manifest verification checks an exact PNG chart source independent of publish extension", async () => {
+  const project = await validPngChartSourceProject();
+  const before = await verifyManifestFiles(project);
+  assert.deepEqual(before.failures, []);
+
+  await writeImage(project.exactSourceFile, { width: 1200, height: 800, format: "png", color: "#111111" });
+  const changed = await verifyManifestFiles(project);
+
+  assert.ok(findingCodes(changed).includes("SOURCE_HASH_MISMATCH"));
+});
+
+test("manifest verification rejects ambiguous exact external source matches", async () => {
+  const project = await validPngChartSourceProject({ slug: "ambiguous-chart" });
+  const duplicate = path.join(project.sourceLibraryRoot, project.slug, "03-Market Chart.jpg");
+  await writeImage(duplicate, { width: 1200, height: 800, format: "jpeg", color: "#147a8c" });
+
+  const result = await verifyManifestFiles(project);
+  const ambiguity = result.failures.find(({ code }) => code === "AMBIGUOUS_EXTERNAL_SOURCE");
+
+  assert.ok(ambiguity);
+  assert.match(ambiguity.message, /03-Market Chart\.jpg.*03-market-chart\.png|03-market-chart\.png.*03-Market Chart\.jpg/);
 });
 
 test("manifest verification reports stale facts, output drift, inventory drift, missing mobile files, and nondeterministic serialization", async (t) => {
@@ -381,7 +440,7 @@ function builtHtml(project, overrides = {}) {
     attribute("src", project.body), attribute("sizes", "(max-width: 800px) calc(100vw - 32px), 900px"),
     attribute("width", body.width), attribute("height", body.height), attribute("loading", "lazy")
   ].join(" ");
-  return `<!doctype html><html><head><link rel="canonical" href="${canonical}"/><meta property="og:image" content="${ogImage}"/></head><body><header><img src="/logo.svg" fetchpriority="high"/></header><article class="article-prose blog-article-main"><figure class="blog-article-cover"><img ${coverAttributes}/></figure><div><figure class="article-inline-image"><img ${bodyAttributes}/></figure></div><footer><img src="/author.webp" loading="lazy"/></footer></article></body></html>`;
+  return `<!doctype html><html><head><link rel="canonical" href="${canonical}"/><meta property="og:image" content="${ogImage}"/></head><body><header><img src="/logo.svg" fetchpriority="high"/></header><article class="article-prose blog-article-main"><figure class="blog-article-cover"><img ${coverAttributes}/></figure><div><figure class="article-inline-image"><img ${bodyAttributes}/></figure>${overrides.extraContent ?? ""}</div><footer><img src="/author.webp" loading="lazy"/></footer></article></body></html>`;
 }
 
 function writeBuiltArticle(project, html) {
@@ -401,6 +460,36 @@ test("built HTML verification accepts the real Next 15 layout and scopes priorit
 
   assert.deepEqual(result.failures, []);
   assert.deepEqual(result.summary, { articles: 1, articleImages: 2, responsiveImages: 1 });
+});
+
+test("built HTML verification blocks a rendered local article image absent from the manifest", async () => {
+  const project = await validManifestProject();
+  const unregistered = `/images/articles/${project.slug}/99-unregistered.webp`;
+  await writeImage(publicFile(project, unregistered), { width: 900, height: 600 });
+  writeBuiltArticle(project, builtHtml(project, {
+    extraContent: `<figure class="article-inline-image"><img src="${unregistered}" width="900" height="600" sizes="900px" loading="lazy"/></figure>`
+  }));
+
+  const result = await verifyBuiltArticleImages(project);
+  const finding = result.failures.find(({ code }) => code === "BUILT_UNREGISTERED_LOCAL_IMAGE");
+
+  assert.ok(finding);
+  assert.equal(finding.url, unregistered);
+});
+
+test("built HTML verification checks dimensions and sizes before rejecting an unregistered local image", async () => {
+  const project = await validManifestProject();
+  const unregistered = `/images/articles/${project.slug}/99-unregistered.webp`;
+  await writeImage(publicFile(project, unregistered), { width: 900, height: 600 });
+  writeBuiltArticle(project, builtHtml(project, {
+    extraContent: `<figure class="article-inline-image"><img src="${unregistered}" loading="lazy"/></figure>`
+  }));
+
+  const result = await verifyBuiltArticleImages(project);
+
+  assert.ok(findingCodes(result).includes("BUILT_UNREGISTERED_LOCAL_IMAGE"));
+  assert.ok(findingCodes(result).includes("BUILT_DIMENSIONS_MISSING"));
+  assert.ok(findingCodes(result).includes("BUILT_SIZES_MISSING"));
 });
 
 test("built HTML verification reports dimensions, priority, laziness, responsive candidates, canonical, and primary social drift", async (t) => {
