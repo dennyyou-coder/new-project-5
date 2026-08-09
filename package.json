@@ -22,6 +22,8 @@
     "test:asset-performance": "node --test tests/assetPerformanceAudit.test.mjs",
     "verify:asset-budgets": "node scripts/verify-built-asset-budgets.mjs",
     "prepare:article-images": "node scripts/prepare-article-images.mjs",
+    "verify:article-images": "node scripts/verify-article-images.mjs",
+    "verify:built-article-images": "node scripts/verify-built-article-images.mjs",
     "verify:sourcing-seo": "node scripts/verify-sourcing-seo.mjs",
     "verify:content-classification": "node scripts/verify-insight-classification.mjs"
   },
