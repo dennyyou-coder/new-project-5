@@ -7,6 +7,10 @@ import {
 import { buildBrandCategorySitemapEntries } from "@/lib/brandCategories";
 import { getInsights } from "@/lib/content";
 import {
+  buildComponentSitemapEntries,
+  getPublishedComponentProfiles
+} from "@/lib/componentProfiles";
+import {
   buildEquipmentSitemapEntries,
   getPublishedEquipmentProfiles
 } from "@/lib/equipment";
@@ -22,12 +26,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const profiles = getPublishedBrandProfiles(insights);
   const publishedBrandSlugs = new Set(profiles.map(({ slug }) => slug));
   const equipmentProfiles = getPublishedEquipmentProfiles(publishedBrandSlugs);
+  const componentProfiles = getPublishedComponentProfiles();
   const staticRoutes = [
     "",
     "/blog",
     "/blog/archive",
     "/brands",
     ...(equipmentProfiles.length > 0 ? ["/equipment"] : []),
+    ...(componentProfiles.length > 0 ? ["/components"] : []),
     "/guides",
     ...guideRoutes,
     "/sourcing",
@@ -55,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...buildBrandSitemapEntries(profiles, baseUrl),
     ...buildBrandCategorySitemapEntries(profiles, baseUrl),
     ...buildEquipmentSitemapEntries(equipmentProfiles, baseUrl),
+    ...buildComponentSitemapEntries(componentProfiles, baseUrl),
     ...insights.map((article) => ({
       url: `${baseUrl}/blog/${article.slug}`,
       lastModified: article.publishedAt ? new Date(article.publishedAt) : article.date ? new Date(article.date) : new Date()

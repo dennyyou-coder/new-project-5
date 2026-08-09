@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import fs from "node:fs";
+import path from "node:path";
 import {
   buildComponentPageSchemas,
   buildComponentSitemapEntries,
@@ -123,4 +125,12 @@ test("published loader sitemap and schemas expose only safe semantics", () => {
   assert.match(schemaText, /Product/);
   assert.match(schemaText, /BreadcrumbList/);
   assert.doesNotMatch(schemaText, /Organization|Brand|offers|aggregateRating|manufacturer/);
+});
+
+test("site discovery integrates published components without hard-coding the pilot", () => {
+  const source = fs.readFileSync(path.join(process.cwd(), "app/sitemap.ts"), "utf8");
+  assert.match(source, /getPublishedComponentProfiles\(\)/);
+  assert.match(source, /componentProfiles\.length > 0 \? \["\/components"\] : \[\]/);
+  assert.match(source, /buildComponentSitemapEntries\(componentProfiles, baseUrl\)/);
+  assert.doesNotMatch(source, /vacuum-cleaner-motor/);
 });
