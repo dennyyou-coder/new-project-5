@@ -119,7 +119,7 @@ test("validator rejects provenance evidence and compatibility failures", () => {
 });
 
 test("published loader sitemap and schemas expose only safe semantics", () => {
-  assert.deepEqual(getPublishedComponentProfiles(), []);
+  assert.deepEqual(getPublishedComponentProfiles().map(({ slug }) => slug), ["vacuum-cleaner-motor"]);
   assert.deepEqual(buildComponentSitemapEntries([validProfile], "https://worldcleanbiz.com"), [{
     url: "https://worldcleanbiz.com/components/sample-motor",
     lastModified: "2026-08-09"
@@ -141,9 +141,9 @@ test("site discovery integrates published components without hard-coding the pil
 test("vacuum cleaner motor pilot meets evidence relationship and visual gates", async () => {
   const profile = getComponentProfiles().find((candidate) => candidate?.slug === "vacuum-cleaner-motor");
   assert.ok(profile);
-  assert.equal(profile.status, "draft");
+  assert.equal(profile.status, "published");
   assert.deepEqual(validateComponentProfile(profile), []);
-  assert.equal(getComponentPageData(profile.slug, { includeDrafts: false }), undefined);
+  assert.equal(getComponentPageData(profile.slug, { includeDrafts: false })?.slug, profile.slug);
   assert.equal(getComponentPageData(profile.slug, { includeDrafts: true })?.slug, profile.slug);
   assert.ok(profile.sources.length >= 5);
   assert.equal(profile.contentVisuals.length, 4);
