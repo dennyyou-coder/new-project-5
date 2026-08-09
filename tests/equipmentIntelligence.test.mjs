@@ -1025,6 +1025,70 @@ test("published fourteenth equipment batch is included in production sitemap dis
   }
 });
 
+test("fifteenth equipment batch meets published evidence relationship and visual gates", async () => {
+  const realPublishedBrandSlugs = new Set(
+    getPublishedBrandProfiles(getInsights()).map(({ slug }) => slug)
+  );
+  const profiles = getEquipmentProfiles();
+  const expectedBoundaries = new Map([
+    ["washer-dryer-combo", /household front-load cabinet.+washing.+tumble drying/i],
+    ["heat-pump-dryer", /household tumble dryer.+closed-loop refrigerant.+heat-pump/i],
+    ["dehumidifier", /portable household appliance.+moisture.+indoor air.+collect.+drain/i],
+  ]);
+
+  for (const [slug, boundary] of expectedBoundaries) {
+    const profile = profiles.find((candidate) => candidate?.slug === slug);
+    assert.ok(profile, `${slug} profile should exist`);
+    assert.equal(profile.status, "published");
+    assert.match(profile.definition, boundary);
+    assert.deepEqual(validateEquipmentProfile(profile, realPublishedBrandSlugs), []);
+    assert.ok(profile.sources.length >= 7);
+    assert.ok(profile.representativeModels.length >= 6);
+    assert.ok(profile.representativeModels.length <= 8);
+    assert.ok(new Set(profile.representativeModels.map(({ brandSlug }) => brandSlug)).size >= 4);
+    assert.equal(profile.componentStack.some((item) => "href" in item), false);
+    assert.match(profile.heroSourceUrl, /^https:\/\//);
+    assert.equal(profile.contentVisuals.length, 3);
+    assert.deepEqual(
+      new Set(profile.contentVisuals.map(({ placement }) => placement)),
+      new Set(["equipment-types", "application-fit", "component-stack"])
+    );
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 1);
+
+    const heroMetadata = await sharp(path.join(process.cwd(), "public", profile.heroImage)).metadata();
+    assert.equal(heroMetadata.format, "webp");
+    assert.ok((heroMetadata.width ?? 0) >= 1600);
+    assert.ok((heroMetadata.height ?? 0) >= 1000);
+
+    for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo")) {
+      assert.match(visual.sourceUrl, /^https:\/\//);
+      const metadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+      assert.equal(metadata.format, "webp");
+      assert.ok((metadata.width ?? 0) >= 1500);
+      assert.ok((metadata.height ?? 0) >= 900);
+    }
+
+    const diagram = profile.contentVisuals.find(({ visualType }) => visualType === "wcb-diagram");
+    const diagramSource = readFileSync(path.join(process.cwd(), "public", diagram.src), "utf8");
+    const mobileDiagramSource = readFileSync(path.join(process.cwd(), "public", diagram.mobileSrc), "utf8");
+    assert.match(diagramSource, /<svg/);
+    assert.match(diagramSource, /Family labels do not establish cross-model compatibility/);
+    assert.match(mobileDiagramSource, /<svg/);
+    assert.match(
+      mobileDiagramSource.replace(/<[^>]+>/g, " ").replace(/\s+/g, " "),
+      /Family labels do not establish cross-model compatibility/
+    );
+  }
+});
+
+test("published fifteenth equipment batch is included in production sitemap discovery", () => {
+  const urls = sitemap().map(({ url }) => url);
+  for (const slug of ["washer-dryer-combo", "heat-pump-dryer", "dehumidifier"]) {
+    assert.equal(urls.some((url) => url.endsWith(`/equipment/${slug}`)), true);
+  }
+});
+
 test("equipment layout avoids empty title columns and balances odd card grids", () => {
   const styles = readFileSync(path.join(process.cwd(), "app", "globals.css"), "utf8");
 
