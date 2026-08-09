@@ -73,6 +73,7 @@
 .component-intelligence-hero-media img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
 .component-intelligence-hero-media figcaption { padding: 13px 16px 16px; color: var(--component-muted); font-size: .83rem; }
 .component-intelligence-key-facts { margin-top: 32px; overflow: hidden; border: 1px solid var(--component-line); border-radius: 18px; background: #fff; }
+.component-intelligence-hero .component-intelligence-key-facts { color: var(--component-ink); }
 .component-intelligence-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .component-intelligence-nav a { padding: 8px 11px; border: 1px solid var(--component-line); border-radius: 999px; color: var(--component-ink); background: #fff; font-size: .78rem; font-weight: 750; }
 .component-intelligence-section { scroll-margin-top: 118px; }

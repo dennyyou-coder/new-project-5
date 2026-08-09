@@ -78,3 +78,14 @@ test("component styles provide dense desktop layouts and safe 390 px collapse", 
   assert.match(styles, /min-width:\s*0/);
   assert.match(styles, /overflow-wrap:\s*anywhere/);
 });
+
+test("light component surfaces reset text inherited from the dark hero", () => {
+  const source = read("app/globals.css");
+  const marker = source.indexOf("/* Component intelligence */");
+  assert.ok(marker >= 0);
+  const styles = source.slice(marker);
+  assert.match(
+    styles,
+    /\.component-intelligence-hero \.component-intelligence-key-facts\s*\{[^}]*color:\s*var\(--component-ink\)/s
+  );
+});
