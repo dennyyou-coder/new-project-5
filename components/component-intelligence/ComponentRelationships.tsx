@@ -1,0 +1,6 @@
+import { BrandDataTable } from "@/components/brands/BrandDataTable";
+import type { ComponentProfile } from "@/lib/componentProfiles";
+
+export function ComponentRelationships({ profile }: { profile: ComponentProfile }) {
+  return <section className="section component-intelligence-section" id="families"><div className="insights-page-container"><header><p className="eyebrow">Representative, not exhaustive</p><h2>Official motor product families</h2><p>These rows document manufacturer-published families. They do not establish a vacuum-brand customer, OEM, factory or compatibility relationship.</p></header><div className="component-intelligence-table"><BrandDataTable caption="Representative official motor families" columns={[{ key: "maker", label: "Manufacturer" }, { key: "family", label: "Family" }, { key: "architecture", label: "Architecture" }, { key: "application", label: "Declared application" }, { key: "specs", label: "Distinguishing specifications" }, { key: "scope", label: "Scope" }]} rows={profile.representativeFamilies.map((item) => ({ maker: item.manufacturer, family: item.familyName, architecture: item.architecture, application: item.applicationScope, specs: item.distinguishingSpecifications, scope: item.marketScope }))} /></div></div></section>;
+}
