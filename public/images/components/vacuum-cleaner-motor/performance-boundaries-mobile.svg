@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1200" viewBox="0 0 720 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Vacuum motor performance boundaries mobile diagram</title>
+  <desc id="desc">Vertical WCB diagram separating input power, airflow, sealed vacuum, air power and cleaning outcome.</desc>
+  <rect width="720" height="1200" rx="30" fill="#eef5f8"/>
+  <g font-family="Arial, sans-serif">
+    <text x="55" y="72" fill="#172d43" font-size="34" font-weight="700">Different values,</text><text x="55" y="112" fill="#172d43" font-size="34" font-weight="700">different boundaries</text>
+    <text x="55" y="158" fill="#587086" font-size="21">Do not turn them into one power score.</text>
+    <rect x="55" y="205" width="610" height="135" rx="24" fill="#fff" stroke="#b9ceda" stroke-width="3"/>
+    <text x="88" y="252" fill="#146b9c" font-size="20" font-weight="700">1 · ELECTRICAL INPUT</text><text x="88" y="300" fill="#172d43" font-size="28" font-weight="700">Watts, volts and amps supplied</text>
+    <path d="M360 350v45" stroke="#146b9c" stroke-width="8"/><path d="m342 380 18 24 18-24" fill="none" stroke="#146b9c" stroke-width="8"/>
+    <rect x="55" y="415" width="610" height="150" rx="24" fill="#ddecf4" stroke="#9bbdce" stroke-width="3"/>
+    <text x="88" y="462" fill="#146b9c" font-size="20" font-weight="700">2 · MOTOR + FAN OPERATING POINT</text><text x="88" y="510" fill="#172d43" font-size="26" font-weight="700">Speed, fan stage, losses and restriction</text>
+    <path d="M360 575v45" stroke="#146b9c" stroke-width="8"/><path d="m342 605 18 24 18-24" fill="none" stroke="#146b9c" stroke-width="8"/>
+    <rect x="55" y="640" width="290" height="155" rx="24" fill="#fff" stroke="#b9ceda" stroke-width="3"/>
+    <text x="85" y="690" fill="#146b9c" font-size="20" font-weight="700">AIRFLOW</text><text x="85" y="738" fill="#172d43" font-size="24" font-weight="700">Volume / time</text>
+    <rect x="375" y="640" width="290" height="155" rx="24" fill="#fff" stroke="#b9ceda" stroke-width="3"/>
+    <text x="405" y="690" fill="#146b9c" font-size="20" font-weight="700">SEALED VACUUM</text><text x="405" y="738" fill="#172d43" font-size="24" font-weight="700">Pressure potential</text>
+    <path d="M360 805v45" stroke="#146b9c" stroke-width="8"/><path d="m342 835 18 24 18-24" fill="none" stroke="#146b9c" stroke-width="8"/>
+    <rect x="55" y="870" width="610" height="120" rx="24" fill="#172d43"/>
+    <text x="88" y="918" fill="#9ad5ef" font-size="20" font-weight="700">AIR POWER</text><text x="88" y="962" fill="#fff" font-size="25" font-weight="700">Calculated at a stated point—not input power</text>
+    <rect x="55" y="1020" width="610" height="125" rx="24" fill="#fff0cf"/>
+    <text x="88" y="1064" fill="#7b5400" font-size="20" font-weight="700">Cleaning outcome adds:</text><text x="88" y="1102" fill="#7b5400" font-size="19">nozzle, ducts, filter, seals, surface and test method.</text>
+  </g>
+</svg>
