@@ -21,6 +21,7 @@
     "test:seo-audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/seoPerformanceAudit.test.mjs",
     "test:asset-performance": "node --test tests/assetPerformanceAudit.test.mjs",
     "verify:asset-budgets": "node scripts/verify-built-asset-budgets.mjs",
+    "prepare:article-images": "node scripts/prepare-article-images.mjs",
     "generate:image-dimensions": "node scripts/generate-image-dimensions.mjs",
     "verify:sourcing-seo": "node scripts/verify-sourcing-seo.mjs",
     "verify:content-classification": "node scripts/verify-insight-classification.mjs"
