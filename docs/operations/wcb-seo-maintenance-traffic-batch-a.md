@@ -10,9 +10,9 @@ This release begins the locked troubleshooting-first traffic plan with three ind
 
 | Order | Locked title | Locked slug | Search intent | Status |
 |---:|---|---|---|---|
-| 1 | Robot Vacuum Not Charging? Dock, Contacts, Battery and Power Checks | `robot-vacuum-not-charging` | Diagnose a robot vacuum that reaches or sits on a dock but does not gain charge; explicitly separate docking/navigation from charging | `local_verified` |
-| 2 | Robot Vacuum Not Connecting to Wi-Fi? 2.4 GHz, App, Router and Reset Checks | `robot-vacuum-not-connecting-wifi` | Diagnose first-time or lost robot-vacuum Wi-Fi connectivity across model, phone, router and cloud stages | `local_verified` |
-| 3 | Why Is My Vacuum Cleaner Losing Suction? Filters, Blockages, Seals and Motor Checks | `vacuum-cleaner-losing-suction` | Diagnose category-level airflow restriction, leaks and poor pickup without creating brand/model doorway pages | `local_verified` |
+| 1 | Robot Vacuum Not Charging? Dock, Contacts, Battery and Power Checks | `robot-vacuum-not-charging` | Diagnose a robot vacuum that reaches or sits on a dock but does not gain charge; explicitly separate docking/navigation from charging | `published_verified` |
+| 2 | Robot Vacuum Not Connecting to Wi-Fi? 2.4 GHz, App, Router and Reset Checks | `robot-vacuum-not-connecting-wifi` | Diagnose first-time or lost robot-vacuum Wi-Fi connectivity across model, phone, router and cloud stages | `published_verified` |
+| 3 | Why Is My Vacuum Cleaner Losing Suction? Filters, Blockages, Seals and Motor Checks | `vacuum-cleaner-losing-suction` | Diagnose category-level airflow restriction, leaks and poor pickup without creating brand/model doorway pages | `published_verified` |
 
 ## Duplicate and intent decision
 
@@ -51,15 +51,15 @@ This release begins the locked troubleshooting-first traffic plan with three ind
 - Independent content, visual and release review: passed after one visual repair round.
 - Final synchronization with `origin/main`: passed after two stable remote checks at `9a1bf258b9274e2ed2eed1e99d729aeff057e0b5`.
 - One production build: passed; Next.js generated 636 static/dynamic routes with all three article paths present.
-- Preview: pending.
-- Production: pending.
+- Preview: Vercel `dpl_2VmKbZ4xiXqjRduWbvHDCAPXXXA3` READY for commit `ef47c594b819be3f4868c4204bafa3b6c23d1ab0`.
+- Production: Vercel `dpl_GyxV2uAAuxFCktP8iWxyDgmRAonJ` READY for merge commit `8aea179204aef7e2c498b034bca729607b4d787a`.
 
 ## Production evidence
 
-- PR: pending.
-- Squash merge: pending.
-- Git-linked Vercel production deployment: pending.
-- Live verification: pending.
+- PR: [#104](https://github.com/dennyyou-coder/new-project-5/pull/104), merged.
+- Squash merge: `8aea179204aef7e2c498b034bca729607b4d787a`.
+- Git-linked Vercel production deployment: `dpl_GyxV2uAAuxFCktP8iWxyDgmRAonJ`, READY.
+- Live verification: all three URLs returned 200 with correct title, H1, canonical and `2026-08-09`; all nine images returned 200; Maintenance Guides and sitemap contained all three slugs.
 
 ## Next locked queue
 
