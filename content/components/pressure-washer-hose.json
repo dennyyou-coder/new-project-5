@@ -1,0 +1,778 @@
+{
+  "status": "published",
+  "slug": "pressure-washer-hose",
+  "name": "Pressure Washer Hose",
+  "aliases": [
+    "high-pressure washer hose",
+    "pressure cleaning hose",
+    "power washer hose",
+    "high-pressure extension hose"
+  ],
+  "definition": "A pressure-washer hose profile covers the hose tube, reinforcement, cover, end fittings, couplings and documented pressure-temperature envelope between a cleaner, gun, reel or accessory; it does not make hoses interchangeable by diameter or connector appearance.",
+  "includedScope": [
+    "Consumer and professional high-pressure hose assemblies",
+    "Working pressure, temperature, length, reinforcement and fitting checks",
+    "Machine-to-gun and approved extension-hose applications"
+  ],
+  "excludedScope": [
+    "Hydraulic hose substitution",
+    "Field-made assemblies without manufacturer approval",
+    "Whole-machine pressure or cleaning-performance guarantees"
+  ],
+  "primaryApplications": [
+    "Cold-water pressure washers",
+    "Hot-water pressure washers",
+    "Professional wash systems",
+    "Approved hose extensions and reels"
+  ],
+  "headline": "A safe hose match combines rated pressure, temperature, reinforcement, length and exact end fittings.",
+  "description": "This profile separates hose construction, operating envelopes and machine/gun interface checks so buyers can compare documented pressure-washer hose families without relying on connector appearance.",
+  "metaDescription": "Pressure washer hose working pressure, temperature, reinforcement, fittings, length, safety boundaries and compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, electrical and control specification, mechanical and fluid or airflow interfaces, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/pressure-washer-hose/hero.webp",
+  "heroImageAlt": "Kärcher professional high-pressure washer hose assembly",
+  "heroImageCaption": "Official Kärcher image of hose 6.110-031.0 on a WCB canvas; the exact part page controls pressure, temperature and machine scope.",
+  "heroSourceUrl": "https://s1.kaercher-media.com/mam/61100310/mainproduct/90699/d0.jpg",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-hose/architecture-family.webp",
+      "alt": "Kärcher high-pressure hose assembly and end fittings",
+      "caption": "Official Kärcher product image on a WCB canvas, showing a professional 3/8-inch hose assembly within its named EASY!Lock scope.",
+      "sourceUrl": "https://s1.kaercher-media.com/mam/61100310/mainproduct/90699/d0.jpg"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-hose/performance-boundaries.svg",
+      "mobileSrc": "/images/components/pressure-washer-hose/performance-boundaries-mobile.svg",
+      "alt": "Pressure Washer Hose performance reporting boundary diagram",
+      "caption": "WCB reporting-boundary map: retain the stated unit, operating point, test method and product scope before comparing values.",
+      "sourceIds": [
+        "karcher-031",
+        "karcher-heavy",
+        "nilfisk-accessories",
+        "simpson-monster",
+        "iec-60335-2-79"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-hose/application-reference.webp",
+      "alt": "Simpson professional pressure washer hose coil",
+      "caption": "Official Simpson hose-family product image on a WCB canvas; verify the live product page and exact SKU because hose-family imagery may cover multiple lengths.",
+      "sourceUrl": "https://simpsoncleaning.com/wp-content/uploads/41028_front_hres-4.jpg"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-hose/compatibility-gate.svg",
+      "mobileSrc": "/images/components/pressure-washer-hose/compatibility-gate-mobile.svg",
+      "alt": "Pressure Washer Hose compatibility approval gate",
+      "caption": "WCB compatibility gate: an undocumented field stops approval rather than becoming a probable match.",
+      "sourceIds": [
+        "karcher-031",
+        "karcher-heavy",
+        "nilfisk-accessories",
+        "simpson-monster",
+        "iec-60335-2-79"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Pressure envelope",
+      "value": "Working pressure is model-specific and not the same as a generic burst claim",
+      "evidence": "Official pages publish different maximum pressure ratings across named hose assemblies.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "karcher-heavy",
+        "simpson-monster"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Temperature envelope",
+      "value": "Cold- and hot-water hoses have different published limits",
+      "evidence": "Kärcher and Simpson publish temperature boundaries for named products.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "simpson-armor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Interface boundary",
+      "value": "Machine, gun and coupling systems must all be in the published fit scope",
+      "evidence": "Official extension-hose pages list compatible machine families and connector systems.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-h10q",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Pressure conveyance",
+      "role": "Carries pressurized water from the pump system to the trigger gun or accessory.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60335-2-79",
+        "karcher-031"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Flexible routing",
+      "role": "Allows operator movement while respecting bend, abrasion and routing limits.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-service",
+        "simpson-monster"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Interface sealing",
+      "role": "End fittings and couplings retain pressure and connect the approved machine/gun system.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-h10q",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Thermal boundary",
+      "role": "Cover, tube and reinforcement must remain within the stated water and ambient temperature range.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-heavy",
+        "simpson-armor"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Consumer quick-connect hose",
+      "operatingPrinciple": "A compact thermoplastic or reinforced hose uses brand-specific quick connectors.",
+      "applicationBoundary": "Named consumer pressure-washer families.",
+      "benefits": [
+        "Fast user connection",
+        "Published model lists"
+      ],
+      "limitations": [
+        "Connector generations differ",
+        "Lower heat and pressure range than some professional hoses"
+      ],
+      "buyerCheck": "Match machine generation, gun, reel status, length and exact connector system.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-h10q",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Professional steel-reinforced hose",
+      "operatingPrinciple": "One or more steel reinforcement layers support a higher documented pressure and temperature envelope.",
+      "applicationBoundary": "Professional cold- or hot-water systems within the exact rating.",
+      "benefits": [
+        "Higher documented duty range",
+        "Abrasion-resistant constructions available"
+      ],
+      "limitations": [
+        "Heavier and less flexible",
+        "Fittings and bend radius remain critical"
+      ],
+      "buyerCheck": "Approve pressure, temperature, reinforcement, fitting standard, length and routing together.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-heavy",
+        "simpson-armor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Extension hose",
+      "operatingPrinciple": "An approved hose length is added inside a named machine and connector system.",
+      "applicationBoundary": "Manufacturer-listed extension applications only.",
+      "benefits": [
+        "Greater working radius"
+      ],
+      "limitations": [
+        "Added pressure loss and handling burden",
+        "Not every reel or gun accepts extensions"
+      ],
+      "buyerCheck": "Confirm allowed extension length, coupling sequence, reel use and machine series.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-accessories",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Maximum working pressure",
+      "purchasingMeaning": "Defines the documented operating ceiling",
+      "reportingBoundary": "Retain safety factor, temperature and assembly scope",
+      "comparisonCaution": "Do not substitute burst pressure or machine peak pressure.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "simpson-monster"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Maximum temperature",
+      "purchasingMeaning": "Separates cold- and hot-water service",
+      "reportingBoundary": "Rating can change with pressure and material",
+      "comparisonCaution": "Do not use a cold-water hose in hot-water service.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-heavy",
+        "simpson-armor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Length and internal diameter",
+      "purchasingMeaning": "Affects reach, flow loss and handling",
+      "reportingBoundary": "Couplings and reel routing add restrictions",
+      "comparisonCaution": "Longer is not automatically better.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "End fittings",
+      "purchasingMeaning": "Defines machine, gun and extension interface",
+      "reportingBoundary": "Thread name alone may omit seat, seal or quick-connect generation",
+      "comparisonCaution": "Verify both ends and seal design.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-h10q",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Consumer cold-water washer",
+      "wcbAssessment": "Use only the hose listed for the exact machine and gun generation.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-h10q",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Professional cold-water washer",
+      "wcbAssessment": "Professional fittings and working pressure must match the machine system.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "simpson-monster"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Hot-water washer",
+      "wcbAssessment": "Requires an assembly explicitly rated for the operating temperature and pressure.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-heavy",
+        "simpson-armor"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact hose part number",
+      "requiredMatch": "Current manufacturer number and revision",
+      "why": "A family can include different lengths, pressures and fittings.",
+      "buyerAction": "Document current manufacturer number and revision before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Pressure and temperature",
+      "requiredMatch": "Ratings at the intended operating condition",
+      "why": "Heat can reduce allowable pressure and service life.",
+      "buyerAction": "Document ratings at the intended operating condition before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-heavy",
+        "simpson-armor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Machine, gun and reel",
+      "requiredMatch": "Explicit compatibility for every connected device",
+      "why": "Correct hose ends can still be wrong for a reel or gun generation.",
+      "buyerAction": "Document explicit compatibility for every connected device before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-h10q",
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Condition and routing",
+      "requiredMatch": "No cuts, kinks, exposed reinforcement or coupling damage",
+      "why": "A damaged pressure hose can fail violently.",
+      "buyerAction": "Document no cuts, kinks, exposed reinforcement or coupling damage before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-service"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Leak at coupling",
+      "possibleCauses": [
+        "Damaged seal",
+        "Loose or mismatched fitting",
+        "Cracked ferrule"
+      ],
+      "safetyBoundary": "Depressurize the system before inspection; never search for pinhole leaks by hand.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-service"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Hose blister or exposed reinforcement",
+      "possibleCauses": [
+        "Abrasion",
+        "Overtemperature",
+        "Chemical attack",
+        "Kinking"
+      ],
+      "safetyBoundary": "Remove the hose from service; do not patch a high-pressure assembly.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-service",
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Reduced nozzle performance",
+      "possibleCauses": [
+        "Excess hose length",
+        "Internal restriction",
+        "Incorrect diameter",
+        "Coupling blockage"
+      ],
+      "safetyBoundary": "Depressurize before disconnecting components.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-accessories",
+        "karcher-031"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "6.110-031.0 professional hose",
+      "architecture": "3/8-inch professional hose assembly",
+      "applicationScope": "Named compatible professional machines",
+      "distinguishingSpecifications": [
+        "4565 psi",
+        "311°F",
+        "EASY!Lock"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "6.110-028.0 heavy-duty hose",
+      "architecture": "Double steel-reinforced professional hose",
+      "applicationScope": "Named professional systems",
+      "distinguishingSpecifications": [
+        "5800 psi",
+        "311°F"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-heavy"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "H 10 Q 2.643-633.0",
+      "architecture": "Consumer quick-connect hose",
+      "applicationScope": "Listed K4–K7 models from stated generations",
+      "distinguishingSpecifications": [
+        "10 m",
+        "180 bar",
+        "60°C"
+      ],
+      "marketScope": "International / United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-h10q"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Nilfisk",
+      "familyName": "7 m extension 106411346",
+      "architecture": "Consumer extension hose",
+      "applicationScope": "Listed Nilfisk series",
+      "distinguishingSpecifications": [
+        "7 m",
+        "Exact SKU 106411346"
+      ],
+      "marketScope": "United Kingdom",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Nilfisk",
+      "familyName": "Steel reinforced extension 6411048",
+      "architecture": "Steel-reinforced extension hose",
+      "applicationScope": "Official accessory-list scope",
+      "distinguishingSpecifications": [
+        "10 m family listing"
+      ],
+      "marketScope": "Global",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Simpson",
+      "familyName": "Monster 80398",
+      "architecture": "Professional pressure-washer hose",
+      "applicationScope": "Cold-water professional applications within rating",
+      "distinguishingSpecifications": [
+        "3/8 inch",
+        "50 ft",
+        "4500 psi",
+        "140°F"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-monster"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Simpson",
+      "familyName": "Armor 41115",
+      "architecture": "Hot-water hose assembly",
+      "applicationScope": "Hot-water professional applications within rating",
+      "distinguishingSpecifications": [
+        "200 ft",
+        "4500 psi",
+        "250°F"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-armor"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "Replacement sourcing",
+      "attributeToVerify": "Exact part, model/serial and interface scope",
+      "comparisonTrap": "Approving by appearance, family name or one rating",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "karcher-heavy",
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "New product design",
+      "attributeToVerify": "Operating envelope and integration specification",
+      "comparisonTrap": "Using a catalogue maximum outside its test boundary",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "karcher-heavy",
+        "nilfisk-accessories",
+        "simpson-monster",
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Aftermarket supplier qualification",
+      "attributeToVerify": "Traceability, test evidence and change control",
+      "comparisonTrap": "Treating a seller fit list as engineering approval",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-accessories",
+        "simpson-monster",
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact hose part number",
+      "reason": "A family can include different lengths, pressures and fittings.",
+      "buyerAction": "Approve current manufacturer number and revision in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "nilfisk-7m"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Pressure and temperature",
+      "reason": "Heat can reduce allowable pressure and service life.",
+      "buyerAction": "Approve ratings at the intended operating condition in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-heavy",
+        "simpson-armor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Machine, gun and reel",
+      "reason": "Correct hose ends can still be wrong for a reel or gun generation.",
+      "buyerAction": "Approve explicit compatibility for every connected device in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-h10q",
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Condition and routing",
+      "reason": "A damaged pressure hose can fail violently.",
+      "buyerAction": "Approve no cuts, kinks, exposed reinforcement or coupling damage in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-service"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-79",
+      "jurisdiction": "International",
+      "applicability": "Safety requirements for high-pressure cleaners within the standard's pressure and product scope; it is a whole-appliance boundary, not a hose certification claim.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-09",
+      "title": "Pressure Washer Hose comparison boundary documented",
+      "summary": "WCB consolidated current official pressure, temperature, fitting and machine-scope evidence without asserting universal hose interchangeability.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-031",
+        "karcher-heavy",
+        "nilfisk-accessories",
+        "simpson-monster",
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "karcher-031",
+      "title": "Pressure washer hose 6.110-031.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/pressure-washer-hose-61100310.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-heavy",
+      "title": "Heavy-duty pressure washer hose 6.110-028.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/pressure-washer-hose-heavy-duty-61100280.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-h10q",
+      "title": "H 10 Q high-pressure hose",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/h-10-q-high-pressure-hose-with-quick-connect-and-for-hose-reel-devices-26436330.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-accessories",
+      "title": "High-pressure washer accessories",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/consumer/high-pressure-washer-accessories/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-7m",
+      "title": "7 m extension hose 106411346",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://shop.nilfisk.com/en-en/products/uk-7m-hose",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "simpson-monster",
+      "title": "Monster hose 80398",
+      "publisher": "Simpson",
+      "sourceType": "manufacturer",
+      "url": "https://simpsoncleaning.com/products/monster-hose-80398/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "simpson-armor",
+      "title": "Armor hot-water hose 41115",
+      "publisher": "Simpson",
+      "sourceType": "manufacturer",
+      "url": "https://simpsoncleaning.com/products/armor-hotwater-hose-41115/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-service",
+      "title": "MC 9P and MC 10P service manual",
+      "publisher": "Nilfisk",
+      "sourceType": "service",
+      "url": "https://www.nilfisk.com/media/1jdbsmov/en-mc-9p-mc-10p-service-manual.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "iec-60335-2-79",
+      "title": "IEC 60335-2-79 high-pressure cleaner safety",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64779",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}

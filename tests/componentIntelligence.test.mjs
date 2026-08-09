@@ -119,7 +119,15 @@ test("validator rejects provenance evidence and compatibility failures", () => {
 });
 
 test("published loader sitemap and schemas expose only safe semantics", () => {
-  assert.deepEqual(getPublishedComponentProfiles().map(({ slug }) => slug), ["vacuum-cleaner-motor"]);
+  assert.deepEqual(getPublishedComponentProfiles().map(({ slug }) => slug), [
+    "floor-scrubber-battery",
+    "floor-scrubber-squeegee-blade",
+    "pressure-washer-hose",
+    "pressure-washer-pump",
+    "vacuum-cleaner-battery",
+    "vacuum-cleaner-filter",
+    "vacuum-cleaner-motor"
+  ]);
   assert.deepEqual(buildComponentSitemapEntries([validProfile], "https://worldcleanbiz.com"), [{
     url: "https://worldcleanbiz.com/components/sample-motor",
     lastModified: "2026-08-09"
@@ -173,4 +181,58 @@ test("vacuum cleaner motor pilot meets evidence relationship and visual gates", 
   const compatibility = fs.readFileSync(path.join(process.cwd(), "public/images/components/vacuum-cleaner-motor/compatibility-gate.svg"), "utf8");
   assert.match(compatibility, /Physical resemblance/);
   assert.match(compatibility, /matching wattage/);
+});
+
+test("component batch 02 meets evidence diversity and visual gates", async () => {
+  for (const slug of ["pressure-washer-pump", "vacuum-cleaner-filter", "floor-scrubber-battery"]) {
+    const profile = getComponentProfiles().find((candidate) => candidate?.slug === slug);
+    assert.ok(profile, `${slug} profile is required`);
+    assert.equal(profile.status, "published");
+    assert.deepEqual(validateComponentProfile(profile), []);
+    assert.equal(profile.contentVisuals.length, 4);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 2);
+    assert.ok(profile.sources.length >= 5);
+    assert.ok(profile.representativeFamilies.length >= 6 && profile.representativeFamilies.length <= 8);
+    assert.ok(new Set(profile.representativeFamilies.map(({ manufacturer }) => manufacturer)).size >= 3);
+
+    const hero = await sharp(path.join(process.cwd(), "public", profile.heroImage)).metadata();
+    assert.equal(hero.format, "webp");
+    assert.ok((hero.width ?? 0) >= 1600 && (hero.height ?? 0) >= 1000);
+    for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo")) {
+      const metadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+      assert.equal(metadata.format, "webp");
+      assert.ok((metadata.width ?? 0) >= 1500 && (metadata.height ?? 0) >= 900);
+      assert.match(visual.sourceUrl, /^https:\/\//);
+    }
+    for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram")) {
+      assert.match(fs.readFileSync(path.join(process.cwd(), "public", visual.src), "utf8"), /<svg/);
+      assert.match(fs.readFileSync(path.join(process.cwd(), "public", visual.mobileSrc), "utf8"), /<svg/);
+    }
+  }
+});
+
+test("component batch 03 meets evidence diversity and visual gates", async () => {
+  for (const slug of ["vacuum-cleaner-battery", "pressure-washer-hose", "floor-scrubber-squeegee-blade"]) {
+    const profile = getComponentProfiles().find((candidate) => candidate?.slug === slug);
+    assert.ok(profile, `${slug} profile is required`);
+    assert.equal(profile.status, "published");
+    assert.deepEqual(validateComponentProfile(profile), []);
+    assert.equal(profile.contentVisuals.length, 4);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 2);
+    assert.ok(profile.sources.length >= 5);
+    assert.ok(profile.representativeFamilies.length >= 6 && profile.representativeFamilies.length <= 8);
+    assert.ok(new Set(profile.representativeFamilies.map(({ manufacturer }) => manufacturer)).size >= 3);
+
+    const hero = await sharp(path.join(process.cwd(), "public", profile.heroImage)).metadata();
+    assert.equal(hero.format, "webp");
+    assert.ok((hero.width ?? 0) >= 1600 && (hero.height ?? 0) >= 1000);
+    for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo")) {
+      const metadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+      assert.equal(metadata.format, "webp");
+      assert.ok((metadata.width ?? 0) >= 1500 && (metadata.height ?? 0) >= 900);
+      assert.match(visual.sourceUrl, /^https:\/\//);
+    }
+  }
 });

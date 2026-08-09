@@ -1,0 +1,840 @@
+{
+  "status": "published",
+  "slug": "pressure-washer-pump",
+  "name": "Pressure Washer Pump",
+  "aliases": [
+    "high-pressure cleaner pump",
+    "pressure cleaning pump",
+    "triplex plunger pump",
+    "direct-drive pressure pump"
+  ],
+  "definition": "A pressure-washer pump profile covers the pressure-generating pump assembly and its documented drive, flow, pressure, inlet, thermal and control boundaries; it does not establish fit to a machine, engine, motor, unloader or hose system.",
+  "includedScope": [
+    "Axial-cam and triplex plunger pump families",
+    "Direct-drive gasoline and electric mounting arrangements",
+    "Flow, pressure, speed, power, inlet, port and unloader checks"
+  ],
+  "excludedScope": [
+    "Complete pressure-washer performance rankings",
+    "Repair or seal-replacement instructions",
+    "Unverified pump or engine interchangeability"
+  ],
+  "primaryApplications": [
+    "Consumer and professional cold-water pressure washers",
+    "Electric-motor pressure cleaning systems",
+    "Gas-engine direct-drive pressure washers",
+    "Selected commercial wash systems"
+  ],
+  "headline": "Matching PSI and GPM is not enough—the shaft, flange, speed, ports and control system must also match.",
+  "description": "This profile separates pump architecture, stated operating limits and exact integration checks so buyers can compare pressure-washer pumps without turning family-level data into a fit claim.",
+  "metaDescription": "Pressure washer pump types, PSI, GPM, RPM, drive interfaces, triplex families, failure boundaries and exact compatibility checks for sourcing.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, electrical and control specification, mechanical and fluid or airflow interfaces, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/pressure-washer-pump/hero.webp",
+  "heroImageAlt": "Cat Pumps 4DNX25GSI direct-drive triplex plunger pump",
+  "heroImageCaption": "Official Cat Pumps 4DNX25GSI product image placed on a WCB presentation canvas; no compatibility is implied.",
+  "heroSourceUrl": "https://www.catpumps.com/sites/default/files/products/images/pumps/4dnx25gsi.jpg",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-pump/architecture-family.webp",
+      "alt": "Comet ZWD Series pressure-washer pump",
+      "caption": "Official Comet ZWD Series product image on a WCB canvas. Series membership does not establish an exact machine fit.",
+      "sourceUrl": "https://www.cometpump.com/wp-content/uploads/2022/03/ZWD-635x635-1.jpg"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-pump/performance-boundaries.svg",
+      "mobileSrc": "/images/components/pressure-washer-pump/performance-boundaries-mobile.svg",
+      "alt": "Pressure Washer Pump performance reporting boundary diagram",
+      "caption": "WCB reporting-boundary map: retain the stated unit, operating point, test method and product scope before comparing values.",
+      "sourceIds": [
+        "cat-4dnx",
+        "general-ez4040",
+        "comet-zwd",
+        "iec-60335-2-79"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-pump/application-reference.webp",
+      "alt": "General Pump EZ Series direct-couple pump",
+      "caption": "Official General Pump EZ Series image on a WCB canvas, showing a gasoline-engine direct-couple family rather than a universal replacement.",
+      "sourceUrl": "https://www.generalpump.com/wp-content/uploads/2017/11/EZ3040G.jpg"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-pump/compatibility-gate.svg",
+      "mobileSrc": "/images/components/pressure-washer-pump/compatibility-gate-mobile.svg",
+      "alt": "Pressure Washer Pump compatibility approval gate",
+      "caption": "WCB compatibility gate: an undocumented field stops approval rather than becoming a probable match.",
+      "sourceIds": [
+        "cat-4dnx",
+        "general-ez4040",
+        "comet-zwd",
+        "iec-60335-2-79"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Hydraulic output",
+      "value": "Flow and pressure must be read at the stated pump speed and operating limit",
+      "evidence": "Cat Pumps, General Pump and Comet publish flow, pressure and rpm together for named models.",
+      "scope": "Named product pages only.",
+      "sourceIds": [
+        "cat-4dnx",
+        "general-ez4040",
+        "comet-zwd"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Drive boundary",
+      "value": "Gas-engine and electric-motor direct drives use different documented interfaces",
+      "evidence": "Cat 4DNX is documented for direct gas-engine mounting while Cat 4SP is documented for direct electric-motor mounting.",
+      "scope": "The two named Cat Pumps families only.",
+      "sourceIds": [
+        "cat-4dnx",
+        "cat-4sp"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Safety scope",
+      "value": "Machine safety is wider than pump pressure capability",
+      "evidence": "IEC 60335-2-79 covers high-pressure cleaners across stated pressure and drive scopes, not a pump-model certification by default.",
+      "scope": "IEC 60335-2-79:2021 scope.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Drive input",
+      "role": "Receives shaft power at the specified speed, direction and mounting interface.",
+      "evidence": "Official pump pages publish drive type, speed and mounting descriptions.",
+      "scope": "Named Cat and General Pump models.",
+      "sourceIds": [
+        "cat-4dnx",
+        "cat-4sp",
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Positive-displacement stage",
+      "role": "Plungers and valves displace water to create flow against system resistance.",
+      "evidence": "Cat and General identify named products as triplex plunger pumps.",
+      "scope": "Named product families only.",
+      "sourceIds": [
+        "cat-4dnx",
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Pressure control",
+      "role": "An unloader or system control manages bypass and operating pressure; its inclusion varies by configuration.",
+      "evidence": "General Pump distinguishes pump and Pumps Made Ready configurations; Comet tables identify unloader fields by model.",
+      "scope": "Named official configurations only.",
+      "sourceIds": [
+        "general-ez4040",
+        "comet-zwd"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Fluid and thermal boundary",
+      "role": "Inlet condition, water temperature and allowed chemistry affect seals, valves and service life.",
+      "evidence": "Manufacturer specifications publish inlet and maximum-fluid conditions for named models.",
+      "scope": "Exact model documentation controls.",
+      "sourceIds": [
+        "cat-4dnx",
+        "general-catalog"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Axial-cam pump",
+      "operatingPrinciple": "A swash or wobble arrangement drives pistons along the shaft axis.",
+      "applicationBoundary": "Common in compact integrated machines; exact construction and serviceability remain model-specific.",
+      "benefits": [
+        "Compact packaging",
+        "Direct integration potential"
+      ],
+      "limitations": [
+        "Often machine-specific",
+        "Service parts and duty limits vary"
+      ],
+      "buyerCheck": "Confirm exact model, shaft, mounting, inlet, unloader and rated duty.",
+      "evidence": "AR publishes compact pressure-washer pump series within its official product range.",
+      "scope": "AR product-range families only.",
+      "sourceIds": [
+        "ar-range"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Triplex plunger pump",
+      "operatingPrinciple": "Three plungers are driven from a crank mechanism through a manifold and valve set.",
+      "applicationBoundary": "Documented across professional direct-drive and belt-drive families.",
+      "benefits": [
+        "Published service data and operating limits",
+        "Multiple drive configurations"
+      ],
+      "limitations": [
+        "Same architecture does not mean same fit",
+        "Oil, seals and valves remain model-specific"
+      ],
+      "buyerCheck": "Match model, rpm, rotation, shaft, flange, ports, temperature and unloader arrangement.",
+      "evidence": "Cat, General Pump and Comet publish triplex plunger families with distinct specifications.",
+      "scope": "Named official families.",
+      "sourceIds": [
+        "cat-4dnx",
+        "general-ez4040",
+        "comet-zwd"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Direct-drive mounting",
+      "operatingPrinciple": "The pump shaft and flange couple directly to a gasoline engine or electric motor.",
+      "applicationBoundary": "Gas-engine and electric versions have different speed and interface requirements.",
+      "benefits": [
+        "Compact powertrain",
+        "Fewer external transmission parts"
+      ],
+      "limitations": [
+        "Shaft and flange errors prevent fit",
+        "Pump speed follows prime-mover speed"
+      ],
+      "buyerCheck": "Verify SAE or motor flange, shaft size, key, rotation and rated rpm from both sides.",
+      "evidence": "Cat and General Pump identify direct-drive mounting and published speeds for named products.",
+      "scope": "Named models only.",
+      "sourceIds": [
+        "cat-4dnx",
+        "cat-4sp",
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Maximum flow",
+      "purchasingMeaning": "Sets the documented volume boundary at the stated speed",
+      "reportingBoundary": "GPM/LPM and rpm must remain paired",
+      "comparisonCaution": "Do not compare flow without the stated pressure and speed.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "cat-4dnx"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Maximum discharge pressure",
+      "purchasingMeaning": "Sets the documented pressure ceiling",
+      "reportingBoundary": "PSI/bar is a limit, not proof of continuous duty",
+      "comparisonCaution": "Do not select only by the largest advertised PSI.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Pump speed",
+      "purchasingMeaning": "Controls the displacement rate and drive match",
+      "reportingBoundary": "Maximum or rated rpm and rotation must be explicit",
+      "comparisonCaution": "A lower engine or motor speed changes output.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "comet-zwd"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Drive power",
+      "purchasingMeaning": "Supports engine or motor sizing at the specified operating point",
+      "reportingBoundary": "GHP/HP/kW basis varies by source",
+      "comparisonCaution": "Do not infer required power from pressure alone.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Shaft and mounting",
+      "purchasingMeaning": "Defines the mechanical coupling",
+      "reportingBoundary": "Diameter, key, flange standard and orientation are separate fields",
+      "comparisonCaution": "Physical resemblance does not prove interface equivalence.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "cat-4dnx"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Ports and inlet conditions",
+      "purchasingMeaning": "Defines plumbing, feed and cavitation boundaries",
+      "reportingBoundary": "Thread standard, inlet pressure/vacuum and fluid temperature matter",
+      "comparisonCaution": "Do not adapt ports without reviewing flow restriction and pressure rating.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Gas-engine direct-drive washer",
+      "wcbAssessment": "Candidate only when gasoline flange, shaft, rotation, rpm and required power are documented.",
+      "assessment": "Candidate only when gasoline flange, shaft, rotation, rpm and required power are documented.",
+      "basis": "Cat 4DNX and General EZ publish gasoline direct-couple configurations.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Cat 4DNX and General EZ publish gasoline direct-couple configurations.",
+      "scope": "Named families, not all engines.",
+      "sourceIds": [
+        "cat-4dnx",
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Electric-motor direct-drive washer",
+      "wcbAssessment": "Requires the exact motor flange, shaft, speed, electrical duty and pressure-control design.",
+      "assessment": "Requires the exact motor flange, shaft, speed, electrical duty and pressure-control design.",
+      "basis": "Cat 4SP is published for direct electric-motor mounting at its named speed.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Cat 4SP is published for direct electric-motor mounting at its named speed.",
+      "scope": "Cat 4SP family only.",
+      "sourceIds": [
+        "cat-4sp"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Professional cold-water system",
+      "wcbAssessment": "Triplex families may suit documented duty, but whole-system thermal and safety approval remains separate.",
+      "assessment": "Triplex families may suit documented duty, but whole-system thermal and safety approval remains separate.",
+      "basis": "Manufacturer product tables and IEC define different pump and machine boundaries.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Manufacturer product tables and IEC define different pump and machine boundaries.",
+      "scope": "Named products and IEC scope.",
+      "sourceIds": [
+        "cat-pressure-wash",
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact pump identity",
+      "requiredMatch": "Manufacturer model, suffix and current revision",
+      "why": "Series names can contain different outputs and configurations.",
+      "buyerAction": "Record and approve manufacturer model, suffix and current revision from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "cat-4dnx"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Drive interface",
+      "requiredMatch": "Shaft diameter, key, flange, rotation and coupling",
+      "why": "Matching output numbers do not establish mechanical fit.",
+      "buyerAction": "Record and approve shaft diameter, key, flange, rotation and coupling from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Operating speed",
+      "requiredMatch": "Prime-mover rpm within the pump's documented limit",
+      "why": "Flow and power change with speed.",
+      "buyerAction": "Record and approve prime-mover rpm within the pump's documented limit from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "comet-zwd"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Hydraulic interfaces",
+      "requiredMatch": "Inlet/discharge threads, feed limits, hose and fittings",
+      "why": "Adapters can introduce restriction or pressure-rating risks.",
+      "buyerAction": "Record and approve inlet/discharge threads, feed limits, hose and fittings from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Pressure control",
+      "requiredMatch": "Unloader, bypass, relief and injector arrangement",
+      "why": "Some configurations include controls and others do not.",
+      "buyerAction": "Record and approve unloader, bypass, relief and injector arrangement from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "cat-4dnx"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Duty and safety",
+      "requiredMatch": "Fluid temperature, chemistry, duty cycle, guards and applicable machine approval",
+      "why": "A pump rating is not a complete-machine safety approval.",
+      "buyerAction": "Record and approve fluid temperature, chemistry, duty cycle, guards and applicable machine approval from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Low or unstable pressure",
+      "possibleCauses": [
+        "Nozzle/system mismatch",
+        "Inlet restriction or air ingress",
+        "Worn valves or seals"
+      ],
+      "safetyBoundary": "Depressurize and isolate the machine before inspection.",
+      "serviceAction": "Follow the exact manufacturer's diagnostic and service procedure.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "cat-4dnx"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Water or oil leakage",
+      "possibleCauses": [
+        "Seal wear",
+        "Frozen or overpressure damage",
+        "Incorrect fastener or part installation"
+      ],
+      "safetyBoundary": "High-pressure fluid injection and hot surfaces are hazards.",
+      "serviceAction": "Remove from service until the leak source and affected parts are identified.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Noise, vibration or overheating",
+      "possibleCauses": [
+        "Cavitation",
+        "Incorrect rpm or coupling",
+        "Lubrication or bearing fault"
+      ],
+      "safetyBoundary": "Stop operation before mechanical damage or loss of containment progresses.",
+      "serviceAction": "Verify inlet supply, drive alignment, speed, oil and exact service limits.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "comet-zwd"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Cat Pumps",
+      "familyName": "4DNX25GSI",
+      "architecture": "Triplex direct-drive plunger",
+      "applicationScope": "Gas-engine pressure washing",
+      "distinguishingSpecifications": [
+        "2.5 GPM",
+        "3000 PSI",
+        "3450 rpm"
+      ],
+      "marketScope": "Global official product page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "cat-4dnx"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Cat Pumps",
+      "familyName": "4SP21ELU",
+      "architecture": "Triplex direct-drive plunger",
+      "applicationScope": "Electric-motor pressure washing",
+      "distinguishingSpecifications": [
+        "2.1 GPM",
+        "2000 PSI",
+        "1750 rpm"
+      ],
+      "marketScope": "Global official product page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "cat-4sp"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "General Pump",
+      "familyName": "EZ4040G",
+      "architecture": "Triplex gasoline direct-couple",
+      "applicationScope": "Pressure cleaning",
+      "distinguishingSpecifications": [
+        "4.0 GPM",
+        "4000 PSI",
+        "3400 rpm"
+      ],
+      "marketScope": "US official product page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "General Pump",
+      "familyName": "TSF2021",
+      "architecture": "Triplex plunger",
+      "applicationScope": "Professional pressure cleaning",
+      "distinguishingSpecifications": [
+        "Official catalogue family",
+        "Model-specific output table"
+      ],
+      "marketScope": "Official catalogue",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "general-catalog"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Comet",
+      "familyName": "ZWD 4040 G",
+      "architecture": "Triplex direct-drive",
+      "applicationScope": "Gas pressure washing",
+      "distinguishingSpecifications": [
+        "4.0 GPM",
+        "4000 PSI",
+        "3400 rpm"
+      ],
+      "marketScope": "US official product page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "comet-zwd"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Comet",
+      "familyName": "EWD 4040",
+      "architecture": "Triplex direct-drive",
+      "applicationScope": "Pressure washing",
+      "distinguishingSpecifications": [
+        "4.0 GPM",
+        "4000 PSI",
+        "3400 rpm"
+      ],
+      "marketScope": "US official application page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "comet-pressure"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "Gas-engine direct-drive washer",
+      "attributeToVerify": "Exact pump identity, Drive interface, Operating speed, Hydraulic interfaces",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Candidate only when gasoline flange, shaft, rotation, rpm and required power are documented.",
+      "basis": "Cat 4DNX and General EZ publish gasoline direct-couple configurations.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Cat 4DNX and General EZ publish gasoline direct-couple configurations.",
+      "scope": "Named families, not all engines.",
+      "sourceIds": [
+        "cat-4dnx",
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Electric-motor direct-drive washer",
+      "attributeToVerify": "Exact pump identity, Drive interface, Operating speed, Hydraulic interfaces",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Requires the exact motor flange, shaft, speed, electrical duty and pressure-control design.",
+      "basis": "Cat 4SP is published for direct electric-motor mounting at its named speed.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Cat 4SP is published for direct electric-motor mounting at its named speed.",
+      "scope": "Cat 4SP family only.",
+      "sourceIds": [
+        "cat-4sp"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Professional cold-water system",
+      "attributeToVerify": "Exact pump identity, Drive interface, Operating speed, Hydraulic interfaces",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Triplex families may suit documented duty, but whole-system thermal and safety approval remains separate.",
+      "basis": "Manufacturer product tables and IEC define different pump and machine boundaries.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Manufacturer product tables and IEC define different pump and machine boundaries.",
+      "scope": "Named products and IEC scope.",
+      "sourceIds": [
+        "cat-pressure-wash",
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact pump identity",
+      "reason": "Series names can contain different outputs and configurations.",
+      "buyerAction": "Approve manufacturer model, suffix and current revision before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "cat-4dnx"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Drive interface",
+      "reason": "Matching output numbers do not establish mechanical fit.",
+      "buyerAction": "Approve shaft diameter, key, flange, rotation and coupling before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Operating speed",
+      "reason": "Flow and power change with speed.",
+      "buyerAction": "Approve prime-mover rpm within the pump's documented limit before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "comet-zwd"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Hydraulic interfaces",
+      "reason": "Adapters can introduce restriction or pressure-rating risks.",
+      "buyerAction": "Approve inlet/discharge threads, feed limits, hose and fittings before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Pressure control",
+      "reason": "Some configurations include controls and others do not.",
+      "buyerAction": "Approve unloader, bypass, relief and injector arrangement before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "cat-4dnx"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-79",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety requirements for high-pressure cleaners and steam cleaners within the standard's stated pressure, drive and application scope.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "ANSI/UL 1776",
+      "jurisdiction": "United States",
+      "version": "Current edition must be checked",
+      "applicability": "Referenced by UL guide information for electrically operated high-pressure cleaning machines; no product certification is inferred.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "ul-1776"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "SAE J609B mounting reference",
+      "jurisdiction": "Engine interface",
+      "version": "Current revision must be checked",
+      "applicability": "General Pump identifies the named EZ family flange as SAE J609B; verify both engine and pump documentation.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "general-ez4040"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2021-06-23",
+      "title": "IEC publishes fifth edition of IEC 60335-2-79",
+      "summary": "The edition updates the safety scope and alignment for high-pressure cleaners.",
+      "evidence": "The edition updates the safety scope and alignment for high-pressure cleaners.",
+      "scope": "Named publication or reviewed official portfolio only.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "date": "2026-08-09",
+      "title": "WCB reviews AR's 2026 product range",
+      "summary": "The reviewed official range separates many pump series by architecture and operating envelope.",
+      "evidence": "The reviewed official range separates many pump series by architecture and operating envelope.",
+      "scope": "Named publication or reviewed official portfolio only.",
+      "sourceIds": [
+        "ar-range"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cat-4dnx",
+      "title": "4DNX25GSI direct-drive plunger pump",
+      "publisher": "Cat Pumps",
+      "sourceType": "manufacturer",
+      "url": "https://www.catpumps.com/products/pumps/4dnx-direct-drive-plunger-pump-4dnx25gsi",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "cat-4sp",
+      "title": "4SP21ELU direct-drive plunger pump",
+      "publisher": "Cat Pumps",
+      "sourceType": "manufacturer",
+      "url": "https://www.catpumps.com/products/pumps/4sp-direct-drive-plunger-pump-4sp21elu",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "cat-pressure-wash",
+      "title": "Pressure wash pumps",
+      "publisher": "Cat Pumps",
+      "sourceType": "manufacturer",
+      "url": "https://www.catpumps.com/pressure-wash-pumps",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "general-ez4040",
+      "title": "EZ4040G",
+      "publisher": "General Pump",
+      "sourceType": "manufacturer",
+      "url": "https://www.generalpump.com/product/ez4040g/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "general-catalog",
+      "title": "Pressure cleaning pumps catalogue",
+      "publisher": "General Pump",
+      "sourceType": "manufacturer",
+      "url": "https://www.generalpump.com/wp-content/uploads/2021/12/Catalog-2022-Web.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "comet-zwd",
+      "title": "ZWD Series",
+      "publisher": "Comet",
+      "sourceType": "manufacturer",
+      "url": "https://www.cometpump.com/product/zwd-series/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "comet-pressure",
+      "title": "Pressure Washing",
+      "publisher": "Comet",
+      "sourceType": "manufacturer",
+      "url": "https://www.cometpump.com/pressure-washing/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "ar-range",
+      "title": "Product Range 2026",
+      "publisher": "Annovi Reverberi",
+      "sourceType": "manufacturer",
+      "url": "https://static.annovireverberi.it/uploads/documents/PRODUCT-RANGE-2026_low.pdf?GmsCnwCO=",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "iec-60335-2-79",
+      "title": "IEC 60335-2-79:2021",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64779",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "ul-1776",
+      "title": "UL guide information for high-pressure cleaning machines",
+      "publisher": "UL",
+      "sourceType": "regulator",
+      "url": "https://code-authorities.ul.com/wp-content/uploads/2014/07/2013_WB_LINKED_FINAL.pdf",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}

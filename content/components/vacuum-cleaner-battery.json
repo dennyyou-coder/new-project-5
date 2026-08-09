@@ -1,0 +1,762 @@
+{
+  "status": "published",
+  "slug": "vacuum-cleaner-battery",
+  "name": "Vacuum Cleaner Battery",
+  "aliases": [
+    "cordless vacuum battery",
+    "stick vacuum battery pack",
+    "removable vacuum battery",
+    "vacuum lithium-ion pack"
+  ],
+  "definition": "A vacuum-cleaner battery profile covers the cell pack, enclosure, connector, latch, charger interface, protection electronics and model-specific controls used by cordless cleaning appliances; it does not make packs interchangeable by voltage or appearance.",
+  "includedScope": [
+    "Removable and integrated lithium-ion battery packs",
+    "Voltage, capacity, runtime, charger, BMS, connector and model-scope checks",
+    "Cordless stick, handheld and selected canister vacuum applications"
+  ],
+  "excludedScope": [
+    "Cell-level rebuilding or repair instructions",
+    "Universal runtime guarantees",
+    "Unverified third-party pack compatibility"
+  ],
+  "primaryApplications": [
+    "Cordless stick vacuums",
+    "Handheld vacuums",
+    "Cordless wet-dry cleaning appliances",
+    "Documented multi-product battery platforms"
+  ],
+  "headline": "Voltage and capacity are only part of the match—connector, latch, charger, BMS and exact model scope control approval.",
+  "description": "This profile separates pack architecture, runtime reporting and model-specific integration checks so buyers can compare documented cordless-vacuum battery families without assuming interchangeability.",
+  "metaDescription": "Vacuum cleaner battery types, voltage and capacity, runtime boundaries, chargers, BMS, model compatibility and sourcing checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, electrical and control specification, mechanical and fluid or airflow interfaces, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/vacuum-cleaner-battery/hero.webp",
+  "heroImageAlt": "Hoover ONEPWR 4 Ah removable lithium-ion battery pack",
+  "heroImageCaption": "Official Hoover ONEPWR 4 Ah battery image on a WCB canvas; the product photo establishes the named family appearance, not compatibility with another vacuum.",
+  "heroSourceUrl": "https://hoover.ca/cdn/shop/products/4AhBattery-BH29040V_Hero_ATF.jpg?v=1681756590",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-battery/architecture-family.webp",
+      "alt": "Hoover ONEPWR 4 Ah battery pack architecture reference",
+      "caption": "Official Hoover product image on a WCB canvas. The ONEPWR family claim remains limited to products Hoover lists for that system.",
+      "sourceUrl": "https://hoover.ca/cdn/shop/products/4AhBattery-BH29040V_Hero_ATF.jpg?v=1681756590"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-battery/performance-boundaries.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-battery/performance-boundaries-mobile.svg",
+      "alt": "Vacuum Cleaner Battery performance reporting boundary diagram",
+      "caption": "WCB reporting-boundary map: retain the stated unit, operating point, test method and product scope before comparing values.",
+      "sourceIds": [
+        "dyson-faq",
+        "hoover-4ah",
+        "miele-hx2",
+        "lg-a907",
+        "shark-manual"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-battery/application-reference.webp",
+      "alt": "Detailed view of a Hoover ONEPWR removable battery enclosure",
+      "caption": "Detail crop from the same official Hoover product image, used to emphasize enclosure and latch geometry; it is not a second product or a fit claim.",
+      "sourceUrl": "https://hoover.ca/cdn/shop/products/4AhBattery-BH29040V_Hero_ATF.jpg?v=1681756590"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-battery/compatibility-gate.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-battery/compatibility-gate-mobile.svg",
+      "alt": "Vacuum Cleaner Battery compatibility approval gate",
+      "caption": "WCB compatibility gate: an undocumented field stops approval rather than becoming a probable match.",
+      "sourceIds": [
+        "dyson-faq",
+        "hoover-4ah",
+        "miele-hx2",
+        "lg-a907",
+        "shark-manual"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Model scope",
+      "value": "Battery families can be model- and serial-specific",
+      "evidence": "Dyson states replacement batteries are model-specific and directs owners to model/serial identification.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "System boundary",
+      "value": "Battery, charger, connector and protection electronics form one approved system",
+      "evidence": "Hoover and Miele publish batteries inside named product-system boundaries.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-4ah",
+        "miele-hx2"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Runtime boundary",
+      "value": "Runtime changes with mode, tool, floor, temperature and battery condition",
+      "evidence": "Official model documents qualify runtime by mode and operating conditions.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "miele-hx2",
+        "lg-a907",
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Energy storage",
+      "role": "Supplies documented pack voltage and capacity to the cordless appliance.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-4ah",
+        "miele-hx2"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Protection and control",
+      "role": "Pack electronics supervise current, voltage and temperature within the named system.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "shark-manual",
+        "iec-62133"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Mechanical retention",
+      "role": "Enclosure, latch and connector locate the pack and maintain electrical contact.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v7",
+        "hoover-4ah"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Charging interface",
+      "role": "Receives charge only from the manufacturer-approved charger or dock.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq",
+        "hoover-4ah"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Removable slide-in pack",
+      "operatingPrinciple": "A latched enclosure combines cells, contacts and protection electronics.",
+      "applicationBoundary": "Named cordless platforms with user-removable packs.",
+      "benefits": [
+        "Fast pack exchange",
+        "Separate charging may be supported"
+      ],
+      "limitations": [
+        "Family names do not guarantee cross-generation fit",
+        "Latch and connector revisions can differ"
+      ],
+      "buyerCheck": "Match exact battery part number, appliance model/serial, connector, latch and charger.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v7",
+        "hoover-4ah"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Integrated or service-removable pack",
+      "operatingPrinciple": "The pack remains inside the appliance and follows a documented service procedure.",
+      "applicationBoundary": "Cordless models whose battery is not intended for routine user swapping.",
+      "benefits": [
+        "Compact appliance packaging"
+      ],
+      "limitations": [
+        "Replacement may require authorized service",
+        "Housing and wiring are model-specific"
+      ],
+      "buyerCheck": "Confirm whether removal is user-authorized and use the current service documentation.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Multi-battery runtime system",
+      "operatingPrinciple": "Two removable packs may be used sequentially under manufacturer-stated runtime conditions.",
+      "applicationBoundary": "Named models supplied with or supporting multiple packs.",
+      "benefits": [
+        "Extended documented runtime",
+        "Pack rotation"
+      ],
+      "limitations": [
+        "Runtime is mode-dependent",
+        "Charger and pack generation still control fit"
+      ],
+      "buyerCheck": "Keep the stated mode, nozzle and per-pack versus combined runtime basis.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "lg-a907",
+        "miele-hx2"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Nominal voltage",
+      "purchasingMeaning": "Defines the electrical family",
+      "reportingBoundary": "Charge voltage and control protocol remain separate",
+      "comparisonCaution": "Do not approve a replacement by voltage alone.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "miele-hx2",
+        "lg-a907"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Capacity (Ah / Wh)",
+      "purchasingMeaning": "Supports energy and runtime comparison",
+      "reportingBoundary": "Cell rating, cutoff, mode and age affect usable energy",
+      "comparisonCaution": "Do not compare Ah without voltage or runtime basis.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-4ah",
+        "miele-hx2"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Runtime",
+      "purchasingMeaning": "Helps plan cleaning duty",
+      "reportingBoundary": "Retain mode, tool, floor and battery-count conditions",
+      "comparisonCaution": "Maximum runtime is not a universal shift result.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "miele-hx2",
+        "lg-a907",
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Connector and latch",
+      "purchasingMeaning": "Defines the physical and electrical interface",
+      "reportingBoundary": "Visual similarity does not prove pinout or retention",
+      "comparisonCaution": "Require exact part/model scope.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v7",
+        "dyson-faq"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Cordless stick vacuum",
+      "wcbAssessment": "Common application, but model generation controls fit.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq",
+        "miele-hx2"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Handheld vacuum",
+      "wcbAssessment": "Possible only where the manufacturer lists the same battery system.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-onepwr"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Cross-tool battery platform",
+      "wcbAssessment": "Treat as compatible only inside the official platform list.",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-onepwr"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Battery part number",
+      "requiredMatch": "Exact manufacturer number and revision",
+      "why": "Pack generations can share appearance but differ internally.",
+      "buyerAction": "Document exact manufacturer number and revision before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v7",
+        "dyson-faq"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Appliance model and serial",
+      "requiredMatch": "Explicit manufacturer compatibility scope",
+      "why": "A product family can contain several battery interfaces.",
+      "buyerAction": "Document explicit manufacturer compatibility scope before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Charger and dock",
+      "requiredMatch": "Approved charging interface and rating",
+      "why": "Incorrect charging can defeat protection assumptions.",
+      "buyerAction": "Document approved charging interface and rating before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-4ah",
+        "iec-62133"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Connector, latch and envelope",
+      "requiredMatch": "Mechanical drawings or approved-parts confirmation",
+      "why": "A loose or stressed connection can create heat or intermittent power.",
+      "buyerAction": "Document mechanical drawings or approved-parts confirmation before approving the component.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v7",
+        "hoover-4ah"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Reduced runtime",
+      "possibleCauses": [
+        "Battery aging",
+        "High-power mode",
+        "Temperature",
+        "Restricted airflow increasing load"
+      ],
+      "safetyBoundary": "Stop use if the pack is swollen, hot, damaged or leaking.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-replacement",
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Will not charge",
+      "possibleCauses": [
+        "Incorrect charger",
+        "Dirty contacts",
+        "Protection state",
+        "Pack or charger fault"
+      ],
+      "safetyBoundary": "Do not bypass the charger or protection electronics.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-4ah",
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Intermittent power",
+      "possibleCauses": [
+        "Latch wear",
+        "Connector contamination",
+        "Model mismatch",
+        "Internal fault"
+      ],
+      "safetyBoundary": "Disconnect the pack before inspection and follow authorized service instructions.",
+      "serviceAction": "Follow the current manufacturer inspection and service procedure; replace only with an approved part.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq",
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Dyson",
+      "familyName": "V7 battery 968670-06",
+      "architecture": "Removable model-specific lithium-ion pack",
+      "applicationScope": "Named Dyson V7 replacement scope",
+      "distinguishingSpecifications": [
+        "Part 968670-06"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v7"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Dyson",
+      "familyName": "Gen5outsize battery 972382-04",
+      "architecture": "Click-in lithium-ion pack",
+      "applicationScope": "Named Gen5outsize scope",
+      "distinguishingSpecifications": [
+        "Part 972382-04"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-gen5"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Hoover",
+      "familyName": "ONEPWR 4.0 Ah BH29040V",
+      "architecture": "Removable platform battery",
+      "applicationScope": "Official ONEPWR system products",
+      "distinguishingSpecifications": [
+        "4.0 Ah",
+        "Lithium-ion",
+        "UL listed on product page"
+      ],
+      "marketScope": "United States / Canada",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-4ah"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Miele",
+      "familyName": "Triflex HX2 exchangeable battery",
+      "architecture": "VARTA lithium-ion pack",
+      "applicationScope": "Named Triflex HX2 family",
+      "distinguishingSpecifications": [
+        "25.2 V",
+        "2,500 mAh"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "miele-hx2"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "LG",
+      "familyName": "CordZero A907 dual-battery system",
+      "architecture": "Two removable lithium-ion packs",
+      "applicationScope": "Named A907 model",
+      "distinguishingSpecifications": [
+        "25.55 V",
+        "Mode-qualified runtime"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "lg-a907"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Shark",
+      "familyName": "XBATF725 battery",
+      "architecture": "Removable lithium-ion pack",
+      "applicationScope": "Models listed in the official manual",
+      "distinguishingSpecifications": [
+        "Exact battery designation XBATF725"
+      ],
+      "marketScope": "United States",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "Replacement sourcing",
+      "attributeToVerify": "Exact part, model/serial and interface scope",
+      "comparisonTrap": "Approving by appearance, family name or one rating",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq",
+        "hoover-4ah",
+        "miele-hx2"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "New product design",
+      "attributeToVerify": "Operating envelope and integration specification",
+      "comparisonTrap": "Using a catalogue maximum outside its test boundary",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq",
+        "hoover-4ah",
+        "miele-hx2",
+        "lg-a907",
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Aftermarket supplier qualification",
+      "attributeToVerify": "Traceability, test evidence and change control",
+      "comparisonTrap": "Treating a seller fit list as engineering approval",
+      "assessment": "Suitable for initial sourcing comparison only.",
+      "basis": "Official manufacturer application, parts and technical evidence.",
+      "limitations": "No exact product compatibility or performance outcome is established without current manufacturer documentation.",
+      "buyerAction": "Confirm exact part number, model/serial scope and every interface before approval.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "miele-hx2",
+        "lg-a907",
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Battery part number",
+      "reason": "Pack generations can share appearance but differ internally.",
+      "buyerAction": "Approve exact manufacturer number and revision in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v7",
+        "dyson-faq"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Appliance model and serial",
+      "reason": "A product family can contain several battery interfaces.",
+      "buyerAction": "Approve explicit manufacturer compatibility scope in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Charger and dock",
+      "reason": "Incorrect charging can defeat protection assumptions.",
+      "buyerAction": "Approve approved charging interface and rating in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-4ah",
+        "iec-62133"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Connector, latch and envelope",
+      "reason": "A loose or stressed connection can create heat or intermittent power.",
+      "buyerAction": "Approve mechanical drawings or approved-parts confirmation in the controlled technical record.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v7",
+        "hoover-4ah"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 62133-2",
+      "jurisdiction": "International",
+      "applicability": "Safety requirements for portable sealed secondary lithium cells and batteries; applicability depends on the exact pack and certification evidence.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-62133"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-09",
+      "title": "Vacuum Cleaner Battery comparison boundary documented",
+      "summary": "WCB consolidated current official model, runtime and replacement evidence without asserting cross-brand compatibility.",
+      "evidence": "The cited official source supports this field for its named product or document scope.",
+      "scope": "Named products, models, markets and document editions only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-faq",
+        "hoover-4ah",
+        "miele-hx2",
+        "lg-a907",
+        "shark-manual"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "dyson-replacement",
+      "title": "Replacement batteries",
+      "publisher": "Dyson",
+      "sourceType": "manufacturer",
+      "url": "https://www.dyson.com/vacuum-cleaners/replacement-battery",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "dyson-faq",
+      "title": "Spare parts frequently asked questions",
+      "publisher": "Dyson",
+      "sourceType": "service",
+      "url": "https://www.dyson.com/spare-parts/frequently-asked-questions",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "dyson-v7",
+      "title": "V7 replacement battery 968670-06",
+      "publisher": "Dyson",
+      "sourceType": "manufacturer",
+      "url": "https://www.dyson.com/support/journey/replacement-parts/968670-06.276986-01",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "dyson-gen5",
+      "title": "Gen5outsize spare battery",
+      "publisher": "Dyson",
+      "sourceType": "manufacturer",
+      "url": "https://www.dyson.com/spare-parts/vacuum-cleaners/cordless/gen5outsize",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "hoover-onepwr",
+      "title": "ONEPWR system",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/pages/onepwr",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "hoover-4ah",
+      "title": "ONEPWR 4.0 Ah battery",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/products/4-0-ah-onepwr-battery-2",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "miele-hx2",
+      "title": "Triflex HX2 cordless vacuum specifications",
+      "publisher": "Miele",
+      "sourceType": "manufacturer",
+      "url": "https://www.mieleusa.com/product/11827000/cordless-stick-vacuum-cleaner-triflex-hx2-lotus-white",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "lg-a907",
+      "title": "CordZero A907 product specification sheet",
+      "publisher": "LG Electronics",
+      "sourceType": "datasheet",
+      "url": "https://www.lg.com/us/support/products/documents/A907GM-Spec-Sheet.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "shark-manual",
+      "title": "Cordless vacuum owner manual with XBATF725 battery",
+      "publisher": "SharkNinja",
+      "sourceType": "manual",
+      "url": "https://support.sharkclean.com/hc/en-us/article_attachments/4407413152146",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "iec-62133",
+      "title": "IEC 62133-2 portable lithium battery safety requirements",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64339",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}
