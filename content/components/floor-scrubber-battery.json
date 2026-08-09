@@ -1,0 +1,874 @@
+{
+  "status": "published",
+  "slug": "floor-scrubber-battery",
+  "name": "Floor Scrubber Battery",
+  "aliases": [
+    "floor machine battery",
+    "scrubber dryer battery",
+    "deep-cycle floorcare battery",
+    "traction battery for floor scrubber"
+  ],
+  "definition": "A floor-scrubber battery profile covers the battery or pack, chemistry, voltage, capacity, mechanical, charge, communication and duty boundaries used in floorcare equipment; it does not make batteries interchangeable by voltage alone.",
+  "includedScope": [
+    "Flooded lead-acid, AGM, gel and lithium floor-machine families",
+    "Pack voltage, capacity, envelope, mass, terminal, charger and BMS checks",
+    "Walk-behind and ride-on floorcare duty contexts"
+  ],
+  "excludedScope": [
+    "Complete floor-scrubber runtime guarantees",
+    "Cell-level repair instructions",
+    "Unverified battery, charger or machine interchangeability"
+  ],
+  "primaryApplications": [
+    "Walk-behind scrubber dryers",
+    "Ride-on floor scrubbers",
+    "Sweepers and combination floor machines",
+    "Other documented floorcare equipment"
+  ],
+  "headline": "Matching voltage is not enough—capacity basis, dimensions, mass, terminals, charger and BMS must all match.",
+  "description": "This profile separates battery chemistry, shift-duty performance and exact machine/charger integration checks so buyers can compare documented floorcare power options safely.",
+  "metaDescription": "Floor scrubber battery chemistries, voltage and capacity, deep-cycle families, charger and BMS requirements, runtime boundaries and compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, electrical and control specification, mechanical and fluid or airflow interfaces, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/floor-scrubber-battery/hero.webp",
+  "heroImageAlt": "Walk-behind floor scrubber operating in a school corridor",
+  "heroImageCaption": "Official Trojan Battery floor-machine application photo on a WCB canvas; the image documents an application context, not a battery fit claim.",
+  "heroSourceUrl": "https://images.ctfassets.net/nh2mdhlonj7m/4OLZKkfbLBpr4NxnpsmQhL/953d2e9cdc97c37f900b53e5cdcdd0ec/Floor-Machine-1050x656.jpg",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-battery/architecture-family.webp",
+      "alt": "Trojan AES deep-cycle battery family",
+      "caption": "Official Trojan AES battery-family image on a WCB canvas. Family appearance and nominal voltage do not establish machine compatibility.",
+      "sourceUrl": "https://images.ctfassets.net/nh2mdhlonj7m/6PqRGEQZx9LzGCJiPPXlmc/c0fbf1d0895c855c9a33b6ab9a4752dd/AES_Family_Hero-615x415.png"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-battery/performance-boundaries.svg",
+      "mobileSrc": "/images/components/floor-scrubber-battery/performance-boundaries-mobile.svg",
+      "alt": "Floor Scrubber Battery performance reporting boundary diagram",
+      "caption": "WCB reporting-boundary map: retain the stated unit, operating point, test method and product scope before comparing values.",
+      "sourceIds": [
+        "trojan-floor",
+        "usbattery-floor",
+        "discover-floor",
+        "enersys-floorcare"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-battery/application-reference.webp",
+      "alt": "Trojan flooded deep-cycle battery family",
+      "caption": "Official Trojan flooded battery-family image on a WCB canvas, showing a distinct service and charging category.",
+      "sourceUrl": "https://images.ctfassets.net/nh2mdhlonj7m/1AL2JAoMCeDXoNk7X2oOSC/8bf0a628a4762b683e9e132ead6fd255/TR_Flooded_Product_Family-615x415.png"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-battery/compatibility-gate.svg",
+      "mobileSrc": "/images/components/floor-scrubber-battery/compatibility-gate-mobile.svg",
+      "alt": "Floor Scrubber Battery compatibility approval gate",
+      "caption": "WCB compatibility gate: an undocumented field stops approval rather than becoming a probable match.",
+      "sourceIds": [
+        "trojan-floor",
+        "usbattery-floor",
+        "discover-floor",
+        "enersys-floorcare"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Chemistry families",
+      "value": "Flooded, AGM and lithium options have different service and charging boundaries",
+      "evidence": "Trojan, U.S. Battery and Discover publish multiple chemistry families for floor machines.",
+      "scope": "Named official portfolios only.",
+      "sourceIds": [
+        "trojan-floor",
+        "usbattery-floor",
+        "discover-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Pack identity",
+      "value": "Nominal voltage does not define usable energy, current capability or fit",
+      "evidence": "Official product pages publish separate voltage, capacity, dimensions, weight and terminal fields.",
+      "scope": "Named battery models only.",
+      "sourceIds": [
+        "trojan-5shp",
+        "trojan-l16",
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "System boundary",
+      "value": "Battery, charger, BMS and machine controls must be approved together",
+      "evidence": "U.S. Battery describes BMS/CAN features for its 24 V floor-machine lithium system; Trojan and Discover separate chemistry-specific solutions.",
+      "scope": "Named official lithium and floorcare systems.",
+      "sourceIds": [
+        "usbattery-lithium",
+        "trojan-floor",
+        "discover-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Energy storage",
+      "role": "Stores electrical energy within a documented voltage, capacity and temperature range.",
+      "evidence": "Official battery pages publish voltage, capacity and product dimensions.",
+      "scope": "Named product models.",
+      "sourceIds": [
+        "trojan-5shp",
+        "trojan-l16"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Traction and cleaning load",
+      "role": "Supplies motors, pumps and controls through the machine's shift-duty profile.",
+      "evidence": "Manufacturers position deep-cycle families for floor machines and floorcare equipment.",
+      "scope": "Application-level positioning, not a runtime guarantee.",
+      "sourceIds": [
+        "trojan-floor",
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Charge acceptance",
+      "role": "Receives energy only through a chemistry- and pack-compatible charger profile.",
+      "evidence": "Manufacturers separate flooded, AGM and lithium systems and publish product-specific charge requirements.",
+      "scope": "Exact battery documentation controls.",
+      "sourceIds": [
+        "discover-floor",
+        "enersys-floorcare"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Protection and communication",
+      "role": "Lithium packs may use a BMS and machine or charger communication.",
+      "evidence": "U.S. Battery identifies BMS and CAN communication for its named 24 V floor-machine product.",
+      "scope": "Named Essential Li system only.",
+      "sourceIds": [
+        "usbattery-lithium"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Flooded lead-acid",
+      "operatingPrinciple": "Lead plates operate in liquid electrolyte and require the manufacturer's ventilation and maintenance regime.",
+      "applicationBoundary": "Established deep-cycle floor-machine families.",
+      "benefits": [
+        "Broad published model coverage",
+        "Serviceable electrolyte in permitted designs"
+      ],
+      "limitations": [
+        "Maintenance and ventilation requirements",
+        "Spill and watering controls are application-specific"
+      ],
+      "buyerCheck": "Verify case, terminals, watering, ventilation, charger profile and maintenance responsibility.",
+      "evidence": "Trojan, U.S. Battery and Discover list flooded floor-machine options.",
+      "scope": "Named official ranges.",
+      "sourceIds": [
+        "trojan-floor",
+        "usbattery-floor",
+        "discover-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Valve-regulated AGM or gel",
+      "operatingPrinciple": "Electrolyte is immobilized in a sealed valve-regulated construction.",
+      "applicationBoundary": "Used where maintenance and installation constraints differ from flooded batteries.",
+      "benefits": [
+        "Reduced routine electrolyte maintenance",
+        "Multiple official floorcare families"
+      ],
+      "limitations": [
+        "Charger profile remains chemistry-specific",
+        "Sealed does not mean unrestricted orientation or environment"
+      ],
+      "buyerCheck": "Match AGM or gel charging, vents, dimensions, terminals and stated operating position.",
+      "evidence": "Discover and EnerSys describe AGM/gel floorcare alternatives.",
+      "scope": "Official floorcare guidance only.",
+      "sourceIds": [
+        "discover-floor",
+        "enersys-floorcare"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Lithium-ion / LiFePO4 pack",
+      "operatingPrinciple": "Cells, BMS, contactors and communication form a managed battery system.",
+      "applicationBoundary": "Published for selected floor-machine systems and shift-duty use.",
+      "benefits": [
+        "Manufacturer-stated opportunity charging",
+        "Integrated monitoring and protection"
+      ],
+      "limitations": [
+        "BMS and charger integration are mandatory",
+        "Cold, transport and approval limits vary"
+      ],
+      "buyerCheck": "Approve the pack, charger, BMS communications, firmware, connector and machine current profile together.",
+      "evidence": "U.S. Battery and Discover publish lithium floorcare systems with managed electronics.",
+      "scope": "Named official systems only.",
+      "sourceIds": [
+        "usbattery-lithium",
+        "discover-memo"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Nominal pack voltage",
+      "purchasingMeaning": "Defines the electrical system family",
+      "reportingBoundary": "Cell/battery series arrangement and charge voltage remain separate",
+      "comparisonCaution": "Do not approve a replacement by 24 V, 36 V or 48 V alone.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "trojan-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Capacity",
+      "purchasingMeaning": "Supports energy and shift planning",
+      "reportingBoundary": "Ah must retain rate, temperature, cutoff and cycle basis",
+      "comparisonCaution": "Do not compare Ah values with different discharge rates.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Usable energy and duty",
+      "purchasingMeaning": "Connects the pack to the machine load profile",
+      "reportingBoundary": "Runtime depends on machine current, duty, temperature and cutoff",
+      "comparisonCaution": "Do not promise runtime from battery capacity alone.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "discover-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Dimensions and mass",
+      "purchasingMeaning": "Control tray fit, restraint and axle loading",
+      "reportingBoundary": "Length, width, height, handles and center of gravity matter",
+      "comparisonCaution": "A smaller battery may also change ballast and stability.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "enersys-floorcare"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Terminals and connector",
+      "purchasingMeaning": "Define safe electrical connection and polarity",
+      "reportingBoundary": "Terminal type, location, cable, fuse and connector keying are separate",
+      "comparisonCaution": "Do not modify cables without current and protection review.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "trojan-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Charge and communication",
+      "purchasingMeaning": "Define charger profile and managed-system integration",
+      "reportingBoundary": "Chemistry, charge curve, BMS/CAN and firmware must match",
+      "comparisonCaution": "A charger that reaches the same voltage may still be incompatible.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Walk-behind scrubber dryer",
+      "wcbAssessment": "Evaluate tray space, mass, shift duty, charger and service access against the exact machine model.",
+      "assessment": "Evaluate tray space, mass, shift duty, charger and service access against the exact machine model.",
+      "basis": "Trojan and U.S. Battery publish floor-machine application families.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Trojan and U.S. Battery publish floor-machine application families.",
+      "scope": "Application portfolio only.",
+      "sourceIds": [
+        "trojan-floor",
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Ride-on floor scrubber",
+      "wcbAssessment": "Battery mass, current demand, runtime, ventilation and vehicle stability become system fields.",
+      "assessment": "Battery mass, current demand, runtime, ventilation and vehicle stability become system fields.",
+      "basis": "Official floorcare guidance discusses battery selection across floor machines and chemistries.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Official floorcare guidance discusses battery selection across floor machines and chemistries.",
+      "scope": "Named official application guidance.",
+      "sourceIds": [
+        "discover-floor",
+        "enersys-floorcare"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Opportunity-charged multi-shift use",
+      "wcbAssessment": "Requires a battery, charger and thermal/BMS system explicitly approved for the charge pattern.",
+      "assessment": "Requires a battery, charger and thermal/BMS system explicitly approved for the charge pattern.",
+      "basis": "Official lithium product materials describe managed charging features for named systems.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Official lithium product materials describe managed charging features for named systems.",
+      "scope": "Named U.S. Battery and Discover lithium systems only.",
+      "sourceIds": [
+        "usbattery-lithium",
+        "discover-memo"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact battery identity",
+      "requiredMatch": "Manufacturer model, chemistry and revision",
+      "why": "A case size or voltage label does not define internal design.",
+      "buyerAction": "Record and approve manufacturer model, chemistry and revision from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "trojan-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Electrical system",
+      "requiredMatch": "Nominal voltage, capacity basis, current and cutoff",
+      "why": "Same voltage does not prove equivalent energy or power.",
+      "buyerAction": "Record and approve nominal voltage, capacity basis, current and cutoff from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Mechanical installation",
+      "requiredMatch": "Tray envelope, mass, restraint, handles and orientation",
+      "why": "Fit and vehicle stability depend on more than dimensions.",
+      "buyerAction": "Record and approve tray envelope, mass, restraint, handles and orientation from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "discover-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Connection and protection",
+      "requiredMatch": "Polarity, terminal, connector, cable, fuse and disconnect",
+      "why": "Incorrect connection can cause high fault current.",
+      "buyerAction": "Record and approve polarity, terminal, connector, cable, fuse and disconnect from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "enersys-floorcare"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Charging system",
+      "requiredMatch": "Chemistry-specific charger profile, temperature and interlock",
+      "why": "Matching charger voltage alone is insufficient.",
+      "buyerAction": "Record and approve chemistry-specific charger profile, temperature and interlock from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "trojan-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "BMS and machine interface",
+      "requiredMatch": "CAN/protocol, firmware, alarms and contactor behavior where applicable",
+      "why": "Managed lithium packs require system-level approval.",
+      "buyerAction": "Record and approve can/protocol, firmware, alarms and contactor behavior where applicable from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Short runtime",
+      "possibleCauses": [
+        "Capacity loss or undercharge",
+        "Duty higher than assumed",
+        "Temperature or connection loss"
+      ],
+      "safetyBoundary": "Isolate high-current circuits before inspection.",
+      "serviceAction": "Measure the machine load and battery condition using the approved procedure.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "trojan-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Battery or connector heating",
+      "possibleCauses": [
+        "Loose or corroded connection",
+        "Excess current",
+        "Wrong cable, terminal or charge profile"
+      ],
+      "safetyBoundary": "Stop use immediately where abnormal heat, swelling or odour is present.",
+      "serviceAction": "Quarantine and follow the battery and machine manufacturer's safety process.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Charger or BMS fault",
+      "possibleCauses": [
+        "Chemistry/profile mismatch",
+        "Communication or temperature fault",
+        "Pack imbalance or protection event"
+      ],
+      "safetyBoundary": "Do not bypass interlocks or BMS protection.",
+      "serviceAction": "Use approved diagnostic equipment and exact error documentation.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "discover-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Corrosion, leakage or case damage",
+      "possibleCauses": [
+        "Electrolyte exposure",
+        "Overcharge",
+        "Impact or incorrect restraint"
+      ],
+      "safetyBoundary": "Use required PPE and hazardous-material procedures.",
+      "serviceAction": "Remove the battery from service and follow manufacturer handling guidance.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "enersys-floorcare"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Trojan Battery",
+      "familyName": "5SHP-AES",
+      "architecture": "12 V AGM deep-cycle",
+      "applicationScope": "Floor machines",
+      "distinguishingSpecifications": [
+        "12 V",
+        "DIN case",
+        "Official capacity table"
+      ],
+      "marketScope": "Global official product page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "trojan-5shp"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Trojan Battery",
+      "familyName": "L16P-AC",
+      "architecture": "6 V flooded deep-cycle",
+      "applicationScope": "Floor machines",
+      "distinguishingSpecifications": [
+        "6 V",
+        "Flooded AC Series",
+        "Official dimensions"
+      ],
+      "marketScope": "Global official product page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "trojan-l16"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Trojan Battery",
+      "familyName": "31XCS",
+      "architecture": "12 V flooded deep-cycle",
+      "applicationScope": "Floor machines",
+      "distinguishingSpecifications": [
+        "12 V",
+        "Flooded family",
+        "Official capacity table"
+      ],
+      "marketScope": "Global official product page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "trojan-31xcs"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "U.S. Battery",
+      "familyName": "US 2200 XC2",
+      "architecture": "6 V flooded deep-cycle",
+      "applicationScope": "Floor machines",
+      "distinguishingSpecifications": [
+        "Official floor-machine listing",
+        "XC2 family"
+      ],
+      "marketScope": "US official application page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "U.S. Battery",
+      "familyName": "US AGM 2000",
+      "architecture": "6 V AGM deep-cycle",
+      "applicationScope": "Floor machines",
+      "distinguishingSpecifications": [
+        "Official floor-machine listing",
+        "AGM family"
+      ],
+      "marketScope": "US official application page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "U.S. Battery",
+      "familyName": "US 24V GC2",
+      "architecture": "24 V lithium system",
+      "applicationScope": "Floor machines",
+      "distinguishingSpecifications": [
+        "24 V",
+        "BMS and CAN context"
+      ],
+      "marketScope": "US official product announcement",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "usbattery-lithium"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Discover Battery",
+      "familyName": "AES-B-G24-12V-H",
+      "architecture": "12 V LiFePO4 battery",
+      "applicationScope": "Motive-power and floorcare systems",
+      "distinguishingSpecifications": [
+        "12 V nominal family",
+        "UL 2054 manufacturing memo"
+      ],
+      "marketScope": "Official technical memo",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "discover-memo"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "Walk-behind scrubber dryer",
+      "attributeToVerify": "Exact battery identity, Electrical system, Mechanical installation, Connection and protection",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Evaluate tray space, mass, shift duty, charger and service access against the exact machine model.",
+      "basis": "Trojan and U.S. Battery publish floor-machine application families.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Trojan and U.S. Battery publish floor-machine application families.",
+      "scope": "Application portfolio only.",
+      "sourceIds": [
+        "trojan-floor",
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Ride-on floor scrubber",
+      "attributeToVerify": "Exact battery identity, Electrical system, Mechanical installation, Connection and protection",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Battery mass, current demand, runtime, ventilation and vehicle stability become system fields.",
+      "basis": "Official floorcare guidance discusses battery selection across floor machines and chemistries.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Official floorcare guidance discusses battery selection across floor machines and chemistries.",
+      "scope": "Named official application guidance.",
+      "sourceIds": [
+        "discover-floor",
+        "enersys-floorcare"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Opportunity-charged multi-shift use",
+      "attributeToVerify": "Exact battery identity, Electrical system, Mechanical installation, Connection and protection",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Requires a battery, charger and thermal/BMS system explicitly approved for the charge pattern.",
+      "basis": "Official lithium product materials describe managed charging features for named systems.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Official lithium product materials describe managed charging features for named systems.",
+      "scope": "Named U.S. Battery and Discover lithium systems only.",
+      "sourceIds": [
+        "usbattery-lithium",
+        "discover-memo"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact battery identity",
+      "reason": "A case size or voltage label does not define internal design.",
+      "buyerAction": "Approve manufacturer model, chemistry and revision before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "trojan-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Electrical system",
+      "reason": "Same voltage does not prove equivalent energy or power.",
+      "buyerAction": "Approve nominal voltage, capacity basis, current and cutoff before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "usbattery-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Mechanical installation",
+      "reason": "Fit and vehicle stability depend on more than dimensions.",
+      "buyerAction": "Approve tray envelope, mass, restraint, handles and orientation before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "discover-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Connection and protection",
+      "reason": "Incorrect connection can cause high fault current.",
+      "buyerAction": "Approve polarity, terminal, connector, cable, fuse and disconnect before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "enersys-floorcare"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Charging system",
+      "reason": "Matching charger voltage alone is insufficient.",
+      "buyerAction": "Approve chemistry-specific charger profile, temperature and interlock before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "trojan-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72",
+      "jurisdiction": "International",
+      "version": "Current edition must be checked",
+      "applicability": "Safety requirements for automatic floor-treatment machines; battery integration remains part of the complete machine.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "iec-60335-2-72"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "UL 2054",
+      "jurisdiction": "United States",
+      "version": "Current edition must be checked",
+      "applicability": "Discover's official manufacturing memo references UL 2054 for named AES models; no broader certification is inferred.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "discover-memo"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "UN Manual of Tests and Criteria, 38.3",
+      "jurisdiction": "Transport",
+      "version": "Current revision must be checked",
+      "applicability": "Lithium battery transport evidence must match the exact pack and shipping configuration.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "discover-memo"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2022-10-10",
+      "title": "U.S. Battery introduces Essential Li for floor machines",
+      "summary": "The company described a 24 V managed lithium system with BMS and CAN communication for floor-machine use.",
+      "evidence": "The company described a 24 V managed lithium system with BMS and CAN communication for floor-machine use.",
+      "scope": "Named publication or reviewed official portfolio only.",
+      "sourceIds": [
+        "usbattery-lithium"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "date": "2026-08-09",
+      "title": "Official floorcare portfolios retain multiple chemistry paths",
+      "summary": "Reviewed Trojan, U.S. Battery and Discover materials continue to separate flooded, AGM/gel and lithium choices.",
+      "evidence": "Reviewed Trojan, U.S. Battery and Discover materials continue to separate flooded, AGM/gel and lithium choices.",
+      "scope": "Named publication or reviewed official portfolio only.",
+      "sourceIds": [
+        "trojan-floor"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "trojan-floor",
+      "title": "Floor cleaning batteries",
+      "publisher": "Trojan Battery",
+      "sourceType": "manufacturer",
+      "url": "https://www.trojanbattery.com/applications/floor-cleaning-batteries",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "trojan-5shp",
+      "title": "5SHP-AES 12V AGM battery",
+      "publisher": "Trojan Battery",
+      "sourceType": "manufacturer",
+      "url": "https://www.trojanbattery.com/products/5shp-aes-12v-agm-battery",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "trojan-l16",
+      "title": "L16P-AC 6V flooded battery",
+      "publisher": "Trojan Battery",
+      "sourceType": "manufacturer",
+      "url": "https://www.trojanbattery.com/products/l16p-ac-6v-flooded-battery",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "trojan-31xcs",
+      "title": "31XCS 12V flooded battery",
+      "publisher": "Trojan Battery",
+      "sourceType": "manufacturer",
+      "url": "https://www.trojanbattery.com/products/31xcs-12v-flooded-lead-acid-battery",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "usbattery-floor",
+      "title": "Floor machine batteries",
+      "publisher": "U.S. Battery",
+      "sourceType": "manufacturer",
+      "url": "https://www.usbattery.com/products/fm-floor-machine/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "usbattery-lithium",
+      "title": "Essential Li floor-machine battery introduction",
+      "publisher": "U.S. Battery",
+      "sourceType": "manufacturer",
+      "url": "https://www.usbattery.com/u-s-battery-mfg-co-to-showcase-its-new-essential-li-lithium-ion-deep-cycle-battery-at-the-issa-north-america-2022/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "discover-floor",
+      "title": "Floor scrubber batteries",
+      "publisher": "Discover Battery",
+      "sourceType": "manufacturer",
+      "url": "https://discoverbattery.com/applications/motive-power/floor-scrubber-batteries",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "discover-memo",
+      "title": "Lithium Blue UL 2054 manufacturing memo",
+      "publisher": "Discover Battery",
+      "sourceType": "manufacturer",
+      "url": "https://discoverbattery.com/s4x_files/resources/db-lithium-blue-manufacturing-memo-ul2054.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "enersys-floorcare",
+      "title": "Floorcare power selection technical article",
+      "publisher": "EnerSys",
+      "sourceType": "technical",
+      "url": "https://www.enersys.com/4a93eb/globalassets/documents/product-documentation/_enersys/amer/amer-en-article-floorcare1-1024.pdf",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "iec-60335-2-72",
+      "title": "IEC 60335-2-72 floor treatment machines",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/69176",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1240" viewBox="0 0 760 1240">
+    <rect width="760" height="1240" fill="#eef5f3"/><text x="380" y="90" text-anchor="middle" font-family="Arial" font-size="42" font-weight="700" fill="#18352f">Compatibility gate</text>
+    <text x="380" y="145" text-anchor="middle" font-family="Arial" font-size="23" fill="#5a706b">Every field must be tied to an exact source and scope</text><g><rect x="55" y="210" width="650" height="155" rx="24" fill="#fff" stroke="#d8e5e1" stroke-width="3"/>
+      <circle cx="97" cy="253" r="22" fill="#0c6b73"/><text x="97" y="261" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">1</text>
+      <text x="140" y="263"  font-family="Arial" font-size="29" font-weight="700" fill="#18352f">Exact pump model</text>
+      <text x="140" y="315"  font-family="Arial" font-size="22" fill="#5a706b">Document the stated boundary</text><path d="M380 365 v24" stroke="#0c6b73" stroke-width="5"/><path d="M367 379 l13 14 13-14" fill="none" stroke="#0c6b73" stroke-width="5"/></g><g><rect x="55" y="397" width="650" height="155" rx="24" fill="#fff" stroke="#d8e5e1" stroke-width="3"/>
+      <circle cx="97" cy="440" r="22" fill="#0c6b73"/><text x="97" y="448" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">2</text>
+      <text x="140" y="450"  font-family="Arial" font-size="29" font-weight="700" fill="#18352f">Shaft + flange</text>
+      <text x="140" y="502"  font-family="Arial" font-size="22" fill="#5a706b">Document the stated boundary</text><path d="M380 552 v24" stroke="#0c6b73" stroke-width="5"/><path d="M367 566 l13 14 13-14" fill="none" stroke="#0c6b73" stroke-width="5"/></g><g><rect x="55" y="584" width="650" height="155" rx="24" fill="#fff" stroke="#d8e5e1" stroke-width="3"/>
+      <circle cx="97" cy="627" r="22" fill="#0c6b73"/><text x="97" y="635" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">3</text>
+      <text x="140" y="637"  font-family="Arial" font-size="29" font-weight="700" fill="#18352f">RPM + rotation</text>
+      <text x="140" y="689"  font-family="Arial" font-size="22" fill="#5a706b">Document the stated boundary</text><path d="M380 739 v24" stroke="#0c6b73" stroke-width="5"/><path d="M367 753 l13 14 13-14" fill="none" stroke="#0c6b73" stroke-width="5"/></g><g><rect x="55" y="771" width="650" height="155" rx="24" fill="#fff" stroke="#d8e5e1" stroke-width="3"/>
+      <circle cx="97" cy="814" r="22" fill="#0c6b73"/><text x="97" y="822" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">4</text>
+      <text x="140" y="824"  font-family="Arial" font-size="29" font-weight="700" fill="#18352f">Ports + unloader</text>
+      <text x="140" y="876"  font-family="Arial" font-size="22" fill="#5a706b">Document the stated boundary</text><path d="M380 926 v24" stroke="#0c6b73" stroke-width="5"/><path d="M367 940 l13 14 13-14" fill="none" stroke="#0c6b73" stroke-width="5"/></g><g><rect x="55" y="958" width="650" height="155" rx="24" fill="#fff" stroke="#d8e5e1" stroke-width="3"/>
+      <circle cx="97" cy="1001" r="22" fill="#0c6b73"/><text x="97" y="1009" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">5</text>
+      <text x="140" y="1011"  font-family="Arial" font-size="29" font-weight="700" fill="#18352f">Duty + safety</text>
+      <text x="140" y="1063"  font-family="Arial" font-size="22" fill="#5a706b">Document the stated boundary</text></g>
+    <rect x="55" y="1115" width="650" height="70" rx="20" fill="#0c6b73"/>
+    <text x="380" y="1160" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#fff">A missing field stops approval — it does not become a probable match</text>
+  </svg>

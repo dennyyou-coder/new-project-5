@@ -1,0 +1,847 @@
+{
+  "status": "published",
+  "slug": "vacuum-cleaner-filter",
+  "name": "Vacuum Cleaner Filter",
+  "aliases": [
+    "vacuum filter",
+    "HEPA vacuum filter",
+    "exhaust filter",
+    "pre-motor filter"
+  ],
+  "definition": "A vacuum-cleaner filter profile covers filtration position, media, sealing, class or test claims, pressure-drop and service boundaries; it does not make similarly shaped filters interchangeable across appliance models.",
+  "includedScope": [
+    "Pre-motor, main, cartridge, flat-pleated and exhaust filter roles",
+    "Official particle-class and efficiency claims with their stated test boundary",
+    "Part-number, model, seal, dimension and wet/dry checks"
+  ],
+  "excludedScope": [
+    "Dust bags as universal substitutes for filters",
+    "Health or medical outcome claims",
+    "Unverified aftermarket interchangeability"
+  ],
+  "primaryApplications": [
+    "Household canister and cordless vacuums",
+    "Wet/dry vacuums",
+    "Commercial dry vacuums",
+    "Dust-class and HEPA-filtered systems"
+  ],
+  "headline": "HEPA wording, color and shape are not enough—the exact part, filter position, seal and test boundary must match.",
+  "description": "This profile separates filter function, filtration claims, airflow restrictions and model-specific compatibility so buyers can compare evidence without converting a class label into universal fit.",
+  "metaDescription": "Vacuum cleaner filter types, HEPA classes, filter positions, pressure-drop and wet/dry boundaries, official part families and compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, electrical and control specification, mechanical and fluid or airflow interfaces, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/vacuum-cleaner-filter/hero.webp",
+  "heroImageAlt": "Kärcher vacuum filter family arranged across a dark background",
+  "heroImageCaption": "Official Kärcher filter overview image presented on a WCB canvas; product-family imagery does not establish compatibility.",
+  "heroSourceUrl": "https://s1.kaercher-media.com/media/image/selection/142706/d0/filter_header_update.jpg",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-filter/architecture-family.webp",
+      "alt": "Kärcher Safety and HEPA flat-pleated filters",
+      "caption": "Official Kärcher Safety/HEPA flat-pleated filter image on a WCB canvas, showing one manufacturer's family boundaries.",
+      "sourceUrl": "https://s1.kaercher-media.com/media/image/selection/142714/d0/flat-pleated-filter-safetyhepa_update.png"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-filter/performance-boundaries.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-filter/performance-boundaries-mobile.svg",
+      "alt": "Vacuum Cleaner Filter performance reporting boundary diagram",
+      "caption": "WCB reporting-boundary map: retain the stated unit, operating point, test method and product scope before comparing values.",
+      "sourceIds": [
+        "karcher-filter",
+        "karcher-hepa",
+        "dyson-v15",
+        "miele-guide"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-filter/application-reference.webp",
+      "alt": "Kärcher Ultimate flat-pleated filter",
+      "caption": "Official Kärcher Ultimate flat-pleated filter image on a WCB canvas; media color is not a compatibility identifier.",
+      "sourceUrl": "https://s1.kaercher-media.com/media/image/selection/142720/d0/flat-pleated-filter-ultimate_update.png"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-filter/compatibility-gate.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-filter/compatibility-gate-mobile.svg",
+      "alt": "Vacuum Cleaner Filter compatibility approval gate",
+      "caption": "WCB compatibility gate: an undocumented field stops approval rather than becoming a probable match.",
+      "sourceIds": [
+        "karcher-filter",
+        "karcher-hepa",
+        "dyson-v15",
+        "miele-guide"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "System role",
+      "value": "A vacuum may use multiple filters in different positions",
+      "evidence": "Miele describes an AirClean system with dustbag, motor-protection filter and exhaust filter.",
+      "scope": "Miele named system only.",
+      "sourceIds": [
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Claim boundary",
+      "value": "HEPA class and percentage claims require the stated method and product configuration",
+      "evidence": "Kärcher publishes an H14 glass-fibre filter and a 99.995% claim for a named accessory; Miele references EN 1822:2019 for named products.",
+      "scope": "Named manufacturer products and their stated tests only.",
+      "sourceIds": [
+        "karcher-hepa",
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "label": "Compatibility boundary",
+      "value": "Part number and appliance model remain primary identifiers",
+      "evidence": "Dyson and Nilfisk list filters against specific vacuum models or ranges.",
+      "scope": "Named official spare-parts catalogues only.",
+      "sourceIds": [
+        "dyson-v15",
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Pre-separation",
+      "role": "Cyclones, bags or upstream stages remove part of the load before fine filtration.",
+      "evidence": "Miele describes the bag as one stage in a multi-stage system.",
+      "scope": "Miele AirClean description.",
+      "sourceIds": [
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 2,
+      "name": "Motor protection",
+      "role": "An upstream filter reduces particle exposure at the motor inlet.",
+      "evidence": "Miele explicitly identifies a motor-protection filter within its system.",
+      "scope": "Miele system only.",
+      "sourceIds": [
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 3,
+      "name": "Main or cartridge filtration",
+      "role": "Pleated or cartridge media separates particles while maintaining the designed airflow path.",
+      "evidence": "Kärcher separates cartridge and flat-pleated families by application and material.",
+      "scope": "Kärcher portfolio taxonomy.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "order": 4,
+      "name": "Exhaust filtration",
+      "role": "A downstream filter addresses particles remaining in discharged air within the stated class and seal boundary.",
+      "evidence": "Dyson, Miele and Nilfisk publish model-specific post-motor or HEPA accessories.",
+      "scope": "Named official product ranges.",
+      "sourceIds": [
+        "dyson-v15",
+        "miele-catalog",
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Cartridge or cylindrical filter",
+      "operatingPrinciple": "Pleated media is formed around a supporting core and sealed into a model-specific frame.",
+      "applicationBoundary": "Common in wet/dry and cartridge-based vacuum designs.",
+      "benefits": [
+        "Large media area in a compact envelope",
+        "Replaceable assembly"
+      ],
+      "limitations": [
+        "Dimensions and end seals vary",
+        "Wet-use permission is product-specific"
+      ],
+      "buyerCheck": "Match exact accessory number, media, dimensions, seals and wet/dry declaration.",
+      "evidence": "Kärcher publishes cartridge and wet/dry product groups with distinct uses.",
+      "scope": "Kärcher official portfolio.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Flat-pleated filter",
+      "operatingPrinciple": "Pleated media is packaged in a flat frame or cassette.",
+      "applicationBoundary": "Kärcher separates Safety/HEPA, Ultimate, Wet & Dry and Dry families.",
+      "benefits": [
+        "Compact cassette geometry",
+        "Application-specific media families"
+      ],
+      "limitations": [
+        "Color does not prove media or fit",
+        "Class claims are configuration-specific"
+      ],
+      "buyerCheck": "Verify part number, dust class, media, filter position and machine list.",
+      "evidence": "Kärcher official filter overview separates four flat-pleated categories.",
+      "scope": "Kärcher taxonomy only.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Pre-motor and exhaust pair",
+      "operatingPrinciple": "Separate upstream and downstream filters protect the motor and manage discharged particles.",
+      "applicationBoundary": "Cordless and canister systems may use distinct filter positions and part numbers.",
+      "benefits": [
+        "Different functions can be optimized separately",
+        "Service intervals can be documented by position"
+      ],
+      "limitations": [
+        "Filters may look similar while serving different positions",
+        "Omitting one stage changes system performance"
+      ],
+      "buyerCheck": "Confirm every required filter position and exact appliance model.",
+      "evidence": "Dyson and Miele publish model-specific filter and system guidance.",
+      "scope": "Named Dyson and Miele systems.",
+      "sourceIds": [
+        "dyson-v15",
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Filter position",
+      "purchasingMeaning": "Defines whether the part protects the motor, performs main separation or filters exhaust",
+      "reportingBoundary": "Use the manufacturer's service terminology",
+      "comparisonCaution": "Do not substitute an exhaust filter for a pre-motor part.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Filtration class or efficiency",
+      "purchasingMeaning": "Describes a result under a named standard or manufacturer method",
+      "reportingBoundary": "Class, particle size, percentage, method and configuration must stay together",
+      "comparisonCaution": "Do not compare percentages with missing test boundaries.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "karcher-hepa"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Pressure drop",
+      "purchasingMeaning": "Influences airflow, motor load and service indicators",
+      "reportingBoundary": "Report at the stated airflow and loading condition",
+      "comparisonCaution": "Higher filtration wording does not automatically mean better system performance.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "dyson-v15"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Media and wet/dry use",
+      "purchasingMeaning": "Controls moisture tolerance, cleaning method and application",
+      "reportingBoundary": "Paper, fleece, glass fibre and other media need exact manufacturer guidance",
+      "comparisonCaution": "Do not wash or wet a filter unless explicitly permitted.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Seal and dimensions",
+      "purchasingMeaning": "Define bypass leakage and physical installation",
+      "reportingBoundary": "Frame, gasket, latch and orientation are compatibility fields",
+      "comparisonCaution": "A small seal gap can invalidate a filtration claim.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "Service interval",
+      "purchasingMeaning": "Controls maintenance and replacement planning",
+      "reportingBoundary": "Wash, dry, replace and alarm instructions are model-specific",
+      "comparisonCaution": "Do not reuse until the manufacturer-stated dry condition is met.",
+      "evidence": "Official sources publish this field or the related product boundary for named families.",
+      "scope": "Use the exact source and current model documentation; field labels and test points vary by manufacturer.",
+      "sourceIds": [
+        "karcher-hepa"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Cordless vacuum",
+      "wcbAssessment": "Requires exact model, filter position, wash/dry instructions and current spare-part number.",
+      "assessment": "Requires exact model, filter position, wash/dry instructions and current spare-part number.",
+      "basis": "Dyson lists distinct V15 filter part numbers and model scope.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Dyson lists distinct V15 filter part numbers and model scope.",
+      "scope": "Named Dyson V15 variants only.",
+      "sourceIds": [
+        "dyson-v15",
+        "dyson-support"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Household canister vacuum",
+      "wcbAssessment": "Bag, motor-protection and exhaust stages must be evaluated as one documented system.",
+      "assessment": "Bag, motor-protection and exhaust stages must be evaluated as one documented system.",
+      "basis": "Miele describes its AirClean system and model-compatible exhaust filters.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Miele describes its AirClean system and model-compatible exhaust filters.",
+      "scope": "Named Miele system and accessories.",
+      "sourceIds": [
+        "miele-guide",
+        "miele-catalog"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "application": "Commercial or wet/dry vacuum",
+      "wcbAssessment": "Media, wet-use permission, dust class, seal and machine range must all be documented.",
+      "assessment": "Media, wet-use permission, dust class, seal and machine range must all be documented.",
+      "basis": "Kärcher separates filter families by media and application; Nilfisk lists exact machine ranges.",
+      "limitations": "No exact machine, runtime, safety or compatibility approval is established by application-level evidence.",
+      "buyerAction": "Match the exact component, machine, operating profile and current manufacturer documentation.",
+      "evidence": "Kärcher separates filter families by media and application; Nilfisk lists exact machine ranges.",
+      "scope": "Named Kärcher and Nilfisk products.",
+      "sourceIds": [
+        "karcher-filter",
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact filter identity",
+      "requiredMatch": "Manufacturer part number and current revision",
+      "why": "Family name or HEPA wording does not identify a part.",
+      "buyerAction": "Record and approve manufacturer part number and current revision from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Appliance scope",
+      "requiredMatch": "Exact model, variant and serial range",
+      "why": "Similar models can use different frames or filter positions.",
+      "buyerAction": "Record and approve exact model, variant and serial range from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "karcher-hepa"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Filter position",
+      "requiredMatch": "Pre-motor, main, cartridge or exhaust",
+      "why": "Different positions perform different system roles.",
+      "buyerAction": "Record and approve pre-motor, main, cartridge or exhaust from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "dyson-v15"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Media and claim",
+      "requiredMatch": "Material, class, efficiency, method and configuration",
+      "why": "A class label without the test boundary is incomplete.",
+      "buyerAction": "Record and approve material, class, efficiency, method and configuration from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Mechanical seal",
+      "requiredMatch": "Dimensions, gasket, frame, latch and orientation",
+      "why": "Bypass leakage can defeat the intended filtration path.",
+      "buyerAction": "Record and approve dimensions, gasket, frame, latch and orientation from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Service condition",
+      "requiredMatch": "Dry/wet permission, wash method, drying and replacement interval",
+      "why": "Incorrect cleaning can damage media or increase restriction.",
+      "buyerAction": "Record and approve dry/wet permission, wash method, drying and replacement interval from current official documentation.",
+      "evidence": "Reviewed official product pages distinguish models by this field or a directly related integration boundary.",
+      "scope": "Exact product and machine documentation controls.",
+      "sourceIds": [
+        "karcher-hepa"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Reduced suction or airflow",
+      "possibleCauses": [
+        "Loaded filter",
+        "Incorrectly dried or installed filter",
+        "Blocked air path"
+      ],
+      "safetyBoundary": "Disconnect power before opening the appliance.",
+      "serviceAction": "Follow the exact model's filter inspection and maintenance procedure.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Dust bypass or visible leakage",
+      "possibleCauses": [
+        "Damaged gasket",
+        "Wrong part or orientation",
+        "Cracked frame or housing"
+      ],
+      "safetyBoundary": "Do not continue use where hazardous dust containment is required.",
+      "serviceAction": "Confirm the seal path and replace only with the approved exact part.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "karcher-hepa"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "symptom": "Odour, moisture or filter damage",
+      "possibleCauses": [
+        "Unapproved washing",
+        "Operation with wet media",
+        "Chemical or heat exposure"
+      ],
+      "safetyBoundary": "Avoid handling contaminated media without the required controls.",
+      "serviceAction": "Use manufacturer cleaning, drying and disposal instructions.",
+      "evidence": "Manufacturer product and application materials establish different operating and service boundaries that can produce this inspection category when exceeded or mismatched.",
+      "scope": "WCB inspection categories only; not a diagnosis for a specific machine.",
+      "sourceIds": [
+        "dyson-v15"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "HEPA surface filter 6.904-364.0",
+      "architecture": "H14 exhaust/surface filter",
+      "applicationScope": "Named dry vacuum cleaners",
+      "distinguishingSpecifications": [
+        "H14 glass fibre",
+        "99.995% stated separation"
+      ],
+      "marketScope": "UK official accessory page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "karcher-hepa"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "KFI 4410",
+      "architecture": "Flat-pleated filter",
+      "applicationScope": "Named wet/dry vacuum models",
+      "distinguishingSpecifications": [
+        "Official part 2.863-005.0",
+        "Model list required"
+      ],
+      "marketScope": "International official page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "karcher-kfi"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Dyson",
+      "familyName": "970013-02",
+      "architecture": "Model-specific filter assembly",
+      "applicationScope": "Named V15 cordless models",
+      "distinguishingSpecifications": [
+        "Official spare-part number",
+        "Exact model scope"
+      ],
+      "marketScope": "US official spare-parts page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "dyson-v15"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Dyson",
+      "familyName": "970013-03",
+      "architecture": "Model-specific filter assembly",
+      "applicationScope": "Named V15 cordless models",
+      "distinguishingSpecifications": [
+        "Official spare-part number",
+        "Variant-specific listing"
+      ],
+      "marketScope": "US official spare-parts page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "dyson-v15"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Miele",
+      "familyName": "SF-HA 50-1",
+      "architecture": "HEPA AirClean exhaust filter",
+      "applicationScope": "Compatible Miele canister models",
+      "distinguishingSpecifications": [
+        "Official accessory family",
+        "Model compatibility required"
+      ],
+      "marketScope": "UK official catalogue",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "miele-catalog"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Miele",
+      "familyName": "SF-AA 50-1",
+      "architecture": "Active AirClean exhaust filter",
+      "applicationScope": "Compatible Miele canister models",
+      "distinguishingSpecifications": [
+        "Official accessory family",
+        "Model compatibility required"
+      ],
+      "marketScope": "UK official catalogue",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "miele-catalog"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "manufacturer": "Nilfisk",
+      "familyName": "107409854",
+      "architecture": "HEPA 14 filter",
+      "applicationScope": "Named Nilfisk vacuum range",
+      "distinguishingSpecifications": [
+        "Official part number",
+        "HEPA 14 listing"
+      ],
+      "marketScope": "Global official accessories page",
+      "evidence": "The official source lists the named family and the stated specifications or application scope.",
+      "scope": "Named product/family and source-market page only.",
+      "sourceIds": [
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "Cordless vacuum",
+      "attributeToVerify": "Exact filter identity, Appliance scope, Filter position, Media and claim",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Requires exact model, filter position, wash/dry instructions and current spare-part number.",
+      "basis": "Dyson lists distinct V15 filter part numbers and model scope.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Dyson lists distinct V15 filter part numbers and model scope.",
+      "scope": "Named Dyson V15 variants only.",
+      "sourceIds": [
+        "dyson-v15",
+        "dyson-support"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Household canister vacuum",
+      "attributeToVerify": "Exact filter identity, Appliance scope, Filter position, Media and claim",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Bag, motor-protection and exhaust stages must be evaluated as one documented system.",
+      "basis": "Miele describes its AirClean system and model-compatible exhaust filters.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Miele describes its AirClean system and model-compatible exhaust filters.",
+      "scope": "Named Miele system and accessories.",
+      "sourceIds": [
+        "miele-guide",
+        "miele-catalog"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "intendedUse": "Commercial or wet/dry vacuum",
+      "attributeToVerify": "Exact filter identity, Appliance scope, Filter position, Media and claim",
+      "comparisonTrap": "Approving from one headline value, family label or physical appearance.",
+      "assessment": "Media, wet-use permission, dust class, seal and machine range must all be documented.",
+      "basis": "Kärcher separates filter families by media and application; Nilfisk lists exact machine ranges.",
+      "limitations": "The reviewed sources do not establish fit to an unnamed machine or duty profile.",
+      "buyerAction": "Build a signed comparison sheet using current manufacturer documentation.",
+      "evidence": "Kärcher separates filter families by media and application; Nilfisk lists exact machine ranges.",
+      "scope": "Named Kärcher and Nilfisk products.",
+      "sourceIds": [
+        "karcher-filter",
+        "nilfisk-accessories"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact filter identity",
+      "reason": "Family name or HEPA wording does not identify a part.",
+      "buyerAction": "Approve manufacturer part number and current revision before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Appliance scope",
+      "reason": "Similar models can use different frames or filter positions.",
+      "buyerAction": "Approve exact model, variant and serial range before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "karcher-hepa"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Filter position",
+      "reason": "Different positions perform different system roles.",
+      "buyerAction": "Approve pre-motor, main, cartridge or exhaust before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "dyson-v15"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Media and claim",
+      "reason": "A class label without the test boundary is incomplete.",
+      "buyerAction": "Approve material, class, efficiency, method and configuration before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "check": "Mechanical seal",
+      "reason": "Bypass leakage can defeat the intended filtration path.",
+      "buyerAction": "Approve dimensions, gasket, frame, latch and orientation before release.",
+      "evidence": "Official model tables and application documents show this as a product or system boundary.",
+      "scope": "Exact project, component and machine scope only.",
+      "sourceIds": [
+        "karcher-filter"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "standards": [
+    {
+      "name": "EN 1822:2019",
+      "jurisdiction": "Europe",
+      "version": "2019",
+      "applicability": "Referenced by Miele for named HEPA filter performance; verify the exact product and test configuration.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "ASTM F3150",
+      "jurisdiction": "United States",
+      "version": "Current edition must be checked",
+      "applicability": "Dyson references ASTM F3150 for whole-machine filtration claims; this is not a universal filter-only rating.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "dyson-faq"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "name": "IEC 62885-2",
+      "jurisdiction": "International",
+      "version": "Current edition must be checked",
+      "applicability": "Dry-vacuum performance methods apply at appliance level; they do not turn a spare filter into a universal fit.",
+      "evidence": "The official source states the named standard or its applicability boundary.",
+      "scope": "Standard scope only; no product certification is inferred.",
+      "sourceIds": [
+        "iec-62885-2"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-09",
+      "title": "WCB reviews Miele's EN 1822:2019 reference",
+      "summary": "The reviewed Miele guidance identifies the standard for named filter claims.",
+      "evidence": "The reviewed Miele guidance identifies the standard for named filter claims.",
+      "scope": "Named publication or reviewed official portfolio only.",
+      "sourceIds": [
+        "miele-guide"
+      ],
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "date": "2026-08-09",
+      "title": "Official catalogues retain model-specific filter mapping",
+      "summary": "Reviewed Dyson, Miele, Nilfisk and Kärcher pages continue to list filters by part and appliance scope.",
+      "evidence": "Reviewed Dyson, Miele, Nilfisk and Kärcher pages continue to list filters by part and appliance scope.",
+      "scope": "Named publication or reviewed official portfolio only.",
+      "sourceIds": [
+        "dyson-v15"
+      ],
+      "verifiedAt": "2026-08-09"
+    }
+  ],
+  "sources": [
+    {
+      "id": "karcher-filter",
+      "title": "Filters for vacuum cleaners",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/filter.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-hepa",
+      "title": "HEPA surface filter 6.904-364.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/uk/accessory/hepa-surface-filter-69043640.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "karcher-kfi",
+      "title": "Flat pleated filter KFI 4410",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/accessory/flat-pleated-filter-kfi-4410-28630050.html",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "dyson-v15",
+      "title": "Dyson V15 Detect spare parts",
+      "publisher": "Dyson",
+      "sourceType": "manufacturer",
+      "url": "https://www.dyson.com/spare-parts/vacuum-cleaners/cordless/v15-detect",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "dyson-support",
+      "title": "Dyson V15 Detect support",
+      "publisher": "Dyson",
+      "sourceType": "manufacturer",
+      "url": "https://www.dyson.com/support/vacuum-cleaners/cordless/v15-detect",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "dyson-faq",
+      "title": "Spare parts frequently asked questions",
+      "publisher": "Dyson",
+      "sourceType": "manufacturer",
+      "url": "https://www.dyson.com/spare-parts/frequently-asked-questions",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "miele-catalog",
+      "title": "Vacuum cleaner bags and filters",
+      "publisher": "Miele",
+      "sourceType": "manufacturer",
+      "url": "https://www.miele.co.uk/category/1022153/vacuum-cleaner-bags-and-filters",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "miele-guide",
+      "title": "Vacuum cleaner bags and filters guide",
+      "publisher": "Miele",
+      "sourceType": "manufacturer",
+      "url": "https://www.miele.co.uk/c/vacuum-cleaner-bags-and-filters-9572.htm",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "nilfisk-accessories",
+      "title": "Vacuum cleaner accessories",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/global/consumer/vacuum-cleaner-accessories/",
+      "accessedAt": "2026-08-09"
+    },
+    {
+      "id": "iec-62885-2",
+      "title": "IEC 62885-2 dry vacuum cleaners",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/62795",
+      "accessedAt": "2026-08-09"
+    }
+  ],
+  "publishedAt": "2026-08-09",
+  "lastVerified": "2026-08-09",
+  "lastModified": "2026-08-09"
+}
