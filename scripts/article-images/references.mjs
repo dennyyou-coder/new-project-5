@@ -59,7 +59,7 @@ function bodyImageReferences(body) {
   for (const match of body.matchAll(imageReference)) {
     const reference = match[1] ?? match[2] ?? match[3] ?? match[4];
     const normalized = normalizeLocalImageReference(reference);
-    if (normalized) references.push(normalized);
+    references.push(normalized);
   }
   return references;
 }
@@ -108,7 +108,11 @@ export function discoverArticleInventory({ contentRoot, publicRoot }) {
     const coverUrl = register(cover, "cover");
     const socialUrl = register(social, "cover");
     const body = [];
-    for (const url of bodyImageReferences(sourceBody)) {
+    const bodyReferences = bodyImageReferences(sourceBody);
+    // Historical articles conventionally repeat the cover once as their first body image.
+    if (coverUrl && bodyReferences[0] === coverUrl) bodyReferences.shift();
+    for (const url of bodyReferences) {
+      if (!url) continue;
       register(url, "body");
       if (!body.includes(url)) body.push(url);
     }

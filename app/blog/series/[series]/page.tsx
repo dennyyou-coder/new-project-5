@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBlogSeriesPageData, getBlogSeriesSlugs } from "@/lib/blogSeries";
+import { responsiveImageProps } from "@/lib/articleImages";
 import { getInsights } from "@/lib/content";
 import { seoDescription, seoTitle } from "@/lib/seo";
 
@@ -156,10 +157,14 @@ export default async function BlogSeriesPage({
                       aria-label={`Read ${article.title}`}
                     >
                       <img
-                        src={article.coverImage || "/images/site-refresh/real/city-architecture.webp"}
+                        {...(article.coverImage
+                          ? responsiveImageProps(article.coverImage, "card")
+                          : {
+                              src: "/images/site-refresh/real/city-architecture.webp",
+                              loading: "lazy" as const,
+                              decoding: "async" as const
+                            })}
                         alt={article.coverAlt || `${article.title} cover`}
-                        loading="lazy"
-                        decoding="async"
                       />
                     </Link>
                     <div className="blog-series-page-card-copy">

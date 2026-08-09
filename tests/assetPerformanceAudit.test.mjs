@@ -58,8 +58,8 @@ test("referenced raster assets stay within the one MiB transfer budget", () => {
   );
 });
 
-test("article image dimensions come from the generated manifest", () => {
-  const manifestPath = path.join(root, "lib", "generated", "image-dimensions.json");
+test("article image dimensions come from the responsive article manifest", () => {
+  const manifestPath = path.join(root, "lib", "generated", "article-image-manifest.json");
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
   const articleSources = walk(path.join(root, "content", "insights"))
     .filter((file) => file.endsWith(".mdx"))
@@ -69,7 +69,7 @@ test("article image dimensions come from the generated manifest", () => {
     [...articleSources.matchAll(rasterReference)].map((match) => match[1])
   );
   const missingDimensions = [...articleReferences].filter((reference) => {
-    const dimensions = manifest[reference];
+    const dimensions = manifest.assets[reference];
     return !dimensions || dimensions.width <= 0 || dimensions.height <= 0;
   });
 

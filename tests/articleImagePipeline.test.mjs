@@ -80,6 +80,61 @@ test("discovers and normalizes local article image references while retaining bo
   );
 });
 
+test("treats one leading body reference to the cover as the conventional cover duplicate", () => {
+  const project = makeFixtureProject();
+  const cover = "/images/articles/leading-cover-duplicate/01-cover.webp";
+  const bodyImage = "/images/articles/leading-cover-duplicate/02-product.webp";
+  writePublicImage({ publicRoot: project.publicRoot, url: cover });
+  writePublicImage({ publicRoot: project.publicRoot, url: bodyImage });
+  writeArticle({
+    contentRoot: project.contentRoot,
+    slug: "leading-cover-duplicate",
+    frontmatter: `coverImage: ${cover}\n`,
+    body: `![cover](${cover})\n\n![product](${bodyImage})`
+  });
+
+  const inventory = discoverArticleInventory(project);
+
+  assert.deepEqual(inventory.articles["leading-cover-duplicate"].body, [bodyImage]);
+  assert.deepEqual(Object.keys(inventory.assets), [cover, bodyImage]);
+});
+
+test("rejects a cover reference that occurs again after the conventional leading duplicate", () => {
+  const project = makeFixtureProject();
+  const cover = "/images/articles/repeated-cover-conflict/01-cover.webp";
+  const bodyImage = "/images/articles/repeated-cover-conflict/02-product.webp";
+  writePublicImage({ publicRoot: project.publicRoot, url: cover });
+  writePublicImage({ publicRoot: project.publicRoot, url: bodyImage });
+  writeArticle({
+    contentRoot: project.contentRoot,
+    slug: "repeated-cover-conflict",
+    frontmatter: `coverImage: ${cover}\n`,
+    body: `![cover](${cover})\n\n![product](${bodyImage})\n\n![cover again](${cover})`
+  });
+
+  assert.throws(
+    () => discoverArticleInventory(project),
+    /repeated-cover-conflict.*repeated-cover-conflict\.mdx.*conflicting roles/i
+  );
+});
+
+test("rejects a cover reference preceded by an external body image", () => {
+  const project = makeFixtureProject();
+  const cover = "/images/articles/external-before-cover/01-cover.webp";
+  writePublicImage({ publicRoot: project.publicRoot, url: cover });
+  writeArticle({
+    contentRoot: project.contentRoot,
+    slug: "external-before-cover",
+    frontmatter: `coverImage: ${cover}\n`,
+    body: `![external](https://cdn.example.com/first.jpg)\n\n![cover later](${cover})`
+  });
+
+  assert.throws(
+    () => discoverArticleInventory(project),
+    /external-before-cover.*external-before-cover\.mdx.*conflicting roles/i
+  );
+});
+
 test("only assigns the deep budget when explicit deep frontmatter has more than eight body images", () => {
   const project = makeFixtureProject();
   const deepBody = Array.from({ length: 9 }, (_, index) => {
@@ -137,7 +192,7 @@ test("reports invalid slugs, missing files, conflicting roles, and unknown budge
     {
       slug: "conflicting-role",
       frontmatter: "coverImage: /images/articles/conflicting-role/01-cover.webp\n",
-      body: "![cover again](/images/articles/conflicting-role/01-cover.webp)",
+      body: "![body first](/images/articles/conflicting-role/02-product.webp)\n\n![cover later](/images/articles/conflicting-role/01-cover.webp)",
       message: /conflicting-role.*conflicting-role\.mdx.*conflicting roles/i
     },
     {
@@ -154,6 +209,10 @@ test("reports invalid slugs, missing files, conflicting roles, and unknown budge
       writePublicImage({
         publicRoot: project.publicRoot,
         url: "/images/articles/conflicting-role/01-cover.webp"
+      });
+      writePublicImage({
+        publicRoot: project.publicRoot,
+        url: "/images/articles/conflicting-role/02-product.webp"
       });
     }
     writeArticle({ contentRoot: project.contentRoot, ...scenario });

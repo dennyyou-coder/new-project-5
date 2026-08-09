@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArticleBrandLinks } from "@/components/ArticleBrandLinks";
 import { BlogConversionCta } from "@/components/BlogConversionCta";
 import { getPublishedBrandProfiles } from "@/lib/brands";
+import { responsiveImageProps } from "@/lib/articleImages";
 import {
   getInsight,
   getInsights,
@@ -362,7 +363,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
             {article.coverImage ? (
               <figure className="blog-article-cover">
-                <img src={article.coverImage} alt={article.coverAlt || article.title} width={article.coverWidth} height={article.coverHeight} fetchPriority="high" decoding="async" />
+                <img {...responsiveImageProps(article.coverImage, "cover")} alt={article.coverAlt || article.title} />
               </figure>
             ) : null}
 
@@ -460,7 +461,16 @@ export default async function InsightDetailPage({ params }: Props) {
                   key={item.slug}
                 >
                   <div className="related-signal-image">
-                    <img src={item.coverImage || "/images/site-refresh/real/city-architecture.webp"} alt="" width={item.coverWidth} height={item.coverHeight} loading="lazy" decoding="async" />
+                    <img
+                      {...(item.coverImage
+                        ? responsiveImageProps(item.coverImage, "card")
+                        : {
+                            src: "/images/site-refresh/real/city-architecture.webp",
+                            loading: "lazy" as const,
+                            decoding: "async" as const
+                          })}
+                      alt=""
+                    />
                   </div>
                   <div className="meta">{item.category}</div>
                   <h3>{item.title}</h3>

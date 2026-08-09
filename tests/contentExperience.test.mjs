@@ -31,10 +31,11 @@ test("Blog landing does not introduce a nested main landmark", () => {
   assert.doesNotMatch(blogLanding, /<main\b/);
 });
 
-test("Blog images use intentional eager and lazy loading", () => {
-  assert.match(blogLanding, /fetchPriority="high"/);
-  assert.match(blogLanding, /loading="lazy"/);
-  assert.match(blogLanding, /decoding="async"/);
+test("Blog cards use the shared lazy responsive image contract", () => {
+  assert.match(blogLanding, /responsiveImageProps\(article\.coverImage, "card"\)/);
+  assert.doesNotMatch(blogLanding, /fetchPriority="high"/);
+  assert.match(blogLanding, /loading:\s*"lazy"/);
+  assert.match(blogLanding, /decoding:\s*"async"/);
 });
 
 test("Archive exposes paginated analysis, reading metadata, and structured data", () => {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getFeaturedSeriesLinks } from "@/lib/blogSeries";
+import { responsiveImageProps } from "@/lib/articleImages";
 import type { Insight } from "@/lib/content";
 
 const fallbackImages = [
@@ -9,8 +10,14 @@ const fallbackImages = [
   "/images/industry/about-forum-audience-2025.jpg"
 ];
 
-function imageFor(article: Insight, index: number) {
-  return article.coverImage || fallbackImages[index % fallbackImages.length];
+function imagePropsFor(article: Insight, index: number) {
+  return article.coverImage
+    ? responsiveImageProps(article.coverImage, "card")
+    : {
+        src: fallbackImages[index % fallbackImages.length],
+        loading: "lazy" as const,
+        decoding: "async" as const
+      };
 }
 
 export function BlogSeriesHero({ article }: { article: Insight }) {
@@ -25,12 +32,8 @@ export function BlogSeriesHero({ article }: { article: Insight }) {
       >
         <div className="blog-home-series-image">
           <img
-            src={imageFor(article, 0)}
+            {...imagePropsFor(article, 0)}
             alt={`${article.seriesTitle || article.title} cover`}
-            width={article.coverWidth}
-            height={article.coverHeight}
-            fetchPriority="high"
-            decoding="async"
           />
         </div>
         <div className="blog-home-series-copy">
@@ -68,12 +71,8 @@ function BlogHomeCard({
     >
       <div className="blog-home-card-image">
         <img
-          src={imageFor(article, index)}
+          {...imagePropsFor(article, index)}
           alt={`${article.title} cover`}
-          width={article.coverWidth}
-          height={article.coverHeight}
-          loading="lazy"
-          decoding="async"
         />
       </div>
       <div className="blog-home-card-copy">

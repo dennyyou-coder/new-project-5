@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getFeaturedSeriesLinks } from "@/lib/blogSeries";
+import { responsiveImageProps } from "@/lib/articleImages";
 import type { Insight } from "@/lib/content";
 
 const fallbackCover =
@@ -10,6 +11,9 @@ const fallbackSeriesTitle =
 export function HomeSeriesFeature({ article }: { article: Insight }) {
   const seriesTitle = article.seriesTitle || fallbackSeriesTitle;
   const { articleHref, seriesHref } = getFeaturedSeriesLinks(article);
+  const imageProps = article.coverImage
+    ? responsiveImageProps(article.coverImage, "card")
+    : { src: fallbackCover, loading: "lazy" as const, decoding: "async" as const };
 
   return (
     <article
@@ -18,12 +22,8 @@ export function HomeSeriesFeature({ article }: { article: Insight }) {
     >
       <div className="home-v9-series-media">
         <img
-          src={article.coverImage || fallbackCover}
+          {...imageProps}
           alt={article.coverAlt || `${seriesTitle} cover`}
-          width={article.coverWidth}
-          height={article.coverHeight}
-          fetchPriority="high"
-          decoding="async"
         />
       </div>
       <div className="home-v9-series-copy">

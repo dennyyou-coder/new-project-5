@@ -6,6 +6,7 @@ import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
 import { TallyButton } from "@/components/LeadForms";
 import { getSeriesArticles } from "@/lib/blogSeries";
 import { getPublishedBrandProfiles } from "@/lib/brands";
+import { responsiveImageProps } from "@/lib/articleImages";
 import { getInsights, type Insight } from "@/lib/content";
 import { getEditorialInsights } from "@/lib/insightCollections";
 
@@ -105,8 +106,14 @@ function getFeaturedInsights(articles: Insight[]) {
   return Array.from(unique.values());
 }
 
-function imageFor(article: Insight, index: number) {
-  return article.coverImage || fallbackInsightImages[index % fallbackInsightImages.length];
+function articleImageProps(article: Insight, index: number) {
+  return article.coverImage
+    ? responsiveImageProps(article.coverImage, "card")
+    : {
+        src: fallbackInsightImages[index % fallbackInsightImages.length],
+        loading: "lazy" as const,
+        decoding: "async" as const
+      };
 }
 
 function excerptFor(article: Insight) {
@@ -418,7 +425,7 @@ export default function HomePage() {
             <div className="home-v9-article-grid">
               {featuredInsights.map((article, index) => (
                 <Link className="home-v9-article" href={`/blog/${article.slug}`} key={article.slug}>
-                  <img src={imageFor(article, index)} alt={`${article.title} cover image`} width={article.coverWidth} height={article.coverHeight} loading="lazy" decoding="async" />
+                  <img {...articleImageProps(article, index)} alt={`${article.title} cover image`} />
                   <div>
                     <span>{article.category}</span>
                     <h3>{article.title}</h3>

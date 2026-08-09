@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npm run verify:content-classification && npm run generate:image-dimensions",
+    "prebuild": "npm run verify:content-classification",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -22,7 +22,6 @@
     "test:asset-performance": "node --test tests/assetPerformanceAudit.test.mjs",
     "verify:asset-budgets": "node scripts/verify-built-asset-budgets.mjs",
     "prepare:article-images": "node scripts/prepare-article-images.mjs",
-    "generate:image-dimensions": "node scripts/generate-image-dimensions.mjs",
     "verify:sourcing-seo": "node scripts/verify-sourcing-seo.mjs",
     "verify:content-classification": "node scripts/verify-insight-classification.mjs"
   },

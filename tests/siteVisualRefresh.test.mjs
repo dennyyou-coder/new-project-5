@@ -51,7 +51,7 @@ test("homepage uses the local visual system and preserves article covers", () =>
   assert.match(source, /\/images\/site-refresh\/home\/category-robot-vacuums\.webp/);
   assert.match(source, /\/images\/site-refresh\/real\/city-architecture\.webp/);
   assert.match(source, /\/images\/site-refresh\/home\/trust-denny-industry\.webp/);
-  assert.match(source, /imageFor\(article, index\)/);
+  assert.match(source, /articleImageProps\(article, index\)/);
   assert.doesNotMatch(source, /<img\b[^>]*\bsrc=["']https?:\/\//);
 });
 

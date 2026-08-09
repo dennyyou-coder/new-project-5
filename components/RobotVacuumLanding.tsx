@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 import { LawnRobotProductSelector } from "@/components/LawnRobotProductSelector";
+import { responsiveImageProps } from "@/lib/articleImages";
 import { getInsights } from "@/lib/content";
 import type { ProductDirection, SourcingProduct } from "@/lib/sourcingProducts";
 
@@ -71,7 +72,7 @@ export function RobotVacuumLanding({ product }: { product: SourcingProduct }) {
 
       <section className="section sourcing-lawn-final-section"><div className="sourcing-v3-container sourcing-lawn-final-cta"><div><p className="sourcing-v3-kicker">Make the Opportunity Specific</p><h2>Turn a Market Opportunity Into a Product Brief</h2><p>Define the target household, use environment, channel, price position, reason to win and technical evidence that must be verified.</p></div><div className="sourcing-lawn-final-actions"><TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation="robot_vacuum_final_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Evaluate My Product Opportunity</TallyButton><a href="#product-options">Discuss a Selected Product</a></div></div></section>
 
-      <section className="section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Related Intelligence</p><h2>Research the category before choosing a supplier</h2><div className="sourcing-product-grid">{related.map((article) => <article className="sourcing-pool-related-card" key={article.slug}>{article.coverImage ? <img src={article.coverImage} alt={article.coverAlt || article.title} loading="lazy" decoding="async" /> : null}<h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div></div></section>
+      <section className="section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Related Intelligence</p><h2>Research the category before choosing a supplier</h2><div className="sourcing-product-grid">{related.map((article) => <article className="sourcing-pool-related-card" key={article.slug}>{article.coverImage ? <img {...responsiveImageProps(article.coverImage, "card")} alt={article.coverAlt || article.title} /> : null}<h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div></div></section>
     </div>
   );
 }

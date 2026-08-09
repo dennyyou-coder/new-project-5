@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { responsiveImageProps } from "@/lib/articleImages";
 import type { BrandTaggedArticle } from "@/lib/brands";
 
 function ArticleGroup({
@@ -23,10 +24,8 @@ function ArticleGroup({
             <Link href={`/blog/${article.slug}`}>
               {article.coverImage ? (
                 <img
-                  src={article.coverImage}
+                  {...responsiveImageProps(article.coverImage, "card")}
                   alt={article.coverAlt || ""}
-                  loading="lazy"
-                  decoding="async"
                 />
               ) : null}
               <div className="guide-card-copy">

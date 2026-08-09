@@ -29,13 +29,13 @@ test("founder-series card derives article and permanent-series destinations", ()
 });
 
 test("founder-series card preserves cover metadata and has a local fallback", () => {
-  assert.match(componentSource, /article\.coverImage \|\| fallbackCover/);
+  assert.match(componentSource, /responsiveImageProps\(article\.coverImage, "card"\)/);
   assert.match(componentSource, /article\.coverAlt \|\| `\$\{seriesTitle\} cover`/);
   assert.match(
     componentSource,
     /building-worlds-no-1-cleaning-show-episode-01-cover\.webp/
   );
-  assert.match(componentSource, /fetchPriority="high"/);
+  assert.doesNotMatch(componentSource, /fetchPriority="high"/);
 });
 
 test("founder-series Hero styles keep the complete cover visible", () => {
