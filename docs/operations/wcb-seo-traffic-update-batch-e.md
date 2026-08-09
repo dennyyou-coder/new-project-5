@@ -57,10 +57,10 @@ The exact iRobot ownership URL did not appear in the top-page export. It remains
 
 ## Production evidence
 
-- PR: pending.
-- Squash merge: pending.
-- Git-linked Vercel production deployment: pending.
-- Live verification: pending.
+- PR: #97, merged.
+- Squash merge: `52db349ecd015f73f0b6dbda0cb556189062a919`.
+- Git-linked Vercel production deployment: `dpl_FZyyRbr8rucNNHfGrPaAvwQKYYZM`, `READY`.
+- Live verification: completed; the production deployment matched the merged commit and all three existing routes remained live.
 
 ## Next traffic-first queue
 
