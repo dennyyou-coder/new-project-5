@@ -205,6 +205,7 @@ test("photographic variants use the deterministic safe quality and size ladders"
   });
 
   assert.equal(desktop.ok, false);
+  assert.equal(desktop.limit, 1);
   assert.deepEqual(
     desktop.attempts.map(({ longEdge, quality }) => ({ longEdge, quality })),
     [
@@ -215,6 +216,7 @@ test("photographic variants use the deterministic safe quality and size ladders"
     ]
   );
   assert.equal(mobile.ok, false);
+  assert.equal(mobile.limit, 1);
   assert.deepEqual(
     mobile.attempts.map(({ longEdge, quality }) => ({ longEdge, quality })),
     [
@@ -226,6 +228,19 @@ test("photographic variants use the deterministic safe quality and size ladders"
   );
   assert.equal(Math.min(...desktop.attempts.map(({ quality }) => quality)), 72);
   assert.equal(Math.min(...mobile.attempts.map(({ quality }) => quality)), 72);
+});
+
+test("caller limits can tighten but never weaken the configured role budget", async () => {
+  const output = await createDesktopVariant({
+    input: fixtures.noisyChartPng,
+    role: "body",
+    kind: "photo",
+    limitBytes: Number.MAX_SAFE_INTEGER
+  });
+
+  assert.equal(output.ok, false);
+  assert.equal(output.limit, IMAGE_BUDGETS.body.desktop);
+  assert.ok(output.actualBytes > output.limit);
 });
 
 test("charts choose a safe WebP or PNG candidate and report an actionable budget failure", async () => {
@@ -266,6 +281,21 @@ test("charts choose a safe WebP or PNG candidate and report an actionable budget
     }
   );
   assert.ok(failure.actualBytes > failure.limit);
+});
+
+test("charts ignore same-format overrides and always compare safe WebP and PNG candidates", async () => {
+  for (const outputFormat of ["jpeg", "webp", "png"]) {
+    const chart = await createDesktopVariant({
+      input: fixtures.chartPng,
+      role: "chart",
+      kind: "graphic",
+      outputFormat
+    });
+
+    assert.equal(chart.ok, true);
+    assert.notEqual(chart.format, "jpeg");
+    assert.deepEqual(chart.attempts.map((attempt) => attempt.format), ["webp", "png"]);
+  }
 });
 
 test("mobile retention uses the approved byte-or-ratio threshold boundaries", () => {

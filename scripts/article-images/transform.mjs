@@ -201,8 +201,27 @@ async function graphicVariant(options, viewport, crop, limit) {
   const longEdge = GRAPHIC_LONG_EDGE[viewport];
   const requestedFormat = options.outputFormat;
   const candidates = [];
+  const addSafeCandidates = async () => {
+    const webp = await encodeCandidate({
+      input: options.input,
+      crop,
+      longEdge,
+      format: "webp",
+      quality: 90
+    });
+    const png = await encodeCandidate({
+      input: options.input,
+      crop,
+      longEdge,
+      format: "png",
+      quality: 100
+    });
+    candidates.push(webp, png);
+  };
 
-  if (requestedFormat) {
+  if (options.role === "chart") {
+    await addSafeCandidates();
+  } else if (requestedFormat) {
     candidates.push(await encodeCandidate({
       input: options.input,
       crop,
@@ -219,21 +238,7 @@ async function graphicVariant(options, viewport, crop, limit) {
       quality: 100
     }));
   } else {
-    const webp = await encodeCandidate({
-      input: options.input,
-      crop,
-      longEdge,
-      format: "webp",
-      quality: 90
-    });
-    const png = await encodeCandidate({
-      input: options.input,
-      crop,
-      longEdge,
-      format: "png",
-      quality: 100
-    });
-    candidates.push(webp, png);
+    await addSafeCandidates();
   }
 
   const source = await sharp(options.input).metadata();
@@ -264,7 +269,10 @@ async function createVariant(options, viewport) {
     if (review) return review;
   }
   const crop = explicitCrop(options.crop, dimensions) ?? focalPointCrop(options.focalPoint, dimensions);
-  const limit = options.limitBytes ?? roleLimit(options.role, viewport);
+  const configuredLimit = roleLimit(options.role, viewport);
+  const limit = options.limitBytes === undefined
+    ? configuredLimit
+    : Math.min(options.limitBytes, configuredLimit);
   const isGraphic = options.kind === "graphic" || options.kind === "transparent" || options.role === "chart" || options.role === "transparent";
   return isGraphic
     ? graphicVariant(options, viewport, crop, limit)
