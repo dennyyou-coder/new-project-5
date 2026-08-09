@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Insignia appliance supplier verification checklist</title>
+  <desc id="desc">A four-step checklist uses the model, product label, regulatory record and warranty file to identify an Insignia appliance's responsible supplier.</desc>
+  <rect width="1600" height="900" fill="#0e1a25"/>
+  <text x="100" y="105" fill="#ffffff" font-family="Arial" font-size="48" font-weight="700">How to identify who made an Insignia appliance</text>
+  <text x="100" y="150" fill="#bfd0df" font-family="Arial" font-size="23">Use the product file—not appearance or an old supplier list</text>
+  <g font-family="Arial">
+    <rect x="100" y="235" width="325" height="250" rx="28" fill="#24394a"/><text x="145" y="295" fill="#83d5ff" font-size="21">01 · MODEL</text><text x="145" y="350" fill="#ffffff" font-size="31" font-weight="700">Full NS- code</text><text x="145" y="397" fill="#d4e2eb" font-size="21">Revision · serial date</text><text x="145" y="432" fill="#d4e2eb" font-size="21">Market version</text>
+    <rect x="458" y="235" width="325" height="250" rx="28" fill="#1679a8"/><text x="503" y="295" fill="#d8f3ff" font-size="21">02 · PRODUCT LABEL</text><text x="503" y="350" fill="#ffffff" font-size="31" font-weight="700">Origin + entity</text><text x="503" y="397" fill="#dcf4ff" font-size="21">Maker · importer</text><text x="503" y="432" fill="#dcf4ff" font-size="21">Electrical ratings</text>
+    <rect x="816" y="235" width="325" height="250" rx="28" fill="#24394a"/><text x="861" y="295" fill="#83d5ff" font-size="21">03 · RECORD</text><text x="861" y="350" fill="#ffffff" font-size="31" font-weight="700">Regulatory file</text><text x="861" y="397" fill="#d4e2eb" font-size="21">DOE · FCC · safety</text><text x="861" y="432" fill="#d4e2eb" font-size="21">Recall scope</text>
+    <rect x="1174" y="235" width="326" height="250" rx="28" fill="#24394a"/><text x="1219" y="295" fill="#83d5ff" font-size="21">04 · SUPPORT</text><text x="1219" y="350" fill="#ffffff" font-size="31" font-weight="700">Warranty file</text><text x="1219" y="397" fill="#d4e2eb" font-size="21">Parts · service route</text><text x="1219" y="432" fill="#d4e2eb" font-size="21">Protection plan</text>
+  </g>
+  <rect x="100" y="600" width="650" height="155" rx="26" fill="#eef5f8"/><text x="145" y="660" fill="#587080" font-family="Arial" font-size="20">BRAND-LEVEL ANSWER</text><text x="145" y="710" fill="#132a3b" font-family="Arial" font-size="28" font-weight="700">Best Buy owns and manages Insignia</text>
+  <rect x="850" y="600" width="650" height="155" rx="26" fill="#187eae"/><text x="895" y="660" fill="#d9f3ff" font-family="Arial" font-size="20">MODEL-LEVEL ANSWER</text><text x="895" y="710" fill="#ffffff" font-family="Arial" font-size="28" font-weight="700">Supplier, factory, origin and service</text>
+  <text x="800" y="835" text-anchor="middle" fill="#9fb4c3" font-family="Arial" font-size="20">Similar design or parts do not prove that two private-label appliances share the same manufacturer.</text>
+</svg>
