@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const validSlug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const supportedBudgetClasses = new Set(["deep"]);
+const supportedBudgetClasses = new Set(["standard", "deep"]);
 const localImagePrefix = "/images/";
 const imageReference = /!\[[^\]]*\]\(\s*(?:<([^>]+)>|([^\s)]+))[^)]*\)|<img\b[^>]*?\bsrc\s*=\s*(?:"([^"]+)"|'([^']+)')/gi;
 

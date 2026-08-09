@@ -105,12 +105,19 @@ test("only assigns the deep budget when explicit deep frontmatter has more than 
     frontmatter: "image_budget: deep\n",
     body: "![one](/images/articles/deep-example/02.webp)"
   });
+  writeArticle({
+    contentRoot: project.contentRoot,
+    slug: "explicit-standard",
+    frontmatter: "image_budget: standard\n",
+    body: ""
+  });
 
   const inventory = discoverArticleInventory(project);
 
   assert.equal(inventory.articles["deep-example"].budgetClass, "deep");
   assert.equal(inventory.articles["many-images-standard"].budgetClass, "standard");
   assert.equal(inventory.articles["explicit-deep-standard"].budgetClass, "standard");
+  assert.equal(inventory.articles["explicit-standard"].budgetClass, "standard");
 });
 
 test("reports invalid slugs, missing files, conflicting roles, and unknown budget classes with article and file details", () => {
