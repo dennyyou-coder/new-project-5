@@ -11,6 +11,7 @@ import { ARTICLE_BUDGETS } from "./config.mjs";
 import { buildManifest, serializeManifest } from "./manifest.mjs";
 import { discoverArticleInventory } from "./references.mjs";
 import {
+  createDesktopVariant,
   createMobileVariant,
   inspectSource,
   shouldKeepMobileVariant,
@@ -19,8 +20,16 @@ import {
 
 const VALID_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const SOURCE_IMAGE = /\.(?:jpe?g|png|webp)$/i;
+const HISTORICAL_SOURCE_IMAGE = /\.(?:jpe?g|png|webp|svg)$/i;
 const DEFAULT_SOURCE_LIBRARY = "/Users/youdenny/Desktop/WorldCleanBizAssets";
 const PROCESSOR_VERSION = "1";
+export const PHOTO_AGGREGATE_MOBILE_LONG_EDGES = Object.freeze([680, 640, 560, 480, 390]);
+const PHOTO_AGGREGATE_MOBILE_MIN_LONG_EDGE = PHOTO_AGGREGATE_MOBILE_LONG_EDGES.at(-1);
+const HISTORICAL_SOURCE_CONFLICT_FALLBACKS = new Map([
+  ["building-worlds-no-1-cleaning-show-from-scratch-episode-01", {
+    malformedFilename: "building-worlds-no-1-cleaning-show-episode-01-cover.webp"
+  }]
+]);
 const FRONTMATTER = /^---\r?\n([\s\S]*?)\r?\n---(\r?\n|$)/;
 const FRONTMATTER_IMAGE_FIELDS = new Set([
   "coverImage", "cover_image", "socialImage", "social_image",
@@ -38,6 +47,16 @@ export class ArticleImagePreparationError extends Error {
 
 function failure(message, details) {
   return new ArticleImagePreparationError(message, details);
+}
+
+export function selectPhotoAggregateRecoveryStage({ photoCount, budgetClass, budget, desktopStages, mobileStages }) {
+  if (!Number.isInteger(photoCount) || photoCount < 1 || !ARTICLE_BUDGETS[budgetClass]) return null;
+  const desktop = desktopStages.find((stage) => stage.bytes <= budget.desktop);
+  const mobile = mobileStages.find((stage) => (
+    (stage.longEdge === null || stage.longEdge >= PHOTO_AGGREGATE_MOBILE_MIN_LONG_EDGE)
+    && stage.bytes <= budget.mobile
+  ));
+  return desktop && mobile ? { budgetClass, desktop, mobile } : null;
 }
 
 function sha256(buffer) {
@@ -80,6 +99,32 @@ function articleFilesBySlug(contentRoot) {
     files.set(slug, file);
   }
   return files;
+}
+
+function approvedHistoricalSourceValidationWarning(slug, sourceRoot) {
+  const approved = HISTORICAL_SOURCE_CONFLICT_FALLBACKS.get(slug);
+  if (approved) {
+    const malformedFile = path.join(sourceRoot, approved.malformedFilename);
+    const hasMalformedFile = fs.existsSync(malformedFile) && fs.statSync(malformedFile).isFile();
+    const hasValidCover = fs.readdirSync(sourceRoot, { withFileTypes: true })
+      .some((entry) => entry.isFile() && /^01-cover\.(?:jpe?g|png|webp)$/i.test(entry.name));
+    if (hasMalformedFile && !hasValidCover) {
+      return `EXTERNAL_SOURCE_CONFLICT_FALLBACK slug=${slug} file=${approved.malformedFilename} reason=INVALID_SOURCE_FILENAME repository-primary-preserved`;
+    }
+  }
+  return null;
+}
+
+function normalizedImageFormat(filename) {
+  const extension = path.extname(filename).toLowerCase();
+  if (extension === ".jpg" || extension === ".jpeg") return "jpeg";
+  return extension.slice(1);
+}
+
+function historicalReferenceSemanticStem(reference) {
+  const basename = path.posix.basename(reference);
+  const extension = path.posix.extname(basename);
+  return sanitizeStem(basename.slice(0, -extension.length).replace(/^\d{2}-/, ""));
 }
 
 function localReferencesInSource(source) {
@@ -281,9 +326,10 @@ async function readImageConfig(sourceRoot, descriptors, slug) {
   }
 }
 
-async function discoverSourceImages(sourceRoot) {
+async function discoverSourceImages(sourceRoot, { includeSvg = false } = {}) {
+  const sourceImage = includeSvg ? HISTORICAL_SOURCE_IMAGE : SOURCE_IMAGE;
   const entries = (await fsp.readdir(sourceRoot, { withFileTypes: true }))
-    .filter((entry) => entry.isFile() && SOURCE_IMAGE.test(entry.name))
+    .filter((entry) => entry.isFile() && sourceImage.test(entry.name))
     .sort((left, right) => left.name.localeCompare(right.name));
   const descriptors = entries.map((entry) => sourceDescriptor(path.join(sourceRoot, entry.name), entry.name));
   const outputs = new Map();
@@ -313,6 +359,76 @@ async function discoverSourceImages(sourceRoot) {
     });
   }
   return { descriptors, sequences };
+}
+
+async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
+  const article = context.currentInventory.articles[slug];
+  const approvedWarning = approvedHistoricalSourceValidationWarning(slug, sourceRoot);
+  if (approvedWarning) return [approvedWarning];
+  const { descriptors, sequences } = await discoverSourceImages(sourceRoot, { includeSvg: true });
+  await readImageConfig(sourceRoot, descriptors, slug);
+  const referencedSequences = new Set();
+  const warnings = [];
+  const unmatchedReferences = [];
+  for (const reference of article.body) {
+    const sequence = sequenceFromReference(reference);
+    if (sequence !== null && sequences.has(sequence)) {
+      referencedSequences.add(sequence);
+      continue;
+    }
+    if (sequence !== null) {
+      unmatchedReferences.push(reference);
+      continue;
+    }
+    const semanticStem = historicalReferenceSemanticStem(reference);
+    const exactMatches = descriptors
+      .filter((descriptor) => descriptor.sequence > 1 && descriptor.semanticStem === semanticStem)
+      .sort((left, right) => left.basename.localeCompare(right.basename));
+    if (exactMatches.length > 1) {
+      unmatchedReferences.push(reference);
+      continue;
+    }
+    let matches = exactMatches;
+    let normalizedPrefix = null;
+    if (matches.length === 0 && normalizedImageFormat(reference) === "svg") {
+      const slugWithBoundaries = `-${sanitizeStem(slug)}-`;
+      matches = descriptors
+        .filter((descriptor) => {
+          if (descriptor.sequence <= 1) return false;
+          const suffix = `-${descriptor.semanticStem}`;
+          if (!semanticStem.endsWith(suffix)) return false;
+          const prefix = semanticStem.slice(0, -suffix.length);
+          return prefix && slugWithBoundaries.includes(`-${prefix}-`);
+        })
+        .sort((left, right) => left.basename.localeCompare(right.basename));
+      if (matches.length > 1) {
+        unmatchedReferences.push(reference);
+        continue;
+      }
+      if (matches.length === 1) {
+        normalizedPrefix = semanticStem.slice(0, -(`-${matches[0].semanticStem}`).length);
+      }
+    }
+    if (matches.length === 0) {
+      unmatchedReferences.push(reference);
+      continue;
+    }
+    const [match] = matches;
+    referencedSequences.add(match.sequence);
+    if (normalizedPrefix) {
+      warnings.push(`HISTORICAL_SVG_PREFIX_NORMALIZED slug=${slug} primary=${reference} source=${match.basename} prefix=${normalizedPrefix} repository-primary-preserved`);
+    }
+    if (normalizedImageFormat(reference) !== normalizedImageFormat(match.basename)) {
+      warnings.push(`INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT slug=${slug} primary=${reference} source=${match.basename} repository-primary-preserved`);
+    }
+  }
+  const unmatchedDescriptors = descriptors
+    .filter(({ sequence }) => sequence > 1 && !referencedSequences.has(sequence))
+    .map(({ basename }) => basename);
+  if (unmatchedReferences.length || unmatchedDescriptors.length) {
+    warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} unmatched=${unmatchedDescriptors.length ? unmatchedDescriptors.join(",") : "none"} repository-primary-preserved`);
+  }
+  return warnings;
 }
 
 async function hasRealTransparency(file) {
@@ -427,7 +543,7 @@ async function describeExistingAsset(url, file, inventory, existing, publicRoot)
   const source = await inspectSource(file);
   const transparent = await hasRealTransparency(file);
   const metadata = await sharp(file).metadata();
-  const role = existing?.role ?? roleForUrl(inventory, url);
+  const role = roleForUrl(inventory, url);
   const kind = existing?.kind ?? (transparent ? "transparent" : "photo");
   const result = {
     role,
@@ -444,13 +560,19 @@ async function describeExistingAsset(url, file, inventory, existing, publicRoot)
     const mobileFile = publicUrlFile(publicRoot, existing.mobile.src);
     if (fs.existsSync(mobileFile)) {
       const mobile = await inspectSource(mobileFile);
-      result.mobile = {
+      const describedMobile = {
         src: existing.mobile.src,
         width: mobile.width,
         height: mobile.height,
         bytes: mobile.bytes,
         outputHash: mobile.sourceHash
       };
+      if (shouldKeepMobileVariant({
+        desktopBytes: result.bytes,
+        mobileBytes: describedMobile.bytes,
+        desktopWidth: result.width,
+        mobileWidth: describedMobile.width
+      })) result.mobile = describedMobile;
     }
   }
   return result;
@@ -590,39 +712,290 @@ async function planSourceArticle(context, slug, sourceRoot) {
   };
 }
 
-async function planHistoricalArticle(context, slug) {
+function articleTransferTotals(article, processed) {
+  const urls = [...new Set([article.cover, ...article.body].filter(Boolean))];
+  return {
+    desktop: urls.reduce((total, url) => total + processed[url].bytes, 0),
+    mobile: urls.reduce((total, url) => total + (processed[url].mobile?.bytes ?? processed[url].bytes), 0)
+  };
+}
+
+function replaceStageOutput(stageOutputs, output) {
+  const index = stageOutputs.findIndex((candidate) => candidate.url === output.url);
+  if (index === -1) stageOutputs.push(output);
+  else stageOutputs[index] = output;
+}
+
+function removeStageOutput(stageOutputs, url) {
+  const index = stageOutputs.findIndex((candidate) => candidate.url === url);
+  if (index !== -1) stageOutputs.splice(index, 1);
+}
+
+async function deepPhotoDesktopStage(context, slug, article, processed, longEdge, includeCover) {
+  const targetUrls = includeCover ? [article.cover, ...article.body] : article.body;
+  const results = new Map();
+  for (const url of targetUrls) {
+    const current = processed[url];
+    const file = context.currentInventory.assets[url].file;
+    const candidate = await createDesktopVariant({
+      input: file,
+      filename: path.basename(file),
+      slug,
+      role: current.role,
+      kind: "photo",
+      outputFormat: current.format,
+      preserveCrop: true,
+      preserveOutputFormat: true,
+      photoLongEdgeCap: longEdge
+    });
+    if (!candidate.ok) return null;
+    results.set(url, {
+      role: current.role,
+      kind: current.kind,
+      width: candidate.width,
+      height: candidate.height,
+      bytes: candidate.bytes,
+      format: candidate.format,
+      quality: candidate.quality,
+      sourceHash: current.sourceHash,
+      outputHash: candidate.outputHash,
+      buffer: candidate.buffer
+    });
+  }
+  const urls = [...new Set([article.cover, ...article.body].filter(Boolean))];
+  const bytes = urls.reduce((total, url) => total + (results.get(url)?.bytes ?? processed[url].bytes), 0);
+  return { longEdge, includeCover, bytes, results };
+}
+
+async function deepPhotoMobileStage(context, slug, article, processed, desktopStage, longEdge, includeCover) {
+  const targetUrls = includeCover ? [article.cover, ...article.body] : article.body;
+  const results = new Map();
+  for (const url of targetUrls) {
+    const desktop = desktopStage.results.get(url) ?? processed[url];
+    const file = context.currentInventory.assets[url].file;
+    const candidate = await createMobileVariant({
+      input: file,
+      filename: path.basename(file),
+      slug,
+      role: desktop.role,
+      kind: "photo",
+      outputFormat: "webp",
+      preserveCrop: true,
+      photoLongEdgeCap: longEdge
+    });
+    if (!candidate.ok) return null;
+    const retained = shouldKeepMobileVariant({
+      desktopBytes: desktop.bytes,
+      mobileBytes: candidate.bytes,
+      desktopWidth: desktop.width,
+      mobileWidth: candidate.width
+    });
+    results.set(url, { candidate, retained });
+  }
+  const urls = [...new Set([article.cover, ...article.body].filter(Boolean))];
+  const bytes = urls.reduce((total, url) => {
+    const desktop = desktopStage.results.get(url) ?? processed[url];
+    const result = results.get(url);
+    if (result) return total + (result.retained ? result.candidate.bytes : desktop.bytes);
+    const existingMobile = processed[url].mobile;
+    const retained = existingMobile && shouldKeepMobileVariant({
+      desktopBytes: desktop.bytes,
+      mobileBytes: existingMobile.bytes,
+      desktopWidth: desktop.width,
+      mobileWidth: existingMobile.width
+    });
+    results.set(url, { retained: Boolean(retained), existing: true });
+    return total + (retained ? existingMobile.bytes : desktop.bytes);
+  }, 0);
+  return { longEdge, includeCover, bytes, results };
+}
+
+function normalDeepPhotoMobileStage(article, processed, desktopStage) {
+  const results = new Map();
+  const urls = [...new Set([article.cover, ...article.body].filter(Boolean))];
+  const bytes = urls.reduce((total, url) => {
+    const desktop = desktopStage.results.get(url) ?? processed[url];
+    const existingMobile = processed[url].mobile;
+    const retained = existingMobile && shouldKeepMobileVariant({
+      desktopBytes: desktop.bytes,
+      mobileBytes: existingMobile.bytes,
+      desktopWidth: desktop.width,
+      mobileWidth: existingMobile.width
+    });
+    results.set(url, { retained: Boolean(retained), existing: true });
+    return total + (retained ? existingMobile.bytes : desktop.bytes);
+  }, 0);
+  return { longEdge: null, includeCover: false, bytes, results };
+}
+
+async function applyPhotoAggregateRecovery(context, slug, article, processed, stageOutputs, warnings) {
+  const budget = ARTICLE_BUDGETS[article.budgetClass];
+  const urls = [...new Set([article.cover, ...article.body].filter(Boolean))];
+  const normal = articleTransferTotals(article, processed);
+  if (normal.desktop <= budget.desktop && normal.mobile <= budget.mobile) return;
+  if (!urls.every((url) => processed[url]?.kind === "photo" && ["jpeg", "png", "webp"].includes(processed[url]?.format))) return;
+
+  const normalDesktop = { longEdge: null, includeCover: false, bytes: normal.desktop, results: new Map() };
+  const desktopStages = [normalDesktop];
+  if (normal.desktop > budget.desktop) {
+    for (const longEdge of [1120, 960, 800]) {
+      const stage = await deepPhotoDesktopStage(context, slug, article, processed, longEdge, false);
+      if (stage) desktopStages.push(stage);
+    }
+    if (!desktopStages.some((stage) => stage.bytes <= budget.desktop)) {
+      for (const longEdge of [1120, 960, 800]) {
+        const stage = await deepPhotoDesktopStage(context, slug, article, processed, longEdge, true);
+        if (stage) desktopStages.push(stage);
+      }
+    }
+  }
+  const selectedDesktop = desktopStages.find((stage) => stage.bytes <= budget.desktop);
+  if (!selectedDesktop) return;
+
+  const normalMobile = normalDeepPhotoMobileStage(article, processed, selectedDesktop);
+  const mobileStages = [normalMobile];
+  if (normal.mobile > budget.mobile) {
+    for (const longEdge of PHOTO_AGGREGATE_MOBILE_LONG_EDGES) {
+      const stage = await deepPhotoMobileStage(context, slug, article, processed, selectedDesktop, longEdge, false);
+      if (stage) mobileStages.push(stage);
+    }
+    if (!mobileStages.some((stage) => stage.bytes <= budget.mobile)) {
+      for (const longEdge of PHOTO_AGGREGATE_MOBILE_LONG_EDGES) {
+        const stage = await deepPhotoMobileStage(context, slug, article, processed, selectedDesktop, longEdge, true);
+        if (stage) mobileStages.push(stage);
+      }
+    }
+  }
+  const selected = selectPhotoAggregateRecoveryStage({
+    photoCount: urls.length,
+    budgetClass: article.budgetClass,
+    budget,
+    desktopStages,
+    mobileStages
+  });
+  if (!selected) return;
+
+  for (const [url, candidate] of selected.desktop.results) {
+    const mobile = processed[url].mobile;
+    processed[url] = { ...candidate };
+    delete processed[url].buffer;
+    if (mobile) processed[url].mobile = mobile;
+    replaceStageOutput(stageOutputs, {
+      url,
+      buffer: candidate.buffer,
+      sourceHash: candidate.sourceHash,
+      imageName: path.posix.basename(url),
+      historicalPrimary: true
+    });
+  }
+  for (const [url, result] of selected.mobile.results) {
+    const mobileUrl = `${url.slice(0, -path.posix.extname(url).length)}-800.webp`;
+    if (!result.retained) {
+      delete processed[url].mobile;
+      removeStageOutput(stageOutputs, mobileUrl);
+      continue;
+    }
+    if (result.existing) continue;
+    processed[url].mobile = {
+      src: mobileUrl,
+      width: result.candidate.width,
+      height: result.candidate.height,
+      bytes: result.candidate.bytes,
+      outputHash: result.candidate.outputHash
+    };
+    replaceStageOutput(stageOutputs, {
+      url: mobileUrl,
+      buffer: result.candidate.buffer,
+      sourceHash: processed[url].sourceHash,
+      imageName: path.posix.basename(url),
+      mobile: true
+    });
+  }
+  warnings.push(`PHOTO_AGGREGATE_RECOVERY slug=${slug} budget=${article.budgetClass} desktop=${selected.desktop.longEdge ?? "normal"} mobile=${selected.mobile.longEdge ?? "normal"} cover=${selected.desktop.includeCover || selected.mobile.includeCover ? "capped" : "normal"} images=${urls.length}`);
+}
+
+async function planHistoricalArticle(context, slug, initialWarnings = []) {
   const article = context.currentInventory.articles[slug];
   const stageOutputs = [];
   const processed = {};
-  const warnings = [];
+  const warnings = [...initialWarnings];
   let sourceBytes = 0;
   for (const url of allArticleReferences(article)) {
     const file = context.currentInventory.assets[url]?.file;
     if (!file) continue;
     const existing = context.existingManifest.assets?.[url];
-    const primary = await describeExistingAsset(url, file, context.currentInventory, existing, context.publicRoot);
-    processed[url] = primary;
-    sourceBytes += primary.bytes;
-    const role = primary.role;
-    const kind = primary.kind;
+    const current = await describeExistingAsset(url, file, context.currentInventory, existing, context.publicRoot);
+    sourceBytes += current.bytes;
+    const role = current.role;
+    const kind = current.kind;
+    let primary = current;
+    if (["jpeg", "png", "webp"].includes(current.format)) {
+      const desktop = await createDesktopVariant({
+        input: file,
+        filename: path.basename(file),
+        slug,
+        role,
+        kind,
+        outputFormat: current.format,
+        preserveCrop: true,
+        preserveOutputFormat: true,
+        historicalProgressiveFallback: true
+      });
+      if (!desktop.ok) throw transformFailure(slug, { basename: path.basename(file) }, desktop);
+      if (desktop.fallbackScale) {
+        warnings.push(`HISTORICAL_PROGRESSIVE_DOWNSCALE file=${path.basename(file)} variant=primary scale=${desktop.fallbackScale} dimensions=${desktop.width}x${desktop.height}`);
+      }
+      if (desktop.bytes < current.bytes) {
+        primary = {
+          role,
+          kind,
+          width: desktop.width,
+          height: desktop.height,
+          bytes: desktop.bytes,
+          format: desktop.format,
+          quality: desktop.quality,
+          sourceHash: existing?.sourceHash ?? current.sourceHash,
+          outputHash: desktop.outputHash
+        };
+        stageOutputs.push({
+          url,
+          buffer: desktop.buffer,
+          sourceHash: primary.sourceHash,
+          imageName: path.basename(file),
+          historicalPrimary: true
+        });
+      }
+    }
     const mobile = await createMobileVariant({
       input: file,
       filename: path.basename(file),
       slug,
       role,
       kind,
-      outputFormat: "webp"
+      outputFormat: "webp",
+      preserveCrop: true,
+      historicalProgressiveFallback: true
     });
     if (!mobile.ok) {
       warnings.push(`${path.basename(file)}: ${mobile.code}`);
+      processed[url] = primary;
       continue;
     }
-    if (mobile.format !== "webp" || !shouldKeepMobileVariant({ desktopBytes: primary.bytes, mobileBytes: mobile.bytes })) {
+    if (mobile.fallbackScale) {
+      warnings.push(`HISTORICAL_PROGRESSIVE_DOWNSCALE file=${path.basename(file)} variant=mobile scale=${mobile.fallbackScale} dimensions=${mobile.width}x${mobile.height}`);
+    }
+    if (mobile.format !== "webp" || !shouldKeepMobileVariant({
+      desktopBytes: primary.bytes,
+      mobileBytes: mobile.bytes,
+      desktopWidth: primary.width,
+      mobileWidth: mobile.width
+    })) {
       warnings.push(`${path.basename(file)}: MOBILE_VARIANT_DISCARDED_INSUFFICIENT_SAVINGS`);
+      processed[url] = primary;
       continue;
     }
     const mobileUrl = `${url.slice(0, -path.posix.extname(url).length)}-800.webp`;
-    processed[url] = {
+    primary = {
       ...primary,
       mobile: {
         src: mobileUrl,
@@ -632,8 +1005,10 @@ async function planHistoricalArticle(context, slug) {
         outputHash: mobile.outputHash
       }
     };
+    processed[url] = primary;
     stageOutputs.push({ url: mobileUrl, buffer: mobile.buffer, sourceHash: primary.sourceHash, imageName: path.basename(file), mobile: true });
   }
+  await applyPhotoAggregateRecovery(context, slug, article, processed, stageOutputs, warnings);
   return {
     slug,
     article,
@@ -644,6 +1019,46 @@ async function planHistoricalArticle(context, slug) {
     updatedArticle: { ...article, body: [...article.body] },
     oldReferences: [],
     removable: [],
+    warnings,
+    historicalPrimaryPreserved: true
+  };
+}
+
+async function planHistoricalGeneratedStateRepair(context, slug, initialWarnings = []) {
+  const article = context.currentInventory.articles[slug];
+  const stageOutputs = [];
+  const processed = {};
+  const warnings = [...initialWarnings];
+  const removable = [];
+  let sourceBytes = 0;
+  for (const url of allArticleReferences(article)) {
+    const file = context.currentInventory.assets[url]?.file;
+    if (!file) continue;
+    const existing = context.existingManifest.assets?.[url];
+    const current = await describeExistingAsset(url, file, context.currentInventory, existing, context.publicRoot);
+    sourceBytes += current.bytes;
+    processed[url] = current;
+    if (existing?.mobile?.src && !current.mobile) {
+      const mobileFile = publicUrlFile(context.publicRoot, existing.mobile.src);
+      if (fs.existsSync(mobileFile)) removable.push(mobileFile);
+      warnings.push(`INVALID_MOBILE_VARIANT_REMOVED slug=${slug} primary=${url} mobile=${existing.mobile.src} primary-width=${current.width} mobile-width=${existing.mobile.width}`);
+    }
+  }
+  const normal = articleTransferTotals(article, processed);
+  if (normal.desktop <= ARTICLE_BUDGETS[article.budgetClass].desktop) {
+    await applyPhotoAggregateRecovery(context, slug, article, processed, stageOutputs, warnings);
+  }
+  const replacedUrls = new Set(stageOutputs.map(({ url }) => url));
+  return {
+    slug,
+    article,
+    sourceBytes,
+    stageOutputs,
+    processed,
+    updatedSource: await fsp.readFile(article.file, "utf8"),
+    updatedArticle: { ...article, body: [...article.body] },
+    oldReferences: [],
+    removable: removable.filter((file) => !replacedUrls.has(`/${relativeRepositoryPath(context.publicRoot, file)}`)),
     warnings,
     historicalPrimaryPreserved: true
   };
@@ -681,6 +1096,10 @@ function validateOutputCollisions(context, plans) {
       const destination = publicUrlFile(context.publicRoot, output.url);
       assertRepositoryPath(destination, context.publicRoot, "publish destination");
       if (!fs.existsSync(destination)) continue;
+      if (output.historicalPrimary) {
+        if (!allArticleReferences(plan.article).includes(output.url)) throw collisionError(plan, output);
+        continue;
+      }
       if (output.mobile) {
         const owner = Object.values(context.existingManifest.assets ?? {}).find((asset) => asset.mobile?.src === output.url);
         if (!owner || normalizedHash(owner.sourceHash) !== normalizedHash(output.sourceHash)) throw collisionError(plan, output);
@@ -940,7 +1359,8 @@ function resolveContext(options) {
     publicRoot,
     manifestPath,
     expectedManifestPath,
-    dryRun: Boolean(options.dryRun)
+    dryRun: Boolean(options.dryRun),
+    repairGeneratedState: Boolean(options.repairGeneratedState)
   };
 }
 
@@ -967,7 +1387,9 @@ async function prepareSelection(options, mode) {
       const sourceRoot = mode === "single"
         ? path.resolve(options.sourceRoot ?? path.join(DEFAULT_SOURCE_LIBRARY, slug))
         : path.resolve(options.sourceLibraryRoot ?? DEFAULT_SOURCE_LIBRARY, slug);
-      if (fs.existsSync(sourceRoot) && fs.statSync(sourceRoot).isDirectory()) sourceRoots.set(slug, sourceRoot);
+      if (fs.existsSync(sourceRoot) && fs.statSync(sourceRoot).isDirectory()) {
+        sourceRoots.set(slug, sourceRoot);
+      }
       else if (mode === "single") {
         throw failure(`Visual Asset Folder Not Found: ${sourceRoot}`, {
           code: "VISUAL_ASSET_FOLDER_NOT_FOUND", slug,
@@ -975,7 +1397,11 @@ async function prepareSelection(options, mode) {
         });
       }
     }
-    const inventoryPublicRoot = await inventoryPublicOverlay(context, [...sourceRoots.keys()], files);
+    const inventoryPublicRoot = await inventoryPublicOverlay(
+      context,
+      mode === "single" ? [...sourceRoots.keys()] : [],
+      files
+    );
     context.currentInventory = discoverArticleInventory({ contentRoot: context.contentRoot, publicRoot: inventoryPublicRoot });
     for (const url of Object.keys(context.currentInventory.assets)) {
       const repositoryAsset = publicUrlFile(context.publicRoot, url);
@@ -985,10 +1411,15 @@ async function prepareSelection(options, mode) {
     const plans = [];
     for (const slug of requestedSlugs) {
       const sourceRoot = sourceRoots.get(slug);
-      if (!sourceRoot) {
-        plans.push(await planHistoricalArticle(context, slug));
-      } else {
+      if (mode === "single") {
         plans.push(await planSourceArticle(context, slug, sourceRoot));
+      } else {
+        const warnings = sourceRoot
+          ? await validateHistoricalSourceFolder(context, slug, sourceRoot)
+          : [];
+        plans.push(context.repairGeneratedState
+          ? await planHistoricalGeneratedStateRepair(context, slug, warnings)
+          : await planHistoricalArticle(context, slug, warnings));
       }
     }
     for (const plan of plans) {

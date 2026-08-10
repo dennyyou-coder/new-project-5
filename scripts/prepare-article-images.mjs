@@ -12,6 +12,7 @@ function parseArguments(argv) {
   let slug = null;
   let all = false;
   let dryRun = false;
+  let repairGeneratedState = false;
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index];
     if (argument === "--slug") {
@@ -19,10 +20,12 @@ function parseArguments(argv) {
       slug = argv[++index];
     } else if (argument === "--all") all = true;
     else if (argument === "--dry-run") dryRun = true;
+    else if (argument === "--repair-generated-state") repairGeneratedState = true;
     else throw new InvocationError(`Unknown argument: ${argument}`);
   }
   if (Boolean(slug) === all) throw new InvocationError("Choose exactly one of --slug or --all.");
-  return { slug, all, dryRun };
+  if (repairGeneratedState && !all) throw new InvocationError("--repair-generated-state requires --all.");
+  return { slug, all, dryRun, repairGeneratedState };
 }
 
 function bytes(value) {
@@ -54,7 +57,7 @@ async function main() {
   }
   try {
     const result = invocation.all
-      ? await prepareAllArticleImages({ dryRun: invocation.dryRun })
+      ? await prepareAllArticleImages({ dryRun: invocation.dryRun, repairGeneratedState: invocation.repairGeneratedState })
       : await prepareArticleImages({ slug: invocation.slug, dryRun: invocation.dryRun });
     printReport(result);
   } catch (error) {

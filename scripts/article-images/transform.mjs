@@ -27,6 +27,11 @@ const PHOTO_ATTEMPTS = {
   ]
 };
 const GRAPHIC_LONG_EDGE = { desktop: 1600, mobile: 800 };
+const HISTORICAL_PROGRESSIVE_SCALES = [0.99, 0.98, 0.96];
+const DEEP_PHOTO_LONG_EDGE_CAPS = {
+  desktop: new Set([1120, 960, 800]),
+  mobile: new Set([680, 640, 560, 480, 390])
+};
 
 function sha256(buffer) {
   return `sha256:${crypto.createHash("sha256").update(buffer).digest("hex")}`;
@@ -151,12 +156,49 @@ async function encodeCandidate({ input, crop, longEdge, format, quality }) {
 }
 
 function publicAttempt(candidate) {
-  return {
+  const attempt = {
     longEdge: candidate.longEdge,
     quality: candidate.quality,
     format: candidate.format,
     bytes: candidate.bytes
   };
+  if (candidate.fallbackScale) attempt.fallbackScale = candidate.fallbackScale;
+  return attempt;
+}
+
+async function historicalProgressiveCandidate({
+  options,
+  viewport,
+  crop,
+  dimensions,
+  format,
+  quality,
+  limit,
+  candidates,
+  accept = () => true
+}) {
+  if (!options.historicalProgressiveFallback) return null;
+  const currentLongEdge = Math.min(
+    Math.max(crop?.width ?? dimensions.width, crop?.height ?? dimensions.height),
+    viewport === "desktop" ? 1280 : 720
+  );
+  for (const fallbackScale of HISTORICAL_PROGRESSIVE_SCALES) {
+    const longEdge = Math.max(1, Math.floor(currentLongEdge * fallbackScale));
+    const candidate = await encodeCandidate({
+      input: options.input,
+      crop,
+      longEdge,
+      format,
+      quality
+    });
+    candidate.fallbackScale = fallbackScale;
+    candidates.push(candidate);
+    if (candidate.bytes <= limit && accept(candidate)) {
+      candidate.attempts = candidates.map(publicAttempt);
+      return candidate;
+    }
+  }
+  return null;
 }
 
 function budgetFailure({ candidates, input, filename, slug, role, limit }) {
@@ -177,9 +219,27 @@ function budgetFailure({ candidates, input, filename, slug, role, limit }) {
   };
 }
 
-async function photoVariant(options, viewport, crop, limit) {
+async function photoVariant(options, viewport, crop, limit, dimensions) {
   const format = options.outputFormat ?? "webp";
   const candidates = [];
+  if (options.photoLongEdgeCap !== undefined) {
+    if (!DEEP_PHOTO_LONG_EDGE_CAPS[viewport].has(options.photoLongEdgeCap)) {
+      throw new Error(`Unsupported ${viewport} deep-photo long-edge cap: ${options.photoLongEdgeCap}`);
+    }
+    const candidate = await encodeCandidate({
+      input: options.input,
+      crop,
+      longEdge: options.photoLongEdgeCap,
+      format,
+      quality: format === "png" ? 100 : 72
+    });
+    candidates.push(candidate);
+    if (candidate.bytes <= limit) {
+      candidate.attempts = candidates.map(publicAttempt);
+      return candidate;
+    }
+    return budgetFailure({ ...options, candidates, limit });
+  }
   for (const attempt of PHOTO_ATTEMPTS[viewport]) {
     const candidate = await encodeCandidate({
       input: options.input,
@@ -194,10 +254,21 @@ async function photoVariant(options, viewport, crop, limit) {
       return candidate;
     }
   }
+  const fallback = await historicalProgressiveCandidate({
+    options,
+    viewport,
+    crop,
+    dimensions,
+    format,
+    quality: format === "png" ? 100 : PHOTO_ATTEMPTS[viewport].at(-1).quality,
+    limit,
+    candidates
+  });
+  if (fallback) return fallback;
   return budgetFailure({ ...options, candidates, limit });
 }
 
-async function graphicVariant(options, viewport, crop, limit) {
+async function graphicVariant(options, viewport, crop, limit, dimensions) {
   const longEdge = GRAPHIC_LONG_EDGE[viewport];
   const requestedFormat = options.outputFormat;
   const candidates = [];
@@ -219,7 +290,15 @@ async function graphicVariant(options, viewport, crop, limit) {
     candidates.push(webp, png);
   };
 
-  if (options.role === "chart") {
+  if (options.role === "chart" && options.preserveOutputFormat && requestedFormat) {
+    candidates.push(await encodeCandidate({
+      input: options.input,
+      crop,
+      longEdge,
+      format: requestedFormat,
+      quality: requestedFormat === "png" ? 100 : 90
+    }));
+  } else if (options.role === "chart") {
     await addSafeCandidates();
   } else if (requestedFormat) {
     candidates.push(await encodeCandidate({
@@ -258,13 +337,28 @@ async function graphicVariant(options, viewport, crop, limit) {
     accepted.attempts = candidates.map(publicAttempt);
     return accepted;
   }
-  return budgetFailure({ ...options, candidates: eligible.length ? eligible : candidates, limit });
+  if (options.preserveOutputFormat && requestedFormat) {
+    const fallback = await historicalProgressiveCandidate({
+      options,
+      viewport,
+      crop,
+      dimensions,
+      format: requestedFormat,
+      quality: requestedFormat === "png" ? 100 : 90,
+      limit,
+      candidates,
+      accept: (candidate) => !sourceHasTransparency || candidate.hasAlpha
+    });
+    if (fallback) return fallback;
+  }
+  const finalEligible = candidates.filter((candidate) => !sourceHasTransparency || candidate.hasAlpha);
+  return budgetFailure({ ...options, candidates: finalEligible.length ? finalEligible : candidates, limit });
 }
 
 async function createVariant(options, viewport) {
   if (!options?.input) throw new Error("Article image transform requires an input path or Buffer.");
   const dimensions = await orientedMetadata(options.input);
-  if (options.role === "cover") {
+  if (options.role === "cover" && !options.preserveCrop) {
     const review = coverReview({ ...options, dimensions });
     if (review) return review;
   }
@@ -275,8 +369,8 @@ async function createVariant(options, viewport) {
     : Math.min(options.limitBytes, configuredLimit);
   const isGraphic = options.kind === "graphic" || options.kind === "transparent" || options.role === "chart" || options.role === "transparent";
   return isGraphic
-    ? graphicVariant(options, viewport, crop, limit)
-    : photoVariant(options, viewport, crop, limit);
+    ? graphicVariant(options, viewport, crop, limit, dimensions)
+    : photoVariant(options, viewport, crop, limit, dimensions);
 }
 
 export async function inspectSource(sourcePath) {
@@ -303,7 +397,8 @@ export function createMobileVariant(options) {
   return createVariant(options, "mobile");
 }
 
-export function shouldKeepMobileVariant({ desktopBytes, mobileBytes }) {
+export function shouldKeepMobileVariant({ desktopBytes, mobileBytes, desktopWidth, mobileWidth }) {
+  if (!Number.isFinite(desktopWidth) || !Number.isFinite(mobileWidth) || mobileWidth >= desktopWidth) return false;
   const savings = desktopBytes - mobileBytes;
   return savings >= MOBILE_MIN_SAVINGS_BYTES || savings / desktopBytes >= MOBILE_MIN_SAVINGS_RATIO;
 }
@@ -330,7 +425,12 @@ export async function transformAsset(options) {
 
   const warnings = [...desktop.warnings, ...mobile.warnings];
   const result = { ok: true, source, desktop, warnings };
-  if (shouldKeepMobileVariant({ desktopBytes: desktop.bytes, mobileBytes: mobile.bytes })) {
+  if (shouldKeepMobileVariant({
+    desktopBytes: desktop.bytes,
+    mobileBytes: mobile.bytes,
+    desktopWidth: desktop.width,
+    mobileWidth: mobile.width
+  })) {
     result.mobile = mobile;
   } else {
     result.warnings.push("MOBILE_VARIANT_DISCARDED_INSUFFICIENT_SAVINGS");

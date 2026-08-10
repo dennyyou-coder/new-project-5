@@ -42,6 +42,8 @@ async function generateFixtures() {
   const transparentPng = path.join(fixtureRoot, "transparent-graphic.png");
   const chartPng = path.join(fixtureRoot, "text-chart.png");
   const noisyChartPng = path.join(fixtureRoot, "noisy-chart.png");
+  const sub1280Png = path.join(fixtureRoot, "sub-1280-photo.png");
+  const progressivePng = path.join(fixtureRoot, "progressive-photo.png");
 
   await sharp(svgFixture({ width: 120, height: 60 }))
     .jpeg({ quality: 95 })
@@ -74,7 +76,27 @@ async function generateFixtures() {
     .png({ compressionLevel: 0 })
     .toFile(noisyChartPng);
 
-  return { orientedJpeg, largeJpeg, smallJpeg, smallWebp, transparentPng, chartPng, noisyChartPng };
+  for (const [file, amplitude] of [[sub1280Png, 4], [progressivePng, 5]]) {
+    const width = 789;
+    const height = 595;
+    const pixels = Buffer.alloc(width * height * 3);
+    let state = 0x12345678;
+    for (let y = 0; y < height; y += 1) {
+      for (let x = 0; x < width; x += 1) {
+        for (let channel = 0; channel < 3; channel += 1) {
+          state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+          const noiseValue = ((state >>> 24) % (amplitude * 2 + 1)) - amplitude;
+          const base = (x * 3 + y * 2 + channel * 47) % 256;
+          pixels[(y * width + x) * 3 + channel] = Math.max(0, Math.min(255, base + noiseValue));
+        }
+      }
+    }
+    await sharp(pixels, { raw: { width, height, channels: 3 } })
+      .png({ compressionLevel: 9, effort: 10 })
+      .toFile(file);
+  }
+
+  return { orientedJpeg, largeJpeg, smallJpeg, smallWebp, transparentPng, chartPng, noisyChartPng, sub1280Png, progressivePng };
 }
 
 test.before(async () => {
@@ -174,6 +196,20 @@ test("aspect ratio is preserved unless an explicit cover crop is supplied", asyn
   assert.deepEqual([cropped.width, cropped.height], [1600, 900]);
 });
 
+test("historical preservation mode keeps a non-16:9 cover uncropped", async () => {
+  const output = await createDesktopVariant({
+    input: fixtures.largeJpeg,
+    role: "cover",
+    kind: "photo",
+    outputFormat: "jpeg",
+    preserveCrop: true
+  });
+
+  assert.equal(output.ok, true);
+  assert.equal(output.format, "jpeg");
+  assert.ok(Math.abs(output.width / output.height - 1.5) < 0.002);
+});
+
 test("transparent graphics retain alpha and can keep PNG for same-format publishing", async () => {
   const output = await createDesktopVariant({
     input: fixtures.transparentPng,
@@ -228,6 +264,64 @@ test("photographic variants use the deterministic safe quality and size ladders"
   );
   assert.equal(Math.min(...desktop.attempts.map(({ quality }) => quality)), 72);
   assert.equal(Math.min(...mobile.attempts.map(({ quality }) => quality)), 72);
+});
+
+test("deep historical photo recovery honors an explicit safe long-edge cap at quality 72", async () => {
+  const desktop = await createDesktopVariant({
+    input: fixtures.largeJpeg,
+    role: "body",
+    kind: "photo",
+    outputFormat: "jpeg",
+    preserveCrop: true,
+    photoLongEdgeCap: 960
+  });
+  const mobile = await createMobileVariant({
+    input: fixtures.largeJpeg,
+    role: "body",
+    kind: "photo",
+    outputFormat: "webp",
+    preserveCrop: true,
+    photoLongEdgeCap: 680
+  });
+
+  assert.equal(desktop.ok, true);
+  assert.equal(desktop.longEdge, 960);
+  assert.equal(desktop.width, 960);
+  assert.equal(desktop.quality, 72);
+  assert.deepEqual(desktop.attempts.map(({ longEdge, quality }) => ({ longEdge, quality })), [
+    { longEdge: 960, quality: 72 }
+  ]);
+  assert.equal(mobile.ok, true);
+  assert.equal(mobile.longEdge, 680);
+  assert.equal(mobile.width, 680);
+  assert.equal(mobile.quality, 72);
+});
+
+test("historical photo mobile recovery accepts the extended ladder down to 390px and rejects lower caps", async () => {
+  for (const longEdge of [560, 480, 390]) {
+    const mobile = await createMobileVariant({
+      input: fixtures.largeJpeg,
+      role: "body",
+      kind: "photo",
+      outputFormat: "webp",
+      preserveCrop: true,
+      photoLongEdgeCap: longEdge
+    });
+    assert.equal(mobile.ok, true);
+    assert.equal(mobile.width, longEdge);
+    assert.equal(mobile.quality, 72);
+  }
+  await assert.rejects(
+    createMobileVariant({
+      input: fixtures.largeJpeg,
+      role: "body",
+      kind: "photo",
+      outputFormat: "webp",
+      preserveCrop: true,
+      photoLongEdgeCap: 389
+    }),
+    /unsupported mobile deep-photo long-edge cap: 389/i
+  );
 });
 
 test("caller limits can tighten but never weaken the configured role budget", async () => {
@@ -298,11 +392,84 @@ test("charts ignore same-format overrides and always compare safe WebP and PNG c
   }
 });
 
+test("historical preservation mode keeps a chart's requested primary format", async () => {
+  const output = await createDesktopVariant({
+    input: fixtures.chartPng,
+    role: "chart",
+    kind: "graphic",
+    outputFormat: "jpeg",
+    preserveOutputFormat: true
+  });
+
+  assert.equal(output.ok, true);
+  assert.equal(output.format, "jpeg");
+});
+
+test("historical progressive fallback handles a DeLonghi-shaped sub-1280 PNG at the first 99% stage", async () => {
+  const withoutFallback = await createDesktopVariant({
+    input: fixtures.sub1280Png,
+    role: "cover",
+    kind: "photo",
+    outputFormat: "png",
+    preserveCrop: true
+  });
+  const output = await createDesktopVariant({
+    input: fixtures.sub1280Png,
+    role: "cover",
+    kind: "photo",
+    outputFormat: "png",
+    preserveCrop: true,
+    historicalProgressiveFallback: true
+  });
+
+  assert.equal(withoutFallback.ok, false);
+  assert.equal(output.ok, true);
+  assert.equal(output.format, "png");
+  assert.deepEqual([output.width, output.height, output.fallbackScale], [781, 589, 0.99]);
+  assert.equal(output.bytes <= IMAGE_BUDGETS.cover.desktop, true);
+  assert.deepEqual(output.attempts.filter(({ fallbackScale }) => fallbackScale).map(({ fallbackScale }) => fallbackScale), [0.99]);
+});
+
+test("historical progressive fallback selects the first passing stage deterministically", async () => {
+  const output = await createDesktopVariant({
+    input: fixtures.progressivePng,
+    role: "cover",
+    kind: "photo",
+    outputFormat: "png",
+    preserveCrop: true,
+    historicalProgressiveFallback: true
+  });
+
+  assert.equal(output.ok, true);
+  assert.equal(output.fallbackScale, 0.96);
+  assert.deepEqual(output.attempts.filter(({ fallbackScale }) => fallbackScale).map(({ fallbackScale, bytes }) => ({ fallbackScale, passes: bytes <= IMAGE_BUDGETS.cover.desktop })), [
+    { fallbackScale: 0.99, passes: false },
+    { fallbackScale: 0.98, passes: false },
+    { fallbackScale: 0.96, passes: true }
+  ]);
+});
+
 test("mobile retention uses the approved byte-or-ratio threshold boundaries", () => {
-  assert.equal(shouldKeepMobileVariant({ desktopBytes: 100_000, mobileBytes: 79_999 }), true);
-  assert.equal(shouldKeepMobileVariant({ desktopBytes: 100_000, mobileBytes: 75_000 }), true);
-  assert.equal(shouldKeepMobileVariant({ desktopBytes: 100_000, mobileBytes: 80_000 }), true);
-  assert.equal(shouldKeepMobileVariant({ desktopBytes: 100_000, mobileBytes: 80_001 }), false);
+  const dimensions = { desktopWidth: 1200, mobileWidth: 800 };
+  assert.equal(shouldKeepMobileVariant({ desktopBytes: 100_000, mobileBytes: 79_999, ...dimensions }), true);
+  assert.equal(shouldKeepMobileVariant({ desktopBytes: 100_000, mobileBytes: 75_000, ...dimensions }), true);
+  assert.equal(shouldKeepMobileVariant({ desktopBytes: 100_000, mobileBytes: 80_000, ...dimensions }), true);
+  assert.equal(shouldKeepMobileVariant({ desktopBytes: 100_000, mobileBytes: 80_001, ...dimensions }), false);
+});
+
+test("mobile retention rejects a byte-profitable candidate that is not narrower than the final primary", () => {
+  assert.equal(shouldKeepMobileVariant({
+    desktopBytes: 100_000,
+    mobileBytes: 40_000,
+    desktopWidth: 720,
+    mobileWidth: 720
+  }), false);
+  assert.equal(shouldKeepMobileVariant({
+    desktopBytes: 100_000,
+    mobileBytes: 40_000,
+    desktopWidth: 781,
+    mobileWidth: 789
+  }), false);
 });
 
 test("transformAsset returns buffers and metadata while omitting an uneconomical mobile candidate", async () => {

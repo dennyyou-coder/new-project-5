@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
@@ -302,4 +303,61 @@ test("article OpenGraph metadata keeps the primary cover URL rather than a mobil
   assert.deepEqual(metadata.openGraph.images, [expected]);
   assert.deepEqual(metadata.twitter.images, [expected]);
   assert.doesNotMatch(JSON.stringify(metadata), /-800\.webp/);
+});
+
+test("Task 6 historical article inventory edits preserve every pre-migration byte except the approved lines", () => {
+  const coverAdditions = [
+    {
+      slug: "floor-scrubber-rental-vs-buy",
+      cover: "/images/blog/floor-scrubber-rent-lease-buy-decision-map.webp",
+      baselineHash: "e73427fb8944bd4abc03017d2d050eb1e981a1e57161e811a1469b7f20be6100"
+    },
+    {
+      slug: "how-to-find-reliable-cleaning-product-suppliers-in-china",
+      cover: "/images/blog/how-to-find-reliable-cleaning-product-suppliers-in-china-cover.webp",
+      baselineHash: "daff22ebbe37a4ad1ffe0d5d618f09f1e273143b544e84ab2503c5e268a3dd1e"
+    },
+    {
+      slug: "who-owns-hayward-pool-products",
+      cover: "/images/blog/hayward-pool-products-ownership-entity-map.webp",
+      baselineHash: "84b7a444740d4d36231c89fe0f93ac6f5cf1a78367b63cdf5eb5b63738a1219a"
+    }
+  ];
+  const digest = (source) => crypto.createHash("sha256").update(source).digest("hex");
+
+  for (const item of coverAdditions) {
+    const file = path.join(root, "content", "insights", `${item.slug}.mdx`);
+    const source = fs.readFileSync(file, "utf8");
+    const approvedLine = `coverImage: "${item.cover}"\n`;
+    assert.equal(source.split(approvedLine).length - 1, 1, `${item.slug} must add exactly one explicit coverImage line`);
+    assert.equal(digest(source.replace(approvedLine, "")), item.baselineHash, `${item.slug} changed outside the approved coverImage line`);
+  }
+
+  const budgetAdditions = [
+    ["ces-2026-backyard-robot-war", "148ed2f016c54a83781e15d3b2f4197e704ce876263890f321e2424713a9dbb4"],
+    ["cleaning-appliance-companies-at-awe", "34a2c6448c6857f43604f8005b22efe2fdc8850a35c2c3d849af070f78ad7b4f"],
+    ["hundred-years-of-cleaning-appliance-history", "a553dd0cb4b6ab731314a7971e66367e27726c5bd223574396dfb41749ed3d4b"]
+  ];
+  const approvedBudgetLine = "image_budget: deep\n";
+  for (const [slug, baselineHash] of budgetAdditions) {
+    const source = fs.readFileSync(path.join(root, "content", "insights", `${slug}.mdx`), "utf8");
+    assert.equal(source.split(approvedBudgetLine).length - 1, 1, `${slug} must add exactly one deep-budget line`);
+    assert.equal(digest(source.replace(approvedBudgetLine, "")), baselineHash, `${slug} changed outside the approved image_budget line`);
+  }
+
+  const mideaSlug = "midea-group-and-the-possible-philips-domestic-appliances-acquisition";
+  const mideaFile = path.join(root, "content", "insights", `${mideaSlug}.mdx`);
+  const mideaSource = fs.readFileSync(mideaFile, "utf8");
+  const image = "![Midea Group and the Possible Philips Domestic Appliances Acquisition image 2](/images/insights/midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-002.png)";
+  assert.equal(mideaSource.includes(`.\n${image}`), true, "image-002 must start on its own Markdown line");
+  assert.equal(
+    digest(mideaSource.replace(`\n${image}`, image)),
+    "ebb34a3a1a607e36ebc7b05397a46877d9c880d598c36904a59eee12fc5a65bb",
+    "the Midea article changed outside the one approved newline"
+  );
+
+  const article = content.getInsight(mideaSlug);
+  assert.ok(article);
+  const html = content.markdownToHtml(article.content);
+  assert.match(html, /<figure class="article-inline-image"><img src="\/images\/insights\/midea-group-and-the-possible-philips-domestic-appliances-acquisition-image-002\.png"/);
 });
