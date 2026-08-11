@@ -1,0 +1,828 @@
+{
+  "status": "published",
+  "slug": "vacuum-cleaner-brush-roll",
+  "name": "Vacuum Cleaner Brush Roll",
+  "aliases": [
+    "vacuum brush bar",
+    "agitator brush roll",
+    "cleaner-head roller",
+    "soft roller"
+  ],
+  "definition": "A rotating cleaning-head element that agitates carpet, gathers debris or wipes hard floors; the roller, end caps, bearings, drive interface and cleaner-head controls form a model-specific system.",
+  "includedScope": [
+    "Driven brush bars and soft rollers for dry vacuum cleaner heads",
+    "Bristle, hybrid, microfiber and anti-tangle designs",
+    "Exact cleaner-head and machine compatibility checks"
+  ],
+  "excludedScope": [
+    "Wet floor-washer rollers",
+    "Passive upholstery brushes",
+    "Whole-vacuum suction performance claims"
+  ],
+  "primaryApplications": [
+    "Cordless stick vacuums",
+    "Upright vacuums",
+    "Carpet and hard-floor cleaner heads"
+  ],
+  "headline": "Brush material, drive geometry and cleaner-head identity must match as one system.",
+  "description": "This profile maps brush-roll architectures, wear boundaries and exact-fit checks using official replacement-part and cleaner-head evidence.",
+  "metaDescription": "Vacuum cleaner brush roll types, materials, cleaner-head interfaces, wear checks and exact model compatibility evidence.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/vacuum-cleaner-brush-roll/hero.webp",
+  "heroImageAlt": "Hoover multi-surface vacuum cleaner brush roll",
+  "heroImageCaption": "Official Hoover Multi-Surface Brush Roll image on a WCB canvas; the official product page limits fit to named Emerge models.",
+  "heroSourceUrl": "https://cdn.shopify.com/s/files/1/0484/2428/8407/files/440015595_Multi-Surface_Brush_Roll.jpg?v=1698774481",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-brush-roll/architecture-family.webp",
+      "alt": "Hoover multi-surface bristle brush roll",
+      "caption": "Official Hoover replacement brush-roll image showing the bristle and end-interface architecture.",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0484/2428/8407/files/440015595_Multi-Surface_Brush_Roll.jpg?v=1698774481"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-brush-roll/performance-boundaries.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-brush-roll/performance-boundaries-mobile.svg",
+      "alt": "Vacuum Cleaner Brush Roll performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual",
+        "shark-nozzle"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-brush-roll/application-reference.webp",
+      "alt": "Hoover all-terrain rear bristled brush roll",
+      "caption": "Official Hoover rear-brush-roll image on a WCB canvas; the source identifies its Hoover Evolve application boundary.",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0484/2428/8407/files/440015593_All-Terrain_Rear_BrushRoll.jpg?v=1718040805"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-brush-roll/compatibility-gate.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-brush-roll/compatibility-gate-mobile.svg",
+      "alt": "Vacuum Cleaner Brush Roll compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual",
+        "shark-nozzle"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Fit boundary",
+      "value": "Official parts pages publish named model or cleaner-head scope",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "dyson-v15-parts",
+        "shark-nozzle"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "label": "Surface architecture",
+      "value": "Bristled, microfiber and hybrid rollers serve different documented floor tasks",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-front",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "label": "Drive boundary",
+      "value": "End-cap, bearing and motorized-head interfaces are part-specific",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "dyson-v15-parts"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Surface contact",
+      "role": "Bristles, fins or microfiber contact the floor and debris.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 2,
+      "name": "Agitation",
+      "role": "Rotation loosens embedded material or directs debris toward the airflow path.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 3,
+      "name": "Debris transport",
+      "role": "Helical or patterned elements move hair and particles toward the inlet.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 4,
+      "name": "Cleaner-head load",
+      "role": "Roller resistance interacts with the head drive, bearings and controls.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Bristled agitator",
+      "operatingPrinciple": "Stiff or compliant bristles rotate against carpet or mixed floors.",
+      "applicationBoundary": "Named carpet or multi-surface head only",
+      "benefits": [
+        "Embedded-debris agitation"
+      ],
+      "limitations": [
+        "Can wrap hair and wear unevenly"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Soft microfiber roller",
+      "operatingPrinciple": "A compliant textile surface lifts fine debris from hard floors.",
+      "applicationBoundary": "Named hard-floor cleaner head only",
+      "benefits": [
+        "Gentler hard-floor contact"
+      ],
+      "limitations": [
+        "Material and end-cap fit are model-specific"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Hybrid anti-tangle roller",
+      "operatingPrinciple": "Mixed fins, bristles or comb features manage multiple floor types and hair.",
+      "applicationBoundary": "Named powered head and control system",
+      "benefits": [
+        "Broader documented floor scope"
+      ],
+      "limitations": [
+        "Drive load and cleaner-head geometry remain proprietary"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Part number and revision",
+      "purchasingMeaning": "Controls the exact service identity",
+      "reportingBoundary": "Retain regional and revision suffixes",
+      "comparisonCaution": "Do not approve by color or length.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Overall and working width",
+      "purchasingMeaning": "Defines housing clearance and cleaning path",
+      "reportingBoundary": "Measure datum and end caps consistently",
+      "comparisonCaution": "Similar width does not establish fit.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Drive and bearing interfaces",
+      "purchasingMeaning": "Defines torque transfer and support",
+      "reportingBoundary": "Record profile, side and retention geometry",
+      "comparisonCaution": "A roller that enters the housing may still bind.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Surface material",
+      "purchasingMeaning": "Links the roller to documented floor and debris scope",
+      "reportingBoundary": "Retain bristle, fin or microfiber construction",
+      "comparisonCaution": "Do not infer surface safety from appearance.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Carpet agitation",
+      "wcbAssessment": "Use a documented bristled or hybrid head within the exact cleaner scope.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "application": "Hard-floor fine debris",
+      "wcbAssessment": "Use the manufacturer-listed soft roller or hard-floor head.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "application": "Mixed floors and hair",
+      "wcbAssessment": "Verify the full anti-tangle cleaner-head assembly and controls, not only the roller.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact part identity",
+      "requiredMatch": "Current part number, revision and region",
+      "why": "Cleaner-head generations can look alike.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Machine and cleaner head",
+      "requiredMatch": "Exact model and installed head assembly",
+      "why": "A machine family may ship with multiple heads.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Mechanical interface",
+      "requiredMatch": "Width, end caps, bearings, drive profile and rotation",
+      "why": "Incorrect geometry can bind or shed the roller.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Surface and duty",
+      "requiredMatch": "Published floor, debris and maintenance scope",
+      "why": "Material affects pickup, wear and floor contact.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Roller does not turn",
+      "possibleCauses": [
+        "Jammed debris",
+        "Drive or bearing mismatch"
+      ],
+      "safetyBoundary": "Disconnect power before opening the cleaner head.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "symptom": "Noise or vibration",
+      "possibleCauses": [
+        "Bent roller",
+        "Worn end cap or incorrect seating"
+      ],
+      "safetyBoundary": "Stop use if the roller contacts the housing.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "symptom": "Hair wrap or poor pickup",
+      "possibleCauses": [
+        "Worn surface",
+        "Blocked head or unsuitable roller architecture"
+      ],
+      "safetyBoundary": "Follow the official cleaning and replacement procedure.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Hoover",
+      "familyName": "Multi-Surface Brush Roll for Emerge",
+      "architecture": "Bristled multi-surface roller",
+      "applicationScope": "BH53600 and BH53600V",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Named US replacement page",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Hoover",
+      "familyName": "All Terrain Rear Bristled Brush Roll",
+      "architecture": "Rear bristled roller",
+      "applicationScope": "Hoover Evolve vacuums",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Named US replacement page",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-rear"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Hoover",
+      "familyName": "All Terrain Front Microfiber Brush Roll",
+      "architecture": "Front microfiber roller",
+      "applicationScope": "BH53602 and BH53602V",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Named US replacement page",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-front"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Dyson",
+      "familyName": "Digital Motorbar 974950-01",
+      "architecture": "Motorized anti-tangle brush bar head",
+      "applicationScope": "Listed Dyson V15 machines",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Dyson US parts scope",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v15-parts"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Dyson",
+      "familyName": "Laser Slim Fluffy 971634-01",
+      "architecture": "Soft brush bar",
+      "applicationScope": "Listed V15 cleaner-head applications",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Dyson US parts scope",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v15-parts"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Shark",
+      "familyName": "1537FC3002 DuoClean PowerFins HairPro nozzle",
+      "architecture": "Dual-surface self-cleaning brushroll nozzle",
+      "applicationScope": "AZ3000W, AZ3002 and AZ3002C",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Shark US parts scope",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "shark-nozzle"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Shark",
+      "familyName": "AZ3002 DuoClean PowerFins HairPro",
+      "architecture": "Dual-roller upright cleaner head",
+      "applicationScope": "Shark Stratos AZ3002",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Shark US product scope",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "shark-nozzle"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact part identity",
+      "reason": "Cleaner-head generations can look alike.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Machine and cleaner head",
+      "reason": "A machine family may ship with multiple heads.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Mechanical interface",
+      "reason": "Incorrect geometry can bind or shed the roller.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Surface and duty",
+      "reason": "Material affects pickup, wear and floor contact.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-emerge",
+        "hoover-rear",
+        "hoover-front",
+        "dyson-v15-parts",
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60312-1",
+      "jurisdiction": "International",
+      "version": "2010+A1:2011",
+      "applicability": "Performance-method context for dry household vacuums; not a brush-roll compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60312"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-02-01",
+      "title": "Dyson V15 official manual documents active cleaner-head functions",
+      "summary": "The reviewed official manual describes Digital Motorbar resistance sensing, power adaptation and de-tangling behavior.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "dyson-v15-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hoover-emerge",
+      "title": "Multi-Surface Brush Roll for Emerge",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/products/multi-surface-brush-roll-for-emerge",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "hoover-rear",
+      "title": "All Terrain Rear Bristled Brush Roll",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/products/all-terrain-rear-bristled-brush-roll-1",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "hoover-front",
+      "title": "All Terrain Front Microfiber Brush Roll",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/products/all-terrain-front-microfiber-brush-roll",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "dyson-v15-parts",
+      "title": "Dyson V15 Detect vacuum parts: cleaner heads and brush bars",
+      "publisher": "Dyson",
+      "sourceType": "manufacturer",
+      "url": "https://www.dyson.com/spare-parts/vacuum-cleaners/cordless/v15-detect",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "dyson-v15-manual",
+      "title": "Dyson V15 Detect user manual",
+      "publisher": "Dyson",
+      "sourceType": "manual",
+      "url": "https://www.dyson.com/content/dam/dyson/for-business/business-refresh/docs/us/vacuums/Dyson%20V15%20Detect%20User%20Manual.pdf",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "shark-nozzle",
+      "title": "DuoClean PowerFins HairPro floor nozzle 1537FC3002",
+      "publisher": "Shark",
+      "sourceType": "manufacturer",
+      "url": "https://www.sharkclean.com/products/duoclean-powerfins-hairpro-floor-nozzle-with-self-cleaning-brushroll-and-odor-neutralizer-technology-zid1537FC3002",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "iec-60312",
+      "title": "IEC 60312-1:2010+A1:2011 dry vacuum performance methods",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/1335",
+      "accessedAt": "2026-08-11"
+    }
+  ],
+  "publishedAt": "2026-08-11",
+  "lastVerified": "2026-08-11",
+  "lastModified": "2026-08-11"
+}

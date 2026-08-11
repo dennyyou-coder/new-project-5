@@ -1,0 +1,846 @@
+{
+  "status": "published",
+  "slug": "pressure-washer-nozzle",
+  "name": "Pressure Washer Nozzle",
+  "aliases": [
+    "pressure washer spray tip",
+    "power washer nozzle",
+    "rotary turbo nozzle",
+    "quick-connect nozzle"
+  ],
+  "definition": "A calibrated high-pressure outlet that converts pump flow into a defined jet or spray; orifice size, angle, pressure, flow, temperature, connection and surface task must be approved together.",
+  "includedScope": [
+    "Fixed-angle quick-connect spray tips",
+    "Rotary and variable-pattern pressure-washer nozzles",
+    "Orifice, pressure, temperature, connection and surface checks"
+  ],
+  "excludedScope": [
+    "Garden-hose nozzles",
+    "Airless paint tips",
+    "Nozzle substitutions without pump and unloader validation"
+  ],
+  "primaryApplications": [
+    "Concrete and hard-surface cleaning",
+    "Vehicle and equipment washing",
+    "Detergent application and rinsing"
+  ],
+  "headline": "Orifice size controls system load; spray angle controls surface intensity.",
+  "description": "This profile maps fixed, multi-pattern and rotary pressure-washer nozzles using official ratings and practical pump, connector and surface gates.",
+  "metaDescription": "Pressure washer nozzle sizes, spray angles, orifice ratings, quick-connect types, surface risks and compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/pressure-washer-nozzle/hero.webp",
+  "heroImageAlt": "Simpson five-piece pressure washer nozzle set",
+  "heroImageCaption": "Official Simpson 80146 nozzle-set image on a WCB canvas; the cited page specifies angle, orifice, pressure, temperature and connection scope.",
+  "heroSourceUrl": "https://simpsoncleaning.com/wp-content/uploads/80145_80146.jpg",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-nozzle/architecture-family.webp",
+      "alt": "Simpson color-coded pressure washer spray tips",
+      "caption": "Official Simpson image showing fixed-angle 0°, 15°, 25°, 40° and soap nozzle families.",
+      "sourceUrl": "https://simpsoncleaning.com/wp-content/uploads/80145_80146.jpg"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-nozzle/performance-boundaries.svg",
+      "mobileSrc": "/images/components/pressure-washer-nozzle/performance-boundaries-mobile.svg",
+      "alt": "Pressure Washer Nozzle performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power",
+        "karcher-dirt"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-nozzle/application-reference.webp",
+      "alt": "Kärcher quick-connect turbo pressure washer nozzle",
+      "caption": "Official Kärcher turbo-nozzle image on a WCB canvas; use only within the named pressure, connector and surface limits.",
+      "sourceUrl": "https://s1.kaercher-media.com/mam/86410340/mainproduct/82346/d0.jpg"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-nozzle/compatibility-gate.svg",
+      "mobileSrc": "/images/components/pressure-washer-nozzle/compatibility-gate-mobile.svg",
+      "alt": "Pressure Washer Nozzle compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power",
+        "karcher-dirt"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Calibrated outlet",
+      "value": "Official product pages publish nozzle size, angle and pressure as separate selection variables",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "karcher-power",
+        "mtm-detail"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Connector boundary",
+      "value": "Named consumer kits use a 1/4-inch quick-connect plug, but machine and wand scope still applies",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "karcher-5pc"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Surface boundary",
+      "value": "A rotary point jet raises cleaning intensity and is excluded from delicate surfaces",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-turbo",
+        "karcher-dirt"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Flow metering",
+      "role": "The calibrated orifice establishes flow restriction at the operating pressure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 2,
+      "name": "Jet formation",
+      "role": "Internal geometry shapes a point, fan, detergent or rotating jet.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 3,
+      "name": "Surface energy distribution",
+      "role": "Angle and stand-off distance change impact intensity and coverage.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 4,
+      "name": "Accessory connection",
+      "role": "The plug, thread or proprietary coupling retains and seals the nozzle.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Fixed-angle spray tip",
+      "operatingPrinciple": "A calibrated insert produces one documented fan or point angle.",
+      "applicationBoundary": "Matched orifice and rated quick-connect system",
+      "benefits": [
+        "Simple identification and repeatable pattern"
+      ],
+      "limitations": [
+        "Wrong size changes system pressure and cleaning result"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Multi-pattern selector",
+      "operatingPrinciple": "A rotating selector switches among several named patterns.",
+      "applicationBoundary": "Named machine, pressure and connection scope",
+      "benefits": [
+        "Fewer loose tips"
+      ],
+      "limitations": [
+        "Internal selector and seal condition affect performance"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Rotary turbo nozzle",
+      "operatingPrinciple": "A point jet rotates to combine concentrated impact with broader coverage.",
+      "applicationBoundary": "Hard surfaces inside exact pressure and temperature limits",
+      "benefits": [
+        "High area performance on stubborn soil"
+      ],
+      "limitations": [
+        "Can damage delicate surfaces and wears internal ceramic parts"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Orifice size",
+      "purchasingMeaning": "Matches pump flow to pressure and unloader behavior",
+      "reportingBoundary": "Retain manufacturer numbering method and operating point",
+      "comparisonCaution": "A larger angle does not compensate for the wrong orifice.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Spray angle",
+      "purchasingMeaning": "Controls fan width and local impact",
+      "reportingBoundary": "Retain angle, distance and surface condition",
+      "comparisonCaution": "Color conventions require confirmation from the named product.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Maximum pressure and temperature",
+      "purchasingMeaning": "Defines the documented envelope",
+      "reportingBoundary": "Retain working/maximum terminology",
+      "comparisonCaution": "Never qualify by connector alone.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Connection",
+      "purchasingMeaning": "Defines wand retention and sealing",
+      "reportingBoundary": "Record plug size, thread, gender and locking system",
+      "comparisonCaution": "A nominal 1/4-inch label omits system condition and wear.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Heavy hard-surface cleaning",
+      "wcbAssessment": "Use a documented 0°/15° or rotary nozzle only after surface-risk review.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "General washing",
+      "wcbAssessment": "A matched 25° or 40° fan tip can distribute impact across a wider area.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Detergent application",
+      "wcbAssessment": "Use the manufacturer-defined low-pressure soap nozzle and chemistry procedure.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Pump operating point",
+      "requiredMatch": "Actual flow and pressure at the approved condition",
+      "why": "Wrong orifice can overpressure or unload continuously.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Nozzle identity",
+      "requiredMatch": "Orifice number, angle, product code and revision",
+      "why": "Color alone is not a procurement specification.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Connection and retention",
+      "requiredMatch": "Exact plug/thread, socket condition and locking engagement",
+      "why": "A worn coupling can eject the nozzle.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Surface and distance",
+      "requiredMatch": "Substrate, coating, angle, stand-off and test area",
+      "why": "High local impact can etch or strip surfaces.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Pressure too high or machine cycles",
+      "possibleCauses": [
+        "Orifice too small",
+        "Blocked nozzle or unloader fault"
+      ],
+      "safetyBoundary": "Stop and depressurize before inspection.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Weak or uneven spray",
+      "possibleCauses": [
+        "Worn or oversized orifice",
+        "Debris or damaged selector"
+      ],
+      "safetyBoundary": "Do not probe a pressurized nozzle.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Surface damage",
+      "possibleCauses": [
+        "Angle too narrow",
+        "Distance too short or rotary tip misapplied"
+      ],
+      "safetyBoundary": "Test the approved setup on an inconspicuous area.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Simpson",
+      "familyName": "80146 five-nozzle kit",
+      "architecture": "Fixed-angle 0/15/25/40/soap set",
+      "applicationScope": "4.0 orifice, 1/4-inch QC, named rating",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Simpson US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Simpson",
+      "familyName": "80177 second-story nozzles",
+      "architecture": "Wash and soap long-range pair",
+      "applicationScope": "Named 10.0/40.0 sizes and catalog scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Simpson 2026 catalog",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-catalog"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "8.641-031.0 five-piece kit",
+      "architecture": "Fixed-angle quick-connect set",
+      "applicationScope": "035 orifice and named residential gas machines",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-5pc"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "8.641-034.0 turbo nozzle",
+      "architecture": "Rotating point-jet nozzle",
+      "applicationScope": "Up to named 4000 PSI scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-turbo"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "4.111-020.0 Dirt Blaster 040",
+      "architecture": "Professional ceramic rotary nozzle",
+      "applicationScope": "Named pressure, temperature and machine scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-dirt"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "MTM Hydro",
+      "familyName": "17.0171 Hydrojet 4.0 five-pack",
+      "architecture": "Fixed-angle and soap quick-connect set",
+      "applicationScope": "Named 4.0 set",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "MTM Hydro US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "mtm-nozzles"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "MTM Hydro",
+      "familyName": "16.7021 Acqualine 4.0 40 degree",
+      "architecture": "Guarded stainless-plug nozzle",
+      "applicationScope": "Named detailing-nozzle configuration",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "MTM Hydro US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "mtm-detail"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Pump operating point",
+      "reason": "Wrong orifice can overpressure or unload continuously.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Nozzle identity",
+      "reason": "Color alone is not a procurement specification.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Connection and retention",
+      "reason": "A worn coupling can eject the nozzle.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Surface and distance",
+      "reason": "High local impact can etch or strip surfaces.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "simpson-catalog",
+        "karcher-5pc",
+        "karcher-turbo",
+        "karcher-power"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-79",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety context for high-pressure cleaners within the standard scope; not a nozzle compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-11",
+      "title": "Current official ranges separate fixed, selector and rotary nozzle architectures",
+      "summary": "Reviewed Simpson, Kärcher and MTM Hydro sources publish materially different pattern, orifice and operating envelopes.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80146",
+        "karcher-turbo",
+        "mtm-nozzles"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "sources": [
+    {
+      "id": "simpson-80146",
+      "title": "Replacement Spray Nozzles 80146",
+      "publisher": "Simpson",
+      "sourceType": "manufacturer",
+      "url": "https://simpsoncleaning.com/products/replacement-spray-nozzles/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "simpson-catalog",
+      "title": "Simpson 2026 industrial equipment catalog",
+      "publisher": "Simpson",
+      "sourceType": "datasheet",
+      "url": "https://simpsoncleaning.com/wp-content/uploads/Simpson_IndustrialCatalog_2026_R01.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "karcher-5pc",
+      "title": "5 Piece Quick Connect Nozzle Kit 8.641-031.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/5-piece-quick-connect-nozzle-kit-86410310.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "karcher-turbo",
+      "title": "Turbo Nozzle Quick Connect 8.641-034.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/turbo-nozzle-quick-connect-86410340.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "karcher-power",
+      "title": "Power nozzle 40 degree 4.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/pressure-washer-nozzle-40deg-040.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "karcher-dirt",
+      "title": "Dirt Blaster 4.111-020.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/dirt-blaster-41140200.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "mtm-nozzles",
+      "title": "MTM Hydro quick-connect nozzles",
+      "publisher": "MTM Hydro",
+      "sourceType": "manufacturer",
+      "url": "https://www.mtmhydroparts.com/collections/quick-connect-nozzles",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "mtm-detail",
+      "title": "MTM Hydro detailing nozzles",
+      "publisher": "MTM Hydro",
+      "sourceType": "manufacturer",
+      "url": "https://www.mtmhydroparts.com/collections/detailing-nozzles",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "iec-60335-2-79",
+      "title": "IEC 60335-2-79:2021 high-pressure cleaner safety",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64779",
+      "accessedAt": "2026-08-12"
+    }
+  ],
+  "publishedAt": "2026-08-12",
+  "lastVerified": "2026-08-12",
+  "lastModified": "2026-08-12"
+}

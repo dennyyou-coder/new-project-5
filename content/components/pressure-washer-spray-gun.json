@@ -1,0 +1,838 @@
+{
+  "status": "published",
+  "slug": "pressure-washer-spray-gun",
+  "name": "Pressure Washer Spray Gun",
+  "aliases": [
+    "pressure washer trigger gun",
+    "high-pressure spray handle",
+    "washer gun assembly",
+    "trigger valve gun"
+  ],
+  "definition": "A hand-operated high-pressure valve assembly between the hose and lance; pressure, flow, temperature, inlet, outlet, locking and machine-system limits must be approved together.",
+  "includedScope": [
+    "Consumer and professional pressure-washer trigger guns",
+    "Cold- and hot-water operating envelopes",
+    "Hose, lance, quick-connect and threaded interface checks"
+  ],
+  "excludedScope": [
+    "Airless paint spray guns",
+    "Garden-hose nozzles",
+    "Unapproved field modification of pressure-bearing parts"
+  ],
+  "primaryApplications": [
+    "Consumer cold-water washing",
+    "Professional hot- and cold-water cleaning",
+    "Vehicle, facility and equipment washing"
+  ],
+  "headline": "Pressure, temperature, flow and both connections define the spray-gun approval boundary.",
+  "description": "This profile compares official consumer, professional and recoil-assisted spray-gun families without treating a common connector appearance as universal fit.",
+  "metaDescription": "Pressure washer spray gun ratings, trigger-valve designs, connection standards, safety locks and exact compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/pressure-washer-spray-gun/hero.webp",
+  "heroImageAlt": "Simpson universal pressure washer spray gun 80147",
+  "heroImageCaption": "Official Simpson 80147 product image on a WCB canvas; use the current product page for its cold-water and connection scope.",
+  "heroSourceUrl": "https://simpsoncleaning.com/wp-content/uploads/80147_80159_front_hres-1.jpg",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-spray-gun/architecture-family.webp",
+      "alt": "Simpson 80147 trigger gun assembly",
+      "caption": "Official Simpson product image showing the trigger body, guard and connection ends.",
+      "sourceUrl": "https://simpsoncleaning.com/wp-content/uploads/80147_80159_front_hres-1.jpg"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-spray-gun/performance-boundaries.svg",
+      "mobileSrc": "/images/components/pressure-washer-spray-gun/performance-boundaries-mobile.svg",
+      "alt": "Pressure Washer Spray Gun performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup",
+        "karcher-easyforce"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-spray-gun/application-reference.webp",
+      "alt": "Simpson 80148 spray gun with side assist handle",
+      "caption": "Official Simpson callout image on a WCB canvas; the named page limits this cold-water gun by pressure, flow and M22 connections.",
+      "sourceUrl": "https://simpsoncleaning.com/wp-content/uploads/80148_Callouts-scaled.jpg"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-spray-gun/compatibility-gate.svg",
+      "mobileSrc": "/images/components/pressure-washer-spray-gun/compatibility-gate-mobile.svg",
+      "alt": "Pressure Washer Spray Gun compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup",
+        "karcher-easyforce"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Rated envelope",
+      "value": "Official families publish different pressure, flow and temperature limits",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "label": "Interface boundary",
+      "value": "Inlet and outlet thread or quick-connect systems must both match",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80178",
+        "mtm-sgs28"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "label": "Operator control",
+      "value": "Trigger geometry, safety lock and valve design are model-specific",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80148",
+        "karcher-easyforce"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Flow isolation",
+      "role": "The internal valve starts and stops high-pressure flow.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 2,
+      "name": "Operator control",
+      "role": "The trigger, guard and safety lock provide the manual control interface.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 3,
+      "name": "Pressure transfer",
+      "role": "The body and seals retain the rated pressure and temperature.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 4,
+      "name": "System connection",
+      "role": "Inlet and outlet join the hose, lance and approved accessory system.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Consumer M22 trigger gun",
+      "operatingPrinciple": "A conventional trigger valve connects common named hose and lance interfaces.",
+      "applicationBoundary": "Cold-water machines inside the stated rating",
+      "benefits": [
+        "Simple replacement path"
+      ],
+      "limitations": [
+        "M22 dimensions and adapter scope still vary"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Professional hot-water gun",
+      "operatingPrinciple": "Higher-rated valve, body and seals support a documented hot-water envelope.",
+      "applicationBoundary": "Professional systems within exact pressure, flow and temperature ratings",
+      "benefits": [
+        "Higher duty and temperature range"
+      ],
+      "limitations": [
+        "Heavier and connection-specific"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Recoil-assisted ergonomic gun",
+      "operatingPrinciple": "System recoil force or an easy-pull mechanism reduces sustained finger load.",
+      "applicationBoundary": "Named professional system and connector family",
+      "benefits": [
+        "Reduced operator strain"
+      ],
+      "limitations": [
+        "Not a universal retrofit across connector systems"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Maximum pressure",
+      "purchasingMeaning": "Defines the documented operating ceiling",
+      "reportingBoundary": "Retain working/maximum terminology and unit",
+      "comparisonCaution": "Do not size from machine marketing pressure alone.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Maximum flow",
+      "purchasingMeaning": "Defines valve and passage capacity",
+      "reportingBoundary": "Retain stated GPM or L/min condition",
+      "comparisonCaution": "Higher pressure does not imply adequate flow.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Maximum temperature",
+      "purchasingMeaning": "Separates cold- and hot-water service",
+      "reportingBoundary": "Confirm water and ambient boundary",
+      "comparisonCaution": "A cold-water gun is not approved by similar appearance.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Inlet and outlet",
+      "purchasingMeaning": "Defines hose and lance integration",
+      "reportingBoundary": "Record thread gender, size and quick-connect parts",
+      "comparisonCaution": "M22 or QC labels alone may omit critical dimensions.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Residential cold-water cleaning",
+      "wcbAssessment": "Use a cold-water gun within the machine pressure, flow and M22/QC scope.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "application": "Commercial hot-water cleaning",
+      "wcbAssessment": "Use a professional gun whose exact temperature, pressure and seal scope is documented.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "application": "Extended professional operation",
+      "wcbAssessment": "Evaluate easy-pull or recoil-assisted ergonomics only inside the approved system.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Pressure and flow",
+      "requiredMatch": "Gun ratings at least cover the approved machine operating point",
+      "why": "A pressure-only match can overload flow passages.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Temperature",
+      "requiredMatch": "Cold- or hot-water rating and seal material scope",
+      "why": "Heat can invalidate a cold-water assembly.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Connections",
+      "requiredMatch": "Exact inlet/outlet thread, gender, QC plug and adapter",
+      "why": "Visual similarity does not establish sealing or retention.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Safety and ergonomics",
+      "requiredMatch": "Trigger lock, guard, recoil behavior and lance support",
+      "why": "Control behavior affects safe operation.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Gun leaks while closed",
+      "possibleCauses": [
+        "Valve-seat debris",
+        "Worn seal or incorrect fitting"
+      ],
+      "safetyBoundary": "Depressurize and isolate the machine before inspection.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "symptom": "Trigger will not operate",
+      "possibleCauses": [
+        "Safety lock engaged",
+        "Valve or pressure-system fault"
+      ],
+      "safetyBoundary": "Do not defeat the trigger lock or modify the valve.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "symptom": "Connection ejects or seeps",
+      "possibleCauses": [
+        "Wrong fitting",
+        "Damaged O-ring or over-rating"
+      ],
+      "safetyBoundary": "Stop operation immediately and follow the official service procedure.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Simpson",
+      "familyName": "80147 Universal Spray Gun",
+      "architecture": "Cold-water conventional trigger gun",
+      "applicationScope": "Named compatible residential pressure-washer scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Simpson US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Simpson",
+      "familyName": "80148 Side Assist Handle",
+      "architecture": "Cold-water M22 gun with rotating assist handle",
+      "applicationScope": "Machines within named rating and M22 scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Simpson US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80148"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Simpson",
+      "familyName": "80178 Professional Spray Gun",
+      "architecture": "Hot/cold professional gun with adapters",
+      "applicationScope": "Up to the exact published pressure, flow and temperature",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Simpson US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80178"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "MTM Hydro",
+      "familyName": "SGS28 10.5007",
+      "architecture": "Easy-pull gun with live swivel",
+      "applicationScope": "4000 PSI, 12 GPM named configuration",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "MTM Hydro US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "mtm-sgs28"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "MTM Hydro",
+      "familyName": "SG35 10.0342",
+      "architecture": "5000 PSI conventional professional gun",
+      "applicationScope": "Named 12 GPM and 320°F family",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "MTM official lineup",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "EASY!Force Advanced 4.118-005.0",
+      "architecture": "Recoil-assisted professional trigger gun",
+      "applicationScope": "Named EASY!Lock professional systems",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-easyforce"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "EASY!Force technology family",
+      "architecture": "Recoil-force trigger architecture",
+      "applicationScope": "Named Kärcher professional application",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-ergonomics"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Pressure and flow",
+      "reason": "A pressure-only match can overload flow passages.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Temperature",
+      "reason": "Heat can invalidate a cold-water assembly.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Connections",
+      "reason": "Visual similarity does not establish sealing or retention.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Safety and ergonomics",
+      "reason": "Control behavior affects safe operation.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80147",
+        "simpson-80148",
+        "simpson-80178",
+        "mtm-sgs28",
+        "mtm-lineup"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-79",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety context for high-pressure cleaners within the standard scope; not a spray-gun compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-11",
+      "title": "Official product ranges document multiple gun architectures",
+      "summary": "Reviewed Simpson, MTM Hydro and Kärcher sources distinguish cold-water, hot-water and recoil-assisted designs with different operating envelopes.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "simpson-80178",
+        "mtm-lineup",
+        "karcher-easyforce"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "sources": [
+    {
+      "id": "simpson-80147",
+      "title": "Universal Pressure Washer Spray Gun 80147",
+      "publisher": "Simpson",
+      "sourceType": "manufacturer",
+      "url": "https://simpsoncleaning.com/products/replacement-spray-gun-80147/",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "simpson-80148",
+      "title": "Universal Pressure Washer Spray Gun with Side Assist Handle 80148",
+      "publisher": "Simpson",
+      "sourceType": "manufacturer",
+      "url": "https://simpsoncleaning.com/products/simpson-replacement-gun-3400-psi/",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "simpson-80178",
+      "title": "Professional Pressure Washer Spray Gun 80178",
+      "publisher": "Simpson",
+      "sourceType": "manufacturer",
+      "url": "https://simpsoncleaning.com/products/hot-water-spray-gun-80178/",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "mtm-sgs28",
+      "title": "MTM Hydro SGS28 Spray Gun",
+      "publisher": "MTM Hydro",
+      "sourceType": "datasheet",
+      "url": "https://www.mtmhydroparts.com/collections/all-pressure-washing-products/products/mtm-hydro-easy-hold-sgs28-spray-gun-w-ss-qc-fittings",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "mtm-lineup",
+      "title": "Official MTM Hydro spray-gun lineup",
+      "publisher": "MTM Hydro",
+      "sourceType": "manufacturer",
+      "url": "https://www.mtmhydroparts.com/pages/spray-guns",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "karcher-easyforce",
+      "title": "EASY!Force Advanced pressure washer trigger gun 4.118-005.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/easy-force-advanced-pressure-washer-trigger-gun-41180050.html",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "karcher-ergonomics",
+      "title": "EASY!Force trigger-gun technology",
+      "publisher": "Kärcher",
+      "sourceType": "technical",
+      "url": "https://www.kaercher.com/us/easyforce.html",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "iec-60335-2-79",
+      "title": "IEC 60335-2-79:2021 high-pressure cleaner safety",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64779",
+      "accessedAt": "2026-08-11"
+    }
+  ],
+  "publishedAt": "2026-08-11",
+  "lastVerified": "2026-08-11",
+  "lastModified": "2026-08-11"
+}
