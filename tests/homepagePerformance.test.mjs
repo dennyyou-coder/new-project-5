@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
-import { readFile, stat } from "node:fs/promises";
+import { readdir, readFile, stat } from "node:fs/promises";
+import path from "node:path";
 import { fileURLToPath } from "node:url";
 import test from "node:test";
 import sharp from "sharp";
@@ -17,6 +18,42 @@ const avatarUrl = new URL(
   import.meta.url
 );
 const avatarPath = fileURLToPath(avatarUrl);
+const projectRoot = fileURLToPath(new URL("../", import.meta.url));
+const [homeCss, globalCss] = await Promise.all([
+  readFile(new URL("../app/styles/home.css", import.meta.url), "utf8"),
+  readFile(new URL("../app/globals.css", import.meta.url), "utf8")
+]);
+
+async function productionTsxFiles(directory) {
+  const entries = await readdir(directory, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const absolute = path.join(directory, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...(await productionTsxFiles(absolute)));
+    } else if (entry.isFile() && entry.name.endsWith(".tsx")) {
+      files.push(absolute);
+    }
+  }
+
+  return files.sort();
+}
+
+const productionSource = (
+  await Promise.all(
+    (
+      await Promise.all(
+        ["app", "components"].map((directory) =>
+          productionTsxFiles(path.join(projectRoot, directory))
+        )
+      )
+    )
+      .flat()
+      .sort()
+      .map((file) => readFile(file, "utf8"))
+  )
+).join("\n");
 
 test("homepage-owned raster visuals use next/image with explicit responsive sizes", () => {
   assert.match(homeSource, /import Image from "next\/image"/);
@@ -51,4 +88,15 @@ test("product-director avatar is a compact square WebP", async () => {
   assert.equal(facts.width, 160);
   assert.equal(facts.height, 160);
   assert.ok(file.size <= 20_000, `avatar is ${file.size} bytes`);
+});
+
+test("homepage route owns its Expo and updates-form styles", () => {
+  assert.match(homeCss, /\.home-v9-expo-campaign\s*\{/);
+  assert.match(homeCss, /\.home-v9-updates-form\s*\{/);
+  assert.doesNotMatch(globalCss, /\.home-v9-expo-campaign/);
+});
+
+test("retired Home V4 selectors have no production references", () => {
+  assert.doesNotMatch(globalCss, /\.home-v4-/);
+  assert.doesNotMatch(productionSource, /home-v4-/);
 });
