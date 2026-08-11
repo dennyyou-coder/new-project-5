@@ -102,6 +102,11 @@ test("Blog route CSS graph preserves article cover framing and responsive body i
   assert.match(blogRouteCss, /\.article-inline-image img\s*\{[^}]*max-width:\s*100%[^}]*height:\s*auto/s);
 });
 
+test("Blog article references and related cards stay inside the mobile viewport", () => {
+  assert.match(blogRouteCss, /\.blog-article-main\s*\{[^}]*overflow-wrap:\s*anywhere/s);
+  assert.match(blogRouteCss, /\.blog-related-signals \.related-signal-image\s*\{[^}]*margin:\s*0\s+0\s+20px/s);
+});
+
 test("Sitemap keeps Blog and Archive discoverable", () => {
   assert.match(sitemap, /"\/blog"/);
   assert.match(sitemap, /"\/blog\/archive"/);

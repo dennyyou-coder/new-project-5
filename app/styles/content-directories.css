@@ -392,6 +392,10 @@
   border-top: 0;
 }
 
+.blog-related-signals .related-signal-image {
+  margin: 0 0 20px;
+}
+
 .blog-related-signals .related-signal-card p {
   max-width: 680px;
 }

@@ -435,6 +435,7 @@
 .blog-article-main {
   width: 100%;
   max-width: none;
+  overflow-wrap: anywhere;
 }
 
 .blog-article-main h2 {
