@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { responsiveImageProps } from "@/lib/articleImages";
 import type { Insight } from "@/lib/content";
 
 export function GuideCard({ article }: { article: Insight }) {
@@ -7,10 +8,8 @@ export function GuideCard({ article }: { article: Insight }) {
       <Link href={`/blog/${article.slug}`}>
         {article.coverImage ? (
           <img
-            src={article.coverImage}
+            {...responsiveImageProps(article.coverImage, "card")}
             alt={article.coverAlt || `${article.title} guide cover`}
-            loading="lazy"
-            decoding="async"
           />
         ) : null}
         <div className="guide-card-copy">

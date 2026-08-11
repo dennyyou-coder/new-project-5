@@ -1,11 +1,13 @@
 import Link from "next/link";
 import type { DirectoryArticle } from "@/components/ContentDirectory";
+import { directoryArticleImageProps } from "@/lib/contentDirectory";
 
 const fallbackCover =
   "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp";
 
 export function DirectorySeriesFeature({ article }: { article: DirectoryArticle }) {
   const seriesTitle = article.seriesTitle || article.title;
+  const imageProps = directoryArticleImageProps(article, fallbackCover);
 
   return (
     <section
@@ -14,12 +16,8 @@ export function DirectorySeriesFeature({ article }: { article: DirectoryArticle 
     >
       <div className="content-directory-series-image">
         <img
-          src={article.coverImage || fallbackCover}
+          {...imageProps}
           alt={article.coverAlt || `${seriesTitle} cover`}
-          width={article.coverWidth}
-          height={article.coverHeight}
-          fetchPriority="high"
-          decoding="async"
           style={{ objectFit: "contain" }}
         />
       </div>

@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npm run verify:content-classification && npm run generate:image-dimensions",
+    "prebuild": "npm run verify:content-classification && npm run verify:article-images",
     "build": "next build",
+    "postbuild": "npm run verify:built-article-images",
     "start": "next start",
     "lint": "next lint",
     "test:analytics": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/googleAnalytics.test.mjs",
@@ -21,7 +22,9 @@
     "test:seo-audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/seoPerformanceAudit.test.mjs",
     "test:asset-performance": "node --test tests/assetPerformanceAudit.test.mjs",
     "verify:asset-budgets": "node scripts/verify-built-asset-budgets.mjs",
-    "generate:image-dimensions": "node scripts/generate-image-dimensions.mjs",
+    "prepare:article-images": "node scripts/prepare-article-images.mjs",
+    "verify:article-images": "node scripts/verify-article-images.mjs",
+    "verify:built-article-images": "node scripts/verify-built-article-images.mjs",
     "verify:sourcing-seo": "node scripts/verify-sourcing-seo.mjs",
     "verify:content-classification": "node scripts/verify-insight-classification.mjs"
   },
@@ -35,6 +38,7 @@
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "sharp": "0.34.5",
     "typescript": "^5.0.0"
   }
 }

@@ -1,10 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import {
+import "./register-path-alias.mjs";
+
+const {
   directoryHref,
   paginateDirectoryItems,
   parseDirectoryPage
-} from "../lib/contentDirectory.ts";
+} = await import("../lib/contentDirectory.ts");
 
 test("invalid directory page values fall back to page one", () => {
   assert.equal(parseDirectoryPage(undefined), 1);

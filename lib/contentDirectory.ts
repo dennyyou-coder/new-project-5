@@ -2,6 +2,7 @@ export const DIRECTORY_PAGE_SIZE = 10;
 
 import type { Insight } from "@/lib/content";
 import type { DirectoryArticle } from "@/components/ContentDirectory";
+import { responsiveImagePropsFor } from "@/lib/articleImageProps";
 
 export function toDirectoryArticle(article: Insight): DirectoryArticle {
   return {
@@ -15,10 +16,33 @@ export function toDirectoryArticle(article: Insight): DirectoryArticle {
     coverAlt: article.coverAlt,
     coverWidth: article.coverWidth,
     coverHeight: article.coverHeight,
+    coverMobile: article.coverMobile,
     featured: article.featured,
     tags: article.tags,
     seriesTitle: article.seriesTitle
   };
+}
+
+export function directoryArticleImageProps(
+  article: Pick<
+    DirectoryArticle,
+    "coverImage" | "coverWidth" | "coverHeight" | "coverMobile"
+  >,
+  fallback: string
+) {
+  if (!article.coverImage) {
+    return {
+      src: fallback,
+      loading: "lazy" as const,
+      decoding: "async" as const
+    };
+  }
+
+  return responsiveImagePropsFor(article.coverImage, "card", {
+    width: article.coverWidth,
+    height: article.coverHeight,
+    mobile: article.coverMobile
+  });
 }
 
 export function parseDirectoryPage(

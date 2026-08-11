@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { DirectoryArticle, DirectoryLink } from "@/components/ContentDirectory";
+import { directoryArticleImageProps } from "@/lib/contentDirectory";
 
 const fallbackImages = [
   "/images/industry/about-forum-stage-2025.jpg",
@@ -16,10 +17,6 @@ export type DirectorySidebarProps = {
   importantArticles: DirectoryArticle[];
   importantMeta: "date" | "readingTime";
 };
-
-function imageFor(article: DirectoryArticle, index: number) {
-  return article.coverImage || fallbackImages[index % fallbackImages.length];
-}
 
 export function DirectorySidebar({
   mode,
@@ -82,12 +79,11 @@ export function DirectorySidebar({
             {importantArticles.map((article, index) => (
               <Link href={`/blog/${article.slug}`} key={article.slug}>
                 <img
-                  src={imageFor(article, index)}
+                  {...directoryArticleImageProps(
+                    article,
+                    fallbackImages[index % fallbackImages.length]
+                  )}
                   alt=""
-                  width={article.coverWidth}
-                  height={article.coverHeight}
-                  loading="lazy"
-                  decoding="async"
                 />
                 <span>
                   <strong>{article.title}</strong>

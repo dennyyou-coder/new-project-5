@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Insight } from "@/lib/content";
+import { directoryArticleImageProps } from "@/lib/contentDirectory";
 import { DirectorySeriesFeature } from "@/components/DirectorySeriesFeature";
 import {
   DirectorySidebar,
@@ -43,6 +44,7 @@ export type DirectoryArticle = Pick<
   | "coverAlt"
   | "coverWidth"
   | "coverHeight"
+  | "coverMobile"
   | "featured"
   | "tags"
   | "seriesTitle"
@@ -62,10 +64,6 @@ type ContentDirectoryProps = {
   featuredSeriesArticle?: DirectoryArticle;
   sidebar: DirectorySidebarProps;
 };
-
-function imageFor(article: DirectoryArticle, index: number) {
-  return article.coverImage || fallbackImages[index % fallbackImages.length];
-}
 
 export function ContentDirectory({
   variant,
@@ -135,12 +133,11 @@ export function ContentDirectory({
                 >
                   <div className="content-directory-feed-image">
                     <img
-                      src={imageFor(article, index)}
+                      {...directoryArticleImageProps(
+                        article,
+                        fallbackImages[index % fallbackImages.length]
+                      )}
                       alt={article.coverAlt || `${article.title} cover`}
-                      width={article.coverWidth}
-                      height={article.coverHeight}
-                      loading={index === 0 ? "eager" : "lazy"}
-                      decoding="async"
                     />
                   </div>
                   <div className="content-directory-feed-copy">

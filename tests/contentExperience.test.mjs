@@ -5,8 +5,9 @@ import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-const [blog, blogLanding, archive, directory, article, css, sitemap, directorySeries, directorySidebar] = await Promise.all([
+const [blog, blogLayout, blogLanding, archive, directory, article, css, sitemap, directorySeries, directorySidebar] = await Promise.all([
   read("app/blog/page.tsx"),
+  read("app/blog/layout.tsx"),
   read("components/BlogLanding.tsx"),
   read("app/blog/archive/page.tsx"),
   read("components/ContentDirectory.tsx"),
@@ -16,6 +17,14 @@ const [blog, blogLanding, archive, directory, article, css, sitemap, directorySe
   read("components/DirectorySeriesFeature.tsx"),
   read("components/DirectorySidebar.tsx")
 ]);
+
+const blogRouteCss = [
+  await read("app/globals.css"),
+  ...await Promise.all(
+    [...blogLayout.matchAll(/import\s+["']\.\.\/styles\/([^"']+\.css)["']/g)]
+      .map((match) => read(`app/styles/${match[1]}`))
+  )
+].join("\n");
 
 test("Blog uses the approved full-width landing without a sidebar", () => {
   assert.match(blog, /blog-home-intro/);
@@ -31,10 +40,11 @@ test("Blog landing does not introduce a nested main landmark", () => {
   assert.doesNotMatch(blogLanding, /<main\b/);
 });
 
-test("Blog images use intentional eager and lazy loading", () => {
-  assert.match(blogLanding, /fetchPriority="high"/);
-  assert.match(blogLanding, /loading="lazy"/);
-  assert.match(blogLanding, /decoding="async"/);
+test("Blog cards use the shared lazy responsive image contract", () => {
+  assert.match(blogLanding, /responsiveImageProps\(article\.coverImage, "card"\)/);
+  assert.doesNotMatch(blogLanding, /fetchPriority="high"/);
+  assert.match(blogLanding, /loading:\s*"lazy"/);
+  assert.match(blogLanding, /decoding:\s*"async"/);
 });
 
 test("Archive exposes paginated analysis, reading metadata, and structured data", () => {
@@ -84,6 +94,17 @@ test("Content pages have isolated responsive and long-reading styles", () => {
   assert.match(css, /overflow-x:\s*auto/);
   assert.match(css, /content-visibility:\s*auto/);
   assert.match(css, /\.blog-archive-actions span\s*\{[^}]*gap:\s*4px/);
+});
+
+test("Blog route CSS graph preserves article cover framing and responsive body images", () => {
+  assert.match(blogRouteCss, /\.blog-article-cover\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*9/s);
+  assert.match(blogRouteCss, /\.blog-article-cover img\s*\{[^}]*object-fit:\s*cover/s);
+  assert.match(blogRouteCss, /\.article-inline-image img\s*\{[^}]*max-width:\s*100%[^}]*height:\s*auto/s);
+});
+
+test("Blog article references and related cards stay inside the mobile viewport", () => {
+  assert.match(blogRouteCss, /\.blog-article-main\s*\{[^}]*overflow-wrap:\s*anywhere/s);
+  assert.match(blogRouteCss, /\.blog-related-signals \.related-signal-image\s*\{[^}]*margin:\s*0\s+0\s+20px/s);
 });
 
 test("Sitemap keeps Blog and Archive discoverable", () => {

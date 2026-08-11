@@ -3,7 +3,10 @@ import path from "node:path";
 import { normalizeCategory } from "@/lib/categories";
 import { normalizeBrandSlugs } from "@/lib/brands";
 import type { ContentClass, GuideType } from "@/lib/guideTaxonomy";
-import imageDimensions from "@/lib/generated/image-dimensions.json" with { type: "json" };
+import {
+  getArticleImage,
+  responsiveImageAttributes
+} from "@/lib/articleImages";
 
 export type Insight = {
   slug: string;
@@ -28,6 +31,7 @@ export type Insight = {
   coverAlt?: string;
   coverWidth?: number;
   coverHeight?: number;
+  coverMobile?: { src: string; width: number; height: number };
   youtubeId?: string;
   series?: string;
   seriesTitle?: string;
@@ -112,7 +116,7 @@ export function getInsights(): Insight[] {
       const coverImage = data.coverImage || data.cover_image;
       const resolvedCoverImage = coverImage ? String(coverImage) : firstMarkdownImage(content);
       const coverDimensions = resolvedCoverImage
-        ? localImageDimensions(resolvedCoverImage)
+        ? getArticleImage(resolvedCoverImage)
         : undefined;
 
       return [{
@@ -138,6 +142,13 @@ export function getInsights(): Insight[] {
         coverAlt: data.cover_alt ? String(data.cover_alt) : undefined,
         coverWidth: coverDimensions?.width,
         coverHeight: coverDimensions?.height,
+        coverMobile: coverDimensions?.mobile
+          ? {
+              src: coverDimensions.mobile.src,
+              width: coverDimensions.mobile.width,
+              height: coverDimensions.mobile.height
+            }
+          : undefined,
         youtubeId: data.youtubeId ? String(data.youtubeId) : undefined,
         series: data.series ? String(data.series) : undefined,
         seriesTitle: data.series_title ? String(data.series_title) : undefined,
@@ -336,13 +347,37 @@ export function markdownToHtml(markdown: string) {
     };
   }
 
-  function imageAttributes(src: string) {
-    const dimensions = localImageDimensions(src);
-    const size = dimensions
-      ? ` width="${dimensions.width}" height="${dimensions.height}"`
-      : "";
+  function rawHtmlImage(line: string) {
+    const tag = line.trim().match(/^<img\b([\s\S]*?)\/?\s*>$/i);
+    if (!tag) return undefined;
+    const src = tag[1].match(/\bsrc\s*=\s*(?:"([^"]+)"|'([^']+)')/i);
+    if (!src) return undefined;
+    const alt = tag[1].match(/\balt\s*=\s*(?:"([^"]*)"|'([^']*)')/i);
 
-    return ` loading="lazy" decoding="async"${size}`;
+    return {
+      src: src[1] ?? src[2],
+      alt: alt?.[1] ?? alt?.[2] ?? ""
+    };
+  }
+
+  function imageAttributes(src: string) {
+    const { src: _src, ...attributes } = responsiveImageAttributes(src, "body");
+    const orderedNames = [
+      "width",
+      "height",
+      "loading",
+      "decoding",
+      "srcset",
+      "sizes",
+      "fetchpriority"
+    ] as const;
+
+    return orderedNames
+      .flatMap((name) => {
+        const value = attributes[name];
+        return value === undefined ? [] : [` ${name}="${escapeAttribute(String(value))}"`];
+      })
+      .join("");
   }
 
   function isTableDivider(line: string) {
@@ -436,6 +471,12 @@ export function markdownToHtml(markdown: string) {
           `<figure class="article-inline-image"><img src="${image.src}" alt="${escapeAttribute(image.alt)}"${imageAttributes(image.src)} />${image.caption ? `<figcaption>${inline(image.caption)}</figcaption>` : ""}</figure>`
         );
       }
+    } else if (rawHtmlImage(trimmed)) {
+      closeList();
+      const image = rawHtmlImage(trimmed)!;
+      html.push(
+        `<figure class="article-inline-image"><img src="${escapeAttribute(image.src)}" alt="${escapeAttribute(image.alt)}"${imageAttributes(image.src)} /></figure>`
+      );
     } else if (trimmed.startsWith("> ")) {
       closeList();
       html.push(`<blockquote>${inline(trimmed.slice(2))}</blockquote>`);
@@ -453,13 +494,6 @@ export function markdownToHtml(markdown: string) {
 
   closeList();
   return html.join("\n");
-}
-
-function localImageDimensions(src: string) {
-  if (!src.startsWith("/") || src.startsWith("//")) return undefined;
-
-  const cleanSrc = src.split(/[?#]/, 1)[0];
-  return (imageDimensions as Record<string, { width: number; height: number }>)[cleanSrc];
 }
 
 function estimateReadingTime(content: string) {
@@ -485,6 +519,14 @@ function firstMarkdownImage(content: string) {
   return image ? image[2] : undefined;
 }
 
+const bodyImageReference = /!\[[^\]]*\]\(\s*(?:<([^>]+)>|([^\s)]+))[^)]*\)|<img\b[^>]*?\bsrc\s*=\s*(?:"([^"]+)"|'([^']+)')[^>]*>/i;
+
+function comparableImageReference(reference: string) {
+  const trimmed = reference.trim();
+  if (!trimmed.startsWith("/images/")) return trimmed;
+  return path.posix.normalize(trimmed.split(/[?#]/, 1)[0]);
+}
+
 export function removeLeadingArticleTitleAndCover(content: string, title: string, coverImage?: string) {
   const lines = content.split("\n");
   let cursor = 0;
@@ -495,14 +537,14 @@ export function removeLeadingArticleTitleAndCover(content: string, title: string
     cursor += 1;
   }
 
-  while (!lines[cursor]?.trim() && cursor < lines.length) cursor += 1;
+  const body = lines.slice(cursor).join("\n").trim();
+  const image = body.match(bodyImageReference);
+  if (!coverImage || !image) return body;
 
-  const image = lines[cursor]?.trim().match(/^!\[(.*?)\]\((.*?)\)$/);
-  if (coverImage && image?.[2] === coverImage) {
-    cursor += 1;
-  }
+  const reference = image[1] ?? image[2] ?? image[3] ?? image[4];
+  if (comparableImageReference(reference) !== comparableImageReference(coverImage)) return body;
 
-  return lines.slice(cursor).join("\n").trim();
+  return `${body.slice(0, image.index)}${body.slice(image.index! + image[0].length)}`.trim();
 }
 
 function stripMarkdown(content: string) {
