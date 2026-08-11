@@ -130,7 +130,11 @@ The external source library is validation-only during historical maintenance and
 
 Ordinary maintenance is incremental. A current pipeline-owned primary is reused byte-for-byte only when its recorded output hash and processor version still match. Missing, new, or drifted assets continue through the normal planner; generated-state repair remains an explicit separate operation. Consecutive unchanged `--all --dry-run` commands must report zero creates, replacements, removals, and primary changes.
 
+Reuse also requires the complete recorded mobile state to match: presence or absence, canonical `-800.webp` path, current file, WebP format, dimensions, byte count, output hash, and current savings policy. A missing or changed mobile remains a verifier failure during dry-run; preparation reports the planned create, replacement, or removal and repairs it deterministically from the unchanged repository primary only when run without `--dry-run`. It must never adopt the drifted file's facts into the manifest.
+
 Every present external source file must have a hash-bound exact semantic binding or an explicit repository-primary disposition in the full audit manifest. A new, missing, changed, ambiguous, or unbound file blocks verification. Format conflicts and approved fallbacks remain visible dispositions and never authorize replacing a repository primary. The source library is read-only.
+
+Each audit record must point to the same article's registered cover or body primary. The only supported codes are `INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT` and `HISTORICAL_SVG_PREFIX_NORMALIZED` on matched records, plus `EXTERNAL_SOURCE_CONFLICT_FALLBACK` and `EXTERNAL_SOURCE_CONTENT_CONFLICT` on disposition records. Unknown codes, cross-article ownership, extra fields, and invalid status/code combinations block verification.
 
 ## `visual_archive` Budget Class
 
@@ -157,4 +161,8 @@ Preparation atomically maintains two generated files:
 
 The source verifier checks deterministic drift in both files. The runtime application imports only the compact index; the full audit manifest must not enter client or unrelated route chunks.
 
-Before any repository write or backup, preparation calculates the candidate guarded-image total with all staged replacements and deletions. A total above `321,920,358` bytes stops before commit and leaves the tree unchanged. Every repository path component must be a real directory or file; internal and external symlinks are rejected rather than followed.
+SVG intrinsic dimensions are read only from the opening root `<svg>` element's positive `width`/`height` or `viewBox`. Child element dimensions never substitute for missing root metadata, and SVG verification never sends the file to Sharp.
+
+The built verifier rejects any `srcset` attribute when no mobile candidate is registered, including an empty or malformed attribute. When a mobile candidate exists, every candidate must use a positive width descriptor such as `800w`; density descriptors and malformed candidates are blocking findings.
+
+Before any repository write or backup, preparation calculates the candidate guarded-image total with all staged replacements and deletions. A total above `321,920,358` bytes stops before commit and leaves the tree unchanged. Every repository path component must be a real directory or file; internal, external, and dangling endpoint symlinks are detected with `lstat` and rejected rather than followed or overwritten.

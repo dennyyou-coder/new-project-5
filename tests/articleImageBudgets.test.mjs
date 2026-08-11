@@ -420,6 +420,42 @@ test("external source audit hashes matched and disposition records and blocks un
   assert.ok(findingCodes(unbound).includes("EXTERNAL_SOURCE_UNBOUND"));
 });
 
+test("external source audit rejects cross-article primaries and noncanonical status/code combinations", async (t) => {
+  await t.test("cross-article primary", async () => {
+    const project = await validManifestProject({ slug: "external-owner-a", exactSource: true });
+    const otherSlug = "external-owner-b";
+    const otherCover = `/images/articles/${otherSlug}/01-cover.webp`;
+    const otherArticle = path.join(project.contentRoot, "insights", `${otherSlug}.mdx`);
+    fs.writeFileSync(otherArticle, `---\ntitle: "Other owner"\ncoverImage: "${otherCover}"\n---\n`);
+    await writeImage(publicFile(project, otherCover), { width: 1600, height: 900, color: "#713f91" });
+    project.manifest.assets[otherCover] = await manifestFacts(publicFile(project, otherCover), { role: "cover" });
+    project.manifest.articles[otherSlug] = { budgetClass: "standard", cover: otherCover, body: [] };
+    project.manifest.externalSources[project.slug].files["01-cover.png"].primary = otherCover;
+    writeManifest(project, project.manifest);
+
+    const result = await verifyManifestFiles(project);
+    assert.ok(findingCodes(result).includes("EXTERNAL_SOURCE_PRIMARY_INVALID"));
+  });
+
+  for (const scenario of [
+    { name: "unknown code", status: "disposition", code: "UNREVIEWED_DISPOSITION" },
+    { name: "matched fallback code", status: "matched", code: "EXTERNAL_SOURCE_CONFLICT_FALLBACK" },
+    { name: "disposition without code", status: "disposition", code: undefined }
+  ]) {
+    await t.test(scenario.name, async () => {
+      const project = await validManifestProject({ slug: `external-schema-${scenario.name.replaceAll(" ", "-")}`, exactSource: true });
+      const record = project.manifest.externalSources[project.slug].files["01-cover.png"];
+      record.status = scenario.status;
+      if (scenario.code === undefined) delete record.code;
+      else record.code = scenario.code;
+      writeManifest(project, project.manifest);
+
+      const result = await verifyManifestFiles(project);
+      assert.ok(findingCodes(result).includes("EXTERNAL_SOURCE_AUDIT_INVALID"));
+    });
+  }
+});
+
 test("manifest verification rejects ambiguous exact external source matches", async () => {
   const project = await validPngChartSourceProject({ slug: "ambiguous-chart" });
   const duplicate = path.join(project.sourceLibraryRoot, project.slug, "03-Market Chart.jpg");
@@ -644,6 +680,33 @@ test("built HTML verification enforces exact article image loading attributes an
       override(project) {
         const cover = project.manifest.assets[project.cover];
         return { coverAttributes: `${attribute("src", project.cover)} ${attribute("srcset", `${project.cover} ${cover.width}w`)} ${attribute("sizes", "(max-width: 800px) 100vw, 1200px")} ${attribute("width", cover.width)} ${attribute("height", cover.height)} ${attribute("loading", "eager")} ${attribute("decoding", "async")} ${attribute("fetchpriority", "high")}` };
+      }
+    },
+    {
+      name: "present but empty srcset without mobile",
+      code: "BUILT_UNEXPECTED_SRCSET",
+      async project() { return validManifestProject({ mobile: false }); },
+      override(project) {
+        const cover = project.manifest.assets[project.cover];
+        return { coverAttributes: `${attribute("src", project.cover)} ${attribute("srcset", "")} ${attribute("sizes", "(max-width: 800px) 100vw, 1200px")} ${attribute("width", cover.width)} ${attribute("height", cover.height)} ${attribute("loading", "eager")} ${attribute("decoding", "async")} ${attribute("fetchpriority", "high")}` };
+      }
+    },
+    {
+      name: "density descriptor srcset",
+      code: "BUILT_SRCSET_INVALID",
+      async project() { return validManifestProject(); },
+      override(project) {
+        const cover = project.manifest.assets[project.cover];
+        return { coverAttributes: `${attribute("src", project.cover)} ${attribute("srcset", `${cover.mobile.src} 1x, ${project.cover} 2x`)} ${attribute("sizes", "(max-width: 800px) 100vw, 1200px")} ${attribute("width", cover.width)} ${attribute("height", cover.height)} ${attribute("loading", "eager")} ${attribute("decoding", "async")} ${attribute("fetchpriority", "high")}` };
+      }
+    },
+    {
+      name: "malformed srcset candidate",
+      code: "BUILT_SRCSET_INVALID",
+      async project() { return validManifestProject(); },
+      override(project) {
+        const cover = project.manifest.assets[project.cover];
+        return { coverAttributes: `${attribute("src", project.cover)} ${attribute("srcset", `${cover.mobile.src} ${cover.mobile.width}w, malformed candidate descriptor`)} ${attribute("sizes", "(max-width: 800px) 100vw, 1200px")} ${attribute("width", cover.width)} ${attribute("height", cover.height)} ${attribute("loading", "eager")} ${attribute("decoding", "async")} ${attribute("fetchpriority", "high")}` };
       }
     }
   ];

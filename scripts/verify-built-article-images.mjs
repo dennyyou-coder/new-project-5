@@ -87,11 +87,16 @@ function publicCandidate(publicRoot, url) {
 }
 
 function srcsetCandidates(value) {
-  if (!value) return [];
-  return value.split(",").flatMap((candidate) => {
-    const match = candidate.trim().match(/^(\S+)(?:\s+(\d+)w)?$/);
-    return match ? [{ url: match[1], width: match[2] ? Number(match[2]) : null }] : [];
-  });
+  if (typeof value !== "string") return { candidates: [], invalid: [] };
+  const candidates = [];
+  const invalid = [];
+  for (const raw of value.split(",")) {
+    const candidate = raw.trim();
+    const match = candidate.match(/^(\S+)\s+([1-9]\d*)w$/);
+    if (!match) invalid.push(candidate);
+    else candidates.push({ url: match[1], width: Number(match[2]) });
+  }
+  return { candidates, invalid };
 }
 
 function reportMissingCandidate(failures, publicRoot, slug, url, context) {
@@ -251,7 +256,15 @@ export async function verifyBuiltArticleImages(options = {}) {
           { slug, url }
         ));
       }
-      const candidates = srcsetCandidates(attributes.srcset);
+      const srcsetPresent = Object.hasOwn(attributes, "srcset");
+      const { candidates, invalid } = srcsetCandidates(attributes.srcset);
+      if (invalid.length) {
+        failures.push(finding(
+          "BUILT_SRCSET_INVALID",
+          `${slug} ${url}: srcset contains unsupported or malformed candidates ${JSON.stringify(invalid)}; allowed local URL plus a positive width descriptor such as 800w.`,
+          { slug, url }
+        ));
+      }
       if (asset.mobile) {
         responsiveImages += 1;
         const expected = [
@@ -265,10 +278,10 @@ export async function verifyBuiltArticleImages(options = {}) {
             { slug, url }
           ));
         }
-      } else if (candidates.length) {
+      } else if (srcsetPresent) {
         failures.push(finding(
           "BUILT_UNEXPECTED_SRCSET",
-          `${slug} ${url}: srcset actual ${JSON.stringify(candidates)}; allowed no srcset because no mobile variant is registered.`,
+          `${slug} ${url}: srcset attribute is present with actual ${JSON.stringify(attributes.srcset)}; allowed no srcset attribute because no mobile variant is registered.`,
           { slug, url }
         ));
       }

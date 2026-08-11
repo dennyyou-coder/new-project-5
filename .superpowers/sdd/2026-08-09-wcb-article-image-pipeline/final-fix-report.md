@@ -88,3 +88,31 @@ Primary integrity proof compared Git `HEAD` blob IDs with current worktree blob 
 ## Scope handoff
 
 Changed implementation scope is limited to the article-image preparation, manifest/runtime projection, source and built verifiers, rendering manifest import, focused tests, generated indexes, and article-image workflow/migration reports. No content article, image asset, shared page layout, dependency, analytics, form, infrastructure, or deployment configuration changed.
+
+## Scoped Round 2 corrections
+
+The Wave 1 report overstated five edge guarantees. Primary hash ownership alone did not prove the recorded mobile state; external audit records were not yet restricted to same-article ownership and the four produced status/code combinations; dangling output symlinks escaped `existsSync`; an empty or malformed `srcset` could parse to zero candidates; and the SVG parser could read a child element's dimensions. Round 2 adds direct RED/GREEN regressions for each case and narrows the claims as follows:
+
+- Historical reuse now requires exact recorded mobile presence/absence, canonical path, current regular file, WebP format, dimensions, bytes, hash, and savings-policy agreement. Missing and changed profitable fixtures remain source-verifier failures through dry-run, plan an explicit mobile create/replace, preserve the primary and source hash, and pass verification only after the real repair.
+- External audit verification binds each `primary` to that audited article's cover/body. Matched records allow no code, incompatible-format, or slug-prefix-normalization; dispositions allow only approved fallback or content conflict. Cross-article primaries, unknown codes, invalid combinations, and noncanonical fields fail.
+- Path checks use `lstat` with absent-path handling, so dangling manifest and runtime endpoint links fail before the atomic phase and remain links.
+- Built verification treats `srcset` presence independently from parsed candidates and reports density or malformed descriptors explicitly.
+- SVG intrinsic facts come only from the opening root `<svg>` element; child-only dimensions fail while a root `viewBox` passes.
+
+Round 2 changes no rendering/runtime projection, article, public image, or generated manifest/runtime JSON. Therefore the existing successful production build remains the build evidence; no duplicate build was run.
+
+Round 2 final gates:
+
+```text
+focused article-image suite              PASS 162/162
+complete current repository suite        PASS 525/525
+ordinary --all --dry-run 1               PASS 438/438 unchanged; 0 creates/replacements/removals
+ordinary --all --dry-run 2               PASS 438/438 unchanged; 0 creates/replacements/removals
+source image verification                PASS 438 / 1,770 / 1,210
+external audit                           PASS 10 folders / 32 hashes / 25 exact / 32 dispositions
+built verifier against existing build    PASS 438 / 1,771 / 1,211
+repository guarded total                 PASS 253,008,125 bytes / 3,391 files
+runtime index                            PASS 301,322 bytes
+```
+
+Both dry-runs exited zero and every article reported `Files: 0 created, 0 replaced, 0 removed` plus `Manifest: unchanged`. The final diff contains no path under `content`, `public`, or `lib/generated`.

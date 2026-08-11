@@ -731,6 +731,42 @@ async function describeExistingAsset(url, file, inventory, existing, publicRoot,
   return result;
 }
 
+function historicalMobileUrl(url) {
+  return `${url.slice(0, -path.posix.extname(url).length)}-800.webp`;
+}
+
+async function inspectHistoricalMobileState({ url, existing, publicRoot, primary }) {
+  const expectedUrl = historicalMobileUrl(url);
+  const recorded = existing?.mobile;
+  const urls = [...new Set([expectedUrl, recorded?.src].filter((value) => typeof value === "string"))];
+  const existingFiles = [];
+  for (const mobileUrl of urls) {
+    const file = publicUrlFile(publicRoot, mobileUrl);
+    assertRepositoryPath(file, publicRoot, "historical mobile candidate");
+    if (lstatOrNull(file)) existingFiles.push(file);
+  }
+  if (!recorded) {
+    return { complete: existingFiles.length === 0, expectedUrl, existingFiles };
+  }
+  if (recorded.src !== expectedUrl) return { complete: false, expectedUrl, existingFiles };
+  const file = publicUrlFile(publicRoot, expectedUrl);
+  const stat = lstatOrNull(file);
+  if (!stat || !stat.isFile()) return { complete: false, expectedUrl, existingFiles };
+  const actual = await inspectSource(file);
+  const complete = actual.format === "webp"
+    && actual.width === recorded.width
+    && actual.height === recorded.height
+    && actual.bytes === recorded.bytes
+    && normalizedHash(actual.sourceHash) === normalizedHash(recorded.outputHash)
+    && shouldKeepMobileVariant({
+      desktopBytes: primary.bytes,
+      mobileBytes: actual.bytes,
+      desktopWidth: primary.width,
+      mobileWidth: actual.width
+    });
+  return { complete, expectedUrl, existingFiles };
+}
+
 function cloneInventory(inventory) {
   return {
     assets: Object.fromEntries(Object.entries(inventory.assets).map(([url, asset]) => [url, { ...asset }])),
@@ -1091,7 +1127,8 @@ async function applyPhotoAggregateRecovery(context, slug, article, processed, st
       buffer: result.candidate.buffer,
       sourceHash: processed[url].sourceHash,
       imageName: path.posix.basename(url),
-      mobile: true
+      mobile: true,
+      historicalMobile: true
     });
   }
   warnings.push(`PHOTO_AGGREGATE_RECOVERY slug=${slug} budget=${article.budgetClass} desktop=${selected.desktop.longEdge ?? "normal"} mobile=${selected.mobile.longEdge ?? "normal"} cover=${selected.desktop.includeCover || selected.mobile.includeCover ? "capped" : "normal"} images=${urls.length}`);
@@ -1102,6 +1139,7 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
   const stageOutputs = [];
   const processed = {};
   const warnings = [...initialWarnings];
+  const removable = new Set();
   let sourceBytes = 0;
   for (const url of allArticleReferences(article)) {
     const file = context.currentInventory.assets[url]?.file;
@@ -1117,7 +1155,14 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
       actualOutputHash: current.outputHash,
       manifestProcessorVersion: context.existingManifest.processorVersion
     });
+    const mobileState = await inspectHistoricalMobileState({
+      url,
+      existing,
+      publicRoot: context.publicRoot,
+      primary: current
+    });
     if (current.format === "svg") {
+      for (const mobileFile of mobileState.existingFiles) removable.add(mobileFile);
       processed[url] = primary;
       continue;
     }
@@ -1158,10 +1203,11 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
         });
       }
     }
-    if (reusablePrimary) {
+    if (reusablePrimary && mobileState.complete) {
       processed[url] = primary;
       continue;
     }
+    for (const mobileFile of mobileState.existingFiles) removable.add(mobileFile);
     const mobile = await createMobileVariant({
       input: file,
       filename: path.basename(file),
@@ -1190,7 +1236,7 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
       processed[url] = primary;
       continue;
     }
-    const mobileUrl = `${url.slice(0, -path.posix.extname(url).length)}-800.webp`;
+    const mobileUrl = mobileState.expectedUrl;
     primary = {
       ...primary,
       mobile: {
@@ -1202,7 +1248,15 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
       }
     };
     processed[url] = primary;
-    stageOutputs.push({ url: mobileUrl, buffer: mobile.buffer, sourceHash: primary.sourceHash, imageName: path.basename(file), mobile: true });
+    stageOutputs.push({
+      url: mobileUrl,
+      buffer: mobile.buffer,
+      sourceHash: primary.sourceHash,
+      imageName: path.basename(file),
+      mobile: true,
+      historicalMobile: true
+    });
+    removable.delete(publicUrlFile(context.publicRoot, mobileUrl));
   }
   await applyPhotoAggregateRecovery(context, slug, article, processed, stageOutputs, warnings);
   return {
@@ -1214,7 +1268,7 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
     updatedSource: await fsp.readFile(article.file, "utf8"),
     updatedArticle: { ...article, body: [...article.body] },
     oldReferences: [],
-    removable: [],
+    removable: [...removable],
     warnings,
     historicalPrimaryPreserved: true
   };
@@ -1374,6 +1428,12 @@ function validateOutputCollisions(context, plans) {
       }
       if (output.mobile) {
         const owner = Object.values(context.existingManifest.assets ?? {}).find((asset) => asset.mobile?.src === output.url);
+        if (!owner && output.historicalMobile) {
+          const primaryUrl = allArticleReferences(plan.article)
+            .find((url) => historicalMobileUrl(url) === output.url);
+          const primary = context.existingManifest.assets?.[primaryUrl];
+          if (primary && normalizedHash(primary.sourceHash) === normalizedHash(output.sourceHash)) continue;
+        }
         if (!owner || normalizedHash(owner.sourceHash) !== normalizedHash(output.sourceHash)) throw collisionError(plan, output);
       } else {
         const existing = context.existingManifest.assets?.[output.url];
@@ -1650,6 +1710,15 @@ function pathIsContained(root, candidate) {
   return relative === "" || (!relative.startsWith(`..${path.sep}`) && relative !== ".." && !path.isAbsolute(relative));
 }
 
+function lstatOrNull(file) {
+  try {
+    return fs.lstatSync(file);
+  } catch (error) {
+    if (error?.code === "ENOENT" || error?.code === "ENOTDIR") return null;
+    throw error;
+  }
+}
+
 function firstSymlinkWithin(root, candidate) {
   const lexicalRoot = path.resolve(root);
   const lexicalCandidate = path.resolve(candidate);
@@ -1658,8 +1727,9 @@ function firstSymlinkWithin(root, candidate) {
   let cursor = lexicalRoot;
   for (const segment of [null, ...segments]) {
     if (segment) cursor = path.join(cursor, segment);
-    if (!fs.existsSync(cursor)) return null;
-    if (fs.lstatSync(cursor).isSymbolicLink()) return cursor;
+    const stat = lstatOrNull(cursor);
+    if (!stat) return null;
+    if (stat.isSymbolicLink()) return cursor;
   }
   return null;
 }

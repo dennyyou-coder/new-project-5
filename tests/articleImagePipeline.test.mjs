@@ -20,6 +20,7 @@ import {
   serializeRuntimeIndex
 } from "../scripts/article-images/manifest.mjs";
 import { discoverArticleInventory } from "../scripts/article-images/references.mjs";
+import { svgIntrinsicDimensions } from "../scripts/article-images/svg.mjs";
 
 const fixtureRoot = path.join(process.cwd(), "tests", "fixtures", "article-images");
 const fixtureContentRoot = path.join(fixtureRoot, "content");
@@ -534,4 +535,16 @@ test("builds a slim deterministic runtime index without audit facts or article i
   assert.equal(serializeRuntimeIndex(runtime), `${JSON.stringify(runtime)}\n`);
   assert.equal(serializeRuntimeIndex(runtime).includes("sourceHash"), false);
   assert.equal(serializeRuntimeIndex(runtime).includes("externalSources"), false);
+});
+
+test("derives SVG intrinsic dimensions only from the opening root svg element", () => {
+  assert.equal(svgIntrinsicDimensions(Buffer.from(
+    '<svg xmlns="http://www.w3.org/2000/svg"><rect width="640" height="360"/></svg>'
+  )), null);
+  assert.deepEqual(svgIntrinsicDimensions(Buffer.from(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><rect width="1" height="1"/></svg>'
+  )), { width: 640, height: 360 });
+  assert.equal(svgIntrinsicDimensions(Buffer.from(
+    '<html><svg xmlns="http://www.w3.org/2000/svg" width="640" height="360"/></html>'
+  )), null);
 });

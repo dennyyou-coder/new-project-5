@@ -36,6 +36,14 @@ const GUARDED_IMAGE_DIRECTORIES = [
 ];
 const SOURCE_IMAGE = /\.(?:jpe?g|png|webp)$/i;
 const AUDIT_SOURCE_IMAGE = /\.(?:jpe?g|png|webp|svg)$/i;
+const MATCHED_EXTERNAL_SOURCE_CODES = new Set([
+  "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+  "HISTORICAL_SVG_PREFIX_NORMALIZED"
+]);
+const DISPOSITION_EXTERNAL_SOURCE_CODES = new Set([
+  "EXTERNAL_SOURCE_CONFLICT_FALLBACK",
+  "EXTERNAL_SOURCE_CONTENT_CONFLICT"
+]);
 
 function finding(code, message, { slug = "~repository", url = "" } = {}) {
   return { code, slug, url, message };
@@ -272,28 +280,24 @@ function verifyExternalSourceAudits({ paths, manifest, inventory, failures }) {
     ? manifest.externalSources
     : {};
   const summary = { folders: Object.keys(audits).length, checked: 0, matched: 0, dispositions: 0 };
-  for (const audit of Object.values(audits)) {
-    for (const record of Object.values(audit?.files ?? {})) {
-      if (record?.status === "matched") summary.matched += 1;
-      if (record?.status === "disposition" || (typeof record?.code === "string" && record.code)) summary.dispositions += 1;
-    }
-  }
-  if (!paths.sourceLibraryRoot || !fs.existsSync(paths.sourceLibraryRoot)) return summary;
+  const sourceLibraryAvailable = Boolean(paths.sourceLibraryRoot && fs.existsSync(paths.sourceLibraryRoot));
 
-  for (const slug of Object.keys(inventory.articles ?? {}).sort()) {
-    const folder = path.join(paths.sourceLibraryRoot, slug);
-    if (!fs.existsSync(folder) || !fs.statSync(folder).isDirectory()) continue;
-    const currentFiles = fs.readdirSync(folder, { withFileTypes: true })
-      .filter((entry) => entry.isFile() && AUDIT_SOURCE_IMAGE.test(entry.name))
-      .map((entry) => entry.name)
-      .sort();
-    if (!currentFiles.length) continue;
-    if (!audits[slug]) {
-      failures.push(finding(
-        "EXTERNAL_SOURCE_AUDIT_MISSING",
-        `${slug}: external source folder contains ${currentFiles.length} image files but has no deterministic audit bindings or dispositions.`,
-        { slug }
-      ));
+  if (sourceLibraryAvailable) {
+    for (const slug of Object.keys(inventory.articles ?? {}).sort()) {
+      const folder = path.join(paths.sourceLibraryRoot, slug);
+      if (!fs.existsSync(folder) || !fs.statSync(folder).isDirectory()) continue;
+      const currentFiles = fs.readdirSync(folder, { withFileTypes: true })
+        .filter((entry) => entry.isFile() && AUDIT_SOURCE_IMAGE.test(entry.name))
+        .map((entry) => entry.name)
+        .sort();
+      if (!currentFiles.length) continue;
+      if (!audits[slug]) {
+        failures.push(finding(
+          "EXTERNAL_SOURCE_AUDIT_MISSING",
+          `${slug}: external source folder contains ${currentFiles.length} image files but has no deterministic audit bindings or dispositions.`,
+          { slug }
+        ));
+      }
     }
   }
 
@@ -302,14 +306,49 @@ function verifyExternalSourceAudits({ paths, manifest, inventory, failures }) {
       failures.push(finding("EXTERNAL_SOURCE_AUDIT_INVALID", `${slug}: invalid external source audit slug.`, { slug }));
       continue;
     }
-    const folder = path.join(paths.sourceLibraryRoot, slug);
-    if (!fs.existsSync(folder) || !fs.statSync(folder).isDirectory()) {
-      failures.push(finding("EXTERNAL_SOURCE_FOLDER_MISSING", `${slug}: audited external source folder is missing.`, { slug }));
-      continue;
-    }
     const records = audits[slug]?.files;
     if (!records || typeof records !== "object" || Array.isArray(records)) {
       failures.push(finding("EXTERNAL_SOURCE_AUDIT_INVALID", `${slug}: external source audit files must be an object.`, { slug }));
+      continue;
+    }
+    const article = manifest.articles?.[slug];
+    const ownedPrimaries = new Set([article?.cover, ...(article?.body ?? [])].filter(Boolean));
+    const validRecords = new Set();
+    for (const basename of Object.keys(records).sort()) {
+      const record = records[basename];
+      const fields = record && typeof record === "object" && !Array.isArray(record)
+        ? Object.keys(record).sort()
+        : [];
+      const permittedFields = ["hash", "primary", "status", ...(record?.code === undefined ? [] : ["code"])].sort();
+      const canonicalFields = JSON.stringify(fields) === JSON.stringify(permittedFields);
+      const validCombination = record?.status === "matched"
+        ? record.code === undefined || MATCHED_EXTERNAL_SOURCE_CODES.has(record.code)
+        : record?.status === "disposition"
+          ? DISPOSITION_EXTERNAL_SOURCE_CODES.has(record.code)
+          : false;
+      if (!canonicalFields || !validCombination) {
+        failures.push(finding(
+          "EXTERNAL_SOURCE_AUDIT_INVALID",
+          `${slug} ${basename}: status/code/fields actual ${String(record?.status)}/${String(record?.code)}/${JSON.stringify(fields)}; allowed canonical matched records with no code or a supported match code, or disposition records with a supported disposition code.`,
+          { slug, url: basename }
+        ));
+      } else {
+        validRecords.add(basename);
+        if (record.status === "matched") summary.matched += 1;
+        if (record.code !== undefined) summary.dispositions += 1;
+      }
+      if (typeof record?.primary !== "string" || !manifest.assets?.[record.primary] || !ownedPrimaries.has(record.primary)) {
+        failures.push(finding(
+          "EXTERNAL_SOURCE_PRIMARY_INVALID",
+          `${slug} ${basename}: primary actual ${String(record?.primary)}; allowed the audited article's registered cover or body primary URL.`,
+          { slug, url: basename }
+        ));
+      }
+    }
+    if (!sourceLibraryAvailable) continue;
+    const folder = path.join(paths.sourceLibraryRoot, slug);
+    if (!fs.existsSync(folder) || !fs.statSync(folder).isDirectory()) {
+      failures.push(finding("EXTERNAL_SOURCE_FOLDER_MISSING", `${slug}: audited external source folder is missing.`, { slug }));
       continue;
     }
     const currentFiles = fs.readdirSync(folder, { withFileTypes: true })
@@ -327,22 +366,7 @@ function verifyExternalSourceAudits({ paths, manifest, inventory, failures }) {
         ));
         continue;
       }
-      if (record.status === "matched") summary.checked += 1;
-      else if (record.status === "disposition" && typeof record.code === "string" && record.code) summary.checked += 1;
-      else {
-        failures.push(finding(
-          "EXTERNAL_SOURCE_AUDIT_INVALID",
-          `${slug} ${basename}: status/code actual ${String(record.status)}/${String(record.code)}; allowed matched or disposition with a stable code.`,
-          { slug, url: basename }
-        ));
-      }
-      if (typeof record.primary !== "string" || !manifest.assets?.[record.primary]) {
-        failures.push(finding(
-          "EXTERNAL_SOURCE_PRIMARY_INVALID",
-          `${slug} ${basename}: primary actual ${String(record.primary)}; allowed a registered repository primary URL.`,
-          { slug, url: basename }
-        ));
-      }
+      if (validRecords.has(basename)) summary.checked += 1;
       const file = path.join(folder, basename);
       const actualHash = sha256(file);
       if (!HASH_PATTERN.test(String(record.hash ?? "")) || actualHash !== record.hash) {

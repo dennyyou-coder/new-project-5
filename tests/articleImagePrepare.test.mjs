@@ -75,6 +75,21 @@ async function writeImage(file, { width = 1200, height = 675, format = "png", no
   else await pipeline.png({ compressionLevel: noise ? 0 : 9 }).toFile(file);
 }
 
+async function writePatternPhoto(file, { width = 1200, height = 675 } = {}) {
+  const pixels = Buffer.alloc(width * height * 3);
+  for (let y = 0; y < height; y += 1) {
+    for (let x = 0; x < width; x += 1) {
+      const index = (y * width + x) * 3;
+      const detail = ((x * 17 + y * 31) ^ (x >> 2) ^ (y >> 3)) & 31;
+      pixels[index] = ((x >> 4) * 19 + detail) & 255;
+      pixels[index + 1] = ((y >> 4) * 23 + detail) & 255;
+      pixels[index + 2] = (((x + y) >> 5) * 29 + detail) & 255;
+    }
+  }
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  await sharp(pixels, { raw: { width, height, channels: 3 } }).webp({ quality: 94 }).toFile(file);
+}
+
 function writeArticle(project, slug, {
   cover = `/images/legacy/${slug}-cover.webp`,
   social,
@@ -121,6 +136,22 @@ async function validFixture({ slug = "atomic-example", bodyCount = 1, coverSize 
     await writeImage(path.join(folder, `${String(index + 2).padStart(2, "0")}-product-view.png`), { width: 1100, height: 760 });
   }
   return { ...project, slug, folder, cover, body };
+}
+
+async function migratedHistoricalMobileFixture(slug) {
+  const project = temporaryProject();
+  const cover = `/images/blog/${slug}-cover.webp`;
+  writeArticle(project, slug, { cover, body: [] });
+  await writePatternPhoto(publicFile(project, cover));
+  await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  const manifestPath = path.join(project.projectRoot, "lib", "generated", "article-image-manifest.json");
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  const mobile = manifest.assets[cover].mobile?.src;
+  assert.ok(mobile, "fixture must retain a profitable generated mobile variant");
+  return { ...project, slug, cover, mobile, manifestPath, manifest };
 }
 
 test.after(() => {
@@ -686,6 +717,34 @@ test("rejects an internal publish-path symlink component before writing through 
   assert.deepEqual(readTree(target), before);
 });
 
+test("rejects dangling manifest and runtime endpoint symlinks before atomic writes", async (t) => {
+  for (const endpoint of ["article-image-manifest.json", "article-image-runtime.json"]) {
+    await t.test(endpoint, async () => {
+      const fixture = await validFixture({ slug: `dangling-${endpoint.includes("manifest") ? "manifest" : "runtime"}` });
+      const generated = path.join(fixture.projectRoot, "lib", "generated");
+      const link = path.join(generated, endpoint);
+      const target = `missing-${endpoint}`;
+      fs.mkdirSync(generated, { recursive: true });
+      fs.symlinkSync(target, link);
+
+      await assert.rejects(
+        prepareArticleImages({
+          slug: fixture.slug,
+          projectRoot: fixture.projectRoot,
+          sourceRoot: fixture.folder
+        }),
+        (error) => error instanceof ArticleImagePreparationError
+          && error.code === "INVALID_REPOSITORY_PATH"
+          && /symlink/i.test(error.message)
+      );
+
+      assert.equal(fs.lstatSync(link).isSymbolicLink(), true);
+      assert.equal(fs.readlinkSync(link), target);
+      assert.equal(fs.existsSync(path.join(generated, target)), false);
+    });
+  }
+});
+
 test("dry-run completes transforms and reports repository deltas without changing any repository file", async () => {
   const fixture = await validFixture({ slug: "dry-run-report", bodyCount: 2 });
   const before = readTree(fixture.projectRoot);
@@ -795,6 +854,122 @@ test("ordinary historical maintenance reuses pipeline-owned primaries byte-ident
   }
   assert.equal(first.articles.length, 1);
   assert.equal(second.articles.length, 1);
+});
+
+test("ordinary historical maintenance regenerates a missing recorded mobile without erasing verifier evidence", async () => {
+  const project = await migratedHistoricalMobileFixture("historical-missing-mobile");
+  const primaryBefore = fs.readFileSync(publicFile(project, project.cover));
+  const mobileBefore = fs.readFileSync(publicFile(project, project.mobile));
+  const sourceHashBefore = project.manifest.assets[project.cover].sourceHash;
+  fs.rmSync(publicFile(project, project.mobile));
+
+  const before = await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  assert.ok(before.failures.some(({ code }) => code === "MISSING_MOBILE_FILE"));
+
+  const dryRun = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+  assert.ok(dryRun.filesCreated.includes(`public${project.mobile}`));
+  assert.equal(dryRun.filesReplaced.includes(`public${project.cover}`), false);
+  assert.equal(fs.existsSync(publicFile(project, project.mobile)), false);
+  const afterDryRun = await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  assert.ok(afterDryRun.failures.some(({ code }) => code === "MISSING_MOBILE_FILE"));
+
+  await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  assert.deepEqual(fs.readFileSync(publicFile(project, project.cover)), primaryBefore);
+  assert.deepEqual(fs.readFileSync(publicFile(project, project.mobile)), mobileBefore);
+  const repaired = JSON.parse(fs.readFileSync(project.manifestPath, "utf8"));
+  assert.equal(repaired.assets[project.cover].sourceHash, sourceHashBefore);
+  assert.deepEqual((await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  })).failures, []);
+});
+
+test("ordinary historical maintenance replaces a changed profitable mobile instead of blessing it", async () => {
+  const project = await migratedHistoricalMobileFixture("historical-changed-mobile");
+  const primaryBefore = fs.readFileSync(publicFile(project, project.cover));
+  const mobileBefore = fs.readFileSync(publicFile(project, project.mobile));
+  const sourceHashBefore = project.manifest.assets[project.cover].sourceHash;
+  await writeImage(publicFile(project, project.mobile), { width: 800, height: 450, format: "webp", color: "#8f2458" });
+  const changedMobile = fs.readFileSync(publicFile(project, project.mobile));
+  assert.notDeepEqual(changedMobile, mobileBefore);
+
+  const before = await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  assert.ok(before.failures.some(({ code }) => code === "OUTPUT_HASH_MISMATCH"));
+
+  const dryRun = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+  assert.ok(dryRun.filesReplaced.includes(`public${project.mobile}`));
+  assert.equal(dryRun.filesReplaced.includes(`public${project.cover}`), false);
+  assert.deepEqual(fs.readFileSync(publicFile(project, project.mobile)), changedMobile);
+  const afterDryRun = await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  assert.ok(afterDryRun.failures.some(({ code }) => code === "OUTPUT_HASH_MISMATCH"));
+
+  await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  assert.deepEqual(fs.readFileSync(publicFile(project, project.cover)), primaryBefore);
+  assert.deepEqual(fs.readFileSync(publicFile(project, project.mobile)), mobileBefore);
+  const repaired = JSON.parse(fs.readFileSync(project.manifestPath, "utf8"));
+  assert.equal(repaired.assets[project.cover].sourceHash, sourceHashBefore);
+  assert.deepEqual((await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  })).failures, []);
+});
+
+test("ordinary historical maintenance does not adopt an unrecorded canonical mobile file", async () => {
+  const project = await migratedHistoricalMobileFixture("historical-unrecorded-mobile");
+  const primaryBefore = fs.readFileSync(publicFile(project, project.cover));
+  const manifest = JSON.parse(fs.readFileSync(project.manifestPath, "utf8"));
+  delete manifest.assets[project.cover].mobile;
+  fs.writeFileSync(project.manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+  const runtimePath = path.join(project.projectRoot, "lib", "generated", "article-image-runtime.json");
+  fs.writeFileSync(runtimePath, `${JSON.stringify(buildRuntimeIndex(manifest))}\n`);
+  await writeImage(publicFile(project, project.mobile), { width: 800, height: 450, format: "webp", color: "#5a8f24" });
+  const unrecorded = fs.readFileSync(publicFile(project, project.mobile));
+
+  const dryRun = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+  assert.ok(dryRun.filesReplaced.includes(`public${project.mobile}`));
+  assert.ok(dryRun.filesReplaced.includes("lib/generated/article-image-manifest.json"));
+  assert.deepEqual(fs.readFileSync(publicFile(project, project.mobile)), unrecorded);
+
+  await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  assert.deepEqual(fs.readFileSync(publicFile(project, project.cover)), primaryBefore);
+  assert.notDeepEqual(fs.readFileSync(publicFile(project, project.mobile)), unrecorded);
+  assert.deepEqual((await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  })).failures, []);
 });
 
 test("preparation atomically maintains a slim runtime index alongside the full audit manifest", async () => {
