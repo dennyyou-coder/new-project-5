@@ -10851,3 +10851,79 @@
   color: #fff;
   cursor: pointer;
 }
+
+/* Route-owned Phase 2 alignment. */
+.sourcing-opportunity-model-grid {
+  align-items: stretch;
+}
+
+.sourcing-opportunity-model-grid article {
+  height: 100%;
+}
+
+.sourcing-opportunity-model-grid article {
+  display: flex;
+  flex-direction: column;
+}
+
+.sourcing-opportunity-hero-proof img,
+.sourcing-opportunity-stage-image img,
+.sourcing-opportunity-model-image img,
+.sourcing-opportunity-team-grid > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sourcing-opportunity-stage-image,
+.sourcing-opportunity-model-image {
+  min-height: 190px;
+}
+
+.sourcing-opportunity-hero-proof img,
+.sourcing-opportunity-team-grid > img {
+  object-position: center 28%;
+}
+
+.sourcing-opportunity-team-grid {
+  align-items: stretch;
+}
+
+.sourcing-opportunity-team-grid > img {
+  min-height: 440px;
+}
+
+@media (max-width: 760px) {.sourcing-opportunity-model-grid article {
+    height: auto;
+  }.sourcing-opportunity-team-grid > img {
+    min-height: 320px;
+  }
+}
+
+/* Sourcing interaction branches moved from root CSS. */
+.sourcing-v3-product-grid > .lead-form-trigger {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.sourcing-v3-product-card {
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+.sourcing-v3-product-card:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {.sourcing-v3-product-grid > .lead-form-trigger,
+.sourcing-v3-product-card {
+    width: 100%;
+  }
+}

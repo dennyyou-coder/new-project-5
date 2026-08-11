@@ -11,8 +11,10 @@ test("homepage root CSS excludes route-owned selector families", () => {
   assert.ok(Buffer.byteLength(globals) <= 45_000);
   assert.doesNotMatch(
     globals,
-    /(?:^|\n)\.(?:wcb-expo|insights|blog-|sourcing|reports-library|contact-response|about-network)/m
+    /(?:^|\n)\.(?:wcb-expo|insights-(?!page-container\b)|blog-|sourcing|reports-library|contact-response|about-network)/m
   );
+  assert.match(globals, /\.insights-page-container\s*\{/);
+  assert.match(read("app/equipment/page.tsx"), /insights-page-container/);
   assert.match(globals, /\.footer\s*\{/);
   assert.match(globals, /\.lead-form-status a\s*\{/);
 });

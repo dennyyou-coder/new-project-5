@@ -586,3 +586,44 @@
 .home-v9 .home-v9-expo-campaign-copy > div strong {
   color: #082a52;
 }
+
+/* Route-owned Phase 2 alignment. */
+.home-v9-pathway-grid,
+.home-v9-testimonial-grid {
+  align-items: stretch;
+}
+
+.home-v9-pathway-grid article,
+.home-v9-testimonial-grid article {
+  height: 100%;
+}
+
+.home-v9-pathway-grid article {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-v9-pathway-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.home-v9-text-links {
+  margin-top: auto;
+}
+
+.home-v9-pathway-media img,
+.home-v9-trust-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 760px) {.home-v9-pathway-grid article,
+.home-v9-testimonial-grid article {
+    height: auto;
+  }
+}

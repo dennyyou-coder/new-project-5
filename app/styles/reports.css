@@ -519,3 +519,44 @@
     height: 210px;
   }
 }
+
+/* Route-owned Phase 2 alignment. */
+.reports-library-card-grid {
+  align-items: stretch;
+}
+
+.reports-library-card {
+  height: 100%;
+}
+
+.reports-library-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.reports-library-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.reports-library-card-button {
+  margin-top: auto;
+}
+
+.reports-library-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.reports-library-card-media img {
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 760px) {.reports-library-card {
+    height: auto;
+  }
+}
