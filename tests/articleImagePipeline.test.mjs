@@ -13,7 +13,12 @@ import {
   MOBILE_MIN_SAVINGS_BYTES,
   MOBILE_MIN_SAVINGS_RATIO
 } from "../scripts/article-images/config.mjs";
-import { buildManifest, serializeManifest } from "../scripts/article-images/manifest.mjs";
+import {
+  buildManifest,
+  buildRuntimeIndex,
+  serializeManifest,
+  serializeRuntimeIndex
+} from "../scripts/article-images/manifest.mjs";
 import { discoverArticleInventory } from "../scripts/article-images/references.mjs";
 
 const fixtureRoot = path.join(process.cwd(), "tests", "fixtures", "article-images");
@@ -461,4 +466,72 @@ test("serializes manifests as stable pretty JSON with a trailing newline", () =>
   assert.ok(first.indexOf('"alpha"') < first.indexOf('"zebra"'));
   assert.ok(first.endsWith("\n"));
   assert.doesNotMatch(first, /generatedAt|sourcePath|\/machine\//);
+});
+
+test("canonicalizes external source audit slugs, filenames, and record fields", () => {
+  const hash = `sha256:${"a".repeat(64)}`;
+  const manifest = buildManifest({
+    inventory: { assets: {}, articles: {} },
+    processedAssets: {},
+    processorVersion: "1",
+    externalSources: {
+      zebra: {
+        files: {
+          "02-body.png": { hash, primary: "/images/body.webp", code: "BODY_DISPOSITION", status: "disposition" },
+          "01-cover.png": { primary: "/images/cover.webp", hash, status: "matched" }
+        }
+      },
+      alpha: {
+        files: {
+          "01-cover.png": { hash, status: "disposition", code: "FALLBACK" }
+        }
+      }
+    }
+  });
+
+  assert.deepEqual(Object.keys(manifest.externalSources), ["alpha", "zebra"]);
+  assert.deepEqual(Object.keys(manifest.externalSources.zebra.files), ["01-cover.png", "02-body.png"]);
+  assert.deepEqual(Object.keys(manifest.externalSources.zebra.files["02-body.png"]), [
+    "status",
+    "code",
+    "primary",
+    "hash"
+  ]);
+});
+
+test("builds a slim deterministic runtime index without audit facts or article inventory", () => {
+  const full = {
+    version: 1,
+    processorVersion: "1",
+    externalSources: { example: { files: { "01-cover.png": { status: "matched", hash: `sha256:${"a".repeat(64)}` } } } },
+    articles: { example: { budgetClass: "standard", cover: "/images/cover.webp", body: [] } },
+    assets: {
+      "/images/body.webp": {
+        role: "body", kind: "photo", width: 900, height: 600, bytes: 200,
+        format: "webp", quality: 84, sourceHash: `sha256:${"b".repeat(64)}`, outputHash: `sha256:${"c".repeat(64)}`
+      },
+      "/images/cover.webp": {
+        role: "cover", kind: "photo", width: 1600, height: 900, bytes: 300,
+        format: "webp", quality: 84, sourceHash: `sha256:${"d".repeat(64)}`, outputHash: `sha256:${"e".repeat(64)}`,
+        mobile: { src: "/images/cover-800.webp", width: 800, height: 450, bytes: 100, outputHash: `sha256:${"f".repeat(64)}` }
+      }
+    }
+  };
+
+  const runtime = buildRuntimeIndex(full);
+
+  assert.deepEqual(runtime, {
+    version: 1,
+    assets: {
+      "/images/body.webp": { width: 900, height: 600 },
+      "/images/cover.webp": {
+        width: 1600,
+        height: 900,
+        mobile: { src: "/images/cover-800.webp", width: 800, height: 450 }
+      }
+    }
+  });
+  assert.equal(serializeRuntimeIndex(runtime), `${JSON.stringify(runtime)}\n`);
+  assert.equal(serializeRuntimeIndex(runtime).includes("sourceHash"), false);
+  assert.equal(serializeRuntimeIndex(runtime).includes("externalSources"), false);
 });

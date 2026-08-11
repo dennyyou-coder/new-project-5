@@ -181,6 +181,16 @@ The only local console error was the expected `/_vercel/insights/script.js` 404 
 - Corrected the full-suite record without inventing a rerun: Task 8's original pre-fix run was 491/491; the reviewer independently reran the final tree after the new CSS route-graph test and passed 492/492.
 - This round changed documentation and formatting only. It did not modify code, tests, images, the manifest, or article content, and it did not rerun the build, browser QA, or full suite.
 
+## Final review Fix Wave 1 — incremental maintenance and audit/runtime separation
+
+The final review identified maintenance and verification gaps without requiring any historical primary rewrite. The repair added hash-and-processor-bound reuse for pipeline-owned historical state, a Sharp-free SVG intrinsic-dimension path, deterministic external-source audit records, a compact runtime index, strict cover-crop ratio validation, candidate precommit repository budgeting, exact built HTML responsive attributes, and path-component symlink rejection.
+
+The full audit manifest now records all 10 currently present external source folders and all 32 image files. Verification checks 32/32 hashes, reports 25 exact semantic bindings, and preserves 32 explicit repository-primary dispositions: 5 approved malformed-folder fallback records, 19 incompatible-format records, 6 slug-prefix normalization records, and 2 content-conflict records. A binding may also carry a disposition; this records exact identity without allowing the external file to displace the repository primary.
+
+The rendering runtime no longer imports the full audit manifest. The compact committed runtime index contains only URL, intrinsic width/height, and optional mobile source width/height. Its measured size is 301,322 bytes, compared with 1,280,824 bytes for the full audit manifest, within the 350,000-byte runtime budget.
+
+After the index-only atomic refresh, two consecutive ordinary full dry runs both completed with 438 articles, zero creates, zero replacements, zero removals, zero primary changes, unchanged full/runtime indexes, and the same 32 deterministic source-validation dispositions. No `public` image was written. The external source library aggregate content hash and path/size/mtime aggregate remained unchanged across the refresh.
+
 ## Baseline largest 30 referenced images
 
 | # | Public URL | Bytes |

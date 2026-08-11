@@ -7,13 +7,19 @@ import { spawnSync } from "node:child_process";
 
 import sharp from "sharp";
 
-import { ARTICLE_BUDGETS } from "./config.mjs";
+import { ARTICLE_BUDGETS, ARTICLE_IMAGE_LIMIT_BYTES } from "./config.mjs";
 import {
   HISTORICAL_KINDS,
   readHistoricalKindClassifications
 } from "./historical-kinds.mjs";
-import { buildManifest, serializeManifest } from "./manifest.mjs";
+import {
+  buildManifest,
+  buildRuntimeIndex,
+  serializeManifest,
+  serializeRuntimeIndex
+} from "./manifest.mjs";
 import { discoverArticleInventory } from "./references.mjs";
+import { svgIntrinsicDimensions } from "./svg.mjs";
 import {
   createDesktopVariant,
   createMobileVariant,
@@ -39,6 +45,7 @@ const FRONTMATTER_IMAGE_FIELDS = new Set([
   "coverImage", "cover_image", "socialImage", "social_image",
   "thumbnail", "thumbnailImage", "thumbnail_image"
 ]);
+const GUARDED_PUBLIC_IMAGE_PREFIXES = ["images/articles/", "images/blog/", "images/insights/"];
 
 export class ArticleImagePreparationError extends Error {
   constructor(message, details = {}) {
@@ -99,6 +106,17 @@ function sha256(buffer) {
 
 function normalizedHash(value) {
   return typeof value === "string" ? `sha256:${value.replace(/^sha256:/i, "").toLowerCase()}` : null;
+}
+
+export function canReuseHistoricalPrimary({
+  existing,
+  actualOutputHash,
+  manifestProcessorVersion,
+  processorVersion = PROCESSOR_VERSION
+}) {
+  return String(manifestProcessorVersion) === String(processorVersion)
+    && Boolean(normalizedHash(existing?.outputHash))
+    && normalizedHash(existing.outputHash) === normalizedHash(actualOutputHash);
 }
 
 function manifestKindForHistoricalClassification(kind) {
@@ -415,11 +433,55 @@ async function discoverSourceImages(sourceRoot, { includeSvg = false } = {}) {
 async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
   const article = context.currentInventory.articles[slug];
   const approvedWarning = approvedHistoricalSourceValidationWarning(slug, sourceRoot);
-  if (approvedWarning) return [approvedWarning];
+  if (approvedWarning) {
+    const primary = article.cover ?? article.body[0];
+    if (!primary) {
+      throw failure(`Approved external source fallback for ${slug} has no repository primary owner.`, {
+        code: "HISTORICAL_REPOSITORY_PRIMARY_OWNERSHIP_MISSING", slug,
+        recommendedAction: "Restore the repository cover or body primary before using the approved fallback."
+      });
+    }
+    const files = {};
+    for (const entry of (await fsp.readdir(sourceRoot, { withFileTypes: true }))
+      .filter((item) => item.isFile() && HISTORICAL_SOURCE_IMAGE.test(item.name))
+      .sort((left, right) => left.name.localeCompare(right.name))) {
+      files[entry.name] = {
+        status: "disposition",
+        code: "EXTERNAL_SOURCE_CONFLICT_FALLBACK",
+        primary,
+        hash: sha256(await fsp.readFile(path.join(sourceRoot, entry.name)))
+      };
+    }
+    return { warnings: [approvedWarning], audit: { files } };
+  }
   const { descriptors } = await discoverSourceImages(sourceRoot, { includeSvg: true });
   await readImageConfig(sourceRoot, descriptors, slug);
   const referencedDescriptors = new Set();
   const warnings = [];
+  const files = {};
+  const hashes = new Map(await Promise.all(descriptors.map(async (descriptor) => [
+    descriptor.basename,
+    sha256(await fsp.readFile(descriptor.file))
+  ])));
+  const record = (descriptor, status, primary, code) => {
+    referencedDescriptors.add(descriptor.basename);
+    if (files[descriptor.basename]?.status === "matched" && status === "disposition") return;
+    files[descriptor.basename] = {
+      status,
+      ...(code ? { code } : {}),
+      primary,
+      hash: hashes.get(descriptor.basename)
+    };
+  };
+
+  const coverDescriptor = descriptors.find(({ sequence }) => sequence === 1);
+  if (coverDescriptor) {
+    const primary = article.cover ?? article.body[0];
+    if (primary) {
+      const incompatible = normalizedImageFormat(primary) !== normalizedImageFormat(coverDescriptor.basename);
+      record(coverDescriptor, "matched", primary, incompatible ? "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT" : null);
+    }
+  }
   for (const reference of article.body) {
     const semanticStem = historicalReferenceSemanticStem(reference);
     const exactMatches = descriptors
@@ -427,6 +489,7 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
       .sort((left, right) => left.basename.localeCompare(right.basename));
     if (exactMatches.length > 1) {
       warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${reference} sources=${exactMatches.map(({ basename }) => basename).join(",")} reason=AMBIGUOUS_SEMANTIC_MATCH repository-primary-preserved`);
+      for (const descriptor of exactMatches) record(descriptor, "disposition", reference, "EXTERNAL_SOURCE_CONTENT_CONFLICT");
       continue;
     }
     let matches = exactMatches;
@@ -444,6 +507,7 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
         .sort((left, right) => left.basename.localeCompare(right.basename));
       if (matches.length > 1) {
         warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${reference} sources=${matches.map(({ basename }) => basename).join(",")} reason=AMBIGUOUS_SEMANTIC_MATCH repository-primary-preserved`);
+        for (const descriptor of matches) record(descriptor, "disposition", reference, "EXTERNAL_SOURCE_CONTENT_CONFLICT");
         continue;
       }
       if (matches.length === 1) {
@@ -460,15 +524,19 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
         ? sameSequence
         : bodyDescriptors.length ? bodyDescriptors : descriptors;
       warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${reference} sources=${candidates.map(({ basename }) => basename).join(",")} reason=NO_SEMANTIC_MATCH repository-primary-preserved`);
-      for (const descriptor of candidates) referencedDescriptors.add(descriptor.basename);
+      for (const descriptor of candidates) record(descriptor, "disposition", reference, "EXTERNAL_SOURCE_CONTENT_CONFLICT");
       continue;
     }
     const [match] = matches;
-    referencedDescriptors.add(match.basename);
+    const incompatible = normalizedImageFormat(reference) !== normalizedImageFormat(match.basename);
+    const dispositionCode = incompatible
+      ? "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT"
+      : normalizedPrefix ? "HISTORICAL_SVG_PREFIX_NORMALIZED" : null;
+    record(match, "matched", reference, dispositionCode);
     if (normalizedPrefix) {
       warnings.push(`HISTORICAL_SVG_PREFIX_NORMALIZED slug=${slug} primary=${reference} source=${match.basename} prefix=${normalizedPrefix} repository-primary-preserved`);
     }
-    if (normalizedImageFormat(reference) !== normalizedImageFormat(match.basename)) {
+    if (incompatible) {
       warnings.push(`INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT slug=${slug} primary=${reference} source=${match.basename} repository-primary-preserved`);
     }
   }
@@ -488,8 +556,9 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
       });
     }
     warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${primary} sources=${descriptor.basename} reason=UNREFERENCED_EXTERNAL_DESCRIPTOR repository-primary-preserved`);
+    record(descriptor, "disposition", primary, "EXTERNAL_SOURCE_CONTENT_CONFLICT");
   }
-  return warnings;
+  return { warnings, audit: { files } };
 }
 
 async function hasRealTransparency(file) {
@@ -604,16 +673,8 @@ async function describeExistingAsset(url, file, inventory, existing, publicRoot,
   const role = roleForUrl(inventory, url);
   if (path.extname(file).toLowerCase() === ".svg") {
     const buffer = await fsp.readFile(file);
-    const source = buffer.toString("utf8", 0, Math.min(buffer.length, 16_384));
-    const numeric = (name) => Number(source.match(new RegExp(`\\b${name}=["']([0-9]+(?:\\.[0-9]+)?)(?:px)?["']`, "i"))?.[1]);
-    let width = numeric("width");
-    let height = numeric("height");
-    if (!(width > 0 && height > 0)) {
-      const viewBox = source.match(/\bviewBox=["']\s*[-+0-9.e]+\s+[-+0-9.e]+\s+([-+0-9.e]+)\s+([-+0-9.e]+)\s*["']/i);
-      width = width > 0 ? width : Number(viewBox?.[1]);
-      height = height > 0 ? height : Number(viewBox?.[2]);
-    }
-    if (!(width > 0 && height > 0)) {
+    const dimensions = svgIntrinsicDimensions(buffer);
+    if (!dimensions) {
       throw failure(`Historical SVG ${url} has no validation-only intrinsic dimensions.`, {
         code: "HISTORICAL_SVG_DIMENSIONS_MISSING",
         imageName: path.posix.basename(url),
@@ -624,8 +685,8 @@ async function describeExistingAsset(url, file, inventory, existing, publicRoot,
     return {
       role,
       kind: classifiedHistoricalKind("historical-inventory", url, outputHash, classifications, "graphic"),
-      width,
-      height,
+      width: dimensions.width,
+      height: dimensions.height,
       bytes: buffer.length,
       format: "svg",
       quality: existing?.quality ?? 100,
@@ -705,6 +766,7 @@ async function planSourceArticle(context, slug, sourceRoot) {
   const destinationBySequence = new Map();
   const sourceBytes = descriptors.reduce((total, item) => total + fs.statSync(item.file).size, 0);
   const warnings = [];
+  const externalSourceFiles = {};
 
   for (const descriptor of descriptors) {
     const settings = config[descriptor.basename] ?? {};
@@ -735,6 +797,11 @@ async function planSourceArticle(context, slug, sourceRoot) {
     const url = `/images/articles/${slug}/${outputName}`;
     const mobileUrl = `/images/articles/${slug}/${prefix}-${descriptor.sequence === 1 ? "cover" : descriptor.semanticStem}-800.webp`;
     destinationBySequence.set(descriptor.sequence, url);
+    externalSourceFiles[descriptor.basename] = {
+      status: "matched",
+      primary: url,
+      hash: result.source.sourceHash
+    };
     processed[url] = processedAssetFromTransform(result, { role, kind, mobileUrl });
     stageOutputs.push({ url, buffer: result.desktop.buffer, sourceHash: result.source.sourceHash, imageName: descriptor.basename });
     if (result.mobile) {
@@ -800,6 +867,7 @@ async function planSourceArticle(context, slug, sourceRoot) {
     oldReferences,
     removable,
     warnings,
+    externalSourceAudit: { files: externalSourceFiles },
     historicalPrimaryPreserved: false
   };
 }
@@ -1044,11 +1112,16 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
     const role = current.role;
     const kind = current.kind;
     let primary = current;
+    const reusablePrimary = canReuseHistoricalPrimary({
+      existing,
+      actualOutputHash: current.outputHash,
+      manifestProcessorVersion: context.existingManifest.processorVersion
+    });
     if (current.format === "svg") {
       processed[url] = primary;
       continue;
     }
-    if (["jpeg", "png", "webp"].includes(current.format)) {
+    if (!reusablePrimary && ["jpeg", "png", "webp"].includes(current.format)) {
       const desktop = await createDesktopVariant({
         input: file,
         filename: path.basename(file),
@@ -1084,6 +1157,10 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
           historicalPrimary: true
         });
       }
+    }
+    if (reusablePrimary) {
+      processed[url] = primary;
+      continue;
     }
     const mobile = await createMobileVariant({
       input: file,
@@ -1225,15 +1302,49 @@ async function planHistoricalGeneratedStateRepair(context, slug, initialWarnings
   };
 }
 
+async function planHistoricalIndexArticle(context, slug, initialWarnings = []) {
+  const article = context.currentInventory.articles[slug];
+  const processed = {};
+  let sourceBytes = 0;
+  for (const url of allArticleReferences(article)) {
+    const file = context.currentInventory.assets[url]?.file;
+    if (!file) continue;
+    const current = await describeExistingAsset(
+      url,
+      file,
+      context.currentInventory,
+      context.existingManifest.assets?.[url],
+      context.publicRoot,
+      context.historicalKindClassifications
+    );
+    processed[url] = current;
+    sourceBytes += current.bytes;
+  }
+  return {
+    slug,
+    article,
+    sourceBytes,
+    stageOutputs: [],
+    processed,
+    updatedSource: await fsp.readFile(article.file, "utf8"),
+    updatedArticle: { ...article, body: [...article.body] },
+    oldReferences: [],
+    removable: [],
+    warnings: [...initialWarnings],
+    historicalPrimaryPreserved: true
+  };
+}
+
 async function readManifest(manifestPath) {
-  if (!fs.existsSync(manifestPath)) return { version: 1, processorVersion: PROCESSOR_VERSION, assets: {}, articles: {} };
+  if (!fs.existsSync(manifestPath)) return { version: 1, processorVersion: PROCESSOR_VERSION, assets: {}, articles: {}, externalSources: {} };
   try {
     const manifest = JSON.parse(await fsp.readFile(manifestPath, "utf8"));
     return {
       version: manifest.version ?? 1,
       processorVersion: manifest.processorVersion ?? PROCESSOR_VERSION,
       assets: manifest.assets ?? {},
-      articles: manifest.articles ?? {}
+      articles: manifest.articles ?? {},
+      externalSources: manifest.externalSources ?? {}
     };
   } catch (error) {
     throw failure(`Invalid existing article image manifest: ${error.message}`, {
@@ -1322,7 +1433,7 @@ function validateArticleBudgets(candidate, processed, slugs) {
   return totals;
 }
 
-async function stagePlans(context, plans, candidateManifestSource) {
+async function stagePlans(context, plans, candidateManifestSource, candidateRuntimeSource) {
   for (const plan of plans) {
     for (const output of plan.stageOutputs) {
       const file = path.join(context.stageRoot, "public", output.url.slice(1));
@@ -1338,7 +1449,9 @@ async function stagePlans(context, plans, candidateManifestSource) {
   }
   const manifestStage = path.join(context.stageRoot, "manifest.json");
   await fsp.writeFile(manifestStage, candidateManifestSource);
-  return manifestStage;
+  const runtimeStage = path.join(context.stageRoot, "runtime.json");
+  await fsp.writeFile(runtimeStage, candidateRuntimeSource);
+  return { manifestStage, runtimeStage };
 }
 
 async function sameFileBytes(file, candidate) {
@@ -1347,8 +1460,64 @@ async function sameFileBytes(file, candidate) {
   return current.equals(next);
 }
 
-async function createReports(context, plans, totals, manifestStage) {
+function isGuardedPublicFile(publicRoot, file) {
+  const relative = path.relative(publicRoot, file).split(path.sep).join("/");
+  return GUARDED_PUBLIC_IMAGE_PREFIXES.some((prefix) => relative.startsWith(prefix));
+}
+
+function currentGuardedRepositoryBytes(publicRoot) {
+  let bytes = 0;
+  const walk = (directory) => {
+    if (!fs.existsSync(directory)) return;
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+      const file = path.join(directory, entry.name);
+      const stat = fs.lstatSync(file);
+      if (stat.isSymbolicLink()) {
+        throw repositoryPathError("guarded repository symlink component", file, "regular files and directories");
+      }
+      if (stat.isDirectory()) walk(file);
+      else if (stat.isFile()) bytes += stat.size;
+    }
+  };
+  for (const prefix of GUARDED_PUBLIC_IMAGE_PREFIXES) {
+    walk(path.join(publicRoot, ...prefix.replace(/\/$/, "").split("/")));
+  }
+  return bytes;
+}
+
+function validateCandidateRepositoryBudget(context, plans) {
+  let candidateBytes = currentGuardedRepositoryBytes(context.publicRoot);
+  const writes = new Map();
+  for (const plan of plans) {
+    for (const output of plan.stageOutputs) {
+      const destination = publicUrlFile(context.publicRoot, output.url);
+      if (isGuardedPublicFile(context.publicRoot, destination)) writes.set(destination, output.stageFile);
+    }
+  }
+  const removals = new Set(plans.flatMap((plan) => plan.removable)
+    .filter((file) => isGuardedPublicFile(context.publicRoot, file)));
+  for (const [destination, stageFile] of writes) {
+    candidateBytes += fs.statSync(stageFile).size;
+    if (fs.existsSync(destination)) candidateBytes -= fs.lstatSync(destination).size;
+    removals.delete(destination);
+  }
+  for (const file of removals) {
+    if (fs.existsSync(file)) candidateBytes -= fs.lstatSync(file).size;
+  }
+  if (candidateBytes > ARTICLE_IMAGE_LIMIT_BYTES) {
+    throw failure(`Candidate article image repository total ${candidateBytes} bytes exceeds limit ${ARTICLE_IMAGE_LIMIT_BYTES} bytes before commit.`, {
+      code: "REPOSITORY_BUDGET_EXCEEDED",
+      observedValue: candidateBytes,
+      permittedValue: ARTICLE_IMAGE_LIMIT_BYTES,
+      recommendedAction: "Reduce the staged article image additions or remove approved obsolete guarded assets before retrying."
+    });
+  }
+  return candidateBytes;
+}
+
+async function createReports(context, plans, totals, manifestStage, runtimeStage) {
   const manifestChanged = !(await sameFileBytes(context.manifestPath, manifestStage));
+  const runtimeChanged = !(await sameFileBytes(context.runtimePath, runtimeStage));
   const reports = [];
   for (const plan of plans) {
     const filesCreated = [];
@@ -1377,6 +1546,12 @@ async function createReports(context, plans, totals, manifestStage) {
       (fs.existsSync(context.manifestPath) ? filesReplaced : filesCreated)
         .push(relativeRepositoryPath(context.projectRoot, context.manifestPath));
     }
+    if (plan === plans[0] && runtimeChanged) {
+      const oldBytes = fs.existsSync(context.runtimePath) ? fs.statSync(context.runtimePath).size : 0;
+      netRepositoryBytes += fs.statSync(runtimeStage).size - oldBytes;
+      (fs.existsSync(context.runtimePath) ? filesReplaced : filesCreated)
+        .push(relativeRepositoryPath(context.projectRoot, context.runtimePath));
+    }
     reports.push({
       slug: plan.slug,
       dryRun: context.dryRun,
@@ -1390,6 +1565,7 @@ async function createReports(context, plans, totals, manifestStage) {
       netRepositoryBytes,
       warnings: [...plan.warnings],
       manifestChanged,
+      runtimeChanged,
       historicalPrimaryPreserved: plan.historicalPrimaryPreserved
     });
   }
@@ -1407,7 +1583,7 @@ async function atomicWrite(destination, source) {
   }
 }
 
-async function commitPlans(context, plans, manifestStage) {
+async function commitPlans(context, plans, manifestStage, runtimeStage) {
   const writes = [];
   for (const plan of plans) {
     for (const output of plan.stageOutputs) {
@@ -1422,6 +1598,8 @@ async function commitPlans(context, plans, manifestStage) {
   }
   assertExactRepositoryPath(context.manifestPath, context.expectedManifestPath, "manifest replacement");
   writes.push({ destination: context.manifestPath, source: manifestStage });
+  assertExactRepositoryPath(context.runtimePath, context.expectedRuntimePath, "runtime index replacement");
+  writes.push({ destination: context.runtimePath, source: runtimeStage });
   const removals = [...new Set(plans.flatMap((plan) => plan.removable))];
   for (const removal of removals) assertRepositoryPath(removal, context.publicRoot, "publish removal");
   const touched = [...new Set([...writes.map(({ destination }) => destination), ...removals])];
@@ -1472,6 +1650,20 @@ function pathIsContained(root, candidate) {
   return relative === "" || (!relative.startsWith(`..${path.sep}`) && relative !== ".." && !path.isAbsolute(relative));
 }
 
+function firstSymlinkWithin(root, candidate) {
+  const lexicalRoot = path.resolve(root);
+  const lexicalCandidate = path.resolve(candidate);
+  if (!pathIsContained(lexicalRoot, lexicalCandidate)) return null;
+  const segments = path.relative(lexicalRoot, lexicalCandidate).split(path.sep).filter(Boolean);
+  let cursor = lexicalRoot;
+  for (const segment of [null, ...segments]) {
+    if (segment) cursor = path.join(cursor, segment);
+    if (!fs.existsSync(cursor)) return null;
+    if (fs.lstatSync(cursor).isSymbolicLink()) return cursor;
+  }
+  return null;
+}
+
 function repositoryPathError(label, observed, permitted) {
   return failure(`Invalid repository path for ${label}: ${observed}; expected ${permitted}.`, {
     code: "INVALID_REPOSITORY_PATH",
@@ -1482,6 +1674,10 @@ function repositoryPathError(label, observed, permitted) {
 }
 
 function assertRepositoryPath(candidate, expectedRoot, label) {
+  const symlink = firstSymlinkWithin(expectedRoot, candidate);
+  if (symlink) {
+    throw repositoryPathError(`${label} symlink component`, symlink, `a symlink-free path under ${path.resolve(expectedRoot)}`);
+  }
   const canonicalRoot = canonicalPath(expectedRoot);
   const canonicalCandidate = canonicalPath(candidate);
   if (!pathIsContained(canonicalRoot, canonicalCandidate)) {
@@ -1508,18 +1704,34 @@ function resolveContext(options) {
   const expectedContentRoot = path.join(projectRoot, "content");
   const expectedPublicRoot = path.join(projectRoot, "public");
   const expectedManifestPath = path.join(projectRoot, "lib", "generated", "article-image-manifest.json");
+  const expectedRuntimePath = path.join(projectRoot, "lib", "generated", "article-image-runtime.json");
+  for (const [label, candidate] of [
+    ["contentRoot", options.contentRoot ?? expectedContentRoot],
+    ["publicRoot", options.publicRoot ?? expectedPublicRoot],
+    ["manifestPath", options.manifestPath ?? expectedManifestPath],
+    ["runtimePath", options.runtimePath ?? expectedRuntimePath]
+  ]) {
+    const symlink = firstSymlinkWithin(projectRoot, candidate);
+    if (symlink) {
+      throw repositoryPathError(`${label} symlink component`, symlink, `a symlink-free path under ${projectRoot}`);
+    }
+  }
   const contentRoot = assertExactRepositoryPath(options.contentRoot ?? expectedContentRoot, expectedContentRoot, "contentRoot");
   const publicRoot = assertExactRepositoryPath(options.publicRoot ?? expectedPublicRoot, expectedPublicRoot, "publicRoot");
   const manifestPath = assertExactRepositoryPath(options.manifestPath ?? expectedManifestPath, expectedManifestPath, "manifestPath");
+  const runtimePath = assertExactRepositoryPath(options.runtimePath ?? expectedRuntimePath, expectedRuntimePath, "runtimePath");
   assertRepositoryPath(contentRoot, projectRoot, "contentRoot");
   assertRepositoryPath(publicRoot, projectRoot, "publicRoot");
   assertRepositoryPath(manifestPath, projectRoot, "manifestPath");
+  assertRepositoryPath(runtimePath, projectRoot, "runtimePath");
   return {
     projectRoot,
     contentRoot,
     publicRoot,
     manifestPath,
     expectedManifestPath,
+    runtimePath,
+    expectedRuntimePath,
     dryRun: Boolean(options.dryRun),
     repairGeneratedState: Boolean(options.repairGeneratedState)
   };
@@ -1530,7 +1742,7 @@ async function prepareSelection(options, mode) {
   context.stageRoot = await fsp.mkdtemp(path.join(os.tmpdir(), "wcb-article-image-stage-"));
   try {
     const files = articleFilesBySlug(context.contentRoot);
-    const requestedSlugs = mode === "all" ? [...files.keys()].sort() : [options.slug];
+    const requestedSlugs = mode === "single" ? [options.slug] : [...files.keys()].sort();
     if (!requestedSlugs.length) {
       throw failure("No article MDX files were found.", {
         code: "NO_ARTICLES", recommendedAction: "Confirm the content root and add an article before preparation."
@@ -1563,7 +1775,7 @@ async function prepareSelection(options, mode) {
       mode === "single" ? [...sourceRoots.keys()] : [],
       files
     );
-    context.historicalKindClassifications = mode === "all"
+    context.historicalKindClassifications = mode !== "single"
       ? readHistoricalKindClassifications(context.projectRoot)
       : {};
     context.currentInventory = discoverArticleInventory({
@@ -1576,18 +1788,24 @@ async function prepareSelection(options, mode) {
       if (fs.existsSync(repositoryAsset)) assertRepositoryPath(repositoryAsset, context.publicRoot, "published source asset");
     }
     context.existingManifest = await readManifest(context.manifestPath);
+    context.externalSources = structuredClone(context.existingManifest.externalSources ?? {});
     const plans = [];
     for (const slug of requestedSlugs) {
       const sourceRoot = sourceRoots.get(slug);
       if (mode === "single") {
-        plans.push(await planSourceArticle(context, slug, sourceRoot));
+        const plan = await planSourceArticle(context, slug, sourceRoot);
+        context.externalSources[slug] = plan.externalSourceAudit;
+        plans.push(plan);
       } else {
-        const warnings = sourceRoot
+        const validation = sourceRoot
           ? await validateHistoricalSourceFolder(context, slug, sourceRoot)
-          : [];
-        plans.push(context.repairGeneratedState
-          ? await planHistoricalGeneratedStateRepair(context, slug, warnings)
-          : await planHistoricalArticle(context, slug, warnings));
+          : { warnings: [], audit: null };
+        if (validation.audit) context.externalSources[slug] = validation.audit;
+        plans.push(mode === "indexes"
+          ? await planHistoricalIndexArticle(context, slug, validation.warnings)
+          : context.repairGeneratedState
+            ? await planHistoricalGeneratedStateRepair(context, slug, validation.warnings)
+            : await planHistoricalArticle(context, slug, validation.warnings));
       }
     }
     for (const plan of plans) {
@@ -1598,14 +1816,21 @@ async function prepareSelection(options, mode) {
     const candidate = applyPlansToInventory(context.currentInventory, plans, context.stageRoot);
     const processed = await processedAssetsForCandidate(context, candidate, plans);
     const totals = validateArticleBudgets(candidate, processed, requestedSlugs);
-    const manifest = buildManifest({ inventory: candidate, processedAssets: processed, processorVersion: PROCESSOR_VERSION });
+    const manifest = buildManifest({
+      inventory: candidate,
+      processedAssets: processed,
+      processorVersion: PROCESSOR_VERSION,
+      externalSources: context.externalSources ?? context.existingManifest.externalSources ?? {}
+    });
     const manifestSource = serializeManifest(manifest);
-    const manifestStage = await stagePlans(context, plans, manifestSource);
-    const reports = await createReports(context, plans, totals, manifestStage);
-    if (!context.dryRun) await commitPlans(context, plans, manifestStage);
+    const runtimeSource = serializeRuntimeIndex(buildRuntimeIndex(manifest));
+    const { manifestStage, runtimeStage } = await stagePlans(context, plans, manifestSource, runtimeSource);
+    validateCandidateRepositoryBudget(context, plans);
+    const reports = await createReports(context, plans, totals, manifestStage, runtimeStage);
+    if (!context.dryRun) await commitPlans(context, plans, manifestStage, runtimeStage);
     if (mode === "single") return reports[0];
     return {
-      mode: "all",
+      mode,
       dryRun: context.dryRun,
       articles: reports,
       sourceBytes: reports.reduce((sum, report) => sum + report.sourceBytes, 0),
@@ -1616,7 +1841,8 @@ async function prepareSelection(options, mode) {
       filesRemoved: reports.flatMap((report) => report.filesRemoved),
       netRepositoryBytes: reports.reduce((sum, report) => sum + report.netRepositoryBytes, 0),
       warnings: reports.flatMap((report) => report.warnings),
-      manifestChanged: reports.some((report) => report.manifestChanged)
+      manifestChanged: reports.some((report) => report.manifestChanged),
+      runtimeChanged: reports.some((report) => report.runtimeChanged)
     };
   } finally {
     await fsp.rm(context.stageRoot, { recursive: true, force: true });
@@ -1636,4 +1862,8 @@ export async function prepareArticleImages(options = {}) {
 
 export function prepareAllArticleImages(options = {}) {
   return prepareSelection(options, "all");
+}
+
+export function refreshArticleImageIndexes(options = {}) {
+  return prepareSelection(options, "indexes");
 }

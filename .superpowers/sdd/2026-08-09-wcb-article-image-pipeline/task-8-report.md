@@ -148,3 +148,11 @@ The complete branch diff remains within the planned article-image pipeline scope
 - Removed the pre-existing Markdown trailing spaces from the design document date so the branch-wide `git diff --check origin/main...HEAD` gate can pass.
 - Corrected the complete-suite chronology: Task 8's pre-fix full run was 491/491; the reviewer independently verified the final tree, including the newly added CSS route-graph test, at 492/492.
 - This correction changed documentation and formatting only. No code, test, image, manifest, or content file changed, and no build, browser QA, or full suite was rerun for this documentation-only round.
+
+## Final review Fix Wave 1
+
+Final review found eight cross-cutting gaps in incremental maintenance, source auditing, runtime payload separation, crop validation, precommit budgeting, built-output validation, and path safety. They were addressed without rewriting any of the 1,770 integrated primaries and without changing article content, URLs, image order, or external-source files.
+
+The production index-only refresh changed only the full generated audit manifest and added the compact runtime index. The full manifest covers 10 external folders / 32 files with 32 checked hashes, 25 exact semantic bindings, and 32 explicit dispositions. The runtime projection is 301,322 bytes and excludes all hashes, audit records, article inventory, budgets, roles, kinds, byte counts, formats, and quality facts.
+
+Two consecutive ordinary `--all --dry-run` executions are fully idempotent: zero creates, replacements, removals, primary changes, or index drift. Final verification evidence is recorded in `final-fix-report.md`; no push, pull request, Preview, merge, or deployment was performed.

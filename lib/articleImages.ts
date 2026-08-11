@@ -1,4 +1,4 @@
-import manifest from "./generated/article-image-manifest.json" with { type: "json" };
+import manifest from "./generated/article-image-runtime.json" with { type: "json" };
 import {
   responsiveImageAttributesFor,
   responsiveImagePropsFor,
@@ -11,20 +11,11 @@ type MobileArticleImage = {
   src: string;
   width: number;
   height: number;
-  bytes: number;
-  outputHash: string;
 };
 
 export type ArticleImage = {
-  role: string;
-  kind: string;
   width: number;
   height: number;
-  bytes: number;
-  format: string;
-  quality: number;
-  sourceHash: string;
-  outputHash: string;
   mobile?: MobileArticleImage;
 };
 

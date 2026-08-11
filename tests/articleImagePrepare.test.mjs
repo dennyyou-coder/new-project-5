@@ -7,13 +7,18 @@ import { spawnSync } from "node:child_process";
 import test from "node:test";
 
 import sharp from "sharp";
+import { verifyArticleImages } from "../scripts/article-images/verify.mjs";
+import { ARTICLE_IMAGE_LIMIT_BYTES } from "../scripts/article-images/config.mjs";
+import { buildRuntimeIndex } from "../scripts/article-images/manifest.mjs";
 
 import {
   ArticleImagePreparationError,
   PHOTO_AGGREGATE_MOBILE_LONG_EDGES,
+  canReuseHistoricalPrimary,
   classifyHistoricalExtremeRecoveryAssets,
   prepareAllArticleImages,
   prepareArticleImages,
+  refreshArticleImageIndexes,
   selectPhotoAggregateRecoveryStage
 } from "../scripts/article-images/prepare.mjs";
 
@@ -656,6 +661,31 @@ test("rejects content, public, and manifest symlink escapes without mutating ext
   }
 });
 
+test("rejects an internal publish-path symlink component before writing through it", async () => {
+  const fixture = await validFixture({ slug: "internal-target-link" });
+  const articlesRoot = path.join(fixture.projectRoot, "public", "images", "articles");
+  const target = path.join(articlesRoot, "internal-target-link-storage");
+  const link = path.join(articlesRoot, fixture.slug);
+  fs.mkdirSync(target, { recursive: true });
+  fs.writeFileSync(path.join(target, "marker.txt"), "unchanged");
+  fs.symlinkSync(target, link);
+  const before = readTree(target);
+
+  await assert.rejects(
+    prepareArticleImages({
+      slug: fixture.slug,
+      projectRoot: fixture.projectRoot,
+      sourceRoot: fixture.folder
+    }),
+    (error) => error instanceof ArticleImagePreparationError
+      && error.code === "INVALID_REPOSITORY_PATH"
+      && /symlink/i.test(error.message)
+  );
+
+  assert.equal(fs.lstatSync(link).isSymbolicLink(), true);
+  assert.deepEqual(readTree(target), before);
+});
+
 test("dry-run completes transforms and reports repository deltas without changing any repository file", async () => {
   const fixture = await validFixture({ slug: "dry-run-report", bodyCount: 2 });
   const before = readTree(fixture.projectRoot);
@@ -677,6 +707,32 @@ test("dry-run completes transforms and reports repository deltas without changin
     assert.equal(Array.isArray(result[field]), true, `${field} must be an array`);
   }
   assert.ok(result.filesCreated.some((file) => file.endsWith("01-cover.webp")));
+});
+
+test("candidate repository growth aborts before commit when staged replacements exceed the ceiling", async () => {
+  const fixture = await validFixture({ slug: "candidate-repository-ceiling" });
+  const filler = path.join(fixture.projectRoot, "public", "images", "blog", "filler.bin");
+  fs.mkdirSync(path.dirname(filler), { recursive: true });
+  fs.writeFileSync(filler, "");
+  fs.truncateSync(filler, ARTICLE_IMAGE_LIMIT_BYTES - 1);
+  const articleBefore = fs.readFileSync(articleFile(fixture, fixture.slug));
+  const expectedCover = publicFile(fixture, `/images/articles/${fixture.slug}/01-cover.webp`);
+
+  await assert.rejects(
+    prepareArticleImages({
+      slug: fixture.slug,
+      projectRoot: fixture.projectRoot,
+      sourceRoot: fixture.folder
+    }),
+    (error) => error instanceof ArticleImagePreparationError
+      && error.code === "REPOSITORY_BUDGET_EXCEEDED"
+      && /candidate/i.test(error.message)
+  );
+
+  assert.equal(fs.statSync(filler).size, ARTICLE_IMAGE_LIMIT_BYTES - 1);
+  assert.deepEqual(fs.readFileSync(articleFile(fixture, fixture.slug)), articleBefore);
+  assert.equal(fs.existsSync(expectedCover), false);
+  assert.equal(fs.existsSync(path.join(fixture.projectRoot, "lib", "generated", "article-image-manifest.json")), false);
 });
 
 test("prepareAllArticleImages preserves historical primary URLs and formats when their source folder is absent", async () => {
@@ -703,6 +759,108 @@ test("prepareAllArticleImages preserves historical primary URLs and formats when
   assert.equal(result.mode, "all");
   assert.equal(result.articles[0].historicalPrimaryPreserved, true);
   assert.equal(result.articles[0].filesCreated.some((file) => file.includes(`/images/articles/${slug}/`)), false);
+});
+
+test("ordinary historical maintenance reuses pipeline-owned primaries byte-identically on consecutive runs", async () => {
+  const project = temporaryProject();
+  const slug = "historical-idempotent";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  const body = [`/images/blog/${slug}-body.webp`];
+  writeArticle(project, slug, { cover, body });
+  await writeImage(publicFile(project, cover), { width: 600, height: 338, format: "webp", noise: true });
+  await writeImage(publicFile(project, body[0]), { width: 560, height: 392, format: "webp", noise: true });
+
+  const first = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  const primarySnapshot = new Map([cover, ...body].map((url) => [url, fs.readFileSync(publicFile(project, url))]));
+
+  const secondDryRun = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+  const second = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+
+  for (const [url, bytes] of primarySnapshot) {
+    assert.deepEqual(fs.readFileSync(publicFile(project, url)), bytes, `${url} must not be re-encoded`);
+  }
+  for (const report of [secondDryRun, second]) {
+    const changedPrimaries = report.filesReplaced.filter((file) => !file.endsWith("article-image-manifest.json") && !file.endsWith("article-image-runtime.json"));
+    assert.deepEqual(changedPrimaries, []);
+  }
+  assert.equal(first.articles.length, 1);
+  assert.equal(second.articles.length, 1);
+});
+
+test("preparation atomically maintains a slim runtime index alongside the full audit manifest", async () => {
+  const project = temporaryProject();
+  const slug = "dual-manifest-state";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  writeArticle(project, slug, { cover, body: [] });
+  await writeImage(publicFile(project, cover), { width: 480, height: 270, format: "webp" });
+
+  const result = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  const fullPath = path.join(project.projectRoot, "lib", "generated", "article-image-manifest.json");
+  const runtimePath = path.join(project.projectRoot, "lib", "generated", "article-image-runtime.json");
+  const full = JSON.parse(fs.readFileSync(fullPath, "utf8"));
+  const runtime = JSON.parse(fs.readFileSync(runtimePath, "utf8"));
+
+  assert.deepEqual(runtime, buildRuntimeIndex(full));
+  assert.ok(fs.statSync(runtimePath).size < fs.statSync(fullPath).size);
+  assert.ok(result.filesCreated.some((file) => file.endsWith("article-image-runtime.json")));
+});
+
+test("index refresh repairs only the two generated indexes and never rewrites article assets", async () => {
+  const project = temporaryProject();
+  const slug = "index-only-refresh";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  writeArticle(project, slug, { cover, body: [] });
+  await writeImage(publicFile(project, cover), { width: 480, height: 270, format: "webp" });
+  await prepareAllArticleImages({ projectRoot: project.projectRoot, sourceLibraryRoot: project.sourceLibraryRoot });
+  const primaryBefore = fs.readFileSync(publicFile(project, cover));
+  const runtimePath = path.join(project.projectRoot, "lib", "generated", "article-image-runtime.json");
+  fs.rmSync(runtimePath);
+
+  const refreshed = await refreshArticleImageIndexes({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+
+  assert.deepEqual(fs.readFileSync(publicFile(project, cover)), primaryBefore);
+  assert.deepEqual(refreshed.filesCreated, ["lib/generated/article-image-runtime.json"]);
+  assert.deepEqual(refreshed.filesReplaced.filter((file) => file.startsWith("public/")), []);
+});
+
+test("historical primary reuse requires current processor ownership and an exact output hash", () => {
+  const currentHash = `sha256:${"a".repeat(64)}`;
+  const existing = { outputHash: currentHash };
+
+  assert.equal(canReuseHistoricalPrimary({
+    existing,
+    actualOutputHash: currentHash,
+    manifestProcessorVersion: "1",
+    processorVersion: "1"
+  }), true);
+  assert.equal(canReuseHistoricalPrimary({
+    existing,
+    actualOutputHash: `sha256:${"b".repeat(64)}`,
+    manifestProcessorVersion: "1",
+    processorVersion: "1"
+  }), false);
+  assert.equal(canReuseHistoricalPrimary({
+    existing,
+    actualOutputHash: currentHash,
+    manifestProcessorVersion: "0",
+    processorVersion: "1"
+  }), false);
 });
 
 test("generated-state repair removes an invalid same-width mobile and refreshes the current cover role without touching the primary", async () => {
@@ -804,6 +962,10 @@ test("prepareAllArticleImages optimizes repository primaries in place even when 
   assert.ok(manifest.assets[cover]);
   assert.ok(manifest.assets[body[0]]);
   assert.equal(Object.keys(manifest.assets).some((url) => url.startsWith(`/images/articles/${slug}/`)), false);
+  assert.deepEqual(Object.keys(manifest.externalSources[slug].files), ["01-cover.png", "02-product-view.png"]);
+  assert.equal(manifest.externalSources[slug].files["01-cover.png"].primary, cover);
+  assert.equal(manifest.externalSources[slug].files["02-product-view.png"].status, "disposition");
+  assert.match(manifest.externalSources[slug].files["02-product-view.png"].hash, /^sha256:[a-f0-9]{64}$/);
   assert.deepEqual(readTree(project.sourceLibraryRoot), sourceBefore, "validation-only external sources must remain immutable");
 });
 
@@ -914,6 +1076,31 @@ test("historical SVG primaries bypass every raster path even when Sharp rejects 
   assert.deepEqual(fs.readFileSync(publicFile(project, body[0])), svg);
   assert.equal(result.articles[0].filesCreated.some((file) => file.endsWith("-large-map-800.webp")), false);
   assert.equal(result.articles[0].filesReplaced.some((file) => file.endsWith("-large-map.svg")), false);
+});
+
+test("a hostile historical SVG remains vector-only through preparation and full source verification", async () => {
+  const project = temporaryProject();
+  const slug = "historical-svg-full-verification";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  const svgUrl = `/images/blog/${slug}-map.svg`;
+  writeArticle(project, slug, { cover, body: [svgUrl] });
+  await writeImage(publicFile(project, cover), { width: 480, height: 270, format: "webp" });
+  const svg = Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" width="100000" height="100000"><rect width="100000" height="100000"/></svg>');
+  fs.mkdirSync(path.dirname(publicFile(project, svgUrl)), { recursive: true });
+  fs.writeFileSync(publicFile(project, svgUrl), svg);
+
+  await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  const verified = await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: null
+  });
+
+  assert.equal(verified.ok, true, verified.failures.map(({ code, message }) => `${code}: ${message}`).join("\n"));
+  assert.deepEqual(fs.readFileSync(publicFile(project, svgUrl)), svg);
+  assert.equal(fs.existsSync(publicFile(project, svgUrl.replace(/\.svg$/, "-800.webp"))), false);
 });
 
 test("prepareAllArticleImages generally preserves a uniquely matched incompatible historical primary format", async () => {

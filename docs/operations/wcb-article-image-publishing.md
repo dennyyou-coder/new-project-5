@@ -83,6 +83,8 @@ If preparation reports `COVER_CROP_REVIEW_REQUIRED`, visually review the source 
 
 `x` and `y` run from `0` to `1`. An exact pixel `crop` may be supplied instead, but never provide both `crop` and `focalPoint`. Crop/focal settings are cover-only. Recheck people, products, text, logos, and other meaningful framing after preparation.
 
+An explicit cover crop must itself be `16:9` within a strict `0.5%` ratio tolerance. Square and portrait crop rectangles stop with `COVER_CROP_RATIO_INVALID`; body-image ratios remain content-driven and are not forced to `16:9`.
+
 For a body chart or text graphic, declare it instead of allowing photo treatment:
 
 ```json
@@ -126,6 +128,10 @@ npm run build
 
 The external source library is validation-only during historical maintenance and remains unchanged. Do not recrop, replace, reorder, or rename historical primary assets through this workflow.
 
+Ordinary maintenance is incremental. A current pipeline-owned primary is reused byte-for-byte only when its recorded output hash and processor version still match. Missing, new, or drifted assets continue through the normal planner; generated-state repair remains an explicit separate operation. Consecutive unchanged `--all --dry-run` commands must report zero creates, replacements, removals, and primary changes.
+
+Every present external source file must have a hash-bound exact semantic binding or an explicit repository-primary disposition in the full audit manifest. A new, missing, changed, ambiguous, or unbound file blocks verification. Format conflicts and approved fallbacks remain visible dispositions and never authorize replacing a repository primary. The source library is read-only.
+
 ## `visual_archive` Budget Class
 
 `visual_archive` is a strict exception for an explicitly allowlisted historical visual archive. It requires more than 50 unique body images and complete URL-plus-current-output-hash kind classification for all governed images. Its desktop limit remains `2,500,000` bytes and its mobile limit is `1,600,000` bytes.
@@ -143,3 +149,12 @@ postbuild -> verify:built-article-images
 ```
 
 No lifecycle script invokes `prepare:article-images`. If a build gate fails, return to the source folder, correct the input or approved configuration, run preparation explicitly, and rebuild.
+
+Preparation atomically maintains two generated files:
+
+- `article-image-manifest.json`: full server-side audit facts, hashes, article inventory, and external-source bindings/dispositions.
+- `article-image-runtime.json`: compact URL-to-dimensions/mobile-candidate data used by rendering. It must stay at or below `350,000` bytes and must not contain source hashes, output hashes, budgets, article inventory, or external-source audit records.
+
+The source verifier checks deterministic drift in both files. The runtime application imports only the compact index; the full audit manifest must not enter client or unrelated route chunks.
+
+Before any repository write or backup, preparation calculates the candidate guarded-image total with all staged replacements and deletions. A total above `321,920,358` bytes stops before commit and leaves the tree unchanged. Every repository path component must be a real directory or file; internal and external symlinks are rejected rather than followed.

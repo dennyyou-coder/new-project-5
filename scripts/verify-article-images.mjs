@@ -59,6 +59,12 @@ async function main() {
       `Article image verification passed: ${report.summary.articles} articles, ${report.summary.assets} primary assets, `
       + `${report.summary.mobileAssets} mobile assets.`
     );
+    const external = report.summary.externalSources;
+    console.log(
+      `External source audit: ${external.folders} folders, ${external.checked} hashes checked, `
+      + `${external.matched} exact semantic bindings, ${external.dispositions} explicit dispositions. `
+      + `Runtime index: ${report.summary.runtimeBytes} bytes.`
+    );
   } catch (error) {
     console.error(`Verification failed unexpectedly: ${error.stack ?? error.message}`);
     process.exitCode = 1;

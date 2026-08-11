@@ -12,6 +12,7 @@ import {
 
 const COVER_RATIO = 16 / 9;
 const COVER_RATIO_TOLERANCE = 0.02;
+const EXPLICIT_COVER_CROP_RATIO_TOLERANCE = 0.005;
 const PHOTO_ATTEMPTS = {
   desktop: [
     { longEdge: 1600, quality: 84 },
@@ -363,6 +364,17 @@ async function createVariant(options, viewport) {
     if (review) return review;
   }
   const crop = explicitCrop(options.crop, dimensions) ?? focalPointCrop(options.focalPoint, dimensions);
+  if (options.role === "cover" && options.crop && Math.abs((crop.width / crop.height) / COVER_RATIO - 1) > EXPLICIT_COVER_CROP_RATIO_TOLERANCE) {
+    return {
+      ok: false,
+      code: "COVER_CROP_RATIO_INVALID",
+      slug: options.slug ?? null,
+      filename: sourceFilename(options.input, options.filename),
+      sourceRatio: crop.width / crop.height,
+      targetRatio: COVER_RATIO,
+      recommendedAction: "Adjust the explicit cover crop rectangle to a 16:9 ratio (within 0.5%)."
+    };
+  }
   const configuredLimit = roleLimit(options.role, viewport);
   const limit = options.limitBytes === undefined
     ? configuredLimit

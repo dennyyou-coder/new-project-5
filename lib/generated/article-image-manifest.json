@@ -31790,5 +31790,239 @@
       "cover": "/images/insights/xiaomi-ecosystem-at-the-crossroads-cover.jpg",
       "body": []
     }
+  },
+  "externalSources": {
+    "building-worlds-no-1-cleaning-show-from-scratch-episode-01": {
+      "files": {
+        "building-worlds-no-1-cleaning-show-episode-01-cover.webp": {
+          "status": "disposition",
+          "code": "EXTERNAL_SOURCE_CONFLICT_FALLBACK",
+          "primary": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
+          "hash": "sha256:4424c176fab2f1c370f31ad81ea7adcfea832643b09d563dbd27691f763adca1"
+        },
+        "cordless-vacuum-trend-product-gap-2017-2019.webp": {
+          "status": "disposition",
+          "code": "EXTERNAL_SOURCE_CONFLICT_FALLBACK",
+          "primary": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
+          "hash": "sha256:0200ba74c4f4ba1b9df060e4baeaa8cc28fde2a0a4674786cb8716563fc6a7d0"
+        },
+        "world-clean-expo-2026-date-venue.webp": {
+          "status": "disposition",
+          "code": "EXTERNAL_SOURCE_CONFLICT_FALLBACK",
+          "primary": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
+          "hash": "sha256:48c143a3f17881feb0c3ff87421f26ebfac999802928832db34969fd345b4dad"
+        },
+        "you-denny-career-transition-2018-2019.webp": {
+          "status": "disposition",
+          "code": "EXTERNAL_SOURCE_CONFLICT_FALLBACK",
+          "primary": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
+          "hash": "sha256:cf97d7ef623ff416657af477ecad9bbdb3f64c1cc2d356f17305c95d48d48e8e"
+        },
+        "you-denny-cleaning-industry-career-2006-2018.webp": {
+          "status": "disposition",
+          "code": "EXTERNAL_SOURCE_CONFLICT_FALLBACK",
+          "primary": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
+          "hash": "sha256:27c4ff9a362db2a8df5abe0234df53f8f0dad06e6c064372c1fdebaa44edf59d"
+        }
+      }
+    },
+    "who-makes-lg-appliances-manufacturing-network": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/lg-appliances-manufacturing-network-cover.webp",
+          "hash": "sha256:ce6c45e9bf807396cbd43ab5c8ebe6a0c7fbb07514eaf2549eac65463dafd711"
+        },
+        "02-lg-home-appliance-solution-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/lg-home-appliance-solution-map.svg",
+          "hash": "sha256:90ec69a141412bf5d80012491ee16b8cb07ef7ed0cb7a4822d64c399fb71c521"
+        },
+        "03-lg-appliance-manufacturing-verification-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/lg-appliance-manufacturing-verification-map.svg",
+          "hash": "sha256:0d5a3e9f51c8d87f98ee26943610775c9c03eaff16d552490a5d8a7cb9e52681"
+        }
+      }
+    },
+    "who-makes-samsung-appliances-manufacturing-bespoke-ai": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/samsung-appliances-global-network-cover.webp",
+          "hash": "sha256:381bb6758cf6bfe817690e880d3031bb9866ae75b8d32a7b9e2041d0e4f774e4"
+        },
+        "02-samsung-appliance-business-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/samsung-appliance-business-map.svg",
+          "hash": "sha256:e5f0d4dd52ed04dd72bb087a87afc5240426dfa57c2605d1272b7f8cbfb97d71"
+        },
+        "03-samsung-appliance-buyer-verification-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/samsung-appliance-buyer-verification-map.svg",
+          "hash": "sha256:7ede6eae18e6735c47413739bd7266c0c4b4d6a2210c4499e6a2b7b4b02dd522"
+        }
+      }
+    },
+    "who-owns-ego-power-plus-chervon-manufacturing": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/ego-power-plus-chervon-cover.webp",
+          "hash": "sha256:4c66ba362560e4c140acdc8143ba1b37fa0fc7cc687dd040c1125145032f531d"
+        },
+        "02-ownership-platform-map.svg": {
+          "status": "matched",
+          "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
+          "primary": "/images/blog/ego-power-plus-ownership-platform-map.svg",
+          "hash": "sha256:eda1dcd27e3a134768f8b08cbc5e8cb6c0e9d06a6d14231730cdda18cebc093d"
+        },
+        "03-model-verification-map.svg": {
+          "status": "matched",
+          "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
+          "primary": "/images/blog/ego-power-plus-model-verification-map.svg",
+          "hash": "sha256:58de9a04e173a07107dd7a27005e2bd363cca85f1fb995505642dfc5d44a8dd0"
+        }
+      }
+    },
+    "who-owns-fisher-paykel-haier-manufacturing": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/fisher-paykel-haier-manufacturing-cover.webp",
+          "hash": "sha256:a1d16757ffd9bd1fffcb714b0d5abff2e95e76cfd6ecd3e4c4db57cb348f4be1"
+        },
+        "02-ownership-identity-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/fisher-paykel-ownership-identity-map.svg",
+          "hash": "sha256:904bc67da9aca336c8f49e374563267c58f3e34dd0a49e3640c11ce77a80d628"
+        },
+        "03-manufacturing-verification-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/fisher-paykel-manufacturing-verification-map.svg",
+          "hash": "sha256:a33617ae9ff927ca021d46c4e78e31540de52b1b3f6e228cc51b6a7debd1b32e"
+        }
+      }
+    },
+    "who-owns-ge-appliances-haier-manufacturing": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/ge-appliances-haier-manufacturing-cover.webp",
+          "hash": "sha256:00b8758115f5f19e056f89e9fe5243ec89b7d15de837375c46e0c79047199997"
+        },
+        "02-ownership-brand-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/ge-appliances-ownership-brand-map.svg",
+          "hash": "sha256:b39d983d57b8f5b2beca8f08ca5a0487e3b668419fac7d30a2641b7cb07f60a5"
+        },
+        "03-manufacturing-verification-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/ge-appliances-manufacturing-verification-map.svg",
+          "hash": "sha256:24a339ac0ee3cba0ca907e750e5395bcb9a8034f87895a860b475c5ebd8feb57"
+        }
+      }
+    },
+    "who-owns-haier-appliances-brand-portfolio": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/haier-smart-home-brand-portfolio-cover.webp",
+          "hash": "sha256:66d6c80de358b279bd8762ba099d42817f329f872daa5a5ba7bc1577af446ea6"
+        },
+        "02-haier-smart-home-brand-portfolio-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/haier-smart-home-brand-portfolio-map.svg",
+          "hash": "sha256:b97be3dc09ecd69d74731a6e784df75a65eb1fc5a5c44483f5d91a29c1988016"
+        },
+        "03-haier-regional-ownership-verification-map.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/haier-regional-ownership-verification-map.svg",
+          "hash": "sha256:41feaaf9720d14e94ed11d97145a760f72178cc16c5efb16a17db6d9ce4e940e"
+        }
+      }
+    },
+    "who-owns-hotpoint-appliances-regional-split": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/hotpoint-regional-brand-split-cover.webp",
+          "hash": "sha256:13e075c2ff11928e79fb23e7b6869ddea4e1985e05326ffb1ef8e1a1346df52c"
+        },
+        "02-regional-ownership-map.svg": {
+          "status": "matched",
+          "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
+          "primary": "/images/blog/hotpoint-regional-ownership-map.svg",
+          "hash": "sha256:3f1cb4d115bb48038a11af803cdfc14760ea7f2e34da43e220aa8c34e503d793"
+        },
+        "03-model-region-verification-map.svg": {
+          "status": "matched",
+          "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
+          "primary": "/images/blog/hotpoint-model-region-verification-map.svg",
+          "hash": "sha256:d0f002abe413bb13f4acf26909a90e2fa90d774f2c91f017fddc4e9847c66524"
+        }
+      }
+    },
+    "who-owns-midea-appliances-brand-portfolio": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/midea-appliance-brand-portfolio-cover.webp",
+          "hash": "sha256:af2da33ff7ca2e404d534863897b862077c2c80ca8fdc66d3a44723056c706a1"
+        },
+        "02-brand-relationship-map.png": {
+          "status": "disposition",
+          "code": "EXTERNAL_SOURCE_CONTENT_CONFLICT",
+          "primary": "/images/blog/midea-global-operating-network-map.svg",
+          "hash": "sha256:e23ba84239a062ed4647c1f94d6c1b31bdd00b55760ca1cbf0d266983833dd88"
+        },
+        "03-manufacturing-responsibility-map.png": {
+          "status": "disposition",
+          "code": "EXTERNAL_SOURCE_CONTENT_CONFLICT",
+          "primary": "/images/blog/midea-global-operating-network-map.svg",
+          "hash": "sha256:a9ce7f3d5c21593442f256d5d1f5d9e01c5d5dd24734da0cc911d65cac44504a"
+        }
+      }
+    },
+    "who-owns-toro-company-brands-manufacturing": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
+          "primary": "/images/blog/toro-company-brands-manufacturing-cover.webp",
+          "hash": "sha256:e439fbb565262a61566a72aca703267159721f851d6ed329e69c89235fcd5438"
+        },
+        "02-ownership-brand-map.svg": {
+          "status": "matched",
+          "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
+          "primary": "/images/blog/toro-company-ownership-brand-map.svg",
+          "hash": "sha256:97438e663dab309634755c5c7ac5e5d0b9f8fba469307bea9d99ddfdcffaf2d3"
+        },
+        "03-product-responsibility-map.svg": {
+          "status": "matched",
+          "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
+          "primary": "/images/blog/toro-product-responsibility-map.svg",
+          "hash": "sha256:740becd8bf8f1da495940bfe6d8f12f12e279e8ed48fbab25deabcc844f20bf3"
+        }
+      }
+    }
   }
 }

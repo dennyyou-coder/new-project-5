@@ -196,6 +196,32 @@ test("aspect ratio is preserved unless an explicit cover crop is supplied", asyn
   assert.deepEqual([cropped.width, cropped.height], [1600, 900]);
 });
 
+test("explicit cover crops accept tight 16:9 framing and reject square or portrait rectangles", async () => {
+  const valid = await createDesktopVariant({
+    input: fixtures.largeJpeg,
+    role: "cover",
+    kind: "photo",
+    crop: { left: 0, top: 94, width: 1800, height: 1012 }
+  });
+  assert.equal(valid.ok, true);
+
+  for (const crop of [
+    { left: 0, top: 0, width: 1000, height: 1000 },
+    { left: 0, top: 0, width: 600, height: 1000 }
+  ]) {
+    const rejected = await createDesktopVariant({
+      input: fixtures.largeJpeg,
+      filename: "wrong-cover-crop.jpg",
+      role: "cover",
+      kind: "photo",
+      crop
+    });
+    assert.equal(rejected.ok, false);
+    assert.equal(rejected.code, "COVER_CROP_RATIO_INVALID");
+    assert.match(rejected.recommendedAction, /16:9/i);
+  }
+});
+
 test("historical preservation mode keeps a non-16:9 cover uncropped", async () => {
   const output = await createDesktopVariant({
     input: fixtures.largeJpeg,

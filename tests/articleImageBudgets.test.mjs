@@ -9,9 +9,15 @@ import test from "node:test";
 import sharp from "sharp";
 
 import {
-  ARTICLE_IMAGE_LIMIT_BYTES
+  ARTICLE_IMAGE_LIMIT_BYTES,
+  ARTICLE_IMAGE_RUNTIME_LIMIT_BYTES
 } from "../scripts/article-images/config.mjs";
-import { buildManifest, serializeManifest } from "../scripts/article-images/manifest.mjs";
+import {
+  buildManifest,
+  buildRuntimeIndex,
+  serializeManifest,
+  serializeRuntimeIndex
+} from "../scripts/article-images/manifest.mjs";
 import { discoverArticleInventory } from "../scripts/article-images/references.mjs";
 import {
   verifyArticleBudget,
@@ -29,11 +35,12 @@ function temporaryProject(prefix = "wcb-article-image-verify-") {
   const contentRoot = path.join(projectRoot, "content");
   const publicRoot = path.join(projectRoot, "public");
   const manifestPath = path.join(projectRoot, "lib", "generated", "article-image-manifest.json");
+  const runtimePath = path.join(projectRoot, "lib", "generated", "article-image-runtime.json");
   const sourceLibraryRoot = path.join(projectRoot, "source-library");
   fs.mkdirSync(path.join(contentRoot, "insights"), { recursive: true });
   fs.mkdirSync(publicRoot, { recursive: true });
   fs.mkdirSync(sourceLibraryRoot, { recursive: true });
-  return { projectRoot, contentRoot, publicRoot, manifestPath, sourceLibraryRoot };
+  return { projectRoot, contentRoot, publicRoot, manifestPath, runtimePath, sourceLibraryRoot };
 }
 
 function sha256(file) {
@@ -84,6 +91,7 @@ async function manifestFacts(file, { role, kind = "photo", sourceHash, mobile } 
 function writeManifest(project, manifest, source = serializeManifest(manifest)) {
   fs.mkdirSync(path.dirname(project.manifestPath), { recursive: true });
   fs.writeFileSync(project.manifestPath, source);
+  fs.writeFileSync(project.runtimePath, serializeRuntimeIndex(buildRuntimeIndex(manifest)));
 }
 
 async function validManifestProject({ slug = "verified-article", mobile = true, exactSource = false } = {}) {
@@ -114,7 +122,14 @@ async function validManifestProject({ slug = "verified-article", mobile = true, 
     }),
     [body]: await manifestFacts(publicFile(project, body), { role: "body" })
   };
-  const manifest = buildManifest({ inventory, processedAssets, processorVersion: "1" });
+  const externalSources = exactSource ? {
+    [slug]: {
+      files: {
+        "01-cover.png": { status: "matched", primary: cover, hash: sha256(exactSourceFile) }
+      }
+    }
+  } : undefined;
+  const manifest = buildManifest({ inventory, processedAssets, processorVersion: "1", externalSources });
   writeManifest(project, manifest);
   return { ...project, slug, cover, body, coverMobile, articleFile, manifest, exactSourceFile };
 }
@@ -136,7 +151,18 @@ async function validPngChartSourceProject({ slug = "verified-chart" } = {}) {
       sourceHash: sha256(exactSourceFile)
     })
   };
-  const manifest = buildManifest({ inventory, processedAssets, processorVersion: "1" });
+  const manifest = buildManifest({
+    inventory,
+    processedAssets,
+    processorVersion: "1",
+    externalSources: {
+      [slug]: {
+        files: {
+          "03-market-chart.png": { status: "matched", primary: chart, hash: sha256(exactSourceFile) }
+        }
+      }
+    }
+  });
   writeManifest(project, manifest);
   return { ...project, slug, chart, articleFile, manifest, exactSourceFile };
 }
@@ -330,6 +356,20 @@ test("manifest verification accepts exact real facts and checks a present extern
   assert.ok(findingCodes(changedSource).includes("SOURCE_HASH_MISMATCH"));
 });
 
+test("manifest verification blocks runtime-index drift and enforces its committed size budget", async () => {
+  const project = await validManifestProject();
+  const valid = await verifyManifestFiles(project);
+  assert.deepEqual(valid.failures, []);
+  assert.ok(fs.statSync(project.runtimePath).size <= ARTICLE_IMAGE_RUNTIME_LIMIT_BYTES);
+
+  const runtime = JSON.parse(fs.readFileSync(project.runtimePath, "utf8"));
+  runtime.assets[project.cover].width += 1;
+  fs.writeFileSync(project.runtimePath, `${JSON.stringify(runtime)}\n`);
+  const drifted = await verifyManifestFiles(project);
+
+  assert.ok(findingCodes(drifted).includes("RUNTIME_INDEX_DRIFT"));
+});
+
 test("manifest verification checks an exact PNG chart source independent of publish extension", async () => {
   const project = await validPngChartSourceProject();
   const before = await verifyManifestFiles(project);
@@ -339,6 +379,45 @@ test("manifest verification checks an exact PNG chart source independent of publ
   const changed = await verifyManifestFiles(project);
 
   assert.ok(findingCodes(changed).includes("SOURCE_HASH_MISMATCH"));
+});
+
+test("external source audit hashes matched and disposition records and blocks unbound folder files", async () => {
+  const project = await validManifestProject({ slug: "external-audit", exactSource: true });
+  const folder = path.dirname(project.exactSourceFile);
+  const dispositionFile = path.join(folder, "02-conflicting-catalog.png");
+  await writeImage(dispositionFile, { width: 900, height: 600, format: "png", color: "#c75b34" });
+  project.manifest.externalSources = {
+    [project.slug]: {
+      files: {
+        "01-cover.png": {
+          status: "matched",
+          primary: project.cover,
+          hash: sha256(project.exactSourceFile)
+        },
+        "02-conflicting-catalog.png": {
+          status: "disposition",
+          code: "EXTERNAL_SOURCE_CONTENT_CONFLICT",
+          primary: project.body,
+          hash: sha256(dispositionFile)
+        }
+      }
+    }
+  };
+  writeManifest(project, project.manifest);
+
+  const valid = await verifyManifestFiles(project);
+  assert.deepEqual(valid.failures, []);
+  assert.deepEqual(valid.externalSources, { folders: 1, checked: 2, matched: 1, dispositions: 1 });
+
+  fs.appendFileSync(dispositionFile, "changed");
+  const changed = await verifyManifestFiles(project);
+  assert.ok(findingCodes(changed).includes("EXTERNAL_SOURCE_HASH_MISMATCH"));
+
+  project.manifest.externalSources[project.slug].files["02-conflicting-catalog.png"].hash = sha256(dispositionFile);
+  writeManifest(project, project.manifest);
+  await writeImage(path.join(folder, "03-unbound.png"), { width: 800, height: 500, format: "png" });
+  const unbound = await verifyManifestFiles(project);
+  assert.ok(findingCodes(unbound).includes("EXTERNAL_SOURCE_UNBOUND"));
 });
 
 test("manifest verification rejects ambiguous exact external source matches", async () => {
@@ -489,14 +568,14 @@ function builtHtml(project, overrides = {}) {
   const ogImage = overrides.ogImage ?? `https://worldcleanbiz.com${project.cover}`;
   const coverAttributes = overrides.coverAttributes ?? [
     attribute("src", project.cover),
-    attribute("srcset", `${cover.mobile.src} ${cover.mobile.width}w, ${project.cover} ${cover.width}w`),
+    cover.mobile ? attribute("srcset", `${cover.mobile.src} ${cover.mobile.width}w, ${project.cover} ${cover.width}w`) : null,
     attribute("sizes", "(max-width: 800px) 100vw, 1200px"),
     attribute("width", cover.width), attribute("height", cover.height),
-    attribute("loading", "eager"), attribute("fetchpriority", "high")
-  ].join(" ");
+    attribute("loading", "eager"), attribute("decoding", "async"), attribute("fetchpriority", "high")
+  ].filter(Boolean).join(" ");
   const bodyAttributes = overrides.bodyAttributes ?? [
     attribute("src", project.body), attribute("sizes", "(max-width: 800px) calc(100vw - 32px), 900px"),
-    attribute("width", body.width), attribute("height", body.height), attribute("loading", "lazy")
+    attribute("width", body.width), attribute("height", body.height), attribute("loading", "lazy"), attribute("decoding", "async")
   ].join(" ");
   return `<!doctype html><html><head><link rel="canonical" href="${canonical}"/><meta property="og:image" content="${ogImage}"/></head><body><header><img src="/logo.svg" fetchpriority="high"/></header><article class="article-prose blog-article-main"><figure class="blog-article-cover"><img ${coverAttributes}/></figure><div><figure class="article-inline-image"><img ${bodyAttributes}/></figure>${overrides.extraContent ?? ""}</div><footer><img src="/author.webp" loading="lazy"/></footer></article></body></html>`;
 }
@@ -518,6 +597,65 @@ test("built HTML verification accepts the real Next 15 layout and scopes priorit
 
   assert.deepEqual(result.failures, []);
   assert.deepEqual(result.summary, { articles: 1, articleImages: 2, responsiveImages: 1 });
+});
+
+test("built HTML verification enforces exact article image loading attributes and forbids fallback srcset", async (t) => {
+  const cases = [
+    {
+      name: "cover sizes drift",
+      code: "BUILT_SIZES_MISMATCH",
+      async project() { return validManifestProject(); },
+      override(project) {
+        const cover = project.manifest.assets[project.cover];
+        return { coverAttributes: `${attribute("src", project.cover)} ${attribute("srcset", `${cover.mobile.src} ${cover.mobile.width}w, ${project.cover} ${cover.width}w`)} ${attribute("sizes", "100vw")} ${attribute("width", cover.width)} ${attribute("height", cover.height)} ${attribute("loading", "eager")} ${attribute("decoding", "async")} ${attribute("fetchpriority", "high")}` };
+      }
+    },
+    {
+      name: "body sizes drift",
+      code: "BUILT_SIZES_MISMATCH",
+      async project() { return validManifestProject(); },
+      override(project) {
+        const body = project.manifest.assets[project.body];
+        return { bodyAttributes: `${attribute("src", project.body)} ${attribute("sizes", "900px")} ${attribute("width", body.width)} ${attribute("height", body.height)} ${attribute("loading", "lazy")} ${attribute("decoding", "async")}` };
+      }
+    },
+    {
+      name: "decoding drift",
+      code: "BUILT_DECODING_MISMATCH",
+      async project() { return validManifestProject(); },
+      override(project) {
+        const body = project.manifest.assets[project.body];
+        return { bodyAttributes: `${attribute("src", project.body)} ${attribute("sizes", "(max-width: 800px) calc(100vw - 32px), 900px")} ${attribute("width", body.width)} ${attribute("height", body.height)} ${attribute("loading", "lazy")}` };
+      }
+    },
+    {
+      name: "cover fetch priority drift",
+      code: "BUILT_COVER_PRIORITY_MISMATCH",
+      async project() { return validManifestProject(); },
+      override(project) {
+        const cover = project.manifest.assets[project.cover];
+        return { coverAttributes: `${attribute("src", project.cover)} ${attribute("srcset", `${cover.mobile.src} ${cover.mobile.width}w, ${project.cover} ${cover.width}w`)} ${attribute("sizes", "(max-width: 800px) 100vw, 1200px")} ${attribute("width", cover.width)} ${attribute("height", cover.height)} ${attribute("loading", "eager")} ${attribute("decoding", "async")}` };
+      }
+    },
+    {
+      name: "fallback srcset without mobile",
+      code: "BUILT_UNEXPECTED_SRCSET",
+      async project() { return validManifestProject({ mobile: false }); },
+      override(project) {
+        const cover = project.manifest.assets[project.cover];
+        return { coverAttributes: `${attribute("src", project.cover)} ${attribute("srcset", `${project.cover} ${cover.width}w`)} ${attribute("sizes", "(max-width: 800px) 100vw, 1200px")} ${attribute("width", cover.width)} ${attribute("height", cover.height)} ${attribute("loading", "eager")} ${attribute("decoding", "async")} ${attribute("fetchpriority", "high")}` };
+      }
+    }
+  ];
+
+  for (const scenario of cases) {
+    await t.test(scenario.name, async () => {
+      const project = await scenario.project();
+      writeBuiltArticle(project, builtHtml(project, scenario.override(project)));
+      const result = await verifyBuiltArticleImages(project);
+      assert.ok(findingCodes(result).includes(scenario.code), result.failures.map(({ message }) => message).join("\n"));
+    });
+  }
 });
 
 test("built HTML verification blocks a rendered local article image absent from the manifest", async () => {

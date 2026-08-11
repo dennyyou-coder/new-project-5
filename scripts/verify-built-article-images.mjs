@@ -5,6 +5,8 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 
 const SITE_URL = "https://worldcleanbiz.com";
+const COVER_SIZES = "(max-width: 800px) 100vw, 1200px";
+const BODY_SIZES = "(max-width: 800px) calc(100vw - 32px), 900px";
 
 function finding(code, message, { slug = "~build", url = "" } = {}) {
   return { code, slug, url, message };
@@ -219,6 +221,28 @@ export async function verifyBuiltArticleImages(options = {}) {
         ));
         continue;
       }
+      const expectedSizes = isDesktopCover ? COVER_SIZES : BODY_SIZES;
+      if (attributes.sizes !== expectedSizes) {
+        failures.push(finding(
+          "BUILT_SIZES_MISMATCH",
+          `${slug} ${url}: sizes actual ${String(attributes.sizes)}; allowed ${expectedSizes}.`,
+          { slug, url }
+        ));
+      }
+      if (attributes.decoding !== "async") {
+        failures.push(finding(
+          "BUILT_DECODING_MISMATCH",
+          `${slug} ${url}: decoding actual ${String(attributes.decoding)}; allowed async.`,
+          { slug, url }
+        ));
+      }
+      if (isDesktopCover && (attributes.loading !== "eager" || attributes.fetchpriority !== "high")) {
+        failures.push(finding(
+          "BUILT_COVER_PRIORITY_MISMATCH",
+          `${slug} ${url}: cover loading/fetchpriority actual ${String(attributes.loading)}/${String(attributes.fetchpriority)}; allowed eager/high.`,
+          { slug, url }
+        ));
+      }
       if (attributes.width && attributes.height
         && (Number(attributes.width) !== asset.width || Number(attributes.height) !== asset.height)) {
         failures.push(finding(
@@ -241,6 +265,12 @@ export async function verifyBuiltArticleImages(options = {}) {
             { slug, url }
           ));
         }
+      } else if (candidates.length) {
+        failures.push(finding(
+          "BUILT_UNEXPECTED_SRCSET",
+          `${slug} ${url}: srcset actual ${JSON.stringify(candidates)}; allowed no srcset because no mobile variant is registered.`,
+          { slug, url }
+        ));
       }
       for (const candidate of candidates) {
         reportMissingCandidate(failures, paths.publicRoot, slug, candidate.url, "srcset");

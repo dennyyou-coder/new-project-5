@@ -9,14 +9,21 @@ import {
   ARTICLE_BUDGETS,
   ARTICLE_IMAGE_BASELINE_BYTES,
   ARTICLE_IMAGE_LIMIT_BYTES,
+  ARTICLE_IMAGE_RUNTIME_LIMIT_BYTES,
   IMAGE_BUDGETS
 } from "./config.mjs";
-import { buildManifest, serializeManifest } from "./manifest.mjs";
+import {
+  buildManifest,
+  buildRuntimeIndex,
+  serializeManifest,
+  serializeRuntimeIndex
+} from "./manifest.mjs";
 import {
   readHistoricalKindClassifications,
   validateVisualArchiveEligibility
 } from "./historical-kinds.mjs";
 import { discoverArticleInventory } from "./references.mjs";
+import { svgIntrinsicDimensions } from "./svg.mjs";
 
 const DEFAULT_SOURCE_LIBRARY = "/Users/youdenny/Desktop/WorldCleanBizAssets";
 const HASH_PATTERN = /^sha256:[a-f0-9]{64}$/;
@@ -28,6 +35,7 @@ const GUARDED_IMAGE_DIRECTORIES = [
   "public/images/insights"
 ];
 const SOURCE_IMAGE = /\.(?:jpe?g|png|webp)$/i;
+const AUDIT_SOURCE_IMAGE = /\.(?:jpe?g|png|webp|svg)$/i;
 
 function finding(code, message, { slug = "~repository", url = "" } = {}) {
   return { code, slug, url, message };
@@ -180,6 +188,7 @@ function resolveVerificationPaths(options = {}) {
     contentRoot: path.resolve(options.contentRoot ?? path.join(projectRoot, "content")),
     publicRoot: path.resolve(options.publicRoot ?? path.join(projectRoot, "public")),
     manifestPath: path.resolve(options.manifestPath ?? path.join(projectRoot, "lib", "generated", "article-image-manifest.json")),
+    runtimePath: path.resolve(options.runtimePath ?? path.join(projectRoot, "lib", "generated", "article-image-runtime.json")),
     sourceLibraryRoot: options.sourceLibraryRoot === null
       ? null
       : path.resolve(options.sourceLibraryRoot ?? DEFAULT_SOURCE_LIBRARY)
@@ -256,6 +265,103 @@ function exactSourceFiles(sourceLibraryRoot, owners, url) {
     }
   }
   return files;
+}
+
+function verifyExternalSourceAudits({ paths, manifest, inventory, failures }) {
+  const audits = manifest?.externalSources && typeof manifest.externalSources === "object"
+    ? manifest.externalSources
+    : {};
+  const summary = { folders: Object.keys(audits).length, checked: 0, matched: 0, dispositions: 0 };
+  for (const audit of Object.values(audits)) {
+    for (const record of Object.values(audit?.files ?? {})) {
+      if (record?.status === "matched") summary.matched += 1;
+      if (record?.status === "disposition" || (typeof record?.code === "string" && record.code)) summary.dispositions += 1;
+    }
+  }
+  if (!paths.sourceLibraryRoot || !fs.existsSync(paths.sourceLibraryRoot)) return summary;
+
+  for (const slug of Object.keys(inventory.articles ?? {}).sort()) {
+    const folder = path.join(paths.sourceLibraryRoot, slug);
+    if (!fs.existsSync(folder) || !fs.statSync(folder).isDirectory()) continue;
+    const currentFiles = fs.readdirSync(folder, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && AUDIT_SOURCE_IMAGE.test(entry.name))
+      .map((entry) => entry.name)
+      .sort();
+    if (!currentFiles.length) continue;
+    if (!audits[slug]) {
+      failures.push(finding(
+        "EXTERNAL_SOURCE_AUDIT_MISSING",
+        `${slug}: external source folder contains ${currentFiles.length} image files but has no deterministic audit bindings or dispositions.`,
+        { slug }
+      ));
+    }
+  }
+
+  for (const slug of Object.keys(audits).sort()) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
+      failures.push(finding("EXTERNAL_SOURCE_AUDIT_INVALID", `${slug}: invalid external source audit slug.`, { slug }));
+      continue;
+    }
+    const folder = path.join(paths.sourceLibraryRoot, slug);
+    if (!fs.existsSync(folder) || !fs.statSync(folder).isDirectory()) {
+      failures.push(finding("EXTERNAL_SOURCE_FOLDER_MISSING", `${slug}: audited external source folder is missing.`, { slug }));
+      continue;
+    }
+    const records = audits[slug]?.files;
+    if (!records || typeof records !== "object" || Array.isArray(records)) {
+      failures.push(finding("EXTERNAL_SOURCE_AUDIT_INVALID", `${slug}: external source audit files must be an object.`, { slug }));
+      continue;
+    }
+    const currentFiles = fs.readdirSync(folder, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && AUDIT_SOURCE_IMAGE.test(entry.name))
+      .map((entry) => entry.name)
+      .sort();
+    const currentSet = new Set(currentFiles);
+    for (const basename of currentFiles) {
+      const record = records[basename];
+      if (!record) {
+        failures.push(finding(
+          "EXTERNAL_SOURCE_UNBOUND",
+          `${slug} ${basename}: external source file has no unique binding or explicit repository-primary disposition.`,
+          { slug, url: basename }
+        ));
+        continue;
+      }
+      if (record.status === "matched") summary.checked += 1;
+      else if (record.status === "disposition" && typeof record.code === "string" && record.code) summary.checked += 1;
+      else {
+        failures.push(finding(
+          "EXTERNAL_SOURCE_AUDIT_INVALID",
+          `${slug} ${basename}: status/code actual ${String(record.status)}/${String(record.code)}; allowed matched or disposition with a stable code.`,
+          { slug, url: basename }
+        ));
+      }
+      if (typeof record.primary !== "string" || !manifest.assets?.[record.primary]) {
+        failures.push(finding(
+          "EXTERNAL_SOURCE_PRIMARY_INVALID",
+          `${slug} ${basename}: primary actual ${String(record.primary)}; allowed a registered repository primary URL.`,
+          { slug, url: basename }
+        ));
+      }
+      const file = path.join(folder, basename);
+      const actualHash = sha256(file);
+      if (!HASH_PATTERN.test(String(record.hash ?? "")) || actualHash !== record.hash) {
+        failures.push(finding(
+          "EXTERNAL_SOURCE_HASH_MISMATCH",
+          `${slug} ${basename}: external source hash actual ${actualHash}; allowed recorded ${String(record.hash)}.`,
+          { slug, url: basename }
+        ));
+      }
+    }
+    for (const basename of Object.keys(records).filter((name) => !currentSet.has(name)).sort()) {
+      failures.push(finding(
+        "EXTERNAL_SOURCE_AUDIT_ORPHANED",
+        `${slug} ${basename}: audit record has no current external source file.`,
+        { slug, url: basename }
+      ));
+    }
+  }
+  return summary;
 }
 
 function validateHash(value, field, slug, url, failures) {
@@ -349,7 +455,13 @@ async function inspectManifestFile({ publicRoot, url, recorded, slug, mobile = f
   }
   let metadata;
   try {
-    metadata = await sharp(file).metadata();
+    if (path.extname(file).toLowerCase() === ".svg") {
+      const dimensions = svgIntrinsicDimensions(file);
+      if (!dimensions) throw new Error("missing positive intrinsic width/height or viewBox");
+      metadata = { ...dimensions, format: "svg" };
+    } else {
+      metadata = await sharp(file).metadata();
+    }
   } catch (error) {
     failures.push(finding(
       "UNREADABLE_IMAGE",
@@ -397,6 +509,7 @@ export async function verifyManifestFiles(options = {}) {
   const warnings = [];
   let manifest;
   let rawManifest;
+  let runtimeBytes = 0;
   if (!fs.existsSync(paths.manifestPath)) {
     failures.push(finding(
       "MISSING_MANIFEST",
@@ -413,6 +526,37 @@ export async function verifyManifestFiles(options = {}) {
       `Article image manifest is invalid: actual ${error.message}; allowed valid deterministic JSON.`
     ));
     return result(failures, warnings, { ...paths, manifest: null, inventory: null, verifiedAssets: 0, verifiedMobileAssets: 0 });
+  }
+
+  if (!fs.existsSync(paths.runtimePath)) {
+    failures.push(finding(
+      "RUNTIME_INDEX_MISSING",
+      `Article image runtime index is missing at ${paths.runtimePath}; allowed a committed deterministic runtime index.`
+    ));
+  } else {
+    try {
+      const rawRuntime = fs.readFileSync(paths.runtimePath, "utf8");
+      runtimeBytes = Buffer.byteLength(rawRuntime);
+      const runtime = JSON.parse(rawRuntime);
+      const expectedRuntimeSource = serializeRuntimeIndex(buildRuntimeIndex(manifest));
+      if (rawRuntime !== expectedRuntimeSource || JSON.stringify(runtime) !== JSON.stringify(buildRuntimeIndex(manifest))) {
+        failures.push(finding(
+          "RUNTIME_INDEX_DRIFT",
+          `Article image runtime index actual ${runtimeBytes} bytes differs from the deterministic full-manifest projection.`
+        ));
+      }
+      if (runtimeBytes > ARTICLE_IMAGE_RUNTIME_LIMIT_BYTES) {
+        failures.push(finding(
+          "RUNTIME_INDEX_BUDGET_EXCEEDED",
+          `Article image runtime index actual ${runtimeBytes} bytes; allowed ${ARTICLE_IMAGE_RUNTIME_LIMIT_BYTES} bytes.`
+        ));
+      }
+    } catch (error) {
+      failures.push(finding(
+        "RUNTIME_INDEX_INVALID",
+        `Article image runtime index is invalid: actual ${error.message}; allowed deterministic JSON.`
+      ));
+    }
   }
 
   let inventory;
@@ -437,6 +581,7 @@ export async function verifyManifestFiles(options = {}) {
   const owners = ownerMap(inventory);
   const inventoryUrls = new Set(Object.keys(inventory.assets));
   const manifestUrls = new Set(Object.keys(manifestAssets));
+  const externalSources = verifyExternalSourceAudits({ paths, manifest, inventory, failures });
 
   for (const url of [...manifestUrls].filter((item) => !inventoryUrls.has(item)).sort()) {
     failures.push(finding(
@@ -576,7 +721,8 @@ export async function verifyManifestFiles(options = {}) {
       const canonical = serializeManifest(buildManifest({
         inventory,
         processedAssets: manifestAssets,
-        processorVersion: manifest.processorVersion
+        processorVersion: manifest.processorVersion,
+        externalSources: manifest.externalSources
       }));
       if (rawManifest !== canonical) {
         failures.push(finding(
@@ -598,7 +744,9 @@ export async function verifyManifestFiles(options = {}) {
     inventory,
     historicalKindClassifications,
     verifiedAssets,
-    verifiedMobileAssets
+    verifiedMobileAssets,
+    runtimeBytes,
+    externalSources
   });
 }
 
@@ -754,7 +902,9 @@ export async function verifyArticleImages(options = {}) {
       articles: articleBudgets.length,
       assets: manifestReport.verifiedAssets,
       mobileAssets: manifestReport.verifiedMobileAssets,
-      repositoryBytes: repositoryReport.currentBytes
+      repositoryBytes: repositoryReport.currentBytes,
+      externalSources: manifestReport.externalSources ?? { folders: 0, checked: 0, matched: 0, dispositions: 0 },
+      runtimeBytes: manifestReport.runtimeBytes ?? 0
     }
   });
 }
