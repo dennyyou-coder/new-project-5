@@ -147,13 +147,15 @@ test("homepage trust section includes three formal testimonials", () => {
   assert.match(homeSource, /Founder · European Floorcare Brand/);
   assert.match(homeSource, /Sourcing Director · North American Distributor/);
   assert.equal((homeSource.match(/<blockquote>/g) || []).length, 3);
-  assert.match(cssSource, /testimonial-avatar-founder\.jpg/);
-  assert.match(cssSource, /testimonial-avatar-sourcing-director\.jpg/);
-  assert.match(cssSource, /\.home-v9-testimonial-avatar[^}]*background-size:\s*cover;/s);
-  assert.match(homeSource, /home-v9-avatar-founder/);
-  assert.match(homeSource, /home-v9-avatar-sourcing/);
-  assert.match(homeSource, /home-v9-avatar-product/);
-  assert.match(cssSource, /testimonial-avatar-product-director\.png/);
+  assert.equal(
+    (homeSource.match(/className="home-v9-testimonial-avatar"/g) || []).length,
+    3
+  );
+  assert.match(homeSource, /testimonial-avatar-founder\.jpg/);
+  assert.match(homeSource, /testimonial-avatar-sourcing-director\.jpg/);
+  assert.match(homeSource, /testimonial-avatar-product-director\.webp/);
+  assert.match(cssSource, /\.home-v9-testimonial-avatar[^}]*object-fit:\s*cover;/s);
+  assert.doesNotMatch(homeSource, /role="img"/);
 });
 
 test("homepage replaces the oversized business section with a compact conversion bar", () => {

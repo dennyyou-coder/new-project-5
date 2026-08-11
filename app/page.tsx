@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import "./styles/home.css";
 import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
@@ -181,7 +182,15 @@ export default function HomePage() {
             <div className="home-v9-product-board" aria-label="Cleaning industry product categories">
               {heroProducts.map((product) => (
                 <figure key={product.label}>
-                  <img src={product.image} alt={product.alt} />
+                  <Image
+                    src={product.image}
+                    alt={product.alt}
+                    width={1200}
+                    height={900}
+                    sizes="(max-width: 720px) 42vw, (max-width: 1050px) 21vw, 165px"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <figcaption>{product.label}</figcaption>
                 </figure>
               ))}
@@ -217,9 +226,12 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="home-v9-expo-campaign-media">
-            <img
+            <Image
               src="/images/expo/wcb-expo-2026-hero.webp"
               alt="WCB Expo visual showing cleaning appliances and an industry exhibition setting"
+              width={1672}
+              height={941}
+              sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1180px) 40vw, 480px"
               loading="lazy"
               decoding="async"
             />
@@ -242,7 +254,15 @@ export default function HomePage() {
           <div className="home-v9-category-grid">
             {heroProducts.map((product, index) => (
               <article key={product.label}>
-                <img src={product.image} alt={product.alt} loading="lazy" decoding="async" />
+                <Image
+                  src={product.image}
+                  alt={product.alt}
+                  width={1200}
+                  height={900}
+                  sizes="(max-width: 720px) 42vw, (max-width: 1050px) 21vw, 165px"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div>
                   <span>{String(index + 1).padStart(2, "0")}</span>
                   <h3>{product.label}</h3>
@@ -296,7 +316,15 @@ export default function HomePage() {
             {pathways.map((pathway) => (
               <article key={pathway.number}>
                 <div className="home-v9-pathway-media">
-                  <img src={pathway.image} alt={pathway.imageAlt} loading="lazy" decoding="async" />
+                  <Image
+                    src={pathway.image}
+                    alt={pathway.imageAlt}
+                    width={1440}
+                    height={960}
+                    sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1180px) 31vw, 370px"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <span>{pathway.number}</span>
                   <strong>{pathway.eyebrow}</strong>
                 </div>
@@ -336,15 +364,39 @@ export default function HomePage() {
           </div>
           <div className="home-v9-trust-gallery">
             <figure className="home-v9-trust-main">
-              <img src="/images/site-refresh/home/trust-denny-industry.webp" alt="Denny speaking at an industry forum" loading="lazy" decoding="async" />
+              <Image
+                src="/images/site-refresh/home/trust-denny-industry.webp"
+                alt="Denny speaking at an industry forum"
+                width={1400}
+                height={1050}
+                sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1050px) 55vw, 330px"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Denny You · Founder, World Clean Biz · Organizer, WCB Expo</figcaption>
             </figure>
             <figure>
-              <img src="/images/site-refresh/real/modern-factory.webp" alt="Modern manufacturing and supply-chain environment" loading="lazy" decoding="async" />
+              <Image
+                src="/images/site-refresh/real/modern-factory.webp"
+                alt="Modern manufacturing and supply-chain environment"
+                width={1440}
+                height={960}
+                sizes="(max-width: 720px) 50vw, (max-width: 1050px) 40vw, 245px"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Supplier Network</figcaption>
             </figure>
             <figure>
-              <img src="/images/site-refresh/real/exhibition-hall.webp" alt="International industry audience in a modern venue" loading="lazy" decoding="async" />
+              <Image
+                src="/images/site-refresh/real/exhibition-hall.webp"
+                alt="International industry audience in a modern venue"
+                width={1440}
+                height={960}
+                sizes="(max-width: 720px) 50vw, (max-width: 1050px) 40vw, 245px"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Industry Access</figcaption>
             </figure>
           </div>
@@ -358,7 +410,16 @@ export default function HomePage() {
           </div>
           <div className="home-v9-testimonial-grid">
             <article>
-              <div className="home-v9-testimonial-avatar home-v9-avatar-founder" role="img" aria-label="European floorcare brand founder" />
+              <Image
+                className="home-v9-testimonial-avatar"
+                src="/images/testimonials/testimonial-avatar-founder.jpg"
+                alt="European floorcare brand founder"
+                width={68}
+                height={68}
+                sizes="(max-width: 720px) 54px, 68px"
+                loading="lazy"
+                decoding="async"
+              />
               <span aria-hidden="true">“</span>
               <blockquote>
                 Denny sees both the product and business sides of cleaning. His
@@ -367,7 +428,16 @@ export default function HomePage() {
               <p>Founder · European Floorcare Brand</p>
             </article>
             <article>
-              <div className="home-v9-testimonial-avatar home-v9-avatar-sourcing" role="img" aria-label="North American distributor sourcing director" />
+              <Image
+                className="home-v9-testimonial-avatar"
+                src="/images/testimonials/testimonial-avatar-sourcing-director.jpg"
+                alt="North American distributor sourcing director"
+                width={68}
+                height={68}
+                sizes="(max-width: 720px) 54px, 68px"
+                loading="lazy"
+                decoding="async"
+              />
               <span aria-hidden="true">“</span>
               <blockquote>
                 Denny combines long-term industry experience with practical
@@ -376,7 +446,16 @@ export default function HomePage() {
               <p>Sourcing Director · North American Distributor</p>
             </article>
             <article>
-              <div className="home-v9-testimonial-avatar home-v9-avatar-product" role="img" aria-label="Asian cleaning appliance product director" />
+              <Image
+                className="home-v9-testimonial-avatar"
+                src="/images/testimonials/testimonial-avatar-product-director.webp"
+                alt="Asian cleaning appliance product director"
+                width={68}
+                height={68}
+                sizes="(max-width: 720px) 54px, 68px"
+                loading="lazy"
+                decoding="async"
+              />
               <span aria-hidden="true">“</span>
               <blockquote>
                 WCB added useful market context to our product discussions and
