@@ -1,0 +1,847 @@
+{
+  "status": "published",
+  "slug": "vacuum-cleaner-belt",
+  "name": "Vacuum Cleaner Belt",
+  "aliases": [
+    "vacuum drive belt",
+    "brush-roll belt",
+    "upright vacuum belt",
+    "agitator belt"
+  ],
+  "definition": "A flexible drive element that transfers motor or pulley torque to a vacuum cleaner brush roll; profile, effective length, width, elasticity, material and exact machine scope form a model-specific system.",
+  "includedScope": [
+    "Flat, elastic and permanent brush-roll drive belts",
+    "Upright and selected canister vacuum cleaner belt applications",
+    "Exact machine, brush-roll and pulley compatibility checks"
+  ],
+  "excludedScope": [
+    "Timing belts outside vacuum cleaner heads",
+    "Wet floor-washer roller drives",
+    "Motor or brush-roll performance claims beyond cited scope"
+  ],
+  "primaryApplications": [
+    "Upright vacuum brush drives",
+    "Powered carpet-agitator systems",
+    "OEM service replacement"
+  ],
+  "headline": "Belt profile, installed length and pulley system must match the exact vacuum model.",
+  "description": "This profile separates elastic, flat and long-life vacuum belt families and turns official parts evidence into practical fit, wear and replacement checks.",
+  "metaDescription": "Vacuum cleaner belt types, dimensions, materials, wear symptoms, drive interfaces and exact model compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/vacuum-cleaner-belt/hero.webp",
+  "heroImageAlt": "Oreck XL upright vacuum cleaner replacement belts",
+  "heroImageCaption": "Official Oreck XL replacement-belt product image on a WCB canvas; current model and part scope must be checked before ordering.",
+  "heroSourceUrl": "https://cdn.shopify.com/s/files/1/0447/4693/2386/files/0300604_front.jpg?v=1695148104",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-belt/architecture-family.webp",
+      "alt": "Oreck XL upright replacement belt package",
+      "caption": "Official Oreck replacement-belt image showing the flat belt family and packaged service identity.",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0447/4693/2386/files/0300604_front.jpg?v=1695148104"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-belt/performance-boundaries.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-belt/performance-boundaries-mobile.svg",
+      "alt": "Vacuum Cleaner Belt performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide",
+        "bissell-replacement"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-belt/application-reference.webp",
+      "alt": "Hoover Style AG vacuum belt two-pack",
+      "caption": "Official Hoover AH20075 belt image on a WCB canvas; the product code, machine list and current regional scope control fit.",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0484/2428/8407/files/AH20075_ATF_1.jpg?v=1718032276"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-belt/compatibility-gate.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-belt/compatibility-gate-mobile.svg",
+      "alt": "Vacuum Cleaner Belt compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide",
+        "bissell-replacement"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Drive role",
+      "value": "The belt transfers rotation to the brush roll; a stretched or broken belt can slow or stop agitation",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "oreck-faq",
+        "riccar-r10cv"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Part boundary",
+      "value": "Official replacement pages identify belts by product code and named machine scope",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "bissell-powerglide",
+        "bissell-replacement"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Service boundary",
+      "value": "Replacement procedures require isolation and exact routing around the motor and brush-roll pulleys",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "riccar-r10cv",
+        "oreck-faq"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Torque transfer",
+      "role": "Transfers motor or pulley rotation to the brush roll.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 2,
+      "name": "Speed relationship",
+      "role": "Its installed geometry and elasticity affect brush-roll speed under load.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 3,
+      "name": "Slip protection",
+      "role": "Selected elastic designs can slip or stretch when load rises, but the behavior is product-specific.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 4,
+      "name": "Service identity",
+      "role": "The belt is a wear part whose part number and machine list define the approved replacement.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Elastic stretch belt",
+      "operatingPrinciple": "An elastomeric loop is tensioned by installation over fixed pulleys.",
+      "applicationBoundary": "Named upright vacuum and brush-roll drive only",
+      "benefits": [
+        "Simple compact drive"
+      ],
+      "limitations": [
+        "Length and elasticity change with age and heat"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Flat corded belt",
+      "operatingPrinciple": "A flat reinforced belt transfers torque with limited stretch.",
+      "applicationBoundary": "Named corded-vacuum pulley system",
+      "benefits": [
+        "Stable drive geometry"
+      ],
+      "limitations": [
+        "Width, reinforcement and pulley alignment are model-specific"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Long-life or permanent belt",
+      "operatingPrinciple": "A manufacturer-designated durable belt operates within a matching drive system.",
+      "applicationBoundary": "Only the named machine generation",
+      "benefits": [
+        "Reduced routine replacement in the documented system"
+      ],
+      "limitations": [
+        "The label does not make it universal or maintenance-free"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Part number and revision",
+      "purchasingMeaning": "Controls exact service identity",
+      "reportingBoundary": "Retain regional suffixes and supersession evidence",
+      "comparisonCaution": "Do not approve by package color or generic style number alone.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Cross-section and width",
+      "purchasingMeaning": "Defines pulley seating and lateral tracking",
+      "reportingBoundary": "Measure loaded and unloaded profile consistently",
+      "comparisonCaution": "A belt may fit over a pulley yet track incorrectly.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Effective installed length",
+      "purchasingMeaning": "Defines tension, slip and bearing load",
+      "reportingBoundary": "Use manufacturer datum and elastic state",
+      "comparisonCaution": "Free length alone is not a compatibility test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Material and reinforcement",
+      "purchasingMeaning": "Controls stretch, heat and wear behavior",
+      "reportingBoundary": "Retain compound and cord construction when disclosed",
+      "comparisonCaution": "Visual similarity cannot establish fatigue life.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Routine upright replacement",
+      "wcbAssessment": "Use the current manufacturer-listed belt for the exact model and brush-roll assembly.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "High hair-load service",
+      "wcbAssessment": "Verify belt inspection interval, brush-roll freedom and pulley condition together.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Alternative sourcing qualification",
+      "wcbAssessment": "Freeze geometry, material, tension and endurance acceptance tests before approval.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact identity",
+      "requiredMatch": "Current belt part number, supersession and market",
+      "why": "Style labels can cover different machine lists.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Machine and brush roll",
+      "requiredMatch": "Exact vacuum model, serial range and installed agitator",
+      "why": "Related models can use different pulley geometry.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Mechanical geometry",
+      "requiredMatch": "Width, profile, effective length, pulley diameter and routing",
+      "why": "Wrong tension can slip or overload bearings.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Material and duty",
+      "requiredMatch": "Compound, reinforcement, temperature and replacement interval",
+      "why": "A visually matching loop may age differently.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Brush roll stops or slows",
+      "possibleCauses": [
+        "Broken or stretched belt",
+        "Jammed brush roll or worn pulley"
+      ],
+      "safetyBoundary": "Disconnect power before accessing the nozzle.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Burning smell or black dust",
+      "possibleCauses": [
+        "Belt slip",
+        "Incorrect routing or seized brush roll"
+      ],
+      "safetyBoundary": "Stop use immediately and inspect the complete drive.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Belt repeatedly leaves pulley",
+      "possibleCauses": [
+        "Wrong profile or width",
+        "Misaligned or damaged pulley"
+      ],
+      "safetyBoundary": "Do not operate until the cause is corrected with approved parts.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Hoover",
+      "familyName": "AH20075 Style AG",
+      "architecture": "Replacement belt two-pack",
+      "applicationScope": "Named Hoover product-code scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Hoover US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Oreck",
+      "familyName": "0300604 XL Upright",
+      "architecture": "Flat replacement belt",
+      "applicationScope": "Named Oreck XL upright scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Oreck US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "oreck-xl"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Oreck",
+      "familyName": "CH95519 flat corded belt",
+      "architecture": "Corded flat-belt family",
+      "applicationScope": "Named parts collection scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Oreck US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Oreck",
+      "familyName": "Permanent Belt After 2019",
+      "architecture": "Long-life belt family",
+      "applicationScope": "Named post-2019 machine scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Oreck US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "oreck-parts",
+        "oreck-faq"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "BISSELL",
+      "familyName": "1604406 PowerGlide belt",
+      "architecture": "Upright drive belt",
+      "applicationScope": "Named PowerGlide replacement scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "BISSELL US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "BISSELL",
+      "familyName": "2031093 Replacement Vacuum Belt",
+      "architecture": "Model-listed service belt",
+      "applicationScope": "Named BISSELL product scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "BISSELL US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "bissell-replacement"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "BISSELL",
+      "familyName": "Style 9 Drive Belt",
+      "architecture": "Replacement belt two-pack",
+      "applicationScope": "PowerLifter Pet Rewind 1792 parts scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "BISSELL US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "bissell-1792"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact identity",
+      "reason": "Style labels can cover different machine lists.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Machine and brush roll",
+      "reason": "Related models can use different pulley geometry.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Mechanical geometry",
+      "reason": "Wrong tension can slip or overload bearings.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Material and duty",
+      "reason": "A visually matching loop may age differently.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-xl",
+        "oreck-parts",
+        "oreck-faq",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60312-1",
+      "jurisdiction": "International",
+      "version": "2010+A1:2011",
+      "applicability": "Performance-method context for dry household vacuums; not a belt compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60312"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-11",
+      "title": "Official service ecosystems continue to separate multiple belt families",
+      "summary": "Reviewed Hoover, Oreck and BISSELL sources publish distinct product codes and machine scopes rather than a universal vacuum belt.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-ah20075",
+        "oreck-parts",
+        "bissell-powerglide"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hoover-ah20075",
+      "title": "Belt 2 Pack, Style AG, AH20075",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/products/belt-2-pack-12",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "oreck-xl",
+      "title": "Oreck Commercial XL Upright Vacuum Replacement Belts",
+      "publisher": "Oreck",
+      "sourceType": "manufacturer",
+      "url": "https://oreck.com/products/oreck-commercial-xl-upright-vacuum-replacement-belts/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "oreck-parts",
+      "title": "Oreck vacuum parts and accessories",
+      "publisher": "Oreck",
+      "sourceType": "manufacturer",
+      "url": "https://oreck.com/collections/parts-accessories-vacuums",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "oreck-faq",
+      "title": "Oreck frequently asked questions: vacuum belts",
+      "publisher": "Oreck",
+      "sourceType": "technical",
+      "url": "https://oreck.com/pages/frequently-asked-questions",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "bissell-powerglide",
+      "title": "Belt for PowerGlide Upright Vacuums 1604406",
+      "publisher": "BISSELL",
+      "sourceType": "manufacturer",
+      "url": "https://www.bissell.com/en-us/product/belt-for-powerglide-upright-vacuums-1604406.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "bissell-replacement",
+      "title": "Replacement Vacuum Belt 2031093",
+      "publisher": "BISSELL",
+      "sourceType": "manufacturer",
+      "url": "https://www.bissell.com/en-us/product/replacement-vacuum-belt-for-bissell-vacuums-2031093.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "bissell-1792",
+      "title": "PowerLifter Pet Rewind 1792 parts",
+      "publisher": "BISSELL",
+      "sourceType": "manufacturer",
+      "url": "https://www.bissell.com/en-us/parts/1792/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "riccar-r10cv",
+      "title": "Riccar R10CV owner manual",
+      "publisher": "Riccar",
+      "sourceType": "manual",
+      "url": "https://www.riccar.com/media/wysiwyg/riccar/Manuals/R10CV_Manual.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "iec-60312",
+      "title": "IEC 60312-1 dry vacuum performance methods",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/1335",
+      "accessedAt": "2026-08-12"
+    }
+  ],
+  "publishedAt": "2026-08-12",
+  "lastVerified": "2026-08-12",
+  "lastModified": "2026-08-12"
+}
