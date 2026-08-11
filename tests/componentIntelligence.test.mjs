@@ -124,14 +124,17 @@ test("published loader sitemap and schemas expose only safe semantics", () => {
     "floor-scrubber-brush",
     "floor-scrubber-pad",
     "floor-scrubber-squeegee-blade",
+    "floor-scrubber-vacuum-motor",
     "pressure-washer-hose",
     "pressure-washer-nozzle",
     "pressure-washer-pump",
     "pressure-washer-spray-gun",
+    "pressure-washer-unloader-valve",
     "vacuum-cleaner-battery",
     "vacuum-cleaner-belt",
     "vacuum-cleaner-brush-roll",
     "vacuum-cleaner-filter",
+    "vacuum-cleaner-hose",
     "vacuum-cleaner-motor"
   ]);
   assert.deepEqual(buildComponentSitemapEntries([validProfile], "https://worldcleanbiz.com"), [{
@@ -277,6 +280,38 @@ test("component batch 04 meets evidence diversity and visual gates", async () =>
 
 test("component batch 05 meets evidence diversity and visual gates", async () => {
   for (const slug of ["vacuum-cleaner-belt", "pressure-washer-nozzle", "floor-scrubber-pad"]) {
+    const profile = getComponentProfiles().find((candidate) => candidate?.slug === slug);
+    assert.ok(profile, `${slug} profile is required`);
+    assert.equal(profile.status, "published");
+    assert.deepEqual(validateComponentProfile(profile), []);
+    assert.equal(profile.contentVisuals.length, 4);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo").length, 2);
+    assert.equal(profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram").length, 2);
+    assert.ok(profile.sources.length >= 5);
+    assert.ok(profile.representativeFamilies.length >= 6 && profile.representativeFamilies.length <= 8);
+    assert.ok(new Set(profile.representativeFamilies.map(({ manufacturer }) => manufacturer)).size >= 3);
+
+    const hero = await sharp(path.join(process.cwd(), "public", profile.heroImage)).metadata();
+    assert.equal(hero.format, "webp");
+    assert.ok((hero.width ?? 0) >= 1600 && (hero.height ?? 0) >= 1000);
+    for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "official-photo")) {
+      const metadata = await sharp(path.join(process.cwd(), "public", visual.src)).metadata();
+      assert.equal(metadata.format, "webp");
+      assert.ok((metadata.width ?? 0) >= 1500 && (metadata.height ?? 0) >= 900);
+      assert.match(visual.sourceUrl, /^https:\/\//);
+    }
+    for (const visual of profile.contentVisuals.filter(({ visualType }) => visualType === "wcb-diagram")) {
+      assert.match(fs.readFileSync(path.join(process.cwd(), "public", visual.src), "utf8"), /<svg/);
+      assert.match(fs.readFileSync(path.join(process.cwd(), "public", visual.mobileSrc), "utf8"), /<svg/);
+    }
+    const compatibility = fs.readFileSync(path.join(process.cwd(), "public/images/components", slug, "compatibility-gate.svg"), "utf8");
+    assert.match(compatibility, /Physical resemblance/);
+    assert.match(compatibility, /matching wattage/);
+  }
+});
+
+test("component batch 06 meets evidence diversity and visual gates", async () => {
+  for (const slug of ["vacuum-cleaner-hose", "pressure-washer-unloader-valve", "floor-scrubber-vacuum-motor"]) {
     const profile = getComponentProfiles().find((candidate) => candidate?.slug === slug);
     assert.ok(profile, `${slug} profile is required`);
     assert.equal(profile.status, "published");
