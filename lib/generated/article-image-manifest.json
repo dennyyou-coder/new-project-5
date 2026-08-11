@@ -2996,6 +2996,17 @@
         "outputHash": "sha256:90ab644fa0fee52557c8a63a00287c25a8534a9e1cf849db193114a5f5db6729"
       }
     },
+    "/images/blog/building-worlds-no-1-cleaning-show-episode-04-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 189016,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:706ba99aa29b9724f409038ae964c1a9a1e6a6d06040cf5686155c46f2d3e9bd",
+      "outputHash": "sha256:706ba99aa29b9724f409038ae964c1a9a1e6a6d06040cf5686155c46f2d3e9bd"
+    },
     "/images/blog/car-vacuum-cleaner-buying-decision-map.webp": {
       "role": "cover",
       "kind": "photo",
@@ -11898,6 +11909,160 @@
         "bytes": 61998,
         "outputHash": "sha256:29bd0e124def6bf58a426c55d43d362029338a295af7a550c09f80438abadb7a"
       }
+    },
+    "/images/blog/wcb-episode-04-amazon-logistics-center.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 760,
+      "height": 391,
+      "bytes": 25870,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:7dacf226f23e9e515116984438c059155f11f7bc71575f55e0a9b87b9f5c3f6b",
+      "outputHash": "sha256:7dacf226f23e9e515116984438c059155f11f7bc71575f55e0a9b87b9f5c3f6b"
+    },
+    "/images/blog/wcb-episode-04-bobot-electric-mop.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 345,
+      "height": 146,
+      "bytes": 8322,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:886079cf6e34330ac099c74afa11c2275d4caf0675a256e147d0cf2acbd22d49",
+      "outputHash": "sha256:886079cf6e34330ac099c74afa11c2275d4caf0675a256e147d0cf2acbd22d49"
+    },
+    "/images/blog/wcb-episode-04-cctv-floor-washer-review-investigation.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 882,
+      "height": 506,
+      "bytes": 76288,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:113873eaf138bec423439493b41734db9c91cc34053052dce14c783ee93eea3f",
+      "outputHash": "sha256:113873eaf138bec423439493b41734db9c91cc34053052dce14c783ee93eea3f"
+    },
+    "/images/blog/wcb-episode-04-dechang-fujia-ipo.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1056,
+      "height": 342,
+      "bytes": 13156,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:2b43d10b465a90692cbafd3ef9fde351b2bf0ad5642ebcf8930d20fac6469ff3",
+      "outputHash": "sha256:2b43d10b465a90692cbafd3ef9fde351b2bf0ad5642ebcf8930d20fac6469ff3"
+    },
+    "/images/blog/wcb-episode-04-denny-floor-washer-review-account.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 739,
+      "height": 1600,
+      "bytes": 164734,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:7818c502a6ca5c47268a4f2bd0a2224fd7b673c5cff8b26e90956865039f6eee",
+      "outputHash": "sha256:7818c502a6ca5c47268a4f2bd0a2224fd7b673c5cff8b26e90956865039f6eee"
+    },
+    "/images/blog/wcb-episode-04-dreame-floor-washer-lineup.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 547,
+      "height": 365,
+      "bytes": 29096,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:5903cd21028828ce29cfb695713edd04c83be2a68a0139902c13e275fa1196a3",
+      "outputHash": "sha256:5903cd21028828ce29cfb695713edd04c83be2a68a0139902c13e275fa1196a3"
+    },
+    "/images/blog/wcb-episode-04-dreame-innovation-forum.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 509,
+      "height": 392,
+      "bytes": 36456,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:b4e45916b3083ffeb9447bf17eee04a8b9e1a4d5cd62b628c6b58e996ace4272",
+      "outputHash": "sha256:b4e45916b3083ffeb9447bf17eee04a8b9e1a4d5cd62b628c6b58e996ace4272"
+    },
+    "/images/blog/wcb-episode-04-ecovacs-headquarters.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 275,
+      "height": 183,
+      "bytes": 12714,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:c79b211f6508894d144f7226168f1e37b177dfee7c36640a391cfba606a69dee",
+      "outputHash": "sha256:c79b211f6508894d144f7226168f1e37b177dfee7c36640a391cfba606a69dee"
+    },
+    "/images/blog/wcb-episode-04-ecovacs-x1-omni-station.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 770,
+      "height": 778,
+      "bytes": 43888,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:5d4294d201dc45eb48181c76d07cdf28bc2dbde9b82d2012d60bcb3761c8344b",
+      "outputHash": "sha256:5d4294d201dc45eb48181c76d07cdf28bc2dbde9b82d2012d60bcb3761c8344b"
+    },
+    "/images/blog/wcb-episode-04-hizero-diisea-cleaning-routes.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1478,
+      "bytes": 40862,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:6fff639a4d22d2994165f20a0e30fe60f2dc5a2c5e1d5b834f96b46850b06a5e",
+      "outputHash": "sha256:6fff639a4d22d2994165f20a0e30fe60f2dc5a2c5e1d5b834f96b46850b06a5e"
+    },
+    "/images/blog/wcb-episode-04-roborock-headquarters.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 515,
+      "height": 388,
+      "bytes": 27134,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:51a135ae147c95279f7b2fcf3a5e5c6fdfe400dd162f9fa22cdaadaab98aee00",
+      "outputHash": "sha256:51a135ae147c95279f7b2fcf3a5e5c6fdfe400dd162f9fa22cdaadaab98aee00"
+    },
+    "/images/blog/wcb-episode-04-tineco-floor-washer-lineup.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 830,
+      "height": 554,
+      "bytes": 41858,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:03f4e73fe5c051ead76f9d48a1fca07bf36129fe7fef912c449d9b72c89e00b1",
+      "outputHash": "sha256:03f4e73fe5c051ead76f9d48a1fca07bf36129fe7fef912c449d9b72c89e00b1"
+    },
+    "/images/blog/wcb-episode-04-uwant-founder-launch.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 548,
+      "height": 364,
+      "bytes": 20852,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:c63903234a895b9bef04e412e7564e6abe7d145eb2e2a2f2ea14f68fce03ad9f",
+      "outputHash": "sha256:c63903234a895b9bef04e412e7564e6abe7d145eb2e2a2f2ea14f68fce03ad9f"
+    },
+    "/images/blog/wcb-episode-04-xwow-floor-washing-robot.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 356,
+      "height": 561,
+      "bytes": 13326,
+      "format": "webp",
+      "quality": 100,
+      "sourceHash": "sha256:7e94c3dc058fb672b933e5dfd420ca11a87cdfbaf4ef8b5223a535da96bf7d1f",
+      "outputHash": "sha256:7e94c3dc058fb672b933e5dfd420ca11a87cdfbaf4ef8b5223a535da96bf7d1f"
     },
     "/images/blog/wheels-of-fate-turn-toward-2020.webp": {
       "role": "body",
@@ -28127,6 +28292,26 @@
         "/images/blog/shenzhen-bay-one-cross-border-ecommerce.webp",
         "/images/blog/you-denny-ni-zugen-interview.webp",
         "/images/blog/dreame-founder-yu-hao-2020.webp"
+      ]
+    },
+    "building-worlds-no-1-cleaning-show-from-scratch-episode-04": {
+      "budgetClass": "standard",
+      "cover": "/images/blog/building-worlds-no-1-cleaning-show-episode-04-cover.webp",
+      "body": [
+        "/images/blog/wcb-episode-04-ecovacs-headquarters.webp",
+        "/images/blog/wcb-episode-04-tineco-floor-washer-lineup.webp",
+        "/images/blog/wcb-episode-04-ecovacs-x1-omni-station.webp",
+        "/images/blog/wcb-episode-04-dreame-innovation-forum.webp",
+        "/images/blog/wcb-episode-04-dreame-floor-washer-lineup.webp",
+        "/images/blog/wcb-episode-04-roborock-headquarters.webp",
+        "/images/blog/wcb-episode-04-xwow-floor-washing-robot.webp",
+        "/images/blog/wcb-episode-04-uwant-founder-launch.webp",
+        "/images/blog/wcb-episode-04-hizero-diisea-cleaning-routes.webp",
+        "/images/blog/wcb-episode-04-bobot-electric-mop.webp",
+        "/images/blog/wcb-episode-04-dechang-fujia-ipo.webp",
+        "/images/blog/wcb-episode-04-denny-floor-washer-review-account.webp",
+        "/images/blog/wcb-episode-04-cctv-floor-washer-review-investigation.webp",
+        "/images/blog/wcb-episode-04-amazon-logistics-center.webp"
       ]
     },
     "can-dji-become-top-three-in-robot-vacuums": {
