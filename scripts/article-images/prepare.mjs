@@ -476,7 +476,17 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
     .filter(({ sequence, basename }) => sequence > 1 && !referencedDescriptors.has(basename));
   for (const descriptor of unmatchedDescriptors) {
     const sequenceReference = article.body.find((reference) => sequenceFromReference(reference) === descriptor.sequence);
-    const primary = sequenceReference ?? article.body[0];
+    const primary = sequenceReference ?? article.body[0] ?? article.cover;
+    if (!primary) {
+      throw failure(`External source descriptor ${descriptor.basename} for ${slug} has no repository cover or body primary owner.`, {
+        code: "HISTORICAL_REPOSITORY_PRIMARY_OWNERSHIP_MISSING",
+        slug,
+        imageName: descriptor.basename,
+        observedValue: descriptor.basename,
+        permittedValue: "a referenced repository cover or body primary",
+        recommendedAction: "Add or restore an unambiguous repository primary reference before historical validation."
+      });
+    }
     warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${primary} sources=${descriptor.basename} reason=UNREFERENCED_EXTERNAL_DESCRIPTOR repository-primary-preserved`);
   }
   return warnings;

@@ -1011,6 +1011,48 @@ test("historical validation names the real external descriptor when only a cover
   ]);
 });
 
+test("historical validation assigns an unreferenced external body descriptor to the real repository cover", async () => {
+  const project = temporaryProject();
+  const slug = "historical-cover-owns-unreferenced-body-source";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  writeArticle(project, slug, { cover, body: [] });
+  await writeImage(publicFile(project, cover), { format: "webp" });
+  const folder = sourceFolder(project, slug);
+  await writeImage(path.join(folder, "01-cover.png"));
+  await writeImage(path.join(folder, "02-external-body.png"));
+
+  const result = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+
+  assert.deepEqual(result.articles[0].warnings, [
+    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${cover} sources=02-external-body.png reason=UNREFERENCED_EXTERNAL_DESCRIPTOR repository-primary-preserved`
+  ]);
+});
+
+test("historical validation blocks an external body descriptor without any repository primary owner", async () => {
+  const project = temporaryProject();
+  const slug = "historical-unowned-external-body";
+  writeArticle(project, slug, { cover: "https://example.com/external-cover.jpg", body: [] });
+  const folder = sourceFolder(project, slug);
+  await writeImage(path.join(folder, "01-cover.png"));
+  await writeImage(path.join(folder, "02-external-body.png"));
+
+  await assert.rejects(
+    prepareAllArticleImages({
+      projectRoot: project.projectRoot,
+      sourceLibraryRoot: project.sourceLibraryRoot,
+      dryRun: true
+    }),
+    (error) => error instanceof ArticleImagePreparationError
+      && error.code === "HISTORICAL_REPOSITORY_PRIMARY_OWNERSHIP_MISSING"
+      && error.slug === slug
+      && error.imageName === "02-external-body.png"
+  );
+});
+
 test("historical validation records a true same-sequence semantic match and its real format conflict", async () => {
   const project = temporaryProject();
   const slug = "historical-sequence-with-semantic-identity";
