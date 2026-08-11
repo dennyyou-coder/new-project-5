@@ -162,7 +162,7 @@ The final guarded repository contains 3,391 files / 253,008,125 bytes. This is 3
 
 Fresh final verification:
 
-- Complete repository suite: passed, 491/491, using the required path-alias command exactly once after upstream integration.
+- Complete repository suite: the Task 8 pre-fix run passed 491/491 using the required path-alias command exactly once; after the CSS test was added, the reviewer independently reran the final tree and passed 492/492.
 - Content classification: passed.
 - SEO audit: passed, 7/7.
 - Asset performance: passed, 3/3.
@@ -174,6 +174,12 @@ Fresh final verification:
 Browser QA exposed one real integration regression before completion: Blog article presentation selectors were stranded in About route CSS, so production article pages rendered without their intended cover and prose styles. A route-graph regression test failed first. The fix moved the existing 9,161-byte article block out of `about.css` into Blog-only `article.css`, added the Blog layout import, and set constrained body images to `height: auto`; it did not add the About stylesheet globally or duplicate that block. Focused GREEN results were 12/12 for content experience and 26/26 for adjacent article/blog/About coverage. The first successful build is therefore superseded by the fresh post-fix build above.
 
 The only local console error was the expected `/_vercel/insights/script.js` 404 from running Vercel Web Analytics outside Vercel. No target-route runtime or image error was found.
+
+### Task 8 Fix Round 1 — verification record corrections
+
+- Removed the pre-existing Markdown trailing spaces from the design document date, allowing the branch-wide diff check to validate the complete feature diff.
+- Corrected the full-suite record without inventing a rerun: Task 8's original pre-fix run was 491/491; the reviewer independently reran the final tree after the new CSS route-graph test and passed 492/492.
+- This round changed documentation and formatting only. It did not modify code, tests, images, the manifest, or article content, and it did not rerun the build, browser QA, or full suite.
 
 ## Baseline largest 30 referenced images
 

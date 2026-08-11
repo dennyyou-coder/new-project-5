@@ -29,12 +29,14 @@ After integration:
 
 ## Verification commands and results
 
-The full Node suite was run exactly once after upstream integration:
+The full Node suite was first run exactly once after upstream integration, before the browser-discovered CSS regression and its new route-graph test:
 
 ```text
 node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/*.test.mjs
 PASS 491/491
 ```
+
+After the CSS regression fix and its additional test were committed, the reviewer independently reran the complete final-tree suite and recorded `PASS 492/492`. Task 8 did not perform or claim a second local full-suite run.
 
 Focused gates:
 
@@ -140,3 +142,9 @@ Task 8's new implementation diff is limited to:
 - this Task 8 report and the fresh Task 8 section in the migration report
 
 The complete branch diff remains within the planned article-image pipeline scope. No push, pull request, Preview, merge to `main`, or production deployment was performed.
+
+## Fix Round 1 — verification record corrections
+
+- Removed the pre-existing Markdown trailing spaces from the design document date so the branch-wide `git diff --check origin/main...HEAD` gate can pass.
+- Corrected the complete-suite chronology: Task 8's pre-fix full run was 491/491; the reviewer independently verified the final tree, including the newly added CSS route-graph test, at 492/492.
+- This correction changed documentation and formatting only. No code, test, image, manifest, or content file changed, and no build, browser QA, or full suite was rerun for this documentation-only round.
