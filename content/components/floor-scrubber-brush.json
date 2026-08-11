@@ -1,0 +1,844 @@
+{
+  "status": "published",
+  "slug": "floor-scrubber-brush",
+  "name": "Floor Scrubber Brush",
+  "aliases": [
+    "scrubber-dryer disc brush",
+    "cylindrical scrub brush",
+    "floor machine pad driver",
+    "orbital scrub head"
+  ],
+  "definition": "A floor-contact cleaning element inside a scrubber head; brush type, diameter or width, drive interface, bristle or pad grade, speed, contact force and machine-head identity must be approved together.",
+  "includedScope": [
+    "Disc and cylindrical brushes for scrubber-dryers",
+    "Pad drivers and orbital head boundaries",
+    "Working width, material, drive and machine-family checks"
+  ],
+  "excludedScope": [
+    "Vacuum cleaner brush rolls",
+    "Unpowered hand brushes",
+    "Chemical suitability claims without floor and detergent evidence"
+  ],
+  "primaryApplications": [
+    "Walk-behind floor scrubbers",
+    "Ride-on scrubber-dryers",
+    "Disc, cylindrical and orbital cleaning heads"
+  ],
+  "headline": "Brush architecture, floor task and exact scrub head must be approved as one cleaning system.",
+  "description": "This profile compares official disc, cylindrical and orbital scrub-head evidence and turns it into practical brush, pad, wear and machine-fit checks.",
+  "metaDescription": "Floor scrubber brush types, disc and cylindrical systems, pad grades, working width, wear limits and machine compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/floor-scrubber-brush/hero.webp",
+  "heroImageAlt": "Hako professional scrubber-dryer in floor-cleaning application",
+  "heroImageCaption": "Official Hako scrubber-dryer image on a WCB canvas; machine and head documentation controls the installed brush family.",
+  "heroSourceUrl": "https://www.hako.com/fileadmin/user_upload/Scrubmaster/Scrubmaster_B35_B50/b35_b50_Header4.webp",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-brush/architecture-family.webp",
+      "alt": "Hako scrubber-dryer family in professional cleaning",
+      "caption": "Official Hako machine-family image showing the installed scrub-head context; exact brush identity remains model-specific.",
+      "sourceUrl": "https://www.hako.com/fileadmin/user_upload/Scrubmaster/Scrubmaster_B35_B50/b35_b50_Header4.webp"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-brush/performance-boundaries.svg",
+      "mobileSrc": "/images/components/floor-scrubber-brush/performance-boundaries-mobile.svg",
+      "alt": "Floor Scrubber Brush performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50",
+        "karcher-d51"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-brush/application-reference.webp",
+      "alt": "Kärcher scrubber dryer cleaning a commercial floor",
+      "caption": "Official Kärcher application image on a WCB canvas, used to show the brush-to-machine operating context rather than an exact replacement claim.",
+      "sourceUrl": "https://s1.kaercher-media.com/media/image/selection/182384/d0/bildmotiv_800x800px_ly02.jpg"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-brush/compatibility-gate.svg",
+      "mobileSrc": "/images/components/floor-scrubber-brush/compatibility-gate-mobile.svg",
+      "alt": "Floor Scrubber Brush compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50",
+        "karcher-d51"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Architecture boundary",
+      "value": "Official machines distinguish disc, cylindrical and orbital scrub heads",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-b50",
+        "hako-b25"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "label": "Working geometry",
+      "value": "Diameter, number of brushes and head width are model-specific",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-d51",
+        "nilfisk-catalogue"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "label": "Wear boundary",
+      "value": "Official instructions define replacement and service checks",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-b50-manual",
+        "tennant-t300-parts"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Mechanical agitation",
+      "role": "The rotating or oscillating element applies motion to soil and floor.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 2,
+      "name": "Solution distribution",
+      "role": "The brush or pad works inside the head's documented water and detergent path.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 3,
+      "name": "Contact-force transfer",
+      "role": "The deck transfers controlled pressure through the brush or pad.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "order": 4,
+      "name": "Soil transport",
+      "role": "Cylindrical or disc geometry directs loosened debris within the recovery workflow.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Single or dual disc",
+      "operatingPrinciple": "One or two horizontal brushes rotate against the floor.",
+      "applicationBoundary": "Named disc head and machine family",
+      "benefits": [
+        "Common maintenance and broad brush grades"
+      ],
+      "limitations": [
+        "Side pull and edge reach depend on head setup"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Cylindrical roller",
+      "operatingPrinciple": "Parallel rollers scrub and can convey coarse debris into a tray.",
+      "applicationBoundary": "Named roller head and debris-handling scope",
+      "benefits": [
+        "Debris collection and structured-floor options"
+      ],
+      "limitations": [
+        "Roller pair, bearings and rotation are model-specific"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Orbital pad system",
+      "operatingPrinciple": "A pad driver oscillates over a defined working area.",
+      "applicationBoundary": "Named orbital head and approved pads",
+      "benefits": [
+        "Low-profile and specialized finishing options"
+      ],
+      "limitations": [
+        "Pad, drive board and head are not interchangeable with disc brushes"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Brush diameter or working width",
+      "purchasingMeaning": "Defines cleaning path and deck clearance",
+      "reportingBoundary": "Retain quantity and head configuration",
+      "comparisonCaution": "A stated machine width does not identify the replacement brush.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Brush or pad material",
+      "purchasingMeaning": "Links contact aggressiveness to floor and soil task",
+      "reportingBoundary": "Retain official color, material and grade system",
+      "comparisonCaution": "Colors are not necessarily standardized across brands.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Speed and contact force",
+      "purchasingMeaning": "Defines mechanical cleaning input",
+      "reportingBoundary": "Use the named head, mode and measurement basis",
+      "comparisonCaution": "Do not compare speed without pressure and floor context.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "name": "Drive interface",
+      "purchasingMeaning": "Controls attachment, torque and release",
+      "reportingBoundary": "Record hub, plate, retention and rotation details",
+      "comparisonCaution": "Matching diameter alone is insufficient.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Routine hard-floor cleaning",
+      "wcbAssessment": "Use the manufacturer-listed brush or pad grade for the floor and chemistry.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "application": "Structured floor or coarse debris",
+      "wcbAssessment": "Evaluate a documented cylindrical head and debris-tray configuration.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "application": "Restoration or polishing",
+      "wcbAssessment": "Approve the exact pad driver, pad grade, speed and chemical procedure.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or floor suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, machine/head and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Machine and scrub head",
+      "requiredMatch": "Exact model, head code, serial scope and brush count",
+      "why": "A machine may accept several mutually exclusive decks.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Geometry",
+      "requiredMatch": "Diameter/width, hub, retention and rotation",
+      "why": "Similar dimensions do not establish engagement.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Floor task",
+      "requiredMatch": "Floor finish, soil, detergent, brush or pad grade",
+      "why": "Excess aggression can damage the surface.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Operating envelope",
+      "requiredMatch": "Speed, contact force, water, wear limit and service procedure",
+      "why": "Performance and life depend on the full setup.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Uneven cleaning or side pull",
+      "possibleCauses": [
+        "Uneven wear",
+        "Incorrect tilt or brush grade"
+      ],
+      "safetyBoundary": "Stop if the head pulls unpredictably or contacts the floor abnormally.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "symptom": "Brush will not attach or eject",
+      "possibleCauses": [
+        "Wrong hub",
+        "Debris or damaged retention mechanism"
+      ],
+      "safetyBoundary": "Isolate the machine before accessing the scrub head.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "symptom": "Poor result or floor marking",
+      "possibleCauses": [
+        "Wrong material",
+        "Worn brush or incorrect pressure/chemistry"
+      ],
+      "safetyBoundary": "Test the approved setup on an inconspicuous area and follow floor-care guidance.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Tennant",
+      "familyName": "T300 43 cm magnetic disc brush",
+      "architecture": "Single-disc magnetic attachment",
+      "applicationScope": "Named T300/T300e parts scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Tennant parts-manual edition",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300-parts"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Tennant",
+      "familyName": "T300 dual-disc head family",
+      "architecture": "Dual-disc scrub head",
+      "applicationScope": "Named T300 machine configurations",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Tennant US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Nilfisk",
+      "familyName": "SC500 53 B",
+      "architecture": "Single 530 mm disc brush/pad system",
+      "applicationScope": "Named SC500 configuration",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Nilfisk catalogue scope",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-catalogue"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Nilfisk",
+      "familyName": "SC500 53R B",
+      "architecture": "508 mm REV/orbital pad system",
+      "applicationScope": "Named SC500 REV configuration",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Nilfisk catalogue scope",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-catalogue"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "D51 brush head 2.763-051.0",
+      "architecture": "Single 510 mm disc brush head",
+      "applicationScope": "Named B 50 W D51 configurations",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher international",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-d51"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "R55 brush head",
+      "architecture": "Cylindrical roller head",
+      "applicationScope": "Named B 50 W R55 configuration",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher international",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "manufacturer": "Hako",
+      "familyName": "Scrubmaster B25 TB 430",
+      "architecture": "430 mm disc brush/pad system",
+      "applicationScope": "Named Scrubmaster B25",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Hako international",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hako-b25"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Machine and scrub head",
+      "reason": "A machine may accept several mutually exclusive decks.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Geometry",
+      "reason": "Similar dimensions do not establish engagement.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Floor task",
+      "reason": "Excess aggression can damage the surface.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    },
+    {
+      "check": "Operating envelope",
+      "reason": "Performance and life depend on the full setup.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t300",
+        "tennant-t300-parts",
+        "nilfisk-sc500",
+        "nilfisk-catalogue",
+        "karcher-b50"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety context for commercial floor-treatment machines within the standard scope; not a brush compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60335-2-72"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-11",
+      "title": "Current official scrubber families expose multiple head architectures",
+      "summary": "Reviewed Kärcher B 50 W documentation explicitly separates D51, D60, R55 and O51 head configurations.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-b50",
+        "karcher-b50-manual"
+      ],
+      "verifiedAt": "2026-08-11"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tennant-t300",
+      "title": "T300 walk-behind floor scrubber",
+      "publisher": "Tennant",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/machines/scrubbers/product.t300.walk-behind-floor-scrubber.m-t300.html",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "tennant-t300-parts",
+      "title": "T300 parts manual, 2026 edition",
+      "publisher": "Tennant",
+      "sourceType": "manual",
+      "url": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/T300-T300e/operator-parts-manual/4026522.pdf",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "nilfisk-sc500",
+      "title": "SC500 walk-behind scrubber",
+      "publisher": "Nilfisk",
+      "sourceType": "manufacturer",
+      "url": "https://www.nilfisk.com/en-us/professional/products/floor-cleaning/floor-scrubbers/walk-behind-floor-scrubbers/medium/sc500-20d-li-ion%2B56394690/",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "nilfisk-catalogue",
+      "title": "Nilfisk professional floorcare catalogue",
+      "publisher": "Nilfisk",
+      "sourceType": "datasheet",
+      "url": "https://www.nilfisk.com/media/snzluq3d/nilfisk-grey-line-catalogue-2020-uki.pdf",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "karcher-b50",
+      "title": "B 50 W push scrubber dryer",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/int/professional/floor-scrubbers-scrubber-driers/b-50-w-push-scrubber-dryer.html",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "karcher-d51",
+      "title": "Brush head D51",
+      "publisher": "Kärcher",
+      "sourceType": "datasheet",
+      "url": "https://www.kaercher.com/int/accessory/brush-head-d51-27630510.html",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "karcher-b50-manual",
+      "title": "B 50 W operating instructions",
+      "publisher": "Kärcher",
+      "sourceType": "manual",
+      "url": "https://www.kaercher.com/documents/manuals/html/BTA-5765072-000-12/EN.html",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "hako-b25",
+      "title": "Scrubmaster B25",
+      "publisher": "Hako",
+      "sourceType": "manufacturer",
+      "url": "https://www.hako.com/en/products/cleaning-technology/scrubber-driers/walk-behind-scrubber-driers/scrubmaster-b25",
+      "accessedAt": "2026-08-11"
+    },
+    {
+      "id": "iec-60335-2-72",
+      "title": "IEC 60335-2-72:2021 commercial floor treatment machine safety",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64778",
+      "accessedAt": "2026-08-11"
+    }
+  ],
+  "publishedAt": "2026-08-11",
+  "lastVerified": "2026-08-11",
+  "lastModified": "2026-08-11"
+}
