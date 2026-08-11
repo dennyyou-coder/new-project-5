@@ -142,6 +142,39 @@ git diff --check
 Results: PASS 437/1,755/1,210 source inventory; PASS 3/3 asset performance; PASS 115/115 focused; PASS 11/11 rendering; PASS 488/488 full repository suite; PASS production build with 645 static pages; PASS built verifier 437 articles / 1,756 rendered images / 1,211 responsive sets; PASS diff check. A final RED/GREEN edge case additionally proves a cover-only external folder reports `sources=01-cover.png` instead of an empty descriptor list.
 - `git diff --check`: passed.
 
+## Task 8 final integrated verification
+
+Task 8 refreshed the authoritative base to `origin/main` `7500378e4b29eb4e9ee46bcabdb8554e9b1e9f51`. The upstream SEO squash tree was already present byte-for-byte in the branch history, and the later Episode 04 article was integrated normally. Its 15 unchanged article images were registered as a standard-budget article; no Episode 04 publish image was rewritten. The final source inventory is 438 articles, 1,770 primary assets, and 1,210 mobile variants.
+
+Exact final transfer estimates use each unique local image once. Desktop selects the public primary. Mobile selects the manifest mobile candidate when one exists, otherwise the primary. Page measurements come from the final built HTML; article measurements come from the final manifest.
+
+| Representative surface | Local images | Desktop bytes | Mobile bytes |
+| --- | ---: | ---: | ---: |
+| Homepage linked article imagery | 4 | 648,306 | 361,384 |
+| Robot Vacuum Sourcing, all local page imagery | 10 | 1,112,632 | 900,907 |
+| Robot Vacuum Sourcing, article-linked subset | 3 | 307,687 | 95,962 |
+| Ordinary article: `building-worlds-no-1-cleaning-show-from-scratch-episode-04` | 15 | 743,572 | 743,572 |
+| Responsive standard article: `aiper-fluidra-pool-robotics-alliance` | 5 | 652,730 | 237,078 |
+| Deep article: `ces-2026-backyard-robot-war` | 46 | 2,472,623 | 1,173,208 |
+| Visual archive: `hundred-years-of-cleaning-appliance-history` | 110 | 1,958,574 | 1,559,030 |
+
+The final guarded repository contains 3,391 files / 253,008,125 bytes. This is 39,646,746 bytes (13.55%) below the approved 292,654,871-byte baseline and 68,912,233 bytes below the 321,920,358-byte ceiling. The 743,572-byte increase from the Task 6 snapshot is exactly the newly integrated Episode 04 primary inventory.
+
+Fresh final verification:
+
+- Complete repository suite: passed, 491/491, using the required path-alias command exactly once after upstream integration.
+- Content classification: passed.
+- SEO audit: passed, 7/7.
+- Asset performance: passed, 3/3.
+- Source image verifier: passed, 438 articles / 1,770 primary assets / 1,210 mobile assets / 253,008,125 bytes / 3,391 files.
+- Superseding production build after the browser-discovered CSS regression fix: passed, 646 generated pages; lifecycle source and built-output gates passed, with 438 articles / 1,771 rendered article images / 1,211 responsive sets.
+- The build left the tracked worktree unchanged.
+- Desktop and 390 px production-server QA passed on `/`, `/blog`, Episode 04, Aiper/Fluidra, the 110-image visual archive, and `/sourcing/robotic-vacuums`: HTTP 200, one H1, one main landmark, correct canonical and primary OpenGraph image, stable cover framing, readable graphics, intrinsic dimensions, exactly one eager managed article image, lazy body images, and responsive candidate selection where available. Observed layout-shift score was 0 on all sampled navigations.
+
+Browser QA exposed one real integration regression before completion: Blog article presentation selectors were stranded in About route CSS, so production article pages rendered without their intended cover and prose styles. A route-graph regression test failed first. The fix moved the existing 9,161-byte article block out of `about.css` into Blog-only `article.css`, added the Blog layout import, and set constrained body images to `height: auto`; it did not add the About stylesheet globally or duplicate that block. Focused GREEN results were 12/12 for content experience and 26/26 for adjacent article/blog/About coverage. The first successful build is therefore superseded by the fresh post-fix build above.
+
+The only local console error was the expected `/_vercel/insights/script.js` 404 from running Vercel Web Analytics outside Vercel. No target-route runtime or image error was found.
+
 ## Baseline largest 30 referenced images
 
 | # | Public URL | Bytes |
