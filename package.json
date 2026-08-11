@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npm run verify:content-classification",
+    "prebuild": "npm run verify:content-classification && npm run verify:article-images",
     "build": "next build",
+    "postbuild": "npm run verify:built-article-images",
     "start": "next start",
     "lint": "next lint",
     "test:analytics": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/googleAnalytics.test.mjs",

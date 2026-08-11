@@ -20,6 +20,30 @@ const fixtureRoot = path.join(process.cwd(), "tests", "fixtures", "article-image
 const fixtureContentRoot = path.join(fixtureRoot, "content");
 const fixturePublicRoot = path.join(fixtureRoot, "public");
 
+test("keeps article image preparation outside the mandatory read-only build gates", () => {
+  const packageJson = JSON.parse(fs.readFileSync(path.join(process.cwd(), "package.json"), "utf8"));
+  const scripts = packageJson.scripts ?? {};
+
+  assert.equal(scripts["prepare:article-images"], "node scripts/prepare-article-images.mjs");
+  assert.equal(
+    scripts.prebuild,
+    "npm run verify:content-classification && npm run verify:article-images",
+    "prebuild must compose the existing content gate with one read-only source/manifest image gate"
+  );
+  assert.equal(scripts.build, "next build");
+  assert.equal(
+    scripts.postbuild,
+    "npm run verify:built-article-images",
+    "postbuild must verify generated article HTML exactly once"
+  );
+
+  for (const lifecycle of ["prebuild", "build", "postbuild"]) {
+    assert.doesNotMatch(scripts[lifecycle] ?? "", /prepare:article-images/);
+  }
+  assert.equal((scripts.prebuild.match(/verify:article-images/g) ?? []).length, 1);
+  assert.equal((scripts.postbuild.match(/verify:built-article-images/g) ?? []).length, 1);
+});
+
 function makeFixtureProject() {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "wcb-article-image-pipeline-"));
   const contentRoot = path.join(root, "content");

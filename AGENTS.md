@@ -143,6 +143,20 @@ Before completion, confirm:
 - No broken image links
 - Build passes successfully
 
+## Mandatory Article Image Preparation
+
+Every generated visual and every user-provided photo must enter the website through:
+
+```text
+npm run prepare:article-images -- --slug {slug}
+```
+
+- Keep the unchanged original in `/Users/youdenny/Desktop/WorldCleanBizAssets/{slug}/`.
+- Do not copy raw large PNG or JPEG files directly into `public`.
+- Preparation is the only image write path; build verification is read-only and must never auto-fix a failure.
+- `visual_archive` is reserved for the explicitly allowlisted historical archive with more than 50 unique body images and complete hash-bound classification. It is not available to normal new articles.
+- Follow `docs/operations/wcb-article-image-publishing.md` for generation sizes, crop review, validation, and historical maintenance.
+
 ## SEO Buyer Guide Publishing Rule
 
 When publishing a new World Clean Biz SEO Buyer Guide or Sourcing Guide from an Obsidian release package:
