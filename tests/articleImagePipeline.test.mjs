@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import crypto from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -39,6 +40,13 @@ function writePublicImage({ publicRoot, url }) {
   fs.writeFileSync(file, "fixture");
 }
 
+function hashBoundClassifications(project, urls, kind = "photo") {
+  return Object.fromEntries(urls.map((url) => [url, {
+    kind,
+    outputHash: `sha256:${crypto.createHash("sha256").update(fs.readFileSync(path.join(project.publicRoot, url.slice(1)))).digest("hex")}`
+  }]));
+}
+
 test("exports the approved decimal-byte image and article budgets", () => {
   assert.deepEqual(IMAGE_BUDGETS, {
     cover: { desktop: 300_000, mobile: 120_000 },
@@ -48,7 +56,8 @@ test("exports the approved decimal-byte image and article budgets", () => {
   });
   assert.deepEqual(ARTICLE_BUDGETS, {
     standard: { desktop: 1_500_000, mobile: 750_000 },
-    deep: { desktop: 2_500_000, mobile: 1_200_000 }
+    deep: { desktop: 2_500_000, mobile: 1_200_000 },
+    visual_archive: { desktop: 2_500_000, mobile: 1_600_000 }
   });
   assert.equal(ARTICLE_IMAGE_BASELINE_BYTES, 292_654_871);
   assert.equal(ARTICLE_IMAGE_LIMIT_BYTES, 321_920_358);
@@ -173,6 +182,93 @@ test("only assigns the deep budget when explicit deep frontmatter has more than 
   assert.equal(inventory.articles["many-images-standard"].budgetClass, "standard");
   assert.equal(inventory.articles["explicit-deep-standard"].budgetClass, "standard");
   assert.equal(inventory.articles["explicit-standard"].budgetClass, "standard");
+});
+
+test("assigns visual_archive only to the approved historical archive with more than 50 fully hash-bound classified body images", () => {
+  const project = makeFixtureProject();
+  const slug = "hundred-years-of-cleaning-appliance-history";
+  const cover = `/images/insights/${slug}-cover.jpg`;
+  const body = Array.from({ length: 51 }, (_, index) => `/images/insights/${slug}-image-${String(index + 1).padStart(3, "0")}.jpg`);
+  for (const url of [cover, ...body]) writePublicImage({ publicRoot: project.publicRoot, url });
+  writeArticle({
+    contentRoot: project.contentRoot,
+    slug,
+    frontmatter: `coverImage: ${cover}\nimage_budget: visual_archive\n`,
+    body: body.map((url, index) => `![archive ${index + 1}](${url})`).join("\n")
+  });
+
+  const inventory = discoverArticleInventory({
+    ...project,
+    historicalKindClassifications: hashBoundClassifications(project, [cover, ...body])
+  });
+
+  assert.equal(inventory.articles[slug].budgetClass, "visual_archive");
+});
+
+test("rejects visual_archive with 50 body images or fewer", () => {
+  const project = makeFixtureProject();
+  const slug = "hundred-years-of-cleaning-appliance-history";
+  const body = Array.from({ length: 50 }, (_, index) => `/images/insights/${slug}-image-${String(index + 1).padStart(3, "0")}.jpg`);
+  for (const url of body) writePublicImage({ publicRoot: project.publicRoot, url });
+  writeArticle({
+    contentRoot: project.contentRoot,
+    slug,
+    frontmatter: "image_budget: visual_archive\n",
+    body: body.map((url) => `![archive](${url})`).join("\n")
+  });
+
+  assert.throws(
+    () => discoverArticleInventory({
+      ...project,
+      historicalKindClassifications: hashBoundClassifications(project, body)
+    }),
+    /VISUAL_ARCHIVE_NOT_ELIGIBLE.*more than 50 unique body images.*actual 50/i
+  );
+});
+
+test("rejects incomplete, stale, and unknown visual_archive classifications", () => {
+  const scenarios = [
+    ["missing", (classifications, body) => { delete classifications[body[0]]; }, /CLASSIFICATION_REQUIRED.*image-001\.jpg/i],
+    ["stale", (classifications, body) => { classifications[body[0]].outputHash = `sha256:${"0".repeat(64)}`; }, /CLASSIFICATION_STALE.*image-001\.jpg/i],
+    ["unknown", (classifications, body) => { classifications[body[0]].kind = "unknown"; }, /CLASSIFICATION_REQUIRED.*image-001\.jpg/i]
+  ];
+  for (const [label, mutate, expected] of scenarios) {
+    const project = makeFixtureProject();
+    const slug = "hundred-years-of-cleaning-appliance-history";
+    const body = Array.from({ length: 51 }, (_, index) => `/images/insights/${slug}-image-${String(index + 1).padStart(3, "0")}.jpg`);
+    for (const url of body) writePublicImage({ publicRoot: project.publicRoot, url });
+    writeArticle({
+      contentRoot: project.contentRoot,
+      slug,
+      frontmatter: "image_budget: visual_archive\n",
+      body: body.map((url) => `![archive](${url})`).join("\n")
+    });
+    const classifications = hashBoundClassifications(project, body);
+    mutate(classifications, body);
+    assert.throws(
+      () => discoverArticleInventory({ ...project, historicalKindClassifications: classifications }),
+      expected,
+      label
+    );
+  }
+});
+
+test("does not grant visual_archive to an unapproved slug", () => {
+  const project = makeFixtureProject();
+  const slug = "another-large-archive";
+  const body = Array.from({ length: 51 }, (_, index) => `/images/insights/${slug}-image-${String(index + 1).padStart(3, "0")}.jpg`);
+  for (const url of body) writePublicImage({ publicRoot: project.publicRoot, url });
+  writeArticle({
+    contentRoot: project.contentRoot,
+    slug,
+    frontmatter: "image_budget: visual_archive\n",
+    body: body.map((url) => `![archive](${url})`).join("\n")
+  });
+
+  assert.throws(
+    () => discoverArticleInventory({ ...project, historicalKindClassifications: hashBoundClassifications(project, body) }),
+    /VISUAL_ARCHIVE_NOT_ELIGIBLE.*approved historical archive/i
+  );
 });
 
 test("reports invalid slugs, missing files, conflicting roles, and unknown budget classes with article and file details", () => {

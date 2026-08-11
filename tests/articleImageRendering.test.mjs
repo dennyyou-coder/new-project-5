@@ -335,8 +335,7 @@ test("Task 6 historical article inventory edits preserve every pre-migration byt
 
   const budgetAdditions = [
     ["ces-2026-backyard-robot-war", "148ed2f016c54a83781e15d3b2f4197e704ce876263890f321e2424713a9dbb4"],
-    ["cleaning-appliance-companies-at-awe", "34a2c6448c6857f43604f8005b22efe2fdc8850a35c2c3d849af070f78ad7b4f"],
-    ["hundred-years-of-cleaning-appliance-history", "a553dd0cb4b6ab731314a7971e66367e27726c5bd223574396dfb41749ed3d4b"]
+    ["cleaning-appliance-companies-at-awe", "34a2c6448c6857f43604f8005b22efe2fdc8850a35c2c3d849af070f78ad7b4f"]
   ];
   const approvedBudgetLine = "image_budget: deep\n";
   for (const [slug, baselineHash] of budgetAdditions) {
@@ -344,6 +343,16 @@ test("Task 6 historical article inventory edits preserve every pre-migration byt
     assert.equal(source.split(approvedBudgetLine).length - 1, 1, `${slug} must add exactly one deep-budget line`);
     assert.equal(digest(source.replace(approvedBudgetLine, "")), baselineHash, `${slug} changed outside the approved image_budget line`);
   }
+
+  const historySlug = "hundred-years-of-cleaning-appliance-history";
+  const historySource = fs.readFileSync(path.join(root, "content", "insights", `${historySlug}.mdx`), "utf8");
+  const archiveBudgetLine = "image_budget: visual_archive\n";
+  assert.equal(historySource.split(archiveBudgetLine).length - 1, 1, `${historySlug} must contain exactly one visual_archive budget line`);
+  assert.equal(
+    digest(historySource.replace(archiveBudgetLine, "")),
+    "a553dd0cb4b6ab731314a7971e66367e27726c5bd223574396dfb41749ed3d4b",
+    `${historySlug} changed outside the approved image_budget line`
+  );
 
   const mideaSlug = "midea-group-and-the-possible-philips-domestic-appliances-acquisition";
   const mideaFile = path.join(root, "content", "insights", `${mideaSlug}.mdx`);

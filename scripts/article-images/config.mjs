@@ -7,7 +7,8 @@ export const IMAGE_BUDGETS = {
 
 export const ARTICLE_BUDGETS = {
   standard: { desktop: 1_500_000, mobile: 750_000 },
-  deep: { desktop: 2_500_000, mobile: 1_200_000 }
+  deep: { desktop: 2_500_000, mobile: 1_200_000 },
+  visual_archive: { desktop: 2_500_000, mobile: 1_600_000 }
 };
 
 export const ARTICLE_IMAGE_BASELINE_BYTES = 292_654_871;

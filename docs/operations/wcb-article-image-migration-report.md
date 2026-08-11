@@ -6,7 +6,7 @@ Result: complete; strict source and built-output gates pass
 
 ## Outcome
 
-Historical primary image URLs, extensions, formats, aspect ratios, crops, and order were preserved. The migration optimized each repository primary in place and added only profitable WebP mobile variants. The final guarded image repository is 252,483,149 bytes, 40,171,722 bytes (13.73%) below the approved baseline and 69,437,209 bytes below the 321,920,358-byte ceiling.
+Historical primary image URLs, extensions, formats, aspect ratios, crops, and order were preserved. The migration optimized each repository primary in place and added only profitable WebP mobile variants. After Fix Round 1 removed invalid extreme mobile selections for explicitly classified non-photo assets, the final guarded image repository is 252,264,553 bytes, 40,390,318 bytes (13.80%) below the approved baseline and 69,655,805 bytes below the 321,920,358-byte ceiling.
 
 No external source-library file changed. A byte-for-byte repair audit after the bulk migration also confirmed zero hash changes across all 1,755 primaries while invalid same-width mobile variants were removed or regenerated.
 
@@ -16,8 +16,8 @@ No external source-library file changed. A byte-for-byte repair audit after the 
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `public/images/articles` | 140 | 26,725,818 | 256 | 32,187,536 | +5,461,718 |
 | `public/images/blog` | 645 | 97,022,727 | 1,164 | 99,001,193 | +1,978,466 |
-| `public/images/insights` | 1,381 | 168,906,326 | 1,998 | 121,294,420 | -47,611,906 |
-| **Total** | **2,166** | **292,654,871** | **3,418** | **252,483,149** | **-40,171,722** |
+| `public/images/insights` | 1,381 | 168,906,326 | 1,956 | 121,075,824 | -47,830,502 |
+| **Total** | **2,166** | **292,654,871** | **3,376** | **252,264,553** | **-40,390,318** |
 
 The captured baseline exactly reproduced the approved 292,654,871 bytes / 2,166 files before migration.
 
@@ -27,13 +27,13 @@ The captured baseline exactly reproduced the approved 292,654,871 bytes / 2,166 
 | --- | ---: | ---: |
 | Articles | 437 | 437 |
 | Primary assets | 1,755 | 1,755 |
-| Retained mobile variants | 0 | 1,252 |
-| Skipped mobile variants | 1,755 | 503 |
+| Retained mobile variants | 0 | 1,210 |
+| Skipped mobile variants | 1,755 | 545 |
 | Unique primary stored bytes | 231,022,895 | 143,802,439 |
 | Summed per-article desktop transfer | 231,101,810 | 143,843,743 |
-| Summed per-article mobile transfer | 231,101,810 | 60,208,978 |
+| Summed per-article mobile transfer | 231,101,810 | 60,829,780 |
 
-The per-article sums count a shared asset once in each article that uses it. Desktop transfer decreased by 87,258,067 bytes (37.76%); estimated mobile transfer decreased by 170,892,832 bytes (73.95%). Every retained mobile variant is narrower than its primary and meets the configured minimum byte-or-ratio savings threshold.
+The per-article sums count a shared asset once in each article that uses it. Desktop transfer decreased by 87,258,067 bytes (37.76%); estimated mobile transfer decreased by 170,272,030 bytes (73.68%). Every retained mobile variant is narrower than its primary and meets the configured minimum byte-or-ratio savings threshold.
 
 ## Budget classification and aggregate recovery
 
@@ -41,7 +41,8 @@ The following articles qualify for and use `image_budget: deep`:
 
 - `ces-2026-backyard-robot-war`
 - `cleaning-appliance-companies-at-awe`
-- `hundred-years-of-cleaning-appliance-history`
+
+`hundred-years-of-cleaning-appliance-history` is the only approved `image_budget: visual_archive` article. That strict historical class requires more than 50 unique body images and a complete, current hash-bound `URL + kind + outputHash` classification for every managed image. Its desktop/mobile aggregate limits are 2,500,000 / 1,600,000 bytes. No standard or deep article inherits the higher mobile limit.
 
 `cleaning-industry-news-roundup-2026-06-20` remains `standard` because it has exactly eight unique body images.
 
@@ -50,10 +51,10 @@ Photo-only aggregate recovery selected the first/highest passing stage against e
 | Article | Budget | Desktop recovery | Mobile recovery | Final desktop | Final mobile |
 | --- | --- | --- | --- | ---: | ---: |
 | `bissell-barkbath-pet-vacuum-cleaner` | standard | normal | 640 px | 1,456,222 | 498,935 |
-| `hundred-years-of-cleaning-appliance-history` | deep | normal after migrated desktop | 480 px | 1,958,574 | 962,938 |
-| `ifa-2019-vacuum-cleaner-new-products-by-major-brands` | standard | normal | 560 px | 1,257,469 | 627,313 |
+| `hundred-years-of-cleaning-appliance-history` | visual_archive | normal after migrated desktop | 480 px for explicitly classified photos only; non-photos use safe mobile or primary fallback | 1,958,574 | 1,559,030 |
+| `ifa-2019-vacuum-cleaner-new-products-by-major-brands` | standard | normal | 560 px for explicitly classified photos only; image 014 uses primary fallback | 1,257,469 | 652,023 |
 
-The extended mobile recovery never goes below 390 px or quality 72, never enlarges an image, and applies only when the article inventory classifies every affected raster asset as photo-kind. The 390 px hard floor is covered by an explicit rejection test.
+The extended mobile recovery never goes below 390 px or quality 72, never enlarges an image, and applies only to assets whose tracked URL and current primary hash explicitly classify them as photo. The classification registry contains 127 entries: 46 photos and 81 graphics. Unknown, incomplete, or stale classifications block extreme recovery; charts, graphics, transparency, and SVG never enter the sub-640 photo ladder. The 390 px hard floor is covered by an explicit rejection test.
 
 ## Mechanical integrity
 
@@ -68,7 +69,7 @@ The extended mobile recovery never goes below 390 px or quality 72, never enlarg
 Approved article-local inventory edits were limited to:
 
 - explicit existing inferred cover paths for `floor-scrubber-rental-vs-buy`, `how-to-find-reliable-cleaning-product-suppliers-in-china`, and `who-owns-hayward-pool-products`;
-- `image_budget: deep` for the three qualifying articles listed above;
+- `image_budget: deep` for CES and AWE, plus the later reviewed `image_budget: visual_archive` line for cleaning-appliance history;
 - one newline before image 002 in `midea-group-and-the-possible-philips-domestic-appliances-acquisition`, making the existing Markdown image independent without changing its text, URL, order, or meaning.
 
 An exact regression assertion verifies that these are the only article-source byte changes.
@@ -80,9 +81,9 @@ All warnings below are deterministic, approved historical-validation outcomes; n
 - 1 `EXTERNAL_SOURCE_CONFLICT_FALLBACK` for the known malformed Building Worlds episode 01 external filename.
 - 10 `INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT` warnings where a unique validated external semantic source has a different format; repository primary URL, bytes, and format remain authoritative.
 - 10 `HISTORICAL_SVG_PREFIX_NORMALIZED` warnings where the unique source semantic stem is an exact suffix and the extra primary prefix is owned by contiguous article-slug tokens.
-- 1 `EXTERNAL_SOURCE_CONTENT_CONFLICT` for the Midea brand-portfolio folder; unmatched external descriptors did not replace or validate the repository primary.
+- 2 `EXTERNAL_SOURCE_CONTENT_CONFLICT` warnings for the two Midea brand-portfolio repository primaries; each warning names that repository reference and both unmatched external descriptors, which did not replace or validate either primary.
 
-Generated-state repair additionally identified 305 byte-profitable but invalid mobile variants whose width was equal to or greater than the final primary. The atomic repair removed 254 and replaced the necessary aggregate-budget candidates with narrower variants. This is a resolved mechanical warning, not an editorial warning.
+Generated-state repair initially identified 305 byte-profitable but invalid mobile variants whose width was equal to or greater than the final primary. The atomic repair removed 254 and replaced the necessary aggregate-budget candidates with narrower variants. Fix Round 1 then identified 45 sub-640 mobile selections attached to explicitly classified graphics: it regenerated 3 through the normal safe graphic path and removed 42 low-value variants, preserving all primaries byte-identical. These are resolved mechanical warnings, not editorial warnings.
 
 ## Visual review
 
@@ -95,9 +96,10 @@ Representative original-size and 390 px-equivalent inspections covered:
 - Sourcing-related article imagery;
 - the De'Longhi 99% progressive same-format fallback;
 - all 46 CES photo-heavy outputs using two contact sheets;
-- all 110 `hundred-years-of-cleaning-appliance-history` selections using six contact sheets, plus focused original/390 px comparisons of product photos, event photos, the small-label Kirby history graphic, and the legal-document image.
+- all 110 `hundred-years-of-cleaning-appliance-history` selections in the original six contact sheets, followed by nine corrected primary/390 px contact sheets covering all 81 explicitly classified non-photo assets across History and IFA;
+- focused original/390 px comparisons of the actual catalog/text graphic `image-008`, Kirby catalog `image-010`, the legal press-release graphic `image-108`, Cecotec product photo `image-109`, and IFA Philips text/product graphic `image-014`.
 
-No visible crop change, colour shift, halo, subject damage, meaning-changing softness, or new unreadable detail was found.
+No visible crop change, colour shift, halo, subject damage, meaning-changing softness, or new unreadable detail was found. The legal press-release headline and structure and the Kirby/catalog text retained the same readability as their primary-at-390 references; no claim is attached to a misidentified filename.
 
 ## Verification evidence
 
@@ -105,12 +107,39 @@ No visible crop change, colour shift, halo, subject damage, meaning-changing sof
 - Bulk historical apply: completed once.
 - Atomic generated-state repair dry run: passed with zero primary output paths.
 - Atomic generated-state repair apply: passed; all 1,755 primary hashes remained identical.
-- `npm run verify:article-images`: passed; 437 articles, 1,755 primaries, 1,252 mobile assets.
+- `npm run verify:article-images`: passed; 437 articles, 1,755 primaries, 1,210 mobile assets; 252,264,553 bytes / 3,376 files.
 - `npm run test:asset-performance`: passed, 3/3.
-- Focused pipeline/transform/prepare/budget suite: passed, 101/101.
+- Focused pipeline/transform/prepare/budget suite: passed, 115/115.
 - Article rendering regression: passed, 11/11.
+- Full repository suite with its path-alias loader: passed, 488/488. (`npm test` is not defined; a raw glob without the loader predictably failed four alias-import suites and was replaced by the repository-correct command.)
 - `npm run build`: passed.
-- `npm run verify:built-article-images`: passed; 437 articles, 1,756 rendered article images, 1,253 responsive image sets.
+- `npm run verify:built-article-images`: passed; 437 articles, 1,756 rendered article images, 1,211 responsive image sets.
+
+## Fix Round 1 — Critical review corrections
+
+The review fix used only `--repair-generated-state`; the full historical bulk migration was not rerun. The dry run listed exactly 3 mobile replacements and 42 mobile removals, with zero primary or other non-mobile stage outputs. The atomic apply made that same mobile-only change set and refreshed the manifest. Primary hash comparison before and after apply remained 0 changes across 1,755 / 1,755 primaries, with no primary URL additions or removals. A final post-apply dry run was idempotent across all 437 articles: 0 creates, 0 replacements, 0 removals, 0 primary stage outputs, unchanged manifest, and 0 empty conflict warnings.
+
+Implementation corrections:
+
+- SVG branches before every Sharp, source-inspection, transparency, metadata, raster-transform, and mobile-candidate call. A 100,000 × 100,000 SVG fixture that Sharp rejects on pixel limits remains byte-identical and creates no mobile output.
+- `scripts/article-images/historical-kind-classifications.json` supplies explicit hash-bound authority for every asset eligible for sub-640 recovery. History `image-008` and `image-108` are graphics, `image-109` is a photo, and IFA `image-014` is a graphic.
+- Historical external validation no longer accepts sequence alone. Exact and slug-owned semantic suffix rules govern validation; mismatches emit stable warnings containing both the repository primary and external descriptor names.
+- `visual_archive` eligibility is shared by inventory discovery/preparation and source/aggregate verification. Only the approved History slug, with more than 50 unique body images and complete current classifications, can receive its 1,600,000-byte mobile limit.
+
+Exact Fix Round 1 verification commands:
+
+```bash
+npm run verify:article-images
+npm run test:asset-performance
+node --test tests/articleImagePipeline.test.mjs tests/articleImageTransform.test.mjs tests/articleImagePrepare.test.mjs tests/articleImageBudgets.test.mjs
+node --test tests/articleImageRendering.test.mjs
+node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/*.test.mjs
+npm run build
+npm run verify:built-article-images
+git diff --check
+```
+
+Results: PASS 437/1,755/1,210 source inventory; PASS 3/3 asset performance; PASS 115/115 focused; PASS 11/11 rendering; PASS 488/488 full repository suite; PASS production build with 645 static pages; PASS built verifier 437 articles / 1,756 rendered images / 1,211 responsive sets; PASS diff check. A final RED/GREEN edge case additionally proves a cover-only external folder reports `sources=01-cover.png` instead of an empty descriptor list.
 - `git diff --check`: passed.
 
 ## Baseline largest 30 referenced images

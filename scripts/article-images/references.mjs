@@ -1,8 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { sha256File, validateVisualArchiveEligibility } from "./historical-kinds.mjs";
+
 const validSlug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const supportedBudgetClasses = new Set(["standard", "deep"]);
+const supportedBudgetClasses = new Set(["standard", "deep", "visual_archive"]);
 const localImagePrefix = "/images/";
 const imageReference = /!\[[^\]]*\]\(\s*(?:<([^>]+)>|([^\s)]+))[^)]*\)|<img\b[^>]*?\bsrc\s*=\s*(?:"([^"]+)"|'([^']+)')/gi;
 
@@ -73,7 +75,7 @@ function ensurePublicFile({ slug, articleFile, publicRoot, url }) {
   return file;
 }
 
-export function discoverArticleInventory({ contentRoot, publicRoot }) {
+export function discoverArticleInventory({ contentRoot, publicRoot, historicalKindClassifications }) {
   const articles = {};
   const assets = {};
 
@@ -126,10 +128,26 @@ export function discoverArticleInventory({ contentRoot, publicRoot }) {
       }
     }
 
+    let budgetClass = requestedBudgetClass === "deep" && body.length > 8 ? "deep" : "standard";
+    if (requestedBudgetClass === "visual_archive") {
+      try {
+        validateVisualArchiveEligibility({
+          slug,
+          cover: coverUrl,
+          body,
+          classifications: historicalKindClassifications,
+          actualHashes: (url) => sha256File(assets[url].file)
+        });
+        budgetClass = "visual_archive";
+      } catch (error) {
+        throw articleError(slug, file, error.message);
+      }
+    }
+
     articles[slug] = {
       slug,
       file,
-      budgetClass: requestedBudgetClass === "deep" && body.length > 8 ? "deep" : "standard",
+      budgetClass,
       cover: coverUrl,
       social: socialUrl,
       body

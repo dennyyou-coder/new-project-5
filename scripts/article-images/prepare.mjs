@@ -8,6 +8,10 @@ import { spawnSync } from "node:child_process";
 import sharp from "sharp";
 
 import { ARTICLE_BUDGETS } from "./config.mjs";
+import {
+  HISTORICAL_KINDS,
+  readHistoricalKindClassifications
+} from "./historical-kinds.mjs";
 import { buildManifest, serializeManifest } from "./manifest.mjs";
 import { discoverArticleInventory } from "./references.mjs";
 import {
@@ -59,12 +63,59 @@ export function selectPhotoAggregateRecoveryStage({ photoCount, budgetClass, bud
   return desktop && mobile ? { budgetClass, desktop, mobile } : null;
 }
 
+export function classifyHistoricalExtremeRecoveryAssets({ slug, urls, processed, classifications }) {
+  const photoUrls = [];
+  const excluded = [];
+  for (const url of urls) {
+    const classification = classifications?.[url];
+    if (!classification || !HISTORICAL_KINDS.has(classification.kind) || !normalizedHash(classification.outputHash)) {
+      throw failure(`Historical extreme recovery for ${slug} requires an explicit kind classification for ${url}.`, {
+        code: "HISTORICAL_KIND_CLASSIFICATION_REQUIRED",
+        slug,
+        imageName: path.posix.basename(url),
+        recommendedAction: "Classify the current primary as photo, chart, graphic, or transparent and bind it to its current output hash."
+      });
+    }
+    const actualHash = normalizedHash(processed?.[url]?.outputHash);
+    if (!actualHash || normalizedHash(classification.outputHash) !== actualHash) {
+      throw failure(`Historical kind classification for ${url} is stale for the current primary.`, {
+        code: "HISTORICAL_KIND_CLASSIFICATION_STALE",
+        slug,
+        imageName: path.posix.basename(url),
+        observedValue: actualHash,
+        permittedValue: normalizedHash(classification.outputHash),
+        recommendedAction: "Re-inspect the current primary and update its hash-bound kind classification before extreme recovery."
+      });
+    }
+    if (classification.kind === "photo") photoUrls.push(url);
+    else excluded.push({ url, kind: classification.kind });
+  }
+  return { photoUrls, excluded };
+}
+
 function sha256(buffer) {
   return `sha256:${crypto.createHash("sha256").update(buffer).digest("hex")}`;
 }
 
 function normalizedHash(value) {
   return typeof value === "string" ? `sha256:${value.replace(/^sha256:/i, "").toLowerCase()}` : null;
+}
+
+function manifestKindForHistoricalClassification(kind) {
+  if (kind === "chart" || kind === "graphic") return "graphic";
+  return kind;
+}
+
+function classifiedHistoricalKind(slug, url, outputHash, classifications, fallbackKind) {
+  const classification = classifications?.[url];
+  if (!classification) return fallbackKind;
+  const result = classifyHistoricalExtremeRecoveryAssets({
+    slug,
+    urls: [url],
+    processed: { [url]: { outputHash } },
+    classifications
+  });
+  return result.photoUrls.length ? "photo" : manifestKindForHistoricalClassification(classification.kind);
 }
 
 function relativeRepositoryPath(projectRoot, file) {
@@ -365,32 +416,22 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
   const article = context.currentInventory.articles[slug];
   const approvedWarning = approvedHistoricalSourceValidationWarning(slug, sourceRoot);
   if (approvedWarning) return [approvedWarning];
-  const { descriptors, sequences } = await discoverSourceImages(sourceRoot, { includeSvg: true });
+  const { descriptors } = await discoverSourceImages(sourceRoot, { includeSvg: true });
   await readImageConfig(sourceRoot, descriptors, slug);
-  const referencedSequences = new Set();
+  const referencedDescriptors = new Set();
   const warnings = [];
-  const unmatchedReferences = [];
   for (const reference of article.body) {
-    const sequence = sequenceFromReference(reference);
-    if (sequence !== null && sequences.has(sequence)) {
-      referencedSequences.add(sequence);
-      continue;
-    }
-    if (sequence !== null) {
-      unmatchedReferences.push(reference);
-      continue;
-    }
     const semanticStem = historicalReferenceSemanticStem(reference);
     const exactMatches = descriptors
       .filter((descriptor) => descriptor.sequence > 1 && descriptor.semanticStem === semanticStem)
       .sort((left, right) => left.basename.localeCompare(right.basename));
     if (exactMatches.length > 1) {
-      unmatchedReferences.push(reference);
+      warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${reference} sources=${exactMatches.map(({ basename }) => basename).join(",")} reason=AMBIGUOUS_SEMANTIC_MATCH repository-primary-preserved`);
       continue;
     }
     let matches = exactMatches;
     let normalizedPrefix = null;
-    if (matches.length === 0 && normalizedImageFormat(reference) === "svg") {
+    if (matches.length === 0) {
       const slugWithBoundaries = `-${sanitizeStem(slug)}-`;
       matches = descriptors
         .filter((descriptor) => {
@@ -402,7 +443,7 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
         })
         .sort((left, right) => left.basename.localeCompare(right.basename));
       if (matches.length > 1) {
-        unmatchedReferences.push(reference);
+        warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${reference} sources=${matches.map(({ basename }) => basename).join(",")} reason=AMBIGUOUS_SEMANTIC_MATCH repository-primary-preserved`);
         continue;
       }
       if (matches.length === 1) {
@@ -410,11 +451,20 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
       }
     }
     if (matches.length === 0) {
-      unmatchedReferences.push(reference);
+      const sequence = sequenceFromReference(reference);
+      const sameSequence = descriptors
+        .filter((descriptor) => descriptor.sequence > 1 && descriptor.sequence === sequence)
+        .sort((left, right) => left.basename.localeCompare(right.basename));
+      const bodyDescriptors = descriptors.filter((descriptor) => descriptor.sequence > 1);
+      const candidates = sameSequence.length
+        ? sameSequence
+        : bodyDescriptors.length ? bodyDescriptors : descriptors;
+      warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${reference} sources=${candidates.map(({ basename }) => basename).join(",")} reason=NO_SEMANTIC_MATCH repository-primary-preserved`);
+      for (const descriptor of candidates) referencedDescriptors.add(descriptor.basename);
       continue;
     }
     const [match] = matches;
-    referencedSequences.add(match.sequence);
+    referencedDescriptors.add(match.basename);
     if (normalizedPrefix) {
       warnings.push(`HISTORICAL_SVG_PREFIX_NORMALIZED slug=${slug} primary=${reference} source=${match.basename} prefix=${normalizedPrefix} repository-primary-preserved`);
     }
@@ -423,10 +473,11 @@ async function validateHistoricalSourceFolder(context, slug, sourceRoot) {
     }
   }
   const unmatchedDescriptors = descriptors
-    .filter(({ sequence }) => sequence > 1 && !referencedSequences.has(sequence))
-    .map(({ basename }) => basename);
-  if (unmatchedReferences.length || unmatchedDescriptors.length) {
-    warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} unmatched=${unmatchedDescriptors.length ? unmatchedDescriptors.join(",") : "none"} repository-primary-preserved`);
+    .filter(({ sequence, basename }) => sequence > 1 && !referencedDescriptors.has(basename));
+  for (const descriptor of unmatchedDescriptors) {
+    const sequenceReference = article.body.find((reference) => sequenceFromReference(reference) === descriptor.sequence);
+    const primary = sequenceReference ?? article.body[0];
+    warnings.push(`EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${primary} sources=${descriptor.basename} reason=UNREFERENCED_EXTERNAL_DESCRIPTOR repository-primary-preserved`);
   }
   return warnings;
 }
@@ -539,12 +590,43 @@ function roleForUrl(inventory, url) {
   return "body";
 }
 
-async function describeExistingAsset(url, file, inventory, existing, publicRoot) {
+async function describeExistingAsset(url, file, inventory, existing, publicRoot, classifications = {}) {
+  const role = roleForUrl(inventory, url);
+  if (path.extname(file).toLowerCase() === ".svg") {
+    const buffer = await fsp.readFile(file);
+    const source = buffer.toString("utf8", 0, Math.min(buffer.length, 16_384));
+    const numeric = (name) => Number(source.match(new RegExp(`\\b${name}=["']([0-9]+(?:\\.[0-9]+)?)(?:px)?["']`, "i"))?.[1]);
+    let width = numeric("width");
+    let height = numeric("height");
+    if (!(width > 0 && height > 0)) {
+      const viewBox = source.match(/\bviewBox=["']\s*[-+0-9.e]+\s+[-+0-9.e]+\s+([-+0-9.e]+)\s+([-+0-9.e]+)\s*["']/i);
+      width = width > 0 ? width : Number(viewBox?.[1]);
+      height = height > 0 ? height : Number(viewBox?.[2]);
+    }
+    if (!(width > 0 && height > 0)) {
+      throw failure(`Historical SVG ${url} has no validation-only intrinsic dimensions.`, {
+        code: "HISTORICAL_SVG_DIMENSIONS_MISSING",
+        imageName: path.posix.basename(url),
+        recommendedAction: "Add intrinsic width/height or viewBox metadata without rasterizing or replacing the repository SVG."
+      });
+    }
+    const outputHash = sha256(buffer);
+    return {
+      role,
+      kind: classifiedHistoricalKind("historical-inventory", url, outputHash, classifications, "graphic"),
+      width,
+      height,
+      bytes: buffer.length,
+      format: "svg",
+      quality: existing?.quality ?? 100,
+      sourceHash: existing?.sourceHash ?? outputHash,
+      outputHash
+    };
+  }
   const source = await inspectSource(file);
   const transparent = await hasRealTransparency(file);
   const metadata = await sharp(file).metadata();
-  const role = roleForUrl(inventory, url);
-  const kind = existing?.kind ?? (transparent ? "transparent" : "photo");
+  const kind = classifiedHistoricalKind("historical-inventory", url, source.sourceHash, classifications, existing?.kind ?? (transparent ? "transparent" : "photo"));
   const result = {
     role,
     kind,
@@ -732,7 +814,8 @@ function removeStageOutput(stageOutputs, url) {
 }
 
 async function deepPhotoDesktopStage(context, slug, article, processed, longEdge, includeCover) {
-  const targetUrls = includeCover ? [article.cover, ...article.body] : article.body;
+  const targetUrls = (includeCover ? [article.cover, ...article.body] : article.body)
+    .filter((url) => processed[url]?.kind === "photo" && ["jpeg", "png", "webp"].includes(processed[url]?.format));
   const results = new Map();
   for (const url of targetUrls) {
     const current = processed[url];
@@ -767,8 +850,11 @@ async function deepPhotoDesktopStage(context, slug, article, processed, longEdge
   return { longEdge, includeCover, bytes, results };
 }
 
-async function deepPhotoMobileStage(context, slug, article, processed, desktopStage, longEdge, includeCover) {
-  const targetUrls = includeCover ? [article.cover, ...article.body] : article.body;
+async function deepPhotoMobileStage(context, slug, article, processed, desktopStage, longEdge, includeCover, eligibleUrls = null) {
+  const eligible = eligibleUrls ? new Set(eligibleUrls) : null;
+  const targetUrls = (includeCover ? [article.cover, ...article.body] : article.body)
+    .filter((url) => processed[url]?.kind === "photo" && ["jpeg", "png", "webp"].includes(processed[url]?.format))
+    .filter((url) => !eligible || eligible.has(url));
   const results = new Map();
   for (const url of targetUrls) {
     const desktop = desktopStage.results.get(url) ?? processed[url];
@@ -833,7 +919,8 @@ async function applyPhotoAggregateRecovery(context, slug, article, processed, st
   const urls = [...new Set([article.cover, ...article.body].filter(Boolean))];
   const normal = articleTransferTotals(article, processed);
   if (normal.desktop <= budget.desktop && normal.mobile <= budget.mobile) return;
-  if (!urls.every((url) => processed[url]?.kind === "photo" && ["jpeg", "png", "webp"].includes(processed[url]?.format))) return;
+  const normalPhotoUrls = urls.filter((url) => processed[url]?.kind === "photo" && ["jpeg", "png", "webp"].includes(processed[url]?.format));
+  if (!normalPhotoUrls.length) return;
 
   const normalDesktop = { longEdge: null, includeCover: false, bytes: normal.desktop, results: new Map() };
   const desktopStages = [normalDesktop];
@@ -856,18 +943,36 @@ async function applyPhotoAggregateRecovery(context, slug, article, processed, st
   const mobileStages = [normalMobile];
   if (normal.mobile > budget.mobile) {
     for (const longEdge of PHOTO_AGGREGATE_MOBILE_LONG_EDGES) {
-      const stage = await deepPhotoMobileStage(context, slug, article, processed, selectedDesktop, longEdge, false);
+      const eligibleUrls = longEdge < 640
+        ? classifyHistoricalExtremeRecoveryAssets({
+            slug,
+            urls,
+            processed,
+            classifications: context.historicalKindClassifications
+          }).photoUrls
+        : normalPhotoUrls;
+      const stage = await deepPhotoMobileStage(context, slug, article, processed, selectedDesktop, longEdge, false, eligibleUrls);
       if (stage) mobileStages.push(stage);
+      if (stage?.bytes <= budget.mobile) break;
     }
     if (!mobileStages.some((stage) => stage.bytes <= budget.mobile)) {
       for (const longEdge of PHOTO_AGGREGATE_MOBILE_LONG_EDGES) {
-        const stage = await deepPhotoMobileStage(context, slug, article, processed, selectedDesktop, longEdge, true);
+        const eligibleUrls = longEdge < 640
+          ? classifyHistoricalExtremeRecoveryAssets({
+              slug,
+              urls,
+              processed,
+              classifications: context.historicalKindClassifications
+            }).photoUrls
+          : normalPhotoUrls;
+        const stage = await deepPhotoMobileStage(context, slug, article, processed, selectedDesktop, longEdge, true, eligibleUrls);
         if (stage) mobileStages.push(stage);
+        if (stage?.bytes <= budget.mobile) break;
       }
     }
   }
   const selected = selectPhotoAggregateRecoveryStage({
-    photoCount: urls.length,
+    photoCount: normalPhotoUrls.length,
     budgetClass: article.budgetClass,
     budget,
     desktopStages,
@@ -924,11 +1029,15 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
     const file = context.currentInventory.assets[url]?.file;
     if (!file) continue;
     const existing = context.existingManifest.assets?.[url];
-    const current = await describeExistingAsset(url, file, context.currentInventory, existing, context.publicRoot);
+    const current = await describeExistingAsset(url, file, context.currentInventory, existing, context.publicRoot, context.historicalKindClassifications);
     sourceBytes += current.bytes;
     const role = current.role;
     const kind = current.kind;
     let primary = current;
+    if (current.format === "svg") {
+      processed[url] = primary;
+      continue;
+    }
     if (["jpeg", "png", "webp"].includes(current.format)) {
       const desktop = await createDesktopVariant({
         input: file,
@@ -1035,13 +1144,55 @@ async function planHistoricalGeneratedStateRepair(context, slug, initialWarnings
     const file = context.currentInventory.assets[url]?.file;
     if (!file) continue;
     const existing = context.existingManifest.assets?.[url];
-    const current = await describeExistingAsset(url, file, context.currentInventory, existing, context.publicRoot);
+    const current = await describeExistingAsset(url, file, context.currentInventory, existing, context.publicRoot, context.historicalKindClassifications);
     sourceBytes += current.bytes;
     processed[url] = current;
+    const invalidExtremeKindMobile = current.mobile
+      && current.kind !== "photo"
+      && Math.max(current.mobile.width, current.mobile.height) < 640;
+    if (invalidExtremeKindMobile) {
+      const mobileFile = publicUrlFile(context.publicRoot, current.mobile.src);
+      delete current.mobile;
+      if (fs.existsSync(mobileFile)) removable.push(mobileFile);
+      const candidate = await createMobileVariant({
+        input: file,
+        filename: path.basename(file),
+        slug,
+        role: current.role,
+        kind: current.kind,
+        outputFormat: "webp",
+        preserveCrop: true
+      });
+      const retained = candidate.ok && candidate.format === "webp" && shouldKeepMobileVariant({
+        desktopBytes: current.bytes,
+        mobileBytes: candidate.bytes,
+        desktopWidth: current.width,
+        mobileWidth: candidate.width
+      });
+      if (retained) {
+        current.mobile = {
+          src: existing.mobile.src,
+          width: candidate.width,
+          height: candidate.height,
+          bytes: candidate.bytes,
+          outputHash: candidate.outputHash
+        };
+        stageOutputs.push({
+          url: existing.mobile.src,
+          buffer: candidate.buffer,
+          sourceHash: current.sourceHash,
+          imageName: path.basename(file),
+          mobile: true
+        });
+      }
+      warnings.push(`INVALID_EXTREME_MOBILE_KIND_${retained ? "REGENERATED" : "REMOVED"} slug=${slug} primary=${url} kind=${current.kind} mobile=${existing.mobile.src} long-edge=${Math.max(existing.mobile.width, existing.mobile.height)}`);
+    }
     if (existing?.mobile?.src && !current.mobile) {
       const mobileFile = publicUrlFile(context.publicRoot, existing.mobile.src);
-      if (fs.existsSync(mobileFile)) removable.push(mobileFile);
-      warnings.push(`INVALID_MOBILE_VARIANT_REMOVED slug=${slug} primary=${url} mobile=${existing.mobile.src} primary-width=${current.width} mobile-width=${existing.mobile.width}`);
+      if (fs.existsSync(mobileFile) && !removable.includes(mobileFile)) removable.push(mobileFile);
+      if (!invalidExtremeKindMobile) {
+        warnings.push(`INVALID_MOBILE_VARIANT_REMOVED slug=${slug} primary=${url} mobile=${existing.mobile.src} primary-width=${current.width} mobile-width=${existing.mobile.width}`);
+      }
     }
   }
   const normal = articleTransferTotals(article, processed);
@@ -1133,7 +1284,7 @@ async function processedAssetsForCandidate(context, candidate, plans) {
   const processed = {};
   for (const [url, asset] of Object.entries(candidate.assets)) {
     if (overridden[url]) processed[url] = overridden[url];
-    else processed[url] = await describeExistingAsset(url, asset.file, candidate, context.existingManifest.assets?.[url], context.publicRoot);
+    else processed[url] = await describeExistingAsset(url, asset.file, candidate, context.existingManifest.assets?.[url], context.publicRoot, context.historicalKindClassifications);
   }
   return processed;
 }
@@ -1402,7 +1553,14 @@ async function prepareSelection(options, mode) {
       mode === "single" ? [...sourceRoots.keys()] : [],
       files
     );
-    context.currentInventory = discoverArticleInventory({ contentRoot: context.contentRoot, publicRoot: inventoryPublicRoot });
+    context.historicalKindClassifications = mode === "all"
+      ? readHistoricalKindClassifications(context.projectRoot)
+      : {};
+    context.currentInventory = discoverArticleInventory({
+      contentRoot: context.contentRoot,
+      publicRoot: inventoryPublicRoot,
+      historicalKindClassifications: context.historicalKindClassifications
+    });
     for (const url of Object.keys(context.currentInventory.assets)) {
       const repositoryAsset = publicUrlFile(context.publicRoot, url);
       if (fs.existsSync(repositoryAsset)) assertRepositoryPath(repositoryAsset, context.publicRoot, "published source asset");

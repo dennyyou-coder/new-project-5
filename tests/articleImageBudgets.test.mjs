@@ -241,6 +241,35 @@ test("deep budget eligibility requires an effective explicit deep class and more
   assert.match(implicit.failures.find(({ code }) => code === "ARTICLE_BUDGET_EXCEEDED").message, /actual 1800000 bytes.*allowed 1500000 bytes/);
 });
 
+test("visual_archive alone accepts a 1559000-byte mobile transfer and requires complete current classifications", () => {
+  const slug = "hundred-years-of-cleaning-appliance-history";
+  const body = Array.from({ length: 51 }, (_, index) => `/images/archive/${index + 1}.jpg`);
+  const assets = Object.fromEntries(body.map((url, index) => [url, {
+    role: "body",
+    bytes: 30_000,
+    outputHash: `sha256:${String(index + 1).padStart(64, "0")}`,
+    mobile: { src: `/images/archive/${index + 1}-800.webp`, bytes: index === 50 ? 59_000 : 30_000 }
+  }]));
+  const classifications = Object.fromEntries(body.map((url) => [url, {
+    kind: "photo",
+    outputHash: assets[url].outputHash
+  }]));
+  const article = { slug, budgetClass: "visual_archive", imageBudget: "visual_archive", body };
+
+  const archive = verifyArticleBudget(article, assets, { historicalKindClassifications: classifications });
+  const deep = verifyArticleBudget({ ...article, budgetClass: "deep", imageBudget: "deep" }, assets, { historicalKindClassifications: classifications });
+  const standard = verifyArticleBudget({ ...article, budgetClass: "standard", imageBudget: "standard" }, assets, { historicalKindClassifications: classifications });
+
+  assert.equal(archive.mobileBytes, 1_559_000);
+  assert.equal(findingCodes(archive).includes("ARTICLE_BUDGET_EXCEEDED"), false);
+  assert.ok(findingCodes(deep).includes("ARTICLE_BUDGET_EXCEEDED"));
+  assert.ok(findingCodes(standard).includes("ARTICLE_BUDGET_EXCEEDED"));
+
+  classifications[body[0]].outputHash = `sha256:${"f".repeat(64)}`;
+  const stale = verifyArticleBudget(article, assets, { historicalKindClassifications: classifications });
+  assert.ok(findingCodes(stale).includes("VISUAL_ARCHIVE_CLASSIFICATION_STALE"));
+});
+
 test("aggregate verification blocks an explicit deep declaration with eight or fewer body images", async () => {
   const project = await validManifestProject({ mobile: false });
   const source = fs.readFileSync(project.articleFile, "utf8")
@@ -253,6 +282,35 @@ test("aggregate verification blocks an explicit deep declaration with eight or f
   assert.ok(deepFinding);
   assert.equal(deepFinding.slug, project.slug);
   assert.match(deepFinding.message, /actual image_budget deep with 1 body images.*minimum 9 body images/);
+});
+
+test("source verification loads the tracked hash-bound classifications for visual_archive inventory", async () => {
+  const project = temporaryProject();
+  const slug = "hundred-years-of-cleaning-appliance-history";
+  const body = Array.from({ length: 51 }, (_, index) => `/images/insights/${slug}-image-${String(index + 1).padStart(3, "0")}.jpg`);
+  for (const url of body) {
+    const file = publicFile(project, url);
+    fs.mkdirSync(path.dirname(file), { recursive: true });
+    fs.writeFileSync(file, "archive fixture");
+  }
+  fs.writeFileSync(
+    path.join(project.contentRoot, "insights", `${slug}.mdx`),
+    `---\ntitle: "Archive"\nimage_budget: visual_archive\n---\n\n${body.map((url) => `![archive](${url})`).join("\n")}\n`
+  );
+  const outputHash = sha256(publicFile(project, body[0]));
+  const classificationPath = path.join(project.projectRoot, "scripts", "article-images", "historical-kind-classifications.json");
+  fs.mkdirSync(path.dirname(classificationPath), { recursive: true });
+  fs.writeFileSync(classificationPath, `${JSON.stringify({
+    version: 1,
+    assets: Object.fromEntries(body.map((url) => [url, { kind: "graphic", outputHash }]))
+  }, null, 2)}\n`);
+  writeManifest(project, { version: 1, processorVersion: "1", assets: {}, articles: {} });
+
+  const result = await verifyManifestFiles(project);
+
+  assert.ok(result.inventory, result.failures.map(({ message }) => message).join("\n"));
+  assert.equal(result.inventory.articles[slug].budgetClass, "visual_archive");
+  assert.equal(findingCodes(result).includes("INVENTORY_DISCOVERY_FAILED"), false);
 });
 
 test("manifest verification accepts exact real facts and checks a present external source without requiring it in CI", async () => {

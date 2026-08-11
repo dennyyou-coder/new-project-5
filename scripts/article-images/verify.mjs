@@ -12,6 +12,10 @@ import {
   IMAGE_BUDGETS
 } from "./config.mjs";
 import { buildManifest, serializeManifest } from "./manifest.mjs";
+import {
+  readHistoricalKindClassifications,
+  validateVisualArchiveEligibility
+} from "./historical-kinds.mjs";
 import { discoverArticleInventory } from "./references.mjs";
 
 const DEFAULT_SOURCE_LIBRARY = "/Users/youdenny/Desktop/WorldCleanBizAssets";
@@ -66,7 +70,7 @@ function explicitImageBudget(article) {
   return value?.replace(/^(?:"([\s\S]*)"|'([\s\S]*)')$/, "$1$2") ?? null;
 }
 
-export function verifyArticleBudget(article, assets) {
+export function verifyArticleBudget(article, assets, options = {}) {
   const failures = [];
   const warnings = [];
   const urls = selectedArticleUrls(article);
@@ -76,7 +80,25 @@ export function verifyArticleBudget(article, assets) {
   let budgetClass = requestedClass;
   const ineligibleExplicitDeep = explicitClass === "deep" && bodyImageCount <= 8;
   const unapprovedDeep = requestedClass === "deep" && explicitClass !== "deep";
-  if (ineligibleExplicitDeep || unapprovedDeep) {
+  if (requestedClass === "visual_archive") {
+    try {
+      if (explicitClass !== "visual_archive") {
+        const error = new Error(`${article.slug} requires explicit image_budget: visual_archive.`);
+        error.code = "VISUAL_ARCHIVE_NOT_ELIGIBLE";
+        throw error;
+      }
+      validateVisualArchiveEligibility({
+        slug: article.slug,
+        cover: article.cover,
+        body: article.body,
+        classifications: options.historicalKindClassifications,
+        actualHashes: Object.fromEntries(Object.entries(assets ?? {}).map(([url, asset]) => [url, asset?.outputHash]))
+      });
+    } catch (error) {
+      failures.push(finding(error.code ?? "VISUAL_ARCHIVE_NOT_ELIGIBLE", error.message, { slug: article.slug, url: error.url ?? "" }));
+      budgetClass = "standard";
+    }
+  } else if (ineligibleExplicitDeep || unapprovedDeep) {
     failures.push(finding(
       "DEEP_BUDGET_NOT_ELIGIBLE",
       `${article.slug}: deep budget requires explicit image_budget: deep and more than 8 body images; actual image_budget ${String(explicitClass)} with ${bodyImageCount} body images, allowed explicit deep with minimum 9 body images.`,
@@ -86,7 +108,7 @@ export function verifyArticleBudget(article, assets) {
   } else if (!ARTICLE_BUDGETS[requestedClass]) {
     failures.push(finding(
       "UNKNOWN_ARTICLE_BUDGET",
-      `${article.slug}: unknown article budget ${String(requestedClass)}; allowed standard or deep.`,
+      `${article.slug}: unknown article budget ${String(requestedClass)}; allowed standard, deep, or visual_archive.`,
       { slug: article.slug }
     ));
     budgetClass = "standard";
@@ -394,8 +416,14 @@ export async function verifyManifestFiles(options = {}) {
   }
 
   let inventory;
+  let historicalKindClassifications;
   try {
-    inventory = discoverArticleInventory({ contentRoot: paths.contentRoot, publicRoot: paths.publicRoot });
+    historicalKindClassifications = readHistoricalKindClassifications(paths.projectRoot);
+    inventory = discoverArticleInventory({
+      contentRoot: paths.contentRoot,
+      publicRoot: paths.publicRoot,
+      historicalKindClassifications
+    });
   } catch (error) {
     failures.push(finding(
       "INVENTORY_DISCOVERY_FAILED",
@@ -564,7 +592,14 @@ export async function verifyManifestFiles(options = {}) {
     }
   }
 
-  return result(failures, warnings, { ...paths, manifest, inventory, verifiedAssets, verifiedMobileAssets });
+  return result(failures, warnings, {
+    ...paths,
+    manifest,
+    inventory,
+    historicalKindClassifications,
+    verifiedAssets,
+    verifiedMobileAssets
+  });
 }
 
 function repositoryChangedFiles(projectRoot, baseRef) {
@@ -703,7 +738,9 @@ export async function verifyArticleImages(options = {}) {
   if (manifestReport.inventory && manifestReport.manifest) {
     for (const slug of Object.keys(manifestReport.inventory.articles).sort()) {
       const article = manifestReport.inventory.articles[slug];
-      const budget = verifyArticleBudget(article, manifestReport.manifest.assets ?? {});
+      const budget = verifyArticleBudget(article, manifestReport.manifest.assets ?? {}, {
+        historicalKindClassifications: manifestReport.historicalKindClassifications
+      });
       articleBudgets.push(budget);
       failures.push(...budget.failures);
       warnings.push(...budget.warnings);

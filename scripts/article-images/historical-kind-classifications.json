@@ -1,0 +1,513 @@
+{
+  "version": 1,
+  "assets": {
+    "/images/insights/hundred-years-of-cleaning-appliance-history-cover.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:0873f2d161089223a710f1c70ff504756be6ec9f96a8a1525d5e8ceac1bf65fb"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-001.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:0873f2d161089223a710f1c70ff504756be6ec9f96a8a1525d5e8ceac1bf65fb"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-002.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:9a55db266d745de69ec6b71105eaccd9b32f4bdf17b8c4dd66c2c5863879aa96"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-003.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:db5f6f158cca956692fb8df9d7c3f7414000cf1e7be5ecf7f196f12cd3ac90d0"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-004.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:4c51f848e4932fbf346e9609b5f4ba75ca2d4fef634d6c1f8938ca91e4cd9025"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-005.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:0d5eb88c7c86d0c1640cfd91d08a9dcabcb209fdbbc30b4c4d6726eddc190a89"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-006.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:f144357d6254272284fc9469be0099a35ff7f08ffe2703eb6671d9108499c7e5"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-007.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:97b868be92142715e86fb34fe0c3a4301aed344f16f156ac6ad5993e7b1f5923"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-008.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:3a3485e69949bec13307abb90d625fc670b7f41855183d009fc34f0487749c76"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-009.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:0b94e446da1e30cbe4d7ed123671f2d73be4a332a6454cdad23cfddaab4181ab"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-010.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:ad7e0810fc8853a3a7ccaf6b96bd323c8e4184d45380267ae3c9e52e1144feb7"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-011.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:edec17d41f8520cf69c4d5aa356a2878536cb7bde88197d73d21149ef60b9188"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-012.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-013.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:71eccbb061dfd4f84d233b98bd96e80f4254d0e493184a1d080ccffacf5c4300"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-014.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:b60c4ee7cfabfe435129e77707e0bc7d7c718b714e8f07fdfe22b4a6d3e1f0d6"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-015.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:7a02960f3ccf3f7e331af4b617b09485e1cbd5cef0c7ac06fa806aecf918bc17"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-016.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-017.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:8869afb2a81298c85671fe4b25e317b2e2e8fde1b928316ab9766c6c89658116"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-018.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:f34e2270e14af1bb9000a297ce73570b586a53e5df28ab17e3f4d4155f3e8a40"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-019.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:680b29999e59a63be72bdffad9771f840d95c4f3c912c41de464e2852523ca58"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-020.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:6c0fdac3c0f07469ab3bbec140c9722fcdcb7a49bafd0218ecae830734d1d13f"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-021.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:9f8d16d6c84d5aebf34d3e6cee7f0c8d4008098a2e573afe901bfe13a687bdcf"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-022.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:2c3ced4c2674a64ffa0ab61ffdf07db79a14f5d9a0641f8c681c5a456f873727"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-023.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:5f7de9d6a7ec9ea69414a3efacb4481d0ab29f952874a55a9f604d67bf777c69"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-024.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:8d916f8ab033907d08fd5ee17d4e1a7608c7f0d58813dea88f9bd73733ec2af8"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-025.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:39c4b888b57fd7c116260d6f231b6633ad3da4f0a7fa4fdec5a304a219a9835b"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-026.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:407fee49418d608d0a70f75c05cf4ec228f22b76cfb4d40f73f37b179b2dc734"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-027.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:31969eb0219783ea53dad970ff14896b7dd0414febee9f2c0550f69e4ecf0a45"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-028.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:ba330940f2cc0a725a01861722367626a8e9837cf58cfe45b58c47bf1303c34e"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-029.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:a2b5fe21de31a501f04afb25f050e8934c5bdbfcea1fb110618369bffd3c3674"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-030.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:f724aa7b341250c68597a75f7311122e8320f4021a8bc42e54016019ef7f0f5d"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-031.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:c99f9cdfb94ead33acdac863617ccc81c1459e8e4f6ab4914a04b1b5734b99c1"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-032.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:7ae3b2b1af5ca242abfa941677c16511cb6ebe7718bca89ac795b644343693a2"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-033.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:b563868ed85ae62b266ab4aba41d72129525200d902c1d58279c50986ff1e49a"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-034.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:d7f17f7513efe75a45fd4ae6f5478de7835a51dd241082a6af0799de1b9a6d9c"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-035.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:5c43ac1c0c058680c11e143add7337947716c84db810fb012f814f34e12ff5b8"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-036.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:c8c301192986e9d5ba00ec385e704f32791d4a63b730aa4262e6f22e953ef484"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-037.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:685df37b8bf445e6b6a8f2c7282c1ddff6fe420e37197e08fcc91c878051c621"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-038.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-039.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:5c37d06a1feeb55d3b2f2198d389201fe91c7898609eccf3bca46ce11215c789"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-040.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:5e8bd6c0d3b6ab4f89fadeca890397198f49528a44fa90e11c6df2ccb2340984"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-041.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:ca3d5a689cac7082af23036b406d3f95ec620e10deea9e4196e1049035ac14e4"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-042.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:2e8d76b1f944240ee564638aff69f1f292478962a442e5820496c3b1dceb6945"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-043.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:ef67f6d38f710c4a2619f423895c89ae7c4625f5fd6a8a7ffee920ca869f8f30"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-044.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:ad125b10c46aa4f05c62b935c0d8815ad0fe72b6efcc733309b7e07ee368a9e4"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-045.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:11a4c81578093a956c0b223de24dead5599a15f004d1716f7450f1dc4a49caed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-046.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:06efdf312152d662954bc45324c5c250c88cca780ece150bcd3d2b9daf152e6f"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-047.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:25193046b81ad2574c708edeac20c4c131e6eefd8a94aea843d9a849b7271823"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-048.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-049.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:906430fec498b73f4dfad9c266916ec1881ba3575395c26c75709f0cf43b9dd5"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-050.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:b36be97c78f7c7ba259d06a8ccc218b1c6ce30d763f296f0d233152350b55593"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-051.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:444df1e5c98c6e64e70ac77179144ccce877c8349482073dbb5cd48303c5f992"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-052.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:1f1b0a31d7c778a684878f7067ead3de6072ecce303db1995a05f89dfb8282dc"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-053.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:435938be07159ac3dbdff1fbe21121bc642eb59a10f8ccbd28a7b5981db67942"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-054.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:ee69a99a7a14e4a5882976fd1a193793406842dd01efec43324f3ed251c5daf6"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-055.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:b0a44f79c3f98e12dbca8d7a641f50037bc0fe022ac2cbf45b30a96b6705f0ef"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-056.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-057.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:361182f480e66bb4b36f7cabb71dd1e0e666366f1833e714f11e22248f51dadc"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-058.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:dc607d67a3adef4512bad560afc2cadae4cceee5745a524bf48e4b4fea328622"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-059.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:b3e856fb40786640fd1912df59d5bfa42495d2db028bdc28d72e18825951e6ef"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-060.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:308e5ed81f0475838dab627d2670d1dba1b6b596e7cd280aaa4aaab956fe42cc"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-061.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:957e2eabafc7aeff7ce8bd58416f433a03256e4ec46acad674879af7d9f7f790"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-062.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:3b913c5f322b769cb3a509e11acb2f7436cc90bbca5417eac658f4f5f26b2d8d"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-063.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:1b549b04978a330d68db361544472817532987dd732972404431e6a13a74fd57"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-064.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-065.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:f27334d54c6a9546eef6e4ab440591e6cbd1ad72115c2055ce0192552bc309b8"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-066.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:7b29f5d75854c2bb1905f3a4510ebdf602c719443c96038a40a5098606cc9650"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-067.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-068.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:4ca61459dd85d7ed81dbbd29f32c67a65d199502fac982157d3b4d8052959627"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-069.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:ee68fa4748a536d4bad32eae5d6bee825b1dd094280abe63c54820858ab7dbef"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-070.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-071.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:932009251f43ad60e179e2400c463d93d2c4ff1f025d581247380ecbd7909311"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-072.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:05857b50989e12b0c9a9d3fd966d8b2f1efe84f8de353da6623b205552e6b9f5"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-073.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:fca4f826f4322a2ecf2e2d7bc9b23e1ca399127484791384de9c6eae5f7ee984"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-074.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:d3f6fe5c7544a576f859257f52b584dab8e39a6e5a0e9aa4606af4ea2e891b35"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-075.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cb57379feb87704142921f7994e95b1154c6bb4094e27b032d22b808f345e4d4"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-076.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:169d046478a57e7ce9b32d3b736c638f340764276cbf5c136e511958ae2eaf34"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-077.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:7a405bf69e906333b0621437a8505dd1143fc7ed9dd6f8adf73c60e5eaca03a6"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-078.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:e146f27f510a921862ad28e4527d9db61612e67e161aa54bdecceffd08f00112"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-079.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:0023e6747b5d73f0ea8cdb2c26aad1a852b94f0d77dc8b8a0767a7e10336e316"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-080.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:bfdd338a5fe4dce10d73b6749f501a89b014fab8a8f98a44fefc455317140815"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-081.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:f3334d7a57f91bc73166c8c8e743c1a7cf2eecb98e820548af3dafd26a7db199"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-082.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:2750e4637359bd828df90e26b2210949777e02583ecc2bcf76447b9f8fdce875"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-083.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:fef8c7d9b9c2e662c1140f2227a04ba3be8dc0ba6b78542003abf35614f7beda"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-084.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:111200f4074a85ec4168c33ee552a0b948d3ee8e1bafe0df929f716c0ed13eef"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-085.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:0adff378063a081fc63084f10eaf8751157bc958a6cb660003c95f0a1e0ce4bf"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-086.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:0495306eb6cc0988bd4bd44ebfeb7add3f3bc05629bd305c60269fa4c9f60375"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-087.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:c93f3944adf2b122ba7eca57abb5ed5b189c69f8940f428e7a3f4e2297ccff32"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-088.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:8227950a6387bbbbd046b168a12dd4bc1bdaab58698337f0c6f0d1862c2035e7"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-089.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:506049e06986267fde94ae800216fdf8600c4a0e106ca23834af7c5d30480c59"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-090.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:133d2c2d6c700cf2436af3701d6326336157c9ca6d33d01aa091b56e059f9978"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-091.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:f178be85e232fb3d2425b369ecba8d7ee7d18b6e5588c264b03dcad4bc2c6d23"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-092.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:4f89db9c131870585481a043fd8b86bca1746055f6b0bbb40e2c33c21453c423"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-093.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:76867ef31033c490d8bb29eec3f5e60ec0a62ac64cedd9f6f5b9f978b0692136"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-094.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:bb580e079884ebfba9a643cde19d1cb63fed55c110d24fbaec16e4049692aec0"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-095.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:cd7ad3eb73575e7d44e3dc25004aaff9868ff5d3b27a17213f9a8f3b429f44ed"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-096.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:e4159bd52977febbb2a42bde523f994a0e32dcc76da0484fa28e7cc15fe9f757"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-097.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:00b791dc793e19c69e28c917fb2b194e642dbd5ccd52c9bf245f427baa3a46c1"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-098.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:479789458b9bca6a64e7d3e740d871c62817ff88ca0e57d61061532e6a37972e"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-099.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:510f1f011ef4bda60ad974b126576e8c63df3b3ac9ae7934d2a13079ff8651a8"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-100.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:bcd6eff15b1a96765b0c5aa3e1b528e7940ac64cce5508bc663f86f34327700b"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-101.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:69839ddd36933ec0ff2d548a1524961b8e14c025fcf418090a6d88373be68af5"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-102.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:a6872d7a34bc437e848beb4a5bb900cb544189a8e9b093450ea8fca65d7f5015"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-103.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:312657fe9339e2b7a339d667a5b63022812c33edc6fdd4ae3cd5f5645494f4ec"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-104.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:529a66724b6ab942f13eb255ee0c0d5d290ff93fb28364cfa9d766ec6703f02a"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-105.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:825305952d655b3058e3aaee481e259d8ca427b95e39081686c048e123429831"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-106.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:25193046b81ad2574c708edeac20c4c131e6eefd8a94aea843d9a849b7271823"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-107.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:b5a54b1cb0c86e52c88aab91b7946162e0b65a6b7074338aec43a58c1cddd76c"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-108.jpg": {
+      "kind": "graphic",
+      "outputHash": "sha256:c65371a3f6f7db33d22af9ec4349c85a709045754185c18af8d0f9a4439426fe"
+    },
+    "/images/insights/hundred-years-of-cleaning-appliance-history-image-109.jpg": {
+      "kind": "photo",
+      "outputHash": "sha256:6f35c637410add4afe098c83c24c66f918abdd0fa8f29dad325783713739955d"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-001.png": {
+      "kind": "photo",
+      "outputHash": "sha256:5b18e5cb3deefc54af5740b1400bd805d4c471bb28507be792904cacb1cc25f6"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-002.png": {
+      "kind": "photo",
+      "outputHash": "sha256:2c2d94057482e6f3d70dd61837cd254f3fa7f49a37fcaa5c4d91530ea8eca5c1"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-003.png": {
+      "kind": "photo",
+      "outputHash": "sha256:79c42dbec29d33117ee743d70e8062e8cdb0cc300f6dea8e1a2ae9643cd63723"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-004.png": {
+      "kind": "photo",
+      "outputHash": "sha256:1b4edb4a2867ff7723760ac4c0d8b508f691b095cd91110f74dde8ea0c2e73ab"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-005.png": {
+      "kind": "photo",
+      "outputHash": "sha256:82d45beb4b0d28ace6bc41b01f15b6f004cd3d8550613b0cde9de87a205bae01"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-006.png": {
+      "kind": "photo",
+      "outputHash": "sha256:ffe4e195988847837411ef349a3e32aad381855d49a2719d8dca4e456e0fc4d7"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-007.png": {
+      "kind": "photo",
+      "outputHash": "sha256:84783a0788e8b537da657876a507750cd4a3e1e673b4896632b7003e68cecb0e"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-008.png": {
+      "kind": "photo",
+      "outputHash": "sha256:ef5502e2b7ec10535d4ff072aea617dd13d470ab3235cddd8ce4028a88438e52"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-009.png": {
+      "kind": "photo",
+      "outputHash": "sha256:592af9b43ebb2372aa71d6925c5b434b215852122d9baf58b00f33fee592c0ba"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-010.png": {
+      "kind": "photo",
+      "outputHash": "sha256:1f4c65bc4de115fbc8c82452b3fc28adb1aca809d1bf2f4acd43557f88ab6026"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-011.png": {
+      "kind": "photo",
+      "outputHash": "sha256:db155d7c4bc2d9f4aaa990033597c6b4a2420f7b0fbc9726653ecc06a6ac9e5b"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-012.png": {
+      "kind": "photo",
+      "outputHash": "sha256:b01e3dd43317cb7b9422c5e30bef5c7f3a82ff85ececc9e00ef4d88cce6fad71"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-013.png": {
+      "kind": "photo",
+      "outputHash": "sha256:d10cd95bdc09d82637f53adb34a9892b0ccb1567b98fd56275c356bdbbcbf2b4"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-014.png": {
+      "kind": "graphic",
+      "outputHash": "sha256:cdedfa0ff8015c6603edc341ce61019b5322ff345181494102df76c66c88f8dd"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-015.png": {
+      "kind": "photo",
+      "outputHash": "sha256:83181348d7719c30ebf61ea2dbb4a586424412a43a511c1d2fea0b6112b09f9a"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-016.png": {
+      "kind": "photo",
+      "outputHash": "sha256:9c3342a72ea2a788ebd46f8ae81b274fe3ad1d5c394742849ea5f7003b7db974"
+    },
+    "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-017.png": {
+      "kind": "photo",
+      "outputHash": "sha256:8c4fcf4d1faefc35d97c7bce404e7ea662009d4afa1016e4ea638f289c23cb42"
+    }
+  }
+}

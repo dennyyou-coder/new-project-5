@@ -11,6 +11,7 @@ import sharp from "sharp";
 import {
   ArticleImagePreparationError,
   PHOTO_AGGREGATE_MOBILE_LONG_EDGES,
+  classifyHistoricalExtremeRecoveryAssets,
   prepareAllArticleImages,
   prepareArticleImages,
   selectPhotoAggregateRecoveryStage
@@ -123,6 +124,138 @@ test.after(() => {
 
 test("photo aggregate mobile recovery uses the approved descending ladder with a 390px hard floor", () => {
   assert.deepEqual(PHOTO_AGGREGATE_MOBILE_LONG_EDGES, [680, 640, 560, 480, 390]);
+});
+
+test("extreme historical recovery accepts only hash-bound explicit photos and identifies non-photo assets", () => {
+  const photo = "/images/insights/history-photo.jpg";
+  const graphic = "/images/insights/history-catalog.jpg";
+  const photoHash = `sha256:${"a".repeat(64)}`;
+  const graphicHash = `sha256:${"b".repeat(64)}`;
+
+  const result = classifyHistoricalExtremeRecoveryAssets({
+    slug: "history-fixture",
+    urls: [photo, graphic],
+    processed: {
+      [photo]: { outputHash: photoHash },
+      [graphic]: { outputHash: graphicHash }
+    },
+    classifications: {
+      [photo]: { kind: "photo", outputHash: photoHash },
+      [graphic]: { kind: "graphic", outputHash: graphicHash }
+    }
+  });
+
+  assert.deepEqual(result.photoUrls, [photo]);
+  assert.deepEqual(result.excluded, [{ url: graphic, kind: "graphic" }]);
+});
+
+test("extreme historical recovery blocks unknown and stale kind classifications", () => {
+  const url = "/images/insights/history-photo.jpg";
+  const outputHash = `sha256:${"a".repeat(64)}`;
+
+  assert.throws(
+    () => classifyHistoricalExtremeRecoveryAssets({
+      slug: "unknown-history-kind",
+      urls: [url],
+      processed: { [url]: { outputHash } },
+      classifications: {}
+    }),
+    (error) => error instanceof ArticleImagePreparationError
+      && error.code === "HISTORICAL_KIND_CLASSIFICATION_REQUIRED"
+      && error.message.includes(url)
+  );
+
+  assert.throws(
+    () => classifyHistoricalExtremeRecoveryAssets({
+      slug: "stale-history-kind",
+      urls: [url],
+      processed: { [url]: { outputHash } },
+      classifications: { [url]: { kind: "photo", outputHash: `sha256:${"b".repeat(64)}` } }
+    }),
+    (error) => error instanceof ArticleImagePreparationError
+      && error.code === "HISTORICAL_KIND_CLASSIFICATION_STALE"
+      && error.message.includes(url)
+  );
+});
+
+test("generated-state repair applies sub-640 recovery only to explicitly classified photos", async () => {
+  const project = temporaryProject();
+  const slug = "mixed-kind-extreme-repair";
+  const cover = `/images/insights/${slug}-cover.webp`;
+  const body = Array.from({ length: 5 }, (_, index) => `/images/insights/${slug}-image-${String(index + 1).padStart(3, "0")}.webp`);
+  writeArticle(project, slug, { cover, body });
+
+  const urls = [cover, ...body];
+  for (const url of urls) {
+    const width = 720;
+    const height = 480;
+    const pixels = Buffer.alloc(width * height * 3);
+    let state = 0x12345678;
+    for (let index = 0; index < pixels.length; index += 1) {
+      state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+      pixels[index] = state >>> 24;
+    }
+    fs.mkdirSync(path.dirname(publicFile(project, url)), { recursive: true });
+    await sharp(pixels, { raw: { width, height, channels: 3 } })
+      .webp({ quality: 72, effort: 6 })
+      .toFile(publicFile(project, url));
+  }
+
+  const graphic = body[0];
+  const classifications = Object.fromEntries(urls.map((url) => {
+    const outputHash = `sha256:${crypto.createHash("sha256").update(fs.readFileSync(publicFile(project, url))).digest("hex")}`;
+    return [url, { kind: url === graphic ? "graphic" : "photo", outputHash }];
+  }));
+  const classificationPath = path.join(project.projectRoot, "scripts", "article-images", "historical-kind-classifications.json");
+  fs.mkdirSync(path.dirname(classificationPath), { recursive: true });
+  fs.writeFileSync(classificationPath, `${JSON.stringify({ version: 1, assets: classifications }, null, 2)}\n`);
+
+  const result = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    repairGeneratedState: true,
+    dryRun: true
+  });
+
+  assert.ok(result.articles[0].warnings.includes(
+    `PHOTO_AGGREGATE_RECOVERY slug=${slug} budget=standard desktop=normal mobile=480 cover=normal images=6`
+  ));
+  assert.equal(result.articles[0].filesCreated.some((file) => file.endsWith(`${path.basename(graphic, ".webp")}-800.webp`)), false);
+  assert.equal(result.articles[0].filesReplaced.some((file) => !file.endsWith("article-image-manifest.json")), false);
+  assert.equal(result.articles[0].desktopBytes <= 1_500_000, true);
+  assert.equal(result.articles[0].mobileBytes <= 750_000, true);
+});
+
+test("historical preparation grants visual_archive only after loading complete current classifications", async () => {
+  const project = temporaryProject();
+  const slug = "hundred-years-of-cleaning-appliance-history";
+  const cover = `/images/insights/${slug}-cover.jpg`;
+  const body = Array.from({ length: 51 }, (_, index) => `/images/insights/${slug}-image-${String(index + 1).padStart(3, "0")}.jpg`);
+  writeArticle(project, slug, { cover, body, extraFrontmatter: "image_budget: visual_archive\n" });
+  await writeImage(publicFile(project, cover), { width: 48, height: 32, format: "jpeg" });
+  for (const url of body) {
+    fs.mkdirSync(path.dirname(publicFile(project, url)), { recursive: true });
+    fs.copyFileSync(publicFile(project, cover), publicFile(project, url));
+  }
+  const outputHash = `sha256:${crypto.createHash("sha256").update(fs.readFileSync(publicFile(project, cover))).digest("hex")}`;
+  const classificationPath = path.join(project.projectRoot, "scripts", "article-images", "historical-kind-classifications.json");
+  fs.mkdirSync(path.dirname(classificationPath), { recursive: true });
+  fs.writeFileSync(classificationPath, `${JSON.stringify({
+    version: 1,
+    assets: Object.fromEntries([cover, ...body].map((url) => [url, { kind: "graphic", outputHash }]))
+  }, null, 2)}\n`);
+
+  const result = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    repairGeneratedState: true,
+    dryRun: true
+  });
+
+  assert.equal(result.articles[0].budgetClass, "visual_archive");
+  assert.equal(result.articles[0].desktopBytes <= 2_500_000, true);
+  assert.equal(result.articles[0].mobileBytes <= 1_600_000, true);
+  assert.equal(result.articles[0].filesReplaced.some((file) => !file.endsWith("article-image-manifest.json")), false);
 });
 
 test("deep photo recovery selects the first passing aggregate stage for a 46-photo fixture", () => {
@@ -755,6 +888,34 @@ test("prepareAllArticleImages preserves the approved LG SVG primary and reports 
   assert.equal(result.articles[0].filesCreated.some((file) => file.endsWith("lg-home-appliance-solution-map-800.webp")), false);
 });
 
+test("historical SVG primaries bypass every raster path even when Sharp rejects their declared size", async () => {
+  const project = temporaryProject();
+  const slug = "historical-svg-raster-bypass";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  const body = [`/images/blog/${slug}-large-map.svg`];
+  writeArticle(project, slug, { cover, body });
+  await writeImage(publicFile(project, cover), { format: "webp" });
+  fs.mkdirSync(path.dirname(publicFile(project, body[0])), { recursive: true });
+  const svg = Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" width="100000" height="100000"><rect width="100000" height="100000" fill="#fff"/></svg>');
+  fs.writeFileSync(publicFile(project, body[0]), svg);
+
+  await assert.rejects(
+    sharp(svg).metadata(),
+    /pixel limit/i,
+    "fixture must remain invalid for Sharp so a passing preparation proves the raster path was bypassed"
+  );
+
+  const result = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+
+  assert.deepEqual(fs.readFileSync(publicFile(project, body[0])), svg);
+  assert.equal(result.articles[0].filesCreated.some((file) => file.endsWith("-large-map-800.webp")), false);
+  assert.equal(result.articles[0].filesReplaced.some((file) => file.endsWith("-large-map.svg")), false);
+});
+
 test("prepareAllArticleImages generally preserves a uniquely matched incompatible historical primary format", async () => {
   const project = temporaryProject();
   const slug = "historical-incompatible-format";
@@ -799,8 +960,79 @@ test("prepareAllArticleImages reports ambiguous external semantic matches withou
     dryRun: true
   });
   assert.ok(result.articles[0].warnings.includes(
-    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} unmatched=02-shared-map.png,03-shared-map.webp repository-primary-preserved`
+    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${body[0]} sources=02-shared-map.png,03-shared-map.webp reason=AMBIGUOUS_SEMANTIC_MATCH repository-primary-preserved`
   ));
+});
+
+test("historical validation never treats a same-sequence different-name and format source as equivalent", async () => {
+  const project = temporaryProject();
+  const slug = "historical-sequence-is-not-identity";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  const body = ["/images/blog/02-repository-identity.svg"];
+  writeArticle(project, slug, { cover, body });
+  await writeImage(publicFile(project, cover), { format: "webp" });
+  fs.mkdirSync(path.dirname(publicFile(project, body[0])), { recursive: true });
+  fs.writeFileSync(publicFile(project, body[0]), '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"/>');
+  const folder = sourceFolder(project, slug);
+  await writeImage(path.join(folder, "01-cover.png"));
+  await writeImage(path.join(folder, "02-unrelated-external-catalog.png"), { width: 900, height: 600 });
+
+  const result = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+
+  assert.deepEqual(result.articles[0].warnings, [
+    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${body[0]} sources=02-unrelated-external-catalog.png reason=NO_SEMANTIC_MATCH repository-primary-preserved`
+  ]);
+});
+
+test("historical validation names the real external descriptor when only a cover descriptor exists", async () => {
+  const project = temporaryProject();
+  const slug = "historical-cover-only-source-conflict";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  const body = ["/images/blog/repository-identity.svg"];
+  writeArticle(project, slug, { cover, body });
+  await writeImage(publicFile(project, cover), { format: "webp" });
+  fs.mkdirSync(path.dirname(publicFile(project, body[0])), { recursive: true });
+  fs.writeFileSync(publicFile(project, body[0]), '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"/>');
+  const folder = sourceFolder(project, slug);
+  await writeImage(path.join(folder, "01-cover.png"));
+
+  const result = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+
+  assert.deepEqual(result.articles[0].warnings, [
+    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${body[0]} sources=01-cover.png reason=NO_SEMANTIC_MATCH repository-primary-preserved`
+  ]);
+});
+
+test("historical validation records a true same-sequence semantic match and its real format conflict", async () => {
+  const project = temporaryProject();
+  const slug = "historical-sequence-with-semantic-identity";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  const body = ["/images/blog/02-identity-map.svg"];
+  writeArticle(project, slug, { cover, body });
+  await writeImage(publicFile(project, cover), { format: "webp" });
+  fs.mkdirSync(path.dirname(publicFile(project, body[0])), { recursive: true });
+  fs.writeFileSync(publicFile(project, body[0]), '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"/>');
+  const folder = sourceFolder(project, slug);
+  await writeImage(path.join(folder, "01-cover.png"));
+  await writeImage(path.join(folder, "02-identity-map.png"), { width: 900, height: 600 });
+
+  const result = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+
+  assert.deepEqual(result.articles[0].warnings, [
+    `INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT slug=${slug} primary=${body[0]} source=02-identity-map.png repository-primary-preserved`
+  ]);
 });
 
 test("prepareAllArticleImages validates an EGO-shaped historical SVG through a slug-owned prefix", async () => {
@@ -887,7 +1119,7 @@ test("prepareAllArticleImages reports ambiguous slug-owned suffix matches with i
     dryRun: true
   });
   assert.ok(result.articles[0].warnings.includes(
-    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} unmatched=02-ownership-identity-map.png,03-identity-map.webp repository-primary-preserved`
+    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${body[0]} sources=02-ownership-identity-map.png,03-identity-map.webp reason=AMBIGUOUS_SEMANTIC_MATCH repository-primary-preserved`
   ));
 });
 
@@ -911,7 +1143,7 @@ test("prepareAllArticleImages reports ambiguous slug-owned historical SVG suffix
     dryRun: true
   });
   assert.ok(result.articles[0].warnings.includes(
-    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} unmatched=02-ownership-platform-map.svg,03-platform-map.svg repository-primary-preserved`
+    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${body[0]} sources=02-ownership-platform-map.svg,03-platform-map.svg reason=AMBIGUOUS_SEMANTIC_MATCH repository-primary-preserved`
   ));
 });
 
@@ -934,7 +1166,7 @@ test("prepareAllArticleImages reports unrelated external SVG prefixes without di
     dryRun: true
   });
   assert.ok(result.articles[0].warnings.includes(
-    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} unmatched=02-ownership-platform-map.svg repository-primary-preserved`
+    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${body[0]} sources=02-ownership-platform-map.svg reason=NO_SEMANTIC_MATCH repository-primary-preserved`
   ));
 });
 
@@ -964,9 +1196,11 @@ test("prepareAllArticleImages keeps Midea-shaped historical repository primaries
     dryRun: true
   });
 
-  assert.ok(result.articles[0].warnings.includes(
-    `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} unmatched=02-brand-relationship-map.png,03-manufacturing-responsibility-map.png repository-primary-preserved`
-  ));
+  for (const url of body) {
+    assert.ok(result.articles[0].warnings.includes(
+      `EXTERNAL_SOURCE_CONTENT_CONFLICT slug=${slug} primary=${url} sources=02-brand-relationship-map.png,03-manufacturing-responsibility-map.png reason=NO_SEMANTIC_MATCH repository-primary-preserved`
+    ));
+  }
   for (const [index, url] of body.entries()) {
     assert.deepEqual(fs.readFileSync(publicFile(project, url)), before[index]);
     assert.equal(result.articles[0].filesReplaced.some((file) => file.endsWith(path.basename(url))), false);
