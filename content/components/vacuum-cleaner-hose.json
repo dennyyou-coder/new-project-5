@@ -1,0 +1,848 @@
+{
+  "status": "published",
+  "slug": "vacuum-cleaner-hose",
+  "name": "Vacuum Cleaner Hose",
+  "aliases": [
+    "vacuum suction hose",
+    "vacuum extension hose",
+    "cleaner hose assembly",
+    "powered vacuum hose"
+  ],
+  "definition": "A flexible airflow conduit between a vacuum body, wand, handle, cleaner head or tool; bore, length, cuff geometry, electrical contacts, swivel, seals and exact model scope must be approved together.",
+  "includedScope": [
+    "Passive and powered vacuum cleaner hose assemblies",
+    "Upright, canister, handheld and stick-vacuum hose applications",
+    "Airway, cuff, latch, electrical and exact-model checks"
+  ],
+  "excludedScope": [
+    "Carpet-extractor solution hoses",
+    "Pressure-washer hoses",
+    "Generic ducting without an approved machine interface"
+  ],
+  "primaryApplications": [
+    "Above-floor vacuum cleaning",
+    "Canister-vacuum airflow and control paths",
+    "OEM service replacement"
+  ],
+  "headline": "Hose bore, cuff geometry and any electrical path must match the complete vacuum system.",
+  "description": "This profile separates passive, stretch and powered vacuum hose assemblies and converts official service evidence into practical airflow, interface and fit checks.",
+  "metaDescription": "Vacuum cleaner hose types, diameters, cuffs, powered contacts, airflow losses, failure symptoms and exact model compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/vacuum-cleaner-hose/hero.webp",
+  "heroImageAlt": "Hoover Emerge powered vacuum cleaner extension hose",
+  "heroImageCaption": "Official Hoover powered extension-hose image on a WCB canvas; the cited product page limits it to Emerge stick vacuums.",
+  "heroSourceUrl": "https://cdn.shopify.com/s/files/1/0484/2428/8407/files/440015602_Extension_Hose.jpg?v=1718045746",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-hose/architecture-family.webp",
+      "alt": "Hoover powered extension hose with integrated machine interfaces",
+      "caption": "Official Hoover image showing a powered hose assembly with model-specific couplings and control housing.",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0484/2428/8407/files/440015602_Extension_Hose.jpg?v=1718045746"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-hose/performance-boundaries.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-hose/performance-boundaries-mobile.svg",
+      "alt": "Vacuum Cleaner Hose performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts",
+        "bissell-1625014"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/vacuum-cleaner-hose/application-reference.webp",
+      "alt": "Oreck slinky vacuum hose assembly",
+      "caption": "Official Oreck 430000895 hose image on a WCB canvas; the named BB900-DGR application and Shurlock interfaces define its scope.",
+      "sourceUrl": "https://cdn.shopify.com/s/files/1/0447/4693/2386/files/430000895_ATF_1.png?v=1727975813"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/vacuum-cleaner-hose/compatibility-gate.svg",
+      "mobileSrc": "/images/components/vacuum-cleaner-hose/compatibility-gate-mobile.svg",
+      "alt": "Vacuum Cleaner Hose compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts",
+        "bissell-1625014"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Airway boundary",
+      "value": "A hose is part of the sealed suction path, so bore, length, leakage and blockage affect system behavior",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-canister",
+        "oreck-slinky",
+        "iec-60312"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Interface boundary",
+      "value": "Official replacement pages identify distinct cuffs, handles and named machine applications",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "oreck-slinky",
+        "bissell-1614277"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Powered boundary",
+      "value": "A powered hose can add electrical contacts and controls beyond the airflow connection",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "bissell-1614277"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Airflow transport",
+      "role": "Carries debris-laden air between the tool, cleaner head and separation system.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 2,
+      "name": "Reach and articulation",
+      "role": "Provides flexible reach while preserving a usable bend radius.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 3,
+      "name": "Interface sealing",
+      "role": "Cuffs, O-rings and latches retain the hose and limit leakage.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 4,
+      "name": "Power or control path",
+      "role": "Selected powered assemblies carry conductors or control interfaces to a tool or handle.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Passive corrugated hose",
+      "operatingPrinciple": "A flexible plastic airway connects model-specific cuffs without electrical conductors.",
+      "applicationBoundary": "Named dry-vacuum body and tool interface",
+      "benefits": [
+        "Simple and lightweight"
+      ],
+      "limitations": [
+        "Corrugation, bore and cuff leakage affect flow"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Stretch or slinky hose",
+      "operatingPrinciple": "A collapsible airway extends under pull and retracts for storage.",
+      "applicationBoundary": "Named handheld or compact vacuum system",
+      "benefits": [
+        "Compact storage and reach"
+      ],
+      "limitations": [
+        "Extension ratio changes flow resistance and recoil load"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Powered hose assembly",
+      "operatingPrinciple": "An airway integrates conductors, contacts or controls for an electric tool or handle.",
+      "applicationBoundary": "Exact machine, voltage/control and powered accessory system",
+      "benefits": [
+        "Supports powered attachments"
+      ],
+      "limitations": [
+        "Electrical pinout, insulation and latching are proprietary"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Inner diameter and length",
+      "purchasingMeaning": "Control airflow resistance, reach and storage",
+      "reportingBoundary": "Measure the effective bore and installed length with cuffs defined",
+      "comparisonCaution": "A nominal diameter does not define corrugation or cuff throat.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Cuff and latch geometry",
+      "purchasingMeaning": "Defines mechanical retention and sealing",
+      "reportingBoundary": "Record both ends, orientation, lock and seal datum",
+      "comparisonCaution": "A hose that inserts may not seal or lock.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Bend and crush behavior",
+      "purchasingMeaning": "Affects durability and blockage risk",
+      "reportingBoundary": "Use documented radius and duty where available",
+      "comparisonCaution": "Softness alone does not establish service life.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Electrical interface",
+      "purchasingMeaning": "Defines powered-tool and control compatibility",
+      "reportingBoundary": "Record conductor count, contact layout and insulation scope",
+      "comparisonCaution": "Matching physical ends do not prove electrical safety.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Above-floor upright cleaning",
+      "wcbAssessment": "Approve the exact machine cuff, tool end, length and storage path.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Canister floor cleaning",
+      "wcbAssessment": "Verify hose-and-handle assembly, swivel, airflow and any control conductors together.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Powered stick-vacuum extension",
+      "wcbAssessment": "Use only the manufacturer-listed powered hose and attachment system.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact service identity",
+      "requiredMatch": "Current part number, supersession, region and model list",
+      "why": "Generic hose labels conceal interface revisions.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Airway geometry",
+      "requiredMatch": "Bore, length, corrugation, cuff throat and seal condition",
+      "why": "Restriction or leakage can reduce recovery.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Mechanical connection",
+      "requiredMatch": "Both cuffs, latch, swivel, rotation stop and tool retention",
+      "why": "One matching end is insufficient.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Electrical system",
+      "requiredMatch": "Voltage/control, contacts, strain relief and insulation when present",
+      "why": "Incorrect powered interfaces can damage controls or create a hazard.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Weak suction at the tool",
+      "possibleCauses": [
+        "Blockage or collapsed hose",
+        "Split corrugation or leaking cuff"
+      ],
+      "safetyBoundary": "Disconnect power before removing the hose or blockage.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Hose detaches or rotates incorrectly",
+      "possibleCauses": [
+        "Wrong cuff or worn latch",
+        "Damaged swivel or missing seal"
+      ],
+      "safetyBoundary": "Stop use if the hose cannot be positively retained.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Powered tool is intermittent",
+      "possibleCauses": [
+        "Broken conductor or contact",
+        "Wrong powered-hose revision"
+      ],
+      "safetyBoundary": "Do not bypass contacts or splice an unapproved flexible assembly.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Hoover",
+      "familyName": "440015602 Powered Extension Hose",
+      "architecture": "Powered flexible hose",
+      "applicationScope": "Emerge stick vacuums",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Hoover US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Hoover",
+      "familyName": "440007792 Lower Hose",
+      "architecture": "Short internal/lower hose",
+      "applicationScope": "Named Hoover replacement scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Hoover US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-lower"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Hoover",
+      "familyName": "440016436 Blow Molded Hose",
+      "architecture": "Canister-vacuum hose",
+      "applicationScope": "Named Hoover canister scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Hoover US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-canister"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Oreck",
+      "familyName": "430000895 Slinky 4:1 Shurlock hose",
+      "architecture": "Stretch hose",
+      "applicationScope": "BB900-DGR named scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Oreck US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "BISSELL",
+      "familyName": "1625014 Hose Assembly",
+      "architecture": "Model-listed flexible hose",
+      "applicationScope": "Select vacuum cleaners",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "BISSELL US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "bissell-1625014"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "BISSELL",
+      "familyName": "1614420 PowerSwift Hose Assembly",
+      "architecture": "Upright replacement hose",
+      "applicationScope": "Select PowerSwift vacuum scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "BISSELL US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "bissell-1614420"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "BISSELL",
+      "familyName": "1614277 Canister Hose and Handle",
+      "architecture": "Integrated handle and hose",
+      "applicationScope": "Select canister-vacuum scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "BISSELL US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "bissell-1614277"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact service identity",
+      "reason": "Generic hose labels conceal interface revisions.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Airway geometry",
+      "reason": "Restriction or leakage can reduce recovery.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Mechanical connection",
+      "reason": "One matching end is insufficient.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Electrical system",
+      "reason": "Incorrect powered interfaces can damage controls or create a hazard.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "hoover-lower",
+        "hoover-canister",
+        "oreck-slinky",
+        "oreck-parts"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60312-1",
+      "jurisdiction": "International",
+      "version": "2010+A1:2011",
+      "applicability": "Performance-method context for dry household vacuums; not a hose compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60312"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-12",
+      "title": "Official parts ecosystems continue to separate passive, stretch and powered hose assemblies",
+      "summary": "Reviewed Hoover, Oreck and BISSELL sources publish distinct part identities and machine scopes rather than a universal vacuum hose.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "hoover-powered",
+        "oreck-slinky",
+        "bissell-1614277"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "sources": [
+    {
+      "id": "hoover-powered",
+      "title": "Powered Extension Hose 440015602",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/products/powered-extension-hose",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "hoover-lower",
+      "title": "Lower Hose 440007792",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/products/lower-hose",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "hoover-canister",
+      "title": "Blow Molded Hose 440016436",
+      "publisher": "Hoover",
+      "sourceType": "manufacturer",
+      "url": "https://hoover.com/products/blow-molded-hose",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "oreck-slinky",
+      "title": "Slinky 4:1 hose with Shurlock 430000895",
+      "publisher": "Oreck",
+      "sourceType": "manufacturer",
+      "url": "https://oreck.com/products/hose-slinky-4-1-blk-w-shurlck",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "oreck-parts",
+      "title": "Oreck vacuum parts and accessories",
+      "publisher": "Oreck",
+      "sourceType": "manufacturer",
+      "url": "https://oreck.com/collections/parts-accessories-vacuums",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "bissell-1625014",
+      "title": "Vacuum Hose Assembly 1625014",
+      "publisher": "BISSELL",
+      "sourceType": "manufacturer",
+      "url": "https://www.bissell.com/en-us/product/hose-for-select-vacuum-cleaners-1625014.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "bissell-1614420",
+      "title": "PowerSwift Hose Assembly 1614420",
+      "publisher": "BISSELL",
+      "sourceType": "manufacturer",
+      "url": "https://www.bissell.com/en-us/product/hose-assembly-for-select-vacuum-cleaners-1614420.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "bissell-1614277",
+      "title": "Canister Hose and Handle 1614277",
+      "publisher": "BISSELL",
+      "sourceType": "manufacturer",
+      "url": "https://www.bissell.com/en-us/product/removable-handle-w%2F-hose-for-select-canister-vacuums-1614277.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "iec-60312",
+      "title": "IEC 60312-1 dry vacuum performance methods",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/1335",
+      "accessedAt": "2026-08-12"
+    }
+  ],
+  "publishedAt": "2026-08-12",
+  "lastVerified": "2026-08-12",
+  "lastModified": "2026-08-12"
+}

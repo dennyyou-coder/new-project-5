@@ -1,0 +1,857 @@
+{
+  "status": "published",
+  "slug": "floor-scrubber-vacuum-motor",
+  "name": "Floor Scrubber Vacuum Motor",
+  "aliases": [
+    "scrubber vacuum fan",
+    "recovery turbine motor",
+    "scrubber suction motor",
+    "wet pickup vacuum motor"
+  ],
+  "definition": "A motor-driven vacuum fan or turbine that creates the airflow and pressure differential for recovered solution; voltage, input power, fan stages, airflow/vacuum curve, cooling, discharge, sealing and machine controls must match.",
+  "includedScope": [
+    "Vacuum fan and motor assemblies for scrubber-dryers",
+    "Single-, two- and three-stage recovery architectures",
+    "Electrical, aerodynamic, mounting, sealing and machine-fit checks"
+  ],
+  "excludedScope": [
+    "Dry household vacuum replacement motors",
+    "Scrub-brush and traction motors",
+    "Motor-only comparisons without fan, airflow and recovery-system scope"
+  ],
+  "primaryApplications": [
+    "Walk-behind scrubber solution recovery",
+    "Ride-on scrubber vacuum systems",
+    "OEM service replacement and system qualification"
+  ],
+  "headline": "Voltage and wattage are only the start; fan stage, airflow curve, sealing and controls complete the fit.",
+  "description": "This profile maps scrubber vacuum fan assemblies and machine recovery systems using official parts, service and machine evidence.",
+  "metaDescription": "Floor scrubber vacuum motor voltage, power, stages, airflow, vacuum, cooling, sealing and exact machine compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/floor-scrubber-vacuum-motor/hero.webp",
+  "heroImageAlt": "Tennant 9002562 floor scrubber vacuum motor kit",
+  "heroImageCaption": "Official Tennant 9002562 vacuum-motor-kit image on a WCB canvas; the manufacturer states that parts are machine-specific.",
+  "heroSourceUrl": "https://www.tennantco.com/services/product/image.tennant-eu.9002562.image",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-vacuum-motor/architecture-family.webp",
+      "alt": "Tennant vacuum motor and fan kit with gasket",
+      "caption": "Official Tennant image showing the motor, fan housing, connector and sealing gasket as one service kit.",
+      "sourceUrl": "https://www.tennantco.com/services/product/image.tennant-eu.9002562.image"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-vacuum-motor/performance-boundaries.svg",
+      "mobileSrc": "/images/components/floor-scrubber-vacuum-motor/performance-boundaries-mobile.svg",
+      "alt": "Floor Scrubber Vacuum Motor performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7",
+        "nilfisk-sc650"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-vacuum-motor/application-reference.webp",
+      "alt": "Kärcher KIRA B 50 scrubber-dryer with vacuum recovery system",
+      "caption": "Official Kärcher KIRA B 50 image on a WCB canvas; its published turbine power is machine-level evidence, not a universal replacement-motor specification.",
+      "sourceUrl": "https://d1y4tv7o00gnfq.cloudfront.net/mam/15330020/mainproduct/74c9059b-ef1f-4b66-844e-08a8babba3b9/d2.jpg"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-vacuum-motor/compatibility-gate.svg",
+      "mobileSrc": "/images/components/floor-scrubber-vacuum-motor/compatibility-gate-mobile.svg",
+      "alt": "Floor Scrubber Vacuum Motor compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7",
+        "nilfisk-sc650"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Recovery role",
+      "value": "Official machine documentation ties the vacuum fan to recovered-water pickup and floor-drying performance",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t7",
+        "nilfisk-sc650",
+        "karcher-kira"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Electrical boundary",
+      "value": "Official families publish different DC voltage and power scopes",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-mocc00481",
+        "tennant-t360",
+        "nilfisk-sc650"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Assembly boundary",
+      "value": "Motor, fan stages, housing, gasket, connector and discharge path can form one machine-specific service system",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "ipc-imop"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Pressure differential",
+      "role": "The fan stages create vacuum that draws recovered solution and air through the squeegee path.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 2,
+      "name": "Airflow transport",
+      "role": "The motor-fan assembly moves the wet recovery air stream into and through the recovery system.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 3,
+      "name": "Water separation boundary",
+      "role": "Floats, filters and tank geometry must keep bulk liquid from the motor inlet.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 4,
+      "name": "Exhaust and cooling",
+      "role": "Discharge orientation and motor cooling manage heat, noise and moisture exposure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Tangential-discharge bypass motor",
+      "operatingPrinciple": "Motor cooling air is separated from working air and the fan housing exhausts tangentially.",
+      "applicationBoundary": "Named scrubber fan housing and duct path",
+      "benefits": [
+        "Defined discharge routing and wet-recovery suitability when approved"
+      ],
+      "limitations": [
+        "Outlet angle, gasket and mounting are model-specific"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Two-stage vacuum fan",
+      "operatingPrinciple": "Two fan stages build the machine's documented vacuum/airflow balance.",
+      "applicationBoundary": "Named walk-behind scrubber recovery system",
+      "benefits": [
+        "Common balance of vacuum and compact size"
+      ],
+      "limitations": [
+        "Stage count alone does not define the curve"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Three-stage vacuum fan",
+      "operatingPrinciple": "Three fan stages support a higher-vacuum recovery architecture in a named machine.",
+      "applicationBoundary": "Named ride-on or high-recovery scrubber system",
+      "benefits": [
+        "Higher pressure potential in the documented assembly"
+      ],
+      "limitations": [
+        "Power, cooling, height and controls differ from two-stage systems"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Voltage and current/power",
+      "purchasingMeaning": "Define electrical load and controller/protection requirements",
+      "reportingBoundary": "Use rated operating condition and duty",
+      "comparisonCaution": "Matching voltage or wattage alone does not establish fit.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Fan stages and curve",
+      "purchasingMeaning": "Define airflow versus vacuum behavior",
+      "reportingBoundary": "Require the named motor-fan curve or machine operating point",
+      "comparisonCaution": "Maximum vacuum and maximum airflow occur at different conditions.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Mounting and sealing",
+      "purchasingMeaning": "Define housing support and recovery-air integrity",
+      "reportingBoundary": "Record flange, gasket, orientation, fasteners and compression",
+      "comparisonCaution": "A leaking gasket can mimic a weak motor.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Cooling and discharge",
+      "purchasingMeaning": "Define thermal management and exhaust routing",
+      "reportingBoundary": "Record bypass/through-flow type and outlet geometry",
+      "comparisonCaution": "Wrong discharge direction can overheat or wet adjacent parts.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Compact walk-behind scrubber",
+      "wcbAssessment": "Match low-voltage fan assembly, recovery tank, float and squeegee airflow path.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Mid-size ride-on scrubber",
+      "wcbAssessment": "Approve stage count, duty, noise mode, cooling and controller limits together.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Replacement qualification",
+      "wcbAssessment": "Freeze the complete motor-fan curve, mounting, connector, gasket and water-protection test.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Exact part and machine",
+      "requiredMatch": "Current fan/motor kit, supersession, model and serial range",
+      "why": "Related scrubbers can use different fan revisions.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Electrical interface",
+      "requiredMatch": "Voltage, current/power, connector, polarity, speed control and protection",
+      "why": "A motor can run yet overload the controller.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Aerodynamic interface",
+      "requiredMatch": "Fan stages, curve, inlet, tangential outlet and recovery duct",
+      "why": "Physical diameter does not define suction performance.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Wet-system protection",
+      "requiredMatch": "Gasket, float shutoff, filters, drainage and cooling path",
+      "why": "Liquid ingestion can create electrical and mechanical hazards.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Poor water pickup",
+      "possibleCauses": [
+        "Air leak or blocked hose/filter",
+        "Worn fan or incorrect motor curve"
+      ],
+      "safetyBoundary": "Check the full recovery path before condemning the motor.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Motor runs hot or trips",
+      "possibleCauses": [
+        "Wrong electrical load",
+        "Blocked cooling or wet contamination"
+      ],
+      "safetyBoundary": "Isolate the battery and follow the service manual.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Excessive noise or vibration",
+      "possibleCauses": [
+        "Fan damage or liquid ingestion",
+        "Incorrect gasket, mounting or bearing wear"
+      ],
+      "safetyBoundary": "Stop operation if the fan contacts the housing or ejects debris.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Tennant",
+      "familyName": "9002562 Vacuum Motor Kit",
+      "architecture": "Motor-fan service kit with gasket",
+      "applicationScope": "Machine-specific fitment",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Tennant Europe",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Tennant",
+      "familyName": "9017716 Vacuum Fan",
+      "architecture": "Vacuum fan assembly",
+      "applicationScope": "Named T290/T291/T391-family parts scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Tennant Europe",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9017716"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Tennant",
+      "familyName": "MOCC00481 36 VDC Vacuum Motor",
+      "architecture": "36 VDC motor family",
+      "applicationScope": "Named Tennant parts scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Tennant US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-mocc00481"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Tennant",
+      "familyName": "1255137 24 VDC three-stage fan",
+      "architecture": "Three-stage vacuum fan",
+      "applicationScope": "Named T7/T12 parts scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Tennant Europe",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Nilfisk",
+      "familyName": "SC650 vacuum system",
+      "architecture": "400 W machine vacuum-motor system",
+      "applicationScope": "Named SC650 configurations and manual edition",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Nilfisk service manual",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "nilfisk-sc650"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "IPC",
+      "familyName": "i-mop Lite vacuum motor assembly",
+      "architecture": "Compact scrubber motor assembly",
+      "applicationScope": "Named i-mop Lite parts scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "IPC US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "ipc-imop"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "KIRA B 50 turbine",
+      "architecture": "630 W machine turbine system",
+      "applicationScope": "Named KIRA B 50 machine configuration",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher Germany",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-kira"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Exact part and machine",
+      "reason": "Related scrubbers can use different fan revisions.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Electrical interface",
+      "reason": "A motor can run yet overload the controller.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Aerodynamic interface",
+      "reason": "Physical diameter does not define suction performance.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Wet-system protection",
+      "reason": "Liquid ingestion can create electrical and mechanical hazards.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-9002562",
+        "tennant-9017716",
+        "tennant-mocc00481",
+        "tennant-t360",
+        "tennant-t7"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety context for commercial floor-treatment machines within the standard scope; not a vacuum-motor compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60335-2-72"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-12",
+      "title": "Current scrubber platforms publish distinct voltage, power and fan-stage recovery systems",
+      "summary": "Reviewed Tennant, Nilfisk, IPC and Kärcher sources show machine-specific vacuum assemblies rather than a wattage-only replacement class.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t7",
+        "nilfisk-sc650",
+        "ipc-imop",
+        "karcher-kira"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "sources": [
+    {
+      "id": "tennant-9002562",
+      "title": "Vacuum Motor Kit 9002562",
+      "publisher": "Tennant",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_eu/1/parts/pc_cat_parts/pc_cat_electronic_components/product.vacuum-motor-kit.9002562.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "tennant-9017716",
+      "title": "Vacuum Fan 9017716",
+      "publisher": "Tennant",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_gb/1/parts/product.fan-vacuum.9017716.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "tennant-mocc00481",
+      "title": "Vacuum Motor 36 VDC MOCC00481",
+      "publisher": "Tennant",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_us/1/parts/product.vacuum-motor-36vdc.mocc00481.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "tennant-t360",
+      "title": "T360 walk-behind scrubber parts manual",
+      "publisher": "Tennant",
+      "sourceType": "manual",
+      "url": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/t360/operator-parts-manuals/4238518.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "tennant-t7",
+      "title": "T7 ride-on scrubber vacuum fan listing",
+      "publisher": "Tennant",
+      "sourceType": "manufacturer",
+      "url": "https://www.tennantco.com/en_gb/1/machines/scrubbers/product.m-t7.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "nilfisk-sc650",
+      "title": "SC650 series service manual",
+      "publisher": "Nilfisk",
+      "sourceType": "manual",
+      "url": "https://www.nilfisk.com/media/j1rfynbc/en-uk-uki-sc650-service-manual.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "nilfisk-sc370",
+      "title": "SC370 service manual",
+      "publisher": "Nilfisk",
+      "sourceType": "manual",
+      "url": "https://www.nilfisk.com/media/2ttgd0e2/sc370-service-manual.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "ipc-imop",
+      "title": "IPC i-mop Lite parts manual",
+      "publisher": "IPC",
+      "sourceType": "manual",
+      "url": "https://www.ipcworldwide.com/us/wp-content/uploads/sites/7/2024/08/IPC-imop-Lite-ML4B36-G-Parts-Manual.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "karcher-kira",
+      "title": "KIRA B 50 scrubber-dryer technical data",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/de/de/professional/produkte/kira-b-50-p15330020",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "iec-60335-2-72",
+      "title": "IEC 60335-2-72:2021 commercial floor treatment machine safety",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64778",
+      "accessedAt": "2026-08-12"
+    }
+  ],
+  "publishedAt": "2026-08-12",
+  "lastVerified": "2026-08-12",
+  "lastModified": "2026-08-12"
+}

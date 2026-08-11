@@ -1,0 +1,855 @@
+{
+  "status": "published",
+  "slug": "pressure-washer-unloader-valve",
+  "name": "Pressure Washer Unloader Valve",
+  "aliases": [
+    "pressure regulating unloader",
+    "pressure washer bypass valve",
+    "trapped-pressure unloader",
+    "flow-actuated unloader"
+  ],
+  "definition": "A primary pressure-control valve that directs pump flow to the discharge path or bypass when demand changes; actuation type, flow, pressure, temperature, ports, bypass plumbing and relief strategy must be engineered together.",
+  "includedScope": [
+    "Pressure-sensitive and flow-actuated unloader valves",
+    "Integral, bolt-on and externally plumbed configurations",
+    "Pressure, flow, temperature, port and bypass checks"
+  ],
+  "excludedScope": [
+    "Secondary relief or pop-off valves",
+    "Simple pressure switches",
+    "Field pressure adjustment without a gauge and manufacturer procedure"
+  ],
+  "primaryApplications": [
+    "Trigger-gun pressure-washer systems",
+    "Mobile and industrial wash systems",
+    "Pump protection and low-pressure bypass"
+  ],
+  "headline": "An unloader is the primary pressure-control device—not the system's only safety relief.",
+  "description": "This profile compares trapped-pressure, pressure-sensitive and specialty unloaders using official flow, pressure, temperature and plumbing evidence.",
+  "metaDescription": "Pressure washer unloader valve types, pressure and flow ratings, bypass plumbing, ports, adjustment and safety compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/pressure-washer-unloader-valve/hero.webp",
+  "heroImageAlt": "General Pump PULSAR4LP trapped-pressure unloader valve",
+  "heroImageCaption": "Official General Pump PULSAR4LP image on a WCB canvas; pressure, flow, temperature and port limits remain product-specific.",
+  "heroSourceUrl": "https://www.generalpump.com/wp-content/uploads/2017/10/PULSAR4LP-1.jpg",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-unloader-valve/architecture-family.webp",
+      "alt": "General Pump PULSAR4LP unloader valve",
+      "caption": "Official General Pump product image showing a manually adjustable trapped-pressure unloader architecture.",
+      "sourceUrl": "https://www.generalpump.com/wp-content/uploads/2017/10/PULSAR4LP-1.jpg"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-unloader-valve/performance-boundaries.svg",
+      "mobileSrc": "/images/components/pressure-washer-unloader-valve/performance-boundaries-mobile.svg",
+      "alt": "Pressure Washer Unloader Valve performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar",
+        "general-zh2820"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/pressure-washer-unloader-valve/application-reference.webp",
+      "alt": "General Pump ZH2820 high-flow unloader valve",
+      "caption": "Official General Pump ZH2820 image on a WCB canvas; its high-flow industrial ports and calibration procedure are not interchangeable with compact unloaders.",
+      "sourceUrl": "https://www.generalpump.com/wp-content/uploads/2021/10/ZH2820.jpg"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/pressure-washer-unloader-valve/compatibility-gate.svg",
+      "mobileSrc": "/images/components/pressure-washer-unloader-valve/compatibility-gate-mobile.svg",
+      "alt": "Pressure Washer Unloader Valve compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar",
+        "general-zh2820"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Primary control role",
+      "value": "Official guidance distinguishes an unloader from a secondary relief or pop-off device",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-faq",
+        "cat-7860"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "System operating point",
+      "value": "Unloader selection must cover the desired pump flow and system pressure",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "general-zh2820"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Plumbing boundary",
+      "value": "Inlet, outlet and bypass ports and the trapped/flow-actuated behavior define installation",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "general-faq",
+        "ar-vrt3-250",
+        "cat-7500s"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Pressure setting",
+      "role": "The spring, piston and valve geometry establish the primary system-pressure set point.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 2,
+      "name": "Demand response",
+      "role": "The valve reacts when the trigger gun closes or downstream flow changes.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 3,
+      "name": "Bypass routing",
+      "role": "Unneeded pump flow returns through an internal or external bypass path.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 4,
+      "name": "Pump-load management",
+      "role": "Correct unloading reduces pump or drive load during no-demand operation.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Trapped-pressure unloader",
+      "operatingPrinciple": "Downstream pressure remains trapped after the trigger closes while pump flow moves to bypass.",
+      "applicationBoundary": "Single- or named multi-gun system within product ratings",
+      "benefits": [
+        "Fast pressure availability and established architecture"
+      ],
+      "limitations": [
+        "Trigger release can create hose pressure and kickback"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Flow-actuated unloader",
+      "operatingPrinciple": "A flow change shifts the valve and typically releases downstream pressure.",
+      "applicationBoundary": "System designed for the specific flow-actuated valve",
+      "benefits": [
+        "Can reduce trapped downstream pressure"
+      ],
+      "limitations": [
+        "Minimum flow and plumbing behavior are system-specific"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Integral or modular unloader",
+      "operatingPrinciple": "A compact valve bolts to a matching pump manifold and may include an injector or switch.",
+      "applicationBoundary": "Named pump series and flow-through screw geometry",
+      "benefits": [
+        "Reduced plumbing and leak paths"
+      ],
+      "limitations": [
+        "Manifold, screw, port and injector variants are proprietary"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Flow range",
+      "purchasingMeaning": "Defines stable valve operation and bypass capacity",
+      "reportingBoundary": "Use combined nozzle flow at the operating point",
+      "comparisonCaution": "Maximum pressure alone cannot qualify an unloader.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Pressure range",
+      "purchasingMeaning": "Defines adjustment and component load limits",
+      "reportingBoundary": "Distinguish rated, maximum and set pressure",
+      "comparisonCaution": "Never use the adjustment screw as a substitute for nozzle sizing.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Maximum temperature",
+      "purchasingMeaning": "Controls seals, spring and body service",
+      "reportingBoundary": "Use actual fluid temperature at the valve",
+      "comparisonCaution": "Hot-water systems require the documented installation position.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Ports and bypass",
+      "purchasingMeaning": "Define plumbing, sealing and recirculation",
+      "reportingBoundary": "Record thread standard, gender, count and flow direction",
+      "comparisonCaution": "3/8-inch labels do not distinguish NPT from BSP.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Consumer trigger-gun system",
+      "wcbAssessment": "Match pump flow, nozzle, compact unloader, bypass path and secondary relief.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Commercial hot-water washer",
+      "wcbAssessment": "Confirm valve temperature, upstream/downstream heater position and seal system.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Multi-gun or industrial system",
+      "wcbAssessment": "Use manufacturer engineering guidance for combined flow, regulation and pressure relief.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Actuation and system layout",
+      "requiredMatch": "Pressure- or flow-actuated design, gun type and pump count",
+      "why": "The wrong response mode can cause cycling or trapped pressure.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Operating envelope",
+      "requiredMatch": "Flow, working/set pressure, maximum pressure and temperature",
+      "why": "A valve must satisfy all limits simultaneously.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Hydraulic interfaces",
+      "requiredMatch": "Inlet, outlet, bypass, gauge port, injector and flow direction",
+      "why": "Wrong threads or port routing can leak or block bypass.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Safety controls",
+      "requiredMatch": "Secondary relief device, gauge, thermal protection and adjustment procedure",
+      "why": "The unloader is not the sole overpressure safeguard.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Pressure spikes or gun kickback",
+      "possibleCauses": [
+        "Incorrect adjustment or trapped-pressure behavior",
+        "Wrong nozzle or sticking valve"
+      ],
+      "safetyBoundary": "Stop operation and depressurize before service.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Pump overheats in bypass",
+      "possibleCauses": [
+        "Restricted bypass or excessive recirculation time",
+        "Missing thermal protection"
+      ],
+      "safetyBoundary": "Do not leave the system recirculating beyond the manufacturer's limit.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Pressure cycles or will not build",
+      "possibleCauses": [
+        "Valve sized outside its flow range",
+        "Debris, worn seals or incorrect plumbing"
+      ],
+      "safetyBoundary": "Use a calibrated gauge and approved diagnostic procedure.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Cat Pumps",
+      "familyName": "7500S",
+      "architecture": "Pressure-sensitive regulating unloader",
+      "applicationScope": "0.5–6.0 gpm and named pressure/port scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Cat Pumps data sheet",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7500s"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Cat Pumps",
+      "familyName": "7600S",
+      "architecture": "Pressure-sensitive regulating unloader",
+      "applicationScope": "2.0–5.0 gpm and named pressure/port scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Cat Pumps data sheet",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7600s"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Cat Pumps",
+      "familyName": "7860/7861 modular family",
+      "architecture": "Direct-mount modular unloader",
+      "applicationScope": "Named Cat Pumps 66DX pump and flow range",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Cat Pumps data sheet",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "General Pump",
+      "familyName": "PULSAR4LP",
+      "architecture": "Trapped-pressure unloader",
+      "applicationScope": "10.5 gpm, named pressure/temperature/ports",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "General Pump US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "General Pump",
+      "familyName": "ZH2820",
+      "architecture": "High-flow trapped-pressure unloader",
+      "applicationScope": "Up to 52.8 gpm and named industrial scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "General Pump data sheet",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "general-zh2820"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "AR North America",
+      "familyName": "VRT3-250EZ",
+      "architecture": "Adjustable brass unloader with easy-start feature",
+      "applicationScope": "10.5 gpm, 3650 psi named scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "AR North America",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "ar-vrt3-250"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "AR North America",
+      "familyName": "VRT3-310PS6",
+      "architecture": "Unloader and pressure-switch combination",
+      "applicationScope": "10.5 gpm, 3650 psi, hot-water control scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "AR North America",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "ar-vrt3-ps"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Actuation and system layout",
+      "reason": "The wrong response mode can cause cycling or trapped pressure.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Operating envelope",
+      "reason": "A valve must satisfy all limits simultaneously.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Hydraulic interfaces",
+      "reason": "Wrong threads or port routing can leak or block bypass.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Safety controls",
+      "reason": "The unloader is not the sole overpressure safeguard.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "cat-7600s",
+        "cat-7500s",
+        "cat-faq",
+        "general-pulsar"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-79",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety context for high-pressure cleaners within the standard scope; not an unloader compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60335-2-79"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-12",
+      "title": "Current official ranges retain distinct modular, trapped-pressure and switch-equipped architectures",
+      "summary": "Reviewed Cat Pumps, General Pump and AR North America sources publish materially different flow, pressure, ports and control scope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "cat-7860",
+        "general-pulsar",
+        "ar-vrt3-ps"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "sources": [
+    {
+      "id": "cat-7860",
+      "title": "Cat Pumps modular pressure-sensitive unloader data sheet",
+      "publisher": "Cat Pumps",
+      "sourceType": "datasheet",
+      "url": "https://www.catpumps.com/sites/default/files/2025-01/7860_B_0.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "cat-7600s",
+      "title": "Cat Pumps 7600S pressure-sensitive unloader data sheet",
+      "publisher": "Cat Pumps",
+      "sourceType": "datasheet",
+      "url": "https://www.catpumps.com/sites/default/files/products/pdfs/7600S_A.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "cat-7500s",
+      "title": "Cat Pumps 7500S pressure-sensitive unloader data sheet",
+      "publisher": "Cat Pumps",
+      "sourceType": "datasheet",
+      "url": "https://www.catpumps.com/sites/default/files/products/pdfs/7500S_B.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "cat-faq",
+      "title": "Cat Pumps regulator and unloader guidance",
+      "publisher": "Cat Pumps",
+      "sourceType": "technical",
+      "url": "https://www.catpumps.com/faq",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "general-pulsar",
+      "title": "PULSAR4LP trapped-pressure unloader",
+      "publisher": "General Pump",
+      "sourceType": "manufacturer",
+      "url": "https://www.generalpump.com/product/pulsar4lp/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "general-zh2820",
+      "title": "ZH2820 trapped-pressure unloader data sheet",
+      "publisher": "General Pump",
+      "sourceType": "datasheet",
+      "url": "https://www.generalpump.com/wp-content/uploads/2021/10/ZH2820-Unloader.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "general-faq",
+      "title": "General Pump pressure-washer system FAQ",
+      "publisher": "General Pump",
+      "sourceType": "technical",
+      "url": "https://www.generalpump.com/service/customer-service/faqs/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "ar-vrt3-250",
+      "title": "VRT3-250EZ unloader",
+      "publisher": "AR North America",
+      "sourceType": "manufacturer",
+      "url": "https://arnorthamerica.com/product/vrt3-250ez/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "ar-vrt3-ps",
+      "title": "VRT3-310PS6 unloader with pressure switch",
+      "publisher": "AR North America",
+      "sourceType": "manufacturer",
+      "url": "https://arnorthamerica.com/products/accessories/general-accessories/unloaders-with-pressure-switches/vrt3-310ps6-unloader/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "iec-60335-2-79",
+      "title": "IEC 60335-2-79:2021 high-pressure cleaner safety",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64779",
+      "accessedAt": "2026-08-12"
+    }
+  ],
+  "publishedAt": "2026-08-12",
+  "lastVerified": "2026-08-12",
+  "lastModified": "2026-08-12"
+}
