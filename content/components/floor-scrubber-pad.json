@@ -1,0 +1,867 @@
+{
+  "status": "published",
+  "slug": "floor-scrubber-pad",
+  "name": "Floor Scrubber Pad",
+  "aliases": [
+    "scrubber-dryer pad",
+    "floor machine pad",
+    "buffing pad",
+    "stripping pad"
+  ],
+  "definition": "A replaceable nonwoven or specialty floor-contact disc or sheet used with a pad driver; material, color/grade, diameter, thickness, speed, floor finish, chemistry and machine head must be approved together.",
+  "includedScope": [
+    "Cleaning, scrubbing, stripping, polishing and burnishing pads",
+    "Disc and rectangular pads for approved scrubber or floor-machine heads",
+    "Floor, chemistry, speed and pad-driver compatibility checks"
+  ],
+  "excludedScope": [
+    "Vacuum cleaner filters",
+    "Hand pads without machine application",
+    "Universal color assumptions across manufacturers"
+  ],
+  "primaryApplications": [
+    "Automatic scrubber maintenance cleaning",
+    "Floor finish stripping and preparation",
+    "Polishing and burnishing"
+  ],
+  "headline": "Pad color is a manufacturer system—not a universal aggressiveness standard.",
+  "description": "This profile maps cleaning, stripping and polishing pad families and turns official evidence into floor, speed, chemistry and machine-fit gates.",
+  "metaDescription": "Floor scrubber pad colors, materials, sizes, stripping and polishing uses, pad-driver fit and floor compatibility checks.",
+  "disclaimer": "Physical resemblance, matching wattage, matching voltage, a generic family name or a seller claim does not establish compatibility. Verify the current manufacturer part number and revision, machine model and serial scope, mechanical, electrical and fluid interfaces, rated operating envelope, protection requirements and approved service documentation.",
+  "heroImage": "/images/components/floor-scrubber-pad/hero.webp",
+  "heroImageAlt": "Kärcher black 17-inch abrasive floor scrubber pad",
+  "heroImageCaption": "Official Kärcher black-pad product image on a WCB canvas; the cited page limits diameter, hardness and compatible brush-head scope.",
+  "heroSourceUrl": "https://s1.kaercher-media.com/mam/63694730/mainproduct/92760/d0.jpg",
+  "contentVisuals": [
+    {
+      "placement": "architecture-families",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-pad/architecture-family.webp",
+      "alt": "Kärcher black abrasive disc floor pad",
+      "caption": "Official Kärcher image showing a black hard-grade 17-inch disc pad for the named machine scope.",
+      "sourceUrl": "https://s1.kaercher-media.com/mam/63694730/mainproduct/92760/d0.jpg"
+    },
+    {
+      "placement": "performance-boundaries",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-pad/performance-boundaries.svg",
+      "mobileSrc": "/images/components/floor-scrubber-pad/performance-boundaries-mobile.svg",
+      "alt": "Floor Scrubber Pad performance reporting boundary diagram",
+      "caption": "WCB reporting map: compare ratings only inside the same documented part, condition, unit and machine scope.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100",
+        "3m-red-tds"
+      ]
+    },
+    {
+      "placement": "application-context",
+      "visualType": "official-photo",
+      "src": "/images/components/floor-scrubber-pad/application-reference.webp",
+      "alt": "Kärcher red 14-inch maintenance floor pad",
+      "caption": "Official Kärcher red-pad image on a WCB canvas; its named maintenance-cleaning, diameter and machine scope do not establish a universal color code.",
+      "sourceUrl": "https://s1.kaercher-media.com/mam/63690030/mainproduct/11408/d0.jpg"
+    },
+    {
+      "placement": "compatibility-gate",
+      "visualType": "wcb-diagram",
+      "src": "/images/components/floor-scrubber-pad/compatibility-gate.svg",
+      "mobileSrc": "/images/components/floor-scrubber-pad/compatibility-gate-mobile.svg",
+      "alt": "Floor Scrubber Pad compatibility approval gate",
+      "caption": "WCB compatibility gate: stop approval when identity, interface, rating or source scope remains undocumented.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100",
+        "3m-red-tds"
+      ]
+    }
+  ],
+  "keyFacts": [
+    {
+      "label": "Task boundary",
+      "value": "Official portfolios separate stripping, cleaning, buffing and polishing pads",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "3m-floor-pads",
+        "karcher-br40",
+        "tennant-t17"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Machine fit",
+      "value": "Diameter, shape and compatible brush-head or pad-driver scope are product-specific",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "tennant-t17"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "label": "Color boundary",
+      "value": "Official sources define color within their own product families; buyers must not assume cross-brand equivalence",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "3m-red-tds",
+        "karcher-red",
+        "karcher-black"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "systemRole": [
+    {
+      "order": 1,
+      "name": "Soil or finish removal",
+      "role": "Fibers and abrasive particles apply a documented level of mechanical action.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 2,
+      "name": "Solution interaction",
+      "role": "Open construction carries cleaning or stripping solution at the floor interface.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 3,
+      "name": "Surface finishing",
+      "role": "Softer grades can clean, polish or burnish within specified speed and floor scope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "order": 4,
+      "name": "Wear interface",
+      "role": "The pad protects the driver and is replaced as thickness, loading or uniformity degrades.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "architectures": [
+    {
+      "name": "Cleaning or buffing pad",
+      "operatingPrinciple": "A medium or light-action nonwoven pad supports routine cleaning or spray buffing.",
+      "applicationBoundary": "Named floor finish, speed and manufacturer grade",
+      "benefits": [
+        "Routine maintenance versatility"
+      ],
+      "limitations": [
+        "Color and aggressiveness are brand-specific"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Stripping pad",
+      "operatingPrinciple": "A more aggressive fiber and abrasive system removes finish or heavy soil.",
+      "applicationBoundary": "Durable floors and documented stripping chemistry",
+      "benefits": [
+        "Higher removal rate"
+      ],
+      "limitations": [
+        "Can damage floors or finishes if misapplied"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Polishing or burnishing pad",
+      "operatingPrinciple": "A soft or specialty pad refines gloss at a stated machine speed.",
+      "applicationBoundary": "Named finish, pad driver and speed range",
+      "benefits": [
+        "Finish enhancement"
+      ],
+      "limitations": [
+        "Heat, loading and finish compatibility require control"
+      ],
+      "buyerCheck": "Confirm the exact part number, installed system, interface and documented operating envelope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Diameter and shape",
+      "purchasingMeaning": "Defines driver coverage and deck clearance",
+      "reportingBoundary": "Retain nominal and actual dimensions plus center-hole geometry",
+      "comparisonCaution": "Cutting or folding a pad is not approved fit evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Material and abrasive grade",
+      "purchasingMeaning": "Controls mechanical action and wear",
+      "reportingBoundary": "Use manufacturer product family and grade",
+      "comparisonCaution": "Color alone is not a cross-brand specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Machine speed",
+      "purchasingMeaning": "Changes heat and finish response",
+      "reportingBoundary": "Confirm rpm or oscillation scope",
+      "comparisonCaution": "A pad approved for low speed may not suit burnishing speed.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "name": "Floor and chemistry scope",
+      "purchasingMeaning": "Defines surface and finish safety",
+      "reportingBoundary": "Retain flooring, coating and detergent/stripper conditions",
+      "comparisonCaution": "Pad choice cannot be separated from chemistry.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "applicationMatrix": [
+    {
+      "application": "Daily scrubber cleaning",
+      "wcbAssessment": "Use a manufacturer-listed cleaning pad for the exact head, floor and detergent.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Finish stripping",
+      "wcbAssessment": "Approve pad grade, stripper chemistry, dwell time and recovery procedure together.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "application": "Polishing or burnishing",
+      "wcbAssessment": "Match pad, finish system, machine speed and heat-management instructions.",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official architecture and application statements from the cited sources.",
+      "limitations": "No exact machine or surface suitability is established outside the cited scope.",
+      "buyerAction": "Approve the exact part, installed system and operating procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "compatibilityChecks": [
+    {
+      "check": "Pad identity",
+      "requiredMatch": "Manufacturer, family, grade/color and stock number",
+      "why": "Generic color matching can select the wrong aggressiveness.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Machine and driver",
+      "requiredMatch": "Exact machine/head, diameter, shape, center hole and retention",
+      "why": "An oversized or loose pad can contact the deck.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Floor system",
+      "requiredMatch": "Substrate, coating, finish condition and test area",
+      "why": "Aggressive pads can permanently alter the surface.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Operating process",
+      "requiredMatch": "Speed, pressure, chemistry, water and replacement point",
+      "why": "Results depend on the full procedure.",
+      "buyerAction": "Record manufacturer evidence for every required field before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "failureModes": [
+    {
+      "symptom": "Swirl marks or uneven finish",
+      "possibleCauses": [
+        "Wrong grade",
+        "Loaded, folded or off-center pad"
+      ],
+      "safetyBoundary": "Stop and inspect the floor, driver and pad before continuing.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Pad tears or ejects",
+      "possibleCauses": [
+        "Wrong size or center hole",
+        "Damaged driver or excessive speed"
+      ],
+      "safetyBoundary": "Isolate the machine before accessing the head.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "symptom": "Poor soil or finish removal",
+      "possibleCauses": [
+        "Pad too mild or worn",
+        "Incorrect chemistry, dwell time or pressure"
+      ],
+      "safetyBoundary": "Do not compensate with unapproved pressure or chemistry.",
+      "serviceAction": "Use the current manufacturer inspection, maintenance and replacement procedure.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "representativeFamilies": [
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "6.369-473.0 black 17-inch pad",
+      "architecture": "Hard abrasive disc pad",
+      "applicationScope": "Named Brush Head D43 scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "6.369-003.0 red 14-inch pad",
+      "architecture": "Medium-soft maintenance disc",
+      "applicationScope": "Named scrubber and brush-head scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-red"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Kärcher",
+      "familyName": "BR 40/10 white/red/green/black pad family",
+      "architecture": "Multiple cleaning and polishing grades",
+      "applicationScope": "Named BR 40/10 accessory scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Kärcher manual edition",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-br40"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "3M",
+      "familyName": "Red Buffer Pad 5100",
+      "architecture": "Cleaning and buffing pad",
+      "applicationScope": "Named sizes and product bulletin scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "3M US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "3m-red-5100",
+        "3m-red-tds"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "3M",
+      "familyName": "Black Stripper Pad 7200",
+      "architecture": "Aggressive stripping pad",
+      "applicationScope": "Named portfolio sizes and applications",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "3M US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "3m-floor-pads"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "3M",
+      "familyName": "White Super Polish Pad 4100",
+      "architecture": "Polishing pad",
+      "applicationScope": "Named portfolio scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "3M US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "3m-floor-pads"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Tennant",
+      "familyName": "T17 red buffing and black/brown stripping pads",
+      "architecture": "Machine-listed pad grades",
+      "applicationScope": "T17 grip pad-driver scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Tennant manual edition",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "tennant-t17"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "manufacturer": "Oreck",
+      "familyName": "Orbiter white polishing and black stripping pads",
+      "architecture": "Orbital floor-machine pads",
+      "applicationScope": "Named commercial parts scope",
+      "distinguishingSpecifications": [
+        "Official family identity",
+        "Named architecture or operating envelope"
+      ],
+      "marketScope": "Oreck US",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "oreck-commercial"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "procurementDecisions": [
+    {
+      "intendedUse": "OEM or approved service replacement",
+      "attributeToVerify": "Exact part identity, revision and installed system",
+      "comparisonTrap": "Treating a family label as an exact fit",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official part and model scope.",
+      "limitations": "No fit is established outside the named source scope.",
+      "buyerAction": "Require current manufacturer cross-reference or approved-parts evidence.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Alternative sourcing qualification",
+      "attributeToVerify": "Geometry, materials, interfaces, ratings and validation plan",
+      "comparisonTrap": "Approving by photo, nominal size or one matching rating",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Multiple official families show different architecture and limits.",
+      "limitations": "Public sources do not qualify an unlisted substitute.",
+      "buyerAction": "Run documented engineering, safety and service validation before approval.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "intendedUse": "Application selection",
+      "attributeToVerify": "Machine, surface, duty and operating condition",
+      "comparisonTrap": "Comparing headline performance outside its test boundary",
+      "assessment": "Requires application-specific verification.",
+      "basis": "Official application and technical documents.",
+      "limitations": "Field results vary with the complete system and procedure.",
+      "buyerAction": "Approve the complete operating specification and acceptance test.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "engineeringChecks": [
+    {
+      "check": "Pad identity",
+      "reason": "Generic color matching can select the wrong aggressiveness.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Machine and driver",
+      "reason": "An oversized or loose pad can contact the deck.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Floor system",
+      "reason": "Aggressive pads can permanently alter the surface.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    },
+    {
+      "check": "Operating process",
+      "reason": "Results depend on the full procedure.",
+      "buyerAction": "Freeze the approved value, tolerance, evidence URL and revision in the procurement specification.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "karcher-black",
+        "karcher-red",
+        "karcher-br40",
+        "3m-floor-pads",
+        "3m-red-5100"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "standards": [
+    {
+      "name": "IEC 60335-2-72",
+      "jurisdiction": "International",
+      "version": "2021",
+      "applicability": "Safety context for commercial floor-treatment machines within the standard scope; not a pad compatibility or certification claim.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "iec-60335-2-72"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "developments": [
+    {
+      "date": "2026-08-11",
+      "title": "Official portfolios expose task-specific pad systems rather than one universal color table",
+      "summary": "Reviewed 3M, Kärcher, Tennant and Oreck sources separate pad application, geometry and machine scope.",
+      "evidence": "The cited official source supports this statement within its named product or document scope.",
+      "scope": "Named official product, model, market and document edition only; verify the current revision before procurement.",
+      "sourceIds": [
+        "3m-floor-pads",
+        "karcher-br40",
+        "tennant-t17",
+        "oreck-commercial"
+      ],
+      "verifiedAt": "2026-08-12"
+    }
+  ],
+  "sources": [
+    {
+      "id": "karcher-black",
+      "title": "Kärcher black 17-inch pad 6.369-473.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/pad-63694730.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "karcher-red",
+      "title": "Kärcher red 14-inch pad 6.369-003.0",
+      "publisher": "Kärcher",
+      "sourceType": "manufacturer",
+      "url": "https://www.kaercher.com/us/accessories/red-pad-14-63690030.html",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "karcher-br40",
+      "title": "BR 40/10 C Advanced operating instructions",
+      "publisher": "Kärcher",
+      "sourceType": "manual",
+      "url": "https://www.kaercher.com/documents/manuals/raw/000/BTA-5333966-000-03.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "3m-floor-pads",
+      "title": "3M floor pads official portfolio",
+      "publisher": "3M",
+      "sourceType": "manufacturer",
+      "url": "https://www.3m.com/3M/en_US/p/c/cleaning-supplies/floor-pads/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "3m-red-5100",
+      "title": "3M Red Buffer Pad 5100",
+      "publisher": "3M",
+      "sourceType": "manufacturer",
+      "url": "https://www.3m.com/3M/en_US/p/d/b5005188110/",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "3m-red-tds",
+      "title": "3M Premium Red Buffer Floor Pad 5100 product bulletin",
+      "publisher": "3M",
+      "sourceType": "datasheet",
+      "url": "https://multimedia.3m.com/mws/media/1866957O/product-bulletin-premium-floor-pad-red-5100-tds-177.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "tennant-t17",
+      "title": "Tennant T17 operator manual",
+      "publisher": "Tennant",
+      "sourceType": "manual",
+      "url": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20riders/T17/operator-parts-manual/9020168.pdf",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "oreck-commercial",
+      "title": "Oreck commercial parts and accessories",
+      "publisher": "Oreck",
+      "sourceType": "manufacturer",
+      "url": "https://oreck.com/collections/all-commercial-parts-accessories",
+      "accessedAt": "2026-08-12"
+    },
+    {
+      "id": "iec-60335-2-72",
+      "title": "IEC 60335-2-72:2021 commercial floor treatment machine safety",
+      "publisher": "IEC",
+      "sourceType": "standard",
+      "url": "https://webstore.iec.ch/en/publication/64778",
+      "accessedAt": "2026-08-12"
+    }
+  ],
+  "publishedAt": "2026-08-12",
+  "lastVerified": "2026-08-12",
+  "lastModified": "2026-08-12"
+}
