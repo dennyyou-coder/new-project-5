@@ -972,6 +972,87 @@ test("ordinary historical maintenance does not adopt an unrecorded canonical mob
   })).failures, []);
 });
 
+test("historical rebuild drops a profitable noncanonical mobile when the canonical candidate is discarded", async () => {
+  const project = temporaryProject();
+  const slug = "historical-noncanonical-discard";
+  const cover = `/images/blog/${slug}-cover.webp`;
+  const oldMobile = `/images/blog/${slug}-legacy-mobile.webp`;
+  const canonicalMobile = `/images/blog/${slug}-cover-800.webp`;
+  writeArticle(project, slug, { cover, body: [] });
+  const width = 820;
+  const height = 461;
+  const svg = Buffer.from(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="100%" height="100%" fill="#dcecf2"/><path d="M40 410 L330 210 L780 60" fill="none" stroke="#126a78" stroke-width="18"/><circle cx="570" cy="160" r="80" fill="#ef8354"/></svg>`
+  );
+  fs.mkdirSync(path.dirname(publicFile(project, cover)), { recursive: true });
+  await sharp(svg).webp({ quality: 82 }).toFile(publicFile(project, cover));
+  await writeImage(publicFile(project, oldMobile), { width: 400, height: 225, format: "webp" });
+  const primaryBefore = fs.readFileSync(publicFile(project, cover));
+  const sourceHash = `sha256:${crypto.createHash("sha256").update(primaryBefore).digest("hex")}`;
+  const oldMobileBytes = fs.readFileSync(publicFile(project, oldMobile));
+  const oldMobileHash = `sha256:${crypto.createHash("sha256").update(oldMobileBytes).digest("hex")}`;
+  const manifest = {
+    version: 1,
+    processorVersion: "1",
+    assets: {
+      [cover]: {
+        role: "cover",
+        kind: "photo",
+        width,
+        height,
+        bytes: primaryBefore.length,
+        format: "webp",
+        quality: 82,
+        sourceHash,
+        outputHash: sourceHash,
+        mobile: {
+          src: oldMobile,
+          width: 400,
+          height: 225,
+          bytes: oldMobileBytes.length,
+          outputHash: oldMobileHash
+        }
+      }
+    },
+    articles: { [slug]: { budgetClass: "standard", cover, body: [] } }
+  };
+  const manifestPath = path.join(project.projectRoot, "lib", "generated", "article-image-manifest.json");
+  const runtimePath = path.join(project.projectRoot, "lib", "generated", "article-image-runtime.json");
+  fs.mkdirSync(path.dirname(manifestPath), { recursive: true });
+  fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+  fs.writeFileSync(runtimePath, `${JSON.stringify(buildRuntimeIndex(manifest))}\n`);
+
+  const dryRun = await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot,
+    dryRun: true
+  });
+  assert.deepEqual(dryRun.filesRemoved, [`public${oldMobile}`]);
+  assert.equal(dryRun.filesCreated.includes(`public${canonicalMobile}`), false);
+  assert.equal(dryRun.manifestChanged, true);
+  assert.equal(dryRun.runtimeChanged, true);
+  assert.ok(dryRun.warnings.some((warning) => warning.includes("MOBILE_VARIANT_DISCARDED_INSUFFICIENT_SAVINGS")));
+  assert.deepEqual(fs.readFileSync(publicFile(project, cover)), primaryBefore);
+  assert.deepEqual(fs.readFileSync(publicFile(project, oldMobile)), oldMobileBytes);
+
+  await prepareAllArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  });
+  const repaired = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  const runtime = JSON.parse(fs.readFileSync(runtimePath, "utf8"));
+  assert.equal("mobile" in repaired.assets[cover], false);
+  assert.equal("mobile" in runtime.assets[cover], false);
+  assert.equal(fs.existsSync(publicFile(project, oldMobile)), false);
+  assert.equal(fs.existsSync(publicFile(project, canonicalMobile)), false);
+  assert.deepEqual(fs.readFileSync(publicFile(project, cover)), primaryBefore);
+  assert.equal(repaired.assets[cover].sourceHash, sourceHash);
+  assert.deepEqual((await verifyArticleImages({
+    projectRoot: project.projectRoot,
+    sourceLibraryRoot: project.sourceLibraryRoot
+  })).failures, []);
+});
+
 test("preparation atomically maintains a slim runtime index alongside the full audit manifest", async () => {
   const project = temporaryProject();
   const slug = "dual-manifest-state";

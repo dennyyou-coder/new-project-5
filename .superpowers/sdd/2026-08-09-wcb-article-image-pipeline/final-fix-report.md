@@ -116,3 +116,20 @@ runtime index                            PASS 301,322 bytes
 ```
 
 Both dry-runs exited zero and every article reported `Files: 0 created, 0 replaced, 0 removed` plus `Manifest: unchanged`. The final diff contains no path under `content`, `public`, or `lib/generated`.
+
+## Round 2 final micro-fix
+
+One remaining incomplete-state branch could retain `current.mobile` while simultaneously planning its noncanonical file for removal. When the regenerated canonical candidate then failed or was discarded, the stale pointer could survive in the candidate manifest/runtime. The rebuild branch now clears inherited mobile state before transformation and assigns a mobile record only after a candidate passes format and savings policy.
+
+The RED fixture uses a profitable noncanonical recorded mobile and a canonical candidate that is deterministically discarded for insufficient savings. Before the fix, the old file was planned for removal while `manifestChanged` remained false. After the fix, dry-run reports the old removal plus full/runtime index changes, retains no canonical mobile, and leaves verifier evidence untouched. The real fixture repair removes the old file, records no mobile in either index, preserves primary bytes and `sourceHash`, and passes source verification.
+
+```text
+targeted historical mobile regressions    PASS 5/5
+article-image preparation suite           PASS
+complete current repository suite         PASS 526/526
+ordinary --all --dry-run                  PASS 438/438 unchanged; 0 creates/replacements/removals
+source image verification                 PASS 438 / 1,770 / 1,210
+built verifier against existing build     PASS 438 / 1,771 / 1,211
+```
+
+The micro-fix changes only preparation code, one integration test, and these SDD records. It does not change rendering, generated indexes, content, or public assets, so no duplicate build was run.

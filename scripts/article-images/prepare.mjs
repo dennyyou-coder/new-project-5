@@ -1207,6 +1207,10 @@ async function planHistoricalArticle(context, slug, initialWarnings = []) {
       processed[url] = primary;
       continue;
     }
+    if (primary.mobile) {
+      primary = { ...primary };
+      delete primary.mobile;
+    }
     for (const mobileFile of mobileState.existingFiles) removable.add(mobileFile);
     const mobile = await createMobileVariant({
       input: file,
