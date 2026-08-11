@@ -6,7 +6,9 @@
 
 **Baseline production merge:** `46c02c5e25d2e0cd404561d3d9745c17cfd3df32`
 
-**Verified implementation tree:** `5996ea2` plus its two preceding scoped commits
+**Verified homepage implementation tree:** `5996ea2` plus its two preceding scoped commits
+
+**Final upstream integration:** `0f14b4f` (documentation update followed only to record final gate counts)
 
 ## Outcome
 
@@ -102,9 +104,11 @@ The production build was tested at 1440x1100 and 390x844.
 ## Automated gates
 
 - Focused homepage and adjacent tests: **55/55 passed**.
-- Full repository Node suite: **532/532 passed**.
+- Full repository Node suite before upstream integration: **532/532 passed**.
+- Final release-integration suite after merging the latest `origin/main`:
+  **534/534 passed**.
 - Production build: **passed**, including prebuild article-source verification,
-  **646/646** generated pages, and postbuild article-image verification.
+  **652/652** generated pages, and postbuild article-image verification.
 - Product-director avatar inspection: original zoom and rendered-size checks
   passed.
 
