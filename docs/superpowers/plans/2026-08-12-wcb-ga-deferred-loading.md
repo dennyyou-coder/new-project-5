@@ -142,23 +142,23 @@ Commit the component integration as `Load GA4 after the critical render`.
 - Consumes: final implementation tree and existing WCB release gates.
 - Produces: reproducible GA reliability, build, browser, and Lighthouse evidence for the PR and production decision.
 
-- [ ] **Step 1: Refresh and integrate `origin/main`**
+- [x] **Step 1: Refresh and integrate `origin/main`**
 
 Fetch the latest main, integrate any new commits without overwriting unrelated work, and rerun focused tests if the base changes.
 
-- [ ] **Step 2: Run final automated verification once**
+- [x] **Step 2: Run final automated verification once**
 
 Run the complete Node suite and one production build. Confirm prebuild and postbuild gates pass and tracked generated files do not change.
 
-- [ ] **Step 3: Verify the production-mode browser contract**
+- [x] **Step 3: Verify the production-mode browser contract**
 
 At desktop and 390 px, confirm `/`, `/sourcing`, one lead CTA path, and one article return 200, retain one H1/main/canonical, have no overflow or CLS, and expose an immediate `window.gtag` queue while the external GA script remains absent before triggers and appears once after interaction/timeout.
 
-- [ ] **Step 4: Run Lighthouse and record evidence**
+- [x] **Step 4: Run Lighthouse and record evidence**
 
 Run three comparable mobile and desktop audits. Record score, FCP, LCP, TBT, CLS, total bytes, image bytes, GA request timing, and the difference from production commit `0f59c54`.
 
-- [ ] **Step 5: Write the operational report**
+- [x] **Step 5: Write the operational report**
 
 Document RED/GREEN evidence, GA queue/order checks, test/build/browser results, Lighthouse medians, remaining data-loss risk, and the release boundary.
 
