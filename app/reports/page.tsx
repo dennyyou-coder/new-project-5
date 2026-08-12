@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "../styles/reports.css";
 import { ReportsLeadForm, TallyReportButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {

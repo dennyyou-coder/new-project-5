@@ -90,8 +90,13 @@ test("Denny remains visible in the four trust-critical pages", () => {
 });
 
 test("phase two alignment rules cover equal-height cards and media crops", () => {
-  const css = read("app/globals.css");
-  assert.match(css, /Phase 2 visual alignment/);
+  const css = [
+    "app/styles/home.css",
+    "app/styles/about.css",
+    "app/styles/reports.css",
+    "app/styles/sourcing.css",
+    "app/styles/trust.css"
+  ].map(read).join("\n");
   assert.match(css, /align-items:\s*stretch/);
   assert.match(css, /object-fit:\s*cover/);
   assert.match(css, /object-position:\s*center/);

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import "../styles/wcb-expo.css";
 import { TallyButton } from "@/components/LeadForms";
 
 export const metadata: Metadata = {

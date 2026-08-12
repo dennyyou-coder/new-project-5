@@ -316,3 +316,243 @@
     padding: 24px;
   }
 }
+
+/* Route-owned Phase 2 alignment. */
+.contact-response-visual > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact-response-visual > img {
+  object-position: center 28%;
+}
+
+.contact-response-layout {
+  align-items: stretch;
+}
+
+.contact-response-visual {
+  min-height: 440px;
+}
+
+@media (max-width: 760px) {.contact-response-visual {
+    min-height: 320px;
+  }
+}
+
+/* Contact route enhancements moved from root CSS. */
+.contact-help-card {
+  grid-template-rows: auto auto 1fr;
+  min-height: 270px;
+  position: relative;
+}
+
+.contact-help-card-number {
+  color: rgba(22, 59, 103, 0.28);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}
+
+.contact-response-section {
+  background: #0f2747;
+  color: #fff;
+  padding: 72px 0;
+}
+
+.contact-response-layout {
+  align-items: stretch;
+  display: grid;
+  gap: 0;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+}
+
+.contact-response-visual {
+  min-height: 460px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-response-visual::after {
+  background: linear-gradient(180deg, transparent 42%, rgba(8, 24, 45, 0.92));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.contact-response-visual img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.contact-response-identity {
+  bottom: 28px;
+  display: grid;
+  left: 28px;
+  position: absolute;
+  z-index: 1;
+}
+
+.contact-response-identity strong {
+  font-size: 24px;
+}
+
+.contact-response-identity span,
+.contact-response-identity small {
+  color: rgba(255, 255, 255, 0.76);
+  margin-top: 4px;
+}
+
+.contact-response-copy {
+  align-content: center;
+  background: #163b67;
+  display: grid;
+  padding: clamp(34px, 5vw, 68px);
+}
+
+.contact-response-copy .section-head {
+  margin-bottom: 28px;
+}
+
+.contact-response-copy h2,
+.contact-response-copy .eyebrow {
+  color: #fff;
+}
+
+.contact-response-copy .section-head p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.contact-context-list {
+  display: grid;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-context-list li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0 0 14px 30px;
+  position: relative;
+}
+
+.contact-context-list li::before {
+  color: #78a7ff;
+  content: "✓";
+  left: 0;
+  position: absolute;
+}
+
+.contact-response-note {
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.6;
+  margin: 26px 0 0;
+}
+
+@media (max-width: 760px) {.contact-response-section {
+    padding: 0;
+  }.contact-response-layout {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }.contact-response-visual {
+    min-height: 320px;
+  }.contact-response-copy {
+    padding: 34px 20px 42px;
+  }
+}
+
+.contact-help-grid > .lead-form-trigger {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-help-card {
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+button.contact-help-card {
+  align-self: stretch;
+  height: 100%;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.contact-help-card:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+.contact-help-card-copy {
+  align-self: stretch;
+  align-content: start;
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  width: 100%;
+}
+
+button.contact-help-card > .contact-help-card-copy,
+button.contact-help-card > .contact-help-card-copy > span {
+  align-self: stretch;
+  min-width: 0;
+  width: 100%;
+}
+
+.contact-help-card .contact-help-card-copy,
+.contact-help-card .contact-help-card-copy span,
+.contact-help-card .contact-help-card-copy em {
+  border: 0;
+  color: inherit;
+  font-style: normal;
+  margin: 0;
+  width: auto;
+}
+
+.contact-help-card .contact-help-card-copy strong {
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.contact-help-card .contact-help-card-copy span {
+  color: var(--muted);
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.55;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  width: 100%;
+}
+
+.contact-help-card .contact-help-card-copy em {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.contact-response-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 640px) {.contact-help-grid > .lead-form-trigger,
+.contact-help-card {
+    width: 100%;
+  }.contact-response-grid {
+    grid-template-columns: 1fr;
+  }
+}
