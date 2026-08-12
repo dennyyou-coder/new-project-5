@@ -1,5 +1,7 @@
 export const GOOGLE_ANALYTICS_MEASUREMENT_ID = "G-6RW65B9CD0";
 export const GOOGLE_ANALYTICS_SCRIPT_ID = "wcb-google-analytics";
+export const GOOGLE_ANALYTICS_LIBRARY_SCRIPT_ID =
+  "wcb-google-analytics-library";
 export const INTERNAL_TRAFFIC_PARAM = "wcb_internal";
 export const INTERNAL_TRAFFIC_STORAGE_KEY = "wcb_internal_traffic";
 
@@ -50,6 +52,7 @@ export function shouldLoadGoogleAnalytics({
 
 export function getGoogleAnalyticsBootstrapScript(): string {
   const measurementId = JSON.stringify(GOOGLE_ANALYTICS_MEASUREMENT_ID);
+  const scriptId = JSON.stringify(GOOGLE_ANALYTICS_LIBRARY_SCRIPT_ID);
   const internalParam = JSON.stringify(INTERNAL_TRAFFIC_PARAM);
   const storageKey = JSON.stringify(INTERNAL_TRAFFIC_STORAGE_KEY);
   const productionHosts = JSON.stringify([...PRODUCTION_ANALYTICS_HOSTS]);
@@ -106,6 +109,49 @@ export function getGoogleAnalyticsBootstrapScript(): string {
     };
   window.gtag("js", new Date());
   window.gtag("config", measurementId);
+
+  var interactionEvents = ["pointerdown", "keydown", "touchstart"];
+  var loadTimer;
+  var loaded = false;
+
+  function cleanup() {
+    interactionEvents.forEach(function (eventName) {
+      window.removeEventListener(eventName, loadLibrary);
+    });
+    document.removeEventListener("visibilitychange", onVisibilityChange);
+    if (loadTimer !== undefined) {
+      clearTimeout(loadTimer);
+      loadTimer = undefined;
+    }
+  }
+
+  function loadLibrary() {
+    if (loaded) return;
+    loaded = true;
+    cleanup();
+
+    if (document.getElementById(${scriptId})) return;
+
+    var script = document.createElement("script");
+    script.id = ${scriptId};
+    script.async = true;
+    script.src =
+      "https://www.googletagmanager.com/gtag/js?id=" + measurementId;
+    document.head.appendChild(script);
+  }
+
+  function onVisibilityChange() {
+    if (document.visibilityState === "hidden") loadLibrary();
+  }
+
+  interactionEvents.forEach(function (eventName) {
+    window.addEventListener(eventName, loadLibrary, {
+      once: true,
+      passive: true
+    });
+  });
+  document.addEventListener("visibilitychange", onVisibilityChange);
+  loadTimer = setTimeout(loadLibrary, 3500);
 })();
 `.trim();
 }
@@ -229,7 +275,7 @@ export function initializeGoogleAnalytics(
 
   delete windowLike[disableKey];
 
-  if (documentLike.getElementById(GOOGLE_ANALYTICS_SCRIPT_ID)) {
+  if (documentLike.getElementById(GOOGLE_ANALYTICS_LIBRARY_SCRIPT_ID)) {
     return {
       loaded: true,
       reason: "already-initialized"
@@ -248,7 +294,7 @@ export function initializeGoogleAnalytics(
   windowLike.gtag("config", GOOGLE_ANALYTICS_MEASUREMENT_ID);
 
   const script = documentLike.createElement("script");
-  script.id = GOOGLE_ANALYTICS_SCRIPT_ID;
+  script.id = GOOGLE_ANALYTICS_LIBRARY_SCRIPT_ID;
   script.async = true;
   script.src =
     `https://www.googletagmanager.com/gtag/js?id=` +
