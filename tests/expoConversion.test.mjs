@@ -10,8 +10,8 @@ const legacyRouteSource = await readFile(
   new URL("../app/world-clean-expo/page.tsx", import.meta.url),
   "utf8"
 );
-const globalStyles = await readFile(
-  new URL("../app/globals.css", import.meta.url),
+const expoStyles = await readFile(
+  new URL("../app/styles/wcb-expo.css", import.meta.url),
   "utf8"
 );
 
@@ -48,7 +48,7 @@ test("WCB Expo gives visitors an image-led reason to attend", () => {
     assert.match(expoSource, new RegExp(reason));
   }
   assert.match(expoSource, /wcb-expo-why-grid/);
-  assert.match(globalStyles, /\.wcb-expo-why-card/);
+  assert.match(expoStyles, /\.wcb-expo-why-card/);
 });
 
 test("WCB Expo uses clearly labelled prior-event photography", () => {
@@ -62,7 +62,7 @@ test("WCB Expo uses clearly labelled prior-event photography", () => {
     assert.match(expoSource, new RegExp(image));
   }
   assert.match(expoSource, /wcb-expo-gallery-grid/);
-  assert.match(globalStyles, /\.wcb-expo-gallery-grid/);
+  assert.match(expoStyles, /\.wcb-expo-gallery-grid/);
 });
 
 test("WCB Expo presents seven buyer categories with visual evidence", () => {
@@ -78,7 +78,7 @@ test("WCB Expo presents seven buyer categories with visual evidence", () => {
     assert.match(expoSource, new RegExp(category));
   }
   assert.match(expoSource, /wcb-expo-category-grid/);
-  assert.match(globalStyles, /\.wcb-expo-category-card/);
+  assert.match(expoStyles, /\.wcb-expo-category-card/);
 });
 
 test("WCB Expo explains the supply chain and event programs", () => {
