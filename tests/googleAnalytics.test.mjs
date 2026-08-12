@@ -19,7 +19,8 @@ function createBootstrapRuntime({
   href = "https://worldcleanbiz.com/",
   storedInternal = false,
   webdriver = false,
-  storageThrows = false
+  storageThrows = false,
+  visibilityState = "visible"
 } = {}) {
   const url = new URL(href);
   const values = new Map();
@@ -49,7 +50,7 @@ function createBootstrapRuntime({
   }
 
   const document = {
-    visibilityState: "visible",
+    visibilityState,
     addEventListener(type, listener) {
       addListener(documentListeners, type, listener);
     },
@@ -472,6 +473,15 @@ test("timeout and hidden-page fallbacks each load GA4", () => {
   hidden.document.visibilityState = "hidden";
   hidden.dispatchDocument("visibilitychange");
   assert.equal(hidden.appendedScripts.length, 1);
+});
+
+test("a bootstrap that starts hidden loads GA4 without waiting for a timer", () => {
+  const runtime = createBootstrapRuntime({ visibilityState: "hidden" });
+
+  assert.equal(runtime.appendedScripts.length, 1);
+  assert.equal(runtime.timers.size, 0);
+  assert.equal(runtime.listenerCount("pointerdown"), 0);
+  assert.equal(runtime.listenerCount("visibilitychange"), 0);
 });
 
 test("early lead events remain queued ahead of deferred library injection", () => {

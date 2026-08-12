@@ -44,6 +44,8 @@ tests now prove:
 - allowed production visits immediately queue `js` then `config`;
 - no external GA script exists before an approved trigger;
 - pointer, keyboard, touch, hidden-page, and 3,500 ms triggers load exactly once;
+- a bootstrap that starts in an already-hidden page loads immediately instead
+  of relying on a background-throttled timer;
 - trigger cleanup removes all listeners and the pending timer;
 - an early lead event remains ordered in the queue before library injection;
 - Preview, automation, and internal-browser visits never queue or schedule GA;
@@ -90,8 +92,8 @@ library request rather than changing visual assets or styles.
 
 ## Automated and browser gates
 
-- Focused GA and lead tracking tests: **29/29 passed**.
-- Final repository Node suite: **543/543 passed**.
+- Focused GA and lead tracking tests: **30/30 passed**.
+- Final repository Node suite: **544/544 passed**.
 - Production build: **655/655 pages generated**.
 - Prebuild source-image verification: **438 articles / 1,770 primary / 1,210
   mobile assets**, passed.
@@ -103,6 +105,13 @@ library request rather than changing visual assets or styles.
   eager cover and 15 lazy body images.
 - The only local browser error was the expected absence of Vercel Analytics at
   `/_vercel/insights/script.js`; Vercel supplies it after deployment.
+
+The final read-only review found one Important background-tab edge case. A RED
+test reproduced that an already-hidden page waited for a timer that browsers may
+throttle. The bootstrap now checks the initial visibility state immediately;
+the new test and the complete final gates above passed after that repair. The
+visible-page Lighthouse path is unchanged, so the previously recorded six lab
+runs were not repeated.
 
 ## Release boundary
 

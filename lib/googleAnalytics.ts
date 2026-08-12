@@ -152,6 +152,7 @@ export function getGoogleAnalyticsBootstrapScript(): string {
   });
   document.addEventListener("visibilitychange", onVisibilityChange);
   loadTimer = setTimeout(loadLibrary, 3500);
+  if (document.visibilityState === "hidden") loadLibrary();
 })();
 `.trim();
 }

@@ -81,7 +81,7 @@ node --test tests/googleAnalytics.test.mjs tests/leadTracking.test.mjs
 
 Expected: all GA policy, queue, trigger, idempotency, and lead-event tests pass.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 Commit the runtime and tests as `Defer GA4 library loading`.
 
@@ -127,7 +127,7 @@ node --test tests/googleAnalytics.test.mjs tests/leadTracking.test.mjs
 
 Expected: every focused test passes.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 Commit the component integration as `Load GA4 after the critical render`.
 
