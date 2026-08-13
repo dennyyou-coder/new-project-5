@@ -15,7 +15,7 @@ const [landing, category, directory, css] = await Promise.all([
 const [header, footer, sitemap] = await Promise.all([
   read("components/Header.tsx"),
   read("components/Footer.tsx"),
-  read("app/sitemap.ts")
+  read("lib/sitemaps.ts")
 ]);
 
 test("Guides landing has reader-facing categories and editorial return path", () => {

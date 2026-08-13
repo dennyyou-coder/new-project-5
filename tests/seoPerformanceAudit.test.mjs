@@ -2,7 +2,11 @@ import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 import { getInsights, markdownToHtml } from "../lib/content.ts";
-import sitemap from "../app/sitemap.ts";
+import { GET as sitemapIndex } from "../app/sitemap.xml/route.ts";
+import {
+  buildBlogSitemap,
+  buildDiscoverySitemap
+} from "../lib/sitemaps.ts";
 import { seoDescription, seoTitle } from "../lib/seo.ts";
 
 const sourcingGuideSlugs = [
@@ -92,12 +96,27 @@ test("markdown body images are lazy, asynchronous, and dimensionally stable", ()
   assert.match(html, /height="\d+"/);
 });
 
-test("sitemap exposes quality compliance and trustworthy article modification dates", () => {
-  const entries = sitemap();
-  const qualityRoute = entries.find(
+test("sitemap index exposes focused child sitemaps without mixing page URLs", () => {
+  const response = sitemapIndex();
+  return response.text().then((xml) => {
+    assert.equal(response.headers.get("content-type"), "application/xml; charset=utf-8");
+    assert.match(xml, /<sitemapindex/);
+    assert.equal((xml.match(/<sitemap>/g) || []).length, 4);
+    assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/blog\/sitemap\.xml/);
+    assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/discovery\/sitemap\.xml/);
+    assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/brands\/sitemap\.xml/);
+    assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/technical\/sitemap\.xml/);
+    assert.doesNotMatch(xml, /<url>/);
+  });
+});
+
+test("child sitemaps preserve trustworthy page dates and intentional discovery routes", () => {
+  const blogEntries = buildBlogSitemap();
+  const discoveryEntries = buildDiscoverySitemap();
+  const qualityRoute = discoveryEntries.find(
     ({ url }) => url === "https://worldcleanbiz.com/quality-compliance"
   );
-  const updatedArticle = entries.find(
+  const updatedArticle = blogEntries.find(
     ({ url }) =>
       url ===
       "https://worldcleanbiz.com/blog/robotic-lawn-mower-market-size-yard-automation"

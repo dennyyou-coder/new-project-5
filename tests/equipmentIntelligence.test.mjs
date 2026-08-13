@@ -14,7 +14,7 @@ import {
 } from "../lib/equipment.ts";
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
 import { getInsights } from "../lib/content.ts";
-import sitemap from "../app/sitemap.ts";
+import { buildTechnicalSitemap as sitemap } from "../lib/sitemaps.ts";
 import { readRouteStyles } from "./readRouteStyles.mjs";
 
 const evidence = {

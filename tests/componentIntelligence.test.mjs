@@ -148,9 +148,9 @@ test("published loader sitemap and schemas expose only safe semantics", () => {
 });
 
 test("site discovery integrates published components without hard-coding the pilot", () => {
-  const source = fs.readFileSync(path.join(process.cwd(), "app/sitemap.ts"), "utf8");
+  const source = fs.readFileSync(path.join(process.cwd(), "lib/sitemaps.ts"), "utf8");
   assert.match(source, /getPublishedComponentProfiles\(\)/);
-  assert.match(source, /componentProfiles\.length > 0 \? \["\/components"\] : \[\]/);
+  assert.match(source, /componentProfiles\.length > 0 \? \[\{ url: `\$\{baseUrl\}\/components` \}\] : \[\]/);
   assert.match(source, /buildComponentSitemapEntries\(componentProfiles, baseUrl\)/);
   assert.doesNotMatch(source, /vacuum-cleaner-motor/);
 });
