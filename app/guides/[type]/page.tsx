@@ -33,22 +33,30 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params
-}: Pick<PageProps, "params">): Promise<Metadata> {
+  params,
+  searchParams
+}: PageProps): Promise<Metadata> {
   const { type } = await params;
   const config = GUIDE_TYPE_CONFIG.find((item) => item.type === type);
   if (!config) return {};
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const guides = getGuideInsights(getInsights(), config.type);
+  const { currentPage: page } = paginateDirectoryItems(
+    guides,
+    parseDirectoryPage(resolvedSearchParams.page)
+  );
+  const canonical = directoryHref(config.href, page);
 
   return {
-    title: config.label,
+    title: page > 1 ? `${config.label} – Page ${page}` : config.label,
     description: config.description,
-    alternates: { canonical: config.href },
+    alternates: { canonical },
     robots: { index: true, follow: true },
     openGraph: {
       title: `${config.label} | World Clean Biz`,
       description: config.description,
       type: "website",
-      url: config.href,
+      url: canonical,
       images: [DEFAULT_SOCIAL_IMAGE]
     },
     twitter: {

@@ -554,12 +554,12 @@ test("article route renders one published primary-brand link group between metad
 });
 
 test("sitemap publishes the brand directory and valid profile modification dates", () => {
-  const source = read("app/sitemap.ts");
+  const source = read("lib/sitemaps.ts");
 
-  assert.equal((source.match(/getInsights\(\)/g) || []).length, 1);
-  assert.match(source, /const profiles = getPublishedBrandProfiles\(insights\)/);
-  assert.match(source, /"\/brands"/);
-  assert.match(source, /\.\.\.buildBrandSitemapEntries\(profiles,\s*baseUrl\)/);
+  assert.match(
+    source,
+    /export function buildBrandsSitemap\(\)[\s\S]*?const insights = getInsights\(\)[\s\S]*?const profiles = getPublishedBrandProfiles\(insights\)[\s\S]*?`\$\{baseUrl\}\/brands`[\s\S]*?buildBrandSitemapEntries\(profiles,\s*baseUrl\)/
+  );
 });
 
 test("footer exposes exactly one Brand Intelligence discovery link", () => {

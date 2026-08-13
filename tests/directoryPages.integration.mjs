@@ -70,7 +70,22 @@ test("Analysis archive renders ten linked feed rows and a sidebar", async () => 
   );
 });
 
-test("Analysis pagination and filters are server rendered", async () => {
+test("Analysis pagination is server rendered with a self-canonical indexable page", async () => {
+  const html = await page("/blog/archive?page=2");
+
+  includesMatch(html, /aria-current="page"[^>]*>2</, "Page 2 is selected");
+  includesMatch(
+    html,
+    /rel="canonical" href="https:\/\/worldcleanbiz\.com\/blog\/archive\?page=2"/,
+    "Page 2 uses its own canonical"
+  );
+  excludesMatch(html, /content="noindex, follow"/, "Unfiltered page 2 stays indexable");
+  assert.ok(
+    occurrences(html, /class="content-directory-feed-item"/g) <= 10
+  );
+});
+
+test("Analysis filters remain server rendered and noindex", async () => {
   const html = await page(
     "/blog/archive?category=Robotic%20Mowers&page=2"
   );
@@ -78,9 +93,6 @@ test("Analysis pagination and filters are server rendered", async () => {
   includesMatch(html, /aria-current="page"[^>]*>2</, "Page 2 is selected");
   includesMatch(html, /content="noindex, follow"/, "Filtered pages are noindex");
   includesMatch(html, /category=Robotic\+Mowers/, "Pagination preserves the category");
-  assert.ok(
-    occurrences(html, /class="content-directory-feed-item"/g) <= 10
-  );
 });
 
 test("Analysis root shows the series, full company index and curated sidebar", async () => {
@@ -173,6 +185,12 @@ test("Guide pagination and type pages do not repeat the series", async () => {
     /class="[^"]*content-directory-series[^"]*"/,
     "Page 2 omits the series"
   );
+  includesMatch(
+    pageTwo,
+    /rel="canonical" href="https:\/\/worldcleanbiz\.com\/guides\?page=2"/,
+    "Guides page 2 uses its own canonical"
+  );
+  excludesMatch(pageTwo, /content="noindex, follow"/, "Guides page 2 stays indexable");
   excludesMatch(
     ownership,
     /class="[^"]*content-directory-series[^"]*"/,
@@ -185,7 +203,7 @@ test("Guide pagination and type pages do not repeat the series", async () => {
   );
 });
 
-test("Guide category pages reuse the directory and preserve paginated canonicals", async () => {
+test("Guide category pages reuse the directory and expose indexable paginated canonicals", async () => {
   const html = await page("/guides/ownership?page=2");
 
   includesMatch(html, />Brand Ownership</, "Ownership page has its title");
@@ -195,11 +213,11 @@ test("Guide category pages reuse the directory and preserve paginated canonicals
     "Ownership uses the directory"
   );
   includesMatch(html, /aria-current="page"[^>]*>2</, "Page 2 is selected");
-  includesMatch(html, /content="noindex, follow"/, "Paginated guides are noindex");
+  excludesMatch(html, /content="noindex, follow"/, "Paginated guides stay indexable");
   includesMatch(
     html,
-    /rel="canonical" href="https:\/\/worldcleanbiz\.com\/guides\/ownership"/,
-    "Ownership keeps the canonical URL"
+    /rel="canonical" href="https:\/\/worldcleanbiz\.com\/guides\/ownership\?page=2"/,
+    "Ownership page 2 uses its own canonical"
   );
   assert.equal(
     occurrences(html, /class="content-directory-feed-item"/g),

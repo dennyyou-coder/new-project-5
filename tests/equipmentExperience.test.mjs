@@ -153,9 +153,9 @@ test("equipment styles preserve scoped desktop and mobile layouts", () => {
 });
 
 test("sitemap integrates published equipment without hard-coding the draft pilot", () => {
-  const source = read("app/sitemap.ts");
+  const source = read("lib/sitemaps.ts");
   assert.match(source, /getPublishedEquipmentProfiles\(publishedBrandSlugs\)/);
-  assert.match(source, /equipmentProfiles\.length > 0 \? \["\/equipment"\] : \[\]/);
+  assert.match(source, /equipmentProfiles\.length > 0 \? \[\{ url: `\$\{baseUrl\}\/equipment` \}\] : \[\]/);
   assert.match(source, /buildEquipmentSitemapEntries\(equipmentProfiles, baseUrl\)/);
   assert.doesNotMatch(source, /floor-scrubber/);
 });

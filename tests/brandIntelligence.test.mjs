@@ -27,7 +27,7 @@ import {
 } from "../lib/brandCategories.ts";
 import { getInsights } from "../lib/content.ts";
 import { partitionFeaturedLeadership } from "../components/brands/brandSectionData.ts";
-import sitemap from "../app/sitemap.ts";
+import { buildBrandsSitemap as sitemap } from "../lib/sitemaps.ts";
 
 const profile = {
   status: "published",

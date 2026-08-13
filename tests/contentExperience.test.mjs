@@ -13,7 +13,7 @@ const [blog, blogLayout, blogLanding, archive, directory, article, css, sitemap,
   read("components/ContentDirectory.tsx"),
   read("app/blog/[slug]/page.tsx"),
   Promise.resolve(readRouteStyles("content-directories.css")),
-  read("app/sitemap.ts"),
+  read("lib/sitemaps.ts"),
   read("components/DirectorySeriesFeature.tsx"),
   read("components/DirectorySidebar.tsx")
 ]);
