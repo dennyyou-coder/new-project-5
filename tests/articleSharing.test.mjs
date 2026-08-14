@@ -1,7 +1,14 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
 import * as articleSharing from "../lib/articleSharing.ts";
+import {
+  ARTICLE_COPY_ICON,
+  ARTICLE_NATIVE_SHARE_ICON,
+  ARTICLE_SHARE_ICONS
+} from "../lib/articleShareIcons.ts";
 
 const {
   canUseNativeShare,
@@ -65,6 +72,31 @@ test("repeated share feedback receives a new accessible announcement version", (
   assert.deepEqual(first, { message: "Link copied", sequence: 1 });
   assert.deepEqual(second, { message: "Link copied", sequence: 2 });
   assert.notDeepEqual(second, first);
+});
+
+test("article share actions use six distinct accessible vector icons", () => {
+  assert.deepEqual(Object.keys(ARTICLE_SHARE_ICONS), [
+    "linkedin",
+    "x",
+    "facebook",
+    "whatsapp"
+  ]);
+
+  const icons = [
+    ...Object.values(ARTICLE_SHARE_ICONS),
+    ARTICLE_COPY_ICON,
+    ARTICLE_NATIVE_SHARE_ICON
+  ];
+
+  assert.equal(new Set(icons).size, 6);
+  for (const Icon of icons) {
+    const markup = renderToStaticMarkup(
+      createElement(Icon, { "aria-hidden": "true", focusable: "false" })
+    );
+    assert.match(markup, /^<svg/);
+    assert.match(markup, /aria-hidden="true"/);
+    assert.match(markup, /focusable="false"/);
+  }
 });
 
 test("responsive sharing component contains the required accessibility contracts", async () => {
