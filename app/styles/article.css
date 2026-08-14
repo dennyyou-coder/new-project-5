@@ -570,7 +570,7 @@
 
 .article-share-action:focus-visible {
   border-color: var(--blue);
-  outline: 3px solid var(--soft);
+  outline: 3px solid var(--blue);
   outline-offset: 3px;
 }
 
@@ -586,6 +586,16 @@
   font-size: 12px;
   line-height: 1.4;
   text-align: center;
+}
+
+.article-share-status-sequence {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 @media (max-width: 1040px) {

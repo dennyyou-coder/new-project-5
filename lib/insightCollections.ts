@@ -118,6 +118,8 @@ export function getRelatedEditorialInsights<T extends SortableInsight>(
   current: T,
   limit = 3
 ) {
+  if (limit <= 0) return [];
+
   const eligible = getEditorialInsights(articles).filter(
     (article) =>
       article.slug !== current.slug &&
@@ -139,14 +141,15 @@ export function getRelatedEditorialInsights<T extends SortableInsight>(
   const ordered = stableInsightOrder([...ungrouped, ...latestSeries], current.slug);
   const selected: T[] = [];
 
-  if (!current.series && latestSeries.length) {
+  if (!current.series && latestSeries.length && selected.length < limit) {
     selected.push(stableInsightOrder(latestSeries, current.slug)[0]);
   }
 
   for (const article of ordered) {
+    if (selected.length >= limit) break;
     if (selected.some((item) => item.slug === article.slug)) continue;
     selected.push(article);
-    if (selected.length === limit) break;
+    if (selected.length >= limit) break;
   }
 
   if (selected.length < limit) {

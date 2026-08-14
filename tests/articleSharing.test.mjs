@@ -1,12 +1,14 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import {
+import * as articleSharing from "../lib/articleSharing.ts";
+
+const {
   canUseNativeShare,
   copyArticleUrl,
   getArticleShareLinks,
   shareArticle
-} from "../lib/articleSharing.ts";
+} = articleSharing;
 
 const data = {
   title: "Pool robotics & the next market",
@@ -52,6 +54,19 @@ test("copy falls back only when Clipboard API is unavailable or fails", async ()
   assert.equal(calls.at(-1), `legacy:${data.url}`);
 });
 
+test("repeated share feedback receives a new accessible announcement version", () => {
+  const nextAnnouncement = articleSharing.nextShareAnnouncement;
+  assert.equal(typeof nextAnnouncement, "function");
+  if (typeof nextAnnouncement !== "function") return;
+
+  const first = nextAnnouncement({ message: "", sequence: 0 }, "Link copied");
+  const second = nextAnnouncement(first, "Link copied");
+
+  assert.deepEqual(first, { message: "Link copied", sequence: 1 });
+  assert.deepEqual(second, { message: "Link copied", sequence: 2 });
+  assert.notDeepEqual(second, first);
+});
+
 test("responsive sharing component contains the required accessibility contracts", async () => {
   const componentSource = await readFile(
     new URL("../components/ArticleShareActions.tsx", import.meta.url),
@@ -62,6 +77,9 @@ test("responsive sharing component contains the required accessibility contracts
   assert.match(componentSource, /article-share-rail/);
   assert.match(componentSource, /article-share-mobile/);
   assert.match(componentSource, /aria-live="polite"/);
+  assert.match(componentSource, /aria-atomic="true"/);
+  assert.match(componentSource, /nextShareAnnouncement/);
+  assert.match(componentSource, /article-share-status-sequence/);
   assert.match(componentSource, /rel="noopener noreferrer"/);
   assert.match(componentSource, /canUseNativeShare/);
   assert.match(componentSource, /copyArticleUrl/);

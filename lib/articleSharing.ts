@@ -16,6 +16,18 @@ export type CopyEnvironment = {
   legacyCopy(value: string): boolean;
 };
 
+export type ArticleShareAnnouncement = {
+  message: string;
+  sequence: number;
+};
+
+export function nextShareAnnouncement(
+  current: ArticleShareAnnouncement,
+  message: string
+): ArticleShareAnnouncement {
+  return { message, sequence: current.sequence + 1 };
+}
+
 export function getArticleShareLinks(title: string, url: string): ArticleShareLink[] {
   const encodedTitle = encodeURIComponent(title);
   const encodedUrl = encodeURIComponent(url);

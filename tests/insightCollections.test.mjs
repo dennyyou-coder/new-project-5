@@ -138,6 +138,21 @@ test("related recommendations reserve one slot for the latest serial analysis", 
   assert.ok(related.every(({ slug }) => slug !== "series-1"));
 });
 
+test("related recommendations honor zero, one, and two item limits", () => {
+  const current = insight({ slug: "current" });
+  const candidates = [
+    current,
+    insight({ slug: "series-1", series: "expo-series", seriesEpisode: "1" }),
+    insight({ slug: "series-2", series: "expo-series", seriesEpisode: "2" }),
+    insight({ slug: "analysis-a" }),
+    insight({ slug: "analysis-b" })
+  ];
+
+  assert.deepEqual(getRelatedEditorialInsights(candidates, current, 0), []);
+  assert.equal(getRelatedEditorialInsights(candidates, current, 1).length, 1);
+  assert.equal(getRelatedEditorialInsights(candidates, current, 2).length, 2);
+});
+
 test("related recommendations do not duplicate the current series", () => {
   const current = insight({ slug: "series-current", series: "expo-series", seriesEpisode: "3" });
   const related = getRelatedEditorialInsights([

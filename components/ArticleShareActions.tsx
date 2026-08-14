@@ -2,9 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
+  type ArticleShareAnnouncement,
   canUseNativeShare,
   copyArticleUrl,
   getArticleShareLinks,
+  nextShareAnnouncement,
   shareArticle
 } from "@/lib/articleSharing";
 
@@ -19,7 +21,10 @@ export function ArticleShareActions({ title, url }: { title: string; url: string
   const data = { title, url };
   const links = getArticleShareLinks(title, url);
   const [canNativeShare, setCanNativeShare] = useState(false);
-  const [status, setStatus] = useState("");
+  const [announcement, setAnnouncement] = useState<ArticleShareAnnouncement>({
+    message: "",
+    sequence: 0
+  });
   const feedbackTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   useEffect(() => {
@@ -30,9 +35,12 @@ export function ArticleShareActions({ title, url }: { title: string; url: string
   }, [title, url]);
 
   function announce(message: string) {
-    setStatus(message);
+    setAnnouncement((current) => nextShareAnnouncement(current, message));
     if (feedbackTimer.current) clearTimeout(feedbackTimer.current);
-    feedbackTimer.current = setTimeout(() => setStatus(""), 2400);
+    feedbackTimer.current = setTimeout(
+      () => setAnnouncement((current) => ({ ...current, message: "" })),
+      2400
+    );
   }
 
   function legacyCopy(value: string) {
@@ -88,8 +96,13 @@ export function ArticleShareActions({ title, url }: { title: string; url: string
           >
             <span aria-hidden="true">⧉</span>
           </button>
-          <span className="article-share-status" role="status" aria-live="polite">
-            {status}
+          <span className="article-share-status" role="status" aria-live="polite" aria-atomic="true">
+            {announcement.message}
+            {announcement.message ? (
+              <span className="article-share-status-sequence">
+                Notification {announcement.sequence}
+              </span>
+            ) : null}
           </span>
         </div>
       </aside>
@@ -124,8 +137,13 @@ export function ArticleShareActions({ title, url }: { title: string; url: string
             <span>Copy link</span>
           </button>
         </div>
-        <span className="article-share-status" role="status" aria-live="polite">
-          {status}
+        <span className="article-share-status" role="status" aria-live="polite" aria-atomic="true">
+          {announcement.message}
+          {announcement.message ? (
+            <span className="article-share-status-sequence">
+              Notification {announcement.sequence}
+            </span>
+          ) : null}
         </span>
       </section>
     </>

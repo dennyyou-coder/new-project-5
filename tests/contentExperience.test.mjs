@@ -89,6 +89,13 @@ test("Article share and related layouts adapt without covering mobile content", 
   assert.match(blogRouteCss, /@media \(max-width:\s*640px\)[\s\S]*\.blog-related-signals \.related-signal-card[\s\S]*grid-template-columns:/);
 });
 
+test("Article share actions expose a high-contrast keyboard focus indicator", () => {
+  assert.match(
+    blogRouteCss,
+    /\.article-share-action:focus-visible\s*\{[^}]*outline:\s*3px solid var\(--blue\)[^}]*outline-offset:\s*3px/s
+  );
+});
+
 test("Article schema includes author identity, section, keywords, and publisher logo", () => {
   assert.match(article, /articleSection: article\.category/);
   assert.match(article, /keywords: article\.tags/);
