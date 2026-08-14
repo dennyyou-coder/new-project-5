@@ -96,6 +96,68 @@ export function getLatestSeriesInsight<T extends SortableInsight>(
   )[0];
 }
 
+function stableInsightScore(seed: string, value: string) {
+  let hash = 2166136261;
+  for (const character of `${seed}:${value}`) {
+    hash ^= character.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function stableInsightOrder<T extends SortableInsight>(articles: T[], seed: string) {
+  return [...articles].sort(
+    (a, b) =>
+      stableInsightScore(seed, a.slug) - stableInsightScore(seed, b.slug) ||
+      a.slug.localeCompare(b.slug)
+  );
+}
+
+export function getRelatedEditorialInsights<T extends SortableInsight>(
+  articles: T[],
+  current: T,
+  limit = 3
+) {
+  const eligible = getEditorialInsights(articles).filter(
+    (article) =>
+      article.slug !== current.slug &&
+      (!current.series || article.series !== current.series)
+  );
+  const ungrouped = eligible.filter((article) => !article.series);
+  const seriesGroups = new Map<string, T[]>();
+
+  for (const article of eligible) {
+    if (!article.series) continue;
+    const group = seriesGroups.get(article.series) ?? [];
+    group.push(article);
+    seriesGroups.set(article.series, group);
+  }
+
+  const latestSeries = [...seriesGroups.values()]
+    .map((group) => orderSeriesInsights(group, "descending")[0])
+    .filter((article): article is T => Boolean(article));
+  const ordered = stableInsightOrder([...ungrouped, ...latestSeries], current.slug);
+  const selected: T[] = [];
+
+  if (!current.series && latestSeries.length) {
+    selected.push(stableInsightOrder(latestSeries, current.slug)[0]);
+  }
+
+  for (const article of ordered) {
+    if (selected.some((item) => item.slug === article.slug)) continue;
+    selected.push(article);
+    if (selected.length === limit) break;
+  }
+
+  if (selected.length < limit) {
+    throw new Error(
+      `RELATED_EDITORIAL_INSUFFICIENT slug=${current.slug} required=${limit} available=${selected.length}`
+    );
+  }
+
+  return selected;
+}
+
 export function getBlogHomepageEditorial<T extends SortableInsight>(
   articles: T[],
   excludedSeries: string,
