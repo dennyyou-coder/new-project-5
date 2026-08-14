@@ -10,6 +10,7 @@ const {
   getFeaturedGuides,
   getGuideInsights,
   getLatestSeriesInsight,
+  getRelatedEditorialInsights,
   orderSeriesInsights
 } = insightCollections;
 
@@ -99,6 +100,84 @@ function insight(overrides) {
     ...overrides
   };
 }
+
+test("related recommendations return three stable editorial articles", () => {
+  const current = insight({ slug: "current" });
+  const candidates = [
+    current,
+    insight({ slug: "analysis-a", sortDate: "2026-08-01" }),
+    insight({ slug: "analysis-b", sortDate: "2026-08-02" }),
+    insight({ slug: "analysis-c", sortDate: "2026-08-03" }),
+    insight({ slug: "analysis-d", sortDate: "2026-08-04" }),
+    insight({ slug: "guide", contentClass: "search", guideType: "buying" })
+  ];
+
+  const first = getRelatedEditorialInsights(candidates, current);
+  const second = getRelatedEditorialInsights([...candidates].reverse(), current);
+
+  assert.equal(first.length, 3);
+  assert.deepEqual(first.map(({ slug }) => slug), second.map(({ slug }) => slug));
+  assert.ok(first.every(({ contentClass }) => contentClass === "editorial"));
+  assert.ok(first.every(({ slug }) => slug !== current.slug));
+  assert.equal(new Set(first.map(({ slug }) => slug)).size, 3);
+});
+
+test("related recommendations reserve one slot for the latest serial analysis", () => {
+  const current = insight({ slug: "current" });
+  const candidates = [
+    current,
+    insight({ slug: "series-1", series: "expo-series", seriesEpisode: "1", sortDate: "2026-08-01" }),
+    insight({ slug: "series-2", series: "expo-series", seriesEpisode: "2", sortDate: "2026-08-02" }),
+    insight({ slug: "analysis-a" }),
+    insight({ slug: "analysis-b" }),
+    insight({ slug: "analysis-c" })
+  ];
+
+  const related = getRelatedEditorialInsights(candidates, current);
+  assert.ok(related.some(({ slug }) => slug === "series-2"));
+  assert.ok(related.every(({ slug }) => slug !== "series-1"));
+});
+
+test("related recommendations honor zero, one, and two item limits", () => {
+  const current = insight({ slug: "current" });
+  const candidates = [
+    current,
+    insight({ slug: "series-1", series: "expo-series", seriesEpisode: "1" }),
+    insight({ slug: "series-2", series: "expo-series", seriesEpisode: "2" }),
+    insight({ slug: "analysis-a" }),
+    insight({ slug: "analysis-b" })
+  ];
+
+  assert.deepEqual(getRelatedEditorialInsights(candidates, current, 0), []);
+  assert.equal(getRelatedEditorialInsights(candidates, current, 1).length, 1);
+  assert.equal(getRelatedEditorialInsights(candidates, current, 2).length, 2);
+});
+
+test("related recommendations do not duplicate the current series", () => {
+  const current = insight({ slug: "series-current", series: "expo-series", seriesEpisode: "3" });
+  const related = getRelatedEditorialInsights([
+    current,
+    insight({ slug: "series-older", series: "expo-series", seriesEpisode: "2" }),
+    insight({ slug: "other-series", series: "market-series", seriesEpisode: "1" }),
+    insight({ slug: "analysis-a" }),
+    insight({ slug: "analysis-b" }),
+    insight({ slug: "analysis-c" })
+  ], current);
+
+  assert.ok(related.every(({ series }) => series !== "expo-series"));
+});
+
+test("related recommendations fail clearly when three editorial articles are unavailable", () => {
+  const current = insight({ slug: "current" });
+  assert.throws(
+    () => getRelatedEditorialInsights([
+      current,
+      insight({ slug: "only-one" }),
+      insight({ slug: "guide", contentClass: "search" })
+    ], current),
+    /RELATED_EDITORIAL_INSUFFICIENT slug=current required=3 available=1/
+  );
+});
 
 test("selects the highest numeric episode from the fixed series", () => {
   const articles = [

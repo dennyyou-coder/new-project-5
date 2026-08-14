@@ -433,6 +433,7 @@
 }
 
 .blog-article-main {
+  position: relative;
   width: 100%;
   max-width: none;
   overflow-wrap: anywhere;
@@ -505,6 +506,147 @@
   margin-top: 48px;
   border-top: 1px solid rgba(226, 232, 240, 0.92);
   padding-top: 24px;
+}
+
+.article-share-rail {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 24px);
+  bottom: 0;
+  width: 64px;
+}
+
+.article-share-rail-inner {
+  position: sticky;
+  top: 112px;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.article-share-kicker {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-share-action {
+  display: inline-flex;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--soft);
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.article-prose .article-share-action {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.article-share-action:hover {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.article-share-action:focus-visible {
+  border-color: var(--blue);
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.article-share-mobile {
+  display: none;
+}
+
+.article-share-status {
+  display: block;
+  width: 100%;
+  min-height: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.article-share-status-sequence {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 1040px) {
+  .article-share-rail {
+    display: none;
+  }
+
+  .article-share-mobile {
+    display: grid;
+    gap: 14px;
+    margin-top: 42px;
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+  }
+
+  .article-share-mobile h2 {
+    margin: 4px 0 0;
+    border: 0;
+    padding: 0;
+    color: var(--ink);
+    font-size: 21px;
+    line-height: 1.25;
+  }
+
+  .article-share-mobile-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .article-share-mobile .article-share-action {
+    width: auto;
+    gap: 8px;
+    border-radius: 999px;
+    padding: 0 14px;
+  }
+
+  .article-share-mobile .article-share-status {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article-share-action {
+    transition: none;
+  }
+
+  .article-share-action:hover {
+    transform: none;
+  }
 }
 
 .blog-series-navigation {

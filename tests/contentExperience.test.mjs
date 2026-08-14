@@ -70,6 +70,32 @@ test("Article template strengthens trust and related discovery without changing 
   assert.equal((article.match(/<BlogConversionCta/g) || []).length, 1);
 });
 
+test("Article template uses editorial recommendations and responsive sharing", () => {
+  assert.match(article, /getRelatedEditorialInsights\(articles, article, 3\)/);
+  assert.match(article, /<ArticleShareActions title=\{article\.title\} url=\{url\}/);
+  assert.match(article, /<h2[^>]*>Continue Reading<\/h2>/);
+  assert.match(article, /blog-related-signals-heading/);
+  assert.match(article, /item\.seriesTitle \|\| item\.category/);
+  assert.doesNotMatch(article, /relatedArticleOverrides/);
+  assert.doesNotMatch(article, /<p>\{item\.excerpt\}<\/p>/);
+});
+
+test("Article share and related layouts adapt without covering mobile content", () => {
+  assert.match(blogRouteCss, /\.article-share-rail[\s\S]*position:\s*absolute/);
+  assert.match(blogRouteCss, /\.article-share-rail-inner[\s\S]*position:\s*sticky/);
+  assert.match(blogRouteCss, /\.article-share-action[\s\S]*min-(?:width|height):\s*44px/);
+  assert.match(blogRouteCss, /@media \(max-width:\s*1040px\)[\s\S]*\.article-share-rail[\s\S]*display:\s*none/);
+  assert.match(blogRouteCss, /\.blog-related-signals \.related-signal-grid[\s\S]*repeat\(3,/);
+  assert.match(blogRouteCss, /@media \(max-width:\s*640px\)[\s\S]*\.blog-related-signals \.related-signal-card[\s\S]*grid-template-columns:/);
+});
+
+test("Article share actions expose a high-contrast keyboard focus indicator", () => {
+  assert.match(
+    blogRouteCss,
+    /\.article-share-action:focus-visible\s*\{[^}]*outline:\s*3px solid var\(--blue\)[^}]*outline-offset:\s*3px/s
+  );
+});
+
 test("Article schema includes author identity, section, keywords, and publisher logo", () => {
   assert.match(article, /articleSection: article\.category/);
   assert.match(article, /keywords: article\.tags/);
