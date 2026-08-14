@@ -556,6 +556,12 @@
     transform 160ms ease;
 }
 
+.article-share-action svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
 .article-prose .article-share-action {
   color: var(--ink);
   text-decoration: none;

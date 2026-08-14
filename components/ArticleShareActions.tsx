@@ -9,13 +9,11 @@ import {
   nextShareAnnouncement,
   shareArticle
 } from "@/lib/articleSharing";
-
-const SHARE_MARKS = {
-  linkedin: "in",
-  x: "X",
-  facebook: "f",
-  whatsapp: "WA"
-} as const;
+import {
+  ARTICLE_COPY_ICON,
+  ARTICLE_NATIVE_SHARE_ICON,
+  ARTICLE_SHARE_ICONS
+} from "@/lib/articleShareIcons";
 
 export function ArticleShareActions({ title, url }: { title: string; url: string }) {
   const data = { title, url };
@@ -74,19 +72,22 @@ export function ArticleShareActions({ title, url }: { title: string; url: string
       <aside className="article-share-rail" aria-label="Share this article">
         <div className="article-share-rail-inner">
           <span className="article-share-kicker">Share</span>
-          {links.map((link) => (
-            <a
-              aria-label={link.label}
-              className="article-share-action"
-              href={link.href}
-              key={link.id}
-              rel="noopener noreferrer"
-              target="_blank"
-              title={link.label}
-            >
-              <span aria-hidden="true">{SHARE_MARKS[link.id]}</span>
-            </a>
-          ))}
+          {links.map((link) => {
+            const ShareIcon = ARTICLE_SHARE_ICONS[link.id];
+            return (
+              <a
+                aria-label={link.label}
+                className="article-share-action"
+                href={link.href}
+                key={link.id}
+                rel="noopener noreferrer"
+                target="_blank"
+                title={link.label}
+              >
+                <ShareIcon aria-hidden="true" focusable="false" />
+              </a>
+            );
+          })}
           <button
             aria-label="Copy article link"
             className="article-share-action"
@@ -94,7 +95,7 @@ export function ArticleShareActions({ title, url }: { title: string; url: string
             title="Copy article link"
             type="button"
           >
-            <span aria-hidden="true">⧉</span>
+            <ARTICLE_COPY_ICON aria-hidden="true" focusable="false" />
           </button>
           <span className="article-share-status" role="status" aria-live="polite" aria-atomic="true">
             {announcement.message}
@@ -115,25 +116,28 @@ export function ArticleShareActions({ title, url }: { title: string; url: string
         <div className="article-share-mobile-actions">
           {canNativeShare ? (
             <button className="article-share-action" onClick={handleNativeShare} type="button">
-              <span aria-hidden="true">↗</span>
+              <ARTICLE_NATIVE_SHARE_ICON aria-hidden="true" focusable="false" />
               <span>Share</span>
             </button>
           ) : null}
-          {links.map((link) => (
-            <a
-              aria-label={link.label}
-              className="article-share-action"
-              href={link.href}
-              key={link.id}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span aria-hidden="true">{SHARE_MARKS[link.id]}</span>
-              <span>{link.id === "x" ? "X" : link.id[0].toUpperCase() + link.id.slice(1)}</span>
-            </a>
-          ))}
+          {links.map((link) => {
+            const ShareIcon = ARTICLE_SHARE_ICONS[link.id];
+            return (
+              <a
+                aria-label={link.label}
+                className="article-share-action"
+                href={link.href}
+                key={link.id}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <ShareIcon aria-hidden="true" focusable="false" />
+                <span>{link.id === "x" ? "X" : link.id[0].toUpperCase() + link.id.slice(1)}</span>
+              </a>
+            );
+          })}
           <button className="article-share-action" onClick={handleCopy} type="button">
-            <span aria-hidden="true">⧉</span>
+            <ARTICLE_COPY_ICON aria-hidden="true" focusable="false" />
             <span>Copy link</span>
           </button>
         </div>
