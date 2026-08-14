@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArticleBrandLinks } from "@/components/ArticleBrandLinks";
+import { ArticleShareActions } from "@/components/ArticleShareActions";
 import { BlogConversionCta } from "@/components/BlogConversionCta";
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { responsiveImageProps } from "@/lib/articleImages";
@@ -11,7 +12,10 @@ import {
   markdownToHtml,
   removeLeadingArticleTitleAndCover
 } from "@/lib/content";
-import { orderSeriesInsights } from "@/lib/insightCollections";
+import {
+  getRelatedEditorialInsights,
+  orderSeriesInsights
+} from "@/lib/insightCollections";
 import { seoDescription, seoTitle } from "@/lib/seo";
 
 type Props = {
@@ -19,83 +23,6 @@ type Props = {
 };
 
 const siteUrl = "https://worldcleanbiz.com";
-const relatedArticleOverrides: Record<string, string[]> = {
-  "factory-audit-cleaning-appliance-suppliers-china": [
-    "how-to-evaluate-a-chinese-cleaning-appliance-supplier",
-    "sample-testing-cleaning-appliances-china",
-    "quality-control-cleaning-appliances-china"
-  ],
-  "spare-parts-warranty-cleaning-appliances-china": [
-    "sample-testing-cleaning-appliances-china",
-    "quality-control-cleaning-appliances-china",
-    "cleaning-appliance-moq-pricing-hidden-costs-china"
-  ],
-  "sample-testing-cleaning-appliances-china": [
-    "quality-control-cleaning-appliances-china",
-    "cleaning-appliance-moq-pricing-hidden-costs-china",
-    "how-to-evaluate-a-chinese-cleaning-appliance-supplier"
-  ],
-  "cleaning-appliance-moq-pricing-hidden-costs-china": [
-    "quality-control-cleaning-appliances-china",
-    "compliance-certification-cleaning-appliances-china",
-    "how-to-evaluate-a-chinese-cleaning-appliance-supplier"
-  ],
-  "compliance-certification-cleaning-appliances-china": [
-    "quality-control-cleaning-appliances-china",
-    "how-to-evaluate-a-chinese-cleaning-appliance-supplier",
-    "oem-vs-odm-cleaning-products"
-  ],
-  "private-label-cleaning-products-from-china": [
-    "oem-vs-odm-cleaning-products",
-    "factory-vs-trading-company-china-cleaning-appliances",
-    "how-to-evaluate-a-chinese-cleaning-appliance-supplier"
-  ],
-  "factory-vs-trading-company-china-cleaning-appliances": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "how-to-evaluate-a-chinese-cleaning-appliance-supplier",
-    "oem-vs-odm-cleaning-products"
-  ],
-  "how-to-evaluate-a-chinese-cleaning-appliance-supplier": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "oem-vs-odm-cleaning-products",
-    "floor-washer-manufacturers-china"
-  ],
-  "oem-vs-odm-cleaning-products": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "robot-vacuum-cleaners-from-china",
-    "floor-washer-manufacturers-china"
-  ],
-  "commercial-cleaning-robot-manufacturers-china": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "floor-washer-manufacturers-china",
-    "robot-vacuum-cleaners-from-china"
-  ],
-  "robotic-lawn-mower-manufacturers-china": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "robot-vacuum-cleaners-from-china",
-    "cordless-vacuum-cleaner-oem-manufacturers-china"
-  ],
-  "floor-washer-manufacturers-china": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "cordless-vacuum-cleaner-oem-manufacturers-china",
-    "robot-vacuum-cleaners-from-china"
-  ],
-  "cordless-vacuum-cleaner-oem-manufacturers-china": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "robot-vacuum-cleaners-from-china",
-    "robotic-pool-cleaner-manufacturers-china"
-  ],
-  "robotic-pool-cleaner-manufacturers-china": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "aiper-fluidra-pool-robotics-alliance",
-    "pool-robotics-new-competitive-table"
-  ],
-  "robot-vacuum-cleaners-from-china": [
-    "how-to-find-reliable-cleaning-product-suppliers-in-china",
-    "robotic-pool-cleaner-manufacturers-china",
-    "the-hidden-front-brushless-motors"
-  ]
-};
 
 function absoluteUrl(pathOrUrl?: string) {
   if (!pathOrUrl) return undefined;
@@ -214,24 +141,8 @@ export default async function InsightDetailPage({ params }: Props) {
     notFound();
   }
 
+  const related = getRelatedEditorialInsights(articles, article, 3);
   const publishedBrandProfiles = getPublishedBrandProfiles(articles);
-  const relatedOverrideSlugs = relatedArticleOverrides[slug] || [];
-  const relatedOverrides = relatedOverrideSlugs
-    .map((relatedSlug) => articles.find((item) => item.slug === relatedSlug))
-    .filter((item): item is NonNullable<typeof item> => Boolean(item));
-  const sameCategory = articles.filter(
-    (item) =>
-      item.slug !== slug &&
-      item.category === article.category &&
-      !relatedOverrideSlugs.includes(item.slug)
-  );
-  const fillers = articles.filter(
-    (item) =>
-      item.slug !== slug &&
-      !relatedOverrideSlugs.includes(item.slug) &&
-      !sameCategory.some((related) => related.slug === item.slug)
-  );
-  const related = [...relatedOverrides, ...sameCategory, ...fillers].slice(0, 3);
   const seriesArticles = article.series
     ? orderSeriesInsights(
         articles.filter((item) => item.series === article.series),
@@ -384,6 +295,8 @@ export default async function InsightDetailPage({ params }: Props) {
               }}
             />
 
+            <ArticleShareActions title={article.title} url={url} />
+
             <footer className="blog-author-note">
               {article.tags.length ? (
                 <div className="blog-article-tag-panel">
@@ -451,15 +364,14 @@ export default async function InsightDetailPage({ params }: Props) {
         ) : null}
 
         {related.length ? (
-          <div className="blog-related-signals">
-            <h2>Related Articles</h2>
+          <section className="blog-related-signals" aria-labelledby="continue-reading-title">
+            <div className="blog-related-signals-heading">
+              <p>Selected analysis from across the cleaning industry</p>
+              <h2 id="continue-reading-title">Continue Reading</h2>
+            </div>
             <div className="related-signal-grid">
               {related.map((item) => (
-                <Link
-                  className="related-signal-card"
-                  href={`/blog/${item.slug}`}
-                  key={item.slug}
-                >
+                <Link className="related-signal-card" href={`/blog/${item.slug}`} key={item.slug}>
                   <div className="related-signal-image">
                     <img
                       {...(item.coverImage
@@ -472,14 +384,13 @@ export default async function InsightDetailPage({ params }: Props) {
                       alt=""
                     />
                   </div>
-                  <div className="meta">{item.category}</div>
+                  <div className="meta">{item.seriesTitle || item.category}</div>
                   <h3>{item.title}</h3>
-                  <p>{item.excerpt}</p>
                   <span>{item.readingTime} · Read Article</span>
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
         ) : null}
 
           <BlogConversionCta
