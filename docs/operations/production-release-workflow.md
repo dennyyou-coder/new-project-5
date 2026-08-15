@@ -13,22 +13,29 @@ Keep GitHub, Vercel, and `worldcleanbiz.com` synchronized so every production re
 
 The GitHub `main` branch is the only authoritative production source.
 
-## Standard release sequence
+## Default: routine page update
 
-1. Create or use an isolated feature branch/worktree.
-2. Confirm the intended scope and preserve unrelated user changes.
-3. Implement the approved change.
-4. Run focused tests for the changed behavior.
-5. Run `npm run build` and confirm all expected routes are generated.
-6. Commit the change with a focused message.
-7. Push the feature branch to GitHub.
-8. Deploy or inspect a Vercel Preview linked to that branch.
-9. Validate the approved scope, including desktop, mobile, forms, analytics, SEO, and browser errors when relevant.
-10. Obtain explicit user approval for production.
-11. Merge the approved branch into `main`.
-12. Push `main` to GitHub.
-13. Wait for the Vercel Git deployment triggered by `main`.
-14. Verify the production domain and report the production commit, deployment result, and rollback point.
+Most work in this repository changes a page, article, or page-local visual. Keep that workflow short:
+
+1. Change only the requested page or article scope and preserve unrelated work.
+2. Run one targeted check. Inspect the affected page; add a 390 px check only when responsive layout may change. Prepare and verify article images when images are involved.
+3. Commit and push one focused branch/PR, then merge automatically after the targeted check passes. A Vercel Preview and local production build are not routine requirements.
+4. Let the Vercel Git integration deploy `main` to production.
+5. Verify the live target URL and report the deployed commit and result once.
+
+One confirmed request authorizes this routine sequence through production. Do not add design specs, implementation plans, TDD ceremony, multi-agent review, full-suite testing, release-specific records, or repeated approval prompts unless the user explicitly requests them.
+
+## High-impact exception
+
+Use expanded engineering checks only when the final change affects dependencies, build/deployment configuration, environment variables, global routing or layout, authentication, payments, analytics, forms, destructive operations, data migrations, or several site systems at once.
+
+For these changes:
+
+- run the relevant regression checks;
+- use a local production build only when it provides evidence not already supplied by Preview;
+- use Vercel Preview and validate the affected systems;
+- obtain one production approval after the complete result is available;
+- avoid repeating a passing check without a relevant code or base-branch change.
 
 ## Prohibited routine action
 
@@ -43,17 +50,10 @@ A direct CLI production deployment is permitted only when:
 - the exact local commit is recorded before deployment; and
 - the deployed change is reconciled into GitHub `main` immediately after service is restored.
 
-## Required verification checklist
+## Minimum production verification
 
-- Working tree and release branch are understood.
-- Focused tests pass.
-- Production build passes.
-- Vercel Preview is reviewed when the change affects the rendered site.
-- User explicitly approves production.
-- `main` is pushed successfully.
-- Vercel reports the Git-triggered production deployment as ready.
-- `https://worldcleanbiz.com` loads the approved version.
-- Core navigation works.
-- Relevant forms open and preserve their intended lead type.
-- Browser console has no production errors.
-- Production commit and rollback point are reported.
+- Vercel reports the Git-triggered deployment for the merged `main` commit as ready.
+- The target URL loads the requested version.
+- Check only the changed behavior and any directly affected SEO/image requirement.
+- Review recent runtime errors when the changed code can produce runtime failures.
+- Report the production commit and result. Include a rollback point only for high-impact changes.

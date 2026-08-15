@@ -141,7 +141,7 @@ Before completion, confirm:
 - Cover image renders correctly
 - All body images render correctly
 - No broken image links
-- Build passes successfully
+- The article-image verifier passes; use the Vercel production build as the routine build gate
 
 ## Mandatory Article Image Preparation
 
@@ -229,23 +229,35 @@ The system should automatically:
 1. Extract slug
 2. Locate image folder
 3. Update images
-4. Validate build
+4. Validate the article images and target page
 5. Return modified file list
 
 ## Production Release Rule
 
 GitHub `main` is the only authoritative source for the production website.
 
-Required release sequence:
+This repository is primarily a page and article website. Treat ordinary work as a page update unless the final change clearly affects shared infrastructure.
 
-1. Work on an isolated feature branch or worktree.
-2. Run relevant focused tests and `npm run build`.
-3. Push the feature branch to GitHub.
-4. Create a Vercel Preview deployment and validate desktop, mobile, forms, analytics, and browser errors as applicable.
-5. Obtain explicit user approval for production.
-6. Merge the approved branch into `main` and push `main` to GitHub.
-7. Allow the Vercel Git integration to deploy production automatically.
-8. Verify `worldcleanbiz.com` after deployment and report the commit and deployment result.
+### Routine page and article updates
+
+Examples include article content, metadata, links, prepared article images, page-local copy, icons, spacing, colors, and styles or components confined to the requested experience.
+
+For these changes:
+
+1. Preserve unrelated user changes and edit only the requested page or article scope.
+2. Do not require a separate design document, implementation plan, TDD cycle, multi-agent review, full test suite, local production build, or Vercel Preview unless the user explicitly asks for one.
+3. Run only the check that directly covers the change. For visual changes, inspect the target page; add a 390 px check only when responsive layout may be affected.
+4. Article images must still use `npm run prepare:article-images -- --slug {slug}` and the required image verifier.
+5. Use one focused Git branch/PR, merge it automatically after the targeted check passes, and let the Vercel Git integration deploy `main`.
+6. Do not ask for another production confirmation after the user has confirmed the requested change. Verify the live target URL and report the result once.
+
+Routine page updates must not create release-specific specs, plans, audit records, screenshots, or operation documents unless they are themselves requested deliverables.
+
+### High-impact changes
+
+Use the stricter engineering workflow only for dependencies, build or deployment configuration, environment variables, global routing/layout, authentication, payments, analytics, forms, destructive actions, data migration, or changes spanning multiple site systems.
+
+For high-impact work, use relevant regression tests, a local build when it provides distinct evidence, Vercel Preview, and one meaningful production approval. Avoid duplicate checks that prove the same thing.
 
 Routine production releases must not use `vercel --prod` or another direct local-to-production deployment command.
 

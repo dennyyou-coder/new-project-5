@@ -103,17 +103,16 @@ For a body chart or text graphic, declare it instead of allowing photo treatment
 4. Run a complete dry run and inspect the reported budget class, desktop/mobile totals, warnings, and planned file changes.
 5. Resolve every crop, naming, missing-source, classification, or budget error. Then run preparation without `--dry-run`.
 6. Run the read-only source/manifest verifier.
-7. Run the production build. Its prebuild gate repeats source/manifest checks; its postbuild gate checks the generated article HTML.
-8. Review the article on desktop and at `390px`, including cover framing, chart readability, responsive selection, and broken-image checks.
+7. Review the target article, including cover framing, chart readability, responsive selection, and broken-image checks. Add a `390px` review only when responsive presentation may have changed.
+8. Use the Git-triggered Vercel production build as the routine build gate. Run a separate local production build only for high-impact image-pipeline or shared-rendering changes.
 
 ```bash
 npm run prepare:article-images -- --slug ARTICLE-SLUG --dry-run
 npm run prepare:article-images -- --slug ARTICLE-SLUG
 npm run verify:article-images
-npm run build
 ```
 
-Do not publish merely because these checks pass. The existing GitHub, Vercel Preview, approval, and production-release rules still apply.
+These checks cover routine article-image preparation. Follow the page-first production workflow; Preview and repeated production approval are reserved for high-impact changes.
 
 ## Historical Maintenance
 
