@@ -452,6 +452,24 @@
         "outputHash": "sha256:5c2ce8949d7506c4cfc4fb78cc334137bb2900f3c0a684502b32ad75db524b58"
       }
     },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 167808,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1f485746d30676590dfa184e9df498cd8c2191e602ea0164ee33197803cb865a",
+      "outputHash": "sha256:30aab9ceadb88bc84f1419df44dba2331bce83f35e04db542645c9cef20ec460",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 53844,
+        "outputHash": "sha256:fbef2ed6dbcc1164e1d483962e0143c9ec74d7c9f9c7ffb92dff27eac5e5abb0"
+      }
+    },
     "/images/articles/can-dji-become-top-three-in-robot-vacuums/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -28314,6 +28332,11 @@
         "/images/blog/wcb-episode-04-amazon-logistics-center.webp"
       ]
     },
+    "building-worlds-no-1-cleaning-show-from-scratch-episode-05": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp",
+      "body": []
+    },
     "can-dji-become-top-three-in-robot-vacuums": {
       "budgetClass": "standard",
       "cover": "/images/articles/can-dji-become-top-three-in-robot-vacuums/01-cover.webp",
@@ -31823,6 +31846,15 @@
           "code": "EXTERNAL_SOURCE_CONFLICT_FALLBACK",
           "primary": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
           "hash": "sha256:27c4ff9a362db2a8df5abe0234df53f8f0dad06e6c064372c1fdebaa44edf59d"
+        }
+      }
+    },
+    "building-worlds-no-1-cleaning-show-from-scratch-episode-05": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp",
+          "hash": "sha256:1f485746d30676590dfa184e9df498cd8c2191e602ea0164ee33197803cb865a"
         }
       }
     },
