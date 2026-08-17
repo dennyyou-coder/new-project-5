@@ -171,6 +171,11 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
+        source: "/insights/laifen-hard-floor-washer-chances",
+        destination: "/blog/laifen-hard-floor-washer-entry-strategy",
+        permanent: true
+      },
+      {
         source: "/insights/:path*",
         destination: "/blog/:path*",
         permanent: true

@@ -85,6 +85,20 @@ test("all internal article links resolve to a published insight", async () => {
   assert.deepEqual(brokenLinks, []);
 });
 
+test("the legacy Laifen insight URL redirects to the published article", async () => {
+  const config = await readFile(new URL("../next.config.ts", import.meta.url), "utf8");
+  const exactRedirect = [
+    'source: "/insights/laifen-hard-floor-washer-chances"',
+    'destination: "/blog/laifen-hard-floor-washer-entry-strategy"'
+  ];
+
+  for (const line of exactRedirect) assert.match(config, new RegExp(line));
+  assert.ok(
+    config.indexOf(exactRedirect[0]) < config.indexOf('source: "/insights/:path*"'),
+    "the exact legacy redirect must come before the catch-all redirect"
+  );
+});
+
 test("markdown body images are lazy, asynchronous, and dimensionally stable", () => {
   const html = markdownToHtml(
     "![Factory production line](/images/insights/roborock-at-the-crossroads-image-003.jpg \"Production line\")"
