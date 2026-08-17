@@ -470,6 +470,234 @@
         "outputHash": "sha256:fbef2ed6dbcc1164e1d483962e0143c9ec74d7c9f9c7ffb92dff27eac5e5abb0"
       }
     },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/02-global-shipping-crisis.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1280,
+      "height": 852,
+      "bytes": 141696,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b0fd1165d2ea06b3d9cb84907e1f3e96177f1170aa119236dc2a64674204da8b",
+      "outputHash": "sha256:718dc57619b476b78f5f7e3c71683c72a45d0ea841f5e6e1888659cf2a95d6a1",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/02-global-shipping-crisis-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 56192,
+        "outputHash": "sha256:aa654d40c6b287d41e470070aec0042bd3d4bc51fe1e0a507adeacfe23bda56a"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/03-container-port-congestion.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 970,
+      "height": 395,
+      "bytes": 166690,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:76caef38fb79bab26447ff622c1c931971b8b118fd7ad77a4f2998113eacd44d",
+      "outputHash": "sha256:7df7b67f71214e0aad6693c8b81faab8ef7d4e5001c832bb160d21a69265cf72",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/03-container-port-congestion-800.webp",
+        "width": 800,
+        "height": 326,
+        "bytes": 90316,
+        "outputHash": "sha256:a5c7db60e2e58bc38a42ce80b2bbfd4a6e184ad89952cb004a65ae0beb970a31"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/04-stanley-black-decker-logo.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1130,
+      "height": 244,
+      "bytes": 13732,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:adc0128e97a1ffadce2810c852e5f56bbd2b65912928a26412beb2fc8e59c96d",
+      "outputHash": "sha256:0956f7f8a22e22e915250a7d354a905e94a1307f6ea40cc38e340a6668190d5d",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/04-stanley-black-decker-logo-800.webp",
+        "width": 800,
+        "height": 173,
+        "bytes": 9044,
+        "outputHash": "sha256:97243fb5ed0d77b5245b66a1fd9ef7613db8cfffcf795499d5a3cc184d2e6fc8"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/05-tineco-steam-floor-washer.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1517,
+      "height": 1517,
+      "bytes": 71528,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d9399d43ab354d4a83bcbf2220302ef56c648a23eafb558f76e0eac39c4d320c",
+      "outputHash": "sha256:f40982ef72c50dae08e1d9f3ad825e4ac0d8dc7a6752c94ba3f938fc73a94115",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/05-tineco-steam-floor-washer-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 23382,
+        "outputHash": "sha256:e04308dfa4d88e650745f6c62ac776e17e4d91201ad0fb31a9fbac6aba7bd806"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/06-zhuiguang-speedfox-zen.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 936,
+      "height": 327,
+      "bytes": 6486,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0b50a71377a36d8940eb1cf2fc4666fa8680b8a529f2c91d416a0300b20950a3",
+      "outputHash": "sha256:5067b51a5d7c6a3e9e998f9e6861a5db73f878b6e3c3bb5eaab5dfac29fdf345",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/06-zhuiguang-speedfox-zen-800.webp",
+        "width": 800,
+        "height": 279,
+        "bytes": 4578,
+        "outputHash": "sha256:dabe9c337fc175ae4144d59b9b478fdaf5db5d758385ce18fd08284696b6a8a3"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/07-max-bissell-portrait.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 449,
+      "height": 449,
+      "bytes": 19090,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:04c87217192bb4851f48e68c80d3504241ba75894feed8ca7c284430b30c1e1f",
+      "outputHash": "sha256:a3d7a6369e435dfa64d1dbf4fdba5d177119a90f316615c39f3e30af1b3ba3c9"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/08-mach-steam-floor-washer.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 480,
+      "height": 480,
+      "bytes": 13992,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bcdc228cc527e7ce59767f9ac04d2d1e3018a35153ff621e281c13aa8b06fbe0",
+      "outputHash": "sha256:6137fb0c76adc657ec1750710a301025c6151d837aaa67e9b67691442c1289db"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/09-ecovacs-x1-omni.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 740,
+      "height": 414,
+      "bytes": 10514,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:60592ae0720c62b6a5d4a17c805f142d56439645f9c71ca00be44b3006402a62",
+      "outputHash": "sha256:7118aa18ea8b47d8598b029da3f087dfd12e9c46159866d04fba87548115545f"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/10-roborock-g10s.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 654,
+      "height": 491,
+      "bytes": 36640,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:dc113621c60ec43d6e3b9aeb6d5fad50c6bd3720b92a4a8a3bcfe41a2b1b7fe5",
+      "outputHash": "sha256:17af08127a2fc10d64a1fda7a35a1b37d182b0222983edfb1b6e77071bbdbc62"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/11-navimow-robot-mower.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 970,
+      "height": 698,
+      "bytes": 41896,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8593b2821592afd4307302844d9b0a30f46ed1ad8e9f9dda8d6978b4d4dc1b1e",
+      "outputHash": "sha256:21c86ffc29be9ce3e26970f311a1de4535c7d85fb1d94d01947ebc0a6d58b2ee",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/11-navimow-robot-mower-800.webp",
+        "width": 800,
+        "height": 576,
+        "bytes": 28600,
+        "outputHash": "sha256:5e5a5dcfaac0f3851b26a22f88dadf0d917aa42abec511824aad35f2c8bf59b0"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/12-wang-shengle-xingmai.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 740,
+      "height": 492,
+      "bytes": 20010,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b70c3cff40f8549602c76c7d72f42eaaa77b66b8da09eb0d16b5542577f24cb5",
+      "outputHash": "sha256:25ffcbd8907693f9b86ebf12da378455fe392f38ef0686e4856eea509a81dbb8"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/13-wang-yang-aiper-fluidra-signing.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1080,
+      "height": 720,
+      "bytes": 45338,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:174f84c5471945eb26eda641bc1b9bb9831deaf1132c5741d2cc268bcb90d2ae",
+      "outputHash": "sha256:6ed94e62b55a1300aac23d48e726c46f2ac71a59eebee9781f712270353298f3",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/13-wang-yang-aiper-fluidra-signing-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 29038,
+        "outputHash": "sha256:c482e7f1be301bfdf433092ffd36fbc04824c2d8a6f8c66d1942d5143ae800bc"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/14-ren-guanjiao-navimow.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 660,
+      "height": 440,
+      "bytes": 74494,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:80c4fd7532ff51d44d23087bf705324fd15ad26ad06b0092fb3ba2c965b1deb4",
+      "outputHash": "sha256:da3306bf61b32caa3f9dc6fda43c0889e91d9758e58600dfb6d4bc88859437ce"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/15-wei-jidong-mammotion.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 74384,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f4f34ebc94d1ca13831280ab5d86274a09fab94065c2d4ecee33dfcd7082efed",
+      "outputHash": "sha256:4ba78272c7b9edc21a74c6ab6c0a80122847bceba122413955302f7458cda305",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/15-wei-jidong-mammotion-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 28568,
+        "outputHash": "sha256:162d737bdcbef969976797a4af4029b5a34e13ff473f6954b8c7a8870c1c7564"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1080,
+      "height": 675,
+      "bytes": 30214,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:dc4853ff1d24bc4108cc17bafbb176a5148199e7e4b2230995e0b77ae28fdb45",
+      "outputHash": "sha256:c50c125c9f6d75293f0212ed19b5d17c5b1f2a94c9c15e342d42bcd2aa78d1fb",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup-800.webp",
+        "width": 800,
+        "height": 500,
+        "bytes": 19886,
+        "outputHash": "sha256:7a81c4f42a55bdf995be120c435b26cce58a21d1a23b1b555ff53f1e075c5066"
+      }
+    },
     "/images/articles/can-dji-become-top-three-in-robot-vacuums/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -28335,7 +28563,23 @@
     "building-worlds-no-1-cleaning-show-from-scratch-episode-05": {
       "budgetClass": "standard",
       "cover": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp",
-      "body": []
+      "body": [
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/02-global-shipping-crisis.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/03-container-port-congestion.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/04-stanley-black-decker-logo.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/05-tineco-steam-floor-washer.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/06-zhuiguang-speedfox-zen.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/07-max-bissell-portrait.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/08-mach-steam-floor-washer.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/09-ecovacs-x1-omni.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/10-roborock-g10s.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/11-navimow-robot-mower.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/12-wang-shengle-xingmai.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/13-wang-yang-aiper-fluidra-signing.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/14-ren-guanjiao-navimow.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/15-wei-jidong-mammotion.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup.webp"
+      ]
     },
     "can-dji-become-top-three-in-robot-vacuums": {
       "budgetClass": "standard",
@@ -31855,6 +32099,81 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp",
           "hash": "sha256:1f485746d30676590dfa184e9df498cd8c2191e602ea0164ee33197803cb865a"
+        },
+        "02-global-shipping-crisis.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/02-global-shipping-crisis.webp",
+          "hash": "sha256:b0fd1165d2ea06b3d9cb84907e1f3e96177f1170aa119236dc2a64674204da8b"
+        },
+        "03-container-port-congestion.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/03-container-port-congestion.webp",
+          "hash": "sha256:76caef38fb79bab26447ff622c1c931971b8b118fd7ad77a4f2998113eacd44d"
+        },
+        "04-stanley-black-decker-logo.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/04-stanley-black-decker-logo.webp",
+          "hash": "sha256:adc0128e97a1ffadce2810c852e5f56bbd2b65912928a26412beb2fc8e59c96d"
+        },
+        "05-tineco-steam-floor-washer.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/05-tineco-steam-floor-washer.webp",
+          "hash": "sha256:d9399d43ab354d4a83bcbf2220302ef56c648a23eafb558f76e0eac39c4d320c"
+        },
+        "06-zhuiguang-speedfox-zen.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/06-zhuiguang-speedfox-zen.webp",
+          "hash": "sha256:0b50a71377a36d8940eb1cf2fc4666fa8680b8a529f2c91d416a0300b20950a3"
+        },
+        "07-max-bissell-portrait.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/07-max-bissell-portrait.webp",
+          "hash": "sha256:04c87217192bb4851f48e68c80d3504241ba75894feed8ca7c284430b30c1e1f"
+        },
+        "08-mach-steam-floor-washer.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/08-mach-steam-floor-washer.webp",
+          "hash": "sha256:bcdc228cc527e7ce59767f9ac04d2d1e3018a35153ff621e281c13aa8b06fbe0"
+        },
+        "09-ecovacs-x1-omni.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/09-ecovacs-x1-omni.webp",
+          "hash": "sha256:60592ae0720c62b6a5d4a17c805f142d56439645f9c71ca00be44b3006402a62"
+        },
+        "10-roborock-g10s.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/10-roborock-g10s.webp",
+          "hash": "sha256:dc113621c60ec43d6e3b9aeb6d5fad50c6bd3720b92a4a8a3bcfe41a2b1b7fe5"
+        },
+        "11-navimow-robot-mower.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/11-navimow-robot-mower.webp",
+          "hash": "sha256:8593b2821592afd4307302844d9b0a30f46ed1ad8e9f9dda8d6978b4d4dc1b1e"
+        },
+        "12-wang-shengle-xingmai.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/12-wang-shengle-xingmai.webp",
+          "hash": "sha256:b70c3cff40f8549602c76c7d72f42eaaa77b66b8da09eb0d16b5542577f24cb5"
+        },
+        "13-wang-yang-aiper-fluidra-signing.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/13-wang-yang-aiper-fluidra-signing.webp",
+          "hash": "sha256:174f84c5471945eb26eda641bc1b9bb9831deaf1132c5741d2cc268bcb90d2ae"
+        },
+        "14-ren-guanjiao-navimow.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/14-ren-guanjiao-navimow.webp",
+          "hash": "sha256:80c4fd7532ff51d44d23087bf705324fd15ad26ad06b0092fb3ba2c965b1deb4"
+        },
+        "15-wei-jidong-mammotion.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/15-wei-jidong-mammotion.webp",
+          "hash": "sha256:f4f34ebc94d1ca13831280ab5d86274a09fab94065c2d4ecee33dfcd7082efed"
+        },
+        "16-luba-robot-mower-lineup.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup.webp",
+          "hash": "sha256:dc4853ff1d24bc4108cc17bafbb176a5148199e7e4b2230995e0b77ae28fdb45"
         }
       }
     },
