@@ -1904,6 +1904,60 @@
         "outputHash": "sha256:04c8ded5a33112506ed10237396462b5c55e95a448491fc99277370df42650bf"
       }
     },
+    "/images/articles/sharkninja-q2-growth-outside-cleaning/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 92716,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ac6e849cb3f9efb11ae9e4638eb4e2a1bb1c60e1ac9c99860ab84076fe81e65b",
+      "outputHash": "sha256:5d0c0332c8d13a713c79915ea890973d5cd12ee79a275880fb13cda517cde2fd",
+      "mobile": {
+        "src": "/images/articles/sharkninja-q2-growth-outside-cleaning/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 32470,
+        "outputHash": "sha256:e2ff7d17646373157c54b83ad9dbf4a8c27ab4c5dbca96ba0a4921e97adeaaa1"
+      }
+    },
+    "/images/articles/sharkninja-q2-growth-outside-cleaning/02-incremental-sales-breakdown.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 74756,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7635b88945dd6e6f97f8b70e56255f2b40ba5f73f672da60a70a2692d22d8392",
+      "outputHash": "sha256:da4efcede7e9b187386c3a72ae76e988652a4acc96eefd46103b91c3995bf78e",
+      "mobile": {
+        "src": "/images/articles/sharkninja-q2-growth-outside-cleaning/02-incremental-sales-breakdown-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 26478,
+        "outputHash": "sha256:cc5b48c62f907e55d51e79ae856c1b02c306588fb59b960b9f9ce191eba239bf"
+      }
+    },
+    "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 124736,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b61b1805747454b9470772f7b2877922ca9dd73e85c10c9db6f4fc79aef4e753",
+      "outputHash": "sha256:f83001ed9253eb5653c9b25dca1792c9cef1bac9b097d8152cdc5d2d76ba4ee5",
+      "mobile": {
+        "src": "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 41828,
+        "outputHash": "sha256:371df59c369dd17f49ed29566853a8cd1a10f9b873c4cf2c7cb851b7d9f8fd47"
+      }
+    },
     "/images/articles/sharkninja-road-to-10-billion-dollars/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -30883,6 +30937,14 @@
         "/images/blog/sharkninja-q1-2026-growth-strategy-image-004-en-v2.webp"
       ]
     },
+    "sharkninja-q2-growth-outside-cleaning": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/sharkninja-q2-growth-outside-cleaning/01-cover.webp",
+      "body": [
+        "/images/articles/sharkninja-q2-growth-outside-cleaning/02-incremental-sales-breakdown.webp",
+        "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform.webp"
+      ]
+    },
     "sharkninja-road-to-10-billion-dollars": {
       "budgetClass": "standard",
       "cover": "/images/articles/sharkninja-road-to-10-billion-dollars/01-cover.webp",
@@ -32174,6 +32236,25 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup.webp",
           "hash": "sha256:dc4853ff1d24bc4108cc17bafbb176a5148199e7e4b2230995e0b77ae28fdb45"
+        }
+      }
+    },
+    "sharkninja-q2-growth-outside-cleaning": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/sharkninja-q2-growth-outside-cleaning/01-cover.webp",
+          "hash": "sha256:ac6e849cb3f9efb11ae9e4638eb4e2a1bb1c60e1ac9c99860ab84076fe81e65b"
+        },
+        "02-incremental-sales-breakdown.png": {
+          "status": "matched",
+          "primary": "/images/articles/sharkninja-q2-growth-outside-cleaning/02-incremental-sales-breakdown.webp",
+          "hash": "sha256:7635b88945dd6e6f97f8b70e56255f2b40ba5f73f672da60a70a2692d22d8392"
+        },
+        "03-household-products-platform.png": {
+          "status": "matched",
+          "primary": "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform.webp",
+          "hash": "sha256:b61b1805747454b9470772f7b2877922ca9dd73e85c10c9db6f4fc79aef4e753"
         }
       }
     },
