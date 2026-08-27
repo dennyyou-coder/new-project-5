@@ -1454,6 +1454,60 @@
         "outputHash": "sha256:07be2546fc13d6969ae09424c5ecfaeec477239665e612fe5e268d1cd1e3bf18"
       }
     },
+    "/images/articles/ninebot-navimow-vs-roborock/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 113180,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6af434b3fd0638a3dfc01c40a91834016f25c0e65919ca8762827e46bdafdf06",
+      "outputHash": "sha256:01e7541a4cee5981c8252bc8f2eeefb581f9ff52c2957cdec202781cf79d9d6f",
+      "mobile": {
+        "src": "/images/articles/ninebot-navimow-vs-roborock/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 39234,
+        "outputHash": "sha256:c7eac918eb215e7bfc1bff6d21104a1315c303cb8cdf4021d20e36042a005a93"
+      }
+    },
+    "/images/articles/ninebot-navimow-vs-roborock/02-shared-origin-timeline.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 57256,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1e0ca8794071db0df6989adaaece93cc5e09e7856cafbefd491e5be68b5676ec",
+      "outputHash": "sha256:f24ef19ba28f8065d78034d4c339ff2bf532cc325a54d37ec4187b9500cdeb96",
+      "mobile": {
+        "src": "/images/articles/ninebot-navimow-vs-roborock/02-shared-origin-timeline-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 22962,
+        "outputHash": "sha256:5363e0a0877d8119fc1a58d0dd98e3497e1f53e0c0ef8344e0537d38e5ba6838"
+      }
+    },
+    "/images/articles/ninebot-navimow-vs-roborock/03-overlap-next.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 57838,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8e410bc23e4d762608ca58380d4d79f7168e20d3d4c6f1c356c72cfe6ecde8f3",
+      "outputHash": "sha256:8b973e637589f4da17e0480fc029975ba89e53997da623935b0347daa88eaeae",
+      "mobile": {
+        "src": "/images/articles/ninebot-navimow-vs-roborock/03-overlap-next-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 24412,
+        "outputHash": "sha256:c96d56b8010b57ada12eb5df6ec21e99a6499a807357e451178bae70791150a9"
+      }
+    },
     "/images/articles/pool-robotics-new-competitive-table/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -30242,6 +30296,14 @@
         "/images/insights/nilfisk-2018-annual-report-commercial-cleaning-image-018.jpg"
       ]
     },
+    "ninebot-navimow-vs-roborock": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ninebot-navimow-vs-roborock/01-cover.webp",
+      "body": [
+        "/images/articles/ninebot-navimow-vs-roborock/02-shared-origin-timeline.webp",
+        "/images/articles/ninebot-navimow-vs-roborock/03-overlap-next.webp"
+      ]
+    },
     "north-america-pool-industry-market": {
       "budgetClass": "standard",
       "cover": "/images/blog/north-america-pool-industry-cover.webp",
@@ -32236,6 +32298,25 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup.webp",
           "hash": "sha256:dc4853ff1d24bc4108cc17bafbb176a5148199e7e4b2230995e0b77ae28fdb45"
+        }
+      }
+    },
+    "ninebot-navimow-vs-roborock": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-navimow-vs-roborock/01-cover.webp",
+          "hash": "sha256:6af434b3fd0638a3dfc01c40a91834016f25c0e65919ca8762827e46bdafdf06"
+        },
+        "02-shared-origin-timeline.png": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-navimow-vs-roborock/02-shared-origin-timeline.webp",
+          "hash": "sha256:1e0ca8794071db0df6989adaaece93cc5e09e7856cafbefd491e5be68b5676ec"
+        },
+        "03-overlap-next.png": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-navimow-vs-roborock/03-overlap-next.webp",
+          "hash": "sha256:8e410bc23e4d762608ca58380d4d79f7168e20d3d4c6f1c356c72cfe6ecde8f3"
         }
       }
     },

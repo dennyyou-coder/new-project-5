@@ -1849,9 +1849,7 @@ async function prepareSelection(options, mode) {
       mode === "single" ? [...sourceRoots.keys()] : [],
       files
     );
-    context.historicalKindClassifications = mode !== "single"
-      ? readHistoricalKindClassifications(context.projectRoot)
-      : {};
+    context.historicalKindClassifications = readHistoricalKindClassifications(context.projectRoot);
     context.currentInventory = discoverArticleInventory({
       contentRoot: context.contentRoot,
       publicRoot: inventoryPublicRoot,
