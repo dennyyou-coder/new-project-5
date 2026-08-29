@@ -2355,7 +2355,7 @@
       }
     },
     "/images/articles/tti-floorcare-cleaning-history/02-floorcare-timeline.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1536,
       "height": 1024,
@@ -2373,7 +2373,7 @@
       }
     },
     "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1536,
       "height": 1024,
@@ -2388,6 +2388,42 @@
         "height": 533,
         "bytes": 34622,
         "outputHash": "sha256:41c100bc75fea61c9432cb64a8ff955d2ce293ba6bdea6b32714083fd965350b"
+      }
+    },
+    "/images/articles/tti-floorcare-cleaning-history/04-tti-product-brand-portfolio.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 209696,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a89d0d70496ac20d4a5bd728c6a6710c68caac26347c6f9f78105718928cc80c",
+      "outputHash": "sha256:3424066d4e4247499193b3c0738bd6c3d859b857f844b0b3642e140def0a3e5c",
+      "mobile": {
+        "src": "/images/articles/tti-floorcare-cleaning-history/04-tti-product-brand-portfolio-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 82308,
+        "outputHash": "sha256:eeb3aea1345e683faa579cefd53bc2b63406608c5d42061009d1c9b3ab15bc96"
+      }
+    },
+    "/images/articles/tti-floorcare-cleaning-history/05-tti-key-leaders.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 89388,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cff2848894c043df44f68d6721d83f54834a82fdd09d6b6efa994f1c8c2d25de",
+      "outputHash": "sha256:c7e803804abfb83a568b365f64ed2196977e329958dde3c5727dcea34f87b71c",
+      "mobile": {
+        "src": "/images/articles/tti-floorcare-cleaning-history/05-tti-key-leaders-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 40640,
+        "outputHash": "sha256:ea4074c917fa44e91fd93a746ba0925b4ebc43415aa65c1a6d009b65e515a71a"
       }
     },
     "/images/articles/uwant-resilience-in-china-cleaning-appliances/01-cover.webp": {
@@ -31308,8 +31344,10 @@
       "budgetClass": "standard",
       "cover": "/images/articles/tti-floorcare-cleaning-history/01-cover.webp",
       "body": [
+        "/images/articles/tti-floorcare-cleaning-history/04-tti-product-brand-portfolio.webp",
         "/images/articles/tti-floorcare-cleaning-history/02-floorcare-timeline.webp",
-        "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp"
+        "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp",
+        "/images/articles/tti-floorcare-cleaning-history/05-tti-key-leaders.webp"
       ]
     },
     "tti-product-direction": {
@@ -32478,6 +32516,16 @@
           "status": "matched",
           "primary": "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp",
           "hash": "sha256:ab142588c31c12fd7bb048eb3f5635db9cf6cafe96600a10eebbb3c4b1e6d7b5"
+        },
+        "04-tti-product-brand-portfolio.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-floorcare-cleaning-history/04-tti-product-brand-portfolio.webp",
+          "hash": "sha256:a89d0d70496ac20d4a5bd728c6a6710c68caac26347c6f9f78105718928cc80c"
+        },
+        "05-tti-key-leaders.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-floorcare-cleaning-history/05-tti-key-leaders.webp",
+          "hash": "sha256:cff2848894c043df44f68d6721d83f54834a82fdd09d6b6efa994f1c8c2d25de"
         }
       }
     },
