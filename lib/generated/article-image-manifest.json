@@ -2282,6 +2282,60 @@
         "outputHash": "sha256:0c795f609424e622ad19a3cab02f44de611a94dd0e657f61feadf31bb1350085"
       }
     },
+    "/images/articles/tti-floorcare-cleaning-history/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 89074,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:777e2bebed9ba653aabf41d4be4c4a0bcb2bc3a2ff8e6d52979e21c1b42e17b1",
+      "outputHash": "sha256:377b945fc443ddb6d040fd6b0a61cdabf94f52774a9a986e65c5264a1f8af7d8",
+      "mobile": {
+        "src": "/images/articles/tti-floorcare-cleaning-history/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29688,
+        "outputHash": "sha256:f7e63c2dcd1701d8f7a785eb0d62226df932abeca884defc3cca7104c28595ce"
+      }
+    },
+    "/images/articles/tti-floorcare-cleaning-history/02-floorcare-timeline.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 208204,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e3f8f41a8fb2d2735e9b8eeb51d4775096502869920520bc04952abcc3fffe5c",
+      "outputHash": "sha256:6fee66149ffa53c628aa24e553ac7c4c82f4263b5bb8ea1b313f895d8cbf6162",
+      "mobile": {
+        "src": "/images/articles/tti-floorcare-cleaning-history/02-floorcare-timeline-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 67800,
+        "outputHash": "sha256:20a59ed62d4a26cece0f6aeaa6a746713fc0e8c2b99bd47db503a8dfebc9ba43"
+      }
+    },
+    "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 90330,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ab142588c31c12fd7bb048eb3f5635db9cf6cafe96600a10eebbb3c4b1e6d7b5",
+      "outputHash": "sha256:c7fcc18fb94e13837c169a216e40713fd6dd7dae89f15f07d0adae9bbc0470b5",
+      "mobile": {
+        "src": "/images/articles/tti-floorcare-cleaning-history/03-competitive-data-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 34622,
+        "outputHash": "sha256:41c100bc75fea61c9432cb64a8ff955d2ce293ba6bdea6b32714083fd965350b"
+      }
+    },
     "/images/articles/uwant-resilience-in-china-cleaning-appliances/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -31206,6 +31260,14 @@
         "/images/articles/tti-cleaning-appliance-strategy/05.webp"
       ]
     },
+    "tti-floorcare-cleaning-history": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tti-floorcare-cleaning-history/01-cover.webp",
+      "body": [
+        "/images/articles/tti-floorcare-cleaning-history/02-floorcare-timeline.webp",
+        "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp"
+      ]
+    },
     "tti-product-direction": {
       "budgetClass": "standard",
       "cover": "/images/insights/tti-product-direction-cover.jpg",
@@ -32336,6 +32398,25 @@
           "status": "matched",
           "primary": "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform.webp",
           "hash": "sha256:b61b1805747454b9470772f7b2877922ca9dd73e85c10c9db6f4fc79aef4e753"
+        }
+      }
+    },
+    "tti-floorcare-cleaning-history": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-floorcare-cleaning-history/01-cover.webp",
+          "hash": "sha256:777e2bebed9ba653aabf41d4be4c4a0bcb2bc3a2ff8e6d52979e21c1b42e17b1"
+        },
+        "02-floorcare-timeline.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-floorcare-cleaning-history/02-floorcare-timeline.webp",
+          "hash": "sha256:e3f8f41a8fb2d2735e9b8eeb51d4775096502869920520bc04952abcc3fffe5c"
+        },
+        "03-competitive-data.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp",
+          "hash": "sha256:ab142588c31c12fd7bb048eb3f5635db9cf6cafe96600a10eebbb3c4b1e6d7b5"
         }
       }
     },
