@@ -1886,6 +1886,60 @@
         "outputHash": "sha256:6f957395917b72e8e282aeb78430a3d352e350a3b118cdbc60e83fceff81260d"
       }
     },
+    "/images/articles/robot-vacuum-going-in-circles/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43220,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e29b139c1bbad5be88f205a7d9b47dd85277191484c21d988a1f777107729544",
+      "outputHash": "sha256:a7b359bf727eb58db7232feac070e0e12d2b5353db6940986d7485069e87374b",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-going-in-circles/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15602,
+        "outputHash": "sha256:9a9d8a25163cf16609e79169818a0da099034ca31469bf91a635c467c43b61c4"
+      }
+    },
+    "/images/articles/robot-vacuum-going-in-circles/02-circling-patterns.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 37181,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:2537eb7a99fc503e316688eca63780609ebccc939e8980560871e28d3139f4a2",
+      "outputHash": "sha256:32e3faf949914d3231e3c8b8d193d1b726e06242affbff2689a424286d087674",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-going-in-circles/02-circling-patterns-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20708,
+        "outputHash": "sha256:c81f112dd3799034fe0a44668165d24e542caef4b7c29d6a0a15cef727b4cc39"
+      }
+    },
+    "/images/articles/robot-vacuum-going-in-circles/03-circle-isolation-test.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 26534,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:d23d281d91b117bf6f7094c0e3eaa863960c55bdc29b12e622917db3ae51dcce",
+      "outputHash": "sha256:30ee0d652941f5ee26741975ccfb120401656d829e63b3d41853807f1ea6227f",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-going-in-circles/03-circle-isolation-test-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17620,
+        "outputHash": "sha256:998d80d447711d6fab04011d6af8375ac4dde69728eb6a5749a596146fb2699b"
+      }
+    },
     "/images/articles/robot-vacuum-industry-faces-dji-wang-tao/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -2030,6 +2084,60 @@
         "outputHash": "sha256:f68d12cbeefa669b6dc2dd6c7bda7ec49477f37ecf232d81cf99c497c3fa9478"
       }
     },
+    "/images/articles/robot-vacuum-keeps-stopping/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41350,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:627eb413ff890cd97e26b87e31f778c6b15f6423cb30402f03f69bc1969c7b7a",
+      "outputHash": "sha256:7dd602801b49ccfd775072b00daaf5c6f4b137af51cb721837a2183b1eabd488",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-keeps-stopping/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15810,
+        "outputHash": "sha256:11837d5b8897beb0d96e37e73d715d16db50a85c1d211ca531cac9ac221085f4"
+      }
+    },
+    "/images/articles/robot-vacuum-keeps-stopping/02-stopping-patterns.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38015,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:61e50aa68b50f104ab6178fa47fd1627abff8a8f5b2ec49c6059c15c566e6efe",
+      "outputHash": "sha256:1fbef19f4551c69fe54733b4a92c1817f3000d3d79a2dde7765876b716e8d1e5",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-keeps-stopping/02-stopping-patterns-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20614,
+        "outputHash": "sha256:592175039f5a7dddcb771b2cd7cd7f69272e8bcfdc0dc6ccd738d8b765ea49cd"
+      }
+    },
+    "/images/articles/robot-vacuum-keeps-stopping/03-stop-check-order.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 26947,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:d27b03195283e103e57273b629c921c5a5e32696c82da059fdac163e9b794339",
+      "outputHash": "sha256:dabb286c0939519cb837c3ee393f260e61b45a939b196e87fe8d8ce53afd7527",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-keeps-stopping/03-stop-check-order-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17760,
+        "outputHash": "sha256:85539b10f603a2bda1b183a2fac946f9c50645a0d08e38dae3f0bc96b03da696"
+      }
+    },
     "/images/articles/robot-vacuum-leaving-dirt-behind/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -2049,7 +2157,7 @@
       }
     },
     "/images/articles/robot-vacuum-leaving-dirt-behind/02-pickup-path-check.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2067,7 +2175,7 @@
       }
     },
     "/images/articles/robot-vacuum-leaving-dirt-behind/03-dirt-pattern-diagnosis.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2082,6 +2190,60 @@
         "height": 450,
         "bytes": 25362,
         "outputHash": "sha256:52b9d23cad94f5276fcd34a2ccff0a78a8ddd838e7803899c62ec08175db5bae"
+      }
+    },
+    "/images/articles/robot-vacuum-making-loud-noise/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 65464,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:599ead2bf668aa2fc0ee95270dc80f63130fa62227de2bb15fdae00815187ce9",
+      "outputHash": "sha256:ea6ec4ba817e062b0c3f65c3074d466dfaadb722301b3fb04be89c2a3ccd112f",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-making-loud-noise/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23344,
+        "outputHash": "sha256:e542c30ab2ae2fd5fd4508988a1174ad803205129c36e27f0239ae38975462ec"
+      }
+    },
+    "/images/articles/robot-vacuum-making-loud-noise/02-noise-source-isolation.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33165,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:6742d51a5b2bb6bfcf4c2b0320749968de7e87f644f05f84580f3f43e73bf940",
+      "outputHash": "sha256:af83c697adf184d4a6d5d02abf049affb01f8c8cc9a05b57edfc4c5d0d2993e8",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-making-loud-noise/02-noise-source-isolation-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18868,
+        "outputHash": "sha256:18e1b3957f94da6d4e5ef2da3eef6d4f2b51b836e51d24b81162b18568e44d5d"
+      }
+    },
+    "/images/articles/robot-vacuum-making-loud-noise/03-noise-test-and-service.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 27105,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:7acbfd28cbc55531e4d399a949d2f29b2611f98442f8a3df095669c0171e66aa",
+      "outputHash": "sha256:fc217ff040b4ea79dd93bafc91f9e3a1128975325e033aa29c2dbcc111838d57",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-making-loud-noise/03-noise-test-and-service-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17860,
+        "outputHash": "sha256:4e288e2b7315c6d3ea831fe7b9cd11a25ff183a8726af3d717f94ff6c13b7084"
       }
     },
     "/images/articles/robotic-mower-new-king-2026/01-cover.webp": {
@@ -2517,7 +2679,7 @@
       }
     },
     "/images/articles/tti-floorcare-cleaning-history/02-floorcare-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1536,
       "height": 1024,
@@ -2535,7 +2697,7 @@
       }
     },
     "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1536,
       "height": 1024,
@@ -2553,7 +2715,7 @@
       }
     },
     "/images/articles/tti-floorcare-cleaning-history/04-tti-product-brand-portfolio.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1536,
       "height": 1024,
@@ -2571,7 +2733,7 @@
       }
     },
     "/images/articles/tti-floorcare-cleaning-history/05-tti-key-leaders.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1536,
       "height": 1024,
@@ -30940,6 +31102,14 @@
       "cover": "/images/blog/robot-vacuum-for-pet-hair-buying-guide.webp",
       "body": []
     },
+    "robot-vacuum-going-in-circles": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-going-in-circles/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-going-in-circles/02-circling-patterns.png",
+        "/images/articles/robot-vacuum-going-in-circles/03-circle-isolation-test.png"
+      ]
+    },
     "robot-vacuum-industry-at-crossroads": {
       "budgetClass": "standard",
       "cover": "/images/insights/robot-vacuum-industry-at-crossroads-cover.jpg",
@@ -30971,12 +31141,28 @@
         "/images/articles/robot-vacuum-keeps-getting-stuck/03-stuck-isolation-test.webp"
       ]
     },
+    "robot-vacuum-keeps-stopping": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-keeps-stopping/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-keeps-stopping/02-stopping-patterns.png",
+        "/images/articles/robot-vacuum-keeps-stopping/03-stop-check-order.png"
+      ]
+    },
     "robot-vacuum-leaving-dirt-behind": {
       "budgetClass": "standard",
       "cover": "/images/articles/robot-vacuum-leaving-dirt-behind/01-cover.webp",
       "body": [
         "/images/articles/robot-vacuum-leaving-dirt-behind/02-pickup-path-check.png",
         "/images/articles/robot-vacuum-leaving-dirt-behind/03-dirt-pattern-diagnosis.png"
+      ]
+    },
+    "robot-vacuum-making-loud-noise": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-making-loud-noise/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-making-loud-noise/02-noise-source-isolation.png",
+        "/images/articles/robot-vacuum-making-loud-noise/03-noise-test-and-service.png"
       ]
     },
     "robot-vacuum-manufacturing-cost": {
@@ -32686,6 +32872,25 @@
         }
       }
     },
+    "robot-vacuum-going-in-circles": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-going-in-circles/01-cover.webp",
+          "hash": "sha256:e29b139c1bbad5be88f205a7d9b47dd85277191484c21d988a1f777107729544"
+        },
+        "02-circling-patterns.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-going-in-circles/02-circling-patterns.png",
+          "hash": "sha256:2537eb7a99fc503e316688eca63780609ebccc939e8980560871e28d3139f4a2"
+        },
+        "03-circle-isolation-test.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-going-in-circles/03-circle-isolation-test.png",
+          "hash": "sha256:d23d281d91b117bf6f7094c0e3eaa863960c55bdc29b12e622917db3ae51dcce"
+        }
+      }
+    },
     "robot-vacuum-keeps-getting-stuck": {
       "files": {
         "01-cover.png": {
@@ -32705,6 +32910,25 @@
         }
       }
     },
+    "robot-vacuum-keeps-stopping": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-keeps-stopping/01-cover.webp",
+          "hash": "sha256:627eb413ff890cd97e26b87e31f778c6b15f6423cb30402f03f69bc1969c7b7a"
+        },
+        "02-stopping-patterns.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-keeps-stopping/02-stopping-patterns.png",
+          "hash": "sha256:61e50aa68b50f104ab6178fa47fd1627abff8a8f5b2ec49c6059c15c566e6efe"
+        },
+        "03-stop-check-order.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-keeps-stopping/03-stop-check-order.png",
+          "hash": "sha256:d27b03195283e103e57273b629c921c5a5e32696c82da059fdac163e9b794339"
+        }
+      }
+    },
     "robot-vacuum-leaving-dirt-behind": {
       "files": {
         "01-cover.png": {
@@ -32721,6 +32945,25 @@
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-leaving-dirt-behind/03-dirt-pattern-diagnosis.png",
           "hash": "sha256:8974575443bbd39a49240cc6e3f1e8790df27c8b67aa33a588972ce136bb3edd"
+        }
+      }
+    },
+    "robot-vacuum-making-loud-noise": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-making-loud-noise/01-cover.webp",
+          "hash": "sha256:599ead2bf668aa2fc0ee95270dc80f63130fa62227de2bb15fdae00815187ce9"
+        },
+        "02-noise-source-isolation.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-making-loud-noise/02-noise-source-isolation.png",
+          "hash": "sha256:6742d51a5b2bb6bfcf4c2b0320749968de7e87f644f05f84580f3f43e73bf940"
+        },
+        "03-noise-test-and-service.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-making-loud-noise/03-noise-test-and-service.png",
+          "hash": "sha256:7acbfd28cbc55531e4d399a949d2f29b2611f98442f8a3df095669c0171e66aa"
         }
       }
     },
