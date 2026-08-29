@@ -7920,24 +7920,6 @@
         "outputHash": "sha256:462134d773c3781431065cf5cecfb0ac31e51b7020fcb4af11d43ca0e887af80"
       }
     },
-    "/images/blog/miele-family-company-manufacturing-map.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 121458,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:116e4700624faa1036d8a6d2638c63547c721926563846016999653a5b7755f9",
-      "outputHash": "sha256:d1926f6fa5f07dad0bc6fbf4a5262165360147798a88594f57b468db8335d763",
-      "mobile": {
-        "src": "/images/blog/miele-family-company-manufacturing-map-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 44496,
-        "outputHash": "sha256:f198cfd97ab982533580f41310e081f3860a90c95bb7da9581f006c92c90912e"
-      }
-    },
     "/images/blog/milwaukee-next-stop-20-billion-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -32021,9 +32003,7 @@
     "who-owns-miele-family-manufacturing-network": {
       "budgetClass": "standard",
       "cover": "/images/blog/who-owns-miele-family-cover.webp",
-      "body": [
-        "/images/blog/miele-family-company-manufacturing-map.webp"
-      ]
+      "body": []
     },
     "who-owns-milwaukee-tools-tti-manufacturing": {
       "budgetClass": "standard",
