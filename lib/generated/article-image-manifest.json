@@ -1598,6 +1598,60 @@
         "outputHash": "sha256:d8578e8d1d4bd185c8b5131491d236c97a5a632011d14bc989b19203d9af1e91"
       }
     },
+    "/images/articles/pressure-washer-recalls-china-oem-industry/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56370,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:47c2bb707968e591ec18d1ba577860442eeb45b660971bb4a2bbf354af5cd5df",
+      "outputHash": "sha256:1191e90065458ec4ef8f8954332c7869509c2f6de8a112d886ad18cb674d67ea",
+      "mobile": {
+        "src": "/images/articles/pressure-washer-recalls-china-oem-industry/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23920,
+        "outputHash": "sha256:fc05391244310660633b9d23b2ee0b170a1da732bb7ef619de23e69c6140fffe"
+      }
+    },
+    "/images/articles/pressure-washer-recalls-china-oem-industry/02-gfci-safety-gap.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 118438,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bfbce2c1fbc2b87b9ccf2ae9e71145f73d9270c3d8c0b9119aa6e4bea5c76933",
+      "outputHash": "sha256:7001f5ce8ad0324994d50f129bf81a45d0e72636667f41010c1da7e6d8637ab2",
+      "mobile": {
+        "src": "/images/articles/pressure-washer-recalls-china-oem-industry/02-gfci-safety-gap-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 43586,
+        "outputHash": "sha256:3e0d127fc1e45e0aa3a582e0c15a145e1721dbd3480051704aaba618be6d8a82"
+      }
+    },
+    "/images/articles/pressure-washer-recalls-china-oem-industry/03-manufacturing-talent-network.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 85018,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a9ec2aa545c5da5f1d1e652d22251f210b5eaa0378915ebd5712441c1015e71d",
+      "outputHash": "sha256:5b7702622e563e6ee00ada9659f97c31b5fd86138e8399b537b9014ad1eda4d6",
+      "mobile": {
+        "src": "/images/articles/pressure-washer-recalls-china-oem-industry/03-manufacturing-talent-network-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 33864,
+        "outputHash": "sha256:bd861ec899a313a500bb1d592c4b4cf2a284d305db35b1a21b9abf9c1d47b30e"
+      }
+    },
     "/images/articles/roborock-road-to-100-billion-rmb/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -2301,7 +2355,7 @@
       }
     },
     "/images/articles/tti-floorcare-cleaning-history/02-floorcare-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1536,
       "height": 1024,
@@ -2319,7 +2373,7 @@
       }
     },
     "/images/articles/tti-floorcare-cleaning-history/03-competitive-data.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1536,
       "height": 1024,
@@ -30407,6 +30461,14 @@
         "/images/insights/power-tools-new-cycle-cordless-specialization-image-02.jpg"
       ]
     },
+    "pressure-washer-recalls-china-oem-industry": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/pressure-washer-recalls-china-oem-industry/01-cover.webp",
+      "body": [
+        "/images/articles/pressure-washer-recalls-china-oem-industry/02-gfci-safety-gap.webp",
+        "/images/articles/pressure-washer-recalls-china-oem-industry/03-manufacturing-talent-network.webp"
+      ]
+    },
     "private-label-cleaning-products-from-china": {
       "budgetClass": "standard",
       "cover": "/images/blog/private-label-cleaning-products-from-china-cover.webp",
@@ -32359,6 +32421,25 @@
           "status": "matched",
           "primary": "/images/articles/ninebot-navimow-vs-roborock/03-overlap-next.webp",
           "hash": "sha256:8e410bc23e4d762608ca58380d4d79f7168e20d3d4c6f1c356c72cfe6ecde8f3"
+        }
+      }
+    },
+    "pressure-washer-recalls-china-oem-industry": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/pressure-washer-recalls-china-oem-industry/01-cover.webp",
+          "hash": "sha256:47c2bb707968e591ec18d1ba577860442eeb45b660971bb4a2bbf354af5cd5df"
+        },
+        "02-gfci-safety-gap.png": {
+          "status": "matched",
+          "primary": "/images/articles/pressure-washer-recalls-china-oem-industry/02-gfci-safety-gap.webp",
+          "hash": "sha256:bfbce2c1fbc2b87b9ccf2ae9e71145f73d9270c3d8c0b9119aa6e4bea5c76933"
+        },
+        "03-manufacturing-talent-network.png": {
+          "status": "matched",
+          "primary": "/images/articles/pressure-washer-recalls-china-oem-industry/03-manufacturing-talent-network.webp",
+          "hash": "sha256:a9ec2aa545c5da5f1d1e652d22251f210b5eaa0378915ebd5712441c1015e71d"
         }
       }
     },
