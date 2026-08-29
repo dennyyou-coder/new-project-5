@@ -1832,6 +1832,60 @@
         "outputHash": "sha256:bfc15634509f4e46add463b3ea2c3f246df5c056da72fcedb8c03084bc52b8f4"
       }
     },
+    "/images/articles/robot-vacuum-brush-not-spinning/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 50652,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:99ba598ea18ee176319762648c8bf16d7852369b61d3db5edfca8964214061bd",
+      "outputHash": "sha256:106893d7ede2c1fc69c7ded2663f9e0c32d8f7500603c68e01b870288c822f52",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-brush-not-spinning/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24154,
+        "outputHash": "sha256:ebd0e7569da68eb34d976874d339e89b409b5157a8cc971827bfa7125d8b1207"
+      }
+    },
+    "/images/articles/robot-vacuum-brush-not-spinning/02-brush-not-spinning-checks.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 51728,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:2002245dbe162b2bf23e28ea24c66ea505654e432e210aae064e88da80179c8c",
+      "outputHash": "sha256:a4dc015fef6354ccfd2781066d549d468fcc62813ba7b69d8948acc1f6027f2b",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-brush-not-spinning/02-brush-not-spinning-checks-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24478,
+        "outputHash": "sha256:4aabad84c30d4d94b5fcbe0ad766c456983169ac4f89972ad693a3ab9625274b"
+      }
+    },
+    "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 59433,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:25fb4180726bf6770cd49c3cb903993d10bc16f71f395d75e1f0266832fe583e",
+      "outputHash": "sha256:adb935e3b4fae794a803271c76cced466f69154fe2c8f338c80f0bc19591c3fd",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31032,
+        "outputHash": "sha256:6f957395917b72e8e282aeb78430a3d352e350a3b118cdbc60e83fceff81260d"
+      }
+    },
     "/images/articles/robot-vacuum-industry-faces-dji-wang-tao/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1920,6 +1974,114 @@
         "height": 533,
         "bytes": 67418,
         "outputHash": "sha256:2b87f83598c15147579e4ecd81012c7a863942ba7be85d1c0e66b46ab965bb8d"
+      }
+    },
+    "/images/articles/robot-vacuum-keeps-getting-stuck/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44908,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:2fbcbe1d1d49146f49fa9b447850ac0f8df8d722649b257022a93aeed38aea2c",
+      "outputHash": "sha256:081ea3ee09ff41de3192fb724b3212b4c6360f946ac97201e1dfa3c0ed25c8c0",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-keeps-getting-stuck/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21652,
+        "outputHash": "sha256:66a191d028dbdfe5febe3e65b94bdf59e0fc7b3ec67b2c4004703fbe3640d785"
+      }
+    },
+    "/images/articles/robot-vacuum-keeps-getting-stuck/02-stuck-hotspots.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53474,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b33140cc0ee3b87716aae23609e3620cb4be10d728da714dd2990f2276e242d5",
+      "outputHash": "sha256:3a5c06b7deccdb6b0870b1dc478e371f3df0f2afb47470a1e2fd9a0dc1e4e7ee",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-keeps-getting-stuck/02-stuck-hotspots-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24430,
+        "outputHash": "sha256:2718d3341ea0f2673bb5f1c4e5788042458e76ca86453bca1ec7d497f5d751b5"
+      }
+    },
+    "/images/articles/robot-vacuum-keeps-getting-stuck/03-stuck-isolation-test.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 49078,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:43ecd98d7bcc826eebf8a5fdfb11d29d2b02072c6bad4c4948ef18136c963e74",
+      "outputHash": "sha256:cbb78b8a4d911e951a637e166380bb8a9a866b8b8605880f6208d3e1bce4c809",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-keeps-getting-stuck/03-stuck-isolation-test-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22698,
+        "outputHash": "sha256:f68d12cbeefa669b6dc2dd6c7bda7ec49477f37ecf232d81cf99c497c3fa9478"
+      }
+    },
+    "/images/articles/robot-vacuum-leaving-dirt-behind/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44838,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:fc37829bd61dfec8fce562723fe45dae2ee048abadd069bcc9168d7dd9610006",
+      "outputHash": "sha256:9cf24683cd6f70901d746ef896b206d913623e6e63f9723da67c7cb267b5251b",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-leaving-dirt-behind/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21736,
+        "outputHash": "sha256:04d457f113cc492a70d1d0e02ce1b1888406bc10ba653d4aa1fedccda68920b9"
+      }
+    },
+    "/images/articles/robot-vacuum-leaving-dirt-behind/02-pickup-path-check.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 51798,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:b54687f55484340f5851e229f9f49dcc74bd6434ead9120eb1041d6c6336649b",
+      "outputHash": "sha256:aaa5ee96645d674e844f0e55ce3dc7b79b98b69069733ea97f2f987ee98777c3",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-leaving-dirt-behind/02-pickup-path-check-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24058,
+        "outputHash": "sha256:13ef9b76471a36beec373f9bbb06c1ff737dec528d9841698de7dbfca929d3f5"
+      }
+    },
+    "/images/articles/robot-vacuum-leaving-dirt-behind/03-dirt-pattern-diagnosis.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53654,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:8974575443bbd39a49240cc6e3f1e8790df27c8b67aa33a588972ce136bb3edd",
+      "outputHash": "sha256:d080a6084fdce0bc35c8b1480dc36f612c8d382786be972fcb6a9d527bed569a",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-leaving-dirt-behind/03-dirt-pattern-diagnosis-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25362,
+        "outputHash": "sha256:52b9d23cad94f5276fcd34a2ccff0a78a8ddd838e7803899c62ec08175db5bae"
       }
     },
     "/images/articles/robotic-mower-new-king-2026/01-cover.webp": {
@@ -30743,6 +30905,14 @@
         "/images/blog/robot-mower-dealer-capability-scorecard.webp"
       ]
     },
+    "robot-vacuum-brush-not-spinning": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-brush-not-spinning/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-brush-not-spinning/02-brush-not-spinning-checks.png",
+        "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary.png"
+      ]
+    },
     "robot-vacuum-ceiling-question": {
       "budgetClass": "standard",
       "cover": "/images/insights/robot-vacuum-ceiling-question-cover.jpg",
@@ -30791,6 +30961,22 @@
         "/images/articles/robot-vacuum-industry-faces-dji-wang-tao/03.webp",
         "/images/articles/robot-vacuum-industry-faces-dji-wang-tao/04.webp",
         "/images/articles/robot-vacuum-industry-faces-dji-wang-tao/05.webp"
+      ]
+    },
+    "robot-vacuum-keeps-getting-stuck": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-keeps-getting-stuck/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-keeps-getting-stuck/02-stuck-hotspots.webp",
+        "/images/articles/robot-vacuum-keeps-getting-stuck/03-stuck-isolation-test.webp"
+      ]
+    },
+    "robot-vacuum-leaving-dirt-behind": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-leaving-dirt-behind/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-leaving-dirt-behind/02-pickup-path-check.png",
+        "/images/articles/robot-vacuum-leaving-dirt-behind/03-dirt-pattern-diagnosis.png"
       ]
     },
     "robot-vacuum-manufacturing-cost": {
@@ -32478,6 +32664,63 @@
           "status": "matched",
           "primary": "/images/articles/pressure-washer-recalls-china-oem-industry/03-manufacturing-talent-network.webp",
           "hash": "sha256:a9ec2aa545c5da5f1d1e652d22251f210b5eaa0378915ebd5712441c1015e71d"
+        }
+      }
+    },
+    "robot-vacuum-brush-not-spinning": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-brush-not-spinning/01-cover.webp",
+          "hash": "sha256:99ba598ea18ee176319762648c8bf16d7852369b61d3db5edfca8964214061bd"
+        },
+        "02-brush-not-spinning-checks.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-brush-not-spinning/02-brush-not-spinning-checks.png",
+          "hash": "sha256:2002245dbe162b2bf23e28ea24c66ea505654e432e210aae064e88da80179c8c"
+        },
+        "03-brush-motor-service-boundary.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary.png",
+          "hash": "sha256:25fb4180726bf6770cd49c3cb903993d10bc16f71f395d75e1f0266832fe583e"
+        }
+      }
+    },
+    "robot-vacuum-keeps-getting-stuck": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-keeps-getting-stuck/01-cover.webp",
+          "hash": "sha256:2fbcbe1d1d49146f49fa9b447850ac0f8df8d722649b257022a93aeed38aea2c"
+        },
+        "02-stuck-hotspots.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-keeps-getting-stuck/02-stuck-hotspots.webp",
+          "hash": "sha256:b33140cc0ee3b87716aae23609e3620cb4be10d728da714dd2990f2276e242d5"
+        },
+        "03-stuck-isolation-test.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-keeps-getting-stuck/03-stuck-isolation-test.webp",
+          "hash": "sha256:43ecd98d7bcc826eebf8a5fdfb11d29d2b02072c6bad4c4948ef18136c963e74"
+        }
+      }
+    },
+    "robot-vacuum-leaving-dirt-behind": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-leaving-dirt-behind/01-cover.webp",
+          "hash": "sha256:fc37829bd61dfec8fce562723fe45dae2ee048abadd069bcc9168d7dd9610006"
+        },
+        "02-pickup-path-check.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-leaving-dirt-behind/02-pickup-path-check.png",
+          "hash": "sha256:b54687f55484340f5851e229f9f49dcc74bd6434ead9120eb1041d6c6336649b"
+        },
+        "03-dirt-pattern-diagnosis.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-leaving-dirt-behind/03-dirt-pattern-diagnosis.png",
+          "hash": "sha256:8974575443bbd39a49240cc6e3f1e8790df27c8b67aa33a588972ce136bb3edd"
         }
       }
     },
