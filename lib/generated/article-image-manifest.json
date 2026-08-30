@@ -2553,7 +2553,7 @@
       }
     },
     "/images/articles/robot-vacuum-smells-bad/02-odor-source-map.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -2571,7 +2571,7 @@
       }
     },
     "/images/articles/robot-vacuum-smells-bad/03-odor-cleaning-order.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
