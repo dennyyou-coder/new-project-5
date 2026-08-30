@@ -878,6 +878,60 @@
         "outputHash": "sha256:40bd5e0d598abebdbe8a52a88bdf0f75cfdedbfc92d13e324f7e33100d9a7fcc"
       }
     },
+    "/images/articles/cordless-vacuum-battery-drains-fast/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 110604,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4020ee5e3b8ada61e5b242da54711a7bd99dd14f183e94e2bebb71eeccdbe6af",
+      "outputHash": "sha256:d356b35f8e34766de9a011bdcfd6c27a48a7eb86eb5ebab1ec02440fae5f4877",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-battery-drains-fast/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 39326,
+        "outputHash": "sha256:19329aa2459c1cf1a5ac3b3eb89c16c23144d017324ffe9bc4fb6e30c1107b03"
+      }
+    },
+    "/images/articles/cordless-vacuum-battery-drains-fast/02-runtime-load-map.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 66372,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:223e5b06746c80f3c96609abd0d8375b9779a62160cc26019e1c2b2671c9f9a3",
+      "outputHash": "sha256:f2a2233fc037b5fa5745314bb8a6c76302f8e1ff1cd71bb1e5efc8ccafecce68",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-battery-drains-fast/02-runtime-load-map-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 27848,
+        "outputHash": "sha256:5fb6f2580eae39cff0a1a2bf806c00e5a21d9534c2901c1552c5e77fa5fd3a81"
+      }
+    },
+    "/images/articles/cordless-vacuum-battery-drains-fast/03-runtime-test-matrix.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 67342,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0abc4804f2f1e42a6d21b505f68447a8fed0df1c2e827a45ef64a6e37f296d8d",
+      "outputHash": "sha256:ba5c1d5e5a060f658e8e4a9d99e685ae78d0c67551f9fb7d6d4b8052a518461e",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-battery-drains-fast/03-runtime-test-matrix-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 30192,
+        "outputHash": "sha256:efae3ed79b55345b3cedb3b57fa621a5d2f64c64ba21e0db29474f35255cd901"
+      }
+    },
     "/images/articles/cordless-vacuum-keeps-shutting-off/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -897,7 +951,7 @@
       }
     },
     "/images/articles/cordless-vacuum-keeps-shutting-off/02-shutdown-pattern-map.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -915,7 +969,7 @@
       }
     },
     "/images/articles/cordless-vacuum-keeps-shutting-off/03-cutout-diagnostic-order.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -984,6 +1038,60 @@
         "height": 550,
         "bytes": 33594,
         "outputHash": "sha256:ace8c6faaabe50cfd1919325d1c58c09274b76d47f4c31447d27658141218062"
+      }
+    },
+    "/images/articles/cordless-vacuum-wont-turn-on/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 71120,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a3cde20f8cc6a4c2858e83c9d13d58933d6de3048b3a6d342c9f448442acb6f9",
+      "outputHash": "sha256:6f1e7ed12cf3f761af7882fd2c05bb7879008f0fc82e10035da10407ff1b360e",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-wont-turn-on/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25050,
+        "outputHash": "sha256:4ed860534a184496c072b2748719308fffaf50cf654df5be862a8bbd2ac40ac2"
+      }
+    },
+    "/images/articles/cordless-vacuum-wont-turn-on/02-no-power-decision-path.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 66564,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0c23d992c92c50ed71aa4be36f9a91c4256405ffe422142e679b348af7c84362",
+      "outputHash": "sha256:57d5d518caba88dd29d83991d30898d46c4bf4f11639dbcc04461514502d2269",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-wont-turn-on/02-no-power-decision-path-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 29108,
+        "outputHash": "sha256:ca5b1a736bd8654e8b438e3a542c4f3bacd81dceb773bdf2647a311c4773c23b"
+      }
+    },
+    "/images/articles/cordless-vacuum-wont-turn-on/03-no-power-observation-map.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 64048,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7d902c18f5faa404e2e043e4df1e7fa6e7480082220a4c353f4df29ce40c2231",
+      "outputHash": "sha256:96d3f1651152f252d64302ee74c7460f38e6ef742d756abece550f1e8e015768",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-wont-turn-on/03-no-power-observation-map-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 27060,
+        "outputHash": "sha256:dc0a2e5667cdfddb149e2f03725fbe6c769aebc4dc6772f7060453c1c01fa84f"
       }
     },
     "/images/articles/deerma-floorcare-value-for-money-limit/01-cover.webp": {
@@ -3378,6 +3486,60 @@
         "height": 550,
         "bytes": 28118,
         "outputHash": "sha256:52895338ec4d654c024565c6fde1c138c37229ebefa1a03dfdfc438817be041c"
+      }
+    },
+    "/images/articles/vacuum-cleaner-making-loud-noise/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 64556,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3125684f0ca9d7c6d343ae14fc483810ac3bb571e98e85bda94e9e0a3d017751",
+      "outputHash": "sha256:604fd876a80d7dc8f3a18423aab9f9ecc3010d63ec20602ed2d036f6406bee1f",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-making-loud-noise/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27240,
+        "outputHash": "sha256:86a0edd4b522c3eea94a79464b770651f6c2fc1f80d36aeb14509b7eec62d05b"
+      }
+    },
+    "/images/articles/vacuum-cleaner-making-loud-noise/02-noise-pattern-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 58844,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:20762ddad15c1939ef3e729f13660667fbbba7343cacf917acd69e33757b5309",
+      "outputHash": "sha256:6354eab556ad7793892e2bad85c52852e8b259b6e15de039e4dd6a91fe337c66",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-making-loud-noise/02-noise-pattern-map-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 25300,
+        "outputHash": "sha256:5fcfee0eb7d0b873f27006d82f6090cc99a14365dc287cbf6996ba7c12660b54"
+      }
+    },
+    "/images/articles/vacuum-cleaner-making-loud-noise/03-noise-isolation-order.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 64242,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c88873c460a9a2c81f296b55c1af454daf4f6a02c39ac99d401c0c6f3cdff864",
+      "outputHash": "sha256:9786bf534cf6c9833ef8fd7f5c2037a9a30bf4e064addaa8a238dd1d5429030b",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-making-loud-noise/03-noise-isolation-order-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 28346,
+        "outputHash": "sha256:5d7daf4b332405b77af3495bd1d10e1765f025c366df1433d75d3a2cac8ac2da"
       }
     },
     "/images/articles/what-sharkninja-makes-us-think-about/01-cover.webp": {
@@ -29992,6 +30154,14 @@
         "/images/blog/cleaning-appliance-compliance-red-flags.webp"
       ]
     },
+    "cordless-vacuum-battery-drains-fast": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/cordless-vacuum-battery-drains-fast/01-cover.webp",
+      "body": [
+        "/images/articles/cordless-vacuum-battery-drains-fast/02-runtime-load-map.webp",
+        "/images/articles/cordless-vacuum-battery-drains-fast/03-runtime-test-matrix.webp"
+      ]
+    },
     "cordless-vacuum-cleaner-manufacturing-cost": {
       "budgetClass": "standard",
       "cover": "/images/blog/cordless-vacuum-cost-waterfall.webp",
@@ -30025,6 +30195,14 @@
       "body": [
         "/images/articles/cordless-vacuum-not-charging/02-charging-path.png",
         "/images/articles/cordless-vacuum-not-charging/03-charging-service-boundary.png"
+      ]
+    },
+    "cordless-vacuum-wont-turn-on": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/cordless-vacuum-wont-turn-on/01-cover.webp",
+      "body": [
+        "/images/articles/cordless-vacuum-wont-turn-on/02-no-power-decision-path.webp",
+        "/images/articles/cordless-vacuum-wont-turn-on/03-no-power-observation-map.webp"
       ]
     },
     "cordless-vs-corded-robotic-pool-cleaners": {
@@ -32410,6 +32588,14 @@
         "/images/blog/vacuum-suction-isolation-map.webp"
       ]
     },
+    "vacuum-cleaner-making-loud-noise": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/vacuum-cleaner-making-loud-noise/01-cover.webp",
+      "body": [
+        "/images/articles/vacuum-cleaner-making-loud-noise/02-noise-pattern-map.webp",
+        "/images/articles/vacuum-cleaner-making-loud-noise/03-noise-isolation-order.webp"
+      ]
+    },
     "vacuum-companies-at-2018-autumn-canton-fair": {
       "budgetClass": "standard",
       "cover": "/images/insights/vacuum-companies-at-2018-autumn-canton-fair-cover.jpg",
@@ -33454,6 +33640,25 @@
         }
       }
     },
+    "cordless-vacuum-battery-drains-fast": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-battery-drains-fast/01-cover.webp",
+          "hash": "sha256:4020ee5e3b8ada61e5b242da54711a7bd99dd14f183e94e2bebb71eeccdbe6af"
+        },
+        "02-runtime-load-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-battery-drains-fast/02-runtime-load-map.webp",
+          "hash": "sha256:223e5b06746c80f3c96609abd0d8375b9779a62160cc26019e1c2b2671c9f9a3"
+        },
+        "03-runtime-test-matrix.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-battery-drains-fast/03-runtime-test-matrix.webp",
+          "hash": "sha256:0abc4804f2f1e42a6d21b505f68447a8fed0df1c2e827a45ef64a6e37f296d8d"
+        }
+      }
+    },
     "cordless-vacuum-keeps-shutting-off": {
       "files": {
         "01-cover.png": {
@@ -33489,6 +33694,25 @@
           "status": "matched",
           "primary": "/images/articles/cordless-vacuum-not-charging/03-charging-service-boundary.png",
           "hash": "sha256:45c6958e23e3916436cc1c44147006c85168489b8d4ce65ce766fcea221c2937"
+        }
+      }
+    },
+    "cordless-vacuum-wont-turn-on": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-wont-turn-on/01-cover.webp",
+          "hash": "sha256:a3cde20f8cc6a4c2858e83c9d13d58933d6de3048b3a6d342c9f448442acb6f9"
+        },
+        "02-no-power-decision-path.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-wont-turn-on/02-no-power-decision-path.webp",
+          "hash": "sha256:0c23d992c92c50ed71aa4be36f9a91c4256405ffe422142e679b348af7c84362"
+        },
+        "03-no-power-observation-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-wont-turn-on/03-no-power-observation-map.webp",
+          "hash": "sha256:7d902c18f5faa404e2e043e4df1e7fa6e7480082220a4c353f4df29ce40c2231"
         }
       }
     },
@@ -33846,6 +34070,25 @@
           "status": "matched",
           "primary": "/images/articles/vacuum-brush-roll-not-spinning/03-brush-diagnostic-order.png",
           "hash": "sha256:ccd475a9062e85ac092b29ea2c0ddb90aa616a1b0d5cc3b3433c3c0443638e79"
+        }
+      }
+    },
+    "vacuum-cleaner-making-loud-noise": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-making-loud-noise/01-cover.webp",
+          "hash": "sha256:3125684f0ca9d7c6d343ae14fc483810ac3bb571e98e85bda94e9e0a3d017751"
+        },
+        "02-noise-pattern-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-making-loud-noise/02-noise-pattern-map.webp",
+          "hash": "sha256:20762ddad15c1939ef3e729f13660667fbbba7343cacf917acd69e33757b5309"
+        },
+        "03-noise-isolation-order.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-making-loud-noise/03-noise-isolation-order.webp",
+          "hash": "sha256:c88873c460a9a2c81f296b55c1af454daf4f6a02c39ac99d401c0c6f3cdff864"
         }
       }
     },
