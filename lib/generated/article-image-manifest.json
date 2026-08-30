@@ -3578,6 +3578,60 @@
         "outputHash": "sha256:52895338ec4d654c024565c6fde1c138c37229ebefa1a03dfdfc438817be041c"
       }
     },
+    "/images/articles/vacuum-cleaner-blowing-out-dust/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 87182,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3982e7dc1c4c9f2e6285e2a7c561acef29f01c06574c52892a037730d66499db",
+      "outputHash": "sha256:28fafcc179cc5f4b5144f50554051cce0478fff040cb2131099836b076b0c074",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-blowing-out-dust/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 28918,
+        "outputHash": "sha256:ffee6ee1562cbb3f48be2a500a4ee0aeaf05484657c99fc5301f3112d93f1b3a"
+      }
+    },
+    "/images/articles/vacuum-cleaner-blowing-out-dust/02-dust-escape-location-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 86448,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:dde172260d3ca69c355aa2800cb2acfc4f6e4dd0a8de453ba64a3da9fbdc70cf",
+      "outputHash": "sha256:ee864893446038feef459b68429574206c1ef752672a961be7c0d511ebc5ca33",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-blowing-out-dust/02-dust-escape-location-map-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 36094,
+        "outputHash": "sha256:45d9e5df31be4c62ca90d157e7990facb5a9ad5c11f755d49a711030628a7b71"
+      }
+    },
+    "/images/articles/vacuum-cleaner-blowing-out-dust/03-dust-containment-check.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 84610,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3d9d5640607c2fc786dc3f772167e0c856e2655b1545634a93370e35463d588f",
+      "outputHash": "sha256:ac065915ea6b70bb7f34daddb1d90ee141a8ed67332ad49b3b0ed194a07cc4b8",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-blowing-out-dust/03-dust-containment-check-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 36152,
+        "outputHash": "sha256:b4adb02031815522923167226ff7144b3981a84881560534d4041d029d38b7cf"
+      }
+    },
     "/images/articles/vacuum-cleaner-making-loud-noise/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3597,7 +3651,7 @@
       }
     },
     "/images/articles/vacuum-cleaner-making-loud-noise/02-noise-pattern-map.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3615,7 +3669,7 @@
       }
     },
     "/images/articles/vacuum-cleaner-making-loud-noise/03-noise-isolation-order.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3630,6 +3684,114 @@
         "height": 533,
         "bytes": 28346,
         "outputHash": "sha256:5d7daf4b332405b77af3495bd1d10e1765f025c366df1433d75d3a2cac8ac2da"
+      }
+    },
+    "/images/articles/vacuum-cleaner-overheating/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 66836,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:550f56cdf5485fd89f633cbebb2cfd0239c530a4554bddc82faca19189bae8f9",
+      "outputHash": "sha256:6ed9ccb8c4b90cd83fc5e8643f6890cc02617aa231b2be6b464a7f2409593f7b",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-overheating/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22728,
+        "outputHash": "sha256:d2e2d22a7cca0431d869ba9ec80203ff518ba911d694faf7e74404a41c10bf75"
+      }
+    },
+    "/images/articles/vacuum-cleaner-overheating/02-overheating-load-map.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 77120,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:21ce30bb43b37e701851fb927420780d4a241eccc8c6d90934051016461fe879",
+      "outputHash": "sha256:db38cf233295617627491c8b37567803179c914784ca23815c2632169d7c9487",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-overheating/02-overheating-load-map-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 33838,
+        "outputHash": "sha256:a84e2106310c8f26426d1abf44649620b313b89ebc4a0b13d3a482d9f569c477"
+      }
+    },
+    "/images/articles/vacuum-cleaner-overheating/03-overheating-recovery-path.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 79160,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ab1b787e6ac82f5f243f1b63860d24066b3a53b38acec850f69e75aa2ffad113",
+      "outputHash": "sha256:286fb03b83893d461e9e7a080363e7b3a93f1821d8d7771ba0887a9335853f63",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-overheating/03-overheating-recovery-path-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 34454,
+        "outputHash": "sha256:0e157477f0768c31362f98654278c3086fc0ff14a068a45f79c1c47c6a377dc6"
+      }
+    },
+    "/images/articles/vacuum-cleaner-smells-burnt/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 86382,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:be66075bc47596ad44a27bfdf1a0166f0545be6dc625d745e70dc815a9c9f870",
+      "outputHash": "sha256:266fb7d852248cebd09f599ff4d8cb1b3b43aa94b5b96f1da1674b350fac22dc",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-smells-burnt/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30988,
+        "outputHash": "sha256:2567ffc49783a17843b040faad288e83894b6f0b6c5c8d637facdf4e3056908a"
+      }
+    },
+    "/images/articles/vacuum-cleaner-smells-burnt/02-smell-source-map.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 91664,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ec603be71d19f52e979ec997138c17c1573514b7580e61d69d1e723e0eda7a99",
+      "outputHash": "sha256:e6c35fc554351d0b12e51b8586801e5d793dfcaadb03083d938ba1ae41d20e60",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-smells-burnt/02-smell-source-map-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 38736,
+        "outputHash": "sha256:50a0688d06fef299c5232edace705f7ca715d96672eb8340deebfbb62555df1d"
+      }
+    },
+    "/images/articles/vacuum-cleaner-smells-burnt/03-burning-smell-stop-check.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 81824,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f317116cd311a9aff671705c930f98beb566e7942fcbf78888b3d22725b53b97",
+      "outputHash": "sha256:d765255872dd6e3651442c4aa759ce1846a6b33a300c420b0eba650453326654",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-smells-burnt/03-burning-smell-stop-check-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 36050,
+        "outputHash": "sha256:5a2daa8735ba3a281fe8d306246a6e1198319a24d757fc915414228a94316c6b"
       }
     },
     "/images/articles/what-sharkninja-makes-us-think-about/01-cover.webp": {
@@ -32680,6 +32842,14 @@
         "/images/articles/vacuum-brush-roll-not-spinning/03-brush-diagnostic-order.png"
       ]
     },
+    "vacuum-cleaner-blowing-out-dust": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/vacuum-cleaner-blowing-out-dust/01-cover.webp",
+      "body": [
+        "/images/articles/vacuum-cleaner-blowing-out-dust/02-dust-escape-location-map.webp",
+        "/images/articles/vacuum-cleaner-blowing-out-dust/03-dust-containment-check.webp"
+      ]
+    },
     "vacuum-cleaner-losing-suction": {
       "budgetClass": "standard",
       "cover": "/images/blog/vacuum-cleaner-losing-suction-cover.webp",
@@ -32694,6 +32864,22 @@
       "body": [
         "/images/articles/vacuum-cleaner-making-loud-noise/02-noise-pattern-map.webp",
         "/images/articles/vacuum-cleaner-making-loud-noise/03-noise-isolation-order.webp"
+      ]
+    },
+    "vacuum-cleaner-overheating": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/vacuum-cleaner-overheating/01-cover.webp",
+      "body": [
+        "/images/articles/vacuum-cleaner-overheating/02-overheating-load-map.webp",
+        "/images/articles/vacuum-cleaner-overheating/03-overheating-recovery-path.webp"
+      ]
+    },
+    "vacuum-cleaner-smells-burnt": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/vacuum-cleaner-smells-burnt/01-cover.webp",
+      "body": [
+        "/images/articles/vacuum-cleaner-smells-burnt/02-smell-source-map.webp",
+        "/images/articles/vacuum-cleaner-smells-burnt/03-burning-smell-stop-check.webp"
       ]
     },
     "vacuum-companies-at-2018-autumn-canton-fair": {
@@ -34202,6 +34388,25 @@
         }
       }
     },
+    "vacuum-cleaner-blowing-out-dust": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-blowing-out-dust/01-cover.webp",
+          "hash": "sha256:3982e7dc1c4c9f2e6285e2a7c561acef29f01c06574c52892a037730d66499db"
+        },
+        "02-dust-escape-location-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-blowing-out-dust/02-dust-escape-location-map.webp",
+          "hash": "sha256:dde172260d3ca69c355aa2800cb2acfc4f6e4dd0a8de453ba64a3da9fbdc70cf"
+        },
+        "03-dust-containment-check.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-blowing-out-dust/03-dust-containment-check.webp",
+          "hash": "sha256:3d9d5640607c2fc786dc3f772167e0c856e2655b1545634a93370e35463d588f"
+        }
+      }
+    },
     "vacuum-cleaner-making-loud-noise": {
       "files": {
         "01-cover.png": {
@@ -34218,6 +34423,44 @@
           "status": "matched",
           "primary": "/images/articles/vacuum-cleaner-making-loud-noise/03-noise-isolation-order.webp",
           "hash": "sha256:c88873c460a9a2c81f296b55c1af454daf4f6a02c39ac99d401c0c6f3cdff864"
+        }
+      }
+    },
+    "vacuum-cleaner-overheating": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-overheating/01-cover.webp",
+          "hash": "sha256:550f56cdf5485fd89f633cbebb2cfd0239c530a4554bddc82faca19189bae8f9"
+        },
+        "02-overheating-load-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-overheating/02-overheating-load-map.webp",
+          "hash": "sha256:21ce30bb43b37e701851fb927420780d4a241eccc8c6d90934051016461fe879"
+        },
+        "03-overheating-recovery-path.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-overheating/03-overheating-recovery-path.webp",
+          "hash": "sha256:ab1b787e6ac82f5f243f1b63860d24066b3a53b38acec850f69e75aa2ffad113"
+        }
+      }
+    },
+    "vacuum-cleaner-smells-burnt": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-smells-burnt/01-cover.webp",
+          "hash": "sha256:be66075bc47596ad44a27bfdf1a0166f0545be6dc625d745e70dc815a9c9f870"
+        },
+        "02-smell-source-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-smells-burnt/02-smell-source-map.webp",
+          "hash": "sha256:ec603be71d19f52e979ec997138c17c1573514b7580e61d69d1e723e0eda7a99"
+        },
+        "03-burning-smell-stop-check.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-smells-burnt/03-burning-smell-stop-check.webp",
+          "hash": "sha256:f317116cd311a9aff671705c930f98beb566e7942fcbf78888b3d22725b53b97"
         }
       }
     },
