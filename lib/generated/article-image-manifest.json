@@ -1058,6 +1058,78 @@
         "outputHash": "sha256:03f68e229b1bf422b6a0400d9ada8f87f08eb946d4ac855dcccdf613d1e9e507"
       }
     },
+    "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41258,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:246d8dc7a64d5557530d220601c4f6198a9db1da6c731be07cf866dac7bd1abc",
+      "outputHash": "sha256:040caa50b99fd77512f64e91ca7f93362bad1f5c110a05f08e86c12983903dd9",
+      "mobile": {
+        "src": "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17410,
+        "outputHash": "sha256:e3ada39ff8390379605760401fc3d58045c5246424ad5b13b67454fb123a5128"
+      }
+    },
+    "/images/articles/eu-battery-rules-smartphones-power-tools/02-passport-scope.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 49062,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7ca1896bfcbe8d26a243df35a85415be0185588610882db6587749b74dd1b998",
+      "outputHash": "sha256:ec1d744fb96aa8d38125cd600842bf3c98f8af78c9e1857b3e8433c43d896751",
+      "mobile": {
+        "src": "/images/articles/eu-battery-rules-smartphones-power-tools/02-passport-scope-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 18850,
+        "outputHash": "sha256:82cbe1a7adab0180daa7ca04b5cdd5c56ce66a4853d862c203c51d59d8ee6634"
+      }
+    },
+    "/images/articles/eu-battery-rules-smartphones-power-tools/03-replaceability-rules.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 42564,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8b254856b8dcf53b5f9e0ad8fd53e852f948dd509400dfe9e52cf168691babce",
+      "outputHash": "sha256:b8abde9519c7aca6ba3c75aea24878c252dea92f20e9e43e4fc964e654f948a6",
+      "mobile": {
+        "src": "/images/articles/eu-battery-rules-smartphones-power-tools/03-replaceability-rules-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 17032,
+        "outputHash": "sha256:7563a4053b3dd8f6a09c243bc9a2829fb20e18b82682e0ed0c20bf7d81e9e4e5"
+      }
+    },
+    "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 48238,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:02667d596901c3261259111f12fd5ef53b66ba1c9e16988a6a79ee99ec92b60f",
+      "outputHash": "sha256:d8163bb4b59d061a9e7cebe661979257e6bae48dc6f37cfeda76d7dee8de76a3",
+      "mobile": {
+        "src": "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 18874,
+        "outputHash": "sha256:aeba3284b7dd7eccf1f1188de63622983b5d4271b261dfa59d68e8640fedd553"
+      }
+    },
     "/images/articles/eve-of-the-robot-vacuum-battle/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -30186,6 +30258,15 @@
         "/images/insights/ecovacs-mid-year-report-reading-image-010.jpg"
       ]
     },
+    "eu-battery-rules-smartphones-power-tools": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp",
+      "body": [
+        "/images/articles/eu-battery-rules-smartphones-power-tools/02-passport-scope.webp",
+        "/images/articles/eu-battery-rules-smartphones-power-tools/03-replaceability-rules.webp",
+        "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp"
+      ]
+    },
     "european-tool-brands-battery-alliances": {
       "budgetClass": "standard",
       "cover": "/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp",
@@ -33184,6 +33265,30 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup.webp",
           "hash": "sha256:dc4853ff1d24bc4108cc17bafbb176a5148199e7e4b2230995e0b77ae28fdb45"
+        }
+      }
+    },
+    "eu-battery-rules-smartphones-power-tools": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp",
+          "hash": "sha256:246d8dc7a64d5557530d220601c4f6198a9db1da6c731be07cf866dac7bd1abc"
+        },
+        "02-passport-scope.png": {
+          "status": "matched",
+          "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/02-passport-scope.webp",
+          "hash": "sha256:7ca1896bfcbe8d26a243df35a85415be0185588610882db6587749b74dd1b998"
+        },
+        "03-replaceability-rules.png": {
+          "status": "matched",
+          "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/03-replaceability-rules.webp",
+          "hash": "sha256:8b254856b8dcf53b5f9e0ad8fd53e852f948dd509400dfe9e52cf168691babce"
+        },
+        "04-product-responsibility-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp",
+          "hash": "sha256:02667d596901c3261259111f12fd5ef53b66ba1c9e16988a6a79ee99ec92b60f"
         }
       }
     },
