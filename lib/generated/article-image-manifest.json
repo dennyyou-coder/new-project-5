@@ -1832,6 +1832,60 @@
         "outputHash": "sha256:bfc15634509f4e46add463b3ea2c3f246df5c056da72fcedb8c03084bc52b8f4"
       }
     },
+    "/images/articles/robot-vacuum-battery-drains-fast/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 52046,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f6b509e651747d70d781ca1b7e71da01b97fda46fe4aa2b88b96d27115fbdaef",
+      "outputHash": "sha256:4cbba7b7ab15b385832f80bc7c6343c97afab050534c68cb3adc10ba88c71558",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-battery-drains-fast/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19546,
+        "outputHash": "sha256:753a3f89114be4638c2d17a79b26c71061c7a867b7506650f34a4f62a020444c"
+      }
+    },
+    "/images/articles/robot-vacuum-battery-drains-fast/02-runtime-diagnostic-path.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 49971,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:0a21abfda39026567c0227435be376fe65d5eeb1ffe988374aee47ac558d1f69",
+      "outputHash": "sha256:e61f113f66bdb0a7eb7399b7ca2ea3849c8f775368dfbe2457b9ce295182e6d0",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-battery-drains-fast/02-runtime-diagnostic-path-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 27268,
+        "outputHash": "sha256:8a2d15f3a9d0437843c35809ff1a5e073057258f7800bb31fdaf527d5f004228"
+      }
+    },
+    "/images/articles/robot-vacuum-battery-drains-fast/03-load-versus-battery-boundary.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 52863,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:627f1a8b9fe7526a39e65cf7affec19dc90690afb71dc98dce64baf68093de5a",
+      "outputHash": "sha256:0610e3eed5109b18ff8fa28f8780773c09e8d9a5a478db8b4a3eaf8e7ba959ea",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-battery-drains-fast/03-load-versus-battery-boundary-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 31756,
+        "outputHash": "sha256:a010e86fa110b1f8410f6603a1595badf88c795a011e4a08ac556318abc5da36"
+      }
+    },
     "/images/articles/robot-vacuum-brush-not-spinning/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -1905,7 +1959,7 @@
       }
     },
     "/images/articles/robot-vacuum-going-in-circles/02-circling-patterns.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1923,7 +1977,7 @@
       }
     },
     "/images/articles/robot-vacuum-going-in-circles/03-circle-isolation-test.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2244,6 +2298,114 @@
         "height": 450,
         "bytes": 17860,
         "outputHash": "sha256:4e288e2b7315c6d3ea831fe7b9cd11a25ff183a8726af3d717f94ff6c13b7084"
+      }
+    },
+    "/images/articles/robot-vacuum-map-wrong-missing-rooms/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 92230,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:53803ab71fe47d6bdbb824aeddb3d3c3a600f70cd3c3083c43c19dbb3db20a7b",
+      "outputHash": "sha256:b9a4448a8dc115f5292b6287268813f979682c2b483136d90a8516bb31a5b812",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-map-wrong-missing-rooms/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31358,
+        "outputHash": "sha256:8eb9199d14ae0285888097bf5538cf8e9d949af7bbed2ab5faa5b201e214f59f"
+      }
+    },
+    "/images/articles/robot-vacuum-map-wrong-missing-rooms/02-map-symptom-guide.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 49995,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:b4b68d7bebc17a666425f34fcea10b81c9260c57538f7f45e661e76f3d0bd35e",
+      "outputHash": "sha256:a0da2b42966337e2dce20fbda128caac1d715d734bc724ffc6425a6c44a62df9",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-map-wrong-missing-rooms/02-map-symptom-guide-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 30496,
+        "outputHash": "sha256:10e9506f99c1856e44d3efc584a43797ec83da7e9278b8527a80bb28ad55cc6b"
+      }
+    },
+    "/images/articles/robot-vacuum-map-wrong-missing-rooms/03-map-recovery-order.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 38362,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:470a8e84cfb406a3ddd1cb35ff93129d2ef827de94a71a67eb40828152b7a3b5",
+      "outputHash": "sha256:c0d9183dc345a28ba9068c4a02a2730df5783c81fa500e7260e9f141385d1f27",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-map-wrong-missing-rooms/03-map-recovery-order-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 23688,
+        "outputHash": "sha256:366f20b77e020fe8d6d1f244ba9dc3a8df8d1d5af445c942446217cefda3d21f"
+      }
+    },
+    "/images/articles/robot-vacuum-wont-turn-on/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33336,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5ff61766e6cd945fb7d0e4043a203d26e268438fc7236e7fce7a705c666359fa",
+      "outputHash": "sha256:1f2d5ef5d2620532142cefdf38fd283255002075c8d37762be50f6065846b5ab",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-wont-turn-on/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12808,
+        "outputHash": "sha256:e82466c4b3fa15ad73148fa11634dddd99798825f42833c1de3b978086e75f88"
+      }
+    },
+    "/images/articles/robot-vacuum-wont-turn-on/02-no-power-diagnostic-path.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 43421,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:1726095e8d3565e6e0b76261d3c91600583631715ec28863bb8336cde979512d",
+      "outputHash": "sha256:f2771744e134829b7a5811210fff503063c1ceadf52fe177bc3f3e11d85323ff",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-wont-turn-on/02-no-power-diagnostic-path-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 27230,
+        "outputHash": "sha256:8d6cc548b673989198080e5191ae510fe11b34d2a83273f15a25b8351237a726"
+      }
+    },
+    "/images/articles/robot-vacuum-wont-turn-on/03-power-service-boundary.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 53223,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:0b517e10d3e7e1427ff877001b6a0a9dc39b38f6d9d245350f81f28e782f8add",
+      "outputHash": "sha256:435843f8636028433542ae6fc9113744a8fb4353ba8e28fbc045c1a4a8897c70",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-wont-turn-on/03-power-service-boundary-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 31078,
+        "outputHash": "sha256:5fe980260122fb2e4f1e3dc4de0cf8c245383df0b98430d42e361f980bb5dda5"
       }
     },
     "/images/articles/robotic-mower-new-king-2026/01-cover.webp": {
@@ -31067,6 +31229,14 @@
         "/images/blog/robot-mower-dealer-capability-scorecard.webp"
       ]
     },
+    "robot-vacuum-battery-drains-fast": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-battery-drains-fast/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-battery-drains-fast/02-runtime-diagnostic-path.png",
+        "/images/articles/robot-vacuum-battery-drains-fast/03-load-versus-battery-boundary.png"
+      ]
+    },
     "robot-vacuum-brush-not-spinning": {
       "budgetClass": "standard",
       "cover": "/images/articles/robot-vacuum-brush-not-spinning/01-cover.webp",
@@ -31172,6 +31342,14 @@
         "/images/blog/robot-vacuum-quotation-boundary.webp"
       ]
     },
+    "robot-vacuum-map-wrong-missing-rooms": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-map-wrong-missing-rooms/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-map-wrong-missing-rooms/02-map-symptom-guide.png",
+        "/images/articles/robot-vacuum-map-wrong-missing-rooms/03-map-recovery-order.png"
+      ]
+    },
     "robot-vacuum-navigation-solution-companies": {
       "budgetClass": "standard",
       "cover": "/images/insights/robot-vacuum-navigation-solution-companies-cover.jpg",
@@ -31226,6 +31404,14 @@
       "budgetClass": "standard",
       "cover": "/images/blog/robot-vacuum-vs-cordless-vacuum.webp",
       "body": []
+    },
+    "robot-vacuum-wont-turn-on": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-wont-turn-on/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-wont-turn-on/02-no-power-diagnostic-path.png",
+        "/images/articles/robot-vacuum-wont-turn-on/03-power-service-boundary.png"
+      ]
     },
     "robotic-lawn-mower-manufacturers-china": {
       "budgetClass": "standard",
@@ -32853,6 +33039,25 @@
         }
       }
     },
+    "robot-vacuum-battery-drains-fast": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-battery-drains-fast/01-cover.webp",
+          "hash": "sha256:f6b509e651747d70d781ca1b7e71da01b97fda46fe4aa2b88b96d27115fbdaef"
+        },
+        "02-runtime-diagnostic-path.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-battery-drains-fast/02-runtime-diagnostic-path.png",
+          "hash": "sha256:0a21abfda39026567c0227435be376fe65d5eeb1ffe988374aee47ac558d1f69"
+        },
+        "03-load-versus-battery-boundary.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-battery-drains-fast/03-load-versus-battery-boundary.png",
+          "hash": "sha256:627f1a8b9fe7526a39e65cf7affec19dc90690afb71dc98dce64baf68093de5a"
+        }
+      }
+    },
     "robot-vacuum-brush-not-spinning": {
       "files": {
         "01-cover.png": {
@@ -32964,6 +33169,44 @@
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-making-loud-noise/03-noise-test-and-service.png",
           "hash": "sha256:7acbfd28cbc55531e4d399a949d2f29b2611f98442f8a3df095669c0171e66aa"
+        }
+      }
+    },
+    "robot-vacuum-map-wrong-missing-rooms": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-map-wrong-missing-rooms/01-cover.webp",
+          "hash": "sha256:53803ab71fe47d6bdbb824aeddb3d3c3a600f70cd3c3083c43c19dbb3db20a7b"
+        },
+        "02-map-symptom-guide.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-map-wrong-missing-rooms/02-map-symptom-guide.png",
+          "hash": "sha256:b4b68d7bebc17a666425f34fcea10b81c9260c57538f7f45e661e76f3d0bd35e"
+        },
+        "03-map-recovery-order.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-map-wrong-missing-rooms/03-map-recovery-order.png",
+          "hash": "sha256:470a8e84cfb406a3ddd1cb35ff93129d2ef827de94a71a67eb40828152b7a3b5"
+        }
+      }
+    },
+    "robot-vacuum-wont-turn-on": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-wont-turn-on/01-cover.webp",
+          "hash": "sha256:5ff61766e6cd945fb7d0e4043a203d26e268438fc7236e7fce7a705c666359fa"
+        },
+        "02-no-power-diagnostic-path.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-wont-turn-on/02-no-power-diagnostic-path.png",
+          "hash": "sha256:1726095e8d3565e6e0b76261d3c91600583631715ec28863bb8336cde979512d"
+        },
+        "03-power-service-boundary.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-wont-turn-on/03-power-service-boundary.png",
+          "hash": "sha256:0b517e10d3e7e1427ff877001b6a0a9dc39b38f6d9d245350f81f28e782f8add"
         }
       }
     },
