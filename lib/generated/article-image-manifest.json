@@ -1670,6 +1670,96 @@
         "outputHash": "sha256:c9a448c072ec344defc97405b9afda33767cc4a2bf32a6525ee5c53e68f74068"
       }
     },
+    "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 65024,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:99f527150c0294071324649860148fa51a674f6ec87bf3962605b764a050613b",
+      "outputHash": "sha256:71f547765c8ddfd2cf292945f29c073b395acc30f070a6e1e3cb54ce21a937df",
+      "mobile": {
+        "src": "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24472,
+        "outputHash": "sha256:53c050d4ea15042c1011c8dfaf826917da971cd5b0f297fe5afa2195a4678321"
+      }
+    },
+    "/images/articles/maytronics-fimi-sale-pool-robot-leader/02-value-collapse.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 60356,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2e74f53dcc7edd1ebde6e12e686f9c0db6b8575640c48587b0f4b6b1f5b077ea",
+      "outputHash": "sha256:5e3f680d2afc9e60e15086e796371989ed5f79c7a3b923c0c4d04ff37b81f6d2",
+      "mobile": {
+        "src": "/images/articles/maytronics-fimi-sale-pool-robot-leader/02-value-collapse-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 26466,
+        "outputHash": "sha256:a0838c07d13989df6d2327c91424b7830e53c412a75ba9c3d7e3261911bc9a01"
+      }
+    },
+    "/images/articles/maytronics-fimi-sale-pool-robot-leader/03-assets-a-buyer-gets.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 63090,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0bd539e3b0884393021c750b4432c351a0ad5e3ba50b96739fe00991716bcf63",
+      "outputHash": "sha256:0adeefa091a2d69eebb978a115381f839437ee9229c76c82e3391bf0634d1b57",
+      "mobile": {
+        "src": "/images/articles/maytronics-fimi-sale-pool-robot-leader/03-assets-a-buyer-gets-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 24314,
+        "outputHash": "sha256:4ce5d2a44c7fa826a2c0995ea78bf6d974a498fea0b2ddf49bbabd9df41487fa"
+      }
+    },
+    "/images/articles/maytronics-fimi-sale-pool-robot-leader/04-potential-buyer-map.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 60626,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:981ff240010c01a5f20d46b6deb8c1801d6e4a50b5949aa2852fe63a50716af2",
+      "outputHash": "sha256:49556f99b60b5df3e3926b434f2240bf50f45c6aca64994ce3c2d38e8df9ad26",
+      "mobile": {
+        "src": "/images/articles/maytronics-fimi-sale-pool-robot-leader/04-potential-buyer-map-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 22592,
+        "outputHash": "sha256:86dd687acaf174d32c6232cfcde154e35f5dc5cb11244acb5620b0ec66348d10"
+      }
+    },
+    "/images/articles/maytronics-fimi-sale-pool-robot-leader/05-industry-rules-shift.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 62290,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d9a4220201b3d849df2c3cef23f55f51865391a7b84d789da6907dbd0ec8ef13",
+      "outputHash": "sha256:435c8dc2832280f52976b808860f7698d5e873f44fb7a7d50c4bf02977e256cf",
+      "mobile": {
+        "src": "/images/articles/maytronics-fimi-sale-pool-robot-leader/05-industry-rules-shift-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 25018,
+        "outputHash": "sha256:0a76966ca75eb8b8f2a254eb92bd9beb58a291203e0307344afb19d700a81a39"
+      }
+    },
     "/images/articles/maytronics-robotic-pool-cleaner-reinvention/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -31337,6 +31427,16 @@
       "cover": "/images/blog/mammotion-luba-vs-yuka-robot-mowers.webp",
       "body": []
     },
+    "maytronics-fimi-sale-pool-robot-leader": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp",
+      "body": [
+        "/images/articles/maytronics-fimi-sale-pool-robot-leader/02-value-collapse.webp",
+        "/images/articles/maytronics-fimi-sale-pool-robot-leader/05-industry-rules-shift.webp",
+        "/images/articles/maytronics-fimi-sale-pool-robot-leader/03-assets-a-buyer-gets.webp",
+        "/images/articles/maytronics-fimi-sale-pool-robot-leader/04-potential-buyer-map.webp"
+      ]
+    },
     "maytronics-robotic-pool-cleaner-reinvention": {
       "budgetClass": "standard",
       "cover": "/images/articles/maytronics-robotic-pool-cleaner-reinvention/01-cover.webp",
@@ -33737,6 +33837,35 @@
           "status": "matched",
           "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp",
           "hash": "sha256:02667d596901c3261259111f12fd5ef53b66ba1c9e16988a6a79ee99ec92b60f"
+        }
+      }
+    },
+    "maytronics-fimi-sale-pool-robot-leader": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp",
+          "hash": "sha256:99f527150c0294071324649860148fa51a674f6ec87bf3962605b764a050613b"
+        },
+        "02-value-collapse.png": {
+          "status": "matched",
+          "primary": "/images/articles/maytronics-fimi-sale-pool-robot-leader/02-value-collapse.webp",
+          "hash": "sha256:2e74f53dcc7edd1ebde6e12e686f9c0db6b8575640c48587b0f4b6b1f5b077ea"
+        },
+        "03-assets-a-buyer-gets.png": {
+          "status": "matched",
+          "primary": "/images/articles/maytronics-fimi-sale-pool-robot-leader/03-assets-a-buyer-gets.webp",
+          "hash": "sha256:0bd539e3b0884393021c750b4432c351a0ad5e3ba50b96739fe00991716bcf63"
+        },
+        "04-potential-buyer-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/maytronics-fimi-sale-pool-robot-leader/04-potential-buyer-map.webp",
+          "hash": "sha256:981ff240010c01a5f20d46b6deb8c1801d6e4a50b5949aa2852fe63a50716af2"
+        },
+        "05-industry-rules-shift.png": {
+          "status": "matched",
+          "primary": "/images/articles/maytronics-fimi-sale-pool-robot-leader/05-industry-rules-shift.webp",
+          "hash": "sha256:d9a4220201b3d849df2c3cef23f55f51865391a7b84d789da6907dbd0ec8ef13"
         }
       }
     },
