@@ -878,6 +878,114 @@
         "outputHash": "sha256:40bd5e0d598abebdbe8a52a88bdf0f75cfdedbfc92d13e324f7e33100d9a7fcc"
       }
     },
+    "/images/articles/cordless-vacuum-keeps-shutting-off/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45716,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9eea4f6cad7a602ae748064a579ef0c3086d23cee31e2d145b060c3672586d94",
+      "outputHash": "sha256:8d25c6a2e9e7acef6daf4b7f1c11e90423ae89a901b98ef58c830e88c87fb4fb",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-keeps-shutting-off/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16748,
+        "outputHash": "sha256:22cc8c152a7a361e96e9956d866f167cb968733773f1209a8ccff495e4f13d49"
+      }
+    },
+    "/images/articles/cordless-vacuum-keeps-shutting-off/02-shutdown-pattern-map.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 49514,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:2d8c547a8ab2fe84447ec4468c0c52df1e6f6c56b2fb7842fdb269c98860a103",
+      "outputHash": "sha256:7916def449ae54df13585ec7cf084bba32b546f0d811a488d714da9b555f9a03",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-keeps-shutting-off/02-shutdown-pattern-map-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 26868,
+        "outputHash": "sha256:1173ad0005e93ecae7515befcdb6e4b16be642c29a979c8ce5239affd9d1e86f"
+      }
+    },
+    "/images/articles/cordless-vacuum-keeps-shutting-off/03-cutout-diagnostic-order.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 59068,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:df4127847e32ded489a90a9004c6b721f7454e58700c1b7a28fa11f1d367b2a4",
+      "outputHash": "sha256:455e4b66dd91fae090913e45d2082259eef2dffdac28615ea65e949e39811105",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-keeps-shutting-off/03-cutout-diagnostic-order-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 31880,
+        "outputHash": "sha256:fec63e687ae04854c393fdcd4d7861d4c72446ebfce2e1bb4af0a239b9b9f026"
+      }
+    },
+    "/images/articles/cordless-vacuum-not-charging/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41974,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a7407478169cca54074ae5dffb35d8ed6fc2aaa65a14b3f19c0e49a95fcde4b9",
+      "outputHash": "sha256:9cdf774dde70ea879b15e362966e842791ed9d4217da2de456105fbadce81c93",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-not-charging/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16172,
+        "outputHash": "sha256:27d40617f5f9b3ad8cd2001ddbc89da3be4d8c84e454e10f7928000e0bd2ff0f"
+      }
+    },
+    "/images/articles/cordless-vacuum-not-charging/02-charging-path.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 59202,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:ce4f86e9004a37239e10da4699a12bb9dd1a2001762e4818d0c198a0e5835e7e",
+      "outputHash": "sha256:f4e9ae531cc22d50410d0f0f34854c7e75ce8361e0444efcbc26b094bbff201d",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-not-charging/02-charging-path-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 30198,
+        "outputHash": "sha256:01baacaa069c8f7083b3b03f09ca8190588b802e2c2aa33bd25c9f2d3c71ff87"
+      }
+    },
+    "/images/articles/cordless-vacuum-not-charging/03-charging-service-boundary.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 62515,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:45c6958e23e3916436cc1c44147006c85168489b8d4ce65ce766fcea221c2937",
+      "outputHash": "sha256:ed0ac280dea3c5431f113c789f6a82e916eacc1ab564ed3172e8003cf385446f",
+      "mobile": {
+        "src": "/images/articles/cordless-vacuum-not-charging/03-charging-service-boundary-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 33594,
+        "outputHash": "sha256:ace8c6faaabe50cfd1919325d1c58c09274b76d47f4c31447d27658141218062"
+      }
+    },
     "/images/articles/deerma-floorcare-value-for-money-limit/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3216,6 +3324,60 @@
         "height": 533,
         "bytes": 46032,
         "outputHash": "sha256:f0b635245280cc43f9b34109a6983cdc04d1a45232c38c19771bb6d79487c605"
+      }
+    },
+    "/images/articles/vacuum-brush-roll-not-spinning/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 62778,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6429e4abbefd3fa002f00a321201d62e8678ab289e1525e201c2af76d38f07c5",
+      "outputHash": "sha256:d52e14a857d83e57a7040672a6282d2b84b968233f4076c733351f9bef217b21",
+      "mobile": {
+        "src": "/images/articles/vacuum-brush-roll-not-spinning/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22298,
+        "outputHash": "sha256:d6ad20859c34f8025c7cb136496ff80df21b8da46994a46cf51dd114b331fd68"
+      }
+    },
+    "/images/articles/vacuum-brush-roll-not-spinning/02-brush-drive-map.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 56442,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:fb046500693f2966e7e8632074722da54f4ba1b43000b8b248baa7e0f053241d",
+      "outputHash": "sha256:64360b0f6ca244c3ef7bb64d17815901f909ccf2f6eb21725173417807eed04b",
+      "mobile": {
+        "src": "/images/articles/vacuum-brush-roll-not-spinning/02-brush-drive-map-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 29494,
+        "outputHash": "sha256:d173f61781dd6f6d07ce8d290b2cb365caa559b06f27affb5b142ec97d3fa43c"
+      }
+    },
+    "/images/articles/vacuum-brush-roll-not-spinning/03-brush-diagnostic-order.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 54072,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:ccd475a9062e85ac092b29ea2c0ddb90aa616a1b0d5cc3b3433c3c0443638e79",
+      "outputHash": "sha256:9ee583fb684fb0f5e94b1ad2d0172e2d0212a9479d2179358e657c2811fcae8a",
+      "mobile": {
+        "src": "/images/articles/vacuum-brush-roll-not-spinning/03-brush-diagnostic-order-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 28118,
+        "outputHash": "sha256:52895338ec4d654c024565c6fde1c138c37229ebefa1a03dfdfc438817be041c"
       }
     },
     "/images/articles/what-sharkninja-makes-us-think-about/01-cover.webp": {
@@ -29849,6 +30011,22 @@
       "cover": "/images/blog/cordless-vacuum-oem-development-supplier-audit.webp",
       "body": []
     },
+    "cordless-vacuum-keeps-shutting-off": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/cordless-vacuum-keeps-shutting-off/01-cover.webp",
+      "body": [
+        "/images/articles/cordless-vacuum-keeps-shutting-off/02-shutdown-pattern-map.png",
+        "/images/articles/cordless-vacuum-keeps-shutting-off/03-cutout-diagnostic-order.png"
+      ]
+    },
+    "cordless-vacuum-not-charging": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/cordless-vacuum-not-charging/01-cover.webp",
+      "body": [
+        "/images/articles/cordless-vacuum-not-charging/02-charging-path.png",
+        "/images/articles/cordless-vacuum-not-charging/03-charging-service-boundary.png"
+      ]
+    },
     "cordless-vs-corded-robotic-pool-cleaners": {
       "budgetClass": "standard",
       "cover": "/images/blog/cordless-vs-corded-pool-robot-systems.webp",
@@ -32216,6 +32394,14 @@
         "/images/articles/uwant-resilience-in-china-cleaning-appliances/04.webp"
       ]
     },
+    "vacuum-brush-roll-not-spinning": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/vacuum-brush-roll-not-spinning/01-cover.webp",
+      "body": [
+        "/images/articles/vacuum-brush-roll-not-spinning/02-brush-drive-map.png",
+        "/images/articles/vacuum-brush-roll-not-spinning/03-brush-diagnostic-order.png"
+      ]
+    },
     "vacuum-cleaner-losing-suction": {
       "budgetClass": "standard",
       "cover": "/images/blog/vacuum-cleaner-losing-suction-cover.webp",
@@ -33268,6 +33454,44 @@
         }
       }
     },
+    "cordless-vacuum-keeps-shutting-off": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-keeps-shutting-off/01-cover.webp",
+          "hash": "sha256:9eea4f6cad7a602ae748064a579ef0c3086d23cee31e2d145b060c3672586d94"
+        },
+        "02-shutdown-pattern-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-keeps-shutting-off/02-shutdown-pattern-map.png",
+          "hash": "sha256:2d8c547a8ab2fe84447ec4468c0c52df1e6f6c56b2fb7842fdb269c98860a103"
+        },
+        "03-cutout-diagnostic-order.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-keeps-shutting-off/03-cutout-diagnostic-order.png",
+          "hash": "sha256:df4127847e32ded489a90a9004c6b721f7454e58700c1b7a28fa11f1d367b2a4"
+        }
+      }
+    },
+    "cordless-vacuum-not-charging": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-not-charging/01-cover.webp",
+          "hash": "sha256:a7407478169cca54074ae5dffb35d8ed6fc2aaa65a14b3f19c0e49a95fcde4b9"
+        },
+        "02-charging-path.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-not-charging/02-charging-path.png",
+          "hash": "sha256:ce4f86e9004a37239e10da4699a12bb9dd1a2001762e4818d0c198a0e5835e7e"
+        },
+        "03-charging-service-boundary.png": {
+          "status": "matched",
+          "primary": "/images/articles/cordless-vacuum-not-charging/03-charging-service-boundary.png",
+          "hash": "sha256:45c6958e23e3916436cc1c44147006c85168489b8d4ce65ce766fcea221c2937"
+        }
+      }
+    },
     "eu-battery-rules-smartphones-power-tools": {
       "files": {
         "01-cover.png": {
@@ -33603,6 +33827,25 @@
           "status": "matched",
           "primary": "/images/articles/tti-floorcare-cleaning-history/05-tti-key-leaders.webp",
           "hash": "sha256:cff2848894c043df44f68d6721d83f54834a82fdd09d6b6efa994f1c8c2d25de"
+        }
+      }
+    },
+    "vacuum-brush-roll-not-spinning": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-brush-roll-not-spinning/01-cover.webp",
+          "hash": "sha256:6429e4abbefd3fa002f00a321201d62e8678ab289e1525e201c2af76d38f07c5"
+        },
+        "02-brush-drive-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-brush-roll-not-spinning/02-brush-drive-map.png",
+          "hash": "sha256:fb046500693f2966e7e8632074722da54f4ba1b43000b8b248baa7e0f053241d"
+        },
+        "03-brush-diagnostic-order.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-brush-roll-not-spinning/03-brush-diagnostic-order.png",
+          "hash": "sha256:ccd475a9062e85ac092b29ea2c0ddb90aa616a1b0d5cc3b3433c3c0443638e79"
         }
       }
     },
