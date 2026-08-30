@@ -2354,6 +2354,168 @@
         "outputHash": "sha256:366f20b77e020fe8d6d1f244ba9dc3a8df8d1d5af445c942446217cefda3d21f"
       }
     },
+    "/images/articles/robot-vacuum-mop-pads-not-spinning/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42944,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0bdc04c36b03bd4f58d38a00ce38df44f02a35f5f84c58e3a1aa7ba41a739b04",
+      "outputHash": "sha256:2013be62aa92728ec481aa8c3c35b463432f524bb3e2f540093cffc0ede332f2",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-mop-pads-not-spinning/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16258,
+        "outputHash": "sha256:e044cae2e05279ed25dd2f4367c7a0b2c80c3c989667149427dcbd2aa2165756"
+      }
+    },
+    "/images/articles/robot-vacuum-mop-pads-not-spinning/02-mop-system-identification.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 52902,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:c25343cc5fbc111ae5e3e91e061ada1b077d60820e7ee6dfb88eb9dcac000572",
+      "outputHash": "sha256:a3cf71aeed8c8aeef8220e2c5e0d91763a9746de141435770ca0a8d98c94ba63",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-mop-pads-not-spinning/02-mop-system-identification-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 27734,
+        "outputHash": "sha256:75020a4030e376693f417283994d550684b245293e4bce63b954e7df3385ecd2"
+      }
+    },
+    "/images/articles/robot-vacuum-mop-pads-not-spinning/03-mop-drive-diagnostic-order.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 62277,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:d03e1067fde6b930825f9658d07687d60cb6c4c99c75c3f15e9b69e71808f2f7",
+      "outputHash": "sha256:d2b3cfaf397fcaed6dcaf1e6eb22cd76253819ad8fe54176619fa126d44ffd34",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-mop-pads-not-spinning/03-mop-drive-diagnostic-order-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 34568,
+        "outputHash": "sha256:cb9a21e9784f328fff5f3ce1f03319756a6db019149dd6c08d2b1d7998e0e8d3"
+      }
+    },
+    "/images/articles/robot-vacuum-side-brush-keeps-falling-off/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43542,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fe74de1ae44503fdd2047b6ab43ddaaa2e226de6905e36a200edd5cbf06738e6",
+      "outputHash": "sha256:25fd7c9d38a5bfab21853921044ba1cbae3a7bc1b249edce28922449045d6aaa",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16458,
+        "outputHash": "sha256:f68a80b5dcd2146fe215abb119ba82d95a29a8f5ebc94cb1368396bafd4a87d4"
+      }
+    },
+    "/images/articles/robot-vacuum-side-brush-keeps-falling-off/02-side-brush-retention-guide.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 54204,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:2fcefb75c4b4d72d3490ec6baa78f879ab01b4a03d077e91a86488d5033996cf",
+      "outputHash": "sha256:745edf725d01f9c816ec37bf5e4aaec668579038dcc9611fc7f341c7988b8fdc",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/02-side-brush-retention-guide-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 29548,
+        "outputHash": "sha256:4dddbe17998d7023f3a8435bd24ef69b5aa5e00341b3a0b5c431f424f63b6446"
+      }
+    },
+    "/images/articles/robot-vacuum-side-brush-keeps-falling-off/03-brush-fit-service-boundary.png": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 60499,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:6fae371707029d08a828bdbd7df965cd25722926b98769c67f365693dfd9f432",
+      "outputHash": "sha256:7c277b6602aa6a16a946b92dc0fe86446d3cf4fc72717814b4fe51f28b5b6a82",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/03-brush-fit-service-boundary-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 34124,
+        "outputHash": "sha256:7c276329de3b8ef8be0523145d0805692f315c340ba091f354dd2b7bf083d264"
+      }
+    },
+    "/images/articles/robot-vacuum-smells-bad/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61482,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:893f9bbda71e497b33be8b4fe86769ef35528a0a4306aca733f054d9c6c92555",
+      "outputHash": "sha256:d284fd9a44b8077255992b822012a57f809676397156237750c0c2c489587971",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-smells-bad/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21200,
+        "outputHash": "sha256:1b44d508787ce4f9b796d0d4c5b107335fa8f56f8596cfba08dbc719cac4c019"
+      }
+    },
+    "/images/articles/robot-vacuum-smells-bad/02-odor-source-map.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 49943,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:4d65a383c39ea5520f06270e30fe7fda13e97334f0f887175c63e8e25285c0c8",
+      "outputHash": "sha256:46f79dce9a3add5a7eea25b7f31d659e50f216d2680fa01c0c92a6c2b2d911ec",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-smells-bad/02-odor-source-map-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 26782,
+        "outputHash": "sha256:50201aef630d07836e9f4cb4978e94f3cb0a934f9ea7e73ea4d1b074e6fd97ac"
+      }
+    },
+    "/images/articles/robot-vacuum-smells-bad/03-odor-cleaning-order.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1100,
+      "bytes": 60198,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:baff9cf1910464bb150255c1048accc4764db5de74ad47355199e9123570c6b2",
+      "outputHash": "sha256:cd0313e52c89a4975d3c3c6fc8c070399aa952c57533a7537d096ae632e68d15",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-smells-bad/03-odor-cleaning-order-800.webp",
+        "width": 800,
+        "height": 550,
+        "bytes": 32812,
+        "outputHash": "sha256:3a7198033a1c3b44dbcc30c9f481f2f5407d72719fcf8055a04ccd45a761006c"
+      }
+    },
     "/images/articles/robot-vacuum-wont-turn-on/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -2373,7 +2535,7 @@
       }
     },
     "/images/articles/robot-vacuum-wont-turn-on/02-no-power-diagnostic-path.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -2391,7 +2553,7 @@
       }
     },
     "/images/articles/robot-vacuum-wont-turn-on/03-power-service-boundary.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -31350,6 +31512,14 @@
         "/images/articles/robot-vacuum-map-wrong-missing-rooms/03-map-recovery-order.png"
       ]
     },
+    "robot-vacuum-mop-pads-not-spinning": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-mop-pads-not-spinning/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-mop-pads-not-spinning/02-mop-system-identification.png",
+        "/images/articles/robot-vacuum-mop-pads-not-spinning/03-mop-drive-diagnostic-order.png"
+      ]
+    },
     "robot-vacuum-navigation-solution-companies": {
       "budgetClass": "standard",
       "cover": "/images/insights/robot-vacuum-navigation-solution-companies-cover.jpg",
@@ -31398,6 +31568,22 @@
       "body": [
         "/images/blog/robot-vacuum-self-empty-diagnostic.webp",
         "/images/blog/robot-vacuum-self-empty-trigger-map.webp"
+      ]
+    },
+    "robot-vacuum-side-brush-keeps-falling-off": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-side-brush-keeps-falling-off/02-side-brush-retention-guide.png",
+        "/images/articles/robot-vacuum-side-brush-keeps-falling-off/03-brush-fit-service-boundary.png"
+      ]
+    },
+    "robot-vacuum-smells-bad": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-smells-bad/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-smells-bad/02-odor-source-map.png",
+        "/images/articles/robot-vacuum-smells-bad/03-odor-cleaning-order.png"
       ]
     },
     "robot-vacuum-vs-cordless-vacuum": {
@@ -33188,6 +33374,63 @@
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-map-wrong-missing-rooms/03-map-recovery-order.png",
           "hash": "sha256:470a8e84cfb406a3ddd1cb35ff93129d2ef827de94a71a67eb40828152b7a3b5"
+        }
+      }
+    },
+    "robot-vacuum-mop-pads-not-spinning": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-mop-pads-not-spinning/01-cover.webp",
+          "hash": "sha256:0bdc04c36b03bd4f58d38a00ce38df44f02a35f5f84c58e3a1aa7ba41a739b04"
+        },
+        "02-mop-system-identification.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-mop-pads-not-spinning/02-mop-system-identification.png",
+          "hash": "sha256:c25343cc5fbc111ae5e3e91e061ada1b077d60820e7ee6dfb88eb9dcac000572"
+        },
+        "03-mop-drive-diagnostic-order.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-mop-pads-not-spinning/03-mop-drive-diagnostic-order.png",
+          "hash": "sha256:d03e1067fde6b930825f9658d07687d60cb6c4c99c75c3f15e9b69e71808f2f7"
+        }
+      }
+    },
+    "robot-vacuum-side-brush-keeps-falling-off": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/01-cover.webp",
+          "hash": "sha256:fe74de1ae44503fdd2047b6ab43ddaaa2e226de6905e36a200edd5cbf06738e6"
+        },
+        "02-side-brush-retention-guide.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/02-side-brush-retention-guide.png",
+          "hash": "sha256:2fcefb75c4b4d72d3490ec6baa78f879ab01b4a03d077e91a86488d5033996cf"
+        },
+        "03-brush-fit-service-boundary.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/03-brush-fit-service-boundary.png",
+          "hash": "sha256:6fae371707029d08a828bdbd7df965cd25722926b98769c67f365693dfd9f432"
+        }
+      }
+    },
+    "robot-vacuum-smells-bad": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-smells-bad/01-cover.webp",
+          "hash": "sha256:893f9bbda71e497b33be8b4fe86769ef35528a0a4306aca733f054d9c6c92555"
+        },
+        "02-odor-source-map.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-smells-bad/02-odor-source-map.png",
+          "hash": "sha256:4d65a383c39ea5520f06270e30fe7fda13e97334f0f887175c63e8e25285c0c8"
+        },
+        "03-odor-cleaning-order.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-smells-bad/03-odor-cleaning-order.png",
+          "hash": "sha256:baff9cf1910464bb150255c1048accc4764db5de74ad47355199e9123570c6b2"
         }
       }
     },
