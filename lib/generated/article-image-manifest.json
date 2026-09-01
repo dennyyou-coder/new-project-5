@@ -698,6 +698,130 @@
         "outputHash": "sha256:7a81c4f42a55bdf995be120c435b26cce58a21d1a23b1b555ff53f1e075c5066"
       }
     },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 170508,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f804e02e504bf2a959d6f32ba398aff776aa7fd6681bd9b0654116de181adbaf",
+      "outputHash": "sha256:2faa667e6e95a614913a1d450b3b8f03804ced494259f72d8178fcb353438781",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 45774,
+        "outputHash": "sha256:4019ea7f15948f6e30e86b3ac479dcf0850273004b4b8f12cb24f977ab74fb0f"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/02-canton-fair-2023.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 547,
+      "height": 365,
+      "bytes": 66246,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6684a1229df9d70e755ee8510e014c8d43fa4e1499a1ef4684ef8005f53a15d0",
+      "outputHash": "sha256:bd55d0e6a16d7d44f38aecc7199d7aa384979bb8a1c7da98d3c0f0ae9774e80c"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/03-ten-in-one-pet-cleaner.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 898,
+      "height": 686,
+      "bytes": 32814,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f6879ab7935d094aaaf29ae9394543dab98ebadc38c884e09c2b75c27157faf8",
+      "outputHash": "sha256:d3c42751bfdacc41e496f9de82afae6b56394fb2ed345b19d8b31a06358cc113"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/04-ifa-2023.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1079,
+      "bytes": 174340,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c14dba96072c724d2e81f1d2113885a35d3ed30bff58d37316f90093a8c83736",
+      "outputHash": "sha256:57dd8fb1ce085937542b54b958525641cae99e260bb758284ccb197ba652a9c3",
+      "mobile": {
+        "src": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/04-ifa-2023-800.webp",
+        "width": 800,
+        "height": 540,
+        "bytes": 49374,
+        "outputHash": "sha256:a6ed64731a06081e1924a2fa975c81d4ed2e51b620c76322b82bf60d516ff61f"
+      }
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/05-yu-hao-dreame.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 547,
+      "height": 365,
+      "bytes": 16036,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:32e04a4c80fe3c4b15c9e5a5cf6083b904bdea7a319c0228c7e5eb31e7bc8e9d",
+      "outputHash": "sha256:023a0e79bf89ed41da806272ee122c5ae352b0359cd2be1a023879eeaf9110b9"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/06-roborock-xiao-zhan.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 656,
+      "height": 304,
+      "bytes": 13708,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:47aff2e95dfb39958684198c74612aa2a829b79b5724e1fee7ba7dc534c9ddb6",
+      "outputHash": "sha256:a1269a3a2a57cd06c5496cb96321e84d440ea736c6ea1cfdf44bd4ba36eee032"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/07-diisea-chen-xiaochun-ying-caier.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 500,
+      "height": 817,
+      "bytes": 32162,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:eaf727b858f6d650d78d30fa20b5b4497a5545655045efae9696715f0a4b96bb",
+      "outputHash": "sha256:3798bdc0b27f6b1198c8108082ddc4383a8fe7f4dbda86bd3fe9d705fc4c95a9"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/08-wang-xuning.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 275,
+      "height": 183,
+      "bytes": 6886,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f7873c02698de9ab44ed1d8cb3d54a70cc6d18dc1d0a2ed14c58cd21c296c280",
+      "outputHash": "sha256:c85d35a5566adf7e7eff5fa0892d15262b60dba7bac2b104727c1e149cce3fd0"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/09-xwow-floor-washing-robot.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 800,
+      "height": 800,
+      "bytes": 27242,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:379bce5b5c0751036cd599e8e79e16d4632b6349026de66e99200a5b4327fb9a",
+      "outputHash": "sha256:2f9b284ad795c9989e10d0af46100c949136ffaba4862e5a20ebc57807738f5e"
+    },
+    "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 548,
+      "height": 364,
+      "bytes": 40390,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:94549e829ce20918416f38b0549b9deb697ff3cbe6978522bfc0d6bc4b70212f",
+      "outputHash": "sha256:f218121d1e814c86fbc120bbb686456c15fb7d1d6ef6fb59956166ae30e35762"
+    },
     "/images/articles/can-dji-become-top-three-in-robot-vacuums/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3597,7 +3721,7 @@
       }
     },
     "/images/articles/vacuum-cleaner-blowing-out-dust/02-dust-escape-location-map.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3615,7 +3739,7 @@
       }
     },
     "/images/articles/vacuum-cleaner-blowing-out-dust/03-dust-containment-check.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -30111,6 +30235,21 @@
         "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup.webp"
       ]
     },
+    "building-worlds-no-1-cleaning-show-from-scratch-episode-06": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/01-cover.webp",
+      "body": [
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/02-canton-fair-2023.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/03-ten-in-one-pet-cleaner.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/04-ifa-2023.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/05-yu-hao-dreame.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/06-roborock-xiao-zhan.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/07-diisea-chen-xiaochun-ying-caier.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/08-wang-xuning.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/09-xwow-floor-washing-robot.webp",
+        "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp"
+      ]
+    },
     "can-dji-become-top-three-in-robot-vacuums": {
       "budgetClass": "standard",
       "cover": "/images/articles/can-dji-become-top-three-in-robot-vacuums/01-cover.webp",
@@ -33923,6 +34062,60 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/16-luba-robot-mower-lineup.webp",
           "hash": "sha256:dc4853ff1d24bc4108cc17bafbb176a5148199e7e4b2230995e0b77ae28fdb45"
+        }
+      }
+    },
+    "building-worlds-no-1-cleaning-show-from-scratch-episode-06": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/01-cover.webp",
+          "hash": "sha256:f804e02e504bf2a959d6f32ba398aff776aa7fd6681bd9b0654116de181adbaf"
+        },
+        "02-canton-fair-2023.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/02-canton-fair-2023.webp",
+          "hash": "sha256:6684a1229df9d70e755ee8510e014c8d43fa4e1499a1ef4684ef8005f53a15d0"
+        },
+        "03-ten-in-one-pet-cleaner.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/03-ten-in-one-pet-cleaner.webp",
+          "hash": "sha256:f6879ab7935d094aaaf29ae9394543dab98ebadc38c884e09c2b75c27157faf8"
+        },
+        "04-ifa-2023.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/04-ifa-2023.webp",
+          "hash": "sha256:c14dba96072c724d2e81f1d2113885a35d3ed30bff58d37316f90093a8c83736"
+        },
+        "05-yu-hao-dreame.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/05-yu-hao-dreame.webp",
+          "hash": "sha256:32e04a4c80fe3c4b15c9e5a5cf6083b904bdea7a319c0228c7e5eb31e7bc8e9d"
+        },
+        "06-roborock-xiao-zhan.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/06-roborock-xiao-zhan.webp",
+          "hash": "sha256:47aff2e95dfb39958684198c74612aa2a829b79b5724e1fee7ba7dc534c9ddb6"
+        },
+        "07-diisea-chen-xiaochun-ying-caier.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/07-diisea-chen-xiaochun-ying-caier.webp",
+          "hash": "sha256:eaf727b858f6d650d78d30fa20b5b4497a5545655045efae9696715f0a4b96bb"
+        },
+        "08-wang-xuning.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/08-wang-xuning.webp",
+          "hash": "sha256:f7873c02698de9ab44ed1d8cb3d54a70cc6d18dc1d0a2ed14c58cd21c296c280"
+        },
+        "09-xwow-floor-washing-robot.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/09-xwow-floor-washing-robot.webp",
+          "hash": "sha256:379bce5b5c0751036cd599e8e79e16d4632b6349026de66e99200a5b4327fb9a"
+        },
+        "10-navimow-robot-mower.png": {
+          "status": "matched",
+          "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp",
+          "hash": "sha256:94549e829ce20918416f38b0549b9deb697ff3cbe6978522bfc0d6bc4b70212f"
         }
       }
     },
