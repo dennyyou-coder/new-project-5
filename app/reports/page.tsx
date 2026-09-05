@@ -1,3 +1,4 @@
+import { siteVisualProps } from "@/lib/siteVisuals";
 import type { Metadata } from "next";
 import "../styles/reports.css";
 import { ReportsLeadForm, TallyReportButton } from "@/components/LeadForms";
@@ -14,8 +15,8 @@ const upcomingReports = [
     title: "Pool Robot Channels And Service Costs",
     reportId: "pool-robot-channels-service-costs",
     ctaLocation: "reports_card_pool_robots",
-    image: "/images/site-refresh/real/product-detail.webp",
-    alt: "Pool cleaning robot in a swimming pool",
+    image: "/images/site-refresh/2026-09-commercial/03-pool-robot.webp",
+    alt: "Pool cleaning robot beside a swimming pool",
     audience: "For brands and distributors evaluating the pool robot category.",
     points: ["Channel structure", "Service cost drivers", "Buyer considerations"]
   },
@@ -23,7 +24,7 @@ const upcomingReports = [
     title: "Robotic Lawn Mower Supply Chains",
     reportId: "robotic-lawn-mower-supply-chains",
     ctaLocation: "reports_card_lawn_mowers",
-    image: "/images/site-refresh/real/city-architecture.webp",
+    image: "/images/site-refresh/2026-09-commercial/04-lawn-robot.webp",
     alt: "Robotic lawn mower operating outdoors",
     audience: "For buyers tracking outdoor robotics and emerging suppliers.",
     points: ["Technology paths", "Supplier landscape", "Market entry questions"]
@@ -32,7 +33,7 @@ const upcomingReports = [
     title: "Commercial Cleaning Robot ROI Model",
     reportId: "commercial-cleaning-robot-roi",
     ctaLocation: "reports_card_commercial_robots",
-    image: "/images/site-refresh/real/modern-factory.webp",
+    image: "/images/site-refresh/2026-09-commercial/05-commercial-cleaning.webp",
     alt: "Commercial robotic cleaning equipment",
     audience: "For operators and distributors evaluating commercial automation.",
     points: ["Labor substitution", "Deployment economics", "Operational fit"]
@@ -41,7 +42,7 @@ const upcomingReports = [
     title: "China Cleaning Supplier Pack",
     reportId: "china-cleaning-supplier-pack",
     ctaLocation: "reports_card_supplier_pack",
-    image: "/images/site-refresh/real/business-office.webp",
+    image: "/images/site-refresh/2026-09-commercial/09-prototype-review.webp",
     alt: "Cleaning industry supplier meeting in China",
     audience: "For overseas buyers preparing to evaluate Chinese suppliers.",
     points: ["Supplier questions", "Quality checkpoints", "Sourcing preparation"]
@@ -160,7 +161,7 @@ export default function ReportsPage() {
             {upcomingReports.map((report) => (
               <article className="reports-library-card" key={report.reportId}>
                 <div className="reports-library-card-media">
-                  <img src={report.image} alt={report.alt} />
+                  <img {...siteVisualProps(report.image, "(max-width: 760px) 100vw, 33vw")} alt={report.alt} />
                   <span className="reports-library-status">Coming Soon</span>
                 </div>
                 <div className="reports-library-card-body">

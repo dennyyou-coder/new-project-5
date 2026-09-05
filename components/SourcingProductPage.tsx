@@ -1,3 +1,4 @@
+import { siteVisualProps } from "@/lib/siteVisuals";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 import { LawnRobotProductSelector } from "@/components/LawnRobotProductSelector";
@@ -51,7 +52,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
               </div>
               <p className="sourcing-lawn-hero-fit">For brands, importers, distributors and retailers deciding where to compete in robotic mowers—and which Chinese product platform can support that position.</p>
             </div>
-            <img src={product.image} alt={product.imageAlt} fetchPriority="high" decoding="async" />
+            <img {...siteVisualProps(product.image, "(max-width: 760px) 100vw, 50vw")} alt={product.imageAlt} fetchPriority="high" loading="eager" decoding="async" />
           </div>
         </section>
       ) : (
@@ -63,7 +64,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
               <p className="sourcing-product-intro">{product.intro}</p>
               <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation={`${product.slug}_hero`} inquiryIntent="product_sourcing" productCategory={product.productCategory}>Start A Sourcing Inquiry</TallyButton>
             </div>
-            <img src={product.image} alt={product.imageAlt} fetchPriority="high" decoding="async" />
+            <img {...siteVisualProps(product.image, "(max-width: 760px) 100vw, 50vw")} alt={product.imageAlt} fetchPriority="high" loading="eager" decoding="async" />
           </div>
         </section>
       )}

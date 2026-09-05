@@ -1,3 +1,4 @@
+import { siteVisualProps } from "@/lib/siteVisuals";
 import Image from "next/image";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
@@ -50,7 +51,7 @@ export function RobotVacuumLanding({ product }: { product: SourcingProduct }) {
       <section className="section-hero sourcing-product-hero sourcing-lawn-hero">
         <div className="sourcing-v3-container sourcing-product-hero-grid">
           <div><p className="sourcing-v3-kicker">Where the Next Robot Vacuum Opportunities Are Forming</p><h1>Choose the Market Opportunity Before You Choose the Factory</h1><p className="sourcing-product-intro">Robot vacuums are separating into distinct platforms—from retail navigation starters to all-in-one premium docks, low-profile reach, pet-and-carpet specialists and ecommerce value offers. The opportunity depends on the household, channel and ownership problem the product solves.</p><div className="sourcing-lawn-hero-actions"><a className="sourcing-v3-button" href="#product-options">Explore the Product Opportunities</a><TallyButton className="sourcing-lawn-secondary-button" form="sourcing" conversionGroup="sourcing" ctaLocation="robot_vacuum_hero_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Test My Product Thesis</TallyButton></div><p className="sourcing-lawn-hero-fit">For brands, importers, distributors and retailers deciding where to compete in robot vacuums—and which product platform can support that position.</p></div>
-          <img src={product.image} alt={product.imageAlt} fetchPriority="high" decoding="async" />
+          <img {...siteVisualProps(product.image, "(max-width: 760px) 100vw, 50vw")} alt={product.imageAlt} fetchPriority="high" loading="eager" decoding="async" />
         </div>
       </section>
 

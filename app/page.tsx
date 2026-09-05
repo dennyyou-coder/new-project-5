@@ -18,12 +18,12 @@ export const metadata: Metadata = {
 const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 
 const heroProducts = [
-  { label: "Robot Vacuums", image: "/images/site-refresh/home/category-robot-vacuums.webp", alt: "Robot vacuum product category", text: "New functions, brands and channels continue to reshape floorcare." },
-  { label: "Floor Washers", image: "/images/site-refresh/home/category-floor-washers.webp", alt: "Hard floor washer product category", text: "Fast product iteration is expanding the hard-floor cleaning market." },
-  { label: "Pool Robots", image: "/images/site-refresh/home/category-pool-robots.webp", alt: "Robotic pool cleaner product category", text: "Automated pool maintenance is moving into broader retail channels." },
-  { label: "Robotic Lawn Mowers", image: "/images/site-refresh/home/category-robotic-lawn-mowers.webp", alt: "Robotic lawn mower product category", text: "Outdoor robotics is entering a faster global adoption cycle." },
-  { label: "Commercial Cleaning", image: "/images/site-refresh/home/category-commercial-cleaning.webp", alt: "Commercial cleaning robot product category", text: "Facilities and service operators are testing new automation models." },
-  { label: "Emerging Categories", image: "/images/site-refresh/home/category-emerging-cleaning.webp", alt: "Emerging cleaning product categories", text: "New equipment, components and formats are still taking shape." }
+  { label: "Robot Vacuums", image: "/images/site-refresh/2026-09-commercial/01-robot-vacuum.webp", alt: "Robot vacuum product category", text: "New functions, brands and channels continue to reshape floorcare." },
+  { label: "Floor Washers", image: "/images/site-refresh/2026-09-commercial/02-floor-washer.webp", alt: "Hard floor washer product category", text: "Fast product iteration is expanding the hard-floor cleaning market." },
+  { label: "Pool Robots", image: "/images/site-refresh/2026-09-commercial/03-pool-robot.webp", alt: "Robotic pool cleaner product category", text: "Automated pool maintenance is moving into broader retail channels." },
+  { label: "Robotic Lawn Mowers", image: "/images/site-refresh/2026-09-commercial/04-lawn-robot.webp", alt: "Robotic lawn mower product category", text: "Outdoor robotics is entering a faster global adoption cycle." },
+  { label: "Commercial Cleaning", image: "/images/site-refresh/2026-09-commercial/05-commercial-cleaning.webp", alt: "Commercial cleaning robot product category", text: "Facilities and service operators are testing new automation models." },
+  { label: "Emerging Categories", image: "/images/site-refresh/2026-09-commercial/14-emerging-products.webp", alt: "Emerging cleaning product categories", text: "New equipment, components and formats are still taking shape." }
 ];
 
 const pathways = [
@@ -32,8 +32,8 @@ const pathways = [
     eyebrow: "Market Intelligence",
     title: "See The Shift Before It Becomes Obvious",
     text: "Follow category movement, companies, channels and product signals across the global cleaning industry.",
-    image: "/images/site-refresh/real/city-architecture.webp",
-    imageAlt: "Robotic vacuum representing cleaning appliance market intelligence",
+    image: "/images/site-refresh/2026-09-commercial/08-market-research.webp",
+    imageAlt: "Cleaning product samples and research materials on a workbench",
     links: [
       { href: "/blog", label: "Read Industry Insights" },
       { href: "/reports", label: "Explore Market Reports" }
@@ -44,8 +44,8 @@ const pathways = [
     eyebrow: "Product & Sourcing",
     title: "Turn Market Signals Into Product Decisions",
     text: "Connect category judgement with suppliers, OEM/ODM options, product direction and execution support.",
-    image: "/images/site-refresh/real/product-detail.webp",
-    imageAlt: "Cleaning industry supplier and sourcing meeting",
+    image: "/images/site-refresh/2026-09-commercial/07-product-testing.webp",
+    imageAlt: "Technician observing a robot vacuum floor test",
     links: [{ href: "/sourcing", label: "Start A Sourcing Inquiry" }]
   },
   {
@@ -53,7 +53,7 @@ const pathways = [
     eyebrow: "WCB Expo",
     title: "Move From Online Signals To Real Connections",
     text: "Meet manufacturers, brands, suppliers and buyers through the next global cleaning industry platform.",
-    image: "/images/site-refresh/real/exhibition-hall.webp",
+    image: "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
     imageAlt: "Cleaning equipment exhibition and industry connections",
     links: [{ href: "/wcb-expo", label: "Explore WCB Expo" }]
   }
@@ -227,10 +227,10 @@ export default function HomePage() {
           </div>
           <div className="home-v9-expo-campaign-media">
             <Image
-              src="/images/expo/wcb-expo-2026-hero.webp"
+              src="/images/site-refresh/2026-09-commercial/13-expo-scene.webp"
               alt="WCB Expo visual showing cleaning appliances and an industry exhibition setting"
-              width={1672}
-              height={941}
+              width={1536}
+              height={1024}
               sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1180px) 40vw, 480px"
               loading="lazy"
               decoding="async"
@@ -257,8 +257,8 @@ export default function HomePage() {
                 <Image
                   src={product.image}
                   alt={product.alt}
-                  width={1200}
-                  height={900}
+                  width={1536}
+                  height={1024}
                   sizes="(max-width: 720px) 42vw, (max-width: 1050px) 21vw, 165px"
                   loading="lazy"
                   decoding="async"
@@ -377,8 +377,8 @@ export default function HomePage() {
             </figure>
             <figure>
               <Image
-                src="/images/site-refresh/real/modern-factory.webp"
-                alt="Modern manufacturing and supply-chain environment"
+                src="/images/site-refresh/2026-09-commercial/10-quality-inspection.webp"
+                alt="Cleaning appliance components at an inspection station"
                 width={1440}
                 height={960}
                 sizes="(max-width: 720px) 50vw, (max-width: 1050px) 40vw, 245px"
@@ -389,8 +389,8 @@ export default function HomePage() {
             </figure>
             <figure>
               <Image
-                src="/images/site-refresh/real/exhibition-hall.webp"
-                alt="International industry audience in a modern venue"
+                src="/images/industry/home-expo-networking-2025.jpg"
+                alt="Visitors discussing products at an industry exhibition"
                 width={1440}
                 height={960}
                 sizes="(max-width: 720px) 50vw, (max-width: 1050px) 40vw, 245px"
