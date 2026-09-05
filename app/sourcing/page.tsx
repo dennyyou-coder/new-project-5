@@ -98,7 +98,7 @@ export default function SourcingPage() {
             </ul>
           </div>
           <figure className="sourcing-opportunity-hero-proof">
-            <img src="/images/site-refresh/about/about-hero-denny.webp" alt="Denny You discussing cleaning product opportunities" />
+            <img src="/images/site-refresh/about/about-hero-denny.webp" width={1600} height={1200} decoding="async" alt="Denny You discussing cleaning product opportunities" />
             <figcaption><strong>Denny You</strong><span>Founder, World Clean Biz</span><small>Inside the cleaning industry since 2006</small></figcaption>
           </figure>
         </div>
@@ -158,7 +158,7 @@ export default function SourcingPage() {
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-team">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>Inside the cleaning industry since 2006</li><li>Cleaning industry hardware entrepreneur</li><li>Network across manufacturers, suppliers, brands and buyers</li><li>Currently supporting cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
+        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" width={2200} height={1651} loading="lazy" decoding="async" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>Inside the cleaning industry since 2006</li><li>Cleaning industry hardware entrepreneur</li><li>Network across manufacturers, suppliers, brands and buyers</li><li>Currently supporting cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-final-cta" id="shortlist-form">
