@@ -64,7 +64,11 @@ const REPORT_CATEGORIES = new Set([
   "Industry",
   "Supply Chain",
   "Supply Chain Analysis",
-  "Commercial Cleaning"
+  "Commercial Cleaning",
+  "Floorcare",
+  "Vacuum",
+  "Pool Cleaning",
+  "Robotic Mowers"
 ]);
 
 export function getBlogCta(category: string): BlogCtaDefinition {
