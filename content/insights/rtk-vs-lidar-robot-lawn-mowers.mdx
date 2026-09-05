@@ -23,317 +23,127 @@ source_review_version: "30-英文发布包/rtk-vs-lidar-robot-lawn-mowers/英文
 confirmed_english_version: "confirmed-v1.0"
 image_status: "confirmed-v1.0"
 worldcleanbiz_publish_status: "deployment_authorized"
-updated_at: "2026-07-23"
+updated_at: "2026-09-05"
 ---
 
-**RTK and LiDAR robot lawn mowers do not have a universal winner. Start with RTK for a large, open lawn with reliable sky view and correction coverage. Start with LiDAR for a structured yard where trees, buildings or narrow passages obstruct satellites but provide stable local geometry. If the property combines both conditions, test a fusion system and verify how it behaves when one positioning layer becomes weak.**
+**Start with an RTK robot mower for a large, open lawn with reliable satellite reception and correction coverage. Start with LiDAR where trees and buildings obstruct the sky but provide usable local features for mapping. For a property that combines both conditions, test a mower that combines navigation methods across the whole route.**
 
-The buying decision should follow the site, not the sensor label. RTK, Network RTK, LiDAR and vision describe parts of a navigation architecture. They do not, by themselves, prove boundary accuracy, obstacle safety, automatic mapping, offline operation or serviceability.
+Imagine an open front lawn connected to a shaded rear garden by a narrow passage beside the house. A mower could have a clear satellite view at the front, lose that view beside the building and need a different positioning reference under the trees.
 
-For dealers and professional buyers, the commercial question is sharper: which system can be surveyed, installed, accepted and supported on this specific property without turning every signal problem into a return?
+That is why the same machine can be a good fit for one garden and a difficult installation in another. Before choosing RTK or LiDAR, follow the route the mower will actually travel: out of the dock, through each work zone and home again.
 
 ## RTK vs LiDAR Robot Lawn Mowers at a Glance
 
-| Decision area | RTK-first system | LiDAR-first system | Fusion system |
-|---|---|---|---|
-| Main positioning reference | Satellites plus correction data | Local geometric map measured by LiDAR | Satellite, LiDAR, vision and inertial layers in a model-specific combination |
-| Strong starting site | Large, open lawn with clear sky | Structured yard with canopy, walls or narrow passages | Property containing both open and obstructed zones |
-| Main external dependency | Local reference station or Network RTK service; sometimes internet | Onboard sensor condition, map quality, charging station and software | All included services plus correct switching and recovery logic |
-| Common misunderstanding | Centimeter positioning equals obstacle detection | LiDAR equals complete navigation and safety | More sensors automatically mean more reliability |
-| Installation risk | Poor sky view, multipath, correction or network loss, moved reference station | Weak or changing geometry, dirty/damaged sensor, map and calibration issues | Unclear primary sensor, unstable transitions, unresolved fault ownership |
-| Dealer acceptance focus | Correction availability and repeatable virtual boundaries | Map stability, localization and boundary behavior in every structured zone | Transition zones, fallback behavior, recovery, docking and map continuity |
-
-This table is a screening tool. A product still needs a site trial under the exact firmware, service plan and market configuration being sold.
+| Your property or priority | First system to assess | What to check before buying |
+|---|---|---|
+| Large, open lawn | RTK | Satellite reception and correction coverage at the far edges as well as near the dock |
+| Tree-covered garden or enclosed courtyard | LiDAR or a suitable combined system | Reliable mapping and repeated operation under the actual canopy and beside buildings |
+| Open lawn joined to shaded areas | Combined navigation | Behavior when moving between open and obstructed zones |
+| Avoid installing a local RTK antenna | Network RTK or LiDAR | Network RTK coverage and connectivity, or LiDAR mapping requirements |
+| Weak mobile or Wi-Fi coverage | A model with a documented local navigation route | Which functions work offline; a local RTK station still needs suitable satellite reception |
+| Lowest installation effort | Compare complete installations | Mapping, station placement, site changes and support matter alongside the sensor |
 
 ![RTK versus LiDAR robot lawn mower site decision map for open lawns, tree cover, buildings, narrow passages and mixed properties](/images/blog/rtk-vs-lidar-robot-mower-site-decision-map.webp)
 
-## What RTK and LiDAR Actually Do
+These are starting points for a site trial. The exact model, software and regional services determine whether a candidate can reliably maintain the property.
 
-RTK is a high-precision GNSS positioning method. The mower receives satellite signals and correction data, then uses them to estimate its position in a global coordinate system. That position can support virtual boundaries, systematic paths and repeatable work zones.
+## Why Do RTK and LiDAR Suit Different Gardens?
 
-The correction source matters. A local RTK system uses a fixed reference station at or near the property. A Network RTK system obtains corrections through a service network, normally removing the need to install a local antenna. Both still require the mower to receive usable satellite signals.
+RTK uses satellite signals together with correction data to estimate a precise position. The corrections can come from a local reference station or a network service. With reliable reception, that position helps the mower follow virtual boundaries and planned routes.
 
-LiDAR measures distance to surrounding surfaces with laser pulses. A mower can use those measurements with SLAM, inertial sensing, wheel odometry and software to build a local map and estimate its position inside it. The same LiDAR may also contribute to obstacle perception, but positioning and object recognition remain separate functions.
+LiDAR measures distances to surrounding surfaces using laser pulses. Together with mapping software and other onboard sensors, it can help the mower recognize where it is within a local map.
 
-The distinction explains the site trade-off. RTK looks upward for satellite geometry and outward for correction data. LiDAR looks outward at the local environment. One site may offer an excellent sky view and few nearby geometric features; another may have walls, trees and passages that provide structure while obstructing satellites.
+The difference explains the garden problem. An open lawn can offer good satellite visibility while providing relatively few nearby features. A garden enclosed by walls and trees may offer plenty of local structure while obstructing the sky.
 
-The broader [wire-free robot mower guide](/blog/robot-lawn-mower-without-perimeter-wire) maps RTK, LiDAR, vision and other boundary architectures. This article stays with the RTK-versus-LiDAR site decision.
+Husqvarna's [EPOS installation guidance](https://us-support.husqvarna.com/en/automower/KA-70323) identifies trees and buildings as potential satellite obstructions and describes different ways its models handle weak reception. It is a useful example of why the installation site belongs in the buying decision.
 
-The U.S. government’s [GPS accuracy guidance](https://www.gps.gov/index.php/gps-accuracy-0) lists satellite geometry, signal blockage and reflected signals as factors that affect positioning. NOAA’s current [real-time GNSS network guidance](https://www.ngs.noaa.gov/PUBS_LIB/NGSGuidelinesForRealTimeGNSSNetworksV2.2.pdf) also treats communication and multipath as field reliability issues. Those are general GNSS principles, not a failure prediction for every RTK mower.
+For other approaches, including vision and boundary-wire systems, see our [wire-free robot lawn mower guide](/blog/robot-lawn-mower-without-perimeter-wire).
 
-## Local RTK and Network RTK Are Different Purchases
+## When Is RTK the Better Starting Point?
 
-“RTK mower” is too broad for a quotation or procurement sheet.
+A broad lawn with a clear sky view is a strong candidate. Satellite-based positioning gives the mower a reference across the property without requiring nearby walls or trees throughout the route.
 
-### Local RTK
+The important qualification is “throughout the route.” A good signal beside the charging station does not establish that the machine can work along the house, behind a garage or under a large tree. Walk those edges before ordering.
 
-A local reference station adds physical infrastructure:
+The source of correction data also changes what you are buying.
 
-- a powered installation point;
-- a suitable view of the sky;
-- mounting hardware and weather exposure;
-- communication between the station and mower;
-- a defined relationship between station position and the saved map.
+### Local RTK: a station becomes part of the garden
 
-Husqvarna’s current [EPOS information](https://www.husqvarna.com/us/discover/products-and-innovations/epos/) illustrates the consequences. Its reference station requires an open sky view, and moving the station after creating virtual boundaries can require the map to be created again.
+A local reference station needs a suitable position, power and communication with the mower. It also needs the sky view specified by the manufacturer.
 
-That creates a service boundary. A customer who moves the antenna, changes its power source or relocates the charging station may have changed the positioning system, not merely moved an accessory.
+Once installed, treat it as part of the positioning setup. Check the model's procedure before moving it or changing the dock and boundaries. A later garden rearrangement may require a new setup or map.
 
-### Network RTK
+### Network RTK: check coverage before removing the antenna
 
-Network RTK removes the local base station from some installations, but it does not remove infrastructure. The dependency moves into:
+Network RTK can avoid a customer-installed reference station by receiving corrections from a service network. The mower still needs usable satellite reception, and the relevant connectivity and service coverage must reach the property.
 
-- geographic correction coverage;
-- mobile or Wi-Fi connectivity where required;
-- an activated product and regional account;
-- the correction provider and its service terms;
-- firmware and server compatibility;
-- a procedure for outages, account transfer and end of service.
+Husqvarna's cloud installation option, for example, requires stable internet across the work area and is available only in supported markets. Its local-station option provides a different route for navigation. Those are model-specific arrangements, so a buyer should confirm the terms for the exact machine.
 
-Husqvarna currently offers cloud correction in selected markets and requires stable internet across the work area for relevant cloud installations. Its [EPOS support page](https://us-support.husqvarna.com/en/automower/KA-70323) separates that option from a local reference station and warns that model and market availability differ.
+Ask the seller to separate correction access, mobile data and remote app functions. Record what is included, for how long and what happens during an interruption. “No antenna” answers an installation question; service details determine how that installation keeps working.
 
-Mammotion’s current [LUBA 3 page](https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower) presents its iNavi Network RTK as an antenna-free service on applicable models. The same page separately discusses onboard 4G service. A buyer should record correction access and general cellular functions as separate line items instead of assuming that one “free connectivity” statement covers both.
+## Does LiDAR Solve the Problem Under Trees?
 
-“No antenna” means no customer-installed local RTK antenna for that configuration. It does not automatically mean no satellite, network, account, regional service or future commercial dependency.
+LiDAR can use nearby surfaces when satellite reception is weak, making it a useful candidate for shaded gardens and enclosed spaces. It still needs a usable map and reliable readings from the environment.
 
-## What a LiDAR-First Mower Still Requires
+Think about a route beside hedges, through a narrow passage and into a courtyard. The mower must recognize its surroundings, stay within the accepted boundary and return through the same passage. Those steps deserve a demonstration on the actual property.
 
-A LiDAR-first mower can reduce dependence on satellite visibility, but it remains an installed system.
+Changing vegetation, sensor contamination and features such as glass or repetitive corridors are reasons to test carefully. They do not establish that every LiDAR mower will fail there. What matters is how the selected machine handles that particular route.
 
-Dreame’s official [A1 mapping procedure](https://support.dreametech.com/hc/en-us/articles/13219226930831-How-to-create-a-map-outline-for-the-Dreame-A1) requires the mower to be docked, connected to the App by Bluetooth and prepared for mapping before the operator drives the boundary. Its [installation page](https://support.dreametech.com/hc/en-us/articles/13218729979791-How-to-properly-install-the-Dreame-A1-robotic-mower) also specifies charging-station placement and includes a LiDAR cleaning brush.
+Installation also varies. Dreame's [A1 mapping instructions](https://support.dreametech.com/hc/en-us/articles/13219226930831-How-to-create-a-map-outline-for-the-Dreame-A1) require the operator to drive the boundary using the app after preparing the docked mower. Navimow describes automatic mapping for its [i2 LiDAR](https://navimow.segway.com/pages/navimow-i2-lidar-robot-lawn-mower), which combines LiDAR and vision. Both carry a LiDAR label, but the owner's setup tasks differ.
 
-Navimow’s current [i2 LiDAR page](https://navimow.segway.com/pages/navimow-i2-lidar-robot-lawn-mower) takes a different route. It describes LiDAR and vision dual fusion, satellite-free positioning and automatic mapping. The page also identifies its sensor as solid-state LiDAR rather than an exposed rotating unit.
+LiDAR ranging can operate without visible daylight. If the mower also relies on cameras for other functions, check those functions separately before assuming that all behavior is unchanged at night.
 
-These examples show why “LiDAR mower” is not a complete specification. Dealers still need to ask:
+## What If the Lawn Has Both Open and Shaded Areas?
 
-- Is the sensor solid-state, rotating or another architecture?
-- What is its field of view and protected mounting position?
-- Does it map automatically or require an operator to trace the boundary?
-- Which features use LiDAR, and which use cameras or other sensors?
-- How is the sensor cleaned, inspected, calibrated or replaced?
-- What happens after the charging station moves?
-- Can the map be backed up, restored or transferred to a replacement mower?
-- Which functions remain available without internet or a brand account?
+Return to the front-lawn-and-rear-garden example. A combined navigation system can draw on different references as the surroundings change. This is the practical reason to consider sensor fusion.
 
-LiDAR can measure in darkness without visible illumination, but the complete mower may still use cameras for boundary understanding, obstacle classification or safety. A night-capable ranging sensor does not prove that every function performs identically at night.
+The benefit depends on the software. The machine needs to continue with a reliable position or stop appropriately when that position becomes uncertain. Simply listing RTK, LiDAR and cameras does not demonstrate successful recovery.
 
-## Which Site Conditions Favor RTK or LiDAR?
+Ask the dealer to run the difficult connection between zones. Watch whether the mower passes through, completes the rear lawn and finds its dock again. Repeat the route rather than accepting one successful run. If the manufacturer permits a controlled interruption test, check the documented stop or recovery behavior with the installer.
 
-### Large, open lawns
+Model suffixes and regional versions matter here. Confirm the actual navigation equipment and included services for the unit on the quotation. Our [LUBA versus Navimow comparison](/blog/luba-vs-navimow-mammotion-ninebot) provides a separate brand and product context; site suitability still needs its own check.
 
-An open property with good sky view is the natural RTK screening case. Satellite-based coordinates can provide a stable global reference across long distances without requiring the mower to derive its entire position from nearby walls, trees or other local features.
+## Will Better Positioning Also Improve Obstacle Avoidance?
 
-Before approval, test the farthest points, low areas, edges beside buildings and any zone where trees interrupt the otherwise open sky. Confirm correction coverage across the complete work area rather than beside the charging station only.
+Positioning tells a mower where it is. Obstacle detection helps it respond to something in its path. A product may use overlapping sensors for these tasks, but the capabilities need separate evidence.
 
-### Dense tree cover
+A mower can follow a planned line precisely while still needing another sensing system to recognize a temporary object. LiDAR can measure a shape without proving that the software identifies what it is. Camera-based recognition has its own limits.
 
-Tree canopy can block or degrade satellite reception. Husqvarna’s current EPOS support specifically identifies dense crowns and tall buildings as possible obstructions. Some of its models use vision for a limited backup route; other systems may require a support wire or a different installation.
+Keep three questions separate during the demonstration:
 
-A LiDAR-first or fusion mower deserves the first trial under canopy because it can use local geometry. The trial still needs seasonal judgment. Leaves, trimmed hedges, parked equipment and other environmental changes can alter what the system sees. “Works under trees” is a test condition, not a permanent property of the product name.
+- **Navigation:** Does it complete the route and return to charge?
+- **Boundary control:** Does it repeatedly stay within the accepted work area?
+- **Obstacle response:** Which objects and conditions does the manufacturer claim to detect, and what happens when detection is uncertain?
 
-### Tall buildings and enclosed courtyards
+Near roads, water and drop-offs, follow the exact manual's separation and physical-protection requirements. Never use people or animals as test obstacles. Precise positioning alone does not establish safe behavior at every edge.
 
-Buildings create two RTK concerns: blocked sky and reflected satellite signals. LiDAR can benefit from nearby structural surfaces, but the dealer should test reflective materials, glass, repeated corridors, sharp corners and the transition from the courtyard into open lawn.
+## What Should a Dealer Prove Before Delivery?
 
-The correct result may be a LiDAR-first mower, a fusion mower or a redesigned work zone. A sensor comparison cannot replace a safe boundary plan near roads, water, retaining walls or public access.
+The useful demonstration starts with the hardest part of the garden. A tidy pass across the open center leaves too many important questions unanswered.
 
-### Narrow passages and multiple zones
+Ask for a site plan showing the open areas, canopy, narrow connections, slopes, high-risk edges and dock. For RTK, add the proposed station or correction service and relevant coverage. For LiDAR, identify the route and surroundings the system must map. This makes the recommendation explainable before money changes hands.
 
-LiDAR and local perception can help a mower understand passages where satellite view is poor. Passage width, turning space, wheel slip and the return route remain mechanical and software constraints.
+Then agree on a short acceptance sequence:
 
-Commission the passage in both directions. Test entry, exit, obstacle response, route recovery and return to charge. A successful manually driven map is not proof that an autonomous task will repeat reliably.
-
-### Open but feature-poor areas
-
-A very large, repetitive or sparsely structured area is a strong reason to test RTK first. A LiDAR-first system may still work, but the acceptance test should examine long-distance localization, loop closure, map drift and repeatable edges rather than assuming that a long advertised range solves the entire geometry problem.
-
-### Mixed properties
-
-Many real properties combine an open front lawn, a tree-covered rear garden, a narrow side passage and a charging station beside the house. These sites are the strongest case for fusion—and the easiest place for a weak fusion implementation to fail.
-
-Map each zone separately in the acceptance plan. Record which positioning layer is expected to lead, where transitions occur and how the mower responds if corrections, geometry, vision or network access become weak.
-
-## Why Fusion Navigation Is Becoming More Important
-
-Current products show that the market is moving beyond a clean RTK-versus-LiDAR split.
-
-Mammotion’s current LUBA 3 range is a useful example. The [official product comparison](https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower) lists LiDAR and dual-camera vision for the 1500-class model, while the 3000- and 5000-class versions add Network RTK. One product family therefore contains both LiDAR-first and LiDAR–RTK–vision configurations.
-
-Navimow creates another distinction. The [i2 LiDAR](https://navimow.segway.com/pages/navimow-i2-lidar-robot-lawn-mower) uses LiDAR and vision, while the [i2 LiDAR Pro](https://navimow.segway.com/products/navimow-i2-lidar-pro-robot-lawn-mower) adds Network RTK to create a three-layer system.
-
-The product name no longer tells the whole architecture. A distributor that trains staff on “LUBA 3” or “Navimow i2” without the suffix, area class and market version can misquote installation requirements and sell the wrong promise.
-
-World Clean Biz’s [LUBA versus Navimow procurement comparison](/blog/luba-vs-navimow-mammotion-ninebot) covers the current model, channel and warranty context. The navigation stack still has to be checked at SKU level.
-
-Fusion should be evaluated as behavior, not a component count:
-
-1. Which sensor establishes the primary position in each zone?
-2. When does the system switch or combine sources?
-3. Does it warn the operator when positioning quality falls?
-4. Does it pause safely, continue, return or wait for recovery?
-5. Can it relocalize without moving the virtual boundary?
-6. Does a network interruption affect positioning, remote control or both?
-7. Is the map preserved after a mower, sensor, station or account replacement?
-
-Three sensors with unclear recovery logic can create more support paths than a simpler system matched correctly to the site.
-
-## Do Not Confuse Positioning, Mapping and Obstacle Avoidance
-
-Marketing pages often place all three capabilities in one graphic. Procurement should separate them.
-
-| Function | Question | Evidence to request |
-|---|---|---|
-| Positioning | Where does the mower believe it is? | Position-quality status, repeatable paths and behavior after interruption |
-| Mapping | How are work areas, no-go zones and transport paths created and stored? | Mapping procedure, editing, backup, restore and transfer process |
-| Boundary control | How closely and repeatedly does it follow the accepted safe edge? | Repeated boundary runs under relevant site conditions |
-| Obstacle detection | What temporary objects can it detect? | Exact sensor set, object test, speed, distance and environmental limits |
-| Safety response | What happens near water, roads, people, pets or drop-offs? | Model manual, risk assessment and site-specific protective measures |
-| Recovery | What happens after signal, map, network or wheel-position loss? | Controlled fault and restart test under the approved procedure |
-
-RTK does not identify a toy merely because it knows the mower’s coordinates. LiDAR does not prove that software can classify a pet merely because it measures a shape. Vision can add classification while creating its own lighting, contamination and data questions.
-
-Treat every capability as a testable requirement.
-
-## Dealer Site Survey Before Quotation
-
-A remote product recommendation based on lawn area alone is inadequate for advanced wire-free mowers.
-
-The survey should record:
-
-- exact address and target market;
-- total area, area per zone and expected daily workload;
-- sky-obstruction map by direction;
-- dense canopy, buildings, eaves, walls and metal structures;
-- local RTK reference-station position, power and mounting options;
-- Network RTK coverage and service terms;
-- Wi-Fi and mobile coverage across the route;
-- narrow passages, corners, gates and hard-surface crossings;
-- large repetitive or feature-poor zones;
-- slopes, cross-slopes, roots, drainage and low-traction surfaces;
-- water, roads, drop-offs and public boundaries;
-- charging-station location, approach and drainage;
-- expected seasonal and landscaping changes;
-- customer account, data and map ownership requirements;
-- installer, maintenance provider, repair location and warranty contact.
-
-For remote sales, require a structured site form, annotated plan, photographs and coverage evidence. A return caused by an unsuitable property is often more expensive than the margin on the mower.
-
-## Commission the System, Not Just the Map
-
-World Clean Biz’s [robot lawn mower installation guide](/blog/robot-lawn-mower-installation) covers the complete installation process. An RTK-versus-LiDAR acceptance should add route-specific evidence.
-
-### Before mapping
-
-- verify the full SKU, firmware and market version;
-- record every included antenna, station, connectivity and service entitlement;
-- document the intended navigation architecture for each zone;
-- agree on physical safety measures that navigation cannot replace.
-
-### During mapping
-
-- save the first accepted site plan and boundary version;
-- record correction, satellite, network or map-quality indicators where available;
-- mark every transition between open and obstructed areas;
-- create no-go zones and transport paths under the exact manual.
-
-### Trial operation
-
-- run the open area, canopy, building edge and narrow passage separately;
-- repeat high-risk boundaries more than once;
-- test docking from different zones;
-- observe behavior when a permitted network or positioning interruption occurs;
-- verify that the mower resumes or stops according to the documented design;
-- check night or low-light operation only for functions the model claims to support;
-- confirm that map edits do not shift previously accepted boundaries.
-
-### Handover
-
-- record firmware, map version, station position and installed accessories;
-- identify account owner, administrator and transfer procedure;
-- document Network RTK, cellular and cloud terms separately;
-- give the customer sensor-cleaning and station-movement restrictions;
-- define when a site change requires recommissioning;
-- obtain customer and installer acceptance.
+1. **Check the complete product.** Record the model, market version, software, included accessories and navigation services.
+2. **Run every distinct zone.** Include the shaded edge, narrow passage and any connection between separate lawns.
+3. **Check repeatability.** Observe boundaries, docking and behavior after an interruption allowed by the manufacturer's procedure.
+4. **Save the accepted setup.** Keep the map, station positions and instructions for changes to the property.
+5. **Confirm the support route.** Identify who handles installation, network or map problems, hardware repairs and account transfer.
 
 ![Robot mower dealer site survey and commissioning workflow covering SKU verification, signal mapping, zone testing, acceptance and digital handover](/images/blog/robot-mower-site-survey-commissioning-workflow.webp)
 
-## Channel and After-Sales Risk
+Our [robot lawn mower installation guide](/blog/robot-lawn-mower-installation) covers the fuller setup process. For this comparison, the outcome is straightforward: the mower should demonstrate that it can complete the agreed route under the site's expected conditions.
 
-### Wrong-site sales become “product defects”
+## Which System Is Likely to Cost Less to Live With?
 
-If a dealer sells an RTK-first mower into a heavily obstructed yard without a survey, repeated positioning loss may return as a warranty claim. If a LiDAR-first mower is sold into a large site without testing map stability and coverage, a localization complaint may follow the same path.
+Include installation and support in the comparison. A local RTK station can add hardware and mounting work. Network RTK can add service dependencies whose terms need checking. A LiDAR system still needs mapping, sensor care and a procedure for recovering or rebuilding a map.
 
-The intake system should classify site-fit, installation, connectivity, map, sensor, traction and hardware cases separately.
+Consider who returns if the mower repeatedly stops behind the house. Is that visit covered as installation support? Does the seller check connectivity before requesting a repair? Who restores the map if the machine is replaced?
 
-### Digital services are part of the product
+For a dealer, those questions affect service workload and margin. For an owner, they determine whether a problem becomes one support call or repeated attempts to explain the garden to different companies.
 
-Network RTK, cloud maps, cellular control, theft tracking and remote diagnostics may have different providers, free periods and transfer rules. Save the terms that applied when the mower was sold.
-
-The contract should state:
-
-- which positioning and connectivity services are included;
-- the duration and renewal path;
-- supported countries and roaming limits;
-- who owns the account and map;
-- what happens if the customer changes installer;
-- how a replacement machine receives the accepted map;
-- what functions remain after a service ends.
-
-### Installation changes need responsibility rules
-
-Moving a local RTK reference station, charging station or high-risk virtual boundary can invalidate the original acceptance. Landscaping can also change canopy and local geometry.
-
-The handover should list customer-permitted changes and changes that require the dealer to inspect or recommission the system.
-
-### Warranty does not replace site acceptance
-
-The manufacturer, importer, seller, installer and authorized repair center may be different entities. The invoice and service agreement should identify:
-
-- contract seller;
-- local importer or regional responsible party;
-- installation provider;
-- warranty intake point;
-- repair location;
-- party paying labor, travel, freight and replacement;
-- responsibility for account and map recovery.
-
-A sensor fault, unsuitable site and incorrect installation require different remedies.
-
-## B2B Procurement Checklist
-
-### Product and navigation
-
-- Full SKU, area class, market version and model year.
-- RTK type: local base, Network RTK or both.
-- LiDAR type, field of view, mounting, cleaning and calibration process.
-- Vision, IMU, odometry and other positioning or safety layers.
-- Primary and fallback localization behavior.
-- Automatic versus manually traced mapping.
-- Map backup, restore, replacement and transfer.
-- Functions available offline.
-
-### Site and installation
-
-- Sky-obstruction and local-geometry survey.
-- Correction and network coverage for every work zone.
-- Reference-station location, power and movement restriction.
-- Charging-station location and return path.
-- Narrow passages, buildings, canopy and feature-poor areas.
-- Water, roads, walls, drop-offs and public access.
-- Seasonal and landscaping changes.
-- Documented commissioning and acceptance criteria.
-
-### Commercial and service
-
-- Authorized territory and sales channel.
-- Manufacturer, importer, seller and warranty provider.
-- Network RTK, 4G, cloud and App service terms.
-- Account, map and diagnostic-data ownership.
-- Installer training and diagnostic access.
-- Sensor, antenna, station and control-board parts.
-- Warranty reimbursement for labor, travel and freight.
-- Recommissioning price after site or hardware changes.
-- Firmware-support and service-continuity plan.
+Choose the system that has a convincing answer for the property and a clear person responsible for making it work. RTK is a strong starting point for open conditions, LiDAR for suitable structured and obstructed spaces, and combined navigation for mixed routes. The final choice should follow what the machine demonstrates across your lawn.
 
 ## FAQ
 
@@ -372,9 +182,3 @@ The sensors provide different references. RTK supplies global positioning, LiDAR
 ### What should a dealer test before delivery?
 
 Test every distinct zone, boundary repeatability, transition areas, docking, recovery after an approved interruption, map continuity, account transfer and the documented fallback behavior. Record the accepted firmware, map and infrastructure.
-
-## Final Answer
-
-Choose an RTK-first robot mower for an open site where the complete work area has reliable satellite and correction conditions. Choose a LiDAR-first mower for a structured, satellite-obstructed site after testing its map, sensor and local-geometry limits. Choose fusion for mixed properties only after verifying transitions and fallback behavior.
-
-For professional procurement, the sensor name is the beginning of the specification. The deliverable is a commissioned system with a verified SKU, accepted map, stable boundaries, documented digital services, recoverable accounts and a clear service owner.
