@@ -68,10 +68,10 @@ test("homepage-owned raster visuals use next/image with explicit responsive size
   );
 });
 
-test("homepage series uses responsive optimization without unconditional priority", () => {
+test("homepage lead image loads eagerly with responsive optimization", () => {
   assert.match(seriesSource, /import Image from "next\/image"/);
   assert.match(seriesSource, /getArticleImage\(/);
-  assert.match(seriesSource, /loading="lazy"/);
+  assert.match(seriesSource, /loading="eager"/);
   assert.match(
     seriesSource,
     /sizes="\(max-width: 1050px\) calc\(100vw - 40px\), 480px"/

@@ -134,3 +134,13 @@ test("Blog emits ItemList only as the CollectionPage main entity", () => {
     /JSON\.stringify\(\[collectionSchema,\s*itemListSchema,/
   );
 });
+
+// Older buying guides normalize to Industry but retain their explicit guide type.
+test("guide intent takes precedence over a legacy category without changing attribution", () => {
+  assert.equal(getBlogCta("Industry", "buying").type, "sourcing");
+  assert.equal(getBlogCta("Floorcare", "sourcing").type, "sourcing");
+  assert.equal(getBlogCta("Industry", "ownership").type, "reports");
+  assert.deepEqual(createBlogCtaContext({ category: "Industry", slug: "legacy-guide", location: "article_footer", guideType: "buying" }), {
+    article_category: "Industry", article_slug: "legacy-guide", cta_location: "article_footer", cta_type: "sourcing"
+  });
+});

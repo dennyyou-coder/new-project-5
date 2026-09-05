@@ -30,7 +30,7 @@ export function HomeSeriesFeature({ article }: { article: Insight }) {
           width={cover.width}
           height={cover.height}
           sizes="(max-width: 1050px) calc(100vw - 40px), 480px"
-          loading="lazy"
+          loading="eager"
           decoding="async"
         />
       </div>
