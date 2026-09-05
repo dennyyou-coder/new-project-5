@@ -8659,7 +8659,7 @@
 .sourcing-selector-thumbnails button { width: 100%; padding: 8px; border: 1px solid #d5dee6; border-radius: 12px; background: #fff; text-align: left; cursor: pointer; }
 .sourcing-selector-thumbnails button[aria-pressed="true"] { border: 2px solid #287bd6; background: #f1f7fd; }
 .sourcing-selector-thumbnails button:focus-visible { outline: 3px solid rgba(40,123,214,.35); outline-offset: 2px; }
-.sourcing-selector-thumbnails img { width: 100%; aspect-ratio: 3 / 2; object-fit: contain; display: block; border-radius: 7px; background: #dce5e0; }
+.sourcing-selector-thumbnails img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; display: block; border-radius: 7px; background: #dce5e0; }
 .sourcing-selector-thumbnails strong, .sourcing-selector-thumbnails span { display: block; margin-top: 5px; color: #0f2747; }
 .sourcing-selector-thumbnails span { margin-top: 1px; font-size: .76rem; color: #596c7e; }
 .sourcing-selector-swipe-hint { display: none; }

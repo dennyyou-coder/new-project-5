@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     description:
       "Meet cleaning appliance brands, manufacturers, supply-chain companies and industry professionals in Suzhou, China.",
     url: "/wcb-expo",
-    images: ["/images/site-refresh/2026-09-commercial/13-expo-scene.webp"]
+    images: ["/images/site-refresh/2026-09-products/expo-wide.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "2026 WCB International Cleaning Appliance Expo",
     description: "18–20 November 2026 · Suzhou, China",
-    images: ["/images/site-refresh/2026-09-commercial/13-expo-scene.webp"]
+    images: ["/images/site-refresh/2026-09-products/expo-wide.webp"]
   }
 };
 
