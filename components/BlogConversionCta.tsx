@@ -6,14 +6,16 @@ import { createBlogCtaContext, getBlogCta } from "@/lib/blogConversion";
 export function BlogConversionCta({
   category,
   slug,
+  guideType,
   location = "article_footer"
 }: {
   category: string;
   slug: string;
+  guideType?: string;
   location?: string;
 }) {
-  const cta = getBlogCta(category);
-  const context = createBlogCtaContext({ category, slug, location });
+  const cta = getBlogCta(category, guideType);
+  const context = createBlogCtaContext({ category, slug, location, guideType });
   return (
     <aside
       aria-labelledby="blog-conversion-title"

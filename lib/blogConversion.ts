@@ -71,7 +71,8 @@ const REPORT_CATEGORIES = new Set([
   "Robotic Mowers"
 ]);
 
-export function getBlogCta(category: string): BlogCtaDefinition {
+export function getBlogCta(category: string, guideType?: string): BlogCtaDefinition {
+  if (guideType === "buying" || guideType === "sourcing") return CTA_BY_TYPE.sourcing;
   if (SOURCING_CATEGORIES.has(category)) return CTA_BY_TYPE.sourcing;
   if (REPORT_CATEGORIES.has(category)) return CTA_BY_TYPE.reports;
   if (category === "Trade Shows") return CTA_BY_TYPE.expo;
@@ -81,16 +82,18 @@ export function getBlogCta(category: string): BlogCtaDefinition {
 export function createBlogCtaContext({
   category,
   slug,
-  location
+  location,
+  guideType
 }: {
   category: string;
   slug: string;
   location: string;
+  guideType?: string;
 }) {
   return {
     article_category: category,
     article_slug: slug,
     cta_location: location,
-    cta_type: getBlogCta(category).type
+    cta_type: getBlogCta(category, guideType).type
   };
 }

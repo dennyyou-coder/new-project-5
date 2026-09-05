@@ -334,6 +334,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
           <BlogConversionCta
             category={article.category}
+            guideType={isGuide ? article.guideType : undefined}
             location="article_footer"
             slug={article.slug}
           />
