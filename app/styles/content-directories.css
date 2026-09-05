@@ -633,20 +633,6 @@
 .sourcing-opportunity-section .container,
 .sourcing-rule-section .container {
     width: min(100% - 40px, 1160px);
-  }.header-inner {
-    height: auto;
-    padding: 16px 0;
-    align-items: flex-start;
-    flex-direction: column;
-  }.header-actions {
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-  }.nav {
-    width: 100%;
-    overflow-x: auto;
-    padding-bottom: 4px;
   }.hero-grid,
 .expo-hero-grid,
 .expo-intro-layout,
@@ -853,8 +839,6 @@
   }.testimonial-person img {
     width: 48px;
     height: 48px;
-  }.header-inner {
-    padding: 14px 0;
   }.brand-wcb-block {
     width: 44px;
     height: 34px;

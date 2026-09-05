@@ -97,7 +97,10 @@ export default async function BrandPage({ params }: PageProps) {
 
   return (
     <div className="guides-hub brand-hub brand-detail">
-      <BrandHero profile={data.profile} />
+      <BrandHero
+        profile={data.profile}
+        hasAnalysis={data.primaryArticles.length > 0 || data.relatedArticles.length > 0}
+      />
       <BrandSections
         profile={data.profile}
         allowedCompetitorSlugs={publishedBrandSlugs}
