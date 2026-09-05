@@ -556,3 +556,14 @@ button.contact-help-card > .contact-help-card-copy > span {
     grid-template-columns: 1fr;
   }
 }
+
+.page-hero-contact.contact-visual-refresh {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, .97) 0%, rgba(255, 255, 255, .92) 52%, rgba(255, 255, 255, .2) 100%), url("/images/site-refresh/2026-09-commercial/12-project-coordination.webp");
+  background-size: cover;
+  background-position: center, right center;
+}
+@media (max-width: 800px) {
+  .page-hero-contact.contact-visual-refresh {
+    background-image: linear-gradient(rgba(255, 255, 255, .94), rgba(255, 255, 255, .94)), url("/images/site-refresh/2026-09-commercial/12-project-coordination-800.webp");
+  }
+}

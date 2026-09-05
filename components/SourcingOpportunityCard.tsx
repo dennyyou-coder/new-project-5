@@ -1,5 +1,6 @@
 "use client";
 
+import { siteVisualProps } from "@/lib/siteVisuals";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { InlineIcon } from "@/components/Icon";
@@ -63,7 +64,7 @@ export function SourcingOpportunityCard({
       onClick={() => trackLeadEvent("cta_click", getAttribution(item))}
     >
       <span className="sourcing-opportunity-category-image">
-        <img src={item.image} alt={`${item.title} opportunity area`} loading="lazy" decoding="async" />
+        <img {...siteVisualProps(item.image, "(max-width: 760px) 100vw, 33vw")} alt={`${item.title} opportunity area`} loading="lazy" decoding="async" />
       </span>
       <span className="sourcing-opportunity-category-copy">
         <span>

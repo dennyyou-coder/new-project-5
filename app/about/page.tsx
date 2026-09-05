@@ -1,3 +1,4 @@
+import { siteVisualProps } from "@/lib/siteVisuals";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "../styles/about.css";
@@ -86,7 +87,7 @@ const businessPillars = [
     eyebrow: "READ THE MARKET",
     title: "Industry Intelligence",
     text: "Articles and reports that help companies understand category movement, product opportunities and China supply-chain signals.",
-    image: "/images/site-refresh/real/city-architecture.webp",
+    image: "/images/site-refresh/2026-09-commercial/08-market-research.webp",
     href: "/reports",
     cta: "Explore Market Reports"
   },
@@ -94,7 +95,7 @@ const businessPillars = [
     eyebrow: "TURN SIGNALS INTO PRODUCTS",
     title: "Product & Sourcing Opportunities",
     text: "Product judgment, supplier access and project execution for overseas brands, importers and distributors.",
-    image: "/images/site-refresh/real/product-detail.webp",
+    image: "/images/site-refresh/2026-09-commercial/09-prototype-review.webp",
     href: "/sourcing",
     cta: "Explore Sourcing"
   },
@@ -102,7 +103,7 @@ const businessPillars = [
     eyebrow: "CONNECT THE INDUSTRY",
     title: "WCB Expo & Business Connections",
     text: "A platform for products, companies, buyers, forums and commercial conversations across the cleaning industry.",
-    image: "/images/site-refresh/real/exhibition-hall.webp",
+    image: "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
     href: "/wcb-expo",
     cta: "Explore WCB Expo"
   }
@@ -231,7 +232,7 @@ export default function AboutPage() {
               investors, experts and media.
             </p>
             <div className="about-network-reach-image">
-              <img src="/images/site-refresh/real/business-office.webp" alt="Professional product and project review" />
+              <img {...siteVisualProps("/images/site-refresh/2026-09-commercial/12-project-coordination.webp")} alt="Professional product and project review" />
             </div>
           </div>
           <div className="about-network-group-grid">
@@ -259,7 +260,7 @@ export default function AboutPage() {
           <div className="about-network-pillar-grid">
             {businessPillars.map((item) => (
               <article key={item.title}>
-                <img src={item.image} alt="" />
+                <img {...siteVisualProps(item.image, "(max-width: 760px) 100vw, 33vw")} alt="" />
                 <div>
                   <p className="eyebrow">{item.eyebrow}</p>
                   <h3>{item.title}</h3>

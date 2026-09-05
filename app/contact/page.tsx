@@ -34,7 +34,7 @@ const inquiryContext = [
 export default function ContactPage() {
   return (
     <>
-      <section className="page-hero page-hero-contact">
+      <section className="page-hero page-hero-contact contact-visual-refresh">
         <div className="container">
           <p className="eyebrow">Contact World Clean Biz</p>
           <h1>

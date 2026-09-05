@@ -1,3 +1,4 @@
+import { siteVisualProps } from "@/lib/siteVisuals";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "../styles/wcb-expo.css";
@@ -13,50 +14,50 @@ export const metadata: Metadata = {
     description:
       "Meet cleaning appliance brands, manufacturers, supply-chain companies and industry professionals in Suzhou, China.",
     url: "/wcb-expo",
-    images: ["/images/expo/wcb-expo-2026-hero.webp"]
+    images: ["/images/site-refresh/2026-09-commercial/13-expo-scene.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "2026 WCB International Cleaning Appliance Expo",
     description: "18–20 November 2026 · Suzhou, China",
-    images: ["/images/expo/wcb-expo-2026-hero.webp"]
+    images: ["/images/site-refresh/2026-09-commercial/13-expo-scene.webp"]
   }
 };
 
 const categories = [
   {
     title: "Robot Vacuums",
-    image: "/images/expo/expo-category-robotic-vacuums.webp",
+    image: "/images/site-refresh/2026-09-commercial/01-robot-vacuum.webp",
     alt: "Robot vacuum product category"
   },
   {
     title: "Floor Washers",
-    image: "/images/expo/expo-category-floor-washers.webp",
+    image: "/images/site-refresh/2026-09-commercial/02-floor-washer.webp",
     alt: "Wet and dry floor washer product category"
   },
   {
     title: "Vacuum Cleaners",
-    image: "/images/sourcing/vacuum-cleaners.webp",
+    image: "/images/site-refresh/2026-09-commercial/06-vacuum-cleaner.webp",
     alt: "Cordless vacuum cleaner product category"
   },
   {
     title: "Pool Robots",
-    image: "/images/expo/expo-category-pool-cleaners.webp",
+    image: "/images/site-refresh/2026-09-commercial/03-pool-robot.webp",
     alt: "Robotic pool cleaner product category"
   },
   {
     title: "Lawn Robots",
-    image: "/images/expo/expo-category-lawn-robots.webp",
+    image: "/images/site-refresh/2026-09-commercial/04-lawn-robot.webp",
     alt: "Robotic lawn mower product category"
   },
   {
     title: "Commercial Cleaning",
-    image: "/images/expo/expo-category-commercial-cleaning.webp",
+    image: "/images/site-refresh/2026-09-commercial/05-commercial-cleaning.webp",
     alt: "Commercial cleaning equipment category"
   },
   {
     title: "Components & Accessories",
-    image: "/images/expo/expo-category-components-technology.webp",
+    image: "/images/site-refresh/2026-09-commercial/15-components-detail.webp",
     alt: "Cleaning appliance components and accessories"
   }
 ];
@@ -282,7 +283,7 @@ export default function WcbExpoPage() {
           <div className="wcb-expo-category-grid">
             {categories.map((category) => (
               <article className="wcb-expo-category-card" key={category.title}>
-                <img src={category.image} alt={category.alt} loading="lazy" />
+                <img {...siteVisualProps(category.image, "(max-width: 760px) 100vw, 33vw")} alt={category.alt} loading="lazy" />
                 <strong>{category.title}</strong>
               </article>
             ))}

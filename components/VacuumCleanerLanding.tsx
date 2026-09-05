@@ -1,3 +1,4 @@
+import { siteVisualProps } from "@/lib/siteVisuals";
 import Image from "next/image";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
@@ -68,7 +69,7 @@ export function VacuumCleanerLanding({ product }: { product: SourcingProduct }) 
             </div>
             <p className="sourcing-lawn-hero-fit">For brands, importers, distributors and retailers deciding where to compete in vacuum cleaners—and which product platform can support that position.</p>
           </div>
-          <img src={product.image} alt={product.imageAlt} fetchPriority="high" decoding="async" />
+          <img {...siteVisualProps(product.image, "(max-width: 760px) 100vw, 50vw")} alt={product.imageAlt} fetchPriority="high" loading="eager" decoding="async" />
         </div>
       </section>
 
