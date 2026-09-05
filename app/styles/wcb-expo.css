@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   background-color: #03152f;
-  background-image: linear-gradient(90deg, rgba(3, 21, 47, .94) 0%, rgba(3, 21, 47, .83) 40%, rgba(3, 21, 47, .16) 78%), url("/images/site-refresh/2026-09-commercial/13-expo-scene.webp");
+  background-image: linear-gradient(90deg, rgba(3, 21, 47, .94) 0%, rgba(3, 21, 47, .83) 40%, rgba(3, 21, 47, .16) 78%), url("/images/site-refresh/2026-09-products/expo-wide.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -701,6 +701,6 @@
 
 @media (max-width: 800px) {
   .wcb-expo-hero {
-    background-image: linear-gradient(90deg, rgba(3, 21, 47, .94), rgba(3, 21, 47, .78)), url("/images/site-refresh/2026-09-commercial/13-expo-scene-800.webp");
+    background-image: linear-gradient(90deg, rgba(3, 21, 47, .94), rgba(3, 21, 47, .78)), url("/images/site-refresh/2026-09-products/expo-home-800.webp");
   }
 }

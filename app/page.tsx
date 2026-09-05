@@ -227,10 +227,10 @@ export default function HomePage() {
           </div>
           <div className="home-v9-expo-campaign-media">
             <Image
-              src="/images/site-refresh/2026-09-commercial/13-expo-scene.webp"
-              alt="WCB Expo visual showing cleaning appliances and an industry exhibition setting"
-              width={1536}
-              height={1024}
+              src="/images/site-refresh/2026-09-products/expo-home.webp"
+              alt="Cleaning appliances presented on display plinths in a modern exhibition booth"
+              width={1254}
+              height={1254}
               sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1180px) 40vw, 480px"
               loading="lazy"
               decoding="async"
