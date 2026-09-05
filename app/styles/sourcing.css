@@ -8435,10 +8435,10 @@
 .sourcing-opportunity-signal-grid h3 { margin: 0; font-size: 17px; }
 .sourcing-opportunity-signal-grid p { margin: 7px 0 0; color: var(--so-muted); line-height: 1.45; }
 .sourcing-opportunity-denny-method figure { margin: 0; border-radius: 8px; background: var(--so-navy); overflow: hidden; }
-.sourcing-opportunity-denny-method figure img { display: block; width: 100%; aspect-ratio: 1.05 / 1; object-fit: cover; }
+.sourcing-opportunity-denny-method figure img { display: block; width: 100%; height: auto; aspect-ratio: 1.05 / 1; object-fit: cover; }
 .sourcing-opportunity-denny-method figcaption { color: #fff; line-height: 1.45; padding: 17px 19px; }
 
-.sourcing-opportunity-shortlist { background: linear-gradient(135deg,#071f47,#0b3d83); color: #fff; }
+.sourcing-opportunity-page .sourcing-opportunity-shortlist { background: linear-gradient(135deg,#071f47,#0b3d83); color: #fff; }
 .sourcing-opportunity-shortlist h2 { color: #fff; }
 .sourcing-opportunity-shortlist .sourcing-opportunity-eyebrow { color: #8eb3ff; }
 .sourcing-opportunity-shortlist > .sourcing-opportunity-shell { border-color: rgba(255,255,255,.18); background: rgba(255,255,255,.06); box-shadow: 0 22px 52px rgba(3,18,45,.28); }
@@ -8504,7 +8504,7 @@
 .sourcing-opportunity-team ul { margin: 20px 0; padding-left: 20px; color: #294866; line-height: 1.7; }
 .sourcing-opportunity-team a { color: var(--so-blue); font-weight: 850; text-decoration: none; }
 
-.sourcing-opportunity-final-cta { background: linear-gradient(135deg,#061d43,#0b3a7e); color: #fff; }
+.sourcing-opportunity-page .sourcing-opportunity-final-cta { background: linear-gradient(135deg,#061d43,#0b3a7e); color: #fff; }
 .sourcing-opportunity-final-cta-card { max-width: 880px; text-align: center; }
 .sourcing-opportunity-final-cta .sourcing-opportunity-eyebrow { color: #8eb3ff; }
 .sourcing-opportunity-final-cta h2 { color: #fff; }
