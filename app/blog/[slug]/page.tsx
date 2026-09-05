@@ -16,6 +16,7 @@ import {
   getRelatedEditorialInsights,
   orderSeriesInsights
 } from "@/lib/insightCollections";
+import { addArticleContents, getTopicReading } from "@/lib/articleExperience";
 import { seoDescription, seoTitle } from "@/lib/seo";
 
 type Props = {
@@ -141,7 +142,7 @@ export default async function InsightDetailPage({ params }: Props) {
     notFound();
   }
 
-  const related = getRelatedEditorialInsights(articles, article, 3);
+  const related = getTopicReading(articles, article, getRelatedEditorialInsights(articles, article, 3));
   const publishedBrandProfiles = getPublishedBrandProfiles(articles);
   const seriesArticles = article.series
     ? orderSeriesInsights(
@@ -160,6 +161,7 @@ export default async function InsightDetailPage({ params }: Props) {
     article.title,
     article.coverImage
   );
+  const reading = addArticleContents(markdownToHtml(articleContent));
   const url = `${siteUrl}/blog/${article.slug}`;
   const isGuide = article.contentClass === "search" && article.guideType;
   const collectionHref = isGuide ? `/guides/${article.guideType}` : "/blog";
@@ -235,6 +237,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
   return (
     <>
+      <div className="article-reading-experience">
       <section className="blog-article-hero">
         <div className="blog-article-container">
           <nav className="blog-visible-breadcrumb" aria-label="Breadcrumb">
@@ -289,11 +292,18 @@ export default async function InsightDetailPage({ params }: Props) {
               </div>
             ) : null}
 
-            <div
-              dangerouslySetInnerHTML={{
-                __html: markdownToHtml(articleContent)
-              }}
-            />
+            {reading.sections.length >= 3 ? (
+              <details className="blog-contents">
+                <summary>In this article <span>{reading.sections.length} sections</span></summary>
+                <nav aria-label="Article contents">
+                  <ol>{reading.sections.map((section) => (
+                    <li key={section.id}><a href={`#${section.id}`} dangerouslySetInnerHTML={{ __html: section.labelHtml }} /></li>
+                  ))}</ol>
+                </nav>
+              </details>
+            ) : null}
+
+            <div className="blog-reading-body" dangerouslySetInnerHTML={{ __html: reading.content }} />
 
             <ArticleShareActions title={article.title} url={url} />
 
@@ -309,7 +319,7 @@ export default async function InsightDetailPage({ params }: Props) {
                 </div>
               ) : null}
               <div className="blog-author-bio-box">
-                <img src="/images/site-refresh/about/about-hero-denny.webp" alt={`${article.author}, founder of World Clean Biz`} loading="lazy" decoding="async" />
+                <img src="/images/site-refresh/about/about-hero-denny.webp" width={1600} height={1200} alt={`${article.author}, founder of World Clean Biz`} loading="lazy" decoding="async" />
                 <div>
                   <strong>{article.author}</strong>
                   <span>Founder, World Clean Biz · Organizer, WCB Expo</span>
@@ -321,6 +331,12 @@ export default async function InsightDetailPage({ params }: Props) {
               </div>
             </footer>
           </article>
+
+          <BlogConversionCta
+            category={article.category}
+            location="article_footer"
+            slug={article.slug}
+          />
 
         {article.seriesTitle && seriesArticles.length ? (
           <section className="blog-series-navigation" id="series-episodes" aria-labelledby="series-episodes-title">
@@ -366,7 +382,7 @@ export default async function InsightDetailPage({ params }: Props) {
         {related.length ? (
           <section className="blog-related-signals" aria-labelledby="continue-reading-title">
             <div className="blog-related-signals-heading">
-              <p>Selected analysis from across the cleaning industry</p>
+              <p>More on the companies, products and themes in this article</p>
               <h2 id="continue-reading-title">Continue Reading</h2>
             </div>
             <div className="related-signal-grid">
@@ -393,14 +409,17 @@ export default async function InsightDetailPage({ params }: Props) {
           </section>
         ) : null}
 
-          <BlogConversionCta
-            category={article.category}
-            location="article_footer"
-            slug={article.slug}
-          />
+          <nav className="blog-topic-paths" aria-label="Explore industry resources">
+            <strong>Keep exploring</strong>
+            <Link href={collectionHref}>{isGuide ? "More in this guide collection" : "All industry analysis"} <span aria-hidden="true">→</span></Link>
+            <Link href="/brands">Brand intelligence <span aria-hidden="true">→</span></Link>
+            <Link href="/guides">Practical buying &amp; sourcing guides <span aria-hidden="true">→</span></Link>
+          </nav>
+
         </div>
       </section>
 
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

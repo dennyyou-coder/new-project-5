@@ -164,15 +164,15 @@ export default function HomePage() {
         <div className="home-v9-container home-v9-hero-grid">
           <div className="home-v9-hero-copy">
             <p className="home-v9-eyebrow">Global Cleaning Appliances, Robotics & Smart Equipment</p>
-            <h1>See What&apos;s Changing Across The Products Reshaping Cleaning.</h1>
+            <h1>Understand the industry.<span>Find your next opportunity.</span></h1>
             <p className="home-v9-hero-intro">
-              Market intelligence, sourcing connections and industry access across
-              robot vacuums, floor washers, pool robots, robotic lawn mowers,
-              commercial cleaning robots and emerging categories.
+              Industry analysis, product opportunities and business connections
+              across the global cleaning supply chain. Know what is changing
+              and what it means for your next decision.
             </p>
             <div className="home-v9-actions">
-              <Link className="button" href="/sourcing">Start A Sourcing Inquiry</Link>
-              <HomeUpdatesForm />
+              <Link className="button" href="#featured-analysis">Explore Industry Analysis</Link>
+              <Link className="button-secondary" href="/sourcing">Start A Sourcing Inquiry</Link>
             </div>
           </div>
 
@@ -196,6 +196,45 @@ export default function HomePage() {
               ))}
             </div>
           )}
+        </div>
+      </section>
+
+      <nav className="home-v9-intent-nav home-v9-container" aria-label="Explore World Clean Biz">
+        <Link href="/blog"><span>01 / Intelligence</span><strong>Read the industry <b aria-hidden="true">↗</b></strong><p>Analysis, companies and market shifts</p></Link>
+        <Link href="/sourcing"><span>02 / Product &amp; Sourcing</span><strong>Find your next product <b aria-hidden="true">↗</b></strong><p>Product directions and supplier support</p></Link>
+        <Link href="/wcb-expo"><span>03 / WCB Expo</span><strong>Meet the industry <b aria-hidden="true">↗</b></strong><p>People, products and business connections</p></Link>
+      </nav>
+
+      <section className="home-v9-section home-v9-proof" id="featured-analysis">
+        <div className="home-v9-container">
+          <div className="home-v9-proof-head">
+            <div className="home-v9-heading">
+              <p className="home-v9-eyebrow">Industry Intelligence</p>
+              <h2>A Closer Look At What Matters</h2>
+            </div>
+            <Link className="home-v9-inline-link" href="/blog">View All Insights →</Link>
+          </div>
+          <div className="home-v9-proof-grid">
+            <div className="home-v9-article-grid">
+              {featuredInsights.map((article, index) => (
+                <Link className="home-v9-article" href={`/blog/${article.slug}`} key={article.slug}>
+                  <img {...articleImageProps(article, index)} alt={`${article.title} cover image`} />
+                  <div>
+                    <span>{article.category}</span>
+                    <h3>{article.title}</h3>
+                    <p>{excerptFor(article)}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <aside className="home-v9-report">
+              <p>Featured Report</p>
+              <span>2026</span>
+              <h3>Global Cleaning Industry Report</h3>
+              <div>Market direction, category movement and the business signals shaping the next cleaning industry cycle.</div>
+              <Link className="button" href="/reports">Explore The Report</Link>
+            </aside>
+          </div>
         </div>
       </section>
 
@@ -487,39 +526,6 @@ export default function HomePage() {
               <TallyButton ctaLocation="home_wce_exhibitor" form="wceExhibitor" inquiryIntent="exhibitor_interest">Exhibit / Partner</TallyButton>
               <TallyButton className="button-secondary" ctaLocation="home_wce_visitor" form="wceVisitor" inquiryIntent="visitor_interest">Visit / Updates</TallyButton>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="home-v9-section home-v9-proof">
-        <div className="home-v9-container">
-          <div className="home-v9-proof-head">
-            <div className="home-v9-heading">
-              <p className="home-v9-eyebrow">Industry Intelligence</p>
-              <h2>Signals And Research You Can Use</h2>
-            </div>
-            <Link className="home-v9-inline-link" href="/blog">View All Insights →</Link>
-          </div>
-          <div className="home-v9-proof-grid">
-            <div className="home-v9-article-grid">
-              {featuredInsights.map((article, index) => (
-                <Link className="home-v9-article" href={`/blog/${article.slug}`} key={article.slug}>
-                  <img {...articleImageProps(article, index)} alt={`${article.title} cover image`} />
-                  <div>
-                    <span>{article.category}</span>
-                    <h3>{article.title}</h3>
-                    <p>{excerptFor(article)}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <aside className="home-v9-report">
-              <p>Featured Report</p>
-              <span>2026</span>
-              <h3>Global Cleaning Industry Report</h3>
-              <div>Market direction, category movement and the business signals shaping the next cleaning industry cycle.</div>
-              <Link className="button" href="/reports">Explore The Report</Link>
-            </aside>
           </div>
         </div>
       </section>

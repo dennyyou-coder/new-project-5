@@ -35,7 +35,11 @@ test("maps market content to reports", () => {
     "Industry",
     "Supply Chain",
     "Supply Chain Analysis",
-    "Commercial Cleaning"
+    "Commercial Cleaning",
+    "Floorcare",
+    "Vacuum",
+    "Pool Cleaning",
+    "Robotic Mowers"
   ]) {
     assert.equal(getBlogCta(category).type, "reports");
   }
@@ -43,7 +47,7 @@ test("maps market content to reports", () => {
 
 test("maps trade shows to expo and unknown categories to newsletter", () => {
   assert.equal(getBlogCta("Trade Shows").type, "expo");
-  assert.equal(getBlogCta("Floorcare").type, "newsletter");
+  assert.equal(getBlogCta("Uncategorized").type, "newsletter");
 });
 
 test("creates stable article analytics context", () => {
