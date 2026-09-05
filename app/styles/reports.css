@@ -1,4 +1,17 @@
 /* Reports library */
+.reports-library-page .reports-container {
+  width: min(1160px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.reports-library-page .reports-kicker {
+  margin: 0 0 14px;
+  color: var(--rl-blue);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .reports-library-page {
   --rl-ink: #0b1f3a;
   --rl-blue: #1762f6;

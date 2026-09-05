@@ -19,12 +19,6 @@
   "logoSourceUrl": "https://www.miele.com/en/com/",
   "contentVisuals": [
     {
-      "placement": "ownership",
-      "src": "/images/blog/miele-family-company-manufacturing-map.webp",
-      "alt": "Map of Miele and Zinkann family ownership, management and production responsibilities",
-      "caption": "This map separates the founding families, legal entities, management, business units, regional companies and manufacturing sites."
-    },
-    {
       "placement": "portfolio",
       "src": "/images/blog/miele-duoflex-hx2-floor-washer-comparison.webp",
       "alt": "Miele Duoflex HX2 floor washer and cordless vacuum system comparison",

@@ -8,7 +8,7 @@ import { getBrandCategoryForProfile } from "@/lib/brandCategories";
 import { BrandDataTable } from "./BrandDataTable";
 import { BrandLogo } from "./BrandLogo";
 
-export function BrandHero({ profile }: { profile: BrandProfile }) {
+export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; hasAnalysis: boolean }) {
   const category = getBrandCategoryForProfile(profile.slug);
   const legalName = normalizeOptionalBrandText(profile.legalName);
   const legalEntityNote = normalizeOptionalBrandText(profile.legalEntityNote);
@@ -117,7 +117,7 @@ export function BrandHero({ profile }: { profile: BrandProfile }) {
           <a href="#manufacturing-channels">Supply Chain</a>
           <a href="#competitive-position">Competition</a>
           <a href="#timeline">Timeline</a>
-          <a href="#analysis">Analysis</a>
+          {hasAnalysis ? <a href="#analysis">Analysis</a> : null}
           <a href="#sources">Sources</a>
         </nav>
       </div>
