@@ -1816,6 +1816,726 @@
         "outputHash": "sha256:c09c9704b71be1f6ea4a1811ab0dfae4cac80890fcaa7d171593528e7835e909"
       }
     },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 117572,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c17ba6ecc01512f0cf339b6c142d29817a5cf8a0c631a75c44eb733fd6724079",
+      "outputHash": "sha256:97ec07ba875bacc9d8ef306729741358392d4d308cce7f7e0b965d26c9a050c6",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 44410,
+        "outputHash": "sha256:4effea5df3fd2342f4ae4fdecc8840b2ed4f7745594c88b85a3491b158f540e0"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/02-roborock-floor-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 52560,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:797185b53b16e252ad263cd473690fd8f830f1d551d0cf8f5ca13d0c39739c46",
+      "outputHash": "sha256:85b4ffcaed3a3b1f9e6880a9671e97173cab716a514462e83cf8705813233559",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/02-roborock-floor-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 21244,
+        "outputHash": "sha256:671cd920515efc3c3bc3c646072cb4bb46e360f38e2e2427252330dcbbabc92e"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/03-roborock-robots-outdoor-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 57212,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:efb304e1e60f622df6dff48e936df6a48e1ee09516045f334f17117d644008bb",
+      "outputHash": "sha256:976f4507fdf4153bf79f852cb6b29ccf82a25a3ffe16c8ae3f7009d190b327ee",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/03-roborock-robots-outdoor-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 22452,
+        "outputHash": "sha256:7f4f2d1254d553db412690bce2da47a68cbaa805f72af70e5229df2e43b321c1"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/04-dreame-robots-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 67090,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:bd4e65877c1f3bcb84e04bd0e2089f6f8ad58eb8f175e56881dcb2107927361c",
+      "outputHash": "sha256:db1cb00668856814a69f663d744d6d60ffa9a35b17a95cfbfc59b17065f7c099",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/04-dreame-robots-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 26950,
+        "outputHash": "sha256:cb578c4fcf1e87016ff27843cdaa0280052c78848af7bd1aa61f59605b229c19"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/05-dreame-wet-dry-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 55510,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:4676462154a2ffd4c375f616b9bd153a99991c8af6903a446f09977f58427039",
+      "outputHash": "sha256:cda4881bd566d410cb55cc2b62694bc459a5459b68c967276e93e034ef5deb0f",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/05-dreame-wet-dry-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 22182,
+        "outputHash": "sha256:9eb36f784c8b38b88401e59966cbfd02fa6cd1118431a990d83e80759557ba2d"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/06-dreame-vacuums-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 70762,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:3e121489cf968c5ffdd7853bce51094e515182e6680220d1f409b1ec6f23557e",
+      "outputHash": "sha256:631ed94430fbccb8f2b96066346540e06a85809427b7b01187a6904c63eba20c",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/06-dreame-vacuums-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 25632,
+        "outputHash": "sha256:dc100eb8d95b491dfc5e5f4dac82b0ad8292079c82a80345b43f7df55d14c7e7"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/07-dreame-prototypes-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 79974,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:a5d41f933fa4118c3ca115567516bc14b5a05a28e6ffe14128f5c398457db656",
+      "outputHash": "sha256:6afe434c6f958839582cfd6b9ea58fbdfe9ef86a3eef8c0aa8d5672b8f449aca",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/07-dreame-prototypes-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 30070,
+        "outputHash": "sha256:b456ace8e30654ae242778669e91c3234d034d937afb4130c66a2ce3824e9347"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/08-dreame-window-garden-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 69584,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:e2816d752283340350ac99d1995311369ea7d5d3f50cfd09f1f4ce5a8b1e401e",
+      "outputHash": "sha256:166d4d125a377e608b4783a8d76adb558db0d68b9ef5671e7e6b2b8ce3da72df",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/08-dreame-window-garden-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 26684,
+        "outputHash": "sha256:24fdbb63c31613814d76c144ce732a6657cb2d579fda7a75b53d5a6de344789f"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/09-ecovacs-floor-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 54252,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:d102501bde4e43e3f28458f1631e6877707152963422c0b814910ba8586c9dfd",
+      "outputHash": "sha256:55bd61580fe13fc8482215b6ca08f52fd78346cbf6bfee5d560d8d4ccff4720a",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/09-ecovacs-floor-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 21294,
+        "outputHash": "sha256:b2e23fdedd0845062e6d8423a7563b61d3fa83ece05f0f4769220b108fc53f86"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/10-ecovacs-window-outdoor-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 60602,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:4ad8478ba689c1712b189fd8c2fd472de094c55246f6ddbd1508a9a36ffe1349",
+      "outputHash": "sha256:2ccb168588d6753440b59db23f06a4a959db2ef2b718b47f87f7587119f3e978",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/10-ecovacs-window-outdoor-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 24368,
+        "outputHash": "sha256:8d9b83bc002fd70255555e5a67b8322f7354982802e820476b8eca37f6b29ef3"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/11-tineco-new-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 62078,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:4d7d59401c8c2c73f619ca3bd00c01e3848d3f45360c8f4f80ca4ae254cdec9d",
+      "outputHash": "sha256:6270d480521ae77a63573edf814d377ecd49377edee9a706a1c7f0b565a98d4b",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/11-tineco-new-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 25270,
+        "outputHash": "sha256:e12726b9e2bcfe2cca014f0a283a587020f5f3cffcd5561349abcc1a80303a56"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/12-tineco-existing-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 51506,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:fcbde438c9997d2a9085845e41d585e76518ed33933952429fab08af9a7de0a5",
+      "outputHash": "sha256:fb5476ab79643e071110ae5f28746db13c3faa854cbbe32fd8d3f1fee3eed1ef",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/12-tineco-existing-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 20446,
+        "outputHash": "sha256:f9b7719b03dbcbce5876d17fca1b9c6d48b009b4b5ded1bf67554d07d497f4e5"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/13-mova-floor-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 58256,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:fdbe0d21cf5bc4e44420d6f449f564c56e98cf5134d5a18def2c93825430a563",
+      "outputHash": "sha256:9705aeb0833e967a2808f126f9da905ad289d1bf12c6efc94f01b86c078d5ac8",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/13-mova-floor-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 21934,
+        "outputHash": "sha256:970cb4343a9bfd64474af612387fdfb0b153303e6b2db46c6c5acf9ece00e25f"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/14-mova-outdoor-tech-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 69628,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:3d03e98d0b0a4f92d931cae486434fdda45a24bac282fc5196b333889e3d23a3",
+      "outputHash": "sha256:19f99a420b6e6590448d20a1be1edeb8e6ef022af1674d5dd8f72e31190a73d2",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/14-mova-outdoor-tech-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 23250,
+        "outputHash": "sha256:36ed172fa04daed10cf3bbc9e7114c4850d3761ccc7b0dffc528532fd9cdb631"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/15-mova-research-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 67536,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:98598b3f60afb368e8a33da3168e57aabc434810277fa7fd96d3b80e1a6f41b7",
+      "outputHash": "sha256:3a5e8794305938b865421c8ebae4dc627ea2e554e079b6e189e8a86c99988c24",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/15-mova-research-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 24638,
+        "outputHash": "sha256:c9b1ba8dc0c29e60356070440346af0104240b61db3b4aa9e2d98b7fbedab1d3"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/16-narwal-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 66124,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:9c23ec037919909e01d22ea36a07438309027086e378872a792bc32403c73619",
+      "outputHash": "sha256:0cdeb6c3df460863affdff44f1376501048cd1983f2f13d05e812669393d1844",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/16-narwal-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 24556,
+        "outputHash": "sha256:7379bae07f052f6d2e4d5c0ebff8fc0281fcb3b3b83dd16022ca4ff81606bec9"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/17-irobot-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 45150,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:fd30bdb0116c57e83a5708c9af53274b6fcdb6a6661bf3d7405b99fedaf7f76c",
+      "outputHash": "sha256:cd3f178d719c6c7f76be67ef4a9c8088b310ab7447ecdca270e74ecb444e399e",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/17-irobot-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 19166,
+        "outputHash": "sha256:238e6429e8c6b0510205a71268503c3c5057bd7a59eeaf9a19298b00057f2520"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/18-dji-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 20802,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:ab5f80310ccb7950ffb25e9617be943b0c3807087f219b76f47f7cdfe308ee7c",
+      "outputHash": "sha256:3bb0481350833e62e3f31f10bc47cd06f160330f2004c8d2f8541829fb938f72",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/18-dji-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 7984,
+        "outputHash": "sha256:8f4942c807497022ad2e068e54d55279809da60485c9f2ebd16674cb9c6b1872"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/19-eufy-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 49936,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:5d82f4ee454f38ed354a3661406de38dd7221437bfebf2c2dc4f681238809f3f",
+      "outputHash": "sha256:ae23e71ae22396d6273c1637d26ea4b2d36751e3a6083b3b7a10e94a7b21667c",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/19-eufy-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 18020,
+        "outputHash": "sha256:71b4a40bba2fae4547bf6793e4026e2fa07cd5f6312798d310802f6680d3b458"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/20-karcher-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 57930,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:6ce2555620eca3869f1504d21e917a6d5772719bf794cda9eda0baadfc2850e4",
+      "outputHash": "sha256:eebe036a626462ec5013ac66962d4e80303821d3b35e0ec34130a2593c778a20",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/20-karcher-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 22846,
+        "outputHash": "sha256:d5b2962ef38d9794813adee9f4293cc7d8415bab0f204869159c7ceac538c037"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/21-miele-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 57930,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:7d17e9f9d117336c2025e3c1d328b48ecab754dbe07f1a5540aaf56661cb9855",
+      "outputHash": "sha256:fb9cd9e8735912a72b7d070ace585aea06d411b61ddc7d0bc6ea32e6c3da497c",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/21-miele-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 23470,
+        "outputHash": "sha256:7fd063c77c9d00b055f294952e58d0269745eb8ca4305928c82355e9f5f72ae7"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/22-bissell-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 41070,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:225da20ee21f792aa7ce98562cc1398a63601ded7538e037d1b4e20f36452ecb",
+      "outputHash": "sha256:b94018e122fe0c0a4c3b00d82ea82c6ede4e780189bc9cfaa80dbccd5cdbb69e",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/22-bissell-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 17244,
+        "outputHash": "sha256:09aff8a3ab8c69ec41608360457595af3547d4c4988bc3293c140831f4b950e9"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/23-uwant-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 67466,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:d1e8af4fb6967e930440ca1f8abbf9c85d27885aa8229e802bf7357326c012dc",
+      "outputHash": "sha256:8fd74c343586ee8564932ff2b1629bcd79b31bea4b34edff5656041ac53cfa61",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/23-uwant-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 24568,
+        "outputHash": "sha256:9d3919ab447c87fa2b6d14535090411060c5595c14b806415a4e4f26ffb0c16a"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/24-bosch-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 45572,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:e0f83b201ad70ba381ac0f6241188a8433d59b46b283157e9a52d05681fbec4f",
+      "outputHash": "sha256:6c8319ba5a3361adb39f56e8b61001e3d7fcfd59382b91297a74d6522a81dc9b",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/24-bosch-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 17718,
+        "outputHash": "sha256:af5dc90b469b5523e7339ad2360abb25a663b1c1647610f74a177e4ab4987b89"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/25-aeg-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 46788,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:7a81b789dc1505e84064dec250e7fa1383a333ca81e4d8c6b7248aedfb32ccfb",
+      "outputHash": "sha256:ddef6e56bf2c9e552f42af7eec9441a2b6221a088d79fd154d05df6b9f418449",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/25-aeg-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 17518,
+        "outputHash": "sha256:2649affde93b9554b4e2c8e43db860e6bae15ce2a072542d21c1b7f9da722f32"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/26-midea-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 52254,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:8ed6b78d29c07b7f2b419fc3f7040ec64a4bb3f39721f8d4a6be9dd7591937e3",
+      "outputHash": "sha256:5b4de49ce86d91f85ea27d06203ebb554fac12763caa839faba6d12ef6271f0c",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/26-midea-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 19344,
+        "outputHash": "sha256:8b06e0ee40eba70aab91be1c689aa4fdfd180b07fd7b478fbae5bec247825cc1"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/27-xlean-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 40480,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:7a8b64dd8b181bf19310892cadf8cb496012f518727ec852f0ddddb846ec0e88",
+      "outputHash": "sha256:a0dd839d634e671020ddbc2cb199d4a3e2cc812b008924a2794f3eb48a19e05c",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/27-xlean-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 17830,
+        "outputHash": "sha256:5bc7a26638b92a390b9195af8004fe44ca97bbf4210c3c752233db45246544e4"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/28-aiper-pool-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 50812,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:0601ebc477636bea005856e5022f340a7577922f88076137714f3c69a715aeb5",
+      "outputHash": "sha256:c3d0fc85cb8fb913795af41619a0239b161d0db5ea1873b7ddb1b95c9efda5b8",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/28-aiper-pool-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 19254,
+        "outputHash": "sha256:74561c19a54c388c60b45c56eec1d6952ee5d78d0af4705a1ec525584bf9e740"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/29-aiper-irrigation-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 100800,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:3d005742939c926e3412ed720effe50c5c1a142674532bbdd5ca3d597f447caf",
+      "outputHash": "sha256:98d02b0eca09471a6e8cb3f1feafbad5cadfde853dcc2e25ad2ea5f9c4409453",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/29-aiper-irrigation-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 23558,
+        "outputHash": "sha256:a1eda6ea9398463eb4525dbe03cc365a22199377887664f6f38881ac145fccde"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/30-beatbot-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 35534,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:f294ac0077bd2908bdd19fad0e41def591d608b50541962c490dc2a8420ff9c7",
+      "outputHash": "sha256:8af9b637be61e3e00fee364a7be6416021da2317202506ff3adb805715d8ebcb",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/30-beatbot-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 14948,
+        "outputHash": "sha256:b64386ae8a31558681909112d8d05ca8cd52775bed1dd762707c4823691990d8"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/31-wybot-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 56874,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:a14cafdaed95d9bd96ee1397824a4441d0992b12ea8886299d782719c14673de",
+      "outputHash": "sha256:aea8d927e38e3ba29e284fd58d2b4237b15fc12128b158b73a31bb8b9ffdc21a",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/31-wybot-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 20030,
+        "outputHash": "sha256:e6d308533c9f312e4f64ba183773f5974bf82e229921da03408a550f20e7a95e"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/32-navimow-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 52570,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:392e2383799f730e21378ed59802d873ce0673a471ef0fbbfd3cf8f41ae19198",
+      "outputHash": "sha256:44a2448c914b4ba61699ce108d48361f4954f478fbfa5732fa5abb4b61ce6593",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/32-navimow-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 19690,
+        "outputHash": "sha256:a3e98a5e74001dbf16973b744e1f126972895b854b38f05b13cb41e4c6f01997"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/33-mammotion-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 96140,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:978f3d6c7dd2d9cbfc2bf4e4ff2a04740d4bfa8416878fc68152e1db812755fb",
+      "outputHash": "sha256:2999ae2e3b5e21a30acf04c434a4b32a92e5e5b873fb7f46847a925bea83fab9",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/33-mammotion-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 28010,
+        "outputHash": "sha256:4ba3646a6c8c1cb5a80c40ba5d004796620882bd46804f90ea87a1e38c439f3c"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/34-sunseeker-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 70304,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:f546140c9164fad267e4222d521b6f25bdd099df318a4d0901f22251bda1c509",
+      "outputHash": "sha256:86752d8cfe619aadcd9ea29807d43461dbdf8af6b7f02bb36941872f2be0723c",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/34-sunseeker-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 22486,
+        "outputHash": "sha256:7e08f842b7bfd5be4dda32128e1b0b5ba2b2f2764468cfb809ef0d9ed51160bd"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/35-anthbot-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 74772,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:73e3acaef65894487403d401c9ad49dc130702b0147fcb6adaa1dc49f18c5846",
+      "outputHash": "sha256:217668c5faaf6bf2a209f5d1f2be98533d45b097187ca83ea2ea9ff60f056977",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/35-anthbot-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 29182,
+        "outputHash": "sha256:6424f8c43ce2af094531cefcf43a577c3382e775e060781a9cf6275f7cb520ac"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/36-yarbo-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 49380,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:7c8c7f168a629cb9138ee818ed68fd7818359b5d65d190054e1a354715ade778",
+      "outputHash": "sha256:229ecc18728bb740c758dac07deb8b51c56f15388769cbbb1dfae1427766c5ae",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/36-yarbo-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 18362,
+        "outputHash": "sha256:411ce021b36a8b9184edaffd04c060dd043d6ab3b95c7c87150bacf3205ea880"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/37-lymow-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 50212,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:2ca7f3a86ce96075365e0498907a59394d3d797dc4f94f0fcc2de6f6a17669da",
+      "outputHash": "sha256:20eb9e1dd729fe565b1d9c9b65d337ce3e368fcc0463cc554c378f16f35a7495",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/37-lymow-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 19298,
+        "outputHash": "sha256:4c0a919a04022ed47384b95087d54ed1bbc4057af1e5d6c1d8cc9162bf018191"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/38-nexlawn-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 93858,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:7e67cad2352b258d7fb7849521226f15cb16f923c3860398f1574839711062db",
+      "outputHash": "sha256:eb9fdb78ce072886814a193f2a2d55957f6760f2a94c9803667afe0d2016ebca",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/38-nexlawn-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 31098,
+        "outputHash": "sha256:3af069f005959e7a57554cdfb631fcf88c0b6d5ecadb5eb5759f1563ef070b8e"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/39-terramow-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 65600,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:31eca6d820a871e1e3d0b59184f2edb682f5dbfae6c868958e336f91012f43ae",
+      "outputHash": "sha256:a0a0a3a2ad3ea27e5383402f250cd1be8456e897b0343e13a150512ace11eef9",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/39-terramow-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 23898,
+        "outputHash": "sha256:bf6c23843bd3b3a2302469099726c8a93f06728bdf6477da5a3aea6c99711363"
+      }
+    },
+    "/images/articles/ifa-2026-cleaning-products-company-roundup/40-dyson-en.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1280,
+      "height": 853,
+      "bytes": 40044,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:d18c045188cc8f40615bc0330838cb3dfd6e0e5845aff40bee20b67c2843910f",
+      "outputHash": "sha256:7d612d534f0df6d789e1195e6508aa7aeae55b07ea7756336ac5f4167224bd61",
+      "mobile": {
+        "src": "/images/articles/ifa-2026-cleaning-products-company-roundup/40-dyson-en-800.webp",
+        "width": 640,
+        "height": 427,
+        "bytes": 16652,
+        "outputHash": "sha256:d808cd263b84ecef727118aae9cfcea7f14d44afb09424287eb7dd37b5a7855c"
+      }
+    },
     "/images/articles/irobot-decline-and-the-new-robot-vacuum-order/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -32089,6 +32809,51 @@
         "/images/insights/ifa-2019-vacuum-cleaner-new-products-by-major-brands-image-017.png"
       ]
     },
+    "ifa-2026-cleaning-products-company-roundup": {
+      "budgetClass": "deep",
+      "cover": "/images/articles/ifa-2026-cleaning-products-company-roundup/01-cover.webp",
+      "body": [
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/02-roborock-floor-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/03-roborock-robots-outdoor-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/04-dreame-robots-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/05-dreame-wet-dry-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/06-dreame-vacuums-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/07-dreame-prototypes-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/08-dreame-window-garden-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/09-ecovacs-floor-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/10-ecovacs-window-outdoor-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/11-tineco-new-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/12-tineco-existing-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/13-mova-floor-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/14-mova-outdoor-tech-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/15-mova-research-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/16-narwal-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/17-irobot-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/18-dji-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/19-eufy-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/20-karcher-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/21-miele-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/22-bissell-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/23-uwant-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/24-bosch-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/25-aeg-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/26-midea-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/27-xlean-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/28-aiper-pool-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/29-aiper-irrigation-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/30-beatbot-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/31-wybot-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/32-navimow-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/33-mammotion-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/34-sunseeker-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/35-anthbot-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/36-yarbo-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/37-lymow-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/38-nexlawn-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/39-terramow-en.webp",
+        "/images/articles/ifa-2026-cleaning-products-company-roundup/40-dyson-en.webp"
+      ]
+    },
     "impact-of-trump-reciprocal-tariffs": {
       "budgetClass": "standard",
       "cover": "/images/insights/impact-of-trump-reciprocal-tariffs-cover.jpg",
@@ -34968,6 +35733,210 @@
           "status": "matched",
           "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp",
           "hash": "sha256:02667d596901c3261259111f12fd5ef53b66ba1c9e16988a6a79ee99ec92b60f"
+        }
+      }
+    },
+    "ifa-2026-cleaning-products-company-roundup": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/01-cover.webp",
+          "hash": "sha256:c17ba6ecc01512f0cf339b6c142d29817a5cf8a0c631a75c44eb733fd6724079"
+        },
+        "02-roborock-floor-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/02-roborock-floor-en.webp",
+          "hash": "sha256:797185b53b16e252ad263cd473690fd8f830f1d551d0cf8f5ca13d0c39739c46"
+        },
+        "03-roborock-robots-outdoor-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/03-roborock-robots-outdoor-en.webp",
+          "hash": "sha256:efb304e1e60f622df6dff48e936df6a48e1ee09516045f334f17117d644008bb"
+        },
+        "04-dreame-robots-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/04-dreame-robots-en.webp",
+          "hash": "sha256:bd4e65877c1f3bcb84e04bd0e2089f6f8ad58eb8f175e56881dcb2107927361c"
+        },
+        "05-dreame-wet-dry-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/05-dreame-wet-dry-en.webp",
+          "hash": "sha256:4676462154a2ffd4c375f616b9bd153a99991c8af6903a446f09977f58427039"
+        },
+        "06-dreame-vacuums-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/06-dreame-vacuums-en.webp",
+          "hash": "sha256:3e121489cf968c5ffdd7853bce51094e515182e6680220d1f409b1ec6f23557e"
+        },
+        "07-dreame-prototypes-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/07-dreame-prototypes-en.webp",
+          "hash": "sha256:a5d41f933fa4118c3ca115567516bc14b5a05a28e6ffe14128f5c398457db656"
+        },
+        "08-dreame-window-garden-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/08-dreame-window-garden-en.webp",
+          "hash": "sha256:e2816d752283340350ac99d1995311369ea7d5d3f50cfd09f1f4ce5a8b1e401e"
+        },
+        "09-ecovacs-floor-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/09-ecovacs-floor-en.webp",
+          "hash": "sha256:d102501bde4e43e3f28458f1631e6877707152963422c0b814910ba8586c9dfd"
+        },
+        "10-ecovacs-window-outdoor-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/10-ecovacs-window-outdoor-en.webp",
+          "hash": "sha256:4ad8478ba689c1712b189fd8c2fd472de094c55246f6ddbd1508a9a36ffe1349"
+        },
+        "11-tineco-new-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/11-tineco-new-en.webp",
+          "hash": "sha256:4d7d59401c8c2c73f619ca3bd00c01e3848d3f45360c8f4f80ca4ae254cdec9d"
+        },
+        "12-tineco-existing-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/12-tineco-existing-en.webp",
+          "hash": "sha256:fcbde438c9997d2a9085845e41d585e76518ed33933952429fab08af9a7de0a5"
+        },
+        "13-mova-floor-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/13-mova-floor-en.webp",
+          "hash": "sha256:fdbe0d21cf5bc4e44420d6f449f564c56e98cf5134d5a18def2c93825430a563"
+        },
+        "14-mova-outdoor-tech-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/14-mova-outdoor-tech-en.webp",
+          "hash": "sha256:3d03e98d0b0a4f92d931cae486434fdda45a24bac282fc5196b333889e3d23a3"
+        },
+        "15-mova-research-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/15-mova-research-en.webp",
+          "hash": "sha256:98598b3f60afb368e8a33da3168e57aabc434810277fa7fd96d3b80e1a6f41b7"
+        },
+        "16-narwal-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/16-narwal-en.webp",
+          "hash": "sha256:9c23ec037919909e01d22ea36a07438309027086e378872a792bc32403c73619"
+        },
+        "17-irobot-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/17-irobot-en.webp",
+          "hash": "sha256:fd30bdb0116c57e83a5708c9af53274b6fcdb6a6661bf3d7405b99fedaf7f76c"
+        },
+        "18-dji-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/18-dji-en.webp",
+          "hash": "sha256:ab5f80310ccb7950ffb25e9617be943b0c3807087f219b76f47f7cdfe308ee7c"
+        },
+        "19-eufy-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/19-eufy-en.webp",
+          "hash": "sha256:5d82f4ee454f38ed354a3661406de38dd7221437bfebf2c2dc4f681238809f3f"
+        },
+        "20-karcher-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/20-karcher-en.webp",
+          "hash": "sha256:6ce2555620eca3869f1504d21e917a6d5772719bf794cda9eda0baadfc2850e4"
+        },
+        "21-miele-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/21-miele-en.webp",
+          "hash": "sha256:7d17e9f9d117336c2025e3c1d328b48ecab754dbe07f1a5540aaf56661cb9855"
+        },
+        "22-bissell-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/22-bissell-en.webp",
+          "hash": "sha256:225da20ee21f792aa7ce98562cc1398a63601ded7538e037d1b4e20f36452ecb"
+        },
+        "23-uwant-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/23-uwant-en.webp",
+          "hash": "sha256:d1e8af4fb6967e930440ca1f8abbf9c85d27885aa8229e802bf7357326c012dc"
+        },
+        "24-bosch-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/24-bosch-en.webp",
+          "hash": "sha256:e0f83b201ad70ba381ac0f6241188a8433d59b46b283157e9a52d05681fbec4f"
+        },
+        "25-aeg-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/25-aeg-en.webp",
+          "hash": "sha256:7a81b789dc1505e84064dec250e7fa1383a333ca81e4d8c6b7248aedfb32ccfb"
+        },
+        "26-midea-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/26-midea-en.webp",
+          "hash": "sha256:8ed6b78d29c07b7f2b419fc3f7040ec64a4bb3f39721f8d4a6be9dd7591937e3"
+        },
+        "27-xlean-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/27-xlean-en.webp",
+          "hash": "sha256:7a8b64dd8b181bf19310892cadf8cb496012f518727ec852f0ddddb846ec0e88"
+        },
+        "28-aiper-pool-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/28-aiper-pool-en.webp",
+          "hash": "sha256:0601ebc477636bea005856e5022f340a7577922f88076137714f3c69a715aeb5"
+        },
+        "29-aiper-irrigation-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/29-aiper-irrigation-en.webp",
+          "hash": "sha256:3d005742939c926e3412ed720effe50c5c1a142674532bbdd5ca3d597f447caf"
+        },
+        "30-beatbot-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/30-beatbot-en.webp",
+          "hash": "sha256:f294ac0077bd2908bdd19fad0e41def591d608b50541962c490dc2a8420ff9c7"
+        },
+        "31-wybot-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/31-wybot-en.webp",
+          "hash": "sha256:a14cafdaed95d9bd96ee1397824a4441d0992b12ea8886299d782719c14673de"
+        },
+        "32-navimow-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/32-navimow-en.webp",
+          "hash": "sha256:392e2383799f730e21378ed59802d873ce0673a471ef0fbbfd3cf8f41ae19198"
+        },
+        "33-mammotion-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/33-mammotion-en.webp",
+          "hash": "sha256:978f3d6c7dd2d9cbfc2bf4e4ff2a04740d4bfa8416878fc68152e1db812755fb"
+        },
+        "34-sunseeker-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/34-sunseeker-en.webp",
+          "hash": "sha256:f546140c9164fad267e4222d521b6f25bdd099df318a4d0901f22251bda1c509"
+        },
+        "35-anthbot-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/35-anthbot-en.webp",
+          "hash": "sha256:73e3acaef65894487403d401c9ad49dc130702b0147fcb6adaa1dc49f18c5846"
+        },
+        "36-yarbo-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/36-yarbo-en.webp",
+          "hash": "sha256:7c8c7f168a629cb9138ee818ed68fd7818359b5d65d190054e1a354715ade778"
+        },
+        "37-lymow-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/37-lymow-en.webp",
+          "hash": "sha256:2ca7f3a86ce96075365e0498907a59394d3d797dc4f94f0fcc2de6f6a17669da"
+        },
+        "38-nexlawn-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/38-nexlawn-en.webp",
+          "hash": "sha256:7e67cad2352b258d7fb7849521226f15cb16f923c3860398f1574839711062db"
+        },
+        "39-terramow-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/39-terramow-en.webp",
+          "hash": "sha256:31eca6d820a871e1e3d0b59184f2edb682f5dbfae6c868958e336f91012f43ae"
+        },
+        "40-dyson-en.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/40-dyson-en.webp",
+          "hash": "sha256:d18c045188cc8f40615bc0330838cb3dfd6e0e5845aff40bee20b67c2843910f"
         }
       }
     },

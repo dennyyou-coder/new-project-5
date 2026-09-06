@@ -379,6 +379,20 @@ async function createVariant(options, viewport) {
   const limit = options.limitBytes === undefined
     ? configuredLimit
     : Math.min(options.limitBytes, configuredLimit);
+  // Approved for this 39-collage roundup only; preserve all existing budget gates.
+  // Both sizes were reviewed against the original labeled product collages.
+  if (options.slug === "ifa-2026-cleaning-products-company-roundup" && ["body", "chart"].includes(options.role)) {
+    const candidate = await encodeCandidate({
+      input: options.input,
+      crop,
+      longEdge: viewport === "desktop" ? 1280 : 640,
+      format: "webp",
+      quality: 72
+    });
+    if (candidate.bytes > limit) return budgetFailure({ ...options, candidates: [candidate], limit });
+    candidate.attempts = [publicAttempt(candidate)];
+    return candidate;
+  }
   const isGraphic = options.kind === "graphic" || options.kind === "transparent" || options.role === "chart" || options.role === "transparent";
   return isGraphic
     ? graphicVariant(options, viewport, crop, limit, dimensions)
