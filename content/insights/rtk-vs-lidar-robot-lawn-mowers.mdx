@@ -23,7 +23,7 @@ source_review_version: "30-英文发布包/rtk-vs-lidar-robot-lawn-mowers/英文
 confirmed_english_version: "confirmed-v1.0"
 image_status: "confirmed-v1.0"
 worldcleanbiz_publish_status: "deployment_authorized"
-updated_at: "2026-09-05"
+updated_at: "2026-09-06"
 ---
 
 **Start with an RTK robot mower for a large, open lawn with reliable satellite reception and correction coverage. Start with LiDAR where trees and buildings obstruct the sky but provide usable local features for mapping. For a property that combines both conditions, test a mower that combines navigation methods across the whole route.**
@@ -81,6 +81,8 @@ Husqvarna's cloud installation option, for example, requires stable internet acr
 
 Ask the seller to separate correction access, mobile data and remote app functions. Record what is included, for how long and what happens during an interruption. “No antenna” answers an installation question; service details determine how that installation keeps working.
 
+Navimow's European [i2 LiDAR Pro product page](https://navimow.segway.com/products/navimow-i2-lidar-pro-robot-lawn-mower), checked on September 6, 2026, shows why this distinction matters. It lists Network RTK access and the cellular data required for it at no extra cost. Separately, it lists one year of data for remote app control, alerts and tracking, followed by a paid renewal. Buyers should verify the regional terms, but they should not interpret the end of a remote-control data offer as automatically ending the positioning service.
+
 ## Does LiDAR Solve the Problem Under Trees?
 
 LiDAR can use nearby surfaces when satellite reception is weak, making it a useful candidate for shaded gardens and enclosed spaces. It still needs a usable map and reliable readings from the environment.
@@ -98,6 +100,12 @@ LiDAR ranging can operate without visible daylight. If the mower also relies on 
 Return to the front-lawn-and-rear-garden example. A combined navigation system can draw on different references as the surroundings change. This is the practical reason to consider sensor fusion.
 
 The benefit depends on the software. The machine needs to continue with a reliable position or stop appropriately when that position becomes uncertain. Simply listing RTK, LiDAR and cameras does not demonstrate successful recovery.
+
+### A product example: Navimow i2 LiDAR versus i2 LiDAR Pro
+
+The official European pages describe [i2 LiDAR](https://navimow.segway.com/pages/navimow-i2-lidar-robot-lawn-mower) as using LiDAR and vision, with positioning that does not depend on satellites. The [i2 LiDAR Pro](https://navimow.segway.com/products/navimow-i2-lidar-pro-robot-lawn-mower) adds Network RTK to the LiDAR-and-vision combination. These configurations were checked on September 6, 2026.
+
+That changes the installation questions. For the LiDAR model, assess local mapping and the actual route. For the Pro, also verify Network RTK coverage and what the mower does when one positioning source weakens. The additional sensor layer provides another reference; the product page alone does not prove that the Pro performs better on every lawn.
 
 Ask the dealer to run the difficult connection between zones. Watch whether the mower passes through, completes the rear lawn and finds its dock again. Repeat the route rather than accepting one successful run. If the manufacturer permits a controlled interruption test, check the documented stop or recovery behavior with the installer.
 
@@ -123,13 +131,18 @@ The useful demonstration starts with the hardest part of the garden. A tidy pass
 
 Ask for a site plan showing the open areas, canopy, narrow connections, slopes, high-risk edges and dock. For RTK, add the proposed station or correction service and relevant coverage. For LiDAR, identify the route and surroundings the system must map. This makes the recommendation explainable before money changes hands.
 
-Then agree on a short acceptance sequence:
+Then agree on a short acceptance record that the owner and dealer can both use:
 
-1. **Check the complete product.** Record the model, market version, software, included accessories and navigation services.
-2. **Run every distinct zone.** Include the shaded edge, narrow passage and any connection between separate lawns.
-3. **Check repeatability.** Observe boundaries, docking and behavior after an interruption allowed by the manufacturer's procedure.
-4. **Save the accepted setup.** Keep the map, station positions and instructions for changes to the property.
-5. **Confirm the support route.** Identify who handles installation, network or map problems, hardware repairs and account transfer.
+| Installation check | Evidence to keep |
+|---|---|
+| Complete product and services | Model, market version, firmware, accessories and separate correction, cellular and cloud terms |
+| Every distinct work zone | Site plan and trial results for open lawn, canopy, narrow passages, slopes and the return route |
+| Repeatable operation | Boundary and docking results, plus documented stop or recovery behavior during any manufacturer-approved interruption test |
+| Recoverable setup | Accepted map version, station positions, account owner and map backup or replacement procedure |
+| Changes after installation | Which station moves, landscaping changes or boundary edits require the dealer to check the setup again |
+| A clear service owner | Installer, warranty intake and repair contacts; responsibility for travel, labor, hardware replacement and restoring the map |
+
+Do not record a manually traced map as proof of autonomous operation. The mower should repeat the route under its own control. Likewise, a successful pass across the open lawn does not establish that it can return through the shaded passage.
 
 ![Robot mower dealer site survey and commissioning workflow covering SKU verification, signal mapping, zone testing, acceptance and digital handover](/images/blog/robot-mower-site-survey-commissioning-workflow.webp)
 
