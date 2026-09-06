@@ -7,6 +7,7 @@ const navItems = [
   { href: "/", label: "Home" },
   { href: "/blog", label: "Blog" },
   { href: "/brands", label: "Brand Intelligence" },
+  { href: "/products", label: "Products" },
   { href: "/sourcing", label: "Sourcing" },
   { href: "/reports", label: "Market Reports" },
   { href: "/wcb-expo", label: "WCB Expo" },

@@ -678,3 +678,9 @@
   .home-v9-article h3 { font-size: 17px; }
   .home-v9-article p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 13px; }
 }
+
+.home-v9-product-entry { display: flex; flex-direction: column; border: 1px solid #c6d9f3; border-top: 3px solid var(--v9-blue); border-radius: 12px; background: #f0f6ff; box-shadow: 0 6px 18px rgba(8,42,82,.05); overflow: hidden; }
+.home-v9-product-entry > a { border: 0; border-radius: 0; box-shadow: none; }
+.home-v9-product-entry > a:first-child { flex: 1; padding-top: 24px; }
+.home-v9-product-entry > .home-v9-sourcing-entry { margin: 0 26px 20px; padding: 14px 0 0; border-top: 1px solid #c6d9f3; color: #245cc4; font-size: 12px; font-weight: 700; background: transparent; }
+.home-v9-product-entry > a:focus-visible { outline-offset: -4px; }

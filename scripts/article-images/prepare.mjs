@@ -823,6 +823,7 @@ async function planSourceArticle(context, slug, sourceRoot) {
       kind,
       crop: settings.crop,
       focalPoint: settings.focalPoint,
+      preserveCrop: path.dirname(article.file) === path.join(context.contentRoot, "products"),
       outputFormat: role === "chart" ? undefined : "webp"
     });
     if (!result.ok) throw transformFailure(slug, descriptor, result);

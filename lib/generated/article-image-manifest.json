@@ -92,6 +92,17 @@
         "outputHash": "sha256:7c31b919aa0db15b843a6cbc564ea7ff666319e1b673f1791518bb7a72c7a38f"
       }
     },
+    "/images/articles/aiper-scuba-v3-ultra/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 360,
+      "height": 250,
+      "bytes": 11644,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f639229a9263fbbf98dcfda078f6a95bf25a6b4d08f065bceef3f2ee859be0d7",
+      "outputHash": "sha256:ee639195ab5d2f4706b97980798b02f69b3301ef26edd4bee89ecf3194dab27a"
+    },
     "/images/articles/anker-cleaning-appliance-strategy-analysis/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -360,6 +371,24 @@
         "height": 533,
         "bytes": 62006,
         "outputHash": "sha256:cb7dc03d487c2216aeae296716d7b408c5a53da0813f980d1e97e72bee21a31c"
+      }
+    },
+    "/images/articles/beatbot-aquasense-x/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 123664,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:06d4057dc385cb7f0120dd837da908cb1c6d6c6360ebc92cff860d2e8d655a8e",
+      "outputHash": "sha256:5c62f62baa9fb668bad88e634f8b9335a4f0664fcf5f27c0c80e838d93cfdf0e",
+      "mobile": {
+        "src": "/images/articles/beatbot-aquasense-x/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 49562,
+        "outputHash": "sha256:05d625148d1225e8ce278b3bca2e16eee73ff49933bd0ff2fdf8ce2bdc411c76"
       }
     },
     "/images/articles/beatbot-in-leifeng-coverage/01-cover.webp": {
@@ -1398,6 +1427,60 @@
         "outputHash": "sha256:03f68e229b1bf422b6a0400d9ada8f87f08eb946d4ac855dcccdf613d1e9e507"
       }
     },
+    "/images/articles/dreame-x60-ultra/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 16604,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ce3bc1c9a3e3b08cf611142bdafa77fc7e9b31a04ae1dc78dc83a7dbd052e30c",
+      "outputHash": "sha256:e60905a49240062a3abb42297f85ea161e31eec8c18906cb165ba6d52e5dd7fa",
+      "mobile": {
+        "src": "/images/articles/dreame-x60-ultra/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 7552,
+        "outputHash": "sha256:9f19d34eb9560dc5f7a1508fe8df5f5ad41b5f7278cd698efd4b6e76db6e0c0a"
+      }
+    },
+    "/images/articles/dyson-v16-piston-animal/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1280,
+      "height": 1190,
+      "bytes": 79186,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e42a9ba8994ec0069d504ad38114ca523a6cfe21c9456ad84cc28617138f96ba",
+      "outputHash": "sha256:78c798fb523680f5147d5b1fca6d108de6b940ddfcf89b5885846e4e01e6a56c",
+      "mobile": {
+        "src": "/images/articles/dyson-v16-piston-animal/01-cover-800.webp",
+        "width": 800,
+        "height": 744,
+        "bytes": 32156,
+        "outputHash": "sha256:695c0fd46c6309f939bceedbe9149471a1a79f62131b369e72470c5d793d5072"
+      }
+    },
+    "/images/articles/ecovacs-deebot-x12-omnicyclone/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 73958,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:23fb39c14e189f41a5e062c9174189d2e1c133e03badd322caaa86ffcb4d1f65",
+      "outputHash": "sha256:8185be04864aa8db7ba876ef9bf65b4222cb632995e086617c8492ec33f540b2",
+      "mobile": {
+        "src": "/images/articles/ecovacs-deebot-x12-omnicyclone/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 15704,
+        "outputHash": "sha256:5538bc91aebe651d9c9f016e93cb3734007fe6d04fae881ed488849157d59e2b"
+      }
+    },
     "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1794,6 +1877,24 @@
         "outputHash": "sha256:c9a448c072ec344defc97405b9afda33767cc4a2bf32a6525ee5c53e68f74068"
       }
     },
+    "/images/articles/mammotion-luba-mini-2-awd-1500/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 32458,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d2a6b548594ff67efbfd5e313ac1a5764a37718cf22c58ce0f5841f6a3670439",
+      "outputHash": "sha256:8a2b8834937400aa71d77111012c30e8aa6274baf539afd8702743193c804777",
+      "mobile": {
+        "src": "/images/articles/mammotion-luba-mini-2-awd-1500/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 22582,
+        "outputHash": "sha256:343bbf508f6799942eaf6894a37c2792c6e8bb1dd7480fe09f7123481162b3e8"
+      }
+    },
     "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1954,6 +2055,24 @@
         "height": 533,
         "bytes": 59342,
         "outputHash": "sha256:07be2546fc13d6969ae09424c5ecfaeec477239665e612fe5e268d1cd1e3bf18"
+      }
+    },
+    "/images/articles/mova-lidax-ultra-1000/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 83444,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:85a856d9abc973068887e98001546ba1bb9827faec908bf5d10322119514a3f4",
+      "outputHash": "sha256:717cb7a38ed22f5c5537e447583329481cc586e9303973b4ee299cc0a9df1ecf",
+      "mobile": {
+        "src": "/images/articles/mova-lidax-ultra-1000/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 21884,
+        "outputHash": "sha256:f7901d6e7e03cae32293cfb878e9423d1f113c5a286bcf86f75b41bc6c72af6f"
       }
     },
     "/images/articles/ninebot-navimow-vs-roborock/01-cover.webp": {
@@ -2242,6 +2361,24 @@
         "height": 533,
         "bytes": 63210,
         "outputHash": "sha256:cacd1cb760cbb7a3eba605da454a80cfa47e5b386543a9de59878f4795e4e018"
+      }
+    },
+    "/images/articles/roborock-saros-20/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 45424,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:09674840e614bd5679ddf1bdc58eedd8e4e28635ea4cb121b67c3067a81ff36a",
+      "outputHash": "sha256:e5b8114bf345596fc0a89e2596f2b3c7c963239886b7b97734cd160e46ff372d",
+      "mobile": {
+        "src": "/images/articles/roborock-saros-20/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 30772,
+        "outputHash": "sha256:859fbe94133ab25a0e445ad352146f141a11e3c395723063bf34322a3dc6aa38"
       }
     },
     "/images/articles/roborock-targets-70-billion-rmb-by-2029/01-cover.webp": {
@@ -3396,6 +3533,24 @@
         "outputHash": "sha256:949bd4691f6bff234e62681e0c1dfe076f7ca463e6eb9f0092a0538aa37988cd"
       }
     },
+    "/images/articles/sunseeker-s4/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 750,
+      "bytes": 287592,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:511f46a4cb35c2f575f295ea2ed4a28d66b9a05590eb794fec86c27e858a2935",
+      "outputHash": "sha256:78e7236b1965dc86dfaef9b8dfb9c332093366761122d420129b73457a2c58cd",
+      "mobile": {
+        "src": "/images/articles/sunseeker-s4/01-cover-800.webp",
+        "width": 800,
+        "height": 375,
+        "bytes": 75142,
+        "outputHash": "sha256:7aba113b0d1b44ad83f2df69d49a18947572f9b9b30192db287daf34a4e08a1b"
+      }
+    },
     "/images/articles/tti-cleaning-appliance-strategy/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -4006,6 +4161,24 @@
         "height": 533,
         "bytes": 65734,
         "outputHash": "sha256:33edc7f3ed288e6bab5087e6e7eaf84bcb78685d4a789cbc66f222455f6ac2e3"
+      }
+    },
+    "/images/articles/wybot-s3/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 116632,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9a029c658f857ec93be9a6c5fa09bf4492afff7636ed9e11e1ac5fb0279134d7",
+      "outputHash": "sha256:946206d88bdf6d0432ff917b40bbd0b39a144082e1d2a7d254d517cf5d221209",
+      "mobile": {
+        "src": "/images/articles/wybot-s3/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 35234,
+        "outputHash": "sha256:6beab9a3cfdfe0aecbe497d15e33245dcd6cc01acb7bdb9218bca49d24f85b7d"
       }
     },
     "/images/blog/above-ground-vs-in-ground-pool-robots.webp": {
@@ -29864,6 +30037,11 @@
       "cover": "/images/blog/aiper-pool-cleaner-model-selection-map.webp",
       "body": []
     },
+    "aiper-scuba-v3-ultra": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/aiper-scuba-v3-ultra/01-cover.webp",
+      "body": []
+    },
     "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x": {
       "budgetClass": "standard",
       "cover": "/images/blog/aiper-scuba-v3-ultra-vs-beatbot-aquasense-x.webp",
@@ -30016,6 +30194,11 @@
     "backyard-robots-price-and-channel-war": {
       "budgetClass": "standard",
       "cover": "/images/insights/backyard-robots-price-and-channel-war-cover.jpg",
+      "body": []
+    },
+    "beatbot-aquasense-x": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/beatbot-aquasense-x/01-cover.webp",
       "body": []
     },
     "beatbot-in-leifeng-coverage": {
@@ -30772,6 +30955,11 @@
       "cover": "/images/blog/dreame-vs-ecovacs-robot-platforms.webp",
       "body": []
     },
+    "dreame-x60-ultra": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-x60-ultra/01-cover.webp",
+      "body": []
+    },
     "dyson-at-a-crossroads": {
       "budgetClass": "standard",
       "cover": "/images/insights/dyson-at-a-crossroads-cover.jpg",
@@ -30890,6 +31078,11 @@
       "cover": "/images/blog/dyson-v15-detect-vs-gen5detect.webp",
       "body": []
     },
+    "dyson-v16-piston-animal": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-v16-piston-animal/01-cover.webp",
+      "body": []
+    },
     "dyson-v16-piston-animal-vs-gen5detect": {
       "budgetClass": "standard",
       "cover": "/images/blog/dyson-v16-piston-animal-vs-gen5detect.webp",
@@ -30982,6 +31175,11 @@
         "/images/insights/ecovacs-at-a-crossroads-image-007.jpg",
         "/images/insights/ecovacs-at-a-crossroads-image-008.jpg"
       ]
+    },
+    "ecovacs-deebot-x12-omnicyclone": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-deebot-x12-omnicyclone/01-cover.webp",
+      "body": []
     },
     "ecovacs-invests-in-battery-cell-factory": {
       "budgetClass": "standard",
@@ -31723,6 +31921,11 @@
       "cover": "/images/insights/major-battle-about-to-begin-cover.jpg",
       "body": []
     },
+    "mammotion-luba-mini-2-awd-1500": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mammotion-luba-mini-2-awd-1500/01-cover.webp",
+      "body": []
+    },
     "mammotion-luba-vs-yuka-robot-mowers": {
       "budgetClass": "standard",
       "cover": "/images/blog/mammotion-luba-vs-yuka-robot-mowers.webp",
@@ -31810,6 +32013,11 @@
         "/images/blog/milwaukee-tti-share-peer-growth.webp",
         "/images/blog/milwaukee-path-to-20-billion.webp"
       ]
+    },
+    "mova-lidax-ultra-1000": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-lidax-ultra-1000/01-cover.webp",
+      "body": []
     },
     "mova-took-me-to-meet-a-celebrity": {
       "budgetClass": "standard",
@@ -32107,6 +32315,11 @@
     "roborock-rockmow-z1-vs-mammotion-luba-3-awd": {
       "budgetClass": "standard",
       "cover": "/images/blog/roborock-rockmow-z1-vs-mammotion-luba-3-awd.webp",
+      "body": []
+    },
+    "roborock-saros-20": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-saros-20/01-cover.webp",
       "body": []
     },
     "roborock-targets-70-billion-rmb-by-2029": {
@@ -32789,6 +33002,11 @@
         "/images/articles/story-of-hard-floor-washers/04.webp",
         "/images/articles/story-of-hard-floor-washers/05.webp"
       ]
+    },
+    "sunseeker-s4": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/sunseeker-s4/01-cover.webp",
+      "body": []
     },
     "sunseeker-vs-mammotion-robot-mowers": {
       "budgetClass": "standard",
@@ -33927,6 +34145,11 @@
       "cover": "/images/insights/world-class-denny-or-world-class-bragging-cover.jpg",
       "body": []
     },
+    "wybot-s3": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/wybot-s3/01-cover.webp",
+      "body": []
+    },
     "wybot-vs-dolphin-robotic-pool-cleaners": {
       "budgetClass": "standard",
       "cover": "/images/blog/wybot-vs-dolphin-robotic-pool-cleaners.webp",
@@ -33947,6 +34170,24 @@
     }
   },
   "externalSources": {
+    "aiper-scuba-v3-ultra": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/aiper-scuba-v3-ultra/01-cover.webp",
+          "hash": "sha256:f639229a9263fbbf98dcfda078f6a95bf25a6b4d08f065bceef3f2ee859be0d7"
+        }
+      }
+    },
+    "beatbot-aquasense-x": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-aquasense-x/01-cover.webp",
+          "hash": "sha256:06d4057dc385cb7f0120dd837da908cb1c6d6c6360ebc92cff860d2e8d655a8e"
+        }
+      }
+    },
     "building-worlds-no-1-cleaning-show-from-scratch-episode-01": {
       "files": {
         "building-worlds-no-1-cleaning-show-episode-01-cover.webp": {
@@ -34195,6 +34436,33 @@
         }
       }
     },
+    "dreame-x60-ultra": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-x60-ultra/01-cover.webp",
+          "hash": "sha256:ce3bc1c9a3e3b08cf611142bdafa77fc7e9b31a04ae1dc78dc83a7dbd052e30c"
+        }
+      }
+    },
+    "dyson-v16-piston-animal": {
+      "files": {
+        "01-cover.jpeg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-v16-piston-animal/01-cover.webp",
+          "hash": "sha256:e42a9ba8994ec0069d504ad38114ca523a6cfe21c9456ad84cc28617138f96ba"
+        }
+      }
+    },
+    "ecovacs-deebot-x12-omnicyclone": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-deebot-x12-omnicyclone/01-cover.webp",
+          "hash": "sha256:23fb39c14e189f41a5e062c9174189d2e1c133e03badd322caaa86ffcb4d1f65"
+        }
+      }
+    },
     "eu-battery-rules-smartphones-power-tools": {
       "files": {
         "01-cover.png": {
@@ -34216,6 +34484,15 @@
           "status": "matched",
           "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp",
           "hash": "sha256:02667d596901c3261259111f12fd5ef53b66ba1c9e16988a6a79ee99ec92b60f"
+        }
+      }
+    },
+    "mammotion-luba-mini-2-awd-1500": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/mammotion-luba-mini-2-awd-1500/01-cover.webp",
+          "hash": "sha256:d2a6b548594ff67efbfd5e313ac1a5764a37718cf22c58ce0f5841f6a3670439"
         }
       }
     },
@@ -34245,6 +34522,15 @@
           "status": "matched",
           "primary": "/images/articles/maytronics-fimi-sale-pool-robot-leader/05-industry-rules-shift.webp",
           "hash": "sha256:d9a4220201b3d849df2c3cef23f55f51865391a7b84d789da6907dbd0ec8ef13"
+        }
+      }
+    },
+    "mova-lidax-ultra-1000": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mova-lidax-ultra-1000/01-cover.webp",
+          "hash": "sha256:85a856d9abc973068887e98001546ba1bb9827faec908bf5d10322119514a3f4"
         }
       }
     },
@@ -34283,6 +34569,15 @@
           "status": "matched",
           "primary": "/images/articles/pressure-washer-recalls-china-oem-industry/03-manufacturing-talent-network.webp",
           "hash": "sha256:a9ec2aa545c5da5f1d1e652d22251f210b5eaa0378915ebd5712441c1015e71d"
+        }
+      }
+    },
+    "roborock-saros-20": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-saros-20/01-cover.webp",
+          "hash": "sha256:09674840e614bd5679ddf1bdc58eedd8e4e28635ea4cb121b67c3067a81ff36a"
         }
       }
     },
@@ -34530,6 +34825,15 @@
           "status": "matched",
           "primary": "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform.webp",
           "hash": "sha256:b61b1805747454b9470772f7b2877922ca9dd73e85c10c9db6f4fc79aef4e753"
+        }
+      }
+    },
+    "sunseeker-s4": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/sunseeker-s4/01-cover.webp",
+          "hash": "sha256:511f46a4cb35c2f575f295ea2ed4a28d66b9a05590eb794fec86c27e858a2935"
         }
       }
     },
@@ -34852,6 +35156,15 @@
           "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
           "primary": "/images/blog/toro-product-responsibility-map.svg",
           "hash": "sha256:740becd8bf8f1da495940bfe6d8f12f12e279e8ed48fbab25deabcc844f20bf3"
+        }
+      }
+    },
+    "wybot-s3": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/wybot-s3/01-cover.webp",
+          "hash": "sha256:9a029c658f857ec93be9a6c5fa09bf4492afff7636ed9e11e1ac5fb0279134d7"
         }
       }
     }

@@ -1,3 +1,4 @@
+import { productModels } from "@/lib/products";
 import type { MetadataRoute } from "next";
 import { getBlogSeriesSlugs } from "@/lib/blogSeries";
 import {
@@ -76,6 +77,8 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
 
   return routeEntries([
     "",
+    "/products",
+    ...productModels.map((model) => `/products/${model.slug}`),
     "/guides",
     ...paginatedRoutes("/guides", guides.length),
     ...guideRoutes,

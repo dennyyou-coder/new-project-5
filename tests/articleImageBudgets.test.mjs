@@ -859,3 +859,22 @@ test("the aggregate source verifier sorts blocking findings by slug then URL", a
 
   assert.deepEqual(stale.map(({ slug }) => slug), ["alpha-article", "zeta-article"]);
 });
+
+test("built product images use product routes and fail on missing images or blog canonicals", async () => {
+  const project = await validManifestProject();
+  const productContent = path.join(project.projectRoot, "content", "products");
+  fs.mkdirSync(productContent, { recursive: true });
+  fs.writeFileSync(path.join(productContent, `${project.slug}.mdx`), "Product source");
+  const destination = path.join(project.projectRoot, ".next", "server", "app", "products", `${project.slug}.html`);
+  fs.mkdirSync(path.dirname(destination), { recursive: true });
+  const html = builtHtml(project, { canonical: `https://worldcleanbiz.com/products/${project.slug}` })
+    .replace("blog-article-main", "product-model-main")
+    .replace("blog-article-cover", "product-model-cover")
+    .replace("(max-width: 800px) 100vw, 1200px", "(max-width: 800px) calc(100vw - 40px), 560px");
+  fs.writeFileSync(destination, html);
+  assert.deepEqual((await verifyBuiltArticleImages(project)).failures, []);
+  fs.writeFileSync(destination, html.replace(`/products/${project.slug}`, `/blog/${project.slug}`));
+  assert.ok((await verifyBuiltArticleImages(project)).failures.some(item => item.code === "BUILT_CANONICAL_MISMATCH"));
+  fs.unlinkSync(destination);
+  assert.ok((await verifyBuiltArticleImages(project)).failures.some(item => item.code === "BUILT_ARTICLE_MISSING"));
+});

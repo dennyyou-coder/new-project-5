@@ -307,7 +307,7 @@ img {
   background: linear-gradient(135deg, #2461F0 0%, #6FA8FF 100%);
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1180px) {
   .header-inner {
     position: relative;
   }

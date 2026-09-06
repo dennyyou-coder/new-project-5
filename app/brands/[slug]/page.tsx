@@ -1,3 +1,4 @@
+import { ProductLinks } from "@/components/products/ProductLinks";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
@@ -105,6 +106,7 @@ export default async function BrandPage({ params }: PageProps) {
         profile={data.profile}
         allowedCompetitorSlugs={publishedBrandSlugs}
       />
+      <ProductLinks brand={data.profile.slug} />
       <BrandTimeline profile={data.profile} />
       <BrandArticles
         primaryArticles={data.primaryArticles}
