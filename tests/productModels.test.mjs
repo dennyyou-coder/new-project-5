@@ -13,7 +13,7 @@ const articleSlugs = new Set(articles.map(item => item.slug));
 const brandSlugs = new Set(getPublishedBrandProfiles(articles).map(item => item.slug));
 
 test('model profiles have unique routes, official provenance and real prepared images', () => {
-  assert.equal(productModels.length, 10);
+  assert.equal(productModels.length, 13);
   assert.equal(new Set(productModels.map(item => item.slug)).size, productModels.length);
   for (const model of productModels) {
     const page = getProduct(model.slug);
@@ -50,7 +50,7 @@ test('products stay out of the blog and each model is discoverable in the sitema
 
 test('first selection contains only sourced 2026 launches and preserves older published routes', () => {
   assert.equal(productSelectionYear, 2026);
-  assert.equal(featuredProductModels.length, 7);
+  assert.equal(featuredProductModels.length, 10);
   for (const model of featuredProductModels) {
     assert.equal(model.launchYear, 2026);
     assert.ok(model.launchNote);
