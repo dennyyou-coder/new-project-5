@@ -66,6 +66,7 @@
       "roborock-vs-ecovacs-robot-vacuums"
     ],
     "related": [
+      "roborock-saros-20-sonic",
       "dreame-x60-ultra",
       "ecovacs-deebot-x12-omnicyclone",
       "ecovacs-deebot-t90-pro-omni"
@@ -820,6 +821,7 @@
       "who-owns-beatbot-xingmai-manufacturing"
     ],
     "related": [
+      "beatbot-sora-70",
       "aiper-scuba-v3-ultra",
       "wybot-s3",
       "mova-rover-x10"
@@ -1191,6 +1193,7 @@
       "robotic-pool-cleaners-leaves-fine-debris"
     ],
     "related": [
+      "ecovacs-ultramarine-p1",
       "aiper-scuba-v3-ultra",
       "beatbot-aquasense-x"
     ],
@@ -1230,5 +1233,324 @@
     "launchYear": 2026,
     "launchNote": "2026 market-launch selection; demonstrated at IFA in September 2025 and featured in MOVA’s CES 2026 lineup.",
     "launchSource": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
+  },
+  {
+    "slug": "roborock-saros-20-sonic",
+    "name": "Roborock Saros 20 Sonic",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Robot vacuums",
+    "market": "Global specification · Germany price reference",
+    "summary": "A slim vacuum and mop pairing an extendable vibrating pad with a retractable navigation sensor and automated dock care.",
+    "fit": "Mixed-floor homes considering sonic mopping, low-furniture access and difficult doorway transitions.",
+    "caution": "Sonic is a distinct model; its 8.8 cm claim describes a specified double-layer threshold, not a single step.",
+    "facts": [
+      {
+        "label": "Mop mechanism",
+        "value": "VibraRise 5.0 extendable vibrating pad",
+        "meaning": "Different from the dual rotating pads on Saros 20."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 353 × 79.8 mm",
+        "meaning": "Use the body measurement and allow extra clearance."
+      },
+      {
+        "label": "Peak suction",
+        "value": "36,000 Pa",
+        "meaning": "Current global page; the earlier CES release stated 35,000 Pa."
+      },
+      {
+        "label": "Navigation",
+        "value": "RetractSense retractable LDS",
+        "meaning": "The sensor changes position for low-clearance access."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Saros 20 Sonic the same as Saros 20?",
+        "answer": "No. Sonic uses an extendable VibraRise 5.0 vibrating pad and RetractSense navigation. The ordinary Saros 20 uses dual rotating pads and StarSight 2.0. Compare the exact model and dock, not the shared series number."
+      },
+      {
+        "question": "Does it climb a single 8.8 cm step?",
+        "answer": "No. The current global page specifies a first step up to 4.5 cm, a gap greater than 12 cm and no more than 14 cm, and a second step up to 4.3 cm. That double-layer test is not a staircase capability."
+      },
+      {
+        "question": "Why do some sources say 35,000 Pa and others 36,000 Pa?",
+        "answer": "Roborock’s January CES announcement used 35,000 Pa. The current global and German product pages state 36,000 Pa. This profile uses the current product-page figure and retains the older announcement only as launch evidence."
+      },
+      {
+        "question": "Will it fit under furniture exactly 7.95 cm high?",
+        "answer": "Do not plan a zero-clearance fit. The global page advertises 7.95 cm low-clearance access but lists a 79.8 mm robot body. Measure crossbars, sagging fabric and floor irregularities and allow a margin."
+      },
+      {
+        "question": "Does 100°C mean boiling water is applied to the floor?",
+        "answer": "No. It describes mop washing inside the dock. Select mopping settings suitable for your flooring and do not treat the dock temperature as a floor-disinfection guarantee."
+      },
+      {
+        "question": "Is the refill-and-drain version included everywhere?",
+        "answer": "No. The global page shows a separate shorter dock with regional availability. Confirm the local package, water supply, drainage and installation clearances before ordering."
+      },
+      {
+        "question": "What does the German price include?",
+        "answer": "The dated price card follows the plain German store listing. Its member discount has separate registration conditions. Extra mop pads, accessory packs and regional plumbing packages should be checked in the selected offer."
+      }
+    ],
+    "articles": [
+      "roborock-vs-dreame-robot-vacuums",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "roborock-saros-20",
+      "dreame-x60-ultra",
+      "ecovacs-deebot-t90-pro-omni"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official global specifications and test conditions",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Manufacturer CES 2026 announcement",
+        "url": "https://newsroom.roborock.com/gl/news/ces-2026-roborock-releases-the-world-s-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-real-madrid-football-club-"
+      },
+      {
+        "label": "Official German store and accessory prices",
+        "url": "https://de.roborock.com/products/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Manufacturer FCC user manual · English included",
+        "url": "https://gl-files.roborock.com/product/center/images/Roborock%20Saros%2020%20Sonic%20FCC%20User%20Manual.44438679.pdf"
+      },
+      {
+        "label": "Official regional manual selection",
+        "url": "https://help.roborock.com/ca/product/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Comparison reference · Roborock Saros 20",
+        "url": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Comparison reference · Dreame X60 Ultra",
+        "url": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
+      }
+    ],
+    "imageSource": "https://global.roborock.com/cdn/shop/files/saros_20_sonic__White_ID.png?v=1766039239",
+    "launchYear": 2026,
+    "launchNote": "Named in Roborock’s CES 2026 announcement; specification and dock availability differ by market.",
+    "launchSource": "https://newsroom.roborock.com/gl/news/ces-2026-roborock-releases-the-world-s-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-real-madrid-football-club-"
+  },
+  {
+    "slug": "ecovacs-ultramarine-p1",
+    "name": "ECOVACS ULTRAMARINE P1",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Pool robots",
+    "market": "United States · SWB11 manual",
+    "summary": "A cordless pool-floor and wall cleaner with dual-layer fine filtration and a straightforward hook-retrieval routine.",
+    "fit": "Pools where settled debris, floor coverage and fine filtration matter more than water-surface skimming.",
+    "caution": "The US manual excludes step cleaning and requires at least 0.5 m water depth; retrieve it with the supplied hook.",
+    "facts": [
+      {
+        "label": "Rated pool-floor area",
+        "value": "Up to 180 m² / 1,937 ft²",
+        "meaning": "Layout and debris load affect finished coverage."
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 180 minutes",
+        "meaning": "Do not assume the same endurance in wall or higher-power cleaning."
+      },
+      {
+        "label": "Inner filter",
+        "value": "3 μm",
+        "meaning": "Included dual-layer system; fine media needs regular care."
+      },
+      {
+        "label": "Operating water depth",
+        "value": "0.5–3 m / 1.64–9.84 ft",
+        "meaning": "Shallower shelves can trap the robot."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can ULTRAMARINE P1 clean tanning ledges or steps?",
+        "answer": "The US manual says it was not designed to clean steps. It also warns that shelves or steps less than 50 cm below the water surface may trap it. Do not transfer a general platform claim from the store page to a shallow shelf."
+      },
+      {
+        "question": "Does it skim leaves from the water surface?",
+        "answer": "Its manual lists floor, wall and all-area modes covering the floor, gentle slopes, walls and waterline. It does not specify a floating surface-skimming mode. Waterline cleaning is different from collecting leaves across the surface."
+      },
+      {
+        "question": "Is the 3-micron filter included?",
+        "answer": "The cited US product describes a dual-layer system with a 180-micron outer basket and 3-micron inner filter. Check the selected bundle, then clean the two layers separately as instructed."
+      },
+      {
+        "question": "Does it really run for three hours in every mode?",
+        "answer": "No. ECOVACS ties the up-to-three-hour figure to Eco mode. The pool geometry, selected power and filter loading can change the result; compare equivalent cleaning tasks."
+      },
+      {
+        "question": "Can I steer it underwater from my phone?",
+        "answer": "Do not rely on that. The US manual says the app connection works above water and may disconnect when the robot is submerged. Select and confirm the intended cleaning mode before release."
+      },
+      {
+        "question": "How do I retrieve and recharge it?",
+        "answer": "The manual describes stopping near the pool edge and using the supplied hook on a standard extension pole. It requires a dry indoor charging location at least 3.5 m from the pool and a completely dry charging port."
+      },
+      {
+        "question": "Which battery and waterproof figures should I use?",
+        "answer": "For the linked US SWB11 manual, use 4,600 mAh typical / 4,400 mAh rated and IPX8. The store page uses IP68, and a battery-pack identifier contains 5200. Confirm your unit’s label instead of treating these as interchangeable specifications."
+      }
+    ],
+    "articles": [
+      "robotic-pool-cleaners-leaves-fine-debris"
+    ],
+    "related": [
+      "beatbot-sora-70",
+      "mova-rover-x10",
+      "beatbot-aquasense-x"
+    ],
+    "announced": "2026-05-05",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official US product page and price",
+        "url": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1"
+      },
+      {
+        "label": "Manufacturer US launch announcement",
+        "url": "https://www.prnewswire.com/news-releases/ecovacs-expands-into-pool-care-with-the-ultramarine-p1-robotic-pool-cleaner-now-available-302761892.html"
+      },
+      {
+        "label": "Official US SWB11 instruction manual",
+        "url": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Official setup, maintenance and replacement parts",
+        "url": "https://help.ecovacs.com/us/support/ultramarine-p1"
+      },
+      {
+        "label": "Comparison reference · Beatbot Sora 70",
+        "url": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Comparison reference · MOVA Rover X10",
+        "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/us/image/product/2026/05/19/052238_2834%24ecovacs-ultramarine-p1-920x920-4.png",
+    "launchYear": 2026,
+    "launchNote": "US availability announced May 5, 2026, following its CES 2026 unveiling.",
+    "launchSource": "https://www.prnewswire.com/news-releases/ecovacs-expands-into-pool-care-with-the-ultramarine-p1-robotic-pool-cleaner-now-available-302761892.html"
+  },
+  {
+    "slug": "beatbot-sora-70",
+    "name": "Beatbot Sora 70",
+    "brand": "Beatbot",
+    "brandSlug": "beatbot",
+    "category": "Pool robots",
+    "market": "United States",
+    "summary": "A pool robot combining floating-leaf collection, underwater cleaning and surface parking in a manually maintained package.",
+    "fit": "Pools with both floating leaves and settled debris, including large shallow platforms within the published limits.",
+    "caution": "The 3-micron filter is optional; app retrieval works at the water surface and platform access depends on size and depth.",
+    "facts": [
+      {
+        "label": "Basket capacity",
+        "value": "6 L",
+        "meaning": "Large debris can occupy usable space quickly."
+      },
+      {
+        "label": "Floor runtime",
+        "value": "Up to 5 hours",
+        "meaning": "A floor-cleaning figure, distinct from the longer surface figure."
+      },
+      {
+        "label": "Surface runtime",
+        "value": "Up to 7 hours",
+        "meaning": "Does not establish seven hours of underwater cleaning."
+      },
+      {
+        "label": "Operating depth",
+        "value": "0.2–3.5 m / about 0.7–11.5 ft",
+        "meaning": "Shallow-platform cleaning has additional footprint requirements."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does Sora 70 clean both the water surface and the pool floor?",
+        "answer": "Yes. Beatbot describes Pro Mode as covering surface, suitable platforms, floor, walls and waterline. Standard Mode excludes water-surface cleaning. Select the mode for your actual debris problem."
+      },
+      {
+        "question": "Will it clean a small pool step?",
+        "answer": "Do not assume so. The feature-page footnote requires a platform at least 1 m by 1 m and water more than 8 inches deep. A narrow stair tread does not meet that specification."
+      },
+      {
+        "question": "Is the 3-micron filter supplied as standard?",
+        "answer": "No. The US listing describes a standard 150-micron basket and a separately purchased 3-micron dual-filter accessory. Its displayed accessory price was USD 59.99 on September 6, 2026."
+      },
+      {
+        "question": "Does the seven-hour runtime include floor cleaning?",
+        "answer": "No. The manufacturer separates up to seven hours on the surface from up to five hours on the floor. Do not add these together or assume either maximum applies to a combined Pro cycle."
+      },
+      {
+        "question": "Can I call it back from the bottom using the app?",
+        "answer": "The feature-page footnote limits app navigation and one-touch retrieval to the water surface because of Wi-Fi limitations. Automatic surface parking and a live underwater app command are different functions."
+      },
+      {
+        "question": "How is it different from AquaSense X?",
+        "answer": "AquaSense X includes AstroRinse filter-station functionality and a different navigation platform. Sora 70 uses manual filter care and a charging plug. The more relevant comparison is the maintenance routine and station space, not just a shared five-area cleaning claim."
+      },
+      {
+        "question": "Can it clean a saltwater pool?",
+        "answer": "The US storefront says salt concentration must be below 5,000 ppm. Check the local manual’s full operating envelope, the pool surfaces and the exact unit. A robotic cleaner does not replace the pool’s filtration or water-care routine."
+      }
+    ],
+    "articles": [
+      "who-owns-beatbot-xingmai-manufacturing",
+      "robotic-pool-cleaners-leaves-fine-debris"
+    ],
+    "related": [
+      "beatbot-aquasense-x",
+      "ecovacs-ultramarine-p1",
+      "mova-rover-x10"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official US product, prices and specification table",
+        "url": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Manufacturer CES 2026 launch announcement",
+        "url": "https://www.prnewswire.com/news-releases/beatbot-launches-sora-70-full-coverage-innovative-skimming-zero-hassle-302653086.html"
+      },
+      {
+        "label": "Official feature details and platform/app footnotes",
+        "url": "https://beatbot.com/pages/sora-70"
+      },
+      {
+        "label": "Manufacturer manual · Spanish PDF hosted by Amazon",
+        "url": "https://m.media-amazon.com/images/I/A1ja7eGPUYL.pdf"
+      },
+      {
+        "label": "Official Beatbot care and support",
+        "url": "https://beatbot.com/pages/beatbot-care"
+      },
+      {
+        "label": "Comparison reference · Beatbot AquaSense X",
+        "url": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Comparison reference · ECOVACS ULTRAMARINE P1",
+        "url": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0812/9049/4250/files/Sora70_for_shop_1.webp?v=1767699669",
+    "launchYear": 2026,
+    "launchNote": "Unveiled at CES on January 6, 2026 for a spring release; the cited US store now offers the model.",
+    "launchSource": "https://www.prnewswire.com/news-releases/beatbot-launches-sora-70-full-coverage-innovative-skimming-zero-hassle-302653086.html"
   }
 ]

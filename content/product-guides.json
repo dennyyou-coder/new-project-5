@@ -1836,5 +1836,589 @@
         "note": "Use the X10 entry to check for updated instructions."
       }
     ]
+  },
+  "roborock-saros-20-sonic": {
+    "verdict": "Shortlist Sonic for its vibrating-pad approach and route access. The meaningful choice against Saros 20 is how it mops, navigates and fits your station space.",
+    "notFor": "Buyers expecting autonomous stair cleaning, guaranteed passage through a 7.95 cm gap, or a universally included plumbing kit.",
+    "specifications": [
+      {
+        "label": "Mop mechanism",
+        "value": "VibraRise 5.0 extendable vibrating pad",
+        "meaning": "Different from the dual rotating pads on Saros 20.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Vibration rate",
+        "value": "Up to 4,000 per minute",
+        "meaning": "Manufacturer operating claim, not an independent stain-removal score.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Mop pressure",
+        "value": "14 N",
+        "meaning": "Compare floor suitability and residue after drying.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Peak suction",
+        "value": "36,000 Pa",
+        "meaning": "Current global page; the earlier CES release stated 35,000 Pa.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 353 × 79.8 mm",
+        "meaning": "Use the body measurement and allow extra clearance.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Low-clearance claim",
+        "value": "7.95 cm",
+        "meaning": "A test-condition entry claim; not the listed 7.98 cm body height.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Navigation",
+        "value": "RetractSense retractable LDS",
+        "meaning": "The sensor changes position for low-clearance access.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Obstacle recognition",
+        "value": "Reactive AI 3.0",
+        "meaning": "RGB camera and structured light; still supervise unusual clutter.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Double-layer crossing",
+        "value": "4.5 + 4.3 cm",
+        "meaning": "Test gap is greater than 12 cm and no more than 14 cm; not a single 8.8 cm step.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Tank dock dimensions",
+        "value": "440 × 409 × 470 mm",
+        "meaning": "Leave working space to remove tanks and reach the tray.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Plumbed dock dimensions",
+        "value": "440 × 409 × 300 mm",
+        "meaning": "Separate regional refill-and-drain configuration.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Dock mop washing",
+        "value": "Up to 100°C",
+        "meaning": "Water used for washing at the dock, not floor temperature.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Warm-air drying",
+        "value": "55°C",
+        "meaning": "Separate mop and dust-path drying functions.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Battery / charging",
+        "value": "6,400 mAh / about 150 minutes",
+        "meaning": "Charging time varies with temperature and battery condition.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Mop handling",
+        "value": "Automatic detachment",
+        "meaning": "Useful for dry vacuuming and separate pad washing.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      },
+      {
+        "label": "Edge sweeping",
+        "value": "FlexiArm Arc side brush",
+        "meaning": "Inspect actual corner reach around furniture legs.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany · EUR",
+        "amount": "EUR 999",
+        "source": "https://de.roborock.com/products/roborock-saros-20-sonic",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "Plain-model storefront price observed on September 6. The page displayed EUR 1,549 as its crossed-out reference price; this is not a worldwide offer."
+      },
+      {
+        "market": "Germany · EUR",
+        "amount": "EUR 929",
+        "source": "https://de.roborock.com/products/roborock-saros-20-sonic",
+        "kind": "Conditional member offer",
+        "date": "2026-09-06",
+        "note": "German page advertised a registered-member price. Eligibility, timing and checkout conditions apply; it is not the general shelf price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock Saros 20 Sonic",
+          "url": "https://global.roborock.com/pages/roborock-saros-20-sonic",
+          "market": "Global specification · Germany price reference"
+        },
+        {
+          "name": "Roborock Saros 20",
+          "url": "https://global.roborock.com/pages/roborock-saros-20",
+          "market": "Global specification"
+        },
+        {
+          "name": "Dreame X60 Ultra",
+          "url": "https://www.dreametech.com/products/x60-ultra-robot-vacuum",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping system",
+          "values": [
+            "Extendable vibrating pad",
+            "Dual rotating pads",
+            "Dual rotating thermal pads"
+          ]
+        },
+        {
+          "label": "Navigation approach",
+          "values": [
+            "RetractSense retractable LDS",
+            "StarSight 2.0",
+            "Retractable navigation sensor"
+          ]
+        },
+        {
+          "label": "Current peak suction claim",
+          "values": [
+            "36,000 Pa",
+            "36,000 Pa",
+            "35,000 Pa"
+          ]
+        },
+        {
+          "label": "Tank dock size",
+          "values": [
+            "440 × 409 × 470 mm",
+            "381 × 475 × 488 mm",
+            "390 × 423 × 499 mm"
+          ]
+        },
+        {
+          "label": "Question to resolve",
+          "values": [
+            "Does vibration improve your recurring stains?",
+            "Does the rotating-pad route suit your home?",
+            "Do the local X60 package and upkeep suit you?"
+          ]
+        }
+      ],
+      "takeaway": "Compare mopping results, doorway completion and tank access. Similar peak suction numbers cannot establish a cleaning winner; dimensions refer to the cited tank-dock configurations."
+    },
+    "resources": [
+      {
+        "label": "Saros 20 Sonic user manual",
+        "url": "https://gl-files.roborock.com/product/center/images/Roborock%20Saros%2020%20Sonic%20FCC%20User%20Manual.44438679.pdf",
+        "note": "Manufacturer FCC manual with an English section; match the robot and dock codes to your unit."
+      },
+      {
+        "label": "Regional manuals and diagrams",
+        "url": "https://help.roborock.com/ca/product/roborock-saros-20-sonic",
+        "note": "Choose the correct CE/FCC version, language and water-tank configuration."
+      },
+      {
+        "label": "Official feature demonstrations",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-sonic",
+        "note": "View the mop, chassis and dock demonstrations alongside their test-condition footnotes."
+      }
+    ]
+  },
+  "ecovacs-ultramarine-p1": {
+    "verdict": "A useful shortlist for floor, wall and waterline debris at a lower purchase tier. Verify pool depth and accept manual retrieval and filter rinsing.",
+    "notFor": "Shallow tanning shelves, step-cleaning requirements, floating-leaf skimming or an expectation of underwater app control.",
+    "specifications": [
+      {
+        "label": "Water-flow claim",
+        "value": "4,800 GPH",
+        "meaning": "Manufacturer pump-flow figure, not a comparative pickup score.",
+        "source": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1"
+      },
+      {
+        "label": "Rated pool-floor area",
+        "value": "Up to 180 m² / 1,937 ft²",
+        "meaning": "Layout and debris load affect finished coverage.",
+        "source": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1"
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 180 minutes",
+        "meaning": "Do not assume the same endurance in wall or higher-power cleaning.",
+        "source": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1"
+      },
+      {
+        "label": "Outer filter",
+        "value": "180 μm",
+        "meaning": "Captures larger debris before the fine inner layer.",
+        "source": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1"
+      },
+      {
+        "label": "Inner filter",
+        "value": "3 μm",
+        "meaning": "Included dual-layer system; fine media needs regular care.",
+        "source": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1"
+      },
+      {
+        "label": "Navigation",
+        "value": "SmartNavi with IMU",
+        "meaning": "Assess the actual route around drains and wall transitions.",
+        "source": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1"
+      },
+      {
+        "label": "Cleaning modes",
+        "value": "Floor / Wall / All",
+        "meaning": "All mode covers the floor, gentle slopes, walls and waterline.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Step cleaning",
+        "value": "Not designed to clean steps",
+        "meaning": "The manual overrides broader storefront platform wording.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Operating water depth",
+        "value": "0.5–3 m / 1.64–9.84 ft",
+        "meaning": "Shallower shelves can trap the robot.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours",
+        "meaning": "Start with a dry charging port and the supplied adapter.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Battery capacity",
+        "value": "4,600 mAh typical / 4,400 mAh rated",
+        "meaning": "US manual SWB11 specification; do not infer capacity from the battery-pack name.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Battery voltage",
+        "value": "21.6 V",
+        "meaning": "Capacity alone is not a cross-voltage energy comparison.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Water temperature",
+        "value": "6–35°C / 43–95°F",
+        "meaning": "Follow the manual for the exact pool conditions.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Water chemistry limits",
+        "value": "pH 7.0–7.8; chlorine ≤4 ppm; salt ≤5,000 ppm",
+        "meaning": "These are device operating limits, not a pool-treatment prescription.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "App connection",
+        "value": "Above water only",
+        "meaning": "The manual warns that immersion can disconnect the app.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      },
+      {
+        "label": "Retrieval / charging location",
+        "value": "Hook retrieval / dry indoor charging",
+        "meaning": "Keep the charging location at least 3.5 m from the pool.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 499.99",
+        "source": "https://www.prnewswire.com/news-releases/ecovacs-expands-into-pool-care-with-the-ultramarine-p1-robotic-pool-cleaner-now-available-302761892.html",
+        "kind": "US launch price",
+        "date": "2026-05-05",
+        "note": "Manufacturer announcement price for the plain P1 at US launch."
+      },
+      {
+        "market": "United States · USD",
+        "amount": "USD 499.99",
+        "source": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "Plain ULTRAMARINE P1 listing observed on September 6. Care Kit and accessory combinations are separate offers."
+      }
+    ],
+    "resources": [
+      {
+        "label": "ULTRAMARINE P1 US manual",
+        "url": "https://site-static.ecovacs.com/upload/file/support/2026/03/13/081416_5819%24ULTRAMARINEP1InstructionManualUS.pdf",
+        "note": "English section includes water-depth limits, step exclusions, charging placement and the SWB11 specification table."
+      },
+      {
+        "label": "Setup videos and maintenance help",
+        "url": "https://help.ecovacs.com/us/support/ultramarine-p1",
+        "note": "Model-specific demonstrations for filter selection, retrieval, charging, climbing rings and off-season storage."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS ULTRAMARINE P1",
+          "url": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1",
+          "market": "United States · SWB11 manual"
+        },
+        {
+          "name": "Beatbot Sora 70",
+          "url": "https://beatbot.com/products/sora-70",
+          "market": "United States"
+        },
+        {
+          "name": "MOVA Rover X10",
+          "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning focus",
+          "values": [
+            "Floor, walls and waterline",
+            "Underwater cleaning plus surface skimming",
+            "Underwater cleaning plus surface skimming"
+          ]
+        },
+        {
+          "label": "Fine-filter reference",
+          "values": [
+            "180 μm outer + 3 μm inner",
+            "150 μm included; 3 μm optional",
+            "180 μm and 3 μm options"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "Up to 3 h Eco",
+            "Up to 5 h floor / 7 h surface",
+            "Up to 6 h floor / 12 h surface"
+          ]
+        },
+        {
+          "label": "Depth / step conditions",
+          "values": [
+            "0.5–3 m; steps excluded",
+            "0.2–3.5 m; platform minimum applies",
+            "Up to 3 m; confirm shelf geometry"
+          ]
+        },
+        {
+          "label": "Ownership question",
+          "values": [
+            "Can you manage hook retrieval and filter rinsing?",
+            "Will surface parking and skimming save time?",
+            "Can you manage its larger body and charging space?"
+          ]
+        }
+      ],
+      "takeaway": "P1 addresses a narrower cleaning task. The other two add surface functions, but their published runtime figures are not equivalent to P1’s Eco-mode claim."
+    }
+  },
+  "beatbot-sora-70": {
+    "verdict": "A strong candidate when both floating leaves and underwater debris need attention, and manual basket rinsing is acceptable. Verify platform geometry and retrieval access first.",
+    "notFor": "Narrow stair treads, expectations of constant underwater Wi-Fi control, or buyers requiring automatic filter washing.",
+    "specifications": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Floor, walls, waterline, surface and suitable platforms",
+        "meaning": "Use the correct mode; platform access has minimum-size conditions.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Water-flow claim",
+        "value": "6,800 GPH",
+        "meaning": "Manufacturer flow rating, not an independent debris-removal result.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Basket capacity",
+        "value": "6 L",
+        "meaning": "Large debris can occupy usable space quickly.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Included filtration",
+        "value": "150 μm",
+        "meaning": "The base basket is not the optional 3-micron accessory.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Optional filtration",
+        "value": "3 μm dual filter basket",
+        "meaning": "Sold separately; check regional availability and bundle contents.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Battery capacity",
+        "value": "10,000 mAh",
+        "meaning": "Compare operating modes and battery voltage, not capacity alone.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Floor runtime",
+        "value": "Up to 5 hours",
+        "meaning": "A floor-cleaning figure, distinct from the longer surface figure.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Surface runtime",
+        "value": "Up to 7 hours",
+        "meaning": "Does not establish seven hours of underwater cleaning.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Charging",
+        "value": "About 4.5 hours / 65 W",
+        "meaning": "Uses a charging plug, not an automatic filter-washing station.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "434 × 430 × 285 mm",
+        "meaning": "Allow room to carry, drain and store the unit.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Robot weight",
+        "value": "10.5 kg / 23.1 lb",
+        "meaning": "Storefront reference; practice lifting from your actual deck height.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Operating depth",
+        "value": "0.2–3.5 m / about 0.7–11.5 ft",
+        "meaning": "Shallow-platform cleaning has additional footprint requirements.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Navigation",
+        "value": "SonicSense ultrasonic sensing",
+        "meaning": "Inspect coverage around corners and drain fittings.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Connectivity",
+        "value": "2.4 / 5 GHz Wi-Fi + Bluetooth",
+        "meaning": "Wireless support does not imply continuous underwater communication.",
+        "source": "https://beatbot.com/products/sora-70"
+      },
+      {
+        "label": "Claimed coverage",
+        "value": "Up to 3,229 ft² / about 300 m²",
+        "meaning": "Single-charge manufacturer claim; pool layout affects completion.",
+        "source": "https://beatbot.com/pages/sora-70"
+      },
+      {
+        "label": "Shallow-platform conditions",
+        "value": "At least 1 × 1 m; water deeper than 8 in",
+        "meaning": "The minimum footprint and water depth both apply.",
+        "source": "https://beatbot.com/pages/sora-70"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 1,099",
+        "source": "https://beatbot.com/products/sora-70",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "US listing for Midnight Blue and Lavender Purple observed on September 6. The page showed USD 1,499 as its crossed-out reference price; promotions and stock can change."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Beatbot Sora 70",
+          "url": "https://beatbot.com/products/sora-70",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot AquaSense X",
+          "url": "https://beatbot.com/products/aquasense-x",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS ULTRAMARINE P1",
+          "url": "https://www.ecovacs.com/us/shop/ultramarine-robotic-pool-cleaner/ultramarine-p1",
+          "market": "United States · SWB11 manual"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Water-surface skimming",
+          "values": [
+            "Yes; mode dependent",
+            "Yes; mode dependent",
+            "Not specified in the manual"
+          ]
+        },
+        {
+          "label": "Published shallow-area limit",
+          "values": [
+            "Over 8 in water; at least 1 × 1 m platform",
+            "At least 35 cm water depth",
+            "0.5 m minimum; steps excluded"
+          ]
+        },
+        {
+          "label": "Filter care",
+          "values": [
+            "Manual basket rinsing",
+            "AstroRinse station assistance",
+            "Manual basket rinsing"
+          ]
+        },
+        {
+          "label": "Advertised runtime reference",
+          "values": [
+            "5 h floor / 7 h surface",
+            "5 h floor / 10 h surface",
+            "3 h Eco; no surface mode"
+          ]
+        },
+        {
+          "label": "Question to resolve",
+          "values": [
+            "Will it cover your platform and floating debris?",
+            "Is less filter handling worth the station space?",
+            "Is underwater cleaning sufficient for your pool?"
+          ]
+        }
+      ],
+      "takeaway": "The three options solve different ownership tasks. Runtime claims use different modes and conditions; they are not a matched performance test."
+    },
+    "resources": [
+      {
+        "label": "Sora 70 feature demonstrations",
+        "url": "https://beatbot.com/pages/sora-70",
+        "note": "Includes the platform-size conditions and the limitation on app control below the surface."
+      },
+      {
+        "label": "Sora 70 manufacturer manual · Spanish",
+        "url": "https://m.media-amazon.com/images/I/A1ja7eGPUYL.pdf",
+        "note": "Spanish-language manufacturer PDF hosted by Amazon. Obtain the matching local-language manual for your purchased unit."
+      },
+      {
+        "label": "Official support and warranty help",
+        "url": "https://beatbot.com/pages/beatbot-care",
+        "note": "Confirm local service, compatible accessories and the correct manual for your region."
+      }
+    ]
   }
 }

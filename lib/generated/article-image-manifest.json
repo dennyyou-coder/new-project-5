@@ -481,6 +481,17 @@
         "outputHash": "sha256:5c2ce8949d7506c4cfc4fb78cc334137bb2900f3c0a684502b32ad75db524b58"
       }
     },
+    "/images/articles/beatbot-sora-70/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 720,
+      "height": 720,
+      "bytes": 29174,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:17cc4fef9144dcd572cbf61cf71e2ef888821781bf462ad7fcd0049372f1a12f",
+      "outputHash": "sha256:1e6b5c416e3a62805a5832cb2db86e7713512cf0ddd8ceeaffc8101daea98a96"
+    },
     "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1581,6 +1592,17 @@
         "bytes": 15704,
         "outputHash": "sha256:5538bc91aebe651d9c9f016e93cb3734007fe6d04fae881ed488849157d59e2b"
       }
+    },
+    "/images/articles/ecovacs-ultramarine-p1/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 920,
+      "height": 920,
+      "bytes": 45074,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1174165b4efda8f0a12f3ce4b9cafe162bc0c8eabd9d6b84ed38e45273ef2468",
+      "outputHash": "sha256:aa5cc2fee7e32486216241bbec1969768c08e0958093a093cce2f7cde8e40e9e"
     },
     "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/01-cover.webp": {
       "role": "cover",
@@ -3435,6 +3457,17 @@
         "bytes": 46084,
         "outputHash": "sha256:f11781181cce228441c1b664782838b9ed962c639e2a60cc2f6fe869f321154a"
       }
+    },
+    "/images/articles/roborock-saros-20-sonic/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 33326,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:80778f6e3d466cb70ccb054868cf9bb3996fee78b4e25b130831fbee77f8d3ea",
+      "outputHash": "sha256:5904fc7834794df9cdaacafa2f2b1aa494c9192a84c8106b4b479d3074cdcef0"
     },
     "/images/articles/roborock-saros-20/01-cover.webp": {
       "role": "cover",
@@ -31300,6 +31333,11 @@
       "cover": "/images/blog/beatbot-robotic-pool-cleaner-buying-guide.webp",
       "body": []
     },
+    "beatbot-sora-70": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/beatbot-sora-70/01-cover.webp",
+      "body": []
+    },
     "beatbot-vs-dolphin-xingmai-maytronics": {
       "budgetClass": "standard",
       "cover": "/images/blog/beatbot-vs-dolphin-platform-service-cover.webp",
@@ -32301,6 +32339,11 @@
         "/images/insights/ecovacs-mid-year-report-reading-image-009.jpg",
         "/images/insights/ecovacs-mid-year-report-reading-image-010.jpg"
       ]
+    },
+    "ecovacs-ultramarine-p1": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-ultramarine-p1/01-cover.webp",
+      "body": []
     },
     "ecovacs-x5-hybrid-dreame-triform-market": {
       "budgetClass": "standard",
@@ -33497,6 +33540,11 @@
     "roborock-saros-20": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-saros-20/01-cover.webp",
+      "body": []
+    },
+    "roborock-saros-20-sonic": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-saros-20-sonic/01-cover.webp",
       "body": []
     },
     "roborock-targets-70-billion-rmb-by-2029": {
@@ -35370,6 +35418,15 @@
         }
       }
     },
+    "beatbot-sora-70": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-sora-70/01-cover.webp",
+          "hash": "sha256:17cc4fef9144dcd572cbf61cf71e2ef888821781bf462ad7fcd0049372f1a12f"
+        }
+      }
+    },
     "building-worlds-no-1-cleaning-show-from-scratch-episode-01": {
       "files": {
         "building-worlds-no-1-cleaning-show-episode-01-cover.webp": {
@@ -35680,6 +35737,15 @@
           "status": "matched",
           "primary": "/images/articles/ecovacs-deebot-x12-omnicyclone/01-cover.webp",
           "hash": "sha256:23fb39c14e189f41a5e062c9174189d2e1c133e03badd322caaa86ffcb4d1f65"
+        }
+      }
+    },
+    "ecovacs-ultramarine-p1": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-ultramarine-p1/01-cover.webp",
+          "hash": "sha256:1174165b4efda8f0a12f3ce4b9cafe162bc0c8eabd9d6b84ed38e45273ef2468"
         }
       }
     },
@@ -36088,6 +36154,15 @@
           "status": "matched",
           "primary": "/images/articles/roborock-saros-20/01-cover.webp",
           "hash": "sha256:09674840e614bd5679ddf1bdc58eedd8e4e28635ea4cb121b67c3067a81ff36a"
+        }
+      }
+    },
+    "roborock-saros-20-sonic": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-saros-20-sonic/01-cover.webp",
+          "hash": "sha256:80778f6e3d466cb70ccb054868cf9bb3996fee78b4e25b130831fbee77f8d3ea"
         }
       }
     },
