@@ -440,6 +440,7 @@
       "who-makes-mova-robot-mowers-dreame-group"
     ],
     "related": [
+      "segway-navimow-i210-awd",
       "mammotion-luba-mini-2-awd-1500",
       "sunseeker-s4",
       "segway-navimow-x430"
@@ -545,6 +546,7 @@
       "luba-vs-navimow-mammotion-ninebot"
     ],
     "related": [
+      "mammotion-luba-3-awd-1500",
       "mova-lidax-ultra-1000",
       "sunseeker-s4",
       "segway-navimow-x430"
@@ -1090,6 +1092,7 @@
       "segway-navimow-vs-husqvarna-automower"
     ],
     "related": [
+      "segway-navimow-h220",
       "mammotion-luba-mini-2-awd-1500",
       "mova-lidax-ultra-1000"
     ],
@@ -1552,5 +1555,319 @@
     "launchYear": 2026,
     "launchNote": "Unveiled at CES on January 6, 2026 for a spring release; the cited US store now offers the model.",
     "launchSource": "https://www.prnewswire.com/news-releases/beatbot-launches-sora-70-full-coverage-innovative-skimming-zero-hassle-302653086.html"
+  },
+  {
+    "slug": "mammotion-luba-3-awd-1500",
+    "name": "Mammotion LUBA 3 AWD 1500",
+    "brand": "Mammotion",
+    "brandSlug": "mammotion",
+    "category": "Robot mowers",
+    "market": "United States · specified model",
+    "summary": "A wide-deck AWD mower for lawns up to 1,500 m², using LiDAR and vision without an RTK installation.",
+    "fit": "Owners with uneven lawns, accessible mowing zones and a preferred grass height within the standard cutting range.",
+    "caution": "The 1500 has different navigation and battery specifications from the 3000 and 5000; 1500H is a separate high-cut version.",
+    "facts": [
+      {
+        "label": "Recommended lawn",
+        "value": "1,500 m² / 0.37 acre",
+        "meaning": "Use actual mowable grass area, with room for interrupted schedules."
+      },
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR + AI vision",
+        "meaning": "The 1500 does not use RTK or NetRTK."
+      },
+      {
+        "label": "Working-area slope",
+        "value": "Up to 80% / 38.6°",
+        "meaning": "A maximum capability, not a wet-grass guarantee."
+      },
+      {
+        "label": "Cutting width",
+        "value": "400 mm / 15.7 in",
+        "meaning": "Dual discs suit accessible grass areas; allow turning space."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does LUBA 3 AWD 1500 use NetRTK?",
+        "answer": "No. The US 1500 selector specifies LiDAR and AI vision without RTK or NetRTK. Tri-Fusion claims for larger LUBA 3 variants should not be applied to this model."
+      },
+      {
+        "question": "What is different about the 1500H?",
+        "answer": "The standard 1500 cuts at 25–70 mm; 1500H is the 55–100 mm high-cut version. The manufacturer manual also lists different body dimensions and crossing limits. Choose by grass height and exact model code."
+      },
+      {
+        "question": "Can it handle an 80% slope at the boundary?",
+        "answer": "No. The manufacturer manual separates an 80% working-area limit from a 40% edge limit. Wet ground, turns and a drop beyond the boundary need additional care and the prescribed setbacks."
+      },
+      {
+        "question": "Does the 1500 have the advertised 15 Ah battery?",
+        "answer": "No. The manufacturer’s model table specifies 9.4 Ah and 203 Wh for 1500/1500H. The 15 Ah pack belongs to larger variants. Series-wide promotional copy can combine several configurations."
+      },
+      {
+        "question": "Will it mow tightly against every wall?",
+        "answer": "Do not assume a wide deck means a complete wall-edge finish. Check the body offset, border shape and room to turn. Expect to assess a separate trimming routine where a wall or raised border prevents overlap."
+      },
+      {
+        "question": "Is mobile service included forever?",
+        "answer": "The US 1500 listing includes three years of 4G service. Check renewal pricing and supported remote features in the Mammotion app. This is separate from the local LiDAR-and-vision navigation system."
+      },
+      {
+        "question": "Why are runtime figures different across sources?",
+        "answer": "The January V1.0 manual measures mowing from 100% to 15% battery; newer European marketing uses a per-charge claim with different figures. This guide does not combine those tests or present the largest series figure as a 1500 result."
+      }
+    ],
+    "articles": [
+      "mammotion-luba-vs-yuka-robot-mowers",
+      "luba-vs-navimow-mammotion-ninebot",
+      "sunseeker-vs-mammotion-robot-mowers"
+    ],
+    "related": [
+      "mammotion-luba-mini-2-awd-1500",
+      "segway-navimow-h220"
+    ],
+    "announced": "2026-01-05",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "US 1500 standard offer",
+        "url": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578"
+      },
+      {
+        "label": "Manufacturer manual · January 2026 · hosted by Lowe’s",
+        "url": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Latest official English manual",
+        "url": "https://support.mammotion.com/portal/en/kb/articles/luba-3-awd-series-user-manual-en"
+      },
+      {
+        "label": "Manufacturer model comparison · Europe",
+        "url": "https://eu.mammotion.com/blogs/news/luba-3-vs-luba-2"
+      },
+      {
+        "label": "Manufacturer CES 2026 announcement",
+        "url": "https://www.prnewswire.com/news-releases/mammotion-takes-stage-at-ces-2026-with-its-game-changing-robotic-lawn-mowing-lineup-ushering-in-the-next-era-of-autonomous-lawn-mastery-302652397.html"
+      },
+      {
+        "label": "Comparison reference · Mammotion LUBA mini 2 AWD 1500",
+        "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Comparison reference · Segway Navimow H220",
+        "url": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0744/3310/2122/files/13_1_-_-jpg.webp?v=1774842649",
+    "launchYear": 2026,
+    "launchNote": "Series announced at CES 2026; this profile follows the named US model.",
+    "launchSource": "https://www.prnewswire.com/news-releases/mammotion-takes-stage-at-ces-2026-with-its-game-changing-robotic-lawn-mowing-lineup-ushering-in-the-next-era-of-autonomous-lawn-mastery-302652397.html"
+  },
+  {
+    "slug": "segway-navimow-i210-awd",
+    "name": "Segway Navimow i210 AWD",
+    "brand": "Segway Navimow",
+    "brandSlug": "segway-navimow",
+    "category": "Robot mowers",
+    "market": "United States · specified model",
+    "summary": "A compact AWD robot mower combining Network RTK and vision for quarter-acre US lawns, with no boundary wire.",
+    "fit": "Smaller lawns needing extra traction, a compact body and a cutting height of at least two inches.",
+    "caution": "Check Network RTK coverage and the US cutting-height range; i210 AWD, i206 AWD and i2 LiDAR are distinct configurations.",
+    "facts": [
+      {
+        "label": "Recommended lawn",
+        "value": "0.25 acre",
+        "meaning": "i210 AWD rating; do not use the smaller i206 allowance."
+      },
+      {
+        "label": "Navigation",
+        "value": "Network RTK + vision",
+        "meaning": "Check local coverage before relying on antenna-free setup."
+      },
+      {
+        "label": "Slope limit",
+        "value": "45% / about 24°",
+        "meaning": "Manual specifies 45% both inside the area and at the boundary."
+      },
+      {
+        "label": "Cutting height",
+        "value": "2–3.6 in",
+        "meaning": "US manual range; European low-cut figures are different."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How is i210 AWD different from i206 AWD?",
+        "answer": "The US i210 is rated for 0.25 acre and has a 5.1 Ah battery, versus 0.15 acre and 2.55 Ah for i206. The US manual gives roughly 120-minute mowing and charging intervals for i210, compared with 60 minutes for i206."
+      },
+      {
+        "question": "Does it need an antenna or boundary wire?",
+        "answer": "Antenna-free setup uses supported Network RTK coverage and vision. Check the official coverage tool at the property. The manual also describes an RTK antenna installation; confirm the appropriate local accessory if coverage is unsuitable."
+      },
+      {
+        "question": "Is Network RTK a paid subscription?",
+        "answer": "The current US product page says Network RTK access and the cellular data required for positioning are included at no extra cost. Optional remote connectivity is separate; the FAQ lists one year of free 4G service. Check the app for applicable renewal terms."
+      },
+      {
+        "question": "Can the US i210 AWD cut down to 20 mm?",
+        "answer": "The US manual lists 2–3.6 inches, approximately 51–91 mm. Do not apply European low-cut specifications to a US order. Check local model documentation if you need a closely cut lawn."
+      },
+      {
+        "question": "Is i210 AWD the same as i2 LiDAR?",
+        "answer": "No. This i210 AWD uses Network RTK with vision. Navimow’s i2 LiDAR is a separate product family. An i2 label alone is not enough to identify the navigation system or terrain capabilities."
+      },
+      {
+        "question": "Will AWD avoid all lawn damage?",
+        "answer": "No drivetrain guarantees an unmarked lawn. Soil moisture, repeated pivoting and a worn docking approach matter. Test the tightest turn and restrict mowing when conditions could damage the turf."
+      },
+      {
+        "question": "How often will I need to maintain the blades?",
+        "answer": "The US manual recommends replacing all blades and screws every one to two months for regular use, with inspections and earlier replacement if damaged. Follow the shutdown procedure and use compatible parts; actual wear depends on the lawn."
+      }
+    ],
+    "articles": [
+      "luba-vs-navimow-mammotion-ninebot",
+      "segway-navimow-vs-husqvarna-automower"
+    ],
+    "related": [
+      "segway-navimow-h220",
+      "mova-lidax-ultra-1000"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "US i210 AWD selected offer",
+        "url": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001"
+      },
+      {
+        "label": "US i2 AWD owner’s manual",
+        "url": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Official manual library",
+        "url": "https://navimow.com/pages/user-manual"
+      },
+      {
+        "label": "Manufacturer CES 2026 announcement",
+        "url": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
+      },
+      {
+        "label": "Comparison reference · Segway Navimow H220",
+        "url": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177"
+      },
+      {
+        "label": "Comparison reference · MOVA LiDAX Ultra 1000",
+        "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0676/6896/7561/files/i210_AWD_Front45_07_69611953-5068-4d69-b59a-a83c5f8a027b.png?v=1770029744",
+    "launchYear": 2026,
+    "launchNote": "Series announced at CES 2026; this profile follows the named US model.",
+    "launchSource": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
+  },
+  {
+    "slug": "segway-navimow-h220",
+    "name": "Segway Navimow H220",
+    "brand": "Segway Navimow",
+    "brandSlug": "segway-navimow",
+    "category": "Robot mowers",
+    "market": "United States · specified model",
+    "summary": "A half-acre robot mower with LiDAR, Network RTK and vision, a larger battery than H210 and detailed zone controls.",
+    "fit": "Owners of divided or tree-lined lawns who value map control and longer mowing sessions within moderate terrain limits.",
+    "caution": "The 45% working-area slope rating drops to 25% at the boundary; H220 is not the i210 AWD configuration.",
+    "facts": [
+      {
+        "label": "Recommended lawn",
+        "value": "0.5 acre",
+        "meaning": "H220 rating; all zones share one total area allowance."
+      },
+      {
+        "label": "Navigation",
+        "value": "LiDAR + Network RTK + vision",
+        "meaning": "EFLS combines three inputs; confirm local network availability."
+      },
+      {
+        "label": "Battery",
+        "value": "10 Ah / 216 Wh",
+        "meaning": "H220 specification; H210 has a smaller 5.1 Ah pack."
+      },
+      {
+        "label": "Standard cutting height",
+        "value": "2–4 in",
+        "meaning": "Included low-cutting kit changes the range to 0.8–2.8 in."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What changes from H210 to H220?",
+        "answer": "The US manual gives H220 a 0.5-acre recommendation, 10 Ah battery and about 220 minutes of mowing per charge. H210 is rated at 0.25 acre with 5.1 Ah and about 110 minutes. H220 also takes longer to charge."
+      },
+      {
+        "question": "Can H220 mow a 45% slope along a boundary?",
+        "answer": "The US manual limits the boundary to 25%, even though the working-area limit is 45%. Plan setbacks and turning space around sloping edges, water and drops using the manual’s installation instructions."
+      },
+      {
+        "question": "Can H220 cut below two inches?",
+        "answer": "The US standard range is 2–4 inches. The US manual and box list include a low-cutting kit with a 0.8–2.8-inch range. Confirm the kit in the local package and follow the conversion instructions; it is not merely a lower app setting."
+      },
+      {
+        "question": "Does Network RTK require the annual Connect+ fee?",
+        "answer": "The current US product page lists Network RTK at no extra cost. Connect+ is a separate remote-connectivity service, included for one year and shown at USD 32.90 per year afterward. Check local terms when renewing."
+      },
+      {
+        "question": "Does zero-edge cutting mean no trimming?",
+        "answer": "No. Ride-on cutting depends on a flush, traversable border. The official page separately lists an approximately two-inch clearance from walls or fences. A raised obstacle can leave a strip for manual finishing."
+      },
+      {
+        "question": "Is H220 an AWD alternative to i210 AWD?",
+        "answer": "Do not treat the two as the same drive configuration. H220 emphasises its LiDAR, Network RTK and vision system; i210 is explicitly the AWD model. Compare the permitted slopes and actual turn performance rather than inferring drivetrain from price."
+      },
+      {
+        "question": "Is 0.93 acre per day its recommended lawn size?",
+        "answer": "No. That is a continuous 24-hour test calculation on flat, clear grass. H220’s recommended lawn is 0.5 acre. Charging, weather, travel and your available mowing hours determine the practical schedule."
+      }
+    ],
+    "articles": [
+      "segway-navimow-vs-husqvarna-automower",
+      "luba-vs-navimow-mammotion-ninebot"
+    ],
+    "related": [
+      "segway-navimow-i210-awd",
+      "segway-navimow-x430"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "US H220 selected offer",
+        "url": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177"
+      },
+      {
+        "label": "US H2 owner’s manual",
+        "url": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Official manual library",
+        "url": "https://navimow.com/pages/user-manual"
+      },
+      {
+        "label": "Manufacturer CES 2026 announcement",
+        "url": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
+      },
+      {
+        "label": "Comparison reference · Segway Navimow i210 AWD",
+        "url": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001"
+      },
+      {
+        "label": "Comparison reference · Segway Navimow X430",
+        "url": "https://navimow.com/products/navimow-x4-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0676/6896/7561/files/H2-1.1-PDP-H220-NA_c70617c0-8af5-4bd9-9a45-abe9e4e22f08.png?v=1769166200",
+    "launchYear": 2026,
+    "launchNote": "Series announced at CES 2026; this profile follows the named US model.",
+    "launchSource": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
   }
 ]

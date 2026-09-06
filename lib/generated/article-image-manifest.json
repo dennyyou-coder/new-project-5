@@ -2810,6 +2810,24 @@
         "outputHash": "sha256:c9a448c072ec344defc97405b9afda33767cc4a2bf32a6525ee5c53e68f74068"
       }
     },
+    "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 73940,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e78a53e22617b58a86e17add05cc577b39801735eda1f2ebfdfc33b7b8ab5a29",
+      "outputHash": "sha256:91def8a85cefb8380a23b93d0b518c16d3441a9e6e7646d8c24b6e4fd4f37afe",
+      "mobile": {
+        "src": "/images/articles/mammotion-luba-3-awd-1500/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 27012,
+        "outputHash": "sha256:6dbc3af45a4fee3db57a3069334a65c8b5ff226d78f26f671d72ea24f4cdb80d"
+      }
+    },
     "/images/articles/mammotion-luba-mini-2-awd-1500/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -4403,6 +4421,42 @@
         "height": 533,
         "bytes": 73366,
         "outputHash": "sha256:04c8ded5a33112506ed10237396462b5c55e95a448491fc99277370df42650bf"
+      }
+    },
+    "/images/articles/segway-navimow-h220/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1500,
+      "height": 1500,
+      "bytes": 100972,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:65d0f693047df8a77dc5f11e670256224923ad4a10a6066679be72fa328342d0",
+      "outputHash": "sha256:55fdcbafde62fcf95463e8802f31f9c0f5ebaf41cb051e2adafc47119c374809",
+      "mobile": {
+        "src": "/images/articles/segway-navimow-h220/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 41700,
+        "outputHash": "sha256:8ce8177ce8631525601f06853dcdc00138779106ad2289a669969ce7ad3a81bb"
+      }
+    },
+    "/images/articles/segway-navimow-i210-awd/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1500,
+      "height": 1500,
+      "bytes": 97668,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:080be40734ed677634a75be848a27553dc533f54d1cc7309cdaa17488021c66d",
+      "outputHash": "sha256:2689b022d5b53bd52197a16a61ba4096c86ca2241302343465a5d1eebd02d425",
+      "mobile": {
+        "src": "/images/articles/segway-navimow-i210-awd/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 42730,
+        "outputHash": "sha256:d71a4f70f34535004d6c86ea121d8ae9c75fc7b04272aa735b0b5601dd0c8ecd"
       }
     },
     "/images/articles/segway-navimow-x430/01-cover.webp": {
@@ -33190,6 +33244,11 @@
       "cover": "/images/insights/major-battle-about-to-begin-cover.jpg",
       "body": []
     },
+    "mammotion-luba-3-awd-1500": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp",
+      "body": []
+    },
     "mammotion-luba-mini-2-awd-1500": {
       "budgetClass": "standard",
       "cover": "/images/articles/mammotion-luba-mini-2-awd-1500/01-cover.webp",
@@ -34169,6 +34228,16 @@
         "/images/blog/cleaning-appliance-category-sample-testing-priorities.webp",
         "/images/blog/sample-testing-cleaning-appliances-checklist.webp"
       ]
+    },
+    "segway-navimow-h220": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/segway-navimow-h220/01-cover.webp",
+      "body": []
+    },
+    "segway-navimow-i210-awd": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/segway-navimow-i210-awd/01-cover.webp",
+      "body": []
     },
     "segway-navimow-vs-husqvarna-automower": {
       "budgetClass": "standard",
@@ -36087,6 +36156,15 @@
         }
       }
     },
+    "mammotion-luba-3-awd-1500": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp",
+          "hash": "sha256:e78a53e22617b58a86e17add05cc577b39801735eda1f2ebfdfc33b7b8ab5a29"
+        }
+      }
+    },
     "mammotion-luba-mini-2-awd-1500": {
       "files": {
         "01-cover.png": {
@@ -36472,6 +36550,24 @@
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-wont-turn-on/03-power-service-boundary.png",
           "hash": "sha256:0b517e10d3e7e1427ff877001b6a0a9dc39b38f6d9d245350f81f28e782f8add"
+        }
+      }
+    },
+    "segway-navimow-h220": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/segway-navimow-h220/01-cover.webp",
+          "hash": "sha256:65d0f693047df8a77dc5f11e670256224923ad4a10a6066679be72fa328342d0"
+        }
+      }
+    },
+    "segway-navimow-i210-awd": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/segway-navimow-i210-awd/01-cover.webp",
+          "hash": "sha256:080be40734ed677634a75be848a27553dc533f54d1cc7309cdaa17488021c66d"
         }
       }
     },
