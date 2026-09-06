@@ -39,5 +39,7 @@ export const productSourcingRoutes: Record<string, string> = {
   "Robot vacuums": "/sourcing/robotic-vacuums",
   "Cordless vacuums": "/sourcing/vacuum-cleaners",
   "Robot mowers": "/sourcing/lawn-robots",
-  "Pool robots": "/sourcing/pool-robots"
+  "Pool robots": "/sourcing/pool-robots",
+  "Floor washers": "/sourcing/floor-washers",
+  "Window robots": "/sourcing"
 };

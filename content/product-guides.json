@@ -3001,5 +3001,594 @@
       ],
       "takeaway": "The three models address different property constraints. Verify gates and boundary slopes individually; a larger battery or area rating does not make every garden easier to navigate."
     }
+  },
+  "dyson-pencilwash": {
+    "verdict": "Consider PencilWash for short, frequent hard-floor cleaning when a slim machine is easier to reach for. Judge it together with the wash-and-dry routine after each use.",
+    "notFor": "Carpet-focused homes, dry-only vacuuming, long whole-home sessions without refills or owners seeking automatic heated roller drying.",
+    "specifications": [
+      {
+        "label": "Floor compatibility",
+        "value": "Hard floors, including sealed wood",
+        "meaning": "Confirm the floor maker permits wet cleaning.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Cleaning mechanism",
+        "value": "Motorised wet roller; filter-free",
+        "meaning": "Requires water; not a dry-mode carpet vacuum.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Full machine weight",
+        "value": "4.6 lb",
+        "meaning": "Current US listing; launch release used 4.9 lb.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Weight in hand",
+        "value": "0.84 lb",
+        "meaning": "A handling measure, not the weight you carry upstairs.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Dimensions",
+        "value": "10.5 × 7.8 × 45.5 in",
+        "meaning": "Length × width × height on the current US specification page.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Clean water tank",
+        "value": "300 ml",
+        "meaning": "Located in the head; refill frequency depends on water use.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Dirty water capacity",
+        "value": "0.09 US gallon",
+        "meaning": "Separate waste capacity; empty after cleaning.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 30 minutes",
+        "meaning": "Single-charge manufacturer claim, varying with use.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Charge time",
+        "value": "3.5 hours",
+        "meaning": "US launch specification; allow a full initial charge.",
+        "source": "https://www.dyson.com/discover/news/latest/introducing-pencilwash"
+      },
+      {
+        "label": "Coverage per tank",
+        "value": "Up to 1,076 sq ft",
+        "meaning": "Simulated low-hydration coverage, not guaranteed floor area.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Recline",
+        "value": "170°",
+        "meaning": "Check clearance under the actual furniture.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Handle diameter",
+        "value": "1.5 in",
+        "meaning": "Current US product-page figure.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Roller hydration",
+        "value": "8 water delivery points",
+        "meaning": "Fresh water is distributed across the roller.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Controls",
+        "value": "Standard + timed MAX",
+        "meaning": "Manual: tap for 5 seconds; hold for up to 60 seconds.",
+        "source": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/floor-cleaners/wet/pencilwash/637217-01.pdf"
+      },
+      {
+        "label": "Battery format",
+        "value": "Removable four-cell lithium-ion",
+        "meaning": "Wand charges separately from the wet head.",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Roller care",
+        "value": "Wash after use; air-dry at least 24 hours",
+        "meaning": "No heated drying dock in the listed package.",
+        "source": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/floor-cleaners/wet/pencilwash/637217-01.pdf"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 349.99",
+        "source": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "Current US Copper listing; separate from the rounded USD 349 launch announcement. Confirm availability, tax and the selected package at checkout."
+      },
+      {
+        "market": "United States · USD",
+        "amount": "USD 29.99",
+        "source": "https://www.dyson.com/support/floor-cleaners/wet/pencilwash",
+        "kind": "Replacement roller snapshot",
+        "date": "2026-09-06",
+        "note": "Compatible Submarine wet roller, part 973150-01, listed on PencilWash support. Check current compatibility and stock."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dyson PencilWash",
+          "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper",
+          "market": "United States"
+        },
+        {
+          "name": "Dyson WashG1",
+          "url": "https://www.dyson.com/floor-cleaners/wet/washg1/black-blue",
+          "market": "United States"
+        },
+        {
+          "name": "Dyson Clean+Wash Hygiene",
+          "url": "https://www.dyson.com/floor-cleaners/wet/clean-wash-hygiene/copper-prussian-blue",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Roller arrangement",
+          "values": [
+            "Single wet roller",
+            "Two counter-rotating rollers",
+            "Single roller with hair-management features"
+          ]
+        },
+        {
+          "label": "US listed weight",
+          "values": [
+            "4.6 lb",
+            "10.8 lb",
+            "8.42 lb"
+          ]
+        },
+        {
+          "label": "Clean tank",
+          "values": [
+            "300 ml",
+            "0.26 US gallon",
+            "0.2 US gallon"
+          ]
+        },
+        {
+          "label": "After-use approach",
+          "values": [
+            "Manual wash and air dry",
+            "Dock flush cycle; maintenance remains",
+            "Self-clean cycle and hot-air drying dock"
+          ]
+        },
+        {
+          "label": "Main buying question",
+          "values": [
+            "Will compact handling make small cleans easier?",
+            "Will the larger tank and dual rollers suit the workload?",
+            "Is heated drying worth the extra station space?"
+          ]
+        }
+      ],
+      "takeaway": "Compare handling and after-use work before runtime headlines. Values follow the cited US pages, whose specifications can differ from older launch copy and other markets."
+    },
+    "resources": [
+      {
+        "label": "US PencilWash user guide",
+        "url": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/floor-cleaners/wet/pencilwash/637217-01.pdf",
+        "note": "Timed MAX controls, assembly, waste emptying and at least 24-hour roller drying."
+      },
+      {
+        "label": "Official maintenance and replacement parts",
+        "url": "https://www.dyson.com/support/floor-cleaners/wet/pencilwash",
+        "note": "Cleaning demonstrations and compatible roller/head listings."
+      },
+      {
+        "label": "Current US machine listing",
+        "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper",
+        "note": "Check the Copper package, floor compatibility and current specifications."
+      }
+    ]
+  },
+  "ecovacs-winbot-w3-omni": {
+    "verdict": "Consider W3 when washing pads repeatedly is the part of window cleaning you most want to reduce. Check how often you will move its station and whether every pane can be attached to and retrieved safely.",
+    "notFor": "Unattended cleaning, unsuitable or inaccessible glazing, commercial facades or homes without practical space for the larger washing station.",
+    "specifications": [
+      {
+        "label": "Navigation",
+        "value": "WIN-SLAM 5.0",
+        "meaning": "Manufacturer route-planning system; assess your pane geometry.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "Pad washing",
+        "value": "Vortex Wash station",
+        "meaning": "Remove the pad assembly and load it into the wash compartment yourself.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Standard pad-wash claim",
+        "value": "About 1 minute",
+        "meaning": "Washing stage only; transfers and drying take additional time.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "270 × 270 × 76 mm",
+        "meaning": "Body size; allow clearance around handles and obstacles.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "344 × 226 × 430 mm",
+        "meaning": "Leave room to operate the handle and wash compartment.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Robot liquid tank",
+        "value": "80 ml",
+        "meaning": "Separate from the station’s clean-water tank.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Station clean-water tank",
+        "value": "1.2 L",
+        "meaning": "Water for washing pads; empty and rinse after the task.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Station-powered runtime",
+        "value": "Up to 130 minutes",
+        "meaning": "Manufacturer battery-mode claim; robot remains connected by cable.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "Charging at rest",
+        "value": "About 3 hours",
+        "meaning": "Charging while cleaning is substantially slower.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Compound cable",
+        "value": "5.5 m",
+        "meaning": "Power and safety functions; station position limits practical reach.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Station weight",
+        "value": "About 10 kg",
+        "meaning": "Separate from the robot; consider carrying and storage.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "Advertised suction",
+        "value": "Up to 10,000 Pa",
+        "meaning": "Peak protection claim, not a measured cleaning score.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "Moving suction reference",
+        "value": "3,300 ± 100 Pa",
+        "meaning": "US specification table distinguishes moving operation from the headline figure.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "Minimum material thickness",
+        "value": "3 mm glass / 4 mm mirror",
+        "meaning": "Use undamaged, smooth surfaces and follow the manual’s restrictions.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "US electrical input",
+        "value": "110–120 V, 50–60 Hz",
+        "meaning": "AMR manual model WG858-07; verify the regional power label.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Operating conditions",
+        "value": "0–40°C; calm, dry exterior weather",
+        "meaning": "Household use only; secure the tether and remain present.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 699.99",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "Plain US W3 OMNI listing. Accessory and solution bundles are separate offers; check the exact contents and current availability."
+      },
+      {
+        "market": "United States · USD",
+        "amount": "USD 39.99",
+        "source": "https://help.ecovacs.com/us/support/winbot-w3-omni",
+        "kind": "Replacement pad snapshot",
+        "date": "2026-09-06",
+        "note": "W3 OMNI wiping-pad accessory on the official support page. Confirm pack contents and compatibility."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS WINBOT W3 OMNI",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS WINBOT W2S PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS WINBOT W2 PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Pad care",
+          "values": [
+            "Vortex Wash; owner transfers pad",
+            "Manual pad washing",
+            "Manual pad washing"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "WIN-SLAM 5.0",
+            "WIN-SLAM 4.0",
+            "WIN-SLAM 4.0"
+          ]
+        },
+        {
+          "label": "Robot liquid tank",
+          "values": [
+            "80 ml",
+            "120 ml",
+            "60 ml"
+          ]
+        },
+        {
+          "label": "Battery-mode claim",
+          "values": [
+            "Up to 130 minutes",
+            "Up to 110 minutes",
+            "Up to 110 minutes"
+          ]
+        },
+        {
+          "label": "Station purpose",
+          "values": [
+            "Pad washer, power and storage",
+            "Power, cable management and storage",
+            "Power, cable management and storage"
+          ]
+        }
+      ],
+      "takeaway": "W3 adds pad washing, while W2S PRO OMNI offers a larger onboard liquid tank. The station’s role and the remaining manual work are more useful distinctions than a simple higher-number ranking."
+    },
+    "resources": [
+      {
+        "label": "US W3 OMNI owner’s manual",
+        "url": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf",
+        "note": "Pad-transfer steps, household-use restrictions, anchoring, electrical input and dimensions."
+      },
+      {
+        "label": "W3 setup and maintenance videos",
+        "url": "https://help.ecovacs.com/us/support/winbot-w3-omni",
+        "note": "Official demonstrations of the station, pad assembly and routine cleaning."
+      },
+      {
+        "label": "US W3 listing",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni",
+        "note": "Current package, protection claims and separate moving-suction specification."
+      }
+    ]
+  },
+  "ecovacs-winbot-w2s-pro-omni": {
+    "verdict": "Consider it when edge cleaning and portable power matter, and manual pad care is acceptable. Confirm every intended pane is suitable before comparing it with the larger W3 station.",
+    "notFor": "Horizontal glass, unattended operation, inaccessible or unsuitable windows and owners expecting an automatic pad washer.",
+    "specifications": [
+      {
+        "label": "Navigation",
+        "value": "WIN-SLAM 4.0",
+        "meaning": "Route planning for compatible household glazing.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "Edge system",
+        "value": "TruEdge 2.0",
+        "meaning": "Lift-and-lower edge brushes; inspect actual frame clearance.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "272 × 272 × 76 mm",
+        "meaning": "Body dimensions from the exact PRO manual.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "312 × 215 × 327 mm",
+        "meaning": "Power and storage station; no automatic pad-wash compartment.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      },
+      {
+        "label": "Minimum pane",
+        "value": "30 × 40 cm",
+        "meaning": "Avoid small or irregular panes outside the manual’s conditions.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      },
+      {
+        "label": "Largest listed pane",
+        "value": "8 × 2.5 m",
+        "meaning": "Zone Clean only at this size; cable placement still limits access.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      },
+      {
+        "label": "Surface orientation",
+        "value": "Within ±45° of vertical",
+        "meaning": "The manual excludes horizontal glass.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      },
+      {
+        "label": "Robot liquid tank",
+        "value": "120 ml / about 4.1 fl oz",
+        "meaning": "Separate from the station battery’s operating duration.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "Tank coverage claim",
+        "value": "Up to 807 sq ft / 75 m²",
+        "meaning": "Manufacturer claim; dirt and cleaning mode change consumption.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "Station-powered runtime",
+        "value": "Up to 110 minutes",
+        "meaning": "Battery operation still uses the compound cable.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "Charging at rest",
+        "value": "About 3 hours",
+        "meaning": "At room temperature; colder conditions can take longer.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      },
+      {
+        "label": "Advertised sound level",
+        "value": "66 dB",
+        "meaning": "Manufacturer figure; not a quiet-room measurement by WCB.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "Advertised suction",
+        "value": "Up to 10,000 Pa",
+        "meaning": "Attachment claim; not a stain-removal score or fail-safe promise.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "Compound cable",
+        "value": "5.5 m",
+        "meaning": "Includes power and safety functions with automatic take-up.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "US electrical input",
+        "value": "110–120 V, 50–60 Hz",
+        "meaning": "AMR model WE005V01; use the matching regional package.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      },
+      {
+        "label": "App connection",
+        "value": "Bluetooth · ECOVACS HOME",
+        "meaning": "Remote control needs proximity; walls can interrupt the connection.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 499.99 · displayed reference USD 599.99",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "US W2S PRO OMNI launch offer; the accessory Package is listed separately at USD 544. Confirm the selected contents and current checkout price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS WINBOT W2S PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS WINBOT W3 OMNI",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS WINBOT W2 PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Pad care",
+          "values": [
+            "Manual pad washing",
+            "Vortex Wash; owner transfers pad",
+            "Manual pad washing"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "WIN-SLAM 4.0",
+            "WIN-SLAM 5.0",
+            "WIN-SLAM 4.0"
+          ]
+        },
+        {
+          "label": "Robot liquid tank",
+          "values": [
+            "120 ml",
+            "80 ml",
+            "60 ml"
+          ]
+        },
+        {
+          "label": "Battery-mode claim",
+          "values": [
+            "Up to 110 minutes",
+            "Up to 130 minutes",
+            "Up to 110 minutes"
+          ]
+        },
+        {
+          "label": "Station purpose",
+          "values": [
+            "Power, cable management and storage",
+            "Pad washer, power and storage",
+            "Power, cable management and storage"
+          ]
+        }
+      ],
+      "takeaway": "W2S PRO OMNI emphasises edge handling and a larger onboard tank. W3 changes pad maintenance; the older W2 PRO OMNI remains a useful reference for the simpler portable-station workflow."
+    },
+    "resources": [
+      {
+        "label": "Exact W2S PRO OMNI US manual",
+        "url": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf",
+        "note": "AMR document for model WE005V01, including Bluetooth controls, pane limits and manual pad care."
+      },
+      {
+        "label": "Official product demonstrations and offer",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni",
+        "note": "Check TruEdge 2.0, the plain model versus accessory bundle and the linked PRO manual."
+      },
+      {
+        "label": "Official 2026 collection",
+        "url": "https://www.ecovacs.com/de/shop/winbot-window-cleaning-robot",
+        "note": "Manufacturer year-of-release evidence; European prices and bundles do not define the US package."
+      }
+    ]
   }
 }
