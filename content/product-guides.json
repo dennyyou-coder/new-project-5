@@ -2420,5 +2420,586 @@
         "note": "Confirm local service, compatible accessories and the correct manual for your region."
       }
     ]
+  },
+  "mammotion-luba-3-awd-1500": {
+    "verdict": "Consider it when AWD traction and a wide cutting deck solve real constraints on a lawn below 1,500 m². Measure the route and choose the correct cutting-height version first.",
+    "notFor": "Very narrow access, frequent lifting, grass kept above 70 mm or owners expecting the larger variants’ NetRTK configuration.",
+    "specifications": [
+      {
+        "label": "Recommended lawn",
+        "value": "1,500 m² / 0.37 acre",
+        "meaning": "Use actual mowable grass area, with room for interrupted schedules.",
+        "source": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578"
+      },
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR + AI vision",
+        "meaning": "The 1500 does not use RTK or NetRTK.",
+        "source": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578"
+      },
+      {
+        "label": "Drive",
+        "value": "All-wheel drive",
+        "meaning": "Four driven wheels; traction still depends on ground conditions.",
+        "source": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578"
+      },
+      {
+        "label": "Working-area slope",
+        "value": "Up to 80% / 38.6°",
+        "meaning": "A maximum capability, not a wet-grass guarantee.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Boundary slope",
+        "value": "Up to 40% / 21.8°",
+        "meaning": "Lower limit at the edge, per manufacturer manual V1.0.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Standard cutting height",
+        "value": "25–70 mm / 1–2.7 in",
+        "meaning": "This page covers LUB3S1, not the taller 1500H.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Cutting width",
+        "value": "400 mm / 15.7 in",
+        "meaning": "Dual discs suit accessible grass areas; allow turning space.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Body dimensions",
+        "value": "690 × 533 × 279 mm",
+        "meaning": "Standard body; extra clearance is needed through gates.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Net weight",
+        "value": "19 kg / 41.9 lb",
+        "meaning": "Check lifting between areas before buying.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Battery",
+        "value": "9.4 Ah / 203 Wh / 21.6 V",
+        "meaning": "1500 specification; larger variants have different packs.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Zone allowance",
+        "value": "Up to 15",
+        "meaning": "All zones share the total area limit.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Vertical crossing",
+        "value": "50 mm / 2 in",
+        "meaning": "Standard-version manual figure; not the 1500H 80 mm claim.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Connectivity",
+        "value": "4G, Wi-Fi and Bluetooth",
+        "meaning": "Connection features are separate from local LiDAR positioning.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Included cellular service",
+        "value": "3 years",
+        "meaning": "US 1500 selector; check renewal terms in the app.",
+        "source": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578"
+      },
+      {
+        "label": "Weather protection",
+        "value": "IPX6 mower and charging station",
+        "meaning": "Follow manual cleaning instructions; no immersion.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      },
+      {
+        "label": "Rain detection",
+        "value": "Included",
+        "meaning": "Plan an alternative mowing window after wet weather.",
+        "source": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 2,399",
+        "source": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "Standard 1500 selected; marked out of stock when checked. This dated listing is not a delivery promise. Confirm tax, shipping and the local warranty at checkout."
+      }
+    ],
+    "resources": [
+      {
+        "label": "Manufacturer owner’s manual · V1.0",
+        "url": "https://pdf.lowes.com/productdocuments/a5b2f370-5b6d-4915-a9b1-4acec6088dd4/82196515.pdf",
+        "note": "January 2026 PDF hosted by Lowe’s; model-specific dimensions, battery and boundary limits."
+      },
+      {
+        "label": "Latest English manual from Mammotion",
+        "url": "https://support.mammotion.com/portal/en/kb/articles/luba-3-awd-series-user-manual-en",
+        "note": "Official library currently lists V4.0, August 2026. Use the latest instructions supplied for your machine."
+      },
+      {
+        "label": "US model selector and service terms",
+        "url": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578",
+        "note": "Select 1500 and Standard Version; confirm availability and the included cellular term."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Mammotion LUBA 3 AWD 1500",
+          "url": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578",
+          "market": "United States · specified model"
+        },
+        {
+          "name": "Mammotion LUBA mini 2 AWD 1500",
+          "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500",
+          "market": "Europe · LiDAR listing"
+        },
+        {
+          "name": "Segway Navimow H220",
+          "url": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177",
+          "market": "United States · specified model"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Area reference",
+          "values": [
+            "1,500 m² / 0.37 acre",
+            "1,500 m² · EU listing",
+            "0.5 acre · US"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "LiDAR + vision",
+            "LiDAR + dual cameras · EU revision",
+            "LiDAR + NRTK + vision"
+          ]
+        },
+        {
+          "label": "In-area slope claim",
+          "values": [
+            "80%",
+            "80%",
+            "45%"
+          ]
+        },
+        {
+          "label": "Battery reference",
+          "values": [
+            "9.4 Ah",
+            "6.1 Ah · EU listing",
+            "10 Ah"
+          ]
+        },
+        {
+          "label": "Selection focus",
+          "values": [
+            "Wide deck and AWD access",
+            "Compact layout and edge cutting",
+            "Mapping and half-acre coverage"
+          ]
+        }
+      ],
+      "takeaway": "The mini reference is the European LiDAR listing; compare its local configuration before purchase. Maximum slope claims are not equivalent to boundary limits or wet-ground tests."
+    }
+  },
+  "segway-navimow-i210-awd": {
+    "verdict": "A relevant option for a quarter-acre lawn when compact size and traction matter. Verify Network RTK availability and the two-inch minimum US cutting height before considering price.",
+    "notFor": "Lawns beyond its area allowance, buyers seeking a low-cut European configuration or sites where the planned positioning setup cannot be supported.",
+    "specifications": [
+      {
+        "label": "Recommended lawn",
+        "value": "0.25 acre",
+        "meaning": "i210 AWD rating; do not use the smaller i206 allowance.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Navigation",
+        "value": "Network RTK + vision",
+        "meaning": "Check local coverage before relying on antenna-free setup.",
+        "source": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001"
+      },
+      {
+        "label": "Drive",
+        "value": "Xero-Turn AWD",
+        "meaning": "Rear drive engages when needed; verify turf condition on turns.",
+        "source": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001"
+      },
+      {
+        "label": "Slope limit",
+        "value": "45% / about 24°",
+        "meaning": "Manual specifies 45% both inside the area and at the boundary.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Cutting height",
+        "value": "2–3.6 in",
+        "meaning": "US manual range; European low-cut figures are different.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Cutting width",
+        "value": "7.1 in",
+        "meaning": "A compact deck suited to smaller residential lawns.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Dimensions",
+        "value": "21.4 × 15.1 × 11.2 in",
+        "meaning": "Allow additional space for alignment and turning.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Weight",
+        "value": "27.12 lb",
+        "meaning": "Battery included; assess any carrying between isolated zones.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Battery",
+        "value": "5.1 Ah / 110 Wh",
+        "meaning": "Twice the listed i206 capacity; not a promise of twice the area.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Typical mowing per charge",
+        "value": "About 120 minutes",
+        "meaning": "Manual test uses a maintained lawn at 77°F; wet or long grass reduces capacity.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 120 minutes",
+        "meaning": "Account for the charging interval in daily schedules.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Vertical crossing",
+        "value": "Up to 1.57 in",
+        "meaning": "Tested on a flat approach with blade height set to 3.6 in.",
+        "source": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001"
+      },
+      {
+        "label": "Sound power",
+        "value": "59 dB(A)",
+        "meaning": "Manual sound-power value; not a noise measurement at your window.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Weather protection",
+        "value": "IP66 mower and station",
+        "meaning": "Power adapter separately rated IP67.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Operating temperature",
+        "value": "32–104°F / 0–40°C",
+        "meaning": "Manual recommends 50–95°F for typical working conditions.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529"
+      },
+      {
+        "label": "Network RTK service",
+        "value": "Included at no extra cost",
+        "meaning": "Required positioning data are included; optional remote cellular service is separate.",
+        "source": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 1,149 · displayed reference USD 1,299",
+        "source": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "US i210 AWD variant, available when checked. Price excludes taxes; shipping and promotional conditions may change. The lower i206 headline price does not apply to this model."
+      }
+    ],
+    "resources": [
+      {
+        "label": "US i2 AWD owner’s manual",
+        "url": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022512389529",
+        "note": "Model-specific dimensions, mowing and charging times, installation and maintenance."
+      },
+      {
+        "label": "Official Network RTK coverage check",
+        "url": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001",
+        "note": "Use the postcode tool on the product page and confirm the actual property."
+      },
+      {
+        "label": "Manual and app library",
+        "url": "https://navimow.com/pages/user-manual",
+        "note": "Select i2 AWD, not the separate i2 LiDAR family."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Segway Navimow i210 AWD",
+          "url": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001",
+          "market": "United States · specified model"
+        },
+        {
+          "name": "Segway Navimow H220",
+          "url": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177",
+          "market": "United States · specified model"
+        },
+        {
+          "name": "MOVA LiDAX Ultra 1000",
+          "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower",
+          "market": "United States · non-AWD"
+        }
+      ],
+      "rows": [
+        {
+          "label": "US area rating",
+          "values": [
+            "0.25 acre",
+            "0.5 acre",
+            "0.25 acre"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "NRTK + vision",
+            "LiDAR + NRTK + vision",
+            "3D LiDAR + vision"
+          ]
+        },
+        {
+          "label": "Cutting height",
+          "values": [
+            "2–3.6 in",
+            "2–4 in; separate low-cut kit",
+            "1.2–3.9 in"
+          ]
+        },
+        {
+          "label": "Cutting width",
+          "values": [
+            "7.1 in",
+            "8.66 in",
+            "7.9 in"
+          ]
+        },
+        {
+          "label": "Selection focus",
+          "values": [
+            "Compact AWD traction",
+            "Larger battery and map controls",
+            "LiDAR positioning on simpler terrain"
+          ]
+        }
+      ],
+      "takeaway": "Compare coverage, access and the desired grass height before price. H220’s lower boundary-slope limit deserves a separate check; none of these figures establish a hands-on ranking."
+    }
+  },
+  "segway-navimow-h220": {
+    "verdict": "Investigate H220 when half-acre coverage and navigating a divided garden matter more than a headline traction claim. Its map tools are useful only if routes, boundaries and charging placement work on your property.",
+    "notFor": "Boundaries steeper than the manual’s 25% limit, frequent carrying or owners assuming it shares the AWD configuration of i210 or X430.",
+    "specifications": [
+      {
+        "label": "Recommended lawn",
+        "value": "0.5 acre",
+        "meaning": "H220 rating; all zones share one total area allowance.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Navigation",
+        "value": "LiDAR + Network RTK + vision",
+        "meaning": "EFLS combines three inputs; confirm local network availability.",
+        "source": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177"
+      },
+      {
+        "label": "Working-area slope",
+        "value": "45% / about 24°",
+        "meaning": "Maximum in-area incline in the US manual.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Boundary slope",
+        "value": "25%",
+        "meaning": "A separate, lower limit at the edge of the mowing area.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Standard cutting height",
+        "value": "2–4 in",
+        "meaning": "Included low-cutting kit changes the range to 0.8–2.8 in.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Cutting width",
+        "value": "8.66 in",
+        "meaning": "Wider than i210 AWD’s 7.1-inch deck.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Dimensions",
+        "value": "24.6 × 17.5 × 11.6 in",
+        "meaning": "Check gate approaches, turns and station space.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Weight",
+        "value": "35.82 lb",
+        "meaning": "H220 battery included; H210 is lighter.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Battery",
+        "value": "10 Ah / 216 Wh",
+        "meaning": "H220 specification; H210 has a smaller 5.1 Ah pack.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Typical mowing per charge",
+        "value": "About 220 minutes",
+        "meaning": "Maintained-lawn test at 77°F; actual conditions change capacity.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 120 minutes",
+        "meaning": "Store measurement uses 10% to 100% at 77°F.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Zone management",
+        "value": "Up to 30 zones",
+        "meaning": "Zone count does not multiply the total lawn allowance.",
+        "source": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177"
+      },
+      {
+        "label": "Wall-edge clearance",
+        "value": "As close as 2 in",
+        "meaning": "Raised edges may still need trimming; ride-on edges require suitable geometry.",
+        "source": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177"
+      },
+      {
+        "label": "Weather protection",
+        "value": "IP66 mower and station",
+        "meaning": "Power supply has a separate IP67 rating.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Sound power",
+        "value": "60 dB(A)",
+        "meaning": "Manual value; do not compare with another model’s sound-pressure figure.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961"
+      },
+      {
+        "label": "Connect+ service",
+        "value": "1 year included; USD 32.90/year renewal",
+        "meaning": "Optional remote connectivity; Network RTK is separately included.",
+        "source": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 2,199",
+        "source": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "US H220 variant, available when checked. Excludes taxes; confirm shipping, accessories and local warranty. H210 is the lower-priced default on the series page."
+      },
+      {
+        "market": "United States · USD",
+        "amount": "USD 32.90 per year after year one",
+        "source": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177",
+        "kind": "Connect+ renewal snapshot",
+        "date": "2026-09-06",
+        "note": "Optional Connect+ renewal listed by the US store. Network RTK positioning is separately included at no extra cost."
+      }
+    ],
+    "resources": [
+      {
+        "label": "US H2 owner’s manual",
+        "url": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022465527961",
+        "note": "Separate H210/H220 columns, low-cutting kit, boundary instructions and maintenance."
+      },
+      {
+        "label": "H220 features and service terms",
+        "url": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177",
+        "note": "Review maps, edge conditions and the selected model’s offer."
+      },
+      {
+        "label": "Official manual and app library",
+        "url": "https://navimow.com/pages/user-manual",
+        "note": "Use the current manual for the region and model you purchase."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Segway Navimow H220",
+          "url": "https://navimow.com/products/navimow-h2-robot-lawn-mower?variant=45014291415177",
+          "market": "United States · specified model"
+        },
+        {
+          "name": "Segway Navimow i210 AWD",
+          "url": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001",
+          "market": "United States · specified model"
+        },
+        {
+          "name": "Segway Navimow X430",
+          "url": "https://navimow.com/products/navimow-x4-robot-lawn-mower",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "US area rating",
+          "values": [
+            "0.5 acre",
+            "0.25 acre",
+            "1 acre"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "LiDAR + NRTK + vision",
+            "NRTK + vision",
+            "NRTK + 360° vision"
+          ]
+        },
+        {
+          "label": "Cutting width",
+          "values": [
+            "8.66 in",
+            "7.1 in",
+            "17 in"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "10 Ah",
+            "5.1 Ah",
+            "12.8 Ah"
+          ]
+        },
+        {
+          "label": "Selection focus",
+          "values": [
+            "Mapped routes and longer sessions",
+            "Compact body and AWD",
+            "Wide deck and large-lawn AWD"
+          ]
+        }
+      ],
+      "takeaway": "The three models address different property constraints. Verify gates and boundary slopes individually; a larger battery or area rating does not make every garden easier to navigate."
+    }
   }
 }
