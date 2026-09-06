@@ -2284,6 +2284,78 @@
         "outputHash": "sha256:d757b482328352b6513c086a8433ae552b67c61b89a6b493f667c2b8d9648a93"
       }
     },
+    "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 201684,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b0b51f07d93ad5043c5f973a6a0ef21880f60f5e82b58804c366e10ce529f664",
+      "outputHash": "sha256:be598a6b33aaa58e55c504419c5896f05ed6db8fcdc4ac6e687ef559ff5f238d",
+      "mobile": {
+        "src": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 78306,
+        "outputHash": "sha256:0b52e236ec00f9cacb338df30a378f3fdce3f01806c5bff57aa7a91ee0fef694"
+      }
+    },
+    "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/02-existing-approaches.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 102066,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5f6bceee3ffaa14d0c9a7735fcccfa7031572221eb3f1e52d484d18d996dabd2",
+      "outputHash": "sha256:3926642db5354785de2245e41326bca04f326936a92ea244d2f14e78eeb09454",
+      "mobile": {
+        "src": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/02-existing-approaches-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 39336,
+        "outputHash": "sha256:8d61a0ff39f25e7a7548a0c373bc25e1d68439895f07f9231738cd98e0b6b31c"
+      }
+    },
+    "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/03-safety-requirements.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 101910,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ed374f5d05279ef6c61ae1a63141b4051b0c8550d8249b8c1942884d93a23ea1",
+      "outputHash": "sha256:08a96b4ad58c2db7d022b331d2451dcab8f77cb47ab01ffef19380aaf4a2a2c3",
+      "mobile": {
+        "src": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/03-safety-requirements-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 41886,
+        "outputHash": "sha256:d5ebf75a0df26e4680d87db832fb84f707a01ec7044630b936fb99dab64580d2"
+      }
+    },
+    "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/04-edgemaestro.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 112066,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6042eb6c543a117d98d9ca4241897e67754af18bec575cdf562a053508d182b8",
+      "outputHash": "sha256:a04d5886d7e386034bb2145802172ae9a622fd3a823223740767338a00dc82e1",
+      "mobile": {
+        "src": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/04-edgemaestro-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 44336,
+        "outputHash": "sha256:e6c555bce743f98bff7ec0dd714221a75d2d7c1697f615d2afa2735131f1278c"
+      }
+    },
     "/images/articles/ninebot-navimow-vs-roborock/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -32403,6 +32475,15 @@
       "cover": "/images/blog/narwal-vs-ecovacs-robot-vacuums.webp",
       "body": []
     },
+    "navimow-h5-pro-edgemaestro-edge-mowing": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/01-cover.webp",
+      "body": [
+        "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/02-existing-approaches.webp",
+        "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/03-safety-requirements.webp",
+        "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/04-edgemaestro.webp"
+      ]
+    },
     "navimow-robotic-mower-roadmap": {
       "budgetClass": "standard",
       "cover": "/images/blog/navimow-robotic-mower-roadmap-cover.webp",
@@ -34943,6 +35024,30 @@
           "status": "matched",
           "primary": "/images/articles/mova-rover-x10/01-cover.webp",
           "hash": "sha256:9f7ba0a5e4a7fc59e0d336f3fefee7a334c140d07b1aa6bf237f16ea9c47dabb"
+        }
+      }
+    },
+    "navimow-h5-pro-edgemaestro-edge-mowing": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/01-cover.webp",
+          "hash": "sha256:b0b51f07d93ad5043c5f973a6a0ef21880f60f5e82b58804c366e10ce529f664"
+        },
+        "02-existing-approaches.png": {
+          "status": "matched",
+          "primary": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/02-existing-approaches.webp",
+          "hash": "sha256:5f6bceee3ffaa14d0c9a7735fcccfa7031572221eb3f1e52d484d18d996dabd2"
+        },
+        "03-safety-requirements.png": {
+          "status": "matched",
+          "primary": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/03-safety-requirements.webp",
+          "hash": "sha256:ed374f5d05279ef6c61ae1a63141b4051b0c8550d8249b8c1942884d93a23ea1"
+        },
+        "04-edgemaestro.png": {
+          "status": "matched",
+          "primary": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/04-edgemaestro.webp",
+          "hash": "sha256:6042eb6c543a117d98d9ca4241897e67754af18bec575cdf562a053508d182b8"
         }
       }
     },
