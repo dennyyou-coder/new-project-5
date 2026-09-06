@@ -1643,6 +1643,24 @@
         "outputHash": "sha256:a18bb052563ba0f9730aa2bf268eed9e26654718fdd837ba22909cbe096f1f75"
       }
     },
+    "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/05-triform-three-forms.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1104,
+      "height": 1600,
+      "bytes": 52508,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:27b46f38832c0a4c8d270ec71472083e2d99f4ca2d76cb0d14dc425769b48dff",
+      "outputHash": "sha256:1681f9b17ddd9f484cad50ba50017d3c37ac6d913e046238e55ad8734864c778",
+      "mobile": {
+        "src": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/05-triform-three-forms-800.webp",
+        "width": 552,
+        "height": 800,
+        "bytes": 20530,
+        "outputHash": "sha256:721cb3732ebb706551465ddf37de54d523d9d1b86e004e9407120c8867c4d49c"
+      }
+    },
     "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -31381,7 +31399,8 @@
       "body": [
         "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/02-ecovacs-x5-hybrid.webp",
         "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/03-xlean-tr1-handheld.webp",
-        "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection.webp"
+        "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection.webp",
+        "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/05-triform-three-forms.webp"
       ]
     },
     "eu-battery-rules-smartphones-power-tools": {
@@ -34694,6 +34713,11 @@
           "status": "matched",
           "primary": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection.webp",
           "hash": "sha256:c0c4d6bbf6a6e8d2a758abeb03d071921d4d4d0fac4ad0ceb7b1c570d80d9a51"
+        },
+        "05-triform-three-forms.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/05-triform-three-forms.webp",
+          "hash": "sha256:27b46f38832c0a4c8d270ec71472083e2d99f4ca2d76cb0d14dc425769b48dff"
         }
       }
     },
