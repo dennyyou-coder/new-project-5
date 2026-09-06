@@ -1252,5 +1252,589 @@
         "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
       }
     ]
+  },
+  "ecovacs-deebot-t90-pro-omni": {
+    "verdict": "A practical shortlist for regular hard-floor mopping when a roller and automatic dock care matter more than flagship extras. Start with floor suitability and water-tank access.",
+    "notFor": "Homes that require household plumbing, zero-maintenance operation, or guaranteed wet-mop clearance over thick rugs.",
+    "specifications": [
+      {
+        "label": "Suction / airflow",
+        "value": "30,000 Pa / 16 L/s",
+        "meaning": "Peak manufacturer figures; compare debris pickup separately.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Mop roller",
+        "value": "27 cm / 10.63 in",
+        "meaning": "A wide cleaning path still has to reach narrow furniture gaps.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Robot size",
+        "value": "353 × 351 × 95 mm",
+        "meaning": "Width × depth × height; leave clearance below furniture.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Robot weight",
+        "value": "5.3 kg",
+        "meaning": "Consider carrying between floors.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Station with base",
+        "value": "338 × 460 × 500 mm",
+        "meaning": "Allow additional space above for removing water tanks.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Navigation",
+        "value": "Mini-ToF + structured light / RGB AI",
+        "meaning": "Check cables, dark obstacles and your own clutter.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Threshold crossing",
+        "value": "24 mm single threshold",
+        "meaning": "Do not interpret a double-step demonstration as a vertical wall rating.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Mop lift",
+        "value": "15 mm",
+        "meaning": "High-pile rugs may still require an exclusion zone.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Onboard dust / water",
+        "value": "0.25 L / 110 ml",
+        "meaning": "Small staging tanks depend on successful station returns.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Dock dust bag",
+        "value": "2.5 L",
+        "meaning": "A bagged system; distinct from X12 OmniCyclone.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Dock water tanks",
+        "value": "4 L clean / 2.2 L dirty",
+        "meaning": "Plan a practical route to fill and empty the tanks.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Plumbed refill / drain",
+        "value": "Not supported in the cited US specification",
+        "meaning": "Automatic robot refilling at the dock is a different feature.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Battery / full charge",
+        "value": "4,000 mAh / about 2.5 hours",
+        "meaning": "US SuperBoost specification; top-ups are not a full charge.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Vacuum-only runtime",
+        "value": "120 min standard / 140 min silent",
+        "meaning": "Hard-floor figures; do not label station-assisted runtime as one-charge endurance.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Mop-wash top-up",
+        "value": "10% in 3 minutes",
+        "meaning": "PowerBoost adds charge during station visits; water and maintenance still interrupt operation.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Hot-water mop care",
+        "value": "Up to 167°F / 75°C at the dock",
+        "meaning": "A station washing claim, not the temperature across the floor.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 899.99",
+        "source": "https://www.prnewswire.com/news-releases/ecovacs-debuts-practical-cleaning-innovations-designed-for-everyday-living-deebot-t90-pro-omni-and-winbot-w3-omni-302703876.html",
+        "kind": "US launch price",
+        "date": "2026-03-05",
+        "note": "Manufacturer announcement price for T90 PRO OMNI, not a current worldwide offer."
+      },
+      {
+        "market": "United States · USD",
+        "amount": "USD 799.99",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "Observed price for the plain US model; the page also lists a separate Buddy Kit bundle. Stock and checkout terms can change."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS DEEBOT T90 PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS DEEBOT X12 OmniCyclone",
+          "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone",
+          "market": "Global specification"
+        },
+        {
+          "name": "Roborock Saros 20",
+          "url": "https://global.roborock.com/pages/roborock-saros-20",
+          "market": "Global specification"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping system",
+          "values": [
+            "27 cm roller",
+            "27 cm roller with FocusJet pre-treatment",
+            "Dual rotating pads"
+          ]
+        },
+        {
+          "label": "Dock dust handling",
+          "values": [
+            "2.5 L disposable bag",
+            "1.6 L bagless collection",
+            "Disposable dust bag"
+          ]
+        },
+        {
+          "label": "Peak suction claim",
+          "values": [
+            "30,000 Pa",
+            "22,000 Pa",
+            "36,000 Pa"
+          ]
+        },
+        {
+          "label": "Threshold reference",
+          "values": [
+            "24 mm single",
+            "24 mm single / 40 mm double",
+            "45 + 43 mm double, with specified gap"
+          ]
+        },
+        {
+          "label": "Best question to resolve",
+          "values": [
+            "Can manual water-tank care fit your routine?",
+            "Will pre-treatment and bagless emptying solve a real problem?",
+            "Will the lifting chassis complete your difficult route?"
+          ]
+        }
+      ],
+      "takeaway": "Shortlist T90 for roller mopping with a bagged dock. X12 changes stain treatment and dust emptying; Saros 20 changes mop design and threshold strategy. Peak suction alone cannot rank their cleaning."
+    },
+    "resources": [
+      {
+        "label": "T90 manual and maintenance guides",
+        "url": "https://help.ecovacs.com/us/support/deebot-t90-pro-omni",
+        "note": "Model-specific instructions, setup help and compatible parts."
+      },
+      {
+        "label": "Official feature demonstrations",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+        "note": "View the manufacturer’s demonstrations and US specification table."
+      }
+    ]
+  },
+  "segway-navimow-x430": {
+    "verdict": "Worth considering when a large lawn creates a real coverage and traction problem. Check physical access and positioning first; those decide whether the wide cutting deck is useful.",
+    "notFor": "Small divided lawns, tight gates or gardens that require frequent lifting between isolated areas. A smaller robot can be easier to own.",
+    "specifications": [
+      {
+        "label": "Recommended lawn area",
+        "value": "1 acre",
+        "meaning": "Sum all mowing zones; property lot size includes areas the mower never cuts.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "33.50 × 24.00 × 13.80 in",
+        "meaning": "Length × width × height; check gates and turning space.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Weight with battery",
+        "value": "63.71 lb",
+        "meaning": "Disconnected lawns can create a significant lifting task.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Cutting width",
+        "value": "17 in",
+        "meaning": "Wide discs help on open lawn; routes and turns still consume time.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Cutting height",
+        "value": "0.75–4.0 in",
+        "meaning": "US black-model manual; match the local model and grass type.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Slope limit",
+        "value": "84% / about 40°",
+        "meaning": "A percentage is not an angle in degrees. Inspect boundary and traction conditions.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Typical mowing per charge",
+        "value": "About 110 minutes",
+        "meaning": "Manual test uses recently cut lawn at 77°F; wet or long grass reduces capacity.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 90 minutes",
+        "meaning": "Allow for charging stops in the available mowing window.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Battery",
+        "value": "12.8 Ah / 276 Wh",
+        "meaning": "US manual, revision 260202-A; do not import another region’s pack specification.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Weather protection",
+        "value": "IP66 mower and charging station",
+        "meaning": "Follow the prescribed cleaning method; a rating is not permission for pressure washing.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Operating temperature",
+        "value": "32–104°F / 0–40°C",
+        "meaning": "The manual recommends a narrower 50–95°F / 10–35°C range.",
+        "source": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Drive / steering",
+        "value": "Xero-turn AWD",
+        "meaning": "Evaluate tight turns on your turf as well as uphill travel.",
+        "source": "https://navimow.com/products/navimow-x4-robot-lawn-mower"
+      },
+      {
+        "label": "Positioning",
+        "value": "Network RTK + 360° vision; optional local antenna",
+        "meaning": "Antenna-free operation depends on regional network coverage.",
+        "source": "https://navimow.com/products/navimow-x4-robot-lawn-mower"
+      },
+      {
+        "label": "Obstacle crossing",
+        "value": "Up to 2.8 in vertical",
+        "meaning": "Manufacturer test conditions include maximum cutting height; geometry changes the result.",
+        "source": "https://navimow.com/products/navimow-x4-robot-lawn-mower"
+      },
+      {
+        "label": "Network RTK service",
+        "value": "Included without an extra service charge",
+        "meaning": "Positioning data is separate from the optional remote-connectivity subscription.",
+        "source": "https://navimow.com/products/navimow-x4-robot-lawn-mower"
+      },
+      {
+        "label": "Connect+ remote service",
+        "value": "1 year included; USD 32.90/year renewal",
+        "meaning": "US X430 terms observed September 6, 2026; do not use X450’s two-year inclusion.",
+        "source": "https://navimow.com/products/navimow-x4-robot-lawn-mower"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 2,249 · displayed reference USD 2,499",
+        "source": "https://navimow.com/products/navimow-x4-robot-lawn-mower",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "US X430 listing, excluding taxes. The selector showed sold out when checked; this is a dated offer, not a stock promise."
+      },
+      {
+        "market": "United States · USD",
+        "amount": "USD 32.90 per year after year one",
+        "source": "https://navimow.com/products/navimow-x4-robot-lawn-mower",
+        "kind": "Connect+ renewal snapshot",
+        "date": "2026-09-06",
+        "note": "Optional remote-connectivity service. Included Network RTK positioning is a separate service."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Segway Navimow X430",
+          "url": "https://navimow.com/products/navimow-x4-robot-lawn-mower",
+          "market": "United States"
+        },
+        {
+          "name": "Mammotion LUBA mini 2 AWD 1500",
+          "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500",
+          "market": "Europe · LiDAR listing"
+        },
+        {
+          "name": "MOVA LiDAX Ultra 1000",
+          "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower",
+          "market": "United States · non-AWD"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Rated area / market",
+          "values": [
+            "1 acre · US",
+            "1,500 m² · EU",
+            "0.25 acre · US"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "Network/local RTK + vision",
+            "LiDAR + dual-camera vision",
+            "3D LiDAR + vision"
+          ]
+        },
+        {
+          "label": "Drive",
+          "values": [
+            "AWD",
+            "AWD",
+            "Rear-wheel drive"
+          ]
+        },
+        {
+          "label": "Advertised slope",
+          "values": [
+            "84% / about 40°",
+            "80% / about 38.6°",
+            "45% / about 24°"
+          ]
+        },
+        {
+          "label": "Main ownership tradeoff",
+          "values": [
+            "Wide cut, but large body and lifting load",
+            "Smaller area class with a dedicated edge disc",
+            "Smaller-area option with lower traction rating"
+          ]
+        }
+      ],
+      "takeaway": "X430 belongs to a larger lawn class than these compact alternatives. Size the mower to the connected grass area and available mowing time; buying more capacity does not make a narrow passage wider."
+    },
+    "resources": [
+      {
+        "label": "US X4 owner’s manual",
+        "url": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129",
+        "note": "Dimensions, cutting range, installation, maintenance and warranty; revision 260202-A."
+      },
+      {
+        "label": "Official setup and model overview",
+        "url": "https://navimow.com/products/navimow-x4-robot-lawn-mower",
+        "note": "Check network coverage and watch the manufacturer’s feature demonstrations."
+      },
+      {
+        "label": "Manual and app download center",
+        "url": "https://navimow.com/pages/user-manual",
+        "note": "Find current regional instructions before installing the mower."
+      }
+    ]
+  },
+  "mova-rover-x10": {
+    "verdict": "A shortlist option for mixed surface and underwater debris where a larger basket is useful. The decision should include the physical work of lifting, emptying and recharging.",
+    "notFor": "Owners whose main requirement is automatic filter washing or minimal lifting. Large stated coverage cannot compensate for an inaccessible ledge or awkward storage route.",
+    "specifications": [
+      {
+        "label": "Coverage modes",
+        "value": "Surface, floor, walls, waterline, corners, steps and shallow areas",
+        "meaning": "Check access to the actual ledges; a mode list is not a coverage guarantee.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Claimed pool area",
+        "value": "Up to 5,400 ft²",
+        "meaning": "Pool geometry and debris load affect completion.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "21.3 × 18.1 × 12.6 in",
+        "meaning": "Allow space for the charging position and carrying route.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Robot weight",
+        "value": "34.8 lb",
+        "meaning": "Try the retrieval height before purchase.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Debris basket",
+        "value": "5 L",
+        "meaning": "Large leaves can fill usable space before fine debris does.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Filter options",
+        "value": "180 μm and 3 μm",
+        "meaning": "Use the filter suited to the debris; finer media can need more frequent rinsing.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Water-flow claim",
+        "value": "Up to 10,000 GPH",
+        "meaning": "A flow specification, not pressure in Pa or an independent cleaning score.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Floor runtime",
+        "value": "Up to 6 hours",
+        "meaning": "Do not combine this with the separate surface-mode figure.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Surface runtime",
+        "value": "Up to 12 hours",
+        "meaning": "Skimming endurance does not describe continuous floor scrubbing.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Mapping / movement",
+        "value": "AquaScan LDS; four jet-drive motors",
+        "meaning": "Evaluate stairs, tight bends and changing debris patterns in a demonstration.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Included communication accessory",
+        "value": "AquaSonar",
+        "meaning": "Check the current packing list and the accessory’s setup requirements.",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Battery / charging",
+        "value": "15,000 mAh / about 6.5 hours",
+        "meaning": "Plan the interval between retrieval and the next complete cleaning run.",
+        "source": "https://cdn.shopify.com/s/files/1/0712/8245/8860/files/04170500007514_G2526_X10_EN.pdf?v=1772445771"
+      },
+      {
+        "label": "Maximum water depth",
+        "value": "3 m / 10 ft",
+        "meaning": "Manual operating limit; this does not establish minimum shelf depth.",
+        "source": "https://cdn.shopify.com/s/files/1/0712/8245/8860/files/04170500007514_G2526_X10_EN.pdf?v=1772445771"
+      },
+      {
+        "label": "Operating water temperature",
+        "value": "5–40°C / 41–104°F",
+        "meaning": "Robot operating range from the linked manual.",
+        "source": "https://cdn.shopify.com/s/files/1/0712/8245/8860/files/04170500007514_G2526_X10_EN.pdf?v=1772445771"
+      },
+      {
+        "label": "Salt tolerance",
+        "value": "Up to 6,000 ppm",
+        "meaning": "An equipment limit, not a recommended pool chemistry target.",
+        "source": "https://cdn.shopify.com/s/files/1/0712/8245/8860/files/04170500007514_G2526_X10_EN.pdf?v=1772445771"
+      },
+      {
+        "label": "Charging dock placement",
+        "value": "Covered, dry area; manual lists IPX7 dock",
+        "meaning": "The storefront’s IPX8 dock claim conflicts with the manual. Follow the manual’s dry-location requirement.",
+        "source": "https://cdn.shopify.com/s/files/1/0712/8245/8860/files/04170500007514_G2526_X10_EN.pdf?v=1772445771"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 1,999 · displayed reference USD 2,999",
+        "source": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-06",
+        "note": "US listing observed September 6, 2026. The crossed-out reference is not treated as a verified original launch MSRP."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA Rover X10",
+          "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Aiper Scuba V3 Ultra",
+          "url": "https://aiper.com/us/aiper-scuba-v3-ultra",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot AquaSense X",
+          "url": "https://beatbot.com/products/aquasense-x",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Advertised pool area",
+          "values": [
+            "5,400 ft²",
+            "3,875 ft²",
+            "3,875 ft²"
+          ]
+        },
+        {
+          "label": "Robot weight",
+          "values": [
+            "34.8 lb",
+            "28.8 lb",
+            "28.9 lb"
+          ]
+        },
+        {
+          "label": "Debris handling",
+          "values": [
+            "5 L basket; manual rinsing",
+            "3.5 L basket; manual rinsing",
+            "AstroRinse filter washing after manual docking"
+          ]
+        },
+        {
+          "label": "Surface-mode runtime",
+          "values": [
+            "Up to 12 hours",
+            "Up to 8 hours",
+            "Up to 10 hours"
+          ]
+        },
+        {
+          "label": "Site preparation",
+          "values": [
+            "Covered dry charging position",
+            "Convenient charging and retrieval route",
+            "Water supply, drainage and station space"
+          ]
+        }
+      ],
+      "takeaway": "Rover offers a larger stated basket and area; Aiper reduces the listed lifting weight; Beatbot changes filter care but needs station installation. Compare handling effort and debris load before runtime headlines."
+    },
+    "resources": [
+      {
+        "label": "Rover X10 owner’s manual",
+        "url": "https://cdn.shopify.com/s/files/1/0712/8245/8860/files/04170500007514_G2526_X10_EN.pdf?v=1772445771",
+        "note": "Model PIXZ6111: water conditions, covered charging, filter care and troubleshooting."
+      },
+      {
+        "label": "Official feature demonstrations",
+        "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner",
+        "note": "Inspect mapping, retrieval and the package list."
+      },
+      {
+        "label": "MOVA manual download center",
+        "url": "https://us.mova.tech/pages/user-manuals",
+        "note": "Use the X10 entry to check for updated instructions."
+      }
+    ]
   }
 }

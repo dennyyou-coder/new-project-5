@@ -67,7 +67,8 @@
     ],
     "related": [
       "dreame-x60-ultra",
-      "ecovacs-deebot-x12-omnicyclone"
+      "ecovacs-deebot-x12-omnicyclone",
+      "ecovacs-deebot-t90-pro-omni"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -271,7 +272,8 @@
     ],
     "related": [
       "roborock-saros-20",
-      "dreame-x60-ultra"
+      "dreame-x60-ultra",
+      "ecovacs-deebot-t90-pro-omni"
     ],
     "announced": null,
     "verifiedAt": "2026-09-06",
@@ -438,7 +440,8 @@
     ],
     "related": [
       "mammotion-luba-mini-2-awd-1500",
-      "sunseeker-s4"
+      "sunseeker-s4",
+      "segway-navimow-x430"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -542,7 +545,8 @@
     ],
     "related": [
       "mova-lidax-ultra-1000",
-      "sunseeker-s4"
+      "sunseeker-s4",
+      "segway-navimow-x430"
     ],
     "announced": null,
     "verifiedAt": "2026-09-06",
@@ -713,7 +717,8 @@
     ],
     "related": [
       "beatbot-aquasense-x",
-      "wybot-s3"
+      "wybot-s3",
+      "mova-rover-x10"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -816,7 +821,8 @@
     ],
     "related": [
       "aiper-scuba-v3-ultra",
-      "wybot-s3"
+      "wybot-s3",
+      "mova-rover-x10"
     ],
     "announced": "2026-01-05",
     "verifiedAt": "2026-09-06",
@@ -913,5 +919,316 @@
     "launchYear": 2025,
     "launchNote": "WYBOT unveiled the S3 at CES 2025. It is an earlier model, outside the 2026 new-model selection.",
     "launchSource": "https://www.prnewswire.com/news-releases/wybot-s3-unveiled-at-ces-2025-the-first-self-docking-self-emptying-automatic-charging-pool-cleaning-robot-302342327.html"
+  },
+  {
+    "slug": "ecovacs-deebot-t90-pro-omni",
+    "name": "ECOVACS DEEBOT T90 PRO OMNI",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Robot vacuums",
+    "market": "United States",
+    "summary": "A roller-mop robot with a bagged dock and charging top-ups for busy hard-floor homes.",
+    "fit": "Homes where kitchen residue and frequent mopping matter more than buying the highest-priced flagship.",
+    "caution": "The US station uses manual water tanks; extended cleaning claims include charging visits.",
+    "facts": [
+      {
+        "label": "Mop roller",
+        "value": "27 cm / 10.63 in",
+        "meaning": "A wide cleaning path still has to reach narrow furniture gaps."
+      },
+      {
+        "label": "Robot size",
+        "value": "353 × 351 × 95 mm",
+        "meaning": "Width × depth × height; leave clearance below furniture."
+      },
+      {
+        "label": "Suction / airflow",
+        "value": "30,000 Pa / 16 L/s",
+        "meaning": "Peak manufacturer figures; compare debris pickup separately."
+      },
+      {
+        "label": "Mop-wash top-up",
+        "value": "10% in 3 minutes",
+        "meaning": "PowerBoost adds charge during station visits; water and maintenance still interrupt operation."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is T90 PRO OMNI a 2026 model?",
+        "answer": "Yes. ECOVACS showed it at CES 2026 and announced US availability on March 5, 2026. That US announcement is the dated launch reference here."
+      },
+      {
+        "question": "How is it different from X12 OmniCyclone?",
+        "answer": "T90 uses a 2.5 L dock dust bag. X12 OmniCyclone uses a reusable bagless collection system and adds a different stain-treatment package. Compare your emptying routine and final bundle price."
+      },
+      {
+        "question": "Does PowerBoost mean unlimited cleaning on one charge?",
+        "answer": "No. The robot receives short charging top-ups during mop washing. The US specification separately lists 120 minutes of standard vacuum-only operation on hard floor."
+      },
+      {
+        "question": "Can it connect directly to household plumbing?",
+        "answer": "The cited US specification says no to automatic refill-and-drain plumbing. Refilling the robot from the station’s clean-water tank does not mean that tank fills itself."
+      },
+      {
+        "question": "Can I use it on thick rugs?",
+        "answer": "Check the rug against the 15 mm mop-lift specification and observe the first wet-to-dry transition. An exclusion zone or separate vacuum-only route may be more appropriate for thick or delicate rugs."
+      },
+      {
+        "question": "Does the dock wash the floor with 75°C water?",
+        "answer": "No. The temperature refers to washing the roller at the station. Choose floor-water settings according to your flooring manufacturer’s guidance."
+      },
+      {
+        "question": "What do replacement parts cost?",
+        "answer": "The official US support page listed a compatible roller at USD 33.99 and main brush at USD 19.99 on September 6, 2026. Pack contents and local availability matter; these are examples, not an annual ownership estimate."
+      }
+    ],
+    "articles": [
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "ecovacs-deebot-x12-omnicyclone",
+      "roborock-saros-20"
+    ],
+    "announced": "2026-03-05",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official US product specifications",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Manufacturer US launch and price",
+        "url": "https://www.prnewswire.com/news-releases/ecovacs-debuts-practical-cleaning-innovations-designed-for-everyday-living-deebot-t90-pro-omni-and-winbot-w3-omni-302703876.html"
+      },
+      {
+        "label": "Manufacturer CES 2026 preview",
+        "url": "https://www.prnewswire.com/news-releases/ecovacs-showcases-its-acceleration-towards-full-scenario-service-robotics-at-ces-2026-302653595.html"
+      },
+      {
+        "label": "Official T90 manuals, maintenance and parts",
+        "url": "https://help.ecovacs.com/us/support/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Comparison reference · ECOVACS DEEBOT X12 OmniCyclone",
+        "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Comparison reference · Roborock Saros 20",
+        "url": "https://global.roborock.com/pages/roborock-saros-20"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/us/image/product/2026/02/28/054338_3895$deebot-t90-black-new-arrival-920x920-5.png",
+    "launchYear": 2026,
+    "launchNote": "US launch announced March 5, 2026, following its CES 2026 preview.",
+    "launchSource": "https://www.prnewswire.com/news-releases/ecovacs-debuts-practical-cleaning-innovations-designed-for-everyday-living-deebot-t90-pro-omni-and-winbot-w3-omni-302703876.html"
+  },
+  {
+    "slug": "segway-navimow-x430",
+    "name": "Segway Navimow X430",
+    "brand": "Segway Navimow",
+    "brandSlug": "segway-navimow",
+    "category": "Robot mowers",
+    "market": "United States",
+    "summary": "An AWD mower with a wide dual-disc cut for large lawns, with network or local RTK positioning.",
+    "fit": "Large, connected lawns where mowing width and traction can reduce the work left for a conventional mower.",
+    "caution": "Check gate width, network coverage and lifting needs before choosing a large AWD machine.",
+    "facts": [
+      {
+        "label": "Recommended lawn area",
+        "value": "1 acre",
+        "meaning": "Sum all mowing zones; property lot size includes areas the mower never cuts."
+      },
+      {
+        "label": "Cutting width",
+        "value": "17 in",
+        "meaning": "Wide discs help on open lawn; routes and turns still consume time."
+      },
+      {
+        "label": "Slope limit",
+        "value": "84% / about 40°",
+        "meaning": "A percentage is not an angle in degrees. Inspect boundary and traction conditions."
+      },
+      {
+        "label": "Positioning",
+        "value": "Network RTK + 360° vision; optional local antenna",
+        "meaning": "Antenna-free operation depends on regional network coverage."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Will X430 work without a garden antenna?",
+        "answer": "It can use Network RTK where coverage is supported. Check your postcode and signal during setup. A physical GNSS antenna is included for local positioning if needed."
+      },
+      {
+        "question": "Is all cellular connectivity free?",
+        "answer": "No. The US listing separates included Network RTK positioning from Connect+ remote services. X430 includes one year of Connect+, with a listed annual renewal of USD 32.90."
+      },
+      {
+        "question": "Does 84% mean an 84-degree slope?",
+        "answer": "No. An 84% gradient is about 40 degrees. Wet grass, turns and edge conditions can be more restrictive than an advertised climbing demonstration."
+      },
+      {
+        "question": "Can the US X430 mow more than one acre?",
+        "answer": "The recommended area is one acre. The store describes map storage up to 1.2 times recommended area, subject to layout. Extra map storage does not establish the same finished result within your mowing schedule."
+      },
+      {
+        "question": "Is X430 the same as X450?",
+        "answer": "No. The US range lists different recommended areas and Connect+ inclusion periods. This page follows the black US X430 and its matching manual, not a European X420/X450 configuration."
+      },
+      {
+        "question": "Will it pass through a 24-inch gate?",
+        "answer": "Do not plan for a zero-clearance fit. The listed body width is 24 inches, and turning, posts and uneven ground need additional room. Measure the narrowest usable opening and request a route demonstration."
+      },
+      {
+        "question": "What should I budget beyond the mower?",
+        "answer": "Compatible blades and bolts, optional garage or gate, any positioning accessories, and Connect+ renewal if you need it. Inspect service access and winter storage before buying a heavy machine."
+      }
+    ],
+    "articles": [
+      "segway-navimow-vs-husqvarna-automower"
+    ],
+    "related": [
+      "mammotion-luba-mini-2-awd-1500",
+      "mova-lidax-ultra-1000"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official US X430 listing and service terms",
+        "url": "https://navimow.com/products/navimow-x4-robot-lawn-mower"
+      },
+      {
+        "label": "Manufacturer CES 2026 launch",
+        "url": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
+      },
+      {
+        "label": "Official US X4 manual · revision 260202-A",
+        "url": "https://segwaynavimow.zendesk.com/hc/en-us/article_attachments/55022649567129"
+      },
+      {
+        "label": "Official manual and app download center",
+        "url": "https://navimow.com/pages/user-manual"
+      },
+      {
+        "label": "Comparison reference · Mammotion LUBA mini 2 AWD 1500",
+        "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Comparison reference · MOVA LiDAX Ultra 1000",
+        "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://navimow.com/cdn/shop/files/X4BLK-1.2-PDP-X430-NA_11b5e3cc-730c-4e58-b3c3-4a67de21cfb0.png?v=1770030983",
+    "launchYear": 2026,
+    "launchNote": "X4 series unveiled at CES on January 6, 2026; US preorders opened January 16.",
+    "launchSource": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
+  },
+  {
+    "slug": "mova-rover-x10",
+    "name": "MOVA Rover X10",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Pool robots",
+    "market": "United States",
+    "summary": "A large-basket pool robot combining surface skimming, underwater mapping and cordless floor cleaning.",
+    "fit": "Pools with a mixture of floating leaves, settled debris and awkward edges, where owners can manage retrieval and rinsing.",
+    "caution": "The charging base is not a filter-washing station; follow the manual’s covered, dry placement rule.",
+    "facts": [
+      {
+        "label": "Claimed pool area",
+        "value": "Up to 5,400 ft²",
+        "meaning": "Pool geometry and debris load affect completion."
+      },
+      {
+        "label": "Debris basket",
+        "value": "5 L",
+        "meaning": "Large leaves can fill usable space before fine debris does."
+      },
+      {
+        "label": "Floor runtime",
+        "value": "Up to 6 hours",
+        "meaning": "Do not combine this with the separate surface-mode figure."
+      },
+      {
+        "label": "Robot weight",
+        "value": "34.8 lb",
+        "meaning": "Try the retrieval height before purchase."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Was Rover X10 first shown in 2026?",
+        "answer": "No. MOVA’s German page identifies a public demonstration at IFA in September 2025. It appears in the manufacturer’s CES and product-launch material for 2026; this library treats it as a 2026 market launch, not a first-ever reveal."
+      },
+      {
+        "question": "Does the 12-hour figure apply to floor cleaning?",
+        "answer": "No. The US page distinguishes up to 12 hours of surface cleaning from up to six hours on the floor. Compare rivals in the same mode."
+      },
+      {
+        "question": "Can I leave its charging dock in the rain?",
+        "answer": "The linked manual requires indoor use or a covered, dry outdoor area. Its specification lists IPX7 for the dock, while the storefront says IPX8. Follow the manual and obtain clarification for your exact unit."
+      },
+      {
+        "question": "Will it clean every tanning ledge?",
+        "answer": "The supported mode does not establish access to every shelf. WCB has not verified one universal minimum shelf depth for this US reference. Measure the approach, width and water depth and ask for a comparable demonstration."
+      },
+      {
+        "question": "Is the 3-micron filter always the best choice?",
+        "answer": "It targets fine particles but can need more frequent attention. Match filtration to the debris you actually collect and follow the cleaning routine for each filter element."
+      },
+      {
+        "question": "Does it have an automatic filter-washing station?",
+        "answer": "The listed base provides wireless charging. Do not assume it performs the filter-washing work of Beatbot’s AstroRinse station; retrieval, basket cleaning and storage remain owner tasks."
+      },
+      {
+        "question": "Can it operate in a saltwater pool?",
+        "answer": "The linked manual lists a maximum salt concentration of 6,000 ppm. Check all operating water limits for the exact unit; robot tolerance does not replace normal pool-water care."
+      }
+    ],
+    "articles": [
+      "underwater-lidar-for-robotic-pool-cleaners",
+      "robotic-pool-cleaners-leaves-fine-debris"
+    ],
+    "related": [
+      "aiper-scuba-v3-ultra",
+      "beatbot-aquasense-x"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official US Rover X10 specifications and price",
+        "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Manufacturer CES 2026 product lineup",
+        "url": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
+      },
+      {
+        "label": "Official earlier-preview disclosure · September 2025",
+        "url": "https://de.mova.tech/products/x10-poolreinigungsroboter"
+      },
+      {
+        "label": "Official Rover X10 manual · model PIXZ6111",
+        "url": "https://cdn.shopify.com/s/files/1/0712/8245/8860/files/04170500007514_G2526_X10_EN.pdf?v=1772445771"
+      },
+      {
+        "label": "Official US manuals",
+        "url": "https://us.mova.tech/pages/user-manuals"
+      },
+      {
+        "label": "Comparison reference · Aiper Scuba V3 Ultra",
+        "url": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      },
+      {
+        "label": "Comparison reference · Beatbot AquaSense X",
+        "url": "https://beatbot.com/products/aquasense-x"
+      }
+    ],
+    "imageSource": "https://us.mova.tech/cdn/shop/files/1-X10.jpg?v=1776068321",
+    "launchYear": 2026,
+    "launchNote": "2026 market-launch selection; demonstrated at IFA in September 2025 and featured in MOVA’s CES 2026 lineup.",
+    "launchSource": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
   }
 ]
