@@ -1857,7 +1857,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/02-roborock-floor-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -1875,7 +1875,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/03-roborock-robots-outdoor-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -1893,7 +1893,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/04-dreame-robots-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -1911,7 +1911,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/05-dreame-wet-dry-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -1929,7 +1929,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/06-dreame-vacuums-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -1947,7 +1947,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/07-dreame-prototypes-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -1965,7 +1965,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/08-dreame-window-garden-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -1983,7 +1983,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/09-ecovacs-floor-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2001,7 +2001,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/10-ecovacs-window-outdoor-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2019,7 +2019,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/11-tineco-new-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2037,7 +2037,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/12-tineco-existing-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2055,7 +2055,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/13-mova-floor-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2073,7 +2073,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/14-mova-outdoor-tech-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2091,7 +2091,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/15-mova-research-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2109,7 +2109,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/16-narwal-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2127,7 +2127,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/17-irobot-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2145,7 +2145,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/18-dji-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2163,7 +2163,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/19-eufy-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2181,7 +2181,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/20-karcher-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2199,7 +2199,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/21-miele-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2217,7 +2217,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/22-bissell-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2235,7 +2235,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/23-uwant-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2253,7 +2253,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/24-bosch-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2271,7 +2271,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/25-aeg-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2289,7 +2289,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/26-midea-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2307,7 +2307,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/27-xlean-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2325,7 +2325,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/28-aiper-pool-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2343,7 +2343,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/29-aiper-irrigation-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2361,7 +2361,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/30-beatbot-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2379,7 +2379,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/31-wybot-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2397,7 +2397,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/32-navimow-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2415,7 +2415,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/33-mammotion-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2433,7 +2433,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/34-sunseeker-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2451,7 +2451,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/35-anthbot-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2469,7 +2469,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/36-yarbo-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2487,7 +2487,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/37-lymow-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2505,7 +2505,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/38-nexlawn-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2523,7 +2523,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/39-terramow-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -2541,7 +2541,7 @@
       }
     },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/40-dyson-en.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1280,
       "height": 853,
@@ -3045,7 +3045,7 @@
       }
     },
     "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/02-existing-approaches.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3063,7 +3063,7 @@
       }
     },
     "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/03-safety-requirements.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3081,7 +3081,7 @@
       }
     },
     "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/04-edgemaestro.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3405,7 +3405,7 @@
       }
     },
     "/images/articles/roborock-rockaqua-p1-pool-robot/02-product.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3423,7 +3423,7 @@
       }
     },
     "/images/articles/roborock-rockaqua-p1-pool-robot/03-timing.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3441,7 +3441,7 @@
       }
     },
     "/images/articles/roborock-rockaqua-p1-pool-robot/04-financial-capacity.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -4648,6 +4648,78 @@
         "height": 533,
         "bytes": 70206,
         "outputHash": "sha256:949bd4691f6bff234e62681e0c1dfe076f7ca463e6eb9f0092a0538aa37988cd"
+      }
+    },
+    "/images/articles/sunseeker-from-oem-to-robot-mower-brand/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 163898,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8e9a5b99c72427f7c7fc807aa8de6bfb6a568eeae7ec35f6b05323d0fd1cb54c",
+      "outputHash": "sha256:12b3547129f4a6109cbeb0634a1c2d1b76ac88a968d632abc8b6d31914866a91",
+      "mobile": {
+        "src": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 59338,
+        "outputHash": "sha256:667aab06b132524d460f04f79b490a3063d244a75ff0dfa1c02af936482a6f1a"
+      }
+    },
+    "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 122816,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:59c4313455b4059c90c2b43d616fe01fbfc2d1c5594f0797ef584c65625eb033",
+      "outputHash": "sha256:0f9ecab6c0d005a426913905ec730983b1a440c758927840834ec10df903143a",
+      "mobile": {
+        "src": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 52114,
+        "outputHash": "sha256:294353583f8efd8b85a65772d78788f9d87d43053df9a9b7e3d1f19693c4bf61"
+      }
+    },
+    "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 224130,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:17a8d042999e35f168c23137c1ef4feba8783f6e81fc2dd65ccfff97c0d5a1ac",
+      "outputHash": "sha256:bd2cd627c1340aee5fabcb2c33d736acfb032149e881b517a126bd3568536f72",
+      "mobile": {
+        "src": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 77960,
+        "outputHash": "sha256:b2080d6d9f4c7d58c212abb449b1de8b7fde6e0ab6e36fb1fc6a21878cea3d94"
+      }
+    },
+    "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 118446,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3a738f319abe7c7442a7ed4582bed820d33d22b787914bdbb448cd19d29139f4",
+      "outputHash": "sha256:0f10f152a0d34be31c6a30820e42372747773e033a2ddb321f8b72648b379376",
+      "mobile": {
+        "src": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 50896,
+        "outputHash": "sha256:e6782f7d5e98d8af5b6e3d7b851b9829061b77df0e65380524847461289800f0"
       }
     },
     "/images/articles/sunseeker-s4/01-cover.webp": {
@@ -34233,6 +34305,15 @@
         "/images/articles/story-of-hard-floor-washers/05.webp"
       ]
     },
+    "sunseeker-from-oem-to-robot-mower-brand": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/01-cover.webp",
+      "body": [
+        "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp",
+        "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp",
+        "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp"
+      ]
+    },
     "sunseeker-s4": {
       "budgetClass": "standard",
       "cover": "/images/articles/sunseeker-s4/01-cover.webp",
@@ -36419,6 +36500,30 @@
           "status": "matched",
           "primary": "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform.webp",
           "hash": "sha256:b61b1805747454b9470772f7b2877922ca9dd73e85c10c9db6f4fc79aef4e753"
+        }
+      }
+    },
+    "sunseeker-from-oem-to-robot-mower-brand": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/01-cover.webp",
+          "hash": "sha256:8e9a5b99c72427f7c7fc807aa8de6bfb6a568eeae7ec35f6b05323d0fd1cb54c"
+        },
+        "02-founder-timeline.png": {
+          "status": "matched",
+          "primary": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp",
+          "hash": "sha256:59c4313455b4059c90c2b43d616fe01fbfc2d1c5594f0797ef584c65625eb033"
+        },
+        "03-team-and-brand.png": {
+          "status": "matched",
+          "primary": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp",
+          "hash": "sha256:17a8d042999e35f168c23137c1ef4feba8783f6e81fc2dd65ccfff97c0d5a1ac"
+        },
+        "04-capital-and-scale.png": {
+          "status": "matched",
+          "primary": "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp",
+          "hash": "sha256:3a738f319abe7c7442a7ed4582bed820d33d22b787914bdbb448cd19d29139f4"
         }
       }
     },
