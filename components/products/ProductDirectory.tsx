@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import type { ImgHTMLAttributes } from "react";
 
-type Card = { slug: string; name: string; brand: string; category: string; summary: string; market: string; announced: string | null; image: ImgHTMLAttributes<HTMLImageElement> };
+type Card = { slug: string; name: string; brand: string; category: string; summary: string; market: string; announced: string | null; launchYear: number; image: ImgHTMLAttributes<HTMLImageElement> };
 
 export function ProductDirectory({ models }: { models: Card[] }) {
   const [query, setQuery] = useState("");
@@ -26,7 +26,7 @@ export function ProductDirectory({ models }: { models: Card[] }) {
     {sort === "announced" && <p className="product-note">Newest confirmed announcement dates first. Models without a verified announcement date follow; an announcement is not a local release date.</p>}
     <div className="product-grid">{filtered.map((model) => <Link className="product-card" key={model.slug} href={`/products/${model.slug}`}>
       <div className="product-card-image"><img {...model.image} alt={model.name} /></div>
-      <div className="product-card-copy"><p className="product-eyebrow">{model.category}</p><h2>{model.name}</h2><p>{model.summary}</p><span className="product-market">{model.market}</span><div className="product-card-footer">Explore model <span aria-hidden="true">↗</span></div></div>
+      <div className="product-card-copy"><p className="product-eyebrow">{model.category} · {model.launchYear} new</p><h2>{model.name}</h2><p>{model.summary}</p><span className="product-market">{model.market}</span><div className="product-card-footer">Explore model <span aria-hidden="true">↗</span></div></div>
     </Link>)}</div>
     {!filtered.length && <div className="product-empty"><h2>No matching models yet</h2><p>Try another model name, brand or category.</p><button type="button" onClick={reset}>Show all models</button></div>}
   </section>;

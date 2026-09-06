@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import test from 'node:test';
 import './register-path-alias.mjs';
-import { productModels, getProduct, productSourcingRoutes } from '../lib/products.ts';
+import { productModels, featuredProductModels, productSelectionYear, getProduct, productSourcingRoutes } from '../lib/products.ts';
 import { getInsights } from '../lib/content.ts';
 import { getPublishedBrandProfiles } from '../lib/brands.ts';
 import { buildDiscoverySitemap } from '../lib/sitemaps.ts';
@@ -45,4 +45,20 @@ test('products stay out of the blog and each model is discoverable in the sitema
   }
   assert.equal(getProduct('unlisted-model'), undefined);
   assert.equal(getProduct('../../package'), undefined);
+});
+
+
+test('first selection contains only sourced 2026 launches and preserves older published routes', () => {
+  assert.equal(productSelectionYear, 2026);
+  assert.equal(featuredProductModels.length, 7);
+  for (const model of featuredProductModels) {
+    assert.equal(model.launchYear, 2026);
+    assert.ok(model.launchNote);
+    assert.ok(model.sources.some(source => source.url === model.launchSource));
+    if (model.announced) assert.ok(model.announced.startsWith('2026-'));
+  }
+  for (const slug of ['dyson-v16-piston-animal', 'sunseeker-s4', 'wybot-s3']) {
+    assert.ok(!featuredProductModels.some(model => model.slug === slug));
+    assert.equal(getProduct(slug).launchYear, 2025);
+  }
 });
