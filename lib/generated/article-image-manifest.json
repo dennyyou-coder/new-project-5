@@ -1608,7 +1608,7 @@
       }
     },
     "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/03-xlean-tr1-handheld.webp": {
-      "role": "transparent",
+      "role": "body",
       "kind": "transparent",
       "width": 1211,
       "height": 622,
@@ -1626,7 +1626,7 @@
       }
     },
     "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection.webp": {
-      "role": "transparent",
+      "role": "body",
       "kind": "transparent",
       "width": 1343,
       "height": 1316,
@@ -2541,6 +2541,78 @@
         "height": 533,
         "bytes": 63210,
         "outputHash": "sha256:cacd1cb760cbb7a3eba605da454a80cfa47e5b386543a9de59878f4795e4e018"
+      }
+    },
+    "/images/articles/roborock-rockaqua-p1-pool-robot/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 158260,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7cccd02b4b2b54d819c53b23ceff3619d86274cfb3e41d158bd1ca2700e4e510",
+      "outputHash": "sha256:c50837f7166949f9727d906b1a4423f5c368afc0c5247c2042ad44ac62fb4fdb",
+      "mobile": {
+        "src": "/images/articles/roborock-rockaqua-p1-pool-robot/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 57002,
+        "outputHash": "sha256:ce69a1e492dbfe48fea9b4aeba602f871e5641b1b2d8553682555908191a38d3"
+      }
+    },
+    "/images/articles/roborock-rockaqua-p1-pool-robot/02-product.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 120328,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:fd518da1e74407302e009e043290f08f57bfb9e1b2a5b1ba132718189a7cfdbf",
+      "outputHash": "sha256:e9c9dd0cc285ae721e1ca372a34c5fa2be881122f2c45919fdaa94bd2bb8a1ed",
+      "mobile": {
+        "src": "/images/articles/roborock-rockaqua-p1-pool-robot/02-product-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 45958,
+        "outputHash": "sha256:0cd53ed7b9f5a23e1f7ebfa7aa6c34c8a4673d957c357fbe16eceb24bd384f62"
+      }
+    },
+    "/images/articles/roborock-rockaqua-p1-pool-robot/03-timing.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 104336,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:479acb2fcdb58cb0ec8897403db9e5a6ea125615195e7104b14ae367b5b55b0a",
+      "outputHash": "sha256:1b30dcf66f06fe756feb48071175f4ecd7fa2f10950df21e8c9b776fd4e3da42",
+      "mobile": {
+        "src": "/images/articles/roborock-rockaqua-p1-pool-robot/03-timing-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 42926,
+        "outputHash": "sha256:d246788bcac86d04a8555e0f87477b57d7bbf7f6db81b46c04f7cc601778ac00"
+      }
+    },
+    "/images/articles/roborock-rockaqua-p1-pool-robot/04-financial-capacity.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 108272,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:97e3415b20ac02641b1f978b65cb84938dbcf5123109ad35a3e59db1e1495f11",
+      "outputHash": "sha256:a5e69d21f4adebf45ff4f880c191e1eec7145026f27b9abb52f53fa584bb5e4e",
+      "mobile": {
+        "src": "/images/articles/roborock-rockaqua-p1-pool-robot/04-financial-capacity-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 46084,
+        "outputHash": "sha256:f11781181cce228441c1b664782838b9ed962c639e2a60cc2f6fe869f321154a"
       }
     },
     "/images/articles/roborock-saros-20/01-cover.webp": {
@@ -32504,6 +32576,15 @@
       "cover": "/images/blog/roborock-robot-mowers-dealer-rollout.webp",
       "body": []
     },
+    "roborock-rockaqua-p1-pool-robot": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-rockaqua-p1-pool-robot/01-cover.webp",
+      "body": [
+        "/images/articles/roborock-rockaqua-p1-pool-robot/02-product.webp",
+        "/images/articles/roborock-rockaqua-p1-pool-robot/03-timing.webp",
+        "/images/articles/roborock-rockaqua-p1-pool-robot/04-financial-capacity.webp"
+      ]
+    },
     "roborock-rockmow-first-generation": {
       "budgetClass": "standard",
       "cover": "/images/blog/roborock-rockmow-first-generation-cover.webp",
@@ -34827,6 +34908,30 @@
           "status": "matched",
           "primary": "/images/articles/pressure-washer-recalls-china-oem-industry/03-manufacturing-talent-network.webp",
           "hash": "sha256:a9ec2aa545c5da5f1d1e652d22251f210b5eaa0378915ebd5712441c1015e71d"
+        }
+      }
+    },
+    "roborock-rockaqua-p1-pool-robot": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-rockaqua-p1-pool-robot/01-cover.webp",
+          "hash": "sha256:7cccd02b4b2b54d819c53b23ceff3619d86274cfb3e41d158bd1ca2700e4e510"
+        },
+        "02-product.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-rockaqua-p1-pool-robot/02-product.webp",
+          "hash": "sha256:fd518da1e74407302e009e043290f08f57bfb9e1b2a5b1ba132718189a7cfdbf"
+        },
+        "03-timing.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-rockaqua-p1-pool-robot/03-timing.webp",
+          "hash": "sha256:479acb2fcdb58cb0ec8897403db9e5a6ea125615195e7104b14ae367b5b55b0a"
+        },
+        "04-financial-capacity.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-rockaqua-p1-pool-robot/04-financial-capacity.webp",
+          "hash": "sha256:97e3415b20ac02641b1f978b65cb84938dbcf5123109ad35a3e59db1e1495f11"
         }
       }
     },
