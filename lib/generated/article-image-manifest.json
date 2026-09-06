@@ -830,7 +830,7 @@
       "outputHash": "sha256:c85d35a5566adf7e7eff5fa0892d15262b60dba7bac2b104727c1e149cce3fd0"
     },
     "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/09-xwow-floor-washing-robot.webp": {
-      "role": "transparent",
+      "role": "body",
       "kind": "transparent",
       "width": 800,
       "height": 800,
@@ -1443,6 +1443,96 @@
         "height": 800,
         "bytes": 7552,
         "outputHash": "sha256:9f19d34eb9560dc5f7a1508fe8df5f5ad41b5f7278cd698efd4b6e76db6e0c0a"
+      }
+    },
+    "/images/articles/dyson-camerajet-toothbrush-review/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56834,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:621159d5d7f952384eb45be3202496b10137c4ba5f7b17a0f4eca2611b9cbe7e",
+      "outputHash": "sha256:fce6aeed41b92deeb09635b3ece43e58b2054650ecb2a0669c5f64b50b7d69e4",
+      "mobile": {
+        "src": "/images/articles/dyson-camerajet-toothbrush-review/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22458,
+        "outputHash": "sha256:00b83dea494855ce4e7bc884a2158b2f50051a6f1856e1dded99e3eebc9cf2e8"
+      }
+    },
+    "/images/articles/dyson-camerajet-toothbrush-review/02-camera-and-jet.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 105032,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e5d8ca65714822663cfbc7154a8e9791bdf4d7190732f8baeaac517e42d44ef9",
+      "outputHash": "sha256:d4a19251575a69fd9c05df67ed525271c23e7002c40aa79d9927af7110792e6e",
+      "mobile": {
+        "src": "/images/articles/dyson-camerajet-toothbrush-review/02-camera-and-jet-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 42602,
+        "outputHash": "sha256:32ad1828ecc83e571e29d9fe02faf343a47f8f26132409e8845620b851463c85"
+      }
+    },
+    "/images/articles/dyson-camerajet-toothbrush-review/03-fluid-system.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 70158,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:4092a85d3851674dd0dc8fa3c9278c1e2701c564f07164a98e5a9392cb8e22bd",
+      "outputHash": "sha256:8ec93c2ca8b5f0eb7339252b82b74afa1070140532de7b118c62e14b14afb6ac",
+      "mobile": {
+        "src": "/images/articles/dyson-camerajet-toothbrush-review/03-fluid-system-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 28728,
+        "outputHash": "sha256:7b405edbe02d361dfe72b2367044bbf29ea4e0cfb0272a7af577019c96116a2f"
+      }
+    },
+    "/images/articles/dyson-camerajet-toothbrush-review/04-brush-head.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 93814,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7ddf9a642c7578154aaacb19f76c16cb7dc4bf5c4225331adcb685cff6f0330f",
+      "outputHash": "sha256:be47befcd05ffe073d2c70a46c3fb5c2416f3f8ec5a9de0ebd3bbbeafe742354",
+      "mobile": {
+        "src": "/images/articles/dyson-camerajet-toothbrush-review/04-brush-head-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 37694,
+        "outputHash": "sha256:52653157f304d33d5a60ab663e59a560fe178c940c34c5af2f0eede40abeb4eb"
+      }
+    },
+    "/images/articles/dyson-camerajet-toothbrush-review/05-app-and-consumables.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 99354,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3d0469faeb778ef9cb289f8f1dc308f527c2348c8e4c2cac9f5f0d8ac595a41a",
+      "outputHash": "sha256:39e3d4cfc0f65321625bed8a557807d271bcf275155dba26b8c3318acecc7ee8",
+      "mobile": {
+        "src": "/images/articles/dyson-camerajet-toothbrush-review/05-app-and-consumables-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 40004,
+        "outputHash": "sha256:a0f984ade5c9a88342135bc8032ead48fb42e0704836aeb6ef525f073dd32b8d"
       }
     },
     "/images/articles/dyson-v16-piston-animal/01-cover.webp": {
@@ -30977,6 +31067,16 @@
         "/images/insights/dyson-at-a-crossroads-image-012.jpg"
       ]
     },
+    "dyson-camerajet-toothbrush-review": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-camerajet-toothbrush-review/01-cover.webp",
+      "body": [
+        "/images/articles/dyson-camerajet-toothbrush-review/02-camera-and-jet.webp",
+        "/images/articles/dyson-camerajet-toothbrush-review/03-fluid-system.webp",
+        "/images/articles/dyson-camerajet-toothbrush-review/04-brush-head.webp",
+        "/images/articles/dyson-camerajet-toothbrush-review/05-app-and-consumables.webp"
+      ]
+    },
     "dyson-china-oem-history": {
       "budgetClass": "standard",
       "cover": "/images/insights/dyson-china-oem-history-cover.jpg",
@@ -34442,6 +34542,35 @@
           "status": "matched",
           "primary": "/images/articles/dreame-x60-ultra/01-cover.webp",
           "hash": "sha256:ce3bc1c9a3e3b08cf611142bdafa77fc7e9b31a04ae1dc78dc83a7dbd052e30c"
+        }
+      }
+    },
+    "dyson-camerajet-toothbrush-review": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-camerajet-toothbrush-review/01-cover.webp",
+          "hash": "sha256:621159d5d7f952384eb45be3202496b10137c4ba5f7b17a0f4eca2611b9cbe7e"
+        },
+        "02-camera-and-jet.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-camerajet-toothbrush-review/02-camera-and-jet.webp",
+          "hash": "sha256:e5d8ca65714822663cfbc7154a8e9791bdf4d7190732f8baeaac517e42d44ef9"
+        },
+        "03-fluid-system.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-camerajet-toothbrush-review/03-fluid-system.webp",
+          "hash": "sha256:4092a85d3851674dd0dc8fa3c9278c1e2701c564f07164a98e5a9392cb8e22bd"
+        },
+        "04-brush-head.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-camerajet-toothbrush-review/04-brush-head.webp",
+          "hash": "sha256:7ddf9a642c7578154aaacb19f76c16cb7dc4bf5c4225331adcb685cff6f0330f"
+        },
+        "05-app-and-consumables.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-camerajet-toothbrush-review/05-app-and-consumables.webp",
+          "hash": "sha256:3d0469faeb778ef9cb289f8f1dc308f527c2348c8e4c2cac9f5f0d8ac595a41a"
         }
       }
     },
