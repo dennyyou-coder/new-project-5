@@ -1,3 +1,4 @@
+import { ProductLinks } from "@/components/products/ProductLinks";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -305,6 +306,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
             <div className="blog-reading-body" dangerouslySetInnerHTML={{ __html: reading.content }} />
 
+            <ProductLinks article={article.slug} />
             <ArticleShareActions title={article.title} url={url} />
 
             <footer className="blog-author-note">

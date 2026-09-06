@@ -8,7 +8,7 @@ import test from "node:test";
 
 import sharp from "sharp";
 import { verifyArticleImages } from "../scripts/article-images/verify.mjs";
-import { ARTICLE_IMAGE_LIMIT_BYTES } from "../scripts/article-images/config.mjs";
+import { ARTICLE_IMAGE_LIMIT_BYTES, IMAGE_BUDGETS } from "../scripts/article-images/config.mjs";
 import { buildRuntimeIndex } from "../scripts/article-images/manifest.mjs";
 
 import {
@@ -1723,4 +1723,17 @@ test("prepareAllArticleImages still blocks missing or role-ambiguous repository 
     }),
     /ambiguous-repository-primary.*conflicting roles.*ambiguous-repository-primary-shared\.webp/i
   );
+});
+
+test("product covers retain full square photography through the standard preparation path", async () => {
+  const project = await validFixture({ slug: "product-square", bodyCount: 0, coverSize: { width: 1200, height: 1200 } });
+  const productDirectory = path.join(project.projectRoot, "content", "products");
+  fs.mkdirSync(productDirectory);
+  fs.renameSync(articleFile(project, project.slug), path.join(productDirectory, `${project.slug}.mdx`));
+  await prepareArticleImages({ projectRoot: project.projectRoot, slug: project.slug, sourceRoot: project.folder });
+  const manifest = JSON.parse(fs.readFileSync(path.join(project.projectRoot, "lib", "generated", "article-image-manifest.json"), "utf8"));
+  const cover = manifest.assets[manifest.articles[project.slug].cover];
+  assert.equal(cover.width, cover.height);
+  assert.ok(cover.bytes <= IMAGE_BUDGETS.cover.desktop);
+  assert.deepEqual((await verifyArticleImages({ projectRoot: project.projectRoot, sourceLibraryRoot: project.sourceLibraryRoot })).failures, []);
 });

@@ -30,7 +30,7 @@ function parseAttributes(tag) {
 }
 
 function articleMarkup(html) {
-  const start = html.search(/<article\b[^>]*class=(?:"[^"]*\bblog-article-main\b[^"]*"|'[^']*\bblog-article-main\b[^']*')[^>]*>/i);
+  const start = html.search(/<article\b[^>]*class=(?:"[^"]*\b(?:blog-article-main|product-model-main)\b[^"]*"|'[^']*\b(?:blog-article-main|product-model-main)\b[^']*')[^>]*>/i);
   if (start < 0) return null;
   const end = html.indexOf("</article>", start);
   return end < 0 ? null : html.slice(start, end + "</article>".length);
@@ -41,7 +41,7 @@ function imageTags(markup) {
 }
 
 function articleContentImageTags(markup) {
-  return [...markup.matchAll(/<figure\b[^>]*class=(?:"[^"]*\b(?:blog-article-cover|article-inline-image)\b[^"]*"|'[^']*\b(?:blog-article-cover|article-inline-image)\b[^']*')[^>]*>[\s\S]*?<\/figure>/gi)]
+  return [...markup.matchAll(/<figure\b[^>]*class=(?:"[^"]*\b(?:blog-article-cover|product-model-cover|article-inline-image)\b[^"]*"|'[^']*\b(?:blog-article-cover|product-model-cover|article-inline-image)\b[^']*')[^>]*>[\s\S]*?<\/figure>/gi)]
     .flatMap(([figure]) => imageTags(figure));
 }
 
@@ -139,7 +139,10 @@ export async function verifyBuiltArticleImages(options = {}) {
   let responsiveImages = 0;
   for (const slug of Object.keys(manifest.articles ?? {}).sort()) {
     const article = manifest.articles[slug];
-    const htmlFile = path.join(paths.buildRoot, `${slug}.html`);
+    const isProduct = fs.existsSync(path.join(paths.projectRoot, "content", "products", `${slug}.mdx`));
+    const route = isProduct ? "products" : "blog";
+    const htmlRoot = isProduct ? path.join(paths.buildRoot, "..", "products") : paths.buildRoot;
+    const htmlFile = path.join(htmlRoot, `${slug}.html`);
     if (!fs.existsSync(htmlFile)) {
       failures.push(finding(
         "BUILT_ARTICLE_MISSING",
@@ -226,7 +229,7 @@ export async function verifyBuiltArticleImages(options = {}) {
         ));
         continue;
       }
-      const expectedSizes = isDesktopCover ? COVER_SIZES : BODY_SIZES;
+      const expectedSizes = isDesktopCover ? (isProduct ? "(max-width: 800px) calc(100vw - 40px), 560px" : COVER_SIZES) : BODY_SIZES;
       if (attributes.sizes !== expectedSizes) {
         failures.push(finding(
           "BUILT_SIZES_MISMATCH",
@@ -291,7 +294,7 @@ export async function verifyBuiltArticleImages(options = {}) {
     }
 
     const canonical = canonicalHref(html);
-    const expectedCanonical = `${SITE_URL}/blog/${slug}`;
+    const expectedCanonical = `${SITE_URL}/${route}/${slug}`;
     if (canonical !== expectedCanonical) {
       failures.push(finding(
         "BUILT_CANONICAL_MISMATCH",

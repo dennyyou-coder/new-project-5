@@ -44,7 +44,7 @@ export type Insight = {
 
 const insightsDirectory = path.join(process.cwd(), "content", "insights");
 
-function parseFrontmatter(source: string) {
+export function parseFrontmatter(source: string) {
   const match = source.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
 
   if (!match) {

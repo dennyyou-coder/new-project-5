@@ -1,0 +1,583 @@
+[
+  {
+    "slug": "roborock-saros-20",
+    "name": "Roborock Saros 20",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Robot vacuums",
+    "market": "Global specification",
+    "summary": "A low-profile vacuum and mop with a lifting chassis for homes with difficult transitions.",
+    "fit": "Homes where low furniture and room thresholds interrupt daily robot cleaning.",
+    "caution": "Measure every transition: the maximum double-step claim is not a single vertical step rating.",
+    "facts": [
+      {
+        "label": "Body height",
+        "value": "7.98 cm",
+        "meaning": "Measure the lowest point beneath furniture, including rails."
+      },
+      {
+        "label": "Suction claim",
+        "value": "36,000 Pa",
+        "meaning": "A manufacturer peak figure, not a comparable pickup score."
+      },
+      {
+        "label": "Navigation",
+        "value": "StarSight 2.0",
+        "meaning": "Check obstacle handling against your actual clutter."
+      },
+      {
+        "label": "Chassis",
+        "value": "AdaptiLift 3.0",
+        "meaning": "Threshold shape matters as much as total height."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can Saros 20 climb an 8.8 cm step?",
+        "answer": "Roborock describes a double-layer threshold: the first rise is at most 4.5 cm, the gap is over 12 cm and at most 14 cm, and the second rise is at most 4.3 cm. Do not apply 8.8 cm to one vertical obstacle."
+      }
+    ],
+    "articles": [
+      "roborock-vs-dreame-robot-vacuums",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "dreame-x60-ultra",
+      "ecovacs-deebot-x12-omnicyclone"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · Global specification",
+        "url": "https://global.roborock.com/pages/roborock-saros-20"
+      }
+    ],
+    "imageSource": "https://global.roborock.com/cdn/shop/files/Saros_20_Black_ID.png?v=1765951133"
+  },
+  {
+    "slug": "dreame-x60-ultra",
+    "name": "Dreame X60 Ultra",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Robot vacuums",
+    "market": "United States",
+    "summary": "A slim vacuum and mop platform pairing high advertised suction with an automated mop-care dock.",
+    "fit": "Mixed-floor homes looking for low-clearance access and less daily mop handling.",
+    "caution": "Check carpet behavior, dock access and local consumable costs before using peak suction to choose.",
+    "facts": [
+      {
+        "label": "Body height",
+        "value": "7.95 cm",
+        "meaning": "Allow extra clearance for real furniture and uneven floors."
+      },
+      {
+        "label": "Suction claim",
+        "value": "35,000 Pa",
+        "meaning": "Peak suction does not establish cleaning superiority."
+      },
+      {
+        "label": "Dock wash",
+        "value": "Up to 100°C",
+        "meaning": "This refers to mop self-cleaning, not floor temperature."
+      },
+      {
+        "label": "Brush system",
+        "value": "HyperStream DuoBrush 2.0",
+        "meaning": "Inspect brush-end maintenance as well as hair pickup."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does X60 Ultra wash the floor at 100°C?",
+        "answer": "No. The cited temperature describes the dock’s mop-cleaning process. It should not be presented as the temperature applied to your floor."
+      }
+    ],
+    "articles": [
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "roborock-saros-20",
+      "ecovacs-deebot-x12-omnicyclone"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · United States",
+        "url": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
+      },
+      {
+        "label": "X60 Ultra manual and support",
+        "url": "https://support.dreametech.com/hc/en-us/articles/15593670954127"
+      }
+    ],
+    "imageSource": "https://www.dreametech.com/cdn/shop/files/Total-Right-X60_Ultra-White_1200x1200.webp?v=1773224158"
+  },
+  {
+    "slug": "ecovacs-deebot-x12-omnicyclone",
+    "name": "ECOVACS DEEBOT X12 OmniCyclone",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Robot vacuums",
+    "market": "Global specification",
+    "summary": "A roller-mop robot built around stain treatment, edge contact and bagless dock dust collection.",
+    "fit": "Hard-floor homes where food stains and edge mopping matter in the buying decision.",
+    "caution": "Check roller access, dirty-water handling and carpet protection; automated washing still needs upkeep.",
+    "facts": [
+      {
+        "label": "Mop roller",
+        "value": "27 cm",
+        "meaning": "Roller coverage matters alongside how often it is rinsed."
+      },
+      {
+        "label": "Suction claim",
+        "value": "22,000 Pa",
+        "meaning": "Do not confuse suction with the spray-pressure claim."
+      },
+      {
+        "label": "Airflow claim",
+        "value": "22 L/s",
+        "meaning": "Airflow and suction are different measurements."
+      },
+      {
+        "label": "Mop system",
+        "value": "OZMO ROLLER 3.0",
+        "meaning": "Assess stain removal on a floor material like yours."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is the 46,000 Pa figure vacuum suction?",
+        "answer": "No. ECOVACS uses that figure for its stain-treatment water jets. The global page lists vacuum suction separately at up to 22,000 Pa."
+      }
+    ],
+    "articles": [
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "roborock-saros-20",
+      "dreame-x60-ultra"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · Global specification",
+        "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/image/product/2026/03/23/035142_3240$X12旋风尘桶基站1.jpg"
+  },
+  {
+    "slug": "dyson-v16-piston-animal",
+    "name": "Dyson V16 Piston Animal",
+    "brand": "Dyson",
+    "brandSlug": "dyson",
+    "category": "Cordless vacuums",
+    "market": "United States",
+    "summary": "A manually operated cordless vacuum emphasizing hair handling and a dust-compacting bin.",
+    "fit": "Pet owners and households needing direct control on stairs, upholstery and mixed floors.",
+    "caution": "Handle the machine before purchase: balance, trigger-free operation and tool changes matter more than peak power alone.",
+    "facts": [
+      {
+        "label": "Suction claim",
+        "value": "315 AW",
+        "meaning": "Measured at the inlet in Boost mode under the stated test."
+      },
+      {
+        "label": "Cleaner head",
+        "value": "All Floor Cones Sense",
+        "meaning": "A dual-cone head for hair management and floor adaptation."
+      },
+      {
+        "label": "Dust handling",
+        "value": "CleanCompaktor",
+        "meaning": "Compaction does not remove the need to empty the bin."
+      },
+      {
+        "label": "Product type",
+        "value": "Cordless stick",
+        "meaning": "This is a manually guided vacuum, not an autonomous robot."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is V16 Piston Animal a wet floor washer?",
+        "answer": "The standard cordless vacuum and the V16 Piston Animal Submarine wet-and-dry package are distinct. Confirm the exact package and compatible wet head before buying for floor washing."
+      }
+    ],
+    "articles": [
+      "dyson-v16-piston-animal-vs-gen5detect",
+      "shark-powerdetect-speed-vs-dyson-v16-piston-animal",
+      "dyson-new-product-push-premium-innovation"
+    ],
+    "related": [],
+    "announced": "2025-09-04",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · United States",
+        "url": "https://www.dyson.com/vacuum-cleaners/cordless/v16-piston/black-copper"
+      },
+      {
+        "label": "Official announcement · 4 Sep 2025",
+        "url": "https://www.dyson.com/discover/innovation/new-machines/v16-piston-animal-cordless-vacuum"
+      },
+      {
+        "label": "V16 / SV53 support and care",
+        "url": "https://www.dyson.com/support/journey/guides/Vacuum-cleaners/Stick/sv53-a"
+      }
+    ],
+    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/discover-dyson/articles/piston/SV53-A_BLKBCOBLKBCO_065-RGB-TECH-EagleCut-Filter-Cyclones-Airflow-Battery-BlueFizz-A0_B.jpeg"
+  },
+  {
+    "slug": "mova-lidax-ultra-1000",
+    "name": "MOVA LiDAX Ultra 1000",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Robot mowers",
+    "market": "United States · non-AWD",
+    "summary": "A wire-free mower using LiDAR and vision for smaller lawns, with model-specific terrain limits.",
+    "fit": "Owners wanting a wire-free installation on a modest lawn with manageable slopes.",
+    "caution": "Keep this non-AWD model separate from the LiDAX Ultra AWD range when comparing traction.",
+    "facts": [
+      {
+        "label": "Rated lawn size",
+        "value": "0.25 acre",
+        "meaning": "Leave capacity headroom for split zones and limited mowing time."
+      },
+      {
+        "label": "Navigation",
+        "value": "3D LiDAR + AI vision",
+        "meaning": "Test mapping in narrow passages and around dense planting."
+      },
+      {
+        "label": "Slope claim",
+        "value": "Up to 45%",
+        "meaning": "Percent gradient is not degrees; traction depends on conditions."
+      },
+      {
+        "label": "Cutting height",
+        "value": "1.2–3.9 in",
+        "meaning": "Check the chosen regional SKU against your grass requirements."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is LiDAX Ultra 1000 an all-wheel-drive mower?",
+        "answer": "This profile is for the non-AWD listing. MOVA also markets models explicitly labeled AWD; do not transfer their slope or traction claims to this one."
+      }
+    ],
+    "articles": [
+      "who-makes-mova-robot-mowers-dreame-group"
+    ],
+    "related": [
+      "mammotion-luba-mini-2-awd-1500",
+      "sunseeker-s4"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · United States · non-AWD",
+        "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://us.mova.tech/cdn/shop/files/1_b8d313fa-c0ee-4cc7-b176-505d321b5bdf.jpg?v=1771831228"
+  },
+  {
+    "slug": "mammotion-luba-mini-2-awd-1500",
+    "name": "Mammotion LUBA mini 2 AWD 1500",
+    "brand": "Mammotion",
+    "brandSlug": "mammotion",
+    "category": "Robot mowers",
+    "market": "Europe · LiDAR listing",
+    "summary": "A compact all-wheel-drive mower with a dedicated edge disc and LiDAR-based navigation.",
+    "fit": "Lawns where slope traction and the amount of remaining edge trimming deserve close attention.",
+    "caution": "Verify the navigation version and boundary slope rules; a maximum slope claim is not a safe operating plan.",
+    "facts": [
+      {
+        "label": "Rated lawn size",
+        "value": "1,500 m²",
+        "meaning": "Capacity is not a promise to finish every layout in one charge."
+      },
+      {
+        "label": "Drive / slope",
+        "value": "AWD · up to 80%",
+        "meaning": "80% corresponds to about 38.6°, subject to operating conditions."
+      },
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR + dual camera",
+        "meaning": "The referenced EU listing says no RTK antenna is required."
+      },
+      {
+        "label": "Edge disc",
+        "value": "12 cm",
+        "meaning": "The dedicated disc helps near edges but does not eliminate all trimming."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does every LUBA mini 2 AWD 1500 use the same navigation?",
+        "answer": "Do not assume so from the family name. This profile follows the EU LiDAR listing checked on the date below; confirm the exact hardware revision and manual with the seller."
+      }
+    ],
+    "articles": [
+      "sunseeker-vs-mammotion-robot-mowers",
+      "mammotion-luba-vs-yuka-robot-mowers",
+      "luba-vs-navimow-mammotion-ninebot"
+    ],
+    "related": [
+      "mova-lidax-ultra-1000",
+      "sunseeker-s4"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · Europe · LiDAR listing",
+        "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Manual library · match your hardware version",
+        "url": "https://support.mammotion.com/portal/en/kb/articles/user-manual"
+      }
+    ],
+    "imageSource": "https://eu.mammotion.com/cdn/shop/files/02.png?v=1778133151&width=2048"
+  },
+  {
+    "slug": "sunseeker-s4",
+    "name": "Sunseeker S4",
+    "brand": "Sunseeker",
+    "brandSlug": "sunseeker",
+    "category": "Robot mowers",
+    "market": "United States product overview",
+    "summary": "A wire-free mower combining 3D LiDAR, vision and automatic mapping for residential lawns.",
+    "fit": "Owners prioritizing installation simplicity and mapping without a boundary wire or external antenna.",
+    "caution": "Confirm the local area rating and cutting-height range; do not import an EU capacity label into a US offer.",
+    "facts": [
+      {
+        "label": "Navigation",
+        "value": "3D LiDAR + vision",
+        "meaning": "Check shaded routes, planting and reflective surfaces in a demonstration."
+      },
+      {
+        "label": "Slope claim",
+        "value": "Up to 42% / 22°",
+        "meaning": "Inspect traction and turning room on the actual slope."
+      },
+      {
+        "label": "Passage guidance",
+        "value": "At least 80 cm",
+        "meaning": "Measure the usable corridor, including overhanging plants."
+      },
+      {
+        "label": "Mapping",
+        "value": "Truepilot 3D AutoMapping",
+        "meaning": "Walk the resulting boundaries and verify no-go areas."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does S4 require a boundary wire or antenna station?",
+        "answer": "The cited S4 overview describes operation without either, using LiDAR and vision. You still need to establish a suitable charging location and verify the map and exclusions."
+      }
+    ],
+    "articles": [
+      "sunseeker-vs-mammotion-robot-mowers",
+      "who-makes-sunseeker-robot-mowers-zhejiang-sunseeker"
+    ],
+    "related": [
+      "mammotion-luba-mini-2-awd-1500",
+      "mova-lidax-ultra-1000"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · United States product overview",
+        "url": "https://sunseekertech.com/us/S4"
+      },
+      {
+        "label": "S4 EU manual · regional reference",
+        "url": "https://sunseekertech.com/global/docs/manual-s4-eu.pdf"
+      }
+    ],
+    "imageSource": "https://sunseekertech.com/static-assets/sites/global/product/s4/banner.png"
+  },
+  {
+    "slug": "aiper-scuba-v3-ultra",
+    "name": "Aiper Scuba V3 Ultra",
+    "brand": "Aiper",
+    "brandSlug": "aiper",
+    "category": "Pool robots",
+    "market": "United States",
+    "summary": "A cordless pool cleaner emphasizing broad zone coverage, shallow-area cleaning and fine filtration.",
+    "fit": "Pools where benches, shallow shelves and a mixture of floating and settled debris need attention.",
+    "caution": "A minimum depth does not guarantee access to every shelf; check approach angles and surface compatibility.",
+    "facts": [
+      {
+        "label": "Shallow-area claim",
+        "value": "Down to 7.87 in / 20 cm",
+        "meaning": "Shelf access also depends on its shape and entry route."
+      },
+      {
+        "label": "Flow claim",
+        "value": "8,500 GPH",
+        "meaning": "Manufacturer pump-flow figure, not measured cleaning throughput."
+      },
+      {
+        "label": "Debris basket",
+        "value": "3.5 L",
+        "meaning": "Debris type and filter loading affect emptying frequency."
+      },
+      {
+        "label": "Perception",
+        "value": "Dual-camera AI",
+        "meaning": "Ask for a demonstration with the debris found in your pool."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Will it clean every tanning ledge?",
+        "answer": "No universal guarantee follows from the stated 20 cm minimum. Check the ledge depth, width, access angle and surface, ideally with a demonstration in comparable geometry."
+      }
+    ],
+    "articles": [
+      "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x",
+      "aiper-vs-wybot-fluidra-wybotics",
+      "robotic-pool-cleaner-product-roadmap"
+    ],
+    "related": [
+      "beatbot-aquasense-x",
+      "wybot-s3"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · United States",
+        "url": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      }
+    ],
+    "imageSource": "https://d31cs717m47wwl.cloudfront.net/20260525/1779703998449x30-pc.webp"
+  },
+  {
+    "slug": "beatbot-aquasense-x",
+    "name": "Beatbot AquaSense X",
+    "brand": "Beatbot",
+    "brandSlug": "beatbot",
+    "category": "Pool robots",
+    "market": "United States",
+    "summary": "A pool robot and cleaning-station system aimed at reducing routine filter-rinsing work.",
+    "fit": "Owners who value easier filter care and have suitable deck space for the service station.",
+    "caution": "The robot must be lifted from the pool and placed on the station; allow for both robot and station maintenance.",
+    "facts": [
+      {
+        "label": "Service station",
+        "value": "AstroRinse",
+        "meaning": "Station placement, water management and access need planning."
+      },
+      {
+        "label": "Navigation",
+        "value": "HybridSense AI",
+        "meaning": "Pool geometry still determines reachable cleaning zones."
+      },
+      {
+        "label": "Battery claim",
+        "value": "13,400 mAh",
+        "meaning": "Capacity alone does not predict a completed cleaning cycle."
+      },
+      {
+        "label": "Coverage modes",
+        "value": "Floor to surface",
+        "meaning": "Compare runtime in the same cleaning mode, not mixed maximums."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does AquaSense X automatically climb out into its cleaning station?",
+        "answer": "No. Its station automates filter washing after the owner retrieves the robot and places it on the station. This differs from an in-pool docking arrangement."
+      }
+    ],
+    "articles": [
+      "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x",
+      "who-owns-beatbot-xingmai-manufacturing"
+    ],
+    "related": [
+      "aiper-scuba-v3-ultra",
+      "wybot-s3"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · United States",
+        "url": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Official system overview",
+        "url": "https://beatbot.com/pages/aquasense-x"
+      }
+    ],
+    "imageSource": "https://beatbot.com/cdn/shop/files/2Frame_2133700360-webp_d4ce0cbe-ae14-4c9b-98c5-5423a69538ce-webp.webp?v=1768357107"
+  },
+  {
+    "slug": "wybot-s3",
+    "name": "WYBOT S3",
+    "brand": "WYBOT",
+    "brandSlug": "wybot",
+    "category": "Pool robots",
+    "market": "United States",
+    "summary": "A pool robot with a docking system for automatic recharging and debris transfer.",
+    "fit": "Pool owners seeking fewer manual retrievals and willing to accommodate a fixed dock installation.",
+    "caution": "Check dock geometry, power and maintenance access first; solar assistance does not guarantee continuous operation.",
+    "facts": [
+      {
+        "label": "Dock system",
+        "value": "Omni Dock",
+        "meaning": "Installation compatibility is part of the product decision."
+      },
+      {
+        "label": "Shore debris bin",
+        "value": "10 L",
+        "meaning": "A larger bin still needs scheduled cleaning."
+      },
+      {
+        "label": "Navigation",
+        "value": "3D mapping",
+        "meaning": "Validate the first map and difficult pool transitions."
+      },
+      {
+        "label": "Power options",
+        "value": "Solar + DC",
+        "meaning": "Sunlight, shade and schedules affect the energy balance."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Can solar charging run S3 continuously?",
+        "answer": "Do not assume that. WYBOT’s FAQ says three full days of direct sunlight can provide approximately 2.5 hours of runtime. Site conditions and the dock’s energy reserve matter."
+      }
+    ],
+    "articles": [
+      "aiper-vs-wybot-fluidra-wybotics",
+      "who-makes-wybot-pool-cleaners-wybotics-wangyuan"
+    ],
+    "related": [
+      "aiper-scuba-v3-ultra",
+      "beatbot-aquasense-x"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Official product page · United States",
+        "url": "https://www.wybotpool.com/products/wybot-s3-robotic-pool-cleaner"
+      }
+    ],
+    "imageSource": "https://www.wybotpool.com/cdn/shop/files/1_cb8fcf31-c01f-457e-9796-18171ee95ca0.webp?v=1767062235"
+  }
+]
