@@ -33,8 +33,32 @@
     ],
     "faq": [
       {
-        "question": "Can Saros 20 climb an 8.8 cm step?",
-        "answer": "Roborock describes a double-layer threshold: the first rise is at most 4.5 cm, the gap is over 12 cm and at most 14 cm, and the second rise is at most 4.3 cm. Do not apply 8.8 cm to one vertical obstacle."
+        "question": "Can Saros 20 climb an 8.8 cm vertical step?",
+        "answer": "No. The cited claim is 4.5 cm plus 4.3 cm across a double-layer threshold with a gap greater than 12 cm and no more than 14 cm. It is not a single 8.8 cm wall or staircase rating."
+      },
+      {
+        "question": "Is Saros 20 the same as Saros 20 Sonic?",
+        "answer": "No. This profile follows Saros 20 with dual rotating pads. Check the Sonic model separately, including its mop mechanism, navigation and regional package."
+      },
+      {
+        "question": "Will it fit under a 7.95 cm sofa?",
+        "answer": "Do not rely on that measurement alone. Roborock lists a 7.98 cm body and describes limited passive compression for lower entry, with possible scraping. Measure crossbars and allow additional clearance."
+      },
+      {
+        "question": "Does 100°C mean it mops the floor at boiling temperature?",
+        "answer": "No. The figure describes the dock’s hot-water washing process. It should not be presented as the temperature delivered across your floor."
+      },
+      {
+        "question": "Should I replace a working Saros 10R?",
+        "answer": "The stronger case is a verified improvement at a troublesome doorway or in your mop-care routine. If the 10R already completes the route, the specifications alone do not establish enough benefit to justify replacing it."
+      },
+      {
+        "question": "Does the refill-and-drain version work anywhere?",
+        "answer": "No. It needs a suitable power, water-supply and drainage arrangement and is available only in selected markets. Have the installation checked before ordering."
+      },
+      {
+        "question": "What ongoing costs should I include?",
+        "answer": "Bags, filters, brushes, mop pads and approved cleaning solution, plus any installation or out-of-warranty service. Use prices for compatible local packs; WCB has not established a universal annual cost."
       }
     ],
     "articles": [
@@ -55,6 +79,22 @@
       {
         "label": "Official launch context · 2026",
         "url": "https://newsroom.roborock.com/gl/news/ces-2026-roborock-releases-the-world-s-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-real-madrid-football-club-"
+      },
+      {
+        "label": "Official-store snapshot",
+        "url": "https://us.roborock.com/products/roborock-saros-20"
+      },
+      {
+        "label": "Comparison reference · Dreame X60 Ultra",
+        "url": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Comparison reference · ECOVACS DEEBOT X12 OmniCyclone",
+        "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Official manual and model support",
+        "url": "https://gl-files.roborock.com/product/center/images/Roborock%20Saros%2020%20FCC%20User%20Manual.41593654.pdf"
       }
     ],
     "imageSource": "https://global.roborock.com/cdn/shop/files/Saros_20_Black_ID.png?v=1765951133",
@@ -96,8 +136,32 @@
     ],
     "faq": [
       {
-        "question": "Does X60 Ultra wash the floor at 100°C?",
-        "answer": "No. The cited temperature describes the dock’s mop-cleaning process. It should not be presented as the temperature applied to your floor."
+        "question": "How is X60 Ultra different from X60 Max Ultra Complete?",
+        "answer": "They are distinct names in the X60 family. This profile follows the plain X60 Ultra. Compare the precise model code, dock, included accessories and local manual rather than transferring Max or Complete specifications."
+      },
+      {
+        "question": "How much lower is it than X50 Ultra?",
+        "answer": "The cited global pages list 79.5 mm for X60 Ultra and 89 mm for X50 Ultra with their navigation sensors retracted. Measure your actual furniture; those dimensions do not guarantee snag-free passage."
+      },
+      {
+        "question": "Can it climb an 8.8 cm single step?",
+        "answer": "No. The global specification distinguishes 4.5 cm single-layer crossing from an 8.8 cm double-layer claim. Request the test conditions for your type of threshold."
+      },
+      {
+        "question": "Does it wash the floor at 100°C?",
+        "answer": "No. That is the dock’s self-cleaning water-temperature claim. Dreame’s US page separately describes 40°C warm-water mopping; the two processes must not be confused."
+      },
+      {
+        "question": "Is automatic water refilling and draining included?",
+        "answer": "The global listing describes a separately purchased hookup kit. Confirm availability, compatibility and installation requirements for the local package."
+      },
+      {
+        "question": "What are the main tank and bag capacities?",
+        "answer": "The global X60 Ultra specification lists 4.2 L clean water, 3.0 L used water, a 3.2 L dock bag and a 235 ml robot dust box. Verify these against the local SKU before ordering replacement parts."
+      },
+      {
+        "question": "Is the highest suction number the best way to choose?",
+        "answer": "No. Contact with the floor, brush design, route completion and maintenance all affect results. Compare a difficult room or stain under equivalent conditions instead of ranking peak manufacturer figures."
       }
     ],
     "articles": [
@@ -121,6 +185,18 @@
       {
         "label": "Official launch context · 2026",
         "url": "https://www.prnewswire.com/news-releases/all-dreams-in-one-dreame-at-ces-2026-dreame-technology-unveils-x60-ultra-series-alongside-industry-first-innovations-to-redefine-smart-cleaning-302654403.html"
+      },
+      {
+        "label": "Additional specification reference",
+        "url": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Comparison reference · Roborock Saros 20",
+        "url": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Comparison reference · ECOVACS DEEBOT X12 OmniCyclone",
+        "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
       }
     ],
     "imageSource": "https://www.dreametech.com/cdn/shop/files/Total-Right-X60_Ultra-White_1200x1200.webp?v=1773224158",
@@ -162,8 +238,32 @@
     ],
     "faq": [
       {
-        "question": "Is the 46,000 Pa figure vacuum suction?",
-        "answer": "No. ECOVACS uses that figure for its stain-treatment water jets. The global page lists vacuum suction separately at up to 22,000 Pa."
+        "question": "Is FocusJet the same as ordinary mopping?",
+        "answer": "No. ECOVACS describes a pre-spray step to soften dried stains before roller cleaning. Whether it improves your result depends on the spill, surface and selected cleaning mode."
+      },
+      {
+        "question": "Does OmniCyclone use disposable dock dust bags?",
+        "answer": "The cited OmniCyclone station uses a reusable 1.6 L dust container. It still needs emptying and filter maintenance; bagless is not maintenance-free."
+      },
+      {
+        "question": "Can it clean 1,000 m² without any intervention?",
+        "answer": "Do not assume that for a tank-based purchase. ECOVACS conditions its continuous-operation claim on automatic water refilling and draining. Layout, water supply and selected settings also matter."
+      },
+      {
+        "question": "How high a threshold can X12 cross?",
+        "answer": "The cited global page gives up to 2.4 cm for a single threshold and 4 cm for double steps. Do not substitute a competing robot’s much higher double-step figure."
+      },
+      {
+        "question": "How does it keep the wet roller away from rugs?",
+        "answer": "ECOVACS describes a 15 mm lift together with a protective cover. Test your own rug thickness and edge shape; the mechanism is not a universal carpet-compatibility guarantee."
+      },
+      {
+        "question": "Was the launch price the same in the US and Canada?",
+        "answer": "No. The 14 April 2026 announcement listed USD 1,499 in the US and CAD 1,999.99 in Canada. These are historical market-specific prices, not equivalent amounts or current offers."
+      },
+      {
+        "question": "What costs remain with a bagless dock?",
+        "answer": "Filters, brushes, replacement rollers, cleaning solution and possible servicing remain relevant. Compare local pack prices and your observed replacement needs instead of assuming zero running costs."
       }
     ],
     "articles": [
@@ -183,6 +283,22 @@
       {
         "label": "Official launch context · 2026",
         "url": "https://www.ecovacs.com/global/campaign/ces"
+      },
+      {
+        "label": "Launch MSRP",
+        "url": "https://www.prnewswire.com/news-releases/ecovacs-introduces-deebot-x12-omnicyclone-the-new-flagship-robot-vacuum-designed-to-tackle-real-world-messes-with-ease-302740796.html"
+      },
+      {
+        "label": "Comparison reference · Roborock Saros 20",
+        "url": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Comparison reference · Dreame X60 Ultra",
+        "url": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Official manual and model support",
+        "url": "https://help.ecovacs.com/us/support/deebot-x12-omnicyclone"
       }
     ],
     "imageSource": "https://site-static.ecovacs.com/upload/image/product/2026/03/23/035142_3240$X12旋风尘桶基站1.jpg",
@@ -289,8 +405,32 @@
     ],
     "faq": [
       {
-        "question": "Is LiDAX Ultra 1000 an all-wheel-drive mower?",
-        "answer": "This profile is for the non-AWD listing. MOVA also markets models explicitly labeled AWD; do not transfer their slope or traction claims to this one."
+        "question": "Does LiDAX Ultra 1000 require a boundary wire or RTK antenna?",
+        "answer": "The cited model uses LiDAR and AI vision without either. You still need a suitable charging position, a verified lawn map and exclusion zones."
+      },
+      {
+        "question": "Is this an AWD mower?",
+        "answer": "No. This profile follows the rear-wheel-drive, non-AWD 1000. The LiDAX Ultra AWD range must be checked as a separate product."
+      },
+      {
+        "question": "Does 45% mean a 45-degree slope?",
+        "answer": "No. A 45% gradient is approximately 24 degrees. Wet ground, turning and boundary positions can reduce the practical margin, so assess the actual site."
+      },
+      {
+        "question": "Can it maintain a lawn larger than 0.25 acre because efficient mode claims 0.3 acre per day?",
+        "answer": "Those figures describe different things. The US 1000 mapping limit is 0.25 acre; the daily figure describes throughput under a selected mode. It does not raise the supported mapping limit."
+      },
+      {
+        "question": "How long does it mow before charging?",
+        "answer": "The US table lists 60–80 minutes of mowing and about 60 minutes for charging. Account for both when planning a daily schedule, plus travel and weather interruptions."
+      },
+      {
+        "question": "Can it automatically move between two isolated lawns?",
+        "answer": "Dual-map support saves separate areas, but the machine still needs a suitable physical path or manual transfer. Confirm how your particular layout is managed."
+      },
+      {
+        "question": "What should I check about the optional Link module?",
+        "answer": "Whether it is included, the hardware cost, what connectivity service is covered and the renewal price after any included period. Do not assume optional connectivity is permanently free."
       }
     ],
     "articles": [
@@ -310,6 +450,22 @@
       {
         "label": "Official launch context · 2026",
         "url": "https://www.mova.tech/blogs/blog/mova-launches-lidax-ultra-viax-robotic-lawn-mowers"
+      },
+      {
+        "label": "Official-store campaign snapshot",
+        "url": "https://us.mova.tech/pages/mova-week-sale-exclusive-rewards-flash-deals-bundles-mova-us"
+      },
+      {
+        "label": "Comparison reference · Mammotion LUBA mini 2 AWD 1500",
+        "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Comparison reference · Sunseeker S4",
+        "url": "https://sunseekertech.com/us/S4"
+      },
+      {
+        "label": "Official manual and model support",
+        "url": "https://us.mova.tech/pages/user-manuals"
       }
     ],
     "imageSource": "https://us.mova.tech/cdn/shop/files/1_b8d313fa-c0ee-4cc7-b176-505d321b5bdf.jpg?v=1771831228",
@@ -351,8 +507,32 @@
     ],
     "faq": [
       {
-        "question": "Does every LUBA mini 2 AWD 1500 use the same navigation?",
-        "answer": "Do not assume so from the family name. This profile follows the EU LiDAR listing checked on the date below; confirm the exact hardware revision and manual with the seller."
+        "question": "Is the 1500 simply a larger-area version of the 1000?",
+        "answer": "Not in the current cited EU range. The 1500 uses LiDAR plus dual-camera vision, while Mammotion’s comparison describes the 1000 with a different camera-and-NetRTK arrangement. Match the hardware revision."
+      },
+      {
+        "question": "Does this LiDAR model need an RTK antenna?",
+        "answer": "The referenced 1500 listing says it does not. It still needs mapping, a suitable charging site and correctly defined routes and exclusions."
+      },
+      {
+        "question": "Does an 80% slope rating mean 80 degrees?",
+        "answer": "No. It corresponds to approximately 38.6 degrees. The rating does not establish safe operation near every boundary or in wet conditions."
+      },
+      {
+        "question": "Will the edge disc eliminate all manual trimming?",
+        "answer": "No. The official page indicates about 5–5.5 cm clearance near walls, and irregular boundaries can leave more. Judge the finished strip on your own lawn."
+      },
+      {
+        "question": "How much grass can it cut on one charge?",
+        "answer": "The EU 1500 FAQ claims up to 500 m² with its 6.1 Ah battery. Actual output depends on turns, slopes, growth and route layout; it is not the full 1,500 m² rating per charge."
+      },
+      {
+        "question": "Can it manage separate parts of a garden?",
+        "answer": "The listing supports up to 20 zones. Verify the paths between areas and arrange manual transfer where no suitable connection exists."
+      },
+      {
+        "question": "Is the included mobile data permanent?",
+        "answer": "The checked listing advertises three years of included data with the 4G module. Confirm activation terms and renewal costs for your local order; this does not establish lifetime free service."
       }
     ],
     "articles": [
@@ -378,6 +558,18 @@
       {
         "label": "Official launch context · 2026",
         "url": "https://eu.mammotion.com/blogs/news/awd-lawn-mowers-clear-guide"
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://support.mammotion.com/portal/en/kb/articles/video-tutorial"
+      },
+      {
+        "label": "Comparison reference · MOVA LiDAX Ultra 1000",
+        "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Comparison reference · Sunseeker S4",
+        "url": "https://sunseekertech.com/us/S4"
       }
     ],
     "imageSource": "https://eu.mammotion.com/cdn/shop/files/02.png?v=1778133151&width=2048",
@@ -486,8 +678,32 @@
     ],
     "faq": [
       {
+        "question": "Is Scuba V3 Ultra the same as Scuba V3?",
+        "answer": "No. The Ultra is a separate model with a different coverage and sensing proposition. Check the exact product name, accessories and official manual."
+      },
+      {
         "question": "Will it clean every tanning ledge?",
-        "answer": "No universal guarantee follows from the stated 20 cm minimum. Check the ledge depth, width, access angle and surface, ideally with a demonstration in comparable geometry."
+        "answer": "No universal guarantee follows from the 20 cm minimum-depth claim. Width, approach shape, surface and changing water level can determine whether the ledge is reachable."
+      },
+      {
+        "question": "Does eight hours of runtime apply to floor and wall cleaning?",
+        "answer": "The cited US comparison gives up to 480 minutes for skimming. It should not be applied to floor or wall modes without their own verified ratings."
+      },
+      {
+        "question": "Does it wash its own filter after a run?",
+        "answer": "This listing describes surface retrieval and quick drainage, not an AstroRinse-style automatic filter-washing station. Plan for manual filter care."
+      },
+      {
+        "question": "Is the basket larger than X1 Pro Max?",
+        "answer": "The official comparison lists 3.5 L for V3 Ultra and 5 L for X1 Pro Max. The newer model is therefore not a capacity upgrade in that particular measure."
+      },
+      {
+        "question": "How heavy is it to retrieve?",
+        "answer": "The US listing gives 28.8 lb product weight. Handling a wet robot before drainage may be more demanding; test the actual lifting height and storage route."
+      },
+      {
+        "question": "Does the robot replace normal pool-water treatment?",
+        "answer": "No. Removing debris is a different job from maintaining pool-water chemistry and the installed filtration system. Follow the pool and equipment instructions rather than inferring full water treatment from a cleaning-mode name."
       }
     ],
     "articles": [
@@ -509,6 +725,22 @@
       {
         "label": "Official launch context · 2026",
         "url": "https://ces.vporoom.com/2026-01-06-Aiper-Unveils-Its-New-Smart-AI-Powered-Pool-and-Garden-Ecosystem-at-CES-2026"
+      },
+      {
+        "label": "Additional specification reference",
+        "url": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Manuals & setup information",
+        "url": "https://aiper.com/us/support"
+      },
+      {
+        "label": "Comparison reference · Beatbot AquaSense X",
+        "url": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Comparison reference · MOVA Rover X10",
+        "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
       }
     ],
     "imageSource": "https://d31cs717m47wwl.cloudfront.net/20260525/1779703998449x30-pc.webp",
@@ -550,8 +782,32 @@
     ],
     "faq": [
       {
-        "question": "Does AquaSense X automatically climb out into its cleaning station?",
-        "answer": "No. Its station automates filter washing after the owner retrieves the robot and places it on the station. This differs from an in-pool docking arrangement."
+        "question": "Does AquaSense X climb out of the pool into AstroRinse?",
+        "answer": "No. The owner retrieves the robot and places it on the station. Filter washing, debris transfer and charging then happen at the station."
+      },
+      {
+        "question": "Can I buy AstroRinse for an AquaSense 2 robot?",
+        "answer": "Beatbot’s cited FAQ says the station is designed for AquaSense X and is not compatible with the AquaSense 2 series."
+      },
+      {
+        "question": "Is the 22 L capacity inside the robot?",
+        "answer": "No. It refers to station waste storage. It must not be compared directly with another robot’s onboard filter-basket capacity."
+      },
+      {
+        "question": "Does the ten-hour runtime apply to all cleaning?",
+        "answer": "No. The official overview lists up to ten hours for surface cleaning and up to five hours for floor cleaning or walls and waterline. These are separate mode ratings."
+      },
+      {
+        "question": "What should I check before installing the station?",
+        "answer": "A level, ventilated site with suitable Wi-Fi, power, water supply and drainage. The US FAQ lists a 12 ft inlet hose, 6 ft drain hose and 4 m power cord; confirm the supplied regional kit."
+      },
+      {
+        "question": "Can it clean shallow shelves and saltwater pools?",
+        "answer": "The US listing describes platforms at least 35 cm deep and saltwater concentration up to 5,000 ppm. Shelf shape and access still need checking against the actual pool."
+      },
+      {
+        "question": "Was the launch MSRP USD 4,250?",
+        "answer": "The 5 January 2026 launch release quoted EUR 4,250 for the European ecosystem. A separate US store price in dollars should not be substituted for that historical announcement."
       }
     ],
     "articles": [
@@ -576,6 +832,18 @@
       {
         "label": "Official launch context · 2026",
         "url": "https://www.prnewswire.com/news-releases/beatbot-introduces-aquasense-x-at-ces-2026-honored-as-a-ces-innovation-awards-recipient-302652387.html"
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://www.youtube.com/watch?v=NBH-LKfRNgY"
+      },
+      {
+        "label": "Comparison reference · Aiper Scuba V3 Ultra",
+        "url": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Comparison reference · MOVA Rover X10",
+        "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
       }
     ],
     "imageSource": "https://beatbot.com/cdn/shop/files/2Frame_2133700360-webp_d4ce0cbe-ae14-4c9b-98c5-5423a69538ce-webp.webp?v=1768357107",

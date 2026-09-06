@@ -1,9 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import records from "../content/product-models.json" with { type: "json" };
+import guideRecords from "../content/product-guides.json" with { type: "json" };
 import { parseFrontmatter } from "@/lib/content";
 
 export type ProductModel = Omit<(typeof records)[number], "related" | "articles"> & { related: string[]; articles: string[] };
+export type ProductGuide = (typeof guideRecords)[keyof typeof guideRecords];
+const productGuides: Partial<Record<string, ProductGuide>> = guideRecords;
+
 export const productModels: ProductModel[] = records;
 
 // Keep published routes available while curating the first directory release.
@@ -15,7 +19,12 @@ export function getProduct(slug: string) {
   if (!model) return undefined;
   const source = fs.readFileSync(path.join(process.cwd(), "content", "products", `${slug}.mdx`), "utf8");
   const { data, content } = parseFrontmatter(source);
-  return { ...model, coverImage: String(data.coverImage), content };
+  const guide = productGuides[slug];
+  const sections = guide ? content.split(/^## /m).slice(1).map((section, index) => {
+    const end = section.indexOf("\n");
+    return { id: `guide-${index + 1}`, title: section.slice(0, end).trim(), content: section.slice(end + 1).trim() };
+  }) : [];
+  return { ...model, coverImage: String(data.coverImage), content, guide, sections };
 }
 
 export function productCover(slug: string) {
