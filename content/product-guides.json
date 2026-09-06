@@ -1,0 +1,1256 @@
+{
+  "roborock-saros-20": {
+    "verdict": "A premium shortlist choice when thresholds and low furniture leave rooms unfinished. Its value is better access and automated mop care; a larger suction number alone is a weak reason to replace a working robot.",
+    "notFor": "A simple, level home where a lower-priced robot already reaches every room, or a household expecting this wheeled robot to clean staircases.",
+    "specifications": [
+      {
+        "label": "Body height",
+        "value": "7.98 cm",
+        "meaning": "Measure the lowest point beneath furniture, including rails.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Suction claim",
+        "value": "36,000 Pa",
+        "meaning": "A manufacturer peak figure, not a comparable pickup score.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Navigation",
+        "value": "StarSight 2.0",
+        "meaning": "Check obstacle handling against your actual clutter.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Chassis",
+        "value": "AdaptiLift 3.0",
+        "meaning": "Threshold shape matters as much as total height.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "353 × 350 × 79.8 mm",
+        "meaning": "Measure furniture rails and floor unevenness, not just the nominal gap.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Robot weight",
+        "value": "5.05 kg",
+        "meaning": "Consider carrying it between floors.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Tank dock dimensions",
+        "value": "381 × 475 × 488 mm",
+        "meaning": "Allow additional room to lift and empty tanks.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Plumbed dock dimensions",
+        "value": "381 × 475 × 300 mm",
+        "meaning": "Available only in selected markets; requires a site check.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Double-layer threshold",
+        "value": "4.5 + 4.3 cm",
+        "meaning": "Test claim requires a gap greater than 12 cm and no more than 14 cm.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Mop system",
+        "value": "Dual rotating pads · 200 rpm",
+        "meaning": "Contact and route overlap matter alongside rotation speed.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Mop pressure",
+        "value": "8 N standard / up to 13 N",
+        "meaning": "Higher-pressure mode requires enabling the relevant app setting.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Dock wash / dry",
+        "value": "Up to 100°C / 55°C",
+        "meaning": "These are dock processes, not a floor-temperature promise.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Charging",
+        "value": "About 2.5 hours",
+        "meaning": "Charging time is separate from whole-home cleaning time.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Carpet handling",
+        "value": "Mop detachment; chassis elevation",
+        "meaning": "Deep-carpet settings require configuration in the app.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · tank dock",
+        "kind": "Official-store snapshot",
+        "amount": "USD 1,299.99; displayed reference USD 1,599.99",
+        "date": "2026-09-06",
+        "source": "https://us.roborock.com/products/roborock-saros-20",
+        "note": "A dated listing, not a guaranteed checkout price or verified launch MSRP. Discounts and sets can differ."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock Saros 20",
+          "url": "https://global.roborock.com/pages/roborock-saros-20",
+          "market": "Global"
+        },
+        {
+          "name": "Dreame X60 Ultra",
+          "url": "https://global.dreametech.com/products/x60",
+          "market": "Global; US sales profile"
+        },
+        {
+          "name": "ECOVACS DEEBOT X12 OmniCyclone",
+          "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning approach",
+          "values": [
+            "Dual rotating pads with adaptive pressure",
+            "Dual rotating thermal pads",
+            "Pre-spray + continuously washed roller"
+          ]
+        },
+        {
+          "label": "Low furniture",
+          "values": [
+            "79.8 mm body",
+            "79.5 mm with sensor retracted",
+            "Confirm local robot height"
+          ]
+        },
+        {
+          "label": "Threshold claims",
+          "values": [
+            "4.5 + 4.3 cm double-layer, with defined gap",
+            "4.5 cm single / 8.8 cm double-layer",
+            "2.4 cm single / 4 cm double"
+          ]
+        },
+        {
+          "label": "Dust handling",
+          "values": [
+            "Bagged auto-empty dock",
+            "3.2 L dock bag",
+            "1.6 L bagless dock container"
+          ]
+        },
+        {
+          "label": "Decision to test",
+          "values": [
+            "A troublesome doorway and high-pile rug",
+            "Under-sofa route and dock water routine",
+            "Dried kitchen spills and roller-to-rug transition"
+          ]
+        }
+      ],
+      "takeaway": "Start with Saros 20 for room access, X60 Ultra for a competing low-clearance and hot-water-pad package, and X12 for roller-based stain treatment. A demonstration of your hardest room is more informative than ranking suction claims."
+    },
+    "resources": [
+      {
+        "label": "Manuals & setup information",
+        "url": "https://gl-files.roborock.com/product/center/images/Roborock%20Saros%2020%20FCC%20User%20Manual.41593654.pdf",
+        "note": "Official US/FCC user manual. Match the dock and regional product code."
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://global.roborock.com/pages/roborock-saros-20",
+        "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      }
+    ]
+  },
+  "dreame-x60-ultra": {
+    "verdict": "A premium vacuum-and-mop system worth comparing when an older robot is too tall or struggles with raised room transitions. Evaluate the complete X60 Ultra package, especially the dock, rather than buying on the X60 family name.",
+    "notFor": "Buyers who cannot fit a large water-tank dock, or who expect every X60-labelled model and accessory bundle to have identical hardware.",
+    "specifications": [
+      {
+        "label": "Body height",
+        "value": "7.95 cm",
+        "meaning": "Allow extra clearance for real furniture and uneven floors.",
+        "source": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Suction claim",
+        "value": "35,000 Pa",
+        "meaning": "Peak suction does not establish cleaning superiority.",
+        "source": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Dock wash",
+        "value": "Up to 100°C",
+        "meaning": "This refers to mop self-cleaning, not floor temperature.",
+        "source": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Brush system",
+        "value": "HyperStream DuoBrush 2.0",
+        "meaning": "Inspect brush-end maintenance as well as hair pickup.",
+        "source": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 79.5 mm",
+        "meaning": "Height with the VersaLift sensor retracted; raised height is 102.8 mm.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Robot / dock weight",
+        "value": "4.7 kg / 10.6 kg",
+        "meaning": "Global listing; compare the local boxed SKU before planning transport.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Dock dimensions",
+        "value": "390 × 423 × 499 mm",
+        "meaning": "Leave space above the tanks and in front of the ramp.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Threshold crossing",
+        "value": "4.5 cm single / 8.8 cm double",
+        "meaning": "Double-layer geometry is different from one tall vertical step.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Battery",
+        "value": "6,400 mAh",
+        "meaning": "Battery capacity does not predict runtime without voltage and mode.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Robot bin / dock bag",
+        "value": "235 ml / 3.2 L",
+        "meaning": "Pet hair can fill the robot bin before the dock bag needs replacing.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Clean / used water tanks",
+        "value": "4.2 L / 3.0 L",
+        "meaning": "Mop-wash frequency affects refilling and emptying.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Obstacle sensing",
+        "value": "Dual AI cameras + lateral 3D light + LED",
+        "meaning": "Performance depends on lighting, object geometry and firmware.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Mop hardware",
+        "value": "Dual rotating thermal pads; removable",
+        "meaning": "Check how carpet-first and vacuum-only modes behave.",
+        "source": "https://global.dreametech.com/products/x60"
+      },
+      {
+        "label": "Water hookup",
+        "value": "Optional separately purchased kit",
+        "meaning": "Availability and installation requirements are market-specific.",
+        "source": "https://global.dreametech.com/products/x60"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · X60 Ultra",
+        "kind": "Official-store snapshot",
+        "amount": "USD 1,499.99",
+        "date": "2026-09-06",
+        "source": "https://www.dreametech.com/products/x60-ultra-robot-vacuum",
+        "note": "Standalone listing. Accessory bundles have separate prices; the first-launch price of this exact SKU is not independently established here."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock Saros 20",
+          "url": "https://global.roborock.com/pages/roborock-saros-20",
+          "market": "Global"
+        },
+        {
+          "name": "Dreame X60 Ultra",
+          "url": "https://global.dreametech.com/products/x60",
+          "market": "Global; US sales profile"
+        },
+        {
+          "name": "ECOVACS DEEBOT X12 OmniCyclone",
+          "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning approach",
+          "values": [
+            "Dual rotating pads with adaptive pressure",
+            "Dual rotating thermal pads",
+            "Pre-spray + continuously washed roller"
+          ]
+        },
+        {
+          "label": "Low furniture",
+          "values": [
+            "79.8 mm body",
+            "79.5 mm with sensor retracted",
+            "Confirm local robot height"
+          ]
+        },
+        {
+          "label": "Threshold claims",
+          "values": [
+            "4.5 + 4.3 cm double-layer, with defined gap",
+            "4.5 cm single / 8.8 cm double-layer",
+            "2.4 cm single / 4 cm double"
+          ]
+        },
+        {
+          "label": "Dust handling",
+          "values": [
+            "Bagged auto-empty dock",
+            "3.2 L dock bag",
+            "1.6 L bagless dock container"
+          ]
+        },
+        {
+          "label": "Decision to test",
+          "values": [
+            "A troublesome doorway and high-pile rug",
+            "Under-sofa route and dock water routine",
+            "Dried kitchen spills and roller-to-rug transition"
+          ]
+        }
+      ],
+      "takeaway": "X60 Ultra and Saros 20 deserve a side-by-side check under your lowest furniture. X12 becomes more relevant when dried hard-floor stains dominate and threshold clearance is less demanding."
+    },
+    "resources": [
+      {
+        "label": "Manuals & setup information",
+        "url": "https://support.dreametech.com/hc/en-us/articles/15593670954127",
+        "note": "Match the model name, regional revision and accessories before using the manual."
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://global.dreametech.com/products/x60",
+        "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      }
+    ]
+  },
+  "ecovacs-deebot-x12-omnicyclone": {
+    "verdict": "A flagship option for hard-floor homes where dried food, footprints and dirty mop handling are recurring problems. FocusJet pre-treatment and a continuously washed roller make this a different proposition from a dual-pad robot.",
+    "notFor": "Homes dominated by high thresholds, or buyers who interpret bagless emptying as freedom from dust handling and filter maintenance.",
+    "specifications": [
+      {
+        "label": "Mop roller",
+        "value": "27 cm",
+        "meaning": "Roller coverage matters alongside how often it is rinsed.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Suction claim",
+        "value": "22,000 Pa",
+        "meaning": "Do not confuse suction with the spray-pressure claim.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Airflow claim",
+        "value": "22 L/s",
+        "meaning": "Airflow and suction are different measurements.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Mop system",
+        "value": "OZMO ROLLER 3.0",
+        "meaning": "Assess stain removal on a floor material like yours.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Roller self-washing",
+        "value": "32-way pressurised water flow",
+        "meaning": "The washed roller still needs periodic inspection for residue.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "FocusJet pre-treatment",
+        "value": "Targeted water jets before mopping",
+        "meaning": "Spray pressure is not suction power; confirm the floor permits wet cleaning.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Roller lift",
+        "value": "15 mm plus protective cover",
+        "meaning": "Thick rugs still require a carpet-setting and clearance check.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Edge extension",
+        "value": "Up to 2.58 cm",
+        "meaning": "Wall geometry and reachable floor space determine the practical benefit.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Single / double threshold",
+        "value": "2.4 cm / 4 cm",
+        "meaning": "Do not transfer higher crossing claims from another DEEBOT.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Dock debris container",
+        "value": "1.6 L · bagless",
+        "meaning": "The advertised 48-day interval varies with debris volume.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Charging top-up",
+        "value": "13% in 3 minutes",
+        "meaning": "Manufacturer claim during routine mop-cleaning intervals.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Navigation / avoidance",
+        "value": "AIVI 3D 4.0",
+        "meaning": "Loose cords and risky objects should still be removed.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Long-task coverage",
+        "value": "Up to 1,000 m² per task",
+        "meaning": "Continuous-operation claim requires automatic water refill/drain hardware.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Dimensions / full runtime",
+        "value": "Not verified for this reference SKU",
+        "meaning": "Obtain the local specification sheet; package dimensions are not robot dimensions.",
+        "source": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "kind": "Launch MSRP",
+        "amount": "USD 1,499",
+        "date": "2026-04-14",
+        "source": "https://www.prnewswire.com/news-releases/ecovacs-introduces-deebot-x12-omnicyclone-the-new-flagship-robot-vacuum-designed-to-tackle-real-world-messes-with-ease-302740796.html",
+        "note": "Historical announcement price; current promotions and local tax are separate."
+      },
+      {
+        "market": "Canada",
+        "kind": "Launch MSRP",
+        "amount": "CAD 1,999.99",
+        "date": "2026-04-14",
+        "source": "https://www.prnewswire.com/news-releases/ecovacs-introduces-deebot-x12-omnicyclone-the-new-flagship-robot-vacuum-designed-to-tackle-real-world-messes-with-ease-302740796.html",
+        "note": "Same launch announcement, different currency and market. Do not compare the numeral directly with the US price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock Saros 20",
+          "url": "https://global.roborock.com/pages/roborock-saros-20",
+          "market": "Global"
+        },
+        {
+          "name": "Dreame X60 Ultra",
+          "url": "https://global.dreametech.com/products/x60",
+          "market": "Global; US sales profile"
+        },
+        {
+          "name": "ECOVACS DEEBOT X12 OmniCyclone",
+          "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning approach",
+          "values": [
+            "Dual rotating pads with adaptive pressure",
+            "Dual rotating thermal pads",
+            "Pre-spray + continuously washed roller"
+          ]
+        },
+        {
+          "label": "Low furniture",
+          "values": [
+            "79.8 mm body",
+            "79.5 mm with sensor retracted",
+            "Confirm local robot height"
+          ]
+        },
+        {
+          "label": "Threshold claims",
+          "values": [
+            "4.5 + 4.3 cm double-layer, with defined gap",
+            "4.5 cm single / 8.8 cm double-layer",
+            "2.4 cm single / 4 cm double"
+          ]
+        },
+        {
+          "label": "Dust handling",
+          "values": [
+            "Bagged auto-empty dock",
+            "3.2 L dock bag",
+            "1.6 L bagless dock container"
+          ]
+        },
+        {
+          "label": "Decision to test",
+          "values": [
+            "A troublesome doorway and high-pile rug",
+            "Under-sofa route and dock water routine",
+            "Dried kitchen spills and roller-to-rug transition"
+          ]
+        }
+      ],
+      "takeaway": "Choose the cleaning mechanism first: X12 prioritizes roller washing and stain pre-treatment, while Saros 20 and X60 Ultra offer much higher advertised double-threshold clearance. These are tradeoffs, not equivalent tests."
+    },
+    "resources": [
+      {
+        "label": "Manuals & setup information",
+        "url": "https://help.ecovacs.com/us/support/deebot-x12-omnicyclone",
+        "note": "Official X12 OmniCyclone support page with US family manual, mapping guides and maintenance instructions."
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone",
+        "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      }
+    ]
+  },
+  "mova-lidax-ultra-1000": {
+    "verdict": "A wire-free starting point for a modest lawn where removing the RTK-station installation is more valuable than buying maximum slope capability. Size the mower for the usable mowing window, not just the garden area printed on the box.",
+    "notFor": "Steep, wet or heavily rutted sites that call for an AWD assessment, or a lawn whose daily workload leaves no time for charging, rain delays and travel between zones.",
+    "specifications": [
+      {
+        "label": "Rated lawn size",
+        "value": "0.25 acre",
+        "meaning": "Leave capacity headroom for split zones and limited mowing time.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Navigation",
+        "value": "3D LiDAR + AI vision",
+        "meaning": "Test mapping in narrow passages and around dense planting.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Slope claim",
+        "value": "Up to 45%",
+        "meaning": "Percent gradient is not degrees; traction depends on conditions.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Cutting height",
+        "value": "1.2–3.9 in",
+        "meaning": "Check the chosen regional SKU against your grass requirements.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Drive",
+        "value": "Rear-wheel drive",
+        "meaning": "This is the non-AWD 1000, not a LiDAX Ultra AWD variant.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Dimensions / weight",
+        "value": "26.2 × 17.5 × 10.7 in / 30.2 lb",
+        "meaning": "Plan storage and lifting as well as the charging position.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Cutting width",
+        "value": "7.9 in",
+        "meaning": "Narrow strips and repeated turns reduce daily output.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Narrow passage",
+        "value": "At least 23.6 in",
+        "meaning": "Measure the clear opening after accounting for plants and edging.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Battery",
+        "value": "4 Ah",
+        "meaning": "US 1000 listing; the 2000 uses a different battery.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Mowing / charging",
+        "value": "60–80 min / about 60 min",
+        "meaning": "Separate operating duration from a complete mowing-and-charge cycle.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Daily mowing claim",
+        "value": "0.2 acre standard / 0.3 acre efficient",
+        "meaning": "Mode-specific throughput is not an increased supported mapping area.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Maps and zones",
+        "value": "Dual-map and multi-zone support",
+        "meaning": "A saved second map does not create a physical route between isolated lawns.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Link module",
+        "value": "Optional",
+        "meaning": "Check hardware cost, included service and future renewal.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX6",
+        "meaning": "Follow the manual for cleaning and winter storage; do not infer immersion protection.",
+        "source": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Europe · LiDAX Ultra 1000",
+        "kind": "Launch announcement",
+        "amount": "EUR 999",
+        "date": "2026-01-06",
+        "source": "https://www.mova.tech/blogs/blog/mova-launches-lidax-ultra-viax-robotic-lawn-mowers",
+        "note": "Availability announced for 27 January 2026. The US profile has regional cutting-height and package specifications."
+      },
+      {
+        "market": "United States · non-AWD 1000",
+        "kind": "Official-store campaign snapshot",
+        "amount": "USD 899; displayed reference USD 1,299",
+        "date": "2026-09-06",
+        "source": "https://us.mova.tech/pages/mova-week-sale-exclusive-rewards-flash-deals-bundles-mova-us",
+        "note": "Campaign price can expire. Confirm the 0.25-acre 1000 selection, not the 2000 or AWD listing."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA LiDAX Ultra 1000",
+          "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower",
+          "market": "US non-AWD"
+        },
+        {
+          "name": "Mammotion LUBA mini 2 AWD 1500",
+          "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500",
+          "market": "EU 1500 LiDAR"
+        },
+        {
+          "name": "Sunseeker S4",
+          "url": "https://sunseekertech.com/us/S4",
+          "market": "Earlier 2025 model; US overview"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Positioning",
+          "values": [
+            "LiDAR + AI vision; no RTK station",
+            "LiDAR + dual camera; no RTK station",
+            "LiDAR + vision; no RTK station"
+          ]
+        },
+        {
+          "label": "Drive / slope claim",
+          "values": [
+            "Rear-wheel drive / 45%",
+            "AWD / 80%",
+            "Up to 42% on cited overview"
+          ]
+        },
+        {
+          "label": "Area reference",
+          "values": [
+            "0.25 acre US mapping limit",
+            "1,500 m² EU rating",
+            "Confirm the local S4 capacity"
+          ]
+        },
+        {
+          "label": "Edge approach",
+          "values": [
+            "Movable cutting disc; <2 in claim",
+            "Dedicated 12 cm edge disc; about 5–5.5 cm wall gap",
+            "Verify final strip at the actual boundary"
+          ]
+        },
+        {
+          "label": "Passage / layout check",
+          "values": [
+            "At least 23.6 in clear passage",
+            "Check route geometry and 20-zone plan",
+            "At least 80 cm passage guidance"
+          ]
+        }
+      ],
+      "takeaway": "LiDAX Ultra 1000 is the simpler-capacity shortlist option for a manageable slope. LUBA mini 2 AWD 1500 is worth assessing for traction and a larger lawn. S4 is an earlier-model reference for another LiDAR setup; it is not part of the 2026 directory selection."
+    },
+    "resources": [
+      {
+        "label": "Manuals & setup information",
+        "url": "https://us.mova.tech/pages/user-manuals",
+        "note": "Select the LiDAX Ultra series and confirm the 1000 non-AWD version."
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower",
+        "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      }
+    ]
+  },
+  "mammotion-luba-mini-2-awd-1500": {
+    "verdict": "A compact mower to shortlist when traction, obstructed satellite views and unfinished wall edges are the main frustrations. The 1500 LiDAR version combines those priorities, but it should be matched to the lawn before paying for AWD.",
+    "notFor": "A small, flat and open lawn with little edge trimming, or a buyer expecting the 1000 and 1500 versions to share the same navigation hardware.",
+    "specifications": [
+      {
+        "label": "Rated lawn size",
+        "value": "1,500 m²",
+        "meaning": "Capacity is not a promise to finish every layout in one charge.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Drive / slope",
+        "value": "AWD · up to 80%",
+        "meaning": "80% corresponds to about 38.6°, subject to operating conditions.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR + dual camera",
+        "meaning": "The referenced EU listing says no RTK antenna is required.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Edge disc",
+        "value": "12 cm",
+        "meaning": "The dedicated disc helps near edges but does not eliminate all trimming.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Positioning range",
+        "value": "LiDAR up to 60 m",
+        "meaning": "Range is a sensing claim, not guaranteed map quality in every garden.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Battery",
+        "value": "6.1 Ah",
+        "meaning": "Applies to the referenced EU 1500 LiDAR listing.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Coverage per charge",
+        "value": "Up to 500 m²",
+        "meaning": "Leave headroom for slopes, turns and dense growth.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Zone management",
+        "value": "Up to 20 zones",
+        "meaning": "Disconnected areas still need a practical transfer arrangement.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Edge clearance",
+        "value": "Approximately 5–5.5 cm near walls",
+        "meaning": "Official headline and FAQ differ slightly; expect some finishing work.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Obstacle recognition",
+        "value": "300+ object types claimed",
+        "meaning": "Recognition count is not a safety guarantee.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Connectivity bundle",
+        "value": "4G module + 3 years of data",
+        "meaning": "Verify activation terms and post-inclusion renewal costs.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Rain / water protection",
+        "value": "Rain detection / IPX6",
+        "meaning": "Use the manual to decide when mowing and washing are permitted.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Noise claim",
+        "value": "Below 65 dB",
+        "meaning": "Measurement distance and operating conditions affect comparisons.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Full dimensions / charge time",
+        "value": "Not verified for this EU revision",
+        "meaning": "Ask for the matching 1500 LiDAR manual instead of importing 1000-version figures.",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Europe · 1500 LiDAR",
+        "kind": "Official-store snapshot",
+        "amount": "EUR 1,699; displayed reference EUR 1,899",
+        "date": "2026-09-06",
+        "source": "https://eu.mammotion.com/products/luba-mini-2-awd-1500",
+        "note": "Tax included in the observed listing, which displayed sold out. This is not a verified original launch price or a delivery promise."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA LiDAX Ultra 1000",
+          "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower",
+          "market": "US non-AWD"
+        },
+        {
+          "name": "Mammotion LUBA mini 2 AWD 1500",
+          "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500",
+          "market": "EU 1500 LiDAR"
+        },
+        {
+          "name": "Sunseeker S4",
+          "url": "https://sunseekertech.com/us/S4",
+          "market": "Earlier 2025 model; US overview"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Positioning",
+          "values": [
+            "LiDAR + AI vision; no RTK station",
+            "LiDAR + dual camera; no RTK station",
+            "LiDAR + vision; no RTK station"
+          ]
+        },
+        {
+          "label": "Drive / slope claim",
+          "values": [
+            "Rear-wheel drive / 45%",
+            "AWD / 80%",
+            "Up to 42% on cited overview"
+          ]
+        },
+        {
+          "label": "Area reference",
+          "values": [
+            "0.25 acre US mapping limit",
+            "1,500 m² EU rating",
+            "Confirm the local S4 capacity"
+          ]
+        },
+        {
+          "label": "Edge approach",
+          "values": [
+            "Movable cutting disc; <2 in claim",
+            "Dedicated 12 cm edge disc; about 5–5.5 cm wall gap",
+            "Verify final strip at the actual boundary"
+          ]
+        },
+        {
+          "label": "Passage / layout check",
+          "values": [
+            "At least 23.6 in clear passage",
+            "Check route geometry and 20-zone plan",
+            "At least 80 cm passage guidance"
+          ]
+        }
+      ],
+      "takeaway": "The LUBA’s case rests on AWD and the dedicated edging disc. Compare MOVA when the lawn is smaller and less steep. The older S4 provides a navigation-and-installation reference, but do not treat three different market labels as identical coverage ratings."
+    },
+    "resources": [
+      {
+        "label": "Manuals & setup information",
+        "url": "https://support.mammotion.com/portal/en/kb/articles/user-manual",
+        "note": "Match the model name, regional revision and accessories before using the manual."
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://support.mammotion.com/portal/en/kb/articles/video-tutorial",
+        "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      }
+    ]
+  },
+  "aiper-scuba-v3-ultra": {
+    "verdict": "A premium pool robot to consider when shallow shelves and a mixture of surface and submerged debris matter more than an automatic filter-washing station. The practical question is whether it can reach your specific pool geometry.",
+    "notFor": "Owners seeking unattended filter washing, or those who find lifting and carrying a roughly 29 lb robot difficult even after it drains.",
+    "specifications": [
+      {
+        "label": "Shallow-area claim",
+        "value": "Down to 7.87 in / 20 cm",
+        "meaning": "Shelf access also depends on its shape and entry route.",
+        "source": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      },
+      {
+        "label": "Flow claim",
+        "value": "8,500 GPH",
+        "meaning": "Manufacturer pump-flow figure, not measured cleaning throughput.",
+        "source": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      },
+      {
+        "label": "Debris basket",
+        "value": "3.5 L",
+        "meaning": "Debris type and filter loading affect emptying frequency.",
+        "source": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      },
+      {
+        "label": "Perception",
+        "value": "Dual-camera AI",
+        "meaning": "Ask for a demonstration with the debris found in your pool.",
+        "source": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      },
+      {
+        "label": "Rated pool size",
+        "value": "Up to 3,875 ft²; 66 ft length",
+        "meaning": "US store reference; complex shapes can be more demanding than an open rectangle.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Dry product weight",
+        "value": "28.8 lb",
+        "meaning": "Allow for handling immediately after retrieval and before complete drainage.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Surface-mode runtime",
+        "value": "Up to 480 minutes",
+        "meaning": "Skimming figure only; do not read this as eight hours of wall cleaning.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4.5 hours",
+        "meaning": "Schedule charging between cleaning sessions.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Coverage",
+        "value": "Floor, walls, waterline, surface and shallow areas",
+        "meaning": "Reachability of each platform must be checked separately.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Listed surfaces",
+        "value": "Concrete, fiberglass, vinyl and stone",
+        "meaning": "Confirm unusual finishes and the condition of older liners.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Filtration",
+        "value": "MicroMesh multi-layer system",
+        "meaning": "Use the local filter specification; do not assume every cartridge is interchangeable.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Retrieval",
+        "value": "JellyFloat surfacing and quick drainage",
+        "meaning": "The owner still removes, rinses and stores the robot.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Control",
+        "value": "App with Cognitive AI Navium scheduling",
+        "meaning": "An app does not imply reliable underwater Wi-Fi communication.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Battery capacity / full dimensions",
+        "value": "Not verified in the cited US listing",
+        "meaning": "Check the current manual; do not borrow the Scuba V3 or X1 Pro Max figures.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · V3 Ultra",
+        "kind": "Official-store snapshot",
+        "amount": "USD 1,899.99; displayed reference USD 2,299.99",
+        "date": "2026-09-06",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner",
+        "note": "The store labels this an early-bird offer. It is a dated offer, not a verified original launch MSRP; confirm the package, delivery and checkout total."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Aiper Scuba V3 Ultra",
+          "url": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot AquaSense X",
+          "url": "https://beatbot.com/products/aquasense-x",
+          "market": "United States"
+        },
+        {
+          "name": "MOVA Rover X10",
+          "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Daily handling",
+          "values": [
+            "Retrieve and manually rinse the filter",
+            "Retrieve; AstroRinse washes filter after docking",
+            "Retrieve; wireless charging dock and manual filter care"
+          ]
+        },
+        {
+          "label": "Shallow platform claim",
+          "values": [
+            "Down to 20 cm, geometry-dependent",
+            "At least 35 cm, geometry-dependent",
+            "Verify shelf access on the specific pool"
+          ]
+        },
+        {
+          "label": "Surface runtime claim",
+          "values": [
+            "Up to 8 hours",
+            "Up to 10 hours",
+            "Up to 12 hours; separate from floor runtime"
+          ]
+        },
+        {
+          "label": "Debris capacity reference",
+          "values": [
+            "3.5 L onboard basket",
+            "22 L station waste storage; not onboard capacity",
+            "5 L onboard basket"
+          ]
+        },
+        {
+          "label": "System tradeoff",
+          "values": [
+            "Lower shelf access and lighter listed body",
+            "Station-assisted post-cleaning maintenance",
+            "5,400 ft² area claim; 34.8 lb listed robot"
+          ]
+        }
+      ],
+      "takeaway": "Compare Aiper first for shallow-shelf access and handling. Beatbot makes more sense to assess when filter rinsing is the main nuisance. Rover X10 is a larger-coverage alternative, but its heavier listed body makes a lifting trial especially useful."
+    },
+    "resources": [
+      {
+        "label": "Manuals & setup information",
+        "url": "https://aiper.com/us/support",
+        "note": "Choose Scuba V3 Ultra in the official support centre; Scuba V3 is a different model."
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://aiper.com/us/aiper-scuba-v3-ultra",
+        "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      }
+    ]
+  },
+  "beatbot-aquasense-x": {
+    "verdict": "A premium system for pool owners whose biggest inconvenience is rinsing dirty filters after every run. Its strongest distinction is the AstroRinse workflow, provided you have a suitable station site and can retrieve the robot yourself.",
+    "notFor": "Anyone needing a robot that leaves the pool and docks without being lifted, or a deck without an appropriate water supply, drainage and power arrangement.",
+    "specifications": [
+      {
+        "label": "Service station",
+        "value": "AstroRinse",
+        "meaning": "Station placement, water management and access need planning.",
+        "source": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Navigation",
+        "value": "HybridSense AI",
+        "meaning": "Pool geometry still determines reachable cleaning zones.",
+        "source": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Battery claim",
+        "value": "13,400 mAh",
+        "meaning": "Capacity alone does not predict a completed cleaning cycle.",
+        "source": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Coverage modes",
+        "value": "Floor to surface",
+        "meaning": "Compare runtime in the same cleaning mode, not mixed maximums.",
+        "source": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Surface / floor runtime",
+        "value": "Up to 10 hours / up to 5 hours",
+        "meaning": "Mode-specific maximums, not one combined 15-hour session.",
+        "source": "https://beatbot.com/pages/aquasense-x"
+      },
+      {
+        "label": "Walls and waterline runtime",
+        "value": "Up to 5 hours",
+        "meaning": "Wall geometry and traction can change practical coverage.",
+        "source": "https://beatbot.com/pages/aquasense-x"
+      },
+      {
+        "label": "Rated coverage",
+        "value": "Up to 3,875 ft²",
+        "meaning": "Do not confuse the area rating with a verified pool-by-pool cleaning time.",
+        "source": "https://beatbot.com/pages/aquasense-x"
+      },
+      {
+        "label": "Charging",
+        "value": "About 4.5 hours · 88 W",
+        "meaning": "Official system overview; check the local adapter and station package.",
+        "source": "https://beatbot.com/pages/aquasense-x"
+      },
+      {
+        "label": "Shallow platforms",
+        "value": "At least 35 cm water depth",
+        "meaning": "A shelf must also be reachable and large enough to manoeuvre.",
+        "source": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Filter rating",
+        "value": "150 microns",
+        "meaning": "From the US product FAQ; clarification is a separate process.",
+        "source": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Station waste capacity",
+        "value": "22 L",
+        "meaning": "This belongs to the station, not the robot’s onboard filter.",
+        "source": "https://beatbot.com/pages/aquasense-x"
+      },
+      {
+        "label": "Station filter wash",
+        "value": "About 3 minutes",
+        "meaning": "Requires placing the retrieved robot on AstroRinse.",
+        "source": "https://beatbot.com/pages/aquasense-x"
+      },
+      {
+        "label": "Salt concentration",
+        "value": "Up to 5,000 ppm",
+        "meaning": "Check actual water conditions and the manufacturer’s operating limits.",
+        "source": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Station connections",
+        "value": "12 ft inlet hose / 6 ft drain hose / 4 m power cord",
+        "meaning": "US listing; confirm layout before ordering.",
+        "source": "https://beatbot.com/products/aquasense-x"
+      },
+      {
+        "label": "Robot dimensions / weight",
+        "value": "17.4 × 17.3 × 11.2 in / 28.9 lb",
+        "meaning": "Plan the lift from the pool and the transfer to the station.",
+        "source": "https://beatbot.com/pages/aquasense-x"
+      },
+      {
+        "label": "Station dimensions / weight",
+        "value": "25.1 × 21.1 × 22.0 in / 41.9 lb",
+        "meaning": "Leave additional access room for hoses and waste removal.",
+        "source": "https://beatbot.com/pages/aquasense-x"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Europe · AquaSense X ecosystem",
+        "kind": "Launch MSRP",
+        "amount": "EUR 4,250",
+        "date": "2026-01-05",
+        "source": "https://www.prnewswire.com/news-releases/beatbot-introduces-aquasense-x-at-ces-2026-honored-as-a-ces-innovation-awards-recipient-302652387.html",
+        "note": "The announcement was in euros. It should not be quoted as a USD launch MSRP."
+      },
+      {
+        "market": "United States · AquaSense X listing",
+        "kind": "Official-store snapshot",
+        "amount": "USD 3,999; displayed reference USD 4,250",
+        "date": "2026-09-06",
+        "source": "https://beatbot.com/products/aquasense-x",
+        "note": "Confirm that the intended order includes the AstroRinse system. An iSkim combination is a separate bundle."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Aiper Scuba V3 Ultra",
+          "url": "https://aiper.store/us/products/aiper-scuba-v3-ultra-cordless-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot AquaSense X",
+          "url": "https://beatbot.com/products/aquasense-x",
+          "market": "United States"
+        },
+        {
+          "name": "MOVA Rover X10",
+          "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Daily handling",
+          "values": [
+            "Retrieve and manually rinse the filter",
+            "Retrieve; AstroRinse washes filter after docking",
+            "Retrieve; wireless charging dock and manual filter care"
+          ]
+        },
+        {
+          "label": "Shallow platform claim",
+          "values": [
+            "Down to 20 cm, geometry-dependent",
+            "At least 35 cm, geometry-dependent",
+            "Verify shelf access on the specific pool"
+          ]
+        },
+        {
+          "label": "Surface runtime claim",
+          "values": [
+            "Up to 8 hours",
+            "Up to 10 hours",
+            "Up to 12 hours; separate from floor runtime"
+          ]
+        },
+        {
+          "label": "Debris capacity reference",
+          "values": [
+            "3.5 L onboard basket",
+            "22 L station waste storage; not onboard capacity",
+            "5 L onboard basket"
+          ]
+        },
+        {
+          "label": "System tradeoff",
+          "values": [
+            "Lower shelf access and lighter listed body",
+            "Station-assisted post-cleaning maintenance",
+            "5,400 ft² area claim; 34.8 lb listed robot"
+          ]
+        }
+      ],
+      "takeaway": "AstroRinse is the reason to consider the AquaSense X premium. Aiper avoids that water-connected station workflow and claims shallower platform access. Rover X10 emphasizes larger rated coverage; neither alternative should be judged by a surface-mode runtime alone."
+    },
+    "resources": [
+      {
+        "label": "Manuals & setup information",
+        "url": "https://beatbot.com/products/aquasense-x",
+        "note": "The product FAQ covers station placement and links to its installation video."
+      },
+      {
+        "label": "Official demonstrations & tutorials",
+        "url": "https://www.youtube.com/watch?v=NBH-LKfRNgY",
+        "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      }
+    ]
+  }
+}

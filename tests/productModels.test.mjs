@@ -62,3 +62,34 @@ test('first selection contains only sourced 2026 launches and preserves older pu
     assert.equal(getProduct(slug).launchYear, 2025);
   }
 });
+
+test('expanded guides have source-backed facts, dated prices and complete comparable rows', () => {
+  for (const model of featuredProductModels) {
+    const page = getProduct(model.slug);
+    const guide = page.guide;
+    assert.ok(guide, model.slug);
+    assert.equal(new Set(page.sections.map(section => section.id)).size, page.sections.length);
+    assert.ok(page.sections.every(section => section.title && section.content));
+    assert.ok(page.sections.some(section => section.title === 'Versions and market differences'));
+    assert.ok(page.sections.some(section => section.title === 'Maintenance and ownership'));
+    assert.ok(model.faq.length >= 6 && model.faq.length <= 8);
+    assert.equal(new Set(guide.specifications.map(fact => fact.label)).size, guide.specifications.length);
+    const cited = new Set(model.sources.map(source => source.url));
+    for (const fact of guide.specifications) assert.ok(cited.has(fact.source), `${model.slug}: ${fact.label}`);
+    for (const price of guide.prices) {
+      assert.ok(cited.has(price.source));
+      assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(price.date));
+      assert.ok(price.kind && price.market && price.note);
+    }
+    assert.equal(guide.comparison.models.length, 3);
+    assert.ok(guide.comparison.models.some(item => item.name === model.name));
+    for (const row of guide.comparison.rows) {
+      assert.equal(row.values.length, guide.comparison.models.length);
+      assert.ok(row.values.every(Boolean));
+    }
+    for (const resource of guide.resources) assert.ok(cited.has(resource.url));
+  }
+  for (const model of productModels.filter(model => model.launchYear !== 2026)) {
+    assert.equal(getProduct(model.slug).guide, undefined);
+  }
+});
