@@ -1699,7 +1699,7 @@
       "outputHash": "sha256:9f337742052008b34aea5b73a0d972f9c0178a83521fe1142e3badf2535b6fd1"
     },
     "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection.webp": {
-      "role": "transparent",
+      "role": "body",
       "kind": "transparent",
       "width": 1343,
       "height": 1316,
@@ -4763,7 +4763,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -4781,7 +4781,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -4799,7 +4799,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
