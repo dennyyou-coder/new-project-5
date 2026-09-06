@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { productModels, getProduct, productCover, productDate, productSourcingRoutes } from "@/lib/products";
+import { productModels, featuredProductModels, getProduct, productCover, productDate, productSourcingRoutes } from "@/lib/products";
 import { getInsights, markdownToHtml } from "@/lib/content";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { buildWebsiteMetadata } from "@/lib/seo";
@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProductPage({ params }: Props) {
   const model = getProduct((await params).slug);
   if (!model) notFound();
-  const related = productModels.filter((item) => model.related.includes(item.slug));
+  const related = featuredProductModels.filter((item) => model.related.includes(item.slug));
   const articles = getInsights().filter((article) => model.articles.includes(article.slug));
   const url = `https://worldcleanbiz.com/products/${model.slug}`;
   const schemas = [
@@ -28,7 +28,8 @@ export default async function ProductPage({ params }: Props) {
     <nav className="product-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><Link href="/products">Products</Link><span aria-hidden="true">/</span><span>{model.name}</span></nav>
     <article className="product-model-main">
       <header className="product-detail-hero"><figure className="product-model-cover"><img {...responsiveImageProps(model.coverImage, "cover")} sizes="(max-width: 800px) calc(100vw - 40px), 560px" alt={`${model.name} — official manufacturer product image`} /><figcaption>Manufacturer image · <a href={model.imageSource}>Image source ↗</a></figcaption></figure><div className="product-detail-intro">
-        <p className="product-eyebrow"><Link href={`/brands/${model.brandSlug}`}>{model.brand}</Link> / {model.category}</p><h1>{model.name}</h1><p className="product-lead">{model.summary}</p><div className="product-meta"><span>{model.market}</span><span>Official product listing</span></div><p className="product-note">Sources checked {productDate(model.verifiedAt)}{model.announced ? ` · Announced ${productDate(model.announced)}` : " · Launch date not independently confirmed"}</p>
+        <p className="product-eyebrow"><Link href={`/brands/${model.brandSlug}`}>{model.brand}</Link> / {model.category}</p><h1>{model.name}</h1><p className="product-lead">{model.summary}</p><div className="product-meta"><span>{model.market}</span><span>{model.launchYear} model</span></div><p className="product-note">Sources checked {productDate(model.verifiedAt)}{model.announced ? ` · Announced ${productDate(model.announced)}` : ""}</p>
+        <p className="product-note">{model.launchNote} <a href={model.launchSource}>Launch source ↗</a></p>
         <dl className="product-key-facts">{model.facts.map((fact) => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl>
         <div className="product-actions"><a href="#specifications" className="product-button">Explore specifications ↓</a><a href={model.sources[0].url} className="product-text-link">Official product page ↗</a></div>
       </div></header>

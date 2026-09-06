@@ -45,15 +45,22 @@
       "dreame-x60-ultra",
       "ecovacs-deebot-x12-omnicyclone"
     ],
-    "announced": null,
+    "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
     "sources": [
       {
         "label": "Official product page · Global specification",
         "url": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Official launch context · 2026",
+        "url": "https://newsroom.roborock.com/gl/news/ces-2026-roborock-releases-the-world-s-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-real-madrid-football-club-"
       }
     ],
-    "imageSource": "https://global.roborock.com/cdn/shop/files/Saros_20_Black_ID.png?v=1765951133"
+    "imageSource": "https://global.roborock.com/cdn/shop/files/Saros_20_Black_ID.png?v=1765951133",
+    "launchYear": 2026,
+    "launchNote": "Unveiled in Roborock’s CES 2026 lineup; local availability varies.",
+    "launchSource": "https://newsroom.roborock.com/gl/news/ces-2026-roborock-releases-the-world-s-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-real-madrid-football-club-"
   },
   {
     "slug": "dreame-x60-ultra",
@@ -100,7 +107,7 @@
       "roborock-saros-20",
       "ecovacs-deebot-x12-omnicyclone"
     ],
-    "announced": null,
+    "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
     "sources": [
       {
@@ -110,9 +117,16 @@
       {
         "label": "X60 Ultra manual and support",
         "url": "https://support.dreametech.com/hc/en-us/articles/15593670954127"
+      },
+      {
+        "label": "Official launch context · 2026",
+        "url": "https://www.prnewswire.com/news-releases/all-dreams-in-one-dreame-at-ces-2026-dreame-technology-unveils-x60-ultra-series-alongside-industry-first-innovations-to-redefine-smart-cleaning-302654403.html"
       }
     ],
-    "imageSource": "https://www.dreametech.com/cdn/shop/files/Total-Right-X60_Ultra-White_1200x1200.webp?v=1773224158"
+    "imageSource": "https://www.dreametech.com/cdn/shop/files/Total-Right-X60_Ultra-White_1200x1200.webp?v=1773224158",
+    "launchYear": 2026,
+    "launchNote": "Dreame named both X60 Ultra and X60 Max Ultra Complete in its CES 2026 announcement. Regional packages differ.",
+    "launchSource": "https://www.prnewswire.com/news-releases/all-dreams-in-one-dreame-at-ces-2026-dreame-technology-unveils-x60-ultra-series-alongside-industry-first-innovations-to-redefine-smart-cleaning-302654403.html"
   },
   {
     "slug": "ecovacs-deebot-x12-omnicyclone",
@@ -165,9 +179,16 @@
       {
         "label": "Official product page · Global specification",
         "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Official launch context · 2026",
+        "url": "https://www.ecovacs.com/global/campaign/ces"
       }
     ],
-    "imageSource": "https://site-static.ecovacs.com/upload/image/product/2026/03/23/035142_3240$X12旋风尘桶基站1.jpg"
+    "imageSource": "https://site-static.ecovacs.com/upload/image/product/2026/03/23/035142_3240$X12旋风尘桶基站1.jpg",
+    "launchYear": 2026,
+    "launchNote": "Featured in ECOVACS’ CES 2026 lineup. The exact first announcement date is not confirmed here; local sales dates vary.",
+    "launchSource": "https://www.ecovacs.com/global/campaign/ces"
   },
   {
     "slug": "dyson-v16-piston-animal",
@@ -229,7 +250,10 @@
         "url": "https://www.dyson.com/support/journey/guides/Vacuum-cleaners/Stick/sv53-a"
       }
     ],
-    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/discover-dyson/articles/piston/SV53-A_BLKBCOBLKBCO_065-RGB-TECH-EagleCut-Filter-Cyclones-Airflow-Battery-BlueFizz-A0_B.jpeg"
+    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/discover-dyson/articles/piston/SV53-A_BLKBCOBLKBCO_065-RGB-TECH-EagleCut-Filter-Cyclones-Airflow-Battery-BlueFizz-A0_B.jpeg",
+    "launchYear": 2025,
+    "launchNote": "Announced in September 2025. Its 2026 US availability does not make it a new 2026 model.",
+    "launchSource": "https://www.dyson.com/discover/innovation/new-machines/v16-piston-animal-cordless-vacuum"
   },
   {
     "slug": "mova-lidax-ultra-1000",
@@ -276,15 +300,22 @@
       "mammotion-luba-mini-2-awd-1500",
       "sunseeker-s4"
     ],
-    "announced": null,
+    "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
     "sources": [
       {
         "label": "Official product page · United States · non-AWD",
         "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Official launch context · 2026",
+        "url": "https://www.mova.tech/blogs/blog/mova-launches-lidax-ultra-viax-robotic-lawn-mowers"
       }
     ],
-    "imageSource": "https://us.mova.tech/cdn/shop/files/1_b8d313fa-c0ee-4cc7-b176-505d321b5bdf.jpg?v=1771831228"
+    "imageSource": "https://us.mova.tech/cdn/shop/files/1_b8d313fa-c0ee-4cc7-b176-505d321b5bdf.jpg?v=1771831228",
+    "launchYear": 2026,
+    "launchNote": "The LiDAX Ultra series, including the 1000, was unveiled on 6 January 2026. European availability was announced for 27 January; other markets differ.",
+    "launchSource": "https://www.mova.tech/blogs/blog/mova-launches-lidax-ultra-viax-robotic-lawn-mowers"
   },
   {
     "slug": "mammotion-luba-mini-2-awd-1500",
@@ -343,9 +374,16 @@
       {
         "label": "Manual library · match your hardware version",
         "url": "https://support.mammotion.com/portal/en/kb/articles/user-manual"
+      },
+      {
+        "label": "Official launch context · 2026",
+        "url": "https://eu.mammotion.com/blogs/news/awd-lawn-mowers-clear-guide"
       }
     ],
-    "imageSource": "https://eu.mammotion.com/cdn/shop/files/02.png?v=1778133151&width=2048"
+    "imageSource": "https://eu.mammotion.com/cdn/shop/files/02.png?v=1778133151&width=2048",
+    "launchYear": 2026,
+    "launchNote": "Mammotion identifies LUBA mini 2 AWD as a 2026 launch. This profile covers the 1500 LiDAR listing; its exact regional announcement date is not confirmed here.",
+    "launchSource": "https://eu.mammotion.com/blogs/news/awd-lawn-mowers-clear-guide"
   },
   {
     "slug": "sunseeker-s4",
@@ -403,9 +441,16 @@
       {
         "label": "S4 EU manual · regional reference",
         "url": "https://sunseekertech.com/global/docs/manual-s4-eu.pdf"
+      },
+      {
+        "label": "Official launch context · 2025",
+        "url": "https://sunseekertech.com/global/news/sunseeker-robotics-debuts-s4-its-first-lidar-equipped-robotic-mower-in-the-us-at-equip-expo-2025"
       }
     ],
-    "imageSource": "https://sunseekertech.com/static-assets/sites/global/product/s4/banner.png"
+    "imageSource": "https://sunseekertech.com/static-assets/sites/global/product/s4/banner.png",
+    "launchYear": 2025,
+    "launchNote": "Sunseeker’s official newsroom records the S4’s US debut at Equip Expo in October 2025. Its CES 2026 award is not a 2026 launch.",
+    "launchSource": "https://sunseekertech.com/global/news/sunseeker-robotics-debuts-s4-its-first-lidar-equipped-robotic-mower-in-the-us-at-equip-expo-2025"
   },
   {
     "slug": "aiper-scuba-v3-ultra",
@@ -454,15 +499,22 @@
       "beatbot-aquasense-x",
       "wybot-s3"
     ],
-    "announced": null,
+    "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
     "sources": [
       {
         "label": "Official product page · United States",
         "url": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      },
+      {
+        "label": "Official launch context · 2026",
+        "url": "https://ces.vporoom.com/2026-01-06-Aiper-Unveils-Its-New-Smart-AI-Powered-Pool-and-Garden-Ecosystem-at-CES-2026"
       }
     ],
-    "imageSource": "https://d31cs717m47wwl.cloudfront.net/20260525/1779703998449x30-pc.webp"
+    "imageSource": "https://d31cs717m47wwl.cloudfront.net/20260525/1779703998449x30-pc.webp",
+    "launchYear": 2026,
+    "launchNote": "Unveiled in Aiper’s CES 2026 smart yard lineup. Announcement and local retail availability are separate milestones.",
+    "launchSource": "https://ces.vporoom.com/2026-01-06-Aiper-Unveils-Its-New-Smart-AI-Powered-Pool-and-Garden-Ecosystem-at-CES-2026"
   },
   {
     "slug": "beatbot-aquasense-x",
@@ -510,7 +562,7 @@
       "aiper-scuba-v3-ultra",
       "wybot-s3"
     ],
-    "announced": null,
+    "announced": "2026-01-05",
     "verifiedAt": "2026-09-06",
     "sources": [
       {
@@ -520,9 +572,16 @@
       {
         "label": "Official system overview",
         "url": "https://beatbot.com/pages/aquasense-x"
+      },
+      {
+        "label": "Official launch context · 2026",
+        "url": "https://www.prnewswire.com/news-releases/beatbot-introduces-aquasense-x-at-ces-2026-honored-as-a-ces-innovation-awards-recipient-302652387.html"
       }
     ],
-    "imageSource": "https://beatbot.com/cdn/shop/files/2Frame_2133700360-webp_d4ce0cbe-ae14-4c9b-98c5-5423a69538ce-webp.webp?v=1768357107"
+    "imageSource": "https://beatbot.com/cdn/shop/files/2Frame_2133700360-webp_d4ce0cbe-ae14-4c9b-98c5-5423a69538ce-webp.webp?v=1768357107",
+    "launchYear": 2026,
+    "launchNote": "Beatbot unveiled the AquaSense X ecosystem on 5 January 2026, ahead of CES. Regional packages and availability vary.",
+    "launchSource": "https://www.prnewswire.com/news-releases/beatbot-introduces-aquasense-x-at-ces-2026-honored-as-a-ces-innovation-awards-recipient-302652387.html"
   },
   {
     "slug": "wybot-s3",
@@ -570,14 +629,21 @@
       "aiper-scuba-v3-ultra",
       "beatbot-aquasense-x"
     ],
-    "announced": null,
+    "announced": "2025-01-06",
     "verifiedAt": "2026-09-06",
     "sources": [
       {
         "label": "Official product page · United States",
         "url": "https://www.wybotpool.com/products/wybot-s3-robotic-pool-cleaner"
+      },
+      {
+        "label": "Official launch context · 2025",
+        "url": "https://www.prnewswire.com/news-releases/wybot-s3-unveiled-at-ces-2025-the-first-self-docking-self-emptying-automatic-charging-pool-cleaning-robot-302342327.html"
       }
     ],
-    "imageSource": "https://www.wybotpool.com/cdn/shop/files/1_cb8fcf31-c01f-457e-9796-18171ee95ca0.webp?v=1767062235"
+    "imageSource": "https://www.wybotpool.com/cdn/shop/files/1_cb8fcf31-c01f-457e-9796-18171ee95ca0.webp?v=1767062235",
+    "launchYear": 2025,
+    "launchNote": "WYBOT unveiled the S3 at CES 2025. It is an earlier model, outside the 2026 new-model selection.",
+    "launchSource": "https://www.prnewswire.com/news-releases/wybot-s3-unveiled-at-ces-2025-the-first-self-docking-self-emptying-automatic-charging-pool-cleaning-robot-302342327.html"
   }
 ]

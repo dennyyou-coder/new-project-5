@@ -6,6 +6,10 @@ import { parseFrontmatter } from "@/lib/content";
 export type ProductModel = Omit<(typeof records)[number], "related" | "articles"> & { related: string[]; articles: string[] };
 export const productModels: ProductModel[] = records;
 
+// Keep published routes available while curating the first directory release.
+export const productSelectionYear = 2026;
+export const featuredProductModels = productModels.filter((model) => model.launchYear === productSelectionYear);
+
 export function getProduct(slug: string) {
   const model = productModels.find((item) => item.slug === slug);
   if (!model) return undefined;
