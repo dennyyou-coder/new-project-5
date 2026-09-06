@@ -1464,7 +1464,7 @@
       }
     },
     "/images/articles/dyson-camerajet-toothbrush-review/02-camera-and-jet.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -1482,7 +1482,7 @@
       }
     },
     "/images/articles/dyson-camerajet-toothbrush-review/03-fluid-system.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -1500,7 +1500,7 @@
       }
     },
     "/images/articles/dyson-camerajet-toothbrush-review/04-brush-head.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -1518,7 +1518,7 @@
       }
     },
     "/images/articles/dyson-camerajet-toothbrush-review/05-app-and-consumables.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -1569,6 +1569,78 @@
         "height": 800,
         "bytes": 15704,
         "outputHash": "sha256:5538bc91aebe651d9c9f016e93cb3734007fe6d04fae881ed488849157d59e2b"
+      }
+    },
+    "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43414,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2b14aabfdd30e1554df2b63f178734d60692ca85e81569ff1f2edd1a2c3733f5",
+      "outputHash": "sha256:854ac5cdec29b9046d5935cc21652c2dd4ca1f41e7752e0c0ff2753cc01c8c78",
+      "mobile": {
+        "src": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18702,
+        "outputHash": "sha256:067e551a719ff15a8f4d65cb6a07c4ef1981b6d1a6370ced86d3cffae0bdecbd"
+      }
+    },
+    "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/02-ecovacs-x5-hybrid.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 740,
+      "height": 1600,
+      "bytes": 102198,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:965be1547487eb1100854000feebc5ff49bb30d9e5cbd905067d167847963cc4",
+      "outputHash": "sha256:47b9d981783f9860fe66647db3a520c5c226b2203841ab4672406e14e629fb3c",
+      "mobile": {
+        "src": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/02-ecovacs-x5-hybrid-800.webp",
+        "width": 370,
+        "height": 800,
+        "bytes": 39280,
+        "outputHash": "sha256:d0e5bcc3564adcc0d18d1e1a91a93be5994dc929ba7877cb7418309ae3d61eb7"
+      }
+    },
+    "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/03-xlean-tr1-handheld.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 1211,
+      "height": 622,
+      "bytes": 42884,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:02231c580ad8bf69f0526ac0d7e50e99a88d4cd1229621e475998c93957adcd8",
+      "outputHash": "sha256:bccb68bc0fb8ce7c6d7287cd4639eb6c46023b8782840f3a94af299657797dd0",
+      "mobile": {
+        "src": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/03-xlean-tr1-handheld-800.webp",
+        "width": 800,
+        "height": 411,
+        "bytes": 22280,
+        "outputHash": "sha256:094bd3add93354c02f2e30572d09c1551b86aff6322db326f6e2dd44fa0c6b69"
+      }
+    },
+    "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 1343,
+      "height": 1316,
+      "bytes": 35304,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c0c4d6bbf6a6e8d2a758abeb03d071921d4d4d0fac4ad0ceb7b1c570d80d9a51",
+      "outputHash": "sha256:a4e13ba330188a951750224258cf04b7548940df6b8bb71ff8dac7b11930d0cf",
+      "mobile": {
+        "src": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection-800.webp",
+        "width": 800,
+        "height": 784,
+        "bytes": 14064,
+        "outputHash": "sha256:a18bb052563ba0f9730aa2bf268eed9e26654718fdd837ba22909cbe096f1f75"
       }
     },
     "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp": {
@@ -31303,6 +31375,15 @@
         "/images/insights/ecovacs-mid-year-report-reading-image-010.jpg"
       ]
     },
+    "ecovacs-x5-hybrid-dreame-triform-market": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/01-cover.webp",
+      "body": [
+        "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/02-ecovacs-x5-hybrid.webp",
+        "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/03-xlean-tr1-handheld.webp",
+        "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection.webp"
+      ]
+    },
     "eu-battery-rules-smartphones-power-tools": {
       "budgetClass": "standard",
       "cover": "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp",
@@ -34589,6 +34670,30 @@
           "status": "matched",
           "primary": "/images/articles/ecovacs-deebot-x12-omnicyclone/01-cover.webp",
           "hash": "sha256:23fb39c14e189f41a5e062c9174189d2e1c133e03badd322caaa86ffcb4d1f65"
+        }
+      }
+    },
+    "ecovacs-x5-hybrid-dreame-triform-market": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/01-cover.webp",
+          "hash": "sha256:2b14aabfdd30e1554df2b63f178734d60692ca85e81569ff1f2edd1a2c3733f5"
+        },
+        "02-ecovacs-x5-hybrid.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/02-ecovacs-x5-hybrid.webp",
+          "hash": "sha256:965be1547487eb1100854000feebc5ff49bb30d9e5cbd905067d167847963cc4"
+        },
+        "03-xlean-tr1-handheld.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/03-xlean-tr1-handheld.webp",
+          "hash": "sha256:02231c580ad8bf69f0526ac0d7e50e99a88d4cd1229621e475998c93957adcd8"
+        },
+        "04-xlean-handle-connection.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/04-xlean-handle-connection.webp",
+          "hash": "sha256:c0c4d6bbf6a6e8d2a758abeb03d071921d4d4d0fac4ad0ceb7b1c570d80d9a51"
         }
       }
     },
