@@ -1546,6 +1546,24 @@
         "outputHash": "sha256:a0f984ade5c9a88342135bc8032ead48fb42e0704836aeb6ef525f073dd32b8d"
       }
     },
+    "/images/articles/dyson-pencilwash/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1230,
+      "height": 923,
+      "bytes": 18614,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:07c2a5957f263f81742e5d648a7c954264c333adff304bd3a7384a53d83aa653",
+      "outputHash": "sha256:6e7a80c95d575ace971a1cbb8827a99ebf20db361277bf99b6e0e7e467290c9a",
+      "mobile": {
+        "src": "/images/articles/dyson-pencilwash/01-cover-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 13062,
+        "outputHash": "sha256:040c51aaade9df9ebe0f059fb446a12d4a164e7696fa8d6b503cbbc2ea15262c"
+      }
+    },
     "/images/articles/dyson-v16-piston-animal/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1603,6 +1621,35 @@
       "quality": 90,
       "sourceHash": "sha256:1174165b4efda8f0a12f3ce4b9cafe162bc0c8eabd9d6b84ed38e45273ef2468",
       "outputHash": "sha256:aa5cc2fee7e32486216241bbec1969768c08e0958093a093cce2f7cde8e40e9e"
+    },
+    "/images/articles/ecovacs-winbot-w2s-pro-omni/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 920,
+      "height": 920,
+      "bytes": 47716,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2c6fcb18f4f4fd9d74f408fb1143b6f238bc3eb80d257d4d3af1d29f58b6ca09",
+      "outputHash": "sha256:20677495284aa53f7aac4511dfaa7739dfed28b522833a171bcdbc396922a0dd",
+      "mobile": {
+        "src": "/images/articles/ecovacs-winbot-w2s-pro-omni/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 35228,
+        "outputHash": "sha256:adfdce336dc786357db8b13aad4193698de5b59757be7b4b42d55f9ca1c6d6ab"
+      }
+    },
+    "/images/articles/ecovacs-winbot-w3-omni/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 920,
+      "height": 920,
+      "bytes": 24356,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:dfa3954ee993310f1b83e949a8719dfd80e4a7269236493a82749ef2c5ed4216",
+      "outputHash": "sha256:64e1effe6bd7dc52667bb667d84a89981d56a1eb00d0096dd5afd332c1ba6ec4"
     },
     "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/01-cover.webp": {
       "role": "cover",
@@ -32331,6 +32378,11 @@
         "/images/insights/dyson-new-product-review-2025-image-02.jpg"
       ]
     },
+    "dyson-pencilwash": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-pencilwash/01-cover.webp",
+      "body": []
+    },
     "dyson-v15-detect-vs-gen5detect": {
       "budgetClass": "standard",
       "cover": "/images/blog/dyson-v15-detect-vs-gen5detect.webp",
@@ -32469,6 +32521,16 @@
     "ecovacs-ultramarine-p1": {
       "budgetClass": "standard",
       "cover": "/images/articles/ecovacs-ultramarine-p1/01-cover.webp",
+      "body": []
+    },
+    "ecovacs-winbot-w2s-pro-omni": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-winbot-w2s-pro-omni/01-cover.webp",
+      "body": []
+    },
+    "ecovacs-winbot-w3-omni": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-winbot-w3-omni/01-cover.webp",
       "body": []
     },
     "ecovacs-x5-hybrid-dreame-triform-market": {
@@ -35863,6 +35925,15 @@
         }
       }
     },
+    "dyson-pencilwash": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-pencilwash/01-cover.webp",
+          "hash": "sha256:07c2a5957f263f81742e5d648a7c954264c333adff304bd3a7384a53d83aa653"
+        }
+      }
+    },
     "dyson-v16-piston-animal": {
       "files": {
         "01-cover.jpeg": {
@@ -35896,6 +35967,24 @@
           "status": "matched",
           "primary": "/images/articles/ecovacs-ultramarine-p1/01-cover.webp",
           "hash": "sha256:1174165b4efda8f0a12f3ce4b9cafe162bc0c8eabd9d6b84ed38e45273ef2468"
+        }
+      }
+    },
+    "ecovacs-winbot-w2s-pro-omni": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-winbot-w2s-pro-omni/01-cover.webp",
+          "hash": "sha256:2c6fcb18f4f4fd9d74f408fb1143b6f238bc3eb80d257d4d3af1d29f58b6ca09"
+        }
+      }
+    },
+    "ecovacs-winbot-w3-omni": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-winbot-w3-omni/01-cover.webp",
+          "hash": "sha256:dfa3954ee993310f1b83e949a8719dfd80e4a7269236493a82749ef2c5ed4216"
         }
       }
     },

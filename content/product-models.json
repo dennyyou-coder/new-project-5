@@ -1869,5 +1869,305 @@
     "launchYear": 2026,
     "launchNote": "Series announced at CES 2026; this profile follows the named US model.",
     "launchSource": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
+  },
+  {
+    "slug": "dyson-pencilwash",
+    "name": "Dyson PencilWash",
+    "brand": "Dyson",
+    "brandSlug": "dyson",
+    "category": "Floor washers",
+    "market": "United States · specified model",
+    "summary": "A slim, manually guided hard-floor washer with a motorised wet roller, a head-mounted water tank and a compact wand charging dock.",
+    "fit": "Smaller hard-floor areas and frequent spill cleanups where light handling and compact storage matter.",
+    "caution": "Requires water and post-use roller washing; it does not replace a carpet vacuum or provide hot-air roller drying.",
+    "facts": [
+      {
+        "label": "Full machine weight",
+        "value": "4.6 lb",
+        "meaning": "Current US listing; launch release used 4.9 lb."
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 30 minutes",
+        "meaning": "Single-charge manufacturer claim, varying with use."
+      },
+      {
+        "label": "Clean water tank",
+        "value": "300 ml",
+        "meaning": "Located in the head; refill frequency depends on water use."
+      },
+      {
+        "label": "Roller care",
+        "value": "Wash after use; air-dry at least 24 hours",
+        "meaning": "No heated drying dock in the listed package."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is PencilWash a vacuum cleaner like PencilVac?",
+        "answer": "No. PencilWash is a dedicated hard-floor wet cleaner and requires water in its tank. PencilVac is a different machine. Do not buy PencilWash as a dry carpet vacuum or interchangeable PencilVac head."
+      },
+      {
+        "question": "Does self-cleaning mean I never wash the roller?",
+        "answer": "No. Dirt is removed from the roller during cleaning, but Dyson’s manual still requires after-use washing. Remove the head, empty the waste, wash the permitted parts and leave the roller to air-dry for at least 24 hours."
+      },
+      {
+        "question": "Why do some sources list 4.9 lb instead of 4.6 lb?",
+        "answer": "The February 2026 launch release listed 4.9 lb. The current US product page and FAQ list 4.6 lb, which this profile uses. The much smaller 0.84 lb figure is weight in hand, not total machine weight."
+      },
+      {
+        "question": "Can I use it without water to collect dry debris?",
+        "answer": "No. The owner’s guide explicitly says not to operate with an empty clean-water tank. It collects suitable dry debris while wet cleaning; that does not create a separate dry-vacuum mode."
+      },
+      {
+        "question": "How does MAX mode work?",
+        "answer": "The US manual describes two timed actions: press and release for a five-second boost, or press and hold for up to 60 seconds. It then returns to Standard. Extra hydration uses the small tank more quickly."
+      },
+      {
+        "question": "Does the charging dock dry the roller?",
+        "answer": "No heated dryer is listed for PencilWash. The package includes a wand charging dock and a clip-on drip tray. Manual roller washing and air drying remain part of the routine."
+      },
+      {
+        "question": "What replacement parts should I budget for?",
+        "answer": "The official support page lists the compatible wet roller at USD 29.99 when checked. Dyson recommends replacement around every six months depending on use. Confirm the current part number, condition and price rather than replacing solely by calendar."
+      }
+    ],
+    "articles": [
+      "dyson-washg1-vs-tineco-floor-one",
+      "dyson-hard-floor-washer-exposed"
+    ],
+    "related": [],
+    "announced": "2026-02-19",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "Current US product specifications and price",
+        "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "US PencilWash user guide",
+        "url": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/floor-cleaners/wet/pencilwash/637217-01.pdf"
+      },
+      {
+        "label": "Official maintenance and parts",
+        "url": "https://www.dyson.com/support/floor-cleaners/wet/pencilwash"
+      },
+      {
+        "label": "February 2026 manufacturer announcement",
+        "url": "https://www.dyson.com/discover/news/latest/introducing-pencilwash"
+      },
+      {
+        "label": "Comparison reference · WashG1",
+        "url": "https://www.dyson.com/floor-cleaners/wet/washg1/black-blue"
+      },
+      {
+        "label": "Comparison reference · Clean+Wash Hygiene",
+        "url": "https://www.dyson.com/floor-cleaners/wet/clean-wash-hygiene/copper-prussian-blue"
+      }
+    ],
+    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/specifications/home/floorcare/wet-cleaners/Web_Dynamic_Media_Specifications_970A.png?%24responsive%24=&fmt=png-alpha",
+    "launchYear": 2026,
+    "launchNote": "Announced February 19, 2026; US availability from March 17.",
+    "launchSource": "https://www.dyson.com/discover/news/latest/introducing-pencilwash"
+  },
+  {
+    "slug": "ecovacs-winbot-w3-omni",
+    "name": "ECOVACS WINBOT W3 OMNI",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Window robots",
+    "market": "United States · specified model",
+    "summary": "A household window robot with a Vortex Wash pad-cleaning station, WIN-SLAM 5.0 navigation and both plugged-in and station-battery operation.",
+    "fit": "Homes with several suitable, safely reachable panes where repeated pad washing is a significant part of the cleaning routine.",
+    "caution": "Owners still move the robot and load the pad into the washer; the roughly 10 kg station needs space and safe tethering.",
+    "facts": [
+      {
+        "label": "Pad washing",
+        "value": "Vortex Wash station",
+        "meaning": "Remove the pad assembly and load it into the wash compartment yourself."
+      },
+      {
+        "label": "Station-powered runtime",
+        "value": "Up to 130 minutes",
+        "meaning": "Manufacturer battery-mode claim; robot remains connected by cable."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "270 × 270 × 76 mm",
+        "meaning": "Body size; allow clearance around handles and obstacles."
+      },
+      {
+        "label": "Station weight",
+        "value": "About 10 kg",
+        "meaning": "Separate from the robot; consider carrying and storage."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does W3 OMNI wash its pad automatically?",
+        "answer": "Its station automates the washing stage. The manual still requires you to detach the pad assembly, place it in the wash compartment, select a wash and reinstall it. The robot does not leave the glass and dock itself."
+      },
+      {
+        "question": "Can I leave it running while I go out?",
+        "answer": "No. The US manual says not to leave it unattended and requires secure tethering. Keep the area below clear and follow the complete attachment and removal instructions. Remote controls do not remove supervision."
+      },
+      {
+        "question": "Does battery operation make it cordless?",
+        "answer": "No. The station battery supplies the robot through the compound power-and-safety cable. Battery mode reduces reliance on a nearby outlet but does not remove the cable or the anchoring requirements."
+      },
+      {
+        "question": "Why are both 10,000 Pa and 3,300 Pa listed?",
+        "answer": "The US page advertises 10,000 Pa in its protection description and separately lists 3,300 ± 100 Pa during movement. These describe different conditions and should not be merged into one continuous cleaning-power claim."
+      },
+      {
+        "question": "Can it clean every frameless or decorated window?",
+        "answer": "No. The manual excludes broken, uneven, gapped, curved and sticker-covered surfaces and sets material-thickness and obstruction requirements. Frameless capability is not approval for every glass installation."
+      },
+      {
+        "question": "What work remains after a cleaning session?",
+        "answer": "Retrieve the robot, remove and dry the pad, empty and rinse the station tanks, and wipe or air-dry residual water after compartment cleaning. Self-cleaning reduces scrubbing but does not remove all maintenance."
+      },
+      {
+        "question": "Is it suitable for commercial high-rise facade cleaning?",
+        "answer": "The cited AMR manual specifies household use only, including permitted exterior windows, and excludes commercial or industrial use. It is not a substitute for a professional facade-cleaning system."
+      }
+    ],
+    "articles": [
+      "who-owns-ecovacs-tineco-manufacturing",
+      "ecovacs-at-a-crossroads"
+    ],
+    "related": [
+      "ecovacs-winbot-w2s-pro-omni"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "US product features and price",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "US AMR owner’s manual",
+        "url": "https://site-static.ecovacs.com/upload/file/support/2025/12/16/090451_5693$WINBOTW3OMNIInstructionManualAMR.pdf"
+      },
+      {
+        "label": "Official W3 support and parts",
+        "url": "https://help.ecovacs.com/us/support/winbot-w3-omni"
+      },
+      {
+        "label": "CES 2026 manufacturer announcement",
+        "url": "https://www.prnewswire.com/news-releases/ecovacs-showcases-its-acceleration-towards-full-scenario-service-robotics-at-ces-2026-302653595.html"
+      },
+      {
+        "label": "Comparison reference · W2S PRO OMNI",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "Comparison reference · W2 PRO OMNI",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/us/image/product/2026/02/26/051730_2886$winbot-w3-omni-id-920x920-1.png",
+    "launchYear": 2026,
+    "launchNote": "Shown at CES in January 2026; the US commercial launch followed in March.",
+    "launchSource": "https://www.prnewswire.com/news-releases/ecovacs-showcases-its-acceleration-towards-full-scenario-service-robotics-at-ces-2026-302653595.html"
+  },
+  {
+    "slug": "ecovacs-winbot-w2s-pro-omni",
+    "name": "ECOVACS WINBOT W2S PRO OMNI",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Window robots",
+    "market": "United States · specified model",
+    "summary": "A household window robot with TruEdge 2.0 edge brushes, a 120 ml liquid tank and a portable battery-and-storage station.",
+    "fit": "Owners seeking improved edge handling and portable power who are comfortable washing pads manually.",
+    "caution": "OMNI does not mean automatic pad washing here. Check pane size, surface angle and safe placement before buying.",
+    "facts": [
+      {
+        "label": "Edge system",
+        "value": "TruEdge 2.0",
+        "meaning": "Lift-and-lower edge brushes; inspect actual frame clearance."
+      },
+      {
+        "label": "Robot liquid tank",
+        "value": "120 ml / about 4.1 fl oz",
+        "meaning": "Separate from the station battery’s operating duration."
+      },
+      {
+        "label": "Station-powered runtime",
+        "value": "Up to 110 minutes",
+        "meaning": "Battery operation still uses the compound cable."
+      },
+      {
+        "label": "Minimum pane",
+        "value": "30 × 40 cm",
+        "meaning": "Avoid small or irregular panes outside the manual’s conditions."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does the W2S PRO OMNI station wash the pad?",
+        "answer": "No automatic pad-washing function is specified. Its station supplies power, manages the compound cable and stores the robot. The exact PRO manual instructs owners to remove and wash the wiping pad by hand."
+      },
+      {
+        "question": "How is it different from W3 OMNI?",
+        "answer": "W2S PRO OMNI uses TruEdge 2.0 and WIN-SLAM 4.0 with a 120 ml robot tank. W3 adds a Vortex Wash station and WIN-SLAM 5.0 but has an 80 ml onboard tank. Choose by workflow rather than model number alone."
+      },
+      {
+        "question": "Is W2S PRO OMNI the same as W2S OMNI?",
+        "answer": "No. PRO is part of the exact model name. The US product page links several manuals; use the WINBOT W2S PRO OMNI AMR document for this profile rather than applying instructions from a neighbouring W2S listing."
+      },
+      {
+        "question": "Can it work on horizontal skylights or tables?",
+        "answer": "No. The cited PRO manual excludes horizontal glass and specifies surfaces within 45 degrees of vertical. Also check pane size, surface condition, obstacles and retrieval access."
+      },
+      {
+        "question": "Can I control it remotely from outside the home?",
+        "answer": "Do not assume that. The PRO manual describes Bluetooth pairing and warns that distance and intervening walls can break the connection. Remote controls are for operating an attached, supervised robot, not unattended cleaning."
+      },
+      {
+        "question": "Does the 75 m² tank claim mean one battery cleans that much?",
+        "answer": "No. Liquid coverage and station-battery runtime are separate claims. Cleaning mode, repeated passes, travel and pane changes affect the result. Do not turn them into a guaranteed whole-home cleaning area."
+      },
+      {
+        "question": "Can it clean exterior windows in rain or wind?",
+        "answer": "The manual permits exterior use only with proper tethering, calm winds and no rain or snow, and says to stay present. Follow the full local manual; suction and insurance claims do not remove those requirements."
+      }
+    ],
+    "articles": [
+      "who-owns-ecovacs-tineco-manufacturing",
+      "ecovacs-at-a-crossroads"
+    ],
+    "related": [
+      "ecovacs-winbot-w3-omni"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-06",
+    "sources": [
+      {
+        "label": "US exact-model listing and price",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      },
+      {
+        "label": "US W2S PRO OMNI AMR manual",
+        "url": "https://site-static.ecovacs.com/upload/file/support/2026/06/24/080933_7018$WINBOTW2SPROOMNIInstructionManual-AMR.pdf"
+      },
+      {
+        "label": "Official 2026 product collection · Germany",
+        "url": "https://www.ecovacs.com/de/shop/winbot-window-cleaning-robot"
+      },
+      {
+        "label": "Comparison reference · W3 OMNI",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "Comparison reference · W2 PRO OMNI",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2-pro-omni"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/us/image/product/2026/09/02/093414_5161$winbot-w2s-pro-omni-image-920x920.jpg",
+    "launchYear": 2026,
+    "launchNote": "Listed as a 2026 new product in the official European collection; this guide follows the US PRO OMNI offer. The exact announcement day is not verified.",
+    "launchSource": "https://www.ecovacs.com/de/shop/winbot-window-cleaning-robot"
   }
 ]
