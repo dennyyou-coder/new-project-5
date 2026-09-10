@@ -4171,5 +4171,1541 @@
         "note": "UK launch RRP and availability announcement; separate from US retail pricing."
       }
     ]
+  },
+  "roborock-qrevo-edge-3-pro": {
+    "verdict": "Shortlist Edge 3 Pro for low furniture and mixed carpets if detachable rotating mops suit your routine. Confirm doorway geometry and local supply before ordering.",
+    "notFor": "A home that requires a continuously rinsed roller, guaranteed staircase travel or clearance with no safety margin.",
+    "specifications": [
+      {
+        "label": "Suction claim",
+        "value": "36,000 Pa",
+        "meaning": "Manufacturer motor test; not a cross-brand cleaning score.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Mop mechanism",
+        "value": "Dual rotating mops",
+        "meaning": "A different format from Roborock Flow roller models.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Mop speed",
+        "value": "Up to 200 RPM",
+        "meaning": "Extreme water-flow setting in Custom mode.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Mop pressure",
+        "value": "Up to 14 N",
+        "meaning": "Maximum manufacturer claim, not a constant load on every floor.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "352 × 350 × 79.8 mm",
+        "meaning": "Allow clearance beyond the nominal body height.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Low-clearance claim",
+        "value": "7.95 cm with passive compression",
+        "meaning": "Roborock notes possible contact or scraping under furniture.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Navigation",
+        "value": "RetractSense retractable LDS",
+        "meaning": "360° in open space; narrower rear coverage when retracted.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Obstacle recognition",
+        "value": "Reactive AI · RGB + structured light",
+        "meaning": "300+ object categories is a manufacturer recognition claim.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Side sensing",
+        "value": "VertiBeam lateral avoidance",
+        "meaning": "Intended to help around furniture edges and cables; still inspect the route.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Double-layer threshold",
+        "value": "4.5 + 4.3 cm, up to 8.8 cm combined",
+        "meaning": "The cited test requires a gap depth greater than 12 cm and no more than 14 cm.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Main and side brushes",
+        "value": "DuoDivide + FlexiArm Arc",
+        "meaning": "Anti-tangle designs still need routine inspection.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Carpet mop handling",
+        "value": "Automatic mop detachment",
+        "meaning": "Applies to supported cleaning modes such as vacuuming carpets first.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Carpet chassis adjustment",
+        "value": "Up to 3 cm pile claim",
+        "meaning": "Requires the appropriate app setting; test your actual rug.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Dock dimensions",
+        "value": "402 × 494 × 450 mm",
+        "meaning": "Keep room for tank removal and robot approach.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Dock temperatures",
+        "value": "100°C wash module / 55°C drying outlet",
+        "meaning": "Measurement points are inside the dock, not at the floor.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "Dock automation",
+        "value": "Emptying, dosing, warm-water refill, rewash",
+        "meaning": "Owners still handle water, dust and worn components.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Global · announcement",
+        "amount": "Not verified",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro",
+        "kind": "Announcement status",
+        "date": "2026-09-10",
+        "note": "No local price or delivery commitment established on the verification date."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock Qrevo Edge 3 Pro",
+          "url": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock Qrevo Curv 2 Flow",
+          "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock Saros 20 Flow",
+          "url": "https://global.roborock.com/pages/roborock-saros-20-flow",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping format",
+          "values": [
+            "Dual rotating pads",
+            "SpiraFlow 1.0 roller",
+            "SpiraFlow 2.0 roller"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "79.8 mm",
+            "119 mm",
+            "89.8 mm"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "36,000 Pa",
+            "20,000 Pa",
+            "36,000 Pa"
+          ]
+        },
+        {
+          "label": "Carpet mop handling",
+          "values": [
+            "Automatic detachment in supported modes",
+            "15 mm lift and shield",
+            "15 mm lift and shield"
+          ]
+        },
+        {
+          "label": "Dock wash claim",
+          "values": [
+            "100°C at heating module",
+            "75°C at heater output",
+            "100°C at heating module"
+          ]
+        }
+      ],
+      "takeaway": "Physical fit and mop handling are the useful distinctions. Suction and heater values alone do not establish cleaning quality across these three designs."
+    },
+    "resources": [
+      {
+        "label": "Global specifications and test footnotes",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "IFA 2026 introduction",
+        "url": "https://us.roborock.com/pages/ifa-2026",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · Qrevo Curv 2 Flow",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow",
+        "note": "Official reference; check the exact regional model and current terms."
+      }
+    ]
+  },
+  "roborock-qrevo-curv-2-flow": {
+    "verdict": "A useful roller-mop candidate if the 119 mm body fits your home. The verified US offer gives a concrete starting point for comparing total ownership cost.",
+    "notFor": "Low furniture below its stated height, or a buyer expecting the adaptive chassis and specifications of another Curv or Saros model.",
+    "specifications": [
+      {
+        "label": "Mop system",
+        "value": "SpiraFlow 1.0 · 270 mm roller",
+        "meaning": "Continuously rinses the roller during mopping.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Water delivery",
+        "value": "8 hydration points",
+        "meaning": "Fresh-water distribution, not eight independent cleaning passes.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Roller speed",
+        "value": "Up to 220 RPM",
+        "meaning": "Specified for extreme water flow in Custom mode.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Downward pressure",
+        "value": "Up to 15 N",
+        "meaning": "Manufacturer maximum; cleaning still depends on residue and settings.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Suction claim",
+        "value": "20,000 Pa",
+        "meaning": "Maximum+ mode under manufacturer test conditions.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "353 × 353 × 119 mm",
+        "meaning": "Check under-sofa access before comparing headline features.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Carpet protection",
+        "value": "15 mm roller lift plus shield",
+        "meaning": "Lift is not automatic roller detachment.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Edge-cleaning gap",
+        "value": "Less than 10 mm claim",
+        "meaning": "Manufacturer test; corners and furniture geometry vary.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Main brush",
+        "value": "DuoDivide",
+        "meaning": "Designed to reduce hair tangling; inspect the assembly regularly.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Side brushes",
+        "value": "Dual lifting Arc brushes",
+        "meaning": "Lift behavior depends on cleaning mode and surface.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Dirt adaptation",
+        "value": "DirTect AI",
+        "meaning": "Separates wet and dry cleaning responses; not a spill-safety guarantee.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Obstacle avoidance",
+        "value": "Reactive AI · RGB + structured light",
+        "meaning": "200+ categories; small or unusual objects may still be missed.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Dock dimensions",
+        "value": "450 × 450 × 450 mm",
+        "meaning": "Include tank access and approach clearance in the installation space.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Dock wash temperature",
+        "value": "Up to 75°C at heater output",
+        "meaning": "Not the water temperature applied to the floor.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Dock drying",
+        "value": "Up to 55°C at air outlet",
+        "meaning": "Time and ambient conditions affect the final roller dryness.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Smart-home support",
+        "value": "Matter described as an OTA update",
+        "meaning": "Do not assume the promised update is installed or available locally.",
+        "source": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 699.99",
+        "source": "https://us.roborock.com/products/roborock-qrevo-curv-2-flow",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Selected official-store offer on the verification date; recheck package, tax and availability."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock Qrevo Curv 2 Flow",
+          "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock Saros 20 Flow",
+          "url": "https://global.roborock.com/pages/roborock-saros-20-flow",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock Qrevo Edge 3 Pro",
+          "url": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mop format",
+          "values": [
+            "270 mm SpiraFlow 1.0 roller",
+            "270 mm SpiraFlow 2.0 roller",
+            "Dual rotating pads"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "119 mm",
+            "89.8 mm",
+            "79.8 mm"
+          ]
+        },
+        {
+          "label": "Roller water outlets",
+          "values": [
+            "8",
+            "16",
+            "Not a roller system"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "20,000 Pa",
+            "36,000 Pa",
+            "36,000 Pa"
+          ]
+        },
+        {
+          "label": "Carpet mop handling",
+          "values": [
+            "Shield and 15 mm lift",
+            "Shield and 15 mm lift",
+            "Detachment in supported modes"
+          ]
+        }
+      ],
+      "takeaway": "A taller roller model can be good value in an open-plan home but poor value if it misses the furniture you most want cleaned. Verify fit before ranking suction."
+    },
+    "resources": [
+      {
+        "label": "Global specification and footnotes",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "US official store and price",
+        "url": "https://us.roborock.com/products/roborock-qrevo-curv-2-flow",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 manufacturer announcement",
+        "url": "https://ces.vporoom.com/2026-01-12-CES-2026-Roborock-releases-the-worlds-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-Real-Madrid-Football-Club",
+        "note": "Official reference; check the exact regional model and current terms."
+      }
+    ]
+  },
+  "roborock-f25-ace-pro": {
+    "verdict": "Consider F25 ACE Pro when hands-on spill removal, foam application and powered steering solve a daily hard-floor cleaning need. Test carrying and servicing effort as well as floor movement.",
+    "notFor": "Unattended scheduled cleaning, general carpet shampooing, or a purchase based on an assumed boiling-water floor treatment.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided wet-and-dry washer",
+        "meaning": "Requires an operator; this is not a scheduled robot vacuum.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Foam system",
+        "value": "JetFoaming",
+        "meaning": "Requires the dedicated Foam Cleaning Solution.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Suction claim",
+        "value": "25,000 Pa",
+        "meaning": "Manufacturer test, not comparable with filter-free wet cleaners.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Downward pressure",
+        "value": "30 N",
+        "meaning": "Cleaning load differs from the weight felt while carrying the machine.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Brush speed",
+        "value": "430 RPM",
+        "meaning": "Manufacturer operating claim; not a cleaning-quality score.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Clean-water tank",
+        "value": "1,000 ml",
+        "meaning": "Refill frequency also depends on foam and water settings.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 60 minutes in Eco mode",
+        "meaning": "Intensive settings and real use can shorten runtime.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Recline and clearance",
+        "value": "180° lay-flat / 12.5 cm",
+        "meaning": "Check the full route beneath furniture, not just the opening.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Powered steering",
+        "value": "SlideTech 2.0 · dual powered wheels",
+        "meaning": "Assists pushing and pulling; does not remove carrying weight.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Steering angle",
+        "value": "70° combined swivel",
+        "meaning": "Roborock defines the combined rotation of the brush-head sides.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Hair management",
+        "value": "JawScrapers roller system",
+        "meaning": "Routine inspection still matters around the scraper and roller ends.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Edge-cleaning claim",
+        "value": "0 mm on three sides",
+        "meaning": "Internal dust test; real baseboards and corners vary.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Dirt sensing",
+        "value": "DirTect · automatic response",
+        "meaning": "Settings adapt to detected dirt; check remaining residue yourself.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Dock cleaning temperature",
+        "value": "95°C hot-air outlet over water",
+        "meaning": "Official footnote explicitly says this is not the water temperature.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Dock drying modes",
+        "value": "5-minute fast / 30-minute quiet",
+        "meaning": "Actual dryness depends on conditions and the selected cycle.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Dimensions",
+        "value": "265 × 250 × 1,100 mm",
+        "meaning": "With dock: 316 × 353 × 1,165 mm.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Regional retail",
+        "amount": "Not verified",
+        "source": "https://www.prnewswire.com/apac/news-releases/roborock-brings-its-ces-2026-headline-launches-to-australia-302727299.html",
+        "kind": "Price verification pending",
+        "date": "2026-09-10",
+        "note": "Australia launch confirmed; obtain a current local selling price and exact package."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock F25 ACE Pro",
+          "url": "https://global.roborock.com/pages/roborock-f25-ace-pro",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock F25 ACE",
+          "url": "https://global.roborock.com/pages/roborock-f25-series",
+          "market": "Global · earlier generation"
+        },
+        {
+          "name": "Dyson PencilWash",
+          "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning approach",
+          "values": [
+            "Wet-and-dry washer with JetFoaming",
+            "Wet-and-dry washer",
+            "Filter-free wet roller"
+          ]
+        },
+        {
+          "label": "Clean-water tank",
+          "values": [
+            "1,000 ml",
+            "740 ml",
+            "300 ml"
+          ]
+        },
+        {
+          "label": "Runtime claim",
+          "values": [
+            "Up to 60 min Eco",
+            "Up to 60 min Eco",
+            "Up to 30 min"
+          ]
+        },
+        {
+          "label": "Steering assistance",
+          "values": [
+            "SlideTech 2.0 powered wheels",
+            "SlideTech 2.0 powered wheels",
+            "Manually steered lightweight design"
+          ]
+        },
+        {
+          "label": "Roller drying",
+          "values": [
+            "Powered fast or quiet cycle",
+            "Powered dock drying",
+            "Manual care; air-dry at least 24 h"
+          ]
+        }
+      ],
+      "takeaway": "Compare refill frequency, handling and cleanup after use. A larger tank helps some homes but does not establish lower carrying effort or a better dried floor finish."
+    },
+    "resources": [
+      {
+        "label": "Global specifications and temperature footnotes",
+        "url": "https://global.roborock.com/pages/roborock-f25-ace-pro",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "Australia launch announcement",
+        "url": "https://www.prnewswire.com/apac/news-releases/roborock-brings-its-ces-2026-headline-launches-to-australia-302727299.html",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 introduction",
+        "url": "https://ces.vporoom.com/2026-01-12-CES-2026-Roborock-releases-the-worlds-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-Real-Madrid-Football-Club",
+        "note": "Official reference; check the exact regional model and current terms."
+      }
+    ]
+  },
+  "ecovacs-deebot-t90s-pro-omni": {
+    "verdict": "Follow T90S if you want the newer T90-family navigation and stain-detection package. Wait for the final regional specification before making a fit-dependent purchase.",
+    "notFor": "An urgent replacement purchase or a buyer who needs confirmed dimensions, runtime or bagless collection today.",
+    "specifications": [
+      {
+        "label": "Product status",
+        "value": "UK launch scheduled for 24 September 2026",
+        "meaning": "The announcement date is not the retail availability date.",
+        "source": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+      },
+      {
+        "label": "Suction claim",
+        "value": "40,000 Pa BLAST",
+        "meaning": "Manufacturer claim; no WCB pickup test is implied.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Mop format",
+        "value": "OZMO ROLLER 3.0",
+        "meaning": "Roller-based wet cleaning, rather than two rotating pads.",
+        "source": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+      },
+      {
+        "label": "Roller width",
+        "value": "27 cm · UK announcement",
+        "meaning": "Confirm the final regional specification.",
+        "source": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+      },
+      {
+        "label": "Roller speed",
+        "value": "Up to 200 RPM",
+        "meaning": "Maximum published rotation claim.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Water management",
+        "value": "Continuous fresh-water roller rinsing",
+        "meaning": "A scraper removes dirty water and debris during operation.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Edge system",
+        "value": "TruEdge 3.0",
+        "meaning": "Edge-following feature; not proof every corner is reached.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Navigation and avoidance",
+        "value": "AIVI 3D 4.0",
+        "meaning": "Distinct from the MAX model’s German dToF / TrueDetect listing.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Stain response",
+        "value": "AI stain detection 2.0",
+        "meaning": "Manufacturer describes adapting the cleaning strategy to stains.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Assistant",
+        "value": "Agent YIKO",
+        "meaning": "Language and regional feature availability require confirmation.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Hair management",
+        "value": "ZeroTangle 4.0",
+        "meaning": "An anti-tangle design, not a no-maintenance promise.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Dock care",
+        "value": "Automatic emptying, washing and drying",
+        "meaning": "Tank capacities and temperature details are not verified here.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Body and dock dimensions",
+        "value": "Not verified in the cited preview",
+        "meaning": "Do not borrow the T90 MAX dimensions.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Runtime and charging",
+        "value": "Not verified for the final regional package",
+        "meaning": "Wait for mode-specific runtime and charging documentation.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Threshold and carpet clearance",
+        "value": "Not verified in the cited preview",
+        "meaning": "Check the final manual against your doorways and rugs.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Bagless collection and FocusJet",
+        "value": "Not verified for this model",
+        "meaning": "Do not import X12S OmniCyclone features into a T90S listing.",
+        "source": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom · announced launch",
+        "amount": "GBP 699",
+        "source": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html",
+        "kind": "Manufacturer launch RRP",
+        "date": "2026-09-10",
+        "note": "Announced RRP with launch scheduled for 24 September 2026; not a live selling-price or stock claim."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS DEEBOT T90S PRO OMNI",
+          "url": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s",
+          "market": "Europe · preview"
+        },
+        {
+          "name": "ECOVACS DEEBOT T90 MAX PRO OMNI",
+          "url": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni",
+          "market": "Germany"
+        },
+        {
+          "name": "ECOVACS DEEBOT T90 PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Suction claim",
+          "values": [
+            "40,000 Pa",
+            "40,000 Pa",
+            "30,000 Pa"
+          ]
+        },
+        {
+          "label": "Roller width",
+          "values": [
+            "27 cm · UK announcement",
+            "27 cm",
+            "27 cm"
+          ]
+        },
+        {
+          "label": "Navigation evidence",
+          "values": [
+            "AIVI 3D 4.0 preview",
+            "dToF + TrueDetect 3D",
+            "Mini-ToF + structured light / RGB AI"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "Not verified in preview",
+            "95 mm",
+            "95 mm"
+          ]
+        },
+        {
+          "label": "Purchase evidence",
+          "values": [
+            "Future UK launch announced",
+            "German retail specification",
+            "US retail specification"
+          ]
+        }
+      ],
+      "takeaway": "The navigation package and verified physical fit matter more than the shared T90 name. Prices across these regions are not directly equivalent."
+    },
+    "resources": [
+      {
+        "label": "German official T90S preview",
+        "url": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "UK IFA launch date, price and roller specification",
+        "url": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · German T90 MAX",
+        "url": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni",
+        "note": "Official reference; check the exact regional model and current terms."
+      }
+    ]
+  },
+  "ecovacs-deebot-t90-max-pro-omni": {
+    "verdict": "Compare MAX as a specific regional roller-mop package with a concrete price and 95 mm body. Confirm the 20 mm doorway limit and sensor configuration before treating it as a T90 upgrade.",
+    "notFor": "Tall thresholds beyond the cited limit, a requirement for the T90S sensor package, or a buyer seeking bagless dust disposal.",
+    "specifications": [
+      {
+        "label": "Suction and airflow",
+        "value": "40,000 Pa / 16.45 L/s",
+        "meaning": "Manufacturer figures; not a standardized cross-brand result.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Roller",
+        "value": "OZMO ROLLER 3.0 · 27 cm",
+        "meaning": "Continuously rinsed roller system.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Roller action",
+        "value": "200 RPM / 3,800 Pa pressure claim",
+        "meaning": "Mopping pressure is different from vacuum suction pressure.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Water delivery",
+        "value": "32 water jets",
+        "meaning": "Delivery layout does not directly establish dried-floor quality.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Edge reach",
+        "value": "TruEdge 3.0 · 1.5 cm extension",
+        "meaning": "Check curved furniture and corners in a practical trial.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Mop lift",
+        "value": "15 mm",
+        "meaning": "Not a guarantee of clearance over every rug pile.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Navigation",
+        "value": "dToF LiDAR + TrueDetect 3D",
+        "meaning": "Do not substitute T90S AIVI 3D 4.0 specifications.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Hair management",
+        "value": "ZeroTangle 4.0",
+        "meaning": "Inspect the roller ends and side brush in normal maintenance.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "353 × 351 × 95 mm",
+        "meaning": "Allow a margin under furniture and around obstacles.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Threshold crossing",
+        "value": "20 mm",
+        "meaning": "German technical specification; shape and surface still matter.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Battery",
+        "value": "5,200 mAh",
+        "meaning": "Specific to the cited MAX listing.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Charging",
+        "value": "About 3.5 hours",
+        "meaning": "Actual recovery time depends on battery state and conditions.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Runtime listing",
+        "value": "257 minutes; mode not specified",
+        "meaning": "Do not treat this as a verified combined maximum-suction mopping runtime.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Dock wash and dry",
+        "value": "Up to 100°C wash / 45°C drying claims",
+        "meaning": "Dock-care temperatures do not describe treatment applied to the floor.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Station water tanks",
+        "value": "4 L clean / 2.2 L dirty",
+        "meaning": "Plan access for lifting and emptying tanks.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Dust collection",
+        "value": "2.5 L dock bag / 0.25 L onboard bin",
+        "meaning": "Bag replacement and filter care remain owner tasks.",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany",
+        "amount": "EUR 549",
+        "source": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Selected black-model listing on the verification date; recheck package, delivery and promotion terms."
+      },
+      {
+        "market": "United Kingdom · launch",
+        "amount": "GBP 549",
+        "source": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html",
+        "kind": "Manufacturer launch RRP",
+        "date": "2026-09-10",
+        "note": "Manufacturer launch RRP; availability announced for September 9, not independently confirmed stock."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS DEEBOT T90 MAX PRO OMNI",
+          "url": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni",
+          "market": "Germany"
+        },
+        {
+          "name": "ECOVACS DEEBOT T90S PRO OMNI",
+          "url": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s",
+          "market": "Europe · preview"
+        },
+        {
+          "name": "ECOVACS DEEBOT T90 PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Suction claim",
+          "values": [
+            "40,000 Pa",
+            "40,000 Pa",
+            "30,000 Pa"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "95 mm",
+            "Not verified in preview",
+            "95 mm"
+          ]
+        },
+        {
+          "label": "Navigation evidence",
+          "values": [
+            "dToF + TrueDetect 3D",
+            "AIVI 3D 4.0 preview",
+            "Mini-ToF + structured light / RGB AI"
+          ]
+        },
+        {
+          "label": "Threshold specification",
+          "values": [
+            "20 mm",
+            "Not verified in preview",
+            "24 mm single threshold"
+          ]
+        },
+        {
+          "label": "Battery specification",
+          "values": [
+            "5,200 mAh",
+            "Final regional package not verified",
+            "4,000 mAh"
+          ]
+        }
+      ],
+      "takeaway": "The full suffix and region change the comparison. Do not choose on the MAX name while borrowing the stronger specification from a different T90 listing."
+    },
+    "resources": [
+      {
+        "label": "German official store and complete technical table",
+        "url": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "UK IFA introduction and launch RRP",
+        "url": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · T90S preview",
+        "url": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s",
+        "note": "Official reference; check the exact regional model and current terms."
+      }
+    ]
+  },
+  "mova-diver-a10": {
+    "verdict": "A practical candidate for submerged pool cleaning when dry handling weight and price matter more than surface skimming. Verify pool compatibility and the exact filter package first.",
+    "notFor": "A replacement for a dedicated floating-debris skimmer, or a pool outside confirmed depth and water-condition limits.",
+    "specifications": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Floor, walls and waterline",
+        "meaning": "Surface skimming is not established for Diver A10.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Water-flow claim",
+        "value": "6,000 GPH",
+        "meaning": "Manufacturer flow figure, not a comparable debris-removal score.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 240 minutes",
+        "meaning": "Mode, pool shape and conditions affect actual duration.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Claimed pool area",
+        "value": "Up to 1,900 ft²",
+        "meaning": "Coverage claim does not guarantee completion in every complex pool.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Battery energy",
+        "value": "169 Wh",
+        "meaning": "Manufacturer remarks; do not confuse watt-hours with amp-hours.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Debris basket",
+        "value": "3.5 L",
+        "meaning": "Fine debris can restrict flow before the basket fills.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Dimensions",
+        "value": "16.7 × 15.2 × 9.2 in",
+        "meaning": "Check storage space and access to the filter compartment.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Dry weight",
+        "value": "19.8 lb",
+        "meaning": "Water retained during retrieval can add handling effort.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Brush arrangement",
+        "value": "Single scrubbing brush",
+        "meaning": "Dual waterline scrubbing wording does not mean two physical brushes.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Pump arrangement",
+        "value": "Single pump motor",
+        "meaning": "Do not borrow the larger Rover model’s drive system.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Waterline navigation",
+        "value": "EdgePulse AI tracking",
+        "meaning": "Manufacturer describes magnetic wheels and dual sensing.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Route planning",
+        "value": "PoolNavi adaptive cleaning",
+        "meaning": "Observe coverage around drains, steps and irregular corners.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "App",
+        "value": "MOVA HOME · eight modes advertised",
+        "meaning": "Underwater live-control range is not verified here.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Retrieval accessory",
+        "value": "Hook included in the listed package",
+        "meaning": "Automatic floating retrieval is not verified for A10.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Filter grade",
+        "value": "Not verified for every current package",
+        "meaning": "The listing advertises ultrafine filtration; confirm micron rating and whether it is a bundle gift.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Operating depth and water limits",
+        "value": "Not verified in this retail-source guide",
+        "meaning": "Obtain the regional manual for depth, chemistry, temperature and material compatibility.",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 519",
+        "source": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Official-store snapshot; gift filters and discounts must be confirmed for the selected order."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA Diver A10",
+          "url": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "MOVA Rover X10",
+          "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot Sora 70",
+          "url": "https://beatbot.com/products/sora-70",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Surface cleaning",
+          "values": [
+            "Not verified; floor / wall / waterline listed",
+            "Explicitly listed",
+            "Explicitly listed"
+          ]
+        },
+        {
+          "label": "Basket",
+          "values": [
+            "3.5 L",
+            "5 L",
+            "6 L"
+          ]
+        },
+        {
+          "label": "Dry weight",
+          "values": [
+            "19.8 lb",
+            "34.8 lb",
+            "23.1 lb"
+          ]
+        },
+        {
+          "label": "Water-flow claim",
+          "values": [
+            "6,000 GPH",
+            "10,000 GPH",
+            "6,800 GPH"
+          ]
+        },
+        {
+          "label": "Runtime wording",
+          "values": [
+            "Up to 4 h; mode matters",
+            "Up to 6 h floor / 12 h surface",
+            "Up to 5 h floor / 7 h surface"
+          ]
+        }
+      ],
+      "takeaway": "These are different task and size classes. Pay for surface cleaning only if you need it, and do not compare runtime figures without checking the cleaning mode."
+    },
+    "resources": [
+      {
+        "label": "US official specifications, package and price",
+        "url": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "MOVA CES 2026 introduction",
+        "url": "https://us.mova.tech/pages/ces-2026",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · MOVA Rover X10",
+        "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner",
+        "note": "Official reference; check the exact regional model and current terms."
+      }
+    ]
+  },
+  "eufy-omni-s2": {
+    "verdict": "Compare S2 for its wide roller, carpet-lift system and complete station routine. Treat the US retail date and price separately from the earlier preview and regional feature details.",
+    "notFor": "A purchase expecting included stair-climbing hardware, or a final decision based only on incomparable Pa and AW suction figures.",
+    "specifications": [
+      {
+        "label": "Mop system",
+        "value": "HydroJet 2.0 · 29 cm roller",
+        "meaning": "A continuously rinsed roller, rather than rotating mop pads.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Water delivery",
+        "value": "32 injection holes / two scrapers",
+        "meaning": "Manufacturer architecture; output quality needs a floor test.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Downward load",
+        "value": "1.5 kg claim",
+        "meaning": "This is a stated mopping load, not the robot’s carrying weight.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Suction claims",
+        "value": "30,000 Pa / 100 AW",
+        "meaning": "Different quantities; do not convert them into a universal ranking.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Carpet mop lift",
+        "value": "Up to 2.8 cm",
+        "meaning": "Check actual rug pile and transition geometry.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Carpet capability",
+        "value": "Up to 5 cm pile claim",
+        "meaning": "Manufacturer test limit, not a guarantee for every thick rug.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Roller edge extension",
+        "value": "1.5 cm",
+        "meaning": "Actual contact depends on furniture shape and approach.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Side-brush extension",
+        "value": "4.5 cm",
+        "meaning": "An extension measurement, not a guaranteed clean perimeter.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Navigation",
+        "value": "3D MatrixEye 2.0 · 3D ToF",
+        "meaning": "Verify the local hardware and app description.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Cleaning adaptation",
+        "value": "CleanMind",
+        "meaning": "Manufacturer describes object and mess recognition.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Threshold crossing",
+        "value": "3.5 cm single / 4.2 cm double-step claim",
+        "meaning": "Double-step geometry must not be read as one vertical rise.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Brush design",
+        "value": "DuoSpiral anti-tangle",
+        "meaning": "Brush ends and collected hair still need inspection.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Station",
+        "value": "12-in-1 UniClean Station",
+        "meaning": "Includes automated care; owners still service tanks and collection parts.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Dock wash and dry",
+        "value": "60°C wash / 55°C dry claims",
+        "meaning": "Dock-care figures do not specify the temperature on the floor.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Detergent and fragrance",
+        "value": "Automatic dosing; built-in fragrance feature",
+        "meaning": "Check included consumables and optional settings for your household.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Stair-climbing accessory",
+        "value": "Not verified as included with S2",
+        "meaning": "Do not assume the separate MarsWalker concept ships in this package.",
+        "source": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 1,599.99",
+        "source": "https://www.eufy.com/products/t2081111",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Outright product-price snapshot; subscription, financing, bundles and tax are separate terms."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "eufy Robot Vacuum Omni S2",
+          "url": "https://www.eufy.com/eu-en/robot-vacuum-s2",
+          "market": "EU feature reference"
+        },
+        {
+          "name": "Narwal Flow 2",
+          "url": "https://us.narwal.com/pages/flow-2-robot-vacuum-and-mop",
+          "market": "United States"
+        },
+        {
+          "name": "Roborock Saros 20 Flow",
+          "url": "https://global.roborock.com/pages/roborock-saros-20-flow",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mop geometry",
+          "values": [
+            "HydroJet 2.0 roller",
+            "FlowWash circulating track",
+            "SpiraFlow 2.0 roller"
+          ]
+        },
+        {
+          "label": "Mop width",
+          "values": [
+            "29 cm",
+            "26.6 cm",
+            "27 cm"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "30,000 Pa; also 100 AW",
+            "31,000 Pa",
+            "36,000 Pa"
+          ]
+        },
+        {
+          "label": "Water delivery",
+          "values": [
+            "32 injection holes",
+            "16 water nozzles",
+            "16 pressurized outlets"
+          ]
+        },
+        {
+          "label": "Carpet handling",
+          "values": [
+            "Up to 28 mm lift claim",
+            "Automatic lift; official numeric claims conflict",
+            "15 mm lift plus shield"
+          ]
+        }
+      ],
+      "takeaway": "Compare dried-floor results, rug transitions and routine servicing. Width and suction claims cannot establish a common cleaning score across these different systems."
+    },
+    "resources": [
+      {
+        "label": "US official retail listing and price",
+        "url": "https://www.eufy.com/products/t2081111",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "EU official feature specification",
+        "url": "https://www.eufy.com/eu-en/robot-vacuum-s2",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 US retail launch date",
+        "url": "https://www.prnewswire.com/apac/news-releases/anker-innovations-showcases-iconic-lineup-of-charging-smart-home-and-entertainment-devices-during-ces-2026-302653788.html",
+        "note": "Official reference; check the exact regional model and current terms."
+      }
+    ]
+  },
+  "narwal-flow-2": {
+    "verdict": "Compare Flow 2 if a low-profile track-mop system and the choice of station arrangement match your home. Resolve the official heat and lift discrepancies before a specification-dependent purchase.",
+    "notFor": "A decision requiring a guaranteed floor-contact temperature or exact rug clearance without further regional documentation.",
+    "specifications": [
+      {
+        "label": "Mop format",
+        "value": "FlowWash circulating track",
+        "meaning": "A belt-like cleaning surface, not a cylindrical roller.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Mop width",
+        "value": "26.6 cm",
+        "meaning": "Width alone does not establish corner coverage.",
+        "source": "https://us.narwal.com/pages/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Suction claim",
+        "value": "31,000 Pa",
+        "meaning": "Current product claim; earlier launch summaries can show different numbers.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Mop pressure",
+        "value": "Up to 12 N",
+        "meaning": "The retail table describes a 7–12 N range.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Water delivery",
+        "value": "16 nozzles",
+        "meaning": "Continuous refresh of the track cleaning surface.",
+        "source": "https://us.narwal.com/pages/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Battery",
+        "value": "7,000 mAh",
+        "meaning": "Capacity is not a mode-specific runtime guarantee.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Navigation cameras",
+        "value": "Dual 1080p cameras",
+        "meaning": "Object recognition does not guarantee every small hazard is detected.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Additional sensing",
+        "value": "LiDAR + side structured light",
+        "meaning": "Check the exact regional hardware and app features.",
+        "source": "https://us.narwal.com/pages/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "351.2 × 363.5 × 95 mm",
+        "meaning": "Allow a practical margin below furniture.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Tank-station dimensions",
+        "value": "450 × 360 × 530 mm",
+        "meaning": "Requires clearance to lift tanks and reach service parts.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Plumbed-station dimensions",
+        "value": "410 × 433 × 281 mm",
+        "meaning": "Optional configuration; not assumed included in the base price.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Edge reach",
+        "value": "5 mm gap claim",
+        "meaning": "Manufacturer test; furniture shape and approach affect results.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Carpet mechanism",
+        "value": "CarpetFocus pressure plate",
+        "meaning": "Assess your rug and cleaning settings in a practical trial.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Mop lift",
+        "value": "Not verified consistently: 10 mm / 12 mm wording",
+        "meaning": "Official sections differ; confirm the local manual before relying on a number.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Mopping and dock-wash temperatures",
+        "value": "Not verified consistently across official sections",
+        "meaning": "Published sections show different heat values and measurement descriptions.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Dock drying",
+        "value": "104°F / 40°C claim",
+        "meaning": "Drying is separate from washing and floor-contact temperature.",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · base listing",
+        "amount": "USD 1,299.99",
+        "source": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Dated base-price snapshot; confirm color, bundle, stock and whether the station is tank-based or plumbed."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Narwal Flow 2",
+          "url": "https://us.narwal.com/pages/flow-2-robot-vacuum-and-mop",
+          "market": "United States"
+        },
+        {
+          "name": "eufy Robot Vacuum Omni S2",
+          "url": "https://www.eufy.com/eu-en/robot-vacuum-s2",
+          "market": "EU feature reference"
+        },
+        {
+          "name": "Roborock Saros 20 Flow",
+          "url": "https://global.roborock.com/pages/roborock-saros-20-flow",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mop geometry",
+          "values": [
+            "Circulating track",
+            "HydroJet 2.0 roller",
+            "SpiraFlow 2.0 roller"
+          ]
+        },
+        {
+          "label": "Mop width",
+          "values": [
+            "26.6 cm",
+            "29 cm",
+            "27 cm"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "31,000 Pa",
+            "30,000 Pa; also 100 AW",
+            "36,000 Pa"
+          ]
+        },
+        {
+          "label": "Water delivery",
+          "values": [
+            "16 nozzles",
+            "32 injection holes",
+            "16 pressurized outlets"
+          ]
+        },
+        {
+          "label": "Carpet mop clearance",
+          "values": [
+            "Official 10 / 12 mm wording conflicts",
+            "Up to 28 mm lift claim",
+            "15 mm lift plus shield"
+          ]
+        }
+      ],
+      "takeaway": "Choose on floor finish, access and care routine. Track and roller widths are not a common performance score, and unresolved lift figures should remain visible."
+    },
+    "resources": [
+      {
+        "label": "US retail specifications, care FAQ and price",
+        "url": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "Official Flow 2 feature overview",
+        "url": "https://us.narwal.com/pages/flow-2-robot-vacuum-and-mop",
+        "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "April 2026 retail launch announcement",
+        "url": "https://www.prnewswire.com/news-releases/narwal-launches-flow-2-robot-vacuum-with-vision-language-modelvlm-and-upgraded-flowwash-mopping-system-302740026.html",
+        "note": "Official reference; check the exact regional model and current terms."
+      }
+    ]
   }
 }

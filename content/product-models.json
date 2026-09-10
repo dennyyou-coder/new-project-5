@@ -993,6 +993,8 @@
       "roborock-vs-ecovacs-robot-vacuums"
     ],
     "related": [
+      "ecovacs-deebot-t90s-pro-omni",
+      "ecovacs-deebot-t90-max-pro-omni",
       "ecovacs-deebot-x12-omnicyclone",
       "roborock-saros-20"
     ],
@@ -1199,6 +1201,7 @@
       "robotic-pool-cleaners-leaves-fine-debris"
     ],
     "related": [
+      "mova-diver-a10",
       "ecovacs-ultramarine-p1",
       "aiper-scuba-v3-ultra",
       "beatbot-aquasense-x"
@@ -1519,6 +1522,7 @@
       "robotic-pool-cleaners-leaves-fine-debris"
     ],
     "related": [
+      "mova-diver-a10",
       "roborock-rockaqua-p1",
       "beatbot-aquasense-x",
       "ecovacs-ultramarine-p1",
@@ -1941,7 +1945,9 @@
       "dyson-washg1-vs-tineco-floor-one",
       "dyson-hard-floor-washer-exposed"
     ],
-    "related": [],
+    "related": [
+      "roborock-f25-ace-pro"
+    ],
     "announced": "2026-02-19",
     "verifiedAt": "2026-09-06",
     "sources": [
@@ -2337,6 +2343,10 @@
       "roborock-vs-ecovacs-robot-vacuums"
     ],
     "related": [
+      "roborock-qrevo-curv-2-flow",
+      "roborock-qrevo-edge-3-pro",
+      "eufy-omni-s2",
+      "narwal-flow-2",
       "roborock-saros-20",
       "roborock-saros-20-sonic",
       "ecovacs-deebot-x12s-omnicyclone"
@@ -2477,5 +2487,789 @@
     "launchYear": 2026,
     "launchNote": "Named in ECOVACS’s September 4, 2026 IFA release; UK availability was announced for September 9. US store listing checked September 10.",
     "launchSource": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+  },
+  {
+    "slug": "roborock-qrevo-edge-3-pro",
+    "name": "Roborock Qrevo Edge 3 Pro",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Robot vacuums",
+    "market": "Global · IFA 2026 announcement",
+    "summary": "A slim rotating-mop robot with retractable navigation, detachable mops and an adaptive chassis. Regional price and delivery remain to be confirmed.",
+    "fit": "Mixed-floor homes where low furniture, carpet handling and awkward doorway transitions matter.",
+    "caution": "The 8.8 cm figure describes a specific two-step test, not a single vertical obstacle or a staircase.",
+    "facts": [
+      {
+        "label": "Mop mechanism",
+        "value": "Dual rotating mops",
+        "meaning": "A different format from Roborock Flow roller models."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "352 × 350 × 79.8 mm",
+        "meaning": "Allow clearance beyond the nominal body height."
+      },
+      {
+        "label": "Double-layer threshold",
+        "value": "4.5 + 4.3 cm, up to 8.8 cm combined",
+        "meaning": "The cited test requires a gap depth greater than 12 cm and no more than 14 cm."
+      },
+      {
+        "label": "Carpet mop handling",
+        "value": "Automatic mop detachment",
+        "meaning": "Applies to supported cleaning modes such as vacuuming carpets first."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Qrevo Edge 3 Pro a roller-mop robot?",
+        "answer": "No. It uses two rotating mops. Qrevo Curv 2 Flow and Saros 20 Flow use roller systems; a shared Roborock name does not make their mop hardware interchangeable."
+      },
+      {
+        "question": "Can it climb an 8.8 cm door sill?",
+        "answer": "Not as a general single-step guarantee. The claim combines 4.5 cm and 4.3 cm layers under specified spacing conditions. Measure each rise and the depth between them, then check the regional manual."
+      },
+      {
+        "question": "Will it fit below an 8 cm sofa?",
+        "answer": "The nominal height is 79.8 mm and the compressed-clearance claim is 79.5 mm. That leaves almost no margin under an 80 mm gap. Uneven floors, fabric sag and contact with furniture can prevent reliable access."
+      },
+      {
+        "question": "Does it leave the mops at the dock for carpet?",
+        "answer": "Automatic mop detachment is listed for supported modes. Configure the cleaning order in the app and confirm the robot actually drops the pads before relying on it for moisture-sensitive rugs."
+      },
+      {
+        "question": "Does the 100°C claim mean boiling water on the floor?",
+        "answer": "No. Roborock identifies the wash temperature at the dock heating module. Heat at a component is not the same as water temperature on the mop or floor."
+      },
+      {
+        "question": "What is the price?",
+        "answer": "A verified local selling price was not established from the global announcement page on September 10, 2026. This guide leaves price open instead of importing a quote for another Qrevo model."
+      },
+      {
+        "question": "Should I choose this or Saros 20 Flow?",
+        "answer": "Start with the cleaning system and physical fit: Edge 3 Pro offers rotating pads and detachment in a lower body; Saros 20 Flow offers continuous roller rinsing. A final value judgment also needs local prices and a practical floor test."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "roborock-qrevo-curv-2-flow",
+      "roborock-saros-20-flow"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "Global specifications and test footnotes",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      },
+      {
+        "label": "IFA 2026 introduction",
+        "url": "https://us.roborock.com/pages/ifa-2026"
+      },
+      {
+        "label": "Comparison · Qrevo Curv 2 Flow",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "Comparison · Saros 20 Flow",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      }
+    ],
+    "imageSource": "https://global.roborock.com/cdn/shop/files/Vida_F_ID.png?v=1783309431",
+    "launchYear": 2026,
+    "launchNote": "Introduced in Roborock’s IFA 2026 lineup; local selling price remains unverified.",
+    "launchSource": "https://us.roborock.com/pages/ifa-2026"
+  },
+  {
+    "slug": "roborock-qrevo-curv-2-flow",
+    "name": "Roborock Qrevo Curv 2 Flow",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Robot vacuums",
+    "market": "United States · global specifications",
+    "summary": "A 2026 SpiraFlow roller-mop model with a 270 mm cleaning roller, automatic dock care and a dated US price reference. Its 119 mm height deserves an early fit check.",
+    "fit": "Hard-floor households considering a self-rinsing roller at a lower verified purchase price than many flagship launch listings.",
+    "caution": "The Flow suffix changes the mop system; do not assume this model inherits another Curv model’s chassis or clearance.",
+    "facts": [
+      {
+        "label": "Mop system",
+        "value": "SpiraFlow 1.0 · 270 mm roller",
+        "meaning": "Continuously rinses the roller during mopping."
+      },
+      {
+        "label": "Suction claim",
+        "value": "20,000 Pa",
+        "meaning": "Maximum+ mode under manufacturer test conditions."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "353 × 353 × 119 mm",
+        "meaning": "Check under-sofa access before comparing headline features."
+      },
+      {
+        "label": "Carpet protection",
+        "value": "15 mm roller lift plus shield",
+        "meaning": "Lift is not automatic roller detachment."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Curv 2 Flow different from the ordinary Qrevo Curv?",
+        "answer": "Yes. This guide covers the SpiraFlow roller model specifically. Family names do not prove identical mops, body height, chassis movement or accessories."
+      },
+      {
+        "question": "How much does it cost in the US?",
+        "answer": "The official US listing showed USD 699.99 on September 10, 2026. This is a dated selling-price snapshot, not a permanent RRP or a promise about future promotions, tax or stock."
+      },
+      {
+        "question": "Will it fit under a 10 cm sofa?",
+        "answer": "Its published height is 119 mm, so a 100 mm opening is too low on the stated dimensions. Check a lower-profile model if that area is important."
+      },
+      {
+        "question": "Does the roller stay wet on carpet?",
+        "answer": "Roborock lists a shield and 15 mm lift for carpet protection. Those features do not prove clearance above every thick rug. Test transitions and use suitable carpet settings."
+      },
+      {
+        "question": "How does it compare with Saros 20 Flow?",
+        "answer": "Saros 20 Flow lists a lower 89.8 mm body, SpiraFlow 2.0 with 16 outlets and a different chassis. Curv 2 Flow lists SpiraFlow 1.0 with eight hydration points and 119 mm height. Compare actual fit and prices rather than the shared Flow suffix."
+      },
+      {
+        "question": "Is Matter ready to use?",
+        "answer": "The cited global page describes Matter as an OTA update. This guide does not verify firmware rollout for every market; confirm the app version and supported integration before making it a purchase requirement."
+      },
+      {
+        "question": "Does the dock remove manual maintenance?",
+        "answer": "No. Owners still empty wastewater, refill clean water and care for the roller, filters and brushes. Automatic washing and drying are parts of that routine, not a replacement for it."
+      }
+    ],
+    "articles": [
+      "roborock-vs-dreame-robot-vacuums",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "roborock-saros-20-flow",
+      "roborock-qrevo-edge-3-pro"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "Global specification and footnotes",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "US official store and price",
+        "url": "https://us.roborock.com/products/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "CES 2026 manufacturer announcement",
+        "url": "https://ces.vporoom.com/2026-01-12-CES-2026-Roborock-releases-the-worlds-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-Real-Madrid-Football-Club"
+      },
+      {
+        "label": "Comparison · Saros 20 Flow",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Comparison · Edge 3 Pro",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-edge-3-pro"
+      }
+    ],
+    "imageSource": "https://us.roborock.com/cdn/shop/files/Beryllite2_1200x1200.png?v=1767426020",
+    "launchYear": 2026,
+    "launchNote": "Presented in Roborock’s CES 2026 product lineup; US retail listing verified.",
+    "launchSource": "https://ces.vporoom.com/2026-01-12-CES-2026-Roborock-releases-the-worlds-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-Real-Madrid-Football-Club"
+  },
+  {
+    "slug": "roborock-f25-ace-pro",
+    "name": "Roborock F25 ACE Pro",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Floor washers",
+    "market": "Global specifications · Australia launch confirmed",
+    "summary": "A manually guided wet-and-dry floor washer with JetFoaming, powered steering and a 1 L clean-water tank. App control does not turn it into an autonomous robot.",
+    "fit": "Households that want direct control over kitchen spills, sticky hard-floor residue and cleaning under furniture.",
+    "caution": "JetFoaming uses a dedicated solution. The 95°C cleaning headline refers to a hot-air measurement, not verified 95°C water on the floor.",
+    "facts": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided wet-and-dry washer",
+        "meaning": "Requires an operator; this is not a scheduled robot vacuum."
+      },
+      {
+        "label": "Foam system",
+        "value": "JetFoaming",
+        "meaning": "Requires the dedicated Foam Cleaning Solution."
+      },
+      {
+        "label": "Clean-water tank",
+        "value": "1,000 ml",
+        "meaning": "Refill frequency also depends on foam and water settings."
+      },
+      {
+        "label": "Recline and clearance",
+        "value": "180° lay-flat / 12.5 cm",
+        "meaning": "Check the full route beneath furniture, not just the opening."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is F25 ACE Pro a robot vacuum?",
+        "answer": "No. It is a floor washer that you guide by hand. Powered wheels, an app and remote control do not establish autonomous room cleaning or scheduling."
+      },
+      {
+        "question": "What changes from F25 ACE?",
+        "answer": "The Pro adds JetFoaming and lists a 1,000 ml clean-water tank and 25,000 Pa suction. The earlier F25 ACE specification lists 740 ml and the series’ 20,000 Pa claim. Compare the exact local package and handling, not just the suffix."
+      },
+      {
+        "question": "Can I use ordinary detergent for the foam feature?",
+        "answer": "The official page calls for the dedicated Foam Cleaning Solution. Follow the supplied instructions for each reservoir; automatic detergent dosing is not permission to substitute an arbitrary household cleaner."
+      },
+      {
+        "question": "Does it clean with 95°C water?",
+        "answer": "That is not established by the cited footnote. Roborock says the 95°C figure is the hot-air outlet blowing over the water, rather than the water itself. This guide preserves that distinction."
+      },
+      {
+        "question": "How does remote control work?",
+        "answer": "The official footnote limits remote control to the machine laid flat at 180°, with an app connection. It is an assisted under-furniture function, not a robot-navigation feature."
+      },
+      {
+        "question": "Is it easier to handle than Dyson PencilWash?",
+        "answer": "Powered steering can reduce effort while moving on the floor, while PencilWash emphasizes a lighter machine. Carrying, turning and tank emptying are different tasks; compare all three in person. WCB has not conducted a handling test."
+      },
+      {
+        "question": "What price should I expect?",
+        "answer": "The Australian launch is documented, but a current regional selling price was not verified for this guide. Ask for a dated local offer with the exact Pro model, foam solution and warranty terms."
+      }
+    ],
+    "articles": [
+      "roborock-vs-dreame-global-strategies"
+    ],
+    "related": [
+      "dyson-pencilwash"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "Global specifications and temperature footnotes",
+        "url": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Australia launch announcement",
+        "url": "https://www.prnewswire.com/apac/news-releases/roborock-brings-its-ces-2026-headline-launches-to-australia-302727299.html"
+      },
+      {
+        "label": "CES 2026 introduction",
+        "url": "https://ces.vporoom.com/2026-01-12-CES-2026-Roborock-releases-the-worlds-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-Real-Madrid-Football-Club"
+      },
+      {
+        "label": "Comparison · earlier F25 ACE",
+        "url": "https://global.roborock.com/pages/roborock-f25-series"
+      },
+      {
+        "label": "Comparison · Dyson PencilWash",
+        "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "PencilWash maintenance instructions",
+        "url": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/floor-cleaners/wet/pencilwash/637217-01.pdf"
+      }
+    ],
+    "imageSource": "https://global.roborock.com/cdn/shop/files/Roborock_F25_ACE_Pro_ID.png?v=1768207401",
+    "launchYear": 2026,
+    "launchNote": "Shown at CES 2026, with the Australian retail introduction documented in March 2026.",
+    "launchSource": "https://ces.vporoom.com/2026-01-12-CES-2026-Roborock-releases-the-worlds-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-Real-Madrid-Football-Club"
+  },
+  {
+    "slug": "ecovacs-deebot-t90s-pro-omni",
+    "name": "ECOVACS DEEBOT T90S PRO OMNI",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Robot vacuums",
+    "market": "Europe · preview; UK launch scheduled",
+    "summary": "An IFA 2026 T90-family update with roller mopping, AIVI 3D 4.0 and stain detection. UK launch is scheduled for September 24; this guide keeps incomplete specifications visible.",
+    "fit": "Buyers comparing a forthcoming roller-mop robot who can wait for the regional manual and final retail package.",
+    "caution": "T90S PRO OMNI, T90 MAX PRO OMNI and X12S OmniCyclone are different models. Do not transfer bagless-dock or other flagship features between them.",
+    "facts": [
+      {
+        "label": "Product status",
+        "value": "UK launch scheduled for 24 September 2026",
+        "meaning": "The announcement date is not the retail availability date."
+      },
+      {
+        "label": "Suction claim",
+        "value": "40,000 Pa BLAST",
+        "meaning": "Manufacturer claim; no WCB pickup test is implied."
+      },
+      {
+        "label": "Mop format",
+        "value": "OZMO ROLLER 3.0",
+        "meaning": "Roller-based wet cleaning, rather than two rotating pads."
+      },
+      {
+        "label": "Navigation and avoidance",
+        "value": "AIVI 3D 4.0",
+        "meaning": "Distinct from the MAX model’s German dToF / TrueDetect listing."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When does T90S PRO OMNI launch?",
+        "answer": "ECOVACS’ UK IFA announcement schedules September 24, 2026 at GBP 699 RRP. On this guide’s September 10 verification date, that is a future launch rather than confirmed retail availability."
+      },
+      {
+        "question": "What is different from T90 MAX PRO OMNI?",
+        "answer": "The T90S preview names AIVI 3D 4.0 and AI stain detection 2.0. The German T90 MAX specification lists dToF and TrueDetect 3D. They share some roller and suction headlines but should not be treated as the same robot."
+      },
+      {
+        "question": "Is this the bagless X12S OmniCyclone?",
+        "answer": "No. T90S PRO OMNI is a separate model. Bagless collection and the X12S feature set are not established by the cited T90S preview."
+      },
+      {
+        "question": "Does it have a 27 cm roller?",
+        "answer": "The manufacturer’s UK IFA announcement identifies the 27 cm OZMO ROLLER 3.0 system. Verify the final regional package when the full manual and retail specification are available."
+      },
+      {
+        "question": "How tall is the robot?",
+        "answer": "A reliable T90S dimension was not established in the cited preview. The 95 mm figure published for T90 MAX should not be transferred to T90S simply because the family names are similar."
+      },
+      {
+        "question": "Does AI stain detection remove every stain automatically?",
+        "answer": "That is not established. ECOVACS describes adapting cleaning to detected stains; effectiveness still depends on the residue, surface and settings. This page is a manufacturer-source guide, not a hands-on performance review."
+      },
+      {
+        "question": "Should I wait for T90S?",
+        "answer": "Wait if its advertised navigation and stain response are central to your needs and you do not need an immediate replacement. Before ordering, confirm dimensions, carpet handling, consumables, local stock and return terms."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "ecovacs-deebot-t90-max-pro-omni",
+      "ecovacs-deebot-t90-pro-omni"
+    ],
+    "announced": "2026-09-04",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "German official T90S preview",
+        "url": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "UK IFA launch date, price and roller specification",
+        "url": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+      },
+      {
+        "label": "Comparison · German T90 MAX",
+        "url": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "Comparison · US T90 PRO",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/image/config/2026/08/31/134525_1155$section-1.jpg",
+    "launchYear": 2026,
+    "launchNote": "Announced at IFA 2026; UK retail launch scheduled for September 24, 2026.",
+    "launchSource": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+  },
+  {
+    "slug": "ecovacs-deebot-t90-max-pro-omni",
+    "name": "ECOVACS DEEBOT T90 MAX PRO OMNI",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Robot vacuums",
+    "market": "Germany · official retail specification",
+    "summary": "A 95 mm T90-family roller robot with 40,000 Pa claimed suction, dToF navigation and a dated EUR 549 German offer. Its navigation and battery differ from other T90 variants.",
+    "fit": "Buyers seeking a documented roller-and-dock package who can check its 20 mm threshold limit against their home.",
+    "caution": "Use the MAX specification: this German listing names TrueDetect 3D, a 5,200 mAh battery and 20 mm obstacle crossing, not the specifications of T90S or the US T90 PRO.",
+    "facts": [
+      {
+        "label": "Suction and airflow",
+        "value": "40,000 Pa / 16.45 L/s",
+        "meaning": "Manufacturer figures; not a standardized cross-brand result."
+      },
+      {
+        "label": "Roller",
+        "value": "OZMO ROLLER 3.0 · 27 cm",
+        "meaning": "Continuously rinsed roller system."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "353 × 351 × 95 mm",
+        "meaning": "Allow a margin under furniture and around obstacles."
+      },
+      {
+        "label": "Threshold crossing",
+        "value": "20 mm",
+        "meaning": "German technical specification; shape and surface still matter."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What does T90 MAX PRO OMNI cost?",
+        "answer": "The German official store showed EUR 549 on September 10, 2026. The UK launch announcement separately quoted GBP 549 RRP. They are different regional references, not interchangeable prices."
+      },
+      {
+        "question": "Does it have AIVI 3D 4.0?",
+        "answer": "The cited German MAX specification names dToF and TrueDetect 3D. AIVI 3D 4.0 is named in the T90S preview; do not assume the same sensor package for MAX."
+      },
+      {
+        "question": "Can it cross a 4 cm threshold?",
+        "answer": "The German technical specification lists 20 mm obstacle crossing. This guide does not claim 40 mm capability for MAX. Measure the doorway and check the regional manual before ordering."
+      },
+      {
+        "question": "Is the battery the same as T90 PRO OMNI?",
+        "answer": "The German MAX listing gives 5,200 mAh, while the cited US T90 PRO specification gives 4,000 mAh. Battery capacity alone does not prove longer usable cleaning under the same settings."
+      },
+      {
+        "question": "Will it clean for 257 minutes with vacuuming and mopping?",
+        "answer": "The listing provides 257 minutes without a clear mode in the extracted specification. That does not establish continuous combined cleaning at maximum power. Confirm mode-specific runtime for a large home."
+      },
+      {
+        "question": "Does it use dust bags?",
+        "answer": "Yes. The German specification lists a 2.5 L station dust bag. MAX PRO OMNI should not be presented as an OmniCyclone bagless station."
+      },
+      {
+        "question": "Should I wait for T90S instead?",
+        "answer": "Compare the navigation package, verified physical fit and local offer. T90S was scheduled for a later UK launch at the time checked, with some practical specifications still incomplete. Waiting is useful only if those changes solve a specific need."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "ecovacs-deebot-t90s-pro-omni",
+      "ecovacs-deebot-t90-pro-omni"
+    ],
+    "announced": "2026-09-04",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "German official store and complete technical table",
+        "url": "https://www.ecovacs.com/de/shop/deebot-robotic-vacuum-cleaner/deebot-t90-max-pro-omni"
+      },
+      {
+        "label": "UK IFA introduction and launch RRP",
+        "url": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+      },
+      {
+        "label": "Comparison · T90S preview",
+        "url": "https://www.ecovacs.com/de/deebot-robotic-vacuum-cleaner/deebot-t90s"
+      },
+      {
+        "label": "Comparison · US T90 PRO",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/de/image/product/2026/09/07/053046_8798$t90-max-pro-omni-black-920x920-6.png",
+    "launchYear": 2026,
+    "launchNote": "Introduced in the IFA 2026 T90 lineup; German retail specification verified and UK launch announced for September 9.",
+    "launchSource": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+  },
+  {
+    "slug": "mova-diver-a10",
+    "name": "MOVA Diver A10",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Pool robots",
+    "market": "United States · official retail listing",
+    "summary": "A cordless pool robot for floors, walls and the waterline, with a 3.5 L basket and an up-to-four-hour runtime claim. It is not a dedicated surface skimmer.",
+    "fit": "Pool owners seeking a smaller and lighter alternative to MOVA Rover X10 for regular submerged debris collection.",
+    "caution": "Check filter inclusion, supported pool conditions and retrieval instructions. Waterline scrubbing does not establish floating-leaf collection.",
+    "facts": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Floor, walls and waterline",
+        "meaning": "Surface skimming is not established for Diver A10."
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 240 minutes",
+        "meaning": "Mode, pool shape and conditions affect actual duration."
+      },
+      {
+        "label": "Debris basket",
+        "value": "3.5 L",
+        "meaning": "Fine debris can restrict flow before the basket fills."
+      },
+      {
+        "label": "Dry weight",
+        "value": "19.8 lb",
+        "meaning": "Water retained during retrieval can add handling effort."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does Diver A10 skim floating leaves?",
+        "answer": "The cited product coverage is floor, wall and waterline cleaning. Scrubbing the waterline is different from collecting debris floating across the pool surface. Consider an explicit surface-cleaning model if that is your main problem."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "The US official listing showed USD 519 on September 10, 2026, alongside a higher comparison price. The amount is a dated store snapshot; verify the final package, tax and current promotion before ordering."
+      },
+      {
+        "question": "Is it lighter than Rover X10?",
+        "answer": "The published dry weights are 19.8 lb for Diver A10 and 34.8 lb for Rover X10. That is a useful handling difference, but retained water, coping height and your lifting position also affect retrieval."
+      },
+      {
+        "question": "Does it run for four hours in every mode?",
+        "answer": "No such guarantee is established. The listing says up to 240 minutes. Wall climbing, debris load and route complexity can change the usable duration; verify the mode relevant to your pool."
+      },
+      {
+        "question": "Is a 3 micron filter included?",
+        "answer": "Do not assume that from a promotional gift image. Confirm the exact filter grade and included parts for the order you are placing. An ultrafine description alone does not identify a micron rating."
+      },
+      {
+        "question": "Does it come to the surface by itself?",
+        "answer": "Automatic floating retrieval is not verified in the cited A10 listing. A retrieval hook is included. Follow the model-specific retrieval instructions rather than assuming Rover X10 features apply."
+      },
+      {
+        "question": "Which alternative should I compare?",
+        "answer": "Compare MOVA Rover X10 or Beatbot Sora 70 if you need explicitly listed surface cleaning or a larger debris basket. If submerged routine cleaning is enough, compare A10’s complete local price and handling instead of paying for unused functions."
+      }
+    ],
+    "articles": [
+      "roborock-rockaqua-p1-pool-robot"
+    ],
+    "related": [
+      "mova-rover-x10",
+      "beatbot-sora-70"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "US official specifications, package and price",
+        "url": "https://us.mova.tech/products/diver-a10-robotic-pool-cleaner"
+      },
+      {
+        "label": "MOVA CES 2026 introduction",
+        "url": "https://us.mova.tech/pages/ces-2026"
+      },
+      {
+        "label": "Comparison · MOVA Rover X10",
+        "url": "https://us.mova.tech/products/mova-rover-x10-robotic-pool-cleaner"
+      },
+      {
+        "label": "Comparison · Beatbot Sora 70",
+        "url": "https://beatbot.com/products/sora-70"
+      }
+    ],
+    "imageSource": "https://us.mova.tech/cdn/shop/files/1-_-_2.0.jpg?v=1776068360",
+    "launchYear": 2026,
+    "launchNote": "Introduced in MOVA’s CES 2026 pool-cleaning lineup; US retail listing verified.",
+    "launchSource": "https://us.mova.tech/pages/ces-2026"
+  },
+  {
+    "slug": "eufy-omni-s2",
+    "name": "eufy Robot Vacuum Omni S2",
+    "brand": "eufy",
+    "brandSlug": "eufy",
+    "category": "Robot vacuums",
+    "market": "US retail · EU feature reference",
+    "summary": "A HydroJet 2.0 roller robot with a 29 cm mop, a high-lift carpet system and an automated UniClean station. Previewed in 2025, it entered the US retail rollout in January 2026.",
+    "fit": "Mixed hard-floor and carpet homes comparing a wide self-rinsing roller with automatic dock care.",
+    "caution": "The 2026 label refers to the US retail launch, not first announcement. MarsWalker stair-climbing hardware is not established as part of this S2 purchase.",
+    "facts": [
+      {
+        "label": "Mop system",
+        "value": "HydroJet 2.0 · 29 cm roller",
+        "meaning": "A continuously rinsed roller, rather than rotating mop pads."
+      },
+      {
+        "label": "Suction claims",
+        "value": "30,000 Pa / 100 AW",
+        "meaning": "Different quantities; do not convert them into a universal ranking."
+      },
+      {
+        "label": "Carpet mop lift",
+        "value": "Up to 2.8 cm",
+        "meaning": "Check actual rug pile and transition geometry."
+      },
+      {
+        "label": "Station",
+        "value": "12-in-1 UniClean Station",
+        "meaning": "Includes automated care; owners still service tanks and collection parts."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Omni S2 a new 2026 product?",
+        "answer": "Its US retail launch is a 2026 event: Anker’s CES release lists full retail on January 20, 2026. The product had already been previewed at IFA 2025. This directory uses the documented US launch and does not call 2026 its first announcement."
+      },
+      {
+        "question": "What is the US price?",
+        "answer": "The official S2 listing showed USD 1,599.99 on September 10, 2026. A separate monthly subscription or financing amount should not be confused with the outright purchase price."
+      },
+      {
+        "question": "Can Omni S2 climb stairs?",
+        "answer": "A normal S2 purchase does not establish stair-climbing capability. MarsWalker is separate hardware shown in earlier announcements; inclusion, availability and compatibility must be verified independently."
+      },
+      {
+        "question": "How does HydroJet 2.0 differ from Narwal Flow 2?",
+        "answer": "S2 uses a cylindrical roller system, while Narwal Flow 2 uses a circulating track mop. Both refresh the cleaning surface, but their geometry, consumables and care routine differ. A shared self-cleaning description does not make the parts equivalent."
+      },
+      {
+        "question": "Does a 2.8 cm lift protect every carpet?",
+        "answer": "No universal result is established. Rug pile, fringes and curled edges can still interfere with movement or mop clearance. Test the normal transition route and use the appropriate carpet settings."
+      },
+      {
+        "question": "Is 100 AW the same as 30,000 Pa?",
+        "answer": "No. Air watts and pressure describe different quantities. The two manufacturer claims cannot be used interchangeably or compared directly with every competitor’s suction headline."
+      },
+      {
+        "question": "What should I verify before purchase?",
+        "answer": "Confirm the exact regional S2 model, station fit, consumable package, desired app functions and local service. Check whether you want fragrance enabled, and do not assume a product photo establishes every accessory in the box."
+      }
+    ],
+    "articles": [
+      "who-owns-eufy-anker-smart-home"
+    ],
+    "related": [
+      "narwal-flow-2",
+      "roborock-saros-20-flow"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "US official retail listing and price",
+        "url": "https://www.eufy.com/products/t2081111"
+      },
+      {
+        "label": "EU official feature specification",
+        "url": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "CES 2026 US retail launch date",
+        "url": "https://www.prnewswire.com/apac/news-releases/anker-innovations-showcases-iconic-lineup-of-charging-smart-home-and-entertainment-devices-during-ces-2026-302653788.html"
+      },
+      {
+        "label": "IFA 2025 first preview context",
+        "url": "https://www.prnewswire.com/apac/news-releases/anker-innovation-unveils-next-generation-products-powered-by-advanced-ai-robotics-and-ultimate-innovation-302559144.html"
+      },
+      {
+        "label": "Comparison · Narwal Flow 2",
+        "url": "https://us.narwal.com/pages/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Comparison · Saros 20 Flow",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0504/7094/4954/files/Frame_2121236208_a0039c44-50f0-4b91-8038-752a81edf652.png?v=1788423675",
+    "launchYear": 2026,
+    "launchNote": "US full retail launch announced for January 20, 2026; first previewed at IFA 2025.",
+    "launchSource": "https://www.prnewswire.com/apac/news-releases/anker-innovations-showcases-iconic-lineup-of-charging-smart-home-and-entertainment-devices-during-ces-2026-302653788.html"
+  },
+  {
+    "slug": "narwal-flow-2",
+    "name": "Narwal Flow 2",
+    "brand": "Narwal",
+    "brandSlug": "narwal",
+    "category": "Robot vacuums",
+    "market": "United States · official product and retail sources",
+    "summary": "A 2026 FlowWash track-mop robot with a 95 mm body, dual-camera navigation and a tank or optional plumbed station arrangement. Conflicting official temperature figures are clearly flagged.",
+    "fit": "Hard-floor households comparing a circulating track mop with cylindrical rollers, especially where low furniture and dock servicing matter.",
+    "caution": "Official page sections disagree on some temperatures and mop-lift numbers. Confirm the regional manual instead of treating the highest displayed figure as universal.",
+    "facts": [
+      {
+        "label": "Mop format",
+        "value": "FlowWash circulating track",
+        "meaning": "A belt-like cleaning surface, not a cylindrical roller."
+      },
+      {
+        "label": "Suction claim",
+        "value": "31,000 Pa",
+        "meaning": "Current product claim; earlier launch summaries can show different numbers."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "351.2 × 363.5 × 95 mm",
+        "meaning": "Allow a practical margin below furniture."
+      },
+      {
+        "label": "Tank-station dimensions",
+        "value": "450 × 360 × 530 mm",
+        "meaning": "Requires clearance to lift tanks and reach service parts."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did Narwal Flow 2 launch?",
+        "answer": "Narwal previewed Flow 2 at CES 2026 and issued its retail-launch announcement on April 13, 2026. The later white colorway is part of the same model family, not automatically a new performance generation."
+      },
+      {
+        "question": "What is the current US price?",
+        "answer": "The official base listing showed USD 1,299.99 on September 10, 2026. Recheck the selected color, bundle, station configuration, stock and final checkout amount; this is a dated snapshot."
+      },
+      {
+        "question": "Is FlowWash a roller mop?",
+        "answer": "It uses a circulating track or belt-like mop surface. Cylindrical roller models such as eufy S2 and Saros 20 Flow use a different geometry. The distinction affects contact area, replacement parts and maintenance."
+      },
+      {
+        "question": "Does it mop with 60°C water and wash at 100°C?",
+        "answer": "Those values appear in some official sections, while other specification sections show lower figures. The material is not consistent enough to present one universal temperature here. Confirm the current regional manual and measurement point."
+      },
+      {
+        "question": "How high does the mop lift?",
+        "answer": "Official sections include 12 mm and approximately 0.4 inch, which is about 10 mm. This guide flags that disagreement instead of choosing the larger number. Verify the final specification if rug clearance is critical."
+      },
+      {
+        "question": "Is the plumbing station included?",
+        "answer": "Do not assume so. Narwal lists a separate compact plumbed arrangement alongside the tank station. Confirm the exact bundle, installation requirements and local support before comparing prices."
+      },
+      {
+        "question": "How often do the cleaning parts need replacing?",
+        "answer": "Narwal’s retail FAQ suggests track-mop replacement every 1–3 months, side brushes around three months, the main brush around six months and the base filter around three months. Treat these as usage-dependent guidance and follow the current manual and app reminders."
+      }
+    ],
+    "articles": [
+      "roborock-vs-narwal-robot-vacuums",
+      "narwal-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "eufy-omni-s2",
+      "roborock-saros-20-flow"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "US retail specifications, care FAQ and price",
+        "url": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "Official Flow 2 feature overview",
+        "url": "https://us.narwal.com/pages/flow-2-robot-vacuum-and-mop"
+      },
+      {
+        "label": "April 2026 retail launch announcement",
+        "url": "https://www.prnewswire.com/news-releases/narwal-launches-flow-2-robot-vacuum-with-vision-language-modelvlm-and-upgraded-flowwash-mopping-system-302740026.html"
+      },
+      {
+        "label": "CES 2026 first preview",
+        "url": "https://www.prnewswire.com/news-releases/narwal-unveils-next-generation-smart-cleaning-lineup-at-ces-2026-headlined-by-flagship-flow-2-robot-vacuum-302652813.html"
+      },
+      {
+        "label": "Comparison · eufy S2",
+        "url": "https://www.eufy.com/eu-en/robot-vacuum-s2"
+      },
+      {
+        "label": "Comparison · Saros 20 Flow",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      }
+    ],
+    "imageSource": "https://us.narwal.com/cdn/shop/files/HomePage_Product_Card_X30_white.png?v=1787635644",
+    "launchYear": 2026,
+    "launchNote": "Previewed at CES 2026; official retail launch announced on April 13, 2026.",
+    "launchSource": "https://www.prnewswire.com/news-releases/narwal-launches-flow-2-robot-vacuum-with-vision-language-modelvlm-and-upgraded-flowwash-mopping-system-302740026.html"
   }
 ]
