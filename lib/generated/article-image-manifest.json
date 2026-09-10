@@ -1582,6 +1582,17 @@
         "outputHash": "sha256:695c0fd46c6309f939bceedbe9149471a1a79f62131b369e72470c5d793d5072"
       }
     },
+    "/images/articles/ecovacs-deebot-t90-max-pro-omni/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 920,
+      "height": 920,
+      "bytes": 52294,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7a482e3da68ae8088f4cdd84b80b55c448c0434cfbc801c5fd9983bb81d2faac",
+      "outputHash": "sha256:9f63e82056b711a270d095516fb1588d66a201cb1c43411b237c18cbac95bd24"
+    },
     "/images/articles/ecovacs-deebot-t90-pro-omni/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -1592,6 +1603,24 @@
       "quality": 90,
       "sourceHash": "sha256:0b4bdc6b7fb8e0a4d8fc99e582af8bdc01186a52865cce9de2f6740051cca1c9",
       "outputHash": "sha256:4b42b8dd6b704b1085ef15640e29a21784430ba73ae20ef347b7f3fd57a92522"
+    },
+    "/images/articles/ecovacs-deebot-t90s-pro-omni/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 758,
+      "bytes": 29268,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:23ec1caefa006714a00663555379bab80d9bf4da7ffa1cd36aec5407130135f8",
+      "outputHash": "sha256:366d323bc4ba4dd40a2b4c433f6a0fecd6070aff8a4e20d45ee0a6f4a0d5ee33",
+      "mobile": {
+        "src": "/images/articles/ecovacs-deebot-t90s-pro-omni/01-cover-800.webp",
+        "width": 800,
+        "height": 379,
+        "bytes": 8806,
+        "outputHash": "sha256:bd53437e99a478408f2eafe5667b47afb156f0ece537a57280ef84052dfcca91"
+      }
     },
     "/images/articles/ecovacs-deebot-x12-omnicyclone/01-cover.webp": {
       "role": "cover",
@@ -1815,6 +1844,24 @@
         "height": 533,
         "bytes": 18874,
         "outputHash": "sha256:aeba3284b7dd7eccf1f1188de63622983b5d4271b261dfa59d68e8640fedd553"
+      }
+    },
+    "/images/articles/eufy-omni-s2/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1120,
+      "height": 1120,
+      "bytes": 20368,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:d82683ca4a650274ee17e047283bea06cc0b9433e23057069c59b8d6b51435e6",
+      "outputHash": "sha256:ab33f09059c82d6ced4765e64e94e4a039d92175f2c460dca1776665df3a1fe5",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-s2/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 14240,
+        "outputHash": "sha256:faf653d18f4e2028cd751ca8434192a682ee0a92059614da158073c6e0400042"
       }
     },
     "/images/articles/eve-of-the-robot-vacuum-battle/01-cover.webp": {
@@ -3059,6 +3106,24 @@
         "outputHash": "sha256:07be2546fc13d6969ae09424c5ecfaeec477239665e612fe5e268d1cd1e3bf18"
       }
     },
+    "/images/articles/mova-diver-a10/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 129026,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7d9e792521229a10dc4e740c50cea7382bc0b3f6eab7d61e77b1b0f67147edc2",
+      "outputHash": "sha256:4dc518edc908a2d769bc830d50c77a1ed9c3d7f2c3311339d831073704db6dc8",
+      "mobile": {
+        "src": "/images/articles/mova-diver-a10/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 37768,
+        "outputHash": "sha256:1fc579aba40b0175dd4787def5591f4c9a907cbb608fef779202f901552d0d76"
+      }
+    },
     "/images/articles/mova-lidax-ultra-1000/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3093,6 +3158,24 @@
         "height": 800,
         "bytes": 37784,
         "outputHash": "sha256:d757b482328352b6513c086a8433ae552b67c61b89a6b493f667c2b8d9648a93"
+      }
+    },
+    "/images/articles/narwal-flow-2/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 60158,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ecc91c5bf730d91f527108e19d9231c402e6e9db0981841c4a18cc1e79a8f8a4",
+      "outputHash": "sha256:2d91a17f2cf78e55a6c4392659b2531eafd5c1a11971943aadea482989d01725",
+      "mobile": {
+        "src": "/images/articles/narwal-flow-2/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 17794,
+        "outputHash": "sha256:6d3e8a0912a3fe5c877d22cc04f8fa88554682d418078b92a287586a5d4f3cc8"
       }
     },
     "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/01-cover.webp": {
@@ -3364,6 +3447,46 @@
         "bytes": 33864,
         "outputHash": "sha256:bd861ec899a313a500bb1d592c4b4cf2a284d305db35b1a21b9abf9c1d47b30e"
       }
+    },
+    "/images/articles/roborock-f25-ace-pro/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 21652,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c9dd12ac26eab1cbbbed212be6cf7e452ce5d3c9c45ee3cfaa8c1b6627815391",
+      "outputHash": "sha256:eea95effc7d3d50a494c28e454e7539fcd91124cc293196b2eb117ee5a852b4a"
+    },
+    "/images/articles/roborock-qrevo-curv-2-flow/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 55526,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:428463184426a739688cdd1818c928ec4e067b751dc0923d71ae0c53482e7877",
+      "outputHash": "sha256:75212f3bd5921b27b5cf27610bd04c0417e5861f79df3fd4e279d7c6a4f1f188",
+      "mobile": {
+        "src": "/images/articles/roborock-qrevo-curv-2-flow/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 37238,
+        "outputHash": "sha256:b3acc13fa1ad31f19cffd76400f7b31502f9e12e3ea43c9c48337116b4508821"
+      }
+    },
+    "/images/articles/roborock-qrevo-edge-3-pro/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 25058,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6a273394f7e618d1631aff4f85ef4f853425c8f87f5c6f3b539ec815c51b0432",
+      "outputHash": "sha256:48add92423fee02e6b13f9cde03edc9d4321a3c3865e27d9d9f22b131826475a"
     },
     "/images/articles/roborock-road-to-100-billion-rmb/01-cover.webp": {
       "role": "cover",
@@ -32526,9 +32649,19 @@
         "/images/insights/ecovacs-at-a-crossroads-image-008.jpg"
       ]
     },
+    "ecovacs-deebot-t90-max-pro-omni": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-deebot-t90-max-pro-omni/01-cover.webp",
+      "body": []
+    },
     "ecovacs-deebot-t90-pro-omni": {
       "budgetClass": "standard",
       "cover": "/images/articles/ecovacs-deebot-t90-pro-omni/01-cover.webp",
+      "body": []
+    },
+    "ecovacs-deebot-t90s-pro-omni": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-deebot-t90s-pro-omni/01-cover.webp",
       "body": []
     },
     "ecovacs-deebot-x12-omnicyclone": {
@@ -32596,6 +32729,11 @@
         "/images/articles/eu-battery-rules-smartphones-power-tools/03-replaceability-rules.webp",
         "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp"
       ]
+    },
+    "eufy-omni-s2": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eufy-omni-s2/01-cover.webp",
+      "body": []
     },
     "european-tool-brands-battery-alliances": {
       "budgetClass": "standard",
@@ -33449,6 +33587,11 @@
         "/images/blog/milwaukee-path-to-20-billion.webp"
       ]
     },
+    "mova-diver-a10": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-diver-a10/01-cover.webp",
+      "body": []
+    },
     "mova-lidax-ultra-1000": {
       "budgetClass": "standard",
       "cover": "/images/articles/mova-lidax-ultra-1000/01-cover.webp",
@@ -33495,6 +33638,11 @@
         "/images/insights/narwal-and-the-self-cleaning-robot-vacuum-image-026.jpg",
         "/images/insights/narwal-and-the-self-cleaning-robot-vacuum-image-027.jpg"
       ]
+    },
+    "narwal-flow-2": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/narwal-flow-2/01-cover.webp",
+      "body": []
     },
     "narwal-j6-and-technology-iteration": {
       "budgetClass": "standard",
@@ -33696,6 +33844,11 @@
         "/images/insights/roborock-channel-shift-online-to-offline-experience-image-01.jpg"
       ]
     },
+    "roborock-f25-ace-pro": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-f25-ace-pro/01-cover.webp",
+      "body": []
+    },
     "roborock-ipo-prospectus-signals": {
       "budgetClass": "standard",
       "cover": "/images/insights/roborock-ipo-prospectus-signals-cover.jpg",
@@ -33737,6 +33890,16 @@
         "/images/insights/roborock-ipo-prospectus-signals-image-036.jpg",
         "/images/insights/roborock-ipo-prospectus-signals-image-037.jpg"
       ]
+    },
+    "roborock-qrevo-curv-2-flow": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-qrevo-curv-2-flow/01-cover.webp",
+      "body": []
+    },
+    "roborock-qrevo-edge-3-pro": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-qrevo-edge-3-pro/01-cover.webp",
+      "body": []
     },
     "roborock-road-to-100-billion-rmb": {
       "budgetClass": "standard",
@@ -35998,12 +36161,30 @@
         }
       }
     },
+    "ecovacs-deebot-t90-max-pro-omni": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-deebot-t90-max-pro-omni/01-cover.webp",
+          "hash": "sha256:7a482e3da68ae8088f4cdd84b80b55c448c0434cfbc801c5fd9983bb81d2faac"
+        }
+      }
+    },
     "ecovacs-deebot-t90-pro-omni": {
       "files": {
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/ecovacs-deebot-t90-pro-omni/01-cover.webp",
           "hash": "sha256:0b4bdc6b7fb8e0a4d8fc99e582af8bdc01186a52865cce9de2f6740051cca1c9"
+        }
+      }
+    },
+    "ecovacs-deebot-t90s-pro-omni": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-deebot-t90s-pro-omni/01-cover.webp",
+          "hash": "sha256:23ec1caefa006714a00663555379bab80d9bf4da7ffa1cd36aec5407130135f8"
         }
       }
     },
@@ -36102,6 +36283,15 @@
           "status": "matched",
           "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp",
           "hash": "sha256:02667d596901c3261259111f12fd5ef53b66ba1c9e16988a6a79ee99ec92b60f"
+        }
+      }
+    },
+    "eufy-omni-s2": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-s2/01-cover.webp",
+          "hash": "sha256:d82683ca4a650274ee17e047283bea06cc0b9433e23057069c59b8d6b51435e6"
         }
       }
     },
@@ -36356,6 +36546,15 @@
         }
       }
     },
+    "mova-diver-a10": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mova-diver-a10/01-cover.webp",
+          "hash": "sha256:7d9e792521229a10dc4e740c50cea7382bc0b3f6eab7d61e77b1b0f67147edc2"
+        }
+      }
+    },
     "mova-lidax-ultra-1000": {
       "files": {
         "01-cover.jpg": {
@@ -36371,6 +36570,15 @@
           "status": "matched",
           "primary": "/images/articles/mova-rover-x10/01-cover.webp",
           "hash": "sha256:9f7ba0a5e4a7fc59e0d336f3fefee7a334c140d07b1aa6bf237f16ea9c47dabb"
+        }
+      }
+    },
+    "narwal-flow-2": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/narwal-flow-2/01-cover.webp",
+          "hash": "sha256:ecc91c5bf730d91f527108e19d9231c402e6e9db0981841c4a18cc1e79a8f8a4"
         }
       }
     },
@@ -36433,6 +36641,33 @@
           "status": "matched",
           "primary": "/images/articles/pressure-washer-recalls-china-oem-industry/03-manufacturing-talent-network.webp",
           "hash": "sha256:a9ec2aa545c5da5f1d1e652d22251f210b5eaa0378915ebd5712441c1015e71d"
+        }
+      }
+    },
+    "roborock-f25-ace-pro": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-f25-ace-pro/01-cover.webp",
+          "hash": "sha256:c9dd12ac26eab1cbbbed212be6cf7e452ce5d3c9c45ee3cfaa8c1b6627815391"
+        }
+      }
+    },
+    "roborock-qrevo-curv-2-flow": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-qrevo-curv-2-flow/01-cover.webp",
+          "hash": "sha256:428463184426a739688cdd1818c928ec4e067b751dc0923d71ae0c53482e7877"
+        }
+      }
+    },
+    "roborock-qrevo-edge-3-pro": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-qrevo-edge-3-pro/01-cover.webp",
+          "hash": "sha256:6a273394f7e618d1631aff4f85ef4f853425c8f87f5c6f3b539ec815c51b0432"
         }
       }
     },
