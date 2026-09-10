@@ -171,6 +171,7 @@
       "roborock-vs-dreame-robot-vacuums"
     ],
     "related": [
+      "dreame-aqua20-pro-ultra-roller-x-complete",
       "roborock-saros-20",
       "ecovacs-deebot-x12-omnicyclone"
     ],
@@ -354,7 +355,9 @@
       "shark-powerdetect-speed-vs-dyson-v16-piston-animal",
       "dyson-new-product-push-premium-innovation"
     ],
-    "related": [],
+    "related": [
+      "dreame-z30-pro-aqua-a"
+    ],
     "announced": "2025-09-04",
     "verifiedAt": "2026-09-06",
     "sources": [
@@ -442,6 +445,8 @@
       "who-makes-mova-robot-mowers-dreame-group"
     ],
     "related": [
+      "ecovacs-goat-o1200-lidar-pro",
+      "ecovacs-goat-a3000-lidar-pro",
       "segway-navimow-i210-awd",
       "mammotion-luba-mini-2-awd-1500",
       "sunseeker-s4",
@@ -548,6 +553,7 @@
       "luba-vs-navimow-mammotion-ninebot"
     ],
     "related": [
+      "mammotion-yuka-mini-2-1000",
       "mammotion-luba-3-awd-1500",
       "mova-lidax-ultra-1000",
       "sunseeker-s4",
@@ -1740,6 +1746,7 @@
       "segway-navimow-vs-husqvarna-automower"
     ],
     "related": [
+      "segway-navimow-i215-lidar",
       "segway-navimow-h220",
       "mova-lidax-ultra-1000"
     ],
@@ -1946,6 +1953,7 @@
       "dyson-hard-floor-washer-exposed"
     ],
     "related": [
+      "roborock-f25-ultra-steam-gen-2",
       "roborock-f25-ace-pro"
     ],
     "announced": "2026-02-19",
@@ -2048,6 +2056,7 @@
       "ecovacs-at-a-crossroads"
     ],
     "related": [
+      "ecovacs-winbot-mini-2",
       "ecovacs-winbot-w2s-pro-omni"
     ],
     "announced": "2026-01-06",
@@ -2150,6 +2159,7 @@
       "ecovacs-at-a-crossroads"
     ],
     "related": [
+      "ecovacs-winbot-mini-2",
       "ecovacs-winbot-w3-omni"
     ],
     "announced": "",
@@ -2343,6 +2353,7 @@
       "roborock-vs-ecovacs-robot-vacuums"
     ],
     "related": [
+      "dreame-aqua20-pro-ultra-roller-x-complete",
       "roborock-qrevo-curv-2-flow",
       "roborock-qrevo-edge-3-pro",
       "eufy-omni-s2",
@@ -2748,6 +2759,7 @@
       "roborock-vs-dreame-global-strategies"
     ],
     "related": [
+      "roborock-f25-ultra-steam-gen-2",
       "dyson-pencilwash"
     ],
     "announced": "",
@@ -3271,5 +3283,777 @@
     "launchYear": 2026,
     "launchNote": "Previewed at CES 2026; official retail launch announced on April 13, 2026.",
     "launchSource": "https://www.prnewswire.com/news-releases/narwal-launches-flow-2-robot-vacuum-with-vision-language-modelvlm-and-upgraded-flowwash-mopping-system-302740026.html"
+  },
+  {
+    "slug": "dreame-aqua20-pro-ultra-roller-x-complete",
+    "name": "Dreame Aqua20 Pro Ultra Roller X Complete",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Robot vacuums",
+    "market": "United Kingdom · announced RRP / Germany · upcoming",
+    "summary": "Dreame’s IFA 2026 steam-and-roller flagship combines fresh-water roller rinsing with an extending mop and adaptive obstacle crossing. German availability is scheduled for September 21.",
+    "fit": "Hard-floor households comparing heated roller cleaning and reach around furniture legs.",
+    "caution": "The 180°C figure describes the steam core. The 10 cm crossing claim combines two layers; neither is a universal floor-level result.",
+    "facts": [
+      {
+        "label": "Mopping format",
+        "value": "Steam + AquaRoll roller",
+        "meaning": "Fresh-water roller rinsing during cleaning."
+      },
+      {
+        "label": "Mop extension",
+        "value": "Up to 8 cm",
+        "meaning": "Intended for edges and reaching around furniture legs."
+      },
+      {
+        "label": "Single-layer crossing",
+        "value": "Up to 5 cm",
+        "meaning": "Measure actual sill geometry and approach space."
+      },
+      {
+        "label": "Suction claim",
+        "value": "40,000 Pa",
+        "meaning": "Manufacturer suction figure, not a standardized whole-floor cleaning score."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Aqua20 Pro Ultra Roller X Complete available now?",
+        "answer": "The German preview page schedules availability for September 21, 2026. As checked on September 10, that date is still in the future. The UK announcement says available soon; it does not establish immediate UK delivery."
+      },
+      {
+        "question": "What is the announced price?",
+        "answer": "Dreame announced a UK RRP of GBP 1,299. The German preview advertises a launch discount but does not establish the final selling price used in this guide. A discount amount alone is not a product price."
+      },
+      {
+        "question": "Does 180°C mean the floor receives steam at 180°C?",
+        "answer": "No. The manufacturer specifies the steam core. Temperature falls along the delivery path and depends on conditions. Confirm that your flooring permits the intended steam-cleaning method."
+      },
+      {
+        "question": "Can it climb a single 10 cm threshold?",
+        "answer": "That is not the published claim. Dreame separates a 5 cm single-layer claim from a 10 cm double-layer claim. Intermediate depth, surface grip and approach geometry matter."
+      },
+      {
+        "question": "How is it different from Dreame X60 Ultra?",
+        "answer": "Aqua20 uses a roller with steam assistance; X60 Ultra uses rotating thermal pads. X60 also has a verified 79.5 mm body height. Do not transfer that dimension or its consumables to Aqua20."
+      },
+      {
+        "question": "Does the 8 cm extension clean every corner?",
+        "answer": "It describes the extension mechanism’s reach, not guaranteed coverage behind every obstacle. Chair spacing, corners and objects near a wall can still limit access."
+      },
+      {
+        "question": "Is this a hands-on review?",
+        "answer": "No. This guide organizes official launch information, price status and practical selection questions. WCB has not measured stain removal, noise, reliability or real-home threshold performance for this model."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "dreame-x60-ultra",
+      "roborock-saros-20-flow"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "IFA 2026 manufacturer introduction and UK RRP",
+        "url": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "German preview and scheduled release",
+        "url": "https://de.dreametech.com/pages/dreame-aqua20-pro-ultra-roller-x-complete-saugroboter-neuheit"
+      },
+      {
+        "label": "Comparison · Dreame X60 Ultra",
+        "url": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Comparison · Saros 20 Flow",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      }
+    ],
+    "imageSource": "https://de.dreametech.com/cdn/shop/files/aqua20-pre-pc-1_1600x.webp?v=1787537892",
+    "launchYear": 2026,
+    "launchNote": "Announced at IFA on September 3, 2026; German preview schedules September 21 availability.",
+    "launchSource": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+  },
+  {
+    "slug": "dreame-z30-pro-aqua-a",
+    "name": "Dreame Z30 Pro Aqua-A",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Cordless vacuums",
+    "market": "Germany · exact Aqua-A retail listing / global specifications",
+    "summary": "A cordless stick vacuum with interchangeable dry tools and an AquaCycle 2.0 wet-cleaning head. Its 90-minute headline applies to Eco mode with a crevice nozzle, not wet floor washing.",
+    "fit": "Homes wanting one handheld vacuum platform for dry jobs plus a dedicated wet head for suitable hard floors.",
+    "caution": "The 2.2 kg figure is the vacuum body alone. Check assembled wet-head handling and the attachment-specific charging arrangement.",
+    "facts": [
+      {
+        "label": "Cleaning architecture",
+        "value": "Cordless vacuum + interchangeable wet head",
+        "meaning": "Select the correct head for dry debris or wet floor cleaning."
+      },
+      {
+        "label": "Suction power",
+        "value": "310 AW",
+        "meaning": "Air watts; different from electrical input power."
+      },
+      {
+        "label": "Maximum dry runtime",
+        "value": "90 min · Eco with crevice nozzle",
+        "meaning": "Not a powered-brush or wet-cleaning runtime guarantee."
+      },
+      {
+        "label": "Clean-water capacity",
+        "value": "400 ml",
+        "meaning": "Wet-head tank; not the dry dust cup."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Z30 Pro Aqua-A a floor washer or a dry vacuum?",
+        "answer": "It is a cordless vacuum platform with separate dry accessories and a dedicated wet-cleaning head. Use each configuration only for its approved task; the ordinary dry head should not be used to collect liquid."
+      },
+      {
+        "question": "Does the 90-minute claim cover washing the floor?",
+        "answer": "No. The stated maximum is measured in Eco mode using the crevice nozzle. Motorized heads, higher power and wet cleaning have different energy demands."
+      },
+      {
+        "question": "Does the complete machine weigh 2.2 kg?",
+        "answer": "The official specification gives 2.2 kg for the vacuum body. The tube, wet head and water add to the working assembly. Try the complete configuration if lifting or wrist comfort is important."
+      },
+      {
+        "question": "What is the German price?",
+        "answer": "The exact Aqua-A listing showed EUR 429 on September 10, 2026. This is a dated store offer, not a permanent price or confirmation of stock in every region."
+      },
+      {
+        "question": "Why are 310 AW, 28,000 Pa and 855 W all listed?",
+        "answer": "They refer to suction air power, vacuum pressure and rated electrical power respectively. They are not interchangeable values and should not be combined into a single cleaning score."
+      },
+      {
+        "question": "How does it charge?",
+        "answer": "Dreame’s global FAQ says the wet-cleaning brush must be attached for charging at the base. Check this configuration against the manual supplied with your regional package."
+      },
+      {
+        "question": "Is Aqua-A identical to every Z30 Pro Aqua package?",
+        "answer": "Do not assume that. This guide uses the exact Aqua-A global specification and German listing. A market using a shorter Aqua name may have different accessories or service terms."
+      }
+    ],
+    "articles": [
+      "tineco-vs-dreame-floor-washers",
+      "dreame-new-disruptor-in-vacuums"
+    ],
+    "related": [
+      "dyson-v16-piston-animal"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "Global Aqua-A specifications and FAQ",
+        "url": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "German exact-model offer",
+        "url": "https://de.dreametech.com/products/stielstaubsauger-mit-nassreinigungsfunktion-z30-pro-aqua-a"
+      },
+      {
+        "label": "Manufacturer 2026 product introduction",
+        "url": "https://de.dreametech.com/blogs/blog/dreame-stabstaubsauger-mit-nassfunktion"
+      },
+      {
+        "label": "Comparison · F25 ACE Pro",
+        "url": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Comparison · PencilWash",
+        "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      }
+    ],
+    "imageSource": "https://de.dreametech.com/cdn/shop/files/9-z30proaqua-A_-_1_8884ec62-86b3-42c6-a572-c7a026ffe8c1_1200x1200.jpg?v=1775022599",
+    "launchYear": 2026,
+    "launchNote": "Featured in Dreame Germany’s 2026 new-product introduction; exact Aqua-A retail listing verified.",
+    "launchSource": "https://de.dreametech.com/blogs/blog/dreame-stabstaubsauger-mit-nassfunktion"
+  },
+  {
+    "slug": "roborock-f25-ultra-steam-gen-2",
+    "name": "Roborock F25 Ultra Steam Gen 2",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Floor washers",
+    "market": "Global · IFA 2026 announcement",
+    "summary": "A manually guided washer combining steam, hot-water cleaning and powered steering. Mode-specific runtime and precise temperature measurement points matter more than the largest headline number.",
+    "fit": "Hard-floor households considering steam assistance for residue, with floor compatibility confirmed in advance.",
+    "caution": "The 100-minute figure is Auto mode with Eco suction; Steam mode is rated for 30 minutes. The 180°C claim is measured inside the heater.",
+    "facts": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided wet-and-dry washer",
+        "meaning": "The owner steers it; this is not an autonomous robot."
+      },
+      {
+        "label": "Steam output",
+        "value": "5,000 mg/min",
+        "meaning": "Measured at the nozzle after Turbo Steam reaches a steady state."
+      },
+      {
+        "label": "Auto / Eco runtime",
+        "value": "Up to 100 minutes",
+        "meaning": "Measured in Auto mode with Eco suction."
+      },
+      {
+        "label": "Steam runtime",
+        "value": "Up to 30 minutes",
+        "meaning": "Use this mode-specific figure when planning steam cleaning."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is this a robot floor cleaner?",
+        "answer": "No. It is a manually guided floor washer with powered steering assistance. It does not map rooms and clean independently."
+      },
+      {
+        "question": "Does it provide 100 minutes of steam cleaning?",
+        "answer": "No. The 100-minute claim uses Auto mode with Eco suction. Roborock lists up to 30 minutes in Steam mode; real runtime depends on conditions and use."
+      },
+      {
+        "question": "Is 180°C measured at the floor?",
+        "answer": "No. Roborock explicitly locates that reading at the internal heater output, not at the steam outlet. Do not use it as a floor-contact temperature or a universal disinfection result."
+      },
+      {
+        "question": "Does it make steam from cold in 30 seconds?",
+        "answer": "The cited test is a warm restart after previous Steam mode operation, with the machine stopped for three minutes. Cold preparation time is not established by that result."
+      },
+      {
+        "question": "How is this different from F25 ACE Pro?",
+        "answer": "Steam Gen 2 adds a steam-focused cleaning system. ACE Pro emphasizes JetFoaming. They share some steering and form-factor features, but that does not make their modes, rollers or consumables interchangeable."
+      },
+      {
+        "question": "What is the selling price?",
+        "answer": "A verified local selling price was not established from the cited global launch material on September 10, 2026. Confirm the exact Steam Gen 2 name, package and delivery date with a local seller."
+      },
+      {
+        "question": "Can I use it on any wood floor?",
+        "answer": "Do not assume that. A manufacturer test on one wood floor does not approve every coating or construction. Check your flooring instructions and the regional appliance manual before using steam or heated water."
+      }
+    ],
+    "articles": [
+      "tineco-vs-dreame-floor-washers",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "roborock-f25-ace-pro",
+      "dyson-pencilwash"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "Global specification and test conditions",
+        "url": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Official IFA 2026 lineup",
+        "url": "https://au.roborock.com/pages/ifa-2026"
+      },
+      {
+        "label": "Comparison · F25 ACE Pro",
+        "url": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Comparison · PencilWash",
+        "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      }
+    ],
+    "imageSource": "https://global.roborock.com/cdn/shop/files/Roborock_F25_Ultra_Steam_Gen_2_ID.png?v=1786007597",
+    "launchYear": 2026,
+    "launchNote": "Presented in Roborock’s IFA 2026 lineup; local selling price and delivery remain unverified.",
+    "launchSource": "https://au.roborock.com/pages/ifa-2026"
+  },
+  {
+    "slug": "ecovacs-goat-a3000-lidar-pro",
+    "name": "ECOVACS GOAT A3000 LiDAR PRO",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Robot mowers",
+    "market": "United States · PRO model",
+    "summary": "A dual-disc mower combining dual-LiDAR mapping with an integrated TruEdge trimmer. The PRO suffix identifies the 2026 model; it should not be confused with the older A3000 LiDAR.",
+    "fit": "Lawn owners prioritizing mowing throughput and reduced follow-up edge trimming, with a suitable mapped route.",
+    "caution": "The US technical table and body specify 50% / 27° working slope, while a summary bullet says 15°. Resolve this inconsistency before buying for a steep lawn.",
+    "facts": [
+      {
+        "label": "Navigation",
+        "value": "HoloScope 360 dual LiDAR",
+        "meaning": "360° rotating LiDAR plus 3D ToF; no RTK antenna installation."
+      },
+      {
+        "label": "Edge hardware",
+        "value": "Integrated TruEdge trimmer",
+        "meaning": "Install the included trimmer module as instructed."
+      },
+      {
+        "label": "Cutting width",
+        "value": "33 cm",
+        "meaning": "Plan access using the full mower dimensions, not cutting width."
+      },
+      {
+        "label": "Cutting height",
+        "value": "30–90 mm",
+        "meaning": "Seven electronic settings in 10 mm increments."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is this the same as the earlier GOAT A3000 LiDAR?",
+        "answer": "No. This guide covers A3000 LiDAR PRO from the 2026 PRO launch. Keep the suffix on your quotation and check the integrated trimmer, model code and included parts."
+      },
+      {
+        "question": "Does it need an RTK antenna or perimeter wire?",
+        "answer": "The cited model uses HoloScope 360 dual-LiDAR navigation. It does not require an RTK antenna or perimeter wire installation, but you still need to validate its map, exclusions and travel routes."
+      },
+      {
+        "question": "What is the US price?",
+        "answer": "The base official listing showed USD 2,499.99 on September 10, 2026. Accessory bundles can show another price. Confirm the selected package and delivery terms."
+      },
+      {
+        "question": "Does the trimmer eliminate every edge-cleaning job?",
+        "answer": "It is intended to reduce follow-up trimming, but walls, drops, plants and restricted access can still leave work. Review the perimeter with the installed module and follow the manual’s clearances."
+      },
+      {
+        "question": "What slope can it handle?",
+        "answer": "The technical table and main description give 50% or 27°, while a summary bullet says 15°. This guide flags the conflict. The boundary limit is separately listed as 20%; confirm the manual and actual installation before relying on either maximum."
+      },
+      {
+        "question": "Is it safe to leave around children or wildlife?",
+        "answer": "Object recognition is not a guarantee of detection. Follow the operating instructions, keep the mowing area clear and choose a schedule that avoids people, pets and local wildlife activity."
+      },
+      {
+        "question": "Should I choose A3000 PRO or O1200 PRO?",
+        "answer": "A3000 PRO has a 33 cm dual-disc cut, a larger battery and a different height range. O1200 PRO has a narrower 22 cm cut and a lower listed working-slope limit. Choose around lawn layout, access and workload, not the similar PRO name alone."
+      }
+    ],
+    "articles": [
+      "robot-lawn-mower-without-perimeter-wire",
+      "robot-lawn-mower-cost-installation-maintenance"
+    ],
+    "related": [
+      "ecovacs-goat-o1200-lidar-pro",
+      "segway-navimow-i215-lidar"
+    ],
+    "announced": "2026-02-10",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "US exact-model store and specifications",
+        "url": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "US PRO-series launch · February 10, 2026",
+        "url": "https://www.prnewswire.com/news-releases/ecovacs-launches-goat-pro-lidar-series-with-first-ever-built-in-ai-edge-trimmer-its-most-complete-autonomous-lawn-care-solution-yet---available-now-302683131.html"
+      },
+      {
+        "label": "European launch and regional model context",
+        "url": "https://www.presseportal.de/pm/114369/6214114"
+      },
+      {
+        "label": "Comparison · GOAT O1200 PRO",
+        "url": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Comparison · YUKA mini 2 1000",
+        "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/us/image/product/2026/02/10/010750_6791$id-goat-a3000-lidar-pro-920x920-1.png",
+    "launchYear": 2026,
+    "launchNote": "US GOAT PRO LiDAR series launched on February 10, 2026; exact A3000 PRO offer verified.",
+    "launchSource": "https://www.prnewswire.com/news-releases/ecovacs-launches-goat-pro-lidar-series-with-first-ever-built-in-ai-edge-trimmer-its-most-complete-autonomous-lawn-care-solution-yet---available-now-302683131.html"
+  },
+  {
+    "slug": "ecovacs-goat-o1200-lidar-pro",
+    "name": "ECOVACS GOAT O1200 LiDAR PRO",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Robot mowers",
+    "market": "Germany · European PRO model",
+    "summary": "A narrower GOAT PRO mower pairing HoloScope dual LiDAR with an integrated edge trimmer. Its German launch RRP is documented, but the exact model is currently marked unavailable in the checked store.",
+    "fit": "Small-to-medium lawn layouts where narrow access and edge follow-up matter more than a wide cutting deck.",
+    "caution": "The German page promotes an A1600 alternative while O1200 is unavailable. The alternative’s displayed price must not be quoted as an O1200 offer.",
+    "facts": [
+      {
+        "label": "Navigation",
+        "value": "HoloScope 360 dual LiDAR",
+        "meaning": "Rotating 360° LiDAR plus 3D ToF."
+      },
+      {
+        "label": "Edge hardware",
+        "value": "Integrated TruEdge trimmer",
+        "meaning": "An active trimming mechanism, not simply driving over a paved edge."
+      },
+      {
+        "label": "Narrow-path claim",
+        "value": "0.8 m",
+        "meaning": "Laboratory result; grass, geometry and terrain can change passage success."
+      },
+      {
+        "label": "Cutting height",
+        "value": "30–80 mm",
+        "meaning": "11 settings in 5 mm increments."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is O1200 LiDAR PRO a 2026 product?",
+        "answer": "Yes. ECOVACS’ European announcement dated February 10, 2026 lists it in the new PRO range and schedules local availability from February 12."
+      },
+      {
+        "question": "What is the price and availability?",
+        "answer": "The manufacturer’s German launch RRP was EUR 999. On September 10, 2026 the checked German store marked O1200 unavailable and offered A1600 as an alternative. This guide does not present the alternative’s price as an O1200 selling price."
+      },
+      {
+        "question": "Is this the same as GOAT O1200 RTK?",
+        "answer": "No. The LiDAR PRO model uses HoloScope dual LiDAR and the PRO trimmer. The O1200 RTK name describes another navigation configuration; verify the full name and part compatibility."
+      },
+      {
+        "question": "Will it fit through an 80 cm gate?",
+        "answer": "The 0.8 m claim is a laboratory passage result, not a guarantee for every gate. Measure protruding posts, hinges, grass edges and the approach turn. A nominally 80 cm opening may leave inadequate margin."
+      },
+      {
+        "question": "How does it differ from A3000 LiDAR PRO?",
+        "answer": "O1200 PRO has a narrower 22 cm cut, 5.2 Ah battery and 30–80 mm height range. A3000 PRO lists a 33 cm dual-disc cut, 7.5 Ah battery and 30–90 mm range. Both use an integrated trimmer."
+      },
+      {
+        "question": "Does wire-free mean I can skip boundary checks?",
+        "answer": "No. Inspect the generated map, no-go areas and station route. Pay particular attention to water, drops and ambiguous borders; sensing claims do not establish a safe layout by themselves."
+      },
+      {
+        "question": "What maintenance should I budget for?",
+        "answer": "Plan for blades, trimmer wear parts, routine grass removal and seasonal storage. Obtain exact O1200 LiDAR PRO part numbers and current local prices before comparing ownership cost with another mower."
+      }
+    ],
+    "articles": [
+      "robot-lawn-mowers-for-small-yards",
+      "robot-lawn-mower-installation"
+    ],
+    "related": [
+      "ecovacs-goat-a3000-lidar-pro",
+      "mammotion-yuka-mini-2-1000"
+    ],
+    "announced": "2026-02-10",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "German exact-model specification and availability",
+        "url": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "European manufacturer launch and RRP",
+        "url": "https://www.presseportal.de/pm/114369/6214114"
+      },
+      {
+        "label": "Comparison · A3000 LiDAR PRO",
+        "url": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Comparison · YUKA mini 2 1000",
+        "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/de/image/product/2026/01/28/093905_6316$id-goat-o1200-lidar-pro-920x920-1.png",
+    "launchYear": 2026,
+    "launchNote": "Announced in Europe on February 10, 2026, with February 12 market introduction; current German store shows unavailable.",
+    "launchSource": "https://www.presseportal.de/pm/114369/6214114"
+  },
+  {
+    "slug": "mammotion-yuka-mini-2-1000",
+    "name": "Mammotion YUKA mini 2 1000",
+    "brand": "Mammotion",
+    "brandSlug": "mammotion",
+    "category": "Robot mowers",
+    "market": "United Kingdom · 1000 LiDAR version",
+    "summary": "A rear-wheel-drive mower for 1,000 m² lawns, using 360° LiDAR and dual cameras. The 1000 version differs in navigation from the triple-camera 800; it is not simply a larger area setting.",
+    "fit": "Small-to-medium lawns where compact access and antenna-free mapping suit the site better than an AWD platform.",
+    "caution": "The 1,000 m² lawn rating is not single-charge coverage. The UK page claims 250 m² per charge; the 1000H and other regional cutting-height versions must be checked separately.",
+    "facts": [
+      {
+        "label": "Recommended lawn",
+        "value": "Up to 1,000 m²",
+        "meaning": "A maintained-lawn rating, not one-charge coverage."
+      },
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR + dual AI cameras",
+        "meaning": "This guide covers the 1000 LiDAR configuration."
+      },
+      {
+        "label": "Drive",
+        "value": "Rear-wheel drive",
+        "meaning": "Do not transfer LUBA AWD traction claims."
+      },
+      {
+        "label": "Coverage per charge",
+        "value": "Up to 250 m²",
+        "meaning": "Completing the rated lawn can require multiple charge cycles."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is YUKA mini 2 1000 a 2026 model?",
+        "answer": "Yes. Mammotion introduced the YUKA mini 2 range at CES 2026. This guide uses the UK 1000 LiDAR listing and its current specification."
+      },
+      {
+        "question": "Is it the same navigation hardware as the 800?",
+        "answer": "No. The range announcement describes a LiDAR-plus-vision version and a triple-camera version. The UK 1000 covered here has LiDAR and dual cameras; do not assume every YUKA mini 2 uses that sensor set."
+      },
+      {
+        "question": "Does it mow 1,000 m² on one charge?",
+        "answer": "No. The UK page claims up to 250 m² per charge and rates the model for a 1,000 m² lawn. A full maintained-lawn cycle may require repeated mowing and charging."
+      },
+      {
+        "question": "Does it have all-wheel drive?",
+        "answer": "No. The cited 1000 is rear-wheel drive, with a 45% working-slope claim. LUBA mini 2 AWD has a different drive system and should be evaluated separately."
+      },
+      {
+        "question": "What is the UK price?",
+        "answer": "The selected official UK listing showed GBP 999 on September 10, 2026. Recheck the exact model, current stock, accessories and delivery terms at purchase."
+      },
+      {
+        "question": "Can I use the US 1000H height range for this model?",
+        "answer": "No. This guide uses the UK 1000 range of 20–60 mm. A higher-cut regional variant may have different settings; match the exact suffix and local manual."
+      },
+      {
+        "question": "Do ten maps mean it can autonomously move between ten properties?",
+        "answer": "No. Saved maps and zone management are software capacities. The robot still needs a valid route or manual transport between disconnected locations, plus suitable charging and operating conditions."
+      }
+    ],
+    "articles": [
+      "mammotion-luba-vs-yuka-robot-mowers",
+      "robot-lawn-mowers-for-small-yards"
+    ],
+    "related": [
+      "mammotion-luba-mini-2-awd-1500",
+      "segway-navimow-i215-lidar",
+      "ecovacs-goat-o1200-lidar-pro"
+    ],
+    "announced": "2026-01-05",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "UK 1000 specification and selected price",
+        "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "CES 2026 range introduction",
+        "url": "https://www.prnewswire.com/news-releases/mammotion-takes-stage-at-ces-2026-with-its-game-changing-robotic-lawn-mowing-lineup-ushering-in-the-next-era-of-autonomous-lawn-mastery-302652397.html"
+      },
+      {
+        "label": "Comparison · LUBA mini 2 AWD 1500",
+        "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500"
+      },
+      {
+        "label": "Comparison · Navimow i215 LiDAR",
+        "url": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://uk.mammotion.com/cdn/shop/files/1_800x800_84275a45-6da4-45ad-94a1-f1d732210fb9.png?v=1776473595&width=2048",
+    "launchYear": 2026,
+    "launchNote": "YUKA mini 2 range introduced at CES on January 5, 2026; UK 1000 LiDAR configuration verified.",
+    "launchSource": "https://www.prnewswire.com/news-releases/mammotion-takes-stage-at-ces-2026-with-its-game-changing-robotic-lawn-mowing-lineup-ushering-in-the-next-era-of-autonomous-lawn-mastery-302652397.html"
+  },
+  {
+    "slug": "segway-navimow-i215-lidar",
+    "name": "Segway Navimow i215 LiDAR",
+    "brand": "Segway Navimow",
+    "brandSlug": "segway-navimow",
+    "category": "Robot mowers",
+    "market": "United States · i215 LiDAR",
+    "summary": "A solid-state-LiDAR mower rated for 0.37 acre, with GeoSketch mapping and ESC traction control. It is a distinct design from the i210 AWD, not the same mower with a different area number.",
+    "fit": "Relatively level lawns where antenna-free mapping, larger mapped areas and manageable passages are priorities.",
+    "caution": "The 0.44-acre maximum map allowance is shared across all zones. It is not the recommended lawn rating and cannot be multiplied by the zone count.",
+    "facts": [
+      {
+        "label": "Recommended lawn",
+        "value": "Up to 0.37 acre / about 1,500 m²",
+        "meaning": "Use the recommended figure for normal workload planning."
+      },
+      {
+        "label": "Navigation",
+        "value": "Solid-state LiDAR + vision",
+        "meaning": "No external RTK antenna installation for this model."
+      },
+      {
+        "label": "Working slope",
+        "value": "45% / 24°",
+        "meaning": "Tested on dry grass at 1.97 in height without obstacles."
+      },
+      {
+        "label": "Zone management",
+        "value": "Up to 20 zones",
+        "meaning": "All zones share the total map allowance."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is i215 LiDAR a 2026 model?",
+        "answer": "The i2 LiDAR family debuted in Segway Navimow’s CES 2026 announcement. This guide covers the selected US i215 LiDAR retail model."
+      },
+      {
+        "question": "How much does it cost?",
+        "answer": "The base US listing showed USD 1,599 on September 10, 2026. The garage bundle has a different price. Confirm the selected package, tax, delivery and current stock."
+      },
+      {
+        "question": "Is it an i210 AWD with more coverage?",
+        "answer": "No. The i215 uses solid-state LiDAR and vision, while the i210 AWD uses a different drive and Network RTK navigation arrangement. Compare the actual site and exact hardware, not only the i2 family name."
+      },
+      {
+        "question": "Can each of its twenty zones be 0.44 acre?",
+        "answer": "No. The maximum mapped area is shared across all zones. The manufacturer recommends a 0.37-acre lawn and describes up to 0.44 acre as a layout-dependent maximum allowance."
+      },
+      {
+        "question": "Does isolated mapping let it cross stairs between lawns?",
+        "answer": "No. It helps map disconnected areas. If there is no supported physical route, the owner still needs to transport the mower and follow the operating instructions for each area."
+      },
+      {
+        "question": "Does 59 dB(A) describe noise while cutting grass?",
+        "answer": "The footnote describes a laboratory no-load test with the mower moving but not cutting. Dense grass and real operating conditions can produce a different sound level."
+      },
+      {
+        "question": "What should I check about height settings and connected services?",
+        "answer": "Ask for the exact US i215 cutting-height range, any low-cutting kit instructions and current connectivity terms. This guide does not import settings or subscription promises from another Navimow model."
+      }
+    ],
+    "articles": [
+      "navimow-robotic-mower-roadmap",
+      "rtk-vs-lidar-robot-lawn-mowers"
+    ],
+    "related": [
+      "segway-navimow-i210-awd",
+      "mammotion-yuka-mini-2-1000",
+      "ecovacs-goat-a3000-lidar-pro"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "US i215 LiDAR specification and selected offer",
+        "url": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "CES 2026 manufacturer introduction",
+        "url": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
+      },
+      {
+        "label": "Comparison · i210 AWD",
+        "url": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001"
+      },
+      {
+        "label": "Comparison · YUKA mini 2 1000",
+        "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://navimow.com/cdn/shop/files/i215_Lidar_Front45_07_46f81dfe-59af-451a-9e42-78fd8b5e650a.png?v=1770629631",
+    "launchYear": 2026,
+    "launchNote": "i2 LiDAR family introduced at CES on January 6, 2026; exact US i215 retail model verified.",
+    "launchSource": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html"
+  },
+  {
+    "slug": "ecovacs-winbot-mini-2",
+    "name": "ECOVACS WINBOT mini 2",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Window robots",
+    "market": "United States · mini 2 / European 2026 launch context",
+    "summary": "A compact, mains-powered window robot with corner brushes and a 25 × 25 cm minimum pane specification. Its internal battery provides power-loss protection, not cordless window cleaning.",
+    "fit": "Accessible smaller panes where a lightweight robot and manual pad care are preferable to a large OMNI station.",
+    "caution": "Keep the safety tether secured and power connected during operation. The 30-minute protection figure is not a cleaning-runtime claim.",
+    "facts": [
+      {
+        "label": "Robot dimensions",
+        "value": "215 × 215 × 55 mm",
+        "meaning": "Check the whole route and space near handles or guards."
+      },
+      {
+        "label": "Minimum pane",
+        "value": "25 × 25 cm",
+        "meaning": "Actual shape, obstacles and usable area still matter."
+      },
+      {
+        "label": "Onboard liquid tank",
+        "value": "About 50 ml",
+        "meaning": "Manual capacity; the 230 ml supplied solution is a separate bottle."
+      },
+      {
+        "label": "Power-loss protection",
+        "value": "30 minutes listed",
+        "meaning": "Retrieve safely; do not continue a normal cleaning session without power."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is WINBOT mini 2 cordless?",
+        "answer": "No. It uses mains power through its adapter and cable. The internal battery is for power-loss protection; the listed 30 minutes must not be presented as cordless cleaning runtime."
+      },
+      {
+        "question": "What is the US price?",
+        "answer": "The base US listing showed USD 239.99 on September 10, 2026. A bundle with extra pads or solution can have a different price; check the selected package."
+      },
+      {
+        "question": "Will it clean a 25 × 25 cm window?",
+        "answer": "That is the listed minimum pane size. Check usable glass dimensions, shape, handles and surrounding clearance, and follow the manual. A decorative or obstructed pane may not provide a suitable route."
+      },
+      {
+        "question": "Does it have a 230 ml onboard tank?",
+        "answer": "No. The US manual gives approximately 50 ml for the onboard tank. The 230 ml item on the store page is the supplied cleaning-solution bottle."
+      },
+      {
+        "question": "Does it wash its own pad like W3 OMNI?",
+        "answer": "No Vortex Wash station is included with mini 2. The owner prepares and cleans the wiping pad and corner brushes. W3 OMNI uses a larger station with pad-washing hardware."
+      },
+      {
+        "question": "Can I leave it running while I go out?",
+        "answer": "The US manual says to keep someone nearby to monitor operation and keep people, pets and valuables away from beneath the cleaning area. Secure the tether and follow the specified power and retrieval procedure."
+      },
+      {
+        "question": "What changed compared with a larger WINBOT?",
+        "answer": "Mini 2 emphasizes a smaller body and smaller minimum pane, with manual pad care and adapter power. W2S PRO OMNI and W3 OMNI use larger station-based arrangements; compare access, transport and care as well as cleaning features."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "ecovacs-winbot-w3-omni",
+      "ecovacs-winbot-w2s-pro-omni"
+    ],
+    "announced": "2026-02-10",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "US exact-model store and specifications",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "US instruction manual",
+        "url": "https://site-static.ecovacs.com/upload/file/support/2026/04/16/074544_5981$WINBOTmini2InstructionManualUS.pdf"
+      },
+      {
+        "label": "European manufacturer announcement and release date",
+        "url": "https://www.presseportal.de/pm/114369/6214114"
+      },
+      {
+        "label": "Comparison · WINBOT W3 OMNI",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      },
+      {
+        "label": "Comparison · WINBOT W2S PRO OMNI",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/us/image/product/2026/03/04/021713_7268$id-winbot-mini2-920x920-1.png",
+    "launchYear": 2026,
+    "launchNote": "Announced in Europe on February 10, 2026 for March 12 introduction; current US mini 2 retail listing verified.",
+    "launchSource": "https://www.presseportal.de/pm/114369/6214114"
   }
 ]

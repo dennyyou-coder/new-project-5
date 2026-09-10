@@ -5707,5 +5707,1549 @@
         "note": "Official reference; check the exact regional model and current terms."
       }
     ]
+  },
+  "dreame-aqua20-pro-ultra-roller-x-complete": {
+    "verdict": "A useful shortlist candidate for buyers interested in steam-assisted roller cleaning. Wait for the exact regional manual, final package and delivery commitment before treating the launch claims as a complete buying specification.",
+    "notFor": "A buyer requiring immediate confirmed delivery, verified low-furniture dimensions or a guarantee for steam-sensitive flooring.",
+    "specifications": [
+      {
+        "label": "Mopping format",
+        "value": "Steam + AquaRoll roller",
+        "meaning": "Fresh-water roller rinsing during cleaning.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Steam temperature claim",
+        "value": "180°C core temperature",
+        "meaning": "Not a measured floor-contact temperature.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Steam outlets",
+        "value": "4",
+        "meaning": "Distribution points, not four cleaning modes.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Roller pressure",
+        "value": "18 N",
+        "meaning": "Manufacturer claim; floor finish still needs testing.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Roller speed",
+        "value": "300 RPM",
+        "meaning": "Not directly comparable with rotating-pad RPM.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Mop extension",
+        "value": "Up to 8 cm",
+        "meaning": "Intended for edges and reaching around furniture legs.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Side brush",
+        "value": "Detangling SideReach",
+        "meaning": "Inspect for trapped fibers even with an anti-tangle design.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Navigation",
+        "value": "AstroVision + VersaLift LDS",
+        "meaning": "Combines visual sensing with adjustable laser navigation.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Perception platform",
+        "value": "OmniSight 4.0",
+        "meaning": "Manufacturer platform name, not an independent performance grade.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Object recognition",
+        "value": "320+ object types claimed",
+        "meaning": "Unusual objects and loose cables may still need removal.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Small-object claim",
+        "value": "Down to 10 mm",
+        "meaning": "Recognition under the manufacturer’s conditions is not guaranteed avoidance.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Single-layer crossing",
+        "value": "Up to 5 cm",
+        "meaning": "Measure actual sill geometry and approach space.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Double-layer crossing",
+        "value": "Up to 10 cm combined",
+        "meaning": "Not a single 10 cm vertical step or staircase capability.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Brush assembly",
+        "value": "HyperStream Detangling DuoBrush 2.0",
+        "meaning": "Bristled and TPU rubber brush elements.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Suction claim",
+        "value": "40,000 Pa",
+        "meaning": "Manufacturer suction figure, not a standardized whole-floor cleaning score.",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Dock mop-wash claim",
+        "value": "Up to 100°C",
+        "meaning": "Dock cleaning stage; not steam temperature at the floor.",
+        "source": "https://de.dreametech.com/pages/dreame-aqua20-pro-ultra-roller-x-complete-saugroboter-neuheit"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom",
+        "amount": "GBP 1,299",
+        "source": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html",
+        "kind": "Manufacturer launch RRP",
+        "date": "2026-09-10",
+        "note": "Announced RRP; the release says available soon, with no firm UK delivery date."
+      },
+      {
+        "market": "Germany",
+        "amount": "Not verified",
+        "source": "https://de.dreametech.com/pages/dreame-aqua20-pro-ultra-roller-x-complete-saugroboter-neuheit",
+        "kind": "Upcoming release",
+        "date": "2026-09-10",
+        "note": "September 21 availability advertised; a EUR 300 discount is not the final selling price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame Aqua20 Pro Ultra Roller X Complete",
+          "url": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html",
+          "market": "IFA / UK announcement"
+        },
+        {
+          "name": "Dreame X60 Ultra",
+          "url": "https://www.dreametech.com/products/x60-ultra-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Roborock Saros 20 Flow",
+          "url": "https://global.roborock.com/pages/roborock-saros-20-flow",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning format",
+          "values": [
+            "Steam-assisted AquaRoll roller",
+            "Dual rotating thermal pads",
+            "SpiraFlow 2.0 roller"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "40,000 Pa",
+            "35,000 Pa",
+            "36,000 Pa"
+          ]
+        },
+        {
+          "label": "Single-layer crossing",
+          "values": [
+            "Up to 5 cm",
+            "Up to 4.5 cm",
+            "Up to 4.5 cm"
+          ]
+        },
+        {
+          "label": "Double-layer crossing",
+          "values": [
+            "Up to 10 cm combined",
+            "Up to 8.8 cm combined",
+            "Up to 8.8 cm combined"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "Not verified in cited launch material",
+            "79.5 mm",
+            "89.8 mm"
+          ]
+        }
+      ],
+      "takeaway": "Mop format, furniture clearance and regional availability are more useful starting points than suction rankings. Threshold figures refer to specific geometries and are not interchangeable guarantees."
+    },
+    "resources": [
+      {
+        "label": "IFA 2026 manufacturer introduction and UK RRP",
+        "url": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "German preview and scheduled release",
+        "url": "https://de.dreametech.com/pages/dreame-aqua20-pro-ultra-roller-x-complete-saugroboter-neuheit",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · Dreame X60 Ultra",
+        "url": "https://www.dreametech.com/products/x60-ultra-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dreame-z30-pro-aqua-a": {
+    "verdict": "A practical candidate if above-floor dry cleaning and occasional hard-floor washing belong in one appliance system. Test the wet attachment and check its charging routine before judging convenience.",
+    "notFor": "A buyer expecting 90 minutes of wet washing, a 2.2 kg complete wet assembly or automatic room cleaning.",
+    "specifications": [
+      {
+        "label": "Cleaning architecture",
+        "value": "Cordless vacuum + interchangeable wet head",
+        "meaning": "Select the correct head for dry debris or wet floor cleaning.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Wet-head system",
+        "value": "AquaCycle 2.0",
+        "meaning": "Wet cleaning is a distinct configuration, not a property of every accessory.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Suction power",
+        "value": "310 AW",
+        "meaning": "Air watts; different from electrical input power.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Vacuum pressure",
+        "value": "28,000 Pa",
+        "meaning": "A separate measurement from air watts.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Rated electrical power",
+        "value": "855 W",
+        "meaning": "The specification table labels this rated power.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Maximum dry runtime",
+        "value": "90 min · Eco with crevice nozzle",
+        "meaning": "Not a powered-brush or wet-cleaning runtime guarantee.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Vacuum body weight",
+        "value": "2.2 kg",
+        "meaning": "Excludes the full working attachment assembly.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Dust cup",
+        "value": "0.6 L",
+        "meaning": "Separate from liquid collection in the wet head.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Clean-water capacity",
+        "value": "400 ml",
+        "meaning": "Wet-head tank; not the dry dust cup.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Dirty-water capacity",
+        "value": "320 ml",
+        "meaning": "Empty and clean as instructed after wet use.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Battery specification",
+        "value": "8 × 3,200 mAh cells",
+        "meaning": "Do not add cell ratings to claim a 25,600 mAh pack.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours",
+        "meaning": "Actual duration depends on battery state and conditions.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Extension tube",
+        "value": "90° folding",
+        "meaning": "Helps reach beneath furniture without constant bending.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Wet-head articulation",
+        "value": "180° swivel / lay-flat design",
+        "meaning": "Check clearance with the complete head attached.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Brush drying claim",
+        "value": "70°C for 30 minutes",
+        "meaning": "Manufacturer drying cycle, not a floor-treatment temperature.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Charging configuration",
+        "value": "Wet-cleaning brush must be attached at base",
+        "meaning": "Confirm the correct docking arrangement before storage planning.",
+        "source": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany",
+        "amount": "EUR 429",
+        "source": "https://de.dreametech.com/products/stielstaubsauger-mit-nassreinigungsfunktion-z30-pro-aqua-a",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Exact Aqua-A listing on the verification date; recheck accessories, stock and warranty."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame Z30 Pro Aqua-A",
+          "url": "https://global.dreametech.com/products/z30-pro-aqua-a",
+          "market": "Global / German offer"
+        },
+        {
+          "name": "Roborock F25 ACE Pro",
+          "url": "https://global.roborock.com/pages/roborock-f25-ace-pro",
+          "market": "Global"
+        },
+        {
+          "name": "Dyson PencilWash",
+          "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Primary format",
+          "values": [
+            "Stick vacuum with separate wet head",
+            "Dedicated wet-and-dry floor washer",
+            "Dedicated wet roller cleaner"
+          ]
+        },
+        {
+          "label": "Above-floor dry tools",
+          "values": [
+            "Interchangeable vacuum accessories",
+            "Not a handheld dry-vacuum platform",
+            "Not a handheld dry-vacuum platform"
+          ]
+        },
+        {
+          "label": "Clean-water capacity",
+          "values": [
+            "400 ml",
+            "1,000 ml",
+            "300 ml"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "90 min, dry Eco / crevice nozzle",
+            "60 min, Eco floor-washing mode",
+            "Up to 30 min floor cleaning"
+          ]
+        },
+        {
+          "label": "Roller care",
+          "values": [
+            "Base washing / heated drying",
+            "Dock washing / heated drying",
+            "Manual wash / at least 24 h air drying"
+          ]
+        }
+      ],
+      "takeaway": "These are different appliance architectures. Choose first between an interchangeable dry-and-wet system and a dedicated floor washer; the runtime figures describe different tasks."
+    },
+    "resources": [
+      {
+        "label": "Global Aqua-A specifications and FAQ",
+        "url": "https://global.dreametech.com/products/z30-pro-aqua-a",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "German exact-model offer",
+        "url": "https://de.dreametech.com/products/stielstaubsauger-mit-nassreinigungsfunktion-z30-pro-aqua-a",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Manufacturer 2026 product introduction",
+        "url": "https://de.dreametech.com/blogs/blog/dreame-stabstaubsauger-mit-nassfunktion",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "roborock-f25-ultra-steam-gen-2": {
+    "verdict": "Shortlist for steam-assisted hard-floor cleaning when the floor permits it. Compare the Steam-mode runtime and real handling with the cleaning routine you need.",
+    "notFor": "Automatic room cleaning, unqualified 100-minute steam operation or floors whose care instructions prohibit the proposed heat and moisture.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided wet-and-dry washer",
+        "meaning": "The owner steers it; this is not an autonomous robot.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Steam system",
+        "value": "VaporFlow 2.0 / Turbo Steam",
+        "meaning": "Turbo is engaged from Steam mode.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Steam output",
+        "value": "5,000 mg/min",
+        "meaning": "Measured at the nozzle after Turbo Steam reaches a steady state.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Steam temperature claim",
+        "value": "180°C at internal heater output",
+        "meaning": "Not the steam outlet or floor-contact temperature.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Warm-start claim",
+        "value": "30 seconds after a 3-minute stop",
+        "meaning": "Follows earlier Steam mode operation; not a cold-start promise.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Hot-water system",
+        "value": "WaveFlow / up to 90°C",
+        "meaning": "Water heating claim under manufacturer conditions, not a floor measurement.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Suction claim",
+        "value": "25,000 Pa",
+        "meaning": "Does not measure the final floor finish.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Roller pressure",
+        "value": "33 N",
+        "meaning": "Maximum manufacturer claim.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Roller speed",
+        "value": "450 RPM",
+        "meaning": "Mode and conditions affect actual cleaning.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Auto / Eco runtime",
+        "value": "Up to 100 minutes",
+        "meaning": "Measured in Auto mode with Eco suction.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Steam runtime",
+        "value": "Up to 30 minutes",
+        "meaning": "Use this mode-specific figure when planning steam cleaning.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Recline and clearance",
+        "value": "180° lay-flat / 12.5 cm",
+        "meaning": "Measure the entire under-furniture route.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Steering",
+        "value": "SlideTech 2.0 powered wheels",
+        "meaning": "70° combined swivel claim; try handling around real furniture.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Edge system",
+        "value": "SensEdge AI arm / three-side 0 mm claim",
+        "meaning": "Laboratory edge coverage is not a guarantee for every corner.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Machine dimensions",
+        "value": "265 × 250 × 1,100 mm",
+        "meaning": "Docked footprint and service access require extra space.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      },
+      {
+        "label": "Dock drying",
+        "value": "5-minute fast / 30-minute quiet",
+        "meaning": "The 95°C dock claim refers to hot air inside the duct, not water.",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Global · announcement",
+        "amount": "Not verified",
+        "source": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2",
+        "kind": "Announcement status",
+        "date": "2026-09-10",
+        "note": "Exact regional price and delivery commitment not established."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock F25 Ultra Steam Gen 2",
+          "url": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock F25 ACE Pro",
+          "url": "https://global.roborock.com/pages/roborock-f25-ace-pro",
+          "market": "Global"
+        },
+        {
+          "name": "Dyson PencilWash",
+          "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Main cleaning approach",
+          "values": [
+            "Steam / hot-water washer",
+            "JetFoaming wet-and-dry washer",
+            "Motorized wet roller"
+          ]
+        },
+        {
+          "label": "Headline runtime context",
+          "values": [
+            "100 min Auto/Eco; 30 min Steam",
+            "60 min Eco",
+            "Up to 30 min"
+          ]
+        },
+        {
+          "label": "Recline",
+          "values": [
+            "180°",
+            "180°",
+            "170°"
+          ]
+        },
+        {
+          "label": "Roller pressure claim",
+          "values": [
+            "33 N",
+            "30 N",
+            "Not listed in cited specification"
+          ]
+        },
+        {
+          "label": "Roller care",
+          "values": [
+            "Dock washing and heated drying",
+            "Dock washing and heated drying",
+            "Manual washing; at least 24 h air drying"
+          ]
+        }
+      ],
+      "takeaway": "Compare the intended cleaning mode and care routine. A long Eco runtime cannot establish steam endurance, and hotter components do not automatically make a cleaner suitable for every floor."
+    },
+    "resources": [
+      {
+        "label": "Global specification and test conditions",
+        "url": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Official IFA 2026 lineup",
+        "url": "https://au.roborock.com/pages/ifa-2026",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · F25 ACE Pro",
+        "url": "https://global.roborock.com/pages/roborock-f25-ace-pro",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "ecovacs-goat-a3000-lidar-pro": {
+    "verdict": "A strong candidate when an integrated edge trimmer and wider cutting path address a real lawn-care workload. Resolve the inconsistent slope summary and verify access before purchasing.",
+    "notFor": "A site requiring guaranteed boundary performance on steep ground, unattended operation around people or access inferred from cutting width alone.",
+    "specifications": [
+      {
+        "label": "Navigation",
+        "value": "HoloScope 360 dual LiDAR",
+        "meaning": "360° rotating LiDAR plus 3D ToF; no RTK antenna installation.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Obstacle system",
+        "value": "AIVI 3D · vision and LiDAR",
+        "meaning": "Recognition claims are not a guarantee for people, animals or every object.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Edge hardware",
+        "value": "Integrated TruEdge trimmer",
+        "meaning": "Install the included trimmer module as instructed.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Power platform",
+        "value": "32 V",
+        "meaning": "Platform voltage, not battery capacity or cutting power.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Main cutting layout",
+        "value": "Dual blade discs",
+        "meaning": "A wider cutting format than the O1200 PRO.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Cutting width",
+        "value": "33 cm",
+        "meaning": "Plan access using the full mower dimensions, not cutting width.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Cutting height",
+        "value": "30–90 mm",
+        "meaning": "Seven electronic settings in 10 mm increments.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Battery capacity",
+        "value": "7,500 mAh",
+        "meaning": "Capacity alone does not establish daily lawn coverage.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 70 minutes",
+        "meaning": "Published charging reference, subject to conditions.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Charging power",
+        "value": "189 W",
+        "meaning": "Charging specification; not the blade motor rating.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Mowing efficiency claim",
+        "value": "250–400 m² per hour",
+        "meaning": "Varies with travel speed; turns and obstacles reduce productive time.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Maximum travel speed",
+        "value": "0.7 m/s",
+        "meaning": "Top speed does not equal whole-lawn average speed.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Working slope",
+        "value": "50% / 27° in technical table",
+        "meaning": "A summary bullet conflicts at 15°; confirm the regional manual.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Boundary slope",
+        "value": "Up to 20%",
+        "meaning": "A lower limit than the working-area slope; not 20 degrees.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Obstacle crossing",
+        "value": "Up to 4 cm",
+        "meaning": "Do not assume steps or every raised border are traversable.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      },
+      {
+        "label": "Water-resistance ratings",
+        "value": "IPX6 mower / IPX4 station",
+        "meaning": "Different components have different ratings; follow cleaning instructions.",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 2,499.99",
+        "source": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Base mower listing; distinguish care-kit bundles and verify stock, tax and delivery."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS GOAT A3000 LiDAR PRO",
+          "url": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS GOAT O1200 LiDAR PRO",
+          "url": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro",
+          "market": "Germany"
+        },
+        {
+          "name": "Mammotion YUKA mini 2 1000",
+          "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower",
+          "market": "United Kingdom"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Main cut width",
+          "values": [
+            "33 cm / dual discs",
+            "22 cm",
+            "19 cm"
+          ]
+        },
+        {
+          "label": "Cutting height",
+          "values": [
+            "30–90 mm",
+            "30–80 mm",
+            "20–60 mm"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "7.5 Ah",
+            "5.2 Ah",
+            "6.1 Ah"
+          ]
+        },
+        {
+          "label": "Edge approach",
+          "values": [
+            "Integrated TruEdge trimmer",
+            "Integrated TruEdge trimmer",
+            "Main-deck boundary mowing"
+          ]
+        },
+        {
+          "label": "Working-slope claim",
+          "values": [
+            "50% / 27°; conflicting 15° summary",
+            "45% / 24°",
+            "45% / 24°"
+          ]
+        }
+      ],
+      "takeaway": "The PRO trimmer and wider deck are tangible hardware distinctions. Evaluate boundary geometry and the exact regional height range before comparing productivity or slope headlines."
+    },
+    "resources": [
+      {
+        "label": "US exact-model store and specifications",
+        "url": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "US PRO-series launch · February 10, 2026",
+        "url": "https://www.prnewswire.com/news-releases/ecovacs-launches-goat-pro-lidar-series-with-first-ever-built-in-ai-edge-trimmer-its-most-complete-autonomous-lawn-care-solution-yet---available-now-302683131.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "European launch and regional model context",
+        "url": "https://www.presseportal.de/pm/114369/6214114",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "ecovacs-goat-o1200-lidar-pro": {
+    "verdict": "A relevant compact PRO option when an integrated trimmer and narrower access suit the lawn. Confirm a real O1200 offer and local support before ordering.",
+    "notFor": "A buyer needing immediate verified German stock, a mower selected only by its model number or guaranteed passage through a gate with no clearance margin.",
+    "specifications": [
+      {
+        "label": "Navigation",
+        "value": "HoloScope 360 dual LiDAR",
+        "meaning": "Rotating 360° LiDAR plus 3D ToF.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Positioning claim",
+        "value": "2 cm accuracy",
+        "meaning": "Manufacturer claim; verify the map against actual boundaries.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Obstacle sensing",
+        "value": "AIVI 3D · AI vision + 3D ToF",
+        "meaning": "Recognition assistance does not replace a clear operating area.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Recognized objects",
+        "value": "200+ types claimed",
+        "meaning": "Not a guarantee of wildlife or pet detection.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Edge hardware",
+        "value": "Integrated TruEdge trimmer",
+        "meaning": "An active trimming mechanism, not simply driving over a paved edge.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Narrow-path claim",
+        "value": "0.8 m",
+        "meaning": "Laboratory result; grass, geometry and terrain can change passage success.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Working slope",
+        "value": "45% / 24°",
+        "meaning": "Working-area claim; do not infer an identical boundary limit.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Obstacle crossing",
+        "value": "Up to 3 cm",
+        "meaning": "Check the actual surface, approach and border geometry.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Cutting width",
+        "value": "22 cm",
+        "meaning": "The full mower needs more clearance than the cut width.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Cutting height",
+        "value": "30–80 mm",
+        "meaning": "11 settings in 5 mm increments.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Battery capacity",
+        "value": "5,200 mAh",
+        "meaning": "Does not establish complete-lawn coverage on one charge.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Published net weight",
+        "value": "13 kg",
+        "meaning": "Check lifting comfort and the fully assembled configuration.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "706 × 430 × 285 mm",
+        "meaning": "Allow approach space and access for cleaning.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Map editing",
+        "value": "Add, merge, split and delete zones",
+        "meaning": "Review the result before unattended scheduled work.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Setup methods",
+        "value": "Automatic or remote-controlled mapping",
+        "meaning": "Wire-free setup still requires boundary and exclusion checks.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      },
+      {
+        "label": "Mower water resistance",
+        "value": "IPX6",
+        "meaning": "Follow the cleaning procedure; do not assume every accessory has this rating.",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany",
+        "amount": "EUR 999",
+        "source": "https://www.presseportal.de/pm/114369/6214114",
+        "kind": "Manufacturer launch RRP",
+        "date": "2026-09-10",
+        "note": "Manufacturer launch RRP; not a currently purchasable store offer."
+      },
+      {
+        "market": "Germany",
+        "amount": "Not verified",
+        "source": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro",
+        "kind": "Current availability check",
+        "date": "2026-09-10",
+        "note": "Exact model marked unavailable; the promoted A1600 alternative has a separate price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS GOAT O1200 LiDAR PRO",
+          "url": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro",
+          "market": "Germany"
+        },
+        {
+          "name": "ECOVACS GOAT A3000 LiDAR PRO",
+          "url": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro",
+          "market": "United States"
+        },
+        {
+          "name": "Mammotion YUKA mini 2 1000",
+          "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower",
+          "market": "United Kingdom"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cutting width",
+          "values": [
+            "22 cm",
+            "33 cm / dual discs",
+            "19 cm"
+          ]
+        },
+        {
+          "label": "Height range",
+          "values": [
+            "30–80 mm",
+            "30–90 mm",
+            "20–60 mm"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "5.2 Ah",
+            "7.5 Ah",
+            "6.1 Ah"
+          ]
+        },
+        {
+          "label": "Edge hardware",
+          "values": [
+            "Integrated TruEdge trimmer",
+            "Integrated TruEdge trimmer",
+            "Main-deck boundary mowing"
+          ]
+        },
+        {
+          "label": "Narrow-path evidence",
+          "values": [
+            "0.8 m lab claim",
+            "Confirm exact regional installation clearance",
+            "0.55 m manufacturer claim"
+          ]
+        }
+      ],
+      "takeaway": "Use cut width, access and edge hardware to compare the designs. A narrow-passage headline and an old launch price are not substitutes for a site check and a current exact-model quotation."
+    },
+    "resources": [
+      {
+        "label": "German exact-model specification and availability",
+        "url": "https://www.ecovacs.com/de/shop/goat-robotic-lawn-mower/goat-o1200-lidar-pro",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "European manufacturer launch and RRP",
+        "url": "https://www.presseportal.de/pm/114369/6214114",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · A3000 LiDAR PRO",
+        "url": "https://www.ecovacs.com/us/shop/goat-robotic-lawn-mower/goat-a3000-lidar-pro",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "mammotion-yuka-mini-2-1000": {
+    "verdict": "A compact LiDAR candidate for an appropriately sized lawn without an AWD requirement. Compare real access, charging cycles and the UK cutting-height range before ordering.",
+    "notFor": "A buyer needing LUBA-style AWD, a guaranteed 1,000 m² single-charge cut or specifications copied from the 800 or 1000H.",
+    "specifications": [
+      {
+        "label": "Recommended lawn",
+        "value": "Up to 1,000 m²",
+        "meaning": "A maintained-lawn rating, not one-charge coverage.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR + dual AI cameras",
+        "meaning": "This guide covers the 1000 LiDAR configuration.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "LiDAR field of view",
+        "value": "360° × 45°",
+        "meaning": "Sensor geometry does not remove mapping limitations.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "LiDAR range",
+        "value": "Up to 60 m",
+        "meaning": "Manufacturer sensing-range claim, not a safe boundary distance.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Drive",
+        "value": "Rear-wheel drive",
+        "meaning": "Do not transfer LUBA AWD traction claims.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Working slope",
+        "value": "45% / 24°",
+        "meaning": "Conditions and boundary geometry affect usable operation.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Battery",
+        "value": "6.1 Ah / 21.6 V platform",
+        "meaning": "Distinct from the lawn-size rating.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Runtime claim",
+        "value": "Up to 2.5 hours",
+        "meaning": "Manufacturer conditions; terrain and cutting load affect duration.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Coverage per charge",
+        "value": "Up to 250 m²",
+        "meaning": "Completing the rated lawn can require multiple charge cycles.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Narrow passage",
+        "value": "55 cm claim",
+        "meaning": "Verify the route, entry angle and practical clearance.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Cutting width",
+        "value": "190 mm",
+        "meaning": "A compact deck; full-body clearance is a different measurement.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Cutting height",
+        "value": "20–60 mm",
+        "meaning": "UK 1000 specification; do not import 1000H settings.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Blade arrangement",
+        "value": "5 pivoting blades",
+        "meaning": "Inspect and replace according to the regional instructions.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Zone management",
+        "value": "Up to 10 zones",
+        "meaning": "Zones are separate from saved-map backup capacity.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "Saved maps",
+        "value": "Up to 10 cloud-backed lawn maps",
+        "meaning": "Saved maps do not mean simultaneous mowing of ten sites.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      },
+      {
+        "label": "DropMow",
+        "value": "One-time mowing without changing the main map",
+        "meaning": "Requires an appropriate, checked operating area.",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom",
+        "amount": "GBP 999",
+        "source": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Selected UK 1000 offer; confirm current stock, delivery and package."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Mammotion YUKA mini 2 1000",
+          "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Mammotion LUBA mini 2 AWD 1500",
+          "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500",
+          "market": "Europe · LiDAR revision"
+        },
+        {
+          "name": "Segway Navimow i215 LiDAR",
+          "url": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Recommended lawn",
+          "values": [
+            "1,000 m²",
+            "1,500 m²",
+            "0.37 acre / about 1,500 m²"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "360° LiDAR + dual cameras",
+            "360° LiDAR + dual cameras",
+            "Solid-state LiDAR + vision"
+          ]
+        },
+        {
+          "label": "Drive distinction",
+          "values": [
+            "Rear-wheel drive",
+            "AWD",
+            "ESC traction control; not the i2 AWD model"
+          ]
+        },
+        {
+          "label": "Working-slope claim",
+          "values": [
+            "45% / 24°",
+            "80%",
+            "45% / 24°"
+          ]
+        },
+        {
+          "label": "Zone capacity",
+          "values": [
+            "10",
+            "20",
+            "20"
+          ]
+        }
+      ],
+      "takeaway": "Shared LiDAR language does not make drive systems equal. Choose around terrain, route width and cutting-height requirements, then compare the regional package and service."
+    },
+    "resources": [
+      {
+        "label": "UK 1000 specification and selected price",
+        "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 range introduction",
+        "url": "https://www.prnewswire.com/news-releases/mammotion-takes-stage-at-ces-2026-with-its-game-changing-robotic-lawn-mowing-lineup-ushering-in-the-next-era-of-autonomous-lawn-mastery-302652397.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · LUBA mini 2 AWD 1500",
+        "url": "https://eu.mammotion.com/products/luba-mini-2-awd-1500",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "segway-navimow-i215-lidar": {
+    "verdict": "A relevant LiDAR option for a suitable 0.37-acre lawn. Validate the map and access, then compare its actual terrain performance with the separate i2 AWD design.",
+    "notFor": "A purchase based on multiplied zone capacity, an assumed AWD drivetrain or noise measured under real cutting conditions that the cited test does not establish.",
+    "specifications": [
+      {
+        "label": "Recommended lawn",
+        "value": "Up to 0.37 acre / about 1,500 m²",
+        "meaning": "Use the recommended figure for normal workload planning.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Maximum mapped area",
+        "value": "Up to 0.44 acre",
+        "meaning": "Depends on layout; total across all zones, not per zone.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Navigation",
+        "value": "Solid-state LiDAR + vision",
+        "meaning": "No external RTK antenna installation for this model.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "LiDAR scan claim",
+        "value": "About 200,000 points per second",
+        "meaning": "Sensor throughput is not a whole-lawn reliability score.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Map interface",
+        "value": "GeoSketch real-scene map",
+        "meaning": "Inspect generated boundaries against the actual site.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Obstacle system",
+        "value": "VisionFence",
+        "meaning": "Obstacle recognition does not guarantee detection of every hazard.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Traction control",
+        "value": "ESC with off-road wheels",
+        "meaning": "Do not transfer the separate i2 AWD drive specification.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Working slope",
+        "value": "45% / 24°",
+        "meaning": "Tested on dry grass at 1.97 in height without obstacles.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Narrow-path claim",
+        "value": "2.3 ft / about 70 cm",
+        "meaning": "Confirm entry turns and full-body clearance.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Cutting motor claim",
+        "value": "100 W peak",
+        "meaning": "Peak motor rating, not continuous electrical consumption.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Blade arrangement",
+        "value": "6 blades",
+        "meaning": "Use exact-model replacement parts and safe maintenance procedures.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Edge approach",
+        "value": "EdgeSense ride-on mowing",
+        "meaning": "A different mechanism from a separate integrated line trimmer.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Zone management",
+        "value": "Up to 20 zones",
+        "meaning": "All zones share the total map allowance.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Disconnected areas",
+        "value": "Isolated Zone Mapping",
+        "meaning": "Mapping does not physically transport the mower between areas.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Machine dimensions",
+        "value": "25.0 × 17.5 × 11.3 in",
+        "meaning": "Reserve practical clearance around obstacles.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      },
+      {
+        "label": "Noise claim",
+        "value": "59 dB(A), laboratory no-load test",
+        "meaning": "Measured without cutting; not a mowing-noise guarantee.",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 1,599",
+        "source": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Base i215 LiDAR selected offer; the garage bundle is priced separately."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Segway Navimow i215 LiDAR",
+          "url": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower",
+          "market": "United States"
+        },
+        {
+          "name": "Segway Navimow i210 AWD",
+          "url": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001",
+          "market": "United States"
+        },
+        {
+          "name": "Mammotion YUKA mini 2 1000",
+          "url": "https://uk.mammotion.com/products/yuka-mini-2-1000-robot-lawn-mower",
+          "market": "United Kingdom"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Recommended lawn",
+          "values": [
+            "0.37 acre",
+            "0.25 acre",
+            "1,000 m²"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "Solid-state LiDAR + vision",
+            "Network RTK + vision",
+            "360° LiDAR + dual cameras"
+          ]
+        },
+        {
+          "label": "Drive distinction",
+          "values": [
+            "ESC traction control",
+            "Xero-Turn AWD",
+            "Rear-wheel drive"
+          ]
+        },
+        {
+          "label": "Working-slope claim",
+          "values": [
+            "45% / 24°",
+            "45% / about 24°",
+            "45% / 24°"
+          ]
+        },
+        {
+          "label": "Narrow-route information",
+          "values": [
+            "2.3 ft passage claim",
+            "Check model-specific route instructions",
+            "55 cm passage claim"
+          ]
+        }
+      ],
+      "takeaway": "Similar slope headlines can describe different drive systems and test conditions. Select for actual terrain and map reliability, then check the local cutting range and service package."
+    },
+    "resources": [
+      {
+        "label": "US i215 LiDAR specification and selected offer",
+        "url": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 manufacturer introduction",
+        "url": "https://www.prnewswire.com/news-releases/segway-navimow-expands-robotic-mower-lineup-with-smarter-more-effortless-lawn-care-solutions-debuting-at-ces-2026-302653790.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · i210 AWD",
+        "url": "https://navimow.com/products/navimow-i2-awd-robot-lawn-mower?variant=45014242853001",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "ecovacs-winbot-mini-2": {
+    "verdict": "A useful compact option for suitable accessible panes if manual pad care and an attached power cable fit the routine. Measure the actual glass and plan safe placement and retrieval first.",
+    "notFor": "Cordless cleaning, unattended operation, unsuitable glass or a buyer expecting an OMNI self-washing station.",
+    "specifications": [
+      {
+        "label": "Robot dimensions",
+        "value": "215 × 215 × 55 mm",
+        "meaning": "Check the whole route and space near handles or guards.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Robot weight",
+        "value": "1.3 ± 0.1 kg",
+        "meaning": "Does not remove the need for secure placement and retrieval.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Minimum pane",
+        "value": "25 × 25 cm",
+        "meaning": "Actual shape, obstacles and usable area still matter.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Listed surface format",
+        "value": "Flat glass; framed or frameless",
+        "meaning": "Use the manual’s full surface and environmental restrictions.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Corner hardware",
+        "value": "Four corner brushes",
+        "meaning": "Inspect for trapped grit before cleaning glass.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Spray system",
+        "value": "Dual-direction ultrasonic atomization",
+        "meaning": "Use the approved fluid and filling procedure.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Navigation",
+        "value": "WIN-SLAM 4.0",
+        "meaning": "Path planning does not remove supervision requirements.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Maximum suction claim",
+        "value": "8,000 Pa",
+        "meaning": "Adhesion-related figure, not a cleaning-performance score.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Moving suction reference",
+        "value": "3,400 Pa",
+        "meaning": "Different from the maximum headline value.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Onboard liquid tank",
+        "value": "About 50 ml",
+        "meaning": "Manual capacity; the 230 ml supplied solution is a separate bottle.",
+        "source": "https://site-static.ecovacs.com/upload/file/support/2026/04/16/074544_5981$WINBOTmini2InstructionManualUS.pdf"
+      },
+      {
+        "label": "Rated input",
+        "value": "24 V / 66 W",
+        "meaning": "Use the correct supplied regional power arrangement.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Safety battery",
+        "value": "3,000 mAh / 3.6 V",
+        "meaning": "Backup protection, not a cordless-cleaning battery specification.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Power-loss protection",
+        "value": "30 minutes listed",
+        "meaning": "Retrieve safely; do not continue a normal cleaning session without power.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Safety-battery charging",
+        "value": "About 3 hours",
+        "meaning": "The manual requires a fully charged battery before use.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Power cable",
+        "value": "4.7 m total",
+        "meaning": "Published total comprises 3.5 m DC and 1.2 m AC cord.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      },
+      {
+        "label": "Safety rope",
+        "value": "3.3 m",
+        "meaning": "Secure according to the manual and keep the area below clear.",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 239.99",
+        "source": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Base mini 2 offer on the verification date; accessories and delivery may change the total."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS WINBOT mini 2",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS WINBOT W2S PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w2s-pro-omni",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS WINBOT W3 OMNI",
+          "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Robot size",
+          "values": [
+            "215 × 215 × 55 mm",
+            "272 × 272 × 76 mm",
+            "270 × 270 × 76 mm"
+          ]
+        },
+        {
+          "label": "Onboard liquid tank",
+          "values": [
+            "About 50 ml",
+            "120 ml",
+            "80 ml"
+          ]
+        },
+        {
+          "label": "Pad care",
+          "values": [
+            "Manual washing",
+            "Manual washing",
+            "Vortex Wash station"
+          ]
+        },
+        {
+          "label": "Away-from-outlet cleaning",
+          "values": [
+            "No; adapter-powered",
+            "Up to 110 min from station battery",
+            "Up to 130 min from station battery"
+          ]
+        },
+        {
+          "label": "Cable reference",
+          "values": [
+            "4.7 m total power cable",
+            "5.5 m compound cable",
+            "5.5 m compound cable"
+          ]
+        }
+      ],
+      "takeaway": "Mini 2 trades station automation for a smaller robot and simpler transport. Backup holding time is not comparable to cleaning powered by an OMNI station battery."
+    },
+    "resources": [
+      {
+        "label": "US exact-model store and specifications",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "US instruction manual",
+        "url": "https://site-static.ecovacs.com/upload/file/support/2026/04/16/074544_5981$WINBOTmini2InstructionManualUS.pdf",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "European manufacturer announcement and release date",
+        "url": "https://www.presseportal.de/pm/114369/6214114",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }

@@ -1348,6 +1348,24 @@
         "outputHash": "sha256:39791e12825b357de515f052f2bf5ae5faa34cda0a6e7d6a3cf6aa8ae03f0d2b"
       }
     },
+    "/images/articles/dreame-aqua20-pro-ultra-roller-x-complete/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 708,
+      "bytes": 41490,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f65d77c64fd33facdefe67d902651fcd3a9f043adc31cbb1dd6385b517352dc6",
+      "outputHash": "sha256:d61e9423cbae618b108cf78721836764fa611a6a7f7349b5f0b6d64eb5efdea8",
+      "mobile": {
+        "src": "/images/articles/dreame-aqua20-pro-ultra-roller-x-complete/01-cover-800.webp",
+        "width": 800,
+        "height": 354,
+        "bytes": 14826,
+        "outputHash": "sha256:b717ef94161f0c9e46abacbdd798e94252ebdde95c54f9149f3cae4872981983"
+      }
+    },
     "/images/articles/dreame-douyin-counterattack-against-tineco/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1454,6 +1472,24 @@
         "height": 800,
         "bytes": 7552,
         "outputHash": "sha256:9f19d34eb9560dc5f7a1508fe8df5f5ad41b5f7278cd698efd4b6e76db6e0c0a"
+      }
+    },
+    "/images/articles/dreame-z30-pro-aqua-a/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 24068,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:811a5fbfa8a62553272254051d922c3399bd99512ace9db9f28700a64671f484",
+      "outputHash": "sha256:d6a76a02d4502790d57112bb07127ecad930bb40e3d488272435b46e79c77aeb",
+      "mobile": {
+        "src": "/images/articles/dreame-z30-pro-aqua-a/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 14808,
+        "outputHash": "sha256:36a3e4efa416ec64b792f9ee2e93e24269b0f14b8356fc36ec9d58e1ad8aee5a"
       }
     },
     "/images/articles/dyson-camerajet-toothbrush-review/01-cover.webp": {
@@ -1651,6 +1687,28 @@
       "sourceHash": "sha256:5fa766b680d8e4f38b080dd1d511f14fe7c61d2377a365a78cdd6a901dde1f73",
       "outputHash": "sha256:809ca94d19305ad02047dfc173db5a3cf667251869936dbcb2c4e0aeb65a98c6"
     },
+    "/images/articles/ecovacs-goat-a3000-lidar-pro/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 920,
+      "height": 920,
+      "bytes": 52270,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:55d4cae1204b84b9745995aaa23d10a67673b3aaf660e9bdcaf1091c90bccf0a",
+      "outputHash": "sha256:1174cc2931c0e41dd79635fb135381eb122dd8c0cececc61872bc77a8c7d1cf8"
+    },
+    "/images/articles/ecovacs-goat-o1200-lidar-pro/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 920,
+      "height": 920,
+      "bytes": 58206,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8b688acfc7744d749cac431bbcc6025be91cd63d3d2e3747dd2abd03cf982849",
+      "outputHash": "sha256:05f14fe90dfbe33ebd3c8d8580026b5555ffcd1f686f0aa96145f7226c531f4b"
+    },
     "/images/articles/ecovacs-ultramarine-p1/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -1661,6 +1719,17 @@
       "quality": 90,
       "sourceHash": "sha256:1174165b4efda8f0a12f3ce4b9cafe162bc0c8eabd9d6b84ed38e45273ef2468",
       "outputHash": "sha256:aa5cc2fee7e32486216241bbec1969768c08e0958093a093cce2f7cde8e40e9e"
+    },
+    "/images/articles/ecovacs-winbot-mini-2/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 920,
+      "height": 920,
+      "bytes": 37922,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1be3a9c9f38d7921af21dc35c96cd594a7927633b3f0d3f7aca4975b74ca9fea",
+      "outputHash": "sha256:67aff071d6abfea3444cc7483674faf7b02835cc250e18e2bc922d8e5b800c99"
     },
     "/images/articles/ecovacs-winbot-w2s-pro-omni/01-cover.webp": {
       "role": "cover",
@@ -2944,6 +3013,17 @@
         "outputHash": "sha256:343bbf508f6799942eaf6894a37c2792c6e8bb1dd7480fe09f7123481162b3e8"
       }
     },
+    "/images/articles/mammotion-yuka-mini-2-1000/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 800,
+      "height": 800,
+      "bytes": 23496,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c7e2f34bdb0703fbfee2013f3b05cee88095bccbce15371e99b2f25e89fa71ce",
+      "outputHash": "sha256:5533c2024905b9598176dcef530aaa4edcc3ebd72b833a6655c67233869a512a"
+    },
     "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3458,6 +3538,17 @@
       "quality": 90,
       "sourceHash": "sha256:c9dd12ac26eab1cbbbed212be6cf7e452ce5d3c9c45ee3cfaa8c1b6627815391",
       "outputHash": "sha256:eea95effc7d3d50a494c28e454e7539fcd91124cc293196b2eb117ee5a852b4a"
+    },
+    "/images/articles/roborock-f25-ultra-steam-gen-2/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 19192,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ee3c6e95584def9dfd3a2c9133bf89ca41e08184f10aa6532f8fa467f571a7ff",
+      "outputHash": "sha256:229e3f78db9a330a97dbe410428c91ab0d2a5488ab429a25ff0973a44c1e8a02"
     },
     "/images/articles/roborock-qrevo-curv-2-flow/01-cover.webp": {
       "role": "cover",
@@ -4667,6 +4758,24 @@
         "height": 800,
         "bytes": 42730,
         "outputHash": "sha256:d71a4f70f34535004d6c86ea121d8ae9c75fc7b04272aa735b0b5601dd0c8ecd"
+      }
+    },
+    "/images/articles/segway-navimow-i215-lidar/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1500,
+      "height": 1500,
+      "bytes": 154138,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ed4b13c1f0bb75e3c3c9d905253a9e063d3d1b3531a39500c455ac81e0765881",
+      "outputHash": "sha256:75dc720aaa2c2162fcb8d410fb8475e38fb86be7f3c2b85c39963736c5a75617",
+      "mobile": {
+        "src": "/images/articles/segway-navimow-i215-lidar/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 45748,
+        "outputHash": "sha256:31db764340e0d958d66ea67aeaac888ed16793665c514530e14c3ce2289aece6"
       }
     },
     "/images/articles/segway-navimow-x430/01-cover.webp": {
@@ -32375,6 +32484,11 @@
       "cover": "/images/blog/dreame-a2-vs-ecovacs-goat-a3000-lidar.webp",
       "body": []
     },
+    "dreame-aqua20-pro-ultra-roller-x-complete": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-aqua20-pro-ultra-roller-x-complete/01-cover.webp",
+      "body": []
+    },
     "dreame-douyin-counterattack-against-tineco": {
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-douyin-counterattack-against-tineco/01-cover.webp",
@@ -32416,6 +32530,11 @@
     "dreame-x60-ultra": {
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-x60-ultra/01-cover.webp",
+      "body": []
+    },
+    "dreame-z30-pro-aqua-a": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-z30-pro-aqua-a/01-cover.webp",
       "body": []
     },
     "dyson-at-a-crossroads": {
@@ -32674,6 +32793,16 @@
       "cover": "/images/articles/ecovacs-deebot-x12s-omnicyclone/01-cover.webp",
       "body": []
     },
+    "ecovacs-goat-a3000-lidar-pro": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-goat-a3000-lidar-pro/01-cover.webp",
+      "body": []
+    },
+    "ecovacs-goat-o1200-lidar-pro": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-goat-o1200-lidar-pro/01-cover.webp",
+      "body": []
+    },
     "ecovacs-invests-in-battery-cell-factory": {
       "budgetClass": "standard",
       "cover": "/images/insights/ecovacs-invests-in-battery-cell-factory-cover.jpg",
@@ -32699,6 +32828,11 @@
     "ecovacs-ultramarine-p1": {
       "budgetClass": "standard",
       "cover": "/images/articles/ecovacs-ultramarine-p1/01-cover.webp",
+      "body": []
+    },
+    "ecovacs-winbot-mini-2": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-winbot-mini-2/01-cover.webp",
       "body": []
     },
     "ecovacs-winbot-w2s-pro-omni": {
@@ -33504,6 +33638,11 @@
       "cover": "/images/blog/mammotion-luba-vs-yuka-robot-mowers.webp",
       "body": []
     },
+    "mammotion-yuka-mini-2-1000": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mammotion-yuka-mini-2-1000/01-cover.webp",
+      "body": []
+    },
     "maytronics-fimi-sale-pool-robot-leader": {
       "budgetClass": "standard",
       "cover": "/images/articles/maytronics-fimi-sale-pool-robot-leader/01-cover.webp",
@@ -33847,6 +33986,11 @@
     "roborock-f25-ace-pro": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-f25-ace-pro/01-cover.webp",
+      "body": []
+    },
+    "roborock-f25-ultra-steam-gen-2": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-f25-ultra-steam-gen-2/01-cover.webp",
       "body": []
     },
     "roborock-ipo-prospectus-signals": {
@@ -34517,6 +34661,11 @@
     "segway-navimow-i210-awd": {
       "budgetClass": "standard",
       "cover": "/images/articles/segway-navimow-i210-awd/01-cover.webp",
+      "body": []
+    },
+    "segway-navimow-i215-lidar": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/segway-navimow-i215-lidar/01-cover.webp",
       "body": []
     },
     "segway-navimow-vs-husqvarna-automower": {
@@ -36105,12 +36254,30 @@
         }
       }
     },
+    "dreame-aqua20-pro-ultra-roller-x-complete": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-aqua20-pro-ultra-roller-x-complete/01-cover.webp",
+          "hash": "sha256:f65d77c64fd33facdefe67d902651fcd3a9f043adc31cbb1dd6385b517352dc6"
+        }
+      }
+    },
     "dreame-x60-ultra": {
       "files": {
         "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/dreame-x60-ultra/01-cover.webp",
           "hash": "sha256:ce3bc1c9a3e3b08cf611142bdafa77fc7e9b31a04ae1dc78dc83a7dbd052e30c"
+        }
+      }
+    },
+    "dreame-z30-pro-aqua-a": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-z30-pro-aqua-a/01-cover.webp",
+          "hash": "sha256:811a5fbfa8a62553272254051d922c3399bd99512ace9db9f28700a64671f484"
         }
       }
     },
@@ -36206,12 +36373,39 @@
         }
       }
     },
+    "ecovacs-goat-a3000-lidar-pro": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-goat-a3000-lidar-pro/01-cover.webp",
+          "hash": "sha256:55d4cae1204b84b9745995aaa23d10a67673b3aaf660e9bdcaf1091c90bccf0a"
+        }
+      }
+    },
+    "ecovacs-goat-o1200-lidar-pro": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-goat-o1200-lidar-pro/01-cover.webp",
+          "hash": "sha256:8b688acfc7744d749cac431bbcc6025be91cd63d3d2e3747dd2abd03cf982849"
+        }
+      }
+    },
     "ecovacs-ultramarine-p1": {
       "files": {
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/ecovacs-ultramarine-p1/01-cover.webp",
           "hash": "sha256:1174165b4efda8f0a12f3ce4b9cafe162bc0c8eabd9d6b84ed38e45273ef2468"
+        }
+      }
+    },
+    "ecovacs-winbot-mini-2": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-winbot-mini-2/01-cover.webp",
+          "hash": "sha256:1be3a9c9f38d7921af21dc35c96cd594a7927633b3f0d3f7aca4975b74ca9fea"
         }
       }
     },
@@ -36517,6 +36711,15 @@
         }
       }
     },
+    "mammotion-yuka-mini-2-1000": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/mammotion-yuka-mini-2-1000/01-cover.webp",
+          "hash": "sha256:c7e2f34bdb0703fbfee2013f3b05cee88095bccbce15371e99b2f25e89fa71ce"
+        }
+      }
+    },
     "maytronics-fimi-sale-pool-robot-leader": {
       "files": {
         "01-cover.png": {
@@ -36650,6 +36853,15 @@
           "status": "matched",
           "primary": "/images/articles/roborock-f25-ace-pro/01-cover.webp",
           "hash": "sha256:c9dd12ac26eab1cbbbed212be6cf7e452ce5d3c9c45ee3cfaa8c1b6627815391"
+        }
+      }
+    },
+    "roborock-f25-ultra-steam-gen-2": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-f25-ultra-steam-gen-2/01-cover.webp",
+          "hash": "sha256:ee3c6e95584def9dfd3a2c9133bf89ca41e08184f10aa6532f8fa467f571a7ff"
         }
       }
     },
@@ -36974,6 +37186,15 @@
           "status": "matched",
           "primary": "/images/articles/segway-navimow-i210-awd/01-cover.webp",
           "hash": "sha256:080be40734ed677634a75be848a27553dc533f54d1cc7309cdaa17488021c66d"
+        }
+      }
+    },
+    "segway-navimow-i215-lidar": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/segway-navimow-i215-lidar/01-cover.webp",
+          "hash": "sha256:ed4b13c1f0bb75e3c3c9d905253a9e063d3d1b3531a39500c455ac81e0765881"
         }
       }
     },
