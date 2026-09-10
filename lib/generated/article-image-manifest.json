@@ -1611,6 +1611,17 @@
         "outputHash": "sha256:5538bc91aebe651d9c9f016e93cb3734007fe6d04fae881ed488849157d59e2b"
       }
     },
+    "/images/articles/ecovacs-deebot-x12s-omnicyclone/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 920,
+      "height": 920,
+      "bytes": 53464,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5fa766b680d8e4f38b080dd1d511f14fe7c61d2377a365a78cdd6a901dde1f73",
+      "outputHash": "sha256:809ca94d19305ad02047dfc173db5a3cf667251869936dbcb2c4e0aeb65a98c6"
+    },
     "/images/articles/ecovacs-ultramarine-p1/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -3514,6 +3525,42 @@
         "height": 533,
         "bytes": 46084,
         "outputHash": "sha256:f11781181cce228441c1b664782838b9ed962c639e2a60cc2f6fe869f321154a"
+      }
+    },
+    "/images/articles/roborock-rockaqua-p1/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1586,
+      "height": 892,
+      "bytes": 48308,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:109815e6fb2192247d131e48a8b9aca24f44b6236c927071a914ad9015ea160e",
+      "outputHash": "sha256:612e5cea8c27a92525b11005d912e2814e10ef019ce339c3dc275eee8aed1e81",
+      "mobile": {
+        "src": "/images/articles/roborock-rockaqua-p1/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15128,
+        "outputHash": "sha256:d7357a9e32fb0aee36aef1e040160961edc566ccd3f1f111e3f3f6ae2b18f8a9"
+      }
+    },
+    "/images/articles/roborock-saros-20-flow/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1586,
+      "height": 892,
+      "bytes": 28976,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9db4c53e461c79eeaf1465bdff8ef9b047597056410baeda4798205abcfa55f9",
+      "outputHash": "sha256:09a7a7eefc250403418a759cab97a6ce65e55c80a3aa555c06bbe59122b256eb",
+      "mobile": {
+        "src": "/images/articles/roborock-saros-20-flow/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 10552,
+        "outputHash": "sha256:8789cdf793fe1fbd76c60db2ea9f66e9518e35e140002374060b121b37173842"
       }
     },
     "/images/articles/roborock-saros-20-sonic/01-cover.webp": {
@@ -32489,6 +32536,11 @@
       "cover": "/images/articles/ecovacs-deebot-x12-omnicyclone/01-cover.webp",
       "body": []
     },
+    "ecovacs-deebot-x12s-omnicyclone": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-deebot-x12s-omnicyclone/01-cover.webp",
+      "body": []
+    },
     "ecovacs-invests-in-battery-cell-factory": {
       "budgetClass": "standard",
       "cover": "/images/insights/ecovacs-invests-in-battery-cell-factory-cover.jpg",
@@ -33701,6 +33753,11 @@
       "cover": "/images/blog/roborock-robot-mowers-dealer-rollout.webp",
       "body": []
     },
+    "roborock-rockaqua-p1": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-rockaqua-p1/01-cover.webp",
+      "body": []
+    },
     "roborock-rockaqua-p1-pool-robot": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-rockaqua-p1-pool-robot/01-cover.webp",
@@ -33726,6 +33783,11 @@
     "roborock-saros-20": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-saros-20/01-cover.webp",
+      "body": []
+    },
+    "roborock-saros-20-flow": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-saros-20-flow/01-cover.webp",
       "body": []
     },
     "roborock-saros-20-sonic": {
@@ -35954,6 +36016,15 @@
         }
       }
     },
+    "ecovacs-deebot-x12s-omnicyclone": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-deebot-x12s-omnicyclone/01-cover.webp",
+          "hash": "sha256:5fa766b680d8e4f38b080dd1d511f14fe7c61d2377a365a78cdd6a901dde1f73"
+        }
+      }
+    },
     "ecovacs-ultramarine-p1": {
       "files": {
         "01-cover.png": {
@@ -36365,6 +36436,15 @@
         }
       }
     },
+    "roborock-rockaqua-p1": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-rockaqua-p1/01-cover.webp",
+          "hash": "sha256:109815e6fb2192247d131e48a8b9aca24f44b6236c927071a914ad9015ea160e"
+        }
+      }
+    },
     "roborock-rockaqua-p1-pool-robot": {
       "files": {
         "01-cover.png": {
@@ -36395,6 +36475,15 @@
           "status": "matched",
           "primary": "/images/articles/roborock-saros-20/01-cover.webp",
           "hash": "sha256:09674840e614bd5679ddf1bdc58eedd8e4e28635ea4cb121b67c3067a81ff36a"
+        }
+      }
+    },
+    "roborock-saros-20-flow": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-saros-20-flow/01-cover.webp",
+          "hash": "sha256:9db4c53e461c79eeaf1465bdff8ef9b047597056410baeda4798205abcfa55f9"
         }
       }
     },
