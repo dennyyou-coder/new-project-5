@@ -66,6 +66,7 @@
       "roborock-vs-ecovacs-robot-vacuums"
     ],
     "related": [
+      "roborock-saros-20-flow",
       "roborock-saros-20-sonic",
       "dreame-x60-ultra",
       "ecovacs-deebot-x12-omnicyclone",
@@ -272,6 +273,7 @@
       "roborock-vs-ecovacs-robot-vacuums"
     ],
     "related": [
+      "ecovacs-deebot-x12s-omnicyclone",
       "roborock-saros-20",
       "dreame-x60-ultra",
       "ecovacs-deebot-t90-pro-omni"
@@ -719,6 +721,7 @@
       "robotic-pool-cleaner-product-roadmap"
     ],
     "related": [
+      "roborock-rockaqua-p1",
       "beatbot-aquasense-x",
       "wybot-s3",
       "mova-rover-x10"
@@ -1304,6 +1307,7 @@
       "roborock-vs-ecovacs-robot-vacuums"
     ],
     "related": [
+      "roborock-saros-20-flow",
       "roborock-saros-20",
       "dreame-x60-ultra",
       "ecovacs-deebot-t90-pro-omni"
@@ -1515,6 +1519,7 @@
       "robotic-pool-cleaners-leaves-fine-debris"
     ],
     "related": [
+      "roborock-rockaqua-p1",
       "beatbot-aquasense-x",
       "ecovacs-ultramarine-p1",
       "mova-rover-x10"
@@ -2169,5 +2174,308 @@
     "launchYear": 2026,
     "launchNote": "Listed as a 2026 new product in the official European collection; this guide follows the US PRO OMNI offer. The exact announcement day is not verified.",
     "launchSource": "https://www.ecovacs.com/de/shop/winbot-window-cleaning-robot"
+  },
+  {
+    "slug": "roborock-rockaqua-p1",
+    "name": "Roborock RockAqua P1",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Pool robots",
+    "market": "Europe · official preview",
+    "summary": "Roborock’s 2026 pool-robot preview, with shallow-platform cleaning, vision-guided debris detection and waterline parking. Price and full specifications remain unverified.",
+    "fit": "Pool owners planning a future purchase who need to assess sun shelves, awkward geometry and retrieval convenience.",
+    "caution": "Preview only: confirm local release, depth limits, runtime and service before purchase. US and European shallow-depth claims differ.",
+    "facts": [
+      {
+        "label": "Shallow-water depth",
+        "value": "15 cm · European preview",
+        "meaning": "Vertical water depth above the platform; manufacturer laboratory condition."
+      },
+      {
+        "label": "Water-flow claim",
+        "value": "6,800 GPH",
+        "meaning": "Manufacturer flow claim, not a standardized debris-removal score."
+      },
+      {
+        "label": "Debris basket",
+        "value": "4 L",
+        "meaning": "Leaf volume and filter clogging determine emptying frequency."
+      },
+      {
+        "label": "Product status",
+        "value": "Announced; full reveal pending",
+        "meaning": "The European page remains a preview rather than a priced retail listing."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is RockAqua P1 available to buy?",
+        "answer": "As checked on September 10, 2026, the cited European page still invites readers to await the full reveal. It does not establish a retail price or delivery date. An IFA announcement is not proof of local stock."
+      },
+      {
+        "question": "Does it clean a 15 cm sun shelf?",
+        "answer": "The European preview claims a minimum water depth of 15 cm above the platform, based on laboratory testing. The US IFA page instead says 8 inches. These are different published figures, not equivalent conversions; confirm the specification for the unit sold in your market."
+      },
+      {
+        "question": "Does waterline cleaning mean surface skimming?",
+        "answer": "No. Scrubbing the band where the wall meets the water is different from collecting leaves floating across the surface. Dedicated surface skimming is not verified in the cited P1 preview."
+      },
+      {
+        "question": "How does it compare with Aiper Scuba V3 Ultra?",
+        "answer": "Both advertise vision-guided pool cleaning. Aiper also explicitly lists surface cleaning, a 3.5 L basket and an 8,500 GPH flow claim. P1 lists a 4 L basket and 6,800 GPH. Those figures alone do not establish which removes more dirt in your pool."
+      },
+      {
+        "question": "How fine is the filter?",
+        "answer": "Roborock lists 180 μm and 70 μm layers. Mesh size describes filtration hardware; it does not promise complete removal of every fine particle, algae or dissolved contamination. Filter condition and water flow still matter."
+      },
+      {
+        "question": "Does it come back for retrieval automatically?",
+        "answer": "Roborock says Auto Waterline Parking operates at task completion or below 15% battery, with quick water release to aid lifting. Confirm where it parks in your pool; dry weight, timed parking behavior and fallback retrieval instructions are not verified here."
+      },
+      {
+        "question": "What should I confirm before ordering?",
+        "answer": "Ask for the regional manual, supported depth and surface limits, runtime by mode, charging conditions, weight, replacement filter and brush prices, and local warranty service. Do not substitute Roborock’s lawnmower warranty for a pool-robot warranty."
+      }
+    ],
+    "articles": [
+      "roborock-rockaqua-p1-pool-robot",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "aiper-scuba-v3-ultra",
+      "beatbot-sora-70"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "European official preview and limitations",
+        "url": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Official IFA 2026 introduction · US depth wording",
+        "url": "https://us.roborock.com/pages/ifa-2026"
+      },
+      {
+        "label": "Comparison reference · Aiper Scuba V3 Ultra",
+        "url": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      },
+      {
+        "label": "Comparison reference · Beatbot Sora 70",
+        "url": "https://beatbot.com/products/sora-70"
+      }
+    ],
+    "imageSource": "https://us.roborock.com/cdn/shop/files/RockAqua_P1_IFA_2026_PC_US.jpg?v=1786700525",
+    "launchYear": 2026,
+    "launchNote": "Shown in Roborock’s IFA 2026 lineup; the European product page still awaits a full reveal.",
+    "launchSource": "https://us.roborock.com/pages/ifa-2026"
+  },
+  {
+    "slug": "roborock-saros-20-flow",
+    "name": "Roborock Saros 20 Flow",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Robot vacuums",
+    "market": "Global specifications · US announcement",
+    "summary": "A 2026 roller-mop Saros with SpiraFlow 2.0, retractable LiDAR and a new RockDock. Compare Flow against Saros 20 and Sonic before choosing a cleaning system.",
+    "fit": "Hard-floor-heavy homes that value continuous roller rinsing, threshold mobility and automated mop care.",
+    "caution": "The 8.8 cm claim requires a qualifying double-layer threshold; regional price and delivery were not verified on the cited announcement pages.",
+    "facts": [
+      {
+        "label": "Mop system",
+        "value": "SpiraFlow 2.0 · 270 mm roller",
+        "meaning": "Continuous fresh-water rinsing during mopping."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "353 × 353 × 89.8 mm",
+        "meaning": "Global specification; allow extra furniture clearance."
+      },
+      {
+        "label": "Double-layer threshold",
+        "value": "4.5 + 4.3 cm, up to 8.8 cm combined",
+        "meaning": "Test requires first-layer width ≥20 cm; not a single 8.8 cm step."
+      },
+      {
+        "label": "Dock wash temperature",
+        "value": "Up to 100°C at heating module",
+        "meaning": "Not a claim that 100°C water reaches the floor."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is different from Saros 20 and Saros 20 Sonic?",
+        "answer": "Flow uses a continuously rinsed roller. Saros 20 uses two spinning pads; Sonic uses an extendable vibrating pad. They share a family name but differ in wet-cleaning hardware, body clearance, navigation and dock dimensions."
+      },
+      {
+        "question": "Can it climb a single 8.8 cm step?",
+        "answer": "That is not what the official claim establishes. The test describes two layers: a first rise up to 4.5 cm with at least 20 cm of width, followed by a second rise below 4.3 cm. It is not a staircase-cleaning capability."
+      },
+      {
+        "question": "Does it wash the floor with boiling water?",
+        "answer": "No such claim is established here. Roborock’s 100°C figure describes the dock heating module under specified conditions. The robot receives warm water after mop washing; the temperature at the floor is a different measurement."
+      },
+      {
+        "question": "Will it fit below furniture exactly 8.98 cm high?",
+        "answer": "Do not plan a friction-free fit at the exact limit. The official footnote allows slight passive compression and says scraping may occur. Measure the lowest obstruction along the route and leave clearance."
+      },
+      {
+        "question": "Does Flow detach its roller for carpets?",
+        "answer": "The cited Flow page specifies a protective shield and roller lift up to 15 mm. Saros 20 and Sonic separately advertise automatic mop detachment. Do not transfer that feature to Flow from the family name."
+      },
+      {
+        "question": "What is the price and release date?",
+        "answer": "The reviewed US page offers a subscription rather than a verified price or delivery promise. This guide records announcement status as of September 10, 2026. Check the exact local listing when purchasing; prices from Saros 20 or Sonic are not Flow prices."
+      },
+      {
+        "question": "What maintenance remains after the dock self-cleans?",
+        "answer": "Plan to empty and rinse the dirty-water tank, inspect the roller, brushes and filters, and follow the local manual for consumables. Roborock describes a 75° tilting roller for access and an easier-rinse waste tank, which assist maintenance rather than remove it."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "roborock-saros-20",
+      "roborock-saros-20-sonic",
+      "ecovacs-deebot-x12s-omnicyclone"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "Official global specifications and test footnotes",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Official US announcement and availability entry",
+        "url": "https://us.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "SpiraFlow 2.0 technology reference",
+        "url": "https://global.roborock.com/pages/roborock-spiraflow-2-0-pressurized-self-cleaning-system"
+      },
+      {
+        "label": "Official IFA 2026 launch context",
+        "url": "https://us.roborock.com/pages/ifa-2026"
+      },
+      {
+        "label": "Comparison reference · Saros 20",
+        "url": "https://global.roborock.com/pages/roborock-saros-20"
+      },
+      {
+        "label": "Comparison reference · Saros 20 Sonic",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-sonic"
+      }
+    ],
+    "imageSource": "https://us.roborock.com/cdn/shop/files/Saros_20_Flow_IFA_2026_PC_US.jpg?v=1787123080",
+    "launchYear": 2026,
+    "launchNote": "Introduced in Roborock’s September 2026 IFA lineup; regional price and delivery are not established by the reviewed pages.",
+    "launchSource": "https://us.roborock.com/pages/ifa-2026"
+  },
+  {
+    "slug": "ecovacs-deebot-x12s-omnicyclone",
+    "name": "ECOVACS DEEBOT X12S OmniCyclone",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Robot vacuums",
+    "market": "United States · OmniCyclone; UK launch reference",
+    "summary": "A 2026 bagless roller-mop flagship with 53 AW BLAST suction, FocusJet stain pretreatment and AGENT YIKO 3.0. Includes US price and X12 versus X12S buying context.",
+    "fit": "Mixed-floor homes wanting roller mopping and bagless dock collection, with space for regular water and filter care.",
+    "caution": "Bagless does not mean maintenance-free. Compare AW and Pa carefully, and distinguish OmniCyclone from the separate PRO OMNI version.",
+    "facts": [
+      {
+        "label": "Suction measurement",
+        "value": "53 AW BLAST",
+        "meaning": "Air watts are not pascals; do not rank this directly against Pa headlines."
+      },
+      {
+        "label": "Mop system",
+        "value": "OZMO ROLLER 3.0 · 10.6 in roller",
+        "meaning": "US listing; continuously rinsed roller mopping."
+      },
+      {
+        "label": "Dock dust collection",
+        "value": "Bagless PureCyclone 2.0",
+        "meaning": "Owner still empties the container and maintains filtration."
+      },
+      {
+        "label": "Charging top-up",
+        "value": "13% in 3 minutes",
+        "meaning": "During mop-cleaning intervals; not a full-charge time."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What changed from DEEBOT X12 to X12S?",
+        "answer": "The current US X12S page emphasizes 53 AW suction and AGENT YIKO 3.0, while the cited X12 page lists 22,000 Pa and YIKO 2.0. Both list OZMO ROLLER 3.0, FocusJet and bagless PureCyclone 2.0. Existing shared features should not be presented as all-new on X12S."
+      },
+      {
+        "question": "Is 53 AW stronger than 36,000 Pa?",
+        "answer": "Those numbers cannot be compared directly. Air watts describe air power while pascals describe pressure. They do not supply a common pickup score, and manufacturer test setups differ. Compare debris removal, brush behavior, carpet results and noise under comparable conditions."
+      },
+      {
+        "question": "Is OmniCyclone the same as X12S PRO OMNI?",
+        "answer": "No. ECOVACS lists separate versions. The cited X12S page explicitly limits PureCyclone 2.0 bagless collection to OmniCyclone. Confirm the full product suffix and station before ordering a bundle or replacement consumables."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "The US official store showed USD 999.99 on September 10, 2026 for the selected OmniCyclone package. ECOVACS’s UK launch release separately gives GBP 1,199 RRP. These are dated, regional references, not a currency-converted price guarantee or proof of stock in every country."
+      },
+      {
+        "question": "Does the dock remove all maintenance?",
+        "answer": "No. Automated roller washing, wastewater-system cleaning and bagless emptying reduce parts of the routine. You still manage dirty water, empty collected dust and inspect filters, rollers and brushes according to the local manual."
+      },
+      {
+        "question": "Does 212°F mean boiling water on my floor?",
+        "answer": "No. ECOVACS qualifies the number as the maximum temperature at the dock heating-module thermostat under specified conditions. Actual water temperature varies. It is not a claim that boiling water is applied directly to household floors."
+      },
+      {
+        "question": "Should an X12 owner upgrade immediately?",
+        "answer": "First identify a real limitation in the current machine. Roller mopping, FocusJet and bagless emptying are already listed for X12. A change in assistant version or headline suction unit alone does not establish a worthwhile improvement in your rooms."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "ecovacs-deebot-x12-omnicyclone",
+      "ecovacs-deebot-t90-pro-omni",
+      "roborock-saros-20-flow"
+    ],
+    "announced": "2026-09-04",
+    "verifiedAt": "2026-09-10",
+    "sources": [
+      {
+        "label": "Official US specifications and selling-price snapshot",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Official global X12S overview",
+        "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12s"
+      },
+      {
+        "label": "Manufacturer IFA 2026 release · UK pricing",
+        "url": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
+      },
+      {
+        "label": "Comparison reference · X12 OmniCyclone",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Comparison reference · T90 PRO OMNI",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni"
+      },
+      {
+        "label": "Separate X12S PRO OMNI variant",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-pro-omni"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/us/image/product/2026/08/28/070133_1536%24deebot-x12s-omnicyclone-2-920x920.png",
+    "launchYear": 2026,
+    "launchNote": "Named in ECOVACS’s September 4, 2026 IFA release; UK availability was announced for September 9. US store listing checked September 10.",
+    "launchSource": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
   }
 ]

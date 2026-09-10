@@ -3590,5 +3590,586 @@
         "note": "Manufacturer year-of-release evidence; European prices and bundles do not define the US package."
       }
     ]
+  },
+  "roborock-rockaqua-p1": {
+    "verdict": "Keep RockAqua P1 on a future-purchase shortlist if shallow shelves and pool geometry are your main problems. Wait for regional delivery, runtime and maintenance documentation before committing.",
+    "notFor": "An urgent replacement purchase, a guaranteed surface skimmer, or a pool whose depth and material compatibility have not been confirmed.",
+    "specifications": [
+      {
+        "label": "Product status",
+        "value": "Announced; full reveal pending",
+        "meaning": "The European page remains a preview rather than a priced retail listing.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Shallow-water depth",
+        "value": "15 cm · European preview",
+        "meaning": "Vertical water depth above the platform; manufacturer laboratory condition.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Water-flow claim",
+        "value": "6,800 GPH",
+        "meaning": "Manufacturer flow claim, not a standardized debris-removal score.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Filter arrangement",
+        "value": "180 μm + 70 μm",
+        "meaning": "Two filtration layers; confirm the retail package and spare filter supply.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Debris basket",
+        "value": "4 L",
+        "meaning": "Leaf volume and filter clogging determine emptying frequency.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Shallow-area protection",
+        "value": "Anti-fall sensors",
+        "meaning": "A feature claim, not a guarantee on every ledge geometry.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Route planning",
+        "value": "Adapts to pool layout",
+        "meaning": "Preview discusses bowl-shaped floors, slopes and steps.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Obstacle avoidance",
+        "value": "Vision-based",
+        "meaning": "Official example includes navigating around drain covers.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Debris detection",
+        "value": "ClearVision smart patrol",
+        "meaning": "Prioritizes visible debris such as leaves and debris-heavy areas.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Waterline mode",
+        "value": "Back-and-forth scrubbing",
+        "meaning": "Waterline cleaning is different from collecting floating surface debris.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Retrieval",
+        "value": "Auto Waterline Parking",
+        "meaning": "Returns at task completion or when battery drops below 15%.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Handling assistance",
+        "value": "Quick Water Release",
+        "meaning": "Drains retained water; dry weight is not verified here.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "App functions",
+        "value": "Weekly schedule, modes and history",
+        "meaning": "Underwater communication method and live control range are not verified.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Runtime and battery capacity",
+        "value": "Not verified in the official preview",
+        "meaning": "Do not borrow figures from another pool robot.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Dimensions and dry weight",
+        "value": "Not verified in the official preview",
+        "meaning": "Check carrying weight and storage space when the full specification arrives.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      },
+      {
+        "label": "Surface skimming and rated pool area",
+        "value": "Not verified in the official preview",
+        "meaning": "A waterline mode does not establish a dedicated surface-skimming mode.",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Europe · preview",
+        "amount": "Not verified",
+        "source": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1",
+        "kind": "Announcement status",
+        "date": "2026-09-10",
+        "note": "No retail price or delivery commitment established by the cited preview on this date."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock RockAqua P1",
+          "url": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1",
+          "market": "Europe · preview"
+        },
+        {
+          "name": "Aiper Scuba V3 Ultra",
+          "url": "https://aiper.com/us/aiper-scuba-v3-ultra",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot Sora 70",
+          "url": "https://beatbot.com/products/sora-70",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Shallow-area wording",
+          "values": [
+            "15 cm EU; US IFA says 8 in",
+            "7.9 in US claim",
+            "8 in; platform size conditions apply"
+          ]
+        },
+        {
+          "label": "Water-flow claim",
+          "values": [
+            "6,800 GPH",
+            "8,500 GPH",
+            "6,800 GPH"
+          ]
+        },
+        {
+          "label": "Basket",
+          "values": [
+            "4 L",
+            "3.5 L",
+            "6 L"
+          ]
+        },
+        {
+          "label": "Surface skimming",
+          "values": [
+            "Not verified in preview",
+            "Explicitly listed",
+            "JetPulse surface cleaning"
+          ]
+        },
+        {
+          "label": "Evidence stage",
+          "values": [
+            "Preview; full reveal pending",
+            "Official product and retail link",
+            "Official retail and specifications"
+          ]
+        }
+      ],
+      "takeaway": "Compare confirmed cleaning tasks and pool geometry first. Flow numbers come from different manufacturer tests; P1’s incomplete retail information prevents a fair final value ranking."
+    },
+    "resources": [
+      {
+        "label": "Official European product preview",
+        "url": "https://garden.roborock.com/eu/products/roborock-rockaqua-p1",
+        "note": "Recheck depth, runtime, price and the final model manual as the reveal develops."
+      },
+      {
+        "label": "Roborock IFA lineup",
+        "url": "https://us.roborock.com/pages/ifa-2026",
+        "note": "Confirms 2026 context and the separate US 8-inch shallow-area wording."
+      },
+      {
+        "label": "Aiper alternative specifications",
+        "url": "https://aiper.com/us/aiper-scuba-v3-ultra",
+        "note": "Check surface cleaning if floating leaves are a priority."
+      }
+    ]
+  },
+  "roborock-saros-20-flow": {
+    "verdict": "Shortlist Flow for frequent hard-floor washing, then compare its roller care and furniture clearance with the pad-based Saros alternatives. Wait for a confirmed regional package and price before ranking value.",
+    "notFor": "A buyer assuming it climbs stairs, fits beneath every 9 cm gap, or includes every feature advertised for other Saros models.",
+    "specifications": [
+      {
+        "label": "Mop system",
+        "value": "SpiraFlow 2.0 · 270 mm roller",
+        "meaning": "Continuous fresh-water rinsing during mopping.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Roller rinsing",
+        "value": "16 pressurized outlets",
+        "meaning": "Fresh-water supply arrangement; actual floor result requires evaluation.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Roller speed",
+        "value": "Up to 240 RPM",
+        "meaning": "Extreme Water Flow setting in Custom Mode; not every cleaning mode.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Mop pressure",
+        "value": "Up to 15 N",
+        "meaning": "Manufacturer test; not a cross-brand cleaning score.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Digital motor claim",
+        "value": "36,000 Pa",
+        "meaning": "A motor test figure, not independent carpet pickup evidence.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "353 × 353 × 89.8 mm",
+        "meaning": "Global specification; allow extra furniture clearance.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Navigation",
+        "value": "RetractSense · retractable LDS",
+        "meaning": "360° open-space scanning; reduced view beneath furniture.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Double-layer threshold",
+        "value": "4.5 + 4.3 cm, up to 8.8 cm combined",
+        "meaning": "Test requires first-layer width ≥20 cm; not a single 8.8 cm step.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Carpet protection",
+        "value": "Roller shield + up to 15 mm lift",
+        "meaning": "Check pile and fringe; this is not an automatic mop-detachment claim.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Edge reach",
+        "value": "Up to 44 mm extension; <10 mm gap claim",
+        "meaning": "Manufacturer conditions; baseboard geometry affects results.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Battery and charging",
+        "value": "6,400 mAh / about 150 minutes",
+        "meaning": "Laboratory full-charge time, not maximum-suction runtime.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Coverage claim",
+        "value": "Up to 200 m² estimated built-up area",
+        "meaning": "Standard Vacuum & Mop test; not guaranteed open floor cleaned per charge.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Dock dimensions",
+        "value": "381 × 454 × 451 mm",
+        "meaning": "Leave working space for tanks and maintenance.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Dock wash temperature",
+        "value": "Up to 100°C at heating module",
+        "meaning": "Not a claim that 100°C water reaches the floor.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Dock drying",
+        "value": "Up to 63°C at heating module",
+        "meaning": "Actual air and component temperatures vary.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "Dock automation",
+        "value": "Dust emptying, detergent dosing, warm-water refill",
+        "meaning": "Rewash/remop decisions do not eliminate owner cleaning.",
+        "source": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · announcement",
+        "amount": "Not verified",
+        "source": "https://us.roborock.com/pages/roborock-saros-20-flow",
+        "kind": "Announcement status",
+        "date": "2026-09-10",
+        "note": "Reviewed page provides Subscribe; no confirmed selling price or delivery commitment recorded."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock Saros 20 Flow",
+          "url": "https://global.roborock.com/pages/roborock-saros-20-flow",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock Saros 20",
+          "url": "https://global.roborock.com/pages/roborock-saros-20",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock Saros 20 Sonic",
+          "url": "https://global.roborock.com/pages/roborock-saros-20-sonic",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping mechanism",
+          "values": [
+            "Continuously rinsed roller",
+            "Dual rotating pads",
+            "Vibrating extendable pad"
+          ]
+        },
+        {
+          "label": "Published clearance",
+          "values": [
+            "8.98 cm; scraping caveat",
+            "7.98 cm body height",
+            "7.95 cm low-clearance claim"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "RetractSense retractable LDS",
+            "StarSight 2.0",
+            "RetractSense retractable LDS"
+          ]
+        },
+        {
+          "label": "Carpet mop handling",
+          "values": [
+            "Shield and 15 mm lift",
+            "Automatic mop detachment",
+            "Automatic mop detachment"
+          ]
+        },
+        {
+          "label": "Double-layer crossing",
+          "values": [
+            "4.5 + 4.3 cm; conditions apply",
+            "4.5 + 4.3 cm; conditions apply",
+            "4.5 + 4.3 cm; conditions apply"
+          ]
+        }
+      ],
+      "takeaway": "Choose the mop architecture and usable clearance first. These are manufacturer specifications, not a head-to-head cleaning test, and the shared threshold headline does not imply stair cleaning."
+    },
+    "resources": [
+      {
+        "label": "Global Flow specifications and footnotes",
+        "url": "https://global.roborock.com/pages/roborock-saros-20-flow",
+        "note": "Check threshold geometry, temperature measurement points and furniture-clearance caveats."
+      },
+      {
+        "label": "US Flow announcement",
+        "url": "https://us.roborock.com/pages/roborock-saros-20-flow",
+        "note": "Check for a local price, shipping date and package details."
+      },
+      {
+        "label": "SpiraFlow technology explainer",
+        "url": "https://global.roborock.com/pages/roborock-spiraflow-2-0-pressurized-self-cleaning-system",
+        "note": "Background on the roller system; prioritize model-specific specifications where they differ."
+      }
+    ]
+  },
+  "ecovacs-deebot-x12s-omnicyclone": {
+    "verdict": "Consider X12S OmniCyclone when you want roller mopping and bagless collection together. Compare the actual regional offer with X12 and T90, and judge the remaining water and dust-handling routine.",
+    "notFor": "A buyer expecting no consumables or dust exposure, or an automatic performance upgrade inferred only from a new suction unit.",
+    "specifications": [
+      {
+        "label": "Suction measurement",
+        "value": "53 AW BLAST",
+        "meaning": "Air watts are not pascals; do not rank this directly against Pa headlines.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Mop system",
+        "value": "OZMO ROLLER 3.0 · 10.6 in roller",
+        "meaning": "US listing; continuously rinsed roller mopping.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Roller speed and pressure",
+        "value": "220 RPM / 4,000 Pa downward pressure",
+        "meaning": "The pressure here describes mopping, not vacuum suction.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Roller rinsing",
+        "value": "32 pressurized nozzles",
+        "meaning": "Fresh-water delivery to the roller during self-washing.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Stain treatment",
+        "value": "FocusJet · about 15–30 s soak",
+        "meaning": "Targeted pretreatment of suitable dried stains; use approved solution.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Mop lift and cover",
+        "value": "0.59 in lift plus protective cover",
+        "meaning": "Check carpet pile, edges and fringes.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Edge extension",
+        "value": "Up to 1.02 in",
+        "meaning": "TruEdge 3.0 manufacturer reach claim.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Anti-tangle system",
+        "value": "ZeroTangle 4.0",
+        "meaning": "Still inspect brushes and remove unsuitable objects from the floor.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Robot height",
+        "value": "3.86 in",
+        "meaning": "Allow clearance above the robot along its entire route.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Drive wheels",
+        "value": "3.0 in diameter",
+        "meaning": "A wheel measurement, not the obstacle height it can cross.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Threshold claim",
+        "value": "1.0 in single / 1.6 in consecutive obstacles",
+        "meaning": "Geometry and surfaces matter; not a staircase capability.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Navigation",
+        "value": "AIVI 3D 4.0",
+        "meaning": "Recognition does not guarantee avoidance of every wire or pet mess.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Charging top-up",
+        "value": "13% in 3 minutes",
+        "meaning": "During mop-cleaning intervals; not a full-charge time.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Dock wash temperature",
+        "value": "Up to 212°F at heating-module thermostat",
+        "meaning": "US footnote uses 73.4°F ambient conditions; actual water temperature varies.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Dock dust collection",
+        "value": "Bagless PureCyclone 2.0",
+        "meaning": "Owner still empties the container and maintains filtration.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      },
+      {
+        "label": "Cleaning assistant",
+        "value": "AGENT YIKO 3.0",
+        "meaning": "Automatic routines and voice preferences; check local language and app support.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · USD",
+        "amount": "USD 999.99",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-10",
+        "note": "Selected OmniCyclone package shown on September 10. Confirm current promotion, stock, tax and bundle at checkout."
+      },
+      {
+        "market": "United Kingdom · GBP",
+        "amount": "GBP 1,199",
+        "source": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html",
+        "kind": "Launch RRP",
+        "date": "2026-09-10",
+        "note": "Manufacturer UK launch RRP; release announced September 9 availability. This is not a current UK checkout quote."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS DEEBOT X12S OmniCyclone",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS DEEBOT X12 OmniCyclone",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone",
+          "market": "United States"
+        },
+        {
+          "name": "ECOVACS DEEBOT T90 PRO OMNI",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t90-pro-omni",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping family",
+          "values": [
+            "OZMO ROLLER 3.0",
+            "OZMO ROLLER 3.0",
+            "OZMO ROLLER 3.0"
+          ]
+        },
+        {
+          "label": "Headline suction unit",
+          "values": [
+            "53 AW",
+            "22,000 Pa",
+            "30,000 Pa"
+          ]
+        },
+        {
+          "label": "Dock dust format",
+          "values": [
+            "Bagless OmniCyclone",
+            "Bagless OmniCyclone",
+            "Dust bag"
+          ]
+        },
+        {
+          "label": "Stain pretreatment",
+          "values": [
+            "FocusJet",
+            "FocusJet",
+            "No FocusJet listed in cited specification"
+          ]
+        },
+        {
+          "label": "Main buying distinction",
+          "values": [
+            "YIKO 3.0 and updated X12S package",
+            "Earlier X12 with shared core features",
+            "Bagged alternative with roller mopping"
+          ]
+        }
+      ],
+      "takeaway": "AW and Pa are different measurements, so the suction row is identification rather than a ranking. Shared roller and dock features make the real package price and your maintenance preference especially important."
+    },
+    "resources": [
+      {
+        "label": "US X12S OmniCyclone listing",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-x12s-omnicyclone",
+        "note": "Check the selected station, bundle, current price and test footnotes."
+      },
+      {
+        "label": "Official global X12S overview",
+        "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12s",
+        "note": "Overview of the roller, suction and edge-cleaning systems."
+      },
+      {
+        "label": "Manufacturer regional launch release",
+        "url": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html",
+        "note": "UK launch RRP and availability announcement; separate from US retail pricing."
+      }
+    ]
   }
 }
