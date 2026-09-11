@@ -2977,6 +2977,96 @@
         "outputHash": "sha256:c9a448c072ec344defc97405b9afda33767cc4a2bf32a6525ee5c53e68f74068"
       }
     },
+    "/images/articles/joseph-galli-chervon-dewalt-milwaukee/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41052,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:988311f78746557da4b6f81c3889711560d936604206ce33b07cc722cbc1cca0",
+      "outputHash": "sha256:2d39e8962536c7d5318377c587b871ac7678bb7cabd80fee2f43578a8c4cef6c",
+      "mobile": {
+        "src": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17662,
+        "outputHash": "sha256:1987afbda1dfa89b4e2fa3de7ea623279b26aeefb718dfcaccdd9eba5185850c"
+      }
+    },
+    "/images/articles/joseph-galli-chervon-dewalt-milwaukee/02-dewalt-timeline.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53786,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:71d74cf461d833aa0746692dd0cad79cb19fe4d401f00d8946db83616482e9f9",
+      "outputHash": "sha256:45da08d495d841d6108ad709a257cb8115de13e9aba7e8d9b2848f361d8dd389",
+      "mobile": {
+        "src": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/02-dewalt-timeline-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24162,
+        "outputHash": "sha256:86e86e2d77b5f7cbca2b1b8b0dcfe545b81bbab47f01997cc0ff162a28fd23eb"
+      }
+    },
+    "/images/articles/joseph-galli-chervon-dewalt-milwaukee/03-galli-milwaukee.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 71970,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:94764159d6ed8e3a7c6d9045e307672c8140d93fccd9409b4708c4f471fd0aaf",
+      "outputHash": "sha256:fc111ba5754c946b4ba4bcea3d29321128c64125af2f880ef46574f2f02c8cfb",
+      "mobile": {
+        "src": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/03-galli-milwaukee-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27326,
+        "outputHash": "sha256:41be922b1b28fe8bde6ef06b5c52955f402653b9fe2934135499c2ab06fd5cac"
+      }
+    },
+    "/images/articles/joseph-galli-chervon-dewalt-milwaukee/04-ceo-handovers.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53258,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1760488d760936036bc31ca960a10c1f978769f5159a2a9523a627ba15b0791a",
+      "outputHash": "sha256:4856f67de7115b195a4239113916d524f35e94127305498def0e76f19ecef289",
+      "mobile": {
+        "src": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/04-ceo-handovers-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23790,
+        "outputHash": "sha256:edba165ec2098b686493bebe32c03f7a12458c054879797858d61fe24fc3bafc"
+      }
+    },
+    "/images/articles/joseph-galli-chervon-dewalt-milwaukee/05-revenue-comparison.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 29252,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8f2c9a608a1212461270942d73b9a52ce70b0594218b6856da2342181f2d7abd",
+      "outputHash": "sha256:50bfb7ac65cafe595a5814bba92375c7a060ecfe411b9fe4a486383be27c7e6d",
+      "mobile": {
+        "src": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/05-revenue-comparison-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12732,
+        "outputHash": "sha256:e9ebc4145b1a62fa13a7e683c20379779bf03c7fb379894d70aa8fdc351feb47"
+      }
+    },
     "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -5042,7 +5132,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -5060,7 +5150,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -5078,7 +5168,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -33520,6 +33610,16 @@
       "cover": "/images/insights/jan-6-2026-yard-cleaning-and-tool-news-cover.jpg",
       "body": []
     },
+    "joseph-galli-chervon-dewalt-milwaukee": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/01-cover.webp",
+      "body": [
+        "/images/articles/joseph-galli-chervon-dewalt-milwaukee/02-dewalt-timeline.webp",
+        "/images/articles/joseph-galli-chervon-dewalt-milwaukee/03-galli-milwaukee.webp",
+        "/images/articles/joseph-galli-chervon-dewalt-milwaukee/04-ceo-handovers.webp",
+        "/images/articles/joseph-galli-chervon-dewalt-milwaukee/05-revenue-comparison.webp"
+      ]
+    },
     "karcher-hidden-champion-in-cleaning-appliances": {
       "budgetClass": "standard",
       "cover": "/images/insights/karcher-hidden-champion-in-cleaning-appliances-cover.jpg",
@@ -36690,6 +36790,35 @@
           "status": "matched",
           "primary": "/images/articles/ifa-2026-cleaning-products-company-roundup/40-dyson-en.webp",
           "hash": "sha256:d18c045188cc8f40615bc0330838cb3dfd6e0e5845aff40bee20b67c2843910f"
+        }
+      }
+    },
+    "joseph-galli-chervon-dewalt-milwaukee": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/01-cover.webp",
+          "hash": "sha256:988311f78746557da4b6f81c3889711560d936604206ce33b07cc722cbc1cca0"
+        },
+        "02-dewalt-timeline.webp": {
+          "status": "matched",
+          "primary": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/02-dewalt-timeline.webp",
+          "hash": "sha256:71d74cf461d833aa0746692dd0cad79cb19fe4d401f00d8946db83616482e9f9"
+        },
+        "03-galli-milwaukee.webp": {
+          "status": "matched",
+          "primary": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/03-galli-milwaukee.webp",
+          "hash": "sha256:94764159d6ed8e3a7c6d9045e307672c8140d93fccd9409b4708c4f471fd0aaf"
+        },
+        "04-ceo-handovers.webp": {
+          "status": "matched",
+          "primary": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/04-ceo-handovers.webp",
+          "hash": "sha256:1760488d760936036bc31ca960a10c1f978769f5159a2a9523a627ba15b0791a"
+        },
+        "05-revenue-comparison.webp": {
+          "status": "matched",
+          "primary": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/05-revenue-comparison.webp",
+          "hash": "sha256:8f2c9a608a1212461270942d73b9a52ce70b0594218b6856da2342181f2d7abd"
         }
       }
     },
