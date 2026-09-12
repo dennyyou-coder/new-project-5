@@ -92,6 +92,24 @@
         "outputHash": "sha256:7c31b919aa0db15b843a6cbc564ea7ff666319e1b673f1791518bb7a72c7a38f"
       }
     },
+    "/images/articles/aiper-scuba-s3/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 92332,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:425f0447a8b0b9500047d9e3baa82b700997e6edf353e1ff8145c8a58e091fb6",
+      "outputHash": "sha256:98a881a6f4cec9f11580376ee5d12ffd531fa02ab3995ff5faad38424656bacd",
+      "mobile": {
+        "src": "/images/articles/aiper-scuba-s3/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 38660,
+        "outputHash": "sha256:402c8a1a6001dc31d7928605cec7ff1a04c66086984552a7e80ca590a50c227d"
+      }
+    },
     "/images/articles/aiper-scuba-v3-ultra/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -102,6 +120,24 @@
       "quality": 90,
       "sourceHash": "sha256:f639229a9263fbbf98dcfda078f6a95bf25a6b4d08f065bceef3f2ee859be0d7",
       "outputHash": "sha256:ee639195ab5d2f4706b97980798b02f69b3301ef26edd4bee89ecf3194dab27a"
+    },
+    "/images/articles/aiper-scuba-v3/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 175950,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:14ba15b1d5c580cd6bd6181e49b1ec3280a5c9097481cb5d0f30247f0a819217",
+      "outputHash": "sha256:77dae2e6d04415cd157f33a18bfb53e08f067eb39c6b199b8aa577d4d71f651a",
+      "mobile": {
+        "src": "/images/articles/aiper-scuba-v3/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 59932,
+        "outputHash": "sha256:2d388742a2c9d7c7c88e0ad7914284f9be656451f8000a0cbddc33755f9cb102"
+      }
     },
     "/images/articles/anker-cleaning-appliance-strategy-analysis/01-cover.webp": {
       "role": "cover",
@@ -2248,6 +2284,24 @@
         "height": 800,
         "bytes": 14240,
         "outputHash": "sha256:faf653d18f4e2028cd751ca8434192a682ee0a92059614da158073c6e0400042"
+      }
+    },
+    "/images/articles/eureka-floorshine-830/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 14438,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3034fddd096c4599c7b4338b8fdca976560f739a58327fe331d811a583d2a2f2",
+      "outputHash": "sha256:de1f2e6e259b09514786942972b6616c742e7ff6ec3b68a9bb6bbaef9dc69fe3",
+      "mobile": {
+        "src": "/images/articles/eureka-floorshine-830/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 7422,
+        "outputHash": "sha256:bbb184891098d289691991ffde03c3560abc471c8bb445fe6f99fef80d42dad6"
       }
     },
     "/images/articles/eve-of-the-robot-vacuum-battle/01-cover.webp": {
@@ -32382,6 +32436,16 @@
       "cover": "/images/blog/aiper-pool-cleaner-model-selection-map.webp",
       "body": []
     },
+    "aiper-scuba-s3": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/aiper-scuba-s3/01-cover.webp",
+      "body": []
+    },
+    "aiper-scuba-v3": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/aiper-scuba-v3/01-cover.webp",
+      "body": []
+    },
     "aiper-scuba-v3-ultra": {
       "budgetClass": "standard",
       "cover": "/images/articles/aiper-scuba-v3-ultra/01-cover.webp",
@@ -33733,6 +33797,11 @@
     "eufy-omni-s2": {
       "budgetClass": "standard",
       "cover": "/images/articles/eufy-omni-s2/01-cover.webp",
+      "body": []
+    },
+    "eureka-floorshine-830": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eureka-floorshine-830/01-cover.webp",
       "body": []
     },
     "european-tool-brands-battery-alliances": {
@@ -36965,6 +37034,24 @@
     }
   },
   "externalSources": {
+    "aiper-scuba-s3": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/aiper-scuba-s3/01-cover.webp",
+          "hash": "sha256:425f0447a8b0b9500047d9e3baa82b700997e6edf353e1ff8145c8a58e091fb6"
+        }
+      }
+    },
+    "aiper-scuba-v3": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/aiper-scuba-v3/01-cover.webp",
+          "hash": "sha256:14ba15b1d5c580cd6bd6181e49b1ec3280a5c9097481cb5d0f30247f0a819217"
+        }
+      }
+    },
     "aiper-scuba-v3-ultra": {
       "files": {
         "01-cover.webp": {
@@ -37626,6 +37713,15 @@
           "status": "matched",
           "primary": "/images/articles/eufy-omni-s2/01-cover.webp",
           "hash": "sha256:d82683ca4a650274ee17e047283bea06cc0b9433e23057069c59b8d6b51435e6"
+        }
+      }
+    },
+    "eureka-floorshine-830": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/eureka-floorshine-830/01-cover.webp",
+          "hash": "sha256:3034fddd096c4599c7b4338b8fdca976560f739a58327fe331d811a583d2a2f2"
         }
       }
     },
