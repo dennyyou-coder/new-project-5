@@ -734,7 +734,9 @@
       "roborock-rockaqua-p1",
       "beatbot-aquasense-x",
       "wybot-s3",
-      "mova-rover-x10"
+      "mova-rover-x10",
+      "aiper-scuba-v3",
+      "aiper-scuba-s3"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -5736,7 +5738,8 @@
     "related": [
       "beatbot-sora-30",
       "beatbot-sora-70",
-      "beatbot-iskim"
+      "beatbot-iskim",
+      "aiper-scuba-s3"
     ],
     "announced": "",
     "verifiedAt": "2026-09-12",
@@ -5832,7 +5835,8 @@
     "related": [
       "beatbot-sora-10",
       "beatbot-sora-70",
-      "beatbot-iskim"
+      "beatbot-iskim",
+      "aiper-scuba-v3"
     ],
     "announced": "",
     "verifiedAt": "2026-09-12",
@@ -6714,7 +6718,8 @@
     "related": [
       "shark-aquareach-pro-wd563",
       "tineco-floor-one-i7-fold",
-      "dyson-pencilwash"
+      "dyson-pencilwash",
+      "eureka-floorshine-830"
     ],
     "announced": "2026-08-18",
     "verifiedAt": "2026-09-12",
@@ -6918,7 +6923,8 @@
     "related": [
       "tineco-floor-one-s9-master",
       "tineco-floor-one-station-s9-scientist-pro",
-      "dyson-pencilwash"
+      "dyson-pencilwash",
+      "eureka-floorshine-830"
     ],
     "announced": "2026-01-01",
     "verifiedAt": "2026-09-12",
@@ -7484,5 +7490,330 @@
     "launchYear": 2026,
     "launchNote": "Previewed in July 2025; Miele’s 23 March 2026 retail announcement scheduled the range for May. This entry covers the current UK Aqua package in the 2026 retail rollout.",
     "launchSource": "https://www.miele.de/de/m/miele-startet-mit-dem-triflex-hx3-plus-aqua-in-die-nassreinigung-8187.htm"
+  },
+  {
+    "slug": "aiper-scuba-v3",
+    "name": "Aiper Scuba V3",
+    "brand": "Aiper",
+    "brandSlug": "aiper",
+    "category": "Pool robots",
+    "market": "United States · standard V3",
+    "summary": "Aiper’s 2026 retail Scuba V3 pairs camera-assisted pool navigation with dToF sensing, a 3.5-litre basket and waterline retrieval.",
+    "fit": "In-ground pool owners wanting vision-guided floor, wall and waterline cleaning without moving to the larger V3 Ultra.",
+    "caution": "The V3 does not add the Ultra’s surface-skimming and shallow-shelf functions. Its seven-day scheduling claim does not mean seven days of continuous operation.",
+    "facts": [
+      {
+        "label": "Navigation",
+        "value": "VisionPath with AI vision and dToF",
+        "meaning": "Camera-assisted perception distinguishes it from Scuba S3."
+      },
+      {
+        "label": "Maximum pump flow",
+        "value": "4,800 GPH",
+        "meaning": "Water-flow claim; not a suction-pressure measurement in Pa."
+      },
+      {
+        "label": "Debris basket",
+        "value": "Top-loading 3.5 L",
+        "meaning": "Filter loading can require servicing before a battery cycle ends."
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 210 minutes",
+        "meaning": "Separate from the standard cycle and scheduled-patrol claims."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Scuba V3 a 2026 product or a 2025 product?",
+        "answer": "Aiper previewed it at IFA in September 2025 with an early-2026 launch plan. The January 2026 CES announcement specified Q1 US availability; this page covers that retail generation and keeps the preview history explicit."
+      },
+      {
+        "question": "How does V3 differ from Scuba S3?",
+        "answer": "V3 adds AI vision, VisionPath and AI planning. S3 uses WavePath 2.0 with dToF sensing, has a longer listed Eco maximum, and costs less in the checked US offers."
+      },
+      {
+        "question": "Does V3 skim the surface like V3 Ultra?",
+        "answer": "No. The checked V3 coverage table lists the floor, walls and waterline. V3 Ultra adds surface and shallow-area functions; waterline cleaning alone is not surface skimming."
+      },
+      {
+        "question": "Does seven-day care mean a week of nonstop cleaning?",
+        "answer": "No. The claim concerns scheduled AI maintenance. The US table separately lists up to 180 minutes of standard runtime and 210 minutes in Eco mode."
+      },
+      {
+        "question": "Does it drive onto its charging dock by itself?",
+        "answer": "The product feature page describes waterline retrieval and an app alert. This guide does not verify autonomous onshore travel or docking; plan to retrieve and charge the unit yourself."
+      },
+      {
+        "question": "Is 4,800 GPH directly comparable to vacuum suction in Pa?",
+        "answer": "No. GPH describes water volume per hour, while Pa measures pressure difference. Brush contact, filtration and coverage also affect pool-cleaning results."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The standard US V3 listing showed $949.99 on 12 September 2026, against a displayed $1,099.99 reference. The Experts Duo and HydroSync bundles are separate offers."
+      }
+    ],
+    "articles": [
+      "aiper-robotic-pool-cleaner-buying-guide",
+      "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x",
+      "aiper-fluidra-pool-robotics-alliance"
+    ],
+    "related": [
+      "aiper-scuba-s3",
+      "aiper-scuba-v3-ultra",
+      "beatbot-sora-30"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US Scuba V3 specifications and offer",
+        "url": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Scuba V3 features and retrieval",
+        "url": "https://aiper.com/us/aiper-scuba-v3"
+      },
+      {
+        "label": "Official support and setup resources",
+        "url": "https://aiper.com/us/support/"
+      },
+      {
+        "label": "CES 2026 retail announcement",
+        "url": "https://ces.vporoom.com/2026-01-06-Aiper-is-pioneering-the-Carefree-and-Reliable-Smart-Yard-Ecosystem-at-CES-2026"
+      },
+      {
+        "label": "IFA 2025 preview and 2026 launch plan",
+        "url": "https://www.prnewswire.com/news-releases/aiper-pushes-smart-home-boundaries-with-ai-powered-pool-cleaning-robot-at-ifa-berlin-2025-302545334.html"
+      },
+      {
+        "label": "Scuba S3 US comparison",
+        "url": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Scuba S3 navigation reference",
+        "url": "https://aiper.com/us/aiper-scuba-s3"
+      },
+      {
+        "label": "Scuba V3 Ultra comparison",
+        "url": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      }
+    ],
+    "imageSource": "https://d31cs717m47wwl.cloudfront.net/20260422/3b92588ace8945f08c086d7230d4c840.webp",
+    "launchYear": 2026,
+    "launchNote": "Previewed at IFA in September 2025; the 6 January 2026 CES announcement scheduled Q1 US availability. This entry covers the 2026 retail model.",
+    "launchSource": "https://ces.vporoom.com/2026-01-06-Aiper-is-pioneering-the-Carefree-and-Reliable-Smart-Yard-Ecosystem-at-CES-2026"
+  },
+  {
+    "slug": "aiper-scuba-s3",
+    "name": "Aiper Scuba S3",
+    "brand": "Aiper",
+    "brandSlug": "aiper",
+    "category": "Pool robots",
+    "market": "United States · Scuba S3",
+    "summary": "A 2026 cordless pool cleaner with WavePath 2.0 and dToF navigation, a 3.5-litre filter basket and up to four hours in Eco mode.",
+    "fit": "In-ground pool owners prioritising floor, wall and waterline coverage, a simpler navigation system and a lower entry price than V3.",
+    "caution": "The four-hour maximum is Eco mode; Standard mode is listed at 180 minutes. The checked configuration does not include V3’s camera-based AI features or surface skimming.",
+    "facts": [
+      {
+        "label": "Navigation",
+        "value": "WavePath 2.0 with dToF sensing",
+        "meaning": "The official comparison marks camera-based AI features as absent."
+      },
+      {
+        "label": "Maximum pump flow",
+        "value": "4,800 GPH",
+        "meaning": "Manufacturer flow claim; not an independent cleaning-speed result."
+      },
+      {
+        "label": "Debris basket",
+        "value": "Top-loading 3.5 L",
+        "meaning": "Capacity is separate from the filter’s particle-size specification."
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 240 minutes",
+        "meaning": "Maximum listed for Eco operation, not all modes."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Scuba S3 part of the 2026 range?",
+        "answer": "Yes. The US store labels it 2026 New, and Aiper’s August 2026 Australian announcement names Scuba S3 in its new range. The Australian event date is not presented as the first US sale date."
+      },
+      {
+        "question": "Does S3 use the same AI vision as V3?",
+        "answer": "No. The detailed official comparison marks S3’s AI features as absent. Its feature page specifies WavePath 2.0 with dToF sensing; V3 adds camera-assisted AI vision."
+      },
+      {
+        "question": "How long does it run?",
+        "answer": "Aiper lists up to 180 minutes in Standard mode and 240 minutes in Eco mode. Pool geometry, cleaning load and selected mode affect actual endurance."
+      },
+      {
+        "question": "Does four-zone coverage include skimming floating leaves?",
+        "answer": "The detailed US table lists the floor, walls and waterline. This guide does not infer a surface-skimming function from the broader four-zone marketing phrase."
+      },
+      {
+        "question": "What filters are supplied?",
+        "answer": "The official US FAQ describes a 180-micron standard filter and a 3-micron ultra-fine layer, with a 3.5-litre top-loading basket. Confirm the exact replacement insert for the purchased model."
+      },
+      {
+        "question": "Does app control remove the need to retrieve it?",
+        "answer": "No. Waterline return and notifications make collection easier, but the owner still needs to lift, charge and service the cleaner."
+      },
+      {
+        "question": "What is the current checked price?",
+        "answer": "The standalone US S3 offer was $649.99 on 12 September 2026, with $799.99 displayed as the reference price. A skimmer bundle and optional care plans are separate purchases."
+      }
+    ],
+    "articles": [
+      "aiper-robotic-pool-cleaner-buying-guide",
+      "aiper-scuba-v3-ultra-vs-beatbot-aquasense-x",
+      "aiper-fluidra-pool-robotics-alliance"
+    ],
+    "related": [
+      "aiper-scuba-v3",
+      "aiper-scuba-v3-ultra",
+      "beatbot-sora-10"
+    ],
+    "announced": "2026-08-21",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US Scuba S3 specifications and price",
+        "url": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Scuba S3 navigation and cleaning modes",
+        "url": "https://aiper.com/us/aiper-scuba-s3"
+      },
+      {
+        "label": "Official setup and service resources",
+        "url": "https://aiper.com/us/support/"
+      },
+      {
+        "label": "2026 Australian range announcement",
+        "url": "https://www.prnewswire.com/apac/news-releases/aiper-unveils-next-generation-smart-outdoor-care-solutions-expanding-the-aiper-smart-yard-ecosystem-302856101.html"
+      },
+      {
+        "label": "Scuba V3 US comparison",
+        "url": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Scuba V3 feature reference",
+        "url": "https://aiper.com/us/aiper-scuba-v3"
+      },
+      {
+        "label": "Scuba V3 Ultra comparison",
+        "url": "https://aiper.com/us/aiper-scuba-v3-ultra"
+      }
+    ],
+    "imageSource": "https://d31cs717m47wwl.cloudfront.net/20260506/4eb4583fd77a45e0b4cef0fb74a55a23.webp",
+    "launchYear": 2026,
+    "launchNote": "Listed as 2026 New in the US store; Aiper’s 21 August 2026 announcement documents the Australian introduction. The event date is regional, not a verified first US sale date.",
+    "launchSource": "https://www.prnewswire.com/apac/news-releases/aiper-unveils-next-generation-smart-outdoor-care-solutions-expanding-the-aiper-smart-yard-ecosystem-302856101.html"
+  },
+  {
+    "slug": "eureka-floorshine-830",
+    "name": "Eureka FloorShine 830",
+    "brand": "Eureka",
+    "brandSlug": "eureka",
+    "category": "Floor washers",
+    "market": "Germany · NEW830BK",
+    "summary": "A 2026 FloorShine entry with a reclining body, bidirectional movement assistance and a heated roller-care base, documented here in its German NEW830BK configuration.",
+    "fit": "Homes with compatible hard floors where low-furniture access and a roller-cleaning and drying base fit the daily routine.",
+    "caution": "The manual reduces suction and usable dirty-water capacity in lay-flat mode. Drying also delays charging; the 60-minute maximum is not a verified Turbo or flat-mode runtime.",
+    "facts": [
+      {
+        "label": "Recline",
+        "value": "180° lay-flat operation",
+        "meaning": "The body enters flat mode automatically as it approaches the floor."
+      },
+      {
+        "label": "Lay-flat operating limits",
+        "value": "Reduced suction and lower usable dirty-water capacity",
+        "meaning": "Empty to the flat-water-level requirement before reclining."
+      },
+      {
+        "label": "Clean-water tank",
+        "value": "750 ml",
+        "meaning": "The 830 does not list the 880’s separate 110 ml solution reservoir."
+      },
+      {
+        "label": "Roller drying claim",
+        "value": "75°C hot air; 5- or 20-minute option",
+        "meaning": "Manual states the cleaner does not charge during drying."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is the exact model covered here?",
+        "answer": "This guide covers the German NEW830BK sold as FloorShine 830. The series includes other models and regional configurations, so match the label and supplied base."
+      },
+      {
+        "question": "Can it clean while completely flat?",
+        "answer": "Yes, but the manual explicitly states that suction is reduced and the usable dirty-water capacity is lower in flat mode. Empty the tank as instructed before reclining."
+      },
+      {
+        "question": "Does it send 75°C water onto the floor?",
+        "answer": "The German product page describes 75°C hot-water self-cleaning at the base. This guide does not verify heated-water floor delivery or a steam-cleaning function."
+      },
+      {
+        "question": "Does it charge while drying the roller?",
+        "answer": "No. The manual says charging resumes after drying is complete. Allow time for both operations if the cleaner is needed again soon."
+      },
+      {
+        "question": "What does Quick mode do?",
+        "answer": "According to the manual, Quick stops water output and collects dry debris or residual water. Normal wets the roller, while Turbo increases suction and water flow."
+      },
+      {
+        "question": "Is FloorShine 880 just another name for the 830?",
+        "answer": "No. The 880 is a separate model introduced in 2025, with a different self-cleaning claim, an additional solution reservoir and a deodorising module in the compared German package."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The current German page and its structured price showed €329 on 12 September 2026, with €349 as the reference. Earlier promotional pages can show other prices; confirm the checkout total and stock."
+      }
+    ],
+    "articles": [
+      "who-owns-eureka-midea-electrolux-manufacturing"
+    ],
+    "related": [
+      "tineco-floor-one-i7-fold",
+      "shark-aquareach-wd551",
+      "roborock-f25-ace-pro"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "German FloorShine 830 configuration and current offer",
+        "url": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "NEW830BK operating and care manual",
+        "url": "https://cdn.shopify.com/s/files/1/0789/1012/8414/files/EUREKA_NEW830BK_user_manual_EN_FR_DE_IT_ES_PL.pdf?v=1783519644"
+      },
+      {
+        "label": "Official CES 2026 product showcase",
+        "url": "https://de.eureka.com/pages/ces-2026"
+      },
+      {
+        "label": "German FloorShine 880 comparison",
+        "url": "https://de.eureka.com/products/eureka-floorshine880"
+      },
+      {
+        "label": "FloorShine 880 original 2025 launch",
+        "url": "https://www.prnewswire.com/news-releases/eureka-launches-all-new-floorshine-series-at-ifa-2025-302534672.html"
+      },
+      {
+        "label": "Shark AquaReach WD551 comparison",
+        "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      }
+    ],
+    "imageSource": "https://de.eureka.com/cdn/shop/files/FloorShine830-1.jpg?v=1783503500&width=1000",
+    "launchYear": 2026,
+    "launchNote": "Shown as NEW830 among Eureka’s CES 2026 new products. This guide covers the current German FloorShine 830 / NEW830BK; the exact first retail delivery date is not verified.",
+    "launchSource": "https://de.eureka.com/pages/ces-2026"
   }
 ]

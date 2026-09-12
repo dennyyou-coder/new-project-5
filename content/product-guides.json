@@ -13745,5 +13745,578 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "aiper-scuba-v3": {
+    "verdict": "V3 is worth comparing when camera-assisted navigation addresses the pool’s layout and recurring debris. Its value should be assessed against Scuba S3’s simpler navigation and the Ultra’s additional cleaning zones.",
+    "notFor": "Buyers needing surface skimming, verified shallow-shelf coverage or a robot that leaves the pool and charges itself without manual retrieval.",
+    "specifications": [
+      {
+        "label": "Checked model",
+        "value": "Scuba V3 · US retail configuration",
+        "meaning": "Separate from V3 Pro, V3 Ultra and multi-device bundles.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Pool-size rating",
+        "value": "Up to 1,614 ft² / about 150 m²",
+        "meaning": "Area alone does not establish compatibility with steps or unusual pool geometry.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Listed pool surfaces",
+        "value": "Concrete, fibreglass, vinyl and tile",
+        "meaning": "Confirm the actual finish and transitions with the supplier.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Core cleaning zones",
+        "value": "Floor, walls and waterline",
+        "meaning": "No surface-skimming function in the checked V3 coverage table.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Navigation",
+        "value": "VisionPath with AI vision and dToF",
+        "meaning": "Camera-assisted perception distinguishes it from Scuba S3.",
+        "source": "https://aiper.com/us/aiper-scuba-v3"
+      },
+      {
+        "label": "Scheduled planning",
+        "value": "Cognitive AI Navium mode",
+        "meaning": "Manufacturer describes planning around pool size, weather and cleaning history.",
+        "source": "https://aiper.com/us/aiper-scuba-v3"
+      },
+      {
+        "label": "Targeted cleaning",
+        "value": "AI Patrol Cleaning",
+        "meaning": "Manufacturer feature; no WCB speed or pickup test has been conducted.",
+        "source": "https://aiper.com/us/aiper-scuba-v3"
+      },
+      {
+        "label": "Waterline movement",
+        "value": "JetAssist horizontal cleaning",
+        "meaning": "A waterline pass is different from collecting floating surface debris.",
+        "source": "https://aiper.com/us/aiper-scuba-v3"
+      },
+      {
+        "label": "Maximum pump flow",
+        "value": "4,800 GPH",
+        "meaning": "Water-flow claim; not a suction-pressure measurement in Pa.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Brush system",
+        "value": "Dual brushes",
+        "meaning": "Brush contact and pool finish affect actual pickup.",
+        "source": "https://aiper.com/us/aiper-scuba-v3"
+      },
+      {
+        "label": "Debris basket",
+        "value": "Top-loading 3.5 L",
+        "meaning": "Filter loading can require servicing before a battery cycle ends.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Fine filtration",
+        "value": "MicroMesh multi-layer system",
+        "meaning": "Confirm the supplied fine-filter insert and replacement compatibility.",
+        "source": "https://aiper.com/us/aiper-scuba-v3"
+      },
+      {
+        "label": "Standard runtime",
+        "value": "Up to 180 minutes",
+        "meaning": "Published maximum; actual mode, load and pool shape change endurance.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 210 minutes",
+        "meaning": "Separate from the standard cycle and scheduled-patrol claims.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 5 hours",
+        "meaning": "Charging and debris disposal still require an ownership routine.",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Retrieval",
+        "value": "Waterline return with app alerts",
+        "meaning": "Plan to lift and service the cleaner; no verified autonomous onshore docking in this guide.",
+        "source": "https://aiper.com/us/aiper-scuba-v3"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · Scuba V3",
+        "amount": "USD 949.99",
+        "source": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Current product listing and structured price checked 12 September 2026; displayed reference $1,099.99. Bundles, trade-in and membership offers are separate."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Aiper Scuba V3",
+          "url": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Aiper Scuba S3",
+          "url": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Aiper Scuba V3 Ultra",
+          "url": "https://aiper.com/us/aiper-scuba-v3-ultra",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Main cleaning zones",
+          "values": [
+            "Floor, walls and waterline",
+            "Floor, walls and waterline",
+            "Adds surface and shallow sun-shelf cleaning"
+          ]
+        },
+        {
+          "label": "Navigation distinction",
+          "values": [
+            "AI vision with dToF; VisionPath",
+            "WavePath 2.0 with dToF; no AI vision listed",
+            "Dual-camera AI; VisionPath 2.0"
+          ]
+        },
+        {
+          "label": "Published flow maximum",
+          "values": [
+            "4,800 GPH",
+            "4,800 GPH",
+            "8,500 GPH"
+          ]
+        },
+        {
+          "label": "Debris basket",
+          "values": [
+            "Top-loading 3.5 L",
+            "Top-loading 3.5 L",
+            "3.5 L"
+          ]
+        },
+        {
+          "label": "Retrieval system",
+          "values": [
+            "Waterline return with app alert",
+            "Waterline return with app alert",
+            "JellyFloat lift and surface retrieval"
+          ]
+        }
+      ],
+      "takeaway": "V3 and S3 share the same listed flow and basket size, while their navigation and Eco endurance differ. Ultra adds cleaning zones; these are more useful distinctions than a generic AI label."
+    },
+    "resources": [
+      {
+        "label": "US Scuba V3 specifications and offer",
+        "url": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Scuba V3 features and retrieval",
+        "url": "https://aiper.com/us/aiper-scuba-v3",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Official support and setup resources",
+        "url": "https://aiper.com/us/support/",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "aiper-scuba-s3": {
+    "verdict": "S3 is a practical comparison point when full underwater coverage and Eco endurance matter more than camera-assisted debris targeting. Its lower checked price should be weighed against the exact navigation and pool-fit requirements.",
+    "notFor": "Buyers seeking V3’s camera-based AI, floating-leaf surface skimming, verified shallow-shelf operation or unattended onshore charging.",
+    "specifications": [
+      {
+        "label": "Checked model",
+        "value": "Scuba S3 · US configuration",
+        "meaning": "Separate from Scuba S1 and the Scuba V3 family.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Pool-size rating",
+        "value": "Up to 1,614 ft² / about 150 m²",
+        "meaning": "Check the pool’s geometry as well as its area.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Listed pool surfaces",
+        "value": "Concrete, fibreglass, vinyl and tile",
+        "meaning": "Current official US compatibility list.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Main cleaning zones",
+        "value": "Floor, walls and waterline",
+        "meaning": "Surface skimming is not in the detailed coverage table.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Navigation",
+        "value": "WavePath 2.0 with dToF sensing",
+        "meaning": "The official comparison marks camera-based AI features as absent.",
+        "source": "https://aiper.com/us/aiper-scuba-s3"
+      },
+      {
+        "label": "Cleaning choices",
+        "value": "Auto, Floor, Wall, Waterline and Schedule",
+        "meaning": "Choose a mode around the part of the pool needing attention.",
+        "source": "https://aiper.com/us/aiper-scuba-s3"
+      },
+      {
+        "label": "Waterline cleaning",
+        "value": "JetAssist horizontal movement",
+        "meaning": "Designed for the boundary waterline, not open-surface leaf collection.",
+        "source": "https://aiper.com/us/aiper-scuba-s3"
+      },
+      {
+        "label": "Maximum pump flow",
+        "value": "4,800 GPH",
+        "meaning": "Manufacturer flow claim; not an independent cleaning-speed result.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Brush system",
+        "value": "Dual active brushes",
+        "meaning": "Actual contact depends on the pool surface and transitions.",
+        "source": "https://aiper.com/us/aiper-scuba-s3"
+      },
+      {
+        "label": "Debris basket",
+        "value": "Top-loading 3.5 L",
+        "meaning": "Capacity is separate from the filter’s particle-size specification.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Standard filtration",
+        "value": "180-micron filter",
+        "meaning": "Coarse debris collection layer described in the official FAQ.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Fine filtration",
+        "value": "3-micron ultra-fine filter",
+        "meaning": "Maintain and replace the fine layer according to the supplied instructions.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Standard runtime",
+        "value": "Up to 180 minutes",
+        "meaning": "Use this condition separately from the headline Eco maximum.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 240 minutes",
+        "meaning": "Maximum listed for Eco operation, not all modes.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours",
+        "meaning": "Allow for charging between sessions.",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner"
+      },
+      {
+        "label": "Retrieval",
+        "value": "Waterline return with app alerts",
+        "meaning": "Quick water release assists handling; manual lifting remains part of the routine.",
+        "source": "https://aiper.com/us/aiper-scuba-s3"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · Scuba S3",
+        "amount": "USD 649.99",
+        "source": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Standalone product offer checked 12 September 2026; displayed reference $799.99. Care plans, trade-in and skimmer bundles are additional options."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Aiper Scuba V3",
+          "url": "https://aiper.store/us/products/aiper-scuba-v3-cordless-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Aiper Scuba S3",
+          "url": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Aiper Scuba V3 Ultra",
+          "url": "https://aiper.com/us/aiper-scuba-v3-ultra",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Main cleaning zones",
+          "values": [
+            "Floor, walls and waterline",
+            "Floor, walls and waterline",
+            "Adds surface and shallow sun-shelf cleaning"
+          ]
+        },
+        {
+          "label": "Navigation distinction",
+          "values": [
+            "AI vision with dToF; VisionPath",
+            "WavePath 2.0 with dToF; no AI vision listed",
+            "Dual-camera AI; VisionPath 2.0"
+          ]
+        },
+        {
+          "label": "Published flow maximum",
+          "values": [
+            "4,800 GPH",
+            "4,800 GPH",
+            "8,500 GPH"
+          ]
+        },
+        {
+          "label": "Debris basket",
+          "values": [
+            "Top-loading 3.5 L",
+            "Top-loading 3.5 L",
+            "3.5 L"
+          ]
+        },
+        {
+          "label": "Retrieval system",
+          "values": [
+            "Waterline return with app alert",
+            "Waterline return with app alert",
+            "JellyFloat lift and surface retrieval"
+          ]
+        }
+      ],
+      "takeaway": "S3 offers the longest stated Eco runtime of the V3/S3 pair, but V3 adds AI vision. Choose by pool layout and cleaning zones before interpreting either feature as universally better."
+    },
+    "resources": [
+      {
+        "label": "US Scuba S3 specifications and price",
+        "url": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Scuba S3 navigation and cleaning modes",
+        "url": "https://aiper.com/us/aiper-scuba-s3",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Official setup and service resources",
+        "url": "https://aiper.com/us/support/",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "eureka-floorshine-830": {
+    "verdict": "FloorShine 830 is useful to compare around its low-furniture reach and base maintenance. Its flat-mode and charging limitations deserve as much attention as the suction and drying headlines.",
+    "notFor": "Buyers expecting a carpet extractor, an interchangeable handheld vacuum, confirmed steam cleaning, full upright suction while flat or simultaneous drying and charging.",
+    "specifications": [
+      {
+        "label": "Regional model",
+        "value": "NEW830BK · German listing",
+        "meaning": "Use the matching 220–240 V base and regional instructions.",
+        "source": "https://cdn.shopify.com/s/files/1/0789/1012/8414/files/EUREKA_NEW830BK_user_manual_EN_FR_DE_IT_ES_PL.pdf?v=1783519644"
+      },
+      {
+        "label": "Maximum suction claim",
+        "value": "24,000 Pa",
+        "meaning": "Manufacturer figure; it does not measure real-world stain removal by itself.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Brush rotation claim",
+        "value": "450 rpm",
+        "meaning": "Listed roller speed; contact and soil type affect cleaning.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Recline",
+        "value": "180° lay-flat operation",
+        "meaning": "The body enters flat mode automatically as it approaches the floor.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Lay-flat operating limits",
+        "value": "Reduced suction and lower usable dirty-water capacity",
+        "meaning": "Empty to the flat-water-level requirement before reclining.",
+        "source": "https://cdn.shopify.com/s/files/1/0789/1012/8414/files/EUREKA_NEW830BK_user_manual_EN_FR_DE_IT_ES_PL.pdf?v=1783519644"
+      },
+      {
+        "label": "Movement assistance",
+        "value": "Smart DualDrive",
+        "meaning": "Power assistance for pushing and pulling; try the handling on your floor.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Clean-water tank",
+        "value": "750 ml",
+        "meaning": "The 830 does not list the 880’s separate 110 ml solution reservoir.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Dirty-water tank",
+        "value": "700 ml in normal use",
+        "meaning": "Do not treat this as usable capacity while lying flat.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Modes",
+        "value": "Normal, Turbo and Quick",
+        "meaning": "Quick stops water output and picks up dry debris or residual water.",
+        "source": "https://cdn.shopify.com/s/files/1/0789/1012/8414/files/EUREKA_NEW830BK_user_manual_EN_FR_DE_IT_ES_PL.pdf?v=1783519644"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 60 minutes",
+        "meaning": "The checked retail table does not define the test mode.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Battery pack",
+        "value": "BP21640A · rated 4,000 mAh",
+        "meaning": "Replacement is for skilled persons, not a user battery-swap feature.",
+        "source": "https://cdn.shopify.com/s/files/1/0789/1012/8414/files/EUREKA_NEW830BK_user_manual_EN_FR_DE_IT_ES_PL.pdf?v=1783519644"
+      },
+      {
+        "label": "Charge time",
+        "value": "About 4–6 hours",
+        "meaning": "Manual figure; charging resumes after drying finishes.",
+        "source": "https://cdn.shopify.com/s/files/1/0789/1012/8414/files/EUREKA_NEW830BK_user_manual_EN_FR_DE_IT_ES_PL.pdf?v=1783519644"
+      },
+      {
+        "label": "Listed weight",
+        "value": "5.2 kg",
+        "meaning": "Handling also depends on tank contents and the movement required.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Roller self-cleaning claim",
+        "value": "75°C hot-water self-cleaning",
+        "meaning": "German listing claim for base maintenance; not verified heated-water floor delivery.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Roller drying claim",
+        "value": "75°C hot air; 5- or 20-minute option",
+        "meaning": "Manual states the cleaner does not charge during drying.",
+        "source": "https://de.eureka.com/products/eureka-floorshine830"
+      },
+      {
+        "label": "Self-cleaning prerequisite",
+        "value": "Docked with battery above 20%",
+        "meaning": "Low battery can delay the maintenance cycle.",
+        "source": "https://cdn.shopify.com/s/files/1/0789/1012/8414/files/EUREKA_NEW830BK_user_manual_EN_FR_DE_IT_ES_PL.pdf?v=1783519644"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany · NEW830BK",
+        "amount": "EUR 329.00",
+        "source": "https://de.eureka.com/products/eureka-floorshine830",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Current HTML listing and structured product price checked 12 September 2026; displayed reference €349. Earlier cached promotions differ. Confirm checkout, stock and regional delivery."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Eureka FloorShine 830",
+          "url": "https://de.eureka.com/products/eureka-floorshine830",
+          "market": "Germany · NEW830BK"
+        },
+        {
+          "name": "Eureka FloorShine 880",
+          "url": "https://de.eureka.com/products/eureka-floorshine880",
+          "market": "Germany · earlier 2025 model"
+        },
+        {
+          "name": "Shark AquaReach WD551",
+          "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html",
+          "market": "United States · Essential"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Main reach feature",
+          "values": [
+            "180° lay-flat body",
+            "180° lay-flat body",
+            "Extendable spray-and-suction wand"
+          ]
+        },
+        {
+          "label": "Published runtime maximum",
+          "values": [
+            "Up to 60 min; mode not specified in checked table",
+            "Up to 60 min; mode not specified in checked table",
+            "Up to 40 min"
+          ]
+        },
+        {
+          "label": "Roller drying in checked package",
+          "values": [
+            "75°C hot air; 5- or 20-minute option",
+            "75°C hot air; 5- or 20-minute option",
+            "Standard dock; heated drying dock not included"
+          ]
+        },
+        {
+          "label": "Clean-water arrangement",
+          "values": [
+            "750 ml reservoir",
+            "750 ml water plus 110 ml solution reservoir",
+            "Separate clean and dirty tanks; volumes not verified"
+          ]
+        },
+        {
+          "label": "Deodorising module",
+          "values": [
+            "Not listed in the 830 package",
+            "Included in the compared 880 package",
+            "Not verified in the checked listing"
+          ]
+        }
+      ],
+      "takeaway": "The 830 is the newer entry compared here; the 880 is an earlier model with extra maintenance features. Shark adds a different reach tool. Match the routine and exact box rather than ranking names or runtime headlines."
+    },
+    "resources": [
+      {
+        "label": "German FloorShine 830 configuration and current offer",
+        "url": "https://de.eureka.com/products/eureka-floorshine830",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "NEW830BK operating and care manual",
+        "url": "https://cdn.shopify.com/s/files/1/0789/1012/8414/files/EUREKA_NEW830BK_user_manual_EN_FR_DE_IT_ES_PL.pdf?v=1783519644",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Official CES 2026 product showcase",
+        "url": "https://de.eureka.com/pages/ces-2026",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }
