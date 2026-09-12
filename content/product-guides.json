@@ -8779,5 +8779,1533 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "mova-v70-ultra-complete": {
+    "verdict": "Consider the V70 for its bagless station and mechanical access features. The headline suction figure is less useful than checking whether its legs, extended pads and station suit the home.",
+    "notFor": "Buyers expecting a single 9 cm climb, cyclone separation, or a station that needs no manual washing.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "40,000 Pa",
+        "meaning": "Manufacturer laboratory maximum; not a measured pickup score.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Mopping system",
+        "value": "Dual rotating pads; up to 300 RPM",
+        "meaning": "Pad speed does not describe cleaning results on every stain.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Mop force",
+        "value": "Up to 15 N",
+        "meaning": "Manufacturer contact-force claim; different from suction pressure.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Mop extension",
+        "value": "Up to 16 cm",
+        "meaning": "Centre-to-centre pad displacement, not an extra 16 cm cleaning width.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Side-brush reach",
+        "value": "Up to 12 cm",
+        "meaning": "Measured from the robot body to the extended brush outer edge.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 4.5 cm",
+        "meaning": "A vertical single threshold is different from the advertised two-step test.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Double-step crossing",
+        "value": "Up to 9 cm; 18 cm step spacing",
+        "meaning": "Measure both rises and the intermediate landing before buying.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 88 mm",
+        "meaning": "Retracted-sensor body dimensions; allow clearance around furniture.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Navigation",
+        "value": "FlexScope retractable DToF",
+        "meaning": "Low furniture access depends on the actual opening and obstacles.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Mop lift",
+        "value": "10.5 mm; automatic pad removal",
+        "meaning": "Use pad removal or exclusion for carpets that exceed useful clearance.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Battery",
+        "value": "6,400 mAh",
+        "meaning": "Capacity alone does not determine whole-home completion time.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Station water tanks",
+        "value": "4 L clean / 3.5 L used",
+        "meaning": "Dirty water still requires regular manual emptying.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Dust collection",
+        "value": "Bagless EcoCyclone tank",
+        "meaning": "MOVA explicitly says the name does not indicate cyclone separation.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Station heating",
+        "value": "Up to 100°C PTC washboard",
+        "meaning": "A station heating claim; do not interpret it as floor-mopping temperature.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Hot-air drying",
+        "value": "Up to 70°C; one-hour mode",
+        "meaning": "An advertised station mode, not guaranteed drying under all conditions.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "420 × 458 × 470 mm",
+        "meaning": "Leave room to lift tanks and service the collection container.",
+        "source": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany",
+        "amount": "EUR 1,399",
+        "source": "https://de.mova.tech/products/v70-ultra-complete-saugroboter",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Base V70 Ultra Complete listing checked 12 September 2026; promotions and X bundles are separate."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA V70 Ultra Complete",
+          "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA Z70 Ultra Roller Complete",
+          "url": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA P70 Pro Ultra",
+          "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping",
+          "values": [
+            "Dual rotary pads",
+            "Continuously rinsed roller",
+            "Dual rotary pads"
+          ]
+        },
+        {
+          "label": "Maximum suction",
+          "values": [
+            "40,000 Pa",
+            "36,000 Pa",
+            "30,000 Pa"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "88 mm retracted",
+            "96 mm retracted",
+            "103.8 mm"
+          ]
+        },
+        {
+          "label": "Single / double step",
+          "values": [
+            "4.5 / 9 cm",
+            "4.8 / 9 cm",
+            "22 mm threshold"
+          ]
+        },
+        {
+          "label": "Station collection",
+          "values": [
+            "Bagless tank",
+            "4 L dust bag",
+            "Dust-bag collection"
+          ]
+        }
+      ],
+      "takeaway": "The V70 emphasizes reach and bagless ownership; Z70 changes the floor-contact system to a roller, while P70 gives up mechanical high-step crossing."
+    },
+    "resources": [
+      {
+        "label": "Global V70 specifications and footnotes",
+        "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "German base-model listing",
+        "url": "https://de.mova.tech/products/v70-ultra-complete-saugroboter",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 announcement",
+        "url": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "mova-z70-ultra-roller-complete": {
+    "verdict": "The Z70 is a useful shortlist for buyers combining roller mopping with difficult thresholds. Check the station footprint and real crossing geometry before paying for its flagship specification.",
+    "notFor": "Homes requiring bagless collection or guaranteed access over a single 9 cm rise.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "36,000 Pa",
+        "meaning": "Manufacturer maximum; suction alone does not rank floor-cleaning performance.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Roller length",
+        "value": "270 mm",
+        "meaning": "HydroForce 2.0 uses a continuously rinsed roller.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Fresh-water delivery",
+        "value": "12 nozzles",
+        "meaning": "Rinsing the roller is distinct from washing it after docking.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Contact pressure / force",
+        "value": "5,000 Pa / 18 N",
+        "meaning": "Mopping contact figures, not vacuum suction or machine weight.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Fibre-fluffing speed",
+        "value": "Up to 800 RPM",
+        "meaning": "This is the fibre-fluffing mechanism, not the floor roller speed.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Roller extension",
+        "value": "52 mm; 10 mm edge adjustment",
+        "meaning": "Two different edge-reaching movements; do not add them as a certified cleaning width.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Carpet protection",
+        "value": "13 mm roller lift + AutoShield",
+        "meaning": "Confirm clearance for the actual carpet pile and fringes.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 4.8 cm",
+        "meaning": "A vertical single rise has a lower limit than the headline two-step figure.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Double-step crossing",
+        "value": "9 cm: 4.8 + 4.2 cm; 24 cm spacing",
+        "meaning": "The intermediate landing is part of the test condition.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 96 mm retracted",
+        "meaning": "Raised-sensor height is 119.6 mm.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Navigation / detection",
+        "value": "Retractable DToF, RGB camera and dual 3D structured light",
+        "meaning": "Obstacle recognition still depends on visibility and object geometry.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Battery",
+        "value": "6,400 mAh",
+        "meaning": "Actual completion time includes station visits and charging.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Station water tanks",
+        "value": "5.5 L clean / 4.5 L used",
+        "meaning": "Larger tanks still need frequent dirty-water handling.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Dust bag",
+        "value": "4 L",
+        "meaning": "A bagged station; different ownership routine from V70.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Station wash / dry",
+        "value": "Up to 100°C water outlet / 70°C air outlet",
+        "meaning": "Laboratory outlet temperatures, not floor-contact temperatures.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "420 × 432 × 500 mm",
+        "meaning": "Allow tank-removal clearance above the station.",
+        "source": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany — brushed metal",
+        "amount": "EUR 949",
+        "source": "https://de.mova.tech/products/z70-ultra-roller-complete-saugroboter-gebuerstetes-metall",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Finish-specific official listing checked 12 September 2026; the illustrated stone-panel finish may have different pricing."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA Z70 Ultra Roller Complete",
+          "url": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA V70 Ultra Complete",
+          "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA S70 Ultra Roller",
+          "url": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mop system",
+          "values": [
+            "270 mm roller",
+            "Dual rotary pads",
+            "270 mm roller"
+          ]
+        },
+        {
+          "label": "Maximum suction",
+          "values": [
+            "36,000 Pa",
+            "40,000 Pa",
+            "32,000 Pa"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "96 mm retracted",
+            "88 mm retracted",
+            "91.5 mm specification"
+          ]
+        },
+        {
+          "label": "Single / double step",
+          "values": [
+            "4.8 / 9 cm",
+            "4.5 / 9 cm",
+            "3 / 4 cm"
+          ]
+        },
+        {
+          "label": "Dust collection",
+          "values": [
+            "4 L bag",
+            "Bagless tank",
+            "3.2 L bag"
+          ]
+        }
+      ],
+      "takeaway": "Z70 adds mechanical high-step crossing to the roller format; S70 is lower and has a smaller station, while V70 changes to rotary pads and bagless collection."
+    },
+    "resources": [
+      {
+        "label": "Global Z70 specifications and test conditions",
+        "url": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "German brushed-metal listing",
+        "url": "https://de.mova.tech/products/z70-ultra-roller-complete-saugroboter-gebuerstetes-metall",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "April 2026 launch announcement",
+        "url": "https://www.mova.tech/blogs/news/mova-2026-new-product-launch",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "mova-p70-pro-ultra": {
+    "verdict": "P70 is worth considering when automatic pad care and edge reach matter more than mechanical climbing. Check clearances and optional accessories before comparing the US promotional price with other markets.",
+    "notFor": "Homes with tall thresholds, very low furniture or a requirement for continuously rinsed roller mopping.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "30,000 Pa",
+        "meaning": "Manufacturer laboratory maximum; not an independent pickup result.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Mopping system",
+        "value": "Dual rotary pads; up to 260 RPM",
+        "meaning": "A pad-based system rather than an onboard roller-rinsing design.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Mop force",
+        "value": "Up to 12 N",
+        "meaning": "Contact-force claim under the manufacturer’s test conditions.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Edge extension",
+        "value": "RoboSwing; up to 4 cm",
+        "meaning": "Reach depends on cabinet geometry and mapped obstacles.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Threshold crossing",
+        "value": "Up to 22 mm",
+        "meaning": "No V70-style mechanical-leg crossing claim.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 103.8 mm",
+        "meaning": "Check furniture clearance against this full height.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Mop lift",
+        "value": "10.5 mm; automatic pad removal",
+        "meaning": "Pad removal is relevant when carpet clearance is insufficient.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Battery",
+        "value": "5,200 mAh",
+        "meaning": "Capacity does not establish runtime in the chosen cleaning mode.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Station water tanks",
+        "value": "4 L clean / 3.5 L used",
+        "meaning": "Used water remains a manual maintenance task.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "420 × 458 × 470 mm",
+        "meaning": "Allow access to tanks, bags and the washboard.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Washboard rinse",
+        "value": "20 spray nozzles",
+        "meaning": "Station washing, not nozzles applying water to the room floor.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Station heating",
+        "value": "Up to 100°C PTC washboard surface",
+        "meaning": "The official footnote defines a surface temperature, not 100°C wash water.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Hot-air drying",
+        "value": "Up to 70°C; one-hour mode",
+        "meaning": "Air-outlet and mode claims depend on test conditions.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Solution dispensing",
+        "value": "Single-compartment automatic dispenser",
+        "meaning": "Use compatible solution and the regional dosing instructions.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "Carpet sensing",
+        "value": "Ultrasonic carpet detection",
+        "meaning": "Configure carpet behaviour for pile, fringes and pad removal.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "CleanChop brush",
+        "value": "Optional on the global listing",
+        "meaning": "Do not assume promotional anti-tangle accessories are included.",
+        "source": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States — black",
+        "amount": "USD 679",
+        "source": "https://us.mova.tech/products/mova-p70-pro-ultra-robot-vacuum-black",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official black-model listing checked 12 September 2026; bundles, tax and finish can change the payable price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA P70 Pro Ultra",
+          "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA V70 Ultra Complete",
+          "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum",
+          "market": "Global"
+        },
+        {
+          "name": "Dreame L60 Ultra",
+          "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Maximum suction",
+          "values": [
+            "30,000 Pa",
+            "40,000 Pa",
+            "35,000 Pa"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "103.8 mm",
+            "88 mm retracted",
+            "82 mm"
+          ]
+        },
+        {
+          "label": "Single / double step",
+          "values": [
+            "22 mm threshold",
+            "4.5 / 9 cm",
+            "3 / 5 cm"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "5,200 mAh",
+            "6,400 mAh",
+            "5,200 mAh"
+          ]
+        },
+        {
+          "label": "Mop format",
+          "values": [
+            "Dual rotary pads",
+            "Extended dual rotary pads",
+            "OmniScrub rotary pads"
+          ]
+        }
+      ],
+      "takeaway": "P70 trades advanced access hardware for a simpler purchase proposition. L60 Ultra is substantially lower, while V70 addresses taller transitions and bagless collection."
+    },
+    "resources": [
+      {
+        "label": "Global P70 specifications and footnotes",
+        "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "US black model listing",
+        "url": "https://us.mova.tech/products/mova-p70-pro-ultra-robot-vacuum-black",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 announcement",
+        "url": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "mova-s70-ultra-roller": {
+    "verdict": "S70 Ultra Roller is a useful shortlist when roller cleaning and furniture access matter more than very high climbing capability. Use the detailed body height and exact regional model name when comparing.",
+    "notFor": "Buyers needing a single 4 cm climb, a bagless station or guaranteed clearance under a precisely 90 mm opening.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "32,000 Pa",
+        "meaning": "Manufacturer maximum; not a verified comparative pickup score.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Roller length",
+        "value": "270 mm",
+        "meaning": "HydroForce uses a continuously rinsed floor-contact roller.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Fresh-water delivery",
+        "value": "12 nozzles",
+        "meaning": "Onboard rinsing refreshes the contact surface during cleaning.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Contact pressure / force",
+        "value": "4,700 Pa / 17 N",
+        "meaning": "Mop-contact measures, separate from vacuum suction.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Edge extension",
+        "value": "Up to 4.4 cm",
+        "meaning": "The reachable edge still depends on furniture and wall geometry.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Navigation",
+        "value": "CovertSense hidden DToF",
+        "meaning": "No raised navigation tower in the advertised design.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 91.5 mm",
+        "meaning": "Detailed specification; the same page also uses a 90 mm headline.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 3 cm",
+        "meaning": "Single vertical obstacle rating from the official footnote.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Double-step crossing",
+        "value": "4 cm: 3 + 1 cm; 3 cm gap",
+        "meaning": "The headline refers to a defined two-step arrangement.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Carpet protection",
+        "value": "12 mm roller lift + AutoShield",
+        "meaning": "Do not assume complete clearance on deep-pile rugs.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Main brush",
+        "value": "CleanChop 3.0",
+        "meaning": "Included design here; different from P70’s optional brush listing.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Battery",
+        "value": "6,400 mAh",
+        "meaning": "Actual duration depends on cleaning mode and docking frequency.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Station water tanks",
+        "value": "5 L clean / 4.5 L used",
+        "meaning": "Dirty water still needs regular handling.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Dust bag",
+        "value": "3.2 L",
+        "meaning": "Long advertised emptying intervals are conditional laboratory claims.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Station wash",
+        "value": "Up to 100°C water outlet",
+        "meaning": "Measured at the station under laboratory ambient conditions, not on the floor.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "340 × 456 × 496 mm",
+        "meaning": "Include extra space above for removing water tanks.",
+        "source": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Taiwan — white",
+        "amount": "TWD 25,980",
+        "source": "https://tw.mova.tech/products/mova-s70-ultra-roller",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Regional white S70 Ultra Roller price checked 12 September 2026; the guide image illustrates the black finish."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA S70 Ultra Roller",
+          "url": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA Z70 Ultra Roller Complete",
+          "url": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA P70 Pro Ultra",
+          "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping",
+          "values": [
+            "270 mm roller",
+            "270 mm roller",
+            "Dual rotary pads"
+          ]
+        },
+        {
+          "label": "Maximum suction",
+          "values": [
+            "32,000 Pa",
+            "36,000 Pa",
+            "30,000 Pa"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "91.5 mm specification",
+            "96 mm retracted",
+            "103.8 mm"
+          ]
+        },
+        {
+          "label": "Single / double step",
+          "values": [
+            "3 / 4 cm",
+            "4.8 / 9 cm",
+            "22 mm threshold"
+          ]
+        },
+        {
+          "label": "Station width / height",
+          "values": [
+            "340 / 496 mm",
+            "420 / 500 mm",
+            "420 / 470 mm"
+          ]
+        }
+      ],
+      "takeaway": "S70 gives roller buyers a lower body and narrower station than Z70. P70 changes to rotary pads, while Z70 provides substantially more demanding threshold capability."
+    },
+    "resources": [
+      {
+        "label": "Global S70 Ultra specifications and footnotes",
+        "url": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Taiwan white-model listing",
+        "url": "https://tw.mova.tech/products/mova-s70-ultra-roller",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 announcement",
+        "url": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dreame-l60-pro-ultra": {
+    "verdict": "Choose the Pro shortlist for its mechanical access and thermal mopping, while checking that its 89 mm retracted body fits the furniture. The regular L60 Ultra remains the lower-profile alternative.",
+    "notFor": "Buyers who assume Pro means a thinner body, or who require a single vertical 8.8 cm climb.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "35,000 Pa",
+        "meaning": "Manufacturer laboratory maximum; shared with regular L60 Ultra.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Navigation",
+        "value": "VersaLift retractable DToF",
+        "meaning": "Different from the fixed 3D ToF arrangement in L60 Ultra.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 89 mm retracted",
+        "meaning": "Height increases to 111 mm with the sensor raised.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 4.5 cm",
+        "meaning": "Do not substitute the combined two-step headline.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Double-step crossing",
+        "value": "Up to 8.8 cm; landing wider than 23 cm",
+        "meaning": "The intermediate platform geometry is part of the manufacturer test.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Main brush",
+        "value": "HyperStream DuoBrush",
+        "meaning": "Inspect both brush ends even when anti-tangle performance is advertised.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Mopping",
+        "value": "Thermal dual OmniScrub pads",
+        "meaning": "The Pro’s heated pad system differs from regular L60 Ultra.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Warm-mop retention claim",
+        "value": "30–40°C after one minute; peak 40°C",
+        "meaning": "Phase-change pads retain station heat in a laboratory test; not guaranteed sustained active floor heating.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Mop lift",
+        "value": "10.5 mm; automatic pad removal",
+        "meaning": "Choose carpet settings according to pile and moisture sensitivity.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Edge reach",
+        "value": "Side-brush and mop extension; mop up to 40 mm",
+        "meaning": "Access depends on wall and furniture geometry.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Battery",
+        "value": "6,400 mAh",
+        "meaning": "Do not transfer this capacity to regular L60 Ultra.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Onboard dust bin",
+        "value": "300 mL",
+        "meaning": "Different from the 275 mL regular L60 Ultra bin.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Station dust bag",
+        "value": "3.2 L",
+        "meaning": "Budget for replacement bags and filters.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Station water tanks",
+        "value": "4.5 L clean / 4 L used",
+        "meaning": "Dirty-water handling remains manual.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Station mop wash",
+        "value": "Up to 100°C at the washboard PTC area",
+        "meaning": "The footnote defines the station heating area; not a measured floor or universal water-outlet temperature.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "340 × 456 × 590 mm",
+        "meaning": "Allow further clearance above for lifting the tanks.",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 1,399.99",
+        "source": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official US L60 Pro Ultra listing checked 12 September 2026; exclude assumptions about future promotions or tax."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame L60 Pro Ultra",
+          "url": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame L60 Ultra",
+          "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "MOVA V70 Ultra Complete",
+          "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Maximum suction",
+          "values": [
+            "35,000 Pa",
+            "35,000 Pa",
+            "40,000 Pa"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "89 mm retracted",
+            "82 mm",
+            "88 mm retracted"
+          ]
+        },
+        {
+          "label": "Single / double step",
+          "values": [
+            "4.5 / 8.8 cm",
+            "3 / 5 cm",
+            "4.5 / 9 cm"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "6,400 mAh",
+            "5,200 mAh",
+            "6,400 mAh"
+          ]
+        },
+        {
+          "label": "Mopping format",
+          "values": [
+            "Thermal OmniScrub rotary pads",
+            "OmniScrub rotary pads",
+            "Extending rotary pads"
+          ]
+        }
+      ],
+      "takeaway": "Pro prioritises heated mopping and high-step access; regular L60 Ultra is lower. V70 introduces bagless collection and a different edge-extension system."
+    },
+    "resources": [
+      {
+        "label": "US L60 Pro Ultra specifications",
+        "url": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "L60 series launch announcement",
+        "url": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "L60 Ultra official comparison",
+        "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dreame-l60-ultra": {
+    "verdict": "L60 Ultra deserves a separate shortlist for its 82 mm body. It can be a better fit than the Pro under low furniture when the regular model’s lower crossing limits are sufficient.",
+    "notFor": "Buyers requiring ProLeap-level transitions, retractable navigation or the Pro’s thermal floor-mopping system.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "35,000 Pa",
+        "meaning": "Shared manufacturer maximum with the Pro; not proof of identical cleaning results.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "351 × 351 × 82 mm",
+        "meaning": "The footnote requires at least 84 mm entry clearance despite the 82 mm body height.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Navigation",
+        "value": "Fixed 3D ToF with AI camera and LED",
+        "meaning": "Not the Pro’s retractable VersaLift sensor.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 3 cm",
+        "meaning": "Use the metric footnote; an inch conversion elsewhere on the page is inconsistent.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Double-step crossing",
+        "value": "Up to 5 cm; landing wider than 12 cm",
+        "meaning": "Combined test geometry, not a single 5 cm vertical rise.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Main brush",
+        "value": "HyperStream DuoBrush",
+        "meaning": "Remove trapped material from both brush ends during routine care.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Mopping",
+        "value": "Dual OmniScrub rotary pads",
+        "meaning": "Do not transfer the Pro’s thermal floor-mopping claim.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Mop lift",
+        "value": "10.5 mm; automatic pad removal",
+        "meaning": "Match the selected carpet behaviour to actual rug pile.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Battery",
+        "value": "5,200 mAh",
+        "meaning": "Different from L60 Pro Ultra’s 6,400 mAh.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Onboard dust bin",
+        "value": "275 mL",
+        "meaning": "Different from the Pro’s 300 mL bin.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Onboard water tank",
+        "value": "80 mL",
+        "meaning": "Station tank capacity is a separate specification.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Station dust bag",
+        "value": "3.2 L",
+        "meaning": "Bags and filters remain recurring consumables.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Station water tanks",
+        "value": "4.5 L clean / 4 L used",
+        "meaning": "Allow regular manual emptying of dirty water.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Station wash / dry",
+        "value": "Up to 100°C PTC area / 45°C drying",
+        "meaning": "The wash-temperature footnote defines the station PTC heating area, not a measured floor temperature.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Solution compartment",
+        "value": "600 mL",
+        "meaning": "Use the product-compatible solution and dosing instructions.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "340 × 456 × 590 mm",
+        "meaning": "Allow vertical clearance for tank removal.",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 1,299.99",
+        "source": "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Regular L60 Ultra official listing checked 12 September 2026; Pro, PE and FE prices are not interchangeable."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame L60 Ultra",
+          "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame L60 Pro Ultra",
+          "url": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "MOVA P70 Pro Ultra",
+          "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Robot height",
+          "values": [
+            "82 mm",
+            "89 mm retracted",
+            "103.8 mm"
+          ]
+        },
+        {
+          "label": "Maximum suction",
+          "values": [
+            "35,000 Pa",
+            "35,000 Pa",
+            "30,000 Pa"
+          ]
+        },
+        {
+          "label": "Single / double step",
+          "values": [
+            "3 / 5 cm",
+            "4.5 / 8.8 cm",
+            "22 mm threshold"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "5,200 mAh",
+            "6,400 mAh",
+            "5,200 mAh"
+          ]
+        },
+        {
+          "label": "Mopping",
+          "values": [
+            "OmniScrub rotary pads",
+            "Thermal OmniScrub rotary pads",
+            "RoboSwing rotary pads"
+          ]
+        }
+      ],
+      "takeaway": "The regular L60 is the lowest of these three bodies. Pro changes navigation, crossing and floor heating; P70 provides another regional price point with more limited access."
+    },
+    "resources": [
+      {
+        "label": "US L60 Ultra specifications and footnotes",
+        "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "April 2026 L60 launch",
+        "url": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "L60 Pro Ultra official comparison",
+        "url": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "mova-viax-500": {
+    "verdict": "ViAX 500 is a practical shortlist for smaller, moderately sloped lawns when virtual boundaries and a compact mower matter. Resolve the regional area-rating discrepancy before sizing a purchase.",
+    "notFor": "Large or steep lawns requiring AWD, buyers wanting electronic height adjustment, or owners expecting every boundary to need no manual trimming.",
+    "specifications": [
+      {
+        "label": "Advertised lawn size",
+        "value": "Up to 600 m² on the current global page",
+        "meaning": "Launch material describes 500 m²; confirm the regional model rating.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Navigation",
+        "value": "UltraEyes 2.0: dual AI vision + 360° LiDAR",
+        "meaning": "Specific to the current ViAX 500 listing; do not transfer base-series vision-only claims.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Boundary setup",
+        "value": "Virtual boundaries; no wire or RTK station",
+        "meaning": "The lawn still needs mapping, exclusions and route checks.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Drive",
+        "value": "Front-wheel drive with universal wheel",
+        "meaning": "Not a four-wheel-drive LiDAX Ultra AWD chassis.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Maximum slope",
+        "value": "40% — about 22°",
+        "meaning": "Gradient percent is not degrees; surface traction affects performance.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Obstacle crossing",
+        "value": "Up to 4 cm",
+        "meaning": "Avoid treating the laboratory limit as a guarantee on every edge.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Minimum passage",
+        "value": "60 cm",
+        "meaning": "Measure the clear width after allowing for plants and borders.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Cutting width",
+        "value": "20 cm",
+        "meaning": "Turning and complex boundaries reduce practical output.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Cutting height",
+        "value": "2–6 cm; manual knob",
+        "meaning": "Do not promise app-controlled height adjustment.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Battery",
+        "value": "4 Ah",
+        "meaning": "Exact operating time depends on grass and mowing mode.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Operating duration",
+        "value": "60–80 minutes",
+        "meaning": "Manufacturer test range, not a whole-lawn completion guarantee.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Charging",
+        "value": "About 60 minutes",
+        "meaning": "Include charging periods when planning the mowing schedule.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Coverage per charge",
+        "value": "120 m² standard / 150 m² efficient",
+        "meaning": "Mode-specific claims; different from the mapped lawn-size rating.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Maps",
+        "value": "Two independent maps",
+        "meaning": "A second station may be needed; the mower cannot move itself across a disconnected barrier.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Mowing modes",
+        "value": "All-area, zone, edge, spot and manual",
+        "meaning": "Map exclusions remain necessary around unsuitable areas.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX6",
+        "meaning": "Follow washing instructions; do not infer immersion protection.",
+        "source": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Europe — historical launch reference",
+        "amount": "EUR 749",
+        "source": "https://fr.mova.tech/blogs/blog/mova-lidax-ultra-viax-series",
+        "kind": "Manufacturer launch reference",
+        "date": "2026-09-12",
+        "note": "Manufacturer reference for the March 2026 ViAX 500 launch; checked 12 September, not a current stock or retail-price confirmation."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA ViAX 500",
+          "url": "https://www.mova.tech/products/robot-lawn-mower-viax-500",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA LiDAX Ultra 2000 AWD",
+          "url": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA LiDAX Ultra 1000",
+          "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower",
+          "market": "United States; non-AWD"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Drive",
+          "values": [
+            "Front-wheel drive",
+            "Four-wheel drive",
+            "Rear-wheel drive"
+          ]
+        },
+        {
+          "label": "Slope claim",
+          "values": [
+            "40% ≈ 22°",
+            "80% ≈ 38.6°",
+            "45% ≈ 24.2°"
+          ]
+        },
+        {
+          "label": "Cutting width",
+          "values": [
+            "20 cm",
+            "40 cm",
+            "7.9 in"
+          ]
+        },
+        {
+          "label": "Cutting height",
+          "values": [
+            "2–6 cm, manual",
+            "3–10 cm, electronic",
+            "1.2–3.9 in"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "4 Ah",
+            "7.5 Ah; listed 243 Wh",
+            "4 Ah"
+          ]
+        }
+      ],
+      "takeaway": "ViAX is the compact smaller-lawn option. LiDAX Ultra 2000 AWD adds traction and a much wider cutting system; the existing 1000 is a separate rear-drive model."
+    },
+    "resources": [
+      {
+        "label": "Current global ViAX 500 specifications",
+        "url": "https://www.mova.tech/products/robot-lawn-mower-viax-500",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "European 2026 ViAX launch and price reference",
+        "url": "https://fr.mova.tech/blogs/blog/mova-lidax-ultra-viax-series",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "March 2026 regional launch campaign",
+        "url": "https://it.mova.tech/pages/awd-robot-tagliaerba-prossimamente-disponibile",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "mova-lidax-ultra-2000-awd": {
+    "verdict": "The 2000 AWD is worth shortlisting for demanding terrain and wider cutting coverage. Size it using the real mowing schedule and access routes, with the exact regional price and service package confirmed separately.",
+    "notFor": "Small confined lawns where a 23.6 kg chassis is unnecessary, or buyers expecting its slope and coverage maxima under every condition.",
+    "specifications": [
+      {
+        "label": "Rated map area",
+        "value": "2,000 m² per map",
+        "meaning": "Dual maps do not create a guaranteed 4,000 m² daily output.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Navigation",
+        "value": "UltraView 3.0: dual AI vision + 360° 3D LiDAR",
+        "meaning": "No separate RTK station or perimeter wire is specified.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Drive",
+        "value": "AWD; four 116 W hub motors",
+        "meaning": "Individual motor ratings do not establish total battery consumption.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Maximum slope",
+        "value": "80% — about 38.6°",
+        "meaning": "Surface conditions, turns and boundary position affect usable traction.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Suspension / obstacle crossing",
+        "value": "Independent suspension; up to 6 cm obstacles",
+        "meaning": "Check actual transition geometry and ground clearance.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Cutting system",
+        "value": "40 cm; two discs with six blades each",
+        "meaning": "Turning and repeated passes reduce practical coverage.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Cutting height",
+        "value": "3–10 cm; electronic adjustment",
+        "meaning": "Confirm the suitable range for the lawn’s grass and season.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Edge reach",
+        "value": "UltraTrim 2.0; claimed gap under 3 cm",
+        "meaning": "Flush-edge straddling is only suitable on safe, level boundaries.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Battery",
+        "value": "7.5 Ah; manufacturer-listed 243 Wh",
+        "meaning": "Use the listed energy; do not derive it from the advertised 36 V class.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Operating duration",
+        "value": "150–170 minutes",
+        "meaning": "Manufacturer test range, not a guaranteed complete-lawn runtime.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Coverage per charge",
+        "value": "800–1,000 m²",
+        "meaning": "Laboratory range; grass load and route complexity affect results.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Charging interval",
+        "value": "65 minutes, 15–95%; about 90 minutes full",
+        "meaning": "Different charge windows explain the two advertised figures.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Maps / zones",
+        "value": "Two independent maps; up to 150 zones",
+        "meaning": "Separate lawns can require another station or manual transfer.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Dimensions",
+        "value": "740 × 532 × 321 mm",
+        "meaning": "Check passage, transport and winter-storage space.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Weight",
+        "value": "23.6 kg",
+        "meaning": "Consider safe handling when relocating or servicing the mower.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Water resistance",
+        "value": "IPX6",
+        "meaning": "Follow cleaning instructions and do not assume immersion protection.",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Exact regional 2000 AWD",
+        "amount": "Not verified",
+        "source": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151",
+        "kind": "Availability and price check",
+        "date": "2026-09-12",
+        "note": "The global page provides specifications but no usable confirmed regional retail price; request the exact 2000 AWD quote and warranty terms."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA LiDAX Ultra 2000 AWD",
+          "url": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA ViAX 500",
+          "url": "https://www.mova.tech/products/robot-lawn-mower-viax-500",
+          "market": "Global"
+        },
+        {
+          "name": "MOVA LiDAX Ultra 1000",
+          "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower",
+          "market": "United States; non-AWD"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Drive",
+          "values": [
+            "Four-wheel drive",
+            "Front-wheel drive",
+            "Rear-wheel drive"
+          ]
+        },
+        {
+          "label": "Slope claim",
+          "values": [
+            "80% ≈ 38.6°",
+            "40% ≈ 22°",
+            "45% ≈ 24.2°"
+          ]
+        },
+        {
+          "label": "Cutting width",
+          "values": [
+            "40 cm",
+            "20 cm",
+            "7.9 in"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "7.5 Ah; listed 243 Wh",
+            "4 Ah",
+            "4 Ah"
+          ]
+        },
+        {
+          "label": "Area reference",
+          "values": [
+            "2,000 m² per map",
+            "600 m² current / 500 m² launch",
+            "0.25 acre US rating"
+          ]
+        }
+      ],
+      "takeaway": "The AWD is a different chassis and cutting system, not simply a higher-capacity non-AWD 1000. Compare map ratings separately from per-charge and daily output."
+    },
+    "resources": [
+      {
+        "label": "Global 2000 AWD specifications and footnotes",
+        "url": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Dated March 2026 AWD launch campaign",
+        "url": "https://it.mova.tech/pages/awd-robot-tagliaerba-prossimamente-disponibile",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "ViAX 500 official comparison",
+        "url": "https://www.mova.tech/products/robot-lawn-mower-viax-500",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }

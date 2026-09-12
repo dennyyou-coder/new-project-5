@@ -1510,6 +1510,42 @@
         "outputHash": "sha256:03f68e229b1bf422b6a0400d9ada8f87f08eb946d4ac855dcccdf613d1e9e507"
       }
     },
+    "/images/articles/dreame-l60-pro-ultra/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 19212,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bb3df08bdc5a579877bbf74b7d812f398ac51ff62028636e16f2b91ffd6385d4",
+      "outputHash": "sha256:97973f45d2dcf6675e90b4115dd8b1518f94f2d60fa96c7dd244f41b8e017bfe",
+      "mobile": {
+        "src": "/images/articles/dreame-l60-pro-ultra/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 8902,
+        "outputHash": "sha256:c1aa7f2088a51099f48d145e736eef40ec59c3ba18159f2e49f815d357365ecf"
+      }
+    },
+    "/images/articles/dreame-l60-ultra/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 14902,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:aa657988d59ba2a420ac9749ac9c4825a67f151a9a81d550904242fe3a1d0d01",
+      "outputHash": "sha256:c4c629425c4d5d30f5f7cadbd985fe51f1a1d8388063edddea9acf29aa7240e0",
+      "mobile": {
+        "src": "/images/articles/dreame-l60-ultra/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 9528,
+        "outputHash": "sha256:19b32ec85907a285a9451030c845e57fd6842e7534a8158e75c53cc56c56a72c"
+      }
+    },
     "/images/articles/dreame-t16-pro-heat/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -3503,6 +3539,35 @@
         "outputHash": "sha256:f7901d6e7e03cae32293cfb878e9423d1f113c5a286bcf86f75b41bc6c72af6f"
       }
     },
+    "/images/articles/mova-lidax-ultra-2000-awd/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 45984,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f4b019fcace37231409f3ff2dc62f38f3305a0a6261cd11905ecf11f2550baba",
+      "outputHash": "sha256:cbe4770e794f4677147342c4b3a8cd2caf4f48916ffcd64cff198d4fdeec187b"
+    },
+    "/images/articles/mova-p70-pro-ultra/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 57352,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bd5e9db67584783dcd7f53f783a918a39e5e6fa4dce28fee2f6633fc07a723ca",
+      "outputHash": "sha256:ede6822c0b505be45957820b426859ce05c4df19ee03c519e410a8fcd175a3fc",
+      "mobile": {
+        "src": "/images/articles/mova-p70-pro-ultra/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 16376,
+        "outputHash": "sha256:81ae6ee28eb1b45d9bbfb4b41f393288117ed0cc59ad51267b430a022aada2c5"
+      }
+    },
     "/images/articles/mova-rover-x10/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3519,6 +3584,64 @@
         "height": 800,
         "bytes": 37784,
         "outputHash": "sha256:d757b482328352b6513c086a8433ae552b67c61b89a6b493f667c2b8d9648a93"
+      }
+    },
+    "/images/articles/mova-s70-ultra-roller/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 40714,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6c63fdef6611fe8992ce61de5c6b1619ab16a2d0b6c433ed41b1aec3f18ff4b5",
+      "outputHash": "sha256:945430db4555124d90eedeadfc41a9813ab3f92bd1e6722fd7e067eaba992a7d"
+    },
+    "/images/articles/mova-v70-ultra-complete/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 43232,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:45175531311212cf648b72649a246204d5a4d9117eedb8efa2ec41223d1a6536",
+      "outputHash": "sha256:aca766727355abb6b503c81f4d43c82519befdb90df6712566d9b1a10f733563"
+    },
+    "/images/articles/mova-viax-500/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1325,
+      "height": 1325,
+      "bytes": 85678,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ec471baee2d1d01d20c0db80f0c980b3c1dd3f10fec43f24834dda9a0eb7e31f",
+      "outputHash": "sha256:81ca427b401f06bcc8780f8c0c9c4b7a82b54d0f7c08aa6abc0a9e90ac445313",
+      "mobile": {
+        "src": "/images/articles/mova-viax-500/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 37138,
+        "outputHash": "sha256:6ffb882ff34e7008751cb998d42f6c1050c1368e1badbb53aa1438390ec39874"
+      }
+    },
+    "/images/articles/mova-z70-ultra-roller-complete/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1300,
+      "height": 1300,
+      "bytes": 170366,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b9e8d0587aa05b8a95e772306db8af084eaefc27f1bb5f3fd7d5d80565cced74",
+      "outputHash": "sha256:02785d722ddf2a723c9c5f9dbdf2c2460b378857aa94a325518894d6bbe9ad01",
+      "mobile": {
+        "src": "/images/articles/mova-z70-ultra-roller-complete/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 66242,
+        "outputHash": "sha256:ebcc85b1dcff933bb330be6e8078f042fd843ccf23f80ffc0da7f9d623bbb675"
       }
     },
     "/images/articles/narwal-flow-2/01-cover.webp": {
@@ -32864,6 +32987,16 @@
         "/images/articles/dreame-douyin-counterattack-against-tineco/05.webp"
       ]
     },
+    "dreame-l60-pro-ultra": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-l60-pro-ultra/01-cover.webp",
+      "body": []
+    },
+    "dreame-l60-ultra": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-l60-ultra/01-cover.webp",
+      "body": []
+    },
     "dreame-new-disruptor-in-vacuums": {
       "budgetClass": "standard",
       "cover": "/images/insights/dreame-new-disruptor-in-vacuums-cover.jpg",
@@ -34144,14 +34277,44 @@
       "cover": "/images/articles/mova-lidax-ultra-1000/01-cover.webp",
       "body": []
     },
+    "mova-lidax-ultra-2000-awd": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-lidax-ultra-2000-awd/01-cover.webp",
+      "body": []
+    },
+    "mova-p70-pro-ultra": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-p70-pro-ultra/01-cover.webp",
+      "body": []
+    },
     "mova-rover-x10": {
       "budgetClass": "standard",
       "cover": "/images/articles/mova-rover-x10/01-cover.webp",
       "body": []
     },
+    "mova-s70-ultra-roller": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-s70-ultra-roller/01-cover.webp",
+      "body": []
+    },
     "mova-took-me-to-meet-a-celebrity": {
       "budgetClass": "standard",
       "cover": "/images/insights/mova-took-me-to-meet-a-celebrity-cover.jpg",
+      "body": []
+    },
+    "mova-v70-ultra-complete": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-v70-ultra-complete/01-cover.webp",
+      "body": []
+    },
+    "mova-viax-500": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-viax-500/01-cover.webp",
+      "body": []
+    },
+    "mova-z70-ultra-roller-complete": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-z70-ultra-roller-complete/01-cover.webp",
       "body": []
     },
     "narwal-and-the-self-cleaning-robot-vacuum": {
@@ -36712,6 +36875,24 @@
         }
       }
     },
+    "dreame-l60-pro-ultra": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-l60-pro-ultra/01-cover.webp",
+          "hash": "sha256:bb3df08bdc5a579877bbf74b7d812f398ac51ff62028636e16f2b91ffd6385d4"
+        }
+      }
+    },
+    "dreame-l60-ultra": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-l60-ultra/01-cover.webp",
+          "hash": "sha256:aa657988d59ba2a420ac9749ac9c4825a67f151a9a81d550904242fe3a1d0d01"
+        }
+      }
+    },
     "dreame-t16-pro-heat": {
       "files": {
         "01-cover.png": {
@@ -37309,12 +37490,66 @@
         }
       }
     },
+    "mova-lidax-ultra-2000-awd": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/mova-lidax-ultra-2000-awd/01-cover.webp",
+          "hash": "sha256:f4b019fcace37231409f3ff2dc62f38f3305a0a6261cd11905ecf11f2550baba"
+        }
+      }
+    },
+    "mova-p70-pro-ultra": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mova-p70-pro-ultra/01-cover.webp",
+          "hash": "sha256:bd5e9db67584783dcd7f53f783a918a39e5e6fa4dce28fee2f6633fc07a723ca"
+        }
+      }
+    },
     "mova-rover-x10": {
       "files": {
         "01-cover.jpg": {
           "status": "matched",
           "primary": "/images/articles/mova-rover-x10/01-cover.webp",
           "hash": "sha256:9f7ba0a5e4a7fc59e0d336f3fefee7a334c140d07b1aa6bf237f16ea9c47dabb"
+        }
+      }
+    },
+    "mova-s70-ultra-roller": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/mova-s70-ultra-roller/01-cover.webp",
+          "hash": "sha256:6c63fdef6611fe8992ce61de5c6b1619ab16a2d0b6c433ed41b1aec3f18ff4b5"
+        }
+      }
+    },
+    "mova-v70-ultra-complete": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/mova-v70-ultra-complete/01-cover.webp",
+          "hash": "sha256:45175531311212cf648b72649a246204d5a4d9117eedb8efa2ec41223d1a6536"
+        }
+      }
+    },
+    "mova-viax-500": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/mova-viax-500/01-cover.webp",
+          "hash": "sha256:ec471baee2d1d01d20c0db80f0c980b3c1dd3f10fec43f24834dda9a0eb7e31f"
+        }
+      }
+    },
+    "mova-z70-ultra-roller-complete": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/mova-z70-ultra-roller-complete/01-cover.webp",
+          "hash": "sha256:b9e8d0587aa05b8a95e772306db8af084eaefc27f1bb5f3fd7d5d80565cced74"
         }
       }
     },
