@@ -6,9 +6,9 @@
   "legalName": "Fisher & Paykel Appliances Limited",
   "legalEntityNote": "Fisher & Paykel Appliances Limited is the principal appliance operating company and has been Haier-owned since 2012. Regional entities can handle sales, imports and warranty obligations; in the United States, official warranty information identifies Fisher & Paykel Appliances, Inc. as warrantor. DCS is a separately marketed cooking brand owned by Fisher & Paykel.",
   "officialWebsite": "https://www.fisherpaykel.com/",
-  "headline": "Fisher & Paykel ownership, premium appliance portfolio, manufacturing and channels",
-  "description": "A source-backed profile of Fisher & Paykel Appliances, Haier ownership, DCS boundaries, premium kitchen and laundry products, manufacturing and buyer checks.",
-  "metaDescription": "Fisher & Paykel profile: Haier ownership, legal entities, DCS boundary, premium appliances, manufacturing network, channels and buyer verification.",
+  "headline": "Fisher & Paykel: New Zealand appliance design within Haier",
+  "description": "Fisher & Paykel Appliances is a New Zealand-founded premium appliance business within Haier Smart Home. Haier acquired it in 2012. Its range spans cooking, refrigeration, DishDrawer dishwashers and laundry, with design and engineering in New Zealand and manufacturing across several countries.",
+  "metaDescription": "Who owns Fisher & Paykel? See its Haier relationship, New Zealand origins, appliance manufacturing, CEO and new Auckland innovation campus.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Fisher & Paykel or Haier. Parent ownership, the Fisher & Paykel and DCS brands, regional entities, factories, suppliers, importers and warranty providers are separate layers and should not be generalized.",
   "headquarters": "Auckland, New Zealand",
   "founded": "1934",
@@ -34,9 +34,16 @@
   ],
   "ownership": {
     "summary": "Fisher & Paykel Appliances Limited is a New Zealand-rooted premium appliance company acquired by Haier in 2012 and reported within Haier's global home-appliance portfolio. Fisher & Paykel continues as a distinct brand and operating business; Haier Group, Haier Smart Home, Fisher & Paykel Appliances Limited, regional subsidiaries and the separately marketed DCS brand are related but not interchangeable.",
-    "parentCompany": "Haier Smart Home Co., Ltd., within Haier Group"
+    "parentCompany": "Haier Smart Home Co., Ltd., within Haier Group",
+    "displayLabel": "Haier Smart Home subsidiary; New Zealand-founded appliance business"
   },
-  "leadership": [],
+  "leadership": [
+    {
+      "name": "Daniel Witten-Hannah",
+      "role": "Chief Executive Officer, Fisher & Paykel Appliances",
+      "context": "Identified as CEO in the company’s 30 July 2026 Auckland campus announcement."
+    }
+  ],
   "productPortfolio": [
     {
       "name": "Premium cooking appliances",
@@ -62,7 +69,7 @@
   "manufacturingSupplyChain": [
     {
       "evidence": "Haier's official Fisher & Paykel profile reports manufacturing operations in Thailand, China, Italy and Mexico.",
-      "scope": "Current company-level manufacturing network",
+      "scope": "Haier brand-profile disclosure reviewed September 2026; individual models may move between plants",
       "buyerCheck": "Match the exact product, model, factory and country-of-origin record rather than assuming one location serves the full range."
     },
     {
@@ -74,6 +81,11 @@
       "evidence": "The company's history reflects a New Zealand origin, while current production is an international network.",
       "scope": "Historical identity versus current model origin",
       "buyerCheck": "Do not use brand heritage as an origin claim; rely on the rating plate, customs and supplier documentation."
+    },
+    {
+      "evidence": "The July 2026 Auckland campus announcement brings research, engineering, design and testing together in New Zealand as part of Haier Smart Home’s innovation network. The company says teams are moving in ahead of an official October 2026 opening.",
+      "scope": "Design and innovation facilities; not a finished-appliance production plant",
+      "buyerCheck": "Separate product-development location from the factory and country of origin on the exact model."
     }
   ],
   "marketsChannels": [
@@ -99,22 +111,37 @@
   },
   "developments": [
     {
+      "date": "2026-07-30",
+      "title": "Auckland headquarters and innovation campus announced",
+      "summary": "Fisher & Paykel announced a new global headquarters and innovation campus serving its appliance business and Haier Australasia. Teams are moving in; the formal opening is scheduled for October 2026.",
+      "sourceIds": [
+        "fp-campus-2026"
+      ]
+    },
+    {
       "date": "2012-11-23",
       "title": "Fisher & Paykel joins Haier",
       "summary": "Haier completed its acquisition while Fisher & Paykel continued as a distinct appliance company and brand.",
-      "sourceIds": ["fp-history", "haier-fp-profile"]
+      "sourceIds": [
+        "fp-history",
+        "haier-fp-profile"
+      ]
     },
     {
       "date": "2004-01-01",
       "title": "Fisher & Paykel acquires DCS",
       "summary": "The acquisition added a separately marketed outdoor-cooking brand to the appliance business.",
-      "sourceIds": ["fp-history"]
+      "sourceIds": [
+        "fp-history"
+      ]
     },
     {
       "date": "1934-01-01",
       "title": "Fisher & Paykel is founded in New Zealand",
       "summary": "The company's New Zealand heritage begins in 1934, distinct from the current international manufacturing footprint.",
-      "sourceIds": ["fp-history"]
+      "sourceIds": [
+        "fp-history"
+      ]
     }
   ],
   "sources": [
@@ -153,9 +180,25 @@
       "publisher": "Fisher & Paykel",
       "url": "https://www.fisherpaykel.com/us/help-and-support/warranty-information/",
       "accessedAt": "2026-08-06"
+    },
+    {
+      "id": "fp-campus-2026",
+      "title": "New Global Headquarters Announced",
+      "publisher": "Fisher & Paykel Appliances",
+      "url": "https://www.fisherpaykel.com/ie/global-headquarters-auckland-campus/",
+      "accessedAt": "2026-09-12",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "id": "haier-fp-current",
+      "title": "Fisher & Paykel brand profile",
+      "publisher": "Haier",
+      "url": "https://www.haier.com/global/fisherpaykel/",
+      "accessedAt": "2026-09-12"
     }
   ],
   "publishedAt": "2026-08-06T11:35:00+08:00",
-  "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T11:35:00+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "Fisher & Paykel: Haier Ownership, Origin & Company Profile"
 }

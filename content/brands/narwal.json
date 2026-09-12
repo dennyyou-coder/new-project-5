@@ -10,9 +10,9 @@
   ],
   "legalName": "Yunjing Intelligence Innovation (Shenzhen) Co., Ltd.",
   "officialWebsite": "https://www.narwal.com/",
-  "headline": "Narwal ownership, robot-cleaning portfolio and manufacturing network",
-  "description": "A source-backed profile of Narwal's private-company ownership boundary, founder leadership, robot and wet-dry cleaning portfolio, regional entities and model-level manufacturing evidence.",
-  "metaDescription": "Narwal company profile: Yunjing ownership, founder Junbin Zhang, investors, robot vacuums, floor washers, manufacturing and channels.",
+  "headline": "Narwal: founder-led cleaning robotics and the Flow 2 generation",
+  "description": "Narwal is a privately held cleaning-robotics business founded by Junbin Zhang. Its range combines Flow and Freo robot vacuums with wet-dry floor washers and adjacent cleaning appliances. Flow 2 adds a newer product generation, while regional catalogues and dock options remain important distinctions for buyers.",
+  "metaDescription": "Narwal company profile: founder Junbin Zhang, private ownership, Flow 2 and Freo robot vacuums, manufacturing evidence and regional sales responsibilities.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Narwal or Yunjing Intelligence. Financing participants are identified as investors rather than parent companies, and factory evidence is limited to the models named in the reviewed documents.",
   "headquarters": "Shenzhen, Guangdong, China",
   "founded": "2016",
@@ -42,7 +42,8 @@
     }
   ],
   "ownership": {
-    "summary": "Narwal is a privately held Chinese home-robotics business built around Yunjing Intelligence Innovation (Shenzhen) Co., Ltd. Founder and CEO Junbin Zhang remains central to the company. Tencent, ByteDance, Source Code Capital, HongShan, Hillhouse and other institutions have participated in financing, but the complete current cap table and voting-control structure are not public. These investments do not establish Narwal as a subsidiary of Tencent, ByteDance, Xiaomi, Roborock or ECOVACS."
+    "summary": "Narwal is a privately held Chinese home-robotics business built around Yunjing Intelligence Innovation (Shenzhen) Co., Ltd. Founder and CEO Junbin Zhang remains central to the company. Tencent, ByteDance, Source Code Capital, HongShan, Hillhouse and other institutions have participated in financing, but the complete current cap table and voting-control structure are not public. These investments do not establish Narwal as a subsidiary of Tencent, ByteDance, Xiaomi, Roborock or ECOVACS.",
+    "displayLabel": "Privately held business; complete current ownership and voting structure not public"
   },
   "leadership": [
     {
@@ -53,8 +54,8 @@
   ],
   "productPortfolio": [
     {
-      "name": "Flow and Freo robot vacuums",
-      "positioning": "Premium vacuum-and-mop robots organized around automated docks, obstacle avoidance, dirt sensing and different mopping architectures.",
+      "name": "Flow 2, Flow and Freo robot vacuums",
+      "positioning": "The Flow line now includes Flow 2, announced in Germany in April 2026. U.S. listings distinguish basic-dock and auto refill/drainage configurations, alongside other Flow and Freo generations.",
       "buyerRelevance": "Forms Narwal's core assortment, with important differences in dock, plumbing, mop and consumables requirements."
     },
     {
@@ -122,6 +123,15 @@
       "summary": "The official US storefront lists Flow and Freo robot-vacuum families alongside S-series wet-dry floor washers, documenting the brand's move beyond one robot format.",
       "sourceIds": [
         "narwal-us-store"
+      ]
+    },
+    {
+      "date": "2026-04-20",
+      "title": "Flow 2 extends the flagship robot-vacuum range",
+      "summary": "Narwal’s German launch announcement introduces Flow 2 as its 2026 flagship generation. Regional listings distinguish dock and plumbing configurations, so a model-family name alone is insufficient for comparing offers.",
+      "sourceIds": [
+        "narwal-flow2-launch",
+        "narwal-flow2-us"
       ]
     },
     {
@@ -198,9 +208,25 @@
       "url": "https://www.ncsti.gov.cn/kjdt/kjrd/rgzn_kjrd/202504/t20250415_201606.html",
       "publishedAt": "2025-04-15",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "narwal-flow2-launch",
+      "title": "Narwal introduces Flow 2",
+      "publisher": "Narwal",
+      "url": "https://de.narwal.com/blogs/news/narwal-stellt-den-flow-2-vor-ein-meisterwerk-zielgerichteter-innovation-und-muheloser-haushaltsreinigung",
+      "accessedAt": "2026-09-12",
+      "publishedAt": "2026-04-20"
+    },
+    {
+      "id": "narwal-flow2-us",
+      "title": "Flow 2 robot vacuum and mop: U.S. configurations",
+      "publisher": "Narwal",
+      "url": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop",
+      "accessedAt": "2026-09-12"
     }
   ],
   "publishedAt": "2026-07-30T22:30:00+08:00",
-  "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T22:30:00+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "Narwal Company Profile: Ownership, Founder & Product Range"
 }

@@ -9,9 +9,9 @@
   ],
   "legalName": "Ecovacs Robotics Co., Ltd.",
   "officialWebsite": "https://www.ecovacs.com/global",
-  "headline": "ECOVACS ownership, service-robot portfolio and integrated supply chain",
-  "description": "A source-backed profile separating the ECOVACS Robotics brand from the listed group and its Tineco subsidiary, with products, manufacturing and channel strategy.",
-  "metaDescription": "ECOVACS company profile: ownership, Tineco relationship, leadership, products, manufacturing, channels and competitive strategy.",
+  "headline": "ECOVACS: group ownership and robots for floors, windows, lawns and pools",
+  "description": "ECOVACS Robotics is the service-robot brand of Shanghai-listed Ecovacs Robotics Co., Ltd. Tineco is a separate brand within the same group. ECOVACS now covers DEEBOT floorcare, WINBOT window cleaning, GOAT mowing, ULTRAMARINE pool care and commercial cleaning.",
+  "metaDescription": "ECOVACS company profile: listed-group ownership, Tineco relationship, leadership, DEEBOT, WINBOT, GOAT and ULTRAMARINE pool-robot expansion.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with ECOVACS or Tineco. This profile focuses on ECOVACS Robotics; Tineco product facts are identified as group-level context, not ECOVACS-brand facts.",
   "headquarters": "Suzhou, Jiangsu, China",
   "founded": "1998 (ECOVACS brand launched in 2006)",
@@ -41,7 +41,8 @@
     }
   ],
   "ownership": {
-    "summary": "ECOVACS Robotics is the service-robot brand of Shanghai-listed Ecovacs Robotics Co., Ltd. The 2025 annual report names Suzhou Chuangling Smart Investment Management Co., Ltd. as controlling shareholder and Qian Dongqi and David Cheng Qian as actual controllers. Tineco is a separate consumer brand inside the same listed group through wholly owned subsidiaries; its wet-and-dry appliances should not be presented as ECOVACS-branded products."
+    "summary": "ECOVACS Robotics is the service-robot brand of Shanghai-listed Ecovacs Robotics Co., Ltd. The 2025 annual report names Suzhou Chuangling Smart Investment Management Co., Ltd. as controlling shareholder and Qian Dongqi and David Cheng Qian as actual controllers. Tineco is a separate consumer brand inside the same listed group through wholly owned subsidiaries; its wet-and-dry appliances should not be presented as ECOVACS-branded products.",
+    "displayLabel": "Shanghai-listed group; ECOVACS and Tineco are separate consumer brands"
   },
   "leadership": [
     {
@@ -58,7 +59,7 @@
     {
       "name": "David Cheng Qian",
       "role": "Vice Chairman and CEO of the ECOVACS brand",
-      "context": "One of the listed company's actual controllers and the executive responsible for the ECOVACS brand."
+      "context": "The September 2026 company release identifies David Qian as CEO of ECOVACS ROBOTICS; this is the brand leadership role."
     },
     {
       "name": "Zhuang Jianhua",
@@ -69,7 +70,7 @@
   "productPortfolio": [
     {
       "name": "DEEBOT robot vacuums",
-      "positioning": "The core residential service-robot line, spanning vacuuming, mopping and multifunction station formats.",
+      "positioning": "Residential vacuum-and-mop robots, including DEEBOT X12S OmniCyclone shown at IFA 2026 with OZMO ROLLER 3.0.",
       "buyerRelevance": "Forms the core residential assortment with multiple cleaning and station configurations."
     },
     {
@@ -86,6 +87,11 @@
       "name": "DEEBOT PRO commercial cleaning robots",
       "positioning": "B2B vacuuming and scrubbing systems for offices, retail, healthcare, transport and industrial sites.",
       "buyerRelevance": "Requires a separate B2B sales, deployment and service model from residential DEEBOT products."
+    },
+    {
+      "name": "ULTRAMARINE robotic pool cleaners",
+      "positioning": "A pool-care extension including P1 and the L1 PRO shown at IFA 2026.",
+      "buyerRelevance": "Assess pool compatibility, water-environment requirements and local service separately from indoor DEEBOT products."
     }
   ],
   "manufacturingSupplyChain": [
@@ -132,6 +138,14 @@
     ]
   },
   "developments": [
+    {
+      "date": "2026-09-04",
+      "title": "IFA portfolio covers four home-robotics environments",
+      "summary": "ECOVACS showcased DEEBOT X12S OmniCyclone, WINBOT W3 OMNI, GOAT T Series and ULTRAMARINE L1 PRO. The company also reported 44.1% year-on-year growth in service-robot shipments for the first half of 2026; this is company-reported brand data.",
+      "sourceIds": [
+        "ecovacs-ifa-2026"
+      ]
+    },
     {
       "date": "2026-04-25",
       "title": "Listed group reports 2025 growth and confirms brand structure",
@@ -204,9 +218,25 @@
       "url": "https://www.ecovacs.com/global/newsroom/official-news/interclean-amsterdam-2026",
       "publishedAt": "2026-04-16",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "ecovacs-ifa-2026",
+      "title": "ECOVACS at IFA Berlin 2026",
+      "publisher": "ECOVACS ROBOTICS via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/ecovacs-at-ifa-berlin-2026-named-as-no1-brand-in-global-home-robotics-bringing-robotics-to-more-of-everyday-life-302869605.html",
+      "accessedAt": "2026-09-12",
+      "publishedAt": "2026-09-04"
+    },
+    {
+      "id": "ecovacs-about-2026",
+      "title": "ECOVACS history and business structure",
+      "publisher": "ECOVACS",
+      "url": "https://www.ecovacs.com/uk/about-ecovacs",
+      "accessedAt": "2026-09-12"
     }
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
-  "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T21:15:00+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "ECOVACS Company Profile: Ownership, Tineco & Robotics"
 }

@@ -13,9 +13,10 @@ export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; has
   const legalName = normalizeOptionalBrandText(profile.legalName);
   const legalEntityNote = normalizeOptionalBrandText(profile.legalEntityNote);
   const legalEntityScope = legalName || legalEntityNote;
-  const ownershipType = profile.ownership.parentCompany
-    ? `Part of ${profile.ownership.parentCompany}`
-    : "See verified ownership analysis";
+  const ownershipType = normalizeOptionalBrandText(profile.ownership.displayLabel)
+    || (profile.ownership.parentCompany
+      ? `Part of ${profile.ownership.parentCompany}`
+      : "See verified ownership analysis");
   const keyFacts = [
     {
       fact: "Legal entity scope",

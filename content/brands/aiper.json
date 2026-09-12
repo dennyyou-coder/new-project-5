@@ -8,9 +8,9 @@
   ],
   "legalEntityNote": "Aiper is a consumer brand used across several entities. Aiper Inc. is the Cayman company in Fluidra's investment disclosure; Aiper Global Pte. Ltd. operates the global website and app services; regional sales, service and distribution documents name other Aiper entities.",
   "officialWebsite": "https://aiper.com/",
-  "headline": "Aiper ownership, cordless pool robots, manufacturing and channel strategy",
-  "description": "A source-backed profile of Aiper's 27% Fluidra investment, joint-control structure, smart-yard portfolio, model-specific manufacturing evidence and omnichannel route to market.",
-  "metaDescription": "Aiper company profile: Fluidra's 27% stake, W&D relationship, leadership, pool robots, manufacturing partners, channels and strategy.",
+  "headline": "Aiper: Fluidra investment and expansion into connected yard care",
+  "description": "Aiper is a pool-care and smart-yard brand with a 27% Fluidra investment confirmed again in Fluidra’s first-half 2026 update. The transaction established joint control with W&D United. Its range spans robotic pool cleaners, skimmers, irrigation and connected pool-care products.",
+  "metaDescription": "Who owns Aiper? See Fluidra’s 27% stake, joint control, first-half 2026 sales growth, pool robots and the smart-yard strategy shown at IFA.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Aiper, Fluidra or W&D United. Regulatory findings and company statements are identified separately from World Clean Biz analysis.",
   "headquarters": "Not stated at group level in the reviewed sources; global digital services are operated from Singapore",
   "founded": "2017",
@@ -41,7 +41,8 @@
     }
   ],
   "ownership": {
-    "summary": "Fluidra completed a USD 100 million investment for 27% of Aiper Inc. on 23 December 2025. Fluidra reports the interest as an equity-accounted investment, not a consolidated subsidiary. Spain's CNMC described the transaction as changing Aiper from W&D United's sole control to joint control by W&D United and Fluidra. Fluidra has a conditional path to exceed 51% if specified sales and profitability thresholds are met; that future step was not complete in the reviewed evidence."
+    "summary": "Fluidra completed a USD 100 million investment for 27% of Aiper Inc. on 23 December 2025. Fluidra reports the interest as an equity-accounted investment, not a consolidated subsidiary. Spain's CNMC described the transaction as changing Aiper from W&D United's sole control to joint control by W&D United and Fluidra. Fluidra has a conditional path to exceed 51% if specified sales and profitability thresholds are met; that future step was not complete in the reviewed evidence. Fluidra’s first-half 2026 results still describe a 27% stake and report Aiper sales growth of 21% for January–June 2026.",
+    "displayLabel": "Joint control by W&D United and Fluidra; Fluidra holds 27%"
   },
   "leadership": [
     {
@@ -122,6 +123,14 @@
   },
   "developments": [
     {
+      "date": "2026-09",
+      "title": "IFA presentation emphasizes a connected smart yard",
+      "summary": "Aiper’s IFA 2026 presentation describes coordination across pool care, lawn care and irrigation through its AIoT strategy. This is a company roadmap and exhibition proposition; product-level availability must be confirmed separately.",
+      "sourceIds": [
+        "aiper-ifa-2026"
+      ]
+    },
+    {
       "date": "2025-12-23",
       "title": "Fluidra completes its initial 27% investment",
       "summary": "Fluidra paid approximately USD 100 million for newly issued Aiper shares. Its financial statements record a 27% equity-accounted interest in Aiper Inc.; the CNMC decision describes W&D United and Fluidra as joint controllers after the transaction.",
@@ -169,7 +178,7 @@
       "publisher": "Fluidra",
       "url": "https://www.fluidra.com/press-room/press-release/fluidra-completes-an-initial-27-investment-in-aiper/",
       "publishedAt": "2025-12-23",
-      "accessedAt": "2026-07-30"
+      "accessedAt": "2026-09-12"
     },
     {
       "id": "aiper-fluidra-2025-statements",
@@ -210,9 +219,24 @@
       "url": "https://www.cpsc.gov/Recalls/2025/Aiper-Seagull-Pro-Cordless-Robotic-Pool-Vacuum-Cleaners-Recalled-Due-to-Burn-and-Fire-Hazards-Distributed-by-Shenzhen-Aiper-Intelligent-Co",
       "publishedAt": "2025-03-20",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "fluidra-h1-2026",
+      "title": "Fluidra first-half 2026 results",
+      "publisher": "Fluidra",
+      "url": "https://www.fluidra.com/press-room/press-release/fluidra-delivers-a-strong-first-half-of-2026-and-maintains-positive-momentum-in-a-dynamic-environment/",
+      "accessedAt": "2026-09-12"
+    },
+    {
+      "id": "aiper-ifa-2026",
+      "title": "Aiper at IFA 2026: One Yard. One Intelligence.",
+      "publisher": "Aiper",
+      "url": "https://aiper.com/de/aiper-at-ifa-2026",
+      "accessedAt": "2026-09-12"
     }
   ],
   "publishedAt": "2026-07-30T02:02:44+08:00",
-  "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T02:22:38+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "Aiper Company Profile: Fluidra Stake, Ownership & Products"
 }

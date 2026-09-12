@@ -5,9 +5,9 @@
   "aliases": ["Philips Domestic Appliances", "Philips Floor Care", "Versuni Philips"],
   "legalEntityNote": "Philips-branded domestic appliances are operated by Versuni under licence from Koninklijke Philips N.V. Versuni is not a Royal Philips subsidiary, and Royal Philips continues to operate other Philips consumer-health categories outside Versuni.",
   "officialWebsite": "https://www.philips.com/c-m-ho/home-living-care",
-  "headline": "Philips appliance ownership, Versuni licensing, floor-care products and channels",
-  "description": "A source-backed profile separating Philips-branded domestic appliances from Royal Philips, with Versuni ownership, licensing, products, manufacturing and channels.",
-  "metaDescription": "Philips Home Appliances profile: Versuni and Hillhouse ownership, Philips brand licence, floor care, manufacturing, regional entities and buyer checks.",
+  "headline": "Philips home appliances: the Versuni business behind the brand",
+  "description": "Philips-branded domestic appliances are operated by Versuni under licence from Royal Philips. Hillhouse acquired the appliance business in 2021; Versuni adopted its current name in 2023. This profile covers the appliance operator, its leadership, floor-care range and regional supply responsibilities.",
+  "metaDescription": "Who makes Philips home appliances? Understand Versuni, Hillhouse ownership, the Philips trademark licence, leadership and floor-care products.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Philips or Versuni. Trademark ownership, Versuni operations, regional sellers and model-level factory evidence are identified separately.",
   "headquarters": "Amsterdam, Netherlands",
   "founded": "2021 as an independent domestic-appliances business; renamed Versuni in 2023",
@@ -32,13 +32,14 @@
   ],
   "ownership": {
     "summary": "Hillhouse acquired the former Philips Domestic Appliances business from Royal Philips in 2021. The independent company adopted the Versuni name in 2023 and continues to develop, market and support Philips-branded domestic appliances under a trademark licence from Koninklijke Philips N.V. Royal Philips retained the Philips trademark and does not directly own Versuni.",
-    "parentCompany": "Privately held Versuni, acquired by Hillhouse from Royal Philips"
+    "parentCompany": "Versuni (Hillhouse-owned domestic-appliance business)",
+    "displayLabel": "Versuni-operated appliance business; Philips trademark licensed from Royal Philips"
   },
   "leadership": [
     {
       "name": "Haoyu Shen",
       "role": "Interim CEO of Versuni",
-      "context": "Versuni announced Haoyu Shen as interim CEO effective 27 October 2025 after Veronique Pauwels stepped down."
+      "context": "Versuni appointed Haoyu Shen interim CEO effective 27 October 2025. The official leadership announcement reviewed on 12 September 2026 still describes an interim appointment; it does not establish a permanent appointment."
     }
   ],
   "productPortfolio": [
@@ -103,22 +104,37 @@
   },
   "developments": [
     {
+      "date": "2026-04-06",
+      "title": "Versuni continues its Philips appliance rollout in 2026",
+      "summary": "Versuni announced Baristina Latte in April, following a steam-enabled Airfryer in February and OneTurn garment care in January. These launches illustrate the licensed appliance portfolio beyond floor care; country availability must be checked separately.",
+      "sourceIds": [
+        "versuni-newsroom-2026"
+      ]
+    },
+    {
       "date": "2025-10-27",
       "title": "Versuni appoints Haoyu Shen interim CEO",
       "summary": "The leadership update followed Veronique Pauwels' decision to step down as CEO.",
-      "sourceIds": ["versuni-leadership"]
+      "sourceIds": [
+        "versuni-leadership"
+      ]
     },
     {
       "date": "2025-02-25",
       "title": "Versuni launches the Philips OneUp electric mop",
       "summary": "The launch added a lightweight hard-floor format alongside Philips vacuum and AquaTrio systems.",
-      "sourceIds": ["philips-oneup"]
+      "sourceIds": [
+        "philips-oneup"
+      ]
     },
     {
       "date": "2023",
       "title": "Philips Domestic Appliances becomes Versuni",
       "summary": "The independent company adopted a new corporate name while continuing to use Philips and other licensed or owned appliance brands.",
-      "sourceIds": ["versuni-about", "versuni-brands"]
+      "sourceIds": [
+        "versuni-about",
+        "versuni-brands"
+      ]
     }
   ],
   "sources": [
@@ -127,7 +143,7 @@
       "title": "About Versuni",
       "publisher": "Versuni",
       "url": "https://www.versuni.com/about-us/",
-      "accessedAt": "2026-07-31"
+      "accessedAt": "2026-09-12"
     },
     {
       "id": "versuni-brands",
@@ -142,7 +158,7 @@
       "publisher": "Versuni",
       "url": "https://www.versuni.com/newsroom/ceo-leadership-update/",
       "publishedAt": "2025-10-28",
-      "accessedAt": "2026-07-31"
+      "accessedAt": "2026-09-12"
     },
     {
       "id": "philips-oneup",
@@ -158,9 +174,25 @@
       "publisher": "Philips / Versuni",
       "url": "https://www.philips.co.uk/c-p/XW9383_01/aquatrio-cordless-wet-dry-vacuum-9000-series",
       "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "versuni-name-change",
+      "title": "Philips Domestic Appliances becomes Versuni",
+      "publisher": "Versuni",
+      "url": "https://www.versuni.com/newsroom/philips-domestic-appliances-becomes-versuni/",
+      "accessedAt": "2026-09-12",
+      "publishedAt": "2023-02-17"
+    },
+    {
+      "id": "versuni-newsroom-2026",
+      "title": "Versuni newsroom: 2026 product announcements",
+      "publisher": "Versuni",
+      "url": "https://www.versuni.com/newsroom/",
+      "accessedAt": "2026-09-12"
     }
   ],
   "publishedAt": "2026-07-31T15:30:00+08:00",
-  "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T15:30:00+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "Philips Home Appliances: Versuni Ownership & Company Profile"
 }
