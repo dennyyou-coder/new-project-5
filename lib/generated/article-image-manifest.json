@@ -1906,6 +1906,42 @@
         "outputHash": "sha256:040c51aaade9df9ebe0f059fb446a12d4a164e7696fa8d6b503cbbc2ea15262c"
       }
     },
+    "/images/articles/dyson-r1-nurovi-dry/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1500,
+      "height": 844,
+      "bytes": 179452,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0046a5d25630dace1175c47191884eae8dfaf5dd9f13793cf1fe7d4567a196ea",
+      "outputHash": "sha256:946c56e23717124c60919d0d01a964ebbf4cf0c02b6e29dba041061cd45e55d8",
+      "mobile": {
+        "src": "/images/articles/dyson-r1-nurovi-dry/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 52710,
+        "outputHash": "sha256:df19d1ce07f92d405076ff2d1062095c99adc3104560afaf474ae2e604c470c0"
+      }
+    },
+    "/images/articles/dyson-r2-nurovi-wash-dry/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1500,
+      "height": 844,
+      "bytes": 53178,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4a80ca45366f6f844f2b064dcc93b254d5179158ff5f6e8de6455494a91c0a45",
+      "outputHash": "sha256:f6cd6129c8d8c031b1260ed690dbc1b22a8b555b2f498a50570bce6108afb83f",
+      "mobile": {
+        "src": "/images/articles/dyson-r2-nurovi-wash-dry/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18934,
+        "outputHash": "sha256:5abc5e0846467a04ecec60db16c8de3f5d1856f546b8b112172c57e288c5fd04"
+      }
+    },
     "/images/articles/dyson-v10-konical/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -1940,6 +1976,24 @@
         "height": 744,
         "bytes": 32156,
         "outputHash": "sha256:695c0fd46c6309f939bceedbe9149471a1a79f62131b369e72470c5d793d5072"
+      }
+    },
+    "/images/articles/dyson-w1-pencilwash/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1500,
+      "height": 844,
+      "bytes": 10170,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c376c96bdb95c9d21dd929350df5331e37223bcc94b7d7208ef96fc2c0983809",
+      "outputHash": "sha256:854cb2df7ce88882d6398dd879bd15dd5fe96dec8c102e8600216810917579ef",
+      "mobile": {
+        "src": "/images/articles/dyson-w1-pencilwash/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 3688,
+        "outputHash": "sha256:4546eef819315b01c8534b115a414f3ee93cdd79e0e9223ca9119126f2f4c912"
       }
     },
     "/images/articles/ecovacs-deebot-t80s-omni/01-cover.webp": {
@@ -33580,6 +33634,16 @@
       "cover": "/images/articles/dyson-pencilwash/01-cover.webp",
       "body": []
     },
+    "dyson-r1-nurovi-dry": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-r1-nurovi-dry/01-cover.webp",
+      "body": []
+    },
+    "dyson-r2-nurovi-wash-dry": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-r2-nurovi-wash-dry/01-cover.webp",
+      "body": []
+    },
     "dyson-v10-konical": {
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-v10-konical/01-cover.webp",
@@ -33598,6 +33662,11 @@
     "dyson-v16-piston-animal-vs-gen5detect": {
       "budgetClass": "standard",
       "cover": "/images/blog/dyson-v16-piston-animal-vs-gen5detect.webp",
+      "body": []
+    },
+    "dyson-w1-pencilwash": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-w1-pencilwash/01-cover.webp",
       "body": []
     },
     "dyson-washg1-vs-tineco-floor-one": {
@@ -37519,6 +37588,24 @@
         }
       }
     },
+    "dyson-r1-nurovi-dry": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-r1-nurovi-dry/01-cover.webp",
+          "hash": "sha256:0046a5d25630dace1175c47191884eae8dfaf5dd9f13793cf1fe7d4567a196ea"
+        }
+      }
+    },
+    "dyson-r2-nurovi-wash-dry": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-r2-nurovi-wash-dry/01-cover.webp",
+          "hash": "sha256:4a80ca45366f6f844f2b064dcc93b254d5179158ff5f6e8de6455494a91c0a45"
+        }
+      }
+    },
     "dyson-v10-konical": {
       "files": {
         "01-cover.png": {
@@ -37534,6 +37621,15 @@
           "status": "matched",
           "primary": "/images/articles/dyson-v16-piston-animal/01-cover.webp",
           "hash": "sha256:e42a9ba8994ec0069d504ad38114ca523a6cfe21c9456ad84cc28617138f96ba"
+        }
+      }
+    },
+    "dyson-w1-pencilwash": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-w1-pencilwash/01-cover.webp",
+          "hash": "sha256:c376c96bdb95c9d21dd929350df5331e37223bcc94b7d7208ef96fc2c0983809"
         }
       }
     },

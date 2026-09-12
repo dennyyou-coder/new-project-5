@@ -14318,5 +14318,578 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "dyson-r1-nurovi-dry": {
+    "verdict": "Worth shortlisting when dry debris is the main job and a simpler bagless routine matters more than automated washing.",
+    "notFor": "Buyers expecting wet spill recovery, mop washing or a guaranteed hands-off three-month maintenance interval.",
+    "specifications": [
+      {
+        "label": "Cleaning role",
+        "value": "Dry vacuuming only",
+        "meaning": "Choose a washing model if dried spills are a priority.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Suction headline",
+        "value": "21,000 Pa",
+        "meaning": "Powerful-mode claim; not a pickup score.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Debris pickup",
+        "value": "Twin-capture system",
+        "meaning": "Mechanical collection and focused airflow address different debris sizes.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Dust sensing",
+        "value": "Acoustic piezo sensor",
+        "meaning": "Automatically adjusts suction as dust levels change.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Mapping",
+        "value": "LiDAR",
+        "meaning": "Maps rooms; clear small loose objects before setup.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Floor sensing",
+        "value": "Ultrasonic detection",
+        "meaning": "Adjusts cleaning for hard floors and carpets.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Side sweeper reach",
+        "value": "27 mm extension",
+        "meaning": "Targets room edges and corners.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Brush design",
+        "value": "Anti-tangle chevron silicone",
+        "meaning": "Inspect it periodically even with hair-management features.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Robot height",
+        "value": "96 mm",
+        "meaning": "Leave a margin when checking furniture clearance.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Robot footprint",
+        "value": "352 × 352 mm",
+        "meaning": "Measure narrow gaps between furniture legs.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Robot weight",
+        "value": "3.4 kg",
+        "meaning": "Relevant when carrying it between levels.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "120 minutes",
+        "meaning": "Not a Powerful-mode runtime guarantee.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Charge time",
+        "value": "6.5 hours",
+        "meaning": "Plan repeat cleaning around recharge time.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Threshold claim",
+        "value": "Up to 40 mm",
+        "meaning": "Threshold shape and approach angle still matter.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Dock collection",
+        "value": "Bagless, eight cyclones",
+        "meaning": "Avoids disposable dust bags; the container still needs emptying.",
+        "source": "https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi"
+      },
+      {
+        "label": "Dock storage claim",
+        "value": "Up to 90 days",
+        "meaning": "Dry debris only; household loading changes the interval.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom",
+        "amount": "GBP 499.99",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Listed UK price checked 12 September 2026. Stock messages on the page are mixed; confirm delivery before ordering."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dyson R1 Nurovi Dry",
+          "url": "/products/dyson-r1-nurovi-dry",
+          "market": "UK reference"
+        },
+        {
+          "name": "Dyson R2 Nurovi Wash+Dry",
+          "url": "/products/dyson-r2-nurovi-wash-dry",
+          "market": "UK reference"
+        },
+        {
+          "name": "Dyson R3 Nurovi Spot+Scrub UV",
+          "url": "https://www.dyson.com/events/unveiled-2026",
+          "market": "Announcement reference"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning task",
+          "values": [
+            "Dry vacuuming",
+            "Vacuuming and hard-floor washing",
+            "Vacuuming and stain-directed washing"
+          ]
+        },
+        {
+          "label": "Floor washing",
+          "values": [
+            "No mop system",
+            "Reuleaux triangle pads",
+            "Wet roller"
+          ]
+        },
+        {
+          "label": "Dry pickup approach",
+          "values": [
+            "Twin-capture brush and airflow",
+            "Twin-capture brush and airflow",
+            "Separate flagship platform; do not inherit R1/R2 figures"
+          ]
+        },
+        {
+          "label": "Stain-directed UV feature",
+          "values": [
+            "Not listed",
+            "Not listed",
+            "UV-assisted AI stain scanner"
+          ]
+        },
+        {
+          "label": "Buying reference",
+          "values": [
+            "UK listed price GBP 499.99",
+            "UK listed price GBP 749.99",
+            "Announced; verify regional retail timing"
+          ]
+        }
+      ],
+      "takeaway": "Choose between dry-only upkeep and floor washing before comparing suction numbers. R3 remains a separate announcement reference in this table."
+    },
+    "resources": [
+      {
+        "label": "UK specifications and price",
+        "url": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "September 2026 announcement",
+        "url": "https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Australian owner guidance",
+        "url": "https://www.dyson.com.au/products/vacuum-cleaners/robot/r1-nurovi-dry/owners",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dyson-r2-nurovi-wash-dry": {
+    "verdict": "A relevant shortlist option for owners who want automated washing with attention to corners and can accommodate a substantial service dock.",
+    "notFor": "Buyers seeking a dry-only machine, verified steam cleaning on the floor or maintenance-free water handling.",
+    "specifications": [
+      {
+        "label": "Cleaning role",
+        "value": "Vacuuming and hard-floor washing",
+        "meaning": "A wet-cleaning alternative to the dry-only R1.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Mopping system",
+        "value": "Reuleaux triangle pads",
+        "meaning": "Pad geometry is designed to improve contact along edges.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Suction headline",
+        "value": "21,000 Pa",
+        "meaning": "Powerful-mode specification, not an independent pickup result.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Debris pickup",
+        "value": "Twin-capture system",
+        "meaning": "Pairs mechanical debris collection with concentrated airflow.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Dust and floor sensing",
+        "value": "Piezo and ultrasonic sensors",
+        "meaning": "Adapts to dust levels and surface type.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Mapping",
+        "value": "LiDAR",
+        "meaning": "Room mapping does not eliminate floor preparation.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Side sweeper reach",
+        "value": "27 mm extension",
+        "meaning": "Provides additional reach near boundaries.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "352 × 352 × 96 mm",
+        "meaning": "Length × width × height; allow working clearance.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Robot weight",
+        "value": "3.6 kg",
+        "meaning": "The separate dock is heavier.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "90 minutes",
+        "meaning": "UK listing; varies with cleaning conditions.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Charge time",
+        "value": "6.5 hours",
+        "meaning": "Account for charging between longer sessions.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Threshold claim",
+        "value": "Up to 40 mm",
+        "meaning": "Do not assume every step profile is traversable.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Pad washing at dock",
+        "value": "75°C water",
+        "meaning": "This is not a verified on-floor water temperature.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Pad drying at dock",
+        "value": "45°C air",
+        "meaning": "Drying assists care but does not empty waste tanks.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Dock dimensions",
+        "value": "467.5 × 415 × 517 mm",
+        "meaning": "Length × width × height; allow space to remove tanks.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "Water capacities and mop lift",
+        "value": "Not verified in the checked UK listing",
+        "meaning": "Confirm these details before relying on long unattended washing or rug clearance.",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom",
+        "amount": "GBP 749.99",
+        "source": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "UK listing checked 12 September 2026. Confirm the selected product code, bundle and delivery estimate."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dyson R1 Nurovi Dry",
+          "url": "/products/dyson-r1-nurovi-dry",
+          "market": "UK reference"
+        },
+        {
+          "name": "Dyson R2 Nurovi Wash+Dry",
+          "url": "/products/dyson-r2-nurovi-wash-dry",
+          "market": "UK reference"
+        },
+        {
+          "name": "Dyson R3 Nurovi Spot+Scrub UV",
+          "url": "https://www.dyson.com/events/unveiled-2026",
+          "market": "Announcement reference"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning task",
+          "values": [
+            "Dry vacuuming",
+            "Vacuuming and hard-floor washing",
+            "Vacuuming and stain-directed washing"
+          ]
+        },
+        {
+          "label": "Floor washing",
+          "values": [
+            "No mop system",
+            "Reuleaux triangle pads",
+            "Wet roller"
+          ]
+        },
+        {
+          "label": "Dry pickup approach",
+          "values": [
+            "Twin-capture brush and airflow",
+            "Twin-capture brush and airflow",
+            "Separate flagship platform; do not inherit R1/R2 figures"
+          ]
+        },
+        {
+          "label": "Stain-directed UV feature",
+          "values": [
+            "Not listed",
+            "Not listed",
+            "UV-assisted AI stain scanner"
+          ]
+        },
+        {
+          "label": "Buying reference",
+          "values": [
+            "UK listed price GBP 499.99",
+            "UK listed price GBP 749.99",
+            "Announced; verify regional retail timing"
+          ]
+        }
+      ],
+      "takeaway": "R2 adds washing to the R1-style dry pickup approach. Compare the extra maintenance and dock space with the amount of hard flooring you actually need to wash."
+    },
+    "resources": [
+      {
+        "label": "UK specifications and price",
+        "url": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "September 2026 announcement",
+        "url": "https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Australian owner guidance",
+        "url": "https://www.dyson.com.au/products/vacuum-cleaners/robot/r2-nurovi-wash-dry/owners",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dyson-w1-pencilwash": {
+    "verdict": "Worth considering for easy-to-store hard-floor washing if you accept manual roller washing and drying after use.",
+    "notFor": "Buyers expecting an automated cleaning dock, a carpet vacuum or the same equipment as the W1 + Dok announcement.",
+    "specifications": [
+      {
+        "label": "Reviewed configuration",
+        "value": "UK wand charging dock",
+        "meaning": "Separate from the W1 + Dok launch configuration.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Floor compatibility",
+        "value": "Sealed hard floors",
+        "meaning": "Check the floor finish permits wet cleaning.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Cleaning mechanism",
+        "value": "Motorised hybrid wet roller",
+        "meaning": "Collects suitable debris and liquid during floor washing.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Full machine weight",
+        "value": "2.4 kg",
+        "meaning": "Different from the much smaller in-hand measure.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Weight in hand",
+        "value": "470 g",
+        "meaning": "Handling figure; not the weight carried upstairs.",
+        "source": "https://www.dyson.co.uk/discover/news/latest/introducing-w1-pencilwash"
+      },
+      {
+        "label": "Handle diameter",
+        "value": "38 mm",
+        "meaning": "Designed for slim storage and wrist steering.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Lie-flat clearance",
+        "value": "75 mm at 180°",
+        "meaning": "Check the lowest point under your own furniture.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 45 minutes",
+        "meaning": "Manufacturer maximum; use and hydration change coverage.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Full charge",
+        "value": "3.5 hours",
+        "meaning": "UK FAQ figure; allow charging between larger sessions.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Clean water tank",
+        "value": "0.29 L",
+        "meaning": "UK specification; launch text rounds it to 300 ml.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Dirty water tank",
+        "value": "0.325 L",
+        "meaning": "Empty and rinse after use.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Roller hydration",
+        "value": "12 delivery points",
+        "meaning": "Distributes clean water across the roller.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Hair management",
+        "value": "Bristles and comb; up to 35 cm claim",
+        "meaning": "Check for wrapping rather than assuming no hair care.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Hydration controls",
+        "value": "Standard and timed MAX",
+        "meaning": "Tap MAX for 5 seconds; hold for a 1-minute boost.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "Waste handling",
+        "value": "Separate solids and liquid in the head",
+        "meaning": "Includes a removable debris tray and dirty-water container.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "After-use care",
+        "value": "Manual wash; no self-clean cycle",
+        "meaning": "Air-dry the wet roller for at least 24 hours as directed.",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/reviews"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom",
+        "amount": "GBP 299.99",
+        "source": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Wand charging dock package checked 12 September 2026; no self-clean cycle. Confirm current stock and the exact included dock."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dyson W1 PencilWash",
+          "url": "/products/dyson-w1-pencilwash",
+          "market": "UK wand-dock package"
+        },
+        {
+          "name": "Dyson PencilWash",
+          "url": "/products/dyson-pencilwash",
+          "market": "Original US model"
+        },
+        {
+          "name": "Shark AquaReach WD551",
+          "url": "/products/shark-aquareach-wd551",
+          "market": "US Essential package"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Main use",
+          "values": [
+            "Compact hard-floor washing",
+            "Compact hard-floor washing",
+            "Hard surfaces with an extendable wand"
+          ]
+        },
+        {
+          "label": "Listed runtime",
+          "values": [
+            "Up to 45 minutes",
+            "Up to 30 minutes",
+            "Up to 40 minutes"
+          ]
+        },
+        {
+          "label": "Cleaning reach",
+          "values": [
+            "75 mm lie-flat clearance",
+            "170° recline in US listing",
+            "Spray-and-suction extension wand"
+          ]
+        },
+        {
+          "label": "Included dock care",
+          "values": [
+            "Charging only; wash manually",
+            "Charging only; wash manually",
+            "Standard rinse dock; no heated drying"
+          ]
+        },
+        {
+          "label": "Selection question",
+          "values": [
+            "Want the revised slim wet head?",
+            "Already own an adequate light washer?",
+            "Need reach beyond the main floor head?"
+          ]
+        }
+      ],
+      "takeaway": "These are different regional packages. Compare the cleaning job, supplied dock and after-use routine before comparing prices or runtime claims."
+    },
+    "resources": [
+      {
+        "label": "UK model specifications and price",
+        "url": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "September 2026 W1 announcement",
+        "url": "https://www.dyson.co.uk/discover/news/latest/introducing-w1-pencilwash",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "UK configuration FAQ",
+        "url": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }
