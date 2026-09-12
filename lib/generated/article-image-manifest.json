@@ -1456,6 +1456,42 @@
         "outputHash": "sha256:03f68e229b1bf422b6a0400d9ada8f87f08eb946d4ac855dcccdf613d1e9e507"
       }
     },
+    "/images/articles/dreame-t16-pro-heat/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 61332,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3d83a178a501ae7aa636c4d6b333bd2e1137acc76efaae2d9411f4b314078c94",
+      "outputHash": "sha256:084e8437e3bbda52957e689abea048fb0185c7b2e2ac601e54d369ac21b61b6d",
+      "mobile": {
+        "src": "/images/articles/dreame-t16-pro-heat/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 34800,
+        "outputHash": "sha256:b0f364da902420fcca704e10aa6c0b00693d74670f8d74bf0afe03428ea860f3"
+      }
+    },
+    "/images/articles/dreame-t16-pro-steam/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 94280,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:2eeb0023d3670da418f785a4be5a9a1e44fc3cc9fde97a7e0c22938446055e99",
+      "outputHash": "sha256:caac75c355a36a57dfb46c4b0fe448431dd7d23bdb0adfb7a0f0ea5fbb4b249f",
+      "mobile": {
+        "src": "/images/articles/dreame-t16-pro-steam/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 52926,
+        "outputHash": "sha256:dd641a7835654bf6c4828c4ce03f958ef93f9bff051a366ea5a1ff8c038fe2b7"
+      }
+    },
     "/images/articles/dreame-x60-ultra/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1600,6 +1636,24 @@
         "outputHash": "sha256:040c51aaade9df9ebe0f059fb446a12d4a164e7696fa8d6b503cbbc2ea15262c"
       }
     },
+    "/images/articles/dyson-v10-konical/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1230,
+      "height": 923,
+      "bytes": 30774,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:40fd9e60292be3164142c5e402a092d74600ae547658785994385d706d947c91",
+      "outputHash": "sha256:2e9b4fe0e7247315d6d3d4cfe11a3969095948568019a8f2e1fdbc9f58ce3b6d",
+      "mobile": {
+        "src": "/images/articles/dyson-v10-konical/01-cover-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 19892,
+        "outputHash": "sha256:6d65a0472aa17d7f4713b00e0336c3b8e5641fb35b90c8cd6c752bf17679c959"
+      }
+    },
     "/images/articles/dyson-v16-piston-animal/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1617,6 +1671,17 @@
         "bytes": 32156,
         "outputHash": "sha256:695c0fd46c6309f939bceedbe9149471a1a79f62131b369e72470c5d793d5072"
       }
+    },
+    "/images/articles/ecovacs-deebot-t80s-omni/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 920,
+      "height": 920,
+      "bytes": 50888,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3b4e61c3018625640164698aa037e78348748af5bfc0f99de6a243abf41ff49e",
+      "outputHash": "sha256:8b203c7f0978ec671f0c9eb7e90b8e72a3e06e0961fd4dc6f70d182ab219cb56"
     },
     "/images/articles/ecovacs-deebot-t90-max-pro-omni/01-cover.webp": {
       "role": "cover",
@@ -1913,6 +1978,24 @@
         "height": 533,
         "bytes": 18874,
         "outputHash": "sha256:aeba3284b7dd7eccf1f1188de63622983b5d4271b261dfa59d68e8640fedd553"
+      }
+    },
+    "/images/articles/eufy-omni-c28/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 92184,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3bd93a0f9e04da8c0a3b3fb77b11a4caad33a42c02839d91b37f3e748432468b",
+      "outputHash": "sha256:600baf56a1beb70edd7ad1797bca693fdd433f5a8f04b8c8930beb90d1e1bf58",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-c28/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 35076,
+        "outputHash": "sha256:3a3cc1f583464fe44c59164e24398b205ca280f8a9e48dd9c4553ed431685b75"
       }
     },
     "/images/articles/eufy-omni-s2/01-cover.webp": {
@@ -3629,6 +3712,17 @@
       "sourceHash": "sha256:c9dd12ac26eab1cbbbed212be6cf7e452ce5d3c9c45ee3cfaa8c1b6627815391",
       "outputHash": "sha256:eea95effc7d3d50a494c28e454e7539fcd91124cc293196b2eb117ee5a852b4a"
     },
+    "/images/articles/roborock-f25-pro-turbo/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 17490,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:49c982b50cbfab0b67fa9a0453cef5039ac6b90e487d78be297bbec236659f23",
+      "outputHash": "sha256:f1645f34af70478b872a1a1fe7be20dbad9f616579774fb169f897eaf6f5bbb8"
+    },
     "/images/articles/roborock-f25-ultra-steam-gen-2/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -4879,6 +4973,24 @@
       "sourceHash": "sha256:5148fd793232ab71326fc352b55ccae47545cebb0e1149664105e623ee192963",
       "outputHash": "sha256:a4d834e4193070d24b4be69d189ce429c26c618bf1d2c88445b2fb1a33f1f839"
     },
+    "/images/articles/shark-powerdetect-uv-reveal-rv3020xe/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 284194,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:36a923e0882cca269dc24c0d6351a9f75ae75c6bc07ae79e435972fc8d632ba4",
+      "outputHash": "sha256:cac55c35cbfed5ad2e277e99d8cf699ade6b8b426ff8740b79efe03823563a15",
+      "mobile": {
+        "src": "/images/articles/shark-powerdetect-uv-reveal-rv3020xe/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 76262,
+        "outputHash": "sha256:625240550831468dbe56726a180b9f9ef7a0bdb59d257fe3d8f746c9675068fa"
+      }
+    },
     "/images/articles/sharkninja-q2-growth-outside-cleaning/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -5201,6 +5313,24 @@
         "height": 375,
         "bytes": 75142,
         "outputHash": "sha256:7aba113b0d1b44ad83f2df69d49a18947572f9b9b30192db287daf34a4e08a1b"
+      }
+    },
+    "/images/articles/tineco-floor-one-station-s9-scientist-pro/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 67648,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d6d33fb0bde918cb7c7ce05779026eb81d218e4110bf8e630f9332cfc5da8d3b",
+      "outputHash": "sha256:0b607e324e4bbb09d25c79ebd3c9265f3bbbb1bddfe14590d83325307f678b8a",
+      "mobile": {
+        "src": "/images/articles/tineco-floor-one-station-s9-scientist-pro/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 31852,
+        "outputHash": "sha256:fd23a1d6c015a98aad91f29391b4ac1572944c35e6f41363b9889f513fc073d0"
       }
     },
     "/images/articles/tti-cleaning-appliance-strategy/01-cover.webp": {
@@ -32612,6 +32742,16 @@
         "/images/insights/dreame-rise-to-10-billion-in-five-years-image-01.jpg"
       ]
     },
+    "dreame-t16-pro-heat": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-t16-pro-heat/01-cover.webp",
+      "body": []
+    },
+    "dreame-t16-pro-steam": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-t16-pro-steam/01-cover.webp",
+      "body": []
+    },
     "dreame-vs-ecovacs-robot-vacuums": {
       "budgetClass": "standard",
       "cover": "/images/blog/dreame-vs-ecovacs-robot-platforms.webp",
@@ -32755,6 +32895,11 @@
       "cover": "/images/articles/dyson-pencilwash/01-cover.webp",
       "body": []
     },
+    "dyson-v10-konical": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-v10-konical/01-cover.webp",
+      "body": []
+    },
     "dyson-v15-detect-vs-gen5detect": {
       "budgetClass": "standard",
       "cover": "/images/blog/dyson-v15-detect-vs-gen5detect.webp",
@@ -32858,6 +33003,11 @@
         "/images/insights/ecovacs-at-a-crossroads-image-008.jpg"
       ]
     },
+    "ecovacs-deebot-t80s-omni": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-deebot-t80s-omni/01-cover.webp",
+      "body": []
+    },
     "ecovacs-deebot-t90-max-pro-omni": {
       "budgetClass": "standard",
       "cover": "/images/articles/ecovacs-deebot-t90-max-pro-omni/01-cover.webp",
@@ -32953,6 +33103,11 @@
         "/images/articles/eu-battery-rules-smartphones-power-tools/03-replaceability-rules.webp",
         "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp"
       ]
+    },
+    "eufy-omni-c28": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eufy-omni-c28/01-cover.webp",
+      "body": []
     },
     "eufy-omni-s2": {
       "budgetClass": "standard",
@@ -34088,6 +34243,11 @@
       "cover": "/images/articles/roborock-f25-ace-pro/01-cover.webp",
       "body": []
     },
+    "roborock-f25-pro-turbo": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-f25-pro-turbo/01-cover.webp",
+      "body": []
+    },
     "roborock-f25-ultra-steam-gen-2": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-f25-ultra-steam-gen-2/01-cover.webp",
@@ -34800,6 +34960,11 @@
       "cover": "/images/blog/shark-powerdetect-speed-vs-dyson-v16-piston-animal.webp",
       "body": []
     },
+    "shark-powerdetect-uv-reveal-rv3020xe": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-powerdetect-uv-reveal-rv3020xe/01-cover.webp",
+      "body": []
+    },
     "shark-stainstriker-vs-bissell-little-green": {
       "budgetClass": "standard",
       "cover": "/images/blog/shark-stainstriker-vs-bissell-little-green.webp",
@@ -34972,6 +35137,11 @@
         "/images/insights/thoughts-on-mijia-mite-removal-vacuum-image-011.png",
         "/images/insights/thoughts-on-mijia-mite-removal-vacuum-image-012.png"
       ]
+    },
+    "tineco-floor-one-station-s9-scientist-pro": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tineco-floor-one-station-s9-scientist-pro/01-cover.webp",
+      "body": []
     },
     "tineco-lacks-innovation": {
       "budgetClass": "standard",
@@ -36363,6 +36533,24 @@
         }
       }
     },
+    "dreame-t16-pro-heat": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-t16-pro-heat/01-cover.webp",
+          "hash": "sha256:3d83a178a501ae7aa636c4d6b333bd2e1137acc76efaae2d9411f4b314078c94"
+        }
+      }
+    },
+    "dreame-t16-pro-steam": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-t16-pro-steam/01-cover.webp",
+          "hash": "sha256:2eeb0023d3670da418f785a4be5a9a1e44fc3cc9fde97a7e0c22938446055e99"
+        }
+      }
+    },
     "dreame-x60-ultra": {
       "files": {
         "01-cover.webp": {
@@ -36419,12 +36607,30 @@
         }
       }
     },
+    "dyson-v10-konical": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-v10-konical/01-cover.webp",
+          "hash": "sha256:40fd9e60292be3164142c5e402a092d74600ae547658785994385d706d947c91"
+        }
+      }
+    },
     "dyson-v16-piston-animal": {
       "files": {
         "01-cover.jpeg": {
           "status": "matched",
           "primary": "/images/articles/dyson-v16-piston-animal/01-cover.webp",
           "hash": "sha256:e42a9ba8994ec0069d504ad38114ca523a6cfe21c9456ad84cc28617138f96ba"
+        }
+      }
+    },
+    "ecovacs-deebot-t80s-omni": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-deebot-t80s-omni/01-cover.webp",
+          "hash": "sha256:3b4e61c3018625640164698aa037e78348748af5bfc0f99de6a243abf41ff49e"
         }
       }
     },
@@ -36577,6 +36783,15 @@
           "status": "matched",
           "primary": "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp",
           "hash": "sha256:02667d596901c3261259111f12fd5ef53b66ba1c9e16988a6a79ee99ec92b60f"
+        }
+      }
+    },
+    "eufy-omni-c28": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-c28/01-cover.webp",
+          "hash": "sha256:3bd93a0f9e04da8c0a3b3fb77b11a4caad33a42c02839d91b37f3e748432468b"
         }
       }
     },
@@ -36985,6 +37200,15 @@
         }
       }
     },
+    "roborock-f25-pro-turbo": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-f25-pro-turbo/01-cover.webp",
+          "hash": "sha256:49c982b50cbfab0b67fa9a0453cef5039ac6b90e487d78be297bbec236659f23"
+        }
+      }
+    },
     "roborock-f25-ultra-steam-gen-2": {
       "files": {
         "01-cover.png": {
@@ -37336,6 +37560,15 @@
         }
       }
     },
+    "shark-powerdetect-uv-reveal-rv3020xe": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/shark-powerdetect-uv-reveal-rv3020xe/01-cover.webp",
+          "hash": "sha256:36a923e0882cca269dc24c0d6351a9f75ae75c6bc07ae79e435972fc8d632ba4"
+        }
+      }
+    },
     "sharkninja-q2-growth-outside-cleaning": {
       "files": {
         "01-cover.png": {
@@ -37385,6 +37618,15 @@
           "status": "matched",
           "primary": "/images/articles/sunseeker-s4/01-cover.webp",
           "hash": "sha256:511f46a4cb35c2f575f295ea2ed4a28d66b9a05590eb794fec86c27e858a2935"
+        }
+      }
+    },
+    "tineco-floor-one-station-s9-scientist-pro": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/tineco-floor-one-station-s9-scientist-pro/01-cover.webp",
+          "hash": "sha256:d6d33fb0bde918cb7c7ce05779026eb81d218e4110bf8e630f9332cfc5da8d3b"
         }
       }
     },

@@ -1002,7 +1002,8 @@
       "ecovacs-deebot-t90s-pro-omni",
       "ecovacs-deebot-t90-max-pro-omni",
       "ecovacs-deebot-x12-omnicyclone",
-      "roborock-saros-20"
+      "roborock-saros-20",
+      "ecovacs-deebot-t80s-omni"
     ],
     "announced": "2026-03-05",
     "verifiedAt": "2026-09-06",
@@ -1954,7 +1955,8 @@
     ],
     "related": [
       "roborock-f25-ultra-steam-gen-2",
-      "roborock-f25-ace-pro"
+      "roborock-f25-ace-pro",
+      "dreame-t16-pro-heat"
     ],
     "announced": "2026-02-19",
     "verifiedAt": "2026-09-06",
@@ -2760,7 +2762,9 @@
     ],
     "related": [
       "roborock-f25-ultra-steam-gen-2",
-      "dyson-pencilwash"
+      "dyson-pencilwash",
+      "roborock-f25-pro-turbo",
+      "tineco-floor-one-station-s9-scientist-pro"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -3146,7 +3150,9 @@
     ],
     "related": [
       "narwal-flow-2",
-      "roborock-saros-20-flow"
+      "roborock-saros-20-flow",
+      "eufy-omni-c28",
+      "shark-powerdetect-uv-reveal-rv3020xe"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -3446,7 +3452,8 @@
       "dreame-new-disruptor-in-vacuums"
     ],
     "related": [
-      "dyson-v16-piston-animal"
+      "dyson-v16-piston-animal",
+      "dyson-v10-konical"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -3545,7 +3552,8 @@
     ],
     "related": [
       "roborock-f25-ace-pro",
-      "dyson-pencilwash"
+      "dyson-pencilwash",
+      "dreame-t16-pro-steam"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -4055,5 +4063,787 @@
     "launchYear": 2026,
     "launchNote": "Announced in Europe on February 10, 2026 for March 12 introduction; current US mini 2 retail listing verified.",
     "launchSource": "https://www.presseportal.de/pm/114369/6214114"
+  },
+  {
+    "slug": "dreame-t16-pro-heat",
+    "name": "Dreame T16 Pro Heat",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Floor washers",
+    "market": "France · local offer / global specification",
+    "summary": "A hot-water floor washer with a removable battery, multispectral dirt sensing and a low-profile head. Its 70-minute Eco claim falls to 22 minutes in Hot Water mode.",
+    "fit": "Hard-floor homes wanting targeted hot-water cleaning and a replaceable battery without choosing the steam variant.",
+    "caution": "Heat and Steam are different T16 models. Their weight, tanks, runtime and station dimensions must not be mixed.",
+    "facts": [
+      {
+        "label": "Hot-water system",
+        "value": "ThermoRinse · 90°C claim",
+        "meaning": "Manufacturer heating claim, not a measured floor-contact temperature."
+      },
+      {
+        "label": "Battery",
+        "value": "6 × 5,000 mAh cells; detachable",
+        "meaning": "Additional battery sold separately; do not add cell capacities."
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 70 minutes",
+        "meaning": "Custom > Eco test setting."
+      },
+      {
+        "label": "Hot-water runtime",
+        "value": "Up to 22 minutes",
+        "meaning": "Use this figure for a heated-cleaning session."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How is T16 Pro Heat different from T16 Pro Steam?",
+        "answer": "Heat focuses on hot-water washing. Steam adds a steam mode and has a different body weight, tank arrangement and dock. Compare the exact specifications rather than assuming Steam is only a software setting."
+      },
+      {
+        "question": "Does it wash with hot water for 70 minutes?",
+        "answer": "No. The global page lists 70 minutes in Custom > Eco and 22 minutes in Hot Water mode. Real duration depends on the task and conditions."
+      },
+      {
+        "question": "What is the French price?",
+        "answer": "The selected official French listing showed EUR 629 on September 12, 2026. Confirm the current package, delivery date and warranty before ordering."
+      },
+      {
+        "question": "Is a spare battery included?",
+        "answer": "The global page identifies an additional detachable battery as separately sold. Confirm the selected regional bundle rather than assuming two batteries are supplied."
+      },
+      {
+        "question": "Does 90°C describe the temperature on the floor?",
+        "answer": "The product page gives a manufacturer hot-water claim, not an independently verified floor-contact measurement. Follow both the appliance manual and the flooring supplier’s care instructions."
+      },
+      {
+        "question": "Can it replace my dry vacuum for furniture?",
+        "answer": "This is a dedicated floor washer. It is not the interchangeable handheld-and-wet-head architecture of Z30 Pro Aqua-A, and should not be assumed to support dry upholstery tools."
+      },
+      {
+        "question": "What should I check before choosing it for low furniture?",
+        "answer": "Measure the narrowest gap along the entire route and test the head with normal water loading. A 9.85 cm laboratory clearance claim does not guarantee access under every nominally 10 cm sofa."
+      }
+    ],
+    "articles": [
+      "tineco-vs-dreame-floor-washers",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "dreame-t16-pro-steam",
+      "roborock-f25-pro-turbo",
+      "tineco-floor-one-station-s9-scientist-pro"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Global exact-model specifications",
+        "url": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "French official offer",
+        "url": "https://fr.dreametech.com/products/dreame-t16-pro-heat-aspirateur-laveur"
+      },
+      {
+        "label": "IFA 2026 T-series introduction",
+        "url": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Comparison · T16 Pro Steam",
+        "url": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Comparison · F25 Pro Turbo",
+        "url": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      }
+    ],
+    "imageSource": "https://fr.dreametech.com/cdn/shop/files/T16ProHeat-2625L_-12_1200x1200.png?v=1782788251",
+    "launchYear": 2026,
+    "launchNote": "Included in Dreame’s T-series introduction at IFA 2026; French exact-model offer checked.",
+    "launchSource": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+  },
+  {
+    "slug": "dreame-t16-pro-steam",
+    "name": "Dreame T16 Pro Steam",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Floor washers",
+    "market": "France · exact local specification",
+    "summary": "A steam-capable T-series washer with separate Steam, Hot Water and Smart modes. The French specification separates 20-minute heated operation from its 70-minute Eco maximum.",
+    "fit": "Compatible hard-floor cleaning where a dedicated steam option addresses recurring residue.",
+    "caution": "The French page uses several heater and steam-temperature claims. Do not interpret them as floor-contact temperatures or universal approval for wood.",
+    "facts": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided steam-capable floor washer",
+        "meaning": "Not an autonomous robot or general carpet extractor."
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 70 minutes",
+        "meaning": "Not the heated-mode endurance."
+      },
+      {
+        "label": "Steam / Hot Water runtime",
+        "value": "Up to 20 minutes",
+        "meaning": "French specification for either heated mode."
+      },
+      {
+        "label": "Clean-water tank",
+        "value": "830 ml",
+        "meaning": "Different from the Heat model’s 900 ml tank."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is T16 Pro Steam the same appliance as T16 Pro Heat?",
+        "answer": "No. Steam adds a steam-cleaning mode and uses different body, tank and station specifications. This guide follows the French Steam listing."
+      },
+      {
+        "question": "How long does it run in Steam mode?",
+        "answer": "The French table lists up to 20 minutes in Steam or Hot Water mode, 40 minutes in Smart mode and 70 minutes in Eco. These are distinct test contexts."
+      },
+      {
+        "question": "What is the current French price?",
+        "answer": "The official French offer showed EUR 649 on September 12, 2026. Verify the selected package, stock and delivery date at purchase."
+      },
+      {
+        "question": "Does its advertised temperature reach the floor unchanged?",
+        "answer": "That is not established by the cited material. Heater, generated steam and surface-contact temperatures are different measurements. This guide does not turn the largest advertised number into a floor-temperature claim."
+      },
+      {
+        "question": "Can I steam every wooden floor?",
+        "answer": "No universal approval can be inferred. Check the flooring supplier’s care instructions and the appliance manual for the exact surface and mode. A laboratory wood test cannot cover every finish."
+      },
+      {
+        "question": "Is an additional battery included?",
+        "answer": "The product material presents battery swapping as an option and identifies extra battery equipment separately. Confirm what the local bundle includes before assuming a second battery is supplied."
+      },
+      {
+        "question": "What still needs manual care?",
+        "answer": "Used water, collected solids, roller condition and accessible passages still need attention. A steam-assisted self-cleaning cycle does not establish that the whole appliance is maintenance-free."
+      }
+    ],
+    "articles": [
+      "tineco-vs-dreame-floor-washers",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "dreame-t16-pro-heat",
+      "roborock-f25-ultra-steam-gen-2"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "French exact-model offer and specifications",
+        "url": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "IFA 2026 T-series introduction",
+        "url": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+      },
+      {
+        "label": "Comparison · T16 Pro Heat",
+        "url": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Comparison · F25 Ultra Steam Gen 2",
+        "url": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2"
+      }
+    ],
+    "imageSource": "https://fr.dreametech.com/cdn/shop/files/T16_Pro_Steam_Wide_Angle-Main_Image-__2619E__1_1200x1200.png?v=1788491506",
+    "launchYear": 2026,
+    "launchNote": "Introduced in the T-series lineup at IFA 2026; French exact-model offer checked.",
+    "launchSource": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html"
+  },
+  {
+    "slug": "roborock-f25-pro-turbo",
+    "name": "Roborock F25 Pro Turbo",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Floor washers",
+    "market": "Global · IFA 2026 introduction",
+    "summary": "A manually guided floor washer that intensifies water delivery, suction and roller action on demand. Its distinguishing feature is HyperScrub, rather than a steam-cleaning system.",
+    "fit": "Hard-floor households wanting extra scrubbing for localized residue and powered assistance during turns.",
+    "caution": "F25 Pro Turbo and Pro Turbo Combo are different packages. Do not assume a detachable dry vacuum or accessories are included with the base model.",
+    "facts": [
+      {
+        "label": "Intensive mode",
+        "value": "HyperScrub on demand",
+        "meaning": "Hold the control to intensify treatment of a patch."
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 60 minutes in Eco",
+        "meaning": "Intensive treatment can shorten a session."
+      },
+      {
+        "label": "Low-clearance design",
+        "value": "180° lay-flat; 12.5 cm clearance",
+        "meaning": "Allow extra room around uneven furniture and flooring."
+      },
+      {
+        "label": "Dock heating claim",
+        "value": "95°C at the air duct",
+        "meaning": "Not a measured floor temperature or a 95°C water guarantee."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What does HyperScrub change?",
+        "answer": "The manufacturer describes increased water delivery, suction and roller action while the on-demand control is held. Its percentage improvements compare operating modes of this model, not independent results against competing washers."
+      },
+      {
+        "question": "Is F25 Pro Turbo a steam washer?",
+        "answer": "The cited base-model page emphasizes intensified mechanical scrubbing. Do not transfer the steam specifications of F25 Ultra Steam Gen 2 to this product."
+      },
+      {
+        "question": "Does 95°C mean hot water reaches the floor?",
+        "answer": "No. The cited heating footnote identifies an air-duct measurement during dock care. It does not establish water temperature at the floor."
+      },
+      {
+        "question": "Will it run for 60 minutes with HyperScrub?",
+        "answer": "The advertised maximum is an Eco-mode figure. The cited page does not establish a 60-minute continuous intensive-mode session."
+      },
+      {
+        "question": "Are handheld vacuum tools included?",
+        "answer": "Do not assume so. Roborock also promotes a Pro Turbo Combo configuration. Confirm the exact model, components and local bundle before ordering."
+      },
+      {
+        "question": "Is there a verified local price?",
+        "answer": "A regional retail price was not verified in the cited exact-model and IFA pages on September 12, 2026. Obtain a local quote instead of using another F25 model’s price."
+      },
+      {
+        "question": "What still needs manual cleaning?",
+        "answer": "Collected dirty water and separated debris need disposal. The manufacturer instructs owners to empty the solids separator after each use; automated roller care does not perform that task."
+      }
+    ],
+    "articles": [
+      "tineco-vs-dreame-floor-washers",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "dreame-t16-pro-heat",
+      "roborock-f25-ace-pro",
+      "roborock-f25-ultra-steam-gen-2"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Exact-model features and footnotes",
+        "url": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Roborock IFA 2026 introduction",
+        "url": "https://au.roborock.com/pages/ifa-2026"
+      },
+      {
+        "label": "Comparison · F25 ACE Pro",
+        "url": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      },
+      {
+        "label": "Comparison · T16 Pro Heat",
+        "url": "https://global.dreametech.com/products/t16-pro-heat"
+      }
+    ],
+    "imageSource": "https://global.roborock.com/cdn/shop/files/Roborock_F25_Pro_Turbo_ID.png?v=1785119278",
+    "launchYear": 2026,
+    "launchNote": "Presented in Roborock’s IFA 2026 lineup; regional retail terms remain to be checked.",
+    "launchSource": "https://au.roborock.com/pages/ifa-2026"
+  },
+  {
+    "slug": "dyson-v10-konical",
+    "name": "Dyson V10 Konical",
+    "brand": "Dyson",
+    "brandSlug": "dyson",
+    "category": "Cordless vacuums",
+    "market": "United States · base vacuum with Wall Dok",
+    "summary": "A dry cordless vacuum with a dual-conical cleaner head, illuminated dust detection and a replaceable battery. The US base package and optional Auto-empty Dok need separate price and availability checks.",
+    "fit": "Mixed hard-floor and carpet homes wanting dry floor and above-floor cleaning with less manual hair removal from the head.",
+    "caution": "The US launch and current retail pages disagree on weight. The base vacuum includes a wall dock; do not assume the Auto-empty Dok is included or available.",
+    "facts": [
+      {
+        "label": "Cleaner head",
+        "value": "All Floor Cones dual-conical head",
+        "meaning": "Manufacturer design for moving hair along tapered brush bars."
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 60 minutes in Eco handheld use",
+        "meaning": "Powered floor tools and higher modes change endurance."
+      },
+      {
+        "label": "Published retail weight",
+        "value": "6.01 lb",
+        "meaning": "Current retail table differs from the launch article’s 5.3 lb."
+      },
+      {
+        "label": "Auto-empty station",
+        "value": "Optional Auto-empty Dok",
+        "meaning": "US information still says coming soon; not part of the base offer."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Auto-empty Dok included in the US base price?",
+        "answer": "No. The selected black/copper base listing includes Wall Dok. Dyson presents Auto-empty Dok separately, and its US information still described it as coming soon when checked."
+      },
+      {
+        "question": "What is the checked US price?",
+        "answer": "The base vacuum showed USD 399.99 on September 12, 2026. This is a dated retail offer, not the launch price or a confirmed vacuum-and-auto-empty bundle price."
+      },
+      {
+        "question": "Does the 60-minute figure apply to powered floor cleaning?",
+        "answer": "The cited footnote specifies Eco handheld use. A motorized floor head, higher mode and actual debris load can reduce duration."
+      },
+      {
+        "question": "Why does this guide show 6.01 lb?",
+        "answer": "That is the selected current US retail specification. The March launch article gives 5.3 lb, so the sources do not agree. Confirm the assembled configuration if carrying weight is important."
+      },
+      {
+        "question": "Is this a wet vacuum?",
+        "answer": "No. Its floor and handheld tools are for dry cleaning. Choose a suitable floor washer separately if liquid pickup or wet washing is required."
+      },
+      {
+        "question": "Can older Dyson accessories be assumed to fit?",
+        "answer": "No. Confirm compatibility by exact accessory and machine code. The Konical name and V10 label do not establish universal compatibility with every older V10 attachment."
+      },
+      {
+        "question": "Does the automatic emptying option remove maintenance?",
+        "answer": "No. An optional dock adds its own bag and care requirements. Filters, brush bars, airflow paths and the handheld bin still require attention according to the supplied instructions."
+      }
+    ],
+    "articles": [
+      "dyson-finally-sells-self-emptying-vacuum",
+      "shark-vs-dyson-cordless-vacuums"
+    ],
+    "related": [
+      "dreame-z30-pro-aqua-a",
+      "dyson-v16-piston-animal"
+    ],
+    "announced": "2026-03-19",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US exact base-vacuum offer",
+        "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "March 2026 Konical introduction",
+        "url": "https://www.dyson.com/discover/news/latest/indroducing-dyson-konical"
+      },
+      {
+        "label": "US Konical range and station status",
+        "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical"
+      },
+      {
+        "label": "Comparison · Z30 Pro Aqua-A",
+        "url": "https://global.dreametech.com/products/z30-pro-aqua-a"
+      },
+      {
+        "label": "Comparison · PencilWash",
+        "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      }
+    ],
+    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/specifications/home/floorcare/cordless/Web_Dynamic_Media_Specifications_285-O_West.png?%24responsive%24=&fmt=png-alpha",
+    "launchYear": 2026,
+    "launchNote": "Announced in March 2026; US base vacuum availability and separate station status checked.",
+    "launchSource": "https://www.dyson.com/discover/news/latest/indroducing-dyson-konical"
+  },
+  {
+    "slug": "eufy-omni-c28",
+    "name": "eufy Robot Vacuum Omni C28",
+    "brand": "eufy",
+    "brandSlug": "eufy",
+    "category": "Robot vacuums",
+    "market": "United Kingdom · official retail specification",
+    "summary": "A roller-mop robot with a five-function station, 15,000 Pa suction claim and laser-based obstacle sensing. C28 expands eufy coverage below the more elaborate Omni S2 system.",
+    "fit": "Households wanting routine vacuuming and roller washing with automatic station care at a checked UK price.",
+    "caution": "The C28 specification lists LDS and laser-line sensing. Do not transfer the camera system or other flagship features of Omni S2 to this model.",
+    "facts": [
+      {
+        "label": "Suction claim",
+        "value": "15,000 Pa",
+        "meaning": "Maximum manufacturer test figure; not a comparative cleaning score."
+      },
+      {
+        "label": "Navigation / obstacle sensing",
+        "value": "LDS and laser-line sensing",
+        "meaning": "Do not assume a flagship RGB-camera system."
+      },
+      {
+        "label": "Vacuum-and-mop runtime",
+        "value": "Up to 123 minutes in Standard",
+        "meaning": "Different from vacuum-only endurance."
+      },
+      {
+        "label": "Vacuum-only runtime",
+        "value": "Up to 216 minutes in Standard",
+        "meaning": "Does not describe a full vacuum-and-mop session."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does C28 differ from Omni S2?",
+        "answer": "C28 uses the exact HydroJet, DuoSpiral and LDS/laser-line configuration documented here. Omni S2 is a separate platform; its camera, treatment and station features should not be assumed on C28."
+      },
+      {
+        "question": "What is the checked UK price?",
+        "answer": "The official UK page showed GBP 649 on September 12, 2026. Verify the current bundle, delivery, regional support and replacement consumables."
+      },
+      {
+        "question": "Does it vacuum and mop for 216 minutes?",
+        "answer": "No. The comparison table separates up to 123 minutes for vacuuming and mopping from up to 216 minutes for vacuum-only operation, both in Standard mode."
+      },
+      {
+        "question": "Does it have RGB-camera obstacle avoidance?",
+        "answer": "The cited C28 specification lists LDS and laser-line sensing. This guide does not attribute the camera hardware of another eufy model to C28."
+      },
+      {
+        "question": "Can I use it on more than one floor?",
+        "answer": "It must be carried between levels. The official guidance describes preparing the roller at the station before a remote-floor wet session; the robot still needs station access for washing and charging."
+      },
+      {
+        "question": "Does the station automatically mix detergent?",
+        "answer": "The C28 FAQ describes manually premixing the approved solution at 1:200. Do not infer automatic dispensing from the station’s other automated functions."
+      },
+      {
+        "question": "What preparation does the home still need?",
+        "answer": "Remove loose cables and objects the robot may catch. For a dusty first clean, the manufacturer recommends initial vacuuming before wet cleaning. Inspect the roller, brushes and station after the job."
+      }
+    ],
+    "articles": [
+      "roborock-vs-ecovacs-robot-vacuums",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "eufy-omni-s2",
+      "ecovacs-deebot-t80s-omni",
+      "roborock-qrevo-curv-2-flow"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "UK C28 specifications, offer and FAQ",
+        "url": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Irish C28 roller and sensing information",
+        "url": "https://www.eufy.com/ie/robot-vacuum-cleaner-c28"
+      },
+      {
+        "label": "Comparison · DEEBOT T80S OMNI",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Comparison · Qrevo Curv 2 Flow",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0504/1094/6753/files/T221A-C28_DTC_rich_image-03_e222262c-647b-453c-971e-49e76bb98961.png?v=1775204850",
+    "launchYear": 2026,
+    "launchNote": "Official C28 retail page identifies the model as New 2026; an exact first-announcement day is not asserted.",
+    "launchSource": "https://www.eufy.com/uk/products/t211a210"
+  },
+  {
+    "slug": "tineco-floor-one-station-s9-scientist-pro",
+    "name": "Tineco FLOOR ONE STATION S9 Scientist Pro",
+    "brand": "Tineco",
+    "brandSlug": "tineco",
+    "category": "Floor washers",
+    "market": "United States · station-equipped floor washer",
+    "summary": "A manually guided washer paired with a 5 L Smart Refresh station for heated-water refilling and care. HydroBurst spot treatment and automatic solution handling are distinct from a steam-cleaning system.",
+    "fit": "Hard-floor owners who value a larger station water supply and fewer manual refills during repeated washing sessions.",
+    "caution": "The washer must return to its station for refilling. The store’s lower checkout promotion is conditional, and the drying-air temperature is not a floor-water temperature.",
+    "facts": [
+      {
+        "label": "Station clean-water reservoir",
+        "value": "5 L",
+        "meaning": "Separate from the water carried in the washer."
+      },
+      {
+        "label": "Suction claim",
+        "value": "25,000 Pa",
+        "meaning": "Official FAQ maximum; not a finished-floor score."
+      },
+      {
+        "label": "Water refilling",
+        "value": "Automatic heated-water refill at the station",
+        "meaning": "Return the washer to the station; no remote refill."
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 100 minutes",
+        "meaning": "Do not assume every mode or heated session reaches the maximum."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does the 5 L station refill the washer while it is cleaning?",
+        "answer": "No. The washer must return to the Smart Refresh station. The onboard clean-water tank is 0.85 L; the larger reservoir reduces manual station refills rather than being carried across the floor."
+      },
+      {
+        "question": "Is Scientist Pro a steam washer?",
+        "answer": "The cited product uses HydroBurst water-jet treatment and heated-water refilling. Do not import the steam claims of another S9 model from a multi-product launch announcement."
+      },
+      {
+        "question": "What price should I use?",
+        "answer": "The selected US listing showed USD 1,199 on September 12, 2026. It also advertised a USD 999 checkout promotion, whose final conditions were not verified. This guide uses the displayed base offer."
+      },
+      {
+        "question": "Does 230°F describe water on the floor?",
+        "answer": "No. The launch material associates that figure with FlashDry heated air. It is not a measured water temperature at the floor."
+      },
+      {
+        "question": "Can it clean for 100 minutes in every mode?",
+        "answer": "No universal 100-minute session is established. Treat it as the manufacturer’s maximum and confirm the selected mode, heating use and working conditions."
+      },
+      {
+        "question": "Is the 40 dBA claim for normal floor washing?",
+        "answer": "No. It describes the SilentDry station drying mode. It should not be used as the machine’s operating noise while cleaning a room."
+      },
+      {
+        "question": "What does the owner still empty?",
+        "answer": "Used water and collected debris remain owner tasks. The product instructions describe emptying dirty water before station cleaning; a larger clean-water reservoir does not remove that step."
+      }
+    ],
+    "articles": [
+      "tineco-vs-dreame-floor-washers",
+      "tineco-vs-bissell-crosswave-floor-washers"
+    ],
+    "related": [
+      "dreame-t16-pro-heat",
+      "dreame-t16-pro-steam",
+      "roborock-f25-ace-pro"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US exact-model store and FAQ",
+        "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "IFA 2026 manufacturer launch",
+        "url": "https://www.prnewswire.com/news-releases/tineco-shows-how-the-future-cleans-itself-at-ifa-2026-with-four-new-floor-care-products-302860346.html"
+      },
+      {
+        "label": "US model feature reference",
+        "url": "https://us.tineco.com/products/floor-one-station-s9-scientist-pro.html"
+      },
+      {
+        "label": "Comparison · T16 Pro Heat",
+        "url": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Comparison · F25 ACE Pro",
+        "url": "https://global.roborock.com/pages/roborock-f25-ace-pro"
+      }
+    ],
+    "imageSource": "https://store.tineco.com/cdn/shop/files/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner-4685732.jpg?crop=center&height=1200&v=1784226390&width=1200",
+    "launchYear": 2026,
+    "launchNote": "Included in Tineco’s IFA 2026 introduction; manufacturer material identifies US availability from August 2026.",
+    "launchSource": "https://www.prnewswire.com/news-releases/tineco-shows-how-the-future-cleans-itself-at-ifa-2026-with-four-new-floor-care-products-302860346.html"
+  },
+  {
+    "slug": "ecovacs-deebot-t80s-omni",
+    "name": "ECOVACS DEEBOT T80S OMNI",
+    "brand": "ECOVACS",
+    "brandSlug": "ecovacs",
+    "category": "Robot vacuums",
+    "market": "United States · exact retail specification",
+    "summary": "A roller-mop DEEBOT with a 24,800 Pa suction claim, edge extension and a compact 3.9-inch published height. Its heated OMNI station supports roller care between cleaning runs.",
+    "fit": "Homes seeking roller washing with camera-assisted obstacle sensing and a relatively low published robot profile.",
+    "caution": "The US specification table contains ambiguous units for station tanks and electrical data. Those entries are not adopted here; confirm the local manual before installation.",
+    "facts": [
+      {
+        "label": "Suction claim",
+        "value": "24,800 Pa",
+        "meaning": "Vacuum pressure claim; separate from mop contact pressure."
+      },
+      {
+        "label": "Edge system",
+        "value": "TruEdge 3.0; up to 1.5 cm extension",
+        "meaning": "Test corners and furniture legs in addition to straight edges."
+      },
+      {
+        "label": "Published robot height",
+        "value": "3.9 in",
+        "meaning": "Use the exact regional specification and allow clearance margin."
+      },
+      {
+        "label": "Station washing claim",
+        "value": "75°C",
+        "meaning": "Manufacturer station-washing figure, not floor-contact temperature."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was T80S OMNI introduced?",
+        "answer": "The manufacturer’s European announcement dated February 10, 2026 described availability from February 12. That establishes 2026 launch context without claiming it was the first sale in every country."
+      },
+      {
+        "question": "What is the checked US price?",
+        "answer": "The selected base T80S OMNI listing showed USD 649.99 on September 12, 2026. Accessory packages can have different prices, so confirm the selected bundle."
+      },
+      {
+        "question": "Are 24,800 Pa and 3,800 Pa comparable?",
+        "answer": "No. The first is a suction-pressure claim; the second describes roller contact pressure. They measure different parts of the cleaning process and should not be added or ranked together."
+      },
+      {
+        "question": "Does 75°C water reach the floor?",
+        "answer": "The cited claim describes station roller washing. It is not a measured floor-contact water temperature during the cleaning route."
+      },
+      {
+        "question": "Will it fit under 4-inch furniture?",
+        "answer": "The published height is 3.9 inches, leaving very little margin. Measure the whole route, including sagging material and crossbars, and test access rather than assuming a nominal gap is enough."
+      },
+      {
+        "question": "Why are station tank capacities not listed?",
+        "answer": "The selected US table has ambiguous volume units. This guide omits those entries rather than silently converting them. Confirm the exact regional manual if refill intervals are important."
+      },
+      {
+        "question": "Do long station-care intervals mean no maintenance?",
+        "answer": "No. Bag and tray interval claims are usage-dependent. Used water, trapped debris, the roller and accessible passages still require inspection and care, particularly after dirty jobs."
+      }
+    ],
+    "articles": [
+      "roborock-vs-ecovacs-robot-vacuums",
+      "dreame-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "ecovacs-deebot-t90-pro-omni",
+      "eufy-omni-c28",
+      "shark-powerdetect-uv-reveal-rv3020xe"
+    ],
+    "announced": "2026-02-10",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US T80S OMNI offer and specifications",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "February 2026 manufacturer announcement",
+        "url": "https://www.presseportal.de/pm/114369/6214114"
+      },
+      {
+        "label": "Official US model support",
+        "url": "https://help.ecovacs.com/us/support/deebot-t80s-omni"
+      },
+      {
+        "label": "Comparison · Omni C28",
+        "url": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Comparison · Qrevo Curv 2 Flow",
+        "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      }
+    ],
+    "imageSource": "https://site-static.ecovacs.com/upload/us/image/product/2026/02/03/020446_3252$deebot-t80s-omni-920x920-5.png",
+    "launchYear": 2026,
+    "launchNote": "Manufacturer’s February 2026 European release identifies T80S OMNI as a new model; US exact-model offer checked.",
+    "launchSource": "https://www.presseportal.de/pm/114369/6214114"
+  },
+  {
+    "slug": "shark-powerdetect-uv-reveal-rv3020xe",
+    "name": "Shark PowerDetect UV Reveal RV3020XE",
+    "brand": "Shark",
+    "brandSlug": "shark",
+    "category": "Robot vacuums",
+    "market": "United States · RV3020XE base model",
+    "summary": "A vacuum-and-mop robot using UV illumination and camera sensing to reveal stains, paired with HyperSonic scrubbing and a heated-care station. UV Reveal is a detection feature, not a floor-disinfection claim.",
+    "fit": "Homes with recurring hard-floor stains that justify comparing stain detection and sonic scrubbing against roller-mop systems.",
+    "caution": "The official listing contains conflicting runtime figures. The higher maximum is conditional, and UV stain detection must not be confused with sterilizing the floor.",
+    "facts": [
+      {
+        "label": "Stain sensing",
+        "value": "UV illumination with RGB sensing",
+        "meaning": "Detects visible responses; not a UV-disinfection system."
+      },
+      {
+        "label": "Mopping system",
+        "value": "HyperSonic scrubbing",
+        "meaning": "Different mechanism from a continuously rinsed roller."
+      },
+      {
+        "label": "Station functions",
+        "value": "Empty, refill, wash and heated drying",
+        "meaning": "ThermaCharged NeverTouch Pro station; manual care remains."
+      },
+      {
+        "label": "Runtime information",
+        "value": "Conflicting official figures: up to 3 h vs 2 h",
+        "meaning": "Higher claim uses bare-floor Eco conditions; table gives a different dry-floor figure."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does UV Reveal disinfect the floor?",
+        "answer": "No such floor-disinfection claim is established here. UV Reveal uses illumination and sensing to detect stains. Station heat treatment is a separate process and does not establish that the floor is sterilized."
+      },
+      {
+        "question": "What is the checked US price?",
+        "answer": "The RV3020XE listing showed USD 749.99 on September 12, 2026. The March launch announcement used USD 1,299.99; the two numbers describe different dates, not different guaranteed current offers."
+      },
+      {
+        "question": "Is runtime two hours or three hours?",
+        "answer": "The current listing is inconsistent: its main claim gives up to three hours under bare-floor Eco conditions, while a model comparison table gives two hours for dry hard-floor operation. Confirm the manual and intended mode before planning a route."
+      },
+      {
+        "question": "Does 7× scrubbing mean seven times better than every robot?",
+        "answer": "No. The manufacturer names Shark RV2820ZE as the comparison. It is not an independent whole-market test or a guarantee about the final floor result."
+      },
+      {
+        "question": "Is this a roller-mop system?",
+        "answer": "No. Shark describes HyperSonic scrubbing. Compare the actual mop mechanism and cleaning cycle with the rollers used by C28 or T80S OMNI."
+      },
+      {
+        "question": "Can it safely handle any pet accident unattended?",
+        "answer": "Do not assume that. Remove hazardous messes and follow the manual. Stain sensing does not guarantee safe identification or handling of every type of contamination."
+      },
+      {
+        "question": "What still needs owner care?",
+        "answer": "Inspect the collection areas, mop, brushes, filters and station after use. Follow the exact instructions for cleaning and drying parts; a heated station cycle does not remove all maintenance."
+      }
+    ],
+    "articles": [
+      "shark-powerdetect-speed-vs-dyson-v16-piston-animal",
+      "roborock-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "eufy-omni-c28",
+      "ecovacs-deebot-t80s-omni",
+      "eufy-omni-s2"
+    ],
+    "announced": "2026-03-03",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US RV3020XE offer and footnotes",
+        "url": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "March 2026 manufacturer launch",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-PowerDetect-UV-Reveal--The-First-Robot-Vacuum--Mop-to-Use-UV-Technology-to-Detect-Invisible-Messes/default.aspx"
+      },
+      {
+        "label": "Comparison · Omni C28",
+        "url": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Comparison · T80S OMNI",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      }
+    ],
+    "imageSource": "https://assets.sharkninja.com/image/upload/f_auto/q_auto/SharkNinja-NA/RV3020XE_01.jpg",
+    "launchYear": 2026,
+    "launchNote": "Manufacturer announced PowerDetect UV Reveal on March 3, 2026; exact RV3020XE offer checked.",
+    "launchSource": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-PowerDetect-UV-Reveal--The-First-Robot-Vacuum--Mop-to-Use-UV-Technology-to-Detect-Invisible-Messes/default.aspx"
   }
 ]

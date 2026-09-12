@@ -7251,5 +7251,1533 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "dreame-t16-pro-heat": {
+    "verdict": "Shortlist for compatible hard floors when the hot-water mode and removable battery solve a real cleaning need. Compare the 22-minute heated session and lifting effort, not only the Eco headline.",
+    "notFor": "Steam cleaning, above-floor dry tools or a guaranteed 70-minute heated session.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided hot-water floor washer",
+        "meaning": "Use on compatible hard floors; not a robot or carpet extractor.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Hot-water system",
+        "value": "ThermoRinse · 90°C claim",
+        "meaning": "Manufacturer heating claim, not a measured floor-contact temperature.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Suction claim",
+        "value": "30,000 Pa",
+        "meaning": "Maximum test figure; not a whole-floor cleaning score.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Rated electrical power",
+        "value": "420 W",
+        "meaning": "Electrical rating is different from suction pressure.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Main-body weight",
+        "value": "6.2 kg",
+        "meaning": "Consider lifting separately from powered movement on the floor.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Body dimensions",
+        "value": "275 × 270 × 1,170 mm",
+        "meaning": "Measure storage and handling space.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Docked dimensions",
+        "value": "322 × 359 × 1,236 mm",
+        "meaning": "Allow extra room for access and tank removal.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Battery",
+        "value": "6 × 5,000 mAh cells; detachable",
+        "meaning": "Additional battery sold separately; do not add cell capacities.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours",
+        "meaning": "Battery condition and temperature affect actual time.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 70 minutes",
+        "meaning": "Custom > Eco test setting.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Hot-water runtime",
+        "value": "Up to 22 minutes",
+        "meaning": "Use this figure for a heated-cleaning session.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Clean-water tank",
+        "value": "900 ml",
+        "meaning": "The onboard water supply still needs replenishment.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Used-water tank",
+        "value": "500 ml",
+        "meaning": "Empty and clean promptly as directed.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Solution reservoir",
+        "value": "150 ml",
+        "meaning": "Separate from the clean-water tank.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Dirt sensing",
+        "value": "AutoAdapt multispectral sensors",
+        "meaning": "Automatically adapts cleaning; inspect the finished floor.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      },
+      {
+        "label": "Low-clearance claim",
+        "value": "9.85 cm",
+        "meaning": "Laboratory figure; allow practical furniture clearance.",
+        "source": "https://global.dreametech.com/products/t16-pro-heat"
+      }
+    ],
+    "prices": [
+      {
+        "market": "France",
+        "amount": "EUR 629",
+        "source": "https://fr.dreametech.com/products/dreame-t16-pro-heat-aspirateur-laveur",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Exact T16 Pro Heat offer; verify the package, local availability and delivery."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame T16 Pro Heat",
+          "url": "https://global.dreametech.com/products/t16-pro-heat",
+          "market": "Global / France"
+        },
+        {
+          "name": "Dreame T16 Pro Steam",
+          "url": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam",
+          "market": "France"
+        },
+        {
+          "name": "Roborock F25 Pro Turbo",
+          "url": "https://global.roborock.com/pages/roborock-f25-pro-turbo",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Primary approach",
+          "values": [
+            "Hot-water washing",
+            "Steam and hot-water washing",
+            "On-demand intensified scrubbing"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "30,000 Pa",
+            "30,000 Pa",
+            "25,000 Pa"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "70 min Eco / 22 min Hot Water",
+            "70 min Eco / 20 min Steam or Hot Water",
+            "60 min Eco"
+          ]
+        },
+        {
+          "label": "Clean / used water",
+          "values": [
+            "900 / 500 ml",
+            "830 / 500 ml",
+            "Not verified in cited launch page"
+          ]
+        },
+        {
+          "label": "Low-clearance claim",
+          "values": [
+            "9.85 cm",
+            "Confirm regional manual",
+            "12.5 cm"
+          ]
+        }
+      ],
+      "takeaway": "Choose the cleaning method and mode-specific endurance first. Similar T16 names do not establish identical tanks, dimensions or maintenance requirements."
+    },
+    "resources": [
+      {
+        "label": "Global exact-model specifications",
+        "url": "https://global.dreametech.com/products/t16-pro-heat",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "French official offer",
+        "url": "https://fr.dreametech.com/products/dreame-t16-pro-heat-aspirateur-laveur",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "IFA 2026 T-series introduction",
+        "url": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dreame-t16-pro-steam": {
+    "verdict": "A relevant steam-capable option if the floor permits it and a 20-minute heated session fits the task. Compare real handling and post-cleaning care before selecting on heater numbers.",
+    "notFor": "Steam-sensitive surfaces, automatic room cleaning or a 70-minute steam-runtime expectation.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided steam-capable floor washer",
+        "meaning": "Not an autonomous robot or general carpet extractor.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Steam output claim",
+        "value": "3,000 mg/min",
+        "meaning": "Manufacturer laboratory figure; not a whole-floor performance grade.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Hot-water claim",
+        "value": "90°C",
+        "meaning": "Distinct from the steam and self-cleaning heating claims.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Suction claim",
+        "value": "30,000 Pa",
+        "meaning": "Tested maximum, not a comparison of finished floor quality.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Rated electrical power",
+        "value": "420 W",
+        "meaning": "Different from suction pressure or steam output.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Main-body weight",
+        "value": "6.7 kg",
+        "meaning": "Assess lifting with the intended working configuration.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Body dimensions",
+        "value": "275 × 265 × 1,167 mm",
+        "meaning": "Use the exact Steam version when measuring fit.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Docked dimensions",
+        "value": "357 × 317 × 1,230 mm",
+        "meaning": "Allow service access beyond this footprint.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours",
+        "meaning": "Depends on battery state and conditions.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Eco runtime",
+        "value": "Up to 70 minutes",
+        "meaning": "Not the heated-mode endurance.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Steam / Hot Water runtime",
+        "value": "Up to 20 minutes",
+        "meaning": "French specification for either heated mode.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Smart-mode runtime",
+        "value": "Up to 40 minutes",
+        "meaning": "Separate from the Eco and heated figures.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Clean-water tank",
+        "value": "830 ml",
+        "meaning": "Different from the Heat model’s 900 ml tank.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Used-water tank",
+        "value": "500 ml",
+        "meaning": "Owner emptying and cleaning remain necessary.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Solution reservoir",
+        "value": "100 ml",
+        "meaning": "A separate reservoir; use approved fluid and mode instructions.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      },
+      {
+        "label": "Dirt detection",
+        "value": "Multispectral sensor",
+        "meaning": "Supports cleaning adjustments; inspect the result.",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam"
+      }
+    ],
+    "prices": [
+      {
+        "market": "France",
+        "amount": "EUR 649",
+        "source": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Exact Steam listing; recheck local package, availability and delivery."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame T16 Pro Steam",
+          "url": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam",
+          "market": "France"
+        },
+        {
+          "name": "Dreame T16 Pro Heat",
+          "url": "https://global.dreametech.com/products/t16-pro-heat",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock F25 Ultra Steam Gen 2",
+          "url": "https://global.roborock.com/pages/roborock-f25-ultra-steam-gen-2",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Primary heated mode",
+          "values": [
+            "Steam and hot water",
+            "Hot water",
+            "Steam and hot water"
+          ]
+        },
+        {
+          "label": "Steam runtime",
+          "values": [
+            "Up to 20 min",
+            "No Steam mode listed",
+            "Up to 30 min"
+          ]
+        },
+        {
+          "label": "Eco runtime context",
+          "values": [
+            "70 min Eco",
+            "70 min Custom > Eco",
+            "100 min Auto / Eco suction"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "30,000 Pa",
+            "30,000 Pa",
+            "25,000 Pa"
+          ]
+        },
+        {
+          "label": "Body dimensions",
+          "values": [
+            "275 × 265 × 1,167 mm",
+            "275 × 270 × 1,170 mm",
+            "265 × 250 × 1,100 mm"
+          ]
+        }
+      ],
+      "takeaway": "Compare the time available in the required mode, then check surface compatibility and physical handling. Heater temperature alone does not establish cleaning quality or value."
+    },
+    "resources": [
+      {
+        "label": "French exact-model offer and specifications",
+        "url": "https://fr.dreametech.com/products/aspirateur-laveur-dreame-t16-pro-steam",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "IFA 2026 T-series introduction",
+        "url": "https://www.prnewswire.co.uk/news-releases/dreame-unveils-next-generation-innovations-at-ifa-2026-reimagining-smart-living-302868946.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · T16 Pro Heat",
+        "url": "https://global.dreametech.com/products/t16-pro-heat",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "roborock-f25-pro-turbo": {
+    "verdict": "Consider Pro Turbo when local scrubbing control and assisted steering address the task. Compare it with foam-assisted and hot-water washers using a representative spill, not suction pressure alone.",
+    "notFor": "A steam-specific requirement, unverified Combo accessories or a purchase that depends on an unconfirmed local price.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided wet-and-dry floor washer",
+        "meaning": "Designed for compatible hard floors.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Intensive mode",
+        "value": "HyperScrub on demand",
+        "meaning": "Hold the control to intensify treatment of a patch.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Suction claim",
+        "value": "25,000 Pa",
+        "meaning": "Maximum manufacturer figure; not a floor-cleaning score.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Roller speed",
+        "value": "Up to 550 rpm",
+        "meaning": "Published on-demand scrubbing figure.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Downward pressure",
+        "value": "20 N",
+        "meaning": "Manufacturer contact-force claim.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 60 minutes in Eco",
+        "meaning": "Intensive treatment can shorten a session.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Hair management",
+        "value": "JawScrapers",
+        "meaning": "Inspect the roller and accessible passages after use.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Edge approach",
+        "value": "0 mm on left and right",
+        "meaning": "The footnote does not establish three-sided zero-gap cleaning.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Low-clearance design",
+        "value": "180° lay-flat; 12.5 cm clearance",
+        "meaning": "Allow extra room around uneven furniture and flooring.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Detergent system",
+        "value": "Automatic dispensing",
+        "meaning": "The up-to-30-day claim uses a once-daily test routine.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Movement assistance",
+        "value": "SlideTech 2.0 independent wheel drive",
+        "meaning": "Try both forward and backward steering.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Steering range",
+        "value": "70° combined",
+        "meaning": "35° to each side in the manufacturer specification.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Dock heating claim",
+        "value": "95°C at the air duct",
+        "meaning": "Not a measured floor temperature or a 95°C water guarantee.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Fast drying",
+        "value": "5-minute mode",
+        "meaning": "A manufacturer cycle claim; inspect drying after dirty jobs.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Body dimensions",
+        "value": "263 × 242 × 1,104 mm",
+        "meaning": "Measure the exact base model.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      },
+      {
+        "label": "Docked dimensions",
+        "value": "316 × 350 × 1,163 mm",
+        "meaning": "Leave room to remove tanks and clean the station.",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Regional retail",
+        "amount": "Not verified",
+        "source": "https://global.roborock.com/pages/roborock-f25-pro-turbo",
+        "kind": "Availability check",
+        "date": "2026-09-12",
+        "note": "The cited global and IFA pages do not establish a local retail offer."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock F25 Pro Turbo",
+          "url": "https://global.roborock.com/pages/roborock-f25-pro-turbo",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock F25 ACE Pro",
+          "url": "https://global.roborock.com/pages/roborock-f25-ace-pro",
+          "market": "Global"
+        },
+        {
+          "name": "Dreame T16 Pro Heat",
+          "url": "https://global.dreametech.com/products/t16-pro-heat",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Primary treatment",
+          "values": [
+            "On-demand intensive scrubbing",
+            "Foam-assisted washing",
+            "Hot-water washing"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "25,000 Pa",
+            "25,000 Pa",
+            "30,000 Pa"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "60 min Eco",
+            "60 min Eco",
+            "70 min Eco / 22 min Hot Water"
+          ]
+        },
+        {
+          "label": "Low-clearance claim",
+          "values": [
+            "12.5 cm",
+            "12.5 cm",
+            "9.85 cm"
+          ]
+        },
+        {
+          "label": "Main buying distinction",
+          "values": [
+            "Control extra treatment at a patch",
+            "Foam delivery for residue",
+            "Heated cleaning and removable battery"
+          ]
+        }
+      ],
+      "takeaway": "Choose the treatment method that fits the floor and residue. Eco runtime, heating figures and suction tests describe different aspects of the machine."
+    },
+    "resources": [
+      {
+        "label": "Exact-model features and footnotes",
+        "url": "https://global.roborock.com/pages/roborock-f25-pro-turbo",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Roborock IFA 2026 introduction",
+        "url": "https://au.roborock.com/pages/ifa-2026",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · F25 ACE Pro",
+        "url": "https://global.roborock.com/pages/roborock-f25-ace-pro",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dyson-v10-konical": {
+    "verdict": "A relevant dry-cleaning option if the conical head and handheld tools fit the home. Evaluate the base vacuum on its own merits until a local Auto-empty Dok package is actually available.",
+    "notFor": "Wet spills, automatic room cleaning or a purchase dependent on an unconfirmed auto-empty bundle.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Dry cordless stick and handheld vacuum",
+        "meaning": "Not a wet floor washer or carpet extractor.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Cleaner head",
+        "value": "All Floor Cones dual-conical head",
+        "meaning": "Manufacturer design for moving hair along tapered brush bars.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Suction claim",
+        "value": "150 AW maximum",
+        "meaning": "Air-watt test in Boost; not directly comparable with Pa claims.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 60 minutes in Eco handheld use",
+        "meaning": "Powered floor tools and higher modes change endurance.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Operating modes",
+        "value": "Eco, Medium and MAX",
+        "meaning": "Select the mode appropriate to debris and runtime needs.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Power control",
+        "value": "Single-button operation",
+        "meaning": "No continuous trigger hold required.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Battery",
+        "value": "Seven-cell replaceable battery",
+        "meaning": "Confirm local replacement part and compatibility.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours",
+        "meaning": "Depends on charge state and operating conditions.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Bin capacity",
+        "value": "0.23 US gallon",
+        "meaning": "Published US retail specification.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Published retail weight",
+        "value": "6.01 lb",
+        "meaning": "Current retail table differs from the launch article’s 5.3 lb.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Published dimensions",
+        "value": "45.66 × 9.84 × 8.26 in",
+        "meaning": "US retail length × width × height labels.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Dust separation",
+        "value": "15 Root Cyclone cyclones",
+        "meaning": "A design feature, not a measured cleaning result.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Filtration",
+        "value": "Whole-machine HEPA filtration",
+        "meaning": "The listing uses inconsistent capture percentages; no percentage adopted here.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Hard-floor illumination",
+        "value": "Illuminated dust detection",
+        "meaning": "Visibility varies with surface, debris and room lighting.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Base package tools",
+        "value": "Crevice tool and mini motorized tool",
+        "meaning": "Selected US package also lists charger and Wall Dok.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      },
+      {
+        "label": "Auto-empty station",
+        "value": "Optional Auto-empty Dok",
+        "meaning": "US information still says coming soon; not part of the base offer.",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 399.99",
+        "source": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Base black/copper vacuum with Wall Dok; Auto-empty Dok is a separate purchase/status check."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dyson V10 Konical",
+          "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame Z30 Pro Aqua-A",
+          "url": "https://global.dreametech.com/products/z30-pro-aqua-a",
+          "market": "Global"
+        },
+        {
+          "name": "Dyson PencilWash",
+          "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Primary role",
+          "values": [
+            "Dry stick and handheld vacuum",
+            "Dry vacuum with separate wet-cleaning head",
+            "Dedicated wet floor washer"
+          ]
+        },
+        {
+          "label": "Above-floor dry tools",
+          "values": [
+            "Yes, selected base package",
+            "Yes, confirm regional tools",
+            "Not its intended role"
+          ]
+        },
+        {
+          "label": "Wet-cleaning architecture",
+          "values": [
+            "None",
+            "Interchangeable AquaCycle head",
+            "Wet roller and onboard tanks"
+          ]
+        },
+        {
+          "label": "Storage / care",
+          "values": [
+            "Wall Dok; optional auto-empty unit separate",
+            "Charging and wet-head care setup",
+            "Charging stand and manual roller care"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "60 min Eco handheld",
+            "90 min with crevice tool",
+            "30 min manufacturer maximum"
+          ]
+        }
+      ],
+      "takeaway": "These products solve different tasks. A dry vacuum with optional bin emptying is not equivalent to a wet washer or a dry-and-wet head system."
+    },
+    "resources": [
+      {
+        "label": "US exact base-vacuum offer",
+        "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "March 2026 Konical introduction",
+        "url": "https://www.dyson.com/discover/news/latest/indroducing-dyson-konical",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "US Konical range and station status",
+        "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "eufy-omni-c28": {
+    "verdict": "A useful shortlist option for roller-mop automation when the UK price, floor clearance and station routine fit. Assess navigation in the actual home rather than borrowing flagship capabilities.",
+    "notFor": "Automatic movement between floors, an assumed RGB-camera system or a 216-minute combined wet-and-dry session.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Robot vacuum with HydroJet roller mop",
+        "meaning": "Intended for routine floor care with a station.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Suction claim",
+        "value": "15,000 Pa",
+        "meaning": "Maximum manufacturer test figure; not a comparative cleaning score.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Roller speed",
+        "value": "270 rpm",
+        "meaning": "Manufacturer roller-rotation specification.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Mop contact load",
+        "value": "1 kg downward-load claim",
+        "meaning": "A mop-loading claim, not the robot’s total weight.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Roller rinsing",
+        "value": "24 water ports",
+        "meaning": "Irish C28 information describes continuous roller rinsing.",
+        "source": "https://www.eufy.com/ie/robot-vacuum-cleaner-c28"
+      },
+      {
+        "label": "Main brush",
+        "value": "DuoSpiral anti-tangle design",
+        "meaning": "Check brush ends and intake after hair-heavy jobs.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Navigation / obstacle sensing",
+        "value": "LDS and laser-line sensing",
+        "meaning": "Do not assume a flagship RGB-camera system.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Station functions",
+        "value": "Empty, refill, wash, hot-air dry and collect used water",
+        "meaning": "Station tanks and dust collection still need care.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Station dust bag",
+        "value": "3 L",
+        "meaning": "Emptying interval varies with debris load.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Station clean-water tank",
+        "value": "2.2 L",
+        "meaning": "Check refill frequency against the home’s actual route.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Robot height",
+        "value": "4.35 in",
+        "meaning": "Allow additional space below furniture.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Obstacle threshold claim",
+        "value": "0.79 in",
+        "meaning": "Shape, grip and approach angle affect crossing.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Vacuum-and-mop runtime",
+        "value": "Up to 123 minutes in Standard",
+        "meaning": "Different from vacuum-only endurance.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Vacuum-only runtime",
+        "value": "Up to 216 minutes in Standard",
+        "meaning": "Does not describe a full vacuum-and-mop session.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "17.20 × 13.88 × 16.93 in",
+        "meaning": "Check service access as well as the footprint.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      },
+      {
+        "label": "Cleaning solution setup",
+        "value": "Official FAQ describes 1:200 manual premixing",
+        "meaning": "Do not assume automatic detergent dosing.",
+        "source": "https://www.eufy.com/uk/products/t211a210"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom",
+        "amount": "GBP 649",
+        "source": "https://www.eufy.com/uk/products/t211a210",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official C28 listing; confirm the selected regional package and delivery."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "eufy Robot Vacuum Omni C28",
+          "url": "https://www.eufy.com/uk/products/t211a210",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "ECOVACS DEEBOT T80S OMNI",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni",
+          "market": "United States"
+        },
+        {
+          "name": "Roborock Qrevo Curv 2 Flow",
+          "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping mechanism",
+          "values": [
+            "HydroJet roller",
+            "OZMO Roller 2.0",
+            "SpiraFlow roller"
+          ]
+        },
+        {
+          "label": "Roller speed claim",
+          "values": [
+            "270 rpm",
+            "220 rpm",
+            "220 rpm"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "15,000 Pa",
+            "24,800 Pa",
+            "20,000 Pa"
+          ]
+        },
+        {
+          "label": "Published height",
+          "values": [
+            "4.35 in",
+            "3.9 in",
+            "119 mm"
+          ]
+        },
+        {
+          "label": "Sensing approach",
+          "values": [
+            "LDS and laser-line sensing",
+            "Mini-ToF navigation with AIVI / RGB sensing",
+            "Reactive AI camera-based obstacle sensing"
+          ]
+        }
+      ],
+      "takeaway": "Compare the route, roller result and station care. Mixed regional prices and maximum pressure figures do not establish which robot is the better purchase in a particular country."
+    },
+    "resources": [
+      {
+        "label": "UK C28 specifications, offer and FAQ",
+        "url": "https://www.eufy.com/uk/products/t211a210",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Irish C28 roller and sensing information",
+        "url": "https://www.eufy.com/ie/robot-vacuum-cleaner-c28",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · DEEBOT T80S OMNI",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "tineco-floor-one-station-s9-scientist-pro": {
+    "verdict": "Shortlist when station refilling solves a recurring inconvenience and space is available for the complete setup. Compare onboard capacity, dirty-water handling and real maneuvering effort before paying for the larger station.",
+    "notFor": "Autonomous floor cleaning, a steam-specific requirement or a guaranteed promotional checkout price.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Manually guided washer with Smart Refresh station",
+        "meaning": "The station does not make the washer an autonomous robot.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Station clean-water reservoir",
+        "value": "5 L",
+        "meaning": "Separate from the water carried in the washer.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Onboard clean-water tank",
+        "value": "0.85 L",
+        "meaning": "Limits water carried away from the station.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Used-water tank",
+        "value": "0.72 L",
+        "meaning": "Owner emptying remains necessary.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Suction claim",
+        "value": "25,000 Pa",
+        "meaning": "Official FAQ maximum; not a finished-floor score.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Spot treatment",
+        "value": "HydroBurst water jet",
+        "meaning": "Do not describe it as steam.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Water refilling",
+        "value": "Automatic heated-water refill at the station",
+        "meaning": "Return the washer to the station; no remote refill.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Solution handling",
+        "value": "Automatic dispensing",
+        "meaning": "Confirm approved fluid and exact local instructions.",
+        "source": "https://www.prnewswire.com/news-releases/tineco-shows-how-the-future-cleans-itself-at-ifa-2026-with-four-new-floor-care-products-302860346.html"
+      },
+      {
+        "label": "Dirt response",
+        "value": "iLoop adjusts suction and water flow",
+        "meaning": "Automatic adjustment does not replace inspecting the result.",
+        "source": "https://www.prnewswire.com/news-releases/tineco-shows-how-the-future-cleans-itself-at-ifa-2026-with-four-new-floor-care-products-302860346.html"
+      },
+      {
+        "label": "Scraper control",
+        "value": "StreakFree Scraper",
+        "meaning": "Raises on forward travel and presses during backward travel.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Hair management",
+        "value": "DualBlock anti-tangle system",
+        "meaning": "Check accessible collection paths after use.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Low-furniture design",
+        "value": "180° lay-flat; 4.33 in profile",
+        "meaning": "Allow a margin beyond the published clearance.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 100 minutes",
+        "meaning": "Do not assume every mode or heated session reaches the maximum.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Movement assistance",
+        "value": "SmoothDrive",
+        "meaning": "Assess steering and lifting as separate tasks.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "SilentDry noise claim",
+        "value": "40 dBA or lower",
+        "meaning": "Station drying mode, not noise while washing the floor.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "FlashDry heating claim",
+        "value": "230°F heated-air claim",
+        "meaning": "Drying-system air; not floor-contact water or steam temperature.",
+        "source": "https://www.prnewswire.com/news-releases/tineco-shows-how-the-future-cleans-itself-at-ifa-2026-with-four-new-floor-care-products-302860346.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 1,199",
+        "source": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Displayed base offer. A USD 999 checkout promotion was advertised, but final eligibility and checkout price were not verified."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Tineco FLOOR ONE STATION S9 Scientist Pro",
+          "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame T16 Pro Heat",
+          "url": "https://global.dreametech.com/products/t16-pro-heat",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock F25 ACE Pro",
+          "url": "https://global.roborock.com/pages/roborock-f25-ace-pro",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Primary treatment",
+          "values": [
+            "HydroBurst water jet",
+            "Hot-water washing",
+            "Foam-assisted washing"
+          ]
+        },
+        {
+          "label": "Refill architecture",
+          "values": [
+            "5 L station reservoir; 0.85 L onboard",
+            "900 ml onboard clean-water tank",
+            "1 L onboard clean-water tank"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "25,000 Pa",
+            "30,000 Pa",
+            "25,000 Pa"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "100 min maximum; confirm mode",
+            "70 min Eco / 22 min Hot Water",
+            "60 min Eco"
+          ]
+        },
+        {
+          "label": "Low-clearance claim",
+          "values": [
+            "4.33 in",
+            "9.85 cm",
+            "12.5 cm"
+          ]
+        }
+      ],
+      "takeaway": "The large reservoir changes the refill routine, not the amount of water carried on the floor. Compare complete station care and mode-specific endurance alongside the cleaning method."
+    },
+    "resources": [
+      {
+        "label": "US exact-model store and FAQ",
+        "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "IFA 2026 manufacturer launch",
+        "url": "https://www.prnewswire.com/news-releases/tineco-shows-how-the-future-cleans-itself-at-ifa-2026-with-four-new-floor-care-products-302860346.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "US model feature reference",
+        "url": "https://us.tineco.com/products/floor-one-station-s9-scientist-pro.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "ecovacs-deebot-t80s-omni": {
+    "verdict": "A relevant roller-mop option when the local offer, furniture clearance and station routine fit. Verify the ambiguous regional table entries through the manual before relying on them.",
+    "notFor": "A guarantee of zero owner maintenance, automatic stair travel or unverified station tank and electrical specifications.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Robot vacuum with OZMO Roller 2.0",
+        "meaning": "Routine floor cleaning with an OMNI station.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Suction claim",
+        "value": "24,800 Pa",
+        "meaning": "Vacuum pressure claim; separate from mop contact pressure.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Roller rotation",
+        "value": "220 rpm",
+        "meaning": "Manufacturer operating specification.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Mop contact pressure",
+        "value": "3,800 Pa",
+        "meaning": "Different test and meaning from suction pressure.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Edge system",
+        "value": "TruEdge 3.0; up to 1.5 cm extension",
+        "meaning": "Test corners and furniture legs in addition to straight edges.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Carpet response",
+        "value": "Triple-lift brush and roller arrangement",
+        "meaning": "Check the supported carpet routines and local manual.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Hair management",
+        "value": "ZeroTangle 3.0",
+        "meaning": "Inspect brush ends and collection paths after heavy shedding.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Navigation",
+        "value": "Mini-ToF navigation",
+        "meaning": "Separate from obstacle-recognition software.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Obstacle sensing",
+        "value": "AIVI 3.0 with RGB and structured-light sensing",
+        "meaning": "Recognition remains dependent on the object and environment.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Published robot height",
+        "value": "3.9 in",
+        "meaning": "Use the exact regional specification and allow clearance margin.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Threshold claim",
+        "value": "0.8 in",
+        "meaning": "Crossing depends on the shape and approach.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Robot dust bin",
+        "value": "0.22 L",
+        "meaning": "Auto-emptying does not remove the need to inspect the bin.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Onboard water tank",
+        "value": "110 ml",
+        "meaning": "Different from the station reservoirs.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Station washing claim",
+        "value": "75°C",
+        "meaning": "Manufacturer station-washing figure, not floor-contact temperature.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Station drying claim",
+        "value": "63°C / 145.4°F; 2-hour cycle",
+        "meaning": "A station process; actual drying depends on conditions.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      },
+      {
+        "label": "Station dust bag",
+        "value": "3 L",
+        "meaning": "Replace according to use and the supplied instructions.",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 649.99",
+        "source": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Base T80S OMNI offer; accessory bundles may differ."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "ECOVACS DEEBOT T80S OMNI",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni",
+          "market": "United States"
+        },
+        {
+          "name": "eufy Robot Vacuum Omni C28",
+          "url": "https://www.eufy.com/uk/products/t211a210",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Roborock Qrevo Curv 2 Flow",
+          "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mop system",
+          "values": [
+            "OZMO Roller 2.0",
+            "HydroJet roller",
+            "SpiraFlow roller"
+          ]
+        },
+        {
+          "label": "Roller speed claim",
+          "values": [
+            "220 rpm",
+            "270 rpm",
+            "220 rpm"
+          ]
+        },
+        {
+          "label": "Suction claim",
+          "values": [
+            "24,800 Pa",
+            "15,000 Pa",
+            "20,000 Pa"
+          ]
+        },
+        {
+          "label": "Published height",
+          "values": [
+            "3.9 in",
+            "4.35 in",
+            "119 mm"
+          ]
+        },
+        {
+          "label": "Obstacle sensing",
+          "values": [
+            "AIVI / RGB and structured light",
+            "LDS and laser-line sensing",
+            "Reactive AI / RGB and structured light"
+          ]
+        }
+      ],
+      "takeaway": "Low furniture and obstacle handling can matter more than the largest suction figure. Compare regional offers only after checking station care and a representative cleaning route."
+    },
+    "resources": [
+      {
+        "label": "US T80S OMNI offer and specifications",
+        "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "February 2026 manufacturer announcement",
+        "url": "https://www.presseportal.de/pm/114369/6214114",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Official US model support",
+        "url": "https://help.ecovacs.com/us/support/deebot-t80s-omni",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "shark-powerdetect-uv-reveal-rv3020xe": {
+    "verdict": "Consider it for a direct demonstration of stain detection and sonic scrubbing. Resolve the runtime discrepancy and check the complete station routine before choosing on a UV or cleaning-power headline.",
+    "notFor": "A verified UV floor-disinfection system, a guaranteed three-hour combined session or an assumed numerical obstacle-crossing limit.",
+    "specifications": [
+      {
+        "label": "Exact model code",
+        "value": "RV3020XE",
+        "meaning": "Keep the code on the quotation and supplied manual.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Cleaning format",
+        "value": "Robot vacuum and mop",
+        "meaning": "Automatic route cleaning with a care station.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Stain sensing",
+        "value": "UV illumination with RGB sensing",
+        "meaning": "Detects visible responses; not a UV-disinfection system.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Mopping system",
+        "value": "HyperSonic scrubbing",
+        "meaning": "Different mechanism from a continuously rinsed roller.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Scrubbing rate",
+        "value": "100 scrubs per minute",
+        "meaning": "Manufacturer claim; inspect the dried result.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Scrubbing boost claim",
+        "value": "7× compared with Shark RV2820ZE",
+        "meaning": "Specific manufacturer comparison, not a market-wide ranking.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Navigation",
+        "value": "NeuroNav AI with camera, lasers and sensors",
+        "meaning": "Test actual obstacle handling in the home.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Obstacle assistance",
+        "value": "NeverStuck Charged chassis movement",
+        "meaning": "No verified numerical crossing height adopted here.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Station functions",
+        "value": "Empty, refill, wash and heated drying",
+        "meaning": "ThermaCharged NeverTouch Pro station; manual care remains.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Runtime information",
+        "value": "Conflicting official figures: up to 3 h vs 2 h",
+        "meaning": "Higher claim uses bare-floor Eco conditions; table gives a different dry-floor figure.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours",
+        "meaning": "Confirm the current local manual.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Robot dust bin",
+        "value": "0.4 US quart",
+        "meaning": "Separate from station collection capacity.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Pre-motor filter",
+        "value": "Washable fabric filter",
+        "meaning": "Follow washing and complete-drying instructions.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "App",
+        "value": "SharkClean",
+        "meaning": "Scheduling and no-go areas described by the manufacturer.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "Voice support",
+        "value": "Amazon Alexa and Google Assistant",
+        "meaning": "Check account, device and regional compatibility.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      },
+      {
+        "label": "US warranty",
+        "value": "2-year limited warranty",
+        "meaning": "Review local coverage and exclusions before purchase.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 749.99",
+        "source": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Current RV3020XE listing snapshot; the March launch price was different."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Shark PowerDetect UV Reveal RV3020XE",
+          "url": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html",
+          "market": "United States"
+        },
+        {
+          "name": "eufy Robot Vacuum Omni C28",
+          "url": "https://www.eufy.com/uk/products/t211a210",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "ECOVACS DEEBOT T80S OMNI",
+          "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mopping approach",
+          "values": [
+            "HyperSonic scrubbing",
+            "HydroJet roller",
+            "OZMO Roller 2.0"
+          ]
+        },
+        {
+          "label": "Stain / obstacle sensing",
+          "values": [
+            "UV illumination plus RGB and other sensors",
+            "LDS and laser-line sensing",
+            "AIVI / RGB and structured light"
+          ]
+        },
+        {
+          "label": "Published motion claim",
+          "values": [
+            "100 scrubs/min",
+            "270 roller rpm",
+            "220 roller rpm"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "Conflicting 3 h / 2 h dry-floor claims",
+            "123 min combined Standard / 216 min vacuum Standard",
+            "Not verified in this comparison"
+          ]
+        },
+        {
+          "label": "Robot height",
+          "values": [
+            "Not verified with clear scope",
+            "4.35 in",
+            "3.9 in"
+          ]
+        }
+      ],
+      "takeaway": "Scrubs per minute and roller rpm describe different motions. Compare the finished floor and route completion, and resolve Shark’s runtime ambiguity before relying on the maximum."
+    },
+    "resources": [
+      {
+        "label": "US RV3020XE offer and footnotes",
+        "url": "https://www.sharkninja.com/shark-powerdetect-uv-reveal-2-in-1-vac-mop/RV3020XE.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "March 2026 manufacturer launch",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-PowerDetect-UV-Reveal--The-First-Robot-Vacuum--Mop-to-Use-UV-Technology-to-Detect-Invisible-Messes/default.aspx",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Comparison · Omni C28",
+        "url": "https://www.eufy.com/uk/products/t211a210",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }
