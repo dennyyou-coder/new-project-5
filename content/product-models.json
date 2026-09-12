@@ -3471,7 +3471,8 @@
     "related": [
       "dyson-v16-piston-animal",
       "dyson-v10-konical",
-      "narwal-v50-cube"
+      "narwal-v50-cube",
+      "miele-triflex-hx3-aqua"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -4443,7 +4444,9 @@
       "dreame-z30-pro-aqua-a",
       "dyson-v16-piston-animal",
       "narwal-v50",
-      "narwal-v50-cube"
+      "narwal-v50-cube",
+      "bosch-unlimited-9-bcs931wuc",
+      "miele-triflex-hx3"
     ],
     "announced": "2026-03-19",
     "verifiedAt": "2026-09-12",
@@ -6610,7 +6613,8 @@
     "related": [
       "narwal-v50",
       "dyson-v10-konical",
-      "dreame-z30-pro-aqua-a"
+      "dreame-z30-pro-aqua-a",
+      "bosch-unlimited-10-bbs104sbuc"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-12",
@@ -7044,5 +7048,441 @@
     "launchYear": 2026,
     "launchNote": "Introduced to the US audience in Tineco’s 1 January CES 2026 announcement; this guide uses the checked US S9 Master specification.",
     "launchSource": "https://www.newswire.ca/news-releases/tineco-debuts-modern-living-concept-and-latest-smart-cleaning-lineup-at-ces-2026-800909923.html"
+  },
+  {
+    "slug": "bosch-unlimited-9-bcs931wuc",
+    "name": "Bosch Unlimited 9 BCS931WUC",
+    "brand": "Bosch",
+    "brandSlug": "bosch-home-appliances",
+    "category": "Cordless vacuums",
+    "market": "United States · White package",
+    "summary": "Bosch’s entry US Unlimited 9 configuration combines MicroClean particle feedback, a dust-compression slider and a removable 3 Ah battery.",
+    "fit": "Mixed-floor homes wanting a conventional dry stick vacuum with sensor feedback and a straightforward accessory package.",
+    "caution": "The 60-minute maximum excludes the powered floor nozzle. This white package has neither the fast charger nor the Flex Tube.",
+    "facts": [
+      {
+        "label": "Particle feedback",
+        "value": "MicroClean Sensor and Ring",
+        "meaning": "Air-path particle feedback does not certify every part of a room as clean."
+      },
+      {
+        "label": "Included battery",
+        "value": "1 × 3 Ah lithium-ion",
+        "meaning": "One removable battery, not a two-battery runtime package."
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 60 min, Eco without electrical nozzle",
+        "meaning": "Not powered-floor-head runtime or Turbo endurance."
+      },
+      {
+        "label": "Fast charger supplied",
+        "value": "No",
+        "meaning": "Available separately; other Unlimited 9 packages may include one."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Unlimited 9 new for 2026?",
+        "answer": "Bosch introduced Unlimited 9 and 10 to North America on 5 January 2026. This entry covers the US BCS931WUC; it does not claim that the worldwide Unlimited family began in 2026."
+      },
+      {
+        "question": "Can it clean floors for a full 60 minutes?",
+        "answer": "The maximum is measured in Eco mode without an electrical nozzle. A motorised brush and higher power settings change consumption, so the figure is not a guaranteed whole-floor cleaning session."
+      },
+      {
+        "question": "Does BCS931WUC include fast charging?",
+        "answer": "No. The selected white package lists about three hours of standard charging. Other Unlimited 9 configurations have different chargers; compare the code and box contents."
+      },
+      {
+        "question": "Does it have a bendable Flex Tube?",
+        "answer": "The BCS931WUC specification lists a standard tube. The 90-degree Flex Tube belongs to the Unlimited 10 configuration compared here."
+      },
+      {
+        "question": "What does the blue MicroClean Ring mean?",
+        "answer": "It indicates the sensor’s assessment of particles passing through the cleaner. It does not establish that unvisited areas, every fibre or every surface are free of dirt."
+      },
+      {
+        "question": "Is every component covered for ten years?",
+        "answer": "No. The US sheet lists two years for the product and a separate ten-year motor warranty activated by registration. Read the applicable terms for exclusions and claims."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The US BCS931WUC page listed $499 on 12 September 2026. This price belongs to the White package; delivery and order availability require current confirmation."
+      }
+    ],
+    "articles": [
+      "who-owns-bosch-appliances-bsh-siemens-brands",
+      "dyson-fights-bosch-again"
+    ],
+    "related": [
+      "bosch-unlimited-10-bbs104sbuc",
+      "miele-triflex-hx3",
+      "dyson-v10-konical"
+    ],
+    "announced": "2026-01-05",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US BCS931WUC listing",
+        "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited9/BCS931WUC"
+      },
+      {
+        "label": "BCS931WUC package specification",
+        "url": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Unlimited 9 US use and care manual",
+        "url": "https://media3.bsh-group.com/Documents/8001366453_A.pdf"
+      },
+      {
+        "label": "North American launch, 5 January 2026",
+        "url": "https://www.bsh-group.com/us/en/press/press-releases/bosch-introduces-first-ever-premium-cordless-stick-vacuum-for-the-north-american-market-at-ces-2026/"
+      },
+      {
+        "label": "Unlimited 10 package comparison",
+        "url": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Triflex HX3 UK comparison",
+        "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      }
+    ],
+    "imageSource": "https://media3.bsh-group.com/Product_Shots/27063935_BCS931WUC_STP_def.webp",
+    "launchYear": 2026,
+    "launchNote": "North American debut announced 5 January 2026; the checked entry is the US BCS931WUC package, not a claim of a worldwide first launch.",
+    "launchSource": "https://www.bsh-group.com/us/en/press/press-releases/bosch-introduces-first-ever-premium-cordless-stick-vacuum-for-the-north-american-market-at-ces-2026/"
+  },
+  {
+    "slug": "bosch-unlimited-10-bbs104sbuc",
+    "name": "Bosch Unlimited 10 BBS104SBUC",
+    "brand": "Bosch",
+    "brandSlug": "bosch-home-appliances",
+    "category": "Cordless vacuums",
+    "market": "United States · Black package",
+    "summary": "A US Unlimited 10 package with a 90-degree Flex Tube, six cleaning modes, a removable 4 Ah battery and an included fast charger.",
+    "fit": "Mixed-floor homes where under-furniture reach, more mode control and quicker charging are worth paying for.",
+    "caution": "The 80-minute maximum is Eco without a powered nozzle. The $599 series entry price does not describe this $699 Black package.",
+    "facts": [
+      {
+        "label": "Tube",
+        "value": "90° bendable Flex Tube",
+        "meaning": "Designed to change the approach beneath furniture."
+      },
+      {
+        "label": "Display",
+        "value": "Multi-colour TFT",
+        "meaning": "Shows controls and remaining-runtime information."
+      },
+      {
+        "label": "Included battery",
+        "value": "1 × 4 Ah lithium-ion",
+        "meaning": "One battery; additional batteries are separate purchases."
+      },
+      {
+        "label": "Included fast charging",
+        "value": "About 65 minutes",
+        "meaning": "Time applies to the specified fast-charging arrangement."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does Unlimited 10 differ from Unlimited 9?",
+        "answer": "The checked BBS104SBUC adds the Flex Tube, TFT display, six modes, 4 Ah battery and fast charger. The BCS931WUC Unlimited 9 package has a straight tube, three modes and standard charging."
+      },
+      {
+        "question": "Does the Black package cost $599?",
+        "answer": "The US launch started Unlimited 10 pricing at $599, but the checked BBS104SBUC Black package is $699. Package-specific pricing is used here."
+      },
+      {
+        "question": "How is the 80-minute runtime tested?",
+        "answer": "Bosch specifies Eco mode without an electrical nozzle. Powered floor tools and stronger settings consume energy differently; do not treat it as Turbo runtime."
+      },
+      {
+        "question": "Does it charge in 65 minutes or four hours?",
+        "answer": "Both figures have different contexts: the included fast charger is rated around 65 minutes, while the standard arrangement is around four hours."
+      },
+      {
+        "question": "Is the Mini Power Nozzle included?",
+        "answer": "The checked US specification says no. It does include a separate Hard Floor Soft Brush and several non-powered detail tools; confirm the actual box contents."
+      },
+      {
+        "question": "Does HEPA filtration replace filter care?",
+        "answer": "No. Airflow and filtration still depend on correct assembly and maintenance. Follow the model manual and do not treat a filtration percentage as a promise of a medical benefit."
+      },
+      {
+        "question": "When was the US Unlimited 10 introduced?",
+        "answer": "Bosch announced the North American launch on 5 January 2026. This guide identifies the US BBS104SBUC configuration and does not merge it with older overseas models."
+      }
+    ],
+    "articles": [
+      "who-owns-bosch-appliances-bsh-siemens-brands",
+      "dyson-fights-bosch-again"
+    ],
+    "related": [
+      "bosch-unlimited-9-bcs931wuc",
+      "miele-triflex-hx3-aqua",
+      "narwal-v50-cube"
+    ],
+    "announced": "2026-01-05",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US BBS104SBUC listing",
+        "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BBS104SBUC"
+      },
+      {
+        "label": "BBS104SBUC package specification",
+        "url": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Unlimited 10 US use and care manual",
+        "url": "https://media3.bsh-group.com/Documents/8001366454_A.pdf"
+      },
+      {
+        "label": "North American launch, 5 January 2026",
+        "url": "https://www.bsh-group.com/us/en/press/press-releases/bosch-introduces-first-ever-premium-cordless-stick-vacuum-for-the-north-american-market-at-ces-2026/"
+      },
+      {
+        "label": "Unlimited 9 package comparison",
+        "url": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Triflex HX3 UK comparison",
+        "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      }
+    ],
+    "imageSource": "https://media3.bsh-group.com/Product_Shots/27064069_BBS104SBUC_STP_def.webp",
+    "launchYear": 2026,
+    "launchNote": "North American debut announced 5 January 2026; specifications here identify the US BBS104SBUC Black package.",
+    "launchSource": "https://www.bsh-group.com/us/en/press/press-releases/bosch-introduces-first-ever-premium-cordless-stick-vacuum-for-the-north-american-market-at-ces-2026/"
+  },
+  {
+    "slug": "miele-triflex-hx3",
+    "name": "Miele Triflex HX3",
+    "brand": "Miele",
+    "brandSlug": "miele",
+    "category": "Cordless vacuums",
+    "market": "United Kingdom · Brilliant White base package",
+    "summary": "Miele’s 2026 retail-range Triflex HX3 lets the PowerUnit move between three layouts, with a removable battery and separately stated powered-tool runtime.",
+    "fit": "Homes wanting one dry cordless cleaner that can change its balance for floor work, reaching and handheld jobs.",
+    "caution": "The 70-minute headline is PowerUnit-solo runtime. The base UK box does not include AquaTwister, and an older specification sheet differs from the current listing.",
+    "facts": [
+      {
+        "label": "Handling layouts",
+        "value": "Comfort, Reach and Compact",
+        "meaning": "Reposition the PowerUnit for different tasks."
+      },
+      {
+        "label": "Battery capacity",
+        "value": "2,500 mAh",
+        "meaning": "One removable lithium-ion battery in this checked package."
+      },
+      {
+        "label": "Powered-tool runtime on Low",
+        "value": "Up to 38 min",
+        "meaning": "A more relevant published condition for powered-accessory comparisons."
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours / 240 min",
+        "meaning": "Allow for the listed charging cycle when planning repeated use."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Was Triflex HX3 first announced in 2026?",
+        "answer": "No. Miele previewed the range in July 2025. Its 23 March 2026 retail announcement scheduled the rollout for May; this guide covers a current UK package in that 2026 retail range."
+      },
+      {
+        "question": "Does the base HX3 mop floors?",
+        "answer": "Not with its supplied dry-cleaning tools. The HX3-compatible AquaTwister is a separate upgrade. That attachment mops without suction and does not collect dirty water."
+      },
+      {
+        "question": "Will it run for 70 minutes with the floor brush?",
+        "answer": "The 70-minute figure is Low operation with the PowerUnit alone. Miele separately lists up to 38 minutes on Low and 15 minutes on High with powered accessories."
+      },
+      {
+        "question": "What changes between the three layouts?",
+        "answer": "The PowerUnit can sit lower for Comfort floor work, higher for Reach use, or form a Compact handheld cleaner. Try the balance and attachment changes with the intended tasks."
+      },
+      {
+        "question": "Which head and bin capacity are correct?",
+        "answer": "The current UK page lists SEB 431 and 0.5 litres, while an earlier official sheet lists SEB 430 and 0.3 litres. This guide flags the mismatch and recommends confirming the carton and capacity with Miele."
+      },
+      {
+        "question": "Does the lifetime filter need cleaning?",
+        "answer": "Yes. The manual calls for fine-filter and pre-filter cleaning at least every three months. Use the specified dry procedure; do not wash the fine filter."
+      },
+      {
+        "question": "What does the checked UK package cost?",
+        "answer": "The Brilliant White 12878400 listing was £649 on 12 September 2026. The Aqua attachment is not included in this base-package price."
+      }
+    ],
+    "articles": [
+      "who-owns-miele-family-manufacturing-network",
+      "miele-duoflex-hx2-floor-washer"
+    ],
+    "related": [
+      "miele-triflex-hx3-aqua",
+      "bosch-unlimited-9-bcs931wuc",
+      "dyson-v10-konical"
+    ],
+    "announced": "2026-03-23",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Current UK Triflex HX3 configuration",
+        "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Triflex HX3 operating instructions",
+        "url": "https://media.miele.com/downloads/db/fe/01_C7F1383839DC1FE183973C449069DBFE.pdf"
+      },
+      {
+        "label": "UK Triflex HX3 range and wet attachment",
+        "url": "https://www.miele.co.uk/cs/vacuum-cleaners/triflex-hx3-6530"
+      },
+      {
+        "label": "2026 retail announcement, 23 March",
+        "url": "https://www.miele.de/de/m/miele-startet-mit-dem-triflex-hx3-plus-aqua-in-die-nassreinigung-8187.htm"
+      },
+      {
+        "label": "Original preview, 1 July 2025",
+        "url": "https://www.miele.de/en/m/the-wash-cycle-for-spotlessly-clean-floors-miele-launches-wet-cleaning-with-the-triflex-hx3-plus-aqua-7820.htm"
+      },
+      {
+        "label": "Earlier UK base-model specification",
+        "url": "https://media.miele.com/downloads/n-/gb/FS_12878400_GBE_GB-en-GB.pdf"
+      },
+      {
+        "label": "Current UK Aqua configuration",
+        "url": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "AquaTwister compatibility",
+        "url": "https://www.miele.co.uk/product/12977320/triflex-aquatwister-hx-at-10"
+      },
+      {
+        "label": "Bosch US comparison specification",
+        "url": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      }
+    ],
+    "imageSource": "https://media.miele.com/dam/ef808679-84ba-4015-be96-b3b101599b7c/20000223598_HighresDigitalRGB.png",
+    "launchYear": 2026,
+    "launchNote": "Previewed in July 2025; Miele’s 23 March 2026 retail announcement scheduled the range for May. This entry documents the current UK base package, not a first-ever 2026 preview.",
+    "launchSource": "https://www.miele.de/de/m/miele-startet-mit-dem-triflex-hx3-plus-aqua-in-die-nassreinigung-8187.htm"
+  },
+  {
+    "slug": "miele-triflex-hx3-aqua",
+    "name": "Miele Triflex HX3 Aqua",
+    "brand": "Miele",
+    "brandSlug": "miele",
+    "category": "Cordless vacuums",
+    "market": "United Kingdom · Obsidian Black Aqua package",
+    "summary": "The UK HX3 Aqua package combines a reconfigurable dry cordless vacuum with the AquaTwister rotating-pad attachment for a separate mopping step.",
+    "fit": "Homes wanting dry vacuuming and pad mopping from one compatible platform, with space to change and maintain the attachments.",
+    "caution": "AquaTwister works without suction: vacuum debris first, then mop. It does not extract spills or recover dirty water into a separate tank.",
+    "facts": [
+      {
+        "label": "Wet attachment supplied",
+        "value": "AquaTwister HX-AT 10",
+        "meaning": "Separate attachment for compatible hard-floor mopping."
+      },
+      {
+        "label": "Mopping action",
+        "value": "Two rotating pads",
+        "meaning": "Agitation and pad contact, not liquid extraction."
+      },
+      {
+        "label": "Liquid suction during mopping",
+        "value": "None",
+        "meaning": "AquaTwister mops without suction; do not vacuum liquids."
+      },
+      {
+        "label": "Powered-accessory dry runtime",
+        "value": "Up to 38 min Low / 15 min High",
+        "meaning": "These published figures describe vacuum operation."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does Triflex HX3 Aqua vacuum and mop simultaneously?",
+        "answer": "No. Miele’s manual states that AquaTwister mops without suction. Remove debris with the vacuum first, then change to the wet attachment."
+      },
+      {
+        "question": "Can it suck up spilled water or dirty mop water?",
+        "answer": "No. The instructions prohibit vacuuming liquids, and the wet head has no dirty-water extraction function. It should not be compared as though it were a suction floor washer."
+      },
+      {
+        "question": "Is the tank 300 ml or 280 ml?",
+        "answer": "The marketed nominal capacity is 300 ml. The manual gives a filling limit of 260 ml water plus 20 ml specified cleaning agent; follow the filling instructions rather than filling to nominal capacity."
+      },
+      {
+        "question": "How is moisture controlled?",
+        "answer": "AquaTwister offers water levels 0, 1 and 2 plus a temporary 30-second wetting boost. Choose a setting compatible with the floor manufacturer’s instructions."
+      },
+      {
+        "question": "Is the 70-minute claim for mopping?",
+        "answer": "No. It is a dry-vacuum Low-mode figure for the PowerUnit alone. Miele separately lists 38 minutes Low and 15 minutes High with powered accessories; this guide does not assign those numbers to wet-mopping endurance."
+      },
+      {
+        "question": "How are the pads and filter maintained?",
+        "answer": "Remove and wash the pads according to their care label, and empty and clean the water container after mopping. The fine filter needs dry care; it must not be washed along with the wet accessories."
+      },
+      {
+        "question": "When did this range arrive and what price was checked?",
+        "answer": "Miele previewed HX3 in 2025 and issued a March 2026 retail announcement scheduling May availability. The current UK Obsidian Black Aqua package was £789 when checked on 12 September 2026."
+      }
+    ],
+    "articles": [
+      "who-owns-miele-family-manufacturing-network",
+      "miele-duoflex-hx2-floor-washer"
+    ],
+    "related": [
+      "miele-triflex-hx3",
+      "dreame-z30-pro-aqua-a",
+      "bosch-unlimited-10-bbs104sbuc"
+    ],
+    "announced": "2026-03-23",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Current UK HX3 Aqua configuration",
+        "url": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Triflex HX3 and AquaTwister operating instructions",
+        "url": "https://media.miele.com/downloads/db/fe/01_C7F1383839DC1FE183973C449069DBFE.pdf"
+      },
+      {
+        "label": "UK HX3 range and AquaTwister features",
+        "url": "https://www.miele.co.uk/cs/vacuum-cleaners/triflex-hx3-6530"
+      },
+      {
+        "label": "2026 retail announcement, 23 March",
+        "url": "https://www.miele.de/de/m/miele-startet-mit-dem-triflex-hx3-plus-aqua-in-die-nassreinigung-8187.htm"
+      },
+      {
+        "label": "Original preview, 1 July 2025",
+        "url": "https://www.miele.de/en/m/the-wash-cycle-for-spotlessly-clean-floors-miele-launches-wet-cleaning-with-the-triflex-hx3-plus-aqua-7820.htm"
+      },
+      {
+        "label": "AquaTwister compatibility and accessories",
+        "url": "https://www.miele.co.uk/product/12977320/triflex-aquatwister-hx-at-10"
+      },
+      {
+        "label": "Base HX3 UK comparison",
+        "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Bosch US comparison specification",
+        "url": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      }
+    ],
+    "imageSource": "https://media.miele.com/dam/98fca885-1fad-49f8-bc20-b3b101598c80/20000223602_HighresDigitalRGB.png",
+    "launchYear": 2026,
+    "launchNote": "Previewed in July 2025; Miele’s 23 March 2026 retail announcement scheduled the range for May. This entry covers the current UK Aqua package in the 2026 retail rollout.",
+    "launchSource": "https://www.miele.de/de/m/miele-startet-mit-dem-triflex-hx3-plus-aqua-in-die-nassreinigung-8187.htm"
   }
 ]

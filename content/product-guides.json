@@ -12981,5 +12981,769 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "bosch-unlimited-9-bcs931wuc": {
+    "verdict": "BCS931WUC is a useful baseline for evaluating Bosch’s sensor-led dry cleaning system. Its lower entry price comes with a simpler tube and charger, so the package should fit the home before accessories are added.",
+    "notFor": "Buyers who need an included fast charger, bendable tube, automatic dust-emptying station or liquid pickup.",
+    "specifications": [
+      {
+        "label": "Exact configuration",
+        "value": "BCS931WUC · White",
+        "meaning": "US package identity; accessories differ across Unlimited 9 offers.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Standard cleaning modes",
+        "value": "Auto, Turbo and Eco",
+        "meaning": "Select the mode around the floor and cleaning load.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Particle feedback",
+        "value": "MicroClean Sensor and Ring",
+        "meaning": "Air-path particle feedback does not certify every part of a room as clean.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Display",
+        "value": "LED",
+        "meaning": "Distinct from the Unlimited 10 multi-colour TFT interface.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Powered floor head",
+        "value": "MicroClean Brush with LED lights",
+        "meaning": "For dry pickup on compatible floors.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Tube",
+        "value": "Standard straight tube",
+        "meaning": "Does not include the Unlimited 10 Flex Tube.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Included battery",
+        "value": "1 × 3 Ah lithium-ion",
+        "meaning": "One removable battery, not a two-battery runtime package.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Battery voltage",
+        "value": "18 V",
+        "meaning": "Use only packs and chargers approved for the regional model.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 60 min, Eco without electrical nozzle",
+        "meaning": "Not powered-floor-head runtime or Turbo endurance.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 3 hours",
+        "meaning": "Standard charging arrangement in the selected package.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Fast charger supplied",
+        "value": "No",
+        "meaning": "Available separately; other Unlimited 9 packages may include one.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Dust handling",
+        "value": "Compression Slider",
+        "meaning": "Compacts debris; dust removal and filter care remain manual.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Filtration",
+        "value": "HEPA",
+        "meaning": "Manufacturer-tested filtration does not promise medical outcomes.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Included detail tools",
+        "value": "Crevice nozzle, furniture brush and XXL upholstery brush",
+        "meaning": "No mini powered nozzle or separate hard-floor soft brush in this box.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Storage",
+        "value": "Wall-mount dock and accessories rail",
+        "meaning": "Check installation space and access to power.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "US warranty scope",
+        "value": "2-year product / 10-year motor with registration",
+        "meaning": "Motor coverage is separate from the whole-product warranty.",
+        "source": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · BCS931WUC",
+        "amount": "USD 499.00",
+        "source": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited9/BCS931WUC",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official White-package listing checked 12 September 2026. Confirm delivery and exact included tools before ordering."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Bosch Unlimited 9 BCS931WUC",
+          "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited9/BCS931WUC",
+          "market": "United States"
+        },
+        {
+          "name": "Bosch Unlimited 10 BBS104SBUC",
+          "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BBS104SBUC",
+          "market": "United States"
+        },
+        {
+          "name": "Miele Triflex HX3",
+          "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white",
+          "market": "United Kingdom"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Battery in checked package",
+          "values": [
+            "1 × 3 Ah / 18 V",
+            "1 × 4 Ah / 18 V",
+            "1 × 2,500 mAh / 25.2 V"
+          ]
+        },
+        {
+          "label": "Maximum-runtime condition",
+          "values": [
+            "60 min Eco, no powered nozzle",
+            "80 min Eco, no powered nozzle",
+            "70 min Low, PowerUnit solo"
+          ]
+        },
+        {
+          "label": "Tube and handling",
+          "values": [
+            "Straight tube",
+            "90° Flex Tube",
+            "Repositionable PowerUnit"
+          ]
+        },
+        {
+          "label": "Charging arrangement",
+          "values": [
+            "Standard charger, about 3 h",
+            "Fast charger about 65 min; standard about 4 h",
+            "About 4 h"
+          ]
+        },
+        {
+          "label": "Included powered floor tool",
+          "values": [
+            "MicroClean multi-floor brush",
+            "MicroClean plus hard-floor soft brush",
+            "MultiFloor XXL; no AquaTwister in base box"
+          ]
+        }
+      ],
+      "takeaway": "Runtime maxima use low-power, non-powered-tool conditions. Compare the supplied charger, floor tools and reach as well as the number of minutes."
+    },
+    "resources": [
+      {
+        "label": "US BCS931WUC listing",
+        "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited9/BCS931WUC",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "BCS931WUC package specification",
+        "url": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Unlimited 9 US use and care manual",
+        "url": "https://media3.bsh-group.com/Documents/8001366453_A.pdf",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "bosch-unlimited-10-bbs104sbuc": {
+    "verdict": "BBS104SBUC is worth comparing when its bendable tube and included fast charger address specific inconveniences. Evaluate those benefits against the package price, rather than choosing solely for the 80-minute headline.",
+    "notFor": "Buyers expecting maximum-power endurance of 80 minutes, an included motorised upholstery head or a self-emptying dock.",
+    "specifications": [
+      {
+        "label": "Exact configuration",
+        "value": "BBS104SBUC · Black",
+        "meaning": "Keep this package separate from BCS1041TUC and other regional variants.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Tube",
+        "value": "90° bendable Flex Tube",
+        "meaning": "Designed to change the approach beneath furniture.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Standard modes",
+        "value": "Auto, Turbo and Eco",
+        "meaning": "Each mode changes the cleaning and energy-use balance.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Additional modes",
+        "value": "Silent, Car and Delicate Carpets",
+        "meaning": "Confirm the floor manufacturer’s care instructions for sensitive rugs.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Display",
+        "value": "Multi-colour TFT",
+        "meaning": "Shows controls and remaining-runtime information.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Particle feedback",
+        "value": "MicroClean Sensor and Ring",
+        "meaning": "Describes the particles detected in the cleaner’s air path.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Included battery",
+        "value": "1 × 4 Ah lithium-ion",
+        "meaning": "One battery; additional batteries are separate purchases.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Battery voltage",
+        "value": "18 V",
+        "meaning": "Use the exact compatible regional pack and charger.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 80 min, Eco without electrical nozzle",
+        "meaning": "Does not establish 80 minutes of powered carpet cleaning.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Included fast charging",
+        "value": "About 65 minutes",
+        "meaning": "Time applies to the specified fast-charging arrangement.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Standard charging",
+        "value": "About 4 hours",
+        "meaning": "Separate from the included fast-charger timing.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Main powered head",
+        "value": "MicroClean Brush with LED lights",
+        "meaning": "Multi-floor dry-cleaning attachment.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Additional floor head",
+        "value": "Hard Floor Soft Brush included",
+        "meaning": "One reason this package differs from the entry Unlimited 10 offer.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Mini powered nozzle",
+        "value": "Not included in the checked box",
+        "meaning": "A non-powered upholstery brush is a different tool.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "Dust and filtration",
+        "value": "Compression Slider plus HEPA filtration",
+        "meaning": "Manual debris disposal and correct filter care remain necessary.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "US warranty scope",
+        "value": "2-year product / 10-year motor with registration",
+        "meaning": "Do not extend motor coverage to every component.",
+        "source": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · BBS104SBUC",
+        "amount": "USD 699.00",
+        "source": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BBS104SBUC",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Black-package listing checked 12 September 2026. The $599 family starting price belongs to a different configuration."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Bosch Unlimited 9 BCS931WUC",
+          "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited9/BCS931WUC",
+          "market": "United States"
+        },
+        {
+          "name": "Bosch Unlimited 10 BBS104SBUC",
+          "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BBS104SBUC",
+          "market": "United States"
+        },
+        {
+          "name": "Miele Triflex HX3",
+          "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white",
+          "market": "United Kingdom"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Battery in checked package",
+          "values": [
+            "1 × 3 Ah / 18 V",
+            "1 × 4 Ah / 18 V",
+            "1 × 2,500 mAh / 25.2 V"
+          ]
+        },
+        {
+          "label": "Maximum-runtime condition",
+          "values": [
+            "60 min Eco, no powered nozzle",
+            "80 min Eco, no powered nozzle",
+            "70 min Low, PowerUnit solo"
+          ]
+        },
+        {
+          "label": "Tube and handling",
+          "values": [
+            "Straight tube",
+            "90° Flex Tube",
+            "Repositionable PowerUnit"
+          ]
+        },
+        {
+          "label": "Charging arrangement",
+          "values": [
+            "Standard charger, about 3 h",
+            "Fast charger about 65 min; standard about 4 h",
+            "About 4 h"
+          ]
+        },
+        {
+          "label": "Included powered floor tool",
+          "values": [
+            "MicroClean multi-floor brush",
+            "MicroClean plus hard-floor soft brush",
+            "MultiFloor XXL; no AquaTwister in base box"
+          ]
+        }
+      ],
+      "takeaway": "The Black package adds equipment that affects access and charging. Decide whether those additions will be used before treating every Unlimited 10 offer as interchangeable."
+    },
+    "resources": [
+      {
+        "label": "US BBS104SBUC listing",
+        "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BBS104SBUC",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "BBS104SBUC package specification",
+        "url": "https://media3.bsh-group.com/Documents/28042964_BBS104SBUC_Spec_Sheet.pdf",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Unlimited 10 US use and care manual",
+        "url": "https://media3.bsh-group.com/Documents/8001366454_A.pdf",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "miele-triflex-hx3": {
+    "verdict": "The base HX3 is most useful to compare around its adjustable balance and dry-cleaning tool set. Its published powered-accessory runtimes are clearer purchase inputs than the longer solo figure.",
+    "notFor": "Buyers expecting a wet-cleaning attachment in the base box, dirty-water pickup, a self-emptying station or 70 minutes with a powered floor head.",
+    "specifications": [
+      {
+        "label": "Exact UK configuration",
+        "value": "12878400 · Brilliant White",
+        "meaning": "This guide covers the base UK package, not Pro, Cat & Dog or Aqua.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Handling layouts",
+        "value": "Comfort, Reach and Compact",
+        "meaning": "Reposition the PowerUnit for different tasks.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Power levels",
+        "value": "Low, Eco and High",
+        "meaning": "Published endurance changes with setting and tool.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Boost function",
+        "value": "10-second boost",
+        "meaning": "A temporary increase, not a continuous-runtime specification.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Floor recognition",
+        "value": "FloorDetect",
+        "meaning": "Automatic adjustment is a manufacturer feature, not an independent pickup rating.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Current listed floor head",
+        "value": "MultiFloor XXL · SEB 431",
+        "meaning": "An earlier sheet lists SEB 430; confirm the current box code.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Filtration",
+        "value": "HEPA lifetime filter",
+        "meaning": "Lifetime branding does not remove the need for prescribed dry filter care.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Battery capacity",
+        "value": "2,500 mAh",
+        "meaning": "One removable lithium-ion battery in this checked package.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Battery voltage",
+        "value": "25.2 V",
+        "meaning": "Use the battery and charger approved for the HX3.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Solo maximum runtime",
+        "value": "Up to 70 min on Low, PowerUnit solo",
+        "meaning": "Excludes the motorised floor head.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Powered-tool runtime on Low",
+        "value": "Up to 38 min",
+        "meaning": "A more relevant published condition for powered-accessory comparisons.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Powered-tool runtime on High",
+        "value": "Up to 15 min",
+        "meaning": "Separate from the 70-minute solo maximum.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours / 240 min",
+        "meaning": "Allow for the listed charging cycle when planning repeated use.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Dust-container capacity",
+        "value": "Not verified: current page 0.5 L; earlier sheet 0.3 L",
+        "meaning": "Official documents disagree; confirm with Miele for the exact supplied unit.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Standard detail tools",
+        "value": "Dusting brush, wide upholstery nozzle and crevice nozzle",
+        "meaning": "Do not assume a mini motorised tool is part of the base package.",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white"
+      },
+      {
+        "label": "Wet-floor attachment",
+        "value": "AquaTwister not included",
+        "meaning": "Compatible HX3 upgrade is separate; it mops without suction.",
+        "source": "https://www.miele.co.uk/product/12977320/triflex-aquatwister-hx-at-10"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom · 12878400",
+        "amount": "GBP 649.00",
+        "source": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Brilliant White base-package listing checked 12 September 2026. AquaTwister is separate; confirm the supplied head and current order terms."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Miele Triflex HX3",
+          "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Miele Triflex HX3 Aqua",
+          "url": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Bosch Unlimited 10 BBS104SBUC",
+          "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BBS104SBUC",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Handling layout",
+          "values": [
+            "Repositionable PowerUnit, 3-in-1",
+            "Repositionable PowerUnit, 3-in-1",
+            "90° Flex Tube"
+          ]
+        },
+        {
+          "label": "Published maximum and condition",
+          "values": [
+            "70 min Low, PowerUnit solo",
+            "70 min Low, PowerUnit solo; dry vacuum figure",
+            "80 min Eco, no electrical nozzle"
+          ]
+        },
+        {
+          "label": "Powered-tool dry runtime",
+          "values": [
+            "38 min Low / 15 min High",
+            "38 min Low / 15 min High",
+            "Not verified on comparable settings"
+          ]
+        },
+        {
+          "label": "Wet-floor attachment in checked box",
+          "values": [
+            "No; HX3-compatible AquaTwister sold separately",
+            "AquaTwister; mopping without suction",
+            "None"
+          ]
+        },
+        {
+          "label": "Price snapshot, 12 September 2026",
+          "values": [
+            "GBP 649, UK base package",
+            "GBP 789, UK Aqua package",
+            "USD 699, US Black package"
+          ]
+        }
+      ],
+      "takeaway": "The HX3 pair share the reconfigurable dry-vacuum platform; Aqua changes the included wet attachment. Bosch changes the reach mechanism. Regional prices and runtime conditions are not directly interchangeable."
+    },
+    "resources": [
+      {
+        "label": "Current UK Triflex HX3 configuration",
+        "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Triflex HX3 operating instructions",
+        "url": "https://media.miele.com/downloads/db/fe/01_C7F1383839DC1FE183973C449069DBFE.pdf",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "UK Triflex HX3 range and wet attachment",
+        "url": "https://www.miele.co.uk/cs/vacuum-cleaners/triflex-hx3-6530",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "miele-triflex-hx3-aqua": {
+    "verdict": "HX3 Aqua suits buyers comfortable with a vacuum-first, mop-second routine. Its value depends on sharing one platform for both tasks, with the clear limitation that the wet attachment does not collect dirty water.",
+    "notFor": "Buyers seeking simultaneous debris and liquid pickup, dirty-water recovery, steam cleaning or an automatic pad-washing and drying dock.",
+    "specifications": [
+      {
+        "label": "Exact UK configuration",
+        "value": "12878440 · Obsidian Black",
+        "meaning": "Checked Aqua package; regional accessories can differ.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Handling layouts",
+        "value": "Comfort, Reach and Compact",
+        "meaning": "The PowerUnit can be repositioned for dry-cleaning tasks.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Dry-cleaning floor head",
+        "value": "MultiFloor XXL SEB 436 with BrilliantLight",
+        "meaning": "Distinct from the base UK HX3 listing.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Wet attachment supplied",
+        "value": "AquaTwister HX-AT 10",
+        "meaning": "Separate attachment for compatible hard-floor mopping.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Mopping action",
+        "value": "Two rotating pads",
+        "meaning": "Agitation and pad contact, not liquid extraction.",
+        "source": "https://www.miele.co.uk/cs/vacuum-cleaners/triflex-hx3-6530"
+      },
+      {
+        "label": "Wet-head lighting",
+        "value": "360° Spotlight",
+        "meaning": "Illuminates the floor around the wet attachment.",
+        "source": "https://www.miele.co.uk/cs/vacuum-cleaners/triflex-hx3-6530"
+      },
+      {
+        "label": "Water-container nominal capacity",
+        "value": "300 ml",
+        "meaning": "Nominal capacity is not permission to exceed the manual’s fill limit.",
+        "source": "https://www.miele.co.uk/cs/vacuum-cleaners/triflex-hx3-6530"
+      },
+      {
+        "label": "Manual filling limit",
+        "value": "Max 260 ml water plus 20 ml specified cleaner",
+        "meaning": "Follow the manual and floor-care instructions.",
+        "source": "https://media.miele.com/downloads/db/fe/01_C7F1383839DC1FE183973C449069DBFE.pdf"
+      },
+      {
+        "label": "Water delivery",
+        "value": "Levels 0, 1 and 2; 30-second wetting boost",
+        "meaning": "Select moisture delivery for the floor and soil level.",
+        "source": "https://media.miele.com/downloads/db/fe/01_C7F1383839DC1FE183973C449069DBFE.pdf"
+      },
+      {
+        "label": "Liquid suction during mopping",
+        "value": "None",
+        "meaning": "AquaTwister mops without suction; do not vacuum liquids.",
+        "source": "https://media.miele.com/downloads/db/fe/01_C7F1383839DC1FE183973C449069DBFE.pdf"
+      },
+      {
+        "label": "Battery",
+        "value": "Removable 2,500 mAh / 25.2 V",
+        "meaning": "One battery in the checked package.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Solo dry runtime",
+        "value": "Up to 70 min on Low, PowerUnit solo",
+        "meaning": "Not a powered-floor-head or wet-mopping endurance figure.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Powered-accessory dry runtime",
+        "value": "Up to 38 min Low / 15 min High",
+        "meaning": "These published figures describe vacuum operation.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Charging time",
+        "value": "About 4 hours",
+        "meaning": "Plan charging separately from pad washing and drying.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Filtration for dry cleaning",
+        "value": "HEPA lifetime filter",
+        "meaning": "Requires the prescribed dry filter maintenance.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      },
+      {
+        "label": "Wet-care equipment supplied",
+        "value": "Two pads, storage tray and 500 ml cleaner",
+        "meaning": "Check local replacement-pad and approved-cleaner availability.",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom · 12878440",
+        "amount": "GBP 789.00",
+        "source": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Obsidian Black Aqua-package listing checked 12 September 2026. Includes AquaTwister; confirm current stock and exact supplied accessories."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Miele Triflex HX3",
+          "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Miele Triflex HX3 Aqua",
+          "url": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Bosch Unlimited 10 BBS104SBUC",
+          "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BBS104SBUC",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Handling layout",
+          "values": [
+            "Repositionable PowerUnit, 3-in-1",
+            "Repositionable PowerUnit, 3-in-1",
+            "90° Flex Tube"
+          ]
+        },
+        {
+          "label": "Published maximum and condition",
+          "values": [
+            "70 min Low, PowerUnit solo",
+            "70 min Low, PowerUnit solo; dry vacuum figure",
+            "80 min Eco, no electrical nozzle"
+          ]
+        },
+        {
+          "label": "Powered-tool dry runtime",
+          "values": [
+            "38 min Low / 15 min High",
+            "38 min Low / 15 min High",
+            "Not verified on comparable settings"
+          ]
+        },
+        {
+          "label": "Wet-floor attachment in checked box",
+          "values": [
+            "No; HX3-compatible AquaTwister sold separately",
+            "AquaTwister; mopping without suction",
+            "None"
+          ]
+        },
+        {
+          "label": "Price snapshot, 12 September 2026",
+          "values": [
+            "GBP 649, UK base package",
+            "GBP 789, UK Aqua package",
+            "USD 699, US Black package"
+          ]
+        }
+      ],
+      "takeaway": "Choose Aqua for the included pad-mopping attachment when a two-step routine fits the home. Neither the HX3 maximum dry runtime nor the Aqua name establishes liquid-pickup performance."
+    },
+    "resources": [
+      {
+        "label": "Current UK HX3 Aqua configuration",
+        "url": "https://www.miele.co.uk/product/12878440/cordless-stick-vacuum-cleaners-triflex-hx3-aqua-obsidian-black",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Triflex HX3 and AquaTwister operating instructions",
+        "url": "https://media.miele.com/downloads/db/fe/01_C7F1383839DC1FE183973C449069DBFE.pdf",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "UK HX3 range and AquaTwister features",
+        "url": "https://www.miele.co.uk/cs/vacuum-cleaners/triflex-hx3-6530",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }

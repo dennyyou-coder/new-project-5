@@ -546,6 +546,42 @@
       "sourceHash": "sha256:17cc4fef9144dcd572cbf61cf71e2ef888821781bf462ad7fcd0049372f1a12f",
       "outputHash": "sha256:1e6b5c416e3a62805a5832cb2db86e7713512cf0ddd8ceeaffc8101daea98a96"
     },
+    "/images/articles/bosch-unlimited-10-bbs104sbuc/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1309,
+      "height": 1600,
+      "bytes": 88392,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:86a884cb87af96a46032ad8ec50b2ea39d5bdd0f8ee9e65d8db2908395035849",
+      "outputHash": "sha256:68b28f662aeae9fbb6189e134332e19b0770632d37b5eb78c66ba84e6978d0e6",
+      "mobile": {
+        "src": "/images/articles/bosch-unlimited-10-bbs104sbuc/01-cover-800.webp",
+        "width": 655,
+        "height": 800,
+        "bytes": 28490,
+        "outputHash": "sha256:fef770c571aac481ac4695ebaec7bc031644807a9f436af69ce16b0fd4c83b64"
+      }
+    },
+    "/images/articles/bosch-unlimited-9-bcs931wuc/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 857,
+      "height": 1600,
+      "bytes": 51448,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:229988e046d3fde63a363c2116861531eec1a334192bd1a96b706c7d98e3e78e",
+      "outputHash": "sha256:6de0d430aa6538dded5a24e7cb97b5346083ef0b5e5f6c63265bad7992711d72",
+      "mobile": {
+        "src": "/images/articles/bosch-unlimited-9-bcs931wuc/01-cover-800.webp",
+        "width": 428,
+        "height": 800,
+        "bytes": 17756,
+        "outputHash": "sha256:a25254f053a0bb144b658131530c5a6061c39b4dd97f330b050808608511eb14"
+      }
+    },
     "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3609,6 +3645,42 @@
         "height": 533,
         "bytes": 59342,
         "outputHash": "sha256:07be2546fc13d6969ae09424c5ecfaeec477239665e612fe5e268d1cd1e3bf18"
+      }
+    },
+    "/images/articles/miele-triflex-hx3-aqua/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1341,
+      "bytes": 159856,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ee06d2f6cc8d53d73a76388bc2e1caedf79baf402e85d485504295d88d93c079",
+      "outputHash": "sha256:f2709b0ac55cf37664ba6e51ba524f3469fb3a9527112c94933da893aa2ab049",
+      "mobile": {
+        "src": "/images/articles/miele-triflex-hx3-aqua/01-cover-800.webp",
+        "width": 800,
+        "height": 670,
+        "bytes": 62720,
+        "outputHash": "sha256:f56afb61dff6ea0cbcbffb2f9dc537770d8f91abc09d7344938443c3412bff5e"
+      }
+    },
+    "/images/articles/miele-triflex-hx3/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1341,
+      "bytes": 113232,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:10b4ff568171437c92ac14e49acc493cbcccf8f7cfc7739c32de5d7190471ef8",
+      "outputHash": "sha256:95f9d44bd4ec70e009fd232d8bb2599be7cbc35a5e396d1f074d2562b05b2aaf",
+      "mobile": {
+        "src": "/images/articles/miele-triflex-hx3/01-cover-800.webp",
+        "width": 800,
+        "height": 671,
+        "bytes": 44658,
+        "outputHash": "sha256:cdec3c218563ba64365a231868bc4c7dc23111883e9db5d306b82e84c77950ea"
       }
     },
     "/images/articles/mova-diver-a10/01-cover.webp": {
@@ -32626,6 +32698,16 @@
         "/images/insights/bosch-cordless-dust-collector-image-004.jpg"
       ]
     },
+    "bosch-unlimited-10-bbs104sbuc": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/bosch-unlimited-10-bbs104sbuc/01-cover.webp",
+      "body": []
+    },
+    "bosch-unlimited-9-bcs931wuc": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/bosch-unlimited-9-bcs931wuc/01-cover.webp",
+      "body": []
+    },
     "building-worlds-no-1-cleaning-show-from-scratch-episode-01": {
       "budgetClass": "standard",
       "cover": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
@@ -34494,6 +34576,16 @@
         "/images/blog/miele-duoflex-hx2-floor-washer-comparison.webp",
         "/images/blog/miele-duoflex-hx2-floor-washer-timeline.webp"
       ]
+    },
+    "miele-triflex-hx3": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/miele-triflex-hx3/01-cover.webp",
+      "body": []
+    },
+    "miele-triflex-hx3-aqua": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/miele-triflex-hx3-aqua/01-cover.webp",
+      "body": []
     },
     "migo-ascender-stair-climbing-robot": {
       "budgetClass": "standard",
@@ -36927,6 +37019,24 @@
         }
       }
     },
+    "bosch-unlimited-10-bbs104sbuc": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/bosch-unlimited-10-bbs104sbuc/01-cover.webp",
+          "hash": "sha256:86a884cb87af96a46032ad8ec50b2ea39d5bdd0f8ee9e65d8db2908395035849"
+        }
+      }
+    },
+    "bosch-unlimited-9-bcs931wuc": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/bosch-unlimited-9-bcs931wuc/01-cover.webp",
+          "hash": "sha256:229988e046d3fde63a363c2116861531eec1a334192bd1a96b706c7d98e3e78e"
+        }
+      }
+    },
     "building-worlds-no-1-cleaning-show-from-scratch-episode-01": {
       "files": {
         "building-worlds-no-1-cleaning-show-episode-01-cover.webp": {
@@ -37824,6 +37934,24 @@
           "status": "matched",
           "primary": "/images/articles/maytronics-fimi-sale-pool-robot-leader/05-industry-rules-shift.webp",
           "hash": "sha256:d9a4220201b3d849df2c3cef23f55f51865391a7b84d789da6907dbd0ec8ef13"
+        }
+      }
+    },
+    "miele-triflex-hx3": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/miele-triflex-hx3/01-cover.webp",
+          "hash": "sha256:10b4ff568171437c92ac14e49acc493cbcccf8f7cfc7739c32de5d7190471ef8"
+        }
+      }
+    },
+    "miele-triflex-hx3-aqua": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/miele-triflex-hx3-aqua/01-cover.webp",
+          "hash": "sha256:ee06d2f6cc8d53d73a76388bc2e1caedf79baf402e85d485504295d88d93c079"
         }
       }
     },
