@@ -156,7 +156,7 @@ No lifecycle script invokes `prepare:article-images`. If a build gate fails, ret
 Preparation atomically maintains two generated files:
 
 - `article-image-manifest.json`: full server-side audit facts, hashes, article inventory, and external-source bindings/dispositions.
-- `article-image-runtime.json`: compact URL-to-dimensions/mobile-candidate data used by rendering. It must stay at or below `350,000` bytes and must not contain source hashes, output hashes, budgets, article inventory, or external-source audit records.
+- `article-image-runtime.json`: compact URL-to-dimensions/mobile-candidate data used by rendering. It must stay at or below `400,000` bytes and must not contain source hashes, output hashes, budgets, article inventory, or external-source audit records.
 
 The source verifier checks deterministic drift in both files. The runtime application imports only the compact index; the full audit manifest must not enter client or unrelated route chunks.
 
