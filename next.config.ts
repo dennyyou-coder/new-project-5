@@ -176,6 +176,16 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
+        source: "/insights/yang-meng-shallow-sea-strategy",
+        destination: "/blog/anker-shallow-sea-strategy-and-talent-platform",
+        permanent: true
+      },
+      {
+        source: "/blog/yang-meng-shallow-sea-strategy",
+        destination: "/blog/anker-shallow-sea-strategy-and-talent-platform",
+        permanent: true
+      },
+      {
         source: "/insights/:path*",
         destination: "/blog/:path*",
         permanent: true
