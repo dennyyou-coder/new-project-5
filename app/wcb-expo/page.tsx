@@ -393,7 +393,7 @@ export default function WcbExpoPage() {
           <TallyButton
             className="button-secondary"
             ctaLocation="wcb_expo_exhibitor_interest"
-            form="expo"
+            form="wceExhibitor"
             inquiryIntent="exhibitor_interest"
             inquiryType="expo_exhibitor"
           >

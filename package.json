@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "test:analytics": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/googleAnalytics.test.mjs",
-    "test:lead": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/leadTracking.test.mjs",
+    "test:lead": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/leadTracking.test.mjs tests/tallyTransport.test.cjs",
     "test:blog": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --test tests/blogConversion.test.mjs",
     "test:brands": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/brandIntelligence.test.mjs tests/brandExperience.test.mjs",
     "test:equipment": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types --import ./tests/register-path-alias.mjs --test tests/equipmentIntelligence.test.mjs tests/equipmentExperience.test.mjs",
