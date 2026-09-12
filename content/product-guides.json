@@ -10307,5 +10307,1151 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "beatbot-sora-10": {
+    "verdict": "Sora 10 is a useful entry-level shortlist for submerged pool surfaces when its retrieval arrangement is acceptable. Resolve the shallow-depth discrepancy before buying specifically for a tanning ledge.",
+    "notFor": "Owners requiring surface skimming, persistent floating retrieval or a confirmed very-shallow platform capability.",
+    "specifications": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Floor, walls and waterline",
+        "meaning": "Does not collect floating debris from the water surface.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Maximum area",
+        "value": "300 m²",
+        "meaning": "Manufacturer floor-coverage rating; route complexity changes real completion time.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Advertised water flow",
+        "value": "6,800 US gal/h",
+        "meaning": "A flow-rate claim, not vacuum pressure or an independent debris-pickup score.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Floor-only runtime",
+        "value": "Up to 5 hours",
+        "meaning": "Laboratory duration in the floor-only task.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Combined-cleaning runtime",
+        "value": "Up to 4 hours",
+        "meaning": "The cited FAQ separates floor, wall and waterline cleaning from floor-only operation.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Battery",
+        "value": "7,800 mAh",
+        "meaning": "Lower capacity than Sora 30 and Sora 70.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Charging",
+        "value": "About 3.5 hours; 65 W",
+        "meaning": "Keep the charge port dry and follow the charging instructions.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Debris basket",
+        "value": "5 L",
+        "meaning": "Leaf shape and fine debris affect useful capacity and emptying frequency.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Included filtration",
+        "value": "150 µm",
+        "meaning": "A separately sold finer basket should not be described as standard equipment.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Sensors",
+        "value": "11 total, including one ultrasonic sensor",
+        "meaning": "Object detection is not a guarantee of avoiding every pool obstruction.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Motors / brushes",
+        "value": "Three motors / two front roller brushes",
+        "meaning": "Different from Sora 30’s four-motor, four-brush arrangement.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Floor path",
+        "value": "S-shaped planning",
+        "meaning": "Check coverage around steps, curves and fixed pool fittings.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Retrieval",
+        "value": "Automatic waterline parking",
+        "meaning": "Not the persistent water-surface floating behaviour of Sora 30.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Dimensions",
+        "value": "432 × 386 × 267 mm",
+        "meaning": "Check storage and access through gates or narrow equipment areas.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Weight",
+        "value": "8.5 kg",
+        "meaning": "Consider lifting and draining after a cleaning cycle.",
+        "source": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Minimum shallow-water depth",
+        "value": "Not verified — conflicting official figures",
+        "meaning": "Headline, specification and FAQ give different limits; confirm suitability for a tanning ledge.",
+        "source": "https://beatbot.com/products/sora-10"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 449",
+        "source": "https://beatbot.com/products/sora-10",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official Sora 10 price checked 12 September 2026; optional filters and skimmer bundles are separate."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Beatbot Sora 10",
+          "url": "https://beatbot.com/products/sora-10",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot Sora 30",
+          "url": "https://beatbot.com/products/sora-30",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot Sora 70",
+          "url": "https://beatbot.com/products/sora-70",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Surface debris collection",
+          "values": [
+            "No",
+            "No",
+            "Yes"
+          ]
+        },
+        {
+          "label": "Retrieval",
+          "values": [
+            "Waterline parking",
+            "Floating surface parking",
+            "Floating surface parking"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "7,800 mAh",
+            "10,000 mAh",
+            "10,000 mAh"
+          ]
+        },
+        {
+          "label": "Basket",
+          "values": [
+            "5 L",
+            "5.2 L detailed specification",
+            "6 L"
+          ]
+        },
+        {
+          "label": "Combined underwater runtime",
+          "values": [
+            "Up to 4 h",
+            "Up to 4.5 h",
+            "Up to 4.5 h"
+          ]
+        }
+      ],
+      "takeaway": "Sora 30 mainly improves retrieval and cleaning hardware; Sora 70 adds floating-debris collection. All three need filter care and suitable pool geometry."
+    },
+    "resources": [
+      {
+        "label": "US Sora 10 specification and FAQ",
+        "url": "https://beatbot.com/products/sora-10",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Official 2026 Sora series",
+        "url": "https://beatbot.com/collections/sora-series",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Sora 30 official comparison",
+        "url": "https://beatbot.com/products/sora-30",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "beatbot-sora-30": {
+    "verdict": "Sora 30 makes the most sense when floating retrieval and the brush arrangement solve an everyday ownership problem. It should not be purchased on the assumption that floating parking also removes floating leaves.",
+    "notFor": "Pools needing a dedicated surface skimmer, or ledges whose depth and geometry fall outside the confirmed operating conditions.",
+    "specifications": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Floor, walls and waterline",
+        "meaning": "Floating surface debris is outside this model’s cleaning coverage.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Maximum area",
+        "value": "300 m²",
+        "meaning": "Manufacturer coverage rating, subject to pool shape and cleaning mode.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Advertised water flow",
+        "value": "6,800 US gal/h",
+        "meaning": "Flow-rate claim; not suction pressure or a comparative pickup score.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Floor-only runtime",
+        "value": "Up to 5 hours",
+        "meaning": "Manufacturer laboratory result for floor-only operation.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Combined-cleaning runtime",
+        "value": "Up to 4.5 hours",
+        "meaning": "Floor, wall and waterline work has a separate runtime claim.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Battery",
+        "value": "10,000 mAh",
+        "meaning": "Larger nominal capacity than Sora 10.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Charging",
+        "value": "About 4.5 hours; 65 W",
+        "meaning": "Charging should follow the dry-port and storage instructions.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Debris basket",
+        "value": "5.2 L in detailed specification",
+        "meaning": "Some promotional copy rounds this to 5 L.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Standard filtration",
+        "value": "150 µm",
+        "meaning": "The finer 3 µm basket is an optional accessory; confirm availability.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Sensors",
+        "value": "13 total, including two ultrasonic sensors",
+        "meaning": "Pool shape and fittings still influence coverage.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Motors / brushes",
+        "value": "Four motors / four bottom roller brushes",
+        "meaning": "Two brush groups distinguish it from the Sora 10 arrangement.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Retrieval",
+        "value": "Floating surface parking",
+        "meaning": "Once online at the surface, the app can request retrieval; not underwater live steering.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Shallow platforms",
+        "value": "About 20 cm depth; at least 1 × 1 m",
+        "meaning": "Confirm clearance and the exact manual for the intended ledge.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Dimensions",
+        "value": "434 × 386 × 267 mm",
+        "meaning": "Allow suitable storage and handling space.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Weight",
+        "value": "8.9 kg",
+        "meaning": "Plan for lifting and draining a wet machine.",
+        "source": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Connectivity",
+        "value": "2.4 / 5 GHz Wi-Fi and Bluetooth",
+        "meaning": "Connectivity does not imply radio control through pool water.",
+        "source": "https://beatbot.com/products/sora-30"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 689",
+        "source": "https://beatbot.com/products/sora-30",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official US robot listing checked 12 September 2026; optional filters and bundles are separate."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Beatbot Sora 30",
+          "url": "https://beatbot.com/products/sora-30",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot Sora 10",
+          "url": "https://beatbot.com/products/sora-10",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot Sora 70",
+          "url": "https://beatbot.com/products/sora-70",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Surface-debris collection",
+          "values": [
+            "No",
+            "No",
+            "Yes"
+          ]
+        },
+        {
+          "label": "Retrieval",
+          "values": [
+            "Floating surface parking",
+            "Waterline parking",
+            "Floating surface parking"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "10,000 mAh",
+            "7,800 mAh",
+            "10,000 mAh"
+          ]
+        },
+        {
+          "label": "Basket",
+          "values": [
+            "5.2 L detailed specification",
+            "5 L",
+            "6 L"
+          ]
+        },
+        {
+          "label": "Combined underwater runtime",
+          "values": [
+            "Up to 4.5 h",
+            "Up to 4 h",
+            "Up to 4.5 h"
+          ]
+        }
+      ],
+      "takeaway": "Pay for Sora 30’s retrieval and cleaning hardware if they fit the pool. Choose a surface-cleaning model or separate skimmer when floating debris is the main problem."
+    },
+    "resources": [
+      {
+        "label": "Sora 30 US specification and FAQ",
+        "url": "https://beatbot.com/products/sora-30",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Official 2026 Sora collection",
+        "url": "https://beatbot.com/collections/sora-series",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Sora 10 reference",
+        "url": "https://beatbot.com/products/sora-10",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "beatbot-iskim": {
+    "verdict": "iSkim is a complementary surface-debris tool for a sunny outdoor pool. Its value depends on how often debris lands on the surface and whether solar exposure supports the required schedule.",
+    "notFor": "Buyers expecting floor or wall scrubbing, ultra-fine sediment collection, or guaranteed continuous running through prolonged shade.",
+    "specifications": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Water surface only",
+        "meaning": "Does not scrub the floor, walls or submerged waterline.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Debris basket",
+        "value": "9 L",
+        "meaning": "Large floating debris can fill the basket differently from fine particles.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Filter mesh",
+        "value": "550 µm / 30 mesh",
+        "meaning": "Coarser surface-debris filtration than the Sora underwater-cleaner baskets.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Inlet",
+        "value": "29 × 270 mm",
+        "meaning": "An inlet measurement, not a maximum size guarantee for every object.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Motors",
+        "value": "Three",
+        "meaning": "Two propulsion motors and one roller motor; distinct from iSkim Ultra.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Detection",
+        "value": "Dual ultrasonic sensors and IMU",
+        "meaning": "Check coverage around pool fittings and corners.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Route behaviour",
+        "value": "Random and edge cleaning",
+        "meaning": "Do not transfer iSkim Ultra’s planned S-shaped routing claim.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Battery",
+        "value": "10,000 mAh",
+        "meaning": "Supports operation outside periods of active solar generation.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Solar panel",
+        "value": "24 W",
+        "meaning": "Rated panel power; energy collection varies with weather and shading.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "No-sun runtime",
+        "value": "Up to 28 hours without sunlight",
+        "meaning": "FAQ laboratory claim from a full charge; the table uses “28+ hours”. Solar continuity is conditional.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Adapter charging",
+        "value": "About 4.5–5 hours; adapter sold separately",
+        "meaning": "Official specification and FAQ give slightly different durations.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Solar positioning",
+        "value": "SolarTrack light-chasing",
+        "meaning": "May improve access to sunlight but cannot overcome prolonged poor weather.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Retrieval",
+        "value": "One-click edge parking",
+        "meaning": "The skimmer is already a surface device; it does not rise from the pool floor.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Connectivity",
+        "value": "2.4 / 5 GHz Wi-Fi and Bluetooth",
+        "meaning": "Supports listed app scheduling, logs and remote functions within coverage.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Housing material",
+        "value": "ASA",
+        "meaning": "Manufacturer emphasises resistance to UV, chlorine and salt exposure.",
+        "source": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Water-condition limits",
+        "value": "Salt ≤5,000 ppm; chlorine ≤4 ppm",
+        "meaning": "Official FAQ limits; consult the complete operating instructions.",
+        "source": "https://beatbot.com/products/iskim"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 399",
+        "source": "https://beatbot.com/products/iskim",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Standalone official US price checked 12 September 2026; mains adapter and bundle offers are separate."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Beatbot iSkim",
+          "url": "https://beatbot.com/products/iskim",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot Sora 10",
+          "url": "https://beatbot.com/products/sora-10",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot Sora 30",
+          "url": "https://beatbot.com/products/sora-30",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Surface-debris collection",
+          "values": [
+            "Yes",
+            "No",
+            "No"
+          ]
+        },
+        {
+          "label": "Submerged cleaning",
+          "values": [
+            "No",
+            "Floor, walls, waterline",
+            "Floor, walls, waterline"
+          ]
+        },
+        {
+          "label": "Basket",
+          "values": [
+            "9 L",
+            "5 L",
+            "5.2 L"
+          ]
+        },
+        {
+          "label": "Standard mesh",
+          "values": [
+            "550 µm",
+            "150 µm",
+            "150 µm"
+          ]
+        },
+        {
+          "label": "Charging",
+          "values": [
+            "Solar; optional mains adapter",
+            "Mains adapter",
+            "Mains adapter"
+          ]
+        }
+      ],
+      "takeaway": "These models solve complementary tasks. A larger skimmer basket does not make it a replacement for a floor-and-wall cleaner."
+    },
+    "resources": [
+      {
+        "label": "iSkim US specifications and FAQ",
+        "url": "https://beatbot.com/products/iskim",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Beatbot launch announcement, 27 April 2026",
+        "url": "https://en.prnasia.com/releases/global/beatbot-launches-iskim-a-9l-solar-powered-robotic-pool-skimmer-for-continuous-7-24-surface-cleaning-530873.shtml",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Sora 10 underwater-cleaning reference",
+        "url": "https://beatbot.com/products/sora-10",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dreame-a3-awd-pro-2500": {
+    "verdict": "A3 AWD Pro 2500 is worth shortlisting for a measured, multi-zone lawn that benefits from AWD and a wide cutting deck. Check the exact variant, lawn transitions and charging location before paying for the series headline features.",
+    "notFor": "Properties exceeding the practical 2500 capacity, or lawns whose steep boundaries, passages or transitions have not been checked against installation requirements.",
+    "specifications": [
+      {
+        "label": "Rated lawn area",
+        "value": "2,500 m² / about 0.62 acre",
+        "meaning": "Use the exact 2500 variant rather than the largest series capacity.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Battery",
+        "value": "5 Ah",
+        "meaning": "The 3500 and 5000 variants list 7.5 Ah and 10 Ah respectively.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Navigation",
+        "value": "OmniSense 3.0: 3D LiDAR and binocular vision",
+        "meaning": "Wire-free mapping without an RTK station; site conditions still matter.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Drive",
+        "value": "AWD hub motors with suspension",
+        "meaning": "Two front omni wheels and two rear off-road wheels support manoeuvring.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Maximum slope",
+        "value": "80% / about 38.7°",
+        "meaning": "A manufacturer test limit, not 80 degrees or a guarantee near every boundary.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Obstacle crossing",
+        "value": "Up to 2.16 in / about 5.5 cm",
+        "meaning": "Rounded to 2.2 inches in some copy; obstacle shape affects traversal.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Cutting width",
+        "value": "40 cm; dual discs",
+        "meaning": "Coverage also depends on turns, obstacles and mowing frequency.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Cutting height",
+        "value": "3–10 cm; app-adjustable",
+        "meaning": "Select a height suitable for the grass and local growing conditions.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Edge reach",
+        "value": "EdgeMaster 2.0; claimed gap below 3 cm",
+        "meaning": "Does not guarantee zero trimming against every fence or wall.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Dimensions",
+        "value": "740 × 532 × 325 mm",
+        "meaning": "Check passages and storage rather than relying only on area rating.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Weight",
+        "value": "23.9 kg",
+        "meaning": "Relevant to storage and manual handling.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Maps and zones",
+        "value": "Dual maps; multiple zones",
+        "meaning": "Separate-map support does not itself guarantee autonomous transfer between lawns.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Mowing modes",
+        "value": "Five modes",
+        "meaning": "Select the appropriate task and zone settings in the app.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Charging current",
+        "value": "5 A",
+        "meaning": "This is current, not a five-hour full-charge duration.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Mobile connectivity",
+        "value": "4G service included for three years",
+        "meaning": "Check coverage and renewal terms after the included period.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "Noise claim",
+        "value": "≤65 dB in standard cutting mode",
+        "meaning": "Not a measurement guaranteed for every load or operating situation.",
+        "source": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 2,249.99",
+        "source": "https://yardcare.dreametech.com/products/a3-awd-pro-robot-lawn-mower?variant=48120972148993",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Selected A3 AWD Pro 2500 variant checked 12 September 2026; other capacities have different prices and batteries."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame A3 AWD Pro 2500",
+          "url": "https://yardcare.dreametech.com/products/a3-awd-pro-robot-lawn-mower?variant=48120972148993",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame A3 AWD Pro 3500",
+          "url": "https://yardcare.dreametech.com/products/a3-awd-pro-robot-lawn-mower?variant=48120972116225",
+          "market": "United States"
+        },
+        {
+          "name": "MOVA LiDAX Ultra 2000 AWD",
+          "url": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Rated lawn area",
+          "values": [
+            "2,500 m²",
+            "3,500 m²",
+            "2,000 m²"
+          ]
+        },
+        {
+          "label": "Battery",
+          "values": [
+            "5 Ah",
+            "7.5 Ah",
+            "7.5 Ah"
+          ]
+        },
+        {
+          "label": "Cutting width",
+          "values": [
+            "40 cm",
+            "40 cm",
+            "40 cm"
+          ]
+        },
+        {
+          "label": "Crossing claim",
+          "values": [
+            "About 5.5 cm",
+            "About 5.5 cm",
+            "6 cm"
+          ]
+        },
+        {
+          "label": "Weight",
+          "values": [
+            "23.9 kg",
+            "23.9 kg",
+            "23.6 kg"
+          ]
+        }
+      ],
+      "takeaway": "The 3500 primarily changes the capacity proposition within the Dreame series. Across brands, compare installation fit and service as well as battery size and nominal area."
+    },
+    "resources": [
+      {
+        "label": "A3 AWD Pro official specifications",
+        "url": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "US store: selected 2500 variant",
+        "url": "https://yardcare.dreametech.com/products/a3-awd-pro-robot-lawn-mower?variant=48120972148993",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Dreame CES 2026 announcement",
+        "url": "https://prtimes.jp/main/html/rd/p/000000093.000116327.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dreame-l60-ultra-pe": {
+    "verdict": "PE is a practical comparison candidate where the dual-brush setup and specified threshold handling matter more than a very slim body. Measure the furniture and transition geometry before selecting it.",
+    "notFor": "Homes requiring very low furniture access or a single vertical 4 cm climb.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "30,000 Pa",
+        "meaning": "Manufacturer maximum, not an independent pickup score.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 103.8 mm",
+        "meaning": "Measure actual furniture clearance rather than using body height as guaranteed access.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Navigation",
+        "value": "LDS SmartPathfinder",
+        "meaning": "Map exclusions and check difficult furniture layouts.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Single threshold",
+        "value": "2.2 cm",
+        "meaning": "A single-obstacle claim; shape and approach affect traversal.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Double-level crossing",
+        "value": "4 cm: 2.2 + 1.8 cm, gap >3 cm",
+        "meaning": "Not a single vertical 4 cm climb.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Main brush",
+        "value": "HyperStream DuoBrush",
+        "meaning": "Different brush arrangements within the L60 family.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Mop extension",
+        "value": "Up to 40 mm",
+        "meaning": "Extension reach is not a guarantee of coverage in every corner.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Mop lift",
+        "value": "10.5 mm",
+        "meaning": "Check carpet pile and the configured carpet behaviour.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Battery",
+        "value": "5,200 mAh",
+        "meaning": "Runtime varies by suction, route and cleaning settings.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Robot dust bin",
+        "value": "250 ml",
+        "meaning": "Automatic emptying does not remove the need for inspection.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Station dust bag",
+        "value": "3.2 L",
+        "meaning": "Replacement interval depends on debris load.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Water tanks",
+        "value": "4.5 L clean / 4 L used",
+        "meaning": "Tank capacities are separate from the robot’s onboard hardware.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "457 × 340 × 590 mm as listed",
+        "meaning": "Allow access for tank removal and station maintenance.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Station wash-heating claim",
+        "value": "Up to 100°C at washboard PTC area",
+        "meaning": "Not a measured floor or universal water-outlet temperature.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Solution dispensing",
+        "value": "Automatic; single solution tank",
+        "meaning": "Use the prescribed cleaning solution and regional instructions.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Dirt response",
+        "value": "Dirt-responsive rewash and remop",
+        "meaning": "Station care and tank handling remain manual responsibilities.",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 999.99",
+        "source": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official standalone US listing checked 12 September 2026; verify colour, accessories and regional package."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame L60 Ultra PE",
+          "url": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame L60 Ultra FE",
+          "url": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame L60 Ultra",
+          "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Maximum suction",
+          "values": [
+            "30,000 Pa",
+            "28,000 Pa; detailed specification",
+            "35,000 Pa"
+          ]
+        },
+        {
+          "label": "Body height",
+          "values": [
+            "103.8 mm",
+            "97 mm",
+            "82 mm"
+          ]
+        },
+        {
+          "label": "Single threshold",
+          "values": [
+            "2.2 cm",
+            "2 cm",
+            "3 cm"
+          ]
+        },
+        {
+          "label": "Main brush",
+          "values": [
+            "HyperStream DuoBrush",
+            "TriCut Brush 3.0",
+            "HyperStream DuoBrush"
+          ]
+        },
+        {
+          "label": "Robot dust bin",
+          "values": [
+            "250 ml",
+            "250 ml",
+            "275 ml"
+          ]
+        }
+      ],
+      "takeaway": "Compare body clearance, brush configuration and the exact obstacle shape. The L60 suffixes do not establish a universal performance ranking."
+    },
+    "resources": [
+      {
+        "label": "US model specification and footnotes",
+        "url": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Dreame L60 series launch announcement",
+        "url": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Other PE / FE configuration",
+        "url": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dreame-l60-ultra-fe": {
+    "verdict": "FE is worth considering when its dimensions and simpler threshold requirement suit the home. Resolve the exact regional configuration rather than relying on inconsistent promotional suction copy.",
+    "notFor": "Homes needing the PE dual-brush system or a confirmed obstacle capability beyond FE’s stated 2 cm single threshold.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "28,000 Pa in detailed specification",
+        "meaning": "Some generic page prose says 30,000 Pa; this guide follows the detailed specification and footnote.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 97 mm",
+        "meaning": "Measure actual furniture clearance rather than using body height as guaranteed access.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Navigation",
+        "value": "SmartPathfinder mapping",
+        "meaning": "Map exclusions and check difficult furniture layouts.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Single threshold",
+        "value": "2 cm",
+        "meaning": "A single-obstacle claim; shape and approach affect traversal.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Double-level crossing",
+        "value": "Not verified — no FE-specific double-level rating",
+        "meaning": "Do not transfer the PE double-level claim to FE.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Main brush",
+        "value": "TriCut Brush 3.0",
+        "meaning": "Different brush arrangements within the L60 family.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Mop extension",
+        "value": "Up to 40 mm",
+        "meaning": "Extension reach is not a guarantee of coverage in every corner.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Mop lift",
+        "value": "10.5 mm",
+        "meaning": "Check carpet pile and the configured carpet behaviour.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Battery",
+        "value": "5,200 mAh",
+        "meaning": "Runtime varies by suction, route and cleaning settings.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Robot dust bin",
+        "value": "250 ml",
+        "meaning": "Automatic emptying does not remove the need for inspection.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Station dust bag",
+        "value": "3.2 L",
+        "meaning": "Replacement interval depends on debris load.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Water tanks",
+        "value": "4.5 L clean / 4 L used",
+        "meaning": "Tank capacities are separate from the robot’s onboard hardware.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "457 × 340 × 590 mm as listed",
+        "meaning": "Allow access for tank removal and station maintenance.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Station wash-heating claim",
+        "value": "Up to 100°C at washboard PTC area",
+        "meaning": "Not a measured floor or universal water-outlet temperature.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Solution dispensing",
+        "value": "Automatic; single solution tank",
+        "meaning": "Use the prescribed cleaning solution and regional instructions.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Voice control",
+        "value": "Third-party voice control in specification",
+        "meaning": "Confirm supported services and regional firmware; generic prose may describe other features.",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 849.99",
+        "source": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official standalone US listing checked 12 September 2026; verify colour, accessories and regional package."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dreame L60 Ultra FE",
+          "url": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame L60 Ultra PE",
+          "url": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Dreame L60 Ultra",
+          "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Maximum suction",
+          "values": [
+            "28,000 Pa; detailed specification",
+            "30,000 Pa",
+            "35,000 Pa"
+          ]
+        },
+        {
+          "label": "Body height",
+          "values": [
+            "97 mm",
+            "103.8 mm",
+            "82 mm"
+          ]
+        },
+        {
+          "label": "Single threshold",
+          "values": [
+            "2 cm",
+            "2.2 cm",
+            "3 cm"
+          ]
+        },
+        {
+          "label": "Main brush",
+          "values": [
+            "TriCut Brush 3.0",
+            "HyperStream DuoBrush",
+            "HyperStream DuoBrush"
+          ]
+        },
+        {
+          "label": "Robot dust bin",
+          "values": [
+            "250 ml",
+            "250 ml",
+            "275 ml"
+          ]
+        }
+      ],
+      "takeaway": "Compare body clearance, brush configuration and the exact obstacle shape. The L60 suffixes do not establish a universal performance ranking."
+    },
+    "resources": [
+      {
+        "label": "US model specification and footnotes",
+        "url": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Dreame L60 series launch announcement",
+        "url": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Other PE / FE configuration",
+        "url": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }
