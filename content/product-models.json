@@ -70,7 +70,8 @@
       "roborock-saros-20-sonic",
       "dreame-x60-ultra",
       "ecovacs-deebot-x12-omnicyclone",
-      "ecovacs-deebot-t90-pro-omni"
+      "ecovacs-deebot-t90-pro-omni",
+      "dyson-r1-nurovi-dry"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -1970,7 +1971,8 @@
       "roborock-f25-ace-pro",
       "dreame-t16-pro-heat",
       "shark-aquareach-wd551",
-      "tineco-floor-one-i7-fold"
+      "tineco-floor-one-i7-fold",
+      "dyson-w1-pencilwash"
     ],
     "announced": "2026-02-19",
     "verifiedAt": "2026-09-06",
@@ -2680,7 +2682,8 @@
     ],
     "related": [
       "roborock-saros-20-flow",
-      "roborock-qrevo-edge-3-pro"
+      "roborock-qrevo-edge-3-pro",
+      "dyson-r2-nurovi-wash-dry"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -6719,7 +6722,8 @@
       "shark-aquareach-pro-wd563",
       "tineco-floor-one-i7-fold",
       "dyson-pencilwash",
-      "eureka-floorshine-830"
+      "eureka-floorshine-830",
+      "dyson-w1-pencilwash"
     ],
     "announced": "2026-08-18",
     "verifiedAt": "2026-09-12",
@@ -7815,5 +7819,318 @@
     "launchYear": 2026,
     "launchNote": "Shown as NEW830 among Eureka’s CES 2026 new products. This guide covers the current German FloorShine 830 / NEW830BK; the exact first retail delivery date is not verified.",
     "launchSource": "https://de.eureka.com/pages/ces-2026"
+  },
+  {
+    "slug": "dyson-r1-nurovi-dry",
+    "name": "Dyson R1 Nurovi Dry",
+    "brand": "Dyson",
+    "brandSlug": "dyson",
+    "category": "Robot vacuums",
+    "market": "United Kingdom · dry-only model",
+    "summary": "A dry-only robot with Twin-capture debris pickup, automatic dust sensing and a bagless dock, introduced in September 2026.",
+    "fit": "Carpet-led homes and buyers who want scheduled dry pickup without managing a robot water system.",
+    "caution": "No washing function. Runtime, threshold clearance and dock storage are manufacturer claims, with results dependent on the home.",
+    "facts": [
+      {
+        "label": "Suction headline",
+        "value": "21,000 Pa",
+        "meaning": "Powerful-mode claim; not a pickup score."
+      },
+      {
+        "label": "Robot height",
+        "value": "96 mm",
+        "meaning": "Leave a margin when checking furniture clearance."
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "120 minutes",
+        "meaning": "Not a Powerful-mode runtime guarantee."
+      },
+      {
+        "label": "Dock collection",
+        "value": "Bagless, eight cyclones",
+        "meaning": "Avoids disposable dust bags; the container still needs emptying."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does R1 Nurovi wash the floor?",
+        "answer": "No. R1 is the dry-only model. R2 adds washing pads, while R3 is a separate wet-roller model."
+      },
+      {
+        "question": "What does Twin-capture mean?",
+        "answer": "The brush mechanism collects larger debris while concentrated airflow handles fine dust. The design description does not establish a measured advantage over competitors."
+      },
+      {
+        "question": "Does it need disposable dust bags?",
+        "answer": "The supplied cyclonic dock is bagless. Empty the container and care for its filters; bagless collection still needs maintenance."
+      },
+      {
+        "question": "Will it cross every 40 mm threshold?",
+        "answer": "No universal crossing guarantee follows from the stated maximum. Test your threshold profile and approach direction during the return period."
+      },
+      {
+        "question": "How long does it run?",
+        "answer": "The UK listing states a maximum of 120 minutes and 6.5 hours to charge. Floor type and selected cleaning power affect usable coverage."
+      },
+      {
+        "question": "When was it announced and what does it cost?",
+        "answer": "Dyson announced R1 and R2 on 3 September 2026. The checked UK R1 listing was GBP 499.99 on 12 September; delivery and stock require a fresh checkout check."
+      },
+      {
+        "question": "What maintenance should I expect?",
+        "answer": "Inspect the brush, sweeper, wheels and sensors. Dyson’s Australian owner instructions call for at least monthly filter washing and brush/sweeper checks; follow the instructions supplied with your regional unit."
+      }
+    ],
+    "articles": [
+      "dyson-finally-sells-self-emptying-vacuum",
+      "dyson-new-product-push-premium-innovation"
+    ],
+    "related": [
+      "dyson-r2-nurovi-wash-dry",
+      "roborock-saros-20"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "UK specifications and price",
+        "url": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "September 2026 announcement",
+        "url": "https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi"
+      },
+      {
+        "label": "Australian owner guidance",
+        "url": "https://www.dyson.com.au/products/vacuum-cleaners/robot/r1-nurovi-dry/owners"
+      },
+      {
+        "label": "R2 comparison reference",
+        "url": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "R3 announcement reference",
+        "url": "https://www.dyson.com/events/unveiled-2026"
+      },
+      {
+        "label": "Dyson announcement with R3 roller details",
+        "url": "https://www.prnewswire.com/news-releases/jake-dyson-unveils-a-new-era-of-intelligent-machines-302869097.html"
+      }
+    ],
+    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/gallery/home/floorcare/robots/Web_914_PDP_Gallery_08_feature_landscape.jpg",
+    "launchYear": 2026,
+    "launchNote": "Announced 3 September 2026. This guide uses the UK dry-only configuration and a dated UK price; overseas release timing varies.",
+    "launchSource": "https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi"
+  },
+  {
+    "slug": "dyson-r2-nurovi-wash-dry",
+    "name": "Dyson R2 Nurovi Wash+Dry",
+    "brand": "Dyson",
+    "brandSlug": "dyson",
+    "category": "Robot vacuums",
+    "market": "United Kingdom · tank-and-dock model",
+    "summary": "A September 2026 vacuum-and-mop robot combining Twin-capture pickup, Reuleaux triangle pads and a bagless dock that washes and dries the pads.",
+    "fit": "Mixed-floor homes where routine hard-floor washing and corner coverage are worth the extra water-system maintenance.",
+    "caution": "The 75°C figure describes dock pad washing. Confirm rug handling and usable water capacity for the exact regional unit.",
+    "facts": [
+      {
+        "label": "Mopping system",
+        "value": "Reuleaux triangle pads",
+        "meaning": "Pad geometry is designed to improve contact along edges."
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "90 minutes",
+        "meaning": "UK listing; varies with cleaning conditions."
+      },
+      {
+        "label": "Pad washing at dock",
+        "value": "75°C water",
+        "meaning": "This is not a verified on-floor water temperature."
+      },
+      {
+        "label": "Dock dimensions",
+        "value": "467.5 × 415 × 517 mm",
+        "meaning": "Length × width × height; allow space to remove tanks."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How is R2 different from R1?",
+        "answer": "R2 adds triangle washing pads and a water-handling dock. R1 is dry-only. The UK listings also give different maximum runtimes: 90 minutes for R2 and 120 for R1."
+      },
+      {
+        "question": "Does the floor receive 75°C water?",
+        "answer": "The checked specification assigns 75°C to pad washing at the dock. It does not verify that the same temperature reaches your floor."
+      },
+      {
+        "question": "Does it use the R3 UV stain scanner?",
+        "answer": "That feature belongs to R3 in Dyson’s launch lineup. It is not listed for this R2 configuration."
+      },
+      {
+        "question": "Can the robot climb stairs?",
+        "answer": "No stair-climbing capability is established. The quoted 40 mm clearance concerns thresholds; floor shape and approach conditions still need checking."
+      },
+      {
+        "question": "Does the dock use bags?",
+        "answer": "Dyson describes a cyclonic bagless dock for dry debris. You still need to empty its dust container and manage clean and dirty water."
+      },
+      {
+        "question": "What is the UK price and announcement date?",
+        "answer": "R2 was announced on 3 September 2026. Its UK product page showed GBP 749.99 on 12 September. Confirm current stock and delivery separately."
+      },
+      {
+        "question": "What should rug owners verify?",
+        "answer": "Ask for the exact pad-lift behavior, rug exclusion settings and how wet pads are handled on the route to the dock. This guide does not fill gaps using another Nurovi model’s specifications."
+      }
+    ],
+    "articles": [
+      "dyson-finally-sells-self-emptying-vacuum",
+      "dyson-new-product-push-premium-innovation"
+    ],
+    "related": [
+      "dyson-r1-nurovi-dry",
+      "roborock-qrevo-curv-2-flow"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "UK specifications and price",
+        "url": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "September 2026 announcement",
+        "url": "https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi"
+      },
+      {
+        "label": "Australian owner guidance",
+        "url": "https://www.dyson.com.au/products/vacuum-cleaners/robot/r2-nurovi-wash-dry/owners"
+      },
+      {
+        "label": "R1 comparison reference",
+        "url": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue"
+      },
+      {
+        "label": "R3 announcement reference",
+        "url": "https://www.dyson.com/events/unveiled-2026"
+      },
+      {
+        "label": "Dyson announcement with R3 roller details",
+        "url": "https://www.prnewswire.com/news-releases/jake-dyson-unveils-a-new-era-of-intelligent-machines-302869097.html"
+      }
+    ],
+    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/gallery/home/floorcare/robots/Web_914A_PDP_Gallery_04_feature_landscape.jpg",
+    "launchYear": 2026,
+    "launchNote": "Announced 3 September 2026. UK specifications and price are used here; launch timing and seller bundles vary by market.",
+    "launchSource": "https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi"
+  },
+  {
+    "slug": "dyson-w1-pencilwash",
+    "name": "Dyson W1 PencilWash",
+    "brand": "Dyson",
+    "brandSlug": "dyson",
+    "category": "Floor washers",
+    "market": "United Kingdom · wand charging dock",
+    "summary": "A September 2026 slim hard-floor washer with a revised hybrid roller, head-level waste separation and a UK charging-dock package requiring manual roller care.",
+    "fit": "Frequent sealed-floor cleanups where compact storage, low furniture access and light handling matter.",
+    "caution": "This UK wand-dock package has no self-clean cycle. Do not assume the announced W1 + Dok functions are included.",
+    "facts": [
+      {
+        "label": "Full machine weight",
+        "value": "2.4 kg",
+        "meaning": "Different from the much smaller in-hand measure."
+      },
+      {
+        "label": "Lie-flat clearance",
+        "value": "75 mm at 180°",
+        "meaning": "Check the lowest point under your own furniture."
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 45 minutes",
+        "meaning": "Manufacturer maximum; use and hydration change coverage."
+      },
+      {
+        "label": "After-use care",
+        "value": "Manual wash; no self-clean cycle",
+        "meaning": "Air-dry the wet roller for at least 24 hours as directed."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is W1 the same as the original PencilWash?",
+        "answer": "No. Dyson introduced the W1 revision on 3 September 2026, with a revised roller and head-level waste system. The earlier PencilWash remains a separate model."
+      },
+      {
+        "question": "Does the GBP 299.99 UK version clean itself?",
+        "answer": "The checked wand-charging-dock version explicitly has no self-clean cycle. W1 + Dok is a different announced configuration; inspect the exact package before purchase."
+      },
+      {
+        "question": "Can it replace a carpet vacuum?",
+        "answer": "The reviewed W1 is specified for sealed hard floors. Handling dry debris during wet washing does not make it a dry carpet vacuum."
+      },
+      {
+        "question": "How heavy is it?",
+        "answer": "Dyson lists 2.4 kg for the machine and 470 g in hand. Use the full weight for carrying and storage decisions."
+      },
+      {
+        "question": "Is the clean-water tank 290 or 300 ml?",
+        "answer": "The UK specification lists 0.29 L, while the launch narrative uses 300 ml. This guide retains the model-page figure and identifies the rounded launch figure."
+      },
+      {
+        "question": "How should I care for the roller?",
+        "answer": "Remove and wash the roller and waste parts after each use. Dyson’s UK guidance says to leave the wet roller in a warm, ventilated place for at least 24 hours before reassembly."
+      },
+      {
+        "question": "What was the verified price?",
+        "answer": "The UK wand-dock listing showed GBP 299.99 on 12 September 2026. That price is not a quote for a W1 + Dok bundle or another country."
+      }
+    ],
+    "articles": [
+      "dyson-washg1-vs-tineco-floor-one",
+      "dyson-hard-floor-washer-exposed"
+    ],
+    "related": [
+      "dyson-pencilwash",
+      "shark-aquareach-wd551"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "UK model specifications and price",
+        "url": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/wand-charging-dock"
+      },
+      {
+        "label": "September 2026 W1 announcement",
+        "url": "https://www.dyson.co.uk/discover/news/latest/introducing-w1-pencilwash"
+      },
+      {
+        "label": "UK configuration FAQ",
+        "url": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash"
+      },
+      {
+        "label": "UK care FAQ and drying guidance",
+        "url": "https://www.dyson.co.uk/floor-cleaners/wet/w1-pencilwash/reviews"
+      },
+      {
+        "label": "Dyson announcement including W1 + Dok",
+        "url": "https://www.prnewswire.com/news-releases/jake-dyson-unveils-a-new-era-of-intelligent-machines-302869097.html"
+      },
+      {
+        "label": "Original PencilWash US reference",
+        "url": "https://www.dyson.com/floor-cleaners/wet/pencilwash/copper"
+      },
+      {
+        "label": "Shark WD551 US reference",
+        "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      }
+    ],
+    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/gallery/home/floorcare/wet-cleaners/w1-pencilwash/Web_970_PDP_video_techfilm_Fallback_Gallery.jpg",
+    "launchYear": 2026,
+    "launchNote": "W1 announced 3 September 2026 as a new PencilWash revision. This guide covers the UK wand-dock configuration, not the separate W1 + Dok announcement.",
+    "launchSource": "https://www.dyson.co.uk/discover/news/latest/introducing-w1-pencilwash"
   }
 ]
