@@ -5363,6 +5363,42 @@
       "sourceHash": "sha256:5148fd793232ab71326fc352b55ccae47545cebb0e1149664105e623ee192963",
       "outputHash": "sha256:a4d834e4193070d24b4be69d189ce429c26c618bf1d2c88445b2fb1a33f1f839"
     },
+    "/images/articles/shark-aquareach-pro-wd563/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 224242,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a01016563ee2480b9e8dc07178ad661c2f95374fd20c89991af6eaa7aec50765",
+      "outputHash": "sha256:f2cd21551720a1f74493992f22a98093575b5307ede319af5590d145af934326",
+      "mobile": {
+        "src": "/images/articles/shark-aquareach-pro-wd563/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 68950,
+        "outputHash": "sha256:a1b6f2253d60ceb0f5fa14c1263829d5b5732a16dec2ddb01e2914235db03239"
+      }
+    },
+    "/images/articles/shark-aquareach-wd551/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 219646,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:201a82f3ff83a330f8016eb0b259f0ca223529c437a6b946635c7c362404ef3e",
+      "outputHash": "sha256:3b564c523120d2e6c38823257f0297ff9aa33d1ef0edb02d4dbf1d214a85d215",
+      "mobile": {
+        "src": "/images/articles/shark-aquareach-wd551/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 64818,
+        "outputHash": "sha256:9863ab1ac3b67362ec96ef7d59b0f23bd04e662c0f613feb020d2b60f8365fb6"
+      }
+    },
     "/images/articles/shark-powerdetect-uv-reveal-rv3020xe/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -5732,6 +5768,42 @@
         "height": 375,
         "bytes": 75142,
         "outputHash": "sha256:7aba113b0d1b44ad83f2df69d49a18947572f9b9b30192db287daf34a4e08a1b"
+      }
+    },
+    "/images/articles/tineco-floor-one-i7-fold/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 185282,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:39ac90191844f5ed240c47f3aaf2c0ed23e4df769954fac00353a48b09fac04b",
+      "outputHash": "sha256:4b878b48794d8d9e220874bbd78d83a2527ec8b9fb986045e524b17b194f8ac7",
+      "mobile": {
+        "src": "/images/articles/tineco-floor-one-i7-fold/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 53408,
+        "outputHash": "sha256:a7b92ee4f193c914fadac6cc0bf4a8d527dc2b847ecae76ac3c407141e55a7db"
+      }
+    },
+    "/images/articles/tineco-floor-one-s9-master/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 53596,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a4fecba891d48507891119f996224396a6d3349ddfae85a2a747494fe282d807",
+      "outputHash": "sha256:ce9bb0642095e361c60748b1a116984d3609da61362c301a46380f00dc68f544",
+      "mobile": {
+        "src": "/images/articles/tineco-floor-one-s9-master/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 17274,
+        "outputHash": "sha256:01e82029348c74a20527e48f92ca98a712baef761d75387a038a38234c5782a9"
       }
     },
     "/images/articles/tineco-floor-one-station-s9-scientist-pro/01-cover.webp": {
@@ -35475,6 +35547,16 @@
         "/images/blog/robot-vacuum-dock-supply-chain-risks.webp"
       ]
     },
+    "shark-aquareach-pro-wd563": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-aquareach-pro-wd563/01-cover.webp",
+      "body": []
+    },
+    "shark-aquareach-wd551": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-aquareach-wd551/01-cover.webp",
+      "body": []
+    },
     "shark-hydrovac-vs-bissell-crosswave": {
       "budgetClass": "standard",
       "cover": "/images/blog/shark-hydrovac-vs-bissell-crosswave.webp",
@@ -35669,6 +35751,16 @@
         "/images/insights/thoughts-on-mijia-mite-removal-vacuum-image-011.png",
         "/images/insights/thoughts-on-mijia-mite-removal-vacuum-image-012.png"
       ]
+    },
+    "tineco-floor-one-i7-fold": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tineco-floor-one-i7-fold/01-cover.webp",
+      "body": []
+    },
+    "tineco-floor-one-s9-master": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tineco-floor-one-s9-master/01-cover.webp",
+      "body": []
     },
     "tineco-floor-one-station-s9-scientist-pro": {
       "budgetClass": "standard",
@@ -38292,6 +38384,24 @@
         }
       }
     },
+    "shark-aquareach-pro-wd563": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/shark-aquareach-pro-wd563/01-cover.webp",
+          "hash": "sha256:a01016563ee2480b9e8dc07178ad661c2f95374fd20c89991af6eaa7aec50765"
+        }
+      }
+    },
+    "shark-aquareach-wd551": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/shark-aquareach-wd551/01-cover.webp",
+          "hash": "sha256:201a82f3ff83a330f8016eb0b259f0ca223529c437a6b946635c7c362404ef3e"
+        }
+      }
+    },
     "shark-powerdetect-uv-reveal-rv3020xe": {
       "files": {
         "01-cover.jpg": {
@@ -38364,6 +38474,24 @@
           "status": "matched",
           "primary": "/images/articles/sunseeker-s4/01-cover.webp",
           "hash": "sha256:511f46a4cb35c2f575f295ea2ed4a28d66b9a05590eb794fec86c27e858a2935"
+        }
+      }
+    },
+    "tineco-floor-one-i7-fold": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tineco-floor-one-i7-fold/01-cover.webp",
+          "hash": "sha256:39ac90191844f5ed240c47f3aaf2c0ed23e4df769954fac00353a48b09fac04b"
+        }
+      }
+    },
+    "tineco-floor-one-s9-master": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/tineco-floor-one-s9-master/01-cover.webp",
+          "hash": "sha256:a4fecba891d48507891119f996224396a6d3349ddfae85a2a747494fe282d807"
         }
       }
     },

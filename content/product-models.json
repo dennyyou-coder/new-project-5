@@ -1966,7 +1966,9 @@
     "related": [
       "roborock-f25-ultra-steam-gen-2",
       "roborock-f25-ace-pro",
-      "dreame-t16-pro-heat"
+      "dreame-t16-pro-heat",
+      "shark-aquareach-wd551",
+      "tineco-floor-one-i7-fold"
     ],
     "announced": "2026-02-19",
     "verifiedAt": "2026-09-06",
@@ -2776,7 +2778,8 @@
       "roborock-f25-ultra-steam-gen-2",
       "dyson-pencilwash",
       "roborock-f25-pro-turbo",
-      "tineco-floor-one-station-s9-scientist-pro"
+      "tineco-floor-one-station-s9-scientist-pro",
+      "shark-aquareach-pro-wd563"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -4638,7 +4641,9 @@
     "related": [
       "dreame-t16-pro-heat",
       "dreame-t16-pro-steam",
-      "roborock-f25-ace-pro"
+      "roborock-f25-ace-pro",
+      "tineco-floor-one-s9-master",
+      "tineco-floor-one-i7-fold"
     ],
     "announced": "",
     "verifiedAt": "2026-09-12",
@@ -6635,5 +6640,409 @@
     "launchYear": 2026,
     "launchNote": "The V50 family was previewed at CES in January 2026; Cube also appeared in the September IFA lineup. This record verifies the German variant.",
     "launchSource": "https://www.prnewswire.com/news-releases/narwal-unveils-next-generation-smart-cleaning-lineup-at-ces-2026-headlined-by-flagship-flow-2-robot-vacuum-302652813.html"
+  },
+  {
+    "slug": "shark-aquareach-wd551",
+    "name": "Shark AquaReach WD551",
+    "brand": "Shark",
+    "brandSlug": "shark",
+    "category": "Floor washers",
+    "market": "United States · Essential bundle",
+    "summary": "A cordless wet-and-dry hard-surface cleaner with an extendable spray-and-suction wand and a standard rinse dock.",
+    "fit": "Homes where sealed floors, baseboards and awkward hard-surface corners need cleaning in the same session.",
+    "caution": "WD551 excludes the heated drying dock and Detailer Mop supplied with higher bundles. Confirm surface compatibility before wet cleaning.",
+    "facts": [
+      {
+        "label": "Wand",
+        "value": "Integrated extendable spray-and-suction wand",
+        "meaning": "Brings cleaning beyond the main floor nozzle."
+      },
+      {
+        "label": "Runtime headline",
+        "value": "Up to 40 minutes",
+        "meaning": "Official package headline; not a maximum-power guarantee."
+      },
+      {
+        "label": "Dock",
+        "value": "Standard self-cleaning charging dock",
+        "meaning": "Rinses the cleaning path; heated drying is a different bundle feature."
+      },
+      {
+        "label": "Listed weight",
+        "value": "12.61 lb",
+        "meaning": "Listed product weight; carrying and steering effort differ."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is AquaReach WD551 a carpet cleaner?",
+        "answer": "The checked model listing specifies sealed hard floors and surfaces. Do not transfer area-rug permissions from a different Shark HydroVac or carpet-cleaner model."
+      },
+      {
+        "question": "What can its wand clean?",
+        "answer": "Shark describes an extendable wand with targeted liquid spray and suction for compatible hard surfaces, including awkward floor areas and baseboards. Finish compatibility and safe access still matter."
+      },
+      {
+        "question": "How does WD551 differ from WD563?",
+        "answer": "WD551 includes a standard rinse dock and Stain Scrubber. WD563 adds the heated drying dock, Detailer Mop and extra supplies; its runtime listing also needs clarification."
+      },
+      {
+        "question": "Does the Essential dock dry with heated air?",
+        "answer": "No heated drying function is listed for the supplied standard dock. The separately sold heated dock and higher packages should not be treated as included equipment."
+      },
+      {
+        "question": "When did this model launch?",
+        "answer": "SharkNinja announced the US AquaReach family on 18 August 2026, with sales beginning that day. This guide covers the WD551 Essential configuration."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The US WD551 listing showed $349.99 on 12 September 2026, reduced from $399.99. This is a dated store price, with delivery and stock subject to the selected order."
+      },
+      {
+        "question": "Does self-cleaning remove all maintenance?",
+        "answer": "No. Used liquid and trapped debris still need disposal. Inspect the roller, filter and recovery path, then clean and dry removable parts according to the model instructions."
+      }
+    ],
+    "articles": [
+      "tineco-vs-shark-hydrovac-floor-washers",
+      "sharkninja-hit-product-pipeline"
+    ],
+    "related": [
+      "shark-aquareach-pro-wd563",
+      "tineco-floor-one-i7-fold",
+      "dyson-pencilwash"
+    ],
+    "announced": "2026-08-18",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US WD551 product and package details",
+        "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "AquaReach launch announcement",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-AquaReach-the-First-Vacuum--Mop-System-with-Extendable-Wand-Designed-to-Clean-Beyond-the-Floor/default.aspx"
+      },
+      {
+        "label": "Model-number support lookup",
+        "url": "https://www.sharkninja.com/parts-support/product-support"
+      },
+      {
+        "label": "WD563 package comparison",
+        "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "WD561 package comparison",
+        "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD561.html"
+      },
+      {
+        "label": "Optional heated drying dock",
+        "url": "https://www.sharkninja.com/shark-aquareach-heated-drying-charging-dock/XSKSANDOCK550.html"
+      }
+    ],
+    "imageSource": "https://assets.sharkninja.com/image/upload/v1786984952/SharkNinja-NA/WD551_01.png",
+    "launchYear": 2026,
+    "launchNote": "US AquaReach family announced and offered from 18 August 2026; this entry identifies the WD551 Essential package.",
+    "launchSource": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-AquaReach-the-First-Vacuum--Mop-System-with-Extendable-Wand-Designed-to-Clean-Beyond-the-Floor/default.aspx"
+  },
+  {
+    "slug": "shark-aquareach-pro-wd563",
+    "name": "Shark AquaReach Pro WD563",
+    "brand": "Shark",
+    "brandSlug": "shark",
+    "category": "Floor washers",
+    "market": "United States · Premium bundle",
+    "summary": "The AquaReach Premium package pairs an extendable cleaning wand with Stain Scrubber and Detailer Mop tools and a heated care dock.",
+    "fit": "Hard-floor households that will regularly use both wand tools and prefer dock-assisted roller drying.",
+    "caution": "WD563 is also labelled Premium; WD561 is a separate Pro bundle. The official WD563 page conflicts on 50 versus 60 minutes of runtime.",
+    "facts": [
+      {
+        "label": "Wand",
+        "value": "Extendable spray-and-suction system",
+        "meaning": "Supports targeted work outside the main floor-head path."
+      },
+      {
+        "label": "Included tools",
+        "value": "Stain Scrubber and Detailer Mop",
+        "meaning": "Both listed in the WD563 package."
+      },
+      {
+        "label": "Dock",
+        "value": "Heated self-cleaning and drying",
+        "meaning": "Care system for the roller; used-water disposal remains manual."
+      },
+      {
+        "label": "Listed weight",
+        "value": "12.81 lb",
+        "meaning": "Carrying weight and on-floor handling are separate considerations."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is WD563 called Pro or Premium?",
+        "answer": "The August launch called the $529.99 model AquaReach Pro. The current WD563 page uses Premium, while WD561 is shown as Pro. This guide keeps WD563 explicit to avoid mixing bundles."
+      },
+      {
+        "question": "Does WD563 run for 50 or 60 minutes?",
+        "answer": "The product summary and family comparison say 50 minutes; a technical field says 60. WCB has not resolved that conflict and does not treat 60 minutes as confirmed endurance."
+      },
+      {
+        "question": "Does the dock disinfect the floor?",
+        "answer": "No such conclusion follows from the cited claim. Shark’s bacterial-reduction test concerns the brushroll under controlled laboratory conditions, with household results varying."
+      },
+      {
+        "question": "What does the heated temperature describe?",
+        "answer": "The launch announcement describes drying air up to 160°F, approximately 71°C. This is dock care, not steam delivered to the floor."
+      },
+      {
+        "question": "Which extras distinguish WD563 from WD561?",
+        "answer": "The family comparison lists 16 oz of solution and an extra filter and mop pad for WD563. Both higher bundles list the two wand tools and a heated care dock."
+      },
+      {
+        "question": "What current price was checked?",
+        "answer": "The US WD563 page showed $479.99 on 12 September 2026, reduced from $529.99. That price belongs to the Premium package and may change."
+      },
+      {
+        "question": "What work remains after docking?",
+        "answer": "Dispose of recovered dirty water and solids, inspect the tools and air path, and follow care directions for the roller and filter. A heated dock does not remove the need to handle waste."
+      }
+    ],
+    "articles": [
+      "tineco-vs-shark-hydrovac-floor-washers",
+      "sharkninja-hit-product-pipeline"
+    ],
+    "related": [
+      "shark-aquareach-wd551",
+      "tineco-floor-one-s9-master",
+      "roborock-f25-ace-pro"
+    ],
+    "announced": "2026-08-18",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US WD563 product and package details",
+        "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "AquaReach Pro launch and drying claim",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-AquaReach-the-First-Vacuum--Mop-System-with-Extendable-Wand-Designed-to-Clean-Beyond-the-Floor/default.aspx"
+      },
+      {
+        "label": "Model-number support lookup",
+        "url": "https://www.sharkninja.com/parts-support/product-support"
+      },
+      {
+        "label": "WD551 Essential comparison",
+        "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "WD561 Pro comparison",
+        "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD561.html"
+      }
+    ],
+    "imageSource": "https://assets.sharkninja.com/image/upload/v1787579085/SharkNinja-NA/WD563_01.png",
+    "launchYear": 2026,
+    "launchNote": "US family launched 18 August 2026; the $529.99 launch link maps to WD563, now labelled Premium on the store.",
+    "launchSource": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-AquaReach-the-First-Vacuum--Mop-System-with-Extendable-Wand-Designed-to-Clean-Beyond-the-Floor/default.aspx"
+  },
+  {
+    "slug": "tineco-floor-one-i7-fold",
+    "name": "Tineco FLOOR ONE i7 Fold",
+    "brand": "Tineco",
+    "brandSlug": "tineco",
+    "category": "Floor washers",
+    "market": "Spain / EU · i7 Fold",
+    "summary": "A compact floor washer with a folding tube, 180° lay-flat access and separate clean- and dirty-water chambers.",
+    "fit": "Hard-floor homes where furniture access, storage height and carrying effort matter more than a large water reserve.",
+    "caution": "The compact 0.4 L dirty tank may need frequent emptying. The cited 85°C function is dock care, not steam floor cleaning.",
+    "facts": [
+      {
+        "label": "Folding tube",
+        "value": "180° foldable",
+        "meaning": "Changes reach and storage geometry."
+      },
+      {
+        "label": "Listed weight",
+        "value": "3.5 kg",
+        "meaning": "Regional store claim; confirm the delivered model and measurement basis."
+      },
+      {
+        "label": "Dirty-water capacity",
+        "value": "0.4 L",
+        "meaning": "Frequent wet messes can fill the tank before the battery runs out."
+      },
+      {
+        "label": "Runtime headline",
+        "value": "Up to 50 minutes",
+        "meaning": "Checked store table does not identify the mode for every condition."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is special about the i7 Fold?",
+        "answer": "Its folding tube and lay-flat body prioritise access and storage. Tineco introduced it for compact homes in its CES 2026 announcement."
+      },
+      {
+        "question": "Is the i7 Fold a steam washer?",
+        "answer": "No. The checked EU specifications explicitly mark hot-steam cleaning as absent. The 85°C FlashDry claim describes the self-care system."
+      },
+      {
+        "question": "Does 50 minutes mean a whole home without stopping?",
+        "answer": "No. Runtime depends on the selected mode and conditions, while the 0.7 L clean tank and 0.4 L waste tank can require separate refill and emptying stops."
+      },
+      {
+        "question": "Can it replace a dry handheld vacuum?",
+        "answer": "This entry covers a floor washer. The checked package does not establish a detachable dry handheld function, upholstery tools or carpet-cleaning approval."
+      },
+      {
+        "question": "How does it compare with S9 Master?",
+        "answer": "i7 Fold prioritises a folding tube and compact handling. The checked US S9 Master adds hot-water cleaning and larger 0.85 L / 0.7 L tanks; regional prices are not directly comparable."
+      },
+      {
+        "question": "Which market and price were verified?",
+        "answer": "The Spain-localised official EU store listed €499 on 12 September 2026. The product data allowed purchase, but fulfilment and final checkout terms should be confirmed for the delivery country."
+      },
+      {
+        "question": "What maintenance should an owner expect?",
+        "answer": "Empty waste, clear trapped hair and residue, and care for the filter and roller according to the manual. FlashDry or SilentDry does not replace dirty-water disposal."
+      }
+    ],
+    "articles": [
+      "tineco-vs-dreame-floor-washers",
+      "who-owns-tineco-ecovacs-group"
+    ],
+    "related": [
+      "tineco-floor-one-s9-master",
+      "tineco-floor-one-station-s9-scientist-pro",
+      "dyson-pencilwash"
+    ],
+    "announced": "2026-01-01",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Spain / EU i7 Fold specifications and offer",
+        "url": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "CES 2026 model introduction",
+        "url": "https://www.newswire.ca/news-releases/tineco-debuts-modern-living-concept-and-latest-smart-cleaning-lineup-at-ces-2026-800909923.html"
+      },
+      {
+        "label": "Official German i7 Fold product page",
+        "url": "https://de.tineco.com/products/i7-fold.html"
+      },
+      {
+        "label": "S9 Master technical comparison",
+        "url": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Station S9 Scientist Pro comparison",
+        "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0551/9032/3355/files/0e44a1e857d737112dc14a2239bda79c_bca1582c-1d61-473d-8eba-8e4d3882c15a.png?v=1776823893",
+    "launchYear": 2026,
+    "launchNote": "Announced on 1 January for a CES 2026 debut; specifications and price here refer to the checked Spain / EU i7 Fold offer.",
+    "launchSource": "https://www.newswire.ca/news-releases/tineco-debuts-modern-living-concept-and-latest-smart-cleaning-lineup-at-ces-2026-800909923.html"
+  },
+  {
+    "slug": "tineco-floor-one-s9-master",
+    "name": "Tineco FLOOR ONE S9 Master",
+    "brand": "Tineco",
+    "brandSlug": "tineco",
+    "category": "Floor washers",
+    "market": "United States · S9 Master",
+    "summary": "A hot-water floor washer with ThermoBlast spot treatment, a 3.9-inch lay-flat profile and separate fast and quiet roller-drying modes.",
+    "fit": "Hard-floor homes that want heated stain treatment and larger onboard tanks without a water-refill station.",
+    "caution": "Use US-specific heating and runtime figures. This model does not inherit the large refill station or specifications of other S9 variants.",
+    "facts": [
+      {
+        "label": "Targeted treatment",
+        "value": "ThermoBlast",
+        "meaning": "Hot-water treatment for local marks; do not relabel as steam."
+      },
+      {
+        "label": "Lay-flat profile",
+        "value": "3.9 in / 9.9 cm",
+        "meaning": "Allow additional practical clearance around furniture."
+      },
+      {
+        "label": "Clean-water capacity",
+        "value": "0.85 L",
+        "meaning": "Onboard capacity; not a large station reservoir."
+      },
+      {
+        "label": "Quiet-mode runtime",
+        "value": "Up to 65 minutes",
+        "meaning": "Manufacturer mode-specific rating."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does S9 Master mop at 85°C?",
+        "answer": "The US store describes continuous mopping at 126°F, approximately 52°C. The 85°C figure refers to drying air during self-care and must not be presented as the floor temperature."
+      },
+      {
+        "question": "Is ThermoBlast the same as steam cleaning?",
+        "answer": "The checked US description calls it hot-water treatment. This guide does not assign the steam specifications of S9 Artist Steam or other S9 models to S9 Master."
+      },
+      {
+        "question": "Does it include the 5 L refill station?",
+        "answer": "No such reservoir is part of the checked S9 Master configuration. Its onboard tanks are 0.85 L clean and 0.7 L dirty; Station S9 Scientist Pro is a separate product."
+      },
+      {
+        "question": "When can it reach 65 minutes of runtime?",
+        "answer": "The official specification assigns 65 minutes to Quiet mode and 50 minutes to Auto mode. Neither number is a promise of maximum-intensity heated cleaning for the same duration."
+      },
+      {
+        "question": "When was this US model introduced?",
+        "answer": "Tineco’s 1 January 2026 CES release introduced S9 Master to the US audience. This is evidence of the US introduction, not a claim that every regional Master model first existed in 2026."
+      },
+      {
+        "question": "What price should buyers expect?",
+        "answer": "The US store displayed $699 on 12 September 2026 and a separate $599 checkout promotion. WCB records the displayed $699 price; the lower amount is conditional and was not confirmed through checkout."
+      },
+      {
+        "question": "Does self-cleaning make ownership hands-free?",
+        "answer": "No. The owner still fills clean water, empties dirty water and inspects the roller, filter and recovery path. Drying modes help with one part of that routine."
+      }
+    ],
+    "articles": [
+      "tineco-vs-dreame-floor-washers",
+      "who-owns-tineco-ecovacs-group"
+    ],
+    "related": [
+      "tineco-floor-one-i7-fold",
+      "tineco-floor-one-station-s9-scientist-pro",
+      "shark-aquareach-pro-wd563"
+    ],
+    "announced": "2026-01-01",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US S9 Master technical specifications",
+        "url": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "US S9 Master store and heating details",
+        "url": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "CES 2026 US introduction",
+        "url": "https://www.newswire.ca/news-releases/tineco-debuts-modern-living-concept-and-latest-smart-cleaning-lineup-at-ces-2026-800909923.html"
+      },
+      {
+        "label": "i7 Fold regional comparison",
+        "url": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Station S9 Scientist Pro comparison",
+        "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0289/8450/8500/files/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner-6860505.jpg?v=1766659997",
+    "launchYear": 2026,
+    "launchNote": "Introduced to the US audience in Tineco’s 1 January CES 2026 announcement; this guide uses the checked US S9 Master specification.",
+    "launchSource": "https://www.newswire.ca/news-releases/tineco-debuts-modern-living-concept-and-latest-smart-cleaning-lineup-at-ces-2026-800909923.html"
   }
 ]
