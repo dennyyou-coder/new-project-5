@@ -1042,6 +1042,60 @@
         "outputHash": "sha256:40bd5e0d598abebdbe8a52a88bdf0f75cfdedbfc92d13e324f7e33100d9a7fcc"
       }
     },
+    "/images/articles/commercial-cleaning-robots-next/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 47870,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:907a3ad879b3df3619d5fee4e4d751ececcf41e9a16863af401151218e0c2f93",
+      "outputHash": "sha256:c5f80f6b519487087acede5fd2d6c6c7e05908358db8772709e97e59e34a11cb",
+      "mobile": {
+        "src": "/images/articles/commercial-cleaning-robots-next/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22566,
+        "outputHash": "sha256:6100e48d22655a7e3282e9bcb70423436bc5121d54a39d8401eb891ebcf005e7"
+      }
+    },
+    "/images/articles/commercial-cleaning-robots-next/02-evo-cleaner.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1024,
+      "height": 683,
+      "bytes": 61100,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fc7f2a0aa5cd3c6cd5a3c077d927d33260cb2d51328f4929a559c97c367abca9",
+      "outputHash": "sha256:3ec3d470f4bf41fa8af2d4a24e227ea03df63c27379bfe5e93a3938afa5f1d06",
+      "mobile": {
+        "src": "/images/articles/commercial-cleaning-robots-next/02-evo-cleaner-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 40486,
+        "outputHash": "sha256:10ff83cbed2c162d80be391ef57e7ccf53a8d0b593e7f108deb237caa55da485"
+      }
+    },
+    "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 80282,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:56ab2b99c25eb3b37dcc5945ccd68c4e13457ef13bf0403f37c5a41e88524553",
+      "outputHash": "sha256:6d6b627f25254a96a3feaf7d0f2e4ce565594f93d874693e7d28b5a28470b835",
+      "mobile": {
+        "src": "/images/articles/commercial-cleaning-robots-next/03-buyer-value-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 35722,
+        "outputHash": "sha256:8e408432979782f56544e46ff69efdcbe1d4fb72f760aff8d0137135e3637885"
+      }
+    },
     "/images/articles/cordless-vacuum-battery-drains-fast/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -32518,6 +32572,14 @@
         "/images/blog/commercial-cleaning-robot-adoption-tco-framework.webp"
       ]
     },
+    "commercial-cleaning-robots-next": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/commercial-cleaning-robots-next/01-cover.webp",
+      "body": [
+        "/images/articles/commercial-cleaning-robots-next/02-evo-cleaner.webp",
+        "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp"
+      ]
+    },
     "commercial-floor-scrubber-buying-guide": {
       "budgetClass": "standard",
       "cover": "/images/blog/commercial-floor-scrubber-buying-sequence.webp",
@@ -36507,6 +36569,25 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp",
           "hash": "sha256:94549e829ce20918416f38b0549b9deb697ff3cbe6978522bfc0d6bc4b70212f"
+        }
+      }
+    },
+    "commercial-cleaning-robots-next": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-cleaning-robots-next/01-cover.webp",
+          "hash": "sha256:907a3ad879b3df3619d5fee4e4d751ececcf41e9a16863af401151218e0c2f93"
+        },
+        "02-evo-cleaner.webp": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-cleaning-robots-next/02-evo-cleaner.webp",
+          "hash": "sha256:fc7f2a0aa5cd3c6cd5a3c077d927d33260cb2d51328f4929a559c97c367abca9"
+        },
+        "03-buyer-value.webp": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp",
+          "hash": "sha256:56ab2b99c25eb3b37dcc5945ccd68c4e13457ef13bf0403f37c5a41e88524553"
         }
       }
     },
