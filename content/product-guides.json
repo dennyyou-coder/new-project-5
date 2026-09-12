@@ -11453,5 +11453,769 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "narwal-freo-20": {
+    "verdict": "Freo 20 is worth comparing when continuous track rinsing and camera-based obstacle sensing match the home’s main cleaning problems. Check furniture and thresholds before choosing it for difficult access.",
+    "notFor": "Homes whose primary requirement is a confirmed single vertical 4 cm climb, or buyers expecting the dock to remove all water-system maintenance.",
+    "specifications": [
+      {
+        "label": "Mop system",
+        "value": "FlowWash circulating track",
+        "meaning": "Fresh-water rinsing and separated dirty-water collection during cleaning.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Mopping-water claim",
+        "value": "Up to 60°C / 140°F",
+        "meaning": "Temperature describes the water supplied to the mop, not a guaranteed floor temperature.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Water distribution",
+        "value": "16 nozzles",
+        "meaning": "Inspect the water path and clean it according to the manual.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Downward mop pressure",
+        "value": "12 N",
+        "meaning": "Manufacturer contact-pressure claim, not an independent stain-removal result.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Maximum suction",
+        "value": "31,000 Pa",
+        "meaning": "Maximum suction does not establish pickup quality on every floor.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Obstacle sensing",
+        "value": "TwinAI dual 1080p RGB cameras",
+        "meaning": "Camera detection cannot guarantee avoidance of every cable or contaminant.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Recognition claim",
+        "value": "300+ object types",
+        "meaning": "A manufacturer model-capability claim, not perfect recognition in a specific home.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Body height",
+        "value": "95 mm / 3.74 in",
+        "meaning": "Allow practical furniture clearance beyond the listed body measurement.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Threshold claim",
+        "value": "Up to 40 mm / 1.57 in",
+        "meaning": "The checked headline does not establish that every single vertical step of this height is traversable.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Brush system",
+        "value": "Conical roller and auto-reversing side brush",
+        "meaning": "Designed to reduce hair wrapping; inspection remains necessary.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Mop edge gap",
+        "value": "Below 0.19 in in manufacturer testing",
+        "meaning": "Tested reach does not guarantee complete coverage around every skirting profile.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Short recharge test",
+        "value": "20% to 43% battery in 30 minutes",
+        "meaning": "The associated 86-minute result is a partial-recharge test, not a full-charge runtime.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Station washing",
+        "value": "45–100°C in the official FAQ",
+        "meaning": "Station temperature is separate from onboard mopping-water temperature.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Station drying",
+        "value": "Up to 60°C hot air",
+        "meaning": "A station function; do not infer whole-home sterilisation.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Dust-storage claim",
+        "value": "Up to 120 days",
+        "meaning": "Debris load changes bag replacement frequency; not a maintenance-free interval.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "App controls",
+        "value": "Multi-level maps, no-go zones and schedules",
+        "meaning": "Set the map and cleaning plan for the actual household.",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 1,099.99",
+        "source": "https://us.narwal.com/products/freo-20-robot-vacuum?variant=52872168800437",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Freo 20 with Free Advanced Kit, checked 12 September 2026. The expired $899.99 launch promotion is not treated as current."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Narwal Freo 20",
+          "url": "https://us.narwal.com/products/freo-20-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Narwal Freo 20 Edge",
+          "url": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Narwal Flow 2",
+          "url": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Maximum suction",
+          "values": [
+            "31,000 Pa",
+            "31,000 Pa",
+            "31,000 Pa"
+          ]
+        },
+        {
+          "label": "Body height",
+          "values": [
+            "95 mm",
+            "95 mm; 100 mm entry clearance",
+            "95 mm"
+          ]
+        },
+        {
+          "label": "Obstacle sensing",
+          "values": [
+            "Dual 1080p RGB cameras",
+            "3D structured light",
+            "Dual 1080p cameras plus additional sensing"
+          ]
+        },
+        {
+          "label": "Dock drying claim",
+          "values": [
+            "Up to 60°C",
+            "45°C at air outlet",
+            "40°C in retail feature list"
+          ]
+        },
+        {
+          "label": "Buying configuration",
+          "values": [
+            "US Freo 20 + Advanced Kit",
+            "US launch announced; checkout unverified",
+            "Tank or plumbed-station configurations"
+          ]
+        }
+      ],
+      "takeaway": "The shared suction number hides meaningful differences in sensing, heating and station configuration. Match those systems to the home and verify the selected offer."
+    },
+    "resources": [
+      {
+        "label": "US Freo 20 features and FAQ",
+        "url": "https://us.narwal.com/products/freo-20-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Selected US Advanced Kit package",
+        "url": "https://us.narwal.com/products/freo-20-robot-vacuum?variant=52872168800437",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Freo 20 announcement, 6 August 2026",
+        "url": "https://us.narwal.com/blogs/press/new-freo-20-bringing-flagship-real-time-self-cleaning-mopping",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "narwal-freo-20-edge": {
+    "verdict": "Freo 20 Edge offers a useful specification-led shortlist for extended track mopping. Confirm regional sale status and the exact configuration before relying on the announced launch offer.",
+    "notFor": "Buyers needing immediate verified US checkout, confirmed 60°C onboard mopping, or furniture clearance below the stated 100 mm minimum.",
+    "specifications": [
+      {
+        "label": "Mop system",
+        "value": "FlowWash fresh-water track",
+        "meaning": "The checked Edge page does not establish Freo 20’s 60°C onboard hot-water claim.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Track width",
+        "value": "26.6 cm",
+        "meaning": "Measured edge to edge in the manufacturer footnote.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Mop pressure",
+        "value": "12 N",
+        "meaning": "Measured at the mop contact point in laboratory testing.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Mop extension",
+        "value": "Up to 5 cm from the robot body",
+        "meaning": "Maximum extension, not guaranteed coverage in every corner.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Maximum suction",
+        "value": "31,000 Pa in Max mode",
+        "meaning": "Manufacturer pressure test, not an independent cleaning ranking.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Mop lift",
+        "value": "12 mm",
+        "meaning": "Check rug pile and carpet settings.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Navigation",
+        "value": "dToF LiDAR",
+        "meaning": "Different from a guarantee of dual RGB-camera hardware.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Obstacle sensing",
+        "value": "3D structured light",
+        "meaning": "The specified sensing method on the US comparison table.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Recognition claim",
+        "value": "150+ object types",
+        "meaning": "Manufacturer claim; actual detection varies with objects and environment.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Body / entry clearance",
+        "value": "95 mm body; at least 100 mm clearance",
+        "meaning": "Follow the explicit furniture-entry footnote.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Battery",
+        "value": "5,200 mAh rated",
+        "meaning": "Battery capacity does not establish runtime at maximum suction.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Per-charge area",
+        "value": "Up to 222 m²",
+        "meaning": "Tested in Standard Vacuum & Mop mode.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Per-fill area",
+        "value": "Up to 302 m²",
+        "meaning": "A separate Mop Only Standard test; do not combine with per-charge coverage.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Station drying",
+        "value": "45°C at the air outlet",
+        "meaning": "Manufacturer test definition; not a floor temperature.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Dust storage",
+        "value": "Up to 120 days",
+        "meaning": "Conditional dust-bag duration; water-system care remains necessary.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Charging behaviour",
+        "value": "Recharge/resume and off-peak scheduling",
+        "meaning": "Configure charging and cleaning around the household routine.",
+        "source": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 799.99",
+        "source": "https://www.prnewswire.com/news-releases/narwal-expands-ai-powered-cleaning-across-the-home-as-ifa-2026-returns-to-berlin-302868793.html",
+        "kind": "Announced MSRP — checkout unverified",
+        "date": "2026-09-12",
+        "note": "Announced MSRP. The release also scheduled $699.99 for 7–20 September; current checkout remains unverified as of 12 September 2026."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Narwal Freo 20 Edge",
+          "url": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Narwal Freo 20",
+          "url": "https://us.narwal.com/products/freo-20-robot-vacuum",
+          "market": "United States"
+        },
+        {
+          "name": "Narwal Flow 2",
+          "url": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Maximum suction",
+          "values": [
+            "31,000 Pa",
+            "31,000 Pa",
+            "31,000 Pa"
+          ]
+        },
+        {
+          "label": "Body height",
+          "values": [
+            "95 mm; 100 mm entry clearance",
+            "95 mm",
+            "95 mm"
+          ]
+        },
+        {
+          "label": "Obstacle sensing",
+          "values": [
+            "3D structured light",
+            "Dual 1080p RGB cameras",
+            "Dual 1080p cameras plus additional sensing"
+          ]
+        },
+        {
+          "label": "Dock drying claim",
+          "values": [
+            "45°C at air outlet",
+            "Up to 60°C",
+            "40°C in retail feature list"
+          ]
+        },
+        {
+          "label": "Buying configuration",
+          "values": [
+            "US launch announced; checkout unverified",
+            "US Freo 20 + Advanced Kit",
+            "Tank or plumbed-station configurations"
+          ]
+        }
+      ],
+      "takeaway": "Edge prioritises fresh-water track coverage with a different sensing and drying specification. Verify sales status independently of the launch announcement."
+    },
+    "resources": [
+      {
+        "label": "US Edge feature page and test footnotes",
+        "url": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Narwal September 2026 announcement",
+        "url": "https://www.prnewswire.com/news-releases/narwal-expands-ai-powered-cleaning-across-the-home-as-ifa-2026-returns-to-berlin-302868793.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Freo 20 comparison",
+        "url": "https://us.narwal.com/products/freo-20-robot-vacuum",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "narwal-v50": {
+    "verdict": "Standard V50 suits buyers who accept manual emptying and can complete their routine with one battery. Its package should be judged separately from the station-equipped Cube promoted on the same page.",
+    "notFor": "Buyers requiring automatic dust emptying or expecting the advertised two-battery Cube package at the base V50 price.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Dry cordless stick and handheld",
+        "meaning": "Not a wet floor washer or liquid-recovery vacuum.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Maximum suction power",
+        "value": "210 AW",
+        "meaning": "Air watts are distinct from pressure and from measured debris pickup.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Handheld-unit weight",
+        "value": "1.4 kg",
+        "meaning": "This is not the fully assembled floor-cleaner weight.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Battery configuration",
+        "value": "One removable pack",
+        "meaning": "Use the selected variant rather than the family banner.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Battery capacity",
+        "value": "3,000 mAh per pack",
+        "meaning": "Two packs require a swap; they are not one continuous 6,000 mAh pack.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 90 minutes",
+        "meaning": "Eco mode with crevice tool; not powered-floor-head runtime at maximum suction.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Automatic emptying",
+        "value": "Not included",
+        "meaning": "Cube has the automatic-empty station; the standard model does not.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Dirt response",
+        "value": "AI DirtSense",
+        "meaning": "Automatically adjusts cleaning power in response to detected debris.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Carpet feature",
+        "value": "CarpetFocus",
+        "meaning": "Head behaviour is intended to improve cleaning contact on carpet.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Dust illumination",
+        "value": "145° cyan light",
+        "meaning": "Illumination angle is not a measured pickup score.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Primary head",
+        "value": "Anti-tangle floor brush",
+        "meaning": "Brush inspection is still necessary.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Additional tools",
+        "value": "Motorised brush and 2-in-1 crevice tool",
+        "meaning": "Confirm the exact regional package and accessory list.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Active dock brush detangling",
+        "value": "Not included",
+        "meaning": "Distinct from the anti-tangle shape of the floor brush itself.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Automatic dust scraping",
+        "value": "Not included",
+        "meaning": "The comparison table separates Cube’s scraping system from the base model.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Accessory storage",
+        "value": "External holder",
+        "meaning": "Allow usable access to the stored tools.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Station footprint",
+        "value": "Not verified — conflicting repeated dimension labels",
+        "meaning": "The page labels two different station sizes as Cube; confirm the exact variant manual before fitting a tight space.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany",
+        "amount": "EUR 399",
+        "source": "https://de.narwal.com/products/v50?variant=53940716601620",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Selected standard package including VAT, checked 12 September 2026; coupons and regional availability are separate."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Narwal V50",
+          "url": "https://de.narwal.com/products/v50?variant=53940716601620",
+          "market": "Germany"
+        },
+        {
+          "name": "Narwal V50 Cube",
+          "url": "https://de.narwal.com/products/v50?variant=53940716634388",
+          "market": "Germany"
+        },
+        {
+          "name": "Dyson V10 Konical",
+          "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Maximum suction power",
+          "values": [
+            "210 AW",
+            "210 AW",
+            "150 AW"
+          ]
+        },
+        {
+          "label": "Included batteries",
+          "values": [
+            "One",
+            "Two",
+            "One"
+          ]
+        },
+        {
+          "label": "Maximum runtime basis",
+          "values": [
+            "90 min; Eco + crevice",
+            "180 min combined; Eco + crevice",
+            "60 min; Eco handheld"
+          ]
+        },
+        {
+          "label": "Auto-empty arrangement",
+          "values": [
+            "Not included",
+            "Included station",
+            "Optional Auto-empty Dok"
+          ]
+        },
+        {
+          "label": "Standard extra tools",
+          "values": [
+            "Motorised brush; 2-in-1 crevice",
+            "Motorised brush; 2-in-1 crevice",
+            "Mini motorised tool; crevice tool"
+          ]
+        }
+      ],
+      "takeaway": "The V50-to-Cube difference is primarily battery count and post-cleaning handling. Cross-brand offers use different markets and runtime test conditions."
+    },
+    "resources": [
+      {
+        "label": "German selected configuration and comparison",
+        "url": "https://de.narwal.com/products/v50?variant=53940716601620",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Narwal V50 family at CES 2026",
+        "url": "https://www.prnewswire.com/news-releases/narwal-unveils-next-generation-smart-cleaning-lineup-at-ces-2026-headlined-by-flagship-flow-2-robot-vacuum-302652813.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Narwal September 2026 lineup and availability",
+        "url": "https://www.prnewswire.com/news-releases/narwal-expands-ai-powered-cleaning-across-the-home-as-ifa-2026-returns-to-berlin-302868793.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "narwal-v50-cube": {
+    "verdict": "V50 Cube is worth the extra station space when automatic emptying and the second battery reduce recurring work. Compare the exact German package and ongoing supplies rather than the shared page’s starting price.",
+    "notFor": "Buyers expecting three hours at maximum power, wet pickup or a confirmed current US offer.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Dry cordless stick and handheld",
+        "meaning": "Not a wet floor washer or liquid-recovery vacuum.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Maximum suction power",
+        "value": "210 AW",
+        "meaning": "Air watts are distinct from pressure and from measured debris pickup.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Handheld-unit weight",
+        "value": "1.4 kg",
+        "meaning": "This is not the fully assembled floor-cleaner weight.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Battery configuration",
+        "value": "Two removable packs",
+        "meaning": "Use the selected variant rather than the family banner.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Battery capacity",
+        "value": "3,000 mAh per pack",
+        "meaning": "Two packs require a swap; they are not one continuous 6,000 mAh pack.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "180 minutes combined; 90 per pack",
+        "meaning": "Eco mode with crevice tool; not powered-floor-head runtime at maximum suction.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Automatic emptying",
+        "value": "Included",
+        "meaning": "Cube has the automatic-empty station; the standard model does not.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Dirt response",
+        "value": "AI DirtSense",
+        "meaning": "Automatically adjusts cleaning power in response to detected debris.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Carpet feature",
+        "value": "CarpetFocus",
+        "meaning": "Head behaviour is intended to improve cleaning contact on carpet.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Dust illumination",
+        "value": "145° cyan light",
+        "meaning": "Illumination angle is not a measured pickup score.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Primary head",
+        "value": "Anti-tangle floor brush",
+        "meaning": "Brush inspection is still necessary.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Additional tools",
+        "value": "Motorised brush and 2-in-1 crevice tool",
+        "meaning": "Confirm the exact regional package and accessory list.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Active dock brush detangling",
+        "value": "Included",
+        "meaning": "Distinct from the anti-tangle shape of the floor brush itself.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Automatic dust scraping",
+        "value": "Included",
+        "meaning": "The comparison table separates Cube’s scraping system from the base model.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Accessory storage",
+        "value": "Inside the station",
+        "meaning": "Allow usable access to the stored tools.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Station footprint",
+        "value": "Not verified — conflicting repeated dimension labels",
+        "meaning": "The page labels two different station sizes as Cube; confirm the exact variant manual before fitting a tight space.",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany",
+        "amount": "EUR 549",
+        "source": "https://de.narwal.com/products/v50?variant=53940716634388",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Selected standard package including VAT, checked 12 September 2026; coupons and regional availability are separate."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Narwal V50 Cube",
+          "url": "https://de.narwal.com/products/v50?variant=53940716634388",
+          "market": "Germany"
+        },
+        {
+          "name": "Narwal V50",
+          "url": "https://de.narwal.com/products/v50?variant=53940716601620",
+          "market": "Germany"
+        },
+        {
+          "name": "Dyson V10 Konical",
+          "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Maximum suction power",
+          "values": [
+            "210 AW",
+            "210 AW",
+            "150 AW"
+          ]
+        },
+        {
+          "label": "Included batteries",
+          "values": [
+            "Two",
+            "One",
+            "One"
+          ]
+        },
+        {
+          "label": "Maximum runtime basis",
+          "values": [
+            "180 min combined; Eco + crevice",
+            "90 min; Eco + crevice",
+            "60 min; Eco handheld"
+          ]
+        },
+        {
+          "label": "Auto-empty arrangement",
+          "values": [
+            "Included station",
+            "Not included",
+            "Optional Auto-empty Dok"
+          ]
+        },
+        {
+          "label": "Standard extra tools",
+          "values": [
+            "Motorised brush; 2-in-1 crevice",
+            "Motorised brush; 2-in-1 crevice",
+            "Mini motorised tool; crevice tool"
+          ]
+        }
+      ],
+      "takeaway": "The V50-to-Cube difference is primarily battery count and post-cleaning handling. Cross-brand offers use different markets and runtime test conditions."
+    },
+    "resources": [
+      {
+        "label": "German selected configuration and comparison",
+        "url": "https://de.narwal.com/products/v50?variant=53940716634388",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Narwal V50 family at CES 2026",
+        "url": "https://www.prnewswire.com/news-releases/narwal-unveils-next-generation-smart-cleaning-lineup-at-ces-2026-headlined-by-flagship-flow-2-robot-vacuum-302652813.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Narwal September 2026 lineup and availability",
+        "url": "https://www.prnewswire.com/news-releases/narwal-expands-ai-powered-cleaning-across-the-home-as-ifa-2026-returns-to-berlin-302868793.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }
