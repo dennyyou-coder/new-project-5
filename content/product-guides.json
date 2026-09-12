@@ -12217,5 +12217,769 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "shark-aquareach-wd551": {
+    "verdict": "AquaReach WD551 deserves attention for hard-surface access: the wand can address jobs a full-width floor head cannot reach. Its value depends on using that attachment often enough to justify another water-based cleaning system.",
+    "notFor": "Carpet-first homes or buyers who require a heated drying dock in the standard box.",
+    "specifications": [
+      {
+        "label": "Model and bundle",
+        "value": "WD551 · Essential",
+        "meaning": "Use the model code to distinguish accessories and dock.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Cleaning system",
+        "value": "Simultaneous vacuuming and mopping",
+        "meaning": "Designed to collect wet messes and loose debris on compatible hard surfaces.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Wand",
+        "value": "Integrated extendable spray-and-suction wand",
+        "meaning": "Brings cleaning beyond the main floor nozzle.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Included wand tool",
+        "value": "Stain Scrubber",
+        "meaning": "Detailer Mop is not included in this Essential package.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Floor compatibility",
+        "value": "Sealed hard floors and surfaces",
+        "meaning": "Check the finish manufacturer’s water-care instructions.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Runtime headline",
+        "value": "Up to 40 minutes",
+        "meaning": "Official package headline; not a maximum-power guarantee.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Dock",
+        "value": "Standard self-cleaning charging dock",
+        "meaning": "Rinses the cleaning path; heated drying is a different bundle feature.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Water system",
+        "value": "Separate clean and dirty tanks",
+        "meaning": "Keeps supplied solution separate from recovered waste.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Debris disposal",
+        "value": "Solid and liquid separation",
+        "meaning": "Dispose of captured solids before rinsing the waste container.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Visibility",
+        "value": "Reveal LED beam",
+        "meaning": "Lighting assists inspection; it does not detect cleanliness chemically.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Brush care during use",
+        "value": "Continuous brushroll refresh",
+        "meaning": "Routine inspection and after-use cleaning still apply.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Listed weight",
+        "value": "12.61 lb",
+        "meaning": "Listed product weight; carrying and steering effort differ.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Dimensions",
+        "value": "11.61 × 11.02 × 43.9 in",
+        "meaning": "Manufacturer order: length × width × height.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Cleaning solution in box",
+        "value": "12 oz Shark Hydro concentrate",
+        "meaning": "Follow the supplied dilution instructions.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "US limited warranty",
+        "value": "3 years",
+        "meaning": "Eligibility and exclusions depend on the seller and terms.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      },
+      {
+        "label": "Tank capacities",
+        "value": "Not verified in the checked model listing",
+        "meaning": "Confirm usable capacities if frequent emptying is a purchase concern.",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · WD551",
+        "amount": "USD 349.99",
+        "source": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Essential package; regular comparison price $399.99. Checked 12 September 2026; taxes and delivery depend on the order."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Shark AquaReach WD551",
+          "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html",
+          "market": "United States · WD551"
+        },
+        {
+          "name": "Shark AquaReach Pro WD561",
+          "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD561.html",
+          "market": "United States · WD561"
+        },
+        {
+          "name": "Shark AquaReach Pro WD563",
+          "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html",
+          "market": "United States · WD563"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Model code",
+          "values": [
+            "WD551 Essential",
+            "WD561 Pro",
+            "WD563 Premium / Pro bundle"
+          ]
+        },
+        {
+          "label": "Wand tools",
+          "values": [
+            "Stain Scrubber",
+            "Stain Scrubber + Detailer Mop",
+            "Stain Scrubber + Detailer Mop"
+          ]
+        },
+        {
+          "label": "Dock",
+          "values": [
+            "Standard rinse and charge",
+            "Heated self-cleaning and drying",
+            "Heated self-cleaning and drying"
+          ]
+        },
+        {
+          "label": "Runtime description",
+          "values": [
+            "40 min headline",
+            "50 min comparison headline",
+            "50 min headline; specification field says 60 min"
+          ]
+        },
+        {
+          "label": "Package extras",
+          "values": [
+            "12 oz solution",
+            "12 oz solution",
+            "16 oz solution; extra filter and mop pad"
+          ]
+        }
+      ],
+      "takeaway": "Choose by model code, dock and attachments. The Essential price does not include every function shown elsewhere on the shared AquaReach family page."
+    },
+    "resources": [
+      {
+        "label": "US WD551 product and package details",
+        "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "AquaReach launch announcement",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-AquaReach-the-First-Vacuum--Mop-System-with-Extendable-Wand-Designed-to-Clean-Beyond-the-Floor/default.aspx",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Model-number support lookup",
+        "url": "https://www.sharkninja.com/parts-support/product-support",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "shark-aquareach-pro-wd563": {
+    "verdict": "WD563 is the more complete AquaReach package for buyers who will use the Detailer Mop and heated roller care. Confirm the model code and unresolved endurance figure before paying for the upgrade.",
+    "notFor": "Buyers seeking verified 60-minute endurance, carpet extraction or a guarantee of whole-home disinfection.",
+    "specifications": [
+      {
+        "label": "Model and bundle",
+        "value": "WD563 · Premium / Pro bundle",
+        "meaning": "Current page calls this Premium; the launch release used AquaReach Pro.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Cleaning system",
+        "value": "Wet-and-dry hard-surface washing",
+        "meaning": "Not an independently tested carpet or upholstery cleaner.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Wand",
+        "value": "Extendable spray-and-suction system",
+        "meaning": "Supports targeted work outside the main floor-head path.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Included tools",
+        "value": "Stain Scrubber and Detailer Mop",
+        "meaning": "Both listed in the WD563 package.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Dock",
+        "value": "Heated self-cleaning and drying",
+        "meaning": "Care system for the roller; used-water disposal remains manual.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Drying-air claim",
+        "value": "Up to 160°F / about 71°C",
+        "meaning": "Launch-release air temperature; not floor temperature.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-AquaReach-the-First-Vacuum--Mop-System-with-Extendable-Wand-Designed-to-Clean-Beyond-the-Floor/default.aspx"
+      },
+      {
+        "label": "Bacterial-reduction claim",
+        "value": "Brushroll only, under laboratory conditions",
+        "meaning": "Do not interpret the dock claim as home or floor disinfection.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-AquaReach-the-First-Vacuum--Mop-System-with-Extendable-Wand-Designed-to-Clean-Beyond-the-Floor/default.aspx"
+      },
+      {
+        "label": "Runtime",
+        "value": "Not verified: 50 min headline / 60 min specification field",
+        "meaning": "The official page contains conflicting values; confirm the exact mode and SKU.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Listed charging time",
+        "value": "3 hours",
+        "meaning": "Manufacturer field; actual time depends on battery state and conditions.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Water management",
+        "value": "Separate clean and dirty tanks",
+        "meaning": "Empty waste and inspect solids after use.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Reveal lighting",
+        "value": "LED illumination at the floor head",
+        "meaning": "Assists visibility during cleaning.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Listed weight",
+        "value": "12.81 lb",
+        "meaning": "Carrying weight and on-floor handling are separate considerations.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Dimensions",
+        "value": "11.61 × 11.02 × 43.9 in",
+        "meaning": "Listed length × width × height.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Cleaning solution",
+        "value": "16 oz concentrate",
+        "meaning": "Larger starter quantity than the Essential bundle.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "Included spares",
+        "value": "2 filters and 2 Detailer Mop pads in total",
+        "meaning": "Check the delivered contents against the selected package.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      },
+      {
+        "label": "US limited warranty",
+        "value": "3 years",
+        "meaning": "Check eligibility and exclusions for the seller.",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · WD563",
+        "amount": "USD 479.99",
+        "source": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Premium / Pro package; $529.99 comparison price. Checked 12 September 2026; does not describe WD561."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Shark AquaReach WD551",
+          "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html",
+          "market": "United States · WD551"
+        },
+        {
+          "name": "Shark AquaReach Pro WD561",
+          "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD561.html",
+          "market": "United States · WD561"
+        },
+        {
+          "name": "Shark AquaReach Pro WD563",
+          "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html",
+          "market": "United States · WD563"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Model code",
+          "values": [
+            "WD551 Essential",
+            "WD561 Pro",
+            "WD563 Premium / Pro bundle"
+          ]
+        },
+        {
+          "label": "Wand tools",
+          "values": [
+            "Stain Scrubber",
+            "Stain Scrubber + Detailer Mop",
+            "Stain Scrubber + Detailer Mop"
+          ]
+        },
+        {
+          "label": "Dock",
+          "values": [
+            "Standard rinse and charge",
+            "Heated self-cleaning and drying",
+            "Heated self-cleaning and drying"
+          ]
+        },
+        {
+          "label": "Runtime description",
+          "values": [
+            "40 min headline",
+            "50 min comparison headline",
+            "50 min headline; specification field says 60 min"
+          ]
+        },
+        {
+          "label": "Package extras",
+          "values": [
+            "12 oz solution",
+            "12 oz solution",
+            "16 oz solution; extra filter and mop pad"
+          ]
+        }
+      ],
+      "takeaway": "The useful upgrade is the dock-and-tool package. Verify endurance separately: conflicting official runtime fields should not be turned into a confirmed performance claim."
+    },
+    "resources": [
+      {
+        "label": "US WD563 product and package details",
+        "url": "https://www.sharkninja.com/shark-aquareach-pro-vacuum-mop/WD563.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "AquaReach Pro launch and drying claim",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-AquaReach-the-First-Vacuum--Mop-System-with-Extendable-Wand-Designed-to-Clean-Beyond-the-Floor/default.aspx",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Model-number support lookup",
+        "url": "https://www.sharkninja.com/parts-support/product-support",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "tineco-floor-one-i7-fold": {
+    "verdict": "i7 Fold is a practical shortlist candidate when furniture access and storage are the main obstacles to frequent floor washing. Check tank handling before choosing it for large uninterrupted jobs.",
+    "notFor": "Buyers requiring floor-applied steam, a detachable dry handheld unit or a large dirty-water reservoir.",
+    "specifications": [
+      {
+        "label": "Folding tube",
+        "value": "180° foldable",
+        "meaning": "Changes reach and storage geometry.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Reclining body",
+        "value": "180° lay-flat design",
+        "meaning": "Use actual furniture openings to assess access.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Maximum suction",
+        "value": "22,000 Pa",
+        "meaning": "Manufacturer maximum; not an independent pickup rating.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Listed weight",
+        "value": "3.5 kg",
+        "meaning": "Regional store claim; confirm the delivered model and measurement basis.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Clean-water capacity",
+        "value": "0.7 L",
+        "meaning": "Tank capacity does not establish cleaned area per fill.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Dirty-water capacity",
+        "value": "0.4 L",
+        "meaning": "Frequent wet messes can fill the tank before the battery runs out.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Runtime headline",
+        "value": "Up to 50 minutes",
+        "meaning": "Checked store table does not identify the mode for every condition.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Water separation",
+        "value": "Three-chamber arrangement",
+        "meaning": "Supports lay-flat operation while separating the fluid path.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Hair management",
+        "value": "DualBlock anti-tangle",
+        "meaning": "Inspect the roller even with an anti-tangle design.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Edge cleaning",
+        "value": "Both sides",
+        "meaning": "Corner shape and skirting profiles still affect access.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Dirt sensing",
+        "value": "iLoop",
+        "meaning": "Adjusts cleaning response; not a hygiene certification.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Display",
+        "value": "LED",
+        "meaning": "Read operating prompts and care alerts.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Fast drying claim",
+        "value": "85°C / 5-minute FlashDry",
+        "meaning": "Self-care specification, not a floor-contact temperature.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Alternative drying",
+        "value": "SilentDry",
+        "meaning": "A separate care mode; the quoted noise level is not vacuuming noise.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Roller self-cleaning",
+        "value": "Bidirectional 720° rotation",
+        "meaning": "Does not eliminate inspection of the roller and tray.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      },
+      {
+        "label": "Steam cleaning",
+        "value": "No steam function in the checked EU table",
+        "meaning": "Choose another model if floor-applied steam is a firm requirement.",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Spain / EU",
+        "amount": "EUR 499.00",
+        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Spain-localised official EU store snapshot on 12 September 2026. Confirm delivery country and final checkout price; this is not a US offer."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Tineco FLOOR ONE i7 Fold",
+          "url": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo",
+          "market": "Spain / EU"
+        },
+        {
+          "name": "Tineco FLOOR ONE S9 Master",
+          "url": "https://us.tineco.com/products/floor-one-s9-master.html",
+          "market": "United States"
+        },
+        {
+          "name": "Tineco FLOOR ONE STATION S9 Scientist Pro",
+          "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Design priority",
+          "values": [
+            "Foldable tube and low-clearance access",
+            "Hot-water cleaning and targeted ThermoBlast",
+            "Station-assisted water replenishment"
+          ]
+        },
+        {
+          "label": "Published maximum suction",
+          "values": [
+            "22,000 Pa",
+            "23,000 Pa",
+            "25,000 Pa"
+          ]
+        },
+        {
+          "label": "Onboard tanks: clean / dirty",
+          "values": [
+            "0.7 / 0.4 L",
+            "0.85 / 0.7 L",
+            "0.85 / 0.72 L"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "Up to 50 min; confirm mode",
+            "65 min Quiet / 50 min Auto",
+            "Up to 100 min; confirm mode"
+          ]
+        },
+        {
+          "label": "Refill arrangement",
+          "values": [
+            "Manual tank filling",
+            "Manual tank filling",
+            "5 L station reservoir"
+          ]
+        }
+      ],
+      "takeaway": "The three models solve different constraints: foldable access, heated onboard washing, or station-based replenishment. Compare those routines before ranking maximum suction."
+    },
+    "resources": [
+      {
+        "label": "Spain / EU i7 Fold specifications and offer",
+        "url": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 model introduction",
+        "url": "https://www.newswire.ca/news-releases/tineco-debuts-modern-living-concept-and-latest-smart-cleaning-lineup-at-ces-2026-800909923.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Official German i7 Fold product page",
+        "url": "https://de.tineco.com/products/i7-fold.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "tineco-floor-one-s9-master": {
+    "verdict": "S9 Master is worth comparing for heated hard-floor treatment with a conventional onboard-tank routine. Its clearer mode-specific endurance and tank sizes help assess the fit; no independent stain-removal result is claimed.",
+    "notFor": "Buyers needing a 5 L refill station, verified steam cleaning or the full Quiet-mode runtime under every heated setting.",
+    "specifications": [
+      {
+        "label": "Maximum suction",
+        "value": "23,000 Pa",
+        "meaning": "Published maximum, not a comparative floor-cleaning score.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Continuous hot-water claim",
+        "value": "126°F / about 52°C",
+        "meaning": "US store claim based on manufacturer testing; not a guaranteed whole-floor temperature.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Targeted treatment",
+        "value": "ThermoBlast",
+        "meaning": "Hot-water treatment for local marks; do not relabel as steam.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Lay-flat profile",
+        "value": "3.9 in / 9.9 cm",
+        "meaning": "Allow additional practical clearance around furniture.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Clean-water capacity",
+        "value": "0.85 L",
+        "meaning": "Onboard capacity; not a large station reservoir.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Dirty-water capacity",
+        "value": "0.7 L",
+        "meaning": "Waste still needs regular manual disposal.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Quiet-mode runtime",
+        "value": "Up to 65 minutes",
+        "meaning": "Manufacturer mode-specific rating.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Auto-mode runtime",
+        "value": "Up to 50 minutes",
+        "meaning": "Do not carry Quiet-mode endurance into every cleaning mode.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Charging time",
+        "value": "5 hours or less",
+        "meaning": "Official product specification; conditions affect actual charging.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Battery description",
+        "value": "7 × 4,000 mAh cells",
+        "meaning": "Do not sum cell capacities into a claimed 28,000 mAh pack.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Rated power",
+        "value": "250 W",
+        "meaning": "Electrical rating, not suction air watts.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      },
+      {
+        "label": "Drying-air claim",
+        "value": "185°F / 85°C",
+        "meaning": "Hot air in the care cycle; separate from mopping-water temperature.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Drying modes",
+        "value": "5 min FlashDry / 40 min SilentDry",
+        "meaning": "Manufacturer laboratory timing; different speed and noise priorities.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Floor visibility",
+        "value": "150° green headlight",
+        "meaning": "Helps inspect surface debris.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Edge reach",
+        "value": "Triple-sided edge cleaning",
+        "meaning": "Room geometry and finish still determine practical access.",
+        "source": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "Dirt sensing",
+        "value": "iLoop",
+        "meaning": "Sensor response does not establish independent cleanliness testing.",
+        "source": "https://us.tineco.com/products/floor-one-s9-master.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 699.00",
+        "source": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Displayed price checked 12 September 2026. A separate $599 checkout message is conditional and was not checkout-verified. Confirm current delivery terms."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Tineco FLOOR ONE i7 Fold",
+          "url": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo",
+          "market": "Spain / EU"
+        },
+        {
+          "name": "Tineco FLOOR ONE S9 Master",
+          "url": "https://us.tineco.com/products/floor-one-s9-master.html",
+          "market": "United States"
+        },
+        {
+          "name": "Tineco FLOOR ONE STATION S9 Scientist Pro",
+          "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Design priority",
+          "values": [
+            "Foldable tube and low-clearance access",
+            "Hot-water cleaning and targeted ThermoBlast",
+            "Station-assisted water replenishment"
+          ]
+        },
+        {
+          "label": "Published maximum suction",
+          "values": [
+            "22,000 Pa",
+            "23,000 Pa",
+            "25,000 Pa"
+          ]
+        },
+        {
+          "label": "Onboard tanks: clean / dirty",
+          "values": [
+            "0.7 / 0.4 L",
+            "0.85 / 0.7 L",
+            "0.85 / 0.72 L"
+          ]
+        },
+        {
+          "label": "Runtime context",
+          "values": [
+            "Up to 50 min; confirm mode",
+            "65 min Quiet / 50 min Auto",
+            "Up to 100 min; confirm mode"
+          ]
+        },
+        {
+          "label": "Refill arrangement",
+          "values": [
+            "Manual tank filling",
+            "Manual tank filling",
+            "5 L station reservoir"
+          ]
+        }
+      ],
+      "takeaway": "Hot-water treatment, folding access and station replenishment are separate buying priorities. Compare the specific regional configuration and its care routine."
+    },
+    "resources": [
+      {
+        "label": "US S9 Master technical specifications",
+        "url": "https://us.tineco.com/products/floor-one-s9-master.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "US S9 Master store and heating details",
+        "url": "https://store.tineco.com/products/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "CES 2026 US introduction",
+        "url": "https://www.newswire.ca/news-releases/tineco-debuts-modern-living-concept-and-latest-smart-cleaning-lineup-at-ces-2026-800909923.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }
