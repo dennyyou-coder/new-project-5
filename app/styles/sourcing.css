@@ -8610,7 +8610,7 @@
 .sourcing-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 32px; }
 .sourcing-product-grid article { padding: 26px; border: 1px solid #dbe4ed; border-radius: 18px; background: #fff; }
 .sourcing-pool-page .sourcing-pool-related-card { display: flex; flex-direction: column; overflow: hidden; padding: 0; border-radius: 9px; }
-.sourcing-pool-page .sourcing-pool-related-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.sourcing-lawn-page .sourcing-pool-related-card img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .sourcing-pool-page .sourcing-pool-related-card h3, .sourcing-pool-page .sourcing-pool-related-card p, .sourcing-pool-page .sourcing-pool-related-card a { margin-inline: 24px; }
 .sourcing-pool-page .sourcing-pool-related-card h3 { margin-top: 22px; }
 .sourcing-pool-page .sourcing-pool-related-card p { color: #52657a; line-height: 1.6; }
@@ -8934,6 +8934,7 @@
 .sourcing-lawn-page .sourcing-lawn-related-image {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }

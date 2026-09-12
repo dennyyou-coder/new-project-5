@@ -63,8 +63,8 @@ export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> 
     ],
     relatedArticleSlugs: [
       "cordless-vacuum-cleaner-oem-manufacturers-china",
-      "hidden-risks-in-cordless-vacuum-development",
-      "german-vacuum-brands-in-the-cordless-wave"
+      "car-vacuum-cleaner-oem-odm-guide",
+      "spot-cleaner-manufacturing-cost"
     ],
     image: "/images/site-refresh/2026-09-commercial/06-vacuum-cleaner.webp",
     imageAlt: "Cordless stick vacuum on a charging and storage stand",
@@ -160,7 +160,7 @@ export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> 
     services: ["Facility and product opportunity review", "Manufacturer discovery and capability screening", "Pilot, deployment and service-model review", "Quality-risk and execution support before scaling"],
     evaluationPoints: ["Navigation, safety and obstacle behaviour", "Scrubbing, sweeping and recovery performance", "Runtime, tanks, docking and duty cycle", "Deployment tools, fleet software and reporting", "Training, parts and field-service readiness"],
     marketNotes: ["The best platform is defined by facility workflow, not by the longest specification sheet.", "Public environments require stronger safety evidence and deployment discipline than controlled demo spaces.", "Commercial scale depends on uptime, local support and repeatable site economics after the pilot."],
-    relatedArticleSlugs: ["commercial-cleaning-robot-manufacturers-china", "nilfisk-2018-annual-report-commercial-cleaning", "karcher-hidden-champion-in-cleaning-appliances"],
+    relatedArticleSlugs: ["commercial-cleaning-robot-manufacturers-china", "commercial-floor-scrubber-buying-guide", "commercial-cleaning-robot-market"],
     image: "/images/site-refresh/2026-09-commercial/05-commercial-cleaning.webp",
     imageAlt: "Autonomous floor scrubber in an office atrium",
     directions: [
@@ -183,7 +183,7 @@ export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> 
     services: ["Category and product opportunity review", "Manufacturer discovery and capability screening", "Specification, sample and differentiation review", "Quality-risk and execution support before production"],
     evaluationPoints: ["Navigation, obstacle avoidance and map recovery", "Pickup, mopping and carpet-treatment performance", "Dock systems, water management and hygiene", "App, firmware and cloud-service readiness", "Testing depth, parts and warranty execution"],
     marketNotes: ["North American launches need a clear position across households, pets, carpets and retail price bands.", "European buyers need product, privacy, compliance and service preparation that fits their chosen channel.", "Premium positioning depends on dependable automated ownership—not only a larger dock or a longer feature list."],
-    relatedArticleSlugs: ["robot-vacuum-cleaners-from-china", "roborock-at-a-crossroads", "roborock-channel-shift-online-to-offline-experience"],
+    relatedArticleSlugs: ["robot-vacuum-cleaners-from-china", "robot-vacuum-oem-odm-guide", "factory-vs-trading-company-china-cleaning-appliances"],
     image: "/images/site-refresh/2026-09-commercial/01-robot-vacuum.webp",
     imageAlt: "Robot vacuum and all-in-one dock in a living room",
     directions: [
@@ -206,7 +206,7 @@ export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> 
     services: ["Category and product opportunity review", "Manufacturer discovery and capability screening", "Specification, sample and differentiation review", "Quality-risk and execution support before production"],
     evaluationPoints: ["Wet cleaning, pickup and edge performance", "Self-cleaning, drying and odor-control behaviour", "Battery, water tank, roller and leakage reliability", "Testing depth and production consistency", "Consumables, warranty and replacement-parts readiness"],
     marketNotes: ["North American buyers need a clear use case against mops, vacuums and established floorcare routines.", "European and UK launches need channel-specific positioning, compliance and service preparation.", "Premium positioning depends on ownership convenience and durable performance, not the number of cleaning modes."],
-    relatedArticleSlugs: ["floor-washer-manufacturers-china", "story-of-hard-floor-washers", "laifen-hard-floor-washer-entry-strategy"],
+    relatedArticleSlugs: ["floor-washer-manufacturers-china", "floor-washer-oem-odm-guide", "floor-washer-manufacturing-cost"],
     image: "/images/site-refresh/2026-09-commercial/02-floor-washer.webp",
     imageAlt: "Cordless household floor washer in a kitchen",
     directions: [
@@ -229,7 +229,7 @@ export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> 
     services: ["Product direction and supplier landscape review", "Manufacturer discovery and capability screening", "Specification, sample and differentiation review", "Quality-risk and execution support before production"],
     evaluationPoints: ["Navigation and boundary technology", "Slope, obstacle and terrain performance", "Safety, weather resistance and theft protection", "App stability, installation and service readiness", "Production experience, testing and spare-parts support"],
     marketNotes: ["North American buyers need products suited to larger and more varied lawns.", "European and UK buyers often place greater weight on installation, safety, noise and channel service.", "A global launch plan should separate market requirements instead of using one specification everywhere."],
-    relatedArticleSlugs: ["robotic-lawn-mower-manufacturers-china", "robotic-mowers-2026-breakthrough", "amazon-first-stop-for-backyard-robotics"],
+    relatedArticleSlugs: ["robotic-lawn-mower-manufacturers-china", "commercial-robot-mower-supplier-evaluation", "commercial-robotic-lawn-mowers"],
     image: "/images/site-refresh/2026-09-commercial/04-lawn-robot.webp",
     imageAlt: "Robotic lawn mower on a residential lawn",
     directions: [
@@ -252,7 +252,7 @@ export const sourcingProducts: Record<SourcingProduct["slug"], SourcingProduct> 
     services: ["Category and product opportunity review", "Manufacturer discovery and capability screening", "Specification, sample and differentiation review", "Quality-risk and execution support before production"],
     evaluationPoints: ["Pool coverage, navigation and wall-climbing performance", "Filtration, debris handling and cleaning-cycle design", "Waterproofing, motors, cables and battery reliability", "Testing standards and production consistency", "Warranty, replacement parts and service readiness"],
     marketNotes: ["North American buyers need clear positioning across pool types, sizes and retail channels.", "European and UK buyers may require different product, compliance and service preparation.", "Premium positioning depends on reliability and ownership experience, not only cleaning specifications."],
-    relatedArticleSlugs: ["robotic-pool-cleaner-manufacturers-china", "aiper-fluidra-pool-robotics-alliance", "maytronics-robotic-pool-cleaner-reinvention"],
+    relatedArticleSlugs: ["robotic-pool-cleaner-manufacturers-china", "aiper-robotic-pool-cleaner-buying-guide", "dolphin-robotic-pool-cleaner-buying-guide"],
     image: "/images/site-refresh/2026-09-commercial/03-pool-robot.webp",
     imageAlt: "Cordless pool cleaning robot beside a swimming pool",
     directions: [
