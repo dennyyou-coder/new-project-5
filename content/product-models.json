@@ -173,7 +173,9 @@
     "related": [
       "dreame-aqua20-pro-ultra-roller-x-complete",
       "roborock-saros-20",
-      "ecovacs-deebot-x12-omnicyclone"
+      "ecovacs-deebot-x12-omnicyclone",
+      "dreame-l60-pro-ultra",
+      "dreame-l60-ultra"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -450,7 +452,9 @@
       "segway-navimow-i210-awd",
       "mammotion-luba-mini-2-awd-1500",
       "sunseeker-s4",
-      "segway-navimow-x430"
+      "segway-navimow-x430",
+      "mova-lidax-ultra-2000-awd",
+      "mova-viax-500"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -1641,7 +1645,8 @@
     ],
     "related": [
       "mammotion-luba-mini-2-awd-1500",
-      "segway-navimow-h220"
+      "segway-navimow-h220",
+      "mova-lidax-ultra-2000-awd"
     ],
     "announced": "2026-01-05",
     "verifiedAt": "2026-09-06",
@@ -2362,7 +2367,8 @@
       "narwal-flow-2",
       "roborock-saros-20",
       "roborock-saros-20-sonic",
-      "ecovacs-deebot-x12s-omnicyclone"
+      "ecovacs-deebot-x12s-omnicyclone",
+      "mova-z70-ultra-roller-complete"
     ],
     "announced": "2026-09-03",
     "verifiedAt": "2026-09-10",
@@ -4523,7 +4529,9 @@
     "related": [
       "eufy-omni-s2",
       "ecovacs-deebot-t80s-omni",
-      "roborock-qrevo-curv-2-flow"
+      "roborock-qrevo-curv-2-flow",
+      "mova-p70-pro-ultra",
+      "mova-s70-ultra-roller"
     ],
     "announced": "",
     "verifiedAt": "2026-09-12",
@@ -4845,5 +4853,795 @@
     "launchYear": 2026,
     "launchNote": "Manufacturer announced PowerDetect UV Reveal on March 3, 2026; exact RV3020XE offer checked.",
     "launchSource": "https://ir.sharkninja.com/news/news-details/2026/Shark-Launches-PowerDetect-UV-Reveal--The-First-Robot-Vacuum--Mop-to-Use-UV-Technology-to-Detect-Invisible-Messes/default.aspx"
+  },
+  {
+    "slug": "mova-v70-ultra-complete",
+    "name": "MOVA V70 Ultra Complete",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Robot vacuums",
+    "market": "Global specification; Germany price",
+    "summary": "A bagless flagship with extending rotary mops, a retractable navigation sensor and mechanical legs for unusually tall thresholds.",
+    "fit": "Homes that value bagless collection, access beneath furniture edges and difficult room transitions.",
+    "caution": "The 9 cm claim needs two separate steps; EcoCyclone is a product name, not a promise of cyclone separation.",
+    "facts": [
+      {
+        "label": "Maximum suction",
+        "value": "40,000 Pa",
+        "meaning": "Manufacturer laboratory maximum; not a measured pickup score."
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 4.5 cm",
+        "meaning": "A vertical single threshold is different from the advertised two-step test."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 88 mm",
+        "meaning": "Retracted-sensor body dimensions; allow clearance around furniture."
+      },
+      {
+        "label": "Dust collection",
+        "value": "Bagless EcoCyclone tank",
+        "meaning": "MOVA explicitly says the name does not indicate cyclone separation."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is V70 Ultra Complete the same as V70 Ultra Complete X?",
+        "answer": "No. This guide covers the base V70 Ultra Complete. The X suffix identifies another listing or bundle; verify the exact regional bill of materials rather than transferring its accessories or pricing."
+      },
+      {
+        "question": "Can it climb a single 9 cm step?",
+        "answer": "No. MOVA separates a 4.5 cm single-step limit from a 9 cm combined two-step test with 18 cm spacing. Actual traction and threshold shape matter."
+      },
+      {
+        "question": "Does EcoCyclone use cyclone separation?",
+        "answer": "The official footnote says EcoCyclone is only the product name and does not indicate cyclone separation. The verified benefit here is reusable bagless dust collection."
+      },
+      {
+        "question": "Can the whole robot pass under 3.8 cm furniture?",
+        "answer": "No. That claim concerns the extended side brush. The published robot body height is 88 mm with the navigation sensor retracted."
+      },
+      {
+        "question": "Does the mop extend the cleaning width by 16 cm?",
+        "answer": "The manufacturer defines 16 cm as centre-to-centre displacement of the mop extension. It should not be added directly to the robot width to calculate a cleaning swath."
+      },
+      {
+        "question": "Is 100°C used on the floor?",
+        "answer": "No. The cited figure describes the PTC station washboard. Floor suitability must be checked separately, particularly for sensitive coatings and wood."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The German base-model listing showed €1,399 on 12 September 2026. Promotions, finishes and the X bundle can produce different prices; confirm the selected SKU and local warranty."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "mova-z70-ultra-roller-complete",
+      "mova-p70-pro-ultra",
+      "dreame-l60-pro-ultra"
+    ],
+    "announced": "2026-01-05",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Global V70 specifications and footnotes",
+        "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "German base-model listing",
+        "url": "https://de.mova.tech/products/v70-ultra-complete-saugroboter"
+      },
+      {
+        "label": "CES 2026 announcement",
+        "url": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
+      },
+      {
+        "label": "April 2026 European launch",
+        "url": "https://www.mova.tech/blogs/news/mova-2026-new-product-launch"
+      },
+      {
+        "label": "Z70 official comparison",
+        "url": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "P70 official comparison",
+        "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      }
+    ],
+    "imageSource": "https://www.mova.tech/cdn/shop/files/v70uc-product-01.png?v=1778668500",
+    "launchYear": 2026,
+    "launchNote": "Previewed at CES in January 2026; the April European announcement and current product page describe the production model.",
+    "launchSource": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
+  },
+  {
+    "slug": "mova-z70-ultra-roller-complete",
+    "name": "MOVA Z70 Ultra Roller Complete",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Robot vacuums",
+    "market": "Global specification; Germany finish-specific price",
+    "summary": "A continuously rinsed roller flagship with mechanical legs, a retractable sensor and a larger water-handling station.",
+    "fit": "Hard-floor homes wanting roller mopping without giving up high-threshold access.",
+    "caution": "The 800 RPM figure belongs to roller-fibre fluffing, and the 9 cm crossing claim is a two-step test.",
+    "facts": [
+      {
+        "label": "Roller length",
+        "value": "270 mm",
+        "meaning": "HydroForce 2.0 uses a continuously rinsed roller."
+      },
+      {
+        "label": "Contact pressure / force",
+        "value": "5,000 Pa / 18 N",
+        "meaning": "Mopping contact figures, not vacuum suction or machine weight."
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 4.8 cm",
+        "meaning": "A vertical single rise has a lower limit than the headline two-step figure."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 96 mm retracted",
+        "meaning": "Raised-sensor height is 119.6 mm."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does the cleaning roller spin at 800 RPM?",
+        "answer": "The official 800 RPM claim describes the roller-fibre fluffing mechanism. It should not be presented as the floor roller rotation speed."
+      },
+      {
+        "question": "Can it cross one 9 cm threshold?",
+        "answer": "No. The cited 9 cm test uses two steps of 4.8 cm and 4.2 cm, with 24 cm spacing. The single-step rating is 4.8 cm."
+      },
+      {
+        "question": "How tall is the Z70?",
+        "answer": "The specification lists 96 mm with the sensor retracted and 119.6 mm with it raised. Measure the narrowest point beneath furniture and leave practical clearance."
+      },
+      {
+        "question": "Does it use dust bags?",
+        "answer": "Yes. The Z70 specification lists a 4 L dust bag. The bagless EcoCyclone arrangement belongs to the V70 comparison model."
+      },
+      {
+        "question": "Is 100°C water applied to floors?",
+        "answer": "No. MOVA defines the figure at the station water outlet under laboratory conditions. It is not a verified floor-mopping temperature."
+      },
+      {
+        "question": "Are all custom obstacle features already available?",
+        "answer": "Some promoted recognition and customisation features carry software or future-update conditions. Confirm availability in the actual regional app and firmware before treating them as a buying requirement."
+      },
+      {
+        "question": "Which finish does the price cover?",
+        "answer": "The €949 snapshot is for the German brushed-metal listing on 12 September 2026. The guide image shows the stone-panel finish; confirm finish, accessories and local terms on the chosen listing."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "mova-v70-ultra-complete",
+      "mova-s70-ultra-roller",
+      "roborock-saros-20-flow"
+    ],
+    "announced": "2026-04-14",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Global Z70 specifications and test conditions",
+        "url": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "German brushed-metal listing",
+        "url": "https://de.mova.tech/products/z70-ultra-roller-complete-saugroboter-gebuerstetes-metall"
+      },
+      {
+        "label": "April 2026 launch announcement",
+        "url": "https://www.mova.tech/blogs/news/mova-2026-new-product-launch"
+      },
+      {
+        "label": "V70 official comparison",
+        "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "S70 Ultra official comparison",
+        "url": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      }
+    ],
+    "imageSource": "https://www.mova.tech/cdn/shop/files/z70urc-slab-product-01.png",
+    "launchYear": 2026,
+    "launchNote": "Included in MOVA’s April 2026 launch announcement, with Q2 availability described for the Z70 family.",
+    "launchSource": "https://www.mova.tech/blogs/news/mova-2026-new-product-launch"
+  },
+  {
+    "slug": "mova-p70-pro-ultra",
+    "name": "MOVA P70 Pro Ultra",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Robot vacuums",
+    "market": "Global specification; US price",
+    "summary": "A rotary-mop robot with a heated cleaning station and extending edge mop, positioned below MOVA’s mechanical-leg flagships.",
+    "fit": "Mostly level homes wanting automatic mop care and a lower-cost entry into MOVA’s 2026 range.",
+    "caution": "Its threshold rating is 22 mm; the optional CleanChop brush and 100°C washboard claim need careful interpretation.",
+    "facts": [
+      {
+        "label": "Maximum suction",
+        "value": "30,000 Pa",
+        "meaning": "Manufacturer laboratory maximum; not an independent pickup result."
+      },
+      {
+        "label": "Threshold crossing",
+        "value": "Up to 22 mm",
+        "meaning": "No V70-style mechanical-leg crossing claim."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 103.8 mm",
+        "meaning": "Check furniture clearance against this full height."
+      },
+      {
+        "label": "Station heating",
+        "value": "Up to 100°C PTC washboard surface",
+        "meaning": "The official footnote defines a surface temperature, not 100°C wash water."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How is P70 different from V70?",
+        "answer": "P70 has a 22 mm threshold rating, a 103.8 mm body and a 5,200 mAh battery. V70 adds a retractable sensor, mechanical legs and bagless station; it is not just a higher-suction P70."
+      },
+      {
+        "question": "Is the CleanChop brush included?",
+        "answer": "The global P70 page labels CleanChop as optional and sold separately. Confirm the exact regional box contents before comparing prices or anti-tangle claims."
+      },
+      {
+        "question": "Does P70 wash its mops with 100°C water?",
+        "answer": "The official PTC claim is for the washboard surface temperature. It should not be rewritten as a 100°C water-outlet or floor-mopping specification."
+      },
+      {
+        "question": "Can it cross a 4 cm door sill?",
+        "answer": "The published threshold rating is 22 mm. Do not transfer V70, Z70 or S70 crossing numbers to P70."
+      },
+      {
+        "question": "Can it clean carpets without attached wet pads?",
+        "answer": "The model advertises automatic mop removal and 10.5 mm pad lift. Configure the appropriate carpet strategy and test it with the actual rugs."
+      },
+      {
+        "question": "Why do regional side-brush figures differ?",
+        "answer": "The checked global and US pages use different lift figures. This guide avoids a universal numerical claim for that detail; request the exact regional specification if it affects your purchase."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The US black P70 Pro Ultra listing showed $679 on 12 September 2026. The official guide image uses a white product rendering; colour, bundles and promotions can differ."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "mova-v70-ultra-complete",
+      "mova-s70-ultra-roller",
+      "dreame-l60-ultra"
+    ],
+    "announced": "2026-01-05",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Global P70 specifications and footnotes",
+        "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      },
+      {
+        "label": "US black model listing",
+        "url": "https://us.mova.tech/products/mova-p70-pro-ultra-robot-vacuum-black"
+      },
+      {
+        "label": "CES 2026 announcement",
+        "url": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
+      },
+      {
+        "label": "V70 official comparison",
+        "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      },
+      {
+        "label": "L60 Ultra official comparison",
+        "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      }
+    ],
+    "imageSource": "https://www.mova.tech/cdn/shop/files/p70-pro-ultra-product-new.jpg?v=1777361358",
+    "launchYear": 2026,
+    "launchNote": "Named in MOVA’s CES 2026 product presentation; current regional listings checked in September 2026.",
+    "launchSource": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
+  },
+  {
+    "slug": "mova-s70-ultra-roller",
+    "name": "MOVA S70 Ultra Roller",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Robot vacuums",
+    "market": "Global specification; Taiwan price",
+    "summary": "A lower-profile roller robot with hidden navigation, a 27 cm rinsed mop and a compact automatic station.",
+    "fit": "Hard-floor homes with low furniture and moderate thresholds that do not need a mechanical-leg flagship.",
+    "caution": "The detailed specification says 91.5 mm although the headline says 90 mm; the 4 cm climb is a combined two-step test.",
+    "facts": [
+      {
+        "label": "Roller length",
+        "value": "270 mm",
+        "meaning": "HydroForce uses a continuously rinsed floor-contact roller."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 91.5 mm",
+        "meaning": "Detailed specification; the same page also uses a 90 mm headline."
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 3 cm",
+        "meaning": "Single vertical obstacle rating from the official footnote."
+      },
+      {
+        "label": "Station water tanks",
+        "value": "5 L clean / 4.5 L used",
+        "meaning": "Dirty water still needs regular handling."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is S70 Ultra Roller only 90 mm tall?",
+        "answer": "The page headline says 90 mm, while the detailed dimensions specify 91.5 mm. This guide uses the detailed 91.5 mm measurement and recommends practical clearance beyond it."
+      },
+      {
+        "question": "Is it the same as S70 Roller or S70 Roller Pro?",
+        "answer": "No. This guide covers S70 Ultra Roller. Confirm the complete model name, navigation design, brush and station before transferring specifications between S70 listings."
+      },
+      {
+        "question": "Can it climb a single 4 cm step?",
+        "answer": "The footnote defines 4 cm as two rises of 3 cm and 1 cm with a 3 cm gap. The single-step rating is 3 cm."
+      },
+      {
+        "question": "Does it have a continuously rinsed roller?",
+        "answer": "Yes. MOVA describes a 270 mm HydroForce roller supplied by twelve water nozzles during mopping. Station cleaning remains a separate maintenance process."
+      },
+      {
+        "question": "Is the advertised pet-friendly brush claim universal?",
+        "answer": "The official pet-friendly certification footnote applies to the rubber brush and excludes the CleanChop 3.0 brush. It should not be generalized to every supplied brush or pet situation."
+      },
+      {
+        "question": "Can the station be left alone for 100 days?",
+        "answer": "No. The 100-day claim concerns dust-bag use under specified tests. Dirty-water tanks, roller care, filters and hair removal still need attention."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The Taiwan white S70 Ultra Roller listing showed NT$25,980 on 12 September 2026. This is a regional price, not a converted global price or a promise of availability elsewhere."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "mova-z70-ultra-roller-complete",
+      "mova-p70-pro-ultra",
+      "eufy-omni-c28"
+    ],
+    "announced": "2026-01-05",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Global S70 Ultra specifications and footnotes",
+        "url": "https://www.mova.tech/products/s70-ultra-roller-robot-vacuum-black"
+      },
+      {
+        "label": "Taiwan white-model listing",
+        "url": "https://tw.mova.tech/products/mova-s70-ultra-roller"
+      },
+      {
+        "label": "CES 2026 announcement",
+        "url": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
+      },
+      {
+        "label": "Z70 official comparison",
+        "url": "https://www.mova.tech/products/mova-z70-ultra-roller-complete-robot-vacuum-stone-panel"
+      },
+      {
+        "label": "P70 official comparison",
+        "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      }
+    ],
+    "imageSource": "https://www.mova.tech/cdn/shop/files/s70ur-black-product-01.png",
+    "launchYear": 2026,
+    "launchNote": "Presented in MOVA’s CES 2026 range; current Ultra-model specifications and Taiwan listing checked in September.",
+    "launchSource": "https://www.mova.tech/blogs/blog/mova-ces-2026-smart-living"
+  },
+  {
+    "slug": "dreame-l60-pro-ultra",
+    "name": "Dreame L60 Pro Ultra",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Robot vacuums",
+    "market": "United States",
+    "summary": "A retractable-sensor robot combining ProLeap mechanical legs, heated rotary mopping and a 6,400 mAh battery.",
+    "fit": "Homes with substantial room transitions that also want heated pad mopping and automatic station care.",
+    "caution": "The Pro is taller than the regular L60 Ultra; 8.8 cm describes two steps, and floor heating differs from station washing.",
+    "facts": [
+      {
+        "label": "Navigation",
+        "value": "VersaLift retractable DToF",
+        "meaning": "Different from the fixed 3D ToF arrangement in L60 Ultra."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 89 mm retracted",
+        "meaning": "Height increases to 111 mm with the sensor raised."
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 4.5 cm",
+        "meaning": "Do not substitute the combined two-step headline."
+      },
+      {
+        "label": "Warm-mop retention claim",
+        "value": "30–40°C after one minute; peak 40°C",
+        "meaning": "Phase-change pads retain station heat in a laboratory test; not guaranteed sustained active floor heating."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How is L60 Pro Ultra different from L60 Ultra?",
+        "answer": "The Pro adds retractable VersaLift navigation, ProLeap legs, thermal mopping and a 6,400 mAh battery. Regular L60 Ultra is lower at 82 mm and uses a 5,200 mAh battery, with lower crossing limits."
+      },
+      {
+        "question": "Can it climb an 8.8 cm vertical step?",
+        "answer": "No. The claim is a combined two-step arrangement with an intermediate platform wider than 23 cm. The single-step rating is 4.5 cm."
+      },
+      {
+        "question": "Is the Pro thinner than the regular L60 Ultra?",
+        "answer": "No. The Pro is 89 mm with the sensor retracted and 111 mm raised. The regular L60 Ultra is listed at 82 mm."
+      },
+      {
+        "question": "What does heated mopping mean here?",
+        "answer": "The Pro uses phase-change pads to retain heat from station washing. Dreame’s lab footnote gives 30–40°C after one minute of cleaning, peaking at 40°C; this is not a promise of continuous active heating. The 100°C footnote refers to the station washboard PTC area."
+      },
+      {
+        "question": "Is the battery the same as L60 Ultra?",
+        "answer": "No. The cited US Pro specification lists 6,400 mAh, compared with 5,200 mAh for regular L60 Ultra. Runtime still depends on mode and conditions."
+      },
+      {
+        "question": "Does it remove the mops for carpets?",
+        "answer": "Automatic pad removal and 10.5 mm lift are advertised. Test the chosen carpet strategy with the actual rugs, particularly deep pile and fringes."
+      },
+      {
+        "question": "When was it launched and what price was checked?",
+        "answer": "Dreame announced the L60 series on 28 April 2026. The US L60 Pro Ultra listing showed $1,399.99 on 12 September 2026; promotions, tax and bundles can change."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "dreame-l60-ultra",
+      "dreame-x60-ultra",
+      "mova-v70-ultra-complete"
+    ],
+    "announced": "2026-04-28",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US L60 Pro Ultra specifications",
+        "url": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "L60 series launch announcement",
+        "url": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
+      },
+      {
+        "label": "L60 Ultra official comparison",
+        "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "V70 official comparison",
+        "url": "https://www.mova.tech/products/v70-ultra-complete-robot-vacuum"
+      }
+    ],
+    "imageSource": "https://www.dreametech.com/cdn/shop/files/L60_Pro_Ultra-black_1200x1200.webp?v=1776762063",
+    "launchYear": 2026,
+    "launchNote": "Dreame’s dated 28 April 2026 US announcement introduced L60 Pro Ultra alongside other L60 variants.",
+    "launchSource": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
+  },
+  {
+    "slug": "dreame-l60-ultra",
+    "name": "Dreame L60 Ultra",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Robot vacuums",
+    "market": "United States",
+    "summary": "An 82 mm robot with fixed 3D ToF navigation, dual rotary mops and a full washing-and-emptying station.",
+    "fit": "Homes where low furniture access matters more than the Pro model’s taller-step capability and heated floor mopping.",
+    "caution": "This is the regular L60 Ultra, not Pro, PE or FE; its battery, bin, navigation and crossing limits are different.",
+    "facts": [
+      {
+        "label": "Maximum suction",
+        "value": "35,000 Pa",
+        "meaning": "Shared manufacturer maximum with the Pro; not proof of identical cleaning results."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "351 × 351 × 82 mm",
+        "meaning": "The footnote requires at least 84 mm entry clearance despite the 82 mm body height."
+      },
+      {
+        "label": "Single-step crossing",
+        "value": "Up to 3 cm",
+        "meaning": "Use the metric footnote; an inch conversion elsewhere on the page is inconsistent."
+      },
+      {
+        "label": "Battery",
+        "value": "5,200 mAh",
+        "meaning": "Different from L60 Pro Ultra’s 6,400 mAh."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is L60 Ultra lower than L60 Pro Ultra?",
+        "answer": "Yes. The cited US specification lists 82 mm for L60 Ultra, compared with 89 mm retracted and 111 mm raised for L60 Pro Ultra. Dreame’s footnote requires at least 84 mm entry clearance for the regular model."
+      },
+      {
+        "question": "Does regular L60 Ultra have VersaLift?",
+        "answer": "No. The regular model uses fixed 3D ToF navigation with a camera and LED. The retractable VersaLift design belongs to the Pro comparison model."
+      },
+      {
+        "question": "Can L60 Ultra climb a single 5 cm step?",
+        "answer": "No. The 5 cm claim covers a combined two-step arrangement with an intermediate platform wider than 12 cm. The single-step metric rating is 3 cm."
+      },
+      {
+        "question": "Why does the official inch conversion look inconsistent?",
+        "answer": "One specification entry pairs 3 cm with an inconsistent inch value, while the detailed footnote gives 1.18 inches / 3 cm. This guide uses the consistent 3 cm metric limit."
+      },
+      {
+        "question": "Does it have the Pro’s heated floor mopping?",
+        "answer": "The regular L60 Ultra page describes OmniScrub pads and station heating. This guide does not transfer the Pro’s 40°C thermal floor-mopping claim to the regular model."
+      },
+      {
+        "question": "Are the battery and dust bin shared with the Pro?",
+        "answer": "No. Regular L60 Ultra lists 5,200 mAh and 275 mL, compared with 6,400 mAh and 300 mL on the Pro."
+      },
+      {
+        "question": "What price and release date were checked?",
+        "answer": "The L60 series was announced on 28 April 2026. The regular US L60 Ultra listing showed $1,299.99 on 12 September 2026; other L60 suffixes and promotional bundles are separate."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "dreame-l60-pro-ultra",
+      "mova-p70-pro-ultra",
+      "dreame-x60-ultra"
+    ],
+    "announced": "2026-04-28",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US L60 Ultra specifications and footnotes",
+        "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      },
+      {
+        "label": "April 2026 L60 launch",
+        "url": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
+      },
+      {
+        "label": "L60 Pro Ultra official comparison",
+        "url": "https://www.dreametech.com/products/l60-pro-ultra-robot-vacuum"
+      },
+      {
+        "label": "P70 official comparison",
+        "url": "https://www.mova.tech/products/robot-vacuum-p70-pro-ultra"
+      }
+    ],
+    "imageSource": "https://www.dreametech.com/cdn/shop/files/L60_Ultra-black_bdb2ff8e-7773-409a-ab54-e8e25eb39b6f_1200x1200.webp?v=1777375817",
+    "launchYear": 2026,
+    "launchNote": "Introduced in Dreame’s 28 April 2026 L60 series announcement; this guide covers the regular US Ultra listing.",
+    "launchSource": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
+  },
+  {
+    "slug": "mova-viax-500",
+    "name": "MOVA ViAX 500",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Robot mowers",
+    "market": "Global specification; European launch reference",
+    "summary": "A compact front-wheel-drive mower using dual-camera vision and LiDAR, with manual cutting-height adjustment and virtual boundaries.",
+    "fit": "Smaller lawns with moderate slopes, narrow passages and no need for a large four-wheel-drive chassis.",
+    "caution": "Current global material says 600 m² while launch material describes 500 m²; confirm the regional rating and leave capacity headroom.",
+    "facts": [
+      {
+        "label": "Advertised lawn size",
+        "value": "Up to 600 m² on the current global page",
+        "meaning": "Launch material describes 500 m²; confirm the regional model rating."
+      },
+      {
+        "label": "Navigation",
+        "value": "UltraEyes 2.0: dual AI vision + 360° LiDAR",
+        "meaning": "Specific to the current ViAX 500 listing; do not transfer base-series vision-only claims."
+      },
+      {
+        "label": "Maximum slope",
+        "value": "40% — about 22°",
+        "meaning": "Gradient percent is not degrees; surface traction affects performance."
+      },
+      {
+        "label": "Cutting height",
+        "value": "2–6 cm; manual knob",
+        "meaning": "Do not promise app-controlled height adjustment."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is ViAX 500 rated for 500 or 600 m²?",
+        "answer": "The current global page advertises mapping up to 600 m², while 2026 launch material describes ViAX 500 for 500 m² lawns. Confirm the regional rating rather than assuming the name or a global headline overrides the local specification."
+      },
+      {
+        "question": "Is ViAX 500 vision-only?",
+        "answer": "The current 500 listing and launch description identify UltraEyes 2.0 with dual AI vision and 360° LiDAR. Some shared series copy mentions UltraEyes 1.0; do not transfer the base-series configuration to this model."
+      },
+      {
+        "question": "Does it need an RTK antenna or boundary wire?",
+        "answer": "The cited model uses virtual boundaries without a boundary wire or separate RTK station. Setup still requires mapping, charging access and checking excluded areas."
+      },
+      {
+        "question": "Does 40% slope mean 40 degrees?",
+        "answer": "No. A 40% gradient corresponds to about 22 degrees. Wet grass, turns and boundary locations can reduce usable traction."
+      },
+      {
+        "question": "Can cutting height be adjusted in the app?",
+        "answer": "The ViAX page describes a manual knob for its 2–6 cm range. App-based scheduling should not be confused with electronic height adjustment."
+      },
+      {
+        "question": "Is GPS tracking included?",
+        "answer": "The page describes tracking through an optional Link Module, with separate accessory and service conditions. Confirm the package and subscription terms; do not assume the mower includes a free permanent connection."
+      },
+      {
+        "question": "Is €749 a current store price?",
+        "answer": "No. It is the manufacturer’s European launch-price reference for ViAX 500 availability in March 2026. It is labelled as historical, not a verified September retail offer."
+      }
+    ],
+    "articles": [
+      "who-makes-mova-robot-mowers-dreame-group"
+    ],
+    "related": [
+      "mova-lidax-ultra-2000-awd",
+      "mova-lidax-ultra-1000",
+      "mammotion-yuka-mini-2-1000"
+    ],
+    "announced": "2026-03-10",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Current global ViAX 500 specifications",
+        "url": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "European 2026 ViAX launch and price reference",
+        "url": "https://fr.mova.tech/blogs/blog/mova-lidax-ultra-viax-series"
+      },
+      {
+        "label": "March 2026 regional launch campaign",
+        "url": "https://it.mova.tech/pages/awd-robot-tagliaerba-prossimamente-disponibile"
+      },
+      {
+        "label": "LiDAX Ultra 2000 AWD official comparison",
+        "url": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "US non-AWD LiDAX Ultra 1000 comparison",
+        "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://www.mova.tech/cdn/shop/files/viax500-left.png",
+    "launchYear": 2026,
+    "launchNote": "MOVA’s dated Italian campaign identifies a 10 March 2026 launch for the ViAX 500 and LiDAX Ultra AWD series.",
+    "launchSource": "https://it.mova.tech/pages/awd-robot-tagliaerba-prossimamente-disponibile"
+  },
+  {
+    "slug": "mova-lidax-ultra-2000-awd",
+    "name": "MOVA LiDAX Ultra 2000 AWD",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Robot mowers",
+    "market": "Global 2000 AWD specification; regional launch evidence",
+    "summary": "A four-wheel-drive mower with independent suspension, dual cutting discs and vision-plus-LiDAR navigation for larger, steeper lawns.",
+    "fit": "Lawns needing stronger traction, a 40 cm cutting width and electronic height adjustment.",
+    "caution": "Use the exact 2000 AWD variant; 80% is about 38.6°, and 65-minute charging refers to 15–95%, not a full charge.",
+    "facts": [
+      {
+        "label": "Rated map area",
+        "value": "2,000 m² per map",
+        "meaning": "Dual maps do not create a guaranteed 4,000 m² daily output."
+      },
+      {
+        "label": "Maximum slope",
+        "value": "80% — about 38.6°",
+        "meaning": "Surface conditions, turns and boundary position affect usable traction."
+      },
+      {
+        "label": "Cutting system",
+        "value": "40 cm; two discs with six blades each",
+        "meaning": "Turning and repeated passes reduce practical coverage."
+      },
+      {
+        "label": "Battery",
+        "value": "7.5 Ah; manufacturer-listed 243 Wh",
+        "meaning": "Use the listed energy; do not derive it from the advertised 36 V class."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is this the same as LiDAX Ultra 1000?",
+        "answer": "No. This guide covers the 2000 AWD with four driven wheels, independent suspension and a 40 cm dual-disc cutting system. The existing non-AWD 1000 uses rear-wheel drive and a narrower cutter."
+      },
+      {
+        "question": "Does 80% slope mean 80 degrees?",
+        "answer": "No. An 80% gradient is approximately 38.6 degrees. Traction and safe boundary placement still depend on actual ground conditions."
+      },
+      {
+        "question": "Is a full charge completed in 65 minutes?",
+        "answer": "The specification assigns 65 minutes to a 15–95% charging interval. The page separately describes about 90 minutes for a full charge; they are different measurements."
+      },
+      {
+        "question": "Can it mow 4,000 m² every day because it supports two maps?",
+        "answer": "Two maps of up to 2,000 m² are a mapping capability, not a daily mowing guarantee. Charging, transfer between lawns, grass growth and permitted working hours affect real coverage."
+      },
+      {
+        "question": "Why are 36 V, 7.5 Ah and 243 Wh listed together?",
+        "answer": "These are manufacturer-published figures, including an advertised 36 V battery class and 243 Wh energy. This guide uses the stated energy and does not multiply the class voltage by capacity to invent another usable-energy figure."
+      },
+      {
+        "question": "Is edge trimming completely eliminated?",
+        "answer": "No such universal result is established. The extending discs claim a gap under 3 cm along raised boundaries; edge straddling applies to safe, smooth, level transitions, and some borders still need manual trimming."
+      },
+      {
+        "question": "What price and connectivity are confirmed?",
+        "answer": "A current regional retail price was not verified for the exact 2000 AWD. The global page advertises three years of 4G service, but buyers should confirm inclusion, network coverage and renewal terms for their regional package."
+      }
+    ],
+    "articles": [
+      "who-makes-mova-robot-mowers-dreame-group"
+    ],
+    "related": [
+      "mova-lidax-ultra-1000",
+      "mova-viax-500",
+      "mammotion-luba-3-awd-1500"
+    ],
+    "announced": "2026-03-10",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Global 2000 AWD specifications and footnotes",
+        "url": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      },
+      {
+        "label": "Dated March 2026 AWD launch campaign",
+        "url": "https://it.mova.tech/pages/awd-robot-tagliaerba-prossimamente-disponibile"
+      },
+      {
+        "label": "ViAX 500 official comparison",
+        "url": "https://www.mova.tech/products/robot-lawn-mower-viax-500"
+      },
+      {
+        "label": "US non-AWD LiDAX Ultra 1000 comparison",
+        "url": "https://us.mova.tech/products/mova-lidax-ultra-1000-robot-lawn-mower"
+      }
+    ],
+    "imageSource": "https://www.mova.tech/cdn/shop/files/lidax-awd-product-1.png",
+    "launchYear": 2026,
+    "launchNote": "The dated Italian launch campaign introduced the LiDAX Ultra AWD series on 10 March 2026, including the 2000 variant.",
+    "launchSource": "https://it.mova.tech/pages/awd-robot-tagliaerba-prossimamente-disponibile"
   }
 ]
