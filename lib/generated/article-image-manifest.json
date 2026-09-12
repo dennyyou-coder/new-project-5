@@ -2005,6 +2005,60 @@
         "outputHash": "sha256:c09c9704b71be1f6ea4a1811ab0dfae4cac80890fcaa7d171593528e7835e909"
       }
     },
+    "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 48372,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5146f43015d62cfa587208815df41bb2c525c5ba88beddaa91ec2c611aad42bf",
+      "outputHash": "sha256:dccfc3dcf0859300ee3541af8081373f08c5f04e407f4120631c550ecade6666",
+      "mobile": {
+        "src": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22304,
+        "outputHash": "sha256:d7cd388e59388c50abd7368400a74833e1f7e4137a63b7b6a5084f6f3ec9b54e"
+      }
+    },
+    "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 67404,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:329afa6bf0dda41c78b7ec9f94001fe734f6c5b68fd3832d224cce377d7bf911",
+      "outputHash": "sha256:f495762978b1d0e40b1d44fb6fd4c7b458aadbce1482485df4775c9d24852734",
+      "mobile": {
+        "src": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29812,
+        "outputHash": "sha256:e1dc86ae67dc02b76ec1424064918e8350df4e24f43e5fce8a04ae348369166a"
+      }
+    },
+    "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 79702,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1e64dee865506ed91af7e5a9af7fc6b95f3b049e4f367d5e38e764b773696789",
+      "outputHash": "sha256:4fafe2fb2564c2dec43ca61c6747e7d32e0b7dfacd115e0d5f19d6177de1e793",
+      "mobile": {
+        "src": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 34908,
+        "outputHash": "sha256:8b16660ea1b0a9670763713c5bd0c1b992b8d5af5612fc4667ed725a2b8807d3"
+      }
+    },
     "/images/articles/ifa-2026-cleaning-products-company-roundup/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -5132,7 +5186,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -5150,7 +5204,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -5168,7 +5222,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -33404,6 +33458,14 @@
       "cover": "/images/blog/automower-vs-luba-platform-decision-map.webp",
       "body": []
     },
+    "husqvarna-fcc-exemption-robotic-mowers": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp",
+      "body": [
+        "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp",
+        "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp"
+      ]
+    },
     "husqvarna-robotic-mowers-after-eu-anti-dumping": {
       "budgetClass": "standard",
       "cover": "/images/blog/husqvarna-robotic-mowers-after-eu-anti-dumping-image-001-en-v2.webp",
@@ -36586,6 +36648,25 @@
           "status": "matched",
           "primary": "/images/articles/eufy-omni-s2/01-cover.webp",
           "hash": "sha256:d82683ca4a650274ee17e047283bea06cc0b9433e23057069c59b8d6b51435e6"
+        }
+      }
+    },
+    "husqvarna-fcc-exemption-robotic-mowers": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp",
+          "hash": "sha256:5146f43015d62cfa587208815df41bb2c525c5ba88beddaa91ec2c611aad42bf"
+        },
+        "02-approval-flow.webp": {
+          "status": "matched",
+          "primary": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp",
+          "hash": "sha256:329afa6bf0dda41c78b7ec9f94001fe734f6c5b68fd3832d224cce377d7bf911"
+        },
+        "03-possible-pathways.webp": {
+          "status": "matched",
+          "primary": "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp",
+          "hash": "sha256:1e64dee865506ed91af7e5a9af7fc6b95f3b049e4f367d5e38e764b773696789"
         }
       }
     },
