@@ -3838,6 +3838,24 @@
       "sourceHash": "sha256:f4b019fcace37231409f3ff2dc62f38f3305a0a6261cd11905ecf11f2550baba",
       "outputHash": "sha256:cbe4770e794f4677147342c4b3a8cd2caf4f48916ffcd64cff198d4fdeec187b"
     },
+    "/images/articles/mova-n1/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43142,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5763592f6e5c6917c21abf13d9ae6499d7f55dcbbda363d8c17f46be7a158933",
+      "outputHash": "sha256:d2f6c82a4d669ef23b08451fd6027609459dbcb0730ebbcdfe6c07bfaad527d7",
+      "mobile": {
+        "src": "/images/articles/mova-n1/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13940,
+        "outputHash": "sha256:ad908c0178e6a294eac5db309966937d033cf548669fa34638f35d2f05b616a4"
+      }
+    },
     "/images/articles/mova-p70-pro-ultra/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3884,6 +3902,24 @@
       "quality": 90,
       "sourceHash": "sha256:6c63fdef6611fe8992ce61de5c6b1619ab16a2d0b6c433ed41b1aec3f18ff4b5",
       "outputHash": "sha256:945430db4555124d90eedeadfc41a9813ab3f92bd1e6722fd7e067eaba992a7d"
+    },
+    "/images/articles/mova-t1-station/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39892,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:57e89553f905148dcfc3abf74adea8306ab3f2c6f44cf4dbef6b36aaf0ae8dc4",
+      "outputHash": "sha256:e4d603dc012c8aec4c90c72aa811eb6afd545df1bacbf80ecc79b87f99f254c1",
+      "mobile": {
+        "src": "/images/articles/mova-t1-station/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13922,
+        "outputHash": "sha256:d536c88879041712e1b5de7b05d16c2ec18c835f61f94d8ce8beb0849efb0686"
+      }
     },
     "/images/articles/mova-v70-ultra-complete/01-cover.webp": {
       "role": "cover",
@@ -34773,6 +34809,11 @@
       "cover": "/images/articles/mova-lidax-ultra-2000-awd/01-cover.webp",
       "body": []
     },
+    "mova-n1": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-n1/01-cover.webp",
+      "body": []
+    },
     "mova-p70-pro-ultra": {
       "budgetClass": "standard",
       "cover": "/images/articles/mova-p70-pro-ultra/01-cover.webp",
@@ -34786,6 +34827,11 @@
     "mova-s70-ultra-roller": {
       "budgetClass": "standard",
       "cover": "/images/articles/mova-s70-ultra-roller/01-cover.webp",
+      "body": []
+    },
+    "mova-t1-station": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mova-t1-station/01-cover.webp",
       "body": []
     },
     "mova-took-me-to-meet-a-celebrity": {
@@ -38174,6 +38220,15 @@
         }
       }
     },
+    "mova-n1": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mova-n1/01-cover.webp",
+          "hash": "sha256:5763592f6e5c6917c21abf13d9ae6499d7f55dcbbda363d8c17f46be7a158933"
+        }
+      }
+    },
     "mova-p70-pro-ultra": {
       "files": {
         "01-cover.jpg": {
@@ -38198,6 +38253,15 @@
           "status": "matched",
           "primary": "/images/articles/mova-s70-ultra-roller/01-cover.webp",
           "hash": "sha256:6c63fdef6611fe8992ce61de5c6b1619ab16a2d0b6c433ed41b1aec3f18ff4b5"
+        }
+      }
+    },
+    "mova-t1-station": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mova-t1-station/01-cover.webp",
+          "hash": "sha256:57e89553f905148dcfc3abf74adea8306ab3f2c6f44cf4dbef6b36aaf0ae8dc4"
         }
       }
     },

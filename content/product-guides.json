@@ -14891,5 +14891,387 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "mova-n1": {
+    "verdict": "N1 is a practical shortlist option when lifting and transferring the robot matters more than a battery station. Confirm pane geometry, outlet access and a secure tether point before comparing suction figures.",
+    "notFor": "Windows below the documented size, wet or oily glass, locations without a secure anchor, or buyers expecting unattended cordless operation and automatic cloth washing.",
+    "specifications": [
+      {
+        "label": "Robot size",
+        "value": "215 × 215 × 59 mm",
+        "meaning": "Measure clear space around handles and grilles, allowing room to hold and retrieve the robot.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "Robot weight",
+        "value": "1.3 kg",
+        "meaning": "The listed robot weight excludes the external adapter and other accessories.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "Minimum pane",
+        "value": "30 × 45 cm",
+        "meaning": "A small robot body does not make every small divided window compatible.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "Maximum pane",
+        "value": "2 × 3 m",
+        "meaning": "Check both pane dimensions and the available cable route.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "Adhesion rating",
+        "value": "Up to 8,000 Pa",
+        "meaning": "Manufacturer laboratory claim; it is not a cleaning score or a substitute for the safety rope.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "Robot tank",
+        "value": "120 ml",
+        "meaning": "Fluid capacity affects refill frequency; cloth changes remain a separate task.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "Spray system",
+        "value": "Dual-wing mist spray",
+        "meaning": "Liquid is applied ahead of the cloth; the robot does not vacuum wastewater.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "Path and modes",
+        "value": "Z/N paths; six modes",
+        "meaning": "Quick, deep, thorough, edge, spot and remote options serve different tasks.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184"
+      },
+      {
+        "label": "Controls",
+        "value": "Onboard button, remote and MOVAhome app",
+        "meaning": "The manual describes Bluetooth setup with the phone within 10 m.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184"
+      },
+      {
+        "label": "Normal power",
+        "value": "24 V; 72 W; mains adapter",
+        "meaning": "Plan for an outlet throughout the cleaning session.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184"
+      },
+      {
+        "label": "Backup battery",
+        "value": "600 mAh; 14.8 V",
+        "meaning": "This battery supports emergency adhesion after loss of external power.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184"
+      },
+      {
+        "label": "Emergency hold",
+        "value": "At least 30 minutes",
+        "meaning": "Retrieve the robot promptly after a power failure; this is not cleaning runtime.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184"
+      },
+      {
+        "label": "Backup charge time",
+        "value": "75 ± 10 minutes",
+        "meaning": "Manual specification; charge insufficient backup power before attaching the robot.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184"
+      },
+      {
+        "label": "Glass and frame limits",
+        "value": "Glass ≥3 mm; mirror ≥4 mm; frame ≥4 mm",
+        "meaning": "Review the manual for the exact surface; unsuitable seals or gaps can interrupt adhesion.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184"
+      },
+      {
+        "label": "Noise reference",
+        "value": "72 dB(A), no-load laboratory test",
+        "meaning": "The test condition does not establish operating noise in your room.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "Cloth and solution",
+        "value": "Two washable cloths; 100 ml solution listed",
+        "meaning": "The local product page lists a remote; the manual also shows the power and safety accessories.",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Australia",
+        "amount": "AUD 549",
+        "source": "https://au.mova.tech/products/mova-window-cleaning-robot-n1",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official-store snapshot on 12 September 2026. The product title was marked backorder; confirm dispatch timing, local bundle and current checkout price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA N1",
+          "url": "/products/mova-n1",
+          "market": "Australia"
+        },
+        {
+          "name": "MOVA T1 Station",
+          "url": "/products/mova-t1-station",
+          "market": "Australia"
+        },
+        {
+          "name": "ECOVACS WINBOT mini 2",
+          "url": "/products/ecovacs-winbot-mini-2",
+          "market": "US reference"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Robot size",
+          "values": [
+            "215 × 215 × 59 mm",
+            "277 × 277 × 79.5 mm",
+            "215 × 215 × 55 mm"
+          ]
+        },
+        {
+          "label": "Listed robot weight",
+          "values": [
+            "1.3 kg",
+            "1.8 ± 0.1 kg",
+            "1.3 ± 0.1 kg"
+          ]
+        },
+        {
+          "label": "Minimum pane",
+          "values": [
+            "30 × 45 cm",
+            "30 × 40 cm",
+            "25 × 25 cm"
+          ]
+        },
+        {
+          "label": "Power approach",
+          "values": [
+            "Mains adapter; emergency backup",
+            "Battery station; about 80 min cleaning plus safety reserve",
+            "Mains-powered; emergency backup"
+          ]
+        },
+        {
+          "label": "Tank and corner hardware",
+          "values": [
+            "120 ml; cloth wiping",
+            "80 ml; four rotating corner brushes",
+            "50 ml; four corner brushes"
+          ]
+        }
+      ],
+      "takeaway": "Choose by usable pane dimensions and setup effort. N1 is compact but has a larger minimum-pane requirement than mini 2; T1 Station trades a heavier system for battery-powered cleaning and integrated cable handling. These are regional specification comparisons, not measured cleaning rankings."
+    },
+    "resources": [
+      {
+        "label": "MOVA Australia product and price",
+        "url": "https://au.mova.tech/products/mova-window-cleaning-robot-n1",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "MOVA N1 official user manual",
+        "url": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "MOVA Australia 2026 launch index",
+        "url": "https://au.mova.tech/pages/window-cleaning-robot-series-user-manuals",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "mova-t1-station": {
+    "verdict": "T1 Station deserves consideration for compatible framed windows when battery power and cable handling save effort. Its value depends on station placement and the need for corner brushes; allow for manual pad care and about 80 minutes of working runtime.",
+    "notFor": "Frameless or incompatible glass, homes without a suitable floor and secure anchor near the window, or buyers seeking a lightweight carry kit or automatic cloth washing.",
+    "specifications": [
+      {
+        "label": "Robot dimensions",
+        "value": "277 × 277 × 79.5 mm",
+        "meaning": "Allow clearance for handles and a safe grip when attaching or retrieving the robot.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Robot weight",
+        "value": "1.8 ± 0.1 kg",
+        "meaning": "Assess the lift and reach needed at each intended window.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Station dimensions",
+        "value": "324 × 231 × 337 mm",
+        "meaning": "The manual requires placement on a suitable floor, not an elevated sill.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Station weight",
+        "value": "8.2 ± 0.2 kg",
+        "meaning": "The advertised 6 kg counterweight is a component, not the complete station weight.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Minimum pane",
+        "value": "30 × 40 cm",
+        "meaning": "Measure usable flat glass; the AU manual also prohibits frameless windows.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/T1S-G2579.pdf?v=1787106822"
+      },
+      {
+        "label": "Maximum pane by mode",
+        "value": "2.5 × 4 m normally; 2.5 × 8 m in Zone Cleaning",
+        "meaning": "The larger sales-page figure is mode-dependent in the manual.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/T1S-G2579.pdf?v=1787106822"
+      },
+      {
+        "label": "Working runtime",
+        "value": "Approximately 80 minutes",
+        "meaning": "Actual battery-powered cleaning time varies with conditions and settings.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/T1S-G2579.pdf?v=1787106822"
+      },
+      {
+        "label": "Safety reserve",
+        "value": "At least 30 minutes",
+        "meaning": "About 110 minutes total includes this reserve; it is not 110 minutes of cleaning.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/T1S-G2579.pdf?v=1787106822"
+      },
+      {
+        "label": "Station battery",
+        "value": "4,500 mAh",
+        "meaning": "The station powers operation and preserves emergency reserve.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Charging",
+        "value": "Approximately 3 hours when idle",
+        "meaning": "The product page also lists under 7.5 hours while in use; plugged-in operation is supported.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Combined cable",
+        "value": "5.5 m; automatic retraction",
+        "meaning": "Power, safety and communication share the robot cable; the station has a separate safety tether.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Adhesion rating",
+        "value": "Up to 10,000 Pa",
+        "meaning": "Manufacturer test claim; secure the station and tether as instructed.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Tank and spray",
+        "value": "80 ml; four nozzles",
+        "meaning": "Warm spray is enabled through the app and needs time to clear residual cold water.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Water temperature",
+        "value": "Up to 40°C at the outlet",
+        "meaning": "A manufacturer test figure, not steam cleaning or a disinfection claim.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Corner cleaning",
+        "value": "Four rotating corner brushes",
+        "meaning": "Brushes need manual cleaning and drying after use.",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "Glass and frame limits",
+        "value": "Glass ≥3 mm; mirror ≥4 mm; frame ≥2 mm",
+        "meaning": "The Australian manual excludes frameless, curved and unsuitable narrow or beveled frames.",
+        "source": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/T1S-G2579.pdf?v=1787106822"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Australia",
+        "amount": "AUD 999",
+        "source": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-12",
+        "note": "Official-store snapshot on 12 September 2026. Confirm current local bundle, availability and checkout terms; this is not a global price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "MOVA T1 Station",
+          "url": "/products/mova-t1-station",
+          "market": "Australia"
+        },
+        {
+          "name": "MOVA N1",
+          "url": "/products/mova-n1",
+          "market": "Australia"
+        },
+        {
+          "name": "ECOVACS WINBOT W3 OMNI",
+          "url": "/products/ecovacs-winbot-w3-omni",
+          "market": "US reference"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning power",
+          "values": [
+            "Battery station; about 80 min working runtime",
+            "Mains adapter; emergency backup only",
+            "Battery station; up to 130 min listed"
+          ]
+        },
+        {
+          "label": "Robot size",
+          "values": [
+            "277 × 277 × 79.5 mm",
+            "215 × 215 × 59 mm",
+            "270 × 270 × 76 mm"
+          ]
+        },
+        {
+          "label": "Robot tank",
+          "values": [
+            "80 ml",
+            "120 ml",
+            "80 ml"
+          ]
+        },
+        {
+          "label": "Cloth care",
+          "values": [
+            "Manual washing; four removable corner brushes",
+            "Manual washing",
+            "VortexWash automatic pad washing"
+          ]
+        },
+        {
+          "label": "Cable handling",
+          "values": [
+            "5.5 m combined cable; automatic retraction",
+            "External adapter and separate safety rope",
+            "5.5 m cable; station storage"
+          ]
+        }
+      ],
+      "takeaway": "T1 Station adds a working battery and corner brushes over N1, while W3 OMNI adds automatic pad washing. Compare regional window restrictions and total carry weight before paying for station features. Runtime figures come from different manufacturer tests."
+    },
+    "resources": [
+      {
+        "label": "MOVA Australia product and price",
+        "url": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "MOVA T1 Station official user manual",
+        "url": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/T1S-G2579.pdf?v=1787106822",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "MOVA Australia 2026 launch index",
+        "url": "https://au.mova.tech/pages/window-cleaning-robot-series-user-manuals",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }
