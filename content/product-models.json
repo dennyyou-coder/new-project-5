@@ -2373,7 +2373,8 @@
       "roborock-saros-20",
       "roborock-saros-20-sonic",
       "ecovacs-deebot-x12s-omnicyclone",
-      "mova-z70-ultra-roller-complete"
+      "mova-z70-ultra-roller-complete",
+      "narwal-freo-20"
     ],
     "announced": "2026-09-03",
     "verifiedAt": "2026-09-10",
@@ -3266,7 +3267,9 @@
     ],
     "related": [
       "eufy-omni-s2",
-      "roborock-saros-20-flow"
+      "roborock-saros-20-flow",
+      "narwal-freo-20",
+      "narwal-freo-20-edge"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -3464,7 +3467,8 @@
     ],
     "related": [
       "dyson-v16-piston-animal",
-      "dyson-v10-konical"
+      "dyson-v10-konical",
+      "narwal-v50-cube"
     ],
     "announced": "",
     "verifiedAt": "2026-09-10",
@@ -4434,7 +4438,9 @@
     ],
     "related": [
       "dreame-z30-pro-aqua-a",
-      "dyson-v16-piston-animal"
+      "dyson-v16-piston-animal",
+      "narwal-v50",
+      "narwal-v50-cube"
     ],
     "announced": "2026-03-19",
     "verifiedAt": "2026-09-12",
@@ -6206,7 +6212,8 @@
     "related": [
       "dreame-l60-ultra-pe",
       "dreame-l60-ultra",
-      "dreame-l60-pro-ultra"
+      "dreame-l60-pro-ultra",
+      "narwal-freo-20-edge"
     ],
     "announced": "2026-04-28",
     "verifiedAt": "2026-09-12",
@@ -6232,5 +6239,401 @@
     "launchYear": 2026,
     "launchNote": "Included in Dreame’s L60 series launch announcement dated 28 April 2026; specifications and prices refer to the current US configuration.",
     "launchSource": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
+  },
+  {
+    "slug": "narwal-freo-20",
+    "name": "Narwal Freo 20",
+    "brand": "Narwal",
+    "brandSlug": "narwal",
+    "category": "Robot vacuums",
+    "market": "United States",
+    "summary": "A FlowWash track-mop robot with 60°C fresh-water rinsing, dual-camera obstacle sensing and a 95 mm body.",
+    "fit": "Homes with frequent hard-floor mopping and low furniture that leaves enough clearance for the robot.",
+    "caution": "The 60°C mopping-water claim differs from station washing; threshold geometry and maintenance intervals still need checking.",
+    "facts": [
+      {
+        "label": "Mop system",
+        "value": "FlowWash circulating track",
+        "meaning": "Fresh-water rinsing and separated dirty-water collection during cleaning."
+      },
+      {
+        "label": "Mopping-water claim",
+        "value": "Up to 60°C / 140°F",
+        "meaning": "Temperature describes the water supplied to the mop, not a guaranteed floor temperature."
+      },
+      {
+        "label": "Obstacle sensing",
+        "value": "TwinAI dual 1080p RGB cameras",
+        "meaning": "Camera detection cannot guarantee avoidance of every cable or contaminant."
+      },
+      {
+        "label": "Body height",
+        "value": "95 mm / 3.74 in",
+        "meaning": "Allow practical furniture clearance beyond the listed body measurement."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What makes Freo 20 different from Freo 20 Edge?",
+        "answer": "Freo 20 explicitly advertises 60°C fresh-water track rinsing and dual RGB cameras. The checked US Edge page lists fresh-water FlowWash, dToF LiDAR and 3D structured-light obstacle sensing, with 45°C dock drying."
+      },
+      {
+        "question": "Does it mop floors at 100°C?",
+        "answer": "No. The official FAQ separates up to 60°C water used in mopping from the station’s 45–100°C self-cleaning range. Neither should be presented as a guaranteed temperature across the floor."
+      },
+      {
+        "question": "Can it climb a 4 cm vertical step?",
+        "answer": "The official page advertises up to 1.57 inches, approximately 4 cm, of threshold crossing. The checked headline does not resolve every obstacle geometry; confirm the exact transition with the manual or manufacturer."
+      },
+      {
+        "question": "Is 86 minutes its full battery runtime?",
+        "answer": "No. That number comes from a 30-minute recharge test starting at 20% battery, reaching 43%. It should not be relabelled as full-charge runtime or runtime at maximum suction."
+      },
+      {
+        "question": "Does the 120-day bag claim mean no maintenance?",
+        "answer": "No. Dirty-water handling, mop and wash-area care, brush inspection and sensor cleaning remain necessary. Bag life depends on actual debris volume."
+      },
+      {
+        "question": "When was Freo 20 introduced?",
+        "answer": "Narwal announced Freo 20 on 6 August 2026 and scheduled US retail availability for 20 August. The original launch promotion ended on 3 September."
+      },
+      {
+        "question": "Which current price and package were checked?",
+        "answer": "The US Freo 20 with Free Advanced Kit variant showed $1,099.99 on 12 September 2026. A standalone variant was separately listed at $1,099.00; package and price should be checked together."
+      }
+    ],
+    "articles": [
+      "roborock-vs-narwal-robot-vacuums",
+      "narwal-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "narwal-freo-20-edge",
+      "narwal-flow-2",
+      "roborock-saros-20-flow"
+    ],
+    "announced": "2026-08-06",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US Freo 20 features and FAQ",
+        "url": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Selected US Advanced Kit package",
+        "url": "https://us.narwal.com/products/freo-20-robot-vacuum?variant=52872168800437"
+      },
+      {
+        "label": "Freo 20 announcement, 6 August 2026",
+        "url": "https://us.narwal.com/blogs/press/new-freo-20-bringing-flagship-real-time-self-cleaning-mopping"
+      },
+      {
+        "label": "Freo 20 Edge comparison",
+        "url": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Flow 2 comparison",
+        "url": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      }
+    ],
+    "imageSource": "https://us.narwal.com/cdn/shop/files/HomePage_Product_Card_J68.png?v=1787635901",
+    "launchYear": 2026,
+    "launchNote": "Announced 6 August 2026, with US retail availability scheduled for 20 August; the checked offer is a dated US package.",
+    "launchSource": "https://us.narwal.com/blogs/press/new-freo-20-bringing-flagship-real-time-self-cleaning-mopping"
+  },
+  {
+    "slug": "narwal-freo-20-edge",
+    "name": "Narwal Freo 20 Edge",
+    "brand": "Narwal",
+    "brandSlug": "narwal",
+    "category": "Robot vacuums",
+    "market": "United States — announced; checkout status unverified",
+    "summary": "A fresh-water track-mop robot with a 26.6 cm cleaning track, 5 cm extension and dToF LiDAR navigation.",
+    "fit": "Homes prioritising hard-floor edge coverage and routine vacuum-and-mop cleaning at the announced lower Freo price tier.",
+    "caution": "The US announcement and early-access page disagree on sales status; do not transfer Freo 20’s hot-water or dual-camera specifications.",
+    "facts": [
+      {
+        "label": "Track width",
+        "value": "26.6 cm",
+        "meaning": "Measured edge to edge in the manufacturer footnote."
+      },
+      {
+        "label": "Mop extension",
+        "value": "Up to 5 cm from the robot body",
+        "meaning": "Maximum extension, not guaranteed coverage in every corner."
+      },
+      {
+        "label": "Navigation",
+        "value": "dToF LiDAR",
+        "meaning": "Different from a guarantee of dual RGB-camera hardware."
+      },
+      {
+        "label": "Body / entry clearance",
+        "value": "95 mm body; at least 100 mm clearance",
+        "meaning": "Follow the explicit furniture-entry footnote."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is Freo 20 Edge confirmed available to buy in the US?",
+        "answer": "The 3 September announcement scheduled availability from 7 September, but the checked US landing page still displays early access and the expected product checkout route did not resolve. Current US checkout availability is unverified."
+      },
+      {
+        "question": "Does it use 60°C hot water during mopping?",
+        "answer": "That feature is explicitly advertised for Freo 20. The checked Edge page specifies fresh-water FlowWash and 45°C station drying; do not transfer the other model’s onboard temperature claim."
+      },
+      {
+        "question": "How far does its mop extend?",
+        "answer": "The footnote gives up to 5 cm measured from the robot body. The track itself is 26.6 cm wide; these are two different measurements."
+      },
+      {
+        "question": "Does it have the same cameras as Freo 20?",
+        "answer": "The Edge US comparison table lists dToF LiDAR navigation and 3D structured-light obstacle sensing. It does not establish Freo 20’s dual 1080p RGB-camera arrangement."
+      },
+      {
+        "question": "Will it fit under 9.5 cm furniture?",
+        "answer": "The robot body is 9.5 cm high, but Narwal’s footnote requires at least 10 cm furniture clearance. Measuring only the body height would understate the requirement."
+      },
+      {
+        "question": "Can it cover 302 m² on one battery?",
+        "answer": "The 302 m² claim is per water fill in Mop Only Standard mode. The separate per-charge claim is 222 m² in Standard Vacuum & Mop mode."
+      },
+      {
+        "question": "What does the listed price mean?",
+        "answer": "The official announcement gives US MSRP $799.99 and a $699.99 launch promotion scheduled for 7–20 September 2026. These are announced prices; a current successful checkout offer was not verified."
+      }
+    ],
+    "articles": [
+      "roborock-vs-narwal-robot-vacuums",
+      "narwal-vs-ecovacs-robot-vacuums"
+    ],
+    "related": [
+      "narwal-freo-20",
+      "narwal-flow-2",
+      "dreame-l60-ultra-fe"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US Edge feature page and test footnotes",
+        "url": "https://us.narwal.com/pages/freo-20-edge-robot-vacuum"
+      },
+      {
+        "label": "Narwal September 2026 announcement",
+        "url": "https://www.prnewswire.com/news-releases/narwal-expands-ai-powered-cleaning-across-the-home-as-ifa-2026-returns-to-berlin-302868793.html"
+      },
+      {
+        "label": "Freo 20 comparison",
+        "url": "https://us.narwal.com/products/freo-20-robot-vacuum"
+      },
+      {
+        "label": "Flow 2 comparison",
+        "url": "https://us.narwal.com/products/flow-2-robot-vacuum-and-mop"
+      }
+    ],
+    "imageSource": "https://us.narwal.com/cdn/shop/files/Frame_1321318432.png?v=1788768326",
+    "launchYear": 2026,
+    "launchNote": "Included in Narwal’s 3 September 2026 announcement, which scheduled US sales for 7 September; the checked US page still showed early access.",
+    "launchSource": "https://www.prnewswire.com/news-releases/narwal-expands-ai-powered-cleaning-across-the-home-as-ifa-2026-returns-to-berlin-302868793.html"
+  },
+  {
+    "slug": "narwal-v50",
+    "name": "Narwal V50",
+    "brand": "Narwal",
+    "brandSlug": "narwal",
+    "category": "Cordless vacuums",
+    "market": "Germany",
+    "summary": "A 210 AW dry cordless cleaner with one removable battery, distinct from the dual-battery, auto-empty V50 Cube.",
+    "fit": "Households comfortable with manual bin care that want the lower-priced standard V50 configuration.",
+    "caution": "The shared product page promotes Cube features; confirm one-battery packaging and the absence of automatic emptying.",
+    "facts": [
+      {
+        "label": "Maximum suction power",
+        "value": "210 AW",
+        "meaning": "Air watts are distinct from pressure and from measured debris pickup."
+      },
+      {
+        "label": "Handheld-unit weight",
+        "value": "1.4 kg",
+        "meaning": "This is not the fully assembled floor-cleaner weight."
+      },
+      {
+        "label": "Battery configuration",
+        "value": "One removable pack",
+        "meaning": "Use the selected variant rather than the family banner."
+      },
+      {
+        "label": "Automatic emptying",
+        "value": "Not included",
+        "meaning": "Cube has the automatic-empty station; the standard model does not."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What changes between V50 and V50 Cube?",
+        "answer": "The checked German table gives both 210 AW. V50 has one battery and no automatic emptying; Cube adds a second battery, an auto-empty station, active dock detangling and dust scraping."
+      },
+      {
+        "question": "Does the runtime apply to normal carpet cleaning?",
+        "answer": "The maximum is measured in Eco mode with the crevice tool: up to 90 minutes per battery. Cube’s 180-minute figure combines two packs. Powered-head and high-power use have different demands."
+      },
+      {
+        "question": "Does the complete vacuum weigh 1.4 kg?",
+        "answer": "The 1.4 kg headline describes the handheld unit. It should not be used as the weight of the full stick assembly with floor head and tube."
+      },
+      {
+        "question": "Can it wash hard floors or pick up liquids?",
+        "answer": "This guide covers a dry cordless vacuum. Do not assume wet pickup or floor-washing capability from Narwal’s separate robot-mop and wet-dry ranges."
+      },
+      {
+        "question": "Which price belongs to this configuration?",
+        "answer": "The selected German V50 standard package showed €399 including VAT on 12 September 2026. Cube was separately listed at €549; conditional coupons are separate."
+      },
+      {
+        "question": "Is US availability confirmed?",
+        "answer": "This page verifies the German standard V50 configuration. A CES family preview does not by itself establish current US availability or the same regional package."
+      },
+      {
+        "question": "Which maintenance claims should I check?",
+        "answer": "Standard V50 requires manual dust disposal and does not include Cube’s automatic station detangling or dust-scraping system. Follow the exact manual for filters, bin care and compatible replacement parts."
+      }
+    ],
+    "articles": [
+      "dyson-finally-sells-self-emptying-vacuum",
+      "shark-vs-dyson-cordless-vacuums"
+    ],
+    "related": [
+      "narwal-v50-cube",
+      "dyson-v10-konical",
+      "dreame-z30-pro-aqua-a"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "German selected configuration and comparison",
+        "url": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Narwal V50 family at CES 2026",
+        "url": "https://www.prnewswire.com/news-releases/narwal-unveils-next-generation-smart-cleaning-lineup-at-ces-2026-headlined-by-flagship-flow-2-robot-vacuum-302652813.html"
+      },
+      {
+        "label": "Narwal September 2026 lineup and availability",
+        "url": "https://www.prnewswire.com/news-releases/narwal-expands-ai-powered-cleaning-across-the-home-as-ifa-2026-returns-to-berlin-302868793.html"
+      },
+      {
+        "label": "Other V50 configuration",
+        "url": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Dyson V10 Konical comparison",
+        "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      }
+    ],
+    "imageSource": "https://de.narwal.com/cdn/shop/files/v50-comparison-product_4f136264-6d22-415d-9e96-a826018c0655.png?v=1788343190",
+    "launchYear": 2026,
+    "launchNote": "The V50 family was previewed at CES in January 2026; Cube also appeared in the September IFA lineup. This record verifies the German variant.",
+    "launchSource": "https://www.prnewswire.com/news-releases/narwal-unveils-next-generation-smart-cleaning-lineup-at-ces-2026-headlined-by-flagship-flow-2-robot-vacuum-302652813.html"
+  },
+  {
+    "slug": "narwal-v50-cube",
+    "name": "Narwal V50 Cube",
+    "brand": "Narwal",
+    "brandSlug": "narwal",
+    "category": "Cordless vacuums",
+    "market": "Germany",
+    "summary": "A 210 AW cordless cleaner with an automatic-emptying station and two batteries; the German Cube package differs from the €399 base V50.",
+    "fit": "Households wanting reduced dust-bin handling and a second battery for separate cleaning sessions.",
+    "caution": "The 180-minute claim combines two batteries in Eco mode with a crevice tool; it is not three hours of powered carpet cleaning.",
+    "facts": [
+      {
+        "label": "Maximum suction power",
+        "value": "210 AW",
+        "meaning": "Air watts are distinct from pressure and from measured debris pickup."
+      },
+      {
+        "label": "Handheld-unit weight",
+        "value": "1.4 kg",
+        "meaning": "This is not the fully assembled floor-cleaner weight."
+      },
+      {
+        "label": "Battery configuration",
+        "value": "Two removable packs",
+        "meaning": "Use the selected variant rather than the family banner."
+      },
+      {
+        "label": "Automatic emptying",
+        "value": "Included",
+        "meaning": "Cube has the automatic-empty station; the standard model does not."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What changes between V50 and V50 Cube?",
+        "answer": "The checked German table gives both 210 AW. V50 has one battery and no automatic emptying; Cube adds a second battery, an auto-empty station, active dock detangling and dust scraping."
+      },
+      {
+        "question": "Does the runtime apply to normal carpet cleaning?",
+        "answer": "The maximum is measured in Eco mode with the crevice tool: up to 90 minutes per battery. Cube’s 180-minute figure combines two packs. Powered-head and high-power use have different demands."
+      },
+      {
+        "question": "Does the complete vacuum weigh 1.4 kg?",
+        "answer": "The 1.4 kg headline describes the handheld unit. It should not be used as the weight of the full stick assembly with floor head and tube."
+      },
+      {
+        "question": "Can it wash hard floors or pick up liquids?",
+        "answer": "This guide covers a dry cordless vacuum. Do not assume wet pickup or floor-washing capability from Narwal’s separate robot-mop and wet-dry ranges."
+      },
+      {
+        "question": "Which price belongs to this configuration?",
+        "answer": "The selected German Cube standard package showed €549 including VAT on 12 September 2026. The shared page’s €399 starting price belongs to standard V50; conditional coupons are separate."
+      },
+      {
+        "question": "Is US availability confirmed?",
+        "answer": "Narwal’s September 2026 announcement said US V50 Cube pricing and availability would follow later. This guide uses a German offer and does not assert a US retail launch."
+      },
+      {
+        "question": "Which maintenance claims should I check?",
+        "answer": "Automatic emptying still needs compatible bags, filters and air-path care. The page’s 100-day storage claim is conditional, and its conflicting station-dimension labels need confirmation for tight spaces."
+      }
+    ],
+    "articles": [
+      "dyson-finally-sells-self-emptying-vacuum",
+      "shark-vs-dyson-cordless-vacuums"
+    ],
+    "related": [
+      "narwal-v50",
+      "dyson-v10-konical",
+      "dreame-z30-pro-aqua-a"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "German selected configuration and comparison",
+        "url": "https://de.narwal.com/products/v50?variant=53940716634388"
+      },
+      {
+        "label": "Narwal V50 family at CES 2026",
+        "url": "https://www.prnewswire.com/news-releases/narwal-unveils-next-generation-smart-cleaning-lineup-at-ces-2026-headlined-by-flagship-flow-2-robot-vacuum-302652813.html"
+      },
+      {
+        "label": "Narwal September 2026 lineup and availability",
+        "url": "https://www.prnewswire.com/news-releases/narwal-expands-ai-powered-cleaning-across-the-home-as-ifa-2026-returns-to-berlin-302868793.html"
+      },
+      {
+        "label": "Other V50 configuration",
+        "url": "https://de.narwal.com/products/v50?variant=53940716601620"
+      },
+      {
+        "label": "Dyson V10 Konical comparison",
+        "url": "https://www.dyson.com/vacuum-cleaners/cordless/v10-konical/black-copper"
+      }
+    ],
+    "imageSource": "https://de.narwal.com/cdn/shop/files/v50-comparison-product-cube_7c0d5f64-59bf-4d24-80f4-42ea0e73f24e.png?v=1788343146",
+    "launchYear": 2026,
+    "launchNote": "The V50 family was previewed at CES in January 2026; Cube also appeared in the September IFA lineup. This record verifies the German variant.",
+    "launchSource": "https://www.prnewswire.com/news-releases/narwal-unveils-next-generation-smart-cleaning-lineup-at-ces-2026-headlined-by-flagship-flow-2-robot-vacuum-302652813.html"
   }
 ]

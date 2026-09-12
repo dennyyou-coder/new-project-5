@@ -3770,6 +3770,57 @@
         "outputHash": "sha256:6d3e8a0912a3fe5c877d22cc04f8fa88554682d418078b92a287586a5d4f3cc8"
       }
     },
+    "/images/articles/narwal-freo-20-edge/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 928,
+      "height": 640,
+      "bytes": 10274,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:106b36b6ac7c82f03dba4aa2f96723bce9f1da4d00639e2740ba0899c2d0dbb7",
+      "outputHash": "sha256:71cca28d93ff510c258edc198d6e85dada4c246fb52e94602ff4722b73fe432d"
+    },
+    "/images/articles/narwal-freo-20/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 113714,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6592b3ef777ecafe47afa06dec69fea4b1ee2af970ffdde11d3d46d13b21ad49",
+      "outputHash": "sha256:66ea9655456941fa61e30f71d9dceb55f9f1b33150d1214da8582621538646d6",
+      "mobile": {
+        "src": "/images/articles/narwal-freo-20/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 22102,
+        "outputHash": "sha256:a71a5dbb42ca4e8c6f66fc57d40c68f5ea5e3175a1318b0d2f680f3ef30eefeb"
+      }
+    },
+    "/images/articles/narwal-v50-cube/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 326,
+      "height": 600,
+      "bytes": 9570,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a9102a2eb4d9604454e4efca54e45bd6deea65e62d95fc45d356f025a2a74377",
+      "outputHash": "sha256:2c39150916c0b310bdcad8cd98434dcff606e5d58f66b6e3bda1926b2e0cbac9"
+    },
+    "/images/articles/narwal-v50/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 326,
+      "height": 600,
+      "bytes": 11868,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1b27953e56d4942fc826ff21496dff2e841e4acba067700e2d5554687822e80f",
+      "outputHash": "sha256:8f235a3f653784d668799cfd2e63c91689b7d07ceacec5433c4337b61ad37ce9"
+    },
     "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -34492,6 +34543,16 @@
       "cover": "/images/articles/narwal-flow-2/01-cover.webp",
       "body": []
     },
+    "narwal-freo-20": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/narwal-freo-20/01-cover.webp",
+      "body": []
+    },
+    "narwal-freo-20-edge": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/narwal-freo-20-edge/01-cover.webp",
+      "body": []
+    },
     "narwal-j6-and-technology-iteration": {
       "budgetClass": "standard",
       "cover": "/images/insights/narwal-j6-and-technology-iteration-cover.jpg",
@@ -34511,6 +34572,16 @@
       "body": [
         "/images/insights/narwal-revival-story-image-02.jpg"
       ]
+    },
+    "narwal-v50": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/narwal-v50/01-cover.webp",
+      "body": []
+    },
+    "narwal-v50-cube": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/narwal-v50-cube/01-cover.webp",
+      "body": []
     },
     "narwal-vs-ecovacs-robot-vacuums": {
       "budgetClass": "standard",
@@ -37751,6 +37822,42 @@
           "status": "matched",
           "primary": "/images/articles/narwal-flow-2/01-cover.webp",
           "hash": "sha256:ecc91c5bf730d91f527108e19d9231c402e6e9db0981841c4a18cc1e79a8f8a4"
+        }
+      }
+    },
+    "narwal-freo-20": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/narwal-freo-20/01-cover.webp",
+          "hash": "sha256:6592b3ef777ecafe47afa06dec69fea4b1ee2af970ffdde11d3d46d13b21ad49"
+        }
+      }
+    },
+    "narwal-freo-20-edge": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/narwal-freo-20-edge/01-cover.webp",
+          "hash": "sha256:106b36b6ac7c82f03dba4aa2f96723bce9f1da4d00639e2740ba0899c2d0dbb7"
+        }
+      }
+    },
+    "narwal-v50": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/narwal-v50/01-cover.webp",
+          "hash": "sha256:1b27953e56d4942fc826ff21496dff2e841e4acba067700e2d5554687822e80f"
+        }
+      }
+    },
+    "narwal-v50-cube": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/narwal-v50-cube/01-cover.webp",
+          "hash": "sha256:a9102a2eb4d9604454e4efca54e45bd6deea65e62d95fc45d356f025a2a74377"
         }
       }
     },
