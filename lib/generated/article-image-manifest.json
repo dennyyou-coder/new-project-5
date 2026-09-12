@@ -1044,14 +1044,21 @@
     },
     "/images/articles/commercial-cleaning-robots-next/01-cover.webp": {
       "role": "cover",
-      "kind": "photo",
+      "kind": "graphic",
       "width": 1600,
       "height": 900,
       "bytes": 47870,
       "format": "webp",
-      "quality": 100,
-      "sourceHash": "sha256:c5f80f6b519487087acede5fd2d6c6c7e05908358db8772709e97e59e34a11cb",
-      "outputHash": "sha256:c5f80f6b519487087acede5fd2d6c6c7e05908358db8772709e97e59e34a11cb"
+      "quality": 90,
+      "sourceHash": "sha256:907a3ad879b3df3619d5fee4e4d751ececcf41e9a16863af401151218e0c2f93",
+      "outputHash": "sha256:c5f80f6b519487087acede5fd2d6c6c7e05908358db8772709e97e59e34a11cb",
+      "mobile": {
+        "src": "/images/articles/commercial-cleaning-robots-next/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22566,
+        "outputHash": "sha256:6100e48d22655a7e3282e9bcb70423436bc5121d54a39d8401eb891ebcf005e7"
+      }
     },
     "/images/articles/commercial-cleaning-robots-next/02-evo-cleaner.webp": {
       "role": "body",
@@ -1060,20 +1067,34 @@
       "height": 683,
       "bytes": 61100,
       "format": "webp",
-      "quality": 100,
-      "sourceHash": "sha256:3ec3d470f4bf41fa8af2d4a24e227ea03df63c27379bfe5e93a3938afa5f1d06",
-      "outputHash": "sha256:3ec3d470f4bf41fa8af2d4a24e227ea03df63c27379bfe5e93a3938afa5f1d06"
+      "quality": 84,
+      "sourceHash": "sha256:fc7f2a0aa5cd3c6cd5a3c077d927d33260cb2d51328f4929a559c97c367abca9",
+      "outputHash": "sha256:3ec3d470f4bf41fa8af2d4a24e227ea03df63c27379bfe5e93a3938afa5f1d06",
+      "mobile": {
+        "src": "/images/articles/commercial-cleaning-robots-next/02-evo-cleaner-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 40486,
+        "outputHash": "sha256:10ff83cbed2c162d80be391ef57e7ccf53a8d0b593e7f108deb237caa55da485"
+      }
     },
     "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
-      "role": "body",
-      "kind": "photo",
+      "role": "chart",
+      "kind": "graphic",
       "width": 1600,
       "height": 900,
       "bytes": 80282,
       "format": "webp",
-      "quality": 100,
-      "sourceHash": "sha256:6d6b627f25254a96a3feaf7d0f2e4ce565594f93d874693e7d28b5a28470b835",
-      "outputHash": "sha256:6d6b627f25254a96a3feaf7d0f2e4ce565594f93d874693e7d28b5a28470b835"
+      "quality": 90,
+      "sourceHash": "sha256:56ab2b99c25eb3b37dcc5945ccd68c4e13457ef13bf0403f37c5a41e88524553",
+      "outputHash": "sha256:6d6b627f25254a96a3feaf7d0f2e4ce565594f93d874693e7d28b5a28470b835",
+      "mobile": {
+        "src": "/images/articles/commercial-cleaning-robots-next/03-buyer-value-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 35722,
+        "outputHash": "sha256:8e408432979782f56544e46ff69efdcbe1d4fb72f760aff8d0137135e3637885"
+      }
     },
     "/images/articles/cordless-vacuum-battery-drains-fast/01-cover.webp": {
       "role": "cover",
@@ -4995,35 +5016,6 @@
         "outputHash": "sha256:04c8ded5a33112506ed10237396462b5c55e95a448491fc99277370df42650bf"
       }
     },
-    "/images/articles/sbd-excel-sale/01-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 69072,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ca59533ef9e8b841cf179b9db129b13f7d3ae060440229eacf8e44fcaabd9b1b",
-      "outputHash": "sha256:867f57ea5c66b8b256ffb90998be22fba202937b14dd308afa6e4b5ae52b1ff8",
-      "mobile": {
-        "src": "/images/articles/sbd-excel-sale/01-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 25972,
-        "outputHash": "sha256:96e5d232341f0588a6260ca6a9e5905c0e12d7b1f5872ed61ad6a588526c404d"
-      }
-    },
-    "/images/articles/sbd-excel-sale/02-outdoor-paths.png": {
-      "role": "chart",
-      "kind": "graphic",
-      "width": 1600,
-      "height": 900,
-      "bytes": 44453,
-      "format": "png",
-      "quality": 100,
-      "sourceHash": "sha256:607f7da5c68c199fda87df296f52231caef605d3be905aa40dec464901b40540",
-      "outputHash": "sha256:d00c067451838a50833777f46347e6671c810e412e5191a3f40f27b3aa1b6553"
-    },
     "/images/articles/segway-navimow-h220/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -5250,6 +5242,35 @@
         "bytes": 77154,
         "outputHash": "sha256:8cdbc3824fba1cfb800d56e949161c556cb629cce48aa65ef727c14742ce5470"
       }
+    },
+    "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69072,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ca59533ef9e8b841cf179b9db129b13f7d3ae060440229eacf8e44fcaabd9b1b",
+      "outputHash": "sha256:867f57ea5c66b8b256ffb90998be22fba202937b14dd308afa6e4b5ae52b1ff8",
+      "mobile": {
+        "src": "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25972,
+        "outputHash": "sha256:96e5d232341f0588a6260ca6a9e5905c0e12d7b1f5872ed61ad6a588526c404d"
+      }
+    },
+    "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44453,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:607f7da5c68c199fda87df296f52231caef605d3be905aa40dec464901b40540",
+      "outputHash": "sha256:d00c067451838a50833777f46347e6671c810e412e5191a3f40f27b3aa1b6553"
     },
     "/images/articles/story-of-hard-floor-washers/01-cover.webp": {
       "role": "cover",
@@ -35045,13 +35066,6 @@
         "/images/blog/sample-testing-cleaning-appliances-checklist.webp"
       ]
     },
-    "sbd-excel-sale": {
-      "budgetClass": "standard",
-      "cover": "/images/articles/sbd-excel-sale/01-cover.webp",
-      "body": [
-        "/images/articles/sbd-excel-sale/02-outdoor-paths.png"
-      ]
-    },
     "segway-navimow-h220": {
       "budgetClass": "standard",
       "cover": "/images/articles/segway-navimow-h220/01-cover.webp",
@@ -35188,6 +35202,13 @@
       "budgetClass": "standard",
       "cover": "/images/blog/spot-cleaners-car-detailing-guide.webp",
       "body": []
+    },
+    "stanley-black-decker-excel-sale-outdoor-strategy": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover.webp",
+      "body": [
+        "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png"
+      ]
     },
     "stanley-black-decker-q2-2026-power-tools-recovery": {
       "budgetClass": "standard",
@@ -36587,6 +36608,25 @@
         }
       }
     },
+    "commercial-cleaning-robots-next": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-cleaning-robots-next/01-cover.webp",
+          "hash": "sha256:907a3ad879b3df3619d5fee4e4d751ececcf41e9a16863af401151218e0c2f93"
+        },
+        "02-evo-cleaner.webp": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-cleaning-robots-next/02-evo-cleaner.webp",
+          "hash": "sha256:fc7f2a0aa5cd3c6cd5a3c077d927d33260cb2d51328f4929a559c97c367abca9"
+        },
+        "03-buyer-value.webp": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp",
+          "hash": "sha256:56ab2b99c25eb3b37dcc5945ccd68c4e13457ef13bf0403f37c5a41e88524553"
+        }
+      }
+    },
     "cordless-vacuum-battery-drains-fast": {
       "files": {
         "01-cover.png": {
@@ -37682,20 +37722,6 @@
         }
       }
     },
-    "sbd-excel-sale": {
-      "files": {
-        "01-cover.webp": {
-          "status": "matched",
-          "primary": "/images/articles/sbd-excel-sale/01-cover.webp",
-          "hash": "sha256:ca59533ef9e8b841cf179b9db129b13f7d3ae060440229eacf8e44fcaabd9b1b"
-        },
-        "02-outdoor-paths.webp": {
-          "status": "matched",
-          "primary": "/images/articles/sbd-excel-sale/02-outdoor-paths.png",
-          "hash": "sha256:607f7da5c68c199fda87df296f52231caef605d3be905aa40dec464901b40540"
-        }
-      }
-    },
     "segway-navimow-h220": {
       "files": {
         "01-cover.png": {
@@ -37757,6 +37783,20 @@
           "status": "matched",
           "primary": "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform.webp",
           "hash": "sha256:b61b1805747454b9470772f7b2877922ca9dd73e85c10c9db6f4fc79aef4e753"
+        }
+      }
+    },
+    "stanley-black-decker-excel-sale-outdoor-strategy": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover.webp",
+          "hash": "sha256:ca59533ef9e8b841cf179b9db129b13f7d3ae060440229eacf8e44fcaabd9b1b"
+        },
+        "02-outdoor-paths.webp": {
+          "status": "matched",
+          "primary": "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png",
+          "hash": "sha256:607f7da5c68c199fda87df296f52231caef605d3be905aa40dec464901b40540"
         }
       }
     },
