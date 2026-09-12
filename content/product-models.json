@@ -839,7 +839,8 @@
       "beatbot-sora-70",
       "aiper-scuba-v3-ultra",
       "wybot-s3",
-      "mova-rover-x10"
+      "mova-rover-x10",
+      "beatbot-iskim"
     ],
     "announced": "2026-01-05",
     "verifiedAt": "2026-09-06",
@@ -1537,7 +1538,10 @@
       "roborock-rockaqua-p1",
       "beatbot-aquasense-x",
       "ecovacs-ultramarine-p1",
-      "mova-rover-x10"
+      "mova-rover-x10",
+      "beatbot-sora-10",
+      "beatbot-sora-30",
+      "beatbot-iskim"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -1646,7 +1650,8 @@
     "related": [
       "mammotion-luba-mini-2-awd-1500",
       "segway-navimow-h220",
-      "mova-lidax-ultra-2000-awd"
+      "mova-lidax-ultra-2000-awd",
+      "dreame-a3-awd-pro-2500"
     ],
     "announced": "2026-01-05",
     "verifiedAt": "2026-09-06",
@@ -5327,7 +5332,8 @@
     "related": [
       "dreame-l60-ultra",
       "dreame-x60-ultra",
-      "mova-v70-ultra-complete"
+      "mova-v70-ultra-complete",
+      "dreame-l60-ultra-pe"
     ],
     "announced": "2026-04-28",
     "verifiedAt": "2026-09-12",
@@ -5423,7 +5429,9 @@
     "related": [
       "dreame-l60-pro-ultra",
       "mova-p70-pro-ultra",
-      "dreame-x60-ultra"
+      "dreame-x60-ultra",
+      "dreame-l60-ultra-pe",
+      "dreame-l60-ultra-fe"
     ],
     "announced": "2026-04-28",
     "verifiedAt": "2026-09-12",
@@ -5617,7 +5625,8 @@
     "related": [
       "mova-lidax-ultra-1000",
       "mova-viax-500",
-      "mammotion-luba-3-awd-1500"
+      "mammotion-luba-3-awd-1500",
+      "dreame-a3-awd-pro-2500"
     ],
     "announced": "2026-03-10",
     "verifiedAt": "2026-09-12",
@@ -5643,5 +5652,585 @@
     "launchYear": 2026,
     "launchNote": "The dated Italian launch campaign introduced the LiDAX Ultra AWD series on 10 March 2026, including the 2000 variant.",
     "launchSource": "https://it.mova.tech/pages/awd-robot-tagliaerba-prossimamente-disponibile"
+  },
+  {
+    "slug": "beatbot-sora-10",
+    "name": "Beatbot Sora 10",
+    "brand": "Beatbot",
+    "brandSlug": "beatbot",
+    "category": "Pool robots",
+    "market": "United States",
+    "summary": "A cordless floor, wall and waterline cleaner with a 5 L basket, designed as an accessible entry into Beatbot’s Sora range.",
+    "fit": "Pool owners who want submerged-surface cleaning and can manage waterline retrieval without surface skimming.",
+    "caution": "Waterline parking is different from floating retrieval; the official shallow-water depth figures are inconsistent.",
+    "facts": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Floor, walls and waterline",
+        "meaning": "Does not collect floating debris from the water surface."
+      },
+      {
+        "label": "Floor-only runtime",
+        "value": "Up to 5 hours",
+        "meaning": "Laboratory duration in the floor-only task."
+      },
+      {
+        "label": "Debris basket",
+        "value": "5 L",
+        "meaning": "Leaf shape and fine debris affect useful capacity and emptying frequency."
+      },
+      {
+        "label": "Weight",
+        "value": "8.5 kg",
+        "meaning": "Consider lifting and draining after a cleaning cycle."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does Sora 10 skim floating leaves?",
+        "answer": "No. It cleans the floor, walls and waterline. Floating surface debris requires a skimmer or a model specifically designed for water-surface cleaning."
+      },
+      {
+        "question": "How does Sora 10 differ from Sora 30?",
+        "answer": "Sora 10 has a 7,800 mAh battery, 5 L basket and waterline parking. Sora 30 adds a 10,000 mAh battery, a listed 5.2 L basket, four bottom brushes and floating water-surface parking."
+      },
+      {
+        "question": "Can it clean a shallow tanning ledge?",
+        "answer": "The official page is inconsistent: the headline mentions 12 inches, the detailed platform section says 13.8 inches, and the general working-depth FAQ starts at 0.5 m. Confirm the exact regional manual and pool geometry before depending on ledge cleaning."
+      },
+      {
+        "question": "Is five hours the runtime for every cleaning mode?",
+        "answer": "No. The manufacturer FAQ gives up to five hours for floor-only cleaning and up to four hours for combined floor, wall and waterline tasks, under laboratory conditions."
+      },
+      {
+        "question": "Is a 3 µm filter included?",
+        "answer": "The standard specification is 150 µm. The store separately lists an ultra-fine basket; check model compatibility, current stock and total cost before adding it."
+      },
+      {
+        "question": "Can it be used in a saltwater pool?",
+        "answer": "The official Sora 10 FAQ specifies salt concentration below 5,000 ppm. Check the full operating conditions and the pool’s chemistry rather than relying on a general saltwater label."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The US Sora 10 listing showed $449 on 12 September 2026. Colours, accessories, tax and promotions can change the final price."
+      }
+    ],
+    "articles": [
+      "who-owns-beatbot-xingmai-manufacturing",
+      "robotic-pool-cleaners-leaves-fine-debris"
+    ],
+    "related": [
+      "beatbot-sora-30",
+      "beatbot-sora-70",
+      "beatbot-iskim"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US Sora 10 specification and FAQ",
+        "url": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Official 2026 Sora series",
+        "url": "https://beatbot.com/collections/sora-series"
+      },
+      {
+        "label": "Sora 30 official comparison",
+        "url": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Sora 70 official comparison",
+        "url": "https://beatbot.com/products/sora-70"
+      }
+    ],
+    "imageSource": "https://beatbot.com/cdn/shop/files/Sora_10_-_1_1.webp?v=1774858938",
+    "launchYear": 2026,
+    "launchNote": "Listed in Beatbot’s official Sora collection as part of its 2026 new-release range; an exact first announcement date is not asserted.",
+    "launchSource": "https://beatbot.com/collections/sora-series"
+  },
+  {
+    "slug": "beatbot-sora-30",
+    "name": "Beatbot Sora 30",
+    "brand": "Beatbot",
+    "brandSlug": "beatbot",
+    "category": "Pool robots",
+    "market": "United States",
+    "summary": "A cordless floor, wall and waterline robot with floating retrieval, four bottom brushes and a 10,000 mAh battery.",
+    "fit": "Owners prioritising easier retrieval and shallow-platform cleaning without requiring surface-debris collection.",
+    "caution": "Floating parking is not surface skimming; accessory filtration and shallow-platform suitability need separate checks.",
+    "facts": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Floor, walls and waterline",
+        "meaning": "Floating surface debris is outside this model’s cleaning coverage."
+      },
+      {
+        "label": "Battery",
+        "value": "10,000 mAh",
+        "meaning": "Larger nominal capacity than Sora 10."
+      },
+      {
+        "label": "Debris basket",
+        "value": "5.2 L in detailed specification",
+        "meaning": "Some promotional copy rounds this to 5 L."
+      },
+      {
+        "label": "Retrieval",
+        "value": "Floating surface parking",
+        "meaning": "Once online at the surface, the app can request retrieval; not underwater live steering."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does floating parking mean Sora 30 skims the surface?",
+        "answer": "No. It floats for retrieval but cleans the pool floor, walls and waterline. Sora 70 adds surface-debris collection."
+      },
+      {
+        "question": "Can the app steer Sora 30 underwater?",
+        "answer": "The official FAQ says the robot cannot be controlled while on the pool floor or wall. Retrieval controls require the robot to be online at the surface."
+      },
+      {
+        "question": "Is the basket 5 L or 5.2 L?",
+        "answer": "Promotional copy uses 5 L, while the detailed specification and FAQ list 5.2 L. This guide uses the more specific 5.2 L value."
+      },
+      {
+        "question": "Will it clean a tanning ledge?",
+        "answer": "Beatbot lists roughly 20 cm minimum depth and a platform at least one metre in both directions. Confirm the actual depth, step geometry and regional instructions before buying for this task."
+      },
+      {
+        "question": "Does it wash its own filter?",
+        "answer": "Do not assume an automatic filter-washing dock. The basket requires owner inspection and cleaning according to the instructions."
+      },
+      {
+        "question": "Is the ultra-fine filter included?",
+        "answer": "The listed standard filter is 150 µm. A 3 µm option is separately described; older delivery wording on the page should not be treated as a current stock guarantee."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The US official Sora 30 listing showed $689 on 12 September 2026. Accessories and bundles can change the final cost."
+      }
+    ],
+    "articles": [
+      "who-owns-beatbot-xingmai-manufacturing",
+      "robotic-pool-cleaners-leaves-fine-debris"
+    ],
+    "related": [
+      "beatbot-sora-10",
+      "beatbot-sora-70",
+      "beatbot-iskim"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "Sora 30 US specification and FAQ",
+        "url": "https://beatbot.com/products/sora-30"
+      },
+      {
+        "label": "Official 2026 Sora collection",
+        "url": "https://beatbot.com/collections/sora-series"
+      },
+      {
+        "label": "Sora 10 reference",
+        "url": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Sora 70 reference",
+        "url": "https://beatbot.com/products/sora-70"
+      }
+    ],
+    "imageSource": "https://beatbot.com/cdn/shop/files/2_1_c1fd686c-26ad-4ec5-8d64-86b9a5c74074.webp?v=1774577133",
+    "launchYear": 2026,
+    "launchNote": "Part of Beatbot’s officially labelled 2026 Sora new-release collection; an exact first announcement date is not asserted.",
+    "launchSource": "https://beatbot.com/collections/sora-series"
+  },
+  {
+    "slug": "beatbot-iskim",
+    "name": "Beatbot iSkim",
+    "brand": "Beatbot",
+    "brandSlug": "beatbot",
+    "category": "Pool robots",
+    "market": "United States",
+    "summary": "A 2026 solar-powered surface skimmer with a 9 L basket, distinct from the older iSkim Ultra and from submerged pool-cleaning robots.",
+    "fit": "Outdoor pools where leaves and floating debris should be collected before they sink.",
+    "caution": "Surface-only cleaning; continuous operation depends on sunlight and conditions, and the mains adapter is sold separately.",
+    "facts": [
+      {
+        "label": "Cleaning coverage",
+        "value": "Water surface only",
+        "meaning": "Does not scrub the floor, walls or submerged waterline."
+      },
+      {
+        "label": "Debris basket",
+        "value": "9 L",
+        "meaning": "Large floating debris can fill the basket differently from fine particles."
+      },
+      {
+        "label": "Solar panel",
+        "value": "24 W",
+        "meaning": "Rated panel power; energy collection varies with weather and shading."
+      },
+      {
+        "label": "No-sun runtime",
+        "value": "Up to 28 hours without sunlight",
+        "meaning": "FAQ laboratory claim from a full charge; the table uses “28+ hours”. Solar continuity is conditional."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is this the same as iSkim Ultra?",
+        "answer": "No. The 2026 iSkim has three motors and random/edge routing. Do not transfer Ultra features such as its seven-motor arrangement, side brushes or clarifier system to this model."
+      },
+      {
+        "question": "Does it clean the pool bottom?",
+        "answer": "No. iSkim collects debris at the water surface. Pair it with a suitable submerged cleaner or another floor-and-wall cleaning method."
+      },
+      {
+        "question": "Can it really run continuously?",
+        "answer": "Beatbot markets solar-assisted continuous operation. The separate no-sun claim is up to 28 hours from a full charge under test conditions; real continuity depends on sunlight, shading, debris load and settings."
+      },
+      {
+        "question": "Is a charger included?",
+        "answer": "The official page says the mains adapter is sold separately. Confirm the regional package and budget for an adapter if solar charging alone is unsuitable."
+      },
+      {
+        "question": "How fine is the filter?",
+        "answer": "The specification lists 550 µm, also described as 30 mesh. It is a surface-debris basket, not a substitute for fine underwater filtration or normal pool treatment."
+      },
+      {
+        "question": "When was iSkim launched?",
+        "answer": "Beatbot announced the US launch on 27 April 2026. This guide covers that iSkim, not the earlier iSkim Ultra."
+      },
+      {
+        "question": "What price was checked?",
+        "answer": "The standalone US iSkim listing showed $399 on 12 September 2026. A bundle discount should not be mistaken for its standalone price."
+      }
+    ],
+    "articles": [
+      "who-owns-beatbot-xingmai-manufacturing",
+      "robotic-pool-cleaners-leaves-fine-debris"
+    ],
+    "related": [
+      "beatbot-sora-10",
+      "beatbot-sora-30",
+      "beatbot-sora-70"
+    ],
+    "announced": "2026-04-27",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "iSkim US specifications and FAQ",
+        "url": "https://beatbot.com/products/iskim"
+      },
+      {
+        "label": "Beatbot launch announcement, 27 April 2026",
+        "url": "https://en.prnasia.com/releases/global/beatbot-launches-iskim-a-9l-solar-powered-robotic-pool-skimmer-for-continuous-7-24-surface-cleaning-530873.shtml"
+      },
+      {
+        "label": "Sora 10 underwater-cleaning reference",
+        "url": "https://beatbot.com/products/sora-10"
+      },
+      {
+        "label": "Sora 30 underwater-cleaning reference",
+        "url": "https://beatbot.com/products/sora-30"
+      }
+    ],
+    "imageSource": "https://beatbot.com/cdn/shop/files/20260429-183550_result_webp_1.png?v=1777459395",
+    "launchYear": 2026,
+    "launchNote": "Beatbot announced the US launch of the new iSkim on 27 April 2026; this record is separate from iSkim Ultra.",
+    "launchSource": "https://en.prnasia.com/releases/global/beatbot-launches-iskim-a-9l-solar-powered-robotic-pool-skimmer-for-continuous-7-24-surface-cleaning-530873.shtml"
+  },
+  {
+    "slug": "dreame-a3-awd-pro-2500",
+    "name": "Dreame A3 AWD Pro 2500",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Robot mowers",
+    "market": "United States",
+    "summary": "A wire-free AWD mower rated for 2,500 m², combining dual-disc cutting with 3D LiDAR and binocular vision.",
+    "fit": "Multi-zone lawns with slopes where the 2,500 m² rating, 5 Ah battery and installation space match the site.",
+    "caution": "The 2500 has a 5 Ah battery; do not borrow the series headline 10 Ah specification from the 5000 variant.",
+    "facts": [
+      {
+        "label": "Rated lawn area",
+        "value": "2,500 m² / about 0.62 acre",
+        "meaning": "Use the exact 2500 variant rather than the largest series capacity."
+      },
+      {
+        "label": "Battery",
+        "value": "5 Ah",
+        "meaning": "The 3500 and 5000 variants list 7.5 Ah and 10 Ah respectively."
+      },
+      {
+        "label": "Maximum slope",
+        "value": "80% / about 38.7°",
+        "meaning": "A manufacturer test limit, not 80 degrees or a guarantee near every boundary."
+      },
+      {
+        "label": "Cutting width",
+        "value": "40 cm; dual discs",
+        "meaning": "Coverage also depends on turns, obstacles and mowing frequency."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Which A3 AWD Pro variant does this page cover?",
+        "answer": "The US A3 AWD Pro 2500, rated for 2,500 m² with a 5 Ah battery. The 3500 and 5000 are separate capacity variants."
+      },
+      {
+        "question": "Does it need boundary wire or an RTK antenna?",
+        "answer": "Dreame describes OmniSense 3.0 using 3D LiDAR and binocular vision for wire-free mapping without an RTK station. The lawn still needs proper mapping and installation."
+      },
+      {
+        "question": "Does 80% slope mean 80 degrees?",
+        "answer": "No. An 80% gradient is about 38.7 degrees. This is a manufacturer maximum under test conditions, not a blanket promise for wet grass or every edge of a sloped lawn."
+      },
+      {
+        "question": "Will it remove all edge trimming?",
+        "answer": "The extendable EdgeMaster 2.0 discs have a claimed edge gap below 3 cm. Walls, fences, level changes and excluded areas can still require manual finishing."
+      },
+      {
+        "question": "Is the battery 10 Ah?",
+        "answer": "Not for the 2500. The variant table lists 5 Ah for 2500, 7.5 Ah for 3500 and 10 Ah for 5000. Series-level promotional copy can highlight the largest battery."
+      },
+      {
+        "question": "Is mobile service permanently free?",
+        "answer": "The US listing includes three years of 4G service. Confirm coverage, activation requirements and renewal cost rather than assuming lifetime connectivity."
+      },
+      {
+        "question": "What launch and price evidence was checked?",
+        "answer": "Dreame’s January 2026 CES announcement identifies the A3 AWD Pro series. The selected US 2500 variant showed $2,249.99 on 12 September 2026."
+      }
+    ],
+    "articles": [
+      "who-makes-mova-robot-mowers-dreame-group",
+      "mammotion-luba-vs-yuka-robot-mowers"
+    ],
+    "related": [
+      "mova-lidax-ultra-2000-awd",
+      "mammotion-luba-3-awd-1500",
+      "ecovacs-goat-a3000-lidar-pro"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "A3 AWD Pro official specifications",
+        "url": "https://www.dreametech.com/products/a3-awd-pro-robot-lawn-mower"
+      },
+      {
+        "label": "US store: selected 2500 variant",
+        "url": "https://yardcare.dreametech.com/products/a3-awd-pro-robot-lawn-mower?variant=48120972148993"
+      },
+      {
+        "label": "Dreame CES 2026 announcement",
+        "url": "https://prtimes.jp/main/html/rd/p/000000093.000116327.html"
+      },
+      {
+        "label": "US store: 3500 comparison variant",
+        "url": "https://yardcare.dreametech.com/products/a3-awd-pro-robot-lawn-mower?variant=48120972116225"
+      },
+      {
+        "label": "MOVA LiDAX Ultra AWD reference",
+        "url": "https://www.mova.tech/products/lidax-ultra-awd-series-robotic-lawn-mower?variant=47935303975151"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0767/5379/7377/files/1.2.jpg?v=1774862876",
+    "launchYear": 2026,
+    "launchNote": "Dreame’s CES 2026 announcement describes the A3 AWD Pro series debut from 6 January; this guide verifies the current US 2500 configuration.",
+    "launchSource": "https://prtimes.jp/main/html/rd/p/000000093.000116327.html"
+  },
+  {
+    "slug": "dreame-l60-ultra-pe",
+    "name": "Dreame L60 Ultra PE",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Robot vacuums",
+    "market": "United States",
+    "summary": "A 30,000 Pa L60 configuration with HyperStream DuoBrush and a 103.8 mm body, distinct from the slimmer regular L60 Ultra.",
+    "fit": "Homes that benefit from the dual-brush system and specified two-level transitions, with enough furniture clearance.",
+    "caution": "The 4 cm claim requires a defined two-level obstacle; 100°C refers to the station PTC heating area.",
+    "facts": [
+      {
+        "label": "Maximum suction",
+        "value": "30,000 Pa",
+        "meaning": "Manufacturer maximum, not an independent pickup score."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 103.8 mm",
+        "meaning": "Measure actual furniture clearance rather than using body height as guaranteed access."
+      },
+      {
+        "label": "Single threshold",
+        "value": "2.2 cm",
+        "meaning": "A single-obstacle claim; shape and approach affect traversal."
+      },
+      {
+        "label": "Main brush",
+        "value": "HyperStream DuoBrush",
+        "meaning": "Different brush arrangements within the L60 family."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does this differ from the other L60 models?",
+        "answer": "PE lists 30,000 Pa, a 103.8 mm body and HyperStream DuoBrush. FE lists 28,000 Pa, a 97 mm body and TriCut Brush 3.0; the regular L60 Ultra lists 35,000 Pa and an 82 mm body."
+      },
+      {
+        "question": "Can it cross a single 4 cm step?",
+        "answer": "No such single-step claim is established here. PE’s 4 cm claim is a double-level arrangement of 2.2 and 1.8 cm with a gap greater than 3 cm; the single-threshold figure is 2.2 cm."
+      },
+      {
+        "question": "Will it fit under low furniture?",
+        "answer": "The PE body is listed at 103.8 mm high. Measure the actual opening and leave practical clearance; the regular L60 Ultra is a different, slimmer model."
+      },
+      {
+        "question": "Does it mop the floor at 100°C?",
+        "answer": "No. The official temperature footnote defines the station washboard PTC heating area. That is not a floor temperature or a universal water-outlet reading."
+      },
+      {
+        "question": "Does the station eliminate maintenance?",
+        "answer": "No. Bags, tanks, wash surfaces, brushes, inlets and sensors still need inspection and care. Tank capacity does not define a universal service interval."
+      },
+      {
+        "question": "Is a plumbing kit included?",
+        "answer": "Treat the standard listing as a tank-based package. Confirm any separately sold compatible kit, regional availability and installation requirements before planning water connection."
+      },
+      {
+        "question": "When did it launch and what price was checked?",
+        "answer": "Dreame’s L60 series announcement is dated 28 April 2026. The US PE listing showed $999.99 on 12 September 2026; bundles and later promotions may differ."
+      }
+    ],
+    "articles": [
+      "roborock-vs-dreame-robot-vacuums",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "dreame-l60-ultra-fe",
+      "dreame-l60-ultra",
+      "dreame-l60-pro-ultra"
+    ],
+    "announced": "2026-04-28",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US model specification and footnotes",
+        "url": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Dreame L60 series launch announcement",
+        "url": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
+      },
+      {
+        "label": "Other PE / FE configuration",
+        "url": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Regular L60 Ultra reference",
+        "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      }
+    ],
+    "imageSource": "https://www.dreametech.com/cdn/shop/files/L60_Ultra_PE_-white_1200x1200.webp?v=1776763384",
+    "launchYear": 2026,
+    "launchNote": "Included in Dreame’s L60 series launch announcement dated 28 April 2026; specifications and prices refer to the current US configuration.",
+    "launchSource": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
+  },
+  {
+    "slug": "dreame-l60-ultra-fe",
+    "name": "Dreame L60 Ultra FE",
+    "brand": "Dreame",
+    "brandSlug": "dreame",
+    "category": "Robot vacuums",
+    "market": "United States",
+    "summary": "A 97 mm L60 configuration with TriCut Brush 3.0 and a 28,000 Pa detailed specification, positioned below PE in the checked US price listing.",
+    "fit": "Homes whose furniture and thresholds fit the 97 mm body and 2 cm obstacle specification, at a lower checked purchase price.",
+    "caution": "Official suction copy conflicts; use the detailed 28,000 Pa specification and do not borrow PE’s crossing or brush features.",
+    "facts": [
+      {
+        "label": "Maximum suction",
+        "value": "28,000 Pa in detailed specification",
+        "meaning": "Some generic page prose says 30,000 Pa; this guide follows the detailed specification and footnote."
+      },
+      {
+        "label": "Robot dimensions",
+        "value": "350 × 350 × 97 mm",
+        "meaning": "Measure actual furniture clearance rather than using body height as guaranteed access."
+      },
+      {
+        "label": "Single threshold",
+        "value": "2 cm",
+        "meaning": "A single-obstacle claim; shape and approach affect traversal."
+      },
+      {
+        "label": "Main brush",
+        "value": "TriCut Brush 3.0",
+        "meaning": "Different brush arrangements within the L60 family."
+      }
+    ],
+    "faq": [
+      {
+        "question": "How does this differ from the other L60 models?",
+        "answer": "PE lists 30,000 Pa, a 103.8 mm body and HyperStream DuoBrush. FE lists 28,000 Pa, a 97 mm body and TriCut Brush 3.0; the regular L60 Ultra lists 35,000 Pa and an 82 mm body."
+      },
+      {
+        "question": "Is FE rated at 28,000 or 30,000 Pa?",
+        "answer": "The detailed FE specification and footnote say 28,000 Pa, while some general prose says 30,000 Pa. This guide uses 28,000 Pa and flags the conflicting copy."
+      },
+      {
+        "question": "Will it fit under low furniture?",
+        "answer": "FE’s listed body height is 97 mm. Measure the actual furniture opening and leave clearance; do not borrow the regular L60 Ultra’s 82 mm body specification."
+      },
+      {
+        "question": "Does it mop the floor at 100°C?",
+        "answer": "No. The official temperature footnote defines the station washboard PTC heating area. That is not a floor temperature or a universal water-outlet reading."
+      },
+      {
+        "question": "Does the station eliminate maintenance?",
+        "answer": "No. Bags, tanks, wash surfaces, brushes, inlets and sensors still need inspection and care. Tank capacity does not define a universal service interval."
+      },
+      {
+        "question": "Is a plumbing kit included?",
+        "answer": "Treat the standard listing as a tank-based package. Confirm any separately sold compatible kit, regional availability and installation requirements before planning water connection."
+      },
+      {
+        "question": "When did it launch and what price was checked?",
+        "answer": "Dreame’s L60 series announcement is dated 28 April 2026. The US FE listing showed $849.99 on 12 September 2026; bundles and later promotions may differ."
+      }
+    ],
+    "articles": [
+      "roborock-vs-dreame-robot-vacuums",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "dreame-l60-ultra-pe",
+      "dreame-l60-ultra",
+      "dreame-l60-pro-ultra"
+    ],
+    "announced": "2026-04-28",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "US model specification and footnotes",
+        "url": "https://www.dreametech.com/products/l60-ultra-fe-robot-vacuum"
+      },
+      {
+        "label": "Dreame L60 series launch announcement",
+        "url": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
+      },
+      {
+        "label": "Other PE / FE configuration",
+        "url": "https://www.dreametech.com/products/l60-ultra-pe-robot-vacuum"
+      },
+      {
+        "label": "Regular L60 Ultra reference",
+        "url": "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      }
+    ],
+    "imageSource": "https://www.dreametech.com/cdn/shop/files/L60_Ultra_FE-white_1200x1200.webp?v=1776764091",
+    "launchYear": 2026,
+    "launchNote": "Included in Dreame’s L60 series launch announcement dated 28 April 2026; specifications and prices refer to the current US configuration.",
+    "launchSource": "https://www.dreametech.com/blogs/news/dreame-launches-l60-robot-vacuum-series"
   }
 ]

@@ -481,6 +481,60 @@
         "outputHash": "sha256:5c2ce8949d7506c4cfc4fb78cc334137bb2900f3c0a684502b32ad75db524b58"
       }
     },
+    "/images/articles/beatbot-iskim/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 107402,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3f5a4f629f91f49411bc721ecfc9ce30c200e634536f09d3aaf363a11020d0d8",
+      "outputHash": "sha256:c0bb55fdb238ac18b9f1683a7e2d27d2c9559411e786ef38034fe0a0cfdebf8f",
+      "mobile": {
+        "src": "/images/articles/beatbot-iskim/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 35156,
+        "outputHash": "sha256:ce8c90e93673ab2b878a4ad20b994fecf3b995b2eb321d997834c1be45b748a9"
+      }
+    },
+    "/images/articles/beatbot-sora-10/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 123102,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0ff3e44a1a9afc7bbcbecfb5ffacb35fd7eaf8cfcf0c7e89b6b8d9578fc50998",
+      "outputHash": "sha256:2e7166bf71447fb20bcfa6f9c4b8f2c48a0dce06b8b9efe474bc4646cfe561a8",
+      "mobile": {
+        "src": "/images/articles/beatbot-sora-10/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 40570,
+        "outputHash": "sha256:8f724d239ec21e59200f89b94569de7661c49b01e8b450c4619beed227d51f47"
+      }
+    },
+    "/images/articles/beatbot-sora-30/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 91512,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:bd925571d97dcfc8a414e7a2689c002aa72a94c9114b299ae96cb580201bb586",
+      "outputHash": "sha256:5a5d600e0d52428ea1ec702fda2cca4b12942a9711a3a2301a0fe8af5dc2698c",
+      "mobile": {
+        "src": "/images/articles/beatbot-sora-30/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 39550,
+        "outputHash": "sha256:2486e30f6fb9e7b480c27d92ff06fe09416096c7556b218d922c19d7089c044f"
+      }
+    },
     "/images/articles/beatbot-sora-70/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -1402,6 +1456,24 @@
         "outputHash": "sha256:39791e12825b357de515f052f2bf5ae5faa34cda0a6e7d6a3cf6aa8ae03f0d2b"
       }
     },
+    "/images/articles/dreame-a3-awd-pro-2500/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 70986,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f808f963365d54ca603d926cd79ba677bd25155d42c49c831f9f4fb970da8865",
+      "outputHash": "sha256:9efee5385100f881e05d6dc40061d16c8a78620eeedc4936abb4ee49a75bf0ac",
+      "mobile": {
+        "src": "/images/articles/dreame-a3-awd-pro-2500/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 22152,
+        "outputHash": "sha256:d5cd63f0104e64f8969456c3955f388b5d75e9374a4343359a848390edc9bd6c"
+      }
+    },
     "/images/articles/dreame-aqua20-pro-ultra-roller-x-complete/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -1526,6 +1598,42 @@
         "height": 800,
         "bytes": 8902,
         "outputHash": "sha256:c1aa7f2088a51099f48d145e736eef40ec59c3ba18159f2e49f815d357365ecf"
+      }
+    },
+    "/images/articles/dreame-l60-ultra-fe/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 17080,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:37ab905eff33fe3581c6d9b47851ab70090259d2ed3bbaf84ac8d393cb12b317",
+      "outputHash": "sha256:c4973e956cd574704d05b864425023919e2fc742e9ad738b82e094a0ca24f5b6",
+      "mobile": {
+        "src": "/images/articles/dreame-l60-ultra-fe/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 8402,
+        "outputHash": "sha256:7ff75d3daf863003bd6453750fe70be2c7a187b0fd3846a7dc6959e41d2874ed"
+      }
+    },
+    "/images/articles/dreame-l60-ultra-pe/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 18992,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:cae463234b0a893b4fb85d6b61ba905ed1a6b90f10144b37fb6179d2d0b7db59",
+      "outputHash": "sha256:7fb338f2a53aba9a02d900060c8c75818a67c80d30e97084b31fd79823337ce9",
+      "mobile": {
+        "src": "/images/articles/dreame-l60-ultra-pe/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 9086,
+        "outputHash": "sha256:d495efdb1eb6829b4de6161195379e57964739c59827b5b612fc4f1d32544071"
       }
     },
     "/images/articles/dreame-l60-ultra/01-cover.webp": {
@@ -32253,9 +32361,24 @@
         "/images/articles/beatbot-in-leifeng-coverage/05.webp"
       ]
     },
+    "beatbot-iskim": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/beatbot-iskim/01-cover.webp",
+      "body": []
+    },
     "beatbot-robotic-pool-cleaner-buying-guide": {
       "budgetClass": "standard",
       "cover": "/images/blog/beatbot-robotic-pool-cleaner-buying-guide.webp",
+      "body": []
+    },
+    "beatbot-sora-10": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/beatbot-sora-10/01-cover.webp",
+      "body": []
+    },
+    "beatbot-sora-30": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/beatbot-sora-30/01-cover.webp",
       "body": []
     },
     "beatbot-sora-70": {
@@ -32972,6 +33095,11 @@
       "cover": "/images/blog/dreame-a2-vs-ecovacs-goat-a3000-lidar.webp",
       "body": []
     },
+    "dreame-a3-awd-pro-2500": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-a3-awd-pro-2500/01-cover.webp",
+      "body": []
+    },
     "dreame-aqua20-pro-ultra-roller-x-complete": {
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-aqua20-pro-ultra-roller-x-complete/01-cover.webp",
@@ -32995,6 +33123,16 @@
     "dreame-l60-ultra": {
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-l60-ultra/01-cover.webp",
+      "body": []
+    },
+    "dreame-l60-ultra-fe": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-l60-ultra-fe/01-cover.webp",
+      "body": []
+    },
+    "dreame-l60-ultra-pe": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-l60-ultra-pe/01-cover.webp",
       "body": []
     },
     "dreame-new-disruptor-in-vacuums": {
@@ -36590,6 +36728,33 @@
         }
       }
     },
+    "beatbot-iskim": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-iskim/01-cover.webp",
+          "hash": "sha256:3f5a4f629f91f49411bc721ecfc9ce30c200e634536f09d3aaf363a11020d0d8"
+        }
+      }
+    },
+    "beatbot-sora-10": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-sora-10/01-cover.webp",
+          "hash": "sha256:0ff3e44a1a9afc7bbcbecfb5ffacb35fd7eaf8cfcf0c7e89b6b8d9578fc50998"
+        }
+      }
+    },
+    "beatbot-sora-30": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-sora-30/01-cover.webp",
+          "hash": "sha256:bd925571d97dcfc8a414e7a2689c002aa72a94c9114b299ae96cb580201bb586"
+        }
+      }
+    },
     "beatbot-sora-70": {
       "files": {
         "01-cover.webp": {
@@ -36866,6 +37031,15 @@
         }
       }
     },
+    "dreame-a3-awd-pro-2500": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-a3-awd-pro-2500/01-cover.webp",
+          "hash": "sha256:f808f963365d54ca603d926cd79ba677bd25155d42c49c831f9f4fb970da8865"
+        }
+      }
+    },
     "dreame-aqua20-pro-ultra-roller-x-complete": {
       "files": {
         "01-cover.webp": {
@@ -36890,6 +37064,24 @@
           "status": "matched",
           "primary": "/images/articles/dreame-l60-ultra/01-cover.webp",
           "hash": "sha256:aa657988d59ba2a420ac9749ac9c4825a67f151a9a81d550904242fe3a1d0d01"
+        }
+      }
+    },
+    "dreame-l60-ultra-fe": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-l60-ultra-fe/01-cover.webp",
+          "hash": "sha256:37ab905eff33fe3581c6d9b47851ab70090259d2ed3bbaf84ac8d393cb12b317"
+        }
+      }
+    },
+    "dreame-l60-ultra-pe": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-l60-ultra-pe/01-cover.webp",
+          "hash": "sha256:cae463234b0a893b4fb85d6b61ba905ed1a6b90f10144b37fb6179d2d0b7db59"
         }
       }
     },
