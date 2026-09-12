@@ -6,9 +6,9 @@
   "legalName": "Greenworks (Jiangsu) Co., Ltd.",
   "legalEntityNote": "Greenworks is the listed Chinese operating group and consumer brand. Globe Holdings entities, Greenworks North America, regional licensees, importers and factories can hold separate ownership, sales, import, manufacturing or warranty roles.",
   "officialWebsite": "https://www.greenworkstools.com/",
-  "headline": "Greenworks ownership, cordless outdoor equipment, robotic mowers and manufacturing",
-  "description": "A source-backed profile of Greenworks' listed-company control, Globe structure, STIHL-linked minority investment, robotic mowers, factories and regional channels.",
-  "metaDescription": "Greenworks profile: Globe and Yin Chen control, STIHL-linked minority stake, robotic mowers, manufacturing, channels and buyer checks.",
+  "headline": "Greenworks: ownership, international operations and robotic mowers",
+  "description": "Greenworks is part of the Globe business built around Shenzhen-listed Greenworks (Jiangsu) Co., Ltd. Founder Yin Chen controls the company; STIHL-owned ZAMA is a minority shareholder. Its cordless tools, pressure washers and AiMowbot mowers reach customers through regional stores, dealers and retail partners.",
+  "metaDescription": "Greenworks company profile: Globe ownership, STIHL minority investment, international operations, regional sales entities and AiMowbot robotic mowers.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Greenworks, Globe Tools or STIHL. Share ownership, brand ownership, importing, manufacturing and warranty responsibilities are identified separately.",
   "headquarters": "Changzhou, Jiangsu, China",
   "founded": "2002 group roots; Greenworks brand created in 2009",
@@ -32,20 +32,20 @@
     }
   ],
   "ownership": {
-    "summary": "Greenworks (Jiangsu) Co., Ltd. is listed on Shenzhen's ChiNext market under stock code 301260. Its April 2026 completion notice reported that founder Yin Chen and the Globe Holdings structure together controlled 57.13% after the purchase plan. ZAMA Corporation Limited, a wholly owned STIHL Group subsidiary, held 18.78% at March 31, 2026; that is a minority investment, not parent-company ownership.",
-    "parentCompany": "Public company controlled by founder Yin Chen through the Globe Holdings structure"
+    "summary": "Greenworks (Jiangsu) Co., Ltd. is listed on Shenzhen's ChiNext market under stock code 301260. Its 2026 half-year report records founder Yin Chen's direct and indirect holdings at 57.09% on 30 June 2026. ZAMA Corporation Limited, a wholly owned STIHL Group subsidiary, held 18.77% at that date. ZAMA is a minority investor; STIHL is not Greenworks' parent company.",
+    "displayLabel": "Founder-controlled listed company; STIHL-linked minority investment"
   },
   "leadership": [
     {
       "name": "Yin Chen",
       "role": "Founder, chairman and general manager",
-      "context": "Greenworks' 2026 first-quarter report identifies Yin Chen as the company's actual controller, chairman and general manager."
+      "context": "The 2026 half-year report identifies Yin Chen as actual controller, chairman and general manager as of 30 June 2026."
     }
   ],
   "productPortfolio": [
     {
       "name": "AiMowbot robotic lawn mowers",
-      "positioning": "Wire-free RTK and vision-based mower platforms extend Greenworks from cordless tools into autonomous lawn care.",
+      "positioning": "The current U.S. AiMowbot range includes C Series and G Series AWD platforms. Navigation, terrain capability and battery systems must be checked for the regional model.",
       "buyerRelevance": "Verify navigation method, lawn-size rating, slope capability, connectivity, installation and local field support by model."
     },
     {
@@ -83,6 +83,11 @@
   ],
   "marketsChannels": [
     {
+      "evidence": "Official regional stores document operations in the United States, the United Kingdom and continental Europe. The UK store identifies Greenworks Tools Europe GmbH in Germany as its operator. These regional sites do not establish a single, verified count of all countries served.",
+      "scope": "Verified regional presence; not a worldwide country-count claim",
+      "buyerCheck": "Check the destination-country range, local distributor, contracting entity and warranty coverage before using global presence as evidence of service availability."
+    },
+    {
       "evidence": "Greenworks sells through direct websites, retailers, dealers and professional distribution under consumer and commercial sub-brands.",
       "scope": "Multi-channel route to market",
       "buyerCheck": "Confirm seller authorization, territory rights, price policy and warranty eligibility for the target account."
@@ -104,22 +109,37 @@
   },
   "developments": [
     {
+      "date": "2026-08-28",
+      "title": "Half-year filing updates ownership and operating results",
+      "summary": "At 30 June 2026, Yin Chen held 57.09% directly and indirectly, while ZAMA held 18.77%. First-half revenue was RMB 2.994 billion and net loss attributable to shareholders was RMB 164.97 million. These are listed-group figures.",
+      "sourceIds": [
+        "greenworks-h1-2026"
+      ]
+    },
+    {
       "date": "2026-05-06",
       "title": "Greenworks discloses updated controlling holdings",
       "summary": "The completion notice reported that Yin Chen and the Globe Holdings structure together held 57.13% after the purchase plan ended.",
-      "sourceIds": ["greenworks-share-notice"]
+      "sourceIds": [
+        "greenworks-share-notice"
+      ]
     },
     {
       "date": "2026-03-31",
       "title": "ZAMA remains a significant minority shareholder",
       "summary": "The first-quarter shareholder table listed STIHL-owned ZAMA Corporation Limited at 18.78%.",
-      "sourceIds": ["greenworks-q1-2026", "stihl-zama"]
+      "sourceIds": [
+        "greenworks-q1-2026",
+        "stihl-zama"
+      ]
     },
     {
       "date": "2009",
       "title": "Greenworks brand is created",
       "summary": "The listed company's annual report dates creation of its own Greenworks brand to 2009.",
-      "sourceIds": ["greenworks-annual-2025"]
+      "sourceIds": [
+        "greenworks-annual-2025"
+      ]
     }
   ],
   "sources": [
@@ -159,7 +179,7 @@
       "title": "About Greenworks",
       "publisher": "Greenworks",
       "url": "https://www.greenworkstools.co.uk/pages/about-us",
-      "accessedAt": "2026-07-31"
+      "accessedAt": "2026-09-12"
     },
     {
       "id": "greenworks-warranty",
@@ -167,9 +187,25 @@
       "publisher": "Greenworks North America",
       "url": "https://www.greenworkstools.com/pages/warranty",
       "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "greenworks-h1-2026",
+      "title": "2026 Half-Year Report Summary",
+      "publisher": "Greenworks (Jiangsu) Co., Ltd. / CNInfo",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225520731.PDF",
+      "accessedAt": "2026-09-12",
+      "publishedAt": "2026-08-28"
+    },
+    {
+      "id": "greenworks-aimowbot-2026",
+      "title": "AiMowbot robotic mowers: regional product range",
+      "publisher": "Greenworks",
+      "url": "https://www.greenworkstools.com/pages/aimowbot-robotic-mowers",
+      "accessedAt": "2026-09-12"
     }
   ],
   "publishedAt": "2026-07-31T19:10:00+08:00",
-  "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T19:10:00+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "Greenworks Company Profile: Ownership & Global Operations"
 }

@@ -6,9 +6,9 @@
   "legalEntityNote": "Vestel is a consumer brand and group-facing name, not one universal legal company. Vestel Elektronik Sanayi ve Ticaret A.Ş. is the listed company controlled by Zorlu Holding AŞ; Vestel Beyaz Eşya Sanayi ve Ticaret A.Ş. manufactures major appliances; Vestel Ticaret A.Ş. handles sales and marketing and operates the Turkish online store. Regional subsidiaries, ODM customers, licensees, importers and service providers can hold other responsibilities.",
   "schemaEntityType": "Brand",
   "officialWebsite": "https://www.vestel.com.tr/",
-  "headline": "Vestel appliances across Zorlu control, listed operations, manufacturing and retail entities",
-  "description": "A source-backed profile of Vestel, separating the consumer brand, Zorlu Holding, Vestel Elektronik, Vestel Beyaz Eşya, Vestel Ticaret, the appliance and cleaning portfolio, ODM manufacturing and buyer checks.",
-  "metaDescription": "Vestel brand profile: Zorlu control, Vestel Elektronik, appliance manufacturing, vacuums, channels and buyer checks.",
+  "headline": "Vestel: Turkish appliances and electronics within Zorlu Group",
+  "description": "Vestel operates in consumer electronics and household appliances, with origins in 1984 and membership of Zorlu Group since 1994. Vestel Elektronik is the listed core company; Vestel Ticaret handles sales and marketing. Buyers should distinguish the Vestel brand from the legal entity supplying a particular appliance or ODM program.",
+  "metaDescription": "What company is behind Vestel? Explore its appliances and electronics business, Zorlu ownership, 1984 origins and manufacturing in Türkiye.",
   "disclaimer": "World Clean Biz is independent and is not affiliated with Vestel or Zorlu Holding. Group ownership, factory and ODM disclosures do not establish the brand owner, manufacturer, plant, origin, importer, seller or warrantor for every Vestel or customer-brand SKU.",
   "headquarters": "Istanbul and Manisa, Türkiye (corporate and manufacturing context)",
   "founded": "1984; acquired by Zorlu Group in 1994",
@@ -24,8 +24,9 @@
     {"placement": "operations", "src": "/images/brands/vestel/product-channel-check.svg", "alt": "Vestel branded product and ODM supply-chain verification workflow", "caption": "Vestel's large manufacturing scale serves both branded and ODM business; model-level documents must identify whose brand, factory and warranty apply."}
   ],
   "ownership": {
-    "summary": "Vestel Elektronik Sanayi ve Ticaret A.Ş. is the listed core company behind the Vestel group and brand architecture. Zorlu Holding AŞ holds 52.77% of Vestel Elektronik's capital according to the current official ownership structure, while the remainder is free float.",
-    "parentCompany": "Zorlu Holding AŞ"
+    "summary": "Vestel Elektronik Sanayi ve Ticaret A.Ş. is the listed core company behind the Vestel group and brand architecture. Zorlu Holding AŞ holds 52.77% of Vestel Elektronik's capital according to the official ownership page reviewed on 12 September 2026, while the remainder is free float.",
+    "parentCompany": "Zorlu Holding AŞ",
+    "displayLabel": "Zorlu Holding-controlled listed group; 52.77% of Vestel Elektronik"
   },
   "leadership": [
     {"name": "Gökhan Sığın", "role": "Chief Executive Officer, Vestel Group of Companies", "context": "Vestel's current management page says Sığın assumed the group CEO role on 19 January 2026; this is group leadership rather than a separate consumer-brand company."}
@@ -56,16 +57,74 @@
     {"date": "1984", "title": "Vestel is founded", "summary": "Vestel's corporate history dates the business to 1984.", "sourceIds": ["vestel-ar-2024"]}
   ],
   "sources": [
-    {"id": "vestel-ownership", "title": "Ownership Structure", "publisher": "Vestel Elektronik", "url": "https://vestelinternational.com/investor-relations/corporate-governance/ownership-structure", "accessedAt": "2026-08-07"},
-    {"id": "vestel-ar-2024", "title": "Vestel Elektronik Integrated Annual Report 2024", "publisher": "Vestel Elektronik", "url": "https://vestelinternational.com/Content/files/uploads/103/integrated-annual-report-2024.pdf", "publishedAt": "2025", "accessedAt": "2026-08-07"},
-    {"id": "vestel-whitegoods-2024", "title": "Vestel Beyaz Eşya Integrated Annual Report 2024", "publisher": "Vestel Beyaz Eşya", "url": "https://vestelinternational.com/Content/files/uploads/738/vbe-integrated-annual-report-2024.pdf", "publishedAt": "2025", "accessedAt": "2026-08-07"},
-    {"id": "vestel-factory", "title": "Factory", "publisher": "Vestel International", "url": "https://vestelinternational.com/our-business/innovation-design/factory", "accessedAt": "2026-08-07"},
-    {"id": "vestel-management", "title": "Top Management", "publisher": "Vestel International", "url": "https://vestelinternational.com/investor-relations/corporate-governance/top-management", "accessedAt": "2026-08-07"},
-    {"id": "vestel-products", "title": "Small Appliances and Vacuums", "publisher": "Vestel", "url": "https://www.vestel.com.tr/kucuk-ev-aletleri-supurge-c-1833", "accessedAt": "2026-08-07"},
-    {"id": "vestel-h30", "title": "Vestel H30 M Electric Vacuum Cleaner", "publisher": "Vestel", "url": "https://www.vestel.com.tr/vestel-h30-m-toz-torbasiz-elektrikli-supurge-p-1898", "accessedAt": "2026-08-07"},
-    {"id": "vestel-sales-terms", "title": "Sales Contract", "publisher": "Vestel", "url": "https://www.vestel.com.tr/content/satis-sozlesmesi", "accessedAt": "2026-08-07"}
+    {
+      "id": "vestel-ownership",
+      "title": "Ownership Structure",
+      "publisher": "Vestel Elektronik",
+      "url": "https://vestelinternational.com/investor-relations/corporate-governance/ownership-structure",
+      "accessedAt": "2026-09-12"
+    },
+    {
+      "id": "vestel-ar-2024",
+      "title": "Vestel Elektronik Integrated Annual Report 2024",
+      "publisher": "Vestel Elektronik",
+      "url": "https://vestelinternational.com/Content/files/uploads/103/integrated-annual-report-2024.pdf",
+      "publishedAt": "2025",
+      "accessedAt": "2026-08-07"
+    },
+    {
+      "id": "vestel-whitegoods-2024",
+      "title": "Vestel Beyaz Eşya Integrated Annual Report 2024",
+      "publisher": "Vestel Beyaz Eşya",
+      "url": "https://vestelinternational.com/Content/files/uploads/738/vbe-integrated-annual-report-2024.pdf",
+      "publishedAt": "2025",
+      "accessedAt": "2026-08-07"
+    },
+    {
+      "id": "vestel-factory",
+      "title": "Factory",
+      "publisher": "Vestel International",
+      "url": "https://vestelinternational.com/our-business/innovation-design/factory",
+      "accessedAt": "2026-08-07"
+    },
+    {
+      "id": "vestel-management",
+      "title": "Top Management",
+      "publisher": "Vestel International",
+      "url": "https://vestelinternational.com/investor-relations/corporate-governance/top-management",
+      "accessedAt": "2026-09-12"
+    },
+    {
+      "id": "vestel-products",
+      "title": "Small Appliances and Vacuums",
+      "publisher": "Vestel",
+      "url": "https://www.vestel.com.tr/kucuk-ev-aletleri-supurge-c-1833",
+      "accessedAt": "2026-08-07"
+    },
+    {
+      "id": "vestel-h30",
+      "title": "Vestel H30 M Electric Vacuum Cleaner",
+      "publisher": "Vestel",
+      "url": "https://www.vestel.com.tr/vestel-h30-m-toz-torbasiz-elektrikli-supurge-p-1898",
+      "accessedAt": "2026-08-07"
+    },
+    {
+      "id": "vestel-sales-terms",
+      "title": "Sales Contract",
+      "publisher": "Vestel",
+      "url": "https://www.vestel.com.tr/content/satis-sozlesmesi",
+      "accessedAt": "2026-08-07"
+    },
+    {
+      "id": "vestel-corporate-profile",
+      "title": "Vestel Group Corporate Profile",
+      "publisher": "Vestel",
+      "url": "https://vestelinternational.com/about-us/vestel-group-corporate-profile",
+      "accessedAt": "2026-09-12"
+    }
   ],
   "publishedAt": "2026-08-07T22:20:00+08:00",
-  "lastVerified": "2026-08-07",
-  "lastModified": "2026-08-07T22:20:00+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "Vestel Company Profile: Industry, Ownership & Manufacturing"
 }

@@ -9,9 +9,9 @@
   ],
   "legalName": "Dreame Innovation Technology (Suzhou) Co., Ltd.",
   "officialWebsite": "https://www.dreametech.com/",
-  "headline": "Dreame ownership, products, manufacturing and global channel expansion",
-  "description": "A source-backed profile of Dreame's private-company ownership boundary, Xiaomi history, product expansion, Suzhou manufacturing and route to market.",
-  "metaDescription": "Dreame company profile: ownership, Xiaomi and MOVA relationships, leadership, products, manufacturing, channels and strategy.",
+  "headline": "Dreame: private ownership, Xiaomi investment history and product expansion",
+  "description": "Dreame is a privately held technology business founded by Yu Hao. Its documented Xiaomi and Shunwei investment history does not establish Xiaomi as its parent. The portfolio extends from robot vacuums and floor washers to lawn, pool, window-cleaning and other home categories in selected markets.",
+  "metaDescription": "Dreame company profile: Yu Hao, Xiaomi investment history, manufacturing, 2026 Aqua20 and robotic mower expansion, and regional product availability.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dreame, MOVA or Xiaomi. Dreame is privately held, and historical financing announcements do not establish a complete current cap table.",
   "headquarters": "Suzhou, Jiangsu, China",
   "founded": "Official pages conflict: Dreame's global Brand Story says the company was established in 2015, while its US and Korean About pages say 2017.",
@@ -42,13 +42,14 @@
     }
   ],
   "ownership": {
-    "summary": "Dreame is a privately held company founded and led by Yu Hao. A 2020 company financing announcement identified Xiaomi Corporation and Shunwei Capital as returning shareholders and said Dreame had joined the Xiaomi ecosystem in 2017; it did not identify Xiaomi as parent or controller. The current complete ownership and voting structure is not publicly disclosed. MOVA is a separate consumer brand described on its regional site as powered by Dreame Technology, but its products, apps and contracting entities should not be treated as interchangeable with Dreame."
+    "summary": "Dreame is a privately held company founded and led by Yu Hao. A 2020 company financing announcement identified Xiaomi Corporation and Shunwei Capital as returning shareholders and said Dreame had joined the Xiaomi ecosystem in 2017; it did not identify Xiaomi as parent or controller. The current complete ownership and voting structure is not publicly disclosed. MOVA is a separate consumer brand described on its regional site as powered by Dreame Technology, but its products, apps and contracting entities should not be treated as interchangeable with Dreame.",
+    "displayLabel": "Privately held company founded by Yu Hao; full current cap table not public"
   },
   "leadership": [
     {
       "name": "Yu Hao",
       "role": "Founder and CEO",
-      "context": "Official Dreame pages identify Yu Hao as founder; the company traces its technology roots to his team's high-speed digital motor work.",
+      "context": "Dreame’s CES 2026 announcement identifies Yu Hao as founder and CEO; official brand materials describe his team’s high-speed motor roots.",
       "portrait": {
         "src": "/images/brands/dreame/founder-yu-hao.webp",
         "alt": "Yu Hao, founder and CEO of Dreame, holding a high-speed motor component",
@@ -60,7 +61,7 @@
   "productPortfolio": [
     {
       "name": "Robot vacuums",
-      "positioning": "A core premium category built around navigation, obstacle avoidance, mopping and multifunction docks.",
+      "positioning": "A premium core built around navigation, mopping and multifunction docks. Dreame’s German IFA 2026 page highlights the Aqua20 Pro Ultra Roller X Complete.",
       "buyerRelevance": "Forms the premium core of a Dreame assortment and its dock-based service proposition."
     },
     {
@@ -75,7 +76,7 @@
     },
     {
       "name": "Home, yard and personal-care products",
-      "positioning": "A widening portfolio that now includes hair care, air care, kitchen appliances, robotic lawn mowers and robotic pool cleaners in selected markets.",
+      "positioning": "A regional portfolio spanning hair care, air care, kitchen appliances, robotic lawn mowers, pool cleaners and window-cleaning robots. The IFA 2026 display includes the A4 AWD Pro mower series.",
       "buyerRelevance": "Requires market-specific assortment checks because adjacent categories are available only in selected markets."
     }
   ],
@@ -118,6 +119,14 @@
   },
   "developments": [
     {
+      "date": "2026-09",
+      "title": "IFA showcase links indoor cleaning with outdoor robotics",
+      "summary": "Dreame’s German IFA 2026 page features Aqua20 Pro Ultra Roller X Complete and the A4 AWD Pro mower series. The display shows cross-category expansion; launch timing and range differ by country.",
+      "sourceIds": [
+        "dreame-ifa-2026"
+      ]
+    },
+    {
       "date": "2020-09-07",
       "title": "Dreame announces Series B+ financing",
       "summary": "Dreame announced a nearly RMB 100 million round led by IDG Capital and identified Xiaomi Corporation and Shunwei Capital as returning shareholders, documenting investment without establishing Xiaomi control.",
@@ -139,7 +148,7 @@
       "title": "Brand Story",
       "publisher": "Dreame Technology",
       "url": "https://global.dreametech.com/pages/brand-story",
-      "accessedAt": "2026-07-30"
+      "accessedAt": "2026-09-12"
     },
     {
       "id": "dreame-series-b-plus",
@@ -169,9 +178,24 @@
       "publisher": "MOVA Malaysia",
       "url": "https://www.mova.com.my/pages/about-us",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dreame-ifa-2026",
+      "title": "Dreame IFA 2026 showcase",
+      "publisher": "Dreame",
+      "url": "https://de.dreametech.com/pages/ifa",
+      "accessedAt": "2026-09-12"
+    },
+    {
+      "id": "dreame-ces-2026",
+      "title": "Dreame whole-home ecosystem at CES 2026",
+      "publisher": "Dreame",
+      "url": "https://www.dreametech.com/blogs/news/dreame-at-ces-2026-debut-ai-powered-whole-home-smart-ecosystem",
+      "accessedAt": "2026-09-12"
     }
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
-  "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T00:45:16+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "Dreame Company Profile: Ownership, Xiaomi Links & Products"
 }

@@ -8,9 +8,9 @@
   ],
   "legalName": "Beijing Roborock Technology Co., Ltd.",
   "officialWebsite": "https://global.roborock.com/",
-  "headline": "Roborock ownership, products, manufacturing and channel strategy",
-  "description": "A source-backed profile of Roborock's listed-company ownership, smart-cleaning portfolio, manufacturing model and global route to market.",
-  "metaDescription": "Roborock company profile: ownership, Xiaomi relationship, leadership, products, manufacturing, channels and competitive strategy.",
+  "headline": "Roborock: listed-company ownership and expansion beyond floor care",
+  "description": "Roborock is a Shanghai-listed cleaning technology company controlled by founder Chang Jing. Its portfolio now spans robot vacuums, wet-and-dry cleaners, washer-dryers, robotic mowers and RockAqua pool robots. Xiaomi-linked investment is a minority holding, not parent-company ownership.",
+  "metaDescription": "Roborock company profile: Chang Jing’s control, Xiaomi-linked minority stake, 2026 results, Saros floorcare, RockMow and RockAqua pool robots.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Roborock or Xiaomi. Company statements and filings are identified separately from World Clean Biz analysis.",
   "headquarters": "Beijing, China",
   "founded": "July 2014",
@@ -40,7 +40,8 @@
     }
   ],
   "ownership": {
-    "summary": "Roborock is a Shanghai Stock Exchange-listed company, not a Xiaomi subsidiary. Its 2025 annual report identified founder Chang Jing as controlling shareholder and actual controller with 20.99% at 31 December 2025. Tianjin Jinmi, an investment entity controlled within Xiaomi Communications' consolidated structure, held 2.49%; that is a minority investment, not legal control."
+    "summary": "Roborock is a Shanghai Stock Exchange-listed company, not a Xiaomi subsidiary. Its 2026 half-year report identified founder Chang Jing as controlling shareholder and actual controller with 20.97% at 30 June 2026. Tianjin Jinmi, an investment entity controlled within Xiaomi Communications' consolidated structure, held 2.49%; that is a minority investment, not legal control.",
+    "displayLabel": "Shanghai-listed company controlled by founder Chang Jing"
   },
   "leadership": [
     {
@@ -63,7 +64,7 @@
   "productPortfolio": [
     {
       "name": "Robot vacuums",
-      "positioning": "The core business, spanning multiple price tiers and advanced navigation, mopping, dock and embodied-robotics features.",
+      "positioning": "The core floorcare business spans Saros and Qrevo families. The IFA 2026 showcase includes Saros 20 Flow Complete, Saros 20 Neo and Qrevo Edge 2 Flow; availability varies by region.",
       "buyerRelevance": "Forms the core assortment across price tiers, cleaning functions and dock configurations."
     },
     {
@@ -80,6 +81,11 @@
       "name": "Robotic lawn mowers",
       "positioning": "An outdoor robotics extension introduced through the RockMow and RockNeo product families.",
       "buyerRelevance": "Extends assortment planning into outdoor robotics through the RockMow and RockNeo platforms."
+    },
+    {
+      "name": "RockAqua robotic pool cleaners",
+      "positioning": "RockAqua P1 introduces a cordless pool-cleaning line alongside indoor floorcare and robotic mowing.",
+      "buyerRelevance": "Pool robotics adds different water-environment, service and seasonal-sales requirements; confirm local availability and pool suitability."
     }
   ],
   "manufacturingSupplyChain": [
@@ -117,7 +123,7 @@
     }
   ],
   "competitivePosition": {
-    "summary": "World Clean Biz assessment: Roborock has widened from robot vacuums into wet-and-dry cleaners, laundry and outdoor robotics, while shifting from its early Xiaomi-channel dependence toward direct ecommerce, distributors and offline experience. That breadth improves reach but also raises execution pressure: the 2025 filing shows faster growth alongside lower profit, heavier selling costs, more inventory and lower gross margins as Roborock moves technologies across price tiers and defends share against Dreame and Ecovacs.",
+    "summary": "World Clean Biz assessment: Roborock now competes across indoor floorcare, laundry, lawn mowing and pool cleaning. Its first-half 2026 filing reports revenue and profit growth after the heavier investment recorded in 2025. The commercial question is whether that wider range can support dependable local distribution, spare parts and service across categories with different seasonal and installation needs.",
     "competitorSlugs": [
       "dreame",
       "ecovacs",
@@ -125,6 +131,23 @@
     ]
   },
   "developments": [
+    {
+      "date": "2026-09-03",
+      "title": "RockAqua extends Roborock into pool cleaning",
+      "summary": "The IFA 2026 showcase adds RockAqua P1 to Roborock’s floorcare and outdoor range, alongside new Saros, Qrevo, F25, RockNeo and RockMow models. Announced models should be distinguished from locally available stock.",
+      "sourceIds": [
+        "roborock-ifa-2026",
+        "roborock-rockaqua-p1"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "title": "First-half results and ownership filing published",
+      "summary": "Roborock reported RMB 10.084 billion of revenue for January–June 2026, up 27.60% year on year, and RMB 986.44 million of net profit attributable to shareholders. The period-end shareholder table lists Chang Jing at 20.97% and Tianjin Jinmi at 2.49%.",
+      "sourceIds": [
+        "roborock-h1-2026"
+      ]
+    },
     {
       "date": "2026-04-22",
       "title": "Roborock reports 2025 growth and heavier reinvestment",
@@ -198,9 +221,32 @@
       "url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2024-07-22/241298_20240722_72YI.pdf",
       "publishedAt": "2024-07-22",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "roborock-h1-2026",
+      "title": "2026 Half-Year Report",
+      "publisher": "Beijing Roborock Technology Co., Ltd. (company filing hosted by Sina Finance)",
+      "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-8/2026-08-25/12524142.PDF",
+      "accessedAt": "2026-09-12",
+      "publishedAt": "2026-08-25"
+    },
+    {
+      "id": "roborock-ifa-2026",
+      "title": "Roborock IFA 2026 product showcase",
+      "publisher": "Roborock",
+      "url": "https://uk.roborock.com/pages/ifa-2026",
+      "accessedAt": "2026-09-12"
+    },
+    {
+      "id": "roborock-rockaqua-p1",
+      "title": "RockAqua P1 cordless pool cleaner",
+      "publisher": "Roborock",
+      "url": "https://garden.roborock.com/us/products/roborock-rockaqua-p1",
+      "accessedAt": "2026-09-12"
     }
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
-  "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T21:15:00+08:00"
+  "lastVerified": "2026-09-12",
+  "lastModified": "2026-09-12T16:30:26+08:00",
+  "metaTitle": "Roborock Company Profile: Ownership, Products & Expansion"
 }

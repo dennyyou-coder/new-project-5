@@ -48,6 +48,7 @@ export type BrandProfile = {
   headline: string;
   description: string;
   metaDescription: string;
+  metaTitle?: string;
   disclaimer: string;
   headquarters: string;
   founded: string;
@@ -59,7 +60,7 @@ export type BrandProfile = {
   logoImageAlt: string;
   logoSourceUrl: string;
   contentVisuals: BrandContentVisual[];
-  ownership: { summary: string; parentCompany?: string };
+  ownership: { summary: string; parentCompany?: string; displayLabel?: string };
   leadership: BrandLeadershipPerson[];
   productPortfolio: Array<{
     name: string;
@@ -366,6 +367,7 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
     }
   }
 
+  optionalRecordText(candidate, "metaTitle", "metaTitle", errors);
   textArray(candidate.aliases, "aliases", errors);
 
   optionalRecordText(candidate, "heroImage", "heroImage", errors);
@@ -440,6 +442,7 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
     errors.push("ownership must be an object.");
   } else {
     recordText(candidate.ownership, "summary", "ownership.summary", errors);
+    optionalRecordText(candidate.ownership, "displayLabel", "ownership.displayLabel", errors);
     optionalRecordText(
       candidate.ownership,
       "parentCompany",
@@ -839,6 +842,8 @@ export function buildBrandPageSchemas(
 }
 
 export function buildBrandPageTitle(profile: BrandProfile): string {
+  const customTitle = normalizeOptionalBrandText(profile.metaTitle);
+  if (customTitle) return customTitle;
   const subject = profile.schemaEntityType === "Brand" ? "Brand" : "Corporate";
   return `${profile.name} ${subject} Profile, Ownership, Products & Strategy`;
 }

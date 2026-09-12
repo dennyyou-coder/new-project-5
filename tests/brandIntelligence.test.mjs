@@ -3052,3 +3052,29 @@ test("identifies the malformed JSON filename when loading profiles", () => {
     fs.rmSync(temporaryDirectory, { recursive: true, force: true });
   }
 });
+
+test("custom company titles stay consistent between search metadata and WebPage schema", () => {
+  const custom = { ...profile, metaTitle: "Sample Brand: Ownership & Manufacturing" };
+  assert.equal(buildBrandPageTitle(custom), custom.metaTitle);
+  const schemas = buildBrandPageSchemas(
+    { profile: custom, primaryArticles: [], relatedArticles: [] },
+    "https://worldcleanbiz.com"
+  );
+  assert.equal(schemas.find((schema) => schema["@type"] === "WebPage").name, custom.metaTitle);
+  assert.equal(buildBrandPageTitle(profile), "Sample Brand Corporate Profile, Ownership, Products & Strategy");
+});
+
+test("editorial ownership labels are validated without creating a parent-company relationship", () => {
+  const custom = {
+    ...profile,
+    ownership: { summary: profile.ownership.summary, displayLabel: "Independent listed company" }
+  };
+  assert.equal(validateBrandProfile(custom).length, 0);
+  const schemas = buildBrandPageSchemas(
+    { profile: custom, primaryArticles: [], relatedArticles: [] },
+    "https://worldcleanbiz.com"
+  );
+  assert.equal(schemas.find((schema) => schema["@id"] === "#brand").parentOrganization, undefined);
+  assert.ok(validateBrandProfile({ ...custom, metaTitle: " " }).some((error) => error.includes("metaTitle")));
+  assert.ok(validateBrandProfile({ ...custom, ownership: { ...custom.ownership, displayLabel: " " } }).some((error) => error.includes("ownership.displayLabel")));
+});
