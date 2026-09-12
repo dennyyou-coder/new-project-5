@@ -2075,7 +2075,8 @@
     ],
     "related": [
       "ecovacs-winbot-mini-2",
-      "ecovacs-winbot-w2s-pro-omni"
+      "ecovacs-winbot-w2s-pro-omni",
+      "mova-t1-station"
     ],
     "announced": "2026-01-06",
     "verifiedAt": "2026-09-06",
@@ -2178,7 +2179,8 @@
     ],
     "related": [
       "ecovacs-winbot-mini-2",
-      "ecovacs-winbot-w3-omni"
+      "ecovacs-winbot-w3-omni",
+      "mova-t1-station"
     ],
     "announced": "",
     "verifiedAt": "2026-09-06",
@@ -4057,7 +4059,8 @@
     ],
     "related": [
       "ecovacs-winbot-w3-omni",
-      "ecovacs-winbot-w2s-pro-omni"
+      "ecovacs-winbot-w2s-pro-omni",
+      "mova-n1"
     ],
     "announced": "2026-02-10",
     "verifiedAt": "2026-09-10",
@@ -8132,5 +8135,202 @@
     "launchYear": 2026,
     "launchNote": "W1 announced 3 September 2026 as a new PencilWash revision. This guide covers the UK wand-dock configuration, not the separate W1 + Dok announcement.",
     "launchSource": "https://www.dyson.co.uk/discover/news/latest/introducing-w1-pencilwash"
+  },
+  {
+    "slug": "mova-n1",
+    "name": "MOVA N1",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Window robots",
+    "market": "Australia; regional specifications and dated official-store price",
+    "summary": "A compact, mains-powered window robot with a 120 ml tank, remote control and a separate emergency battery. Its small body still requires panes of at least 30 × 45 cm.",
+    "fit": "Homes with compatible flat windows, a reachable power outlet and a secure safety-rope anchor, where a lightweight robot is easier to transfer between panes.",
+    "caution": "The backup battery provides emergency adhesion, not cordless cleaning. Check pane size and frame requirements; the Australian listing was marked backorder on 12 September 2026.",
+    "facts": [
+      {
+        "label": "Robot size",
+        "value": "215 × 215 × 59 mm",
+        "meaning": "Measure clear space around handles and grilles, allowing room to hold and retrieve the robot."
+      },
+      {
+        "label": "Robot weight",
+        "value": "1.3 kg",
+        "meaning": "The listed robot weight excludes the external adapter and other accessories."
+      },
+      {
+        "label": "Minimum pane",
+        "value": "30 × 45 cm",
+        "meaning": "A small robot body does not make every small divided window compatible."
+      },
+      {
+        "label": "Robot tank",
+        "value": "120 ml",
+        "meaning": "Fluid capacity affects refill frequency; cloth changes remain a separate task."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is the MOVA N1 cordless?",
+        "answer": "No. Normal cleaning uses the supplied mains adapter. Its internal battery is reserved for emergency adhesion if external power fails."
+      },
+      {
+        "question": "Is the MOVA N1 a 2026 model?",
+        "answer": "MOVA Australia identifies N1 as a 2026 launch in its official window-robot manual index. This guide does not assign an unverified day of first global sale."
+      },
+      {
+        "question": "How much does the MOVA N1 cost in Australia?",
+        "answer": "The official Australian store displayed AUD 549 on 12 September 2026 and marked the model backorder. Check the current dispatch date before ordering; the snapshot is not a delivery promise."
+      },
+      {
+        "question": "Can the N1 clean very small windows?",
+        "answer": "The Australian specification gives a minimum pane of 30 × 45 cm, despite the 21.5 cm square body. Measure the usable glass and space around handles before buying."
+      },
+      {
+        "question": "Can I use it on frameless glass?",
+        "answer": "Do not assume unrestricted compatibility. The N1 manual calls for supervision around frameless or very narrow frames and advises against Thorough and Edge modes on frameless panes. Confirm the exact window with MOVA before use."
+      },
+      {
+        "question": "What does the 30-minute battery claim mean?",
+        "answer": "It is an emergency hold period after power loss. Keep the safety rope secured and retrieve the robot promptly; the claim does not authorize leaving it attached unattended."
+      },
+      {
+        "question": "Does N1 clean its own cloth?",
+        "answer": "No cloth-washing station is listed. Remove and wash the cloth, clean the tracks and sensors as instructed, empty the tank after use and dry the accessories before storage."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "mova-t1-station",
+      "ecovacs-winbot-mini-2"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "MOVA Australia product and price",
+        "url": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "MOVA N1 official user manual",
+        "url": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/Window_Cleaning_Robot_N1.pdf?v=1784100184"
+      },
+      {
+        "label": "MOVA Australia 2026 launch index",
+        "url": "https://au.mova.tech/pages/window-cleaning-robot-series-user-manuals"
+      },
+      {
+        "label": "MOVA T1 Station official reference",
+        "url": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "ECOVACS WINBOT mini 2 official reference",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-mini2"
+      }
+    ],
+    "imageSource": "https://au.mova.tech/cdn/shop/files/260625N1.jpg?v=1782377512",
+    "launchYear": 2026,
+    "launchNote": "MOVA Australia lists N1 with a 2026 launch year; an exact first-sale date is not verified.",
+    "launchSource": "https://au.mova.tech/pages/window-cleaning-robot-series-user-manuals"
+  },
+  {
+    "slug": "mova-t1-station",
+    "name": "MOVA T1 Station",
+    "brand": "MOVA",
+    "brandSlug": "mova",
+    "category": "Window robots",
+    "market": "Australia; regional specifications and dated official-store price",
+    "summary": "A window robot with a portable battery station, four rotating corner brushes and warm-water spray. Its roughly 110-minute total includes about 80 minutes of cleaning and at least 30 minutes of safety reserve.",
+    "fit": "Homes with larger compatible framed panes and suitable floor space for an anchored station, where battery operation and integrated cable storage reduce setup effort.",
+    "caution": "The Australian manual prohibits frameless glass. Its normal pane limit is 2.5 × 4 m; 2.5 × 8 m applies to Zone Cleaning. The station does not automatically wash the cloth.",
+    "facts": [
+      {
+        "label": "Working runtime",
+        "value": "Approximately 80 minutes",
+        "meaning": "Actual battery-powered cleaning time varies with conditions and settings."
+      },
+      {
+        "label": "Combined cable",
+        "value": "5.5 m; automatic retraction",
+        "meaning": "Power, safety and communication share the robot cable; the station has a separate safety tether."
+      },
+      {
+        "label": "Water temperature",
+        "value": "Up to 40°C at the outlet",
+        "meaning": "A manufacturer test figure, not steam cleaning or a disinfection claim."
+      },
+      {
+        "label": "Corner cleaning",
+        "value": "Four rotating corner brushes",
+        "meaning": "Brushes need manual cleaning and drying after use."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Does the MOVA T1 Station clean for 110 minutes?",
+        "answer": "The official manual separates approximately 80 minutes of operating runtime from at least 30 minutes of safety reserve. Its approximately 110-minute total combines the two; it is not continuous cleaning time."
+      },
+      {
+        "question": "Can T1 Station clean without a wall outlet?",
+        "answer": "Yes, the station battery supports cleaning, but the robot remains connected to the station by its combined cable. You must still position and secure the station and safety tether as instructed."
+      },
+      {
+        "question": "Can the Australian T1 Station clean frameless glass?",
+        "answer": "No. The linked Australian manual explicitly prohibits frameless windows, as well as certain very narrow, beveled or thin frames. Do not treat edge sensors as permission to ignore that restriction."
+      },
+      {
+        "question": "What is the maximum window size?",
+        "answer": "The manual gives 2.5 × 4 m for normal operation and extends the recommended maximum to 2.5 × 8 m in Zone Cleaning mode. The listed minimum is 30 × 40 cm; check the complete window and cable route."
+      },
+      {
+        "question": "Does the base station wash the cloth?",
+        "answer": "No automatic cloth-washing system is listed. The manual requires removing and washing the cloth and corner brushes, then drying them before storage. The station supplies power, stores the robot and manages the cable."
+      },
+      {
+        "question": "Is the 40°C spray steam cleaning?",
+        "answer": "No. MOVA describes water up to 40°C at the outlet under test conditions. Enable the function in the app and allow approximately 2–3 minutes for warm water to arrive, subject to conditions."
+      },
+      {
+        "question": "What is the Australian price and launch year?",
+        "answer": "MOVA Australia lists 2026 as the launch year and displayed AUD 999 on 12 September 2026. Confirm current local price, supply and warranty terms before purchase."
+      }
+    ],
+    "articles": [
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "mova-n1",
+      "ecovacs-winbot-w3-omni",
+      "ecovacs-winbot-w2s-pro-omni"
+    ],
+    "announced": "",
+    "verifiedAt": "2026-09-12",
+    "sources": [
+      {
+        "label": "MOVA Australia product and price",
+        "url": "https://au.mova.tech/products/mova-t1-station-window-cleaning-robot-with-base-station"
+      },
+      {
+        "label": "MOVA T1 Station official user manual",
+        "url": "https://cdn.shopify.com/s/files/1/0708/8993/0973/files/T1S-G2579.pdf?v=1787106822"
+      },
+      {
+        "label": "MOVA Australia 2026 launch index",
+        "url": "https://au.mova.tech/pages/window-cleaning-robot-series-user-manuals"
+      },
+      {
+        "label": "MOVA N1 official reference",
+        "url": "https://au.mova.tech/products/mova-window-cleaning-robot-n1"
+      },
+      {
+        "label": "ECOVACS WINBOT W3 OMNI official reference",
+        "url": "https://www.ecovacs.com/us/shop/winbot-window-cleaning-robot/winbot-w3-omni"
+      }
+    ],
+    "imageSource": "https://au.mova.tech/cdn/shop/files/20260826-150954.jpg?v=1787728238",
+    "launchYear": 2026,
+    "launchNote": "MOVA Australia identifies T1 Station as a 2026 launch; this guide uses its Australian store and manual.",
+    "launchSource": "https://au.mova.tech/pages/window-cleaning-robot-series-user-manuals"
   }
 ]
