@@ -1,0 +1,17 @@
+.dialog {
+  width: min(620px, calc(100vw - 24px));
+  height: min(760px, calc(100dvh - 24px));
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  border: 0;
+  border-radius: 14px;
+  background: #fff;
+  color: #112e50;
+  box-shadow: 0 16px 60px #001a4055;
+}
+.dialog::backdrop { background: #051a4266; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; }
+.header button { padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; color: #112e50; background: #fff; cursor: pointer; }
+.frame { display: block; width: 100%; height: calc(100% - 112px); border: 0; }
+.help { margin: 12px 16px; font-size: 14px; }
+.help a { color: #175cff; text-decoration: underline; }

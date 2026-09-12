@@ -2,6 +2,8 @@
 
 import { ReactNode, useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { TallyFallbackDialog } from "./TallyFallbackDialog";
+import type { TallySubmission } from "@/lib/tallySubmission";
 import { getTallyForm, type TallyFormKey } from "@/lib/tallyForms";
 import {
   buildContactFallbackUrl,
@@ -55,9 +57,7 @@ function loadTallyWidget() {
   return tallyWidgetPromise;
 }
 
-type TallySubmitPayload = {
-  responseId?: string;
-};
+type TallySubmitPayload = TallySubmission;
 
 type TallyMessageData = {
   event?: string;
@@ -152,6 +152,9 @@ export function TallyButton({
   const triggerRef = useRef<HTMLSpanElement>(null);
   const viewedRef = useRef(false);
   const submittedRef = useRef(false);
+  const submissionIdsRef = useRef(new Set<string>());
+  const openingRef = useRef(false);
+  const [fallbackAttribution, setFallbackAttribution] = useState<LeadAttribution | null>(null);
   const tallyForm = getTallyForm(form);
   const fallbackUrl = buildContactFallbackUrl({
     conversion_group: getConversionGroup(tallyForm.formType),
@@ -206,7 +209,23 @@ export function TallyButton({
     tallyForm.formType
   ]);
 
+  function completeSubmission(payload: TallySubmitPayload, attribution: LeadAttribution) {
+    const responseId = payload.id || payload.responseId;
+    if (submittedRef.current || (responseId && submissionIdsRef.current.has(responseId))) return;
+    submittedRef.current = true;
+    if (responseId) submissionIdsRef.current.add(responseId);
+    const parameters = { ...attribution, ...eventContext, response_id: responseId };
+    trackLeadEvent("form_submit", parameters);
+    trackLeadEvent("form_success", { ...parameters, conversion_value: 1 });
+    setStatus("success");
+    setFallbackAttribution(null);
+  }
+
   async function openTallyForm() {
+    if (openingRef.current || fallbackAttribution) return;
+    openingRef.current = true;
+    submittedRef.current = false;
+    setStatus("idle");
     const attribution = createLeadAttribution({
       formType: tallyForm.formType,
       sourcePage: window.location.pathname,
@@ -228,6 +247,7 @@ export function TallyButton({
     onOpen?.();
 
     if (!tallyForm.id || !tallyForm.url) {
+      openingRef.current = false;
       setStatus("unavailable");
       trackLeadEvent("form_error", {
         ...attribution,
@@ -239,64 +259,25 @@ export function TallyButton({
 
     try {
       await loadTallyWidget();
+      if (window.Tally?.openPopup) {
+        window.Tally.openPopup(tallyForm.id, {
+          layout: "modal",
+          width: popupWidth,
+          hiddenFields: attribution,
+          onOpen: () => trackLeadEvent("form_open", {
+            ...attribution, ...eventContext, open_method: "popup"
+          }),
+          onSubmit: (payload) => completeSubmission(payload, attribution)
+        });
+        return;
+      }
     } catch {
-      // The direct form URL below remains available if the widget is blocked.
+      // Keep the form in this page so its confirmed submission can be tracked.
+    } finally {
+      openingRef.current = false;
     }
-
-    if (window.Tally?.openPopup) {
-      window.Tally.openPopup(tallyForm.id, {
-        layout: "modal",
-        width: popupWidth,
-        hiddenFields: attribution,
-        onOpen: () => {
-          trackLeadEvent("form_open", {
-            ...attribution,
-            ...eventContext,
-            open_method: "popup"
-          });
-        },
-        onSubmit: (payload) => {
-          if (submittedRef.current) return;
-          submittedRef.current = true;
-          trackLeadEvent("form_submit", {
-            ...attribution,
-            ...eventContext,
-            response_id: payload.responseId
-          });
-          setStatus("success");
-          trackLeadEvent("form_success", {
-            ...attribution,
-            ...eventContext,
-            conversion_value: 1,
-            response_id: payload.responseId
-          });
-        }
-      });
-      return;
-    }
-
-    const fallback = window.open(
-      buildTallyUrl(tallyForm.url, attribution),
-      "_blank",
-      "noopener,noreferrer"
-    );
-
-    if (!fallback) {
-      setStatus("unavailable");
-      trackLeadEvent("form_error", {
-        ...attribution,
-        ...eventContext,
-        error_reason: "popup_blocked"
-      });
-      return;
-    }
-
+    setFallbackAttribution(attribution);
     setStatus("fallback");
-    trackLeadEvent("form_open", {
-      ...attribution,
-      ...eventContext,
-      open_method: "fallback"
-    });
   }
 
   return (
@@ -311,10 +292,21 @@ export function TallyButton({
             <Link href={fallbackUrl}>Use the Contact page instead</Link>.
           </>
         )}
-        {status === "fallback" && "The form opened in a new tab."}
         {status === "success" &&
           "Thank you. Your information was received successfully."}
       </span>
+      {fallbackAttribution && (
+        <TallyFallbackDialog
+          formId={tallyForm.id}
+          attribution={fallbackAttribution}
+          contactUrl={fallbackUrl}
+          onOpen={() => trackLeadEvent("form_open", {
+            ...fallbackAttribution, ...eventContext, open_method: "fallback"
+          })}
+          onSubmit={(payload) => completeSubmission(payload, fallbackAttribution)}
+          onClose={() => { setFallbackAttribution(null); setStatus("idle"); }}
+        />
+      )}
     </span>
   );
 }
