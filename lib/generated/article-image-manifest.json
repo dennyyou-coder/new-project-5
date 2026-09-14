@@ -1780,6 +1780,17 @@
         "outputHash": "sha256:9f19d34eb9560dc5f7a1508fe8df5f5ad41b5f7278cd698efd4b6e76db6e0c0a"
       }
     },
+    "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 855,
+      "height": 800,
+      "bytes": 64800,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c551cab43df14fed262f223c76bbf1fcc875861341f360576fe6655a368f813a",
+      "outputHash": "sha256:ed9cdc7694badf1e357bb4cc3dbefd09cbb48a96eba2ad02c43faac93aea12c0"
+    },
     "/images/articles/dreame-z30-pro-aqua-a/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -33618,7 +33629,9 @@
     "dreame-x60-ultra": {
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-x60-ultra/01-cover.webp",
-      "body": []
+      "body": [
+        "/images/articles/dreame-x60-ultra/02-dock-water-path.webp"
+      ]
     },
     "dreame-z30-pro-aqua-a": {
       "budgetClass": "standard",
@@ -37679,6 +37692,11 @@
           "status": "matched",
           "primary": "/images/articles/dreame-x60-ultra/01-cover.webp",
           "hash": "sha256:ce3bc1c9a3e3b08cf611142bdafa77fc7e9b31a04ae1dc78dc83a7dbd052e30c"
+        },
+        "02-dock-water-path.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-x60-ultra/02-dock-water-path.webp",
+          "hash": "sha256:c551cab43df14fed262f223c76bbf1fcc875861341f360576fe6655a368f813a"
         }
       }
     },
