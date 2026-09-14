@@ -19,7 +19,7 @@
   "heroImageAlt": "Shark PowerDetect cordless vacuum cleaner head cleaning debris",
   "logoImage": "/images/brands/shark/logo.webp",
   "logoImageAlt": "Shark logo",
-  "logoSourceUrl": "https://www.sharkninja.com/",
+  "logoSourceUrl": "https://www.sharkninja.com/on/demandware.static/-/Library-Sites-NA-SharkNinja-SharedLibrary/default/dw94b7d6de/footer-social-icon/shark-logo.svg",
   "contentVisuals": [
     {
       "placement": "ownership",
@@ -139,6 +139,14 @@
       ]
     },
     {
+      "date": "2026-04-14",
+      "title": "PowerDetect Speed adds a lighter auto-empty cordless package",
+      "summary": "SharkNinja introduced PowerDetect Speed Clean & Empty. The US IA3241 model pairs a bending wand with automatic dust transfer and charging; the dedicated model guide documents package details and qualified performance claims.",
+      "sourceIds": [
+        "shark-powerdetect-speed-2026"
+      ]
+    },
+    {
       "date": "2023-07-31",
       "title": "SharkNinja begins independent NYSE trading",
       "summary": "The separation from JS Global ended the parent-subsidiary relationship and established SharkNinja as an independently listed company.",
@@ -201,9 +209,24 @@
       "url": "https://newsroom.sharkninja.com/sharkninja-introduces-the-shark-carpetforce-collection-reinventing-carpet-cleaning-for-everyday-life/",
       "publishedAt": "2026-06-08",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "shark-official-wordmark",
+      "title": "Official Shark wordmark — vector SVG",
+      "publisher": "SharkNinja US storefront",
+      "url": "https://www.sharkninja.com/on/demandware.static/-/Library-Sites-NA-SharkNinja-SharedLibrary/default/dw94b7d6de/footer-social-icon/shark-logo.svg",
+      "accessedAt": "2026-09-14"
+    },
+    {
+      "id": "shark-powerdetect-speed-2026",
+      "title": "SharkNinja Introduces Shark PowerDetect Speed Clean & Empty System",
+      "publisher": "SharkNinja",
+      "url": "https://ir.sharkninja.com/news/news-details/2026/SharkNinja-Introduces-Shark-PowerDetect-Speed-Clean--Empty-System/default.aspx",
+      "publishedAt": "2026-04-14",
+      "accessedAt": "2026-09-14"
     }
   ],
   "publishedAt": "2026-07-30T22:30:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T22:30:00+08:00"
+  "lastModified": "2026-09-14T15:39:04+08:00"
 }

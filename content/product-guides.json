@@ -15275,8 +15275,8 @@
     ]
   },
   "shark-powerdetect-speed-ia3241": {
-    "verdict": "A useful shortlist choice when automatic dust transfer and a bending wand would improve an everyday dry-cleaning routine. The station is the decisive difference from IA1241; compare complete packages and qualified runtime claims.",
-    "notFor": "Wet-spill cleaning, buyers expecting 60 minutes of powered-floorhead cleaning, or households without a suitable permanent station location.",
+    "verdict": "Worth comparing for automatic dust handling and access under furniture. Alongside the manufacturer specifications, read the linked RTINGS IA3241 test: it reports strong carpet pet-hair pickup but weaker results on thick carpet and fine-particle containment. WCB has not tested this model.",
+    "notFor": "Wet-spill cleaning, buyers expecting 60 minutes of powered-floorhead cleaning, or households without a station location. Thick-carpet and fine-dust containment needs deserve a closer look at the linked independent test.",
     "specifications": [
       {
         "label": "Cleaning format",
@@ -15457,19 +15457,29 @@
     },
     "resources": [
       {
-        "label": "Shark US IA3241 product and price",
-        "url": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html",
-        "note": "Official reference; confirm the exact regional model and current terms."
-      },
-      {
-        "label": "Shark US IA1241 package comparison",
-        "url": "https://www.sharkninja.com/shark-powerdetect-speed-cordless-stick-vacuum/IA1241.html",
-        "note": "Official reference; confirm the exact regional model and current terms."
+        "label": "Shark IA3241 US support and document finder",
+        "url": "https://support.sharkninja.com/product/shark-powerdetect-speed-cordless-vacuum-clean-empty-system/01tHs00000DBavNIAT",
+        "note": "Manufacturer support entry for this exact US product. Use it to locate current documentation and confirm replacement-part compatibility; it is not a direct PDF download."
       },
       {
         "label": "Shark IA3000 ANZ family manual",
         "url": "https://cdn.shopify.com/s/files/1/0285/2113/6187/files/IA3000ANZ_Series_CondensedIB_MP_Mv2_LR.pdf?v=1778736133",
         "note": "Official Australia/New Zealand IA3000-series care reference; use the supplied US IA3241 manual for exact parts and procedures."
+      },
+      {
+        "label": "Shark IA3000 ANZ maintenance FAQ",
+        "url": "https://sharkcleanapac.zendesk.com/hc/en-au/articles/16117415861519-IA3000-Shark-PowerDetect-Speed-Cordless-Vacuum-FAQ",
+        "note": "Official Australia/New Zealand family reference for cleaning, filters and troubleshooting. Regional battery, dock and accessory details may differ from the US package."
+      },
+      {
+        "label": "Official Shark logo — vector SVG",
+        "url": "https://www.sharkninja.com/on/demandware.static/-/Library-Sites-NA-SharkNinja-SharedLibrary/default/dw94b7d6de/footer-social-icon/shark-logo.svg",
+        "note": "Original Shark wordmark hosted by SharkNinja. This identifies the Shark consumer brand; it is separate from the combined SharkNinja company logo."
+      },
+      {
+        "label": "Official IA3241 handheld cleaning photograph",
+        "url": "https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/products/IA3241/7_Carousel_Features/IA3241_Feature_Carousel_PDP2?_i=AH",
+        "note": "Manufacturer photograph showing the hand vacuum and upholstery attachment. View the original asset for product identification."
       }
     ]
   }
