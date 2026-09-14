@@ -106,6 +106,8 @@
 
 .product-editorial h3 { color: var(--product-ink); font-size: 21px; line-height: 1.4; margin: 28px 0 12px; letter-spacing: -.02em; }
 .product-editorial p { margin: 0 0 18px; }
+.product-editorial .article-inline-image { margin: 24px 0; }
+.product-editorial .article-inline-image img { display: block; width: 100%; height: auto; border-radius: 8px; }
 .product-editorial a { color: #245cc4; text-decoration: underline; }
 .product-editorial ul { padding-left: 22px; }
 .product-editorial li { margin: 12px 0; }
