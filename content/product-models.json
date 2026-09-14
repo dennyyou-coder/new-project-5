@@ -4454,7 +4454,8 @@
       "narwal-v50",
       "narwal-v50-cube",
       "bosch-unlimited-9-bcs931wuc",
-      "miele-triflex-hx3"
+      "miele-triflex-hx3",
+      "shark-powerdetect-speed-ia3241"
     ],
     "announced": "2026-03-19",
     "verifiedAt": "2026-09-12",
@@ -7131,7 +7132,8 @@
     "related": [
       "bosch-unlimited-10-bbs104sbuc",
       "miele-triflex-hx3",
-      "dyson-v10-konical"
+      "dyson-v10-konical",
+      "shark-powerdetect-speed-ia3241"
     ],
     "announced": "2026-01-05",
     "verifiedAt": "2026-09-12",
@@ -8332,5 +8334,113 @@
     "launchYear": 2026,
     "launchNote": "MOVA Australia identifies T1 Station as a 2026 launch; this guide uses its Australian store and manual.",
     "launchSource": "https://au.mova.tech/pages/window-cleaning-robot-series-user-manuals"
+  },
+  {
+    "slug": "shark-powerdetect-speed-ia3241",
+    "name": "Shark PowerDetect Speed Clean & Empty IA3241",
+    "brand": "Shark",
+    "brandSlug": "shark",
+    "category": "Cordless vacuums",
+    "market": "United States · IA3241",
+    "summary": "A 2026 cordless vacuum with an auto-empty charging station, MultiFLEX wand and Blue Reveal illumination. Compare IA3241 with IA1241 and understand the limits behind 60-minute runtime and 45-day dust storage.",
+    "fit": "Frequent dry cleanups where less handling of the onboard dust cup and access under furniture matter.",
+    "caution": "The 60-minute claim uses an unpowered handheld tool; the 45-day claim covers dock storage. US package details and weight scopes need careful reading.",
+    "facts": [
+      {
+        "label": "Auto-empty dock",
+        "value": "Included; 2 L collection capacity",
+        "meaning": "Collects debris from the vacuum and charges it between sessions; it occupies permanent floor space."
+      },
+      {
+        "label": "Wand",
+        "value": "MultiFLEX bendable and folding wand",
+        "meaning": "Bends for access below furniture and folds for compact storage; the cleaning head still needs clearance."
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 60 minutes",
+        "meaning": "Measured in ECO mode with a non-motorized tool attached to the hand vacuum. Powered-floorhead and higher-power use differ."
+      },
+      {
+        "label": "Handheld weight",
+        "value": "3.5 lb",
+        "meaning": "Weight of the hand vacuum only. The attached wand, head and storage station are outside this figure."
+      }
+    ],
+    "faq": [
+      {
+        "question": "Is IA3241 a 2026 new product?",
+        "answer": "Yes. SharkNinja announced the PowerDetect Speed Clean & Empty System on April 14, 2026. This guide covers the US IA3241 package, with specifications and prices checked on September 14, 2026."
+      },
+      {
+        "question": "What is the difference between IA3241 and IA1241?",
+        "answer": "IA3241 includes the auto-empty charging station and advertises Blue Reveal illumination. IA1241 is the regular stick-vacuum package with a charging cord and a different accessory set. Both list MultiFLEX, TurboPro Detect and three sensing functions. US official prices checked on September 14 were $499.99 and $429.99 respectively."
+      },
+      {
+        "question": "Does the 60-minute runtime apply to normal floor cleaning?",
+        "answer": "No. Shark qualifies it as ECO mode with a non-motorized tool attached to the hand vacuum. The powered floorhead, stronger suction, floor type and debris load can shorten runtime. A comparable measured whole-home floor-cleaning runtime was not verified."
+      },
+      {
+        "question": "Does auto-empty mean I can ignore maintenance for 45 days?",
+        "answer": "No. Up to 45 days refers to debris storage in the dock. You must still inspect the brushroll, air path, onboard cup and filters. Pet hair and heavy debris can make the dock need emptying sooner."
+      },
+      {
+        "question": "Does IA3241 have Edge Detect?",
+        "answer": "The current US IA3241 product page lists Dirt Detect, Floor Detect and Direction Detect. The launch release contains broader Edge Detect language, so this guide does not promise Edge Detect for the US SKU. Check the supplied manual for the unit you buy."
+      },
+      {
+        "question": "How heavy is the cleaner?",
+        "answer": "Shark gives 3.5 lb for the hand vacuum and markets the cleaner at about 7 lb. The IA3241 store specification table also lists 14.2 lb without a clear scope. That figure should not be described as handheld weight or assumed to be a directly comparable cleaner-only measurement."
+      },
+      {
+        "question": "Can IA1241 be upgraded later with the IA3241 dock?",
+        "answer": "Compatibility was not verified from the official sources reviewed. Do not assume that sharing the PowerDetect Speed name means the dust cup, docking connection, charging system and parts are interchangeable. Buy the confirmed IA3241 package if auto-empty is essential."
+      }
+    ],
+    "articles": [
+      "shark-powerdetect-speed-vs-dyson-v16-piston-animal",
+      "sharkninja-hit-product-pipeline"
+    ],
+    "related": [
+      "bosch-unlimited-9-bcs931wuc",
+      "dyson-v10-konical",
+      "dyson-v16-piston-animal"
+    ],
+    "announced": "2026-04-14",
+    "verifiedAt": "2026-09-14",
+    "sources": [
+      {
+        "label": "Shark US IA3241 product and price",
+        "url": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Shark US IA1241 package comparison",
+        "url": "https://www.sharkninja.com/shark-powerdetect-speed-cordless-stick-vacuum/IA1241.html"
+      },
+      {
+        "label": "Shark IA3000 ANZ family manual",
+        "url": "https://cdn.shopify.com/s/files/1/0285/2113/6187/files/IA3000ANZ_Series_CondensedIB_MP_Mv2_LR.pdf?v=1778736133"
+      },
+      {
+        "label": "SharkNinja April 14, 2026 launch",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/SharkNinja-Introduces-Shark-PowerDetect-Speed-Clean--Empty-System/default.aspx"
+      },
+      {
+        "label": "Shark IA3000 ANZ maintenance FAQ",
+        "url": "https://sharkcleanapac.zendesk.com/hc/en-au/articles/16117415861519-IA3000-Shark-PowerDetect-Speed-Cordless-Vacuum-FAQ"
+      },
+      {
+        "label": "Bosch US BCS931WUC specification sheet",
+        "url": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf"
+      },
+      {
+        "label": "SharkNinja official station photograph",
+        "url": "https://s202.q4cdn.com/977000893/files/doc_multimedia/2026/4/1010952764/4d01acf0-7001-462a-b190-140c4c3c8de7.jpg"
+      }
+    ],
+    "imageSource": "https://assets.sharkninja.com/image/upload/dpr_1.0%2Cf_auto%2Cq_60/v1/storefront/products/IA3241/7_Carousel_Features/IA3241_Feature_Carousel_PDP?_i=AH",
+    "launchYear": 2026,
+    "launchNote": "SharkNinja announced the PowerDetect Speed Clean & Empty System in the United States on April 14, 2026. This profile uses the current US IA3241 specification and package listing.",
+    "launchSource": "https://ir.sharkninja.com/news/news-details/2026/SharkNinja-Introduces-Shark-PowerDetect-Speed-Clean--Empty-System/default.aspx"
   }
 ]

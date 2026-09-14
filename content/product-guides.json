@@ -15273,5 +15273,204 @@
         "note": "Official reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "shark-powerdetect-speed-ia3241": {
+    "verdict": "A useful shortlist choice when automatic dust transfer and a bending wand would improve an everyday dry-cleaning routine. The station is the decisive difference from IA1241; compare complete packages and qualified runtime claims.",
+    "notFor": "Wet-spill cleaning, buyers expecting 60 minutes of powered-floorhead cleaning, or households without a suitable permanent station location.",
+    "specifications": [
+      {
+        "label": "Cleaning format",
+        "value": "Cordless stick and detachable handheld; dry pickup",
+        "meaning": "For floor debris, upholstery and above-floor dust. This is not a wet floor washer.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Automatic sensing",
+        "value": "Dirt Detect, Floor Detect and Direction Detect",
+        "meaning": "These are the three functions listed on the current US IA3241 page; do not assume Edge Detect from broader launch copy.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Floorhead",
+        "value": "TurboPro Detect self-cleaning brushroll",
+        "meaning": "Shark describes debris pickup in both forward and reverse strokes. Hair resistance does not eliminate inspection.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Wand",
+        "value": "MultiFLEX bendable and folding wand",
+        "meaning": "Bends for access below furniture and folds for compact storage; the cleaning head still needs clearance.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Dust illumination",
+        "value": "Blue Reveal illumination",
+        "meaning": "A visibility aid for floor dust, separate from the vacuum’s automatic dirt sensing.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Handheld weight",
+        "value": "3.5 lb",
+        "meaning": "Weight of the hand vacuum only. The attached wand, head and storage station are outside this figure.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Onboard dust cup",
+        "value": "0.5 US qt",
+        "meaning": "Capacity carried by the vacuum; separate from the larger collection bin in the dock.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Auto-empty dock",
+        "value": "Included; 2 L collection capacity",
+        "meaning": "Collects debris from the vacuum and charges it between sessions; it occupies permanent floor space.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Dock emptying interval",
+        "value": "Up to 45 days, manufacturer claim",
+        "meaning": "A maximum storage claim, not a guarantee for every household or a filter-maintenance interval.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Maximum runtime",
+        "value": "Up to 60 minutes",
+        "meaning": "Measured in ECO mode with a non-motorized tool attached to the hand vacuum. Powered-floorhead and higher-power use differ.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Recharge time",
+        "value": "6 hours",
+        "meaning": "The US store lists a full recharge time. Plan around longer gaps between consecutive deep cleans.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Filtration",
+        "value": "HEPA; 99.97% of particles 0.3 microns and larger",
+        "meaning": "Manufacturer claim tested to ASTM F1977. This describes filtration, not a medical outcome or room-air purifier rating.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Electrical power",
+        "value": "350 W listed",
+        "meaning": "An electrical power specification, not a suction air-watt measurement; do not compare it directly with a rival’s AW rating.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Cleaning path",
+        "value": "8.3 inches",
+        "meaning": "The listed cleaning width helps assess passes needed along open floor areas.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "Included detail tools",
+        "value": "Crevice Tool and Pet Multi Tool",
+        "meaning": "The US package lists these accessories. A motorized pet tool should not be assumed from the Pet Multi Tool name.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      },
+      {
+        "label": "US limited warranty",
+        "value": "5-year product warranty",
+        "meaning": "Subject to the US warranty terms and exclusions. The store lists parts separately; local coverage must be checked.",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States · IA3241",
+        "amount": "US$499.99",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-14",
+        "note": "Official US store snapshot on September 14, 2026 for the Clean & Empty package. Check taxes, stock, promotions and included accessories at checkout."
+      },
+      {
+        "market": "United States · IA1241 comparison",
+        "amount": "US$429.99",
+        "source": "https://www.sharkninja.com/shark-powerdetect-speed-cordless-stick-vacuum/IA1241.html",
+        "kind": "Official-store snapshot",
+        "date": "2026-09-14",
+        "note": "The regular stick-vacuum package, without the listed auto-empty station. This was $70 below IA3241 on the same check date; it is not an offer for IA3241."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Shark PowerDetect Speed Clean & Empty IA3241",
+          "url": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html",
+          "market": "United States · IA3241"
+        },
+        {
+          "name": "Shark PowerDetect Speed IA1241",
+          "url": "https://www.sharkninja.com/shark-powerdetect-speed-cordless-stick-vacuum/IA1241.html",
+          "market": "United States · IA1241"
+        },
+        {
+          "name": "Bosch Unlimited 9 BCS931WUC",
+          "url": "https://media3.bsh-group.com/Documents/28042963_BCS931WUC_Spec_Sheet.pdf",
+          "market": "United States · BCS931WUC"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Dust handling",
+          "values": [
+            "Automatic emptying into a 2 L station",
+            "Manual dust-cup emptying; no auto-empty station listed",
+            "Manual dust box with compression slider"
+          ]
+        },
+        {
+          "label": "Sensing",
+          "values": [
+            "Dirt, Floor and Direction Detect",
+            "Dirt, Floor and Direction Detect",
+            "MicroClean Sensor & Ring; Auto mode"
+          ]
+        },
+        {
+          "label": "Wand",
+          "values": [
+            "MultiFLEX bendable and folding",
+            "MultiFLEX bendable and folding",
+            "Standard straight tube"
+          ]
+        },
+        {
+          "label": "Maximum runtime conditions",
+          "values": [
+            "Up to 60 min; ECO, handheld with non-motorized tool",
+            "Up to 60 min; ECO, handheld with non-motorized tool",
+            "Up to 60 min; Eco without electrical nozzle"
+          ]
+        },
+        {
+          "label": "Listed recharge",
+          "values": [
+            "6 hours",
+            "6 hours",
+            "Approximately 3 hours"
+          ]
+        }
+      ],
+      "takeaway": "IA3241 adds automatic dust handling to the Shark routine. IA1241 lowers the dated entry price; Bosch Unlimited 9 pairs manual compression with shorter listed charging. These specifications do not establish equal floor-cleaning endurance or a shared pickup-test result."
+    },
+    "resources": [
+      {
+        "label": "Shark US IA3241 product and price",
+        "url": "https://www.sharkninja.com/shark-powerdetect-speed-clean-empty-system/IA3241.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Shark US IA1241 package comparison",
+        "url": "https://www.sharkninja.com/shark-powerdetect-speed-cordless-stick-vacuum/IA1241.html",
+        "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Shark IA3000 ANZ family manual",
+        "url": "https://cdn.shopify.com/s/files/1/0285/2113/6187/files/IA3000ANZ_Series_CondensedIB_MP_Mv2_LR.pdf?v=1778736133",
+        "note": "Official Australia/New Zealand IA3000-series care reference; use the supplied US IA3241 manual for exact parts and procedures."
+      }
+    ]
   }
 }
