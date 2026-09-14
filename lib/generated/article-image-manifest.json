@@ -2340,6 +2340,17 @@
         "outputHash": "sha256:faf653d18f4e2028cd751ca8434192a682ee0a92059614da158073c6e0400042"
       }
     },
+    "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 720,
+      "height": 403,
+      "bytes": 11766,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:89c0303a186e85ffcd016e926f0fe849e0a4194e9fd53bcf10e89d1bc6338543",
+      "outputHash": "sha256:ed68a34964b3deb87028d8413645d0afb66f70ceced79f0415dbc7db97251ecf"
+    },
     "/images/articles/eureka-floorshine-830/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -33974,7 +33985,9 @@
     "eufy-omni-s2": {
       "budgetClass": "standard",
       "cover": "/images/articles/eufy-omni-s2/01-cover.webp",
-      "body": []
+      "body": [
+        "/images/articles/eufy-omni-s2/02-dust-bag-access.webp"
+      ]
     },
     "eureka-floorshine-830": {
       "budgetClass": "standard",
@@ -37937,6 +37950,11 @@
           "status": "matched",
           "primary": "/images/articles/eufy-omni-s2/01-cover.webp",
           "hash": "sha256:d82683ca4a650274ee17e047283bea06cc0b9433e23057069c59b8d6b51435e6"
+        },
+        "02-dust-bag-access.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-s2/02-dust-bag-access.webp",
+          "hash": "sha256:89c0303a186e85ffcd016e926f0fe849e0a4194e9fd53bcf10e89d1bc6338543"
         }
       }
     },

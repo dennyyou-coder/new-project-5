@@ -167,9 +167,16 @@
       "publisher": "Eufy",
       "url": "https://www.eufy.com/",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "eufy-official-white-logo",
+      "title": "Official eufy wordmark — white SVG",
+      "publisher": "Anker Innovations",
+      "url": "https://dix7fd4yse9rd.cloudfront.net/dimp/en/83036986-ec4f-4aa3-8c3a-257278c740e7_eufy-1.svg",
+      "accessedAt": "2026-09-14"
     }
   ],
   "publishedAt": "2026-07-30T23:20:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T23:20:00+08:00"
+  "lastModified": "2026-09-14T16:46:25+08:00"
 }

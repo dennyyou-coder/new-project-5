@@ -3165,6 +3165,10 @@
       {
         "question": "What should I verify before purchase?",
         "answer": "Confirm the exact regional S2 model, station fit, consumable package, desired app functions and local service. Check whether you want fragrance enabled, and do not assume a product photo establishes every accessory in the box."
+      },
+      {
+        "question": "Can S2 mop on another floor without moving the station?",
+        "answer": "The official guide supports up to five saved maps. Wash the mop at the station first, then carry S2 to the other floor. Water depletion can switch it to vacuum-only operation; return it manually for refilling and final self-cleaning."
       }
     ],
     "articles": [
@@ -3177,7 +3181,7 @@
       "shark-powerdetect-uv-reveal-rv3020xe"
     ],
     "announced": "",
-    "verifiedAt": "2026-09-10",
+    "verifiedAt": "2026-09-14",
     "sources": [
       {
         "label": "US official retail listing and price",
@@ -3202,6 +3206,30 @@
       {
         "label": "Comparison · Saros 20 Flow",
         "url": "https://global.roborock.com/pages/roborock-saros-20-flow"
+      },
+      {
+        "label": "S2 T2081 English user guide — PDF",
+        "url": "https://salesforce-knowledge-download.s3.us-west-2.amazonaws.com/000032309/en_US/000032309.pdf"
+      },
+      {
+        "label": "S2 official manuals and video tutorials",
+        "url": "https://service.eufy.com/product-description/a08e2000001TnMgAAK"
+      },
+      {
+        "label": "Multi-floor mopping and five-map guidance",
+        "url": "https://service.eufy.com/eu/article-description/Does-the-S2-Robot-Support-Multiple-Floors-Can-the-S2-Robot-Save-Multiple-Maps"
+      },
+      {
+        "label": "S2 error 6119: dust-collection blockage",
+        "url": "https://service.eufy.com/eu/article-description/What-Should-I-Do-If-My-S2-Shows-Error-6119-Base-Station-Dust-Collection-Duct-Blocked"
+      },
+      {
+        "label": "Official eufy logo — white SVG",
+        "url": "https://dix7fd4yse9rd.cloudfront.net/dimp/en/83036986-ec4f-4aa3-8c3a-257278c740e7_eufy-1.svg"
+      },
+      {
+        "label": "Official S2 dust-bag access illustration",
+        "url": "https://salesforce-knowledge.s3.us-west-2.amazonaws.com/knowledge/ka0e20000004eJpAAI/images/image_1767777039788_0020679192fdb.png"
       }
     ],
     "imageSource": "https://cdn.shopify.com/s/files/1/0504/7094/4954/files/Frame_2121236208_a0039c44-50f0-4b91-8038-752a81edf652.png?v=1788423675",
@@ -4537,7 +4565,7 @@
       },
       {
         "question": "Can I use it on more than one floor?",
-        "answer": "It must be carried between levels. The official guidance describes preparing the roller at the station before a remote-floor wet session; the robot still needs station access for washing and charging."
+        "answer": "C28 can save up to five maps, with manual carrying between levels. Away from the station, the app can prompt for mop washing; an empty clean-water tank or full dirty-water tank switches the job to vacuum-only. Return the robot to the station after the task."
       },
       {
         "question": "Does the station automatically mix detergent?",
@@ -4546,6 +4574,10 @@
       {
         "question": "What preparation does the home still need?",
         "answer": "Remove loose cables and objects the robot may catch. For a dusty first clean, the manufacturer recommends initial vacuuming before wet cleaning. Inspect the roller, brushes and station after the job."
+      },
+      {
+        "question": "How much space does the C28 station need?",
+        "answer": "Official support recommends 0.5 m clear on each side and 1.5 m in front, on a hard, level floor, not carpet. Also leave room above the station to remove its tanks. Station dimensions alone do not describe the whole working space."
       }
     ],
     "articles": [
@@ -4560,7 +4592,7 @@
       "mova-s70-ultra-roller"
     ],
     "announced": "",
-    "verifiedAt": "2026-09-12",
+    "verifiedAt": "2026-09-14",
     "sources": [
       {
         "label": "UK C28 specifications, offer and FAQ",
@@ -4577,6 +4609,30 @@
       {
         "label": "Comparison · Qrevo Curv 2 Flow",
         "url": "https://global.roborock.com/pages/roborock-qrevo-curv-2-flow"
+      },
+      {
+        "label": "C28 T211A English user guide — PDF",
+        "url": "https://salesforce-knowledge-download.s3.us-west-2.amazonaws.com/000032003/en_US/000032003.pdf"
+      },
+      {
+        "label": "C28 official manuals and video tutorials",
+        "url": "https://service.eufy.com/uk/product-description/a08e200000AO5onAAD"
+      },
+      {
+        "label": "Multi-floor mopping and five-map guidance",
+        "url": "https://service.eufy.com/ca/article-description/Omni-C28-Robot-Vacuum-Multi-Floor-Cleaning-and-Map-Storage"
+      },
+      {
+        "label": "C28 station placement and clearance",
+        "url": "https://service.eufy.com/ca/article-description/How-should-I-correctly-place-the-base-station-of-my-Omni-C28"
+      },
+      {
+        "label": "C28 residual-water-tray care",
+        "url": "https://service.eufy.com/ca/article-description/How-to-clean-the-residual-water-tray-of-Omni-C28"
+      },
+      {
+        "label": "Official eufy logo — white SVG",
+        "url": "https://dix7fd4yse9rd.cloudfront.net/dimp/en/83036986-ec4f-4aa3-8c3a-257278c740e7_eufy-1.svg"
       }
     ],
     "imageSource": "https://cdn.shopify.com/s/files/1/0504/1094/6753/files/T221A-C28_DTC_rich_image-03_e222262c-647b-453c-971e-49e76bb98961.png?v=1775204850",
