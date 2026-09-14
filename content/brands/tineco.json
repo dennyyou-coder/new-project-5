@@ -226,9 +226,16 @@
       "publisher": "Tineco",
       "url": "https://global.tineco.com/contact/",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "tineco-official-logo",
+      "title": "Official Tineco wordmark — original PNG",
+      "publisher": "Tineco",
+      "url": "https://global.tineco.com/imgs/logo.png",
+      "accessedAt": "2026-09-14"
     }
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T20:18:52+08:00"
+  "lastModified": "2026-09-14T16:16:44+08:00"
 }

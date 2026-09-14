@@ -6921,7 +6921,11 @@
       },
       {
         "question": "What maintenance should an owner expect?",
-        "answer": "Empty waste, clear trapped hair and residue, and care for the filter and roller according to the manual. FlashDry or SilentDry does not replace dirty-water disposal."
+        "answer": "The EU manual says to empty and clean the dirty tank, remove hair and debris, and clean and fully dry the tanks, roller and filters after each use. A rinsed filter must be completely dry before refitting. FlashDry does not replace waste disposal."
+      },
+      {
+        "question": "What must I do before running self-cleaning?",
+        "answer": "For the EU i7 Fold covered by the manual, plug in the dock, ensure battery charge is above 30%, empty and clean the dirty-water tank, and keep the clean-water level above 40%. After the cycle, clean the dirty tank again when prompted."
       }
     ],
     "articles": [
@@ -6935,7 +6939,7 @@
       "eureka-floorshine-830"
     ],
     "announced": "2026-01-01",
-    "verifiedAt": "2026-09-12",
+    "verifiedAt": "2026-09-14",
     "sources": [
       {
         "label": "Spain / EU i7 Fold specifications and offer",
@@ -6956,6 +6960,14 @@
       {
         "label": "Station S9 Scientist Pro comparison",
         "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "i7 Fold EU instruction manual — PDF, 66 MB",
+        "url": "https://static-ussite.tineco.com/14.CL2482FloorOnei7Fold%E6%AC%A7%E7%89%88%E8%AF%B4%E6%98%8E%E4%B9%A620251127.pdf_2e84ee72-4.pdf"
+      },
+      {
+        "label": "Official Tineco logo — original PNG",
+        "url": "https://global.tineco.com/imgs/logo.png"
       }
     ],
     "imageSource": "https://cdn.shopify.com/s/files/1/0551/9032/3355/files/0e44a1e857d737112dc14a2239bda79c_bca1582c-1d61-473d-8eba-8e4d3882c15a.png?v=1776823893",
@@ -7023,6 +7035,10 @@
       {
         "question": "Does self-cleaning make ownership hands-free?",
         "answer": "No. The owner still fills clean water, empties dirty water and inspects the roller, filter and recovery path. Drying modes help with one part of that routine."
+      },
+      {
+        "question": "Where can I find the correct manual and support?",
+        "answer": "Use the official US S9 Master support page linked below. WCB verified that model-specific entry but did not find a verifiable US manual PDF on 14 September 2026. Request the manual using your exact model label; do not substitute an S9 Artist, Steam or Station manual."
       }
     ],
     "articles": [
@@ -7035,7 +7051,7 @@
       "shark-aquareach-pro-wd563"
     ],
     "announced": "2026-01-01",
-    "verifiedAt": "2026-09-12",
+    "verifiedAt": "2026-09-14",
     "sources": [
       {
         "label": "US S9 Master technical specifications",
@@ -7056,6 +7072,22 @@
       {
         "label": "Station S9 Scientist Pro comparison",
         "url": "https://store.tineco.com/products/tineco-floor-one-station-s9-scientist-pro-wet-dry-vacuum-cleaner"
+      },
+      {
+        "label": "S9 Master US support and warranty FAQ",
+        "url": "https://us.tineco.com/support/detail/floor-one-s9-master/"
+      },
+      {
+        "label": "S9 Master official troubleshooting",
+        "url": "https://global.tineco.com/support/troubleshooting/floor-one-s9-master/"
+      },
+      {
+        "label": "Official S9 Master controls illustration",
+        "url": "https://static-ussite.tineco.com/10-1.jpg_5fd544a0-c.jpg"
+      },
+      {
+        "label": "Official Tineco logo — original PNG",
+        "url": "https://global.tineco.com/imgs/logo.png"
       }
     ],
     "imageSource": "https://cdn.shopify.com/s/files/1/0289/8450/8500/files/tineco-floor-one-s9-master-wet-dry-vacuum-cleaner-6860505.jpg?v=1766659997",

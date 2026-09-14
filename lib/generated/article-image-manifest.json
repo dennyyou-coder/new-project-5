@@ -6076,6 +6076,24 @@
         "outputHash": "sha256:01e82029348c74a20527e48f92ca98a712baef761d75387a038a38234c5782a9"
       }
     },
+    "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 655,
+      "bytes": 39436,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b9f3d9be4c9cd53810472b99aa07f213a8bb9e5858bce97494fb059821d3668e",
+      "outputHash": "sha256:03d20d29000a6dbda43fadaa6558b2eefe618660c4c68b56f3365b2c0ae5011f",
+      "mobile": {
+        "src": "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes-800.webp",
+        "width": 800,
+        "height": 328,
+        "bytes": 16248,
+        "outputHash": "sha256:e001aae4b03fcbffd653c32bc643ef48f16552a2c6e66dc7b79634c648d4a463"
+      }
+    },
     "/images/articles/tineco-floor-one-station-s9-scientist-pro/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -36098,7 +36116,9 @@
     "tineco-floor-one-s9-master": {
       "budgetClass": "standard",
       "cover": "/images/articles/tineco-floor-one-s9-master/01-cover.webp",
-      "body": []
+      "body": [
+        "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp"
+      ]
     },
     "tineco-floor-one-station-s9-scientist-pro": {
       "budgetClass": "standard",
@@ -38957,6 +38977,11 @@
           "status": "matched",
           "primary": "/images/articles/tineco-floor-one-s9-master/01-cover.webp",
           "hash": "sha256:a4fecba891d48507891119f996224396a6d3349ddfae85a2a747494fe282d807"
+        },
+        "02-controls-and-modes.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp",
+          "hash": "sha256:b9f3d9be4c9cd53810472b99aa07f213a8bb9e5858bce97494fb059821d3668e"
         }
       }
     },
