@@ -59,6 +59,10 @@
       {
         "question": "What ongoing costs should I include?",
         "answer": "Bags, filters, brushes, mop pads and approved cleaning solution, plus any installation or out-of-warranty service. Use prices for compatible local packs; WCB has not established a universal annual cost."
+      },
+      {
+        "question": "How long should the washed filter dry?",
+        "answer": "The US/FCC manual requires at least 24 hours of thorough drying for the washable filter and dustbin before refitting. Keep sensors and charging contacts dry; use the instructions for your regional dock."
       }
     ],
     "articles": [
@@ -74,7 +78,7 @@
       "dyson-r1-nurovi-dry"
     ],
     "announced": "2026-01-06",
-    "verifiedAt": "2026-09-06",
+    "verifiedAt": "2026-09-14",
     "sources": [
       {
         "label": "Official product page · Global specification",
@@ -99,6 +103,14 @@
       {
         "label": "Official manual and model support",
         "url": "https://gl-files.roborock.com/product/center/images/Roborock%20Saros%2020%20FCC%20User%20Manual.41593654.pdf"
+      },
+      {
+        "label": "Saros 20 regional manual selector",
+        "url": "https://help.roborock.com/us/product/roborock-saros-20"
+      },
+      {
+        "label": "Official Roborock logo — JPG",
+        "url": "https://global.roborock.com/cdn/shop/files/Roborock_logo_share_1200x1200.jpg?v=1758524759"
       }
     ],
     "imageSource": "https://global.roborock.com/cdn/shop/files/Saros_20_Black_ID.png?v=1765951133",
@@ -166,6 +178,10 @@
       {
         "question": "Is the highest suction number the best way to choose?",
         "answer": "No. Contact with the floor, brush design, route completion and maintenance all affect results. Compare a difficult room or stain under equivalent conditions instead of ranking peak manufacturer figures."
+      },
+      {
+        "question": "Which maintenance intervals does the US manual recommend?",
+        "answer": "Clean the used-water tank after every use. Suggested replacement ranges are 6–12 months for main brushes, 3–6 months for the dust-box filter and 1–3 months for mop pads. Adjust to wear and app reminders."
       }
     ],
     "articles": [
@@ -179,15 +195,15 @@
       "dreame-l60-ultra"
     ],
     "announced": "2026-01-06",
-    "verifiedAt": "2026-09-06",
+    "verifiedAt": "2026-09-14",
     "sources": [
       {
         "label": "Official product page · United States",
         "url": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
       },
       {
-        "label": "X60 Ultra manual and support",
-        "url": "https://support.dreametech.com/hc/en-us/articles/15593670954127"
+        "label": "X60 Ultra US user manual attachment",
+        "url": "https://support.dreametech.com/hc/en-us/article_attachments/15593701732879"
       },
       {
         "label": "Official launch context · 2026",
@@ -204,6 +220,18 @@
       {
         "label": "Comparison reference · ECOVACS DEEBOT X12 OmniCyclone",
         "url": "https://www.ecovacs.com/global/deebot-robotic-vacuum-cleaner/deebot-x12-omnicyclone"
+      },
+      {
+        "label": "Global X60 Ultra manual fallback",
+        "url": "https://global.dreametech.com/pages/x60-ultra-user-manual"
+      },
+      {
+        "label": "Official X60 Ultra dock illustration",
+        "url": "https://global.dreametech.com/cdn/shop/files/x60-ultra-one-dock-does-it-all01-mb_1600x.webp?v=1769567861"
+      },
+      {
+        "label": "Official Dreame logo — WebP",
+        "url": "https://www.dreametech.com/cdn/shop/files/home-page-logo.webp?v=1784104996"
       }
     ],
     "imageSource": "https://www.dreametech.com/cdn/shop/files/Total-Right-X60_Ultra-White_1200x1200.webp?v=1773224158",

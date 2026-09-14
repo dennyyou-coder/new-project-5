@@ -162,14 +162,24 @@
     },
     "resources": [
       {
-        "label": "Manuals & setup information",
+        "label": "Saros 20 US/FCC user manual — PDF",
         "url": "https://gl-files.roborock.com/product/center/images/Roborock%20Saros%2020%20FCC%20User%20Manual.41593654.pdf",
-        "note": "Official US/FCC user manual. Match the dock and regional product code."
+        "note": "Official 64-page multilingual manual, about 0.56 MB. English maintenance is on pages 14–16; applies to the covered US/FCC tank dock."
       },
       {
         "label": "Official demonstrations & tutorials",
         "url": "https://global.roborock.com/pages/roborock-saros-20",
         "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      },
+      {
+        "label": "Saros 20 regional manual selector",
+        "url": "https://help.roborock.com/us/product/roborock-saros-20",
+        "note": "Official model support with separate Water Tank and Fill & Drain document filters. Select the dock type and language before downloading."
+      },
+      {
+        "label": "Official Roborock logo — JPG",
+        "url": "https://global.roborock.com/cdn/shop/files/Roborock_logo_share_1200x1200.jpg?v=1758524759",
+        "note": "Original symbol-and-wordmark image served by Roborock’s global website; a brand asset, not a product certification."
       }
     ]
   },
@@ -336,14 +346,29 @@
     },
     "resources": [
       {
-        "label": "Manuals & setup information",
-        "url": "https://support.dreametech.com/hc/en-us/articles/15593670954127",
-        "note": "Match the model name, regional revision and accessories before using the manual."
+        "label": "X60 Ultra US user manual — PDF",
+        "url": "https://support.dreametech.com/hc/en-us/article_attachments/15593701732879",
+        "note": "Verified 65-page EN/FR/ES manual, about 12.8 MB. Printed page 13 (PDF page 17) contains the care schedule; this is the plain X60 Ultra."
       },
       {
         "label": "Official demonstrations & tutorials",
         "url": "https://global.dreametech.com/products/x60",
         "note": "Opens the manufacturer’s overview or tutorial. External media loads only when you follow the link."
+      },
+      {
+        "label": "Global X60 Ultra manual fallback",
+        "url": "https://global.dreametech.com/pages/x60-ultra-user-manual",
+        "note": "Official global download page labelled EN/KM. Use as a regional reference; do not transfer its electrical requirements to a US unit."
+      },
+      {
+        "label": "Official X60 Ultra dock illustration",
+        "url": "https://global.dreametech.com/cdn/shop/files/x60-ultra-one-dock-does-it-all01-mb_1600x.webp?v=1769567861",
+        "note": "Manufacturer cutaway from the global X60 page showing station-to-robot water delivery. It does not establish that a plumbing kit is included."
+      },
+      {
+        "label": "Official Dreame logo — WebP",
+        "url": "https://www.dreametech.com/cdn/shop/files/home-page-logo.webp?v=1784104996",
+        "note": "Original wordmark from Dreame’s US website, supplied for brand identification."
       }
     ]
   },
