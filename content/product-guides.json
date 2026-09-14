@@ -5514,6 +5514,31 @@
         "label": "CES 2026 US retail launch date",
         "url": "https://www.prnewswire.com/apac/news-releases/anker-innovations-showcases-iconic-lineup-of-charging-smart-home-and-entertainment-devices-during-ces-2026-302653788.html",
         "note": "Official reference; check the exact regional model and current terms."
+      },
+      {
+        "label": "S2 T2081 English user guide — PDF",
+        "url": "https://salesforce-knowledge-download.s3.us-west-2.amazonaws.com/000032309/en_US/000032309.pdf",
+        "note": "Official 27-page guide, approximately 47 MB. Care schedule on PDF page 19; filter care on page 20. Match the model code and supplied regional instructions."
+      },
+      {
+        "label": "S2 official manuals and video tutorials",
+        "url": "https://service.eufy.com/product-description/a08e2000001TnMgAAK",
+        "note": "Model-specific catalog with English instructions, setup, app and accessory-maintenance videos. Videos open on demand."
+      },
+      {
+        "label": "Multi-floor mopping and five-map guidance",
+        "url": "https://service.eufy.com/eu/article-description/Does-the-S2-Robot-Support-Multiple-Floors-Can-the-S2-Robot-Save-Multiple-Maps",
+        "note": "Official support describes manual carrying, mop preparation and water-related limits away from the station. App behaviour can change with firmware."
+      },
+      {
+        "label": "S2 error 6119: dust-collection blockage",
+        "url": "https://service.eufy.com/eu/article-description/What-Should-I-Do-If-My-S2-Shows-Error-6119-Base-Station-Dust-Collection-Duct-Blocked",
+        "note": "Official bag, dustbin and collection-port checks, with a step-by-step illustration. Use this guide for the stated error rather than treating every failure alike."
+      },
+      {
+        "label": "Official eufy logo — white SVG",
+        "url": "https://dix7fd4yse9rd.cloudfront.net/dimp/en/83036986-ec4f-4aa3-8c3a-257278c740e7_eufy-1.svg",
+        "note": "Original white wordmark served by Anker Innovations’ brand website. Intended for a dark background; supplied for brand identification."
       }
     ]
   },
@@ -8204,6 +8229,36 @@
         "label": "Comparison · DEEBOT T80S OMNI",
         "url": "https://www.ecovacs.com/us/shop/deebot-robotic-vacuum-cleaner/deebot-t80s-omni",
         "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "C28 T211A English user guide — PDF",
+        "url": "https://salesforce-knowledge-download.s3.us-west-2.amazonaws.com/000032003/en_US/000032003.pdf",
+        "note": "Official 27-page guide, approximately 20 MB. Station setup on PDF page 6; care schedule on page 16. Linked from the UK support catalog. Match the model code and supplied regional instructions."
+      },
+      {
+        "label": "C28 official manuals and video tutorials",
+        "url": "https://service.eufy.com/uk/product-description/a08e200000AO5onAAD",
+        "note": "Model-specific catalog with English instructions, setup, app and accessory-maintenance videos. Videos open on demand."
+      },
+      {
+        "label": "Multi-floor mopping and five-map guidance",
+        "url": "https://service.eufy.com/ca/article-description/Omni-C28-Robot-Vacuum-Multi-Floor-Cleaning-and-Map-Storage",
+        "note": "Official support describes manual carrying, mop preparation and water-related limits away from the station. App behaviour can change with firmware."
+      },
+      {
+        "label": "C28 station placement and clearance",
+        "url": "https://service.eufy.com/ca/article-description/How-should-I-correctly-place-the-base-station-of-my-Omni-C28",
+        "note": "Official support recommends 0.5 m on each side and 1.5 m in front, on a hard, level floor rather than carpet."
+      },
+      {
+        "label": "C28 residual-water-tray care",
+        "url": "https://service.eufy.com/ca/article-description/How-to-clean-the-residual-water-tray-of-Omni-C28",
+        "note": "Model-specific app-guided maintenance route. Follow the current app screens when accessing the residual water tray."
+      },
+      {
+        "label": "Official eufy logo — white SVG",
+        "url": "https://dix7fd4yse9rd.cloudfront.net/dimp/en/83036986-ec4f-4aa3-8c3a-257278c740e7_eufy-1.svg",
+        "note": "Original white wordmark served by Anker Innovations’ brand website. Intended for a dark background; supplied for brand identification."
       }
     ]
   },
