@@ -5615,6 +5615,42 @@
         "outputHash": "sha256:9863ab1ac3b67362ec96ef7d59b0f23bd04e662c0f613feb020d2b60f8365fb6"
       }
     },
+    "/images/articles/shark-powerdetect-speed-ia3241/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1008,
+      "height": 567,
+      "bytes": 110608,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8c2ffc216462bb9919bf7a2ddeb8ee51df4b50e16af5301e29c74d5b6d16cec6",
+      "outputHash": "sha256:38de283bca5dd67952577bba25c8f8460a43782db15fce9a1dddc9dc884d95ba",
+      "mobile": {
+        "src": "/images/articles/shark-powerdetect-speed-ia3241/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 66642,
+        "outputHash": "sha256:aa48a70482c8fc51e36512a533904ea9c05a51523160396554d55eecbd4cbe33"
+      }
+    },
+    "/images/articles/shark-powerdetect-speed-ia3241/02-auto-empty-station.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 89022,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:edb6e0896b46b1b7b7961d5a49b31c1378157b0d33065427208413049518bbcc",
+      "outputHash": "sha256:084325c8dba0a20fb4ce601ccfa08fa0c9bcd4e885982a3290dc76ab03399702",
+      "mobile": {
+        "src": "/images/articles/shark-powerdetect-speed-ia3241/02-auto-empty-station-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 25848,
+        "outputHash": "sha256:e051dd6d8d715796a6e9f927fa3e5013fc48259289315edb03f541f83e5fb135"
+      }
+    },
     "/images/articles/shark-powerdetect-uv-reveal-rv3020xe/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -35838,6 +35874,13 @@
       "cover": "/images/blog/shark-hydrovac-vs-bissell-crosswave.webp",
       "body": []
     },
+    "shark-powerdetect-speed-ia3241": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-powerdetect-speed-ia3241/01-cover.webp",
+      "body": [
+        "/images/articles/shark-powerdetect-speed-ia3241/02-auto-empty-station.webp"
+      ]
+    },
     "shark-powerdetect-speed-vs-dyson-v16-piston-animal": {
       "budgetClass": "standard",
       "cover": "/images/blog/shark-powerdetect-speed-vs-dyson-v16-piston-animal.webp",
@@ -38783,6 +38826,20 @@
           "status": "matched",
           "primary": "/images/articles/shark-aquareach-wd551/01-cover.webp",
           "hash": "sha256:201a82f3ff83a330f8016eb0b259f0ca223529c437a6b946635c7c362404ef3e"
+        }
+      }
+    },
+    "shark-powerdetect-speed-ia3241": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/shark-powerdetect-speed-ia3241/01-cover.webp",
+          "hash": "sha256:8c2ffc216462bb9919bf7a2ddeb8ee51df4b50e16af5301e29c74d5b6d16cec6"
+        },
+        "02-auto-empty-station.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/shark-powerdetect-speed-ia3241/02-auto-empty-station.webp",
+          "hash": "sha256:edb6e0896b46b1b7b7961d5a49b31c1378157b0d33065427208413049518bbcc"
         }
       }
     },
