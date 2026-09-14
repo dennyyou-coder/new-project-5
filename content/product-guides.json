@@ -12671,10 +12671,10 @@
         "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
       },
       {
-        "label": "Display",
-        "value": "LED",
-        "meaning": "Read operating prompts and care alerts.",
-        "source": "https://de-store.tineco.com/es-es/products/tineco-floor-one-i7-fold-aspiradora-en-seco-y-humedo"
+        "label": "Full charging time",
+        "value": "Approximately 3–4 hours",
+        "meaning": "EU manual laboratory estimate at 4–40°C; use the supplied charging equipment.",
+        "source": "https://static-ussite.tineco.com/14.CL2482FloorOnei7Fold%E6%AC%A7%E7%89%88%E8%AF%B4%E6%98%8E%E4%B9%A620251127.pdf_2e84ee72-4.pdf"
       },
       {
         "label": "Fast drying claim",
@@ -12788,6 +12788,16 @@
         "label": "Official German i7 Fold product page",
         "url": "https://de.tineco.com/products/i7-fold.html",
         "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "i7 Fold EU instruction manual — PDF, 66 MB",
+        "url": "https://static-ussite.tineco.com/14.CL2482FloorOnei7Fold%E6%AC%A7%E7%89%88%E8%AF%B4%E6%98%8E%E4%B9%A620251127.pdf_2e84ee72-4.pdf",
+        "note": "Official multilingual manual. English printed pages 34–38 cover modes, charging and maintenance. Large external download; check the regional model on your appliance."
+      },
+      {
+        "label": "Official Tineco logo — original PNG",
+        "url": "https://global.tineco.com/imgs/logo.png",
+        "note": "Original brand wordmark from Tineco’s global website; provided for brand identification, without implying endorsement."
       }
     ]
   },
@@ -12979,6 +12989,26 @@
         "label": "CES 2026 US introduction",
         "url": "https://www.newswire.ca/news-releases/tineco-debuts-modern-living-concept-and-latest-smart-cleaning-lineup-at-ces-2026-800909923.html",
         "note": "Official reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "S9 Master US support and warranty FAQ",
+        "url": "https://us.tineco.com/support/detail/floor-one-s9-master/",
+        "note": "Model-specific US support entry. No downloadable US S9 Master manual PDF was verified on 14 September 2026; request the correct regional manual through support."
+      },
+      {
+        "label": "S9 Master official troubleshooting",
+        "url": "https://global.tineco.com/support/troubleshooting/floor-one-s9-master/",
+        "note": "Model-specific troubleshooting categories for power, noise, odour and operating issues. Match instructions to the appliance label and country."
+      },
+      {
+        "label": "Official S9 Master controls illustration",
+        "url": "https://static-ussite.tineco.com/10-1.jpg_5fd544a0-c.jpg",
+        "note": "Original Tineco graphic showing MAX, HEAT, QUIET and AUTO. The 65-minute specification applies to Quiet mode, not all four settings."
+      },
+      {
+        "label": "Official Tineco logo — original PNG",
+        "url": "https://global.tineco.com/imgs/logo.png",
+        "note": "Original brand wordmark from Tineco’s global website; provided for brand identification, without implying endorsement."
       }
     ]
   },
