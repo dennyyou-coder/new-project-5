@@ -5651,6 +5651,24 @@
         "outputHash": "sha256:e051dd6d8d715796a6e9f927fa3e5013fc48259289315edb03f541f83e5fb135"
       }
     },
+    "/images/articles/shark-powerdetect-speed-ia3241/03-handheld-upholstery.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1008,
+      "height": 756,
+      "bytes": 79308,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:98fa772a0277454983961bb2c3b1145e0428867e4362fb65c677c1bd1b8efb13",
+      "outputHash": "sha256:df12a8019d12e1cf4ffb7ceafdeab91a6cee6acd57a608285df684bec1544c17",
+      "mobile": {
+        "src": "/images/articles/shark-powerdetect-speed-ia3241/03-handheld-upholstery-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 48182,
+        "outputHash": "sha256:fd2b8de1bc9a5c5076f1b80301aca897e5cd69483e7de8e2497fc457a28ba6ea"
+      }
+    },
     "/images/articles/shark-powerdetect-uv-reveal-rv3020xe/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -35878,7 +35896,8 @@
       "budgetClass": "standard",
       "cover": "/images/articles/shark-powerdetect-speed-ia3241/01-cover.webp",
       "body": [
-        "/images/articles/shark-powerdetect-speed-ia3241/02-auto-empty-station.webp"
+        "/images/articles/shark-powerdetect-speed-ia3241/02-auto-empty-station.webp",
+        "/images/articles/shark-powerdetect-speed-ia3241/03-handheld-upholstery.webp"
       ]
     },
     "shark-powerdetect-speed-vs-dyson-v16-piston-animal": {
@@ -38840,6 +38859,11 @@
           "status": "matched",
           "primary": "/images/articles/shark-powerdetect-speed-ia3241/02-auto-empty-station.webp",
           "hash": "sha256:edb6e0896b46b1b7b7961d5a49b31c1378157b0d33065427208413049518bbcc"
+        },
+        "03-handheld-upholstery.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/shark-powerdetect-speed-ia3241/03-handheld-upholstery.webp",
+          "hash": "sha256:98fa772a0277454983961bb2c3b1145e0428867e4362fb65c677c1bd1b8efb13"
         }
       }
     },

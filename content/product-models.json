@@ -8395,6 +8395,10 @@
       {
         "question": "Can IA1241 be upgraded later with the IA3241 dock?",
         "answer": "Compatibility was not verified from the official sources reviewed. Do not assume that sharing the PowerDetect Speed name means the dust cup, docking connection, charging system and parts are interchangeable. Buy the confirmed IA3241 package if auto-empty is essential."
+      },
+      {
+        "question": "Which replacement filters fit IA3241?",
+        "answer": "RTINGS identifies XPRMFIP1000 and XPMHIP1000, but the official US accessory pages checked on September 14, 2026 list IP-series models without explicitly naming IA3241. Compatibility remains unconfirmed here. Ask Shark support to match your exact model and part number before ordering."
       }
     ],
     "articles": [
@@ -8436,6 +8440,30 @@
       {
         "label": "SharkNinja official station photograph",
         "url": "https://s202.q4cdn.com/977000893/files/doc_multimedia/2026/4/1010952764/4d01acf0-7001-462a-b190-140c4c3c8de7.jpg"
+      },
+      {
+        "label": "Shark IA3241 US product support",
+        "url": "https://support.sharkninja.com/product/shark-powerdetect-speed-cordless-vacuum-clean-empty-system/01tHs00000DBavNIAT"
+      },
+      {
+        "label": "Shark official brand wordmark (SVG)",
+        "url": "https://www.sharkninja.com/on/demandware.static/-/Library-Sites-NA-SharkNinja-SharedLibrary/default/dw94b7d6de/footer-social-icon/shark-logo.svg"
+      },
+      {
+        "label": "Shark official handheld cleaning photograph",
+        "url": "https://assets.sharkninja.com/image/upload/dpr_1.0,f_auto,q_60/v1/storefront/products/IA3241/7_Carousel_Features/IA3241_Feature_Carousel_PDP2?_i=AH"
+      },
+      {
+        "label": "RTINGS IA3241 independent laboratory review — August 5, 2026",
+        "url": "https://www.rtings.com/vacuum/reviews/shark/powerdetect-speed"
+      },
+      {
+        "label": "Shark XPRMFIP1000 official compatibility list",
+        "url": "https://www.sharkninja.com/handheld-vacuum-pre-motor-filters/XPRMFIP1000.html"
+      },
+      {
+        "label": "Shark XPMHIP1000 official compatibility list",
+        "url": "https://www.sharkninja.com/handheld-vacuum-post-motor-filter/XPMHIP1000.html"
       }
     ],
     "imageSource": "https://assets.sharkninja.com/image/upload/dpr_1.0%2Cf_auto%2Cq_60/v1/storefront/products/IA3241/7_Carousel_Features/IA3241_Feature_Carousel_PDP?_i=AH",
