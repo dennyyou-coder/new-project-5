@@ -1205,7 +1205,7 @@
       }
     },
     "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1781,7 +1781,7 @@
       }
     },
     "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 855,
       "height": 800,
@@ -2352,7 +2352,7 @@
       }
     },
     "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 720,
       "height": 403,
@@ -2471,7 +2471,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2489,7 +2489,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5872,7 +5872,7 @@
       }
     },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5881,6 +5881,42 @@
       "quality": 100,
       "sourceHash": "sha256:607f7da5c68c199fda87df296f52231caef605d3be905aa40dec464901b40540",
       "outputHash": "sha256:d00c067451838a50833777f46347e6671c810e412e5191a3f40f27b3aa1b6553"
+    },
+    "/images/articles/steve-richman-milwaukee-growth/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56212,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3cbeeef77b2aaf1c2ec9d8b36b7bca9c7e3070cbaa4eb70513464289046d04e9",
+      "outputHash": "sha256:9db0d7a34e61ea7c94a36108aea4d41fb83a2b9e478699726fec0c9b04ca738b",
+      "mobile": {
+        "src": "/images/articles/steve-richman-milwaukee-growth/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16312,
+        "outputHash": "sha256:ee16b271864728ef0e94e85153ba4c33cdece3fe5a50f65f089ae866399abbf2"
+      }
+    },
+    "/images/articles/steve-richman-milwaukee-growth/02-career.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43436,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:25556cb4e01ba5c51c3d6c5a73d10ed597b6f3bb52f4c2c881971b782e8e8f02",
+      "outputHash": "sha256:4e4cef7fed500c6fd38eeb49d65fa7720e40708d0a75a8303213892649d0c7c0",
+      "mobile": {
+        "src": "/images/articles/steve-richman-milwaukee-growth/02-career-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20008,
+        "outputHash": "sha256:6912c9f34b0eef16a2bdf51e14b05a6f9c8757ff766c35e6c34b595b49f8515f"
+      }
     },
     "/images/articles/story-of-hard-floor-washers/01-cover.webp": {
       "role": "cover",
@@ -5991,7 +6027,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6009,7 +6045,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6027,7 +6063,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6099,7 +6135,7 @@
       }
     },
     "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 655,
@@ -36054,6 +36090,13 @@
         "/images/blog/stanley-black-decker-tools-outdoor-margin-bridge.webp"
       ]
     },
+    "steve-richman-milwaukee-growth": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/steve-richman-milwaukee-growth/01-cover.webp",
+      "body": [
+        "/images/articles/steve-richman-milwaukee-growth/02-career.webp"
+      ]
+    },
     "story-of-hard-floor-washers": {
       "budgetClass": "standard",
       "cover": "/images/articles/story-of-hard-floor-washers/01-cover.webp",
@@ -38962,6 +39005,20 @@
           "status": "matched",
           "primary": "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png",
           "hash": "sha256:607f7da5c68c199fda87df296f52231caef605d3be905aa40dec464901b40540"
+        }
+      }
+    },
+    "steve-richman-milwaukee-growth": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/steve-richman-milwaukee-growth/01-cover.webp",
+          "hash": "sha256:3cbeeef77b2aaf1c2ec9d8b36b7bca9c7e3070cbaa4eb70513464289046d04e9"
+        },
+        "02-career.webp": {
+          "status": "matched",
+          "primary": "/images/articles/steve-richman-milwaukee-growth/02-career.webp",
+          "hash": "sha256:25556cb4e01ba5c51c3d6c5a73d10ed597b6f3bb52f4c2c881971b782e8e8f02"
         }
       }
     },
