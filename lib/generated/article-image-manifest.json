@@ -1205,7 +1205,7 @@
       }
     },
     "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1781,7 +1781,7 @@
       }
     },
     "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 855,
       "height": 800,
@@ -2352,7 +2352,7 @@
       }
     },
     "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 720,
       "height": 403,
@@ -2471,7 +2471,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2489,7 +2489,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5872,7 +5872,7 @@
       }
     },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6027,7 +6027,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6045,7 +6045,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6063,7 +6063,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6135,7 +6135,7 @@
       }
     },
     "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 655,
