@@ -6355,53 +6355,107 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 46456,
+      "bytes": 162238,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:070626aa76ebebaa83120b977bf12cd03e45c343a250545820db13d625c41db1",
-      "outputHash": "sha256:23b1294ad888508a715d86fb05b1674c712d68c51eac5878c60293747be3f812",
+      "sourceHash": "sha256:7bd5b6683feae0ea5ad7ca2d4b7a29a08f749f4921f1afc82349000eb565d757",
+      "outputHash": "sha256:faebf82405eb7d2a8dc38b8c05e89341b9a1afc0427415a66106566e4e255c73",
       "mobile": {
         "src": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 20162,
-        "outputHash": "sha256:6a5722213c5db47257661658ec90dbb640ac0c589d4b901c672d0e608fd0f4f0"
+        "bytes": 56996,
+        "outputHash": "sha256:77faa1734871540438c46f87e0f016364e606dd7aef34a5bc05f57c2b1542a2d"
       }
     },
-    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-platforms.webp": {
+    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 62022,
+      "bytes": 75932,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:09cf8ed8be361902b38e35a428c132a0b33dce55bd64f2a74c33764e7cf7cf74",
-      "outputHash": "sha256:4897cd425c131c0651ef1fdecf498f786e1dd1b7178cbd0c095c59e96eb07956",
+      "sourceHash": "sha256:2acf1ef704fd8473c5198e217c89d3b13ff7138369489f1184c62ceabc66ee73",
+      "outputHash": "sha256:02274222b1a43c02918ccbd6fa7758f5295ef9e9c68e72f888f5065d79ee78cf",
       "mobile": {
-        "src": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-platforms-800.webp",
+        "src": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 26986,
-        "outputHash": "sha256:177a2018d119e457f9cf8e0f4b88086451cb69cf26b235064e03ed1083638c20"
+        "bytes": 32374,
+        "outputHash": "sha256:a1579961df7ab0e818e06ae2b4b37b892713c6af8c2d323e71459b7abb1658e9"
       }
     },
-    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-growth.webp": {
+    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 38836,
+      "bytes": 165662,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:4479f4ab8a9886dbb96c1de17262266e5ea0d4695adc1b095d9ee3b894b19cc2",
-      "outputHash": "sha256:23965d9eb9437e061a7af57b20fef6a5eef1934543399da58026d2fce83b9d7a",
+      "sourceHash": "sha256:410bab2ac07fdcdf0cad17d1a7c552505caea88e3597f7c4b89636ea2091d9a9",
+      "outputHash": "sha256:3b4bc2bca3e34f0a5f41322d65796a2200231f41eb3f49c3464d0ff74eedb4b7",
       "mobile": {
-        "src": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-growth-800.webp",
+        "src": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 16242,
-        "outputHash": "sha256:5add058ac5001eb7a77e47e1e16dd16ee66e49a338946fde96bd546db873ccfb"
+        "bytes": 59056,
+        "outputHash": "sha256:25a4b321fc3de2f835ae88893f5dcdf6205870f6ed45fda29ba065d8ac9a63e7"
+      }
+    },
+    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 104290,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5dc850cb8820cfcf9d8b95ea4690941da5af3fe0988d5e93d5a37634598e352e",
+      "outputHash": "sha256:48472ae17251bff885ad3b596a8175c83ce8aeb631ffa6511ee41d2a1cdc910f",
+      "mobile": {
+        "src": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 41944,
+        "outputHash": "sha256:2859b094d95d80a2c89e3a9ee15cff63076207e198d17dd19a529e5e7a91436a"
+      }
+    },
+    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 78500,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:955cc2b53d1ebc4544ea4f90a5fa64744de8323a00cfa8f91e14eabdc031d4af",
+      "outputHash": "sha256:cc93d14d21325ab2846df1122060ce23fdb0bbfebac238bf7b66ccd90c8de4df",
+      "mobile": {
+        "src": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31852,
+        "outputHash": "sha256:b847c9fad0f6c2421125306c32f3ef926f5489cb3ca7470b2d1eb39f8fe4a431"
+      }
+    },
+    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 59258,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8db13b3aa9325078afe598259aec18f9f1d3a2f5244c9844d6b2359ef7cc3072",
+      "outputHash": "sha256:f0c3f9e46d2018d80b58eea3a7f83d753f6180351e4547c05d1edf1a93ee98da",
+      "mobile": {
+        "src": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25258,
+        "outputHash": "sha256:fd16c1f2bc0df941af1229f5d620e7d9791f684832f94d28952778b6bb29c7c3"
       }
     },
     "/images/articles/uwant-resilience-in-china-cleaning-appliances/01-cover.webp": {
@@ -36338,8 +36392,11 @@
       "budgetClass": "standard",
       "cover": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/01-cover.webp",
       "body": [
-        "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-platforms.webp",
-        "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-growth.webp"
+        "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp",
+        "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp",
+        "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp",
+        "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp",
+        "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp"
       ]
     },
     "tti-product-direction": {
@@ -39183,17 +39240,32 @@
         "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/01-cover.webp",
-          "hash": "sha256:070626aa76ebebaa83120b977bf12cd03e45c343a250545820db13d625c41db1"
+          "hash": "sha256:7bd5b6683feae0ea5ad7ca2d4b7a29a08f749f4921f1afc82349000eb565d757"
         },
-        "02-platforms.webp": {
+        "02-timeline.webp": {
           "status": "matched",
-          "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-platforms.webp",
-          "hash": "sha256:09cf8ed8be361902b38e35a428c132a0b33dce55bd64f2a74c33764e7cf7cf74"
+          "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp",
+          "hash": "sha256:2acf1ef704fd8473c5198e217c89d3b13ff7138369489f1184c62ceabc66ee73"
         },
-        "03-growth.webp": {
+        "03-trades.webp": {
           "status": "matched",
-          "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-growth.webp",
-          "hash": "sha256:4479f4ab8a9886dbb96c1de17262266e5ea0d4695adc1b095d9ee3b894b19cc2"
+          "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp",
+          "hash": "sha256:410bab2ac07fdcdf0cad17d1a7c552505caea88e3597f7c4b89636ea2091d9a9"
+        },
+        "04-platforms.webp": {
+          "status": "matched",
+          "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp",
+          "hash": "sha256:5dc850cb8820cfcf9d8b95ea4690941da5af3fe0988d5e93d5a37634598e352e"
+        },
+        "05-floorcare.webp": {
+          "status": "matched",
+          "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp",
+          "hash": "sha256:955cc2b53d1ebc4544ea4f90a5fa64744de8323a00cfa8f91e14eabdc031d4af"
+        },
+        "06-performance.webp": {
+          "status": "matched",
+          "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp",
+          "hash": "sha256:8db13b3aa9325078afe598259aec18f9f1d3a2f5244c9844d6b2359ef7cc3072"
         }
       }
     },
