@@ -2457,71 +2457,71 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 48406,
+      "bytes": 91472,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:8f72edd03e4e083925561306c8b289039b21de513d793b5f55bac2197c49a30e",
-      "outputHash": "sha256:6bfc875a5562defa53d68b4c39e664a8382fb7f1fddeb7c5c61865476fe2685a",
+      "sourceHash": "sha256:b662e81674336a647546c3ceca13da44b4314d4ae84b6c7bf899502e0928c736",
+      "outputHash": "sha256:294576fa42fbc909706aba4ae263271e832369dde3693b5723ae46b4332a533e",
       "mobile": {
         "src": "/images/articles/groupe-seb-global-household-business/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 22522,
-        "outputHash": "sha256:ec246be6264cdf333bb2e2ce2c0d2ccb9c09a77b2bef24d978cef3388fc51807"
+        "bytes": 36224,
+        "outputHash": "sha256:ae0a74089a3393aba34ef51dad4e63903b30acef7e4306228956388d3a5035c7"
       }
     },
-    "/images/articles/groupe-seb-global-household-business/02-acquisition-timeline.webp": {
+    "/images/articles/groupe-seb-global-household-business/02-brand-product-map.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 57876,
+      "bytes": 84342,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:2ecde0e2e6ba4c0a40505781294e078e113f3f8ecf4d20761c163ecd7c47fe8d",
-      "outputHash": "sha256:54a57176191a820817aeb767f035ac0610148d6f76eacf9f19f1ed5b46988474",
+      "sourceHash": "sha256:37777d9991d6e598afd129d473d2be97c1f8fa3403d1fb418ba3aca2a81a317c",
+      "outputHash": "sha256:eb472a084c26ac9fb79e0e2ef38dc25439fa7691f41d79b6df67c1cb3016ab6e",
       "mobile": {
-        "src": "/images/articles/groupe-seb-global-household-business/02-acquisition-timeline-800.webp",
+        "src": "/images/articles/groupe-seb-global-household-business/02-brand-product-map-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 25898,
-        "outputHash": "sha256:2b937d90ca0f3cd98fffa80f5b7972d8731bd6a565a383454222fcfea830083f"
+        "bytes": 34868,
+        "outputHash": "sha256:61ebe12bc8773be0d26cd973bebf38d54afa846b278074dec3a4c1c63ce74532"
       }
     },
-    "/images/articles/groupe-seb-global-household-business/03-x-clean-10.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 945,
-      "height": 945,
-      "bytes": 22972,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1e39daef1a5fab6e38d0609e66eede2b34b510762d3c8c99d512ac8ddd4a87bb",
-      "outputHash": "sha256:e10265c8b7d8771c0d0599ac8069261596cffe599d0939c1b3aa604679abb0bf",
-      "mobile": {
-        "src": "/images/articles/groupe-seb-global-household-business/03-x-clean-10-800.webp",
-        "width": 800,
-        "height": 800,
-        "bytes": 16496,
-        "outputHash": "sha256:1fee8ce4fc5fa883cb154d5ec8c79b65f1603cdbfa49e47296770bf355d8e350"
-      }
-    },
-    "/images/articles/groupe-seb-global-household-business/04-profit-margin.webp": {
+    "/images/articles/groupe-seb-global-household-business/03-professional-coffee.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 38214,
+      "bytes": 117672,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:5a30173f66271689166ff1705c073a3db085a0776eeea3de0d5dbf19adf3563c",
-      "outputHash": "sha256:098d58d6d7a681a26e8646c96b6fae604dc59292b6e2a631c6e710cffd14b515",
+      "sourceHash": "sha256:fb12ef125f7467570270fce50e9e545364264624a39e1eaa88df55f5ae23043d",
+      "outputHash": "sha256:825c9188ed963c68c82c4a2af9dc62ed8c617dabfa5fc01ac1ed3636ed889d27",
       "mobile": {
-        "src": "/images/articles/groupe-seb-global-household-business/04-profit-margin-800.webp",
+        "src": "/images/articles/groupe-seb-global-household-business/03-professional-coffee-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 17214,
-        "outputHash": "sha256:33c58bcd962f8365af14db21a42e531edfb0a9049621dc01602761febce5c7dc"
+        "bytes": 41704,
+        "outputHash": "sha256:c9aa4d3d01ba061ad5210499ec0379f10e9fac8d6eb8cfecde1a22c3618fd922"
+      }
+    },
+    "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 104956,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ca1daeb3928c1256672da5ba3af3a90b17bc1426624bce7d9ec1d2756dafa7e2",
+      "outputHash": "sha256:1d82cbeb08f2310b5afb9491ec1f914eac54d24ee6b3d1525021450f484ab766",
+      "mobile": {
+        "src": "/images/articles/groupe-seb-global-household-business/04-china-cooperation-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 45366,
+        "outputHash": "sha256:675cc26f5c3fe20606cc9aae49dc9c5a5ffdf60e18a12f27efbb51b0a7c1c834"
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp": {
@@ -34417,9 +34417,9 @@
       "budgetClass": "standard",
       "cover": "/images/articles/groupe-seb-global-household-business/01-cover.webp",
       "body": [
-        "/images/articles/groupe-seb-global-household-business/02-acquisition-timeline.webp",
-        "/images/articles/groupe-seb-global-household-business/03-x-clean-10.webp",
-        "/images/articles/groupe-seb-global-household-business/04-profit-margin.webp"
+        "/images/articles/groupe-seb-global-household-business/02-brand-product-map.webp",
+        "/images/articles/groupe-seb-global-household-business/03-professional-coffee.webp",
+        "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp"
       ]
     },
     "hamilton-beach-2018-annual-report-faithful-translation": {
@@ -38233,22 +38233,22 @@
         "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/groupe-seb-global-household-business/01-cover.webp",
-          "hash": "sha256:8f72edd03e4e083925561306c8b289039b21de513d793b5f55bac2197c49a30e"
+          "hash": "sha256:b662e81674336a647546c3ceca13da44b4314d4ae84b6c7bf899502e0928c736"
         },
-        "02-acquisition-timeline.webp": {
+        "02-brand-product-map.webp": {
           "status": "matched",
-          "primary": "/images/articles/groupe-seb-global-household-business/02-acquisition-timeline.webp",
-          "hash": "sha256:2ecde0e2e6ba4c0a40505781294e078e113f3f8ecf4d20761c163ecd7c47fe8d"
+          "primary": "/images/articles/groupe-seb-global-household-business/02-brand-product-map.webp",
+          "hash": "sha256:37777d9991d6e598afd129d473d2be97c1f8fa3403d1fb418ba3aca2a81a317c"
         },
-        "03-x-clean-10.jpeg": {
+        "03-professional-coffee.webp": {
           "status": "matched",
-          "primary": "/images/articles/groupe-seb-global-household-business/03-x-clean-10.webp",
-          "hash": "sha256:1e39daef1a5fab6e38d0609e66eede2b34b510762d3c8c99d512ac8ddd4a87bb"
+          "primary": "/images/articles/groupe-seb-global-household-business/03-professional-coffee.webp",
+          "hash": "sha256:fb12ef125f7467570270fce50e9e545364264624a39e1eaa88df55f5ae23043d"
         },
-        "04-profit-margin.webp": {
+        "04-china-cooperation.webp": {
           "status": "matched",
-          "primary": "/images/articles/groupe-seb-global-household-business/04-profit-margin.webp",
-          "hash": "sha256:5a30173f66271689166ff1705c073a3db085a0776eeea3de0d5dbf19adf3563c"
+          "primary": "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp",
+          "hash": "sha256:ca1daeb3928c1256672da5ba3af3a90b17bc1426624bce7d9ec1d2756dafa7e2"
         }
       }
     },
