@@ -1205,7 +1205,7 @@
       }
     },
     "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1781,7 +1781,7 @@
       }
     },
     "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 855,
       "height": 800,
@@ -2352,7 +2352,7 @@
       }
     },
     "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 720,
       "height": 403,
@@ -2452,6 +2452,78 @@
         "outputHash": "sha256:c09c9704b71be1f6ea4a1811ab0dfae4cac80890fcaa7d171593528e7835e909"
       }
     },
+    "/images/articles/groupe-seb-global-household-business/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 48406,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8f72edd03e4e083925561306c8b289039b21de513d793b5f55bac2197c49a30e",
+      "outputHash": "sha256:6bfc875a5562defa53d68b4c39e664a8382fb7f1fddeb7c5c61865476fe2685a",
+      "mobile": {
+        "src": "/images/articles/groupe-seb-global-household-business/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22522,
+        "outputHash": "sha256:ec246be6264cdf333bb2e2ce2c0d2ccb9c09a77b2bef24d978cef3388fc51807"
+      }
+    },
+    "/images/articles/groupe-seb-global-household-business/02-acquisition-timeline.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 57876,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:2ecde0e2e6ba4c0a40505781294e078e113f3f8ecf4d20761c163ecd7c47fe8d",
+      "outputHash": "sha256:54a57176191a820817aeb767f035ac0610148d6f76eacf9f19f1ed5b46988474",
+      "mobile": {
+        "src": "/images/articles/groupe-seb-global-household-business/02-acquisition-timeline-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25898,
+        "outputHash": "sha256:2b937d90ca0f3cd98fffa80f5b7972d8731bd6a565a383454222fcfea830083f"
+      }
+    },
+    "/images/articles/groupe-seb-global-household-business/03-x-clean-10.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 945,
+      "height": 945,
+      "bytes": 22972,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1e39daef1a5fab6e38d0609e66eede2b34b510762d3c8c99d512ac8ddd4a87bb",
+      "outputHash": "sha256:e10265c8b7d8771c0d0599ac8069261596cffe599d0939c1b3aa604679abb0bf",
+      "mobile": {
+        "src": "/images/articles/groupe-seb-global-household-business/03-x-clean-10-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 16496,
+        "outputHash": "sha256:1fee8ce4fc5fa883cb154d5ec8c79b65f1603cdbfa49e47296770bf355d8e350"
+      }
+    },
+    "/images/articles/groupe-seb-global-household-business/04-profit-margin.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38214,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5a30173f66271689166ff1705c073a3db085a0776eeea3de0d5dbf19adf3563c",
+      "outputHash": "sha256:098d58d6d7a681a26e8646c96b6fae604dc59292b6e2a631c6e710cffd14b515",
+      "mobile": {
+        "src": "/images/articles/groupe-seb-global-household-business/04-profit-margin-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17214,
+        "outputHash": "sha256:33c58bcd962f8365af14db21a42e531edfb0a9049621dc01602761febce5c7dc"
+      }
+    },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -2471,7 +2543,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2489,7 +2561,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5872,7 +5944,7 @@
       }
     },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5901,7 +5973,7 @@
       }
     },
     "/images/articles/steve-richman-milwaukee-growth/02-career.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6027,7 +6099,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6045,7 +6117,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6063,7 +6135,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6135,7 +6207,7 @@
       }
     },
     "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 655,
@@ -6369,7 +6441,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6387,7 +6459,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6405,7 +6477,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6423,7 +6495,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6441,7 +6513,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -34341,6 +34413,15 @@
         "/images/insights/groupe-seb-2018-annual-report-signals-image-047.jpg"
       ]
     },
+    "groupe-seb-global-household-business": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/groupe-seb-global-household-business/01-cover.webp",
+      "body": [
+        "/images/articles/groupe-seb-global-household-business/02-acquisition-timeline.webp",
+        "/images/articles/groupe-seb-global-household-business/03-x-clean-10.webp",
+        "/images/articles/groupe-seb-global-household-business/04-profit-margin.webp"
+      ]
+    },
     "hamilton-beach-2018-annual-report-faithful-translation": {
       "budgetClass": "standard",
       "cover": "/images/insights/hamilton-beach-2018-annual-report-faithful-translation-image-01.png",
@@ -38144,6 +38225,30 @@
           "status": "matched",
           "primary": "/images/articles/eureka-floorshine-830/01-cover.webp",
           "hash": "sha256:3034fddd096c4599c7b4338b8fdca976560f739a58327fe331d811a583d2a2f2"
+        }
+      }
+    },
+    "groupe-seb-global-household-business": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/groupe-seb-global-household-business/01-cover.webp",
+          "hash": "sha256:8f72edd03e4e083925561306c8b289039b21de513d793b5f55bac2197c49a30e"
+        },
+        "02-acquisition-timeline.webp": {
+          "status": "matched",
+          "primary": "/images/articles/groupe-seb-global-household-business/02-acquisition-timeline.webp",
+          "hash": "sha256:2ecde0e2e6ba4c0a40505781294e078e113f3f8ecf4d20761c163ecd7c47fe8d"
+        },
+        "03-x-clean-10.jpeg": {
+          "status": "matched",
+          "primary": "/images/articles/groupe-seb-global-household-business/03-x-clean-10.webp",
+          "hash": "sha256:1e39daef1a5fab6e38d0609e66eede2b34b510762d3c8c99d512ac8ddd4a87bb"
+        },
+        "04-profit-margin.webp": {
+          "status": "matched",
+          "primary": "/images/articles/groupe-seb-global-household-business/04-profit-margin.webp",
+          "hash": "sha256:5a30173f66271689166ff1705c073a3db085a0776eeea3de0d5dbf19adf3563c"
         }
       }
     },
