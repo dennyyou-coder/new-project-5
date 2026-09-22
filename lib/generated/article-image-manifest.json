@@ -1205,7 +1205,7 @@
       }
     },
     "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1781,7 +1781,7 @@
       }
     },
     "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 855,
       "height": 800,
@@ -2352,7 +2352,7 @@
       }
     },
     "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 720,
       "height": 403,
@@ -2471,7 +2471,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/02-brand-product-map.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2489,7 +2489,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/03-professional-coffee.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2507,7 +2507,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2543,7 +2543,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2561,7 +2561,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4257,6 +4257,78 @@
         "outputHash": "sha256:c96d56b8010b57ada12eb5df6ec21e99a6499a807357e451178bae70791150a9"
       }
     },
+    "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 94956,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1c11418d049fc562a3a16ca6194825ce11ff75f829b4bcb2637c3a373cf52b47",
+      "outputHash": "sha256:2b3e479b987dd42c0824c9d39d31beddff4f85d9db366523c63e7dd81f99bb65",
+      "mobile": {
+        "src": "/images/articles/philips-health-technology-versuni-home-appliances/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 38748,
+        "outputHash": "sha256:dfcd7b360dbeb4fa45395a3c9cc23f99ce3f610989d8a1280ab464098ace0efc"
+      }
+    },
+    "/images/articles/philips-health-technology-versuni-home-appliances/02-manufacturing.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 137974,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3c02caf32e670a9b32f18c675dae79bc4b903bf29938d509e21df95ff5d50d83",
+      "outputHash": "sha256:f633c84353dddb1d84cfd86b16959eb94173f00c7564177ca01cb01d273dfc3a",
+      "mobile": {
+        "src": "/images/articles/philips-health-technology-versuni-home-appliances/02-manufacturing-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 51852,
+        "outputHash": "sha256:57c70f6bb89802ce3bbd551b5596bd451094745dbac4243b389db2c8811e04dc"
+      }
+    },
+    "/images/articles/philips-health-technology-versuni-home-appliances/03-coffee.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 90716,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:d96f20ffef8ca635b1145df9450c2b4f3146fc9343116bd4fd437363b0422e3a",
+      "outputHash": "sha256:4e5fc886cd843ef5db81babe9be0cb1104c859060e6c3177aec83f1195b7a744",
+      "mobile": {
+        "src": "/images/articles/philips-health-technology-versuni-home-appliances/03-coffee-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 37042,
+        "outputHash": "sha256:eb73d8fc67e5b37fc470ee4fda78ada8e2f512ecdff804fff1875543355c9b79"
+      }
+    },
+    "/images/articles/philips-health-technology-versuni-home-appliances/04-floorcare.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 71566,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b90f31febf5a7883c9439f4b32637120bc689fad45e7c672c7d0021b364ce975",
+      "outputHash": "sha256:44e54e424704274f0984abffd96aff3f60a986e1b04b45ac2c888e63777dbbf5",
+      "mobile": {
+        "src": "/images/articles/philips-health-technology-versuni-home-appliances/04-floorcare-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30098,
+        "outputHash": "sha256:9fef0dee915cf8ca96a95be7d55ed51e2f1e6b4b0ebdb22e6d074fca95937887"
+      }
+    },
     "/images/articles/pool-robotics-new-competitive-table/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -5944,7 +6016,7 @@
       }
     },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5973,7 +6045,7 @@
       }
     },
     "/images/articles/steve-richman-milwaukee-growth/02-career.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6099,7 +6171,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6117,7 +6189,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6135,7 +6207,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6207,7 +6279,7 @@
       }
     },
     "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 655,
@@ -6441,7 +6513,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6459,7 +6531,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6477,7 +6549,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6495,7 +6567,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6513,7 +6585,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -35333,6 +35405,15 @@
       "cover": "/images/insights/one-power-strategy-in-small-appliances-cover.jpg",
       "body": []
     },
+    "philips-health-technology-versuni-home-appliances": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp",
+      "body": [
+        "/images/articles/philips-health-technology-versuni-home-appliances/02-manufacturing.webp",
+        "/images/articles/philips-health-technology-versuni-home-appliances/03-coffee.webp",
+        "/images/articles/philips-health-technology-versuni-home-appliances/04-floorcare.webp"
+      ]
+    },
     "pool-and-lawn-robots-self-maintenance": {
       "budgetClass": "standard",
       "cover": "/images/insights/pool-and-lawn-robots-self-maintenance-cover.jpg",
@@ -38762,6 +38843,30 @@
           "status": "matched",
           "primary": "/images/articles/ninebot-navimow-vs-roborock/03-overlap-next.webp",
           "hash": "sha256:8e410bc23e4d762608ca58380d4d79f7168e20d3d4c6f1c356c72cfe6ecde8f3"
+        }
+      }
+    },
+    "philips-health-technology-versuni-home-appliances": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp",
+          "hash": "sha256:1c11418d049fc562a3a16ca6194825ce11ff75f829b4bcb2637c3a373cf52b47"
+        },
+        "02-manufacturing.webp": {
+          "status": "matched",
+          "primary": "/images/articles/philips-health-technology-versuni-home-appliances/02-manufacturing.webp",
+          "hash": "sha256:3c02caf32e670a9b32f18c675dae79bc4b903bf29938d509e21df95ff5d50d83"
+        },
+        "03-coffee.webp": {
+          "status": "matched",
+          "primary": "/images/articles/philips-health-technology-versuni-home-appliances/03-coffee.webp",
+          "hash": "sha256:d96f20ffef8ca635b1145df9450c2b4f3146fc9343116bd4fd437363b0422e3a"
+        },
+        "04-floorcare.webp": {
+          "status": "matched",
+          "primary": "/images/articles/philips-health-technology-versuni-home-appliances/04-floorcare.webp",
+          "hash": "sha256:b90f31febf5a7883c9439f4b32637120bc689fad45e7c672c7d0021b364ce975"
         }
       }
     },
