@@ -4257,6 +4257,78 @@
         "outputHash": "sha256:c96d56b8010b57ada12eb5df6ec21e99a6499a807357e451178bae70791150a9"
       }
     },
+    "/images/articles/ninebot-smart-mobility-navimow/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 68010,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:bb4636711f2f07feea7bccc4fd60d2f5efbc6efe8e388216527fe50a4726df1b",
+      "outputHash": "sha256:fca9b16fc83621842ce0539e521655a1102ecb0afe6a5ce07aad4d4c63ad3b70",
+      "mobile": {
+        "src": "/images/articles/ninebot-smart-mobility-navimow/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 28390,
+        "outputHash": "sha256:5c0d8e12c077ab8619096f55290b4487e66c91fb28a48a21c899a5dd9617470f"
+      }
+    },
+    "/images/articles/ninebot-smart-mobility-navimow/02-founders.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 64820,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:dc10f2f5787ac79bd0aebfbbb2076b1a02948f1e1962409c71f9e7a943bf1c22",
+      "outputHash": "sha256:43b11903ae2efe851f2d0e9a054aee8fabfb3b5c61c8815f972396b0204aa494",
+      "mobile": {
+        "src": "/images/articles/ninebot-smart-mobility-navimow/02-founders-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26526,
+        "outputHash": "sha256:89b466e865156a8c13d285be10026b7b0478702beb8052bafba29e671e19d0d1"
+      }
+    },
+    "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 143864,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:99c07bfd9be4a850a1054244437838c8f4212e6bf4af98200ec3c2f00b2aca16",
+      "outputHash": "sha256:b55daca466b5a557a44a25b1283dd034099ed7c52981835cbffb54aa28bf5e9b",
+      "mobile": {
+        "src": "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 50248,
+        "outputHash": "sha256:1f313437af17b23b3839159286d2d268e5ec92a1c6a233ab1f92fc274eb21736"
+      }
+    },
+    "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 102838,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:28399fd18da8c776f69dca0680b75b8e57da8ef1ffbee777df26673c92d4a5a8",
+      "outputHash": "sha256:938116bcd66a10338e47c4a99a861c3c18dd162d5055553fd0d011792f62c2cc",
+      "mobile": {
+        "src": "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 39410,
+        "outputHash": "sha256:f14e019b00e83cd82b378eb8579b8c0cfe28e2e667aeebb31f413eb8558336a3"
+      }
+    },
     "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -35383,6 +35455,15 @@
         "/images/articles/ninebot-navimow-vs-roborock/03-overlap-next.webp"
       ]
     },
+    "ninebot-smart-mobility-navimow": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ninebot-smart-mobility-navimow/01-cover.webp",
+      "body": [
+        "/images/articles/ninebot-smart-mobility-navimow/02-founders.webp",
+        "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue.webp",
+        "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp"
+      ]
+    },
     "north-america-pool-industry-market": {
       "budgetClass": "standard",
       "cover": "/images/blog/north-america-pool-industry-cover.webp",
@@ -38843,6 +38924,30 @@
           "status": "matched",
           "primary": "/images/articles/ninebot-navimow-vs-roborock/03-overlap-next.webp",
           "hash": "sha256:8e410bc23e4d762608ca58380d4d79f7168e20d3d4c6f1c356c72cfe6ecde8f3"
+        }
+      }
+    },
+    "ninebot-smart-mobility-navimow": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-smart-mobility-navimow/01-cover.webp",
+          "hash": "sha256:bb4636711f2f07feea7bccc4fd60d2f5efbc6efe8e388216527fe50a4726df1b"
+        },
+        "02-founders.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-smart-mobility-navimow/02-founders.webp",
+          "hash": "sha256:dc10f2f5787ac79bd0aebfbbb2076b1a02948f1e1962409c71f9e7a943bf1c22"
+        },
+        "03-navimow-revenue.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue.webp",
+          "hash": "sha256:99c07bfd9be4a850a1054244437838c8f4212e6bf4af98200ec3c2f00b2aca16"
+        },
+        "04-h5-pro.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp",
+          "hash": "sha256:28399fd18da8c776f69dca0680b75b8e57da8ef1ffbee777df26673c92d4a5a8"
         }
       }
     },
