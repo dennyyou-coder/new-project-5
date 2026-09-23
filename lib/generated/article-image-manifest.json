@@ -4329,6 +4329,60 @@
         "outputHash": "sha256:f14e019b00e83cd82b378eb8579b8c0cfe28e2e667aeebb31f413eb8558336a3"
       }
     },
+    "/images/articles/ninebot-smart-mobility-navimow/05-product-portfolio.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 107586,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5af80bb3d61fb4c093a4afd14c70256a4803038d27f4dcb0ab0967cb7ab1b97c",
+      "outputHash": "sha256:669d4b05037679fb9eeb77fb2db6b2b22d76a4d29739af39c6ce6d718a015d80",
+      "mobile": {
+        "src": "/images/articles/ninebot-smart-mobility-navimow/05-product-portfolio-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 39778,
+        "outputHash": "sha256:6203a31bd74d5458c143ab0ccb245a3c6f2e816d5d6b69f2dad002b1f7c86bae"
+      }
+    },
+    "/images/articles/ninebot-smart-mobility-navimow/06-manufacturing.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 180348,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:80625bfc6d6df2c3d60739d23229233a3188108900169fa2ac2b98b0d5d3ba7d",
+      "outputHash": "sha256:1493e338c6c8e31c2f7cc9a3daf77c0f18efe33360a5d71eda77d3816c96745f",
+      "mobile": {
+        "src": "/images/articles/ninebot-smart-mobility-navimow/06-manufacturing-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 75748,
+        "outputHash": "sha256:37ac99998de35c9ac8a23c689f5552450d1011ddcab98be954c82ec60641ac3a"
+      }
+    },
+    "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 147806,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e557286f99fde24952001ca64784fe45ae04d6f6d8f698bfb2b83330f4bdd82c",
+      "outputHash": "sha256:69a7004d717b795f012709e9912db6087144d5801d343cb7bb705acd3b3bb64b",
+      "mobile": {
+        "src": "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 45480,
+        "outputHash": "sha256:95452232b70bf5860b9d9857909f54336f37122f11d912e13e073a72f269d0bb"
+      }
+    },
     "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -35460,7 +35514,10 @@
       "cover": "/images/articles/ninebot-smart-mobility-navimow/01-cover.webp",
       "body": [
         "/images/articles/ninebot-smart-mobility-navimow/02-founders.webp",
+        "/images/articles/ninebot-smart-mobility-navimow/05-product-portfolio.webp",
+        "/images/articles/ninebot-smart-mobility-navimow/06-manufacturing.webp",
         "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue.webp",
+        "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial.webp",
         "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp"
       ]
     },
@@ -38948,6 +39005,21 @@
           "status": "matched",
           "primary": "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp",
           "hash": "sha256:28399fd18da8c776f69dca0680b75b8e57da8ef1ffbee777df26673c92d4a5a8"
+        },
+        "05-product-portfolio.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-smart-mobility-navimow/05-product-portfolio.webp",
+          "hash": "sha256:5af80bb3d61fb4c093a4afd14c70256a4803038d27f4dcb0ab0967cb7ab1b97c"
+        },
+        "06-manufacturing.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-smart-mobility-navimow/06-manufacturing.webp",
+          "hash": "sha256:80625bfc6d6df2c3d60739d23229233a3188108900169fa2ac2b98b0d5d3ba7d"
+        },
+        "07-residential-commercial.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial.webp",
+          "hash": "sha256:e557286f99fde24952001ca64784fe45ae04d6f6d8f698bfb2b83330f4bdd82c"
         }
       }
     },
