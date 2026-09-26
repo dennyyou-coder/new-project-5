@@ -6811,6 +6811,96 @@
         "outputHash": "sha256:fd16c1f2bc0df941af1229f5d620e7d9791f684832f94d28952778b6bb29c7c3"
       }
     },
+    "/images/articles/us-appliance-tool-retailers/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 94172,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3dd3365a3f0dee64d5cf3cc8adde4d55a764c090b2492828e0ae634917f78926",
+      "outputHash": "sha256:17345c9941e9a06ed9f15327f4c474c8e50a4d63d66e28d793b14bd7bb3c821c",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 34286,
+        "outputHash": "sha256:5e698afdace9886652097c495798b755cf029830ded9a650cbd72564c58b7da7"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/02-appliance-sales.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 50976,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:52db69524347ba93dcf416a90ff4e802b5f712ab85d5740c24f2f2daf15ac6c6",
+      "outputHash": "sha256:9e83740077d2b9b6edf1532fc3cf76f9d2669538e21db59da080f752a5e21bec",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/02-appliance-sales-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22808,
+        "outputHash": "sha256:1913e1c08990d79a84ad5435e8a0fdb583604f36746553cdf13daada59e85760"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/03-walmart.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1000,
+      "height": 560,
+      "bytes": 65510,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b41a8607c5c089f7cb17340274bba6dcd78f363403691468d998eb84a2e95c48",
+      "outputHash": "sha256:8370c949c742e84a90365743df833f094f05db4800487fad492324e8facf83b0",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/03-walmart-800.webp",
+        "width": 800,
+        "height": 448,
+        "bytes": 33874,
+        "outputHash": "sha256:7f04b2b68b9184fac92ad5e4f90ff24199d3b03bea47526b3e03a86b902c1b8a"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/04-harbor-freight.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 820,
+      "height": 460,
+      "bytes": 49050,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ff1a02101d7977440100ecde2e77c398c73fb5586b33f7099b5d5f758689f1b3",
+      "outputHash": "sha256:7b06ada528dae85a0924a03d1b66a6894ade3d919be9d6297f59c8c37c91c091",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/04-harbor-freight-800.webp",
+        "width": 800,
+        "height": 449,
+        "bytes": 36026,
+        "outputHash": "sha256:ab17a67ebdd1f404b412c0473549f253d833f7f133235a9641fb8ec84659c24a"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/05-independent-networks.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 55454,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:bd5162e876fa5f79c24001b2d25d0f49bf6fd281abadce7392717f97d1a8f53e",
+      "outputHash": "sha256:47eb4a68b275a1d1fa398e980726646d047e65bf835f4c6eeae36e6fdc61dc67",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/05-independent-networks-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25476,
+        "outputHash": "sha256:99cb34ccd182cf4502a3fb73dc200f46706b6d5ffa6db5f93cce15a4e1421051"
+      }
+    },
     "/images/articles/uwant-resilience-in-china-cleaning-appliances/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -36824,6 +36914,16 @@
         "/images/blog/underwater-lidar-for-robotic-pool-cleaners-image-004-en-v2.webp"
       ]
     },
+    "us-appliance-tool-retailers": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/us-appliance-tool-retailers/01-cover.webp",
+      "body": [
+        "/images/articles/us-appliance-tool-retailers/02-appliance-sales.webp",
+        "/images/articles/us-appliance-tool-retailers/03-walmart.webp",
+        "/images/articles/us-appliance-tool-retailers/04-harbor-freight.webp",
+        "/images/articles/us-appliance-tool-retailers/05-independent-networks.webp"
+      ]
+    },
     "uwant-resilience-in-china-cleaning-appliances": {
       "budgetClass": "standard",
       "cover": "/images/articles/uwant-resilience-in-china-cleaning-appliances/01-cover.webp",
@@ -39775,6 +39875,35 @@
           "status": "matched",
           "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp",
           "hash": "sha256:8db13b3aa9325078afe598259aec18f9f1d3a2f5244c9844d6b2359ef7cc3072"
+        }
+      }
+    },
+    "us-appliance-tool-retailers": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/01-cover.webp",
+          "hash": "sha256:3dd3365a3f0dee64d5cf3cc8adde4d55a764c090b2492828e0ae634917f78926"
+        },
+        "02-appliance-sales.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/02-appliance-sales.webp",
+          "hash": "sha256:52db69524347ba93dcf416a90ff4e802b5f712ab85d5740c24f2f2daf15ac6c6"
+        },
+        "03-walmart.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/03-walmart.webp",
+          "hash": "sha256:b41a8607c5c089f7cb17340274bba6dcd78f363403691468d998eb84a2e95c48"
+        },
+        "04-harbor-freight.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/04-harbor-freight.webp",
+          "hash": "sha256:ff1a02101d7977440100ecde2e77c398c73fb5586b33f7099b5d5f758689f1b3"
+        },
+        "05-independent-networks.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/05-independent-networks.webp",
+          "hash": "sha256:bd5162e876fa5f79c24001b2d25d0f49bf6fd281abadce7392717f97d1a8f53e"
         }
       }
     },
