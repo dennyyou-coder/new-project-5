@@ -1204,8 +1204,8 @@
         "outputHash": "sha256:10ff83cbed2c162d80be391ef57e7ccf53a8d0b593e7f108deb237caa55da485"
       }
     },
-    "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
-      "role": "body",
+   "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1780,8 +1780,8 @@
         "outputHash": "sha256:9f19d34eb9560dc5f7a1508fe8df5f5ad41b5f7278cd698efd4b6e76db6e0c0a"
       }
     },
-    "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
-      "role": "body",
+   "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 855,
       "height": 800,
@@ -2351,8 +2351,8 @@
         "outputHash": "sha256:faf653d18f4e2028cd751ca8434192a682ee0a92059614da158073c6e0400042"
       }
     },
-    "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
-      "role": "body",
+   "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 720,
       "height": 403,
@@ -2470,8 +2470,8 @@
         "outputHash": "sha256:ae0a74089a3393aba34ef51dad4e63903b30acef7e4306228956388d3a5035c7"
       }
     },
-    "/images/articles/groupe-seb-global-household-business/02-brand-product-map.webp": {
-      "role": "body",
+   "/images/articles/groupe-seb-global-household-business/02-brand-product-map.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2488,8 +2488,8 @@
         "outputHash": "sha256:61ebe12bc8773be0d26cd973bebf38d54afa846b278074dec3a4c1c63ce74532"
       }
     },
-    "/images/articles/groupe-seb-global-household-business/03-professional-coffee.webp": {
-      "role": "body",
+   "/images/articles/groupe-seb-global-household-business/03-professional-coffee.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2506,8 +2506,8 @@
         "outputHash": "sha256:c9aa4d3d01ba061ad5210499ec0379f10e9fac8d6eb8cfecde1a22c3618fd922"
       }
     },
-    "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp": {
-      "role": "body",
+   "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2542,8 +2542,8 @@
         "outputHash": "sha256:d7cd388e59388c50abd7368400a74833e1f7e4137a63b7b6a5084f6f3ec9b54e"
       }
     },
-    "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
-      "role": "body",
+   "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2560,8 +2560,8 @@
         "outputHash": "sha256:e1dc86ae67dc02b76ec1424064918e8350df4e24f43e5fce8a04ae348369166a"
       }
     },
-    "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
-      "role": "body",
+   "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4275,8 +4275,8 @@
         "outputHash": "sha256:5c0d8e12c077ab8619096f55290b4487e66c91fb28a48a21c899a5dd9617470f"
       }
     },
-    "/images/articles/ninebot-smart-mobility-navimow/02-founders.webp": {
-      "role": "body",
+   "/images/articles/ninebot-smart-mobility-navimow/02-founders.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4293,8 +4293,8 @@
         "outputHash": "sha256:89b466e865156a8c13d285be10026b7b0478702beb8052bafba29e671e19d0d1"
       }
     },
-    "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue.webp": {
-      "role": "body",
+   "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4311,8 +4311,8 @@
         "outputHash": "sha256:1f313437af17b23b3839159286d2d268e5ec92a1c6a233ab1f92fc274eb21736"
       }
     },
-    "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp": {
-      "role": "body",
+   "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4329,8 +4329,8 @@
         "outputHash": "sha256:f14e019b00e83cd82b378eb8579b8c0cfe28e2e667aeebb31f413eb8558336a3"
       }
     },
-    "/images/articles/ninebot-smart-mobility-navimow/05-product-portfolio.webp": {
-      "role": "body",
+   "/images/articles/ninebot-smart-mobility-navimow/05-product-portfolio.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4347,8 +4347,8 @@
         "outputHash": "sha256:6203a31bd74d5458c143ab0ccb245a3c6f2e816d5d6b69f2dad002b1f7c86bae"
       }
     },
-    "/images/articles/ninebot-smart-mobility-navimow/06-manufacturing.webp": {
-      "role": "body",
+   "/images/articles/ninebot-smart-mobility-navimow/06-manufacturing.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4365,8 +4365,8 @@
         "outputHash": "sha256:37ac99998de35c9ac8a23c689f5552450d1011ddcab98be954c82ec60641ac3a"
       }
     },
-    "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial.webp": {
-      "role": "body",
+   "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4401,8 +4401,8 @@
         "outputHash": "sha256:dfcd7b360dbeb4fa45395a3c9cc23f99ce3f610989d8a1280ab464098ace0efc"
       }
     },
-    "/images/articles/philips-health-technology-versuni-home-appliances/02-manufacturing.webp": {
-      "role": "body",
+   "/images/articles/philips-health-technology-versuni-home-appliances/02-manufacturing.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4419,8 +4419,8 @@
         "outputHash": "sha256:57c70f6bb89802ce3bbd551b5596bd451094745dbac4243b389db2c8811e04dc"
       }
     },
-    "/images/articles/philips-health-technology-versuni-home-appliances/03-coffee.webp": {
-      "role": "body",
+   "/images/articles/philips-health-technology-versuni-home-appliances/03-coffee.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4437,8 +4437,8 @@
         "outputHash": "sha256:eb73d8fc67e5b37fc470ee4fda78ada8e2f512ecdff804fff1875543355c9b79"
       }
     },
-    "/images/articles/philips-health-technology-versuni-home-appliances/04-floorcare.webp": {
-      "role": "body",
+   "/images/articles/philips-health-technology-versuni-home-appliances/04-floorcare.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6141,8 +6141,8 @@
         "outputHash": "sha256:96e5d232341f0588a6260ca6a9e5905c0e12d7b1f5872ed61ad6a588526c404d"
       }
     },
-    "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
-      "role": "body",
+   "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6170,8 +6170,8 @@
         "outputHash": "sha256:ee16b271864728ef0e94e85153ba4c33cdece3fe5a50f65f089ae866399abbf2"
       }
     },
-    "/images/articles/steve-richman-milwaukee-growth/02-career.webp": {
-      "role": "body",
+   "/images/articles/steve-richman-milwaukee-growth/02-career.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6296,8 +6296,8 @@
         "outputHash": "sha256:667aab06b132524d460f04f79b490a3063d244a75ff0dfa1c02af936482a6f1a"
       }
     },
-    "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "body",
+   "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6314,8 +6314,8 @@
         "outputHash": "sha256:294353583f8efd8b85a65772d78788f9d87d43053df9a9b7e3d1f19693c4bf61"
       }
     },
-    "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "body",
+   "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6332,8 +6332,8 @@
         "outputHash": "sha256:b2080d6d9f4c7d58c212abb449b1de8b7fde6e0ab6e36fb1fc6a21878cea3d94"
       }
     },
-    "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "body",
+   "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6404,8 +6404,8 @@
         "outputHash": "sha256:01e82029348c74a20527e48f92ca98a712baef761d75387a038a38234c5782a9"
       }
     },
-    "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
-      "role": "body",
+   "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 655,
@@ -6638,8 +6638,8 @@
         "outputHash": "sha256:77faa1734871540438c46f87e0f016364e606dd7aef34a5bc05f57c2b1542a2d"
       }
     },
-    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp": {
-      "role": "body",
+   "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6656,8 +6656,8 @@
         "outputHash": "sha256:a1579961df7ab0e818e06ae2b4b37b892713c6af8c2d323e71459b7abb1658e9"
       }
     },
-    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp": {
-      "role": "body",
+   "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6674,8 +6674,8 @@
         "outputHash": "sha256:25a4b321fc3de2f835ae88893f5dcdf6205870f6ed45fda29ba065d8ac9a63e7"
       }
     },
-    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp": {
-      "role": "body",
+   "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6692,8 +6692,8 @@
         "outputHash": "sha256:2859b094d95d80a2c89e3a9ee15cff63076207e198d17dd19a529e5e7a91436a"
       }
     },
-    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp": {
-      "role": "body",
+   "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6710,8 +6710,8 @@
         "outputHash": "sha256:b847c9fad0f6c2421125306c32f3ef926f5489cb3ca7470b2d1eb39f8fe4a431"
       }
     },
-    "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp": {
-      "role": "body",
+   "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp": {
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
