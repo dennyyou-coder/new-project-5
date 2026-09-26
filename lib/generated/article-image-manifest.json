@@ -2380,6 +2380,89 @@
         "outputHash": "sha256:bbb184891098d289691991ffde03c3560abc471c8bb445fe6f99fef80d42dad6"
       }
     },
+    "/images/articles/european-appliance-retail-channels/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 194028,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8d332de64d7b2bd01b96ab9cf86949905c371b4a940a8b70f5f0ad680a89f69a",
+      "outputHash": "sha256:38be3266f0a264543d3c7a51f99c6dc90b4f0c43a05a03fb904567887eb42c2e",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 56560,
+        "outputHash": "sha256:dcfc3b3138a4161e7c850f90c2707707dfe43582928e2ca6016115af7c9f3e40"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/02-store-floor.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1280,
+      "height": 1024,
+      "bytes": 200896,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:7a17d1809ba455f36f2aa05ce6fec13ca8c19b07c742df226d57221afe78f8ac",
+      "outputHash": "sha256:c68356af2d7ae72363fb8f6f0a92573d203c88700812e12211a261ccf6d22db7",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/02-store-floor-800.webp",
+        "width": 720,
+        "height": 576,
+        "bytes": 80786,
+        "outputHash": "sha256:87e613272b498001ce23a92c79e971bdbb8cfbb4eeff4ccec4a4e0f6f5550820"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/03-group-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 72804,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:79261bb88228361da08d7f13aa391b09e52ed889b2a82d9f7507710b84bc6e11",
+      "outputHash": "sha256:9411087649e8bfeeae7d1156e8012513957df7e62acd20f6d10ad21e184e6598",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/03-group-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 33718,
+        "outputHash": "sha256:1b15d80f1a2f0bbc2f395c3d7aac192b61470f45454538ba7ad3812022fca6d6"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/04-silvercrest.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 785,
+      "height": 557,
+      "bytes": 21378,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:357f972d2a3b809c456f5e3e71572c6cbae17b450e76225abe4183c285893ab5",
+      "outputHash": "sha256:3749705df2224f66cf623fd8bee08af59255ccb6d4da18b166cc3b58a2ce69b9"
+    },
+    "/images/articles/european-appliance-retail-channels/05-coolblue.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 165226,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:51f14969ca110e34d6d6868d821492d298c26965e0e15f36142def6719eb610b",
+      "outputHash": "sha256:e1dd85af5f29f1c193dede632b959ab30891d2d09dc94620746f262bf8d5212c",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/05-coolblue-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 60784,
+        "outputHash": "sha256:2f0a2ebd7d45cfc72ab5e5d3238878eb426d7d902cfa202ac517ed7f41261dec"
+      }
+    },
     "/images/articles/eve-of-the-robot-vacuum-battle/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -34511,6 +34594,16 @@
       "cover": "/images/articles/eureka-floorshine-830/01-cover.webp",
       "body": []
     },
+    "european-appliance-retail-channels": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/european-appliance-retail-channels/01-cover.webp",
+      "body": [
+        "/images/articles/european-appliance-retail-channels/02-store-floor.webp",
+        "/images/articles/european-appliance-retail-channels/03-group-map.webp",
+        "/images/articles/european-appliance-retail-channels/04-silvercrest.webp",
+        "/images/articles/european-appliance-retail-channels/05-coolblue.webp"
+      ]
+    },
     "european-tool-brands-battery-alliances": {
       "budgetClass": "standard",
       "cover": "/images/blog/european-tool-brands-battery-alliances-image-001-en-v2.webp",
@@ -38544,6 +38637,35 @@
           "status": "matched",
           "primary": "/images/articles/eureka-floorshine-830/01-cover.webp",
           "hash": "sha256:3034fddd096c4599c7b4338b8fdca976560f739a58327fe331d811a583d2a2f2"
+        }
+      }
+    },
+    "european-appliance-retail-channels": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/01-cover.webp",
+          "hash": "sha256:8d332de64d7b2bd01b96ab9cf86949905c371b4a940a8b70f5f0ad680a89f69a"
+        },
+        "02-store-floor.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/02-store-floor.webp",
+          "hash": "sha256:7a17d1809ba455f36f2aa05ce6fec13ca8c19b07c742df226d57221afe78f8ac"
+        },
+        "03-group-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/03-group-map.webp",
+          "hash": "sha256:79261bb88228361da08d7f13aa391b09e52ed889b2a82d9f7507710b84bc6e11"
+        },
+        "04-silvercrest.png": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/04-silvercrest.webp",
+          "hash": "sha256:357f972d2a3b809c456f5e3e71572c6cbae17b450e76225abe4183c285893ab5"
+        },
+        "05-coolblue.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/05-coolblue.webp",
+          "hash": "sha256:51f14969ca110e34d6d6868d821492d298c26965e0e15f36142def6719eb610b"
         }
       }
     },
