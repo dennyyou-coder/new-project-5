@@ -3723,6 +3723,104 @@
         "outputHash": "sha256:e9ebc4145b1a62fa13a7e683c20379779bf03c7fb379894d70aa8fdc351feb47"
       }
     },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1422,
+      "height": 800,
+      "bytes": 169024,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:596ddc76da4ea97573081410bf629c8793de7abefaea215107cf6023d738c848",
+      "outputHash": "sha256:cb88f1ce8c695472b4175128b7ae550eaa5f3669c0309645360d9d75b7b14bc5",
+      "mobile": {
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 53338,
+        "outputHash": "sha256:929deade21b1650ce6f4c4847489839e7e8f51dbc31bb16ddc211a25da1381d5"
+      }
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-karcher.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 400,
+      "height": 272,
+      "bytes": 23386,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6b0398420dec7fb2599878dcae3bc89caea3ec4d6a9c941ff3591177745d904d",
+      "outputHash": "sha256:09da96cba0f001fc3e707720220c5dcbbad3516181f867f709665a1f2f988602"
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-karcher.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 300,
+      "height": 204,
+      "bytes": 6812,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:dc8b06704f1aa6ac66b32661dfc06ec78a4ba305ae8faa0cf491126a9c7aee03",
+      "outputHash": "sha256:b92f891c303b4cb09ce44ed3d75bef360fdbc7bc68b3b92ab86716bb8c73634e"
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-hd-555.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 400,
+      "height": 272,
+      "bytes": 44298,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2279f034ae4f2ecf58442dcee94a87f52c645605e60fb71bb5f662dc214f0029",
+      "outputHash": "sha256:36b7ede22a0342e75610affee6a73262a8397365da97eac1e24317ec3651a110"
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-hartmut-jenner.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 899,
+      "bytes": 41900,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8a7ff071ddf715e4967698bf7f3374be6877370a728d275abf469075c409c276",
+      "outputHash": "sha256:8f97623973ec947ca574a7f3c599b5a1718fc047c83b35b070cb5a0b85bf48a7",
+      "mobile": {
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-hartmut-jenner-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15180,
+        "outputHash": "sha256:d3a95badf226180da1ddc32305d4a7e9ec46850476fb1b1ed2720caf037ebe22"
+      }
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-rail-tank-cleaning.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1080,
+      "height": 720,
+      "bytes": 100862,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1911ee8924cc2f540da001c34eb89aa29d18a721cca72e7dc3d68fae01cf3eec",
+      "outputHash": "sha256:9a4c820c49556233a0d709d7692a462d6845a7d92ee85fe8d35e03a8b81b3c36",
+      "mobile": {
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-rail-tank-cleaning-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 59658,
+        "outputHash": "sha256:d01100e1be7d4e4591dbcfe7babf1870eac7541616ec2150fecbeb79058ba856"
+      }
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-rc-3000.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 400,
+      "height": 272,
+      "bytes": 14922,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:284c23021163992df682301ce7adee7d4af7b458837eba72f477cbf4450a684f",
+      "outputHash": "sha256:b2f744773c2c6a498e920f61e5a6545ce05b7d8514114fdf58006d097e41680a"
+    },
     "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -35282,6 +35380,18 @@
         "/images/articles/joseph-galli-chervon-dewalt-milwaukee/05-revenue-comparison.webp"
       ]
     },
+    "karcher-family-business-alfred-irene-hartmut-jenner": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover.webp",
+      "body": [
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-karcher.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-karcher.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-hd-555.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-hartmut-jenner.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-rail-tank-cleaning.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-rc-3000.webp"
+      ]
+    },
     "karcher-hidden-champion-in-cleaning-appliances": {
       "budgetClass": "standard",
       "cover": "/images/insights/karcher-hidden-champion-in-cleaning-appliances-cover.jpg",
@@ -38942,6 +39052,45 @@
           "status": "matched",
           "primary": "/images/articles/joseph-galli-chervon-dewalt-milwaukee/05-revenue-comparison.webp",
           "hash": "sha256:8f2c9a608a1212461270942d73b9a52ce70b0594218b6856da2342181f2d7abd"
+        }
+      }
+    },
+    "karcher-family-business-alfred-irene-hartmut-jenner": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover.webp",
+          "hash": "sha256:596ddc76da4ea97573081410bf629c8793de7abefaea215107cf6023d738c848"
+        },
+        "02-alfred-karcher.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-karcher.webp",
+          "hash": "sha256:6b0398420dec7fb2599878dcae3bc89caea3ec4d6a9c941ff3591177745d904d"
+        },
+        "03-irene-karcher.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-karcher.webp",
+          "hash": "sha256:dc8b06704f1aa6ac66b32661dfc06ec78a4ba305ae8faa0cf491126a9c7aee03"
+        },
+        "04-hd-555.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-hd-555.webp",
+          "hash": "sha256:2279f034ae4f2ecf58442dcee94a87f52c645605e60fb71bb5f662dc214f0029"
+        },
+        "05-hartmut-jenner.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-hartmut-jenner.webp",
+          "hash": "sha256:8a7ff071ddf715e4967698bf7f3374be6877370a728d275abf469075c409c276"
+        },
+        "06-rail-tank-cleaning.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-rail-tank-cleaning.webp",
+          "hash": "sha256:1911ee8924cc2f540da001c34eb89aa29d18a721cca72e7dc3d68fae01cf3eec"
+        },
+        "07-rc-3000.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-rc-3000.webp",
+          "hash": "sha256:284c23021163992df682301ce7adee7d4af7b458837eba72f477cbf4450a684f"
         }
       }
     },
