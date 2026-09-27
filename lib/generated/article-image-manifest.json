@@ -4728,17 +4728,17 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 42580,
+      "bytes": 75956,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:c54f56211b959fe4673fa22021ea04381ec201f4d9af83a4899cebd760fd8e56",
-      "outputHash": "sha256:726180292a5fdcae9e4ecda806ca8c311b4da6fa657a500ab0040d59335dd2a2",
+      "sourceHash": "sha256:e909aa656a6485a5fba5d1ca1f916862cefdd2450b3dad1d6b39511ef13c9956",
+      "outputHash": "sha256:a7c994a03c14019c0668920cd85c5d8af93f366ab58edc8a542056145a7627ea",
       "mobile": {
         "src": "/images/articles/pan-longquan-joe-galli-chervon/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 17724,
-        "outputHash": "sha256:aac3b2cd6f25ab74488ade16a48c9c5ee4f283fd1a4955cafba6d112ab2f7821"
+        "bytes": 24022,
+        "outputHash": "sha256:fd143e4fe07cd5c494b65aa7196966c7386547cf2e7f02158aa384212c301a82"
       }
     },
     "/images/articles/pan-longquan-joe-galli-chervon/02-pan-flex.webp": {
@@ -39717,7 +39717,7 @@
         "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/pan-longquan-joe-galli-chervon/01-cover.webp",
-          "hash": "sha256:c54f56211b959fe4673fa22021ea04381ec201f4d9af83a4899cebd760fd8e56"
+          "hash": "sha256:e909aa656a6485a5fba5d1ca1f916862cefdd2450b3dad1d6b39511ef13c9956"
         },
         "02-pan-flex.webp": {
           "status": "matched",
