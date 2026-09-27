@@ -2385,82 +2385,413 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 194028,
+      "bytes": 128112,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:8d332de64d7b2bd01b96ab9cf86949905c371b4a940a8b70f5f0ad680a89f69a",
-      "outputHash": "sha256:38be3266f0a264543d3c7a51f99c6dc90b4f0c43a05a03fb904567887eb42c2e",
+      "sourceHash": "sha256:e9e6e6ce17d66acc6f7b9a6bd2b036329949723641efb3742df744945595d0b2",
+      "outputHash": "sha256:a0242ecc1814ff0da017ea2c1bb4c7f4f65b04b8315bdf1aae6732cf8acfd550",
       "mobile": {
         "src": "/images/articles/european-appliance-retail-channels/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 56560,
-        "outputHash": "sha256:dcfc3b3138a4161e7c850f90c2707707dfe43582928e2ca6016115af7c9f3e40"
+        "bytes": 46006,
+        "outputHash": "sha256:8e3697c7c8b02b323052a87ccc6bde6b0a64c1641125f08a7e8004c1a80c6ec4"
       }
     },
-    "/images/articles/european-appliance-retail-channels/02-store-floor.webp": {
+    "/images/articles/european-appliance-retail-channels/02-channel-v3.webp": {
       "role": "body",
-      "kind": "photo",
-      "width": 1280,
-      "height": 1024,
-      "bytes": 200896,
-      "format": "webp",
-      "quality": 72,
-      "sourceHash": "sha256:7a17d1809ba455f36f2aa05ce6fec13ca8c19b07c742df226d57221afe78f8ac",
-      "outputHash": "sha256:c68356af2d7ae72363fb8f6f0a92573d203c88700812e12211a261ccf6d22db7",
-      "mobile": {
-        "src": "/images/articles/european-appliance-retail-channels/02-store-floor-800.webp",
-        "width": 720,
-        "height": 576,
-        "bytes": 80786,
-        "outputHash": "sha256:87e613272b498001ce23a92c79e971bdbb8cfbb4eeff4ccec4a4e0f6f5550820"
-      }
-    },
-    "/images/articles/european-appliance-retail-channels/03-group-map.webp": {
-      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 72804,
+      "bytes": 84946,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:79261bb88228361da08d7f13aa391b09e52ed889b2a82d9f7507710b84bc6e11",
-      "outputHash": "sha256:9411087649e8bfeeae7d1156e8012513957df7e62acd20f6d10ad21e184e6598",
+      "sourceHash": "sha256:43464d6479ade2e92984178ed064b95262be604129d233aaf20c0d0a0bf9f15d",
+      "outputHash": "sha256:1c5aac9ca8e4b507c4abf7b4eb627f0dc85f78ea18b6cdf3c76a835f2a127b49",
       "mobile": {
-        "src": "/images/articles/european-appliance-retail-channels/03-group-map-800.webp",
+        "src": "/images/articles/european-appliance-retail-channels/02-channel-v3-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 33718,
-        "outputHash": "sha256:1b15d80f1a2f0bbc2f395c3d7aac192b61470f45454538ba7ad3812022fca6d6"
+        "bytes": 36936,
+        "outputHash": "sha256:424912a8a8540e070dcf46a5ba467674c09b5116859d7bf0a6842d4876f79e98"
       }
     },
-    "/images/articles/european-appliance-retail-channels/04-silvercrest.webp": {
+    "/images/articles/european-appliance-retail-channels/03-channel-v3.webp": {
       "role": "body",
-      "kind": "photo",
-      "width": 785,
-      "height": 557,
-      "bytes": 21378,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:357f972d2a3b809c456f5e3e71572c6cbae17b450e76225abe4183c285893ab5",
-      "outputHash": "sha256:3749705df2224f66cf623fd8bee08af59255ccb6d4da18b166cc3b58a2ce69b9"
-    },
-    "/images/articles/european-appliance-retail-channels/05-coolblue.webp": {
-      "role": "body",
-      "kind": "photo",
+      "kind": "graphic",
       "width": 1600,
-      "height": 1067,
-      "bytes": 165226,
+      "height": 900,
+      "bytes": 80770,
       "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:51f14969ca110e34d6d6868d821492d298c26965e0e15f36142def6719eb610b",
-      "outputHash": "sha256:e1dd85af5f29f1c193dede632b959ab30891d2d09dc94620746f262bf8d5212c",
+      "quality": 90,
+      "sourceHash": "sha256:3d20caf5916a1ddcee9c000542bcea0e23752ab38c55cde15557e3ee6d6f4271",
+      "outputHash": "sha256:17fe235bf79d75a6eae918ae7f9f56baa5f8b0eb376b76f12e1ca2632da46a15",
       "mobile": {
-        "src": "/images/articles/european-appliance-retail-channels/05-coolblue-800.webp",
+        "src": "/images/articles/european-appliance-retail-channels/03-channel-v3-800.webp",
         "width": 800,
-        "height": 534,
-        "bytes": 60784,
-        "outputHash": "sha256:2f0a2ebd7d45cfc72ab5e5d3238878eb426d7d902cfa202ac517ed7f41261dec"
+        "height": 450,
+        "bytes": 35376,
+        "outputHash": "sha256:93bfbcfe35d3422dac14889c84314f1f99541a11927489bc278fdc6a7c61fa52"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/04-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 84744,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f822460b93db8f274432110af73f9fc948931c73a3537e5ca391c3ad2f64d447",
+      "outputHash": "sha256:e914a7b88352695f788ff4191be9126ca09f1d5174c31aeea3ff4d53afe86da6",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/04-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36392,
+        "outputHash": "sha256:c256a648333a2c4a6c69d4607eb9d51624ef93ec33b981d53d0bf6bbe60e68a6"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/05-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 87162,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:41ca9a8e58fa66c52d8e116478a960d08f6574fee23d64b8af808bdbbfc750fe",
+      "outputHash": "sha256:df005b6981e6e7b07d8fd8f6da83c5e5be5a9a8f43c2471cff57e089aa4f341b",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/05-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 37898,
+        "outputHash": "sha256:bde3cedb7b93427475b4259fd0515f9d8abc7e53edb9447ccc37940727801219"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/06-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 88454,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c26cfbda016493917953231209587484632d6967b6453ba7394d320d460fcdac",
+      "outputHash": "sha256:def614678faa8207e6722c59d452ffff85d6fb3aeaacfacb816b1ff80a648d6d",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/06-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 38186,
+        "outputHash": "sha256:299dc36dadffa21f909396b1a1fa333ae6269c1a1c25fdedd6e7abda30d819d1"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/07-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 83954,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:2e47a940818dbf6a9103a9fe3f54e5d2c9f295b731c5b2aacddd0b69c9379d1d",
+      "outputHash": "sha256:dac04cbcd7f49ac3ec92733655a289be5633918a865d593e54880be847e50e30",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/07-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36556,
+        "outputHash": "sha256:e17a69610ebac8ca1040163b06560fc8280391317fe6e3d53916030dcac167b6"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/08-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 85410,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0be81dda85163635723c383f9d96e8ccdffb957c95774c25b1200c4880fe2278",
+      "outputHash": "sha256:27186bca963a34e5f063f351c12ad7720b7ba5bee941761f687d7d9b448b44b4",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/08-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36868,
+        "outputHash": "sha256:1c08ab1a9ecaa3d1dff25d953a23d12d84b837c0eb961f1886582f8ad523a05d"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/09-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 93662,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5a97ac9afb3cd7c97d485c274a5fada38c97e64660009274513a023039461839",
+      "outputHash": "sha256:1aee0a93fcf31750bc28eefe311af45b47d844bba13d80e970743977d08eae75",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/09-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 40692,
+        "outputHash": "sha256:8d7724afef3935e32d376bfae50a35d232fd05412c8a0ab81fd28c50a09beeb7"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/10-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 89190,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:bc2785869be3a275a41738df9e33f1789c83d606a82c7c1c11c3084ef0c412ab",
+      "outputHash": "sha256:824b86d07026ab8aff1b3cdea9e46281c854ee97949fba6dcbb65bf1fd88dfc6",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/10-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 38614,
+        "outputHash": "sha256:55b3e62a8fc39a7aecdee501dbabd60c817c5be675cf1ea006d305f59eb9072e"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/11-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 118178,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:4a7f9ac42d3732c2d62ad6e5c8b2985174e6a82b9f07848fb75d54e28daa7e4d",
+      "outputHash": "sha256:0c32dab98bed3c35c8c038d418dce3d4cdd46a9899ba9c17922384be78e22796",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/11-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 45004,
+        "outputHash": "sha256:063a086df91db85f8ed8c582be6895484ace49721de238f0337fdeb0096a6076"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/12-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 124198,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:604ce24f7e2251596bbfa88ee843fdcaa799997caeb18cddac9ba050ebefecdc",
+      "outputHash": "sha256:00d19372b963a263fe6a13d0873af0d5c8c1a60115f6a4d425baae43dc9c6798",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/12-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 47648,
+        "outputHash": "sha256:64eb3f8e03411224660585445c87d5983b9833def6bb6080425f9a46b1bb2edb"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/13-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 116452,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a3f72fcb6750a6adf8bb872016af930c1c6701912b593db504d1563ed153345c",
+      "outputHash": "sha256:6e341fac33b588fd5b296687798902076e352266999a382bcf888f2d17dff65a",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/13-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 44068,
+        "outputHash": "sha256:c7a85f531def698daebabe25dff2406f1507c5426f1606c866ba6fec6900954a"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/14-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 119766,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:87f69c09c4df9b8dd9105eda39eff47a904d92ca7a4d8de01a678221029c60e8",
+      "outputHash": "sha256:28960f50c98d5d3bfcc70b87c48d1ea211f9df2a1929fdde240eadfb6f604b8e",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/14-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 45866,
+        "outputHash": "sha256:2c42800f197d2fe11db3ff6f641eaefb20181ba04e856d2a58462147fd1cb175"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/15-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 117312,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3e63c6bcb7c0515ce1780da6603bebd2f86b2ed46b17afdade5ba7623a14cd95",
+      "outputHash": "sha256:33e50d0802fe3fd4411cba4bb5cf0096f4b793dfd14649ddf926000ce11250d5",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/15-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 44694,
+        "outputHash": "sha256:ea7d5803598d11e6b39c3135d7feefc5f7fa8f2a11fe0deb25a0541e48ee41cf"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/16-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 109534,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:feb3a172687e06658fcd96e2f1a551b74ee173bc691f4aa73f25eb1d302a0b8c",
+      "outputHash": "sha256:6d2ef09910280dda05a6ee03564fd56a153ad7221aaec6e11e05fa3f5b6310a8",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/16-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43284,
+        "outputHash": "sha256:0698b70a68e07e72a4385ecaf07f62e44856bf2a8a8499abaeb8d0eaf6c3968c"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/17-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 108876,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:17b6c7a30b9f9267da95d5919cfef5344021ae6679ad5ab87b8c536b98fa9c56",
+      "outputHash": "sha256:d32db1a9c176e7a21b070b4f10c3c02e9eca7d4e5e700713a89c4c796c6e93e1",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/17-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43266,
+        "outputHash": "sha256:3c086c83c939995af37dfeee27425f1c0c7dbaee8eb6b9c373b9e4c596793c50"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/18-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 104970,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:907c4108f49c48ce1399ecc16ae3f5329ce95c6f809a95cf44984f848f25badf",
+      "outputHash": "sha256:70cc1e27821c2349e8614ba48f7de1ccc8fa12ba78d15d9db58ed569e36232dd",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/18-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 44174,
+        "outputHash": "sha256:8cc9756cac7ba7139fe38ac6888d4daa3ce75c24d675615b1705903414a8465f"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/19-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 109756,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6514b44867d20cfa67d4b485f46ee9afb947e2e8a10320c5612a34e8c0bf8c09",
+      "outputHash": "sha256:da7369483512b06337195dd9cc0e568cdef22f2458f093806e4a83d60e17dab0",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/19-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 46238,
+        "outputHash": "sha256:b39c9e895e01906ca249ec3e256f2036f1b3e333bfd492bf7e6d7b448135ffde"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/20-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 87298,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e6d6b9f19136a431ef43f96a67c9b596a43ffe9fda7cc5f6322b820f1804a090",
+      "outputHash": "sha256:ad7cfa5ada9fbf3bb5125a0e0db7413415660e7568287ac8a929f00c31e3140a",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/20-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 37998,
+        "outputHash": "sha256:7773619442940105e130e3df835f352061852f47beb7ab6c6876a647124f838e"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/21-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 87804,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:9c445413d6bcfef799a12b123466879ff895f78aa8615f9b48a67e3fd89c5626",
+      "outputHash": "sha256:b30979b1b8605574d0d1827d982a82cb710df707cb55f470a4281686eebe5da5",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/21-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 37800,
+        "outputHash": "sha256:97157b9ae81943ff0a15004360ab019303eee5ce0f655eb1f62b1c132120333e"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/22-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 89742,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:371cacdfa29136c1adfab57e32bb1fbf188172f33a3f5e8c463e9116e5a306b8",
+      "outputHash": "sha256:8ad926d35b333539ea4cacdfb7e5c36d59c230be9d733516c5003aceffce2efe",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/22-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 39320,
+        "outputHash": "sha256:7c6c981bb4fdc0744dd82a0de2fa82aeec444f2007f7c928b9f81a3f44a44529"
+      }
+    },
+    "/images/articles/european-appliance-retail-channels/23-channel-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 88830,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f4b7ea00a46f84680ed8ca3fa364aadb9437a7720d0205489d1f7bdd3fd75ec3",
+      "outputHash": "sha256:ac41170dae418e93080f181cd6caf181c40a3eb9ec7c46c6da6c08ba11902bcb",
+      "mobile": {
+        "src": "/images/articles/european-appliance-retail-channels/23-channel-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 39016,
+        "outputHash": "sha256:d485e1dd0a5ed338efe474dd14574f67dafabab012174510de13a04997afb43f"
       }
     },
     "/images/articles/eve-of-the-robot-vacuum-battle/01-cover.webp": {
@@ -2540,89 +2871,197 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 134376,
+      "bytes": 108188,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:8d7f21594808b9edd21d436bd099797145df6131eb1efb7ee5853f6bad23548b",
-      "outputHash": "sha256:85abd08ab5f180cc4e058eb4f20c63e5889462c33d4cd3559176f07e13106620",
+      "sourceHash": "sha256:ff800658f95c63bcfed16869e16f6d1753f3435d494da90a0242d3800390ed10",
+      "outputHash": "sha256:18b29b4ba9c626d48d256f66c1ba1c9c226d50340fe99792a71f62a674edb141",
       "mobile": {
         "src": "/images/articles/global-power-tool-companies/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 39640,
-        "outputHash": "sha256:6faf39b06ba003baf868a4166a47e3ae908d0c01256756486957ed21d64d6419"
+        "bytes": 38230,
+        "outputHash": "sha256:ace835c7349102c7eeec0feabdf5438a0c60d9b3d73fec6597f1155b82e1ddbf"
       }
     },
-    "/images/articles/global-power-tool-companies/02-brand-groups-v2.webp": {
+    "/images/articles/global-power-tool-companies/02-company-v3.webp": {
       "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 65438,
+      "bytes": 41902,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:2caaff00a1d162dae1517af72490f3d700c81c5c90655e8f2e55a61b38d536a6",
-      "outputHash": "sha256:c718ba01f4fdd300a86bc3a88df7280210c09c96f3392bef8b903cac02d2da10",
+      "sourceHash": "sha256:b84b13893369e5d9ed074f95a790b4d5f44394230244004d1be42cfa93a260e0",
+      "outputHash": "sha256:b26213a134cda0e9570437861d06f3ca64c6aab99827752a38f9a0f9cfa6bbeb",
       "mobile": {
-        "src": "/images/articles/global-power-tool-companies/02-brand-groups-v2-800.webp",
+        "src": "/images/articles/global-power-tool-companies/02-company-v3-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 28532,
-        "outputHash": "sha256:722388b94dc522c1400db8074aba3e00b5c59884833b3fe6b3488338d086fdec"
+        "bytes": 20096,
+        "outputHash": "sha256:3771a6e4af898eec551f2c400ed1737e2974c41282f9c73bb08790054a20d6db"
       }
     },
-    "/images/articles/global-power-tool-companies/03-battery-alliances.webp": {
+    "/images/articles/global-power-tool-companies/03-company-v3.webp": {
       "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 69532,
+      "bytes": 61552,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:b9df40860b82cb6c2044ac575cfc50c4ae58020bf568e5c7261b4dcfd8fd5340",
-      "outputHash": "sha256:ac47585c59dbccc75918c44e08e9fb4eb18f49abb83dc72d829a65eb0f734f59",
+      "sourceHash": "sha256:ae68c889a95f4d2eef60a7d35a303fe56481acff05d6f0c6ecb2e4dd6d89864a",
+      "outputHash": "sha256:50ec1eebc25b64bc90e834e78bcb3b35e79f8331b75ea3c9fb5e6ea770037ef1",
       "mobile": {
-        "src": "/images/articles/global-power-tool-companies/03-battery-alliances-800.webp",
+        "src": "/images/articles/global-power-tool-companies/03-company-v3-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 30454,
-        "outputHash": "sha256:a1c7ee107216143ce8cbe56369be68d5a73aaf3f2e1ad62de54e2685f39dcecd"
+        "bytes": 29996,
+        "outputHash": "sha256:64073c20a40d68be813f11baf832f83f9ff56cce512f87724c42b86018e3e0e9"
       }
     },
-    "/images/articles/global-power-tool-companies/04-galli.webp": {
+    "/images/articles/global-power-tool-companies/04-company-v3.webp": {
       "role": "body",
-      "kind": "photo",
+      "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 41052,
+      "bytes": 79226,
       "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:988311f78746557da4b6f81c3889711560d936604206ce33b07cc722cbc1cca0",
-      "outputHash": "sha256:2d39e8962536c7d5318377c587b871ac7678bb7cabd80fee2f43578a8c4cef6c",
+      "quality": 90,
+      "sourceHash": "sha256:087c97f8624d2fcc96409de8bf984f0599b6119d9452f7985776f5f5a7fc3f09",
+      "outputHash": "sha256:0657286bd06b7aa25b7eca8646c177dbfd0c2973556bd5b7b46d0028f0864665",
       "mobile": {
-        "src": "/images/articles/global-power-tool-companies/04-galli-800.webp",
+        "src": "/images/articles/global-power-tool-companies/04-company-v3-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 17662,
-        "outputHash": "sha256:1987afbda1dfa89b4e2fa3de7ea623279b26aeefb718dfcaccdd9eba5185850c"
+        "bytes": 35022,
+        "outputHash": "sha256:39995a1764bcceb2b0454cd9997073c18bf920f027900fb1243ee850275c194a"
       }
     },
-    "/images/articles/global-power-tool-companies/05-festool.webp": {
+    "/images/articles/global-power-tool-companies/05-company-v3.webp": {
       "role": "body",
-      "kind": "photo",
+      "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 62792,
+      "bytes": 85650,
       "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:d505df985c47b18d1bd22205527061259de42cc8dcc07c71a63b57637a8a0187",
-      "outputHash": "sha256:f3529db386b749cb90a74d94fa2c4997d786f222246a105084e6a4e981cc5f37",
+      "quality": 90,
+      "sourceHash": "sha256:6121063557dcd5737a126bbf13904288b6d688ffa6359abe1c942ded2db0bff2",
+      "outputHash": "sha256:8dd29c3ff58baf3a8604ed3cf9f5fb92d53442a6899ed3debe46cffedbdd130b",
       "mobile": {
-        "src": "/images/articles/global-power-tool-companies/05-festool-800.webp",
+        "src": "/images/articles/global-power-tool-companies/05-company-v3-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 18058,
-        "outputHash": "sha256:4115a044ff62bb61f5526a8c3b81af76adcec8b843fa63494650f36c90a03364"
+        "bytes": 38512,
+        "outputHash": "sha256:e81e2f4d208c3ed721ab75629cb615a4dd13ed1f83cd71d483c45243c060345d"
+      }
+    },
+    "/images/articles/global-power-tool-companies/06-company-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38302,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:45fc5da09c234ebaf3c1bff8c276754e7b5ae219734f669d3854beb22f27a2c5",
+      "outputHash": "sha256:20a8b41a686d3ea13343ce5434b1e5993c322dc249e5756849a2a824f6e97eec",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/06-company-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18054,
+        "outputHash": "sha256:9b87bce3c915dd950721dfb786a00360c0cb4f822f1a372e72f70594f35d21a0"
+      }
+    },
+    "/images/articles/global-power-tool-companies/07-company-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 46768,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:534305740318e19214348e1b4ed9995efc4c190037e52b505ab5bea00fc13d6f",
+      "outputHash": "sha256:4267c9a9c3c6502d3a38a19b4c47c17472c3452a3c0deda68b70becd4343984f",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/07-company-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21438,
+        "outputHash": "sha256:a09b862d66e3c045f7061b789864d6c6641c44648fef55e7d446fded8a38d837"
+      }
+    },
+    "/images/articles/global-power-tool-companies/08-company-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 76776,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:458f3090b3155732a43c49601da790edfc1d97add14fd297cc8ee12f29937a7e",
+      "outputHash": "sha256:e868c8560eb3a10ff384bffdb574800ea4c2091cc20b7cd7af906a2ff079e65e",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/08-company-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 34196,
+        "outputHash": "sha256:7b642540c29c2a66c4e4122dfd289754666ecbd0bcb41540138909833e0b141c"
+      }
+    },
+    "/images/articles/global-power-tool-companies/09-company-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56446,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:70c8af29b55ffdb48302287b601a27186d71b09b0774c602d302de7ea6283bdd",
+      "outputHash": "sha256:025d1379cdf7c9b006cc255ee09a39c2d8ede11dbe346349e94937c22e4bbb27",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/09-company-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25370,
+        "outputHash": "sha256:66c3373bf79e08e1cb39754447c770cdbce3850cce5379c5efee3134de17fda1"
+      }
+    },
+    "/images/articles/global-power-tool-companies/10-company-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 54922,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0fe97febbe3891dfbd107c17dcf6b1732c94a2fc7e09f3d73dad941620fdc3ea",
+      "outputHash": "sha256:2067899849d1b43ba2e68fd58ef41f339406cdd88b48bea0eeee9294d53fee8d",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/10-company-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25214,
+        "outputHash": "sha256:269b10b58fe9177da96ba173706f1687dbf1f3800c25db832d318b86b3cdaaf2"
+      }
+    },
+    "/images/articles/global-power-tool-companies/11-company-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44218,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:79d5003f604b6b3c77bf29f69723cf2e0a6c515f84755f8bca1df451fd99b2e5",
+      "outputHash": "sha256:1272f518363958dc851cb74d38ee4e5af9c98ed2797a4cea1d29dd97b6ce0525",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/11-company-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20720,
+        "outputHash": "sha256:4120718bb4aa044a5a4436dd0dcf7b0f2407b25e8ea316470072bfb1439e4f69"
       }
     },
     "/images/articles/groupe-seb-global-household-business/01-cover.webp": {
@@ -3816,100 +4255,128 @@
     "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
-      "width": 1422,
-      "height": 800,
-      "bytes": 169024,
+      "width": 1600,
+      "height": 900,
+      "bytes": 68492,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:596ddc76da4ea97573081410bf629c8793de7abefaea215107cf6023d738c848",
-      "outputHash": "sha256:cb88f1ce8c695472b4175128b7ae550eaa5f3669c0309645360d9d75b7b14bc5",
+      "sourceHash": "sha256:100ab9e7d1bf9f7bdffac7adf2db2517518073c540137219095121bcf8320971",
+      "outputHash": "sha256:1d63fef1aa84f063033ee87c8b50f6f6d5439b8d08abee5012520b35d1ce7f49",
       "mobile": {
         "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 53338,
-        "outputHash": "sha256:929deade21b1650ce6f4c4847489839e7e8f51dbc31bb16ddc211a25da1381d5"
+        "bytes": 26918,
+        "outputHash": "sha256:8a8e626b12e7c0d3ea344ea7908652f203ebd6fd34015a3c437a23a99392232a"
       }
     },
-    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-karcher.webp": {
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-v3.webp": {
       "role": "body",
-      "kind": "photo",
-      "width": 400,
-      "height": 272,
-      "bytes": 23386,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6b0398420dec7fb2599878dcae3bc89caea3ec4d6a9c941ff3591177745d904d",
-      "outputHash": "sha256:09da96cba0f001fc3e707720220c5dcbbad3516181f867f709665a1f2f988602"
-    },
-    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-karcher.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 300,
-      "height": 204,
-      "bytes": 6812,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:dc8b06704f1aa6ac66b32661dfc06ec78a4ba305ae8faa0cf491126a9c7aee03",
-      "outputHash": "sha256:b92f891c303b4cb09ce44ed3d75bef360fdbc7bc68b3b92ab86716bb8c73634e"
-    },
-    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-hd-555.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 400,
-      "height": 272,
-      "bytes": 44298,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:2279f034ae4f2ecf58442dcee94a87f52c645605e60fb71bb5f662dc214f0029",
-      "outputHash": "sha256:36b7ede22a0342e75610affee6a73262a8397365da97eac1e24317ec3651a110"
-    },
-    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-hartmut-jenner.webp": {
-      "role": "body",
-      "kind": "photo",
+      "kind": "graphic",
       "width": 1600,
-      "height": 899,
-      "bytes": 41900,
+      "height": 900,
+      "bytes": 83788,
       "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:8a7ff071ddf715e4967698bf7f3374be6877370a728d275abf469075c409c276",
-      "outputHash": "sha256:8f97623973ec947ca574a7f3c599b5a1718fc047c83b35b070cb5a0b85bf48a7",
+      "quality": 90,
+      "sourceHash": "sha256:10ca2ac76975be0e1d1845da9440a51b68d61669bf0125ce068818e591f01060",
+      "outputHash": "sha256:010c9249fe24a1d9d7947848e1561dae36fd85f96497f51bf1296eda4e747dec",
       "mobile": {
-        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-hartmut-jenner-800.webp",
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-v3-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 15180,
-        "outputHash": "sha256:d3a95badf226180da1ddc32305d4a7e9ec46850476fb1b1ed2720caf037ebe22"
+        "bytes": 38096,
+        "outputHash": "sha256:083cbda657cb3e61c85d0d34ce608f0037bfaa175bf106119945e4b6f6eb9407"
       }
     },
-    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-rail-tank-cleaning.webp": {
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-v3.webp": {
       "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 720,
-      "bytes": 100862,
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 62828,
       "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1911ee8924cc2f540da001c34eb89aa29d18a721cca72e7dc3d68fae01cf3eec",
-      "outputHash": "sha256:9a4c820c49556233a0d709d7692a462d6845a7d92ee85fe8d35e03a8b81b3c36",
+      "quality": 90,
+      "sourceHash": "sha256:ad8190a9dc6e211213ca36e23082e5f3856396fbc44bb7d558168e036a2563dc",
+      "outputHash": "sha256:f379a20bc92614a94b06fc401cdebef7d1e349fa7f3de471c91f6107c58d937c",
       "mobile": {
-        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-rail-tank-cleaning-800.webp",
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-v3-800.webp",
         "width": 800,
-        "height": 533,
-        "bytes": 59658,
-        "outputHash": "sha256:d01100e1be7d4e4591dbcfe7babf1870eac7541616ec2150fecbeb79058ba856"
+        "height": 450,
+        "bytes": 30758,
+        "outputHash": "sha256:6cc8c7ad53d78d7566890fde42850fa49a8dddb1459020ea3cce2e3b30d148fe"
       }
     },
-    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-rc-3000.webp": {
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-household-v3.webp": {
       "role": "body",
-      "kind": "photo",
-      "width": 400,
-      "height": 272,
-      "bytes": 14922,
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 128132,
       "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:284c23021163992df682301ce7adee7d4af7b458837eba72f477cbf4450a684f",
-      "outputHash": "sha256:b2f744773c2c6a498e920f61e5a6545ce05b7d8514114fdf58006d097e41680a"
+      "quality": 90,
+      "sourceHash": "sha256:548e5dc8af6d74425c10ddcafb0fd82eb747a182055151275bcea7b60c6fb046",
+      "outputHash": "sha256:5f0b8e8457e76baffbae307211703c5f72dd72a0a100b87a178d90c1f4d7c9bb",
+      "mobile": {
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-household-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 61364,
+        "outputHash": "sha256:6aa99c54691558cbf174567c48c573594c93180af85d1bf076a25529c50a7d2d"
+      }
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-jenner-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56542,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cb94270a17e5dea941ff87b50fe9c88605caebfc71e2478b5f9d745523570520",
+      "outputHash": "sha256:c5a48a05f69facef2c949a9eead48e3b7689d29f98c722c8d67cfcdcc28fe0d4",
+      "mobile": {
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-jenner-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27526,
+        "outputHash": "sha256:0d2dd9b93a85cf7cf62b5ab6dabfc724c77be17bb98d549c16880bc00fd025b9"
+      }
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-scale-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 103216,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a807028a564448c524049b4f798b89ce811f33e0f4fce5660716de6436e58b1a",
+      "outputHash": "sha256:118ce294167ab2cc78097c1cec13e6f9865237352092ecdd4f053e553cae69d2",
+      "mobile": {
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-scale-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 44526,
+        "outputHash": "sha256:859a21d0e3544d7f32b62dc3e08d89acbb32bb7fb25eaf2d95acf6a6081d8580"
+      }
+    },
+    "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-robotics-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 75238,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ee3beebcfd378d801c735b157ee5e43c3e2f3aa6c53c65382dd4a13883dd0ffa",
+      "outputHash": "sha256:0d8a2f079cba17770211da5d8413c3fac99ced9ad10c50fd63967cc5180fc485",
+      "mobile": {
+        "src": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-robotics-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36836,
+        "outputHash": "sha256:c2ac4066dce8b24ca46a98162e8b6299eeabf947b00acde91ee0b75d36205c90"
+      }
     },
     "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp": {
       "role": "cover",
@@ -4336,70 +4803,127 @@
     "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
-      "width": 1047,
-      "height": 589,
-      "bytes": 19840,
+      "width": 1600,
+      "height": 900,
+      "bytes": 225334,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:7f4646f202389f7fc0c133b99b364b0852039e12783a3add8493a08a937033dd",
-      "outputHash": "sha256:d1ddffd95c3264481541bb4294035d534a032569baa0972ae997c7fdd06b6f62",
+      "sourceHash": "sha256:ead0b3d496752eddd0b2300cd9b0f642405c7c828a49fa57426990e99f8dffe5",
+      "outputHash": "sha256:23fbef4d7839c8c7ecf44a57cdeb6595a89d52c90fbc138f5d7cfe50e1b93672",
       "mobile": {
         "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 12516,
-        "outputHash": "sha256:89fb9a58ce910d513d16e9a85b71aeddde07965ce56a1271331fc0c175f3296f"
+        "bytes": 67330,
+        "outputHash": "sha256:ba524ffbbcf8a8df3d2fffc918316e31ad28a0dcdf1e3425e5e2d00119facef4"
       }
     },
-    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-auchan-origins.webp": {
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-family-v3.webp": {
       "role": "body",
-      "kind": "photo",
-      "width": 840,
-      "height": 578,
-      "bytes": 31232,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:c80a04a8ea9b278a907578b5b0217888a7dab9fafde989537a15028ee091ad9c",
-      "outputHash": "sha256:64e1235be841007949aa923e05aa3fef9ae545080780d8f95d37502221a4aedc"
-    },
-    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-decathlon-englos.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 460,
-      "height": 280,
-      "bytes": 29052,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:b0346bc200df9a980e6083ba4f15778fb6018b2592ff243977d0ac693f55d372",
-      "outputHash": "sha256:a8fcd88a00e44c78d7acea4d51a9f243e26919c4c6d712d094482c585ccc67bb"
-    },
-    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-pascal-roche.webp": {
-      "role": "transparent",
-      "kind": "transparent",
-      "width": 1052,
-      "height": 845,
-      "bytes": 120746,
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 59824,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:cede24f4dd39bd612da8ae772b7ba340633396068045566c53b00981e0ac098a",
-      "outputHash": "sha256:60f82d8abecc41d2f7a51395cbb6c2c36e6744fb1b0dc7b7f0fca4e0d5489a78"
-    },
-    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-auchan-englos.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1440,
-      "height": 960,
-      "bytes": 200408,
-      "format": "webp",
-      "quality": 76,
-      "sourceHash": "sha256:87012b26e8fd1eb6ce6b791559814aac53dfa96ab860e1065f987063e5a01520",
-      "outputHash": "sha256:ce4aa52d9d9b7a22f987bae9846b7420c8bfd0646cb9ba81529aaf2a266ac3bc",
+      "sourceHash": "sha256:a33d0e38139707fb01356eeb0f85ac586b51b72a0cb6859d8d62f4b27127b4dd",
+      "outputHash": "sha256:5dbabfb07e762f68b489159ce844862f0f97a9a6c905da871913e68f53a983da",
       "mobile": {
-        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-auchan-englos-800.webp",
+        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-family-v3-800.webp",
         "width": 800,
-        "height": 534,
-        "bytes": 99612,
-        "outputHash": "sha256:7f87c3df6d952266fcc9b321d2841987a1052af7f3756b8b2b700e67a18f4839"
+        "height": 450,
+        "bytes": 28340,
+        "outputHash": "sha256:10604697fabd4e407ba81b7464d5d69177d623c7bb3643afcd7892c54e200f9f"
+      }
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-origins-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 71360,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:041e9075eb1cf3fe86c89464de881dc4fb7d3927d95d092149f93f022390dbe7",
+      "outputHash": "sha256:8b0b0c81b8352eee9f6123823ab4d9896b63a92c9c86c73c5a52e85f1ba60638",
+      "mobile": {
+        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-origins-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 34460,
+        "outputHash": "sha256:6c457245782233051223170ec7afa90e41fdb718441c7132afa5658e7db97af6"
+      }
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-ventures-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 96628,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3343e4ab93e691acdcd3edfc15b7fb40cb47762b0b4a39105869a97bd93fbc96",
+      "outputHash": "sha256:1f8fd826d391b1782c2e02ad402ce19800bf57e41818446529e2abd4909ce9d3",
+      "mobile": {
+        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-ventures-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 46794,
+        "outputHash": "sha256:39989fd88af9937d4b662fecdd9226e8e8106ccd025fa8b717d7478893729ad4"
+      }
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-electro-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 68312,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:9df0700a625744953b589417292994c78b916d160ab9036dd8f0ac4ad0828220",
+      "outputHash": "sha256:10cbf0eab9a14df24c98cc5f0020e894139c605462a91d0107d81a2d058f7c4f",
+      "mobile": {
+        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-electro-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 32596,
+        "outputHash": "sha256:f3265c4a51af1e0a830905e2bb6777b057a0ffd870e687c2135778f80f26ce24"
+      }
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/06-network-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 58142,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e5bc2db7fe88b608cdf6c8bc4e925fee563259112f6c978481af885b4ad1be84",
+      "outputHash": "sha256:1443c6a929579ab991437b267e99acd6921ea82a8c8a36546ccb017aabac24cc",
+      "mobile": {
+        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/06-network-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27686,
+        "outputHash": "sha256:a99cf3d1fa1415eba99d547ecee46645508f16a232851fc5bdfa6471a9349189"
+      }
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/07-results-v3.webp": {
+      "role": "body",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 142774,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6659f838699508cac8f2a4b80af69f572440cc83c0b6d82a189fc68d074c9efb",
+      "outputHash": "sha256:625293c45d3c1113e4f4d54d609d152e19f15a0129eb9487272e91661f931425",
+      "mobile": {
+        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/07-results-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 57822,
+        "outputHash": "sha256:624ed8dabb96c60357c9979f80ce19c80f163538b2c22c2200db2373ea77225b"
       }
     },
     "/images/articles/narwal-flow-2/01-cover.webp": {
@@ -7142,92 +7666,344 @@
     },
     "/images/articles/us-appliance-tool-retailers/01-cover.webp": {
       "role": "cover",
-      "kind": "graphic",
+      "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 94172,
+      "bytes": 227676,
       "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:3dd3365a3f0dee64d5cf3cc8adde4d55a764c090b2492828e0ae634917f78926",
-      "outputHash": "sha256:17345c9941e9a06ed9f15327f4c474c8e50a4d63d66e28d793b14bd7bb3c821c",
+      "quality": 84,
+      "sourceHash": "sha256:5c1218259d2f2e1c1683eaeb8c9633f70114897f781b6c873aa825755a0c3a44",
+      "outputHash": "sha256:3ad99e73753d2b492c9e926f63f3bc04c8f6c98260afc39836daa4b80552894b",
       "mobile": {
         "src": "/images/articles/us-appliance-tool-retailers/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 34286,
-        "outputHash": "sha256:5e698afdace9886652097c495798b755cf029830ded9a650cbd72564c58b7da7"
+        "bytes": 67530,
+        "outputHash": "sha256:1448e719d5562ca6c224c6cb582c0574e52a622d3624d80d83ada69e5a973183"
       }
     },
-    "/images/articles/us-appliance-tool-retailers/02-appliance-sales.webp": {
+    "/images/articles/us-appliance-tool-retailers/02-retailer-v3.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 50976,
+      "bytes": 89574,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:52db69524347ba93dcf416a90ff4e802b5f712ab85d5740c24f2f2daf15ac6c6",
-      "outputHash": "sha256:9e83740077d2b9b6edf1532fc3cf76f9d2669538e21db59da080f752a5e21bec",
+      "sourceHash": "sha256:e2a6712a6f142c35ab15c2e63b76e60a1e17bc410daed181f5eb7c42411eace7",
+      "outputHash": "sha256:cb8ab58edfdf9d29f4e0a64ffc751f6b29e7a0181563f9a4d82c44ca8b3daa4b",
       "mobile": {
-        "src": "/images/articles/us-appliance-tool-retailers/02-appliance-sales-800.webp",
+        "src": "/images/articles/us-appliance-tool-retailers/02-retailer-v3-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 22808,
-        "outputHash": "sha256:1913e1c08990d79a84ad5435e8a0fdb583604f36746553cdf13daada59e85760"
+        "bytes": 36058,
+        "outputHash": "sha256:3149c917d221d924843780df27ade5eedb2509a0145800f394e7a52134905390"
       }
     },
-    "/images/articles/us-appliance-tool-retailers/03-walmart.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1000,
-      "height": 560,
-      "bytes": 65510,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:b41a8607c5c089f7cb17340274bba6dcd78f363403691468d998eb84a2e95c48",
-      "outputHash": "sha256:8370c949c742e84a90365743df833f094f05db4800487fad492324e8facf83b0",
-      "mobile": {
-        "src": "/images/articles/us-appliance-tool-retailers/03-walmart-800.webp",
-        "width": 800,
-        "height": 448,
-        "bytes": 33874,
-        "outputHash": "sha256:7f04b2b68b9184fac92ad5e4f90ff24199d3b03bea47526b3e03a86b902c1b8a"
-      }
-    },
-    "/images/articles/us-appliance-tool-retailers/04-harbor-freight.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 820,
-      "height": 460,
-      "bytes": 49050,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ff1a02101d7977440100ecde2e77c398c73fb5586b33f7099b5d5f758689f1b3",
-      "outputHash": "sha256:7b06ada528dae85a0924a03d1b66a6894ade3d919be9d6297f59c8c37c91c091",
-      "mobile": {
-        "src": "/images/articles/us-appliance-tool-retailers/04-harbor-freight-800.webp",
-        "width": 800,
-        "height": 449,
-        "bytes": 36026,
-        "outputHash": "sha256:ab17a67ebdd1f404b412c0473549f253d833f7f133235a9641fb8ec84659c24a"
-      }
-    },
-    "/images/articles/us-appliance-tool-retailers/05-independent-networks.webp": {
+    "/images/articles/us-appliance-tool-retailers/03-retailer-v3.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 55454,
+      "bytes": 89150,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:bd5162e876fa5f79c24001b2d25d0f49bf6fd281abadce7392717f97d1a8f53e",
-      "outputHash": "sha256:47eb4a68b275a1d1fa398e980726646d047e65bf835f4c6eeae36e6fdc61dc67",
+      "sourceHash": "sha256:bf8e27a8da29e2fda3de4543d128987e33c331f4a2c604b6a2ca1e5a48f17613",
+      "outputHash": "sha256:b73653906f259b385981a02cb78593258a6dfcb15477e4c90df2c824e8a5e70d",
       "mobile": {
-        "src": "/images/articles/us-appliance-tool-retailers/05-independent-networks-800.webp",
+        "src": "/images/articles/us-appliance-tool-retailers/03-retailer-v3-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 25476,
-        "outputHash": "sha256:99cb34ccd182cf4502a3fb73dc200f46706b6d5ffa6db5f93cce15a4e1421051"
+        "bytes": 39526,
+        "outputHash": "sha256:4c0406778693ae4fdd8f7a0612f77b0c9ce0e2052b423c6f7203e7bfc36c4a24"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/04-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 86018,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:4c40ca4aad7afefcb3cfdf056bbf7a52a8a9387dc926fff0acd9667e7e7978f0",
+      "outputHash": "sha256:0fdc9335a044ae7b1a1120d6a080a745b73d998bb547deea609b122a21be86e9",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/04-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 34124,
+        "outputHash": "sha256:1f58f2815884fb6c18f455e63f50959dbaa3aa913894ca17c1362f2df5a099ce"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/05-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 93942,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7479ac013443efd6b2432733a5a77e1865a3cf7bf2458cdc90629bda1070ce4a",
+      "outputHash": "sha256:883f740f411c6fd131f0ba62a879daadc324b8be85b013a239ab1fbbf65bb16d",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/05-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36684,
+        "outputHash": "sha256:0fde150859a1e0b4aba5111d4e2c959075bb1aeb8ea155c1cb0d35e1d30d36fe"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/06-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 95670,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7d19cbf5283c853b636ec4d52f7d9ddef3d0e9e5851571ee6d2bf7483070df63",
+      "outputHash": "sha256:b3ce9671583331191dd7329972738f0cac4e09bca6a883b6c170075f80ad2caa",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/06-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 37588,
+        "outputHash": "sha256:81eabccb8c93899c37f505e459edb2b2a66045cc849c6ca436d3b393191f8039"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/07-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 118802,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cdb302283bce4bdd38450a36796b989187228e23cf3b3cf1bae47d0d9fa80cf3",
+      "outputHash": "sha256:517b12bad5fe40ead571792ad23695d6877b11d5e2fc9ff52052d3c6dd7f9e5f",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/07-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 48282,
+        "outputHash": "sha256:c2c5d2c40cab9e0abc849ee049589aff61a4b8392469d5023f57201d08894e2d"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/08-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 115226,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ec6dc604db9b43d2c51b27270e4d2665ed9118e0dac4f4c59ee08877f91fad77",
+      "outputHash": "sha256:544165e9bcfdab9b53bed62ac4f99b014dfe721f43dd26f15e4a55a93b526868",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/08-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 45650,
+        "outputHash": "sha256:22f55ba97cfb696ee21c8b214e5fa175b06f8795e3badb706cd18e4f2f49fdc1"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/09-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 115094,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:90a31ddf217f275d00abd68b6a2398c1fa28dab7390a3ca41653ecb4af31947e",
+      "outputHash": "sha256:2761a13ae90e20c47e4283e44a2e5ac6008803904e3c5c5c998b3b11310b1f4d",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/09-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 46398,
+        "outputHash": "sha256:f9dbf1378e57c0dd8eba7ef37139219bd7e804ed070a988508749678faf057c7"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/10-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 96812,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:743d1943d58971f2eb659bfcf39e2edf80482cb7d7307ffb0f3d1b0bb0b3a714",
+      "outputHash": "sha256:100b472b47467d301d2b3660c215f67d206085be7b7262d6a1a197713606ccde",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/10-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 42370,
+        "outputHash": "sha256:1c01218389a1b354faaf1dd6e9768a3f5642640cd591f5fa1a52aefd6246feec"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/11-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 73714,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5109f5083c1b3baeec29846861bed7bae61de65479a6c882e7a90f142d8cceb2",
+      "outputHash": "sha256:070e7bcafe89ca62f4cdf865982ad88a1c459c752f0a0560d0ce59745b587e74",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/11-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31140,
+        "outputHash": "sha256:dd7c3c9ccff66f1b4ba6e50cafa8e0f9cf4b0ba8403260d8b63b7a7313e7f8df"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/12-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 77958,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:38b4c1f40c31d01a881140675998ca35324603c1e7ba6b78f3c39cc5a6ecc875",
+      "outputHash": "sha256:c5d165da5f3b5c4aa1fbd031d80fd7e92a161ea52e1bb31916dd9c4dadab592c",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/12-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 32556,
+        "outputHash": "sha256:d5eeab993b38bf069a38c6b7db04447a7591c0844c7ca4c9f122cd981f98b4d8"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/13-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 76040,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cd4b8d073280c212e95f2d68724787b262693a5682b9d7a0b620c5e2be5673f8",
+      "outputHash": "sha256:56074ffdb39be9168bae9d32c5495838a68b56e062219d48c05d90f28d1281ae",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/13-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31946,
+        "outputHash": "sha256:94cdc5bc0a299cc5a64d16bb3283cc5aac19f0fba5ffe4e71512ad832260d2e6"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/14-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 75074,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:bdfcb82c764e27b00df2b83dbb9b10aa2c158425b474c916bca3785a05272227",
+      "outputHash": "sha256:7b27666c0eb3dbdafa7e9b7f52cc84f15618508e88f30343973c28db87a7407c",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/14-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30474,
+        "outputHash": "sha256:e02f32f05c19c1f047f00b2187ffe5c7ce57d565b0e2139855aadba48331961d"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/15-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 125502,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e36e2e228bd8d18ce89f416a43f015fed2b5f95997b8df97afa81663c49cfa1f",
+      "outputHash": "sha256:06b27f30d3e9d7653f1b4a51cef58ddec83eef0fc952ccea4c81ce71c0dce442",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/15-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 49870,
+        "outputHash": "sha256:efc5ee68e180f8f14852a4a8abced6550be9951767d25dc61252ca710e08dc9e"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/16-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 97964,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:9f025f1d44ce8d7278e820e8227ac0b3d5caaf8ca18b32d15ad5b95efc312fd6",
+      "outputHash": "sha256:eff9efd126b0ef28278b887ef633c036010c25f5bab24c6cddb449fca0b2aea7",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/16-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 42526,
+        "outputHash": "sha256:6c6e03df4cf824f7ebab656a87558910c4a8bd498f29f24dfeb1230fb7b150ba"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/17-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 97830,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3051244f417e710089b47e4e4bb86a5d096ef0492c41f0be62b4b80171a14520",
+      "outputHash": "sha256:7c85a287cf0c5592de4685a0e9b59b15d84c0d138844e243006e39b8e2b72779",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/17-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43060,
+        "outputHash": "sha256:5d46ca6f715a1f43ea5c3ab54b55f8208575aeafb7d75a542a12950e8b5d0959"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/18-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 102146,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ba28c4e1b01da25de5e2b0d763d4866712ae3f957c8005a0c04d77b3a04b8b51",
+      "outputHash": "sha256:18e2d0fc592cd41cc3e43214db4d32ba5e510e0b814a47bb69bf03e93ef0ce74",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/18-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43298,
+        "outputHash": "sha256:e0b70618b1a760d050822fc70c1e1b4e3f7ad30e5a7b302f1a7bee2da35d20c1"
+      }
+    },
+    "/images/articles/us-appliance-tool-retailers/19-retailer-v3.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 111342,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:207073cd6687c50fdd5dc9fc58f86b70f768c6aba3569f8b9172b553954b12b7",
+      "outputHash": "sha256:a762642eb15a0e53153c9fa26c8be2259ea11b4d5efc0f56eb6b2a27a04ac98f",
+      "mobile": {
+        "src": "/images/articles/us-appliance-tool-retailers/19-retailer-v3-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 47378,
+        "outputHash": "sha256:7b8c3a77fbfee765d4c687934350f51a8ed2064e9f6f41778c5161dd1b31f2cd"
       }
     },
     "/images/articles/uwant-resilience-in-china-cleaning-appliances/01-cover.webp": {
@@ -34924,13 +35700,31 @@
       "body": []
     },
     "european-appliance-retail-channels": {
-      "budgetClass": "standard",
+      "budgetClass": "deep",
       "cover": "/images/articles/european-appliance-retail-channels/01-cover.webp",
       "body": [
-        "/images/articles/european-appliance-retail-channels/02-store-floor.webp",
-        "/images/articles/european-appliance-retail-channels/03-group-map.webp",
-        "/images/articles/european-appliance-retail-channels/04-silvercrest.webp",
-        "/images/articles/european-appliance-retail-channels/05-coolblue.webp"
+        "/images/articles/european-appliance-retail-channels/02-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/03-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/04-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/05-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/06-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/07-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/08-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/09-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/10-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/11-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/12-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/13-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/14-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/15-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/16-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/17-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/18-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/19-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/20-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/21-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/22-channel-v3.webp",
+        "/images/articles/european-appliance-retail-channels/23-channel-v3.webp"
       ]
     },
     "european-tool-brands-battery-alliances": {
@@ -35072,13 +35866,19 @@
       ]
     },
     "global-power-tool-companies": {
-      "budgetClass": "standard",
+      "budgetClass": "deep",
       "cover": "/images/articles/global-power-tool-companies/01-cover.webp",
       "body": [
-        "/images/articles/global-power-tool-companies/02-brand-groups-v2.webp",
-        "/images/articles/global-power-tool-companies/03-battery-alliances.webp",
-        "/images/articles/global-power-tool-companies/04-galli.webp",
-        "/images/articles/global-power-tool-companies/05-festool.webp"
+        "/images/articles/global-power-tool-companies/02-company-v3.webp",
+        "/images/articles/global-power-tool-companies/03-company-v3.webp",
+        "/images/articles/global-power-tool-companies/04-company-v3.webp",
+        "/images/articles/global-power-tool-companies/05-company-v3.webp",
+        "/images/articles/global-power-tool-companies/06-company-v3.webp",
+        "/images/articles/global-power-tool-companies/07-company-v3.webp",
+        "/images/articles/global-power-tool-companies/08-company-v3.webp",
+        "/images/articles/global-power-tool-companies/09-company-v3.webp",
+        "/images/articles/global-power-tool-companies/10-company-v3.webp",
+        "/images/articles/global-power-tool-companies/11-company-v3.webp"
       ]
     },
     "groupe-seb-2018-annual-report-signals": {
@@ -35625,12 +36425,12 @@
       "budgetClass": "standard",
       "cover": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover.webp",
       "body": [
-        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-karcher.webp",
-        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-karcher.webp",
-        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-hd-555.webp",
-        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-hartmut-jenner.webp",
-        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-rail-tank-cleaning.webp",
-        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-rc-3000.webp"
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-v3.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-v3.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-household-v3.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-jenner-v3.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-scale-v3.webp",
+        "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-robotics-v3.webp"
       ]
     },
     "karcher-hidden-champion-in-cleaning-appliances": {
@@ -35913,10 +36713,12 @@
       "budgetClass": "standard",
       "cover": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/01-cover.webp",
       "body": [
-        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-auchan-origins.webp",
-        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-decathlon-englos.webp",
-        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-pascal-roche.webp",
-        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-auchan-englos.webp"
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-family-v3.webp",
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-origins-v3.webp",
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-ventures-v3.webp",
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-electro-v3.webp",
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/06-network-v3.webp",
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/07-results-v3.webp"
       ]
     },
     "narwal-and-the-self-cleaning-robot-vacuum": {
@@ -37285,13 +38087,27 @@
       ]
     },
     "us-appliance-tool-retailers": {
-      "budgetClass": "standard",
+      "budgetClass": "deep",
       "cover": "/images/articles/us-appliance-tool-retailers/01-cover.webp",
       "body": [
-        "/images/articles/us-appliance-tool-retailers/02-appliance-sales.webp",
-        "/images/articles/us-appliance-tool-retailers/03-walmart.webp",
-        "/images/articles/us-appliance-tool-retailers/04-harbor-freight.webp",
-        "/images/articles/us-appliance-tool-retailers/05-independent-networks.webp"
+        "/images/articles/us-appliance-tool-retailers/02-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/03-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/04-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/05-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/06-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/07-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/08-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/09-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/10-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/11-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/12-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/13-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/14-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/15-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/16-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/17-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/18-retailer-v3.webp",
+        "/images/articles/us-appliance-tool-retailers/19-retailer-v3.webp"
       ]
     },
     "uwant-resilience-in-china-cleaning-appliances": {
@@ -39015,27 +39831,117 @@
         "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/european-appliance-retail-channels/01-cover.webp",
-          "hash": "sha256:8d332de64d7b2bd01b96ab9cf86949905c371b4a940a8b70f5f0ad680a89f69a"
+          "hash": "sha256:e9e6e6ce17d66acc6f7b9a6bd2b036329949723641efb3742df744945595d0b2"
         },
-        "02-store-floor.webp": {
+        "02-channel-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/european-appliance-retail-channels/02-store-floor.webp",
-          "hash": "sha256:7a17d1809ba455f36f2aa05ce6fec13ca8c19b07c742df226d57221afe78f8ac"
+          "primary": "/images/articles/european-appliance-retail-channels/02-channel-v3.webp",
+          "hash": "sha256:43464d6479ade2e92984178ed064b95262be604129d233aaf20c0d0a0bf9f15d"
         },
-        "03-group-map.webp": {
+        "03-channel-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/european-appliance-retail-channels/03-group-map.webp",
-          "hash": "sha256:79261bb88228361da08d7f13aa391b09e52ed889b2a82d9f7507710b84bc6e11"
+          "primary": "/images/articles/european-appliance-retail-channels/03-channel-v3.webp",
+          "hash": "sha256:3d20caf5916a1ddcee9c000542bcea0e23752ab38c55cde15557e3ee6d6f4271"
         },
-        "04-silvercrest.png": {
+        "04-channel-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/european-appliance-retail-channels/04-silvercrest.webp",
-          "hash": "sha256:357f972d2a3b809c456f5e3e71572c6cbae17b450e76225abe4183c285893ab5"
+          "primary": "/images/articles/european-appliance-retail-channels/04-channel-v3.webp",
+          "hash": "sha256:f822460b93db8f274432110af73f9fc948931c73a3537e5ca391c3ad2f64d447"
         },
-        "05-coolblue.jpg": {
+        "05-channel-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/european-appliance-retail-channels/05-coolblue.webp",
-          "hash": "sha256:51f14969ca110e34d6d6868d821492d298c26965e0e15f36142def6719eb610b"
+          "primary": "/images/articles/european-appliance-retail-channels/05-channel-v3.webp",
+          "hash": "sha256:41ca9a8e58fa66c52d8e116478a960d08f6574fee23d64b8af808bdbbfc750fe"
+        },
+        "06-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/06-channel-v3.webp",
+          "hash": "sha256:c26cfbda016493917953231209587484632d6967b6453ba7394d320d460fcdac"
+        },
+        "07-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/07-channel-v3.webp",
+          "hash": "sha256:2e47a940818dbf6a9103a9fe3f54e5d2c9f295b731c5b2aacddd0b69c9379d1d"
+        },
+        "08-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/08-channel-v3.webp",
+          "hash": "sha256:0be81dda85163635723c383f9d96e8ccdffb957c95774c25b1200c4880fe2278"
+        },
+        "09-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/09-channel-v3.webp",
+          "hash": "sha256:5a97ac9afb3cd7c97d485c274a5fada38c97e64660009274513a023039461839"
+        },
+        "10-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/10-channel-v3.webp",
+          "hash": "sha256:bc2785869be3a275a41738df9e33f1789c83d606a82c7c1c11c3084ef0c412ab"
+        },
+        "11-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/11-channel-v3.webp",
+          "hash": "sha256:4a7f9ac42d3732c2d62ad6e5c8b2985174e6a82b9f07848fb75d54e28daa7e4d"
+        },
+        "12-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/12-channel-v3.webp",
+          "hash": "sha256:604ce24f7e2251596bbfa88ee843fdcaa799997caeb18cddac9ba050ebefecdc"
+        },
+        "13-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/13-channel-v3.webp",
+          "hash": "sha256:a3f72fcb6750a6adf8bb872016af930c1c6701912b593db504d1563ed153345c"
+        },
+        "14-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/14-channel-v3.webp",
+          "hash": "sha256:87f69c09c4df9b8dd9105eda39eff47a904d92ca7a4d8de01a678221029c60e8"
+        },
+        "15-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/15-channel-v3.webp",
+          "hash": "sha256:3e63c6bcb7c0515ce1780da6603bebd2f86b2ed46b17afdade5ba7623a14cd95"
+        },
+        "16-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/16-channel-v3.webp",
+          "hash": "sha256:feb3a172687e06658fcd96e2f1a551b74ee173bc691f4aa73f25eb1d302a0b8c"
+        },
+        "17-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/17-channel-v3.webp",
+          "hash": "sha256:17b6c7a30b9f9267da95d5919cfef5344021ae6679ad5ab87b8c536b98fa9c56"
+        },
+        "18-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/18-channel-v3.webp",
+          "hash": "sha256:907c4108f49c48ce1399ecc16ae3f5329ce95c6f809a95cf44984f848f25badf"
+        },
+        "19-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/19-channel-v3.webp",
+          "hash": "sha256:6514b44867d20cfa67d4b485f46ee9afb947e2e8a10320c5612a34e8c0bf8c09"
+        },
+        "20-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/20-channel-v3.webp",
+          "hash": "sha256:e6d6b9f19136a431ef43f96a67c9b596a43ffe9fda7cc5f6322b820f1804a090"
+        },
+        "21-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/21-channel-v3.webp",
+          "hash": "sha256:9c445413d6bcfef799a12b123466879ff895f78aa8615f9b48a67e3fd89c5626"
+        },
+        "22-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/22-channel-v3.webp",
+          "hash": "sha256:371cacdfa29136c1adfab57e32bb1fbf188172f33a3f5e8c463e9116e5a306b8"
+        },
+        "23-channel-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/european-appliance-retail-channels/23-channel-v3.webp",
+          "hash": "sha256:f4b7ea00a46f84680ed8ca3fa364aadb9437a7720d0205489d1f7bdd3fd75ec3"
         }
       }
     },
@@ -39044,27 +39950,57 @@
         "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/global-power-tool-companies/01-cover.webp",
-          "hash": "sha256:8d7f21594808b9edd21d436bd099797145df6131eb1efb7ee5853f6bad23548b"
+          "hash": "sha256:ff800658f95c63bcfed16869e16f6d1753f3435d494da90a0242d3800390ed10"
         },
-        "02-brand-groups-v2.webp": {
+        "02-company-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/global-power-tool-companies/02-brand-groups-v2.webp",
-          "hash": "sha256:2caaff00a1d162dae1517af72490f3d700c81c5c90655e8f2e55a61b38d536a6"
+          "primary": "/images/articles/global-power-tool-companies/02-company-v3.webp",
+          "hash": "sha256:b84b13893369e5d9ed074f95a790b4d5f44394230244004d1be42cfa93a260e0"
         },
-        "03-battery-alliances.webp": {
+        "03-company-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/global-power-tool-companies/03-battery-alliances.webp",
-          "hash": "sha256:b9df40860b82cb6c2044ac575cfc50c4ae58020bf568e5c7261b4dcfd8fd5340"
+          "primary": "/images/articles/global-power-tool-companies/03-company-v3.webp",
+          "hash": "sha256:ae68c889a95f4d2eef60a7d35a303fe56481acff05d6f0c6ecb2e4dd6d89864a"
         },
-        "04-galli.webp": {
+        "04-company-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/global-power-tool-companies/04-galli.webp",
-          "hash": "sha256:988311f78746557da4b6f81c3889711560d936604206ce33b07cc722cbc1cca0"
+          "primary": "/images/articles/global-power-tool-companies/04-company-v3.webp",
+          "hash": "sha256:087c97f8624d2fcc96409de8bf984f0599b6119d9452f7985776f5f5a7fc3f09"
         },
-        "05-festool.webp": {
+        "05-company-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/global-power-tool-companies/05-festool.webp",
-          "hash": "sha256:d505df985c47b18d1bd22205527061259de42cc8dcc07c71a63b57637a8a0187"
+          "primary": "/images/articles/global-power-tool-companies/05-company-v3.webp",
+          "hash": "sha256:6121063557dcd5737a126bbf13904288b6d688ffa6359abe1c942ded2db0bff2"
+        },
+        "06-company-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/06-company-v3.webp",
+          "hash": "sha256:45fc5da09c234ebaf3c1bff8c276754e7b5ae219734f669d3854beb22f27a2c5"
+        },
+        "07-company-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/07-company-v3.webp",
+          "hash": "sha256:534305740318e19214348e1b4ed9995efc4c190037e52b505ab5bea00fc13d6f"
+        },
+        "08-company-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/08-company-v3.webp",
+          "hash": "sha256:458f3090b3155732a43c49601da790edfc1d97add14fd297cc8ee12f29937a7e"
+        },
+        "09-company-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/09-company-v3.webp",
+          "hash": "sha256:70c8af29b55ffdb48302287b601a27186d71b09b0774c602d302de7ea6283bdd"
+        },
+        "10-company-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/10-company-v3.webp",
+          "hash": "sha256:0fe97febbe3891dfbd107c17dcf6b1732c94a2fc7e09f3d73dad941620fdc3ea"
+        },
+        "11-company-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/11-company-v3.webp",
+          "hash": "sha256:79d5003f604b6b3c77bf29f69723cf2e0a6c515f84755f8bca1df451fd99b2e5"
         }
       }
     },
@@ -39346,40 +40282,40 @@
     },
     "karcher-family-business-alfred-irene-hartmut-jenner": {
       "files": {
-        "01-cover.jpg": {
+        "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/01-cover.webp",
-          "hash": "sha256:596ddc76da4ea97573081410bf629c8793de7abefaea215107cf6023d738c848"
+          "hash": "sha256:100ab9e7d1bf9f7bdffac7adf2db2517518073c540137219095121bcf8320971"
         },
-        "02-alfred-karcher.jpg": {
+        "02-alfred-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-karcher.webp",
-          "hash": "sha256:6b0398420dec7fb2599878dcae3bc89caea3ec4d6a9c941ff3591177745d904d"
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/02-alfred-v3.webp",
+          "hash": "sha256:10ca2ac76975be0e1d1845da9440a51b68d61669bf0125ce068818e591f01060"
         },
-        "03-irene-karcher.jpg": {
+        "03-irene-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-karcher.webp",
-          "hash": "sha256:dc8b06704f1aa6ac66b32661dfc06ec78a4ba305ae8faa0cf491126a9c7aee03"
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/03-irene-v3.webp",
+          "hash": "sha256:ad8190a9dc6e211213ca36e23082e5f3856396fbc44bb7d558168e036a2563dc"
         },
-        "04-hd-555.jpg": {
+        "04-household-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-hd-555.webp",
-          "hash": "sha256:2279f034ae4f2ecf58442dcee94a87f52c645605e60fb71bb5f662dc214f0029"
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/04-household-v3.webp",
+          "hash": "sha256:548e5dc8af6d74425c10ddcafb0fd82eb747a182055151275bcea7b60c6fb046"
         },
-        "05-hartmut-jenner.jpg": {
+        "05-jenner-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-hartmut-jenner.webp",
-          "hash": "sha256:8a7ff071ddf715e4967698bf7f3374be6877370a728d275abf469075c409c276"
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/05-jenner-v3.webp",
+          "hash": "sha256:cb94270a17e5dea941ff87b50fe9c88605caebfc71e2478b5f9d745523570520"
         },
-        "06-rail-tank-cleaning.jpg": {
+        "06-scale-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-rail-tank-cleaning.webp",
-          "hash": "sha256:1911ee8924cc2f540da001c34eb89aa29d18a721cca72e7dc3d68fae01cf3eec"
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/06-scale-v3.webp",
+          "hash": "sha256:a807028a564448c524049b4f798b89ce811f33e0f4fce5660716de6436e58b1a"
         },
-        "07-rc-3000.jpg": {
+        "07-robotics-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-rc-3000.webp",
-          "hash": "sha256:284c23021163992df682301ce7adee7d4af7b458837eba72f477cbf4450a684f"
+          "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-robotics-v3.webp",
+          "hash": "sha256:ee3beebcfd378d801c735b157ee5e43c3e2f3aa6c53c65382dd4a13883dd0ffa"
         }
       }
     },
@@ -39558,30 +40494,40 @@
     },
     "mulliez-family-auchan-decathlon-leroy-merlin-electro-depot": {
       "files": {
-        "01-cover.png": {
+        "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/01-cover.webp",
-          "hash": "sha256:7f4646f202389f7fc0c133b99b364b0852039e12783a3add8493a08a937033dd"
+          "hash": "sha256:ead0b3d496752eddd0b2300cd9b0f642405c7c828a49fa57426990e99f8dffe5"
         },
-        "02-auchan-origins.png": {
+        "02-family-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-auchan-origins.webp",
-          "hash": "sha256:c80a04a8ea9b278a907578b5b0217888a7dab9fafde989537a15028ee091ad9c"
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-family-v3.webp",
+          "hash": "sha256:a33d0e38139707fb01356eeb0f85ac586b51b72a0cb6859d8d62f4b27127b4dd"
         },
-        "03-decathlon-englos.jpg": {
+        "03-origins-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-decathlon-englos.webp",
-          "hash": "sha256:b0346bc200df9a980e6083ba4f15778fb6018b2592ff243977d0ac693f55d372"
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-origins-v3.webp",
+          "hash": "sha256:041e9075eb1cf3fe86c89464de881dc4fb7d3927d95d092149f93f022390dbe7"
         },
-        "04-pascal-roche.png": {
+        "04-ventures-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-pascal-roche.webp",
-          "hash": "sha256:cede24f4dd39bd612da8ae772b7ba340633396068045566c53b00981e0ac098a"
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-ventures-v3.webp",
+          "hash": "sha256:3343e4ab93e691acdcd3edfc15b7fb40cb47762b0b4a39105869a97bd93fbc96"
         },
-        "05-auchan-englos.jpg": {
+        "05-electro-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-auchan-englos.webp",
-          "hash": "sha256:87012b26e8fd1eb6ce6b791559814aac53dfa96ab860e1065f987063e5a01520"
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-electro-v3.webp",
+          "hash": "sha256:9df0700a625744953b589417292994c78b916d160ab9036dd8f0ac4ad0828220"
+        },
+        "06-network-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/06-network-v3.webp",
+          "hash": "sha256:e5bc2db7fe88b608cdf6c8bc4e925fee563259112f6c978481af885b4ad1be84"
+        },
+        "07-results-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/07-results-v3.webp",
+          "hash": "sha256:6659f838699508cac8f2a4b80af69f572440cc83c0b6d82a189fc68d074c9efb"
         }
       }
     },
@@ -40374,27 +41320,97 @@
         "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/us-appliance-tool-retailers/01-cover.webp",
-          "hash": "sha256:3dd3365a3f0dee64d5cf3cc8adde4d55a764c090b2492828e0ae634917f78926"
+          "hash": "sha256:5c1218259d2f2e1c1683eaeb8c9633f70114897f781b6c873aa825755a0c3a44"
         },
-        "02-appliance-sales.webp": {
+        "02-retailer-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/us-appliance-tool-retailers/02-appliance-sales.webp",
-          "hash": "sha256:52db69524347ba93dcf416a90ff4e802b5f712ab85d5740c24f2f2daf15ac6c6"
+          "primary": "/images/articles/us-appliance-tool-retailers/02-retailer-v3.webp",
+          "hash": "sha256:e2a6712a6f142c35ab15c2e63b76e60a1e17bc410daed181f5eb7c42411eace7"
         },
-        "03-walmart.webp": {
+        "03-retailer-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/us-appliance-tool-retailers/03-walmart.webp",
-          "hash": "sha256:b41a8607c5c089f7cb17340274bba6dcd78f363403691468d998eb84a2e95c48"
+          "primary": "/images/articles/us-appliance-tool-retailers/03-retailer-v3.webp",
+          "hash": "sha256:bf8e27a8da29e2fda3de4543d128987e33c331f4a2c604b6a2ca1e5a48f17613"
         },
-        "04-harbor-freight.webp": {
+        "04-retailer-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/us-appliance-tool-retailers/04-harbor-freight.webp",
-          "hash": "sha256:ff1a02101d7977440100ecde2e77c398c73fb5586b33f7099b5d5f758689f1b3"
+          "primary": "/images/articles/us-appliance-tool-retailers/04-retailer-v3.webp",
+          "hash": "sha256:4c40ca4aad7afefcb3cfdf056bbf7a52a8a9387dc926fff0acd9667e7e7978f0"
         },
-        "05-independent-networks.webp": {
+        "05-retailer-v3.webp": {
           "status": "matched",
-          "primary": "/images/articles/us-appliance-tool-retailers/05-independent-networks.webp",
-          "hash": "sha256:bd5162e876fa5f79c24001b2d25d0f49bf6fd281abadce7392717f97d1a8f53e"
+          "primary": "/images/articles/us-appliance-tool-retailers/05-retailer-v3.webp",
+          "hash": "sha256:7479ac013443efd6b2432733a5a77e1865a3cf7bf2458cdc90629bda1070ce4a"
+        },
+        "06-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/06-retailer-v3.webp",
+          "hash": "sha256:7d19cbf5283c853b636ec4d52f7d9ddef3d0e9e5851571ee6d2bf7483070df63"
+        },
+        "07-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/07-retailer-v3.webp",
+          "hash": "sha256:cdb302283bce4bdd38450a36796b989187228e23cf3b3cf1bae47d0d9fa80cf3"
+        },
+        "08-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/08-retailer-v3.webp",
+          "hash": "sha256:ec6dc604db9b43d2c51b27270e4d2665ed9118e0dac4f4c59ee08877f91fad77"
+        },
+        "09-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/09-retailer-v3.webp",
+          "hash": "sha256:90a31ddf217f275d00abd68b6a2398c1fa28dab7390a3ca41653ecb4af31947e"
+        },
+        "10-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/10-retailer-v3.webp",
+          "hash": "sha256:743d1943d58971f2eb659bfcf39e2edf80482cb7d7307ffb0f3d1b0bb0b3a714"
+        },
+        "11-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/11-retailer-v3.webp",
+          "hash": "sha256:5109f5083c1b3baeec29846861bed7bae61de65479a6c882e7a90f142d8cceb2"
+        },
+        "12-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/12-retailer-v3.webp",
+          "hash": "sha256:38b4c1f40c31d01a881140675998ca35324603c1e7ba6b78f3c39cc5a6ecc875"
+        },
+        "13-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/13-retailer-v3.webp",
+          "hash": "sha256:cd4b8d073280c212e95f2d68724787b262693a5682b9d7a0b620c5e2be5673f8"
+        },
+        "14-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/14-retailer-v3.webp",
+          "hash": "sha256:bdfcb82c764e27b00df2b83dbb9b10aa2c158425b474c916bca3785a05272227"
+        },
+        "15-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/15-retailer-v3.webp",
+          "hash": "sha256:e36e2e228bd8d18ce89f416a43f015fed2b5f95997b8df97afa81663c49cfa1f"
+        },
+        "16-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/16-retailer-v3.webp",
+          "hash": "sha256:9f025f1d44ce8d7278e820e8227ac0b3d5caaf8ca18b32d15ad5b95efc312fd6"
+        },
+        "17-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/17-retailer-v3.webp",
+          "hash": "sha256:3051244f417e710089b47e4e4bb86a5d096ef0492c41f0be62b4b80171a14520"
+        },
+        "18-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/18-retailer-v3.webp",
+          "hash": "sha256:ba28c4e1b01da25de5e2b0d763d4866712ae3f957c8005a0c04d77b3a04b8b51"
+        },
+        "19-retailer-v3.webp": {
+          "status": "matched",
+          "primary": "/images/articles/us-appliance-tool-retailers/19-retailer-v3.webp",
+          "hash": "sha256:207073cd6687c50fdd5dc9fc58f86b70f768c6aba3569f8b9172b553954b12b7"
         }
       }
     },
