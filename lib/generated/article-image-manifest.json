@@ -5270,17 +5270,17 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 209644,
+      "bytes": 159660,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:7271c2332173c5898ec111b136f6a82911265aa56e666a58c2dd1a2d5d6f1669",
-      "outputHash": "sha256:547f7c6531cbb00c3cd0184510162de5c0b52d428b815042b45f5a7d0175e010",
+      "sourceHash": "sha256:13cca8928be76632875964107ebdd9315df7ca66e115a6a58c5e6e35138f6e05",
+      "outputHash": "sha256:4222e1f52941b139386ff8a951dec057986eca4751fc465c7897ab35e6cb7804",
       "mobile": {
         "src": "/images/articles/pan-longquan-joe-galli-chervon/02-pan-flex-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 66318,
-        "outputHash": "sha256:2d7ed386d63bdaa5cbaec659877336142493d9f3871ad6718e344feeb41de7c6"
+        "bytes": 54426,
+        "outputHash": "sha256:1b307d5e7bd8984531999444ab1304a749933efd31742f01ba5fee13e244a117"
       }
     },
     "/images/articles/pan-longquan-joe-galli-chervon/03-ego.webp": {
@@ -5288,17 +5288,17 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 45770,
+      "bytes": 82504,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:40ed854d554f1d12afaf6c05325ad8a5f41f6a85e8d346ebff3915b4ad846703",
-      "outputHash": "sha256:cdb630be046146df29a22db5c4d1012e4e9b5923086021241b512d6edfa5f99b",
+      "sourceHash": "sha256:9d88b3889eeea10304b715a85324f17ffe04ef270c0907377d7597d808b3b8e1",
+      "outputHash": "sha256:0b55d4cb70c4e8f6b2499a2edb437be8b05c96d9adbe6b8f9b97db05447e135f",
       "mobile": {
         "src": "/images/articles/pan-longquan-joe-galli-chervon/03-ego-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 16052,
-        "outputHash": "sha256:044d2dba984c9e5e52d3175fecb010829f516ab1f375c7b647ba49bc5fa1da69"
+        "bytes": 29800,
+        "outputHash": "sha256:86fad0d6027c92fefa9338e5e2304a0de8f7dd80afb1afc74bb75df0fd062923"
       }
     },
     "/images/articles/pan-longquan-joe-galli-chervon/04-competition.webp": {
@@ -5306,17 +5306,17 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 49892,
+      "bytes": 117480,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:24d9a30a65c66d7e08682a4ce49ab92cd1c399c2c30aacdfb482c23f90b8b8c0",
-      "outputHash": "sha256:a642ab03db6bd267e3532c6686956dd1e38576976a156b10dfbf7c54bf49cfb1",
+      "sourceHash": "sha256:1903d91d33566e33420eaa863155174260fe12cae1cfbb6e60fc0e816658ec76",
+      "outputHash": "sha256:6089fa349f0540a7f429737eeba15fcd82bd1fd529ea4da34fef36dc55d792be",
       "mobile": {
         "src": "/images/articles/pan-longquan-joe-galli-chervon/04-competition-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 21698,
-        "outputHash": "sha256:da6cb5988eac5c46bb130b2e50855af5e55100cbb756b4c3f9cc1c476ac82fa7"
+        "bytes": 44424,
+        "outputHash": "sha256:adee6d75fabd57adcf6065d756330a16693a0f95d5f5c096a3af60f41bad2cda"
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp": {
@@ -40668,17 +40668,17 @@
         "02-pan-flex.webp": {
           "status": "matched",
           "primary": "/images/articles/pan-longquan-joe-galli-chervon/02-pan-flex.webp",
-          "hash": "sha256:7271c2332173c5898ec111b136f6a82911265aa56e666a58c2dd1a2d5d6f1669"
+          "hash": "sha256:13cca8928be76632875964107ebdd9315df7ca66e115a6a58c5e6e35138f6e05"
         },
         "03-ego.webp": {
           "status": "matched",
           "primary": "/images/articles/pan-longquan-joe-galli-chervon/03-ego.webp",
-          "hash": "sha256:40ed854d554f1d12afaf6c05325ad8a5f41f6a85e8d346ebff3915b4ad846703"
+          "hash": "sha256:9d88b3889eeea10304b715a85324f17ffe04ef270c0907377d7597d808b3b8e1"
         },
         "04-competition.webp": {
           "status": "matched",
           "primary": "/images/articles/pan-longquan-joe-galli-chervon/04-competition.webp",
-          "hash": "sha256:24d9a30a65c66d7e08682a4ce49ab92cd1c399c2c30aacdfb482c23f90b8b8c0"
+          "hash": "sha256:1903d91d33566e33420eaa863155174260fe12cae1cfbb6e60fc0e816658ec76"
         }
       }
     },
