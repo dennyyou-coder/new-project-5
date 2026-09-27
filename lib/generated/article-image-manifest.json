@@ -1205,7 +1205,7 @@
       }
     },
     "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1781,7 +1781,7 @@
       }
     },
     "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 855,
       "height": 800,
@@ -2352,7 +2352,7 @@
       }
     },
     "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 720,
       "height": 403,
@@ -2417,7 +2417,7 @@
       }
     },
     "/images/articles/european-appliance-retail-channels/03-group-map.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2535,6 +2535,96 @@
         "outputHash": "sha256:c09c9704b71be1f6ea4a1811ab0dfae4cac80890fcaa7d171593528e7835e909"
       }
     },
+    "/images/articles/global-power-tool-companies/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 134376,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8d7f21594808b9edd21d436bd099797145df6131eb1efb7ee5853f6bad23548b",
+      "outputHash": "sha256:85abd08ab5f180cc4e058eb4f20c63e5889462c33d4cd3559176f07e13106620",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 39640,
+        "outputHash": "sha256:6faf39b06ba003baf868a4166a47e3ae908d0c01256756486957ed21d64d6419"
+      }
+    },
+    "/images/articles/global-power-tool-companies/02-brand-groups.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 66286,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:97ebab8c5410eb9cd5a86c88acb89b0fd08c13853cb08d89a6738cc2c4d76309",
+      "outputHash": "sha256:385317a1fe0a077659d5b53069cec2ca08b691f51ed45c76457d19b5064bb550",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/02-brand-groups-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 28878,
+        "outputHash": "sha256:add5952eea7b1117301d50c2ef327f64b83165eb995307d714c7ba1fd15cd771"
+      }
+    },
+    "/images/articles/global-power-tool-companies/03-battery-alliances.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69532,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b9df40860b82cb6c2044ac575cfc50c4ae58020bf568e5c7261b4dcfd8fd5340",
+      "outputHash": "sha256:ac47585c59dbccc75918c44e08e9fb4eb18f49abb83dc72d829a65eb0f734f59",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/03-battery-alliances-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30454,
+        "outputHash": "sha256:a1c7ee107216143ce8cbe56369be68d5a73aaf3f2e1ad62de54e2685f39dcecd"
+      }
+    },
+    "/images/articles/global-power-tool-companies/04-galli.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41052,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:988311f78746557da4b6f81c3889711560d936604206ce33b07cc722cbc1cca0",
+      "outputHash": "sha256:2d39e8962536c7d5318377c587b871ac7678bb7cabd80fee2f43578a8c4cef6c",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/04-galli-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17662,
+        "outputHash": "sha256:1987afbda1dfa89b4e2fa3de7ea623279b26aeefb718dfcaccdd9eba5185850c"
+      }
+    },
+    "/images/articles/global-power-tool-companies/05-festool.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 62792,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d505df985c47b18d1bd22205527061259de42cc8dcc07c71a63b57637a8a0187",
+      "outputHash": "sha256:f3529db386b749cb90a74d94fa2c4997d786f222246a105084e6a4e981cc5f37",
+      "mobile": {
+        "src": "/images/articles/global-power-tool-companies/05-festool-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18058,
+        "outputHash": "sha256:4115a044ff62bb61f5526a8c3b81af76adcec8b843fa63494650f36c90a03364"
+      }
+    },
     "/images/articles/groupe-seb-global-household-business/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -2554,7 +2644,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/02-brand-product-map.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2572,7 +2662,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/03-professional-coffee.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2590,7 +2680,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2626,7 +2716,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2644,7 +2734,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4284,7 +4374,7 @@
       "outputHash": "sha256:a8fcd88a00e44c78d7acea4d51a9f243e26919c4c6d712d094482c585ccc67bb"
     },
     "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-pascal-roche.webp": {
-      "role": "transparent",
+      "role": "body",
       "kind": "transparent",
       "width": 1052,
       "height": 845,
@@ -4526,7 +4616,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/02-founders.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4544,7 +4634,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4562,7 +4652,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4580,7 +4670,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/05-product-portfolio.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4598,7 +4688,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/06-manufacturing.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4616,7 +4706,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4652,7 +4742,7 @@
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/02-manufacturing.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4670,7 +4760,7 @@
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/03-coffee.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4688,7 +4778,7 @@
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/04-floorcare.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6392,7 +6482,7 @@
       }
     },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6421,7 +6511,7 @@
       }
     },
     "/images/articles/steve-richman-milwaukee-growth/02-career.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6547,7 +6637,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6565,7 +6655,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6583,7 +6673,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -6655,7 +6745,7 @@
       }
     },
     "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 655,
@@ -6889,7 +6979,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6907,7 +6997,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6925,7 +7015,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6943,7 +7033,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6961,7 +7051,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -6997,7 +7087,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/02-appliance-sales.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -7051,7 +7141,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/05-independent-networks.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -34909,6 +34999,16 @@
         "/images/insights/global-power-tool-brands-reshaping-portfolios-image-02.jpg"
       ]
     },
+    "global-power-tool-companies": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/global-power-tool-companies/01-cover.webp",
+      "body": [
+        "/images/articles/global-power-tool-companies/02-brand-groups.webp",
+        "/images/articles/global-power-tool-companies/03-battery-alliances.webp",
+        "/images/articles/global-power-tool-companies/04-galli.webp",
+        "/images/articles/global-power-tool-companies/05-festool.webp"
+      ]
+    },
     "groupe-seb-2018-annual-report-signals": {
       "budgetClass": "standard",
       "cover": "/images/insights/groupe-seb-2018-annual-report-signals-cover.jpg",
@@ -38855,6 +38955,35 @@
           "status": "matched",
           "primary": "/images/articles/european-appliance-retail-channels/05-coolblue.webp",
           "hash": "sha256:51f14969ca110e34d6d6868d821492d298c26965e0e15f36142def6719eb610b"
+        }
+      }
+    },
+    "global-power-tool-companies": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/01-cover.webp",
+          "hash": "sha256:8d7f21594808b9edd21d436bd099797145df6131eb1efb7ee5853f6bad23548b"
+        },
+        "02-brand-groups.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/02-brand-groups.webp",
+          "hash": "sha256:97ebab8c5410eb9cd5a86c88acb89b0fd08c13853cb08d89a6738cc2c4d76309"
+        },
+        "03-battery-alliances.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/03-battery-alliances.webp",
+          "hash": "sha256:b9df40860b82cb6c2044ac575cfc50c4ae58020bf568e5c7261b4dcfd8fd5340"
+        },
+        "04-galli.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/04-galli.webp",
+          "hash": "sha256:988311f78746557da4b6f81c3889711560d936604206ce33b07cc722cbc1cca0"
+        },
+        "05-festool.webp": {
+          "status": "matched",
+          "primary": "/images/articles/global-power-tool-companies/05-festool.webp",
+          "hash": "sha256:d505df985c47b18d1bd22205527061259de42cc8dcc07c71a63b57637a8a0187"
         }
       }
     },
