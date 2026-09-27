@@ -2554,7 +2554,7 @@
       }
     },
     "/images/articles/global-power-tool-companies/02-brand-groups-v2.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2572,7 +2572,7 @@
       }
     },
     "/images/articles/global-power-tool-companies/03-battery-alliances.webp": {
-      "role": "chart",
+      "role": "body",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4721,6 +4721,78 @@
         "height": 450,
         "bytes": 45480,
         "outputHash": "sha256:95452232b70bf5860b9d9857909f54336f37122f11d912e13e073a72f269d0bb"
+      }
+    },
+    "/images/articles/pan-longquan-joe-galli-chervon/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42580,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c54f56211b959fe4673fa22021ea04381ec201f4d9af83a4899cebd760fd8e56",
+      "outputHash": "sha256:726180292a5fdcae9e4ecda806ca8c311b4da6fa657a500ab0040d59335dd2a2",
+      "mobile": {
+        "src": "/images/articles/pan-longquan-joe-galli-chervon/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17724,
+        "outputHash": "sha256:aac3b2cd6f25ab74488ade16a48c9c5ee4f283fd1a4955cafba6d112ab2f7821"
+      }
+    },
+    "/images/articles/pan-longquan-joe-galli-chervon/02-pan-flex.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 209644,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7271c2332173c5898ec111b136f6a82911265aa56e666a58c2dd1a2d5d6f1669",
+      "outputHash": "sha256:547f7c6531cbb00c3cd0184510162de5c0b52d428b815042b45f5a7d0175e010",
+      "mobile": {
+        "src": "/images/articles/pan-longquan-joe-galli-chervon/02-pan-flex-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 66318,
+        "outputHash": "sha256:2d7ed386d63bdaa5cbaec659877336142493d9f3871ad6718e344feeb41de7c6"
+      }
+    },
+    "/images/articles/pan-longquan-joe-galli-chervon/03-ego.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45770,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:40ed854d554f1d12afaf6c05325ad8a5f41f6a85e8d346ebff3915b4ad846703",
+      "outputHash": "sha256:cdb630be046146df29a22db5c4d1012e4e9b5923086021241b512d6edfa5f99b",
+      "mobile": {
+        "src": "/images/articles/pan-longquan-joe-galli-chervon/03-ego-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16052,
+        "outputHash": "sha256:044d2dba984c9e5e52d3175fecb010829f516ab1f375c7b647ba49bc5fa1da69"
+      }
+    },
+    "/images/articles/pan-longquan-joe-galli-chervon/04-competition.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 49892,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:24d9a30a65c66d7e08682a4ce49ab92cd1c399c2c30aacdfb482c23f90b8b8c0",
+      "outputHash": "sha256:a642ab03db6bd267e3532c6686956dd1e38576976a156b10dfbf7c54bf49cfb1",
+      "mobile": {
+        "src": "/images/articles/pan-longquan-joe-galli-chervon/04-competition-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21698,
+        "outputHash": "sha256:da6cb5988eac5c46bb130b2e50855af5e55100cbb756b4c3f9cc1c476ac82fa7"
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp": {
@@ -36015,6 +36087,15 @@
       "cover": "/images/insights/one-power-strategy-in-small-appliances-cover.jpg",
       "body": []
     },
+    "pan-longquan-joe-galli-chervon": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/pan-longquan-joe-galli-chervon/01-cover.webp",
+      "body": [
+        "/images/articles/pan-longquan-joe-galli-chervon/02-pan-flex.webp",
+        "/images/articles/pan-longquan-joe-galli-chervon/03-ego.webp",
+        "/images/articles/pan-longquan-joe-galli-chervon/04-competition.webp"
+      ]
+    },
     "philips-health-technology-versuni-home-appliances": {
       "budgetClass": "standard",
       "cover": "/images/articles/philips-health-technology-versuni-home-appliances/01-cover.webp",
@@ -39628,6 +39709,30 @@
           "status": "matched",
           "primary": "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial.webp",
           "hash": "sha256:e557286f99fde24952001ca64784fe45ae04d6f6d8f698bfb2b83330f4bdd82c"
+        }
+      }
+    },
+    "pan-longquan-joe-galli-chervon": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/pan-longquan-joe-galli-chervon/01-cover.webp",
+          "hash": "sha256:c54f56211b959fe4673fa22021ea04381ec201f4d9af83a4899cebd760fd8e56"
+        },
+        "02-pan-flex.webp": {
+          "status": "matched",
+          "primary": "/images/articles/pan-longquan-joe-galli-chervon/02-pan-flex.webp",
+          "hash": "sha256:7271c2332173c5898ec111b136f6a82911265aa56e666a58c2dd1a2d5d6f1669"
+        },
+        "03-ego.webp": {
+          "status": "matched",
+          "primary": "/images/articles/pan-longquan-joe-galli-chervon/03-ego.webp",
+          "hash": "sha256:40ed854d554f1d12afaf6c05325ad8a5f41f6a85e8d346ebff3915b4ad846703"
+        },
+        "04-competition.webp": {
+          "status": "matched",
+          "primary": "/images/articles/pan-longquan-joe-galli-chervon/04-competition.webp",
+          "hash": "sha256:24d9a30a65c66d7e08682a4ce49ab92cd1c399c2c30aacdfb482c23f90b8b8c0"
         }
       }
     },
