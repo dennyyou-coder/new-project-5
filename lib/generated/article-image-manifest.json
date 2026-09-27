@@ -4243,6 +4243,75 @@
         "outputHash": "sha256:ebcc85b1dcff933bb330be6e8078f042fd843ccf23f80ffc0da7f9d623bbb675"
       }
     },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1047,
+      "height": 589,
+      "bytes": 19840,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7f4646f202389f7fc0c133b99b364b0852039e12783a3add8493a08a937033dd",
+      "outputHash": "sha256:d1ddffd95c3264481541bb4294035d534a032569baa0972ae997c7fdd06b6f62",
+      "mobile": {
+        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12516,
+        "outputHash": "sha256:89fb9a58ce910d513d16e9a85b71aeddde07965ce56a1271331fc0c175f3296f"
+      }
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-auchan-origins.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 840,
+      "height": 578,
+      "bytes": 31232,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c80a04a8ea9b278a907578b5b0217888a7dab9fafde989537a15028ee091ad9c",
+      "outputHash": "sha256:64e1235be841007949aa923e05aa3fef9ae545080780d8f95d37502221a4aedc"
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-decathlon-englos.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 460,
+      "height": 280,
+      "bytes": 29052,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b0346bc200df9a980e6083ba4f15778fb6018b2592ff243977d0ac693f55d372",
+      "outputHash": "sha256:a8fcd88a00e44c78d7acea4d51a9f243e26919c4c6d712d094482c585ccc67bb"
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-pascal-roche.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 1052,
+      "height": 845,
+      "bytes": 120746,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cede24f4dd39bd612da8ae772b7ba340633396068045566c53b00981e0ac098a",
+      "outputHash": "sha256:60f82d8abecc41d2f7a51395cbb6c2c36e6744fb1b0dc7b7f0fca4e0d5489a78"
+    },
+    "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-auchan-englos.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1440,
+      "height": 960,
+      "bytes": 200408,
+      "format": "webp",
+      "quality": 76,
+      "sourceHash": "sha256:87012b26e8fd1eb6ce6b791559814aac53dfa96ab860e1065f987063e5a01520",
+      "outputHash": "sha256:ce4aa52d9d9b7a22f987bae9846b7420c8bfd0646cb9ba81529aaf2a266ac3bc",
+      "mobile": {
+        "src": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-auchan-englos-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 99612,
+        "outputHash": "sha256:7f87c3df6d952266fcc9b321d2841987a1052af7f3756b8b2b700e67a18f4839"
+      }
+    },
     "/images/articles/narwal-flow-2/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -35668,6 +35737,16 @@
       "cover": "/images/articles/mova-z70-ultra-roller-complete/01-cover.webp",
       "body": []
     },
+    "mulliez-family-auchan-decathlon-leroy-merlin-electro-depot": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/01-cover.webp",
+      "body": [
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-auchan-origins.webp",
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-decathlon-englos.webp",
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-pascal-roche.webp",
+        "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-auchan-englos.webp"
+      ]
+    },
     "narwal-and-the-self-cleaning-robot-vacuum": {
       "budgetClass": "standard",
       "cover": "/images/insights/narwal-and-the-self-cleaning-robot-vacuum-cover.jpg",
@@ -39264,6 +39343,35 @@
           "status": "matched",
           "primary": "/images/articles/mova-z70-ultra-roller-complete/01-cover.webp",
           "hash": "sha256:b9e8d0587aa05b8a95e772306db8af084eaefc27f1bb5f3fd7d5d80565cced74"
+        }
+      }
+    },
+    "mulliez-family-auchan-decathlon-leroy-merlin-electro-depot": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/01-cover.webp",
+          "hash": "sha256:7f4646f202389f7fc0c133b99b364b0852039e12783a3add8493a08a937033dd"
+        },
+        "02-auchan-origins.png": {
+          "status": "matched",
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/02-auchan-origins.webp",
+          "hash": "sha256:c80a04a8ea9b278a907578b5b0217888a7dab9fafde989537a15028ee091ad9c"
+        },
+        "03-decathlon-englos.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/03-decathlon-englos.webp",
+          "hash": "sha256:b0346bc200df9a980e6083ba4f15778fb6018b2592ff243977d0ac693f55d372"
+        },
+        "04-pascal-roche.png": {
+          "status": "matched",
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/04-pascal-roche.webp",
+          "hash": "sha256:cede24f4dd39bd612da8ae772b7ba340633396068045566c53b00981e0ac098a"
+        },
+        "05-auchan-englos.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mulliez-family-auchan-decathlon-leroy-merlin-electro-depot/05-auchan-englos.webp",
+          "hash": "sha256:87012b26e8fd1eb6ce6b791559814aac53dfa96ab860e1065f987063e5a01520"
         }
       }
     },
