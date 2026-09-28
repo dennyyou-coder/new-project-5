@@ -4378,6 +4378,330 @@
         "outputHash": "sha256:c2ac4066dce8b24ca46a98162e8b6299eeabf947b00acde91ee0b75d36205c90"
       }
     },
+    "/images/articles/lawn-mowing-history/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 231536,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:154c12720a091da056cdd94bfde21d1116acfb508064155abca63dacc3a30fe0",
+      "outputHash": "sha256:abdc50e8972fe3204ac7cfdd491de1176564b5184eafdca848e25d17ac636a8c",
+      "mobile": {
+        "src": "/images/articles/lawn-mowing-history/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 75848,
+        "outputHash": "sha256:11f59196140928841fe3a48223b28392890bb7516e2ccd08fa508b2517ac961f"
+      }
+    },
+    "/images/articles/lawn-mowing-history/02-budding-reel-mower.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 468,
+      "height": 560,
+      "bytes": 27998,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9f861d62171e6d1a7d8d79df218ce46ca871d62d1864a0133fa921e390b00022",
+      "outputHash": "sha256:3a4b2a8b5f6375dff794299d642abacced66f0b0b6d5f14523bd61d4e7c758d6"
+    },
+    "/images/articles/lawn-mowing-history/03-cub-cadet-1961.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 600,
+      "height": 598,
+      "bytes": 58066,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:05eea969123ef056f7fb70678cdc91de3f48e72680aa47bd1a0f7c185d987370",
+      "outputHash": "sha256:fda63d7710a222df3c57f598b77ed74d0e1e7cecdddce892f0efe85220395819"
+    },
+    "/images/articles/lawn-mowing-history/04-john-deere-110.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 600,
+      "height": 446,
+      "bytes": 72206,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:978b485068d1dac2a0d26b31bf8f1006ce38a6aa2863bcf0cfbab628b0592dc6",
+      "outputHash": "sha256:0ad177708f61db35282dfb0177f8da18c62ad727af80aaaa70903da8ef9a4716"
+    },
+    "/images/articles/lawn-mowing-history/05-hustler-first-zero-turn.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 960,
+      "height": 637,
+      "bytes": 131608,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ece07ab49096eab93b10062d7648f226b621cb848a898358d74ca2be54966e6b",
+      "outputHash": "sha256:a0e3de6493443638d5e3e91c71f830ef18a043c8745b47d261c769b9dc3de25a",
+      "mobile": {
+        "src": "/images/articles/lawn-mowing-history/05-hustler-first-zero-turn-800.webp",
+        "width": 800,
+        "height": 531,
+        "bytes": 104774,
+        "outputHash": "sha256:194a47727f61f866d3e15219d6e66dd03569ebd8a43413f4d95ca364574a04b4"
+      }
+    },
+    "/images/articles/lawn-mowing-history/06-cub-cadet-hydrostatic.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 600,
+      "height": 600,
+      "bytes": 61460,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bb79718bdc645da7aca955d329d57a91afdb3cc4df80a329d7d3671d812078e9",
+      "outputHash": "sha256:d1d0329a8756549e6a19a7ec95ab581bc90911ec990cb995920abf89f51cb0fe"
+    },
+    "/images/articles/lawn-mowing-history/07-honda-hr21.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 630,
+      "height": 560,
+      "bytes": 62762,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:cfeec6d4e10fd36608eb6fd720fb2b3001eee2b2706273808a7d7e60e3ef9f02",
+      "outputHash": "sha256:40b322421e03b133c5f4fc2bedaddd1d1b0b0c5a178e85af11c97adf0c3ed4cf"
+    },
+    "/images/articles/lawn-mowing-history/08-husqvarna-solar-mower.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 300,
+      "height": 300,
+      "bytes": 8312,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f9a7e75a8d3b6375dcaed9ae176c9e66e7011f8ea20fbdf55cc7b43d31385575",
+      "outputHash": "sha256:d415a52231345ac42e72055833c5df5f607a635fb2bc6fb3d206ee2a2d158029"
+    },
+    "/images/articles/lawn-mowing-history/09-spider-ild01.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 888,
+      "height": 613,
+      "bytes": 90072,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:33ddfd282e484752565fa99544225c0d7a3c3c93fedc31d04feeef6f368c5317",
+      "outputHash": "sha256:fd1f3c19300357bf5412472bbcf17eba52f7cc0b27d565d68ae88d9892da9c19"
+    },
+    "/images/articles/lawn-mowing-history/10-honda-miimo-2012.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 387,
+      "height": 580,
+      "bytes": 36960,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:71249e6040d9140d5a5e104886fbcce058cddeb843fefae104ed36cb4c2870f1",
+      "outputHash": "sha256:a7bdec1d8fb7b144445661a9fc4e96245c4503b910be9e5603d10558f4229ad4"
+    },
+    "/images/articles/lawn-mowing-history/11-honda-miimo-asimo.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 535,
+      "height": 580,
+      "bytes": 11918,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fc237c223e71d25ab08fcb9ff8d9cc4c292e7f4661ca27d8c80a73b0b13a3e72",
+      "outputHash": "sha256:966f13204b39a3da0f725950f557de87f0fa89f8ad3f6c38b9e20b1da59b2d0b"
+    },
+    "/images/articles/lawn-mowing-history/12-irobot-terra.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 600,
+      "height": 338,
+      "bytes": 50686,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f13f7a96e7094a91cd109ae835e6994351de33409a1fcdee7ae2e4cf005f856a",
+      "outputHash": "sha256:d2f3f351f705f9e3c67bac392fdcf86e6b931aa56ad3fd1f7351c05d550443e2"
+    },
+    "/images/articles/lawn-mowing-history/13-husqvarna-epos.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 546,
+      "height": 300,
+      "bytes": 49474,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:27e5966b4d3dbb199aeca02a88e825782cb281c20e32510d143d680f8b2f474c",
+      "outputHash": "sha256:f421a05b6860e7b014a92b85ad7744abf74440afe44485d3d524598f1654e80c"
+    },
+    "/images/articles/lawn-mowing-history/14-ego-z6.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 94350,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:16110d0ecd67b1a406a5360feb2b822804438c8951b6f4a47d84e5385402149e",
+      "outputHash": "sha256:18eb3b11e15e8516f867b0bb566c5dc6035bc916f8a3c8b837d088d87414ab3e"
+    },
+    "/images/articles/lawn-mowing-history/15-navimow-first-generation.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1200,
+      "height": 650,
+      "bytes": 143972,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ebce523d4b4cb29b56e03503f80d0a9174a6572ae91667087a0a1970c2c79d5a",
+      "outputHash": "sha256:87af08f207cc8f9a2e68dc02ae500171d52c84041a42eb729a2a43be86f12713",
+      "mobile": {
+        "src": "/images/articles/lawn-mowing-history/15-navimow-first-generation-800.webp",
+        "width": 800,
+        "height": 433,
+        "bytes": 76830,
+        "outputHash": "sha256:e995f32bf50d74ee57d3124fe770f36bb64e7f29fa2cce40405eb16b3cf1a040"
+      }
+    },
+    "/images/articles/lawn-mowing-history/16-scythe-m52.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 480,
+      "height": 447,
+      "bytes": 23316,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:386a90aa86fff7c5b836c89c536c793400af12f96c207130f641cdac71b82699",
+      "outputHash": "sha256:65fa748e6b1e1d0a8f0cf51453b47d23c75bb5d3fd40f132fcf28b37ca571aa5"
+    },
+    "/images/articles/lawn-mowing-history/17-husqvarna-ceora.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 546,
+      "height": 300,
+      "bytes": 31664,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:858d32a3d2cbc1d971967bca2292a6db7413945b7bbeac228a7219514787265f",
+      "outputHash": "sha256:2849e8b79f830d8e154db1a3f42a4d73c8d22c10190cd7a373f91492f290bf59"
+    },
+    "/images/articles/lawn-mowing-history/18-mammotion-luba-original.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 600,
+      "height": 314,
+      "bytes": 35736,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4ad3eda4cf1534f317a2d06eef230a0d653d3fd9d8c7a5b175b533a308dd84cf",
+      "outputHash": "sha256:a384599cdc4be02278c05aa711abf0e51787ff76f3adb8ee89e69b3393745dc1"
+    },
+    "/images/articles/lawn-mowing-history/19-ecovacs-goat-g1.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1280,
+      "height": 1280,
+      "bytes": 21558,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:13e91c60e3419f1bc4191ba0112198b942fd3ea5dd7b0d837c467539c36a0621",
+      "outputHash": "sha256:ca45139fb9ed1e7e5c885ca2b95e65e6e08f940ce6a2ab81332d628ab399ee0d",
+      "mobile": {
+        "src": "/images/articles/lawn-mowing-history/19-ecovacs-goat-g1-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 11018,
+        "outputHash": "sha256:fc4721cf3975eff4f931e46e3a663933a2d6e716178e2b9da990a00da186e836"
+      }
+    },
+    "/images/articles/lawn-mowing-history/20-worx-landroid-vision.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 51008,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c58f49af2b0c1d3f07b9d7660d48f58fb96d232fc1592e450bcab6bbdb9cf557",
+      "outputHash": "sha256:4e5e7d7bc930b3056f4ca0da2bc35740aaee43b2e02c986cbe573b4a6779daa6",
+      "mobile": {
+        "src": "/images/articles/lawn-mowing-history/20-worx-landroid-vision-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 35212,
+        "outputHash": "sha256:8ee891ae21fb8585b16607e8ec83eabae8d062ea76c4a4757ecd384467d9c208"
+      }
+    },
+    "/images/articles/lawn-mowing-history/21-dreame-a1.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 600,
+      "height": 281,
+      "bytes": 13160,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:53c72b55e4aa35ecec75d1162867199e6a6520c44fd70d1884646e30937e3bbc",
+      "outputHash": "sha256:634c59411f8c58698d6250cb1edc21cf1320366b43b60ca2175a8adb06f78e38"
+    },
+    "/images/articles/lawn-mowing-history/22-sunseeker-orion-x7.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1400,
+      "height": 732,
+      "bytes": 101082,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:74464d81691d589d7ddfbd474355c6a8b9898d999949f312938808b35134683c",
+      "outputHash": "sha256:8d6de484c8a280910536256f58e56c5a849052ecbc1183575f7f6fd562828943",
+      "mobile": {
+        "src": "/images/articles/lawn-mowing-history/22-sunseeker-orion-x7-800.webp",
+        "width": 800,
+        "height": 418,
+        "bytes": 42954,
+        "outputHash": "sha256:31b45bc1b98425a2472dbb0bc27edf1d37e00d5a44abd5b8a0869fdb148167fc"
+      }
+    },
+    "/images/articles/lawn-mowing-history/23-mova-1000.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 1280,
+      "height": 1280,
+      "bytes": 112070,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:d0e1df02fdd20eb220fc986827ffa66351f6976cb3f6507d6949822be57b4216",
+      "outputHash": "sha256:c7e7b8dd2696210d5dcc364237b9a010155babce16cc8e2d66979906ab624416",
+      "mobile": {
+        "src": "/images/articles/lawn-mowing-history/23-mova-1000-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 52894,
+        "outputHash": "sha256:14aa8a97549fd7de6f0a816f6341135696470ed4f89f03033b9b44aa4b3a4240"
+      }
+    },
+    "/images/articles/lawn-mowing-history/24-roborock-rockmow-z1.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 550,
+      "height": 332,
+      "bytes": 12524,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cbb29d035f0b7df283ddcada955a07064ec6ac3e4466fa66e983da29178a701b",
+      "outputHash": "sha256:b44ea7c54bf28310410f0cc45868b878be1e81b6295d558008d2f02a186e4019"
+    },
+    "/images/articles/lawn-mowing-history/25-navimow-terranox.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 480,
+      "height": 238,
+      "bytes": 33062,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4cbda578f93d75ac723d7b337b9a1d3136417cfb0657def4d1e63e68513aa7f0",
+      "outputHash": "sha256:c0df4dee2a3175e8b301c014d55b800b978a7e1b090d1255c8cc3aa4cfd8d8f9"
+    },
     "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -36469,6 +36793,36 @@
         "/images/insights/laifen-hard-floor-washer-entry-strategy-image-002.jpg"
       ]
     },
+    "lawn-mowing-history": {
+      "budgetClass": "deep",
+      "cover": "/images/articles/lawn-mowing-history/01-cover.webp",
+      "body": [
+        "/images/articles/lawn-mowing-history/02-budding-reel-mower.webp",
+        "/images/articles/lawn-mowing-history/03-cub-cadet-1961.webp",
+        "/images/articles/lawn-mowing-history/04-john-deere-110.webp",
+        "/images/articles/lawn-mowing-history/05-hustler-first-zero-turn.webp",
+        "/images/articles/lawn-mowing-history/06-cub-cadet-hydrostatic.webp",
+        "/images/articles/lawn-mowing-history/07-honda-hr21.webp",
+        "/images/articles/lawn-mowing-history/08-husqvarna-solar-mower.webp",
+        "/images/articles/lawn-mowing-history/09-spider-ild01.webp",
+        "/images/articles/lawn-mowing-history/10-honda-miimo-2012.webp",
+        "/images/articles/lawn-mowing-history/11-honda-miimo-asimo.webp",
+        "/images/articles/lawn-mowing-history/12-irobot-terra.webp",
+        "/images/articles/lawn-mowing-history/13-husqvarna-epos.webp",
+        "/images/articles/lawn-mowing-history/14-ego-z6.webp",
+        "/images/articles/lawn-mowing-history/15-navimow-first-generation.webp",
+        "/images/articles/lawn-mowing-history/16-scythe-m52.webp",
+        "/images/articles/lawn-mowing-history/17-husqvarna-ceora.webp",
+        "/images/articles/lawn-mowing-history/18-mammotion-luba-original.webp",
+        "/images/articles/lawn-mowing-history/19-ecovacs-goat-g1.webp",
+        "/images/articles/lawn-mowing-history/20-worx-landroid-vision.webp",
+        "/images/articles/lawn-mowing-history/21-dreame-a1.webp",
+        "/images/articles/lawn-mowing-history/22-sunseeker-orion-x7.webp",
+        "/images/articles/lawn-mowing-history/23-mova-1000.webp",
+        "/images/articles/lawn-mowing-history/24-roborock-rockmow-z1.webp",
+        "/images/articles/lawn-mowing-history/25-navimow-terranox.webp"
+      ]
+    },
     "lawsuit-that-changed-robot-vacuum-industry-follow-up": {
       "budgetClass": "standard",
       "cover": "/images/insights/lawsuit-that-changed-robot-vacuum-industry-follow-up-cover.jpg",
@@ -40316,6 +40670,135 @@
           "status": "matched",
           "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-robotics-v3.webp",
           "hash": "sha256:ee3beebcfd378d801c735b157ee5e43c3e2f3aa6c53c65382dd4a13883dd0ffa"
+        }
+      }
+    },
+    "lawn-mowing-history": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/01-cover.webp",
+          "hash": "sha256:154c12720a091da056cdd94bfde21d1116acfb508064155abca63dacc3a30fe0"
+        },
+        "02-budding-reel-mower.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/02-budding-reel-mower.webp",
+          "hash": "sha256:9f861d62171e6d1a7d8d79df218ce46ca871d62d1864a0133fa921e390b00022"
+        },
+        "03-cub-cadet-1961.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/03-cub-cadet-1961.webp",
+          "hash": "sha256:05eea969123ef056f7fb70678cdc91de3f48e72680aa47bd1a0f7c185d987370"
+        },
+        "04-john-deere-110.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/04-john-deere-110.webp",
+          "hash": "sha256:978b485068d1dac2a0d26b31bf8f1006ce38a6aa2863bcf0cfbab628b0592dc6"
+        },
+        "05-hustler-first-zero-turn.png": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/05-hustler-first-zero-turn.webp",
+          "hash": "sha256:ece07ab49096eab93b10062d7648f226b621cb848a898358d74ca2be54966e6b"
+        },
+        "06-cub-cadet-hydrostatic.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/06-cub-cadet-hydrostatic.webp",
+          "hash": "sha256:bb79718bdc645da7aca955d329d57a91afdb3cc4df80a329d7d3671d812078e9"
+        },
+        "07-honda-hr21.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/07-honda-hr21.webp",
+          "hash": "sha256:cfeec6d4e10fd36608eb6fd720fb2b3001eee2b2706273808a7d7e60e3ef9f02"
+        },
+        "08-husqvarna-solar-mower.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/08-husqvarna-solar-mower.webp",
+          "hash": "sha256:f9a7e75a8d3b6375dcaed9ae176c9e66e7011f8ea20fbdf55cc7b43d31385575"
+        },
+        "09-spider-ild01.png": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/09-spider-ild01.webp",
+          "hash": "sha256:33ddfd282e484752565fa99544225c0d7a3c3c93fedc31d04feeef6f368c5317"
+        },
+        "10-honda-miimo-2012.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/10-honda-miimo-2012.webp",
+          "hash": "sha256:71249e6040d9140d5a5e104886fbcce058cddeb843fefae104ed36cb4c2870f1"
+        },
+        "11-honda-miimo-asimo.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/11-honda-miimo-asimo.webp",
+          "hash": "sha256:fc237c223e71d25ab08fcb9ff8d9cc4c292e7f4661ca27d8c80a73b0b13a3e72"
+        },
+        "12-irobot-terra.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/12-irobot-terra.webp",
+          "hash": "sha256:f13f7a96e7094a91cd109ae835e6994351de33409a1fcdee7ae2e4cf005f856a"
+        },
+        "13-husqvarna-epos.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/13-husqvarna-epos.webp",
+          "hash": "sha256:27e5966b4d3dbb199aeca02a88e825782cb281c20e32510d143d680f8b2f474c"
+        },
+        "14-ego-z6.png": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/14-ego-z6.webp",
+          "hash": "sha256:16110d0ecd67b1a406a5360feb2b822804438c8951b6f4a47d84e5385402149e"
+        },
+        "15-navimow-first-generation.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/15-navimow-first-generation.webp",
+          "hash": "sha256:ebce523d4b4cb29b56e03503f80d0a9174a6572ae91667087a0a1970c2c79d5a"
+        },
+        "16-scythe-m52.webp": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/16-scythe-m52.webp",
+          "hash": "sha256:386a90aa86fff7c5b836c89c536c793400af12f96c207130f641cdac71b82699"
+        },
+        "17-husqvarna-ceora.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/17-husqvarna-ceora.webp",
+          "hash": "sha256:858d32a3d2cbc1d971967bca2292a6db7413945b7bbeac228a7219514787265f"
+        },
+        "18-mammotion-luba-original.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/18-mammotion-luba-original.webp",
+          "hash": "sha256:4ad3eda4cf1534f317a2d06eef230a0d653d3fd9d8c7a5b175b533a308dd84cf"
+        },
+        "19-ecovacs-goat-g1.webp": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/19-ecovacs-goat-g1.webp",
+          "hash": "sha256:13e91c60e3419f1bc4191ba0112198b942fd3ea5dd7b0d837c467539c36a0621"
+        },
+        "20-worx-landroid-vision.webp": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/20-worx-landroid-vision.webp",
+          "hash": "sha256:c58f49af2b0c1d3f07b9d7660d48f58fb96d232fc1592e450bcab6bbdb9cf557"
+        },
+        "21-dreame-a1.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/21-dreame-a1.webp",
+          "hash": "sha256:53c72b55e4aa35ecec75d1162867199e6a6520c44fd70d1884646e30937e3bbc"
+        },
+        "22-sunseeker-orion-x7.webp": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/22-sunseeker-orion-x7.webp",
+          "hash": "sha256:74464d81691d589d7ddfbd474355c6a8b9898d999949f312938808b35134683c"
+        },
+        "23-mova-1000.png": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/23-mova-1000.webp",
+          "hash": "sha256:d0e1df02fdd20eb220fc986827ffa66351f6976cb3f6507d6949822be57b4216"
+        },
+        "24-roborock-rockmow-z1.png": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/24-roborock-rockmow-z1.webp",
+          "hash": "sha256:cbb29d035f0b7df283ddcada955a07064ec6ac3e4466fa66e983da29178a701b"
+        },
+        "25-navimow-terranox.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawn-mowing-history/25-navimow-terranox.webp",
+          "hash": "sha256:4cbda578f93d75ac723d7b337b9a1d3136417cfb0657def4d1e63e68513aa7f0"
         }
       }
     },
