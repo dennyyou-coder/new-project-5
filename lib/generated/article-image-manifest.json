@@ -1809,6 +1809,82 @@
         "outputHash": "sha256:36a3e4efa416ec64b792f9ee2e93e24269b0f14b8356fc36ec9d58e1ad8aee5a"
       }
     },
+    "/images/articles/dual-wash-stations-next-cleaning-category/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38212,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a8ea9676f2d9491c838cb959ee2a3b74b15f71717be31d90c39c46f887bcc8f1",
+      "outputHash": "sha256:d2ea4a07f5df920da635c4d53e83b99f97e723543b5b16c1fddd94c98f2b253a",
+      "mobile": {
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14706,
+        "outputHash": "sha256:a7e0e54f84b6ce2272df1062cb7b43d880411ae193882d60c1eff8e020c6d547"
+      }
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/02-roborock-combo.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 750,
+      "height": 596,
+      "bytes": 11508,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:eae35fb08a929f71ae9467390210e73b5a43369cb3fa3f82265d72f216872ad2",
+      "outputHash": "sha256:05b9ca59359c34f1f29c2e77fa5e54ca88622f6968464e4aeba755ce028db164"
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-dual-washing.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 899,
+      "bytes": 26428,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:77a7f81cd71d5ca859c7d1c8a4a5ca22a73c4775551df730515235407ad37f44",
+      "outputHash": "sha256:0c9c157a89fa662f66234d7d5ed047a4db8d2cad7c4ac69551c584c187a58c4b",
+      "mobile": {
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-dual-washing-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 8758,
+        "outputHash": "sha256:8f419946e3bf4aacf63cfc6b42e9bdbe37a6a6a3150429d50b911cd47b470a6f"
+      }
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/04-two-product-paths.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43436,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:780e1b16392d199e439ab715ad10679a9991521784e92bbde92b9c17b92099f3",
+      "outputHash": "sha256:1bcc5315e0bdcf39ccb7c02a5a1d4e668408654e5971224480a69425f8c9c0d0"
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/05-switchbot-k10.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1350,
+      "height": 1350,
+      "bytes": 26190,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:605fef6bf88759c7e11b4fae678206e453364d2721c30757d92a3b0d86b7a366",
+      "outputHash": "sha256:3630a3e1a2e9143acbbf44ca15fbec76eded92a6907e66dd2ac1041245ad935c",
+      "mobile": {
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/05-switchbot-k10-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 12148,
+        "outputHash": "sha256:e779969ca10b2fe78eb3962cac558643fa978379c5ae53f474c0929558cf1cdb"
+      }
+    },
     "/images/articles/dyson-camerajet-toothbrush-review/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -35654,6 +35730,16 @@
       "cover": "/images/articles/dreame-z30-pro-aqua-a/01-cover.webp",
       "body": []
     },
+    "dual-wash-stations-next-cleaning-category": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dual-wash-stations-next-cleaning-category/01-cover.webp",
+      "body": [
+        "/images/articles/dual-wash-stations-next-cleaning-category/02-roborock-combo.webp",
+        "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-dual-washing.webp",
+        "/images/articles/dual-wash-stations-next-cleaning-category/04-two-product-paths.png",
+        "/images/articles/dual-wash-stations-next-cleaning-category/05-switchbot-k10.webp"
+      ]
+    },
     "dyson-at-a-crossroads": {
       "budgetClass": "standard",
       "cover": "/images/insights/dyson-at-a-crossroads-cover.jpg",
@@ -39901,6 +39987,35 @@
           "status": "matched",
           "primary": "/images/articles/dreame-z30-pro-aqua-a/01-cover.webp",
           "hash": "sha256:811a5fbfa8a62553272254051d922c3399bd99512ace9db9f28700a64671f484"
+        }
+      }
+    },
+    "dual-wash-stations-next-cleaning-category": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/01-cover.webp",
+          "hash": "sha256:a8ea9676f2d9491c838cb959ee2a3b74b15f71717be31d90c39c46f887bcc8f1"
+        },
+        "02-roborock-combo.png": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/02-roborock-combo.webp",
+          "hash": "sha256:eae35fb08a929f71ae9467390210e73b5a43369cb3fa3f82265d72f216872ad2"
+        },
+        "03-colmo-dual-washing.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-dual-washing.webp",
+          "hash": "sha256:77a7f81cd71d5ca859c7d1c8a4a5ca22a73c4775551df730515235407ad37f44"
+        },
+        "04-two-product-paths.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/04-two-product-paths.png",
+          "hash": "sha256:780e1b16392d199e439ab715ad10679a9991521784e92bbde92b9c17b92099f3"
+        },
+        "05-switchbot-k10.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/05-switchbot-k10.webp",
+          "hash": "sha256:605fef6bf88759c7e11b4fae678206e453364d2721c30757d92a3b0d86b7a366"
         }
       }
     },
