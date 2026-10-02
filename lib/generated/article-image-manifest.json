@@ -1814,75 +1814,147 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 38212,
+      "bytes": 92144,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:a8ea9676f2d9491c838cb959ee2a3b74b15f71717be31d90c39c46f887bcc8f1",
-      "outputHash": "sha256:d2ea4a07f5df920da635c4d53e83b99f97e723543b5b16c1fddd94c98f2b253a",
+      "sourceHash": "sha256:827d89dca7dd37063db6d1891f8087e9ce027d9e6f92ef288ca94aa1d1870598",
+      "outputHash": "sha256:f883e772267c1ad2d13769aa33096e5b8b22088e26bd851d79888468029799c1",
       "mobile": {
         "src": "/images/articles/dual-wash-stations-next-cleaning-category/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 14706,
-        "outputHash": "sha256:a7e0e54f84b6ce2272df1062cb7b43d880411ae193882d60c1eff8e020c6d547"
+        "bytes": 29370,
+        "outputHash": "sha256:383d4c663a22298bd46dc1ad2dd88264a5287013998c3d99c125cf9962315b07"
       }
     },
     "/images/articles/dual-wash-stations-next-cleaning-category/02-roborock-combo.webp": {
-      "role": "transparent",
-      "kind": "transparent",
-      "width": 750,
-      "height": 596,
-      "bytes": 11508,
-      "format": "webp",
-      "quality": 90,
-      "sourceHash": "sha256:eae35fb08a929f71ae9467390210e73b5a43369cb3fa3f82265d72f216872ad2",
-      "outputHash": "sha256:05b9ca59359c34f1f29c2e77fa5e54ca88622f6968464e4aeba755ce028db164"
-    },
-    "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-dual-washing.webp": {
       "role": "body",
       "kind": "photo",
       "width": 1600,
-      "height": 899,
-      "bytes": 26428,
+      "height": 900,
+      "bytes": 65372,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:77a7f81cd71d5ca859c7d1c8a4a5ca22a73c4775551df730515235407ad37f44",
-      "outputHash": "sha256:0c9c157a89fa662f66234d7d5ed047a4db8d2cad7c4ac69551c584c187a58c4b",
+      "sourceHash": "sha256:04732011f48de771faa25cc347c6ad22a62e40ea158a47bb483d67b35c4da6a9",
+      "outputHash": "sha256:e67ee48921bba67c060898b60de0d41d6491428356add7dc591c60489ffe197b",
       "mobile": {
-        "src": "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-dual-washing-800.webp",
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/02-roborock-combo-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 8758,
-        "outputHash": "sha256:8f419946e3bf4aacf63cfc6b42e9bdbe37a6a6a3150429d50b911cd47b470a6f"
+        "bytes": 23066,
+        "outputHash": "sha256:bb4c3469c2cd44ca3efd782881a664baac7163028ead6fb55103e1bc3736054c"
       }
     },
-    "/images/articles/dual-wash-stations-next-cleaning-category/04-two-product-paths.png": {
+    "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-product.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 28510,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:04bb2c7157389c27cecc2d37181964971144e83166912424673b44e36a66e91d",
+      "outputHash": "sha256:84acba840a9cd2ff415130bcf594396d049f495810833ef0ce8ed14fadc17429",
+      "mobile": {
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-product-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 9090,
+        "outputHash": "sha256:13a9811e9f064b269156689067fbec74b85f5168fb34eb0b739183589409c95e"
+      }
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/04-balcony-space.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 164028,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f506309098ec24c9f0cfb0b177ae3095c39219bb7b893f52e48894b84538bbab",
+      "outputHash": "sha256:b0cc50a551532d380e34e113e4e3e8aef0b087dad912253d74b6a1771d2f0e9e",
+      "mobile": {
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/04-balcony-space-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 59090,
+        "outputHash": "sha256:6c8e9b64f503417f30b4f81932c4eaf3d75b0dbf19f2a3de74bf71f6d59a1066"
+      }
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/05-japan-housing.png": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 43436,
+      "bytes": 32186,
       "format": "png",
       "quality": 100,
-      "sourceHash": "sha256:780e1b16392d199e439ab715ad10679a9991521784e92bbde92b9c17b92099f3",
-      "outputHash": "sha256:1bcc5315e0bdcf39ccb7c02a5a1d4e668408654e5971224480a69425f8c9c0d0"
+      "sourceHash": "sha256:ea7b17ec50f7e880463ba39fbf34cad4aa4fab879d6800ea89730a20a3b46667",
+      "outputHash": "sha256:2ce447e03189ff87ef4d8d2188996557ff8119a4794973ddf3b0942a2dd9a261"
     },
-    "/images/articles/dual-wash-stations-next-cleaning-category/05-switchbot-k10.webp": {
+    "/images/articles/dual-wash-stations-next-cleaning-category/06-k10-hand.webp": {
       "role": "body",
       "kind": "photo",
-      "width": 1350,
-      "height": 1350,
-      "bytes": 26190,
+      "width": 1600,
+      "height": 900,
+      "bytes": 37770,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:605fef6bf88759c7e11b4fae678206e453364d2721c30757d92a3b0d86b7a366",
-      "outputHash": "sha256:3630a3e1a2e9143acbbf44ca15fbec76eded92a6907e66dd2ac1041245ad935c",
+      "sourceHash": "sha256:6575c4c62f0a7e327d1f48e83772737ddbba3a5b662bd583aad4acc9bcca0081",
+      "outputHash": "sha256:c8734d940c92829d9e057956f9b2193e4fd83860fdadf3147e55ccb5931e332d",
       "mobile": {
-        "src": "/images/articles/dual-wash-stations-next-cleaning-category/05-switchbot-k10-800.webp",
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/06-k10-hand-800.webp",
         "width": 800,
-        "height": 800,
-        "bytes": 12148,
-        "outputHash": "sha256:e779969ca10b2fe78eb3962cac558643fa978379c5ae53f474c0929558cf1cdb"
+        "height": 450,
+        "bytes": 13838,
+        "outputHash": "sha256:40a28974e2da2098d7fffa70a8824ee74f20c1c00a695a47fe3f850e0afaf792"
+      }
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/07-k10-corner.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53478,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:88b529644652ad6f232f1e2b6a2e861bd221e8fad007969bbd235ca5c147ddea",
+      "outputHash": "sha256:2c49a469477ad9c75f9aa37c6a8b6b62f7b4113bc90ab1dab2d010833f2563b3",
+      "mobile": {
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/07-k10-corner-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19096,
+        "outputHash": "sha256:c38455c084d8bb0c069ac5b881995ca2123b91988dfe6582fb0a2ae3c9724cbf"
+      }
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/08-installation.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40581,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:f60cc6f80bfffd1ceaa61a19bfaeae75892650b5f1bd531fdf815289e1f14ce4",
+      "outputHash": "sha256:2de6874e1504b04ffd6b920d2294be9f4e649242018b0d51e7be2fa8550fa049"
+    },
+    "/images/articles/dual-wash-stations-next-cleaning-category/09-service-access.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34388,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8f3c492b41d1576491824d5e7c18c84dbe1c891762e6b734f0cee82326e81ec3",
+      "outputHash": "sha256:a57d713ccfe36f71fcd012c1b0654b187f06fcafd3424b8a9893a0a7c8be0598",
+      "mobile": {
+        "src": "/images/articles/dual-wash-stations-next-cleaning-category/09-service-access-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 8392,
+        "outputHash": "sha256:5908b2ac536ad213a7adfd75b0d9877e6f380196c5736929f4cb6b2596f8cff7"
       }
     },
     "/images/articles/dyson-camerajet-toothbrush-review/01-cover.webp": {
@@ -35735,9 +35807,13 @@
       "cover": "/images/articles/dual-wash-stations-next-cleaning-category/01-cover.webp",
       "body": [
         "/images/articles/dual-wash-stations-next-cleaning-category/02-roborock-combo.webp",
-        "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-dual-washing.webp",
-        "/images/articles/dual-wash-stations-next-cleaning-category/04-two-product-paths.png",
-        "/images/articles/dual-wash-stations-next-cleaning-category/05-switchbot-k10.webp"
+        "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-product.webp",
+        "/images/articles/dual-wash-stations-next-cleaning-category/04-balcony-space.webp",
+        "/images/articles/dual-wash-stations-next-cleaning-category/05-japan-housing.png",
+        "/images/articles/dual-wash-stations-next-cleaning-category/06-k10-hand.webp",
+        "/images/articles/dual-wash-stations-next-cleaning-category/07-k10-corner.webp",
+        "/images/articles/dual-wash-stations-next-cleaning-category/08-installation.png",
+        "/images/articles/dual-wash-stations-next-cleaning-category/09-service-access.webp"
       ]
     },
     "dyson-at-a-crossroads": {
@@ -39995,27 +40071,47 @@
         "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/dual-wash-stations-next-cleaning-category/01-cover.webp",
-          "hash": "sha256:a8ea9676f2d9491c838cb959ee2a3b74b15f71717be31d90c39c46f887bcc8f1"
+          "hash": "sha256:827d89dca7dd37063db6d1891f8087e9ce027d9e6f92ef288ca94aa1d1870598"
         },
-        "02-roborock-combo.png": {
+        "02-roborock-combo.webp": {
           "status": "matched",
           "primary": "/images/articles/dual-wash-stations-next-cleaning-category/02-roborock-combo.webp",
-          "hash": "sha256:eae35fb08a929f71ae9467390210e73b5a43369cb3fa3f82265d72f216872ad2"
+          "hash": "sha256:04732011f48de771faa25cc347c6ad22a62e40ea158a47bb483d67b35c4da6a9"
         },
-        "03-colmo-dual-washing.jpg": {
+        "03-colmo-product.webp": {
           "status": "matched",
-          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-dual-washing.webp",
-          "hash": "sha256:77a7f81cd71d5ca859c7d1c8a4a5ca22a73c4775551df730515235407ad37f44"
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/03-colmo-product.webp",
+          "hash": "sha256:04bb2c7157389c27cecc2d37181964971144e83166912424673b44e36a66e91d"
         },
-        "04-two-product-paths.webp": {
+        "04-balcony-space.webp": {
           "status": "matched",
-          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/04-two-product-paths.png",
-          "hash": "sha256:780e1b16392d199e439ab715ad10679a9991521784e92bbde92b9c17b92099f3"
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/04-balcony-space.webp",
+          "hash": "sha256:f506309098ec24c9f0cfb0b177ae3095c39219bb7b893f52e48894b84538bbab"
         },
-        "05-switchbot-k10.jpg": {
+        "05-japan-housing.webp": {
           "status": "matched",
-          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/05-switchbot-k10.webp",
-          "hash": "sha256:605fef6bf88759c7e11b4fae678206e453364d2721c30757d92a3b0d86b7a366"
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/05-japan-housing.png",
+          "hash": "sha256:ea7b17ec50f7e880463ba39fbf34cad4aa4fab879d6800ea89730a20a3b46667"
+        },
+        "06-k10-hand.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/06-k10-hand.webp",
+          "hash": "sha256:6575c4c62f0a7e327d1f48e83772737ddbba3a5b662bd583aad4acc9bcca0081"
+        },
+        "07-k10-corner.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/07-k10-corner.webp",
+          "hash": "sha256:88b529644652ad6f232f1e2b6a2e861bd221e8fad007969bbd235ca5c147ddea"
+        },
+        "08-installation.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/08-installation.png",
+          "hash": "sha256:f60cc6f80bfffd1ceaa61a19bfaeae75892650b5f1bd531fdf815289e1f14ce4"
+        },
+        "09-service-access.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dual-wash-stations-next-cleaning-category/09-service-access.webp",
+          "hash": "sha256:8f3c492b41d1576491824d5e7c18c84dbe1c891762e6b734f0cee82326e81ec3"
         }
       }
     },
