@@ -8220,6 +8220,82 @@
         "outputHash": "sha256:fd16c1f2bc0df941af1229f5d620e7d9791f684832f94d28952778b6bb29c7c3"
       }
     },
+    "/images/articles/tti-royal-dirt-devil-acquisition/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 549,
+      "height": 309,
+      "bytes": 39004,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:73ea5ad30579d2c862a9df255a5ca2ebea45db8c8cce75123124a06f59d0ced3",
+      "outputHash": "sha256:dab821cee32e327bc7090cfc7b2c87402ce458efe222e7be848895b6522a2a49"
+    },
+    "/images/articles/tti-royal-dirt-devil-acquisition/02-merriman.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 500,
+      "height": 500,
+      "bytes": 25974,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8a19b829bd82175af11100e5af67a8b0f1cd801cd06418461d4fe73bf65d6dcd",
+      "outputHash": "sha256:7ee28b17599100a5b62b438feeda4dbf1c9bc3cb13af1082d7ed73c4c2ade265"
+    },
+    "/images/articles/tti-royal-dirt-devil-acquisition/03-pudwill.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 800,
+      "height": 1028,
+      "bytes": 60440,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:57b4a87805bd97319950d766c697e49e73fd885bdd29569e3c95695994475a42",
+      "outputHash": "sha256:9258239ac9671650940cf6d005d61a252916d08ea99f52ed8fadd23a97daae03",
+      "mobile": {
+        "src": "/images/articles/tti-royal-dirt-devil-acquisition/03-pudwill-800.webp",
+        "width": 623,
+        "height": 800,
+        "bytes": 36430,
+        "outputHash": "sha256:6029578bb88a40b246cecc8e82facbbf5375e1bff17d11ac4118ea2513274a97"
+      }
+    },
+    "/images/articles/tti-royal-dirt-devil-acquisition/04-profit-mix.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 60291,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:f23546269365f3174f4526a4e04df765cdc43d1a506bf76a85a47f1d0e2bea01",
+      "outputHash": "sha256:613f20923295909b06fdd3a7f429009734d317d2bd7270dc00c8e0b4dc483777",
+      "mobile": {
+        "src": "/images/articles/tti-royal-dirt-devil-acquisition/04-profit-mix-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31050,
+        "outputHash": "sha256:540b527712be9a5357451502202bab0dc3e99f030245f395f29e1b04b38a5e8e"
+      }
+    },
+    "/images/articles/tti-royal-dirt-devil-acquisition/05-three-offers.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56303,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:c106a7030396ce7fd901c415490958441897939fe734b9fd656bd3e96cd1636b",
+      "outputHash": "sha256:0cc893de82e59afde03ba0e78575f050a5647e4cacd66639bf3262dfc9de513e",
+      "mobile": {
+        "src": "/images/articles/tti-royal-dirt-devil-acquisition/05-three-offers-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29170,
+        "outputHash": "sha256:7da24d4e30be082d114239475c47d62189a6a0683e1b7b1145425067b5a97f89"
+      }
+    },
     "/images/articles/us-appliance-tool-retailers/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -38671,6 +38747,16 @@
       "cover": "/images/insights/tti-product-direction-cover.jpg",
       "body": []
     },
+    "tti-royal-dirt-devil-acquisition": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tti-royal-dirt-devil-acquisition/01-cover.webp",
+      "body": [
+        "/images/articles/tti-royal-dirt-devil-acquisition/02-merriman.webp",
+        "/images/articles/tti-royal-dirt-devil-acquisition/03-pudwill.webp",
+        "/images/articles/tti-royal-dirt-devil-acquisition/04-profit-mix.png",
+        "/images/articles/tti-royal-dirt-devil-acquisition/05-three-offers.png"
+      ]
+    },
     "two-sides-of-dyson": {
       "budgetClass": "standard",
       "cover": "/images/insights/two-sides-of-dyson-cover.jpg",
@@ -42141,6 +42227,35 @@
           "status": "matched",
           "primary": "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp",
           "hash": "sha256:8db13b3aa9325078afe598259aec18f9f1d3a2f5244c9844d6b2359ef7cc3072"
+        }
+      }
+    },
+    "tti-royal-dirt-devil-acquisition": {
+      "files": {
+        "01-cover.jpeg": {
+          "status": "matched",
+          "primary": "/images/articles/tti-royal-dirt-devil-acquisition/01-cover.webp",
+          "hash": "sha256:73ea5ad30579d2c862a9df255a5ca2ebea45db8c8cce75123124a06f59d0ced3"
+        },
+        "02-merriman.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/tti-royal-dirt-devil-acquisition/02-merriman.webp",
+          "hash": "sha256:8a19b829bd82175af11100e5af67a8b0f1cd801cd06418461d4fe73bf65d6dcd"
+        },
+        "03-pudwill.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/tti-royal-dirt-devil-acquisition/03-pudwill.webp",
+          "hash": "sha256:57b4a87805bd97319950d766c697e49e73fd885bdd29569e3c95695994475a42"
+        },
+        "04-profit-mix.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-royal-dirt-devil-acquisition/04-profit-mix.png",
+          "hash": "sha256:f23546269365f3174f4526a4e04df765cdc43d1a506bf76a85a47f1d0e2bea01"
+        },
+        "05-three-offers.png": {
+          "status": "matched",
+          "primary": "/images/articles/tti-royal-dirt-devil-acquisition/05-three-offers.png",
+          "hash": "sha256:c106a7030396ce7fd901c415490958441897939fe734b9fd656bd3e96cd1636b"
         }
       }
     },
