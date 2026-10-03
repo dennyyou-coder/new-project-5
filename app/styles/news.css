@@ -49,6 +49,8 @@
 .news-page .news-cover { margin: 0 0 30px; }
 .news-page .news-cover img { width: 100%; max-height: 300px; object-fit: contain; background: var(--soft); border-radius: 8px; }
 .news-page .news-cover figcaption { font-size: 12px; color: var(--muted); line-height: 1.6; margin-top: 10px; }
+.news-page .news-cover-brand { padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.news-page .news-cover-brand img { display: block; width: min(360px, 100%); height: 180px; margin: 0 auto; padding: 20px; background: #fff; }
 .news-page .news-prose { font-size: 17px; line-height: 1.85; }
 .news-page .news-prose p { margin: 0 0 20px; }
 .news-page .news-prose a, .news-page .news-sources a { text-decoration: underline; text-underline-offset: 3px; }
