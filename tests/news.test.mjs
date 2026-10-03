@@ -44,9 +44,24 @@ test("news separates publication from announcement dates and resolves every comp
 
 test("topic filtering preserves article order and invalid filters fall back to the full collection", () => {
   const articles = getNews();
-  assert.deepEqual(selectNews(articles, "companies").articles, articles.filter((item) => item.topic === "companies"));
+  const companies = articles.filter((item) => item.topic === "companies");
+  const companyPages = Array.from({ length: selectNews(articles, "companies").totalPages }, (_, index) => selectNews(articles, "companies", String(index + 1)).articles).flat();
+  assert.deepEqual(companyPages, companies);
   assert.equal(selectNews(articles, "invalid").total, articles.length);
-  assert.equal(selectNews(articles, "policy-standards").total, 0);
+  assert.deepEqual(selectNews(articles, "policy-standards").articles, articles.filter((item) => item.topic === "policy-standards").slice(0, NEWS_PAGE_SIZE));
+});
+
+test("historical backfills keep original news chronology and their actual WCB publication date", () => {
+  const articles = getNews();
+  for (let index = 1; index < articles.length; index++) {
+    assert.ok(Date.parse(articles[index - 1].eventDate) >= Date.parse(articles[index].eventDate));
+  }
+  const backfill = articles.find((article) => article.slug === "narwal-flow-2-north-america-launch-april-2026");
+  const recent = articles.find((article) => article.slug === "nilfisk-eurotier-2026-hot-water-cleaning-preview");
+  assert.ok(backfill && recent);
+  assert.ok(Date.parse(backfill.publishedAt) > Date.parse(recent.publishedAt));
+  assert.ok(articles.indexOf(backfill) > articles.indexOf(recent));
+  assert.equal(backfill.eventDate, "2026-04-13");
 });
 
 test("pagination handles boundaries and preserves the selected topic in links", () => {

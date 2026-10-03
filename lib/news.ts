@@ -79,7 +79,7 @@ export function getNews(): NewsArticle[] {
       relatedArticles: array(data.related_articles), imageProduct: data.image_product ? String(data.image_product) : undefined,
       sources, readingTime: `${Math.max(1, Math.ceil(words / 220))} min read`, content
     }];
-  }).sort((a, b) => b.sortDate.localeCompare(a.sortDate) || b.eventDate.localeCompare(a.eventDate) || a.slug.localeCompare(b.slug));
+  }).sort((a, b) => b.eventDate.localeCompare(a.eventDate) || b.sortDate.localeCompare(a.sortDate) || a.slug.localeCompare(b.slug));
 }
 
 export function getNewsArticle(slug: string) {
