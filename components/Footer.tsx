@@ -31,6 +31,7 @@ export function Footer() {
         <div className="footer-links" aria-label="Footer navigation">
           <div>
             <strong>Platform</strong>
+            <Link href="/news">News</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/brands">Brand Intelligence</Link>
             <Link href="/guides">Industry Guides</Link>

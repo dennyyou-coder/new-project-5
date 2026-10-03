@@ -1,4 +1,5 @@
 import { productModels } from "@/lib/products";
+import { getNews, NEWS_PAGE_SIZE, newsHref } from "@/lib/news";
 import type { MetadataRoute } from "next";
 import { getBlogSeriesSlugs } from "@/lib/blogSeries";
 import {
@@ -52,6 +53,9 @@ export function buildBlogSitemap(): MetadataRoute.Sitemap {
   const editorial = getEditorialInsights(insights);
 
   return [
+    { url: `${baseUrl}/news` },
+    ...Array.from({ length: Math.max(0, Math.ceil(getNews().length / NEWS_PAGE_SIZE) - 1) }, (_, index) => ({ url: `${baseUrl}${newsHref(undefined, index + 2)}` })),
+    ...getNews().map((article) => ({ url: `${baseUrl}/news/${article.slug}`, lastModified: wcbDate(article.updatedAt) })),
     ...routeEntries([
       "/blog",
       "/blog/archive",

@@ -170,10 +170,11 @@ test("homepage limits editorial proof to three insights and one report", () => {
   assert.doesNotMatch(homeSource, /reportCovers/);
 });
 
-test("header keeps one unified content entry and removes the fixed report CTA", () => {
+test("header exposes News alongside Blog and retains the logo as the homepage entry", () => {
   for (const label of [
-    "Home",
+    "News",
     "Blog",
+    "Products",
     "Brand Intelligence",
     "Sourcing",
     "Market Reports",
@@ -184,6 +185,7 @@ test("header keeps one unified content entry and removes the fixed report CTA", 
     assert.match(headerSource, new RegExp(`label: "${label}"`));
   }
 
+  assert.match(headerSource, /<Link className="brand" href="\/"/);
   assert.doesNotMatch(headerSource, /label: "Guides"/);
   assert.doesNotMatch(headerSource, /TallyReportButton/);
   assert.doesNotMatch(headerSource, /header-cta/);

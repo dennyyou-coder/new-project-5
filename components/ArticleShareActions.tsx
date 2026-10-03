@@ -15,7 +15,7 @@ import {
   ARTICLE_SHARE_ICONS
 } from "@/lib/articleShareIcons";
 
-export function ArticleShareActions({ title, url }: { title: string; url: string }) {
+export function ArticleShareActions({ title, url, heading = "Share this analysis" }: { title: string; url: string; heading?: string }) {
   const data = { title, url };
   const links = getArticleShareLinks(title, url);
   const [canNativeShare, setCanNativeShare] = useState(false);
@@ -111,7 +111,7 @@ export function ArticleShareActions({ title, url }: { title: string; url: string
       <section className="article-share-mobile" aria-labelledby="article-share-title">
         <div>
           <span className="article-share-kicker">Share</span>
-          <h2 id="article-share-title">Share this analysis</h2>
+          <h2 id="article-share-title">{heading}</h2>
         </div>
         <div className="article-share-mobile-actions">
           {canNativeShare ? (
