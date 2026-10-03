@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "./styles/home.css";
 import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
+import { HomeNews } from "@/components/news/HomeNews";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
 import { TallyButton } from "@/components/LeadForms";
 import { getSeriesArticles } from "@/lib/blogSeries";
@@ -204,6 +205,8 @@ export default function HomePage() {
         <div className="home-v9-product-entry"><Link href="/products"><span>02 / Product &amp; Sourcing</span><strong>Find your next product <b aria-hidden="true">↗</b></strong><p>Explore models, specifications and buying context</p></Link><Link className="home-v9-sourcing-entry" href="/sourcing">Buying for business? Explore sourcing support →</Link></div>
         <Link href="/wcb-expo"><span>03 / WCB Expo</span><strong>Meet the industry <b aria-hidden="true">↗</b></strong><p>People, products and business connections</p></Link>
       </nav>
+
+      <HomeNews />
 
       <section className="home-v9-section home-v9-proof" id="featured-analysis">
         <div className="home-v9-container">
