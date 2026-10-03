@@ -1,10 +1,37 @@
 import Link from "next/link";
+import { FiArrowRight, FiBookOpen, FiBox, FiFileText, FiGrid, FiMail } from "react-icons/fi";
 import { TallyButton } from "@/components/LeadForms";
+
+const exploreLinks = [
+  { href: "/brands", label: "Company profiles", detail: "Brands & manufacturers", icon: FiGrid },
+  { href: "/products", label: "Product directory", detail: "Models & specifications", icon: FiBox },
+  { href: "/blog", label: "Industry analysis", detail: "Perspectives & context", icon: FiFileText },
+  { href: "/guides", label: "Buying guides", detail: "Selection & sourcing", icon: FiBookOpen }
+];
 
 export function NewsSidebar() {
   return <aside className="news-sidebar" aria-label="Explore World Clean Biz">
-    <section><p className="news-eyebrow">Explore More</p><h2>Follow the story.</h2><Link href="/brands">Company &amp; brand profiles <span>↗</span></Link><Link href="/products">Product models <span>↗</span></Link><Link href="/blog">Industry analysis <span>↗</span></Link><Link href="/guides">Buying &amp; sourcing guides <span>↗</span></Link></section>
-    <section><p className="news-eyebrow">Meet The Industry</p><h2>WCB Expo</h2><p>Connect with the people and products shaping cleaning.</p><Link href="/wcb-expo">Explore WCB Expo <span>↗</span></Link></section>
-    <section><p className="news-eyebrow">Industry Updates</p><h2>Stay informed.</h2><p>Choose the WCB updates relevant to your work.</p><TallyButton form="newsletter" ctaLocation="news_newsletter">Get Industry Updates</TallyButton></section>
+    <section className="news-side-card news-explore-card" aria-labelledby="news-explore-heading">
+      <h2 id="news-explore-heading">Explore WCB</h2>
+      <nav className="news-explore-links" aria-label="WCB resources">
+        {exploreLinks.map(({ href, label, detail, icon: Icon }) => <Link href={href} key={href}>
+          <span className="news-resource-icon"><Icon aria-hidden="true" /></span>
+          <span className="news-resource-copy"><strong>{label}</strong><span>{detail}</span></span>
+          <FiArrowRight className="news-resource-arrow" aria-hidden="true" />
+        </Link>)}
+      </nav>
+    </section>
+    <section className="news-side-card news-expo-card" aria-labelledby="news-expo-heading">
+      <p className="news-side-kicker">Meet the industry</p>
+      <h2 id="news-expo-heading">WCB Expo</h2>
+      <p>Connect with cleaning brands, manufacturers and industry partners.</p>
+      <Link className="news-expo-link" href="/wcb-expo">Explore the exhibition <FiArrowRight aria-hidden="true" /></Link>
+    </section>
+    <section className="news-side-card news-updates-card" aria-labelledby="news-updates-heading">
+      <span className="news-updates-icon"><FiMail aria-hidden="true" /></span>
+      <h2 id="news-updates-heading">Industry updates</h2>
+      <p>Choose the WCB news and insights relevant to your work.</p>
+      <TallyButton form="newsletter" ctaLocation="news_newsletter" className="button news-subscribe-button">Get updates <FiArrowRight aria-hidden="true" /></TallyButton>
+    </section>
   </aside>;
 }
