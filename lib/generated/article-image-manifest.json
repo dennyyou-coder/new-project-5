@@ -618,6 +618,118 @@
         "outputHash": "sha256:a25254f053a0bb144b658131530c5a6061c39b4dd97f330b050808608511eb14"
       }
     },
+    "/images/articles/breville-premium-kitchen-product-design/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1300,
+      "height": 731,
+      "bytes": 103186,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d2e058407b7c7f723ae40f0dd37fcca7b43cc6976e949f00ff9564c22721fa57",
+      "outputHash": "sha256:ed9aac45808a1149ce990f4489f6ce58b0c6d7b9ede0fb2db560eefc33a4cb1b",
+      "mobile": {
+        "src": "/images/articles/breville-premium-kitchen-product-design/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 46064,
+        "outputHash": "sha256:786e5b1388a616d0488eda598f631880bbd743e7b6d9ea0f4e5c63b5f5b2006a"
+      }
+    },
+    "/images/articles/breville-premium-kitchen-product-design/02-toaster.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 500,
+      "height": 500,
+      "bytes": 13448,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:92048547051e57a8984cd608702114a4d2456daaacf95babc0bf7c53b21201b2",
+      "outputHash": "sha256:ae4bf87e05b8715bf8c42388faba0ae8fc87d1c7372f3d1e8d8bac830ab348ba"
+    },
+    "/images/articles/breville-premium-kitchen-product-design/03-richard-hoare.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1230,
+      "height": 720,
+      "bytes": 119794,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bcccc598413041c482d13bde064640772e866e953c5be019ca06395af98faf3b",
+      "outputHash": "sha256:1ef0dbc8d058a82bbfd30c6b56bb4b835a7bbaab6b2e28f06204a0f9ae341d92",
+      "mobile": {
+        "src": "/images/articles/breville-premium-kitchen-product-design/03-richard-hoare-800.webp",
+        "width": 800,
+        "height": 468,
+        "bytes": 63396,
+        "outputHash": "sha256:5674731a7a9c4374f0b660f41fdc251d3cccbc78f1b2f3bb3c715ffa77ff60f1"
+      }
+    },
+    "/images/articles/breville-premium-kitchen-product-design/04-assisted-tamping.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1400,
+      "height": 1400,
+      "bytes": 141684,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e1f4f35eb68282827f1b7ee17e0874eb358ec4f2304c77b6e7e99925e5bbe4ac",
+      "outputHash": "sha256:dd14dc712f18ff7a75ecd12d3d1115b1217e8cbcc2a885c862ed1dcffa531c0a",
+      "mobile": {
+        "src": "/images/articles/breville-premium-kitchen-product-design/04-assisted-tamping-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 62318,
+        "outputHash": "sha256:4abae80a2357b3603a14bc7fcab470ac4e60490cbc300e6f975a669225c0efb9"
+      }
+    },
+    "/images/articles/breville-premium-kitchen-product-design/05-baratza.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 47604,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a4d5825702a4d3b1f414b51ba1b0f3213d31629746366fad90cc2a645c3fa7bf",
+      "outputHash": "sha256:2455c2ac3634946877562e92b4f043873fcae787c82383ebf4a37dc47997e350",
+      "mobile": {
+        "src": "/images/articles/breville-premium-kitchen-product-design/05-baratza-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 19974,
+        "outputHash": "sha256:5ad697fb729c126960e7dbc35a678329defc432e08663fef392123c72dc1e94b"
+      }
+    },
+    "/images/articles/breville-premium-kitchen-product-design/06-lelit.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1280,
+      "height": 798,
+      "bytes": 148244,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f6e34fd672f97ff1719c4349ff26e140c5ca6c09e6497c8788fad6b55781b88f",
+      "outputHash": "sha256:de70a63df246ceadacad057fc31e97419c8c9378728aad54a3c5396f87805bd7",
+      "mobile": {
+        "src": "/images/articles/breville-premium-kitchen-product-design/06-lelit-800.webp",
+        "width": 800,
+        "height": 499,
+        "bytes": 57182,
+        "outputHash": "sha256:02df7c05d0148f98d0f266b6a62f8f73c59c67b364f5116bdf6962b027ee585d"
+      }
+    },
+    "/images/articles/breville-premium-kitchen-product-design/07-best-buy.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 680,
+      "height": 583,
+      "bytes": 128328,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:cf46629d2f9313718f80ac4288b324f4f82e2205103add5137964fe1551552c4",
+      "outputHash": "sha256:07fab5f14723077ab37620e0b7c175323277dc5c2ca1dab923f488972d48bbf9"
+    },
     "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-05/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -35376,6 +35488,18 @@
       "cover": "/images/articles/bosch-unlimited-9-bcs931wuc/01-cover.webp",
       "body": []
     },
+    "breville-premium-kitchen-product-design": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/breville-premium-kitchen-product-design/01-cover.webp",
+      "body": [
+        "/images/articles/breville-premium-kitchen-product-design/02-toaster.webp",
+        "/images/articles/breville-premium-kitchen-product-design/03-richard-hoare.webp",
+        "/images/articles/breville-premium-kitchen-product-design/04-assisted-tamping.webp",
+        "/images/articles/breville-premium-kitchen-product-design/05-baratza.webp",
+        "/images/articles/breville-premium-kitchen-product-design/06-lelit.webp",
+        "/images/articles/breville-premium-kitchen-product-design/07-best-buy.webp"
+      ]
+    },
     "building-worlds-no-1-cleaning-show-from-scratch-episode-01": {
       "budgetClass": "standard",
       "cover": "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp",
@@ -39987,6 +40111,45 @@
           "status": "matched",
           "primary": "/images/articles/bosch-unlimited-9-bcs931wuc/01-cover.webp",
           "hash": "sha256:229988e046d3fde63a363c2116861531eec1a334192bd1a96b706c7d98e3e78e"
+        }
+      }
+    },
+    "breville-premium-kitchen-product-design": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/breville-premium-kitchen-product-design/01-cover.webp",
+          "hash": "sha256:d2e058407b7c7f723ae40f0dd37fcca7b43cc6976e949f00ff9564c22721fa57"
+        },
+        "02-toaster.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/breville-premium-kitchen-product-design/02-toaster.webp",
+          "hash": "sha256:92048547051e57a8984cd608702114a4d2456daaacf95babc0bf7c53b21201b2"
+        },
+        "03-richard-hoare.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/breville-premium-kitchen-product-design/03-richard-hoare.webp",
+          "hash": "sha256:bcccc598413041c482d13bde064640772e866e953c5be019ca06395af98faf3b"
+        },
+        "04-assisted-tamping.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/breville-premium-kitchen-product-design/04-assisted-tamping.webp",
+          "hash": "sha256:e1f4f35eb68282827f1b7ee17e0874eb358ec4f2304c77b6e7e99925e5bbe4ac"
+        },
+        "05-baratza.png": {
+          "status": "matched",
+          "primary": "/images/articles/breville-premium-kitchen-product-design/05-baratza.webp",
+          "hash": "sha256:a4d5825702a4d3b1f414b51ba1b0f3213d31629746366fad90cc2a645c3fa7bf"
+        },
+        "06-lelit.png": {
+          "status": "matched",
+          "primary": "/images/articles/breville-premium-kitchen-product-design/06-lelit.webp",
+          "hash": "sha256:f6e34fd672f97ff1719c4349ff26e140c5ca6c09e6497c8788fad6b55781b88f"
+        },
+        "07-best-buy.jpeg": {
+          "status": "matched",
+          "primary": "/images/articles/breville-premium-kitchen-product-design/07-best-buy.webp",
+          "hash": "sha256:cf46629d2f9313718f80ac4288b324f4f82e2205103add5137964fe1551552c4"
         }
       }
     },
