@@ -1205,7 +1205,7 @@
       }
     },
     "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1781,7 +1781,7 @@
       }
     },
     "/images/articles/dreame-x60-ultra/02-dock-water-path.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 855,
       "height": 800,
@@ -1882,7 +1882,7 @@
       }
     },
     "/images/articles/dual-wash-stations-next-cleaning-category/05-japan-housing.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -1929,7 +1929,7 @@
       }
     },
     "/images/articles/dual-wash-stations-next-cleaning-category/08-installation.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -2500,7 +2500,7 @@
       }
     },
     "/images/articles/eufy-omni-s2/02-dust-bag-access.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 720,
       "height": 403,
@@ -3231,7 +3231,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/02-brand-product-map.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -3249,7 +3249,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/03-professional-coffee.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -3267,7 +3267,7 @@
       }
     },
     "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -3387,7 +3387,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/02-approval-flow.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -3405,7 +3405,7 @@
       }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/03-possible-pathways.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -4662,7 +4662,7 @@
       "outputHash": "sha256:0ad177708f61db35282dfb0177f8da18c62ad727af80aaaa70903da8ef9a4716"
     },
     "/images/articles/lawn-mowing-history/05-hustler-first-zero-turn.webp": {
-      "role": "body",
+      "role": "transparent",
       "kind": "transparent",
       "width": 960,
       "height": 637,
@@ -4713,7 +4713,7 @@
       "outputHash": "sha256:d415a52231345ac42e72055833c5df5f607a635fb2bc6fb3d206ee2a2d158029"
     },
     "/images/articles/lawn-mowing-history/09-spider-ild01.webp": {
-      "role": "body",
+      "role": "transparent",
       "kind": "transparent",
       "width": 888,
       "height": 613,
@@ -4768,7 +4768,7 @@
       "outputHash": "sha256:f421a05b6860e7b014a92b85ad7744abf74440afe44485d3d524598f1654e80c"
     },
     "/images/articles/lawn-mowing-history/14-ego-z6.webp": {
-      "role": "body",
+      "role": "transparent",
       "kind": "transparent",
       "width": 1000,
       "height": 1000,
@@ -4848,7 +4848,7 @@
       }
     },
     "/images/articles/lawn-mowing-history/20-worx-landroid-vision.webp": {
-      "role": "body",
+      "role": "transparent",
       "kind": "transparent",
       "width": 1200,
       "height": 1200,
@@ -4895,7 +4895,7 @@
       }
     },
     "/images/articles/lawn-mowing-history/23-mova-1000.webp": {
-      "role": "body",
+      "role": "transparent",
       "kind": "transparent",
       "width": 1280,
       "height": 1280,
@@ -4913,7 +4913,7 @@
       }
     },
     "/images/articles/lawn-mowing-history/24-roborock-rockmow-z1.webp": {
-      "role": "body",
+      "role": "transparent",
       "kind": "transparent",
       "width": 550,
       "height": 332,
@@ -5696,7 +5696,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/02-founders.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5714,7 +5714,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/03-navimow-revenue.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5732,7 +5732,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/04-h5-pro.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5750,7 +5750,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/05-product-portfolio.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5768,7 +5768,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/06-manufacturing.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5786,7 +5786,7 @@
       }
     },
     "/images/articles/ninebot-smart-mobility-navimow/07-residential-commercial.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5858,7 +5858,7 @@
       }
     },
     "/images/articles/pan-longquan-joe-galli-chervon/04-competition.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5894,7 +5894,7 @@
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/02-manufacturing.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5912,7 +5912,7 @@
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/03-coffee.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -5930,7 +5930,7 @@
       }
     },
     "/images/articles/philips-health-technology-versuni-home-appliances/04-floorcare.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -7634,7 +7634,7 @@
       }
     },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/02-outdoor-paths.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -7663,7 +7663,7 @@
       }
     },
     "/images/articles/steve-richman-milwaukee-growth/02-career.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -7789,7 +7789,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/02-founder-timeline.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -7807,7 +7807,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/03-team-and-brand.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -7825,7 +7825,7 @@
       }
     },
     "/images/articles/sunseeker-from-oem-to-robot-mower-brand/04-capital-and-scale.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -7897,7 +7897,7 @@
       }
     },
     "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 655,
@@ -8131,7 +8131,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/02-timeline.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8149,7 +8149,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/03-trades.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8167,7 +8167,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/04-platforms.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8185,7 +8185,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/05-floorcare.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8203,7 +8203,7 @@
       }
     },
     "/images/articles/tti-hong-kong-manufacturer-global-tool-brands/06-performance.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8239,7 +8239,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/02-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8257,7 +8257,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/03-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8275,7 +8275,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/04-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8293,7 +8293,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/05-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8311,7 +8311,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/06-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8329,7 +8329,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/07-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8347,7 +8347,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/08-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8365,7 +8365,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/09-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8383,7 +8383,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/10-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8401,7 +8401,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/11-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8419,7 +8419,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/12-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8437,7 +8437,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/13-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8455,7 +8455,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/14-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8473,7 +8473,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/15-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8491,7 +8491,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/16-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8509,7 +8509,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/17-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8527,7 +8527,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/18-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -8545,7 +8545,7 @@
       }
     },
     "/images/articles/us-appliance-tool-retailers/19-retailer-v3.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
