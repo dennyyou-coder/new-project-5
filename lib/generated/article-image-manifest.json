@@ -3287,86 +3287,128 @@
     "/images/articles/horst-pudwill-man-who-built-tti/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
-      "width": 800,
-      "height": 450,
-      "bytes": 26888,
+      "width": 1600,
+      "height": 900,
+      "bytes": 192774,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:57b4a87805bd97319950d766c697e49e73fd885bdd29569e3c95695994475a42",
-      "outputHash": "sha256:4922937fb2dd0fbf1066aae65b765403263b9b28ea150cccb5751e034b6b5b73"
-    },
-    "/images/articles/horst-pudwill-man-who-built-tti/02-founders.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 240,
-      "height": 130,
-      "bytes": 5388,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:9a9b11c50c1008100ab6a67144d475590ae4c68a839465d6151c653730c5fb82",
-      "outputHash": "sha256:ccb6aa1bcbb9f9688592d6335c685584d1d0de1f27e7b2bea6becf38a2bfc4a5"
-    },
-    "/images/articles/horst-pudwill-man-who-built-tti/03-dongguan.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 240,
-      "height": 130,
-      "bytes": 10080,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:74fd9ba7f108f9f914c2ee67bef054bde3851565ac74ac9af80eb2711b6ec36b",
-      "outputHash": "sha256:079daa44cc613999d48b6e16ae62ba66d38dc0900349aa6780c1c06fb8194f95"
-    },
-    "/images/articles/horst-pudwill-man-who-built-tti/04-ryobi.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1200,
-      "height": 800,
-      "bytes": 110538,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:289ee312343318314e1ee1b969576e9ead02d13cc230c1d777fb0c48a7f3c7be",
-      "outputHash": "sha256:9de3a8f73a6afb1c1df5928887d06250c61acbfc190f1401c1b89ff11df46fe0",
+      "sourceHash": "sha256:17eded1b3ea5720682abcdc9f5d94e62f168cde681488afb0576576ba2db560c",
+      "outputHash": "sha256:35908b43fc53aff8764402884b92d6c9ccb9a726f310df4fb4d7950aae3dc8e1",
       "mobile": {
-        "src": "/images/articles/horst-pudwill-man-who-built-tti/04-ryobi-800.webp",
+        "src": "/images/articles/horst-pudwill-man-who-built-tti/01-cover-800.webp",
         "width": 800,
-        "height": 533,
-        "bytes": 53594,
-        "outputHash": "sha256:efde75232e6460ba1111624b4cfffb76140da46a7a17d0615e9a59d3519eaff7"
+        "height": 450,
+        "bytes": 57708,
+        "outputHash": "sha256:afbac8c2481582ee97094082c147889bc2826a30226ffd448e02e2a81dc77327"
       }
     },
-    "/images/articles/horst-pudwill-man-who-built-tti/05-milwaukee.webp": {
+    "/images/articles/horst-pudwill-man-who-built-tti/02-quality-scene-v2.webp": {
       "role": "body",
       "kind": "photo",
-      "width": 710,
-      "height": 360,
-      "bytes": 54146,
+      "width": 1600,
+      "height": 900,
+      "bytes": 132316,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:902c88df043cda0ccbf9f6cf6986b517f0c855122c8c5b76585415c1a839c2c2",
-      "outputHash": "sha256:8d817db990b05c49f8921e390947d4331b025fda1f7ff72b0189445ed9a2d7e1"
+      "sourceHash": "sha256:71096970a6e49c958ef6c965d64958e23e72f3099adc35793146673af2f0a4b3",
+      "outputHash": "sha256:3c15f8455b19091bc5c486ed55d75c222596a87fde7139c112d0c7bca124e9f0",
+      "mobile": {
+        "src": "/images/articles/horst-pudwill-man-who-built-tti/02-quality-scene-v2-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 47218,
+        "outputHash": "sha256:364e843d18fa3d54c8316df3283fc8eba21e899760382860b220985e5a60ee4c"
+      }
     },
-    "/images/articles/horst-pudwill-man-who-built-tti/06-galli.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 526,
-      "height": 625,
-      "bytes": 16982,
+    "/images/articles/horst-pudwill-man-who-built-tti/03-ryobi-reversal-v2.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 104144,
       "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1bb2094a482b4bf1ca6f06e1531175719e65666fa0b6851f8e0d987412c4520e",
-      "outputHash": "sha256:6c4452643e48f2f179b8f310d0722e9e51e24f490c05cd468477c7fe977e6350"
+      "quality": 90,
+      "sourceHash": "sha256:949aa321677926a978c3fd998020470bb73c3c503b61ebcf2be1ebcaddc12dae",
+      "outputHash": "sha256:f222961abae9394f155a9edca5aeda69ae57f7558899eea21c913ce78f0d07e6",
+      "mobile": {
+        "src": "/images/articles/horst-pudwill-man-who-built-tti/03-ryobi-reversal-v2-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 38328,
+        "outputHash": "sha256:117a57d3949cb669badb1f6b42e50987b63025ed50517ebb5103e810ecdb91db"
+      }
     },
-    "/images/articles/horst-pudwill-man-who-built-tti/07-stephan.webp": {
+    "/images/articles/horst-pudwill-man-who-built-tti/04-royal-deal-v2.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44540,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b16e4fa46642e4c5833277065148f103d1157d4558e669e1c4a4a0929b1c0316",
+      "outputHash": "sha256:5a6e27ee287e7fecbd9b1bca564861f5aa9f3323873798eb4f86dbf094d8ab91",
+      "mobile": {
+        "src": "/images/articles/horst-pudwill-man-who-built-tti/04-royal-deal-v2-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19420,
+        "outputHash": "sha256:5ed97f19df1c5591d3f2951c329d5816443581c48931d975883f3f02f432f255"
+      }
+    },
+    "/images/articles/horst-pudwill-man-who-built-tti/05-milwaukee-acquisition-v2.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 136312,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:67ce185d631b1753ecb86568973055060eff0f5d61c79e27d7b7c6d80b4e7a03",
+      "outputHash": "sha256:83d8aa0dbcd3f028b970a0f7b86d5c69963721403b2d63ff118e88bd1190ffa6",
+      "mobile": {
+        "src": "/images/articles/horst-pudwill-man-who-built-tti/05-milwaukee-acquisition-v2-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 56590,
+        "outputHash": "sha256:7d54f0e5f8c31bfe36eb4a798cb31698324bb86e68d0a624e46e46d9d3a7b700"
+      }
+    },
+    "/images/articles/horst-pudwill-man-who-built-tti/06-leadership-v2.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 84136,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:653eaf97178d0f6a79b264a33a758f257a48ea7fc47c9ac46a89db88a7b4f29d",
+      "outputHash": "sha256:39446836052dd15944727e134b0aa2bc2dde9db98db9004c5cad14f545dc0192",
+      "mobile": {
+        "src": "/images/articles/horst-pudwill-man-who-built-tti/06-leadership-v2-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31758,
+        "outputHash": "sha256:120966f4dbc686f17dced5fc3efc5d92270d93ade4c6ce48b971e44cc0ea6854"
+      }
+    },
+    "/images/articles/horst-pudwill-man-who-built-tti/07-workshop-scene-v2.webp": {
       "role": "body",
       "kind": "photo",
-      "width": 290,
-      "height": 296,
-      "bytes": 8650,
+      "width": 1600,
+      "height": 900,
+      "bytes": 138096,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:fe1bb371d1a823dca4781a70382dc366b7d257b59bb227cbf69cfc4ab282b431",
-      "outputHash": "sha256:6e97b5a8058c65e2376e46f9d380ccc5785c914eb06f3e469faddd1be47d410b"
+      "sourceHash": "sha256:7de2e6656d3a529cf1a31eee18436f5946dd26a9c1317573b6f2082ed20baaef",
+      "outputHash": "sha256:cf72c986a7ca7fc07f4c844b354e452b3159dcdaeb8ec09651a6833e7ca8ed65",
+      "mobile": {
+        "src": "/images/articles/horst-pudwill-man-who-built-tti/07-workshop-scene-v2-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 52176,
+        "outputHash": "sha256:584a7c184b2ce8d6f9846812fb1957774cb62753342d14a0992d9e9da2148e54"
+      }
     },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp": {
       "role": "cover",
@@ -36590,12 +36632,12 @@
       "budgetClass": "standard",
       "cover": "/images/articles/horst-pudwill-man-who-built-tti/01-cover.webp",
       "body": [
-        "/images/articles/horst-pudwill-man-who-built-tti/02-founders.webp",
-        "/images/articles/horst-pudwill-man-who-built-tti/03-dongguan.webp",
-        "/images/articles/horst-pudwill-man-who-built-tti/04-ryobi.webp",
-        "/images/articles/horst-pudwill-man-who-built-tti/05-milwaukee.webp",
-        "/images/articles/horst-pudwill-man-who-built-tti/06-galli.webp",
-        "/images/articles/horst-pudwill-man-who-built-tti/07-stephan.webp"
+        "/images/articles/horst-pudwill-man-who-built-tti/02-quality-scene-v2.webp",
+        "/images/articles/horst-pudwill-man-who-built-tti/03-ryobi-reversal-v2.webp",
+        "/images/articles/horst-pudwill-man-who-built-tti/04-royal-deal-v2.webp",
+        "/images/articles/horst-pudwill-man-who-built-tti/05-milwaukee-acquisition-v2.webp",
+        "/images/articles/horst-pudwill-man-who-built-tti/06-leadership-v2.webp",
+        "/images/articles/horst-pudwill-man-who-built-tti/07-workshop-scene-v2.webp"
       ]
     },
     "how-a-chinese-manufacturer-is-rebuilding-roomba": {
@@ -40691,40 +40733,40 @@
     },
     "horst-pudwill-man-who-built-tti": {
       "files": {
-        "01-cover.jpg": {
+        "01-cover.webp": {
           "status": "matched",
           "primary": "/images/articles/horst-pudwill-man-who-built-tti/01-cover.webp",
-          "hash": "sha256:57b4a87805bd97319950d766c697e49e73fd885bdd29569e3c95695994475a42"
+          "hash": "sha256:17eded1b3ea5720682abcdc9f5d94e62f168cde681488afb0576576ba2db560c"
         },
-        "02-founders.webp": {
+        "02-quality-scene-v2.webp": {
           "status": "matched",
-          "primary": "/images/articles/horst-pudwill-man-who-built-tti/02-founders.webp",
-          "hash": "sha256:9a9b11c50c1008100ab6a67144d475590ae4c68a839465d6151c653730c5fb82"
+          "primary": "/images/articles/horst-pudwill-man-who-built-tti/02-quality-scene-v2.webp",
+          "hash": "sha256:71096970a6e49c958ef6c965d64958e23e72f3099adc35793146673af2f0a4b3"
         },
-        "03-dongguan.webp": {
+        "03-ryobi-reversal-v2.webp": {
           "status": "matched",
-          "primary": "/images/articles/horst-pudwill-man-who-built-tti/03-dongguan.webp",
-          "hash": "sha256:74fd9ba7f108f9f914c2ee67bef054bde3851565ac74ac9af80eb2711b6ec36b"
+          "primary": "/images/articles/horst-pudwill-man-who-built-tti/03-ryobi-reversal-v2.webp",
+          "hash": "sha256:949aa321677926a978c3fd998020470bb73c3c503b61ebcf2be1ebcaddc12dae"
         },
-        "04-ryobi.png": {
+        "04-royal-deal-v2.webp": {
           "status": "matched",
-          "primary": "/images/articles/horst-pudwill-man-who-built-tti/04-ryobi.webp",
-          "hash": "sha256:289ee312343318314e1ee1b969576e9ead02d13cc230c1d777fb0c48a7f3c7be"
+          "primary": "/images/articles/horst-pudwill-man-who-built-tti/04-royal-deal-v2.webp",
+          "hash": "sha256:b16e4fa46642e4c5833277065148f103d1157d4558e669e1c4a4a0929b1c0316"
         },
-        "05-milwaukee.png": {
+        "05-milwaukee-acquisition-v2.webp": {
           "status": "matched",
-          "primary": "/images/articles/horst-pudwill-man-who-built-tti/05-milwaukee.webp",
-          "hash": "sha256:902c88df043cda0ccbf9f6cf6986b517f0c855122c8c5b76585415c1a839c2c2"
+          "primary": "/images/articles/horst-pudwill-man-who-built-tti/05-milwaukee-acquisition-v2.webp",
+          "hash": "sha256:67ce185d631b1753ecb86568973055060eff0f5d61c79e27d7b7c6d80b4e7a03"
         },
-        "06-galli.png": {
+        "06-leadership-v2.webp": {
           "status": "matched",
-          "primary": "/images/articles/horst-pudwill-man-who-built-tti/06-galli.webp",
-          "hash": "sha256:1bb2094a482b4bf1ca6f06e1531175719e65666fa0b6851f8e0d987412c4520e"
+          "primary": "/images/articles/horst-pudwill-man-who-built-tti/06-leadership-v2.webp",
+          "hash": "sha256:653eaf97178d0f6a79b264a33a758f257a48ea7fc47c9ac46a89db88a7b4f29d"
         },
-        "07-stephan.webp": {
+        "07-workshop-scene-v2.webp": {
           "status": "matched",
-          "primary": "/images/articles/horst-pudwill-man-who-built-tti/07-stephan.webp",
-          "hash": "sha256:fe1bb371d1a823dca4781a70382dc366b7d257b59bb227cbf69cfc4ab282b431"
+          "primary": "/images/articles/horst-pudwill-man-who-built-tti/07-workshop-scene-v2.webp",
+          "hash": "sha256:7de2e6656d3a529cf1a31eee18436f5946dd26a9c1317573b6f2082ed20baaef"
         }
       }
     },
