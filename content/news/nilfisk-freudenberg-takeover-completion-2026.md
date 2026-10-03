@@ -5,6 +5,7 @@ topic: "companies"
 category: "Commercial Cleaning"
 date: "2026-10-03"
 publishedAt: "2026-10-03T13:42:34+08:00"
+updatedAt: "2026-10-03T17:24:49+08:00"
 sortDate: "2026-10-03T13:42:34+08:00"
 eventDate: "2026-04-15"
 brand_slugs: ["nilfisk"]
@@ -15,4 +16,4 @@ source_urls: ["https://www.nilfisk.com/global/professional/news-and-articles/nil
 
 Freudenberg's separate completion announcement said the offer had been settled and its ownership exceeded 90% of Nilfisk's share capital and associated voting rights, excluding treasury shares. It also set out plans to acquire the remaining shares and seek delisting.
 
-The April announcement marks completion of the takeover offer. Nilfisk's later removal from Nasdaq Copenhagen was a separate milestone, reported in May.
+The April announcement marks completion of the [takeover offer first announced in December 2025](/news/nilfisk-freudenberg-takeover-offer-december-2025). Nilfisk's later removal from Nasdaq Copenhagen was a separate milestone, reported in May.

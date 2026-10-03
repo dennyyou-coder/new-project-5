@@ -37,6 +37,7 @@ test("news separates publication from announcement dates and resolves every comp
       if (href.startsWith("/brands/")) assert.ok(brands.has(href.slice(8)), href);
       else if (href.startsWith("/products/")) assert.ok(products.has(href.slice(10)), href);
       else if (href.startsWith("/blog/")) assert.ok(insights.some((item) => item.slug === href.slice(6)), href);
+      else if (href.startsWith("/news/")) assert.ok(articles.some((item) => item.slug === href.slice(6)), href);
       else assert.fail(`Unverified internal news link: ${href}`);
     }
   }
