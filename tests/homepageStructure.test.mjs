@@ -170,8 +170,9 @@ test("homepage limits editorial proof to three insights and one report", () => {
   assert.doesNotMatch(homeSource, /reportCovers/);
 });
 
-test("header exposes News alongside Blog and retains the logo as the homepage entry", () => {
+test("header retains Home and News alongside Blog and the product directory", () => {
   for (const label of [
+    "Home",
     "News",
     "Blog",
     "Products",

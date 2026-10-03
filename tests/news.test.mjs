@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { getNews, getNewsContext, selectNews, newsHref, NEWS_PAGE_SIZE } from "../lib/news.ts";
+import { getNews, getNewsContext, getNewsVisual, selectNews, newsHref, NEWS_PAGE_SIZE } from "../lib/news.ts";
 import { getInsights } from "../lib/content.ts";
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
 import { productModels } from "../lib/products.ts";
@@ -21,10 +21,17 @@ test("news separates publication from announcement dates and resolves every comp
     assert.ok(article.productSlugs.every((slug) => article.brandSlugs.includes(products.get(slug).brandSlug)), `${article.slug}: wrong brand/model association`);
     assert.ok(article.relatedArticles.every((slug) => insights.some((item) => item.slug === slug)));
     const context = getNewsContext(article);
+    const visual = getNewsVisual(article);
+    assert.ok(visual && fs.existsSync(`public${visual.src}`), `${article.slug}: news visual missing`);
     if (article.imageProduct) {
       assert.ok(article.productSlugs.includes(article.imageProduct));
       assert.ok(context.image);
       assert.ok(fs.existsSync(`public${context.image.coverImage}`), `${article.slug}: image missing`);
+      assert.equal(visual.kind, "product");
+      assert.equal(visual.src, context.image.coverImage);
+    } else {
+      assert.equal(visual.kind, "brand");
+      assert.ok(context.brands.some((brand) => brand.logoImage === visual.src), `${article.slug}: unrelated company visual`);
     }
     for (const [, href] of article.content.matchAll(/\]\((\/[^)]+)\)/g)) {
       if (href.startsWith("/brands/")) assert.ok(brands.has(href.slice(8)), href);
