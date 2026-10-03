@@ -99,6 +99,15 @@ export function getNewsContext(article: NewsArticle) {
   };
 }
 
+export function getNewsVisual(article: NewsArticle) {
+  if (article.imageProduct && article.productSlugs.includes(article.imageProduct)) {
+    const product = getProduct(article.imageProduct);
+    if (product) return { src: product.coverImage, alt: product.name, kind: "product" as const };
+  }
+  const brand = getPublishedBrandProfiles(getInsights()).find((item) => article.brandSlugs.includes(item.slug));
+  return brand ? { src: brand.logoImage, alt: brand.logoImageAlt, kind: "brand" as const } : undefined;
+}
+
 export const NEWS_PAGE_SIZE = 12;
 export function newsHref(topic?: NewsTopic, page = 1) {
   const params = new URLSearchParams();
