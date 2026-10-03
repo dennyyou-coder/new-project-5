@@ -1694,6 +1694,125 @@
         "outputHash": "sha256:39791e12825b357de515f052f2bf5ae5faa34cda0a6e7d6a3cf6aa8ae03f0d2b"
       }
     },
+    "/images/articles/delonghi-family-global-coffee-business/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 137962,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5fcd2fcc5697f2afdd6cf1b8af34a0b73e22d7c607b3205cb2dd7b9da07f445e",
+      "outputHash": "sha256:87ac996272599807caaf39904fd03511503b58d0f14015e18ed00724348edcf7",
+      "mobile": {
+        "src": "/images/articles/delonghi-family-global-coffee-business/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 42762,
+        "outputHash": "sha256:68ac54abaacb249483327ed896f70db6521c7ce4076a27797d3ecd2d164a1be9"
+      }
+    },
+    "/images/articles/delonghi-family-global-coffee-business/02-heating-origins.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 166130,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:55a3bf07aeec108a07070023dd70d6852f3a880244da6b46aec70881506d988f",
+      "outputHash": "sha256:79b9bce44762103fda17f3795b27d365954dddf74f3cae5c7abf556f825c98be",
+      "mobile": {
+        "src": "/images/articles/delonghi-family-global-coffee-business/02-heating-origins-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43088,
+        "outputHash": "sha256:3f662b3fcba6418319d7acb700740ac3ac7f7e36acc94ea9fa0b7e3be3d72242"
+      }
+    },
+    "/images/articles/delonghi-family-global-coffee-business/03-china-manufacturing.webp": {
+      "role": "transparent",
+      "kind": "transparent",
+      "width": 800,
+      "height": 421,
+      "bytes": 77724,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:4c0220b06104bf27cc94420a8325d77c0e9f17074cdc27b86edc46311a0e79af",
+      "outputHash": "sha256:95c19afc116a0c8c2489eee65151eb71b09a83e68b26ba4aab40477bbda78535"
+    },
+    "/images/articles/delonghi-family-global-coffee-business/04-home-coffee.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 108112,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6e8d46c4d306696709005cb78db6bd51d80056085b0207eb0642d76f023ac10a",
+      "outputHash": "sha256:f785529f81ae31eef0c506c216d26098667b780302e00704ee9ff9fb899014ac",
+      "mobile": {
+        "src": "/images/articles/delonghi-family-global-coffee-business/04-home-coffee-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 37006,
+        "outputHash": "sha256:d5dfe8d0a4887a26ea3718ea5763cf2058fbe01f86acf36bd538e4de85122f5a"
+      }
+    },
+    "/images/articles/delonghi-family-global-coffee-business/05-kitchen-brands.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 121504,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7b92cfe6fa0d8a752c464ab3e91e95853f52f7b57ecbee019490ad0f348f89f6",
+      "outputHash": "sha256:7b185844f1a8ed62de4e33ed3d9af6ed718a3234395c1b159265039ecbbafe6a",
+      "mobile": {
+        "src": "/images/articles/delonghi-family-global-coffee-business/05-kitchen-brands-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 46366,
+        "outputHash": "sha256:fbe0df5d896b642092d339c7e81f4d43a7a985e1415c9063b23c5094c0b66904"
+      }
+    },
+    "/images/articles/delonghi-family-global-coffee-business/06-professional-coffee.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 116952,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3fc047d97820c6a90147e94c9115192a5f5decbe30f90df464bb8fd8e0976d0c",
+      "outputHash": "sha256:92eb97c83f5b6455246a96f71f975d0d863d7aad18e51aa4c46dbcea81ae01aa",
+      "mobile": {
+        "src": "/images/articles/delonghi-family-global-coffee-business/06-professional-coffee-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36930,
+        "outputHash": "sha256:6babe6ba966649cfc3cc1aa9c8a11d61b287356bd50a69888d5e18466984f3a6"
+      }
+    },
+    "/images/articles/delonghi-family-global-coffee-business/07-professional-margin.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31423,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:3b390fd77555634418aae987842727589af785a7586bd9b5bead64bfd29a58b1",
+      "outputHash": "sha256:2b5fcc8124621981488e4d9b75094b19c15435e847efc182f686b78a77801cc6",
+      "mobile": {
+        "src": "/images/articles/delonghi-family-global-coffee-business/07-professional-margin-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15796,
+        "outputHash": "sha256:2f0e386f58faf8808fc7714b7222c004d52b3fc433923a3f99735aa3bb58d182"
+      }
+    },
     "/images/articles/dreame-a3-awd-pro-2500/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -35979,6 +36098,18 @@
         "/images/articles/deerma-floorcare-value-for-money-limit/05.webp"
       ]
     },
+    "delonghi-family-global-coffee-business": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/delonghi-family-global-coffee-business/01-cover.webp",
+      "body": [
+        "/images/articles/delonghi-family-global-coffee-business/02-heating-origins.webp",
+        "/images/articles/delonghi-family-global-coffee-business/03-china-manufacturing.webp",
+        "/images/articles/delonghi-family-global-coffee-business/04-home-coffee.webp",
+        "/images/articles/delonghi-family-global-coffee-business/05-kitchen-brands.webp",
+        "/images/articles/delonghi-family-global-coffee-business/06-professional-coffee.webp",
+        "/images/articles/delonghi-family-global-coffee-business/07-professional-margin.png"
+      ]
+    },
     "delonghi-group-company-history-and-appliance-brands": {
       "budgetClass": "standard",
       "cover": "/images/insights/delonghi-group-company-history-and-appliance-brands-image-001.png",
@@ -40436,6 +40567,45 @@
           "status": "matched",
           "primary": "/images/articles/cordless-vacuum-wont-turn-on/03-no-power-observation-map.webp",
           "hash": "sha256:7d902c18f5faa404e2e043e4df1e7fa6e7480082220a4c353f4df29ce40c2231"
+        }
+      }
+    },
+    "delonghi-family-global-coffee-business": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/delonghi-family-global-coffee-business/01-cover.webp",
+          "hash": "sha256:5fcd2fcc5697f2afdd6cf1b8af34a0b73e22d7c607b3205cb2dd7b9da07f445e"
+        },
+        "02-heating-origins.png": {
+          "status": "matched",
+          "primary": "/images/articles/delonghi-family-global-coffee-business/02-heating-origins.webp",
+          "hash": "sha256:55a3bf07aeec108a07070023dd70d6852f3a880244da6b46aec70881506d988f"
+        },
+        "03-china-manufacturing.png": {
+          "status": "matched",
+          "primary": "/images/articles/delonghi-family-global-coffee-business/03-china-manufacturing.webp",
+          "hash": "sha256:4c0220b06104bf27cc94420a8325d77c0e9f17074cdc27b86edc46311a0e79af"
+        },
+        "04-home-coffee.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/delonghi-family-global-coffee-business/04-home-coffee.webp",
+          "hash": "sha256:6e8d46c4d306696709005cb78db6bd51d80056085b0207eb0642d76f023ac10a"
+        },
+        "05-kitchen-brands.png": {
+          "status": "matched",
+          "primary": "/images/articles/delonghi-family-global-coffee-business/05-kitchen-brands.webp",
+          "hash": "sha256:7b92cfe6fa0d8a752c464ab3e91e95853f52f7b57ecbee019490ad0f348f89f6"
+        },
+        "06-professional-coffee.png": {
+          "status": "matched",
+          "primary": "/images/articles/delonghi-family-global-coffee-business/06-professional-coffee.webp",
+          "hash": "sha256:3fc047d97820c6a90147e94c9115192a5f5decbe30f90df464bb8fd8e0976d0c"
+        },
+        "07-professional-margin.png": {
+          "status": "matched",
+          "primary": "/images/articles/delonghi-family-global-coffee-business/07-professional-margin.png",
+          "hash": "sha256:3b390fd77555634418aae987842727589af785a7586bd9b5bead64bfd29a58b1"
         }
       }
     },
