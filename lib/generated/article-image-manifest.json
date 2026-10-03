@@ -1222,6 +1222,60 @@
         "outputHash": "sha256:8e408432979782f56544e46ff69efdcbe1d4fb72f760aff8d0137135e3637885"
       }
     },
+    "/images/articles/conair-hair-dryers-kitchen-brands/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 91648,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2a1c6acabed8f452744866afd0c74f7c607642911ad12e4c474239cd37962b63",
+      "outputHash": "sha256:1cc22f2c1cd8aaf5860ff9627b8fe57470114fd854149e8d8776362ebbc7e676",
+      "mobile": {
+        "src": "/images/articles/conair-hair-dryers-kitchen-brands/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 28004,
+        "outputHash": "sha256:b127001a044e15e9dfd13778e2b0b6fc9168963ab63b1904e13af34c0bc2efec"
+      }
+    },
+    "/images/articles/conair-hair-dryers-kitchen-brands/02-brand-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 57582,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:2227796158f41519a9b9e9f1e5e98d3a7797dc21801e3bd5f92062392f22fd8b",
+      "outputHash": "sha256:93f129a3a4990d29c2393e2da8ce36e6374cf6a321a4680533912390cf401b63",
+      "mobile": {
+        "src": "/images/articles/conair-hair-dryers-kitchen-brands/02-brand-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25640,
+        "outputHash": "sha256:ee0f0f65d4295d06634daf54f1fc7337df02edc3f5fef6db4230660d2586583f"
+      }
+    },
+    "/images/articles/conair-hair-dryers-kitchen-brands/03-distribution-hub.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1199,
+      "bytes": 214668,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:3f4bd02ac76a71e91599751ba116fdffe3ef4ddaeaa0e9f5810554f525048d7a",
+      "outputHash": "sha256:d40a4b64e7ddaf97140ec4eb70444bdd680512503b1bfb700542a73abb2a7dde",
+      "mobile": {
+        "src": "/images/articles/conair-hair-dryers-kitchen-brands/03-distribution-hub-800.webp",
+        "width": 800,
+        "height": 599,
+        "bytes": 55536,
+        "outputHash": "sha256:42c2eca08bf2c698d544feae49a0a28084f750ec8d1c7171737b088a4fb46756"
+      }
+    },
     "/images/articles/cordless-vacuum-battery-drains-fast/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -35725,6 +35779,14 @@
         "/images/blog/cleaning-appliance-compliance-red-flags.webp"
       ]
     },
+    "conair-hair-dryers-kitchen-brands": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/conair-hair-dryers-kitchen-brands/01-cover.webp",
+      "body": [
+        "/images/articles/conair-hair-dryers-kitchen-brands/02-brand-map.webp",
+        "/images/articles/conair-hair-dryers-kitchen-brands/03-distribution-hub.webp"
+      ]
+    },
     "cordless-vacuum-battery-drains-fast": {
       "budgetClass": "standard",
       "cover": "/images/articles/cordless-vacuum-battery-drains-fast/01-cover.webp",
@@ -40116,6 +40178,25 @@
           "status": "matched",
           "primary": "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp",
           "hash": "sha256:56ab2b99c25eb3b37dcc5945ccd68c4e13457ef13bf0403f37c5a41e88524553"
+        }
+      }
+    },
+    "conair-hair-dryers-kitchen-brands": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/conair-hair-dryers-kitchen-brands/01-cover.webp",
+          "hash": "sha256:2a1c6acabed8f452744866afd0c74f7c607642911ad12e4c474239cd37962b63"
+        },
+        "02-brand-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/conair-hair-dryers-kitchen-brands/02-brand-map.webp",
+          "hash": "sha256:2227796158f41519a9b9e9f1e5e98d3a7797dc21801e3bd5f92062392f22fd8b"
+        },
+        "03-distribution-hub.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/conair-hair-dryers-kitchen-brands/03-distribution-hub.webp",
+          "hash": "sha256:3f4bd02ac76a71e91599751ba116fdffe3ef4ddaeaa0e9f5810554f525048d7a"
         }
       }
     },
