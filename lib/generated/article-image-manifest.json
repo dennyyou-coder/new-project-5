@@ -1813,6 +1813,78 @@
         "outputHash": "sha256:2f0e386f58faf8808fc7714b7222c004d52b3fc433923a3f99735aa3bb58d182"
       }
     },
+    "/images/articles/dji-growth-drones-pocket-cameras/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 105308,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c7f66672dc5b064be41602a1b64784a915f3dc825f8bf79bf7059cf3e050e220",
+      "outputHash": "sha256:fb03935bbe995a1f47d37f767103c10aba1f11b5a1d3651bfa85180802afdb12",
+      "mobile": {
+        "src": "/images/articles/dji-growth-drones-pocket-cameras/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 38190,
+        "outputHash": "sha256:fbaa6de099f759e98b3885d3e3ec7b22a9f835586ac55a27a1a61137c561c56c"
+      }
+    },
+    "/images/articles/dji-growth-drones-pocket-cameras/02-flight-control.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1160,
+      "height": 774,
+      "bytes": 80356,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1cfa15e6d49e6b23041ea39ed91a2801047d33ebc0b932b78f0c399446df8cd5",
+      "outputHash": "sha256:a69be910fff85e42da5a2caf1303a905b2f1eec64f2c0815cd9a742c24161cbc",
+      "mobile": {
+        "src": "/images/articles/dji-growth-drones-pocket-cameras/02-flight-control-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 43710,
+        "outputHash": "sha256:ee78116f25d13d965d841c7b6d85929685dbabecc9880c0aa6775ed3552fc73f"
+      }
+    },
+    "/images/articles/dji-growth-drones-pocket-cameras/03-osmo-handheld.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 61006,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:54a3eb9f7bc3935f1ca931ac113cbc686be51598dbc992d87fc3deafeb73c5cf",
+      "outputHash": "sha256:9cb7da80003e1c9c72117cc7a0c14ef56a416c8a8a58714158db3779768bc24a",
+      "mobile": {
+        "src": "/images/articles/dji-growth-drones-pocket-cameras/03-osmo-handheld-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 22532,
+        "outputHash": "sha256:cbaa14cbc039999c1a6b3559126af4e80899639d9af67ccb753ee74ad8c9f16a"
+      }
+    },
+    "/images/articles/dji-growth-drones-pocket-cameras/04-pocket-design.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 174608,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:102cc628f62ea04f1cf5deefa9e019cf09490a55c0cefdcf14a64b774bed45f1",
+      "outputHash": "sha256:fc7cecfb799a180fd46e989b9cbeb915d9ae692442ea9615c9b4402ab4e9973d",
+      "mobile": {
+        "src": "/images/articles/dji-growth-drones-pocket-cameras/04-pocket-design-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 42826,
+        "outputHash": "sha256:dd7f3b5f5fd81273deb874fd629bd2681369597b4ef6c40cce19569e358ddcf8"
+      }
+    },
     "/images/articles/dreame-a3-awd-pro-2500/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -36163,6 +36235,15 @@
       "cover": "/images/insights/dji-goes-to-the-ground-dreame-and-insta360-go-to-the-sky-cover.jpg",
       "body": []
     },
+    "dji-growth-drones-pocket-cameras": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dji-growth-drones-pocket-cameras/01-cover.webp",
+      "body": [
+        "/images/articles/dji-growth-drones-pocket-cameras/02-flight-control.webp",
+        "/images/articles/dji-growth-drones-pocket-cameras/03-osmo-handheld.webp",
+        "/images/articles/dji-growth-drones-pocket-cameras/04-pocket-design.webp"
+      ]
+    },
     "dji-is-running-out-of-time": {
       "budgetClass": "standard",
       "cover": "/images/insights/dji-is-running-out-of-time-cover.jpg",
@@ -40606,6 +40687,30 @@
           "status": "matched",
           "primary": "/images/articles/delonghi-family-global-coffee-business/07-professional-margin.png",
           "hash": "sha256:3b390fd77555634418aae987842727589af785a7586bd9b5bead64bfd29a58b1"
+        }
+      }
+    },
+    "dji-growth-drones-pocket-cameras": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dji-growth-drones-pocket-cameras/01-cover.webp",
+          "hash": "sha256:c7f66672dc5b064be41602a1b64784a915f3dc825f8bf79bf7059cf3e050e220"
+        },
+        "02-flight-control.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dji-growth-drones-pocket-cameras/02-flight-control.webp",
+          "hash": "sha256:1cfa15e6d49e6b23041ea39ed91a2801047d33ebc0b932b78f0c399446df8cd5"
+        },
+        "03-osmo-handheld.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dji-growth-drones-pocket-cameras/03-osmo-handheld.webp",
+          "hash": "sha256:54a3eb9f7bc3935f1ca931ac113cbc686be51598dbc992d87fc3deafeb73c5cf"
+        },
+        "04-pocket-design.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dji-growth-drones-pocket-cameras/04-pocket-design.webp",
+          "hash": "sha256:102cc628f62ea04f1cf5deefa9e019cf09490a55c0cefdcf14a64b774bed45f1"
         }
       }
     },
