@@ -5506,6 +5506,150 @@
         "outputHash": "sha256:cdec3c218563ba64365a231868bc4c7dc23111883e9db5d306b82e84c77950ea"
       }
     },
+    "/images/articles/miele-two-families-company-story/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 114992,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d4a0300bd6ca930d4245b5475119f6d44d691248a78fd293f7eb5608c8c84834",
+      "outputHash": "sha256:037eb96f70e4fc82768af215a8d10453711cb5641e8b6afd16a047e5bb7c4ed0",
+      "mobile": {
+        "src": "/images/articles/miele-two-families-company-story/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 34036,
+        "outputHash": "sha256:9e5f4ea2297aa9f31b4b8aaadb9940191e2ec2a6c772ac88a340e7e046e80a19"
+      }
+    },
+    "/images/articles/miele-two-families-company-story/02-fourth-generation.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 76212,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:593dae80e657f13ee8888319c81d11ca9330bc6f2e1bd90f42e0b90fbd113b32",
+      "outputHash": "sha256:c7f3c01f83974a41fc39e5be320b30a9a149425f090a46afa72ca8c88d84e56f",
+      "mobile": {
+        "src": "/images/articles/miele-two-families-company-story/02-fourth-generation-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 23598,
+        "outputHash": "sha256:88f4599696e96fd265c56b9bf528cb9909ef80a24a60cc0a98583ade9173107a"
+      }
+    },
+    "/images/articles/miele-two-families-company-story/03-early-products.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 84714,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:521a32d49758b54664a204cb78042d90c0e0acd8280f87feb043b99e270550f7",
+      "outputHash": "sha256:3670517803e15e5a98cca7a2e08802d826379e48467353e566389a7769b4bd18",
+      "mobile": {
+        "src": "/images/articles/miele-two-families-company-story/03-early-products-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25906,
+        "outputHash": "sha256:f05cfcf12aef2468075f251597ec4d0471589c87af15aafa4559aaaab0cd7428"
+      }
+    },
+    "/images/articles/miele-two-families-company-story/04-management.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1071,
+      "bytes": 155814,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:0a0f251fa32acb2b05aaa844cce85bbe5a84b7af0027518515e528bee75cc7b5",
+      "outputHash": "sha256:ffbd604a1fea2ca7f85078df55df32cdbf3802059ca63ef807c22ef9e4dc8f71",
+      "mobile": {
+        "src": "/images/articles/miele-two-families-company-story/04-management-800.webp",
+        "width": 800,
+        "height": 536,
+        "bytes": 36654,
+        "outputHash": "sha256:64e814fabe972009230a782bb2bf31b7d9ea22a5f0a75aed6eab5a0a53f39775"
+      }
+    },
+    "/images/articles/miele-two-families-company-story/05-kitchen.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1400,
+      "height": 788,
+      "bytes": 106556,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ae80011779394b240c4e571498e79fe0352ca29f1b528493f482a1ede1705e81",
+      "outputHash": "sha256:aa9b1c25c380df0e746449841645606ac4e7ed994e77a02870cba091dac023e9",
+      "mobile": {
+        "src": "/images/articles/miele-two-families-company-story/05-kitchen-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 40516,
+        "outputHash": "sha256:59c5f786f111968063fb782927cd40abf57d419481610a8b08dc9d63830e1574"
+      }
+    },
+    "/images/articles/miele-two-families-company-story/06-professional-business.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 85258,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:20831223a6a2f99ad8cb292ba1fcb3897b139dd017c749dbacee63c6e21432c4",
+      "outputHash": "sha256:abd887f2a491d6e6118dfde9fdc4238027ca2540fdb6cae4e0928f9841062265",
+      "mobile": {
+        "src": "/images/articles/miele-two-families-company-story/06-professional-business-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31044,
+        "outputHash": "sha256:2cf60fc4802018c68cca9d705527533089072f3bb41541713e872df301eabae5"
+      }
+    },
+    "/images/articles/miele-two-families-company-story/07-twindos.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69452,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e40b7622d34397553daf700eba5bd6379792f0954cf82f7be7ec68c0832fb4af",
+      "outputHash": "sha256:391369efb09e68ad10bd2e079a02ff2d8f51d3dafdc0ff9c0285b663eb7abcbb",
+      "mobile": {
+        "src": "/images/articles/miele-two-families-company-story/07-twindos-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26350,
+        "outputHash": "sha256:03116070d43a27050cdf54b740f58a1e2a15d0b0f3d16dc4816edd38c68a2b0c"
+      }
+    },
+    "/images/articles/miele-two-families-company-story/08-manufacturing.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1440,
+      "height": 960,
+      "bytes": 180254,
+      "format": "webp",
+      "quality": 76,
+      "sourceHash": "sha256:47edf1be22dd3b31f21b9a4d5079a9b340275ec64c068ed62e5246f0a0d4c625",
+      "outputHash": "sha256:e39038391acbcf2e7032f5cdd3b44697eefbfaccb69787b1ed9339863331dc11",
+      "mobile": {
+        "src": "/images/articles/miele-two-families-company-story/08-manufacturing-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 87166,
+        "outputHash": "sha256:a5047435d2a843df49194f48d0818988da4e00293e93faf97010994a72e79d98"
+      }
+    },
     "/images/articles/mova-diver-a10/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -37663,6 +37807,19 @@
       "cover": "/images/articles/miele-triflex-hx3-aqua/01-cover.webp",
       "body": []
     },
+    "miele-two-families-company-story": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/miele-two-families-company-story/01-cover.webp",
+      "body": [
+        "/images/articles/miele-two-families-company-story/02-fourth-generation.webp",
+        "/images/articles/miele-two-families-company-story/03-early-products.webp",
+        "/images/articles/miele-two-families-company-story/04-management.webp",
+        "/images/articles/miele-two-families-company-story/05-kitchen.webp",
+        "/images/articles/miele-two-families-company-story/06-professional-business.webp",
+        "/images/articles/miele-two-families-company-story/07-twindos.webp",
+        "/images/articles/miele-two-families-company-story/08-manufacturing.webp"
+      ]
+    },
     "migo-ascender-stair-climbing-robot": {
       "budgetClass": "standard",
       "cover": "/images/insights/migo-ascender-stair-climbing-robot-cover.jpg",
@@ -41761,6 +41918,50 @@
           "status": "matched",
           "primary": "/images/articles/miele-triflex-hx3-aqua/01-cover.webp",
           "hash": "sha256:ee06d2f6cc8d53d73a76388bc2e1caedf79baf402e85d485504295d88d93c079"
+        }
+      }
+    },
+    "miele-two-families-company-story": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/miele-two-families-company-story/01-cover.webp",
+          "hash": "sha256:d4a0300bd6ca930d4245b5475119f6d44d691248a78fd293f7eb5608c8c84834"
+        },
+        "02-fourth-generation.webp": {
+          "status": "matched",
+          "primary": "/images/articles/miele-two-families-company-story/02-fourth-generation.webp",
+          "hash": "sha256:593dae80e657f13ee8888319c81d11ca9330bc6f2e1bd90f42e0b90fbd113b32"
+        },
+        "03-early-products.webp": {
+          "status": "matched",
+          "primary": "/images/articles/miele-two-families-company-story/03-early-products.webp",
+          "hash": "sha256:521a32d49758b54664a204cb78042d90c0e0acd8280f87feb043b99e270550f7"
+        },
+        "04-management.webp": {
+          "status": "matched",
+          "primary": "/images/articles/miele-two-families-company-story/04-management.webp",
+          "hash": "sha256:0a0f251fa32acb2b05aaa844cce85bbe5a84b7af0027518515e528bee75cc7b5"
+        },
+        "05-kitchen.webp": {
+          "status": "matched",
+          "primary": "/images/articles/miele-two-families-company-story/05-kitchen.webp",
+          "hash": "sha256:ae80011779394b240c4e571498e79fe0352ca29f1b528493f482a1ede1705e81"
+        },
+        "06-professional-business.webp": {
+          "status": "matched",
+          "primary": "/images/articles/miele-two-families-company-story/06-professional-business.webp",
+          "hash": "sha256:20831223a6a2f99ad8cb292ba1fcb3897b139dd017c749dbacee63c6e21432c4"
+        },
+        "07-twindos.webp": {
+          "status": "matched",
+          "primary": "/images/articles/miele-two-families-company-story/07-twindos.webp",
+          "hash": "sha256:e40b7622d34397553daf700eba5bd6379792f0954cf82f7be7ec68c0832fb4af"
+        },
+        "08-manufacturing.webp": {
+          "status": "matched",
+          "primary": "/images/articles/miele-two-families-company-story/08-manufacturing.webp",
+          "hash": "sha256:47edf1be22dd3b31f21b9a4d5079a9b340275ec64c068ed62e5246f0a0d4c625"
         }
       }
     },
