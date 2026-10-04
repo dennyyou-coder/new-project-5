@@ -9379,6 +9379,186 @@
         "outputHash": "sha256:5a2daa8735ba3a281fe8d306246a6e1198319a24d757fc915414228a94316c6b"
       }
     },
+    "/images/articles/vorwerk-family-thermomix-history/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 119464,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a36a0b3b9744c4225e2818f0048af264847a8e929808519211267a61026515c2",
+      "outputHash": "sha256:e94642c754d980cf2a0334358e7e5ef27380a9fe0f4449415821f9dbbed6d38d",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 38130,
+        "outputHash": "sha256:c84cebf7ea937604dcd1a5952f5fcd24b524b42e56f80109af64fc1a1bdd47ad"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/02-early-kobold-sales.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1052,
+      "height": 1600,
+      "bytes": 175960,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:effc69425b5618d798b3de96e3631630709d9b2b3294b4011b549b3fa7e9eb3e",
+      "outputHash": "sha256:093b96477875da93a50bda5b67a7155a154688271fee13bd0532fda41d4a84e9",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/02-early-kobold-sales-800.webp",
+        "width": 526,
+        "height": 800,
+        "bytes": 63884,
+        "outputHash": "sha256:717bb218cb22053f9d30698440fa976b3539257ec3b0b777fbd7dc33b5b92bd6"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/03-carpet-factory.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 960,
+      "height": 518,
+      "bytes": 186058,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:69298ad26dbc9ca5990c70a23b635fc843e69918f587f385fad89e18728b5e1b",
+      "outputHash": "sha256:f7739971a2250a854a6407adb272fdebcab21bd88c1510d499a2ceb15fa9accc",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/03-carpet-factory-800.webp",
+        "width": 800,
+        "height": 432,
+        "bytes": 89186,
+        "outputHash": "sha256:e4f972d9f17546a7d219edf219b54e88eea5f9f7f460272351dfbc81d8172899"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/04-jorg-mittelsten-scheid.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1069,
+      "height": 1600,
+      "bytes": 101460,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:409ebd0619f962d1641433eaf7a9ca68698c95df2465b6dcaa7acf1f5e9b71c1",
+      "outputHash": "sha256:f312d86ba6c8151d52dcc7dc39645f6edf253f91eef26320ee30bc968726f72c",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/04-jorg-mittelsten-scheid-800.webp",
+        "width": 535,
+        "height": 800,
+        "bytes": 25180,
+        "outputHash": "sha256:cfdbc169dc919cd0ea25ae5deabba8cda71983add306c7b87fde5c6b014e5723"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/05-vkm5.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 877,
+      "height": 1600,
+      "bytes": 79146,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:366d3a81524f203ec290b8e087cda68b2137326a0def7d618902b6fe8d137877",
+      "outputHash": "sha256:6e9ffebb93511099fe06e9308606a6b156cb9900de201f0a21082c7ad6aef2d9",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/05-vkm5-800.webp",
+        "width": 439,
+        "height": 800,
+        "bytes": 28816,
+        "outputHash": "sha256:bce54ca5432cc7b8665c652cb4150cb0b6cba578a4cbc85cfd148b6d4bda4cca"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/06-vm2000.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1024,
+      "height": 1440,
+      "bytes": 166294,
+      "format": "webp",
+      "quality": 76,
+      "sourceHash": "sha256:9479c93c29c7b2b8ee9e0392e131fb5550bec8fdaff494053d8d329560b055f4",
+      "outputHash": "sha256:3f73ae4b3aa6e56d40a4ffcbe8bad7014a6b2ec8bf3fadd9fa2f9c57f477a0f6",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/06-vm2000-800.webp",
+        "width": 569,
+        "height": 800,
+        "bytes": 92616,
+        "outputHash": "sha256:e392950dcf600ed7b7d26851b90d1511b1b2483a07aabfadbccbfbf878d737ec"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/07-tm5-kitchen.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1200,
+      "height": 799,
+      "bytes": 37020,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f0ae8eed7957a3cb9e944342fa7606df0e4efd0dac5c60633987a4d156904b75",
+      "outputHash": "sha256:5e525d5e37e18cb1f319e755745d93d3aaa3158cd66a20eadfc6f030bf78339a",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/07-tm5-kitchen-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 20596,
+        "outputHash": "sha256:c651b6a740daf1380a4e3abd56b8b3bd2d30f32cd70f9c31e3d30a8dc04b1fe9"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/08-tm7-kitchen.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 113436,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:68756b178e5ceda09271ea3ad35a2ca4191c7b4050821ef1d53b5322602d13b3",
+      "outputHash": "sha256:ef48288494926d18087b75c366a42a13bc4a7363246415fab81576aea8ca886c",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/08-tm7-kitchen-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 39586,
+        "outputHash": "sha256:4681aa61123faa84361cf2db00e729b68f6bb393292940c24c492a189be345ed"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/09-tm7-production.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 78426,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:337898848351f10a3794c081145ceef9828fa97096a7aa5bc965e975360ab369",
+      "outputHash": "sha256:df5e1f2b81454c6a59bdf097b8ccf99bd1a6ff10564667c5e4d839b6c87e5e88",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/09-tm7-production-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 28422,
+        "outputHash": "sha256:4522cbdf368dba06d05544779a8c3f5cd5089fb9338e86be8f0689b153e0332a"
+      }
+    },
+    "/images/articles/vorwerk-family-thermomix-history/10-advisor.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 84364,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0309f25aac9fc935e2ae12316b2c1f83b7b3c397a770575124ae37064343ff82",
+      "outputHash": "sha256:127a5adb0ba7837bda07c9cdf20df3f9d9a38eded1b4f641e806edc91ddc4368",
+      "mobile": {
+        "src": "/images/articles/vorwerk-family-thermomix-history/10-advisor-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 31196,
+        "outputHash": "sha256:573c1eed170729f94cd113b46bf50aadbf34efc9ded7e4498d90e8121c66cc9c"
+      }
+    },
     "/images/articles/what-sharkninja-makes-us-think-about/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -39336,6 +39516,21 @@
         "/images/insights/vietnam-development-and-industrial-hollowing-image-004.jpg"
       ]
     },
+    "vorwerk-family-thermomix-history": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/vorwerk-family-thermomix-history/01-cover.webp",
+      "body": [
+        "/images/articles/vorwerk-family-thermomix-history/02-early-kobold-sales.webp",
+        "/images/articles/vorwerk-family-thermomix-history/03-carpet-factory.webp",
+        "/images/articles/vorwerk-family-thermomix-history/04-jorg-mittelsten-scheid.webp",
+        "/images/articles/vorwerk-family-thermomix-history/05-vkm5.webp",
+        "/images/articles/vorwerk-family-thermomix-history/06-vm2000.webp",
+        "/images/articles/vorwerk-family-thermomix-history/07-tm5-kitchen.webp",
+        "/images/articles/vorwerk-family-thermomix-history/08-tm7-kitchen.webp",
+        "/images/articles/vorwerk-family-thermomix-history/09-tm7-production.webp",
+        "/images/articles/vorwerk-family-thermomix-history/10-advisor.webp"
+      ]
+    },
     "vs-industry-bissell-three-year-agreement": {
       "budgetClass": "standard",
       "cover": "/images/insights/vs-industry-bissell-three-year-agreement-cover.jpg",
@@ -43011,6 +43206,60 @@
           "status": "matched",
           "primary": "/images/articles/vacuum-cleaner-smells-burnt/03-burning-smell-stop-check.webp",
           "hash": "sha256:f317116cd311a9aff671705c930f98beb566e7942fcbf78888b3d22725b53b97"
+        }
+      }
+    },
+    "vorwerk-family-thermomix-history": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/01-cover.webp",
+          "hash": "sha256:a36a0b3b9744c4225e2818f0048af264847a8e929808519211267a61026515c2"
+        },
+        "02-early-kobold-sales.webp": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/02-early-kobold-sales.webp",
+          "hash": "sha256:effc69425b5618d798b3de96e3631630709d9b2b3294b4011b549b3fa7e9eb3e"
+        },
+        "03-carpet-factory.webp": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/03-carpet-factory.webp",
+          "hash": "sha256:69298ad26dbc9ca5990c70a23b635fc843e69918f587f385fad89e18728b5e1b"
+        },
+        "04-jorg-mittelsten-scheid.webp": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/04-jorg-mittelsten-scheid.webp",
+          "hash": "sha256:409ebd0619f962d1641433eaf7a9ca68698c95df2465b6dcaa7acf1f5e9b71c1"
+        },
+        "05-vkm5.webp": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/05-vkm5.webp",
+          "hash": "sha256:366d3a81524f203ec290b8e087cda68b2137326a0def7d618902b6fe8d137877"
+        },
+        "06-vm2000.webp": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/06-vm2000.webp",
+          "hash": "sha256:9479c93c29c7b2b8ee9e0392e131fb5550bec8fdaff494053d8d329560b055f4"
+        },
+        "07-tm5-kitchen.webp": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/07-tm5-kitchen.webp",
+          "hash": "sha256:f0ae8eed7957a3cb9e944342fa7606df0e4efd0dac5c60633987a4d156904b75"
+        },
+        "08-tm7-kitchen.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/08-tm7-kitchen.webp",
+          "hash": "sha256:68756b178e5ceda09271ea3ad35a2ca4191c7b4050821ef1d53b5322602d13b3"
+        },
+        "09-tm7-production.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/09-tm7-production.webp",
+          "hash": "sha256:337898848351f10a3794c081145ceef9828fa97096a7aa5bc965e975360ab369"
+        },
+        "10-advisor.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/vorwerk-family-thermomix-history/10-advisor.webp",
+          "hash": "sha256:0309f25aac9fc935e2ae12316b2c1f83b7b3c397a770575124ae37064343ff82"
         }
       }
     },
