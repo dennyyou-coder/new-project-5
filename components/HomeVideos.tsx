@@ -61,7 +61,7 @@ export function HomeVideos({ library = false }: { library?: boolean }) {
             More on YouTube
           </a>
         ) : (
-          <Link className="home-v9-inline-link" href="/videos">
+          <Link className="home-v9-inline-link button" href="/videos">
             All videos
           </Link>
         )}
@@ -111,6 +111,7 @@ export function HomeVideos({ library = false }: { library?: boolean }) {
               <h3>{video.title}</h3>
               <p>{video.description}</p>
               <a
+                className={library ? undefined : "button-secondary"}
                 href={`https://www.youtube.com/watch?v=${video.videoId}`}
                 target="_blank"
                 rel="noopener noreferrer"

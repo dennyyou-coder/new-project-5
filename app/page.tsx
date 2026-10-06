@@ -107,7 +107,7 @@ export default function HomePage() {
         <div className="editorial-hero-foot">
           <div className="container">
             <span>Independent perspectives. Practical connections.</span>
-            <Link href="#founder-journal">
+            <Link className="button-secondary" href="#founder-journal">
               Follow the founder’s journey
             </Link>
           </div>
@@ -235,7 +235,7 @@ export default function HomePage() {
                 Plan Your Visit
               </TallyButton>
             </div>
-            <Link href="/wcb-expo" className="refresh-card-link">
+            <Link href="/wcb-expo" className="refresh-card-link button-secondary">
               Explore WCB Expo
             </Link>
           </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
               <p className="eyebrow">Insights &amp; analysis</p>
               <h2>Selected Industry Analysis</h2>
             </div>
-            <Link href="/blog">All insights</Link>
+            <Link className="button" href="/blog">All insights</Link>
           </div>
           <div className="refresh-analysis-grid">
             {analysis.map((article) => (
@@ -328,7 +328,7 @@ export default function HomePage() {
               <Link className="button" href="/about">
                 Meet Denny You
               </Link>
-              <Link href={`/blog/series/${founderSeries}`}>
+              <Link className="button-secondary" href={`/blog/series/${founderSeries}`}>
                 Read my founder’s journal
               </Link>
             </div>
