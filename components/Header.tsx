@@ -29,6 +29,8 @@ export function Header() {
   const [openGroup, setOpenGroup] = useState<string | null>(null);
   const root = useRef<HTMLElement>(null);
   const pathname = usePathname();
+  const isCurrent = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
   function closeMenu() {
     setIsMenuOpen(false);
     setOpenGroup(null);
@@ -101,7 +103,7 @@ export function Header() {
             id="main-navigation"
             aria-label="Main navigation"
           >
-            <Link href="/news" onClick={closeMenu}>
+            <Link href="/news" aria-current={isCurrent("/news") ? "page" : undefined} onClick={closeMenu}>
               News
             </Link>
             {groups.map((group, index) => (
@@ -118,6 +120,7 @@ export function Header() {
                 <button
                   type="button"
                   data-group={group.label}
+                  data-current={group.links.some((link) => isCurrent(link.href)) || undefined}
                   aria-expanded={openGroup === group.label}
                   aria-controls={`nav-group-${index}`}
                   onClick={() =>
@@ -125,7 +128,7 @@ export function Header() {
                   }
                 >
                   {group.label}
-                  <span aria-hidden="true">⌄</span>
+                  <span className="nav-expand-indicator" aria-hidden="true">{openGroup === group.label ? "−" : "+"}</span>
                 </button>
                 <div
                   className="nav-submenu"
@@ -133,23 +136,23 @@ export function Header() {
                   hidden={openGroup !== group.label}
                 >
                   {group.links.map((link) => (
-                    <Link key={link.href} href={link.href} onClick={closeMenu}>
+                    <Link key={link.href} href={link.href} aria-current={pathname === link.href ? "page" : undefined} onClick={closeMenu}>
                       {link.label}
                     </Link>
                   ))}
                 </div>
               </div>
             ))}
-            <Link href="/videos" onClick={closeMenu}>
+            <Link href="/videos" aria-current={isCurrent("/videos") ? "page" : undefined} onClick={closeMenu}>
               Videos
             </Link>
-            <Link href="/wcb-expo" onClick={closeMenu}>
+            <Link href="/wcb-expo" aria-current={isCurrent("/wcb-expo") ? "page" : undefined} onClick={closeMenu}>
               WCB Expo
             </Link>
-            <Link href="/about" onClick={closeMenu}>
+            <Link href="/about" aria-current={isCurrent("/about") ? "page" : undefined} onClick={closeMenu}>
               About
             </Link>
-            <Link className="nav-business" href="/contact" onClick={closeMenu}>
+            <Link className="nav-business" href="/contact" aria-current={isCurrent("/contact") ? "page" : undefined} onClick={closeMenu}>
               Work With WCB
             </Link>
           </nav>

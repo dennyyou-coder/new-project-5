@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "../styles/trust.css";
 import { TallyButton } from "@/components/LeadForms";
-import { IconBadge, InlineIcon } from "@/components/Icon";
+import { InlineIcon } from "@/components/Icon";
+import { BusinessServiceIcon } from "@/components/BusinessServices";
 import { CONTACT_INQUIRIES } from "@/lib/inquiryConversion";
 
 export const metadata: Metadata = {
@@ -68,7 +69,7 @@ export default function ContactPage() {
                   trackClick
                 >
                   <span className="contact-help-card-number">0{index + 1}</span>
-                  <IconBadge name={item.icon} />
+                  <BusinessServiceIcon value={item.value} />
                   <span className="contact-help-card-copy">
                     <strong>{item.title}</strong>
                     <span>{item.description}</span>

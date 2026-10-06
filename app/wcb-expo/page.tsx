@@ -165,8 +165,9 @@ export default function WcbExpoPage() {
     <div className="wcb-expo-page">
       <section className="wcb-expo-hero">
         <div className="wcb-expo-shell wcb-expo-hero-content">
+          <div className="wcb-expo-hero-copy">
           <p className="wcb-expo-kicker">2026 WCB Expo Is Now In Preparation</p>
-<h1>WCB Expo 2026</h1>
+          <h1>WCB Expo 2026</h1>
           <p>WCB International Cleaning Appliance Expo</p>
           <p className="wcb-expo-chinese">2026 WCB 国际清洁电器博览会</p>
 
@@ -193,6 +194,14 @@ export default function WcbExpoPage() {
               Exhibiting &amp; Partnerships
             </Link>
           </div>
+          </div>
+          <figure className="wcb-expo-hero-photo">
+            <img
+              src="/images/industry/home-expo-networking-2025.jpg"
+              alt="Scenes from previous WCB industry gatherings"
+            />
+            <figcaption>Scenes From Previous WCB Industry Gatherings</figcaption>
+          </figure>
         </div>
       </section>
 

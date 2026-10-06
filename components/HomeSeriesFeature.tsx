@@ -23,21 +23,21 @@ export function HomeSeriesFeature({ article }: { article: Insight }) {
       className="home-v9-series-card"
       aria-labelledby="home-founder-series-title"
     >
+      <p className="home-v9-series-label">
+        A Founder’s Journal · Denny You
+      </p>
       <div className="home-v9-series-media">
         <Image
           src={coverUrl}
           alt={article.coverAlt || `${seriesTitle} cover`}
           width={cover.width}
           height={cover.height}
-          sizes="(max-width: 1050px) calc(100vw - 40px), 480px"
+          sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1440px) 35vw, 500px"
           loading="lazy"
           decoding="async"
         />
       </div>
       <div className="home-v9-series-copy">
-        <p className="home-v9-series-label">
-          A Founder’s Journal · Denny You
-        </p>
         <h2 id="home-founder-series-title">{seriesTitle}</h2>
         <h3>{article.title}</h3>
         <p className="home-v9-series-excerpt">{article.excerpt}</p>
