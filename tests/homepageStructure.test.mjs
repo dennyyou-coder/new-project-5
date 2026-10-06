@@ -21,5 +21,5 @@ test("all established discovery routes remain reachable from the shared navigati
 
 test("home retains a single main heading and search guides stay outside editorial selection", () => {
   assert.equal((home.match(/<h1/g) || []).length, 1);
-  assert.match(home, /getEditorialInsights\(getInsights\(\)\)/);
+  assert.match(home, /getEditorialInsights\(articles\)/);
 });

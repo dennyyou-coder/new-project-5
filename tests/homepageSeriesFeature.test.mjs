@@ -10,7 +10,7 @@ const componentSource = await readFile(
 const cssSource = readRouteStyles("home.css");
 
 test("founder-series card keeps the approved identity and semantic hierarchy", () => {
-  assert.match(componentSource, /Founder Series · Latest Episode/);
+  assert.match(componentSource, /A Founder’s Journal · Denny You/);
   assert.match(
     componentSource,
     /Building the World’s No\.1 Cleaning Show from Scratch/

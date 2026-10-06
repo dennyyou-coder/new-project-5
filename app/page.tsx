@@ -2,16 +2,26 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./styles/home.css";
+import "./styles/homepage-editorial.css";
+import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
 import { HomeVideos } from "@/components/HomeVideos";
 import { BusinessServices } from "@/components/BusinessServices";
 import { TallyButton } from "@/components/LeadForms";
 import { getInsights } from "@/lib/content";
-import { getEditorialInsights } from "@/lib/insightCollections";
+import {
+  getEditorialInsights,
+  getLatestSeriesInsight,
+} from "@/lib/insightCollections";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getNews, newsDate, newsTopicLabel } from "@/lib/news";
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 export default function HomePage() {
-  const editorial = getEditorialInsights(getInsights());
+  const articles = getInsights();
+  const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch";
+  const latestFounderSeries = getLatestSeriesInsight(articles, founderSeries);
+  const editorial = getEditorialInsights(articles).filter(
+    (article) => article.series !== founderSeries,
+  );
   const featured = editorial[0];
   const analysis = editorial
     .filter(
@@ -43,33 +53,69 @@ export default function HomePage() {
     },
   ];
   return (
-    <div className="refresh-home">
-      <section className="refresh-home-hero">
-        <div className="container refresh-home-hero-inner">
-          <div>
-            <p className="eyebrow">World Clean Biz</p>
-            <h1>
-              Understand the industry.
+    <div className="refresh-home home-editorial">
+      <section className="editorial-hero" aria-labelledby="home-title">
+        <div className="editorial-hero-scene">
+          <Image
+            src="/images/industry/about-forum-stage-2025.jpg"
+            alt="Denny You speaking to cleaning industry professionals at a 2025 forum"
+            fill
+            priority
+            sizes="(max-width: 760px) 100vw, 70vw"
+          />
+        </div>
+        <div className="container editorial-hero-inner">
+          <div className="editorial-hero-copy">
+            <p className="eyebrow">World Clean Biz · A view from inside</p>
+            <h1 id="home-title">
+              Inside the global
               <br />
-              Connect with opportunity.
+              <em>cleaning industry.</em>
             </h1>
-            <p>
-              Independent perspectives on cleaning companies, products and
-              markets.
+            <p className="editorial-hero-lead">
+              The companies. The people.
               <br />
-              Business connections through content and WCB Expo.
+              The opportunities ahead.
             </p>
+            <p className="editorial-hero-description">
+              Independent analysis, product intelligence and real industry
+              connections — from the factory floor to WCB Expo.
+            </p>
+            <div className="hero-actions">
+              <Link className="button" href="/wcb-expo">
+                Explore WCB Expo <span aria-hidden="true">↗</span>
+              </Link>
+              <Link className="editorial-hero-secondary" href="/contact">
+                Work With WCB <span aria-hidden="true">→</span>
+              </Link>
+            </div>
           </div>
-          <div className="hero-actions">
-            <Link className="button" href="/wcb-expo">
-              Explore WCB Expo →
-            </Link>
-            <Link className="button-secondary" href="/contact">
-              Work With WCB →
+          <div className="editorial-hero-caption">
+            <span>ON THE GROUND</span>
+            <p>Conversations that connect an industry.</p>
+            <small>Cleaning industry forum · 2025</small>
+          </div>
+        </div>
+        <div className="editorial-hero-foot">
+          <div className="container">
+            <span>Independent perspectives. Practical connections.</span>
+            <Link href="#founder-journal">
+              Follow the founder’s journey <span aria-hidden="true">↓</span>
             </Link>
           </div>
         </div>
       </section>
+      {latestFounderSeries && (
+        <section
+          className="editorial-journal"
+          id="founder-journal"
+          aria-label="Denny You's founder journal"
+        >
+          <div className="container">
+            <HomeSeriesFeature article={latestFounderSeries} />
+          </div>
+        </section>
+      )}
       <section
         className="refresh-section"
         aria-labelledby="industry-focus-title"
@@ -152,7 +198,7 @@ export default function HomePage() {
         </div>
       </section>
       <section
-        className="refresh-section"
+        className="refresh-section editorial-expo"
         aria-labelledby="home-wcb-expo-title"
       >
         <div className="container refresh-expo">
@@ -202,6 +248,67 @@ export default function HomePage() {
       <div className="refresh-soft">
         <HomeVideos />
       </div>
+      <section
+        className="editorial-founder"
+        id="meet-denny"
+        aria-labelledby="meet-denny-title"
+      >
+        <div className="container editorial-founder-grid">
+          <figure>
+            <Image
+              src="/images/site-refresh/about/about-hero-denny.webp"
+              alt="Denny You discussing the cleaning industry at a forum"
+              width={1600}
+              height={1200}
+              sizes="(max-width: 760px) 92vw, 40vw"
+              loading="lazy"
+            />
+            <figcaption>
+              Denny You <span>Founder, World Clean Biz</span>
+            </figcaption>
+          </figure>
+          <div className="editorial-founder-copy">
+            <p className="eyebrow">The person behind World Clean Biz</p>
+            <h2 id="meet-denny-title">
+              An industry perspective.
+              <br />
+              Built through experience.
+            </h2>
+            <p className="editorial-founder-intro">
+              I’m Denny You. I’ve worked in the cleaning industry since 2006 —
+              across products, factories, supply chains and international
+              markets.
+            </p>
+            <p>
+              World Clean Biz brings that experience into independent analysis
+              and business connections. Through WCB Expo, I’m working to bring
+              more of the industry together.
+            </p>
+            <div className="editorial-founder-facts">
+              <div>
+                <strong>Since 2006</strong>
+                <span>Cleaning industry experience</span>
+              </div>
+              <div>
+                <strong>Entrepreneur</strong>
+                <span>Products &amp; supply chains</span>
+              </div>
+              <div>
+                <strong>WCB Expo</strong>
+                <span>Founder &amp; organizer</span>
+              </div>
+            </div>
+            <div className="editorial-founder-actions">
+              <Link className="button" href="/about">
+                Meet Denny You →
+              </Link>
+              <Link href={`/blog/series/${founderSeries}`}>
+                Read my founder’s journal ↗
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
       <BusinessServices />
       <script
         type="application/ld+json"

@@ -30,13 +30,13 @@ export function HomeSeriesFeature({ article }: { article: Insight }) {
           width={cover.width}
           height={cover.height}
           sizes="(max-width: 1050px) calc(100vw - 40px), 480px"
-          loading="eager"
+          loading="lazy"
           decoding="async"
         />
       </div>
       <div className="home-v9-series-copy">
         <p className="home-v9-series-label">
-          Founder Series · Latest Episode
+          A Founder’s Journal · Denny You
         </p>
         <h2 id="home-founder-series-title">{seriesTitle}</h2>
         <h3>{article.title}</h3>
