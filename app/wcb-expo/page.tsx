@@ -166,12 +166,10 @@ export default function WcbExpoPage() {
       <section className="wcb-expo-hero">
         <div className="wcb-expo-shell wcb-expo-hero-content">
           <p className="wcb-expo-kicker">2026 WCB Expo Is Now In Preparation</p>
-          <h1>
-            <span>WCB EXPO</span>
-            2026 WCB International Cleaning Appliance Expo
-          </h1>
+<h1>WCB Expo 2026</h1>
+          <p>WCB International Cleaning Appliance Expo</p>
           <p className="wcb-expo-chinese">2026 WCB 国际清洁电器博览会</p>
-          <p className="wcb-expo-hero-invite">We Invite You To Join Us In Suzhou</p>
+
           <p className="wcb-expo-hero-intro">
             The show is taking shape now. We welcome buyers, distributors, brands,
             manufacturers and industry professionals to see new products, meet the
@@ -198,14 +196,7 @@ export default function WcbExpoPage() {
         </div>
       </section>
 
-      <section className="wcb-expo-status" aria-label="2026 WCB Expo status">
-        <div className="wcb-expo-shell wcb-expo-status-grid">
-          <article><span>Date</span><strong>18–20 November 2026</strong></article>
-          <article><span>Venue</span><strong>Suzhou Shishan Convention Center</strong></article>
-          <article><span>Current status</span><strong>Visitor Interest Open</strong></article>
-          <article><span>Coverage</span><strong>7 Product &amp; Supply Categories</strong></article>
-        </div>
-      </section>
+
 
       <section className="wcb-expo-why" aria-labelledby="expo-why-title">
         <div className="wcb-expo-shell">
@@ -291,27 +282,7 @@ export default function WcbExpoPage() {
         </div>
       </section>
 
-      <section className="wcb-expo-supply" aria-labelledby="expo-supply-title">
-        <div className="wcb-expo-shell">
-          <div className="wcb-expo-section-head">
-            <p className="wcb-expo-section-label">WHO YOU WILL MEET</p>
-            <h2 id="expo-supply-title">Meet The People Behind The Products</h2>
-            <p>Meet the companies shaping, developing, manufacturing and supplying the next generation of cleaning appliances.</p>
-          </div>
-          <div className="wcb-expo-supply-grid">
-            {supplyChain.map((item) => (
-              <article key={item.number}>
-                <img src={item.image} alt={item.alt} loading="lazy" />
-                <div>
-                  <span>{item.number}</span>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section className="wcb-expo-programs" aria-labelledby="expo-programs-title">
         <div className="wcb-expo-shell">

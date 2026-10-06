@@ -80,22 +80,9 @@ export default function ReportsPage() {
               email. New category and sourcing intelligence will be added as it
               becomes available.
             </p>
-            <a className="reports-library-primary-button" href="#free-reports">
-              Explore Free Reports
-            </a>
-            <ul className="reports-library-trust-list">
-              <li>Free PDF reports</li>
-              <li>Business and market intelligence</li>
-              <li>New reports added regularly</li>
-            </ul>
+
           </div>
 
-          <div className="reports-library-hero-visual" aria-label="World Clean Biz report library">
-            <img
-              src="/images/reports/wcb-cleaning-industry-growth-map-cover.webp"
-              alt="World Clean Biz report cover: The Next Decade of Cleaning Growth"
-            />
-          </div>
         </div>
       </section>
 

@@ -68,7 +68,7 @@ test("Guide routes do not introduce a second main landmark", () => {
 });
 
 test("primary navigation consolidates Guides under Blog while discovery routes remain", () => {
-  assert.match(header, /\{ href: "\/blog", label: "Blog" \}/);
+  assert.match(header, /\{ href: "\/blog", label: "Analysis & Insights" \}/);
   assert.doesNotMatch(header, /\{ href: "\/guides", label: "Guides" \}/);
   assert.match(footer, /href="\/guides"/);
   assert.match(sitemap, /"\/guides"/);

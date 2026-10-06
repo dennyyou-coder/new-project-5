@@ -30,9 +30,9 @@ test("series hero provides latest episode and all episodes links", () => {
   assert.match(componentSource, /View all episodes/);
 });
 
-test("primary navigation keeps Blog and removes Guides", () => {
-  assert.match(headerSource, /href: "\/blog", label: "Blog"/);
-  assert.doesNotMatch(headerSource, /href: "\/guides", label: "Guides"/);
+test("primary navigation groups analysis and practical guides", () => {
+  assert.match(headerSource, /href: "\/blog", label: "Analysis & Insights"/);
+  assert.match(headerSource, /href: "\/guides", label: "Practical Guides"/);
 });
 
 test("Blog grids use three, two, and one columns at responsive breakpoints", () => {

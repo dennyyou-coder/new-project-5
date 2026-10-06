@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { BrandDirectoryCard } from "@/components/brands/BrandDirectoryCard";
 import { getPublishedBrandCategories } from "@/lib/brandCategories";
 import {
   buildBrandDirectorySchemas,
-  getPublishedBrandProfiles
+  getPublishedBrandProfiles,
 } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
 
@@ -21,44 +20,56 @@ export const metadata: Metadata = {
       "Research company ownership, product portfolios, manufacturing, channels and strategy.",
     type: "website",
     url: "/brands",
-    images: ["/images/industry/about-forum-stage-2025.jpg"]
+    images: ["/images/industry/about-forum-stage-2025.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cleaning & Home Appliance Brand Intelligence",
     description:
       "Research company ownership, product portfolios, manufacturing, channels and strategy.",
-    images: ["/images/industry/about-forum-stage-2025.jpg"]
-  }
+    images: ["/images/industry/about-forum-stage-2025.jpg"],
+  },
 };
 
 export default function BrandsPage() {
   const articles = getInsights();
   const profiles = getPublishedBrandProfiles(articles);
-  const categories = getPublishedBrandCategories(profiles);
+  const categoryOrder = [
+    "floorcare-home-cleaning",
+    "commercial-industrial-cleaning",
+    "pool-equipment-pool-care",
+    "lawn-garden-equipment",
+    "power-tools",
+  ];
+  const categories = getPublishedBrandCategories(profiles).sort((a, b) => {
+    const rank = (slug: string) => {
+      const i = categoryOrder.indexOf(slug);
+      return i < 0 ? 99 : i;
+    };
+    return rank(a.category.slug) - rank(b.category.slug);
+  });
   const schemas = buildBrandDirectorySchemas(profiles, siteUrl);
 
   return (
     <div className="guides-hub brand-hub">
       <section className="guides-hero">
-        <div className="insights-page-container guides-hero-grid brand-directory-hero">
-          <div>
-            <p className="eyebrow">Independent Brand Intelligence</p>
-            <h1>Cleaning & Home Appliance Brand Intelligence</h1>
-            <p>
-              Verified company profiles help cleaning and home-appliance buyers,
-              distributors and industry professionals evaluate ownership,
-              trademarks, operating companies, products, supply chains, channels
-              and competitive strategy. Brands with verified product lines across
-              markets appear in every relevant buying category; the published
-              total counts unique brand profiles.
-            </p>
-          </div>
-          <div className="guides-hero-stat">
-            <strong>{profiles.length}</strong>
-            <span>Published profiles meeting our evidence standard</span>
-            <Link href="/blog">Read Industry Analysis</Link>
-          </div>
+        <div className="insights-page-container">
+          <p className="eyebrow">Independent brand research</p>
+          <h1>Companies &amp; Brands</h1>
+          <p>
+            Explore company ownership, products and business activities across
+            the cleaning industry.
+          </p>
+          <p className="refresh-meta">
+            {profiles.length} published brand profiles
+          </p>
+          <nav className="refresh-category-links" aria-label="Brand categories">
+            {categories.map(({ category }) => (
+              <a href={`#${category.slug}`} key={category.slug}>
+                {category.name}
+              </a>
+            ))}
+          </nav>
         </div>
       </section>
 
@@ -85,6 +96,13 @@ export default function BrandsPage() {
         </section>
       ))}
 
+      <div className="insights-page-container refresh-directory-note">
+        <p>
+          Profiles distinguish ownership, trademarks and operating companies,
+          with sources and verification dates. Brands may appear in more than
+          one relevant category; the total counts unique profiles.
+        </p>
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}

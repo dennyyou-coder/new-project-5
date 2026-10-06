@@ -81,6 +81,7 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
 
   return routeEntries([
     "",
+    "/videos",
     "/products",
     ...productModels.map((model) => `/products/${model.slug}`),
     "/guides",

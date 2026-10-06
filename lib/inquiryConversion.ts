@@ -31,8 +31,8 @@ export type ContactInquiry = {
 };
 
 export const CONTACT_INQUIRIES: ContactInquiry[] = [
-  { icon: "factory", title: "Sourcing", description: "For sourcing, OEM/ODM, private label and product development questions.", value: "sourcing", ctaLocation: "contact_sourcing", form: "sourcing", buttonLabel: "Start A Sourcing Inquiry" },
-  { icon: "calendar", title: "WCB Expo", description: "For visiting, exhibiting, partnerships and event opportunities.", value: "expo", ctaLocation: "contact_expo", form: "expo", buttonLabel: "Send An Expo Inquiry" },
-  { icon: "newspaper", title: "Media & Editorial", description: "For interviews, industry news, editorial collaboration and media requests.", value: "media", ctaLocation: "contact_media", form: "contact", buttonLabel: "Send A Media Inquiry" },
-  { icon: "message", title: "General Business", description: "For partnerships and other cleaning industry business questions.", value: "general", ctaLocation: "contact_general", form: "contact", buttonLabel: "Send A General Inquiry" }
+  { icon: "factory", title: "Sourcing & Supply Chain", description: "Find products, manufacturing partners and technical solutions for sourcing, components and OEM/ODM projects.", value: "sourcing", ctaLocation: "contact_sourcing", form: "sourcing", buttonLabel: "Discuss Sourcing" },
+  { icon: "message", title: "Channel Partnerships", description: "Explore distribution, retail and regional market cooperation between brands, buyers and channel partners.", value: "general", ctaLocation: "contact_general", form: "contact", buttonLabel: "Discuss Channel Cooperation" },
+  { icon: "calendar", title: "Exhibition Partnerships", description: "Discuss WCB Expo participation, event partnerships and sponsorship opportunities.", value: "expo", ctaLocation: "contact_expo", form: "expo", buttonLabel: "Discuss WCB Expo" },
+  { icon: "newspaper", title: "Content & Brand Communication", description: "Explore company interviews, product introductions and video collaborations. Commercial content is distinguished from independent analysis.", value: "media", ctaLocation: "contact_media", form: "contact", buttonLabel: "Discuss Content Cooperation" }
 ];

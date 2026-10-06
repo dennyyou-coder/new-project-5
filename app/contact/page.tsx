@@ -12,23 +12,25 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact World Clean Biz",
-    description: "Choose the right channel for sourcing, Expo, media, or general cleaning industry inquiries.",
+    description:
+      "Choose the right channel for sourcing, Expo, media, or general cleaning industry inquiries.",
     url: "/contact",
-    images: ["/images/site-refresh/about/about-hero-denny.webp"]
+    images: ["/images/site-refresh/about/about-hero-denny.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact World Clean Biz",
-    description: "Choose the right channel for sourcing, Expo, media, or general cleaning industry inquiries.",
-    images: ["/images/site-refresh/about/about-hero-denny.webp"]
-  }
+    description:
+      "Choose the right channel for sourcing, Expo, media, or general cleaning industry inquiries.",
+    images: ["/images/site-refresh/about/about-hero-denny.webp"],
+  },
 };
 
 const inquiryContext = [
   "Your company and target market",
   "Product category or business objective",
   "Current project stage and timeline",
-  "The decision, supplier or connection you need"
+  "The decision, supplier or connection you need",
 ];
 
 export default function ContactPage() {
@@ -37,21 +39,11 @@ export default function ContactPage() {
       <section className="page-hero page-hero-contact contact-visual-refresh">
         <div className="container">
           <p className="eyebrow">Contact World Clean Biz</p>
-          <h1>
-            A Million-Dollar Opportunity
-            <br />
-            May Start With The Right Conversation.
-          </h1>
+          <h1>Work With World Clean Biz</h1>
           <p>
-            Tell us what you are looking for. World Clean Biz helps connect
-            your inquiry with the right sourcing, expo, media, market
-            intelligence, or industry opportunity.
+            Choose a cooperation area and tell us about your company, market and
+            project.
           </p>
-          <div className="hero-actions">
-            <Link className="button" href="#inquiry-form">
-              Choose An Inquiry Type
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -60,33 +52,39 @@ export default function ContactPage() {
           <div className="section-head">
             <div>
               <p className="eyebrow">Inquiry Types</p>
-              <h2>Choose the Right Channel</h2>
-              <p>Start with the entry that best matches your need.</p>
+              <h2>Business Cooperation</h2>
+              <p>Four ways to work with WCB.</p>
             </div>
           </div>
-          <div className="case-grid contact-help-grid">
+          <div className="case-grid contact-help-grid refresh-business-grid">
             {CONTACT_INQUIRIES.map((item, index) => (
-              <TallyButton
-                className="case-card contact-help-card"
-                ctaLocation={item.ctaLocation}
-                form={item.form}
-                inquiryType={item.value}
-                key={item.value}
-                trackClick
-              >
-                <span className="contact-help-card-number">0{index + 1}</span>
-                <IconBadge name={item.icon} />
-                <span className="contact-help-card-copy">
-                  <strong>{item.title}</strong>
-                  <span>{item.description}</span>
-                  <em>{item.buttonLabel} →</em>
-                </span>
-              </TallyButton>
+              <div id={item.value} key={item.value}>
+                <TallyButton
+                  className="case-card contact-help-card"
+                  ctaLocation={item.ctaLocation}
+                  form={item.form}
+                  inquiryType={item.value}
+                  key={item.value}
+                  trackClick
+                >
+                  <span className="contact-help-card-number">0{index + 1}</span>
+                  <IconBadge name={item.icon} />
+                  <span className="contact-help-card-copy">
+                    <strong>{item.title}</strong>
+                    <span>{item.description}</span>
+                    <em>{item.buttonLabel} →</em>
+                  </span>
+                </TallyButton>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
+      <div className="container refresh-contact-links">
+        <Link href="/sourcing">Explore sourcing services →</Link>
+        <Link href="/wcb-expo">View WCB Expo information →</Link>
+      </div>
       <section className="contact-response-section">
         <div className="container contact-response-layout">
           <div className="contact-response-visual">
@@ -108,7 +106,10 @@ export default function ContactPage() {
                   What Happens Next
                 </p>
                 <h2>What To Include In Your Inquiry</h2>
-                <p>Clear context helps World Clean Biz understand your objective and route the request correctly.</p>
+                <p>
+                  Clear context helps World Clean Biz understand your objective
+                  and route the request correctly.
+                </p>
               </div>
             </div>
             <ul className="contact-context-list">
@@ -117,7 +118,8 @@ export default function ContactPage() {
               ))}
             </ul>
             <p className="contact-response-note">
-              World Clean Biz reviews each relevant inquiry and routes it to the relevant team based on sourcing, Expo, media, or business intent.
+              World Clean Biz reviews each relevant inquiry and routes it to the
+              relevant team based on sourcing, Expo, media, or business intent.
             </p>
           </div>
         </div>

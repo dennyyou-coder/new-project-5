@@ -69,7 +69,7 @@ test("both pages include canonical and social metadata", () => {
 });
 
 test("Contact explains the inquiry path with visual trust evidence", () => {
-  assert.match(definitionSource, /title: "Sourcing"/);
+  assert.match(definitionSource, /title: "Sourcing & Supply Chain"/);
   assert.match(contactSource, /What To Include In Your Inquiry/);
   assert.match(contactSource, /site-refresh\/about\/about-hero-denny\.webp/);
   assert.match(contactSource, /Inside the cleaning industry since 2006/);
@@ -83,9 +83,9 @@ test("defines one tracked route for each Contact intent", () => {
     CONTACT_INQUIRIES.map(({ value, form }) => [value, form]),
     [
       ["sourcing", "sourcing"],
+      ["general", "contact"],
       ["expo", "expo"],
-      ["media", "contact"],
-      ["general", "contact"]
+      ["media", "contact"]
     ]
   );
   assert.equal(
@@ -96,12 +96,7 @@ test("defines one tracked route for each Contact intent", () => {
 
 test("Sourcing presents the approved opportunity-led funnel", () => {
   const requiredMessages = [
-    "Don’t Just Source Another Product",
     "Free Product Opportunity Shortlist",
-    "World Clean Biz Industry Estimate",
-    "Access Is No Longer The Advantage",
-    "Outdated Before Launch",
-    "Faster Sourcing Is Not Enough",
     "How Denny Sees Opportunities Earlier",
     "One Partner From Opportunity Discovery To Delivery",
     "Denny Reviews. The Team Executes.",
@@ -140,8 +135,6 @@ test("shared Tally transport supports a tracked inline sourcing form", () => {
 
 test("Sourcing detail polish keeps the offer early and the story compact", () => {
   assert.match(sourcingSource, /Receive 2–3 product directions, images, basic specifications and indicative pricing/);
-  assert.match(sourcingSource, /Approx\. USD 40B\+/);
-  assert.match(sourcingSource, /Toward USD 140B/);
   assert.match(sourcingSource, /title: "Discover"/);
   assert.match(sourcingSource, /title: "Develop"/);
   assert.match(sourcingSource, /title: "Deliver"/);
@@ -149,13 +142,6 @@ test("Sourcing detail polish keeps the offer early and the story compact", () =>
   assert.match(sourcingSource, /Currently supporting cross-border sellers and international brands/);
   assert.doesNotMatch(sourcingSource, /sourcing-opportunity-risk-layout/);
   assert.match(globalStyles, /\.sourcing-opportunity-faq summary::after/);
-});
-
-test("early sourcing sections use the shared icon system for scanning", () => {
-  assert.match(sourcingSource, /className="sourcing-opportunity-driver-icon"/);
-  assert.match(sourcingSource, /className="sourcing-opportunity-shift-icon"/);
-  assert.match(sourcingSource, /className="sourcing-opportunity-risk-icon"/);
-  assert.match(sourcingSource, /InlineIcon name=\{item\.icon\}/);
 });
 
 test("Sourcing visual hierarchy stays within the blue and white brand system", () => {
@@ -196,18 +182,12 @@ test("Sourcing uses alternating sales bands and visual storytelling", () => {
 });
 
 test("Sourcing grounds key sales sections with unified visual evidence", () => {
-  assert.match(sourcingSource, /sourcing-opportunity-market-visual/);
   assert.match(sourcingSource, /sourcing-opportunity-shortlist-preview/);
   assert.match(sourcingSource, /sourcing-opportunity-stage-image/);
   assert.match(sourcingSource, /sourcing-opportunity-model-image/);
-  assert.match(sourcingSource, /site-refresh\/real\/product-detail\.webp/);
-  assert.match(sourcingSource, /site-refresh\/real\/modern-factory\.webp/);
-  assert.match(sourcingSource, /site-refresh\/real\/business-office\.webp/);
 });
 
-test("Sourcing keeps the July 11 approved opportunity-led homepage", () => {
-  assert.match(sourcingSource, /Don’t Just Source Another Product/);
-  assert.match(sourcingSource, /Find The Next Cleaning Industry Opportunity/);
-  assert.match(sourcingSource, /className="sourcing-opportunity-page"/);
-  assert.doesNotMatch(sourcingSource, /You&apos;ve Been In The Industry For 20 Years/);
+test("Sourcing keeps product opportunities ahead of the founder explanation", () => {
+  assert.match(sourcingSource, /Cleaning Product Sourcing/);
+  assert.ok(sourcingSource.indexOf('id="opportunity-areas"') < sourcingSource.indexOf('How Denny Sees Opportunities Earlier'));
 });

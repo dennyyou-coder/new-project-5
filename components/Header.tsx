@@ -1,36 +1,83 @@
 "use client";
-
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/news", label: "News" },
-  { href: "/blog", label: "Blog" },
-  { href: "/brands", label: "Brand Intelligence" },
-  { href: "/products", label: "Products" },
-  { href: "/sourcing", label: "Sourcing" },
-  { href: "/reports", label: "Market Reports" },
-  { href: "/wcb-expo", label: "WCB Expo" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
+const groups = [
+  {
+    label: "Insights",
+    links: [
+      { href: "/blog", label: "Analysis & Insights" },
+      {
+        href: "/blog/series/building-worlds-no-1-cleaning-show-from-scratch",
+        label: "Founder Series",
+      },
+      { href: "/guides", label: "Practical Guides" },
+      { href: "/reports", label: "Industry Reports" },
+    ],
+  },
+  {
+    label: "Companies & Products",
+    links: [
+      { href: "/brands", label: "Companies & Brands" },
+      { href: "/products", label: "Product Library" },
+    ],
+  },
 ];
-
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [openGroup, setOpenGroup] = useState<string | null>(null);
+  const root = useRef<HTMLElement>(null);
+  const pathname = usePathname();
   function closeMenu() {
     setIsMenuOpen(false);
+    setOpenGroup(null);
   }
-
+  useEffect(() => {
+    closeMenu();
+  }, [pathname]);
+  useEffect(() => {
+    function outside(event: PointerEvent) {
+      if (!root.current?.contains(event.target as Node)) closeMenu();
+    }
+    document.addEventListener("pointerdown", outside);
+    return () => document.removeEventListener("pointerdown", outside);
+  }, []);
   return (
-    <header className="header">
+    <header
+      className="header refresh-header"
+      ref={root}
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          if (openGroup) {
+            root.current
+              ?.querySelector<HTMLButtonElement>(`[data-group="${openGroup}"]`)
+              ?.focus();
+            setOpenGroup(null);
+          } else {
+            setIsMenuOpen(false);
+            root.current
+              ?.querySelector<HTMLButtonElement>(".mobile-menu-toggle")
+              ?.focus();
+          }
+        }
+      }}
+    >
       <div className="container header-inner">
-        <Link className="brand" href="/" onClick={closeMenu}>
-          <span className="brand-wcb-block" aria-hidden="true">WCB</span>
+        <Link
+          className="brand"
+          href="/"
+          onClick={closeMenu}
+          aria-label="World Clean Biz home"
+        >
+          <span className="brand-wcb-block" aria-hidden="true">
+            WCB
+          </span>
           <span className="brand-copy">
             <span className="brand-name">World Clean Biz</span>
-            <span className="brand-tagline">Global Cleaning Industry Intelligence</span>
+            <span className="brand-tagline">
+              Global Cleaning Industry Intelligence
+            </span>
           </span>
         </Link>
         <button
@@ -39,7 +86,10 @@ export function Header() {
           aria-label="Toggle main navigation"
           aria-expanded={isMenuOpen}
           aria-controls="main-navigation"
-          onClick={() => setIsMenuOpen((current) => !current)}
+          onClick={() => {
+            setIsMenuOpen(!isMenuOpen);
+            setOpenGroup(null);
+          }}
         >
           <span aria-hidden="true" />
           <span aria-hidden="true" />
@@ -51,11 +101,57 @@ export function Header() {
             id="main-navigation"
             aria-label="Main navigation"
           >
-            {navItems.map((item) => (
-              <Link href={item.href} key={item.href} onClick={closeMenu}>
-                {item.label}
-              </Link>
+            <Link href="/news" onClick={closeMenu}>
+              News
+            </Link>
+            {groups.map((group, index) => (
+              <div
+                className="nav-group"
+                key={group.label}
+                onBlur={(event) => {
+                  if (
+                    !event.currentTarget.contains(event.relatedTarget as Node)
+                  )
+                    setOpenGroup(null);
+                }}
+              >
+                <button
+                  type="button"
+                  data-group={group.label}
+                  aria-expanded={openGroup === group.label}
+                  aria-controls={`nav-group-${index}`}
+                  onClick={() =>
+                    setOpenGroup(openGroup === group.label ? null : group.label)
+                  }
+                >
+                  {group.label}
+                  <span aria-hidden="true">⌄</span>
+                </button>
+                <div
+                  className="nav-submenu"
+                  id={`nav-group-${index}`}
+                  hidden={openGroup !== group.label}
+                >
+                  {group.links.map((link) => (
+                    <Link key={link.href} href={link.href} onClick={closeMenu}>
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             ))}
+            <Link href="/videos" onClick={closeMenu}>
+              Videos
+            </Link>
+            <Link href="/wcb-expo" onClick={closeMenu}>
+              WCB Expo
+            </Link>
+            <Link href="/about" onClick={closeMenu}>
+              About
+            </Link>
+            <Link className="nav-business" href="/contact" onClick={closeMenu}>
+              Work With WCB ↗
+            </Link>
           </nav>
         </div>
       </div>

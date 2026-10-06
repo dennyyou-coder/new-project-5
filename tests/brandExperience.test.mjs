@@ -251,7 +251,7 @@ test("brand directory route exposes one canonical collection with links for publ
   assert.match(source, /getPublishedBrandProfiles\(articles\)/);
   assert.match(source, /profiles\.map\(\(profile\)\s*=>\s*\(/);
   assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
-  assert.match(source, /href="\/blog"/);
+  assert.match(read("components/Header.tsx"), /href: "\/blog"/);
   assert.match(source, /Cleaning & Home Appliance Brand Intelligence/);
 });
 
@@ -566,7 +566,7 @@ test("footer exposes exactly one Brand Intelligence discovery link", () => {
   const source = read("components/Footer.tsx");
 
   assert.equal((source.match(/href="\/brands"/g) || []).length, 1);
-  assert.match(source, /<Link href="\/brands">Brand Intelligence<\/Link>/);
+  assert.match(source, /<Link href="\/brands">Companies &amp; Brands<\/Link>/);
 });
 
 test("brand styles contain logos without cropping and collapse multi-column layouts on mobile", () => {
@@ -1023,7 +1023,7 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
   const articleBrandLinks = read("components/ArticleBrandLinks.tsx");
 
   assert.match(directoryRoute, /className="guides-hub brand-hub"/);
-  assert.match(directoryRoute, /className="insights-page-container guides-hero-grid brand-directory-hero"/);
+  assert.match(directoryRoute, /className="refresh-category-links"/);
   assert.match(directoryRoute, /className="guides-featured-grid brand-directory-grid"/);
   assert.match(directoryCard, /className="guide-card brand-directory-card"/);
 

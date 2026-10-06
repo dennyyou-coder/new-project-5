@@ -4,7 +4,7 @@ import type { BrandTaggedArticle } from "@/lib/brands";
 
 function ArticleGroup({
   articles,
-  title
+  title,
 }: {
   articles: BrandTaggedArticle[];
   title: string;
@@ -31,7 +31,9 @@ function ArticleGroup({
               <div className="guide-card-copy">
                 <h3>{article.title}</h3>
                 <p>{article.excerpt}</p>
-                {article.readingTime ? <small>{article.readingTime}</small> : null}
+                {article.readingTime ? (
+                  <small>{article.readingTime}</small>
+                ) : null}
               </div>
             </Link>
           </article>
@@ -43,14 +45,14 @@ function ArticleGroup({
 
 export function BrandArticles({
   primaryArticles,
-  relatedArticles
+  relatedArticles,
 }: {
   primaryArticles: BrandTaggedArticle[];
   relatedArticles: BrandTaggedArticle[];
 }) {
   const primarySlugs = new Set(primaryArticles.map((article) => article.slug));
   const uniqueRelatedArticles = relatedArticles.filter(
-    (article) => !primarySlugs.has(article.slug)
+    (article) => !primarySlugs.has(article.slug),
   );
 
   if (primaryArticles.length === 0 && uniqueRelatedArticles.length === 0) {
@@ -61,8 +63,13 @@ export function BrandArticles({
     <section className="section guides-featured-section" id="analysis">
       <div className="insights-page-container">
         <p className="eyebrow">World Clean Biz Research</p>
-        <ArticleGroup articles={primaryArticles} title="Primary Analysis" />
-        <ArticleGroup articles={uniqueRelatedArticles} title="Related Analysis" />
+        <ArticleGroup
+          articles={[...primaryArticles, ...uniqueRelatedArticles].slice(0, 4)}
+          title="Related Analysis"
+        />
+        <Link className="refresh-card-link" href="/blog/archive">
+          Browse all analysis →
+        </Link>
       </div>
     </section>
   );
