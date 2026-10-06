@@ -42,7 +42,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              YouTube ↗
+              YouTube
             </a>
             <TallyButton
               className="footer-link-button"

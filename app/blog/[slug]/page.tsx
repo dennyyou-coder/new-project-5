@@ -328,7 +328,7 @@ export default async function InsightDetailPage({ params }: Props) {
                   <p>
                     Inside the cleaning industry since 2006, Denny reviews product, supplier and category signals for practical business decisions.
                   </p>
-                  <Link href="/about">About Denny &amp; World Clean Biz →</Link>
+                  <Link href="/about">About Denny &amp; World Clean Biz</Link>
                 </div>
               </div>
             </footer>
@@ -414,9 +414,9 @@ export default async function InsightDetailPage({ params }: Props) {
 
           <nav className="blog-topic-paths" aria-label="Explore industry resources">
             <strong>Keep exploring</strong>
-            <Link href={collectionHref}>{isGuide ? "More in this guide collection" : "All industry analysis"} <span aria-hidden="true">→</span></Link>
-            <Link href="/brands">Brand intelligence <span aria-hidden="true">→</span></Link>
-            <Link href="/guides">Practical buying &amp; sourcing guides <span aria-hidden="true">→</span></Link>
+            <Link href={collectionHref}>{isGuide ? "More in this guide collection" : "All industry analysis"}</Link>
+            <Link href="/brands">Brand intelligence</Link>
+            <Link href="/guides">Practical buying &amp; sourcing guides</Link>
           </nav>
 
         </div>

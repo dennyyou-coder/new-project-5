@@ -42,7 +42,7 @@ export function HomeSeriesFeature({ article }: { article: Insight }) {
         <h3>{article.title}</h3>
         <p className="home-v9-series-excerpt">{article.excerpt}</p>
         <div className="home-v9-series-actions">
-          <Link href={articleHref}>Read Latest Episode →</Link>
+          <Link href={articleHref}>Read Latest Episode</Link>
           {seriesHref ? (
             <Link href={seriesHref}>View All Episodes</Link>
           ) : null}

@@ -150,7 +150,7 @@ export function ContentDirectory({
                       {article.date ? <span>{article.date}</span> : null}
                       <span>{article.readingTime}</span>
                     </div>
-                    <strong>Read Article →</strong>
+                    <strong>Read Article</strong>
                   </div>
                 </Link>
               ))

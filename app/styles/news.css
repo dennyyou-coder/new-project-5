@@ -34,7 +34,7 @@
 .news-page .news-side-card > p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 .news-page .news-explore-card { padding-bottom: 10px; }
 .news-page .news-explore-card h2 { margin-bottom: 12px; }
-.news-page .news-explore-links a { display: grid; grid-template-columns: 32px minmax(0, 1fr) 14px; align-items: center; gap: 10px; min-height: 65px; border-top: 1px solid var(--line); }
+.news-page .news-explore-links a { display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: center; gap: 10px; min-height: 65px; border-top: 1px solid var(--line); }
 .news-page .news-resource-icon { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; color: var(--accent); background: var(--soft); }
 .news-page .news-resource-icon svg { width: 17px; height: 17px; }
 .news-page .news-resource-copy { min-width: 0; }

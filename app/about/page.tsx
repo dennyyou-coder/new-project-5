@@ -145,10 +145,10 @@ export default function AboutPage() {
       <section className="section">
         <div className="container refresh-contact-links">
           <Link className="button" href="/contact">
-            Work With WCB →
+            Work With WCB
           </Link>
           <Link href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">
-            Read Denny's founder series →
+            Read Denny's founder series
           </Link>
         </div>
       </section>

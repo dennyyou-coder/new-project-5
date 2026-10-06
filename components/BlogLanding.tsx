@@ -41,7 +41,7 @@ export function BlogSeriesHero({ article }: { article: Insight }) {
           <h2 id="blog-series-title">{article.seriesTitle || article.title}</h2>
           {article.seriesTitle ? <h3>{article.title}</h3> : null}
           <p>{article.excerpt}</p>
-          <strong>Read latest episode →</strong>
+          <strong>Read latest episode</strong>
         </div>
       </Link>
       {seriesHref ? (

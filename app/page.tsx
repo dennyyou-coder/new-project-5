@@ -83,10 +83,10 @@ export default function HomePage() {
             </p>
             <div className="hero-actions">
               <Link className="button" href="/wcb-expo">
-                Explore WCB Expo <span aria-hidden="true">↗</span>
+                Explore WCB Expo
               </Link>
               <Link className="editorial-hero-secondary" href="/contact">
-                Work With WCB <span aria-hidden="true">→</span>
+                Work With WCB
               </Link>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function HomePage() {
           <div className="container">
             <span>Independent perspectives. Practical connections.</span>
             <Link href="#founder-journal">
-              Follow the founder’s journey <span aria-hidden="true">↓</span>
+              Follow the founder’s journey
             </Link>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function HomePage() {
               <p className="eyebrow">Industry focus</p>
               <h2 id="industry-focus-title">What Matters Now</h2>
             </div>
-            <Link href="/news">All news →</Link>
+            <Link href="/news">All news</Link>
           </div>
           <div className="refresh-focus-grid">
             {featured && (
@@ -210,7 +210,7 @@ export default function HomePage() {
               </TallyButton>
             </div>
             <Link href="/wcb-expo" className="refresh-card-link">
-              Explore WCB Expo →
+              Explore WCB Expo
             </Link>
           </div>
         </div>
@@ -222,7 +222,7 @@ export default function HomePage() {
               <p className="eyebrow">Insights &amp; analysis</p>
               <h2>Selected Industry Analysis</h2>
             </div>
-            <Link href="/blog">All insights →</Link>
+            <Link href="/blog">All insights</Link>
           </div>
           <div className="refresh-analysis-grid">
             {analysis.map((article) => (
@@ -300,10 +300,10 @@ export default function HomePage() {
             </div>
             <div className="editorial-founder-actions">
               <Link className="button" href="/about">
-                Meet Denny You →
+                Meet Denny You
               </Link>
               <Link href={`/blog/series/${founderSeries}`}>
-                Read my founder’s journal ↗
+                Read my founder’s journal
               </Link>
             </div>
           </div>

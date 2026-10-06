@@ -150,7 +150,7 @@ export function Header() {
               About
             </Link>
             <Link className="nav-business" href="/contact" onClick={closeMenu}>
-              Work With WCB ↗
+              Work With WCB
             </Link>
           </nav>
         </div>

@@ -27,7 +27,7 @@ export function DirectorySeriesFeature({ article }: { article: DirectoryArticle 
         {article.seriesTitle ? <h3>{article.title}</h3> : null}
         <p>{article.excerpt}</p>
         <div className="content-directory-series-actions">
-          <Link href={`/blog/${article.slug}`}>Read latest episode →</Link>
+          <Link href={`/blog/${article.slug}`}>Read latest episode</Link>
           <Link href={`/blog/${article.slug}#series-episodes`}>
             View all episodes
           </Link>

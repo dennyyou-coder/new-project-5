@@ -182,7 +182,7 @@ export default async function BlogSeriesPage({
                         <span>{article.readingTime}</span>
                       </div>
                       <Link className="blog-series-page-read" href={`/blog/${article.slug}`}>
-                        Read Episode →
+                        Read Episode
                       </Link>
                     </div>
                   </article>
@@ -191,7 +191,7 @@ export default async function BlogSeriesPage({
             </ol>
 
             <Link className="blog-series-page-back" href="/blog">
-              ← Back to Blog
+ Back to Blog
             </Link>
           </div>
         </section>

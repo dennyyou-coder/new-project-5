@@ -58,11 +58,11 @@ export function HomeVideos({ library = false }: { library?: boolean }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            More on YouTube ↗
+            More on YouTube
           </a>
         ) : (
           <Link className="home-v9-inline-link" href="/videos">
-            All videos →
+            All videos
           </Link>
         )}
       </div>
@@ -115,7 +115,7 @@ export function HomeVideos({ library = false }: { library?: boolean }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Watch on YouTube <span aria-hidden="true">↗</span>
+                Watch on YouTube
               </a>
             </div>
           </article>

@@ -13,7 +13,7 @@ export function BusinessServices() {
             <p className="eyebrow">Work with WCB</p>
             <h2 id="business-services-title">Business Cooperation</h2>
           </div>
-          <Link href="/contact">Discuss your project →</Link>
+          <Link href="/contact">Discuss your project</Link>
         </div>
         <div className="refresh-business-grid">
           {CONTACT_INQUIRIES.map((item, index) => (
@@ -25,7 +25,7 @@ export function BusinessServices() {
               <span className="eyebrow">0{index + 1}</span>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <span className="refresh-card-link">{item.buttonLabel} →</span>
+              <span className="refresh-card-link">{item.buttonLabel}</span>
             </Link>
           ))}
         </div>

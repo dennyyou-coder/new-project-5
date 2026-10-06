@@ -68,7 +68,7 @@ export function BrandArticles({
           title="Related Analysis"
         />
         <Link className="refresh-card-link" href="/blog/archive">
-          Browse all analysis →
+          Browse all analysis
         </Link>
       </div>
     </section>

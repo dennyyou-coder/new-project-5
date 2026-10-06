@@ -72,7 +72,7 @@ export default function ContactPage() {
                   <span className="contact-help-card-copy">
                     <strong>{item.title}</strong>
                     <span>{item.description}</span>
-                    <em>{item.buttonLabel} →</em>
+                    <em>{item.buttonLabel}</em>
                   </span>
                 </TallyButton>
               </div>
@@ -82,8 +82,8 @@ export default function ContactPage() {
       </section>
 
       <div className="container refresh-contact-links">
-        <Link href="/sourcing">Explore sourcing services →</Link>
-        <Link href="/wcb-expo">View WCB Expo information →</Link>
+        <Link href="/sourcing">Explore sourcing services</Link>
+        <Link href="/wcb-expo">View WCB Expo information</Link>
       </div>
       <section className="contact-response-section">
         <div className="container contact-response-layout">

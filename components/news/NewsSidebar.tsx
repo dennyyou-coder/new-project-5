@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiArrowRight, FiBookOpen, FiBox, FiFileText, FiGrid, FiMail } from "react-icons/fi";
+import { FiBookOpen, FiBox, FiFileText, FiGrid, FiMail } from "react-icons/fi";
 import { TallyButton } from "@/components/LeadForms";
 
 const exploreLinks = [
@@ -17,7 +17,6 @@ export function NewsSidebar() {
         {exploreLinks.map(({ href, label, detail, icon: Icon }) => <Link href={href} key={href}>
           <span className="news-resource-icon"><Icon aria-hidden="true" /></span>
           <span className="news-resource-copy"><strong>{label}</strong><span>{detail}</span></span>
-          <FiArrowRight className="news-resource-arrow" aria-hidden="true" />
         </Link>)}
       </nav>
     </section>
@@ -25,13 +24,13 @@ export function NewsSidebar() {
       <p className="news-side-kicker">Meet the industry</p>
       <h2 id="news-expo-heading">WCB Expo</h2>
       <p>Connect with cleaning brands, manufacturers and industry partners.</p>
-      <Link className="news-expo-link" href="/wcb-expo">Explore the exhibition <FiArrowRight aria-hidden="true" /></Link>
+      <Link className="news-expo-link" href="/wcb-expo">Explore the exhibition</Link>
     </section>
     <section className="news-side-card news-updates-card" aria-labelledby="news-updates-heading">
       <span className="news-updates-icon"><FiMail aria-hidden="true" /></span>
       <h2 id="news-updates-heading">Industry updates</h2>
       <p>Choose the WCB news and insights relevant to your work.</p>
-      <TallyButton form="newsletter" ctaLocation="news_newsletter" className="button news-subscribe-button">Get updates <FiArrowRight aria-hidden="true" /></TallyButton>
+      <TallyButton form="newsletter" ctaLocation="news_newsletter" className="button news-subscribe-button">Get updates</TallyButton>
     </section>
   </aside>;
 }
