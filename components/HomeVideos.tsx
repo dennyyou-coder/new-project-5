@@ -1,0 +1,83 @@
+"use client";
+
+import { useState } from "react";
+
+const videos = [
+  {
+    key: "ninebot",
+    videoId: "kCa9-2gsSVE",
+    title: "Segway-Ninebot: From Mobility to Robot Mowers",
+    description: "From smart mobility to Navimow: the products and business behind Ninebot’s expansion.",
+    duration: "7:15",
+    poster: "https://i.ytimg.com/vi/kCa9-2gsSVE/hq720.jpg",
+  },
+  {
+    key: "bissell",
+    videoId: "7oKIOV_-S2c",
+    title: "BISSELL: CrossWave and Five Generations",
+    description: "CrossWave, the BISSELL family story and the evolution of its cleaning business.",
+    duration: "10:48",
+    poster: "https://i.ytimg.com/vi/7oKIOV_-S2c/hq720.jpg",
+  },
+  {
+    key: "roborock",
+    videoId: "CXv_J_ffXS0",
+    title: "Roborock: From Xiaomi to Global Markets",
+    description: "Roborock’s development from its Xiaomi beginnings to the global floorcare market.",
+    duration: "8:02",
+    poster: "https://i.ytimg.com/vi/CXv_J_ffXS0/hq720.jpg",
+  },
+] as const;
+
+export function HomeVideos() {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
+  return (
+    <section className="home-videos home-v9-container" aria-labelledby="home-videos-title">
+      <div className="home-videos-header">
+        <div>
+          <p className="home-v9-eyebrow">Watch with Denny</p>
+          <h2 id="home-videos-title">WCB Video Insights</h2>
+          <p className="home-videos-intro">Company stories, product strategy and the business of cleaning.</p>
+        </div>
+        <a className="home-v9-inline-link" href="https://www.youtube.com/@WCBdenny/videos" target="_blank" rel="noopener noreferrer">More on YouTube <span aria-hidden="true">↗</span></a>
+      </div>
+      <div className="home-videos-grid">
+        {videos.map((video) => (
+          <article className="home-video-card" key={video.key}>
+            <div className="home-video-media">
+              {activeVideo === video.key ? (
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${video.videoId}?autoplay=1&playsinline=1&rel=0`}
+                  title={video.title}
+                  allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              ) : (
+                <button
+                  type="button"
+                  className="home-video-poster"
+                  onClick={() => setActiveVideo(video.key)}
+                  aria-label={`Play ${video.title}`}
+                >
+                  <img src={video.poster} alt="" width={720} height={405} loading="lazy" decoding="async" />
+                  <span className="home-video-play" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+                  </span>
+                  <span className="home-video-duration">{video.duration}</span>
+                </button>
+              )}
+            </div>
+            <div className="home-video-copy">
+              <h3>{video.title}</h3>
+              <p>{video.description}</p>
+              <a href={`https://www.youtube.com/watch?v=${video.videoId}`} target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        ))}
+      </div>
+      <p className="home-videos-language">Mandarin audio · English &amp; Chinese subtitles</p>
+    </section>
+  );
+}
