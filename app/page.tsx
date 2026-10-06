@@ -167,36 +167,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="refresh-section refresh-soft" id="featured-analysis">
-        <div className="container">
-          <div className="refresh-section-head">
-            <div>
-              <p className="eyebrow">Insights &amp; analysis</p>
-              <h2>Selected Industry Analysis</h2>
-            </div>
-            <Link href="/blog">All insights →</Link>
-          </div>
-          <div className="refresh-analysis-grid">
-            {analysis.map((article) => (
-              <Link
-                className="refresh-analysis-card"
-                href={`/blog/${article.slug}`}
-                key={article.slug}
-              >
-                {article.coverImage && (
-                  <img
-                    {...responsiveImageProps(article.coverImage, "card")}
-                    alt={article.coverAlt || article.title}
-                  />
-                )}
-                <span className="eyebrow">{article.category}</span>
-                <h3>{article.title}</h3>
-                <p>{article.excerpt}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
       <section
         className="refresh-section editorial-expo"
         aria-labelledby="home-wcb-expo-title"
@@ -242,6 +212,36 @@ export default function HomePage() {
             <Link href="/wcb-expo" className="refresh-card-link">
               Explore WCB Expo →
             </Link>
+          </div>
+        </div>
+      </section>
+      <section className="refresh-section refresh-soft" id="featured-analysis">
+        <div className="container">
+          <div className="refresh-section-head">
+            <div>
+              <p className="eyebrow">Insights &amp; analysis</p>
+              <h2>Selected Industry Analysis</h2>
+            </div>
+            <Link href="/blog">All insights →</Link>
+          </div>
+          <div className="refresh-analysis-grid">
+            {analysis.map((article) => (
+              <Link
+                className="refresh-analysis-card"
+                href={`/blog/${article.slug}`}
+                key={article.slug}
+              >
+                {article.coverImage && (
+                  <img
+                    {...responsiveImageProps(article.coverImage, "card")}
+                    alt={article.coverAlt || article.title}
+                  />
+                )}
+                <span className="eyebrow">{article.category}</span>
+                <h3>{article.title}</h3>
+                <p>{article.excerpt}</p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
