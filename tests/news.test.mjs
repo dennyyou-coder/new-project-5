@@ -22,14 +22,19 @@ test("news separates publication from announcement dates and resolves every comp
     assert.ok(article.relatedArticles.every((slug) => insights.some((item) => item.slug === slug)));
     const context = getNewsContext(article);
     const visual = getNewsVisual(article);
-    assert.ok(visual && fs.existsSync(`public${visual.src}`), `${article.slug}: news visual missing`);
+    if (article.brandSlugs.length === 0 && !article.imageProduct) {
+      // Industry statistics and companies without a profile must not borrow an unrelated image.
+      assert.equal(visual, undefined, `${article.slug}: unrelated news visual`);
+    } else {
+      assert.ok(visual && fs.existsSync(`public${visual.src}`), `${article.slug}: news visual missing`);
+    }
     if (article.imageProduct) {
       assert.ok(article.productSlugs.includes(article.imageProduct));
       assert.ok(context.image);
       assert.ok(fs.existsSync(`public${context.image.coverImage}`), `${article.slug}: image missing`);
       assert.equal(visual.kind, "product");
       assert.equal(visual.src, context.image.coverImage);
-    } else {
+    } else if (article.brandSlugs.length > 0) {
       assert.equal(visual.kind, "brand");
       assert.ok(context.brands.some((brand) => brand.logoImage === visual.src), `${article.slug}: unrelated company visual`);
     }
