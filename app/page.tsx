@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./styles/home.css";
 import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
 import { HomeNews } from "@/components/news/HomeNews";
+import { HomeVideos } from "@/components/HomeVideos";
 import { HomeUpdatesForm } from "@/components/HomeUpdatesForm";
 import { TallyButton } from "@/components/LeadForms";
 import { getSeriesArticles } from "@/lib/blogSeries";
@@ -200,11 +201,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <nav className="home-v9-intent-nav home-v9-container" aria-label="Explore World Clean Biz">
-        <Link href="/blog"><span>01 / Intelligence</span><strong>Read the industry <b aria-hidden="true">↗</b></strong><p>Analysis, companies and market shifts</p></Link>
-        <div className="home-v9-product-entry"><Link href="/products"><span>02 / Product &amp; Sourcing</span><strong>Find your next product <b aria-hidden="true">↗</b></strong><p>Explore models, specifications and buying context</p></Link><Link className="home-v9-sourcing-entry" href="/sourcing">Buying for business? Explore sourcing support →</Link></div>
-        <Link href="/wcb-expo"><span>03 / WCB Expo</span><strong>Meet the industry <b aria-hidden="true">↗</b></strong><p>People, products and business connections</p></Link>
-      </nav>
+      <HomeVideos />
 
       <HomeNews />
 
