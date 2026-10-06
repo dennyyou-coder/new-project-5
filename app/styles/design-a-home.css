@@ -6,7 +6,7 @@
   --v9-muted: #526471;
   --v9-line: #c5d6e4;
   --v9-soft: #e3ecf3;
-  --cta-border: #1762c4;
+  --cta-border: #adc6da;
   color: #202b35;
   background: #fff;
 }
@@ -41,9 +41,9 @@
   text-decoration: none;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.button-secondary, .editorial-hero-secondary, .home-v9-series-actions a + a) {
-  border-color: #1762c4;
+  border-color: #adc6da;
   background: #fff;
-  color: #1762c4;
+  color: #202b35;
 }
 .structure-refresh.design-a .site-shell .home-editorial :is(.button, .home-v9-series-actions a:first-child):hover {
   border-color: #1255aa;
@@ -59,6 +59,62 @@
   outline: 3px solid #1762c4;
   outline-offset: 5px;
 }
+/* Browsing and secondary actions stay recognizable without repeating button boxes. */
+.structure-refresh.design-a .site-shell .home-editorial :is(.editorial-hero-foot, .home-v9-series-actions, .refresh-section-head, .home-videos-header, .editorial-expo > .container, .editorial-founder-actions, .refresh-business-card) a.home-quiet-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 0 1 auto;
+  width: auto;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #1762c4;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+.structure-refresh.design-a .site-shell .home-editorial :is(.editorial-hero-foot, .home-v9-series-actions, .refresh-section-head, .home-videos-header, .editorial-expo > .container, .editorial-founder-actions, .refresh-business-card) a.home-quiet-link:hover {
+  color: #1052ab;
+  background: transparent;
+  text-decoration-thickness: 2px;
+  transform: none;
+}
+.structure-refresh.design-a .site-shell .home-editorial :is(.refresh-section-head, .home-videos-header) > a.home-quiet-link { white-space: nowrap; align-self: center; }
+.structure-refresh.design-a .site-shell .home-videos .home-video-poster .home-video-play {
+  width: 58px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+  background: #e60000;
+  color: #fff;
+}
+.structure-refresh.design-a .site-shell .home-videos .home-video-copy a.youtube-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #b80000;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.structure-refresh.design-a .site-shell .home-videos .home-video-copy a.youtube-action svg { color: #e60000; flex-shrink: 0; }
+.structure-refresh.design-a .site-shell .home-videos .home-video-copy a.youtube-action:hover { background: transparent; color: #8f0000; text-decoration-thickness: 2px; }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-hero {
   background: #e3ecf3;
   color: #202b35;
@@ -425,11 +481,6 @@
 }
 .structure-refresh.design-a .site-shell .home-editorial .editorial-expo .refresh-card-link {
   color: #1762c4;
-}
-.structure-refresh.design-a .site-shell .home-editorial .editorial-expo > .container .refresh-card-link.button-secondary {
-  min-height: 52px;
-  padding: 13px 23px;
-  text-decoration: none;
 }
 .structure-refresh.design-a .site-shell .home-editorial .refresh-analysis-grid {
   gap: 24px;

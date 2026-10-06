@@ -44,7 +44,7 @@ export function HomeSeriesFeature({ article }: { article: Insight }) {
         <div className="home-v9-series-actions">
           <Link href={articleHref}>Read Latest Episode</Link>
           {seriesHref ? (
-            <Link href={seriesHref}>View All Episodes</Link>
+            <Link className="home-quiet-link" href={seriesHref}>View All Episodes</Link>
           ) : null}
         </div>
       </div>

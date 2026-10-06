@@ -61,7 +61,7 @@ export function HomeVideos({ library = false }: { library?: boolean }) {
             More on YouTube
           </a>
         ) : (
-          <Link className="home-v9-inline-link button" href="/videos">
+          <Link className="home-v9-inline-link home-quiet-link" href="/videos">
             All videos
           </Link>
         )}
@@ -111,11 +111,12 @@ export function HomeVideos({ library = false }: { library?: boolean }) {
               <h3>{video.title}</h3>
               <p>{video.description}</p>
               <a
-                className={library ? undefined : "button-secondary"}
+                className="youtube-action"
                 href={`https://www.youtube.com/watch?v=${video.videoId}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <svg viewBox="0 0 28 20" width="28" height="20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="currentColor" /><path d="m11 5 8 5-8 5z" fill="#fff" /></svg>
                 Watch on YouTube
               </a>
             </div>

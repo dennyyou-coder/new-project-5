@@ -107,7 +107,7 @@ export default function HomePage() {
         <div className="editorial-hero-foot">
           <div className="container">
             <span>Independent perspectives. Practical connections.</span>
-            <Link className="button-secondary" href="#founder-journal">
+            <Link className="home-quiet-link" href="#founder-journal">
               Follow the founder’s journey
             </Link>
           </div>
@@ -134,7 +134,7 @@ export default function HomePage() {
               <p className="eyebrow">Industry focus</p>
               <h2 id="industry-focus-title">What Matters Now</h2>
             </div>
-            <Link className="button" href="/news">All news</Link>
+            <Link className="home-quiet-link" href="/news">All news</Link>
           </div>
           <div className="refresh-focus-grid">
             {featured && (
@@ -235,7 +235,7 @@ export default function HomePage() {
                 Plan Your Visit
               </TallyButton>
             </div>
-            <Link href="/wcb-expo" className="refresh-card-link button-secondary">
+            <Link href="/wcb-expo" className="refresh-card-link home-quiet-link">
               Explore WCB Expo
             </Link>
           </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
               <p className="eyebrow">Insights &amp; analysis</p>
               <h2>Selected Industry Analysis</h2>
             </div>
-            <Link className="button" href="/blog">All insights</Link>
+            <Link className="home-quiet-link" href="/blog">All insights</Link>
           </div>
           <div className="refresh-analysis-grid">
             {analysis.map((article) => (
@@ -325,10 +325,10 @@ export default function HomePage() {
               </div>
             </div>
             <div className="editorial-founder-actions">
-              <Link className="button" href="/about">
+              <Link className="button-secondary" href="/about">
                 Meet Denny You
               </Link>
-              <Link className="button-secondary" href={`/blog/series/${founderSeries}`}>
+              <Link className="home-quiet-link" href={`/blog/series/${founderSeries}`}>
                 Read my founder’s journal
               </Link>
             </div>

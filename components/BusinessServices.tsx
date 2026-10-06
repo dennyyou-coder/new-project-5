@@ -55,7 +55,7 @@ export function BusinessServices() {
               </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <Link className="button business-service-button" href={`/contact#${item.value}`}>{item.buttonLabel}</Link>
+              <Link className="home-quiet-link business-service-button" href={`/contact#${item.value}`}>{item.buttonLabel}</Link>
             </article>
           ))}
         </div>
