@@ -130,6 +130,9 @@
 /* Company, product, equipment and component evidence pages. */
 .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .guides-category-hero { padding: 38px 0 32px; background: #e3ecf3; border-bottom: 1px solid #cbd8e2; }
 .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .blog-visible-breadcrumb { color: #526471; font-size: 12px; line-height: 1.6; margin-bottom: 24px; }
+.structure-refresh.design-a .brand-detail .guides-category-hero .blog-visible-breadcrumb,
+.structure-refresh.design-a .brand-detail .guides-category-hero .blog-visible-breadcrumb :is(a, span),
+.structure-refresh.design-a .brand-detail .brand-detail-hero > div > p:last-child { color: #526471; }
 .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-grid, .component-intelligence-hero-grid) { gap: 48px; margin-top: 24px; align-items: start; }
 .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-copy, .component-intelligence-hero-copy) h1 { color: #202b35; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.13; letter-spacing: -.035em; font-family: inherit; }
 .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-copy, .component-intelligence-hero-copy) p { color: #526471; font-size: 16px; line-height: 1.7; }
@@ -178,6 +181,12 @@
 .structure-refresh.design-a .product-detail :is(.product-faq, .product-price-card, .product-resource-list article) { padding: 22px; background: #fff; }
 .structure-refresh.design-a .product-detail .product-faq summary { color: #202b35; min-height: 24px; }
 .structure-refresh.design-a .product-detail :is(.product-comparison-takeaway, .product-sources) { background: #edf3f8; color: #202b35; border-radius: 8px; border-color: #cbd8e2; }
+.structure-refresh.design-a .product-detail .product-sources :is(h2, h3) { color: #202b35; }
+.structure-refresh.design-a .product-detail .product-sources p:not(.product-eyebrow) { color: #526471; }
+.structure-refresh.design-a .product-detail .product-sources :is(.product-eyebrow, a) { color: #1762c4; }
+.structure-refresh.design-a .product-detail .product-sources a:hover { color: #1052ab; }
+.structure-refresh.design-a .product-detail .product-sources li { color: #202b35; border-color: #cbd8e2; }
+
 
 /* About and the four existing cooperation routes. */
 .structure-refresh.design-a .about-network-page { background: #fff; }
