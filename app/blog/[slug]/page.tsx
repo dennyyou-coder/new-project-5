@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArticleBrandLinks } from "@/components/ArticleBrandLinks";
 import { getNews, newsDate } from "@/lib/news";
+import { NewsImage, NewsImageCaption } from "@/components/news/NewsImage";
 import { ArticleShareActions } from "@/components/ArticleShareActions";
 import { BlogConversionCta } from "@/components/BlogConversionCta";
 import { getPublishedBrandProfiles } from "@/lib/brands";
@@ -394,7 +395,11 @@ export default async function InsightDetailPage({ params }: Props) {
             <h2 id="related-companies-title">Related companies</h2>
             <div>{relatedCompanies.map((profile) => (
               <Link className="blog-related-company" href={`/brands/${profile.slug}`} key={profile.slug}>
-                <strong>{profile.name}</strong><span>{profile.headline}</span><span className="blog-related-company-action">Company profile</span>
+                <span className="blog-related-company-identity">
+                  <img className="blog-related-company-logo" src={profile.logoImage} alt="" width={112} height={72} loading="lazy" decoding="async" />
+                  <strong>{profile.name}</strong>
+                </span>
+                <span>{profile.headline}</span><span className="blog-related-company-action">Company profile</span>
               </Link>
             ))}</div>
           </section>
@@ -435,10 +440,16 @@ export default async function InsightDetailPage({ params }: Props) {
           <section className="blog-related-news" aria-labelledby="related-news-title">
             <h2 id="related-news-title">Related news</h2>
             <div>{relatedNews.map((item) => (
-              <Link href={`/news/${item.slug}`} key={item.slug}>
-                <time dateTime={item.eventDate}>{newsDate(item.eventDate)}</time>
-                <strong>{item.title}</strong><span>Read news</span>
-              </Link>
+              <div className="blog-related-news-item" key={item.slug}>
+                <figure>
+                  <Link className="blog-related-news-image" href={`/news/${item.slug}`} aria-label={item.title}><NewsImage article={item} /></Link>
+                  <figcaption><NewsImageCaption article={item} /></figcaption>
+                </figure>
+                <Link className="blog-related-news-copy" href={`/news/${item.slug}`}>
+                  <time dateTime={item.eventDate}>{newsDate(item.eventDate)}</time>
+                  <strong>{item.title}</strong><span>Read news</span>
+                </Link>
+              </div>
             ))}</div>
           </section>
         ) : null}

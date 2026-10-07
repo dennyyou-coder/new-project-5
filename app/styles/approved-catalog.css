@@ -483,3 +483,9 @@ body.structure-refresh.design-a .approved-catalog .product-related-news figure i
 body.structure-refresh.design-a .approved-catalog .product-related-news figcaption { margin-top: 8px; color: #52606b; font-size: 11px; line-height: 1.6; overflow-wrap: anywhere; }
 body.structure-refresh.design-a .approved-catalog .product-related-news figcaption a { color: #245cc4; text-decoration: underline; }
 @media (max-width: 640px) { body.structure-refresh.design-a .approved-catalog .product-related-news-item { grid-template-columns: minmax(0,1fr); gap: 16px; } }
+
+body.structure-refresh.design-a .approved-catalog .company-news-media{margin:0;min-width:0}
+body.structure-refresh.design-a .approved-catalog .company-news-media>a,body.structure-refresh.design-a .approved-catalog .company-news-media img{display:block}
+body.structure-refresh.design-a .approved-catalog .company-news-media img{height:auto;background:#e9edf1}
+body.structure-refresh.design-a .approved-catalog .company-news-media figcaption{padding:8px 20px 0;color:#52606b;font-size:11px;line-height:1.5;overflow-wrap:anywhere}
+body.structure-refresh.design-a .approved-catalog .company-news-media figcaption a{font-size:inherit;text-decoration:underline;text-underline-offset:2px}
