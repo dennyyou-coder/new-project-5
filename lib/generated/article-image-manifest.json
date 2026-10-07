@@ -3659,58 +3659,58 @@
         "outputHash": "sha256:4a3beb1712aaae5d8e9101dc1076999ca314caa71ef17ad51c9871a127568e10"
       }
     },
-    "/images/articles/galli-chervon-new-team/02-product-and-users.webp": {
+    "/images/articles/galli-chervon-new-team/02-product-and-users-portraits.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 63144,
+      "bytes": 67028,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:0e551d8606c4da91f74dfc74767e413a9eb64d5d70e9f917ac1b1d605aeec776",
-      "outputHash": "sha256:a54e96029f7cfaab3299445b31e92a0fac5902490ca4635e5db831de84018a20",
+      "sourceHash": "sha256:381c32c3118e7080036c721e6f151121073864c23488613519b6d616453e1280",
+      "outputHash": "sha256:a8a41d011a062eb75ddb313534bc0b073c32830d8d32b132ddf0147c9dd96071",
       "mobile": {
-        "src": "/images/articles/galli-chervon-new-team/02-product-and-users-800.webp",
+        "src": "/images/articles/galli-chervon-new-team/02-product-and-users-portraits-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 27976,
-        "outputHash": "sha256:d926432263399cb2b51fea33e8405f570376742aa6a319abb80234bdd91e1a89"
+        "bytes": 29132,
+        "outputHash": "sha256:6241a996212ff57e34adeea35286f4159f2d730a73c1799fc482c277ed975427"
       }
     },
-    "/images/articles/galli-chervon-new-team/03-canada-team.webp": {
+    "/images/articles/galli-chervon-new-team/03-canada-team-portraits.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 61142,
+      "bytes": 70622,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:a2e6964a804fa6cae5c6a70e82692930bafa7c1f03269995857e4c3c69e81966",
-      "outputHash": "sha256:e837d2121547a32c45cbddc42b0fbce073ea56826a79878f2603ec560e811f46",
+      "sourceHash": "sha256:2766e77a3ef1bb39d5cd5d73c63a59a87bfe0a969b70cd08537cdd09e67454ac",
+      "outputHash": "sha256:423ac61f69c92c56c33ddc57f914c54d0702628e05fcc78c34aeb54950a86b41",
       "mobile": {
-        "src": "/images/articles/galli-chervon-new-team/03-canada-team-800.webp",
+        "src": "/images/articles/galli-chervon-new-team/03-canada-team-portraits-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 27996,
-        "outputHash": "sha256:191332ff923300530ed892a21ea724065a6f0fc112d286fe9ed4e316fe35cac5"
+        "bytes": 30784,
+        "outputHash": "sha256:0b8d742814efca74635b6422ce33cd908f201c117d1d7930dbaccd04bd144ad0"
       }
     },
-    "/images/articles/galli-chervon-new-team/04-sales-team.webp": {
+    "/images/articles/galli-chervon-new-team/04-sales-team-portraits.webp": {
       "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 68774,
+      "bytes": 89906,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:fca9dda19d66c82118f1e53a2c2152b246f807344735156f36c6cfcd72848f19",
-      "outputHash": "sha256:458dc7c4e5aaca99e774e4902d7a45d2bb2d2f93e3c5152e3de27e43d7a39cf2",
+      "sourceHash": "sha256:5bc39afd168e45094c7b1ea169650a4818ce6c2e001dd08a5b62f7baaf93d693",
+      "outputHash": "sha256:1d2f29971f99afc12f9531d82267eff96d71ae75594bb74855d16f71d616c19e",
       "mobile": {
-        "src": "/images/articles/galli-chervon-new-team/04-sales-team-800.webp",
+        "src": "/images/articles/galli-chervon-new-team/04-sales-team-portraits-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 30754,
-        "outputHash": "sha256:e4a65fc1b03f04f5e399e281802747779148eb05fa5faaa8fcf767cfb8f1a531"
+        "bytes": 38688,
+        "outputHash": "sha256:d16995cc9420faec790bc655125a6720fd8eddf888133a28028b4f193ce7fcbe"
       }
     },
     "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp": {
@@ -37882,9 +37882,9 @@
       "budgetClass": "standard",
       "cover": "/images/articles/galli-chervon-new-team/01-cover.webp",
       "body": [
-        "/images/articles/galli-chervon-new-team/02-product-and-users.webp",
-        "/images/articles/galli-chervon-new-team/03-canada-team.webp",
-        "/images/articles/galli-chervon-new-team/04-sales-team.webp"
+        "/images/articles/galli-chervon-new-team/02-product-and-users-portraits.webp",
+        "/images/articles/galli-chervon-new-team/03-canada-team-portraits.webp",
+        "/images/articles/galli-chervon-new-team/04-sales-team-portraits.webp"
       ]
     },
     "gausium-mira-issa-innovation-award-november-2025": {
@@ -42427,20 +42427,20 @@
           "primary": "/images/articles/galli-chervon-new-team/01-cover.webp",
           "hash": "sha256:0fd13fc00afad2ec0658d812d2adc84c601cfe83398284051ffe327faa0695e9"
         },
-        "02-product-and-users.webp": {
+        "02-product-and-users-portraits.webp": {
           "status": "matched",
-          "primary": "/images/articles/galli-chervon-new-team/02-product-and-users.webp",
-          "hash": "sha256:0e551d8606c4da91f74dfc74767e413a9eb64d5d70e9f917ac1b1d605aeec776"
+          "primary": "/images/articles/galli-chervon-new-team/02-product-and-users-portraits.webp",
+          "hash": "sha256:381c32c3118e7080036c721e6f151121073864c23488613519b6d616453e1280"
         },
-        "03-canada-team.webp": {
+        "03-canada-team-portraits.webp": {
           "status": "matched",
-          "primary": "/images/articles/galli-chervon-new-team/03-canada-team.webp",
-          "hash": "sha256:a2e6964a804fa6cae5c6a70e82692930bafa7c1f03269995857e4c3c69e81966"
+          "primary": "/images/articles/galli-chervon-new-team/03-canada-team-portraits.webp",
+          "hash": "sha256:2766e77a3ef1bb39d5cd5d73c63a59a87bfe0a969b70cd08537cdd09e67454ac"
         },
-        "04-sales-team.webp": {
+        "04-sales-team-portraits.webp": {
           "status": "matched",
-          "primary": "/images/articles/galli-chervon-new-team/04-sales-team.webp",
-          "hash": "sha256:fca9dda19d66c82118f1e53a2c2152b246f807344735156f36c6cfcd72848f19"
+          "primary": "/images/articles/galli-chervon-new-team/04-sales-team-portraits.webp",
+          "hash": "sha256:5bc39afd168e45094c7b1ea169650a4818ce6c2e001dd08a5b62f7baaf93d693"
         }
       }
     },
