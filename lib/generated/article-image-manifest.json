@@ -3641,6 +3641,78 @@
         "outputHash": "sha256:71f2319263e2e2f1676a92a09d4664a56783073983aa76a2ed10b092c2e6b4a1"
       }
     },
+    "/images/articles/galli-chervon-new-team/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53282,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0fd13fc00afad2ec0658d812d2adc84c601cfe83398284051ffe327faa0695e9",
+      "outputHash": "sha256:2224d9d7b2da7c595a485e6597add98389124b0215f58f20d7eb5fe5fbcc701c",
+      "mobile": {
+        "src": "/images/articles/galli-chervon-new-team/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22136,
+        "outputHash": "sha256:4a3beb1712aaae5d8e9101dc1076999ca314caa71ef17ad51c9871a127568e10"
+      }
+    },
+    "/images/articles/galli-chervon-new-team/02-product-and-users.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 63144,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0e551d8606c4da91f74dfc74767e413a9eb64d5d70e9f917ac1b1d605aeec776",
+      "outputHash": "sha256:a54e96029f7cfaab3299445b31e92a0fac5902490ca4635e5db831de84018a20",
+      "mobile": {
+        "src": "/images/articles/galli-chervon-new-team/02-product-and-users-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27976,
+        "outputHash": "sha256:d926432263399cb2b51fea33e8405f570376742aa6a319abb80234bdd91e1a89"
+      }
+    },
+    "/images/articles/galli-chervon-new-team/03-canada-team.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61142,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a2e6964a804fa6cae5c6a70e82692930bafa7c1f03269995857e4c3c69e81966",
+      "outputHash": "sha256:e837d2121547a32c45cbddc42b0fbce073ea56826a79878f2603ec560e811f46",
+      "mobile": {
+        "src": "/images/articles/galli-chervon-new-team/03-canada-team-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27996,
+        "outputHash": "sha256:191332ff923300530ed892a21ea724065a6f0fc112d286fe9ed4e316fe35cac5"
+      }
+    },
+    "/images/articles/galli-chervon-new-team/04-sales-team.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 68774,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:fca9dda19d66c82118f1e53a2c2152b246f807344735156f36c6cfcd72848f19",
+      "outputHash": "sha256:458dc7c4e5aaca99e774e4902d7a45d2bb2d2f93e3c5152e3de27e43d7a39cf2",
+      "mobile": {
+        "src": "/images/articles/galli-chervon-new-team/04-sales-team-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30754,
+        "outputHash": "sha256:e4a65fc1b03f04f5e399e281802747779148eb05fa5faaa8fcf767cfb8f1a531"
+      }
+    },
     "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -37806,6 +37878,15 @@
       "cover": "/images/articles/fujia-nine-month-results-october-2025/01-cover.webp",
       "body": []
     },
+    "galli-chervon-new-team": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/galli-chervon-new-team/01-cover.webp",
+      "body": [
+        "/images/articles/galli-chervon-new-team/02-product-and-users.webp",
+        "/images/articles/galli-chervon-new-team/03-canada-team.webp",
+        "/images/articles/galli-chervon-new-team/04-sales-team.webp"
+      ]
+    },
     "gausium-mira-issa-innovation-award-november-2025": {
       "budgetClass": "standard",
       "cover": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
@@ -42336,6 +42417,30 @@
           "status": "matched",
           "primary": "/images/articles/fujia-nine-month-results-october-2025/01-cover.webp",
           "hash": "sha256:398d77ce2a4c88587b7f7d527c2b447d2a9ba701eaeae9edbd5f00579c66c1bf"
+        }
+      }
+    },
+    "galli-chervon-new-team": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/galli-chervon-new-team/01-cover.webp",
+          "hash": "sha256:0fd13fc00afad2ec0658d812d2adc84c601cfe83398284051ffe327faa0695e9"
+        },
+        "02-product-and-users.webp": {
+          "status": "matched",
+          "primary": "/images/articles/galli-chervon-new-team/02-product-and-users.webp",
+          "hash": "sha256:0e551d8606c4da91f74dfc74767e413a9eb64d5d70e9f917ac1b1d605aeec776"
+        },
+        "03-canada-team.webp": {
+          "status": "matched",
+          "primary": "/images/articles/galli-chervon-new-team/03-canada-team.webp",
+          "hash": "sha256:a2e6964a804fa6cae5c6a70e82692930bafa7c1f03269995857e4c3c69e81966"
+        },
+        "04-sales-team.webp": {
+          "status": "matched",
+          "primary": "/images/articles/galli-chervon-new-team/04-sales-team.webp",
+          "hash": "sha256:fca9dda19d66c82118f1e53a2c2152b246f807344735156f36c6cfcd72848f19"
         }
       }
     },
