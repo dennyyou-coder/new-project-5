@@ -878,3 +878,26 @@ test("built product images use product routes and fail on missing images or blog
   fs.unlinkSync(destination);
   assert.ok((await verifyBuiltArticleImages(project)).failures.some(item => item.code === "BUILT_ARTICLE_MISSING"));
 });
+
+
+test("built news images use news routes and retain cover, canonical and responsive checks", async () => {
+  const project = await validManifestProject();
+  const newsContent = path.join(project.projectRoot, "content", "news");
+  fs.mkdirSync(newsContent, { recursive: true });
+  fs.writeFileSync(path.join(newsContent, `${project.slug}.mdx`), "News source");
+  const destination = path.join(project.projectRoot, ".next", "server", "app", "news", `${project.slug}.html`);
+  fs.mkdirSync(path.dirname(destination), { recursive: true });
+  const html = builtHtml(project, { canonical: `https://worldcleanbiz.com/news/${project.slug}` })
+    .replace("blog-article-main", "news-article")
+    .replace("blog-article-cover", "news-cover");
+  fs.writeFileSync(destination, html);
+  assert.deepEqual((await verifyBuiltArticleImages(project)).failures, []);
+  fs.writeFileSync(destination, html.replace(`/news/${project.slug}`, `/blog/${project.slug}`));
+  assert.ok((await verifyBuiltArticleImages(project)).failures.some(item => item.code === "BUILT_CANONICAL_MISMATCH"));
+  fs.writeFileSync(destination, html.replace('class="news-cover"', 'class="unrecognized-cover"'));
+  assert.ok((await verifyBuiltArticleImages(project)).failures.some(item => item.code === "BUILT_ARTICLE_IMAGE_MISSING"));
+  fs.writeFileSync(destination, html.replace('loading="eager"', 'loading="lazy"'));
+  assert.ok((await verifyBuiltArticleImages(project)).failures.some(item => item.code === "BUILT_COVER_PRIORITY_MISMATCH"));
+  fs.unlinkSync(destination);
+  assert.ok((await verifyBuiltArticleImages(project)).failures.some(item => item.code === "BUILT_ARTICLE_MISSING"));
+});
