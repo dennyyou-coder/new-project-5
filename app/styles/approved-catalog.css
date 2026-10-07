@@ -468,3 +468,18 @@ body.structure-refresh.design-a .approved-catalog .product-sourcing{color:#232c3
 body.structure-refresh.design-a .approved-catalog .product-sourcing h2{color:#232c35}
 body.structure-refresh.design-a .approved-catalog .product-sourcing p{color:#52606b}
 @media(max-width:700px){body.structure-refresh.design-a .approved-catalog .company-news-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Existing editorial relationships, kept as concise reading links. */
+body.structure-refresh.design-a .approved-catalog .product-article-links h3 { margin: 0 0 8px; font-size: 18px; line-height: 1.4; color: #232c35; }
+body.structure-refresh.design-a .approved-catalog .product-related-news > div { display: grid; gap: 0; }
+body.structure-refresh.design-a .approved-catalog .product-related-news-item { display: grid; grid-template-columns: 180px minmax(0,1fr); gap: 20px; min-width: 0; padding: 24px 0; border-top: 1px solid #d6dfe7; }
+body.structure-refresh.design-a .approved-catalog .product-related-news time { color: #52606b; font-size: 12px; }
+body.structure-refresh.design-a .approved-catalog .product-related-news h3 { margin: 7px 0 8px; color: #232c35; font-size: 19px; line-height: 1.4; overflow-wrap: anywhere; }
+body.structure-refresh.design-a .approved-catalog .product-related-news p { margin: 0; color: #52606b; font-size: 14px; line-height: 1.7; }
+body.structure-refresh.design-a .approved-catalog .product-related-news h3 a { color: inherit; text-decoration: none; }
+body.structure-refresh.design-a .approved-catalog .product-related-news h3 a:hover { color: #245cc4; text-decoration: underline; text-underline-offset: 4px; }
+body.structure-refresh.design-a .approved-catalog .product-related-news figure { margin: 0; min-width: 0; }
+body.structure-refresh.design-a .approved-catalog .product-related-news figure img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; background: #f4f6f8; border: 1px solid #d6dfe7; border-radius: 4px; }
+body.structure-refresh.design-a .approved-catalog .product-related-news figcaption { margin-top: 8px; color: #52606b; font-size: 11px; line-height: 1.6; overflow-wrap: anywhere; }
+body.structure-refresh.design-a .approved-catalog .product-related-news figcaption a { color: #245cc4; text-decoration: underline; }
+@media (max-width: 640px) { body.structure-refresh.design-a .approved-catalog .product-related-news-item { grid-template-columns: minmax(0,1fr); gap: 16px; } }

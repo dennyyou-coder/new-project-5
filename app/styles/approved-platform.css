@@ -447,3 +447,9 @@
   .structure-refresh.design-a.approved-design .approved-platform .cooperation-card>input{top:14px;right:14px;left:auto}
   .structure-refresh.design-a.approved-design .approved-platform .cooperation-copy{padding-right:43px}
 }
+
+/* Direct paths between each curated video and its matching analysis. */
+.approved-platform .video-feature[id], .approved-platform .video-card[id] { scroll-margin-top: 112px; }
+.approved-platform .video-reading-action { display: inline-block; color: var(--accent, #245cc4); font-size: 14px; font-weight: 600; text-underline-offset: 4px; margin-top: 12px; }
+.approved-platform .video-reading-action:hover { text-decoration: underline; }
+.approved-platform .video-feature-copy .video-reading-action { align-self: flex-start; }

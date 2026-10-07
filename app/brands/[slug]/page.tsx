@@ -1,3 +1,6 @@
+import { buildBrandAnalysisLink } from "@/components/brands/brandAnalysisLink";
+import { getAvailableCompanyKeywords } from "@/lib/companyKeywords";
+import { getEditorialInsights } from "@/lib/insightCollections";
 import { getNews } from "@/lib/news";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -96,6 +99,9 @@ export default async function BrandPage({ params }: PageProps) {
 
   const schemas = buildBrandPageSchemas(data, siteUrl);
   const relatedNews = getNews().filter((article) => article.brandSlugs.includes(data.profile.slug));
+  const analysisLink = buildBrandAnalysisLink(data.profile, getAvailableCompanyKeywords(
+    getEditorialInsights(articles).filter((article) => !article.series)
+  ));
 
   return (
     <div className="guides-hub brand-hub brand-detail approved-catalog">
@@ -110,6 +116,7 @@ export default async function BrandPage({ params }: PageProps) {
       <BrandTimeline profile={data.profile} />
       <BrandArticles
         brandName={data.profile.name}
+        analysisLink={analysisLink}
         news={relatedNews}
         primaryArticles={data.primaryArticles}
         relatedArticles={data.relatedArticles}

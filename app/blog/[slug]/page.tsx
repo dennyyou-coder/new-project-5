@@ -1,9 +1,12 @@
-import { ProductLinks } from "@/components/products/ProductLinks";
+import { ArticleProductLinks, ArticleVideoLinks } from "@/components/editorial/EditorialConnections";
+import { getArticleProducts, getArticleReading, getArticleNews, getArticleVideos } from "@/lib/editorialConnections";
+import { productModels } from "@/lib/products";
+import { videoLibrary } from "@/lib/wcbVideos";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArticleBrandLinks } from "@/components/ArticleBrandLinks";
-import { getRelatedNewsForArticle, newsDate } from "@/lib/news";
+import { getNews, newsDate } from "@/lib/news";
 import { ArticleShareActions } from "@/components/ArticleShareActions";
 import { BlogConversionCta } from "@/components/BlogConversionCta";
 import { getPublishedBrandProfiles } from "@/lib/brands";
@@ -15,10 +18,9 @@ import {
   removeLeadingArticleTitleAndCover
 } from "@/lib/content";
 import {
-  getRelatedEditorialInsights,
   orderSeriesInsights
 } from "@/lib/insightCollections";
-import { addArticleContents, getTopicReading } from "@/lib/articleExperience";
+import { addArticleContents } from "@/lib/articleExperience";
 import { seoDescription, seoTitle } from "@/lib/seo";
 
 type Props = {
@@ -144,10 +146,12 @@ export default async function InsightDetailPage({ params }: Props) {
     notFound();
   }
 
-  const related = getTopicReading(articles, article, getRelatedEditorialInsights(articles, article, 3));
+  const related = getArticleReading(article, articles, productModels);
+  const relatedProducts = getArticleProducts(article, productModels);
+  const relatedVideos = getArticleVideos(article, videoLibrary);
   const publishedBrandProfiles = getPublishedBrandProfiles(articles);
   const relatedCompanies = publishedBrandProfiles.filter((profile) => article.primaryBrands.includes(profile.slug));
-  const relatedNews = getRelatedNewsForArticle(article);
+  const relatedNews = getArticleNews(article, getNews(), productModels);
   const seriesArticles = article.series
     ? orderSeriesInsights(
         articles.filter((item) => item.series === article.series),
@@ -309,7 +313,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
             <div className="blog-reading-body" dangerouslySetInnerHTML={{ __html: reading.content }} />
 
-            <ProductLinks article={article.slug} />
+            <ArticleProductLinks products={relatedProducts} />
             <ArticleShareActions title={article.title} url={url} />
 
             <footer className="blog-author-note">
@@ -438,6 +442,8 @@ export default async function InsightDetailPage({ params }: Props) {
             ))}</div>
           </section>
         ) : null}
+
+          <ArticleVideoLinks videos={relatedVideos} />
 
           <nav className="blog-topic-paths" aria-label="Explore industry resources">
             <strong>Keep exploring</strong>

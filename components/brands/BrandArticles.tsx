@@ -50,9 +50,11 @@ export function BrandArticles({
   primaryArticles,
   relatedArticles,
   brandName,
+  analysisLink,
   news,
 }: {
   brandName: string;
+  analysisLink?: { href: string; label: string };
   news: NewsArticle[];
   primaryArticles: BrandTaggedArticle[];
   relatedArticles: BrandTaggedArticle[];
@@ -73,9 +75,9 @@ export function BrandArticles({
           title={`Articles about ${brandName}`}
         />
         <section className="company-related-news" aria-labelledby="company-news-heading"><h3 id="company-news-heading">{brandName} News</h3>{news.length ? <div className="company-news-grid">{news.slice(0, 4).map((article) => <article className="guide-card" key={article.slug}><Link href={`/news/${article.slug}`}><NewsImage article={article} /><div className="guide-card-copy"><h3>{article.title}</h3><p>{article.excerpt}</p><small><time dateTime={article.publishedAt}>{newsDate(article.publishedAt)}</time></small></div></Link></article>)}</div> : <p>No dedicated {brandName} news stories are available in this collection yet.</p>}<Link className="refresh-card-link" href="/news">Browse industry news</Link></section>
-        <Link className="refresh-card-link" href="/blog/archive">
-          Browse all analysis
-        </Link>
+        {analysisLink ? <Link className="refresh-card-link company-analysis-link" href={analysisLink.href}>
+          {analysisLink.label}
+        </Link> : null}
       </div>
     </section>
   );

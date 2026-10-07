@@ -30,13 +30,13 @@ export function HomeVideos({ library = false }: { library?: boolean }) {
       </section>
       <section className="section video-library" aria-label="Industry video library">
         <div className="container">
-          <article className="video-feature">
+          <article className="video-feature" id={`video-${featured.key}`}>
             {player(featured, true)}
-            <div className="video-feature-copy"><p className="eyebrow">Company Analysis</p><h2>{featured.title}</h2><p>{featured.description}</p><span className="video-meta">Denny You · {featured.duration}</span><a className="youtube-button" href={`https://www.youtube.com/watch?v=${featured.videoId}`} target="_blank" rel="noopener noreferrer">{youtubeMark} Watch on YouTube</a></div>
+            <div className="video-feature-copy"><p className="eyebrow">Company Analysis</p><h2>{featured.title}</h2><p>{featured.description}</p><span className="video-meta">Denny You · {featured.duration}</span><a className="youtube-button" href={`https://www.youtube.com/watch?v=${featured.videoId}`} target="_blank" rel="noopener noreferrer">{youtubeMark} Watch on YouTube</a><Link className="video-reading-action" href={`/blog/${featured.articleSlugs[0]}`}>Read related analysis</Link></div>
           </article>
           <div className="section-head"><h2>More industry videos</h2></div>
-          <div className="video-library-grid">{remaining.map((video) => <article className="video-card" key={video.key}>
-            {player(video)}<div className="video-copy"><p className="video-meta">{video.category} · {video.duration}</p><h3>{video.title}</h3><p>{video.description}</p></div>
+          <div className="video-library-grid">{remaining.map((video) => <article className="video-card" key={video.key} id={`video-${video.key}`}>
+            {player(video)}<div className="video-copy"><p className="video-meta">{video.category} · {video.duration}</p><h3>{video.title}</h3><p>{video.description}</p><Link className="video-reading-action" href={`/blog/${video.articleSlugs[0]}`}>Read related analysis</Link></div>
           </article>)}</div>
         </div>
       </section>
