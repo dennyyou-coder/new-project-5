@@ -1470,7 +1470,15 @@ async function processedAssetsForCandidate(context, candidate, plans) {
   const processed = {};
   for (const [url, asset] of Object.entries(candidate.assets)) {
     if (overridden[url]) processed[url] = overridden[url];
-    else processed[url] = await describeExistingAsset(url, asset.file, candidate, context.existingManifest.assets?.[url], context.publicRoot, context.historicalKindClassifications);
+    else {
+      const existing = context.existingManifest.assets?.[url];
+      const current = await describeExistingAsset(url, asset.file, candidate, existing, context.publicRoot, context.historicalKindClassifications);
+      // Keep an unchanged body's approved classification when preparing another article.
+      // File facts are still read above, and a new cover use takes its current role.
+      if (current.role === "body" && ["chart", "transparent"].includes(existing?.role)
+        && existing.outputHash === current.outputHash) current.role = existing.role;
+      processed[url] = current;
+    }
   }
   return processed;
 }

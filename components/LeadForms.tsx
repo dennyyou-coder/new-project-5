@@ -3,7 +3,7 @@
 import { ReactNode, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { TallyFallbackDialog } from "./TallyFallbackDialog";
-import type { TallySubmission } from "@/lib/tallySubmission";
+import { readTallyMessage, type TallySubmission } from "@/lib/tallySubmission";
 import { getTallyForm, type TallyFormKey } from "@/lib/tallyForms";
 import {
   buildContactFallbackUrl,
@@ -58,14 +58,6 @@ function loadTallyWidget() {
 }
 
 type TallySubmitPayload = TallySubmission;
-
-type TallyMessageData = {
-  event?: string;
-  payload?: {
-    formId?: string;
-    responseId?: string;
-  };
-};
 
 declare global {
   interface Window {
@@ -158,7 +150,8 @@ export function TallyButton({
   const tallyForm = getTallyForm(form);
   const fallbackUrl = buildContactFallbackUrl({
     conversion_group: getConversionGroup(tallyForm.formType),
-    cta_location: ctaLocation
+    cta_location: ctaLocation,
+    form_type: tallyForm.formType
   });
 
   useEffect(() => {
@@ -316,93 +309,76 @@ export function TallyInlineEmbed({
   ctaLocation,
   form,
   inquiryIntent,
+  inquiryType,
   productCategory,
+  sourcePage = "/sourcing",
   title
 }: {
   className?: string;
   ctaLocation: string;
   form: TallyFormKey;
   inquiryIntent?: string;
+  inquiryType?: string;
   productCategory?: string;
+  sourcePage?: string;
   title: string;
 }) {
   const tallyForm = getTallyForm(form);
-  const [embedUrl, setEmbedUrl] = useState(() => {
-    if (!tallyForm.id || !tallyForm.url) return "";
-    return buildTallyUrl(
-      `${tallyForm.url}?transparentBackground=1`,
-      createLeadAttribution({
-        formType: tallyForm.formType,
-        sourcePage: "/sourcing",
-        ctaLocation,
-        inquiryIntent,
-        productCategory
-      })
-    );
-  });
-  const attributionRef = useRef<LeadAttribution | null>(null);
-  const submittedRef = useRef(false);
+  const [attribution, setAttribution] = useState(() => createLeadAttribution({
+    formType: tallyForm.formType, sourcePage, ctaLocation,
+    inquiryIntent, inquiryType, productCategory
+  }));
+  const attributionRef = useRef<LeadAttribution>(attribution);
+  const frameRef = useRef<HTMLIFrameElement>(null);
+  const submittedRef = useRef(new Set<string>());
+  const openedRef = useRef(false);
 
   useEffect(() => {
     if (!tallyForm.id || !tallyForm.url) return;
-
-    const attribution = createLeadAttribution({
+    const current = createLeadAttribution({
       formType: tallyForm.formType,
       sourcePage: window.location.pathname,
       ctaLocation,
       language: document.documentElement.lang || "en",
       search: window.location.search,
-      inquiryIntent,
-      productCategory
+      inquiryIntent, inquiryType, productCategory
     });
+    attributionRef.current = current;
+    setAttribution(current);
+    openedRef.current = false;
 
-    attributionRef.current = attribution;
-    setEmbedUrl(
-      buildTallyUrl(`${tallyForm.url}?transparentBackground=1`, attribution)
-    );
-
-    function handleTallyMessage(event: MessageEvent<TallyMessageData>) {
+    function handleTallyMessage(event: MessageEvent) {
       if (event.origin !== "https://tally.so") return;
-      if (event.data?.event !== "Tally.FormSubmitted") return;
-      if (event.data.payload?.formId !== tallyForm.id) return;
-      if (!attributionRef.current || submittedRef.current) return;
-
-      submittedRef.current = true;
-      const payload = {
-        ...attributionRef.current,
-        response_id: event.data.payload.responseId
-      };
+      if (!frameRef.current || event.source !== frameRef.current.contentWindow) return;
+      // Tally.FormSubmitted can arrive as JSON text or as an object.
+      const message = readTallyMessage(event.data, tallyForm.id);
+      if (!message) return;
+      if (message.event === "loaded") {
+        if (openedRef.current) return;
+        openedRef.current = true;
+        trackLeadEvent("form_open", { ...attributionRef.current, open_method: "inline" });
+        return;
+      }
+      if (submittedRef.current.has(message.id)) return;
+      submittedRef.current.add(message.id);
+      const payload = { ...attributionRef.current, response_id: message.id };
       trackLeadEvent("form_submit", payload);
       trackLeadEvent("form_success", { ...payload, conversion_value: 1 });
     }
-
     window.addEventListener("message", handleTallyMessage);
     return () => window.removeEventListener("message", handleTallyMessage);
-  }, [ctaLocation, inquiryIntent, productCategory, tallyForm.formType, tallyForm.id, tallyForm.url]);
+  }, [ctaLocation, inquiryIntent, inquiryType, productCategory, sourcePage, tallyForm.formType, tallyForm.id, tallyForm.url]);
 
   if (!tallyForm.id || !tallyForm.url) {
     return <p>The form is temporarily unavailable. Please use the Contact page.</p>;
   }
-
-  if (!embedUrl) {
-    return <div aria-label="Loading inquiry form" className={className} />;
-  }
-
+  const embedUrl = buildTallyUrl(`https://tally.so/embed/${tallyForm.id}?transparentBackground=1`, attribution);
+  const fallbackUrl = buildTallyUrl(tallyForm.url, attribution);
   return (
-    <iframe
-      allow="clipboard-write"
-      className={className}
-      loading="lazy"
-      onLoad={() => {
-        if (!attributionRef.current) return;
-        trackLeadEvent("form_open", {
-          ...attributionRef.current,
-          open_method: "inline"
-        });
-      }}
-      src={embedUrl}
-      title={title}
-    />
+    <div className="tally-inline">
+      <iframe ref={frameRef} allow="clipboard-write" className={className} loading="lazy" src={embedUrl} title={title} />
+      <p className="project-tally-help">Having trouble loading the form? <a href={fallbackUrl} target="_blank" rel="noopener noreferrer">Open the same form in a new tab</a>.</p>
+    </div>
   );
 }
 

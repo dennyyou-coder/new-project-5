@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArticleBrandLinks } from "@/components/ArticleBrandLinks";
+import { getRelatedNewsForArticle, newsDate } from "@/lib/news";
 import { ArticleShareActions } from "@/components/ArticleShareActions";
 import { BlogConversionCta } from "@/components/BlogConversionCta";
 import { getPublishedBrandProfiles } from "@/lib/brands";
@@ -145,6 +146,8 @@ export default async function InsightDetailPage({ params }: Props) {
 
   const related = getTopicReading(articles, article, getRelatedEditorialInsights(articles, article, 3));
   const publishedBrandProfiles = getPublishedBrandProfiles(articles);
+  const relatedCompanies = publishedBrandProfiles.filter((profile) => article.primaryBrands.includes(profile.slug));
+  const relatedNews = getRelatedNewsForArticle(article);
   const seriesArticles = article.series
     ? orderSeriesInsights(
         articles.filter((item) => item.series === article.series),
@@ -265,6 +268,12 @@ export default async function InsightDetailPage({ params }: Props) {
       <section className="blog-article-section">
         <div className="blog-article-container">
           <article className="article-prose blog-article-main">
+            {article.coverImage ? (
+              <figure className="blog-article-cover">
+                <img {...responsiveImageProps(article.coverImage, "cover")} alt={article.coverAlt || article.title} />
+              </figure>
+            ) : null}
+
             {hasTakeaways ? (
               <div className="blog-key-points">
                 <strong>Key Points</strong>
@@ -274,12 +283,6 @@ export default async function InsightDetailPage({ params }: Props) {
                   ))}
                 </ul>
               </div>
-            ) : null}
-
-            {article.coverImage ? (
-              <figure className="blog-article-cover">
-                <img {...responsiveImageProps(article.coverImage, "cover")} alt={article.coverAlt || article.title} />
-              </figure>
             ) : null}
 
             {article.youtubeId ? (
@@ -382,11 +385,22 @@ export default async function InsightDetailPage({ params }: Props) {
           </section>
         ) : null}
 
+        {relatedCompanies.length ? (
+          <section className="blog-related-companies" aria-labelledby="related-companies-title">
+            <h2 id="related-companies-title">Related companies</h2>
+            <div>{relatedCompanies.map((profile) => (
+              <Link className="blog-related-company" href={`/brands/${profile.slug}`} key={profile.slug}>
+                <strong>{profile.name}</strong><span>{profile.headline}</span><span className="blog-related-company-action">Company profile</span>
+              </Link>
+            ))}</div>
+          </section>
+        ) : null}
+
         {related.length ? (
           <section className="blog-related-signals" aria-labelledby="continue-reading-title">
             <div className="blog-related-signals-heading">
               <p>More on the companies, products and themes in this article</p>
-              <h2 id="continue-reading-title">Continue Reading</h2>
+              <h2 id="continue-reading-title">Related reading</h2>
             </div>
             <div className="related-signal-grid">
               {related.map((item) => (
@@ -403,12 +417,25 @@ export default async function InsightDetailPage({ params }: Props) {
                       alt=""
                     />
                   </div>
-                  <div className="meta">{item.seriesTitle || item.category}</div>
+                  <div className="meta">{item.seriesTitle || item.category} · <time dateTime={item.publishedAt || item.date}>{displayPublishedDate(item.publishedAt || item.date)}</time></div>
                   <h3>{item.title}</h3>
+                  <p className="related-signal-excerpt">{item.excerpt}</p>
                   <span>{item.readingTime} · Read Article</span>
                 </Link>
               ))}
             </div>
+          </section>
+        ) : null}
+
+        {relatedNews.length ? (
+          <section className="blog-related-news" aria-labelledby="related-news-title">
+            <h2 id="related-news-title">Related news</h2>
+            <div>{relatedNews.map((item) => (
+              <Link href={`/news/${item.slug}`} key={item.slug}>
+                <time dateTime={item.eventDate}>{newsDate(item.eventDate)}</time>
+                <strong>{item.title}</strong><span>Read news</span>
+              </Link>
+            ))}</div>
           </section>
         ) : null}
 

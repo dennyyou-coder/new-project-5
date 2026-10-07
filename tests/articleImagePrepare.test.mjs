@@ -7,7 +7,7 @@ import { spawnSync } from "node:child_process";
 import test from "node:test";
 
 import sharp from "sharp";
-import { verifyArticleImages } from "../scripts/article-images/verify.mjs";
+import { verifyArticleBudget, verifyArticleImages } from "../scripts/article-images/verify.mjs";
 import { ARTICLE_IMAGE_LIMIT_BYTES, IMAGE_BUDGETS } from "../scripts/article-images/config.mjs";
 import { buildRuntimeIndex } from "../scripts/article-images/manifest.mjs";
 
@@ -1736,4 +1736,55 @@ test("product covers retain full square photography through the standard prepara
   assert.equal(cover.width, cover.height);
   assert.ok(cover.bytes <= IMAGE_BUDGETS.cover.desktop);
   assert.deepEqual((await verifyArticleImages({ projectRoot: project.projectRoot, sourceLibraryRoot: project.sourceLibraryRoot })).failures, []);
+});
+
+
+test("preparing one slug preserves unchanged unrelated image roles and their budgets", async () => {
+  const project = await validFixture({ slug: "selected-photo-article" });
+  const slug = "existing-classified-article";
+  const cover = "/images/legacy/classified-cover.webp";
+  const chart = "/images/legacy/classified-chart.svg";
+  const transparent = "/images/legacy/classified-transparent.png";
+  writeArticle(project, slug, { cover, body: [chart, transparent] });
+  await writeImage(publicFile(project, cover), { format: "webp" });
+  await writeImage(publicFile(project, transparent), { width: 600, height: 400, alpha: true });
+  // A valid chart above the photo budget catches a silent chart-to-body downgrade.
+  fs.writeFileSync(publicFile(project, chart), `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><!--${"x".repeat(225_000)}--><rect width="1200" height="800" fill="#dcecf2"/></svg>`);
+  const hash = (file) => `sha256:${crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex")}`;
+  const facts = async (url, role, kind) => {
+    const file = publicFile(project, url);
+    const metadata = await sharp(file).metadata();
+    return { role, kind, width: metadata.width, height: metadata.height, bytes: fs.statSync(file).size,
+      format: metadata.format, quality: 100, sourceHash: hash(file), outputHash: hash(file) };
+  };
+  const assets = {
+    [cover]: await facts(cover, "cover", "photo"),
+    [chart]: await facts(chart, "chart", "graphic"),
+    [transparent]: await facts(transparent, "transparent", "transparent")
+  };
+  const manifestPath = path.join(project.projectRoot, "lib", "generated", "article-image-manifest.json");
+  fs.mkdirSync(path.dirname(manifestPath), { recursive: true });
+  fs.writeFileSync(manifestPath, JSON.stringify({ version: 1, processorVersion: "fixture", assets,
+    articles: { [slug]: { budgetClass: "standard", cover, body: [chart, transparent] } } }));
+  const prepareSelected = () => prepareArticleImages({ projectRoot: project.projectRoot, slug: project.slug, sourceRoot: project.folder });
+  const readManifest = () => JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  await prepareSelected();
+  const first = readManifest();
+  assert.deepEqual(first.assets[chart], assets[chart]);
+  assert.deepEqual(first.assets[transparent], assets[transparent]);
+  assert.equal(hash(publicFile(project, chart)), assets[chart].outputHash);
+  assert.equal(hash(publicFile(project, transparent)), assets[transparent].outputHash);
+  assert.deepEqual(verifyArticleBudget({ slug, ...first.articles[slug] }, first.assets).failures, []);
+
+  // Current usage and actual file metadata still win over stale classifications.
+  writeArticle(project, slug, { cover: chart, body: [transparent] });
+  await writeImage(publicFile(project, transparent), { width: 640, height: 420, alpha: true });
+  await prepareSelected();
+  const second = readManifest();
+  assert.equal(second.assets[chart].role, "cover");
+  assert.equal(second.assets[transparent].role, "body");
+  assert.equal(second.assets[transparent].width, 640);
+  assert.equal(second.assets[transparent].height, 420);
+  assert.equal(second.assets[transparent].bytes, fs.statSync(publicFile(project, transparent)).size);
+  assert.equal(second.assets[transparent].outputHash, hash(publicFile(project, transparent)));
 });

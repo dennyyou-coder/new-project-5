@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import "./styles/home.css";
-import "./styles/homepage-editorial.css";
+import "./styles/approved-home.css";
 import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
+import { NewsImage, NewsImageCaption } from "@/components/news/NewsImage";
 import { HomeVideos } from "@/components/HomeVideos";
 import { BusinessServices } from "@/components/BusinessServices";
 import { TallyButton } from "@/components/LeadForms";
 import { getInsights } from "@/lib/content";
-import { getPublishedBrandProfiles } from "@/lib/brands";
 import {
   getEditorialInsights,
   getLatestSeriesInsight,
@@ -29,7 +29,6 @@ export default function HomePage() {
       (article) => article.slug !== featured?.slug && !article.seriesTitle,
     )
     .slice(0, 3);
-  const brands = getPublishedBrandProfiles(articles);
   const news: { article: NewsArticle; visual: NonNullable<ReturnType<typeof getNewsVisual>> }[] = [];
   // Keep the existing date order and let new stories with verified imagery enter naturally.
   for (const article of getNews()) {
@@ -62,60 +61,36 @@ export default function HomePage() {
     },
   ];
   return (
-    <div className="refresh-home home-editorial">
-      <section className="editorial-hero" aria-labelledby="home-title">
-        <div className="container editorial-hero-inner">
-          <div className="editorial-hero-copy">
-            <p className="eyebrow">World Clean Biz · A view from inside</p>
-            <h1 id="home-title">
-              Inside the global cleaning industry.
-            </h1>
-            <p className="editorial-hero-lead">
-              The companies. The people. The opportunities ahead.
-            </p>
-            <p className="editorial-hero-description">
-              Independent analysis, product intelligence and real industry
-              connections — from the factory floor to WCB Expo.
-            </p>
-            <div className="hero-actions">
-              <Link className="button" href="/wcb-expo">
-                Explore WCB Expo
-              </Link>
-              <Link className="editorial-hero-secondary" href="/contact">
-                Work With WCB
-              </Link>
-            </div>
+    <div className="glacier-home">
+      <section className="glacier-hero" aria-labelledby="home-title">
+        <div className="container glacier-hero-heading">
+          <h1 id="home-title">Inside the global cleaning industry.</h1>
+          <div>
+            <p className="glacier-hero-lead">The companies. The people.<br />The opportunities ahead.</p>
+            <p className="glacier-hero-description">Independent analysis, product intelligence and real industry connections — from the factory floor to WCB Expo.</p>
           </div>
-          <figure className="editorial-hero-media">
-            <div className="editorial-hero-scene">
-              <Image
-                src="/images/industry/about-forum-stage-2025.jpg"
-                alt="Denny You speaking to cleaning industry professionals at a 2025 forum"
-                width={1440}
-                height={960}
-                priority
-                sizes="(max-width: 900px) calc(100vw - 40px), (max-width: 1440px) 45vw, 640px"
-              />
-            </div>
-            <figcaption className="editorial-hero-caption">
-              <span>ON THE GROUND</span>
-              <p>Conversations that connect an industry.</p>
-              <small>Cleaning industry forum · 2025</small>
-            </figcaption>
-          </figure>
         </div>
-        <div className="editorial-hero-foot">
-          <div className="container">
-            <span>Independent perspectives. Practical connections.</span>
-            <Link className="home-quiet-link" href="#founder-journal">
-              Follow the founder’s journey
-            </Link>
+        <figure className="glacier-hero-media">
+          <Image src="/images/industry/home-expo-networking-2025.jpg"
+            alt="Visitors and suppliers meeting at a previous WCB cleaning industry gathering in 2025"
+            width={2200} height={1467} priority sizes="100vw" />
+          <figcaption>WCB industry gathering · 2025</figcaption>
+        </figure>
+        <div className="glacier-expo-strip" aria-labelledby="home-wcb-expo-title">
+          <div className="container glacier-expo-inner">
+            <div><strong>WCB Expo 2026</strong><h2 id="home-wcb-expo-title">Meet the Industry in Suzhou</h2></div>
+            <p>Discover cleaning products and meet brands, manufacturers, suppliers and professional buyers.</p>
+            <div className="glacier-expo-date"><strong>18–20 November 2026</strong><span>Suzhou Shishan Convention Center · Suzhou, China</span></div>
+            <div className="glacier-expo-actions">
+              <TallyButton ctaLocation="home_wce_exhibitor" form="wceExhibitor" inquiryIntent="exhibitor_interest">Exhibit / Partner</TallyButton>
+              <div><TallyButton className="glacier-text-link" ctaLocation="home_wce_visitor" form="wceVisitor" inquiryIntent="visitor_interest">Plan Your Visit</TallyButton><Link className="glacier-text-link" href="/wcb-expo">Explore WCB Expo</Link></div>
+            </div>
           </div>
         </div>
       </section>
       {latestFounderSeries && (
         <section
-          className="editorial-journal"
+          className="glacier-journal"
           id="founder-journal"
           aria-label="Denny You's founder journal"
         >
@@ -160,87 +135,25 @@ export default function HomePage() {
             <div className="refresh-news-list">
               <h3>Latest Industry News</h3>
               <div className="editorial-news-stack">
-                {news.map(({ article: item, visual }) => {
-                  const partnerBrands = visual.kind === "brand"
-                    ? item.brandSlugs.flatMap((slug) => brands.filter((brand) => brand.slug === slug)).slice(0, 2)
-                    : [];
-                  return (
-                    <article key={item.slug}>
-                      <Link
-                        className={`editorial-news-thumb${partnerBrands.length > 1 ? " editorial-news-partners" : ""}`}
-                        href={`/news/${item.slug}`}
-                        aria-label={item.title}
-                      >
-                        {partnerBrands.length > 1 ? partnerBrands.map((brand) => (
-                          <img key={brand.slug} src={brand.logoImage} alt={brand.logoImageAlt} width={320} height={180} loading="lazy" decoding="async" />
-                        )) : visual.kind === "product" ? (
-                          <img {...responsiveImageProps(visual.src, "card")} alt={visual.alt} />
-                        ) : (
-                          <img src={visual.src} alt={visual.alt} width={320} height={180} loading="lazy" decoding="async" />
-                        )}
-                      </Link>
-                      <div className="editorial-news-copy">
-                        <span className="eyebrow">{newsTopicLabel(item.topic)}</span>
-                        <h3><Link href={`/news/${item.slug}`}>{item.title}</Link></h3>
-                        <p>{item.excerpt}</p>
-                        <time className="refresh-meta" dateTime={item.eventDate}>{newsDate(item.eventDate)}</time>
-                      </div>
-                    </article>
-                  );
-                })}
+                {news.map(({ article: item }) => (
+                  <article key={item.slug}>
+                    <div className="editorial-news-visual"><Link className="editorial-news-thumb" href={`/news/${item.slug}`} aria-label={item.title}>
+                      <NewsImage article={item} />
+                    </Link><NewsImageCaption article={item} /></div>
+                    <div className="editorial-news-copy">
+                      <span className="eyebrow">{newsTopicLabel(item.topic)}</span>
+                      <h3><Link href={`/news/${item.slug}`}>{item.title}</Link></h3>
+                      <p>{item.excerpt}</p>
+                      <time className="refresh-meta" dateTime={item.eventDate}>{newsDate(item.eventDate)}</time>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section
-        className="refresh-section editorial-expo"
-        aria-labelledby="home-wcb-expo-title"
-      >
-        <div className="container refresh-expo">
-          <Image
-            src="/images/industry/home-expo-networking-2025.jpg"
-            alt="Visitors meeting at a previous WCB industry gathering"
-            width={1440}
-            height={960}
-            sizes="(max-width: 760px) 92vw, 45vw"
-            loading="lazy"
-          />
-          <div>
-            <p className="eyebrow">WCB Expo 2026</p>
-            <h2 id="home-wcb-expo-title">Meet the Industry in Suzhou</h2>
-            <p>
-              Discover cleaning products and meet brands, manufacturers,
-              suppliers and professional buyers.
-            </p>
-            <p className="refresh-expo-date">
-              <strong>18–20 November 2026</strong>
-              <br />
-              Suzhou Shishan Convention Center · Suzhou, China
-            </p>
-            <div className="hero-actions">
-              <TallyButton
-                ctaLocation="home_wce_exhibitor"
-                form="wceExhibitor"
-                inquiryIntent="exhibitor_interest"
-              >
-                Exhibit / Partner
-              </TallyButton>
-              <TallyButton
-                className="button-secondary"
-                ctaLocation="home_wce_visitor"
-                form="wceVisitor"
-                inquiryIntent="visitor_interest"
-              >
-                Plan Your Visit
-              </TallyButton>
-            </div>
-            <Link href="/wcb-expo" className="refresh-card-link home-quiet-link">
-              Explore WCB Expo
-            </Link>
-          </div>
-        </div>
-      </section>
+      <BusinessServices />
       <section className="refresh-section refresh-soft" id="featured-analysis">
         <div className="container">
           <div className="refresh-section-head">
@@ -335,7 +248,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <BusinessServices />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }}

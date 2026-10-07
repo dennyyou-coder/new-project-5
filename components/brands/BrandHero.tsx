@@ -5,7 +5,6 @@ import {
 } from "@/lib/brands";
 import { formatBrandDate } from "@/lib/brandDates";
 import { getBrandCategoryForProfile } from "@/lib/brandCategories";
-import { BrandDataTable } from "./BrandDataTable";
 import { BrandLogo } from "./BrandLogo";
 
 export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; hasAnalysis: boolean }) {
@@ -18,6 +17,7 @@ export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; has
       ? `Part of ${profile.ownership.parentCompany}`
       : "See verified ownership analysis");
   const keyFacts = [
+    { fact: "Brand", detail: profile.name },
     {
       fact: "Legal entity scope",
       detail: legalEntityScope
@@ -34,6 +34,7 @@ export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; has
       fact: "Founded",
       detail: profile.founded
     },
+    { fact: "Main businesses", detail: profile.productPortfolio.map((item) => item.name).join(" · ") },
     {
       fact: "Official website",
       detail: (
@@ -77,13 +78,11 @@ export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; has
               </Link>
             ) : null}
             <h1>{profile.name}</h1>
-            <p>{profile.headline}</p>
+            <p className="company-positioning">{profile.headline}</p>
             <p>
               First published {formatBrandDate(profile.publishedAt, "long")} · Last verified{" "}
               {formatBrandDate(profile.lastVerified, "long")}
             </p>
-            <p>{profile.description}</p>
-            <p>{profile.disclaimer}</p>
           </div>
 
           {profile.heroImage ? (
@@ -102,23 +101,18 @@ export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; has
         </div>
 
         <div className="brand-key-facts">
-          <BrandDataTable
-            caption="Key facts"
-            columns={[
-              { key: "fact", label: "Fact" },
-              { key: "detail", label: "Details" }
-            ]}
-            rows={keyFacts}
-          />
+          <dl className="company-overview-facts" aria-label="Key facts">{keyFacts.map(({ fact, detail }) => <div key={fact}><dt>{fact}</dt><dd>{detail}</dd></div>)}</dl>
         </div>
 
+        <details className="company-profile-context"><summary>About this profile &amp; verification</summary><p>{profile.description}</p><p>{profile.disclaimer}</p></details>
+
         <nav className="brand-section-nav" aria-label="Brand profile sections">
-          <a href="#company-ownership">Ownership</a>
           <a href="#product-portfolio">Products</a>
-          <a href="#manufacturing-channels">Supply Chain</a>
           <a href="#competitive-position">Competition</a>
+          <a href="#manufacturing-channels">Supply Chain</a>
+          <a href="#company-ownership">Ownership</a>
           <a href="#timeline">Timeline</a>
-          {hasAnalysis ? <a href="#analysis">Analysis</a> : null}
+          {hasAnalysis ? <a href="#analysis">Articles &amp; News</a> : null}
           <a href="#sources">Sources</a>
         </nav>
       </div>

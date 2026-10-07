@@ -8,6 +8,7 @@ import "./styles/design-a-foundations.css";
 import "./styles/design-a-home.css";
 import "./styles/design-a-directories.css";
 import "./styles/design-a-details.css";
+import "./styles/approved-foundations.css";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#E3ECF3",
+  themeColor: "#DCE4EB",
   colorScheme: "light"
 };
 
@@ -86,7 +87,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body className={`structure-refresh design-a ${manrope.variable}`}>
+      <body className={`structure-refresh design-a approved-design ${manrope.variable}`}>
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>

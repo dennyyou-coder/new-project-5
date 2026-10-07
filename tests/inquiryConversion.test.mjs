@@ -9,6 +9,7 @@ import {
 
 const sourcingSource = await readFile(new URL("../app/sourcing/page.tsx", import.meta.url), "utf8");
 const contactSource = await readFile(new URL("../app/contact/page.tsx", import.meta.url), "utf8");
+const contactChoiceSource = await readFile(new URL("../components/ContactProjectInquiry.tsx", import.meta.url), "utf8");
 const definitionSource = await readFile(new URL("../lib/inquiryConversion.ts", import.meta.url), "utf8");
 const globalStyles = readRouteStyles("sourcing.css");
 const leadFormsSource = await readFile(new URL("../components/LeadForms.tsx", import.meta.url), "utf8");
@@ -52,8 +53,11 @@ test("Sourcing links all six live product opportunity pages without nested main"
 });
 
 test("Contact renders one four-intent tracked choice set", () => {
-  assert.match(contactSource, /CONTACT_INQUIRIES\.map/);
-  assert.match(contactSource, /inquiryType=\{item\.value\}/);
+  assert.match(contactSource, /<ContactProjectInquiry/);
+  assert.match(contactChoiceSource, /CONTACT_INQUIRIES\.map/);
+  assert.match(contactChoiceSource, /inquiryType=\{selected\?\.value \|\| "general"\}/);
+  assert.equal((contactChoiceSource.match(/<TallyInlineEmbed /g) || []).length, 1);
+  assert.match(contactChoiceSource, /id="project-form"/);
   assert.doesNotMatch(contactSource, /inquiryRoutes/);
   assert.doesNotMatch(contactSource, /target="_blank"/);
   assert.doesNotMatch(contactSource, /ContactForm/);

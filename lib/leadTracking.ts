@@ -133,12 +133,16 @@ export function createLeadAttribution({
 
 export function buildContactFallbackUrl({
   conversion_group,
-  cta_location
-}: Pick<LeadAttribution, "conversion_group" | "cta_location">): string {
+  cta_location,
+  form_type
+}: Pick<LeadAttribution, "conversion_group" | "cta_location"> & Partial<Pick<LeadAttribution, "form_type">>): string {
   const params = new URLSearchParams({
     intent: conversion_group,
     source: cta_location
   });
+
+  if (form_type === "wce_exhibitor") params.set("inquiry", "expo_exhibitor");
+  if (form_type === "wce_visitor") params.set("inquiry", "expo_visitor");
 
   return `/contact?${params.toString()}`;
 }

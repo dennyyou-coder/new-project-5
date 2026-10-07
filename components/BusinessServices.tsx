@@ -28,34 +28,27 @@ export function BusinessServiceIcon({ value }: { value: string }) {
   );
 }
 
+const servicePhotos: Record<string, { src: string; alt: string }> = {
+  sourcing: { src: "/images/site-refresh/about/about-product-supplier-work.webp", alt: "Cleaning industry component samples" },
+  general: { src: "/images/site-refresh/about/about-expo-connections.webp", alt: "Industry professionals exchanging contacts" },
+  expo: { src: "/images/industry/expo-hall-shenzhen-2026.jpg", alt: "Visitors at a previous cleaning industry exhibition" },
+  media: { src: "/images/site-refresh/about/about-industry-analysis.webp", alt: "A cleaning industry presentation" },
+};
+
 export function BusinessServices() {
   return (
-    <section
-      className="refresh-section"
-      id="business-cooperation"
-      aria-labelledby="business-services-title"
-    >
-      <div className="container">
-        <div className="refresh-section-head">
-          <div>
-            <p className="eyebrow">Work with WCB</p>
-            <h2 id="business-services-title">Business Cooperation</h2>
-          </div>
+    <section className="glacier-business" id="business-cooperation" aria-labelledby="business-services-title">
+      <div className="container glacier-business-inner">
+        <div className="glacier-business-intro">
+          <p className="eyebrow">Work with WCB</p>
+          <h2 id="business-services-title">Business Cooperation</h2>
           <Link className="button" href="/contact">Discuss your project</Link>
         </div>
-        <div className="refresh-business-grid">
-          {CONTACT_INQUIRIES.map((item, index) => (
-            <article
-              className="refresh-business-card"
-              key={item.value}
-            >
-              <div className="business-service-top">
-                <BusinessServiceIcon value={item.value} />
-                <span className="business-service-number">0{index + 1}</span>
-              </div>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-              <Link className="home-quiet-link business-service-button" href={`/contact#${item.value}`}>{item.buttonLabel}</Link>
+        <div className="glacier-services-grid">
+          {CONTACT_INQUIRIES.map((item) => (
+            <article className="glacier-service" key={item.value}>
+              <img src={servicePhotos[item.value].src} alt={servicePhotos[item.value].alt} width={208} height={152} loading="lazy" decoding="async" />
+              <div><h3>{item.title}</h3><p>{item.description}</p></div>
             </article>
           ))}
         </div>

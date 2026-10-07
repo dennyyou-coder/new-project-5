@@ -6,7 +6,7 @@ export function BrandCategoryPage({ data }: { data: BrandCategoryPageData }) {
   const { category, profiles } = data;
 
   return (
-    <div className="guides-hub brand-hub brand-category-page">
+    <div className="guides-hub brand-hub brand-category-page approved-catalog">
       <section className="guides-hero">
         <div className="insights-page-container brand-directory-hero">
           <div>

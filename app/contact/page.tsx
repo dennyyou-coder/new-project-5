@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import "../styles/trust.css";
-import { TallyButton } from "@/components/LeadForms";
-import { InlineIcon } from "@/components/Icon";
-import { BusinessServiceIcon } from "@/components/BusinessServices";
-import { CONTACT_INQUIRIES } from "@/lib/inquiryConversion";
+import { ContactProjectInquiry } from "@/components/ContactProjectInquiry";
+import "../styles/approved-platform.css";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -27,104 +23,33 @@ export const metadata: Metadata = {
   },
 };
 
-const inquiryContext = [
-  "Your company and target market",
-  "Product category or business objective",
-  "Current project stage and timeline",
-  "The decision, supplier or connection you need",
-];
-
-export default function ContactPage() {
+type ContactSearchParams = { inquiry?: string | string[]; intent?: string | string[] };
+export default async function ContactPage({ searchParams }: { searchParams: Promise<ContactSearchParams> }) {
+  const query = await searchParams;
+  const requested = typeof query.inquiry === "string" ? query.inquiry : "";
+  const fallbackIntent = typeof query.intent === "string" ? query.intent : "";
+  const initialInquiry = requested || (fallbackIntent === "sourcing" ? "sourcing" : fallbackIntent === "expo" ? "expo" : "");
   return (
-    <>
-      <section className="page-hero page-hero-contact contact-visual-refresh">
-        <div className="container">
-          <p className="eyebrow">Contact World Clean Biz</p>
-          <h1>Work With World Clean Biz</h1>
-          <p>
-            Choose a cooperation area and tell us about your company, market and
-            project.
-          </p>
-        </div>
-      </section>
-
-      <section className="section contact-inquiry-section" id="inquiry-form">
-        <div className="container">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">Inquiry Types</p>
-              <h2>Business Cooperation</h2>
-              <p>Four ways to work with WCB.</p>
-            </div>
-          </div>
-          <div className="case-grid contact-help-grid refresh-business-grid">
-            {CONTACT_INQUIRIES.map((item, index) => (
-              <div id={item.value} key={item.value}>
-                <TallyButton
-                  className="case-card contact-help-card"
-                  ctaLocation={item.ctaLocation}
-                  form={item.form}
-                  inquiryType={item.value}
-                  key={item.value}
-                  trackClick
-                >
-                  <span className="contact-help-card-number">0{index + 1}</span>
-                  <BusinessServiceIcon value={item.value} />
-                  <span className="contact-help-card-copy">
-                    <strong>{item.title}</strong>
-                    <span>{item.description}</span>
-                    <em>{item.buttonLabel}</em>
-                  </span>
-                </TallyButton>
-              </div>
-            ))}
+    <div className="approved-platform contact-page">
+      <section className="contact-hero mist"><div className="container">
+        <p className="eyebrow">Contact World Clean Biz</p><h1>Work With World Clean Biz</h1>
+        <p className="hero-intro">Choose a cooperation area and tell us about your company, market and project.</p>
+      </div></section>
+      <ContactProjectInquiry initialInquiry={initialInquiry} />
+      <section className="contact-preparation" aria-labelledby="contact-preparation-title">
+        <div className="container contact-preparation-layout">
+          <figure className="denny-card">
+            <img src="/images/site-refresh/about/about-hero-denny.webp" alt="Denny You discussing cleaning industry sourcing with suppliers" loading="lazy" width={1600} height={1200} />
+            <figcaption className="denny-identity"><strong>Denny You</strong><span>Founder, World Clean Biz · Organizer, WCB Expo</span><small>Inside the cleaning industry since 2006</small></figcaption>
+          </figure>
+          <div className="preparation-copy">
+            <p className="eyebrow">What Happens Next</p><h2 id="contact-preparation-title">What To Include In Your Inquiry</h2>
+            <p>Clear context helps World Clean Biz understand your objective and route the request correctly.</p>
+            <ol className="contact-context-list"><li>Your company and target market</li><li>Product category or business objective</li><li>Current project stage and timeline</li><li>The decision, supplier or connection you need</li></ol>
+            <p className="contact-response-note">World Clean Biz reviews each relevant inquiry and routes it to the relevant team based on sourcing, Expo, media, or business intent.</p>
           </div>
         </div>
       </section>
-
-      <div className="container refresh-contact-links">
-        <Link href="/sourcing">Explore sourcing services</Link>
-        <Link href="/wcb-expo">View WCB Expo information</Link>
-      </div>
-      <section className="contact-response-section">
-        <div className="container contact-response-layout">
-          <div className="contact-response-visual">
-            <img
-              alt="Denny You discussing cleaning industry sourcing with suppliers"
-              src="/images/site-refresh/about/about-hero-denny.webp"
-            />
-            <div className="contact-response-identity">
-              <strong>Denny You</strong>
-              <span>Founder, World Clean Biz · Organizer, WCB Expo</span>
-              <small>Inside the cleaning industry since 2006</small>
-            </div>
-          </div>
-          <div className="contact-response-copy">
-            <div className="section-head">
-              <div>
-                <p className="eyebrow">
-                  <InlineIcon name="send" />
-                  What Happens Next
-                </p>
-                <h2>What To Include In Your Inquiry</h2>
-                <p>
-                  Clear context helps World Clean Biz understand your objective
-                  and route the request correctly.
-                </p>
-              </div>
-            </div>
-            <ul className="contact-context-list">
-              {inquiryContext.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <p className="contact-response-note">
-              World Clean Biz reviews each relevant inquiry and routes it to the
-              relevant team based on sourcing, Expo, media, or business intent.
-            </p>
-          </div>
-        </div>
-      </section>
-    </>
+    </div>
   );
 }

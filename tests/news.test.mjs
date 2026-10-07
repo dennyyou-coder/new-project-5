@@ -1,7 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { getNews, getNewsContext, getNewsVisual, selectNews, newsHref, NEWS_PAGE_SIZE } from "../lib/news.ts";
+import { getNews, getNewsContext, getNewsVisual, getRelatedNewsForArticle, selectNews, newsHref, NEWS_PAGE_SIZE } from "../lib/news.ts";
+import { newsStoryVisuals, newsCompanyVisuals } from "../lib/newsVisuals.ts";
 import { getInsights } from "../lib/content.ts";
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
 import { productModels } from "../lib/products.ts";
@@ -22,21 +23,32 @@ test("news separates publication from announcement dates and resolves every comp
     assert.ok(article.relatedArticles.every((slug) => insights.some((item) => item.slug === slug)));
     const context = getNewsContext(article);
     const visual = getNewsVisual(article);
-    if (article.brandSlugs.length === 0 && !article.imageProduct) {
-      // Industry statistics and companies without a profile must not borrow an unrelated image.
-      assert.equal(visual, undefined, `${article.slug}: unrelated news visual`);
-    } else {
-      assert.ok(visual && fs.existsSync(`public${visual.src}`), `${article.slug}: news visual missing`);
+    assert.ok(visual, `${article.slug}: every news row has a verified image or labeled WCB archive context`);
+    if (visual) {
+      assert.ok(["product", "company", "coverage", "event", "context"].includes(visual.kind));
+      assert.ok(visual.caption && visual.label && visual.sourceUrl, `${article.slug}: media context missing`);
+      assert.ok(!/\/logo[.-]/i.test(visual.src), `${article.slug}: logo used as news image`);
+      if (visual.src.startsWith("/")) assert.ok(fs.existsSync(`public${visual.src}`), `${article.slug}: missing image`);
+      else assert.match(visual.src, /^https:\/\//);
     }
     if (article.imageProduct) {
       assert.ok(article.productSlugs.includes(article.imageProduct));
       assert.ok(context.image);
       assert.ok(fs.existsSync(`public${context.image.coverImage}`), `${article.slug}: image missing`);
-      assert.equal(visual.kind, "product");
-      assert.equal(visual.src, context.image.coverImage);
-    } else if (article.brandSlugs.length > 0) {
-      assert.equal(visual.kind, "brand");
-      assert.ok(context.brands.some((brand) => brand.logoImage === visual.src), `${article.slug}: unrelated company visual`);
+      if (!newsStoryVisuals[article.slug]) {
+        assert.equal(visual.kind, "product");
+        assert.equal(visual.src, context.image.coverImage);
+      }
+    } else if (visual.kind === "context") {
+      assert.equal(visual.label, "Industry context");
+      assert.match(visual.caption, /2025.*not a photograph of this news event/);
+      assert.equal(visual.src, "/images/industry/about-forum-audience-2025.jpg");
+    } else if (visual && !newsStoryVisuals[article.slug]) {
+      assert.ok(article.brandSlugs.some((slug) => newsCompanyVisuals[slug] === visual), `${article.slug}: unrelated company visual`);
+      if (visual.relatedArticleSlug) {
+        const related = insights.find((item) => item.slug === visual.relatedArticleSlug);
+        assert.ok(related && related.primaryBrands.some((slug) => article.brandSlugs.includes(slug)), `${article.slug}: unrelated coverage`);
+      }
     }
     for (const [, href] of article.content.matchAll(/\]\((\/[^)]+)\)/g)) {
       if (href.startsWith("/brands/")) assert.ok(brands.has(href.slice(8)), href);
@@ -90,4 +102,18 @@ test("news has independent URLs in the sitemap and does not enter Blog collectio
     assert.ok(sitemap.some((entry) => entry.url === `https://worldcleanbiz.com/news/${article.slug}`));
     assert.ok(!insights.some((item) => item.slug === article.slug));
   }
+});
+
+test("article news links use explicit published article or brand relationships", () => {
+  const insights = getInsights();
+  for (const article of insights) {
+    const related = getRelatedNewsForArticle(article);
+    assert.ok(related.length <= 3);
+    for (const news of related) {
+      assert.ok(news.relatedArticles.includes(article.slug) || news.brandSlugs.some(slug => article.primaryBrands.includes(slug)));
+    }
+  }
+  const miele = insights.find(article => article.slug === "miele-two-families-company-story");
+  assert.ok(miele);
+  assert.equal(getRelatedNewsForArticle(miele).length, 0, "do not invent Miele news");
 });

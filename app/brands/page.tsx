@@ -1,3 +1,4 @@
+import { BrandDirectory } from "@/components/brands/BrandDirectory";
 import type { Metadata } from "next";
 import { BrandDirectoryCard } from "@/components/brands/BrandDirectoryCard";
 import { getPublishedBrandCategories } from "@/lib/brandCategories";
@@ -51,7 +52,7 @@ export default function BrandsPage() {
   const schemas = buildBrandDirectorySchemas(profiles, siteUrl);
 
   return (
-    <div className="guides-hub brand-hub">
+    <div className="guides-hub brand-hub approved-catalog">
       <section className="guides-hero">
         <div className="insights-page-container">
           <p className="eyebrow">Independent brand research</p>
@@ -63,38 +64,20 @@ export default function BrandsPage() {
           <p className="refresh-meta">
             {profiles.length} published brand profiles
           </p>
-          <nav className="refresh-category-links" aria-label="Brand categories">
-            {categories.map(({ category }) => (
-              <a href={`#${category.slug}`} key={category.slug}>
-                {category.name}
-              </a>
-            ))}
-          </nav>
+
         </div>
       </section>
 
-      {categories.map((data, index) => (
-        <section
-          className={`section brand-category-list${index % 2 === 1 ? " brand-category-list--soft" : ""}`}
-          id={data.category.slug}
-          key={data.category.slug}
-        >
-          <div className="insights-page-container">
-            <div className="brand-category-list__intro">
-              <div>
-                <p className="eyebrow">Buying category</p>
-                <h2>{data.category.name}</h2>
-                <p>{data.category.description}</p>
-              </div>
-            </div>
-            <div className="guides-featured-grid brand-directory-grid">
-              {data.profiles.map((profile) => (
-                <BrandDirectoryCard key={profile.slug} profile={profile} />
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
+      <BrandDirectory categories={categories.map((data) => ({
+        slug: data.category.slug,
+        name: data.category.name,
+        description: data.category.description,
+        profiles: data.profiles.map((profile) => ({
+          slug: profile.slug,
+          search: [profile.name, profile.slug, ...profile.aliases].join(" ").toLowerCase(),
+          card: <BrandDirectoryCard key={profile.slug} profile={profile} />,
+        })),
+      }))} />
 
       <div className="insights-page-container refresh-directory-note">
         <p>

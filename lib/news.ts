@@ -3,6 +3,8 @@ import path from "node:path";
 import { parseFrontmatter, getInsights } from "@/lib/content";
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { productModels, getProduct } from "@/lib/products";
+import { newsCompanyVisuals, newsStoryVisuals, newsIndustryContextVisual, type NewsVisual } from "@/lib/newsVisuals";
+import type { Insight } from "@/lib/content";
 
 export const NEWS_TOPICS = [
   { slug: "products", label: "Products" },
@@ -32,7 +34,7 @@ export type NewsArticle = {
   content: string;
 };
 
-// News is plain Markdown; any illustration reuses an already prepared product image.
+// News remains plain Markdown; image relationships are reviewed separately in newsVisuals.
 const directory = path.join(process.cwd(), "content", "news");
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const array = (value: unknown): string[] => Array.isArray(value) ? value.map(String) : [];
@@ -99,13 +101,27 @@ export function getNewsContext(article: NewsArticle) {
   };
 }
 
-export function getNewsVisual(article: NewsArticle) {
+export function getNewsVisual(article: NewsArticle): NewsVisual | undefined {
+  const storyVisual = newsStoryVisuals[article.slug];
+  if (storyVisual) return storyVisual;
   if (article.imageProduct && article.productSlugs.includes(article.imageProduct)) {
     const product = getProduct(article.imageProduct);
-    if (product) return { src: product.coverImage, alt: product.name, kind: "product" as const };
+    if (product) return {
+      src: product.coverImage, alt: product.name, kind: "product", prepared: true, fit: "contain",
+      label: "Product reference", caption: `Model pictured: ${product.name}. Product reference image.`,
+      sourceUrl: `/products/${product.slug}`, sourceLabel: "Product profile and sources"
+    };
   }
-  const brand = getPublishedBrandProfiles(getInsights()).find((item) => article.brandSlugs.includes(item.slug));
-  return brand ? { src: brand.logoImage, alt: brand.logoImageAlt, kind: "brand" as const } : undefined;
+  // Only use an explicit brand relationship. Never infer a model or fall back to a logo.
+  return article.brandSlugs.map((slug) => newsCompanyVisuals[slug]).find(Boolean) || newsIndustryContextVisual;
+}
+
+export function getRelatedNewsForArticle(article: Pick<Insight, "slug" | "primaryBrands">, limit = 3) {
+  const brands = new Set(article.primaryBrands);
+  return getNews()
+    .filter((item) => item.relatedArticles.includes(article.slug) || item.brandSlugs.some((slug) => brands.has(slug)))
+    .sort((a, b) => Number(b.relatedArticles.includes(article.slug)) - Number(a.relatedArticles.includes(article.slug)) || b.eventDate.localeCompare(a.eventDate) || b.sortDate.localeCompare(a.sortDate))
+    .slice(0, limit);
 }
 
 export const NEWS_PAGE_SIZE = 12;

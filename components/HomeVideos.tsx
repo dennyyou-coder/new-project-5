@@ -36,6 +36,39 @@ const videos = [
 export function HomeVideos({ library = false }: { library?: boolean }) {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
+  if (library) {
+    const featured = videos.find((video) => video.key === "bissell")!;
+    const remaining = videos.filter((video) => video.key !== featured.key);
+    const youtubeMark = <svg viewBox="0 0 28 20" width="28" height="20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="currentColor" /><path d="m11 5 8 5-8 5z" fill="#fff" /></svg>;
+    const player = (video: (typeof videos)[number], eager = false) => activeVideo === video.key ? (
+      <iframe className="video-frame" src={`https://www.youtube-nocookie.com/embed/${video.videoId}?autoplay=1&playsinline=1&rel=0`} title={video.title} allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+    ) : (
+      <button className="video-poster" type="button" onClick={() => setActiveVideo(video.key)} aria-label={`Play ${video.title}`}>
+        <img src={video.poster} alt={`${video.title} — original video cover`} width={1280} height={720} loading={eager ? "eager" : "lazy"} decoding="async" />
+        <span className="video-play" aria-hidden="true">{youtubeMark}</span><span className="video-duration">{video.duration}</span>
+      </button>
+    );
+    return <>
+      <section className="video-intro mist">
+        <div className="container video-intro-row">
+          <div><p className="eyebrow">Watch with Denny</p><h1>Video Insights</h1><p className="intro-line">Company stories, product strategy and the business of cleaning.</p><p className="video-language">Mandarin audio · English &amp; Chinese subtitles</p></div>
+          <div className="video-channel"><a className="youtube-button" href="https://www.youtube.com/@WCBdenny/videos" target="_blank" rel="noopener noreferrer">{youtubeMark} More on YouTube</a><Link className="text-link" href="/about">About Denny You</Link></div>
+        </div>
+      </section>
+      <section className="section video-library" aria-label="Company Analysis">
+        <div className="container">
+          <article className="video-feature">
+            {player(featured, true)}
+            <div className="video-feature-copy"><p className="eyebrow">Company Analysis</p><h2>{featured.title}</h2><p>{featured.description}</p><span className="video-meta">Denny You · {featured.duration}</span><a className="youtube-button" href={`https://www.youtube.com/watch?v=${featured.videoId}`} target="_blank" rel="noopener noreferrer">{youtubeMark} Watch on YouTube</a></div>
+          </article>
+          <div className="grid two">{remaining.map((video) => <article className="video-card" key={video.key}>
+            {player(video)}<div className="video-copy"><p className="video-meta">Company Analysis · {video.duration}</p><h3>{video.title}</h3><p>{video.description}</p></div>
+          </article>)}</div>
+        </div>
+      </section>
+    </>;
+  }
+
   return (
     <section
       className="home-videos home-v9-container"

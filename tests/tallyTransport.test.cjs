@@ -41,8 +41,9 @@ function harness({ widget = true } = {}) {
   modules['@/lib/tallySubmission'] = load('lib/tallySubmission.ts');
   modules['@/lib/tallyForms'] = load('lib/tallyForms.ts');
   modules['./TallyFallbackDialog'] = load('components/TallyFallbackDialog.tsx');
-  const { TallyButton } = load('components/LeadForms.tsx');
-  return { events, listeners, refs, effects, modules, popup: () => popup,
+  const { TallyButton, TallyInlineEmbed } = load('components/LeadForms.tsx');
+  return { events, listeners, refs, effects, modules, window, popup: () => popup,
+    renderInline(props = {}) { si = ri = 0; return TallyInlineEmbed({ form: 'contact', ctaLocation: 'contact_general', sourcePage: '/contact', title: 'Inquiry', ...props }); },
     render(form = 'sourcing') { si = ri = 0; return TallyButton({ form, ctaLocation: 'qa', children: 'Open' }); },
     renderDialog(props) { si = ri = 0; return modules['./TallyFallbackDialog'].TallyFallbackDialog(props); }
   };
@@ -94,5 +95,60 @@ test('fallback accepts only the expected Tally frame and form, parses strings sa
 
 test('exhibitor CTA uses the independent exhibitor form', () => {
   const source = fs.readFileSync(path.join(root, 'app/wcb-expo/page.tsx'), 'utf8');
-  assert.match(source, /ctaLocation="wcb_expo_exhibitor_interest"\s+form="wceExhibitor"/);
+  assert.match(source, /href="\/contact\?inquiry=expo_exhibitor#project-form"/);
+  const contact = fs.readFileSync(path.join(root, 'components/ContactProjectInquiry.tsx'), 'utf8');
+  assert.match(contact, /value: "expo_exhibitor"[^\n]+form: "wceExhibitor"/);
+  assert.match(contact, /value: "expo_visitor"[^\n]+form: "wceVisitor"/);
 });
+
+
+test('inline contact preserves route context and counts only confirmed expected-frame submissions', () => {
+  const h = harness();
+  h.window.location.pathname = '/contact';
+  h.window.location.search = '?inquiry=expo_exhibitor&utm_source=expo';
+  const props = { form: 'wceExhibitor', ctaLocation: 'contact_expo_exhibitor', inquiryType: 'expo_exhibitor', inquiryIntent: 'exhibitor_interest' };
+  let tree = h.renderInline(props);
+  let frameNode = tree.props.children[0];
+  let url = new URL(frameNode.props.src);
+  assert.equal(url.pathname, '/embed/XxklMV');
+  assert.equal(url.searchParams.get('source_page'), '/contact');
+  assert.equal(url.searchParams.get('inquiry_type'), 'expo_exhibitor');
+  const frame = {};
+  h.refs[1].current = { contentWindow: frame };
+  const cleanup = h.effects[0]();
+  tree = h.renderInline(props);
+  url = new URL(tree.props.children[0].props.src);
+  assert.equal(url.searchParams.get('utm_source'), 'expo');
+  assert.equal(url.searchParams.get('inquiry_intent'), 'exhibitor_interest');
+  const send = (data, origin = 'https://tally.so', source = frame) => h.listeners.message({ data, origin, source });
+  const submitted = JSON.stringify({ event: 'Tally.FormSubmitted', payload: { formId: 'XxklMV', id: 'contact-1', fields: ['private@example.com'] } });
+  send(submitted, 'https://evil.example');
+  send(submitted, 'https://tally.so', {});
+  send('invalid JSON');
+  send({ event: 'Tally.FormSubmitted', payload: { formId: 'different', id: 'record-1' } });
+  send({ event: 'Tally.FormSubmitted', payload: { formId: 'XxklMV' } });
+  assert.equal(h.events.length, 0);
+  const loaded = { event: 'Tally.FormLoaded', payload: { formId: 'XxklMV' } };
+  send(loaded); send(loaded); send(submitted); send(submitted);
+  assert.deepEqual(h.events.map(e => e[1]), ['form_open', 'form_submit', 'form_success']);
+  assert.equal(h.events.at(-1)[2].response_id, 'contact-1');
+  assert.equal(h.events.at(-1)[2].inquiry_type, 'expo_exhibitor');
+  assert(!JSON.stringify(h.events).includes('private@example.com'));
+  const fallback = tree.props.children[1].props.children.find(item => item?.type === 'a');
+  assert.equal(new URL(fallback.props.href).pathname, '/r/XxklMV');
+  cleanup(); assert(!h.listeners.message);
+});
+
+
+for (const [form, inquiry] of [['wceExhibitor', 'expo_exhibitor'], ['wceVisitor', 'expo_visitor']]) {
+  test(`${form}: widget failure keeps the same Expo intent in the Contact escape link`, async () => {
+    const h = harness({ widget: false });
+    await h.render(form).props.children[0].props.onClick();
+    const dialog = h.render(form).props.children.find(x => x?.type === h.modules['./TallyFallbackDialog'].TallyFallbackDialog);
+    assert(dialog);
+    const url = new URL(dialog.props.contactUrl, 'https://worldcleanbiz.com');
+    assert.equal(url.searchParams.get('inquiry'), inquiry);
+    assert.equal(url.searchParams.get('intent'), 'expo');
+    assert.equal(h.events.filter(e => e[1] === 'form_success').length, 0);
+  });
+}

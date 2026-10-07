@@ -83,7 +83,7 @@ export default function InsightsPage() {
       <section className="blog-home-intro">
         <div className="insights-page-container">
           <p className="eyebrow">World Clean Biz Intelligence</p>
-          <h1>Industry Insights</h1>
+          <h1>Cleaning Industry Analysis And Practical Guides.</h1>
           <p>
             Original industry intelligence and practical decision guides for buyers, brands, distributors and manufacturers.
           </p>
