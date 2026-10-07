@@ -30,7 +30,7 @@ function parseAttributes(tag) {
 }
 
 function articleMarkup(html) {
-  const start = html.search(/<article\b[^>]*class=(?:"[^"]*\b(?:blog-article-main|product-model-main)\b[^"]*"|'[^']*\b(?:blog-article-main|product-model-main)\b[^']*')[^>]*>/i);
+  const start = html.search(/<article\b[^>]*class=(?:"[^"]*\b(?:blog-article-main|product-model-main|news-article)\b[^"]*"|'[^']*\b(?:blog-article-main|product-model-main|news-article)\b[^']*')[^>]*>/i);
   if (start < 0) return null;
   const end = html.indexOf("</article>", start);
   return end < 0 ? null : html.slice(start, end + "</article>".length);
@@ -41,7 +41,7 @@ function imageTags(markup) {
 }
 
 function articleContentImageTags(markup) {
-  return [...markup.matchAll(/<figure\b[^>]*class=(?:"[^"]*\b(?:blog-article-cover|product-model-cover|article-inline-image)\b[^"]*"|'[^']*\b(?:blog-article-cover|product-model-cover|article-inline-image)\b[^']*')[^>]*>[\s\S]*?<\/figure>/gi)]
+  return [...markup.matchAll(/<figure\b[^>]*class=(?:"[^"]*\b(?:blog-article-cover|product-model-cover|news-cover|article-inline-image)\b[^"]*"|'[^']*\b(?:blog-article-cover|product-model-cover|news-cover|article-inline-image)\b[^']*')[^>]*>[\s\S]*?<\/figure>/gi)]
     .flatMap(([figure]) => imageTags(figure));
 }
 
@@ -140,13 +140,14 @@ export async function verifyBuiltArticleImages(options = {}) {
   for (const slug of Object.keys(manifest.articles ?? {}).sort()) {
     const article = manifest.articles[slug];
     const isProduct = fs.existsSync(path.join(paths.projectRoot, "content", "products", `${slug}.mdx`));
-    const route = isProduct ? "products" : "blog";
-    const htmlRoot = isProduct ? path.join(paths.buildRoot, "..", "products") : paths.buildRoot;
+    const isNews = fs.existsSync(path.join(paths.projectRoot, "content", "news", `${slug}.mdx`));
+    const route = isProduct ? "products" : isNews ? "news" : "blog";
+    const htmlRoot = route === "blog" ? paths.buildRoot : path.join(paths.buildRoot, "..", route);
     const htmlFile = path.join(htmlRoot, `${slug}.html`);
     if (!fs.existsSync(htmlFile)) {
       failures.push(finding(
         "BUILT_ARTICLE_MISSING",
-        `${slug}: built HTML actual missing ${htmlFile}; allowed Next 15 output ${path.join(paths.buildRoot, `${slug}.html`)}.`,
+        `${slug}: built HTML actual missing ${htmlFile}; allowed Next 15 output ${htmlFile}.`,
         { slug }
       ));
       continue;
