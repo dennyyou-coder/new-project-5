@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getNews, newsDate, newsTopicLabel } from "@/lib/news";
-import { NewsImage } from "@/components/news/NewsImage";
+import { NewsImage, NewsImageCaption } from "@/components/news/NewsImage";
 import "@/app/styles/home-news.css";
 
 export function HomeNews() {
@@ -15,8 +15,11 @@ export function HomeNews() {
         </div>
         <div className="home-news-grid">
           {articles.map((article) => (
-            <article className={article.imageProduct || article.brandSlugs.length ? "has-image" : undefined} key={article.slug}>
-              {article.imageProduct || article.brandSlugs.length ? <Link className="home-news-image" href={`/news/${article.slug}`} aria-label={article.title}><NewsImage article={article} /></Link> : null}
+            <article className="has-image" key={article.slug}>
+              <figure className="home-news-media">
+                <Link className="home-news-image" href={`/news/${article.slug}`} aria-label={article.title}><NewsImage article={article} /></Link>
+                <figcaption><NewsImageCaption article={article} /></figcaption>
+              </figure>
               <div className="home-news-copy">
                 <div className="home-news-meta"><span>{newsTopicLabel(article.topic)}</span></div>
                 <h3><Link href={`/news/${article.slug}`}>{article.title}</Link></h3>

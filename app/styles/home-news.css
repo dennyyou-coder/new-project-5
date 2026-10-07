@@ -31,3 +31,8 @@
   .home-v9 .home-news-bottom { gap: 4px; padding-top: 9px; }
 }
 @media (prefers-reduced-motion: reduce) { .home-v9 .home-news-image img { transition: none; } }
+
+.home-v9 .home-news-media { margin: 0; min-width: 0; }
+.home-v9 .home-news-media figcaption { padding: 8px 12px 0; color: var(--v9-muted); font-size: 11px; line-height: 1.5; overflow-wrap: anywhere; }
+.home-v9 .home-news-media figcaption a { text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 600px) { .home-v9 .home-news-media figcaption { padding: 6px 0 0; } }
