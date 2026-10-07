@@ -31,7 +31,7 @@ test("series hero provides latest episode and all episodes links", () => {
 });
 
 test("primary navigation groups analysis and practical guides", () => {
-  assert.match(headerSource, /href: "\/blog", label: "Analysis & Insights"/);
+  assert.match(headerSource, /href: "\/blog\/archive", label: "Deep Analysis"/);
   assert.match(headerSource, /href: "\/guides", label: "Practical Guides"/);
 });
 

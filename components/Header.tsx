@@ -7,7 +7,7 @@ const groups = [
   {
     label: "Insights",
     links: [
-      { href: "/blog", label: "Analysis & Insights" },
+      { href: "/blog/archive", label: "Deep Analysis" },
       {
         href: "/blog/series/building-worlds-no-1-cleaning-show-from-scratch",
         label: "Founder Series",
@@ -120,7 +120,7 @@ export function Header() {
                 <button
                   type="button"
                   data-group={group.label}
-                  data-current={group.links.some((link) => isCurrent(link.href)) || undefined}
+                  data-current={(group.label === "Insights" && isCurrent("/blog")) || group.links.some((link) => isCurrent(link.href)) || undefined}
                   aria-expanded={openGroup === group.label}
                   aria-controls={`nav-group-${index}`}
                   onClick={() =>

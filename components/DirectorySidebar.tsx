@@ -22,12 +22,27 @@ export type DirectorySidebarProps = {
 };
 
 export function DirectorySidebar({
+  mode,
+  navigationTitle,
+  navigationLinks,
   importantTitle,
   importantArticles,
   importantMeta,
 }: DirectorySidebarProps) {
   return (
     <>
+      {mode === "analysis" && navigationLinks.length ? (
+        <section className="content-directory-sidebar-box content-directory-company-index">
+          <h2>{navigationTitle}</h2>
+          <nav className="content-directory-keywords" aria-label="Filter analysis by company or brand">
+            {navigationLinks.map((link) => (
+              <Link key={link.href} href={link.href} className={link.active ? "active" : undefined} aria-current={link.active ? "page" : undefined}>
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </section>
+      ) : null}
       {importantArticles.length ? (
         <section className="content-directory-sidebar-box content-directory-important">
           <h2>{importantTitle}</h2>

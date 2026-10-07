@@ -2,45 +2,18 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { homeVideos as videos, videoLibrary, type WcbVideo } from "@/lib/wcbVideos";
 
-const videos = [
-  {
-    key: "ninebot",
-    videoId: "kCa9-2gsSVE",
-    title: "Segway-Ninebot: From Mobility to Robot Mowers",
-    description:
-      "From smart mobility to Navimow: the products and business behind Ninebot’s expansion.",
-    duration: "7:15",
-    poster: "https://i.ytimg.com/vi/kCa9-2gsSVE/hq720.jpg",
-  },
-  {
-    key: "bissell",
-    videoId: "7oKIOV_-S2c",
-    title: "BISSELL: CrossWave and Five Generations",
-    description:
-      "CrossWave, the BISSELL family story and the evolution of its cleaning business.",
-    duration: "10:48",
-    poster: "https://i.ytimg.com/vi/7oKIOV_-S2c/hq720.jpg",
-  },
-  {
-    key: "roborock",
-    videoId: "CXv_J_ffXS0",
-    title: "Roborock: From Xiaomi to Global Markets",
-    description:
-      "Roborock’s development from its Xiaomi beginnings to the global floorcare market.",
-    duration: "8:02",
-    poster: "https://i.ytimg.com/vi/CXv_J_ffXS0/hq720.jpg",
-  },
-] as const;
+
 
 export function HomeVideos({ library = false }: { library?: boolean }) {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
 
   if (library) {
-    const featured = videos.find((video) => video.key === "bissell")!;
-    const remaining = videos.filter((video) => video.key !== featured.key);
+    const featured = videoLibrary.find((video) => video.key === "bissell")!;
+    const remaining = videoLibrary.filter((video) => video.key !== featured.key);
     const youtubeMark = <svg viewBox="0 0 28 20" width="28" height="20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="currentColor" /><path d="m11 5 8 5-8 5z" fill="#fff" /></svg>;
-    const player = (video: (typeof videos)[number], eager = false) => activeVideo === video.key ? (
+    const player = (video: WcbVideo, eager = false) => activeVideo === video.key ? (
       <iframe className="video-frame" src={`https://www.youtube-nocookie.com/embed/${video.videoId}?autoplay=1&playsinline=1&rel=0`} title={video.title} allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
     ) : (
       <button className="video-poster" type="button" onClick={() => setActiveVideo(video.key)} aria-label={`Play ${video.title}`}>
@@ -55,14 +28,15 @@ export function HomeVideos({ library = false }: { library?: boolean }) {
           <div className="video-channel"><a className="youtube-button" href="https://www.youtube.com/@WCBdenny/videos" target="_blank" rel="noopener noreferrer">{youtubeMark} More on YouTube</a><Link className="text-link" href="/about">About Denny You</Link></div>
         </div>
       </section>
-      <section className="section video-library" aria-label="Company Analysis">
+      <section className="section video-library" aria-label="Industry video library">
         <div className="container">
           <article className="video-feature">
             {player(featured, true)}
             <div className="video-feature-copy"><p className="eyebrow">Company Analysis</p><h2>{featured.title}</h2><p>{featured.description}</p><span className="video-meta">Denny You · {featured.duration}</span><a className="youtube-button" href={`https://www.youtube.com/watch?v=${featured.videoId}`} target="_blank" rel="noopener noreferrer">{youtubeMark} Watch on YouTube</a></div>
           </article>
-          <div className="grid two">{remaining.map((video) => <article className="video-card" key={video.key}>
-            {player(video)}<div className="video-copy"><p className="video-meta">Company Analysis · {video.duration}</p><h3>{video.title}</h3><p>{video.description}</p></div>
+          <div className="section-head"><h2>More industry videos</h2></div>
+          <div className="video-library-grid">{remaining.map((video) => <article className="video-card" key={video.key}>
+            {player(video)}<div className="video-copy"><p className="video-meta">{video.category} · {video.duration}</p><h3>{video.title}</h3><p>{video.description}</p></div>
           </article>)}</div>
         </div>
       </section>
