@@ -10,9 +10,12 @@ eventDate: "2026-04-09"
 brand_slugs: ["wybot"]
 source_titles: ["WYBOT Recalls Selected Osprey 700 Max and S1 Pool Vacuums in the U.S. — original source"]
 source_urls: ["https://www.cpsc.gov/Recalls/2026/Wybotics-Recalls-Robotic-Pool-Vacuums-Due-to-Burn-and-Fire-Hazards"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-The U.S. Consumer Product Safety Commission announced a [WYBOT](/brands/wybot) pool-vacuum recall on April 9, 2026, covering approximately 5,000 units. The affected products are Osprey 700 Max models WY3312MAX and WY100MAX, and S1 model WY200, within the serial-number ranges listed in the official notice.
+The U.S. Consumer Product Safety Commission announced a recall of approximately 5,000 [WYBOT](/brands/wybot) pool vacuums on April 9, 2026, because their lithium-ion batteries could overheat and cause burns or fires. The notice covers selected Osprey 700 Max and S1 units.
 
-The CPSC said the lithium-ion batteries could overheat, creating burn and fire hazards. Wybotics had received ten overheating or fire reports, including nine instances of property damage; no injuries were reported.
+Affected model numbers are WY3312MAX and WY100MAX for Osprey 700 Max, and WY200 for S1. Coverage also depends on the serial number. The [official recall notice](https://www.cpsc.gov/Recalls/2026/Wybotics-Recalls-Robotic-Pool-Vacuums-Due-to-Burn-and-Fire-Hazards) provides the exact ranges and photographs showing the label inside the top cover, visible after removing the filter box. Owners need both the model and serial information to identify a recalled unit.
 
-Owners of affected units should stop using them and contact Wybotics for a free replacement C2 and return label. The recall is limited to the listed models and serial ranges; it does not cover every WYBOT product.
+Wybotics had received ten reports of overheating or fire, occurring both during charging and while the vacuums were not charging. Nine incidents involved property damage; no injuries were reported. The units sold through Amazon, Best Buy and Wybotpool.com for approximately $500–$700, with affected sales spanning parts of 2023 and 2024.
+
+Owners should stop using recalled units immediately and contact Wybotics for a free replacement WYBOT C2. The company provides a prepaid return label and says it will ship the replacement within fifteen days after receiving the returned vacuum. The remedy applies to the specified units, rather than the entire WYBOT range.

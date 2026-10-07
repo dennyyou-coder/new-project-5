@@ -10,9 +10,12 @@ eventDate: "2026-07-16"
 brand_slugs: ["roborock"]
 source_titles: ["Roborock Introduces Qrevo S Pro in UAE and Saudi Arabia — original source"]
 source_urls: ["https://www.prnewswire.com/ae/news-releases/roborock-launches-qrevo-s-pro-maximum-convenience-superior-value-302827048.html"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Roborock](/brands/roborock) announced the Qrevo S Pro for consumers in the United Arab Emirates and Saudi Arabia on July 16, 2026.
+[Roborock](/brands/roborock) introduced Qrevo S Pro in the United Arab Emirates and Saudi Arabia on July 16, 2026. The robot vacuum and mop was presented as a regional option for automating daily floor cleaning and the maintenance tasks that follow it.
 
-The company emphasized its multifunctional dock, including automatic dust emptying into a sealed 2.7-litre bag. The release positioned the robot vacuum and mop as an option for households seeking automated daily cleaning and maintenance.
+The [company's Gulf launch announcement](https://www.prnewswire.com/ae/news-releases/roborock-launches-qrevo-s-pro-maximum-convenience-superior-value-302827048.html) centers on a multifunctional dock. It empties dust into a sealed 2.7-liter bag, refills the robot's water supply, washes the mops with hot water and dries them with warm air. Roborock's claimed interval between bag changes depends on its stated use assumptions, rather than applying equally to every home.
 
-The announcement is specific to those Gulf markets and the Qrevo S Pro name. It should not be confused with other Qrevo products or used as proof of identical prices, bundles or sales dates in other regions.
+The robot combines advertised maximum suction of 18,500 Pa with rotating mop pads. The pads lift when carpet is detected, while adjustable water flow lets users change mopping settings for different hard-floor surfaces. An anti-tangle brush arrangement is intended to reduce the amount of hair that users need to remove manually.
+
+LiDAR mapping, obstacle avoidance and app controls provide scheduling, restricted areas and cleaning monitoring. The release also names voice-assistant compatibility and says the product was available through Amazon and other major retailers in the two markets. The launch concerns Qrevo S Pro specifically, with regional sales arrangements separate from other products sharing the Qrevo name.

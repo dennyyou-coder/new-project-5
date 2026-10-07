@@ -10,9 +10,12 @@ eventDate: "2025-07-22"
 brand_slugs: ["irobot"]
 source_titles: ["iRobot Announces Roomba Max 705 Combo with Roller Mopping — original source"]
 source_urls: ["https://media.irobot.com/2025-07-22-iRobot-Launches-Roomba-R-Max-705-Combo-Robot-AutoWash-TM-Dock-The-Companys-Most-Advanced-2-in-1-Cleaning-System"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[iRobot](/brands/irobot) introduced Roomba Max 705 Combo on July 22, 2025. The vacuum-and-mop model paired a PowerSpin roller with a cover designed to protect carpet from the wet mopping surface.
+[iRobot](/brands/irobot) introduced Roomba Max 705 Combo on July 22, 2025, adding a roller-based vacuum-and-mop system to its refreshed product range. The [launch announcement](https://media.irobot.com/2025-07-22-iRobot-Launches-Roomba-R-Max-705-Combo-Robot-AutoWash-TM-Dock-The-Companys-Most-Advanced-2-in-1-Cleaning-System) opened European presales at EUR 1,099 and scheduled North American and Japanese introductions for later in the year.
 
-The company described continuous roller washing, an extending edge-cleaning system, LiDAR mapping and camera-based obstacle recognition. Its AutoWash dock handled dust emptying, mop washing and drying, and water refilling.
+The robot's PowerSpin roller is continuously washed during cleaning and extends toward room edges. A protective cover is designed to isolate the wet roller when the robot crosses carpet. That arrangement addresses a practical challenge for combination cleaners working between hard floors and rugs.
 
-The announcement opened European presales at €1,099 and planned North American and Japanese availability later in the year. This was the Combo model announcement, distinct from the Max 705 Vac vacuum-only release earlier in 2025.
+Navigation combines ClearView Pro LiDAR with camera-based PrecisionVision obstacle recognition. iRobot described recognition of everyday objects such as toys and cords, alongside pet-waste avoidance. The AutoWash dock handles dust emptying, heated mop washing and drying, water refilling and station self-cleaning.
+
+Users can manage schedules, room selection and exclusion zones through the Roomba Home App. The model's features and regional rollout distinguish it from the Max 705 Vac, a separate vacuum-only product introduced earlier in 2025. For buyers comparing the two, the Combo name identifies a substantially different cleaning system and dock package, rather than simply a new accessory for the vacuum-only robot.

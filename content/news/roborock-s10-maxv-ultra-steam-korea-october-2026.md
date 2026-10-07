@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Aju Press — S10 MaxV Ultra Steam Korean launch"]
 source_urls: ["https://www.ajupress.com/view/20261001085670269"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[Roborock](/brands/roborock) announced the S10 MaxV Ultra Steam for South Korea on October 1, 2026, according to Aju Press. The company scheduled preorders for October 1–11 and a retail launch on October 12, making Korea the first announced market for the flagship model.
 
-[Roborock](/brands/roborock) announced the S10 MaxV Ultra Steam for South Korea on 1 October 2026, according to Aju Press. Preorders were scheduled for 1–11 October, with the retail launch planned for 12 October.
+The robot adds high-temperature steam to its floor-mopping system and uses VibraRise 5.0 vibrating mopping. Reported manufacturer specifications include maximum suction of 36,000 Pa, recognition of more than 300 object types and a body height of 7.95 centimeters. These features address dirt removal, obstacle avoidance and access beneath lower furniture.
 
-The model combines steam-assisted mopping with the company's VibraRise 5.0 system. Roborock lists maximum suction of 36,000 Pa and a 7.95 cm body height. These are manufacturer specifications for the Korean model; the announcement does not establish availability or equivalent configurations in other markets.
+The announcement also highlights crossing of raised floor transitions, with the stated 8.8-centimeter capability applying to a double-layer threshold configuration. That distinction matters in Korean homes with different room levels: a compound transition and a single vertical ledge present different physical obstacles.
+
+Aju Press described a launch campaign combining preorder promotions and local care services, including installation-related support. The model joins an increasingly competitive Korean premium robot-vacuum market. [Roborock Korea](https://kr.roborock.com/) provides the regional product and service context, while the October timetable and Korean configuration should be kept separate from any later announcement for other countries.

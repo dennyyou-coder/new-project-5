@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["BSH — Mellrichstadt factory construction announcement"]
 source_urls: ["https://presse.bsh-group.com/pressreleases/bsh-staubsaugerfabrik-zieht-von-bad-neustadt-ins-benachbarte-mellrichstadt-3468815"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+BSH began construction of a new floorcare site in Mellrichstadt, Germany, and plans to relocate its nearby Bad Neustadt operation during 2028. The company announced the project on September 25, 2026, following the start of building work.
 
-BSH announced on 25 September 2026 that construction had begun on a new floorcare location in Mellrichstadt, Germany. It plans to move its Bad Neustadt operation approximately 15 km to the new site during 2028.
+The existing operation has produced Bosch and Siemens vacuum cleaners for three decades. BSH said the current leased buildings limit further modernization, prompting the planned move approximately 15 kilometres away. The new site is intended to keep development and manufacturing in the same region.
 
-The existing operation has produced Bosch and Siemens vacuum cleaners for three decades. BSH said the new location would combine production, logistics, research and development, and administration. Construction has started, but the relocation remains a planned future step rather than a completed factory transfer.
+Plans include production and logistics space, research and development, and administration. The project covers a plot of roughly 68,600 square metres, with nearly 26,600 square metres of hall space. BSH also described a rail connection, rooftop solar generation and the reuse of heat from the production hall.
+
+The [company announcement](https://presse.bsh-group.com/pressreleases/bsh-staubsaugerfabrik-zieht-von-bad-neustadt-ins-benachbarte-mellrichstadt-3468815) records the construction milestone, not a completed factory transfer. The relocation remains scheduled for 2028 and is being coordinated with property developer Panattoni and employee representatives. For the floorcare supply chain, the project documents a planned renewal of an established German vacuum-manufacturing operation rather than the launch of a new consumer product.

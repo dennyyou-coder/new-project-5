@@ -10,9 +10,12 @@ eventDate: "2026-04-29"
 brand_slugs: ["dreame"]
 source_titles: ["Dreame Showcases Zircon 2 Pro and Ultra Pool Cleaners — original source"]
 source_urls: ["https://www.prnewswire.com/news-releases/the-future-of-the-yard-is-autonomous-dreame-showcases-zircon-2-series-at-silicon-valley-launch-event-302757089.html"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Dreame](/brands/dreame) showcased its Zircon 2 Pro and Zircon 2 Ultra pool robots at a San Francisco launch event, according to an April 29, 2026 announcement.
+[Dreame](/brands/dreame) presented the Zircon 2 Pro and Zircon 2 Ultra pool robots at its San Francisco launch event, according to an [April 29, 2026 announcement](https://www.prnewswire.com/news-releases/the-future-of-the-yard-is-autonomous-dreame-showcases-zircon-2-series-at-silicon-valley-launch-event-302757089.html). The presentation paired two cleaning configurations with different approaches to navigation, retrieval and charging.
 
-The Pro can be paired with the optional B2 Pro Automatic Charging Station for a cleaning, return, docking and recharging cycle controlled through the app. Dreame positioned the Ultra for more complex pools, highlighting underwater LiDAR navigation and cleaning across several pool zones.
+The Zircon 2 Pro can work with the optional B2 Pro Automatic Charging Station. Dreame describes a cycle in which the machine cleans, returns, docks and recharges after an app command. The station is an accessory to that arrangement, rather than a feature that should be assumed to accompany every Pro purchase.
 
-The announcement also described surface docking for easier retrieval of the Ultra. These features belong to the named Zircon models; the event report does not provide a universal retail price or shipping date for every market.
+The Zircon 2 Ultra targets more complex pools. Its navigation system combines underwater LiDAR with additional sensors to build a three-dimensional model and plan routes. Dreame describes cleaning across the surface, waterline, walls, floor, steps, corners and shallow zones. A surface-docking function lets the user call the machine to a preferred retrieval location.
+
+The two models address related but distinct handling needs: repeated removal for charging on the Pro configuration and broader navigation and retrieval functions on the Ultra. Their specifications and coverage statements came from Dreame's presentation. The announcement did not set one worldwide price or shipping date, leaving regional packages and commercial schedules to separate market releases.

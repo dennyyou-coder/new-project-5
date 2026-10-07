@@ -12,9 +12,12 @@ product_slugs: ["dreame-x60-ultra"]
 image_product: "dreame-x60-ultra"
 source_titles: ["Dreame Unveils X60 Ultra Series and Stair-Climbing Concept at CES — original source"]
 source_urls: ["https://www.prnewswire.com/news-releases/all-dreams-in-one-dreame-at-ces-2026-dreame-technology-unveils-x60-ultra-series-alongside-industry-first-innovations-to-redefine-smart-cleaning-302654403.html"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Dreame](/brands/dreame) unveiled the X60 Max Ultra Complete and [X60 Ultra](/products/dreame-x60-ultra) at CES on January 6, 2026.
+[Dreame](/brands/dreame) introduced the X60 Max Ultra Complete and [X60 Ultra](/products/dreame-x60-ultra) at CES on January 6, 2026. The [company announcement](https://www.prnewswire.com/news-releases/all-dreams-in-one-dreame-at-ces-2026-dreame-technology-unveils-x60-ultra-series-alongside-industry-first-innovations-to-redefine-smart-cleaning-302654403.html) emphasized a 7.95 cm body height and a retractable navigation sensor designed to improve access beneath low furniture.
 
-The company highlighted a 7.95 cm body height with a retractable navigation sensor for the X60 series. Its announcement opened preorders and set February 10 as the intended sales date for the X60 Max Ultra Complete, with the X60 Ultra to follow.
+For the X60 Max Ultra Complete, Dreame described dual cameras, illumination for dirt detection and an obstacle-crossing mechanism. The sensor rises for navigation in open spaces and retracts when clearance is limited. The cleaning package also includes a dual-brush arrangement and automated mop washing at the station, with the temperature and suction figures presented as manufacturer specifications.
 
-Dreame separately demonstrated Cyber X, a stair-climbing concept using a tracked carrier for a robot vacuum, and Cyber10 Ultra with a robotic arm. These demonstrations were distinct from the X60 models and should not be treated as X60 features or proof of general retail availability.
+Preorders opened on January 6. Dreame set February 10 as the intended sales date for the X60 Max Ultra Complete, with a listed launch price of USD 1,699.99 before promotions. The X60 Ultra was scheduled to follow, so the two models did not receive an identical confirmed retail date.
+
+Other CES displays explored different approaches to automation. Cyber X used a tracked carrier to move a robot between stair levels, while Cyber10 Ultra added a robotic arm for handling objects and tools. Those demonstrations were separate devices, rather than extra functions built into the X60 models announced for retail.

@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Economic Observer — Narwal employee letter"]
 source_urls: ["https://jg-static.eeo.com.cn/article/info?channelUuid=317476ab2e7b4c34918b73f7d04e2e52&id=70574dc4aca6482b8149cd348c62e349"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[Narwal](/brands/narwal) founder and chief executive Zhang Junbin denied a rumor that Joyoung planned to acquire the company, Economic Observer reported on December 8, 2025. The report cited a letter sent to employees on the same day the acquisition claim circulated.
 
-[Narwal](/brands/narwal) founder and CEO Zhang Junbin denied a rumor that the company would be acquired by Joyoung, Economic Observer reported on 8 December 2025. The report cited a letter to employees.
+According to the newspaper, Zhang said Narwal's capital-markets team remained focused on preparations for a Hong Kong listing. He acknowledged that outside parties might express interest in acquisitions or strategic investment, but reiterated the company's intention to continue its listing work. That statement is a denial of the reported takeover plan, not evidence that a public offering had been approved.
 
-The letter also referred to preparations for a possible Hong Kong listing. Those preparations were not confirmation of an approved offering or completed listing. The acquisition denial and the company's financing plans are separate points in the statement.
+The letter also referred to a USD 100 million financing completed in April, jointly led by Tencent and the Beijing robotics industry fund. Zhang used the communication to update staff on the company's financing position as well as its organizational direction.
+
+He described 2026 as an important year and called for greater attention to operating results, efficiency and cost control after internal changes. The news therefore combines a specific response to an ownership rumor with management's stated priorities. Any subsequent listing application, approval or completed transaction would be a separate development from this employee communication.

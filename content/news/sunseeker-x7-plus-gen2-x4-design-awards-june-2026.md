@@ -10,9 +10,12 @@ eventDate: "2026-06-05"
 brand_slugs: ["sunseeker"]
 source_titles: ["Sunseeker Reports German Innovation Awards for X7 Plus Gen 2 and X4 — original source"]
 source_urls: ["https://www.prnewswire.com/news-releases/sunseeker-elite-wins-at-the-2026-german-innovation-awards-302792601.html"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Sunseeker](/brands/sunseeker) announced German Innovation Awards recognition for two robotic mowers on June 5, 2026.
+[Sunseeker](/brands/sunseeker) announced recognition for two robotic mowers at the 2026 German Innovation Awards on June 5. X7 Plus Gen 2 received a Gold Award, while X4 received a Winner Award in the Gardening Tools category.
 
-According to the company, X7 Plus Gen 2 received a Gold Award and X4 received a Winner Award in the Gardening Tools category. The release described X7 Plus Gen 2 as a wire-free mower intended for larger and more complex gardens.
+The [company's announcement](https://www.prnewswire.com/news-releases/sunseeker-elite-wins-at-the-2026-german-innovation-awards-302792601.html) identifies the German Design Council as the awards organizer. The program recognizes product innovation and user value across industries, giving the two mower models a design-and-innovation distinction alongside their commercial product positioning.
 
-The news concerns the named award-winning products. Award recognition does not itself establish measured mowing performance, availability in a particular market or equivalence to other Sunseeker models such as S4.
+Sunseeker describes X7 Plus Gen 2 as a wire-free machine for larger and more complex gardens, with a stated area application of up to 6,000 square meters. Its role in the range is therefore different from simply attaching the same award claim to every mower carrying the Sunseeker name. X4 received its own recognition as a separately named product.
+
+The news adds an external award milestone to the company's mower rollout, but the award and an operational performance test answer different questions. Mowing capacity, navigation suitability and local support still depend on the actual model and installation. The June release concerns X7 Plus Gen 2 and X4 specifically; it does not establish an award for other models, or a common price and availability schedule across the range.

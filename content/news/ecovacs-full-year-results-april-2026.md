@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["ECOVACS — 2025 annual report"]
 source_urls: ["https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260424/fbbd183ece4546f9823dae0fc927298b.PDF"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[ECOVACS](/brands/ecovacs) reported 2025 revenue of CNY 19.040 billion in its [annual report](https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260424/fbbd183ece4546f9823dae0fc927298b.PDF) released on April 24, 2026. Sales increased 15.10% from the previous year, while net profit attributable to shareholders rose 118.13% to CNY 1.758 billion.
 
-[ECOVACS](/brands/ecovacs) disclosed 2025 revenue of CNY 19.040 billion in its annual report released on 24 April 2026, a 15.10% increase. Net profit attributable to shareholders reached CNY 1.758 billion, up 118.13%.
+The results cover the full calendar year and the listed group's multiple cleaning businesses. They bring together performance across products and markets, rather than measuring a single robot-vacuum line. The much faster growth in attributable profit than in revenue is an earnings result, not a direct measure of unit sales or the market's overall growth.
 
-The result covers the full calendar year and the group's multiple cleaning brands. It is separate from the quarterly results published around the same time. Investment-related and other non-recurring effects also mean reported net-profit growth should not be treated as an equivalent change in product operating margins.
+Investment-related income and other non-recurring effects contribute to the interpretation of reported net profit. The annual increase therefore should not be presented as an equivalent rise in product operating margins. Revenue, operating performance and gains outside ordinary product sales remain different parts of the financial picture.
+
+The annual disclosure was published close to ECOVACS' first-quarter 2026 results, but the two reports describe different periods. The 2025 figures establish the completed year's group performance; the quarterly report records the beginning of the following year. For cleaning-industry readers, keeping those periods separate gives a clearer view of how the company's sales and earnings evolved.

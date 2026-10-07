@@ -12,11 +12,12 @@ product_slugs: []
 related_articles: ["anker-prospectus-trillion-yuan-cleaning-industry"]
 source_titles: ["Anker Innovations — Unified brand strategy announcement"]
 source_urls: ["https://www.anker-in.com/posts/ifa2026"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-Anker Innovations announced at its 3 September Berlin event that its five brands will gradually move under the Anker name. The official announcement was posted on the company website on 17 September.
+Anker Innovations announced a gradual move toward a unified Anker brand at its Berlin event on September 3, 2026. The company published details of the strategy on September 17, setting out a transition covering Anker, [eufy](/brands/eufy), soundcore, SOLIX and eufyMake.
 
-The change covers Anker, [eufy](/brands/eufy), soundcore, SOLIX and eufyMake. The company is grouping its portfolio around personal technology and the home, with robotics, security and home energy included in the latter.
+The new structure groups the portfolio around personal technology and the home. Robotics, security and home energy sit within the home offering, bringing several previously separate product identities under a common name. For the cleaning sector, eufy is the relevant part of the change because of its floorcare and home-robot products.
 
-Anker says new products will lead the transition and existing products will follow over time. It states that warranty coverage, customer support and service will remain unchanged.
+Anker said new products would lead the transition, with existing ranges following over time. It also stated that warranties, support and service would continue unchanged. The announcement therefore describes a phased branding program, rather than an immediate replacement of every product name, package or regional listing.
 
-The announcement also set out plans for its first standalone Berlin store and further locations, with additional timing to be announced. The gradual rollout means existing eufy names and regional product listings should not be assumed to change immediately.
+The [company's statement](https://www.anker-in.com/posts/ifa2026) also outlined plans for its first standalone Berlin store and additional locations, with more timing information to follow. The retail plans accompany the identity change but are separate from the availability of any individual cleaner. Existing eufy product pages remain useful for identifying models during the transition, including the [Omni E35 introduced around IFA](/news/eufy-omni-e35-ifa-september-2026).

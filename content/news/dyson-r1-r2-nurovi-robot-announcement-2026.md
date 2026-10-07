@@ -12,11 +12,12 @@ product_slugs: ["dyson-r1-nurovi-dry", "dyson-r2-nurovi-wash-dry"]
 image_product: "dyson-r2-nurovi-wash-dry"
 source_titles: ["Dyson UK — R1 and R2 Nurovi press release"]
 source_urls: ["https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Dyson](/brands/dyson) announced two Nurovi robot vacuums on 3 September 2026: the [R1 Nurovi Dry](/products/dyson-r1-nurovi-dry) and the [R2 Nurovi Wash+Dry](/products/dyson-r2-nurovi-wash-dry).
+[Dyson](/brands/dyson) announced the [R1 Nurovi Dry](/products/dyson-r1-nurovi-dry) and [R2 Nurovi Wash+Dry](/products/dyson-r2-nurovi-wash-dry) on September 3, 2026. The [UK introduction](https://www.dyson.co.uk/discover/news/latest/introducing-r1-nurovi-r2-nurovi) established two robot configurations with different floor-cleaning functions, rather than one machine offered under interchangeable names.
 
-The range combines mechanical debris pickup with suction and uses sensing to adapt cleaning behaviour. The R2 adds triangular washing pads designed to reach corners and edges. Its dock washes and dries the pads as part of the automated maintenance cycle.
+Both use a combination of mechanical debris pickup and suction, supported by sensing that adjusts cleaning behaviour. The dry-cleaning R1 focuses on collecting floor debris. The R2 adds a washing system, using triangular pads intended to reach edges and corners that are difficult for a round cleaning surface to follow closely.
 
-Dyson describes a bagless cyclonic docking system and control through the MyDyson app. These are company-announced features rather than results from a shared WCB performance test.
+For the R2, dock-based pad washing and drying form part of the maintenance cycle. Dyson also described a bagless cyclonic docking system and operation through the MyDyson app. Those features extend the product description beyond the robot itself to the equipment and controls used between cleaning runs.
 
-The UK press release describes the robots as launching soon, without a firm launch date or price. That wording should not be interpreted as confirmed retail stock. R1 and R2 remain separate models with different floor-cleaning functions.
+The announcement described the range as launching soon but did not provide a firm UK retail date or price. That leaves commercial availability separate from the September product reveal. Buyers comparing the two models should match the required floor-care task to the exact name: the R2's washing functions are not part of the R1 Dry specification.

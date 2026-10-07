@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Stanley Black & Decker — Q3 2025 results"]
 source_urls: ["https://newsroom.stanleyblackanddecker.com/2025-11-04-Stanley-Black-Decker-Reports-3Q-2025-Results"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+Stanley Black & Decker reported third-quarter 2025 sales of approximately USD 3.756 billion on November 4, broadly level with the previous year. Pricing increased the revenue comparison by five percentage points and currency by one point, offsetting a six-point decline in volume.
 
-Stanley Black & Decker announced third-quarter 2025 revenue of approximately USD 3.756 billion on 4 November. Sales were broadly flat compared with a year earlier, and adjusted earnings per share were USD 1.43.
+The [company's results](https://newsroom.stanleyblackanddecker.com/2025-11-04-Stanley-Black-Decker-Reports-3Q-2025-Results) recorded reported earnings of USD 0.34 per share and adjusted earnings of USD 1.43. The difference included specified charges, while a tax benefit also affected the quarter. Gross margin reached 31.4%, with the adjusted measure at 31.6%.
 
-The release also updated the company's full-year earnings outlook. The quarterly result covers the group's tool, outdoor and fastening operations and should be distinguished from the later annual results and portfolio-sale announcements.
+Management attributed margin progress to pricing and supply-chain efficiency, partly offset by tariffs, lower volume and inflation. The release also recorded USD 169 million in non-cash impairments following portfolio and brand reviews, including certain trade names and minority investments. These accounting charges are separate from the cash generated through daily operations.
+
+Operating cash flow was USD 221 million, and free cash flow was USD 155 million. Stanley Black & Decker updated its full-year planning assumptions while continuing its cost-reduction program. The report covers the tools, outdoor and fastening businesses for the third quarter; later annual results and the subsequent aerospace-business sale announcement represent separate developments in the company's financial and portfolio timeline.

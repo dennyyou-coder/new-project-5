@@ -13,10 +13,12 @@ related_articles: []
 source_titles: ["Anker Japan — eufy Omni S2 launch"]
 source_urls: ["https://prtimes.jp/main/html/rd/p/000000647.000016775.html"]
 image_product: "eufy-omni-s2"
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+Anker Japan began selling the [eufy Robot Vacuum Omni S2](/products/eufy-omni-s2) on May 27, 2026, at a tax-inclusive price of JPY 249,900. The [local announcement](https://prtimes.jp/main/html/rd/p/000000647.000016775.html) named Anker's online and physical stores, Amazon Japan, Rakuten and selected appliance retailers as sales channels.
 
-Anker Japan began selling the eufy Robot Vacuum Omni S2 on 27 May 2026 through its own stores, Amazon Japan, Rakuten and selected appliance retailers. The announced tax-inclusive price was JPY 249,900.
+The Japanese release described maximum suction of 30,000 Pa and a HydroJet 2.0 roller-mop system. The roller extends toward walls and is refreshed during cleaning, while the robot uses camera-based sensing and route planning to move around furniture. The product also lifts its mop when it detects carpet.
 
-The company lists maximum suction of 30,000 Pa, a HydroJet 2.0 roller-mop system and a station that handles dust collection, mop washing and drying. The release confirms Japanese availability and local pricing rather than a simultaneous global launch.
+The station handles dust collection, mop washing and warm-air drying, together with automatic detergent dispensing. A dirt sensor helps determine the washing required at the station. The main brush is divided into two sections that direct hair toward the centre, an arrangement intended to reduce tangling and routine manual cleaning.
 
-Explore the related product page: [eufy Robot Vacuum Omni S2](/products/eufy-omni-s2).
+Anker Japan listed consumables such as dust bags and filters for separate purchase through its official store. This announcement established Japanese availability and the local package after the S2's earlier international presentation. Its price includes Japanese tax and should not be treated as a converted global price or a statement that every market began sales on the same date.

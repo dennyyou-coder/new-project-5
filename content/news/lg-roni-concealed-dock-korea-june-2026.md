@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Seoul Economic Daily — LG RONi launch"]
 source_urls: ["https://en.sedaily.com/finance/2026/06/29/lg-electronics-launches-roni-cleaning-robot-that-kills-9999"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+LG presented its RONi robot-cleaning range in South Korea on June 29, 2026, ahead of a planned July 2 launch, according to Seoul Economic Daily. The range offers two station designs: a concealed, plumbed installation and an Objet Collection version with water tanks.
 
-LG presented its RONi cleaning-robot range in South Korea on 29 June 2026, ahead of a scheduled 2 July launch, according to Seoul Economic Daily. One configuration places the docking system within a low cabinet plinth.
+The Hidden Station fits into the toe-kick space beneath a kitchen cabinet and is described as 15 cm high. The alternative Objet Station takes a side-table form for freestanding placement. Both use a front door that opens for the robot and closes when it is stored, making the dock part of the room's furniture rather than an exposed service station.
 
-The range also includes an Objet Collection version with a conventional water-tank station. The concealed installation and freestanding version require different home setups. The announcement concerns the Korean range and does not establish international availability.
+The report said LG applies steam to the robot's mop during cleaning and uses steam and hot water for station maintenance. It also described an extending side brush, dual brushes intended to reduce hair tangling, and object recognition supported by eight sensors.
+
+The different station arrangements are central to the buying decision: the concealed version requires water-supply and drainage connections, while the tank version offers more placement flexibility. The announcement concerns LG's Korean product range. It does not establish an international launch schedule, and the cleaning and hygiene specifications remain claims associated with the manufacturer's announcement.

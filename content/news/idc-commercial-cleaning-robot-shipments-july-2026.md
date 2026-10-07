@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["IDC data reported by Sina Finance — commercial service robots"]
 source_urls: ["https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-07-07/doc-inifyeew1410316.shtml"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+Worldwide commercial cleaning robot shipments reached approximately 58,000 units in 2025, according to IDC figures reported by Zhitong Finance on July 7, 2026. The reported increase of 83.8% made cleaning the fastest-growing segment within the commercial service-robot market covered by the research.
 
-IDC data reported on 7 July 2026 put worldwide commercial cleaning robot shipments at approximately 58,000 units in 2025, up 83.8% from the previous year. Market revenue reached about USD 760 million, up 48.5%.
+The cleaning segment generated more than USD 760 million in revenue, up 48.5% from 2024. Its unit growth was therefore substantially faster than its revenue growth. Those two measures describe different aspects of expansion and do not, by themselves, establish how prices changed for any individual model.
 
-The cleaning segment formed part of a broader commercial service-robot market. Its shipment growth exceeded revenue growth, so the two measures should be kept separate. The figures describe 2025 market activity, despite the report being released in July 2026.
+The wider commercial service-robot market shipped about 155,000 units and generated USD 1.37 billion. Delivery robots retained the largest shipment volume among the named segments, at around 84,000 units. Cleaning robots should consequently be assessed within their own category rather than against the broader total as if all machines performed the same tasks.
+
+The report associated cleaning growth with larger deployments in China, rising penetration in Europe and the United States, and replacement demand in Japan and other Asia-Pacific markets. It also described increasingly international operations among leading Chinese suppliers. The data concern equipment shipped during 2025; July 2026 is the publication date of the market update.

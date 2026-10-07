@@ -16,7 +16,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   const title = topic ? `${newsTopicLabel(topic)} News` : "Cleaning Industry News";
   return {
     title: page > 1 ? `${title} — Page ${page}` : title,
-    description: "Latest cleaning industry news: product launches, company moves, market and channel updates, with original sources and related WCB company and product profiles.",
+    description: "Cleaning industry news from World Clean Biz: product launches, company developments and market updates, with related company and product profiles.",
     alternates: { canonical: newsHref(topic, page) },
     robots: { index: !topic, follow: true },
     openGraph: { title, type: "website", url: newsHref(topic, page) }
@@ -30,7 +30,7 @@ export default async function NewsPage({ searchParams }: Props) {
   const brands = getPublishedBrandProfiles(getInsights());
   const schema = { "@context": "https://schema.org", "@type": "CollectionPage", name: "Cleaning Industry News", url: `${siteUrl}${newsHref(selected.topic, selected.page)}`, mainEntity: { "@type": "ItemList", itemListElement: selected.articles.map((article, index) => ({ "@type": "ListItem", position: (selected.page - 1) * 12 + index + 1, name: article.title, url: `${siteUrl}/news/${article.slug}` })) } };
   return <>
-    <header className="news-intro news-container"><p className="news-eyebrow">World Clean Biz News</p><h1>Cleaning Industry News</h1><p>Product launches, company moves and market updates. Ordered by original news date, with sources and the date each story was added to WCB.</p></header>
+    <header className="news-intro news-container"><p className="news-eyebrow">World Clean Biz News</p><h1>Cleaning Industry News</h1><p>Product launches, company developments and market updates from across the cleaning industry.</p></header>
     <div className="news-container">
       <nav className="news-filters" aria-label="News topics"><Link href="/news" aria-current={!selected.topic ? "page" : undefined}>All News</Link>{NEWS_TOPICS.filter((topic) => allNews.some((article) => article.topic === topic.slug)).map((topic) => <Link key={topic.slug} href={newsHref(topic.slug)} aria-current={selected.topic === topic.slug ? "page" : undefined}>{topic.label}</Link>)}</nav>
       <div className="news-columns"><section aria-labelledby="latest-news-heading"><div className="news-list-heading"><h2 id="latest-news-heading">{selected.topic ? newsTopicLabel(selected.topic) : "Latest News"}</h2><span>{selected.total} {selected.total === 1 ? "story" : "stories"}</span></div>

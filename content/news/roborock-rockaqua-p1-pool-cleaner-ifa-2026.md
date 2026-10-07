@@ -12,11 +12,12 @@ product_slugs: ["roborock-rockaqua-p1", "roborock-saros-20-flow"]
 image_product: "roborock-rockaqua-p1"
 source_titles: ["Roborock announcement — RockAqua and cleaning lineup at IFA 2026"]
 source_urls: ["https://www.prnewswire.com/jp/news-releases/roborockifa-2026-302869529.html"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Roborock](/brands/roborock) introduced the [RockAqua P1](/products/roborock-rockaqua-p1) at IFA Berlin in September 2026, describing it as the debut of its first pool-cleaning product line.
+[Roborock](/brands/roborock) introduced [RockAqua P1](/products/roborock-rockaqua-p1) at IFA Berlin in September 2026, marking the debut of its pool-cleaning product line. The announcement takes the company's autonomous-cleaning portfolio into a different operating environment from the indoor floors on which its robot-vacuum business was built.
 
-The company says the robot is designed for pool floors, walls, the water surface and shallow platforms. Its announced features include camera-based obstacle avoidance, dirt detection and waterline parking to assist retrieval.
+The [IFA release](https://www.prnewswire.com/jp/news-releases/roborockifa-2026-302869529.html) describes a machine intended to clean pool floors, walls, the water surface and shallow platforms. Camera-based obstacle avoidance and dirt detection are designed to guide its work, while automatic parking at the waterline is intended to simplify retrieval when cleaning is complete.
 
-The pool launch appeared alongside household products including the [Saros 20 Flow](/products/roborock-saros-20-flow) roller-mop robot, new wet-and-dry cleaners and a robotic lawn mower. The announcement therefore covers several distinct product categories, rather than a single extension of the floorcare range.
+Roborock announced a four-liter debris basket with dual filtration and a stated runtime of up to 3.5 hours. These are launch specifications for RockAqua P1, with supported pool conditions and operating modes relevant to the actual cleaning cycle. The product's pool-specific movement and filtration requirements distinguish it from a household vacuum adapted only in name.
 
-The release does not establish a universal retail price or launch date for RockAqua P1. Local availability, supported pool conditions and service arrangements remain details to verify for the intended market.
+The debut appeared alongside [Saros 20 Flow](/products/roborock-saros-20-flow), new wet-and-dry cleaners and a robotic mower. Together, the displays presented expansion across several cleaning categories. The IFA announcement introduced the pool platform but did not establish a single worldwide price or retail date; regional sales and support arrangements were separate parts of the rollout.

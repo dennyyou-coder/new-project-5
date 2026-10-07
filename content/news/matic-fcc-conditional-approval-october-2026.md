@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["The Verge — Matic conditional approval report"]
 source_urls: ["https://www.theverge.com/policy/1004926/matic-fcc-ban-waiver-conditional-approval"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+Matic's floor-cleaning robot and charging dock were added to the FCC's conditional-approval list on October 2, 2026, according to reporting by The Verge. The decision names robot model 4MA0001 and dock model 4DK0008, making the exemption specific to those products.
 
-The FCC added Matic's floor cleaner model 4MA0001 and charging dock 4DK0008 to its conditional-approval list on 2 October 2026, according to reporting by The Verge.
+The report explained that Matic's existing equipment already used approved radio components, including an Intel Wi-Fi and Bluetooth module. Its robots were also assembled in Mountain View, California. The decision therefore did not reopen sales of a product that had previously been barred from the U.S. market.
 
-The exemption is model-specific. The report also notes that the original products already used approved radio components and were assembled in Mountain View, California. The decision therefore should not be described as reopening sales of a previously banned Matic product. It relates to the Covered List framework for foreign-produced advanced robotic devices.
+Matic described a continuing effort to expand domestic production and increase U.S. sourcing. Co-founder Mehul Nariyawala told The Verge that its former combined office and manufacturing site had been converted entirely to production, with offices moved to Menlo Park. The company acknowledged that its component sourcing had not yet reached the 65% U.S. threshold discussed in the report.
+
+The news connects a model-specific regulatory decision with Matic's manufacturing strategy. Assembly location, component origin and radio authorization are related but different questions. For this announcement, the confirmed scope is the two named devices; it does not amount to advance approval for every future robot sold under the Matic brand.

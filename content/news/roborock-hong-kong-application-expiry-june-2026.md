@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["21st Century Business Herald — Hong Kong application status"]
 source_urls: ["https://www.21jingji.com/article/20260702/herald/b7493179174cb777106b3e6903d877fe.html"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[Roborock](/brands/roborock)'s Hong Kong listing application became inactive on June 30, 2026, after the submitted application reached the end of its six-month validity period. A July 2 report carried by 21st Century Business Herald described the status change following the company's earlier listing-hearing progress.
 
-[Roborock](/brands/roborock)'s Hong Kong listing application became inactive on 30 June 2026, according to a 2 July report by 21st Century Business Herald. The company had previously progressed through a listing hearing.
+The application had been submitted on December 31, 2025. Roborock subsequently passed a listing hearing on January 15, but had not completed the offering during the application period. The sequence separates an advance in the review process from the later steps needed to price shares and begin trading.
 
-Expiry of an application is a procedural status and does not by itself mean that the exchange rejected the company. The report did not establish a completed listing or a new trading date. This development is separate from Roborock's existing Shanghai-listed shares.
+The report also cited the company's June comments that it was assessing the market window for an H-share issue. The expiry therefore records the status of that application at the time. It does not, by itself, establish that the exchange rejected the company or that Roborock had abandoned a Hong Kong listing.
+
+The company's existing Shanghai-listed shares were a separate matter. Hong Kong application documents and subsequent disclosures can be followed through [HKEXnews](https://www.hkexnews.hk/), while any renewed filing, offer timetable or trading date would require its own announcement. The June development concerned the proposed additional listing, with no completed Hong Kong share sale established by the cited report.

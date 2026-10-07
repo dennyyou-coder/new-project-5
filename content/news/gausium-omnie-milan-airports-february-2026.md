@@ -10,9 +10,12 @@ eventDate: "2026-02-06"
 brand_slugs: ["gausium","fiorentini"]
 source_titles: ["Gausium Reports Omnie Deployment at Milan's Malpensa and Linate Airports — original source"]
 source_urls: ["https://gausium.com/news/gausiums-omnie-cleaning-robots-milano-cortina-2026-winter-olympics/"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Gausium](/brands/gausium) announced on February 6, 2026 that its Omnie cleaning robots were operating at Milan Malpensa and Linate airports ahead of the Milano Cortina Winter Olympics.
+[Gausium](/brands/gausium) announced on February 6, 2026 that Omnie cleaning robots were operating at Milan Malpensa and Linate airports ahead of the Milano Cortina Winter Olympics. The [deployment announcement](https://gausium.com/news/gausiums-omnie-cleaning-robots-milano-cortina-2026-winter-olympics/) identified Italian distributor [Ing. O. Fiorentini](/brands/fiorentini) as its partner in bringing the machines into the terminals.
 
-The deployment was carried out with its Italian distributor, [Ing. O. Fiorentini](/brands/fiorentini). Gausium described Omnie's use of 3D LiDAR, navigation software and remote monitoring for cleaning in busy terminal environments.
+Omnie combines 3D LiDAR with other sensing and navigation software to work around changing obstacles. Gausium described the system as suited to busy public spaces where passengers, airport staff and luggage carts move through the cleaning area. The equipment therefore operates in a different setting from a closed room with fixed furniture.
 
-This was a supplier-reported deployment at two named airports. The announcement did not disclose the contract value or the number of installed robots, so it does not establish the financial size of the project.
+Remote monitoring and management allow facility teams to follow cleaning progress and adjust routes. Gausium presented the airport project as an application of those functions in a transport environment preparing for additional event-related traffic. Fiorentini contributed local commercial-cleaning experience to the deployment partnership.
+
+The announcement identifies two airports and a specific robot model, but it does not disclose the installed fleet size or contract value. Its description of operating benefits comes from the supplier and distribution partners. The February news establishes that the robots were already in operation when announced, while leaving the project's financial scale and measured productivity undisclosed.
