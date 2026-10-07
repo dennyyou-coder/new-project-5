@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["ECOVACS — Q1 2026 report"]
 source_urls: ["https://stockmc.xueqiu.com/202604/603486_20260425_H37U.pdf"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[ECOVACS](/brands/ecovacs) reported first-quarter 2026 revenue of CNY 4.902 billion on April 25, an increase of 27.06% from a year earlier. The [quarterly disclosure](https://stockmc.xueqiu.com/202604/603486_20260425_H37U.pdf) showed stronger sales but different movements in the company's two main net-profit measures.
 
-[ECOVACS](/brands/ecovacs) reported first-quarter 2026 revenue of CNY 4.902 billion on 25 April, up 27.06%. Net profit attributable to shareholders fell 14.73% to CNY 404.77 million.
+Net profit attributable to shareholders fell 14.73% to CNY 404.77 million. Profit excluding non-recurring items increased 11.46% to CNY 396.57 million. The latter removes designated gains and losses outside that measure's recurring basis, so the growth rates cannot be substituted for one another when describing the quarter.
 
-Profit excluding non-recurring items increased 11.46% to CNY 396.57 million. The different direction of the two profit measures reflects their different bases. The figures cover the listed group, including its ECOVACS and [Tineco](/brands/tineco) businesses.
+In absolute terms, the two current-period profit figures were relatively close. Their year-on-year comparisons nonetheless differed because each was measured against its own prior-year base. The result is a quarter in which sales and adjusted earnings grew, while total attributable profit declined. It does not support describing either all earnings measures as rising or the entire business as contracting.
+
+The figures cover the listed group, including its ECOVACS and [Tineco](/brands/tineco) operations. They are not a standalone result for one robot-vacuum model or one national market. The January-to-March period also differs from the full-year 2025 results released around the same time, which should be read as a separate reporting period.

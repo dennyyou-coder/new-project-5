@@ -10,11 +10,12 @@ eventDate: "2026-09-08"
 brand_slugs: ["gausium"]
 source_titles: ["Gausium Austria / Denzel Robotics — School deployment with Schindler CoLab, September 8"]
 source_urls: ["https://gausium.at/pressemeldungen/premiere-in-osterreich-gausium-reinigungsroboter-faehrt-autonom-mit-dem-schindler-aufzug/"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-Gausium's Austrian distribution operation reported a school deployment on September 8 in which a [Gausium](/brands/gausium) cleaning robot uses a Schindler lift to move independently between six floors.
+A [Gausium](/brands/gausium) cleaning robot is using a Schindler lift to travel independently between six floors at Schule im Park in Bludenz, Austria. The [September 8, 2026 deployment report](https://gausium.at/pressemeldungen/premiere-in-osterreich-gausium-reinigungsroboter-faehrt-autonom-mit-dem-schindler-aufzug/) described a school installation connecting autonomous floor cleaning with the building's lift controls.
 
-The robot operates at Schule im Park in Bludenz, cleaning shared circulation areas in the historic building and its extension. The city funded the equipment, and Austrian importer Denzel Robotics installed and integrated it with a distribution partner.
+The city financed the equipment, which Austrian importer Denzel Robotics installed and integrated with a distribution partner. The robot cleans shared circulation areas in the historic school building and its extension. It normally starts after classes, allowing the cleaning route to progress through the building outside the busiest part of the school day.
 
-Schindler CoLab connects the robot's cloud system with the lift controls. The integration allows the robot to request a lift journey, select a floor and continue its cleaning route after changing levels.
+Schindler CoLab provides the digital connection between the robot's cloud system and the lift. The robot can call the lift, select a floor and continue its route after arriving, removing the need for a person to carry or escort it between levels. The integration is central to the multi-floor operation.
 
-The school describes the machine as a supplement to its cleaning team: staff still handle classrooms, areas under desks and large glass surfaces. The release does not identify the precise robot model, so this report links to the company profile rather than assigning an unconfirmed product.
+The school described the machine as a supplement to its cleaning team. Staff continue handling classrooms, spaces beneath desks and large glass surfaces, while the robot works on the areas suited to it. The release does not identify an exact Gausium model, so the deployment remains associated with the company rather than an assumed product configuration.

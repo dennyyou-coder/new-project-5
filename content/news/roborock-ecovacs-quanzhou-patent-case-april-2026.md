@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Sina — Quanzhou patent-hearing listing"]
 source_urls: ["https://finance.sina.com.cn/stock/aiassist/ktgg/2026-04-20/doc-inhvayqk0723685.shtml"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+A hearing listing published on April 20, 2026, identified an invention-patent dispute brought by [Roborock](/brands/roborock) against [ECOVACS](/brands/ecovacs) in China. The notice scheduled a hearing for May 15 at the Quanzhou Intermediate People's Court in Fujian province.
 
-A court-hearing listing reported on 20 April 2026 identified a patent dispute brought by [Roborock](/brands/roborock) against [ECOVACS](/brands/ecovacs) at the Quanzhou Intermediate People's Court. The listed hearing date was 15 May.
+Sina Finance's report, citing Tianyancha court-listing data, named Beijing Roborock Technology as the claimant. The defendants were Ecovacs Home Service Robotics and a Fengze district appliance retailer. The proceeding was identified as case (2026) Min 05 Min Chu 755, giving readers a specific reference for distinguishing it from other disputes involving the companies.
 
-A hearing notice establishes that proceedings are scheduled; it does not establish infringement, damages or a final judgment. This Chinese proceeding is separate from the companies' European patent cases.
+The notice concerns an allegation of invention-patent infringement. It records the parties, forum and planned hearing rather than the court's assessment of the patent or products. No damages award or sales restriction was established by that listing, and the April report did not provide a final judgment.
+
+The case adds a Chinese proceeding to a wider set of patent disputes between cleaning-robot manufacturers. It is separate from the companies' cases in the [Unified Patent Court](https://www.unifiedpatentcourt.org/en), which involve European patents and their own case records. Developments in one forum should therefore be tracked against the relevant patent and proceeding before being applied to another market.

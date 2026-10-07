@@ -409,6 +409,42 @@
         "outputHash": "sha256:cb7dc03d487c2216aeae296716d7b408c5a53da0813f980d1e97e72bee21a31c"
       }
     },
+    "/images/articles/avc-double-eleven-cleaning-sales-november-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36188,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:43c69c1fd096d5e794889d4266cb3f275018bc74eacb28f84dccb8807cf820ac",
+      "outputHash": "sha256:49ee24fc68ec2c1954a9c6389f00d241b22a5a1f261ac9e757bd44852b6d296c",
+      "mobile": {
+        "src": "/images/articles/avc-double-eleven-cleaning-sales-november-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16078,
+        "outputHash": "sha256:e70a9f0c7b9795dfae589fc4d28dd72a25ad77e6a5a31b9b887e743f7f950f8d"
+      }
+    },
+    "/images/articles/avc-first-half-cleaning-market-august-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40272,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a39a68d07f2bfbd0f7e988683efea3bf8501c7338cb5b2076b274d1583be1991",
+      "outputHash": "sha256:b865f7df1bf1657e5e234da71f4493e893bf95e9dea73850f46100c0c7b958d8",
+      "mobile": {
+        "src": "/images/articles/avc-first-half-cleaning-market-august-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18782,
+        "outputHash": "sha256:da6ac930802cbbd9e1dd8c771359180c81b8c6e3396d0361e33c8e5c408757ad"
+      }
+    },
     "/images/articles/beatbot-aquasense-x/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -1280,6 +1316,24 @@
         "outputHash": "sha256:40bd5e0d598abebdbe8a52a88bdf0f75cfdedbfc92d13e324f7e33100d9a7fcc"
       }
     },
+    "/images/articles/china-trade-in-funding-fully-allocated-september-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44936,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f2031407bb21050c7e575ce5911543ec9cc3956939fdc8bea297a3737d27ab01",
+      "outputHash": "sha256:14deb52ecb860e115dc7203dcb821594697b43099cba145f7bc7ebc0ab5601d3",
+      "mobile": {
+        "src": "/images/articles/china-trade-in-funding-fully-allocated-september-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20680,
+        "outputHash": "sha256:69fce79b95afb9b2691043c07d3770ed97a5f6554da0f838db942dd1d4a519f9"
+      }
+    },
     "/images/articles/commercial-cleaning-robots-next/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -1604,6 +1658,42 @@
         "outputHash": "sha256:dc0a2e5667cdfddb149e2f03725fbe6c769aebc4dc6772f7060453c1c01fa84f"
       }
     },
+    "/images/articles/dechang-first-half-results-august-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35612,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:42f75dce131d2010c42bbe03552d9d701d6243db9bb71acb1d4f1b169e1cd3d2",
+      "outputHash": "sha256:7aad2cebe944527139ebbc2ec383b2db1f1c9f1253b911914b79fdee1ace1caf",
+      "mobile": {
+        "src": "/images/articles/dechang-first-half-results-august-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15022,
+        "outputHash": "sha256:c6fd90ef83d98f38807ecd36b8f01061a20580d2f290f2ad86faed7d2a3dda32"
+      }
+    },
+    "/images/articles/dechang-nine-month-results-october-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 37056,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a3ace58c56873bda80a17c1b2af1c56e3c6fe3d3f79a5a362878634c0f0a5bf0",
+      "outputHash": "sha256:8fc1c2a9a3db02f2fdfd274fe36ea8f6470f91c89425dcf4e0d601bac90fa418",
+      "mobile": {
+        "src": "/images/articles/dechang-nine-month-results-october-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16054,
+        "outputHash": "sha256:7b4f8239f21ed6cde941b91699afcdfa0f63a12b3ea60a3663191a8a0e851501"
+      }
+    },
     "/images/articles/deerma-floorcare-value-for-money-limit/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -1883,6 +1973,24 @@
         "height": 534,
         "bytes": 42826,
         "outputHash": "sha256:dd7f3b5f5fd81273deb874fd629bd2681369597b4ef6c40cce19569e358ddcf8"
+      }
+    },
+    "/images/articles/donlim-xinbao-first-half-results-august-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36322,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:27e2d93c0ce6e87599f371af612684e8ac87ec8d9f47428e3ce88a2f067575ce",
+      "outputHash": "sha256:5d56ab613f51e0ed3fd481c4274afae534369129f090213028ac7f2f3cb31860",
+      "mobile": {
+        "src": "/images/articles/donlim-xinbao-first-half-results-august-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16002,
+        "outputHash": "sha256:73354306fa8aef295f8bc858c142ca7945ad577d1ebca2bdda858d657b22d215"
       }
     },
     "/images/articles/dreame-a3-awd-pro-2500/01-cover.webp": {
@@ -2892,6 +3000,24 @@
         "outputHash": "sha256:aeba3284b7dd7eccf1f1188de63622983b5d4271b261dfa59d68e8640fedd553"
       }
     },
+    "/images/articles/eu-chinese-robot-mower-investigation-november-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44390,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c23f93fb6265927f5d39ff865c3a387fd4506b444de117e34b31cb41eef2541e",
+      "outputHash": "sha256:775913ded13ed77d8f1dafeadc22c5c83647e524cfa6f93904947b85a06c008a",
+      "mobile": {
+        "src": "/images/articles/eu-chinese-robot-mower-investigation-november-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20404,
+        "outputHash": "sha256:8f27cada2463fe7082d57581d67cd934622182f04ab0c99a7a14365b7079ca2f"
+      }
+    },
     "/images/articles/eufy-omni-c28/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -3443,6 +3569,96 @@
         "outputHash": "sha256:c09c9704b71be1f6ea4a1811ab0dfae4cac80890fcaa7d171593528e7835e909"
       }
     },
+    "/images/articles/fairland-hong-kong-application-april-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41412,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:e885b27fde788927430dfdda10a1c3bba32aa1a9b4fb48bcaf9aec5a24122d32",
+      "outputHash": "sha256:d38baed732226e04b5afad4f0a61ccadf1b5fddfdd1d80ec444f4fd67f77f093",
+      "mobile": {
+        "src": "/images/articles/fairland-hong-kong-application-april-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19224,
+        "outputHash": "sha256:903252d353b646b98cfc820ed30210069150c035a0617da9cd83ac40fe0aeb20"
+      }
+    },
+    "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38972,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6b12d792a0291a331596eb89d6744275d398010e58ee4dc0a12279591400b6e6",
+      "outputHash": "sha256:0722d8155da9bd058f19b6f0ea68a0ef8d0524343ae15a668a7b41c752ba970d",
+      "mobile": {
+        "src": "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17122,
+        "outputHash": "sha256:91f2dd5d07df7b045b2757894834450f766e0945d51910dcde0309228a59371d"
+      }
+    },
+    "/images/articles/fujia-first-half-results-august-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34460,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:26fcd9fd2d2cbff7e5056357cbd837c4a581498d879124d2a7941cbce073fc2b",
+      "outputHash": "sha256:699d3b34b6612b072ed1a72d4f1fee6a2902f8a19ee102d4e80a6734e41e5485",
+      "mobile": {
+        "src": "/images/articles/fujia-first-half-results-august-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14450,
+        "outputHash": "sha256:3b16847aef3576fb408599069f18f56677ef9c0b7c61d4a4f14d48e164a366c3"
+      }
+    },
+    "/images/articles/fujia-nine-month-results-october-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34444,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:398d77ce2a4c88587b7f7d527c2b447d2a9ba701eaeae9edbd5f00579c66c1bf",
+      "outputHash": "sha256:c1fb18501990be4be47a98ae6156a93b1b5d0a9f9a79cc28afd02c77ccbdf5e4",
+      "mobile": {
+        "src": "/images/articles/fujia-nine-month-results-october-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14988,
+        "outputHash": "sha256:71f2319263e2e2f1676a92a09d4664a56783073983aa76a2ed10b092c2e6b4a1"
+      }
+    },
+    "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 76068,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c35f9a3cb4408aa727d7dec2c4eb58f75190cf0966035436cf12da32ae8a3440",
+      "outputHash": "sha256:87217417cfdd1a102a36723cd076b6b7916eac946d9146f20a2cf34f5954afb2",
+      "mobile": {
+        "src": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 28262,
+        "outputHash": "sha256:9a7a2796dc63d84e05f3105159412357637fe6f5a73b6a23d09ff24dc3022d66"
+      }
+    },
     "/images/articles/global-power-tool-companies/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3712,6 +3928,17 @@
         "bytes": 45366,
         "outputHash": "sha256:675cc26f5c3fe20606cc9aae49dc9c5a5ffdf60e18a12f27efbb51b0a7c1c834"
       }
+    },
+    "/images/articles/hisense-savvy-awe-robots-march-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 587,
+      "height": 330,
+      "bytes": 45688,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b3bcb4188019550010d73b4dea55063a80561094a89ed024df0678922549d4a4",
+      "outputHash": "sha256:138093bc903eb3ab091003613f5af7c4cd92a325ccb0dcbd47b3b0cb4d7f33fc"
     },
     "/images/articles/horst-pudwill-man-who-built-tti/01-cover.webp": {
       "role": "cover",
@@ -5405,6 +5632,78 @@
       "sourceHash": "sha256:4cbda578f93d75ac723d7b337b9a1d3136417cfb0657def4d1e63e68513aa7f0",
       "outputHash": "sha256:c0df4dee2a3175e8b301c014d55b800b978a7e1b090d1255c8cc3aa4cfd8d8f9"
     },
+    "/images/articles/lexy-annual-results-april-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36160,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:13d4cd5bb7f8bf4bfa7cc7fd2d3772efd47173aede742639e82be35925d63012",
+      "outputHash": "sha256:d05a4a87f9eb6b6495d6ceaa89b96cab545810c598bd9627e18c99f05236e2ce",
+      "mobile": {
+        "src": "/images/articles/lexy-annual-results-april-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15818,
+        "outputHash": "sha256:bb2a2efd97b75076bff1fb135a75a4adeeb823cd972082d876f3e51cdbdf432e"
+      }
+    },
+    "/images/articles/lexy-currency-impact-half-year-august-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35104,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:60c36d2099df920b9f435114b88645311a1336ca9680ac1010c29de86b61f0cf",
+      "outputHash": "sha256:5ad394e5c225cb11e636814b49c068c2ad7b57f009a50872fe5c473c4d86db91",
+      "mobile": {
+        "src": "/images/articles/lexy-currency-impact-half-year-august-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15258,
+        "outputHash": "sha256:c71457af4d0a647c2093156308f94d8656fecea46ef86b2fc7f2452821af9c22"
+      }
+    },
+    "/images/articles/lexy-nine-month-results-october-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36654,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f4660f2a029c48d3beb4c70eec07f0a00364629ef82801cdee80ddf2207ac05d",
+      "outputHash": "sha256:9575363ce069e91840471beb4a89975e9c8d179fa20a642bca6468ffd87b1dd6",
+      "mobile": {
+        "src": "/images/articles/lexy-nine-month-results-october-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16080,
+        "outputHash": "sha256:3b4262dc82c5e80548f90b2f68ae0b021e630841e2c0e1a1e778dab515bc9431"
+      }
+    },
+    "/images/articles/litian-solar-cleaning-funding-march-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 29994,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:660fdb55c4f656e8bdd97e31558eee621bedcb2d5943a31b3e404aee953bd062",
+      "outputHash": "sha256:c4437c88337fb220bd2a6c47cca028907c035ac9a1e5a0b92379e63e234a5d00",
+      "mobile": {
+        "src": "/images/articles/litian-solar-cleaning-funding-march-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13900,
+        "outputHash": "sha256:e1968b6073ebf77357d1a21aa9cbc0a84cc86b282f662f915e18e3cb92a24323"
+      }
+    },
     "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -6238,6 +6537,42 @@
         "outputHash": "sha256:e6c555bce743f98bff7ec0dd714221a75d2d7c1697f615d2afa2735131f1278c"
       }
     },
+    "/images/articles/nilfisk-annual-results-february-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38294,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:80e16805bc37cdf7bd7d3b378e22a0706f65e6d31e312012a244bae3ae44476e",
+      "outputHash": "sha256:0b24e32bf7bee63ad5e98fb03ec3e042c8c61f2bb0ae8ad13ab84aee99021c46",
+      "mobile": {
+        "src": "/images/articles/nilfisk-annual-results-february-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16668,
+        "outputHash": "sha256:1bd32cfde8efbe61789aac6ac32cc2c745b283309913de92a695a111514e0cdf"
+      }
+    },
+    "/images/articles/nilfisk-freudenberg-takeover-offer-december-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 48580,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:79ffbc465c00be27a997040cf6f0ab7ff02f052f7c598b9bf6ef5acc17b3df85",
+      "outputHash": "sha256:e66e1a0c144cb2b4a76f8b040191a1bb707c92e10f996dcee02bd5be28c538e4",
+      "mobile": {
+        "src": "/images/articles/nilfisk-freudenberg-takeover-offer-december-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21658,
+        "outputHash": "sha256:8f19c26f751e44d58606b3f978eaf71ee65b0c3eab9aa257438fb3a7dae43e7f"
+      }
+    },
     "/images/articles/ninebot-navimow-vs-roborock/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -6706,6 +7041,24 @@
         "outputHash": "sha256:bd861ec899a313a500bb1d592c4b4cf2a284d305db35b1a21b9abf9c1d47b30e"
       }
     },
+    "/images/articles/prulde-first-half-results-august-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34808,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8da7589b6843b7b90eff4d6e306607946190c4231a0e66fffd78d0277279e947",
+      "outputHash": "sha256:fb2fc02f0351a0d4097ce0486818f544bdec8dbc3cedb44c7e81051cb84d5767",
+      "mobile": {
+        "src": "/images/articles/prulde-first-half-results-august-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15164,
+        "outputHash": "sha256:ba687c37ccffa95a63dc5cbef19397e612d8cabaad8048af935d63263355cb56"
+      }
+    },
     "/images/articles/roborock-f25-ace-pro/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -7083,6 +7436,24 @@
         "height": 533,
         "bytes": 58156,
         "outputHash": "sha256:bfc15634509f4e46add463b3ea2c3f246df5c056da72fcedb8c03084bc52b8f4"
+      }
+    },
+    "/images/articles/robosense-robotics-lidar-shipments-may-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39852,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:934abebfd65f6d1d07914d1af394ec8c88b71900ad909edf88fbc7d4640add03",
+      "outputHash": "sha256:c83eb75987b8000c940a6440a3c2504ba7f2a0862f1d7c26fa3dc9b8867c2da6",
+      "mobile": {
+        "src": "/images/articles/robosense-robotics-lidar-shipments-may-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18046,
+        "outputHash": "sha256:c2e53d92873c73cb91bfa505eab3b9bb6a5612b04eb389a95b26d9af6a2148cb"
       }
     },
     "/images/articles/robot-vacuum-battery-drains-fast/01-cover.webp": {
@@ -8473,6 +8844,53 @@
         "height": 375,
         "bytes": 75142,
         "outputHash": "sha256:7aba113b0d1b44ad83f2df69d49a18947572f9b9b30192db287daf34a4e08a1b"
+      }
+    },
+    "/images/articles/supreme-court-ieepa-tariff-ruling-february-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38552,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:67ec075b8a0b6ff7289775f079ec7e29b27d56e530886a5f3db63277377d0fc0",
+      "outputHash": "sha256:f26bb7b3d8ce51bbb407e24277382636ffecf56c400275e6cb950f0c50de5ab4",
+      "mobile": {
+        "src": "/images/articles/supreme-court-ieepa-tariff-ruling-february-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18092,
+        "outputHash": "sha256:3c5ee014010f6b577c8180d72567e071b1a43f049ce50c415e1849cea2b4d9e0"
+      }
+    },
+    "/images/articles/switchbot-onero-h1-ces-january-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 871,
+      "height": 490,
+      "bytes": 15410,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:43b66b41ff9d0073e4e69cf2eadef8d51c853661e64a85871419909d12eab6b7",
+      "outputHash": "sha256:fbc62806de14e2d96191eac2730eff4f45d1926493323cc5a98cfc0b29e939a6"
+    },
+    "/images/articles/tennant-2025-results-erp-disruption-february-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 54040,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f2b764965dedb6024652920d42a21068978daa39d37b2d31b8ccff4bc1e96c2e",
+      "outputHash": "sha256:56d8055f5d4de68a5b211522efa100b93338f791e3a51ac263db0a160ff15d1d",
+      "mobile": {
+        "src": "/images/articles/tennant-2025-results-erp-disruption-february-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26028,
+        "outputHash": "sha256:f080c7c5cfc0c15650457ee5d5f3100ba76f83a000329faf2fdb5a5ce053b5df"
       }
     },
     "/images/articles/tineco-floor-one-i7-fold/01-cover.webp": {
@@ -35895,6 +36313,16 @@
       "cover": "/images/blog/autonomous-floor-scrubber-roi-calculator.webp",
       "body": []
     },
+    "avc-double-eleven-cleaning-sales-november-2025": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/avc-double-eleven-cleaning-sales-november-2025/01-cover.webp",
+      "body": []
+    },
+    "avc-first-half-cleaning-market-august-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/avc-first-half-cleaning-market-august-2026/01-cover.webp",
+      "body": []
+    },
     "backyard-robotics-china-next-hardware-battlefield": {
       "budgetClass": "standard",
       "cover": "/images/insights/backyard-robotics-china-next-hardware-battlefield-cover.jpg",
@@ -36324,6 +36752,11 @@
         "/images/blog/china-sanctions-rba-rule-conflict.webp"
       ]
     },
+    "china-trade-in-funding-fully-allocated-september-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/china-trade-in-funding-fully-allocated-september-2026/01-cover.webp",
+      "body": []
+    },
     "china-us-trade-war-pause": {
       "budgetClass": "standard",
       "cover": "/images/insights/china-us-trade-war-pause-cover.jpg",
@@ -36556,6 +36989,16 @@
         "/images/blog/pool-robot-procurement-acceptance-matrix.webp"
       ]
     },
+    "dechang-first-half-results-august-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dechang-first-half-results-august-2026/01-cover.webp",
+      "body": []
+    },
+    "dechang-nine-month-results-october-2025": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dechang-nine-month-results-october-2025/01-cover.webp",
+      "body": []
+    },
     "deerma-floorcare-value-for-money-limit": {
       "budgetClass": "standard",
       "cover": "/images/articles/deerma-floorcare-value-for-money-limit/01-cover.webp",
@@ -36701,6 +37144,11 @@
     "dolphin-vs-polaris-pool-cleaners": {
       "budgetClass": "standard",
       "cover": "/images/blog/dolphin-vs-polaris-robotic-pool-cleaner-platforms.webp",
+      "body": []
+    },
+    "donlim-xinbao-first-half-results-august-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/donlim-xinbao-first-half-results-august-2026/01-cover.webp",
       "body": []
     },
     "dreame-a2-vs-ecovacs-goat-a3000-lidar": {
@@ -37169,6 +37617,11 @@
         "/images/articles/eu-battery-rules-smartphones-power-tools/04-product-responsibility-map.webp"
       ]
     },
+    "eu-chinese-robot-mower-investigation-november-2025": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eu-chinese-robot-mower-investigation-november-2025/01-cover.webp",
+      "body": []
+    },
     "eufy-omni-c28": {
       "budgetClass": "standard",
       "cover": "/images/articles/eufy-omni-c28/01-cover.webp",
@@ -37249,6 +37702,16 @@
         "/images/blog/factory-vs-trading-company-comparison.webp",
         "/images/blog/wrong-supplier-structure-hidden-cost.webp"
       ]
+    },
+    "fairland-hong-kong-application-april-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fairland-hong-kong-application-april-2026/01-cover.webp",
+      "body": []
+    },
+    "fcc-foreign-uas-covered-list-december-2025": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover.webp",
+      "body": []
     },
     "fcc-robot-vacuum-lawn-mower-restrictions": {
       "budgetClass": "standard",
@@ -37332,6 +37795,21 @@
         "/images/blog/freudenberg-professional-cleaning-platform.webp",
         "/images/blog/freudenberg-nilfisk-vs-karcher.webp"
       ]
+    },
+    "fujia-first-half-results-august-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fujia-first-half-results-august-2026/01-cover.webp",
+      "body": []
+    },
+    "fujia-nine-month-results-october-2025": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fujia-nine-month-results-october-2025/01-cover.webp",
+      "body": []
+    },
+    "gausium-mira-issa-innovation-award-november-2025": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
+      "body": []
     },
     "german-vacuum-brands-in-the-cordless-wave": {
       "budgetClass": "standard",
@@ -37492,6 +37970,11 @@
         "/images/insights/hidden-risks-in-cordless-vacuum-development-image-002.jpg",
         "/images/insights/hidden-risks-in-cordless-vacuum-development-image-003.jpg"
       ]
+    },
+    "hisense-savvy-awe-robots-march-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/hisense-savvy-awe-robots-march-2026/01-cover.webp",
+      "body": []
     },
     "historic-opportunities-in-the-vacuum-industry": {
       "budgetClass": "standard",
@@ -38023,6 +38506,21 @@
         "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-011.jpg"
       ]
     },
+    "lexy-annual-results-april-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/lexy-annual-results-april-2026/01-cover.webp",
+      "body": []
+    },
+    "lexy-currency-impact-half-year-august-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/lexy-currency-impact-half-year-august-2026/01-cover.webp",
+      "body": []
+    },
+    "lexy-nine-month-results-october-2025": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/lexy-nine-month-results-october-2025/01-cover.webp",
+      "body": []
+    },
     "lithium-batteries-in-vacuums-and-power-tools": {
       "budgetClass": "standard",
       "cover": "/images/insights/lithium-batteries-in-vacuums-and-power-tools-cover.jpg",
@@ -38047,6 +38545,11 @@
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-017.jpg",
         "/images/insights/lithium-batteries-in-vacuums-and-power-tools-image-018.jpg"
       ]
+    },
+    "litian-solar-cleaning-funding-march-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/litian-solar-cleaning-funding-march-2026/01-cover.webp",
+      "body": []
     },
     "london-talks-55-percent-tariff": {
       "budgetClass": "standard",
@@ -38389,6 +38892,16 @@
         "/images/insights/nilfisk-2018-annual-report-commercial-cleaning-image-018.jpg"
       ]
     },
+    "nilfisk-annual-results-february-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/nilfisk-annual-results-february-2026/01-cover.webp",
+      "body": []
+    },
+    "nilfisk-freudenberg-takeover-offer-december-2025": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/nilfisk-freudenberg-takeover-offer-december-2025/01-cover.webp",
+      "body": []
+    },
     "ninebot-navimow-vs-roborock": {
       "budgetClass": "standard",
       "cover": "/images/articles/ninebot-navimow-vs-roborock/01-cover.webp",
@@ -38510,6 +39023,11 @@
         "/images/blog/private-label-cleaning-product-category-fit.webp",
         "/images/blog/private-label-cleaning-products-checklist.webp"
       ]
+    },
+    "prulde-first-half-results-august-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/prulde-first-half-results-august-2026/01-cover.webp",
+      "body": []
     },
     "quality-control-cleaning-appliances-china": {
       "budgetClass": "standard",
@@ -38710,6 +39228,11 @@
     "roborock-vs-roomba-robot-vacuums": {
       "budgetClass": "standard",
       "cover": "/images/blog/roborock-vs-roomba-system.webp",
+      "body": []
+    },
+    "robosense-robotics-lidar-shipments-may-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robosense-robotics-lidar-shipments-may-2026/01-cover.webp",
       "body": []
     },
     "robot-lawn-mower-buying-guide": {
@@ -39431,6 +39954,11 @@
       "cover": "/images/blog/sunseeker-vs-mammotion-robot-mowers.webp",
       "body": []
     },
+    "supreme-court-ieepa-tariff-ruling-february-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/supreme-court-ieepa-tariff-ruling-february-2026/01-cover.webp",
+      "body": []
+    },
     "survival-guide-under-xiaomi-ecosystem-pressure": {
       "budgetClass": "standard",
       "cover": "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-cover.jpg",
@@ -39442,6 +39970,16 @@
         "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-005.jpg",
         "/images/insights/survival-guide-under-xiaomi-ecosystem-pressure-image-006.jpg"
       ]
+    },
+    "switchbot-onero-h1-ces-january-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/switchbot-onero-h1-ces-january-2026/01-cover.webp",
+      "body": []
+    },
+    "tennant-2025-results-erp-disruption-february-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tennant-2025-results-erp-disruption-february-2026/01-cover.webp",
+      "body": []
     },
     "the-counterattack-of-chyson-vacuum-brands": {
       "budgetClass": "standard",
@@ -40692,6 +41230,24 @@
         }
       }
     },
+    "avc-double-eleven-cleaning-sales-november-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/avc-double-eleven-cleaning-sales-november-2025/01-cover.webp",
+          "hash": "sha256:43c69c1fd096d5e794889d4266cb3f275018bc74eacb28f84dccb8807cf820ac"
+        }
+      }
+    },
+    "avc-first-half-cleaning-market-august-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/avc-first-half-cleaning-market-august-2026/01-cover.webp",
+          "hash": "sha256:a39a68d07f2bfbd0f7e988683efea3bf8501c7338cb5b2076b274d1583be1991"
+        }
+      }
+    },
     "beatbot-aquasense-x": {
       "files": {
         "01-cover.webp": {
@@ -40966,6 +41522,15 @@
         }
       }
     },
+    "china-trade-in-funding-fully-allocated-september-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/china-trade-in-funding-fully-allocated-september-2026/01-cover.webp",
+          "hash": "sha256:f2031407bb21050c7e575ce5911543ec9cc3956939fdc8bea297a3737d27ab01"
+        }
+      }
+    },
     "commercial-cleaning-robots-next": {
       "files": {
         "01-cover.webp": {
@@ -41080,6 +41645,24 @@
         }
       }
     },
+    "dechang-first-half-results-august-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dechang-first-half-results-august-2026/01-cover.webp",
+          "hash": "sha256:42f75dce131d2010c42bbe03552d9d701d6243db9bb71acb1d4f1b169e1cd3d2"
+        }
+      }
+    },
+    "dechang-nine-month-results-october-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dechang-nine-month-results-october-2025/01-cover.webp",
+          "hash": "sha256:a3ace58c56873bda80a17c1b2af1c56e3c6fe3d3f79a5a362878634c0f0a5bf0"
+        }
+      }
+    },
     "delonghi-family-global-coffee-business": {
       "files": {
         "01-cover.png": {
@@ -41140,6 +41723,15 @@
           "status": "matched",
           "primary": "/images/articles/dji-growth-drones-pocket-cameras/04-pocket-design.webp",
           "hash": "sha256:102cc628f62ea04f1cf5deefa9e019cf09490a55c0cefdcf14a64b774bed45f1"
+        }
+      }
+    },
+    "donlim-xinbao-first-half-results-august-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/donlim-xinbao-first-half-results-august-2026/01-cover.webp",
+          "hash": "sha256:27e2d93c0ce6e87599f371af612684e8ac87ec8d9f47428e3ce88a2f067575ce"
         }
       }
     },
@@ -41551,6 +42143,15 @@
         }
       }
     },
+    "eu-chinese-robot-mower-investigation-november-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/eu-chinese-robot-mower-investigation-november-2025/01-cover.webp",
+          "hash": "sha256:c23f93fb6265927f5d39ff865c3a387fd4506b444de117e34b31cb41eef2541e"
+        }
+      }
+    },
     "eufy-omni-c28": {
       "files": {
         "01-cover.png": {
@@ -41702,6 +42303,51 @@
         }
       }
     },
+    "fairland-hong-kong-application-april-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/fairland-hong-kong-application-april-2026/01-cover.webp",
+          "hash": "sha256:e885b27fde788927430dfdda10a1c3bba32aa1a9b4fb48bcaf9aec5a24122d32"
+        }
+      }
+    },
+    "fcc-foreign-uas-covered-list-december-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover.webp",
+          "hash": "sha256:6b12d792a0291a331596eb89d6744275d398010e58ee4dc0a12279591400b6e6"
+        }
+      }
+    },
+    "fujia-first-half-results-august-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/fujia-first-half-results-august-2026/01-cover.webp",
+          "hash": "sha256:26fcd9fd2d2cbff7e5056357cbd837c4a581498d879124d2a7941cbce073fc2b"
+        }
+      }
+    },
+    "fujia-nine-month-results-october-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/fujia-nine-month-results-october-2025/01-cover.webp",
+          "hash": "sha256:398d77ce2a4c88587b7f7d527c2b447d2a9ba701eaeae9edbd5f00579c66c1bf"
+        }
+      }
+    },
+    "gausium-mira-issa-innovation-award-november-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
+          "hash": "sha256:c35f9a3cb4408aa727d7dec2c4eb58f75190cf0966035436cf12da32ae8a3440"
+        }
+      }
+    },
     "global-power-tool-companies": {
       "files": {
         "01-cover.webp": {
@@ -41782,6 +42428,15 @@
           "status": "matched",
           "primary": "/images/articles/groupe-seb-global-household-business/04-china-cooperation.webp",
           "hash": "sha256:ca1daeb3928c1256672da5ba3af3a90b17bc1426624bce7d9ec1d2756dafa7e2"
+        }
+      }
+    },
+    "hisense-savvy-awe-robots-march-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/hisense-savvy-awe-robots-march-2026/01-cover.webp",
+          "hash": "sha256:b3bcb4188019550010d73b4dea55063a80561094a89ed024df0678922549d4a4"
         }
       }
     },
@@ -42244,6 +42899,42 @@
         }
       }
     },
+    "lexy-annual-results-april-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/lexy-annual-results-april-2026/01-cover.webp",
+          "hash": "sha256:13d4cd5bb7f8bf4bfa7cc7fd2d3772efd47173aede742639e82be35925d63012"
+        }
+      }
+    },
+    "lexy-currency-impact-half-year-august-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/lexy-currency-impact-half-year-august-2026/01-cover.webp",
+          "hash": "sha256:60c36d2099df920b9f435114b88645311a1336ca9680ac1010c29de86b61f0cf"
+        }
+      }
+    },
+    "lexy-nine-month-results-october-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/lexy-nine-month-results-october-2025/01-cover.webp",
+          "hash": "sha256:f4660f2a029c48d3beb4c70eec07f0a00364629ef82801cdee80ddf2207ac05d"
+        }
+      }
+    },
+    "litian-solar-cleaning-funding-march-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/litian-solar-cleaning-funding-march-2026/01-cover.webp",
+          "hash": "sha256:660fdb55c4f656e8bdd97e31558eee621bedcb2d5943a31b3e404aee953bd062"
+        }
+      }
+    },
     "mammotion-luba-3-awd-1500": {
       "files": {
         "01-cover.webp": {
@@ -42569,6 +43260,24 @@
         }
       }
     },
+    "nilfisk-annual-results-february-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/nilfisk-annual-results-february-2026/01-cover.webp",
+          "hash": "sha256:80e16805bc37cdf7bd7d3b378e22a0706f65e6d31e312012a244bae3ae44476e"
+        }
+      }
+    },
+    "nilfisk-freudenberg-takeover-offer-december-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/nilfisk-freudenberg-takeover-offer-december-2025/01-cover.webp",
+          "hash": "sha256:79ffbc465c00be27a997040cf6f0ab7ff02f052f7c598b9bf6ef5acc17b3df85"
+        }
+      }
+    },
     "ninebot-navimow-vs-roborock": {
       "files": {
         "01-cover.png": {
@@ -42694,6 +43403,15 @@
         }
       }
     },
+    "prulde-first-half-results-august-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/prulde-first-half-results-august-2026/01-cover.webp",
+          "hash": "sha256:8da7589b6843b7b90eff4d6e306607946190c4231a0e66fffd78d0277279e947"
+        }
+      }
+    },
     "roborock-f25-ace-pro": {
       "files": {
         "01-cover.png": {
@@ -42796,6 +43514,15 @@
           "status": "matched",
           "primary": "/images/articles/roborock-saros-20-sonic/01-cover.webp",
           "hash": "sha256:80778f6e3d466cb70ccb054868cf9bb3996fee78b4e25b130831fbee77f8d3ea"
+        }
+      }
+    },
+    "robosense-robotics-lidar-shipments-may-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robosense-robotics-lidar-shipments-may-2026/01-cover.webp",
+          "hash": "sha256:934abebfd65f6d1d07914d1af394ec8c88b71900ad909edf88fbc7d4640add03"
         }
       }
     },
@@ -43186,6 +43913,33 @@
           "status": "matched",
           "primary": "/images/articles/sunseeker-s4/01-cover.webp",
           "hash": "sha256:511f46a4cb35c2f575f295ea2ed4a28d66b9a05590eb794fec86c27e858a2935"
+        }
+      }
+    },
+    "supreme-court-ieepa-tariff-ruling-february-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/supreme-court-ieepa-tariff-ruling-february-2026/01-cover.webp",
+          "hash": "sha256:67ec075b8a0b6ff7289775f079ec7e29b27d56e530886a5f3db63277377d0fc0"
+        }
+      }
+    },
+    "switchbot-onero-h1-ces-january-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/switchbot-onero-h1-ces-january-2026/01-cover.webp",
+          "hash": "sha256:43b66b41ff9d0073e4e69cf2eadef8d51c853661e64a85871419909d12eab6b7"
+        }
+      }
+    },
+    "tennant-2025-results-erp-disruption-february-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tennant-2025-results-erp-disruption-february-2026/01-cover.webp",
+          "hash": "sha256:f2b764965dedb6024652920d42a21068978daa39d37b2d31b8ccff4bc1e96c2e"
         }
       }
     },

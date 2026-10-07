@@ -12,9 +12,12 @@ product_slugs: ["dyson-pencilwash"]
 image_product: "dyson-pencilwash"
 source_titles: ["Dyson Announces PencilWash Lightweight Hard-Floor Cleaner — original source"]
 source_urls: ["https://www.dyson.com/discover/news/latest/introducing-pencilwash"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Dyson](/brands/dyson) introduced the [PencilWash](/products/dyson-pencilwash) on February 19, 2026, describing a lightweight hard-floor cleaner with a slim handle and a roller supplied continuously with fresh water.
+[Dyson](/brands/dyson) announced the [PencilWash](/products/dyson-pencilwash) on February 19, 2026, introducing a lightweight cleaner for hard floors. The [U.S. release](https://www.dyson.com/discover/news/latest/introducing-pencilwash) scheduled availability for March 17 at a listed price of USD 349, positioning the machine around a slim handle and compact wet-cleaning head.
 
-The U.S. announcement listed a full-machine weight of 4.9 lb and up to 30 minutes of runtime. Dyson scheduled U.S. availability for March 17 at an announced price of $349; the runtime figure was a manufacturer specification dependent on use.
+PencilWash supplies its roller continuously with fresh water as it travels across the floor. That arrangement combines the handling of a lightweight upright appliance with a dedicated washing function. It is a wet floor cleaner, so its role differs from a dry cordless vacuum even where the two product formats share a slender appearance.
 
-This article covers the original PencilWash. The later [W1 PencilWash announcement](/news/dyson-w1-pencilwash-announcement-2026) is a separate product update and should not be used to replace the original model's specifications.
+Dyson listed a full-machine weight of 4.9 lb and a runtime of up to 30 minutes. The weight refers to the complete machine rather than the load felt at the handle, while the runtime is a maximum manufacturer specification that depends on use. Those details describe the original U.S. launch package.
+
+The announcement predates the later [W1 PencilWash update](/news/dyson-w1-pencilwash-announcement-2026). The W1 is a separate model with its own design changes, specifications and market information. The February release therefore remains the reference for the original PencilWash's announced price and sales schedule, even as the wider range develops.

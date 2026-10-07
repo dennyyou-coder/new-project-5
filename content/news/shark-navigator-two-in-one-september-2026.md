@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["SharkNinja — Navigator 2-in-1 launch"]
 source_urls: ["https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[Shark](/brands/shark)Ninja introduced the Navigator 2-in-1 Robot Vacuum and Mop on September 29, 2026, adding a lower-priced combination model to its U.S. robot range. The [company release](https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx) emphasizes straightforward setup, mapped cleaning and a bagless self-emptying base.
 
-[Shark](/brands/shark)Ninja introduced the Shark Navigator 2-in-1 Robot Vacuum and Mop on 29 September 2026. The robot uses LiDAR navigation and combines vacuuming with hard-floor mopping.
+The robot uses 360-degree LiDAR to map rooms and follows organized rows during cleaning. Users can schedule work, define restricted areas and view the home map through the SharkClean app. The brushroll is designed to reduce hair wrapping as the machine vacuums hard flooring and carpets.
 
-The company said the version with a base rated for up to 60 days of debris was available on its U.S. website for USD 599. A USD 499 version with a smaller, 30-day base was planned for Amazon, Costco and Sam's Club. Base capacities are manufacturer estimates; actual emptying intervals depend on use.
+In mopping mode, Navigator vacuums and mops hard floors while avoiding carpets and rugs. After the task, collected debris transfers into the base. Two base configurations were announced, rated by the manufacturer for up to 30 or 60 days of debris, with the actual emptying interval depending on household dirt and use.
+
+The 60-day version was available through SharkNinja's U.S. website at USD 599, with Amazon availability planned. A USD 499 version with the smaller base was scheduled for Amazon, Costco and Sam's Club. The different base capacities create distinct retail offers within the same Navigator 2-in-1 family, making the included station an important part of comparing the launch prices.

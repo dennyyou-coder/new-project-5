@@ -6,6 +6,7 @@ import { newsStoryVisuals, newsCompanyVisuals } from "../lib/newsVisuals.ts";
 import { getInsights } from "../lib/content.ts";
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
 import { productModels } from "../lib/products.ts";
+import { getArticleImage } from "../lib/articleImages.ts";
 import { buildBlogSitemap } from "../lib/sitemaps.ts";
 
 test("news separates publication from announcement dates and resolves every company, product and image", () => {
@@ -14,6 +15,7 @@ test("news separates publication from announcement dates and resolves every comp
   const brands = new Set(getPublishedBrandProfiles(insights).map((brand) => brand.slug));
   const products = new Map(productModels.map((model) => [model.slug, model]));
   assert.ok(articles.length >= 8);
+  assert.equal(new Set(articles.map(article => article.slug)).size, articles.length, "Markdown and MDX news must not duplicate a public URL");
   for (const article of articles) {
     assert.ok(Date.parse(article.eventDate) <= Date.parse(article.publishedAt), article.slug);
     assert.ok(article.sources.length > 0);
@@ -30,6 +32,8 @@ test("news separates publication from announcement dates and resolves every comp
       assert.ok(!/\/logo[.-]/i.test(visual.src), `${article.slug}: logo used as news image`);
       if (visual.src.startsWith("/")) assert.ok(fs.existsSync(`public${visual.src}`), `${article.slug}: missing image`);
       else assert.match(visual.src, /^https:\/\//);
+      if (visual.prepared) assert.ok(getArticleImage(visual.src), `${article.slug}: prepared image missing from runtime index`);
+      if (article.coverImage) assert.equal(visual.src, article.coverImage, `${article.slug}: prepared cover not used`);
     }
     if (article.imageProduct) {
       assert.ok(article.productSlugs.includes(article.imageProduct));

@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["IT Home — Mijia 7C launch"]
 source_urls: ["https://www.ithome.com/0/994/855.htm"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+The Mijia Robot Vacuum 7C went on sale in China on August 27, 2026, according to IT Home. The model brings a roller supplied with fresh water and an extending edge-cleaning mechanism to a lower-priced part of Xiaomi's robot-vacuum range.
 
-The Mijia Robot Vacuum 7C went on sale in China on 27 August 2026, according to IT Home. The model uses a roller mop supplied with fresh water, an extending edge-cleaning mechanism and a dock that handles dust collection and mop drying.
+The report listed a JD.com introductory price of CNY2,704. Combining a store discount with an eligible government subsidy reduced the advertised amount to approximately CNY2,068. That conditional offer belongs to the Chinese launch, with purchasing options and local terms available through Xiaomi's sales channels, including its [official store](https://www.mi.com/).
 
-The report listed a JD.com introductory price of CNY 2,704, falling to about CNY 2,068 with store discounts and an eligible government subsidy. Xiaomi advertises maximum suction of 30,000 Pa. The discounted amount is conditional and should not be treated as an international price.
+Xiaomi specifies maximum suction of 30,000 Pa and a roller speed of 200 revolutions per minute. The roller extends toward edges, working alongside brushes to reach the floor perimeter. A camera and line-laser system assist obstacle detection, while ultrasonic carpet sensing triggers the roller to lift by up to 10 mm when crossing suitable carpeted areas.
+
+The robot measures approximately 9 cm high and is rated to cross thresholds up to 2 cm. Its dock collects dust, washes the roller and provides hot-air drying, with separate four-liter clean-water and 3.5-liter dirty-water tanks. Those maintenance features support repeated vacuuming and mopping sessions while keeping fresh water separate from the water collected during cleaning.

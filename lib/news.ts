@@ -29,12 +29,13 @@ export type NewsArticle = {
   productSlugs: string[];
   relatedArticles: string[];
   imageProduct?: string;
+  coverImage?: string;
   sources: { title: string; url: string }[];
   readingTime: string;
   content: string;
 };
 
-// News remains plain Markdown; image relationships are reviewed separately in newsVisuals.
+// Both extensions contain Markdown. Prepared covers use the existing MDX image workflow.
 const directory = path.join(process.cwd(), "content", "news");
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const array = (value: unknown): string[] => Array.isArray(value) ? value.map(String) : [];
@@ -51,10 +52,10 @@ export function newsDate(value: string) {
 
 export function getNews(): NewsArticle[] {
   if (!fs.existsSync(directory)) return [];
-  return fs.readdirSync(directory).filter((file) => file.endsWith(".md")).flatMap((file) => {
+  return fs.readdirSync(directory).filter((file) => /\.mdx?$/.test(file)).flatMap((file) => {
     const { data, content } = parseFrontmatter(fs.readFileSync(path.join(directory, file), "utf8"));
     if (data.hidden === "true") return [];
-    const slug = file.slice(0, -3);
+    const slug = file.replace(/\.mdx?$/, "");
     const topic = String(data.topic) as NewsTopic;
     const sources = array(data.source_urls).map((url, index) => ({
       url, title: array(data.source_titles)[index] || "Original announcement"
@@ -79,6 +80,7 @@ export function getNews(): NewsArticle[] {
       sortDate: String(data.sortDate), eventDate: String(data.eventDate), author: String(data.author || "World Clean Biz Editorial"),
       brandSlugs: array(data.brand_slugs), productSlugs: array(data.product_slugs),
       relatedArticles: array(data.related_articles), imageProduct: data.image_product ? String(data.image_product) : undefined,
+      coverImage: data.coverImage ? String(data.coverImage) : undefined,
       sources, readingTime: `${Math.max(1, Math.ceil(words / 220))} min read`, content
     }];
   }).sort((a, b) => b.eventDate.localeCompare(a.eventDate) || b.sortDate.localeCompare(a.sortDate) || a.slug.localeCompare(b.slug));
@@ -103,7 +105,9 @@ export function getNewsContext(article: NewsArticle) {
 
 export function getNewsVisual(article: NewsArticle): NewsVisual | undefined {
   const storyVisual = newsStoryVisuals[article.slug];
-  if (storyVisual) return storyVisual;
+  if (storyVisual) return article.coverImage
+    ? { ...storyVisual, src: article.coverImage, prepared: true }
+    : storyVisual;
   if (article.imageProduct && article.productSlugs.includes(article.imageProduct)) {
     const product = getProduct(article.imageProduct);
     if (product) return {

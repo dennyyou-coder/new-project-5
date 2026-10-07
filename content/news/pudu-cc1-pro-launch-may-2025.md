@@ -11,9 +11,12 @@ brand_slugs: ["pudu-robotics"]
 related_articles: ["commercial-cleaning-robots-next"]
 source_titles: ["Pudu Launches CC1 Pro with AI Inspection of Cleaning Results — original source"]
 source_urls: ["https://www.pudurobotics.com/about/news/68353101f78ce7004388feb6"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[Pudu Robotics](/brands/pudu-robotics) announced CC1 Pro on May 27, 2025, extending its four-function CC1 cleaning platform.
+[Pudu Robotics](/brands/pudu-robotics) launched CC1 Pro on May 27, 2025, adding inspection of cleaning results to its commercial floorcare platform. The robot builds on CC1's combination of sweeping, scrubbing, vacuuming and dust-mopping, with new functions intended to identify unfinished work after a cleaning pass.
 
-The company described a rear camera that checks cleaned floors, records persistent dirt on a map and triggers another pass where needed. The robot also adjusts cleaning settings for floor conditions and monitors cleaning components for contamination that could leave streaks or water behind.
+In the [company announcement](https://www.pudurobotics.com/about/news/68353101f78ce7004388feb6), Pudu described a rear camera that checks the floor, marks persistent stains on a map and directs the robot to clean those locations again. A heat map then shows areas that may still need staff attention, giving facility teams a record of results as well as task completion.
 
-Its navigation combined visual and laser mapping, while operational heat maps were intended to help facility teams supervise work. May 27 is the original company announcement date; later June wire distribution does not change that chronology.
+CC1 Pro also changes cleaning intensity according to the surface and dirt level. It can apply stronger treatment to heavily soiled sections and use less intensive settings elsewhere. Component monitoring is intended to detect contaminated brushes or squeegees that could leave streaks or residual water, prompting another pass or a maintenance alert.
+
+The navigation system combines visual and laser mapping without requiring ceiling markers. Pudu positions the machine for retail centers, hospitals, airports and warehouses, where staff need to supervise cleaning across changing layouts. The May announcement established the product's launch chronology; subsequent distribution of the release in June covered the same introduction.

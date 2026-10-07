@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Roborock — 2025 annual report"]
 source_urls: ["https://static.cninfo.com.cn/finalpage/2026-04-23/1225147552.PDF"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[Roborock](/brands/roborock) disclosed 2025 revenue of CNY 18.695 billion on April 23, 2026, a 56.51% increase from the previous year. Attributable net profit declined 31.03% to CNY 1.363 billion, showing that the expansion in sales did not translate into higher annual earnings.
 
-[Roborock](/brands/roborock) disclosed 2025 revenue of CNY 18.695 billion on 23 April 2026, up 56.51% year on year. Attributable net profit declined 31.03% to CNY 1.363 billion.
+The [annual report](https://static.cninfo.com.cn/finalpage/2026-04-23/1225147552.PDF) also recorded profit excluding non-recurring items of CNY 1.092 billion, down 32.60%. Both profit measures moved lower despite the substantial revenue gain, making profitability a separate part of the year's performance from shipment or sales growth.
 
-Profit excluding non-recurring items fell 32.60% to CNY 1.092 billion. The annual figures show that the expansion in sales did not translate into higher net earnings. They cover 2025 operations rather than the first quarter of 2026.
+Research and development investment reached approximately CNY 1.420 billion, up 46.13%, equivalent to 7.59% of revenue. The company reported 1,481 research and development personnel. Its report describes continued work on navigation, motion control, cleaning systems and automated dock maintenance as the product range develops across household cleaning applications.
+
+The board proposed a cash dividend of CNY 0.5267 per share before tax, subject to the relevant distribution arrangements. The financial statements received an unqualified audit opinion. These are full-calendar-year 2025 figures; the first-quarter 2026 results published in the same reporting season provide a separate, more recent operating period and do not change the annual comparison.

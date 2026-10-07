@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Guangming — Dreame embodied robotics at CES"]
 source_urls: ["https://tech.gmw.cn/2026-01/07/content_38524002.htm"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[Dreame](/brands/dreame) showed yard and pool robots with object-handling functions at CES 2026 in Las Vegas, extending its exhibition beyond conventional floor-cleaning machines. Guangming's January 7 report described the company's largest CES presence to that point, with a display area exceeding 2,000 square metres.
 
-[Dreame](/brands/dreame) displayed embodied-intelligence yard and pool robots at CES 2026, Guangming reported on 7 January. The APEX mower presentation included an arm intended to pick up and organize objects around a garden.
+The APEX mower presentation combined lawn care with an arm intended to recognize, pick up and organize objects found in a garden. According to the report, Dreame described recognition of more than 300 types of outdoor items. The additional handling mechanism was the central difference from a mower whose task is limited to travelling over grass and cutting it.
 
-The pool-robot display explored mapping and object-handling functions. These were exhibition demonstrations of broader capabilities; the report did not establish a retail price or delivery date for every device shown.
+The pool demonstration similarly explored tasks beyond debris collection. Dreame presented three-dimensional mapping and recognition of objects and dirty corners, together with grabbing and wiping actions. These functions were shown as part of its embodied-intelligence work, which combines environmental sensing with physical actions.
+
+The wider exhibition included household cleaning, kitchen appliances, personal care and other smart-home equipment. The yard and pool displays illustrated the direction of Dreame's development programme, but the report did not establish a retail price or delivery schedule for each machine. They were exhibition demonstrations, with commercial details still separate from the capabilities presented.

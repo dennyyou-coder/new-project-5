@@ -13,10 +13,12 @@ related_articles: []
 source_titles: ["BTTR — Narwal Flow 2 Australian launch announcement"]
 source_urls: ["https://www.bttr.reviews/the-narwal-flow-2-launches/"]
 image_product: "narwal-flow-2"
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[Narwal](/brands/narwal) planned to introduce [Flow 2](/products/narwal-flow-2) in Australia on June 25, 2026, according to BTTR's May 20 report. The Complete package, including accessories, was announced at AUD 2,999, with preorders scheduled from May 25 through June 24.
 
-[Narwal](/brands/narwal) announced plans to bring Flow 2 to Australia on 25 June 2026, according to BTTR's report published on 20 May. Preorders were scheduled from 25 May to 24 June, with the Complete accessory package priced at AUD 2,999.
+The new generation retained Narwal's moving-track mopping approach while adding a hotter cleaning system. The Australian announcement specified 60°C water during mopping, up to 100°C for mop self-cleaning, and 12 N of downward pressure. Those temperatures refer to different cleaning stages and should not be combined into a single floor-contact temperature.
 
-The announcement highlights a heated track mop and an updated station and battery system. These launch prices and dates describe the Australian offer at the time, rather than current stock or promotional pricing.
+The reported specification also included maximum suction of 31,000 Pa and a 7,000 mAh battery with NavoPower battery management. Narwal described a redesigned station with easier tank lifting, a glass front panel and a status light bar, changing both maintenance access and the product's appearance in the home.
 
-Explore the related product page: [Narwal Flow 2](/products/narwal-flow-2).
+Navigation updates included 3D color mapping and camera-based object recognition. The announcement established the planned Australian offer for Flow 2, separate from launches in other regions. The accessory bundle, price and preorder dates belong to that local release; they are useful historical launch details rather than a statement of current stock or discounts.

@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Dyson — 2025 financial results"]
 source_urls: ["https://www.dyson.co.uk/discover/news/press-releases/dyson-financial-results-2025"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[Dyson](/brands/dyson) reported lower revenue but stronger operating earnings for 2025 in its [results announcement](https://www.dyson.co.uk/discover/news/press-releases/dyson-financial-results-2025) on March 26, 2026. Revenue was GBP 6.13 billion, compared with GBP 6.57 billion a year earlier, as the company continued introducing products across its appliance portfolio.
 
-[Dyson](/brands/dyson) released its 2025 results on 26 March 2026, reporting revenue of GBP 6.13 billion compared with GBP 6.57 billion in 2024. EBITDA reached GBP 1.11 billion, equivalent to an 18% margin.
+EBITDA reached GBP 1.11 billion, representing an approximately 18% margin on sales. Operating profit was about GBP 600 million. EBITDA and operating profit use different accounting bases, so the two figures describe separate measures of earnings rather than amounts that can be added together. Both relate to the whole group.
 
-The company reported operating profit of about GBP 600 million and research and development investment of approximately GBP 400 million. The group results span several appliance categories and do not disclose the standalone profitability of its floorcare range.
+Dyson reported research and development investment of approximately GBP 400 million. It also said it launched 13 products during 2025 and intended to reach more price points in 2026. The results announcement identified U.S. tariffs as a significant influence on the business during the year, alongside the continuing product programme.
+
+For floorcare suppliers and retailers, the figures show the financial position of a company competing across several household-appliance categories. The disclosure does not separately state the profitability of robot vacuums, cordless vacuums or wet floor cleaners. Its 2026 product plans were management's stated direction at the results date, rather than completed launches.

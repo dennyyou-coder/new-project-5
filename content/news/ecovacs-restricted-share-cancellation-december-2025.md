@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["ECOVACS filing via Shanghai Securities News — incentive-share cancellation"]
 source_urls: ["https://paper.cnstock.com/html/2025-12/25/content_2162551.htm"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[ECOVACS](/brands/ecovacs) disclosed on December 25, 2025 that it would repurchase and cancel 243,400 restricted shares held by 46 former participants in its employee incentive programme. The [implementation announcement](https://paper.cnstock.com/html/2025-12/25/content_2162551.htm) scheduled the cancellation for December 29.
 
-[ECOVACS](/brands/ecovacs) disclosed on 25 December 2025 that it would repurchase and cancel 243,400 restricted shares held by 46 participants who had left the company and no longer qualified for its incentive plan. Cancellation was scheduled for 29 December.
+The participants had left the company and no longer qualified under the 2024 stock-option and restricted-share plan. The affected shares had been granted but had not yet been released from their restrictions. Their treatment followed the scheme's conditions for departing employees, rather than an invitation for investors generally to sell shares back to the company.
 
-The action implements conditions of the employee equity scheme. It should be distinguished from a general market share-buyback program intended to return capital to all shareholders.
+The board had approved the action on October 24. ECOVACS then followed the creditor-notification process and said it had received no requests for repayment or guarantees during the specified notification period. By the December announcement, it had submitted the cancellation application to the securities registration and clearing organization.
+
+After the planned cancellation, 5,570,100 restricted shares would remain under the incentive arrangements. The announcement concerned implementation of a defined employee-equity adjustment, with company registration changes to follow. It did not describe a broad market buyback or establish the reasons behind all employee departures. The December 29 date was the expected completion date stated in the notice.

@@ -10,9 +10,12 @@ eventDate: "2025-03-11"
 brand_slugs: ["irobot"]
 source_titles: ["iRobot Refreshes Roomba Lineup with LiDAR and New Docking Systems — original source"]
 source_urls: ["https://media.irobot.com/2025-03-11-iRobot-Introduces-Suite-of-Innovative-ROOMBA-R-Floor-Cleaning-Robots"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
-[iRobot](/brands/irobot) announced a broad Roomba refresh on March 11, 2025. The new range used ClearView LiDAR navigation and an updated Roomba Home app, with features varying across the 105, 205, Plus 405 and Plus 505 families.
+[iRobot](/brands/irobot) announced a broad refresh of its Roomba range on March 11, 2025, bringing LiDAR navigation and a revised app across several product families. The [launch announcement](https://media.irobot.com/2025-03-11-iRobot-Introduces-Suite-of-Innovative-ROOMBA-R-Floor-Cleaning-Robots) covered the 105, 205, Plus 405 and Plus 505 lines, with different approaches to vacuuming, mopping and routine maintenance.
 
-The 205 introduced onboard debris compaction. The Plus 405 and 505 combined spinning mop pads with AutoWash docks, while selected models added camera-based obstacle recognition and extending edge-cleaning functions.
+The 205 family introduced an onboard debris-compaction system, reducing the need to empty the robot's bin as frequently. Both vacuum-only and combination versions were included. The Plus 405 and Plus 505 paired dual spinning mop pads with AutoWash docks, placing more of the cleaning-system maintenance at the charging station.
 
-The company scheduled preorders from March 18 in North America and selected European countries, followed by retail introductions from March 23. The announcement did not imply the same launch date in every country.
+Selected models added camera-based obstacle recognition, while the Plus 505 included an extending mop arrangement for work near edges. These features were not identical across every new Roomba: the revised naming system was intended to distinguish the levels of equipment and automation.
+
+Preorders were scheduled to begin March 18 in North America and selected European countries, followed by retail introductions from March 23. iRobot also introduced new packaging and a marketing campaign alongside the products. The rollout marked a substantial portfolio change, with the specific robot and dock combination remaining central to any comparison between models.

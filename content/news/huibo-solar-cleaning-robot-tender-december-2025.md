@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Huibo Robotics — China Energy Engineering procurement announcement"]
 source_urls: ["https://www.huiborobot.com/company/1027.html"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+Huibo Robotics announced a procurement win covering 10,000 photovoltaic-panel cleaning robots on December 24, 2025. In its [company statement](https://www.huiborobot.com/company/1027.html), the group said Guangdong Huibo Robot Technology had secured China Energy Engineering's centralized purchasing project for equipment used in solar-power-station maintenance.
 
-Huibo Robotics announced on 24 December 2025 that Guangdong Huibo had won a centralized procurement project covering 10,000 photovoltaic-panel cleaning robots for China Energy Engineering.
+Huibo described the selected equipment as combining its own robot control system with an integrated geared-motor module. The control functions include operating diagnostics, alignment correction and responses to situations in which a robot becomes stuck. The company also said its motor-drive module had passed IP66 protection testing at a TÜV laboratory.
 
-The company described the equipment as supporting solar-power-station maintenance. A procurement award is distinct from completed delivery and installation; the announcement did not establish that all 10,000 units were already operating.
+The maintenance system collects operational and environmental data, including temperature, humidity and dust conditions, to support cleaning schedules and equipment monitoring. Huibo said its panel-cleaning robots had already been used in several Chinese provinces, across large solar stations, agricultural and fishery installations, and distributed rooftop projects.
+
+The 10,000-unit figure refers to the procurement project announced by Huibo. It does not establish that the entire quantity had been delivered or commissioned on the announcement date. For solar operators, the commercial significance lies in a large centralized equipment order alongside the associated installation, monitoring and maintenance work required to put a robot fleet into service.

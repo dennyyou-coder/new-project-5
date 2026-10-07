@@ -13,10 +13,12 @@ related_articles: []
 source_titles: ["ECOVACS — T90 and WINBOT W3 U.S. announcement"]
 source_urls: ["https://www.prnewswire.com/news-releases/ecovacs-debuts-practical-cleaning-innovations-designed-for-everyday-living-deebot-t90-pro-omni-and-winbot-w3-omni-302703876.html"]
 image_product: "ecovacs-deebot-t90-pro-omni"
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+[ECOVACS](/brands/ecovacs) introduced the [DEEBOT T90 PRO OMNI](/products/ecovacs-deebot-t90-pro-omni) and [WINBOT W3 OMNI](/products/ecovacs-winbot-w3-omni) for the United States on March 5, 2026. The [launch announcement](https://www.prnewswire.com/news-releases/ecovacs-debuts-practical-cleaning-innovations-designed-for-everyday-living-deebot-t90-pro-omni-and-winbot-w3-omni-302703876.html) paired a floor-cleaning robot with a window-cleaning system, both emphasizing automatic maintenance between tasks.
 
-[ECOVACS](/brands/ecovacs) announced the DEEBOT T90 and WINBOT W3 for the U.S. market on 5 March 2026. The T90 floor-cleaning robot uses a 27 cm roller mop and the company's PowerBoost charging approach.
+The T90 uses a 27 cm microfiber roller with continuous self-washing during mopping. ECOVACS says the wider roller increases the area covered in each pass, while its cleaning circuit refreshes the surface that contacts the floor. Edge-cleaning, obstacle navigation and an anti-tangle brush form other parts of the floorcare package.
 
-The WINBOT W3 addresses windows and adds automatic pad washing at its station. The two products handle different surfaces; the window robot's station functions should not be confused with the floor robot's cleaning and navigation specifications.
+PowerBoost charging adds battery power during routine mop-washing stops. The approach uses time already spent at the station to reduce the need for a separate long charging interruption. The OMNI station also handles mop washing, drying and water management. ECOVACS positioned the T90 below USD 1,000 in the U.S. announcement.
 
-Explore the related product pages: [ECOVACS DEEBOT T90 PRO OMNI](/products/ecovacs-deebot-t90-pro-omni), [ECOVACS WINBOT W3 OMNI](/products/ecovacs-winbot-w3-omni).
+WINBOT W3 serves a different surface and adds an automatic wiping-pad washer at its station. That feature addresses the manual washing normally required between window-cleaning tasks. It does not remove the need to place and secure a window robot correctly. The March release established the two U.S. introductions while keeping their cleaning and installation requirements distinct.

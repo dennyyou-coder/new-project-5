@@ -12,8 +12,12 @@ product_slugs: []
 related_articles: []
 source_titles: ["Hesai — Dreame robotic lawn-mower LiDAR order"]
 source_urls: ["https://www.hesaitech.com/skyrocketing-demand-hesai-to-supply-10-million-lidars-to-dreames-robotic-lawn-mowing-ecosystem/"]
+updatedAt: "2026-10-07T12:00:00+08:00"
 ---
+Hesai announced on March 26, 2026 that it had secured an order for ten million LiDAR units for [Dreame](/brands/dreame)'s robotic lawn-mowing ecosystem. The [sensor supplier's statement](https://www.hesaitech.com/skyrocketing-demand-hesai-to-supply-10-million-lidars-to-dreames-robotic-lawn-mowing-ecosystem/) identified its JT series and cooperation with both Dreame and [MOVA](/brands/mova).
 
-Hesai said on 26 March 2026 that it had secured an order for ten million LiDAR units for [Dreame](/brands/dreame)'s robotic lawn-mowing ecosystem. The announcement identifies its compact JT-series sensors and cooperation with the Dreame and [MOVA](/brands/mova) ecosystem.
+The compact JT sensor is designed for mobile robots, combining a wide horizontal view with vertical sensing to support positioning and obstacle detection. Hesai listed a weight of about 200 grams and described the unit as suitable for integration into mowers operating around people, pets and small objects. These are the supplier's specifications for the component.
 
-The order is a component-supply commitment, not evidence that ten million mowers had already been manufactured or sold. Delivery timing and finished-device shipments are separate from the sensor order volume.
+The announcement named Hesai as the exclusive LiDAR supplier for the relevant Dreame and MOVA mower ecosystem. It also described the use of JT sensors in outdoor products presented under those brands, connecting the supply commitment with their move toward navigation that does not depend on a physical perimeter wire.
+
+The ten-million-unit figure refers to an order for sensors. It does not show that ten million finished mowers had already been built, delivered or sold, and the statement did not provide a detailed delivery schedule. Component orders, sensor shipments and sales of completed machines remain different measures of the commercial rollout.
