@@ -25,30 +25,21 @@ export function BlogSeriesHero({ article }: { article: Insight }) {
 
   return (
     <section className="blog-home-series" aria-labelledby="blog-series-title">
-      <Link
-        className="blog-home-series-main"
-        href={articleHref}
-        aria-label={`Read ${article.title}`}
-      >
-        <div className="blog-home-series-image">
-          <img
-            {...imagePropsFor(article, 0)}
-            alt={`${article.seriesTitle || article.title} cover`}
-          />
-        </div>
+      <div className="blog-home-series-main">
+        <Link className="blog-home-series-image" href={articleHref} aria-label={`Read ${article.title}`}>
+          <img {...imagePropsFor(article, 0)} alt={`${article.seriesTitle || article.title} cover`} />
+        </Link>
         <div className="blog-home-series-copy">
           <p className="eyebrow">Ongoing Series · Latest Episode</p>
           <h2 id="blog-series-title">{article.seriesTitle || article.title}</h2>
           {article.seriesTitle ? <h3>{article.title}</h3> : null}
           <p>{article.excerpt}</p>
-          <strong>Read latest episode →</strong>
+          <div className="blog-home-series-actions">
+            <Link className="blog-home-series-latest" href={articleHref}>Read latest episode</Link>
+            {seriesHref ? <Link className="blog-home-series-all" href={seriesHref}>View all episodes</Link> : null}
+          </div>
         </div>
-      </Link>
-      {seriesHref ? (
-        <Link className="blog-home-series-all" href={seriesHref}>
-          View all episodes
-        </Link>
-      ) : null}
+      </div>
     </section>
   );
 }

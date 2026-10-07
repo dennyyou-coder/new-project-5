@@ -1,0 +1,75 @@
+/* Final approved glacier palette and shared navigation. Page content keeps its own templates. */
+.structure-refresh.design-a.approved-design {
+  --ink: #232c35; --text: #232c35; --muted: #52606b;
+  --line: #d6dfe7; --line-strong: #becdd9;
+  --soft: #f4f6f8; --soft-blue: #dce4eb;
+  --section-background: #dce4eb; --accent-soft: #e8eef4;
+  --primary: #245cc4; --accent: #245cc4; --blue: #245cc4;
+  --teal: #245cc4; --orange: #245cc4; --navy: #232c35;
+  --navy-2: #245cc4; --blue-soft: #dce4eb; --teal-soft: #dce4eb;
+  --cta-blue: #245cc4; --cta-hover: #1c4a9d; --cta-border: #becdd9;
+  color: var(--ink); background: #fff;
+}
+.structure-refresh.design-a.approved-design .container { width: min(1280px, calc(100% - 80px)); margin-inline: auto; }
+.structure-refresh.design-a.approved-design :is(h1,h2,h3,h4) { color: var(--ink); }
+.structure-refresh.design-a.approved-design .eyebrow { font-family: inherit; font-size: 10px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+.structure-refresh.design-a.approved-design :is(a,button,input,select,textarea):focus-visible { outline-color: var(--primary); }
+.structure-refresh.design-a.approved-design .site-shell :is(.button,.button-secondary,.product-button) { border-radius: 4px; min-height: 46px; }
+.structure-refresh.design-a.approved-design .refresh-header .header-inner { min-height: 82px; gap: 30px; }
+.structure-refresh.design-a.approved-design .refresh-header .brand-name { font-size: 20px; letter-spacing: -.7px; }
+.structure-refresh.design-a.approved-design .brand-tagline { font-size: 10px; }
+.structure-refresh.design-a.approved-design .refresh-header .nav { font-size: 13px; gap: 24px; }
+.structure-refresh.design-a.approved-design .nav > a:not(.nav-business),
+.structure-refresh.design-a.approved-design .nav-group > button { min-height: 44px; display: inline-flex; align-items: center; position: relative; }
+.structure-refresh.design-a.approved-design .nav > a[aria-current="page"]:not(.nav-business)::after,
+.structure-refresh.design-a.approved-design .nav-group > button[data-current="true"]::after { content: ''; display: block; position: absolute; left: 0; right: 0; bottom: -18px; height: 2px; background: var(--primary); transform: none; }
+.structure-refresh.design-a.approved-design .site-shell .refresh-header .nav .nav-business { font-size: 13px; border-radius: 4px; padding-inline: 22px; }
+.structure-refresh.design-a.approved-design .refresh-footer { background: #fff; padding: 42px 0 24px; }
+.structure-refresh.design-a.approved-design .footer-grid { grid-template-columns: minmax(240px,.9fr) minmax(0,1.8fr); gap: 64px; }
+.structure-refresh.design-a.approved-design .footer-links > div { border-left: 1px solid var(--line); padding-left: 26px; }
+.structure-refresh.design-a.approved-design .footer-links a { min-height: 25px; }
+.structure-refresh.design-a.approved-design .footer-brand p { font-size: 13px; line-height: 1.6; }
+.structure-refresh.design-a.approved-design .footer-bottom { margin-top: 24px; border: 0; padding-top: 0; }
+/* The four offers share a single inquiry destination. */
+.structure-refresh.design-a .glacier-business { padding: 38px 0; background: var(--soft-blue); }
+.structure-refresh.design-a .glacier-business-inner { display: grid; grid-template-columns: .78fr 1.65fr; align-items: center; gap: 48px; }
+.structure-refresh.design-a .glacier-business-intro .eyebrow { color: var(--muted); margin: 0 0 16px; }
+.structure-refresh.design-a .glacier-business-intro h2 { font-size: clamp(32px,3.2vw,46px); line-height: 1.07; margin: 0 0 30px; max-width: 350px; }
+.structure-refresh.design-a .glacier-services-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1px; background: var(--line); padding: 0; border: 16px solid white; border-radius: 6px; }
+.structure-refresh.design-a .glacier-service { display: flex; gap: 14px; padding: 18px; background: white; min-width: 0; }
+.structure-refresh.design-a .glacier-service img { width: 90px; height: 76px; object-fit: cover; border-radius: 3px; flex: 0 0 90px; }
+.structure-refresh.design-a .glacier-service h3 { margin: 0 0 7px; font-size: 16px; line-height: 1.3; }
+.structure-refresh.design-a .glacier-service p { color: var(--muted); font-size: 13px; line-height: 1.5; margin: 0; }
+@media (min-width:1181px) and (max-width:1280px) {
+  .structure-refresh.design-a.approved-design .refresh-header .nav { gap: 16px; font-size: 12px; }
+  .structure-refresh.design-a.approved-design .refresh-header .header-inner { gap: 20px; }
+  .structure-refresh.design-a.approved-design .refresh-header .brand-name { font-size: 18px; }
+}
+@media (max-width:1180px) {
+  .structure-refresh.design-a.approved-design .refresh-header .header-inner { min-height: 76px; position: relative; }
+  .structure-refresh.design-a.approved-design .refresh-header .mobile-menu-toggle { display: flex; }
+  .structure-refresh.design-a.approved-design .refresh-header .header-actions { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 16px; border: 1px solid var(--line); box-shadow: 0 12px 24px #232c3510; }
+  .structure-refresh.design-a.approved-design .refresh-header .header-actions.is-menu-open { display: block; }
+  .structure-refresh.design-a.approved-design .refresh-header .nav { display: flex; flex-direction: column; align-items: stretch; gap: 3px; position: static; padding: 0; font-size: 15px; background: white; border: 0; box-shadow: none; }
+  .structure-refresh.design-a.approved-design .nav-group > button { width: 100%; justify-content: space-between; }
+  .structure-refresh.design-a.approved-design .nav > a[aria-current="page"]:not(.nav-business)::after,
+  .structure-refresh.design-a.approved-design .nav-group > button[data-current="true"]::after { display: none; }
+  .structure-refresh.design-a .glacier-business-inner { grid-template-columns: .7fr 1.6fr; gap: 24px; }
+  .structure-refresh.design-a .glacier-service { display: block; padding: 14px; }
+  .structure-refresh.design-a .glacier-service img { margin-bottom: 12px; }
+}
+@media (max-width:760px) {
+  .structure-refresh.design-a.approved-design .container { width: calc(100% - 40px); }
+  .structure-refresh.design-a.approved-design .refresh-header .header-inner { min-height: 72px; gap: 12px; }
+  .structure-refresh.design-a.approved-design .refresh-header .brand-name { font-size: 17px; }
+  .structure-refresh.design-a.approved-design .brand-tagline { font-size: 8px; }
+  .structure-refresh.design-a.approved-design .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .structure-refresh.design-a.approved-design .footer-links { gap: 24px; }
+  .structure-refresh.design-a.approved-design .footer-links > div { padding-left: 0; border: 0; }
+  .structure-refresh.design-a .glacier-business { padding: 30px 0; }
+  .structure-refresh.design-a .glacier-business-inner { grid-template-columns: 1fr; gap: 24px; }
+  .structure-refresh.design-a .glacier-business-intro h2 { font-size: 34px; margin-bottom: 20px; }
+  .structure-refresh.design-a .glacier-services-grid { grid-template-columns: 1fr; padding: 0; border-width: 12px; }
+  .structure-refresh.design-a .glacier-service { display: flex; padding: 20px 8px; }
+  .structure-refresh.design-a .glacier-service img { width: 76px; height: 68px; flex-basis: 76px; margin: 0; }
+}

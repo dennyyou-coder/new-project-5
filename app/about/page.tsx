@@ -1,9 +1,10 @@
-import { siteVisualProps } from "@/lib/siteVisuals";
+import { BusinessServices } from "@/components/BusinessServices";
 import type { Metadata } from "next";
 import Link from "next/link";
-import "../styles/about.css";
-import { IconBadge, InlineIcon, type IconName } from "@/components/Icon";
-import { TallyButton } from "@/components/LeadForms";
+import "../styles/approved-platform.css";
+import type { IconName } from "@/components/Icon";
+import { getInsights } from "@/lib/content";
+import { getLatestSeriesInsight } from "@/lib/insightCollections";
 
 export const metadata: Metadata = {
   title: "About Denny You | Cleaning Industry",
@@ -15,349 +16,129 @@ export const metadata: Metadata = {
     description:
       "Inside the cleaning industry since 2006, connecting products, supply chains, buyers, capital and industry opportunities.",
     url: "/about",
-    images: ["/images/site-refresh/about/about-hero-denny.webp"]
+    images: ["/images/site-refresh/about/about-hero-denny.webp"],
   },
   twitter: {
     card: "summary_large_image",
     title: "About Denny You | World Clean Biz",
     description:
       "Inside the cleaning industry since 2006, connecting products, supply chains, buyers, capital and industry opportunities.",
-    images: ["/images/site-refresh/about/about-hero-denny.webp"]
-  }
+    images: ["/images/site-refresh/about/about-hero-denny.webp"],
+  },
 };
 
 const trustFacts: { icon: IconName; title: string; text: string }[] = [
   {
     icon: "factory",
     title: "Inside The Cleaning Industry Since 2006",
-    text: "Front-line experience across products, customers, factories, suppliers and global markets."
+    text: "Front-line experience across products, customers, factories, suppliers and global markets.",
   },
   {
     icon: "newspaper",
     title: "For A Decade, An Industry Voice",
-    text: "Ten years of sharing cleaning industry analysis, making Denny one of the industry’s best-known professional voices."
+    text: "Ten years of sharing cleaning industry analysis, making Denny one of the industry’s best-known professional voices.",
   },
   {
     icon: "rocket",
     title: "Hardware Entrepreneur",
-    text: "A cleaning industry hardware entrepreneur whose ventures have raised tens of millions in funding."
+    text: "A cleaning industry hardware entrepreneur whose ventures have raised tens of millions in funding.",
   },
   {
     icon: "users",
     title: "Organizer Of WCB Expo",
-    text: "Building an industry platform that connects products, companies, buyers, experts, capital and media."
-  }
-];
-
-const networkGroups: { icon: IconName; title: string; text: string }[] = [
-  {
-    icon: "factory",
-    title: "Manufacturers",
-    text: "Cleaning equipment factories, product developers and production resources."
+    text: "Building an industry platform that connects products, companies, buyers, experts, capital and media.",
   },
-  {
-    icon: "cog",
-    title: "Core Suppliers",
-    text: "Components, molds, technology, testing and supporting supply-chain partners."
-  },
-  {
-    icon: "globe",
-    title: "International Brands",
-    text: "Brands, retailers and cross-border sellers serving global markets."
-  },
-  {
-    icon: "handshake",
-    title: "Buyers & Distributors",
-    text: "Importers, distributors and channel partners looking for products and opportunities."
-  },
-  {
-    icon: "bar-chart",
-    title: "Investors & Media",
-    text: "Securities firms, investment banks, investors and industry media tracking market change."
-  },
-  {
-    icon: "message",
-    title: "Experts & Industry Leaders",
-    text: "Operators, speakers and professionals shaping cleaning industry conversations."
-  }
-];
-
-const businessPillars = [
-  {
-    eyebrow: "READ THE MARKET",
-    title: "Industry Intelligence",
-    text: "Articles and reports that help companies understand category movement, product opportunities and China supply-chain signals.",
-    image: "/images/site-refresh/2026-09-commercial/08-market-research.webp",
-    href: "/reports",
-    cta: "Explore Market Reports"
-  },
-  {
-    eyebrow: "TURN SIGNALS INTO PRODUCTS",
-    title: "Product & Sourcing Opportunities",
-    text: "Product judgment, supplier access and project execution for overseas brands, importers and distributors.",
-    image: "/images/site-refresh/2026-09-commercial/09-prototype-review.webp",
-    href: "/sourcing",
-    cta: "Explore Sourcing"
-  },
-  {
-    eyebrow: "CONNECT THE INDUSTRY",
-    title: "WCB Expo & Business Connections",
-    text: "A platform for products, companies, buyers, forums and commercial conversations across the cleaning industry.",
-    image: "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
-    href: "/wcb-expo",
-    cta: "Explore WCB Expo"
-  }
-];
-
-const judgementFlow: { icon: IconName; title: string; text: string }[] = [
-  {
-    icon: "radar",
-    title: "Early Industry Signals",
-    text: "Products, factories, components, capital and overseas channel feedback reveal where change is beginning."
-  },
-  {
-    icon: "lightbulb",
-    title: "Commercial Judgment",
-    text: "Experience helps separate a meaningful category shift from a short-lived novelty."
-  },
-  {
-    icon: "network",
-    title: "The Right Connections",
-    text: "A broad professional network helps bring the right product, supplier, buyer or expert into the conversation."
-  },
-  {
-    icon: "check",
-    title: "Team Execution",
-    text: "The World Clean Biz team turns direction into research, quotations, samples, coordination and delivery."
-  }
 ];
 
 const journey = [
   {
     marker: "SINCE 2006",
     title: "Industry Operator & Product Builder",
-    text: "Worked inside cleaning products, customers, supply chains and global-market projects."
+    text: "Worked inside cleaning products, customers, supply chains and global-market projects.",
   },
   {
     marker: "FOR A DECADE",
     title: "Industry Analysis & Influence",
-    text: "Shared cleaning industry articles and views with professionals, securities firms and investment banks."
+    text: "Shared cleaning industry articles and views with professionals, securities firms and investment banks.",
   },
   {
     marker: "ENTREPRENEUR",
     title: "Hardware Business & Capital Experience",
-    text: "Built cleaning industry hardware ventures and raised tens of millions in funding."
+    text: "Built cleaning industry hardware ventures and raised tens of millions in funding.",
   },
   {
     marker: "TODAY",
     title: "World Clean Biz & WCB Expo",
-    text: "Connecting intelligence, products, supply chains, buyers and industry relationships on a global platform."
-  }
+    text: "Connecting intelligence, products, supply chains, buyers and industry relationships on a global platform.",
+  },
 ];
 
 export default function AboutPage() {
+  const series = "building-worlds-no-1-cleaning-show-from-scratch";
+  const latestEpisode = getLatestSeriesInsight(getInsights(), series);
   return (
-    <div className="about-network-page">
-      <section className="about-network-hero">
-        <div className="container about-network-hero-grid">
-          <div className="about-network-hero-copy">
-            <p className="eyebrow">ABOUT DENNY YOU</p>
-            <h1>Inside The Cleaning Industry Since 2006. Connected Across The Entire Value Chain.</h1>
-            <p>
-              Denny You is the founder of World Clean Biz and organizer of
-              WCB Expo—an industry entrepreneur, product builder and
-              professional voice connecting products, supply chains, buyers,
-              capital and market opportunities.
-            </p>
-            <div className="about-network-hero-tags">
-              <span>Industry Entrepreneur</span>
-              <span>WCB Expo Organizer</span>
-              <span>Product &amp; Market Judgment</span>
-            </div>
-            <div className="hero-actions">
-              <TallyButton
-                className="button"
-                ctaLocation="about_hero_sourcing"
-                form="sourcing"
-                inquiryIntent="about_product_opportunity"
-                inquiryType="sourcing"
-              >
-                Discuss Product Opportunities
-              </TallyButton>
-              <Link className="button-secondary" href="#world-clean-biz">
-                See How World Clean Biz Helps
-              </Link>
-            </div>
-          </div>
-          <div className="about-network-hero-visual">
-            <img
-              src="/images/site-refresh/about/about-hero-denny.webp"
-              alt="Denny You speaking at a cleaning industry forum"
-            />
-            <div>
-              <span>DENNY YOU</span>
-              <strong>Founder, World Clean Biz<br />Organizer, WCB Expo</strong>
-            </div>
+    <div className="approved-platform about-page">
+      <section className="page-hero mist about-intro" id="world-clean-biz">
+        <div className="container">
+          <p className="eyebrow">About World Clean Biz</p>
+          <h1>Industry Knowledge. Business Connections.</h1>
+          <p className="about-platform-copy">World Clean Biz connects cleaning industry news, independent analysis, company and product research, and WCB Expo.</p>
+        </div>
+      </section>
+      <section className="section" id="denny-you" aria-labelledby="founder-title">
+        <div className="container about-founder-grid">
+          <figure className="about-founder-photo">
+            <img src="/images/site-refresh/about/about-hero-denny.webp" alt="Denny You speaking at a cleaning industry forum" width={1600} height={1200} decoding="async" />
+            <figcaption>Denny You · Founder, World Clean Biz</figcaption>
+          </figure>
+          <div className="about-founder-copy">
+            <p className="eyebrow">Denny You · Founder</p>
+            <h2 id="founder-title">Inside the Cleaning Industry Since 2006</h2>
+            <p>Denny You is the founder of World Clean Biz and organizer of <Link href="/wcb-expo">WCB Expo</Link>. His work spans cleaning products, supply chains, industry analysis and business connections.</p>
+            <p>Denny reviews product direction and key industry resources. The team supports research, quotations, samples, supplier coordination and delivery.</p>
           </div>
         </div>
       </section>
-
-      <section className="section about-network-trust">
+      <section className="section about-trust" aria-labelledby="credibility-title">
         <div className="container">
-          <div className="about-network-heading">
+          <div className="section-head"><div>
             <p className="eyebrow">EXPERIENCE, INFLUENCE &amp; EXECUTION</p>
-            <h2>Industry Credibility Built Through Real Work.</h2>
-          </div>
-          <div className="about-network-trust-grid">
-            {trustFacts.map((item) => (
-              <article key={item.title}>
-                <IconBadge name={item.icon} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </article>
-            ))}
+            <h2 id="credibility-title">Industry Credibility Built Through Real Work.</h2>
+          </div></div>
+          <div className="grid two about-trust-grid">
+            {trustFacts.map((item) => <article className="about-trust-item" key={item.title}><h3>{item.title}</h3><p>{item.text}</p></article>)}
           </div>
         </div>
       </section>
-
-      <section className="section about-network-reach">
-        <div className="container about-network-reach-layout">
-          <div className="about-network-reach-copy">
-            <p className="eyebrow">AN INDUSTRY-WIDE PROFESSIONAL NETWORK</p>
-            <h2>Connected To The People Who Build, Buy, Fund And Shape The Industry.</h2>
-            <p>
-              As the organizer of WCB Expo, Denny has built one of the
-              cleaning industry’s most extensive professional networks across
-              manufacturers, suppliers, brands, buyers, distributors,
-              investors, experts and media.
-            </p>
-            <div className="about-network-reach-image">
-              <img {...siteVisualProps("/images/site-refresh/2026-09-commercial/12-project-coordination.webp")} alt="Professional product and project review" />
+      <section className="section about-journey" aria-labelledby="journey-title">
+        <div className="container">
+          <div className="section-head"><div>
+            <p className="eyebrow">THE JOURNEY</p>
+            <h2 id="journey-title">From Industry Operator To Platform Builder.</h2>
+          </div></div>
+          <div className="grid four about-journey-grid">
+            {journey.map((item) => <article className="about-journey-item" key={item.marker}><p className="about-marker">{item.marker}</p><h3>{item.title}</h3><p>{item.text}</p></article>)}
+          </div>
+        </div>
+      </section>
+      {latestEpisode && <section className="section soft about-journal" aria-labelledby="journal-title">
+        <div className="container about-journal-grid">
+          <Link className="about-journal-media" href={`/blog/${latestEpisode.slug}`} aria-label={latestEpisode.title}>
+            <img src={latestEpisode.coverImage} alt={latestEpisode.coverAlt || latestEpisode.title} width={1600} height={900} loading="lazy" decoding="async" />
+          </Link>
+          <div className="about-journal-copy">
+            <p className="eyebrow">A Founder’s Journal · Denny You</p>
+            <h2 id="journal-title">{latestEpisode.seriesTitle || "Building the World’s No.1 Cleaning Show from Scratch"}</h2>
+            <h3><Link href={`/blog/${latestEpisode.slug}`}>{latestEpisode.title}</Link></h3>
+            <p className="about-journal-excerpt">{latestEpisode.excerpt}</p>
+            <div className="actions">
+              <Link className="text-link" href={`/blog/${latestEpisode.slug}`}>Read Latest Episode</Link>
+              <Link className="text-link" href={`/blog/series/${series}`}>Read Denny&apos;s founder series</Link>
             </div>
           </div>
-          <div className="about-network-group-grid">
-            {networkGroups.map((item) => (
-              <article key={item.title}>
-                <InlineIcon name={item.icon} />
-                <div><h3>{item.title}</h3><p>{item.text}</p></div>
-              </article>
-            ))}
-          </div>
         </div>
-      </section>
-
-      <section className="section about-network-business" id="world-clean-biz">
-        <div className="container">
-          <div className="about-network-heading">
-            <p className="eyebrow">WHAT WORLD CLEAN BIZ DOES</p>
-            <h2>One Industry Platform. Three Ways To Create Business Value.</h2>
-            <p>
-              World Clean Biz combines intelligence, product opportunities and
-              industry connections so companies can see earlier and act with
-              better resources.
-            </p>
-          </div>
-          <div className="about-network-pillar-grid">
-            {businessPillars.map((item) => (
-              <article key={item.title}>
-                <img {...siteVisualProps(item.image, "(max-width: 760px) 100vw, 33vw")} alt="" />
-                <div>
-                  <p className="eyebrow">{item.eyebrow}</p>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                  <Link href={item.href}>{item.cta} <span aria-hidden="true">→</span></Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section about-network-judgment">
-        <div className="container">
-          <div className="about-network-heading about-network-heading-light">
-            <p className="eyebrow">WHY THE NETWORK MATTERS</p>
-            <h2>Information Becomes More Valuable When It Leads To The Right Decision And The Right People.</h2>
-          </div>
-          <div className="about-network-flow">
-            {judgementFlow.map((item, index) => (
-              <article key={item.title}>
-                <span className="about-network-flow-number">0{index + 1}</span>
-                <InlineIcon name={item.icon} />
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section about-network-story">
-        <div className="container about-network-story-layout">
-          <div className="about-network-story-photo">
-            <img src="/images/industry/sourcing-supplier-meeting-2026.jpg" alt="Denny You reviewing products with suppliers" />
-            <div>Products · Suppliers · Markets · Connections</div>
-          </div>
-          <div>
-            <p className="eyebrow">PERSONAL JUDGMENT. TEAM EXECUTION.</p>
-            <h2>Denny Reviews. The Team Executes.</h2>
-            <p>
-              Denny reviews the product direction, commercial fit and key
-              industry resources. The World Clean Biz team manages research,
-              quotations, samples, supplier coordination, quality and delivery.
-            </p>
-            <ul>
-              <li>Industry insight for securities firms and investment banks</li>
-              <li>Currently supporting cross-border sellers and international brands</li>
-              <li>Direct access to product, supplier and industry conversations</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="section about-network-journey">
-        <div className="container">
-          <div className="about-network-heading">
-            <p className="eyebrow">THE JOURNEY</p>
-            <h2>From Industry Operator To Platform Builder.</h2>
-          </div>
-          <div className="about-network-journey-grid">
-            {journey.map((item) => (
-              <article key={item.marker}>
-                <span>{item.marker}</span>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section about-network-final">
-        <div className="container">
-          <div className="about-network-heading">
-            <p className="eyebrow">START WITH WHAT YOU NEED</p>
-            <h2>Use The World Clean Biz Platform For Your Next Decision.</h2>
-          </div>
-          <div className="about-network-final-grid">
-            <article>
-              <span>01</span><h3>Find Product Opportunities</h3>
-              <p>Discover products, suppliers and OEM/ODM directions for your market.</p>
-              <Link className="button" href="/sourcing">Explore Sourcing</Link>
-            </article>
-            <article>
-              <span>02</span><h3>Read Market Intelligence</h3>
-              <p>Receive industry reports covering markets, categories and supply chains.</p>
-              <Link className="button" href="/reports">Get Free Market Reports</Link>
-            </article>
-            <article>
-              <span>03</span><h3>Connect Through WCB Expo</h3>
-              <p>Follow exhibitor, visitor and business matching opportunities.</p>
-              <Link className="button" href="/wcb-expo">Follow WCB Expo</Link>
-            </article>
-          </div>
-        </div>
-      </section>
+      </section>}
+      <BusinessServices />
     </div>
   );
 }

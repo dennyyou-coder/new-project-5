@@ -103,7 +103,7 @@ export default function InquiryReceivedPage() {
                 <span>{item.eyebrow}</span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-                <strong>Continue →</strong>
+                <strong>Continue</strong>
               </Link>
             ))}
           </div>

@@ -1,0 +1,462 @@
+/* Site-wide action hierarchy: solid primary and clearly bounded secondary actions. */
+.structure-refresh {
+  --cta-blue: #2563eb;
+  --cta-hover: #1d4ed8;
+  --cta-border: #7899cc;
+}
+.structure-refresh
+  .site-shell
+  :is(.button, .button-secondary, .product-button) {
+  min-height: 48px;
+  padding: 13px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  justify-content: center;
+  text-align: center;
+}
+.structure-refresh .site-shell :is(.button, .product-button) {
+  background: var(--cta-blue);
+  color: #fff;
+  border: 1px solid var(--cta-blue);
+  box-shadow: none;
+}
+.structure-refresh .site-shell :is(.button, .product-button):hover {
+  background: var(--cta-hover);
+  color: #fff;
+  border-color: var(--cta-hover);
+}
+.structure-refresh .site-shell .button-secondary {
+  color: #174ba6;
+  background: #fff;
+  border: 1px solid var(--cta-border);
+}
+.structure-refresh .site-shell .button-secondary:hover {
+  color: #123d8a;
+  background: #edf4ff;
+  border-color: #2563eb;
+}
+.structure-refresh .site-shell .refresh-header .nav .nav-business {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 19px;
+  background: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 750;
+}
+.structure-refresh .site-shell .refresh-header .nav .nav-business:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+.structure-refresh
+  .site-shell
+  :is(.refresh-section-head > a, .home-videos-header > .home-v9-inline-link) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 10px 16px;
+  color: #174ba6;
+  background: #fff;
+  border: 1px solid #7899cc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.structure-refresh
+  .site-shell
+  :is(
+    .refresh-section-head > a,
+    .home-videos-header > .home-v9-inline-link
+  ):hover {
+  background: #edf4ff;
+  border-color: #2563eb;
+}
+.structure-refresh .site-shell .contact-help-card-copy em {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-height: 48px;
+  margin-top: 18px;
+  padding: 12px 18px;
+  color: #fff;
+  background: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 4px;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.structure-refresh
+  .site-shell
+  .contact-help-card:is(:hover, :focus-visible)
+  .contact-help-card-copy
+  em {
+  background: #1d4ed8;
+}
+.structure-refresh .site-shell .news-page .news-expo-link {
+  justify-content: center;
+  padding: 13px 16px;
+  border: 1px solid #8db1ff;
+  border-radius: 4px;
+  background: #2563eb;
+  color: #fff;
+  min-height: 48px;
+  font-size: 14px;
+}
+.structure-refresh
+  .site-shell
+  :is(
+    .button,
+    .button-secondary,
+    .nav-business,
+    .refresh-section-head > a,
+    .home-videos-header > .home-v9-inline-link,
+    .news-expo-link
+  ):focus-visible {
+  outline: 3px solid #8eb7ff;
+  outline-offset: 4px;
+}
+@media (max-width: 540px) {
+  .structure-refresh .site-shell .contact-help-card-copy em {
+    width: 100%;
+  }
+}
+
+/* Load after the four existing refresh stylesheets.
+   Visual CTA treatment only: no text, URLs, form behavior or icons changed. */
+.structure-refresh
+  .site-shell
+  :is(
+    .home-editorial,
+    .article-reading-experience,
+    .product-detail,
+    .wcb-expo-page
+  ) {
+  --cta-blue: #2563eb;
+  --cta-hover: #1d4ed8;
+  --cta-border: #7899cc;
+}
+
+/* Shared dimensions. Existing links and form buttons keep their semantics. */
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(
+    .editorial-hero .button,
+    .editorial-hero-secondary,
+    .editorial-expo .button,
+    .editorial-expo .button-secondary,
+    .editorial-founder-actions > a,
+    .home-v9-series-actions > a,
+    .refresh-business-card .refresh-card-link
+  ),
+.structure-refresh
+  .site-shell
+  .article-reading-experience
+  .blog-conversion-cta
+  button,
+.structure-refresh
+  .site-shell
+  .product-detail
+  :is(.product-button, .product-text-link),
+.structure-refresh
+  .site-shell
+  .wcb-expo-page
+  .wcb-expo-hero-actions
+  :is(.button, .wcb-expo-secondary-link) {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 13px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Primary: solid blue, including the action inside each business card. */
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(
+    .editorial-hero .button,
+    .editorial-expo .button,
+    .editorial-founder-actions .button,
+    .home-v9-series-actions a:first-child,
+    .refresh-business-card .refresh-card-link
+  ),
+.structure-refresh
+  .site-shell
+  .article-reading-experience
+  .blog-conversion-cta
+  button,
+.structure-refresh .site-shell .product-detail .product-button,
+.structure-refresh .site-shell .wcb-expo-page .wcb-expo-hero-actions .button {
+  color: #fff;
+  background: var(--cta-blue);
+  border-color: var(--cta-blue);
+}
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(
+    .editorial-hero .button,
+    .editorial-expo .button,
+    .editorial-founder-actions .button,
+    .home-v9-series-actions a:first-child
+  ):hover,
+.structure-refresh
+  .site-shell
+  .home-editorial
+  .refresh-business-card:hover
+  .refresh-card-link,
+.structure-refresh
+  .site-shell
+  .home-editorial
+  .refresh-business-card:focus-visible
+  .refresh-card-link,
+.structure-refresh
+  .site-shell
+  .article-reading-experience
+  .blog-conversion-cta
+  button:hover,
+.structure-refresh .site-shell .product-detail .product-button:hover,
+.structure-refresh
+  .site-shell
+  .wcb-expo-page
+  .wcb-expo-hero-actions
+  .button:hover {
+  color: #fff;
+  background: var(--cta-hover);
+  border-color: var(--cta-hover);
+  box-shadow: none;
+  transform: none;
+}
+
+/* Secondary on light backgrounds: white fill and a visible blue outline. */
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(
+    .editorial-founder-actions > a:not(.button),
+    .home-v9-series-actions a:last-child:not(:first-child)
+  ),
+.structure-refresh .site-shell .product-detail .product-text-link {
+  color: #174ba6;
+  background: #fff;
+  border-color: var(--cta-border);
+}
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(
+    .editorial-founder-actions > a:not(.button),
+    .home-v9-series-actions a:last-child:not(:first-child)
+  ):hover,
+.structure-refresh .site-shell .product-detail .product-text-link:hover {
+  color: #123d8a;
+  background: #edf4ff;
+  border-color: #2563eb;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Secondary on dark backgrounds: keep a clear, closed button boundary. */
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(.editorial-hero-secondary, .editorial-expo .button-secondary),
+.structure-refresh
+  .site-shell
+  .wcb-expo-page
+  .wcb-expo-hero-actions
+  .wcb-expo-secondary-link {
+  color: #fff;
+  background: #ffffff0d;
+  border-color: #b4cbee;
+}
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(.editorial-hero-secondary, .editorial-expo .button-secondary):hover,
+.structure-refresh
+  .site-shell
+  .wcb-expo-page
+  .wcb-expo-hero-actions
+  .wcb-expo-secondary-link:hover {
+  color: #fff;
+  background: #ffffff1f;
+  border-color: #fff;
+  box-shadow: none;
+  transform: none;
+}
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(.editorial-hero .button, .editorial-expo .button),
+.structure-refresh
+  .site-shell
+  .article-reading-experience
+  .blog-conversion-cta
+  button,
+.structure-refresh .site-shell .wcb-expo-page .wcb-expo-hero-actions .button {
+  border-color: #8db1ff;
+}
+
+/* Groups stay consistent, with equal heights and clear card actions. */
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(
+    .editorial-hero .hero-actions,
+    .editorial-expo .hero-actions,
+    .editorial-founder-actions,
+    .home-v9-series-actions
+  ),
+.structure-refresh .site-shell .product-detail .product-actions,
+.structure-refresh .site-shell .wcb-expo-page .wcb-expo-hero-actions {
+  gap: 12px;
+  align-items: center;
+}
+.structure-refresh .site-shell .home-editorial .refresh-business-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.structure-refresh
+  .site-shell
+  .home-editorial
+  .refresh-business-card
+  .refresh-card-link {
+  margin-top: auto;
+}
+.structure-refresh
+  .site-shell
+  .home-editorial
+  .editorial-expo
+  > .container
+  .refresh-card-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 10px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.structure-refresh
+  .site-shell
+  .article-reading-experience
+  .blog-conversion-cta
+  > .lead-form-trigger {
+  flex-shrink: 0;
+}
+.structure-refresh
+  .site-shell
+  .home-editorial
+  :is(
+    .editorial-hero .button,
+    .editorial-hero-secondary,
+    .editorial-expo .button,
+    .editorial-expo .button-secondary,
+    .editorial-founder-actions > a,
+    .home-v9-series-actions > a,
+    .refresh-business-card
+  ):focus-visible,
+.structure-refresh
+  .site-shell
+  .article-reading-experience
+  .blog-conversion-cta
+  button:focus-visible,
+.structure-refresh
+  .site-shell
+  .product-detail
+  :is(.product-button, .product-text-link):focus-visible,
+.structure-refresh
+  .site-shell
+  .wcb-expo-page
+  .wcb-expo-hero-actions
+  :is(.button, .wcb-expo-secondary-link):focus-visible {
+  outline: 3px solid #8eb7ff;
+  outline-offset: 4px;
+}
+
+@media (max-width: 540px) {
+  .structure-refresh
+    .site-shell
+    .home-editorial
+    :is(
+      .editorial-hero .hero-actions,
+      .editorial-expo .hero-actions,
+      .editorial-founder-actions,
+      .home-v9-series-actions
+    ),
+  .structure-refresh .site-shell .product-detail .product-actions,
+  .structure-refresh .site-shell .wcb-expo-page .wcb-expo-hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .structure-refresh
+    .site-shell
+    .home-editorial
+    :is(
+      .editorial-hero .hero-actions > *,
+      .editorial-expo .hero-actions > *,
+      .editorial-expo .hero-actions button,
+      .editorial-founder-actions > a,
+      .home-v9-series-actions > a,
+      .refresh-business-card .refresh-card-link
+    ),
+  .structure-refresh
+    .site-shell
+    .article-reading-experience
+    .blog-conversion-cta
+    > .lead-form-trigger,
+  .structure-refresh
+    .site-shell
+    .article-reading-experience
+    .blog-conversion-cta
+    button,
+  .structure-refresh
+    .site-shell
+    .product-detail
+    :is(.product-button, .product-text-link),
+  .structure-refresh
+    .site-shell
+    .wcb-expo-page
+    .wcb-expo-hero-actions
+    :is(.lead-form-trigger, .button, .wcb-expo-secondary-link) {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.structure-refresh .site-shell .home-editorial .editorial-hero .hero-actions > a {
+  min-height: 54px;
+  min-width: 190px;
+  padding: 15px 24px;
+  font-size: 16px;
+}

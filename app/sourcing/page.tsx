@@ -1,7 +1,6 @@
 import { siteVisualProps } from "@/lib/siteVisuals";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { InlineIcon } from "@/components/Icon";
 import { TallyButton } from "@/components/LeadForms";
 import { SourcingOpportunityCard } from "@/components/SourcingOpportunityCard";
 import { SOURCING_CATEGORIES } from "@/lib/inquiryConversion";
@@ -26,25 +25,6 @@ export const metadata: Metadata = {
     images: ["/images/site-refresh/2026-09-commercial/09-prototype-review.webp"]
   }
 };
-
-const marketDrivers = [
-  { icon: "bot" as const, title: "Automation Is Expanding", text: "More cleaning tasks are moving from manual tools and traditional machines to intelligent equipment." },
-  { icon: "sparkles" as const, title: "New Categories Are Forming", text: "Floor washers, pool robots, robotic mowers and commercial robots show how quickly a niche can become global." },
-  { icon: "globe" as const, title: "Distribution Is Moving Faster", text: "E-commerce and global supply chains allow new products and brands to reach buyers faster than before." }
-];
-
-const industryShifts = [
-  { icon: "factory" as const, label: "Supply", then: "Finding a reliable supplier could be the advantage.", today: "Suppliers and products are abundant. The difficult part is knowing what to choose." },
-  { icon: "search" as const, label: "Selection", then: "The sourcing question was: Who can make this?", today: "The question is: What should we sell next?" },
-  { icon: "rocket" as const, label: "Speed", then: "A 12–15 month development cycle could still fit the market.", today: "Fast-moving categories can compress to roughly 6–8 months." },
-  { icon: "handshake" as const, label: "Channels", then: "Long relationships could protect sales across product cycles.", today: "Channels now demand price, speed and stronger products—even from long-term partners." }
-];
-
-const riskCards = [
-  { icon: "cpu" as const, title: "Outdated Before Launch", text: "A technical solution can be replaced while your product is still being developed." },
-  { icon: "dollar" as const, title: "More Expensive Than Competitors", text: "Old components or the wrong factory architecture can leave you with a higher cost base." },
-  { icon: "activity" as const, title: "Slower To Market", text: "Immature or mismatched solutions create more redesign, tooling and compatibility work." }
-];
 
 const opportunitySignals = [
   { number: "01", title: "Core Factory Pipeline Signals", text: "New projects moving through important Chinese cleaning equipment factories." },
@@ -82,7 +62,7 @@ export default function SourcingPage() {
         <div className="sourcing-opportunity-shell sourcing-opportunity-hero-grid">
           <div className="sourcing-opportunity-hero-copy">
             <p className="sourcing-opportunity-eyebrow">Cleaning Product Opportunity Sourcing</p>
-            <h1>Don’t Just Source Another Product.<span>Find The Next Cleaning Industry Opportunity.</span></h1>
+            <h1>Cleaning Product Sourcing</h1>
             <p className="sourcing-opportunity-lead">Tell me what market you serve. I will help identify promising product directions, while the World Clean Biz team turns them into products you can source, brand and sell.</p>
             <div className="sourcing-opportunity-actions">
               <TallyButton className="sourcing-opportunity-button" ctaLocation="sourcing_hero_opportunity" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>
@@ -101,36 +81,6 @@ export default function SourcingPage() {
             <img src="/images/site-refresh/about/about-hero-denny.webp" width={1600} height={1200} decoding="async" alt="Denny You discussing cleaning product opportunities" />
             <figcaption><strong>Denny You</strong><span>Founder, World Clean Biz</span><small>Inside the cleaning industry since 2006</small></figcaption>
           </figure>
-        </div>
-      </section>
-
-      <section className="sourcing-opportunity-section sourcing-opportunity-market">
-        <div className="sourcing-opportunity-shell">
-          <div className="sourcing-opportunity-heading"><p>Why This Market Matters Now</p><h2>The Cleaning Industry Is Entering A New Growth Cycle.</h2></div>
-          <div className="sourcing-opportunity-market-story"><div className="sourcing-opportunity-market-number"><div><small>Today</small><strong>Approx. USD 40B+</strong></div><span aria-hidden="true">→</span><div><small>Over The Next Decade</small><strong>Toward USD 140B</strong></div></div><figure className="sourcing-opportunity-market-visual"><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/14-emerging-products.webp")} alt="Cleaning appliance prototypes on a development workbench" /><figcaption>Product categories are expanding faster than traditional sourcing cycles.</figcaption></figure></div>
-          <p className="sourcing-opportunity-estimate"><strong>World Clean Biz Industry Estimate.</strong> This is a directional editorial estimate, not audited market data. The 2026 reference view frames major global indoor and outdoor cleaning equipment categories at less than RMB 300 billion today and toward RMB 1 trillion over approximately the next decade; USD values are approximate conversions.</p>
-          <div className="sourcing-opportunity-driver-grid">{marketDrivers.map((item) => <article key={item.title}><span className="sourcing-opportunity-driver-icon"><InlineIcon name={item.icon} /></span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
-        </div>
-      </section>
-
-      <section className="sourcing-opportunity-section sourcing-opportunity-shift">
-        <div className="sourcing-opportunity-shell">
-          <div className="sourcing-opportunity-heading"><p>The Competitive Reality</p><h2>The Market Is Growing. The Old Advantages Are Disappearing.</h2></div>
-          <div className="sourcing-opportunity-shift-grid">{industryShifts.map((item) => <article key={item.label}><h3><span className="sourcing-opportunity-shift-icon"><InlineIcon name={item.icon} /></span>{item.label}</h3><div><small>Then</small><p>{item.then}</p></div><div><small>Today</small><p>{item.today}</p></div></article>)}</div>
-          <div className="sourcing-opportunity-shift-close"><strong>Access Is No Longer The Advantage. Judgment Is.</strong><span>Relationships still matter. But relationships cannot compensate for an uncompetitive product.</span></div>
-          <div className="sourcing-opportunity-risk-panel">
-            <div><p>The Old Sourcing Model Is Too Slow</p><h3>Your Product Can Fall Behind Before It Reaches The Market.</h3></div>
-            <div className="sourcing-opportunity-risk-flow" aria-label="Supply chain change from technology to time to market">Technology <span>→</span> Components <span>→</span> Molds <span>→</span> Factories <span>→</span> Cost <span>→</span> Time To Market</div>
-            <div className="sourcing-opportunity-risk-grid">{riskCards.map((item) => <article key={item.title}><span className="sourcing-opportunity-risk-icon"><InlineIcon name={item.icon} /></span><h3>{item.title}</h3><p>{item.text}</p></article>)}</div>
-            <p className="sourcing-opportunity-risk-close">Faster Sourcing Is Not Enough. You Need Earlier Judgment.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="sourcing-opportunity-section sourcing-opportunity-denny-method">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-method-grid">
-          <div><div className="sourcing-opportunity-heading"><p>Industry Signals Before Supplier Search</p><h2>How Denny Sees Opportunities Earlier</h2><p>The newest technology is not automatically the right choice. The advantage comes from knowing which solution is current, commercially mature and appropriate for your market.</p></div><div className="sourcing-opportunity-signal-grid">{opportunitySignals.map((item) => <article key={item.number}><span>{item.number}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div></div>
-          <figure><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/08-market-research.webp")} alt="Product research desk with cleaning samples and market reference materials" /><figcaption>Early Signals → Market Judgment → Product Direction → Supply Chain Execution</figcaption></figure>
         </div>
       </section>
 
@@ -157,8 +107,15 @@ export default function SourcingPage() {
         <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Two Ways To Work With Us</p><h2>One Goal: A More Competitive Product.</h2></div><div className="sourcing-opportunity-model-grid"><article className="sourcing-opportunity-model-primary"><div className="sourcing-opportunity-model-image"><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/10-quality-inspection.webp")} alt="Cleaning appliance components prepared for quality inspection" /><span>One Quotation · Managed Delivery</span></div><small>Primary</small><h3>Buy Directly From World Clean Biz</h3><p>We recommend products, provide one quotation and manage sourcing, OEM/ODM, production, quality, export and delivery.</p></article><article><div className="sourcing-opportunity-model-image"><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/12-project-coordination.webp")} alt="Product specialists discussing a vacuum cleaner sample" /><span>Supplier Search · China-Side Control</span></div><small>Also Available</small><h3>Your China Sourcing Office</h3><p>We can find new suppliers or manage suppliers you already work with through a defined sourcing partnership.</p></article></div><p className="sourcing-opportunity-model-note">You do not need to choose a model now. We recommend the right approach after understanding your project.</p><TallyButton className="sourcing-opportunity-button" ctaLocation="sourcing_models" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Discuss My Product Opportunity</TallyButton></div>
       </section>
 
+      <section className="sourcing-opportunity-section sourcing-opportunity-denny-method">
+        <div className="sourcing-opportunity-shell sourcing-opportunity-method-grid">
+          <div><div className="sourcing-opportunity-heading"><p>Industry Signals Before Supplier Search</p><h2>How Denny Sees Opportunities Earlier</h2><p>The newest technology is not automatically the right choice. The advantage comes from knowing which solution is current, commercially mature and appropriate for your market.</p></div><div className="sourcing-opportunity-signal-grid">{opportunitySignals.map((item) => <article key={item.number}><span>{item.number}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div></div>
+          <figure><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/08-market-research.webp")} alt="Product research desk with cleaning samples and market reference materials" /><figcaption>Early Signals → Market Judgment → Product Direction → Supply Chain Execution</figcaption></figure>
+        </div>
+      </section>
+
       <section className="sourcing-opportunity-section sourcing-opportunity-team">
-        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" width={2200} height={1651} loading="lazy" decoding="async" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>Inside the cleaning industry since 2006</li><li>Cleaning industry hardware entrepreneur</li><li>Network across manufacturers, suppliers, brands and buyers</li><li>Currently supporting cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz →</Link></div></div>
+        <div className="sourcing-opportunity-shell sourcing-opportunity-team-grid"><img src="/images/industry/sourcing-supplier-meeting-2026.jpg" width={2200} height={1651} loading="lazy" decoding="async" alt="Denny You reviewing cleaning products with suppliers" /><div><p className="sourcing-opportunity-eyebrow">Personal Judgment. Team Execution.</p><h2>Denny Reviews. The Team Executes.</h2><p>Every sourcing project is reviewed and guided by Denny. The World Clean Biz team manages day-to-day communication, quotation, samples, supplier coordination, production, quality and delivery.</p><ul><li>Inside the cleaning industry since 2006</li><li>Cleaning industry hardware entrepreneur</li><li>Network across manufacturers, suppliers, brands and buyers</li><li>Currently supporting cross-border sellers and international brands</li></ul><Link href="/about">About Denny & World Clean Biz</Link></div></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-final-cta" id="shortlist-form">

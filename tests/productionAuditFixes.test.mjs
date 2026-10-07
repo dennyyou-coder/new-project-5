@@ -61,7 +61,7 @@ test("market estimate keeps the approved figures and states its editorial basis"
 test("Lawn Robots related intelligence uses article images and aligned actions", () => {
   assert.match(productPageSource, /article\.coverImage/);
   assert.match(productPageSource, /sourcing-lawn-related-image/);
-  assert.match(productPageSource, /Read the analysis →/);
+  assert.match(productPageSource, /Read the analysis/);
   assert.match(
     stylesSource,
     /\.sourcing-lawn-page \.sourcing-lawn-related-image/

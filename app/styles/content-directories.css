@@ -1727,9 +1727,6 @@
   font-weight: 800;
 }
 
-.blog-home-business nav a::after {
-  content: "→";
-}
 
 @media (max-width: 900px) {.blog-home-series-main {
     grid-template-columns: 1fr;

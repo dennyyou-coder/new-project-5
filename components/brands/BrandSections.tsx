@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { BrandAdditionalPhoto } from "./BrandAdditionalPhoto";
+import { ProductLinks } from "@/components/products/ProductLinks";
 import { BrandDataTable } from "@/components/brands/BrandDataTable";
 import { BrandFounderCard } from "@/components/brands/BrandFounderCard";
 import { BrandVisual } from "@/components/brands/BrandVisual";
@@ -43,39 +45,6 @@ export function BrandSections({
     <section className="section">
       <div className="insights-page-container">
         <div className="brand-content-sections">
-          <section className="brand-content-section" id="company-ownership">
-            <h2>Company &amp; Ownership</h2>
-            <div className={sectionLayoutClassName(ownershipVisual)}>
-              <div className="brand-section-main">
-                <p className="brand-section-summary">{profile.ownership.summary}</p>
-                {profile.ownership.parentCompany ? (
-                  <p className="brand-section-parent">
-                    <strong>Parent company:</strong>{" "}
-                    {profile.ownership.parentCompany}
-                  </p>
-                ) : null}
-                <div className="brand-table-group">
-                  <h3>Leadership</h3>
-                  {featuredLeader ? (
-                    <BrandFounderCard leader={featuredLeader} />
-                  ) : null}
-                  {!featuredLeader || tableLeaders.length > 0 ? (
-                    <BrandDataTable
-                      caption="Leadership"
-                      columns={[
-                        { key: "person", label: "Person" },
-                        { key: "role", label: "Role" },
-                        { key: "evidenceNote", label: "Evidence note" }
-                      ]}
-                      rows={buildLeadershipRows(tableLeaders)}
-                    />
-                  ) : null}
-                </div>
-              </div>
-              {ownershipVisual ? <BrandVisual visual={ownershipVisual} /> : null}
-            </div>
-          </section>
-
           <section className="brand-content-section" id="product-portfolio">
             <h2>Product Portfolio</h2>
             <div className={sectionLayoutClassName(portfolioVisual)}>
@@ -96,7 +65,36 @@ export function BrandSections({
                   }))}
                 />
               </div>
-              {portfolioVisual ? <BrandVisual visual={portfolioVisual} /> : null}
+              {portfolioVisual || profile.slug === "miele" ? <div className="company-portfolio-visuals">{portfolioVisual ? <BrandVisual visual={portfolioVisual} /> : null}<BrandAdditionalPhoto slug={profile.slug} placement="portfolio" /></div> : null}
+            </div>
+          </section>
+          <ProductLinks brand={profile.slug} />
+
+          <section className="brand-content-section" id="competitive-position">
+            <h2>Competitive Position</h2>
+            <div className={sectionLayoutClassName(competitionVisual)}>
+              <div className="brand-section-main">
+                <p className="brand-section-summary">
+                  {profile.competitivePosition.summary}
+                </p>
+                {competitorReferences.length > 0 ? (
+                  <div className="brand-competitor-links">
+                    <strong>Related brand profiles</strong>
+                    <div>
+                      {competitorReferences.map((competitor) => (
+                        <span key={competitor.slug}>
+                          {competitor.href ? (
+                            <Link href={competitor.href}>{competitor.slug}</Link>
+                          ) : competitor.slug}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+              {competitionVisual ? (
+                <BrandVisual visual={competitionVisual} />
+              ) : null}
             </div>
           </section>
 
@@ -139,33 +137,42 @@ export function BrandSections({
                 </div>
               </div>
             </div>
+            <BrandAdditionalPhoto slug={profile.slug} placement="manufacturing" />
           </section>
 
-          <section className="brand-content-section" id="competitive-position">
-            <h2>Competitive Position</h2>
-            <div className={sectionLayoutClassName(competitionVisual)}>
+          <section className="brand-content-section" id="company-ownership">
+            <h2>Company &amp; Ownership</h2>
+            <div className={sectionLayoutClassName(ownershipVisual)}>
               <div className="brand-section-main">
-                <p className="brand-section-summary">
-                  {profile.competitivePosition.summary}
-                </p>
-                {competitorReferences.length > 0 ? (
-                  <div className="brand-competitor-links">
-                    <strong>Related brand profiles</strong>
-                    <div>
-                      {competitorReferences.map((competitor) => (
-                        <span key={competitor.slug}>
-                          {competitor.href ? (
-                            <Link href={competitor.href}>{competitor.slug}</Link>
-                          ) : competitor.slug}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                <div className={profile.slug === "miele" ? "company-ownership-intro" : undefined}><div className="company-ownership-copy">
+                <p className="brand-section-summary">{profile.ownership.summary}</p>
+                {profile.ownership.parentCompany ? (
+                  <p className="brand-section-parent">
+                    <strong>Parent company:</strong>{" "}
+                    {profile.ownership.parentCompany}
+                  </p>
                 ) : null}
+                </div><BrandAdditionalPhoto slug={profile.slug} placement="ownership" /></div>
+                <details className="company-leadership-details"><summary>Leadership</summary>
+                <div className="brand-table-group">
+                  {featuredLeader ? (
+                    <BrandFounderCard leader={featuredLeader} />
+                  ) : null}
+                  {!featuredLeader || tableLeaders.length > 0 ? (
+                    <BrandDataTable
+                      caption="Leadership"
+                      columns={[
+                        { key: "person", label: "Person" },
+                        { key: "role", label: "Role" },
+                        { key: "evidenceNote", label: "Evidence note" }
+                      ]}
+                      rows={buildLeadershipRows(tableLeaders)}
+                    />
+                  ) : null}
+                </div>
+                </details>
               </div>
-              {competitionVisual ? (
-                <BrandVisual visual={competitionVisual} />
-              ) : null}
+              {ownershipVisual ? <BrandVisual visual={ownershipVisual} /> : null}
             </div>
           </section>
         </div>

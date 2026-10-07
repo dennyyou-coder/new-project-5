@@ -1,0 +1,240 @@
+/* Approved A design: mist blue-grey canvas and white reading surfaces. */
+.structure-refresh.design-a {
+  --ink: #202b35;
+  --text: #202b35;
+  --muted: #526471;
+  --line: #c5d6e4;
+  --line-strong: #adc6da;
+  --soft: #f3f7fa;
+  --soft-blue: #e3ecf3;
+  --background: #ffffff;
+  --section-background: #e3ecf3;
+  --accent-light: #85bdea;
+  --accent-soft: #e2eef8;
+  --paper: #ffffff;
+  --surface: #ffffff;
+  --primary: #1762c4;
+  --accent: #1762c4;
+  --blue: #1762c4;
+  --teal: #1762c4;
+  --orange: #1762c4;
+  --navy: #202b35;
+  --navy-2: #1762c4;
+  --teal-soft: #e3ecf3;
+  --blue-soft: #e3ecf3;
+  --cta-blue: #1762c4;
+  --cta-hover: #1255aa;
+  --cta-border: #adc6da;
+  --shadow-soft: 0 4px 16px #20354a06;
+  --shadow-lift: 0 8px 24px #20354a0b;
+  --shadow-panel: 0 12px 32px #20354a0d;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.structure-refresh.design-a .site-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.structure-refresh.design-a #main-content { flex: 1; min-width: 0; }
+.structure-refresh.design-a .container { width: min(1280px, calc(100% - 80px)); }
+.structure-refresh.design-a :is(button, input, select, textarea) { font-family: inherit; }
+.structure-refresh.design-a :is(h1, h2, h3, h4) { font-family: inherit; font-weight: 700; }
+.structure-refresh.design-a :is(h1, h2) { letter-spacing: -0.035em; }
+.structure-refresh.design-a :is(h3, h4) { letter-spacing: -0.018em; }
+.structure-refresh.design-a :is(p, li, h1, h2, h3, td, th) { overflow-wrap: break-word; }
+.structure-refresh.design-a :is(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid #1762c4;
+  outline-offset: 4px;
+}
+.structure-refresh.design-a :is(section[id], h2[id], h3[id], div[id]) { scroll-margin-top: 110px; }
+.structure-refresh.design-a .eyebrow {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.075em;
+  line-height: 1.6;
+  color: var(--primary);
+}
+.structure-refresh.design-a .site-shell
+  :is(.home-editorial, .article-reading-experience, .product-detail, .wcb-expo-page) {
+  --cta-blue: #1762c4;
+  --cta-hover: #1255aa;
+  --cta-border: #adc6da;
+}
+.structure-refresh.design-a .site-shell :is(.button, .button-secondary, .product-button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 13px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  box-shadow: none;
+  transform: none;
+}
+.structure-refresh.design-a .site-shell :is(.button, .product-button) {
+  color: #fff;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+.structure-refresh.design-a .site-shell :is(.button, .product-button):hover {
+  color: #fff;
+  background: #1255aa;
+  border-color: #1255aa;
+  transform: none;
+}
+.structure-refresh.design-a .site-shell .button-secondary {
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line-strong);
+}
+.structure-refresh.design-a .site-shell .button-secondary:hover {
+  color: var(--primary);
+  background: var(--soft);
+  border-color: var(--primary);
+  transform: none;
+}
+.structure-refresh.design-a .icon-badge {
+  background: #e2eef8;
+  color: var(--primary);
+  border: 1px solid #c8dff1;
+  box-shadow: none;
+}
+.structure-refresh.design-a .form label { font-weight: 600; }
+.structure-refresh.design-a .form :is(input, select, textarea) {
+  border-radius: 6px;
+  color: var(--ink);
+  background: #fff;
+}
+.structure-refresh.design-a dialog[aria-label="World Clean Biz inquiry form"] {
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 16px 60px #20354a33;
+}
+.structure-refresh.design-a dialog[aria-label="World Clean Biz inquiry form"]::backdrop { background: #202b3566; }
+.structure-refresh.design-a dialog[aria-label="World Clean Biz inquiry form"] > div:first-child { background: var(--soft-blue); }
+.structure-refresh.design-a dialog[aria-label="World Clean Biz inquiry form"] button {
+  min-height: 44px;
+  min-width: 72px;
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+.structure-refresh.design-a dialog[aria-label="World Clean Biz inquiry form"] a { color: var(--primary); }
+
+/* Navigation keeps the existing destinations, menu behavior and one primary CTA. */
+.structure-refresh.design-a .refresh-header {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+  backdrop-filter: none;
+  z-index: 40;
+}
+.structure-refresh.design-a .refresh-header .header-inner { min-height: 88px; gap: 28px; }
+.structure-refresh.design-a .refresh-header .brand { gap: 12px; }
+.structure-refresh.design-a .brand-wcb-block {
+  width: 46px;
+  height: 44px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--primary);
+  font-size: 17px;
+  font-weight: 700;
+  box-shadow: none;
+}
+.structure-refresh.design-a .refresh-header .brand-name { color: var(--ink); font-size: 19px; font-weight: 700; line-height: 1.25; }
+.structure-refresh.design-a .brand-tagline { color: var(--muted); font-size: 9px; font-weight: 400; line-height: 1.4; }
+.structure-refresh.design-a .refresh-header .header-actions { flex: 1; }
+.structure-refresh.design-a .refresh-header .nav { width: 100%; gap: 22px; font-size: 12px; font-weight: 500; }
+.structure-refresh.design-a .nav-group > button { font-size: inherit; font-weight: inherit; }
+.structure-refresh.design-a .nav-expand-indicator { width: 10px; font-size: 15px; color: var(--muted); text-align: center; }
+.structure-refresh.design-a .nav :is(a[aria-current="page"], button[data-current="true"]) { color: var(--primary); }
+.structure-refresh.design-a .nav a::after { display: none; }
+.structure-refresh.design-a .nav-submenu {
+  min-width: 238px;
+  padding: 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px #20354a12;
+}
+.structure-refresh.design-a .nav .nav-submenu a { font-size: 13px; font-weight: 500; padding: 10px 12px; border-radius: 5px; }
+.structure-refresh.design-a .nav .nav-submenu a:is(:hover, [aria-current="page"]) { color: var(--primary); background: var(--soft); }
+.structure-refresh.design-a .site-shell .refresh-header .nav .nav-business {
+  min-height: 48px;
+  margin-left: auto;
+  padding: 12px 20px;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+.structure-refresh.design-a .site-shell .refresh-header .nav .nav-business:hover { background: #1255aa; border-color: #1255aa; }
+
+/* Footer is an open grid on the approved canvas, without nested panels. */
+.structure-refresh.design-a .refresh-footer {
+  padding: 56px 0 28px;
+  background: #e3ecf3;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+.structure-refresh.design-a .footer-grid { grid-template-columns: minmax(240px, .8fr) minmax(0, 2fr); gap: 72px; }
+.structure-refresh.design-a :is(.footer-brand, .footer-links) { padding: 0; background: none; border: 0; box-shadow: none; border-radius: 0; }
+.structure-refresh.design-a .footer-brand-heading { gap: 12px; }
+.structure-refresh.design-a .footer-brand-logo { width: 44px; height: 42px; border-radius: 6px; background: var(--primary); font-size: 16px; font-weight: 700; }
+.structure-refresh.design-a .footer-brand-heading strong { font-size: 20px; letter-spacing: -.025em; }
+.structure-refresh.design-a .footer-brand-heading span:not(.footer-brand-logo) { color: var(--primary); font-size: 10px; font-weight: 400; }
+.structure-refresh.design-a .footer-brand p { font-size: 14px; line-height: 1.75; max-width: 320px; }
+.structure-refresh.design-a .footer-links { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.structure-refresh.design-a .footer-links div { gap: 9px; align-content: start; }
+.structure-refresh.design-a .footer-links strong { font-size: 14px; font-weight: 700; padding-bottom: 7px; }
+.structure-refresh.design-a .footer-links :is(a, button) { color: var(--muted); font-size: 13px; font-weight: 400; line-height: 1.6; }
+.structure-refresh.design-a .footer-links :is(a, button):hover { color: var(--primary); }
+.structure-refresh.design-a .footer-bottom { margin-top: 38px; padding-top: 22px; border-top: 1px solid var(--line-strong); font-size: 12px; font-weight: 400; }
+
+@media (max-width: 1230px) and (min-width: 1181px) {
+  .structure-refresh.design-a .refresh-header .nav { gap: 13px; font-size: 11px; }
+  .structure-refresh.design-a .refresh-header .brand-name { font-size: 17px; }
+  .structure-refresh.design-a .site-shell .refresh-header .nav .nav-business { margin-left: 0; padding: 12px 14px; }
+}
+@media (max-width: 1180px) {
+  .structure-refresh.design-a .refresh-header .header-inner { min-height: 76px; }
+  .structure-refresh.design-a .mobile-menu-toggle { width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 6px; }
+  .structure-refresh.design-a .mobile-menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg); }
+  .structure-refresh.design-a .mobile-menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .structure-refresh.design-a .mobile-menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: rotate(-45deg); }
+  .structure-refresh.design-a .header-actions { max-height: calc(100dvh - 90px); overflow-y: auto; background: #fff; padding: 18px; }
+  .structure-refresh.design-a .refresh-header .nav { gap: 3px; font-size: 15px; align-items: stretch; }
+  .structure-refresh.design-a .nav > a, .structure-refresh.design-a .nav-group > button { padding: 10px 8px; min-height: 46px; }
+  .structure-refresh.design-a .nav-group > button { justify-content: space-between; width: 100%; }
+  .structure-refresh.design-a .nav-submenu { position: static; min-width: 0; border: 0; background: var(--soft); box-shadow: none; margin: 3px 0 8px; }
+  .structure-refresh.design-a .site-shell .refresh-header .nav .nav-business { margin: 12px 0 0; font-size: 14px; }
+  .structure-refresh.design-a .footer-grid { gap: 40px; }
+}
+@media (max-width: 760px) {
+  .structure-refresh.design-a .container { width: calc(100% - 40px); }
+  .structure-refresh.design-a .refresh-header .header-inner { min-height: 74px; gap: 12px; }
+  .structure-refresh.design-a .refresh-header .brand-name { font-size: 17px; }
+  .structure-refresh.design-a .brand-tagline { font-size: 8px; }
+  .structure-refresh.design-a .brand-wcb-block { width: 39px; height: 38px; font-size: 14px; }
+  .structure-refresh.design-a .refresh-header .brand { gap: 9px; }
+  .structure-refresh.design-a .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .structure-refresh.design-a .footer-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 22px; }
+  .structure-refresh.design-a .refresh-footer { padding-top: 42px; }
+  .structure-refresh.design-a .footer-links :is(a, button) { padding: 4px 0; }
+  .structure-refresh.design-a :is(section[id], h2[id], h3[id], div[id]) { scroll-margin-top: 92px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(body.design-a) { scroll-behavior: auto; }
+  .structure-refresh.design-a *, .structure-refresh.design-a *::before, .structure-refresh.design-a *::after { scroll-behavior: auto; transition: none; animation: none; }
+}

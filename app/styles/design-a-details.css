@@ -1,0 +1,505 @@
+/* Approved Design A: detail and service pages only. Content and behaviors remain in their templates. */
+.structure-refresh.design-a :is(.article-reading-experience, .news-article, .brand-detail, .product-detail, .equipment-detail, .component-intelligence-detail, .about-network-page, .wcb-expo-page, .trust-page, .sourcing-opportunity-page, .sourcing-v3-page) {
+  --detail-canvas: #e3ecf3;
+  --detail-ink: #202b35;
+  --detail-muted: #526471;
+  --detail-blue: #1762c4;
+  --detail-line: #cbd8e2;
+  color: var(--detail-ink);
+  font-family: inherit;
+}
+.structure-refresh.design-a :is(.brand-detail, .product-detail, .equipment-detail, .component-intelligence-detail, .sourcing-opportunity-page, .sourcing-v3-page) {
+  --product-ink: #202b35;
+  --product-blue: #1762c4;
+  --equipment-ink: #202b35;
+  --equipment-muted: #526471;
+  --equipment-line: #cbd8e2;
+  --equipment-soft: #e3ecf3;
+  --equipment-accent: #1762c4;
+  --equipment-accent-soft: #edf3f8;
+  --component-ink: #202b35;
+  --component-muted: #526471;
+  --component-line: #cbd8e2;
+  --component-soft: #e3ecf3;
+  --component-accent: #1762c4;
+  --component-accent-soft: #edf3f8;
+  --so-ink: #202b35;
+  --so-navy: #202b35;
+  --so-blue: #1762c4;
+  --so-line: #cbd8e2;
+  --lawn-ink: #202b35;
+  --lawn-muted: #526471;
+  --lawn-navy: #202b35;
+  --lawn-accent: #1762c4;
+  --lawn-rule: #cbd8e2;
+  --lawn-surface: #e3ecf3;
+  --lawn-paper: #fff;
+  background: #fff;
+}
+.structure-refresh.design-a :is(.article-reading-experience, .news-article, .brand-detail, .product-detail, .equipment-detail, .component-intelligence-detail, .about-network-page, .wcb-expo-page, .trust-page, .sourcing-opportunity-page, .sourcing-v3-page) :is(h1, h2, h3, h4) {
+  color: #202b35;
+  font-family: inherit;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail, .about-network-page, .wcb-expo-page, .trust-page, .sourcing-opportunity-page, .sourcing-v3-page) :is(.container, .insights-page-container, .wcb-expo-shell, .sourcing-opportunity-shell, .sourcing-v3-container) {
+  width: min(1280px, calc(100% - 80px));
+  max-width: 1280px;
+  margin-inline: auto;
+}
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail, .about-network-page, .trust-page, .sourcing-v3-page) > .section,
+.structure-refresh.design-a .sourcing-opportunity-section {
+  padding-block: 64px;
+}
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail, .about-network-page, .wcb-expo-page, .trust-page, .sourcing-opportunity-page, .sourcing-v3-page) :is(p, li) {
+  font-size: 16px;
+  line-height: 1.7;
+}
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail, .about-network-page, .wcb-expo-page, .trust-page, .sourcing-opportunity-page, .sourcing-v3-page) :is(.eyebrow, .product-eyebrow, .sourcing-v3-kicker, .sourcing-opportunity-eyebrow, .wcb-expo-kicker, .wcb-expo-section-label) {
+  color: #1762c4;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+.structure-refresh.design-a :is(.brand-detail, .product-detail, .equipment-detail, .component-intelligence-detail, .wcb-expo-page, .sourcing-opportunity-page, .sourcing-v3-page) :is(section[id], details[id]) {
+  scroll-margin-top: 112px;
+}
+
+/* Long-form reading. The image content, captions, figures and table rows are unchanged. */
+.structure-refresh.design-a .article-reading-experience .blog-article-hero {
+  padding: 42px 0 40px;
+  background: #e3ecf3;
+  border-bottom: 1px solid #cbd8e2;
+}
+.structure-refresh.design-a .article-reading-experience .blog-article-hero > .blog-article-container {
+  width: min(1040px, calc(100% - 80px));
+}
+.structure-refresh.design-a .article-reading-experience .blog-visible-breadcrumb { margin-bottom: 24px; color: #526471; }
+.structure-refresh.design-a .article-reading-experience .signal-detail-meta span { color: #526471; }
+.structure-refresh.design-a .article-reading-experience .signal-detail-meta span:first-child { color: #1762c4; }
+.structure-refresh.design-a .article-reading-experience .blog-article-hero h1 {
+  max-width: 1000px;
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-size: clamp(32px, 3.4vw, 48px);
+  line-height: 1.18;
+  letter-spacing: -.035em;
+  color: #202b35;
+}
+.structure-refresh.design-a .article-reading-experience .blog-article-hero > .blog-article-container > p:not(.signal-detail-author):not(.blog-article-series-title) {
+  max-width: 840px;
+  color: #526471;
+  font-size: 18px;
+  line-height: 1.65;
+}
+.structure-refresh.design-a .article-reading-experience .signal-detail-author,
+.structure-refresh.design-a .article-reading-experience .blog-article-series-title { color: #526471; }
+.structure-refresh.design-a .article-reading-experience .signal-detail-author a,
+.structure-refresh.design-a .article-reading-experience .article-brand-links a { color: #1762c4; }
+.structure-refresh.design-a .article-reading-experience .blog-article-section { padding: 44px 0 64px; background: #fff; }
+.structure-refresh.design-a .article-reading-experience .blog-article-section > .blog-article-container { width: min(760px, calc(100% - 80px)); }
+.structure-refresh.design-a .article-reading-experience .blog-key-points { background: #edf3f8; border-color: #cbd8e2; border-left-color: #1762c4; border-radius: 8px; }
+.structure-refresh.design-a .article-reading-experience .blog-key-points :is(strong, li) { color: #202b35; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body { font-family: inherit; color: #202b35; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body :is(p, li) { font-size: 17px; line-height: 1.85; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body :is(h2, h3, h4) { font-family: inherit; color: #202b35; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body h2 { font-size: 29px; line-height: 1.35; border-color: #cbd8e2; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body h3 { font-size: 23px; line-height: 1.4; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body a { color: #1762c4; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body blockquote { background: #edf3f8; color: #526471; border-left-color: #1762c4; border-radius: 0 8px 8px 0; }
+.structure-refresh.design-a .article-reading-experience :is(.blog-article-cover, .blog-reading-body img) { border-radius: 6px; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body :is(figcaption, p:has(> em:only-child)) { color: #526471; font-size: 13px; line-height: 1.65; }
+.structure-refresh.design-a .article-reading-experience :is(.blog-author-bio-box, .blog-conversion-cta, .blog-topic-paths) { background: #e3ecf3; border-color: #cbd8e2; border-radius: 8px; color: #202b35; box-shadow: none; }
+.structure-refresh.design-a .article-reading-experience .blog-conversion-cta :is(h2, p) { color: #202b35; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body :is(th, td) { font-family: inherit; font-size: 14px; line-height: 1.65; border-color: #cbd8e2; }
+.structure-refresh.design-a .article-reading-experience .blog-reading-body th { background: #e3ecf3; color: #202b35; }
+
+.structure-refresh.design-a .news-page .news-article { width: min(760px, calc(100% - 80px)); padding: 40px 0 64px; background: #fff; }
+.structure-refresh.design-a .news-article > header { padding-bottom: 30px; border-bottom: 1px solid #cbd8e2; }
+.structure-refresh.design-a .news-page .news-article h1 { color: #202b35; font-family: inherit; font-size: clamp(30px, 3.3vw, 46px); line-height: 1.2; letter-spacing: -.03em; }
+.structure-refresh.design-a .news-page .news-deck { color: #526471; font-size: 18px; line-height: 1.7; }
+.structure-refresh.design-a .news-page .news-article :is(.news-meta, .news-byline, .news-announcement, .news-breadcrumb) { color: #526471; }
+.structure-refresh.design-a .news-page .news-prose { color: #202b35; font-family: inherit; }
+.structure-refresh.design-a .news-page .news-prose :is(p, li) { font-size: 17px; line-height: 1.85; }
+.structure-refresh.design-a .news-page .news-prose a { color: #1762c4; }
+.structure-refresh.design-a .news-page .news-article :is(.news-cover, .news-context-cards a) { border-radius: 8px; border-color: #cbd8e2; }
+.structure-refresh.design-a .news-page .news-sources { padding: 24px; border: 1px solid #cbd8e2; background: #edf3f8; border-radius: 8px; }
+
+/* Company, product, equipment and component evidence pages. */
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .guides-category-hero { padding: 38px 0 32px; background: #e3ecf3; border-bottom: 1px solid #cbd8e2; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .blog-visible-breadcrumb { color: #526471; font-size: 12px; line-height: 1.6; margin-bottom: 24px; }
+.structure-refresh.design-a .brand-detail .guides-category-hero .blog-visible-breadcrumb,
+.structure-refresh.design-a .brand-detail .guides-category-hero .blog-visible-breadcrumb :is(a, span),
+.structure-refresh.design-a .brand-detail .brand-detail-hero > div > p:last-child { color: #526471; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-grid, .component-intelligence-hero-grid) { gap: 48px; margin-top: 24px; align-items: start; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-copy, .component-intelligence-hero-copy) h1 { color: #202b35; font-size: clamp(34px, 3.6vw, 52px); line-height: 1.13; letter-spacing: -.035em; font-family: inherit; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-copy, .component-intelligence-hero-copy) p { color: #526471; font-size: 16px; line-height: 1.7; }
+.structure-refresh.design-a .brand-detail .brand-detail-hero h1 + p { color: #202b35; font-size: 21px; line-height: 1.5; }
+.structure-refresh.design-a .brand-detail .brand-category-link { background: #fff; color: #1762c4; border-color: #cbd8e2; border-radius: 6px; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-hero-media, .equipment-hero-media, .component-intelligence-hero-media, .brand-key-facts, .equipment-key-facts, .component-intelligence-key-facts) { border: 1px solid #cbd8e2; border-radius: 8px; background: #fff; box-shadow: none; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-hero-media, .equipment-hero-media, .component-intelligence-hero-media) img { height: auto; object-fit: contain; background: #fff; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-hero-media__eyebrow, .equipment-hero-media__eyebrow, .component-intelligence-hero-media > span) { background: #edf3f8; color: #526471; font-size: 11px; letter-spacing: .06em; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-section-nav, .equipment-section-nav, .component-intelligence-nav) { gap: 8px; margin-top: 24px; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-section-nav, .equipment-section-nav, .component-intelligence-nav) a { padding: 11px 14px; min-height: 44px; color: #202b35; background: #fff; border: 1px solid #cbd8e2; border-radius: 6px; font-size: 13px; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-section-nav, .equipment-section-nav, .component-intelligence-nav) a:hover { color: #1762c4; border-color: #1762c4; }
+.structure-refresh.design-a .brand-detail .brand-content-section { padding-block: 36px; border-color: #cbd8e2; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-content-section, .equipment-section-heading, .component-intelligence-section header) h2 { font-size: clamp(26px, 2.6vw, 36px); line-height: 1.25; letter-spacing: -.025em; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-data-table th, .brand-data-table td) { border-color: #cbd8e2; color: #202b35; font-size: 14px; line-height: 1.65; padding: 16px; overflow-wrap: anywhere; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .brand-data-table th { background: #edf3f8; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .brand-data-table a { color: #1762c4; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-founder-card, .brand-visual, .equipment-visual, .component-intelligence-visual, .equipment-type-card, .equipment-assessment-card, .equipment-decision-card, .equipment-component-card, .component-intelligence-grid > article, .component-intelligence-assessments > article, .component-intelligence-checks > article, .component-intelligence-table) { border-color: #cbd8e2; border-radius: 8px; box-shadow: none; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-visual, .equipment-visual, .component-intelligence-visual) img { object-fit: contain; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.equipment-section--soft, .component-intelligence-section--soft) { background: #e3ecf3; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) :is(.equipment-scope-grid > div, .component-intelligence-scope > div, .equipment-system-flow > li, .component-intelligence-flow > li, .equipment-standards-grid > article, .equipment-source-list > li, .component-intelligence-source-list > li, .component-intelligence-details details, .component-intelligence-wcb) { border-radius: 8px; border-color: #cbd8e2; }
+.structure-refresh.design-a .brand-detail :is(.brand-timeline time, .brand-visual__eyebrow, .brand-sources a) { color: #1762c4; }
+.structure-refresh.design-a .brand-detail :is(.brand-timeline p, .brand-founder-details p, .brand-visual figcaption) { color: #526471; }
+
+.structure-refresh.design-a .product-detail .product-container { width: min(1280px, calc(100% - 80px)); max-width: 1280px; }
+.structure-refresh.design-a .product-detail .product-breadcrumb { padding: 28px 0; color: #526471; }
+.structure-refresh.design-a .product-detail .product-detail-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; padding-bottom: 40px; }
+.structure-refresh.design-a .product-detail .product-model-cover { border: 1px solid #cbd8e2; border-radius: 8px; background: #fff; padding: 24px; }
+.structure-refresh.design-a .product-detail .product-model-cover img { width: 100%; height: auto; max-height: 520px; object-fit: contain; }
+.structure-refresh.design-a .product-detail .product-detail-intro h1 { color: #202b35; font-family: inherit; font-size: clamp(34px, 3.4vw, 48px); line-height: 1.15; letter-spacing: -.035em; }
+.structure-refresh.design-a .product-detail :is(.product-lead, .product-note, .product-model-cover figcaption) { color: #526471; }
+.structure-refresh.design-a .product-detail .product-lead { font-size: 17px; line-height: 1.75; }
+.structure-refresh.design-a .product-detail .product-key-facts { background: #e3ecf3; padding: 20px; border: 1px solid #cbd8e2; border-radius: 8px; gap: 14px; }
+.structure-refresh.design-a .product-detail .product-key-facts > div { border-color: #cbd8e2; }
+.structure-refresh.design-a .product-detail .refresh-product-contents { padding: 18px 24px; background: #edf3f8; border: 1px solid #cbd8e2; border-radius: 8px; }
+.structure-refresh.design-a .product-detail .product-fit-grid { padding: 32px; gap: 40px; background: #e3ecf3; border: 1px solid #cbd8e2; border-radius: 8px; }
+.structure-refresh.design-a .product-detail .product-reading-layout { grid-template-columns: minmax(0, 780px) minmax(220px, 1fr); gap: 64px; }
+.structure-refresh.design-a .product-detail :is(.product-content-section, .product-editorial) { scroll-margin-top: 112px; border-color: #cbd8e2; }
+.structure-refresh.design-a .product-detail :is(.product-content-section, .product-editorial) h2 { font-size: clamp(26px, 2.6vw, 34px); line-height: 1.3; }
+.structure-refresh.design-a .product-detail .product-editorial :is(p, li) { font-family: inherit; color: #202b35; font-size: 16px; line-height: 1.85; }
+.structure-refresh.design-a .product-detail :is(.product-table-wrap, .product-faq, .product-price-card, .product-resource-list article, .product-related-card, .product-buying-note) { border: 1px solid #cbd8e2; border-radius: 8px; box-shadow: none; }
+.structure-refresh.design-a .product-detail .product-buying-note { background: #edf3f8; color: #202b35; padding: 24px; }
+.structure-refresh.design-a .product-detail .product-buying-note h2 { color: #202b35; }
+.structure-refresh.design-a .product-detail .product-buying-note :is(a, .product-eyebrow) { color: #1762c4; }
+.structure-refresh.design-a .product-detail :is(th, td) { border-color: #cbd8e2; font-size: 14px; line-height: 1.65; }
+.structure-refresh.design-a .product-detail :is(thead, th) { background: #e3ecf3; color: #202b35; }
+.structure-refresh.design-a .product-detail :is(.product-faq, .product-price-card, .product-resource-list article) { padding: 22px; background: #fff; }
+.structure-refresh.design-a .product-detail .product-faq summary { color: #202b35; min-height: 24px; }
+.structure-refresh.design-a .product-detail :is(.product-comparison-takeaway, .product-sources) { background: #edf3f8; color: #202b35; border-radius: 8px; border-color: #cbd8e2; }
+.structure-refresh.design-a .product-detail .product-sources :is(h2, h3) { color: #202b35; }
+.structure-refresh.design-a .product-detail .product-sources p:not(.product-eyebrow) { color: #526471; }
+.structure-refresh.design-a .product-detail .product-sources :is(.product-eyebrow, a) { color: #1762c4; }
+.structure-refresh.design-a .product-detail .product-sources a:hover { color: #1052ab; }
+.structure-refresh.design-a .product-detail .product-sources li { color: #202b35; border-color: #cbd8e2; }
+
+
+/* About and the four existing cooperation routes. */
+.structure-refresh.design-a .about-network-page { background: #fff; }
+.structure-refresh.design-a .about-network-page .refresh-page-intro { padding-block: 48px; }
+.structure-refresh.design-a .about-network-page .refresh-page-intro h1,
+.structure-refresh.design-a .page-hero-contact h1 { max-width: 1050px; font-size: clamp(34px, 3.8vw, 52px); line-height: 1.16; letter-spacing: -.035em; color: #202b35; }
+.structure-refresh.design-a .about-network-page .refresh-page-intro > p:not(.eyebrow) { color: #526471; font-size: 18px; line-height: 1.7; }
+.structure-refresh.design-a .about-network-page .refresh-about-founder { gap: 56px; align-items: center; }
+.structure-refresh.design-a .about-network-page .refresh-about-founder > img { border-radius: 8px; }
+.structure-refresh.design-a .about-network-page :is(.about-network-trust, .about-network-journey) { background: #e3ecf3; }
+.structure-refresh.design-a .about-network-page .about-network-journey { background: #fff; }
+.structure-refresh.design-a .about-network-page :is(.about-network-trust-grid, .about-network-journey-grid) { gap: 24px; }
+.structure-refresh.design-a .about-network-page :is(.about-network-trust-grid, .about-network-journey-grid) article { padding: 28px; border: 1px solid #cbd8e2; border-radius: 8px; background: #fff; box-shadow: none; }
+.structure-refresh.design-a .about-network-page :is(.about-network-heading, .refresh-about-founder) h2 { font-size: clamp(27px, 3vw, 38px); line-height: 1.3; }
+.structure-refresh.design-a .about-network-page :is(.about-network-trust-grid, .about-network-journey-grid) h3 { font-size: 21px; line-height: 1.35; }
+.structure-refresh.design-a .about-network-page :is(.about-network-trust-grid, .about-network-journey-grid, .refresh-about-founder) p { color: #526471; }
+.structure-refresh.design-a .page-hero-contact { min-height: 0; padding: 48px 0; background: #e3ecf3; color: #202b35; border-bottom: 1px solid #cbd8e2; }
+.structure-refresh.design-a .page-hero-contact::before,
+.structure-refresh.design-a .page-hero-contact::after { opacity: 0; }
+.structure-refresh.design-a .page-hero-contact p:not(.eyebrow) { max-width: 900px; color: #526471; font-size: 18px; line-height: 1.7; }
+.structure-refresh.design-a .contact-inquiry-section { padding: 56px 0; background: #fff; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-grid > div { min-width: 0; }
+.structure-refresh.design-a .contact-inquiry-section .lead-form-trigger { display: block; height: 100%; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-card { width: 100%; height: 100%; min-height: 270px; padding: 28px; border: 1px solid #cbd8e2; border-radius: 8px; background: #e3ecf3; color: #202b35; box-shadow: none; text-align: left; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-card:hover { background: #edf3f8; border-color: #1762c4; transform: none; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-card-copy { gap: 14px; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-card-copy > strong { color: #202b35; font-size: 25px; line-height: 1.35; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-card-copy > span { color: #526471; font-size: 16px; line-height: 1.7; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-card-copy > em { align-self: start; width: fit-content; padding: 12px 18px; min-height: 44px; border-radius: 6px; background: #1762c4; color: #fff; font-style: normal; font-size: 14px; font-weight: 700; }
+.structure-refresh.design-a .contact-inquiry-section .contact-help-card-number { color: #1762c4; font-family: ui-monospace, monospace; }
+.structure-refresh.design-a .contact-response-section { padding: 64px 0; background: #e3ecf3; }
+.structure-refresh.design-a .contact-response-layout { grid-template-columns: minmax(280px, .85fr) minmax(0, 1.15fr); gap: 56px; align-items: start; }
+.structure-refresh.design-a .contact-response-visual { border-radius: 8px; overflow: hidden; }
+.structure-refresh.design-a .contact-response-identity { background: #fff; color: #202b35; border: 1px solid #cbd8e2; padding: 22px; }
+.structure-refresh.design-a .contact-response-identity :is(strong, span, small) { color: #202b35; }
+.structure-refresh.design-a .contact-response-copy h2 { color: #202b35; font-size: clamp(27px, 3vw, 38px); line-height: 1.3; }
+.structure-refresh.design-a .contact-response-copy p { color: #526471; font-size: 16px; line-height: 1.75; }
+.structure-refresh.design-a .contact-context-list { gap: 0; }
+.structure-refresh.design-a .contact-context-list li { padding: 16px 0; border: 0; border-top: 1px solid #cbd8e2; border-radius: 0; color: #202b35; background: transparent; }
+
+/* Expo photos remain the original event assets, with a quiet readable title treatment. */
+.structure-refresh.design-a .wcb-expo-page { background: #fff; }
+.structure-refresh.design-a .wcb-expo-hero { min-height: 0; padding: 58px 0; color: #202b35; background-color: #e3ecf3; background-image: none; }
+.structure-refresh.design-a .wcb-expo-hero-content { display: grid; grid-template-columns: minmax(0, 688fr) minmax(0, 544fr); gap: 48px; align-items: center; min-height: 0; padding-block: 0; }
+.structure-refresh.design-a .wcb-expo-hero-copy { min-width: 0; }
+.structure-refresh.design-a .wcb-expo-hero-photo { margin: 0; min-width: 0; }
+.structure-refresh.design-a .wcb-expo-hero-photo img { display: block; width: 100%; aspect-ratio: 544 / 392; object-fit: cover; border-radius: 6px; }
+.structure-refresh.design-a .wcb-expo-hero-photo figcaption { margin-top: 14px; color: #526471; font-size: 13px; line-height: 1.55; }
+.structure-refresh.design-a .wcb-expo-hero :is(h1, p, strong, span) { color: #202b35; }
+.structure-refresh.design-a .wcb-expo-hero h1 { max-width: 700px; font-size: clamp(36px, 3.2vw, 44px); line-height: 1.12; letter-spacing: -.035em; }
+.structure-refresh.design-a .wcb-expo-hero :is(.wcb-expo-hero-intro, .wcb-expo-chinese) { max-width: 660px; color: #526471; }
+.structure-refresh.design-a .wcb-expo-event-facts { max-width: 650px; padding: 20px 24px; background: #fff; border: 1px solid #cbd8e2; border-radius: 8px; }
+.structure-refresh.design-a .wcb-expo-event-facts strong { color: #202b35; font-size: 26px; }
+.structure-refresh.design-a .wcb-expo-hero-actions { gap: 12px; }
+.structure-refresh.design-a .wcb-expo-secondary-link { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px; background: #fff; color: #1762c4; border: 1px solid #a9bfd3; border-radius: 6px; text-decoration: none; }
+.structure-refresh.design-a .wcb-expo-page > section:not(.wcb-expo-hero) { padding-block: 64px; }
+.structure-refresh.design-a .wcb-expo-page :is(.wcb-expo-proof, .wcb-expo-supply-chain, .wcb-expo-exhibitor, .wcb-expo-visit) { color: #202b35; background: #e3ecf3; }
+.structure-refresh.design-a .wcb-expo-page :is(.wcb-expo-section-head, .wcb-expo-proof-copy) h2 { color: #202b35; font-size: clamp(28px, 3vw, 38px); line-height: 1.25; }
+.structure-refresh.design-a .wcb-expo-page :is(.wcb-expo-section-head, .wcb-expo-proof-copy) p:not(.wcb-expo-section-label) { color: #526471; }
+.structure-refresh.design-a .wcb-expo-page :is(.wcb-expo-why-card, .wcb-expo-category-card, .wcb-expo-program-card, .wcb-expo-supply-card, .wcb-expo-editions article) { border: 1px solid #cbd8e2; border-radius: 8px; box-shadow: none; background: #fff; color: #202b35; overflow: hidden; }
+.structure-refresh.design-a .wcb-expo-page :is(.wcb-expo-why-card, .wcb-expo-program-card, .wcb-expo-supply-card) p { color: #526471; }
+.structure-refresh.design-a .wcb-expo-page .wcb-expo-proof-numbers article { padding: 24px; border: 1px solid #cbd8e2; border-radius: 8px; background: #fff; }
+.structure-refresh.design-a .wcb-expo-page .wcb-expo-proof-numbers :is(strong, span, p) { color: #202b35; }
+.structure-refresh.design-a .wcb-expo-page .wcb-expo-proof-numbers strong { color: #1762c4; }
+.structure-refresh.design-a .wcb-expo-gallery figure { border-radius: 8px; }
+
+/* Sourcing total page and all six category-specific, interactive templates. */
+.structure-refresh.design-a .sourcing-opportunity-hero,
+.structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero { min-height: 0; padding: 48px 0; background: #e3ecf3; color: #202b35; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero::before { opacity: 0; }
+.structure-refresh.design-a .sourcing-opportunity-hero-grid,
+.structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero-grid { grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: 48px; align-items: center; }
+.structure-refresh.design-a .sourcing-opportunity-hero h1,
+.structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero h1 { color: #202b35; font-size: clamp(34px, 3.4vw, 48px); line-height: 1.16; letter-spacing: -.035em; }
+.structure-refresh.design-a .sourcing-opportunity-hero :is(.sourcing-opportunity-lead, .sourcing-opportunity-hero-offer, .sourcing-opportunity-trust-signals li),
+.structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero :is(.sourcing-product-intro, .sourcing-lawn-hero-fit) { color: #526471; font-size: 16px; line-height: 1.75; }
+.structure-refresh.design-a .sourcing-opportunity-hero-proof,
+.structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero-grid > img { border-radius: 8px; box-shadow: none; }
+.structure-refresh.design-a .sourcing-opportunity-hero-proof figcaption { color: #fff; }
+.structure-refresh.design-a .sourcing-opportunity-section:nth-of-type(even),
+.structure-refresh.design-a .sourcing-v3-page .section-muted { background: #e3ecf3; }
+.structure-refresh.design-a .sourcing-opportunity-page :is(.sourcing-opportunity-shortlist, .sourcing-opportunity-process, .sourcing-opportunity-team, .sourcing-opportunity-final-cta),
+.structure-refresh.design-a .sourcing-v3-page :is(.sourcing-lawn-problems-section, .sourcing-lawn-final-section) { background: #e3ecf3; color: #202b35; }
+.structure-refresh.design-a .sourcing-opportunity-page :is(.sourcing-opportunity-shortlist, .sourcing-opportunity-process, .sourcing-opportunity-team, .sourcing-opportunity-final-cta) :is(h2, h3, p, li),
+.structure-refresh.design-a .sourcing-v3-page :is(.sourcing-lawn-problems-section, .sourcing-lawn-final-section) :is(h2, h3, p, li) { color: #202b35; }
+.structure-refresh.design-a .sourcing-opportunity-heading h2,
+.structure-refresh.design-a .sourcing-v3-page .section h2 { max-width: 1020px; font-size: clamp(27px, 2.8vw, 36px); line-height: 1.3; letter-spacing: -.025em; }
+.structure-refresh.design-a .sourcing-opportunity-page :is(.sourcing-opportunity-shortlist-preview, .sourcing-opportunity-timing p, .sourcing-opportunity-category-card, .sourcing-opportunity-process li, .sourcing-opportunity-model-grid article, .sourcing-opportunity-signal-grid article, .sourcing-opportunity-faq details),
+.structure-refresh.design-a .sourcing-v3-page :is(.sourcing-lawn-audience-grid article, .sourcing-product-grid article, .sourcing-lawn-success-grid article, .sourcing-lawn-framework-grid article, .sourcing-lawn-problems-grid article, .sourcing-selector-copy, .sourcing-selector-facts, .sourcing-selector-thumbnails button, .sourcing-lawn-faq details) { background: #fff; color: #202b35; border: 1px solid #cbd8e2; border-radius: 8px; box-shadow: none; }
+.structure-refresh.design-a .sourcing-opportunity-page .sourcing-opportunity-shortlist > .sourcing-opportunity-shell { background: #fff; color: #202b35; border: 1px solid #cbd8e2; border-radius: 8px; box-shadow: none; }
+.structure-refresh.design-a .sourcing-opportunity-page :is(.sourcing-opportunity-shortlist-preview, .sourcing-opportunity-timing) :is(small, strong, span) { color: #202b35; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-selector-section { background: #e3ecf3; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-selector-image { background: #fff; border: 1px solid #cbd8e2; border-radius: 8px; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-selector-image img { object-fit: contain; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-selector-thumbnails button[aria-pressed='true'] { border: 2px solid #1762c4; background: #edf3f8; box-shadow: inset 3px 0 #1762c4; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-selector-tags span { background: #edf3f8; color: #526471; border-radius: 4px; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-channel-matrix thead th { background: #e3ecf3; color: #202b35; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-channel-matrix td.is-strong span { background: #1762c4; color: #fff; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-table-wrap { border-radius: 8px; border-color: #cbd8e2; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-evidence-flow > li { background: #fff; border-color: #cbd8e2; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-faq summary { color: #202b35; min-height: 44px; }
+.structure-refresh.design-a .sourcing-opportunity-page :is(.sourcing-opportunity-button, .sourcing-opportunity-category-cta),
+.structure-refresh.design-a .sourcing-v3-page .sourcing-v3-button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 13px 20px; background: #1762c4; color: #fff; border: 1px solid #1762c4; border-radius: 6px; font: inherit; font-size: 14px; font-weight: 700; line-height: 1.5; text-align: center; white-space: normal; }
+.structure-refresh.design-a .sourcing-opportunity-page .sourcing-opportunity-button-secondary,
+.structure-refresh.design-a .sourcing-v3-page :is(.sourcing-lawn-secondary-button, .sourcing-selector-secondary, .sourcing-lawn-final-actions > a) { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 13px 20px; border: 1px solid #a9bfd3; border-radius: 6px; color: #1762c4; background: #fff; font: inherit; font-size: 14px; line-height: 1.5; text-align: center; }
+.structure-refresh.design-a .sourcing-opportunity-page :is(.sourcing-opportunity-button, .sourcing-opportunity-button-secondary):hover,
+.structure-refresh.design-a .sourcing-v3-page :is(.sourcing-v3-button, .sourcing-lawn-secondary-button, .sourcing-selector-secondary):hover { border-color: #1052ab; transform: none; }
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-final-cta { background: transparent; box-shadow: none; }
+
+/* Trust, confirmation and not-found pages. Form transport is unaffected. */
+.structure-refresh.design-a .trust-page { background: #fff; }
+.structure-refresh.design-a .trust-page .trust-hero { min-height: 0; padding: 48px 0; color: #202b35; background-color: #e3ecf3; }
+.structure-refresh.design-a .trust-page :is(.trust-legal-hero, .trust-received-hero) { background-image: none; }
+.structure-refresh.design-a .trust-page .trust-hero h1 { max-width: 1000px; color: #202b35; font-size: clamp(34px, 3.8vw, 52px); line-height: 1.18; letter-spacing: -.035em; }
+.structure-refresh.design-a .trust-page .trust-hero-lead { max-width: 860px; color: #526471; font-size: 18px; line-height: 1.75; }
+.structure-refresh.design-a .trust-page .trust-section-soft { background: #e3ecf3; }
+.structure-refresh.design-a .trust-page .trust-content { max-width: 760px; }
+.structure-refresh.design-a .trust-page .trust-legal-section { padding-block: 44px 64px; }
+.structure-refresh.design-a .trust-page .trust-content h2 { color: #202b35; font-size: 25px; line-height: 1.35; }
+.structure-refresh.design-a .trust-page .trust-content :is(p, li) { color: #526471; font-size: 16px; line-height: 1.85; }
+.structure-refresh.design-a .trust-page :is(.trust-process-grid article, .trust-responsibility-grid article, .trust-next-grid a, .trust-scope-grid article) { border: 1px solid #cbd8e2; border-radius: 8px; background: #fff; box-shadow: none; }
+.structure-refresh.design-a .trust-page .trust-section-heading h2 { color: #202b35; font-size: clamp(27px, 3vw, 36px); line-height: 1.3; }
+.structure-refresh.design-a .trust-page :is(.trust-process-grid, .trust-responsibility-grid, .trust-next-grid) p { color: #526471; }
+.structure-refresh.design-a main > .section > .container > .cta-band { color: #202b35; background: #e3ecf3; border: 1px solid #cbd8e2; border-radius: 8px; padding: 48px; box-shadow: none; }
+.structure-refresh.design-a main > .section > .container > .cta-band :is(h1, p) { color: #202b35; }
+.structure-refresh.design-a main > .section > .container > .cta-band h1 { font-size: clamp(34px, 4vw, 52px); line-height: 1.2; }
+
+@media (max-width: 1050px) {
+  .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-grid, .component-intelligence-hero-grid),
+  .structure-refresh.design-a .product-detail .product-detail-hero { gap: 28px; }
+  .structure-refresh.design-a .product-detail .product-reading-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .structure-refresh.design-a .product-detail .product-buying-note { position: static; }
+  .structure-refresh.design-a .sourcing-opportunity-hero-grid,
+  .structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero-grid { gap: 32px; }
+  .structure-refresh.design-a .contact-response-layout { gap: 32px; }
+}
+@media (max-width: 760px) {
+  .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail, .about-network-page, .wcb-expo-page, .trust-page, .sourcing-opportunity-page, .sourcing-v3-page) :is(.container, .insights-page-container, .wcb-expo-shell, .sourcing-opportunity-shell, .sourcing-v3-container),
+  .structure-refresh.design-a .product-detail .product-container,
+  .structure-refresh.design-a .article-reading-experience .blog-article-hero > .blog-article-container,
+  .structure-refresh.design-a .article-reading-experience .blog-article-section > .blog-article-container,
+  .structure-refresh.design-a .news-page .news-article { width: calc(100% - 40px); max-width: none; }
+  .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .guides-category-hero,
+  .structure-refresh.design-a .article-reading-experience .blog-article-hero,
+  .structure-refresh.design-a .page-hero-contact,
+  .structure-refresh.design-a .trust-page .trust-hero,
+  .structure-refresh.design-a .about-network-page .refresh-page-intro,
+  .structure-refresh.design-a .sourcing-opportunity-hero,
+  .structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero { padding-block: 32px; }
+  .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail, .about-network-page, .trust-page, .sourcing-v3-page) > .section,
+  .structure-refresh.design-a .sourcing-opportunity-section,
+  .structure-refresh.design-a .wcb-expo-page > section:not(.wcb-expo-hero),
+  .structure-refresh.design-a .contact-response-section { padding-block: 40px; }
+  .structure-refresh.design-a .article-reading-experience .blog-article-hero h1,
+  .structure-refresh.design-a .news-page .news-article h1 { font-size: 31px; line-height: 1.2; }
+  .structure-refresh.design-a .article-reading-experience .blog-article-hero > .blog-article-container > p:not(.signal-detail-author):not(.blog-article-series-title) { font-size: 16px; }
+  .structure-refresh.design-a .article-reading-experience .blog-article-section { padding-top: 28px; }
+  .structure-refresh.design-a .article-reading-experience .blog-reading-body :is(p, li),
+  .structure-refresh.design-a .news-page .news-prose :is(p, li) { font-size: 16px; line-height: 1.8; }
+  .structure-refresh.design-a .article-reading-experience .blog-key-points { padding: 20px; }
+  .structure-refresh.design-a .article-reading-experience .blog-reading-body h2 { font-size: 25px; }
+  .structure-refresh.design-a .article-reading-experience .blog-reading-body h3 { font-size: 21px; }
+  .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-grid, .component-intelligence-hero-grid),
+  .structure-refresh.design-a .product-detail .product-detail-hero,
+  .structure-refresh.design-a .product-detail .product-fit-grid,
+  .structure-refresh.design-a .contact-inquiry-section .contact-help-grid,
+  .structure-refresh.design-a .contact-response-layout,
+  .structure-refresh.design-a .sourcing-opportunity-hero-grid,
+  .structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-detail-hero, .equipment-hero-copy, .component-intelligence-hero-copy) h1,
+  .structure-refresh.design-a .product-detail .product-detail-intro h1,
+  .structure-refresh.design-a .about-network-page .refresh-page-intro h1,
+  .structure-refresh.design-a .page-hero-contact h1,
+  .structure-refresh.design-a .trust-page .trust-hero h1,
+  .structure-refresh.design-a .sourcing-opportunity-hero h1,
+  .structure-refresh.design-a .sourcing-v3-page .sourcing-product-hero h1 { font-size: 34px; line-height: 1.18; }
+  .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-section-nav, .equipment-section-nav, .component-intelligence-nav) { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 8px; }
+  .structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) :is(.brand-section-nav, .equipment-section-nav, .component-intelligence-nav) a { flex-shrink: 0; white-space: nowrap; }
+  .structure-refresh.design-a .product-detail .product-model-cover { padding: 16px; }
+  .structure-refresh.design-a .product-detail .product-fit-grid { padding: 24px; }
+  .structure-refresh.design-a .product-detail .product-key-facts { padding: 16px; }
+  .structure-refresh.design-a .product-detail :is(.product-table-wrap, .product-comparison) { max-width: 100%; overflow-x: auto; }
+  .structure-refresh.design-a .contact-inquiry-section { padding-block: 40px; }
+  .structure-refresh.design-a .contact-inquiry-section .contact-help-card { min-height: 0; padding: 24px; }
+  .structure-refresh.design-a .contact-inquiry-section .contact-help-card-copy > strong { font-size: 23px; }
+  .structure-refresh.design-a .wcb-expo-hero { padding: 36px 0; background-image: none; }
+  .structure-refresh.design-a .wcb-expo-hero h1 { font-size: 36px; }
+  .structure-refresh.design-a .wcb-expo-hero-content { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .structure-refresh.design-a .wcb-expo-event-facts { padding: 20px; }
+  .structure-refresh.design-a .wcb-expo-event-facts strong { font-size: 23px; }
+  .structure-refresh.design-a .wcb-expo-hero-actions { align-items: stretch; }
+  .structure-refresh.design-a .wcb-expo-hero-actions > *,
+  .structure-refresh.design-a .wcb-expo-hero-actions .button { width: 100%; }
+  .structure-refresh.design-a .sourcing-opportunity-actions,
+  .structure-refresh.design-a .sourcing-v3-page :is(.sourcing-lawn-hero-actions, .sourcing-selector-actions, .sourcing-lawn-final-actions) { display: flex; flex-direction: column; align-items: stretch; gap: 12px; }
+  .structure-refresh.design-a .sourcing-opportunity-actions > *,
+  .structure-refresh.design-a .sourcing-opportunity-actions button,
+  .structure-refresh.design-a .sourcing-v3-page :is(.sourcing-lawn-hero-actions, .sourcing-selector-actions, .sourcing-lawn-final-actions) > *,
+  .structure-refresh.design-a .sourcing-v3-page :is(.sourcing-lawn-hero-actions, .sourcing-selector-actions, .sourcing-lawn-final-actions) button { width: 100%; }
+  .structure-refresh.design-a .sourcing-v3-page .sourcing-selector-thumbnails button { min-height: 44px; }
+  .structure-refresh.design-a main > .section > .container > .cta-band { padding: 28px 22px; }
+}
+
+/* The same approved business icons used on the homepage. */
+.structure-refresh.design-a .contact-inquiry-section .business-service-icon { grid-column: 1 / -1; width: 64px; height: 64px; color: #1762c4; }
+.structure-refresh.design-a .wcb-expo-page :is(.wcb-expo-categories, .wcb-expo-programs, .wcb-expo-exhibit) { background: #e3ecf3; color: #202b35; }
+.structure-refresh.design-a .wcb-expo-page .wcb-expo-program-grid article { background: #fff; border: 1px solid #cbd8e2; border-radius: 8px; }
+.structure-refresh.design-a .wcb-expo-page :is(.wcb-expo-category-card, .wcb-expo-program-grid article, .wcb-expo-exhibit-grid) :is(h2, h3, p) { color: #202b35; }
+
+.structure-refresh.design-a .wcb-expo-hero-copy > :is(h1, p, .wcb-expo-event-facts) { width: 100%; max-width: none; }
+.structure-refresh.design-a .wcb-expo-hero-copy > p:not([class]) { margin-top: 16px; color: #202b35; font-size: 16px; line-height: 1.65; }
+.structure-refresh.design-a .wcb-expo-hero-copy .wcb-expo-chinese { margin-top: 8px; font-size: 13px; }
+.structure-refresh.design-a .wcb-expo-hero-copy .wcb-expo-kicker { color: #1762c4; }
+
+/* Explicitly replace the former dark service panels, retaining their contents. */
+.structure-refresh.design-a .contact-response-copy { background: #fff; border: 1px solid #cbd8e2; border-radius: 8px; padding: 36px; color: #202b35; }
+.structure-refresh.design-a .contact-response-copy .eyebrow { color: #1762c4; }
+.structure-refresh.design-a .contact-response-copy .section-head p:not(.eyebrow) { color: #526471; }
+.structure-refresh.design-a .contact-response-visual::after { display: none; }
+.structure-refresh.design-a .contact-response-identity { position: static; }
+.structure-refresh.design-a .contact-response-visual { min-height: 0; }
+.structure-refresh.design-a .contact-context-list li { padding-left: 24px; }
+.structure-refresh.design-a .contact-context-list li::before { color: #1762c4; }
+.structure-refresh.design-a .site-shell .wcb-expo-page .wcb-expo-hero-actions .wcb-expo-secondary-link { color: #1762c4; background: #fff; border-color: #a9bfd3; }
+.structure-refresh.design-a .site-shell .wcb-expo-page .wcb-expo-hero-actions .wcb-expo-secondary-link:hover { color: #1052ab; background: #edf3f8; border-color: #1762c4; }
+.structure-refresh.design-a .wcb-expo-page .wcb-expo-category-card strong,
+.structure-refresh.design-a .wcb-expo-page .wcb-expo-visit-meta strong { color: #202b35; }
+.structure-refresh.design-a .wcb-expo-page .wcb-expo-visit-meta,
+.structure-refresh.design-a .wcb-expo-page .wcb-expo-visit-grid > div > p:not(.wcb-expo-section-label) { color: #526471; }
+.structure-refresh.design-a .wcb-expo-page :is(.wcb-expo-gallery, .wcb-expo-organizer) { background: #fff; }
+@media(max-width:760px) {
+  .structure-refresh.design-a .equipment-detail .brand-data-table { display: block; width: 100%; max-width: 100%; overflow-x: auto; }
+  .structure-refresh.design-a .contact-response-copy { padding: 24px; }
+}
+
+.structure-refresh.design-a .trust-page .trust-quality-hero { background: #e3ecf3; }
+.structure-refresh.design-a .trust-page .trust-boundary-section { background: #e3ecf3; color: #202b35; }
+.structure-refresh.design-a .trust-page .trust-boundary-grid :is(h2, p) { color: #202b35; }
+.structure-refresh.design-a .trust-page .trust-cta { background: #e3ecf3; border-color: #cbd8e2; border-radius: 8px; }
+.structure-refresh.design-a .contact-response-visual { width: 100%; max-width: none; }
+
+.structure-refresh.design-a .page-hero-contact.contact-visual-refresh { background: #e3ecf3; }
+.structure-refresh.design-a :is(.brand-detail, .equipment-detail, .component-intelligence-detail) .guides-category-hero { color: #202b35; }
+
+/* Action hierarchy: conversion actions stay primary; browsing stays quiet. */
+.structure-refresh.design-a .site-shell .product-detail .product-actions > .product-button,
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-hero-actions > a.sourcing-v3-button {
+  color: #1762c4;
+  background: #fff;
+  border-color: #a9bfd3;
+}
+.structure-refresh.design-a .site-shell .product-detail .product-actions > .product-button:hover,
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-hero-actions > a.sourcing-v3-button:hover {
+  color: #1052ab;
+  background: #edf3f8;
+  border-color: #1762c4;
+}
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-hero-actions .sourcing-lawn-secondary-button,
+.structure-refresh.design-a .site-shell .wcb-expo-page .wcb-expo-exhibit .button-secondary {
+  color: #fff;
+  background: #1762c4;
+  border-color: #1762c4;
+}
+.structure-refresh.design-a .sourcing-v3-page .sourcing-lawn-hero-actions .sourcing-lawn-secondary-button:hover,
+.structure-refresh.design-a .site-shell .wcb-expo-page .wcb-expo-exhibit .button-secondary:hover {
+  color: #fff;
+  background: #1052ab;
+  border-color: #1052ab;
+}
+.structure-refresh.design-a .site-shell .product-detail .product-actions > .product-text-link,
+.structure-refresh.design-a .sourcing-opportunity-page .sourcing-opportunity-category-cta,
+.structure-refresh.design-a .site-shell .sourcing-v3-page .sourcing-product-grid article > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 44px;
+  padding: 8px 0;
+  border: 0;
+  border-radius: 0;
+  color: #1762c4;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  box-shadow: none;
+}
+.structure-refresh.design-a .site-shell .product-detail .product-actions > .product-text-link:hover,
+.structure-refresh.design-a .sourcing-opportunity-page .sourcing-opportunity-category-card:hover .sourcing-opportunity-category-cta,
+.structure-refresh.design-a .site-shell .sourcing-v3-page .sourcing-product-grid article > a:hover {
+  color: #1052ab;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.structure-refresh.design-a .product-detail :is(.product-back, .product-article-links) > a,
+.structure-refresh.design-a .about-network-page .refresh-business-card .business-service-button,
+.structure-refresh.design-a .about-network-page .refresh-contact-links > a:not(.button),
+.structure-refresh.design-a .contact-inquiry-section + .refresh-contact-links > a {
+  color: #1762c4;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.structure-refresh.design-a .about-network-page .refresh-business-card .business-service-button {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 44px;
+  padding-block: 8px;
+}

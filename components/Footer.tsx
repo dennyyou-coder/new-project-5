@@ -1,11 +1,8 @@
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
-
 export function Footer() {
-  const year = new Date().getFullYear();
-
   return (
-    <footer className="footer">
+    <footer className="footer refresh-footer">
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-brand-heading">
@@ -18,42 +15,45 @@ export function Footer() {
             </div>
           </div>
           <p>
-            Industry signals, market intelligence, sourcing opportunities and
-            business connections for the global cleaning industry.
+            Independent industry perspectives, useful product information and
+            business connections.
           </p>
-          <div className="footer-slogan">
-            <strong>
-              Signals Before Decisions. Better information helps companies make
-              better business decisions.
-            </strong>
-          </div>
         </div>
         <div className="footer-links" aria-label="Footer navigation">
           <div>
-            <strong>Platform</strong>
+            <strong>Explore</strong>
             <Link href="/news">News</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/brands">Brand Intelligence</Link>
-            <Link href="/guides">Industry Guides</Link>
+            <Link href="/blog">Insights</Link>
+            <Link href="/brands">Companies &amp; Brands</Link>
+            <Link href="/products">Products</Link>
+            <Link href="/videos">Videos</Link>
+            <Link href="/guides">Practical Guides</Link>
+            <Link href="/reports">Reports</Link>
             <Link href="/blog/archive">Article Archive</Link>
-            <Link href="/reports">Market Reports</Link>
-            <Link href="/sourcing">Sourcing</Link>
-            <Link href="/wcb-expo">WCB Expo</Link>
           </div>
           <div>
             <strong>Connect</strong>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/wcb-expo">WCB Expo</Link>
+            <Link href="/sourcing">Sourcing Services</Link>
+            <Link href="/contact">Business Cooperation</Link>
+            <Link href="/about">About WCB</Link>
+            <a
+              href="https://www.youtube.com/@WCBdenny/videos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              YouTube
+            </a>
             <TallyButton
               className="footer-link-button"
-              ctaLocation="footer_contact"
-              form="contact"
+              ctaLocation="footer_updates"
+              form="newsletter"
             >
-              Talk With Denny
+              Industry Updates
             </TallyButton>
           </div>
           <div>
-            <strong>Trust</strong>
+            <strong>Information</strong>
             <Link href="/quality-compliance">Quality &amp; Compliance</Link>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Use</Link>
@@ -61,7 +61,7 @@ export function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {year} World Clean Biz. Global Cleaning Industry Intelligence.</span>
+        © {new Date().getFullYear()} World Clean Biz.
       </div>
     </footer>
   );

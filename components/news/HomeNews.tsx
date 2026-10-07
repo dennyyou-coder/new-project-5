@@ -11,7 +11,7 @@ export function HomeNews() {
       <div className="home-v9-container">
         <div className="home-news-heading">
           <div><p className="home-v9-eyebrow">News &amp; Updates</p><h2 id="home-news-title">Latest Industry News</h2></div>
-          <Link className="home-v9-inline-link" href="/news">View All News →</Link>
+          <Link className="home-v9-inline-link" href="/news">View All News</Link>
         </div>
         <div className="home-news-grid">
           {articles.map((article) => (
@@ -21,7 +21,7 @@ export function HomeNews() {
                 <div className="home-news-meta"><span>{newsTopicLabel(article.topic)}</span></div>
                 <h3><Link href={`/news/${article.slug}`}>{article.title}</Link></h3>
                 <p>{article.excerpt}</p>
-                <div className="home-news-bottom"><span>News date <time dateTime={article.eventDate}>{newsDate(article.eventDate)}</time></span><Link href={`/news/${article.slug}`} aria-label={`Read news: ${article.title}`}>Read news <span aria-hidden="true">→</span></Link></div>
+                <div className="home-news-bottom"><span>News date <time dateTime={article.eventDate}>{newsDate(article.eventDate)}</time></span><Link href={`/news/${article.slug}`} aria-label={`Read news: ${article.title}`}>Read news</Link></div>
               </div>
             </article>
           ))}

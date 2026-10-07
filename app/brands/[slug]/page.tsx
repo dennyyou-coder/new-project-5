@@ -1,4 +1,7 @@
-import { ProductLinks } from "@/components/products/ProductLinks";
+import { buildBrandAnalysisLink } from "@/components/brands/brandAnalysisLink";
+import { getAvailableCompanyKeywords } from "@/lib/companyKeywords";
+import { getEditorialInsights } from "@/lib/insightCollections";
+import { getNews } from "@/lib/news";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
@@ -95,20 +98,26 @@ export default async function BrandPage({ params }: PageProps) {
   if (!data) notFound();
 
   const schemas = buildBrandPageSchemas(data, siteUrl);
+  const relatedNews = getNews().filter((article) => article.brandSlugs.includes(data.profile.slug));
+  const analysisLink = buildBrandAnalysisLink(data.profile, getAvailableCompanyKeywords(
+    getEditorialInsights(articles).filter((article) => !article.series)
+  ));
 
   return (
-    <div className="guides-hub brand-hub brand-detail">
+    <div className="guides-hub brand-hub brand-detail approved-catalog">
       <BrandHero
         profile={data.profile}
-        hasAnalysis={data.primaryArticles.length > 0 || data.relatedArticles.length > 0}
+        hasAnalysis={true}
       />
       <BrandSections
         profile={data.profile}
         allowedCompetitorSlugs={publishedBrandSlugs}
       />
-      <ProductLinks brand={data.profile.slug} />
       <BrandTimeline profile={data.profile} />
       <BrandArticles
+        brandName={data.profile.name}
+        analysisLink={analysisLink}
+        news={relatedNews}
         primaryArticles={data.primaryArticles}
         relatedArticles={data.relatedArticles}
       />

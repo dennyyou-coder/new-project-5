@@ -214,3 +214,14 @@ test("trackLeadEvent sends article CTA context to GA4", () => {
   assert.equal(calls[0][2].article_slug, "example");
   delete global.window;
 });
+
+
+test("Expo contact fallback preserves visitor and exhibitor intent, while legacy URLs remain valid", () => {
+  for (const [form_type, inquiry] of [["wce_exhibitor", "expo_exhibitor"], ["wce_visitor", "expo_visitor"]]) {
+    const url = new URL(buildContactFallbackUrl({ conversion_group: "expo", cta_location: "home_expo", form_type }), "https://worldcleanbiz.com");
+    assert.equal(url.searchParams.get("intent"), "expo");
+    assert.equal(url.searchParams.get("inquiry"), inquiry);
+    assert.equal(url.searchParams.get("source"), "home_expo");
+  }
+  assert.equal(buildContactFallbackUrl({ conversion_group: "expo", cta_location: "legacy" }), "/contact?intent=expo&source=legacy");
+});

@@ -1,0 +1,1200 @@
+/* Company and model detail sample. Load after structure-refresh.css.
+   Existing content, assets and native controls are retained. */
+.structure-refresh :is(.brand-detail, .product-detail) {
+  --detail-navy: #0b2a48;
+  --detail-ink: #17354e;
+  --detail-blue: #2563eb;
+  --detail-muted: #5d7183;
+  --detail-line: #dce4eb;
+  --detail-soft: #f4f7fa;
+  --product-ink: var(--detail-navy);
+  --product-blue: var(--detail-blue);
+  color: var(--detail-ink);
+  background: #fff;
+}
+.structure-refresh :is(.brand-detail, .product-detail) :is(a, summary) {
+  text-underline-offset: 4px;
+}
+.structure-refresh
+  :is(.brand-detail, .product-detail)
+  :is(a, summary):focus-visible {
+  outline: 3px solid #6697ff;
+  outline-offset: 4px;
+}
+.structure-refresh :is(.brand-detail, .product-detail) :is(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+.structure-refresh :is(.brand-detail, .product-detail) :is(p, li, td, dd) {
+  overflow-wrap: break-word;
+}
+.structure-refresh :is(.brand-detail, .product-detail) section[id] {
+  scroll-margin-top: 108px;
+}
+.structure-refresh :is(.brand-detail) .insights-page-container,
+.structure-refresh :is(.product-detail) .product-container {
+  width: min(1200px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+/* Company identity: compact dark masthead and complete reference image. */
+.structure-refresh :is(.brand-detail) .guides-category-hero {
+  padding: 24px 0 0;
+  background: var(--detail-navy);
+  color: #fff;
+}
+.structure-refresh :is(.brand-detail) .blog-visible-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 28px;
+  gap: 8px;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.structure-refresh
+  :is(.brand-detail)
+  .guides-category-hero
+  :is(.blog-visible-breadcrumb, .blog-visible-breadcrumb a) {
+  color: #bccde0;
+}
+.structure-refresh :is(.brand-detail) .brand-detail-hero {
+  grid-template-columns: minmax(0, 1.16fr) minmax(0, 0.84fr);
+  gap: 48px;
+  align-items: center;
+  padding-bottom: 28px;
+}
+.structure-refresh :is(.brand-detail) .brand-detail-hero > div:only-child {
+  grid-column: 1 / -1;
+  max-width: 840px;
+}
+.structure-refresh :is(.brand-detail) .brand-hero-identity {
+  margin-bottom: 18px;
+}
+.structure-refresh :is(.brand-detail) .brand-hero-identity .brand-logo--hero {
+  width: 170px;
+  min-height: 62px;
+  max-height: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+.structure-refresh :is(.brand-detail) .brand-logo--hero img {
+  height: 48px;
+  max-height: 48px;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.structure-refresh :is(.brand-detail) .brand-detail-hero p {
+  color: #c9d7e5;
+  font-size: 14px;
+  line-height: 1.72;
+  margin: 12px 0 0;
+}
+.structure-refresh :is(.brand-detail) .brand-detail-hero .eyebrow {
+  color: #a9c9ff;
+  font-size: 10px;
+  letter-spacing: 0.13em;
+  margin: 0 0 10px;
+}
+.structure-refresh :is(.brand-detail) .brand-category-link {
+  padding: 0;
+  margin: 0 0 10px;
+  color: #c8daf4;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+  text-decoration-color: #7893b0;
+}
+.structure-refresh :is(.brand-detail) .brand-detail-hero h1 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(36px, 3.8vw, 52px);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+.structure-refresh :is(.brand-detail) .brand-detail-hero h1 + p {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #f1f6fd;
+  max-width: 560px;
+}
+.structure-refresh :is(.brand-detail) .brand-detail-hero h1 + p + p {
+  margin-top: 15px;
+  font-size: 11px;
+  color: #aec2d9;
+}
+.structure-refresh :is(.brand-detail) .brand-detail-hero > div > p:last-child {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #aec2d9;
+}
+.structure-refresh :is(.brand-detail) .brand-hero-media {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  background: #fff;
+  border: 1px solid #43607b;
+  border-radius: 5px;
+  box-shadow: none;
+}
+.structure-refresh :is(.brand-detail) .brand-hero-media__eyebrow {
+  position: static;
+  padding: 12px 16px;
+  color: #596e81;
+  background: #f3f6fa;
+  border: 0;
+  border-bottom: 1px solid var(--detail-line);
+  border-radius: 0;
+  font-size: 9px;
+  letter-spacing: 0.11em;
+}
+.structure-refresh :is(.brand-detail) .brand-hero-media img {
+  width: 100%;
+  height: 280px;
+  aspect-ratio: auto;
+  padding: 16px;
+  object-fit: contain;
+  background: #fff;
+}
+.structure-refresh :is(.brand-detail) .brand-hero-media figcaption {
+  border-top: 1px solid var(--detail-line);
+  padding: 11px 16px;
+  background: #f3f6fa;
+  color: #5a6f83;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.structure-refresh :is(.brand-detail) .brand-key-facts {
+  margin-top: 0;
+  background: #fff;
+  border: 1px solid #dae3ed;
+  border-radius: 5px;
+}
+.structure-refresh
+  :is(.brand-detail)
+  .brand-key-facts
+  .brand-data-table
+  :is(th, td) {
+  padding: 9px 16px;
+  border-color: #e3e9f0;
+  color: var(--detail-ink);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.structure-refresh :is(.brand-detail) .brand-key-facts .brand-data-table th {
+  background: #edf3f8;
+  color: #51697f;
+  font-size: 10px;
+}
+.structure-refresh
+  :is(.brand-detail)
+  .brand-key-facts
+  .brand-data-table
+  td:first-child {
+  color: #5b7085;
+  font-weight: 600;
+}
+.structure-refresh :is(.brand-detail) .brand-key-facts a {
+  color: #205dcd;
+  overflow-wrap: anywhere;
+}
+.structure-refresh :is(.brand-detail) .brand-section-nav {
+  margin: 18px 0 0;
+  padding: 0;
+  gap: 0 22px;
+  border-top: 1px solid #ffffff26;
+}
+.structure-refresh :is(.brand-detail) .brand-section-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  padding: 12px 0;
+  color: #e0eaf6;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  font-size: 12px;
+  font-weight: 650;
+}
+.structure-refresh :is(.brand-detail) .brand-section-nav a:hover {
+  color: #fff;
+  box-shadow: inset 0 -3px #83acff;
+}
+
+/* Company evidence: quiet rules, clear tables and uncropped visual references. */
+.structure-refresh :is(.brand-detail) > .section {
+  padding-block: 38px;
+}
+.structure-refresh :is(.brand-detail) .brand-content-sections {
+  gap: 36px;
+}
+.structure-refresh :is(.brand-detail) .brand-content-section {
+  padding: 0 0 36px;
+  border: 0;
+  border-bottom: 1px solid var(--detail-line);
+  border-radius: 0;
+  background: none;
+}
+.structure-refresh :is(.brand-detail) .brand-content-section:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.structure-refresh
+  :is(.brand-detail)
+  :is(.brand-content-section > h2, .guides-section-heading h2, #analysis h2) {
+  margin: 0 0 23px;
+  color: var(--detail-navy);
+  font-size: 29px;
+  letter-spacing: -0.025em;
+  line-height: 1.22;
+}
+.structure-refresh :is(.brand-detail) .brand-section-layout--visual {
+  grid-template-columns: minmax(0, 1.32fr) minmax(0, 0.88fr);
+  gap: 32px;
+}
+.structure-refresh
+  :is(.brand-detail)
+  :is(.brand-section-summary, .brand-section-parent) {
+  color: #425c72;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.structure-refresh
+  :is(.brand-detail)
+  :is(
+    .brand-table-group,
+    .brand-section-main > .brand-data-table,
+    .brand-visual
+  ) {
+  border: 1px solid var(--detail-line);
+  border-radius: 4px;
+  box-shadow: none;
+}
+.structure-refresh :is(.brand-detail) .brand-table-group h3 {
+  padding: 13px 16px;
+  background: var(--detail-soft);
+  color: var(--detail-navy);
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+.structure-refresh :is(.brand-detail) .brand-data-table :is(th, td) {
+  padding: 13px 16px;
+  border-color: var(--detail-line);
+  font-size: 13px;
+  line-height: 1.65;
+}
+.structure-refresh :is(.brand-detail) .brand-data-table th {
+  color: #5b6f82;
+  background: #f7f9fb;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+.structure-refresh :is(.brand-detail) .brand-data-table td {
+  color: #425c72;
+}
+.structure-refresh :is(.brand-detail) .brand-data-table td:first-child {
+  color: var(--detail-ink);
+}
+.structure-refresh :is(.brand-detail) .brand-founder-card {
+  grid-template-columns: 136px minmax(0, 1fr);
+}
+.structure-refresh :is(.brand-detail) .brand-founder-portrait {
+  height: 100%;
+  min-height: 180px;
+}
+.structure-refresh :is(.brand-detail) .brand-founder-details {
+  padding: 18px;
+  gap: 8px;
+}
+.structure-refresh :is(.brand-detail) .brand-founder-details h4 {
+  font-size: 22px;
+}
+.structure-refresh :is(.brand-detail) .brand-visual__eyebrow {
+  background: var(--detail-soft);
+  color: #5a6f83;
+  padding: 11px 14px;
+  font-size: 9px;
+}
+.structure-refresh :is(.brand-detail) .brand-visual img {
+  height: auto;
+  object-fit: contain;
+}
+.structure-refresh :is(.brand-detail) .brand-visual figcaption {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.structure-refresh
+  :is(.brand-detail)
+  .brand-section-layout--operations
+  .brand-visual {
+  width: min(100%, 880px);
+  justify-self: start;
+}
+.structure-refresh :is(.brand-detail) .brand-competitor-links span {
+  padding: 8px 12px;
+  border-radius: 3px;
+  background: #f4f7fb;
+  font-size: 12px;
+}
+.structure-refresh :is(.brand-detail) .brand-competitor-links a {
+  color: #205dcd;
+}
+.structure-refresh
+  :is(.brand-detail)
+  > section[aria-label="Product model profiles"] {
+  width: min(1200px, calc(100% - 64px));
+  margin: 6px auto 0;
+  padding: 26px;
+  border: 1px solid var(--detail-line);
+  border-top: 3px solid var(--detail-blue);
+  border-radius: 4px;
+  background: var(--detail-soft);
+}
+.structure-refresh
+  :is(.brand-detail)
+  > section[aria-label="Product model profiles"]
+  > div:last-child
+  > a {
+  border-radius: 3px;
+}
+.structure-refresh :is(.brand-detail) .guides-section-heading {
+  margin-bottom: 25px;
+}
+.structure-refresh
+  :is(.brand-detail)
+  :is(.guides-section-heading, #analysis)
+  .eyebrow {
+  margin: 0 0 11px;
+  color: #53718e;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+.structure-refresh :is(.brand-detail) .brand-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  gap: 0;
+}
+.structure-refresh :is(.brand-detail) .brand-timeline li {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  column-gap: 30px;
+  border-top: 1px solid var(--detail-line);
+  padding: 22px 0;
+}
+.structure-refresh :is(.brand-detail) .brand-timeline time {
+  grid-row: 1 / span 3;
+  color: #57738d;
+  font-size: 12px;
+  font-weight: 650;
+  padding-top: 4px;
+}
+.structure-refresh :is(.brand-detail) .brand-timeline h3 {
+  margin: 0 0 10px;
+  color: var(--detail-navy);
+  font-size: 19px;
+  line-height: 1.4;
+}
+.structure-refresh :is(.brand-detail) .brand-timeline p {
+  grid-column: 2;
+  margin: 0;
+  color: #4a6278;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.structure-refresh :is(.brand-detail) .brand-timeline p:last-child {
+  margin-top: 8px;
+  font-size: 11px;
+}
+.structure-refresh :is(.brand-detail) #analysis {
+  background: var(--detail-soft);
+  border-block: 1px solid var(--detail-line);
+}
+.structure-refresh :is(.brand-detail) .brand-article-grid {
+  gap: 20px;
+}
+.structure-refresh :is(.brand-detail) .guide-card {
+  border: 1px solid #dfe6ed;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.structure-refresh :is(.brand-detail) .guide-card-copy {
+  padding: 21px;
+}
+.structure-refresh :is(.brand-detail) .guide-card h3 {
+  margin: 0 0 12px;
+  color: var(--detail-navy);
+  font-size: 21px;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+.structure-refresh :is(.brand-detail) .guide-card p {
+  color: #5a6f83;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.structure-refresh :is(.brand-detail) .guide-card small {
+  font-size: 11px;
+}
+.structure-refresh :is(.brand-detail) .brand-sources {
+  border-top: 0;
+  background: #fff;
+}
+.structure-refresh :is(.brand-detail) .brand-sources ol {
+  padding-left: 22px;
+  margin: 0;
+}
+.structure-refresh :is(.brand-detail) .brand-sources li {
+  padding: 13px 0 13px 6px;
+  border-bottom: 1px solid #e7edf2;
+  color: #667b8e;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.structure-refresh :is(.brand-detail) .brand-sources a {
+  color: #205dcd;
+  font-weight: 600;
+}
+
+/* Product profile: a complete model image and a concise specification header. */
+.structure-refresh :is(.product-detail) .product-breadcrumb {
+  padding: 25px 0;
+  gap: 9px;
+  color: #63798c;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.structure-refresh :is(.product-detail) .product-detail-hero {
+  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+  gap: 36px;
+  padding: 28px;
+  border: 1px solid var(--detail-line);
+  border-top: 4px solid var(--detail-navy);
+  border-radius: 5px;
+  background: var(--detail-soft);
+}
+.structure-refresh :is(.product-detail) .product-model-cover {
+  padding: 22px;
+  border: 1px solid #e0e7ed;
+  border-radius: 4px;
+  background: #fff;
+}
+.structure-refresh :is(.product-detail) .product-model-cover img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+}
+.structure-refresh :is(.product-detail) .product-model-cover figcaption {
+  padding-top: 14px;
+  margin-top: 14px;
+  border-top: 1px solid #e7ecf1;
+  color: #697d90;
+  font-size: 10px;
+}
+.structure-refresh :is(.product-detail) .product-model-cover figcaption a {
+  color: #205dcd;
+}
+.structure-refresh :is(.product-detail) .product-detail-intro {
+  min-width: 0;
+}
+.structure-refresh :is(.product-detail) .product-eyebrow {
+  margin: 0 0 13px;
+  color: #53718d;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.11em;
+}
+.structure-refresh :is(.product-detail) .product-eyebrow a {
+  color: #205dcd;
+}
+.structure-refresh :is(.product-detail) .product-detail-intro h1 {
+  margin: 0 0 17px;
+  color: var(--detail-navy);
+  font-size: clamp(34px, 3.5vw, 46px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+.structure-refresh :is(.product-detail) .product-lead {
+  margin: 0 0 18px;
+  color: #486277;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.structure-refresh :is(.product-detail) .product-meta {
+  margin: 0 0 14px;
+}
+.structure-refresh :is(.product-detail) .product-meta span {
+  padding: 5px 9px;
+  border: 1px solid #cfdae6;
+  border-radius: 3px;
+  background: #fff;
+  color: #4d6680;
+  font-size: 10px;
+}
+.structure-refresh :is(.product-detail) .product-note {
+  color: #60768b;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.structure-refresh :is(.product-detail) .product-key-facts {
+  gap: 0;
+  margin: 20px 0;
+  padding: 0;
+  border: 1px solid #d9e3ec;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+.structure-refresh :is(.product-detail) .product-key-facts > div {
+  min-width: 0;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e6ecf2;
+}
+.structure-refresh
+  :is(.product-detail)
+  .product-key-facts
+  > div:nth-child(odd) {
+  border-right: 1px solid #e6ecf2;
+}
+.structure-refresh :is(.product-detail) .product-key-facts dt {
+  color: #637a8e;
+  font-size: 10px;
+  margin: 0 0 7px;
+}
+.structure-refresh :is(.product-detail) .product-key-facts dd {
+  color: var(--detail-navy);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.structure-refresh :is(.product-detail) .product-actions {
+  gap: 14px 20px;
+}
+.structure-refresh :is(.product-detail) .product-button {
+  min-height: 46px;
+  padding: 13px 17px;
+  gap: 20px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #fff;
+  background: var(--detail-blue);
+}
+.structure-refresh :is(.product-detail) .product-button:hover {
+  background: #174fc7;
+}
+.structure-refresh :is(.product-detail) .product-text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 12px;
+}
+.structure-refresh :is(.product-detail) .refresh-product-contents {
+  margin-top: 22px;
+  padding: 0;
+  border-block: 1px solid var(--detail-line);
+}
+.structure-refresh :is(.product-detail) .refresh-product-contents summary {
+  padding: 17px 0;
+  font-size: 13px;
+  color: var(--detail-navy);
+  cursor: pointer;
+}
+.structure-refresh :is(.product-detail) .product-section-nav {
+  padding: 0 0 14px;
+  gap: 6px 24px;
+  font-size: 12px;
+}
+.structure-refresh :is(.product-detail) .product-section-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  color: #205dcd;
+}
+.structure-refresh :is(.product-detail) .refresh-resource-links {
+  padding-bottom: 18px;
+  color: #205dcd;
+  font-size: 12px;
+}
+.structure-refresh :is(.product-detail) .product-fit-grid {
+  gap: 22px;
+  padding: 30px 0 36px;
+}
+.structure-refresh :is(.product-detail) .product-fit-grid > div {
+  padding: 24px 26px;
+  border: 1px solid #d9e4ef;
+  border-left: 3px solid #5e8dda;
+  border-radius: 4px;
+  background: #f3f7fc;
+}
+.structure-refresh :is(.product-detail) .product-fit-grid > div + div {
+  border-color: #e0e5e9;
+  border-left-color: #7b8b9a;
+  background: #f7f8f9;
+}
+.structure-refresh :is(.product-detail) .product-fit-grid h2 {
+  font-size: 23px;
+  line-height: 1.25;
+  color: var(--detail-navy);
+}
+.structure-refresh :is(.product-detail) .product-fit-grid p:last-child {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #496277;
+}
+
+/* Specification reading area and evidence-linked next steps. */
+.structure-refresh :is(.product-detail) .product-reading-layout {
+  max-width: none;
+  grid-template-columns: minmax(0, 1fr) 244px;
+  gap: 44px;
+  margin: 0;
+}
+.structure-refresh
+  :is(.product-detail)
+  :is(.product-content-section, .product-editorial) {
+  padding: 30px 0;
+  border-top: 1px solid var(--detail-line);
+}
+.structure-refresh :is(.product-detail) #specifications {
+  padding-top: 0;
+  border-top: 0;
+}
+.structure-refresh
+  :is(.product-detail)
+  :is(.product-content-section h2, .product-editorial h2) {
+  margin: 0 0 19px;
+  color: var(--detail-navy);
+  font-size: 29px;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+.structure-refresh :is(.product-detail) .product-table-wrap {
+  margin-top: 22px;
+  border: 1px solid var(--detail-line);
+  border-radius: 4px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+.structure-refresh :is(.product-detail) .product-table-wrap table {
+  font-size: 13px;
+}
+.structure-refresh :is(.product-detail) .product-table-wrap :is(th, td) {
+  padding: 16px;
+  line-height: 1.65;
+  border-color: #e0e7ee;
+}
+.structure-refresh :is(.product-detail) .product-table-wrap thead {
+  color: #344f68;
+  background: #edf3f8;
+  font-size: 11px;
+}
+.structure-refresh
+  :is(.product-detail)
+  .product-table-wrap
+  tbody
+  tr:nth-child(even) {
+  background: #f8fafc;
+}
+.structure-refresh :is(.product-detail) .product-table-wrap tbody th {
+  color: var(--detail-ink);
+  font-weight: 650;
+}
+.structure-refresh :is(.product-detail) .product-table-wrap td {
+  color: #4e667b;
+}
+.structure-refresh :is(.product-detail) .product-table-wrap td:nth-child(2) {
+  color: var(--detail-navy);
+}
+.structure-refresh
+  :is(.product-detail)
+  .product-table-wrap
+  tbody
+  tr:last-child
+  :is(th, td) {
+  border-bottom: 0;
+}
+.structure-refresh :is(.product-detail) .product-editorial {
+  color: #425b71;
+  font-size: 16px;
+  line-height: 1.85;
+}
+.structure-refresh :is(.product-detail) .product-editorial h3 {
+  font-size: 21px;
+}
+.structure-refresh
+  :is(.product-detail)
+  .product-editorial
+  .article-inline-image
+  img {
+  border: 1px solid #e1e8ef;
+  border-radius: 4px;
+}
+.structure-refresh :is(.product-detail) .product-buying-note {
+  position: sticky;
+  top: 106px;
+  display: block;
+  margin: 0;
+  padding: 22px;
+  border: 1px solid #d7e1eb;
+  border-top: 3px solid var(--detail-blue);
+  border-radius: 4px;
+  background: #f5f8fb;
+}
+.structure-refresh :is(.product-detail) .product-buying-note .product-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+}
+.structure-refresh :is(.product-detail) .product-buying-note h2 {
+  margin: 0 0 15px;
+  color: var(--detail-navy);
+  font-size: 21px;
+}
+.structure-refresh :is(.product-detail) .product-buying-note a {
+  display: block;
+  margin: 0;
+  padding: 14px 0;
+  border-top: 1px solid #dce5ee;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #205dcd;
+}
+.structure-refresh :is(.product-detail) .product-faq-list {
+  gap: 0;
+  border-top: 1px solid var(--detail-line);
+}
+.structure-refresh :is(.product-detail) .product-faq {
+  padding: 19px 0;
+  border: 0;
+  border-bottom: 1px solid var(--detail-line);
+  border-radius: 0;
+  background: #fff;
+}
+.structure-refresh :is(.product-detail) .product-faq summary {
+  color: var(--detail-navy);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.structure-refresh :is(.product-detail) .product-faq[open] {
+  background: #fff;
+}
+.structure-refresh :is(.product-detail) .product-faq[open] summary {
+  color: #205dcd;
+}
+.structure-refresh :is(.product-detail) .product-faq p {
+  margin: 15px 0 0;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.structure-refresh :is(.product-detail) .product-price-card {
+  padding: 23px;
+  border-radius: 4px;
+  border-color: var(--detail-line);
+  background: #f6f9fc;
+}
+.structure-refresh :is(.product-detail) .product-price-card h3 {
+  color: var(--detail-navy);
+  font-size: 26px;
+}
+.structure-refresh :is(.product-detail) .product-comparison caption {
+  padding: 15px 16px;
+  background: #fff;
+  color: var(--detail-navy);
+  font-size: 13px;
+}
+.structure-refresh :is(.product-detail) .product-comparison-takeaway {
+  padding: 19px 22px;
+  background: #f1f6fc;
+  font-size: 14px;
+}
+.structure-refresh :is(.product-detail) .product-related-grid {
+  gap: 20px;
+}
+.structure-refresh :is(.product-detail) .product-related-card {
+  padding: 22px;
+  border-color: var(--detail-line);
+  border-radius: 4px;
+  background: #fff;
+}
+.structure-refresh :is(.product-detail) .product-related-card img {
+  object-fit: contain;
+}
+.structure-refresh :is(.product-detail) .product-related-card:hover {
+  border-color: #7d9bc5;
+  background: #f8fafd;
+}
+.structure-refresh :is(.product-detail) .product-article-links a {
+  padding: 19px 0;
+  color: var(--detail-navy);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.structure-refresh :is(.product-detail) .product-sources {
+  gap: 48px;
+  margin: 12px 0 28px;
+  padding: 30px;
+  border-radius: 4px;
+  background: var(--detail-navy);
+}
+.structure-refresh :is(.product-detail) .product-sources .product-eyebrow {
+  color: #a9c9ff;
+}
+.structure-refresh :is(.product-detail) .product-sources h2 {
+  color: #fff;
+  font-size: 26px;
+}
+.structure-refresh
+  :is(.product-detail)
+  .product-sources
+  p:not(.product-eyebrow) {
+  color: #bdd0e0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.structure-refresh :is(.product-detail) .product-sources li + li {
+  margin-top: 0;
+}
+.structure-refresh :is(.product-detail) .product-sources li {
+  padding: 11px 0;
+  border-bottom: 1px solid #ffffff26;
+}
+.structure-refresh :is(.product-detail) .product-sources a {
+  color: #d4e4ff;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.structure-refresh :is(.product-detail) .product-back {
+  padding: 6px 0 42px;
+  font-size: 13px;
+}
+
+@media (max-width: 1050px) {
+  .structure-refresh :is(.brand-detail) .brand-detail-hero {
+    gap: 28px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-section-layout--visual {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    .brand-section-layout--visual
+    .brand-visual {
+    width: min(100%, 760px);
+  }
+  .structure-refresh :is(.product-detail) .product-detail-hero {
+    padding: 22px;
+    gap: 26px;
+  }
+  .structure-refresh :is(.product-detail) .product-model-cover img {
+    height: 300px;
+  }
+  .structure-refresh :is(.product-detail) .product-reading-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .structure-refresh :is(.product-detail) .product-buying-note {
+    position: static;
+    margin: 0 0 30px;
+  }
+  .structure-refresh :is(.product-detail) .product-buying-note a {
+    display: inline-block;
+    margin-right: 22px;
+  }
+}
+@media (max-width: 800px) {
+  .structure-refresh :is(.brand-detail) .insights-page-container,
+  .structure-refresh :is(.product-detail) .product-container {
+    width: calc(100% - 40px);
+  }
+  .structure-refresh :is(.brand-detail) .brand-detail-hero,
+  .structure-refresh :is(.product-detail) .product-detail-hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .structure-refresh :is(.brand-detail) .brand-detail-hero {
+    gap: 24px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-hero-media {
+    width: 100%;
+    max-width: 560px;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    > section[aria-label="Product model profiles"] {
+    width: calc(100% - 40px);
+  }
+  .structure-refresh :is(.product-detail) .product-detail-intro {
+    order: -1;
+  }
+  .structure-refresh :is(.product-detail) .product-model-cover img {
+    height: 290px;
+  }
+  .structure-refresh :is(.product-detail) .product-fit-grid {
+    gap: 16px;
+  }
+  .structure-refresh :is(.product-detail) .product-sources {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+@media (max-width: 760px) {
+  /* Keep key facts a readable two-column table; other brand tables retain
+     their existing labelled mobile rows. No facts or headings are hidden. */
+  .structure-refresh :is(.brand-detail) .brand-key-facts .brand-data-table {
+    display: table;
+    table-layout: fixed;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    .brand-key-facts
+    .brand-data-table
+    thead {
+    display: table-header-group;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    clip-path: none;
+    white-space: normal;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    .brand-key-facts
+    .brand-data-table
+    tbody {
+    display: table-row-group;
+  }
+  .structure-refresh :is(.brand-detail) .brand-key-facts .brand-data-table tr {
+    display: table-row;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    .brand-key-facts
+    .brand-data-table
+    :is(th, td) {
+    display: table-cell;
+    width: auto;
+    padding: 11px 12px;
+    font-size: 11px;
+    border-bottom: 1px solid #e3e9f0;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    .brand-key-facts
+    .brand-data-table
+    :is(th, td):first-child {
+    width: 34%;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    .brand-key-facts
+    .brand-data-table
+    td::before {
+    content: none;
+  }
+  .structure-refresh :is(.brand-detail) .brand-data-table td {
+    padding: 11px 14px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-data-table td::before {
+    color: #62778b;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+  .structure-refresh :is(.brand-detail) .brand-data-table tbody tr + tr {
+    border-top: 1px solid #dce4eb;
+  }
+}
+@media (max-width: 540px) {
+  .structure-refresh :is(.brand-detail, .product-detail) section[id] {
+    scroll-margin-top: 100px;
+  }
+  .structure-refresh :is(.brand-detail) .guides-category-hero {
+    padding-top: 19px;
+  }
+  .structure-refresh :is(.brand-detail) .blog-visible-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+    font-size: 10px;
+    margin-bottom: 23px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-hero-identity .brand-logo--hero {
+    width: 148px;
+    min-height: 54px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-logo--hero img {
+    height: 40px;
+    max-height: 40px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-detail-hero h1 {
+    font-size: 36px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-detail-hero h1 + p {
+    font-size: 19px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-detail-hero p {
+    font-size: 13px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-hero-media img {
+    height: 230px;
+    padding: 12px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-section-nav {
+    gap: 0 20px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-section-nav a {
+    font-size: 11px;
+    min-height: 49px;
+  }
+  .structure-refresh :is(.brand-detail) > .section {
+    padding-block: 30px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-content-sections {
+    gap: 28px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-content-section {
+    padding-bottom: 28px;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    :is(.brand-content-section > h2, .guides-section-heading h2, #analysis h2) {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-founder-card {
+    grid-template-columns: 100px minmax(0, 1fr);
+  }
+  .structure-refresh :is(.brand-detail) .brand-founder-details {
+    padding: 13px;
+    gap: 7px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-founder-details h4 {
+    font-size: 19px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-founder-context {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .structure-refresh
+    :is(.brand-detail)
+    > section[aria-label="Product model profiles"] {
+    padding: 21px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-timeline li {
+    grid-template-columns: minmax(0, 1fr);
+    padding-block: 20px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-timeline time {
+    grid-row: auto;
+    padding: 0;
+    margin-bottom: 9px;
+    font-size: 11px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-timeline p {
+    grid-column: 1;
+    font-size: 13px;
+  }
+  .structure-refresh :is(.brand-detail) .brand-article-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .structure-refresh :is(.product-detail) .product-breadcrumb {
+    padding-block: 20px;
+    font-size: 10px;
+  }
+  .structure-refresh :is(.product-detail) .product-detail-hero {
+    padding: 20px 16px;
+    gap: 24px;
+  }
+  .structure-refresh :is(.product-detail) .product-detail-intro h1 {
+    font-size: 33px;
+    line-height: 1.1;
+  }
+  .structure-refresh :is(.product-detail) .product-lead {
+    font-size: 15px;
+  }
+  .structure-refresh :is(.product-detail) .product-key-facts > div {
+    padding: 12px;
+  }
+  .structure-refresh :is(.product-detail) .product-key-facts dd {
+    font-size: 14px;
+  }
+  .structure-refresh :is(.product-detail) .product-key-facts dt {
+    line-height: 1.5;
+  }
+  .structure-refresh :is(.product-detail) .product-actions {
+    gap: 9px;
+  }
+  .structure-refresh :is(.product-detail) .product-button {
+    width: 100%;
+    font-size: 12px;
+  }
+  .structure-refresh :is(.product-detail) .product-model-cover {
+    padding: 13px;
+  }
+  .structure-refresh :is(.product-detail) .product-model-cover img {
+    height: 250px;
+  }
+  .structure-refresh :is(.product-detail) .product-fit-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    padding-block: 25px 30px;
+  }
+  .structure-refresh :is(.product-detail) .product-fit-grid > div {
+    padding: 22px;
+  }
+  .structure-refresh
+    :is(.product-detail)
+    :is(.product-content-section h2, .product-editorial h2) {
+    font-size: 25px;
+  }
+  .structure-refresh
+    :is(.product-detail)
+    :is(.product-content-section, .product-editorial) {
+    padding-block: 25px;
+  }
+  .structure-refresh :is(.product-detail) .product-editorial {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+  .structure-refresh :is(.product-detail) .product-table-wrap :is(th, td) {
+    padding: 12px 9px;
+    font-size: 12px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+  .structure-refresh :is(.product-detail) .product-table-wrap th:first-child {
+    width: 29%;
+  }
+  .structure-refresh :is(.product-detail) .product-table-wrap thead th {
+    overflow-wrap: normal;
+  }
+  .structure-refresh :is(.product-detail) .product-buying-note {
+    padding: 21px;
+  }
+  .structure-refresh :is(.product-detail) .product-buying-note a {
+    display: block;
+    margin-right: 0;
+  }
+  .structure-refresh :is(.product-detail) .product-related-card {
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 15px;
+    padding: 16px;
+  }
+  .structure-refresh :is(.product-detail) .product-related-card img {
+    width: 90px;
+    height: 125px;
+  }
+  .structure-refresh :is(.product-detail) .product-related-card h3 {
+    font-size: 18px;
+  }
+  .structure-refresh :is(.product-detail) .product-sources {
+    padding: 23px;
+  }
+  .structure-refresh :is(.product-detail) .product-sources h2 {
+    font-size: 24px;
+  }
+}

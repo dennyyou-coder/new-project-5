@@ -57,10 +57,10 @@ const productionSource = (
 
 test("homepage-owned raster visuals use next/image with explicit responsive sizes", () => {
   assert.match(homeSource, /import Image from "next\/image"/);
-  assert.match(homeSource, /sizes="\(max-width: 720px\) 42vw,/);
+  assert.match(homeSource, /sizes="\(max-width: 760px\) 100vw, 70vw"/);
   assert.match(
     homeSource,
-    /sizes="\(max-width: 720px\) calc\(100vw - 40px\),/
+    /sizes="\(max-width: 760px\) 92vw, 40vw"/
   );
   assert.doesNotMatch(
     homeSource,
@@ -68,10 +68,11 @@ test("homepage-owned raster visuals use next/image with explicit responsive size
   );
 });
 
-test("homepage lead image loads eagerly with responsive optimization", () => {
+test("homepage lead image is prioritized while the journal cover loads lazily", () => {
   assert.match(seriesSource, /import Image from "next\/image"/);
   assert.match(seriesSource, /getArticleImage\(/);
-  assert.match(seriesSource, /loading="eager"/);
+  assert.match(homeSource, /fill\s+priority/);
+  assert.match(seriesSource, /loading="lazy"/);
   assert.match(
     seriesSource,
     /sizes="\(max-width: 1050px\) calc\(100vw - 40px\), 480px"/

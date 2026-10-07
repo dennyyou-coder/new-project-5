@@ -1,3 +1,4 @@
+import "../../styles/approved-analysis.css";
 import type { Metadata } from "next";
 import { ContentDirectory } from "@/components/ContentDirectory";
 import { getInsights } from "@/lib/content";
@@ -12,13 +13,9 @@ import {
   getAvailableCompanyKeywords,
   getCompanyKeyword
 } from "@/lib/companyKeywords";
-import {
-  getEditorialInsights,
-  getLatestSeriesInsight
-} from "@/lib/insightCollections";
+import { getEditorialInsights } from "@/lib/insightCollections";
 
 const siteUrl = "https://worldcleanbiz.com";
-const featuredSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 
 type SearchParams = Promise<Record<string, string | string[] | undefined>>;
 
@@ -34,7 +31,7 @@ export async function generateMetadata({
   searchParams
 }: PageProps): Promise<Metadata> {
   const resolvedSearchParams = searchParams ? await searchParams : {};
-  const articles = getEditorialInsights(getInsights()).map(toDirectoryArticle);
+  const articles = getEditorialInsights(getInsights()).filter((article) => !article.series).map(toDirectoryArticle);
   const categories = Array.from(
     new Set(articles.map((article) => article.category).filter(Boolean))
   );
@@ -67,7 +64,7 @@ export async function generateMetadata({
     : directoryHref("/blog/archive", page);
 
   return {
-    title: page > 1 ? `Analysis & Insights – Page ${page}` : "Analysis & Insights",
+    title: page > 1 ? `Deep Analysis – Page ${page}` : "Deep Analysis",
     description:
       "Browse original World Clean Biz analysis of cleaning robots, floorcare, pool cleaning, robotic mowers, brands, suppliers and global cleaning industry strategy.",
     alternates: { canonical },
@@ -80,7 +77,7 @@ export async function generateMetadata({
 export default async function BlogArchivePage({ searchParams }: PageProps) {
   const resolvedSearchParams = searchParams ? await searchParams : {};
   const allArticles = getInsights();
-  const editorialInsights = getEditorialInsights(allArticles);
+  const editorialInsights = getEditorialInsights(allArticles).filter((article) => !article.series);
   const editorialArticles = editorialInsights.map(toDirectoryArticle);
   const categories = Array.from(
     new Set(editorialArticles.map((article) => article.category).filter(Boolean))
@@ -133,10 +130,6 @@ export default async function BlogArchivePage({ searchParams }: PageProps) {
       active: selectedCategory === category
     }))
   ];
-  const latestSeriesArticle = getLatestSeriesInsight(
-    allArticles,
-    featuredSeries
-  );
   const currentPath = directoryHref(
     "/blog/archive",
     currentPage,
@@ -145,7 +138,7 @@ export default async function BlogArchivePage({ searchParams }: PageProps) {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "World Clean Biz Analysis & Insights",
+    name: "World Clean Biz Deep Analysis",
     numberOfItems: filteredArticles.length,
     itemListElement: visibleArticles.map((article, index) => ({
       "@type": "ListItem",
@@ -158,7 +151,7 @@ export default async function BlogArchivePage({ searchParams }: PageProps) {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": `${siteUrl}${currentPath}`,
-    name: "World Clean Biz Analysis & Insights",
+    name: "World Clean Biz Deep Analysis",
     url: `${siteUrl}${currentPath}`,
     mainEntity: itemListSchema
   };
@@ -171,18 +164,18 @@ export default async function BlogArchivePage({ searchParams }: PageProps) {
       {
         "@type": "ListItem",
         position: 3,
-        name: "Analysis & Insights",
+        name: "Deep Analysis",
         item: `${siteUrl}${currentPath}`
       }
     ]
   };
 
   return (
-    <div id="analysis">
+    <div id="analysis" className="approved-analysis">
       <ContentDirectory
         variant="analysis"
         eyebrow="Original Editorial"
-        title="Analysis & Insights"
+        title="Deep Analysis"
         description="Industry shifts, company strategy, original research and market observations from across the global cleaning industry."
         totalLabel={`${filteredArticles.length} analysis articles`}
         articles={visibleArticles}
@@ -198,14 +191,9 @@ export default async function BlogArchivePage({ searchParams }: PageProps) {
             ? directoryHref("/blog/archive", currentPage + 1, paginationParams)
             : undefined
         }
-        featuredSeriesArticle={
-          currentPage === 1 && !selectedCategory && !selectedCompany && latestSeriesArticle
-            ? toDirectoryArticle(latestSeriesArticle)
-            : undefined
-        }
         sidebar={{
           mode: "analysis",
-          navigationTitle: "Company & Brand Index",
+          navigationTitle: "Analysis by Company & Brand",
           navigationLinks: availableCompanies.map((company) => ({
             label: company.label,
             href: directoryHref("/blog/archive", 1, {

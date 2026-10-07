@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BlogArticleGrid, BlogBusinessLinks, BlogSeriesHero } from "@/components/BlogLanding";
+import { BlogArticleGrid, BlogSeriesHero } from "@/components/BlogLanding";
 import { NewsletterLeadForm } from "@/components/LeadForms";
 import { getInsights } from "@/lib/content";
 import {
@@ -114,7 +114,7 @@ export default function InsightsPage() {
             variant="guide"
           />
           <NewsletterLeadForm />
-          <BlogBusinessLinks />
+
         </div>
       </div>
 

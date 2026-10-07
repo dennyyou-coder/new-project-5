@@ -249,20 +249,31 @@ test("brand directory route exposes one canonical collection with links for publ
   assert.equal((source.match(/<h1\b/g) || []).length, 1);
   assert.match(source, /buildBrandDirectorySchemas\(profiles,\s*siteUrl\)/);
   assert.match(source, /getPublishedBrandProfiles\(articles\)/);
-  assert.match(source, /profiles\.map\(\(profile\)\s*=>\s*\(/);
+  assert.match(source, /<BrandDirectory\s+categories=\{categories\.map/);
+  assert.match(source, /profiles:\s*data\.profiles\.map\(\(profile\)\s*=>\s*\(\{/);
   assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
-  assert.match(source, /href="\/blog"/);
+  assert.match(read("components/brands/BrandDirectoryCard.tsx"), /href=\{`\/brands\/\$\{profile\.slug\}`\}/);
+  assert.match(read("components/Header.tsx"), /href: "\/blog\/archive", label: "Deep Analysis"/);
+  assert.match(source, /<h1>Companies &amp; Brands<\/h1>/);
   assert.match(source, /Cleaning & Home Appliance Brand Intelligence/);
 });
 
 test("brand directory groups profiles below each product-category introduction", () => {
   const source = read("app/brands/page.tsx");
+  const directory = read("components/brands/BrandDirectory.tsx");
 
-  assert.match(source, /categories\.map\(\(data(?:,\s*index)?\)\s*=>\s*\(/);
-  assert.match(source, /brand-category-list/);
-  assert.match(source, /data\.profiles\.map\(\(profile\)\s*=>\s*\(/);
+  assert.match(source, /categories\.map\(\(data\)\s*=>\s*\(\{/);
+  assert.match(source, /name:\s*data\.category\.name/);
+  assert.match(source, /description:\s*data\.category\.description/);
+  assert.match(source, /data\.profiles\.map\(\(profile\)\s*=>\s*\(\{/);
   assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
-  assert.doesNotMatch(source, /<BrandCategoryCard\b/);
+  assert.match(directory, /visible\.map\(\(item,\s*index\)\s*=>\s*<section[^>]*brand-category-list[^>]*id=\{item\.slug\}/);
+  assert.match(directory, /className="brand-category-list__intro"[\s\S]*<h2>\{item\.name\}<\/h2>[\s\S]*<p>\{item\.description\}<\/p>[\s\S]*className="guides-featured-grid brand-directory-grid"[\s\S]*item\.profiles\.map[\s\S]*\{profile\.card\}/);
+  assert.match(directory, /type="search"[^<]*value=\{query\}[^<]*aria-controls="company-directory-results"/);
+  assert.match(directory, /<select value=\{category\}[^<]*aria-controls="company-directory-results"/);
+  assert.match(directory, /id="company-directory-results"/);
+  assert.match(directory, /role="status" aria-live="polite"/);
+  assert.doesNotMatch(source + directory, /<BrandCategoryCard\b/);
   assert.doesNotMatch(source, /Browse All Verified Brand Profiles/);
   assert.doesNotMatch(source, /data\.category\.buyerFocus/);
   assert.doesNotMatch(source, /Explore \{data\.category\.name\} intelligence/);
@@ -333,8 +344,11 @@ test("brand hero separates official identity from editorial cover and renders ke
 
   assert.match(hero, /<BrandLogo\s+profile=\{profile\}\s+variant="hero"/);
   assert.match(hero, /profile\.heroImage/);
-  assert.match(hero, /caption="Key facts"/);
+  assert.match(hero, /<dl className="company-overview-facts" aria-label="Key facts">/);
+  assert.match(hero, /keyFacts\.map\([\s\S]*<dt>\{fact\}<\/dt><dd>\{detail\}<\/dd>/);
   [
+    "Brand",
+    "Main businesses",
     "Legal entity scope",
     "Ownership type",
     "Headquarters",
@@ -566,7 +580,7 @@ test("footer exposes exactly one Brand Intelligence discovery link", () => {
   const source = read("components/Footer.tsx");
 
   assert.equal((source.match(/href="\/brands"/g) || []).length, 1);
-  assert.match(source, /<Link href="\/brands">Brand Intelligence<\/Link>/);
+  assert.match(source, /<Link href="\/brands">Companies &amp; Brands<\/Link>/);
 });
 
 test("brand styles contain logos without cropping and collapse multi-column layouts on mobile", () => {
@@ -1013,6 +1027,7 @@ test("mobile key-fact labels retain sufficient white opacity on the dark hero", 
 
 test("brand JSX connects every required CSS selector to rendered content", () => {
   const directoryRoute = read("app/brands/page.tsx");
+  const directory = read("components/brands/BrandDirectory.tsx");
   const detailRoute = read("app/brands/[slug]/page.tsx");
   const directoryCard = read("components/brands/BrandDirectoryCard.tsx");
   const hero = read("components/brands/BrandHero.tsx");
@@ -1022,17 +1037,21 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
   const sources = read("components/brands/BrandSources.tsx");
   const articleBrandLinks = read("components/ArticleBrandLinks.tsx");
 
-  assert.match(directoryRoute, /className="guides-hub brand-hub"/);
-  assert.match(directoryRoute, /className="insights-page-container guides-hero-grid brand-directory-hero"/);
-  assert.match(directoryRoute, /className="guides-featured-grid brand-directory-grid"/);
+  assert.match(directoryRoute, /className="guides-hub brand-hub approved-catalog"/);
+  assert.match(directoryRoute, /<BrandDirectory\s+categories=/);
+  assert.match(directory, /className="brand-jump-links"/);
+  assert.match(directory, /className="guides-featured-grid brand-directory-grid"/);
   assert.match(directoryCard, /className="guide-card brand-directory-card"/);
+  assert.match(directoryCard, /className="brand-business-focus"/);
+  assert.match(directoryCard, /className="brand-base"[\s\S]*\{profile\.headquarters\}/);
+  assert.match(directoryCard, /<details className="brand-card-details">[\s\S]*<p>\{profile\.description\}<\/p><\/details>/);
 
-  assert.match(detailRoute, /className="guides-hub brand-hub brand-detail"/);
+  assert.match(detailRoute, /className="guides-hub brand-hub brand-detail approved-catalog"/);
   assert.match(hero, /className="brand-detail-hero"/);
   assert.match(hero, /className="brand-hero-media"/);
   assert.match(hero, /className="brand-hero-identity"/);
   assert.match(hero, /className="brand-key-facts"/);
-  assert.match(hero, /<BrandDataTable/);
+  assert.match(hero, /<dl className="company-overview-facts" aria-label="Key facts">/);
   assert.match(
     hero,
     /className="brand-detail-hero"[\s\S]*\{profile\.heroImage \? \([\s\S]*<img/

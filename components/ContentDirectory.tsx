@@ -4,14 +4,14 @@ import { directoryArticleImageProps } from "@/lib/contentDirectory";
 import { DirectorySeriesFeature } from "@/components/DirectorySeriesFeature";
 import {
   DirectorySidebar,
-  type DirectorySidebarProps
+  type DirectorySidebarProps,
 } from "@/components/DirectorySidebar";
 
 const fallbackImages = [
   "/images/industry/about-forum-stage-2025.jpg",
   "/images/industry/sourcing-product-components-2025.jpg",
   "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
-  "/images/industry/about-forum-audience-2025.jpg"
+  "/images/industry/about-forum-audience-2025.jpg",
 ];
 
 export type DirectoryFilter = {
@@ -77,7 +77,7 @@ export function ContentDirectory({
   previousHref,
   nextHref,
   featuredSeriesArticle,
-  sidebar
+  sidebar,
 }: ContentDirectoryProps) {
   return (
     <div className="content-directory" data-variant={variant}>
@@ -92,7 +92,7 @@ export function ContentDirectory({
         </div>
       </section>
 
-      {featuredSeriesArticle ? (
+      {variant === "analysis" && featuredSeriesArticle ? (
         <DirectorySeriesFeature article={featuredSeriesArticle} />
       ) : null}
 
@@ -135,7 +135,7 @@ export function ContentDirectory({
                     <img
                       {...directoryArticleImageProps(
                         article,
-                        fallbackImages[index % fallbackImages.length]
+                        fallbackImages[index % fallbackImages.length],
                       )}
                       alt={article.coverAlt || `${article.title} cover`}
                     />
@@ -150,7 +150,7 @@ export function ContentDirectory({
                       {article.date ? <span>{article.date}</span> : null}
                       <span>{article.readingTime}</span>
                     </div>
-                    <strong>Read Article →</strong>
+                    <strong>Read Article</strong>
                   </div>
                 </Link>
               ))
@@ -171,17 +171,32 @@ export function ContentDirectory({
                 ) : (
                   <span aria-disabled="true">Previous</span>
                 )}
-                {pagination.map((item) =>
-                  item.current ? (
-                    <strong aria-current="page" key={item.page}>
-                      {item.page}
-                    </strong>
-                  ) : (
-                    <Link href={item.href} key={item.page}>
-                      {item.page}
-                    </Link>
+                {pagination
+                  .filter(
+                    (item, index) =>
+                      index === 0 ||
+                      index === pagination.length - 1 ||
+                      Math.abs(
+                        item.page -
+                          (pagination.find((p) => p.current)?.page ?? 1),
+                      ) <= 1,
                   )
-                )}
+                  .map((item, index, visible) => (
+                    <span className="refresh-page-number" key={item.page}>
+                      {index > 0 && item.page - visible[index - 1].page > 1 ? (
+                        <span aria-hidden="true">…</span>
+                      ) : null}
+                      {item.current ? (
+                        <strong aria-current="page" key={item.page}>
+                          {item.page}
+                        </strong>
+                      ) : (
+                        <Link href={item.href} key={item.page}>
+                          {item.page}
+                        </Link>
+                      )}
+                    </span>
+                  ))}
                 {nextHref ? (
                   <Link href={nextHref}>Next</Link>
                 ) : (

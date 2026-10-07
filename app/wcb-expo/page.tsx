@@ -1,8 +1,7 @@
 import { siteVisualProps } from "@/lib/siteVisuals";
 import type { Metadata } from "next";
 import Link from "next/link";
-import "../styles/wcb-expo.css";
-import { TallyButton } from "@/components/LeadForms";
+import "../styles/approved-platform.css";
 
 export const metadata: Metadata = {
   title: "WCB Expo 2026 | Suzhou",
@@ -108,37 +107,6 @@ const gatheringImages = [
   }
 ];
 
-const supplyChain = [
-  {
-    number: "01",
-    title: "Global Brands & Buyers",
-    text: "People defining market needs, channel requirements and the next product opportunity.",
-    image: "/images/industry/home-expo-networking-2025.jpg",
-    alt: "Cleaning industry buyers and brands networking"
-  },
-  {
-    number: "02",
-    title: "Complete-Machine Manufacturers",
-    text: "Companies building finished cleaning appliances for their own brands and partners.",
-    image: "/images/industry/sourcing-hero-expo-products-2026.jpg",
-    alt: "Complete cleaning appliances presented by manufacturers"
-  },
-  {
-    number: "03",
-    title: "OEM / ODM Partners",
-    text: "Development and manufacturing teams turning product ideas into market-ready programs.",
-    image: "/images/industry/sourcing-supplier-meeting-2026.jpg",
-    alt: "Supplier and manufacturing teams discussing a product program"
-  },
-  {
-    number: "04",
-    title: "Components & Materials",
-    text: "Core technologies, modules, tooling, materials and services behind every product.",
-    image: "/images/industry/sourcing-product-components-2025.jpg",
-    alt: "Components and materials used in cleaning appliances"
-  }
-];
-
 const programs = [
   {
     title: "Industry Forums",
@@ -162,16 +130,15 @@ const programs = [
 
 export default function WcbExpoPage() {
   return (
-    <div className="wcb-expo-page">
+    <div className="approved-platform wcb-expo-page">
       <section className="wcb-expo-hero">
         <div className="wcb-expo-shell wcb-expo-hero-content">
+          <div className="wcb-expo-hero-copy">
           <p className="wcb-expo-kicker">2026 WCB Expo Is Now In Preparation</p>
-          <h1>
-            <span>WCB EXPO</span>
-            2026 WCB International Cleaning Appliance Expo
-          </h1>
+          <h1>WCB Expo 2026</h1>
+          <p>WCB International Cleaning Appliance Expo</p>
           <p className="wcb-expo-chinese">2026 WCB 国际清洁电器博览会</p>
-          <p className="wcb-expo-hero-invite">We Invite You To Join Us In Suzhou</p>
+
           <p className="wcb-expo-hero-intro">
             The show is taking shape now. We welcome buyers, distributors, brands,
             manufacturers and industry professionals to see new products, meet the
@@ -183,29 +150,23 @@ export default function WcbExpoPage() {
             <span>Suzhou, China</span>
           </div>
           <div className="wcb-expo-hero-actions">
-            <TallyButton
-              ctaLocation="wcb_expo_hero_visit"
-              form="expo"
-              inquiryIntent="visitor_interest"
-              inquiryType="expo_visitor"
-            >
-              Plan Your Visit
-            </TallyButton>
-            <Link className="wcb-expo-secondary-link" href="#exhibitor-interest">
+            <Link className="button" href="/contact?inquiry=expo_visitor#project-form">Plan Your Visit</Link>
+            <Link className="button-secondary" href="/contact?inquiry=expo_exhibitor#project-form">
               Exhibiting &amp; Partnerships
             </Link>
           </div>
+          </div>
+          <figure className="wcb-expo-hero-photo">
+            <img
+              src="/images/industry/home-expo-networking-2025.jpg"
+              alt="Scenes from previous WCB industry gatherings"
+            />
+            <figcaption>Scenes From Previous WCB Industry Gatherings</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section className="wcb-expo-status" aria-label="2026 WCB Expo status">
-        <div className="wcb-expo-shell wcb-expo-status-grid">
-          <article><span>Date</span><strong>18–20 November 2026</strong></article>
-          <article><span>Venue</span><strong>Suzhou Shishan Convention Center</strong></article>
-          <article><span>Current status</span><strong>Visitor Interest Open</strong></article>
-          <article><span>Coverage</span><strong>7 Product &amp; Supply Categories</strong></article>
-        </div>
-      </section>
+
 
       <section className="wcb-expo-why" aria-labelledby="expo-why-title">
         <div className="wcb-expo-shell">
@@ -249,6 +210,7 @@ export default function WcbExpoPage() {
             </article>
           </div>
           <div className="wcb-expo-proof-numbers">
+            <p className="expo-records-qualifier">Prior-event records · November 2025 and March 2026</p>
             <article><strong>100+</strong><span>Exhibitors at each event</span></article>
             <article><strong>1,000+</strong><span>Visitors at each event</span></article>
             <p>Source: organizer records from the two prior WCB supply-chain events.</p>
@@ -291,27 +253,7 @@ export default function WcbExpoPage() {
         </div>
       </section>
 
-      <section className="wcb-expo-supply" aria-labelledby="expo-supply-title">
-        <div className="wcb-expo-shell">
-          <div className="wcb-expo-section-head">
-            <p className="wcb-expo-section-label">WHO YOU WILL MEET</p>
-            <h2 id="expo-supply-title">Meet The People Behind The Products</h2>
-            <p>Meet the companies shaping, developing, manufacturing and supplying the next generation of cleaning appliances.</p>
-          </div>
-          <div className="wcb-expo-supply-grid">
-            {supplyChain.map((item) => (
-              <article key={item.number}>
-                <img src={item.image} alt={item.alt} loading="lazy" />
-                <div>
-                  <span>{item.number}</span>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       <section className="wcb-expo-programs" aria-labelledby="expo-programs-title">
         <div className="wcb-expo-shell">
@@ -353,52 +295,30 @@ export default function WcbExpoPage() {
         </div>
       </section>
 
-      <section className="wcb-expo-visit wcb-expo-final-invitation" id="visitor-interest" aria-labelledby="expo-visit-title">
-        <div className="wcb-expo-shell wcb-expo-visit-grid">
-          <img
-            src="/images/industry/expo-business-matching-2026.jpg"
-            alt="Cleaning industry professionals meeting at a previous WCB gathering"
-            loading="lazy"
-          />
-          <div>
-            <p className="wcb-expo-section-label">PLAN YOUR VISIT</p>
-            <h2 id="expo-visit-title">Join The Global Cleaning Appliance Industry In Suzhou</h2>
-            <p>
-              Tell us what products, suppliers or partnerships you want to explore.
-              We will share relevant visitor and event updates as they become available.
-            </p>
-            <div className="wcb-expo-visit-meta">
-              <strong>18–20 November 2026</strong>
-              <span>Suzhou Shishan Convention Center · Suzhou, China</span>
-            </div>
-            <TallyButton
-              ctaLocation="wcb_expo_visit_interest"
-              form="expo"
-              inquiryIntent="visitor_interest"
-              inquiryType="expo_visitor"
-            >
-              Register Visitor Interest
-            </TallyButton>
+      <section className="expo-invitations" aria-label="Visitor and exhibitor interest">
+        <div className="wcb-expo-shell expo-invitation-shell">
+          <figure className="expo-invitation-photo">
+            <img src="/images/industry/expo-business-matching-2026.jpg" alt="Cleaning industry professionals meeting at a previous WCB gathering" loading="lazy" width={2200} height={1651} />
+            <figcaption>Scenes From Previous WCB Industry Gatherings</figcaption>
+          </figure>
+          <div className="expo-invitation-columns">
+            <article className="wcb-expo-visit wcb-expo-final-invitation" id="visitor-interest" aria-labelledby="expo-visit-title">
+              <div className="expo-invitation-copy"><div>
+                <p className="wcb-expo-section-label">PLAN YOUR VISIT</p>
+                <h2 id="expo-visit-title">Join The Global Cleaning Appliance Industry In Suzhou</h2>
+                <p>Tell us what products, suppliers or partnerships you want to explore. We will share relevant visitor and event updates as they become available.</p>
+                <div className="wcb-expo-visit-meta"><strong>18–20 November 2026</strong><span>Suzhou Shishan Convention Center · Suzhou, China</span></div>
+                <Link className="button" href="/contact?inquiry=expo_visitor#project-form">Register Visitor Interest</Link>
+              </div></div>
+            </article>
+            <article className="wcb-expo-exhibit" id="exhibitor-interest">
+              <div className="expo-invitation-copy"><div>
+                <p className="wcb-expo-section-label">FOR EXHIBITORS &amp; PARTNERS</p>
+                <h2>Present Your Products To A Focused Industry Audience</h2>
+                <p>Request current participation, booth and partnership information from the organizing team.</p>
+              </div><Link className="button-secondary" href="/contact?inquiry=expo_exhibitor#project-form">Request Exhibitor Information</Link></div>
+            </article>
           </div>
-        </div>
-      </section>
-
-      <section className="wcb-expo-exhibit" id="exhibitor-interest">
-        <div className="wcb-expo-shell wcb-expo-exhibit-grid">
-          <div>
-            <p className="wcb-expo-section-label">FOR EXHIBITORS &amp; PARTNERS</p>
-            <h2>Present Your Products To A Focused Industry Audience</h2>
-            <p>Request current participation, booth and partnership information from the organizing team.</p>
-          </div>
-          <TallyButton
-            className="button-secondary"
-            ctaLocation="wcb_expo_exhibitor_interest"
-            form="wceExhibitor"
-            inquiryIntent="exhibitor_interest"
-            inquiryType="expo_exhibitor"
-          >
-            Request Exhibitor Information
-          </TallyButton>
         </div>
       </section>
     </div>

@@ -50,7 +50,7 @@ function routeEntries(routes: string[]): MetadataRoute.Sitemap {
 
 export function buildBlogSitemap(): MetadataRoute.Sitemap {
   const insights = getInsights();
-  const editorial = getEditorialInsights(insights);
+  const editorial = getEditorialInsights(insights).filter((article) => !article.series);
 
   return [
     { url: `${baseUrl}/news` },
@@ -81,6 +81,7 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
 
   return routeEntries([
     "",
+    "/videos",
     "/products",
     ...productModels.map((model) => `/products/${model.slug}`),
     "/guides",

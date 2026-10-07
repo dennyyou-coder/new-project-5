@@ -2422,6 +2422,78 @@
         "outputHash": "sha256:040c51aaade9df9ebe0f059fb446a12d4a164e7696fa8d6b503cbbc2ea15262c"
       }
     },
+    "/images/articles/dyson-pencilwash/02-in-use.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1500,
+      "height": 844,
+      "bytes": 15744,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:020c2c4524ab34d957f6b46700209f24a1910d3c0192cbb553659a595cf2262c",
+      "outputHash": "sha256:ef98bd4affda6e2135f43bb6e879281872a790921286a91dc172f1b0b3a813be",
+      "mobile": {
+        "src": "/images/articles/dyson-pencilwash/02-in-use-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 5512,
+        "outputHash": "sha256:5c0489499120c664f63cde5b23b310d214ca89940e2acab5eb97c5216edc06c1"
+      }
+    },
+    "/images/articles/dyson-pencilwash/03-handle.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1500,
+      "height": 844,
+      "bytes": 21768,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3999b6089b4b19b2263b08353981af4ae98b46f1f02ce1cc6c3b0e394bdedbf1",
+      "outputHash": "sha256:aa83e634be5b96e3eb175bd5351b14acf5c14add48d4e8c2b094451b676be02d",
+      "mobile": {
+        "src": "/images/articles/dyson-pencilwash/03-handle-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 7864,
+        "outputHash": "sha256:e5e1e38faf14851018f904724d16a549b8cfbe7ef90aa159e8729ada09fa3ccb"
+      }
+    },
+    "/images/articles/dyson-pencilwash/04-water-tank.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1500,
+      "height": 844,
+      "bytes": 37584,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5c49089ab9971652a2194c23f84213258295351111de6ddaa869c35fa3bb5022",
+      "outputHash": "sha256:047904172611906a12c058cf662ef90c656e185931b50937b77f4f1ca426db60",
+      "mobile": {
+        "src": "/images/articles/dyson-pencilwash/04-water-tank-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14610,
+        "outputHash": "sha256:473139cfca57a1ff75173ede0ffaa2f1af481b4a31114290f7304ff191920127"
+      }
+    },
+    "/images/articles/dyson-pencilwash/05-roller.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1500,
+      "height": 844,
+      "bytes": 91092,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f34fcf06afeaaa40dea5bb852193b6e01210be0b3423e7c9a84a1318242004e1",
+      "outputHash": "sha256:68a78ad0f5f9a5313b027a1fb1327d1a4c13dc459720194e080eb21606471253",
+      "mobile": {
+        "src": "/images/articles/dyson-pencilwash/05-roller-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 37778,
+        "outputHash": "sha256:87593932de25ca1a484cc42647e03de08a5f6b1c688b1e1ccf4195ca534aa182"
+      }
+    },
     "/images/articles/dyson-r1-nurovi-dry/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -36866,7 +36938,12 @@
     "dyson-pencilwash": {
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-pencilwash/01-cover.webp",
-      "body": []
+      "body": [
+        "/images/articles/dyson-pencilwash/02-in-use.webp",
+        "/images/articles/dyson-pencilwash/03-handle.webp",
+        "/images/articles/dyson-pencilwash/04-water-tank.webp",
+        "/images/articles/dyson-pencilwash/05-roller.webp"
+      ]
     },
     "dyson-r1-nurovi-dry": {
       "budgetClass": "standard",
@@ -41245,6 +41322,26 @@
           "status": "matched",
           "primary": "/images/articles/dyson-pencilwash/01-cover.webp",
           "hash": "sha256:07c2a5957f263f81742e5d648a7c954264c333adff304bd3a7384a53d83aa653"
+        },
+        "02-in-use.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-pencilwash/02-in-use.webp",
+          "hash": "sha256:020c2c4524ab34d957f6b46700209f24a1910d3c0192cbb553659a595cf2262c"
+        },
+        "03-handle.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-pencilwash/03-handle.webp",
+          "hash": "sha256:3999b6089b4b19b2263b08353981af4ae98b46f1f02ce1cc6c3b0e394bdedbf1"
+        },
+        "04-water-tank.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-pencilwash/04-water-tank.webp",
+          "hash": "sha256:5c49089ab9971652a2194c23f84213258295351111de6ddaa869c35fa3bb5022"
+        },
+        "05-roller.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-pencilwash/05-roller.webp",
+          "hash": "sha256:f34fcf06afeaaa40dea5bb852193b6e01210be0b3423e7c9a84a1318242004e1"
         }
       }
     },
