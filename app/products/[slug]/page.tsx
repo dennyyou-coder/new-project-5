@@ -42,9 +42,10 @@ export default async function ProductPage({ params }: Props) {
   const articles = getInsights().filter((article) => model.articles.includes(article.slug));
   const relatedNews = getNews().filter((article) => article.productSlugs.includes(model.slug));
   const url = `https://worldcleanbiz.com/products/${model.slug}`;
+  // These are sourced product reference pages, not live offers or rated reviews.
+  // Keep page discovery metadata without emitting an ineligible Product snippet.
   const schemas = [
-    { "@context": "https://schema.org", "@type": "Product", "@id": `${url}#product`, name: model.name, model: model.name, description: model.summary, image: `https://worldcleanbiz.com${model.coverImage}`, brand: { "@type": "Brand", name: model.brand }, category: model.category, url, additionalProperty: specifications.filter((fact) => !fact.value.startsWith("Not verified")).map((fact) => ({ "@type": "PropertyValue", name: fact.label, value: fact.value })) },
-    { "@context": "https://schema.org", "@type": "WebPage", url, name: model.name, dateModified: model.verifiedAt, about: { "@id": `${url}#product` }, citation: model.sources.map((source) => source.url) },
+    { "@context": "https://schema.org", "@type": "WebPage", url, name: model.name, description: model.summary, image: `https://worldcleanbiz.com${model.coverImage}`, dateModified: model.verifiedAt, about: { "@type": "Thing", name: model.name }, citation: model.sources.map((source) => source.url) },
     { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://worldcleanbiz.com" }, { "@type": "ListItem", position: 2, name: "Products", item: "https://worldcleanbiz.com/products" }, { "@type": "ListItem", position: 3, name: model.name, item: url }] }
   ];
   return <div className="products-page product-detail approved-catalog"><div className="product-container">
