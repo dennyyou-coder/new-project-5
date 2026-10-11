@@ -7,7 +7,7 @@ import {
   buildBlogSitemap,
   buildDiscoverySitemap
 } from "../lib/sitemaps.ts";
-import { seoDescription, seoTitle } from "../lib/seo.ts";
+import { buildWebsiteMetadata, seoDescription, seoTitle } from "../lib/seo.ts";
 
 const sourcingGuideSlugs = [
   "cleaning-appliance-moq-pricing-hidden-costs-china",
@@ -22,7 +22,7 @@ const sourcingGuideSlugs = [
   "spare-parts-warranty-cleaning-appliances-china"
 ];
 
-test("SEO snippets keep leading intent without exceeding search budgets", () => {
+test("SEO titles preserve full meaning while descriptions keep their existing budget", () => {
   const title = seoTitle(
     "Robotic Pool Cleaner Manufacturers in China: A Detailed Buyer Guide for Global Importers"
   );
@@ -30,7 +30,12 @@ test("SEO snippets keep leading intent without exceeding search budgets", () => 
     "Evaluate robotic pool cleaner manufacturers in China through product architecture, waterproofing, navigation, supplier capability, sample testing, compliance, spare parts, warranty readiness, and after-sales economics."
   );
 
-  assert.ok(title.length <= 60, title);
+  assert.equal(title, "Robotic Pool Cleaner Manufacturers in China: A Detailed Buyer Guide for Global Importers");
+  assert.equal(seoTitle("  Who owns\nDyson?  "), "Who owns Dyson?");
+  const metadata = buildWebsiteMetadata({ title, description, canonical: "/guide" });
+  assert.deepEqual(metadata.title, { absolute: title });
+  assert.equal(metadata.openGraph.title, title);
+  assert.equal(metadata.twitter.title, title);
   assert.ok(description.length <= 160, description);
   assert.match(title, /^Robotic Pool Cleaner Manufacturers in China/);
   assert.match(description, /^Evaluate robotic pool cleaner manufacturers in China/);

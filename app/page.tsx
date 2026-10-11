@@ -74,7 +74,7 @@ export default function HomePage() {
           <Image src="/images/industry/home-expo-networking-2025.jpg"
             alt="Visitors and suppliers meeting at a previous WCB cleaning industry gathering in 2025"
             width={2200} height={1467} priority sizes="100vw" />
-          <figcaption>WCB industry gathering · 2025</figcaption>
+          <figcaption>Previous WCB industry gathering · 2025</figcaption>
         </figure>
         <div className="glacier-expo-strip" aria-labelledby="home-wcb-expo-title">
           <div className="container glacier-expo-inner">
