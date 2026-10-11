@@ -202,9 +202,9 @@ export default function AboutPage() {
 </section>
 
 <section className="wrap section media-section" id="writing" aria-labelledby="media-title">
-<div className="sectionhead"><div><div className="eyebrow">03 / WRITING &amp; VIDEO</div>
+<div className="sectionhead"><div><div className="eyebrow">03 / WRITING, VIDEO &amp; FOUNDER’S JOURNAL</div>
 <h2 id="media-title">Sharing the industry’s stories.</h2></div>
-<p>Since 2017, I’ve explored cleaning companies, products and markets through articles and video.</p></div>
+<p>Since 2017, I’ve shared the industry’s stories through articles and video. My founder’s journal tells the story of my own journey.</p></div>
 <div className="media-grid">
 <div className="media-column"><h3>Selected writing</h3>
 <a className="media-feature" href="/blog/story-of-hard-floor-washers">
@@ -212,7 +212,6 @@ export default function AboutPage() {
 <h4>The Story of Hard Floor Washers</h4></a>
 <div className="media-links">
 <a href="/blog/irobot-decline-and-the-new-robot-vacuum-order">iRobot’s Decline and the New Order in Robot Vacuums</a>
-<a href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">My founder’s journal: Building the World’s No.1 Cleaning Show from Scratch</a>
 </div>
 <a className="textlink" href="/blog/archive">Explore all analysis</a>
 </div>
@@ -223,6 +222,13 @@ export default function AboutPage() {
 <p className="media-caption">Company stories and product strategy.<br />Mandarin audio · English &amp; Chinese subtitles</p>
 <div className="media-actions"><a className="textlink" href="https://www.youtube.com/@WCBdenny/videos" rel="noopener" target="_blank">Denny on YouTube</a>
 <a className="textlink" href="/videos">All WCB videos</a></div>
+</div>
+<div className="media-column"><h3>Founder’s journal</h3>
+<a className="media-feature" href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">
+<ProfileImage photo={photo("/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/01-cover.webp", "Building the World’s No.1 Cleaning Show from Scratch — founder’s journal")} sizes="(max-width: 800px) calc(100vw - 40px), 390px" />
+<h4>Building the World’s No.1 Cleaning Show from Scratch</h4></a>
+<p className="media-caption">A personal account of building products, navigating setbacks and bringing the cleaning industry together through WCB.</p>
+<a className="textlink" href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">Read the founder’s journal</a>
 </div>
 </div>
 </section>

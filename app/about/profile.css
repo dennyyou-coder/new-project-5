@@ -60,15 +60,15 @@
 
 #denny-about .hero::before,#denny-about .hero::after{display:none}
 
-/* A compact writing-and-video introduction before the event timeline. */
+/* Articles, video and the founder journal introduce the event timeline. */
 #denny-about .media-section{padding-bottom:0}
-#denny-about .media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:80px;padding-bottom:48px;border-bottom:1px solid #cddbe4}
+#denny-about .media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;padding-bottom:48px;border-bottom:1px solid #cddbe4}
 #denny-about .media-column{min-width:0;display:flex;flex-direction:column;position:relative}
-#denny-about .media-column+ .media-column::before{content:"";position:absolute;left:-40px;top:0;bottom:0;border-left:1px solid #cddbe4}
+#denny-about .media-column+ .media-column::before{content:"";position:absolute;left:-20px;top:0;bottom:0;border-left:1px solid #cddbe4}
 #denny-about .media-column>h3{font-size:22px;margin:0 0 20px}
 #denny-about .media-feature{display:block;color:inherit;text-decoration:none}
 #denny-about .media-feature img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:4px}
-#denny-about .media-feature h4{font-size:21px;line-height:1.4;margin:16px 0 0}
+#denny-about .media-feature h4{font-size:20px;line-height:1.4;margin:16px 0 0}
 #denny-about .media-feature:hover h4,#denny-about .media-links a:hover{color:#245cca}
 #denny-about .media-links{margin:18px 0 22px}
 #denny-about .media-links a{display:flex;justify-content:space-between;gap:16px;border-top:1px solid #d5e0e7;padding:12px 0;font-size:15px;line-height:1.6;text-decoration:none;color:#314853}
