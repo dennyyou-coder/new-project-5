@@ -1057,6 +1057,330 @@
         "outputHash": "sha256:9fc92feac3a178099d1612c090bb2049de3f8ea0fd2e87ffec30e3e9d4893ec2"
       }
     },
+    "/images/articles/about-denny-shenzhen-august-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1536,
+      "height": 864,
+      "bytes": 150510,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3715cc4137a533764cb0cb30470393a63bfa7ce1bd9771b207c48ff19d515d76",
+      "outputHash": "sha256:34f33e57635c951a98b5edc59dc73de7e0da5383eb0036cbf6907490e76720b7",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 58588,
+        "outputHash": "sha256:376849324e50e143864f0a310eac7088d7332c9a3ebb1b3d31fe2f1e1e4fe17b"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/02-forum-147.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 115162,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2e7fe23c65e31a2fca752945e01f4c238244c256bb68c83fa734b44b99297681",
+      "outputHash": "sha256:6488676ebb0b60b1967089459194f0847b06d0ca9cf781becdf6b3c6d609777a",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/02-forum-147-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 48234,
+        "outputHash": "sha256:840f5e4dde8bc8b1e9d9501a3cbc1b7248f3fb4fffcf1125e6d07a0fe6e37980"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/03-forum-083.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 146176,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:67a7105ec151e44ec8809fd387715b65fe7338af05e2f9fbd2c5ca70cb2d7834",
+      "outputHash": "sha256:236cd6fdaa0b1e5805fbbd30b50214d346c746814509cd9f5fa431eee622180c",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/03-forum-083-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 50934,
+        "outputHash": "sha256:266270494d6188a37ef3bd19c0b096cca7c6f573d40ea42f2d5f961c617c5024"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/04-forum-129.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 106868,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bb417ff815994eb6a4e18607668148b6b007003bcf1d4e2f93cd932075238b69",
+      "outputHash": "sha256:e43678733a607d1a59724bddc4823d704e79b8f9e2d02e8a06318a957ed2065e",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/04-forum-129-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 40210,
+        "outputHash": "sha256:27a37ad962b3a8a2108cf2b821a023b5f65ce5544d58bff0f9846ad00087cc8c"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/05-forum-235.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 159428,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3a183df0090a84f204e4d8349ba8d9927ac86f9d441e90b9da4add5c8ad8c4eb",
+      "outputHash": "sha256:78fe93745a2f77c73b4af2efa923643adcf53646abba58aeae19aa5dea2a9578",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/05-forum-235-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 60522,
+        "outputHash": "sha256:17d2ec6d73c732bd569814ac0935c1e1732556eb32d199eb2a2a2f6354393363"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/06-forum-261.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 132516,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fc4c6d6c6f310ad5f819f80055718b0e7345b727bf31541cebd05a1985a9bf3a",
+      "outputHash": "sha256:cd0273214e59c9a42da6e31e0201ed6bad54fc6d4872ef9785c75b77575f59a2",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/06-forum-261-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 53344,
+        "outputHash": "sha256:523e199be26199554cd31de7249bedd1dcf7be75b51c0b88d7300ebd72669ffe"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/07-forum-208.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 159886,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:25556c467f6a9d740465e4f4c8210cfd8f7bdd3609c82eda9e89b16967d84d36",
+      "outputHash": "sha256:d247bf4d8bfa7b53c61dc35b962b30a62192c62f11db016a780921b18b5c3cf0",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/07-forum-208-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 59898,
+        "outputHash": "sha256:1b38b183b326145fa4fb0229cebf601c96c3f3c77542f03e842f22abd87abbe2"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/08-forum-181.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 142036,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:98cd9c01b0d5ee453091a11e86e18340b5425991c79d9d3bc1a1aad751a466b9",
+      "outputHash": "sha256:bab7cb304c42fc2326cc86115ec69fc0ffd84746560771ee1c9d7674bdd644f2",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/08-forum-181-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 59590,
+        "outputHash": "sha256:71fb6e613440b161977c2000fdb9b7aaff76873a65ba8b2e0798b32ef53a733a"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/09-forum-087.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 113828,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:916c07f9a1e0ec4c770da3b25a1dd89acbf7b1d609c9188914ad3f072445112d",
+      "outputHash": "sha256:e0a7963ed1378e36ac24d6cb2fbb3cf697fc28e57ac7debbb8fdab61926b39a6",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/09-forum-087-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 50086,
+        "outputHash": "sha256:1ac25b490ac879307295f6a3ee5989963f3a5e6ee966853a5ed138e9de08a4b0"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/10-forum-106.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 85660,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b64722ec0fa05194220023f00538cc82433a0a6043d3e6d6fffabd4a45efc445",
+      "outputHash": "sha256:5f509e0e65bdd922a75029b959cc5b145cfa0942f8ebafab73e4ec76b851dc9c",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/10-forum-106-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 37868,
+        "outputHash": "sha256:7ce0f44b89265af02ce45054efd2cf58e8c9aa05eea0843992515fe8cc40abcd"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/11-forum-114.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 79364,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b44aad30229f680ecd5d76ef1da740785cae1dc3e3d7f1edc3a770679538028d",
+      "outputHash": "sha256:f6ea738308c708f4e2b6997a2a6f05d4bc67ddb52906451c3c33c2ca09859ed0",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/11-forum-114-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 34082,
+        "outputHash": "sha256:febf678211a01b51ac7cb2335aa4ca926eb04cb89affbe6c9c212a665b3ccd63"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/12-forum-142.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 95300,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:37d53cd903ed7031fef842db73ef8d6fa1735b08e35d162e2d51955edf20b15c",
+      "outputHash": "sha256:306d9552430266fbe7c9148d15b0b549f7901e57787ce75f84279d926445791f",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/12-forum-142-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 42102,
+        "outputHash": "sha256:e59d04155ed6af90385e0751b1139a8713d73123f6fc79de960d1e88118aa94d"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/13-forum-192.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 100724,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7198189cf4778b3e8d6bb81f0df13ddfb81e96b2906e2cc3bc043a386c95b352",
+      "outputHash": "sha256:d652f5c0d9b3181fcc438727eb5a60be15932916d7f5a5c8b8480b18066616cc",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/13-forum-192-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 42432,
+        "outputHash": "sha256:cf61c04d980c37a8de9e5b63bfbdd2d6a92da56498b96d31d057e3bbf61ce26c"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/14-forum-175.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 200952,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c5a1d6363c36040c3e12ce692814a5068dc135825053f35174e94c3b974b6800",
+      "outputHash": "sha256:cc62b2ac3c2a1ae270a85744a0d7e9ba867111df41bb5b21dc180b7e76813bb2",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/14-forum-175-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 77120,
+        "outputHash": "sha256:dcc196717a8b9ff1a436e3ebf9bb6c4ab58af679b8a8d573725b5393c704337e"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/15-forum-058.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 152288,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:076b556a78d540057b882e9518bd8dd188657cb414ba224d755468d00e2a37d6",
+      "outputHash": "sha256:e693065c577c2baadd00d9be6b5518b8d3359a2d6f6b7b461585dbdd5dabd668",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/15-forum-058-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 56720,
+        "outputHash": "sha256:b85d97689207f5544ada9415b09b070264a6dcb11192e7c95eeb2d9b7113ca81"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/16-forum-041.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 142640,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2459ffce9debe450c437dd40b74e188a153b3fb37a8dabb202bde641de9114a2",
+      "outputHash": "sha256:f3975f700429c40348cf36ac80add0af38743761663a65c9af0c95e74eee59a8",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/16-forum-041-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 57266,
+        "outputHash": "sha256:1eaea1eae33ebbe5ebb0c088e5e1b0f3be33db640b396c9ad6e3087614953177"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/17-forum-277.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 163584,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:53076a9ec00cf95023fadf2384313a6002aff0c28cb2bff1fb42f1a49d35113a",
+      "outputHash": "sha256:67bee0246806a2f7724daa3262e8cd435c9d053141d660f0f6661e560c12ac2a",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/17-forum-277-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 65224,
+        "outputHash": "sha256:d91390aa3685448d8e4b0f2b28374b6a2b00e686c29f5123ace6065644172bcd"
+      }
+    },
+    "/images/articles/about-denny-shenzhen-august-2025/18-forum-079.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 181258,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1b284abc5985987fa74d85ca8fa93544b0082c477597d1e911ef7d2965204f9c",
+      "outputHash": "sha256:298a2650a09a2fb658f9e0aec0acc7ee419947af1879a56d5ad2b90bf5222c84",
+      "mobile": {
+        "src": "/images/articles/about-denny-shenzhen-august-2025/18-forum-079-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 69076,
+        "outputHash": "sha256:c8e312de1cc54e8fe551692f8f07ecb48f0e8c7fdaf3391db0ac8e93a5856a43"
+      }
+    },
     "/images/articles/about-denny-speaking/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -37551,6 +37875,30 @@
         "/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"
       ]
     },
+    "about-denny-shenzhen-august-2025": {
+      "pageRoute": "/about",
+      "budgetClass": "deep",
+      "cover": "/images/articles/about-denny-shenzhen-august-2025/01-cover.webp",
+      "body": [
+        "/images/articles/about-denny-shenzhen-august-2025/02-forum-147.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/03-forum-083.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/04-forum-129.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/05-forum-235.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/06-forum-261.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/07-forum-208.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/08-forum-181.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/09-forum-087.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/10-forum-106.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/11-forum-114.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/12-forum-142.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/13-forum-192.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/14-forum-175.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/15-forum-058.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/16-forum-041.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/17-forum-277.webp",
+        "/images/articles/about-denny-shenzhen-august-2025/18-forum-079.webp"
+      ]
+    },
     "about-denny-speaking": {
       "pageRoute": "/about",
       "budgetClass": "standard",
@@ -42961,6 +43309,100 @@
           "status": "matched",
           "primary": "/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp",
           "hash": "sha256:2b6553f7ed7dd70e048ff730bbfc2c1328e626978a8883261c0cc9a10f854dc8"
+        }
+      }
+    },
+    "about-denny-shenzhen-august-2025": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/01-cover.webp",
+          "hash": "sha256:3715cc4137a533764cb0cb30470393a63bfa7ce1bd9771b207c48ff19d515d76"
+        },
+        "02-forum-147.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/02-forum-147.webp",
+          "hash": "sha256:2e7fe23c65e31a2fca752945e01f4c238244c256bb68c83fa734b44b99297681"
+        },
+        "03-forum-083.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/03-forum-083.webp",
+          "hash": "sha256:67a7105ec151e44ec8809fd387715b65fe7338af05e2f9fbd2c5ca70cb2d7834"
+        },
+        "04-forum-129.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/04-forum-129.webp",
+          "hash": "sha256:bb417ff815994eb6a4e18607668148b6b007003bcf1d4e2f93cd932075238b69"
+        },
+        "05-forum-235.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/05-forum-235.webp",
+          "hash": "sha256:3a183df0090a84f204e4d8349ba8d9927ac86f9d441e90b9da4add5c8ad8c4eb"
+        },
+        "06-forum-261.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/06-forum-261.webp",
+          "hash": "sha256:fc4c6d6c6f310ad5f819f80055718b0e7345b727bf31541cebd05a1985a9bf3a"
+        },
+        "07-forum-208.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/07-forum-208.webp",
+          "hash": "sha256:25556c467f6a9d740465e4f4c8210cfd8f7bdd3609c82eda9e89b16967d84d36"
+        },
+        "08-forum-181.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/08-forum-181.webp",
+          "hash": "sha256:98cd9c01b0d5ee453091a11e86e18340b5425991c79d9d3bc1a1aad751a466b9"
+        },
+        "09-forum-087.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/09-forum-087.webp",
+          "hash": "sha256:916c07f9a1e0ec4c770da3b25a1dd89acbf7b1d609c9188914ad3f072445112d"
+        },
+        "10-forum-106.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/10-forum-106.webp",
+          "hash": "sha256:b64722ec0fa05194220023f00538cc82433a0a6043d3e6d6fffabd4a45efc445"
+        },
+        "11-forum-114.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/11-forum-114.webp",
+          "hash": "sha256:b44aad30229f680ecd5d76ef1da740785cae1dc3e3d7f1edc3a770679538028d"
+        },
+        "12-forum-142.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/12-forum-142.webp",
+          "hash": "sha256:37d53cd903ed7031fef842db73ef8d6fa1735b08e35d162e2d51955edf20b15c"
+        },
+        "13-forum-192.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/13-forum-192.webp",
+          "hash": "sha256:7198189cf4778b3e8d6bb81f0df13ddfb81e96b2906e2cc3bc043a386c95b352"
+        },
+        "14-forum-175.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/14-forum-175.webp",
+          "hash": "sha256:c5a1d6363c36040c3e12ce692814a5068dc135825053f35174e94c3b974b6800"
+        },
+        "15-forum-058.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/15-forum-058.webp",
+          "hash": "sha256:076b556a78d540057b882e9518bd8dd188657cb414ba224d755468d00e2a37d6"
+        },
+        "16-forum-041.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/16-forum-041.webp",
+          "hash": "sha256:2459ffce9debe450c437dd40b74e188a153b3fb37a8dabb202bde641de9114a2"
+        },
+        "17-forum-277.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/17-forum-277.webp",
+          "hash": "sha256:53076a9ec00cf95023fadf2384313a6002aff0c28cb2bff1fb42f1a49d35113a"
+        },
+        "18-forum-079.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-shenzhen-august-2025/18-forum-079.webp",
+          "hash": "sha256:1b284abc5985987fa74d85ca8fa93544b0082c477597d1e911ef7d2965204f9c"
         }
       }
     },

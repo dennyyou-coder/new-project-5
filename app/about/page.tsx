@@ -17,6 +17,26 @@ function photo(src: string, caption: string): ProfilePhoto {
   return { src, caption, ...image };
 }
 const galleryPhotos: Record<string, ProfilePhoto[]> = {
+"about-denny-shenzhen-august-2025": [
+photo("/images/articles/about-denny-shenzhen-august-2025/01-cover.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Full-room view"),
+photo("/images/articles/about-denny-shenzhen-august-2025/02-forum-147.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Forum stage and audience"),
+photo("/images/articles/about-denny-shenzhen-august-2025/03-forum-083.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Denny You on stage"),
+photo("/images/articles/about-denny-shenzhen-august-2025/04-forum-129.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Denny discussing overseas channels"),
+photo("/images/articles/about-denny-shenzhen-august-2025/05-forum-235.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Roundtable discussion"),
+photo("/images/articles/about-denny-shenzhen-august-2025/06-forum-261.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Exchange between panelists"),
+photo("/images/articles/about-denny-shenzhen-august-2025/07-forum-208.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Industry presentation and audience"),
+photo("/images/articles/about-denny-shenzhen-august-2025/08-forum-181.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Guest presentation"),
+photo("/images/articles/about-denny-shenzhen-august-2025/09-forum-087.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Participants in the front rows"),
+photo("/images/articles/about-denny-shenzhen-august-2025/10-forum-106.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Industry professionals listening"),
+photo("/images/articles/about-denny-shenzhen-august-2025/11-forum-114.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Audience during the forum"),
+photo("/images/articles/about-denny-shenzhen-august-2025/12-forum-142.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Views across the audience"),
+photo("/images/articles/about-denny-shenzhen-august-2025/13-forum-192.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Participants following the discussion"),
+photo("/images/articles/about-denny-shenzhen-august-2025/14-forum-175.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Participants together on stage"),
+photo("/images/articles/about-denny-shenzhen-august-2025/15-forum-058.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Conversations outside the auditorium"),
+photo("/images/articles/about-denny-shenzhen-august-2025/16-forum-041.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Product and supplier discussions"),
+photo("/images/articles/about-denny-shenzhen-august-2025/17-forum-277.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 Denny with forum participants"),
+photo("/images/articles/about-denny-shenzhen-august-2025/18-forum-079.webp", "9 August 2025 \u00b7 Shenzhen \u00b7 A wide view of the gathering")
+],
 "about-denny-speaking": [
 photo("/images/articles/about-denny-speaking/01-cover.webp", "CITIC Securities · “A century of cleaning appliances”"),
 photo("/images/articles/about-denny-speaking/02-photo-0.webp", "GF Securities · Cleaning appliances before the dawn"),
@@ -266,19 +286,13 @@ export default function AboutPage() {
 </div>
 </div>
 <ProfileGallery label="JUL 2025 · SUZHOU photo gallery" photos={galleryPhotos["about-denny-forum-2025"]} /></article>
-<article className="event" hidden id="august-2025-pending"><div className="event-intro"><span className="date">AUG 2025 · SHENZHEN</span>
+<article className="event" id="august-2025"><div className="event-intro"><span className="date">9 AUG 2025 · SHENZHEN</span>
 <h3>The conversation continued in Shenzhen.</h3>
-<span className="event-badge">500 participants</span>
-<p>The August industry forum brought together 500 professionals in Shenzhen, including representatives from many leading cleaning companies. The July and August forums connected brands, manufacturers and supply-chain partners.</p>
+<div className="event-facts"><div><strong>500</strong><span>industry participants</span></div><div><strong>Shenzhen</strong><span>9 August 2025</span></div></div>
+<div className="event-body"><p>The fourth Cleaning Appliance Industry Forum brought 500 professionals together in Shenzhen under the theme “The Age of Global Expansion.” Brands, manufacturers and supply-chain partners joined presentations and a roundtable on products, technology and overseas markets.</p>
+<p>From a full auditorium to product discussions outside the main room, the gathering connected industry knowledge with face-to-face exchange. These photographs show the speakers, audience and conversations behind the event.</p></div>
 </div>
-<div className="forum-record"><span className="eyebrow">SHENZHEN · INDUSTRY FORUM</span>
-<strong>500<span>industry participants</span>
-</strong>
-<div className="record-line">Brands · Manufacturers · Supply-chain partners</div>
-<blockquote>“The two industry forums in July and August each brought together nearly 500 people.”</blockquote>
-<p>From Denny’s archive: 清洁电器供应链技术展</p>
-</div>
-</article>
+<ProfileGallery label="AUG 2025 · SHENZHEN photo gallery" photos={galleryPhotos["about-denny-shenzhen-august-2025"]} /></article>
 <article className="event"><div className="event-intro"><span className="date">NOV 2025 · FIRST EDITION</span>
 <h3>The first Cleaning Appliance Supply Chain Technology Exhibition.</h3>
 <div className="event-facts event-facts-three"><div><strong>100+</strong>
