@@ -1,7 +1,9 @@
-import { siteVisualProps } from "@/lib/siteVisuals";
 import type { Metadata } from "next";
-import Link from "next/link";
-import "../styles/approved-platform.css";
+import { getArticleImage } from "@/lib/articleImages";
+import { siteVisualProps } from "@/lib/siteVisuals";
+import ExpoHistory from "./ExpoHistory";
+import history from "./history-data.json";
+import "./expo-story.css";
 
 export const metadata: Metadata = {
   title: "WCB Expo 2026 | Suzhou",
@@ -13,314 +15,492 @@ export const metadata: Metadata = {
     description:
       "Meet cleaning appliance brands, manufacturers, supply-chain companies and industry professionals in Suzhou, China.",
     url: "/wcb-expo",
-    images: ["/images/site-refresh/2026-09-products/expo-wide.webp"]
+    images: ["/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "2026 WCB International Cleaning Appliance Expo",
     description: "18–20 November 2026 · Suzhou, China",
-    images: ["/images/site-refresh/2026-09-products/expo-wide.webp"]
+    images: ["/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"]
   }
 };
 
-const categories = [
-  {
-    title: "Robot Vacuums",
-    image: "/images/site-refresh/2026-09-commercial/01-robot-vacuum.webp",
-    alt: "Robot vacuum product category"
-  },
-  {
-    title: "Floor Washers",
-    image: "/images/site-refresh/2026-09-commercial/02-floor-washer.webp",
-    alt: "Wet and dry floor washer product category"
-  },
-  {
-    title: "Vacuum Cleaners",
-    image: "/images/site-refresh/2026-09-commercial/06-vacuum-cleaner.webp",
-    alt: "Cordless vacuum cleaner product category"
-  },
-  {
-    title: "Pool Robots",
-    image: "/images/site-refresh/2026-09-commercial/03-pool-robot.webp",
-    alt: "Robotic pool cleaner product category"
-  },
-  {
-    title: "Lawn Robots",
-    image: "/images/site-refresh/2026-09-commercial/04-lawn-robot.webp",
-    alt: "Robotic lawn mower product category"
-  },
-  {
-    title: "Commercial Cleaning",
-    image: "/images/site-refresh/2026-09-commercial/05-commercial-cleaning.webp",
-    alt: "Commercial cleaning equipment category"
-  },
-  {
-    title: "Components & Accessories",
-    image: "/images/site-refresh/2026-09-commercial/15-components-detail.webp",
-    alt: "Cleaning appliance components and accessories"
-  }
-];
 
-const visitReasons = [
-  {
-    title: "See New Products Up Close",
-    text: "Compare cleaning appliances, robotics and new product platforms in one focused setting.",
-    image: "/images/industry/sourcing-hero-expo-products-2026.jpg",
-    alt: "Cleaning appliances and robotics displayed at an industry exhibition"
-  },
-  {
-    title: "Meet The Companies Building Them",
-    text: "Speak directly with brands, complete-machine manufacturers and the teams behind new products.",
-    image: "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
-    alt: "Cleaning industry companies meeting around an exhibition booth"
-  },
-  {
-    title: "Connect With The Supply Chain",
-    text: "Find components, materials, technologies and manufacturing partners across the value chain.",
-    image: "/images/industry/sourcing-product-components-2025.jpg",
-    alt: "Cleaning appliance components and supply-chain technologies"
-  },
-  {
-    title: "Hear Where The Industry Is Going",
-    text: "Join focused discussions about product direction, channels, technology and market change.",
-    image: "/images/industry/expo-forum-audience-2026.jpg",
-    alt: "Audience at a cleaning industry forum"
-  }
-];
+const events = history.events.map(event => ({
+  ...event,
+  photos: history.galleries[event.id as keyof typeof history.galleries].map(photo => ({
+    ...photo, ...getArticleImage(photo.src)!
+  }))
+}));
 
-const gatheringImages = [
-  {
-    image: "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
-    alt: "Cleaning appliance suppliers at a previous WCB industry gathering"
-  },
-  {
-    image: "/images/industry/expo-business-matching-2026.jpg",
-    alt: "Business matchmaking at a previous WCB industry gathering"
-  },
-  {
-    image: "/images/industry/expo-forum-audience-2026.jpg",
-    alt: "Forum audience at a previous WCB industry gathering"
-  },
-  {
-    image: "/images/industry/home-expo-networking-2025.jpg",
-    alt: "Industry networking at a previous WCB gathering"
-  }
-];
-
-const programs = [
-  {
-    title: "Industry Forums",
-    text: "Hear focused discussions on products, technology, channels and the next cleaning-industry cycle.",
-    image: "/images/industry/expo-forum-audience-2026.jpg",
-    alt: "Cleaning industry forum audience"
-  },
-  {
-    title: "Procurement Matchmaking",
-    text: "Create more relevant conversations between qualified buyers, brands, factories and supply-chain partners.",
-    image: "/images/industry/expo-business-matching-2026.jpg",
-    alt: "Cleaning industry procurement matchmaking meeting"
-  },
-  {
-    title: "New Product Launches",
-    text: "See new cleaning appliances, product platforms and enabling technologies in one focused setting.",
-    image: "/images/industry/expo-booth-cleaning-suppliers-2026.jpg",
-    alt: "New cleaning products displayed at an industry exhibition"
-  }
-];
+function ExpoImage({ src, alt, sizes = "(max-width: 760px) 90vw, (max-width: 1380px) 45vw, 620px", priority = false }: {
+  src: string; alt: string; sizes?: string; priority?: boolean;
+}) {
+  const image = src.startsWith("/images/articles/") ? getArticleImage(src) : undefined;
+  const props = image ? {
+    src, width: image.width, height: image.height, sizes,
+    srcSet: image.mobile ? `${image.mobile.src} ${image.mobile.width}w, ${src} ${image.width}w` : undefined
+  } : siteVisualProps(src, sizes);
+  return <img {...props} alt={alt} loading={priority ? "eager" : "lazy"}
+    fetchPriority={priority ? "high" : "auto"} decoding="async" />;
+}
 
 export default function WcbExpoPage() {
   return (
-    <div className="approved-platform wcb-expo-page">
-      <section className="wcb-expo-hero">
-        <div className="wcb-expo-shell wcb-expo-hero-content">
-          <div className="wcb-expo-hero-copy">
-          <p className="wcb-expo-kicker">2026 WCB Expo Is Now In Preparation</p>
-          <h1>WCB Expo 2026</h1>
-          <p>WCB International Cleaning Appliance Expo</p>
-          <p className="wcb-expo-chinese">2026 WCB 国际清洁电器博览会</p>
-
-          <p className="wcb-expo-hero-intro">
-            The show is taking shape now. We welcome buyers, distributors, brands,
-            manufacturers and industry professionals to see new products, meet the
-            companies behind them and build new connections in Suzhou.
-          </p>
-          <div className="wcb-expo-event-facts" aria-label="Event date and venue">
-            <strong>18–20 November 2026</strong>
-            <span>Suzhou Shishan Convention Center</span>
-            <span>Suzhou, China</span>
-          </div>
-          <div className="wcb-expo-hero-actions">
-            <Link className="button" href="/contact?inquiry=expo_visitor#project-form">Plan Your Visit</Link>
-            <Link className="button-secondary" href="/contact?inquiry=expo_exhibitor#project-form">
-              Exhibiting &amp; Partnerships
-            </Link>
-          </div>
-          </div>
-          <figure className="wcb-expo-hero-photo">
-            <img
-              src="/images/industry/home-expo-networking-2025.jpg"
-              alt="Scenes from previous WCB industry gatherings"
-            />
-            <figcaption>Scenes From Previous WCB Industry Gatherings</figcaption>
-          </figure>
-        </div>
-      </section>
-
-
-
-      <section className="wcb-expo-why" aria-labelledby="expo-why-title">
-        <div className="wcb-expo-shell">
-          <div className="wcb-expo-section-head">
-            <p className="wcb-expo-section-label">WHY VISIT WCB EXPO?</p>
-            <h2 id="expo-why-title">See More Of The Industry In One Visit</h2>
-            <p>Move from online research to direct product comparison, practical conversations and new industry relationships.</p>
-          </div>
-          <div className="wcb-expo-why-grid">
-            {visitReasons.map((reason) => (
-              <article className="wcb-expo-why-card" key={reason.title}>
-                <img src={reason.image} alt={reason.alt} loading="lazy" />
-                <div>
-                  <h3>{reason.title}</h3>
-                  <p>{reason.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="wcb-expo-proof" aria-labelledby="expo-proof-title">
-        <div className="wcb-expo-shell wcb-expo-proof-grid">
-          <div className="wcb-expo-proof-copy">
-            <p className="wcb-expo-section-label">BUILT FROM REAL INDUSTRY GATHERINGS</p>
-            <h2 id="expo-proof-title">A Focused Meeting Point For The Cleaning Appliance Industry</h2>
-            <p>
-              WCB brings together product companies and the supply chain behind them.
-              The 2026 expo builds on two prior WCB supply-chain events in Suzhou.
-            </p>
-          </div>
-          <div className="wcb-expo-editions" aria-label="Organizer records from prior events">
-            <article>
-              <span>November 2025</span>
-              <strong>WCB Supply-Chain Event</strong>
-            </article>
-            <article>
-              <span>March 2026</span>
-              <strong>WCB Supply-Chain Event</strong>
-            </article>
-          </div>
-          <div className="wcb-expo-proof-numbers">
-            <p className="expo-records-qualifier">Prior-event records · November 2025 and March 2026</p>
-            <article><strong>100+</strong><span>Exhibitors at each event</span></article>
-            <article><strong>1,000+</strong><span>Visitors at each event</span></article>
-            <p>Source: organizer records from the two prior WCB supply-chain events.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="wcb-expo-gallery" aria-labelledby="expo-gallery-title">
-        <div className="wcb-expo-shell">
-          <div className="wcb-expo-section-head">
-            <p className="wcb-expo-section-label">REAL WCB EVENT MOMENTS</p>
-            <h2 id="expo-gallery-title">Scenes From Previous WCB Industry Gatherings</h2>
-            <p>These photographs are from earlier WCB supply-chain events and show the focused industry conversations the 2026 Expo is building on.</p>
-          </div>
-          <div className="wcb-expo-gallery-grid">
-            {gatheringImages.map((item) => (
-              <figure key={item.image}>
-                <img src={item.image} alt={item.alt} loading="lazy" />
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="wcb-expo-categories" aria-labelledby="expo-categories-title">
-        <div className="wcb-expo-shell">
-          <div className="wcb-expo-section-head wcb-expo-section-head-light">
-            <p className="wcb-expo-section-label">ONE INDUSTRY · ONE PLACE</p>
-            <h2 id="expo-categories-title">Everything In Cleaning Appliances</h2>
-            <p>Compare established categories, fast-moving robotics and the technologies connecting them.</p>
-          </div>
-          <div className="wcb-expo-category-grid">
-            {categories.map((category) => (
-              <article className="wcb-expo-category-card" key={category.title}>
-                <img {...siteVisualProps(category.image, "(max-width: 760px) 100vw, 33vw")} alt={category.alt} loading="lazy" />
-                <strong>{category.title}</strong>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
-
-      <section className="wcb-expo-programs" aria-labelledby="expo-programs-title">
-        <div className="wcb-expo-shell">
-          <div className="wcb-expo-section-head wcb-expo-section-head-light">
-            <p className="wcb-expo-section-label">MORE THAN A SHOW FLOOR</p>
-            <h2 id="expo-programs-title">Programs Built Around Better Industry Decisions</h2>
-          </div>
-          <div className="wcb-expo-program-grid">
-            {programs.map((program) => (
-              <article key={program.title}>
-                <img src={program.image} alt={program.alt} loading="lazy" />
-                <div>
-                  <h3>{program.title}</h3>
-                  <p>{program.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="wcb-expo-organizer" aria-labelledby="expo-organizer-title">
-        <div className="wcb-expo-shell wcb-expo-organizer-grid">
-          <img
-            src="/images/industry/about-denny-speaking-forum-2025.jpg"
-            alt="Denny You speaking to cleaning industry professionals"
-            loading="lazy"
-          />
-          <div>
-            <p className="wcb-expo-section-label">ORGANIZER &amp; INDUSTRY NETWORK</p>
-            <h2 id="expo-organizer-title">Industry Access Built Over Time</h2>
-            <p>
-              Denny You, founder of World Clean Biz and organizer of WCB Expo,
-              has worked inside the cleaning industry since 2006. His network
-              connects manufacturers, suppliers, brands, buyers, investors and media.
-            </p>
-            <Link href="/about">About Denny and World Clean Biz</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="expo-invitations" aria-label="Visitor and exhibitor interest">
-        <div className="wcb-expo-shell expo-invitation-shell">
-          <figure className="expo-invitation-photo">
-            <img src="/images/industry/expo-business-matching-2026.jpg" alt="Cleaning industry professionals meeting at a previous WCB gathering" loading="lazy" width={2200} height={1651} />
-            <figcaption>Scenes From Previous WCB Industry Gatherings</figcaption>
-          </figure>
-          <div className="expo-invitation-columns">
-            <article className="wcb-expo-visit wcb-expo-final-invitation" id="visitor-interest" aria-labelledby="expo-visit-title">
-              <div className="expo-invitation-copy"><div>
-                <p className="wcb-expo-section-label">PLAN YOUR VISIT</p>
-                <h2 id="expo-visit-title">Join The Global Cleaning Appliance Industry In Suzhou</h2>
-                <p>Tell us what products, suppliers or partnerships you want to explore. We will share relevant visitor and event updates as they become available.</p>
-                <div className="wcb-expo-visit-meta"><strong>18–20 November 2026</strong><span>Suzhou Shishan Convention Center · Suzhou, China</span></div>
-                <Link className="button" href="/contact?inquiry=expo_visitor#project-form">Register Visitor Interest</Link>
-              </div></div>
-            </article>
-            <article className="wcb-expo-exhibit" id="exhibitor-interest">
-              <div className="expo-invitation-copy"><div>
-                <p className="wcb-expo-section-label">FOR EXHIBITORS &amp; PARTNERS</p>
-                <h2>Present Your Products To A Focused Industry Audience</h2>
-                <p>Request current participation, booth and partnership information from the organizing team.</p>
-              </div><Link className="button-secondary" href="/contact?inquiry=expo_exhibitor#project-form">Request Exhibitor Information</Link></div>
-            </article>
-          </div>
-        </div>
-      </section>
+<div id="wcb-expo-story">
+ <section className="v6-hero" id="wcb2026">
+  <div className="shell v6-hero-grid">
+   <div>
+    <span className="eyebrow">
+     01 / WCB EXPO 2026
+    </span>
+    <h1>
+     The cleaning industry,
+     <br/>
+     in one place.
+    </h1>
+    <p className="v6-lead">
+     An exhibition for cleaning appliances and their supply chains—bringing brands, manufacturers, technology companies and professional buyers together.
+    </p>
+    <p className="v6-date">
+     <strong>
+      18–20 November 2026
+     </strong>
+     <span>
+      Suzhou Shishan Convention Center · Suzhou, China
+     </span>
+    </p>
+   </div>
+   <figure>
+    <ExpoImage alt="Official WCB 2026 exhibition artwork" priority src="/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"/>
+    <figcaption>
+     WCB International Cleaning Appliance Expo 2026
+    </figcaption>
+   </figure>
+  </div>
+ </section>
+ <nav aria-label="Page sections" className="story-nav">
+  <div className="shell">
+   <a href="#wcb2026">
+    WCB 2026
+   </a>
+   <a href="#origins">
+    Our story
+   </a>
+   <a href="#showcase">
+    Products &amp; people
+   </a>
+   <a href="#programme">
+    On site
+   </a>
+   <a href="#schedule">
+    Plan your visit
+   </a>
+  </div>
+ </nav>
+ <section className="shell section" id="origins">
+  <div className="section-head">
+   <div>
+    <span className="eyebrow">
+     02 / OUR STORY
+    </span>
+    <h2>
+     Built through years of bringing
+     <br/>
+     the industry together.
+    </h2>
+   </div>
+   <p>
+    From the first forums in 2019 to supply-chain exhibitions and procurement meetings. Explore each edition below.
+   </p>
+  </div>
+  <ExpoHistory events={events} />
+  <div className="story-summary">
+   <h3>
+    Rooted in the industry.
+   </h3>
+   <p>
+    Founded by Denny You, a cleaning-industry practitioner since 2006, WCB connects finished products with their supply chains—and keeps the conversation going through industry writing, videos and face-to-face events.
+   </p>
+  </div>
+ </section>
+ <section className="shell section" id="showcase">
+  <div className="v6-heading">
+   <span className="eyebrow">
+    03 / PRODUCTS &amp; PEOPLE
+   </span>
+   <h2>
+    From finished appliances
+    <br/>
+    to the people behind them.
+   </h2>
+  </div>
+  <div className="v6-trio">
+   <article>
+    <figure>
+     <ExpoImage alt="Cleaning appliances" sizes="(max-width: 760px) 90vw, (max-width: 1380px) 29vw, 400px" src="/images/site-refresh/2026-09-commercial/01-robot-vacuum.webp"/>
+     <figcaption>
+      Product category illustration
+     </figcaption>
+    </figure>
+    <h3>
+     Cleaning appliances
+    </h3>
+    <p>
+     Robot vacuums, floor washers, vacuum cleaners and window-cleaning robots, plus pool cleaners, robotic mowers, commercial cleaning equipment and pressure washers.
+    </p>
+   </article>
+   <article>
+    <figure>
+     <ExpoImage alt="Components &amp; technology" sizes="(max-width: 760px) 90vw, (max-width: 1380px) 29vw, 400px" src="/images/articles/about-denny-expo-2025/18-photo-78.webp"/>
+     <figcaption>
+      November 2025 · Component displays
+     </figcaption>
+    </figure>
+    <h3>
+     Components &amp; technology
+    </h3>
+    <p>
+     Motors, batteries, pumps, valves, sensors and materials. Discuss technical requirements and manufacturing capabilities with supply-chain partners.
+    </p>
+   </article>
+   <article>
+    <figure>
+     <ExpoImage alt="Industry partners" sizes="(max-width: 760px) 90vw, (max-width: 1380px) 29vw, 400px" src="/images/articles/about-denny-expo-2026/03-photo-82.webp"/>
+     <figcaption>
+      March 2026 · Shenzhen exhibition
+     </figcaption>
+    </figure>
+    <h3>
+     Industry partners
+    </h3>
+    <p>
+     Brands and manufacturers meet R&amp;D and procurement teams, distributors and channel partners to explore products, suppliers and new cooperation.
+    </p>
+   </article>
+  </div>
+ </section>
+ <section className="v6-onsite" id="programme">
+  <div className="shell section">
+   <div className="v6-heading">
+    <span className="eyebrow">
+     04 / ON SITE
+    </span>
+    <h2>
+     See the products.
+     <br/>
+     Join the conversations.
+    </h2>
+   </div>
+   <div className="v6-trio">
+    <article>
+     <figure>
+      <ExpoImage alt="Industry forums" sizes="(max-width: 760px) 90vw, (max-width: 1380px) 29vw, 400px" src="/images/articles/about-denny-expo-2026/01-cover.webp"/>
+      <figcaption>
+       March 2026 · Shenzhen forum
+      </figcaption>
+     </figure>
+     <h3>
+      Industry forums
+     </h3>
+     <p>
+      Hear entrepreneurs and industry experts discuss technology, supply chains and international markets. Two sessions are planned for 18 November, free for visitors.
+     </p>
+    </article>
+    <article>
+     <figure>
+      <ExpoImage alt="Procurement matchmaking" sizes="(max-width: 760px) 90vw, (max-width: 1380px) 29vw, 400px" src="/images/industry/expo-business-matching-2026.jpg"/>
+      <figcaption>
+       March 2026 · Procurement discussions
+      </figcaption>
+     </figure>
+     <h3>
+      Procurement matchmaking
+     </h3>
+     <p>
+      Meet around specific product and sourcing requirements. A dedicated session connects exhibitors with invited purchasing teams.
+     </p>
+    </article>
+    <article>
+     <figure>
+      <ExpoImage alt="New product launches" sizes="(max-width: 760px) 90vw, (max-width: 1380px) 29vw, 400px" src="/images/articles/about-denny-expo-2026/11-photo-97.webp"/>
+      <figcaption>
+       March 2026 · Product presentation
+      </figcaption>
+     </figure>
+     <h3>
+      New product launches
+     </h3>
+     <p>
+      Discover products and enabling technologies through exhibitor presentations, with two sessions planned across 19–20 November.
+     </p>
+    </article>
+   </div>
+   <div className="v6-extras" id="networking">
+    <article className="v8-extra">
+     <figure className="v8-thumb">
+      <ExpoImage alt="Illustration of professionals at a networking dinner" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/wcb-expo-programme/01-cover.webp"/>
+      <figcaption>
+       AI illustration
+      </figcaption>
+     </figure>
+     <p>
+      <strong>
+       Exhibitor dinner
+      </strong>
+      A networking evening on 18 November for exhibitors and invited guests; attendance arranged in advance.
+     </p>
+    </article>
+    <article className="v8-extra">
+     <figure className="v8-thumb">
+      <ExpoImage alt="Illustration of an exhibitor catalogue and digital directory" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/wcb-expo-programme/02-exhibitor-directory.webp"/>
+      <figcaption>
+       AI illustration
+      </figcaption>
+     </figure>
+     <p>
+      <strong>
+       Exhibitor directory
+      </strong>
+      Company introductions help visitors find relevant businesses and continue conversations after the show.
+     </p>
+    </article>
+   </div>
+  </div>
+ </section>
+ <section className="shell section" id="schedule">
+  <div className="v7-schedule-head">
+   <div>
+    <span className="eyebrow">
+     05 / PLAN YOUR VISIT
+    </span>
+    <h2>
+     Your three days at WCB.
+    </h2>
+   </div>
+   <p className="v7-exhibition">
+    <b>
+     Exhibition open across all three days
+    </b>
+    <span>
+     18–20 November 2026 · Suzhou
+    </span>
+   </p>
+  </div>
+  <div aria-label="Proposed WCB Expo programme" className="v7-calendar">
+   <div className="v7-day">
+    <h3>
+     <strong aria-label="November 18" className="date-calendar" data-month="NOV">
+      18
+     </strong>
+     <span>
+      November
+      <small>
+       Wednesday
+      </small>
+     </span>
+    </h3>
+    <div className="v7-session">
+     <div className="v8-session-copy">
+      <span className="v7-period">
+       Morning
+      </span>
+      <time>
+       09:30–12:00
+      </time>
+      <h4>
+       Entrepreneur forum
+      </h4>
+     </div>
+     <figure className="v8-thumb">
+      <ExpoImage alt="Audience at a previous Shenzhen industry forum" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/about-denny-expo-2026/01-cover.webp"/>
+      <figcaption>
+       March 2026
+      </figcaption>
+     </figure>
     </div>
+    <div className="v7-session">
+     <div className="v8-session-copy">
+      <span className="v7-period">
+       Afternoon
+      </span>
+      <time>
+       14:00–16:30
+      </time>
+      <h4>
+       Industry expert forum
+      </h4>
+     </div>
+     <figure className="v8-thumb">
+      <ExpoImage alt="Expert presentation at the previous supply-chain exhibition" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/about-denny-expo-2025/03-photo-39.webp"/>
+      <figcaption>
+       November 2025
+      </figcaption>
+     </figure>
+    </div>
+    <div className="v7-session">
+     <div className="v8-session-copy">
+      <span className="v7-period">
+       Evening
+      </span>
+      <time>
+       Time to be confirmed
+      </time>
+      <h4>
+       Exhibitor dinner
+      </h4>
+     </div>
+     <figure className="v8-thumb">
+      <ExpoImage alt="Illustration of a networking dinner" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/wcb-expo-programme/01-cover.webp"/>
+      <figcaption>
+       AI illustration
+      </figcaption>
+     </figure>
+    </div>
+   </div>
+   <div className="v7-day">
+    <h3>
+     <strong aria-label="November 19" className="date-calendar" data-month="NOV">
+      19
+     </strong>
+     <span>
+      November
+      <small>
+       Thursday
+      </small>
+     </span>
+    </h3>
+    <div className="v7-session">
+     <div className="v8-session-copy">
+      <span className="v7-period">
+       Morning
+      </span>
+      <time>
+       10:00–12:00
+      </time>
+      <h4>
+       Procurement matchmaking
+      </h4>
+     </div>
+     <figure className="v8-thumb">
+      <ExpoImage alt="Procurement discussions at the previous Shenzhen exhibition" sizes="(max-width: 760px) 110px, 140px" src="/images/industry/expo-business-matching-2026.jpg"/>
+      <figcaption>
+       March 2026
+      </figcaption>
+     </figure>
+    </div>
+    <div className="v7-session">
+     <div className="v8-session-copy">
+      <span className="v7-period">
+       Afternoon
+      </span>
+      <time>
+       14:00–16:30
+      </time>
+      <h4>
+       Product launches
+       <small>
+        Session 1
+       </small>
+      </h4>
+     </div>
+     <figure className="v8-thumb">
+      <ExpoImage alt="Product presentation at the previous Shenzhen exhibition" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/about-denny-expo-2026/11-photo-97.webp"/>
+      <figcaption>
+       March 2026
+      </figcaption>
+     </figure>
+    </div>
+    <div className="v7-session v7-empty">
+     <span className="v7-period">
+      Evening
+     </span>
+     <p>
+      No session announced
+     </p>
+    </div>
+   </div>
+   <div className="v7-day">
+    <h3>
+     <strong aria-label="November 20" className="date-calendar" data-month="NOV">
+      20
+     </strong>
+     <span>
+      November
+      <small>
+       Friday
+      </small>
+     </span>
+    </h3>
+    <div className="v7-session">
+     <div className="v8-session-copy">
+      <span className="v7-period">
+       Morning
+      </span>
+      <time>
+       10:00–12:00
+      </time>
+      <h4>
+       Product launches
+       <small>
+        Session 2
+       </small>
+      </h4>
+     </div>
+     <figure className="v8-thumb">
+      <ExpoImage alt="Robotics presentation at the previous Shenzhen exhibition" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/about-denny-expo-2026/12-photo-98.webp"/>
+      <figcaption>
+       March 2026
+      </figcaption>
+     </figure>
+    </div>
+    <div className="v7-session v7-empty">
+     <span className="v7-period">
+      Afternoon
+     </span>
+     <p>
+      No session announced
+     </p>
+    </div>
+    <div className="v7-session v7-empty">
+     <span className="v7-period">
+      Evening
+     </span>
+     <p>
+      No session announced
+     </p>
+    </div>
+   </div>
+  </div>
+  <p className="note">
+   Proposed programme · China Standard Time (UTC+8). Final sessions and exhibition admission hours will be confirmed by the organizer.
+  </p>
+  <div className="v7-location">
+   <div>
+    <span className="eyebrow">
+     YOU’RE INVITED / WCB EXPO 2026
+    </span>
+    <h3>
+     Join us in Suzhou.
+    </h3>
+    <p className="visit-invitation">
+     See the products, meet the people behind them and exchange ideas with the cleaning industry. We look forward to welcoming you to WCB.
+    </p>
+    <p className="visit-details">
+     <strong>
+      18–20 November 2026
+     </strong>
+     <span>
+      Suzhou Shishan Convention Center · Suzhou, China
+     </span>
+    </p>
+   </div>
+   <a className="button" href="/contact?inquiry=expo_visitor#project-form">
+    Plan your visit
+   </a>
+  </div>
+ </section>
+</div>
+
   );
 }

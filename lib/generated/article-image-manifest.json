@@ -11482,6 +11482,42 @@
         "outputHash": "sha256:573c1eed170729f94cd113b46bf50aadbf34efc9ded7e4498d90e8121c66cc9c"
       }
     },
+    "/images/articles/wcb-expo-programme/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 106248,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:668961bb6b8473d9cd53304898bc819e73b889d7a311ad8a9615caeec9bfdc15",
+      "outputHash": "sha256:a5b29c4b0b186398607b09b3f2f12cb7fd4ed0ad591dc7e97f52a72417365ae8",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-programme/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 40928,
+        "outputHash": "sha256:74679bb4053c7aee2aafc934e556a4021da5ed5357af1cd03f319fa296bc619a"
+      }
+    },
+    "/images/articles/wcb-expo-programme/02-exhibitor-directory.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 143080,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:53881e1d0edcae2251831b0062d18501567286924711cb3ec975d52f8fc3c81d",
+      "outputHash": "sha256:8ffd61c7b0515fecbbbe0f56911f84bfc00e96ee6cf39dcb1f1993ec1e6242bd",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-programme/02-exhibitor-directory-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 53532,
+        "outputHash": "sha256:3d8b31f17ab51a7e66d5d915fb5b7a03c8b487bfb86eb5925845c834ccb5132e"
+      }
+    },
     "/images/articles/what-sharkninja-makes-us-think-about/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -41733,6 +41769,14 @@
         "/images/blog/floor-scrubber-delivered-productivity-check.webp"
       ]
     },
+    "wcb-expo-programme": {
+      "pageRoute": "/wcb-expo",
+      "budgetClass": "standard",
+      "cover": "/images/articles/wcb-expo-programme/01-cover.webp",
+      "body": [
+        "/images/articles/wcb-expo-programme/02-exhibitor-directory.webp"
+      ]
+    },
     "what-brands-does-fluidra-own": {
       "budgetClass": "standard",
       "cover": "/images/blog/fluidra-brand-portfolio-map.webp",
@@ -46102,6 +46146,20 @@
           "status": "matched",
           "primary": "/images/articles/vorwerk-family-thermomix-history/10-advisor.webp",
           "hash": "sha256:0309f25aac9fc935e2ae12316b2c1f83b7b3c397a770575124ae37064343ff82"
+        }
+      }
+    },
+    "wcb-expo-programme": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-programme/01-cover.webp",
+          "hash": "sha256:668961bb6b8473d9cd53304898bc819e73b889d7a311ad8a9615caeec9bfdc15"
+        },
+        "02-exhibitor-directory.png": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-programme/02-exhibitor-directory.webp",
+          "hash": "sha256:53881e1d0edcae2251831b0062d18501567286924711cb3ec975d52f8fc3c81d"
         }
       }
     },
