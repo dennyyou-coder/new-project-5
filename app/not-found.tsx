@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: { absolute: "Page Not Found | World Clean Biz" },
+  description: "This page could not be found. Explore World Clean Biz news, industry analysis and company profiles.",
+  robots: { index: false, follow: true }
+};
 
 export default function NotFound() {
   return (
