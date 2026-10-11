@@ -642,7 +642,8 @@ export async function verifyManifestFiles(options = {}) {
   for (const slug of [...inventorySlugs].filter((item) => manifestSlugs.has(item)).sort()) {
     const actual = manifestArticles[slug];
     const expected = inventory.articles[slug];
-    if (actual.budgetClass !== expected.budgetClass
+    if (actual.pageRoute !== expected.pageRoute
+      || actual.budgetClass !== expected.budgetClass
       || actual.cover !== expected.cover
       || JSON.stringify(actual.body) !== JSON.stringify(expected.body)) {
       failures.push(finding(

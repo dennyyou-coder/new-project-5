@@ -1788,3 +1788,31 @@ test("preparing one slug preserves unchanged unrelated image roles and their bud
   assert.equal(second.assets[transparent].bytes, fs.statSync(publicFile(project, transparent)).size);
   assert.equal(second.assets[transparent].outputHash, hash(publicFile(project, transparent)));
 });
+
+test('page galleries prepare uncropped photos and recover aggregate budgets from new staged inputs', async () => {
+  const project = temporaryProject();
+  const slug = 'about-photo-gallery';
+  const folder = sourceFolder(project, slug);
+  const pageDirectory = path.join(project.projectRoot, 'content', 'pages');
+  fs.mkdirSync(pageDirectory);
+  await writeImage(path.join(folder, '01-cover.png'), { width: 800, height: 600, noise: true });
+  const fixture = await sharp(path.join(folder, '01-cover.png')).blur(1.2).png().toBuffer();
+  fs.writeFileSync(path.join(folder, '01-cover.png'), fixture);
+  const refs = [];
+  for (let sequence = 2; sequence <= 18; sequence++) {
+    const name = `${String(sequence).padStart(2, '0')}-photo`;
+    fs.copyFileSync(path.join(folder, '01-cover.png'), path.join(folder, `${name}.png`));
+    refs.push(`![Event photograph](/images/articles/${slug}/${name}.webp)`);
+  }
+  fs.writeFileSync(path.join(pageDirectory, `${slug}.mdx`), `---\npage_route: "/about"\nimage_budget: "deep"\ncoverImage: "/images/articles/${slug}/01-cover.webp"\n---\n${refs.join('\n')}\n`);
+  const report = await prepareArticleImages({ projectRoot: project.projectRoot, sourceRoot: folder, slug });
+  assert.ok(report.desktopBytes <= 2_500_000);
+  assert.ok(report.mobileBytes <= 1_200_000);
+  const manifest = JSON.parse(fs.readFileSync(path.join(project.projectRoot, 'lib/generated/article-image-manifest.json'), 'utf8'));
+  assert.equal(manifest.articles[slug].pageRoute, '/about');
+  const cover = manifest.assets[`/images/articles/${slug}/01-cover.webp`];
+  assert.equal(cover.width / cover.height, 4 / 3);
+  assert.ok(report.warnings.some(warning => warning.includes('PHOTO_AGGREGATE_RECOVERY')));
+  const verification = await verifyArticleImages({ projectRoot: project.projectRoot, sourceLibraryRoot: project.sourceLibraryRoot });
+  assert.equal(verification.ok, true, JSON.stringify(verification.failures));
+});

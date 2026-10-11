@@ -120,6 +120,32 @@ function defaultPaths(options = {}) {
   };
 }
 
+// Page galleries share image preparation and budgets, but do not masquerade as blog articles.
+export function verifyPageGalleryImages({ article, manifest, html, publicRoot, slug }) {
+  const failures = [];
+  const expected = [...new Set([article.cover, ...(article.body ?? [])].filter(Boolean))];
+  const rendered = imageTags(html);
+  for (const url of expected) {
+    const asset = manifest.assets?.[url];
+    const matches = rendered.filter(({ attributes }) => normalizeLocalUrl(attributes.src) === url);
+    if (!matches.length) failures.push(finding("BUILT_PAGE_IMAGE_MISSING", `${slug}: gallery image not rendered: ${url}`, { slug, url }));
+    for (const { attributes: a } of matches) {
+      reportMissingCandidate(failures, publicRoot, slug, a.src, "page src");
+      if (!asset || Number(a.width) !== asset.width || Number(a.height) !== asset.height || !a.sizes
+        || a.decoding !== "async" || !["lazy", "eager"].includes(a.loading)) {
+        failures.push(finding("BUILT_PAGE_IMAGE_ATTRIBUTES", `${slug}: gallery image requires registered dimensions, sizes, async decoding and explicit loading`, { slug, url }));
+      }
+      const { candidates, invalid } = srcsetCandidates(a.srcset);
+      const expectedCandidates = asset?.mobile ? [{ url: asset.mobile.src, width: asset.mobile.width }, { url, width: asset.width }] : [];
+      if (invalid.length || JSON.stringify(candidates) !== JSON.stringify(expectedCandidates)) {
+        failures.push(finding("BUILT_PAGE_IMAGE_SRCSET", `${slug}: gallery responsive candidates do not match the prepared assets`, { slug, url }));
+      }
+      for (const candidate of candidates) reportMissingCandidate(failures, publicRoot, slug, candidate.url, "page srcset");
+    }
+  }
+  return failures;
+}
+
 export async function verifyBuiltArticleImages(options = {}) {
   const paths = defaultPaths(options);
   const failures = [];
@@ -139,6 +165,16 @@ export async function verifyBuiltArticleImages(options = {}) {
   let responsiveImages = 0;
   for (const slug of Object.keys(manifest.articles ?? {}).sort()) {
     const article = manifest.articles[slug];
+    if (article.pageRoute) {
+      if (!/^\/[a-z0-9]+(?:[-/][a-z0-9]+)*$/.test(article.pageRoute)) {
+        failures.push(finding("BUILT_PAGE_ROUTE_INVALID", `${slug}: invalid page route`, { slug }));
+        continue;
+      }
+      const pageFile = path.join(paths.buildRoot, "..", `${article.pageRoute.slice(1)}.html`);
+      if (!fs.existsSync(pageFile)) failures.push(finding("BUILT_PAGE_MISSING", `${slug}: missing built page ${pageFile}`, { slug }));
+      else failures.push(...verifyPageGalleryImages({ article, manifest, html: fs.readFileSync(pageFile, "utf8"), publicRoot: paths.publicRoot, slug }));
+      continue;
+    }
     const isProduct = fs.existsSync(path.join(paths.projectRoot, "content", "products", `${slug}.mdx`));
     const isNews = fs.existsSync(path.join(paths.projectRoot, "content", "news", `${slug}.mdx`));
     const route = isProduct ? "products" : isNews ? "news" : "blog";

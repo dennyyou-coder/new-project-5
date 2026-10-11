@@ -2,6 +2,1223 @@
   "version": 1,
   "processorVersion": "1",
   "assets": {
+    "/images/articles/about-denny-expo-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 273414,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e490733963acadd084bfc7c291a7fa242701573e7f9f64dde52824ee51b4c0ef",
+      "outputHash": "sha256:2625738e367e96343e10ed1d42bfe3194dbfa858b07400bff22837577da79a02",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 85234,
+        "outputHash": "sha256:08fcb3f2ec68c05b8dfc80456cf9eca7034f4c3c4bc437fae1d47d49cc20c397"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/02-photo-40.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 59714,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:2b1cf11d4fc38b74cc2799d510d453224a37f17afb5e63e1a0d6e8083b9fbaee",
+      "outputHash": "sha256:304ae2fb740431f16a232eacb82f6c10ce643735e4d08f990e7d552540b05522",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/02-photo-40-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 31560,
+        "outputHash": "sha256:e99d37beb86056ccdd262d1164b7ed431c7bf60e341f66a4c9dd2a6f000fd173"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/03-photo-39.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 746,
+      "bytes": 75014,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:1e370f33685fd72104dfa4fffbb35d23c3283391d5718f88cd2ccd1e4e68936e",
+      "outputHash": "sha256:8cc31f0b80ca960fb4a9c5a5cdfa2058cffa15b9b66da1914b6cbddcb91bf493",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/03-photo-39-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 38230,
+        "outputHash": "sha256:14d0621c1c5c50b66e01dc8f9184fe4febd09562d2a8ad78e2ca68a5b2c66a30"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/04-photo-41.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 75908,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:30e4f82f85c999f18421b620b5e3962325822f784db3aafc7a8478efd9b3a011",
+      "outputHash": "sha256:94b8492204369db27e4e1a6522fbdda687e0ce5d53e641506e3ca6d21d11426c",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/04-photo-41-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 38078,
+        "outputHash": "sha256:168dc32bd4e65c7eecf402959340e35ab806aa73c8dadc49f2a397bb59bb5638"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/05-photo-45.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 85392,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:833afc90fb6063a084246c4006566c4650214cd9149a0082ad9f74ccfb098581",
+      "outputHash": "sha256:a0f3cc426c3582930224eace29c36025fcd597ea4735edeaa5c75845859067df",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/05-photo-45-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 41444,
+        "outputHash": "sha256:542e704a44ea200c860c423649effe1e7c7bbd25a6a341641b7fde32abb41481"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/06-photo-46.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 86522,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:e11b24e70e794d894ac5c949ac52b7e8100e31293ad0b7f2d81b8d7fb4151d7e",
+      "outputHash": "sha256:d177c942ccb6f9987b22f472cdfbeaef9c9ffd6b21cb4b8159f864dc57c39f10",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/06-photo-46-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 43064,
+        "outputHash": "sha256:aa7f76ca296aba8de2b9a3158180fdde5dc1a4e2359849380f281eb3330cc09e"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/07-photo-48.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 746,
+      "bytes": 70718,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:7f6736d7d5d227373d1fc27492240b137d907314a56009e71f343295c3104504",
+      "outputHash": "sha256:2c1ef175724919a3f0c6bf9552202312452f66345a2637828fc672a8b969d7ec",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/07-photo-48-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 35226,
+        "outputHash": "sha256:6e1e50dabc7f58de1c2035bfa01edd029cb09779f7dcef88f45d16b58100b106"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/08-photo-50.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 67912,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:3506525a3ae93add245c9d1061b0746ce2152538b24311c9a832bd6540fe9258",
+      "outputHash": "sha256:fef59f326beebc69da1c178c605599da171de74d0ae63d973a7d8d0af2a5b180",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/08-photo-50-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 34990,
+        "outputHash": "sha256:d2124e4a1d02b6dd73173b1a6e0f1ca8b7d611210e06b8b6427d3ac4dba932a4"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/09-photo-73.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 77484,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:6182c3b74b61479ab1b4109123f10470adfe3c812e43ecd77dd44a74b5e73c25",
+      "outputHash": "sha256:6daa754452d8aa096837f3254a2d2b82151b3d3ab3f7adfaeaaa609795208415",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/09-photo-73-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 37630,
+        "outputHash": "sha256:38ab6306ec6b6921749ff1645f375b7e8fa9a7b86c65c53fd2184da0ae8edf8c"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/10-photo-43.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 746,
+      "bytes": 59308,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:d62365df0668f84c06595f66c6905657404cd9fa9df77e52ae1f6f34843600cd",
+      "outputHash": "sha256:af48a0e33003a429a2f51939b9858ab6b5d0f2486031e80b480dcdd53fba2f21",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/10-photo-43-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 33432,
+        "outputHash": "sha256:3d52eb26c2b8e9c53164dd5bb741089eebda655b234dce58790ea01100d0fb0b"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/11-photo-36.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 51154,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:94150dfcd3273b4d0dd1ae3585afc2cdd6f45bf5c6dbf56e4840d7edc0d8bd87",
+      "outputHash": "sha256:206dad225f4823fe41451a5e6e5122e29eb04b46153f3690a5963245ee3333c5",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/11-photo-36-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 26374,
+        "outputHash": "sha256:e28096292c10287d9d0aef562687eb40fb0ceee2cbfb0a75c985ca1f645339e0"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/12-photo-81.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 74604,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:a63f3713cca03f0173193a2e2f59039cd00369db9cdf0f29945f88bd804c6cb0",
+      "outputHash": "sha256:80bac266c8c31d288c064d4ac991c39c736ca4e71e6d0c3e25b033054a360d49",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/12-photo-81-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 39810,
+        "outputHash": "sha256:be3e25b96204b3016e05cd76d876d45d08de888b6621d704c6ae452e1929c400"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/13-photo-42.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 79994,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:724c56465377c33838937e28eca379b5a18eedb0a13f4387489219a3093534b7",
+      "outputHash": "sha256:2ebc745f8479d1b7269a19c722be5f5fc1792b4689757acc81225e54a2276906",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/13-photo-42-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 37196,
+        "outputHash": "sha256:218feb61de99b8b5d09622c54130b36c0e68272cc77a4c3b52d411208acefcc0"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/14-photo-47.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 38140,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:176aa204fa41e0958c44ccd86cb129a97b1cfa2698aeaedff38abdb948dd5c4e",
+      "outputHash": "sha256:86504e8f1dd62ae8c31a65fdb8e771d9fe1d6b10094d04a89ddf715db0092ee0",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/14-photo-47-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 21236,
+        "outputHash": "sha256:72e36140a463000216a5430f87abbacea69cb2e6be0138fbf22de8cf13ee4acf"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/15-photo-49.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 54574,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:cccaefb0b0b169e478cc7a3e6c2e523c08bec6c406d7d1d23ff1bc6d8835f869",
+      "outputHash": "sha256:39b5083951b5f531f013a318012e2efe2b66cc936716b22c8a1587cd81b2b148",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/15-photo-49-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 28872,
+        "outputHash": "sha256:2587ffbb9b7af1cac5df869f3cda9377cc92c3a5cf148082614d24e6c8eec083"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/16-photo-71.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 43364,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:f63b0a21ef7e12b62d233de43f78857124094038a8d44a48da4f0ef09c82f20c",
+      "outputHash": "sha256:f962bff1e8750de024a8520fbeafc62400c82adbf926825f8d72e09efe1ace8c",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/16-photo-71-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 22296,
+        "outputHash": "sha256:b3a6da6d6a55e50352f8a207b3a7d6981c3314ab970b9c05e6d41d26cb1d0c38"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/17-photo-74.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 88258,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:282c192112000202a877b3b504339d872961d5d59417c7d615dfe0f1be4384a2",
+      "outputHash": "sha256:aeae8d7f1f93b30a131b893f27251244777dedbc1d5efeea35dfbf8f3af63125",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/17-photo-74-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 45018,
+        "outputHash": "sha256:f6c46a6fe969c4d7afe3b5e28cc0f7071c1adafe72166ad6030b0e2eecd1cf2f"
+      }
+    },
+    "/images/articles/about-denny-expo-2025/18-photo-78.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 747,
+      "bytes": 47678,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:09dc6c022f55ddd5c9c683e6d081f5bab6c21465880b055c415e808cd444df78",
+      "outputHash": "sha256:43288bcf010e7bab238f126131cfc3beccae84fe149265ad2b5c43ecc1100b10",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2025/18-photo-78-800.webp",
+        "width": 680,
+        "height": 453,
+        "bytes": 24566,
+        "outputHash": "sha256:b08721f731c0377ee38c22a314ff1b95f14f405bf4a6fe8d8881ccaff0703e56"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1201,
+      "bytes": 280870,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fada37a84b9aff37dd07500c69e341ca0667540f752e81961c525fde29e16e91",
+      "outputHash": "sha256:408bcf6551d78f80a114e54d1c051e73c68826b9507df1f37159e793c43cd282",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 601,
+        "bytes": 88522,
+        "outputHash": "sha256:7e1edcfe564cb52d308af30deefbce624bf140e0963c6ef8a71b3c78fe75d80b"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/02-photo-106.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 61858,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:ada750e347926ba145d1dd7acd0fa3a6b25b4d3c029f8645d42f6afe56c8cbad",
+      "outputHash": "sha256:06758e473cd2ab1a194edd2074602912c5ff00601e5987bea01aea2aa7ff10fe",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/02-photo-106-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 34386,
+        "outputHash": "sha256:4eca7dc3895f45808d4757d9e831cbc2c660c7deb575a4c0b7781948986114cd"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/03-photo-82.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 79694,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:3a5517ad441689e1b73bfbbd5c99f4089a3028411bc81fe05e755a7c20605ad4",
+      "outputHash": "sha256:835a1b6fe5feb61088adcfc5a905b54508f9d5009422f9075ab48f5a9bc6414d",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/03-photo-82-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 41366,
+        "outputHash": "sha256:b37218b4252dd8db895416c66aa7d980618d59083c02e5f375f3575e37774b07"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/04-photo-83.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 66554,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:a54c0df447aeac10512d251a1a0ae5e4aa98aaaa761ddca7a617b574b0be24cf",
+      "outputHash": "sha256:6fcb54afe028f337a552fed88e0b054ad6e94ba6a1ad51008b66934f66529076",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/04-photo-83-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 36616,
+        "outputHash": "sha256:9d79fa63f6144517173d1cff74673158c7859c442e4358eaacaa438651230c28"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/05-photo-63.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 59592,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:055b45283eca1a6564c6ac2197c02f43fd36589e3bc52a3642a00a0915b36c3d",
+      "outputHash": "sha256:19f6e739808cbdaa0bf4a68c1af9af65dfcada8f0228d2900b564aafc9cf804a",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/05-photo-63-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 32634,
+        "outputHash": "sha256:12ae4a6a231a4542fa00bd9a937bbe60b20869ac60c07152ab4d3074f8042ad2"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/06-photo-84.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 46764,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:1eaf06a118b49ae1189bd303740da7f0cc97ba00c545082a4b40da237e83b582",
+      "outputHash": "sha256:34fae3c256e6d336a36dd372bc1e433d1289f0c6bea042983556e8acdafc783e",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/06-photo-84-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 24766,
+        "outputHash": "sha256:7349af825b644ed225d773a9c85190a6921a16636c44f8fe108640000dd8f024"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/07-photo-54.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 95082,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:a046dcd486aa1df8cd5cba0e5f5ad9cbff25e100307a60b82691264a070ae947",
+      "outputHash": "sha256:1159f79d853dbb4415593bea3e9e480938c0e0bcb79a8c705f7087188596290a",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/07-photo-54-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 47364,
+        "outputHash": "sha256:88c83e2a85ae1cba5e091758542d5b4ee387935955c431db53928f5dda283899"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/08-photo-59.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 80686,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:e8cba487156f7b3d35720b6b8aaa8351f9c056c47783da61aca1a969c88cc6e4",
+      "outputHash": "sha256:81dea5f3f651bdaf5bc780872d00b15aee318313f19dfab7fb5947a95ecd0d5b",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/08-photo-59-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 40328,
+        "outputHash": "sha256:8fdfe8c87e4af2fe695d42fab227fba16d71ad43767c6dd7f44ce4bc15baf6d7"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/09-photo-87.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 61918,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:88a9138e9682cb548cc78df6d652f9afa39ca9ae35294ba3934a22f7617452ef",
+      "outputHash": "sha256:be767cc1b1b7ec8c3a36830e9fbd7f1466c395474126c0baba16562fbbb1166c",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/09-photo-87-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 32090,
+        "outputHash": "sha256:61278495c1242157b9710750676bc84049788a37ef06788442c8aad44efa1c91"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/10-photo-89.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 61716,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:af99020bd9c83137871b67107fde59e8425cb99d49b5a2c364a1ddaa0330d5e9",
+      "outputHash": "sha256:2db85e9ddd5cc301e9a850b94ca7d4c3ea5b3675cf06d5fcbe4cb324e542e9aa",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/10-photo-89-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 31260,
+        "outputHash": "sha256:74350d5bba5184e46485739d6f1918ab770dac79bfa797048f5e09b940c88a67"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/11-photo-97.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 64040,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:93e96c00a4950ec65261c120d528a5b8d345dad9a67b1a2a954c7b239cdbfe04",
+      "outputHash": "sha256:20456d856934723d86efaf1767a4bd678ff436b31903ae9ad27060943f6e223b",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/11-photo-97-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 33444,
+        "outputHash": "sha256:30be3e983af669c3bd2207655c9c6e0f45aee377af1de924dfe5ff41c310b74e"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/12-photo-98.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 54888,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:ab763eac21a377e79da750cb7259655a1b329d2bc1307c69ee8bdab6a0007b50",
+      "outputHash": "sha256:688ea9031a664570aa9825ebcb6ed9ad04eaa3b5ff5ec72758e6bee7e08b28ee",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/12-photo-98-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 30014,
+        "outputHash": "sha256:1655b9a74dd06d1eaeb4fa253a9e35d13038984f8562da4676a88c324c1e1c99"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/13-photo-90.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 83424,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:5c79ad5d1baaa2e295f91849868d054497f82487db86f32cc4b0266a41409c5c",
+      "outputHash": "sha256:7954805c299ef8c305bc28edb8545daef7f4ec5c98531685edbbadee21884e1e",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/13-photo-90-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 43994,
+        "outputHash": "sha256:87f6056f55c832050002364bf0ecc282359070b9ce9e81e600d2dda502429b61"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/14-photo-86.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 85204,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:01e88848059d7a8e7931da777ed3f13def51e5363060d94737138c467c15d772",
+      "outputHash": "sha256:8c5d5b6dfd36e2db97e15a0f89940d88f6ba72fad717e5ca0acad84aead05d5c",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/14-photo-86-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 43406,
+        "outputHash": "sha256:75d0571baf0e9b585d28678cc2d31c138398b3ef1e39e59a506db8cba0be40f7"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/15-photo-91.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 841,
+      "height": 1120,
+      "bytes": 59626,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:4e5b27a80fa0acd11b6ce01a20873a1f831e4864505c38d729f4258320c2a9af",
+      "outputHash": "sha256:629b82bbf692e564ccc6da1ee35a0e188ecf7761abbc7f1df210b78d3b6378c6",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/15-photo-91-800.webp",
+        "width": 510,
+        "height": 680,
+        "bytes": 31012,
+        "outputHash": "sha256:6e37d8fe18f231e9cac2de4b158fe2910025b91e1c5f3a16c38532bf6163a0b6"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/16-photo-92.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 60622,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:54de1954765b53cb3f87f9c7af929d46f1b4ac4947401befddce458bfcb51203",
+      "outputHash": "sha256:91bb5395efda24d7fa4f24e8a27ef4edb534f3ac13b0df8188cfeb73a66584a6",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/16-photo-92-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 33496,
+        "outputHash": "sha256:d61b6344a89c0293e1e08bfbb19c2ed70425b94408c81fc9ca0abaa4daeb5116"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/17-photo-95.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 64532,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:c3213dacb7098d7858896ff5793e9dba73b4b43d80a624dc43a38968dbbdce42",
+      "outputHash": "sha256:6cc7b6fed0b0fdcc355e3debb7ed52ede108524e7db28c4416e8d5202bfe32dd",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/17-photo-95-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 34046,
+        "outputHash": "sha256:adf89222e7c76fcb096a3aa0e4f3b4f70e9f9d683839ac68f0ef7a25b06b8805"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/18-photo-103.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 54472,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:ec5f2dce7f86cbfbbc0b7c8be3c0b960910869457b114140eba5ba89378493c7",
+      "outputHash": "sha256:61de554220d587fb896edcc24f1f223be165ff7bbd342ddfafd7af5c5f42536c",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/18-photo-103-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 30636,
+        "outputHash": "sha256:ebb194b608be9770a8538c41b320b2624b50e1cfcb139bd1151205e6ea5e4f15"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/19-photo-101.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 92406,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:401849f2d62a770617dae24ca344655e3e8297b81c9aae1183d8f7d608fcff4b",
+      "outputHash": "sha256:7b017a11b52c7f268d129eb4baa88feb2fb7c8ca14b9c1dc06f611275f61447b",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/19-photo-101-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 46956,
+        "outputHash": "sha256:dfa7a9bb026630c69714c33cb30b50f715dfed34f5b8bb06d5dde712da3122ef"
+      }
+    },
+    "/images/articles/about-denny-expo-2026/20-photo-105.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1120,
+      "height": 841,
+      "bytes": 72952,
+      "format": "webp",
+      "quality": 72,
+      "sourceHash": "sha256:08d9c7d6fdbaa14185cd4de23c3680dbf1d8d009794b85760d78e38c8e82237f",
+      "outputHash": "sha256:1dbb6fcd40108e9b68708141b7ae2a778faba3fb78a54d6501ed76a1403782c0",
+      "mobile": {
+        "src": "/images/articles/about-denny-expo-2026/20-photo-105-800.webp",
+        "width": 680,
+        "height": 510,
+        "bytes": 37316,
+        "outputHash": "sha256:e6251e7e52e81d7fe6fb5b908d5febfbcb54e3bbe7f9115ed81a548a16322efd"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 250858,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:9ba3f3000e02e7a435cd93785444c58b6b1508fc4d1633e45e8d3f35112a1651",
+      "outputHash": "sha256:069f35f9e0e65900f6de221539a3c352d0f8624cc7194b5f94f9e2d141c255f4",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/01-cover-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 87098,
+        "outputHash": "sha256:0d3be1102ef3e195deb2c71d4a5a5a597c810299d7f4fd39420ce4d32d21e041"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/02-photo-25.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 202204,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:51662c06567da652399c52ba1d57e76647db5ef78de3abf5b46fe4c0e6f95eb7",
+      "outputHash": "sha256:7e8ac393eb963ae119cc60c85e6bed6a0b8d8c00e582e411c5088ee4b7068f8c",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/02-photo-25-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 73652,
+        "outputHash": "sha256:ec8bf7aa1153f81030dfc6fc2c28411151d2a2ad4665223e04aced9f1671c3b6"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/03-photo-26.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 190450,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:560ea80127f6ee63e1189f150a84621f21d56b9368fe16b183d288a5a98962e0",
+      "outputHash": "sha256:5209c05c97bf274f8712fef640826c395c8df2e0f44383add68fd76a3681133d",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/03-photo-26-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 70672,
+        "outputHash": "sha256:cc41f3447740da8e875f823d011a00a5151461f9fbe8b0f7fe0ee6817a493e36"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/04-photo-29.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 113164,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f6c8487b12ffc670970265aead62877a9ae3b2c236cf1f4e9f6c833061b8ba2d",
+      "outputHash": "sha256:a54b5495040381f1cb04d03d0816a0be4645de81d39f6d7f310c2abe0dd339cc",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/04-photo-29-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 41662,
+        "outputHash": "sha256:253d277d9b44638707e900ab7d32e876ea568231570e222668906a9340f1e1b0"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/05-photo-30.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 108586,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a11ef8a4f8f58c76dfe653d87380c8534c76dcdbc8424dc43f769119d04648a2",
+      "outputHash": "sha256:d4ba6ea90cff0fc0dfefdaba76632cede8f39c478109e52849b21f7299c99795",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/05-photo-30-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 38698,
+        "outputHash": "sha256:8e839fe9080d10f2ae0b04affab8b07d1793cadec5d21bd885e398809fb7478e"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/06-photo-34.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 121706,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e8692de2786d9156b9de0fba309ef39b24b5da5794339f3c44774e2bf2c25a2a",
+      "outputHash": "sha256:9db3a0447cd31fbf32fb07abb76852660373fd37373e7f82b4df3805637f4e2d",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/06-photo-34-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 43006,
+        "outputHash": "sha256:1acab74d865c88fd5dbfcd910180081806d4077d16fec1e5d57d42fa82254e41"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/07-photo-31.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 211310,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:aa3e45a74fcf22383ca06d1fd30cbeecab5136151a1631dd5adee611143cae4c",
+      "outputHash": "sha256:ea35d49c9ce3691026e4f3f19f0601970e6f3340e3a00f78bfa6814c6a444ef2",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/07-photo-31-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 65144,
+        "outputHash": "sha256:62876f9896f8139f4eb72b2a8d9ec27fce3fe121e6570e419ddbbe4a908dc381"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/08-photo-28.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 90724,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:450c1c085e155eb3a0ed8fd7a5416ea49738a2a5053c9e79c4217ae9f22e0a2d",
+      "outputHash": "sha256:5dc9a5dd215d23c970aaf0f84222d64ab2eaa362c43f45c6f9292c5b7b6136ff",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/08-photo-28-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 35898,
+        "outputHash": "sha256:f46a09403e692484905f1d901bf704d5702c9f3c0e42b891ee4fcca02bebd9f9"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/09-photo-32.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 188178,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:1be482963ffcec04a5d4ff551256077b6c19aaaca648f8a2f49ae519d1e936bc",
+      "outputHash": "sha256:0b3e67963ad86d087942d0ae82f40ea1d2aa75995fddc6fa277f433e13586a01",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/09-photo-32-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 66026,
+        "outputHash": "sha256:cd4367c6071b9eb9e5e18c51490124e72b0745196951191c676e64860b289770"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/10-photo-33.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 90764,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9a1148e1ec852be29d74ccac3e253ee03278c0edc0fa213a44b51672c23f637d",
+      "outputHash": "sha256:470e56979499fffdd130a07fbbb8572888150b0309ea59551dd4f747bbb63bd4",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/10-photo-33-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 28678,
+        "outputHash": "sha256:9f1a2244c5feed8575961b065fa6e88242d3d11a418ca7e099c84172f34f8339"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/11-photo-20.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 170960,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ff74ade27756891e3c50b908d5b7e45083cfe2c2aa207e35630d48b0255bc5e1",
+      "outputHash": "sha256:1f14dd217d340011286c8902ddada1cbdb2c118f179aed2fa21400858e887683",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/11-photo-20-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 43524,
+        "outputHash": "sha256:da96afc092ef6316fff87b75e4d82aac80c544e5e5ce682bf8f95500c788a172"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/12-photo-21.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 187286,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bf9be248609cb5c0ef29b1fbf11edb3956258cbd3296e3b71259e3b6a1fac718",
+      "outputHash": "sha256:555bd38aa8a45e538202ff83c9677f4d9588e51247636d777cc45842882a3ad6",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/12-photo-21-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 55772,
+        "outputHash": "sha256:d951781a9bb734f5c16cae8cca24ba68e051678b571287f73404769527480435"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/13-photo-18.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 208188,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:80e6175f3af1584a48b4f7fdba41d5bcf09c10895c30d295c23781d09aede28a",
+      "outputHash": "sha256:2cb64c65e6e013b0aa75228e1c6761b53b84dc9bf4acb97b3da7edf7caf0ba75",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/13-photo-18-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 56534,
+        "outputHash": "sha256:5ed4d1e63f4737925a4cda8381e44b07dc9dad4b52c9de4b3c2110f82a54c892"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/14-photo-19.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 179770,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b84a75d6cb57e895ac63ade218dd72e93a5c5a6da8569a0636813de9d3e2b903",
+      "outputHash": "sha256:9897df07b6d2a488423bc03719f756067f3c583418422354620dc3769d551f33",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/14-photo-19-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 45122,
+        "outputHash": "sha256:0bc496b33e6975356892281548046c269a1632db683ef0aeddeda81e59664eed"
+      }
+    },
+    "/images/articles/about-denny-forum-2025/15-photo-22.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 98978,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:565c776d0cc46928378044a50dcaaec206d73da19d7d7588e695223f560b3277",
+      "outputHash": "sha256:0d7a5766bb21eb7058aad853467e6814bda484fc31605ccdaebcfc9656de1f0d",
+      "mobile": {
+        "src": "/images/articles/about-denny-forum-2025/15-photo-22-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 34136,
+        "outputHash": "sha256:2726d0463398a322af7bd6fe07391a344e3deeb0017bdbd6af1ee61561f15ac7"
+      }
+    },
+    "/images/articles/about-denny-forums-2019/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 106376,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0965adb06493c855d0bc64965f0d6182757b6eeccf731b575ce9bd89ef229b18",
+      "outputHash": "sha256:6e0e076f2b823817171737150699ad7cf5247c1ba92bd2c3b8c837f7fdc16058",
+      "mobile": {
+        "src": "/images/articles/about-denny-forums-2019/01-cover-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 35354,
+        "outputHash": "sha256:73c88521dd86789b11f6d90b47bc1df09387431ef6fa3cb992cc1264e7197f6f"
+      }
+    },
+    "/images/articles/about-denny-forums-2019/02-photo-14.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 778,
+      "bytes": 113226,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:20c504ed36819861c6614f836c5285c19978ccf1958100c8639e0c8e40110250",
+      "outputHash": "sha256:789a2fc0a4f10be1a0679f361b3a440aadf4bb2092db7699050c6b38a22e6688",
+      "mobile": {
+        "src": "/images/articles/about-denny-forums-2019/02-photo-14-800.webp",
+        "width": 800,
+        "height": 389,
+        "bytes": 39238,
+        "outputHash": "sha256:f17b9987e46e20d9874a0b60bb4b32b66515223021800be335cf354b51b16891"
+      }
+    },
+    "/images/articles/about-denny-forums-2019/03-photo-15.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 90274,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a70c951a1e14590006603a153d2f8df0dd0eb103dae7ef1ccefeb56a05d36372",
+      "outputHash": "sha256:22ec314c454ee239e83ac5881b2afd73d60645b640541390aae2b6eb64039da0",
+      "mobile": {
+        "src": "/images/articles/about-denny-forums-2019/03-photo-15-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 32300,
+        "outputHash": "sha256:645b969acb276c5b09d303b595c6559a27b544e26c5421f9a34b44eacc1ffb37"
+      }
+    },
+    "/images/articles/about-denny-profile/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 90764,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9a1148e1ec852be29d74ccac3e253ee03278c0edc0fa213a44b51672c23f637d",
+      "outputHash": "sha256:470e56979499fffdd130a07fbbb8572888150b0309ea59551dd4f747bbb63bd4",
+      "mobile": {
+        "src": "/images/articles/about-denny-profile/01-cover-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 28678,
+        "outputHash": "sha256:9f1a2244c5feed8575961b065fa6e88242d3d11a418ca7e099c84172f34f8339"
+      }
+    },
+    "/images/articles/about-denny-profile/02-photo-13.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 839,
+      "height": 839,
+      "bytes": 28954,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:213c781e62cf7955165a3ef9135ee8a12c6a55eeafd00643afff1676a3cf91ff",
+      "outputHash": "sha256:61e7533197c267ceb1631b0a1d8b1d36373540adf1f0fe7607a44aac175d6f15"
+    },
+    "/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 103416,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2b6553f7ed7dd70e048ff730bbfc2c1328e626978a8883261c0cc9a10f854dc8",
+      "outputHash": "sha256:314cd59cc10377385dd4ea9eb885c8d1373918495ee0f3c72176fd19cccf3a8d",
+      "mobile": {
+        "src": "/images/articles/about-denny-profile/03-wcb-2026-key-visual-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 38166,
+        "outputHash": "sha256:9fc92feac3a178099d1612c090bb2049de3f8ea0fd2e87ffec30e3e9d4893ec2"
+      }
+    },
+    "/images/articles/about-denny-speaking/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1440,
+      "height": 1080,
+      "bytes": 159100,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0fa888765884b0a97387976a4ce5c672b74f5610aa247383dbcb12e40249affe",
+      "outputHash": "sha256:e3a1e90b192783a7f8fa6d51e879716f2b6e7f66d60783a463974b8c7c95f1ab",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/01-cover-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 59650,
+        "outputHash": "sha256:ac37c62a5d5d64cdeeea61ce7b48cb22f173d619403888d37629f34f066c3c40"
+      }
+    },
+    "/images/articles/about-denny-speaking/02-photo-0.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 186098,
+      "format": "webp",
+      "quality": 80,
+      "sourceHash": "sha256:84f888cb2ddd0d08b0221164f6d91a362124c910a45eb295d815985ae67452fb",
+      "outputHash": "sha256:39b0df47b5436497a87bbb6143af67a713f20e9c84a27b93289a8d1e8fbcb275",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/02-photo-0-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 59164,
+        "outputHash": "sha256:33189af8ca5bf0d4c59c79eb8d333e87e528e14a96584aa2e12047b22f643728"
+      }
+    },
+    "/images/articles/about-denny-speaking/03-photo-2.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1440,
+      "height": 1080,
+      "bytes": 171540,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:050f5cd31aa0527728b9ddda3b94b73fea74ff9bd702c8907216cb59c7d67bb5",
+      "outputHash": "sha256:bc4eae4e8834e8c37cfdb69a2ce48f13e6692049039556038ee3d4e8cebc6e2d",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/03-photo-2-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 70030,
+        "outputHash": "sha256:2dd8dced88dd00c2e6129e86a1916c199754062f3ece06ed5b0f99f0d058c0b1"
+      }
+    },
+    "/images/articles/about-denny-speaking/04-photo-3.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1440,
+      "height": 1080,
+      "bytes": 66306,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:64fe487619eb67714c270246cd50f1974945363feff1401a4867ebb00b085bef",
+      "outputHash": "sha256:d68d8d8fd78f53e3ca44685c40d9dfa1f10b6ac87e5d7950ed4a92108012d637",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/04-photo-3-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 29106,
+        "outputHash": "sha256:41fee46f2acd6be9eac158d033cdbc20f2c406cdb19fc94269d60902bf34e398"
+      }
+    },
+    "/images/articles/about-denny-speaking/05-photo-11.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1065,
+      "bytes": 135546,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9167bbd7110b42492d862514d48c7899f4ae7b780cd03afa144690aee24d7888",
+      "outputHash": "sha256:ae46cbb83f2d192d7bdc63741d530c919d2d7c06943120ea46145665cf51ab0f",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/05-photo-11-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 42824,
+        "outputHash": "sha256:a04b8658c73d568ca76cc6e1e2c21e71aa75d54c910753afdd7ac79b4f814d0f"
+      }
+    },
+    "/images/articles/about-denny-speaking/06-photo-9.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1440,
+      "height": 1080,
+      "bytes": 203148,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bfc8489bc1f7793801fde35f5da0b55355706d29ed6634cfd11f8e7e6a4fc776",
+      "outputHash": "sha256:78986d77591b0a3b33b9f28ca76997338971fd0856428d6bb7c26e062e3443b0",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/06-photo-9-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 68434,
+        "outputHash": "sha256:db02d5b41af1c97abfb5536f271ee2206c119d7017e0e39435dff0bca3e7975a"
+      }
+    },
+    "/images/articles/about-denny-speaking/07-photo-28.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1066,
+      "bytes": 90724,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:450c1c085e155eb3a0ed8fd7a5416ea49738a2a5053c9e79c4217ae9f22e0a2d",
+      "outputHash": "sha256:5dc9a5dd215d23c970aaf0f84222d64ab2eaa362c43f45c6f9292c5b7b6136ff",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/07-photo-28-800.webp",
+        "width": 800,
+        "height": 533,
+        "bytes": 35898,
+        "outputHash": "sha256:f46a09403e692484905f1d901bf704d5702c9f3c0e42b891ee4fcca02bebd9f9"
+      }
+    },
+    "/images/articles/about-denny-speaking/08-photo-33.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 90764,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9a1148e1ec852be29d74ccac3e253ee03278c0edc0fa213a44b51672c23f637d",
+      "outputHash": "sha256:470e56979499fffdd130a07fbbb8572888150b0309ea59551dd4f747bbb63bd4",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/08-photo-33-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 28678,
+        "outputHash": "sha256:9f1a2244c5feed8575961b065fa6e88242d3d11a418ca7e099c84172f34f8339"
+      }
+    },
+    "/images/articles/about-denny-speaking/09-photo-59.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1440,
+      "height": 1081,
+      "bytes": 167634,
+      "format": "webp",
+      "quality": 76,
+      "sourceHash": "sha256:e8cba487156f7b3d35720b6b8aaa8351f9c056c47783da61aca1a969c88cc6e4",
+      "outputHash": "sha256:4937a470b3ed3304981d1bd1f794420f7fe999b38272ed229df6a4a3304ef672",
+      "mobile": {
+        "src": "/images/articles/about-denny-speaking/09-photo-59-800.webp",
+        "width": 800,
+        "height": 601,
+        "bytes": 82068,
+        "outputHash": "sha256:2abaf3ff5ca8ac620a694dfa12a7f5c6736d7fe862c3b43f3734e2eeffabbd3b"
+      }
+    },
     "/images/articles/aiper-fluidra-pool-robotics-alliance/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -36209,6 +37426,110 @@
     }
   },
   "articles": {
+    "about-denny-expo-2025": {
+      "pageRoute": "/about",
+      "budgetClass": "deep",
+      "cover": "/images/articles/about-denny-expo-2025/01-cover.webp",
+      "body": [
+        "/images/articles/about-denny-expo-2025/02-photo-40.webp",
+        "/images/articles/about-denny-expo-2025/03-photo-39.webp",
+        "/images/articles/about-denny-expo-2025/04-photo-41.webp",
+        "/images/articles/about-denny-expo-2025/05-photo-45.webp",
+        "/images/articles/about-denny-expo-2025/06-photo-46.webp",
+        "/images/articles/about-denny-expo-2025/07-photo-48.webp",
+        "/images/articles/about-denny-expo-2025/08-photo-50.webp",
+        "/images/articles/about-denny-expo-2025/09-photo-73.webp",
+        "/images/articles/about-denny-expo-2025/10-photo-43.webp",
+        "/images/articles/about-denny-expo-2025/11-photo-36.webp",
+        "/images/articles/about-denny-expo-2025/12-photo-81.webp",
+        "/images/articles/about-denny-expo-2025/13-photo-42.webp",
+        "/images/articles/about-denny-expo-2025/14-photo-47.webp",
+        "/images/articles/about-denny-expo-2025/15-photo-49.webp",
+        "/images/articles/about-denny-expo-2025/16-photo-71.webp",
+        "/images/articles/about-denny-expo-2025/17-photo-74.webp",
+        "/images/articles/about-denny-expo-2025/18-photo-78.webp"
+      ]
+    },
+    "about-denny-expo-2026": {
+      "pageRoute": "/about",
+      "budgetClass": "deep",
+      "cover": "/images/articles/about-denny-expo-2026/01-cover.webp",
+      "body": [
+        "/images/articles/about-denny-expo-2026/02-photo-106.webp",
+        "/images/articles/about-denny-expo-2026/03-photo-82.webp",
+        "/images/articles/about-denny-expo-2026/04-photo-83.webp",
+        "/images/articles/about-denny-expo-2026/05-photo-63.webp",
+        "/images/articles/about-denny-expo-2026/06-photo-84.webp",
+        "/images/articles/about-denny-expo-2026/07-photo-54.webp",
+        "/images/articles/about-denny-expo-2026/08-photo-59.webp",
+        "/images/articles/about-denny-expo-2026/09-photo-87.webp",
+        "/images/articles/about-denny-expo-2026/10-photo-89.webp",
+        "/images/articles/about-denny-expo-2026/11-photo-97.webp",
+        "/images/articles/about-denny-expo-2026/12-photo-98.webp",
+        "/images/articles/about-denny-expo-2026/13-photo-90.webp",
+        "/images/articles/about-denny-expo-2026/14-photo-86.webp",
+        "/images/articles/about-denny-expo-2026/15-photo-91.webp",
+        "/images/articles/about-denny-expo-2026/16-photo-92.webp",
+        "/images/articles/about-denny-expo-2026/17-photo-95.webp",
+        "/images/articles/about-denny-expo-2026/18-photo-103.webp",
+        "/images/articles/about-denny-expo-2026/19-photo-101.webp",
+        "/images/articles/about-denny-expo-2026/20-photo-105.webp"
+      ]
+    },
+    "about-denny-forum-2025": {
+      "pageRoute": "/about",
+      "budgetClass": "deep",
+      "cover": "/images/articles/about-denny-forum-2025/01-cover.webp",
+      "body": [
+        "/images/articles/about-denny-forum-2025/02-photo-25.webp",
+        "/images/articles/about-denny-forum-2025/03-photo-26.webp",
+        "/images/articles/about-denny-forum-2025/04-photo-29.webp",
+        "/images/articles/about-denny-forum-2025/05-photo-30.webp",
+        "/images/articles/about-denny-forum-2025/06-photo-34.webp",
+        "/images/articles/about-denny-forum-2025/07-photo-31.webp",
+        "/images/articles/about-denny-forum-2025/08-photo-28.webp",
+        "/images/articles/about-denny-forum-2025/09-photo-32.webp",
+        "/images/articles/about-denny-forum-2025/10-photo-33.webp",
+        "/images/articles/about-denny-forum-2025/11-photo-20.webp",
+        "/images/articles/about-denny-forum-2025/12-photo-21.webp",
+        "/images/articles/about-denny-forum-2025/13-photo-18.webp",
+        "/images/articles/about-denny-forum-2025/14-photo-19.webp",
+        "/images/articles/about-denny-forum-2025/15-photo-22.webp"
+      ]
+    },
+    "about-denny-forums-2019": {
+      "pageRoute": "/about",
+      "budgetClass": "standard",
+      "cover": "/images/articles/about-denny-forums-2019/01-cover.webp",
+      "body": [
+        "/images/articles/about-denny-forums-2019/02-photo-14.webp",
+        "/images/articles/about-denny-forums-2019/03-photo-15.webp"
+      ]
+    },
+    "about-denny-profile": {
+      "pageRoute": "/about",
+      "budgetClass": "standard",
+      "cover": "/images/articles/about-denny-profile/01-cover.webp",
+      "body": [
+        "/images/articles/about-denny-profile/02-photo-13.webp",
+        "/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"
+      ]
+    },
+    "about-denny-speaking": {
+      "pageRoute": "/about",
+      "budgetClass": "standard",
+      "cover": "/images/articles/about-denny-speaking/01-cover.webp",
+      "body": [
+        "/images/articles/about-denny-speaking/02-photo-0.webp",
+        "/images/articles/about-denny-speaking/03-photo-2.webp",
+        "/images/articles/about-denny-speaking/04-photo-3.webp",
+        "/images/articles/about-denny-speaking/05-photo-11.webp",
+        "/images/articles/about-denny-speaking/06-photo-9.webp",
+        "/images/articles/about-denny-speaking/07-photo-28.webp",
+        "/images/articles/about-denny-speaking/08-photo-33.webp",
+        "/images/articles/about-denny-speaking/09-photo-59.webp"
+      ]
+    },
     "above-ground-vs-in-ground-robotic-pool-cleaners": {
       "budgetClass": "standard",
       "cover": "/images/blog/above-ground-vs-in-ground-pool-robots.webp",
@@ -41284,6 +42605,370 @@
     }
   },
   "externalSources": {
+    "about-denny-expo-2025": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/01-cover.webp",
+          "hash": "sha256:e490733963acadd084bfc7c291a7fa242701573e7f9f64dde52824ee51b4c0ef"
+        },
+        "02-photo-40.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/02-photo-40.webp",
+          "hash": "sha256:2b1cf11d4fc38b74cc2799d510d453224a37f17afb5e63e1a0d6e8083b9fbaee"
+        },
+        "03-photo-39.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/03-photo-39.webp",
+          "hash": "sha256:1e370f33685fd72104dfa4fffbb35d23c3283391d5718f88cd2ccd1e4e68936e"
+        },
+        "04-photo-41.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/04-photo-41.webp",
+          "hash": "sha256:30e4f82f85c999f18421b620b5e3962325822f784db3aafc7a8478efd9b3a011"
+        },
+        "05-photo-45.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/05-photo-45.webp",
+          "hash": "sha256:833afc90fb6063a084246c4006566c4650214cd9149a0082ad9f74ccfb098581"
+        },
+        "06-photo-46.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/06-photo-46.webp",
+          "hash": "sha256:e11b24e70e794d894ac5c949ac52b7e8100e31293ad0b7f2d81b8d7fb4151d7e"
+        },
+        "07-photo-48.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/07-photo-48.webp",
+          "hash": "sha256:7f6736d7d5d227373d1fc27492240b137d907314a56009e71f343295c3104504"
+        },
+        "08-photo-50.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/08-photo-50.webp",
+          "hash": "sha256:3506525a3ae93add245c9d1061b0746ce2152538b24311c9a832bd6540fe9258"
+        },
+        "09-photo-73.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/09-photo-73.webp",
+          "hash": "sha256:6182c3b74b61479ab1b4109123f10470adfe3c812e43ecd77dd44a74b5e73c25"
+        },
+        "10-photo-43.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/10-photo-43.webp",
+          "hash": "sha256:d62365df0668f84c06595f66c6905657404cd9fa9df77e52ae1f6f34843600cd"
+        },
+        "11-photo-36.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/11-photo-36.webp",
+          "hash": "sha256:94150dfcd3273b4d0dd1ae3585afc2cdd6f45bf5c6dbf56e4840d7edc0d8bd87"
+        },
+        "12-photo-81.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/12-photo-81.webp",
+          "hash": "sha256:a63f3713cca03f0173193a2e2f59039cd00369db9cdf0f29945f88bd804c6cb0"
+        },
+        "13-photo-42.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/13-photo-42.webp",
+          "hash": "sha256:724c56465377c33838937e28eca379b5a18eedb0a13f4387489219a3093534b7"
+        },
+        "14-photo-47.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/14-photo-47.webp",
+          "hash": "sha256:176aa204fa41e0958c44ccd86cb129a97b1cfa2698aeaedff38abdb948dd5c4e"
+        },
+        "15-photo-49.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/15-photo-49.webp",
+          "hash": "sha256:cccaefb0b0b169e478cc7a3e6c2e523c08bec6c406d7d1d23ff1bc6d8835f869"
+        },
+        "16-photo-71.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/16-photo-71.webp",
+          "hash": "sha256:f63b0a21ef7e12b62d233de43f78857124094038a8d44a48da4f0ef09c82f20c"
+        },
+        "17-photo-74.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/17-photo-74.webp",
+          "hash": "sha256:282c192112000202a877b3b504339d872961d5d59417c7d615dfe0f1be4384a2"
+        },
+        "18-photo-78.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2025/18-photo-78.webp",
+          "hash": "sha256:09dc6c022f55ddd5c9c683e6d081f5bab6c21465880b055c415e808cd444df78"
+        }
+      }
+    },
+    "about-denny-expo-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/01-cover.webp",
+          "hash": "sha256:fada37a84b9aff37dd07500c69e341ca0667540f752e81961c525fde29e16e91"
+        },
+        "02-photo-106.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/02-photo-106.webp",
+          "hash": "sha256:ada750e347926ba145d1dd7acd0fa3a6b25b4d3c029f8645d42f6afe56c8cbad"
+        },
+        "03-photo-82.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/03-photo-82.webp",
+          "hash": "sha256:3a5517ad441689e1b73bfbbd5c99f4089a3028411bc81fe05e755a7c20605ad4"
+        },
+        "04-photo-83.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/04-photo-83.webp",
+          "hash": "sha256:a54c0df447aeac10512d251a1a0ae5e4aa98aaaa761ddca7a617b574b0be24cf"
+        },
+        "05-photo-63.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/05-photo-63.webp",
+          "hash": "sha256:055b45283eca1a6564c6ac2197c02f43fd36589e3bc52a3642a00a0915b36c3d"
+        },
+        "06-photo-84.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/06-photo-84.webp",
+          "hash": "sha256:1eaf06a118b49ae1189bd303740da7f0cc97ba00c545082a4b40da237e83b582"
+        },
+        "07-photo-54.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/07-photo-54.webp",
+          "hash": "sha256:a046dcd486aa1df8cd5cba0e5f5ad9cbff25e100307a60b82691264a070ae947"
+        },
+        "08-photo-59.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/08-photo-59.webp",
+          "hash": "sha256:e8cba487156f7b3d35720b6b8aaa8351f9c056c47783da61aca1a969c88cc6e4"
+        },
+        "09-photo-87.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/09-photo-87.webp",
+          "hash": "sha256:88a9138e9682cb548cc78df6d652f9afa39ca9ae35294ba3934a22f7617452ef"
+        },
+        "10-photo-89.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/10-photo-89.webp",
+          "hash": "sha256:af99020bd9c83137871b67107fde59e8425cb99d49b5a2c364a1ddaa0330d5e9"
+        },
+        "11-photo-97.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/11-photo-97.webp",
+          "hash": "sha256:93e96c00a4950ec65261c120d528a5b8d345dad9a67b1a2a954c7b239cdbfe04"
+        },
+        "12-photo-98.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/12-photo-98.webp",
+          "hash": "sha256:ab763eac21a377e79da750cb7259655a1b329d2bc1307c69ee8bdab6a0007b50"
+        },
+        "13-photo-90.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/13-photo-90.webp",
+          "hash": "sha256:5c79ad5d1baaa2e295f91849868d054497f82487db86f32cc4b0266a41409c5c"
+        },
+        "14-photo-86.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/14-photo-86.webp",
+          "hash": "sha256:01e88848059d7a8e7931da777ed3f13def51e5363060d94737138c467c15d772"
+        },
+        "15-photo-91.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/15-photo-91.webp",
+          "hash": "sha256:4e5b27a80fa0acd11b6ce01a20873a1f831e4864505c38d729f4258320c2a9af"
+        },
+        "16-photo-92.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/16-photo-92.webp",
+          "hash": "sha256:54de1954765b53cb3f87f9c7af929d46f1b4ac4947401befddce458bfcb51203"
+        },
+        "17-photo-95.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/17-photo-95.webp",
+          "hash": "sha256:c3213dacb7098d7858896ff5793e9dba73b4b43d80a624dc43a38968dbbdce42"
+        },
+        "18-photo-103.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/18-photo-103.webp",
+          "hash": "sha256:ec5f2dce7f86cbfbbc0b7c8be3c0b960910869457b114140eba5ba89378493c7"
+        },
+        "19-photo-101.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/19-photo-101.webp",
+          "hash": "sha256:401849f2d62a770617dae24ca344655e3e8297b81c9aae1183d8f7d608fcff4b"
+        },
+        "20-photo-105.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-expo-2026/20-photo-105.webp",
+          "hash": "sha256:08d9c7d6fdbaa14185cd4de23c3680dbf1d8d009794b85760d78e38c8e82237f"
+        }
+      }
+    },
+    "about-denny-forum-2025": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/01-cover.webp",
+          "hash": "sha256:9ba3f3000e02e7a435cd93785444c58b6b1508fc4d1633e45e8d3f35112a1651"
+        },
+        "02-photo-25.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/02-photo-25.webp",
+          "hash": "sha256:51662c06567da652399c52ba1d57e76647db5ef78de3abf5b46fe4c0e6f95eb7"
+        },
+        "03-photo-26.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/03-photo-26.webp",
+          "hash": "sha256:560ea80127f6ee63e1189f150a84621f21d56b9368fe16b183d288a5a98962e0"
+        },
+        "04-photo-29.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/04-photo-29.webp",
+          "hash": "sha256:f6c8487b12ffc670970265aead62877a9ae3b2c236cf1f4e9f6c833061b8ba2d"
+        },
+        "05-photo-30.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/05-photo-30.webp",
+          "hash": "sha256:a11ef8a4f8f58c76dfe653d87380c8534c76dcdbc8424dc43f769119d04648a2"
+        },
+        "06-photo-34.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/06-photo-34.webp",
+          "hash": "sha256:e8692de2786d9156b9de0fba309ef39b24b5da5794339f3c44774e2bf2c25a2a"
+        },
+        "07-photo-31.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/07-photo-31.webp",
+          "hash": "sha256:aa3e45a74fcf22383ca06d1fd30cbeecab5136151a1631dd5adee611143cae4c"
+        },
+        "08-photo-28.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/08-photo-28.webp",
+          "hash": "sha256:450c1c085e155eb3a0ed8fd7a5416ea49738a2a5053c9e79c4217ae9f22e0a2d"
+        },
+        "09-photo-32.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/09-photo-32.webp",
+          "hash": "sha256:1be482963ffcec04a5d4ff551256077b6c19aaaca648f8a2f49ae519d1e936bc"
+        },
+        "10-photo-33.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/10-photo-33.webp",
+          "hash": "sha256:9a1148e1ec852be29d74ccac3e253ee03278c0edc0fa213a44b51672c23f637d"
+        },
+        "11-photo-20.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/11-photo-20.webp",
+          "hash": "sha256:ff74ade27756891e3c50b908d5b7e45083cfe2c2aa207e35630d48b0255bc5e1"
+        },
+        "12-photo-21.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/12-photo-21.webp",
+          "hash": "sha256:bf9be248609cb5c0ef29b1fbf11edb3956258cbd3296e3b71259e3b6a1fac718"
+        },
+        "13-photo-18.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/13-photo-18.webp",
+          "hash": "sha256:80e6175f3af1584a48b4f7fdba41d5bcf09c10895c30d295c23781d09aede28a"
+        },
+        "14-photo-19.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/14-photo-19.webp",
+          "hash": "sha256:b84a75d6cb57e895ac63ade218dd72e93a5c5a6da8569a0636813de9d3e2b903"
+        },
+        "15-photo-22.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forum-2025/15-photo-22.webp",
+          "hash": "sha256:565c776d0cc46928378044a50dcaaec206d73da19d7d7588e695223f560b3277"
+        }
+      }
+    },
+    "about-denny-forums-2019": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forums-2019/01-cover.webp",
+          "hash": "sha256:0965adb06493c855d0bc64965f0d6182757b6eeccf731b575ce9bd89ef229b18"
+        },
+        "02-photo-14.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forums-2019/02-photo-14.webp",
+          "hash": "sha256:20c504ed36819861c6614f836c5285c19978ccf1958100c8639e0c8e40110250"
+        },
+        "03-photo-15.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-forums-2019/03-photo-15.webp",
+          "hash": "sha256:a70c951a1e14590006603a153d2f8df0dd0eb103dae7ef1ccefeb56a05d36372"
+        }
+      }
+    },
+    "about-denny-profile": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-profile/01-cover.webp",
+          "hash": "sha256:9a1148e1ec852be29d74ccac3e253ee03278c0edc0fa213a44b51672c23f637d"
+        },
+        "02-photo-13.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-profile/02-photo-13.webp",
+          "hash": "sha256:213c781e62cf7955165a3ef9135ee8a12c6a55eeafd00643afff1676a3cf91ff"
+        },
+        "03-wcb-2026-key-visual.png": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp",
+          "hash": "sha256:2b6553f7ed7dd70e048ff730bbfc2c1328e626978a8883261c0cc9a10f854dc8"
+        }
+      }
+    },
+    "about-denny-speaking": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/01-cover.webp",
+          "hash": "sha256:0fa888765884b0a97387976a4ce5c672b74f5610aa247383dbcb12e40249affe"
+        },
+        "02-photo-0.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/02-photo-0.webp",
+          "hash": "sha256:84f888cb2ddd0d08b0221164f6d91a362124c910a45eb295d815985ae67452fb"
+        },
+        "03-photo-2.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/03-photo-2.webp",
+          "hash": "sha256:050f5cd31aa0527728b9ddda3b94b73fea74ff9bd702c8907216cb59c7d67bb5"
+        },
+        "04-photo-3.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/04-photo-3.webp",
+          "hash": "sha256:64fe487619eb67714c270246cd50f1974945363feff1401a4867ebb00b085bef"
+        },
+        "05-photo-11.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/05-photo-11.webp",
+          "hash": "sha256:9167bbd7110b42492d862514d48c7899f4ae7b780cd03afa144690aee24d7888"
+        },
+        "06-photo-9.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/06-photo-9.webp",
+          "hash": "sha256:bfc8489bc1f7793801fde35f5da0b55355706d29ed6634cfd11f8e7e6a4fc776"
+        },
+        "07-photo-28.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/07-photo-28.webp",
+          "hash": "sha256:450c1c085e155eb3a0ed8fd7a5416ea49738a2a5053c9e79c4217ae9f22e0a2d"
+        },
+        "08-photo-33.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/08-photo-33.webp",
+          "hash": "sha256:9a1148e1ec852be29d74ccac3e253ee03278c0edc0fa213a44b51672c23f637d"
+        },
+        "09-photo-59.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/about-denny-speaking/09-photo-59.webp",
+          "hash": "sha256:e8cba487156f7b3d35720b6b8aaa8351f9c056c47783da61aca1a969c88cc6e4"
+        }
+      }
+    },
     "aiper-scuba-s3": {
       "files": {
         "01-cover.webp": {
