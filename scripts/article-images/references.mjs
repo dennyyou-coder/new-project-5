@@ -144,7 +144,13 @@ export function discoverArticleInventory({ contentRoot, publicRoot, historicalKi
       }
     }
 
+    const pageRoute = fields.page_route;
+    if (pageRoute && (!file.startsWith(path.join(contentRoot, "pages") + path.sep)
+      || !/^\/[a-z0-9]+(?:[-/][a-z0-9]+)*$/.test(pageRoute))) {
+      throw articleError(slug, file, "page_route requires a content/pages record and a safe site path");
+    }
     articles[slug] = {
+      ...(pageRoute ? { pageRoute } : {}),
       slug,
       file,
       budgetClass,

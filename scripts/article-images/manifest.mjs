@@ -74,6 +74,7 @@ export function buildManifest({ inventory, processedAssets, processorVersion, ex
   for (const slug of Object.keys(inventory.articles ?? {}).sort()) {
     const article = inventory.articles[slug];
     articles[slug] = {
+      ...(article.pageRoute ? { pageRoute: article.pageRoute } : {}),
       budgetClass: article.budgetClass,
       cover: article.cover,
       body: [...article.body]

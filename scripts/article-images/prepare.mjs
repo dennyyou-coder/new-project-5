@@ -823,7 +823,7 @@ async function planSourceArticle(context, slug, sourceRoot) {
       kind,
       crop: settings.crop,
       focalPoint: settings.focalPoint,
-      preserveCrop: path.dirname(article.file) === path.join(context.contentRoot, "products"),
+      preserveCrop: Boolean(article.pageRoute) || path.dirname(article.file) === path.join(context.contentRoot, "products"),
       outputFormat: role === "chart" ? undefined : "webp"
     });
     if (!result.ok) throw transformFailure(slug, descriptor, result);
@@ -886,6 +886,19 @@ async function planSourceArticle(context, slug, sourceRoot) {
     .filter((file) => file.startsWith(`${path.join(context.publicRoot, "images", "articles", slug)}${path.sep}`))
     .filter((file) => fs.existsSync(file) && isGitTracked(context.projectRoot, file));
 
+  if (article.pageRoute) {
+    // Recovery must read newly prepared photos, never the inventory placeholders.
+    const pageAssets = { ...context.currentInventory.assets };
+    for (const output of stageOutputs.filter((item) => !item.mobile)) {
+      const file = path.join(context.stageRoot, "page-inputs", path.posix.basename(output.url));
+      await fsp.mkdir(path.dirname(file), { recursive: true });
+      await fsp.writeFile(file, output.buffer);
+      pageAssets[output.url] = { url: output.url, file };
+    }
+    const pageContext = { ...context, currentInventory: { ...context.currentInventory, assets: pageAssets } };
+    await applyPhotoAggregateRecovery(pageContext, slug,
+      { ...article, cover: coverUrl, body: updatedBody }, processed, stageOutputs, warnings);
+  }
   const explicitSocial = article.social && article.social !== article.cover ? article.social : coverUrl;
   return {
     slug,
@@ -1056,7 +1069,7 @@ async function applyPhotoAggregateRecovery(context, slug, article, processed, st
 
   const normalMobile = normalDeepPhotoMobileStage(article, processed, selectedDesktop);
   const mobileStages = [normalMobile];
-  if (normal.mobile > budget.mobile) {
+  if (normalMobile.bytes > budget.mobile) {
     for (const longEdge of PHOTO_AGGREGATE_MOBILE_LONG_EDGES) {
       const eligibleUrls = longEdge < 640
         ? classifyHistoricalExtremeRecoveryAssets({
