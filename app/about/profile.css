@@ -77,3 +77,24 @@
 #denny-about .media-caption{font-size:15px;line-height:1.7;margin:18px 0 24px}
 #denny-about .media-actions{display:flex;gap:22px;flex-wrap:wrap}
 @media(max-width:800px){#denny-about .media-grid{grid-template-columns:1fr;gap:32px;padding-bottom:36px}#denny-about .media-column+ .media-column{border-top:1px solid #cddbe4;padding:30px 0 0}#denny-about .media-column+ .media-column::before{display:none}#denny-about .media-feature h4{font-size:20px}}
+
+/* Compact exhibition finale: natural image height, balanced columns and one action. */
+#denny-about .expo-finale{background:#edf3f6;border-top:3px solid #245cca;padding:32px;margin-top:20px}
+#denny-about .expo-finale-heading{margin-bottom:26px}
+#denny-about .expo-finale-heading h3{font-size:32px;line-height:1.2;margin-top:12px;letter-spacing:-.035em}
+#denny-about .expo-finale-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px;align-items:stretch}
+#denny-about .expo-finale-copy{display:flex;flex-direction:column;gap:16px;justify-content:space-between}
+#denny-about .expo-finale-copy p{font-size:16px;line-height:1.7;margin:0}
+#denny-about .expo-finale-copy .expo-finale-ambition{font-weight:650;color:#314853;border-left:2px solid #245cca;padding-left:14px}
+#denny-about .expo-finale-visual{min-width:0;align-self:center}
+#denny-about .expo-finale-visual .photo img{height:auto;aspect-ratio:auto;object-fit:contain}
+#denny-about .expo-finale-visual figcaption{font-size:11px;line-height:1.5;padding:8px 0 0;color:#586975}
+#denny-about .expo-finale-footer{border-top:1px solid #c9d9e2;margin-top:26px;padding-top:22px;display:flex;justify-content:space-between;gap:24px;align-items:center}
+#denny-about .expo-finale-footer strong{display:block;font-size:22px;line-height:1.4}
+#denny-about .expo-finale-footer span{display:block;font-size:14px;color:#586975;margin-top:4px}
+#denny-about .expo-finale-footer .btn{flex-shrink:0}
+#denny-about .media-feature .videoimage{margin-bottom:0}
+#denny-about .textlink{display:inline-block;text-decoration-thickness:1px;text-underline-offset:5px;line-height:1.5}
+@media(max-width:800px){#denny-about .expo-finale{padding:24px 20px}#denny-about .expo-finale-heading h3{font-size:27px}#denny-about .expo-finale-grid{grid-template-columns:1fr;gap:24px}#denny-about .expo-finale-visual{order:-1}#denny-about .expo-finale-footer{align-items:flex-start;flex-direction:column;gap:18px}#denny-about .expo-finale-footer strong{font-size:21px}#denny-about .expo-finale-footer .btn{width:100%}}
+
+#denny-about .media-feature>img{object-fit:contain;background:#e8eef2}

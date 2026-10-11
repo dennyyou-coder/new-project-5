@@ -195,7 +195,7 @@ export default function AboutPage() {
 <p>CITIC Securities · GF Securities<br />招商证券 · 开源证券 · 德邦证券</p>
 <span>Topics shown in the gallery include cleaning-industry history, overseas markets and floor-washer development.</span>
 </div>
-<a className="textlink" href="/contact">Discuss a talk or industry exchange →</a>
+<a className="textlink" href="/contact">Discuss a speaking engagement</a>
 </div>
 </div>
 </div>
@@ -211,18 +211,18 @@ export default function AboutPage() {
 <ProfileImage photo={photo("/images/articles/story-of-hard-floor-washers/01-cover.webp", "The Story of Hard Floor Washers")} />
 <h4>The Story of Hard Floor Washers</h4></a>
 <div className="media-links">
-<a href="/blog/irobot-decline-and-the-new-robot-vacuum-order">iRobot’s Decline and the New Order in Robot Vacuums <span aria-hidden="true">→</span></a>
-<a href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">My founder’s journal: Building the World’s No.1 Cleaning Show from Scratch <span aria-hidden="true">→</span></a>
+<a href="/blog/irobot-decline-and-the-new-robot-vacuum-order">iRobot’s Decline and the New Order in Robot Vacuums</a>
+<a href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">My founder’s journal: Building the World’s No.1 Cleaning Show from Scratch</a>
 </div>
-<a className="textlink" href="/blog/archive">Explore all analysis →</a>
+<a className="textlink" href="/blog/archive">Explore all analysis</a>
 </div>
 <div className="media-column" id="watch"><h3>Watch &amp; follow</h3>
 <a className="media-feature" href="https://www.youtube.com/watch?v=kCa9-2gsSVE" rel="noopener" target="_blank">
 <div className="videoimage"><img alt="Segway-Ninebot: From Mobility to Robot Mowers" loading="lazy" src="https://i.ytimg.com/vi/kCa9-2gsSVE/hq720.jpg" width={1280} height={720} decoding="async" /><span className="play" aria-hidden="true">▶</span></div>
 <h4>Segway-Ninebot: From Mobility to Robot Mowers</h4></a>
 <p className="media-caption">Company stories and product strategy.<br />Mandarin audio · English &amp; Chinese subtitles</p>
-<div className="media-actions"><a className="textlink" href="https://www.youtube.com/@WCBdenny/videos" rel="noopener" target="_blank">Denny on YouTube ↗</a>
-<a className="textlink" href="/videos">All WCB videos →</a></div>
+<div className="media-actions"><a className="textlink" href="https://www.youtube.com/@WCBdenny/videos" rel="noopener" target="_blank">Denny on YouTube</a>
+<a className="textlink" href="/videos">All WCB videos</a></div>
 </div>
 </div>
 </section>
@@ -306,47 +306,19 @@ export default function AboutPage() {
 </div>
 </div>
 <ProfileGallery label="MAR 2026 photo gallery" photos={galleryPhotos["about-denny-expo-2026"]} /></article>
-<article className="event future-event" id="wcb-2026"><div className="event-intro"><span className="date">NOV 2026 · THE NEXT UPGRADE</span>
-<h3>From the supply chain to the wider cleaning industry.</h3>
-<p>WCB Expo 2026 takes the next step: bringing brands, finished-product manufacturers, component suppliers, R&amp;D and procurement teams, and channel partners together in Suzhou.</p>
-<p>The scope extends across robot vacuums, floor washers, vacuum cleaners, window-cleaning robots, robotic mowers, pool cleaning, commercial cleaning and pressure washing.</p>
-<div className="event-facts"><div><strong>3 days</strong>
-<span>to meet, discover and discuss business</span>
+<article className="expo-finale" id="wcb-2026" aria-labelledby="expo-finale-title">
+<header className="expo-finale-heading"><span className="date">NOV 2026 · THE NEXT CHAPTER</span>
+<h3 id="expo-finale-title">Bringing the cleaning industry together.</h3></header>
+<div className="expo-finale-grid">
+<div className="expo-finale-copy">
+<p>WCB Expo 2026 grows from our forums and supply-chain exhibitions into an international meeting place for cleaning brands, manufacturers, suppliers and professional buyers.</p>
+<p>Alongside the exhibition, the planned programme includes industry forums, procurement matchmaking, product launches and exhibitor networking.</p>
+<p className="expo-finale-ambition">My ambition: to build the world’s No.1 specialist cleaning exhibition.</p>
 </div>
-<div><strong>141 planned booths</strong>
-<span>according to the 8 October 2026 floor plan</span>
+<div className="expo-finale-visual"><ProfileGallery single label="WCB Expo 2026 promotional artwork" photos={[photo("/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp", "WCB Expo 2026 · Promotional key visual")]} /></div>
 </div>
-</div>
-<p className="expo-ambition">My ambition is to build the world’s No.1 specialist cleaning exhibition—growing from the industry gatherings and supply-chain exhibitions we have already organized.</p>
-<div className="future-date">18–20 November 2026<span>Suzhou Shishan Convention Center · Suzhou, China</span>
-</div>
-<a className="btn" href="/wcb-expo">Explore WCB Expo 2026</a>
-</div>
-<figure className="future-visual"><ProfileGallery single label="WCB Expo 2026 promotional artwork" photos={[photo("/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp", "WCB Expo 2026 · Promotional key visual")]} /><div className="future-visual-note"><h4>The planned WCB 2026 programme</h4>
-<dl className="expo-programme"><div><dt><span>01</span>
-Procurement matchmaking</dt>
-<dd>Connect exhibitors with invited purchasing teams around product directions and sourcing needs.</dd>
-</div>
-<div><dt><span>02</span>
-Industry forums</dt>
-<dd>Discussions on technology, supply chains and overseas markets, with entrepreneur and expert sessions planned for 18 November.</dd>
-</div>
-<div><dt><span>03</span>
-Product &amp; technology launches</dt>
-<dd>Two launch sessions are planned for 19–20 November. Exhibitor applications and presentation content are subject to review.</dd>
-</div>
-<div><dt><span>04</span>
-Exhibitor networking dinner</dt>
-<dd>A setting for exhibitors and invited guests to continue conversations beyond the exhibition floor.</dd>
-</div>
-<div><dt><span>05</span>
-Exhibitor directory &amp; communications</dt>
-<dd>Company listings, basic publicity and selected product coverage help buyers discover participating businesses.</dd>
-</div>
-</dl>
-<p className="programme-note">Planned activities; final schedules and participation arrangements will be announced by the organizer.</p>
-</div>
-</figure>
+<div className="expo-finale-footer"><div><strong>18–20 November 2026</strong><span>Suzhou Shishan Convention Center · Suzhou, China</span></div>
+<a className="btn" href="/wcb-expo">Explore WCB Expo 2026</a></div>
 </article>
 </section>
 
