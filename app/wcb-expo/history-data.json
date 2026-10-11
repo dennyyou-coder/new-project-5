@@ -1,0 +1,290 @@
+{
+  "events": [
+    {
+      "id": "about-denny-forums-2019",
+      "date": "2019",
+      "place": "Suzhou & Shenzhen",
+      "title": "An industry conversation, brought into the room.",
+      "facts": [
+        "2 cities",
+        "500 people at each forum"
+      ],
+      "paras": [
+        "Denny You organized industry forums in Suzhou and Shenzhen, bringing cleaning professionals together to discuss products, technology and business."
+      ]
+    },
+    {
+      "id": "about-denny-forum-2025",
+      "date": "July 2025",
+      "place": "Suzhou",
+      "title": "A larger conversation across the industry.",
+      "facts": [
+        "500 participants",
+        "Suzhou · July 2025"
+      ],
+      "paras": [
+        "Leading cleaning companies, manufacturers and suppliers gathered in Suzhou for presentations, panel discussions and product exchanges."
+      ]
+    },
+    {
+      "id": "about-denny-expo-2025",
+      "date": "November 2025",
+      "place": "The first supply-chain technology exhibition",
+      "title": "From discussions to products on the exhibition floor.",
+      "facts": [
+        "100+ exhibitors",
+        "2,000–3,000 visitors"
+      ],
+      "paras": [
+        "The first Cleaning Appliance Supply Chain Technology Exhibition combined product and component displays with talks from more than ten industry experts."
+      ]
+    },
+    {
+      "id": "about-denny-expo-2026",
+      "date": "March 2026",
+      "place": "Shenzhen",
+      "title": "A broader format for a regional industry hub.",
+      "facts": [
+        "Procurement matchmaking",
+        "New product launches"
+      ],
+      "paras": [
+        "Building on the first exhibition, the Shenzhen edition reached professionals across the region and added procurement matchmaking and new product launches."
+      ]
+    }
+  ],
+  "galleries": {
+    "about-denny-forums-2019": [
+      {
+        "src": "/images/articles/about-denny-forums-2019/01-cover.webp",
+        "caption": "2019 · Shenzhen forum audience"
+      },
+      {
+        "src": "/images/articles/about-denny-forums-2019/02-photo-14.webp",
+        "caption": "2019 · Suzhou forum · Denny speaking"
+      },
+      {
+        "src": "/images/articles/about-denny-forums-2019/03-photo-15.webp",
+        "caption": "2019 · Shenzhen forum · Industry exchange"
+      }
+    ],
+    "about-denny-forum-2025": [
+      {
+        "src": "/images/articles/about-denny-forum-2025/01-cover.webp",
+        "caption": "July 2025 · Suzhou · Full-room view"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/02-photo-25.webp",
+        "caption": "July 2025 · Suzhou · Presentations and audience"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/03-photo-26.webp",
+        "caption": "July 2025 · Suzhou · Industry presentations"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/04-photo-29.webp",
+        "caption": "July 2025 · Suzhou · Participants in the audience"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/05-photo-30.webp",
+        "caption": "July 2025 · Suzhou · Views from the audience"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/06-photo-34.webp",
+        "caption": "July 2025 · Suzhou · Panel discussion"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/07-photo-31.webp",
+        "caption": "July 2025 · Suzhou · Participants on stage"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/08-photo-28.webp",
+        "caption": "July 2025 · Suzhou · Denny discussing global trade"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/09-photo-32.webp",
+        "caption": "July 2025 · Suzhou · Guest presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/10-photo-33.webp",
+        "caption": "July 2025 · Suzhou · Denny in the panel"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/11-photo-20.webp",
+        "caption": "July 2025 · Suzhou · Product display conversations"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/12-photo-21.webp",
+        "caption": "July 2025 · Suzhou · Supplier discussions"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/13-photo-18.webp",
+        "caption": "July 2025 · Suzhou · Product demonstrations"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/14-photo-19.webp",
+        "caption": "July 2025 · Suzhou · Hands-on product exchange"
+      },
+      {
+        "src": "/images/articles/about-denny-forum-2025/15-photo-22.webp",
+        "caption": "July 2025 · Suzhou · Denny with a participant"
+      }
+    ],
+    "about-denny-expo-2025": [
+      {
+        "src": "/images/articles/about-denny-expo-2025/01-cover.webp",
+        "caption": "November 2025 · Full forum audience"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/02-photo-40.webp",
+        "caption": "November 2025 · Industry professionals in the audience"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/03-photo-39.webp",
+        "caption": "November 2025 · Expert presentation and audience"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/04-photo-41.webp",
+        "caption": "November 2025 · Technology presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/05-photo-45.webp",
+        "caption": "November 2025 · Expert sharing session"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/06-photo-46.webp",
+        "caption": "November 2025 · Discussion on stage"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/07-photo-48.webp",
+        "caption": "November 2025 · Product and market presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/08-photo-50.webp",
+        "caption": "November 2025 · Forum presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/09-photo-73.webp",
+        "caption": "November 2025 · Category presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/10-photo-43.webp",
+        "caption": "November 2025 · Conversations in the exhibition area"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/11-photo-36.webp",
+        "caption": "November 2025 · Visitors and product displays"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/12-photo-81.webp",
+        "caption": "November 2025 · Supplier conversations"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/13-photo-42.webp",
+        "caption": "November 2025 · Denny speaking on stage"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/14-photo-47.webp",
+        "caption": "November 2025 · Audience listening to the presentations"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/15-photo-49.webp",
+        "caption": "November 2025 · Market presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/16-photo-71.webp",
+        "caption": "November 2025 · Guest speaker"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/17-photo-74.webp",
+        "caption": "November 2025 · Cleaning-material samples"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2025/18-photo-78.webp",
+        "caption": "November 2025 · Motors and components on display"
+      }
+    ],
+    "about-denny-expo-2026": [
+      {
+        "src": "/images/articles/about-denny-expo-2026/01-cover.webp",
+        "caption": "March 2026 · Shenzhen · Panoramic view of the forum"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/02-photo-106.webp",
+        "caption": "March 2026 · Shenzhen · Conversations across the audience"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/03-photo-82.webp",
+        "caption": "March 2026 · Shenzhen · Visitors on the exhibition floor"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/04-photo-83.webp",
+        "caption": "March 2026 · Shenzhen · Industry forum audience"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/05-photo-63.webp",
+        "caption": "March 2026 · Shenzhen · Audience interaction"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/06-photo-84.webp",
+        "caption": "March 2026 · Shenzhen · Participants following the presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/07-photo-54.webp",
+        "caption": "March 2026 · Shenzhen · Participants on stage"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/08-photo-59.webp",
+        "caption": "March 2026 · Shenzhen · Denny speaking"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/09-photo-87.webp",
+        "caption": "March 2026 · Shenzhen · Industry presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/10-photo-89.webp",
+        "caption": "March 2026 · Shenzhen · Technology presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/11-photo-97.webp",
+        "caption": "March 2026 · Shenzhen · Product presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/12-photo-98.webp",
+        "caption": "March 2026 · Shenzhen · Robotics presentation"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/13-photo-90.webp",
+        "caption": "March 2026 · Shenzhen · Exhibition aisles"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/14-photo-86.webp",
+        "caption": "March 2026 · Shenzhen · Supplier booth discussions"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/15-photo-91.webp",
+        "caption": "March 2026 · Shenzhen · Visitors meeting exhibitors"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/16-photo-92.webp",
+        "caption": "March 2026 · Shenzhen · Product and supplier discussions"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/17-photo-95.webp",
+        "caption": "March 2026 · Shenzhen · Examining components together"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/18-photo-103.webp",
+        "caption": "March 2026 · Shenzhen · Conversations at the meeting table"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/19-photo-101.webp",
+        "caption": "March 2026 · Shenzhen · Exhibitor discussions"
+      },
+      {
+        "src": "/images/articles/about-denny-expo-2026/20-photo-105.webp",
+        "caption": "March 2026 · Shenzhen · Face-to-face business conversations"
+      }
+    ]
+  }
+}
