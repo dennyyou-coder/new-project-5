@@ -132,9 +132,8 @@ export default function AboutPage() {
 
 <nav aria-label="About page sections" className="sectionnav"><div className="wrap"><a href="#journey">My journey</a>
 <a href="#speaking">Speaking</a>
+<a href="#writing">Writing &amp; videos</a>
 <a href="#in-person">Forums &amp; events</a>
-<a href="#writing">Writing</a>
-<a href="#watch">Watch &amp; follow</a>
 </div>
 </nav>
 
@@ -202,7 +201,33 @@ export default function AboutPage() {
 </div>
 </section>
 
-<section className="wrap section" id="in-person"><div className="sectionhead"><div><div className="eyebrow">03 / IN PERSON</div>
+<section className="wrap section media-section" id="writing" aria-labelledby="media-title">
+<div className="sectionhead"><div><div className="eyebrow">03 / WRITING &amp; VIDEO</div>
+<h2 id="media-title">Sharing the industry’s stories.</h2></div>
+<p>Since 2017, I’ve explored cleaning companies, products and markets through articles and video.</p></div>
+<div className="media-grid">
+<div className="media-column"><h3>Selected writing</h3>
+<a className="media-feature" href="/blog/story-of-hard-floor-washers">
+<ProfileImage photo={photo("/images/articles/story-of-hard-floor-washers/01-cover.webp", "The Story of Hard Floor Washers")} />
+<h4>The Story of Hard Floor Washers</h4></a>
+<div className="media-links">
+<a href="/blog/irobot-decline-and-the-new-robot-vacuum-order">iRobot’s Decline and the New Order in Robot Vacuums <span aria-hidden="true">→</span></a>
+<a href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">My founder’s journal: Building the World’s No.1 Cleaning Show from Scratch <span aria-hidden="true">→</span></a>
+</div>
+<a className="textlink" href="/blog/archive">Explore all analysis →</a>
+</div>
+<div className="media-column" id="watch"><h3>Watch &amp; follow</h3>
+<a className="media-feature" href="https://www.youtube.com/watch?v=kCa9-2gsSVE" rel="noopener" target="_blank">
+<div className="videoimage"><img alt="Segway-Ninebot: From Mobility to Robot Mowers" loading="lazy" src="https://i.ytimg.com/vi/kCa9-2gsSVE/hq720.jpg" width={1280} height={720} decoding="async" /><span className="play" aria-hidden="true">▶</span></div>
+<h4>Segway-Ninebot: From Mobility to Robot Mowers</h4></a>
+<p className="media-caption">Company stories and product strategy.<br />Mandarin audio · English &amp; Chinese subtitles</p>
+<div className="media-actions"><a className="textlink" href="https://www.youtube.com/@WCBdenny/videos" rel="noopener" target="_blank">Denny on YouTube ↗</a>
+<a className="textlink" href="/videos">All WCB videos →</a></div>
+</div>
+</div>
+</section>
+
+<section className="wrap section" id="in-person"><div className="sectionhead"><div><div className="eyebrow">04 / IN PERSON</div>
 <h2>An influential forum.<br />A bigger ambition.</h2>
 </div>
 <p>A leading forum for China’s cleaning industry, bringing together brands, manufacturers and supply-chain partners. What began with two industry gatherings in 2019 has grown into forums, specialist exhibitions and the ambition behind WCB Expo.</p>
@@ -325,76 +350,5 @@ Exhibitor directory &amp; communications</dt>
 </article>
 </section>
 
-<section className="tinted" id="writing"><div className="wrap section"><div className="sectionhead"><div><div className="eyebrow">04 / WRITING</div>
-<h2>Understanding the business<br />behind the products.</h2>
-</div>
-<div><p>I’ve written extensively about the cleaning industry since 2017. These selected articles show the questions I keep returning to.</p>
-<a className="textlink" href="/blog/archive">Explore all analysis</a>
-</div>
-</div>
-<div className="cards"><a className="story" href="/blog/story-of-hard-floor-washers"><ProfileImage photo={photo("/images/articles/story-of-hard-floor-washers/01-cover.webp", "The Story of Hard Floor Washers")} /><div className="eyebrow">CATEGORY HISTORY</div>
-<h3>The Story of Hard Floor Washers</h3>
-<p>How a once unfamiliar product became a major cleaning category.</p>
-<span className="textlink">Read article</span>
-</a>
-<a className="story" href="/blog/irobot-decline-and-the-new-robot-vacuum-order"><ProfileImage photo={photo("/images/articles/irobot-decline-and-the-new-robot-vacuum-order/01-cover.webp", "iRobot’s Decline and the New Order in Robot Vacuums")} /><div className="eyebrow">COMPANY STRATEGY</div>
-<h3>iRobot’s Decline and the New Order in Robot Vacuums</h3>
-<p>A changing market, new competitors and the reshaping of an industry.</p>
-<span className="textlink">Read article</span>
-</a>
-<a className="story" href="/blog/aiper-fluidra-pool-robotics-alliance"><ProfileImage photo={photo("/images/articles/aiper-fluidra-pool-robotics-alliance/01-cover.webp", "Aiper’s Ambition: Why Fluidra Is Betting on a Chinese Pool Robotics Brand")} /><div className="eyebrow">INDUSTRY CONNECTIONS</div>
-<h3>Aiper’s Ambition: Why Fluidra Is Betting on a Chinese Pool Robotics Brand</h3>
-<p>The business logic behind a pool robotics alliance.</p>
-<span className="textlink">Read article</span>
-</a>
-</div>
-<div className="journal"><div className="eyebrow">A FOUNDER’S JOURNAL</div>
-<h3>Building the World’s No.1 Cleaning Show from Scratch</h3>
-<p>A personal record of the journey—from my first years in the industry to the ambition behind WCB Expo.</p>
-<a className="textlink" href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">Read the series</a>
-</div>
-</div>
-</section>
-
-<section className="wrap section" id="watch"><div className="sectionhead"><div><div className="eyebrow">05 / WATCH &amp; FOLLOW</div>
-<h2>The conversation continues.</h2>
-</div>
-<div><p>Company stories, product strategy and the business of cleaning, in video.</p>
-<a className="yt" href="https://www.youtube.com/@WCBdenny/videos" rel="noopener" target="_blank"><span>▶</span>
- Denny on YouTube</a>
-</div>
-</div>
-<div className="cards"><a className="story" href="https://www.youtube.com/watch?v=kCa9-2gsSVE" rel="noopener" target="_blank"><div className="videoimage"><img alt="Segway-Ninebot: From Mobility to Robot Mowers" loading="lazy" src="https://i.ytimg.com/vi/kCa9-2gsSVE/hq720.jpg" width={1280} height={720} decoding="async" /><span className="play">▶</span>
-</div>
-<h3>Segway-Ninebot: From Mobility to Robot Mowers</h3>
-<p>Company analysis · 7:15</p>
-<span className="textlink">Watch on YouTube</span>
-</a>
-<a className="story" href="https://www.youtube.com/watch?v=7oKIOV_-S2c" rel="noopener" target="_blank"><div className="videoimage"><img alt="BISSELL: CrossWave and Five Generations" loading="lazy" src="https://i.ytimg.com/vi/7oKIOV_-S2c/hq720.jpg" width={1280} height={720} decoding="async" /><span className="play">▶</span>
-</div>
-<h3>BISSELL: CrossWave and Five Generations</h3>
-<p>Company analysis · 10:48</p>
-<span className="textlink">Watch on YouTube</span>
-</a>
-<a className="story" href="https://www.youtube.com/watch?v=CXv_J_ffXS0" rel="noopener" target="_blank"><div className="videoimage"><img alt="Roborock: From Xiaomi to Global Markets" loading="lazy" src="https://i.ytimg.com/vi/CXv_J_ffXS0/hq720.jpg" width={1280} height={720} decoding="async" /><span className="play">▶</span>
-</div>
-<h3>Roborock: From Xiaomi to Global Markets</h3>
-<p>Company analysis · 8:02</p>
-<span className="textlink">Watch on YouTube</span>
-</a>
-</div>
-<div className="channelrow"><span>Mandarin audio · English &amp; Chinese subtitles</span>
-<a className="textlink" href="/videos">Browse WCB videos</a>
-<a className="textlink" href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">Follow the founder’s journal</a>
-</div>
-</section>
-
-<section className="contact"><div className="wrap"><div><div className="eyebrow">LET’S TALK</div>
-<h2>Have a place in this conversation?</h2>
-<p>Speaking, industry exchanges, content collaborations and exhibition partnerships.</p>
-</div>
-<a className="btn" href="/contact">Contact Denny &amp; WCB</a>
-</div>
-</section>
 </div>;
 }

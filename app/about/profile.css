@@ -59,3 +59,21 @@
 #denny-about{font-family:var(--font-manrope),Arial,sans-serif}#denny-about [id]{scroll-margin-top:110px}#denny-about .single-photo{min-width:0}#denny-about dialog{margin:auto}#denny-about .hero-photo .photo img{height:530px}#denny-about dialog .close{min-height:44px}#denny-about .hero-photo dialog img,#denny-about .bio-photo dialog img{height:auto;max-height:76vh}#denny-about .future-visual>.single-photo figcaption{padding:10px 0}#denny-about .album button{touch-action:pan-y}#denny-about .album-thumb img{height:48px}#denny-about .speaking-main>.album{top:110px}@media(max-width:800px){#denny-about .hero-photo .photo img{height:390px}#denny-about .album-thumb img{height:42px}}
 
 #denny-about .hero::before,#denny-about .hero::after{display:none}
+
+/* A compact writing-and-video introduction before the event timeline. */
+#denny-about .media-section{padding-bottom:0}
+#denny-about .media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:80px;padding-bottom:48px;border-bottom:1px solid #cddbe4}
+#denny-about .media-column{min-width:0;display:flex;flex-direction:column;position:relative}
+#denny-about .media-column+ .media-column::before{content:"";position:absolute;left:-40px;top:0;bottom:0;border-left:1px solid #cddbe4}
+#denny-about .media-column>h3{font-size:22px;margin:0 0 20px}
+#denny-about .media-feature{display:block;color:inherit;text-decoration:none}
+#denny-about .media-feature img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:4px}
+#denny-about .media-feature h4{font-size:21px;line-height:1.4;margin:16px 0 0}
+#denny-about .media-feature:hover h4,#denny-about .media-links a:hover{color:#245cca}
+#denny-about .media-links{margin:18px 0 22px}
+#denny-about .media-links a{display:flex;justify-content:space-between;gap:16px;border-top:1px solid #d5e0e7;padding:12px 0;font-size:15px;line-height:1.6;text-decoration:none;color:#314853}
+#denny-about .media-links span{color:#245cca;flex-shrink:0}
+#denny-about .media-column>.textlink,#denny-about .media-actions{margin-top:auto;align-self:flex-start}
+#denny-about .media-caption{font-size:15px;line-height:1.7;margin:18px 0 24px}
+#denny-about .media-actions{display:flex;gap:22px;flex-wrap:wrap}
+@media(max-width:800px){#denny-about .media-grid{grid-template-columns:1fr;gap:32px;padding-bottom:36px}#denny-about .media-column+ .media-column{border-top:1px solid #cddbe4;padding:30px 0 0}#denny-about .media-column+ .media-column::before{display:none}#denny-about .media-feature h4{font-size:20px}}
