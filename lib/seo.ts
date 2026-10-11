@@ -16,7 +16,7 @@ function truncateSnippet(value: string, maxLength: number) {
 }
 
 export function seoTitle(value: string) {
-  return truncateSnippet(value, 60);
+  return value.replace(/\s+/g, " ").trim();
 }
 
 export function seoDescription(value: string) {
