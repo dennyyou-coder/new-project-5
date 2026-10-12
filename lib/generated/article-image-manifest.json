@@ -5146,6 +5146,78 @@
         "outputHash": "sha256:91f2dd5d07df7b045b2757894834450f766e0945d51910dcde0309228a59371d"
       }
     },
+    "/images/articles/flex-history-chervon-galli/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 104592,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:aff357821dca27b6bf32e66e5201d550841b9ba7182d067161078649100221fa",
+      "outputHash": "sha256:98bbcf319d1fb4e10bded5ea882cff92b79697ab75d75b7ab03681bae6e08a29",
+      "mobile": {
+        "src": "/images/articles/flex-history-chervon-galli/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 28480,
+        "outputHash": "sha256:7c43d1c65dac92eb0f87bbfe47901b3bb0177a712471051fbdd824e9eadc7e77"
+      }
+    },
+    "/images/articles/flex-history-chervon-galli/02-heritage.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69092,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:fb3e9151af448fe1fd1b51a28f68f6419ab1146a4263d78a53803cecb78f2283",
+      "outputHash": "sha256:bff2ff9017c7e9495cf0409f2d07de233623e7e544fbb37ef84a0b9936e5b7b5",
+      "mobile": {
+        "src": "/images/articles/flex-history-chervon-galli/02-heritage-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25466,
+        "outputHash": "sha256:12cefa9ca703199c6eebe405f31458dfc0d4714ed5ad2c8f95730a2e45106079"
+      }
+    },
+    "/images/articles/flex-history-chervon-galli/03-us-24v-launch.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1067,
+      "bytes": 105042,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:51675b81500acc0337b1b0a320744c1559e3da0651d8c388c84f9a47d0b46de6",
+      "outputHash": "sha256:2fb6a2293958e136a5104ea4c5e54f767de987ee64aa2001ded0b0d78161d8a7",
+      "mobile": {
+        "src": "/images/articles/flex-history-chervon-galli/03-us-24v-launch-800.webp",
+        "width": 800,
+        "height": 534,
+        "bytes": 34820,
+        "outputHash": "sha256:f69203d5f8998f35936fb8887ef079e073b7915bc1f47d814da08672344619ed"
+      }
+    },
+    "/images/articles/flex-history-chervon-galli/04-product-and-user-team.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 67028,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:381c32c3118e7080036c721e6f151121073864c23488613519b6d616453e1280",
+      "outputHash": "sha256:a8a41d011a062eb75ddb313534bc0b073c32830d8d32b132ddf0147c9dd96071",
+      "mobile": {
+        "src": "/images/articles/flex-history-chervon-galli/04-product-and-user-team-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29132,
+        "outputHash": "sha256:6241a996212ff57e34adeea35286f4159f2d730a73c1799fc482c277ed975427"
+      }
+    },
     "/images/articles/fujia-first-half-results-august-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -39503,6 +39575,15 @@
       "cover": "/images/insights/first-major-industry-shift-in-2019-image-01.png",
       "body": []
     },
+    "flex-history-chervon-galli": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/flex-history-chervon-galli/01-cover.webp",
+      "body": [
+        "/images/articles/flex-history-chervon-galli/02-heritage.webp",
+        "/images/articles/flex-history-chervon-galli/03-us-24v-launch.webp",
+        "/images/articles/flex-history-chervon-galli/04-product-and-user-team.webp"
+      ]
+    },
     "floor-scrubber-maintenance-checklist": {
       "budgetClass": "standard",
       "cover": "/images/blog/floor-scrubber-maintenance-frequency-map.webp",
@@ -44570,6 +44651,30 @@
           "status": "matched",
           "primary": "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover.webp",
           "hash": "sha256:6b12d792a0291a331596eb89d6744275d398010e58ee4dc0a12279591400b6e6"
+        }
+      }
+    },
+    "flex-history-chervon-galli": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/flex-history-chervon-galli/01-cover.webp",
+          "hash": "sha256:aff357821dca27b6bf32e66e5201d550841b9ba7182d067161078649100221fa"
+        },
+        "02-heritage.webp": {
+          "status": "matched",
+          "primary": "/images/articles/flex-history-chervon-galli/02-heritage.webp",
+          "hash": "sha256:fb3e9151af448fe1fd1b51a28f68f6419ab1146a4263d78a53803cecb78f2283"
+        },
+        "03-us-24v-launch.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/flex-history-chervon-galli/03-us-24v-launch.webp",
+          "hash": "sha256:51675b81500acc0337b1b0a320744c1559e3da0651d8c388c84f9a47d0b46de6"
+        },
+        "04-product-and-user-team.webp": {
+          "status": "matched",
+          "primary": "/images/articles/flex-history-chervon-galli/04-product-and-user-team.webp",
+          "hash": "sha256:381c32c3118e7080036c721e6f151121073864c23488613519b6d616453e1280"
         }
       }
     },
