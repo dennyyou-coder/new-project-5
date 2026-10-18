@@ -123,6 +123,14 @@
   },
   "developments": [
     {
+      "date": "2026-10-07",
+      "title": "Shark adds two corded stick vacuums",
+      "summary": "Rocket Turbo and Detect + Reveal expand Shark’s corded range. Both convert to handheld use; Detect + Reveal adds directional sensing and blue-light debris illumination.",
+      "sourceIds": [
+        "shark-corded-october-2026"
+      ]
+    },
+    {
       "date": "2026-06-30",
       "title": "Shark launches the PowerDetect Transformer system",
       "summary": "SharkNinja introduced a modular Shark vacuum system combining upright, cordless and handheld cleaning formats.",
@@ -224,9 +232,17 @@
       "url": "https://ir.sharkninja.com/news/news-details/2026/SharkNinja-Introduces-Shark-PowerDetect-Speed-Clean--Empty-System/default.aspx",
       "publishedAt": "2026-04-14",
       "accessedAt": "2026-09-14"
+    },
+    {
+      "id": "shark-corded-october-2026",
+      "title": "Shark Introduces Two Lightweight Stick Vacuums with Nonstop Corded Power",
+      "publisher": "SharkNinja",
+      "url": "https://newsroom.sharkninja.com/shark-introduces-two-lightweight-stick-vacuums-with-nonstop-corded-power/",
+      "publishedAt": "2026-10-07",
+      "accessedAt": "2026-10-18"
     }
   ],
   "publishedAt": "2026-07-30T22:30:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-09-14T15:39:04+08:00"
+  "lastModified": "2026-10-18T11:12:39+08:00"
 }

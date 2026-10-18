@@ -40,6 +40,14 @@
   ],
   "competitivePosition": {"summary":"World Clean Biz assessment: Hilti differentiates through construction-workflow specialization, direct customer access and lifecycle services, rather than a simple mass-retail tool assortment. Buyers should make the same distinction in their diligence: ownership, equipment origin, sales entity, service provider and warranty obligations need separate evidence.","competitorSlugs":["milwaukee","bosch-power-tools","festool","makita"]},
   "developments": [
+    {
+      "date": "2026-09-24",
+      "title": "Hilti reports January–August sales growth",
+      "summary": "Group sales reached CHF 4.244 billion, up 1.9% in Swiss francs and 5.9% in local currencies. Hilti forecast mid-single-digit local-currency sales growth for 2026.",
+      "sourceIds": [
+        "hilti-eight-month-2026"
+      ]
+    },
     {"date":"2026","title":"Hilti publishes its 2025 annual report","summary":"Hilti reported its 2025 group results, strategy and global team information through its annual-report platform.","sourceIds":["hilti-annual-2025"]},
     {"date":"2025-08","title":"Hilti restates private Family Trust ownership","summary":"Hilti's business-results release states that the company is privately owned by the Martin Hilti Family Trust.","sourceIds":["hilti-ownership-2025"]},
     {"date":"1941","title":"Hilti is founded in Schaan","summary":"Hilti's official business-results release traces the group headquarters and founding to Schaan in 1941.","sourceIds":["hilti-ownership-2025"]}
@@ -49,9 +57,17 @@
     {"id":"hilti-ownership-2025","title":"Hilti Business Results 2025","publisher":"Hilti Group","url":"https://www.hilti.group/content/dam/documents/Media-Release/2025/business-result-1-8-2025/Hilti_Media-Release_Business-Result_1-8_2025_EN.pdf","publishedAt":"2025-08-01","accessedAt":"2026-08-01"},
     {"id":"hilti-us-terms","title":"Terms and Conditions of Sales","publisher":"Hilti USA","url":"https://www.hilti.com/content/hilti/W1/US/en/company/legal-and-footer-information/terms-conditions/terms-and-conditions-of-sales.html","publishedAt":"2025-02","accessedAt":"2026-08-01"},
     {"id":"hilti-us-warranty","title":"Tool Warranty","publisher":"Hilti USA","url":"https://www.hilti.com/content/resources/tool-support/local/warranty?country=US&lang=EN","accessedAt":"2026-08-01"},
-    {"id":"hilti-press-photos","title":"Hilti Press Photos","publisher":"Hilti Group","url":"https://www.hilti.group/content/hilti/CP/XX/en/company/media-relations/press-photos.html","accessedAt":"2026-08-05"}
+    {"id":"hilti-press-photos","title":"Hilti Press Photos","publisher":"Hilti Group","url":"https://www.hilti.group/content/hilti/CP/XX/en/company/media-relations/press-photos.html","accessedAt":"2026-08-05"},
+    {
+      "id": "hilti-eight-month-2026",
+      "title": "2026 Sales Results: January–August",
+      "publisher": "Hilti Group",
+      "url": "https://www.hilti.group/content/hilti/CP/XX/en/company/media-relations/media-releases/2026-1-8-sales.html",
+      "publishedAt": "2026-09-24",
+      "accessedAt": "2026-10-18"
+    }
   ],
   "publishedAt": "2026-08-01T12:20:00+08:00",
   "lastVerified": "2026-08-05",
-  "lastModified": "2026-08-05T23:28:00+08:00"
+  "lastModified": "2026-10-18T11:12:39+08:00"
 }

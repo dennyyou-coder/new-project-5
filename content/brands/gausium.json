@@ -93,6 +93,14 @@
   },
   "developments": [
     {
+      "date": "2026-10-15",
+      "title": "Gausium publishes a two-campus Shenzhen deployment case",
+      "summary": "The company reports one Omnie covering about 5,000 m² indoors at Futian TianAn Cyber Park and one Scrubber 75 serving about 20,000 m² of garage space at Longgang. October 15 is the case-study publication date; installation dates are not stated.",
+      "sourceIds": [
+        "gausium-tianan-case-2026"
+      ]
+    },
+    {
       "date": "2024",
       "title": "Gausium broadens its cleaning robot portfolio",
       "summary": "The company profile records the introduction of Beetle and Omnie alongside Phantas, Scrubber and Vacuum products.",
@@ -148,9 +156,17 @@
       "url": "https://gausium.com/pt/2026/06/16/commercial-cleaning-robots-facility-services/",
       "publishedAt": "2026-06-16",
       "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "gausium-tianan-case-2026",
+      "title": "25,000 m² Across Two Industrial Parks: Gausium Robots Take On Daily Floor Cleaning at TianAn Cyber Park, Shenzhen",
+      "publisher": "Gausium",
+      "url": "https://gausium.com/case/tianan-cyber-park-shenzhen-cleaning-robots/",
+      "publishedAt": "2026-10-15",
+      "accessedAt": "2026-10-18"
     }
   ],
   "publishedAt": "2026-08-08T02:50:00+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-08-08T02:50:00+08:00"
+  "lastModified": "2026-10-18T11:12:39+08:00"
 }

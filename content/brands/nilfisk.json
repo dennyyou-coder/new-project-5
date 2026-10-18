@@ -32,7 +32,7 @@
     }
   ],
   "ownership": {
-    "summary": "Freudenberg Home and Cleaning Solutions completed its takeover offer for Nilfisk in April 2026 after acceptances representing approximately 94% of the shares. Freudenberg announced compulsory acquisition and delisting steps, moving Nilfisk into private industrial ownership. Nilfisk continues as a standalone brand within Freudenberg's cleaning portfolio rather than being renamed Vileda.",
+    "summary": "Freudenberg Home and Cleaning Solutions completed and settled its takeover offer for Nilfisk on April 15, 2026, gaining more than 90% of the shares and voting rights. May 12 was the final day of trading and official listing on Nasdaq Copenhagen. Nilfisk states that the remaining shares were acquired following delisting and that it is now privately held. It continues as a standalone brand within Freudenberg’s cleaning portfolio.",
     "parentCompany": "Freudenberg Home and Cleaning Solutions"
   },
   "leadership": [
@@ -104,6 +104,14 @@
   },
   "developments": [
     {
+      "date": "2026-05-12",
+      "title": "Nilfisk ends trading on Nasdaq Copenhagen",
+      "summary": "Nilfisk confirmed the final trading and listing day, subsequent acquisition of the remaining shares, and discontinuation of its investor-relations website.",
+      "sourceIds": [
+        "nilfisk-delisting-2026"
+      ]
+    },
+    {
       "date": "2026-04-15",
       "title": "Nilfisk becomes part of Freudenberg",
       "summary": "Freudenberg completed the takeover after reaching approximately 94% acceptance and began compulsory acquisition and delisting steps.",
@@ -158,9 +166,17 @@
       "publisher": "Nilfisk",
       "url": "https://www.nilfisk.com/global/professional/about-nilfisk/about-nilfisk-group/the-history-of-nilfisk/",
       "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "nilfisk-delisting-2026",
+      "title": "Nilfisk delisted following acquisition by Freudenberg",
+      "publisher": "Nilfisk",
+      "url": "https://www.nilfisk.com/global/professional/news-and-articles/nilfisk-delisted-following-acquisition-by-freudenberg/",
+      "publishedAt": "2026-05-12",
+      "accessedAt": "2026-10-18"
     }
   ],
   "publishedAt": "2026-07-31T15:30:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T15:30:00+08:00"
+  "lastModified": "2026-10-18T11:12:39+08:00"
 }

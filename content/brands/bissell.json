@@ -45,9 +45,19 @@
   },
   "leadership": [
     {
+      "name": "Adam Madigan",
+      "role": "Chief Executive Officer",
+      "context": "Appointed effective October 1, 2026, after serving as President and Chief Operating Officer. The appointment was announced on September 22."
+    },
+    {
+      "name": "Mark Bissell",
+      "role": "Executive Chairman",
+      "context": "Continues as Executive Chairman after leaving the CEO role in September 2025."
+    },
+    {
       "name": "Max Bissell",
-      "role": "President of Global Markets",
-      "context": "Identified in BISSELL's May 2026 150th-anniversary and pet-care announcement."
+      "role": "President, Global Product",
+      "context": "The September 2026 leadership announcement identifies his global product responsibilities and reporting line to Adam Madigan."
     }
   ],
   "productPortfolio": [
@@ -126,6 +136,14 @@
     ]
   },
   "developments": [
+    {
+      "date": "2026-10-01",
+      "title": "Adam Madigan becomes CEO",
+      "summary": "The September 22 announcement named Madigan CEO effective October 1. Mark Bissell remains Executive Chairman and Max Bissell continues as President, Global Product.",
+      "sourceIds": [
+        "bissell-ceo-2026"
+      ]
+    },
     {
       "date": "2026-05-18",
       "title": "BISSELL marks 150 years with two pet-care products",
@@ -213,9 +231,17 @@
       "url": "https://www.bissell.com/en-us/news/bissell-tackles-ever-present-pet-messes-automatically-with-new-flexclean-furforce-the-2-in-1-robot-that-vacuums-and-mops-anytime-anywhere/",
       "publishedAt": "2026-03-02",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "bissell-ceo-2026",
+      "title": "BISSELL Appoints Adam Madigan as Chief Executive Officer",
+      "publisher": "BISSELL",
+      "url": "https://www.bissell.com/en-us/news/bissell-appoints-adam-madigan-as-chief-executive-officer/",
+      "publishedAt": "2026-09-22",
+      "accessedAt": "2026-10-18"
     }
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T21:15:00+08:00"
+  "lastModified": "2026-10-18T11:12:39+08:00"
 }

@@ -46,6 +46,16 @@
       "name": "Kevin Holleran",
       "role": "President and Chief Executive Officer",
       "context": "Hayward's 2025 Form 10-K and 2026 proxy identify Kevin Holleran as president and chief executive officer."
+    },
+    {
+      "name": "Eifion Jones",
+      "role": "Senior Vice President and Chief Financial Officer",
+      "context": "The October 2, 2026 appointment announcement confirms Jones remains CFO."
+    },
+    {
+      "name": "Jared Arrowood",
+      "role": "Vice President and Chief Accounting Officer",
+      "context": "Appointed October 2, 2026; reports to CFO Eifion Jones and oversees global accounting and financial reporting functions."
     }
   ],
   "productPortfolio": [
@@ -110,6 +120,14 @@
   },
   "developments": [
     {
+      "date": "2026-10-02",
+      "title": "Jared Arrowood becomes Chief Accounting Officer",
+      "summary": "Arrowood was promoted with immediate effect and continues reporting to CFO Eifion Jones.",
+      "sourceIds": [
+        "hayward-cao-2026"
+      ]
+    },
+    {
       "date": "2026-04",
       "title": "Hayward reports current public ownership",
       "summary": "The 2026 proxy identifies dated beneficial holders while confirming that Hayward Holdings remains the listed parent owned by shareholders.",
@@ -173,9 +191,17 @@
       "publisher": "Hayward",
       "url": "https://hayward.com/media/akeneo_connector/asset_files/I/S/ISPFSERIES_RevG_c00b.pdf",
       "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "hayward-cao-2026",
+      "title": "Hayward Holdings Names New Chief Accounting Officer",
+      "publisher": "Hayward Holdings",
+      "url": "https://investor.hayward.com/investor-news/news-details/2026/Hayward-Holdings-Names-New-Chief-Accounting-Officer/default.aspx",
+      "publishedAt": "2026-10-02",
+      "accessedAt": "2026-10-18"
     }
   ],
   "publishedAt": "2026-07-31T19:25:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T19:25:00+08:00"
+  "lastModified": "2026-10-18T11:12:39+08:00"
 }
