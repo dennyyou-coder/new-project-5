@@ -22,7 +22,13 @@
     {"placement":"operations","src":"/images/blog/european-tool-brands-battery-alliances-image-004-en-v2.webp","alt":"European tool-brand manufacturing and channel comparison","caption":"Global brand reach does not substitute for a model-specific origin, importer and parts check."}
   ],
   "ownership":{"summary":"STIHL is a family-owned, non-listed group. Its 2025 reporting describes Stihl Holding AG & Co. KG as the group holding company and Andreas Stihl AG & Co. KG as the founding company. This ownership structure is distinct from an individual dealer, importer or regional sales subsidiary.","parentCompany":"Stihl Holding AG & Co. KG"},
-  "leadership":[{"name":"Andreas Stihl","role":"Founder","context":"STIHL traces the group to Andreas Stihl's 1926 foundation in Germany."}],
+  "leadership":[{"name":"Andreas Stihl","role":"Founder","context":"STIHL traces the group to Andreas Stihl's 1926 foundation in Germany."},
+    {
+      "name": "Sean McGinnis",
+      "role": "President of STIHL Inc. (United States)",
+      "context": "Effective October 1, 2026. Leads the U.S. subsidiary, including Virginia Beach operations and U.S. sales; reports to the STIHL Executive Board."
+    }
+  ],
   "productPortfolio":[
     {"name":"Forestry, landscape and garden equipment","positioning":"Core professional and consumer outdoor power tools across gasoline and battery formats.","buyerRelevance":"Specify user segment, power source, safety requirements and authorized servicing route."},
     {"name":"Battery systems and charging platforms","positioning":"A growing cordless offer for professional and private users.","buyerRelevance":"Confirm battery-system compatibility, charger specification and local warranty coverage."},
@@ -41,6 +47,14 @@
   ],
   "competitivePosition":{"summary":"World Clean Biz assessment: STIHL's edge is its dense specialist-dealer network and an outdoor-equipment portfolio that now spans battery, professional cleaning and digital services. The buyer risk is assuming that a familiar global mark equals universal support: product origin, authorised service and battery configuration still need model-level confirmation.","competitorSlugs":["husqvarna","greenworks","worx","sunseeker"]},
   "developments":[
+    {
+      "date": "2026-10-01",
+      "title": "Sean McGinnis takes charge of STIHL Inc.",
+      "summary": "The appointment covers the U.S. subsidiary’s manufacturing, operations and commercial teams. McGinnis reports to the group Executive Board.",
+      "sourceIds": [
+        "stihl-us-president-2026"
+      ]
+    },
     {"date":"2026","title":"STIHL marks 100 years since its foundation","summary":"The group enters its centenary year while continuing its transition toward battery-powered equipment.","sourceIds":["stihl-figures"]},
     {"date":"2026-03","title":"STIHL publishes its 2025 integrated report","summary":"The report presents the 2025 financial year, production network and battery strategy.","sourceIds":["stihl-report-2025"]},
     {"date":"1926","title":"Andreas Stihl founds the business","summary":"STIHL's corporate history dates the founding company to 1926.","sourceIds":["stihl-figures"]}
@@ -49,9 +63,17 @@
     {"id":"stihl-figures","title":"STIHL in Figures","publisher":"STIHL","url":"https://corporate.stihl.com/en/about-stihl/company/figures","accessedAt":"2026-07-31"},
     {"id":"stihl-report-2025","title":"Integrated Corporate Report 2025","publisher":"STIHL","url":"https://icr.stihl.com/","publishedAt":"2026-03","accessedAt":"2026-07-31"},
     {"id":"stihl-product","title":"SE 33 Wet & Dry Vacuum","publisher":"STIHL USA","url":"https://www.stihlusa.com/products/vacuums/wet-dry-vacuums/se33/","accessedAt":"2026-07-31"},
-    {"id":"stihl-network","title":"STIHL Group and Strategy","publisher":"STIHL","url":"https://sustainabilityreport.stihl.com/2024/content/stihl-group-and-strategy/index.html","accessedAt":"2026-07-31"}
+    {"id":"stihl-network","title":"STIHL Group and Strategy","publisher":"STIHL","url":"https://sustainabilityreport.stihl.com/2024/content/stihl-group-and-strategy/index.html","accessedAt":"2026-07-31"},
+    {
+      "id": "stihl-us-president-2026",
+      "title": "STIHL Inc. Names Sean McGinnis as President",
+      "publisher": "STIHL Inc.",
+      "url": "https://www.stihlusa.com/en/support-events/about-stihl/press/stihl-inc-names-sean-mcginnis-president",
+      "publishedAt": "2026-10-01",
+      "accessedAt": "2026-10-18"
+    }
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-07-31T22:00:00+08:00"
+  "lastModified":"2026-10-18T11:12:39+08:00"
 }
