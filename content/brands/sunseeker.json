@@ -41,7 +41,13 @@
     "summary": "Sunseeker is a privately held Chinese garden-equipment and robotics brand. Zhejiang Sunseeker Industrial Co., Ltd. is the manufacturer named in reviewed product documentation and a registered owner of a mower-related SUNSEEKER trademark. The official Chinese company site uses the Zhejiang White Horse Technology name, while Shanghai, European and U.S. entities perform other functions. Reviewed public sources do not disclose a complete audited ultimate-shareholder chart.",
     "parentCompany": "Private ownership; complete cap table not disclosed in reviewed official sources"
   },
-  "leadership": [],
+  "leadership": [
+    {
+      "name": "Terry Ma",
+      "role": "Chief Executive Officer",
+      "context": "Identified as CEO in Sunseeker’s September 8, 2026 announcement."
+    }
+  ],
   "productPortfolio": [
     {
       "name": "Sunseeker Elite X series",
@@ -52,6 +58,11 @@
       "name": "S and V residential mower ranges",
       "positioning": "Mainstream and value-oriented robotic mowers broaden the portfolio below the Elite flagship tier.",
       "buyerRelevance": "Navigation method, boundary setup, app support and included accessories differ by model and market."
+    },
+    {
+      "name": "2027 LiDAR mower roadmap",
+      "positioning": "Five models announced at IFA, with availability planned from February 2027.",
+      "buyerRelevance": "Treat the launch timetable and regional configurations as planned offers."
     },
     {
       "name": "Commercial robotic mowing",
@@ -103,6 +114,14 @@
     "competitorSlugs": ["mammotion", "segway-navimow", "husqvarna"]
   },
   "developments": [
+    {
+      "date": "2026-09-08",
+      "title": "Sunseeker previews 2027 LiDAR mowers and Smart Garden",
+      "summary": "The IFA announcement sets out a connected-garden roadmap alongside the mower range. It is a future product plan, not confirmation of current deliveries.",
+      "sourceIds": [
+        "sunseeker-followup-20261025"
+      ]
+    },
     {
       "date": "2026",
       "title": "Sunseeker expands the X Gen 2 robotic-mower range",
@@ -158,9 +177,17 @@
       "publisher": "Canadian Intellectual Property Office",
       "url": "https://ised-isde.canada.ca/cipo/trademark-search/2217672",
       "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "sunseeker-followup-20261025",
+      "title": "IFA 2026: Sunseeker Debuts 2027 LiDAR Models, Smart Garden Ecosystem and Industry-First 3D Semantic Map",
+      "publisher": "Sunseeker",
+      "url": "https://sunseekertech.com/global/news/ifa-2026-sunseeker-debuts-2027-lidar-models-smart-garden-ecosystem",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-09-08"
     }
   ],
   "publishedAt": "2026-07-31T15:30:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T15:30:00+08:00"
+  "lastModified": "2026-10-25T22:34:30+08:00"
 }

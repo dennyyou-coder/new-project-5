@@ -49,6 +49,11 @@
       "buyerRelevance": "Match debris type, surface, aisle clearance, weather limits, filtration, runtime and charging strategy to the duty cycle."
     },
     {
+      "name": "GT Series commercial robotic mowers",
+      "positioning": "GT3 combines mowing and light sweeping for mixed properties; GT5 targets larger lawns, while GT7 uses reel cutting for golf and sports turf.",
+      "buyerRelevance": "Confirm local availability, commissioning and turf requirements independently of indoor-cleaning robot contracts."
+    },
+    {
       "name": "PUDU Link and fleet services",
       "positioning": "Software supports robot status, task management, operational reporting and connected multi-site deployments.",
       "buyerRelevance": "Document subscription, hosting region, user access, cybersecurity, retention, update and offboarding terms."
@@ -98,6 +103,14 @@
     "competitorSlugs": ["gausium", "lionsbot", "tennant"]
   },
   "developments": [
+    {
+      "date": "2026-09-01",
+      "title": "PUDU enters professional grounds care with GT3, GT5 and GT7",
+      "summary": "The three-model launch extends PUDU’s commercial robotics portfolio outdoors, covering mixed properties, large lawns and precision turf. Collection and autonomous dumping depend on configuration.",
+      "sourceIds": [
+        "pudu-robotics-followup-20261025"
+      ]
+    },
     {
       "date": "2026-03",
       "title": "PUDU launches the BG1 cleaning series",
@@ -154,9 +167,17 @@
       "publisher": "PUDU Robotics",
       "url": "https://www.pudurobotics.com/en/download",
       "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "pudu-robotics-followup-20261025",
+      "title": "Pudu Robotics Launches PUDU GT Series, a Three-Model Lineup of Commercial Robotic Mowers",
+      "publisher": "Pudu Robotics via PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-09-01"
     }
   ],
   "publishedAt": "2026-08-08T06:21:18+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-08-08T06:21:18+08:00"
+  "lastModified": "2026-10-25T22:34:30+08:00"
 }

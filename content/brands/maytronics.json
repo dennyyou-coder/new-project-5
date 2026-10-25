@@ -69,8 +69,13 @@
   "productPortfolio": [
     {
       "name": "Dolphin residential pool cleaners",
-      "positioning": "The core product brand, covering corded and cordless robots for different residential pool sizes, surfaces and service channels.",
+      "positioning": "The core product brand, covering corded and cordless robots for different residential pool sizes, surfaces and service channels. The Australian portfolio shown at SPLASH! 2026 includes cordless Dolphin EON and corded Dolphin S-Line robots.",
       "buyerRelevance": "Supports residential assortment planning by pool size, surface, power format and service channel."
+    },
+    {
+      "name": "Skimmi robotic surface skimmers",
+      "positioning": "Maytronics Australia presented Skimmi at SPLASH! 2026 for collecting floating debris between pool-cleaning cycles.",
+      "buyerRelevance": "Check local range, availability and service separately from Dolphin floor-and-wall cleaners."
     },
     {
       "name": "Dolphin commercial pool cleaners",
@@ -137,6 +142,14 @@
       "summary": "The Australian subsidiary announced Papageorgiou’s departure and said Dan Kwaczynski would continue leading in his existing role. The notice concerns Australia and does not announce a change in the group CEO.",
       "sourceIds": [
         "maytronics-october-2026-weekly"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "title": "Australia details its SPLASH! product introductions",
+      "summary": "The Australian post records Dolphin EON cordless cleaners, the corded Dolphin S-Line and Skimmi surface skimmers. It also describes Wave commercial robots and regional water-care products; the announcement does not establish worldwide availability.",
+      "sourceIds": [
+        "maytronics-followup-20261025"
       ]
     },
     {
@@ -230,9 +243,17 @@
       "url": "https://www.maytronics.com.au/chris-leaving-maytronics/",
       "publishedAt": "2026-10-08",
       "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "maytronics-followup-20261025",
+      "title": "Maytronics Australia Unveils Its Biggest Product Launch in 10 Years at SPLASH! 2026",
+      "publisher": "Maytronics Australia",
+      "url": "https://www.maytronics.com.au/maytronics-unveils-biggest-product-launch-splash-2026/",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-08-26"
     }
   ],
   "publishedAt": "2026-07-30T02:02:44+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-10-25T11:01:21+08:00"
+  "lastModified": "2026-10-25T22:34:30+08:00"
 }

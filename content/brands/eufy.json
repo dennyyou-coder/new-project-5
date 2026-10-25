@@ -45,7 +45,7 @@
   "productPortfolio": [
     {
       "name": "Robot vacuums and automated docks",
-      "positioning": "Eufy Clean systems span entry robots, self-emptying models and premium Omni platforms using model-dependent obstacle sensing, roller mopping and dock automation.",
+      "positioning": "Eufy Clean systems span entry robots, self-emptying models and premium Omni platforms using model-dependent obstacle sensing, roller mopping and dock automation. The U.S. C30 edge listing adds an extending mop and multi-cyclone filtration; its 35,000 Pa claim is based on motor-level laboratory testing.",
       "buyerRelevance": "Requires model-level comparison of navigation, carpet behavior, mop architecture, bags, consumables, app region and service."
     },
     {
@@ -103,6 +103,14 @@
     "competitorSlugs": ["roborock", "ecovacs", "dreame", "narwal"]
   },
   "developments": [
+    {
+      "date": "2026-10-25",
+      "title": "U.S. C30 edge preorder status checked",
+      "summary": "On October 25, the official U.S. store listed C30 edge for preorder with estimated shipping before November 1. This is a dated availability check, not a newly established launch date or confirmation of delivery.",
+      "sourceIds": [
+        "eufy-followup-20261025"
+      ]
+    },
     {
       "date": "2026-04-10",
       "title": "Anker reports its 2025 smart-innovation business",
@@ -174,9 +182,16 @@
       "publisher": "Anker Innovations",
       "url": "https://dix7fd4yse9rd.cloudfront.net/dimp/en/83036986-ec4f-4aa3-8c3a-257278c740e7_eufy-1.svg",
       "accessedAt": "2026-09-14"
+    },
+    {
+      "id": "eufy-followup-20261025",
+      "title": "eufy Robot Vacuum Omni C30 edge — U.S. product listing",
+      "publisher": "Anker eufy",
+      "url": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge",
+      "accessedAt": "2026-10-25"
     }
   ],
   "publishedAt": "2026-07-30T23:20:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-09-14T16:46:25+08:00"
+  "lastModified": "2026-10-25T22:34:30+08:00"
 }
