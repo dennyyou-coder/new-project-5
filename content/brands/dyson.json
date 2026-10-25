@@ -124,6 +124,14 @@
   },
   "developments": [
     {
+      "date": "2026-09-30",
+      "title": "Dyson explains a CameraJet production interruption",
+      "summary": "A jet-tube batch problem created potential seepage. Dyson isolated affected products and said production and shipping were running again; the statement did not give a unit count.",
+      "sourceIds": [
+        "dyson-backfill-20261025"
+      ]
+    },
+    {
       "date": "2026-04",
       "title": "Dyson publishes its 2025 California supply-chain disclosure",
       "summary": "The statement identifies Dyson Holdings Pte. Limited as the ultimate parent of the reporting U.S. entities and describes group supplier-audit and responsible-sourcing controls.",
@@ -222,9 +230,17 @@
       "publisher": "Dyson",
       "url": "https://www.dyson.com/discover/news/latest/100m-digital-motors",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "dyson-backfill-20261025",
+      "title": "Dyson CameraJet Update",
+      "publisher": "Dyson",
+      "url": "https://www.dyson.co.uk/discover/inside-dyson/statements/dyson-camerajet-update",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-09-30"
     }
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T21:15:00+08:00"
+  "lastModified": "2026-10-25T23:04:14+08:00"
 }

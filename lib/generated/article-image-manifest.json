@@ -4335,6 +4335,24 @@
       "sourceHash": "sha256:8b688acfc7744d749cac431bbcc6025be91cd63d3d2e3747dd2abd03cf982849",
       "outputHash": "sha256:05f14fe90dfbe33ebd3c8d8580026b5555ffcd1f686f0aa96145f7226c531f4b"
     },
+    "/images/articles/ecovacs-m1-3d-interclean-april-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 126918,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:75d2b81cda77ea1fdadabafb94722eaf210c732f75ca058670d2a651acb3d614",
+      "outputHash": "sha256:c94cae1ac54565162df4f91e574e199abe67ce3535effc55be57067216d1da45",
+      "mobile": {
+        "src": "/images/articles/ecovacs-m1-3d-interclean-april-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 55622,
+        "outputHash": "sha256:b7f46489351c63a1b2936eb7481d1339a7dd2b327e53258435aeef8a7a2baddf"
+      }
+    },
     "/images/articles/ecovacs-ultramarine-p1/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -8274,6 +8292,24 @@
         "height": 533,
         "bytes": 44336,
         "outputHash": "sha256:e6c555bce743f98bff7ec0dd714221a75d2d7c1697f615d2afa2735131f1278c"
+      }
+    },
+    "/images/articles/neura-adlatus-cleaning-robotics-acquisition-august-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1024,
+      "height": 576,
+      "bytes": 23630,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:87d6c0657739f822b87dc3658936e5ac33efdba131062aa7ac406fb8b8692f59",
+      "outputHash": "sha256:fb1d71306799a8437281828e69ddff26efa80b4aed50abed1f15e66628c8abee",
+      "mobile": {
+        "src": "/images/articles/neura-adlatus-cleaning-robotics-acquisition-august-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14798,
+        "outputHash": "sha256:a85047203f2d7468555a1894e3d88a54d6aaece2a538b5796b70a592dec5c37b"
       }
     },
     "/images/articles/nilfisk-annual-results-february-2026/01-cover.webp": {
@@ -39502,6 +39538,11 @@
         "/images/insights/ecovacs-invests-in-battery-cell-factory-image-002.jpg"
       ]
     },
+    "ecovacs-m1-3d-interclean-april-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ecovacs-m1-3d-interclean-april-2026/01-cover.webp",
+      "body": []
+    },
     "ecovacs-mid-year-report-reading": {
       "budgetClass": "standard",
       "cover": "/images/insights/ecovacs-mid-year-report-reading-cover.jpg",
@@ -40833,6 +40874,11 @@
         "/images/blog/navimow-robotic-mower-roadmap-image-006.webp",
         "/images/blog/navimow-robotic-mower-roadmap-image-007.webp"
       ]
+    },
+    "neura-adlatus-cleaning-robotics-acquisition-august-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/neura-adlatus-cleaning-robotics-acquisition-august-2026/01-cover.webp",
+      "body": []
     },
     "nilfisk-2018-annual-report-commercial-cleaning": {
       "budgetClass": "standard",
@@ -44495,6 +44541,15 @@
         }
       }
     },
+    "ecovacs-m1-3d-interclean-april-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/ecovacs-m1-3d-interclean-april-2026/01-cover.webp",
+          "hash": "sha256:75d2b81cda77ea1fdadabafb94722eaf210c732f75ca058670d2a651acb3d614"
+        }
+      }
+    },
     "ecovacs-ultramarine-p1": {
       "files": {
         "01-cover.png": {
@@ -45765,6 +45820,15 @@
           "status": "matched",
           "primary": "/images/articles/navimow-h5-pro-edgemaestro-edge-mowing/04-edgemaestro.webp",
           "hash": "sha256:6042eb6c543a117d98d9ca4241897e67754af18bec575cdf562a053508d182b8"
+        }
+      }
+    },
+    "neura-adlatus-cleaning-robotics-acquisition-august-2026": {
+      "files": {
+        "01-cover.jpeg": {
+          "status": "matched",
+          "primary": "/images/articles/neura-adlatus-cleaning-robotics-acquisition-august-2026/01-cover.webp",
+          "hash": "sha256:87d6c0657739f822b87dc3658936e5ac33efdba131062aa7ac406fb8b8692f59"
         }
       }
     },

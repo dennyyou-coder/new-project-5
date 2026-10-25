@@ -112,6 +112,14 @@
       ]
     },
     {
+      "date": "2026-09-21",
+      "title": "C30 series receives a Nordic launch schedule",
+      "summary": "Anker announced C30 Edge sales from October 8 and C30 from October 31. The Edge adds an extending mop; dates apply to the regional announcement.",
+      "sourceIds": [
+        "eufy-backfill-20261025"
+      ]
+    },
+    {
       "date": "2026-04-10",
       "title": "Anker reports its 2025 smart-innovation business",
       "summary": "The listed parent's annual report continues to place Eufy at the center of Anker's smart-innovation segment and provides the current shareholder boundary.",
@@ -189,9 +197,17 @@
       "publisher": "Anker eufy",
       "url": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge",
       "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "eufy-backfill-20261025",
+      "title": "Anker eufy Robot Vacuums Omni C30 Edge og Omni C30 gjør grundig rengjøring enkelt hjemme",
+      "publisher": "Anker Innovations via NTB Kommunikasjon",
+      "url": "https://api.kommunikasjon.ntb.no/pressemelding/19074225/anker-eufy-robot-vacuums-omni-c30-edge-og-omni-c30-gjor-grundig-rengjoring-enkelt-hjemme?lang=no&publisherId=17849449",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-09-21"
     }
   ],
   "publishedAt": "2026-07-30T23:20:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-10-25T22:34:30+08:00"
+  "lastModified": "2026-10-25T23:04:14+08:00"
 }

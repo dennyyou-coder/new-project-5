@@ -20,6 +20,28 @@ export type NewsVisual = {
 };
 
 export const newsStoryVisuals: Record<string, NewsVisual> = {
+  "ecovacs-m1-3d-interclean-april-2026": {
+    src: "/images/articles/ecovacs-m1-3d-interclean-april-2026/01-cover.webp",
+    alt: "Visitors watch an ECOVACS commercial cleaning robot demonstration at Interclean Amsterdam",
+    kind: "event",
+    label: "Official event image",
+    caption: "ECOVACS Commercial Robotics at Interclean Amsterdam 2026. Photo from the company's April 16 event report.",
+    sourceUrl: "https://www.ecovacs.com/global/newsroom/official-news/interclean-amsterdam-2026",
+    sourceLabel: "ECOVACS",
+    fit: "contain",
+    prepared: true
+  },
+  "neura-adlatus-cleaning-robotics-acquisition-august-2026": {
+    src: "/images/articles/neura-adlatus-cleaning-robotics-acquisition-august-2026/01-cover.webp",
+    alt: "ADLATUS and NEURA executives pictured in the acquisition announcement",
+    kind: "event",
+    label: "Official announcement image",
+    caption: "From left: ADLATUS's Stefan Erhardt, NEURA Robotics' David Reger and NEURA Mobile Robots' Andreas Lindemann. Image supplied with NEURA's August 2026 announcement.",
+    sourceUrl: "https://neura-robotics.com/neura-acquires-adlatus-robotics/",
+    sourceLabel: "NEURA Robotics",
+    fit: "contain",
+    prepared: true
+  },
   "tennant-p1-vac-autonomous-vacuum-october-2026": {
     src: "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
     alt: "Tennant P1 VAC autonomous vacuum in an official product visual",

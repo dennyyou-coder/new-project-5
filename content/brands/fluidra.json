@@ -42,6 +42,14 @@
   ],
   "competitivePosition":{"summary":"World Clean Biz assessment: Fluidra's advantage is breadth: components, controls, cleaners and professional project access can sit under one listed group. That breadth increases the need for buyer discipline. Brand familiarity does not answer who is contracting, manufacturing, importing, installing or honouring warranty for a specific pool system.","competitorSlugs":["hayward","maytronics","polaris","aquabot"]},
   "developments":[
+    {
+      "date": "2026-07-30",
+      "title": "First-half results include a Hydrapro acquisition agreement",
+      "summary": "Fluidra reported EUR 1.258 billion in sales and EUR 321 million in adjusted EBITDA. Hydrapro remained subject to closing conditions, with completion expected in early 2027.",
+      "sourceIds": [
+        "fluidra-backfill-20261025"
+      ]
+    },
     {"date":"2026-03","title":"Fluidra publishes its 2025 integrated report","summary":"Fluidra's annual reporting sets out group results, global operations and portfolio context.","sourceIds":["fluidra-annual-2025"]},
     {"date":"2025-12-23","title":"Fluidra completes initial Aiper investment","summary":"Fluidra announced completion of its initial 27% investment in Aiper Inc.; the investment does not make every Aiper SKU a Fluidra product.","sourceIds":["fluidra-aiper"]},
     {"date":"2018","title":"Fluidra and Zodiac combination creates the current group platform","summary":"The merger established the listed group structure behind the expanded brand portfolio.","sourceIds":["fluidra-annual-2025"]}
@@ -50,9 +58,17 @@
     {"id":"fluidra-annual-2025","title":"Annual Integrated Report 2025","publisher":"Fluidra","url":"https://www.fluidra.com/investors/annual-integrated-report/","publishedAt":"2026-03","accessedAt":"2026-07-31"},
     {"id":"fluidra-brands","title":"Fluidra Brands and Business","publisher":"Fluidra","url":"https://www.fluidra.com/","accessedAt":"2026-07-31"},
     {"id":"fluidra-aiper","title":"Fluidra completes an initial 27% investment in Aiper","publisher":"Fluidra","url":"https://www.fluidra.com/press-room/press-release/fluidra-completes-an-initial-27-investment-in-aiper/","publishedAt":"2025-12-23","accessedAt":"2026-07-31"},
-    {"id":"fluidra-portfolio","title":"Fluidra Brand Portfolio","publisher":"Fluidra","url":"https://www.fluidra.com/brands/","accessedAt":"2026-07-31"}
+    {"id":"fluidra-portfolio","title":"Fluidra Brand Portfolio","publisher":"Fluidra","url":"https://www.fluidra.com/brands/","accessedAt":"2026-07-31"},
+    {
+      "id": "fluidra-backfill-20261025",
+      "title": "Fluidra delivers a strong first half of 2026 and maintains positive momentum in a dynamic environment",
+      "publisher": "Fluidra",
+      "url": "https://www.fluidra.com/press-room/press-release/fluidra-delivers-a-strong-first-half-of-2026-and-maintains-positive-momentum-in-a-dynamic-environment/",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-07-30"
+    }
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-07-31T22:00:00+08:00"
+  "lastModified":"2026-10-25T23:04:14+08:00"
 }

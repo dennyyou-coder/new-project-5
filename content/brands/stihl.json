@@ -63,8 +63,16 @@
         "stihl-us-president-2026"
       ]
     },
-    {"date":"2026","title":"STIHL marks 100 years since its foundation","summary":"The group enters its centenary year while continuing its transition toward battery-powered equipment.","sourceIds":["stihl-figures"]},
+    {
+      "date": "2026-07-02",
+      "title": "Kärcher and STIHL announce the ALLPRO alliance",
+      "summary": "The professional battery platform retains STIHL AP compatibility. The announcement schedules Kärcher equipment for January 2027 and continued support for its earlier Battery Universe.",
+      "sourceIds": [
+        "alliance-backfill-20261025"
+      ]
+    },
     {"date":"2026-03","title":"STIHL publishes its 2025 integrated report","summary":"The report presents the 2025 financial year, production network and battery strategy.","sourceIds":["stihl-report-2025"]},
+    {"date":"2026","title":"STIHL marks 100 years since its foundation","summary":"The group enters its centenary year while continuing its transition toward battery-powered equipment.","sourceIds":["stihl-figures"]},
     {"date":"1926","title":"Andreas Stihl founds the business","summary":"STIHL's corporate history dates the founding company to 1926.","sourceIds":["stihl-figures"]}
   ],
   "sources":[
@@ -87,9 +95,17 @@
       "url": "https://www.stihlusa.com/en/support-events/about-stihl/press/equip-expo-2026",
       "publishedAt": "2026-10-21",
       "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "alliance-backfill-20261025",
+      "title": "Kärcher and STIHL launch groundbreaking battery alliance",
+      "publisher": "STIHL",
+      "url": "https://corporate.stihl.com/en/press/press-release-company/2026/kaercher-stihl-battery-alliance",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-07-02"
     }
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-10-25T11:01:21+08:00"
+  "lastModified":"2026-10-25T23:04:14+08:00"
 }
