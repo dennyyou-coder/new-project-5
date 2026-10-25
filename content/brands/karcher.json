@@ -123,6 +123,14 @@
       ]
     },
     {
+      "date": "2026-07-02",
+      "title": "Kärcher and STIHL announce the ALLPRO alliance",
+      "summary": "The professional battery platform retains STIHL AP compatibility. The announcement schedules Kärcher equipment for January 2027 and continued support for its earlier Battery Universe.",
+      "sourceIds": [
+        "alliance-backfill-20261025"
+      ]
+    },
+    {
       "date": "2026",
       "title": "Kärcher reports continued global scale",
       "summary": "The company reported 2025 revenue of EUR 3.483 billion, about 17,000 employees and operations through 170 companies in 87 countries.",
@@ -197,9 +205,17 @@
       "url": "https://s3.kaercher-media.com/int/inside-kaercher/company/media-information.html",
       "accessedAt": "2026-10-25",
       "publishedAt": "2026-10-20"
+    },
+    {
+      "id": "alliance-backfill-20261025",
+      "title": "Kärcher and STIHL launch groundbreaking battery alliance",
+      "publisher": "STIHL",
+      "url": "https://corporate.stihl.com/en/press/press-release-company/2026/kaercher-stihl-battery-alliance",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-07-02"
     }
   ],
   "publishedAt": "2026-07-30T23:40:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-10-25T22:34:30+08:00"
+  "lastModified": "2026-10-25T23:04:14+08:00"
 }

@@ -157,7 +157,7 @@
     {
       "date": "2026-04-16",
       "title": "Commercial robotics expands in Europe",
-      "summary": "ECOVACS Commercial Robotics debuted at Interclean Amsterdam with DEEBOT PRO scrubbing and vacuuming systems and said it signed strategic agreements with European customers.",
+      "summary": "The Interclean lineup added DEEBOT PRO M1 3D for larger, complex spaces, alongside M1 and K1 VAC. ECOVACS reported European customer agreements without disclosing order volumes.",
       "sourceIds": [
         "ecovacs-interclean-2026"
       ]
@@ -217,7 +217,7 @@
       "publisher": "ECOVACS",
       "url": "https://www.ecovacs.com/global/newsroom/official-news/interclean-amsterdam-2026",
       "publishedAt": "2026-04-16",
-      "accessedAt": "2026-07-30"
+      "accessedAt": "2026-10-25"
     },
     {
       "id": "ecovacs-ifa-2026",
@@ -237,6 +237,6 @@
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
   "lastVerified": "2026-09-12",
-  "lastModified": "2026-09-12T16:30:26+08:00",
+  "lastModified": "2026-10-25T23:04:14+08:00",
   "metaTitle": "ECOVACS Company Profile: Ownership, Tineco & Robotics"
 }
