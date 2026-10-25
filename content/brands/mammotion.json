@@ -60,7 +60,7 @@
   "productPortfolio": [
     {
       "name": "LUBA robotic lawn mowers",
-      "positioning": "All-wheel-drive wire-free mowers for complex terrain, spanning large-lawn and compact product families.",
+      "positioning": "All-wheel-drive wire-free mowers for complex terrain, spanning large-lawn and compact product families. LUBA 4 AWD was unveiled in September 2026, with regional preorder details still pending in the reviewed guide.",
       "buyerRelevance": "Supports tiered wire-free mower assortments for complex terrain and different lawn sizes."
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "name": "Maston commercial mower concept",
-      "positioning": "A professional autonomous-mowing concept introduced at CES 2026 in feasibility and technology validation, not a mature shipping fleet platform in the reviewed announcement.",
+      "positioning": "Maston was introduced as a commercial mower concept at CES 2026. The September Japanese announcement still describes it as under development and scheduled for a reference display at GARDEX.",
       "buyerRelevance": "Should be treated as a concept-stage commercial platform rather than a current shipping assortment."
     }
   ],
@@ -111,6 +111,11 @@
       "evidence": "The legal counterparty changes by region and channel. MAMMOTION TECHNOLOGY LLC operates the U.S. store and warranty; Mammotion Technik GmbH provides the reviewed UK warranty. Dealer buyers should verify which entity invoices, imports and services the product.",
       "scope": "U.S. and UK regional entities",
       "buyerCheck": "Verify which entity invoices, imports, warrants and services the exact product."
+    },
+    {
+      "evidence": "Mammotion named Shingu Shoko (新宮商行) as its general distributor in Japan in September 2026.",
+      "scope": "Japanese sales and service network",
+      "buyerCheck": "Confirm the models and support covered by the local agreement."
     }
   ],
   "competitivePosition": {
@@ -123,6 +128,22 @@
     ]
   },
   "developments": [
+    {
+      "date": "2026-09-24",
+      "title": "Mammotion names its Japanese distributor",
+      "summary": "The company selected Shingu Shoko and announced plans for its GARDEX debut.",
+      "sourceIds": [
+        "mammotion-japan-2026"
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "title": "Mammotion unveils LUBA 4 AWD",
+      "summary": "The new series adds four-camera perception, independent front-wheel steering and bidirectional movement. Preorders were planned for Q4 2026.",
+      "sourceIds": [
+        "mammotion-luba4-2026"
+      ]
+    },
     {
       "date": "2026-01-07",
       "title": "Mammotion introduces the Maston commercial mower concept",
@@ -238,9 +259,25 @@
       "url": "https://www.prnewswire.com/news-releases/mammotion-announces-strategic-expansion-into-commercial-robotic-mowers-as-it-confirms-its-position-as-the-worlds-best-selling-wire-free-robotic-lawn-mower-brand-302655042.html",
       "publishedAt": "2026-01-07",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "mammotion-japan-2026",
+      "title": "Mammotion announces GARDEX debut and Japanese distributor",
+      "publisher": "Mammotion Technology Co., Limited via PR TIMES",
+      "url": "https://prtimes.jp/main/html/rd/p/000000002.000183827.html",
+      "publishedAt": "2026-09-24",
+      "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "mammotion-luba4-2026",
+      "title": "Mammotion LUBA 4 AWD: IFA 2026 Launch, Features, Specs, and Release Date",
+      "publisher": "Mammotion",
+      "url": "https://us.mammotion.com/blogs/news/luba-4-awd",
+      "publishedAt": "2026-09-07",
+      "accessedAt": "2026-10-25"
     }
   ],
   "publishedAt": "2026-07-30T02:02:44+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T21:15:00+08:00"
+  "lastModified": "2026-10-25T22:43:56+08:00"
 }

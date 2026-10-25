@@ -85,6 +85,11 @@
       "evidence": "Gausium publishes support contacts and promotes training, integration and optimization for facility-service deployments.",
       "scope": "Official support proposition; exact service levels depend on contract and territory",
       "buyerCheck": "Define response time, remote diagnostics, on-site coverage, replacement units, software support and end-of-service terms in writing."
+    },
+    {
+      "evidence": "Gausium identifies Viss visapkārt tīrs (VVT) as its Latvian distributor, covering site assessment, training and after-sales support.",
+      "scope": "Latvia; company-published case study",
+      "buyerCheck": "Confirm local support and service commitments for the proposed deployment."
     }
   ],
   "competitivePosition": {
@@ -98,6 +103,14 @@
       "summary": "The company reports one Omnie covering about 5,000 m² indoors at Futian TianAn Cyber Park and one Scrubber 75 serving about 20,000 m² of garage space at Longgang. October 15 is the case-study publication date; installation dates are not stated.",
       "sourceIds": [
         "gausium-tianan-case-2026"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Gausium reports a 90-plus robot installed base in Latvia",
+      "summary": "The company’s case study credits distributor VVT with installations over two years. September 29 is the report date, not the date all robots were installed.",
+      "sourceIds": [
+        "gausium-latvia-2026"
       ]
     },
     {
@@ -164,9 +177,17 @@
       "url": "https://gausium.com/case/tianan-cyber-park-shenzhen-cleaning-robots/",
       "publishedAt": "2026-10-15",
       "accessedAt": "2026-10-18"
+    },
+    {
+      "id": "gausium-latvia-2026",
+      "title": "Tireless Colleagues: 90+ Gausium Robots Now at Work Across Latvia’s Malls, Offices and Factories",
+      "publisher": "Gausium",
+      "url": "https://gausium.com/case/floor-cleaning-robots-latvia/",
+      "publishedAt": "2026-09-29",
+      "accessedAt": "2026-10-25"
     }
   ],
   "publishedAt": "2026-08-08T02:50:00+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-10-18T11:12:39+08:00"
+  "lastModified": "2026-10-25T22:43:56+08:00"
 }
