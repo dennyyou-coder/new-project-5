@@ -5128,6 +5128,60 @@
         "outputHash": "sha256:903252d353b646b98cfc820ed30210069150c035a0617da9cd83ac40fe0aeb20"
       }
     },
+    "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1245,
+      "height": 700,
+      "bytes": 219666,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8a33cb4a646ab5936d23f4152aac27c53be216d6406c989167e541a55d78b6ba",
+      "outputHash": "sha256:4abe8f1bba40fd5e5e86bb4ed29774c8124d0bfe3116e1fe1d7ad4cb8488c3b5",
+      "mobile": {
+        "src": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 91806,
+        "outputHash": "sha256:3911390ca3ddfd55649c1b740e56819f51962407cabc302aac2c870f3533bbc7"
+      }
+    },
+    "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/02-policy-timeline.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 72902,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3ca1b571de5fae71ed2a9739267e76eca758852445d6d7717aefbba1cf481e1a",
+      "outputHash": "sha256:ae81f2eacb0ca98586f443794837fa06bb0e254967106a5a9003b9300b2d936d",
+      "mobile": {
+        "src": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/02-policy-timeline-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 32282,
+        "outputHash": "sha256:dd67ed7529ced411e9b78c97af390122d18aabc6398637a96c8c4ab90739e608"
+      }
+    },
+    "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/03-project-pathways.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 79359,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:f2790be2ea5e865dc0701cb7b8231ab37e6b074e61002576ae9befd47fca1f8e",
+      "outputHash": "sha256:a155f2fcbdcc362fdff5e76b9467a1a4dc3e6c650087e8b93ed80fefc314be47",
+      "mobile": {
+        "src": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/03-project-pathways-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36456,
+        "outputHash": "sha256:904ddb757a9831ba1a5b16d13b4e999016f5f90ae929fe0a66b29634479d8a87"
+      }
+    },
     "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -39593,6 +39647,14 @@
       "cover": "/images/articles/fairland-hong-kong-application-april-2026/01-cover.webp",
       "body": []
     },
+    "fcc-eu-anti-dumping-robotic-mower-market-2027": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/01-cover.webp",
+      "body": [
+        "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/02-policy-timeline.webp",
+        "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/03-project-pathways.png"
+      ]
+    },
     "fcc-foreign-uas-covered-list-december-2025": {
       "budgetClass": "standard",
       "cover": "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover.webp",
@@ -44688,6 +44750,25 @@
           "status": "matched",
           "primary": "/images/articles/fairland-hong-kong-application-april-2026/01-cover.webp",
           "hash": "sha256:e885b27fde788927430dfdda10a1c3bba32aa1a9b4fb48bcaf9aec5a24122d32"
+        }
+      }
+    },
+    "fcc-eu-anti-dumping-robotic-mower-market-2027": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/01-cover.webp",
+          "hash": "sha256:8a33cb4a646ab5936d23f4152aac27c53be216d6406c989167e541a55d78b6ba"
+        },
+        "02-policy-timeline.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/02-policy-timeline.webp",
+          "hash": "sha256:3ca1b571de5fae71ed2a9739267e76eca758852445d6d7717aefbba1cf481e1a"
+        },
+        "03-project-pathways.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/03-project-pathways.png",
+          "hash": "sha256:f2790be2ea5e865dc0701cb7b8231ab37e6b074e61002576ae9befd47fca1f8e"
         }
       }
     },
