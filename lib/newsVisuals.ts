@@ -20,6 +20,28 @@ export type NewsVisual = {
 };
 
 export const newsStoryVisuals: Record<string, NewsVisual> = {
+  "tennant-p1-vac-autonomous-vacuum-october-2026": {
+    src: "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
+    alt: "Tennant P1 VAC autonomous vacuum in an official product visual",
+    kind: "product",
+    label: "Official product image",
+    caption: "Tennant P1 VAC. Official promotional image from the model's U.S. product page.",
+    sourceUrl: "https://www.tennantco.com/en_us/1/machines/robotics/product.p1-vac.autonomous-vacuum.2216378.html",
+    sourceLabel: "Tennant Company",
+    fit: "contain",
+    prepared: true
+  },
+  "stihl-equip-expo-2026-battery-mowers-snow": {
+    src: "/images/articles/stihl-equip-expo-2026-battery-mowers-snow/01-cover.webp",
+    alt: "STIHL ALLPRO AP 300.0 P battery in an official promotional visual",
+    kind: "product",
+    label: "Official product image",
+    caption: "The ALLPRO AP 300.0 P battery, one of STIHL's Equip Expo 2026 introductions. Official promotional image.",
+    sourceUrl: "https://www.stihlusa.com/en/support-events/about-stihl/press/equip-expo-2026",
+    sourceLabel: "STIHL Inc.",
+    fit: "contain",
+    prepared: true
+  },
   "avc-double-eleven-cleaning-sales-november-2025": {
     "src": "/images/articles/avc-double-eleven-cleaning-sales-november-2025/01-cover.webp",
     "alt": "China online cleaning appliances Double 11 2025 · Weeks 41–46: Retail sales CNY 9.5bn, -17% year on year, Units sold 5.28m, -1% year on year",

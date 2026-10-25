@@ -132,6 +132,14 @@
   },
   "developments": [
     {
+      "date": "2026-10-08",
+      "title": "Maytronics Australia announces Chris Papageorgiou’s departure",
+      "summary": "The Australian subsidiary announced Papageorgiou’s departure and said Dan Kwaczynski would continue leading in his existing role. The notice concerns Australia and does not announce a change in the group CEO.",
+      "sourceIds": [
+        "maytronics-october-2026-weekly"
+      ]
+    },
+    {
       "date": "2026-05-28",
       "title": "Maytronics reports first-quarter pressure and early new-product traction",
       "summary": "Maytronics reported a 10.8% revenue decline, a 28.4% gross margin and a NIS 26.4 million net loss for the first quarter of 2026. The company cited competition, supply constraints, U.S. tariffs, currency effects and lower manufacturing efficiency, while reporting initial traction for new products and a 39% increase in order backlog.",
@@ -214,9 +222,17 @@
       "url": "https://brand.maytronics.com/m/4e705f7a71f9c73/original/Q3-2025-PR-EN.pdf",
       "publishedAt": "2025-11-30",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "maytronics-october-2026-weekly",
+      "title": "Chris Papageorgiou Leaves Maytronics Australia",
+      "publisher": "Maytronics Australia",
+      "url": "https://www.maytronics.com.au/chris-leaving-maytronics/",
+      "publishedAt": "2026-10-08",
+      "accessedAt": "2026-10-25"
     }
   ],
   "publishedAt": "2026-07-30T02:02:44+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T02:22:38+08:00"
+  "lastModified": "2026-10-25T11:01:21+08:00"
 }

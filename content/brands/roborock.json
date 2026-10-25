@@ -132,6 +132,14 @@
   },
   "developments": [
     {
+      "date": "2026-10-02",
+      "title": "Qrevo 2 Pro reaches Japan through Yamada Denki",
+      "summary": "Roborock Japan’s October 8 notice gives October 2 as the release date at Yamada Denki stores and Yamada Webcom, following September 24 reservations. The Japanese model features a reversible side brush and dual rotating mops; this is a regional launch.",
+      "sourceIds": [
+        "roborock-october-2026-weekly"
+      ]
+    },
+    {
       "date": "2026-09-03",
       "title": "RockAqua extends Roborock into pool cleaning",
       "summary": "The IFA 2026 showcase adds RockAqua P1 to Roborock’s floorcare and outdoor range, alongside new Saros, Qrevo, F25, RockNeo and RockMow models. Announced models should be distinguished from locally available stock.",
@@ -250,10 +258,18 @@
       "publisher": "Roborock",
       "url": "https://global.roborock.com/cdn/shop/files/Roborock_logo_share_1200x1200.jpg?v=1758524759",
       "accessedAt": "2026-09-14"
+    },
+    {
+      "id": "roborock-october-2026-weekly",
+      "title": "Roborock Japan announces Qrevo 2 Pro",
+      "publisher": "Roborock Japan",
+      "url": "https://jp.roborock.com/blogs/news/roborock-qrevo-2-pro-%E3%82%92%E7%99%BA%E5%A3%B2",
+      "publishedAt": "2026-10-08",
+      "accessedAt": "2026-10-25"
     }
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
   "lastVerified": "2026-09-12",
-  "lastModified": "2026-09-14T17:01:09+08:00",
+  "lastModified": "2026-10-25T11:01:21+08:00",
   "metaTitle": "Roborock Company Profile: Ownership, Products & Expansion"
 }
