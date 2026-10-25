@@ -108,6 +108,14 @@
   },
   "developments": [
     {
+      "date": "2026-10-21",
+      "title": "Husqvarna reports a difficult third quarter for robotic mowing",
+      "summary": "Group sales fell 5% organically. European weather, competition and dealer inventories weighed on robotic mowing, while the U.S. became the largest sales market for Professional Robotics. The group plans to transfer selected battery-handheld production from Europe to Asia.",
+      "sourceIds": [
+        "husqvarna-october-2026-weekly"
+      ]
+    },
+    {
       "date": "2025-08-11",
       "title": "Glen Instone becomes chief executive",
       "summary": "Husqvarna Group appointed Glen Instone to lead the group after serving as president of the Forest and Garden division.",
@@ -191,9 +199,17 @@
       "publisher": "Husqvarna",
       "url": "https://www.husqvarna.com/us/support/warranty/",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "husqvarna-october-2026-weekly",
+      "title": "Interim report January–September 2026",
+      "publisher": "Husqvarna Group",
+      "url": "https://www.husqvarnagroup.com/en/press/interim-report-january-september-2026-2490517",
+      "publishedAt": "2026-10-21",
+      "accessedAt": "2026-10-25"
     }
   ],
   "publishedAt": "2026-07-30T23:40:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T23:40:00+08:00"
+  "lastModified": "2026-10-25T11:01:21+08:00"
 }

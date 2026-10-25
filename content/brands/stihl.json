@@ -48,6 +48,14 @@
   "competitivePosition":{"summary":"World Clean Biz assessment: STIHL's edge is its dense specialist-dealer network and an outdoor-equipment portfolio that now spans battery, professional cleaning and digital services. The buyer risk is assuming that a familiar global mark equals universal support: product origin, authorised service and battery configuration still need model-level confirmation.","competitorSlugs":["husqvarna","greenworks","worx","sunseeker"]},
   "developments":[
     {
+      "date": "2026-10-21",
+      "title": "STIHL expands its range at Equip Expo",
+      "summary": "The U.S. announcement covers more than 90 products and accessories, including ALLPRO battery technology, the SFA 120 snow thrower and AZ gas-powered stand-on mowers. Exhibition announcements do not establish stock availability in every market.",
+      "sourceIds": [
+        "stihl-october-2026-weekly"
+      ]
+    },
+    {
       "date": "2026-10-01",
       "title": "Sean McGinnis takes charge of STIHL Inc.",
       "summary": "The appointment covers the U.S. subsidiary’s manufacturing, operations and commercial teams. McGinnis reports to the group Executive Board.",
@@ -71,9 +79,17 @@
       "url": "https://www.stihlusa.com/en/support-events/about-stihl/press/stihl-inc-names-sean-mcginnis-president",
       "publishedAt": "2026-10-01",
       "accessedAt": "2026-10-18"
+    },
+    {
+      "id": "stihl-october-2026-weekly",
+      "title": "STIHL Powers Into Its Next Century with New Battery Technology, New Mowers, and Its First-Ever Snow Thrower",
+      "publisher": "STIHL Inc.",
+      "url": "https://www.stihlusa.com/en/support-events/about-stihl/press/equip-expo-2026",
+      "publishedAt": "2026-10-21",
+      "accessedAt": "2026-10-25"
     }
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-10-18T11:12:39+08:00"
+  "lastModified":"2026-10-25T11:01:21+08:00"
 }

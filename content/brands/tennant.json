@@ -100,6 +100,14 @@
   },
   "developments": [
     {
+      "date": "2026-10-20",
+      "title": "P1 VAC extends Tennant robotics into autonomous vacuuming",
+      "summary": "Tennant introduced P1 VAC, the first model in its P-Series, and said orders were open. The machine adds autonomous vacuuming and dust mopping to its robotic portfolio; the company describes this as its first autonomous soft-floor cleaner.",
+      "sourceIds": [
+        "tennant-october-2026-weekly"
+      ]
+    },
+    {
       "date": "2026-02-19",
       "title": "Tennant reports 2025 full-year results",
       "summary": "The results update confirmed Dave Huml as CEO and provided current company performance and strategy context.",
@@ -162,9 +170,17 @@
       "publisher": "Tennant Company",
       "url": "https://www.tennantco.com/en_la/about-us/global-locations.html",
       "accessedAt": "2026-08-08"
+    },
+    {
+      "id": "tennant-october-2026-weekly",
+      "title": "Tennant Company Introduces Its First Autonomous Robotic Vacuum, the P1 VAC",
+      "publisher": "Tennant Company",
+      "url": "https://investors.tennantco.com/news/news-details/2026/Tennant-Company-Introduces-Its-First-Autonomous-Robotic-Vacuum-the-P1-VAC/default.aspx",
+      "publishedAt": "2026-10-20",
+      "accessedAt": "2026-10-25"
     }
   ],
   "publishedAt": "2026-08-08T01:38:00+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-08-08T01:38:00+08:00"
+  "lastModified": "2026-10-25T11:01:21+08:00"
 }

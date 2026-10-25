@@ -10351,6 +10351,24 @@
         "outputHash": "sha256:6912c9f34b0eef16a2bdf51e14b05a6f9c8757ff766c35e6c34b595b49f8515f"
       }
     },
+    "/images/articles/stihl-equip-expo-2026-battery-mowers-snow/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 96886,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:dafc0d84cd5d957d93d206139f78f7702f46292c6d2b8b455181c57d36e2bcec",
+      "outputHash": "sha256:00bd6cb156b29fed1fddc5a0fc0fbde0e3e02b5fb46af3b8b05083470ca96aa4",
+      "mobile": {
+        "src": "/images/articles/stihl-equip-expo-2026-battery-mowers-snow/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 33600,
+        "outputHash": "sha256:73f2a95853a34078960ea89dcb6c1d99af90ce9c4e4e870dc6539b063fea7e06"
+      }
+    },
     "/images/articles/story-of-hard-floor-washers/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -10576,6 +10594,24 @@
         "height": 450,
         "bytes": 26028,
         "outputHash": "sha256:f080c7c5cfc0c15650457ee5d5f3100ba76f83a000329faf2fdb5a5ce053b5df"
+      }
+    },
+    "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 70434,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e964c9f79c5fb5f09d8bcaed4cc5f01ad4a6165ac1f3fc7386d23e233d09a3fa",
+      "outputHash": "sha256:729663ce22b089b9e1bec714213e69fc7b12b88db17dafd1d82b488a3a1c6699",
+      "mobile": {
+        "src": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20508,
+        "outputHash": "sha256:76d569a4064b2e714bff772c2e521f032fdd0b3ec4c1de144496f26f2f171e7c"
       }
     },
     "/images/articles/tineco-floor-one-i7-fold/01-cover.webp": {
@@ -41792,6 +41828,11 @@
         "/images/articles/steve-richman-milwaukee-growth/02-career.webp"
       ]
     },
+    "stihl-equip-expo-2026-battery-mowers-snow": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/stihl-equip-expo-2026-battery-mowers-snow/01-cover.webp",
+      "body": []
+    },
     "story-of-hard-floor-washers": {
       "budgetClass": "standard",
       "cover": "/images/articles/story-of-hard-floor-washers/01-cover.webp",
@@ -41846,6 +41887,11 @@
     "tennant-2025-results-erp-disruption-february-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/tennant-2025-results-erp-disruption-february-2026/01-cover.webp",
+      "body": []
+    },
+    "tennant-p1-vac-autonomous-vacuum-october-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
       "body": []
     },
     "the-counterattack-of-chyson-vacuum-brands": {
@@ -46264,6 +46310,15 @@
         }
       }
     },
+    "stihl-equip-expo-2026-battery-mowers-snow": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/stihl-equip-expo-2026-battery-mowers-snow/01-cover.webp",
+          "hash": "sha256:dafc0d84cd5d957d93d206139f78f7702f46292c6d2b8b455181c57d36e2bcec"
+        }
+      }
+    },
     "sunseeker-from-oem-to-robot-mower-brand": {
       "files": {
         "01-cover.png": {
@@ -46321,6 +46376,15 @@
           "status": "matched",
           "primary": "/images/articles/tennant-2025-results-erp-disruption-february-2026/01-cover.webp",
           "hash": "sha256:f2b764965dedb6024652920d42a21068978daa39d37b2d31b8ccff4bc1e96c2e"
+        }
+      }
+    },
+    "tennant-p1-vac-autonomous-vacuum-october-2026": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
+          "hash": "sha256:e964c9f79c5fb5f09d8bcaed4cc5f01ad4a6165ac1f3fc7386d23e233d09a3fa"
         }
       }
     },
