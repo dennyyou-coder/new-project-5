@@ -56,7 +56,7 @@
   "productPortfolio": [
     {
       "name": "Pressure washers and outdoor cleaning",
-      "positioning": "Consumer and professional cold- and hot-water pressure washers anchor the brand, supported by accessories and application-specific systems.",
+      "positioning": "Consumer and professional cold- and hot-water pressure washers anchor the brand, supported by accessories and application-specific systems. An October 20, 2026 announcement identifies a new premium Comfort range spanning K 4 to K 7.",
       "buyerRelevance": "Requires matching pressure, flow, duty cycle, power supply, accessories, detergent and service capability to the application."
     },
     {
@@ -114,6 +114,14 @@
     "competitorSlugs": ["miele", "hoover", "bissell"]
   },
   "developments": [
+    {
+      "date": "2026-10-20",
+      "title": "Kärcher announces the Comfort pressure-washer range",
+      "summary": "The official media index identifies a premium range covering model classes K 4 through K 7, emphasizing ease of use. The reviewed notice does not establish regional retail dates or individual model specifications.",
+      "sourceIds": [
+        "karcher-followup-20261025"
+      ]
+    },
     {
       "date": "2026",
       "title": "Kärcher reports continued global scale",
@@ -181,9 +189,17 @@
       "publisher": "Kärcher",
       "url": "https://www.kaercher.com/int/",
       "accessedAt": "2026-07-30"
+    },
+    {
+      "id": "karcher-followup-20261025",
+      "title": "Media information — October 20, 2026 Comfort pressure-washer announcement",
+      "publisher": "Kärcher",
+      "url": "https://s3.kaercher-media.com/int/inside-kaercher/company/media-information.html",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-10-20"
     }
   ],
   "publishedAt": "2026-07-30T23:40:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T23:40:00+08:00"
+  "lastModified": "2026-10-25T22:34:30+08:00"
 }

@@ -41,6 +41,11 @@
       "name": "Dave Huml",
       "role": "President and Chief Executive Officer",
       "context": "Tennant's 2025 full-year results identify Dave Huml as President and CEO."
+    },
+    {
+      "name": "Richard H. (Rusty) Zay",
+      "role": "Chief Operating Officer",
+      "context": "Appointed effective July 1, 2026, after serving as Chief Commercial Officer. The June 17 announcement assigns him oversight of customer-facing business units, supply chain, manufacturing, R&D and marketing."
     }
   ],
   "productPortfolio": [
@@ -105,6 +110,14 @@
       "summary": "Tennant introduced P1 VAC, the first model in its P-Series, and said orders were open. The machine adds autonomous vacuuming and dust mopping to its robotic portfolio; the company describes this as its first autonomous soft-floor cleaner.",
       "sourceIds": [
         "tennant-october-2026-weekly"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Richard H. Zay becomes Chief Operating Officer",
+      "summary": "Tennant announced the appointment on June 17, with a July 1 effective date. Zay previously served as Chief Commercial Officer and has been on the leadership team since 2010.",
+      "sourceIds": [
+        "tennant-followup-20261025"
       ]
     },
     {
@@ -178,9 +191,17 @@
       "url": "https://investors.tennantco.com/news/news-details/2026/Tennant-Company-Introduces-Its-First-Autonomous-Robotic-Vacuum-the-P1-VAC/default.aspx",
       "publishedAt": "2026-10-20",
       "accessedAt": "2026-10-25"
+    },
+    {
+      "id": "tennant-followup-20261025",
+      "title": "Tennant Company Names Richard H. Zay Chief Operating Officer",
+      "publisher": "Tennant Company",
+      "url": "https://investors.tennantco.com/news/news-details/2026/Tennant-Company-Names-Richard-H--Zay-Chief-Operating-Officer/default.aspx",
+      "accessedAt": "2026-10-25",
+      "publishedAt": "2026-06-17"
     }
   ],
   "publishedAt": "2026-08-08T01:38:00+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-10-25T11:01:21+08:00"
+  "lastModified": "2026-10-25T22:34:30+08:00"
 }
