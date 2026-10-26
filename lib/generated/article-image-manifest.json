@@ -10124,6 +10124,96 @@
       "sourceHash": "sha256:5148fd793232ab71326fc352b55ccae47545cebb0e1149664105e623ee192963",
       "outputHash": "sha256:a4d834e4193070d24b4be69d189ce429c26c618bf1d2c88445b2fb1a33f1f839"
     },
+    "/images/articles/sendcutsend-us-manufacturing-china/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 30032,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4f4a399ca3107b675d579899c032392e37a059fab25d0d2691ee2df947154208",
+      "outputHash": "sha256:459f67d73947686348ea1a9975029665142dc156e47e00bddac2e67ae4c5f2f4",
+      "mobile": {
+        "src": "/images/articles/sendcutsend-us-manufacturing-china/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 11640,
+        "outputHash": "sha256:57c38ed9a56598f9963a0a764e991633b91d8b460ee7bf2a70f2dcbf692e5910"
+      }
+    },
+    "/images/articles/sendcutsend-us-manufacturing-china/02-interview-floor.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69440,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bcce420ebc2d99681c3c28ed048a456d986c33444388434307e149153f347303",
+      "outputHash": "sha256:91fff7c22eb662ab59e96d768b9ebf79f97c51bc4226c288f6fce11cc427f290",
+      "mobile": {
+        "src": "/images/articles/sendcutsend-us-manufacturing-china/02-interview-floor-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25422,
+        "outputHash": "sha256:9b9fa00c69c2a5942feb4c2cd13222837d9b1b5b5e4d1c8f869d6419b3141a93"
+      }
+    },
+    "/images/articles/sendcutsend-us-manufacturing-china/03-power-bottleneck.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1200,
+      "height": 675,
+      "bytes": 226964,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:913b1cd59bc54f8ffe8402db3c1c450177cb2b49bc50bff1e8371d6b614a7ea6",
+      "outputHash": "sha256:45be11d223359cc007654b358c5b6aa419af7710740283af587920720dc46d78",
+      "mobile": {
+        "src": "/images/articles/sendcutsend-us-manufacturing-china/03-power-bottleneck-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 113866,
+        "outputHash": "sha256:313fa669cca4bfa4c6770a2242e3008396552e453f11c9bcfe18f6fb20138dc4"
+      }
+    },
+    "/images/articles/sendcutsend-us-manufacturing-china/04-sheet-nesting.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 50576,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7945b4caa7d7e31b57040dc7b37835adf44448aaa10f0ff17520d6d2dac99640",
+      "outputHash": "sha256:fe79040af5ce3f24b309ed7e89e87f9cf79a5d1f8b39acb538af9aa0e6c91bd1",
+      "mobile": {
+        "src": "/images/articles/sendcutsend-us-manufacturing-china/04-sheet-nesting-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23250,
+        "outputHash": "sha256:54cd35de44a5fa461a8480430d0836e041dd2dfc8f117d8333a11d51afa36b68"
+      }
+    },
+    "/images/articles/sendcutsend-us-manufacturing-china/05-capacity-buffer.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 65662,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:75b3ff6a180a9281d2ebfc6a4b8bd4e49b60867925ec74d2ede82e4407bb8a3d",
+      "outputHash": "sha256:6673e0210a883cb4b7d98ff45482f2ea882dd44617eb907f0fb7ce61a7bc2cc1",
+      "mobile": {
+        "src": "/images/articles/sendcutsend-us-manufacturing-china/05-capacity-buffer-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29406,
+        "outputHash": "sha256:1936d9917c36b2423e76865a95adcbbac5466eb7ed852afb3b53b49f8f032872"
+      }
+    },
     "/images/articles/shark-aquareach-pro-wd563/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -41796,6 +41886,16 @@
         "/images/blog/robot-vacuum-dock-supply-chain-risks.webp"
       ]
     },
+    "sendcutsend-us-manufacturing-china": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/sendcutsend-us-manufacturing-china/01-cover.webp",
+      "body": [
+        "/images/articles/sendcutsend-us-manufacturing-china/02-interview-floor.webp",
+        "/images/articles/sendcutsend-us-manufacturing-china/03-power-bottleneck.webp",
+        "/images/articles/sendcutsend-us-manufacturing-china/04-sheet-nesting.webp",
+        "/images/articles/sendcutsend-us-manufacturing-china/05-capacity-buffer.png"
+      ]
+    },
     "shark-aquareach-pro-wd563": {
       "budgetClass": "standard",
       "cover": "/images/articles/shark-aquareach-pro-wd563/01-cover.webp",
@@ -46359,6 +46459,35 @@
           "status": "matched",
           "primary": "/images/articles/segway-navimow-x430/01-cover.webp",
           "hash": "sha256:5148fd793232ab71326fc352b55ccae47545cebb0e1149664105e623ee192963"
+        }
+      }
+    },
+    "sendcutsend-us-manufacturing-china": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/sendcutsend-us-manufacturing-china/01-cover.webp",
+          "hash": "sha256:4f4a399ca3107b675d579899c032392e37a059fab25d0d2691ee2df947154208"
+        },
+        "02-interview-floor.png": {
+          "status": "matched",
+          "primary": "/images/articles/sendcutsend-us-manufacturing-china/02-interview-floor.webp",
+          "hash": "sha256:bcce420ebc2d99681c3c28ed048a456d986c33444388434307e149153f347303"
+        },
+        "03-power-bottleneck.png": {
+          "status": "matched",
+          "primary": "/images/articles/sendcutsend-us-manufacturing-china/03-power-bottleneck.webp",
+          "hash": "sha256:913b1cd59bc54f8ffe8402db3c1c450177cb2b49bc50bff1e8371d6b614a7ea6"
+        },
+        "04-sheet-nesting.png": {
+          "status": "matched",
+          "primary": "/images/articles/sendcutsend-us-manufacturing-china/04-sheet-nesting.webp",
+          "hash": "sha256:7945b4caa7d7e31b57040dc7b37835adf44448aaa10f0ff17520d6d2dac99640"
+        },
+        "05-capacity-buffer.png": {
+          "status": "matched",
+          "primary": "/images/articles/sendcutsend-us-manufacturing-china/05-capacity-buffer.png",
+          "hash": "sha256:75b3ff6a180a9281d2ebfc6a4b8bd4e49b60867925ec74d2ede82e4407bb8a3d"
         }
       }
     },
