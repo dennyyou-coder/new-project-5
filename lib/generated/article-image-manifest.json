@@ -11914,6 +11914,60 @@
         "outputHash": "sha256:5a2daa8735ba3a281fe8d306246a6e1198319a24d757fc915414228a94316c6b"
       }
     },
+    "/images/articles/versuni-dreame-mira-mop-patent-dispute/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 83788,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:30e4a5aa5b2aad70839ba985e92fffbb856cf0f3aea2665acad382639ed6a975",
+      "outputHash": "sha256:8ae38cd9066444b50f47c0f6ef49f900da3deed12c11492c291fdf8118673d6a",
+      "mobile": {
+        "src": "/images/articles/versuni-dreame-mira-mop-patent-dispute/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 28176,
+        "outputHash": "sha256:db313a84e418ab0e747d9407109c0dc7d5b83262f1950ec0285bd21e35e94f39"
+      }
+    },
+    "/images/articles/versuni-dreame-mira-mop-patent-dispute/02-mira-product.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1200,
+      "height": 1200,
+      "bytes": 14434,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:516436823b8c684203a070a079457a92d9b346a48946b84aea5b844a52ad2caf",
+      "outputHash": "sha256:47fe824e22106da9e25dd590c990754d3c045f5bbf3356876a68f5f2f0cdc3b2",
+      "mobile": {
+        "src": "/images/articles/versuni-dreame-mira-mop-patent-dispute/02-mira-product-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 7496,
+        "outputHash": "sha256:314706ba4f66e6382f46e1bb1bbe2535dea1e80f71ae2a6b4cc900421d05e6ba"
+      }
+    },
+    "/images/articles/versuni-dreame-mira-mop-patent-dispute/03-patent-flow-en.png": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44871,
+      "format": "png",
+      "quality": 100,
+      "sourceHash": "sha256:3a28255da9d3b8be382be0924fb0c21db17cc171e13c8da968790e9fefb89265",
+      "outputHash": "sha256:11e7eb9620f6e5a99d7c83edc88c4531f6a56c8fc14c04c6a3847f84f2f60118",
+      "mobile": {
+        "src": "/images/articles/versuni-dreame-mira-mop-patent-dispute/03-patent-flow-en-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25230,
+        "outputHash": "sha256:e789651d03dcb3b163ff8e670d19e5e27f465fd5fe8ddc44a175a7a977d105c3"
+      }
+    },
     "/images/articles/vorwerk-family-thermomix-history/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -42400,6 +42454,14 @@
       "cover": "/images/insights/vacuum-industry-2018-review-2019-outlook-cover.jpg",
       "body": []
     },
+    "versuni-dreame-mira-mop-patent-dispute": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/versuni-dreame-mira-mop-patent-dispute/01-cover.webp",
+      "body": [
+        "/images/articles/versuni-dreame-mira-mop-patent-dispute/02-mira-product.webp",
+        "/images/articles/versuni-dreame-mira-mop-patent-dispute/03-patent-flow-en.png"
+      ]
+    },
     "vietnam-development-and-industrial-hollowing": {
       "budgetClass": "standard",
       "cover": "/images/insights/vietnam-development-and-industrial-hollowing-cover.jpg",
@@ -46977,6 +47039,25 @@
           "status": "matched",
           "primary": "/images/articles/vacuum-cleaner-smells-burnt/03-burning-smell-stop-check.webp",
           "hash": "sha256:f317116cd311a9aff671705c930f98beb566e7942fcbf78888b3d22725b53b97"
+        }
+      }
+    },
+    "versuni-dreame-mira-mop-patent-dispute": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/versuni-dreame-mira-mop-patent-dispute/01-cover.webp",
+          "hash": "sha256:30e4a5aa5b2aad70839ba985e92fffbb856cf0f3aea2665acad382639ed6a975"
+        },
+        "02-mira-product.png": {
+          "status": "matched",
+          "primary": "/images/articles/versuni-dreame-mira-mop-patent-dispute/02-mira-product.webp",
+          "hash": "sha256:516436823b8c684203a070a079457a92d9b346a48946b84aea5b844a52ad2caf"
+        },
+        "03-patent-flow-en.png": {
+          "status": "matched",
+          "primary": "/images/articles/versuni-dreame-mira-mop-patent-dispute/03-patent-flow-en.png",
+          "hash": "sha256:3a28255da9d3b8be382be0924fb0c21db17cc171e13c8da968790e9fefb89265"
         }
       }
     },
