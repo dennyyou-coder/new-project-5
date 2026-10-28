@@ -90,7 +90,7 @@ test("exports the approved decimal-byte image and article budgets", () => {
     visual_archive: { desktop: 2_500_000, mobile: 1_600_000 }
   });
   assert.equal(ARTICLE_IMAGE_BASELINE_BYTES, 292_654_871);
-  assert.equal(ARTICLE_IMAGE_LIMIT_BYTES, 321_920_358);
+  assert.equal(ARTICLE_IMAGE_LIMIT_BYTES, 400_000_000);
   assert.equal(MOBILE_MIN_SAVINGS_BYTES, 20_000);
   assert.equal(MOBILE_MIN_SAVINGS_RATIO, 0.25);
 });

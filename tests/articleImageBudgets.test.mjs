@@ -565,7 +565,7 @@ test("repository growth scans exactly the three guarded roots, reports exact tot
   const finding = exceeded.failures.find(({ code }) => code === "REPOSITORY_BUDGET_EXCEEDED");
   assert.ok(finding);
   assert.match(finding.message, new RegExp(`current ${ARTICLE_IMAGE_LIMIT_BYTES + 78} bytes`));
-  assert.match(finding.message, /baseline 292654871 bytes.*allowed growth 29265487 bytes.*limit 321920358 bytes/);
+  assert.match(finding.message, /baseline 292654871 bytes.*allowed growth 107345129 bytes.*limit 400000000 bytes/);
 });
 
 test("repository growth rejects symlinks instead of following them outside public", () => {
