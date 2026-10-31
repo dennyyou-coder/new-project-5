@@ -10466,6 +10466,42 @@
         "outputHash": "sha256:8cdbc3824fba1cfb800d56e949161c556cb629cce48aa65ef727c14742ce5470"
       }
     },
+    "/images/articles/sky-001-engineering-world-model/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 261536,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6214827d4f95586c8e213529bf2e8c7db81a93513c59b07171e878a0d42b0241",
+      "outputHash": "sha256:19ea53f84ee243716a6caae9ad38bc8fe25b938d6e8ac0c58a414b6dfc7f6b39",
+      "mobile": {
+        "src": "/images/articles/sky-001-engineering-world-model/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 88544,
+        "outputHash": "sha256:4920fdd6d85de5a42d348bcd252a36f5a0d1a11997f4b0c8af6a07dbf2710f48"
+      }
+    },
+    "/images/articles/sky-001-engineering-world-model/02-workflow.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56208,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0ccd9942fb2d863b597572b82af831ed21616ce925b7b779a118ea6eb81ee2aa",
+      "outputHash": "sha256:4f1de70d392fd2a52f546ef48d6765b39a7d3b0456afd907d2cb91482bf54442",
+      "mobile": {
+        "src": "/images/articles/sky-001-engineering-world-model/02-workflow-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24552,
+        "outputHash": "sha256:993bfa43a12982bd804bdfad9fb25034d03953519c42052b72112533581231fd"
+      }
+    },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -42037,6 +42073,13 @@
         "/images/insights/should-shark-and-ninja-be-one-brand-image-03.png"
       ]
     },
+    "sky-001-engineering-world-model": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/sky-001-engineering-world-model/01-cover.webp",
+      "body": [
+        "/images/articles/sky-001-engineering-world-model/02-workflow.webp"
+      ]
+    },
     "spare-parts-warranty-cleaning-appliances-china": {
       "budgetClass": "standard",
       "cover": "/images/blog/spare-parts-warranty-cleaning-appliances-china-cover.webp",
@@ -46615,6 +46658,20 @@
           "status": "matched",
           "primary": "/images/articles/sharkninja-q2-growth-outside-cleaning/03-household-products-platform.webp",
           "hash": "sha256:b61b1805747454b9470772f7b2877922ca9dd73e85c10c9db6f4fc79aef4e753"
+        }
+      }
+    },
+    "sky-001-engineering-world-model": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/sky-001-engineering-world-model/01-cover.webp",
+          "hash": "sha256:6214827d4f95586c8e213529bf2e8c7db81a93513c59b07171e878a0d42b0241"
+        },
+        "02-workflow.png": {
+          "status": "matched",
+          "primary": "/images/articles/sky-001-engineering-world-model/02-workflow.webp",
+          "hash": "sha256:0ccd9942fb2d863b597572b82af831ed21616ce925b7b779a118ea6eb81ee2aa"
         }
       }
     },
