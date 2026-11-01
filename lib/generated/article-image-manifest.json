@@ -10556,6 +10556,78 @@
         "outputHash": "sha256:993bfa43a12982bd804bdfad9fb25034d03953519c42052b72112533581231fd"
       }
     },
+    "/images/articles/sky-001-engineering-world-model/03-official-engine.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 20008,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0b5dc64eb33a630afac1479fee6c38cfc317967ccb780c8512583f3b1b05a14e",
+      "outputHash": "sha256:ac7464d7de59b64389a36a2f68f092212ff40a7ef9f24a35aae72ddd80481190",
+      "mobile": {
+        "src": "/images/articles/sky-001-engineering-world-model/03-official-engine-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 10576,
+        "outputHash": "sha256:9e407ef841d0268fb63261783459aa9e535f0dbe612131f18a45cd79a125af90"
+      }
+    },
+    "/images/articles/sky-001-engineering-world-model/04-official-hierarchy.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 30338,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:cf8a0064d175e438d9ce965fec237dfad07522260a506764f5ab4326bda6b18a",
+      "outputHash": "sha256:d33bcb87b86c303dc7278490c34fb10b6094c4f8b914a5fc86cee8f2678b8fb9",
+      "mobile": {
+        "src": "/images/articles/sky-001-engineering-world-model/04-official-hierarchy-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15598,
+        "outputHash": "sha256:d0bab9427fdf5b18250a78398b0f35231f5b12f879f82109df5f9df9290bdec7"
+      }
+    },
+    "/images/articles/sky-001-engineering-world-model/05-official-car.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 37768,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e70920c629ef0f597cf7acd8fdd34cea2921a3737af76e62265b7e375e5bb589",
+      "outputHash": "sha256:9e7ac678efd234871280cc5120888627446cc8f7e5e81af20cb092038ff11751",
+      "mobile": {
+        "src": "/images/articles/sky-001-engineering-world-model/05-official-car-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22590,
+        "outputHash": "sha256:4fa3db2cb3beefd2c594d6370ced0c6df0845e27ae682c5edc30519094139c22"
+      }
+    },
+    "/images/articles/sky-001-engineering-world-model/06-official-founder.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1280,
+      "height": 720,
+      "bytes": 27944,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d30e61e5fcc1b82a52756418c7020fea0e6d667237a81f54289391b4357738b4",
+      "outputHash": "sha256:cea4a0001b74bba562a0efa94e0fcc21b846f6963f0bee93419c37521906fd36",
+      "mobile": {
+        "src": "/images/articles/sky-001-engineering-world-model/06-official-founder-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15080,
+        "outputHash": "sha256:2483cb79734f46fb3bd3f14a03c4e3fe00d4b72fdcb1f51a5d2cc3fb84ae3d88"
+      }
+    },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -42139,7 +42211,11 @@
       "budgetClass": "standard",
       "cover": "/images/articles/sky-001-engineering-world-model/01-cover.webp",
       "body": [
-        "/images/articles/sky-001-engineering-world-model/02-workflow.webp"
+        "/images/articles/sky-001-engineering-world-model/03-official-engine.webp",
+        "/images/articles/sky-001-engineering-world-model/06-official-founder.webp",
+        "/images/articles/sky-001-engineering-world-model/02-workflow.webp",
+        "/images/articles/sky-001-engineering-world-model/04-official-hierarchy.webp",
+        "/images/articles/sky-001-engineering-world-model/05-official-car.webp"
       ]
     },
     "spare-parts-warranty-cleaning-appliances-china": {
@@ -46753,6 +46829,26 @@
           "status": "matched",
           "primary": "/images/articles/sky-001-engineering-world-model/02-workflow.webp",
           "hash": "sha256:0ccd9942fb2d863b597572b82af831ed21616ce925b7b779a118ea6eb81ee2aa"
+        },
+        "03-official-engine.png": {
+          "status": "matched",
+          "primary": "/images/articles/sky-001-engineering-world-model/03-official-engine.webp",
+          "hash": "sha256:0b5dc64eb33a630afac1479fee6c38cfc317967ccb780c8512583f3b1b05a14e"
+        },
+        "04-official-hierarchy.png": {
+          "status": "matched",
+          "primary": "/images/articles/sky-001-engineering-world-model/04-official-hierarchy.webp",
+          "hash": "sha256:cf8a0064d175e438d9ce965fec237dfad07522260a506764f5ab4326bda6b18a"
+        },
+        "05-official-car.png": {
+          "status": "matched",
+          "primary": "/images/articles/sky-001-engineering-world-model/05-official-car.webp",
+          "hash": "sha256:e70920c629ef0f597cf7acd8fdd34cea2921a3737af76e62265b7e375e5bb589"
+        },
+        "06-official-founder.png": {
+          "status": "matched",
+          "primary": "/images/articles/sky-001-engineering-world-model/06-official-founder.webp",
+          "hash": "sha256:d30e61e5fcc1b82a52756418c7020fea0e6d667237a81f54289391b4357738b4"
         }
       }
     },
