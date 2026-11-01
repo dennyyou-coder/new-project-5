@@ -20,6 +20,18 @@ export type NewsVisual = {
 };
 
 export const newsStoryVisuals: Record<string, NewsVisual> = {
+  "pudu-bg1-issa-awards-october-2026": {
+    "src": "https://cdn.pudutech.com/1184_752_4230d9196f.png",
+    "alt": "PUDU BG1 Series scrubber-dryer robots in the official launch graphic",
+    "width": 1776,
+    "height": 1128,
+    "kind": "product",
+    "label": "Official product image",
+    "caption": "PUDU BG1 Series. Official launch graphic from March 2026.",
+    "sourceUrl": "https://www.pudurobotics.com/news/pudu-robotics-unveils-bg1-series-ai-native-large-scale-cleaning",
+    "sourceLabel": "Pudu Robotics",
+    "fit": "contain"
+  },
   "ecovacs-m1-3d-interclean-april-2026": {
     src: "/images/articles/ecovacs-m1-3d-interclean-april-2026/01-cover.webp",
     alt: "Visitors watch an ECOVACS commercial cleaning robot demonstration at Interclean Amsterdam",
