@@ -7070,35 +7070,53 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 133438,
+      "bytes": 61276,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:82fabab0b1cb5b989a09f5eb96926a5965c77b8c19c33bca38bedf31dc1132f6",
-      "outputHash": "sha256:1432a5c8457cd054fa865903c4b74ad6b626af5fc371f49a6f2fe778277d61a5",
+      "sourceHash": "sha256:4c0ce450b85363e2a9740d81e3d0b97d470e1d0aff471aef899e6c1f05b47585",
+      "outputHash": "sha256:0aff1041764f5b86190e868a9a85067604c67297d34217d3b1be9ee358d37036",
       "mobile": {
         "src": "/images/articles/kingclean-ai-factory-teams/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 54824,
-        "outputHash": "sha256:1aada45ab730199136b93d9154dd2367848b1a7237514081e57e375ba33687ec"
+        "bytes": 25702,
+        "outputHash": "sha256:beef6f3babc2f008c7bdde96abb855018dad27ab7b9651b4abaf37b043caccd4"
       }
     },
-    "/images/articles/kingclean-ai-factory-teams/02-jam-rate.webp": {
+    "/images/articles/kingclean-ai-factory-teams/02-headquarters.webp": {
       "role": "body",
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 23410,
+      "bytes": 207740,
       "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:277a99678c6b1461470fd5ebd0ef38ffebd5150d57fcee144469653ea18ad481",
-      "outputHash": "sha256:0a6c66c8f3eb19686bf41e07a72b5f2244133bcf583ce80cfcb3489922e43ac3",
+      "quality": 80,
+      "sourceHash": "sha256:989555a720e674ac51552cbc55177243fb0788e148c3c8f7fd7aa3bf9c73b0fc",
+      "outputHash": "sha256:4d6c4393ee41cc8ad8388d91fde38f14cff8fc4a48a8dce4b34d0ef9a8ea904a",
       "mobile": {
-        "src": "/images/articles/kingclean-ai-factory-teams/02-jam-rate-800.webp",
+        "src": "/images/articles/kingclean-ai-factory-teams/02-headquarters-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 9766,
-        "outputHash": "sha256:e5cbdd9b6697f4507a2f64f3eae3a0c54c19836fdd0ec11d50f9fa4fc03f0863"
+        "bytes": 74394,
+        "outputHash": "sha256:f2708f5ef191c82c227598ccc1cfeb4a0f34772cd9bd30fc4c16e46f2b9ea325"
+      }
+    },
+    "/images/articles/kingclean-ai-factory-teams/03-inspection.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 52252,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ad9c6a3073178ffd9961aa40c714a47f2db44f9b1e1d68787101ef7f85fdb02a",
+      "outputHash": "sha256:1655970f54e3a5698acf9d4f62002582a0612e698f818623fbe94062b5bbeff7",
+      "mobile": {
+        "src": "/images/articles/kingclean-ai-factory-teams/03-inspection-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21034,
+        "outputHash": "sha256:df929ffd415bd4232006dec28062bd43d3666f42008332fede5d85afda113223"
       }
     },
     "/images/articles/lawn-mowing-history/01-cover.webp": {
@@ -40733,7 +40751,8 @@
       "budgetClass": "standard",
       "cover": "/images/articles/kingclean-ai-factory-teams/01-cover.webp",
       "body": [
-        "/images/articles/kingclean-ai-factory-teams/02-jam-rate.webp"
+        "/images/articles/kingclean-ai-factory-teams/02-headquarters.webp",
+        "/images/articles/kingclean-ai-factory-teams/03-inspection.webp"
       ]
     },
     "kingclean-chairman-ni-formal-interview": {
@@ -45659,15 +45678,20 @@
     },
     "kingclean-ai-factory-teams": {
       "files": {
-        "01-cover.webp": {
+        "01-cover.jpg": {
           "status": "matched",
           "primary": "/images/articles/kingclean-ai-factory-teams/01-cover.webp",
-          "hash": "sha256:82fabab0b1cb5b989a09f5eb96926a5965c77b8c19c33bca38bedf31dc1132f6"
+          "hash": "sha256:4c0ce450b85363e2a9740d81e3d0b97d470e1d0aff471aef899e6c1f05b47585"
         },
-        "02-jam-rate.webp": {
+        "02-headquarters.jpg": {
           "status": "matched",
-          "primary": "/images/articles/kingclean-ai-factory-teams/02-jam-rate.webp",
-          "hash": "sha256:277a99678c6b1461470fd5ebd0ef38ffebd5150d57fcee144469653ea18ad481"
+          "primary": "/images/articles/kingclean-ai-factory-teams/02-headquarters.webp",
+          "hash": "sha256:989555a720e674ac51552cbc55177243fb0788e148c3c8f7fd7aa3bf9c73b0fc"
+        },
+        "03-inspection.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/kingclean-ai-factory-teams/03-inspection.webp",
+          "hash": "sha256:ad9c6a3073178ffd9961aa40c714a47f2db44f9b1e1d68787101ef7f85fdb02a"
         }
       }
     },
