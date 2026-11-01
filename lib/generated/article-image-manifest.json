@@ -2767,6 +2767,60 @@
         "outputHash": "sha256:0e43605ae5b30fe8b1c9bb01528eabc270c5c808cc4b34f873beed0a03b89a8b"
       }
     },
+    "/images/articles/china-cleaning-appliance-earnings-q3-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 218278,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:03626acec57a40c6e783375a7b1ec0e72ddf59293ff253e5c9d3fa9e5b58d585",
+      "outputHash": "sha256:7d3b71a42cceba5cb86ddc100ce372ca79b2bdeb1aae0655366535f22622184e",
+      "mobile": {
+        "src": "/images/articles/china-cleaning-appliance-earnings-q3-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 69658,
+        "outputHash": "sha256:5c64a05a8783702dd7cf10880f9f1cc5e13347d14ecc245df01546916722332d"
+      }
+    },
+    "/images/articles/china-cleaning-appliance-earnings-q3-2026/02-prices.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 26798,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:96df86b0e2b1a28a25478f9f40b65468cee8b71d7c93cfec8471616261232daf",
+      "outputHash": "sha256:b178779abed5078b90d45775aa00ea373104675a53a8589064d1592c4921fa9b",
+      "mobile": {
+        "src": "/images/articles/china-cleaning-appliance-earnings-q3-2026/02-prices-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12082,
+        "outputHash": "sha256:666549ecf49e8e8b3c3721d1a9156ab1b780f4b9a3ddeea051826844521556dc"
+      }
+    },
+    "/images/articles/china-cleaning-appliance-earnings-q3-2026/03-inventory.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 26242,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6be646d1ee5d689c6b795bb79a97d9ccd9c625346dadd3bf6b669d72d64800cf",
+      "outputHash": "sha256:327fb70fa4adc5146060892c103f690528c877a68e0a87cd8a3fab5cb2a8046e",
+      "mobile": {
+        "src": "/images/articles/china-cleaning-appliance-earnings-q3-2026/03-inventory-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12028,
+        "outputHash": "sha256:ba1d498431a5d2b46d2c7ac813ec053413189e22a8a8cbad5e9cdd27e652bd70"
+      }
+    },
     "/images/articles/china-cleaning-robot-giants-move-into-backyard/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -38998,6 +39052,14 @@
         "/images/insights/ces-2026-backyard-robot-war-image-46.jpg"
       ]
     },
+    "china-cleaning-appliance-earnings-q3-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/china-cleaning-appliance-earnings-q3-2026/01-cover.webp",
+      "body": [
+        "/images/articles/china-cleaning-appliance-earnings-q3-2026/02-prices.webp",
+        "/images/articles/china-cleaning-appliance-earnings-q3-2026/03-inventory.webp"
+      ]
+    },
     "china-cleaning-appliance-financial-reality-check": {
       "budgetClass": "standard",
       "cover": "/images/insights/china-cleaning-appliance-financial-reality-check-cover.jpg",
@@ -44349,6 +44411,25 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp",
           "hash": "sha256:94549e829ce20918416f38b0549b9deb697ff3cbe6978522bfc0d6bc4b70212f"
+        }
+      }
+    },
+    "china-cleaning-appliance-earnings-q3-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/china-cleaning-appliance-earnings-q3-2026/01-cover.webp",
+          "hash": "sha256:03626acec57a40c6e783375a7b1ec0e72ddf59293ff253e5c9d3fa9e5b58d585"
+        },
+        "02-prices.png": {
+          "status": "matched",
+          "primary": "/images/articles/china-cleaning-appliance-earnings-q3-2026/02-prices.webp",
+          "hash": "sha256:96df86b0e2b1a28a25478f9f40b65468cee8b71d7c93cfec8471616261232daf"
+        },
+        "03-inventory.png": {
+          "status": "matched",
+          "primary": "/images/articles/china-cleaning-appliance-earnings-q3-2026/03-inventory.webp",
+          "hash": "sha256:6be646d1ee5d689c6b795bb79a97d9ccd9c625346dadd3bf6b669d72d64800cf"
         }
       }
     },
