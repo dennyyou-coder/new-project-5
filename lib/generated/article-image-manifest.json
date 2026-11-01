@@ -7065,6 +7065,42 @@
         "outputHash": "sha256:c2ac4066dce8b24ca46a98162e8b6299eeabf947b00acde91ee0b75d36205c90"
       }
     },
+    "/images/articles/kingclean-ai-factory-teams/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 133438,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:82fabab0b1cb5b989a09f5eb96926a5965c77b8c19c33bca38bedf31dc1132f6",
+      "outputHash": "sha256:1432a5c8457cd054fa865903c4b74ad6b626af5fc371f49a6f2fe778277d61a5",
+      "mobile": {
+        "src": "/images/articles/kingclean-ai-factory-teams/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 54824,
+        "outputHash": "sha256:1aada45ab730199136b93d9154dd2367848b1a7237514081e57e375ba33687ec"
+      }
+    },
+    "/images/articles/kingclean-ai-factory-teams/02-jam-rate.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 23410,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:277a99678c6b1461470fd5ebd0ef38ffebd5150d57fcee144469653ea18ad481",
+      "outputHash": "sha256:0a6c66c8f3eb19686bf41e07a72b5f2244133bcf583ce80cfcb3489922e43ac3",
+      "mobile": {
+        "src": "/images/articles/kingclean-ai-factory-teams/02-jam-rate-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 9766,
+        "outputHash": "sha256:e5cbdd9b6697f4507a2f64f3eae3a0c54c19836fdd0ec11d50f9fa4fc03f0863"
+      }
+    },
     "/images/articles/lawn-mowing-history/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -40621,6 +40657,13 @@
         "/images/insights/karcher-hidden-champion-in-cleaning-appliances-image-015.jpg"
       ]
     },
+    "kingclean-ai-factory-teams": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/kingclean-ai-factory-teams/01-cover.webp",
+      "body": [
+        "/images/articles/kingclean-ai-factory-teams/02-jam-rate.webp"
+      ]
+    },
     "kingclean-chairman-ni-formal-interview": {
       "budgetClass": "standard",
       "cover": "/images/insights/kingclean-chairman-ni-formal-interview-cover.jpg",
@@ -45535,6 +45578,20 @@
           "status": "matched",
           "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-robotics-v3.webp",
           "hash": "sha256:ee3beebcfd378d801c735b157ee5e43c3e2f3aa6c53c65382dd4a13883dd0ffa"
+        }
+      }
+    },
+    "kingclean-ai-factory-teams": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/kingclean-ai-factory-teams/01-cover.webp",
+          "hash": "sha256:82fabab0b1cb5b989a09f5eb96926a5965c77b8c19c33bca38bedf31dc1132f6"
+        },
+        "02-jam-rate.webp": {
+          "status": "matched",
+          "primary": "/images/articles/kingclean-ai-factory-teams/02-jam-rate.webp",
+          "hash": "sha256:277a99678c6b1461470fd5ebd0ef38ffebd5150d57fcee144469653ea18ad481"
         }
       }
     },
