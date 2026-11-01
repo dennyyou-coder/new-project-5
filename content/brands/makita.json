@@ -23,7 +23,8 @@
     {"placement":"operations","src":"/images/insights/power-tools-new-cycle-cordless-specialization-cover.jpg","alt":"Cordless power-tool specialization visual","caption":"Buyer value comes from platform fit, accessory compatibility and service support rather than brand familiarity alone."}
   ],
   "ownership":{"summary":"Makita Corporation is a Japanese public company. Its corporate materials trace the business to 1915 and describe a global network of manufacturing and assembly plants, regional operations and professional distribution. Makita U.S.A. and other local companies should not be mistaken for the Japanese parent or for each other.","parentCompany":"Makita Corporation"},
-  "leadership":[{"name":"Mosaburo Makita","role":"Founder","context":"Makita's official company history dates the business to Mosaburo Makita's 1915 electric-motor sales and repair company."}],
+  "leadership":[{"name":"Munetoshi Goto","role":"President and Representative Director","context":"Identified in Makita’s current management message and its October 30, 2026 interim results."},
+    {"name":"Mosaburo Makita","role":"Founder","context":"Makita's official company history dates the business to Mosaburo Makita's 1915 electric-motor sales and repair company."}],
   "productPortfolio":[
     {"name":"LXT 18V and 36V cordless tools","positioning":"A broad cordless ecosystem supporting tools, outdoor equipment and cleaning applications.","buyerRelevance":"Confirm battery format, charge system, kit composition and regional electrical requirements."},
     {"name":"XGT 40V and 80V max systems","positioning":"Higher-output cordless platform for professional jobsite and outdoor applications.","buyerRelevance":"Do not assume LXT and XGT interchangeability; verify tool, battery and charger compatibility."},
@@ -42,11 +43,14 @@
   ],
   "competitivePosition":{"summary":"World Clean Biz assessment: Makita's advantage is a large cordless platform combined with professional distribution and a global manufacturing footprint. For cleaning buyers, that becomes valuable where vacuums and extractors have to fit an installed battery ecosystem. The buyer-side discipline is configuration control: LXT, XGT, accessory and local-service choices are not interchangeable.","competitorSlugs":["milwaukee","dewalt","ryobi","black-decker"]},
   "developments":[
+    {"date":"2026-10-30","title":"Makita Interim Revenue Rises 9.6%, with Currency and Tariff Effects","summary":"April–September revenue rose 9.6% to JPY 414.713 billion, while operating profit increased 23.0% to JPY 63.335 billion. Makita attributed the revenue increase to currency translation and noted U.S. tariff refunds supporting profitability.","sourceIds":["makita-weekly-20261101"]},
     {"date":"2025-07-30","title":"Makita publishes its 2025 integrated report","summary":"Makita's annual integrated report sets out group information and long-term value-creation disclosure.","sourceIds":["makita-report-2025"]},
     {"date":"2005","title":"Makita expands its 18V lithium-ion platform","summary":"Makita's U.S. history describes the long-running expansion of its 18V cordless category.","sourceIds":["makita-about"]},
     {"date":"1915","title":"Makita is founded as an electric-motor business","summary":"Makita traces its origin to a 1915 electric-motor sales and repair company.","sourceIds":["makita-about"]}
   ],
   "sources":[
+    {"id":"makita-management-20261101","title":"Message from Management","publisher":"Makita Corporation","url":"https://www.makita.biz/company/president/","accessedAt":"2026-11-01"},
+    {"id":"makita-weekly-20261101","title":"Makita — interim consolidated results for the fiscal year ending March 2027","publisher":"Makita Corporation","url":"https://www.makita.co.jp/ir/upload_file/m005-m005_02/6586_20261019552943_P01_.pdf","publishedAt":"2026-10-30","accessedAt":"2026-11-01"},
     {"id":"makita-report-2025","title":"Makita Report 2025","publisher":"Makita Corporation","url":"https://www.makita.co.jp/ir/library/library_05.html","publishedAt":"2025-07-30","accessedAt":"2026-07-31"},
     {"id":"makita-about","title":"About Us","publisher":"Makita U.S.A.","url":"https://makitatools.com/company/about-us","accessedAt":"2026-07-31"},
     {"id":"makita-vacuum","title":"Makita Expands 18V Compact Lithium-Ion Line-Up with New Cordless Vacuum","publisher":"Makita U.S.A.","url":"https://makitatools.com/company/press-releases/2009/makita-expands-18v-compact-lithium-ion-line-up-with-new-cordless-vacuum","publishedAt":"2009-10-15","accessedAt":"2026-07-31"},
@@ -54,5 +58,5 @@
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-07-31T22:00:00+08:00"
+  "lastModified":"2026-11-01T11:14:44+08:00"
 }

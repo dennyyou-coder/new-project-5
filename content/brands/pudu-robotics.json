@@ -82,6 +82,7 @@
     }
   ],
   "marketsChannels": [
+    {"evidence":"Pudu’s October 30, 2026 announcement identifies an operational European headquarters in Neuss with demonstrations, training, warehousing, repairs and after-sales services.","scope":"European regional operations; company-issued announcement","buyerCheck":"Confirm the authorized local service partner, parts availability and response times for the deployment location."},
     {
       "evidence": "PUDU reports a global network of overseas subsidiaries and hundreds of service centers across dozens of countries and regions.",
       "scope": "Company-reported global distribution and service footprint",
@@ -103,6 +104,7 @@
     "competitorSlugs": ["gausium", "lionsbot", "tennant"]
   },
   "developments": [
+    {"date":"2026-10-30","title":"Pudu Opens European Headquarters in Neuss, Germany","summary":"Pudu announced an operational European headquarters in Neuss, Germany, combining sales, demonstrations, training, warehousing, repairs and after-sales service. The regional hub complements its existing European offices, partners and warehouses.","sourceIds":["pudu-robotics-weekly-20261101"]},
     {
       "date": "2026-09-01",
       "title": "PUDU enters professional grounds care with GT3, GT5 and GT7",
@@ -131,6 +133,7 @@
     }
   ],
   "sources": [
+    {"id":"pudu-robotics-weekly-20261101","title":"Pudu Robotics Opens European Headquarters in Germany to Support Continued Growth Across the Region","publisher":"Pudu Robotics via PR Newswire","url":"https://www.prnewswire.com/news-releases/pudu-robotics-opens-european-headquarters-in-germany-to-support-continued-growth-across-the-region-302923863.html","publishedAt":"2026-10-30","accessedAt":"2026-11-01"},
     {
       "id": "pudu-company",
       "title": "About PUDU",
@@ -179,5 +182,5 @@
   ],
   "publishedAt": "2026-08-08T06:21:18+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-10-25T22:34:30+08:00"
+  "lastModified": "2026-11-01T11:14:44+08:00"
 }
