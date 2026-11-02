@@ -2677,6 +2677,78 @@
       "sourceHash": "sha256:94549e829ce20918416f38b0549b9deb697ff3cbe6978522bfc0d6bc4b70212f",
       "outputHash": "sha256:f218121d1e814c86fbc120bbb686456c15fb7d1d6ef6fb59956166ae30e35762"
     },
+    "/images/articles/camsense-from-tv-vision-to-robot-lidar/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1156,
+      "height": 650,
+      "bytes": 15648,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:13afbce8bef58c4867caabca58b6aaba7e58a996d0d19eeaef3701d032a41073",
+      "outputHash": "sha256:57ae68ee4c0644ec00a7b3e4feeb7e379f781efe84558712a88d6d02fdfee15c",
+      "mobile": {
+        "src": "/images/articles/camsense-from-tv-vision-to-robot-lidar/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 8574,
+        "outputHash": "sha256:6ecbfca443c591d613b3196c70f920773e4e8f9518c62e93435c9aaf1da43e87"
+      }
+    },
+    "/images/articles/camsense-from-tv-vision-to-robot-lidar/02-camsense-d3.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 790,
+      "bytes": 14572,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5b0d8c29ecf29d4e2391f68aa7130e522cdd5c4bbb169cb217d723c53a6f7b36",
+      "outputHash": "sha256:ecc8ef175f123d23146f33984b2d609cc36ee3e884db2e3ab4c778d1e610b670",
+      "mobile": {
+        "src": "/images/articles/camsense-from-tv-vision-to-robot-lidar/02-camsense-d3-800.webp",
+        "width": 800,
+        "height": 395,
+        "bytes": 5026,
+        "outputHash": "sha256:743939ac5e6c8eaac1efa3c4e2d3d55a1681dd1b976dc20e94cf1c2bf3781123"
+      }
+    },
+    "/images/articles/camsense-from-tv-vision-to-robot-lidar/03-camsense-p.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 790,
+      "bytes": 14634,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7e222029e4f4c0f8284c9ceeff15b4c5dd8d05cdb358fee0da88d42a274b4f8e",
+      "outputHash": "sha256:83435ceeedb5cef7748b8af1cf46b96d54a1d621b1cb8da5dca591c0ed6935d4",
+      "mobile": {
+        "src": "/images/articles/camsense-from-tv-vision-to-robot-lidar/03-camsense-p-800.webp",
+        "width": 800,
+        "height": 395,
+        "bytes": 5024,
+        "outputHash": "sha256:798ebf229d508201a7f853fda251cee19b7ef7f47bf6c795c6c405e7b05fa19f"
+      }
+    },
+    "/images/articles/camsense-from-tv-vision-to-robot-lidar/04-line-laser.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 790,
+      "bytes": 30426,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f535bff363b57bb713f41356352e61c4d5ef81a3013f9b0283dc7446b3651d6f",
+      "outputHash": "sha256:abab0edd99f8a05155eb3052f2603ec0d735f2f0fa4bc17692361a927ad41ed0",
+      "mobile": {
+        "src": "/images/articles/camsense-from-tv-vision-to-robot-lidar/04-line-laser-800.webp",
+        "width": 800,
+        "height": 395,
+        "bytes": 9552,
+        "outputHash": "sha256:254ed8ee7df18ce7f037d72a7134d9ed865df99d8b3dd70e61746c753568050e"
+      }
+    },
     "/images/articles/can-dji-become-top-three-in-robot-vacuums/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -38950,6 +39022,15 @@
         "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp"
       ]
     },
+    "camsense-from-tv-vision-to-robot-lidar": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/camsense-from-tv-vision-to-robot-lidar/01-cover.webp",
+      "body": [
+        "/images/articles/camsense-from-tv-vision-to-robot-lidar/02-camsense-d3.webp",
+        "/images/articles/camsense-from-tv-vision-to-robot-lidar/03-camsense-p.webp",
+        "/images/articles/camsense-from-tv-vision-to-robot-lidar/04-line-laser.webp"
+      ]
+    },
     "can-dji-become-top-three-in-robot-vacuums": {
       "budgetClass": "standard",
       "cover": "/images/articles/can-dji-become-top-three-in-robot-vacuums/01-cover.webp",
@@ -44411,6 +44492,30 @@
           "status": "matched",
           "primary": "/images/articles/building-worlds-no-1-cleaning-show-from-scratch-episode-06/10-navimow-robot-mower.webp",
           "hash": "sha256:94549e829ce20918416f38b0549b9deb697ff3cbe6978522bfc0d6bc4b70212f"
+        }
+      }
+    },
+    "camsense-from-tv-vision-to-robot-lidar": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/camsense-from-tv-vision-to-robot-lidar/01-cover.webp",
+          "hash": "sha256:13afbce8bef58c4867caabca58b6aaba7e58a996d0d19eeaef3701d032a41073"
+        },
+        "02-camsense-d3.png": {
+          "status": "matched",
+          "primary": "/images/articles/camsense-from-tv-vision-to-robot-lidar/02-camsense-d3.webp",
+          "hash": "sha256:5b0d8c29ecf29d4e2391f68aa7130e522cdd5c4bbb169cb217d723c53a6f7b36"
+        },
+        "03-camsense-p.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/camsense-from-tv-vision-to-robot-lidar/03-camsense-p.webp",
+          "hash": "sha256:7e222029e4f4c0f8284c9ceeff15b4c5dd8d05cdb358fee0da88d42a274b4f8e"
+        },
+        "04-line-laser.png": {
+          "status": "matched",
+          "primary": "/images/articles/camsense-from-tv-vision-to-robot-lidar/04-line-laser.webp",
+          "hash": "sha256:f535bff363b57bb713f41356352e61c4d5ef81a3013f9b0283dc7446b3651d6f"
         }
       }
     },
