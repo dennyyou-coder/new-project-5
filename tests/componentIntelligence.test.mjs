@@ -141,8 +141,14 @@ test("published loader sitemap and schemas expose only safe semantics", () => {
     url: "https://worldcleanbiz.com/components/sample-motor",
     lastModified: "2026-08-09"
   }]);
-  const schemaText = JSON.stringify(buildComponentPageSchemas(validProfile, "https://worldcleanbiz.com"));
-  assert.match(schemaText, /Product/);
+  const schemas = buildComponentPageSchemas(validProfile, "https://worldcleanbiz.com");
+  const schemaText = JSON.stringify(schemas);
+  const term = schemas.find((entry) => entry["@type"] === "DefinedTerm");
+  assert.equal(term.name, validProfile.name);
+  assert.equal(term.description, validProfile.definition);
+  assert.equal(schemas.find((entry) => entry["@type"] === "WebPage").about["@id"], term["@id"]);
+  assert.doesNotMatch(schemaText, /"@type":"Product"/);
+  assert.match(schemaText, /DefinedTerm/);
   assert.match(schemaText, /BreadcrumbList/);
   assert.doesNotMatch(schemaText, /Organization|Brand|offers|aggregateRating|manufacturer/);
 });

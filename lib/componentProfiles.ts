@@ -334,8 +334,8 @@ export function buildComponentPageSchemas(profile: ComponentProfile, siteUrl: st
       image: `${siteUrl}${profile.heroImage}`, about: { "@id": `${pageUrl}#component` }
     },
     {
-      "@context": "https://schema.org", "@type": "Product", "@id": `${pageUrl}#component`,
-      name: profile.name, description: profile.definition, category: "Cleaning equipment component"
+      "@context": "https://schema.org", "@type": "DefinedTerm", "@id": `${pageUrl}#component`,
+      name: profile.name, description: profile.definition
     },
     {
       "@context": "https://schema.org", "@type": "BreadcrumbList",

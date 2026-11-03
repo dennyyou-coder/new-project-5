@@ -417,11 +417,10 @@ export function buildEquipmentPageSchemas(profile: EquipmentProfile, siteUrl: st
     },
     {
       "@context": "https://schema.org",
-      "@type": "Product",
+      "@type": "DefinedTerm",
       "@id": `${pageUrl}#equipment`,
       name: profile.name,
-      description: profile.definition,
-      category: "Professional cleaning equipment"
+      description: profile.definition
     },
     {
       "@context": "https://schema.org",
