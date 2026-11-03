@@ -184,9 +184,15 @@ test("published loader, sitemap and schemas exclude unsupported semantics", () =
     url: "https://worldcleanbiz.com/equipment/sample-equipment",
     lastModified: "2026-08-08"
   }]);
-  const schemaText = JSON.stringify(buildEquipmentPageSchemas(validProfile, "https://worldcleanbiz.com"));
+  const schemas = buildEquipmentPageSchemas(validProfile, "https://worldcleanbiz.com");
+  const schemaText = JSON.stringify(schemas);
+  const term = schemas.find((entry) => entry["@type"] === "DefinedTerm");
+  assert.equal(term.name, validProfile.name);
+  assert.equal(term.description, validProfile.definition);
+  assert.equal(schemas.find((entry) => entry["@type"] === "WebPage").about["@id"], term["@id"]);
+  assert.doesNotMatch(schemaText, /"@type":"Product"/);
   assert.doesNotMatch(schemaText, /Organization|aggregateRating|offers|manufacturer/);
-  assert.match(schemaText, /Product/);
+  assert.match(schemaText, /DefinedTerm/);
   assert.match(schemaText, /BreadcrumbList/);
 });
 
