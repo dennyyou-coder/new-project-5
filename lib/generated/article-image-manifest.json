@@ -7569,6 +7569,60 @@
       "sourceHash": "sha256:4cbda578f93d75ac723d7b337b9a1d3136417cfb0657def4d1e63e68513aa7f0",
       "outputHash": "sha256:c0df4dee2a3175e8b301c014d55b800b978a7e1b090d1255c8cc3aa4cfd8d8f9"
     },
+    "/images/articles/ldrobot-anthbot-brand-story/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 111772,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:04abd8df48c6b7157304b9f4e5c537f5f9e78fb25fa7e7d4313e6cfd8c9af9a7",
+      "outputHash": "sha256:e3cdb0e08fbf78d8744afa5076669335b54101ce18df57591911df24af34f72a",
+      "mobile": {
+        "src": "/images/articles/ldrobot-anthbot-brand-story/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 41712,
+        "outputHash": "sha256:a3a8e409c52f845300fb8293b7ec5c048540477a50cc3dac5df0feba6489ddb5"
+      }
+    },
+    "/images/articles/ldrobot-anthbot-brand-story/02-anthbot-genie.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 113104,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:be78c05ff568def520c4fa02f680eef148dd1bbc26e33e88d092f4b048e70374",
+      "outputHash": "sha256:0061fef5db9414c1c870e75a9525cf597800ad26905fc2bbc4d2f9f5cb94d096",
+      "mobile": {
+        "src": "/images/articles/ldrobot-anthbot-brand-story/02-anthbot-genie-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 39912,
+        "outputHash": "sha256:acf1631f211329e6a3af0052068f19ae164ce4f7fc53b5b5c82abdb461d72c56"
+      }
+    },
+    "/images/articles/ldrobot-anthbot-brand-story/03-mower-revenue.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 24770,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:142382ee58b9465939547927eef49e55256199b81c389e909d8df37658ccf9da",
+      "outputHash": "sha256:7023b01cc8be1843b763ed676c1ab96549317e58df3240dac64769b914666e48",
+      "mobile": {
+        "src": "/images/articles/ldrobot-anthbot-brand-story/03-mower-revenue-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 11522,
+        "outputHash": "sha256:bc2e0f0bbf69a75a0cad0ba7761ad76394c560ed6b1a4b8a501b54f617eae2b6"
+      }
+    },
     "/images/articles/lexy-annual-results-april-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -40969,6 +41023,14 @@
         "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-011.jpg"
       ]
     },
+    "ldrobot-anthbot-brand-story": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ldrobot-anthbot-brand-story/01-cover.webp",
+      "body": [
+        "/images/articles/ldrobot-anthbot-brand-story/02-anthbot-genie.webp",
+        "/images/articles/ldrobot-anthbot-brand-story/03-mower-revenue.webp"
+      ]
+    },
     "lexy-annual-results-april-2026": {
       "budgetClass": "standard",
       "cover": "/images/articles/lexy-annual-results-april-2026/01-cover.webp",
@@ -46007,6 +46069,25 @@
           "status": "matched",
           "primary": "/images/articles/lawn-mowing-history/25-navimow-terranox.webp",
           "hash": "sha256:4cbda578f93d75ac723d7b337b9a1d3136417cfb0657def4d1e63e68513aa7f0"
+        }
+      }
+    },
+    "ldrobot-anthbot-brand-story": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ldrobot-anthbot-brand-story/01-cover.webp",
+          "hash": "sha256:04abd8df48c6b7157304b9f4e5c537f5f9e78fb25fa7e7d4313e6cfd8c9af9a7"
+        },
+        "02-anthbot-genie.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ldrobot-anthbot-brand-story/02-anthbot-genie.webp",
+          "hash": "sha256:be78c05ff568def520c4fa02f680eef148dd1bbc26e33e88d092f4b048e70374"
+        },
+        "03-mower-revenue.webp": {
+          "status": "matched",
+          "primary": "/images/articles/ldrobot-anthbot-brand-story/03-mower-revenue.webp",
+          "hash": "sha256:142382ee58b9465939547927eef49e55256199b81c389e909d8df37658ccf9da"
         }
       }
     },
