@@ -13,7 +13,7 @@ export const dynamicParams = false;
 export function generateStaticParams() { return productModels.map(({ slug }) => ({ slug })); }
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const model = getProduct((await params).slug);
-  return model ? buildWebsiteMetadata({ title: `${model.name}: Specs & Buying Guide`, description: model.summary, canonical: `/products/${model.slug}`, image: model.coverImage }) : {};
+  return model ? buildWebsiteMetadata({ title: `${model.name}: Specs, Versions & Market Position`, description: model.summary, canonical: `/products/${model.slug}`, image: model.coverImage }) : {};
 }
 export default async function ProductPage({ params }: Props) {
   const model = getProduct((await params).slug);
@@ -38,6 +38,19 @@ export default async function ProductPage({ params }: Props) {
     return <div className="product-price-list">{prices.map((price) => <div key={`${price.market}-${price.kind}`} className="product-price-card"><p className="product-eyebrow">{price.market}</p><h3>{price.amount}</h3><p className="product-note">{price.kind} · {productDate(price.date)}</p><p>{price.note}</p><a href={price.source}>Check official price source</a></div>)}</div>;
   }
   const specifications = guide?.specifications ?? model.facts.map((fact) => ({ ...fact, source: model.sources[0].url }));
+  // Industry view: only fields that exist in the product data; rows with no
+  // data are left out (no component or channel data is recorded yet).
+  const navigation = specifications.find((spec) => /^navigation$/i.test(spec.label));
+  const competitors = guide?.comparison.models.map((item) => item.name).filter((name) => name !== model.name) ?? [];
+  const industryView = [
+    { label: "Positioning", value: model.summary },
+    { label: "Reference market", value: `${model.market}. Sources checked ${productDate(model.verifiedAt)}.` },
+    modelPrices.length ? { label: "Price band", value: modelPrices.map((price) => `${price.amount} (${price.market}, ${price.kind.toLowerCase()}, ${productDate(price.date)})`).join("; ") } : undefined,
+    navigation ? { label: "Key technology", value: `Navigation: ${navigation.value}` } : undefined,
+    competitors.length ? { label: "Main competitors", value: competitors.join(" · ") } : undefined,
+    guide ? { label: "Comparable models", value: guide.comparison.takeaway } : undefined,
+    { label: "Maintenance", value: careFact?.value ?? "Review the cited maintenance instructions for the exact regional model." }
+  ].filter((row): row is { label: string; value: string } => Boolean(row));
   const related = productModels.filter((item) => model.related.includes(item.slug));
   const articles = getInsights().filter((article) => model.articles.includes(article.slug));
   const relatedNews = getNews().filter((article) => article.productSlugs.includes(model.slug));
@@ -60,7 +73,7 @@ export default async function ProductPage({ params }: Props) {
         <a href={guide && overview.length ? `#${overview[0].id}` : "#ownership"}>Product &amp; operation</a><a href="#fit">Fit &amp; limitations</a><a href="#specifications">Specifications</a>{guide && <a href={versions.length ? `#${versions[0].id}` : "#pricing"}>Versions &amp; price</a>}<a href="#compare">Model comparison</a>{maintenance.length > 0 && <a href={`#${maintenance[0].id}`}>Maintenance &amp; parts</a>}<a href="#faq">FAQ &amp; sources</a>
       </nav>
       <div className="product-reading-layout">
-        <aside className="product-buying-note product-professional-brief" aria-labelledby="professional-brief-heading"><p className="product-eyebrow">Professional reading</p><h2 id="professional-brief-heading">Product intelligence brief</h2><dl><div><dt>Positioning</dt><dd>{model.summary}</dd></div><div><dt>Reference market</dt><dd>{model.market}. Sources checked {productDate(model.verifiedAt)}.</dd></div><div><dt>Maintenance</dt><dd>{careFact?.value ?? "Review the cited maintenance instructions for the exact regional model."}</dd></div>{guide && <div><dt>Comparable models</dt><dd>{guide.comparison.takeaway}</dd></div>}</dl></aside>
+        <aside className="product-buying-note product-professional-brief" aria-labelledby="professional-brief-heading"><p className="product-eyebrow">Professional reading</p><h2 id="professional-brief-heading">Industry view</h2><dl>{industryView.map((row) => <div key={row.label}><dt>{row.label}</dt><dd>{row.value}</dd></div>)}</dl></aside>
         <div className="product-reader-content">
           {guide ? renderSections(overview) : <section id="ownership" className="product-editorial" dangerouslySetInnerHTML={{ __html: markdownToHtml(model.content) }} />}
       <section id="fit" className="product-fit-grid"><div><p className="product-eyebrow">Worth considering for</p><h2>Where it makes sense</h2><p>{guide?.verdict ?? model.fit}</p></div><div><p className="product-eyebrow">Before you commit</p><h2>{guide ? "When to look elsewhere" : "The detail to verify"}</h2><p>{guide?.notFor ?? model.caution}</p></div></section>

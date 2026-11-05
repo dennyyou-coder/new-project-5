@@ -489,3 +489,18 @@ body.structure-refresh.design-a .approved-catalog .company-news-media>a,body.str
 body.structure-refresh.design-a .approved-catalog .company-news-media img{height:auto;background:#e9edf1}
 body.structure-refresh.design-a .approved-catalog .company-news-media figcaption{padding:8px 20px 0;color:#52606b;font-size:11px;line-height:1.5;overflow-wrap:anywhere}
 body.structure-refresh.design-a .approved-catalog .company-news-media figcaption a{font-size:inherit;text-decoration:underline;text-underline-offset:2px}
+
+/* PR-14: compact two-column cards on phones; 44px card links everywhere. */
+body.structure-refresh.design-a .approved-catalog.products-page .product-card-brand{display:none}
+body.structure-refresh.design-a .approved-catalog.products-page .product-card-footer a{display:inline-flex;align-items:center;min-height:44px}
+body.structure-refresh.design-a .approved-catalog.products-page .product-card h2 a{display:inline-flex;align-items:center;min-height:44px}
+@media (max-width:640px){
+  body.structure-refresh.design-a .approved-catalog.products-page .product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  body.structure-refresh.design-a .approved-catalog.products-page .product-card{display:flex;flex-direction:column;padding:0;min-height:0}
+  body.structure-refresh.design-a .approved-catalog.products-page .product-card-image{aspect-ratio:1/1;padding:8px}
+  body.structure-refresh.design-a .approved-catalog.products-page .product-card-copy{padding:8px 10px 10px;gap:2px}
+  body.structure-refresh.design-a .approved-catalog.products-page .product-card-brand{display:block;margin:0;font-size:12px;font-weight:700;color:#52606b}
+  body.structure-refresh.design-a .approved-catalog.products-page .product-card-copy h2{margin:0;font-size:15px;line-height:1.3}
+  body.structure-refresh.design-a .approved-catalog.products-page :is(.product-card .product-eyebrow,.product-card-summary,.product-card-market,.product-card-footer){display:none}
+}
+body.structure-refresh.design-a .approved-catalog.products-page .product-library-note a{display:inline-flex;align-items:center;min-height:44px}
