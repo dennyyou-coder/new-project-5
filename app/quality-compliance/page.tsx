@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { buildWebsiteMetadata } from "@/lib/seo";
 import "../styles/trust.css";
 import { TallyButton } from "@/components/LeadForms";
 
-export const metadata: Metadata = {
-  title: "Quality & Compliance",
+export const metadata: Metadata = buildWebsiteMetadata({
+  title: "Quality & Compliance | World Clean Biz",
   description:
     "Understand how World Clean Biz coordinates product requirements, supplier evaluation, samples, quality activities and market-specific compliance work.",
-  alternates: { canonical: "/quality-compliance" }
-};
+  canonical: "/quality-compliance"
+});
 
 const stages = [
   {

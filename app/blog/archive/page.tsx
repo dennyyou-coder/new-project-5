@@ -1,5 +1,6 @@
 import "../../styles/approved-analysis.css";
 import type { Metadata } from "next";
+import { buildWebsiteMetadata } from "@/lib/seo";
 import { ContentDirectory } from "@/components/ContentDirectory";
 import { getInsights } from "@/lib/content";
 import {
@@ -63,15 +64,15 @@ export async function generateMetadata({
     ? "/blog/archive"
     : directoryHref("/blog/archive", page);
 
-  return {
-    title: page > 1 ? `Deep Analysis – Page ${page}` : "Deep Analysis",
+  return buildWebsiteMetadata({
+    title: `${page > 1 ? `Deep Analysis – Page ${page}` : "Deep Analysis"} | World Clean Biz`,
     description:
       "Browse original World Clean Biz analysis of cleaning robots, floorcare, pool cleaning, robotic mowers, brands, suppliers and global cleaning industry strategy.",
-    alternates: { canonical },
+    canonical,
     robots: filtered
       ? { index: false, follow: true }
       : { index: true, follow: true }
-  };
+  });
 }
 
 export default async function BlogArchivePage({ searchParams }: PageProps) {

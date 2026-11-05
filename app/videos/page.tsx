@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { buildWebsiteMetadata } from "@/lib/seo";
 import { HomeVideos } from "@/components/HomeVideos";
 import "../styles/approved-platform.css";
 import Link from "next/link";
 import { getInsights } from "@/lib/content";
 import { responsiveImageProps } from "@/lib/articleImages";
-export const metadata: Metadata = {
-  title: "Cleaning Industry Videos",
+export const metadata: Metadata = buildWebsiteMetadata({
+  title: "Cleaning Industry Videos | World Clean Biz",
   description:
     "Company stories, product strategy and cleaning industry analysis with Denny You. Watch World Clean Biz videos with English and Chinese subtitles.",
-  alternates: { canonical: "/videos" },
-};
+  canonical: "/videos"
+});
 const relatedArticles = [
   { company: "BISSELL", title: "Who Owns BISSELL? Family Ownership & Sanitaire", href: "/blog/who-owns-bissell-family-sanitaire" },
   { company: "Segway Navimow", title: "Ninebot: From a RMB 21.3 Billion Mobility Business to Robotic Lawn Mowers", href: "/blog/ninebot-smart-mobility-navimow" },
