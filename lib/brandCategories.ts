@@ -27,6 +27,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     brandSlugs: [
       "black-decker",
       "bosch-power-tools",
+      "chervon",
       "craftsman",
       "dewalt",
       "dremel",
@@ -46,6 +47,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
     primaryBrandSlugs: [
       "black-decker",
       "bosch-power-tools",
+      "chervon",
       "craftsman",
       "dewalt",
       "dremel",
@@ -72,6 +74,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "aiper",
       "black-decker",
       "bosch-power-tools",
+      "chervon",
       "craftsman",
       "dewalt",
       "dreame",

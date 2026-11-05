@@ -21,7 +21,6 @@ const errors = [];
 const PENDING_BRAND_PROFILES = new Set([
   "anthbot",
   "breville",
-  "chervon",
   "dji",
   "ego",
   "einhell",
