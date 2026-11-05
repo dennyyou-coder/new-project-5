@@ -1,0 +1,154 @@
+{
+  "status": "published",
+  "slug": "stanley-black-decker",
+  "name": "Stanley Black & Decker",
+  "aliases": ["Stanley Black and Decker", "Stanley Black & Decker, Inc.", "SBD", "SWK"],
+  "legalName": "Stanley Black & Decker, Inc.",
+  "legalEntityNote": "Stanley Black & Decker, Inc. is the New York Stock Exchange-listed group behind DEWALT, CRAFTSMAN, STANLEY, BLACK+DECKER and CUB CADET. The group name is not the product brand: operating subsidiaries, regional distributors and warranty entities can differ for each product and market.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.stanleyblackanddecker.com",
+  "headline": "Stanley Black & Decker: the listed group behind DEWALT, CRAFTSMAN, STANLEY, BLACK+DECKER and CUB CADET",
+  "description": "A source-backed corporate profile of Stanley Black & Decker: listing and leadership, the Tools & Outdoor and Engineered Fastening segments, 2025 results, and 2026 moves on Excel Industries and U.S. investment.",
+  "metaDescription": "Stanley Black & Decker profile: NYSE-listed (SWK) owner of DEWALT, CRAFTSMAN, STANLEY, BLACK+DECKER and CUB CADET; segments, 2025 results and 2026 moves.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Stanley Black & Decker. Group-level disclosures do not establish the trademark owner, legal manufacturer, factory, importer, seller or warrantor for every product sold under a Stanley Black & Decker brand.",
+  "headquarters": "New Britain, Connecticut, United States",
+  "founded": "1843",
+  "logoImage": "/images/brands/stanley-black-decker/logo.webp",
+  "logoImageAlt": "Stanley Black & Decker logo",
+  "logoSourceUrl": "https://s29.q4cdn.com/245094436/files/doc_presentations/2026/Feb/17/Investor-Presentation-Update-Feb2026_vf.pdf",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/stanley-black-decker/group-brand-map.svg",
+      "alt": "Stanley Black & Decker with its Tools & Outdoor brands and its Engineered Fastening segment",
+      "caption": "Tools & Outdoor, home to DEWALT, CRAFTSMAN, STANLEY, BLACK+DECKER and CUB CADET, made up 87% of 2025 revenue."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/stanley-black-decker/results-2025.svg",
+      "alt": "Stanley Black & Decker 2025 net sales and Tools & Outdoor sales, with the 2026 Excel Industries sale agreement and U.S. investment plan",
+      "caption": "2025 net sales fell 2% to $15.130 billion; in 2026 the group agreed to sell Excel Industries and announced $1 billion of U.S. investment through 2028."
+    }
+  ],
+  "ownership": {
+    "summary": "Stanley Black & Decker, Inc. is listed on the New York Stock Exchange under the symbol SWK. It traces its history to The Stanley Works, founded in 1843 by Frederick T. Stanley, and completed its merger with The Black & Decker Corporation in March 2010. As the group head, it has no separate parent company.",
+    "displayLabel": "New York Stock Exchange-listed group (SWK)"
+  },
+  "leadership": [
+    {
+      "name": "Christopher J. Nelson",
+      "role": "President and Chief Executive Officer",
+      "context": "The fiscal 2025 Form 10-K lists Christopher J. Nelson as President and Chief Executive Officer since October 2025; he was previously Chief Operating Officer and President, Tools & Outdoor."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Tools & Outdoor",
+      "positioning": "Power tools, hand tools, accessories and storage, and outdoor power equipment under DEWALT, CRAFTSMAN, STANLEY, BLACK+DECKER and CUB CADET. Annual revenues were $13.2 billion in 2025, 87% of the total, and net sales fell 1%.",
+      "buyerRelevance": "Identify the brand, battery platform and regional operating company before comparing products, terms or warranty."
+    },
+    {
+      "name": "Engineered Fastening",
+      "positioning": "Engineered components such as fasteners, fittings and other products designed for specific applications. Annual revenues were $2.0 billion in 2025, 13% of the total, and net sales fell 4%.",
+      "buyerRelevance": "This business sells components rather than consumer cleaning or tool products; confirm the responsible business unit for any industrial enquiry."
+    },
+    {
+      "name": "Outdoor equipment",
+      "positioning": "On 4 September 2026 the group agreed to sell Excel Industries, maker of Hustler professional mowers, to Bad Boy Mowers, while saying it will keep growing its outdoor business, including Cub Cadet and electric products.",
+      "buyerRelevance": "Until the sale closes Excel remains part of the group; afterwards, Hustler service and warranty will sit with the buyer."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "On 12 August 2026 the company announced plans to invest $1 billion in the U.S. through 2028, about half in research and development and the other half in capital expenditures and long-term investments to strengthen its U.S. manufacturing footprint.",
+      "scope": "Company announcement; no specific plants or products are named",
+      "buyerCheck": "Confirm the country of origin and factory for each SKU rather than assuming U.S. production from the investment plan."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "The fiscal 2025 Form 10-K reports approximately 43,500 employees in 59 countries, and says both reportable segments have significant international operations.",
+      "scope": "Group-level presence; brand and product availability differ by country",
+      "buyerCheck": "Check that the exact brand and model are officially sold in the destination market and identify the responsible company or distributor."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Stanley Black & Decker competes in professional and consumer tools mainly through DEWALT and CRAFTSMAN, and in outdoor equipment through CUB CADET. In 2025 lower volumes outweighed price increases, and in 2026 the group narrowed its outdoor portfolio while announcing U.S. investment. Buyers should move from the group name to the specific brand and regional operating company.",
+    "competitorSlugs": ["tti", "makita", "bosch-power-tools", "hilti", "chervon"]
+  },
+  "developments": [
+    {
+      "date": "2026-09-04",
+      "title": "Agreement to sell Excel Industries",
+      "summary": "Stanley Black & Decker agreed to sell Excel Industries, maker of Hustler professional mowers, to Bad Boy Mowers, subject to regulatory approval.",
+      "sourceIds": ["sbd-excel-sale"]
+    },
+    {
+      "date": "2026-08-12",
+      "title": "$1 billion U.S. investment plan",
+      "summary": "The company announced $1 billion of U.S. investment through 2028, split roughly evenly between R&D and U.S. manufacturing and product investment.",
+      "sourceIds": ["sbd-us-investment"]
+    },
+    {
+      "date": "2025-10",
+      "title": "Christopher J. Nelson becomes CEO",
+      "summary": "Christopher J. Nelson became President and Chief Executive Officer.",
+      "sourceIds": ["sbd-10k-2025"]
+    },
+    {
+      "date": "2025",
+      "title": "2025 net sales $15.130 billion",
+      "summary": "Net sales fell 2% as a 3% price increase was more than offset by a 4% decrease in volume and a 1% decrease from the Infrastructure divestiture.",
+      "sourceIds": ["sbd-10k-2025"]
+    },
+    {
+      "date": "2010-03",
+      "title": "Merger with Black & Decker",
+      "summary": "The Stanley Works completed its merger with The Black & Decker Corporation and became Stanley Black & Decker.",
+      "sourceIds": ["sbd-10k-2025"]
+    },
+    {
+      "date": "1843",
+      "title": "Founded by Frederick T. Stanley",
+      "summary": "Frederick T. Stanley founded the company in Connecticut; it was incorporated in 1852.",
+      "sourceIds": ["sbd-10k-2025"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sbd-10k-2025",
+      "title": "Form 10-K for the fiscal year ended January 3, 2026",
+      "publisher": "Stanley Black & Decker, Inc. (SEC EDGAR)",
+      "url": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000009/swk-20260103.htm",
+      "publishedAt": "2026-02",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "id": "sbd-excel-sale",
+      "title": "Stanley Black & Decker Announces Agreement to Sell Excel Industries to Bad Boy Mowers",
+      "publisher": "Stanley Black & Decker",
+      "url": "https://ir.stanleyblackanddecker.com/news-events/press-releases/news-details/2026/Stanley-Black--Decker-Announces-Agreement-to-Sell-Excel-Industries-to-Bad-Boy-Mowers/default.aspx",
+      "publishedAt": "2026-09-04",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "id": "sbd-us-investment",
+      "title": "Stanley Black & Decker Investing $1 Billion in the U.S.",
+      "publisher": "Stanley Black & Decker",
+      "url": "https://newsroom.stanleyblackanddecker.com/2026-08-12-Stanley-Black-Decker-Investing-1-Billion-in-the-U-S-to-Drive-Innovation%2C-Strengthen-U-S-Manufacturing-Footprint-and-Expand-the-Skilled-Trades-Workforce-Essential-to-Building-Americas-Infrastructure",
+      "publishedAt": "2026-08-12",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "id": "sbd-investor-presentation",
+      "title": "Investor Presentation, February 2026",
+      "publisher": "Stanley Black & Decker",
+      "url": "https://s29.q4cdn.com/245094436/files/doc_presentations/2026/Feb/17/Investor-Presentation-Update-Feb2026_vf.pdf",
+      "publishedAt": "2026-02-17",
+      "accessedAt": "2026-11-05"
+    }
+  ],
+  "publishedAt": "2026-11-06T01:10:00+08:00",
+  "lastVerified": "2026-11-05",
+  "lastModified": "2026-11-06T01:10:00+08:00"
+}
