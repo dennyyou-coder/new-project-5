@@ -3,6 +3,7 @@ import path from "node:path";
 import { normalizeCategory } from "@/lib/categories";
 import { normalizeBrandSlugs } from "@/lib/brands";
 import type { ContentClass, GuideType } from "@/lib/guideTaxonomy";
+import { explicitHubCategories, type HubCategorySlug } from "@/lib/hubCategories";
 import {
   getArticleImage,
   responsiveImageAttributes
@@ -39,6 +40,8 @@ export type Insight = {
   contentClass: ContentClass;
   guideType?: GuideType;
   guidePriority: number;
+  /** Explicit `hub_categories` frontmatter; most hubs are derived instead. */
+  hubCategories: HubCategorySlug[];
   content: string;
 };
 
@@ -98,7 +101,20 @@ function parseInlineArray(value: string) {
     .filter(Boolean);
 }
 
+// Production builds render hundreds of pages that each read every article.
+// Parse the directory once per process there; development keeps reading the
+// files so edits show up without a restart.
+const cacheContent = process.env.NODE_ENV === "production";
+let insightsCache: Insight[] | undefined;
+
 export function getInsights(): Insight[] {
+  if (cacheContent && insightsCache) return [...insightsCache];
+  const articles = readInsights();
+  if (cacheContent) insightsCache = articles;
+  return [...articles];
+}
+
+function readInsights(): Insight[] {
   if (!fs.existsSync(insightsDirectory)) return [];
 
   const articles = fs
@@ -156,6 +172,7 @@ export function getInsights(): Insight[] {
         contentClass: String(data.content_class || "") as ContentClass,
         guideType: data.guide_type ? String(data.guide_type) as GuideType : undefined,
         guidePriority: Number(data.guide_priority || 0),
+        hubCategories: explicitHubCategories(data.hub_categories),
         content
       }];
     })
