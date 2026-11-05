@@ -42,6 +42,13 @@ export type HubCategory = {
   intro: string;
   color: string;
   rules: HubRules;
+  /**
+   * Analysis articles listed first under "Essential reading", chosen by Google
+   * Search clicks: Search Console pages report for 2026-07-07 to 2026-10-06
+   * (top 10 pages) and the full pages export for 2026-08-13 to 2026-09-09.
+   * Only set where the data shows a clear lead.
+   */
+  searchPicks?: string[];
 };
 
 export const HUB_CATEGORY_GROUPS: { slug: HubCategoryGroup; label: string }[] = [
@@ -56,6 +63,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     group: "core-cleaning",
     intro: "Robot vacuums and mopping robots: launches, companies, technology and the supply chain behind them.",
     color: "#2f5bd3",
+    searchPicks: ["ecovacs-x5-hybrid-dreame-triform-market"],
     rules: {
       articleTags: ["robot vacuum", "robot vacuums", "robotic vacuum", "robot vacuum cleaner"],
       newsCategories: ["Robot Vacuums"],
@@ -95,6 +103,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     group: "core-cleaning",
     intro: "Robotic pool cleaners, pool equipment groups and the companies entering the category.",
     color: "#1b8fd1",
+    searchPicks: ["maytronics-robotic-pool-cleaner-reinvention"],
     rules: {
       articleCategories: ["Pool Cleaning"],
       articleTags: ["robotic pool cleaner", "robotic pool cleaners", "pool robot", "pool robots"],
@@ -110,6 +119,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     group: "core-cleaning",
     intro: "Robotic lawn mowers: navigation, launches, channels and the brands moving into the yard.",
     color: "#3f8f3a",
+    searchPicks: ["husqvarna-robotic-mowers-after-eu-anti-dumping", "navimow-robotic-mower-roadmap"],
     rules: {
       articleCategories: ["Robotic Mowers"],
       articleTags: ["robotic mower", "robotic mowers", "robot lawn mower", "robot lawn mowers", "robot mower", "robot mowers"],

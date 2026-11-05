@@ -101,3 +101,14 @@ test("hub pages are in the discovery sitemap and each has content to show", asyn
     assert.ok(data.feed.every((item, index, all) => index === 0 || Date.parse(all[index - 1].date.length === 10 ? `${all[index - 1].date}T00:00:00+08:00` : all[index - 1].date) >= Date.parse(item.date.length === 10 ? `${item.date}T00:00:00+08:00` : item.date)), `${data.hub.slug} feed newest first`);
   }
 });
+
+test("search picks are editorial articles in their own hub and lead Essential reading", async () => {
+  const { getAllHubCategoryData } = await import("../lib/hubCategoryContent.ts");
+  for (const data of getAllHubCategoryData()) {
+    const picks = data.hub.searchPicks ?? [];
+    for (const slug of picks) {
+      assert.ok(data.analysis.some((article) => article.slug === slug), `${data.hub.slug}: ${slug} must be an analysis article in the hub`);
+    }
+    assert.deepEqual(data.essential.slice(0, picks.length).map((article) => article.slug), picks, `${data.hub.slug} picks first`);
+  }
+});
