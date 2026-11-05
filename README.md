@@ -21,16 +21,9 @@ World Clean Biz is a Next.js content platform for global cleaning industry intel
 
 ## Production release workflow
 
-The GitHub `main` branch is the single source of truth for production.
+The GitHub `main` branch is the single source of truth for production. The current release rules — which changes are routine page updates and which are high-impact, and when a Vercel Preview is required — live in [`AGENTS.md`](AGENTS.md) under "Production release rule". Follow that document rather than a copy here.
 
-1. Make changes on an isolated feature branch.
-2. Run focused tests and `npm run build`.
-3. Push the feature branch to GitHub.
-4. Create and verify a Vercel Preview deployment.
-5. Obtain explicit approval for production release.
-6. Merge the approved branch into `main` and push `main` to GitHub.
-7. Let the Vercel Git integration deploy production automatically.
-8. Verify `worldcleanbiz.com`, core navigation, forms, analytics, and browser errors.
+GitHub Actions (`.github/workflows/test.yml`) runs the server-free tests on every pull request and on `main`.
 
 Do not use `vercel --prod` for routine releases. Direct CLI production deployment is reserved for an explicitly approved emergency recovery when the normal GitHub-to-Vercel path is unavailable.
 
@@ -45,11 +38,17 @@ Then open `http://localhost:3000`.
 
 ## Lead collection
 
-Website calls to action open Tally forms. Tally sends submissions to Airtable:
+Website calls to action open Tally forms. The form IDs are defined in [`lib/tallyForms.ts`](lib/tallyForms.ts); that file is the source of truth. As of this update it defines six distinct forms:
 
-- Get Free Reports: `https://tally.so/r/ZjeGvz`
-- Sourcing Inquiry: `https://tally.so/r/1ARG4M`
-- World Clean Expo Updates: `https://tally.so/r/lbzVN6`
-- Contact World Clean Biz: `https://tally.so/r/MeV8L8`
+| Key in `TALLY_FORMS` | Form | Lead type |
+| --- | --- | --- |
+| `contact` | `https://tally.so/r/MeV8L8` | `contact` |
+| `sourcing` | `https://tally.so/r/1ARG4M` | `sourcing` |
+| `reports` | `https://tally.so/r/ZjeGvz` | `reports` |
+| `newsletter` | `https://tally.so/r/xX1xZJ` | `newsletter` |
+| `wceExhibitor` | `https://tally.so/r/XxklMV` | `wce_exhibitor` |
+| `wceVisitor` and `expo` | `https://tally.so/r/lbzVN6` | `wce_visitor` |
 
-The Airtable base is `World Clean Biz Leads`, table `Leads`.
+`lbzVN6` was previously listed here as "World Clean Expo Updates"; it is now used for expo visitor registration.
+
+Tally sends submissions to Airtable. The Airtable base is `World Clean Biz Leads`, table `Leads`.

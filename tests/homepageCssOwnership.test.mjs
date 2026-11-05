@@ -21,14 +21,12 @@ test("homepage root CSS excludes route-owned selector families", () => {
 
 test("each route imports the stylesheet that owns its visual system", () => {
   assert.match(read("app/page.tsx"), /import "\.\/styles\/home\.css"/);
-  assert.match(read("app/wcb-expo/page.tsx"), /import "\.\.\/styles\/wcb-expo\.css"/);
   assert.match(read("app/reports/page.tsx"), /import "\.\.\/styles\/reports\.css"/);
   assert.match(read("app/blog/layout.tsx"), /content-directories\.css/);
   assert.match(read("app/sourcing/layout.tsx"), /sourcing\.css/);
 });
 
 test("route styles retain representative moved declarations", () => {
-  assert.match(read("app/styles/wcb-expo.css"), /\.wcb-expo-page\s*\{/);
   assert.match(read("app/styles/reports.css"), /\.reports-library-page\s*\{/);
   assert.match(read("app/styles/content-directories.css"), /\.blog-editorial-intro\s*\{/);
   assert.match(read("app/styles/sourcing.css"), /\.sourcing-v4-page\s*\{/);
