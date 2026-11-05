@@ -48,6 +48,16 @@ export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; has
       detail: formatBrandDate(profile.lastVerified, "long")
     }
   ];
+  // Facts the reviewed sources do not state are listed together in one row
+  // instead of repeating "Not disclosed" in several rows.
+  const undisclosedPattern = /^not (disclosed|publicly identified|stated|identified)/i;
+  const isUndisclosed = (detail: unknown) => typeof detail === "string" && undisclosedPattern.test(detail.trim());
+  const undisclosed = keyFacts.filter(({ detail }) => isUndisclosed(detail)).map(({ fact }) => fact);
+  if (profile.leadership.length === 0) undisclosed.push("Named leadership");
+  const shownFacts = [
+    ...keyFacts.filter(({ detail }) => !isUndisclosed(detail)),
+    ...(undisclosed.length ? [{ fact: "Not disclosed", detail: `${undisclosed.join(" · ")} (not stated in the reviewed sources)` }] : [])
+  ];
 
   return (
     <section className="guides-category-hero">
@@ -101,8 +111,12 @@ export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; has
         </div>
 
         <div className="brand-key-facts">
-          <dl className="company-overview-facts" aria-label="Key facts">{keyFacts.map(({ fact, detail }) => <div key={fact}><dt>{fact}</dt><dd>{detail}</dd></div>)}</dl>
+          <dl className="company-overview-facts" aria-label="Key facts">{shownFacts.map(({ fact, detail }) => <div key={fact}><dt>{fact}</dt><dd>{detail}</dd></div>)}</dl>
         </div>
+
+        <p className="brand-correction">
+          Spot something out of date? <Link href="/contact">Suggest a correction</Link>
+        </p>
 
         <details className="company-profile-context"><summary>About this profile &amp; verification</summary><p>{profile.description}</p><p>{profile.disclaimer}</p></details>
 

@@ -249,9 +249,9 @@ test("brand directory route exposes one canonical collection with links for publ
   assert.equal((source.match(/<h1\b/g) || []).length, 1);
   assert.match(source, /buildBrandDirectorySchemas\(profiles,\s*siteUrl\)/);
   assert.match(source, /getPublishedBrandProfiles\(articles\)/);
-  assert.match(source, /<BrandDirectory\s+categories=\{categories\.map/);
-  assert.match(source, /profiles:\s*data\.profiles\.map\(\(profile\)\s*=>\s*\(\{/);
-  assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
+  // PR-13: one logo card per company, linking to /brands/<slug>.
+  assert.match(source, /<CompanyDirectory\b/);
+  assert.match(read("components/brands/CompanyDirectory.tsx"), /href=\{`\/brands\/\$\{company\.slug\}`\}/);
   assert.match(read("components/brands/BrandDirectoryCard.tsx"), /href=\{`\/brands\/\$\{profile\.slug\}`\}/);
   // PR-08: the main navigation links the directory as "Companies".
   assert.match(read("components/Header.tsx"), /href: "\/brands", label: "Companies"/);
@@ -259,25 +259,21 @@ test("brand directory route exposes one canonical collection with links for publ
   assert.match(source, /Cleaning & Home Appliance Brand Intelligence/);
 });
 
-test("brand directory groups profiles below each product-category introduction", () => {
+// PR-13 replaced the per-category sections with a single logo grid in which
+// each company appears once and categories are filters.
+test("brand directory lists each company once with category and headquarters filters", () => {
   const source = read("app/brands/page.tsx");
-  const directory = read("components/brands/BrandDirectory.tsx");
+  const directory = read("components/brands/CompanyDirectory.tsx");
 
-  assert.match(source, /categories\.map\(\(data\)\s*=>\s*\(\{/);
-  assert.match(source, /name:\s*data\.category\.name/);
-  assert.match(source, /description:\s*data\.category\.description/);
-  assert.match(source, /data\.profiles\.map\(\(profile\)\s*=>\s*\(\{/);
-  assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
-  assert.match(directory, /visible\.map\(\(item,\s*index\)\s*=>\s*<section[^>]*brand-category-list[^>]*id=\{item\.slug\}/);
-  assert.match(directory, /className="brand-category-list__intro"[\s\S]*<h2>\{item\.name\}<\/h2>[\s\S]*<p>\{item\.description\}<\/p>[\s\S]*className="guides-featured-grid brand-directory-grid"[\s\S]*item\.profiles\.map[\s\S]*\{profile\.card\}/);
-  assert.match(directory, /type="search"[^<]*value=\{query\}[^<]*aria-controls="company-directory-results"/);
-  assert.match(directory, /<select value=\{category\}[^<]*aria-controls="company-directory-results"/);
-  assert.match(directory, /id="company-directory-results"/);
+  assert.match(source, /categories=\{categories\.map\(\(data\) => \(\{ slug: data\.category\.slug, name: data\.category\.name \}\)\)\}/);
+  assert.match(source, /headquartersCountry\(profile\.headquarters\)/);
+  assert.match(source, /buildOwnershipGroups\(profiles\)/);
+  assert.match(source, /href=\{`\/brands\/\$\{data\.category\.slug\}`\}/);
+  assert.match(directory, /type="search"[^<]*value=\{query\}/);
+  assert.match(directory, /<select value=\{category\}/);
+  assert.match(directory, /<select value=\{country\}/);
   assert.match(directory, /role="status" aria-live="polite"/);
-  assert.doesNotMatch(source + directory, /<BrandCategoryCard\b/);
-  assert.doesNotMatch(source, /Browse All Verified Brand Profiles/);
-  assert.doesNotMatch(source, /data\.category\.buyerFocus/);
-  assert.doesNotMatch(source, /Explore \{data\.category\.name\} intelligence/);
+  assert.doesNotMatch(source, /<BrandCategoryCard\b/);
 });
 
 test("brand detail route rejects invalid slugs and exposes static metadata and schemas", () => {
@@ -346,7 +342,8 @@ test("brand hero separates official identity from editorial cover and renders ke
   assert.match(hero, /<BrandLogo\s+profile=\{profile\}\s+variant="hero"/);
   assert.match(hero, /profile\.heroImage/);
   assert.match(hero, /<dl className="company-overview-facts" aria-label="Key facts">/);
-  assert.match(hero, /keyFacts\.map\([\s\S]*<dt>\{fact\}<\/dt><dd>\{detail\}<\/dd>/);
+  // PR-13: undisclosed facts are merged into one "Not disclosed" row first.
+  assert.match(hero, /shownFacts\.map\([\s\S]*<dt>\{fact\}<\/dt><dd>\{detail\}<\/dd>/);
   [
     "Brand",
     "Main businesses",
@@ -1028,7 +1025,7 @@ test("mobile key-fact labels retain sufficient white opacity on the dark hero", 
 
 test("brand JSX connects every required CSS selector to rendered content", () => {
   const directoryRoute = read("app/brands/page.tsx");
-  const directory = read("components/brands/BrandDirectory.tsx");
+  const directory = read("components/brands/CompanyDirectory.tsx");
   const detailRoute = read("app/brands/[slug]/page.tsx");
   const directoryCard = read("components/brands/BrandDirectoryCard.tsx");
   const hero = read("components/brands/BrandHero.tsx");
@@ -1038,10 +1035,10 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
   const sources = read("components/brands/BrandSources.tsx");
   const articleBrandLinks = read("components/ArticleBrandLinks.tsx");
 
-  assert.match(directoryRoute, /className="guides-hub brand-hub approved-catalog"/);
-  assert.match(directoryRoute, /<BrandDirectory\s+categories=/);
-  assert.match(directory, /className="brand-jump-links"/);
-  assert.match(directory, /className="guides-featured-grid brand-directory-grid"/);
+  assert.match(directoryRoute, /className="company-directory-page"/);
+  assert.match(directoryRoute, /<CompanyDirectory\b/);
+  assert.match(directory, /className="company-dir-grid"/);
+  assert.match(directory, /className="company-dir-card"/);
   assert.match(directoryCard, /className="guide-card brand-directory-card"/);
   assert.match(directoryCard, /className="brand-business-focus"/);
   assert.match(directoryCard, /className="brand-base"[\s\S]*\{profile\.headquarters\}/);

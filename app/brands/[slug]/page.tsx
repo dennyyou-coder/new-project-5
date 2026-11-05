@@ -1,4 +1,5 @@
 import { buildBrandAnalysisLink } from "@/components/brands/brandAnalysisLink";
+import { BrandLatest } from "@/components/brands/BrandLatest";
 import { getAvailableCompanyKeywords } from "@/lib/companyKeywords";
 import { getEditorialInsights } from "@/lib/insightCollections";
 import { getNews } from "@/lib/news";
@@ -109,6 +110,7 @@ export default async function BrandPage({ params }: PageProps) {
         profile={data.profile}
         hasAnalysis={true}
       />
+      <BrandLatest news={relatedNews} articles={data.primaryArticles} />
       <BrandSections
         profile={data.profile}
         allowedCompetitorSlugs={publishedBrandSlugs}
