@@ -74,3 +74,16 @@
     margin-bottom:18px;
   }
 }
+
+/* PR-15: subscribe bar and guide Industry view */
+.blog-subscribe-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; margin-top: 20px; padding: 18px 20px; border: 1px solid #e3e7ee; border-radius: 12px; background: #f5f7fa; }
+.blog-subscribe-bar p { margin: 0; flex: 1 1 280px; font-size: 15px; line-height: 1.5; color: #2a3245; }
+.blog-subscribe-bar strong { color: #0e1526; }
+.blog-subscribe-bar .blog-subscribe-button { min-height: 44px; padding: 0 22px; border: 0; border-radius: 8px; background: #2b50c8; color: #fff; font: inherit; font-weight: 700; cursor: pointer; box-shadow: none; }
+.blog-industry-view { margin: 40px 0 8px; padding: 22px 24px; border: 1px solid #2b50c8; border-radius: 14px; }
+.blog-industry-view .eyebrow { margin: 0 0 6px; }
+.blog-industry-view h2 { margin: 0 0 10px; font-size: 22px; }
+.blog-industry-view ul { margin: 0; padding-left: 20px; }
+.blog-industry-view li { margin: 6px 0; line-height: 1.6; }
+.blog-industry-view-links { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 10px 0 0; }
+.blog-industry-view-links a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
