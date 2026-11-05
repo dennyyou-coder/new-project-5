@@ -5,6 +5,7 @@ import { getPublishedBrandProfiles } from "@/lib/brands";
 import { productModels, getProduct } from "@/lib/products";
 import { newsCompanyVisuals, newsStoryVisuals, newsIndustryContextVisual, type NewsVisual } from "@/lib/newsVisuals";
 import type { Insight } from "@/lib/content";
+import { explicitHubCategories, type HubCategorySlug } from "@/lib/hubCategories";
 
 export const NEWS_TOPICS = [
   { slug: "products", label: "Products" },
@@ -32,6 +33,8 @@ export type NewsArticle = {
   coverImage?: string;
   sources: { title: string; url: string }[];
   readingTime: string;
+  /** Explicit `hub_categories` frontmatter; most hubs are derived instead. */
+  hubCategories: HubCategorySlug[];
   content: string;
 };
 
@@ -50,7 +53,19 @@ export function newsDate(value: string) {
   }).format(new Date(value.length === 10 ? `${value}T00:00:00+08:00` : value));
 }
 
+// See getInsights(): parse once per process in production builds only.
+const cacheNews = process.env.NODE_ENV === "production";
+let newsCache: NewsArticle[] | undefined;
+
 export function getNews(): NewsArticle[] {
+  const articles = cacheNews && newsCache ? newsCache : readNews();
+  if (cacheNews) newsCache = articles;
+  // Scheduled items appear once their publish time passes, cache or not.
+  const now = Date.now();
+  return articles.filter((article) => Date.parse(article.publishedAt) <= now);
+}
+
+function readNews(): NewsArticle[] {
   if (!fs.existsSync(directory)) return [];
   return fs.readdirSync(directory).filter((file) => /\.mdx?$/.test(file)).flatMap((file) => {
     const { data, content } = parseFrontmatter(fs.readFileSync(path.join(directory, file), "utf8"));
@@ -72,7 +87,6 @@ export function getNews(): NewsArticle[] {
     if (sources.length === 0 || sources.some((source) => !/^https:\/\//.test(source.url))) {
       throw new Error(`News ${slug}: original HTTPS sources required`);
     }
-    if (Date.parse(String(data.publishedAt)) > Date.now()) return [];
     const words = content.replace(/\[[^\]]+\]\([^)]+\)/g, " ").split(/\s+/).length;
     return [{
       slug, topic, title: String(data.title), excerpt: String(data.excerpt), category: String(data.category),
@@ -81,7 +95,8 @@ export function getNews(): NewsArticle[] {
       brandSlugs: array(data.brand_slugs), productSlugs: array(data.product_slugs),
       relatedArticles: array(data.related_articles), imageProduct: data.image_product ? String(data.image_product) : undefined,
       coverImage: data.coverImage ? String(data.coverImage) : undefined,
-      sources, readingTime: `${Math.max(1, Math.ceil(words / 220))} min read`, content
+      sources, readingTime: `${Math.max(1, Math.ceil(words / 220))} min read`,
+      hubCategories: explicitHubCategories(data.hub_categories), content
     }];
   }).sort((a, b) => b.eventDate.localeCompare(a.eventDate) || b.sortDate.localeCompare(a.sortDate) || a.slug.localeCompare(b.slug));
 }

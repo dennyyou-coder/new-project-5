@@ -289,8 +289,20 @@ export function normalizeBrandSlugs(value: unknown): string[] {
   )];
 }
 
+// See getInsights(): parse once per process in production builds only.
+const cacheBrandProfiles = process.env.NODE_ENV === "production";
+const brandProfilesCache = new Map<string, unknown[]>();
+
 export function getBrandProfiles(): unknown[] {
   const directory = brandProfilesDirectory();
+  const cached = cacheBrandProfiles ? brandProfilesCache.get(directory) : undefined;
+  if (cached) return [...cached];
+  const profiles = readBrandProfiles(directory);
+  if (cacheBrandProfiles) brandProfilesCache.set(directory, profiles);
+  return [...profiles];
+}
+
+function readBrandProfiles(directory: string): unknown[] {
   if (!fs.existsSync(directory)) return [];
 
   return fs

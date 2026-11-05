@@ -40,6 +40,7 @@ jobs:
       - run: npm run test:seo-audit
       - run: npm run test:equipment
       - run: npm run test:components
+      - run: npm run test:categories
 
       # Known failures already on main. They run and report here, but do not
       # block the check until they are fixed:
