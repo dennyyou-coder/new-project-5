@@ -42,6 +42,8 @@ export type Insight = {
   guidePriority: number;
   /** Explicit `hub_categories` frontmatter; most hubs are derived instead. */
   hubCategories: HubCategorySlug[];
+  /** Optional `industry_view` frontmatter (a YAML list), shown on guides. */
+  industryView: string[];
   content: string;
 };
 
@@ -173,6 +175,7 @@ function readInsights(): Insight[] {
         guideType: data.guide_type ? String(data.guide_type) as GuideType : undefined,
         guidePriority: Number(data.guide_priority || 0),
         hubCategories: explicitHubCategories(data.hub_categories),
+        industryView: Array.isArray(data.industry_view) ? data.industry_view.map(String).filter(Boolean) : [],
         content
       }];
     })

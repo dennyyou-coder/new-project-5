@@ -1,4 +1,7 @@
 import { ArticleProductLinks, ArticleVideoLinks } from "@/components/editorial/EditorialConnections";
+import { TallyButton } from "@/components/LeadForms";
+import { getBlogCta } from "@/lib/blogConversion";
+import { getHubCategory, hubCategoriesForInsight } from "@/lib/hubCategories";
 import { getArticleProducts, getArticleReading, getArticleNews, getArticleVideos } from "@/lib/editorialConnections";
 import { productModels } from "@/lib/products";
 import { videoLibrary } from "@/lib/wcbVideos";
@@ -173,6 +176,8 @@ export default async function InsightDetailPage({ params }: Props) {
   const reading = addArticleContents(markdownToHtml(articleContent));
   const url = `${siteUrl}/blog/${article.slug}`;
   const isGuide = article.contentClass === "search" && article.guideType;
+  const ctaForm = getBlogCta(article.category, isGuide ? article.guideType : undefined).form;
+  const articleHubs = hubCategoriesForInsight(article).map((slug) => getHubCategory(slug)).filter((hub) => hub !== undefined);
   const collectionHref = isGuide ? `/guides/${article.guideType}` : "/blog";
   const collectionName = isGuide ? "Guides" : "Blog";
   const publishedTime = article.publishedAt || article.date;
@@ -281,7 +286,7 @@ export default async function InsightDetailPage({ params }: Props) {
 
             {hasTakeaways ? (
               <div className="blog-key-points">
-                <strong>Key Points</strong>
+                <strong>Key takeaways</strong>
                 <ul>
                   {article.takeaways.map((point) => (
                     <li key={point}>{point}</li>
@@ -314,6 +319,21 @@ export default async function InsightDetailPage({ params }: Props) {
 
             <div className="blog-reading-body" dangerouslySetInnerHTML={{ __html: reading.content }} />
 
+            {isGuide && article.industryView.length ? (
+              <section className="blog-industry-view" aria-labelledby="blog-industry-view-title">
+                <p className="eyebrow">Industry view</p>
+                <h2 id="blog-industry-view-title">What this means for the industry</h2>
+                <ul>
+                  {article.industryView.map((point) => <li key={point}>{point}</li>)}
+                </ul>
+                {articleHubs.length ? (
+                  <p className="blog-industry-view-links">
+                    {articleHubs.map((hub) => <Link key={hub.slug} href={`/categories/${hub.slug}`}>{hub.name} hub →</Link>)}
+                  </p>
+                ) : null}
+              </section>
+            ) : null}
+
             <ArticleProductLinks products={relatedProducts} />
             <ArticleShareActions title={article.title} url={url} />
 
@@ -339,6 +359,12 @@ export default async function InsightDetailPage({ params }: Props) {
                   <Link href="/about">About Denny &amp; World Clean Biz</Link>
                 </div>
               </div>
+              {ctaForm !== "newsletter" ? (
+                <div className="blog-subscribe-bar">
+                  <p><strong>Industry updates by email.</strong> New products, company moves and supply chain news from World Clean Biz.</p>
+                  <TallyButton className="blog-subscribe-button" ctaLocation="article_subscribe_bar" form="newsletter">Subscribe</TallyButton>
+                </div>
+              ) : null}
             </footer>
           </article>
 
