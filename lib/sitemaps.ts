@@ -21,6 +21,7 @@ import {
   getPublishedEquipmentProfiles
 } from "@/lib/equipment";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
+import { HUB_CATEGORIES } from "@/lib/hubCategories";
 import {
   getEditorialInsights,
   getGuideInsights
@@ -81,6 +82,8 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
 
   return routeEntries([
     "",
+    "/categories",
+    ...HUB_CATEGORIES.map((hub) => `/categories/${hub.slug}`),
     "/videos",
     "/products",
     ...productModels.map((model) => `/products/${model.slug}`),
