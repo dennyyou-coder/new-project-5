@@ -9,6 +9,7 @@ import "./styles/design-a-home.css";
 import "./styles/design-a-directories.css";
 import "./styles/design-a-details.css";
 import "./styles/approved-foundations.css";
+import "./styles/site-chrome.css";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { Header } from "@/components/Header";

@@ -253,7 +253,8 @@ test("brand directory route exposes one canonical collection with links for publ
   assert.match(source, /profiles:\s*data\.profiles\.map\(\(profile\)\s*=>\s*\(\{/);
   assert.match(source, /<BrandDirectoryCard\s+key=\{profile\.slug\}\s+profile=\{profile\}/);
   assert.match(read("components/brands/BrandDirectoryCard.tsx"), /href=\{`\/brands\/\$\{profile\.slug\}`\}/);
-  assert.match(read("components/Header.tsx"), /href: "\/blog\/archive", label: "Deep Analysis"/);
+  // PR-08: the main navigation links the directory as "Companies".
+  assert.match(read("components/Header.tsx"), /href: "\/brands", label: "Companies"/);
   assert.match(source, /<h1>Companies &amp; Brands<\/h1>/);
   assert.match(source, /Cleaning & Home Appliance Brand Intelligence/);
 });

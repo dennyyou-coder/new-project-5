@@ -2,159 +2,192 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { TallyButton } from "@/components/LeadForms";
+import { HUB_CATEGORIES, HUB_CATEGORY_GROUPS } from "@/lib/hubCategories";
 
-const groups = [
+type NavLink = { href: string; label: string };
+type NavMenu = { id: string; label: string; current: string[]; columns: { heading?: string; links: NavLink[] }[] };
+type NavItem = ({ kind: "link" } & NavLink & { current?: string[] }) | ({ kind: "menu" } & NavMenu);
+
+const NAV: NavItem[] = [
+  { kind: "link", href: "/news", label: "News" },
   {
-    label: "Insights",
-    links: [
-      { href: "/blog/archive", label: "Deep Analysis" },
+    kind: "menu",
+    id: "categories",
+    label: "Categories",
+    current: ["/categories"],
+    columns: HUB_CATEGORY_GROUPS.map((group) => ({
+      heading: group.label,
+      links: HUB_CATEGORIES.filter((hub) => hub.group === group.slug).map((hub) => ({
+        href: `/categories/${hub.slug}`,
+        label: hub.name
+      }))
+    }))
+  },
+  {
+    kind: "menu",
+    id: "products",
+    label: "Products",
+    current: ["/products", "/equipment", "/components"],
+    columns: [
       {
-        href: "/blog/series/building-worlds-no-1-cleaning-show-from-scratch",
-        label: "Founder Series",
-      },
-      { href: "/guides", label: "Practical Guides" },
-      { href: "/reports", label: "Industry Reports" },
-    ],
+        links: [
+          { href: "/products", label: "Product library" },
+          { href: "/equipment", label: "Equipment" },
+          { href: "/components", label: "Components" }
+        ]
+      }
+    ]
   },
-  {
-    label: "Companies & Products",
-    links: [
-      { href: "/brands", label: "Companies & Brands" },
-      { href: "/products", label: "Product Library" },
-    ],
-  },
+  { kind: "link", href: "/brands", label: "Companies" },
+  { kind: "link", href: "/blog/archive?category=Supply%20Chain", label: "Supply chain", current: [] },
+  { kind: "link", href: "/news?topic=companies", label: "Markets", current: [] },
+  { kind: "link", href: "/wcb-expo", label: "Events" },
+  { kind: "link", href: "/guides", label: "Guides" }
 ];
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [openGroup, setOpenGroup] = useState<string | null>(null);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
   const root = useRef<HTMLElement>(null);
   const pathname = usePathname();
-  const isCurrent = (href: string) =>
-    pathname === href || pathname.startsWith(`${href}/`);
-  function closeMenu() {
+  const matches = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+  const isCurrent = (item: NavItem) =>
+    item.kind === "menu" ? item.current.some(matches) : (item.current ?? [item.href]).some(matches);
+
+  function closeAll() {
     setIsMenuOpen(false);
-    setOpenGroup(null);
+    setOpenMenu(null);
   }
+
   useEffect(() => {
-    closeMenu();
+    closeAll();
   }, [pathname]);
+
   useEffect(() => {
     function outside(event: PointerEvent) {
-      if (!root.current?.contains(event.target as Node)) closeMenu();
+      if (!root.current?.contains(event.target as Node)) setOpenMenu(null);
     }
     document.addEventListener("pointerdown", outside);
     return () => document.removeEventListener("pointerdown", outside);
   }, []);
+
   return (
     <header
-      className="header refresh-header"
+      className="wcb-header"
       ref={root}
       onKeyDown={(event) => {
-        if (event.key === "Escape") {
-          if (openGroup) {
-            root.current
-              ?.querySelector<HTMLButtonElement>(`[data-group="${openGroup}"]`)
-              ?.focus();
-            setOpenGroup(null);
-          } else {
-            setIsMenuOpen(false);
-            root.current
-              ?.querySelector<HTMLButtonElement>(".mobile-menu-toggle")
-              ?.focus();
-          }
+        if (event.key !== "Escape") return;
+        if (openMenu) {
+          root.current?.querySelector<HTMLButtonElement>(`[data-menu="${openMenu}"]`)?.focus();
+          setOpenMenu(null);
+        } else if (isMenuOpen) {
+          setIsMenuOpen(false);
+          root.current?.querySelector<HTMLButtonElement>(".wcb-header-toggle")?.focus();
         }
       }}
     >
-      <div className="container header-inner">
-        <Link
-          className="brand"
-          href="/"
-          onClick={closeMenu}
-          aria-label="World Clean Biz home"
-        >
-          <span className="brand-wcb-block" aria-hidden="true">
-            WCB
-          </span>
-          <span className="brand-copy">
-            <span className="brand-name">World Clean Biz</span>
-            <span className="brand-tagline">
-              Global Cleaning Industry Intelligence
-            </span>
-          </span>
+      <div className="wcb-header-inner">
+        <Link className="wcb-header-brand" href="/" onClick={closeAll} aria-label="World Clean Biz home">
+          <span className="wcb-header-logo" aria-hidden="true">WCB</span>
+          <span className="wcb-header-name">World Clean Biz</span>
         </Link>
+
         <button
-          className="mobile-menu-toggle"
+          className="wcb-header-toggle"
           type="button"
-          aria-label="Toggle main navigation"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
           aria-controls="main-navigation"
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
-            setOpenGroup(null);
+            setOpenMenu(null);
           }}
         >
           <span aria-hidden="true" />
           <span aria-hidden="true" />
           <span aria-hidden="true" />
         </button>
-        <div className={`header-actions${isMenuOpen ? " is-menu-open" : ""}`}>
-          <nav
-            className={`nav${isMenuOpen ? " is-open" : ""}`}
-            id="main-navigation"
-            aria-label="Main navigation"
-          >
-            <Link href="/news" aria-current={isCurrent("/news") ? "page" : undefined} onClick={closeMenu}>
-              News
-            </Link>
-            {groups.map((group, index) => (
-              <div
-                className="nav-group"
-                key={group.label}
-                onBlur={(event) => {
-                  if (
-                    !event.currentTarget.contains(event.relatedTarget as Node)
-                  )
-                    setOpenGroup(null);
-                }}
-              >
-                <button
-                  type="button"
-                  data-group={group.label}
-                  data-current={(group.label === "Insights" && isCurrent("/blog")) || group.links.some((link) => isCurrent(link.href)) || undefined}
-                  aria-expanded={openGroup === group.label}
-                  aria-controls={`nav-group-${index}`}
-                  onClick={() =>
-                    setOpenGroup(openGroup === group.label ? null : group.label)
-                  }
-                >
-                  {group.label}
-                  <span className="nav-expand-indicator" aria-hidden="true">{openGroup === group.label ? "−" : "+"}</span>
-                </button>
-                <div
-                  className="nav-submenu"
-                  id={`nav-group-${index}`}
-                  hidden={openGroup !== group.label}
-                >
-                  {group.links.map((link) => (
-                    <Link key={link.href} href={link.href} aria-current={pathname === link.href ? "page" : undefined} onClick={closeMenu}>
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ))}
-            <Link href="/videos" aria-current={isCurrent("/videos") ? "page" : undefined} onClick={closeMenu}>
-              Videos
-            </Link>
-            <Link href="/wcb-expo" aria-current={isCurrent("/wcb-expo") ? "page" : undefined} onClick={closeMenu}>
+
+        <div className={`wcb-header-panel${isMenuOpen ? " is-open" : ""}`}>
+          <div className="wcb-header-actions">
+            <Link className="wcb-header-expo" href="/wcb-expo" onClick={closeAll}>
               WCB Expo
             </Link>
-            <Link href="/about" aria-current={isCurrent("/about") ? "page" : undefined} onClick={closeMenu}>
-              About
-            </Link>
-            <Link className="nav-business" href="/contact" aria-current={isCurrent("/contact") ? "page" : undefined} onClick={closeMenu}>
-              Work With WCB
-            </Link>
+            <TallyButton className="wcb-header-subscribe" ctaLocation="header_subscribe" form="newsletter">
+              Subscribe
+            </TallyButton>
+          </div>
+
+          <nav className="wcb-nav" id="main-navigation" aria-label="Main navigation">
+            <ul className="wcb-nav-list">
+              {NAV.map((item) =>
+                item.kind === "link" ? (
+                  <li key={item.href}>
+                    <Link
+                      className="wcb-nav-link"
+                      href={item.href}
+                      aria-current={isCurrent(item) ? "page" : undefined}
+                      onClick={closeAll}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ) : (
+                  <li
+                    key={item.id}
+                    className="wcb-nav-group"
+                    onBlur={(event) => {
+                      if (!event.currentTarget.contains(event.relatedTarget as Node)) {
+                        setOpenMenu((current) => (current === item.id ? null : current));
+                      }
+                    }}
+                  >
+                    <button
+                      className="wcb-nav-link wcb-nav-button"
+                      type="button"
+                      data-menu={item.id}
+                      data-current={isCurrent(item) || undefined}
+                      aria-expanded={openMenu === item.id}
+                      aria-controls={`nav-menu-${item.id}`}
+                      onClick={() => setOpenMenu(openMenu === item.id ? null : item.id)}
+                    >
+                      {item.label}
+                      <span className="wcb-nav-caret" aria-hidden="true" />
+                    </button>
+                    <div
+                      className={`wcb-nav-menu wcb-nav-menu-${item.columns.length}`}
+                      id={`nav-menu-${item.id}`}
+                      hidden={openMenu !== item.id}
+                    >
+                      {item.columns.map((column, index) => (
+                        <div className="wcb-nav-column" key={column.heading ?? index}>
+                          {column.heading ? <p className="wcb-nav-heading">{column.heading}</p> : null}
+                          <ul>
+                            {column.links.map((link) => (
+                              <li key={link.href}>
+                                <Link
+                                  href={link.href}
+                                  aria-current={pathname === link.href ? "page" : undefined}
+                                  onClick={closeAll}
+                                >
+                                  {link.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                      {item.id === "categories" ? (
+                        <Link className="wcb-nav-all" href="/categories" onClick={closeAll}>
+                          All categories →
+                        </Link>
+                      ) : null}
+                    </div>
+                  </li>
+                )
+              )}
+            </ul>
           </nav>
         </div>
       </div>
