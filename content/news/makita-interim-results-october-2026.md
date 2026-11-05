@@ -13,6 +13,7 @@ product_slugs: []
 related_articles: []
 source_titles: ["Makita — interim consolidated results for the fiscal year ending March 2027"]
 source_urls: ["https://www.makita.co.jp/ir/upload_file/m005-m005_02/6586_20261019552943_P01_.pdf"]
+key_figures: [{"label": "Revenue", "value": "JPY 414.713 billion", "change": "+9.6%", "period": "Apr–Sep 2026", "usd": ""}, {"label": "Operating profit", "value": "JPY 63.335 billion", "change": "+23.0%", "period": "Apr–Sep 2026", "usd": ""}, {"label": "Operating margin", "value": "15.3%", "period": "Apr–Sep 2026"}]
 ---
 [Makita](/brands/makita) reported April–September 2026 revenue of JPY 414.713 billion, up 9.6%, and operating profit of JPY 63.335 billion, up 23.0%, in its [October 30 interim results](https://www.makita.co.jp/ir/upload_file/m005-m005_02/6586_20261019552943_P01_.pdf). The operating margin was 15.3%.
 
