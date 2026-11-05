@@ -13,6 +13,7 @@ publishedAt: "2026-11-01T20:16:49+08:00"
 updatedAt: "2026-11-01T20:16:49+08:00"
 sortDate: "2026-11-01T20:16:49+08:00"
 related_articles: []
+key_figures: [{"label": "Revenue", "value": "CNY 4.65 billion", "change": "+10.61% YoY", "period": "Q3 2026", "usd": ""}, {"label": "Attributable net profit", "value": "approx. CNY 121 million", "change": "−72.43% YoY", "period": "Q3 2026", "usd": ""}, {"label": "Revenue", "value": "CNY 14.99 billion", "change": "+16.39% YoY", "period": "Jan–Sep 2026", "usd": ""}, {"label": "Attributable net profit", "value": "CNY 1.37 billion", "change": "−3.47% YoY", "period": "Jan–Sep 2026", "usd": ""}]
 ---
 [ECOVACS](/brands/ecovacs) reported third-quarter revenue of CNY 4.65 billion, up 10.61% year on year, while attributable net profit fell 72.43% to approximately CNY 121 million. The figures appear in the group's third-quarter report dated October 31, 2026.
 

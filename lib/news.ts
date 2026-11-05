@@ -5,7 +5,7 @@ import { getPublishedBrandProfiles } from "@/lib/brands";
 import { productModels, getProduct } from "@/lib/products";
 import { newsCompanyVisuals, newsStoryVisuals, newsIndustryContextVisual, type NewsVisual } from "@/lib/newsVisuals";
 import type { Insight } from "@/lib/content";
-import { explicitHubCategories, type HubCategorySlug } from "@/lib/hubCategories";
+import { explicitHubCategories, hubCategoriesForNews, isHubCategorySlug, type HubCategorySlug } from "@/lib/hubCategories";
 
 export const NEWS_TOPICS = [
   { slug: "products", label: "Products" },
@@ -15,6 +15,14 @@ export const NEWS_TOPICS = [
   { slug: "events", label: "Events" }
 ] as const;
 export type NewsTopic = typeof NEWS_TOPICS[number]["slug"];
+/**
+ * Optional `key_figures` frontmatter: one line of JSON, e.g.
+ * key_figures: [{"label":"Q3 revenue","value":"CNY 5.61 billion","change":"+34.85% YoY","period":"Q3 2026","usd":""}]
+ * Every number must come from the article body. `usd` stays empty until a
+ * conversion rate and date are provided.
+ */
+export type NewsKeyFigure = { label: string; value: string; change?: string; period?: string; usd?: string };
+
 export type NewsArticle = {
   slug: string;
   title: string;
@@ -35,8 +43,30 @@ export type NewsArticle = {
   readingTime: string;
   /** Explicit `hub_categories` frontmatter; most hubs are derived instead. */
   hubCategories: HubCategorySlug[];
+  keyFigures: NewsKeyFigure[];
   content: string;
 };
+
+function parseKeyFigures(raw: string, slug: string): NewsKeyFigure[] {
+  const frontmatter = raw.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? "";
+  const line = frontmatter.match(/^key_figures:\s*(\[.*\])\s*$/m)?.[1];
+  if (!line) return [];
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(line);
+  } catch {
+    throw new Error(`News ${slug}: key_figures must be one line of JSON`);
+  }
+  if (!Array.isArray(parsed)) throw new Error(`News ${slug}: key_figures must be an array`);
+  return parsed.map((item, index) => {
+    const figure = item as Record<string, unknown>;
+    if (typeof figure.label !== "string" || !figure.label || typeof figure.value !== "string" || !figure.value) {
+      throw new Error(`News ${slug}: key_figures[${index}] needs label and value`);
+    }
+    const optional = (key: string) => (typeof figure[key] === "string" && figure[key] ? String(figure[key]) : undefined);
+    return { label: figure.label, value: figure.value, change: optional("change"), period: optional("period"), usd: optional("usd") };
+  });
+}
 
 // Both extensions contain Markdown. Prepared covers use the existing MDX image workflow.
 const directory = path.join(process.cwd(), "content", "news");
@@ -68,7 +98,8 @@ export function getNews(): NewsArticle[] {
 function readNews(): NewsArticle[] {
   if (!fs.existsSync(directory)) return [];
   return fs.readdirSync(directory).filter((file) => /\.mdx?$/.test(file)).flatMap((file) => {
-    const { data, content } = parseFrontmatter(fs.readFileSync(path.join(directory, file), "utf8"));
+    const raw = fs.readFileSync(path.join(directory, file), "utf8");
+    const { data, content } = parseFrontmatter(raw);
     if (data.hidden === "true") return [];
     const slug = file.replace(/\.mdx?$/, "");
     const topic = String(data.topic) as NewsTopic;
@@ -96,7 +127,8 @@ function readNews(): NewsArticle[] {
       relatedArticles: array(data.related_articles), imageProduct: data.image_product ? String(data.image_product) : undefined,
       coverImage: data.coverImage ? String(data.coverImage) : undefined,
       sources, readingTime: `${Math.max(1, Math.ceil(words / 220))} min read`,
-      hubCategories: explicitHubCategories(data.hub_categories), content
+      hubCategories: explicitHubCategories(data.hub_categories),
+      keyFigures: parseKeyFigures(raw, slug), content
     }];
   }).sort((a, b) => b.eventDate.localeCompare(a.eventDate) || b.sortDate.localeCompare(a.sortDate) || a.slug.localeCompare(b.slug));
 }
@@ -135,6 +167,13 @@ export function getNewsVisual(article: NewsArticle): NewsVisual | undefined {
   return article.brandSlugs.map((slug) => newsCompanyVisuals[slug]).find(Boolean) || newsIndustryContextVisual;
 }
 
+// Visuals not taken from the story itself: a company stock image, another
+// article's cover or the generic industry picture.
+const BORROWED_VISUAL_LABELS = new Set(["Company image", "Related coverage", "Industry context"]);
+export function isBorrowedNewsVisual(visual: NewsVisual | undefined) {
+  return Boolean(visual && BORROWED_VISUAL_LABELS.has(visual.label));
+}
+
 export function getRelatedNewsForArticle(article: Pick<Insight, "slug" | "primaryBrands">, limit = 3) {
   const brands = new Set(article.primaryBrands);
   return getNews()
@@ -144,18 +183,24 @@ export function getRelatedNewsForArticle(article: Pick<Insight, "slug" | "primar
 }
 
 export const NEWS_PAGE_SIZE = 12;
-export function newsHref(topic?: NewsTopic, page = 1) {
+export function newsHref(topic?: NewsTopic, page = 1, category?: HubCategorySlug) {
   const params = new URLSearchParams();
   if (topic) params.set("topic", topic);
+  if (category) params.set("category", category);
   if (page > 1) params.set("page", String(page));
   return `/news${params.size ? `?${params}` : ""}`;
 }
 
-export function selectNews(articles: NewsArticle[], topicValue?: string, pageValue?: string) {
+export function selectNews(articles: NewsArticle[], topicValue?: string, pageValue?: string, categoryValue?: string) {
   const topic = NEWS_TOPICS.find((item) => item.slug === topicValue)?.slug;
-  const filtered = topic ? articles.filter((article) => article.topic === topic) : articles;
+  const category = categoryValue && isHubCategorySlug(categoryValue) ? categoryValue : undefined;
+  const filtered = articles.filter(
+    (article) =>
+      (!topic || article.topic === topic) &&
+      (!category || hubCategoriesForNews(article).includes(category))
+  );
   const pageNumber = pageValue && /^\d+$/.test(pageValue) ? Number(pageValue) : 1;
   const totalPages = Math.max(1, Math.ceil(filtered.length / NEWS_PAGE_SIZE));
   const page = Math.min(totalPages, Math.max(1, Number.isSafeInteger(pageNumber) ? pageNumber : 1));
-  return { topic, page, totalPages, total: filtered.length, articles: filtered.slice((page - 1) * NEWS_PAGE_SIZE, page * NEWS_PAGE_SIZE) };
+  return { topic, category, page, totalPages, total: filtered.length, articles: filtered.slice((page - 1) * NEWS_PAGE_SIZE, page * NEWS_PAGE_SIZE) };
 }

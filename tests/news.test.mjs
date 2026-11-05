@@ -121,3 +121,35 @@ test("article news links use explicit published article or brand relationships",
   assert.ok(miele);
   assert.equal(getRelatedNewsForArticle(miele).length, 0, "do not invent Miele news");
 });
+
+test("key figures are optional and every number in them appears in the article body", () => {
+  const articles = getNews();
+  const withFigures = articles.filter((article) => article.keyFigures.length > 0);
+  assert.ok(withFigures.length >= 5, "at least five results stories carry key figures");
+  assert.ok(articles.some((article) => article.keyFigures.length === 0), "articles without key figures still load");
+  for (const article of withFigures) {
+    for (const figure of article.keyFigures) {
+      assert.ok(figure.label && figure.value, `${article.slug} figure needs label and value`);
+      for (const field of [figure.value, figure.change ?? ""]) {
+        for (const number of field.match(/\d[\d.,]*/g) ?? []) {
+          assert.ok(article.content.includes(number), `${article.slug}: ${number} must appear in the body`);
+        }
+      }
+      assert.equal(figure.usd, undefined, `${article.slug}: USD stays empty until a rate is provided`);
+    }
+  }
+});
+
+test("category filter narrows news by hub and keeps topic and page in links", async () => {
+  const { hubCategoriesForNews } = await import("../lib/hubCategories.ts");
+  const articles = getNews();
+  const pool = selectNews(articles, undefined, "1", "pool-robots");
+  assert.equal(pool.category, "pool-robots");
+  assert.ok(pool.total > 0);
+  assert.ok(pool.articles.every((article) => hubCategoriesForNews(article).includes("pool-robots")));
+  const combined = selectNews(articles, "companies", "1", "pool-robots");
+  assert.ok(combined.articles.every((article) => article.topic === "companies"));
+  assert.equal(selectNews(articles, undefined, "1", "not-a-hub").category, undefined);
+  assert.equal(newsHref("companies", 2, "pool-robots"), "/news?topic=companies&category=pool-robots&page=2");
+  assert.equal(newsHref(undefined, 1), "/news");
+});

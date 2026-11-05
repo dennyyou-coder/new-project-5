@@ -4,12 +4,13 @@ import { notFound } from "next/navigation";
 import { ArticleShareActions } from "@/components/ArticleShareActions";
 import { TallyButton } from "@/components/LeadForms";
 import { NewsImage, NewsImageCaption } from "@/components/news/NewsImage";
+import { NewsKeyFigures } from "@/components/news/NewsKeyFigures";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { productCover, productModels } from "@/lib/products";
 import { getInsights, markdownToHtml } from "@/lib/content";
 import { getNewsReading } from "@/lib/editorialConnections";
 import { NewsReadingCards } from "@/components/editorial/EditorialConnections";
-import { getNews, getNewsArticle, getNewsContext, getNewsVisual, newsDate, newsTopicLabel, newsHref } from "@/lib/news";
+import { getNews, getNewsArticle, getNewsContext, getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel, newsHref } from "@/lib/news";
 
 type Props = { params: Promise<{ slug: string }> };
 const siteUrl = "https://worldcleanbiz.com";
@@ -35,7 +36,8 @@ export default async function NewsArticlePage({ params }: Props) {
   return <>
     <article className="news-article">
       <header><nav className="news-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/news">News</Link><span>/</span><Link href={newsHref(article.topic)}>{newsTopicLabel(article.topic)}</Link></nav><div className="news-meta"><span>{newsTopicLabel(article.topic)}</span><span>{article.category}</span><span>{article.readingTime}</span></div><h1>{article.title}</h1><p className="news-deck">{article.excerpt}</p><div className="news-byline">By <Link href="/about">{article.author}</Link><span>Added to WCB <time dateTime={article.publishedAt}>{newsDate(article.publishedAt)}</time></span>{article.updatedAt !== article.publishedAt ? <span>Updated <time dateTime={article.updatedAt}>{newsDate(article.updatedAt)}</time></span> : null}</div><p className="news-announcement">News date: <time dateTime={article.eventDate}>{newsDate(article.eventDate)}</time></p></header>
-      {visual ? <figure className="news-cover"><NewsImage article={article} context="cover" /><figcaption><NewsImageCaption article={article} full /></figcaption></figure> : null}
+      <NewsKeyFigures figures={article.keyFigures} />
+      {visual && !(article.keyFigures.length && isBorrowedNewsVisual(visual)) ? <figure className="news-cover"><NewsImage article={article} context="cover" /><figcaption><NewsImageCaption article={article} full /></figcaption></figure> : null}
       <div className="article-prose news-prose" dangerouslySetInnerHTML={{ __html: markdownToHtml(article.content) }} />
       {brands.length || products.length || articles.length ? <section className="news-context" aria-labelledby="news-context-title"><p className="news-eyebrow">Explore The Story</p><h2 id="news-context-title">Related companies &amp; products</h2>{brands.length ? <div><h3>Company &amp; brand profiles</h3><div className="news-context-cards">{brands.map((brand) => <Link href={`/brands/${brand.slug}`} key={brand.slug}><img className="news-context-logo" src={brand.logoImage} alt={brand.logoImageAlt} width={96} height={64} loading="lazy" decoding="async" /><div>{brand.name}<span>Company &amp; brand profile</span></div></Link>)}</div></div> : null}{products.length ? <div><h3>Products mentioned</h3><div className="news-context-cards">{products.map((product) => <Link href={`/products/${product.slug}`} key={product.slug}><img {...responsiveImageProps(productCover(product.slug), "card")} alt={product.name} /><div>{product.name}<span>View product profile</span></div></Link>)}</div></div> : null}{articles.length ? <div><h3>Related analysis &amp; guides</h3><NewsReadingCards articles={articles} /></div> : null}</section> : null}
       <ArticleShareActions title={article.title} url={url} heading="Share this news" />

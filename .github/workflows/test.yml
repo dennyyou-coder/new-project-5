@@ -41,6 +41,7 @@ jobs:
       - run: npm run test:equipment
       - run: npm run test:components
       - run: npm run test:categories
+      - run: npm run test:news
 
       # Known failures already on main. They run and report here, but do not
       # block the check until they are fixed:

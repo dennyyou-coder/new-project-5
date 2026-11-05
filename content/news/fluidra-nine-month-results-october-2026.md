@@ -13,6 +13,7 @@ product_slugs: []
 related_articles: []
 source_titles: ["Fluidra delivers a strong nine-month performance"]
 source_urls: ["https://www.fluidra.com/press-room/press-release/fluidra-delivers-a-strong-nine-month-performance/"]
+key_figures: [{"label": "Sales", "value": "EUR 1.780 billion", "change": "+4% at constant exchange rates", "period": "Jan–Sep 2026", "usd": ""}, {"label": "Adjusted EBITDA", "value": "EUR 428 million", "change": "+6% at constant exchange rates", "period": "Jan–Sep 2026", "usd": ""}, {"label": "Adjusted EBITDA margin", "value": "24.1%", "period": "Jan–Sep 2026"}]
 ---
 [Fluidra](/brands/fluidra) reported January–September 2026 sales of EUR 1.780 billion, up 4% at constant exchange rates, in its [October 29 release](https://www.fluidra.com/press-room/press-release/fluidra-delivers-a-strong-nine-month-performance/). Adjusted EBITDA reached EUR 428 million, up 6% on the same currency basis, with a 24.1% margin.
 
