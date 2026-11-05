@@ -1,0 +1,154 @@
+{
+  "status": "published",
+  "slug": "chervon",
+  "name": "Chervon",
+  "aliases": ["Chervon Holdings", "Chervon Holdings Limited", "Chervon Group", "泉峰"],
+  "legalName": "Chervon Holdings Limited",
+  "legalEntityNote": "Chervon Holdings Limited is the Hong Kong-listed holding company of the Chervon power tool and outdoor power equipment group, headquartered in Nanjing. It sells under its own brands EGO, FLEX, SKIL, DEVON and X-TRON and also makes products for other brands (ODM). Chervon Auto Precision Technology, listed in Shanghai, is a separate company controlled by the same ultimate shareholder and is not part of this group.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://global.chervongroup.com",
+  "headline": "Chervon: the listed group behind EGO, FLEX and SKIL",
+  "description": "A source-backed corporate profile of Chervon Holdings: listing, controlling shareholder and leadership, its five brands and ODM business, 2025 results by segment and region, and manufacturing moves to Vietnam and Nanjing.",
+  "metaDescription": "Chervon Holdings profile: Hong Kong-listed (2285) owner of EGO, FLEX and SKIL; leadership, 2025 results, own-brand and ODM business, manufacturing.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Chervon. Group-level disclosures do not establish the trademark owner, legal manufacturer, factory, importer, seller or warrantor for every product sold under a Chervon brand or made by Chervon for another brand.",
+  "headquarters": "Nanjing, Jiangsu, China",
+  "founded": "1994",
+  "logoImage": "/images/brands/chervon/logo.webp",
+  "logoImageAlt": "Chervon logo",
+  "logoSourceUrl": "https://global.chervongroup.com/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/chervon/group-brand-map.svg",
+      "alt": "Chervon Holdings Limited with its five own brands and its ODM business for other brands",
+      "caption": "Own brands (OBM) made up 76.7% of Chervon's 2025 revenue; the rest came from products made for other brands."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/chervon/results-2025.svg",
+      "alt": "Chervon 2025 revenue, gross margin and segment changes for outdoor power equipment and power tools",
+      "caption": "In 2025 group revenue fell 8.2% to US$1,627.8 million; outdoor power equipment was flat while power tools fell 18.3%."
+    }
+  ],
+  "ownership": {
+    "summary": "Chervon Holdings Limited has been listed on the Stock Exchange of Hong Kong since 30 December 2021 (stock code 2285). Its 2025 annual report identifies founder Pan Longquan as the ultimate controlling shareholder of the group. Chervon Holdings is the group head, so no separate parent company is listed.",
+    "displayLabel": "Hong Kong-listed group (2285); founder Pan Longquan is the ultimate controlling shareholder"
+  },
+  "leadership": [
+    {
+      "name": "Pan Longquan",
+      "role": "Founder, Chairman and Executive Director",
+      "context": "Founded the predecessor company in Nanjing in 1994. He was Chief Executive Officer until 10 September 2026 and remains Executive Director and Chairman of the Board."
+    },
+    {
+      "name": "Joseph Galli Jr.",
+      "role": "Chief Executive Officer",
+      "context": "Appointed Chief Executive Officer by the Board effective 10 September 2026, succeeding founder Pan Longquan. Chervon's announcement says he was Chief Executive Officer of TTI from 2008 until his retirement in 2024, and earlier rose to President of Worldwide Power Tools and Accessories during 19 years at Black & Decker."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Outdoor power equipment",
+      "positioning": "EGO is Chervon's battery-powered outdoor equipment brand; Chervon says the EGO platform offered more than 110 tools at the end of 2025 and recorded double-digit point-of-sale growth that year. Outdoor power equipment revenue rose 0.1% in 2025.",
+      "buyerRelevance": "Check the battery platform, regional model, certification and warranty entity for the destination market."
+    },
+    {
+      "name": "Power tools",
+      "positioning": "FLEX, SKIL, DEVON and X-TRON cover professional and consumer power tools. Power tools revenue fell 18.3% in 2025.",
+      "buyerRelevance": "Confirm the brand owner, regional distributor and battery system before comparing products or terms."
+    },
+    {
+      "name": "Products made for other brands (ODM)",
+      "positioning": "Own-brand (OBM) sales were 76.7% of 2025 revenue; the remainder came from products Chervon designs and makes for other brands.",
+      "buyerRelevance": "A product made by Chervon for another brand carries that brand's warranty and service terms; ask the seller who the legal maker is."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "In 2025 Chervon accelerated moving part of its production capacity from Nanjing to Vietnam and significantly increased its Vietnam capacity, citing flexibility around tariff tensions.",
+      "scope": "Group manufacturing footprint as described in the 2025 annual report; individual models are not assigned to sites",
+      "buyerCheck": "Confirm the factory and country of origin for each SKU and production run, as origin may change."
+    },
+    {
+      "evidence": "The relocation of production from the Steinheim facility in Germany to Nanjing was completed in 2025 as part of a cost and competitiveness initiative.",
+      "scope": "Reported in the 2025 annual report's supply chain and manufacturing section",
+      "buyerCheck": "For FLEX products, check the current origin and the responsible European entity rather than relying on older origin information."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "In 2025 Chervon's business in North America fell 11.5% and in China 3.8%, while Europe grew 0.9% and the rest of the world 6.8%. Chervon says it serves customers in more than 100 countries.",
+      "scope": "Group-level regional changes and reach; brand and product mix differ by region",
+      "buyerCheck": "Confirm which Chervon brands and models are officially offered in the destination market and through which entity."
+    },
+    {
+      "evidence": "In 2025 Chervon and John Deere jointly launched the Z370RS Electric ZTrak mower powered by EGO 56V ARC Lithium batteries.",
+      "scope": "A named product collaboration from the 2025 annual report; not a general distribution agreement",
+      "buyerCheck": "For co-branded products, confirm which company sells, services and warrants the product in your market."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Chervon competes mainly through EGO in battery outdoor equipment, where it reported market-share gains in 2025, while FLEX and SKIL faced a tougher power-tool market. In September 2026 it appointed Joseph Galli Jr., TTI's chief executive from 2008 to 2024 and earlier President of Worldwide Power Tools and Accessories at Black & Decker, as CEO. Buyers should separate Chervon's own brands from the products it makes for others.",
+    "competitorSlugs": ["tti", "greenworks", "stihl", "husqvarna", "makita"]
+  },
+  "developments": [
+    {
+      "date": "2026-09-10",
+      "title": "Joseph Galli Jr. becomes CEO",
+      "summary": "The Board appointed Joseph Galli Jr. as Chief Executive Officer, succeeding founder Pan Longquan, who remains Chairman and Executive Director.",
+      "sourceIds": ["chervon-ceo-2026"]
+    },
+    {
+      "date": "2026-04-24",
+      "title": "Chervon publishes its 2025 annual report",
+      "summary": "Revenue fell 8.2% to US$1,627.8 million and net profit fell 13.3%; outdoor power equipment revenue rose 0.1% and power tools revenue fell 18.3%.",
+      "sourceIds": ["chervon-ar-2025"]
+    },
+    {
+      "date": "2025",
+      "title": "Steinheim production moved to Nanjing",
+      "summary": "Chervon completed moving production from its Steinheim facility in Germany to Nanjing and expanded capacity in Vietnam.",
+      "sourceIds": ["chervon-ar-2025"]
+    },
+    {
+      "date": "2021-12-30",
+      "title": "Chervon lists in Hong Kong",
+      "summary": "Chervon Holdings Limited listed on the Stock Exchange of Hong Kong under stock code 2285.",
+      "sourceIds": ["chervon-ar-2025"]
+    },
+    {
+      "date": "1994",
+      "title": "Predecessor company founded in Nanjing",
+      "summary": "Pan Longquan founded Nanjing Chervon International Trading, the predecessor of the group.",
+      "sourceIds": ["chervon-ar-2025"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "chervon-ar-2025",
+      "title": "Annual Report 2025",
+      "publisher": "Chervon Holdings Limited (HKEXnews)",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0424/2026042400988.pdf",
+      "publishedAt": "2026-04-24",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "id": "chervon-ceo-2026",
+      "title": "Chervon Appoints Joseph Galli Jr. as Chief Executive Officer to Lead Next Stage of Global Growth",
+      "publisher": "Chervon",
+      "url": "https://global.chervongroup.com/en/chervon-appoints-joseph-galli-jr-chief-executive-officer-lead-next-stage-global-growth%C2%A0",
+      "publishedAt": "2026-09-10",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "id": "chervon-home",
+      "title": "Chervon",
+      "publisher": "Chervon",
+      "url": "https://global.chervongroup.com/",
+      "accessedAt": "2026-11-05"
+    }
+  ],
+  "publishedAt": "2026-11-06T00:40:00+08:00",
+  "lastVerified": "2026-11-05",
+  "lastModified": "2026-11-06T00:40:00+08:00"
+}
