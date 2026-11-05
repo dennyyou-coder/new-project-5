@@ -115,7 +115,7 @@ export function BrandHero({ profile, hasAnalysis }: { profile: BrandProfile; has
         </div>
 
         <p className="brand-correction">
-          Spot something out of date? <Link href="/contact">Suggest a correction</Link>
+          Spot something out of date? <Link href="/contact?inquiry=correction#project-form">Suggest a correction</Link>
         </p>
 
         <details className="company-profile-context"><summary>About this profile &amp; verification</summary><p>{profile.description}</p><p>{profile.disclaimer}</p></details>

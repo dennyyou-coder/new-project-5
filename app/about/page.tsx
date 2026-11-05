@@ -2,9 +2,16 @@ import type { Metadata } from "next";
 import { getArticleImage } from "@/lib/articleImages";
 import { ProfileGallery, ProfileImage, type ProfilePhoto } from "./ProfileGallery";
 import "./profile.css";
+import Link from "next/link";
+import { TallyButton } from "@/components/LeadForms";
+import { getPublishedBrandProfiles } from "@/lib/brands";
+import { getInsights } from "@/lib/content";
+import { getEditorialInsights, getGuideInsights } from "@/lib/insightCollections";
+import { getNews } from "@/lib/news";
+import { featuredProductModels, productSelectionYear } from "@/lib/products";
 
 export const metadata: Metadata = {
-  title: "About Denny You (游丹尼)",
+  title: "About World Clean Biz and Denny You (游丹尼)",
   description: "Meet Denny You, founder of Glorison Innovation and World Clean Biz: cleaning industry experience, securities-firm talks, industry forums and WCB Expo.",
   alternates: { canonical: "/about" },
   openGraph: { title: "Denny You (游丹尼) | World Clean Biz", url: "/about", images: ["/images/articles/about-denny-profile/01-cover.webp"] },
@@ -120,10 +127,39 @@ photo("/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp", "WCB 2
 };
 
 export default function AboutPage() {
+ const articles = getInsights();
+ const counts = [
+  { value: getNews().length, label: "news stories", href: "/news" },
+  { value: getEditorialInsights(articles).length, label: "analyses", href: "/blog/archive" },
+  { value: getPublishedBrandProfiles(articles).length, label: "company profiles", href: "/brands" },
+  { value: featuredProductModels.length, label: `new ${productSelectionYear} models`, href: "/products" },
+  { value: getGuideInsights(articles).length, label: "practical guides", href: "/guides" }
+ ];
  return <div id="denny-about">
+<section className="about-platform" aria-labelledby="about-platform-title"><div className="wrap">
+<div className="eyebrow">ABOUT WORLD CLEAN BIZ</div>
+<h1 id="about-platform-title">The platform for people who work in the global cleaning industry.</h1>
+<p className="about-platform-lead">World Clean Biz covers the products, companies, supply chains, markets and events behind floor care, pool, lawn and commercial cleaning.</p>
+<ul className="about-platform-counts" aria-label="What World Clean Biz covers">{counts.map((count) => <li key={count.label}><Link href={count.href}><strong>{count.value}</strong><span>{count.label}</span></Link></li>)}</ul>
+<div className="about-platform-what">
+<Link href="/news"><strong>Independent coverage</strong><span>News, analysis and guides across cleaning categories and the industries around them.</span></Link>
+<Link href="/brands"><strong>Industry reference</strong><span>Company profiles and a library of new models, each with sources and a verification date.</span></Link>
+<Link href="/categories"><strong>By category</strong><span>Robot vacuums, floor washers, pool robots, robotic mowers, commercial cleaning and more.</span></Link>
+</div>
+</div></section>
+<section className="about-how" aria-labelledby="about-how-title"><div className="wrap">
+<h2 id="about-how-title">How we work</h2>
+<ul>
+<li>News stories link to their original sources and show both the date of the event and the date the story was added to World Clean Biz.</li>
+<li>Company profiles and product pages list their sources and the date they were last verified.</li>
+<li>Product pages are sourced reference pages, not hands-on test ratings. Prices are dated snapshots, not live offers.</li>
+<li>Companies can <Link href="/contact?inquiry=correction#project-form">send a correction</Link>; profiles show when they were last updated.</li>
+</ul>
+<div className="about-how-subscribe"><p>Industry updates from World Clean Biz, by email.</p><TallyButton className="btn" ctaLocation="about_subscribe" form="newsletter">Subscribe</TallyButton></div>
+</div></section>
 <section className="hero"><div className="wrap hero-grid"><div className="hero-copy"><div className="eyebrow">THE PERSON BEHIND WORLD CLEAN BIZ</div>
-<h1>Denny You <span className="chinese-name">(游丹尼)</span>
-</h1>
+<h2 className="about-person-name">Denny You <span className="chinese-name">(游丹尼)</span>
+</h2>
 <h2>A working life<br />inside the cleaning industry.</h2>
 <p className="lead">Entrepreneur. Industry writer. Forum organizer.</p>
 <p>Since 2006, I’ve worked with cleaning products, factories, supply chains and international markets. Today, I bring that experience to World Clean Biz and WCB Expo.</p>

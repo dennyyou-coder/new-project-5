@@ -98,3 +98,27 @@
 @media(max-width:800px){#denny-about .expo-finale{padding:24px 20px}#denny-about .expo-finale-heading h3{font-size:27px}#denny-about .expo-finale-grid{grid-template-columns:1fr;gap:24px}#denny-about .expo-finale-visual{order:-1}#denny-about .expo-finale-footer{align-items:flex-start;flex-direction:column;gap:18px}#denny-about .expo-finale-footer strong{font-size:21px}#denny-about .expo-finale-footer .btn{width:100%}}
 
 #denny-about .media-feature>img{object-fit:contain;background:#e8eef2}
+/* PR-16: platform first, then the founder */
+#denny-about .about-platform{background:#f5f7fa;border-bottom:1px solid #e3e7ee;padding:48px 0 40px}
+#denny-about .about-platform h1{font-size:48px;line-height:1.1;max-width:900px;color:#0e1526;margin-bottom:16px}
+#denny-about .about-platform-lead{max-width:720px;font-size:18px}
+#denny-about .about-platform-counts{list-style:none;margin:24px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:4px 28px}
+#denny-about .about-platform-counts a{display:inline-flex;align-items:baseline;gap:6px;min-height:44px;align-items:center;font-size:15px;color:#4a5367}
+#denny-about .about-platform-counts strong{font-size:24px;font-weight:800;color:#0e1526}
+#denny-about .about-platform-what{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
+#denny-about .about-platform-what a{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid #e3e7ee;border-radius:12px;background:#fff}
+#denny-about .about-platform-what strong{font-size:17px;color:#0e1526}
+#denny-about .about-platform-what span{font-size:15px;line-height:1.5;color:#4a5367}
+#denny-about .about-platform-what a:hover strong{color:#245cca}
+#denny-about .about-how{padding:44px 0}
+#denny-about .about-how h2{font-size:32px;margin-bottom:14px;color:#0e1526}
+#denny-about .about-how ul{margin:0;padding-left:22px;max-width:860px}
+#denny-about .about-how li{margin:8px 0;line-height:1.6}
+#denny-about .about-how li a{color:#245cc3;text-decoration:underline;text-underline-offset:4px}
+#denny-about .about-how-subscribe{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:22px}
+#denny-about .about-how-subscribe .btn{border:0;min-height:44px}
+#denny-about .hero .about-person-name{font-size:54px;line-height:1.05;display:flex;align-items:baseline;gap:14px;white-space:nowrap;margin-bottom:20px;letter-spacing:-.045em}
+#denny-about .hero .about-person-name .chinese-name{display:inline;font-size:25px;margin:0;font-weight:600;letter-spacing:0}
+@media(max-width:1150px){#denny-about .hero .about-person-name{font-size:44px;gap:10px}#denny-about .hero .about-person-name .chinese-name{font-size:21px}}
+@media(max-width:800px){#denny-about .about-platform{padding:32px 0 28px}#denny-about .about-platform h1{font-size:34px}#denny-about .about-platform-lead{font-size:16px}#denny-about .about-platform-what{grid-template-columns:1fr}#denny-about .about-platform-counts{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}#denny-about .hero .about-person-name{font-size:38px}#denny-about .hero .about-person-name .chinese-name{font-size:19px}#denny-about .about-how h2{font-size:28px}}
+@media(max-width:370px){#denny-about .hero .about-person-name{font-size:33px}}

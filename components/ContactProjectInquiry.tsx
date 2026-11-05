@@ -20,6 +20,7 @@ const inquiryOptions = [
   { value: "expo_visitor", label: "WCB Expo · Visitor enquiry", form: "wceVisitor", ctaLocation: "contact_expo_visitor", intent: "visitor_interest" },
   { value: "expo_exhibitor", label: "WCB Expo · Exhibitor enquiry", form: "wceExhibitor", ctaLocation: "contact_expo_exhibitor", intent: "exhibitor_interest" },
   { value: "media", label: "Content & Brand Communication", form: "contact", ctaLocation: "contact_media", intent: "" },
+  { value: "correction", label: "Correction to a profile or article", form: "contact", ctaLocation: "contact_correction", intent: "" },
 ] satisfies { value: string; label: string; form: TallyFormKey; ctaLocation: string; intent: string }[];
 
 export function ContactProjectInquiry({ initialInquiry = "" }: { initialInquiry?: string }) {
