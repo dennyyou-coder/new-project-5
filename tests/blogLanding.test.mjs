@@ -30,9 +30,17 @@ test("series hero provides latest episode and all episodes links", () => {
   assert.match(componentSource, /View all episodes/);
 });
 
-test("primary navigation groups analysis and practical guides", () => {
-  assert.match(headerSource, /href: "\/blog\/archive", label: "Deep Analysis"/);
-  assert.match(headerSource, /href: "\/guides", label: "Practical Guides"/);
+// PR-08 replaced the grouped menu with the eight-item navigation; Deep
+// Analysis moved to the footer and the header links Guides directly.
+const footerSource = await readFile(
+  new URL("../components/Footer.tsx", import.meta.url),
+  "utf8"
+);
+
+test("navigation links practical guides and the deep analysis archive", () => {
+  assert.match(headerSource, /href: "\/guides", label: "Guides"/);
+  assert.match(headerSource, /href: "\/blog\/archive\?category=Supply%20Chain"/);
+  assert.match(footerSource, /<Link href="\/blog\/archive">Deep Analysis<\/Link>/);
 });
 
 test("Blog grids use three, two, and one columns at responsive breakpoints", () => {

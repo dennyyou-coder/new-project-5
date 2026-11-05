@@ -130,7 +130,7 @@ export default async function CategoryHubPage({ params }: Props) {
       </section>
 
       <div className="hub-container hub-body">
-        <main className="hub-main">
+        <div className="hub-main">
           {latest.length > 0 ? (
             <section id="hub-latest" aria-labelledby="hub-latest-heading">
               <h2 id="hub-latest-heading">Latest</h2>
@@ -190,7 +190,7 @@ export default async function CategoryHubPage({ params }: Props) {
               </ol>
             </section>
           ) : null}
-        </main>
+        </div>
 
         <aside className="hub-aside">
           {companies.length > 0 ? (
