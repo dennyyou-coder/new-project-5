@@ -23,3 +23,25 @@ test("home retains a single main heading and search guides stay outside editoria
   assert.equal((home.match(/<h1/g) || []).length, 1);
   assert.match(home, /getEditorialInsights\(articles\)/);
 });
+
+test("home B layout: search, data-driven counts, sections in order, no expo crowd hero", () => {
+  assert.match(home, /The global cleaning industry, in one place\./);
+  assert.match(home, /<HomeSearch entries=\{searchEntries\} \/>/);
+  for (const count of ["news.length", "brands.length", "featuredProductModels.length", "guides.length"]) {
+    assert.ok(home.includes(`value: ${count}`), count);
+  }
+  const order = [
+    "Across the industry this week",
+    "Browse by category",
+    "New products",
+    "Inside the supply chain",
+    "Companies",
+    "Guides for professionals",
+    "The whole industry, in your inbox"
+  ].map((heading) => home.indexOf(heading));
+  assert.ok(order.every((index) => index > 0), "all sections present");
+  assert.deepEqual([...order].sort((a, b) => a - b), order, "sections in order");
+  assert.doesNotMatch(home, /home-expo-networking-2025/);
+  assert.match(home, /"@type": "Organization"/);
+  assert.match(home, /"@type": "WebSite"/);
+});
