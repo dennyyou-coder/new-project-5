@@ -41,6 +41,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "milwaukee",
       "ryobi",
       "skil",
+      "stanley-black-decker",
       "tti",
       "worx"
     ],
@@ -61,6 +62,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "milwaukee",
       "ryobi",
       "skil",
+      "stanley-black-decker",
       "tti"
     ]
   },
@@ -94,6 +96,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "ryobi",
       "segway-navimow",
       "skil",
+      "stanley-black-decker",
       "stihl",
       "sunseeker",
       "toro",

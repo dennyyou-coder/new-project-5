@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Stanley Black &amp; Decker segments and brands</title>
+  <desc id="desc">Stanley Black and Decker with its Tools and Outdoor segment brands DEWALT, CRAFTSMAN, STANLEY, BLACK+DECKER and CUB CADET, and its Engineered Fastening segment.</desc>
+  <rect width="1600" height="900" fill="#f5f7fa"/>
+  <text x="110" y="112" fill="#0e1526" font-family="Arial, sans-serif" font-size="52" font-weight="700">One listed group, two segments</text>
+  <text x="110" y="162" fill="#4a5367" font-family="Arial, sans-serif" font-size="25">The tool and outdoor brands sit in one segment; engineered fastening is the other.</text>
+  <rect x="110" y="225" width="1380" height="120" rx="26" fill="#0e1526"/>
+  <text x="160" y="276" fill="#fcd20f" font-family="Arial, sans-serif" font-size="22" font-weight="700">LISTED GROUP · NEW YORK STOCK EXCHANGE: SWK · NEW BRITAIN, CONNECTICUT</text>
+  <text x="160" y="318" fill="#ffffff" font-family="Arial, sans-serif" font-size="31" font-weight="700">Stanley Black &amp; Decker, Inc.</text>
+  <path d="M520 345V400" stroke="#8a93a5" stroke-width="6"/><polygon points="506,388 520,413 534,388" fill="#8a93a5"/>
+  <path d="M1080 345V400" stroke="#8a93a5" stroke-width="6"/><polygon points="1066,388 1080,413 1094,388" fill="#8a93a5"/>
+  <rect x="110" y="415" width="660" height="330" rx="26" fill="#ffffff" stroke="#d4a900" stroke-width="5"/>
+  <text x="155" y="468" fill="#8a6d00" font-family="Arial, sans-serif" font-size="22" font-weight="700">TOOLS &amp; OUTDOOR · 87% OF 2025 REVENUE</text>
+  <text x="155" y="525" fill="#0e1526" font-family="Arial, sans-serif" font-size="30" font-weight="700">DEWALT · CRAFTSMAN</text>
+  <text x="155" y="575" fill="#0e1526" font-family="Arial, sans-serif" font-size="30" font-weight="700">STANLEY · BLACK+DECKER</text>
+  <text x="155" y="625" fill="#0e1526" font-family="Arial, sans-serif" font-size="30" font-weight="700">CUB CADET</text>
+  <text x="155" y="690" fill="#4a5367" font-family="Arial, sans-serif" font-size="22">Power tools, hand tools and storage, outdoor equipment</text>
+  <rect x="830" y="415" width="660" height="330" rx="26" fill="#ffffff" stroke="#8a93a5" stroke-width="5"/>
+  <text x="875" y="468" fill="#4a5367" font-family="Arial, sans-serif" font-size="22" font-weight="700">ENGINEERED FASTENING · 13% OF 2025 REVENUE</text>
+  <text x="875" y="525" fill="#0e1526" font-family="Arial, sans-serif" font-size="30" font-weight="700">Engineered components</text>
+  <text x="875" y="590" fill="#4a5367" font-family="Arial, sans-serif" font-size="22">Fasteners, fittings and other</text>
+  <text x="875" y="626" fill="#4a5367" font-family="Arial, sans-serif" font-size="22">components for specific applications.</text>
+  <text x="1490" y="858" fill="#5a6378" text-anchor="end" font-family="Arial, sans-serif" font-size="18">World Clean Biz · source: Stanley Black &amp; Decker Form 10-K for fiscal 2025</text>
+</svg>
