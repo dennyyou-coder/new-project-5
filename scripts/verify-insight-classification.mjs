@@ -14,18 +14,6 @@ const allowedGuideTypes = new Set([
 const errors = [];
 
 // Category values must be listed in CATEGORY_ALIASES (lib/categories.ts).
-// Values below still fall back to "Industry" until their mapping is decided.
-const PENDING_CATEGORY_DECISIONS = new Set([
-  "Brand Comparison",
-  "Industry Insights",
-  "Industry Roundup",
-  "Industry Trends",
-  "Market Analysis",
-  "OEM & Sourcing",
-  "Product Analysis",
-  "Product Review",
-  "Robotics"
-]);
 // Brand slugs referenced by articles that have no profile in content/brands yet.
 // "breville", "dji", "ego" and "philips" name a wider company than the existing
 // breville-sage, dji-romo, ego-power-plus and philips-home-appliances profiles,
@@ -83,7 +71,7 @@ for (const file of fs.readdirSync(directory).filter((name) => name.endsWith(".md
   )?.[1];
 
   const category = frontmatter.match(/^category:\s*"?([^"\n]+?)"?\s*$/m)?.[1];
-  if (category && !mappedCategories.has(category) && !PENDING_CATEGORY_DECISIONS.has(category)) {
+  if (category && !mappedCategories.has(category)) {
     errors.push(`${relativePath}: category "${category}" is not mapped in lib/categories.ts`);
   }
 
