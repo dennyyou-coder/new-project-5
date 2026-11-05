@@ -60,10 +60,15 @@ export function buildHubCategoryData(
       hubCategoriesForBrand(getBrandCategoriesForProfile(brand.slug).map((category) => category.slug)).includes(hub.slug)
   );
 
-  // Editor-marked articles only; the module is hidden when there are none.
-  const essential = analysis
-    .filter((article) => article.featured || article.visualPriority > 0)
+  // Search-data picks first, then editor-marked articles; the module is
+  // hidden when there are none.
+  const picks = (hub.searchPicks ?? [])
+    .map((slug) => analysis.find((article) => article.slug === slug))
+    .filter((article): article is Insight => Boolean(article));
+  const editorMarked = analysis
+    .filter((article) => (article.featured || article.visualPriority > 0) && !picks.includes(article))
     .sort((a, b) => b.visualPriority - a.visualPriority || b.sortDate.localeCompare(a.sortDate));
+  const essential = [...picks, ...editorMarked];
 
   const feed: HubFeedItem[] = [
     ...news.map((item) => ({ kind: "news" as const, date: item.eventDate, news: item })),
