@@ -20,3 +20,9 @@ test("ownership groups only merge clear single parents", () => {
   const brandsInGroups = groups.flatMap((group) => group.brands.map((brand) => brand.slug));
   assert.equal(new Set(brandsInGroups).size, brandsInGroups.length, "a brand appears in one group only");
 });
+
+test("ownership groups link the parent's own profile when it exists", () => {
+  const groups = buildOwnershipGroups(getPublishedBrandProfiles(getInsights()));
+  const tti = groups.find((group) => group.brands.some((brand) => brand.slug === "milwaukee"));
+  assert.equal(tti?.parentProfile?.slug, "tti");
+});

@@ -33,7 +33,6 @@ const PENDING_BRAND_PROFILES = new Set([
   "snap-on",
   "stanley-black-decker",
   "switchbot",
-  "tti",
   "versuni"
 ]);
 

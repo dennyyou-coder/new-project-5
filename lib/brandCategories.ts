@@ -40,6 +40,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "milwaukee",
       "ryobi",
       "skil",
+      "tti",
       "worx"
     ],
     primaryBrandSlugs: [
@@ -57,7 +58,8 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "metabo",
       "milwaukee",
       "ryobi",
-      "skil"
+      "skil",
+      "tti"
     ]
   },
   {
@@ -186,6 +188,7 @@ export const BRAND_CATEGORIES: BrandCategory[] = [
       "supor",
       "tineco",
       "toshiba-appliances",
+      "tti",
       "vax",
       "vestel",
       "xiaomi-mijia"

@@ -96,7 +96,9 @@ export default function BrandsPage() {
             <ul className="company-owners-grid">
               {ownershipGroups.map((group) => (
                 <li key={group.key}>
-                  <p className="company-owner-parent">{group.parent}</p>
+                  <p className="company-owner-parent">
+                    {group.parentProfile ? <Link href={`/brands/${group.parentProfile.slug}`}>{group.parent}</Link> : group.parent}
+                  </p>
                   <p className="company-owner-brands">
                     {group.brands.map((brand, index) => (
                       <span key={brand.slug}>

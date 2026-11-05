@@ -81,7 +81,7 @@ export function parentGroupKey(parentCompany: string | undefined): string | unde
   return name ? name.toLowerCase() : undefined;
 }
 
-export type OwnershipGroup = { key: string; parent: string; brands: BrandProfile[] };
+export type OwnershipGroup = { key: string; parent: string; parentProfile?: BrandProfile; brands: BrandProfile[] };
 
 /** Parents that own two or more published profiles, largest first. */
 export function buildOwnershipGroups(profiles: BrandProfile[]): OwnershipGroup[] {
@@ -98,6 +98,17 @@ export function buildOwnershipGroups(profiles: BrandProfile[]): OwnershipGroup[]
   }
   return [...groups.values()]
     .filter((group) => group.brands.length >= 2)
-    .map((group) => ({ ...group, brands: [...group.brands].sort((a, b) => a.name.localeCompare(b.name)) }))
+    .map((group) => ({
+      ...group,
+      // The parent's own profile, when it has one: matched on the profile's
+      // name, or on its legal name only if the profile has no parent itself
+      // (a brand whose legal entity is the parent is not the parent's profile).
+      parentProfile: profiles.find(
+        (profile) =>
+          parentGroupKey(profile.name) === group.key ||
+          (!profile.ownership.parentCompany && parentGroupKey(profile.legalName) === group.key)
+      ),
+      brands: [...group.brands].sort((a, b) => a.name.localeCompare(b.name))
+    }))
     .sort((a, b) => b.brands.length - a.brands.length || a.parent.localeCompare(b.parent));
 }
