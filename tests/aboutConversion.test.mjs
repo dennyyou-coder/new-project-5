@@ -7,7 +7,7 @@ const aboutSource = await readFile(
   new URL("../app/about/page.tsx", import.meta.url),
   "utf8"
 );
-const globalStyles = readRouteStyles("about.css");
+const globalStyles = readRouteStyles();
 
 test("About leads with Denny's organizer role and value-chain network", () => {
   assert.match(aboutSource, /Organizer Of WCB Expo/);

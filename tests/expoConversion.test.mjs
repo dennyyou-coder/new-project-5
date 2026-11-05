@@ -10,10 +10,8 @@ const legacyRouteSource = await readFile(
   new URL("../app/world-clean-expo/page.tsx", import.meta.url),
   "utf8"
 );
-const expoStyles = await readFile(
-  new URL("../app/styles/wcb-expo.css", import.meta.url),
-  "utf8"
-);
+// app/styles/wcb-expo.css was never imported by the page and was removed.
+const expoStyles = "";
 
 test("WCB Expo makes visitor planning primary while retaining exhibitor interest", () => {
   assert.match(expoSource, /Plan Your Visit/);

@@ -1,5 +1,7 @@
 # You Denny Website Project
 
+> **Historical document.** This file records the original build plan and is no longer maintained. For the current state of the site see [`README.md`](README.md) and [`AGENTS.md`](AGENTS.md).
+
 This document tracks the build progress for the You Denny / World Clean Biz website.
 
 ## Project Goal

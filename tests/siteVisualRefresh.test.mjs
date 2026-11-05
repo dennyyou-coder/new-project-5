@@ -92,7 +92,6 @@ test("Denny remains visible in the four trust-critical pages", () => {
 test("phase two alignment rules cover equal-height cards and media crops", () => {
   const css = [
     "app/styles/home.css",
-    "app/styles/about.css",
     "app/styles/reports.css",
     "app/styles/sourcing.css",
     "app/styles/trust.css"
