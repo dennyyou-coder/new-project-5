@@ -3,6 +3,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname),
+  async headers() {
+    // Report PDFs stay downloadable (report emails link to them) but are
+    // kept out of search results, so the PDF is reached via the reports form.
+    return [
+      {
+        source: "/reports/:file*.pdf",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }]
+      }
+    ];
+  },
   async redirects() {
     return [
       {
