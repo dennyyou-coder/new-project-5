@@ -13,7 +13,8 @@ publishedAt: "2026-11-01T20:16:49+08:00"
 updatedAt: "2026-11-01T20:16:49+08:00"
 sortDate: "2026-11-01T20:16:49+08:00"
 related_articles: []
-key_figures: [{"label": "Revenue", "value": "CNY 5.61 billion", "change": "+34.85% YoY", "period": "Q3 2026", "usd": ""}, {"label": "Attributable net profit", "value": "CNY 479.2 million", "change": "+33.01% YoY", "period": "Q3 2026", "usd": ""}, {"label": "Revenue", "value": "CNY 15.70 billion", "change": "+30.10% YoY", "period": "Jan–Sep 2026", "usd": ""}, {"label": "Attributable net profit", "value": "CNY 1.47 billion", "change": "+41.23% YoY", "period": "Jan–Sep 2026", "usd": ""}]
+key_figures: [{"label": "Revenue", "value": "CNY 5.61 billion", "change": "+34.85% YoY", "period": "Q3 2026", "usd": "USD 843 million"}, {"label": "Attributable net profit", "value": "CNY 479.2 million", "change": "+33.01% YoY", "period": "Q3 2026", "usd": "USD 72.0 million"}, {"label": "Revenue", "value": "CNY 15.70 billion", "change": "+30.10% YoY", "period": "Jan–Sep 2026", "usd": "USD 2.36 billion"}, {"label": "Attributable net profit", "value": "CNY 1.47 billion", "change": "+41.23% YoY", "period": "Jan–Sep 2026", "usd": "USD 221 million"}]
+usd_rate: "1 USD = 6.6538 CNY; Federal Reserve H.10, 30 Oct 2026"
 ---
 [Roborock](/brands/roborock) reported third-quarter revenue of CNY 5.61 billion, up 34.85% year on year, and attributable net profit of CNY 479.2 million, up 33.01%. Its quarterly report, dated October 31, covers the three months to September 30, 2026.
 

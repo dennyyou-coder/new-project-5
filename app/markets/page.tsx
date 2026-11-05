@@ -61,7 +61,7 @@ export default function MarketsPage() {
           <section aria-labelledby="markets-results-title">
             <h2 id="markets-results-title">Latest results</h2>
             <p className="markets-note">
-              Figures in the reported currency, as reported by each company. Growth is year on year unless the row says otherwise. Each row links to the news story with the source.
+              Figures in the reported currency, as reported by each company, with an approximate US dollar value at the Federal Reserve H.10 rate on the day the story was published. Growth is year on year unless the row says otherwise. Each row links to the news story with the source and rate.
             </p>
             <div className="markets-table-wrap" tabIndex={0} role="region" aria-labelledby="markets-results-title">
               <table className="markets-table">
@@ -71,6 +71,7 @@ export default function MarketsPage() {
                     <th scope="col">Category</th>
                     <th scope="col">Period</th>
                     <th scope="col">Revenue</th>
+                    <th scope="col">≈ USD</th>
                     <th scope="col">Growth</th>
                     <th scope="col">Summary</th>
                     <th scope="col">Report</th>
@@ -85,6 +86,7 @@ export default function MarketsPage() {
                       <td>{row.hub?.name ?? "—"}</td>
                       <td>{row.figure?.period ?? "—"}</td>
                       <td className="markets-num">{row.figure?.value ?? "—"}</td>
+                      <td className="markets-num">{row.figure?.usd ?? "—"}</td>
                       <td className="markets-num">{row.figure?.change ?? "—"}</td>
                       <td className="markets-summary">{row.news.excerpt}</td>
                       <td>

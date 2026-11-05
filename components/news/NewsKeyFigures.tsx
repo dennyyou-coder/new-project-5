@@ -1,14 +1,14 @@
 import type { NewsKeyFigure } from "@/lib/news";
 
 /** Key figures card on a news article. Values come from the article body. */
-export function NewsKeyFigures({ figures }: { figures: NewsKeyFigure[] }) {
+export function NewsKeyFigures({ figures, usdRate }: { figures: NewsKeyFigure[]; usdRate?: string }) {
   if (!figures.length) return null;
   const hasUsd = figures.some((figure) => figure.usd);
   return (
     <section className="news-key-figures" aria-labelledby="news-key-figures-title">
       <div className="news-key-figures-head">
         <h2 id="news-key-figures-title">Key figures</h2>
-        <span>{hasUsd ? "As reported · USD conversion shown where given" : "As reported in the source"}</span>
+        <span>{hasUsd && usdRate ? `As reported · USD at ${usdRate}` : "As reported in the source"}</span>
       </div>
       <dl>
         {figures.map((figure) => (

@@ -23,7 +23,7 @@
 .markets-note { margin: 0 0 14px; font-size: 14px; color: var(--mk-muted); }
 .markets-table-wrap { overflow-x: auto; border: 1px solid var(--mk-line); border-radius: 12px; }
 .markets-table-wrap:focus-visible { outline: 2px solid var(--mk-link); outline-offset: 2px; }
-.markets-table { width: 100%; min-width: 860px; border-collapse: collapse; font-size: 14px; }
+.markets-table { width: 100%; min-width: 960px; border-collapse: collapse; font-size: 14px; }
 .markets-table th, .markets-table td { padding: 12px 14px; border-bottom: 1px solid var(--mk-line); text-align: left; vertical-align: top; }
 .markets-table thead th { background: var(--mk-soft); font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--mk-muted); white-space: nowrap; }
 .markets-table tbody tr:last-child > * { border-bottom: 0; }

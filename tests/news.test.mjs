@@ -135,7 +135,19 @@ test("key figures are optional and every number in them appears in the article b
           assert.ok(article.content.includes(number), `${article.slug}: ${number} must appear in the body`);
         }
       }
-      assert.equal(figure.usd, undefined, `${article.slug}: USD stays empty until a rate is provided`);
+      if (!figure.usd) continue;
+      // USD only with a stated rate, and it must match the converted value within 1%.
+      assert.ok(article.usdRate, `${article.slug}: usd needs usd_rate`);
+      const rate = article.usdRate.match(/^1 (USD|[A-Z]{3}) = ([\d.]+) ([A-Z]{3}); Federal Reserve H\.10, \d{1,2} \w{3} \d{4}$/);
+      assert.ok(rate, `${article.slug}: usd_rate format`);
+      const amount = figure.value.match(/([A-Z]{3}) ([\d.]+) (billion|million)/);
+      const usd = figure.usd.match(/^USD ([\d.]+) (billion|million)/);
+      assert.ok(amount && usd, `${article.slug}: ${figure.label} amount and usd parse`);
+      const toNumber = (n, unit) => Number(n) * (unit === "billion" ? 1e9 : 1e6);
+      const local = toNumber(amount[2], amount[3]);
+      const expected = rate[1] === "USD" ? local / Number(rate[2]) : local * Number(rate[2]);
+      const actual = toNumber(usd[1], usd[2]);
+      assert.ok(Math.abs(actual - expected) / expected < 0.01, `${article.slug}: ${figure.label} ${figure.usd} vs ${expected}`);
     }
   }
 });

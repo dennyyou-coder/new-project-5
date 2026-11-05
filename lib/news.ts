@@ -18,8 +18,10 @@ export type NewsTopic = typeof NEWS_TOPICS[number]["slug"];
 /**
  * Optional `key_figures` frontmatter: one line of JSON, e.g.
  * key_figures: [{"label":"Q3 revenue","value":"CNY 5.61 billion","change":"+34.85% YoY","period":"Q3 2026","usd":""}]
- * Every number must come from the article body. `usd` stays empty until a
- * conversion rate and date are provided.
+ * Every number must come from the article body. `usd` is filled only when
+ * the article also has `usd_rate`: the Federal Reserve H.10 rate on the
+ * day the article was published (the previous business day if none),
+ * e.g. usd_rate: "1 USD = 6.6538 CNY; Federal Reserve H.10, 30 Oct 2026".
  */
 export type NewsKeyFigure = { label: string; value: string; change?: string; period?: string; usd?: string };
 
@@ -44,6 +46,8 @@ export type NewsArticle = {
   /** Explicit `hub_categories` frontmatter; most hubs are derived instead. */
   hubCategories: HubCategorySlug[];
   keyFigures: NewsKeyFigure[];
+  /** Source and date of the rate used for `usd` in key figures. */
+  usdRate?: string;
   content: string;
 };
 
@@ -128,7 +132,8 @@ function readNews(): NewsArticle[] {
       coverImage: data.coverImage ? String(data.coverImage) : undefined,
       sources, readingTime: `${Math.max(1, Math.ceil(words / 220))} min read`,
       hubCategories: explicitHubCategories(data.hub_categories),
-      keyFigures: parseKeyFigures(raw, slug), content
+      keyFigures: parseKeyFigures(raw, slug),
+      usdRate: data.usd_rate ? String(data.usd_rate) : undefined, content
     }];
   }).sort((a, b) => b.eventDate.localeCompare(a.eventDate) || b.sortDate.localeCompare(a.sortDate) || a.slug.localeCompare(b.slug));
 }
