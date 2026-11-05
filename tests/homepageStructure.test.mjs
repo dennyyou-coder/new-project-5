@@ -38,7 +38,7 @@ test("home B layout: search, data-driven counts, sections in order, no expo crow
     "Companies",
     "Guides for professionals",
     "The whole industry, in your inbox"
-  ].map((heading) => home.indexOf(heading));
+  ].map((heading) => home.indexOf(`>${heading}</h2>`));
   assert.ok(order.every((index) => index > 0), "all sections present");
   assert.deepEqual([...order].sort((a, b) => a - b), order, "sections in order");
   assert.doesNotMatch(home, /home-expo-networking-2025/);
