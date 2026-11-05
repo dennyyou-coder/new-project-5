@@ -4776,7 +4776,7 @@
     "specifications": [
       {
         "label": "Product status",
-        "value": "UK launch scheduled for 24 September 2026",
+        "value": "UK launch was scheduled for 24 September 2026 (as checked on 10 September 2026)",
         "meaning": "The announcement date is not the retail availability date.",
         "source": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html"
       },
@@ -4878,7 +4878,7 @@
         "source": "https://www.prnewswire.co.uk/news-releases/ecovacs-robotics-unveils-next-generation-of-intelligent-cleaning-at-ifa-2026-302869519.html",
         "kind": "Manufacturer launch RRP",
         "date": "2026-09-10",
-        "note": "Announced RRP with launch scheduled for 24 September 2026; not a live selling-price or stock claim."
+        "note": "Announced RRP with launch then scheduled for 24 September 2026, as checked on 10 September 2026; not a live selling-price or stock claim."
       }
     ],
     "comparison": {

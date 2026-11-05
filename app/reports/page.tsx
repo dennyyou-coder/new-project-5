@@ -1,14 +1,15 @@
 import { siteVisualProps } from "@/lib/siteVisuals";
 import type { Metadata } from "next";
+import { buildWebsiteMetadata } from "@/lib/seo";
 import "../styles/reports.css";
 import { ReportsLeadForm, TallyReportButton } from "@/components/LeadForms";
 
-export const metadata: Metadata = {
-  title: "Free Cleaning Industry Reports",
+export const metadata: Metadata = buildWebsiteMetadata({
+  title: "Free Cleaning Industry Reports | World Clean Biz",
   description:
     "Choose free World Clean Biz reports on cleaning markets, product categories and China supply chains and receive them by email.",
-  alternates: { canonical: "/reports" }
-};
+  canonical: "/reports"
+});
 
 const upcomingReports = [
   {
