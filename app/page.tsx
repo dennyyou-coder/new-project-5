@@ -305,7 +305,7 @@ export default function HomePage() {
             <div id="markets">
               <div className="home-b-head">
                 <h2>Markets</h2>
-                <Link href={newsHref("companies")}>More →</Link>
+                <Link href="/markets">All results →</Link>
               </div>
               <ul className="home-b-list">
                 {results.map((item) => (

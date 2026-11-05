@@ -83,6 +83,7 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
   return routeEntries([
     "",
     "/categories",
+    "/markets",
     ...HUB_CATEGORIES.map((hub) => `/categories/${hub.slug}`),
     "/videos",
     "/products",

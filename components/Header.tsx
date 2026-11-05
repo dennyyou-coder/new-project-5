@@ -41,7 +41,7 @@ const NAV: NavItem[] = [
   },
   { kind: "link", href: "/brands", label: "Companies" },
   { kind: "link", href: "/blog/archive?category=Supply%20Chain", label: "Supply chain", current: [] },
-  { kind: "link", href: "/news?topic=companies", label: "Markets", current: [] },
+  { kind: "link", href: "/markets", label: "Markets" },
   { kind: "link", href: "/wcb-expo", label: "Events" },
   { kind: "link", href: "/guides", label: "Guides" }
 ];
