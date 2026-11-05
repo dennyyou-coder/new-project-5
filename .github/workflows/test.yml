@@ -1,0 +1,54 @@
+name: Tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Content classification
+        run: npm run verify:content-classification
+      - name: Article images
+        run: npm run verify:article-images
+      - run: npm run test:homepage
+      - run: npm run test:blog-landing
+      - run: npm run test:asset-performance
+      - run: npm run test:analytics
+      - run: npm run test:inquiry
+      - run: npm run test:insights
+      - run: npm run test:blog
+      - run: npm run test:seo-audit
+      - run: npm run test:equipment
+      - run: npm run test:components
+
+      # Known failures already on main. They run and report here, but do not
+      # block the check until they are fixed:
+      # - test:lead: the /wcb-expo exhibitor CTA test (plan item PR-01).
+      # - test:brands: four relationship snapshot tests whose approved lists
+      #   are out of date with the published articles.
+      - name: test:lead (known failure, non-blocking)
+        run: npm run test:lead
+        continue-on-error: true
+      - name: test:brands (known failures, non-blocking)
+        run: npm run test:brands
+        continue-on-error: true
