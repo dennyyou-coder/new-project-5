@@ -9,7 +9,7 @@
   "description": "A source-backed profile of CRAFTSMAN's Stanley Black & Decker ownership, power-tool and outdoor portfolio, authorized-selling requirements and SKU-level buyer checks.",
   "metaDescription": "CRAFTSMAN profile: Stanley Black & Decker ownership, V20 tools, outdoor equipment, channels, warranties and buyer checks.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with CRAFTSMAN or Stanley Black & Decker. Brand ownership does not establish the manufacturer, seller, importer or warranty party for every CRAFTSMAN SKU.",
-  "headquarters": "Towson, Maryland, United States (Stanley Black & Decker group headquarters)",
+  "headquarters": "Towson, Maryland, United States (CRAFTSMAN press-release dateline); parent Stanley Black & Decker's principal executive office is in New Britain, Connecticut",
   "founded": "1927; owned at group level by Stanley Black & Decker",
   "heroImage": "/images/brands/craftsman/hero-v20-cordless-tools.webp",
   "heroImageAlt": "CRAFTSMAN cordless saw in a workshop application",
@@ -46,9 +46,10 @@
   "sources": [
     {"id":"craftsman-v20-2026","title":"CRAFTSMAN Launches New V20 ADVANCED Batteries","publisher":"CRAFTSMAN","url":"https://press.craftsman.com/2026-05-21-CRAFTSMAN-R-Launches-New-V20-ADVANCED-TM-Batteries-to-Help-DIYers-Power-Through-More-Demanding-Jobs?asPDF=1","publishedAt":"2026-05-21","accessedAt":"2026-08-01"},
     {"id":"craftsman-warranty","title":"CRAFTSMAN Warranty","publisher":"CRAFTSMAN","url":"https://www.craftsman.com/pages/warranty?sku=CMZAS6JPS","accessedAt":"2026-08-01"},
-    {"id":"craftsman-support","title":"CRAFTSMAN Support","publisher":"CRAFTSMAN","url":"https://www.craftsman.com/en-us/support","accessedAt":"2026-08-01"}
+    {"id":"craftsman-support","title":"CRAFTSMAN Support","publisher":"CRAFTSMAN","url":"https://www.craftsman.com/en-us/support","accessedAt":"2026-08-01"},
+    {"id": "sbd-10k-2025", "title": "Form 10-K for the fiscal year ended January 3, 2026", "publisher": "Stanley Black & Decker, Inc. (SEC EDGAR)", "url": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000009/swk-20260103.htm", "publishedAt": "2026-02", "accessedAt": "2026-11-05"}
   ],
   "publishedAt": "2026-08-01T12:05:00+08:00",
-  "lastVerified": "2026-08-05",
-  "lastModified": "2026-08-05T23:25:00+08:00"
+  "lastVerified": "2026-11-05",
+  "lastModified": "2026-11-06T01:40:00+08:00"
 }
