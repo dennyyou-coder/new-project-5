@@ -1,7 +1,9 @@
-import { BrandDirectory } from "@/components/brands/BrandDirectory";
 import type { Metadata } from "next";
-import { BrandDirectoryCard } from "@/components/brands/BrandDirectoryCard";
-import { getPublishedBrandCategories } from "@/lib/brandCategories";
+import Link from "next/link";
+import "../styles/company-directory.css";
+import { CompanyDirectory } from "@/components/brands/CompanyDirectory";
+import { getBrandCategoriesForProfile, getPublishedBrandCategories } from "@/lib/brandCategories";
+import { buildOwnershipGroups, headquartersCountry, ownershipLine } from "@/lib/brandDirectory";
 import {
   buildBrandDirectorySchemas,
   getPublishedBrandProfiles,
@@ -50,40 +52,73 @@ export default function BrandsPage() {
     return rank(a.category.slug) - rank(b.category.slug);
   });
   const schemas = buildBrandDirectorySchemas(profiles, siteUrl);
+  const ownershipGroups = buildOwnershipGroups(profiles);
+  // Each company appears once; categories are filters, not sections.
+  const companies = [...profiles]
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((profile) => ({
+      slug: profile.slug,
+      name: profile.name,
+      logo: profile.logoImage,
+      logoAlt: profile.logoImageAlt,
+      headquarters: profile.headquarters,
+      country: headquartersCountry(profile.headquarters),
+      ownership: ownershipLine(profile),
+      categories: getBrandCategoriesForProfile(profile.slug).map((category) => category.slug),
+      search: [profile.name, profile.slug, ...profile.aliases, profile.ownership.parentCompany ?? ""].join(" ").toLowerCase(),
+    }));
+  const countries = [...new Set(companies.map((company) => company.country).filter((country): country is string => Boolean(country)))].sort();
 
   return (
-    <div className="guides-hub brand-hub approved-catalog">
-      <section className="guides-hero">
-        <div className="insights-page-container">
-          <p className="eyebrow">Independent brand research</p>
+    <div className="company-directory-page">
+      <section className="company-directory-hero">
+        <div className="company-directory-container">
+          <nav className="company-directory-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link> / <span aria-current="page">Companies</span>
+          </nav>
           <h1>Companies &amp; Brands</h1>
-          <p>
-            Explore company ownership, products and business activities across
-            the cleaning industry.
-          </p>
-          <p className="refresh-meta">
-            {profiles.length} published brand profiles
-          </p>
-
+          <p>Ownership, products and business activities of {profiles.length} companies and brands across the cleaning industry.</p>
+          <nav className="company-directory-categories" aria-label="Company categories">
+            {categories.map((data) => (
+              <Link key={data.category.slug} href={`/brands/${data.category.slug}`}>
+                {data.category.name} <span>{data.profiles.length}</span>
+              </Link>
+            ))}
+          </nav>
         </div>
       </section>
 
-      <BrandDirectory categories={categories.map((data) => ({
-        slug: data.category.slug,
-        name: data.category.name,
-        description: data.category.description,
-        profiles: data.profiles.map((profile) => ({
-          slug: profile.slug,
-          search: [profile.name, profile.slug, ...profile.aliases].join(" ").toLowerCase(),
-          card: <BrandDirectoryCard key={profile.slug} profile={profile} />,
-        })),
-      }))} />
+      <div className="company-directory-container company-directory-body">
+        {ownershipGroups.length > 0 ? (
+          <section className="company-owners" aria-labelledby="company-owners-title">
+            <h2 id="company-owners-title">Who owns what</h2>
+            <p className="company-owners-note">Groups that own two or more of the brands profiled here, taken from each profile&rsquo;s ownership record.</p>
+            <ul className="company-owners-grid">
+              {ownershipGroups.map((group) => (
+                <li key={group.key}>
+                  <p className="company-owner-parent">{group.parent}</p>
+                  <p className="company-owner-brands">
+                    {group.brands.map((brand, index) => (
+                      <span key={brand.slug}>
+                        {index > 0 ? ", " : null}
+                        <Link href={`/brands/${brand.slug}`}>{brand.name}</Link>
+                      </span>
+                    ))}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
-      <div className="insights-page-container refresh-directory-note">
-        <p>
-          Profiles distinguish ownership, trademarks and operating companies,
-          with sources and verification dates. Brands may appear in more than
-          one relevant category; the total counts unique profiles.
+        <CompanyDirectory
+          companies={companies}
+          categories={categories.map((data) => ({ slug: data.category.slug, name: data.category.name }))}
+          countries={countries}
+        />
+
+        <p className="company-directory-note">
+          Profiles distinguish ownership, trademarks and operating companies, with sources and verification dates.
         </p>
       </div>
       <script

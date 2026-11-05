@@ -890,3 +890,13 @@
     overflow-wrap: anywhere;
   }
 }
+
+/* PR-13: profile latest strip and correction link */
+.brand-latest { padding: 24px 0 8px; }
+.brand-latest h2 { margin: 0 0 8px; font-size: 20px; }
+.brand-latest ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+.brand-latest li { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border: 1px solid #e3e7ee; border-radius: 12px; }
+.brand-latest-meta { font-size: 12px; font-weight: 650; color: #4a5367; }
+.brand-latest a { display: flex; align-items: center; min-height: 44px; font-weight: 700; line-height: 1.35; }
+.brand-correction { margin: 12px 0 0; font-size: 14px; color: #4a5367; }
+.brand-correction a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
