@@ -86,3 +86,18 @@ test("every product category in the catalogue belongs to a hub", () => {
     assert.ok(hubCategoriesForProduct({ category }).length > 0, `${category} has no hub`);
   }
 });
+
+test("hub pages are in the discovery sitemap and each has content to show", async () => {
+  const { buildDiscoverySitemap } = await import("../lib/sitemaps.ts");
+  const { getAllHubCategoryData } = await import("../lib/hubCategoryContent.ts");
+  const urls = new Set(buildDiscoverySitemap().map((entry) => entry.url));
+  assert.ok(urls.has("https://worldcleanbiz.com/categories"));
+  for (const hub of HUB_CATEGORIES) {
+    assert.ok(urls.has(`https://worldcleanbiz.com/categories/${hub.slug}`), `${hub.slug} in sitemap`);
+  }
+  for (const data of getAllHubCategoryData()) {
+    const modules = [data.feed, data.newModels, data.essential, data.companies, data.guides].filter((list) => list.length > 0);
+    assert.ok(modules.length > 0, `${data.hub.slug} has at least one module`);
+    assert.ok(data.feed.every((item, index, all) => index === 0 || Date.parse(all[index - 1].date.length === 10 ? `${all[index - 1].date}T00:00:00+08:00` : all[index - 1].date) >= Date.parse(item.date.length === 10 ? `${item.date}T00:00:00+08:00` : item.date)), `${data.hub.slug} feed newest first`);
+  }
+});
