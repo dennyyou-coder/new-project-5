@@ -36,7 +36,9 @@
     "summary": "Toshiba Corporation and Midea agreed in 2016 that Midea would acquire 80.1% of Toshiba Lifestyle Products & Services Corporation and receive a 40-year worldwide licence to use the TOSHIBA brand for home appliances. Toshiba's completion notice states that Toshiba Lifestyle became a Midea subsidiary. Current Toshiba Lifestyle materials continue to identify the company as the developer, manufacturer and seller of TOSHIBA-brand home appliances within Midea Group.",
     "parentCompany": "Midea Group, with the TOSHIBA home-appliance trademark used under licence from Toshiba Corporation"
   },
-  "leadership": [],
+  "leadership": [
+    {"name": "Kenji Shirato", "role": "Representative Director, President and Executive Officer, Toshiba Lifestyle Products & Services", "context": "Toshiba Lifestyle announced his appointment effective April 1, 2024, and its April 2025 officer list still named him in the role."}
+  ],
   "productPortfolio": [
     {
       "name": "Refrigeration, laundry and cooking appliances",
@@ -171,9 +173,11 @@
       "url": "https://www.toshiba-lifestyle.com/jp/press/2025/08/28/3442/",
       "publishedAt": "2025-08-28",
       "accessedAt": "2026-08-06"
-    }
+    },
+    {"id": "toshiba-lifestyle-president-2024", "title": "Change of Representative Director and President", "publisher": "Toshiba Lifestyle Products & Services Corporation", "url": "https://www.toshiba-lifestyle.com/jp/press/2024/02/20/2634", "publishedAt": "2024-02-20", "accessedAt": "2026-11-05"},
+    {"id": "toshiba-lifestyle-officers-2025", "title": "Change of Officers", "publisher": "Toshiba Lifestyle Products & Services Corporation", "url": "https://www.toshiba-lifestyle.com/jp/press/2025/04/16/3271", "publishedAt": "2025-04-16", "accessedAt": "2026-11-05"}
   ],
   "publishedAt": "2026-08-06T18:00:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T18:00:00+08:00"
+  "lastModified": "2026-11-05T12:00:00+08:00"
 }

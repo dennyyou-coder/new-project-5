@@ -38,7 +38,9 @@
     "summary": "Gorenje joined Hisense Group in 2018. Hisense Europe describes itself as the integrated European business combining Hisense's global scale with the Gorenje company and brand tradition, and identifies Gorenje as one of its three global brands alongside Hisense and ASKO.",
     "parentCompany": "Hisense Group"
   },
-  "leadership": [],
+  "leadership": [
+    {"name": "Jianmin (Hanson) Han", "role": "President of the Hisense Europe Management Committee", "context": "Hisense Europe, which operates the Gorenje business and brand, names him as responsible for its overall operation and management. Gorenje does not publish a separate brand-level chief executive."}
+  ],
   "productPortfolio": [
     {
       "name": "Cooling, cooking and dishwashing",
@@ -113,9 +115,10 @@
     {"id": "gorenje-media", "title": "Photos and Logotypes", "publisher": "Hisense Europe", "url": "https://hisense-europe.com/photos-and-logotypes", "accessedAt": "2026-08-07"},
     {"id": "gorenje-accessibility", "title": "Accessibility Statement", "publisher": "Gorenje", "url": "https://international.gorenje.com/accessibility-statement", "accessedAt": "2026-08-07"},
     {"id": "gorenje-dryer-operator", "title": "DPNE92/GNLWIFI Tumble Dryer", "publisher": "Gorenje", "url": "https://international.gorenje.com/products/washing-and-drying/tumble-dryers/DRYER-SP22-45D2-DPNE92-GNLWIFI-GOR/p/000000000000743265", "accessedAt": "2026-08-07"},
-    {"id": "gorenje-warranty", "title": "Gorenje Warranty", "publisher": "Gorenje", "url": "https://international.gorenje.com/support/warranty", "accessedAt": "2026-08-07"}
+    {"id": "gorenje-warranty", "title": "Gorenje Warranty", "publisher": "Gorenje", "url": "https://international.gorenje.com/support/warranty", "accessedAt": "2026-08-07"},
+    {"id": "hisense-europe-management", "title": "Management of the Hisense Europe group", "publisher": "Hisense Europe", "url": "https://hisense-europe.com/management", "accessedAt": "2026-11-05"}
   ],
   "publishedAt": "2026-08-07T11:16:50+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-08-07T11:16:50+08:00"
+  "lastModified": "2026-11-05T12:00:00+08:00"
 }

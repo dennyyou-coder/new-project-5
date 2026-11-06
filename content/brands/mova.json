@@ -42,7 +42,9 @@
     "summary": "MOVA is presented by Dreame as a member of the Dreame family and uses shared group technology, supply-chain, digital and channel resources. It should not be treated as a separate listed company. Official materials name Spacewalker Technology entities for the brand, MOVAhome app and regional websites, while robotic-mower declarations name Kutting Technology (Suzhou) Co., Ltd. These related roles do not make one entity the universal manufacturer or seller for every MOVA category.",
     "parentCompany": "Dreame Group"
   },
-  "leadership": [],
+  "leadership": [
+    {"name": "Ni Bingbing", "role": "Global President, MOVA wet-and-dry vacuum", "context": "Title as reported by China Daily in June 2026. MOVA does not publish a full brand-level leadership team on its official sites."}
+  ],
   "productPortfolio": [
     {
       "name": "Robot vacuums",
@@ -104,6 +106,7 @@
     "competitorSlugs": ["dreame", "roborock", "ecovacs", "mammotion", "segway-navimow"]
   },
   "developments": [
+    {"date": "2026-09-03", "title": "Dreame Group places MOVA under a shared technology umbrella", "summary": "At IFA 2026 Dreame presented Dreame Group, bundling brands such as Dreame, MOVA and NAVEE under one technology umbrella.", "sourceIds": ["dreame-ifa-2026-group"]},
     {
       "date": "2026-04-17",
       "title": "MOVA presents an expanded 2026 product lineup",
@@ -182,9 +185,11 @@
       "url": "https://www.mova.tech/blogs/news",
       "publishedAt": "2026-04-17",
       "accessedAt": "2026-07-30"
-    }
+    },
+    {"id": "chinadaily-mova-2026", "title": "Chinese cleaning appliance brands eye a clean sweep with innovation and localization", "publisher": "China Daily", "url": "https://global.chinadaily.com.cn/a/202606/11/WS6a2aa4d5a310d6866eb4dc8e.html", "publishedAt": "2026-06-11", "accessedAt": "2026-11-05"},
+    {"id": "dreame-ifa-2026-group", "title": "IFA 2026: Dreame stärkt seine Führungsposition in Europa und treibt den Ausbau seines Ökosystems weiter voran", "publisher": "Dreame International (Hongkong) Limited", "url": "https://presseportal.de/pm/173033/6345182", "publishedAt": "2026-09-03", "accessedAt": "2026-11-05"}
   ],
   "publishedAt": "2026-07-30T23:25:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T23:25:00+08:00"
+  "lastModified": "2026-11-05T12:00:00+08:00"
 }

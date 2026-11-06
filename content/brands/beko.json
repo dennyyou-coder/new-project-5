@@ -36,7 +36,9 @@
     "summary": "Beko is a consumer appliance brand and the global corporate identity used by the group whose listed legal entity remains Arçelik A.Ş. Wholly owned Beko B.V. completed the acquisition of Whirlpool Corporation's remaining 25% stake in Beko Europe in June 2026 and now owns Beko Europe 100%. Beko Europe continues to use the Whirlpool brand under a licence limited to specified jurisdictions; that licence is not global Whirlpool ownership.",
     "parentCompany": "Arçelik A.Ş., within the Koç Group"
   },
-  "leadership": [],
+  "leadership": [
+    {"name": "Can Dinçer", "role": "Chief Executive Officer, Beko", "context": "Arçelik's management page says he was appointed Chief Executive Officer of Beko in March 2026, succeeding Hakan Bulgurlu after an 11-year tenure."}
+  ],
   "productPortfolio": [
     {
       "name": "Major home appliances",
@@ -178,9 +180,10 @@
       "url": "https://www.bekocorporate.com/company/press-room/press-releases/beko-brings-the-future-of-kitchen-living-to-eurocucina-2026/",
       "publishedAt": "2026-04-21",
       "accessedAt": "2026-08-06"
-    }
+    },
+    {"id": "arcelik-can-dincer", "title": "Can Dinçer – Management Team", "publisher": "Arçelik / Beko", "url": "https://www.arcelikglobal.com/en/company/about-us/management-team/can-dincer", "accessedAt": "2026-11-05"}
   ],
   "publishedAt": "2026-08-06T14:30:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T14:30:00+08:00"
+  "lastModified": "2026-11-05T12:00:00+08:00"
 }
