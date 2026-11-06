@@ -1,5 +1,4 @@
 import { buildBrandAnalysisLink } from "@/components/brands/brandAnalysisLink";
-import { BrandLatest } from "@/components/brands/BrandLatest";
 import { getAvailableCompanyKeywords } from "@/lib/companyKeywords";
 import { getEditorialInsights } from "@/lib/insightCollections";
 import { getNews } from "@/lib/news";
@@ -8,7 +7,8 @@ import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
 import { BrandCategoryPage } from "@/components/brands/BrandCategoryPage";
 import { BrandHero } from "@/components/brands/BrandHero";
-import { BrandSections } from "@/components/brands/BrandSections";
+import { BrandFactRail } from "@/components/brands/BrandFactRail";
+import { BrandSections, type BrandCompetitorCard, type BrandModelCard } from "@/components/brands/BrandSections";
 import { BrandSources } from "@/components/brands/BrandSources";
 import { BrandTimeline } from "@/components/brands/BrandTimeline";
 import {
@@ -26,6 +26,8 @@ import {
 import { getInsights } from "@/lib/content";
 import { buildWebsiteMetadata } from "@/lib/seo";
 import { buildBrandMarkIndex } from "@/lib/brandMarks";
+import { getBrandCategoryForProfile } from "@/lib/brandCategories";
+import { productCover, productModels } from "@/lib/products";
 import { findParentProfile } from "@/lib/brandProfileView";
 import "../../styles/brand-profile.css";
 
@@ -97,41 +99,84 @@ export default async function BrandPage({ params }: PageProps) {
     );
   }
 
-  const publishedBrandSlugs = new Map(profiles.map((profile) => [profile.slug, profile.name] as const));
   const data = getBrandPageData(slug, articles);
   if (!data) notFound();
 
+  const profile = data.profile;
+  const publishedSlugs = new Set(profiles.map((item) => item.slug));
   const markIndex = buildBrandMarkIndex(profiles);
-  const parentProfile = findParentProfile(data.profile, profiles);
+  const parentProfile = findParentProfile(profile, profiles);
   const schemas = buildBrandPageSchemas(data, siteUrl);
-  const relatedNews = getNews().filter((article) => article.brandSlugs.includes(data.profile.slug));
-  const analysisLink = buildBrandAnalysisLink(data.profile, getAvailableCompanyKeywords(
+  const relatedNews = getNews().filter((article) => article.brandSlugs.includes(profile.slug));
+  const analysisLink = buildBrandAnalysisLink(profile, getAvailableCompanyKeywords(
     getEditorialInsights(articles).filter((article) => !article.series)
   ));
 
+  // Product cards: newest models first, with two short specification values.
+  const models: BrandModelCard[] = productModels
+    .filter((model) => model.brandSlug === profile.slug)
+    .sort((a, b) => String(b.announced ?? "").localeCompare(String(a.announced ?? "")))
+    .map((model) => ({
+      slug: model.slug,
+      name: model.name.toLowerCase().startsWith(`${profile.name.toLowerCase()} `) ? model.name.slice(profile.name.length + 1) : model.name,
+      category: model.category,
+      cover: productCover(model.slug),
+      specs: (model.facts ?? [])
+        .map((fact: { value?: string }) => String(fact.value ?? "").trim())
+        .filter((value: string) => value && value.length <= 26)
+        .slice(0, 2)
+    }));
+
+  // Competitors: logo, category and the comparison article when one covers both companies.
+  const competitors: BrandCompetitorCard[] = profile.competitivePosition.competitorSlugs
+    .filter((competitorSlug) => publishedSlugs.has(competitorSlug))
+    .slice(0, 4)
+    .map((competitorSlug) => {
+      const mark = markIndex.get(competitorSlug)!;
+      const comparison = articles.find(
+        (article) =>
+          article.contentClass === "search" &&
+          article.guideType === "comparison" &&
+          [...article.primaryBrands, ...article.relatedBrands].includes(profile.slug) &&
+          [...article.primaryBrands, ...article.relatedBrands].includes(competitorSlug)
+      );
+      return {
+        mark,
+        caption: getBrandCategoryForProfile(competitorSlug)?.name,
+        href: comparison ? `/blog/${comparison.slug}` : `/brands/${competitorSlug}`,
+        linkLabel: comparison ? "Compare" : "Company profile"
+      };
+    });
+
+  const ownershipAnalysis = articles.find(
+    (article) => article.contentClass === "search" && article.guideType === "ownership" && article.primaryBrands.includes(profile.slug)
+  );
+
   return (
     <div className="guides-hub brand-hub brand-detail approved-catalog">
-      <BrandHero
-        profile={data.profile}
-        hasAnalysis={true}
-      />
-      <BrandSections
-        profile={data.profile}
-        allowedCompetitorSlugs={publishedBrandSlugs}
-        brandMark={markIndex.get(data.profile.slug) ?? { name: data.profile.name, logo: data.profile.logoImage }}
-        parentMark={parentProfile ? markIndex.get(parentProfile.slug) : undefined}
-        markIndex={markIndex}
-      />
-      <BrandLatest news={relatedNews} articles={data.primaryArticles} />
-      <BrandTimeline profile={data.profile} />
-      <BrandArticles
-        brandName={data.profile.name}
-        analysisLink={analysisLink}
-        news={relatedNews}
-        primaryArticles={data.primaryArticles}
-        relatedArticles={data.relatedArticles}
-      />
-      <BrandSources profile={data.profile} />
+      <BrandHero profile={profile} modelCount={models.length} hasAnalysis={true} />
+      <div className="insights-page-container bp-body">
+        <div className="bp-main brand-content-sections">
+          <BrandSections
+            profile={profile}
+            brandMark={markIndex.get(profile.slug) ?? { name: profile.name, logo: profile.logoImage }}
+            parentMark={parentProfile ? markIndex.get(parentProfile.slug) : undefined}
+            models={models}
+            competitors={competitors}
+            ownershipAnalysisHref={ownershipAnalysis ? `/blog/${ownershipAnalysis.slug}` : undefined}
+          />
+          <BrandTimeline profile={profile} />
+          <BrandArticles
+            brandName={profile.name}
+            analysisLink={analysisLink}
+            news={relatedNews}
+            primaryArticles={data.primaryArticles}
+            relatedArticles={data.relatedArticles}
+          />
+          <BrandSources profile={profile} />
+        </div>
+        <BrandFactRail profile={profile} competitors={competitors.map((competitor) => competitor.mark)} />
+      </div>
 
       <script
         type="application/ld+json"

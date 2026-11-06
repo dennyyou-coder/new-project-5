@@ -253,9 +253,9 @@ test("published competitor references carry the brand name for link text", () =>
       { slug: "draft-brand" }
     ]
   );
-  assert.match(read("components/brands/BrandSections.tsx"), /competitor\.name \?\? competitor\.slug/);
+  // The company page shows competitors as logo cards with their names.
+  assert.match(read("components/brands/BrandSections.tsx"), /<b>\{competitor\.mark\.name\}<\/b>/);
 });
-
 test("brand directory route exposes one canonical collection with links for published profiles", () => {
   const source = read("app/brands/page.tsx");
 
@@ -301,24 +301,27 @@ test("brand detail route rejects invalid slugs and exposes static metadata and s
   assert.match(source, /buildBrandPageSchemas\(data,\s*siteUrl\)/);
   assert.match(source, /buildBrandPageTitle\(profile\)/);
   assert.match(source, /getPublishedBrandProfiles\(articles\)/);
-  assert.match(source, /allowedCompetitorSlugs=\{publishedBrandSlugs\}/);
+  assert.match(source, /publishedSlugs\.has\(competitorSlug\)/);
 
+  // Header first, then the content column, then the fact sheet beside it.
   const componentOrder = [
     "BrandHero",
     "BrandSections",
     "BrandTimeline",
     "BrandArticles",
-    "BrandSources"
+    "BrandSources",
+    "BrandFactRail"
   ].map((name) => source.indexOf(`<${name}`));
   assert.ok(componentOrder.every((position) => position >= 0));
   assert.deepEqual(componentOrder, [...componentOrder].sort((a, b) => a - b));
+  assert.match(source, /className="insights-page-container bp-body"/);
 });
-
 test("brand experience shows independent positioning, disclaimer, sources, and update dates", () => {
   const brandSources = [
     read("app/brands/page.tsx"),
     read("app/brands/[slug]/page.tsx"),
     read("components/brands/BrandHero.tsx"),
+    read("components/brands/BrandFactRail.tsx"),
     read("components/brands/BrandSources.tsx")
   ].join("\n");
 
@@ -331,42 +334,33 @@ test("brand experience shows independent positioning, disclaimer, sources, and u
   assert.match(brandSources, /Last verified/);
   assert.match(brandSources, /Last updated/);
 });
+test("fact sheet shows the trimmed legal name as the operating company", () => {
+  const rail = read("components/brands/BrandFactRail.tsx");
 
-test("brand hero normalizes the available legal entity scope", () => {
-  const hero = read("components/brands/BrandHero.tsx");
-
-  assert.match(
-    hero,
-    /const legalName = normalizeOptionalBrandText\(profile\.legalName\)/
-  );
-  assert.match(
-    hero,
-    /const legalEntityNote = normalizeOptionalBrandText\(profile\.legalEntityNote\)/
-  );
-  assert.match(
-    hero,
-    /const legalEntityScope = legalName \|\| legalEntityNote/
-  );
-  assert.doesNotMatch(hero, /\{profile\.(?:legalName|legalEntityNote) \?/);
+  assert.match(rail, /const legalEntity = normalizeOptionalBrandText\(profile\.legalName\)/);
+  assert.match(rail, /label: "Operating company", value: legalEntity/);
+  assert.doesNotMatch(rail, /\{profile\.(?:legalName|legalEntityNote) \?/);
 });
-
-test("brand hero leads with the ownership answer, logo and icon fact cards", () => {
+test("company page header, ownership answer and fact sheet", () => {
   const hero = read("components/brands/BrandHero.tsx");
+  const sections = read("components/brands/BrandSections.tsx");
+  const rail = read("components/brands/BrandFactRail.tsx");
 
   assert.match(hero, /<BrandLogo\s+profile=\{profile\}\s+variant="hero"/);
-  assert.match(hero, /profile\.heroImage/);
-  assert.match(hero, /const quickAnswer = buildBrandQuickAnswer\(profile\)/);
-  assert.match(hero, /Who owns \{profile\.name\}\?/);
-  assert.match(hero, /<dl className="brand-fact-cards" aria-label="Key facts">/);
-  assert.match(hero, /shownFacts\.map\([\s\S]*<Icon name=\{icon\} \/>[\s\S]*<dt>\{fact\}<\/dt>[\s\S]*<dd>\{detail\}<\/dd>/);
-  ["Ownership", "Headquarters", "Founded", "Main businesses", "Legal entity", "Official website", "Not disclosed"].forEach((label) =>
-    assert.match(hero, new RegExp(label))
+  assert.match(hero, /buildBrandTagline\(profile, category\?\.name\)/);
+  assert.match(hero, /Official site/);
+  assert.match(hero, /Suggest a correction/);
+  assert.match(sections, /const quickAnswer = buildBrandQuickAnswer\(profile\)/);
+  assert.match(sections, /Who owns \{profile\.name\}\?/);
+  assert.match(sections, /profile\.heroImage/);
+  assert.match(rail, /<dl aria-label="Key facts">/);
+  assert.match(rail, /shown\.map\([\s\S]*<Icon name=\{icon\} \/>[\s\S]*<dt>\{label\}<\/dt>[\s\S]*<dd>\{value\}<\/dd>/);
+  ["Ownership", "Operating company", "Headquarters", "Founded", "Website", "Not disclosed", "Competes with"].forEach((label) =>
+    assert.match(rail, new RegExp(label))
   );
-  assert.doesNotMatch(hero, /Brand product reference/);
-  assert.doesNotMatch(hero, /See verified ownership analysis/);
-  assert.equal((hero.match(/Last verified/g) ?? []).length, 2, "shown once in the answer, or once in the profile line when there is no answer");
+  assert.doesNotMatch(hero + sections + rail, /Brand product reference/);
+  assert.doesNotMatch(hero + sections + rail, /See verified ownership analysis/);
 });
-
 test("brand visual primitives preserve logo geometry and semantic figures", () => {
   const logo = read("components/brands/BrandLogo.tsx");
   const visual = read("components/brands/BrandVisual.tsx");
@@ -417,35 +411,19 @@ test("brand data table caption is visually hidden without leaving the accessibil
   assert.doesNotMatch(table, /<caption[^>]*(?:hidden|display:\s*"none")/);
 });
 
-test("brand sections pair structured tables with each configured visual placement", () => {
+test("company page cards: ownership chain, product images, operations and buyer checks", () => {
   const sections = read("components/brands/BrandSections.tsx");
 
   assert.match(sections, /selectBrandContentVisuals\(profile\.contentVisuals\)/);
-  assert.match(sections, /partitionFeaturedLeadership\(\s*profile\.leadership\s*\)/);
-  assert.match(sections, /<BrandFounderCard leader=\{featuredLeader\}/);
-  assert.match(sections, /buildLeadershipRows\(tableLeaders\)/);
-  [
-    "ownership",
-    "portfolio",
-    "operations",
-    "competition"
-  ].forEach((placement) => {
-    assert.match(
-      sections,
-      new RegExp(`visualByPlacement\\.get\\("${placement}"\\)`)
-    );
-  });
-  assert.match(sections, /caption="Leadership"/);
-  assert.match(sections, /caption="Product portfolio"/);
-  assert.match(sections, /caption="Manufacturing and supply-chain evidence"/);
-  assert.match(sections, /caption="Markets and channels evidence"/);
-  assert.match(sections, /buyerRelevance/);
-  assert.match(sections, /buyerCheck/);
-  assert.match(sections, /className="brand-competitor-links"/);
-  assert.doesNotMatch(sections, /function TextList/);
-  assert.doesNotMatch(sections, /guides-category-grid brand-section-grid/);
+  assert.match(sections, /visuals\.get\("operations"\)/);
+  assert.match(sections, /<ol className="bp-chain" aria-label="Ownership chain">/);
+  assert.match(sections, /className="bp-models"/);
+  assert.match(sections, /profile\.manufacturingSupplyChain\.slice\(0, 3\)/);
+  assert.match(sections, /profile\.marketsChannels\.slice\(0, 3\)/);
+  assert.match(sections, /<details className="bp-checks" open>/);
+  assert.match(sections, /buildBuyerChecks\(profile\)/);
+  assert.match(sections, /className="bp-competitors"/);
 });
-
 test("brand section helpers keep first unique visuals and provide an empty-leadership row", async () => {
   let helpers;
 
@@ -1043,7 +1021,9 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
   const timeline = read("components/brands/BrandTimeline.tsx");
   const articles = read("components/brands/BrandArticles.tsx");
   const sources = read("components/brands/BrandSources.tsx");
+  const rail = read("components/brands/BrandFactRail.tsx");
   const articleBrandLinks = read("components/ArticleBrandLinks.tsx");
+  const styles = read("app/styles/brand-profile.css");
 
   assert.match(directoryRoute, /className="company-directory-page"/);
   assert.match(directoryRoute, /<CompanyDirectory\b/);
@@ -1055,42 +1035,30 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
   assert.match(directoryCard, /<details className="brand-card-details">[\s\S]*<p>\{profile\.description\}<\/p><\/details>/);
 
   assert.match(detailRoute, /className="guides-hub brand-hub brand-detail approved-catalog"/);
-  assert.match(hero, /className="brand-profile-hero"/);
-  assert.match(hero, /className="brand-hero-media"/);
-  assert.match(hero, /className="brand-hero-identity"/);
-  assert.match(hero, /className="brand-key-facts"/);
-  assert.match(hero, /<dl className="brand-fact-cards" aria-label="Key facts">/);
-  assert.match(
-    hero,
-    /className="brand-profile-hero"[\s\S]*\{profile\.heroImage \? \([\s\S]*<img/
-  );
   assert.match(detailRoute, /import "\.\.\/\.\.\/styles\/brand-profile\.css";/);
-  assert.match(sections, /className="brand-content-sections"/);
-  assert.match(sections, /className="brand-content-section"/);
-  assert.match(
-    sections,
-    /className="brand-section-layout brand-section-layout--operations"/
-  );
-  assert.match(sections, /<BrandDataTable/);
+  assert.match(hero, /className="bp-band"/);
+  assert.match(hero, /className="brand-hero-identity"/);
+  assert.match(sections, /className="bp-card brand-content-section"/);
   assert.match(sections, /<BrandVisual/);
-  assert.match(timeline, /<ol className="brand-timeline">/);
-  assert.match(
-    articles,
-    /const gridClassName = `guide-category-list brand-article-grid \$\{[\s\S]*brand-article-grid--balanced[\s\S]*className=\{gridClassName\}/
-  );
-  assert.match(sources, /<section className="section brand-sources" id="sources">/);
+  assert.match(timeline, /<ol className="brand-timeline bp-timeline">/);
+  assert.match(articles, /className="bp-articles"/);
+  assert.match(sources, /<section className="bp-card brand-sources" id="sources"/);
+  assert.match(sources, /<details className="bp-sources">/);
+  assert.match(rail, /<aside className="bp-rail"/);
   assert.match(articleBrandLinks, /className="article-brand-links"/);
+  for (const selector of [".bp-band", ".bp-body", ".bp-card", ".bp-chain", ".bp-models", ".bp-ops", ".bp-checks", ".bp-timeline", ".bp-articles", ".bp-sources", ".bp-rail", ".bp-facts"]) {
+    assert.ok(styles.includes(selector), selector);
+  }
 });
-
-test("brand detail layout uses compact operations, navigation, and full-size visual affordances", () => {
+test("brand detail layout uses a sticky section nav, a sticky fact sheet and one column on phones", () => {
   const hero = read("components/brands/BrandHero.tsx");
   const sections = read("components/brands/BrandSections.tsx");
   const visual = read("components/brands/BrandVisual.tsx");
-  const styles = brandStylesSource;
-  const brandStyles = styles.slice(styles.indexOf("/* Brand intelligence hub */"));
+  const styles = read("app/styles/brand-profile.css");
 
   assert.match(hero, /className="brand-section-nav brand-section-nav--sticky"/);
   [
+    "#overview",
     "#company-ownership",
     "#product-portfolio",
     "#manufacturing-channels",
@@ -1101,30 +1069,21 @@ test("brand detail layout uses compact operations, navigation, and full-size vis
   ].forEach((href) => assert.match(hero, new RegExp(`href="${href}"`)));
 
   [
+    'id="overview"',
     'id="company-ownership"',
     'id="product-portfolio"',
     'id="manufacturing-channels"',
     'id="competitive-position"'
   ].forEach((id) => assert.match(sections, new RegExp(id)));
 
-  assert.match(
-    brandStyles,
-    /\.brand-section-layout--operations\s*\{[^}]*display:\s*grid/
-  );
-  assert.match(
-    brandStyles,
-    /\.brand-section-layout--operations \.brand-section-tables\s*\{[^}]*order:\s*2/
-  );
-  assert.match(
-    brandStyles,
-    /\.brand-section-layout--operations \.brand-visual\s*\{[^}]*order:\s*1/
-  );
+  assert.match(styles, /\.bp-body \{ display: grid; grid-template-columns: minmax\(0, 1fr\) 320px;/);
+  assert.match(styles, /\.bp-rail \{ position: sticky;/);
+  assert.match(styles, /\.bp-main, [^{]*\.bp-rail \{ display: contents; \}/);
   assert.match(
     visual,
     /<a[\s\S]*className="brand-visual-link"[\s\S]*target="_blank"/
   );
 });
-
 test("brand and article routes rely on the root layout main landmark", () => {
   [
     "app/brands/page.tsx",
