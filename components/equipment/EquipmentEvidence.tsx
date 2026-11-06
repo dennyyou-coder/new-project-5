@@ -14,13 +14,18 @@ export function EquipmentSourceLinks({ sourceIds }: { sourceIds: string[] }) {
   );
 }
 
+/**
+ * One compact line under each claim: a meaningful applicability note (short
+ * labels such as "Exact model." add nothing) and the source links. The
+ * verification date is the same for the whole profile and is shown once in the
+ * header and the source list.
+ */
 export function EquipmentEvidenceMeta({ item }: { item: EquipmentEvidence }) {
+  const scope = item.scope.trim();
   return (
-    <div className="equipment-evidence-meta">
-      <p><strong>Evidence</strong>{item.evidence}</p>
-      <p><strong>Scope</strong>{item.scope}</p>
-      <p><strong>Verified</strong>{item.verifiedAt}</p>
-      <p><strong>Sources</strong><EquipmentSourceLinks sourceIds={item.sourceIds} /></p>
-    </div>
+    <p className="equipment-evidence-meta">
+      {scope.length >= 30 ? <span className="evidence-scope">{scope}</span> : null}
+      <span className="evidence-sources">Sources: <EquipmentSourceLinks sourceIds={item.sourceIds} /></span>
+    </p>
   );
 }

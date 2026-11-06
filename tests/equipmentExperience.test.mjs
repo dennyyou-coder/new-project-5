@@ -80,10 +80,9 @@ test("shared equipment sections derive labels from the active profile", () => {
 test("technical sections visibly separate evidence, WCB assessment and compatibility boundaries", () => {
   const technical = read("components/equipment/EquipmentTechnicalSections.tsx");
   const evidence = read("components/equipment/EquipmentEvidence.tsx");
-  assert.match(evidence, />Evidence</);
-  assert.match(evidence, />Scope</);
-  assert.match(evidence, />Verified</);
-  assert.match(evidence, />Sources</);
+  // One compact line per claim: a meaningful scope note plus source links.
+  assert.match(evidence, /scope\.length >= 30/);
+  assert.match(evidence, /Sources: <EquipmentSourceLinks/);
   assert.match(technical, /WCB assessment/);
   assert.match(technical, /Buyer action/);
   assert.match(technical, /No component link or cross-model compatibility is claimed/);

@@ -46,7 +46,10 @@ test("technical UI separates evidence assessment and compatibility boundaries", 
   const compatibility = read("components/component-intelligence/ComponentCompatibility.tsx");
   const service = read("components/component-intelligence/ComponentServiceSections.tsx");
   const technical = read("components/component-intelligence/ComponentTechnicalSections.tsx");
-  for (const label of [">Evidence<", ">Scope<", ">Verified<", ">Sources<"]) assert.match(evidence, new RegExp(label));
+  // One compact line per claim: a meaningful scope note plus source links.
+  assert.match(evidence, /scope\.length >= 30/);
+  assert.match(evidence, /Sources: /);
+  assert.match(evidence, /href=\{`#source-\$\{id\}`\}/);
   assert.match(technical, /WCB assessment/);
   assert.match(compatibility, /Physical resemblance/);
   assert.match(compatibility, /matching wattage/);
