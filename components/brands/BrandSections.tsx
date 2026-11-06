@@ -144,14 +144,26 @@ export function BrandSections({
           <ul className="bp-people" aria-label="Leadership">
             {profile.leadership.map((person) => (
               <li key={person.name}>
-                <span className="bp-person-photo bp-person-photo--monogram" aria-hidden="true">{brandMonogram(person.name)}</span>
+                {person.portrait ? (
+                  <Image className="bp-person-photo" src={person.portrait.src} alt={person.portrait.alt} width={128} height={128} sizes="64px" style={{ objectPosition: person.portrait.objectPosition || "center top" }} />
+                ) : (
+                  <span className="bp-person-photo bp-person-photo--monogram" aria-hidden="true">{brandMonogram(person.name)}</span>
+                )}
                 <span><b>{person.name}</b><small>{person.role}</small></span>
               </li>
             ))}
           </ul>
         ) : null}
-        {leader?.portrait ? (
-          <p className="bp-credit">Photo: <a href={leader.portrait.sourceUrl} target="_blank" rel="noopener noreferrer">{leader.portrait.credit}</a></p>
+        {profile.leadership.some((person) => person.portrait) ? (
+          <p className="bp-credit">
+            Photos:{" "}
+            {profile.leadership.filter((person) => person.portrait).map((person, index) => (
+              <span key={person.name}>
+                {index > 0 ? "; " : ""}
+                {person.name}: <a href={person.portrait!.sourceUrl} target="_blank" rel="noopener noreferrer">{person.portrait!.credit}</a>
+              </span>
+            ))}
+          </p>
         ) : null}
       </Card>
 

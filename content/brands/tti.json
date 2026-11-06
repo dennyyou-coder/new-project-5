@@ -2,7 +2,11 @@
   "status": "published",
   "slug": "tti",
   "name": "TTI",
-  "aliases": ["Techtronic Industries", "Techtronic Industries Company Limited", "Techtronic"],
+  "aliases": [
+    "Techtronic Industries",
+    "Techtronic Industries Company Limited",
+    "Techtronic"
+  ],
   "legalName": "Techtronic Industries Company Limited",
   "legalEntityNote": "TTI is the Hong Kong-listed group behind MILWAUKEE, RYOBI-branded tools, HOOVER in North America, DIRT DEVIL, ORECK, VAX and other brands. RYOBI and AEG are used under brand licences, and the HOOVER name outside North America belongs to a different group. Operating subsidiaries, regional distributors and warranty entities can differ for each product and market.",
   "schemaEntityType": "Organization",
@@ -39,17 +43,38 @@
     {
       "name": "Horst Julius Pudwill",
       "role": "Founder and Executive Chairman",
-      "context": "TTI's history page records that Horst Pudwill founded the company in 1985 with Prof Roy Chi Ping Chung; he signed the 2025 annual report's Executive Chairman's Statement."
+      "context": "TTI's history page records that Horst Pudwill founded the company in 1985 with Prof Roy Chi Ping Chung; he signed the 2025 annual report's Executive Chairman's Statement.",
+      "portrait": {
+        "src": "/images/brands/tti/leader-horst-pudwill.webp",
+        "alt": "Horst Julius Pudwill, founder and executive chairman of TTI",
+        "credit": "TTI Annual Report 2025 portrait; cropped by World Clean Biz",
+        "sourceUrl": "https://www.ttigroup.com/documents/annual-report-2025/assets/images/_portraits/chairman.jpg",
+        "objectPosition": "center top"
+      }
     },
     {
       "name": "Stephan Pudwill",
       "role": "Executive Vice Chairman",
-      "context": "Named as Executive Vice Chairman in the Chief Executive Officer's message in the 2025 annual report."
+      "context": "Named as Executive Vice Chairman in the Chief Executive Officer's message in the 2025 annual report.",
+      "portrait": {
+        "src": "/images/brands/tti/leader-stephan-pudwill.webp",
+        "alt": "Stephan Pudwill, executive vice chairman of TTI",
+        "credit": "TTI board portrait; cropped by World Clean Biz",
+        "sourceUrl": "https://www.ttigroup.com/sites/default/files/styles/max_2600x2600/public/2024-03/Stephan_Horst_Pudwill.jpg.webp?itok=Airm2zO_",
+        "objectPosition": "center top"
+      }
     },
     {
       "name": "Steven P. Richman",
       "role": "Chief Executive Officer",
-      "context": "Signed the Chief Executive Officer's message in the 2025 annual report, dated 3 March 2026."
+      "context": "Signed the Chief Executive Officer's message in the 2025 annual report, dated 3 March 2026.",
+      "portrait": {
+        "src": "/images/brands/tti/leader-steven-richman.webp",
+        "alt": "Steven P. Richman, chief executive officer of TTI",
+        "credit": "TTI Annual Report 2025 portrait; cropped by World Clean Biz",
+        "sourceUrl": "https://www.ttigroup.com/documents/annual-report-2025/assets/images/_portraits/ceo.jpg",
+        "objectPosition": "center top"
+      }
     }
   ],
   "productPortfolio": [
@@ -100,62 +125,87 @@
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: TTI competes in professional tools mainly through MILWAUKEE and in cordless tools and outdoor equipment for a wider range of users through RYOBI, while its floorcare brands face a weaker market and were reorganised in 2025. For buyers, the key step is to move from the group name to the specific brand, licence and regional operating company.",
-    "competitorSlugs": ["dewalt", "makita", "bosch-power-tools", "shark", "bissell"]
+    "competitorSlugs": [
+      "dewalt",
+      "makita",
+      "bosch-power-tools",
+      "shark",
+      "bissell"
+    ]
   },
   "developments": [
     {
       "date": "2026-03-03",
       "title": "TTI reports 2025 results",
       "summary": "Revenue rose 4.4% to US$15,260 million and profit attributable to owners rose 6.8% to US$1,198 million; Power Equipment sales reached US$14.4 billion while Floorcare & Cleaning sales fell 9.7%.",
-      "sourceIds": ["tti-ar-2025", "tti-ar-2025-mdna"]
+      "sourceIds": [
+        "tti-ar-2025",
+        "tti-ar-2025-mdna"
+      ]
     },
     {
       "date": "2019",
       "title": "TTI joins the Hang Seng Index",
       "summary": "TTI (stock code 669) became one of the fifty constituent stocks of the Hang Seng Index.",
-      "sourceIds": ["tti-history"]
+      "sourceIds": [
+        "tti-history"
+      ]
     },
     {
       "date": "2013",
       "title": "TTI acquires ORECK",
       "summary": "TTI acquired the ORECK brand and floorcare business.",
-      "sourceIds": ["tti-history"]
+      "sourceIds": [
+        "tti-history"
+      ]
     },
     {
       "date": "2007",
       "title": "TTI acquires HOOVER floorcare",
       "summary": "TTI acquired the HOOVER brand and floorcare business, and the STILETTO hand tool brand.",
-      "sourceIds": ["tti-history"]
+      "sourceIds": [
+        "tti-history"
+      ]
     },
     {
       "date": "2005",
       "title": "TTI acquires MILWAUKEE",
       "summary": "TTI acquired MILWAUKEE, an AEG brand licence and DreBo for power tools and accessories.",
-      "sourceIds": ["tti-history"]
+      "sourceIds": [
+        "tti-history"
+      ]
     },
     {
       "date": "2003",
       "title": "TTI acquires ROYAL and DIRT DEVIL",
       "summary": "TTI acquired the ROYAL and DIRT DEVIL floorcare brands and businesses.",
-      "sourceIds": ["tti-history"]
+      "sourceIds": [
+        "tti-history"
+      ]
     },
     {
       "date": "1999",
       "title": "TTI acquires VAX",
       "summary": "TTI acquired the VAX brand and floorcare business.",
-      "sourceIds": ["tti-history"]
+      "sourceIds": [
+        "tti-history"
+      ]
     },
     {
       "date": "1990",
       "title": "TTI lists in Hong Kong",
       "summary": "TTI listed on the Stock Exchange of Hong Kong under stock code 669.",
-      "sourceIds": ["tti-history"]
+      "sourceIds": [
+        "tti-history"
+      ]
     },
     {
       "date": "1985",
       "title": "TTI is founded",
       "summary": "Horst Pudwill founded Techtronic Industries with Prof Roy Chi Ping Chung.",
-      "sourceIds": ["tti-history"]
+      "sourceIds": [
+        "tti-history"
+      ]
     }
   ],
   "sources": [

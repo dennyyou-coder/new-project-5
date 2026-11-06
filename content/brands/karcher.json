@@ -2,7 +2,12 @@
   "status": "published",
   "slug": "karcher",
   "name": "Kärcher",
-  "aliases": ["Kaercher", "Karcher", "Alfred Kärcher", "Kärcher Professional"],
+  "aliases": [
+    "Kaercher",
+    "Karcher",
+    "Alfred Kärcher",
+    "Kärcher Professional"
+  ],
   "legalName": "Alfred Kärcher SE & Co. KG",
   "legalEntityNote": "Alfred Kärcher SE & Co. KG is the principal German operating entity and Kärcher SE is its general partner. Regional subsidiaries, product businesses and sales entities have separate responsibilities.",
   "officialWebsite": "https://www.kaercher.com/int/",
@@ -46,7 +51,14 @@
     {
       "name": "Hartmut Jenner",
       "role": "CEO and Chairman of the Management Board",
-      "context": "Kärcher's international imprint identifies Hartmut Jenner as CEO and chairman of the management board."
+      "context": "Kärcher's international imprint identifies Hartmut Jenner as CEO and chairman of the management board.",
+      "portrait": {
+        "src": "/images/brands/karcher/leader-hartmut-jenner.webp",
+        "alt": "Hartmut Jenner, CEO of Kärcher",
+        "credit": "Kärcher official portrait; cropped by World Clean Biz",
+        "sourceUrl": "https://www.karcher.com/de/de/unternehmen/compliance-und-integritaet",
+        "objectPosition": "center top"
+      }
     },
     {
       "name": "Franziska Kärcher",
@@ -112,7 +124,11 @@
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Kärcher's advantage is the combination of a globally recognized consumer brand with deep professional, industrial and municipal cleaning capabilities. That breadth supports cross-category accounts and service-led relationships. Its principal buyer-side complexity is organizational: yellow consumer products, professional fleets, regional companies, factories and specialist group brands do not always share the same commercial route. The strongest purchasing process therefore pairs brand confidence with model-, entity- and service-level verification.",
-    "competitorSlugs": ["miele", "hoover", "bissell"]
+    "competitorSlugs": [
+      "miele",
+      "hoover",
+      "bissell"
+    ]
   },
   "developments": [
     {
@@ -135,25 +151,33 @@
       "date": "2026",
       "title": "Kärcher reports continued global scale",
       "summary": "The company reported 2025 revenue of EUR 3.483 billion, about 17,000 employees and operations through 170 companies in 87 countries.",
-      "sourceIds": ["karcher-company"]
+      "sourceIds": [
+        "karcher-company"
+      ]
     },
     {
       "date": "1959",
       "title": "Irene Kärcher continues the family business",
       "summary": "After Alfred Kärcher's death, Irene Kärcher led the company and developed its international growth.",
-      "sourceIds": ["karcher-about"]
+      "sourceIds": [
+        "karcher-about"
+      ]
     },
     {
       "date": "1950",
       "title": "Kärcher develops a European hot-water pressure cleaner",
       "summary": "The DS 350 steam-jet cleaner established the high-pressure cleaning platform associated with the brand.",
-      "sourceIds": ["karcher-about"]
+      "sourceIds": [
+        "karcher-about"
+      ]
     },
     {
       "date": "1935",
       "title": "Alfred Kärcher establishes the company",
       "summary": "Alfred Kärcher founded the enterprise in Stuttgart-Bad Cannstatt before it later moved to Winnenden.",
-      "sourceIds": ["karcher-about"]
+      "sourceIds": [
+        "karcher-about"
+      ]
     }
   ],
   "sources": [
