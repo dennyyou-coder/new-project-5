@@ -12,7 +12,8 @@ import {
   buildBrandQuickAnswer,
   buildBuyerChecks,
   buildCompetitiveView,
-  firstSentence
+  firstSentence,
+  splitSentences
 } from "@/lib/brandProfileView";
 import { formatBrandDate } from "@/lib/brandDates";
 
@@ -31,10 +32,6 @@ function Card({ id, title, icon, action, children }: { id: string; title: string
   );
 }
 
-/** Splits text into sentences so the overview and the WCB view do not repeat each other. */
-function sentences(text: string): string[] {
-  return text.match(/[^.!?]+[.!?]+(\s|$)/g)?.map((part) => part.trim()) ?? [text];
-}
 
 export function BrandSections({
   profile,
@@ -56,11 +53,11 @@ export function BrandSections({
   const ownershipVisual = visuals.get("ownership");
   const portfolioVisual = visuals.get("portfolio");
   const competitionVisual = visuals.get("competition");
-  const ownershipSentences = sentences(profile.ownership.summary);
+  const ownershipSentences = splitSentences(profile.ownership.summary);
   const ownershipLead = ownershipSentences.slice(0, 2).join(" ");
   const ownershipRest = ownershipSentences.slice(2).join(" ");
   const quickAnswer = buildBrandQuickAnswer(profile);
-  const view = sentences(buildCompetitiveView(profile));
+  const view = splitSentences(buildCompetitiveView(profile));
   const written = buildBrandOverview(profile);
   // Without a written overview, the first two sentences of the WCB view open the page.
   const overview = written ?? view.slice(0, 2).join(" ");
@@ -68,6 +65,9 @@ export function BrandSections({
   const legalEntity = normalizeOptionalBrandText(profile.legalName);
   const leader = profile.leadership[0];
   const checks = buildBuyerChecks(profile);
+  // The chain already shows the first leader when there is no parent company.
+  const chainLeader = !parentMark && leader ? leader : undefined;
+  const otherLeaders = profile.leadership.filter((person) => person !== chainLeader);
 
   // Ownership chain: parent or leader → operating company → brand.
   const chain: Array<{ key: string; label: string; node: ReactNode }> = [];
@@ -137,34 +137,34 @@ export function BrandSections({
                 <p className="bp-text">{ownershipRest}</p>
               </details>
             ) : null}
+            {otherLeaders.length && profile.leadership.length > 1 ? (
+              <ul className="bp-people" aria-label="Leadership">
+                {otherLeaders.map((person) => (
+                  <li key={person.name}>
+                    {person.portrait ? (
+                      <Image className="bp-person-photo" src={person.portrait.src} alt={person.portrait.alt} width={128} height={128} sizes="64px" style={{ objectPosition: person.portrait.objectPosition || "center top" }} />
+                    ) : (
+                      <span className="bp-person-photo bp-person-photo--monogram" aria-hidden="true">{brandMonogram(person.name)}</span>
+                    )}
+                    <span><b>{person.name}</b><small>{person.role}</small></span>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+            {profile.leadership.some((person) => person.portrait) ? (
+              <p className="bp-credit">
+                Photos:{" "}
+                {profile.leadership.filter((person) => person.portrait).map((person, index) => (
+                  <span key={person.name}>
+                    {index > 0 ? "; " : ""}
+                    {person.name}: <a href={person.portrait!.sourceUrl} target="_blank" rel="noopener noreferrer">{person.portrait!.credit}</a>
+                  </span>
+                ))}
+              </p>
+            ) : null}
           </div>
           {ownershipVisual ? <BrandVisual visual={ownershipVisual} /> : null}
         </div>
-        {profile.leadership.length > 1 ? (
-          <ul className="bp-people" aria-label="Leadership">
-            {profile.leadership.map((person) => (
-              <li key={person.name}>
-                {person.portrait ? (
-                  <Image className="bp-person-photo" src={person.portrait.src} alt={person.portrait.alt} width={128} height={128} sizes="64px" style={{ objectPosition: person.portrait.objectPosition || "center top" }} />
-                ) : (
-                  <span className="bp-person-photo bp-person-photo--monogram" aria-hidden="true">{brandMonogram(person.name)}</span>
-                )}
-                <span><b>{person.name}</b><small>{person.role}</small></span>
-              </li>
-            ))}
-          </ul>
-        ) : null}
-        {profile.leadership.some((person) => person.portrait) ? (
-          <p className="bp-credit">
-            Photos:{" "}
-            {profile.leadership.filter((person) => person.portrait).map((person, index) => (
-              <span key={person.name}>
-                {index > 0 ? "; " : ""}
-                {person.name}: <a href={person.portrait!.sourceUrl} target="_blank" rel="noopener noreferrer">{person.portrait!.credit}</a>
-              </span>
-            ))}
-          </p>
-        ) : null}
       </Card>
 
       <Card
@@ -220,21 +220,23 @@ export function BrandSections({
 
       <Card id="competitive-position" title="Competition" icon="bar-chart">
         <div className={competitionVisual ? "bp-split" : undefined}>
-          {viewRest ? <p className="bp-text"><b>WCB view:</b> {viewRest}</p> : <span />}
+          <div>
+            {viewRest ? <p className="bp-text"><b>WCB view:</b> {viewRest}</p> : null}
+            {competitors.length ? (
+              <div className={`bp-competitors${competitors.length % 3 === 0 ? "" : " bp-competitors--pairs"}`}>
+                {competitors.map((competitor) => (
+                  <div key={competitor.mark.slug ?? competitor.mark.name} className="bp-competitor">
+                    <CompanyMark mark={competitor.mark} size="md" />
+                    <b>{competitor.mark.name}</b>
+                    {competitor.caption ? <small>{competitor.caption}</small> : null}
+                    <Link href={competitor.href}>{competitor.linkLabel} →</Link>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+          </div>
           {competitionVisual ? <BrandVisual visual={competitionVisual} /> : null}
         </div>
-        {competitors.length ? (
-          <div className="bp-competitors">
-            {competitors.map((competitor) => (
-              <div key={competitor.mark.slug ?? competitor.mark.name} className="bp-competitor">
-                <CompanyMark mark={competitor.mark} size="md" />
-                <b>{competitor.mark.name}</b>
-                {competitor.caption ? <small>{competitor.caption}</small> : null}
-                <Link href={competitor.href}>{competitor.linkLabel} →</Link>
-              </div>
-            ))}
-          </div>
-        ) : null}
       </Card>
     </>
   );
