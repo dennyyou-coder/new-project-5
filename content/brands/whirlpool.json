@@ -40,7 +40,14 @@
     {
       "name": "Marc Bitzer",
       "role": "Chairman and Chief Executive Officer, Whirlpool Corporation",
-      "context": "Named in Whirlpool Corporation's 2025 Annual Report; this is corporate leadership rather than a separate Whirlpool-brand legal entity."
+      "context": "Named in Whirlpool Corporation's 2025 Annual Report; this is corporate leadership rather than a separate Whirlpool-brand legal entity.",
+      "portrait": {
+        "src": "/images/brands/whirlpool/leader-marc-bitzer.webp",
+        "alt": "Marc Bitzer, chairman and CEO of Whirlpool Corporation",
+        "credit": "Whirlpool Corporation leadership headshot; cropped by World Clean Biz",
+        "sourceUrl": "https://www.whirlpoolcorp.com/content/dam/business-unit/whirlpoolcorp/wp-content/leadership/Marc_Bitzer_headshot.jpg",
+        "objectPosition": "center top"
+      }
     }
   ],
   "productPortfolio": [
@@ -176,5 +183,5 @@
   ],
   "publishedAt": "2026-08-06T14:30:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T14:30:00+08:00"
+  "lastModified": "2026-11-05T22:00:00+08:00"
 }
