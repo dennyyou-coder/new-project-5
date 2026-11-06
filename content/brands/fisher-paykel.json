@@ -42,7 +42,14 @@
     {
       "name": "Daniel Witten-Hannah",
       "role": "Chief Executive Officer, Fisher & Paykel Appliances",
-      "context": "Identified as CEO in the company’s 30 July 2026 Auckland campus announcement."
+      "context": "Identified as CEO in the company’s 30 July 2026 Auckland campus announcement.",
+      "portrait": {
+        "src": "/images/brands/fisher-paykel/leader-daniel-witten-hannah.webp",
+        "alt": "Daniel Witten-Hannah, chief executive officer of Fisher & Paykel Appliances",
+        "credit": "Fisher & Paykel “Our People” page portrait; cropped by World Clean Biz",
+        "sourceUrl": "https://www.fisherpaykel.com/uk/our-story/about-us/people/",
+        "objectPosition": "center top"
+      }
     }
   ],
   "productPortfolio": [
@@ -200,6 +207,6 @@
   ],
   "publishedAt": "2026-08-06T11:35:00+08:00",
   "lastVerified": "2026-09-12",
-  "lastModified": "2026-09-12T16:30:26+08:00",
+  "lastModified": "2026-11-05T23:00:00+08:00",
   "metaTitle": "Fisher & Paykel: Haier Ownership, Origin & Company Profile"
 }
