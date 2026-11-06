@@ -38,9 +38,9 @@
   },
   "leadership": [
     {
-      "name": "Jon Sintorn",
+      "name": "Karin Overbeck",
       "role": "CEO of Nilfisk",
-      "context": "Nilfisk's takeover-completion announcement identifies Jon Sintorn as CEO and says the company will continue as a standalone brand."
+      "context": "Nilfisk's 11 May 2026 announcement (no. 30) states that Karin Overbeck assumes the role of Chief Executive Officer, replacing Jon Sintorn, who resigned from the Executive Management."
     }
   ],
   "productPortfolio": [
@@ -113,6 +113,14 @@
       ]
     },
     {
+      "date": "2026-05-11",
+      "title": "Karin Overbeck becomes Nilfisk CEO",
+      "summary": "Nilfisk announced that CEO Jon Sintorn and CFO Carl Bandhold would resign from the Executive Management, with Karin Overbeck becoming CEO and Dominik Thoma CFO.",
+      "sourceIds": [
+        "nilfisk-exec-changes-2026"
+      ]
+    },
+    {
       "date": "2026-04-15",
       "title": "Nilfisk becomes part of Freudenberg",
       "summary": "Freudenberg completed the takeover after reaching approximately 94% acceptance and began compulsory acquisition and delisting steps.",
@@ -132,6 +140,14 @@
     }
   ],
   "sources": [
+    {
+      "id": "nilfisk-exec-changes-2026",
+      "title": "Nilfisk announces changes to the Executive Management (Announcement no. 30)",
+      "publisher": "Nilfisk Holding A/S via Inderes",
+      "url": "https://www.inderes.dk/en/releases/nilfisk-announces-changes-to-the-executive-management",
+      "publishedAt": "2026-05-11",
+      "accessedAt": "2026-11-05"
+    },
     {
       "id": "nilfisk-takeover",
       "title": "Nilfisk enters a new phase as part of Freudenberg",
@@ -179,5 +195,5 @@
   ],
   "publishedAt": "2026-07-31T15:30:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-10-18T11:12:39+08:00"
+  "lastModified": "2026-11-05T23:00:00+08:00"
 }

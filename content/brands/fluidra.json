@@ -24,7 +24,7 @@
     {"placement":"operations","src":"/images/blog/hayward-pentair-fluidra-buyer-responsibility-check.webp","alt":"Pool-equipment buyer responsibility comparison","caption":"The buyer check is to validate the local contracting entity, product serial range and service route."}
   ],
   "ownership":{"summary":"Fluidra, S.A. is a publicly listed pool and wellness group. Its corporate communications identify a portfolio that includes AstralPool, Zodiac, Jandy, Polaris, Gre, Cepex and CTXPro. Each mark should be distinguished from the group parent and the local seller or responsible entity for a particular product.","parentCompany":"Fluidra, S.A."},
-  "leadership":[{"name":"Eloi Planes","role":"Executive Chairman","context":"Fluidra's corporate materials identify Eloi Planes as Executive Chairman; current management roles should be checked against the latest annual report for transaction use."}],
+  "leadership":[{"name":"Eloi Planes","role":"Executive Chairman","context":"Fluidra's corporate materials identify Eloi Planes as Executive Chairman; current management roles should be checked against the latest annual report for transaction use.","portrait":{"src":"/images/brands/fluidra/leader-eloi-planes.webp","alt":"Eloi Planes, executive chairman of Fluidra","credit":"Fluidra board profile portrait; cropped by World Clean Biz","sourceUrl":"https://www.fluidra.com/person/eloy-planes-corts/","objectPosition":"center top"}}],
   "productPortfolio":[
     {"name":"Pool circulation, filtration and water treatment","positioning":"Core residential and commercial pool equipment across Fluidra brand and regional portfolios.","buyerRelevance":"Specify the approved brand, voltage, hydraulic specification and local technical support at quotation stage."},
     {"name":"Pool automation and connected systems","positioning":"Controls, monitoring and energy-management products under brands including Jandy and Zodiac.","buyerRelevance":"Confirm local app availability, installer support and compatibility with the existing pool pad."},
@@ -73,5 +73,5 @@
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-11-01T11:14:44+08:00"
+  "lastModified":"2026-11-05T23:00:00+08:00"
 }
