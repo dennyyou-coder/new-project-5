@@ -100,11 +100,11 @@ test("defines one tracked route for each Contact intent", () => {
 
 test("Sourcing presents the approved opportunity-led funnel", () => {
   const requiredMessages = [
-    "Free Product Opportunity Shortlist",
-    "How Denny Sees Opportunities Earlier",
-    "One Partner From Opportunity Discovery To Delivery",
-    "Denny Reviews. The Team Executes.",
-    "What New Cleaning Products Are Growing Fast?"
+    "Free product shortlist",
+    "How Denny spots opportunities early",
+    "One team from product idea to delivery",
+    "Denny reviews, the team carries it out",
+    "What new cleaning products are growing fast?"
   ];
 
   for (const message of requiredMessages) {
@@ -116,8 +116,8 @@ test("Sourcing presents the approved opportunity-led funnel", () => {
   assert.match(sourcingSource, /ctaLocation="sourcing_footer"/);
   assert.match(sourcingSource, /SOURCING_CATEGORIES\.map/);
   assert.match(opportunityCardSource, /href=\{item\.href\}/);
-  assert.match(sourcingSource, /Initial Response Within 8 Hours/);
-  assert.match(sourcingSource, /1–2 Business Days/);
+  assert.match(sourcingSource, /Initial response within 8 hours/);
+  assert.match(sourcingSource, /1–2 business days/);
   assert.doesNotMatch(sourcingSource, /A Better Brief Creates A Better Search/);
   assert.doesNotMatch(sourcingSource, /sourcing-v3-cta/);
 });
@@ -193,5 +193,5 @@ test("Sourcing grounds key sales sections with unified visual evidence", () => {
 
 test("Sourcing keeps product opportunities ahead of the founder explanation", () => {
   assert.match(sourcingSource, /Cleaning Product Sourcing/);
-  assert.ok(sourcingSource.indexOf('id="opportunity-areas"') < sourcingSource.indexOf('How Denny Sees Opportunities Earlier'));
+  assert.ok(sourcingSource.indexOf('id="opportunity-areas"') < sourcingSource.indexOf('How Denny spots opportunities early'));
 });

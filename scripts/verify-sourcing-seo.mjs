@@ -33,17 +33,17 @@ const robot = await readPage("/sourcing/robotic-vacuums");
 const commercial = await readPage("/sourcing/commercial-cleaning");
 const vacuum = await readPage("/sourcing/vacuum-cleaners");
 for (const value of [
-  "Choose the Market Opportunity Before You Choose the Factory",
-  "Explore the Product Opportunities",
-  "Test My Product Thesis",
+  "choose the market before the factory",
+  "See the product platforms",
+  "Discuss my product idea",
   "Inside the cleaning industry since 2006",
-  "Where the Six Product Platforms Compete",
-  "Four Decisions Before You Back a Platform"
+  "Where the six platforms compete",
+  "Four decisions before you back a platform"
 ]) {
   requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing ${value}`);
 }
 requireValue(
-  pool.html.includes("Choose the Market Opportunity Before You Choose the Factory"),
+  pool.html.includes("choose the market before the factory"),
   "/sourcing/pool-robots: missing decision-led hero"
 );
 requireValue(
@@ -52,23 +52,23 @@ requireValue(
 );
 
 const selectorSource = fs.readFileSync(path.join(process.cwd(), "components", "LawnRobotProductSelector.tsx"), "utf8");
-for (const value of ["Request Suppliers for", "Use My Own Product Brief", "Product {selectedIndex + 1} of", "productId={selected.id}"]) {
+for (const value of ["Request suppliers for", "Use my own product brief", "Product {selectedIndex + 1} of", "productId={selected.id}"]) {
   requireValue(selectorSource.includes(value), `selector: missing ${value}`);
 }
 
 const fullLandingSections = [
-  "Choose the Market Opportunity Before You Choose the Factory",
-  "Built for Buyers Deciding Where to Play in Robotic Mowers",
-  "Six Product Platforms. Six Different Market Opportunities.",
-  "Where the Six Product Platforms Compete",
-  "Which Channels Fit Each Product Platform?",
-  "Three Conditions That Decide Whether the Opportunity Can Scale",
+  "choose the market before the factory",
+  "For buyers deciding where to compete in robotic mowers",
+  "Six product platforms, six different markets",
+  "Where the six platforms compete",
+  "Which channels fit each platform?",
+  "Three conditions that decide whether it can scale",
   "Industry judgment behind the product decision",
-  "Four Decisions Before You Back a Platform",
+  "Four decisions before you back a platform",
   "Which robotic mower segment offers the strongest opportunity for new market entrants?",
-  "Turn a Market Opportunity Into a Product Brief",
-  "Evaluate My Product Opportunity",
-  "Related Intelligence"
+  "Turn a market opportunity into a product brief",
+  "Review my product brief",
+  "Related research"
 ];
 for (const value of fullLandingSections) {
   requireValue(lawn.html.includes(value), `/sourcing/lawn-robots: missing full landing section ${value}`);
@@ -79,7 +79,7 @@ requireValue(
   "/sourcing/lawn-robots: full landing sections are out of order"
 );
 requireValue(
-  !pool.html.includes("Built for Buyers Deciding Where to Play in Robotic Mowers"),
+  !pool.html.includes("For buyers deciding where to compete in robotic mowers"),
   "/sourcing/pool-robots: lawn buyer-fit content leaked"
 );
 
@@ -132,17 +132,17 @@ requireValue((lawn.html.match(/<details>/g) || []).length === 10, "/sourcing/law
 requireValue(!/<details open/.test(lawn.html), "/sourcing/lawn-robots: FAQ should be collapsed on initial load");
 
 const poolLandingSections = [
-  "Choose the Market Opportunity Before You Choose the Factory",
-  "Built for Buyers Deciding Where to Play in Pool Robotics",
-  "Six Product Platforms. Six Different Market Opportunities.",
-  "Where the Six Product Platforms Compete",
-  "Which Channels Fit Each Product Platform?",
-  "Three Conditions That Decide Whether the Opportunity Can Scale",
+  "choose the market before the factory",
+  "For buyers deciding where to compete in pool robotics",
+  "Six product platforms, six different markets",
+  "Where the six platforms compete",
+  "Which channels fit each platform?",
+  "Three conditions that decide whether it can scale",
   "Industry judgment behind the product decision",
-  "Four Decisions Before You Back a Platform",
-  "Turn a Market Opportunity Into a Product Brief",
-  "Evaluate My Product Opportunity",
-  "Related Intelligence"
+  "Four decisions before you back a platform",
+  "Turn a market opportunity into a product brief",
+  "Review my product brief",
+  "Related research"
 ];
 for (const value of poolLandingSections) {
   requireValue(pool.html.includes(value), `/sourcing/pool-robots: missing full landing section ${value}`);
@@ -151,15 +151,15 @@ requireValue((pool.html.match(/<details>/g) || []).length === 10, "/sourcing/poo
 requireValue(!/<details open/.test(pool.html), "/sourcing/pool-robots: FAQ should be collapsed on initial load");
 
 for (const value of [
-  "Built for Buyers Deciding Where to Play in Hard Floor Care",
-  "Six Product Platforms. Six Different Market Opportunities.",
-  "Where the Six Product Platforms Compete",
-  "Which Channels Fit Each Product Platform?",
-  "Three Conditions That Decide Whether the Opportunity Can Scale",
-  "Four Decisions Before You Back a Platform",
-  "Turn a Market Opportunity Into a Product Brief",
-  "Evaluate My Product Opportunity",
-  "Related Intelligence"
+  "For buyers deciding where to compete in hard floor care",
+  "Six product platforms, six different markets",
+  "Where the six platforms compete",
+  "Which channels fit each platform?",
+  "Three conditions that decide whether it can scale",
+  "Four decisions before you back a platform",
+  "Turn a market opportunity into a product brief",
+  "Review my product brief",
+  "Related research"
 ]) {
   requireValue(floor.html.includes(value), `/sourcing/floor-washers: missing full landing section ${value}`);
 }
@@ -167,16 +167,16 @@ requireValue((floor.html.match(/<details>/g) || []).length === 9, "/sourcing/flo
 requireValue(!/<details open/.test(floor.html), "/sourcing/floor-washers: FAQ should be collapsed on initial load");
 
 for (const value of [
-  "Built for Buyers Deciding Where to Play in Robot Vacuums",
-  "Six Product Platforms. Six Different Market Opportunities.",
-  "Where the Six Product Platforms Compete",
-  "Which Channels Fit Each Product Platform?",
-  "Three Conditions That Decide Whether the Opportunity Can Scale",
+  "For buyers deciding where to compete in robot vacuums",
+  "Six product platforms, six different markets",
+  "Where the six platforms compete",
+  "Which channels fit each platform?",
+  "Three conditions that decide whether it can scale",
   "Industry judgment behind the product decision",
-  "Four Decisions Before You Back a Platform",
-  "Turn a Market Opportunity Into a Product Brief",
-  "Evaluate My Product Opportunity",
-  "Related Intelligence"
+  "Four decisions before you back a platform",
+  "Turn a market opportunity into a product brief",
+  "Review my product brief",
+  "Related research"
 ]) {
   requireValue(robot.html.includes(value), `/sourcing/robotic-vacuums: missing full landing section ${value}`);
 }
@@ -187,16 +187,16 @@ for (const slug of ["robot-vacuum-cleaners-from-china", "roborock-at-a-crossroad
 }
 
 for (const value of [
-  "Choose the Facility Opportunity Before You Choose the Robot",
-  "Built for Buyers Deciding Where to Deploy Commercial Cleaning Robots",
-  "Six Product Platforms. Six Different Market Opportunities.",
-  "Where the Six Commercial Platforms Compete",
-  "Which Commercial Routes Fit Each Product Platform?",
-  "Three Conditions That Decide Whether a Deployment Can Scale",
-  "Four Decisions Before You Back a Commercial Platform",
-  "Turn a Facility Opportunity Into a Deployment Brief",
-  "Evaluate My Deployment Opportunity",
-  "Related Intelligence"
+  "choose the facility use case before the robot",
+  "For buyers deciding where to deploy commercial cleaning robots",
+  "Six product platforms, six different markets",
+  "Where the six platforms compete",
+  "Which commercial routes fit each platform?",
+  "Three conditions that decide whether a deployment can scale",
+  "Four decisions before you back a commercial platform",
+  "Turn a facility opportunity into a deployment brief",
+  "Review my deployment brief",
+  "Related research"
 ]) {
   requireValue(commercial.html.includes(value), `/sourcing/commercial-cleaning: missing full landing section ${value}`);
 }
@@ -204,16 +204,16 @@ requireValue((commercial.html.match(/<details>/g) || []).length === 9, "/sourcin
 requireValue(!/<details open/.test(commercial.html), "/sourcing/commercial-cleaning: FAQ should be collapsed on initial load");
 
 for (const value of [
-  "Choose the Market Opportunity Before You Choose the Factory",
-  "Built for Buyers Deciding Where to Play in Vacuum Cleaners",
-  "Six Product Platforms. Six Different Market Opportunities.",
-  "Where the Six Product Platforms Compete",
-  "Which Channels Fit Each Product Platform?",
-  "Three Conditions That Decide Whether the Opportunity Can Scale",
-  "Four Decisions Before You Back a Platform",
-  "Turn a Market Opportunity Into a Product Brief",
-  "Evaluate My Product Opportunity",
-  "Related Intelligence"
+  "choose the market before the factory",
+  "For buyers deciding where to compete in vacuum cleaners",
+  "Six product platforms, six different markets",
+  "Where the six platforms compete",
+  "Which channels fit each platform?",
+  "Three conditions that decide whether it can scale",
+  "Four decisions before you back a platform",
+  "Turn a market opportunity into a product brief",
+  "Review my product brief",
+  "Related research"
 ]) {
   requireValue(vacuum.html.includes(value), `/sourcing/vacuum-cleaners: missing full landing section ${value}`);
 }
