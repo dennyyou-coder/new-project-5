@@ -354,7 +354,7 @@ test("company page header, ownership answer and fact sheet", () => {
   assert.match(sections, /Who owns \{profile\.name\}\?/);
   assert.match(sections, /profile\.heroImage/);
   assert.match(rail, /<dl aria-label="Key facts">/);
-  assert.match(rail, /shown\.map\([\s\S]*<Icon name=\{icon\} \/>[\s\S]*<dt>\{label\}<\/dt>[\s\S]*<dd>\{value\}<\/dd>/);
+  assert.match(rail, /shown\.map\([\s\S]*<Icon name=\{icon\} \/>[\s\S]*<dt>\{label\}<\/dt>[\s\S]*<dd title=[^>]*>\{value\}<\/dd>/);
   ["Ownership", "Operating company", "Headquarters", "Founded", "Website", "Not disclosed", "Competes with"].forEach((label) =>
     assert.match(rail, new RegExp(label))
   );
@@ -420,7 +420,9 @@ test("company page cards: ownership chain, product images, operations and buyer 
   assert.match(sections, /className="bp-models"/);
   assert.match(sections, /profile\.manufacturingSupplyChain\.slice\(0, 3\)/);
   assert.match(sections, /profile\.marketsChannels\.slice\(0, 3\)/);
-  assert.match(sections, /<details className="bp-checks" open>/);
+  assert.match(sections, /<details className="bp-checks">/);
+  assert.match(sections, /visuals\.get\("ownership"\)/);
+  assert.match(sections, /Full ownership note/);
   assert.match(sections, /buildBuyerChecks\(profile\)/);
   assert.match(sections, /className="bp-competitors"/);
 });
