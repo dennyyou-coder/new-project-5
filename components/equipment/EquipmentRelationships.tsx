@@ -10,7 +10,6 @@ export function EquipmentRelationships({ profile }: { profile: EquipmentProfile 
     subtype: model.subtype,
     specifications: <ul>{model.distinguishingSpecifications.map((item) => <li key={item}>{item}</li>)}</ul>,
     scope: model.marketScope,
-    verified: model.verifiedAt,
     sources: <EquipmentSourceLinks sourceIds={model.sourceIds} />
   }));
 
@@ -34,7 +33,6 @@ export function EquipmentRelationships({ profile }: { profile: EquipmentProfile 
               { key: "subtype", label: "Subtype" },
               { key: "specifications", label: "Official specification reference" },
               { key: "scope", label: "Market scope" },
-              { key: "verified", label: "Verified" },
               { key: "sources", label: "Source" }
             ]}
             rows={rows}

@@ -64,7 +64,6 @@ export function EquipmentTechnicalSections({ profile }: { profile: EquipmentProf
                   <span>WCB assessment</span>
                   <p>{item.wcbAssessment}</p>
                   <dl>
-                    <div><dt>Basis</dt><dd>{item.basis}</dd></div>
                     <div><dt>Limitations</dt><dd>{item.limitations}</dd></div>
                     <div><dt>Buyer action</dt><dd>{item.buyerAction}</dd></div>
                   </dl>

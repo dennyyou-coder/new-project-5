@@ -20,7 +20,6 @@ export function EquipmentDecisionSections({ profile }: { profile: EquipmentProfi
                   <div><dt>Verify</dt><dd>{item.attributeToVerify}</dd></div>
                   <div><dt>Comparison trap</dt><dd>{item.comparisonTrap}</dd></div>
                   <div><dt>Assessment</dt><dd>{item.assessment}</dd></div>
-                  <div><dt>Basis</dt><dd>{item.basis}</dd></div>
                   <div><dt>Limitations</dt><dd>{item.limitations}</dd></div>
                   <div><dt>Buyer action</dt><dd>{item.buyerAction}</dd></div>
                   {item.engineeringCheck ? <div><dt>Engineering check</dt><dd>{item.engineeringCheck}</dd></div> : null}
