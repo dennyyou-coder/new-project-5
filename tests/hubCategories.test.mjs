@@ -102,13 +102,16 @@ test("hub pages are in the discovery sitemap and each has content to show", asyn
   }
 });
 
-test("search picks are editorial articles in their own hub and lead Essential reading", async () => {
+test("search picks belong to their hub and lead Essential reading or Guides", async () => {
   const { getAllHubCategoryData } = await import("../lib/hubCategoryContent.ts");
   for (const data of getAllHubCategoryData()) {
     const picks = data.hub.searchPicks ?? [];
-    for (const slug of picks) {
-      assert.ok(data.analysis.some((article) => article.slug === slug), `${data.hub.slug}: ${slug} must be an analysis article in the hub`);
-    }
-    assert.deepEqual(data.essential.slice(0, picks.length).map((article) => article.slug), picks, `${data.hub.slug} picks first`);
+    const analysisPicks = picks.filter((slug) => data.analysis.some((article) => article.slug === slug));
+    const guidePicks = picks.filter((slug) => data.guides.some((article) => article.slug === slug));
+    assert.equal(analysisPicks.length + guidePicks.length, picks.length, `${data.hub.slug}: every pick is an article in the hub`);
+    assert.deepEqual(data.essential.slice(0, analysisPicks.length).map((article) => article.slug), analysisPicks, `${data.hub.slug} analysis picks first`);
+    assert.deepEqual(data.guides.slice(0, guidePicks.length).map((article) => article.slug), guidePicks, `${data.hub.slug} guide picks first`);
+    const rest = data.guides.slice(guidePicks.length);
+    assert.ok(rest.every((guide, index) => index === 0 || rest[index - 1].guidePriority >= guide.guidePriority), `${data.hub.slug} other guides by priority`);
   }
 });

@@ -48,7 +48,6 @@ export function buildHubCategoryData(
 
   const hubInsights = inHub(source.insights, hubCategoriesForInsight);
   const analysis = getEditorialInsights(hubInsights).filter((article) => !article.series);
-  const guides = getGuideInsights(hubInsights);
   const news = inHub(source.news, hubCategoriesForNews);
   const products = inHub(source.products, hubCategoriesForProduct);
   const newModels = products.filter((product) => product.launchYear === productSelectionYear);
@@ -62,9 +61,21 @@ export function buildHubCategoryData(
 
   // Search-data picks first, then editor-marked articles; the module is
   // hidden when there are none.
-  const picks = (hub.searchPicks ?? [])
-    .map((slug) => analysis.find((article) => article.slug === slug))
-    .filter((article): article is Insight => Boolean(article));
+  // A pick leads whichever module it belongs to: analysis picks lead
+  // Essential reading, guide picks lead Guides.
+  const pickFrom = (articles: Insight[]) =>
+    (hub.searchPicks ?? [])
+      .map((slug) => articles.find((article) => article.slug === slug))
+      .filter((article): article is Insight => Boolean(article));
+  const picks = pickFrom(analysis);
+  const allGuides = getGuideInsights(hubInsights);
+  const guidePicks = pickFrom(allGuides);
+  const guides = [
+    ...guidePicks,
+    ...allGuides
+      .filter((guide) => !guidePicks.includes(guide))
+      .sort((a, b) => b.guidePriority - a.guidePriority)
+  ];
   const editorMarked = analysis
     .filter((article) => (article.featured || article.visualPriority > 0) && !picks.includes(article))
     .sort((a, b) => b.visualPriority - a.visualPriority || b.sortDate.localeCompare(a.sortDate));

@@ -44,9 +44,8 @@ export type HubCategory = {
   rules: HubRules;
   /**
    * Analysis articles listed first under "Essential reading", chosen by Google
-   * Search clicks: Search Console pages report for 2026-07-07 to 2026-10-06
-   * (top 10 pages) and the full pages export for 2026-08-13 to 2026-09-09.
-   * Only set where the data shows a clear lead.
+   * Search clicks: Search Console pages report for 2026-08-04 to 2026-11-03
+   * (last 3 months, all pages). Only set where the data shows a clear lead.
    */
   searchPicks?: string[];
 };
@@ -63,7 +62,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     group: "core-cleaning",
     intro: "Robot vacuums and mopping robots: launches, companies, technology and the supply chain behind them.",
     color: "#2f5bd3",
-    searchPicks: ["ecovacs-x5-hybrid-dreame-triform-market"],
+    searchPicks: ["ecovacs-x5-hybrid-dreame-triform-market", "is-dreame-owned-by-xiaomi"],
     rules: {
       articleTags: ["robot vacuum", "robot vacuums", "robotic vacuum", "robot vacuum cleaner"],
       newsCategories: ["Robot Vacuums"],
@@ -77,6 +76,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     group: "core-cleaning",
     intro: "Cordless, upright and wet-dry vacuum cleaners and the brands competing in them.",
     color: "#7a4cc2",
+    searchPicks: ["shark-powerdetect-speed-vs-dyson-v16-piston-animal", "who-makes-kenmore-vacuum-cleaners-cleva-transformco"],
     rules: {
       articleCategories: ["Vacuum"],
       articleTags: ["vacuum cleaner", "vacuum cleaners", "cordless vacuum", "cordless vacuums", "stick vacuum", "wet dry vacuum"],
@@ -103,7 +103,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     group: "core-cleaning",
     intro: "Robotic pool cleaners, pool equipment groups and the companies entering the category.",
     color: "#1b8fd1",
-    searchPicks: ["maytronics-robotic-pool-cleaner-reinvention"],
+    searchPicks: ["who-makes-wybot-pool-cleaners-wybotics-wangyuan", "maytronics-robotic-pool-cleaner-reinvention"],
     rules: {
       articleCategories: ["Pool Cleaning"],
       articleTags: ["robotic pool cleaner", "robotic pool cleaners", "pool robot", "pool robots"],
@@ -119,7 +119,11 @@ export const HUB_CATEGORIES: HubCategory[] = [
     group: "core-cleaning",
     intro: "Robotic lawn mowers: navigation, launches, channels and the brands moving into the yard.",
     color: "#3f8f3a",
-    searchPicks: ["husqvarna-robotic-mowers-after-eu-anti-dumping", "navimow-robotic-mower-roadmap"],
+    searchPicks: [
+      "husqvarna-robotic-mowers-after-eu-anti-dumping",
+      "who-makes-mova-robot-mowers-dreame-group",
+      "sunseeker-vs-mammotion-robot-mowers"
+    ],
     rules: {
       articleCategories: ["Robotic Mowers"],
       articleTags: ["robotic mower", "robotic mowers", "robot lawn mower", "robot lawn mowers", "robot mower", "robot mowers"],
@@ -170,6 +174,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     group: "adjacent-industries",
     intro: "Power tools, battery platforms and outdoor power equipment from the groups that also build cleaning products.",
     color: "#c2410c",
+    searchPicks: ["who-makes-parkside-tools-lidl-suppliers", "who-owns-greenworks-globe-stihl"],
     rules: {
       articleTags: ["power tools", "power tool", "outdoor power equipment", "pressure washer", "pressure washers"],
       newsCategories: ["Power Tools & Outdoor Equipment", "Garden Equipment", "Outdoor Cleaning & Lawn Care"],
