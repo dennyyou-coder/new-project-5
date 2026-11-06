@@ -41,7 +41,14 @@
     {
       "name": "Dave Huml",
       "role": "President and Chief Executive Officer",
-      "context": "Tennant's 2025 full-year results identify Dave Huml as President and CEO."
+      "context": "Tennant's 2025 full-year results identify Dave Huml as President and CEO.",
+      "portrait": {
+        "src": "/images/brands/tennant/leader-dave-huml.webp",
+        "alt": "Dave Huml, president and CEO of Tennant Company",
+        "credit": "Tennant Company investor relations headshot; cropped by World Clean Biz",
+        "sourceUrl": "https://investors.tennantco.com/governance/board-of-directors/person-details/default.aspx?ItemId=4268c983-9aa5-4ab6-a521-c317815831ba",
+        "objectPosition": "center top"
+      }
     },
     {
       "name": "Richard H. (Rusty) Zay",
@@ -204,5 +211,5 @@
   ],
   "publishedAt": "2026-08-08T01:38:00+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-10-25T22:34:30+08:00"
+  "lastModified": "2026-11-05T22:30:00+08:00"
 }

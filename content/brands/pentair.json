@@ -24,7 +24,7 @@
     {"placement":"operations","src":"/images/blog/robotic-suction-pressure-pool-cleaner-systems.webp","alt":"Robotic, suction and pressure pool-cleaner system comparison","caption":"Pentair buyers must select among robotic, suction-side and pressure-side system dependencies rather than comparing brands alone."}
   ],
   "ownership":{"summary":"Pentair plc is a public company. Its 2025 annual report describes the Pool segment as designing, manufacturing and selling residential and commercial pool equipment and identifies Pentair Pool, Kreepy Krauly, Pleatco and Sta-Rite as primary Pool brands. The precise responsible entity remains product and country specific.","parentCompany":"Pentair plc"},
-  "leadership":[{"name":"John L. Stauch","role":"President and Chief Executive Officer","context":"Pentair's public reporting identifies John L. Stauch as President and CEO; buyers should use current investor reporting for transaction-time confirmation."}],
+  "leadership":[{"name":"John L. Stauch","role":"President and Chief Executive Officer","context":"Pentair's public reporting identifies John L. Stauch as President and CEO; buyers should use current investor reporting for transaction-time confirmation.","portrait":{"src":"/images/brands/pentair/leader-john-stauch.webp","alt":"John L. Stauch, president and CEO of Pentair","credit":"Pentair leadership page portrait; cropped by World Clean Biz","sourceUrl":"https://www.pentair.com/en-us/about-pentair/our-leadership-team.html","objectPosition":"center top"}}],
   "productPortfolio":[
     {"name":"Pumps, filters, heaters and water treatment","positioning":"Core pool-pad equipment for residential and commercial installations.","buyerRelevance":"Confirm hydraulics, voltage, local approval and installer support before combining equipment."},
     {"name":"Automation and lighting","positioning":"Connected controls, pool monitoring and lighting within the Pentair pool platform.","buyerRelevance":"Check controller compatibility, app support and commissioning ownership."},
@@ -55,5 +55,5 @@
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-07-31T22:00:00+08:00"
+  "lastModified":"2026-11-05T22:30:00+08:00"
 }
