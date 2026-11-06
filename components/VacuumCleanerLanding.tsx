@@ -1,5 +1,4 @@
 import { siteVisualProps } from "@/lib/siteVisuals";
-import Image from "next/image";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 import { LawnRobotProductSelector } from "@/components/LawnRobotProductSelector";
@@ -34,9 +33,7 @@ function SuccessCard({ number, item, title, text }: { number: string; item?: Pro
   if (!item) return null;
   return (
     <article>
-      <div className="sourcing-lawn-success-image">
-        <Image src={item.image} alt={item.imageAlt} fill sizes="(max-width: 760px) 100vw, 33vw" />
-        <span>{number}</span>
+      <div className="sourcing-lawn-success-image"><span>{number}</span>
       </div>
       <h3>{title}</h3>
       <p>{text}</p>
@@ -149,7 +146,7 @@ export function VacuumCleanerLanding({ product }: { product: SourcingProduct }) 
 
       <section className="section section-muted sourcing-lawn-faq-section">
         <div className="sourcing-v3-container sourcing-lawn-faq">
-          <div><p className="sourcing-v3-kicker">Questions buyers ask</p><h2>Product decisions buyers are weighing now</h2><p>These commercial and technical choices shape where vacuum cleaner growth can come from next.</p><img className="sourcing-lawn-faq-visual" src={directions[4]?.image || product.image} alt={directions[4]?.imageAlt || product.imageAlt} loading="lazy" decoding="async" /></div>
+          <div><p className="sourcing-v3-kicker">Questions buyers ask</p><h2>Product decisions buyers are weighing now</h2><p>These commercial and technical choices shape where vacuum cleaner growth can come from next.</p><img className="sourcing-lawn-faq-visual" src="/images/articles/about-denny-forum-2025/14-photo-19.webp" alt="Stick vacuums and floor washers on display at a 2025 industry forum" loading="lazy" decoding="async" /></div>
           <div>{faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div>
         </div>
       </section>

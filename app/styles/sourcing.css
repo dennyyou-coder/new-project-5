@@ -10928,3 +10928,23 @@
     width: 100%;
   }
 }
+
+/* Product directions are described, not pictured: a fit panel replaces the generated concept images. */
+.sourcing-selector-image.sourcing-selector-fit, .structure-refresh.design-a .sourcing-v3-page .sourcing-selector-image.sourcing-selector-fit { aspect-ratio: auto; max-height: none; padding: 58px 24px 24px; background: linear-gradient(160deg, #f4f8fc 0%, #e4edf6 100%); }
+.sourcing-selector-fit .sourcing-fit-name { margin: 0; font-size: 1.5rem; font-weight: 800; line-height: 1.2; color: #0f2747; }
+.sourcing-selector-fit .sourcing-fit-platform { margin: 6px 0 0; font-size: .95rem; color: #3d5368; }
+.sourcing-selector-fit dl { display: grid; gap: 14px; margin: 22px 0 0; padding-top: 18px; border-top: 1px solid #cdd9e5; }
+.sourcing-selector-fit dl > div { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; align-items: baseline; }
+.sourcing-selector-fit dt { font-size: .74rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #5b6f82; }
+.sourcing-selector-fit dd { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; font-size: .92rem; font-weight: 700; color: #0f2747; }
+.sourcing-selector-fit dd i { padding: 4px 10px; font-style: normal; font-size: .8rem; font-weight: 700; color: #8496a8; background: rgba(255,255,255,.55); border: 1px dashed #c3d0dc; border-radius: 999px; }
+.sourcing-selector-fit dd i.is-on { color: #fff; background: #1762c4; border: 1px solid #1762c4; }
+.sourcing-selector-thumbnails strong { margin-top: 0; }
+.sourcing-lawn-page .sourcing-lawn-success-image { aspect-ratio: auto; min-height: 0; background: linear-gradient(135deg, #eef4fa 0%, #dfe9f3 100%); }
+.sourcing-lawn-page .sourcing-lawn-success-image span { position: static; display: inline-block; margin: 18px 20px 14px; padding: 0; background: none; font-size: 1.7rem; line-height: 1; }
+@media (max-width: 760px) {
+  .sourcing-selector-image.sourcing-selector-fit { padding: 52px 18px 18px; }
+  .sourcing-selector-fit dl > div { grid-template-columns: 1fr; gap: 6px; }
+  .sourcing-lawn-page .sourcing-lawn-success-grid article { grid-template-columns: 64px minmax(0, 1fr); }
+  .sourcing-lawn-page .sourcing-lawn-success-image span { margin: 18px 0 0 14px; font-size: 1.35rem; }
+}

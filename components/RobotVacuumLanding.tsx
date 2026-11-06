@@ -1,5 +1,4 @@
 import { siteVisualProps } from "@/lib/siteVisuals";
-import Image from "next/image";
 import Link from "next/link";
 import { TallyButton } from "@/components/LeadForms";
 import { LawnRobotProductSelector } from "@/components/LawnRobotProductSelector";
@@ -32,7 +31,7 @@ const faqs = [
 
 function SuccessCard({ number, item, title, text }: { number: string; item?: ProductDirection; title: string; text: string }) {
   if (!item) return null;
-  return <article><div className="sourcing-lawn-success-image"><Image src={item.image} alt={item.imageAlt} fill sizes="(max-width: 760px) 100vw, 33vw" /><span>{number}</span></div><h3>{title}</h3><p>{text}</p></article>;
+  return <article><div className="sourcing-lawn-success-image"><span>{number}</span></div><h3>{title}</h3><p>{text}</p></article>;
 }
 
 export function RobotVacuumLanding({ product }: { product: SourcingProduct }) {
@@ -69,7 +68,7 @@ export function RobotVacuumLanding({ product }: { product: SourcingProduct }) {
 
       <section className="section section-muted sourcing-lawn-evidence-section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Go or no-go</p><div className="sourcing-lawn-visual-heading"><h2>Four decisions before you back a platform</h2><p>Move forward only when the opportunity, product evidence, supplier capability and after-sale economics reinforce one another.</p></div><ol className="sourcing-lawn-evidence-flow">{[["Opportunity", "Is the household problem valuable?", ["Reason to switch", "Addressable home use", "Channel relevance"]], ["Platform", "Does real-home performance prove it?", ["Navigation and recovery", "Pickup and mopping", "Ownership experience"]], ["Supplier", "Can capability survive scale?", ["Critical-system control", "Firmware and test depth", "Parts and service"]], ["Economics", "Does margin survive after the sale?", ["Price and margin", "Returns and warranty", "Consumables and compliance"]]].map(([label, question, proof], index) => <li key={label as string}><span>0{index + 1}</span><strong>{label as string}</strong><h3>{question as string}</h3><ul>{(proof as string[]).map((item) => <li key={item}>{item}</li>)}</ul></li>)}</ol></div></section>
 
-      <section className="section section-muted sourcing-lawn-faq-section"><div className="sourcing-v3-container sourcing-lawn-faq"><div><p className="sourcing-v3-kicker">Questions buyers ask</p><h2>Product decisions buyers are weighing now</h2><p>These commercial and technical choices shape where robot vacuum growth can come from next.</p><img className="sourcing-lawn-faq-visual" src={directions[5]?.image || product.image} alt={directions[5]?.imageAlt || product.imageAlt} loading="lazy" decoding="async" /></div><div>{faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></div></section>
+      <section className="section section-muted sourcing-lawn-faq-section"><div className="sourcing-v3-container sourcing-lawn-faq"><div><p className="sourcing-v3-kicker">Questions buyers ask</p><h2>Product decisions buyers are weighing now</h2><p>These commercial and technical choices shape where robot vacuum growth can come from next.</p><img className="sourcing-lawn-faq-visual" src="/images/articles/about-denny-expo-2026/16-photo-92.webp" alt="A supplier and buyers discussing products at the 2026 Shenzhen exhibition" loading="lazy" decoding="async" /></div><div>{faqs.map(([question, answer]) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div></div></section>
 
       <section className="section sourcing-lawn-final-section"><div className="sourcing-v3-container sourcing-lawn-final-cta"><div><p className="sourcing-v3-kicker">Make it specific</p><h2>Turn a market opportunity into a product brief</h2><p>Define the target household, use environment, channel, price position, reason to win and technical evidence that must be verified.</p></div><div className="sourcing-lawn-final-actions"><TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation="robot_vacuum_final_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Review my product brief</TallyButton><a href="#product-options">Discuss this product</a></div></div></section>
 

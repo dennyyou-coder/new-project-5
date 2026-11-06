@@ -9,6 +9,9 @@ const EVENT_PHOTOS: Record<string, [number, number]> = {
   "/images/articles/about-denny-expo-2026/17-photo-95.webp": [1120, 841],
   "/images/articles/about-denny-expo-2026/20-photo-105.webp": [1120, 841],
   "/images/articles/about-denny-expo-2025/12-photo-81.webp": [1120, 747],
+  "/images/articles/about-denny-forum-2025/11-photo-20.webp": [1600, 1067],
+  "/images/articles/about-denny-forum-2025/13-photo-18.webp": [1600, 1067],
+  "/images/articles/about-denny-forum-2025/14-photo-19.webp": [1600, 1067],
   "/images/articles/about-denny-expo-2025/15-photo-49.webp": [1120, 747],
   "/images/articles/about-denny-expo-2025/17-photo-74.webp": [1120, 747],
   "/images/articles/about-denny-expo-2025/18-photo-78.webp": [1120, 747]

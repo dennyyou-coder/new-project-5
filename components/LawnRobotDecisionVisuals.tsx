@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const opportunityPlatforms = [
   { id: "RM-01", name: "Mass-Market Vision", className: "is-rm01" },
@@ -74,16 +73,16 @@ export function LawnRobotChannelMatrix() {
 
 export function LawnRobotSuccessConditions() {
   const conditions = [
-    { number: "01", image: "/images/sourcing/lawn-robots/rm-01-compact-vision.webp", alt: "Vision robotic mower representing a clear residential customer use case", title: "A clear customer problem", text: "Installation friction, difficult terrain or large-area labor must give the buyer an obvious reason to switch." },
-    { number: "02", image: "/images/sourcing/lawn-robots/rm-03-awd-slope.webp", alt: "All-wheel-drive robotic mower representing repeatable difficult-terrain performance", title: "Repeatable field performance", text: "The platform has to work across the edges, slopes, signals and recovery conditions buyers actually face." },
-    { number: "03", image: "/images/sourcing/lawn-robots/rm-05-large-area-professional.webp", alt: "Professional robotic mower representing serviceable channel economics", title: "Channel economics after the sale", text: "Setup, software, returns, parts and service cannot consume the margin that made the quotation attractive." }
+    { number: "01", title: "A clear customer problem", text: "Installation friction, difficult terrain or large-area labor must give the buyer an obvious reason to switch." },
+    { number: "02", title: "Repeatable field performance", text: "The platform has to work across the edges, slopes, signals and recovery conditions buyers actually face." },
+    { number: "03", title: "Channel economics after the sale", text: "Setup, software, returns, parts and service cannot consume the margin that made the quotation attractive." }
   ];
   return (
     <section className="section sourcing-lawn-success-section">
       <div className="sourcing-v3-container">
         <p className="sourcing-v3-kicker">What has to be true</p>
         <h2>Three conditions that decide whether it can scale</h2>
-        <div className="sourcing-lawn-success-grid">{conditions.map((condition) => <article key={condition.number}><div className="sourcing-lawn-success-image"><Image src={condition.image} alt={condition.alt} fill sizes="(max-width: 760px) 118px, (max-width: 1200px) 31vw, 360px" /><span>{condition.number}</span></div><h3>{condition.title}</h3><p>{condition.text}</p></article>)}</div>
+        <div className="sourcing-lawn-success-grid">{conditions.map((condition) => <article key={condition.number}><div className="sourcing-lawn-success-image"><span>{condition.number}</span></div><h3>{condition.title}</h3><p>{condition.text}</p></article>)}</div>
       </div>
     </section>
   );
