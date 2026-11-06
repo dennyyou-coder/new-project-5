@@ -146,7 +146,7 @@ export default function WcbExpoPage() {
   <div className="v6-trio">
    <article>
     <figure>
-     <ExpoImage alt="Cleaning appliances" sizes="(max-width: 760px) 90vw, (max-width: 1380px) 29vw, 400px" src="/images/site-refresh/2026-09-commercial/01-robot-vacuum.webp"/>
+     <ExpoImage alt="Robot vacuum parts on show at the 2026 Shenzhen exhibition" sizes="(max-width: 760px) 90vw, (max-width: 1380px) 29vw, 400px" src="/images/articles/about-denny-expo-2026/20-photo-105.webp"/>
      <figcaption>
       Product category illustration
      </figcaption>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const DEFAULT_SOCIAL_IMAGE = "/images/expo/wcb-expo-2026-hero.webp";
+export const DEFAULT_SOCIAL_IMAGE = "/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp";
 
 function truncateSnippet(value: string, maxLength: number) {
   const normalized = value.replace(/\s+/g, " ").trim();

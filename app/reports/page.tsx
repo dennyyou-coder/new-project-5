@@ -16,8 +16,8 @@ const upcomingReports = [
     title: "Pool Robot Channels And Service Costs",
     reportId: "pool-robot-channels-service-costs",
     ctaLocation: "reports_card_pool_robots",
-    image: "/images/site-refresh/2026-09-commercial/03-pool-robot.webp",
-    alt: "Pool cleaning robot beside a swimming pool",
+    image: "/images/articles/about-denny-expo-2026/11-photo-97.webp",
+    alt: "Industry presentation at the 2026 Shenzhen exhibition",
     audience: "For brands and distributors evaluating the pool robot category.",
     points: ["Channel structure", "Service cost drivers", "Buyer considerations"]
   },
@@ -25,8 +25,8 @@ const upcomingReports = [
     title: "Robotic Lawn Mower Supply Chains",
     reportId: "robotic-lawn-mower-supply-chains",
     ctaLocation: "reports_card_lawn_mowers",
-    image: "/images/site-refresh/2026-09-commercial/04-lawn-robot.webp",
-    alt: "Robotic lawn mower operating outdoors",
+    image: "/images/articles/about-denny-expo-2025/15-photo-49.webp",
+    alt: "Outdoor power equipment market briefing at the 2025 supply-chain forum",
     audience: "For buyers tracking outdoor robotics and emerging suppliers.",
     points: ["Technology paths", "Supplier landscape", "Market entry questions"]
   },
@@ -34,8 +34,8 @@ const upcomingReports = [
     title: "Commercial Cleaning Robot ROI Model",
     reportId: "commercial-cleaning-robot-roi",
     ctaLocation: "reports_card_commercial_robots",
-    image: "/images/site-refresh/2026-09-commercial/05-commercial-cleaning.webp",
-    alt: "Commercial robotic cleaning equipment",
+    image: "/images/articles/about-denny-expo-2026/13-photo-90.webp",
+    alt: "Supplier booths at the 2026 Shenzhen exhibition",
     audience: "For operators and distributors evaluating commercial automation.",
     points: ["Labor substitution", "Deployment economics", "Operational fit"]
   },
@@ -43,8 +43,8 @@ const upcomingReports = [
     title: "China Cleaning Supplier Pack",
     reportId: "china-cleaning-supplier-pack",
     ctaLocation: "reports_card_supplier_pack",
-    image: "/images/site-refresh/2026-09-commercial/09-prototype-review.webp",
-    alt: "Cleaning industry supplier meeting in China",
+    image: "/images/articles/about-denny-expo-2026/17-photo-95.webp",
+    alt: "Buyers meeting a supplier at the 2026 Shenzhen exhibition",
     audience: "For overseas buyers preparing to evaluate Chinese suppliers.",
     points: ["Supplier questions", "Quality checkpoints", "Sourcing preparation"]
   }
