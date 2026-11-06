@@ -27,6 +27,8 @@ export function EquipmentHero({ profile, isDraft }: { profile: EquipmentProfile;
             <h1>{profile.name}</h1>
             <p className="equipment-hero-headline">{profile.headline}</p>
             <p>{profile.description}</p>
+            <details className="detail-fold hero-scope-fold">
+            <summary>What this profile covers</summary>
             <div className="equipment-scope-grid">
               <div>
                 <strong>Included</strong>
@@ -37,6 +39,7 @@ export function EquipmentHero({ profile, isDraft }: { profile: EquipmentProfile;
                 <ul>{profile.excludedScope.map((item) => <li key={item}>{item}</li>)}</ul>
               </div>
             </div>
+            </details>
             <p className="equipment-verification-line">
               First published {profile.publishedAt} · Last verified {profile.lastVerified}
             </p>

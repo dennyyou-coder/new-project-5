@@ -11,7 +11,7 @@ export function ComponentHero({ profile, isDraft }: { profile: ComponentProfile;
           <div className="component-intelligence-hero-copy">
             <div className="component-intelligence-kicker"><p className="eyebrow">Independent Component Reference</p>{isDraft ? <span>Draft preview</span> : null}</div>
             <h1>{profile.name}</h1><p className="component-intelligence-headline">{profile.headline}</p><p>{profile.description}</p>
-            <div className="component-intelligence-scope"><div><strong>Included</strong><ul>{profile.includedScope.map((item) => <li key={item}>{item}</li>)}</ul></div><div><strong>Excluded</strong><ul>{profile.excludedScope.map((item) => <li key={item}>{item}</li>)}</ul></div></div>
+            <details className="detail-fold hero-scope-fold"><summary>What this profile covers</summary><div className="component-intelligence-scope"><div><strong>Included</strong><ul>{profile.includedScope.map((item) => <li key={item}>{item}</li>)}</ul></div><div><strong>Excluded</strong><ul>{profile.excludedScope.map((item) => <li key={item}>{item}</li>)}</ul></div></div></details>
             <p className="component-intelligence-date">First published {profile.publishedAt} · Last verified {profile.lastVerified}</p>
             <p className="component-intelligence-disclaimer">{profile.disclaimer}</p>
           </div>
