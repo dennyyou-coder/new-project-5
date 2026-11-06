@@ -24,17 +24,19 @@ test("home retains a single main heading and search guides stay outside editoria
   assert.match(home, /getEditorialInsights\(articles\)/);
 });
 
-test("home B layout: search, data-driven counts, sections in order, no expo crowd hero", () => {
+test("home B layout: search, popular categories, a featured slot, sections in order, no expo crowd hero", () => {
   assert.match(home, /The global cleaning industry, in one place\./);
   assert.match(home, /<HomeSearch entries=\{searchEntries\} \/>/);
-  for (const count of ["news.length", "brands.length", "featuredProductModels.length", "guides.length"]) {
-    assert.ok(home.includes(`value: ${count}`), count);
-  }
+  // Counts were replaced by popular category links and a featured slot (expo, then deep analysis).
+  assert.doesNotMatch(home, /home-b-counts/);
+  assert.match(home, /className="home-b-popular"/);
+  assert.match(home, /expoUpcoming \? \(/);
+  assert.match(home, /pickFeaturedAnalysis\(editorial, lead\?\.slug\)/);
   const order = [
     "Across the industry this week",
     "Browse by category",
     "New products",
-    "Inside the supply chain",
+    "Deep analysis",
     "Companies",
     "Guides for professionals",
     "The whole industry, in your inbox"
