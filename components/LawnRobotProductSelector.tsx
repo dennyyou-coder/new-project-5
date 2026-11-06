@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { siteVisualProps } from "@/lib/siteVisuals";
 import { TallyButton } from "@/components/LeadForms";
 import type { ProductDirection } from "@/lib/sourcingProducts";
 
@@ -9,6 +8,9 @@ export function LawnRobotProductSelector({ products, productCategory = "robotic_
   const [selectedId, setSelectedId] = useState<ProductDirection["id"]>(products[0].id);
   const selected = products.find((product) => product.id === selectedId) || products[0];
   const selectedIndex = products.findIndex((product) => product.id === selected.id);
+  // Every market and channel any direction targets; the selected direction's are highlighted.
+  const allMarkets = [...new Set(products.flatMap((product) => product.markets))];
+  const allChannels = [...new Set(products.flatMap((product) => product.channels))];
 
   return (
     <section className="section sourcing-selector-section" id="product-options">
@@ -17,7 +19,16 @@ export function LawnRobotProductSelector({ products, productCategory = "robotic_
         <h2>Six product platforms, six different markets</h2>
         <p className="sourcing-selector-disclaimer">Each direction targets a different customer, channel and reason to buy. Final supplier models and claims require verification.</p>
         <div className="sourcing-selector sourcing-lawn-selector-workbench">
-          <div className="sourcing-selector-image sourcing-lawn-selector-media"><img {...siteVisualProps(selected.image, "(max-width: 760px) 100vw, 60vw")} alt={selected.imageAlt} loading="lazy" decoding="async" /><span>{selected.id}</span></div>
+          <div className="sourcing-selector-image sourcing-lawn-selector-media sourcing-selector-fit">
+            <span>{selected.id}</span>
+            <p className="sourcing-fit-name">{selected.name}</p>
+            <p className="sourcing-fit-platform">{selected.technologyDirection}</p>
+            <dl>
+              <div><dt>Use case</dt><dd>{selected.lawnContext}</dd></div>
+              <div><dt>Markets</dt><dd>{allMarkets.map((item) => <i key={item} className={selected.markets.includes(item) ? "is-on" : undefined}>{item}</i>)}</dd></div>
+              <div><dt>Channels</dt><dd>{allChannels.map((item) => <i key={item} className={selected.channels.includes(item) ? "is-on" : undefined}>{item}</i>)}</dd></div>
+            </dl>
+          </div>
           <div className="sourcing-selector-copy sourcing-lawn-selector-summary">
             <p className="sourcing-selector-count">Product {selectedIndex + 1} of {products.length}</p>
             <p className="sourcing-selector-id">{selected.id} · {selected.technologyDirection}</p>
@@ -31,7 +42,7 @@ export function LawnRobotProductSelector({ products, productCategory = "robotic_
           </div>
           <div className="sourcing-selector-facts sourcing-lawn-selector-evidence"><div><strong>Why it can win</strong><p>{selected.opportunity}</p></div><div><strong>Critical proof points</strong><p>{selected.verificationRisk}</p></div></div>
           <div className="sourcing-selector-thumbnails sourcing-lawn-selector-rail" aria-label={ariaLabel}>
-            {products.map((product) => <button key={product.id} type="button" aria-pressed={product.id === selected.id} onClick={() => setSelectedId(product.id)}><img {...siteVisualProps(product.image, "200px")} alt="" loading="lazy" decoding="async" /><strong>{product.id}</strong><span>{product.name}</span></button>)}
+            {products.map((product) => <button key={product.id} type="button" aria-pressed={product.id === selected.id} onClick={() => setSelectedId(product.id)}><strong>{product.id}</strong><span>{product.name}</span></button>)}
           </div>
           <p className="sourcing-selector-swipe-hint">Swipe to compare more product directions →</p>
         </div>
