@@ -114,7 +114,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const publishedTime = article.publishedAt || article.date;
   const modifiedTime = article.updatedAt || publishedTime;
   const coverImage = absoluteUrl(article.coverImage);
-  const metadataTitle = seoTitle(article.title);
+  // The search-result title may be shorter than the headline; social cards keep the full headline.
+  const metadataTitle = seoTitle(article.seoTitle || article.title);
+  const shareTitle = seoTitle(article.title);
   const metadataDescription = seoDescription(article.metaDescription);
 
   return {
@@ -124,7 +126,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `/blog/${article.slug}`
     },
     openGraph: {
-      title: metadataTitle,
+      title: shareTitle,
       description: metadataDescription,
       type: "article",
       publishedTime,
@@ -135,7 +137,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: metadataTitle,
+      title: shareTitle,
       description: metadataDescription,
       images: coverImage ? [coverImage] : undefined
     }

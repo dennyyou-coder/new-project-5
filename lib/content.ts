@@ -12,6 +12,8 @@ import {
 export type Insight = {
   slug: string;
   title: string;
+  /** Optional shorter <title> for search results; the page heading keeps `title`. */
+  seoTitle?: string;
   excerpt: string;
   description: string;
   metaDescription: string;
@@ -140,6 +142,7 @@ function readInsights(): Insight[] {
       return [{
         slug,
         title: String(data.title || slug),
+        seoTitle: data.seoTitle ? String(data.seoTitle) : undefined,
         excerpt,
         description: metaDescription,
         metaDescription,
