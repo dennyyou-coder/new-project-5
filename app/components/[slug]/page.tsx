@@ -1,3 +1,6 @@
+import { ComponentSectionNav } from "@/components/component-intelligence/ComponentSectionNav";
+import { OpenDetailsOnHash } from "@/components/ui/OpenDetailsOnHash";
+import "../../styles/detail-reading.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ComponentArchitecture } from "@/components/component-intelligence/ComponentArchitecture";
@@ -39,5 +42,5 @@ export default async function ComponentPage({ params }: PageProps) {
   const profile = loadProfile(slug);
   if (!profile) notFound();
   const schemas = buildComponentPageSchemas(profile, siteUrl);
-  return <div className="guides-hub component-intelligence-hub component-intelligence-detail"><ComponentHero profile={profile} isDraft={profile.status === "draft"} /><ComponentSystemRole profile={profile} /><ComponentArchitecture profile={profile} /><ComponentTechnicalSections profile={profile} /><ComponentCompatibility profile={profile} /><ComponentServiceSections profile={profile} /><ComponentRelationships profile={profile} /><ComponentDecisionSections profile={profile} /><ComponentTimeline profile={profile} /><ComponentSources profile={profile} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} /></div>;
+  return <div className="guides-hub component-intelligence-hub component-intelligence-detail"><ComponentHero profile={profile} isDraft={profile.status === "draft"} /><ComponentSectionNav /><OpenDetailsOnHash /><ComponentSystemRole profile={profile} /><ComponentArchitecture profile={profile} /><ComponentTechnicalSections profile={profile} /><ComponentCompatibility profile={profile} /><ComponentServiceSections profile={profile} /><ComponentRelationships profile={profile} /><ComponentDecisionSections profile={profile} /><ComponentTimeline profile={profile} /><ComponentSources profile={profile} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas) }} /></div>;
 }

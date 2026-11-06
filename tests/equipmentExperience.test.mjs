@@ -29,7 +29,7 @@ test("equipment detail route supports draft Preview without public static genera
 test("equipment directory exposes only published profiles and a safe empty state", () => {
   const source = read("app/equipment/page.tsx");
   assert.match(source, /getPublishedEquipmentProfiles\(brandSlugs\)/);
-  assert.match(source, /profiles\.map\(\(profile\) => <EquipmentDirectoryCard/);
+  assert.match(source, /<CatalogGroupedGrid[\s\S]*groupCatalog\(profiles, EQUIPMENT_GROUPS\)/);
   assert.match(source, /Technical profiles are under review/);
   assert.doesNotMatch(source, /floor-scrubber/);
   assert.equal((source.match(/<h1\b/g) || []).length, 1);
@@ -37,6 +37,9 @@ test("equipment directory exposes only published profiles and a safe empty state
 
 test("hero establishes scope, draft status, one H1 and complete section navigation", () => {
   const source = read("components/equipment/EquipmentHero.tsx");
+  // The section links sit in their own bar right after the hero so they stay on screen.
+  const nav = read("components/equipment/EquipmentSectionNav.tsx");
+  assert.match(read("app/equipment/[slug]/page.tsx"), /<EquipmentHero[^\n]*\/>\n\s*<EquipmentSectionNav \/>/);
   assert.equal((source.match(/<h1\b/g) || []).length, 1);
   assert.match(source, /Draft preview/);
   assert.match(source, /Included/);
@@ -46,7 +49,7 @@ test("hero establishes scope, draft status, one H1 and complete section navigati
     "working-system", "equipment-types", "performance-metrics", "application-fit",
     "component-stack", "representative-models", "procurement", "engineering",
     "standards", "developments", "sources"
-  ]) assert.match(source, new RegExp(`#${id}`));
+  ]) assert.match(nav, new RegExp(`#${id}`));
 });
 
 test("system and type visuals are semantic original UI rather than copied diagrams", () => {

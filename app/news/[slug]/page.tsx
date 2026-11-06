@@ -21,7 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getNewsArticle((await params).slug);
   if (!article) return {};
   const visual = getNewsVisual(article);
-  return { title: article.title, description: article.excerpt, alternates: { canonical: `/news/${article.slug}` }, openGraph: { title: article.title, description: article.excerpt, type: "article", url: `/news/${article.slug}`, publishedTime: article.publishedAt, modifiedTime: article.updatedAt, authors: [article.author], ...(visual ? { images: [visual.src] } : {}) }, twitter: { card: visual ? "summary_large_image" : "summary", title: article.title, description: article.excerpt, ...(visual ? { images: [visual.src] } : {}) } };
+  // Long headlines drop the " | World Clean Biz" suffix so search results show the whole headline.
+  return { title: article.title.length > 46 ? { absolute: article.title } : article.title, description: article.excerpt, alternates: { canonical: `/news/${article.slug}` }, openGraph: { title: article.title, description: article.excerpt, type: "article", url: `/news/${article.slug}`, publishedTime: article.publishedAt, modifiedTime: article.updatedAt, authors: [article.author], ...(visual ? { images: [visual.src] } : {}) }, twitter: { card: visual ? "summary_large_image" : "summary", title: article.title, description: article.excerpt, ...(visual ? { images: [visual.src] } : {}) } };
 }
 
 export default async function NewsArticlePage({ params }: Props) {

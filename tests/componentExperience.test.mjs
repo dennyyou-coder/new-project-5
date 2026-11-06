@@ -24,17 +24,20 @@ test("component detail route is draft aware and composes every section", () => {
 test("component directory exposes published profiles only", () => {
   const source = read("app/components/page.tsx");
   assert.match(source, /getPublishedComponentProfiles\(\)/);
-  assert.match(source, /profiles\.map\(\(profile\) => <ComponentDirectoryCard/);
+  assert.match(source, /<CatalogGroupedGrid[\s\S]*groupCatalog\(profiles, COMPONENT_GROUPS\)/);
   assert.match(source, /Component profiles are under review/);
   assert.doesNotMatch(source, /vacuum-cleaner-motor/);
 });
 
 test("hero has one H1 scope draft label provenance and section navigation", () => {
   const source = read("components/component-intelligence/ComponentHero.tsx");
+  // The section links sit in their own bar right after the hero so they stay on screen.
+  const nav = read("components/component-intelligence/ComponentSectionNav.tsx");
+  assert.match(read("app/components/[slug]/page.tsx"), /<ComponentHero[^>]*\/><ComponentSectionNav \/>/);
   assert.equal((source.match(/<h1\b/g) || []).length, 1);
   for (const text of ["Draft preview", "Included", "Excluded", "Official image source"]) assert.match(source, new RegExp(text));
   for (const id of ["system-role", "architectures", "specifications", "applications", "compatibility", "failure-modes", "families", "procurement", "engineering", "standards", "developments", "sources"]) {
-    assert.match(source, new RegExp(`#${id}`));
+    assert.match(nav, new RegExp(`#${id}`));
   }
 });
 

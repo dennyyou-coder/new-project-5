@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import { EquipmentDirectoryCard } from "@/components/equipment/EquipmentDirectoryCard";
+import { CatalogGroupedGrid } from "@/components/ui/CatalogGroupedGrid";
+import { EQUIPMENT_GROUPS, groupCatalog } from "@/lib/catalogGroups";
+import "../styles/catalog-groups.css";
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
 import { getPublishedEquipmentProfiles } from "@/lib/equipment";
@@ -29,8 +31,17 @@ export default function EquipmentDirectoryPage() {
         </div>
       </section>
       <section className="section">
-        <div className="insights-page-container equipment-directory-grid">
-          {profiles.length ? profiles.map((profile) => <EquipmentDirectoryCard key={profile.slug} profile={profile} />) : (
+        <div className="insights-page-container">
+          {profiles.length ? (
+            <CatalogGroupedGrid
+              label="Equipment groups"
+              groups={groupCatalog(profiles, EQUIPMENT_GROUPS).map((group) => ({
+                id: group.id,
+                label: group.label,
+                items: group.items.map((profile) => ({ slug: profile.slug, href: `/equipment/${profile.slug}`, name: profile.name, image: profile.heroImage, alt: "", text: profile.definition }))
+              }))}
+            />
+          ) : (
             <div className="equipment-directory-empty">
               <h2>Technical profiles are under review</h2>
               <p>Draft equipment records stay outside the public directory until evidence and responsive verification are complete.</p>

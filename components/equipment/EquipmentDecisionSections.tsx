@@ -61,6 +61,8 @@ export function EquipmentDecisionSections({ profile }: { profile: EquipmentProfi
             <p className="eyebrow">Standards boundary</p>
             <h2>Safety and performance references</h2>
           </div>
+          <details className="detail-fold">
+          <summary>Show {profile.standards.length} safety and performance references</summary>
           <div className="equipment-standards-grid">
             {profile.standards.map((standard) => (
               <article key={standard.name}>
@@ -72,6 +74,7 @@ export function EquipmentDecisionSections({ profile }: { profile: EquipmentProfi
               </article>
             ))}
           </div>
+          </details>
         </div>
       </section>
     </>

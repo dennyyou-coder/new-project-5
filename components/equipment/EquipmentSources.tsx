@@ -9,6 +9,8 @@ export function EquipmentSources({ profile }: { profile: EquipmentProfile }) {
           <h2>Sources</h2>
           <p>First published {profile.publishedAt} · Last verified {profile.lastVerified} · Last material modification {profile.lastModified}</p>
         </div>
+        <details className="detail-fold">
+        <summary>Show all {profile.sources.length} sources</summary>
         <ol className="equipment-source-list">
           {profile.sources.map((source) => (
             <li id={`source-${source.id}`} key={source.id}>
@@ -20,6 +22,7 @@ export function EquipmentSources({ profile }: { profile: EquipmentProfile }) {
             </li>
           ))}
         </ol>
+        </details>
       </div>
     </section>
   );

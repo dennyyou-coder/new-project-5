@@ -40,10 +40,25 @@ const NAV: NavItem[] = [
     ]
   },
   { kind: "link", href: "/brands", label: "Companies" },
-  { kind: "link", href: "/blog/archive?category=Supply%20Chain", label: "Supply chain", current: [] },
+  { kind: "link", href: "/blog/archive", label: "Deep Analysis", current: ["/blog"] },
   { kind: "link", href: "/markets", label: "Markets" },
   { kind: "link", href: "/wcb-expo", label: "Events" },
-  { kind: "link", href: "/guides", label: "Guides" }
+  { kind: "link", href: "/guides", label: "Guides" },
+  {
+    kind: "menu",
+    id: "about",
+    label: "About",
+    current: ["/about", "/contact", "/quality-compliance"],
+    columns: [
+      {
+        links: [
+          { href: "/about", label: "About WCB" },
+          { href: "/contact", label: "Contact & partnerships" },
+          { href: "/quality-compliance", label: "Quality & compliance" }
+        ]
+      }
+    ]
+  }
 ];
 
 export function Header() {
