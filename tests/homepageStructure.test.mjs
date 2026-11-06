@@ -45,3 +45,12 @@ test("home B layout: search, data-driven counts, sections in order, no expo crow
   assert.match(home, /"@type": "Organization"/);
   assert.match(home, /"@type": "WebSite"/);
 });
+
+test("home uses company logos, category icons and shows each story once", () => {
+  assert.match(home, /<CompanyMark mark=\{marks\.get\(brand\.slug\)!\} size="md" \/>/);
+  assert.match(home, /<CategoryIcon slug=\{data\.hub\.slug\} color=\{data\.hub\.color\} \/>/);
+  assert.match(home, /<FigureChip label=\{figure\.label\} change=\{figure\.change\} \/>/);
+  assert.match(home, /const shownElsewhere = new Set\(\[\.\.\.results, \.\.\.policy, \.\.\.events\]/);
+  assert.match(home, /news\.filter\(\(item\) => !shownElsewhere\.has\(item\.slug\)\)\.slice\(0, 7\)/);
+  assert.doesNotMatch(home, /home-b-category-latest/);
+});
