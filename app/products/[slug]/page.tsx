@@ -7,6 +7,8 @@ import { productModels, getProduct, productCover, productDate, productSourcingRo
 import { getInsights, markdownToHtml } from "@/lib/content";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { buildWebsiteMetadata } from "@/lib/seo";
+import { LogoTileImage } from "@/components/ui/LogoTileImage";
+import { brandLogoTile } from "@/lib/brandLogoTiles";
 
 type Props = { params: Promise<{ slug: string }> };
 export const dynamicParams = false;
@@ -65,7 +67,7 @@ export default async function ProductPage({ params }: Props) {
     <nav className="product-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><Link href="/products">Products</Link><span aria-hidden="true">/</span><span>{model.name}</span></nav>
     <article className="product-model-main">
       <header className="product-detail-hero"><figure className="product-model-cover"><img {...responsiveImageProps(model.coverImage, "cover")} sizes="(max-width: 800px) calc(100vw - 40px), 560px" alt={`${model.name} — official manufacturer product image`} /><figcaption>Manufacturer image · <a href={model.imageSource}>Image source</a></figcaption></figure><div className="product-detail-intro">
-        <p className="product-eyebrow"><Link href={`/brands/${model.brandSlug}`}>{model.brand}</Link> / {model.category}</p><h1>{model.name}</h1><p className="product-company-link">Company profile: <Link href={`/brands/${model.brandSlug}`}>{model.brand}</Link></p><p className="product-lead">{model.summary}</p><div className="product-meta"><span>{model.market}</span><span>{model.launchYear} model</span></div><p className="product-note">Sources checked {productDate(model.verifiedAt)}{model.announced ? ` · Announced ${productDate(model.announced)}` : ""}</p>
+        <p className="product-eyebrow"><Link href={`/brands/${model.brandSlug}`}>{model.brand}</Link> / {model.category}</p><h1>{model.name}</h1><p className="product-company-link"><Link className="product-company-mark" href={`/brands/${model.brandSlug}`}>{brandLogoTile(model.brandSlug) ? <span className="product-company-logo" aria-hidden="true"><LogoTileImage slug={model.brandSlug} fallbackSrc={brandLogoTile(model.brandSlug)!.src} boxRatio={1.85} /></span> : null}<span>{model.brand} company profile →</span></Link></p><p className="product-lead">{model.summary}</p><div className="product-meta"><span>{model.market}</span><span>{model.launchYear} model</span></div><p className="product-note">Sources checked {productDate(model.verifiedAt)}{model.announced ? ` · Announced ${productDate(model.announced)}` : ""}</p>
         <p className="product-note">{model.launchNote} <a href={model.launchSource}>Launch source</a></p>
         <div className="product-actions"><a href={model.sources[0].url} className="product-text-link">Official product page</a></div>
       </div></header>

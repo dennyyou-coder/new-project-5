@@ -1,3 +1,4 @@
+import { sourceLabel } from "@/lib/sourceLabel";
 import Image from "next/image";
 import type { ComponentContentVisual } from "@/lib/componentProfiles";
 
@@ -15,7 +16,7 @@ export function ComponentVisual({ visual, guidance }: { visual: ComponentContent
         <p>{visual.caption}</p>
         <p className="component-intelligence-visual__guidance"><strong>How to use this visual</strong>{guidance}</p>
         {visual.sourceUrl ? <a href={visual.sourceUrl} target="_blank" rel="noopener noreferrer">Official image source</a> : (
-          <p><strong>Diagram sources</strong>{visual.sourceIds?.join(", ")}</p>
+          <p><strong>Diagram sources</strong>{visual.sourceIds?.map(sourceLabel).join(", ")}</p>
         )}
       </figcaption>
     </figure>
