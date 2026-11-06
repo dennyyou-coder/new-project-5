@@ -7,7 +7,7 @@
   "legalEntityNote":"AB Electrolux (publ) is the listed parent company. Electrolux, AEG, Frigidaire and regional subsidiaries are separate commercial and product-brand layers; a consumer-brand product may not be sold or warranted by the listed parent itself.",
   "officialWebsite":"https://www.electroluxgroup.com/",
   "headline":"Electrolux ownership, appliance brands and global operating boundary",
-  "description":"A source-backed profile of AB Electrolux's listed-group ownership, Electrolux/AEG/Frigidaire brand architecture, appliance portfolio and regional buyer checks.",
+  "description":"Electrolux is owned through AB Electrolux, a Swedish company listed on Nasdaq Stockholm. Investor AB was its largest shareholder at the end of 2025, with 17.9% of capital and 30.4% of votes. Its main appliance brands are Electrolux, AEG and Frigidaire.",
   "metaTitle":"Who Owns Electrolux? Listed Swedish Group and Its Brands",
   "metaDescription":"AB Electrolux is a Stockholm-based company listed on Nasdaq Stockholm. Its leading appliance brands are Electrolux, AEG and Frigidaire. See who makes what.",
   "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with Electrolux Group, AEG, Frigidaire or their subsidiaries. Brand, legal-entity and SKU-level evidence are kept separate.",
@@ -23,7 +23,7 @@
     {"placement":"portfolio","src":"/images/blog/who-owns-aeg-electrolux-cover.webp","alt":"Electrolux and AEG appliance portfolio graphic","caption":"Electrolux and AEG are group brands, but consumer positioning and local distribution vary by market."},
     {"placement":"operations","src":"/images/blog/eureka-ownership-timeline-midea-electrolux.webp","alt":"Eureka and Electrolux ownership timeline","caption":"Historic Electrolux connections should not be treated as proof of current ownership for every Eureka or regional product."}
   ],
-  "ownership":{"summary":"AB Electrolux (publ) is a Swedish public limited company listed on Nasdaq Stockholm and the parent of the Electrolux Group. The Group identifies Electrolux, AEG and Frigidaire as leading appliance brands. Brand use, operating companies and product availability remain market-specific.","parentCompany":"AB Electrolux (publ)"},
+  "ownership":{"summary":"AB Electrolux (publ) is a Swedish public limited company listed on Nasdaq Stockholm and the parent of the Electrolux Group. Investor AB was the largest shareholder at the end of 2025, with 17.9% of share capital and 30.4% of voting rights, according to the 2025 annual report. The Group identifies Electrolux, AEG and Frigidaire as leading appliance brands. Brand use, operating companies and product availability remain market-specific.","parentCompany":"AB Electrolux (publ)"},
   "leadership":[{"name":"Yannick Fierling","role":"President and CEO","context":"Electrolux Group's 2025 annual report identifies Yannick Fierling as President and CEO from 1 January 2025."}],
   "productPortfolio":[
     {"name":"Major kitchen and laundry appliances","positioning":"Core household appliances sold across Electrolux, AEG and regional brand structures.","buyerRelevance":"Confirm the brand, regional seller, electrical specification and after-sales route for the destination market."},

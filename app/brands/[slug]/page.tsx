@@ -94,7 +94,7 @@ export default async function BrandPage({ params }: PageProps) {
     );
   }
 
-  const publishedBrandSlugs = new Set(profiles.map((profile) => profile.slug));
+  const publishedBrandSlugs = new Map(profiles.map((profile) => [profile.slug, profile.name] as const));
   const data = getBrandPageData(slug, articles);
   if (!data) notFound();
 

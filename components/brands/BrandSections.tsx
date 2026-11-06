@@ -26,7 +26,7 @@ export function BrandSections({
   allowedCompetitorSlugs
 }: {
   profile: BrandProfile;
-  allowedCompetitorSlugs: ReadonlySet<string>;
+  allowedCompetitorSlugs: ReadonlySet<string> | ReadonlyMap<string, string>;
 }) {
   const visualByPlacement = selectBrandContentVisuals(profile.contentVisuals);
   const ownershipVisual = visualByPlacement.get("ownership");
@@ -84,7 +84,7 @@ export function BrandSections({
                       {competitorReferences.map((competitor) => (
                         <span key={competitor.slug}>
                           {competitor.href ? (
-                            <Link href={competitor.href}>{competitor.slug}</Link>
+                            <Link href={competitor.href}>{competitor.name ?? competitor.slug}</Link>
                           ) : competitor.slug}
                         </span>
                       ))}

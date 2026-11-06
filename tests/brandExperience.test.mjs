@@ -242,6 +242,20 @@ test("competitor references only add hrefs for confirmed published profile slugs
   );
 });
 
+test("published competitor references carry the brand name for link text", () => {
+  assert.deepEqual(
+    buildBrandCompetitorReferences(
+      ["bosch-home-appliances", "draft-brand"],
+      new Map([["bosch-home-appliances", "Bosch Home Appliances"]])
+    ),
+    [
+      { slug: "bosch-home-appliances", href: "/brands/bosch-home-appliances", name: "Bosch Home Appliances" },
+      { slug: "draft-brand" }
+    ]
+  );
+  assert.match(read("components/brands/BrandSections.tsx"), /competitor\.name \?\? competitor\.slug/);
+});
+
 test("brand directory route exposes one canonical collection with links for published profiles", () => {
   const source = read("app/brands/page.tsx");
 

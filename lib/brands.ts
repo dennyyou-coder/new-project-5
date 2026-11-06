@@ -113,6 +113,7 @@ export type BrandPageData = {
 export type BrandCompetitorReference = {
   slug: string;
   href?: string;
+  name?: string;
 };
 
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -730,13 +731,13 @@ export function sortBrandDevelopmentsNewestFirst(
 
 export function buildBrandCompetitorReferences(
   competitorSlugs: string[],
-  allowedCompetitorSlugs: ReadonlySet<string>
+  allowedCompetitorSlugs: ReadonlySet<string> | ReadonlyMap<string, string>
 ): BrandCompetitorReference[] {
-  return competitorSlugs.map((slug) => (
-    allowedCompetitorSlugs.has(slug)
-      ? { slug, href: `/brands/${slug}` }
-      : { slug }
-  ));
+  return competitorSlugs.map((slug) => {
+    if (!allowedCompetitorSlugs.has(slug)) return { slug };
+    const name = allowedCompetitorSlugs instanceof Map ? allowedCompetitorSlugs.get(slug) : undefined;
+    return name ? { slug, href: `/brands/${slug}`, name } : { slug, href: `/brands/${slug}` };
+  });
 }
 
 export function buildBrandStaticParams(profiles: readonly BrandProfile[]) {
