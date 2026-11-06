@@ -131,3 +131,9 @@ export function buildBuyerChecks(profile: BrandProfile, limit = 6): string[] {
   }
   return checks.slice(0, limit);
 }
+
+/** Founded for the fact sheet: the year, unless sources disagree ("2015 or 2017"). */
+export function foundedShort(founded: string): string {
+  if (/\b\d{4}\s+or\s+\d{4}\b/.test(founded)) return founded.replace(/\s*\([^)]*\)/g, "").trim();
+  return foundedYear(founded) ?? founded;
+}

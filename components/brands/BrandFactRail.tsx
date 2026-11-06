@@ -3,7 +3,7 @@ import { CompanyMark } from "@/components/ui/CompanyMark";
 import { normalizeOptionalBrandText, type BrandProfile } from "@/lib/brands";
 import type { BrandMark } from "@/lib/brandMarks";
 import { formatBrandDate } from "@/lib/brandDates";
-import { buildOwnershipFact } from "@/lib/brandProfileView";
+import { buildOwnershipFact, foundedShort, shortHeadquarters } from "@/lib/brandProfileView";
 
 const undisclosedPattern = /^not (disclosed|publicly identified|stated|identified)/i;
 
@@ -17,12 +17,12 @@ export function BrandFactRail({
 }) {
   const legalEntity = normalizeOptionalBrandText(profile.legalName);
   const leader = profile.leadership[0];
-  const facts: Array<{ label: string; value: string; icon: IconName }> = [
+  const facts: Array<{ label: string; value: string; icon: IconName; full?: string }> = [
     { label: "Ownership", value: buildOwnershipFact(profile), icon: "user" },
     ...(legalEntity ? [{ label: "Operating company", value: legalEntity, icon: "building" as IconName }] : []),
     ...(leader ? [{ label: leader.role, value: leader.name, icon: "users" as IconName }] : []),
-    { label: "Headquarters", value: profile.headquarters, icon: "globe" },
-    { label: "Founded", value: profile.founded, icon: "calendar" }
+    { label: "Headquarters", value: shortHeadquarters(profile.headquarters), icon: "globe", full: profile.headquarters },
+    { label: "Founded", value: foundedShort(profile.founded), icon: "calendar", full: profile.founded }
   ];
   const undisclosed = facts.filter(({ value }) => undisclosedPattern.test(value.trim())).map(({ label }) => label);
   if (profile.leadership.length === 0) undisclosed.push("Named leadership");
@@ -34,11 +34,11 @@ export function BrandFactRail({
       <section className="bp-card bp-facts">
         <h2 className="bp-rail-title">Fact sheet</h2>
         <dl aria-label="Key facts">
-          {shown.map(({ label, value, icon }) => (
+          {shown.map(({ label, value, icon, full }) => (
             <div key={label}>
               <span className="bp-fact-icon"><Icon name={icon} /></span>
               <dt>{label}</dt>
-              <dd>{value}</dd>
+              <dd title={full && full !== value ? full : undefined}>{value}</dd>
             </div>
           ))}
           <div>

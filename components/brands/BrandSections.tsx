@@ -53,12 +53,18 @@ export function BrandSections({
 }) {
   const visuals = selectBrandContentVisuals(profile.contentVisuals);
   const operationsVisual = visuals.get("operations");
+  const ownershipVisual = visuals.get("ownership");
+  const portfolioVisual = visuals.get("portfolio");
+  const competitionVisual = visuals.get("competition");
+  const ownershipSentences = sentences(profile.ownership.summary);
+  const ownershipLead = ownershipSentences.slice(0, 2).join(" ");
+  const ownershipRest = ownershipSentences.slice(2).join(" ");
   const quickAnswer = buildBrandQuickAnswer(profile);
   const view = sentences(buildCompetitiveView(profile));
   const written = buildBrandOverview(profile);
   // Without a written overview, the first two sentences of the WCB view open the page.
   const overview = written ?? view.slice(0, 2).join(" ");
-  const viewRest = written ? view.join(" ") : view.slice(2).join(" ");
+  const viewRest = (written ? view : view.slice(2)).slice(0, 2).join(" ");
   const legalEntity = normalizeOptionalBrandText(profile.legalName);
   const leader = profile.leadership[0];
   const checks = buildBuyerChecks(profile);
@@ -122,7 +128,18 @@ export function BrandSections({
             ))}
           </ol>
         ) : null}
-        <p className="bp-text">{profile.ownership.summary}</p>
+        <div className={ownershipVisual ? "bp-split" : undefined}>
+          <div>
+            <p className="bp-text">{ownershipLead}</p>
+            {ownershipRest ? (
+              <details className="bp-more">
+                <summary>Full ownership note</summary>
+                <p className="bp-text">{ownershipRest}</p>
+              </details>
+            ) : null}
+          </div>
+          {ownershipVisual ? <BrandVisual visual={ownershipVisual} /> : null}
+        </div>
         {profile.leadership.length > 1 ? (
           <ul className="bp-people" aria-label="Leadership">
             {profile.leadership.map((person) => (
@@ -158,6 +175,7 @@ export function BrandSections({
             ))}
           </div>
         ) : null}
+        {portfolioVisual ? <div className="bp-ops-visual"><BrandVisual visual={portfolioVisual} /></div> : null}
         <ul className="bp-lines">
           {profile.productPortfolio.map((line) => (
             <li key={line.name}>
@@ -181,7 +199,7 @@ export function BrandSections({
         </div>
         {operationsVisual ? <div className="bp-ops-visual"><BrandVisual visual={operationsVisual} /></div> : null}
         {checks.length ? (
-          <details className="bp-checks" open>
+          <details className="bp-checks">
             <summary>For buyers and distributors: what to verify ({checks.length})</summary>
             <ol>{checks.map((check) => <li key={check}>{check}</li>)}</ol>
           </details>
@@ -189,7 +207,10 @@ export function BrandSections({
       </Card>
 
       <Card id="competitive-position" title="Competition" icon="bar-chart">
-        {viewRest ? <p className="bp-text"><b>WCB view:</b> {viewRest}</p> : null}
+        <div className={competitionVisual ? "bp-split" : undefined}>
+          {viewRest ? <p className="bp-text"><b>WCB view:</b> {viewRest}</p> : <span />}
+          {competitionVisual ? <BrandVisual visual={competitionVisual} /> : null}
+        </div>
         {competitors.length ? (
           <div className="bp-competitors">
             {competitors.map((competitor) => (
