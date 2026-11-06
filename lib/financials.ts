@@ -24,6 +24,8 @@ export type FinancialResult = {
   profitChange?: string;
   /** The company gives the profit amount as approximate ("approx."). */
   approximate?: boolean;
+  /** Worked out from two filed cumulative figures (full year minus nine months, or half year minus first quarter). */
+  derived?: boolean;
   /** WCB news story on this release, if any. */
   news?: string;
   source: { label: string; url: string };
@@ -41,6 +43,14 @@ export function latestResults(results: FinancialResult[] = financialResults) {
   return [...latestByCompany.values()].sort(
     (a, b) => (b.reported ?? b.periodEnd).localeCompare(a.reported ?? a.periodEnd) || a.name.localeCompare(b.name)
   );
+}
+
+/** One company's quarters, oldest to newest, the most recent `limit` of them. */
+export function resultsForBrand(brand: string, limit = 5, results: FinancialResult[] = financialResults) {
+  return results
+    .filter((result) => result.brand === brand)
+    .sort((a, b) => a.periodEnd.localeCompare(b.periodEnd))
+    .slice(-limit);
 }
 
 /** Year-on-year change computed from the two reported amounts, e.g. "+21.2%". */
