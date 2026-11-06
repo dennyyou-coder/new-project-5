@@ -1,0 +1,72 @@
+/* Shared visual kit: company marks, category icons, figure chips. */
+
+.company-mark {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.company-mark img { display: block; max-width: 84%; max-height: 62%; object-fit: contain; }
+.company-mark--xs { width: 40px; height: 26px; border-radius: 6px; }
+.company-mark--sm { width: 56px; height: 36px; border-radius: 8px; }
+.company-mark--md { width: 96px; height: 52px; }
+.company-mark--lg { width: 148px; height: 76px; border-radius: 14px; }
+.company-mark--monogram {
+  background: var(--soft-blue);
+  border-color: var(--soft-blue);
+  color: var(--navy);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.company-mark--xs.company-mark--monogram { font-size: 10px; }
+.company-mark--sm.company-mark--monogram { font-size: 12px; }
+.company-mark--md.company-mark--monogram { font-size: 16px; }
+.company-mark--lg.company-mark--monogram { font-size: 24px; }
+
+.company-mark-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+.company-mark-text { display: grid; min-width: 0; line-height: 1.3; }
+.company-mark-name { font-weight: 800; color: var(--navy); }
+.company-mark-caption { font-size: 0.82rem; color: var(--muted); }
+a.company-mark-link:hover .company-mark { border-color: var(--accent); }
+a.company-mark-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 10px; }
+
+.category-icon {
+  --category-color: var(--accent);
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  color: var(--category-color);
+  background: color-mix(in srgb, var(--category-color) 12%, #fff);
+  border-radius: 10px;
+}
+.category-icon svg { width: 60%; height: 60%; }
+.category-icon--sm { width: 30px; height: 30px; border-radius: 8px; }
+.category-icon--md { width: 44px; height: 44px; }
+.category-icon--lg { width: 60px; height: 60px; border-radius: 14px; }
+
+.figure-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  background: var(--soft);
+  color: var(--navy);
+}
+.figure-chip-label { font-weight: 600; }
+.figure-chip--up { background: #e2f4ec; color: #13795b; }
+.figure-chip--down { background: #fbe7e4; color: #b4372d; }
