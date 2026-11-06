@@ -133,7 +133,7 @@ export function BrandSections({
                     caption="Manufacturing and supply-chain evidence"
                     columns={[
                       { key: "evidence", label: "What we found" },
-                      { key: "scope", label: "Scope" },
+                      { key: "scope", label: "Where it applies" },
                       { key: "buyerCheck", label: "What to check" }
                     ]}
                     rows={profile.manufacturingSupplyChain.map((item) => ({
@@ -149,7 +149,7 @@ export function BrandSections({
                     caption="Markets and channels evidence"
                     columns={[
                       { key: "evidence", label: "What we found" },
-                      { key: "scope", label: "Scope" },
+                      { key: "scope", label: "Where it applies" },
                       { key: "buyerCheck", label: "What to check" }
                     ]}
                     rows={profile.marketsChannels.map((item) => ({
