@@ -40,7 +40,14 @@
     {
       "name": "Fang Hongbo",
       "role": "Chairman and President of Midea Group",
-      "context": "Midea's current investor materials identify Fang Hongbo as the group's chairman and president."
+      "context": "Midea's current investor materials identify Fang Hongbo as the group's chairman and president.",
+      "portrait": {
+        "src": "/images/brands/midea/leader-fang-hongbo.webp",
+        "alt": "Fang Hongbo, chairman and president of Midea Group",
+        "credit": "Midea Group corporate governance page; cropped by World Clean Biz",
+        "sourceUrl": "https://www.midea.com.cn/en/Investors/Governance",
+        "objectPosition": "center top"
+      }
     },
     {
       "name": "He Xiangjian",
@@ -169,5 +176,5 @@
   ],
   "publishedAt": "2026-07-31T15:30:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T15:30:00+08:00"
+  "lastModified": "2026-11-06T12:00:00+08:00"
 }

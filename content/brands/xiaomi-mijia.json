@@ -29,7 +29,7 @@
     "parentCompany": "Xiaomi Corporation"
   },
   "leadership": [
-    {"name": "Lei Jun", "role": "Founder, Chairman and Chief Executive Officer of Xiaomi Corporation", "context": "Xiaomi's current corporate materials identify Lei Jun as founder, chairman and CEO of the listed group; this does not make him the operating lead of every ecosystem company."}
+    {"name": "Lei Jun", "role": "Founder, Chairman and Chief Executive Officer of Xiaomi Corporation", "context": "Xiaomi's current corporate materials identify Lei Jun as founder, chairman and CEO of the listed group; this does not make him the operating lead of every ecosystem company.", "portrait": {"src": "/images/brands/xiaomi-mijia/leader-lei-jun.webp", "alt": "Lei Jun, founder, chairman and CEO of Xiaomi", "credit": "Xiaomi investor relations board page; cropped by World Clean Biz", "sourceUrl": "https://ir.mi.com/corporate-information/board-of-directors", "objectPosition": "center top"}}
   ],
   "productPortfolio": [
     {"name": "Floorcare and cleaning", "positioning": "Official Xiaomi smart-home pages list robot vacuums, cordless stick vacuums and wet-and-dry cleaning products, with availability varying by market.", "buyerRelevance": "Verify navigation and app-region support, consumables, battery and charger, floor compatibility, data terms and local repair coverage."},
@@ -67,5 +67,5 @@
   ],
   "publishedAt": "2026-08-07T14:52:59+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-08-07T14:52:59+08:00"
+  "lastModified": "2026-11-06T12:00:00+08:00"
 }
