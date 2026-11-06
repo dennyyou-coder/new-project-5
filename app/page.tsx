@@ -186,7 +186,7 @@ export default function HomePage() {
           {expoUpcoming ? (
             <article className="home-b-feature">
               <Link className="home-b-feature-image" href="/wcb-expo" tabIndex={-1} aria-hidden="true">
-                <img src={EXPO_2026.image} alt="" width={1672} height={941} loading="eager" decoding="async" />
+                <img src={EXPO_2026.image} srcSet={`${EXPO_2026.image.replace(/\.webp$/, "-800.webp")} 800w, ${EXPO_2026.image} 1672w`} sizes="(max-width: 900px) calc(100vw - 32px), 40vw" alt="" width={1672} height={941} loading="eager" decoding="async" fetchPriority="high" />
               </Link>
               <div className="home-b-feature-copy">
                 <p className="home-b-feature-kicker">Event · {EXPO_2026.dates}</p>

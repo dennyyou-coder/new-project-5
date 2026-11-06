@@ -15,6 +15,7 @@ import { productCover, productSelectionYear } from "@/lib/products";
 import { buildWebsiteMetadata } from "@/lib/seo";
 import { LogoTileImage } from "@/components/ui/LogoTileImage";
 import { brandLogoTile } from "@/lib/brandLogoTiles";
+import { siteVisualProps } from "@/lib/siteVisuals";
 
 const siteUrl = "https://worldcleanbiz.com";
 type Props = { params: Promise<{ slug: string }> };
@@ -129,7 +130,7 @@ export default async function CategoryHubPage({ params }: Props) {
           </div>
           {visual ? (
             <figure className={`ch-hero-visual ch-hero-visual--${visual.kind}`}>
-              <img src={visual.src} alt="" width={1536} height={1024} loading="eager" decoding="async" />
+              {visual.kind === "photo" ? <img {...siteVisualProps(visual.src, "(max-width: 860px) calc(100vw - 48px), 45vw")} alt="" loading="eager" fetchPriority="high" /> : <img src={visual.src} alt="" width={1536} height={1024} loading="eager" decoding="async" />}
             </figure>
           ) : null}
         </div>
