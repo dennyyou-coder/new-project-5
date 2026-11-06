@@ -45,10 +45,4 @@ jobs:
       - run: npm run test:guides
       - run: npm run test:news
       - run: npm run test:brands
-
-      # Known failure already on main. It runs and reports here, but does not
-      # block the check until it is fixed:
-      # - test:lead: the /wcb-expo exhibitor CTA test (plan item PR-01).
-      - name: test:lead (known failure, non-blocking)
-        run: npm run test:lead
-        continue-on-error: true
+      - run: npm run test:lead
