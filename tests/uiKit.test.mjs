@@ -124,3 +124,17 @@ test("equipment and component directory groups cover every published profile exa
     assert.equal(new Set(listed).size, listed.length, `${dir} lists a profile twice`);
   }
 });
+
+test("article search titles stay within 60 characters and the page heading keeps the full title", async () => {
+  const { readdirSync, readFileSync } = await import("node:fs");
+  let count = 0;
+  for (const name of readdirSync("content/insights").filter((file) => file.endsWith(".mdx"))) {
+    const source = readFileSync(`content/insights/${name}`, "utf8");
+    const match = source.match(/^seoTitle:\s*"(.*)"\s*$/m);
+    if (!match) continue;
+    count += 1;
+    assert.ok(match[1].length <= 60, `${name}: seoTitle is ${match[1].length} characters`);
+  }
+  assert.ok(count > 0);
+  assert.match(read("app/blog/[slug]/page.tsx"), /seoTitle\(article\.seoTitle \|\| article\.title\)/);
+});
