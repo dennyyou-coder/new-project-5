@@ -29,7 +29,7 @@
     "parentCompany": "Hon Hai Precision Industry Co., Ltd."
   },
   "leadership": [
-    {"name": "Tetsuji Kawamura", "role": "President and Chief Executive Officer, Sharp Corporation", "context": "Sharp's current corporate overview identifies Kawamura as President and CEO; this is leadership of Sharp Corporation, not a separate Sharp Appliances legal company."}
+    {"name": "Tetsuji Kawamura", "role": "President and Chief Executive Officer, Sharp Corporation", "context": "Sharp's current corporate overview identifies Kawamura as President and CEO; this is leadership of Sharp Corporation, not a separate Sharp Appliances legal company.", "portrait": {"src": "/images/brands/sharp-appliances/leader-tetsuji-kawamura.webp", "alt": "Tetsuji Kawamura, president and CEO of Sharp Corporation", "credit": "Sharp Corporation CEO message page (Japanese); cropped by World Clean Biz", "sourceUrl": "https://corporate.jp.sharp/info/vision/message/", "objectPosition": "center top"}}
   ],
   "productPortfolio": [
     {"name": "Major home appliances", "positioning": "Sharp's official business materials cover refrigerators, washing machines, air conditioners, dishwashers and other large appliances, with regional catalogues differing materially.", "buyerRelevance": "Confirm the exact regional model, capacity, energy label, electrical standard, installer and warranty entity."},
@@ -68,5 +68,5 @@
   ],
   "publishedAt": "2026-08-07T22:20:00+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-08-07T22:20:00+08:00"
+  "lastModified": "2026-11-06T00:30:00+08:00"
 }

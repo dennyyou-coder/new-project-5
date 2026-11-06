@@ -28,7 +28,7 @@
     "summary": "The Toro Company designs, manufactures and markets products under the Toro brand and is a publicly traded company listed on the New York Stock Exchange. Toro is the product brand; The Toro Company is the corporate entity behind it. No separate parent company is asserted on this page."
   },
   "leadership": [
-    {"name": "Edric C. Funk", "role": "President and Chief Executive Officer, The Toro Company", "context": "Elected by the board on 21 July 2026 to succeed Richard M. Olson as chief executive officer effective 1 November 2026; previously president and chief operating officer. Corporate leadership of The Toro Company, not a separate Toro brand company."},
+    {"name": "Edric C. Funk", "role": "President and Chief Executive Officer, The Toro Company", "context": "Elected by the board on 21 July 2026 to succeed Richard M. Olson as chief executive officer effective 1 November 2026; previously president and chief operating officer. Corporate leadership of The Toro Company, not a separate Toro brand company.", "portrait": {"src": "/images/brands/toro/leader-edric-funk.webp", "alt": "Edric C. Funk, president and CEO of The Toro Company", "credit": "The Toro Company CEO succession announcement photo; cropped by World Clean Biz", "sourceUrl": "https://www.thetorocompany.com/news-releases/news-release-details/toro-company-elects-president-and-chief-operating-officer-edric", "objectPosition": "center top"}},
     {"name": "Richard M. Olson", "role": "Executive Chairman of the Board, The Toro Company", "context": "Chief executive officer from 2016 until 1 November 2026, when he moved to executive chairman under the announced succession plan."}
   ],
   "productPortfolio": [
@@ -68,5 +68,5 @@
   ],
   "publishedAt": "2026-08-07T23:50:00+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-11-05T22:30:00+08:00"
+  "lastModified": "2026-11-06T00:30:00+08:00"
 }
