@@ -29,3 +29,9 @@
   .structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .brand-data-table td:first-child { font-weight: 700; color: #163B67; }
   .structure-refresh.design-a .equipment-detail .equipment-table-scroll { overflow: visible; border: 0; background: transparent; }
 }
+
+/* Header: scope lists fold behind one control; the disclaimer reads as a small note. */
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .hero-scope-fold { margin: 16px 0 6px; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .hero-scope-fold[open] > summary { margin-bottom: 12px; }
+.structure-refresh.design-a .equipment-detail .equipment-hero .equipment-hero-copy > p.equipment-disclaimer,
+.structure-refresh.design-a .component-intelligence-detail .component-intelligence-hero .component-intelligence-hero-copy > p.component-intelligence-disclaimer { font-size: 13px; line-height: 1.55; }

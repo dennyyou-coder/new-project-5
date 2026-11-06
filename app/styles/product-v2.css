@@ -71,3 +71,11 @@ body.structure-refresh.design-a .approved-catalog.products-page .pv-point p + p 
   body.structure-refresh.design-a .approved-catalog.products-page .product-section-nav a { flex: none; }
   body.structure-refresh.design-a .approved-catalog.products-page .pv-hero-facts dd { font-size: 14px; }
 }
+
+/* Phones and small tablets: product image first, at a modest height. */
+@media (max-width: 800px) {
+  body.structure-refresh.design-a .approved-catalog.products-page .product-detail-hero { display: flex; flex-direction: column; gap: 20px; }
+  body.structure-refresh.design-a .approved-catalog.products-page .product-detail-hero > .product-model-cover { order: -1; padding: 12px; }
+  body.structure-refresh.design-a .approved-catalog.products-page .product-detail-hero > .product-model-cover img { height: 230px; }
+  body.structure-refresh.design-a .approved-catalog.products-page .product-detail-hero > .product-model-cover figcaption { margin-top: 8px; }
+}
