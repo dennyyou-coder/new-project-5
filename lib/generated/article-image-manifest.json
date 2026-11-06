@@ -2159,6 +2159,170 @@
       "sourceHash": "sha256:17cc4fef9144dcd572cbf61cf71e2ef888821781bf462ad7fcd0049372f1a12f",
       "outputHash": "sha256:1e6b5c416e3a62805a5832cb2db86e7713512cf0ddd8ceeaffc8101daea98a96"
     },
+    "/images/articles/bissell-vs-tineco-patent-details/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 24252,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a4671c5d50be10842e9896a5ecef579e0b0dbef648509a2c4ab8c284c1e41635",
+      "outputHash": "sha256:1add2244de986ad7ef8a872014afaf5032fe807a8607d5bd280533c47b657c38",
+      "mobile": {
+        "src": "/images/articles/bissell-vs-tineco-patent-details/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 9442,
+        "outputHash": "sha256:d4d5206d36da3a64bfa7087aebd5ea5d6d4ab8a6480272a0ef39b054ecadd9ef"
+      }
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/02-image-002.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 847,
+      "height": 479,
+      "bytes": 76228,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:bf419cd8937e0e39795745f11c7e94eab20390f31a7714686fc00f05f4958374",
+      "outputHash": "sha256:e2c342ae1bbb4789dce3f488d90996a107aebc104ba702f9c08b80534be30179"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/03-image-003.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 414,
+      "height": 454,
+      "bytes": 11294,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:2bad1bb43a01087f48cb207fb290440f8eea050612b1bab5c123191eebd1600f",
+      "outputHash": "sha256:3534b34dee835ac6f00fc4c4f9ebab463da0adf076c9946368e8f991a0c16afb"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/04-image-004.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 890,
+      "height": 530,
+      "bytes": 47216,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:cd063ed0bd6a34eedefe16fe4a2993c03113cec07f876250695cca01dcd23a37",
+      "outputHash": "sha256:f0c41f222839b2d880425289d0d367ddb132290b682e2fbd20387eee0db6fab6"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/05-image-005.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 879,
+      "height": 479,
+      "bytes": 105996,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0dff25958c47a995174f639f8652a89fc1f52d5ca67105d7a9524b0a25608c59",
+      "outputHash": "sha256:45a44dac2cdc8cabee59d1208e0fc0961ac6bc9925ad3327172d3ab3d5ba8e57"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/06-image-006.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1065,
+      "height": 540,
+      "bytes": 53040,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1bf7ec1ba2cbb32f95db0b7bf945378781a2a4b2d2f889aa5946b13d7bfed2aa",
+      "outputHash": "sha256:8b158d0b0aedfd2ff364543d210fac7a1c8474f9014e75ed64111ba519509839",
+      "mobile": {
+        "src": "/images/articles/bissell-vs-tineco-patent-details/06-image-006-800.webp",
+        "width": 800,
+        "height": 406,
+        "bytes": 34670,
+        "outputHash": "sha256:87986feafc424a4cd3245d117e05e918b25866c415b735c5a5ed58ea43793379"
+      }
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/07-image-007.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 850,
+      "height": 453,
+      "bytes": 32966,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:29116e02945427f313272afea76f9e2c2bb6f8f1f5105921c8fdcf925af7c4bb",
+      "outputHash": "sha256:697313659ca3480dfa24bab44cb05b9d2a5f2176b3e5071875b1dba73ef3654a"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/08-image-008.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1158,
+      "height": 443,
+      "bytes": 106612,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:eb9a4c4291658b17b48e8bc3f694f120904031bfb9657dc5f8dd95717d480e51",
+      "outputHash": "sha256:314fdc3fc731d28c2c9aea09233de67da605f9e88d04b26fb9f3555530b1b748",
+      "mobile": {
+        "src": "/images/articles/bissell-vs-tineco-patent-details/08-image-008-800.webp",
+        "width": 800,
+        "height": 306,
+        "bytes": 61396,
+        "outputHash": "sha256:cf5de338a2d85683c39d80252e76b900e5977a020e8b9d0430055e4851fca495"
+      }
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/09-image-009.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 512,
+      "height": 487,
+      "bytes": 15596,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6982d41d3bff3172c8a25a878c4ec87d5ea0c8c077ae592ca1ca51d712cde6d2",
+      "outputHash": "sha256:99c7b42d104e558bca847dc7e0f9062aadcaf165811992c8619bd6f37fa49021"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/10-image-010.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 882,
+      "height": 518,
+      "bytes": 40970,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:4292274da49fc6be493176f3e57caafd234d6ac3f738149a60487d8e710c5923",
+      "outputHash": "sha256:a4b8e700177b4445ab3758d5475364713212e70271acba780481e598d725b6fc"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/11-image-011.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 799,
+      "height": 362,
+      "bytes": 42784,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:d65e281352a436c8360895705755c5bcadfbf98bfa51d9302e4c64a399648344",
+      "outputHash": "sha256:f0af57c5a721e93ed438fcd8915101678b3c83dc5a19ff32cb5c6ce749a2c03d"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/12-image-012.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 905,
+      "height": 378,
+      "bytes": 64464,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a9bd72b8f68dd10ee9ac87b42b54e38be8b59045f795cfc108b470d8b9b340fe",
+      "outputHash": "sha256:24e509d605156aea801d4ad75dfa7130a0df5cf5415e8f66296122615e0f4496"
+    },
+    "/images/articles/bissell-vs-tineco-patent-details/13-image-013.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 564,
+      "height": 531,
+      "bytes": 46872,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:0e91786cb917e14861e85e4729b24cc0b9b63d52b0d7615ea0f46bb7b0be09d3",
+      "outputHash": "sha256:2392c702374e3465878f5091c2d7b329aa3aef969ca8f4ce3ff27422b0ead5ac"
+    },
     "/images/articles/bosch-unlimited-10-bbs104sbuc/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -4179,6 +4343,82 @@
         "outputHash": "sha256:a0f984ade5c9a88342135bc8032ead48fb42e0704836aeb6ef525f073dd32b8d"
       }
     },
+    "/images/articles/dyson-fights-bosch-again/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41886,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:378adf7525d29e3b6e8a01cd41e39f16bc43f98cdde66a120e5b19e93c040710",
+      "outputHash": "sha256:eb5fffe18d678fb08c1240afd29737ac5c308b4e6305a38d42306dad36d13b4f",
+      "mobile": {
+        "src": "/images/articles/dyson-fights-bosch-again/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16144,
+        "outputHash": "sha256:5fbe4e75f8187debe0370310cb67530827bfd340ace15a1ab36491ddec8f8ef7"
+      }
+    },
+    "/images/articles/dyson-fights-bosch-again/02-image-002.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1246,
+      "height": 574,
+      "bytes": 45692,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:dd661ff6a616f33a64cd836dbfce7edda08efeb4b5b73567989cbcc0ebb4c896",
+      "outputHash": "sha256:4e5a3bed2a8433eacd0edf4583ecb750bac69ebcbe9fc909c0df7dcb02147eec",
+      "mobile": {
+        "src": "/images/articles/dyson-fights-bosch-again/02-image-002-800.webp",
+        "width": 800,
+        "height": 369,
+        "bytes": 25108,
+        "outputHash": "sha256:c5f3dc46f6866b4f157b2eeb315cd020a17654fe4a7c40ce2b5a818af4d954d6"
+      }
+    },
+    "/images/articles/dyson-fights-bosch-again/03-image-003.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 800,
+      "height": 449,
+      "bytes": 41688,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:12cc875e01f65b9fc376af367b3c78997ea274d0a4925ee19e6d49815f5b311b",
+      "outputHash": "sha256:b456416e10f2596d1312f823eae70defb3a5dae19c1ed664e35575b442143393"
+    },
+    "/images/articles/dyson-fights-bosch-again/04-image-004.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1150,
+      "height": 421,
+      "bytes": 74636,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:accf8ffffc1dcd84270423d5b5e58f22ee16cadfba4cf52e32f2f81f6223f880",
+      "outputHash": "sha256:6b05db82522bd6eb47acc7e680e93e193f7a1624735cdeb6dc41abbc1ea3ccd1",
+      "mobile": {
+        "src": "/images/articles/dyson-fights-bosch-again/04-image-004-800.webp",
+        "width": 800,
+        "height": 293,
+        "bytes": 45366,
+        "outputHash": "sha256:e98cb74c28d879181efa1a91ea7c7d1a4b7f4ed50c47c0b105a44dda12883bed"
+      }
+    },
+    "/images/articles/dyson-fights-bosch-again/05-image-005.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 630,
+      "height": 630,
+      "bytes": 30206,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:38fca0a133292c1cadf6cbf4bff0635bb2b781fb67facb99546ac92f841da2ff",
+      "outputHash": "sha256:1983fc02b402012c9c70e8a700f4c2c6188fc46ab79d5559af29d9313887b925"
+    },
     "/images/articles/dyson-pencilwash/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -5416,6 +5656,114 @@
         "outputHash": "sha256:6241a996212ff57e34adeea35286f4159f2d730a73c1799fc482c277ed975427"
       }
     },
+    "/images/articles/floor-scrubber-not-dispensing-water/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 25642,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4113171b3b479c3d8fb2584799063c99c9f352c1f394a7263c3cbc1d1804711d",
+      "outputHash": "sha256:a320945cf5c42a0c816336df7605fc5df6e4c18d2a9dbaac4ab3b5ac1e503b92",
+      "mobile": {
+        "src": "/images/articles/floor-scrubber-not-dispensing-water/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 9954,
+        "outputHash": "sha256:1c2ed8989b998f475cacf80b1001278b5585583fce7a14091506e1e7ccb43887"
+      }
+    },
+    "/images/articles/floor-scrubber-not-dispensing-water/02-floor-scrubber-solution-flow-diagnostic-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 140376,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b8d412af733366a0e474bb75d0475325798a87ed1e4a99dd878a977b03a6246e",
+      "outputHash": "sha256:4d2ffd83d3fb8f938103eac3a2498661ce322e9ca3482e64d5752d0fcca9be69",
+      "mobile": {
+        "src": "/images/articles/floor-scrubber-not-dispensing-water/02-floor-scrubber-solution-flow-diagnostic-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 66042,
+        "outputHash": "sha256:b801e8e6a420038311224f48785c3b63cb36939cc9ca3a7f95012434d7a51a54"
+      }
+    },
+    "/images/articles/floor-scrubber-not-dispensing-water/03-floor-scrubber-no-low-uneven-flow-matrix.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 170884,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:73be7315323aab71aa3da7ccf3d20fb9f09efc7ecf1bd41230fa8f2e7daa60b1",
+      "outputHash": "sha256:0b366f38d9908cd18c4549e02a0f5a3ceb4aafa844953b61a3d9ab0c2d252453",
+      "mobile": {
+        "src": "/images/articles/floor-scrubber-not-dispensing-water/03-floor-scrubber-no-low-uneven-flow-matrix-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 76540,
+        "outputHash": "sha256:0754de9b46326ac0899add45682be64be23275e0ef6589b811a49d16f5bbe085"
+      }
+    },
+    "/images/articles/floor-scrubber-not-picking-up-water/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 23940,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ceb2c5c5129c66c663f8bdbaea3aaaf4c7fb4c5a4bd00a93c4c4d2551897edda",
+      "outputHash": "sha256:d7f1264335300b3072e86df2b55a3e298e3d3ff06909f59d26988815d02c704d",
+      "mobile": {
+        "src": "/images/articles/floor-scrubber-not-picking-up-water/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 9168,
+        "outputHash": "sha256:a97062f6ce8b040e1a3743253fc2e33c9dbb14952c119929b2fcdc1dc598ca7c"
+      }
+    },
+    "/images/articles/floor-scrubber-not-picking-up-water/02-floor-scrubber-water-recovery-troubleshooting.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 172716,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:efcad189fe47a0a0cd81bb9c5cebd0a3fb8a40742ee418c43f0ff97521c27606",
+      "outputHash": "sha256:9544007d953b8b3db5d11fc4b9996ee5f77d6b5a22dc0a9b3a9784b6b24d3a31",
+      "mobile": {
+        "src": "/images/articles/floor-scrubber-not-picking-up-water/02-floor-scrubber-water-recovery-troubleshooting-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 76028,
+        "outputHash": "sha256:ab2da70b175aa47b802e1f9837705be0830b8c5f1dbf0e554f56e01d1703797f"
+      }
+    },
+    "/images/articles/floor-scrubber-not-picking-up-water/03-floor-scrubber-troubleshooting-service-boundary.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 160876,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:981a31684b2902b6631ecc242b60e14b5ab0d1111ef849f07963912f8860482f",
+      "outputHash": "sha256:f5210743a43c7ce2a9562b0c23096601c6fa6b3ba1063cf6d4ff68a27598c373",
+      "mobile": {
+        "src": "/images/articles/floor-scrubber-not-picking-up-water/03-floor-scrubber-troubleshooting-service-boundary-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 71802,
+        "outputHash": "sha256:ada6bf21b30c143d8f64d99becc369fe3243b1fb878cfecfa4030eb25b74748a"
+      }
+    },
     "/images/articles/fujia-first-half-results-august-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -5541,6 +5889,93 @@
         "bytes": 28262,
         "outputHash": "sha256:9a7a2796dc63d84e05f3105159412357637fe6f5a73b6a23d09ff24dc3022d66"
       }
+    },
+    "/images/articles/german-vacuum-brands-in-the-cordless-wave/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43976,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:167c75f7be205579a6cbb4b2169cac32e311a2ea608e72746e7d40fbc457e70e",
+      "outputHash": "sha256:1bc563cc1574cf38d7813069fc13bdfab5a8f9092f6d5d3aefda35b35ef1eccc",
+      "mobile": {
+        "src": "/images/articles/german-vacuum-brands-in-the-cordless-wave/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16770,
+        "outputHash": "sha256:915ae22b6b84357bf1b4ace4a424427a53c2095d9005b08622e18e61748b1b13"
+      }
+    },
+    "/images/articles/german-vacuum-brands-in-the-cordless-wave/02-image-002.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 631,
+      "height": 152,
+      "bytes": 14244,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c9091d5fad4b87d3e217285713b4d5382617b0dc549d8a5194757b9e65c70046",
+      "outputHash": "sha256:aba1852582c1cf5c72f0e7dd73d883dea78153b5fa8ed9be2dab926eba77c1a1"
+    },
+    "/images/articles/german-vacuum-brands-in-the-cordless-wave/03-image-003.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1274,
+      "height": 454,
+      "bytes": 84106,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ae4f1b78863ec41aee33781daeefdc6540fa0af3630c7b6690fe0a0d65d8c47b",
+      "outputHash": "sha256:ad3582750d31113dd1c20633f2121db6e56fd388880ac01f0bc4d2b4e1497762",
+      "mobile": {
+        "src": "/images/articles/german-vacuum-brands-in-the-cordless-wave/03-image-003-800.webp",
+        "width": 800,
+        "height": 285,
+        "bytes": 41076,
+        "outputHash": "sha256:20eaf3341d064105a6dc4192b689dffd16130cf80e86dd62780d712a89effd31"
+      }
+    },
+    "/images/articles/german-vacuum-brands-in-the-cordless-wave/04-image-004.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 938,
+      "height": 462,
+      "bytes": 41990,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c1651b4f3475870a81f23d51e5d6b3a5ef3428b57b66b3e01abad44eca93b935",
+      "outputHash": "sha256:7e7342c70dfe23acd8992e40e8c3436ff80791156314a26769d79bca3a70b00a",
+      "mobile": {
+        "src": "/images/articles/german-vacuum-brands-in-the-cordless-wave/04-image-004-800.webp",
+        "width": 800,
+        "height": 394,
+        "bytes": 31322,
+        "outputHash": "sha256:7764abdb154f283c13c01c6a26a5720af728c5f06ee8a080188e0b7af5eca1d8"
+      }
+    },
+    "/images/articles/german-vacuum-brands-in-the-cordless-wave/05-image-005.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 744,
+      "height": 260,
+      "bytes": 13434,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b78cf1de48ec2ac90a0c9c92b36bcd74054e05bd266287d29a34a1024d4a69aa",
+      "outputHash": "sha256:c7e2d2330bef214dae27c62c387591be50aa614fffd642353d3ed3f77aef503a"
+    },
+    "/images/articles/german-vacuum-brands-in-the-cordless-wave/06-image-006.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 753,
+      "height": 352,
+      "bytes": 23366,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:45aae950464d2b54a68367b207bf8f7d69afdb5e07ba3a53ffc7ff8699143831",
+      "outputHash": "sha256:77ef0446e4f968ec6ab73b0b4f339e060720e3387f584aaa7fd828ca2438ddbc"
     },
     "/images/articles/global-power-tool-companies/01-cover.webp": {
       "role": "cover",
@@ -7569,6 +8004,141 @@
       "sourceHash": "sha256:4cbda578f93d75ac723d7b337b9a1d3136417cfb0657def4d1e63e68513aa7f0",
       "outputHash": "sha256:c0df4dee2a3175e8b301c014d55b800b978a7e1b090d1255c8cc3aa4cfd8d8f9"
     },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 20202,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:cd76cb5aabae441fcf9204ddab97f4efc39aebf42c465000dc2b623644087daf",
+      "outputHash": "sha256:54b70261e59e1d2d1ea052a505239b3a79cb122e49bcd5b0d3f551cf7b0eb8bd",
+      "mobile": {
+        "src": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 8112,
+        "outputHash": "sha256:875a073676593540c2b6968ff5a6d783b86b60e096ca6f24f879c90366847bda"
+      }
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/02-image-002.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 653,
+      "height": 144,
+      "bytes": 5502,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ff97561ed565c37185ba70cac60e966035fd022421aeae69e495d1695c4f2c18",
+      "outputHash": "sha256:f011fe25ca6789a296fdd8c259b850613224c69f7d5eb6414cf518b4ce9f9910"
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/03-image-003.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1190,
+      "height": 602,
+      "bytes": 84938,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:808b587091b421e6e5c58c8265fd4f49961e2abca8aee35e38ab38d583ec9b92",
+      "outputHash": "sha256:d9142bdfa61d459fe52148858eb139a5ed165934c3d029084cc67f9d6a307f53",
+      "mobile": {
+        "src": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/03-image-003-800.webp",
+        "width": 800,
+        "height": 405,
+        "bytes": 52938,
+        "outputHash": "sha256:d637a0600a09a2e0f249bd358d8ab57e631a5b7c8776819dd095f30c8faaf6c0"
+      }
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/04-image-004.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 438,
+      "height": 539,
+      "bytes": 47094,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:2f8db41720a77ebb2ab54bf089e60f5ccc3ca7294e868dab4e41aaba4ba126c9",
+      "outputHash": "sha256:688397f5b6d728a4b2d46a50308a684d34caa8c7c3f825eb3d4db8941c23fd85"
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/05-image-005.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 978,
+      "height": 353,
+      "bytes": 74676,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:57785f2747fa0a2a8f8781506a581707901a77e53bb85461c5ff4385bf9111eb",
+      "outputHash": "sha256:8a1c23e9825fa8cefba0a1704155e9a8e8b576672d3e036dddc01edebb062261"
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/06-image-006.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 949,
+      "height": 315,
+      "bytes": 64038,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:b39ba52a624f2736d6d858f786df4add8245f04cdfe89421b8e8445b80016cc5",
+      "outputHash": "sha256:ffb465781b3079fa451149968bbb6fb2b6dc29b92ea0fcd9888b3631862ef8c3"
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/07-image-007.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 765,
+      "height": 267,
+      "bytes": 40812,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a35fcc162391daf1204b43d74207620ada78eef118b86baca4cfa56125eaa15a",
+      "outputHash": "sha256:a198c5a4973f52600ef64ded5a8ac365eb6f30b0be3382cdcebf2efbf330b4cd"
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/08-image-008.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 762,
+      "height": 562,
+      "bytes": 88650,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7fef5ec81d483997eb246a375b05dd7e771af22ad2b3e60a520595d29a6e4854",
+      "outputHash": "sha256:b10ea56485f495a1c1fb4f57acd63ede3756538a9dba60f4928743dda02b0fb6"
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/09-image-009.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 746,
+      "height": 432,
+      "bytes": 59448,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7ba5cd41091f8a88cf0cc8d02c537a5f9986f9adef1d7a6af3686cae467c7da5",
+      "outputHash": "sha256:e2580c2a94de8a103177fdd740e9497ece35b50a91c66e1ac63b9fa9ebfe83c8"
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/10-image-010.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 596,
+      "height": 156,
+      "bytes": 5122,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:d359f85ffd1bed7fe27ceb172bba7019f6610612c4e55c1d88125fc07432af99",
+      "outputHash": "sha256:b43b84e5b20654dbd0deb28ae2c33c8a7be11a0656cf09f08e8703e7d9b4d5e6"
+    },
+    "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/11-image-011.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 424,
+      "height": 141,
+      "bytes": 4146,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f41f2c13b3e57e7b91ceb6fcd7e83e1be369afd61f8982c87366812128fb95fc",
+      "outputHash": "sha256:737d112646047c22d0c64f3d3b5690f917fa6908d20702ccba74e33167e7e641"
+    },
     "/images/articles/ldrobot-anthbot-brand-story/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -9465,6 +10035,114 @@
         "outputHash": "sha256:c2e53d92873c73cb91bfa505eab3b9bb6a5612b04eb389a95b26d9af6a2148cb"
       }
     },
+    "/images/articles/robot-lawn-mower-keeps-getting-stuck/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31864,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:92b8be55431731745d016875ead7c0beb4258b06f316a5d100150b495b61bd84",
+      "outputHash": "sha256:de0de32deefc32f3b1e3a16754371be9847bf64105f3f3ba9148a46a0add9adb",
+      "mobile": {
+        "src": "/images/articles/robot-lawn-mower-keeps-getting-stuck/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12094,
+        "outputHash": "sha256:23f19f58d7ecfb8e8c2ddc03a6fa55bf77699c2999bc30725cbdb6e3ac950911"
+      }
+    },
+    "/images/articles/robot-lawn-mower-keeps-getting-stuck/02-robot-lawn-mower-stuck-diagnostic-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 289112,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f382dfb926b332d5fe01029fad0bcb379130a1f545b5ea9d428d792aae5ef924",
+      "outputHash": "sha256:a3c59b50de9b0b5b3f53926b3bd9ab787b421980d7f36c0c861c2ec73567247a",
+      "mobile": {
+        "src": "/images/articles/robot-lawn-mower-keeps-getting-stuck/02-robot-lawn-mower-stuck-diagnostic-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 112986,
+        "outputHash": "sha256:22c4b59d4fa4d919fc4c990f24aba94d22798ae3b30c604becfea27d7a3ffb45"
+      }
+    },
+    "/images/articles/robot-lawn-mower-keeps-getting-stuck/03-robot-mower-rescue-hotspot-and-acceptance.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 201272,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3fa2bf033eb263db5c3ef0cd5342e0b70859d227d5d0e7dfc7b95f64545c1763",
+      "outputHash": "sha256:20f88bba282d393466ecddcb308ba25f11a3d085b2d8d7f08bfa626dada952f3",
+      "mobile": {
+        "src": "/images/articles/robot-lawn-mower-keeps-getting-stuck/03-robot-mower-rescue-hotspot-and-acceptance-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 85154,
+        "outputHash": "sha256:3d7169009b633870436a7afcaa649550ddc1731931764668eff0e084eb231b5f"
+      }
+    },
+    "/images/articles/robot-lawn-mower-not-charging/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 27474,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4deafecc45b35b65eed53600b02e1de22635371b950abc7c5b12a315bcba4a01",
+      "outputHash": "sha256:6b3b0b93f2c0c39eaeef9228bf9244981b56781f94129a7ec5b16b0f51a83d96",
+      "mobile": {
+        "src": "/images/articles/robot-lawn-mower-not-charging/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 10600,
+        "outputHash": "sha256:2d2d9dde7acba073c5f3615c59bf554d9ff5972e4b3fce6b7e901a866309ab2b"
+      }
+    },
+    "/images/articles/robot-lawn-mower-not-charging/02-diagnostic-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 244626,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8f17bdc7008ba99fad75ccff3a45eaaccf1056c3f7be874e59c044e274ff80b0",
+      "outputHash": "sha256:e6f6466ecedd135a2618e55be86cfa4b5f30ccd66e8b6f77efd5685d90d99499",
+      "mobile": {
+        "src": "/images/articles/robot-lawn-mower-not-charging/02-diagnostic-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 100370,
+        "outputHash": "sha256:f7af8b848110022a05cd275b3ebd9ceab83501738ace0ffd76040e3935539f86"
+      }
+    },
+    "/images/articles/robot-lawn-mower-not-charging/03-robot-mower-charging-service-and-acceptance.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 181466,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:8ba43d9a9f217338e20799799eee734d9db7506b572eecc47322da4abde75389",
+      "outputHash": "sha256:bbd6a6ae5e451428dc30778b2d24e9984b20fa0abdb0b5ca6d33f7e55562d6ef",
+      "mobile": {
+        "src": "/images/articles/robot-lawn-mower-not-charging/03-robot-mower-charging-service-and-acceptance-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 81024,
+        "outputHash": "sha256:31432281b9b0a15c24851a269c9e5903906f9cdecc5d9381be44e82a9a00b44b"
+      }
+    },
     "/images/articles/robot-vacuum-battery-drains-fast/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -10041,6 +10719,276 @@
         "outputHash": "sha256:cb9a21e9784f328fff5f3ce1f03319756a6db019149dd6c08d2b1d7998e0e8d3"
       }
     },
+    "/images/articles/robot-vacuum-not-charging/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 20792,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4a1497dfdf30a18876d723a1e2d6e29efcfd37c42aa954fe0e109e262f482f43",
+      "outputHash": "sha256:2797e8ab99884a300d3bc6570d0ffae27ed1416bc2a6ef614e6405fc67efcf62",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-charging/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 8078,
+        "outputHash": "sha256:51345990ec3a5fa11fc1d411184ec97f51ea4020347a668474f3d3fa0d04eeca"
+      }
+    },
+    "/images/articles/robot-vacuum-not-charging/02-diagnostic-path.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 84128,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:5e02e1af532d1077bc9f2a1ed487f3495d61716391894159f6d344ce327df2d7",
+      "outputHash": "sha256:ba9d0c2c77b66039fa0aa583ad752c47c02567bdfea32632ccb08de04f2587df",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-charging/02-diagnostic-path-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 42094,
+        "outputHash": "sha256:0854f21deea8c125f4486444a41d4be2a76736a9c5e0c78f15436c4eea2b00e5"
+      }
+    },
+    "/images/articles/robot-vacuum-not-charging/03-robot-vacuum-charging-service-boundary.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 80266,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c03ef687a1217f09656ce6735ca53017114beeaa37f875b671ca7f06b02c03f8",
+      "outputHash": "sha256:ee4931828604a8e081d736563428ea682c7b52f812d1421287ec1d0dfb7b5076",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-charging/03-robot-vacuum-charging-service-boundary-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 42172,
+        "outputHash": "sha256:ef05efd1b66d854e3e2a242f79795c1150c853f6c3c7d332574157d15f7dcda1"
+      }
+    },
+    "/images/articles/robot-vacuum-not-connecting-wifi/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 32876,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:289d90306b4360660fae72155015acb22dd6a946fed36a1db3af079b6b809625",
+      "outputHash": "sha256:d36a4413cde320f47fc90545fe8bff35cac9b932615a6a701885b9841bfb8bee",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-connecting-wifi/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12950,
+        "outputHash": "sha256:52cbdff6fe5e856fc25b50539c3d3cdbde348f56f94fe5aeca4500169b4e1253"
+      }
+    },
+    "/images/articles/robot-vacuum-not-connecting-wifi/02-robot-vacuum-wifi-setup-diagnostic.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 71410,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:f19e24a380c748cb83da2f09949248ce1084b333c9367ac95e4baa3462cc60a3",
+      "outputHash": "sha256:d6d2f8d75de8ec667c72d93b0d30997ff58ff427c7431ffba060ab9bd72e8c3e",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-connecting-wifi/02-robot-vacuum-wifi-setup-diagnostic-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 36690,
+        "outputHash": "sha256:8c7aa9ee84fe7679d8d4bd17c3c79ca63c9fd8071eea29806604905c7bc7f9c9"
+      }
+    },
+    "/images/articles/robot-vacuum-not-connecting-wifi/03-robot-vacuum-network-compatibility-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 73158,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:7a8f0f721249533a2839b97ef9b5c9b1afa08a7e2453a14e6ca7dc58bff680c6",
+      "outputHash": "sha256:42dd43ae4ff78f330ad5a6a19a96d7bfdae84dafc25f91f01bd664661b31aba8",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-connecting-wifi/03-robot-vacuum-network-compatibility-map-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 37630,
+        "outputHash": "sha256:628160d038df06de8de5920fc8310aa4a4029f94994a762b2b60e896e5eaa168"
+      }
+    },
+    "/images/articles/robot-vacuum-not-dispensing-water/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 29986,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1d43db6a34d7b2cea3bbb65422ec31d218110ac22909eebc21ac88778b6b2e31",
+      "outputHash": "sha256:ad9c14a1834d9a7aedb11aab4005dacc529129323604b71002eafda3bd8d891c",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-dispensing-water/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 11852,
+        "outputHash": "sha256:be69e45ef4bdaefbf7ffebf96b6f7f51103ce80e7bb732e891b74c0136fce7b6"
+      }
+    },
+    "/images/articles/robot-vacuum-not-dispensing-water/02-robot-vacuum-water-flow-diagnostic.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 83184,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1d65c701eeb4c5912ab550bf98f52e60dbe800de41718eb295ddd908cd917ab1",
+      "outputHash": "sha256:bbcc37f387e19917ccbb841e5183736be0d6889d7dfb9fd5e2402e85101b8be5",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-dispensing-water/02-robot-vacuum-water-flow-diagnostic-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 42854,
+        "outputHash": "sha256:22eb3f9dd5727f33273d58d845477c0dc433875ee87a5aad1ba472c30512dba6"
+      }
+    },
+    "/images/articles/robot-vacuum-not-dispensing-water/03-robot-vacuum-water-flow-isolation-test.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 66936,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:159e0c16fa16872cc19a74949242fd0c6a17c9bf379cf162efaba1c19ba35984",
+      "outputHash": "sha256:067be1bd4e881a318440393a2f54ee4eb480afda2cee452fd1db694d4f9c7689",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-dispensing-water/03-robot-vacuum-water-flow-isolation-test-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 33154,
+        "outputHash": "sha256:46d2ecea90138a9d30cd43cc08ba1b9fa261554db0ac51a9e329b1a126de15eb"
+      }
+    },
+    "/images/articles/robot-vacuum-not-returning-to-dock/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 21650,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:405434b79ce4c2d3baa3401ca0ab55fa5827b9706b9eda3273b43a67f3613315",
+      "outputHash": "sha256:9d42fab84b450559ad76617b9b377cae41dc48021ae1ba7ad992f20d91ff2be0",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-returning-to-dock/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 8488,
+        "outputHash": "sha256:7a04074288fe2eb846697b72f3da9a10a0e3ab3118fc492840894c58349c26a2"
+      }
+    },
+    "/images/articles/robot-vacuum-not-returning-to-dock/02-robot-vacuum-return-to-dock-diagnostic.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 84546,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a8640125604a1cdfd508a9a83740336376369c041e525ce6e36301b5a6948e8b",
+      "outputHash": "sha256:4fdc9f6d51cdaefa9d36a4ca84aa199d25d4f6ac506bef550c32318cdde1986f",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-returning-to-dock/02-robot-vacuum-return-to-dock-diagnostic-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 43246,
+        "outputHash": "sha256:50af876c38c32cf0aa788ed28b2ecd2ba85f03ba79e6cccfdc6a8eedee8b72f1"
+      }
+    },
+    "/images/articles/robot-vacuum-not-returning-to-dock/03-robot-vacuum-near-dock-isolation-test.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 81956,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:a303fba59c64f8d742ca1e89798b24ce9cc43f5f86341d48c488d4617eec774f",
+      "outputHash": "sha256:3a2f48c558eb7b80a50944feb30268d6ea2ac4483f5913e9de993d451e5ca0c0",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-not-returning-to-dock/03-robot-vacuum-near-dock-isolation-test-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 41672,
+        "outputHash": "sha256:23e8b9fd400e1a75ff8e418222235d2e2dfc93deb275c4e8d15dc6d1a04ffe01"
+      }
+    },
+    "/images/articles/robot-vacuum-self-empty-dock-not-working/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 19738,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d19d9b0cf09864006afba7a918fb66b2afda65b92dc620e8d466d285c42f1a50",
+      "outputHash": "sha256:2d4ea21e9cd7bab3a8338ea77b643240dbacc83323559ef16f697fe7a169e8d4",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-self-empty-dock-not-working/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 7794,
+        "outputHash": "sha256:53c586c4006350bea872f9d3b2511f3268d2a114fbe64e1dd408bcaf19c03cac"
+      }
+    },
+    "/images/articles/robot-vacuum-self-empty-dock-not-working/02-robot-vacuum-self-empty-diagnostic.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 80030,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c9ceae0881b2d8bac83a65da1da461d35a0a896e6014f08900cd22ebc2e075a5",
+      "outputHash": "sha256:ac50102f0af33522263f0305880739e2f97f57ff56c2a24b9cebdd408640fc6a",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-self-empty-dock-not-working/02-robot-vacuum-self-empty-diagnostic-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 41194,
+        "outputHash": "sha256:380d95a43e0fdc9d59db637fb9d2c03def8f8c55ab84c8658f708d6ec0b238ac"
+      }
+    },
+    "/images/articles/robot-vacuum-self-empty-dock-not-working/03-robot-vacuum-self-empty-trigger-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 77892,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1277da946374a6dbcca22ec9a3386e421f1093886f876a09309fb4d3850ed1cc",
+      "outputHash": "sha256:c59414ea9de4e07b9ba05790e89bda05ffce37119918ff7e1dc68d67d472a146",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-self-empty-dock-not-working/03-robot-vacuum-self-empty-trigger-map-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 39546,
+        "outputHash": "sha256:6c7fd21cf6318da805f9065bfe87929ed4c3d96484b2b77ed3bce9a2f8a95d3c"
+      }
+    },
     "/images/articles/robot-vacuum-side-brush-keeps-falling-off/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -10291,6 +11239,222 @@
         "height": 533,
         "bytes": 73366,
         "outputHash": "sha256:04c8ded5a33112506ed10237396462b5c55e95a448491fc99277370df42650bf"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-charging/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 26108,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fa35332d5f492b5b5fe36953918bb56292e065ec2652605713ac5c21ab631998",
+      "outputHash": "sha256:8bf35fc548fbd542684a1572954889445d52d45173a114addc760f9d4dfa4823",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-charging/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 10256,
+        "outputHash": "sha256:8b9a14093c979dfaf179f685760ea6fbf819391828942dd24cd13e2eb8e9498d"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-charging/02-diagnostic-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 176516,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:021f337378b5b7eb074f453fcd2c5d18902294c9f81bf1f3415a0763aa0d7a77",
+      "outputHash": "sha256:5ea9f5568bf2cc051aa2f880bb2ff54bff5673383d28964b6738293fa1a6c516",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-charging/02-diagnostic-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 82114,
+        "outputHash": "sha256:0d8dc579d3e8f21eb711cf818455a640d1766b01e048cb23838521f485cc06a4"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-charging/03-pool-robot-charging-service-warranty-workflow.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 173642,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:67c7a995916cfbc8e82841576f63f259f9227ac0627b70d205c977b4d9690eef",
+      "outputHash": "sha256:43b9aa0f2636ef6932685922f111364465147272ad5fee2ecc451cfcdbdb8ec3",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-charging/03-pool-robot-charging-service-warranty-workflow-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 80580,
+        "outputHash": "sha256:a267a5fc01d2b4b3dd15676892bde25630935ac7c7bf344bf7b6b2159a509164"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-climbing-walls/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 22900,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:104a5451774d2878951fe973a793222ad7a11366fd3818d155544c1d7d30dca9",
+      "outputHash": "sha256:56ad0d5de088fe53d3068890205a286b2f0e3e3a8e8d33d30c4a86f9eceffa0f",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-climbing-walls/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 9560,
+        "outputHash": "sha256:e138bc937bb3241f6f78b64e2786965e0ca13c88318d74a10ae9e558af749010"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-climbing-walls/02-robotic-pool-cleaner-wall-climbing-diagnostic-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 218376,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:d50c746c6a5d330215c436d6cb11555defbec6f16c73f4edb01dad96385fb300",
+      "outputHash": "sha256:957a2d5412bc4813cb8eb5921283517524df7d3b48431c0b61a63a415e74fc96",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-climbing-walls/02-robotic-pool-cleaner-wall-climbing-diagnostic-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 93914,
+        "outputHash": "sha256:87d70f3303cce21b34df39b83b14c02c826082576559479a0915dd48ae7fe111"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-climbing-walls/03-pool-wall-climbing-acceptance-and-responsibility.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 201812,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:ff75dc1297e48df08a5164860f6be8325c81be48154eaf656953e3c9a7820084",
+      "outputHash": "sha256:0276002ccf838b53dd8901ae0086aea62e9e6b02ddd0de0ac34c834c15f8ecc4",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-climbing-walls/03-pool-wall-climbing-acceptance-and-responsibility-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 87934,
+        "outputHash": "sha256:aa2d8e86d17e9e0fbd6f860f9a44b2749f648ce7867f76af0b7baf3b769d0a78"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-moving/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 20920,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5a036269fd1fcb2baa986b9e221d033bdef41d23a3279cd0ff7bec26709dfb3c",
+      "outputHash": "sha256:36eea0579c509197a39b5cba5696101387d5c482131bf63dd49e3dfdc378b32f",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-moving/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 8220,
+        "outputHash": "sha256:51846b445feb7091d95357e46268ddcc86071eeebb359143918e9a92dbdd08a4"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-moving/02-diagnostic-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 191698,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3f3a6149997e30b5f35f8715c432b1f9e8976e720f92556f131d2f8228342669",
+      "outputHash": "sha256:183eb573c9f3b8e8d4d190be4e7c5ea7f21a4cfc967d5d186d169753ccb8b17e",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-moving/02-diagnostic-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 84192,
+        "outputHash": "sha256:3f8be31befeb366c69fabf3571471a6076658bebf5b38acdc062f7e395707ef6"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-moving/03-pool-robot-service-triage-and-test.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 172334,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6da5f19a081850e55c149a00b017797da835b9584dfdf36947c59969fa1c7a4e",
+      "outputHash": "sha256:2f47ddc367ecb4e4ab8d0d69b48d424f0723cb0002257a886cb7818b00efbfa3",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-moving/03-pool-robot-service-triage-and-test-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 77454,
+        "outputHash": "sha256:e7dc614c74db8611eab2b8aa1146172ffe2ac825773db6b1199c82dff308c21e"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-picking-up-debris/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 23672,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c325b790742483117ac9a67b517f33a15c1055e59cbcefda549e2f38b1ece9d2",
+      "outputHash": "sha256:5d95d6b82cd1e7f25048fcdad4445a2ccf72d2f4561f23a355e9a7a886f32b90",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-picking-up-debris/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 9448,
+        "outputHash": "sha256:40538a24bdaff18e443fb6dc66b829cb1741ba429fd7ef69933df6faf23ef91a"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-picking-up-debris/02-robotic-pool-cleaner-debris-pickup-diagnostic-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 255762,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:c5c9c86a379dc1a2eddac19cfbebdf9ef857c43dc4b977384d40decbedeb2f28",
+      "outputHash": "sha256:9236c2f80dd253fd8f8ff87efd0b32ff0179e1a8f106b9509cb9f2621e0b8ded",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-picking-up-debris/02-robotic-pool-cleaner-debris-pickup-diagnostic-map-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 111848,
+        "outputHash": "sha256:038fd3f6a21cbf3d5edf68b5dea8f3f76b9e4ad87d245bdffb5cd9e8016b0821"
+      }
+    },
+    "/images/articles/robotic-pool-cleaner-not-picking-up-debris/03-robotic-pool-cleaner-pickup-acceptance-workflow.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1600,
+      "height": 900,
+      "bytes": 191714,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:781a35383ff974ef6d6e55dedda150f991c6e0b211aefe4f6943c48eb7e9dc39",
+      "outputHash": "sha256:9936b46e245cf4181978c04f6749e3c307e8cfc4c6050a60a2260cd490a4ea4d",
+      "mobile": {
+        "src": "/images/articles/robotic-pool-cleaner-not-picking-up-debris/03-robotic-pool-cleaner-pickup-acceptance-workflow-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 84954,
+        "outputHash": "sha256:5f144f7866b2c566e0669ceeb558fb792e0cae22360acb192e889d9156f9775f"
       }
     },
     "/images/articles/segway-navimow-h220/01-cover.webp": {
@@ -12092,6 +13256,60 @@
         "height": 533,
         "bytes": 36152,
         "outputHash": "sha256:b4adb02031815522923167226ff7144b3981a84881560534d4041d029d38b7cf"
+      }
+    },
+    "/images/articles/vacuum-cleaner-losing-suction/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34376,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:db927961851e9739807ded1ea54e9468d17c5dfec71cb8432bdc381de72106f9",
+      "outputHash": "sha256:d3e5488b3308281c7e348fdac26c50f8450dc2c711d5d30e32217c7fd83e4bc6",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-losing-suction/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12852,
+        "outputHash": "sha256:f0e2a1259141acc8d9f47a4e1df50e197175f9fce813239445ec7e98c2a78018"
+      }
+    },
+    "/images/articles/vacuum-cleaner-losing-suction/02-vacuum-cleaner-airflow-diagnostic.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 72000,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:3aabf93f038a1f71f37c52f589107393a299808d499ce998adcbd36f8c0a913e",
+      "outputHash": "sha256:aa72e5da163e723a3de991555aa9141f225d6feb0bf224e0b90bfcf2b6bf7ffe",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-losing-suction/02-vacuum-cleaner-airflow-diagnostic-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 36990,
+        "outputHash": "sha256:10bedfe9a420d03f1944a2b914991f1851ce75942558e096f597313a5e9c75b6"
+      }
+    },
+    "/images/articles/vacuum-cleaner-losing-suction/03-vacuum-suction-isolation-map.webp": {
+      "role": "chart",
+      "kind": "graphic",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 80016,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:1a838c46f62dc9344690da2329ea1eb19958f8011d7f81d88b75b90e1f550263",
+      "outputHash": "sha256:66ef5fad071c6ae9b63148ee0540a64c56c3c6cba84878f2d8c2275e7981b43a",
+      "mobile": {
+        "src": "/images/articles/vacuum-cleaner-losing-suction/03-vacuum-suction-isolation-map-800.webp",
+        "width": 600,
+        "height": 800,
+        "bytes": 40136,
+        "outputHash": "sha256:59e44bfd1e319541dec813944e8210e60c1bfc9497dfcc6646ddc8c953319d5b"
       }
     },
     "/images/articles/vacuum-cleaner-making-loud-noise/01-cover.webp": {
@@ -15946,24 +17164,6 @@
         "outputHash": "sha256:8031effac491b893bcdab0784263083e797d82a6ede8ae3c49a374dcced99803"
       }
     },
-    "/images/blog/floor-scrubber-no-low-uneven-flow-matrix.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 149348,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4d7beb1dfe178577c4d33240f3387c3a89b56e83dc5986a05fdd6e9805c7cc88",
-      "outputHash": "sha256:73be7315323aab71aa3da7ccf3d20fb9f09efc7ecf1bd41230fa8f2e7daa60b1",
-      "mobile": {
-        "src": "/images/blog/floor-scrubber-no-low-uneven-flow-matrix-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 56114,
-        "outputHash": "sha256:aab4b3eb3ac033c5aa56631da68fb2737e006ddef5ecf10aaac549eca32be561"
-      }
-    },
     "/images/blog/floor-scrubber-rent-lease-buy-decision-map.webp": {
       "role": "cover",
       "kind": "photo",
@@ -15980,24 +17180,6 @@
         "height": 450,
         "bytes": 44480,
         "outputHash": "sha256:5c7a3049f4330abe2296e74f24e80071077830661e912e97ba412cd4f873ba2f"
-      }
-    },
-    "/images/blog/floor-scrubber-solution-flow-diagnostic-map.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 121394,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:143e42d720cc0f259742aff965b6dde12e22746b00386804c23a239ed137b3c4",
-      "outputHash": "sha256:b8d412af733366a0e474bb75d0475325798a87ed1e4a99dd878a977b03a6246e",
-      "mobile": {
-        "src": "/images/blog/floor-scrubber-solution-flow-diagnostic-map-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 48550,
-        "outputHash": "sha256:4a6a593cffc3608f844d6187b6b79ed7a942d8964a39071b01d0656bf4f86940"
       }
     },
     "/images/blog/floor-scrubber-specs-to-field-test.webp": {
@@ -16034,42 +17216,6 @@
         "height": 450,
         "bytes": 46936,
         "outputHash": "sha256:6cf6870ddd796f8289b2f0231a46a25982a934a91124980ee1b7f1ee3fc78f8e"
-      }
-    },
-    "/images/blog/floor-scrubber-troubleshooting-service-boundary.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 139370,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6b4d8ab23f76bf01858cdd4f80c207fe1aaf4504ed3b9469a854cc3f0e50f7d6",
-      "outputHash": "sha256:981a31684b2902b6631ecc242b60e14b5ab0d1111ef849f07963912f8860482f",
-      "mobile": {
-        "src": "/images/blog/floor-scrubber-troubleshooting-service-boundary-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 53634,
-        "outputHash": "sha256:c2363ec7403ed2e9b869027e912d7d97401f43f0161c050d911f53a4b8547f65"
-      }
-    },
-    "/images/blog/floor-scrubber-water-recovery-troubleshooting.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 149364,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:700e7ea9b2fdec32db1d24a399ce78fbefc149ecbdb36d3a7cac12ecdc8afdc4",
-      "outputHash": "sha256:efcad189fe47a0a0cd81bb9c5cebd0a3fb8a40742ee418c43f0ff97521c27606",
-      "mobile": {
-        "src": "/images/blog/floor-scrubber-water-recovery-troubleshooting-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 55046,
-        "outputHash": "sha256:688c129d0d8aa3330068ea9e968e178ad4d238c767941857eafc0e17b2b79a7d"
       }
     },
     "/images/blog/floor-sweeper-vs-floor-scrubber.webp": {
@@ -18846,24 +19992,6 @@
         "outputHash": "sha256:8a40857eaed5827bf459cb04bfb1bb64d26f6dcd62deef708dcd8037295544f3"
       }
     },
-    "/images/blog/pool-robot-charging-service-warranty-workflow.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 148814,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:77903debc91c7b8a24d399afd2ea7375af9c001792224727532667e00d5a37cc",
-      "outputHash": "sha256:67c7a995916cfbc8e82841576f63f259f9227ac0627b70d205c977b4d9690eef",
-      "mobile": {
-        "src": "/images/blog/pool-robot-charging-service-warranty-workflow-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 61366,
-        "outputHash": "sha256:073f61e08ead481c857eb3a13905b985a7bd9e128fb65057d1f4e8467df49614"
-      }
-    },
     "/images/blog/pool-robot-procurement-acceptance-matrix.webp": {
       "role": "body",
       "kind": "photo",
@@ -18880,42 +20008,6 @@
         "height": 450,
         "bytes": 56758,
         "outputHash": "sha256:51ff9c258ea7f7b7cf846717c35f9caab53a5084ab9d290a6f65b3b4cad05693"
-      }
-    },
-    "/images/blog/pool-robot-service-triage-and-test.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 148640,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:21636ee7194c1599446448e1ec81bc4cb6d0b0953daecf615501e24fa706f3ed",
-      "outputHash": "sha256:6da5f19a081850e55c149a00b017797da835b9584dfdf36947c59969fa1c7a4e",
-      "mobile": {
-        "src": "/images/blog/pool-robot-service-triage-and-test-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 56396,
-        "outputHash": "sha256:3a1f96748c86776b4e9911fbe2f85a9f156c0096cf0b053fe2eafab727494014"
-      }
-    },
-    "/images/blog/pool-wall-climbing-acceptance-and-responsibility.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 177390,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4bf718ab8865afdc96e58442902bd530c4f0ddfbb55ca81f868bad90d383d3a6",
-      "outputHash": "sha256:ff75dc1297e48df08a5164860f6be8325c81be48154eaf656953e3c9a7820084",
-      "mobile": {
-        "src": "/images/blog/pool-wall-climbing-acceptance-and-responsibility-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 64064,
-        "outputHash": "sha256:2e85701fb96e4b5af168c4edd14488715c57edc6edf391a671c1df98935251d1"
       }
     },
     "/images/blog/portable-carpet-cleaner-spray-extraction-recovery.webp": {
@@ -19473,24 +20565,6 @@
         "outputHash": "sha256:40e87a7340042dd4575e006ac68391bb1ae4bcc44c45c45ee37c0b747e498127"
       }
     },
-    "/images/blog/robot-lawn-mower-not-charging-diagnostic-map.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 214994,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:729462707f8af8eeac18f48f22181eec09530415670bf73352c79466e426ce12",
-      "outputHash": "sha256:8f17bdc7008ba99fad75ccff3a45eaaccf1056c3f7be874e59c044e274ff80b0",
-      "mobile": {
-        "src": "/images/blog/robot-lawn-mower-not-charging-diagnostic-map-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 75956,
-        "outputHash": "sha256:6c1e23b5479dfa84b0f9c6d5c8706e6b82ff4692a2b35d9520259ea1c61249db"
-      }
-    },
     "/images/blog/robot-lawn-mower-oem-odm-development.webp": {
       "role": "cover",
       "kind": "photo",
@@ -19543,24 +20617,6 @@
         "height": 450,
         "bytes": 53012,
         "outputHash": "sha256:c7f0b37ebb64f776894c99ea14a4fe318ffbbe2b2b36a19f3dabb82c7de44807"
-      }
-    },
-    "/images/blog/robot-lawn-mower-stuck-diagnostic-map.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 253254,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4c3948d359e1d038fc34f72d1205c3ea5b786a0012e68be87990f21527dfdaa3",
-      "outputHash": "sha256:f382dfb926b332d5fe01029fad0bcb379130a1f545b5ea9d428d792aae5ef924",
-      "mobile": {
-        "src": "/images/blog/robot-lawn-mower-stuck-diagnostic-map-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 80812,
-        "outputHash": "sha256:e052fd7c523958c136bb3d688d66fe28cb0e73c1bfd754d0700bac76a660a7d1"
       }
     },
     "/images/blog/robot-lawn-mower-vs-ride-on-mower.webp": {
@@ -19671,24 +20727,6 @@
         "outputHash": "sha256:d4f4dea93335a8202fa075e80d1e6056313c5ee8ce82c11fdc3cf5228fc97a75"
       }
     },
-    "/images/blog/robot-mower-charging-service-and-acceptance.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 156952,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:b125bc6d3e00f0a3d0a6be5961f434a514a48b5ba6cb2a8092d9d44fee31a8a9",
-      "outputHash": "sha256:8ba43d9a9f217338e20799799eee734d9db7506b572eecc47322da4abde75389",
-      "mobile": {
-        "src": "/images/blog/robot-mower-charging-service-and-acceptance-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 61938,
-        "outputHash": "sha256:07e686cfad4d7e8a099bc47b6e735b292f7f05368a9117f68c8df202064dc639"
-      }
-    },
     "/images/blog/robot-mower-dealer-capability-scorecard.webp": {
       "role": "body",
       "kind": "photo",
@@ -19741,24 +20779,6 @@
         "height": 450,
         "bytes": 69794,
         "outputHash": "sha256:2bd61bb34a97e4b0cfbe643ce75a86e72892913c57b08f1957e8771b2adf2a1e"
-      }
-    },
-    "/images/blog/robot-mower-rescue-hotspot-and-acceptance.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 175216,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1e9f747e9f9b87344c77bc4e531aeae5e26f6f67df4753f0b4c609b3bece5da2",
-      "outputHash": "sha256:3fa2bf033eb263db5c3ef0cd5342e0b70859d227d5d0e7dfc7b95f64545c1763",
-      "mobile": {
-        "src": "/images/blog/robot-mower-rescue-hotspot-and-acceptance-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 60968,
-        "outputHash": "sha256:5bebd8a0a4dd78753db19703007865b54ee6226aa4da0a1edb8df4faa3e0e9b8"
       }
     },
     "/images/blog/robot-mower-site-commissioning.webp": {
@@ -19851,24 +20871,6 @@
         "outputHash": "sha256:64cb94f19c61e98b26d48ed0e662e34dda3cb3be6596964b1e584d362044dcad"
       }
     },
-    "/images/blog/robot-vacuum-charging-service-boundary.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 68788,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ab4a804b3025cdf07a194b7f2d4cbb1d66b054bf675e0fd5864549bd849dc910",
-      "outputHash": "sha256:c03ef687a1217f09656ce6735ca53017114beeaa37f875b671ca7f06b02c03f8",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-charging-service-boundary-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 32888,
-        "outputHash": "sha256:85bec3e1797506f63ca398515530bba475b662570a378a7495393b3ce49476ae"
-      }
-    },
     "/images/blog/robot-vacuum-cleaners-from-china-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -19959,132 +20961,6 @@
         "outputHash": "sha256:af993423e1780a30d9072e983a03afc9326577ff0585dfa2a358921d74e3b933"
       }
     },
-    "/images/blog/robot-vacuum-near-dock-isolation-test.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 70510,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:3f6c182c36219d3174a76f664e089a7030438a8eeeb9bc99f97c01f1dbabf631",
-      "outputHash": "sha256:a303fba59c64f8d742ca1e89798b24ce9cc43f5f86341d48c488d4617eec774f",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-near-dock-isolation-test-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 32972,
-        "outputHash": "sha256:2df5a670edb687301bbf2927866bf5a9b0cabbca98f47414e15a83f738305280"
-      }
-    },
-    "/images/blog/robot-vacuum-network-compatibility-map.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 63538,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:2559fadf9f120b798fc99a072cf25dac8fca79910469b6fd5ef94eb510ea4a1b",
-      "outputHash": "sha256:7a8f0f721249533a2839b97ef9b5c9b1afa08a7e2453a14e6ca7dc58bff680c6",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-network-compatibility-map-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 29604,
-        "outputHash": "sha256:62b056e6f8ec74d6b718b10548cbc5637bf5f64d230a2beb75beb700f9b4fc50"
-      }
-    },
-    "/images/blog/robot-vacuum-not-charging-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 58354,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:0b2bce85bd538aeb07f73a3e125bc51ee42638fa21c54b31559dde3aa27d5037",
-      "outputHash": "sha256:8677186314eef2da2e63bf52ed76a99da8902d3131a25b7222525337a89dbd40",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-not-charging-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 16728,
-        "outputHash": "sha256:fde59d3d67f380d71ed7ef74eaaed0c57b6de2232657c864975d97830b7c0a97"
-      }
-    },
-    "/images/blog/robot-vacuum-not-charging-diagnostic-path.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 71078,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:55bf09679bfd60eeb781cb28fe4087d7a2da0c91c1f81eaa64cc9d0b5ec1269b",
-      "outputHash": "sha256:5e02e1af532d1077bc9f2a1ed487f3495d61716391894159f6d344ce327df2d7",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-not-charging-diagnostic-path-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 33450,
-        "outputHash": "sha256:acda9061ee4047e23733afd6bd2c92d9e8e39a43a3d37c589e69ba864d247afc"
-      }
-    },
-    "/images/blog/robot-vacuum-not-connecting-wifi-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 41836,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:9a300b0970a040ce40a947d4b271b572a5cae60e770cf048ef487ac260953dec",
-      "outputHash": "sha256:b522fbb444203db6f43fe3c4732ece8e21e2b9aa0072b86dd1f76eef047a6160",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-not-connecting-wifi-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 16048,
-        "outputHash": "sha256:dfca5bdb1114dcaa9aa52237a13a5917b8bd7159a3664187fc6e2ace3d346a7e"
-      }
-    },
-    "/images/blog/robot-vacuum-not-dispensing-water-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 92126,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:bf25a9887e588647cd296c8b7b31c34230b7657bb0e10e46d6f862c2ab81805e",
-      "outputHash": "sha256:2adfa34a515250607f9feab729aaf6fc334db47a0f237c258f638959164d5d0d",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-not-dispensing-water-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 28022,
-        "outputHash": "sha256:da97602498f3833d6c240db8d77db62d8efe50e1dd54d942c9ef362c2c32b7f2"
-      }
-    },
-    "/images/blog/robot-vacuum-not-returning-to-dock-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 67986,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:573d3e4052a19e8cfc89232a7dd8ea41f1b9f6a4c01df78a47f0296eab28d0a1",
-      "outputHash": "sha256:04b4de022f361a9677ce756c4a4e70b5501ca6d0e1045f0938e8909f67b09a7d",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-not-returning-to-dock-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 22226,
-        "outputHash": "sha256:9c3cdb89d2600c31016a790b6104dc2819abe50c46c8e76ed886199cfe72d8f0"
-      }
-    },
     "/images/blog/robot-vacuum-oem-odm-platform-development.webp": {
       "role": "cover",
       "kind": "photo",
@@ -20139,78 +21015,6 @@
         "outputHash": "sha256:f0b7ff07f97f1363ea8e1da4e5fec8b56e06cbe10feab0df9db6966f096d98f8"
       }
     },
-    "/images/blog/robot-vacuum-return-to-dock-diagnostic.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 72788,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:779bfb7905b1437536bfff067af05a9062fa29d0971d32f13c365766118d5ddf",
-      "outputHash": "sha256:a8640125604a1cdfd508a9a83740336376369c041e525ce6e36301b5a6948e8b",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-return-to-dock-diagnostic-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 34214,
-        "outputHash": "sha256:1b5633bf1294e653882f698a746e98d8d881401331caff7c78f24bad80bab738"
-      }
-    },
-    "/images/blog/robot-vacuum-self-empty-diagnostic.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 68992,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:dee44cc33a3d996251297bee8196bf0cd149f74d0cee366eb67f563c3e5f4615",
-      "outputHash": "sha256:c9ceae0881b2d8bac83a65da1da461d35a0a896e6014f08900cd22ebc2e075a5",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-self-empty-diagnostic-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 32680,
-        "outputHash": "sha256:78deb9c79b85364afdab36df1ed454e55b5c92ca9bd2a4cf3e3c3135ddc679f4"
-      }
-    },
-    "/images/blog/robot-vacuum-self-empty-dock-not-working-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 100726,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1229774ff8fd8613f3ecff57aa78f3cef887caa812e2b8c1d9b441228f597ed0",
-      "outputHash": "sha256:2b22bc46a4eadbf15b01ceeeb2f68c6e09e4be35cc133e6d2680927e27d93932",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-self-empty-dock-not-working-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 30254,
-        "outputHash": "sha256:21f4d440d1cfdd08e740a4b74def2fbc3e8a299b530aa5506801ce25b91d5329"
-      }
-    },
-    "/images/blog/robot-vacuum-self-empty-trigger-map.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 67322,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6a0592e5a0d7cdfafa1e40939c6ce20d7391bbeb5937762063b12086c342446a",
-      "outputHash": "sha256:1277da946374a6dbcca22ec9a3386e421f1093886f876a09309fb4d3850ed1cc",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-self-empty-trigger-map-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 31356,
-        "outputHash": "sha256:9caafcd346778dc372b892ce20faca5e38f4a4d99870a2654c8fb073cba5a889"
-      }
-    },
     "/images/blog/robot-vacuum-supplier-types-china.webp": {
       "role": "body",
       "kind": "photo",
@@ -20245,60 +21049,6 @@
         "height": 450,
         "bytes": 38952,
         "outputHash": "sha256:ce1ac6036627f31703c02fd3d9ea95e046f40a7f44cca2b37490468b593617f6"
-      }
-    },
-    "/images/blog/robot-vacuum-water-flow-diagnostic.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 72006,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:8eca6607ec5bbb6c3bcc3c5e158dd301ab3875be54a7b2c0351238ff8c2f7463",
-      "outputHash": "sha256:1d65c701eeb4c5912ab550bf98f52e60dbe800de41718eb295ddd908cd917ab1",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-water-flow-diagnostic-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 33968,
-        "outputHash": "sha256:9d74a39db528ed5f6fe8265e3db79ac40b84a246aa9184f4752583279e9db4eb"
-      }
-    },
-    "/images/blog/robot-vacuum-water-flow-isolation-test.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 57450,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:94998445fe7123569209f495cf8a79944ee7e34ddb29087f594b6877241a9e05",
-      "outputHash": "sha256:159e0c16fa16872cc19a74949242fd0c6a17c9bf379cf162efaba1c19ba35984",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-water-flow-isolation-test-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 26050,
-        "outputHash": "sha256:eccff7a4910482cb07cdcb4ce88113de2ea7d422020cfd46a5c6b3c15fe11fd7"
-      }
-    },
-    "/images/blog/robot-vacuum-wifi-setup-diagnostic.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 61532,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:ed9d5ecca9b9dc45eed3231766ae34b7588690c7ab9fa8e1ea8f7a8a8652bde0",
-      "outputHash": "sha256:f19e24a380c748cb83da2f09949248ce1084b333c9367ac95e4baa3462cc60a3",
-      "mobile": {
-        "src": "/images/blog/robot-vacuum-wifi-setup-diagnostic-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 29160,
-        "outputHash": "sha256:59cbb3e76ab250ba324776a13866c32965b1928f41d2daaac536a21e842be93d"
       }
     },
     "/images/blog/robotic-lawn-mower-manufacturers-china-cover.webp": {
@@ -20571,24 +21321,6 @@
         "outputHash": "sha256:f21677025c688e079be1d329deab79347b5c8c19f947574e4216c5d02018dc2a"
       }
     },
-    "/images/blog/robotic-pool-cleaner-debris-pickup-diagnostic-map.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 225992,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:45174f2e4816a1703744047e6ebd92a4131127c82be7235876f27c8ee1ee7a0f",
-      "outputHash": "sha256:c5c9c86a379dc1a2eddac19cfbebdf9ef857c43dc4b977384d40decbedeb2f28",
-      "mobile": {
-        "src": "/images/blog/robotic-pool-cleaner-debris-pickup-diagnostic-map-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 86330,
-        "outputHash": "sha256:a311ada94344f0218583c84905da170ca03db74758995ce4376521dcf7003fe8"
-      }
-    },
     "/images/blog/robotic-pool-cleaner-distributor-dealer-guide.webp": {
       "role": "cover",
       "kind": "photo",
@@ -20769,42 +21501,6 @@
         "outputHash": "sha256:2f8bc85e1e42801e1c52870fd7feae8840497be0f5573f34dd83991936ae31f5"
       }
     },
-    "/images/blog/robotic-pool-cleaner-not-charging-diagnostic-map.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 154340,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:9e49f01c7b889ae221fe1070c0208500844f078311f772bbe1e4a00cf512eacb",
-      "outputHash": "sha256:021f337378b5b7eb074f453fcd2c5d18902294c9f81bf1f3415a0763aa0d7a77",
-      "mobile": {
-        "src": "/images/blog/robotic-pool-cleaner-not-charging-diagnostic-map-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 61012,
-        "outputHash": "sha256:6674710a9133929c1246459fbeb2a6c6bccef718ee89c1bf7e200396a5b3b919"
-      }
-    },
-    "/images/blog/robotic-pool-cleaner-not-moving-diagnostic-map.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 166116,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:f2501a19fd7eb6000f6d6cfe93f8beb56ed896a49eab0c4c069f015200aeeca9",
-      "outputHash": "sha256:3f3a6149997e30b5f35f8715c432b1f9e8976e720f92556f131d2f8228342669",
-      "mobile": {
-        "src": "/images/blog/robotic-pool-cleaner-not-moving-diagnostic-map-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 62022,
-        "outputHash": "sha256:509400a924c3804216526c556f932befa18d35c04c310ff579cc32d023879f16"
-      }
-    },
     "/images/blog/robotic-pool-cleaner-oem-odm-platform.webp": {
       "role": "cover",
       "kind": "photo",
@@ -20821,24 +21517,6 @@
         "height": 450,
         "bytes": 65082,
         "outputHash": "sha256:0b4d5bb89e5e13e98d96ded80f22f41ff80e40bd8eaa111b06f6bd5237144c82"
-      }
-    },
-    "/images/blog/robotic-pool-cleaner-pickup-acceptance-workflow.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 167012,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:4da5fc26d98f1137f8686957eac26ed8be82f52d133c99c76276858d13a29187",
-      "outputHash": "sha256:781a35383ff974ef6d6e55dedda150f991c6e0b211aefe4f6943c48eb7e9dc39",
-      "mobile": {
-        "src": "/images/blog/robotic-pool-cleaner-pickup-acceptance-workflow-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 61934,
-        "outputHash": "sha256:8d699e17185fe6069612139d7495f9f82d8b714633fb9f222e997b7d6dd7d1f7"
       }
     },
     "/images/blog/robotic-pool-cleaner-product-roadmap-cover.webp": {
@@ -21037,24 +21715,6 @@
         "height": 450,
         "bytes": 69436,
         "outputHash": "sha256:15914fab847afad78efda8eb988090596efafaa07a07151405b6a1f280c51a7e"
-      }
-    },
-    "/images/blog/robotic-pool-cleaner-wall-climbing-diagnostic-map.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 190220,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:f6e6a1c8bc3341fbbbee7c8c95fd7c9763fca5ea28909dad5a0b1d5e6e1594d2",
-      "outputHash": "sha256:d50c746c6a5d330215c436d6cb11555defbec6f16c73f4edb01dad96385fb300",
-      "mobile": {
-        "src": "/images/blog/robotic-pool-cleaner-wall-climbing-diagnostic-map-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 68288,
-        "outputHash": "sha256:7ba386b25f9e197a64d340807578ad34a08231561df630bd88ec411b5fb2efb3"
       }
     },
     "/images/blog/robotic-pool-cleaners-leaves-fine-debris.webp": {
@@ -22362,60 +23022,6 @@
         "height": 450,
         "bytes": 29490,
         "outputHash": "sha256:4d7cabb4399029cb4c00cbc1325898568c81a3cf3b456c7a2eb6f806b4cbe66d"
-      }
-    },
-    "/images/blog/vacuum-cleaner-airflow-diagnostic.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 61980,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:1b01138a73d52e1f9851d0123fc090a046150701234915a4e25d8fc0e521f12c",
-      "outputHash": "sha256:3aabf93f038a1f71f37c52f589107393a299808d499ce998adcbd36f8c0a913e",
-      "mobile": {
-        "src": "/images/blog/vacuum-cleaner-airflow-diagnostic-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 29348,
-        "outputHash": "sha256:4f7cdbc974857f70ac964391d0d053d7de433c3269f16178abd6862b92b1e7f2"
-      }
-    },
-    "/images/blog/vacuum-cleaner-losing-suction-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 81128,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:6d5e8b90ef0e9765d52c091965a89884af4d7347c42469a53a9724a261e15c80",
-      "outputHash": "sha256:ee8737293fc311f219913d2aaa79d606f57588a4122098a52d39a3cb752d9a26",
-      "mobile": {
-        "src": "/images/blog/vacuum-cleaner-losing-suction-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 25144,
-        "outputHash": "sha256:c5c8b213a2aa9b4aeb051886a54de36653e392c218f5d58c85e118ade355674f"
-      }
-    },
-    "/images/blog/vacuum-suction-isolation-map.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1080,
-      "height": 1440,
-      "bytes": 69100,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:b762ec11d49b3628ab1ab026021cb18c793bf4bdc051bcaf6943529e10f2c709",
-      "outputHash": "sha256:1a838c46f62dc9344690da2329ea1eb19958f8011d7f81d88b75b90e1f550263",
-      "mobile": {
-        "src": "/images/blog/vacuum-suction-isolation-map-800.webp",
-        "width": 600,
-        "height": 800,
-        "bytes": 31914,
-        "outputHash": "sha256:66880c48845eaba91ceb9218f31c70c4a77bb1b546255d50fabf8305b5d4befd"
       }
     },
     "/images/blog/walk-behind-vs-ride-on-floor-scrubber-selection-map.webp": {
@@ -24674,187 +25280,6 @@
         "bytes": 24434,
         "outputHash": "sha256:ca75f0499556d4d88d0e6066e30baa7a56605aeec80b8393714ff349108def22"
       }
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 847,
-      "height": 479,
-      "bytes": 75660,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:4040c31f46e46de295eb752ef920cf4472785929f83f8d18309e81af97d41c57",
-      "outputHash": "sha256:bf419cd8937e0e39795745f11c7e94eab20390f31a7714686fc00f05f4958374"
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 414,
-      "height": 454,
-      "bytes": 13474,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:3d7a968c9faae5da3f3044b0748354a31cdacea95a697100213d9f95efd2fb68",
-      "outputHash": "sha256:2bad1bb43a01087f48cb207fb290440f8eea050612b1bab5c123191eebd1600f"
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 890,
-      "height": 530,
-      "bytes": 49160,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:bbebe56a41474e46ac635977617a63e711a53c9be377b7e5f7696da3a4cacc45",
-      "outputHash": "sha256:cd063ed0bd6a34eedefe16fe4a2993c03113cec07f876250695cca01dcd23a37",
-      "mobile": {
-        "src": "/images/insights/bissell-vs-tineco-patent-details-image-004-800.webp",
-        "width": 800,
-        "height": 476,
-        "bytes": 32100,
-        "outputHash": "sha256:c119970ab6ce111894f5f3fde14180610b28127f65285c972371d68b297af1ab"
-      }
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 879,
-      "height": 479,
-      "bytes": 104054,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:975800281c69d956b46bd9ff7569df0c8f6ff6f170d3bbfd5db7a860b098c368",
-      "outputHash": "sha256:0dff25958c47a995174f639f8652a89fc1f52d5ca67105d7a9524b0a25608c59",
-      "mobile": {
-        "src": "/images/insights/bissell-vs-tineco-patent-details-image-005-800.webp",
-        "width": 800,
-        "height": 436,
-        "bytes": 72646,
-        "outputHash": "sha256:59bea49888446b828defafda9b09385f26cc7f10fc04567370d681cfdf4d55a0"
-      }
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1065,
-      "height": 540,
-      "bytes": 57592,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:1c1d3a43cde43aae7c67556df24b8ee6076710331e10a1c11025896846c00a02",
-      "outputHash": "sha256:1bf7ec1ba2cbb32f95db0b7bf945378781a2a4b2d2f889aa5946b13d7bfed2aa",
-      "mobile": {
-        "src": "/images/insights/bissell-vs-tineco-patent-details-image-006-800.webp",
-        "width": 800,
-        "height": 406,
-        "bytes": 28178,
-        "outputHash": "sha256:18d808e9a800d24901e8832eb9269a7c815ed8bd2b23c59d845931999a0c5fb7"
-      }
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-007.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 850,
-      "height": 453,
-      "bytes": 32803,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:a21836568e6decd60d1ed8d59098d2b29664807194fbcb682d5e442e3939dad3",
-      "outputHash": "sha256:29116e02945427f313272afea76f9e2c2bb6f8f1f5105921c8fdcf925af7c4bb",
-      "mobile": {
-        "src": "/images/insights/bissell-vs-tineco-patent-details-image-007-800.webp",
-        "width": 800,
-        "height": 426,
-        "bytes": 23472,
-        "outputHash": "sha256:3879e1ea011a27a555f9bef1a079e2ade3c9aea4c60e6264c5e939ad9e0a9219"
-      }
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-008.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1158,
-      "height": 443,
-      "bytes": 109241,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:51f798420f71517877452b436af42a8d8c6a993010e6766c09f366ef4aedc460",
-      "outputHash": "sha256:eb9a4c4291658b17b48e8bc3f694f120904031bfb9657dc5f8dd95717d480e51",
-      "mobile": {
-        "src": "/images/insights/bissell-vs-tineco-patent-details-image-008-800.webp",
-        "width": 800,
-        "height": 306,
-        "bytes": 49724,
-        "outputHash": "sha256:30e8eaaa3ec333599fbb95d1c2e1bf31e0d3e9c131a281e0a8fc8566ee526dcb"
-      }
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-009.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 512,
-      "height": 487,
-      "bytes": 19397,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:c0e1fe0568faec00114ad22f27cb46f695bd0f5487dec8d74cbc51ca1a9e9742",
-      "outputHash": "sha256:6982d41d3bff3172c8a25a878c4ec87d5ea0c8c077ae592ca1ca51d712cde6d2"
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-010.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 882,
-      "height": 518,
-      "bytes": 41619,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:71f9601d44013a08fcd056877da63335cd7b5a7217431b9dad02dad9db143f4e",
-      "outputHash": "sha256:4292274da49fc6be493176f3e57caafd234d6ac3f738149a60487d8e710c5923",
-      "mobile": {
-        "src": "/images/insights/bissell-vs-tineco-patent-details-image-010-800.webp",
-        "width": 800,
-        "height": 470,
-        "bytes": 27866,
-        "outputHash": "sha256:cda68a9b1abd6d97b2a705a9f5c91c0033bbf3a7f7557eed1472b02fc312b4c4"
-      }
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-011.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 799,
-      "height": 362,
-      "bytes": 42126,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:0f07eae8697cd75d64ca88731365e2f10ed5a9262baace359e4106078ba43183",
-      "outputHash": "sha256:d65e281352a436c8360895705755c5bcadfbf98bfa51d9302e4c64a399648344"
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-012.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 905,
-      "height": 378,
-      "bytes": 64825,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:d3955c8d902f5c027f1a657d524049b2a806aa05232c439869bafc563d426af5",
-      "outputHash": "sha256:a9bd72b8f68dd10ee9ac87b42b54e38be8b59045f795cfc108b470d8b9b340fe",
-      "mobile": {
-        "src": "/images/insights/bissell-vs-tineco-patent-details-image-012-800.webp",
-        "width": 800,
-        "height": 334,
-        "bytes": 41336,
-        "outputHash": "sha256:1a7b95846fd29f0771e512be7c2d0c3b6a4a33e04f18ca7e25465f503d82e285"
-      }
-    },
-    "/images/insights/bissell-vs-tineco-patent-details-image-013.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 564,
-      "height": 531,
-      "bytes": 47340,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:402a6baa0823fd04347017fa91e766614bc139ac4f6a1add36156724bf86615d",
-      "outputHash": "sha256:0e91786cb917e14861e85e4729b24cc0b9b63d52b0d7615ea0f46bb7b0be09d3"
     },
     "/images/insights/bosch-cordless-dust-collector-cover.jpg": {
       "role": "cover",
@@ -27371,82 +27796,6 @@
         "outputHash": "sha256:e23682d565062ed33b31439a5d8ca00e8f979331e10ebd2abea0f4dc60b3d192"
       }
     },
-    "/images/insights/dyson-fights-bosch-again-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1310,
-      "height": 554,
-      "bytes": 66964,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:62b6d6f912ea0a6df6f1cee848563596335ab87f7e30dfb9522846815d4c8dae",
-      "outputHash": "sha256:0feb03ab5bc9c33a24dbb2a1c848f699522cbdf223b9a426f99a895110cb9f21",
-      "mobile": {
-        "src": "/images/insights/dyson-fights-bosch-again-cover-800.webp",
-        "width": 800,
-        "height": 338,
-        "bytes": 23218,
-        "outputHash": "sha256:9879212e46de8b91bf0d6801bad633a83fff065e067e7f67c2ab54c666e65307"
-      }
-    },
-    "/images/insights/dyson-fights-bosch-again-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1246,
-      "height": 574,
-      "bytes": 49500,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:e511adb94d100c9a0bfc81f910fcc8bec28f46a11a4fc2d830aa5fe75b542626",
-      "outputHash": "sha256:dd661ff6a616f33a64cd836dbfce7edda08efeb4b5b73567989cbcc0ebb4c896",
-      "mobile": {
-        "src": "/images/insights/dyson-fights-bosch-again-image-002-800.webp",
-        "width": 800,
-        "height": 369,
-        "bytes": 17932,
-        "outputHash": "sha256:dcf229a8c8b409eb3a3e9783c9038c83ec123cfa94a923f1a04df313b55f58d2"
-      }
-    },
-    "/images/insights/dyson-fights-bosch-again-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 800,
-      "height": 449,
-      "bytes": 42020,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:babcd879cb915802fab1e2de229ab07fd20e43e0809ce0561a997e4689fb0a4d",
-      "outputHash": "sha256:12cc875e01f65b9fc376af367b3c78997ea274d0a4925ee19e6d49815f5b311b"
-    },
-    "/images/insights/dyson-fights-bosch-again-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1150,
-      "height": 421,
-      "bytes": 76057,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:3cfcd5c847f3e093f679007014da96179e7e46ee386278941614e1fd9396b942",
-      "outputHash": "sha256:accf8ffffc1dcd84270423d5b5e58f22ee16cadfba4cf52e32f2f81f6223f880",
-      "mobile": {
-        "src": "/images/insights/dyson-fights-bosch-again-image-004-800.webp",
-        "width": 800,
-        "height": 293,
-        "bytes": 33402,
-        "outputHash": "sha256:6cf273d3a0ad4ef746e3bf612212cf7f24da7a2162893307f21247e80c2098f7"
-      }
-    },
-    "/images/insights/dyson-fights-bosch-again-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 630,
-      "height": 630,
-      "bytes": 31504,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:dc2932eed8603fe74b8fb02055ae8ad21af669ea0501be2d5e12fb5e829b60e2",
-      "outputHash": "sha256:38fca0a133292c1cadf6cbf4bff0635bb2b781fb67facb99546ac92f841da2ff"
-    },
     "/images/insights/dyson-hard-floor-washer-exposed-cover.jpg": {
       "role": "cover",
       "kind": "photo",
@@ -29141,93 +29490,6 @@
         "bytes": 23750,
         "outputHash": "sha256:d0a8ce6fc1911b82ba8c9650f6ddbbf21d43629fe4a63ef75d02b11bad0de195"
       }
-    },
-    "/images/insights/german-vacuum-brands-in-the-cordless-wave-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1310,
-      "height": 554,
-      "bytes": 66964,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:62b6d6f912ea0a6df6f1cee848563596335ab87f7e30dfb9522846815d4c8dae",
-      "outputHash": "sha256:0feb03ab5bc9c33a24dbb2a1c848f699522cbdf223b9a426f99a895110cb9f21",
-      "mobile": {
-        "src": "/images/insights/german-vacuum-brands-in-the-cordless-wave-cover-800.webp",
-        "width": 800,
-        "height": 338,
-        "bytes": 23218,
-        "outputHash": "sha256:9879212e46de8b91bf0d6801bad633a83fff065e067e7f67c2ab54c666e65307"
-      }
-    },
-    "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 631,
-      "height": 152,
-      "bytes": 13620,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:10a78cd799e1e8137ac4d9e26ad48c2b8207408164da3c953cad966d3b670b4e",
-      "outputHash": "sha256:c9091d5fad4b87d3e217285713b4d5382617b0dc549d8a5194757b9e65c70046"
-    },
-    "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1274,
-      "height": 454,
-      "bytes": 85089,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:ca4983e3ea848e9681c71634c44dcadc70e3697d39345c582bf554ae417b5e34",
-      "outputHash": "sha256:ae4f1b78863ec41aee33781daeefdc6540fa0af3630c7b6690fe0a0d65d8c47b",
-      "mobile": {
-        "src": "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-003-800.webp",
-        "width": 800,
-        "height": 285,
-        "bytes": 30950,
-        "outputHash": "sha256:5f9485dff559ea0ffae631c0037844f0f2b8a3d631b875e224fd91a18878d239"
-      }
-    },
-    "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 938,
-      "height": 462,
-      "bytes": 42915,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:e216317d3e1c0ecf6eb6873bc64d390c2b4e91450e63608c746e37a509be264e",
-      "outputHash": "sha256:c1651b4f3475870a81f23d51e5d6b3a5ef3428b57b66b3e01abad44eca93b935",
-      "mobile": {
-        "src": "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-004-800.webp",
-        "width": 800,
-        "height": 394,
-        "bytes": 22882,
-        "outputHash": "sha256:a4de7800ae50b3855a19d93eb27b71de09713efb302c50022cb747f72911824b"
-      }
-    },
-    "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 744,
-      "height": 260,
-      "bytes": 14850,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:1acd91fa8ce6f887c0f8fe889abfa2cb2c2a39a698865cafd878fd9a21e437f0",
-      "outputHash": "sha256:b78cf1de48ec2ac90a0c9c92b36bcd74054e05bd266287d29a34a1024d4a69aa"
-    },
-    "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 753,
-      "height": 352,
-      "bytes": 24592,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2c1e2ce36c099eb1c8790f689ed65ada54f132c49c51f5069bf11e5eb07696c9",
-      "outputHash": "sha256:45aae950464d2b54a68367b207bf8f7d69afdb5e07ba3a53ffc7ff8699143831"
     },
     "/images/insights/global-power-tool-brands-reshaping-portfolios-cover.jpg": {
       "role": "cover",
@@ -33060,155 +33322,6 @@
       "quality": 100,
       "sourceHash": "sha256:ddb839f1ac8cee7ae4b27b23fd4dca11922f8376fe8c060c53f1d8ef44598cef",
       "outputHash": "sha256:44a8d028b77566f108a1f66429ae047423ea577345cd0d6f5564324b2da9116b"
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1310,
-      "height": 554,
-      "bytes": 66964,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:62b6d6f912ea0a6df6f1cee848563596335ab87f7e30dfb9522846815d4c8dae",
-      "outputHash": "sha256:0feb03ab5bc9c33a24dbb2a1c848f699522cbdf223b9a426f99a895110cb9f21",
-      "mobile": {
-        "src": "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-cover-800.webp",
-        "width": 800,
-        "height": 338,
-        "bytes": 23218,
-        "outputHash": "sha256:9879212e46de8b91bf0d6801bad633a83fff065e067e7f67c2ab54c666e65307"
-      }
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 653,
-      "height": 144,
-      "bytes": 6730,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:be4ca4a7318b9db1d2ebd47ee5fa982860d66ea55c1931bd065a774c81c48f2c",
-      "outputHash": "sha256:ff97561ed565c37185ba70cac60e966035fd022421aeae69e495d1695c4f2c18"
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1190,
-      "height": 602,
-      "bytes": 80770,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:e818ed168882848f7d5acc3f7ea000fe55eb763aa0059ff317c4343eb35ec674",
-      "outputHash": "sha256:808b587091b421e6e5c58c8265fd4f49961e2abca8aee35e38ab38d583ec9b92",
-      "mobile": {
-        "src": "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-003-800.webp",
-        "width": 800,
-        "height": 405,
-        "bytes": 42564,
-        "outputHash": "sha256:5e1140f4232f8c48ad1f41f78f340f49b9786789eab320970cdfd0735fbb081e"
-      }
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 438,
-      "height": 539,
-      "bytes": 43515,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:9225421104f628466b97d684ff3530a4acd70f09e5209b53e5c7585f1a05a8a1",
-      "outputHash": "sha256:2f8db41720a77ebb2ab54bf089e60f5ccc3ca7294e868dab4e41aaba4ba126c9"
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 978,
-      "height": 353,
-      "bytes": 68920,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:bc12eaf92cf52976725e5781f7cd1d1c9f891165172601474df7f2b5dff11b1e",
-      "outputHash": "sha256:57785f2747fa0a2a8f8781506a581707901a77e53bb85461c5ff4385bf9111eb",
-      "mobile": {
-        "src": "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-005-800.webp",
-        "width": 800,
-        "height": 289,
-        "bytes": 46416,
-        "outputHash": "sha256:094c472c5c6e8d330db40e4bfa795886023204c46addb6ca4f99c7acf4067b7c"
-      }
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 949,
-      "height": 315,
-      "bytes": 59715,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:c38b4711d0a9d2cb23c86d69d89ca945a752694d6029039e05bd2bce95445dad",
-      "outputHash": "sha256:b39ba52a624f2736d6d858f786df4add8245f04cdfe89421b8e8445b80016cc5",
-      "mobile": {
-        "src": "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-006-800.webp",
-        "width": 800,
-        "height": 266,
-        "bytes": 41372,
-        "outputHash": "sha256:5a98d983d77dc89074d9553e2811ba48f46bf7ed94a37f83777a93cf421ad1a4"
-      }
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-007.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 765,
-      "height": 267,
-      "bytes": 40878,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:3fbab80443973a65250b88ea5423ca8bfd216a49932a9bb7f577d60bf336b6fa",
-      "outputHash": "sha256:a35fcc162391daf1204b43d74207620ada78eef118b86baca4cfa56125eaa15a"
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-008.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 762,
-      "height": 562,
-      "bytes": 84530,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:476dbf15371846bf3fba583046ebe867f337cc4605f27bdd439fadab93511476",
-      "outputHash": "sha256:7fef5ec81d483997eb246a375b05dd7e771af22ad2b3e60a520595d29a6e4854"
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-009.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 746,
-      "height": 432,
-      "bytes": 59813,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:d745bd3256aa5675c64116251bb4ee526fced1dbe043c6b50c05488b294c7432",
-      "outputHash": "sha256:7ba5cd41091f8a88cf0cc8d02c537a5f9986f9adef1d7a6af3686cae467c7da5"
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-010.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 596,
-      "height": 156,
-      "bytes": 5855,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:361d27e10714dab1337858fed1499e3830ba4e57a05a4c0cb4f1ad33fe5ba651",
-      "outputHash": "sha256:d359f85ffd1bed7fe27ceb172bba7019f6610612c4e55c1d88125fc07432af99"
-    },
-    "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-011.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 424,
-      "height": 141,
-      "bytes": 4837,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:26d767d2fb319e349790ca43f3170199b9192116ca8e28868289551fa7d0cc58",
-      "outputHash": "sha256:f41f2c13b3e57e7b91ceb6fcd7e83e1be369afd61f8982c87366812128fb95fc"
     },
     "/images/insights/lithium-batteries-in-vacuums-and-power-tools-cover.jpg": {
       "role": "cover",
@@ -38929,20 +39042,20 @@
     },
     "bissell-vs-tineco-patent-details": {
       "budgetClass": "standard",
-      "cover": "/images/insights/bissell-vs-tineco-patent-details-cover.jpg",
+      "cover": "/images/articles/bissell-vs-tineco-patent-details/01-cover.webp",
       "body": [
-        "/images/insights/bissell-vs-tineco-patent-details-image-002.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-003.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-004.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-005.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-006.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-007.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-008.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-009.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-010.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-011.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-012.jpg",
-        "/images/insights/bissell-vs-tineco-patent-details-image-013.jpg"
+        "/images/articles/bissell-vs-tineco-patent-details/02-image-002.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/03-image-003.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/04-image-004.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/05-image-005.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/06-image-006.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/07-image-007.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/08-image-008.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/09-image-009.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/10-image-010.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/11-image-011.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/12-image-012.webp",
+        "/images/articles/bissell-vs-tineco-patent-details/13-image-013.webp"
       ]
     },
     "bosch-cordless-dust-collector": {
@@ -39772,12 +39885,12 @@
     },
     "dyson-fights-bosch-again": {
       "budgetClass": "standard",
-      "cover": "/images/insights/dyson-fights-bosch-again-cover.jpg",
+      "cover": "/images/articles/dyson-fights-bosch-again/01-cover.webp",
       "body": [
-        "/images/insights/dyson-fights-bosch-again-image-002.jpg",
-        "/images/insights/dyson-fights-bosch-again-image-003.jpg",
-        "/images/insights/dyson-fights-bosch-again-image-004.jpg",
-        "/images/insights/dyson-fights-bosch-again-image-005.jpg"
+        "/images/articles/dyson-fights-bosch-again/02-image-002.webp",
+        "/images/articles/dyson-fights-bosch-again/03-image-003.webp",
+        "/images/articles/dyson-fights-bosch-again/04-image-004.webp",
+        "/images/articles/dyson-fights-bosch-again/05-image-005.webp"
       ]
     },
     "dyson-finally-sells-self-emptying-vacuum": {
@@ -40235,16 +40348,18 @@
     },
     "floor-scrubber-not-dispensing-water": {
       "budgetClass": "standard",
-      "cover": "/images/blog/floor-scrubber-solution-flow-diagnostic-map.webp",
+      "cover": "/images/articles/floor-scrubber-not-dispensing-water/01-cover.webp",
       "body": [
-        "/images/blog/floor-scrubber-no-low-uneven-flow-matrix.webp"
+        "/images/articles/floor-scrubber-not-dispensing-water/02-floor-scrubber-solution-flow-diagnostic-map.webp",
+        "/images/articles/floor-scrubber-not-dispensing-water/03-floor-scrubber-no-low-uneven-flow-matrix.webp"
       ]
     },
     "floor-scrubber-not-picking-up-water": {
       "budgetClass": "standard",
-      "cover": "/images/blog/floor-scrubber-water-recovery-troubleshooting.webp",
+      "cover": "/images/articles/floor-scrubber-not-picking-up-water/01-cover.webp",
       "body": [
-        "/images/blog/floor-scrubber-troubleshooting-service-boundary.webp"
+        "/images/articles/floor-scrubber-not-picking-up-water/02-floor-scrubber-water-recovery-troubleshooting.webp",
+        "/images/articles/floor-scrubber-not-picking-up-water/03-floor-scrubber-troubleshooting-service-boundary.webp"
       ]
     },
     "floor-scrubber-rental-vs-buy": {
@@ -40322,13 +40437,13 @@
     },
     "german-vacuum-brands-in-the-cordless-wave": {
       "budgetClass": "standard",
-      "cover": "/images/insights/german-vacuum-brands-in-the-cordless-wave-cover.jpg",
+      "cover": "/images/articles/german-vacuum-brands-in-the-cordless-wave/01-cover.webp",
       "body": [
-        "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-002.jpg",
-        "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-003.jpg",
-        "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-004.jpg",
-        "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-005.jpg",
-        "/images/insights/german-vacuum-brands-in-the-cordless-wave-image-006.jpg"
+        "/images/articles/german-vacuum-brands-in-the-cordless-wave/02-image-002.webp",
+        "/images/articles/german-vacuum-brands-in-the-cordless-wave/03-image-003.webp",
+        "/images/articles/german-vacuum-brands-in-the-cordless-wave/04-image-004.webp",
+        "/images/articles/german-vacuum-brands-in-the-cordless-wave/05-image-005.webp",
+        "/images/articles/german-vacuum-brands-in-the-cordless-wave/06-image-006.webp"
       ]
     },
     "global-power-tool-brands-reshaping-portfolios": {
@@ -41009,18 +41124,18 @@
     },
     "lawsuit-that-shaped-the-handheld-vacuum-industry": {
       "budgetClass": "standard",
-      "cover": "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-cover.jpg",
+      "cover": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/01-cover.webp",
       "body": [
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-002.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-003.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-004.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-005.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-006.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-007.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-008.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-009.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-010.jpg",
-        "/images/insights/lawsuit-that-shaped-the-handheld-vacuum-industry-image-011.jpg"
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/02-image-002.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/03-image-003.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/04-image-004.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/05-image-005.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/06-image-006.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/07-image-007.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/08-image-008.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/09-image-009.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/10-image-010.webp",
+        "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/11-image-011.webp"
       ]
     },
     "ldrobot-anthbot-brand-story": {
@@ -41784,9 +41899,10 @@
     },
     "robot-lawn-mower-keeps-getting-stuck": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robot-lawn-mower-stuck-diagnostic-map.webp",
+      "cover": "/images/articles/robot-lawn-mower-keeps-getting-stuck/01-cover.webp",
       "body": [
-        "/images/blog/robot-mower-rescue-hotspot-and-acceptance.webp"
+        "/images/articles/robot-lawn-mower-keeps-getting-stuck/02-robot-lawn-mower-stuck-diagnostic-map.webp",
+        "/images/articles/robot-lawn-mower-keeps-getting-stuck/03-robot-mower-rescue-hotspot-and-acceptance.webp"
       ]
     },
     "robot-lawn-mower-maintenance-winter-storage": {
@@ -41801,9 +41917,10 @@
     },
     "robot-lawn-mower-not-charging": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robot-lawn-mower-not-charging-diagnostic-map.webp",
+      "cover": "/images/articles/robot-lawn-mower-not-charging/01-cover.webp",
       "body": [
-        "/images/blog/robot-mower-charging-service-and-acceptance.webp"
+        "/images/articles/robot-lawn-mower-not-charging/02-diagnostic-map.webp",
+        "/images/articles/robot-lawn-mower-not-charging/03-robot-mower-charging-service-and-acceptance.webp"
       ]
     },
     "robot-lawn-mower-vs-ride-on-mower": {
@@ -41983,34 +42100,34 @@
     },
     "robot-vacuum-not-charging": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robot-vacuum-not-charging-cover.webp",
+      "cover": "/images/articles/robot-vacuum-not-charging/01-cover.webp",
       "body": [
-        "/images/blog/robot-vacuum-not-charging-diagnostic-path.webp",
-        "/images/blog/robot-vacuum-charging-service-boundary.webp"
+        "/images/articles/robot-vacuum-not-charging/02-diagnostic-path.webp",
+        "/images/articles/robot-vacuum-not-charging/03-robot-vacuum-charging-service-boundary.webp"
       ]
     },
     "robot-vacuum-not-connecting-wifi": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robot-vacuum-not-connecting-wifi-cover.webp",
+      "cover": "/images/articles/robot-vacuum-not-connecting-wifi/01-cover.webp",
       "body": [
-        "/images/blog/robot-vacuum-wifi-setup-diagnostic.webp",
-        "/images/blog/robot-vacuum-network-compatibility-map.webp"
+        "/images/articles/robot-vacuum-not-connecting-wifi/02-robot-vacuum-wifi-setup-diagnostic.webp",
+        "/images/articles/robot-vacuum-not-connecting-wifi/03-robot-vacuum-network-compatibility-map.webp"
       ]
     },
     "robot-vacuum-not-dispensing-water": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robot-vacuum-not-dispensing-water-cover.webp",
+      "cover": "/images/articles/robot-vacuum-not-dispensing-water/01-cover.webp",
       "body": [
-        "/images/blog/robot-vacuum-water-flow-diagnostic.webp",
-        "/images/blog/robot-vacuum-water-flow-isolation-test.webp"
+        "/images/articles/robot-vacuum-not-dispensing-water/02-robot-vacuum-water-flow-diagnostic.webp",
+        "/images/articles/robot-vacuum-not-dispensing-water/03-robot-vacuum-water-flow-isolation-test.webp"
       ]
     },
     "robot-vacuum-not-returning-to-dock": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robot-vacuum-not-returning-to-dock-cover.webp",
+      "cover": "/images/articles/robot-vacuum-not-returning-to-dock/01-cover.webp",
       "body": [
-        "/images/blog/robot-vacuum-return-to-dock-diagnostic.webp",
-        "/images/blog/robot-vacuum-near-dock-isolation-test.webp"
+        "/images/articles/robot-vacuum-not-returning-to-dock/02-robot-vacuum-return-to-dock-diagnostic.webp",
+        "/images/articles/robot-vacuum-not-returning-to-dock/03-robot-vacuum-near-dock-isolation-test.webp"
       ]
     },
     "robot-vacuum-oem-odm-guide": {
@@ -42020,10 +42137,10 @@
     },
     "robot-vacuum-self-empty-dock-not-working": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robot-vacuum-self-empty-dock-not-working-cover.webp",
+      "cover": "/images/articles/robot-vacuum-self-empty-dock-not-working/01-cover.webp",
       "body": [
-        "/images/blog/robot-vacuum-self-empty-diagnostic.webp",
-        "/images/blog/robot-vacuum-self-empty-trigger-map.webp"
+        "/images/articles/robot-vacuum-self-empty-dock-not-working/02-robot-vacuum-self-empty-diagnostic.webp",
+        "/images/articles/robot-vacuum-self-empty-dock-not-working/03-robot-vacuum-self-empty-trigger-map.webp"
       ]
     },
     "robot-vacuum-side-brush-keeps-falling-off": {
@@ -42190,30 +42307,34 @@
     },
     "robotic-pool-cleaner-not-charging": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robotic-pool-cleaner-not-charging-diagnostic-map.webp",
+      "cover": "/images/articles/robotic-pool-cleaner-not-charging/01-cover.webp",
       "body": [
-        "/images/blog/pool-robot-charging-service-warranty-workflow.webp"
+        "/images/articles/robotic-pool-cleaner-not-charging/02-diagnostic-map.webp",
+        "/images/articles/robotic-pool-cleaner-not-charging/03-pool-robot-charging-service-warranty-workflow.webp"
       ]
     },
     "robotic-pool-cleaner-not-climbing-walls": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robotic-pool-cleaner-wall-climbing-diagnostic-map.webp",
+      "cover": "/images/articles/robotic-pool-cleaner-not-climbing-walls/01-cover.webp",
       "body": [
-        "/images/blog/pool-wall-climbing-acceptance-and-responsibility.webp"
+        "/images/articles/robotic-pool-cleaner-not-climbing-walls/02-robotic-pool-cleaner-wall-climbing-diagnostic-map.webp",
+        "/images/articles/robotic-pool-cleaner-not-climbing-walls/03-pool-wall-climbing-acceptance-and-responsibility.webp"
       ]
     },
     "robotic-pool-cleaner-not-moving": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robotic-pool-cleaner-not-moving-diagnostic-map.webp",
+      "cover": "/images/articles/robotic-pool-cleaner-not-moving/01-cover.webp",
       "body": [
-        "/images/blog/pool-robot-service-triage-and-test.webp"
+        "/images/articles/robotic-pool-cleaner-not-moving/02-diagnostic-map.webp",
+        "/images/articles/robotic-pool-cleaner-not-moving/03-pool-robot-service-triage-and-test.webp"
       ]
     },
     "robotic-pool-cleaner-not-picking-up-debris": {
       "budgetClass": "standard",
-      "cover": "/images/blog/robotic-pool-cleaner-debris-pickup-diagnostic-map.webp",
+      "cover": "/images/articles/robotic-pool-cleaner-not-picking-up-debris/01-cover.webp",
       "body": [
-        "/images/blog/robotic-pool-cleaner-pickup-acceptance-workflow.webp"
+        "/images/articles/robotic-pool-cleaner-not-picking-up-debris/02-robotic-pool-cleaner-debris-pickup-diagnostic-map.webp",
+        "/images/articles/robotic-pool-cleaner-not-picking-up-debris/03-robotic-pool-cleaner-pickup-acceptance-workflow.webp"
       ]
     },
     "robotic-pool-cleaner-oem-odm-guide": {
@@ -42788,10 +42909,10 @@
     },
     "vacuum-cleaner-losing-suction": {
       "budgetClass": "standard",
-      "cover": "/images/blog/vacuum-cleaner-losing-suction-cover.webp",
+      "cover": "/images/articles/vacuum-cleaner-losing-suction/01-cover.webp",
       "body": [
-        "/images/blog/vacuum-cleaner-airflow-diagnostic.webp",
-        "/images/blog/vacuum-suction-isolation-map.webp"
+        "/images/articles/vacuum-cleaner-losing-suction/02-vacuum-cleaner-airflow-diagnostic.webp",
+        "/images/articles/vacuum-cleaner-losing-suction/03-vacuum-suction-isolation-map.webp"
       ]
     },
     "vacuum-cleaner-making-loud-noise": {
@@ -44328,6 +44449,75 @@
         }
       }
     },
+    "bissell-vs-tineco-patent-details": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/01-cover.webp",
+          "hash": "sha256:a4671c5d50be10842e9896a5ecef579e0b0dbef648509a2c4ab8c284c1e41635"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/02-image-002.webp",
+          "hash": "sha256:bf419cd8937e0e39795745f11c7e94eab20390f31a7714686fc00f05f4958374"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/03-image-003.webp",
+          "hash": "sha256:2bad1bb43a01087f48cb207fb290440f8eea050612b1bab5c123191eebd1600f"
+        },
+        "04-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/04-image-004.webp",
+          "hash": "sha256:cd063ed0bd6a34eedefe16fe4a2993c03113cec07f876250695cca01dcd23a37"
+        },
+        "05-image-005.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/05-image-005.webp",
+          "hash": "sha256:0dff25958c47a995174f639f8652a89fc1f52d5ca67105d7a9524b0a25608c59"
+        },
+        "06-image-006.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/06-image-006.webp",
+          "hash": "sha256:1bf7ec1ba2cbb32f95db0b7bf945378781a2a4b2d2f889aa5946b13d7bfed2aa"
+        },
+        "07-image-007.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/07-image-007.webp",
+          "hash": "sha256:29116e02945427f313272afea76f9e2c2bb6f8f1f5105921c8fdcf925af7c4bb"
+        },
+        "08-image-008.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/08-image-008.webp",
+          "hash": "sha256:eb9a4c4291658b17b48e8bc3f694f120904031bfb9657dc5f8dd95717d480e51"
+        },
+        "09-image-009.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/09-image-009.webp",
+          "hash": "sha256:6982d41d3bff3172c8a25a878c4ec87d5ea0c8c077ae592ca1ca51d712cde6d2"
+        },
+        "10-image-010.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/10-image-010.webp",
+          "hash": "sha256:4292274da49fc6be493176f3e57caafd234d6ac3f738149a60487d8e710c5923"
+        },
+        "11-image-011.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/11-image-011.webp",
+          "hash": "sha256:d65e281352a436c8360895705755c5bcadfbf98bfa51d9302e4c64a399648344"
+        },
+        "12-image-012.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/12-image-012.webp",
+          "hash": "sha256:a9bd72b8f68dd10ee9ac87b42b54e38be8b59045f795cfc108b470d8b9b340fe"
+        },
+        "13-image-013.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-vs-tineco-patent-details/13-image-013.webp",
+          "hash": "sha256:0e91786cb917e14861e85e4729b24cc0b9b63d52b0d7615ea0f46bb7b0be09d3"
+        }
+      }
+    },
     "bosch-unlimited-10-bbs104sbuc": {
       "files": {
         "01-cover.webp": {
@@ -44986,6 +45176,35 @@
         }
       }
     },
+    "dyson-fights-bosch-again": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-fights-bosch-again/01-cover.webp",
+          "hash": "sha256:378adf7525d29e3b6e8a01cd41e39f16bc43f98cdde66a120e5b19e93c040710"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-fights-bosch-again/02-image-002.webp",
+          "hash": "sha256:dd661ff6a616f33a64cd836dbfce7edda08efeb4b5b73567989cbcc0ebb4c896"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-fights-bosch-again/03-image-003.webp",
+          "hash": "sha256:12cc875e01f65b9fc376af367b3c78997ea274d0a4925ee19e6d49815f5b311b"
+        },
+        "04-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-fights-bosch-again/04-image-004.webp",
+          "hash": "sha256:accf8ffffc1dcd84270423d5b5e58f22ee16cadfba4cf52e32f2f81f6223f880"
+        },
+        "05-image-005.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-fights-bosch-again/05-image-005.webp",
+          "hash": "sha256:38fca0a133292c1cadf6cbf4bff0635bb2b781fb67facb99546ac92f841da2ff"
+        }
+      }
+    },
     "dyson-pencilwash": {
       "files": {
         "01-cover.png": {
@@ -45451,6 +45670,44 @@
         }
       }
     },
+    "floor-scrubber-not-dispensing-water": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/floor-scrubber-not-dispensing-water/01-cover.webp",
+          "hash": "sha256:4113171b3b479c3d8fb2584799063c99c9f352c1f394a7263c3cbc1d1804711d"
+        },
+        "02-floor-scrubber-solution-flow-diagnostic-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/floor-scrubber-not-dispensing-water/02-floor-scrubber-solution-flow-diagnostic-map.webp",
+          "hash": "sha256:b8d412af733366a0e474bb75d0475325798a87ed1e4a99dd878a977b03a6246e"
+        },
+        "03-floor-scrubber-no-low-uneven-flow-matrix.webp": {
+          "status": "matched",
+          "primary": "/images/articles/floor-scrubber-not-dispensing-water/03-floor-scrubber-no-low-uneven-flow-matrix.webp",
+          "hash": "sha256:73be7315323aab71aa3da7ccf3d20fb9f09efc7ecf1bd41230fa8f2e7daa60b1"
+        }
+      }
+    },
+    "floor-scrubber-not-picking-up-water": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/floor-scrubber-not-picking-up-water/01-cover.webp",
+          "hash": "sha256:ceb2c5c5129c66c663f8bdbaea3aaaf4c7fb4c5a4bd00a93c4c4d2551897edda"
+        },
+        "02-floor-scrubber-water-recovery-troubleshooting.webp": {
+          "status": "matched",
+          "primary": "/images/articles/floor-scrubber-not-picking-up-water/02-floor-scrubber-water-recovery-troubleshooting.webp",
+          "hash": "sha256:efcad189fe47a0a0cd81bb9c5cebd0a3fb8a40742ee418c43f0ff97521c27606"
+        },
+        "03-floor-scrubber-troubleshooting-service-boundary.webp": {
+          "status": "matched",
+          "primary": "/images/articles/floor-scrubber-not-picking-up-water/03-floor-scrubber-troubleshooting-service-boundary.webp",
+          "hash": "sha256:981a31684b2902b6631ecc242b60e14b5ab0d1111ef849f07963912f8860482f"
+        }
+      }
+    },
     "fujia-first-half-results-august-2026": {
       "files": {
         "01-cover.png": {
@@ -45499,6 +45756,40 @@
           "status": "matched",
           "primary": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
           "hash": "sha256:c35f9a3cb4408aa727d7dec2c4eb58f75190cf0966035436cf12da32ae8a3440"
+        }
+      }
+    },
+    "german-vacuum-brands-in-the-cordless-wave": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/german-vacuum-brands-in-the-cordless-wave/01-cover.webp",
+          "hash": "sha256:167c75f7be205579a6cbb4b2169cac32e311a2ea608e72746e7d40fbc457e70e"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/german-vacuum-brands-in-the-cordless-wave/02-image-002.webp",
+          "hash": "sha256:c9091d5fad4b87d3e217285713b4d5382617b0dc549d8a5194757b9e65c70046"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/german-vacuum-brands-in-the-cordless-wave/03-image-003.webp",
+          "hash": "sha256:ae4f1b78863ec41aee33781daeefdc6540fa0af3630c7b6690fe0a0d65d8c47b"
+        },
+        "04-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/german-vacuum-brands-in-the-cordless-wave/04-image-004.webp",
+          "hash": "sha256:c1651b4f3475870a81f23d51e5d6b3a5ef3428b57b66b3e01abad44eca93b935"
+        },
+        "05-image-005.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/german-vacuum-brands-in-the-cordless-wave/05-image-005.webp",
+          "hash": "sha256:b78cf1de48ec2ac90a0c9c92b36bcd74054e05bd266287d29a34a1024d4a69aa"
+        },
+        "06-image-006.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/german-vacuum-brands-in-the-cordless-wave/06-image-006.webp",
+          "hash": "sha256:45aae950464d2b54a68367b207bf8f7d69afdb5e07ba3a53ffc7ff8699143831"
         }
       }
     },
@@ -46069,6 +46360,65 @@
           "status": "matched",
           "primary": "/images/articles/lawn-mowing-history/25-navimow-terranox.webp",
           "hash": "sha256:4cbda578f93d75ac723d7b337b9a1d3136417cfb0657def4d1e63e68513aa7f0"
+        }
+      }
+    },
+    "lawsuit-that-shaped-the-handheld-vacuum-industry": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/01-cover.webp",
+          "hash": "sha256:cd76cb5aabae441fcf9204ddab97f4efc39aebf42c465000dc2b623644087daf"
+        },
+        "02-image-002.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/02-image-002.webp",
+          "hash": "sha256:ff97561ed565c37185ba70cac60e966035fd022421aeae69e495d1695c4f2c18"
+        },
+        "03-image-003.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/03-image-003.webp",
+          "hash": "sha256:808b587091b421e6e5c58c8265fd4f49961e2abca8aee35e38ab38d583ec9b92"
+        },
+        "04-image-004.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/04-image-004.webp",
+          "hash": "sha256:2f8db41720a77ebb2ab54bf089e60f5ccc3ca7294e868dab4e41aaba4ba126c9"
+        },
+        "05-image-005.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/05-image-005.webp",
+          "hash": "sha256:57785f2747fa0a2a8f8781506a581707901a77e53bb85461c5ff4385bf9111eb"
+        },
+        "06-image-006.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/06-image-006.webp",
+          "hash": "sha256:b39ba52a624f2736d6d858f786df4add8245f04cdfe89421b8e8445b80016cc5"
+        },
+        "07-image-007.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/07-image-007.webp",
+          "hash": "sha256:a35fcc162391daf1204b43d74207620ada78eef118b86baca4cfa56125eaa15a"
+        },
+        "08-image-008.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/08-image-008.webp",
+          "hash": "sha256:7fef5ec81d483997eb246a375b05dd7e771af22ad2b3e60a520595d29a6e4854"
+        },
+        "09-image-009.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/09-image-009.webp",
+          "hash": "sha256:7ba5cd41091f8a88cf0cc8d02c537a5f9986f9adef1d7a6af3686cae467c7da5"
+        },
+        "10-image-010.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/10-image-010.webp",
+          "hash": "sha256:d359f85ffd1bed7fe27ceb172bba7019f6610612c4e55c1d88125fc07432af99"
+        },
+        "11-image-011.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/lawsuit-that-shaped-the-handheld-vacuum-industry/11-image-011.webp",
+          "hash": "sha256:f41f2c13b3e57e7b91ceb6fcd7e83e1be369afd61f8982c87366812128fb95fc"
         }
       }
     },
@@ -46727,6 +47077,44 @@
         }
       }
     },
+    "robot-lawn-mower-keeps-getting-stuck": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-lawn-mower-keeps-getting-stuck/01-cover.webp",
+          "hash": "sha256:92b8be55431731745d016875ead7c0beb4258b06f316a5d100150b495b61bd84"
+        },
+        "02-robot-lawn-mower-stuck-diagnostic-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-lawn-mower-keeps-getting-stuck/02-robot-lawn-mower-stuck-diagnostic-map.webp",
+          "hash": "sha256:f382dfb926b332d5fe01029fad0bcb379130a1f545b5ea9d428d792aae5ef924"
+        },
+        "03-robot-mower-rescue-hotspot-and-acceptance.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-lawn-mower-keeps-getting-stuck/03-robot-mower-rescue-hotspot-and-acceptance.webp",
+          "hash": "sha256:3fa2bf033eb263db5c3ef0cd5342e0b70859d227d5d0e7dfc7b95f64545c1763"
+        }
+      }
+    },
+    "robot-lawn-mower-not-charging": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-lawn-mower-not-charging/01-cover.webp",
+          "hash": "sha256:4deafecc45b35b65eed53600b02e1de22635371b950abc7c5b12a315bcba4a01"
+        },
+        "02-diagnostic-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-lawn-mower-not-charging/02-diagnostic-map.webp",
+          "hash": "sha256:8f17bdc7008ba99fad75ccff3a45eaaccf1056c3f7be874e59c044e274ff80b0"
+        },
+        "03-robot-mower-charging-service-and-acceptance.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-lawn-mower-not-charging/03-robot-mower-charging-service-and-acceptance.webp",
+          "hash": "sha256:8ba43d9a9f217338e20799799eee734d9db7506b572eecc47322da4abde75389"
+        }
+      }
+    },
     "robot-vacuum-battery-drains-fast": {
       "files": {
         "01-cover.png": {
@@ -46898,6 +47286,101 @@
         }
       }
     },
+    "robot-vacuum-not-charging": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-charging/01-cover.webp",
+          "hash": "sha256:4a1497dfdf30a18876d723a1e2d6e29efcfd37c42aa954fe0e109e262f482f43"
+        },
+        "02-diagnostic-path.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-charging/02-diagnostic-path.webp",
+          "hash": "sha256:5e02e1af532d1077bc9f2a1ed487f3495d61716391894159f6d344ce327df2d7"
+        },
+        "03-robot-vacuum-charging-service-boundary.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-charging/03-robot-vacuum-charging-service-boundary.webp",
+          "hash": "sha256:c03ef687a1217f09656ce6735ca53017114beeaa37f875b671ca7f06b02c03f8"
+        }
+      }
+    },
+    "robot-vacuum-not-connecting-wifi": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-connecting-wifi/01-cover.webp",
+          "hash": "sha256:289d90306b4360660fae72155015acb22dd6a946fed36a1db3af079b6b809625"
+        },
+        "02-robot-vacuum-wifi-setup-diagnostic.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-connecting-wifi/02-robot-vacuum-wifi-setup-diagnostic.webp",
+          "hash": "sha256:f19e24a380c748cb83da2f09949248ce1084b333c9367ac95e4baa3462cc60a3"
+        },
+        "03-robot-vacuum-network-compatibility-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-connecting-wifi/03-robot-vacuum-network-compatibility-map.webp",
+          "hash": "sha256:7a8f0f721249533a2839b97ef9b5c9b1afa08a7e2453a14e6ca7dc58bff680c6"
+        }
+      }
+    },
+    "robot-vacuum-not-dispensing-water": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-dispensing-water/01-cover.webp",
+          "hash": "sha256:1d43db6a34d7b2cea3bbb65422ec31d218110ac22909eebc21ac88778b6b2e31"
+        },
+        "02-robot-vacuum-water-flow-diagnostic.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-dispensing-water/02-robot-vacuum-water-flow-diagnostic.webp",
+          "hash": "sha256:1d65c701eeb4c5912ab550bf98f52e60dbe800de41718eb295ddd908cd917ab1"
+        },
+        "03-robot-vacuum-water-flow-isolation-test.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-dispensing-water/03-robot-vacuum-water-flow-isolation-test.webp",
+          "hash": "sha256:159e0c16fa16872cc19a74949242fd0c6a17c9bf379cf162efaba1c19ba35984"
+        }
+      }
+    },
+    "robot-vacuum-not-returning-to-dock": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-returning-to-dock/01-cover.webp",
+          "hash": "sha256:405434b79ce4c2d3baa3401ca0ab55fa5827b9706b9eda3273b43a67f3613315"
+        },
+        "02-robot-vacuum-return-to-dock-diagnostic.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-returning-to-dock/02-robot-vacuum-return-to-dock-diagnostic.webp",
+          "hash": "sha256:a8640125604a1cdfd508a9a83740336376369c041e525ce6e36301b5a6948e8b"
+        },
+        "03-robot-vacuum-near-dock-isolation-test.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-not-returning-to-dock/03-robot-vacuum-near-dock-isolation-test.webp",
+          "hash": "sha256:a303fba59c64f8d742ca1e89798b24ce9cc43f5f86341d48c488d4617eec774f"
+        }
+      }
+    },
+    "robot-vacuum-self-empty-dock-not-working": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-self-empty-dock-not-working/01-cover.webp",
+          "hash": "sha256:d19d9b0cf09864006afba7a918fb66b2afda65b92dc620e8d466d285c42f1a50"
+        },
+        "02-robot-vacuum-self-empty-diagnostic.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-self-empty-dock-not-working/02-robot-vacuum-self-empty-diagnostic.webp",
+          "hash": "sha256:c9ceae0881b2d8bac83a65da1da461d35a0a896e6014f08900cd22ebc2e075a5"
+        },
+        "03-robot-vacuum-self-empty-trigger-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-self-empty-dock-not-working/03-robot-vacuum-self-empty-trigger-map.webp",
+          "hash": "sha256:1277da946374a6dbcca22ec9a3386e421f1093886f876a09309fb4d3850ed1cc"
+        }
+      }
+    },
     "robot-vacuum-side-brush-keeps-falling-off": {
       "files": {
         "01-cover.png": {
@@ -46952,6 +47435,82 @@
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-wont-turn-on/03-power-service-boundary.png",
           "hash": "sha256:0b517e10d3e7e1427ff877001b6a0a9dc39b38f6d9d245350f81f28e782f8add"
+        }
+      }
+    },
+    "robotic-pool-cleaner-not-charging": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-charging/01-cover.webp",
+          "hash": "sha256:fa35332d5f492b5b5fe36953918bb56292e065ec2652605713ac5c21ab631998"
+        },
+        "02-diagnostic-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-charging/02-diagnostic-map.webp",
+          "hash": "sha256:021f337378b5b7eb074f453fcd2c5d18902294c9f81bf1f3415a0763aa0d7a77"
+        },
+        "03-pool-robot-charging-service-warranty-workflow.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-charging/03-pool-robot-charging-service-warranty-workflow.webp",
+          "hash": "sha256:67c7a995916cfbc8e82841576f63f259f9227ac0627b70d205c977b4d9690eef"
+        }
+      }
+    },
+    "robotic-pool-cleaner-not-climbing-walls": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-climbing-walls/01-cover.webp",
+          "hash": "sha256:104a5451774d2878951fe973a793222ad7a11366fd3818d155544c1d7d30dca9"
+        },
+        "02-robotic-pool-cleaner-wall-climbing-diagnostic-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-climbing-walls/02-robotic-pool-cleaner-wall-climbing-diagnostic-map.webp",
+          "hash": "sha256:d50c746c6a5d330215c436d6cb11555defbec6f16c73f4edb01dad96385fb300"
+        },
+        "03-pool-wall-climbing-acceptance-and-responsibility.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-climbing-walls/03-pool-wall-climbing-acceptance-and-responsibility.webp",
+          "hash": "sha256:ff75dc1297e48df08a5164860f6be8325c81be48154eaf656953e3c9a7820084"
+        }
+      }
+    },
+    "robotic-pool-cleaner-not-moving": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-moving/01-cover.webp",
+          "hash": "sha256:5a036269fd1fcb2baa986b9e221d033bdef41d23a3279cd0ff7bec26709dfb3c"
+        },
+        "02-diagnostic-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-moving/02-diagnostic-map.webp",
+          "hash": "sha256:3f3a6149997e30b5f35f8715c432b1f9e8976e720f92556f131d2f8228342669"
+        },
+        "03-pool-robot-service-triage-and-test.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-moving/03-pool-robot-service-triage-and-test.webp",
+          "hash": "sha256:6da5f19a081850e55c149a00b017797da835b9584dfdf36947c59969fa1c7a4e"
+        }
+      }
+    },
+    "robotic-pool-cleaner-not-picking-up-debris": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-picking-up-debris/01-cover.webp",
+          "hash": "sha256:c325b790742483117ac9a67b517f33a15c1055e59cbcefda549e2f38b1ece9d2"
+        },
+        "02-robotic-pool-cleaner-debris-pickup-diagnostic-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-picking-up-debris/02-robotic-pool-cleaner-debris-pickup-diagnostic-map.webp",
+          "hash": "sha256:c5c9c86a379dc1a2eddac19cfbebdf9ef857c43dc4b977384d40decbedeb2f28"
+        },
+        "03-robotic-pool-cleaner-pickup-acceptance-workflow.webp": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-pool-cleaner-not-picking-up-debris/03-robotic-pool-cleaner-pickup-acceptance-workflow.webp",
+          "hash": "sha256:781a35383ff974ef6d6e55dedda150f991c6e0b211aefe4f6943c48eb7e9dc39"
         }
       }
     },
@@ -47483,6 +48042,25 @@
           "status": "matched",
           "primary": "/images/articles/vacuum-cleaner-blowing-out-dust/03-dust-containment-check.webp",
           "hash": "sha256:3d9d5640607c2fc786dc3f772167e0c856e2655b1545634a93370e35463d588f"
+        }
+      }
+    },
+    "vacuum-cleaner-losing-suction": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-losing-suction/01-cover.webp",
+          "hash": "sha256:db927961851e9739807ded1ea54e9468d17c5dfec71cb8432bdc381de72106f9"
+        },
+        "02-vacuum-cleaner-airflow-diagnostic.webp": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-losing-suction/02-vacuum-cleaner-airflow-diagnostic.webp",
+          "hash": "sha256:3aabf93f038a1f71f37c52f589107393a299808d499ce998adcbd36f8c0a913e"
+        },
+        "03-vacuum-suction-isolation-map.webp": {
+          "status": "matched",
+          "primary": "/images/articles/vacuum-cleaner-losing-suction/03-vacuum-suction-isolation-map.webp",
+          "hash": "sha256:1a838c46f62dc9344690da2329ea1eb19958f8011d7f81d88b75b90e1f550263"
         }
       }
     },
