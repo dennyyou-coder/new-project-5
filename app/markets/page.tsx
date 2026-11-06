@@ -6,6 +6,7 @@ import { getMarketsData } from "@/lib/markets";
 import { figureDirection } from "@/lib/brandMarks";
 import { newsDate } from "@/lib/news";
 import { buildWebsiteMetadata } from "@/lib/seo";
+import { LogoTileImage } from "@/components/ui/LogoTileImage";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -85,7 +86,7 @@ export default function MarketsPage() {
                         <Link className="markets-company" href={`/news/${row.news.slug}`}>
                           {row.company?.logoImage ? (
                             <span className="markets-company-logo" aria-hidden="true">
-                              <img src={row.company.logoImage} alt="" loading="lazy" decoding="async" />
+                              <LogoTileImage slug={row.company.slug} fallbackSrc={row.company.logoImage} boxRatio={1.73} />
                             </span>
                           ) : null}
                           <span>{row.companyName}</span>

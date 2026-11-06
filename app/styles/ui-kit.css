@@ -70,3 +70,6 @@ a.company-mark-link:focus-visible { outline: 2px solid var(--accent); outline-of
 .figure-chip-label { font-weight: 600; }
 .figure-chip--up { background: #e2f4ec; color: #13795b; }
 .figure-chip--down { background: #fbe7e4; color: #b4372d; }
+
+/* Logo tiles are sized by area inline; keep any logo inside its box. */
+.company-mark img { object-fit: contain; }

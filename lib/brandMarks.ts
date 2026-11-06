@@ -3,10 +3,16 @@
  * there is one, otherwise a monogram built from its name.
  */
 
+import { brandLogoTile } from "@/lib/brandLogoTiles";
+
 export type BrandMark = {
   slug?: string;
   name: string;
   logo?: string;
+  /** Width / height of the trimmed logo tile, used to size logos by area. */
+  logoRatio?: number;
+  /** A near-white logo that needs darkening on white cards. */
+  logoLight?: boolean;
   href?: string;
 };
 
@@ -14,15 +20,20 @@ type MarkSource = { slug: string; name: string; logoImage?: string };
 
 export function buildBrandMarkIndex(profiles: readonly MarkSource[]): Map<string, BrandMark> {
   return new Map(
-    profiles.map((profile) => [
-      profile.slug,
-      {
-        slug: profile.slug,
-        name: profile.name,
-        logo: profile.logoImage || undefined,
-        href: `/brands/${profile.slug}`
-      }
-    ])
+    profiles.map((profile) => {
+      const tile = brandLogoTile(profile.slug);
+      return [
+        profile.slug,
+        {
+          slug: profile.slug,
+          name: profile.name,
+          logo: tile?.src ?? (profile.logoImage || undefined),
+          logoRatio: tile?.ratio,
+          logoLight: tile?.light,
+          href: `/brands/${profile.slug}`
+        }
+      ];
+    })
   );
 }
 

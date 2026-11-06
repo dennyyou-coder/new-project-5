@@ -163,3 +163,6 @@
 .news-page .news-company-logo img { max-width: 86%; max-height: 70%; object-fit: contain; }
 .news-key-thumb-logo { display: grid; place-items: center; width: 64px; height: 30px; margin-bottom: 6px; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
 .news-key-thumb-logo img { max-width: 82%; max-height: 64%; object-fit: contain; }
+
+/* Logo tiles are sized by area inline; keep any logo inside its box. */
+.news-page .news-company-logo img { object-fit: contain; }

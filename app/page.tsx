@@ -238,8 +238,10 @@ export default function HomePage() {
                 data.companies.length ? `${data.companies.length} companies` : null,
                 stories ? `${stories} stories` : null
               ].filter(Boolean).join(" · ");
+              // Companies whose main category is this hub first, then by coverage.
+              const isHome = (slug: string) => (hubOfBrand.get(slug) === data.hub.name ? 1 : 0);
               const leaders = [...data.companies]
-                .sort((a, b) => (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0))
+                .sort((a, b) => isHome(b.slug) - isHome(a.slug) || (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0))
                 .slice(0, 3);
               return (
                 <Link

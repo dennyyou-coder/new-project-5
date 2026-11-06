@@ -83,3 +83,18 @@ test("landing pages carry company logos, the ownership card and guide ordering",
   const guides = read("app/guides/page.tsx");
   assert.match(guides, /const guideTypeOrder = \["ownership", "comparison", "buying", "explainer", "sourcing", "maintenance"\]/);
 });
+
+test("every profile has a written ownership answer and a trimmed logo tile", async () => {
+  const { brandLogoTile, logoTileWidth } = await import("../lib/brandLogoTiles.ts");
+  const profiles = getPublishedBrandProfiles(getInsights());
+  for (const profile of profiles) {
+    assert.ok(profile.quickAnswer && profile.quickAnswer.length <= 220, `${profile.slug} quickAnswer`);
+    const tile = brandLogoTile(profile.slug);
+    assert.ok(tile, `${profile.slug} logo tile`);
+    assert.ok(fs.existsSync(path.join(process.cwd(), "public", tile.src)), `${profile.slug} tile file`);
+    assert.ok(tile.ratio > 0.3 && tile.ratio < 20, `${profile.slug} tile ratio`);
+  }
+  // Wide wordmarks get more width than square marks, within the box.
+  assert.ok(logoTileWidth(7) > logoTileWidth(1));
+  assert.ok(logoTileWidth(20) <= 0.9 && logoTileWidth(0.5) > 0);
+});

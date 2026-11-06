@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { brandMonogram, type BrandMark } from "@/lib/brandMarks";
+import { logoTileStyle } from "@/lib/brandLogoTiles";
 
 type Size = "xs" | "sm" | "md" | "lg";
 
@@ -20,7 +21,7 @@ export function CompanyMark({
   const tile = (
     <span className={`company-mark company-mark--${size}${mark.logo ? "" : " company-mark--monogram"}`}>
       {mark.logo ? (
-        <img src={mark.logo} alt={showName ? "" : mark.name} loading="lazy" decoding="async" />
+        <img src={mark.logo} alt={showName ? "" : mark.name} loading="lazy" decoding="async" style={logoTileStyle(mark.logoRatio, undefined, mark.logoLight)} />
       ) : (
         <span aria-hidden={showName ? "true" : undefined} aria-label={showName ? undefined : mark.name}>
           {brandMonogram(mark.name)}

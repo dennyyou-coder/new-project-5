@@ -67,9 +67,9 @@ test("Guide routes do not introduce a second main landmark", () => {
   assert.doesNotMatch(category, /<main className="guides-hub/);
 });
 
-test("primary navigation consolidates Guides under Blog while discovery routes remain", () => {
-  assert.match(header, /\{ href: "\/blog", label: "Analysis & Insights" \}/);
-  assert.doesNotMatch(header, /\{ href: "\/guides", label: "Guides" \}/);
+test("primary navigation links Guides directly while discovery routes remain", () => {
+  // The category-hub navigation (PR-08) lists Guides as a top-level link.
+  assert.match(header, /\{ kind: "link", href: "\/guides", label: "Guides" \}/);
   assert.match(footer, /href="\/guides"/);
   assert.match(sitemap, /"\/guides"/);
   assert.match(sitemap, /GUIDE_TYPE_CONFIG/);

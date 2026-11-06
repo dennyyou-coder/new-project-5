@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Icon, type IconName } from "@/components/Icon";
 import type { BrandProfile } from "@/lib/brands";
 import { buildBrandQuickAnswer, buildOwnershipFact } from "@/lib/brandProfileView";
+import { LogoTileImage } from "@/components/ui/LogoTileImage";
 
 /**
  * "At a glance" card for ownership guides: the company's logo, the short
@@ -19,7 +20,7 @@ export function ArticleCompanyCard({ profile }: { profile: BrandProfile }) {
     <aside className="article-company-card" aria-labelledby="article-company-card-title">
       <div className="article-company-card__head">
         <span className="article-company-card__logo">
-          <img src={profile.logoImage} alt={profile.logoImageAlt} loading="eager" decoding="async" />
+          <LogoTileImage slug={profile.slug} fallbackSrc={profile.logoImage} alt={profile.logoImageAlt} boxRatio={1.85} eager />
         </span>
         <div>
           <p className="article-company-card__eyebrow">Company at a glance</p>

@@ -832,12 +832,17 @@
   }
 }
 
-.home-b-category-logos .company-mark {
-  width: 60px;
-  height: 32px;
+.home-b .home-b-category-logos .company-mark {
+  width: 72px;
+  height: 38px;
 }
 
 /* The subscribe band is dark: keep its heading light. */
 .structure-refresh.design-a.approved-design .home-b-subscribe h2 {
   color: #ffffff;
+}
+
+.home-b .home-b-owners .company-mark {
+  width: 66px;
+  height: 40px;
 }
