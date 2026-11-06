@@ -3114,21 +3114,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 110604,
+      "bytes": 32654,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:4020ee5e3b8ada61e5b242da54711a7bd99dd14f183e94e2bebb71eeccdbe6af",
-      "outputHash": "sha256:d356b35f8e34766de9a011bdcfd6c27a48a7eb86eb5ebab1ec02440fae5f4877",
+      "sourceHash": "sha256:def72774266979e13b046ca2d34e59770914a0e19ae89bd639c58e86aa39e341",
+      "outputHash": "sha256:461b9c66d48f2ca8ebd40cdad5ed740f2a1b418d0f82584d78a1423b3b3e7df3",
       "mobile": {
         "src": "/images/articles/cordless-vacuum-battery-drains-fast/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 39326,
-        "outputHash": "sha256:19329aa2459c1cf1a5ac3b3eb89c16c23144d017324ffe9bc4fb6e30c1107b03"
+        "bytes": 12242,
+        "outputHash": "sha256:470221aa7b42d7f84560faa951ed304000dc40b62c66fafe3a67345a05057472"
       }
     },
     "/images/articles/cordless-vacuum-battery-drains-fast/02-runtime-load-map.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3146,7 +3146,7 @@
       }
     },
     "/images/articles/cordless-vacuum-battery-drains-fast/03-runtime-test-matrix.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3168,21 +3168,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 45716,
+      "bytes": 34000,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:9eea4f6cad7a602ae748064a579ef0c3086d23cee31e2d145b060c3672586d94",
-      "outputHash": "sha256:8d25c6a2e9e7acef6daf4b7f1c11e90423ae89a901b98ef58c830e88c87fb4fb",
+      "sourceHash": "sha256:bc57aeb049ce1983b595d9ad89eb37cd59e0c84c35605693943890fe809503be",
+      "outputHash": "sha256:68b89e24a33e8358088564f292ad053ebaf3c6e39b16153a8fd1c2e9367b292a",
       "mobile": {
         "src": "/images/articles/cordless-vacuum-keeps-shutting-off/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 16748,
-        "outputHash": "sha256:22cc8c152a7a361e96e9956d866f167cb968733773f1209a8ccff495e4f13d49"
+        "bytes": 12680,
+        "outputHash": "sha256:2ad51f7e599d85d14d0ec90c7b9abbbae79ca63749be6a25041ee25375fec6e4"
       }
     },
     "/images/articles/cordless-vacuum-keeps-shutting-off/02-shutdown-pattern-map.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -3200,7 +3200,7 @@
       }
     },
     "/images/articles/cordless-vacuum-keeps-shutting-off/03-cutout-diagnostic-order.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -3222,21 +3222,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 41974,
+      "bytes": 33290,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:a7407478169cca54074ae5dffb35d8ed6fc2aaa65a14b3f19c0e49a95fcde4b9",
-      "outputHash": "sha256:9cdf774dde70ea879b15e362966e842791ed9d4217da2de456105fbadce81c93",
+      "sourceHash": "sha256:9208fb32ebc7c39870bbedd07a4025a3c496ed34754747e808cb513e5a250c4c",
+      "outputHash": "sha256:b6004be87c37764e2ef537701d42c3c86919e00b6817ea5a61637b31671e32ff",
       "mobile": {
         "src": "/images/articles/cordless-vacuum-not-charging/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 16172,
-        "outputHash": "sha256:27d40617f5f9b3ad8cd2001ddbc89da3be4d8c84e454e10f7928000e0bd2ff0f"
+        "bytes": 12640,
+        "outputHash": "sha256:5a60fff1153cd89bd3e01b027bfe0921a1bbdbbb63355a48f7420a709049231a"
       }
     },
     "/images/articles/cordless-vacuum-not-charging/02-charging-path.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -3254,7 +3254,7 @@
       }
     },
     "/images/articles/cordless-vacuum-not-charging/03-charging-service-boundary.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -3276,21 +3276,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 71120,
+      "bytes": 33328,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:a3cde20f8cc6a4c2858e83c9d13d58933d6de3048b3a6d342c9f448442acb6f9",
-      "outputHash": "sha256:6f1e7ed12cf3f761af7882fd2c05bb7879008f0fc82e10035da10407ff1b360e",
+      "sourceHash": "sha256:87c7ff3d3c69db866ffc210705e60985c96c11a382686f64a754ce291f88b8af",
+      "outputHash": "sha256:ba3553f04958a9af56b06e8c18a59be3f6326140f139be894754c39229314fc0",
       "mobile": {
         "src": "/images/articles/cordless-vacuum-wont-turn-on/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 25050,
-        "outputHash": "sha256:4ed860534a184496c072b2748719308fffaf50cf654df5be862a8bbd2ac40ac2"
+        "bytes": 12548,
+        "outputHash": "sha256:98b7340fbb1d8ffd1eb1ad01bc51a3f713c48277f4224fc10d4e4e1e809e1199"
       }
     },
     "/images/articles/cordless-vacuum-wont-turn-on/02-no-power-decision-path.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -3308,7 +3308,7 @@
       }
     },
     "/images/articles/cordless-vacuum-wont-turn-on/03-no-power-observation-map.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -9470,21 +9470,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 52046,
+      "bytes": 34260,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:f6b509e651747d70d781ca1b7e71da01b97fda46fe4aa2b88b96d27115fbdaef",
-      "outputHash": "sha256:4cbba7b7ab15b385832f80bc7c6343c97afab050534c68cb3adc10ba88c71558",
+      "sourceHash": "sha256:a82bf2c71980e8a0df3ac6faa6f201e850b76a87a5a39041a834dd600a32a247",
+      "outputHash": "sha256:bb19c2294ce8697431808987cea7408f052dfbbddcdbeff063652616a06220bb",
       "mobile": {
         "src": "/images/articles/robot-vacuum-battery-drains-fast/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 19546,
-        "outputHash": "sha256:753a3f89114be4638c2d17a79b26c71061c7a867b7506650f34a4f62a020444c"
+        "bytes": 13740,
+        "outputHash": "sha256:9fc262488b116ad87dad0ab7c178bfa681de7e476bf35861ed8d132781870382"
       }
     },
     "/images/articles/robot-vacuum-battery-drains-fast/02-runtime-diagnostic-path.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -9502,7 +9502,7 @@
       }
     },
     "/images/articles/robot-vacuum-battery-drains-fast/03-load-versus-battery-boundary.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -9524,21 +9524,21 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 50652,
+      "bytes": 43542,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:99ba598ea18ee176319762648c8bf16d7852369b61d3db5edfca8964214061bd",
-      "outputHash": "sha256:106893d7ede2c1fc69c7ded2663f9e0c32d8f7500603c68e01b870288c822f52",
+      "sourceHash": "sha256:bf134dc8585d5d393782b121d116de0c644d50d8195f5fd985da165042966b0a",
+      "outputHash": "sha256:2aa5ce4ec20ee23f7883b0fa6be8543a9987b910e7c416909a8ab5ea1fa46611",
       "mobile": {
         "src": "/images/articles/robot-vacuum-brush-not-spinning/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 24154,
-        "outputHash": "sha256:ebd0e7569da68eb34d976874d339e89b409b5157a8cc971827bfa7125d8b1207"
+        "bytes": 18998,
+        "outputHash": "sha256:266510fec18e979f1a0aff3e6f7a44069a455a4e55d1261120db3032186cf604"
       }
     },
     "/images/articles/robot-vacuum-brush-not-spinning/02-brush-not-spinning-checks.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9556,7 +9556,7 @@
       }
     },
     "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9578,21 +9578,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 43220,
+      "bytes": 42584,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:e29b139c1bbad5be88f205a7d9b47dd85277191484c21d988a1f777107729544",
-      "outputHash": "sha256:a7b359bf727eb58db7232feac070e0e12d2b5353db6940986d7485069e87374b",
+      "sourceHash": "sha256:f16a3bf439146b79d131cbb3183d4af23779cb8e8c1426ec92283943ba696fd2",
+      "outputHash": "sha256:8b6a035f27291c6f52f98ced9b975699344043c880201deea43370bdbc032c2b",
       "mobile": {
         "src": "/images/articles/robot-vacuum-going-in-circles/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 15602,
-        "outputHash": "sha256:9a9d8a25163cf16609e79169818a0da099034ca31469bf91a635c467c43b61c4"
+        "bytes": 17156,
+        "outputHash": "sha256:8c615d15ae28c2e81f408e262501737d71614281b709cf78e1732f0739f78e49"
       }
     },
     "/images/articles/robot-vacuum-going-in-circles/02-circling-patterns.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9610,7 +9610,7 @@
       }
     },
     "/images/articles/robot-vacuum-going-in-circles/03-circle-isolation-test.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9722,21 +9722,21 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 44908,
+      "bytes": 38000,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:2fbcbe1d1d49146f49fa9b447850ac0f8df8d722649b257022a93aeed38aea2c",
-      "outputHash": "sha256:081ea3ee09ff41de3192fb724b3212b4c6360f946ac97201e1dfa3c0ed25c8c0",
+      "sourceHash": "sha256:6fd44543d5e542b9bae41d62701d2076b60080d9bf9fcc7dd8c22e9387cb7cd4",
+      "outputHash": "sha256:1a1de5a2f92ef0816899d5b008aabe26e2d97b53f820a7edb7d6d303487eac07",
       "mobile": {
         "src": "/images/articles/robot-vacuum-keeps-getting-stuck/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 21652,
-        "outputHash": "sha256:66a191d028dbdfe5febe3e65b94bdf59e0fc7b3ec67b2c4004703fbe3640d785"
+        "bytes": 17034,
+        "outputHash": "sha256:819b212998fda2160d89cb5aba711a6d63f4e24e28f0de36804bf5164c7e583d"
       }
     },
     "/images/articles/robot-vacuum-keeps-getting-stuck/02-stuck-hotspots.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9754,7 +9754,7 @@
       }
     },
     "/images/articles/robot-vacuum-keeps-getting-stuck/03-stuck-isolation-test.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9776,21 +9776,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 41350,
+      "bytes": 28800,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:627eb413ff890cd97e26b87e31f778c6b15f6423cb30402f03f69bc1969c7b7a",
-      "outputHash": "sha256:7dd602801b49ccfd775072b00daaf5c6f4b137af51cb721837a2183b1eabd488",
+      "sourceHash": "sha256:572f157acafe943f5ff4a9d26bc1a475939c4606f140b63d51f7f3cfbff4756c",
+      "outputHash": "sha256:f9b0a16b88b4162a89342d9695cb07f0328d6f5af09d992782e1d1943660c017",
       "mobile": {
         "src": "/images/articles/robot-vacuum-keeps-stopping/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 15810,
-        "outputHash": "sha256:11837d5b8897beb0d96e37e73d715d16db50a85c1d211ca531cac9ac221085f4"
+        "bytes": 11466,
+        "outputHash": "sha256:28fc11d3362458401df7214ef0a2683c8f8f839af48ba064a5473baabc7b8d99"
       }
     },
     "/images/articles/robot-vacuum-keeps-stopping/02-stopping-patterns.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9808,7 +9808,7 @@
       }
     },
     "/images/articles/robot-vacuum-keeps-stopping/03-stop-check-order.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9830,21 +9830,21 @@
       "kind": "graphic",
       "width": 1600,
       "height": 900,
-      "bytes": 44838,
+      "bytes": 42766,
       "format": "webp",
       "quality": 90,
-      "sourceHash": "sha256:fc37829bd61dfec8fce562723fe45dae2ee048abadd069bcc9168d7dd9610006",
-      "outputHash": "sha256:9cf24683cd6f70901d746ef896b206d913623e6e63f9723da67c7cb267b5251b",
+      "sourceHash": "sha256:3ca2e8917c4b051eca5c909a6bef38ffbe6a655e031222a7b817b9d5c80dbfde",
+      "outputHash": "sha256:ccade447f49a769c02f16e52686de1c73f4e7baa05061b62d0476a065b0f5892",
       "mobile": {
         "src": "/images/articles/robot-vacuum-leaving-dirt-behind/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 21736,
-        "outputHash": "sha256:04d457f113cc492a70d1d0e02ce1b1888406bc10ba653d4aa1fedccda68920b9"
+        "bytes": 19496,
+        "outputHash": "sha256:ea9f2835aa695cf461945892ee23551da44c3d3d1a963ea1e7b796e51f24d9f4"
       }
     },
     "/images/articles/robot-vacuum-leaving-dirt-behind/02-pickup-path-check.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9862,7 +9862,7 @@
       }
     },
     "/images/articles/robot-vacuum-leaving-dirt-behind/03-dirt-pattern-diagnosis.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9884,21 +9884,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 65464,
+      "bytes": 36884,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:599ead2bf668aa2fc0ee95270dc80f63130fa62227de2bb15fdae00815187ce9",
-      "outputHash": "sha256:ea6ec4ba817e062b0c3f65c3074d466dfaadb722301b3fb04be89c2a3ccd112f",
+      "sourceHash": "sha256:2ea9669492c10f3cfdc5f08623e4bf1ed4845f6cae3b494d41ef3c65ec5b7826",
+      "outputHash": "sha256:f468aad8d00a40cd3a3d5e73919a5f7c5764f2e5d895fecebf65e7c7920ae211",
       "mobile": {
         "src": "/images/articles/robot-vacuum-making-loud-noise/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 23344,
-        "outputHash": "sha256:e542c30ab2ae2fd5fd4508988a1174ad803205129c36e27f0239ae38975462ec"
+        "bytes": 14758,
+        "outputHash": "sha256:57cbbfbb34ab8ebf93e6cde53568c2e1cabb90fab9f835dc0d2a3a9f4c5eca45"
       }
     },
     "/images/articles/robot-vacuum-making-loud-noise/02-noise-source-isolation.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9916,7 +9916,7 @@
       }
     },
     "/images/articles/robot-vacuum-making-loud-noise/03-noise-test-and-service.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 900,
@@ -9938,21 +9938,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 92230,
+      "bytes": 25312,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:53803ab71fe47d6bdbb824aeddb3d3c3a600f70cd3c3083c43c19dbb3db20a7b",
-      "outputHash": "sha256:b9a4448a8dc115f5292b6287268813f979682c2b483136d90a8516bb31a5b812",
+      "sourceHash": "sha256:1fc7e45bf8bb9f04dfbdd22c8c5bed275f9480219885fde6618685cc67db92a1",
+      "outputHash": "sha256:24568383ed1ce64b024121e829bb8ed95d9cb2140bd540e73354e6805d25a3f7",
       "mobile": {
         "src": "/images/articles/robot-vacuum-map-wrong-missing-rooms/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 31358,
-        "outputHash": "sha256:8eb9199d14ae0285888097bf5538cf8e9d949af7bbed2ab5faa5b201e214f59f"
+        "bytes": 10030,
+        "outputHash": "sha256:e628e6972574d802867f574515b72f54cd61430a275ec7413f2bd69bc993a266"
       }
     },
     "/images/articles/robot-vacuum-map-wrong-missing-rooms/02-map-symptom-guide.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -9970,7 +9970,7 @@
       }
     },
     "/images/articles/robot-vacuum-map-wrong-missing-rooms/03-map-recovery-order.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -9992,21 +9992,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 42944,
+      "bytes": 39008,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:0bdc04c36b03bd4f58d38a00ce38df44f02a35f5f84c58e3a1aa7ba41a739b04",
-      "outputHash": "sha256:2013be62aa92728ec481aa8c3c35b463432f524bb3e2f540093cffc0ede332f2",
+      "sourceHash": "sha256:3ab98829e9bbc0bb2cef3af0b1f88c75fe549bbc813b3c0f4fb884a5c75ce540",
+      "outputHash": "sha256:3f0c5debbceefea23bbca7f8e98547368591e9d6fd5434354c50192986ff13a6",
       "mobile": {
         "src": "/images/articles/robot-vacuum-mop-pads-not-spinning/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 16258,
-        "outputHash": "sha256:e044cae2e05279ed25dd2f4367c7a0b2c80c3c989667149427dcbd2aa2165756"
+        "bytes": 15520,
+        "outputHash": "sha256:80924e6108dd5c18b155ecacf03a16503faf6dedc5525b6c4a783474c7eae44a"
       }
     },
     "/images/articles/robot-vacuum-mop-pads-not-spinning/02-mop-system-identification.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -10024,7 +10024,7 @@
       }
     },
     "/images/articles/robot-vacuum-mop-pads-not-spinning/03-mop-drive-diagnostic-order.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -10046,21 +10046,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 43542,
+      "bytes": 34308,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:fe74de1ae44503fdd2047b6ab43ddaaa2e226de6905e36a200edd5cbf06738e6",
-      "outputHash": "sha256:25fd7c9d38a5bfab21853921044ba1cbae3a7bc1b249edce28922449045d6aaa",
+      "sourceHash": "sha256:e2e887a73a3a0088a1852e6938646632b1dce014c65ce281be1ebd6fc7825cf5",
+      "outputHash": "sha256:bdddb2e270ef24c3d6df09453066c248ba6548eb3e72a8a3f9d40f24bfd6c057",
       "mobile": {
         "src": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 16458,
-        "outputHash": "sha256:f68a80b5dcd2146fe215abb119ba82d95a29a8f5ebc94cb1368396bafd4a87d4"
+        "bytes": 13562,
+        "outputHash": "sha256:b4498d8868287f41bf21c4d91a1066c640a2b39487083065be72095e77e5e64d"
       }
     },
     "/images/articles/robot-vacuum-side-brush-keeps-falling-off/02-side-brush-retention-guide.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -10078,7 +10078,7 @@
       }
     },
     "/images/articles/robot-vacuum-side-brush-keeps-falling-off/03-brush-fit-service-boundary.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -10100,21 +10100,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 61482,
+      "bytes": 29190,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:893f9bbda71e497b33be8b4fe86769ef35528a0a4306aca733f054d9c6c92555",
-      "outputHash": "sha256:d284fd9a44b8077255992b822012a57f809676397156237750c0c2c489587971",
+      "sourceHash": "sha256:b5e6277e8334db924b26f95de2d3904d428a0663dee0f5a4cf1e2f04909255a0",
+      "outputHash": "sha256:54e2c754a1566849917e35be2f253be3b9dfd730b11e1d84eea7637beb5e64c7",
       "mobile": {
         "src": "/images/articles/robot-vacuum-smells-bad/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 21200,
-        "outputHash": "sha256:1b44d508787ce4f9b796d0d4c5b107335fa8f56f8596cfba08dbc719cac4c019"
+        "bytes": 11754,
+        "outputHash": "sha256:2c9bbc3557d2e859d5a3c55cb4e514c94ea97513c19ffe6d8d3c6f86bdc3ccaf"
       }
     },
     "/images/articles/robot-vacuum-smells-bad/02-odor-source-map.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -10132,7 +10132,7 @@
       }
     },
     "/images/articles/robot-vacuum-smells-bad/03-odor-cleaning-order.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -10154,21 +10154,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 33336,
+      "bytes": 28760,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:5ff61766e6cd945fb7d0e4043a203d26e268438fc7236e7fce7a705c666359fa",
-      "outputHash": "sha256:1f2d5ef5d2620532142cefdf38fd283255002075c8d37762be50f6065846b5ab",
+      "sourceHash": "sha256:d044ece6acc56d8ac399717ebfa59b40a14a2f0ebf1f5594b9872c8bf86d5181",
+      "outputHash": "sha256:76217e576a829bfd6d52a0dcf57673ccd4078d279b5a55ec78c6544837ac3c5e",
       "mobile": {
         "src": "/images/articles/robot-vacuum-wont-turn-on/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 12808,
-        "outputHash": "sha256:e82466c4b3fa15ad73148fa11634dddd99798825f42833c1de3b978086e75f88"
+        "bytes": 11348,
+        "outputHash": "sha256:8cbd1dad076278b4f0ec62ebf89472cc7acc13be0d855b4e1d36e7f0cb0fcebc"
       }
     },
     "/images/articles/robot-vacuum-wont-turn-on/02-no-power-diagnostic-path.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -10186,7 +10186,7 @@
       }
     },
     "/images/articles/robot-vacuum-wont-turn-on/03-power-service-boundary.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -11991,21 +11991,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 62778,
+      "bytes": 31610,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:6429e4abbefd3fa002f00a321201d62e8678ab289e1525e201c2af76d38f07c5",
-      "outputHash": "sha256:d52e14a857d83e57a7040672a6282d2b84b968233f4076c733351f9bef217b21",
+      "sourceHash": "sha256:0e14a3e52dcab3b24b684a377a7cbce071ca8ccd9380e9a95b6e3949f5256fa4",
+      "outputHash": "sha256:b757271364d42aa8e746c520646de631c331428b0a2bc9b1729e08018dca0bdc",
       "mobile": {
         "src": "/images/articles/vacuum-brush-roll-not-spinning/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 22298,
-        "outputHash": "sha256:d6ad20859c34f8025c7cb136496ff80df21b8da46994a46cf51dd114b331fd68"
+        "bytes": 11926,
+        "outputHash": "sha256:ef42300bd507e62a4fd002a096d095d6029b89c3a03f37edafbaf3c14c08dbd4"
       }
     },
     "/images/articles/vacuum-brush-roll-not-spinning/02-brush-drive-map.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -12023,7 +12023,7 @@
       }
     },
     "/images/articles/vacuum-brush-roll-not-spinning/03-brush-diagnostic-order.png": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1100,
@@ -12045,21 +12045,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 87182,
+      "bytes": 34732,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:3982e7dc1c4c9f2e6285e2a7c561acef29f01c06574c52892a037730d66499db",
-      "outputHash": "sha256:28fafcc179cc5f4b5144f50554051cce0478fff040cb2131099836b076b0c074",
+      "sourceHash": "sha256:9e09afd5e18facffb75ce7295a708f0ad8d5b360380818da5f1d0f2f85062653",
+      "outputHash": "sha256:a65a180e2d939127b403703aa937c98acdcdf899f4e3a74b33d3ce724ce7c599",
       "mobile": {
         "src": "/images/articles/vacuum-cleaner-blowing-out-dust/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 28918,
-        "outputHash": "sha256:ffee6ee1562cbb3f48be2a500a4ee0aeaf05484657c99fc5301f3112d93f1b3a"
+        "bytes": 13048,
+        "outputHash": "sha256:f469fc534c33ed867d4cfbe52741b095c41bb67b966ac18aa35af290d876cc95"
       }
     },
     "/images/articles/vacuum-cleaner-blowing-out-dust/02-dust-escape-location-map.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -12077,7 +12077,7 @@
       }
     },
     "/images/articles/vacuum-cleaner-blowing-out-dust/03-dust-containment-check.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -12099,21 +12099,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 64556,
+      "bytes": 33848,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:3125684f0ca9d7c6d343ae14fc483810ac3bb571e98e85bda94e9e0a3d017751",
-      "outputHash": "sha256:604fd876a80d7dc8f3a18423aab9f9ecc3010d63ec20602ed2d036f6406bee1f",
+      "sourceHash": "sha256:5effd1636c8b23c075ed2e09a571c42cf3c39c063fd172bd89c66f2db449c7d2",
+      "outputHash": "sha256:44fa26ba274280feeb44a90f05a3c17fc36b5a5446e94d1ceebe8e41046f4198",
       "mobile": {
         "src": "/images/articles/vacuum-cleaner-making-loud-noise/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 27240,
-        "outputHash": "sha256:86a0edd4b522c3eea94a79464b770651f6c2fc1f80d36aeb14509b7eec62d05b"
+        "bytes": 12750,
+        "outputHash": "sha256:b74bc67455018aac0387936e8909550319d66e1032bc76095947f25a10f65322"
       }
     },
     "/images/articles/vacuum-cleaner-making-loud-noise/02-noise-pattern-map.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -12131,7 +12131,7 @@
       }
     },
     "/images/articles/vacuum-cleaner-making-loud-noise/03-noise-isolation-order.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -12153,21 +12153,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 66836,
+      "bytes": 34940,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:550f56cdf5485fd89f633cbebb2cfd0239c530a4554bddc82faca19189bae8f9",
-      "outputHash": "sha256:6ed9ccb8c4b90cd83fc5e8643f6890cc02617aa231b2be6b464a7f2409593f7b",
+      "sourceHash": "sha256:19a6dbc5e163bf6d3c90a47a8b97fb5dbfa13c79c974a974b19916231ac76e65",
+      "outputHash": "sha256:736edd9335defc0f31601ada6937257fab5cdf394819a2f7903168cb4c35d956",
       "mobile": {
         "src": "/images/articles/vacuum-cleaner-overheating/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 22728,
-        "outputHash": "sha256:d2e2d22a7cca0431d869ba9ec80203ff518ba911d694faf7e74404a41c10bf75"
+        "bytes": 13150,
+        "outputHash": "sha256:df991453a7bca6bfd8bc93386e458e78e4232cf588b3e92df8947d43ae432d56"
       }
     },
     "/images/articles/vacuum-cleaner-overheating/02-overheating-load-map.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -12185,7 +12185,7 @@
       }
     },
     "/images/articles/vacuum-cleaner-overheating/03-overheating-recovery-path.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -12207,21 +12207,21 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 86382,
+      "bytes": 34702,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:be66075bc47596ad44a27bfdf1a0166f0545be6dc625d745e70dc815a9c9f870",
-      "outputHash": "sha256:266fb7d852248cebd09f599ff4d8cb1b3b43aa94b5b96f1da1674b350fac22dc",
+      "sourceHash": "sha256:696dfdc64f1be3edc7c9c6358da0204d538d3a177e1f575a804a2b0163344ad1",
+      "outputHash": "sha256:be7881bf3014af17f1934366c8c340cd39dccd8d1629e39d2a631d5043063097",
       "mobile": {
         "src": "/images/articles/vacuum-cleaner-smells-burnt/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 30988,
-        "outputHash": "sha256:2567ffc49783a17843b040faad288e83894b6f0b6c5c8d637facdf4e3056908a"
+        "bytes": 12856,
+        "outputHash": "sha256:6cc7ec737995dfe7e136e49012058f1044fbcfb4622fcf2cf02392c025c445b7"
       }
     },
     "/images/articles/vacuum-cleaner-smells-burnt/02-smell-source-map.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -12239,7 +12239,7 @@
       }
     },
     "/images/articles/vacuum-cleaner-smells-burnt/03-burning-smell-stop-check.webp": {
-      "role": "body",
+      "role": "chart",
       "kind": "graphic",
       "width": 1600,
       "height": 1067,
@@ -44652,7 +44652,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/cordless-vacuum-battery-drains-fast/01-cover.webp",
-          "hash": "sha256:4020ee5e3b8ada61e5b242da54711a7bd99dd14f183e94e2bebb71eeccdbe6af"
+          "hash": "sha256:def72774266979e13b046ca2d34e59770914a0e19ae89bd639c58e86aa39e341"
         },
         "02-runtime-load-map.png": {
           "status": "matched",
@@ -44671,7 +44671,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/cordless-vacuum-keeps-shutting-off/01-cover.webp",
-          "hash": "sha256:9eea4f6cad7a602ae748064a579ef0c3086d23cee31e2d145b060c3672586d94"
+          "hash": "sha256:bc57aeb049ce1983b595d9ad89eb37cd59e0c84c35605693943890fe809503be"
         },
         "02-shutdown-pattern-map.png": {
           "status": "matched",
@@ -44690,7 +44690,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/cordless-vacuum-not-charging/01-cover.webp",
-          "hash": "sha256:a7407478169cca54074ae5dffb35d8ed6fc2aaa65a14b3f19c0e49a95fcde4b9"
+          "hash": "sha256:9208fb32ebc7c39870bbedd07a4025a3c496ed34754747e808cb513e5a250c4c"
         },
         "02-charging-path.png": {
           "status": "matched",
@@ -44709,7 +44709,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/cordless-vacuum-wont-turn-on/01-cover.webp",
-          "hash": "sha256:a3cde20f8cc6a4c2858e83c9d13d58933d6de3048b3a6d342c9f448442acb6f9"
+          "hash": "sha256:87c7ff3d3c69db866ffc210705e60985c96c11a382686f64a754ce291f88b8af"
         },
         "02-no-power-decision-path.png": {
           "status": "matched",
@@ -46732,7 +46732,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-battery-drains-fast/01-cover.webp",
-          "hash": "sha256:f6b509e651747d70d781ca1b7e71da01b97fda46fe4aa2b88b96d27115fbdaef"
+          "hash": "sha256:a82bf2c71980e8a0df3ac6faa6f201e850b76a87a5a39041a834dd600a32a247"
         },
         "02-runtime-diagnostic-path.png": {
           "status": "matched",
@@ -46751,7 +46751,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-brush-not-spinning/01-cover.webp",
-          "hash": "sha256:99ba598ea18ee176319762648c8bf16d7852369b61d3db5edfca8964214061bd"
+          "hash": "sha256:bf134dc8585d5d393782b121d116de0c644d50d8195f5fd985da165042966b0a"
         },
         "02-brush-not-spinning-checks.png": {
           "status": "matched",
@@ -46770,7 +46770,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-going-in-circles/01-cover.webp",
-          "hash": "sha256:e29b139c1bbad5be88f205a7d9b47dd85277191484c21d988a1f777107729544"
+          "hash": "sha256:f16a3bf439146b79d131cbb3183d4af23779cb8e8c1426ec92283943ba696fd2"
         },
         "02-circling-patterns.png": {
           "status": "matched",
@@ -46789,7 +46789,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-keeps-getting-stuck/01-cover.webp",
-          "hash": "sha256:2fbcbe1d1d49146f49fa9b447850ac0f8df8d722649b257022a93aeed38aea2c"
+          "hash": "sha256:6fd44543d5e542b9bae41d62701d2076b60080d9bf9fcc7dd8c22e9387cb7cd4"
         },
         "02-stuck-hotspots.png": {
           "status": "matched",
@@ -46808,7 +46808,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-keeps-stopping/01-cover.webp",
-          "hash": "sha256:627eb413ff890cd97e26b87e31f778c6b15f6423cb30402f03f69bc1969c7b7a"
+          "hash": "sha256:572f157acafe943f5ff4a9d26bc1a475939c4606f140b63d51f7f3cfbff4756c"
         },
         "02-stopping-patterns.png": {
           "status": "matched",
@@ -46827,7 +46827,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-leaving-dirt-behind/01-cover.webp",
-          "hash": "sha256:fc37829bd61dfec8fce562723fe45dae2ee048abadd069bcc9168d7dd9610006"
+          "hash": "sha256:3ca2e8917c4b051eca5c909a6bef38ffbe6a655e031222a7b817b9d5c80dbfde"
         },
         "02-pickup-path-check.png": {
           "status": "matched",
@@ -46846,7 +46846,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-making-loud-noise/01-cover.webp",
-          "hash": "sha256:599ead2bf668aa2fc0ee95270dc80f63130fa62227de2bb15fdae00815187ce9"
+          "hash": "sha256:2ea9669492c10f3cfdc5f08623e4bf1ed4845f6cae3b494d41ef3c65ec5b7826"
         },
         "02-noise-source-isolation.png": {
           "status": "matched",
@@ -46865,7 +46865,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-map-wrong-missing-rooms/01-cover.webp",
-          "hash": "sha256:53803ab71fe47d6bdbb824aeddb3d3c3a600f70cd3c3083c43c19dbb3db20a7b"
+          "hash": "sha256:1fc7e45bf8bb9f04dfbdd22c8c5bed275f9480219885fde6618685cc67db92a1"
         },
         "02-map-symptom-guide.png": {
           "status": "matched",
@@ -46884,7 +46884,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-mop-pads-not-spinning/01-cover.webp",
-          "hash": "sha256:0bdc04c36b03bd4f58d38a00ce38df44f02a35f5f84c58e3a1aa7ba41a739b04"
+          "hash": "sha256:3ab98829e9bbc0bb2cef3af0b1f88c75fe549bbc813b3c0f4fb884a5c75ce540"
         },
         "02-mop-system-identification.png": {
           "status": "matched",
@@ -46903,7 +46903,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-side-brush-keeps-falling-off/01-cover.webp",
-          "hash": "sha256:fe74de1ae44503fdd2047b6ab43ddaaa2e226de6905e36a200edd5cbf06738e6"
+          "hash": "sha256:e2e887a73a3a0088a1852e6938646632b1dce014c65ce281be1ebd6fc7825cf5"
         },
         "02-side-brush-retention-guide.png": {
           "status": "matched",
@@ -46922,7 +46922,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-smells-bad/01-cover.webp",
-          "hash": "sha256:893f9bbda71e497b33be8b4fe86769ef35528a0a4306aca733f054d9c6c92555"
+          "hash": "sha256:b5e6277e8334db924b26f95de2d3904d428a0663dee0f5a4cf1e2f04909255a0"
         },
         "02-odor-source-map.png": {
           "status": "matched",
@@ -46941,7 +46941,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-wont-turn-on/01-cover.webp",
-          "hash": "sha256:5ff61766e6cd945fb7d0e4043a203d26e268438fc7236e7fce7a705c666359fa"
+          "hash": "sha256:d044ece6acc56d8ac399717ebfa59b40a14a2f0ebf1f5594b9872c8bf86d5181"
         },
         "02-no-power-diagnostic-path.png": {
           "status": "matched",
@@ -47453,7 +47453,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/vacuum-brush-roll-not-spinning/01-cover.webp",
-          "hash": "sha256:6429e4abbefd3fa002f00a321201d62e8678ab289e1525e201c2af76d38f07c5"
+          "hash": "sha256:0e14a3e52dcab3b24b684a377a7cbce071ca8ccd9380e9a95b6e3949f5256fa4"
         },
         "02-brush-drive-map.png": {
           "status": "matched",
@@ -47472,7 +47472,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/vacuum-cleaner-blowing-out-dust/01-cover.webp",
-          "hash": "sha256:3982e7dc1c4c9f2e6285e2a7c561acef29f01c06574c52892a037730d66499db"
+          "hash": "sha256:9e09afd5e18facffb75ce7295a708f0ad8d5b360380818da5f1d0f2f85062653"
         },
         "02-dust-escape-location-map.png": {
           "status": "matched",
@@ -47491,7 +47491,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/vacuum-cleaner-making-loud-noise/01-cover.webp",
-          "hash": "sha256:3125684f0ca9d7c6d343ae14fc483810ac3bb571e98e85bda94e9e0a3d017751"
+          "hash": "sha256:5effd1636c8b23c075ed2e09a571c42cf3c39c063fd172bd89c66f2db449c7d2"
         },
         "02-noise-pattern-map.png": {
           "status": "matched",
@@ -47510,7 +47510,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/vacuum-cleaner-overheating/01-cover.webp",
-          "hash": "sha256:550f56cdf5485fd89f633cbebb2cfd0239c530a4554bddc82faca19189bae8f9"
+          "hash": "sha256:19a6dbc5e163bf6d3c90a47a8b97fb5dbfa13c79c974a974b19916231ac76e65"
         },
         "02-overheating-load-map.png": {
           "status": "matched",
@@ -47529,7 +47529,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/vacuum-cleaner-smells-burnt/01-cover.webp",
-          "hash": "sha256:be66075bc47596ad44a27bfdf1a0166f0545be6dc625d745e70dc815a9c9f870"
+          "hash": "sha256:696dfdc64f1be3edc7c9c6358da0204d538d3a177e1f575a804a2b0163344ad1"
         },
         "02-smell-source-map.png": {
           "status": "matched",
