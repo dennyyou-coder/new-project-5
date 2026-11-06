@@ -3,15 +3,18 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { CSSProperties } from "react";
 import "../../styles/categories.css";
+import "../../styles/category-hub-v2.css";
 import { TallyButton } from "@/components/LeadForms";
 import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getHubCategory, HUB_CATEGORIES, HUB_CATEGORY_GROUPS } from "@/lib/hubCategories";
-import { getHubCategoryData, type HubFeedItem } from "@/lib/hubCategoryContent";
-import { newsDate, newsTopicLabel } from "@/lib/news";
+import { getHubCategoryData } from "@/lib/hubCategoryContent";
+import { getNewsVisual, isBorrowedNewsVisual, newsDate } from "@/lib/news";
+import { hubListHrefs, hubSourcingHref, hubVisual } from "@/lib/hubPresentation";
 import { productCover, productSelectionYear } from "@/lib/products";
 import { buildWebsiteMetadata } from "@/lib/seo";
 import { LogoTileImage } from "@/components/ui/LogoTileImage";
+import { brandLogoTile } from "@/lib/brandLogoTiles";
 
 const siteUrl = "https://worldcleanbiz.com";
 type Props = { params: Promise<{ slug: string }> };
@@ -32,8 +35,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-function feedDate(item: HubFeedItem) {
-  return newsDate(item.date);
+
+/** A company logo tile as a thumbnail; light logos are darkened so they show on white. */
+function logoThumb(brandSlugs: string[]) {
+  const tile = brandSlugs.map((slug) => brandLogoTile(slug)).find(Boolean);
+  return tile ? { src: tile.src, contain: true, logo: true, light: Boolean(tile.light) } : undefined;
 }
 
 export default async function CategoryHubPage({ params }: Props) {
@@ -42,33 +48,31 @@ export default async function CategoryHubPage({ params }: Props) {
   const data = getHubCategoryData(hub);
   const groupLabel = HUB_CATEGORY_GROUPS.find((group) => group.slug === hub.group)?.label;
   const pageUrl = `${siteUrl}/categories/${hub.slug}`;
+  const visual = hubVisual(data);
+  const lists = hubListHrefs(hub);
+  const sourcing = hubSourcingHref(hub);
 
-  const metrics = [
-    data.newModels.length > 0 && {
-      value: data.newModels.length,
-      label: `New ${productSelectionYear} models with specifications`,
-      source: "Product library",
-      href: "#hub-models"
-    },
-    data.companies.length > 0 && {
-      value: data.companies.length,
-      label: "Company profiles with ownership and history",
-      source: "Company profiles",
-      href: "#hub-companies"
-    },
-    data.feed.length > 0 && {
-      value: data.feed.length,
-      label: "News stories and analysis articles",
-      source: "World Clean Biz coverage",
-      href: "#hub-latest"
-    }
-  ].filter(Boolean) as { value: number; label: string; source: string; href: string }[];
+  // The category's front page: one lead analysis, the latest news, then a few
+  // picks from each list with a link to the full list narrowed to this category.
+  const lead = data.analysis.find((article) => article.coverImage && article.coverImage !== visual?.src);
+  const latest = data.feed.filter((item) => item.kind === "news" || item.article.slug !== lead?.slug).slice(0, 4);
+  const essentialPool = [...data.essential, ...data.analysis].filter(
+    (article, index, all) => article.coverImage && article.coverImage !== visual?.src && article.slug !== lead?.slug && all.findIndex((other) => other.slug === article.slug) === index
+  );
+  const essential = essentialPool.slice(0, 4);
+  const companies = data.companies.slice(0, 12);
+  const showMoreModels = data.newModels.length > 4;
+  const models = data.newModels.slice(0, showMoreModels ? 3 : 4);
+  const guides = data.guides.slice(0, 3);
 
-  const latest = data.feed.slice(0, 8);
-  const models = data.newModels.slice(0, 4);
-  const essential = data.essential.slice(0, 4);
-  const companies = data.companies.slice(0, 10);
-  const guides = data.guides.slice(0, 4);
+  const quickLinks = [
+    data.news.length ? { label: "News", href: lists.news } : null,
+    data.analysis.length ? { label: "Analysis", href: lists.analysis } : null,
+    data.newModels.length ? { label: `${productSelectionYear} models`, href: lists.products } : null,
+    companies.length ? { label: "Companies", href: "#hub-companies" } : null,
+    guides.length ? { label: "Buyer guides", href: "#hub-guides" } : null,
+    sourcing ? { label: "Sourcing", href: sourcing } : null
+  ].filter((item): item is { label: string; href: string } => Boolean(item));
 
   const schemas = [
     {
@@ -80,7 +84,7 @@ export default async function CategoryHubPage({ params }: Props) {
       url: pageUrl,
       mainEntity: {
         "@type": "ItemList",
-        itemListElement: latest.map((item, index) => ({
+        itemListElement: data.feed.slice(0, 8).map((item, index) => ({
           "@type": "ListItem",
           position: index + 1,
           name: item.kind === "news" ? item.news.title : item.article.title,
@@ -100,143 +104,193 @@ export default async function CategoryHubPage({ params }: Props) {
   ];
 
   return (
-    <div className="hub-page" style={{ "--hub-color": hub.color } as CSSProperties}>
-      <section className="hub-hero">
+    <div className="hub-page ch" style={{ "--hub-color": hub.color } as CSSProperties}>
+      <section className="ch-hero">
         <div className="hub-color-bar" aria-hidden="true" />
-        <div className="hub-container">
-          <nav className="hub-breadcrumb" aria-label="Breadcrumb">
-            <Link href="/">Home</Link> / <Link href="/categories">Categories</Link> / <span aria-current="page">{hub.name}</span>
-          </nav>
-          <div className="hub-hero-row">
-            <div className="hub-hero-copy">
-              <p className="hub-eyebrow"><span className="hub-dot" aria-hidden="true" />{groupLabel}</p>
-              <div className="hub-title-row">
-                <CategoryIcon slug={hub.slug} color={hub.color} size="lg" />
-                <h1>{hub.name}</h1>
-              </div>
-              <p className="hub-intro">{hub.intro}</p>
+        <div className="hub-container ch-hero-grid">
+          <div className="ch-hero-copy">
+            <nav className="hub-breadcrumb" aria-label="Breadcrumb">
+              <Link href="/">Home</Link> / <Link href="/categories">Categories</Link> / <span aria-current="page">{hub.name}</span>
+            </nav>
+            <p className="hub-eyebrow"><span className="hub-dot" aria-hidden="true" />{groupLabel}</p>
+            <div className="hub-title-row">
+              <CategoryIcon slug={hub.slug} color={hub.color} size="lg" />
+              <h1>{hub.name}</h1>
             </div>
-            <TallyButton className="hub-follow" ctaLocation={`category_hub_follow_${hub.slug}`} form="newsletter">
-              Follow by email
-            </TallyButton>
+            <p className="hub-intro">{hub.intro}</p>
+            <div className="ch-quick">
+              <nav aria-label={`${hub.name} sections`}>
+                {quickLinks.map((link) => <Link key={link.label} href={link.href}>{link.label}</Link>)}
+              </nav>
+              <TallyButton className="hub-follow" ctaLocation={`category_hub_follow_${hub.slug}`} form="newsletter">
+                Follow by email
+              </TallyButton>
+            </div>
           </div>
-          {metrics.length > 0 ? (
-            <div className="hub-metrics">
-              {metrics.map((metric) => (
-                <a key={metric.source} className="hub-metric" href={metric.href}>
-                  <span className="hub-metric-value">{metric.value}</span>
-                  <span className="hub-metric-label">{metric.label}</span>
-                  <span className="hub-metric-source">{metric.source}</span>
-                </a>
-              ))}
-            </div>
+          {visual ? (
+            <figure className={`ch-hero-visual ch-hero-visual--${visual.kind}`}>
+              <img src={visual.src} alt="" width={1536} height={1024} loading="eager" decoding="async" />
+            </figure>
           ) : null}
         </div>
       </section>
 
-      <div className="hub-container hub-body">
-        <div className="hub-main">
-          {latest.length > 0 ? (
-            <section id="hub-latest" aria-labelledby="hub-latest-heading">
-              <h2 id="hub-latest-heading">Latest</h2>
-              <ul className="hub-feed">
-                {latest.map((item) => {
-                  const href = item.kind === "news" ? `/news/${item.news.slug}` : `/blog/${item.article.slug}`;
-                  const title = item.kind === "news" ? item.news.title : item.article.title;
-                  const excerpt = item.kind === "news" ? item.news.excerpt : item.article.excerpt;
-                  const label = item.kind === "news" ? `News · ${newsTopicLabel(item.news.topic)}` : `Analysis · ${item.article.category}`;
-                  return (
-                    <li key={href}>
-                      <p className="hub-feed-meta">{label} · <time dateTime={item.date}>{feedDate(item)}</time></p>
-                      <h3><Link href={href}>{title}</Link></h3>
-                      <p className="hub-feed-excerpt">{excerpt}</p>
-                    </li>
-                  );
-                })}
-              </ul>
-              <p className="hub-more">
-                {data.news.length > 0 ? <Link href="/news">All news →</Link> : null}
-                {data.analysis.length > 0 ? <Link href="/blog/archive">All analysis →</Link> : null}
-              </p>
-            </section>
-          ) : null}
-
-          {models.length > 0 ? (
-            <section id="hub-models" aria-labelledby="hub-models-heading">
-              <div className="hub-section-head">
-                <h2 id="hub-models-heading">New {productSelectionYear} models</h2>
-                <Link href="/products">All {data.newModels.length} models →</Link>
+      <div className="hub-container ch-body">
+        {lead || latest.length ? (
+          <section className="ch-top" aria-label={`Latest in ${hub.name}`}>
+            {lead ? (
+              <article className="ch-lead">
+                <Link className="ch-lead-image" href={`/blog/${lead.slug}`} tabIndex={-1} aria-hidden="true">
+                  <img {...responsiveImageProps(lead.coverImage!, "card")} alt="" loading="eager" />
+                </Link>
+                <p className="ch-meta">Analysis · {lead.category} · <time dateTime={lead.sortDate || lead.date}>{newsDate(lead.sortDate || lead.date)}</time></p>
+                <h2><Link href={`/blog/${lead.slug}`}>{lead.title}</Link></h2>
+                <p className="ch-excerpt">{lead.excerpt}</p>
+              </article>
+            ) : null}
+            {latest.length ? (
+              <div className="ch-latest" id="hub-latest">
+                <div className="ch-head">
+                  <h2>Latest</h2>
+                  {data.news.length ? <Link href={lists.news}>All {hub.name.toLowerCase()} news →</Link> : null}
+                </div>
+                <ul>
+                  {latest.map((item) => {
+                    const href = item.kind === "news" ? `/news/${item.news.slug}` : `/blog/${item.article.slug}`;
+                    const title = item.kind === "news" ? item.news.title : item.article.title;
+                    const newsVisual = item.kind === "news" ? getNewsVisual(item.news) : undefined;
+                    const thumb = item.kind === "analysis"
+                      ? item.article.coverImage ? { src: item.article.coverImage, contain: false } : undefined
+                      : newsVisual && !isBorrowedNewsVisual(newsVisual)
+                        ? { src: newsVisual.src, contain: newsVisual.fit === "contain" }
+                        // Without a story image, the company's logo tells the reader whose news it is.
+                        : logoThumb(item.news.brandSlugs);
+                    return (
+                      <li key={href}>
+                        <span className={`ch-thumb${thumb?.contain ? " ch-thumb--contain" : ""}${thumb && "logo" in thumb ? " ch-thumb--logo" : ""}${thumb && "light" in thumb && thumb.light ? " ch-thumb--light" : ""}`} aria-hidden="true">
+                          {thumb ? <img src={thumb.src} alt="" loading="lazy" decoding="async" /> : <CategoryIcon slug={hub.slug} color={hub.color} size="sm" />}
+                        </span>
+                        <span>
+                          <span className="ch-meta">{item.kind === "news" ? "News" : "Analysis"} · <time dateTime={item.date}>{newsDate(item.date)}</time></span>
+                          <Link href={href}>{title}</Link>
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
-              <div className="hub-models">
-                {models.map((model) => (
-                  <Link key={model.slug} className="hub-model" href={`/products/${model.slug}`}>
-                    <span className="hub-model-image">
-                      <img {...responsiveImageProps(productCover(model.slug), "card")} alt={model.name} />
-                    </span>
-                    <span className="hub-model-brand">{model.brand}</span>
-                    <span className="hub-model-name">{model.name}</span>
-                    <span className="hub-model-summary">{model.summary}</span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          ) : null}
-
-          {essential.length > 0 ? (
-            <section aria-labelledby="hub-essential-heading">
-              <h2 id="hub-essential-heading">Essential reading</h2>
-              <ol className="hub-essential">
-                {essential.map((article) => (
-                  <li key={article.slug}>
-                    <span className="hub-essential-meta">{article.category}</span>
-                    <Link href={`/blog/${article.slug}`}>{article.title}</Link>
-                  </li>
-                ))}
-              </ol>
-            </section>
-          ) : null}
-        </div>
-
-        <aside className="hub-aside">
-          {companies.length > 0 ? (
-            <section id="hub-companies" aria-labelledby="hub-companies-heading">
-              <h2 id="hub-companies-heading">Key companies</h2>
-              <div className="hub-companies">
-                {companies.map((brand) => (
-                  <Link key={brand.slug} href={`/brands/${brand.slug}`}>
-                    <span className="hub-company-logo" aria-hidden="true">
-                      <LogoTileImage slug={brand.slug} fallbackSrc={brand.logoImage} boxRatio={1.73} />
-                    </span>
-                    <span>{brand.name}</span>
-                  </Link>
-                ))}
-              </div>
-              {data.companies.length > companies.length ? (
-                <p className="hub-more"><Link href="/brands">All company profiles →</Link></p>
-              ) : null}
-            </section>
-          ) : null}
-
-          {guides.length > 0 ? (
-            <section aria-labelledby="hub-guides-heading">
-              <h2 id="hub-guides-heading">Guides</h2>
-              <ul className="hub-guides">
-                {guides.map((guide) => (
-                  <li key={guide.slug}><Link href={`/blog/${guide.slug}`}>{guide.title}</Link></li>
-                ))}
-                <li><Link href="/guides">All guides →</Link></li>
-              </ul>
-            </section>
-          ) : null}
-
-          <section className="hub-subscribe" aria-labelledby="hub-subscribe-heading">
-            <h2 id="hub-subscribe-heading">{hub.name}, by email</h2>
-            <p>Industry updates from World Clean Biz.</p>
-            <TallyButton className="hub-subscribe-button" ctaLocation={`category_hub_sidebar_${hub.slug}`} form="newsletter">
-              Subscribe
-            </TallyButton>
+            ) : null}
           </section>
-        </aside>
+        ) : null}
+
+        {companies.length ? (
+          <section className="ch-section" id="hub-companies" aria-labelledby="hub-companies-heading">
+            <div className="ch-head">
+              <h2 id="hub-companies-heading">Companies in {hub.name.toLowerCase()}</h2>
+              <Link href="/brands">All company profiles →</Link>
+            </div>
+            <div className="ch-companies">
+              {companies.map((brand) => (
+                <Link key={brand.slug} href={`/brands/${brand.slug}`}>
+                  <span className="ch-company-logo" aria-hidden="true">
+                    <LogoTileImage slug={brand.slug} fallbackSrc={brand.logoImage} boxRatio={2.2} />
+                  </span>
+                  <span className="ch-company-name">{brand.name}</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {models.length ? (
+          <section className="ch-section" id="hub-models" aria-labelledby="hub-models-heading">
+            <div className="ch-head">
+              <h2 id="hub-models-heading">New {productSelectionYear} models</h2>
+              <Link href={lists.products}>All {hub.name.toLowerCase()} models →</Link>
+            </div>
+            <div className="ch-grid4">
+              {models.map((model) => (
+                <Link key={model.slug} className="ch-model" href={`/products/${model.slug}`}>
+                  <span className="ch-model-image"><img {...responsiveImageProps(productCover(model.slug), "card")} alt={model.name} /></span>
+                  <span className="ch-model-copy">
+                    <small>{model.brand}</small>
+                    <b>{model.name}</b>
+                    {model.facts.length ? (
+                      <span className="ch-model-facts">
+                        {model.facts.slice(0, 2).map((fact) => <span key={fact.label}><i>{fact.label}</i>{fact.value}</span>)}
+                      </span>
+                    ) : null}
+                  </span>
+                </Link>
+              ))}
+              {showMoreModels ? (
+                <Link className="ch-more" href={lists.products}>
+                  <b>See all {hub.name.toLowerCase()} models →</b>
+                  <span>Opens the product library filtered to {hub.name.toLowerCase()}</span>
+                </Link>
+              ) : null}
+            </div>
+          </section>
+        ) : null}
+
+        {essential.length ? (
+          <section className="ch-section" aria-labelledby="hub-essential-heading">
+            <div className="ch-head">
+              <h2 id="hub-essential-heading">Essential reading</h2>
+              <Link href={lists.analysis}>All {hub.name.toLowerCase()} analysis →</Link>
+            </div>
+            <div className="ch-grid4">
+              {essential.map((article) => (
+                <Link key={article.slug} className="ch-card" href={`/blog/${article.slug}`}>
+                  <span className="ch-card-image"><img {...responsiveImageProps(article.coverImage!, "card")} alt="" /></span>
+                  <span className="ch-meta">{article.category}</span>
+                  <b>{article.title}</b>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {guides.length || sourcing ? (
+          <section className="ch-section ch-bottom" id="hub-guides" aria-label="Guides and sourcing">
+            {guides.length ? (
+              <div>
+                <div className="ch-head">
+                  <h2>Buyer guides</h2>
+                  <Link href="/guides">All guides →</Link>
+                </div>
+                <div className="ch-grid3">
+                  {guides.map((guide) => (
+                    <Link key={guide.slug} className="ch-card" href={`/blog/${guide.slug}`}>
+                      {guide.coverImage ? <span className="ch-card-image"><img {...responsiveImageProps(guide.coverImage, "card")} alt="" /></span> : null}
+                      <span className="ch-meta">{guide.category}</span>
+                      <b>{guide.title}</b>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+            {sourcing ? (
+              <Link className="ch-sourcing" href={sourcing}>
+                <span>
+                  <b>Sourcing {hub.name.toLowerCase()}?</b>
+                  <span>Product platforms, channels and supplier checks for this category.</span>
+                </span>
+                <i>Category sourcing →</i>
+              </Link>
+            ) : null}
+          </section>
+        ) : null}
+
+        <section className="ch-subscribe" aria-labelledby="hub-subscribe-heading">
+          <div>
+            <h2 id="hub-subscribe-heading">{hub.name}, by email</h2>
+            <p>New models, company moves and analysis from World Clean Biz.</p>
+          </div>
+          <TallyButton className="hub-subscribe-button" ctaLocation={`category_hub_sidebar_${hub.slug}`} form="newsletter">
+            Subscribe
+          </TallyButton>
+        </section>
       </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas).replace(/</g, "\\u003c") }} />
     </div>

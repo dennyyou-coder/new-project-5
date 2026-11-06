@@ -15,6 +15,7 @@ import {
   getCompanyKeyword
 } from "@/lib/companyKeywords";
 import { getEditorialInsights } from "@/lib/insightCollections";
+import { getHubCategory, hubCategoriesForInsight } from "@/lib/hubCategories";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -58,7 +59,8 @@ export async function generateMetadata({
   );
   const filtered = Boolean(
     firstParam(resolvedSearchParams.category) ||
-      firstParam(resolvedSearchParams.company)
+      firstParam(resolvedSearchParams.company) ||
+      firstParam(resolvedSearchParams.hub)
   );
   const canonical = filtered
     ? "/blog/archive"
@@ -94,11 +96,18 @@ export default async function BlogArchivePage({ searchParams }: PageProps) {
     : categories.includes(requestedCategory || "")
       ? requestedCategory
       : undefined;
+  // ?hub=<category page slug>: the analysis a category page links to as "All … analysis".
+  const selectedHub = selectedCompany || selectedCategory ? undefined : getHubCategory(firstParam(resolvedSearchParams.hub) || "");
+  const hubArticleSlugs = selectedHub
+    ? new Set(editorialInsights.filter((article) => hubCategoriesForInsight(article).includes(selectedHub.slug)).map((article) => article.slug))
+    : undefined;
   const filteredArticles = selectedCompany
     ? filterArticlesByCompany(editorialArticles, selectedCompany)
     : selectedCategory
       ? editorialArticles.filter((article) => article.category === selectedCategory)
-      : editorialArticles;
+      : hubArticleSlugs
+        ? editorialArticles.filter((article) => hubArticleSlugs.has(article.slug))
+        : editorialArticles;
   const {
     items: visibleArticles,
     currentPage,
@@ -110,7 +119,9 @@ export default async function BlogArchivePage({ searchParams }: PageProps) {
   );
   const paginationParams = selectedCompany
     ? { company: selectedCompany.value }
-    : { category: selectedCategory };
+    : selectedHub
+      ? { hub: selectedHub.slug }
+      : { category: selectedCategory };
   const pagination = Array.from({ length: totalPages }, (_, index) => {
     const page = index + 1;
     return {
@@ -123,8 +134,9 @@ export default async function BlogArchivePage({ searchParams }: PageProps) {
     {
       label: "All Analysis",
       href: "/blog/archive",
-      active: !selectedCategory && !selectedCompany
+      active: !selectedCategory && !selectedCompany && !selectedHub
     },
+    ...(selectedHub ? [{ label: selectedHub.name, href: directoryHref("/blog/archive", 1, { hub: selectedHub.slug }), active: true }] : []),
     ...categories.map((category) => ({
       label: category,
       href: directoryHref("/blog/archive", 1, { category }),

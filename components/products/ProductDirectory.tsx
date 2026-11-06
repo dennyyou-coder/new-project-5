@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { ImgHTMLAttributes } from "react";
 
 type Card = {
@@ -46,6 +46,12 @@ export function ProductDirectory({ models }: { models: Card[] }) {
   const [brand, setBrand] = useState("");
   const [sort, setSort] = useState("selected");
   const categories = [...new Set(models.map((model) => model.category))];
+  // A category page links here with ?category=… so the library opens already filtered.
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get("category");
+    if (requested && categories.includes(requested)) setCategory(requested);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const filtered = models
     .filter(
       (model) =>

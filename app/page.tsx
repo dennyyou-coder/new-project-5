@@ -16,7 +16,7 @@ import { findParentProfile, shortParentName } from "@/lib/brandProfileView";
 import { TallyButton } from "@/components/LeadForms";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getPublishedBrandProfiles } from "@/lib/brands";
-import { getInsights, type Insight } from "@/lib/content";
+import { getInsights } from "@/lib/content";
 import { getHubCategory, HUB_CATEGORIES, hubCategoriesForNews, type HubCategorySlug } from "@/lib/hubCategories";
 import { getAllHubCategoryData } from "@/lib/hubCategoryContent";
 import {
@@ -25,14 +25,16 @@ import {
   getGuideInsights,
   getLatestSeriesInsight
 } from "@/lib/insightCollections";
-import { getNews, newsDate, newsHref, newsTopicLabel } from "@/lib/news";
+import { getNews, getNewsVisual, isBorrowedNewsVisual, newsDate, newsHref, newsTopicLabel } from "@/lib/news";
+import { EXPO_2026, isExpoUpcoming, pickFeaturedAnalysis } from "@/lib/hubPresentation";
+import type { IconName } from "@/components/Icon";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
+// Re-render a few times a day so the featured slot switches from the expo to analysis without a deploy.
+export const revalidate = 21600;
 
 const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch";
-const supplyCategories = new Set(["Supply Chain", "Supply Chain Analysis"]);
-const supplyTags = new Set(["manufacturing", "oem", "odm", "supply chain", "china supply chain", "components"]);
 const resultsPattern = /\b(revenue|results|profit|sales|earnings)\b/i;
 
 function hubOf(slugs: HubCategorySlug[]) {
@@ -50,12 +52,15 @@ function HubDot({ slugs }: { slugs: HubCategorySlug[] }) {
   );
 }
 
-function isSupplyChain(article: Insight) {
-  return (
-    supplyCategories.has(article.category) ||
-    article.tags.some((tag) => supplyTags.has(String(tag).toLowerCase()))
-  );
+// A topic icon for policy stories, from words in the headline.
+function policyIcon(title: string): IconName {
+  if (/tariff|trade|duty|dumping|investigation|import|export/i.test(title)) return "globe";
+  if (/fcc|certif|standard|safety|recall|\bul\b|iec|approval/i.test(title)) return "badge";
+  if (/subsid|trade-in|funding|yuan|rebate|incentive/i.test(title)) return "dollar";
+  return "clipboard";
 }
+
+const POPULAR_HUBS: HubCategorySlug[] = ["robot-vacuums", "pool-robots", "robotic-mowers", "floor-washers", "commercial-cleaning"];
 
 export default function HomePage() {
   const articles = getInsights();
@@ -66,13 +71,6 @@ export default function HomePage() {
   const hubs = getAllHubCategoryData();
   const latestFounderSeries = getLatestSeriesInsight(articles, founderSeries);
 
-  const counts = [
-    { value: news.length, label: "news stories", href: "/news" },
-    { value: getEditorialInsights(articles).length, label: "analyses", href: "/blog/archive" },
-    { value: brands.length, label: "company profiles", href: "/brands" },
-    { value: featuredProductModels.length, label: `new ${productSelectionYear} models`, href: "/products" },
-    { value: guides.length, label: "practical guides", href: "/guides" }
-  ];
 
   const lead = editorial.find((article) => article.coverImage && !article.seriesTitle);
   const marks = buildBrandMarkIndex(brands);
@@ -83,7 +81,10 @@ export default function HomePage() {
     .filter((model, index, all) => all.findIndex((other) => other.category === model.category) === index)
     .slice(0, 6);
 
-  const supply = editorial.filter(isSupplyChain).slice(0, 4);
+  // Deep analysis: the newest long-form pieces with covers, after the feed lead.
+  const deepAnalysis = editorial.filter((article) => article.coverImage && article.slug !== lead?.slug).slice(0, 4);
+  const expoUpcoming = isExpoUpcoming();
+  const featured = expoUpcoming ? undefined : pickFeaturedAnalysis(editorial, lead?.slug);
 
   const articleCount = new Map<string, number>();
   for (const article of articles) {
@@ -165,21 +166,50 @@ export default function HomePage() {
   return (
     <div className="home-b">
       <section className="home-b-hero" aria-labelledby="home-title">
-        <div className="home-b-container">
+        <div className="home-b-container home-b-hero-grid">
+          <div className="home-b-hero-copy">
           <h1 id="home-title">The global cleaning industry, in one place.</h1>
           <p className="home-b-lead">
             News, new products, companies, supply chains, markets and events across floor care, pool, lawn and commercial cleaning.
           </p>
           <HomeSearch entries={searchEntries} />
-          <ul className="home-b-counts" aria-label="What World Clean Biz covers">
-            {counts.map((count) => (
-              <li key={count.label}>
-                <Link href={count.href}>
-                  <strong>{count.value}</strong> {count.label}
-                </Link>
-              </li>
+          <p className="home-b-popular">
+            <span>Popular:</span>
+            {POPULAR_HUBS.map((slug) => getHubCategory(slug)).filter(Boolean).map((hub) => (
+              <Link key={hub!.slug} href={`/categories/${hub!.slug}`}>
+                <CategoryIcon slug={hub!.slug} color={hub!.color} size="sm" />
+                {hub!.name}
+              </Link>
             ))}
-          </ul>
+          </p>
+          </div>
+          {expoUpcoming ? (
+            <article className="home-b-feature">
+              <Link className="home-b-feature-image" href="/wcb-expo" tabIndex={-1} aria-hidden="true">
+                <img src={EXPO_2026.image} alt="" width={1672} height={941} loading="eager" decoding="async" />
+              </Link>
+              <div className="home-b-feature-copy">
+                <p className="home-b-feature-kicker">Event · {EXPO_2026.dates}</p>
+                <h2><Link href="/wcb-expo">{EXPO_2026.name}</Link></h2>
+                <p>{EXPO_2026.venue}</p>
+                <div className="home-b-feature-actions">
+                  <TallyButton className="home-b-feature-primary" ctaLocation="home_hero_wce_visitor" form="wceVisitor" inquiryIntent="visitor_interest">Plan your visit</TallyButton>
+                  <TallyButton className="home-b-feature-secondary" ctaLocation="home_hero_wce_exhibitor" form="wceExhibitor" inquiryIntent="exhibitor_interest">Exhibit / Partner</TallyButton>
+                </div>
+              </div>
+            </article>
+          ) : featured ? (
+            <article className="home-b-feature">
+              <Link className="home-b-feature-image" href={`/blog/${featured.slug}`} tabIndex={-1} aria-hidden="true">
+                <img {...responsiveImageProps(featured.coverImage!, "card")} alt="" loading="eager" decoding="async" />
+              </Link>
+              <div className="home-b-feature-copy">
+                <p className="home-b-feature-kicker">Deep analysis · {newsDate(featured.sortDate || featured.date)}</p>
+                <h2><Link href={`/blog/${featured.slug}`}>{featured.title}</Link></h2>
+                <p>{featured.excerpt}</p>
+              </div>
+            </article>
+          ) : null}
         </div>
       </section>
 
@@ -232,12 +262,6 @@ export default function HomePage() {
           </div>
           <div className="home-b-categories">
             {hubs.map((data) => {
-              const stories = data.news.length + data.analysis.length;
-              const stats = [
-                data.newModels.length ? `${data.newModels.length} new models` : null,
-                data.companies.length ? `${data.companies.length} companies` : null,
-                stories ? `${stories} stories` : null
-              ].filter(Boolean).join(" · ");
               // Companies whose main category is this hub first, then by coverage.
               const isHome = (slug: string) => (hubOfBrand.get(slug) === data.hub.name ? 1 : 0);
               const leaders = [...data.companies]
@@ -253,7 +277,6 @@ export default function HomePage() {
                   <CategoryIcon slug={data.hub.slug} color={data.hub.color} />
                   <span className="home-b-category-body">
                     <span className="home-b-category-name">{data.hub.name}</span>
-                    <span className="home-b-category-stats">{stats}</span>
                     {leaders.length ? (
                       <span className="home-b-category-logos">
                         {leaders.map((brand) => (
@@ -291,16 +314,16 @@ export default function HomePage() {
         </section>
       ) : null}
 
-      {supply.length > 0 ? (
-        <section className="home-b-section home-b-soft" id="supply" aria-labelledby="home-supply-title">
+      {deepAnalysis.length > 0 ? (
+        <section className="home-b-section home-b-soft" id="analysis" aria-labelledby="home-analysis-title">
           <div className="home-b-container">
             <div className="home-b-head">
-              <h2 id="home-supply-title">Inside the supply chain</h2>
-              <Link href="/blog/archive?category=Supply%20Chain">All supply chain stories →</Link>
+              <h2 id="home-analysis-title">Deep analysis</h2>
+              <Link href="/blog/archive">All analysis →</Link>
             </div>
-            <p className="home-b-sub">Factories, components and the companies behind the brands.</p>
+            <p className="home-b-sub">Supply chains, company strategy and the forces behind the brands.</p>
             <div className="home-b-cards">
-              {supply.map((article) => (
+              {deepAnalysis.map((article) => (
                 <Link key={article.slug} className="home-b-card" href={`/blog/${article.slug}`}>
                   {article.coverImage ? (
                     <span className="home-b-card-image">
@@ -389,9 +412,12 @@ export default function HomePage() {
               </div>
               <ul className="home-b-list">
                 {policy.map((item) => (
-                  <li key={item.slug}>
-                    <Link href={`/news/${item.slug}`}>{item.title}</Link>
-                    <span className="home-b-meta">{newsDate(item.eventDate)}</span>
+                  <li key={item.slug} className="home-b-iconrow">
+                    <span className="home-b-row-icon"><Icon name={policyIcon(item.title)} /></span>
+                    <span className="home-b-result-copy">
+                      <Link href={`/news/${item.slug}`}>{item.title}</Link>
+                      <span className="home-b-meta">{newsDate(item.eventDate)}</span>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -415,12 +441,23 @@ export default function HomePage() {
             </div>
             {events.length > 0 ? (
               <ul className="home-b-list">
-                {events.map((item) => (
-                  <li key={item.slug}>
-                    <Link href={`/news/${item.slug}`}>{item.title}</Link>
-                    <span className="home-b-meta">{newsDate(item.eventDate)}</span>
-                  </li>
-                ))}
+                {events.map((item) => {
+                  const visual = getNewsVisual(item);
+                  const thumb = visual && !isBorrowedNewsVisual(visual) ? visual : undefined;
+                  return (
+                    <li key={item.slug} className="home-b-iconrow">
+                      {thumb ? (
+                        <span className={`home-b-row-thumb${thumb.fit === "contain" ? " home-b-row-thumb--contain" : ""}`}><img src={thumb.src} alt="" loading="lazy" decoding="async" /></span>
+                      ) : (
+                        <span className="home-b-row-icon"><Icon name="calendar" /></span>
+                      )}
+                      <span className="home-b-result-copy">
+                        <Link href={`/news/${item.slug}`}>{item.title}</Link>
+                        <span className="home-b-meta">{newsDate(item.eventDate)}</span>
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             ) : null}
           </div>
@@ -437,6 +474,11 @@ export default function HomePage() {
             <div className="home-b-cards home-b-cards-3">
               {professionalGuides.map((guide) => (
                 <Link key={guide.slug} className="home-b-card home-b-guide" href={`/blog/${guide.slug}`}>
+                  {guide.coverImage ? (
+                    <span className="home-b-card-image">
+                      <img {...responsiveImageProps(guide.coverImage, "card")} alt="" />
+                    </span>
+                  ) : null}
                   <span className="home-b-meta">{guide.category} · {guide.readingTime}</span>
                   <span className="home-b-card-title">{guide.title}</span>
                 </Link>
