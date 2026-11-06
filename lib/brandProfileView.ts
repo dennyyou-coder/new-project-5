@@ -65,11 +65,23 @@ export function findParentProfile(profile: BrandProfile, profiles: readonly Bran
   );
 }
 
+// Periods that do not end a sentence: initialisms (U.S., U.K.), single initials
+// (Joseph Galli Jr., S. Duncan Black) and common company or title abbreviations.
+const abbreviation = /\b(?:(?:[A-Z]\.){2,}|[A-Z]\.(?=\s+[A-Z])|(?:Co|Cie)\.(?=\s+KG)|(?:Mfg|u)\.|(?:Inc|Co|Corp|Ltd|Jr|Sr|Mr|Mrs|Ms|Dr|St|No|Nos|vs|approx|e\.g|i\.e|etc)\.(?=\s+[a-z0-9(]|\s+[A-Z][a-z]*[,)]|,))/g;
+const placeholder = "\u0000";
+
+/** Splits profile text into sentences without breaking on "U.S.", "Inc." or initials. */
+export function splitSentences(text: string): string[] {
+  const trimmed = text.trim();
+  if (!trimmed) return [];
+  const protectedText = trimmed.replace(abbreviation, (match) => match.replaceAll(".", placeholder));
+  const parts = protectedText.split(/(?<=[.!?])\s+(?=[A-Z0-9“"'(])/);
+  return parts.map((part) => part.replaceAll(placeholder, ".").trim()).filter(Boolean);
+}
+
 /** First sentence of a profile text, for short bullet points. */
 export function firstSentence(text: string): string {
-  const trimmed = text.trim();
-  const match = trimmed.match(/^(.+?[.!?])(\s+(?=[A-Z0-9“"'(])|$)/);
-  return (match ? match[1] : trimmed).trim();
+  return splitSentences(text)[0] ?? text.trim();
 }
 
 /** A short "City, Country" from a profile's headquarters text. */

@@ -30,7 +30,7 @@
     "displayLabel": "Zorlu Holding-controlled listed group; 52.77% of Vestel Elektronik"
   },
   "leadership": [
-    {"name": "Gökhan Sığın", "role": "Chief Executive Officer, Vestel Group of Companies", "context": "Vestel's current management page says Sığın assumed the group CEO role on 19 January 2026; this is group leadership rather than a separate consumer-brand company."}
+    {"name": "Gökhan Sığın", "role": "Chief Executive Officer, Vestel Group of Companies", "context": "Vestel's current management page says Sığın assumed the group CEO role on 19 January 2026; this is group leadership rather than a separate consumer-brand company.", "portrait": {"src": "/images/brands/vestel/leader-gokhan-sigin.webp", "alt": "Gökhan Sığın, chief executive officer of Vestel", "credit": "Vestel CEO appointment announcement photo; cropped by World Clean Biz", "sourceUrl": "https://www.vestel.com.tr/content/vestelin-yeni-ceosu-gokhan-sigin", "objectPosition": "center top"}}
   ],
   "productPortfolio": [
     {"name": "Major domestic appliances", "positioning": "Vestel's appliance business covers refrigerators, washing machines, tumble dryers, dishwashers, cooking appliances, air conditioners and water heaters.", "buyerRelevance": "Confirm whether the quoted product is Vestel-branded or ODM, then verify model, energy label, plant, origin and destination certification."},
@@ -126,6 +126,6 @@
   ],
   "publishedAt": "2026-08-07T22:20:00+08:00",
   "lastVerified": "2026-09-12",
-  "lastModified": "2026-09-12T16:30:26+08:00",
+  "lastModified": "2026-11-05T23:30:00+08:00",
   "metaTitle": "Vestel Company Profile: Industry, Ownership & Manufacturing"
 }

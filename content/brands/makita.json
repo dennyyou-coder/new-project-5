@@ -24,7 +24,7 @@
     {"placement":"operations","src":"/images/insights/power-tools-new-cycle-cordless-specialization-cover.jpg","alt":"Cordless power-tool specialization visual","caption":"Buyer value comes from platform fit, accessory compatibility and service support rather than brand familiarity alone."}
   ],
   "ownership":{"summary":"Makita Corporation is a Japanese public company. Its corporate materials trace the business to 1915 and describe a global network of manufacturing and assembly plants, regional operations and professional distribution. Makita U.S.A. and other local companies should not be mistaken for the Japanese parent or for each other.","parentCompany":"Makita Corporation"},
-  "leadership":[{"name":"Munetoshi Goto","role":"President and Representative Director","context":"Identified in Makita’s current management message and its October 30, 2026 interim results."},
+  "leadership":[{"name":"Munetoshi Goto","role":"President and Representative Director","context":"Identified in Makita’s current management message and its October 30, 2026 interim results.","portrait":{"src":"/images/brands/makita/leader-munetoshi-goto.webp","alt":"Munetoshi Goto, president and representative director of Makita","credit":"Makita “Message from Management” page; cropped by World Clean Biz","sourceUrl":"https://www.makita.biz/company/president/","objectPosition":"center top"}},
     {"name":"Mosaburo Makita","role":"Founder","context":"Makita's official company history dates the business to Mosaburo Makita's 1915 electric-motor sales and repair company."}],
   "productPortfolio":[
     {"name":"LXT 18V and 36V cordless tools","positioning":"A broad cordless ecosystem supporting tools, outdoor equipment and cleaning applications.","buyerRelevance":"Confirm battery format, charge system, kit composition and regional electrical requirements."},
@@ -59,5 +59,5 @@
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-11-01T11:14:44+08:00"
+  "lastModified":"2026-11-05T23:30:00+08:00"
 }
