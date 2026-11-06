@@ -7,6 +7,12 @@ import "./styles/home-b.css";
 import { HomeSearch, type HomeSearchEntry } from "@/components/HomeSearch";
 import { HomeSeriesFeature } from "@/components/HomeSeriesFeature";
 import { HomeVideos } from "@/components/HomeVideos";
+import { Icon } from "@/components/Icon";
+import { CategoryIcon } from "@/components/ui/CategoryIcon";
+import { CompanyMark } from "@/components/ui/CompanyMark";
+import { FigureChip } from "@/components/ui/FigureChip";
+import { buildBrandMarkIndex, resolveBrandMark } from "@/lib/brandMarks";
+import { findParentProfile, shortParentName } from "@/lib/brandProfileView";
 import { TallyButton } from "@/components/LeadForms";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getPublishedBrandProfiles } from "@/lib/brands";
@@ -69,7 +75,7 @@ export default function HomePage() {
   ];
 
   const lead = editorial.find((article) => article.coverImage && !article.seriesTitle);
-  const weekNews = news.slice(0, 7);
+  const marks = buildBrandMarkIndex(brands);
 
   // One newest model from each product category.
   const newModels = [...featuredProductModels]
@@ -89,13 +95,31 @@ export default function HomePage() {
     (a, b) => (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0) || a.name.localeCompare(b.name)
   );
   const topCompanies = byCoverage.slice(0, 12);
-  const ownership = byCoverage
-    .filter((brand) => brand.ownership.parentCompany && brand.ownership.parentCompany !== brand.name)
-    .slice(0, 3);
+  // Caption each company with the hub where it has the most product models, else its first hub.
+  const hubOfBrand = new Map<string, string>();
+  const productWeight = new Map<string, number>();
+  for (const data of hubs) {
+    for (const company of data.companies) {
+      const weight = data.products.filter((product) => product.brandSlug === company.slug).length;
+      if (!hubOfBrand.has(company.slug) || weight > (productWeight.get(company.slug) ?? 0)) {
+        hubOfBrand.set(company.slug, data.hub.name);
+        productWeight.set(company.slug, weight);
+      }
+    }
+  }
+  // Brand → parent pairs, one per parent, preferring parents that have their own profile.
+  const ownershipPairs = byCoverage
+    .map((brand) => ({ brand, parentProfile: findParentProfile(brand, brands), parentName: shortParentName(brand.ownership.parentCompany) }))
+    .filter((pair) => pair.parentName && pair.parentProfile)
+    .filter((pair, index, all) => all.findIndex((other) => other.parentProfile?.slug === pair.parentProfile?.slug) === index)
+    .slice(0, 4);
 
   const results = news.filter((item) => item.category === "Financial Results" || resultsPattern.test(item.title)).slice(0, 4);
   const policy = news.filter((item) => item.topic === "policy-standards").slice(0, 3);
   const events = news.filter((item) => item.topic === "events").slice(0, 2);
+  // Each story appears once on the page: the week stream skips stories shown in Markets, Policy or Events.
+  const shownElsewhere = new Set([...results, ...policy, ...events].map((item) => item.slug));
+  const weekNews = news.filter((item) => !shownElsewhere.has(item.slug)).slice(0, 7);
   const professionalGuides = getFeaturedGuides(articles, 3);
 
   const searchEntries: HomeSearchEntry[] = [
@@ -180,7 +204,12 @@ export default function HomePage() {
             <ul className="home-b-stream">
               {weekNews.map((item) => (
                 <li key={item.slug}>
-                  <span className="home-b-type">{newsTopicLabel(item.topic)}</span>
+                  <span className="home-b-type">
+                    {resolveBrandMark(marks, item.brandSlugs[0]) ? (
+                      <CompanyMark mark={resolveBrandMark(marks, item.brandSlugs[0])!} size="sm" />
+                    ) : null}
+                    <span>{newsTopicLabel(item.topic)}</span>
+                  </span>
                   <span className="home-b-stream-copy">
                     <Link href={`/news/${item.slug}`}>{item.title}</Link>
                     <span className="home-b-meta">
@@ -203,8 +232,15 @@ export default function HomePage() {
           </div>
           <div className="home-b-categories">
             {hubs.map((data) => {
-              const latest = data.feed[0];
-              const fallback = data.newModels[0];
+              const stories = data.news.length + data.analysis.length;
+              const stats = [
+                data.newModels.length ? `${data.newModels.length} new models` : null,
+                data.companies.length ? `${data.companies.length} companies` : null,
+                stories ? `${stories} stories` : null
+              ].filter(Boolean).join(" · ");
+              const leaders = [...data.companies]
+                .sort((a, b) => (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0))
+                .slice(0, 3);
               return (
                 <Link
                   key={data.hub.slug}
@@ -212,11 +248,17 @@ export default function HomePage() {
                   href={`/categories/${data.hub.slug}`}
                   style={{ "--hub-color": data.hub.color } as CSSProperties}
                 >
-                  <span className="home-b-category-name">{data.hub.name}</span>
-                  <span className="home-b-category-latest">
-                    {latest
-                      ? latest.kind === "news" ? latest.news.title : latest.article.title
-                      : fallback ? `New: ${fallback.name}` : data.hub.intro}
+                  <CategoryIcon slug={data.hub.slug} color={data.hub.color} />
+                  <span className="home-b-category-body">
+                    <span className="home-b-category-name">{data.hub.name}</span>
+                    <span className="home-b-category-stats">{stats}</span>
+                    {leaders.length ? (
+                      <span className="home-b-category-logos">
+                        {leaders.map((brand) => (
+                          <CompanyMark key={brand.slug} mark={marks.get(brand.slug)!} size="xs" />
+                        ))}
+                      </span>
+                    ) : null}
                   </span>
                 </Link>
               );
@@ -281,19 +323,29 @@ export default function HomePage() {
             </div>
             <div className="home-b-companies">
               {topCompanies.map((brand) => (
-                <Link key={brand.slug} href={`/brands/${brand.slug}`}>{brand.name}</Link>
+                <Link key={brand.slug} className="home-b-company" href={`/brands/${brand.slug}`}>
+                  <CompanyMark mark={marks.get(brand.slug)!} size="md" />
+                  <span className="home-b-company-name">{brand.name}</span>
+                  {hubOfBrand.get(brand.slug) ? <span className="home-b-company-hub">{hubOfBrand.get(brand.slug)}</span> : null}
+                </Link>
               ))}
             </div>
           </div>
-          {ownership.length > 0 ? (
+          {ownershipPairs.length > 0 ? (
             <div className="home-b-owners">
               <h3>Who owns what</h3>
-              {ownership.map((brand) => (
+              {ownershipPairs.map(({ brand, parentProfile, parentName }) => (
                 <Link key={brand.slug} href={`/brands/${brand.slug}`}>
-                  <span className="home-b-owner-name">{brand.name}</span>
-                  <span className="home-b-owner-parent">{brand.ownership.parentCompany}</span>
+                  <CompanyMark mark={marks.get(brand.slug)!} size="sm" />
+                  <span className="home-b-owner-arrow" aria-hidden="true">←</span>
+                  <CompanyMark mark={marks.get(parentProfile!.slug)!} size="sm" />
+                  <span className="home-b-owner-text">
+                    <span className="home-b-owner-name">{brand.name}</span>
+                    <span className="home-b-owner-parent">Owned by {parentName}</span>
+                  </span>
                 </Link>
               ))}
+              <Link className="home-b-owners-all" href="/brands#company-owners-title">All ownership groups →</Link>
             </div>
           ) : null}
         </div>
@@ -304,23 +356,33 @@ export default function HomePage() {
           {results.length > 0 ? (
             <div id="markets">
               <div className="home-b-head">
-                <h2>Markets</h2>
+                <h2><span className="home-b-head-icon"><Icon name="trending" /></span>Markets</h2>
                 <Link href="/markets">All results →</Link>
               </div>
-              <ul className="home-b-list">
-                {results.map((item) => (
-                  <li key={item.slug}>
-                    <Link href={`/news/${item.slug}`}>{item.title}</Link>
-                    <span className="home-b-meta">{newsDate(item.eventDate)}</span>
-                  </li>
-                ))}
+              <ul className="home-b-list home-b-results">
+                {results.map((item) => {
+                  const mark = resolveBrandMark(marks, item.brandSlugs[0]);
+                  const figure = item.keyFigures.find((entry) => entry.change);
+                  return (
+                    <li key={item.slug}>
+                      {mark ? <CompanyMark mark={mark} size="sm" /> : null}
+                      <span className="home-b-result-copy">
+                        <Link href={`/news/${item.slug}`}>{item.title}</Link>
+                        <span className="home-b-meta">
+                          {figure ? <FigureChip label={figure.label} change={figure.change} /> : null}
+                          {newsDate(item.eventDate)}
+                        </span>
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ) : null}
           {policy.length > 0 ? (
             <div id="policy">
               <div className="home-b-head">
-                <h2>Policy and standards</h2>
+                <h2><span className="home-b-head-icon"><Icon name="clipboard" /></span>Policy and standards</h2>
                 <Link href={newsHref("policy-standards")}>More →</Link>
               </div>
               <ul className="home-b-list">
@@ -335,7 +397,7 @@ export default function HomePage() {
           ) : null}
           <div id="events">
             <div className="home-b-head">
-              <h2>Events</h2>
+              <h2><span className="home-b-head-icon"><Icon name="calendar" /></span>Events</h2>
               <Link href="/wcb-expo">WCB Expo →</Link>
             </div>
             <div className="home-b-event">
