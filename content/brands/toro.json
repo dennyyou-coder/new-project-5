@@ -28,7 +28,8 @@
     "summary": "The Toro Company designs, manufactures and markets products under the Toro brand and is a publicly traded company listed on the New York Stock Exchange. Toro is the product brand; The Toro Company is the corporate entity behind it. No separate parent company is asserted on this page."
   },
   "leadership": [
-    {"name": "Richard M. Olson", "role": "Chairman and Chief Executive Officer, The Toro Company", "context": "Corporate leadership of The Toro Company, not a separate Toro brand company."}
+    {"name": "Edric C. Funk", "role": "President and Chief Executive Officer, The Toro Company", "context": "Elected by the board on 21 July 2026 to succeed Richard M. Olson as chief executive officer effective 1 November 2026; previously president and chief operating officer. Corporate leadership of The Toro Company, not a separate Toro brand company."},
+    {"name": "Richard M. Olson", "role": "Executive Chairman of the Board, The Toro Company", "context": "Chief executive officer from 2016 until 1 November 2026, when he moved to executive chairman under the announced succession plan."}
   ],
   "productPortfolio": [
     {"name": "Residential lawn and snow equipment", "positioning": "Toro's consumer range includes walk-behind and riding mowers, battery yard tools, snow blowers and related outdoor equipment.", "buyerRelevance": "Confirm model, power source, battery or engine configuration, accessories, local certification and seasonal parts availability."},
@@ -50,11 +51,14 @@
     "competitorSlugs": ["husqvarna", "gardena", "ego-power-plus", "greenworks"]
   },
   "developments": [
+    {"date": "2026-11-01", "title": "Edric C. Funk becomes chief executive officer", "summary": "Under the succession plan announced on 22 July 2026, Edric C. Funk succeeded Richard M. Olson as CEO on 1 November 2026; Olson became executive chairman.", "sourceIds": ["toro-ceo-succession-2026"]},
     {"date": "2026-06-10", "title": "The Toro Company publishes its 2025 sustainability impact report", "summary": "The release restated the company's global scale and identified Richard M. Olson as chairman and chief executive officer.", "sourceIds": ["toro-sustainability"]},
     {"date": "2025", "title": "Haven robotic mower enters the current Toro portfolio", "summary": "Toro's current Haven VM125 page presents vision navigation and smart scheduling as an alternative to conventional boundary-wire installation.", "sourceIds": ["toro-haven"]},
     {"date": "1914", "title": "The Toro Company is founded", "summary": "The company traces its origins to 1914 and now operates a multi-brand outdoor-equipment business.", "sourceIds": ["toro-annual"]}
   ],
   "sources": [
+    {"id": "toro-ceo-succession-2026", "title": "The Toro Company Elects President and Chief Operating Officer Edric C. Funk to Succeed Richard M. Olson as Chief Executive Officer", "publisher": "The Toro Company", "url": "https://www.thetorocompany.com/news-releases/news-release-details/toro-company-elects-president-and-chief-operating-officer-edric", "publishedAt": "2026-07-22", "accessedAt": "2026-11-05"},
+    {"id": "toro-leadership", "title": "Leadership", "publisher": "The Toro Company", "url": "https://www.thetorocompany.com/corporate-governance/leadership", "accessedAt": "2026-11-05"},
     {"id": "toro-annual", "title": "2025 Annual Report", "publisher": "The Toro Company", "url": "https://www.thetorocompany.com/static-files/32d21e16-1397-4d42-ba4d-e9cd5158d32e", "publishedAt": "2026", "accessedAt": "2026-08-07"},
     {"id": "toro-brands", "title": "Our Brands", "publisher": "The Toro Company", "url": "https://www.thetorocompany.com/brands", "accessedAt": "2026-08-07"},
     {"id": "toro-haven", "title": "Haven Robotic Mower VM125", "publisher": "Toro", "url": "https://www.toro.com/en/product/20460", "accessedAt": "2026-08-07"},
@@ -64,5 +68,5 @@
   ],
   "publishedAt": "2026-08-07T23:50:00+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-08-07T23:50:00+08:00"
+  "lastModified": "2026-11-05T22:30:00+08:00"
 }
