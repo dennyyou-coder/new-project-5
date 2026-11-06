@@ -1,4 +1,5 @@
 import type { EquipmentEvidence } from "@/lib/equipment";
+import { sourceLabel } from "@/lib/sourceLabel";
 
 export function EquipmentSourceLinks({ sourceIds }: { sourceIds: string[] }) {
   return (
@@ -6,7 +7,7 @@ export function EquipmentSourceLinks({ sourceIds }: { sourceIds: string[] }) {
       {sourceIds.map((sourceId, index) => (
         <span key={sourceId}>
           {index > 0 ? ", " : null}
-          <a href={`#source-${sourceId}`}>{sourceId}</a>
+          <a href={`#source-${sourceId}`}>{sourceLabel(sourceId)}</a>
         </span>
       ))}
     </span>

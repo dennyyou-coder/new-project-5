@@ -73,3 +73,24 @@ a.company-mark-link:focus-visible { outline: 2px solid var(--accent); outline-of
 
 /* Logo tiles are sized by area inline; keep any logo inside its box. */
 .company-mark img { object-fit: contain; }
+
+/* Product page: company logo beside the company link */
+body.structure-refresh.design-a .approved-catalog.products-page .product-company-link a.product-company-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+body.structure-refresh.design-a .approved-catalog.products-page .product-company-logo {
+  display: inline-grid;
+  place-items: center;
+  width: 84px;
+  height: 44px;
+  flex: none;
+  background: #fff;
+  border: 1px solid #d8e5f3;
+  border-radius: 10px;
+}
+body.structure-refresh.design-a .approved-catalog.products-page .product-company-logo img {
+  object-fit: contain;
+}
