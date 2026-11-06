@@ -1,0 +1,12 @@
+/* Equipment and component profiles: a section bar that stays on screen and folded reference lists. */
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) > .detail-sticky-nav { position: sticky; top: 64px; z-index: 15; background: rgba(255, 255, 255, 0.97); backdrop-filter: blur(6px); border-top: 1px solid #DDE6F1; border-bottom: 1px solid #DDE6F1; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) > .detail-sticky-nav :is(.equipment-section-nav, .component-intelligence-nav) { display: flex; flex-wrap: nowrap; gap: 4px; margin: 0; padding: 8px 0; overflow-x: auto; scrollbar-width: none; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) > .detail-sticky-nav :is(.equipment-section-nav, .component-intelligence-nav) a { flex: none; min-height: 0; padding: 7px 12px; font-size: 13px; font-weight: 700; color: #33506F; background: transparent; border: 1px solid transparent; border-radius: 999px; text-decoration: none; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) > .detail-sticky-nav :is(.equipment-section-nav, .component-intelligence-nav) a:hover { color: #1762C4; border-color: #CBD8E2; background: #fff; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) section[id] { scroll-margin-top: 124px; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .detail-fold { margin-top: 14px; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .detail-fold > summary { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; font-size: 14px; font-weight: 700; color: #1762C4; background: #fff; border: 1px solid #CBD8E2; border-radius: 8px; cursor: pointer; list-style: none; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .detail-fold > summary::-webkit-details-marker { display: none; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .detail-fold > summary::after { content: "+"; font-size: 16px; line-height: 1; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .detail-fold[open] > summary { margin-bottom: 16px; }
+.structure-refresh.design-a :is(.equipment-detail, .component-intelligence-detail) .detail-fold[open] > summary::after { content: "−"; }

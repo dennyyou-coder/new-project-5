@@ -10,6 +10,8 @@ export function EquipmentTimeline({ profile }: { profile: EquipmentProfile }) {
           <p className="eyebrow">Technical developments</p>
           <h2>Selected changes in {profile.name.toLowerCase()} systems</h2>
         </div>
+        <details className="detail-fold">
+        <summary>Show {developments.length} documented changes</summary>
         <ol className="equipment-timeline">
           {developments.map((item) => (
             <li key={`${item.date}-${item.title}`}>
@@ -18,6 +20,7 @@ export function EquipmentTimeline({ profile }: { profile: EquipmentProfile }) {
             </li>
           ))}
         </ol>
+        </details>
       </div>
     </section>
   );

@@ -112,3 +112,15 @@ test("profile text splits into sentences without breaking abbreviations", async 
   assert.equal(firstSentence("Alfred Kärcher SE & Co. KG is the operating company. It is family owned."), "Alfred Kärcher SE & Co. KG is the operating company.");
   assert.equal(firstSentence("Co-founded by S. Duncan Black in 1910. Later merged."), "Co-founded by S. Duncan Black in 1910.");
 });
+
+test("equipment and component directory groups cover every published profile exactly once", async () => {
+  const { EQUIPMENT_GROUPS, COMPONENT_GROUPS, groupCatalog } = await import("../lib/catalogGroups.ts");
+  const { readdirSync } = await import("node:fs");
+  for (const [dir, groups] of [["content/equipment", EQUIPMENT_GROUPS], ["content/components", COMPONENT_GROUPS]]) {
+    const slugs = readdirSync(dir).filter((name) => name.endsWith(".json")).map((name) => name.replace(/\.json$/, ""));
+    const grouped = groupCatalog(slugs.map((slug) => ({ slug })), groups);
+    assert.ok(!grouped.some((group) => group.id === "more"), `${dir} has ungrouped profiles`);
+    const listed = groups.flatMap((group) => group.slugs);
+    assert.equal(new Set(listed).size, listed.length, `${dir} lists a profile twice`);
+  }
+});

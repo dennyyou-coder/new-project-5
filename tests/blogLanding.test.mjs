@@ -39,7 +39,7 @@ const footerSource = await readFile(
 
 test("navigation links practical guides and the deep analysis archive", () => {
   assert.match(headerSource, /href: "\/guides", label: "Guides"/);
-  assert.match(headerSource, /href: "\/blog\/archive\?category=Supply%20Chain"/);
+  assert.match(headerSource, /href: "\/blog\/archive", label: "Deep Analysis"/);
   assert.match(footerSource, /<Link href="\/blog\/archive">Deep Analysis<\/Link>/);
 });
 

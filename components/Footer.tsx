@@ -32,7 +32,7 @@ export function Footer() {
             <h2>Connect</h2>
             <ul>
               <li><Link href="/wcb-expo">WCB Expo</Link></li>
-              <li><Link href="/contact">Work with us</Link></li>
+              <li><Link href="/contact">Contact &amp; partnerships</Link></li>
               <li><Link href="/sourcing">Sourcing Services</Link></li>
               <li>
                 <TallyButton className="wcb-footer-button" ctaLocation="footer_updates" form="newsletter">

@@ -185,6 +185,12 @@
   grid-template-columns: repeat(2, minmax(190px, 1fr));
 }
 
+/* The last menu opens towards the left so it stays inside the window. */
+.wcb-nav-group:last-child > .wcb-nav-menu {
+  left: auto;
+  right: 0;
+}
+
 .wcb-nav-heading {
   margin: 0 0 4px;
   font-size: 12px;

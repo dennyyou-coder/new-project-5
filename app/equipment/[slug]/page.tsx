@@ -1,3 +1,6 @@
+import { EquipmentSectionNav } from "@/components/equipment/EquipmentSectionNav";
+import { OpenDetailsOnHash } from "@/components/ui/OpenDetailsOnHash";
+import "../../styles/detail-reading.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { EquipmentDecisionSections } from "@/components/equipment/EquipmentDecisionSections";
@@ -62,6 +65,8 @@ export default async function EquipmentPage({ params }: PageProps) {
   return (
     <div className="guides-hub equipment-hub equipment-detail">
       <EquipmentHero profile={profile} isDraft={profile.status === "draft"} />
+      <EquipmentSectionNav />
+      <OpenDetailsOnHash />
       <EquipmentSystemFlow profile={profile} />
       <EquipmentTypeComparison profile={profile} />
       <EquipmentTechnicalSections profile={profile} />
