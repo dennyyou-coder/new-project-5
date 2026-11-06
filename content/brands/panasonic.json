@@ -40,7 +40,14 @@
     {
       "name": "Akira Toyoshima",
       "role": "Chief Executive Officer, Panasonic Corporation",
-      "context": "Panasonic Corporation's current corporate profile identifies Akira Toyoshima as CEO following the April 2026 operating-company reorganization."
+      "context": "Panasonic Corporation's current corporate profile identifies Akira Toyoshima as CEO following the April 2026 operating-company reorganization.",
+      "portrait": {
+        "src": "/images/brands/panasonic/leader-akira-toyoshima.webp",
+        "alt": "Akira Toyoshima, CEO of Panasonic Corporation",
+        "credit": "Panasonic Holdings senior management page; cropped by World Clean Biz",
+        "sourceUrl": "https://holdings.panasonic/global/corporate/phd/executives.html",
+        "objectPosition": "center top"
+      }
     }
   ],
   "productPortfolio": [
@@ -197,5 +204,5 @@
   ],
   "publishedAt": "2026-08-06T19:30:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T19:30:00+08:00"
+  "lastModified": "2026-11-06T00:30:00+08:00"
 }

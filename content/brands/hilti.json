@@ -23,7 +23,7 @@
     {"placement":"operations","src":"/images/brands/hilti/evidence-boundary.webp","alt":"Hilti owner, operating company and country entity boundary","caption":"Private ownership and direct sales do not identify one factory, importer or warranty route for every Hilti product."}
   ],
   "ownership": {"summary":"Hilti is privately owned by the Martin Hilti Family Trust, according to Hilti Group's 2025 official business-results release. The group operates as a global construction-technology supplier rather than a publicly listed brand owner.","parentCompany":"Martin Hilti Family Trust"},
-  "leadership": [{"name":"Jahangir Doongaji","role":"Hilti Group CEO","context":"Hilti's 2025 annual report identifies Jahangir Doongaji as Group CEO."}],
+  "leadership": [{"name":"Jahangir Doongaji","role":"Hilti Group CEO","context":"Hilti's 2025 annual report identifies Jahangir Doongaji as Group CEO.","portrait":{"src":"/images/brands/hilti/leader-jahangir-doongaji.webp","alt":"Jahangir Doongaji, CEO of the Hilti Group","credit":"Hilti Corporation Executive Board page (CEO section); cropped by World Clean Biz","sourceUrl":"https://www.hilti.group/content/hilti/CP/XX/en/company/corporate-information/executive-board.html","objectPosition":"center top"}}],
   "productPortfolio": [
     {"name":"Cordless, corded and direct-fastening tools","positioning":"Construction-focused systems cover drilling, fastening, cutting, demolition and specialty applications.","buyerRelevance":"Confirm exact model, application approval, consumables and local safety requirements."},
     {"name":"Dust management, measuring and jobsite systems","positioning":"Tools connect to extraction, measuring, software and workflow-management services.","buyerRelevance":"Assess system compatibility, subscription terms and service coverage separately from tool purchase."},
@@ -70,5 +70,5 @@
   ],
   "publishedAt": "2026-08-01T12:20:00+08:00",
   "lastVerified": "2026-08-05",
-  "lastModified": "2026-10-18T11:12:39+08:00"
+  "lastModified": "2026-11-06T00:30:00+08:00"
 }

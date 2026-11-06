@@ -39,7 +39,14 @@
     {
       "name": "Christopher J. Nelson",
       "role": "President and Chief Executive Officer",
-      "context": "The fiscal 2025 Form 10-K lists Christopher J. Nelson as President and Chief Executive Officer since October 2025; he was previously Chief Operating Officer and President, Tools & Outdoor."
+      "context": "The fiscal 2025 Form 10-K lists Christopher J. Nelson as President and Chief Executive Officer since October 2025; he was previously Chief Operating Officer and President, Tools & Outdoor.",
+      "portrait": {
+        "src": "/images/brands/stanley-black-decker/leader-christopher-nelson.webp",
+        "alt": "Christopher J. Nelson, president and CEO of Stanley Black & Decker",
+        "credit": "Stanley Black & Decker leadership page; cropped by World Clean Biz",
+        "sourceUrl": "https://www.stanleyblackanddecker.com/about/leadership/chris-nelson",
+        "objectPosition": "center top"
+      }
     }
   ],
   "productPortfolio": [
