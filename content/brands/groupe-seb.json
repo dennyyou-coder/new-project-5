@@ -40,9 +40,21 @@
   },
   "leadership": [
     {
-      "name": "Stanislas de Gramont",
+      "name": "Loïc Moutault",
       "role": "Chief Executive Officer, Groupe SEB",
-      "context": "Groupe SEB's current governance and management pages identify Stanislas de Gramont as Chief Executive Officer."
+      "context": "Groupe SEB's board appointed Loïc Moutault Chief Executive Officer effective 1 October 2026, succeeding Stanislas de Gramont, who remained in office through 30 September 2026.",
+      "portrait": {
+        "src": "/images/brands/groupe-seb/leader-loic-moutault.webp",
+        "alt": "Loïc Moutault, chief executive officer of Groupe SEB",
+        "credit": "Groupe SEB portrait (photo © Jean Aaron); cropped by World Clean Biz",
+        "sourceUrl": "https://www.groupeseb.com/en/loic-moutault",
+        "objectPosition": "center top"
+      }
+    },
+    {
+      "name": "Thierry de La Tour d'Artaise",
+      "role": "Chairman of the Board, Groupe SEB",
+      "context": "The 15 September 2026 appointment announcement states that he remains Chairman."
     }
   ],
   "productPortfolio": [
@@ -107,6 +119,14 @@
   },
   "developments": [
     {
+      "date": "2026-10-01",
+      "title": "Loïc Moutault becomes Groupe SEB CEO",
+      "summary": "Announced on 15 September 2026, Loïc Moutault succeeded Stanislas de Gramont as Chief Executive Officer on 1 October 2026; Thierry de La Tour d'Artaise remains Chairman.",
+      "sourceIds": [
+        "seb-ceo-appointment-2026"
+      ]
+    },
+    {
       "date": "2026-02-26",
       "title": "Groupe SEB reports 2025 full-year results",
       "summary": "The group reported 2025 sales of approximately €8.2 billion and cited good momentum in floorcare and continued e-commerce development.",
@@ -132,6 +152,14 @@
     }
   ],
   "sources": [
+    {
+      "id": "seb-ceo-appointment-2026",
+      "title": "Groupe SEB appoints Loïc Moutault as Chief Executive Officer",
+      "publisher": "Groupe SEB",
+      "url": "https://www.groupeseb.com/sites/default/files/2026-09/PR-GroupeSEB-Appointment-Lo%C3%AFc_Moutault-15092026.pdf",
+      "publishedAt": "2026-09-15",
+      "accessedAt": "2026-11-05"
+    },
     {
       "id": "seb-urd-2025",
       "title": "Universal Registration Document and Annual Financial Report 2025",
@@ -222,5 +250,5 @@
   ],
   "publishedAt": "2026-08-06T22:54:58+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T22:54:58+08:00"
+  "lastModified": "2026-11-05T22:00:00+08:00"
 }

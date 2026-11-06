@@ -46,7 +46,14 @@
     {
       "name": "Kevin Holleran",
       "role": "President and Chief Executive Officer",
-      "context": "Hayward's 2025 Form 10-K and 2026 proxy identify Kevin Holleran as president and chief executive officer."
+      "context": "Hayward's 2025 Form 10-K and 2026 proxy identify Kevin Holleran as president and chief executive officer.",
+      "portrait": {
+        "src": "/images/brands/hayward/leader-kevin-holleran.webp",
+        "alt": "Kevin Holleran, president and CEO of Hayward Holdings",
+        "credit": "Hayward Holdings investor relations headshot; cropped by World Clean Biz",
+        "sourceUrl": "https://s27.q4cdn.com/336738972/files/images/2026/Management/K-Holleran-Headshot.jpg",
+        "objectPosition": "center top"
+      }
     },
     {
       "name": "Eifion Jones",
@@ -204,5 +211,5 @@
   ],
   "publishedAt": "2026-07-31T19:25:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-10-18T11:12:39+08:00"
+  "lastModified": "2026-11-05T22:00:00+08:00"
 }

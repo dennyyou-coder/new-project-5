@@ -44,7 +44,14 @@
     {
       "name": "Glen Instone",
       "role": "President and Chief Executive Officer",
-      "context": "Husqvarna Group appointed Glen Instone CEO effective 11 August 2025; the current board page identifies him as CEO."
+      "context": "Husqvarna Group appointed Glen Instone CEO effective 11 August 2025; the current board page identifies him as CEO.",
+      "portrait": {
+        "src": "/images/brands/husqvarna/leader-glen-instone.webp",
+        "alt": "Glen Instone, president and CEO of Husqvarna Group",
+        "credit": "Husqvarna Group image gallery; cropped by World Clean Biz",
+        "sourceUrl": "https://www.husqvarnagroup.com/en/image-gallery",
+        "objectPosition": "center top"
+      }
     }
   ],
   "productPortfolio": [
@@ -212,5 +219,5 @@
   ],
   "publishedAt": "2026-07-30T23:40:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-10-25T11:01:21+08:00"
+  "lastModified": "2026-11-05T22:00:00+08:00"
 }

@@ -25,7 +25,7 @@
     {"placement":"operations","src":"/images/blog/eureka-ownership-timeline-midea-electrolux.webp","alt":"Eureka and Electrolux ownership timeline","caption":"Historic Electrolux connections should not be treated as proof of current ownership for every Eureka or regional product."}
   ],
   "ownership":{"summary":"AB Electrolux (publ) is a Swedish public limited company listed on Nasdaq Stockholm and the parent of the Electrolux Group. Investor AB was the largest shareholder at the end of 2025, with 17.9% of share capital and 30.4% of voting rights, according to the 2025 annual report. The Group identifies Electrolux, AEG and Frigidaire as leading appliance brands. Brand use, operating companies and product availability remain market-specific.","parentCompany":"AB Electrolux (publ)"},
-  "leadership":[{"name":"Yannick Fierling","role":"President and CEO","context":"Electrolux Group's 2025 annual report identifies Yannick Fierling as President and CEO from 1 January 2025."}],
+  "leadership":[{"name":"Yannick Fierling","role":"President and CEO","context":"Electrolux Group's 2025 annual report identifies Yannick Fierling as President and CEO from 1 January 2025.","portrait":{"src":"/images/brands/electrolux/leader-yannick-fierling.webp","alt":"Yannick Fierling, president and CEO of Electrolux Group","credit":"Electrolux Group image bank; cropped by World Clean Biz","sourceUrl":"https://www.electroluxgroup.com/en/images/president-ceo/","objectPosition":"center top"}}],
   "productPortfolio":[
     {"name":"Major kitchen and laundry appliances","positioning":"Core household appliances sold across Electrolux, AEG and regional brand structures.","buyerRelevance":"Confirm the brand, regional seller, electrical specification and after-sales route for the destination market."},
     {"name":"Vacuum cleaners and small appliances","positioning":"Floorcare, air-quality and smaller domestic-appliance categories within the Group's wellbeing offer.","buyerRelevance":"Model availability and factory origin cannot be inferred from the group brand alone."},
@@ -72,5 +72,5 @@
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-11-05",
-  "lastModified":"2026-11-05T12:00:00+08:00"
+  "lastModified":"2026-11-05T22:00:00+08:00"
 }

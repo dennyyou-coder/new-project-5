@@ -44,7 +44,14 @@
     {
       "name": "Pan Longquan",
       "role": "Founder, Chairman and Executive Director",
-      "context": "Founded the predecessor company in Nanjing in 1994. He was Chief Executive Officer until 10 September 2026 and remains Executive Director and Chairman of the Board."
+      "context": "Founded the predecessor company in Nanjing in 1994. He was Chief Executive Officer until 10 September 2026 and remains Executive Director and Chairman of the Board.",
+      "portrait": {
+        "src": "/images/brands/chervon/leader-pan-longquan.webp",
+        "alt": "Pan Longquan, founder and chairman of Chervon",
+        "credit": "Jiangsu Development Conference organizing committee (ourjiangsu.com), 2023; cropped by World Clean Biz",
+        "sourceUrl": "https://www.ourjiangsu.com/2023/r/20230518/1684392123616.shtml",
+        "objectPosition": "center top"
+      }
     },
     {
       "name": "Joseph Galli Jr.",
