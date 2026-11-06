@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "../styles/markets.css";
 import { TallyButton } from "@/components/LeadForms";
-import { getMarketsData } from "@/lib/markets";
+import { getMarketsData, hubForCompany } from "@/lib/markets";
+import { formatAmount, latestResults, profitChange, revenueChange } from "@/lib/financials";
+import { getHubCategory } from "@/lib/hubCategories";
+import { getPublishedBrandProfiles } from "@/lib/brands";
+import { getInsights } from "@/lib/content";
 import { figureDirection } from "@/lib/brandMarks";
 import { newsDate } from "@/lib/news";
 import { buildWebsiteMetadata } from "@/lib/seo";
@@ -18,7 +22,13 @@ export const metadata: Metadata = buildWebsiteMetadata({
 });
 
 export default function MarketsPage() {
-  const { results, deals, coverage } = getMarketsData();
+  const { deals, coverage } = getMarketsData();
+  // The results table reads the financials tracker: one row per company, its latest reported period.
+  const brands = new Map(getPublishedBrandProfiles(getInsights()).map((brand) => [brand.slug, brand]));
+  const results = latestResults().map((result) => {
+    const hubSlug = result.hub ?? hubForCompany(result.brand);
+    return { result, company: brands.get(result.brand), hub: hubSlug ? getHubCategory(hubSlug) : undefined };
+  });
   const schemas = [
     {
       "@context": "https://schema.org",
@@ -31,8 +41,8 @@ export default function MarketsPage() {
         itemListElement: results.map((row, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          name: row.news.title,
-          url: `${siteUrl}/news/${row.news.slug}`
+          name: `${row.result.name} ${row.result.period} results`,
+          url: row.result.news ? `${siteUrl}/news/${row.result.news}` : row.result.source.url
         }))
       }
     },
@@ -63,7 +73,7 @@ export default function MarketsPage() {
           <section aria-labelledby="markets-results-title">
             <h2 id="markets-results-title">Latest results</h2>
             <p className="markets-note">
-              Figures in the reported currency, as reported by each company, with an approximate US dollar value at the Federal Reserve H.10 rate on the day the story was published. Growth is year on year unless the row says otherwise. Each row links to the news story with the source and rate.
+              The latest reported period for each company, in the currency it reports in. Growth is year on year: worked out from the two amounts in the release, or as the company states it (for example organic or at constant exchange rates). Each row links to the company&apos;s own release.
             </p>
             <div className="markets-table-wrap" tabIndex={0} role="region" aria-labelledby="markets-results-title">
               <table className="markets-table">
@@ -73,40 +83,48 @@ export default function MarketsPage() {
                     <th scope="col">Category</th>
                     <th scope="col">Period</th>
                     <th scope="col">Revenue</th>
-                    <th scope="col">≈ USD</th>
                     <th scope="col">Growth</th>
-                    <th scope="col">Summary</th>
-                    <th scope="col">Report</th>
+                    <th scope="col">Profit</th>
+                    <th scope="col">Change</th>
+                    <th scope="col">Reported</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {results.map((row) => (
-                    <tr key={row.news.slug}>
-                      <th scope="row">
-                        <Link className="markets-company" href={`/news/${row.news.slug}`}>
-                          {row.company?.logoImage ? (
-                            <span className="markets-company-logo" aria-hidden="true">
-                              <LogoTileImage slug={row.company.slug} fallbackSrc={row.company.logoImage} boxRatio={1.73} />
-                            </span>
-                          ) : null}
-                          <span>{row.companyName}</span>
-                        </Link>
-                      </th>
-                      <td>{row.hub?.name ?? "—"}</td>
-                      <td>{row.figure?.period ?? "—"}</td>
-                      <td className="markets-num">{row.figure?.value ?? "—"}</td>
-                      <td className="markets-num">{row.figure?.usd ?? "—"}</td>
-                      <td className="markets-num">
-                        {row.figure?.change ? (
-                          <span className={`figure-chip figure-chip--${figureDirection(row.figure.change)}`}>{row.figure.change}</span>
-                        ) : "—"}
-                      </td>
-                      <td className="markets-summary">{row.news.excerpt}</td>
-                      <td>
-                        <time dateTime={row.news.eventDate}>{newsDate(row.news.eventDate)}</time>
-                      </td>
-                    </tr>
-                  ))}
+                  {results.map(({ result, company, hub }) => {
+                    const growth = revenueChange(result);
+                    const profitMove = profitChange(result);
+                    return (
+                      <tr key={result.company}>
+                        <th scope="row">
+                          <Link className="markets-company" href={company ? `/brands/${company.slug}` : result.source.url}>
+                            {company?.logoImage ? (
+                              <span className="markets-company-logo" aria-hidden="true">
+                                <LogoTileImage slug={company.slug} fallbackSrc={company.logoImage} boxRatio={1.73} />
+                              </span>
+                            ) : null}
+                            <span>{result.name}</span>
+                          </Link>
+                        </th>
+                        <td>{hub?.name ?? "—"}</td>
+                        <td>{result.period}</td>
+                        <td className="markets-num"><small>{result.revenueLabel}</small>{formatAmount(result.revenue, result.currency)}</td>
+                        <td className="markets-num">
+                          {growth ? <span className={`figure-chip figure-chip--${figureDirection(growth)}`}>{growth}</span> : "—"}
+                        </td>
+                        <td className="markets-num">
+                          {result.profit !== undefined && result.profitLabel ? (<><small>{result.profitLabel}</small>{formatAmount(result.profit, result.currency, result.approximate)}</>) : "—"}
+                        </td>
+                        <td className="markets-num">
+                          {profitMove ? <span className={`figure-chip figure-chip--${figureDirection(profitMove)}`}>{profitMove}</span> : "—"}
+                        </td>
+                        <td className="markets-report">
+                          {result.reported ? <time dateTime={result.reported}>{newsDate(result.reported)}</time> : null}
+                          <a href={result.source.url} target="_blank" rel="noopener noreferrer">Company release</a>
+                          {result.news ? <Link href={`/news/${result.news}`}>Our story</Link> : null}
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -115,7 +133,7 @@ export default function MarketsPage() {
 
         {coverage.length > 0 ? (
           <section aria-labelledby="markets-coverage-title">
-            <h2 id="markets-coverage-title">Earnings coverage</h2>
+            <h2 id="markets-coverage-title">Results stories</h2>
             <ul className="markets-list">
               {coverage.map((article) => (
                 <li key={article.slug}>

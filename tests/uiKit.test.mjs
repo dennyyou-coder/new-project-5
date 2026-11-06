@@ -78,7 +78,7 @@ test("landing pages carry company logos, the ownership card and guide ordering",
   assert.match(read("components/ArticleBrandLinks.tsx"), /className="article-brand-logo"/);
   assert.match(read("app/categories/[slug]/page.tsx"), /<CategoryIcon slug=\{hub\.slug\} color=\{hub\.color\} size="lg" \/>/);
   assert.match(read("app/categories/page.tsx"), /<CategoryIcon slug=\{data\.hub\.slug\}/);
-  assert.match(read("app/markets/page.tsx"), /figure-chip figure-chip--\$\{figureDirection\(row\.figure\.change\)\}/);
+  assert.match(read("app/markets/page.tsx"), /figure-chip figure-chip--\$\{figureDirection\(growth\)\}/);
   assert.match(read("app/brands/page.tsx"), /brandMonogram\(group\.parent\)/);
   const guides = read("app/guides/page.tsx");
   assert.match(guides, /const guideTypeOrder = \["ownership", "comparison", "buying", "explainer", "sourcing", "maintenance"\]/);
