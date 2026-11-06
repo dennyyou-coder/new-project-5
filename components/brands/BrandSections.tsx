@@ -4,6 +4,8 @@ import { ProductLinks } from "@/components/products/ProductLinks";
 import { BrandDataTable } from "@/components/brands/BrandDataTable";
 import { BrandFounderCard } from "@/components/brands/BrandFounderCard";
 import { BrandVisual } from "@/components/brands/BrandVisual";
+import { CompanyMark } from "@/components/ui/CompanyMark";
+import type { BrandMark } from "@/lib/brandMarks";
 import {
   buildLeadershipRows,
   partitionFeaturedLeadership,
@@ -23,10 +25,16 @@ function sectionLayoutClassName(visual?: BrandContentVisual) {
 
 export function BrandSections({
   profile,
-  allowedCompetitorSlugs
+  allowedCompetitorSlugs,
+  brandMark,
+  parentMark,
+  markIndex
 }: {
   profile: BrandProfile;
   allowedCompetitorSlugs: ReadonlySet<string> | ReadonlyMap<string, string>;
+  brandMark: BrandMark;
+  parentMark?: BrandMark;
+  markIndex?: ReadonlyMap<string, BrandMark>;
 }) {
   const visualByPlacement = selectBrandContentVisuals(profile.contentVisuals);
   const ownershipVisual = visualByPlacement.get("ownership");
@@ -45,6 +53,50 @@ export function BrandSections({
     <section className="section">
       <div className="insights-page-container">
         <div className="brand-content-sections">
+          <section className="brand-content-section" id="company-ownership">
+            <h2>Company &amp; Ownership</h2>
+            <div className={sectionLayoutClassName(ownershipVisual)}>
+              <div className="brand-section-main">
+                {parentMark ? (
+                  <div className="brand-ownership-chain" aria-label="Ownership">
+                    <CompanyMark mark={parentMark} size="sm" link showName caption="Parent company" />
+                    <span className="brand-ownership-chain__arrow" aria-hidden="true">→</span>
+                    <CompanyMark mark={brandMark} size="sm" showName caption="Brand" />
+                  </div>
+                ) : null}
+                <div className={profile.slug === "miele" ? "company-ownership-intro" : undefined}><div className="company-ownership-copy">
+                <p className="brand-section-summary">{profile.ownership.summary}</p>
+                {profile.ownership.parentCompany && !parentMark ? (
+                  <p className="brand-section-parent">
+                    <strong>Parent company:</strong>{" "}
+                    {profile.ownership.parentCompany}
+                  </p>
+                ) : null}
+                </div><BrandAdditionalPhoto slug={profile.slug} placement="ownership" /></div>
+                <div className="company-leadership">
+                <h3>Leadership</h3>
+                <div className="brand-table-group">
+                  {featuredLeader ? (
+                    <BrandFounderCard leader={featuredLeader} />
+                  ) : null}
+                  {!featuredLeader || tableLeaders.length > 0 ? (
+                    <BrandDataTable
+                      caption="Leadership"
+                      columns={[
+                        { key: "person", label: "Person" },
+                        { key: "role", label: "Role" },
+                        { key: "evidenceNote", label: "Source note" }
+                      ]}
+                      rows={buildLeadershipRows(tableLeaders)}
+                    />
+                  ) : null}
+                </div>
+                </div>
+              </div>
+              {ownershipVisual ? <BrandVisual visual={ownershipVisual} /> : null}
+            </div>
+          </section>
+
           <section className="brand-content-section" id="product-portfolio">
             <h2>Product Portfolio</h2>
             <div className={sectionLayoutClassName(portfolioVisual)}>
@@ -54,7 +106,7 @@ export function BrandSections({
                   columns={[
                     { key: "category", label: "Category" },
                     { key: "positioning", label: "Positioning" },
-                    { key: "buyerRelevance", label: "Buyer relevance" }
+                    { key: "buyerRelevance", label: "What to check" }
                   ]}
                   rows={profile.productPortfolio.map((product) => ({
                     category: product.name,
@@ -70,34 +122,6 @@ export function BrandSections({
           </section>
           <ProductLinks brand={profile.slug} />
 
-          <section className="brand-content-section" id="competitive-position">
-            <h2>Competitive Position</h2>
-            <div className={sectionLayoutClassName(competitionVisual)}>
-              <div className="brand-section-main">
-                <p className="brand-section-summary">
-                  {profile.competitivePosition.summary}
-                </p>
-                {competitorReferences.length > 0 ? (
-                  <div className="brand-competitor-links">
-                    <strong>Related brand profiles</strong>
-                    <div>
-                      {competitorReferences.map((competitor) => (
-                        <span key={competitor.slug}>
-                          {competitor.href ? (
-                            <Link href={competitor.href}>{competitor.name ?? competitor.slug}</Link>
-                          ) : competitor.slug}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
-              </div>
-              {competitionVisual ? (
-                <BrandVisual visual={competitionVisual} />
-              ) : null}
-            </div>
-          </section>
-
           <section className="brand-content-section" id="manufacturing-channels">
             <h2>Manufacturing &amp; Channels</h2>
             <div className="brand-section-layout brand-section-layout--operations">
@@ -108,9 +132,9 @@ export function BrandSections({
                   <BrandDataTable
                     caption="Manufacturing and supply-chain evidence"
                     columns={[
-                      { key: "evidence", label: "Evidence" },
+                      { key: "evidence", label: "What we found" },
                       { key: "scope", label: "Scope" },
-                      { key: "buyerCheck", label: "Buyer check" }
+                      { key: "buyerCheck", label: "What to check" }
                     ]}
                     rows={profile.manufacturingSupplyChain.map((item) => ({
                       evidence: item.evidence,
@@ -124,9 +148,9 @@ export function BrandSections({
                   <BrandDataTable
                     caption="Markets and channels evidence"
                     columns={[
-                      { key: "evidence", label: "Evidence" },
+                      { key: "evidence", label: "What we found" },
                       { key: "scope", label: "Scope" },
-                      { key: "buyerCheck", label: "Buyer check" }
+                      { key: "buyerCheck", label: "What to check" }
                     ]}
                     rows={profile.marketsChannels.map((item) => ({
                       evidence: item.evidence,
@@ -140,39 +164,36 @@ export function BrandSections({
             <BrandAdditionalPhoto slug={profile.slug} placement="manufacturing" />
           </section>
 
-          <section className="brand-content-section" id="company-ownership">
-            <h2>Company &amp; Ownership</h2>
-            <div className={sectionLayoutClassName(ownershipVisual)}>
+          <section className="brand-content-section" id="competitive-position">
+            <h2>Competitive Position</h2>
+            <div className={sectionLayoutClassName(competitionVisual)}>
               <div className="brand-section-main">
-                <div className={profile.slug === "miele" ? "company-ownership-intro" : undefined}><div className="company-ownership-copy">
-                <p className="brand-section-summary">{profile.ownership.summary}</p>
-                {profile.ownership.parentCompany ? (
-                  <p className="brand-section-parent">
-                    <strong>Parent company:</strong>{" "}
-                    {profile.ownership.parentCompany}
-                  </p>
+                <p className="brand-section-summary">
+                  {profile.competitivePosition.summary}
+                </p>
+                {competitorReferences.length > 0 ? (
+                  <div className="brand-competitor-links">
+                    <strong>Related brand profiles</strong>
+                    <div>
+                      {competitorReferences.map((competitor) => {
+                        const mark = competitor.href ? markIndex?.get(competitor.slug) : undefined;
+                        return (
+                          <span key={competitor.slug}>
+                            {mark ? (
+                              <CompanyMark mark={mark} size="xs" link showName />
+                            ) : competitor.href ? (
+                              <Link href={competitor.href}>{competitor.name ?? competitor.slug}</Link>
+                            ) : competitor.slug}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  </div>
                 ) : null}
-                </div><BrandAdditionalPhoto slug={profile.slug} placement="ownership" /></div>
-                <details className="company-leadership-details"><summary>Leadership</summary>
-                <div className="brand-table-group">
-                  {featuredLeader ? (
-                    <BrandFounderCard leader={featuredLeader} />
-                  ) : null}
-                  {!featuredLeader || tableLeaders.length > 0 ? (
-                    <BrandDataTable
-                      caption="Leadership"
-                      columns={[
-                        { key: "person", label: "Person" },
-                        { key: "role", label: "Role" },
-                        { key: "evidenceNote", label: "Evidence note" }
-                      ]}
-                      rows={buildLeadershipRows(tableLeaders)}
-                    />
-                  ) : null}
-                </div>
-                </details>
               </div>
-              {ownershipVisual ? <BrandVisual visual={ownershipVisual} /> : null}
+              {competitionVisual ? (
+                <BrandVisual visual={competitionVisual} />
+              ) : null}
             </div>
           </section>
         </div>

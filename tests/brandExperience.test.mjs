@@ -350,25 +350,21 @@ test("brand hero normalizes the available legal entity scope", () => {
   assert.doesNotMatch(hero, /\{profile\.(?:legalName|legalEntityNote) \?/);
 });
 
-test("brand hero separates official identity from editorial cover and renders key facts", () => {
+test("brand hero leads with the ownership answer, logo and icon fact cards", () => {
   const hero = read("components/brands/BrandHero.tsx");
 
   assert.match(hero, /<BrandLogo\s+profile=\{profile\}\s+variant="hero"/);
   assert.match(hero, /profile\.heroImage/);
-  assert.match(hero, /<dl className="company-overview-facts" aria-label="Key facts">/);
-  // PR-13: undisclosed facts are merged into one "Not disclosed" row first.
-  assert.match(hero, /shownFacts\.map\([\s\S]*<dt>\{fact\}<\/dt><dd>\{detail\}<\/dd>/);
-  [
-    "Brand",
-    "Main businesses",
-    "Legal entity scope",
-    "Ownership type",
-    "Headquarters",
-    "Founded",
-    "Official website",
-    "Last verified"
-  ].forEach((label) => assert.match(hero, new RegExp(label)));
-  assert.doesNotMatch(hero, /<dl className="brand-snapshot-grid"/);
+  assert.match(hero, /const quickAnswer = buildBrandQuickAnswer\(profile\)/);
+  assert.match(hero, /Who owns \{profile\.name\}\?/);
+  assert.match(hero, /<dl className="brand-fact-cards" aria-label="Key facts">/);
+  assert.match(hero, /shownFacts\.map\([\s\S]*<Icon name=\{icon\} \/>[\s\S]*<dt>\{fact\}<\/dt>[\s\S]*<dd>\{detail\}<\/dd>/);
+  ["Ownership", "Headquarters", "Founded", "Main businesses", "Legal entity", "Official website", "Not disclosed"].forEach((label) =>
+    assert.match(hero, new RegExp(label))
+  );
+  assert.doesNotMatch(hero, /Brand product reference/);
+  assert.doesNotMatch(hero, /See verified ownership analysis/);
+  assert.equal((hero.match(/Last verified/g) ?? []).length, 2, "shown once in the answer, or once in the profile line when there is no answer");
 });
 
 test("brand visual primitives preserve logo geometry and semantic figures", () => {
@@ -1059,15 +1055,16 @@ test("brand JSX connects every required CSS selector to rendered content", () =>
   assert.match(directoryCard, /<details className="brand-card-details">[\s\S]*<p>\{profile\.description\}<\/p><\/details>/);
 
   assert.match(detailRoute, /className="guides-hub brand-hub brand-detail approved-catalog"/);
-  assert.match(hero, /className="brand-detail-hero"/);
+  assert.match(hero, /className="brand-profile-hero"/);
   assert.match(hero, /className="brand-hero-media"/);
   assert.match(hero, /className="brand-hero-identity"/);
   assert.match(hero, /className="brand-key-facts"/);
-  assert.match(hero, /<dl className="company-overview-facts" aria-label="Key facts">/);
+  assert.match(hero, /<dl className="brand-fact-cards" aria-label="Key facts">/);
   assert.match(
     hero,
-    /className="brand-detail-hero"[\s\S]*\{profile\.heroImage \? \([\s\S]*<img/
+    /className="brand-profile-hero"[\s\S]*\{profile\.heroImage \? \([\s\S]*<img/
   );
+  assert.match(detailRoute, /import "\.\.\/\.\.\/styles\/brand-profile\.css";/);
   assert.match(sections, /className="brand-content-sections"/);
   assert.match(sections, /className="brand-content-section"/);
   assert.match(
@@ -1092,7 +1089,7 @@ test("brand detail layout uses compact operations, navigation, and full-size vis
   const styles = brandStylesSource;
   const brandStyles = styles.slice(styles.indexOf("/* Brand intelligence hub */"));
 
-  assert.match(hero, /className="brand-section-nav"/);
+  assert.match(hero, /className="brand-section-nav brand-section-nav--sticky"/);
   [
     "#company-ownership",
     "#product-portfolio",

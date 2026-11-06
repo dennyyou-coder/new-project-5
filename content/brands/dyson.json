@@ -8,6 +8,7 @@
   "headline": "Dyson ownership, global engineering network and premium product strategy",
   "description": "A source-backed profile of Dyson's multi-entity structure, Singapore global headquarters, UK engineering base, product portfolio and dated manufacturing network.",
   "metaDescription": "Dyson company profile: legal-entity scope, Singapore and UK headquarters, products, manufacturing network, channels and competitive strategy.",
+  "quickAnswer": "Dyson is privately held and controlled by Sir James Dyson. The company was founded in Britain and is now headquartered in Singapore.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dyson. Corporate and manufacturing statements are limited to the entities, facilities and dates covered by the cited sources; they do not establish the origin of every Dyson model.",
   "headquarters": "Global headquarters: St James Power Station, Singapore; UK headquarters: Malmesbury, Wiltshire",
   "founded": "1993 (Dyson Limited incorporated in 1991)",
@@ -37,7 +38,7 @@
     }
   ],
   "ownership": {
-    "summary": "Dyson's company-information page identifies Dyson Technology Limited as one company that operates its websites, apps and connected products with Dyson Limited; it does not identify that entity as the legal company for every Dyson operation. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. That filing proves control of Dyson UK Group Limited, not by itself ultimate control across every Dyson group entity. Dyson's April 2026 California disclosure separately names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting scopes."
+    "summary": "Dyson's company-information page identifies Dyson Technology Limited as one company that operates its websites, apps and connected products with Dyson Limited; it does not identify that entity as the legal company for every Dyson operation. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. That filing proves control of Dyson UK Group Limited, not by itself ultimate control across every Dyson group entity. Dyson's April 2026 California disclosure separately names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting scopes.", "displayLabel": "Privately held; controlled by Sir James Dyson"
   },
   "leadership": [
     {

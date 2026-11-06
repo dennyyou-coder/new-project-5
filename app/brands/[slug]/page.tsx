@@ -25,6 +25,9 @@ import {
 } from "@/lib/brandCategories";
 import { getInsights } from "@/lib/content";
 import { buildWebsiteMetadata } from "@/lib/seo";
+import { buildBrandMarkIndex } from "@/lib/brandMarks";
+import { findParentProfile } from "@/lib/brandProfileView";
+import "../../styles/brand-profile.css";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -98,6 +101,8 @@ export default async function BrandPage({ params }: PageProps) {
   const data = getBrandPageData(slug, articles);
   if (!data) notFound();
 
+  const markIndex = buildBrandMarkIndex(profiles);
+  const parentProfile = findParentProfile(data.profile, profiles);
   const schemas = buildBrandPageSchemas(data, siteUrl);
   const relatedNews = getNews().filter((article) => article.brandSlugs.includes(data.profile.slug));
   const analysisLink = buildBrandAnalysisLink(data.profile, getAvailableCompanyKeywords(
@@ -110,11 +115,14 @@ export default async function BrandPage({ params }: PageProps) {
         profile={data.profile}
         hasAnalysis={true}
       />
-      <BrandLatest news={relatedNews} articles={data.primaryArticles} />
       <BrandSections
         profile={data.profile}
         allowedCompetitorSlugs={publishedBrandSlugs}
+        brandMark={markIndex.get(data.profile.slug) ?? { name: data.profile.name, logo: data.profile.logoImage }}
+        parentMark={parentProfile ? markIndex.get(parentProfile.slug) : undefined}
+        markIndex={markIndex}
       />
+      <BrandLatest news={relatedNews} articles={data.primaryArticles} />
       <BrandTimeline profile={data.profile} />
       <BrandArticles
         brandName={data.profile.name}

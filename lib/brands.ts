@@ -49,6 +49,8 @@ export type BrandProfile = {
   description: string;
   metaDescription: string;
   metaTitle?: string;
+  /** One plain-language sentence answering who owns the brand, shown first on the profile. */
+  quickAnswer?: string;
   disclaimer: string;
   headquarters: string;
   founded: string;
@@ -381,6 +383,10 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
   }
 
   optionalRecordText(candidate, "metaTitle", "metaTitle", errors);
+  optionalRecordText(candidate, "quickAnswer", "quickAnswer", errors);
+  if (hasText(candidate.quickAnswer) && String(candidate.quickAnswer).length > 220) {
+    errors.push("quickAnswer must be 220 characters or fewer.");
+  }
   textArray(candidate.aliases, "aliases", errors);
 
   optionalRecordText(candidate, "heroImage", "heroImage", errors);
