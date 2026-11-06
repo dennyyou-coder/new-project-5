@@ -66,7 +66,7 @@ test("brand profiles answer ownership first", async () => {
     if (answer) assert.ok(answer.length <= 220 && !/\.\.$/.test(answer), `${profile.slug} answer`);
   }
   const sections = read("components/brands/BrandSections.tsx");
-  const order = ["company-ownership", "product-portfolio", "manufacturing-channels", "competitive-position"].map((id) => sections.indexOf(`id="${id}"`));
+  const order = ["overview", "company-ownership", "product-portfolio", "manufacturing-channels", "competitive-position"].map((id) => sections.indexOf(`id="${id}"`));
   assert.deepEqual([...order].sort((a, b) => a - b), order, "ownership leads the profile sections");
 });
 
