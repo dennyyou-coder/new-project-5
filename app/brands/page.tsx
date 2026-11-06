@@ -10,6 +10,7 @@ import {
 } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
 import { brandMonogram } from "@/lib/brandMarks";
+import { LogoTileImage } from "@/components/ui/LogoTileImage";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -99,7 +100,7 @@ export default function BrandsPage() {
                 <li key={group.key}>
                   <p className="company-owner-parent">
                     <span className={`company-owner-mark${group.parentProfile ? "" : " company-owner-mark--monogram"}`} aria-hidden="true">
-                      {group.parentProfile ? <img src={group.parentProfile.logoImage} alt="" loading="lazy" decoding="async" /> : brandMonogram(group.parent)}
+                      {group.parentProfile ? <LogoTileImage slug={group.parentProfile.slug} fallbackSrc={group.parentProfile.logoImage} boxRatio={1.75} /> : brandMonogram(group.parent)}
                     </span>
                     {group.parentProfile ? <Link href={`/brands/${group.parentProfile.slug}`}>{group.parent}</Link> : group.parent}
                   </p>
@@ -107,7 +108,7 @@ export default function BrandsPage() {
                     {group.brands.map((brand) => (
                       <Link key={brand.slug} className="company-owner-brand" href={`/brands/${brand.slug}`}>
                         <span className="company-owner-mark company-owner-mark--small" aria-hidden="true">
-                          <img src={brand.logoImage} alt="" loading="lazy" decoding="async" />
+                          <LogoTileImage slug={brand.slug} fallbackSrc={brand.logoImage} boxRatio={1.67} />
                         </span>
                         {brand.name}
                       </Link>

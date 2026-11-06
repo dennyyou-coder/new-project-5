@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { BrandProfile } from "@/lib/brands";
+import { LogoTileImage } from "@/components/ui/LogoTileImage";
 
 export function ArticleBrandLinks({
   brandSlugs,
@@ -27,7 +28,7 @@ export function ArticleBrandLinks({
         {linkedProfiles.map((profile) => (
           <Link href={`/brands/${profile.slug}`} key={profile.slug}>
             <span className="article-brand-logo" aria-hidden="true">
-              <img src={profile.logoImage} alt="" loading="lazy" decoding="async" />
+              <LogoTileImage slug={profile.slug} fallbackSrc={profile.logoImage} boxRatio={1.64} />
             </span>
             {profile.name}
           </Link>

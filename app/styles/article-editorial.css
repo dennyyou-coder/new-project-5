@@ -637,3 +637,6 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Logo tiles are sized by area inline; keep any logo inside its box. */
+.structure-refresh .article-reading-experience .article-brand-logo img { object-fit: contain; }

@@ -325,8 +325,8 @@
 .company-owner-mark {
   display: inline-grid;
   place-items: center;
-  width: 56px;
-  height: 32px;
+  width: 68px;
+  height: 38px;
   flex: none;
   background: #fff;
   border: 1px solid #d8e5f3;
@@ -345,8 +345,8 @@
   border-color: #dcebff;
 }
 .company-owner-mark--small {
-  width: 40px;
-  height: 24px;
+  width: 52px;
+  height: 30px;
   border-radius: 5px;
 }
 .company-owner-brands {
@@ -359,3 +359,6 @@
   align-items: center;
   gap: 6px;
 }
+
+/* Logo tiles are sized by area inline; keep any logo inside its box. */
+.company-owner-mark img { object-fit: contain; }

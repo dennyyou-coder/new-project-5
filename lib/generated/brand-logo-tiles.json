@@ -1,0 +1,469 @@
+{
+  "aeg": {
+    "src": "/images/brands/aeg/logo-tile.webp",
+    "ratio": 2.342
+  },
+  "aiper": {
+    "src": "/images/brands/aiper/logo-tile.webp",
+    "ratio": 3.102
+  },
+  "aquabot": {
+    "src": "/images/brands/aquabot/logo-tile.webp",
+    "ratio": 3.104
+  },
+  "asko": {
+    "src": "/images/brands/asko/logo-tile.webp",
+    "ratio": 4.101
+  },
+  "beatbot": {
+    "src": "/images/brands/beatbot/logo-tile.webp",
+    "ratio": 2.98
+  },
+  "beko": {
+    "src": "/images/brands/beko/logo-tile.webp",
+    "ratio": 2.358
+  },
+  "bissell": {
+    "src": "/images/brands/bissell/logo-tile.webp",
+    "ratio": 1.23
+  },
+  "black-decker": {
+    "src": "/images/brands/black-decker/logo-tile.webp",
+    "ratio": 4.831
+  },
+  "bosch-home-appliances": {
+    "src": "/images/brands/bosch-home-appliances/logo-tile.webp",
+    "ratio": 4.015
+  },
+  "bosch-power-tools": {
+    "src": "/images/brands/bosch-power-tools/logo-tile.webp",
+    "ratio": 2.453
+  },
+  "braun-household": {
+    "src": "/images/brands/braun-household/logo-tile.webp",
+    "ratio": 1.883
+  },
+  "breville-sage": {
+    "src": "/images/brands/breville-sage/logo-tile.webp",
+    "ratio": 3.712
+  },
+  "chervon": {
+    "src": "/images/brands/chervon/logo-tile.webp",
+    "ratio": 5.781
+  },
+  "clarke": {
+    "src": "/images/brands/clarke/logo-tile.webp",
+    "ratio": 2.39
+  },
+  "cleanfix": {
+    "src": "/images/brands/cleanfix/logo-tile.webp",
+    "ratio": 2.158
+  },
+  "columbus": {
+    "src": "/images/brands/columbus/logo-tile.webp",
+    "ratio": 5.217
+  },
+  "comac": {
+    "src": "/images/brands/comac/logo-tile.webp",
+    "ratio": 1.565
+  },
+  "craftsman": {
+    "src": "/images/brands/craftsman/logo-tile.webp",
+    "ratio": 3.435
+  },
+  "delonghi": {
+    "src": "/images/brands/delonghi/logo-tile.webp",
+    "ratio": 2.483
+  },
+  "dewalt": {
+    "src": "/images/brands/dewalt/logo-tile.webp",
+    "ratio": 2.329
+  },
+  "dirt-devil": {
+    "src": "/images/brands/dirt-devil/logo-tile.webp",
+    "ratio": 1.037
+  },
+  "dji-romo": {
+    "src": "/images/brands/dji-romo/logo-tile.webp",
+    "ratio": 3.547
+  },
+  "dreame": {
+    "src": "/images/brands/dreame/logo-tile.webp",
+    "ratio": 6.458
+  },
+  "dremel": {
+    "src": "/images/brands/dremel/logo-tile.webp",
+    "ratio": 2.487
+  },
+  "dulevo": {
+    "src": "/images/brands/dulevo/logo-tile.webp",
+    "ratio": 2.982
+  },
+  "dyson": {
+    "src": "/images/brands/dyson/logo-tile.webp",
+    "ratio": 2.484
+  },
+  "ecovacs": {
+    "src": "/images/brands/ecovacs/logo-tile.webp",
+    "ratio": 3.125
+  },
+  "ego-power-plus": {
+    "src": "/images/brands/ego-power-plus/logo-tile.webp",
+    "ratio": 4.006
+  },
+  "electrolux": {
+    "src": "/images/brands/electrolux/logo-tile.webp",
+    "ratio": 3.831
+  },
+  "eufy": {
+    "src": "/images/brands/eufy/logo-tile.webp",
+    "ratio": 1.858
+  },
+  "eureka": {
+    "src": "/images/brands/eureka/logo-tile.webp",
+    "ratio": 3.322
+  },
+  "factory-cat": {
+    "src": "/images/brands/factory-cat/logo-tile.webp",
+    "ratio": 5.541,
+    "light": true
+  },
+  "festool": {
+    "src": "/images/brands/festool/logo-tile.webp",
+    "ratio": 6.549
+  },
+  "fimap": {
+    "src": "/images/brands/fimap/logo-tile.webp",
+    "ratio": 4.429
+  },
+  "fiorentini": {
+    "src": "/images/brands/fiorentini/logo-tile.webp",
+    "ratio": 2.528
+  },
+  "fisher-paykel": {
+    "src": "/images/brands/fisher-paykel/logo-tile.webp",
+    "ratio": 14
+  },
+  "flex": {
+    "src": "/images/brands/flex/logo-tile.webp",
+    "ratio": 1.568
+  },
+  "fluidra": {
+    "src": "/images/brands/fluidra/logo-tile.webp",
+    "ratio": 4.718
+  },
+  "gardena": {
+    "src": "/images/brands/gardena/logo-tile.webp",
+    "ratio": 3.881
+  },
+  "gausium": {
+    "src": "/images/brands/gausium/logo-tile.webp",
+    "ratio": 2.881
+  },
+  "ge-appliances": {
+    "src": "/images/brands/ge-appliances/logo-tile.webp",
+    "ratio": 3.236
+  },
+  "ghibli": {
+    "src": "/images/brands/ghibli/logo-tile.webp",
+    "ratio": 3.301
+  },
+  "gorenje": {
+    "src": "/images/brands/gorenje/logo-tile.webp",
+    "ratio": 1.935
+  },
+  "greenworks": {
+    "src": "/images/brands/greenworks/logo-tile.webp",
+    "ratio": 4.304
+  },
+  "groupe-seb": {
+    "src": "/images/brands/groupe-seb/logo-tile.webp",
+    "ratio": 0.633
+  },
+  "haier-home-appliances": {
+    "src": "/images/brands/haier-home-appliances/logo-tile.webp",
+    "ratio": 2.675
+  },
+  "hako": {
+    "src": "/images/brands/hako/logo-tile.webp",
+    "ratio": 2.975
+  },
+  "hamilton-beach": {
+    "src": "/images/brands/hamilton-beach/logo-tile.webp",
+    "ratio": 9.2
+  },
+  "hayward": {
+    "src": "/images/brands/hayward/logo-tile.webp",
+    "ratio": 5.72
+  },
+  "hikoki": {
+    "src": "/images/brands/hikoki/logo-tile.webp",
+    "ratio": 5.708
+  },
+  "hilti": {
+    "src": "/images/brands/hilti/logo-tile.webp",
+    "ratio": 1.634
+  },
+  "hisense": {
+    "src": "/images/brands/hisense/logo-tile.webp",
+    "ratio": 5.208
+  },
+  "hoover": {
+    "src": "/images/brands/hoover/logo-tile.webp",
+    "ratio": 1.006
+  },
+  "hotpoint": {
+    "src": "/images/brands/hotpoint/logo-tile.webp",
+    "ratio": 2.709
+  },
+  "husqvarna": {
+    "src": "/images/brands/husqvarna/logo-tile.webp",
+    "ratio": 1.28
+  },
+  "ipc": {
+    "src": "/images/brands/ipc/logo-tile.webp",
+    "ratio": 1.091
+  },
+  "irobot": {
+    "src": "/images/brands/irobot/logo-tile.webp",
+    "ratio": 3.782
+  },
+  "karcher": {
+    "src": "/images/brands/karcher/logo-tile.webp",
+    "ratio": 3.311
+  },
+  "kitchenaid": {
+    "src": "/images/brands/kitchenaid/logo-tile.webp",
+    "ratio": 7.957
+  },
+  "kobalt": {
+    "src": "/images/brands/kobalt/logo-tile.webp",
+    "ratio": 2.174
+  },
+  "lavor": {
+    "src": "/images/brands/lavor/logo-tile.webp",
+    "ratio": 3.415
+  },
+  "lawnmaster": {
+    "src": "/images/brands/lawnmaster/logo-tile.webp",
+    "ratio": 6.47,
+    "light": true
+  },
+  "lg-home-appliances": {
+    "src": "/images/brands/lg-home-appliances/logo-tile.webp",
+    "ratio": 1.968
+  },
+  "lindhaus": {
+    "src": "/images/brands/lindhaus/logo-tile.webp",
+    "ratio": 4.586
+  },
+  "lionsbot": {
+    "src": "/images/brands/lionsbot/logo-tile.webp",
+    "ratio": 2.636
+  },
+  "makita": {
+    "src": "/images/brands/makita/logo-tile.webp",
+    "ratio": 2.686
+  },
+  "mammotion": {
+    "src": "/images/brands/mammotion/logo-tile.webp",
+    "ratio": 1.861
+  },
+  "maytronics": {
+    "src": "/images/brands/maytronics/logo-tile.webp",
+    "ratio": 3.829
+  },
+  "metabo": {
+    "src": "/images/brands/metabo/logo-tile.webp",
+    "ratio": 2.646
+  },
+  "midea": {
+    "src": "/images/brands/midea/logo-tile.webp",
+    "ratio": 1.691
+  },
+  "miele": {
+    "src": "/images/brands/miele/logo-tile.webp",
+    "ratio": 2.318
+  },
+  "milwaukee": {
+    "src": "/images/brands/milwaukee/logo-tile.webp",
+    "ratio": 1.942
+  },
+  "minuteman": {
+    "src": "/images/brands/minuteman/logo-tile.webp",
+    "ratio": 5.936
+  },
+  "mova": {
+    "src": "/images/brands/mova/logo-tile.webp",
+    "ratio": 3.635
+  },
+  "narwal": {
+    "src": "/images/brands/narwal/logo-tile.webp",
+    "ratio": 8.202
+  },
+  "nilfisk": {
+    "src": "/images/brands/nilfisk/logo-tile.webp",
+    "ratio": 2.628
+  },
+  "nss": {
+    "src": "/images/brands/nss/logo-tile.webp",
+    "ratio": 1.081
+  },
+  "numatic": {
+    "src": "/images/brands/numatic/logo-tile.webp",
+    "ratio": 4.559
+  },
+  "oertzen": {
+    "src": "/images/brands/oertzen/logo-tile.webp",
+    "ratio": 4.77
+  },
+  "oreck": {
+    "src": "/images/brands/oreck/logo-tile.webp",
+    "ratio": 4.894
+  },
+  "panasonic": {
+    "src": "/images/brands/panasonic/logo-tile.webp",
+    "ratio": 5.677
+  },
+  "pentair": {
+    "src": "/images/brands/pentair/logo-tile.webp",
+    "ratio": 3.521
+  },
+  "philips-home-appliances": {
+    "src": "/images/brands/philips-home-appliances/logo-tile.webp",
+    "ratio": 4.786
+  },
+  "polaris": {
+    "src": "/images/brands/polaris/logo-tile.webp",
+    "ratio": 4.236
+  },
+  "powerboss": {
+    "src": "/images/brands/powerboss/logo-tile.webp",
+    "ratio": 5.254
+  },
+  "pudu-robotics": {
+    "src": "/images/brands/pudu-robotics/logo-tile.webp",
+    "ratio": 3.029
+  },
+  "rcm": {
+    "src": "/images/brands/rcm/logo-tile.webp",
+    "ratio": 1.643
+  },
+  "roborock": {
+    "src": "/images/brands/roborock/logo-tile.webp",
+    "ratio": 4.45
+  },
+  "rowenta": {
+    "src": "/images/brands/rowenta/logo-tile.webp",
+    "ratio": 6.789,
+    "light": true
+  },
+  "russell-hobbs": {
+    "src": "/images/brands/russell-hobbs/logo-tile.webp",
+    "ratio": 4.513
+  },
+  "ryobi": {
+    "src": "/images/brands/ryobi/logo-tile.webp",
+    "ratio": 3.275
+  },
+  "samsung-home-appliances": {
+    "src": "/images/brands/samsung-home-appliances/logo-tile.webp",
+    "ratio": 5.752
+  },
+  "segway-navimow": {
+    "src": "/images/brands/segway-navimow/logo-tile.webp",
+    "ratio": 4.797
+  },
+  "shark": {
+    "src": "/images/brands/shark/logo-tile.webp",
+    "ratio": 3.25
+  },
+  "sharp-appliances": {
+    "src": "/images/brands/sharp-appliances/logo-tile.webp",
+    "ratio": 5.754
+  },
+  "skil": {
+    "src": "/images/brands/skil/logo-tile.webp",
+    "ratio": 2.687
+  },
+  "stanley-black-decker": {
+    "src": "/images/brands/stanley-black-decker/logo-tile.webp",
+    "ratio": 5.537
+  },
+  "stihl": {
+    "src": "/images/brands/stihl/logo-tile.webp",
+    "ratio": 1.951
+  },
+  "sunseeker": {
+    "src": "/images/brands/sunseeker/logo-tile.webp",
+    "ratio": 3.793
+  },
+  "supor": {
+    "src": "/images/brands/supor/logo-tile.webp",
+    "ratio": 6.789
+  },
+  "taski": {
+    "src": "/images/brands/taski/logo-tile.webp",
+    "ratio": 2.177
+  },
+  "teka": {
+    "src": "/images/brands/teka/logo-tile.webp",
+    "ratio": 4.057
+  },
+  "tennant": {
+    "src": "/images/brands/tennant/logo-tile.webp",
+    "ratio": 2.026
+  },
+  "tineco": {
+    "src": "/images/brands/tineco/logo-tile.webp",
+    "ratio": 5.047
+  },
+  "tornado-industries": {
+    "src": "/images/brands/tornado-industries/logo-tile.webp",
+    "ratio": 4.391
+  },
+  "toro": {
+    "src": "/images/brands/toro/logo-tile.webp",
+    "ratio": 1.256
+  },
+  "toshiba-appliances": {
+    "src": "/images/brands/toshiba-appliances/logo-tile.webp",
+    "ratio": 5.721
+  },
+  "truvox": {
+    "src": "/images/brands/truvox/logo-tile.webp",
+    "ratio": 2.559
+  },
+  "tti": {
+    "src": "/images/brands/tti/logo-tile.webp",
+    "ratio": 1.051
+  },
+  "vax": {
+    "src": "/images/brands/vax/logo-tile.webp",
+    "ratio": 2.763
+  },
+  "vestel": {
+    "src": "/images/brands/vestel/logo-tile.webp",
+    "ratio": 3.694
+  },
+  "wetrok": {
+    "src": "/images/brands/wetrok/logo-tile.webp",
+    "ratio": 2.213
+  },
+  "whirlpool": {
+    "src": "/images/brands/whirlpool/logo-tile.webp",
+    "ratio": 2.304
+  },
+  "worx": {
+    "src": "/images/brands/worx/logo-tile.webp",
+    "ratio": 2.815
+  },
+  "wybot": {
+    "src": "/images/brands/wybot/logo-tile.webp",
+    "ratio": 4.721
+  },
+  "xiaomi-mijia": {
+    "src": "/images/brands/xiaomi-mijia/logo-tile.webp",
+    "ratio": 1
+  }
+}

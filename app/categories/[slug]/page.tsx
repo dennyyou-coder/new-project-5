@@ -11,6 +11,7 @@ import { getHubCategoryData, type HubFeedItem } from "@/lib/hubCategoryContent";
 import { newsDate, newsTopicLabel } from "@/lib/news";
 import { productCover, productSelectionYear } from "@/lib/products";
 import { buildWebsiteMetadata } from "@/lib/seo";
+import { LogoTileImage } from "@/components/ui/LogoTileImage";
 
 const siteUrl = "https://worldcleanbiz.com";
 type Props = { params: Promise<{ slug: string }> };
@@ -204,7 +205,7 @@ export default async function CategoryHubPage({ params }: Props) {
                 {companies.map((brand) => (
                   <Link key={brand.slug} href={`/brands/${brand.slug}`}>
                     <span className="hub-company-logo" aria-hidden="true">
-                      <img src={brand.logoImage} alt="" loading="lazy" decoding="async" />
+                      <LogoTileImage slug={brand.slug} fallbackSrc={brand.logoImage} boxRatio={1.73} />
                     </span>
                     <span>{brand.name}</span>
                   </Link>

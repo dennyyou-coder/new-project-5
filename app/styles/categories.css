@@ -551,8 +551,8 @@
 .hub-company-logo {
   display: grid;
   place-items: center;
-  width: 52px;
-  height: 30px;
+  width: 64px;
+  height: 36px;
   flex: none;
   background: #fff;
   border: 1px solid var(--hub-line);
@@ -569,3 +569,6 @@
     height: 46px;
   }
 }
+
+/* Logo tiles are sized by area inline; keep any logo inside its box. */
+.hub-company-logo img { object-fit: contain; }

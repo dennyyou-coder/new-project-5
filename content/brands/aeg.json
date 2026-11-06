@@ -2,15 +2,18 @@
   "status": "published",
   "slug": "aeg",
   "name": "AEG",
-  "aliases": ["AEG Appliances", "AEG Hausgeräte"],
+  "aliases": [
+    "AEG Appliances",
+    "AEG Hausgeräte"
+  ],
   "legalName": "AB Electrolux (publ)",
   "legalEntityNote": "AEG is an appliance brand owned by AB Electrolux. Regional Electrolux companies can operate websites, sell products or provide service, while licensed categories and individual factories require separate verification.",
   "officialWebsite": "https://www.aeg.com/",
   "headline": "AEG ownership, Electrolux relationship, floor care and manufacturing evidence",
-  "description": "AEG is owned by AB Electrolux, the Swedish appliance group listed on Nasdaq Stockholm. Electrolux bought AEG Hausgeräte in 1994 and secured worldwide rights to the AEG brand in 2004, so AEG is a German-origin brand inside a Swedish group.",
+  "description": "AEG is owned by AB Electrolux, the Swedish appliance group listed on Nasdaq Stockholm. Electrolux bought AEG Hausgeräte in 1994 and bought the AEG trademark in 2004, so AEG is a German-origin brand inside a Swedish group.",
   "metaTitle": "Who Owns AEG? Electrolux Ownership and German Heritage",
-  "metaDescription": "AB Electrolux owns AEG: it bought AEG Hausgeräte in 1994 and worldwide AEG brand rights in 2004. See AEG's German heritage, products and who makes them.",
-  "quickAnswer": "AB Electrolux, the Swedish appliance group, owns AEG. It bought AEG Hausgeräte in 1994 and secured worldwide rights to the AEG brand in 2004.",
+  "metaDescription": "AB Electrolux owns AEG: it bought AEG Hausgeräte in 1994 and the AEG trademark in 2004. See AEG's German heritage, products and who makes them.",
+  "quickAnswer": "AB Electrolux, the Swedish appliance group, owns AEG. It bought AEG Hausgeräte in 1994 and the AEG trademark, previously used under licence, in 2004.",
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with AEG or Electrolux. Brand ownership, regional operation, licensing, manufacturing and warranty responsibility are separate layers.",
   "headquarters": "Stockholm, Sweden at parent-group level",
   "founded": "1883 brand heritage; AEG Hausgeräte became wholly owned by Electrolux in 1994",
@@ -34,7 +37,7 @@
     }
   ],
   "ownership": {
-    "summary": "AB Electrolux owns AEG. Electrolux acquired AEG Hausgeräte in 1994 and obtained worldwide rights to the AEG brand and corporate name in 2004. AEG is therefore a German-origin brand inside a Swedish listed appliance group, not an independent German appliance company today.",
+    "summary": "AB Electrolux owns AEG. Electrolux acquired AEG Hausgeräte in 1994 and in June 2004 bought the AEG trademark rights, which it had used under licence, from DaimlerChrysler's EHG Elektroholding. AEG is therefore a German-origin brand inside a Swedish listed appliance group, not an independent German appliance company today.",
     "parentCompany": "AB Electrolux (publ)"
   },
   "leadership": [
@@ -102,26 +105,37 @@
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: AEG combines strong German engineering heritage with Electrolux Group scale and a broad European appliance portfolio. The brand can connect floor care to laundry and kitchen categories, but buyers must avoid converting brand heritage or group factory data into a blanket origin claim.",
-    "competitorSlugs": ["bosch-home-appliances", "miele", "philips-home-appliances"]
+    "competitorSlugs": [
+      "bosch-home-appliances",
+      "miele",
+      "philips-home-appliances"
+    ]
   },
   "developments": [
     {
       "date": "2026-02",
       "title": "Electrolux confirms AEG as a main group brand",
       "summary": "The 2025 annual report positions AEG around precision performance and engineering excellence within the listed group.",
-      "sourceIds": ["electrolux-annual-report-2025"]
+      "sourceIds": [
+        "electrolux-annual-report-2025"
+      ]
     },
     {
       "date": "2004-06",
-      "title": "Electrolux obtains worldwide AEG brand rights",
-      "summary": "Electrolux's regulatory history records the acquisition of worldwide rights to the AEG brand and corporate name.",
-      "sourceIds": ["electrolux-aeg-history"]
+      "title": "Electrolux buys the AEG trademark",
+      "summary": "Electrolux bought the AEG trademark rights from DaimlerChrysler's EHG Elektroholding, having used them under licence, and moved AEG products to the AEG-Electrolux double brand from 2005.",
+      "sourceIds": [
+        "horizont-aeg-rights-2004",
+        "electrolux-annual-report-2004"
+      ]
     },
     {
       "date": "1994",
       "title": "AEG Hausgeräte becomes wholly owned by Electrolux",
       "summary": "The appliance business moved fully into Electrolux, completing the core corporate ownership transition.",
-      "sourceIds": ["electrolux-aeg-history"]
+      "sourceIds": [
+        "electrolux-aeg-history"
+      ]
     }
   ],
   "sources": [
@@ -138,7 +152,7 @@
       "title": "AEG history inside Electrolux Group",
       "publisher": "Electrolux Group",
       "url": "https://www.electroluxgroup.com/en/?p=28256",
-      "accessedAt": "2026-07-31"
+      "accessedAt": "2026-11-05"
     },
     {
       "id": "aeg-uk-terms",
@@ -153,9 +167,25 @@
       "publisher": "AEG",
       "url": "https://www.aeg.co.uk/wellbeing/discover/buying-guides/cordless-cleaners/",
       "accessedAt": "2026-07-31"
+    },
+    {
+      "id": "horizont-aeg-rights-2004",
+      "title": "Electrolux erwirbt Markenrechte an AEG",
+      "publisher": "HORIZONT",
+      "url": "https://www.horizont.net/marketing/nachrichten/-Electrolux-erwirbt-Markenrechte-an-AEG-51308",
+      "publishedAt": "2004-06-22",
+      "accessedAt": "2026-11-05"
+    },
+    {
+      "id": "electrolux-annual-report-2004",
+      "title": "Electrolux Annual Report 2004",
+      "publisher": "AB Electrolux",
+      "url": "https://www.electroluxgroup.com/wp-content/uploads/sites/2/2010/07/Electrolux-Annual-Report-2004-English.pdf",
+      "publishedAt": "2005",
+      "accessedAt": "2026-11-05"
     }
   ],
   "publishedAt": "2026-07-31T19:00:00+08:00",
-  "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T19:00:00+08:00"
+  "lastVerified": "2026-11-05",
+  "lastModified": "2026-11-05T12:00:00+08:00"
 }

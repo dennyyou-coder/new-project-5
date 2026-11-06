@@ -65,3 +65,6 @@
 .markets-table .figure-chip {
   white-space: normal;
 }
+
+/* Logo tiles are sized by area inline; keep any logo inside its box. */
+.markets-company-logo img { object-fit: contain; }
