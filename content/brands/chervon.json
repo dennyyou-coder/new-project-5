@@ -2,7 +2,12 @@
   "status": "published",
   "slug": "chervon",
   "name": "Chervon",
-  "aliases": ["Chervon Holdings", "Chervon Holdings Limited", "Chervon Group", "泉峰"],
+  "aliases": [
+    "Chervon Holdings",
+    "Chervon Holdings Limited",
+    "Chervon Group",
+    "泉峰"
+  ],
   "legalName": "Chervon Holdings Limited",
   "legalEntityNote": "Chervon Holdings Limited is the Hong Kong-listed holding company of the Chervon power tool and outdoor power equipment group, headquartered in Nanjing. It sells under its own brands EGO, FLEX, SKIL, DEVON and X-TRON and also makes products for other brands (ODM). Chervon Auto Precision Technology, listed in Shanghai, is a separate company controlled by the same ultimate shareholder and is not part of this group.",
   "schemaEntityType": "Organization",
@@ -44,7 +49,14 @@
     {
       "name": "Joseph Galli Jr.",
       "role": "Chief Executive Officer",
-      "context": "Appointed Chief Executive Officer by the Board effective 10 September 2026, succeeding founder Pan Longquan. Chervon's announcement says he was Chief Executive Officer of TTI from 2008 until his retirement in 2024, and earlier rose to President of Worldwide Power Tools and Accessories during 19 years at Black & Decker."
+      "context": "Appointed Chief Executive Officer by the Board effective 10 September 2026, succeeding founder Pan Longquan. Chervon's announcement says he was Chief Executive Officer of TTI from 2008 until his retirement in 2024, and earlier rose to President of Worldwide Power Tools and Accessories during 19 years at Black & Decker.",
+      "portrait": {
+        "src": "/images/brands/chervon/leader-joseph-galli.webp",
+        "alt": "Joseph Galli Jr., chief executive officer of Chervon",
+        "credit": "TTI 2018 Annual Report portrait (taken before he joined Chervon); cropped by World Clean Biz",
+        "sourceUrl": "https://www.ttigroup.com/sites/default/files/2022-09/18ar_Print.pdf",
+        "objectPosition": "center top"
+      }
     }
   ],
   "productPortfolio": [
@@ -90,38 +102,54 @@
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Chervon competes mainly through EGO in battery outdoor equipment, where it reported market-share gains in 2025, while FLEX and SKIL faced a tougher power-tool market. In September 2026 it appointed Joseph Galli Jr., TTI's chief executive from 2008 to 2024 and earlier President of Worldwide Power Tools and Accessories at Black & Decker, as CEO. Buyers should separate Chervon's own brands from the products it makes for others.",
-    "competitorSlugs": ["tti", "greenworks", "stihl", "husqvarna", "makita"]
+    "competitorSlugs": [
+      "tti",
+      "greenworks",
+      "stihl",
+      "husqvarna",
+      "makita"
+    ]
   },
   "developments": [
     {
       "date": "2026-09-10",
       "title": "Joseph Galli Jr. becomes CEO",
       "summary": "The Board appointed Joseph Galli Jr. as Chief Executive Officer, succeeding founder Pan Longquan, who remains Chairman and Executive Director.",
-      "sourceIds": ["chervon-ceo-2026"]
+      "sourceIds": [
+        "chervon-ceo-2026"
+      ]
     },
     {
       "date": "2026-04-24",
       "title": "Chervon publishes its 2025 annual report",
       "summary": "Revenue fell 8.2% to US$1,627.8 million and net profit fell 13.3%; outdoor power equipment revenue rose 0.1% and power tools revenue fell 18.3%.",
-      "sourceIds": ["chervon-ar-2025"]
+      "sourceIds": [
+        "chervon-ar-2025"
+      ]
     },
     {
       "date": "2025",
       "title": "Steinheim production moved to Nanjing",
       "summary": "Chervon completed moving production from its Steinheim facility in Germany to Nanjing and expanded capacity in Vietnam.",
-      "sourceIds": ["chervon-ar-2025"]
+      "sourceIds": [
+        "chervon-ar-2025"
+      ]
     },
     {
       "date": "2021-12-30",
       "title": "Chervon lists in Hong Kong",
       "summary": "Chervon Holdings Limited listed on the Stock Exchange of Hong Kong under stock code 2285.",
-      "sourceIds": ["chervon-ar-2025"]
+      "sourceIds": [
+        "chervon-ar-2025"
+      ]
     },
     {
       "date": "1994",
       "title": "Predecessor company founded in Nanjing",
       "summary": "Pan Longquan founded Nanjing Chervon International Trading, the predecessor of the group.",
-      "sourceIds": ["chervon-ar-2025"]
+      "sourceIds": [
+        "chervon-ar-2025"
+      ]
     }
   ],
   "sources": [
