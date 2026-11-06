@@ -3,14 +3,16 @@ import type { HubCategory, HubCategorySlug } from "@/lib/hubCategories";
 import type { HubCategoryData } from "@/lib/hubCategoryContent";
 import { productCover } from "@/lib/products";
 
-/** Site photography for categories that have it; others fall back to their newest product or article image. */
-const HUB_PHOTOS: Partial<Record<HubCategorySlug, string>> = {
-  "robot-vacuums": "/images/site-refresh/2026-09-commercial/01-robot-vacuum.webp",
-  "vacuum-cleaners": "/images/site-refresh/2026-09-commercial/06-vacuum-cleaner.webp",
-  "floor-washers": "/images/site-refresh/2026-09-commercial/02-floor-washer.webp",
-  "pool-robots": "/images/site-refresh/2026-09-commercial/03-pool-robot.webp",
-  "robotic-mowers": "/images/site-refresh/2026-09-commercial/04-lawn-robot.webp",
-  "commercial-cleaning": "/images/site-refresh/2026-09-commercial/05-commercial-cleaning.webp"
+/** Official brand photography for each category, credited on the page; others fall back to their newest product or article image. */
+const HUB_PHOTOS: Partial<Record<HubCategorySlug, { src: string; credit: string }>> = {
+  "robot-vacuums": { src: "/images/brands/roborock/hero-saros-z70.webp", credit: "Roborock" },
+  "vacuum-cleaners": { src: "/images/brands/samsung-home-appliances/hero-bespoke-ai-jet-lite.webp", credit: "Samsung" },
+  "floor-washers": { src: "/images/brands/tineco/hero-floor-one-s9-artist-steam.webp", credit: "Tineco" },
+  "pool-robots": { src: "/images/brands/wybot/hero-s3-pool-cleaner.webp", credit: "WYBOT" },
+  "robotic-mowers": { src: "/images/brands/husqvarna/hero-automower-portfolio.webp", credit: "Husqvarna" },
+  "commercial-cleaning": { src: "/images/brands/minuteman/hero-roboscrub-warehouse.webp", credit: "Minuteman" },
+  "small-appliances": { src: "/images/brands/kitchenaid/hero-artisan-plus.webp", credit: "KitchenAid" },
+  "power-tools-outdoor": { src: "/images/brands/stihl/hero-stihl-outdoor-power-equipment.webp", credit: "STIHL" }
 };
 
 /** Category sourcing pages that exist on the site. */
@@ -23,11 +25,11 @@ const HUB_SOURCING: Partial<Record<HubCategorySlug, string>> = {
   "commercial-cleaning": "/sourcing/commercial-cleaning"
 };
 
-export type HubVisual = { src: string; kind: "photo" | "product" | "cover" };
+export type HubVisual = { src: string; kind: "photo" | "product" | "cover"; credit?: string };
 
 export function hubVisual(data: HubCategoryData): HubVisual | undefined {
   const photo = HUB_PHOTOS[data.hub.slug];
-  if (photo) return { src: photo, kind: "photo" };
+  if (photo) return { src: photo.src, kind: "photo", credit: photo.credit };
   const model = data.newModels[0];
   if (model) return { src: productCover(model.slug), kind: "product" };
   const article = [...data.essential, ...data.analysis].find((item) => item.coverImage);
@@ -53,7 +55,8 @@ export const EXPO_2026 = {
   name: "WCB Expo 2026",
   dates: "18–20 November 2026",
   venue: "Suzhou Shishan Convention Center · Suzhou, China",
-  image: "/images/expo/wcb-expo-2026-hero.webp",
+  /** The organiser's official 2026 key visual (a -800 variant sits beside it). */
+  image: "/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp",
   closesAt: Date.parse("2026-11-21T00:00:00+08:00")
 };
 

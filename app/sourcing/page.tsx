@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     description:
       "Find the next cleaning industry opportunity and turn it into a product you can source, brand and sell.",
     url: "/sourcing",
-    images: ["/images/site-refresh/2026-09-commercial/09-prototype-review.webp"]
+    images: ["/images/articles/about-denny-expo-2026/17-photo-95.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Cleaning Product Opportunities & China Sourcing",
     description:
       "Find the next cleaning industry opportunity and turn it into a product you can source, brand and sell.",
-    images: ["/images/site-refresh/2026-09-commercial/09-prototype-review.webp"]
+    images: ["/images/articles/about-denny-expo-2026/17-photo-95.webp"]
   }
 };
 
@@ -42,9 +42,9 @@ const shortlistItems = [
 ];
 
 const deliveryStages = [
-  { title: "Discover", steps: ["Product Opportunity", "Selection", "Pricing"], image: "/images/site-refresh/2026-09-commercial/08-market-research.webp", alt: "Product technology being evaluated" },
-  { title: "Develop", steps: ["Paid Samples", "OEM/ODM", "Production"], image: "/images/site-refresh/2026-09-commercial/09-prototype-review.webp", alt: "Product development planning and review" },
-  { title: "Deliver", steps: ["Quality & Compliance", "Export & Delivery", "After-Sales"], image: "/images/site-refresh/2026-09-commercial/11-packaging-inspection.webp", alt: "Cleaning appliance packaging and final inspection" }
+  { title: "Discover", steps: ["Product Opportunity", "Selection", "Pricing"], image: "/images/articles/about-denny-expo-2026/17-photo-95.webp", alt: "Buyers examining products at a supplier booth, Shenzhen 2026" },
+  { title: "Develop", steps: ["Paid Samples", "OEM/ODM", "Production"], image: "/images/articles/about-denny-expo-2025/18-photo-78.webp", alt: "Motors and drive components shown by a supplier" },
+  { title: "Deliver", steps: ["Quality & Compliance", "Export & Delivery", "After-Sales"], image: "/images/articles/about-denny-expo-2025/12-photo-81.webp", alt: "Buyers checking vacuum parts at a supplier booth" }
 ];
 
 const faqs = [
@@ -87,7 +87,7 @@ export default function SourcingPage() {
       <section className="sourcing-opportunity-section sourcing-opportunity-shortlist">
         <div className="sourcing-opportunity-shell sourcing-opportunity-shortlist-grid">
           <div><p className="sourcing-opportunity-eyebrow">Free For Relevant B2B Requests</p><h2>Free product shortlist</h2><p>Share your company, market and product interests. Denny reviews the opportunity and our team prepares a practical starting point.</p><TallyButton className="sourcing-opportunity-button" ctaLocation="sourcing_shortlist" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Get a free product shortlist</TallyButton></div>
-          <div><div className="sourcing-opportunity-shortlist-preview"><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/01-robot-vacuum.webp")} alt="Robot vacuum and dock product direction" /><div><small>Example product snapshot</small><strong>Product Direction 01</strong><span>Images · Basic Specs · Indicative Price</span><span>OEM/ODM Feasibility · Market Fit</span></div></div><ul>{shortlistItems.map((item) => <li key={item}>{item}</li>)}</ul><div className="sourcing-opportunity-timing"><p><strong>Within 8 Hours</strong><span>Initial human contact</span></p><p><strong>Normally Within 1–2 business days</strong><span>Initial product or category directions</span></p></div></div>
+          <div><div className="sourcing-opportunity-shortlist-preview"><img {...siteVisualProps("/images/articles/about-denny-expo-2025/17-photo-74.webp")} alt="Brush rolls and cleaning materials from component suppliers" /><div><small>Example product snapshot</small><strong>Product Direction 01</strong><span>Images · Basic Specs · Indicative Price</span><span>OEM/ODM Feasibility · Market Fit</span></div></div><ul>{shortlistItems.map((item) => <li key={item}>{item}</li>)}</ul><div className="sourcing-opportunity-timing"><p><strong>Within 8 Hours</strong><span>Initial human contact</span></p><p><strong>Normally Within 1–2 business days</strong><span>Initial product or category directions</span></p></div></div>
         </div>
       </section>
 
@@ -104,13 +104,13 @@ export default function SourcingPage() {
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-models">
-        <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Two ways to work with us</p><h2>The goal: a product that can compete</h2></div><div className="sourcing-opportunity-model-grid"><article className="sourcing-opportunity-model-primary"><div className="sourcing-opportunity-model-image"><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/10-quality-inspection.webp")} alt="Cleaning appliance components prepared for quality inspection" /><span>One Quotation · Managed Delivery</span></div><small>Primary</small><h3>Buy directly from World Clean Biz</h3><p>We recommend products, provide one quotation and manage sourcing, OEM/ODM, production, quality, export and delivery.</p></article><article><div className="sourcing-opportunity-model-image"><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/12-project-coordination.webp")} alt="Product specialists discussing a vacuum cleaner sample" /><span>Supplier Search · China-Side Control</span></div><small>Also Available</small><h3>Your sourcing office in China</h3><p>We can find new suppliers or manage suppliers you already work with through a defined sourcing partnership.</p></article></div><p className="sourcing-opportunity-model-note">You do not need to choose a model now. We recommend the right approach after understanding your project.</p><TallyButton className="sourcing-opportunity-button" ctaLocation="sourcing_models" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Discuss a product idea</TallyButton></div>
+        <div className="sourcing-opportunity-shell"><div className="sourcing-opportunity-heading"><p>Two ways to work with us</p><h2>The goal: a product that can compete</h2></div><div className="sourcing-opportunity-model-grid"><article className="sourcing-opportunity-model-primary"><div className="sourcing-opportunity-model-image"><img {...siteVisualProps("/images/articles/about-denny-expo-2026/20-photo-105.webp")} alt="Robot vacuum parts on show at the 2026 Shenzhen exhibition" /><span>One Quotation · Managed Delivery</span></div><small>Primary</small><h3>Buy directly from World Clean Biz</h3><p>We recommend products, provide one quotation and manage sourcing, OEM/ODM, production, quality, export and delivery.</p></article><article><div className="sourcing-opportunity-model-image"><img {...siteVisualProps("/images/articles/about-denny-expo-2026/16-photo-92.webp")} alt="A supplier and buyers discussing products at the 2026 Shenzhen exhibition" /><span>Supplier Search · China-Side Control</span></div><small>Also Available</small><h3>Your sourcing office in China</h3><p>We can find new suppliers or manage suppliers you already work with through a defined sourcing partnership.</p></article></div><p className="sourcing-opportunity-model-note">You do not need to choose a model now. We recommend the right approach after understanding your project.</p><TallyButton className="sourcing-opportunity-button" ctaLocation="sourcing_models" form="sourcing" inquiryIntent="opportunity_discovery" trackClick>Discuss a product idea</TallyButton></div>
       </section>
 
       <section className="sourcing-opportunity-section sourcing-opportunity-denny-method">
         <div className="sourcing-opportunity-shell sourcing-opportunity-method-grid">
           <div><div className="sourcing-opportunity-heading"><p>Industry signals before the supplier search</p><h2>How Denny spots opportunities early</h2><p>The newest technology is not automatically the right choice. The advantage comes from knowing which solution is current, commercially mature and appropriate for your market.</p></div><div className="sourcing-opportunity-signal-grid">{opportunitySignals.map((item) => <article key={item.number}><span>{item.number}</span><div><h3>{item.title}</h3><p>{item.text}</p></div></article>)}</div></div>
-          <figure><img {...siteVisualProps("/images/site-refresh/2026-09-commercial/08-market-research.webp")} alt="Product research desk with cleaning samples and market reference materials" /><figcaption>Early Signals → Market Judgment → Product Direction → Supply Chain Execution</figcaption></figure>
+          <figure><img {...siteVisualProps("/images/articles/about-denny-expo-2026/13-photo-90.webp")} alt="Supplier booths at the 2026 Shenzhen exhibition" /><figcaption>Early Signals → Market Judgment → Product Direction → Supply Chain Execution</figcaption></figure>
         </div>
       </section>
 
