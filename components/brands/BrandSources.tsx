@@ -28,7 +28,7 @@ export function BrandSources({ profile }: { profile: BrandProfile }) {
         </ol>
         <p>First published: {formatBrandDate(profile.publishedAt)}</p>
         <p>Last verified: {formatBrandDate(profile.lastVerified)}</p>
-        <p>Last material modification: {formatBrandDate(profile.lastModified)}</p>
+        <p>Last updated: {formatBrandDate(profile.lastModified)}</p>
       </div>
     </section>
   );

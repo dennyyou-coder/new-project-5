@@ -329,7 +329,7 @@ test("brand experience shows independent positioning, disclaimer, sources, and u
   assert.match(brandSources, /Accessed/);
   assert.match(brandSources, /First published/);
   assert.match(brandSources, /Last verified/);
-  assert.match(brandSources, /Last material modification/);
+  assert.match(brandSources, /Last updated/);
 });
 
 test("brand hero normalizes the available legal entity scope", () => {

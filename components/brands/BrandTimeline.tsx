@@ -17,7 +17,7 @@ export function BrandTimeline({ profile }: { profile: BrandProfile }) {
       <div className="insights-page-container">
         <div className="section-heading guides-section-heading">
           <p className="eyebrow">Company Developments</p>
-          <h2>Verified Timeline</h2>
+          <h2>Timeline</h2>
         </div>
         <ol className="brand-timeline">
           {developments.map((development) => (
