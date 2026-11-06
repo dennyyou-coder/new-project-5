@@ -24,9 +24,9 @@ export function LawnRobotOpportunityLandscape() {
   return (
     <section className="section sourcing-lawn-landscape-section">
       <div className="sourcing-v3-container">
-        <p className="sourcing-v3-kicker">Six-Platform Opportunity Landscape</p>
+        <p className="sourcing-v3-kicker">Platform landscape</p>
         <div className="sourcing-lawn-visual-heading">
-          <h2>Where the Six Product Platforms Compete</h2>
+          <h2>Where the six platforms compete</h2>
           <p>Different robotic mower platforms create value through different customers, channels and ownership models.</p>
         </div>
         <figure className="sourcing-lawn-landscape">
@@ -54,9 +54,9 @@ export function LawnRobotChannelMatrix() {
   return (
     <section className="section section-muted sourcing-lawn-channel-section">
       <div className="sourcing-v3-container">
-        <p className="sourcing-v3-kicker">Platform × Channel Fit</p>
+        <p className="sourcing-v3-kicker">Platform and channel fit</p>
         <div className="sourcing-lawn-visual-heading">
-          <h2>Which Channels Fit Each Product Platform?</h2>
+          <h2>Which channels fit each platform?</h2>
           <p>Channel fit depends on setup burden, customer education, service capability and the clarity of the product's reason to buy.</p>
         </div>
         <div className="sourcing-lawn-assessment-legend"><strong>World Clean Biz editorial assessment</strong><span><i className="is-strong" />Strong fit</span><span><i className="is-conditional" />Conditional fit</span><span>— Not a natural primary route</span></div>
@@ -81,8 +81,8 @@ export function LawnRobotSuccessConditions() {
   return (
     <section className="section sourcing-lawn-success-section">
       <div className="sourcing-v3-container">
-        <p className="sourcing-v3-kicker">Opportunity Conditions</p>
-        <h2>Three Conditions That Decide Whether the Opportunity Can Scale</h2>
+        <p className="sourcing-v3-kicker">What has to be true</p>
+        <h2>Three conditions that decide whether it can scale</h2>
         <div className="sourcing-lawn-success-grid">{conditions.map((condition) => <article key={condition.number}><div className="sourcing-lawn-success-image"><Image src={condition.image} alt={condition.alt} fill sizes="(max-width: 760px) 118px, (max-width: 1200px) 31vw, 360px" /><span>{condition.number}</span></div><h3>{condition.title}</h3><p>{condition.text}</p></article>)}</div>
       </div>
     </section>
@@ -99,8 +99,8 @@ export function LawnRobotEvidenceFlow() {
   return (
     <section className="section section-muted sourcing-lawn-evidence-section">
       <div className="sourcing-v3-container">
-        <p className="sourcing-v3-kicker">Commercial Go / No-Go</p>
-        <div className="sourcing-lawn-visual-heading"><h2>Four Decisions Before You Back a Platform</h2><p>Move forward only when the opportunity, product evidence, supplier capability and after-sale economics reinforce one another.</p></div>
+        <p className="sourcing-v3-kicker">Go or no-go</p>
+        <div className="sourcing-lawn-visual-heading"><h2>Four decisions before you back a platform</h2><p>Move forward only when the opportunity, product evidence, supplier capability and after-sale economics reinforce one another.</p></div>
         <ol className="sourcing-lawn-evidence-flow">{stages.map((stage) => <li key={stage.number}><span>{stage.number}</span><strong>{stage.label}</strong><h3>{stage.question}</h3><ul>{stage.evidence.map((item) => <li key={item}>{item}</li>)}</ul></li>)}</ol>
       </div>
     </section>

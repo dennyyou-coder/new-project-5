@@ -13,8 +13,8 @@ export function LawnRobotProductSelector({ products, productCategory = "robotic_
   return (
     <section className="section sourcing-selector-section" id="product-options">
       <div className="sourcing-v3-container">
-        <p className="sourcing-v3-kicker">Compare the Opportunity</p>
-        <h2>Six Product Platforms. Six Different Market Opportunities.</h2>
+        <p className="sourcing-v3-kicker">Compare the platforms</p>
+        <h2>Six product platforms, six different markets</h2>
         <p className="sourcing-selector-disclaimer">Each direction targets a different customer, channel and reason to buy. Final supplier models and claims require verification.</p>
         <div className="sourcing-selector sourcing-lawn-selector-workbench">
           <div className="sourcing-selector-image sourcing-lawn-selector-media"><img {...siteVisualProps(selected.image, "(max-width: 760px) 100vw, 60vw")} alt={selected.imageAlt} loading="lazy" decoding="async" /><span>{selected.id}</span></div>
@@ -25,8 +25,8 @@ export function LawnRobotProductSelector({ products, productCategory = "robotic_
             <p className="sourcing-selector-positioning"><strong>Market opportunity</strong><br />{selected.positioning}</p>
             <div className="sourcing-selector-tags"><span>{selected.lawnContext}</span>{selected.markets.map((item) => <span key={item}>{item}</span>)}{selected.channels.map((item) => <span key={item}>{item}</span>)}</div>
             <div className="sourcing-selector-actions">
-              <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation={`${ctaPrefix}_product_selector`} inquiryIntent="product_sourcing" productCategory={productCategory} productId={selected.id}>Request Suppliers for {selected.id}</TallyButton>
-              <TallyButton className="sourcing-selector-secondary" form="sourcing" conversionGroup="sourcing" ctaLocation={`${ctaPrefix}_selector_custom_brief`} inquiryIntent="product_sourcing" productCategory={productCategory}>Use My Own Product Brief</TallyButton>
+              <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation={`${ctaPrefix}_product_selector`} inquiryIntent="product_sourcing" productCategory={productCategory} productId={selected.id}>Request suppliers for {selected.id}</TallyButton>
+              <TallyButton className="sourcing-selector-secondary" form="sourcing" conversionGroup="sourcing" ctaLocation={`${ctaPrefix}_selector_custom_brief`} inquiryIntent="product_sourcing" productCategory={productCategory}>Use my own product brief</TallyButton>
             </div>
           </div>
           <div className="sourcing-selector-facts sourcing-lawn-selector-evidence"><div><strong>Why it can win</strong><p>{selected.opportunity}</p></div><div><strong>Critical proof points</strong><p>{selected.verificationRisk}</p></div></div>

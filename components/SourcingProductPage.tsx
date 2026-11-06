@@ -43,12 +43,12 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
         <section className="section-hero sourcing-product-hero sourcing-lawn-hero">
           <div className="sourcing-v3-container sourcing-product-hero-grid">
             <div>
-              <p className="sourcing-v3-kicker">Where the Next Robotic Mower Opportunities Are Forming</p>
-              <h1>Choose the Market Opportunity Before You Choose the Factory</h1>
+              <p className="sourcing-v3-kicker">Where new robotic mower opportunities are forming</p>
+              <h1>Robotic mower sourcing: choose the market before the factory</h1>
               <p className="sourcing-product-intro">Robotic mowers are separating into distinct product platforms—from mass-market vision models to RTK, slope specialists and professional large-area machines. The opportunity depends on which customer, channel and ownership problem the product is built to solve.</p>
               <div className="sourcing-lawn-hero-actions">
-                <a className="sourcing-v3-button" href="#product-options">Explore the Product Opportunities</a>
-                <TallyButton className="sourcing-lawn-secondary-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_hero_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Test My Product Thesis</TallyButton>
+                <a className="sourcing-v3-button" href="#product-options">See the product platforms</a>
+                <TallyButton className="sourcing-lawn-secondary-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_hero_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Discuss my product idea</TallyButton>
               </div>
               <p className="sourcing-lawn-hero-fit">For brands, importers, distributors and retailers deciding where to compete in robotic mowers—and which Chinese product platform can support that position.</p>
             </div>
@@ -71,8 +71,8 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
       {isLawnRobotPage ? (
         <section className="section sourcing-lawn-audience-section">
           <div className="sourcing-v3-container">
-            <p className="sourcing-v3-kicker">The Decisions Buyers Are Facing</p>
-            <h2>Built for Buyers Deciding Where to Play in Robotic Mowers</h2>
+            <p className="sourcing-v3-kicker">Decisions buyers face</p>
+            <h2>For buyers deciding where to compete in robotic mowers</h2>
             <div className="sourcing-lawn-audience-grid">
               <article><span>Enter</span><h3>Choose a credible first platform for entering the category</h3></article>
               <article><span>Expand</span><h3>Add a product that opens a new customer or price position</h3></article>
@@ -109,7 +109,7 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
 
           <section className="section section-muted sourcing-lawn-faq-section">
             <div className="sourcing-v3-container sourcing-lawn-faq">
-              <div><p className="sourcing-v3-kicker">Industry Opportunity Questions</p><h2>The Product Decisions Buyers Are Debating Now</h2><p>These are not generic sourcing questions. They are the commercial and technical choices that shape where robotic mower growth can come from next.</p><img className="sourcing-lawn-faq-visual" src="/images/sourcing/lawn-robots/rm-03-awd-slope.webp" alt="All-wheel-drive robotic mower being evaluated on difficult residential terrain" loading="lazy" decoding="async" /></div>
+              <div><p className="sourcing-v3-kicker">Questions buyers ask</p><h2>Product decisions buyers are weighing now</h2><p>These are not generic sourcing questions. They are the commercial and technical choices that shape where robotic mower growth can come from next.</p><img className="sourcing-lawn-faq-visual" src="/images/sourcing/lawn-robots/rm-03-awd-slope.webp" alt="All-wheel-drive robotic mower being evaluated on difficult residential terrain" loading="lazy" decoding="async" /></div>
               <div>
                 <details><summary>Which robotic mower segment offers the strongest opportunity for new market entrants?</summary><p>The most accessible opening is often not the most technically ambitious machine. Installation-light products for smaller lawns and focused retail use cases can reach buyers that dealer-installed premium products do not. A new entrant still needs a sharp position: mass adoption, difficult terrain, large-area service or value—not a generic mower aimed at every lawn.</p></details>
                 <details><summary>Is the European market still led by premium products, or is it moving toward value models?</summary><p>Premium products remain important because reliability, installation and dealer support carry real value. The expansion opportunity is broader: simpler boundary-free products and proven value platforms can address households that rejected earlier prices or installation requirements. Value will grow only where lower price does not create higher returns, weak apps or unsustainable service cost.</p></details>
@@ -127,22 +127,22 @@ export function SourcingProductPage({ product }: { product: SourcingProduct }) {
 
           <section className="section sourcing-lawn-final-section">
             <div className="sourcing-v3-container sourcing-lawn-final-cta">
-              <div><p className="sourcing-v3-kicker">Make the Opportunity Specific</p><h2>Turn a Market Opportunity Into a Product Brief</h2><p>Define the customer, lawn environment, channel, price position and reason the product should win. That is the starting point for identifying the platform, supplier capability and evidence worth pursuing.</p></div>
+              <div><p className="sourcing-v3-kicker">Make it specific</p><h2>Turn a market opportunity into a product brief</h2><p>Define the customer, lawn environment, channel, price position and reason the product should win. That is the starting point for identifying the platform, supplier capability and evidence worth pursuing.</p></div>
               <div className="sourcing-lawn-final-actions">
-                <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_final_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Evaluate My Product Opportunity</TallyButton>
-                <a href="#product-options">Discuss a Selected Product</a>
+                <TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation="lawn_robot_final_custom_brief" inquiryIntent="product_sourcing" productCategory={product.productCategory}>Review my product brief</TallyButton>
+                <a href="#product-options">Discuss this product</a>
               </div>
             </div>
           </section>
 
-          <section className="section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Related Intelligence</p><h2>Research the category before choosing a supplier</h2><div className="sourcing-product-grid">{related.map((article) => <article key={article.slug}><img className="sourcing-lawn-related-image" {...(article.coverImage ? responsiveImageProps(article.coverImage, "card") : { src: "/images/sourcing/lawn-robots/rm-03-awd-slope.webp", loading: "lazy" as const, decoding: "async" as const })} alt={article.coverImage ? `Cover image for ${article.title}` : "Robotic lawn mower product platform under industry assessment"} /><h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div></div></section>
+          <section className="section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Related research</p><h2>Research the category before choosing a supplier</h2><div className="sourcing-product-grid">{related.map((article) => <article key={article.slug}><img className="sourcing-lawn-related-image" {...(article.coverImage ? responsiveImageProps(article.coverImage, "card") : { src: "/images/sourcing/lawn-robots/rm-03-awd-slope.webp", loading: "lazy" as const, decoding: "async" as const })} alt={article.coverImage ? `Cover image for ${article.title}` : "Robotic lawn mower product platform under industry assessment"} /><h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div></div></section>
         </>
       ) : (
         <>
           <section className="section"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Buyer Challenges</p><h2>Why supplier lists are not enough</h2><div className="sourcing-product-grid">{product.buyerProblems.map((item) => <article key={item}><p>{item}</p></article>)}</div></div></section>
-          <section className="section section-muted"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">How We Help</p><h2>Support from product direction to execution</h2><div className="sourcing-product-grid">{product.services.map((item) => <article key={item}><h3>{item}</h3><p>Focused support shaped around your market, product stage and supplier requirements.</p></article>)}</div></div></section>
+          <section className="section section-muted"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">How we help</p><h2>Support from product direction to execution</h2><div className="sourcing-product-grid">{product.services.map((item) => <article key={item}><h3>{item}</h3><p>Focused support shaped around your market, product stage and supplier requirements.</p></article>)}</div></div></section>
           <section className="section"><div className="sourcing-v3-container sourcing-product-columns"><div><p className="sourcing-v3-kicker">Supplier Evaluation</p><h2>What buyers should verify</h2><ul>{product.evaluationPoints.map((item) => <li key={item}>{item}</li>)}</ul></div><div><p className="sourcing-v3-kicker">Market Preparation</p><h2>One product does not fit every market</h2>{product.marketNotes.map((item) => <p key={item}>{item}</p>)}</div></div></section>
-          <section className="section section-muted"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Related Intelligence</p><h2>Research the category before choosing a supplier</h2><div className="sourcing-product-grid">{related.map((article) => <article key={article.slug}><h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div></div></section>
+          <section className="section section-muted"><div className="sourcing-v3-container"><p className="sourcing-v3-kicker">Related research</p><h2>Research the category before choosing a supplier</h2><div className="sourcing-product-grid">{related.map((article) => <article key={article.slug}><h3>{article.title}</h3><p>{article.excerpt}</p><Link href={`/blog/${article.slug}`}>Read the analysis</Link></article>)}</div></div></section>
           <section className="section"><div className="sourcing-v3-container sourcing-product-cta"><p className="sourcing-v3-kicker">World Clean Biz Sourcing</p><h2>Tell us what you are trying to build or source.</h2><p>Share your target product, market and project stage. We will use that context to understand where support may be useful.</p><TallyButton className="sourcing-v3-button" form="sourcing" conversionGroup="sourcing" ctaLocation={`${product.slug}_final`} inquiryIntent="product_sourcing" productCategory={product.productCategory}>Start A Sourcing Inquiry</TallyButton></div></section>
         </>
       )}
