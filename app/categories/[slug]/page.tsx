@@ -66,7 +66,7 @@ export default async function CategoryHubPage({ params }: Props) {
   const models = data.newModels.slice(0, 4);
   const essential = data.essential.slice(0, 4);
   const companies = data.companies.slice(0, 10);
-  const guides = [...data.guides].sort((a, b) => b.guidePriority - a.guidePriority).slice(0, 4);
+  const guides = data.guides.slice(0, 4);
 
   const schemas = [
     {
