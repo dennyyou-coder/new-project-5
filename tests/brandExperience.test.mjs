@@ -424,7 +424,7 @@ test("company page cards: ownership chain, product images, operations and buyer 
   assert.match(sections, /visuals\.get\("ownership"\)/);
   assert.match(sections, /Full ownership note/);
   assert.match(sections, /buildBuyerChecks\(profile\)/);
-  assert.match(sections, /className="bp-competitors"/);
+  assert.match(sections, /className=\{`bp-competitors\$\{competitors\.length % 3 === 0 \? "" : " bp-competitors--pairs"\}`\}/);
 });
 test("brand section helpers keep first unique visuals and provide an empty-leadership row", async () => {
   let helpers;

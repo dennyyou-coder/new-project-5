@@ -98,3 +98,17 @@ test("every profile has a written ownership answer and a trimmed logo tile", asy
   assert.ok(logoTileWidth(7) > logoTileWidth(1));
   assert.ok(logoTileWidth(20) <= 0.9 && logoTileWidth(0.5) > 0);
 });
+
+test("profile text splits into sentences without breaking abbreviations", async () => {
+  const { splitSentences, firstSentence } = await import("../lib/brandProfileView.ts");
+  assert.deepEqual(
+    splitSentences("BISSELL is a private company. A U.S. federal-court filing states that BISSELL Homecare, Inc. is wholly owned by BISSELL Inc. The family leads it."),
+    [
+      "BISSELL is a private company.",
+      "A U.S. federal-court filing states that BISSELL Homecare, Inc. is wholly owned by BISSELL Inc.",
+      "The family leads it."
+    ]
+  );
+  assert.equal(firstSentence("Alfred Kärcher SE & Co. KG is the operating company. It is family owned."), "Alfred Kärcher SE & Co. KG is the operating company.");
+  assert.equal(firstSentence("Co-founded by S. Duncan Black in 1910. Later merged."), "Co-founded by S. Duncan Black in 1910.");
+});
