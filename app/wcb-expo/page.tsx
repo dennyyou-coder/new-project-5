@@ -70,6 +70,14 @@ export default function WcbExpoPage() {
       Suzhou Shishan Convention Center · Suzhou, China
      </span>
     </p>
+    <div className="expo-actions">
+     <a className="button" href="/contact?inquiry=expo_visitor#project-form">
+      Plan your visit
+     </a>
+     <a className="button button-secondary" href="/contact?inquiry=expo_exhibitor#project-form">
+      Exhibit or partner
+     </a>
+    </div>
    </div>
    <figure>
     <ExpoImage alt="Official WCB 2026 exhibition artwork" priority src="/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"/>
@@ -495,9 +503,14 @@ export default function WcbExpoPage() {
      </span>
     </p>
    </div>
-   <a className="button" href="/contact?inquiry=expo_visitor#project-form">
-    Plan your visit
-   </a>
+   <div className="expo-actions">
+    <a className="button" href="/contact?inquiry=expo_visitor#project-form">
+     Plan your visit
+    </a>
+    <a className="button button-secondary" href="/contact?inquiry=expo_exhibitor#project-form">
+     Exhibit or partner
+    </a>
+   </div>
   </div>
  </section>
 </div>

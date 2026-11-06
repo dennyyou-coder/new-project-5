@@ -246,3 +246,9 @@
 #wcb-expo-story dialog{width:fit-content;margin:auto}
 #wcb-expo-story dialog img{width:auto;height:auto;max-width:86vw;max-height:72vh}
 @media(max-width:760px){#wcb-expo-story .story-nav{top:72px}#wcb-expo-story section[id]{scroll-margin-top:140px}#wcb-expo-story .section-head{grid-template-columns:1fr}#wcb-expo-story .history-panel{grid-template-columns:1fr}#wcb-expo-story .history-tabs{display:flex;overflow-x:auto}#wcb-expo-story .history-tabs button{flex:0 0 142px}#wcb-expo-story dialog{max-width:96vw}#wcb-expo-story .lightbox-actions{gap:6px}#wcb-expo-story .lightbox-actions button{padding:8px 12px}}
+/* Visitor and exhibitor entries side by side (hero and closing invitation). */
+#wcb-expo-story .expo-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+#wcb-expo-story .v7-location .expo-actions{margin-top:18px;flex-shrink:0}
+#wcb-expo-story .v7-location .expo-actions .button{margin-top:0}
+#wcb-expo-story .button.button-secondary{background:#fff;color:var(--blue);border-color:var(--blue)}
+#wcb-expo-story .button.button-secondary:hover{background:#eef3ff;color:#174ead}
