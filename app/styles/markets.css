@@ -41,3 +41,27 @@
 .markets-page .markets-subscribe-button { min-height: 48px; padding: 0 22px; border: 0; border-radius: 8px; background: var(--mk-link); color: #fff; font: inherit; font-weight: 700; cursor: pointer; box-shadow: none; }
 @media (max-width: 640px) { .markets-container { padding: 0 16px; } }
 .markets-table td:nth-child(3), .markets-table td:last-child { white-space: nowrap; }
+
+.markets-company {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.markets-company-logo {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 30px;
+  flex: none;
+  background: #fff;
+  border: 1px solid #d8e5f3;
+  border-radius: 6px;
+}
+.markets-company-logo img {
+  max-width: 82%;
+  max-height: 60%;
+  object-fit: contain;
+}
+.markets-table .figure-chip {
+  white-space: normal;
+}

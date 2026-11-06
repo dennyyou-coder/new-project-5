@@ -33,6 +33,11 @@ type HubRules = {
   productCategories?: string[];
   /** Brand directory categories (lib/brandCategories.ts). */
   brandCategories?: BrandCategorySlug[];
+  /**
+   * Company profiles whose own product portfolio covers the hub but that have
+   * no model in the product library yet (for example Husqvarna Automower).
+   */
+  brandSlugs?: string[];
 };
 
 export type HubCategory = {
@@ -129,7 +134,8 @@ export const HUB_CATEGORIES: HubCategory[] = [
       articleTags: ["robotic mower", "robotic mowers", "robot lawn mower", "robot lawn mowers", "robot mower", "robot mowers"],
       newsCategories: ["Robot Mowers", "Robotic Mowers", "Robotic Mowing", "Robotic Lawn Mowers", "Robotic Mowing & Outdoor Equipment"],
       newsTitleTerms: ["robot mower", "robotic mower", "robot lawn mower", "robotic lawn mower"],
-      productCategories: ["Robot mowers"]
+      productCategories: ["Robot mowers"],
+      brandSlugs: ["husqvarna", "worx", "gardena", "greenworks", "lawnmaster", "toro", "roborock", "pudu-robotics"]
     }
   },
   {

@@ -26,6 +26,9 @@ export function ArticleBrandLinks({
       <div>
         {linkedProfiles.map((profile) => (
           <Link href={`/brands/${profile.slug}`} key={profile.slug}>
+            <span className="article-brand-logo" aria-hidden="true">
+              <img src={profile.logoImage} alt="" loading="lazy" decoding="async" />
+            </span>
             {profile.name}
           </Link>
         ))}

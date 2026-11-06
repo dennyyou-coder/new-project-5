@@ -157,3 +157,9 @@
 .news-key-figures dd { display: flex; flex-direction: column; gap: 2px; margin: 8px 0 0; }
 .news-key-figures dd strong { font-size: 22px; font-weight: 800; line-height: 1.2; color: #0e1526; }
 .news-key-figures dd span { font-size: 13px; font-weight: 650; color: #2a3245; }
+
+/* Company logos in news lists and key-figure thumbs */
+.news-page .news-company-logo { display: inline-grid; place-items: center; width: 40px; height: 22px; background: #fff; border-radius: 4px; flex: none; }
+.news-page .news-company-logo img { max-width: 86%; max-height: 70%; object-fit: contain; }
+.news-key-thumb-logo { display: grid; place-items: center; width: 64px; height: 30px; margin-bottom: 6px; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
+.news-key-thumb-logo img { max-width: 82%; max-height: 64%; object-fit: contain; }

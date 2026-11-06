@@ -529,3 +529,43 @@
     display: none;
   }
 }
+
+/* Category icons and company logos */
+.hub-title-row,
+.hub-card-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hub-title-row h1,
+.hub-card-title h3 {
+  margin: 0;
+}
+.hub-card-title {
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.hub-page .hub-companies a {
+  gap: 10px;
+}
+.hub-company-logo {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 30px;
+  flex: none;
+  background: #fff;
+  border: 1px solid var(--hub-line);
+  border-radius: 6px;
+}
+.hub-company-logo img {
+  max-width: 82%;
+  max-height: 60%;
+  object-fit: contain;
+}
+@media (max-width: 560px) {
+  .hub-title-row .category-icon--lg {
+    width: 46px;
+    height: 46px;
+  }
+}

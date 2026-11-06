@@ -501,3 +501,139 @@
     padding: 18px;
   }
 }
+
+/* Company logos in the article header */
+.structure-refresh .article-reading-experience .article-brand-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.structure-refresh .article-reading-experience .article-brand-logo {
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 28px;
+  background: #fff;
+  border: 1px solid #d8e5f3;
+  border-radius: 6px;
+}
+.structure-refresh .article-reading-experience .article-brand-logo img {
+  max-width: 82%;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+/* Company at a glance (ownership guides) */
+.structure-refresh .article-reading-experience .article-company-card {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 28px;
+  padding: 20px 22px;
+  background: #f6faff;
+  border: 1px solid #d8e5f3;
+  border-left: 4px solid #2f6bff;
+  border-radius: 14px;
+}
+.structure-refresh .article-reading-experience .article-company-card__head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.structure-refresh .article-reading-experience .article-company-card__logo {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 52px;
+  flex: none;
+  background: #fff;
+  border: 1px solid #d8e5f3;
+  border-radius: 10px;
+}
+.structure-refresh .article-reading-experience .article-company-card__logo img {
+  max-width: 82%;
+  max-height: 62%;
+  object-fit: contain;
+  margin: 0;
+}
+.structure-refresh .article-reading-experience .article-company-card__eyebrow {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2f6bff;
+}
+.structure-refresh .article-reading-experience .article-company-card h2 {
+  margin: 2px 0 0;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.structure-refresh .article-reading-experience .article-company-card__answer {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #163b67;
+}
+.structure-refresh .article-reading-experience .article-company-card__facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+.structure-refresh .article-reading-experience .article-company-card__facts > div {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  column-gap: 10px;
+  align-content: start;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #d8e5f3;
+  border-radius: 10px;
+}
+.structure-refresh .article-reading-experience .article-company-card__icon {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #e6eeff;
+  color: #2f6bff;
+}
+.structure-refresh .article-reading-experience .article-company-card__icon .ui-icon {
+  width: 16px;
+  height: 16px;
+}
+.structure-refresh .article-reading-experience .article-company-card dt {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #52677d;
+}
+.structure-refresh .article-reading-experience .article-company-card dd {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #163b67;
+  overflow-wrap: anywhere;
+}
+.structure-refresh .article-reading-experience .article-company-card__link {
+  justify-self: start;
+  font-size: 14px;
+  font-weight: 800;
+  color: #245cc4;
+  text-decoration: none;
+}
+@media (max-width: 640px) {
+  .structure-refresh .article-reading-experience .article-company-card {
+    padding: 16px;
+  }
+  .structure-refresh .article-reading-experience .article-company-card__facts {
+    grid-template-columns: 1fr;
+  }
+}

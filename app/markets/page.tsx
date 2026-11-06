@@ -3,6 +3,7 @@ import Link from "next/link";
 import "../styles/markets.css";
 import { TallyButton } from "@/components/LeadForms";
 import { getMarketsData } from "@/lib/markets";
+import { figureDirection } from "@/lib/brandMarks";
 import { newsDate } from "@/lib/news";
 import { buildWebsiteMetadata } from "@/lib/seo";
 
@@ -81,13 +82,24 @@ export default function MarketsPage() {
                   {results.map((row) => (
                     <tr key={row.news.slug}>
                       <th scope="row">
-                        <Link href={`/news/${row.news.slug}`}>{row.companyName}</Link>
+                        <Link className="markets-company" href={`/news/${row.news.slug}`}>
+                          {row.company?.logoImage ? (
+                            <span className="markets-company-logo" aria-hidden="true">
+                              <img src={row.company.logoImage} alt="" loading="lazy" decoding="async" />
+                            </span>
+                          ) : null}
+                          <span>{row.companyName}</span>
+                        </Link>
                       </th>
                       <td>{row.hub?.name ?? "—"}</td>
                       <td>{row.figure?.period ?? "—"}</td>
                       <td className="markets-num">{row.figure?.value ?? "—"}</td>
                       <td className="markets-num">{row.figure?.usd ?? "—"}</td>
-                      <td className="markets-num">{row.figure?.change ?? "—"}</td>
+                      <td className="markets-num">
+                        {row.figure?.change ? (
+                          <span className={`figure-chip figure-chip--${figureDirection(row.figure.change)}`}>{row.figure.change}</span>
+                        ) : "—"}
+                      </td>
                       <td className="markets-summary">{row.news.excerpt}</td>
                       <td>
                         <time dateTime={row.news.eventDate}>{newsDate(row.news.eventDate)}</time>

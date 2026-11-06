@@ -35,9 +35,10 @@ export function NewsKeyFigures({ figures, usdRate }: { figures: NewsKeyFigure[];
 }
 
 /** Compact first figure, used in place of a borrowed thumbnail in lists. */
-export function NewsKeyFigureThumb({ company, figure }: { company?: string; figure: NewsKeyFigure }) {
+export function NewsKeyFigureThumb({ company, logo, figure }: { company?: string; logo?: string; figure: NewsKeyFigure }) {
   return (
     <span className="news-key-thumb" aria-hidden="true">
+      {logo ? <span className="news-key-thumb-logo"><img src={logo} alt="" loading="lazy" decoding="async" /></span> : null}
       <span className="news-key-thumb-label">{[company, figure.period].filter(Boolean).join(" · ") || figure.label}</span>
       <span className="news-key-thumb-value">{figure.change ?? figure.value}</span>
       <span className="news-key-thumb-label">{figure.change ? figure.label : ""}</span>

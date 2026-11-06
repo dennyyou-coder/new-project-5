@@ -9,6 +9,7 @@ import {
   getPublishedBrandProfiles,
 } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
+import { brandMonogram } from "@/lib/brandMarks";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -97,14 +98,19 @@ export default function BrandsPage() {
               {ownershipGroups.map((group) => (
                 <li key={group.key}>
                   <p className="company-owner-parent">
+                    <span className={`company-owner-mark${group.parentProfile ? "" : " company-owner-mark--monogram"}`} aria-hidden="true">
+                      {group.parentProfile ? <img src={group.parentProfile.logoImage} alt="" loading="lazy" decoding="async" /> : brandMonogram(group.parent)}
+                    </span>
                     {group.parentProfile ? <Link href={`/brands/${group.parentProfile.slug}`}>{group.parent}</Link> : group.parent}
                   </p>
                   <p className="company-owner-brands">
-                    {group.brands.map((brand, index) => (
-                      <span key={brand.slug}>
-                        {index > 0 ? ", " : null}
-                        <Link href={`/brands/${brand.slug}`}>{brand.name}</Link>
-                      </span>
+                    {group.brands.map((brand) => (
+                      <Link key={brand.slug} className="company-owner-brand" href={`/brands/${brand.slug}`}>
+                        <span className="company-owner-mark company-owner-mark--small" aria-hidden="true">
+                          <img src={brand.logoImage} alt="" loading="lazy" decoding="async" />
+                        </span>
+                        {brand.name}
+                      </Link>
                     ))}
                   </p>
                 </li>

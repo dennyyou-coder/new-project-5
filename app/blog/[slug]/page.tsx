@@ -9,6 +9,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArticleBrandLinks } from "@/components/ArticleBrandLinks";
+import { ArticleCompanyCard } from "@/components/ArticleCompanyCard";
 import { getNews, newsDate } from "@/lib/news";
 import { NewsImage, NewsImageCaption } from "@/components/news/NewsImage";
 import { ArticleShareActions } from "@/components/ArticleShareActions";
@@ -168,6 +169,10 @@ export default async function InsightDetailPage({ params }: Props) {
     ? seriesArticles[seriesIndex + 1]
     : undefined;
   const hasTakeaways = article.takeaways.length > 0;
+  // Ownership guides open with the company's profile card.
+  const glanceCompany = article.contentClass === "search" && article.guideType === "ownership"
+    ? publishedBrandProfiles.find((profile) => profile.slug === article.primaryBrands[0])
+    : undefined;
   const articleContent = removeLeadingArticleTitleAndCover(
     article.content,
     article.title,
@@ -278,6 +283,7 @@ export default async function InsightDetailPage({ params }: Props) {
       <section className="blog-article-section">
         <div className="blog-article-container">
           <article className="article-prose blog-article-main">
+            {glanceCompany ? <ArticleCompanyCard profile={glanceCompany} /> : null}
             {article.coverImage ? (
               <figure className="blog-article-cover">
                 <img {...responsiveImageProps(article.coverImage, "cover")} alt={article.coverAlt || article.title} />

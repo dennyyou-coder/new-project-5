@@ -6,6 +6,7 @@ import { HUB_CATEGORY_GROUPS } from "@/lib/hubCategories";
 import { getAllHubCategoryData } from "@/lib/hubCategoryContent";
 import { productSelectionYear } from "@/lib/products";
 import { buildWebsiteMetadata } from "@/lib/seo";
+import { CategoryIcon } from "@/components/ui/CategoryIcon";
 
 const siteUrl = "https://worldcleanbiz.com";
 
@@ -71,7 +72,10 @@ export default function CategoriesPage() {
                 ].filter(Boolean);
                 return (
                   <article key={data.hub.slug} className="hub-card" style={{ "--hub-color": data.hub.color } as CSSProperties}>
-                    <h3><Link href={`/categories/${data.hub.slug}`}>{data.hub.name}</Link></h3>
+                    <div className="hub-card-title">
+                      <CategoryIcon slug={data.hub.slug} color={data.hub.color} />
+                      <h3><Link href={`/categories/${data.hub.slug}`}>{data.hub.name}</Link></h3>
+                    </div>
                     <p className="hub-card-intro">{data.hub.intro}</p>
                     {counts.length ? <p className="hub-card-counts">{counts.join(" · ")}</p> : null}
                     {latest ? (

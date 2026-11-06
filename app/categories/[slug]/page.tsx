@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { CSSProperties } from "react";
 import "../../styles/categories.css";
 import { TallyButton } from "@/components/LeadForms";
+import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getHubCategory, HUB_CATEGORIES, HUB_CATEGORY_GROUPS } from "@/lib/hubCategories";
 import { getHubCategoryData, type HubFeedItem } from "@/lib/hubCategoryContent";
@@ -108,7 +109,10 @@ export default async function CategoryHubPage({ params }: Props) {
           <div className="hub-hero-row">
             <div className="hub-hero-copy">
               <p className="hub-eyebrow"><span className="hub-dot" aria-hidden="true" />{groupLabel}</p>
-              <h1>{hub.name}</h1>
+              <div className="hub-title-row">
+                <CategoryIcon slug={hub.slug} color={hub.color} size="lg" />
+                <h1>{hub.name}</h1>
+              </div>
               <p className="hub-intro">{hub.intro}</p>
             </div>
             <TallyButton className="hub-follow" ctaLocation={`category_hub_follow_${hub.slug}`} form="newsletter">
@@ -198,7 +202,12 @@ export default async function CategoryHubPage({ params }: Props) {
               <h2 id="hub-companies-heading">Key companies</h2>
               <div className="hub-companies">
                 {companies.map((brand) => (
-                  <Link key={brand.slug} href={`/brands/${brand.slug}`}>{brand.name}</Link>
+                  <Link key={brand.slug} href={`/brands/${brand.slug}`}>
+                    <span className="hub-company-logo" aria-hidden="true">
+                      <img src={brand.logoImage} alt="" loading="lazy" decoding="async" />
+                    </span>
+                    <span>{brand.name}</span>
+                  </Link>
                 ))}
               </div>
               {data.companies.length > companies.length ? (
