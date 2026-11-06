@@ -56,6 +56,7 @@ export function buildHubCategoryData(
   const companies = source.brands.filter(
     (brand) =>
       productBrandSlugs.has(brand.slug) ||
+      Boolean(hub.rules.brandSlugs?.includes(brand.slug)) ||
       hubCategoriesForBrand(getBrandCategoriesForProfile(brand.slug).map((category) => category.slug)).includes(hub.slug)
   );
 

@@ -115,3 +115,12 @@ test("search picks belong to their hub and lead Essential reading or Guides", as
     assert.ok(rest.every((guide, index) => index === 0 || rest[index - 1].guidePriority >= guide.guidePriority), `${data.hub.slug} other guides by priority`);
   }
 });
+
+test("robotic mowers list the Automower, Landroid and other mower makers without product models", async () => {
+  const { getAllHubCategoryData } = await import("../lib/hubCategoryContent.ts");
+  const mowers = getAllHubCategoryData().find((data) => data.hub.slug === "robotic-mowers");
+  const slugs = mowers.companies.map((brand) => brand.slug);
+  for (const slug of ["husqvarna", "worx", "segway-navimow", "mammotion"]) assert.ok(slugs.includes(slug), slug);
+  const published = new Set((await import("../lib/brands.ts")).getPublishedBrandProfiles((await import("../lib/content.ts")).getInsights()).map((p) => p.slug));
+  for (const hub of HUB_CATEGORIES) for (const slug of hub.rules.brandSlugs ?? []) assert.ok(published.has(slug), `${hub.slug}: ${slug} is a published profile`);
+});

@@ -69,3 +69,17 @@ test("brand profiles answer ownership first", async () => {
   const order = ["company-ownership", "product-portfolio", "manufacturing-channels", "competitive-position"].map((id) => sections.indexOf(`id="${id}"`));
   assert.deepEqual([...order].sort((a, b) => a - b), order, "ownership leads the profile sections");
 });
+
+test("landing pages carry company logos, the ownership card and guide ordering", () => {
+  const article = read("app/blog/[slug]/page.tsx");
+  assert.match(article, /article\.guideType === "ownership"/);
+  assert.match(article, /\{glanceCompany \? <ArticleCompanyCard profile=\{glanceCompany\} \/> : null\}/);
+  assert.match(read("components/ArticleCompanyCard.tsx"), /buildBrandQuickAnswer\(profile\)/);
+  assert.match(read("components/ArticleBrandLinks.tsx"), /className="article-brand-logo"/);
+  assert.match(read("app/categories/[slug]/page.tsx"), /<CategoryIcon slug=\{hub\.slug\} color=\{hub\.color\} size="lg" \/>/);
+  assert.match(read("app/categories/page.tsx"), /<CategoryIcon slug=\{data\.hub\.slug\}/);
+  assert.match(read("app/markets/page.tsx"), /figure-chip figure-chip--\$\{figureDirection\(row\.figure\.change\)\}/);
+  assert.match(read("app/brands/page.tsx"), /brandMonogram\(group\.parent\)/);
+  const guides = read("app/guides/page.tsx");
+  assert.match(guides, /const guideTypeOrder = \["ownership", "comparison", "buying", "explainer", "sourcing", "maintenance"\]/);
+});

@@ -61,7 +61,16 @@ export async function generateMetadata({
 export default async function GuidesPage({ searchParams }: PageProps) {
   const resolvedSearchParams = searchParams ? await searchParams : {};
   const allArticles = getInsights();
-  const guides = getGuideInsights(allArticles).map(toDirectoryArticle);
+  // Lead with the guide types readers search for most (ownership, comparisons);
+  // newest first within each type.
+  const guideTypeOrder = ["ownership", "comparison", "buying", "explainer", "sourcing", "maintenance"];
+  const typeRank = (type?: string) => {
+    const rank = guideTypeOrder.indexOf(type ?? "");
+    return rank === -1 ? guideTypeOrder.length : rank;
+  };
+  const guides = [...getGuideInsights(allArticles)]
+    .sort((a, b) => typeRank(a.guideType) - typeRank(b.guideType))
+    .map(toDirectoryArticle);
   const {
     items: visibleGuides,
     currentPage,
