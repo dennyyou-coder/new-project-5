@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
 import { BrandCategoryPage } from "@/components/brands/BrandCategoryPage";
 import { BrandHero } from "@/components/brands/BrandHero";
+import { BrandFinancials } from "@/components/brands/BrandFinancials";
 import { BrandFactRail } from "@/components/brands/BrandFactRail";
 import { BrandSections, type BrandCompetitorCard, type BrandModelCard } from "@/components/brands/BrandSections";
 import { BrandSources } from "@/components/brands/BrandSources";
@@ -165,6 +166,7 @@ export default async function BrandPage({ params }: PageProps) {
             competitors={competitors}
             ownershipAnalysisHref={ownershipAnalysis ? `/blog/${ownershipAnalysis.slug}` : undefined}
           />
+          <BrandFinancials brand={profile.slug} />
           <BrandTimeline profile={profile} />
           <BrandArticles
             brandName={profile.name}
