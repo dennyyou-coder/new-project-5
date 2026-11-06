@@ -28,7 +28,7 @@ export function isResultsNews(article: NewsArticle) {
   return article.keyFigures.length > 0 || article.category === "Financial Results";
 }
 
-function hubForCompany(slug: string | undefined): HubCategorySlug | undefined {
+export function hubForCompany(slug: string | undefined): HubCategorySlug | undefined {
   if (!slug) return undefined;
   const votes = new Map<HubCategorySlug, number>();
   for (const hub of hubCategoriesForBrand(getBrandCategoriesForProfile(slug).map((category) => category.slug))) {
@@ -64,9 +64,9 @@ export function getMarketsData() {
   });
 
   const deals = news.filter((article) => !isResultsNews(article) && DEAL_PATTERN.test(article.title)).slice(0, 8);
-  // Other results stories (without key figures yet), newest first.
+  // All results stories, newest first: the table above holds the figures, this list holds the reporting.
   const coverage = news
-    .filter((article) => !isResultsNews(article) && /\b(revenue|results|profit|sales|earnings)\b/i.test(article.title))
-    .slice(0, 8);
+    .filter((article) => isResultsNews(article) || /\b(revenue|results|profit|sales|earnings)\b/i.test(article.title))
+    .slice(0, 10);
   return { results, deals, coverage };
 }

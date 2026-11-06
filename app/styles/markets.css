@@ -68,3 +68,8 @@
 
 /* Logo tiles are sized by area inline; keep any logo inside its box. */
 .markets-company-logo img { object-fit: contain; }
+
+/* Financials tracker cells: a small label above each amount, release links stacked. */
+.markets-table .markets-num small { display: block; margin-bottom: 2px; font-size: 11px; font-weight: 600; color: #5a6378; white-space: normal; }
+.markets-table .markets-report { display: grid; gap: 3px; font-size: 13px; white-space: nowrap; }
+.markets-table .markets-report a { font-weight: 600; }
