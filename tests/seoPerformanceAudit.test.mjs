@@ -107,7 +107,7 @@ test("the legacy Laifen insight URL redirects to the published article", async (
 
 test("markdown body images are lazy, asynchronous, and dimensionally stable", () => {
   const html = markdownToHtml(
-    "![Factory production line](/images/insights/roborock-at-the-crossroads-image-003.jpg \"Production line\")"
+    "![Factory production line](/images/articles/roborock-at-a-crossroads/04-roborock-at-the-crossroads-image-003.webp \"Production line\")"
   );
 
   assert.match(html, /loading="lazy"/);
