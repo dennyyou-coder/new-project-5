@@ -14,6 +14,24 @@
   "metaTitle": "Who Owns AEG? Electrolux Ownership and German Heritage",
   "metaDescription": "AB Electrolux owns AEG: it bought AEG Hausgeräte in 1994 and the AEG trademark in 2004. See AEG's German heritage, products and who makes them.",
   "quickAnswer": "AB Electrolux, the Swedish appliance group, owns AEG. It bought AEG Hausgeräte in 1994 and the AEG trademark, previously used under licence, in 2004.",
+  "faq": [
+    {
+      "question": "Who owns AEG?",
+      "answer": "AB Electrolux, the Swedish listed appliance group. It acquired AEG Hausgeräte in 1994 and in June 2004 bought the AEG trademark rights, which it had used under licence, from DaimlerChrysler's EHG Elektroholding."
+    },
+    {
+      "question": "Is AEG a German brand?",
+      "answer": "AEG is a German-origin brand with roots in 1883. Today it is a brand inside the Swedish Electrolux group, not an independent German appliance company."
+    },
+    {
+      "question": "Who makes AEG appliances?",
+      "answer": "The Electrolux Group. It reports an EMEA and APAC production network spanning Germany, Poland, Italy, Hungary, Romania, Ukraine, Egypt, Thailand, China and Australia, but does not assign every AEG model to one factory. The product label shows the origin of a specific unit."
+    },
+    {
+      "question": "Are AEG and Electrolux the same?",
+      "answer": "They belong to the same group and can share technology, procurement and manufacturing, but they are sold as separate brands. Compare the exact model specifications rather than assuming two products are identical."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with AEG or Electrolux. Brand ownership, regional operation, licensing, manufacturing and warranty responsibility are separate layers.",
   "headquarters": "Stockholm, Sweden at parent-group level",
   "founded": "1883 brand heritage; AEG Hausgeräte became wholly owned by Electrolux in 1994",
@@ -187,5 +205,5 @@
   ],
   "publishedAt": "2026-07-31T19:00:00+08:00",
   "lastVerified": "2026-11-05",
-  "lastModified": "2026-11-05T12:00:00+08:00"
+  "lastModified": "2026-11-07T12:00:00+08:00"
 }

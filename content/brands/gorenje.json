@@ -11,6 +11,24 @@
   "metaTitle": "Gorenje Brand: Slovenian Origin, Now Owned by Hisense",
   "metaDescription": "Gorenje, a Slovenian brand dating to 1950 and based in Velenje, joined Hisense Group in 2018 alongside ASKO. See who makes Gorenje appliances and where.",
   "quickAnswer": "Gorenje, a Slovenian appliance brand, has been part of China's Hisense Group since 2018.",
+  "faq": [
+    {
+      "question": "Who owns Gorenje?",
+      "answer": "Hisense Group, since 2018. Hisense Europe names Gorenje as one of its three global brands, alongside Hisense and ASKO."
+    },
+    {
+      "question": "What country is Gorenje from?",
+      "answer": "Slovenia. The brand dates to 1950, and its operating base is in Velenje."
+    },
+    {
+      "question": "Is Gorenje a Chinese brand?",
+      "answer": "Gorenje is a Slovenian brand that has been owned by China's Hisense Group since 2018."
+    },
+    {
+      "question": "Who makes Gorenje appliances?",
+      "answer": "Hisense Europe. It runs large European production centres in Velenje, Valjevo and Mariánské Údolí, with the main Gorenje complex in Velenje. It does not assign every Gorenje model to one site, so check the label for a specific product."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Gorenje, Hisense Europe or Hisense Group. Group and factory disclosures do not establish the manufacturer, plant, origin, seller, importer or warrantor for every Gorenje SKU.",
   "headquarters": "Velenje, Slovenia (Gorenje operating base)",
   "founded": "1950",
@@ -121,5 +139,5 @@
   ],
   "publishedAt": "2026-08-07T11:16:50+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-11-05T12:00:00+08:00"
+  "lastModified": "2026-11-07T12:00:00+08:00"
 }

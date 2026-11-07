@@ -1095,3 +1095,20 @@ test("brand and article routes rely on the root layout main landmark", () => {
     "app/blog/[slug]/page.tsx"
   ].forEach((route) => assert.doesNotMatch(read(route), /<main\b/));
 });
+
+test("profiles with common questions render them and add a matching FAQPage schema", () => {
+  const faq = [{ question: "Who owns Sample Brand?", answer: "Sample Group owns it." }];
+  const schemas = buildBrandPageSchemas({
+    profile: { ...profile, faq },
+    primaryArticles: [],
+    relatedArticles: []
+  }, "https://worldcleanbiz.com");
+  const faqSchema = schemas.find((schema) => schema["@type"] === "FAQPage");
+  assert.deepEqual(faqSchema.mainEntity, [{
+    "@type": "Question",
+    name: "Who owns Sample Brand?",
+    acceptedAnswer: { "@type": "Answer", text: "Sample Group owns it." }
+  }]);
+  const page = fs.readFileSync(path.join(process.cwd(), "app/brands/[slug]/page.tsx"), "utf8");
+  assert.match(page, /<BrandFaq profile=\{profile\} \/>/);
+});

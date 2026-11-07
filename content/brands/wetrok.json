@@ -11,6 +11,24 @@
   "description": "A source-backed profile of Wetrok AG, its Diethelm Keller Group ownership, Swiss professional-cleaning portfolio, international channel model and procurement checks.",
   "metaDescription": "Wetrok profile: Diethelm Keller ownership, Swiss cleaning machines and chemicals, international channels, manufacturing scope and buyer checks.",
   "quickAnswer": "Wetrok has belonged to Switzerland's family-owned Diethelm Keller Group since 1955.",
+  "faq": [
+    {
+      "question": "Who owns Wetrok?",
+      "answer": "Diethelm Keller Group, a family-owned Swiss group. Wetrok has been part of it since 1955."
+    },
+    {
+      "question": "Where is Wetrok based?",
+      "answer": "Kloten, near Zurich, Switzerland. The company was founded in 1948, and its operating company is Wetrok AG."
+    },
+    {
+      "question": "What does Wetrok make?",
+      "answer": "Professional cleaning machines, including scrubber-driers, sweepers, single-disc machines, wet and dry vacuums and cleaning robots, plus cleaning and disinfection chemicals, tools, carts and training."
+    },
+    {
+      "question": "Where are Wetrok machines made?",
+      "answer": "Diethelm Keller Group states that Wetrok's research, development and production are based in Switzerland. Ask for the exact product's production site and country of origin, as the statement does not cover every component."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Wetrok or Diethelm Keller Group. Group and company statements do not establish the manufacturer, origin, importer, seller or warranty provider for every Wetrok SKU in every market.",
   "headquarters": "Kloten, Zurich, Switzerland",
   "founded": "1948; part of Diethelm Keller Group since 1955",
@@ -166,5 +184,5 @@
   ],
   "publishedAt": "2026-08-08T08:35:00+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-08-08T08:35:00+08:00"
+  "lastModified": "2026-11-07T12:00:00+08:00"
 }

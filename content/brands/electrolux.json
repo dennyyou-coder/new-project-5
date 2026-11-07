@@ -11,6 +11,28 @@
   "metaTitle":"Who Owns Electrolux? Listed Swedish Group and Its Brands",
   "metaDescription":"AB Electrolux is a Stockholm-based company listed on Nasdaq Stockholm. Its leading appliance brands are Electrolux, AEG and Frigidaire. See who makes what.",
   "quickAnswer":"Electrolux is owned by the shareholders of AB Electrolux, listed on Nasdaq Stockholm. Investor AB is the largest, with 30.4% of the votes at the end of 2025.",
+  "faq": [
+    {
+      "question": "Who owns Electrolux?",
+      "answer": "Electrolux is owned by the shareholders of AB Electrolux (publ), which is listed on Nasdaq Stockholm and is the group's parent company. Investor AB was the largest shareholder at the end of 2025, with 17.9% of share capital and 30.4% of voting rights."
+    },
+    {
+      "question": "What country is Electrolux from?",
+      "answer": "Sweden. AB Electrolux is headquartered in Stockholm, and the company dates from 1919."
+    },
+    {
+      "question": "Who makes Electrolux appliances?",
+      "answer": "The Electrolux Group makes them through AB Electrolux and its subsidiaries worldwide. Its reporting does not assign one factory to every appliance, so check the model's rating label and declaration for the manufacturer and country of origin."
+    },
+    {
+      "question": "What brands does Electrolux own?",
+      "answer": "The group names Electrolux, AEG and Frigidaire as its leading appliance brands. Which brand is sold, and by which company, varies by market."
+    },
+    {
+      "question": "Does Electrolux own AEG?",
+      "answer": "Yes. Electrolux bought AEG Hausgeräte in 1994 and the AEG trademark rights in 2004."
+    }
+  ],
   "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with Electrolux Group, AEG, Frigidaire or their subsidiaries. Brand, legal-entity and SKU-level evidence are kept separate.",
   "headquarters":"Stockholm, Sweden",
   "founded":"1919",
@@ -72,5 +94,5 @@
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-11-05",
-  "lastModified":"2026-11-05T22:00:00+08:00"
+  "lastModified": "2026-11-07T12:00:00+08:00"
 }

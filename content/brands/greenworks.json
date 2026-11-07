@@ -10,6 +10,28 @@
   "description": "Greenworks is part of the Globe business built around Shenzhen-listed Greenworks (Jiangsu) Co., Ltd. Founder Yin Chen controls the company; STIHL-owned ZAMA is a minority shareholder. Its cordless tools, pressure washers and AiMowbot mowers reach customers through regional stores, dealers and retail partners.",
   "metaDescription": "Greenworks company profile: Globe ownership, STIHL minority investment, international operations, regional sales entities and AiMowbot robotic mowers.",
   "quickAnswer": "Greenworks is listed in Shenzhen and controlled by founder Yin Chen, who held 57.09% in June 2026. A STIHL subsidiary holds a minority stake.",
+  "faq": [
+    {
+      "question": "Who owns Greenworks?",
+      "answer": "Greenworks (Jiangsu) Co., Ltd. is listed on Shenzhen's ChiNext market (301260) and controlled by founder Yin Chen, who held 57.09% on 30 June 2026. ZAMA Corporation, a STIHL subsidiary, held 18.77%."
+    },
+    {
+      "question": "Is Greenworks owned by STIHL?",
+      "answer": "No. STIHL holds a minority stake through its subsidiary ZAMA, but it is not Greenworks' parent company."
+    },
+    {
+      "question": "Which countries does Greenworks operate in?",
+      "answer": "Official regional websites document operations in the United States, Canada, the United Kingdom and continental Europe, run by local entities such as Greenworks North America, Greenworks Tools Canada and Greenworks Tools Europe GmbH in Germany. Greenworks does not publish a verified count of every country it sells in."
+    },
+    {
+      "question": "Where are Greenworks tools made?",
+      "answer": "Greenworks reports production and supply-chain capacity in China, Vietnam and the United States, with key components concentrated in China and Vietnam."
+    },
+    {
+      "question": "What country is Greenworks from?",
+      "answer": "China. The company is headquartered in Changzhou, Jiangsu; the Greenworks brand was created in 2009."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Greenworks, Globe Tools or STIHL. Share ownership, brand ownership, importing, manufacturing and warranty responsibilities are identified separately.",
   "headquarters": "Changzhou, Jiangsu, China",
   "founded": "2002 group roots; Greenworks brand created in 2009",
@@ -207,6 +229,6 @@
   ],
   "publishedAt": "2026-07-31T19:10:00+08:00",
   "lastVerified": "2026-09-12",
-  "lastModified": "2026-09-12T16:30:26+08:00",
+  "lastModified": "2026-11-07T12:00:00+08:00",
   "metaTitle": "Greenworks Global Presence, Ownership and Operations"
 }
