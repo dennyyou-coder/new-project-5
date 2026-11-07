@@ -4094,6 +4094,24 @@
         "outputHash": "sha256:dd641a7835654bf6c4828c4ce03f958ef93f9bff051a366ea5a1ff8c038fe2b7"
       }
     },
+    "/images/articles/dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 29668,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:49aed41a27b5bd9d8a0385d3d0c4a9e85908ce567b73fdcd7a1ade7edc6bd2ff",
+      "outputHash": "sha256:26b74a117f28b24f61748fc7f88e10163511537d560feec2acea611aa3196fe7",
+      "mobile": {
+        "src": "/images/articles/dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 10028,
+        "outputHash": "sha256:95aebe37098bcbe4e3ea7b1c90bb5b49f0f151feb95670a08c8fd5de53b1ac31"
+      }
+    },
     "/images/articles/dreame-x60-ultra/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -6472,6 +6490,24 @@
         "height": 450,
         "bytes": 52176,
         "outputHash": "sha256:584a7c184b2ce8d6f9846812fb1957774cb62753342d14a0992d9e9da2148e54"
+      }
+    },
+    "/images/articles/husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44208,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8f026c8e60be998afb36bfcac5be2f71a80c034954301e6ebd46f4ffec4cd440",
+      "outputHash": "sha256:59074ca322066e92cb3dcc9e7b0dbc4e36d565e0e5da009f9a49af1106bb66d8",
+      "mobile": {
+        "src": "/images/articles/husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17376,
+        "outputHash": "sha256:3b031c09d10eabc7acdd6ec7eedbe5abf48705fbf07cb262f74a0174efa0b40b"
       }
     },
     "/images/articles/husqvarna-automower-312v/01-cover.webp": {
@@ -9130,6 +9166,24 @@
         "outputHash": "sha256:624ed8dabb96c60357c9979f80ce19c80f163538b2c22c2200db2373ea77225b"
       }
     },
+    "/images/articles/narwal-flow-2-vs-roborock-qrevo-curv-2-flow/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31026,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:91b9edc7418856827fd8f0b15b65c8b5978c3fcaa079ddc02b87eb9508807790",
+      "outputHash": "sha256:c251bbee3326c804871a3d67c45181c0221ee310aeeb7c43ea4f2f6449ab92fc",
+      "mobile": {
+        "src": "/images/articles/narwal-flow-2-vs-roborock-qrevo-curv-2-flow/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 10526,
+        "outputHash": "sha256:17d96220ae4d40e7947ba0295435c5c2dceefbf07017e420479bf33b3e5024d3"
+      }
+    },
     "/images/articles/narwal-flow-2/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -10143,6 +10197,24 @@
       "quality": 90,
       "sourceHash": "sha256:80778f6e3d466cb70ccb054868cf9bb3996fee78b4e25b130831fbee77f8d3ea",
       "outputHash": "sha256:5904fc7834794df9cdaacafa2f2b1aa494c9192a84c8106b4b479d3074cdcef0"
+    },
+    "/images/articles/roborock-saros-20-vs-dreame-x60-ultra/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 24870,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:58c498cfd97eed8e8104b35033d2d007d09e6b77c0aff69c3b4d4f9095821693",
+      "outputHash": "sha256:c002aa619fbd79f5014200bcf3a737a01a026554524fbd43c74ca746f1ea7589",
+      "mobile": {
+        "src": "/images/articles/roborock-saros-20-vs-dreame-x60-ultra/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 8528,
+        "outputHash": "sha256:cfe0850115eb4547ba393065ddd8ed0c70d8b07cebb50843301d8399f8ff2f37"
+      }
     },
     "/images/articles/roborock-saros-20/01-cover.webp": {
       "role": "cover",
@@ -12569,6 +12641,24 @@
         "height": 800,
         "bytes": 53408,
         "outputHash": "sha256:a7b92ee4f193c914fadac6cc0bf4a8d527dc2b847ecae76ac3c407141e55a7db"
+      }
+    },
+    "/images/articles/tineco-floor-one-s9-master-vs-roborock-f25-ace-pro/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 27288,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:aaf1c449533755fd55395f17f6301f545de771d37c98906f3f80793a5c25baa3",
+      "outputHash": "sha256:8997b58319785a0129784abef0921358ef7828de9b01414dd0fea5900eaeeb35",
+      "mobile": {
+        "src": "/images/articles/tineco-floor-one-s9-master-vs-roborock-f25-ace-pro/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 10036,
+        "outputHash": "sha256:33212e61cb9c4e126a4ccdb546de9f9f2792c2fbd3ac6d32448c6aac881a695c"
       }
     },
     "/images/articles/tineco-floor-one-s9-master/01-cover.webp": {
@@ -40124,6 +40214,11 @@
         "/images/articles/dreame-x60-ultra/02-dock-water-path.webp"
       ]
     },
+    "dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone/01-cover.webp",
+      "body": []
+    },
     "dreame-z30-pro-aqua-a": {
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-z30-pro-aqua-a/01-cover.webp",
@@ -41110,6 +41205,11 @@
       "cover": "/images/articles/husqvarna-automower-312v/01-cover.webp",
       "body": []
     },
+    "husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd/01-cover.webp",
+      "body": []
+    },
     "husqvarna-automower-vs-mammotion-luba": {
       "budgetClass": "standard",
       "cover": "/images/blog/automower-vs-luba-platform-decision-map.webp",
@@ -41775,6 +41875,11 @@
       "cover": "/images/articles/narwal-flow-2/01-cover.webp",
       "body": []
     },
+    "narwal-flow-2-vs-roborock-qrevo-curv-2-flow": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/narwal-flow-2-vs-roborock-qrevo-curv-2-flow/01-cover.webp",
+      "body": []
+    },
     "narwal-freo-20": {
       "budgetClass": "standard",
       "cover": "/images/articles/narwal-freo-20/01-cover.webp",
@@ -42192,6 +42297,11 @@
     "roborock-saros-20-sonic": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-saros-20-sonic/01-cover.webp",
+      "body": []
+    },
+    "roborock-saros-20-vs-dreame-x60-ultra": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-saros-20-vs-dreame-x60-ultra/01-cover.webp",
       "body": []
     },
     "roborock-targets-70-billion-rmb-by-2029": {
@@ -43075,6 +43185,11 @@
       "body": [
         "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp"
       ]
+    },
+    "tineco-floor-one-s9-master-vs-roborock-f25-ace-pro": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tineco-floor-one-s9-master-vs-roborock-f25-ace-pro/01-cover.webp",
+      "body": []
     },
     "tineco-floor-one-station-s9-scientist-pro": {
       "budgetClass": "standard",
@@ -45475,6 +45590,15 @@
         }
       }
     },
+    "dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone/01-cover.webp",
+          "hash": "sha256:49aed41a27b5bd9d8a0385d3d0c4a9e85908ce567b73fdcd7a1ade7edc6bd2ff"
+        }
+      }
+    },
     "dreame-z30-pro-aqua-a": {
       "files": {
         "01-cover.jpg": {
@@ -46346,6 +46470,15 @@
         }
       }
     },
+    "husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd/01-cover.webp",
+          "hash": "sha256:8f026c8e60be998afb36bfcac5be2f71a80c034954301e6ebd46f4ffec4cd440"
+        }
+      }
+    },
     "husqvarna-fcc-exemption-robotic-mowers": {
       "files": {
         "01-cover.webp": {
@@ -47200,6 +47333,15 @@
         }
       }
     },
+    "narwal-flow-2-vs-roborock-qrevo-curv-2-flow": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/narwal-flow-2-vs-roborock-qrevo-curv-2-flow/01-cover.webp",
+          "hash": "sha256:91b9edc7418856827fd8f0b15b65c8b5978c3fcaa079ddc02b87eb9508807790"
+        }
+      }
+    },
     "narwal-freo-20": {
       "files": {
         "01-cover.png": {
@@ -47568,6 +47710,15 @@
           "status": "matched",
           "primary": "/images/articles/roborock-saros-20-sonic/01-cover.webp",
           "hash": "sha256:80778f6e3d466cb70ccb054868cf9bb3996fee78b4e25b130831fbee77f8d3ea"
+        }
+      }
+    },
+    "roborock-saros-20-vs-dreame-x60-ultra": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-saros-20-vs-dreame-x60-ultra/01-cover.webp",
+          "hash": "sha256:58c498cfd97eed8e8104b35033d2d007d09e6b77c0aff69c3b4d4f9095821693"
         }
       }
     },
@@ -48316,6 +48467,15 @@
           "status": "matched",
           "primary": "/images/articles/tineco-floor-one-s9-master/02-controls-and-modes.webp",
           "hash": "sha256:b9f3d9be4c9cd53810472b99aa07f213a8bb9e5858bce97494fb059821d3668e"
+        }
+      }
+    },
+    "tineco-floor-one-s9-master-vs-roborock-f25-ace-pro": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tineco-floor-one-s9-master-vs-roborock-f25-ace-pro/01-cover.webp",
+          "hash": "sha256:aaf1c449533755fd55395f17f6301f545de771d37c98906f3f80793a5c25baa3"
         }
       }
     },
