@@ -18,7 +18,7 @@ import { getInsights } from "@/lib/content";
 import { getHubCategory, HUB_CATEGORIES, hubCategoriesForNews, productCategoryLabel, type HubCategorySlug } from "@/lib/hubCategories";
 import { getAllHubCategoryData } from "@/lib/hubCategoryContent";
 import { getEditorialInsights, getLatestSeriesInsight } from "@/lib/insightCollections";
-import { getNews, newsDate, newsTopicLabel } from "@/lib/news";
+import { getNews, getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel } from "@/lib/news";
 import { EXPO_2026, isExpoUpcoming } from "@/lib/hubPresentation";
 import { homeVideos } from "@/lib/wcbVideos";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
@@ -128,7 +128,20 @@ export default function HomePage() {
 
   // Company results sit with Companies; every story, results and policy included, is in the one news list.
   const results = news.filter((item) => item.category === "Financial Results" || resultsPattern.test(item.title)).slice(0, 4);
-  const weekNews = news.slice(0, 8);
+  // This week's news: one lead story with a picture, then a list. The picture is the story's own photo,
+  // else an official image of the company it names (credited below), else the story's product shot.
+  // Another article's cover or a generic industry picture never leads.
+  const recent = news.slice(0, 10);
+  const leadTiers: ((visual: NonNullable<ReturnType<typeof getNewsVisual>>) => boolean)[] = [
+    (visual) => !isBorrowedNewsVisual(visual) && visual.fit !== "contain",
+    (visual) => visual.label === "Company image",
+    (visual) => !isBorrowedNewsVisual(visual)
+  ];
+  const leadNews = leadTiers
+    .map((tier) => recent.find((item) => { const visual = getNewsVisual(item); return visual ? tier(visual) : false; }))
+    .find(Boolean);
+  const leadVisual = leadNews ? getNewsVisual(leadNews) : undefined;
+  const weekNews = recent.filter((item) => item.slug !== leadNews?.slug).slice(0, 6);
 
   const searchEntries: HomeSearchEntry[] = [
     ...HUB_CATEGORIES.map((hub) => ({ label: hub.name, kind: "Category", href: `/categories/${hub.slug}`, terms: hub.name.toLowerCase() })),
@@ -217,7 +230,25 @@ export default function HomePage() {
             <h2 id="home-feed-title">Across the industry this week</h2>
             <Link className="wcb-more" href="/news">All news</Link>
           </div>
-          <ul className="home-b-stream home-b-stream--wide">
+          <div className={leadNews ? "home-b-feed" : undefined}>
+            {leadNews && leadVisual ? (
+              <article className="home-b-lead-story">
+                <Link className={`home-b-lead-image${leadVisual.fit === "contain" ? " home-b-lead-image--contain" : ""}`} href={`/news/${leadNews.slug}`} tabIndex={-1} aria-hidden="true">
+                  <img src={leadVisual.src} alt="" loading="eager" decoding="async" style={leadVisual.position ? { objectPosition: leadVisual.position } : undefined} />
+                </Link>
+                {/* Credit outside the story itself; a company image is marked as a file photo, not a picture of this event. */}
+                <p className="home-b-lead-credit">
+                  {[leadVisual.label === "Company image" ? "File photo" : null, leadVisual.sourceLabel ? `Photo: ${leadVisual.sourceLabel}` : null].filter(Boolean).join(" · ")}
+                  {leadVisual.license ? <> · <a href={leadVisual.license.url} rel="noopener noreferrer">{leadVisual.license.label}</a></> : null}
+                </p>
+                <p className="home-b-meta">
+                  {newsTopicLabel(leadNews.topic)} · <HubDot slugs={hubCategoriesForNews(leadNews)} /> <time dateTime={leadNews.eventDate}>{newsDate(leadNews.eventDate)}</time>
+                </p>
+                <h3><Link href={`/news/${leadNews.slug}`}>{leadNews.title}</Link></h3>
+                {leadNews.excerpt ? <p className="home-b-excerpt">{leadNews.excerpt}</p> : null}
+              </article>
+            ) : null}
+          <ul className={`home-b-stream${leadNews ? "" : " home-b-stream--wide"}`}>
             {weekNews.map((item) => (
               <li key={item.slug}>
                 <span className="home-b-type">
@@ -236,6 +267,7 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+          </div>
         </div>
       </section>
 

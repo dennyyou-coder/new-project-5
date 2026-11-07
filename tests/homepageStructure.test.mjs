@@ -49,11 +49,18 @@ test("home order: WCB Expo, intro and search, news, From Denny, categories, prod
   assert.match(home, /"@type": "WebSite"/);
 });
 
-test("home uses company logos, category icons and one news list", () => {
+test("home uses company logos, category icons and one news block: a lead story and a list", () => {
   assert.match(home, /<CompanyMark mark=\{marks\.get\(brand\.slug\)!\} size="md" \/>/);
   assert.match(home, /<CategoryIcon slug=\{data\.hub\.slug\} color=\{data\.hub\.color\} \/>/);
   assert.match(home, /<FigureChip label=\{figure\.label\} change=\{figure\.change\} \/>/);
-  assert.match(home, /const weekNews = news\.slice\(0, 8\)/);
-  assert.equal((home.match(/className="home-b-stream[ "]/g) || []).length, 1, "one news list");
+  // The lead is a news story with its own picture; the list skips it, so each story appears once.
+  assert.match(home, /const leadNews = leadTiers/);
+  // A related article's cover or a generic industry picture never leads; an official company image is credited.
+  assert.match(home, /visual\.label === "Company image"/);
+  assert.match(home, /className="home-b-lead-credit"/);
+  assert.match(home, /leadVisual\.label === "Company image" \? "File photo"/);
+  assert.match(home, /const weekNews = recent\.filter\(\(item\) => item\.slug !== leadNews\?\.slug\)/);
+  assert.match(home, /href=\{`\/news\/\$\{leadNews\.slug\}`\}/);
+  assert.equal((home.match(/className=\{?[`"]home-b-stream[$ "`]/g) || []).length, 1, "one news list");
   assert.doesNotMatch(home, /home-b-category-latest/);
 });

@@ -935,3 +935,9 @@
   .home-b .home-b-denny { grid-template-columns: 1fr; }
   .home-b .home-b-expo-copy .home-b-feature-actions > * { flex: 1 1 100%; }
 }
+.home-b .home-b-lead-image--contain { background: #fff; border: 1px solid var(--hb-line); }
+.home-b .home-b-lead-image--contain img { object-fit: contain; padding: 16px; box-sizing: border-box; }
+.home-b .home-b-lead-story .home-b-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.home-b .home-b-lead-credit { margin: -6px 0 6px; font-size: 11.5px; color: var(--hb-subtle); }
+.home-b .home-b-lead-credit:empty { display: none; }
+.home-b .home-b-lead-credit a { color: inherit; text-decoration: underline; }
