@@ -1,3 +1,4 @@
+import { getTopics } from "@/lib/topics";
 import { productModels } from "@/lib/products";
 import { getNews } from "@/lib/news";
 import type { MetadataRoute } from "next";
@@ -62,7 +63,8 @@ export function buildBlogSitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${baseUrl}/news` },
     ...news.map((article) => ({ url: `${baseUrl}/news/${article.slug}`, lastModified: newsDate(article) })),
-    ...routeEntries(["/blog", "/blog/archive"]),
+    ...routeEntries(["/blog", "/blog/archive", "/topics"]),
+    ...getTopics().map((topic) => ({ url: `${baseUrl}/topics/${topic.slug}`, lastModified: wcbDate(topic.updated) })),
     ...getBlogSeriesSlugs(insights).map((series) => ({
       url: `${baseUrl}/blog/series/${series}`
     })),

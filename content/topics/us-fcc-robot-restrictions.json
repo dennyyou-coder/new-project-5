@@ -1,0 +1,61 @@
+{
+  "slug": "us-fcc-robot-restrictions",
+  "title": "US FCC Robot Restrictions",
+  "seoTitle": "US FCC Robot Restrictions: Robot Vacuums and Mowers",
+  "dek": "How the FCC Covered List reaches foreign-produced robot vacuums, robotic mowers and commercial cleaning robots, who has been exempted, and what it means for the next product cycle.",
+  "description": "WCB's running file on the US FCC Covered List for foreign-produced advanced robotic devices: scope, exemptions granted, timeline and analysis for robot vacuums, robotic mowers and pool robots.",
+  "updated": "2026-11-07",
+  "status": {
+    "label": "In force since 28 July 2026",
+    "text": "New foreign-produced advanced robotic devices cannot receive FCC equipment authorization unless the Department of War grants Conditional Approval. Three producers have been exempted so far: Husqvarna, ANSCER and Matic."
+  },
+  "summary": [
+    "On 28 July 2026 the US Federal Communications Commission added foreign-produced advanced robotic devices to its Covered List, following a national-security determination by an executive-branch interagency body. Equipment on the list cannot receive FCC equipment authorization, and most electronic devices need that authorization before they can be imported, marketed or sold in the United States.",
+    "The category is defined by where a robot is produced, not by who owns the brand. A robot that moves over the ground, navigates or avoids obstacles, carries environmental sensors and network connectivity, and weighs more than about 2 kg with its dock falls inside it. That describes almost every LiDAR or camera robot vacuum, every RTK or vision robotic mower and most commercial floor-cleaning robots, whether the brand is Chinese, American or European.",
+    "The rule bites on the next product cycle rather than today's shelves. Models the FCC authorized before 28 July can still be imported and sold, and owners can keep using them. New models need Conditional Approval, which so far has gone only to producers with a US manufacturing or onshoring plan."
+  ],
+  "keyFacts": [
+    { "label": "Effective", "value": "28 July 2026" },
+    { "label": "Who is covered", "value": "Advanced robotic devices produced outside the US, regardless of brand nationality" },
+    { "label": "Existing models", "value": "Previously authorized models can still be imported, sold and used" },
+    { "label": "Exemption route", "value": "Conditional Approval granted by the Department of War, applied for through the FCC" },
+    { "label": "Exempted so far", "value": "Husqvarna (4 mower platforms), ANSCER (3 AMRs), Matic (floor robot and dock)" },
+    { "label": "Explicitly excluded", "value": "Fixed industrial arms, medical robots, connected vehicles, drones, rail vehicles and uncrewed underwater vehicles" }
+  ],
+  "timeline": [
+    { "date": "2025-12", "title": "Drones go first", "text": "The FCC adds foreign-produced uncrewed aircraft systems to the Covered List, the template for the later robot action.", "href": "/news/fcc-foreign-uas-covered-list-december-2025" },
+    { "date": "2026-07-28", "title": "Advanced robots added to the Covered List", "text": "Foreign-produced advanced robotic devices and power inverters are added after a national-security determination delivered the previous day.", "href": "/news/fcc-foreign-produced-advanced-robots-covered-list-july-2026" },
+    { "date": "2026-09-09", "title": "Husqvarna receives the first exemption", "text": "Automower 305V iQ, 310V iQ, 420V iQ and 440V iQ receive Conditional Approval; Husqvarna plans US launches in 2027.", "href": "/news/husqvarna-fcc-mower-conditional-approval-september-2026" },
+    { "date": "2026-09-18", "title": "ANSCER warehouse robots approved", "text": "ANSCER's AR250, AR650 and AR1250 autonomous mobile robots are added to the conditional-approval list." },
+    { "date": "2026-10-02", "title": "Matic becomes the first floor-cleaning robot exempted", "text": "Matic's robot (4MA0001) and dock (4DK0008), assembled in California, receive Conditional Approval tied to its onshoring plan.", "href": "/news/matic-fcc-conditional-approval-october-2026" }
+  ],
+  "questions": [
+    { "q": "Are robot vacuums banned in the United States?", "a": "No. Models the FCC authorized before 28 July 2026 can still be imported, marketed and sold, and owners can keep using them. The restriction stops new foreign-produced models from receiving FCC authorization unless they win Conditional Approval." },
+    { "q": "Does moving production from China to Vietnam, Malaysia or Mexico help?", "a": "Not for this rule. The FCC category is 'foreign-produced', so any production outside the United States is covered. Moving factories can change tariff exposure, but it does not change a robot's Covered List status." },
+    { "q": "Are American brands such as iRobot and SharkNinja exempt?", "a": "No. Brand nationality does not matter. iRobot and SharkNinja rely on contract manufacturing in Asia, so their next robots face the same barrier as Chinese brands." },
+    { "q": "Are robotic pool cleaners covered?", "a": "The FCC explicitly excludes uncrewed underwater vehicles, which leaves an opening for pool robots that work underwater. The FCC has not issued a specific interpretation for consumer pool cleaners, and surface skimmers or hybrid designs raise separate questions." },
+    { "q": "How does a company get an exemption?", "a": "Producers apply for Conditional Approval, which the Department of War grants after reviewing ownership, supply chain and manufacturing information, together with a plan to establish or expand US production. Approvals so far name specific models rather than whole brands." }
+  ],
+  "insights": [
+    "fcc-robot-vacuum-lawn-mower-restrictions",
+    "husqvarna-fcc-exemption-robotic-mowers",
+    "fcc-eu-anti-dumping-robotic-mower-market-2027",
+    "who-makes-luba-robot-mowers-mammotion-agilex",
+    "robot-vacuum-oem-odm-guide",
+    "robotic-lawn-mower-oem-odm-guide",
+    "compliance-certification-cleaning-appliances-china"
+  ],
+  "news": [
+    "matic-fcc-conditional-approval-october-2026",
+    "husqvarna-fcc-mower-conditional-approval-september-2026",
+    "fcc-foreign-produced-advanced-robots-covered-list-july-2026",
+    "fcc-foreign-uas-covered-list-december-2025"
+  ],
+  "sources": [
+    { "title": "FCC fact sheet: Covered List update for advanced robotic devices and power inverters (28 July 2026)", "url": "https://docs.fcc.gov/public/attachments/DOC-423682A1.pdf" },
+    { "title": "FCC public notice DA 26-786", "url": "https://docs.fcc.gov/public/attachments/DA-26-786A1.pdf" },
+    { "title": "FCC public notice DA 26-957: Husqvarna conditional approval", "url": "https://docs.fcc.gov/public/attachments/DA-26-957A1.pdf" },
+    { "title": "Husqvarna Group: first to receive FCC conditional approval", "url": "https://www.husqvarnagroup.com/en/press/husqvarna-group-first-receive-fcc-conditional-approval-foreign-manufactured-advanced-robotic" },
+    { "title": "Robotics 24/7: ANSCER Robotics secures FCC Conditional Approval for three AMRs", "url": "https://www.robotics247.com/article/anscer-robotics-secures-fcc-conditional-approval-for-three-amrs" }
+  ]
+}
