@@ -10,7 +10,7 @@ import { productCover, productModels } from "@/lib/products";
 import { getInsights, markdownToHtml } from "@/lib/content";
 import { getNewsReading } from "@/lib/editorialConnections";
 import { NewsReadingCards } from "@/components/editorial/EditorialConnections";
-import { getNews, getNewsArticle, getNewsContext, getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel, newsHref } from "@/lib/news";
+import { getAdjacentNews, getMoreNews, getNews, getNewsArticle, getNewsContext, getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel, newsHref } from "@/lib/news";
 
 type Props = { params: Promise<{ slug: string }> };
 const siteUrl = "https://worldcleanbiz.com";
@@ -31,6 +31,9 @@ export default async function NewsArticlePage({ params }: Props) {
   const { brands, products } = getNewsContext(article);
   const articles = getNewsReading(article, getInsights(), productModels);
   const visual = getNewsVisual(article);
+  const adjacent = getAdjacentNews(article);
+  const neighbours = new Set([adjacent.newer?.slug, adjacent.older?.slug]);
+  const moreNews = getMoreNews(article, 6).filter((item) => !neighbours.has(item.slug)).slice(0, 4);
   const url = `${siteUrl}/news/${article.slug}`;
   // Editorial model mentions are references, not product offers or reviews.
   const schema = [{ "@context": "https://schema.org", "@type": "NewsArticle", headline: article.title, description: article.excerpt, datePublished: article.publishedAt, dateModified: article.updatedAt, mainEntityOfPage: url, url, ...(visual ? { image: [visual.src.startsWith("https://") ? visual.src : `${siteUrl}${visual.src}`] } : {}), articleSection: newsTopicLabel(article.topic), author: { "@type": "Organization", name: article.author, url: `${siteUrl}/about` }, publisher: { "@type": "Organization", name: "World Clean Biz", url: siteUrl, logo: { "@type": "ImageObject", url: `${siteUrl}/brand/wcb-favicon-512.png` } }, citation: article.sources.map((source) => source.url), about: brands.map((brand) => ({ "@type": "Organization", name: brand.name, url: `${siteUrl}/brands/${brand.slug}` })), mentions: products.map((product) => ({ "@type": "Thing", name: product.name, url: `${siteUrl}/products/${product.slug}` })) }, { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: siteUrl }, { "@type": "ListItem", position: 2, name: "News", item: `${siteUrl}/news` }, { "@type": "ListItem", position: 3, name: article.title, item: url }] }];
@@ -41,6 +44,8 @@ export default async function NewsArticlePage({ params }: Props) {
       {visual && !(article.keyFigures.length && isBorrowedNewsVisual(visual)) ? <figure className="news-cover"><NewsImage article={article} context="cover" /><figcaption><NewsImageCaption article={article} full /></figcaption></figure> : null}
       <div className="article-prose news-prose" dangerouslySetInnerHTML={{ __html: markdownToHtml(article.content) }} />
       {brands.length || products.length || articles.length ? <section className="news-context" aria-labelledby="news-context-title"><p className="news-eyebrow">Explore The Story</p><h2 id="news-context-title">Related companies &amp; products</h2>{brands.length ? <div><h3>Company &amp; brand profiles</h3><div className="news-context-cards">{brands.map((brand) => <Link href={`/brands/${brand.slug}`} key={brand.slug}><img className="news-context-logo" src={brand.logoImage} alt={brand.logoImageAlt} width={96} height={64} loading="lazy" decoding="async" /><div>{brand.name}<span>Company &amp; brand profile</span></div></Link>)}</div></div> : null}{products.length ? <div><h3>Products mentioned</h3><div className="news-context-cards">{products.map((product) => <Link href={`/products/${product.slug}`} key={product.slug}><img {...responsiveImageProps(productCover(product.slug), "card")} alt={product.name} /><div>{product.name}<span>View product profile</span></div></Link>)}</div></div> : null}{articles.length ? <div><h3>Related analysis &amp; guides</h3><NewsReadingCards articles={articles} /></div> : null}</section> : null}
+      {moreNews.length ? <section className="news-context news-more" aria-labelledby="news-more-title"><p className="news-eyebrow">Keep Reading</p><h2 id="news-more-title">More news</h2><div className="news-context-links">{moreNews.map((item) => <Link href={`/news/${item.slug}`} key={item.slug}>{item.title}<span>{newsDate(item.eventDate)}</span></Link>)}</div></section> : null}
+      {adjacent.newer || adjacent.older ? <nav className="news-adjacent" aria-label="Previous and next news">{adjacent.older ? <Link href={`/news/${adjacent.older.slug}`} rel="prev"><span>Earlier story</span>{adjacent.older.title}</Link> : <span />}{adjacent.newer ? <Link href={`/news/${adjacent.newer.slug}`} rel="next"><span>Later story</span>{adjacent.newer.title}</Link> : null}</nav> : null}
       <ArticleShareActions title={article.title} url={url} heading="Share this news" />
       <footer className="news-article-footer"><Link href="/news"> Back to News</Link><TallyButton form="newsletter" ctaLocation="news_article_newsletter">Get Industry Updates</TallyButton></footer>
     </article>

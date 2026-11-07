@@ -1,7 +1,8 @@
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
-import { getNews, getNewsContext, getNewsVisual, getRelatedNewsForArticle, selectNews, newsHref, NEWS_PAGE_SIZE } from "../lib/news.ts";
+import { getNews, getNewsContext, getNewsVisual, getRelatedNewsForArticle, selectNews, newsHref, NEWS_PAGE_SIZE, getMoreNews, getAdjacentNews } from "../lib/news.ts";
 import { newsStoryVisuals, newsCompanyVisuals } from "../lib/newsVisuals.ts";
 import { getInsights } from "../lib/content.ts";
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
@@ -164,4 +165,21 @@ test("category filter narrows news by hub and keeps topic and page in links", as
   assert.equal(selectNews(articles, undefined, "1", "not-a-hub").category, undefined);
   assert.equal(newsHref("companies", 2, "pool-robots"), "/news?topic=companies&category=pool-robots&page=2");
   assert.equal(newsHref(undefined, 1), "/news");
+});
+
+test("every story page links related and neighbouring stories, so none relies on the archive alone", async () => {
+  const news = getNews();
+  const inbound = new Map(news.map((item) => [item.slug, 0]));
+  for (const article of news) {
+    const adjacent = getAdjacentNews(article);
+    const linked = [adjacent.newer, adjacent.older, ...getMoreNews(article, 6)].filter(Boolean);
+    for (const item of new Set(linked.map((entry) => entry.slug))) {
+      assert.notEqual(item, article.slug);
+      inbound.set(item, inbound.get(item) + 1);
+    }
+  }
+  for (const [slug, count] of inbound) assert.ok(count >= 2, `${slug} is linked from ${count} stories`);
+  const page = await readFile(new URL("../app/news/[slug]/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /getMoreNews\(article, 6\)/);
+  assert.match(page, /className="news-adjacent"/);
 });

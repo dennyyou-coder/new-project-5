@@ -187,6 +187,32 @@ export function getRelatedNewsForArticle(article: Pick<Insight, "slug" | "primar
     .slice(0, limit);
 }
 
+// Stories that share a company, then a category, then a topic, closest in date first.
+// Every story page lists these plus its chronological neighbours, so no story depends
+// on the paginated archive alone to be found.
+export function getMoreNews(article: NewsArticle, limit = 4) {
+  const brands = new Set(article.brandSlugs);
+  const hubs = new Set(hubCategoriesForNews(article));
+  const eventTime = Date.parse(article.eventDate);
+  const score = (item: NewsArticle) =>
+    (item.brandSlugs.some((slug) => brands.has(slug)) ? 4 : 0) +
+    (hubCategoriesForNews(item).some((hub) => hubs.has(hub)) ? 2 : 0) +
+    (item.topic === article.topic ? 1 : 0);
+  return getNews()
+    .filter((item) => item.slug !== article.slug)
+    .map((item) => ({ item, score: score(item), distance: Math.abs(Date.parse(item.eventDate) - eventTime) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.distance - b.distance || a.item.slug.localeCompare(b.item.slug))
+    .slice(0, limit)
+    .map(({ item }) => item);
+}
+
+export function getAdjacentNews(article: NewsArticle) {
+  const all = getNews();
+  const index = all.findIndex((item) => item.slug === article.slug);
+  return { newer: index > 0 ? all[index - 1] : undefined, older: index >= 0 ? all[index + 1] : undefined };
+}
+
 export const NEWS_PAGE_SIZE = 12;
 export function newsHref(topic?: NewsTopic, page = 1, category?: HubCategorySlug) {
   const params = new URLSearchParams();
