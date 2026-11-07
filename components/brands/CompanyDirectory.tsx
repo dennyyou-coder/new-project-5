@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 
 export type CompanyDirectoryEntry = {
   slug: string;
@@ -28,6 +28,12 @@ export function CompanyDirectory({
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
   const [country, setCountry] = useState("");
+  // A category page links here with ?category=<category slug> so the directory opens already filtered.
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get("category");
+    if (requested && categories.some((item) => item.slug === requested)) setCategory(requested);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const term = query.trim().toLowerCase();
   const visible = companies.filter(
     (company) =>
@@ -38,7 +44,7 @@ export function CompanyDirectory({
   const filtered = Boolean(term || category || country);
 
   return (
-    <section className="company-dir" aria-labelledby={`${id}-title`}>
+    <section className="company-dir" id="all-companies" aria-labelledby={`${id}-title`}>
       <h2 id={`${id}-title`}>All companies</h2>
       <div className="company-dir-filters">
         <label>

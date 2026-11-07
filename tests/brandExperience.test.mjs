@@ -279,7 +279,9 @@ test("brand directory lists each company once with category and headquarters fil
   const source = read("app/brands/page.tsx");
   const directory = read("components/brands/CompanyDirectory.tsx");
 
-  assert.match(source, /categories=\{categories\.map\(\(data\) => \(\{ slug: data\.category\.slug, name: data\.category\.name \}\)\)\}/);
+  // The category filter uses the nine category hubs shared with /categories and /products.
+  assert.match(source, /categories=\{hubData\.map\(\(data\) => \(\{ slug: data\.hub\.slug, name: data\.hub\.name \}\)\)\}/);
+  assert.match(directory, /new URLSearchParams\(window\.location\.search\)\.get\("category"\)/);
   assert.match(source, /headquartersCountry\(profile\.headquarters\)/);
   assert.match(source, /buildOwnershipGroups\(profiles\)/);
   assert.match(source, /href=\{`\/brands\/\$\{data\.category\.slug\}`\}/);

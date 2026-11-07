@@ -4,15 +4,17 @@
 .hub-page.ch .ch-hero-copy { min-width: 0; }
 .hub-page.ch .hub-title-row { margin-top: 6px; }
 .hub-page.ch .hub-intro { margin-top: 12px; }
-.hub-page.ch .ch-quick { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 20px; }
-.hub-page.ch .ch-quick nav { display: flex; flex-wrap: wrap; gap: 8px; }
-.hub-page.ch .ch-quick nav a { display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; font-size: 14px; font-weight: 700; color: var(--hub-ink); background: #fff; border: 1px solid var(--hub-line); border-radius: 999px; text-decoration: none; }
-.hub-page.ch .ch-quick nav a:hover, .hub-page.ch .ch-quick nav a:focus-visible { border-color: var(--hub-link); color: var(--hub-link); }
+.hub-page.ch .ch-quick { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.hub-page.ch .ch-quick a { display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; font-size: 14px; font-weight: 700; color: var(--hub-ink); background: #fff; border: 1px solid var(--hub-line); border-radius: 999px; text-decoration: none; }
+.hub-page.ch .ch-quick a:hover, .hub-page.ch .ch-quick a:focus-visible { border-color: var(--hub-link); color: var(--hub-link); }
 .hub-page.ch .ch-hero-visual { position: relative; margin: 0; overflow: hidden; border-radius: 16px; background: #fff; border: 1px solid var(--hub-line); aspect-ratio: 3 / 2; }
 .hub-page.ch .ch-hero-visual img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .hub-page.ch .ch-hero-visual--product img { object-fit: contain; padding: 18px; box-sizing: border-box; }
 
-.hub-page.ch .ch-body { display: grid; gap: 44px; padding-top: 36px; padding-bottom: 56px; }
+.hub-page.ch .ch-body { display: grid; gap: 0; padding-top: 8px; padding-bottom: 56px; }
+.hub-page.ch .ch-body > .ch-section { padding: 36px 0; border-bottom: 1px solid var(--hub-line); scroll-margin-top: 80px; }
+.hub-page.ch .ch-body > .ch-section:last-of-type { border-bottom: 0; }
+.hub-page.ch .ch-body > .ch-subscribe { margin-top: 12px; }
 .hub-page.ch .ch-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
 .hub-page.ch .ch-head h2 { margin: 0; font-size: 24px; line-height: 1.25; letter-spacing: -0.01em; }
 .hub-page.ch .ch-head a { font-size: 14px; font-weight: 700; white-space: nowrap; }
@@ -99,3 +101,47 @@
 .hub-page.ch .ch-thumb--logo img { padding: 12px 10px; }
 .hub-page.ch .ch-thumb--light img { filter: brightness(0.28) contrast(1.15); }
 .hub-page.ch .ch-hero-visual figcaption { position: absolute; right: 8px; bottom: 8px; padding: 2px 8px; font-size: 11px; font-weight: 600; color: #fff; background: rgba(15, 23, 32, 0.55); border-radius: 999px; }
+
+/* ---- Category page modules, one per row (Nov 2026) ---- */
+.hub-page.ch .ch-news { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; margin: 0; padding: 0; list-style: none; }
+.hub-page.ch .ch-news li { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 14px; align-items: center; padding: 12px 0; border-top: 1px solid var(--hub-line); }
+.hub-page.ch .ch-news li a { display: block; margin-top: 3px; font-size: 15px; font-weight: 700; line-height: 1.4; color: var(--hub-ink); }
+
+.hub-page.ch .ch-analysis { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.hub-page.ch .ch-analysis--single { grid-template-columns: minmax(0, 720px); }
+.hub-page.ch .ch-analysis-lead { display: grid; gap: 6px; color: inherit; text-decoration: none; }
+.hub-page.ch .ch-analysis-lead .ch-lead-image { margin-bottom: 6px; }
+.hub-page.ch .ch-analysis-lead b { font-size: 22px; line-height: 1.3; color: var(--hub-ink); }
+.hub-page.ch .ch-analysis-lead:hover b { color: var(--hub-link); }
+.hub-page.ch .ch-analysis-lead .ch-excerpt { margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.hub-page.ch .ch-analysis-more { display: grid; margin: 0; padding: 0; list-style: none; }
+.hub-page.ch .ch-analysis-more li { border-top: 1px solid var(--hub-line); }
+.hub-page.ch .ch-analysis-more li:first-child { border-top: 0; }
+.hub-page.ch .ch-analysis-more a { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 16px; align-items: center; padding: 14px 0; color: inherit; text-decoration: none; }
+.hub-page.ch .ch-analysis-more li:first-child a { padding-top: 0; }
+.hub-page.ch .ch-analysis-more .ch-thumb { aspect-ratio: 16 / 10; }
+.hub-page.ch .ch-analysis-more b { display: block; margin-top: 3px; font-size: 16px; line-height: 1.35; color: var(--hub-ink); }
+.hub-page.ch .ch-analysis-more a:hover b { color: var(--hub-link); }
+
+.hub-page.ch .ch-company-text { display: grid; gap: 2px; min-width: 0; }
+.hub-page.ch .ch-company-owner { font-size: 12px; line-height: 1.3; color: var(--hub-subtle); overflow-wrap: anywhere; }
+
+.hub-page.ch .ch-sourcing { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 20px; padding: 24px 28px; }
+.hub-page.ch .ch-sourcing i { justify-self: end; }
+
+.hub-page.ch .ch-guides ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; margin: 0; padding: 0; list-style: none; }
+.hub-page.ch .ch-guides li { padding: 10px 0; border-top: 1px solid var(--hub-line); }
+.hub-page.ch .ch-guides li a { font-size: 15px; font-weight: 600; line-height: 1.45; color: var(--hub-ink); }
+.hub-page.ch .ch-guides li a:hover { color: var(--hub-link); }
+
+@media (max-width: 860px) {
+  .hub-page.ch .ch-news, .hub-page.ch .ch-analysis, .hub-page.ch .ch-guides ul { grid-template-columns: 1fr; }
+  .hub-page.ch .ch-sourcing { grid-template-columns: 1fr; }
+  .hub-page.ch .ch-sourcing i { justify-self: start; }
+}
+@media (max-width: 560px) {
+  .hub-page.ch .ch-body > .ch-section { padding: 28px 0; }
+  .hub-page.ch .ch-news li { grid-template-columns: 68px minmax(0, 1fr); gap: 12px; }
+  .hub-page.ch .ch-analysis-more a { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; }
+  .hub-page.ch .ch-analysis-lead b { font-size: 19px; }
+}

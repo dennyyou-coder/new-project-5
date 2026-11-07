@@ -38,8 +38,10 @@ const footerSource = await readFile(
 );
 
 test("navigation links practical guides and the deep analysis archive", () => {
+  // Both sit in the Insights menu (Nov 2026 navigation).
+  assert.match(headerSource, /id: "insights",\s*label: "Insights"/);
   assert.match(headerSource, /href: "\/guides", label: "Guides"/);
-  assert.match(headerSource, /href: "\/blog\/archive", label: "Deep Analysis"/);
+  assert.match(headerSource, /href: "\/blog\/archive", label: "Deep analysis"/);
   assert.match(footerSource, /<Link href="\/blog\/archive">Deep Analysis<\/Link>/);
 });
 

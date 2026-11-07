@@ -9,7 +9,8 @@ import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getHubCategory, HUB_CATEGORIES, HUB_CATEGORY_GROUPS } from "@/lib/hubCategories";
 import { getHubCategoryData } from "@/lib/hubCategoryContent";
-import { getNewsVisual, isBorrowedNewsVisual, newsDate } from "@/lib/news";
+import { getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel } from "@/lib/news";
+import { shortParentName } from "@/lib/brandProfileView";
 import { hubListHrefs, hubSourcingHref, hubVisual } from "@/lib/hubPresentation";
 import { productCover, productSelectionYear } from "@/lib/products";
 import { buildWebsiteMetadata } from "@/lib/seo";
@@ -52,26 +53,27 @@ export default async function CategoryHubPage({ params }: Props) {
   const lists = hubListHrefs(hub);
   const sourcing = hubSourcingHref(hub);
 
-  // The category's front page: one lead analysis, the latest news, then a few
-  // picks from each list with a link to the full list narrowed to this category.
-  const lead = data.analysis.find((article) => article.coverImage && article.coverImage !== visual?.src);
-  const latest = data.feed.filter((item) => item.kind === "news" || item.article.slug !== lead?.slug).slice(0, 4);
-  const essentialPool = [...data.essential, ...data.analysis].filter(
-    (article, index, all) => article.coverImage && article.coverImage !== visual?.src && article.slug !== lead?.slug && all.findIndex((other) => other.slug === article.slug) === index
+  // The category's front page, one module per row in a fixed order: news,
+  // analysis, new models, companies, sourcing, then guides and the email band.
+  // A module with nothing to show is left out.
+  const news = data.news.slice(0, 6);
+  const analysisPool = [...data.analysis, ...data.essential].filter(
+    (article, index, all) => article.coverImage && article.coverImage !== visual?.src && all.findIndex((other) => other.slug === article.slug) === index
   );
-  const essential = essentialPool.slice(0, 4);
+  // Search-data picks (data.essential) lead when they exist, then the newest analysis.
+  const picked = data.essential.filter((article) => article.coverImage && article.coverImage !== visual?.src);
+  const analysis = [...picked, ...analysisPool].filter((article, index, all) => all.findIndex((other) => other.slug === article.slug) === index).slice(0, 4);
+  const [leadAnalysis, ...moreAnalysis] = analysis;
+  const models = data.newModels.slice(0, 4);
   const companies = data.companies.slice(0, 12);
-  const showMoreModels = data.newModels.length > 4;
-  const models = data.newModels.slice(0, showMoreModels ? 3 : 4);
-  const guides = data.guides.slice(0, 3);
+  const guides = data.guides.slice(0, 5);
 
   const quickLinks = [
-    data.news.length ? { label: "News", href: lists.news } : null,
-    data.analysis.length ? { label: "Analysis", href: lists.analysis } : null,
-    data.newModels.length ? { label: `${productSelectionYear} models`, href: lists.products } : null,
+    news.length ? { label: "News", href: "#hub-news" } : null,
+    analysis.length ? { label: "Analysis", href: "#hub-analysis" } : null,
+    models.length ? { label: `${productSelectionYear} models`, href: "#hub-models" } : null,
     companies.length ? { label: "Companies", href: "#hub-companies" } : null,
-    guides.length ? { label: "Buyer guides", href: "#hub-guides" } : null,
-    sourcing ? { label: "Sourcing", href: sourcing } : null
+    sourcing ? { label: "Sourcing", href: "#hub-sourcing" } : null
   ].filter((item): item is { label: string; href: string } => Boolean(item));
 
   const schemas = [
@@ -118,14 +120,11 @@ export default async function CategoryHubPage({ params }: Props) {
               <h1>{hub.name}</h1>
             </div>
             <p className="hub-intro">{hub.intro}</p>
-            <div className="ch-quick">
-              <nav aria-label={`${hub.name} sections`}>
-                {quickLinks.map((link) => <Link key={link.label} href={link.href}>{link.label}</Link>)}
+            {quickLinks.length ? (
+              <nav className="ch-quick" aria-label={`${hub.name} sections`}>
+                {quickLinks.map((link) => <a key={link.label} href={link.href}>{link.label}</a>)}
               </nav>
-              <TallyButton className="hub-follow" ctaLocation={`category_hub_follow_${hub.slug}`} form="newsletter">
-                Follow by email
-              </TallyButton>
-            </div>
+            ) : null}
           </div>
           {visual ? (
             <figure className={`ch-hero-visual ch-hero-visual--${visual.kind}`}>
@@ -137,68 +136,63 @@ export default async function CategoryHubPage({ params }: Props) {
       </section>
 
       <div className="hub-container ch-body">
-        {lead || latest.length ? (
-          <section className="ch-top" aria-label={`Latest in ${hub.name}`}>
-            {lead ? (
-              <article className="ch-lead">
-                <Link className="ch-lead-image" href={`/blog/${lead.slug}`} tabIndex={-1} aria-hidden="true">
-                  <img {...responsiveImageProps(lead.coverImage!, "card")} alt="" loading="eager" />
-                </Link>
-                <p className="ch-meta">Analysis · {lead.category} · <time dateTime={lead.sortDate || lead.date}>{newsDate(lead.sortDate || lead.date)}</time></p>
-                <h2><Link href={`/blog/${lead.slug}`}>{lead.title}</Link></h2>
-                <p className="ch-excerpt">{lead.excerpt}</p>
-              </article>
-            ) : null}
-            {latest.length ? (
-              <div className="ch-latest" id="hub-latest">
-                <div className="ch-head">
-                  <h2>Latest</h2>
-                  {data.news.length ? <Link className="wcb-more" href={lists.news}>All {hub.name.toLowerCase()} news</Link> : null}
-                </div>
-                <ul>
-                  {latest.map((item) => {
-                    const href = item.kind === "news" ? `/news/${item.news.slug}` : `/blog/${item.article.slug}`;
-                    const title = item.kind === "news" ? item.news.title : item.article.title;
-                    const newsVisual = item.kind === "news" ? getNewsVisual(item.news) : undefined;
-                    const thumb = item.kind === "analysis"
-                      ? item.article.coverImage ? { src: item.article.coverImage, contain: false } : undefined
-                      : newsVisual && !isBorrowedNewsVisual(newsVisual)
-                        ? { src: newsVisual.src, contain: newsVisual.fit === "contain" }
-                        // Without a story image, the company's logo tells the reader whose news it is.
-                        : logoThumb(item.news.brandSlugs);
-                    return (
-                      <li key={href}>
-                        <span className={`ch-thumb${thumb?.contain ? " ch-thumb--contain" : ""}${thumb && "logo" in thumb ? " ch-thumb--logo" : ""}${thumb && "light" in thumb && thumb.light ? " ch-thumb--light" : ""}`} aria-hidden="true">
-                          {thumb ? <img src={thumb.src} alt="" loading="lazy" decoding="async" /> : <CategoryIcon slug={hub.slug} color={hub.color} size="sm" />}
-                        </span>
-                        <span>
-                          <span className="ch-meta">{item.kind === "news" ? "News" : "Analysis"} · <time dateTime={item.date}>{newsDate(item.date)}</time></span>
-                          <Link href={href}>{title}</Link>
-                        </span>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            ) : null}
+        {news.length ? (
+          <section className="ch-section" id="hub-news" aria-labelledby="hub-news-heading">
+            <div className="ch-head">
+              <h2 id="hub-news-heading">Industry news</h2>
+              <Link className="wcb-more" href={lists.news}>All {hub.name.toLowerCase()} news</Link>
+            </div>
+            <ul className="ch-news">
+              {news.map((item) => {
+                const newsVisual = getNewsVisual(item);
+                const thumb = newsVisual && !isBorrowedNewsVisual(newsVisual)
+                  ? { src: newsVisual.src, contain: newsVisual.fit === "contain" }
+                  // Without a story image, the company's logo tells the reader whose news it is.
+                  : logoThumb(item.brandSlugs);
+                return (
+                  <li key={item.slug}>
+                    <span className={`ch-thumb${thumb?.contain ? " ch-thumb--contain" : ""}${thumb && "logo" in thumb ? " ch-thumb--logo" : ""}${thumb && "light" in thumb && thumb.light ? " ch-thumb--light" : ""}`} aria-hidden="true">
+                      {thumb ? <img src={thumb.src} alt="" loading="lazy" decoding="async" /> : <CategoryIcon slug={hub.slug} color={hub.color} size="sm" />}
+                    </span>
+                    <span>
+                      <span className="ch-meta">{newsTopicLabel(item.topic)} · <time dateTime={item.eventDate}>{newsDate(item.eventDate)}</time></span>
+                      <Link href={`/news/${item.slug}`}>{item.title}</Link>
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
           </section>
         ) : null}
 
-        {companies.length ? (
-          <section className="ch-section" id="hub-companies" aria-labelledby="hub-companies-heading">
+        {leadAnalysis ? (
+          <section className="ch-section" id="hub-analysis" aria-labelledby="hub-analysis-heading">
             <div className="ch-head">
-              <h2 id="hub-companies-heading">Companies in {hub.name.toLowerCase()}</h2>
-              <Link className="wcb-more" href="/brands">All company profiles</Link>
+              <h2 id="hub-analysis-heading">Analysis</h2>
+              <Link className="wcb-more" href={lists.analysis}>All {hub.name.toLowerCase()} analysis</Link>
             </div>
-            <div className="ch-companies">
-              {companies.map((brand) => (
-                <Link key={brand.slug} href={`/brands/${brand.slug}`}>
-                  <span className="ch-company-logo" aria-hidden="true">
-                    <LogoTileImage slug={brand.slug} fallbackSrc={brand.logoImage} boxRatio={2.2} />
-                  </span>
-                  <span className="ch-company-name">{brand.name}</span>
-                </Link>
-              ))}
+            <div className={`ch-analysis${moreAnalysis.length ? "" : " ch-analysis--single"}`}>
+              <Link className="ch-analysis-lead" href={`/blog/${leadAnalysis.slug}`}>
+                <span className="ch-lead-image"><img {...responsiveImageProps(leadAnalysis.coverImage!, "card")} alt="" /></span>
+                <span className="ch-meta">{leadAnalysis.category} · <time dateTime={leadAnalysis.sortDate || leadAnalysis.date}>{newsDate(leadAnalysis.sortDate || leadAnalysis.date)}</time></span>
+                <b>{leadAnalysis.title}</b>
+                {leadAnalysis.excerpt ? <span className="ch-excerpt">{leadAnalysis.excerpt}</span> : null}
+              </Link>
+              {moreAnalysis.length ? (
+                <ul className="ch-analysis-more">
+                  {moreAnalysis.map((article) => (
+                    <li key={article.slug}>
+                      <Link href={`/blog/${article.slug}`}>
+                        <span className="ch-thumb" aria-hidden="true"><img {...responsiveImageProps(article.coverImage!, "card")} alt="" /></span>
+                        <span>
+                          <span className="ch-meta">{article.category}</span>
+                          <b>{article.title}</b>
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
             </div>
           </section>
         ) : null}
@@ -207,7 +201,7 @@ export default async function CategoryHubPage({ params }: Props) {
           <section className="ch-section" id="hub-models" aria-labelledby="hub-models-heading">
             <div className="ch-head">
               <h2 id="hub-models-heading">New {productSelectionYear} models</h2>
-              <Link className="wcb-more" href={lists.products}>All {hub.name.toLowerCase()} models</Link>
+              <Link className="wcb-more" href={lists.products}>All {data.newModels.length} {hub.name.toLowerCase()} models</Link>
             </div>
             <div className="ch-grid4">
               {models.map((model) => (
@@ -224,62 +218,58 @@ export default async function CategoryHubPage({ params }: Props) {
                   </span>
                 </Link>
               ))}
-              {showMoreModels ? (
-                <Link className="ch-more" href={lists.products}>
-                  <b className="wcb-more-label">See all {hub.name.toLowerCase()} models</b>
-                  <span>Opens the product library filtered to {hub.name.toLowerCase()}</span>
-                </Link>
-              ) : null}
             </div>
           </section>
         ) : null}
 
-        {essential.length ? (
-          <section className="ch-section" aria-labelledby="hub-essential-heading">
+        {companies.length ? (
+          <section className="ch-section" id="hub-companies" aria-labelledby="hub-companies-heading">
             <div className="ch-head">
-              <h2 id="hub-essential-heading">Essential reading</h2>
-              <Link className="wcb-more" href={lists.analysis}>All {hub.name.toLowerCase()} analysis</Link>
+              <h2 id="hub-companies-heading">Companies</h2>
+              <Link className="wcb-more" href={lists.companies}>All {hub.name.toLowerCase()} companies</Link>
             </div>
-            <div className="ch-grid4">
-              {essential.map((article) => (
-                <Link key={article.slug} className="ch-card" href={`/blog/${article.slug}`}>
-                  <span className="ch-card-image"><img {...responsiveImageProps(article.coverImage!, "card")} alt="" /></span>
-                  <span className="ch-meta">{article.category}</span>
-                  <b>{article.title}</b>
-                </Link>
-              ))}
+            <div className="ch-companies">
+              {companies.map((brand) => {
+                const parent = shortParentName(brand.ownership.parentCompany);
+                return (
+                  <Link key={brand.slug} href={`/brands/${brand.slug}`}>
+                    <span className="ch-company-logo" aria-hidden="true">
+                      <LogoTileImage slug={brand.slug} fallbackSrc={brand.logoImage} boxRatio={2.2} />
+                    </span>
+                    <span className="ch-company-text">
+                      <span className="ch-company-name">{brand.name}</span>
+                      {parent && parent !== brand.name ? <span className="ch-company-owner">Part of {parent}</span> : null}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
           </section>
         ) : null}
 
-        {guides.length || sourcing ? (
-          <section className="ch-section ch-bottom" id="hub-guides" aria-label="Guides and sourcing">
-            {guides.length ? (
-              <div>
-                <div className="ch-head">
-                  <h2>Buyer guides</h2>
-                  <Link className="wcb-more" href="/guides">All guides</Link>
-                </div>
-                <div className="ch-grid3">
-                  {guides.map((guide) => (
-                    <Link key={guide.slug} className="ch-card" href={`/blog/${guide.slug}`}>
-                      {guide.coverImage ? <span className="ch-card-image"><img {...responsiveImageProps(guide.coverImage, "card")} alt="" /></span> : null}
-                      <span className="ch-meta">{guide.category}</span>
-                      <b>{guide.title}</b>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : null}
-            {sourcing ? (
-              <Link className="ch-sourcing" href={sourcing}>
-                <span>
-                  <b>Sourcing {hub.name.toLowerCase()}?</b>
-                  <span>Product platforms, channels and supplier checks for this category.</span>
-                </span>
-                <i>Category sourcing</i>
-              </Link>
-            ) : null}
+        {sourcing ? (
+          <section className="ch-section" id="hub-sourcing" aria-label={`Sourcing ${hub.name.toLowerCase()}`}>
+            <Link className="ch-sourcing" href={sourcing}>
+              <span>
+                <b>Sourcing {hub.name.toLowerCase()}?</b>
+                <span>Product platforms, channels and supplier checks for this category.</span>
+              </span>
+              <i>Category sourcing</i>
+            </Link>
+          </section>
+        ) : null}
+
+        {guides.length ? (
+          <section className="ch-section ch-guides" id="hub-guides" aria-labelledby="hub-guides-heading">
+            <div className="ch-head">
+              <h2 id="hub-guides-heading">Practical guides</h2>
+              <Link className="wcb-more" href="/guides">All guides</Link>
+            </div>
+            <ul>
+              {guides.map((guide) => (
+                <li key={guide.slug}><Link href={`/blog/${guide.slug}`}>{guide.title}</Link></li>
+              ))}
+            </ul>
           </section>
         ) : null}
 
