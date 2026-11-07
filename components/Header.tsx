@@ -194,8 +194,8 @@ export function Header() {
                         </div>
                       ))}
                       {item.id === "categories" ? (
-                        <Link className="wcb-nav-all" href="/categories" onClick={closeAll}>
-                          All categories →
+                        <Link className="wcb-nav-all wcb-more" href="/categories" onClick={closeAll}>
+                          All categories
                         </Link>
                       ) : null}
                     </div>

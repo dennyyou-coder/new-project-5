@@ -336,7 +336,7 @@ export default async function InsightDetailPage({ params }: Props) {
                 </ul>
                 {articleHubs.length ? (
                   <p className="blog-industry-view-links">
-                    {articleHubs.map((hub) => <Link key={hub.slug} href={`/categories/${hub.slug}`}>{hub.name} hub →</Link>)}
+                    {articleHubs.map((hub) => <Link key={hub.slug} className="wcb-more" href={`/categories/${hub.slug}`}>{hub.name} hub</Link>)}
                   </p>
                 ) : null}
               </section>

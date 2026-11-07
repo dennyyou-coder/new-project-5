@@ -102,7 +102,7 @@ export function BrandSections({
           <p className="bp-answer-text">{quickAnswer}</p>
           <p className="bp-answer-meta">
             Verified {formatBrandDate(profile.lastVerified, "long")} · {profile.sources.length} sources
-            {ownershipAnalysisHref ? <> · <Link href={ownershipAnalysisHref}>Full ownership analysis →</Link></> : null}
+            {ownershipAnalysisHref ? <> · <Link className="wcb-more" href={ownershipAnalysisHref}>Full ownership analysis</Link></> : null}
           </p>
         </section>
       ) : null}
@@ -171,7 +171,7 @@ export function BrandSections({
         id="product-portfolio"
         title="Products"
         icon="package"
-        action={models.length ? <Link className="bp-card-more" href="/products">Product library →</Link> : undefined}
+        action={models.length ? <Link className="bp-card-more wcb-more" href="/products">Product library</Link> : undefined}
       >
         {models.length ? (
           <div className="bp-models">
@@ -225,12 +225,12 @@ export function BrandSections({
             {competitors.length ? (
               <div className={`bp-competitors${competitors.length % 3 === 0 ? "" : " bp-competitors--pairs"}`}>
                 {competitors.map((competitor) => (
-                  <div key={competitor.mark.slug ?? competitor.mark.name} className="bp-competitor">
+                  <Link key={competitor.mark.slug ?? competitor.mark.name} className="bp-competitor" href={competitor.href}>
                     <CompanyMark mark={competitor.mark} size="md" />
                     <b>{competitor.mark.name}</b>
                     {competitor.caption ? <small>{competitor.caption}</small> : null}
-                    <Link href={competitor.href}>{competitor.linkLabel} →</Link>
-                  </div>
+                    <span className="wcb-more-label">{competitor.linkLabel}</span>
+                  </Link>
                 ))}
               </div>
             ) : null}

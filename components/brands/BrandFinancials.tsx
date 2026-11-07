@@ -17,7 +17,7 @@ export function BrandFinancials({ brand }: { brand: string }) {
     <section className="bp-card bp-financials" id="financials" aria-labelledby="financials-title">
       <div className="bp-card-head">
         <h2 id="financials-title"><span className="bp-card-icon"><Icon name="bar-chart" /></span>Quarterly results</h2>
-        <Link href="/markets#markets-results-title">All company results</Link>
+        <Link className="wcb-more" href="/markets#markets-results-title">All company results</Link>
       </div>
       <div className="bp-fin-chart" role="img" aria-label={`${quarters[0].revenueLabel} by quarter, ${quarters[0].period} to ${quarters[quarters.length - 1].period}`}>
         {quarters.map((quarter) => (
