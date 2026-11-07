@@ -9574,5 +9574,458 @@
     "launchYear": 2026,
     "launchNote": "Announced on 1 September 2026 and debuted at GaLaBau 2026 (15–18 September). Product image cropped from Pudu's official GT Series launch image.",
     "launchSource": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+  },
+  {
+    "slug": "husqvarna-automower-312v",
+    "name": "Husqvarna Automower 312V",
+    "brand": "Husqvarna",
+    "brandSlug": "husqvarna",
+    "category": "Robot mowers",
+    "market": "United Kingdom · RRP £1,499; authorised dealers from spring 2026",
+    "summary": "A wire-free Automower for lawns up to 1,200 m² that combines satellite navigation with an AI vision camera for obstacle recognition.",
+    "fit": "Suburban gardens up to about 1,200 m² where the owner wants virtual boundaries instead of a boundary wire and buys through a dealer network.",
+    "caution": "Loop-free installation needs Wi-Fi coverage across the whole lawn, and the 40% slope rating applies inside the work area; the boundary limit is 15%.",
+    "facts": [
+      {
+        "label": "Working area",
+        "value": "1,200 m² (±20%)",
+        "meaning": "Husqvarna's capacity figure; complex layouts and long grass reduce what it covers in practice."
+      },
+      {
+        "label": "Navigation",
+        "value": "Satellite navigation with AI vision camera",
+        "meaning": "Virtual boundaries are set in the Automower Connect app; no boundary wire is needed."
+      },
+      {
+        "label": "Slopes",
+        "value": "Up to 40% inside the area; 15% at the boundary",
+        "meaning": "Two separate limits; plan boundaries away from steep edges."
+      },
+      {
+        "label": "Cutting",
+        "value": "22 cm width; 20–50 mm manual height",
+        "meaning": "Height is set by hand on the mower rather than in the app."
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth and Wi-Fi",
+        "meaning": "As listed on the UK product page."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was the Automower 312V announced?",
+        "answer": "Husqvarna announced the 312V with the 308V and Aspire R6V in a UK press release on 12 January 2026, with dealer availability from spring 2026."
+      },
+      {
+        "question": "What does it cost in the UK?",
+        "answer": "The UK release gave an RRP of £1,499, and the UK product page listed £1,499 including VAT when checked on 7 November 2026."
+      },
+      {
+        "question": "Does it need a boundary wire?",
+        "answer": "No. It uses virtual boundaries drawn in the Automower Connect app, with satellite navigation and an AI vision camera."
+      },
+      {
+        "question": "What does wire-free installation require?",
+        "answer": "Husqvarna states that Wi-Fi coverage over the entire lawn is required for loop-free installation."
+      },
+      {
+        "question": "How steep can the lawn be?",
+        "answer": "The product page lists up to 40% inside the installation and 15% at the boundary."
+      },
+      {
+        "question": "How is cutting height adjusted?",
+        "answer": "Manually, between 20 mm and 50 mm, according to the UK product page."
+      },
+      {
+        "question": "What is the article number?",
+        "answer": "The UK product page lists 970 83 11-03."
+      }
+    ],
+    "articles": [
+      "husqvarna-automower-vs-mammotion-luba",
+      "robot-lawn-mower-without-perimeter-wire"
+    ],
+    "related": [
+      "worx-landroid-vision-cloud-4wd-wr344",
+      "roborock-rockneo-q2-lidar",
+      "segway-navimow-x430"
+    ],
+    "announced": "2026-01-12",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Husqvarna UK Automower 312V product page",
+        "url": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/"
+      },
+      {
+        "label": "Husqvarna UK launch release, January 2026",
+        "url": "https://www.husqvarna.com/uk/learn-and-discover/press-room/2026/husqvarna-unveils-a-trio-of-robotic-mowers-with-ai-empowered-vision-tech-for-suburban-gardens/"
+      }
+    ],
+    "imageSource": "https://www.husqvarna.com/-/images/aprimo/husqvarna/robotic-mowers/photos/studio/l/lv/lv-714802.webp?v=f8a815fce00e823d&format=WEBP_LANDSCAPE_CONTAIN_XL",
+    "launchYear": 2026,
+    "launchNote": "Announced in Husqvarna's UK release of 12 January 2026, with authorised-dealer availability from spring 2026.",
+    "launchSource": "https://www.husqvarna.com/uk/learn-and-discover/press-room/2026/husqvarna-unveils-a-trio-of-robotic-mowers-with-ai-empowered-vision-tech-for-suburban-gardens/"
+  },
+  {
+    "slug": "worx-landroid-vision-cloud-4wd-wr344",
+    "name": "WORX Landroid Vision Cloud 4WD (WR344)",
+    "brand": "WORX",
+    "brandSlug": "worx",
+    "category": "Robot mowers",
+    "market": "United States · WR344 1-acre version; price not shown on the checked page",
+    "summary": "A four-wheel-drive, wire-free mower for lawns up to 1 acre that combines stereo-camera Vision AI and V-SLAM with RTK corrections delivered over the cloud.",
+    "fit": "Sloped or complex lawns up to 1 acre where the owner wants RTK accuracy without installing a local antenna.",
+    "caution": "RTK Cloud depends on coverage at the address; WORX asks buyers to check availability, and the checked page showed no price.",
+    "facts": [
+      {
+        "label": "Lawn size",
+        "value": "Up to 1 acre",
+        "meaning": "WR344 rating; the same page also offers ¼, ½ and 1½-acre versions."
+      },
+      {
+        "label": "Navigation",
+        "value": "RTK Cloud, stereo camera, V-SLAM",
+        "meaning": "Corrections arrive over the cloud, so no antenna or pole is installed at home."
+      },
+      {
+        "label": "Slopes",
+        "value": "Up to 84% (40°)",
+        "meaning": "Four-wheel-drive rating from WORX's specification table."
+      },
+      {
+        "label": "Cutting",
+        "value": "8.7 in width; 1.57–3.54 in, electric adjustment",
+        "meaning": "Three blades on a self-levelling disc, with Cut-to-Zero edge trimming."
+      },
+      {
+        "label": "Battery",
+        "value": "20 V 5 Ah (WA3675); 60 min charge",
+        "meaning": "From the specification table."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was Vision Cloud announced?",
+        "answer": "WORX announced Landroid Vision Cloud and Vision Cloud 4WD on 6 January 2026, ahead of showing them at CES 2026."
+      },
+      {
+        "question": "Does it need an RTK antenna?",
+        "answer": "No. WORX states that RTK corrections are delivered to each mower over the cloud, with no rooftop antenna or lawn pole."
+      },
+      {
+        "question": "What happens under trees?",
+        "answer": "WORX says the mower switches to sensor fusion, using V-SLAM, inertial data and odometry when satellite reception drops."
+      },
+      {
+        "question": "How steep can it go?",
+        "answer": "The specification table lists 84% (40°). One feature panel on the same page says 83% (about 40°), so treat the figure as approximate."
+      },
+      {
+        "question": "Which connections does it use?",
+        "answer": "The specification table lists Bluetooth, Wi-Fi and 4G."
+      },
+      {
+        "question": "What is the price?",
+        "answer": "The checked US page showed a placeholder rather than a price on 7 November 2026, and the launch release did not state one. Check with WORX or a dealer."
+      }
+    ],
+    "articles": [
+      "segway-navimow-vs-worx-landroid-robot-mowers",
+      "who-owns-worx-positec-landroid-manufacturing"
+    ],
+    "related": [
+      "husqvarna-automower-312v",
+      "segway-navimow-x430",
+      "mammotion-luba-3-awd-1500"
+    ],
+    "announced": "2026-01-06",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "WORX US Landroid Vision Cloud 4WD product page",
+        "url": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      },
+      {
+        "label": "WORX Vision Cloud launch release, January 2026",
+        "url": "https://www.prnewswire.com/news-releases/worx-unveils-landroid-vision-cloud-redefining-autonomous-lawn-care-with-ai-and-rtk-cloud-precision-302654336.html"
+      }
+    ],
+    "imageSource": "https://images.ctfassets.net/ytovgkvkuan8/4vwzQWM1Pq3X9P6n1AOIDO/e03cf7a8854d10ada89b949a82d12b3d/wr344_vision_cloud_btf_block_desktop_01-1.png",
+    "launchYear": 2026,
+    "launchNote": "Announced by WORX on 6 January 2026 and shown at CES 2026.",
+    "launchSource": "https://www.prnewswire.com/news-releases/worx-unveils-landroid-vision-cloud-redefining-autonomous-lawn-care-with-ai-and-rtk-cloud-precision-302654336.html"
+  },
+  {
+    "slug": "dolphin-eon-120d",
+    "name": "Dolphin EON 120d",
+    "brand": "Maytronics",
+    "brandSlug": "maytronics",
+    "category": "Pool robots",
+    "market": "United States · official store $1,449; product no. 99994410-US",
+    "summary": "Maytronics' first cordless Dolphin line, built to clean floors, walls, waterline, steps and shallow ledges down to 8 inches of water.",
+    "fit": "In-ground or above-ground residential pools up to 50 ft long that have steps, benches or tanning ledges a corded robot misses.",
+    "caution": "Runtime claims vary between Maytronics pages; check cycle lengths and charging routine rather than relying on one headline figure.",
+    "facts": [
+      {
+        "label": "Pool length",
+        "value": "Up to 50 ft",
+        "meaning": "Suits in-ground and above-ground pools of rectangular, round, kidney or free shape."
+      },
+      {
+        "label": "Coverage",
+        "value": "Floor, walls, waterline, steps, ledges",
+        "meaning": "Maytronics says it reaches tanning ledges as shallow as 8 inches."
+      },
+      {
+        "label": "Cycles",
+        "value": "1.5, 2 or 2.5 hours (2 h default)",
+        "meaning": "UltraRun is quoted as up to 2 weeks of cleaning on one charge."
+      },
+      {
+        "label": "Filtration",
+        "value": "DebrisLock ultra-fine BackWash filter",
+        "meaning": "Top-access filter; the EON 100 does not have DebrisLock."
+      },
+      {
+        "label": "App",
+        "value": "Maytronics One, Wi-Fi",
+        "meaning": "Scheduling, monitoring and alerts work when the robot is above the waterline."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did the EON line launch?",
+        "answer": "Maytronics says the Dolphin EON line debuted at CES Unveiled in Las Vegas in January 2026."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "The official US product page listed USD 1,449 when checked on 7 November 2026. Maytronics' September 2026 blog quoted USD 1,199, so prices have varied."
+      },
+      {
+        "question": "How long does it run?",
+        "answer": "The product page lists cycles of 1.5, 2 or 2.5 hours and UltraRun of up to 2 weeks of pool cleaning on one charge. The September blog says up to 4 hours per charge."
+      },
+      {
+        "question": "Can it clean shallow areas?",
+        "answer": "Yes. Maytronics says it covers steps, benches and tanning ledges as shallow as 8 inches."
+      },
+      {
+        "question": "What is the difference from the EON 100?",
+        "answer": "Maytronics' blog says the EON 100 omits DebrisLock filtration and starts at USD 899."
+      },
+      {
+        "question": "What warranty does it have?",
+        "answer": "The US product page lists 3 years."
+      },
+      {
+        "question": "How much does it weigh?",
+        "answer": "The product page lists a robot weight of 24.255 lb."
+      }
+    ],
+    "articles": [
+      "dolphin-robotic-pool-cleaner-buying-guide",
+      "who-makes-dolphin-pool-cleaners-maytronics"
+    ],
+    "related": [
+      "aiper-scuba-s3",
+      "beatbot-aquasense-x",
+      "wybot-s3"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Maytronics US Dolphin EON 120d product page",
+        "url": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      },
+      {
+        "label": "Maytronics blog on the EON cordless line, September 2026",
+        "url": "https://maytronics.com/en-us/blog/pool-technology/eon-cordless-convenience.html"
+      }
+    ],
+    "imageSource": "https://brand.maytronics.com/asset/423cc96f-1300-4ce2-9066-1c28b58657ea/EP-large/Dolphin-EON-120d.webp",
+    "launchYear": 2026,
+    "launchNote": "Maytronics says the Dolphin EON line debuted at CES Unveiled in Las Vegas in January 2026.",
+    "launchSource": "https://maytronics.com/en-us/blog/pool-technology/eon-cordless-convenience.html"
+  },
+  {
+    "slug": "bissell-crosswave-edge-cordless-4328f",
+    "name": "BISSELL CrossWave Edge Cordless (4328F)",
+    "brand": "BISSELL",
+    "brandSlug": "bissell",
+    "category": "Floor washers",
+    "market": "Australia · official store A$449",
+    "summary": "A cordless wet-dry floor washer that vacuums and mops in one pass, with ZeroGap edge cleaning and a self-cleaning cycle in its dock.",
+    "fit": "Sealed hard floors and area rugs in smaller homes that want an entry-priced cordless washer with edge reach.",
+    "caution": "It has no vacuum-only mode, and the 22-minute runtime is short for large homes.",
+    "facts": [
+      {
+        "label": "Runtime",
+        "value": "Up to 22 minutes",
+        "meaning": "Varies by mode and usage."
+      },
+      {
+        "label": "Tanks",
+        "value": "750 ml clean water; 580 ml dirty",
+        "meaning": "Two-Tank Technology keeps clean and dirty water separate."
+      },
+      {
+        "label": "Battery",
+        "value": "25 V; 4-hour recharge",
+        "meaning": "From BISSELL Australia's specification table."
+      },
+      {
+        "label": "Edge cleaning",
+        "value": "ZeroGap Technology",
+        "meaning": "Designed to reach skirting boards and corners."
+      },
+      {
+        "label": "Weight and noise",
+        "value": "4.8 kg; 69 dBA",
+        "meaning": "Manufacturer figures."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did it launch?",
+        "answer": "BISSELL Australia's July 2026 article says the CrossWave Edge Cordless launched earlier in 2026."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "The official Australian store listed A$449 when checked on 7 November 2026."
+      },
+      {
+        "question": "Can it vacuum dry only?",
+        "answer": "No. BISSELL states that it vacuums and mops at the same time and has no vacuum-only mode."
+      },
+      {
+        "question": "Can it clean rugs?",
+        "answer": "BISSELL says it cleans hard floors and refreshes area rugs."
+      },
+      {
+        "question": "How is the brush roll cleaned?",
+        "answer": "The Self-Cleaning mode flushes the brush roll in the supplied tray; the roll can also be rinsed by hand."
+      },
+      {
+        "question": "What warranty does it have in Australia?",
+        "answer": "Two years, plus a 60-day money-back guarantee."
+      }
+    ],
+    "articles": [
+      "bissell-crosswave-hard-floor-washer-logic",
+      "tineco-vs-bissell-crosswave-floor-washers"
+    ],
+    "related": [
+      "shark-aquareach-wd551",
+      "tineco-floor-one-s9-master",
+      "roborock-f25-ace-pro"
+    ],
+    "announced": null,
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "BISSELL Australia CrossWave Edge Cordless product page",
+        "url": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      },
+      {
+        "label": "BISSELL Australia 2026 CrossWave lineup article",
+        "url": "https://bissell.com.au/blogs/the-clean-list/2026-at-bissell-smarter-cleaning-with-the-expanding-crosswave-lineup"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0079/6229/6372/files/EC1.png?v=1772773024",
+    "launchYear": 2026,
+    "launchNote": "BISSELL Australia's 23 July 2026 article lists it among the CrossWave models launched earlier in 2026.",
+    "launchSource": "https://bissell.com.au/blogs/the-clean-list/2026-at-bissell-smarter-cleaning-with-the-expanding-crosswave-lineup"
+  },
+  {
+    "slug": "karcher-vcs-7-28-infinity-signature-line",
+    "name": "Kärcher VCS 7-28 Infinity Signature Line",
+    "brand": "Kärcher",
+    "brandSlug": "karcher",
+    "category": "Cordless vacuums",
+    "market": "International · order no. 13492700; price not shown on the checked page",
+    "summary": "Kärcher's top 28 V cordless stick vacuum, with a Smart Mode that adjusts power to floor type, dirt level and filter condition.",
+    "fit": "Mixed hard-floor and carpet homes that want automatic power control, a forward-reverse floor nozzle and a parking station.",
+    "caution": "The 70-minute runtime is an Eco figure without the powered floor nozzle; Smart mode is about 45 minutes and Boost about 10 minutes.",
+    "facts": [
+      {
+        "label": "Runtime (2.5 Ah)",
+        "value": "Eco ~70 min; Smart ~45; Standard ~30; Boost ~10",
+        "meaning": "Eco excludes the electric floor nozzle."
+      },
+      {
+        "label": "Battery",
+        "value": "28 V, 2.5 Ah; 120 min charge",
+        "meaning": "Replaceable battery on Kärcher's 28 V platform."
+      },
+      {
+        "label": "Smart Mode",
+        "value": "Floor, dirt and filter sensing",
+        "meaning": "Carpet Turbo raises roller speed to up to 3,400 rpm on carpet."
+      },
+      {
+        "label": "Filtration",
+        "value": "Multi-stage HEPA, 99.9% of particles ≥0.3 µm",
+        "meaning": "Contactless filter cleaning by lever."
+      },
+      {
+        "label": "Weight and dust bin",
+        "value": "3.2 kg; 800 ml",
+        "meaning": "Weight without accessories."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was it announced?",
+        "answer": "Kärcher presented the VCS Infinity Line, including the VCS 7-28 Infinity, in a press release dated 8 September 2026."
+      },
+      {
+        "question": "What does Smart Mode do?",
+        "answer": "Kärcher says it continuously analyses floor type, dirt level and filter condition and adjusts motor power, roller and airflow in real time."
+      },
+      {
+        "question": "How long does it run?",
+        "answer": "With the 2.5 Ah battery, about 70 minutes in Eco without the electric floor nozzle, 45 in Smart, 30 in Standard and 10 in Boost."
+      },
+      {
+        "question": "What is the Signature Line?",
+        "answer": "Kärcher reserves the founder's signature for selected top models. This configuration includes a self-standing parking station and a mini turbo brush."
+      },
+      {
+        "question": "How noisy is it?",
+        "answer": "The product page lists a sound power level below 77 dB(A)."
+      },
+      {
+        "question": "What is the price?",
+        "answer": "The international product page did not show a price on 7 November 2026. Check the local Kärcher store."
+      }
+    ],
+    "articles": [
+      "karcher-hidden-champion-in-cleaning-appliances",
+      "german-vacuum-brands-in-the-cordless-wave"
+    ],
+    "related": [
+      "bosch-unlimited-10-bbs104sbuc",
+      "miele-triflex-hx3",
+      "shark-powerdetect-speed-ia3241"
+    ],
+    "announced": "2026-09-08",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Kärcher international VCS 7-28 Infinity Signature Line product page",
+        "url": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html"
+      },
+      {
+        "label": "Kärcher VCS Infinity Line press release, September 2026",
+        "url": "https://www.kaercher.com/int/inside-kaercher/company/media-information/media-information/4027-vcs-infinity-line-kaercher-presents-new-generation-of-battery-powered-vacuum-cleaners.html"
+      }
+    ],
+    "imageSource": "https://s1.kaercher-media.com/mam/13492700/mainproduct/01a00ee2-08fc-77eb-99fe-c421ee897d87/d0.jpg",
+    "launchYear": 2026,
+    "launchNote": "Presented in Kärcher's VCS Infinity Line press release of 8 September 2026.",
+    "launchSource": "https://www.kaercher.com/int/inside-kaercher/company/media-information/media-information/4027-vcs-infinity-line-kaercher-presents-new-generation-of-battery-powered-vacuum-cleaners.html"
   }
 ]

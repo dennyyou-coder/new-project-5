@@ -17022,5 +17022,653 @@
         "note": "Official or launch reference; confirm the exact regional model and current terms."
       }
     ]
+  },
+  "husqvarna-automower-312v": {
+    "verdict": "A dealer-sold, wire-free mower for mid-sized gardens with AI vision. Check Wi-Fi coverage across the lawn and the boundary slopes before buying.",
+    "notFor": "Lawns with weak Wi-Fi at the far end, steep boundary edges above 15%, or buyers who want app-controlled cutting height.",
+    "specifications": [
+      {
+        "label": "Working area",
+        "value": "1,200 m² (±20%)",
+        "meaning": "Capacity rating.",
+        "source": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/"
+      },
+      {
+        "label": "Navigation",
+        "value": "Satellite navigation + AI vision camera",
+        "meaning": "Virtual boundaries; no wire.",
+        "source": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/"
+      },
+      {
+        "label": "Slope inside area",
+        "value": "Up to 40%",
+        "meaning": "Inside the installation.",
+        "source": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/"
+      },
+      {
+        "label": "Slope at boundary",
+        "value": "Up to 15%",
+        "meaning": "Plan boundaries away from steep edges.",
+        "source": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/"
+      },
+      {
+        "label": "Cutting width",
+        "value": "22 cm",
+        "meaning": "Manufacturer figure.",
+        "source": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/"
+      },
+      {
+        "label": "Cutting height",
+        "value": "20–50 mm, manual",
+        "meaning": "Set by hand on the mower.",
+        "source": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth and Wi-Fi",
+        "meaning": "Wi-Fi over the whole lawn is required for loop-free installation.",
+        "source": "https://www.husqvarna.com/uk/learn-and-discover/press-room/2026/husqvarna-unveils-a-trio-of-robotic-mowers-with-ai-empowered-vision-tech-for-suburban-gardens/"
+      },
+      {
+        "label": "Article number",
+        "value": "970 83 11-03",
+        "meaning": "UK product page.",
+        "source": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United Kingdom",
+        "amount": "GBP 1,499",
+        "source": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/",
+        "kind": "Official store list price",
+        "date": "2026-11-07",
+        "note": "Listed including VAT on the UK product page when checked."
+      },
+      {
+        "market": "United Kingdom",
+        "amount": "GBP 1,499 RRP",
+        "source": "https://www.husqvarna.com/uk/learn-and-discover/press-room/2026/husqvarna-unveils-a-trio-of-robotic-mowers-with-ai-empowered-vision-tech-for-suburban-gardens/",
+        "kind": "Launch RRP",
+        "date": "2026-01-12",
+        "note": "From the UK launch release; sold through authorised dealers from spring 2026."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Husqvarna Automower 312V",
+          "url": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "WORX Landroid Vision Cloud 4WD (WR344)",
+          "url": "https://www.worx.com/en-us/landroid-vision-cloud-4wd",
+          "market": "United States"
+        },
+        {
+          "name": "Segway Navimow X430",
+          "url": "https://navimow.com/products/navimow-x4-robot-lawn-mower",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Rated lawn",
+          "values": [
+            "1,200 m² (±20%)",
+            "1 acre",
+            "1 acre"
+          ]
+        },
+        {
+          "label": "Positioning",
+          "values": [
+            "Satellite + AI vision camera",
+            "RTK Cloud, stereo camera, V-SLAM",
+            "Network RTK + 360° vision; optional local antenna"
+          ]
+        },
+        {
+          "label": "Slope rating",
+          "values": [
+            "40% inside / 15% boundary",
+            "84% (40°)",
+            "84% / about 40°"
+          ]
+        },
+        {
+          "label": "Cutting width",
+          "values": [
+            "22 cm",
+            "8.7 in",
+            "17 in"
+          ]
+        }
+      ],
+      "takeaway": "The 312V is the dealer-backed choice for moderate slopes; WORX and Segway target larger, steeper lawns with RTK and wider decks."
+    },
+    "resources": [
+      {
+        "label": "Husqvarna UK Automower 312V product page",
+        "url": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Husqvarna UK launch release, January 2026",
+        "url": "https://www.husqvarna.com/uk/learn-and-discover/press-room/2026/husqvarna-unveils-a-trio-of-robotic-mowers-with-ai-empowered-vision-tech-for-suburban-gardens/",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "worx-landroid-vision-cloud-4wd-wr344": {
+    "verdict": "A four-wheel-drive, antenna-free RTK mower for steep, complex lawns up to 1 acre. Confirm RTK Cloud coverage and the local price first.",
+    "notFor": "Addresses without RTK Cloud coverage, or buyers who need a published price before committing.",
+    "specifications": [
+      {
+        "label": "Recommended lawn",
+        "value": "1 acre",
+        "meaning": "WR344 version.",
+        "source": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      },
+      {
+        "label": "Navigation",
+        "value": "RTK Cloud, stereo camera, V-SLAM",
+        "meaning": "Cloud-delivered RTK corrections.",
+        "source": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      },
+      {
+        "label": "Maximum slope",
+        "value": "84% (40°)",
+        "meaning": "Specification table; a feature panel says 83%.",
+        "source": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      },
+      {
+        "label": "Cutting width",
+        "value": "8.7 in",
+        "meaning": "Three blades, self-levelling disc.",
+        "source": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      },
+      {
+        "label": "Cutting height",
+        "value": "1.57–3.54 in, electric",
+        "meaning": "Set in the app.",
+        "source": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      },
+      {
+        "label": "Battery",
+        "value": "20 V 5 Ah (WA3675)",
+        "meaning": "60-minute charge time.",
+        "source": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth, Wi-Fi, 4G",
+        "meaning": "From the specification table.",
+        "source": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      },
+      {
+        "label": "Weight with battery",
+        "value": "39.9 lb",
+        "meaning": "Manufacturer figure.",
+        "source": "https://www.worx.com/en-us/landroid-vision-cloud-4wd"
+      }
+    ],
+    "prices": [],
+    "comparison": {
+      "models": [
+        {
+          "name": "WORX Landroid Vision Cloud 4WD (WR344)",
+          "url": "https://www.worx.com/en-us/landroid-vision-cloud-4wd",
+          "market": "United States"
+        },
+        {
+          "name": "Husqvarna Automower 312V",
+          "url": "https://www.husqvarna.com/uk/robotic-lawn-mowers/automower-312v/",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Mammotion LUBA 3 AWD 1500",
+          "url": "https://us.mammotion.com/products/luba-3-awd-robot-lawn-mower?variant=50985073377578",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Rated lawn",
+          "values": [
+            "1 acre",
+            "1,200 m² (±20%)",
+            "1,500 m² / 0.37 acre"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "RTK Cloud, stereo camera, V-SLAM",
+            "Satellite + AI vision camera",
+            "360° LiDAR + AI vision"
+          ]
+        },
+        {
+          "label": "Slope rating",
+          "values": [
+            "84% (40°)",
+            "40% inside / 15% boundary",
+            "80% / 38.6° working area"
+          ]
+        },
+        {
+          "label": "Connectivity",
+          "values": [
+            "Bluetooth, Wi-Fi, 4G",
+            "Bluetooth, Wi-Fi",
+            "4G, Wi-Fi and Bluetooth"
+          ]
+        }
+      ],
+      "takeaway": "WORX pairs the largest rated area here with cloud RTK and 4WD; Mammotion relies on LiDAR, and Husqvarna on satellite plus vision for smaller gardens."
+    },
+    "resources": [
+      {
+        "label": "WORX US Landroid Vision Cloud 4WD product page",
+        "url": "https://www.worx.com/en-us/landroid-vision-cloud-4wd",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "WORX Vision Cloud launch release, January 2026",
+        "url": "https://www.prnewswire.com/news-releases/worx-unveils-landroid-vision-cloud-redefining-autonomous-lawn-care-with-ai-and-rtk-cloud-precision-302654336.html",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dolphin-eon-120d": {
+    "verdict": "A cordless Dolphin for pools with steps and shallow ledges, with ultra-fine filtration. Read runtime as cycle length plus charging interval.",
+    "notFor": "Buyers who want a self-emptying station or surface skimming, or pools longer than 50 ft.",
+    "specifications": [
+      {
+        "label": "Pool length",
+        "value": "Up to 50 ft",
+        "meaning": "In-ground and above-ground pools.",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      },
+      {
+        "label": "Coverage",
+        "value": "Floor, walls, waterline, steps, ledges",
+        "meaning": "Ledges as shallow as 8 inches.",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      },
+      {
+        "label": "Cycle times",
+        "value": "1.5, 2 or 2.5 h (2 h default)",
+        "meaning": "Selectable cycles.",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      },
+      {
+        "label": "UltraRun",
+        "value": "Up to 2 weeks of pool cleaning on one charge",
+        "meaning": "Maytronics claim.",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      },
+      {
+        "label": "Filtration",
+        "value": "DebrisLock ultra-fine BackWash filter, top access",
+        "meaning": "Not on the EON 100.",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      },
+      {
+        "label": "App",
+        "value": "Maytronics One, Wi-Fi",
+        "meaning": "Works above the waterline.",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      },
+      {
+        "label": "Robot weight",
+        "value": "24.255 lb",
+        "meaning": "Manufacturer figure.",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      },
+      {
+        "label": "Warranty",
+        "value": "3 years",
+        "meaning": "US product page.",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 1,449",
+        "source": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html",
+        "kind": "Official store list price",
+        "date": "2026-11-07",
+        "note": "Listed on the US product page when checked."
+      },
+      {
+        "market": "United States",
+        "amount": "USD 1,199",
+        "source": "https://maytronics.com/en-us/blog/pool-technology/eon-cordless-convenience.html",
+        "kind": "Price quoted by Maytronics",
+        "date": "2026-09-30",
+        "note": "Quoted in Maytronics' September 2026 blog; check the current store price."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dolphin EON 120d",
+          "url": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html",
+          "market": "United States"
+        },
+        {
+          "name": "Aiper Scuba S3",
+          "url": "https://aiper.store/us/products/aiper-scuba-s3-cordless-robotic-pool-cleaner",
+          "market": "United States"
+        },
+        {
+          "name": "Beatbot AquaSense X",
+          "url": "https://beatbot.com/products/aquasense-x",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Pool rating",
+          "values": [
+            "Up to 50 ft length",
+            "Up to 1,614 ft²",
+            "Up to 3,875 ft²"
+          ]
+        },
+        {
+          "label": "Runtime claim",
+          "values": [
+            "1.5–2.5 h cycles; UltraRun up to 2 weeks",
+            "Up to 180 min; 240 min Eco",
+            "Up to 10 h surface / 5 h floor"
+          ]
+        },
+        {
+          "label": "Filtration",
+          "values": [
+            "DebrisLock ultra-fine",
+            "180-micron + 3-micron",
+            "150 microns"
+          ]
+        },
+        {
+          "label": "Station or retrieval",
+          "values": [
+            "Not stated",
+            "Waterline return with app alerts",
+            "AstroRinse station"
+          ]
+        }
+      ],
+      "takeaway": "The EON 120d competes on step and ledge coverage and filtration; Beatbot adds a self-cleaning station and surface skimming at a higher price tier."
+    },
+    "resources": [
+      {
+        "label": "Maytronics US Dolphin EON 120d product page",
+        "url": "https://www.maytronics.com/en-us/dolphin-eon-120d/99994410-US.html",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Maytronics blog on the EON cordless line, September 2026",
+        "url": "https://maytronics.com/en-us/blog/pool-technology/eon-cordless-convenience.html",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "bissell-crosswave-edge-cordless-4328f": {
+    "verdict": "An entry-priced cordless floor washer with ZeroGap edge cleaning for smaller homes. Accept the short runtime and lack of a dry-only mode.",
+    "notFor": "Large homes, buyers who want hot-water washing or dock drying, or anyone who needs a dry-vacuum mode.",
+    "specifications": [
+      {
+        "label": "Runtime",
+        "value": "Up to 22 minutes",
+        "meaning": "Varies by mode and usage.",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      },
+      {
+        "label": "Battery",
+        "value": "25 V",
+        "meaning": "4-hour recharge.",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      },
+      {
+        "label": "Clean-water tank",
+        "value": "750 ml",
+        "meaning": "Manufacturer figure.",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      },
+      {
+        "label": "Dirty-water tank",
+        "value": "580 ml",
+        "meaning": "Manufacturer figure.",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      },
+      {
+        "label": "Edge cleaning",
+        "value": "ZeroGap Technology",
+        "meaning": "Reaches skirting boards and corners.",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      },
+      {
+        "label": "Weight",
+        "value": "4.8 kg",
+        "meaning": "Manufacturer figure.",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      },
+      {
+        "label": "Noise",
+        "value": "69 dBA",
+        "meaning": "Manufacturer figure.",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      },
+      {
+        "label": "Warranty",
+        "value": "2 years + 60-day money-back guarantee",
+        "meaning": "Australia.",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Australia",
+        "amount": "AUD 449",
+        "source": "https://bissell.com.au/products/crosswave-r-edge-cordless",
+        "kind": "Official store list price",
+        "date": "2026-11-07",
+        "note": "Listed on BISSELL Australia's store when checked."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "BISSELL CrossWave Edge Cordless (4328F)",
+          "url": "https://bissell.com.au/products/crosswave-r-edge-cordless",
+          "market": "Australia"
+        },
+        {
+          "name": "Shark AquaReach WD551",
+          "url": "https://www.sharkninja.com/shark-aquareach-vacuum-mop/WD551.html",
+          "market": "United States"
+        },
+        {
+          "name": "Tineco FLOOR ONE S9 Master",
+          "url": "https://us.tineco.com/products/floor-one-s9-master.html",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Runtime claim",
+          "values": [
+            "Up to 22 min",
+            "Up to 40 min",
+            "Up to 65 min quiet / 50 min auto"
+          ]
+        },
+        {
+          "label": "Clean-water tank",
+          "values": [
+            "750 ml",
+            "Not stated",
+            "0.85 L"
+          ]
+        },
+        {
+          "label": "Hot water or hot-air drying",
+          "values": [
+            "Not stated",
+            "Not stated",
+            "126°F water; 185°F drying air"
+          ]
+        },
+        {
+          "label": "Weight",
+          "values": [
+            "4.8 kg",
+            "12.61 lb",
+            "Not stated"
+          ]
+        }
+      ],
+      "takeaway": "The CrossWave Edge Cordless is the low-cost, short-runtime option; Shark adds a spray wand and Tineco adds hot water and dock drying."
+    },
+    "resources": [
+      {
+        "label": "BISSELL Australia CrossWave Edge Cordless product page",
+        "url": "https://bissell.com.au/products/crosswave-r-edge-cordless",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "BISSELL Australia 2026 CrossWave lineup article",
+        "url": "https://bissell.com.au/blogs/the-clean-list/2026-at-bissell-smarter-cleaning-with-the-expanding-crosswave-lineup",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "karcher-vcs-7-28-infinity-signature-line": {
+    "verdict": "Kärcher's top cordless stick with automatic Smart Mode and a parking station. Budget for a second battery if you rely on Boost.",
+    "notFor": "Buyers who want an auto-empty dock, or long runtime at full power on a single battery.",
+    "specifications": [
+      {
+        "label": "Battery",
+        "value": "28 V, 2.5 Ah, replaceable",
+        "meaning": "120-minute charge with standard charger.",
+        "source": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html"
+      },
+      {
+        "label": "Runtime",
+        "value": "Eco ~70 min; Smart ~45; Standard ~30; Boost ~10",
+        "meaning": "Eco excludes the electric floor nozzle.",
+        "source": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html"
+      },
+      {
+        "label": "Smart Mode",
+        "value": "Floor, dirt and filter sensing",
+        "meaning": "Patented Smart Power technology.",
+        "source": "https://www.kaercher.com/int/inside-kaercher/company/media-information/media-information/4027-vcs-infinity-line-kaercher-presents-new-generation-of-battery-powered-vacuum-cleaners.html"
+      },
+      {
+        "label": "Carpet Turbo",
+        "value": "Up to 3,400 rpm roller speed",
+        "meaning": "Maximum in Smart mode on carpet.",
+        "source": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html"
+      },
+      {
+        "label": "Filtration",
+        "value": "Multi-stage HEPA, 99.9% ≥0.3 µm",
+        "meaning": "Internal tests.",
+        "source": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html"
+      },
+      {
+        "label": "Dust container",
+        "value": "800 ml",
+        "meaning": "Bagless.",
+        "source": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html"
+      },
+      {
+        "label": "Weight",
+        "value": "3.2 kg",
+        "meaning": "Without accessories.",
+        "source": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html"
+      },
+      {
+        "label": "Sound power",
+        "value": "< 77 dB(A)",
+        "meaning": "EN 60704-2-1, internal tests.",
+        "source": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html"
+      }
+    ],
+    "prices": [],
+    "comparison": {
+      "models": [
+        {
+          "name": "Kärcher VCS 7-28 Infinity Signature Line",
+          "url": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html",
+          "market": "International"
+        },
+        {
+          "name": "Bosch Unlimited 10 BBS104SBUC",
+          "url": "https://www.bosch-home.com/us/en/product/vacuum-cleaners/cordless-vacuum-cleaners/unlimited/unlimited10/BBS104SBUC",
+          "market": "United States"
+        },
+        {
+          "name": "Miele Triflex HX3",
+          "url": "https://www.miele.co.uk/product/12878400/cordless-stick-vacuum-cleaners-triflex-hx3-brilliant-white",
+          "market": "United Kingdom"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Battery",
+          "values": [
+            "28 V, 2.5 Ah",
+            "18 V, 4 Ah",
+            "25.2 V, 2,500 mAh"
+          ]
+        },
+        {
+          "label": "Maximum runtime",
+          "values": [
+            "About 70 min, Eco without powered nozzle",
+            "Up to 80 min, Eco without electrical nozzle",
+            "Up to 70 min on Low, PowerUnit solo"
+          ]
+        },
+        {
+          "label": "Automatic sensing",
+          "values": [
+            "Floor, dirt and filter (Smart Mode)",
+            "MicroClean Sensor and Ring",
+            "FloorDetect"
+          ]
+        },
+        {
+          "label": "Filtration",
+          "values": [
+            "Multi-stage HEPA",
+            "Compression Slider plus HEPA",
+            "HEPA lifetime filter"
+          ]
+        }
+      ],
+      "takeaway": "All three headline about 70–80 minutes only in their lowest mode; Kärcher's difference is sensing that also watches filter condition."
+    },
+    "resources": [
+      {
+        "label": "Kärcher international VCS 7-28 Infinity Signature Line product page",
+        "url": "https://www.kaercher.com/int/home-garden/vacuum-cleaners/vcs-7-28-infinity-signature-line-13492700.html",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Kärcher VCS Infinity Line press release, September 2026",
+        "url": "https://www.kaercher.com/int/inside-kaercher/company/media-information/media-information/4027-vcs-infinity-line-kaercher-presents-new-generation-of-battery-powered-vacuum-cleaners.html",
+        "note": "Official page or company release; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }

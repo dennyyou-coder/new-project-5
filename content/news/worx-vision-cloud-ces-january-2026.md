@@ -8,7 +8,7 @@ publishedAt: "2026-10-06T13:54:17+08:00"
 sortDate: "2026-10-06T13:54:17+08:00"
 eventDate: "2026-01-06"
 brand_slugs: ["worx"]
-product_slugs: []
+product_slugs: ["worx-landroid-vision-cloud-4wd-wr344"]
 related_articles: []
 source_titles: ["Worx — Vision Cloud CES announcement"]
 source_urls: ["https://www.prnewswire.com/news-releases/worx-unveils-landroid-vision-cloud-redefining-autonomous-lawn-care-with-ai-and-rtk-cloud-precision-302654336.html"]

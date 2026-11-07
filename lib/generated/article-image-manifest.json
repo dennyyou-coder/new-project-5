@@ -2159,6 +2159,24 @@
       "sourceHash": "sha256:17cc4fef9144dcd572cbf61cf71e2ef888821781bf462ad7fcd0049372f1a12f",
       "outputHash": "sha256:1e6b5c416e3a62805a5832cb2db86e7713512cf0ddd8ceeaffc8101daea98a96"
     },
+    "/images/articles/bissell-crosswave-edge-cordless-4328f/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 13992,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7879edc48067f0b8dcc1beca80bc0448a350133094e33be4e169ba6174d47819",
+      "outputHash": "sha256:bfaaa66e3df8cb9e0560c09858bd404b19f2f85f7f62b974ac2f44694dc4512c",
+      "mobile": {
+        "src": "/images/articles/bissell-crosswave-edge-cordless-4328f/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 8356,
+        "outputHash": "sha256:04eeca64f77cb14d344fe96b195db29b0615d2c0c360a2d0b55c714d506665eb"
+      }
+    },
     "/images/articles/bissell-vs-tineco-patent-details/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -3804,6 +3822,24 @@
         "height": 534,
         "bytes": 42826,
         "outputHash": "sha256:dd7f3b5f5fd81273deb874fd629bd2681369597b4ef6c40cce19569e358ddcf8"
+      }
+    },
+    "/images/articles/dolphin-eon-120d/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1090,
+      "height": 1090,
+      "bytes": 34202,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5e6d3257a069480bf023651943a1d0a81fc22afcef9d44913165ab80eadf0738",
+      "outputHash": "sha256:4edd014dc728d81584b74f2482872f1567ffa79371ef5dfcab6fd2e8ee27e5f4",
+      "mobile": {
+        "src": "/images/articles/dolphin-eon-120d/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 19660,
+        "outputHash": "sha256:debff67558a28321b0d3847b3c18d2dd9a056646e8343ca0022585ad137918b2"
       }
     },
     "/images/articles/donlim-xinbao-first-half-results-august-2026/01-cover.webp": {
@@ -6438,6 +6474,17 @@
         "outputHash": "sha256:584a7c184b2ce8d6f9846812fb1957774cb62753342d14a0992d9e9da2148e54"
       }
     },
+    "/images/articles/husqvarna-automower-312v/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 830,
+      "height": 553,
+      "bytes": 43004,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:67d2d11f9abbc766d2190cd74751a26c44e04781bf6d2ab3412efc24e0cd8236",
+      "outputHash": "sha256:058972ef5a3bb5ca52e2321a668e6ed480334a409536dc1a77b71d65777a326e"
+    },
     "/images/articles/husqvarna-fcc-exemption-robotic-mowers/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -7714,6 +7761,24 @@
         "height": 450,
         "bytes": 36836,
         "outputHash": "sha256:c2ac4066dce8b24ca46a98162e8b6299eeabf947b00acde91ee0b75d36205c90"
+      }
+    },
+    "/images/articles/karcher-vcs-7-28-infinity-signature-line/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 61834,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c7be65e69719755d7e23176b9d124f3a7781d6bd4cdccc7f8d54922e499ce9ec",
+      "outputHash": "sha256:9053d619e9c8a21a952fa381bf336105daa8dd8dce082dd14f5fa631af3fb12e",
+      "mobile": {
+        "src": "/images/articles/karcher-vcs-7-28-infinity-signature-line/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 21882,
+        "outputHash": "sha256:7d67ae7897891b6d8734995b35424336b8d3b3cf1611b6f46956d6f8bb0dffed"
       }
     },
     "/images/articles/kingclean-ai-factory-teams/01-cover.webp": {
@@ -14039,6 +14104,17 @@
         "bytes": 65734,
         "outputHash": "sha256:33edc7f3ed288e6bab5087e6e7eaf84bcb78685d4a789cbc66f222455f6ac2e3"
       }
+    },
+    "/images/articles/worx-landroid-vision-cloud-4wd-wr344/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 960,
+      "height": 640,
+      "bytes": 37350,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:d536fe035591d82afb9a48937430eaea64462f84f981408010669baff90e6c00",
+      "outputHash": "sha256:a72fdd8f2f9f8068128845e06cbe9dfb09735dffcca6d46747f2eb890becba7f"
     },
     "/images/articles/wybot-s3/01-cover.webp": {
       "role": "cover",
@@ -39202,6 +39278,11 @@
         "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-013.png"
       ]
     },
+    "bissell-crosswave-edge-cordless-4328f": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/bissell-crosswave-edge-cordless-4328f/01-cover.webp",
+      "body": []
+    },
     "bissell-crosswave-hard-floor-washer-logic": {
       "budgetClass": "standard",
       "cover": "/images/insights/bissell-crosswave-hard-floor-washer-logic-cover.jpg",
@@ -39919,6 +40000,11 @@
     "do-you-still-need-trade-shows-if-you-know-the-suppliers": {
       "budgetClass": "standard",
       "cover": "/images/insights/do-you-still-need-trade-shows-if-you-know-the-suppliers-cover.jpg",
+      "body": []
+    },
+    "dolphin-eon-120d": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dolphin-eon-120d/01-cover.webp",
       "body": []
     },
     "dolphin-robotic-pool-cleaner-buying-guide": {
@@ -41019,6 +41105,11 @@
         "/images/insights/hundred-years-of-cleaning-appliance-history-image-109.jpg"
       ]
     },
+    "husqvarna-automower-312v": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/husqvarna-automower-312v/01-cover.webp",
+      "body": []
+    },
     "husqvarna-automower-vs-mammotion-luba": {
       "budgetClass": "standard",
       "cover": "/images/blog/automower-vs-luba-platform-decision-map.webp",
@@ -41289,6 +41380,11 @@
         "/images/insights/karcher-hidden-champion-in-cleaning-appliances-image-014.jpg",
         "/images/insights/karcher-hidden-champion-in-cleaning-appliances-image-015.jpg"
       ]
+    },
+    "karcher-vcs-7-28-infinity-signature-line": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/karcher-vcs-7-28-infinity-signature-line/01-cover.webp",
+      "body": []
     },
     "kingclean-ai-factory-teams": {
       "budgetClass": "standard",
@@ -44143,6 +44239,11 @@
       "cover": "/images/insights/world-class-denny-or-world-class-bragging-cover.jpg",
       "body": []
     },
+    "worx-landroid-vision-cloud-4wd-wr344": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/worx-landroid-vision-cloud-4wd-wr344/01-cover.webp",
+      "body": []
+    },
     "wybot-s3": {
       "budgetClass": "standard",
       "cover": "/images/articles/wybot-s3/01-cover.webp",
@@ -44716,6 +44817,15 @@
         }
       }
     },
+    "bissell-crosswave-edge-cordless-4328f": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/bissell-crosswave-edge-cordless-4328f/01-cover.webp",
+          "hash": "sha256:7879edc48067f0b8dcc1beca80bc0448a350133094e33be4e169ba6174d47819"
+        }
+      }
+    },
     "bissell-vs-tineco-patent-details": {
       "files": {
         "01-cover.png": {
@@ -45258,6 +45368,15 @@
           "status": "matched",
           "primary": "/images/articles/dji-growth-drones-pocket-cameras/04-pocket-design.webp",
           "hash": "sha256:102cc628f62ea04f1cf5deefa9e019cf09490a55c0cefdcf14a64b774bed45f1"
+        }
+      }
+    },
+    "dolphin-eon-120d": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/dolphin-eon-120d/01-cover.webp",
+          "hash": "sha256:5e6d3257a069480bf023651943a1d0a81fc22afcef9d44913165ab80eadf0738"
         }
       }
     },
@@ -46218,6 +46337,15 @@
         }
       }
     },
+    "husqvarna-automower-312v": {
+      "files": {
+        "01-cover.webp": {
+          "status": "matched",
+          "primary": "/images/articles/husqvarna-automower-312v/01-cover.webp",
+          "hash": "sha256:67d2d11f9abbc766d2190cd74751a26c44e04781bf6d2ab3412efc24e0cd8236"
+        }
+      }
+    },
     "husqvarna-fcc-exemption-robotic-mowers": {
       "files": {
         "01-cover.webp": {
@@ -46524,6 +46652,15 @@
           "status": "matched",
           "primary": "/images/articles/karcher-family-business-alfred-irene-hartmut-jenner/07-robotics-v3.webp",
           "hash": "sha256:ee3beebcfd378d801c735b157ee5e43c3e2f3aa6c53c65382dd4a13883dd0ffa"
+        }
+      }
+    },
+    "karcher-vcs-7-28-infinity-signature-line": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/karcher-vcs-7-28-infinity-signature-line/01-cover.webp",
+          "hash": "sha256:c7be65e69719755d7e23176b9d124f3a7781d6bd4cdccc7f8d54922e499ce9ec"
         }
       }
     },
@@ -48783,6 +48920,15 @@
           "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
           "primary": "/images/blog/toro-product-responsibility-map.svg",
           "hash": "sha256:740becd8bf8f1da495940bfe6d8f12f12e279e8ed48fbab25deabcc844f20bf3"
+        }
+      }
+    },
+    "worx-landroid-vision-cloud-4wd-wr344": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/worx-landroid-vision-cloud-4wd-wr344/01-cover.webp",
+          "hash": "sha256:d536fe035591d82afb9a48937430eaea64462f84f981408010669baff90e6c00"
         }
       }
     },
