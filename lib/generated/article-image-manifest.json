@@ -14303,6 +14303,42 @@
         "outputHash": "sha256:33edc7f3ed288e6bab5087e6e7eaf84bcb78685d4a789cbc66f222455f6ac2e3"
       }
     },
+    "/images/articles/why-i-am-committing-to-wcb-expo/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 178490,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a15f5440026c7a7745ee766d5aae9fb10f89dc37ce848c8f7a7b759b7f0c0d28",
+      "outputHash": "sha256:3728c9002958aa48f084ba2b2adf1bfb58397a0a90ce5532db8b9d6d34d794f3",
+      "mobile": {
+        "src": "/images/articles/why-i-am-committing-to-wcb-expo/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 62742,
+        "outputHash": "sha256:467fc00dfe2c9e9fb53e3baf15d85808eebae1aef22f85605534059b7b569303"
+      }
+    },
+    "/images/articles/why-i-am-committing-to-wcb-expo/02-buyer-matchmaking.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 146674,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:dc9de7c7357b8e00fab1eec5f2e8beabc6bc3f9d98dd54cf20c873aee5aa1d2c",
+      "outputHash": "sha256:b13ee4199a9bcc7139677d2c439f345e793a58426b5178eef4687b111e06bb96",
+      "mobile": {
+        "src": "/images/articles/why-i-am-committing-to-wcb-expo/02-buyer-matchmaking-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 56692,
+        "outputHash": "sha256:bcf7f07bbeafcfcd8cc66cc9014c025920b2fd4d5eea65204be893216a77fa6d"
+      }
+    },
     "/images/articles/worx-landroid-vision-cloud-4wd-wr344/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -44484,6 +44520,13 @@
       "cover": "/images/insights/why-china-needs-a-cleaning-appliance-ifa-cover.jpg",
       "body": []
     },
+    "why-i-am-committing-to-wcb-expo": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/why-i-am-committing-to-wcb-expo/01-cover.webp",
+      "body": [
+        "/images/articles/why-i-am-committing-to-wcb-expo/02-buyer-matchmaking.webp"
+      ]
+    },
     "world-class-denny-or-world-class-bragging": {
       "budgetClass": "standard",
       "cover": "/images/insights/world-class-denny-or-world-class-bragging-cover.jpg",
@@ -49265,6 +49308,20 @@
           "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
           "primary": "/images/blog/toro-product-responsibility-map.svg",
           "hash": "sha256:740becd8bf8f1da495940bfe6d8f12f12e279e8ed48fbab25deabcc844f20bf3"
+        }
+      }
+    },
+    "why-i-am-committing-to-wcb-expo": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/why-i-am-committing-to-wcb-expo/01-cover.webp",
+          "hash": "sha256:a15f5440026c7a7745ee766d5aae9fb10f89dc37ce848c8f7a7b759b7f0c0d28"
+        },
+        "02-buyer-matchmaking.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/why-i-am-committing-to-wcb-expo/02-buyer-matchmaking.webp",
+          "hash": "sha256:dc9de7c7357b8e00fab1eec5f2e8beabc6bc3f9d98dd54cf20c873aee5aa1d2c"
         }
       }
     },
