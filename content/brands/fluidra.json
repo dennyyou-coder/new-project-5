@@ -13,8 +13,9 @@
   "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with Fluidra or its brands. Group reporting, brand portfolio statements and model-level product responsibility are identified separately.",
   "headquarters":"Sant Cugat del Vallès, Barcelona, Spain",
   "founded":"1969; listed group created through the 2018 Fluidra–Zodiac merger",
-  "heroImage":"/images/brands/fluidra/hero-fluidra-pool-brand-portfolio.webp",
-  "heroImageAlt":"Fluidra pool and wellness brand portfolio map",
+  "heroImage":"/images/brands/fluidra/hero-polaris-freedom-plus.webp",
+  "heroImageCaption": "Polaris is one of Fluidra's lead pool-cleaning brands.",
+  "heroImageAlt":"Polaris FREEDOM Plus cordless robotic pool cleaner, a Fluidra brand",
   "logoImage":"/images/brands/fluidra/logo.webp",
   "logoImageAlt":"Fluidra logo",
   "logoSourceUrl":"https://www.fluidra.com/",
@@ -24,7 +25,7 @@
     {"placement":"operations","src":"/images/blog/hayward-pentair-fluidra-buyer-responsibility-check.webp","alt":"Pool-equipment buyer responsibility comparison","caption":"The buyer check is to validate the local contracting entity, product serial range and service route."}
   ],
   "ownership":{"summary":"Fluidra, S.A. is a publicly listed pool and wellness group. Its corporate communications identify a portfolio that includes AstralPool, Zodiac, Jandy, Polaris, Gre, Cepex and CTXPro. Each mark should be distinguished from the group parent and the local seller or responsible entity for a particular product.","parentCompany":"Fluidra, S.A."},
-  "leadership":[{"name":"Eloi Planes","role":"Executive Chairman","context":"Fluidra's corporate materials identify Eloi Planes as Executive Chairman; current management roles should be checked against the latest annual report for transaction use.","portrait":{"src":"/images/brands/fluidra/leader-eloi-planes.webp","alt":"Eloi Planes, executive chairman of Fluidra","credit":"Fluidra board profile portrait; cropped by World Clean Biz","sourceUrl":"https://www.fluidra.com/person/eloy-planes-corts/","objectPosition":"center top"}}],
+  "leadership":[{"name":"Eloi Planes","role":"Executive Chairman","context":"Fluidra's corporate materials identify Eloi Planes as Executive Chairman; current management roles should be checked against the latest annual report for transaction use.","portrait":{"src":"/images/brands/fluidra/leader-eloi-planes.webp","alt":"Eloi Planes, executive chairman of Fluidra","credit":"Polaris is one of Fluidra's lead pool-cleaning brands.","sourceUrl":"https://www.fluidra.com/person/eloy-planes-corts/","objectPosition":"center top"}}],
   "productPortfolio":[
     {"name":"Pool circulation, filtration and water treatment","positioning":"Core residential and commercial pool equipment across Fluidra brand and regional portfolios.","buyerRelevance":"Specify the approved brand, voltage, hydraulic specification and local technical support at quotation stage."},
     {"name":"Pool automation and connected systems","positioning":"Controls, monitoring and energy-management products under brands including Jandy and Zodiac.","buyerRelevance":"Confirm local app availability, installer support and compatibility with the existing pool pad."},
