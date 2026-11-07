@@ -46,7 +46,9 @@ export function hubListHrefs(hub: HubCategory) {
   return {
     news: `/news?category=${hub.slug}`,
     analysis: `/blog/archive?hub=${hub.slug}`,
-    products: productCategory ? `/products?category=${encodeURIComponent(productCategory)}` : "/products"
+    // The product library shows hub names, so the filter link uses the hub name too.
+    products: productCategory ? `/products?category=${encodeURIComponent(hub.name)}` : "/products",
+    companies: `/brands?category=${hub.slug}#all-companies`
   };
 }
 

@@ -24,6 +24,7 @@ const NAV: NavItem[] = [
       }))
     }))
   },
+  { kind: "link", href: "/brands", label: "Companies" },
   {
     kind: "menu",
     id: "products",
@@ -32,27 +33,41 @@ const NAV: NavItem[] = [
     columns: [
       {
         links: [
-          { href: "/products", label: "Product library" },
-          { href: "/equipment", label: "Equipment" },
-          { href: "/components", label: "Components" }
+          { href: "/products", label: "2026 models" },
+          { href: "/equipment", label: "Equipment types" },
+          { href: "/components", label: "Parts & components" }
         ]
       }
     ]
   },
-  { kind: "link", href: "/brands", label: "Companies" },
-  { kind: "link", href: "/blog/archive", label: "Deep Analysis", current: ["/blog"] },
+  {
+    kind: "menu",
+    id: "insights",
+    label: "Insights",
+    current: ["/blog", "/guides", "/videos", "/reports"],
+    columns: [
+      {
+        links: [
+          { href: "/blog/archive", label: "Deep analysis" },
+          { href: "/guides", label: "Guides" },
+          { href: "/blog/series/building-worlds-no-1-cleaning-show-from-scratch", label: "Founder’s Journal" },
+          { href: "/videos", label: "Videos" },
+          { href: "/reports", label: "Reports" }
+        ]
+      }
+    ]
+  },
   { kind: "link", href: "/markets", label: "Markets" },
-  { kind: "link", href: "/wcb-expo", label: "Events" },
-  { kind: "link", href: "/guides", label: "Guides" },
   {
     kind: "menu",
     id: "about",
     label: "About",
-    current: ["/about", "/contact", "/quality-compliance"],
+    current: ["/about", "/contact", "/quality-compliance", "/sourcing"],
     columns: [
       {
         links: [
           { href: "/about", label: "About WCB" },
+          { href: "/sourcing", label: "Sourcing services" },
           { href: "/contact", label: "Contact & partnerships" },
           { href: "/quality-compliance", label: "Quality & compliance" }
         ]

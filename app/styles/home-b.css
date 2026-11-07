@@ -884,3 +884,54 @@
 @media (max-width: 900px) {
   .home-b .home-b-hero-grid { grid-template-columns: 1fr; gap: 24px; }
 }
+
+/* ---- Homepage order (Nov 2026): WCB Expo, intro and search, news, From Denny,
+   categories, new products, companies with results, subscribe. ---- */
+.home-b .home-b-expo { padding: 40px 0; background: var(--hb-soft); border-bottom: 1px solid var(--hb-line); }
+.home-b .home-b-expo-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 40px; align-items: center; }
+.home-b .home-b-expo-copy { display: grid; gap: 10px; align-content: center; min-width: 0; }
+.home-b .home-b-expo-copy h2 { margin: 0; font-size: clamp(30px, 4vw, 46px); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; }
+.home-b .home-b-expo-copy h2 a { color: var(--hb-ink); text-decoration: none; }
+.home-b .home-b-expo-copy h2 a:hover { color: var(--hb-link); }
+.home-b .home-b-expo-venue { margin: 0; font-size: 16px; font-weight: 700; color: var(--hb-ink); }
+.home-b .home-b-expo-text { margin: 0; max-width: 520px; font-size: 16px; line-height: 1.6; color: var(--hb-muted); }
+.home-b .home-b-expo-copy .home-b-feature-actions { margin-top: 6px; }
+.home-b .home-b-expo-copy .home-b-feature-primary, .home-b .home-b-expo-copy .home-b-feature-secondary { min-height: 46px; padding: 0 20px; }
+.home-b .home-b-expo-more { justify-self: start; min-height: 40px; display: inline-flex; align-items: center; }
+.home-b .home-b-expo-image { display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 16px; background: #e9edf4; border: 1px solid var(--hb-line); box-shadow: 0 14px 36px rgba(14, 21, 38, 0.08); }
+.home-b .home-b-expo-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+.home-b .home-b-intro { padding: 36px 0; border-bottom: 1px solid var(--hb-line); }
+.home-b .home-b-intro--first { padding: 56px 0 44px; background: var(--hb-soft); }
+.home-b .home-b-intro-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 40px; align-items: end; }
+.home-b .home-b-intro h1 { margin: 0; font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; }
+.home-b .home-b-intro--first h1 { font-size: clamp(34px, 4.6vw, 54px); }
+.home-b .home-b-intro .home-b-lead { font-size: 16px; margin-top: 12px; }
+.home-b .home-b-intro .home-b-search { margin-top: 0; }
+
+.home-b .home-b-stream--wide { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; border-top: 0; }
+.home-b .home-b-stream--wide li { border-top: 1px solid var(--hb-line); border-bottom: 0; }
+
+.home-b .home-b-denny { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.home-b .home-b-denny-card { padding-bottom: 4px; }
+.home-b .home-b-denny-type { font-size: 11px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--hb-link); }
+.home-b .home-b-denny-card:hover .home-b-card-title { color: var(--hb-link); }
+
+.home-b .home-b-results-row { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--hb-line); }
+.home-b .home-b-results-row .home-b-head h3 { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 20px; font-weight: 800; }
+.home-b .home-b-results-row .home-b-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; }
+
+@media (max-width: 1080px) {
+  .home-b .home-b-denny { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .home-b .home-b-expo-grid, .home-b .home-b-intro-grid { grid-template-columns: 1fr; gap: 24px; }
+  .home-b .home-b-expo-image { order: -1; }
+  .home-b .home-b-stream--wide, .home-b .home-b-results-row .home-b-results { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .home-b .home-b-expo { padding: 24px 0 32px; }
+  .home-b .home-b-intro, .home-b .home-b-intro--first { padding: 28px 0; }
+  .home-b .home-b-denny { grid-template-columns: 1fr; }
+  .home-b .home-b-expo-copy .home-b-feature-actions > * { flex: 1 1 100%; }
+}

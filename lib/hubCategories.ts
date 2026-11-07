@@ -258,3 +258,25 @@ export function hubCategoriesForBrand(brandCategorySlugs: readonly string[]): Hu
     Boolean(rules.brandCategories?.some((slug) => brandCategorySlugs.includes(slug)))
   );
 }
+
+/**
+ * The category name readers see for a product-library category. The product
+ * data keeps its own values (for example "Robot mowers"); every page shows the
+ * hub name ("Robotic mowers") so Categories, Products and Companies use one
+ * set of names.
+ */
+export function productCategoryLabel(category: string): string {
+  const hub = HUB_CATEGORIES.find((item) => item.rules.productCategories?.includes(category));
+  return hub?.name ?? category;
+}
+
+/** Product-library category values that are shown under a different hub name, keyed by the old value. */
+export function productCategoryAliases(): Record<string, string> {
+  const aliases: Record<string, string> = {};
+  for (const hub of HUB_CATEGORIES) {
+    for (const category of hub.rules.productCategories ?? []) {
+      if (category !== hub.name) aliases[category] = hub.name;
+    }
+  }
+  return aliases;
+}

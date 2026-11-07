@@ -40,7 +40,7 @@ function ProductCard({ model, showCategory }: { model: Card; showCategory: boole
 }
 
 /** Product library: grouped by category when unfiltered, a flat result grid when filtered. */
-export function ProductDirectory({ models }: { models: Card[] }) {
+export function ProductDirectory({ models, aliases = {} }: { models: Card[]; aliases?: Record<string, string> }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("");
   const [brand, setBrand] = useState("");
@@ -48,7 +48,9 @@ export function ProductDirectory({ models }: { models: Card[] }) {
   const categories = [...new Set(models.map((model) => model.category))];
   // A category page links here with ?category=… so the library opens already filtered.
   useEffect(() => {
-    const requested = new URLSearchParams(window.location.search).get("category");
+    // Older links may use a product-data name ("Robot mowers") instead of the category name.
+    const raw = new URLSearchParams(window.location.search).get("category");
+    const requested = raw ? aliases[raw] ?? raw : null;
     if (requested && categories.includes(requested)) setCategory(requested);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

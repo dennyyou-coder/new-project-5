@@ -7,7 +7,7 @@ const header = await readFile(new URL("../components/Header.tsx", import.meta.ur
 const footer = await readFile(new URL("../components/Footer.tsx", import.meta.url), "utf8");
 
 test("home retains the confirmed event facts and separate visitor/exhibitor forms", () => {
-  for (const text of ["18–20 November 2026", "Suzhou Shishan Convention Center", 'form="wceExhibitor"', 'form="wceVisitor"', 'ctaLocation="home_wce_exhibitor"', 'ctaLocation="home_wce_visitor"']) {
+  for (const text of ['form="wceExhibitor"', 'form="wceVisitor"', 'ctaLocation="home_hero_wce_exhibitor"', 'ctaLocation="home_hero_wce_visitor"', "EXPO_2026.dates", "EXPO_2026.venue"]) {
     assert.ok(home.includes(text), text);
   }
 });
@@ -24,35 +24,36 @@ test("home retains a single main heading and search guides stay outside editoria
   assert.match(home, /getEditorialInsights\(articles\)/);
 });
 
-test("home B layout: search, popular categories, a featured slot, sections in order, no expo crowd hero", () => {
+test("home order: WCB Expo, intro and search, news, From Denny, categories, products, companies, subscribe", () => {
   assert.match(home, /The global cleaning industry, in one place\./);
   assert.match(home, /<HomeSearch entries=\{searchEntries\} \/>/);
-  // Counts were replaced by popular category links and a featured slot (expo, then deep analysis).
-  assert.doesNotMatch(home, /home-b-counts/);
-  assert.match(home, /className="home-b-popular"/);
-  assert.match(home, /expoUpcoming \? \(/);
-  assert.match(home, /pickFeaturedAnalysis\(editorial, lead\?\.slug\)/);
+  // The expo leads while it is upcoming; afterwards the intro opens the page.
+  assert.match(home, /\{expoUpcoming \? \(\s*<section className="home-b-expo"/);
+  const body = home.slice(home.indexOf("  return (\n    <div className=\"home-b\">"));
   const order = [
-    "Across the industry this week",
-    "Browse by category",
-    "New products",
-    "Deep analysis",
-    "Companies",
-    "Guides for professionals",
-    "The whole industry, in your inbox"
-  ].map((heading) => home.indexOf(`>${heading}</h2>`));
+    'id="home-expo-title"',
+    "{intro}",
+    'id="home-feed-title"',
+    'id="home-denny-title"',
+    'id="home-categories-title"',
+    'id="home-products-title"',
+    'id="home-companies-title"',
+    'id="home-subscribe-title"'
+  ].map((marker) => body.indexOf(marker));
   assert.ok(order.every((index) => index > 0), "all sections present");
   assert.deepEqual([...order].sort((a, b) => a - b), order, "sections in order");
+  // Guides, a second expo card and the separate journal and video blocks are no longer on the homepage.
+  assert.doesNotMatch(home, /Guides for professionals|home-b-popular|<HomeVideos|<HomeSeriesFeature|id="events"/);
   assert.doesNotMatch(home, /home-expo-networking-2025/);
   assert.match(home, /"@type": "Organization"/);
   assert.match(home, /"@type": "WebSite"/);
 });
 
-test("home uses company logos, category icons and shows each story once", () => {
+test("home uses company logos, category icons and one news list", () => {
   assert.match(home, /<CompanyMark mark=\{marks\.get\(brand\.slug\)!\} size="md" \/>/);
   assert.match(home, /<CategoryIcon slug=\{data\.hub\.slug\} color=\{data\.hub\.color\} \/>/);
   assert.match(home, /<FigureChip label=\{figure\.label\} change=\{figure\.change\} \/>/);
-  assert.match(home, /const shownElsewhere = new Set\(\[\.\.\.results, \.\.\.policy, \.\.\.events\]/);
-  assert.match(home, /news\.filter\(\(item\) => !shownElsewhere\.has\(item\.slug\)\)\.slice\(0, 7\)/);
+  assert.match(home, /const weekNews = news\.slice\(0, 8\)/);
+  assert.equal((home.match(/className="home-b-stream[ "]/g) || []).length, 1, "one news list");
   assert.doesNotMatch(home, /home-b-category-latest/);
 });

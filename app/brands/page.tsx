@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "../styles/company-directory.css";
 import { CompanyDirectory } from "@/components/brands/CompanyDirectory";
-import { getBrandCategoriesForProfile, getPublishedBrandCategories } from "@/lib/brandCategories";
+import { getPublishedBrandCategories } from "@/lib/brandCategories";
 import { buildOwnershipGroups, headquartersCountry, ownershipLine } from "@/lib/brandDirectory";
 import {
   buildBrandDirectorySchemas,
   getPublishedBrandProfiles,
 } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
+import { getAllHubCategoryData } from "@/lib/hubCategoryContent";
 import { brandMonogram } from "@/lib/brandMarks";
 import { LogoTileImage } from "@/components/ui/LogoTileImage";
 
@@ -53,6 +54,12 @@ export default function BrandsPage() {
     };
     return rank(a.category.slug) - rank(b.category.slug);
   });
+  // The directory filters by the same nine categories as /categories and the product library.
+  const hubData = getAllHubCategoryData().filter((data) => data.companies.length > 0);
+  const hubsOfCompany = new Map<string, string[]>();
+  for (const data of hubData) {
+    for (const company of data.companies) hubsOfCompany.set(company.slug, [...(hubsOfCompany.get(company.slug) ?? []), data.hub.slug]);
+  }
   const schemas = buildBrandDirectorySchemas(profiles, siteUrl);
   const ownershipGroups = buildOwnershipGroups(profiles);
   // Each company appears once; categories are filters, not sections.
@@ -66,7 +73,7 @@ export default function BrandsPage() {
       headquarters: profile.headquarters,
       country: headquartersCountry(profile.headquarters),
       ownership: ownershipLine(profile),
-      categories: getBrandCategoriesForProfile(profile.slug).map((category) => category.slug),
+      categories: hubsOfCompany.get(profile.slug) ?? [],
       search: [profile.name, profile.slug, ...profile.aliases, profile.ownership.parentCompany ?? ""].join(" ").toLowerCase(),
     }));
   const countries = [...new Set(companies.map((company) => company.country).filter((country): country is string => Boolean(country)))].sort();
@@ -122,7 +129,7 @@ export default function BrandsPage() {
 
         <CompanyDirectory
           companies={companies}
-          categories={categories.map((data) => ({ slug: data.category.slug, name: data.category.name }))}
+          categories={hubData.map((data) => ({ slug: data.hub.slug, name: data.hub.name }))}
           countries={countries}
         />
 
