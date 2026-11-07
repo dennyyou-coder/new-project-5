@@ -11,6 +11,7 @@ brand_slugs: ["irobot"]
 source_titles: ["iRobot Announces Roomba Max 875 Combo and Plus 678 Combo — original source"]
 source_urls: ["https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"]
 updatedAt: "2026-10-07T12:00:00+08:00"
+product_slugs: ["irobot-roomba-max-875-combo", "irobot-roomba-plus-678-combo"]
 ---
 [iRobot](/brands/irobot) introduced Roomba Max 875 Combo and Plus 678 Combo on September 2, 2026, placing a new carpet-cleaning system alongside two different roller-mopping designs. Both products were announced with AutoWash docks in the [company's launch release](https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html).
 

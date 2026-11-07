@@ -9,7 +9,7 @@ updatedAt: "2026-10-25T23:04:14+08:00"
 sortDate: "2026-10-25T23:04:14+08:00"
 eventDate: "2026-09-21"
 brand_slugs: ["eufy"]
-product_slugs: []
+product_slugs: ["eufy-omni-c30-edge"]
 related_articles: []
 source_titles: ["Anker eufy Robot Vacuums Omni C30 Edge og Omni C30 gjør grundig rengjøring enkelt hjemme", "eufy Robot Vacuum Omni C30 edge — U.S. product listing"]
 source_urls: ["https://api.kommunikasjon.ntb.no/pressemelding/19074225/anker-eufy-robot-vacuums-omni-c30-edge-og-omni-c30-gjor-grundig-rengjoring-enkelt-hjemme?lang=no&publisherId=17849449", "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge"]

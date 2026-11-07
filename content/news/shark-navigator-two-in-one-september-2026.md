@@ -8,7 +8,7 @@ publishedAt: "2026-10-06T13:54:17+08:00"
 sortDate: "2026-10-06T13:54:17+08:00"
 eventDate: "2026-09-29"
 brand_slugs: ["shark"]
-product_slugs: []
+product_slugs: ["shark-navigator-2-in-1"]
 related_articles: []
 source_titles: ["SharkNinja — Navigator 2-in-1 launch"]
 source_urls: ["https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"]

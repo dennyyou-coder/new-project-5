@@ -15592,5 +15592,1435 @@
         "note": "Manufacturer photograph showing the hand vacuum and upholstery attachment. View the original asset for product identification."
       }
     ]
+  },
+  "eufy-omni-e35": {
+    "verdict": "A mid-premium roller-mop shortlist with hot-water mop washing and a cyclone dust path. Confirm the local price and the station configuration before buying.",
+    "notFor": "Buyers who need a stated body height or threshold figure before purchase, or who mainly clean deep carpet.",
+    "specifications": [
+      {
+        "label": "Suction",
+        "value": "35,000 Pa",
+        "meaning": "Motor-level lab figure.",
+        "source": "https://www.eufy.com/ie/products/t210mv11"
+      },
+      {
+        "label": "Roller mop",
+        "value": "HydroJet roller, 16 N (1.6 kg)",
+        "meaning": "Downward pressure design figure.",
+        "source": "https://www.eufy.com/ie/products/t210mv11"
+      },
+      {
+        "label": "Mop lift",
+        "value": "30 mm",
+        "meaning": "Automatic lift on carpet.",
+        "source": "https://www.eufy.com/ie/products/t210mv11"
+      },
+      {
+        "label": "Filtration",
+        "value": "AeroTurbo multi-cyclone",
+        "meaning": "eufy states 99.99% of dust separated before the filter.",
+        "source": "https://www.eufy.com/ie/products/t210mv11"
+      },
+      {
+        "label": "Navigation",
+        "value": "iPath laser + AI.See (RGB camera, dual line lasers)",
+        "meaning": "Manufacturer description.",
+        "source": "https://www.eufy.com/ie/products/t210mv11"
+      },
+      {
+        "label": "Obstacle recognition",
+        "value": "280+ obstacles; objects as small as 1 cm³",
+        "meaning": "eufy testing.",
+        "source": "https://www.eufy.com/ie/products/t210mv11"
+      },
+      {
+        "label": "Station",
+        "value": "ThermoClean 8-in-1: 60°C wash, 55°C drying",
+        "meaning": "Station functions, not floor temperatures.",
+        "source": "https://www.eufy.com/ie/products/t210mv11"
+      },
+      {
+        "label": "Hands-free period",
+        "value": "Up to 60 days",
+        "meaning": "Dust-emptying claim; other parts still need care.",
+        "source": "https://www.eufy.com/ie/products/t210mv11"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Ireland",
+        "amount": "EUR 1,099",
+        "source": "https://www.eufy.com/ie/products/t210mv11",
+        "kind": "Official store list price",
+        "date": "2026-11-07",
+        "note": "Listed on the official Irish product page when checked."
+      },
+      {
+        "market": "United States",
+        "amount": "About USD 1,300 regular; about USD 1,000 launch offer",
+        "source": "https://www.engadget.com/2249106/anker-eufy-at-ifa-2026-new-security-cameras-plus-a-robot-vacuum-and-a-robot-lawnmower/",
+        "kind": "Reported launch pricing",
+        "date": "2026-09-03",
+        "note": "Engadget's IFA report; check the US store for current pricing."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "eufy Omni E35",
+          "url": "https://www.eufy.com/ie/products/t210mv11",
+          "market": "Ireland"
+        },
+        {
+          "name": "eufy Omni C30 Edge",
+          "url": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge",
+          "market": "United States"
+        },
+        {
+          "name": "eufy Robot Vacuum Omni S2",
+          "url": "https://www.eufy.com/products/t2081111",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Suction claim",
+          "values": [
+            "35,000 Pa",
+            "35,000 Pa",
+            "30,000 Pa / 100 AW"
+          ]
+        },
+        {
+          "label": "Mop system",
+          "values": [
+            "HydroJet roller, 16 N",
+            "10 N pentagonal rotating mop",
+            "HydroJet 2.0, 29 cm roller"
+          ]
+        },
+        {
+          "label": "Edge cleaning",
+          "values": [
+            "Not stated",
+            "MopMaster 3.0 extending mop",
+            "1.5 cm roller extension"
+          ]
+        },
+        {
+          "label": "Station",
+          "values": [
+            "ThermoClean 8-in-1",
+            "All-in-one station",
+            "12-in-1 UniClean Station"
+          ]
+        }
+      ],
+      "takeaway": "E35 brings roller mopping and hot-water washing below the S2; the C30 Edge trades the roller for rotating pads and an extending edge mop at a lower price."
+    },
+    "resources": [
+      {
+        "label": "eufy Ireland Omni E35 product page",
+        "url": "https://www.eufy.com/ie/products/t210mv11",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Engadget IFA 2026 launch report",
+        "url": "https://www.engadget.com/2249106/anker-eufy-at-ifa-2026-new-security-cameras-plus-a-robot-vacuum-and-a-robot-lawnmower/",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "eufy-omni-c30-edge": {
+    "verdict": "An entry-to-mid shortlist for rotating-mop cleaning with an extending edge mop. Confirm station details and body height locally.",
+    "notFor": "Buyers who want roller mopping, stated station temperatures or a confirmed low body height before purchase.",
+    "specifications": [
+      {
+        "label": "Suction",
+        "value": "35,000 Pa",
+        "meaning": "Motor-level lab figure.",
+        "source": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge"
+      },
+      {
+        "label": "Mop",
+        "value": "10 N PowerScrub pentagonal mop",
+        "meaning": "Downward-pressure design figure.",
+        "source": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge"
+      },
+      {
+        "label": "Edge mop",
+        "value": "MopMaster 3.0 extending mop",
+        "meaning": "The Edge model's extension is guided by a side laser.",
+        "source": "https://api.kommunikasjon.ntb.no/pressemelding/19074225/anker-eufy-robot-vacuums-omni-c30-edge-og-omni-c30-gjor-grundig-rengjoring-enkelt-hjemme?lang=no&publisherId=17849449"
+      },
+      {
+        "label": "Navigation",
+        "value": "iPath 2.0 laser navigation",
+        "meaning": "LiDAR room mapping.",
+        "source": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge"
+      },
+      {
+        "label": "Obstacle recognition",
+        "value": "100+ objects, day or night",
+        "meaning": "eufy lab testing.",
+        "source": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge"
+      },
+      {
+        "label": "Model code",
+        "value": "T210Q111",
+        "meaning": "From the US product address and manual file name.",
+        "source": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 899.99",
+        "source": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge",
+        "kind": "Official store list price",
+        "date": "2026-11-07",
+        "note": "Listed on the official US product page when checked."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "eufy Omni C30 Edge",
+          "url": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge",
+          "market": "United States"
+        },
+        {
+          "name": "eufy Omni E35",
+          "url": "https://www.eufy.com/ie/products/t210mv11",
+          "market": "Ireland"
+        },
+        {
+          "name": "Shark Navigator 2-in-1 Robot Vacuum and Mop",
+          "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Mop system",
+          "values": [
+            "10 N pentagonal rotating mop",
+            "HydroJet roller, 16 N",
+            "Mop for hard floors; avoids rugs"
+          ]
+        },
+        {
+          "label": "Navigation",
+          "values": [
+            "iPath 2.0 laser",
+            "iPath laser + AI.See",
+            "360° LiDAR, SmartPath Max"
+          ]
+        },
+        {
+          "label": "Self-emptying",
+          "values": [
+            "All-in-one station",
+            "ThermoClean 8-in-1, up to 60 days",
+            "Bagless base, 30 or 60 days"
+          ]
+        },
+        {
+          "label": "US list price",
+          "values": [
+            "USD 899.99",
+            "About USD 1,300 (reported)",
+            "USD 599 (60-day base)"
+          ]
+        }
+      ],
+      "takeaway": "The C30 Edge sits between Shark's entry robot and eufy's roller-mop E35, adding an extending edge mop and a full station."
+    },
+    "resources": [
+      {
+        "label": "eufy US Omni C30 Edge product page",
+        "url": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "eufy Nordic C30 and C30 Edge release",
+        "url": "https://api.kommunikasjon.ntb.no/pressemelding/19074225/anker-eufy-robot-vacuums-omni-c30-edge-og-omni-c30-gjor-grundig-rengjoring-enkelt-hjemme?lang=no&publisherId=17849449",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "shark-navigator-2-in-1": {
+    "verdict": "A budget US shortlist for LiDAR-mapped vacuuming with occasional hard-floor mopping and a bagless self-emptying base.",
+    "notFor": "Buyers who mop daily and want the station to wash the mop, or who need absolute suction and runtime figures.",
+    "specifications": [
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR, SmartPath Max row-by-row",
+        "meaning": "Maps rooms and cleans in rows.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+      },
+      {
+        "label": "Mopping",
+        "value": "Vacuums and mops hard floors; avoids carpets and rugs",
+        "meaning": "Hard floors only.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+      },
+      {
+        "label": "Base",
+        "value": "Bagless; up to 30 or 60 days of debris",
+        "meaning": "Depends on the version bought.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+      },
+      {
+        "label": "Brushroll",
+        "value": "Self-cleaning; designed to prevent hair wrap",
+        "meaning": "Manufacturer description.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+      },
+      {
+        "label": "Suction comparison",
+        "value": "4X suction vs Dreame D10 Plus Gen2",
+        "meaning": "Shark comparison claim, not an absolute figure.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+      },
+      {
+        "label": "Stain comparison",
+        "value": "2X better stain cleaning vs Roomba 105 Combo",
+        "meaning": "Shark comparison claim.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+      },
+      {
+        "label": "App",
+        "value": "SharkClean: schedules, no-go zones, home map",
+        "meaning": "Wi-Fi and Bluetooth setup.",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 599 (60-day base)",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx",
+        "kind": "Launch price",
+        "date": "2026-09-29",
+        "note": "Available at SharkNinja.com from 29 September 2026."
+      },
+      {
+        "market": "United States",
+        "amount": "USD 499 (30-day base)",
+        "source": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx",
+        "kind": "Announced price",
+        "date": "2026-09-29",
+        "note": "Announced for Amazon, Costco and Sam's Club without a date."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Shark Navigator 2-in-1 Robot Vacuum and Mop",
+          "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx",
+          "market": "United States"
+        },
+        {
+          "name": "eufy Omni C30 Edge",
+          "url": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge",
+          "market": "United States"
+        },
+        {
+          "name": "iRobot Roomba Plus 678 Combo",
+          "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Navigation",
+          "values": [
+            "360° LiDAR",
+            "iPath 2.0 laser",
+            "Dual-line LiDAR, PrecisionVision AI"
+          ]
+        },
+        {
+          "label": "Mop washing at dock",
+          "values": [
+            "No",
+            "All-in-one station",
+            "176°F wash, 131°F drying"
+          ]
+        },
+        {
+          "label": "Debris interval",
+          "values": [
+            "30 or 60 days",
+            "Not stated",
+            "Up to 90 days"
+          ]
+        },
+        {
+          "label": "US price",
+          "values": [
+            "USD 499–599",
+            "USD 899.99",
+            "USD 899 MSRP"
+          ]
+        }
+      ],
+      "takeaway": "Navigator is the lowest-cost route to LiDAR mapping and self-emptying; stepping up buys a station that washes the mop."
+    },
+    "resources": [
+      {
+        "label": "SharkNinja Navigator 2-in-1 announcement",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "irobot-roomba-max-875-combo": {
+    "verdict": "A carpet-strong flagship with a large, fast roller mop and a hot-water washing dock. Compare dock size and consumables with Roborock and Dreame flagships.",
+    "notFor": "Buyers outside North America before local launch, or those wanting a bagless dock.",
+    "specifications": [
+      {
+        "label": "Suction",
+        "value": "35,000 Pa",
+        "meaning": "5x the Roomba 505 per iRobot.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Airflow",
+        "value": "20 L/s with SealForce",
+        "meaning": "Skirt keeps airflow at the carpet.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Roller mop",
+        "value": "PowerSpin Max: 300 rpm, 18 N",
+        "meaning": "44% larger than the standard PowerSpin roller.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Edge reach",
+        "value": "PerfectEdge: up to 45 mm",
+        "meaning": "Roller extension toward walls.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Stain treatment",
+        "value": "ThermaMist heated mist",
+        "meaning": "2x stain removal vs mopping without it, per iRobot.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Dock",
+        "value": "176°F wash, 131°F drying, auto concentrate; bag up to 90 days",
+        "meaning": "AutoWash dock.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Navigation",
+        "value": "ClearView Pro dual-line LiDAR; 300+ objects",
+        "meaning": "PrecisionVision AI.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Size and climbing",
+        "value": "9.98 cm tall; 3.5 cm thresholds",
+        "meaning": "Manufacturer figures.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 1,199",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+        "kind": "Launch MSRP",
+        "date": "2026-09-02",
+        "note": "With AutoWash dock; North American retail from later in September 2026."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "iRobot Roomba Max 875 Combo",
+          "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+          "market": "United States"
+        },
+        {
+          "name": "iRobot Roomba Plus 678 Combo",
+          "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+          "market": "United States"
+        },
+        {
+          "name": "Dyson R3 Nurovi Spot+Scrub UV",
+          "url": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Suction",
+          "values": [
+            "35,000 Pa",
+            "30,000 Pa",
+            "30,000 Pa"
+          ]
+        },
+        {
+          "label": "Roller edge reach",
+          "values": [
+            "Up to 45 mm",
+            "Up to 45 mm",
+            "Up to 1.57 in (40 mm)"
+          ]
+        },
+        {
+          "label": "Stain approach",
+          "values": [
+            "ThermaMist heated mist",
+            "SprayForce AI spray",
+            "AI stain scanner with UV"
+          ]
+        },
+        {
+          "label": "Dock debris",
+          "values": [
+            "Bag, up to 90 days",
+            "Up to 90 days",
+            "Bagless, 10 cyclones, 100 days"
+          ]
+        }
+      ],
+      "takeaway": "The 875 leads iRobot's range on suction and roller speed; Dyson's R3 competes on stain verification and a bagless dock."
+    },
+    "resources": [
+      {
+        "label": "iRobot Roomba Max 875 Combo and Plus 678 Combo launch release",
+        "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "irobot-roomba-plus-678-combo": {
+    "verdict": "A sub-USD 1,000 Roomba with a hot-water washing dock and stain pretreatment spray. Check whether concentrate auto-dosing matters to you.",
+    "notFor": "Buyers who want heated mist, the fastest roller or automatic concentrate dosing.",
+    "specifications": [
+      {
+        "label": "Suction",
+        "value": "30,000 Pa",
+        "meaning": "Manufacturer figure.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Airflow",
+        "value": "18 L/s with SealForce",
+        "meaning": "Manufacturer figure.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Pretreatment",
+        "value": "SprayForce AI, 40,000 Pa spray",
+        "meaning": "Up to 40% better mopping efficiency vs without it, per iRobot.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Roller mop",
+        "value": "PowerSpin with heated water, 15 N",
+        "meaning": "Roller speed not stated.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Edge reach",
+        "value": "PerfectEdge: up to 45 mm",
+        "meaning": "Roller extension toward walls.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Mop lift",
+        "value": "10 mm automatic lift on carpet",
+        "meaning": "Manufacturer figure.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Dock",
+        "value": "176°F wash, 131°F drying; up to 90 days",
+        "meaning": "Concentrate auto-dosing not listed.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      },
+      {
+        "label": "Size and climbing",
+        "value": "9.95 cm tall; 3.5 cm thresholds",
+        "meaning": "Manufacturer figures.",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      }
+    ],
+    "prices": [
+      {
+        "market": "United States",
+        "amount": "USD 899",
+        "source": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+        "kind": "Launch MSRP",
+        "date": "2026-09-02",
+        "note": "With AutoWash dock; North American retail from later in September 2026."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "iRobot Roomba Plus 678 Combo",
+          "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+          "market": "United States"
+        },
+        {
+          "name": "iRobot Roomba Max 875 Combo",
+          "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+          "market": "United States"
+        },
+        {
+          "name": "Shark Navigator 2-in-1 Robot Vacuum and Mop",
+          "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Suction",
+          "values": [
+            "30,000 Pa",
+            "35,000 Pa",
+            "4X vs Dreame D10 Plus Gen2 (claim)"
+          ]
+        },
+        {
+          "label": "Mop",
+          "values": [
+            "Heated-water roller, 15 N",
+            "300 rpm roller, 18 N",
+            "Mop for hard floors"
+          ]
+        },
+        {
+          "label": "Dock washes mop",
+          "values": [
+            "Yes, 176°F",
+            "Yes, 176°F",
+            "No"
+          ]
+        },
+        {
+          "label": "US price",
+          "values": [
+            "USD 899 MSRP",
+            "USD 1,199 MSRP",
+            "USD 499–599"
+          ]
+        }
+      ],
+      "takeaway": "The 678 keeps iRobot's washing dock and carpet airflow at a lower price than the 875, well above Shark's entry robot in mop care."
+    },
+    "resources": [
+      {
+        "label": "iRobot Roomba Max 875 Combo and Plus 678 Combo launch release",
+        "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "roborock-qrevo-2-pro": {
+    "verdict": "A full-dock Qrevo with hot-water mop washing and a corner-focused reversible side brush, below Roborock's flagships.",
+    "notFor": "Buyers who need a lifting chassis for high thresholds or the lowest possible body height.",
+    "specifications": [
+      {
+        "label": "Suction",
+        "value": "25,000 Pa HyperForce",
+        "meaning": "Also listed: 18,500 Pa digital motor power.",
+        "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro"
+      },
+      {
+        "label": "Mops",
+        "value": "Dual spinning, up to 200 rpm",
+        "meaning": "In custom mode with extreme water flow.",
+        "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro"
+      },
+      {
+        "label": "Mop lift",
+        "value": "Up to 15 mm",
+        "meaning": "Manufacturer figure.",
+        "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro"
+      },
+      {
+        "label": "Side brush",
+        "value": "Reversible; up to 30% more corner coverage",
+        "meaning": "Vs a standard side brush.",
+        "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro"
+      },
+      {
+        "label": "Dock wash / dry",
+        "value": "Up to 75°C / up to 45°C",
+        "meaning": "Measured at heater and air outlet.",
+        "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro"
+      },
+      {
+        "label": "Auto-empty",
+        "value": "Up to 65 days",
+        "meaning": "Cleaning tray up to 170 days.",
+        "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro"
+      },
+      {
+        "label": "Robot height",
+        "value": "96.6 mm",
+        "meaning": "Dock 402 × 494 × 450 mm.",
+        "source": "https://uk.roborock.com/pages/roborock-qrevo-2-pro"
+      }
+    ],
+    "prices": [],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock Qrevo 2 Pro",
+          "url": "https://uk.roborock.com/pages/roborock-qrevo-2-pro",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Roborock S10 MaxV Ultra Steam",
+          "url": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam",
+          "market": "South Korea"
+        },
+        {
+          "name": "Roborock Saros 20",
+          "url": "https://global.roborock.com/pages/roborock-saros-20",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Suction claim",
+          "values": [
+            "25,000 Pa",
+            "36,000 Pa",
+            "36,000 Pa"
+          ]
+        },
+        {
+          "label": "Mopping",
+          "values": [
+            "Dual spinning pads, 200 rpm",
+            "VibraRise 5.0, 14 N",
+            "Dual rotating pads, 200 rpm"
+          ]
+        },
+        {
+          "label": "Body height",
+          "values": [
+            "96.6 mm",
+            "7.95 cm",
+            "7.98 cm"
+          ]
+        },
+        {
+          "label": "Threshold system",
+          "values": [
+            "Not stated",
+            "AdaptiLift 3.0, 4.5 + 4.3 cm",
+            "AdaptiLift 3.0, 4.5 + 4.3 cm"
+          ]
+        }
+      ],
+      "takeaway": "Qrevo 2 Pro covers the essentials of a washing dock; the S10 MaxV Ultra Steam and Saros 20 add a lifting chassis and a lower body."
+    },
+    "resources": [
+      {
+        "label": "Roborock UK Qrevo 2 Pro product page",
+        "url": "https://uk.roborock.com/pages/roborock-qrevo-2-pro",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Roborock Japan Qrevo 2 Pro sales notice",
+        "url": "https://jp.roborock.com/blogs/news/roborock-qrevo-2-pro-%E3%82%92%E7%99%BA%E5%A3%B2",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "roborock-s10-maxv-ultra-steam": {
+    "verdict": "A Korean-first flagship for homes with raised thresholds that want steam-based mop hygiene at the dock.",
+    "notFor": "Buyers outside Korea before a confirmed local launch, or those who prefer roller mopping.",
+    "specifications": [
+      {
+        "label": "Suction",
+        "value": "36,000 Pa HyperForce",
+        "meaning": "Maximum motor output.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Mopping",
+        "value": "VibraRise 5.0: 14 N, 4,000 vibrations/min",
+        "meaning": "Extending single mop.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Dock steam",
+        "value": "VaporFlow steam with hot-water wash and hot-air drying",
+        "meaning": "Mop hygiene at the dock.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Dock self-clean",
+        "value": "Water up to 100°C",
+        "meaning": "Cleans the dock base.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Dust-path drying",
+        "value": "Hot air up to 63°C",
+        "meaning": "Dries the dust bag and duct.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Auto-empty",
+        "value": "Up to 65 days",
+        "meaning": "Manufacturer claim.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Thresholds",
+        "value": "Double thresholds of 4.5 + 4.3 cm (8.8 cm)",
+        "meaning": "AdaptiLift Chassis 3.0.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Height",
+        "value": "7.95 cm minimum clearance",
+        "meaning": "Retractable LDS.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Battery",
+        "value": "6,400 mAh; full charge in 150 minutes",
+        "meaning": "Manufacturer figures.",
+        "source": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      }
+    ],
+    "prices": [],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock S10 MaxV Ultra Steam",
+          "url": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam",
+          "market": "South Korea"
+        },
+        {
+          "name": "Roborock Saros 20",
+          "url": "https://global.roborock.com/pages/roborock-saros-20",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock Qrevo 2 Pro",
+          "url": "https://uk.roborock.com/pages/roborock-qrevo-2-pro",
+          "market": "United Kingdom"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Suction claim",
+          "values": [
+            "36,000 Pa",
+            "36,000 Pa",
+            "25,000 Pa"
+          ]
+        },
+        {
+          "label": "Mopping",
+          "values": [
+            "VibraRise 5.0 vibrating mop",
+            "Dual rotating pads",
+            "Dual spinning pads"
+          ]
+        },
+        {
+          "label": "Dock steam",
+          "values": [
+            "VaporFlow steam",
+            "Not stated",
+            "Not stated"
+          ]
+        },
+        {
+          "label": "Body height",
+          "values": [
+            "7.95 cm",
+            "7.98 cm",
+            "96.6 mm"
+          ]
+        }
+      ],
+      "takeaway": "Its distinguishing feature is steam at the dock; climbing and height match the Saros 20."
+    },
+    "resources": [
+      {
+        "label": "Roborock Korea S10 MaxV Ultra Steam page",
+        "url": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Aju Press Korean launch report",
+        "url": "https://www.ajupress.com/view/20261001085670269",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "dyson-r3-nurovi-spot-scrub-uv": {
+    "verdict": "Dyson's stain-focused flagship robot: UV checks between passes, a heated-water roller and a bagless cyclone dock.",
+    "notFor": "Carpet-heavy homes, and buyers outside the US until local pricing is confirmed.",
+    "specifications": [
+      {
+        "label": "Stain detection",
+        "value": "AI stain scanner with UV; almost 200 spills, stains and objects",
+        "meaning": "Up to 15 passes on the toughest stains.",
+        "source": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey"
+      },
+      {
+        "label": "Suction",
+        "value": "30,000 Pa motor suction",
+        "meaning": "65% more than Dyson's earlier Spot+Scrub AI.",
+        "source": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey"
+      },
+      {
+        "label": "Roller water",
+        "value": "158°F (70°C) heated water, 12-point hydration",
+        "meaning": "Cleans the roller continuously.",
+        "source": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey"
+      },
+      {
+        "label": "Roller edge reach",
+        "value": "Up to 1.57 in",
+        "meaning": "Sensors detect walls before extending.",
+        "source": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey"
+      },
+      {
+        "label": "Carpet lift",
+        "value": "0.39 in",
+        "meaning": "Wet roller lifts on soft floors.",
+        "source": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey"
+      },
+      {
+        "label": "Navigation",
+        "value": "High-speed LiDAR",
+        "meaning": "Room mapping.",
+        "source": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey"
+      },
+      {
+        "label": "Dock",
+        "value": "10 cyclones, bagless; 158°F wash, 131°F drying; 100 days",
+        "meaning": "Auto-doses Dyson 02 Probiotic solution.",
+        "source": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey"
+      }
+    ],
+    "prices": [],
+    "comparison": {
+      "models": [
+        {
+          "name": "Dyson R3 Nurovi Spot+Scrub UV",
+          "url": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey",
+          "market": "United States"
+        },
+        {
+          "name": "Dyson R2 Nurovi Wash+Dry",
+          "url": "https://www.dyson.co.uk/vacuum-cleaners/robot/r2-nurovi-wash-dry/light-grey-vinca-blue",
+          "market": "United Kingdom"
+        },
+        {
+          "name": "Dyson R1 Nurovi Dry",
+          "url": "https://www.dyson.co.uk/vacuum-cleaners/robot/r1-nurovi-dry/light-grey-vinca-blue",
+          "market": "United Kingdom"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cleaning role",
+          "values": [
+            "Vacuum, roller wash, UV stain checks",
+            "Vacuuming and hard-floor washing",
+            "Dry vacuuming only"
+          ]
+        },
+        {
+          "label": "Suction headline",
+          "values": [
+            "30,000 Pa",
+            "21,000 Pa",
+            "21,000 Pa"
+          ]
+        },
+        {
+          "label": "Mop",
+          "values": [
+            "Heated-water roller, 158°F",
+            "Reuleaux triangle pads",
+            "None"
+          ]
+        },
+        {
+          "label": "Dock",
+          "values": [
+            "10 cyclones, bagless",
+            "Pad washing at 75°C",
+            "Bagless, eight cyclones"
+          ]
+        }
+      ],
+      "takeaway": "R3 is the only Nurovi with UV stain verification and a roller; R1 and R2 cover dry-only and pad-washing needs."
+    },
+    "resources": [
+      {
+        "label": "Dyson US R3 Nurovi Spot+Scrub UV product page",
+        "url": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Journal du Geek report on the R3 Nurovi presentation, 3 September 2026",
+        "url": "https://www.journaldugeek.com/2026/09/03/dyson-presente-son-r3-nurovi-le-robot-laveur-qui-traque-les-taches-invisibles-a-la-lumiere-uv/",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "roborock-rockneo-q2-lidar": {
+    "verdict": "A wire-free, RTK-free shortlist for small and medium gardens where trees or buildings weaken satellite positioning.",
+    "notFor": "Large open lawns that suit RTK and AWD models, or buyers who need a confirmed area rating before purchase.",
+    "specifications": [
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR with dual-camera vision",
+        "meaning": "No boundary wire; no RTK mentioned.",
+        "source": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar"
+      },
+      {
+        "label": "Obstacle detection",
+        "value": "RGB camera",
+        "meaning": "Manufacturer description.",
+        "source": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar"
+      },
+      {
+        "label": "Edge cutting",
+        "value": "3 cm",
+        "meaning": "Structural distance of the side blade to the boundary.",
+        "source": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar"
+      },
+      {
+        "label": "Slopes",
+        "value": "Up to 45%",
+        "meaning": "Manufacturer testing.",
+        "source": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar"
+      },
+      {
+        "label": "Narrow passages",
+        "value": "0.6 m",
+        "meaning": "Manufacturer testing.",
+        "source": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar"
+      }
+    ],
+    "prices": [
+      {
+        "market": "Germany",
+        "amount": "EUR 899 RRP",
+        "source": "https://www.notebookcheck.com/Neuer-Maehroboter-von-Roborock-bietet-LiDAR-und-Kantenmaehwerk-fuer-nur-899-Euro.1439920.0.html",
+        "kind": "Reported preorder RRP",
+        "date": "2026-11-07",
+        "note": "Reported by Notebookcheck after IFA 2026; the official page did not show a price when checked on 7 November 2026."
+      }
+    ],
+    "comparison": {
+      "models": [
+        {
+          "name": "Roborock RockNeo Q2 LiDAR",
+          "url": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar",
+          "market": "Europe"
+        },
+        {
+          "name": "Segway Navimow i215 LiDAR",
+          "url": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower",
+          "market": "United States"
+        },
+        {
+          "name": "Mammotion LUBA 4 AWD",
+          "url": "https://us.mammotion.com/blogs/news/luba-4-awd",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Positioning",
+          "values": [
+            "LiDAR + dual cameras",
+            "Solid-state LiDAR + vision",
+            "4 cameras + LiDAR + NetRTK"
+          ]
+        },
+        {
+          "label": "Slope",
+          "values": [
+            "Up to 45%",
+            "45% / 24°",
+            "Up to 80% / 38.6°"
+          ]
+        },
+        {
+          "label": "Lawn size",
+          "values": [
+            "Not stated",
+            "Up to about 1,500 m²",
+            "3,000–12,000 m² by variant"
+          ]
+        },
+        {
+          "label": "Narrow passages",
+          "values": [
+            "0.6 m",
+            "About 70 cm",
+            "Not stated"
+          ]
+        }
+      ],
+      "takeaway": "The Q2 competes with Navimow's LiDAR mowers on small, cluttered gardens; LUBA 4 targets larger and steeper sites."
+    },
+    "resources": [
+      {
+        "label": "Roborock RockNeo Q2 LiDAR product page (Ireland)",
+        "url": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Notebookcheck preorder and price report",
+        "url": "https://www.notebookcheck.com/Neuer-Maehroboter-von-Roborock-bietet-LiDAR-und-Kantenmaehwerk-fuer-nur-899-Euro.1439920.0.html",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "mammotion-luba-4-awd": {
+    "verdict": "A large-lawn AWD shortlist combining cameras, LiDAR and NetRTK. Wait for regional pricing and preorder terms.",
+    "notFor": "Small flat lawns, or buyers who need a confirmed price and delivery date now.",
+    "specifications": [
+      {
+        "label": "Positioning",
+        "value": "Four wide-angle cameras, 360° LiDAR, NetRTK",
+        "meaning": "Tri-Fusion positioning.",
+        "source": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      },
+      {
+        "label": "Rated area",
+        "value": "3,000 / 6,000 / 12,000 m²",
+        "meaning": "3000F, 6000F, 12000F.",
+        "source": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      },
+      {
+        "label": "Cutting width",
+        "value": "440 mm (3000F, 6000F); 530 mm (12000F)",
+        "meaning": "Two or three cutting discs.",
+        "source": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      },
+      {
+        "label": "Slope",
+        "value": "Up to 80% / 38.6°",
+        "meaning": "Manufacturer figure.",
+        "source": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      },
+      {
+        "label": "Obstacles",
+        "value": "Up to 60 mm",
+        "meaning": "Manufacturer figure.",
+        "source": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 1.0 m/s",
+        "meaning": "Maximum mowing speed.",
+        "source": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      },
+      {
+        "label": "Cutting motors",
+        "value": "2 × 165 W (3000F, 6000F); 3 × 165 W (12000F)",
+        "meaning": "Manufacturer figure.",
+        "source": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      },
+      {
+        "label": "Charger",
+        "value": "210 W fast charger",
+        "meaning": "Battery capacity not stated.",
+        "source": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      }
+    ],
+    "prices": [],
+    "comparison": {
+      "models": [
+        {
+          "name": "Mammotion LUBA 4 AWD",
+          "url": "https://us.mammotion.com/blogs/news/luba-4-awd",
+          "market": "Global"
+        },
+        {
+          "name": "Roborock RockNeo Q2 LiDAR",
+          "url": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar",
+          "market": "Europe"
+        },
+        {
+          "name": "Segway Navimow i215 LiDAR",
+          "url": "https://navimow.com/products/navimow-i2-lidar-robot-lawn-mower",
+          "market": "United States"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Positioning",
+          "values": [
+            "4 cameras + LiDAR + NetRTK",
+            "LiDAR + dual cameras",
+            "Solid-state LiDAR + vision"
+          ]
+        },
+        {
+          "label": "Slope",
+          "values": [
+            "Up to 80% / 38.6°",
+            "Up to 45%",
+            "45% / 24°"
+          ]
+        },
+        {
+          "label": "Lawn size",
+          "values": [
+            "3,000–12,000 m² by variant",
+            "Not stated",
+            "Up to about 1,500 m²"
+          ]
+        },
+        {
+          "label": "Drive",
+          "values": [
+            "AWD, independent front steering",
+            "Not stated",
+            "ESC with off-road wheels"
+          ]
+        }
+      ],
+      "takeaway": "LUBA 4 AWD is built for larger and steeper lawns than the LiDAR-only entry mowers it is compared with here."
+    },
+    "resources": [
+      {
+        "label": "Mammotion LUBA 4 AWD model guide",
+        "url": "https://us.mammotion.com/blogs/news/luba-4-awd",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "pudu-gt5": {
+    "verdict": "A commercial large-lawn mower that cuts and collects in one pass with long runtime. Ask Pudu or a distributor for pricing and site terms.",
+    "notFor": "Golf greens and sports turf that need reel cutting, or residential lawns.",
+    "specifications": [
+      {
+        "label": "Cutting width",
+        "value": "60 in (152 cm) rotary",
+        "meaning": "Cuts and collects in one pass.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Productivity",
+        "value": "About 2 acres (8,090 m²) per hour",
+        "meaning": "Target operating efficiency.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 10 hours",
+        "meaning": "Depends on conditions.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Area per charge",
+        "value": "Up to 16 acres (65,000 m²)",
+        "meaning": "Depends on conditions.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Sensing",
+        "value": "LiDAR, camera vision and depth sensing",
+        "meaning": "Shared across the GT Series.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Collection",
+        "value": "Clippings, leaves and light debris; autonomous dumping by configuration",
+        "meaning": "Bin capacity not stated.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      }
+    ],
+    "prices": [],
+    "comparison": {
+      "models": [
+        {
+          "name": "PUDU GT5",
+          "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+          "market": "Global"
+        },
+        {
+          "name": "PUDU GT7",
+          "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+          "market": "Global"
+        },
+        {
+          "name": "PUDU GT3",
+          "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cutting system",
+          "values": [
+            "60 in rotary",
+            "62 in triplex reel",
+            "36 in"
+          ]
+        },
+        {
+          "label": "Intended site",
+          "values": [
+            "Large commercial lawns",
+            "Golf courses and sports turf",
+            "Fragmented sites, campuses, business parks"
+          ]
+        },
+        {
+          "label": "Extra function",
+          "values": [
+            "Collection with autonomous dumping",
+            "Configurable mowing patterns",
+            "Light sweeping of paved areas"
+          ]
+        },
+        {
+          "label": "Positioning",
+          "values": [
+            "LiDAR, camera, depth",
+            "RTK (±2.5 cm), LiDAR, camera",
+            "LiDAR, camera, depth"
+          ]
+        }
+      ],
+      "takeaway": "Choose the GT5 for productivity on large lawns, the GT7 for fine turf and the GT3 for mixed small sites."
+    },
+    "resources": [
+      {
+        "label": "Pudu Robotics GT Series launch release",
+        "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Pudu Robotics GT Series announcement page",
+        "url": "https://www.pudurobotics.com/en/news/pudu-robotics-launches-gt-series-robotic-mowers",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
+  },
+  "pudu-gt7": {
+    "verdict": "A precision reel mower for golf and sports turf with RTK positioning. Ask Pudu or a distributor for pricing and turf-specific terms.",
+    "notFor": "General commercial lawns that need clipping collection, or buyers needing a published cutting-height range.",
+    "specifications": [
+      {
+        "label": "Cutting system",
+        "value": "62 in (160 cm) triplex reel",
+        "meaning": "Three floating reel units.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Positioning",
+        "value": "RTK, LiDAR and camera vision",
+        "meaning": "RTK accuracy up to ±2.5 cm under supported conditions.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Slopes",
+        "value": "Up to 30 degrees",
+        "meaning": "Pudu's stated capability.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Height of cut",
+        "value": "Tool-free adjustment",
+        "meaning": "No numeric range published.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Patterns",
+        "value": "Configurable mowing patterns",
+        "meaning": "For professional turf presentation.",
+        "source": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      }
+    ],
+    "prices": [],
+    "comparison": {
+      "models": [
+        {
+          "name": "PUDU GT7",
+          "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+          "market": "Global"
+        },
+        {
+          "name": "PUDU GT5",
+          "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+          "market": "Global"
+        },
+        {
+          "name": "PUDU GT3",
+          "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+          "market": "Global"
+        }
+      ],
+      "rows": [
+        {
+          "label": "Cutting system",
+          "values": [
+            "62 in triplex reel",
+            "60 in rotary",
+            "36 in"
+          ]
+        },
+        {
+          "label": "Intended site",
+          "values": [
+            "Golf courses and sports turf",
+            "Large commercial lawns",
+            "Fragmented sites, campuses, business parks"
+          ]
+        },
+        {
+          "label": "Slopes",
+          "values": [
+            "Up to 30 degrees",
+            "Not stated",
+            "Not stated"
+          ]
+        },
+        {
+          "label": "Positioning",
+          "values": [
+            "RTK (±2.5 cm), LiDAR, camera",
+            "LiDAR, camera, depth",
+            "LiDAR, camera, depth"
+          ]
+        }
+      ],
+      "takeaway": "The GT7 is the only reel mower in the series and the only one with published RTK accuracy."
+    },
+    "resources": [
+      {
+        "label": "Pudu Robotics GT Series launch release",
+        "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      },
+      {
+        "label": "Pudu Robotics GT Series announcement page",
+        "url": "https://www.pudurobotics.com/en/news/pudu-robotics-launches-gt-series-robotic-mowers",
+        "note": "Official or launch reference; confirm the exact regional model and current terms."
+      }
+    ]
   }
 }

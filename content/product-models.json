@@ -8586,5 +8586,993 @@
     "launchYear": 2026,
     "launchNote": "SharkNinja announced the PowerDetect Speed Clean & Empty System in the United States on April 14, 2026. This profile uses the current US IA3241 specification and package listing.",
     "launchSource": "https://ir.sharkninja.com/news/news-details/2026/SharkNinja-Introduces-Shark-PowerDetect-Speed-Clean--Empty-System/default.aspx"
+  },
+  {
+    "slug": "eufy-omni-e35",
+    "name": "eufy Omni E35",
+    "brand": "eufy",
+    "brandSlug": "eufy",
+    "category": "Robot vacuums",
+    "market": "Ireland · official store €1,099; UK and Europe from 4 September 2026",
+    "summary": "A roller-mop robot with 35,000 Pa suction, a multi-cyclone dust path and an 8-in-1 station that washes the mop at 60°C.",
+    "fit": "Hard-floor homes that want roller mopping with hot-water mop washing and a cyclone pre-filter, at a lower price than the brand's S-series flagship.",
+    "caution": "Suction is a motor-level lab figure, and the 60-day hands-free claim is a station figure, not a maintenance interval for every part.",
+    "facts": [
+      {
+        "label": "Suction",
+        "value": "35,000 Pa",
+        "meaning": "Manufacturer motor-level figure; real pickup depends on floor and brush condition."
+      },
+      {
+        "label": "Roller mop",
+        "value": "HydroJet roller, 16 N (1.6 kg) downward pressure",
+        "meaning": "Pressure is a design figure for the roller, not a stain-removal guarantee."
+      },
+      {
+        "label": "Station",
+        "value": "ThermoClean 8-in-1: 60°C mop wash, 55°C hot-air drying",
+        "meaning": "Up to 60 days of hands-free cleaning in eufy's stated conditions."
+      },
+      {
+        "label": "Sensing",
+        "value": "iPath laser with RGB camera and dual line lasers; 280+ obstacles",
+        "meaning": "Recognition counts come from eufy's own testing."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did the Omni E35 launch?",
+        "answer": "eufy presented it at IFA on 3 September 2026. Engadget reported European and UK availability from 4 September and US preorders from the same day, ahead of a planned 25 September US release."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "The official Irish store listed €1,099 when checked on 7 November 2026. Engadget reported a US launch offer of about USD 1,000 against a regular price of about USD 1,300; check the local store for the current price."
+      },
+      {
+        "question": "How is the roller cleaned?",
+        "answer": "The HydroJet roller rinses itself during cleaning, and the station washes the mop with 60°C water and dries it with 55°C hot air."
+      },
+      {
+        "question": "Does it lift the mop on carpet?",
+        "answer": "The product page lists automatic mop lifting of 30 mm."
+      },
+      {
+        "question": "What is the cyclone system for?",
+        "answer": "AeroTurbo multi-cyclone separation spins dust out of the airflow before it reaches the filter; eufy states it removes 99.99% of dust before the filter in its testing."
+      },
+      {
+        "question": "How long can it run without emptying?",
+        "answer": "eufy states up to 60 days of hands-free cleaning. Water tanks, the roller and the station tray still need routine cleaning."
+      }
+    ],
+    "articles": [
+      "anker-cleaning-appliance-strategy-analysis",
+      "ifa-2026-cleaning-products-company-roundup"
+    ],
+    "related": [
+      "eufy-omni-s2",
+      "eufy-omni-c28",
+      "eufy-omni-c30-edge"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "eufy Ireland Omni E35 product page",
+        "url": "https://www.eufy.com/ie/products/t210mv11"
+      },
+      {
+        "label": "Engadget IFA 2026 launch report",
+        "url": "https://www.engadget.com/2249106/anker-eufy-at-ifa-2026-new-security-cameras-plus-a-robot-vacuum-and-a-robot-lawnmower/"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0709/4049/1966/files/T210MV11-TD00_Product-1500x1500-V2.png",
+    "launchYear": 2026,
+    "launchNote": "Presented at IFA on 3 September 2026, with European and UK availability from 4 September.",
+    "launchSource": "https://www.engadget.com/2249106/anker-eufy-at-ifa-2026-new-security-cameras-plus-a-robot-vacuum-and-a-robot-lawnmower/"
+  },
+  {
+    "slug": "eufy-omni-c30-edge",
+    "name": "eufy Omni C30 Edge",
+    "brand": "eufy",
+    "brandSlug": "eufy",
+    "category": "Robot vacuums",
+    "market": "United States · official store $899.99; Nordic sales from 8 October 2026",
+    "summary": "A rotating-mop robot with 35,000 Pa suction, a 10 N pentagonal mop and an extending edge mop guided by a side laser.",
+    "fit": "Homes that want edge-reaching rotating mops and a self-emptying station at a lower price than eufy's roller-mop models.",
+    "caution": "The checked US page did not state body height, station temperatures or the dust-bag interval; confirm them before buying for low furniture.",
+    "facts": [
+      {
+        "label": "Suction",
+        "value": "35,000 Pa",
+        "meaning": "Motor-level lab figure; actual performance varies."
+      },
+      {
+        "label": "Mopping",
+        "value": "10 N PowerScrub pentagonal mop",
+        "meaning": "Downward-pressure figure for the mop, not a cleaning guarantee."
+      },
+      {
+        "label": "Edge cleaning",
+        "value": "MopMaster 3.0 extending mop",
+        "meaning": "The Edge model adds a mop that extends toward walls, guided by a side-facing laser."
+      },
+      {
+        "label": "Navigation",
+        "value": "iPath 2.0 laser navigation; 100+ objects recognised",
+        "meaning": "Object count from eufy's lab testing."
+      }
+    ],
+    "faq": [
+      {
+        "question": "What is the difference between C30 and C30 Edge?",
+        "answer": "eufy's September Nordic release says both use rotating mop pads and cyclone filtration; the Edge adds an extending mop guided by a side-facing laser."
+      },
+      {
+        "question": "When did it go on sale?",
+        "answer": "The Nordic release scheduled C30 Edge sales for 8 October and standard C30 sales for 31 October 2026. Other regions follow their own schedules."
+      },
+      {
+        "question": "What does it cost in the US?",
+        "answer": "The official US product page listed USD 899.99 when checked on 7 November 2026."
+      },
+      {
+        "question": "What is the model code?",
+        "answer": "The US product page uses T210Q111 in its address and manual file name."
+      },
+      {
+        "question": "Does it have a self-emptying station?",
+        "answer": "Yes. The US page lists an all-in-one station, but the checked text did not give wash or dry temperatures or a dust-bag interval."
+      },
+      {
+        "question": "Is suction the same as the Omni E35?",
+        "answer": "Both list 35,000 Pa, but they use different mopping systems: rotating pentagonal pads on the C30 Edge and a self-rinsing roller on the E35."
+      }
+    ],
+    "articles": [
+      "anker-cleaning-appliance-strategy-analysis"
+    ],
+    "related": [
+      "eufy-omni-e35",
+      "eufy-omni-c28",
+      "eufy-omni-s2"
+    ],
+    "announced": "2026-09-21",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "eufy US Omni C30 Edge product page",
+        "url": "https://www.eufy.com/products/t210q111-eufy-robot-vacuum-omni-c30edge"
+      },
+      {
+        "label": "eufy Nordic C30 and C30 Edge release",
+        "url": "https://api.kommunikasjon.ntb.no/pressemelding/19074225/anker-eufy-robot-vacuums-omni-c30-edge-og-omni-c30-gjor-grundig-rengjoring-enkelt-hjemme?lang=no&publisherId=17849449"
+      }
+    ],
+    "imageSource": "https://cdn.shopify.com/s/files/1/0504/7094/4954/files/T210Q__4_567b4e0e-07f2-4d01-a222-64fa74862215.png",
+    "launchYear": 2026,
+    "launchNote": "Announced in eufy's 21 September 2026 Nordic release, which scheduled C30 Edge sales for 8 October.",
+    "launchSource": "https://api.kommunikasjon.ntb.no/pressemelding/19074225/anker-eufy-robot-vacuums-omni-c30-edge-og-omni-c30-gjor-grundig-rengjoring-enkelt-hjemme?lang=no&publisherId=17849449"
+  },
+  {
+    "slug": "shark-navigator-2-in-1",
+    "name": "Shark Navigator 2-in-1 Robot Vacuum and Mop",
+    "brand": "Shark",
+    "brandSlug": "shark",
+    "category": "Robot vacuums",
+    "market": "United States · SharkNinja.com $599 (60-day base) from 29 September 2026",
+    "summary": "A LiDAR robot that vacuums and mops hard floors, avoids rugs while mopping and empties into a bagless base rated for 30 or 60 days.",
+    "fit": "Mixed-floor homes that want mapped vacuum-and-mop cleaning and a bagless self-emptying base at an entry price.",
+    "caution": "Shark gives comparison claims rather than absolute suction or runtime figures; the two retail versions differ by base capacity.",
+    "facts": [
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR with SmartPath Max row-by-row cleaning",
+        "meaning": "Maps rooms and cleans in organised rows."
+      },
+      {
+        "label": "Mopping",
+        "value": "Vacuums and mops hard floors; avoids carpets and rugs",
+        "meaning": "Mopping is for hard floors only."
+      },
+      {
+        "label": "Base",
+        "value": "Bagless self-empty base: up to 30 or 60 days of debris",
+        "meaning": "Capacity depends on the version bought and on household dirt."
+      },
+      {
+        "label": "Brushroll",
+        "value": "Self-cleaning brushroll designed to reduce hair wrap",
+        "meaning": "Reduces, rather than eliminates, hair handling."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was it announced?",
+        "answer": "SharkNinja announced the Navigator 2-in-1 on 29 September 2026; the 60-day-base version went on sale that day on SharkNinja.com."
+      },
+      {
+        "question": "What are the two versions?",
+        "answer": "A USD 599 version with a 60-day bagless base, and a USD 499 version with a 30-day base announced for Amazon, Costco and Sam's Club."
+      },
+      {
+        "question": "What is the model number?",
+        "answer": "Shark's press images and product address use RVA120E2."
+      },
+      {
+        "question": "How strong is the suction?",
+        "answer": "Shark gives a comparison claim of 4X suction versus the Dreame D10 Plus Gen2 rather than an absolute figure in pascals."
+      },
+      {
+        "question": "Will it mop my rugs?",
+        "answer": "No. In mopping mode it vacuums and mops hard floors while avoiding carpets and rugs."
+      },
+      {
+        "question": "Which app does it use?",
+        "answer": "The SharkClean app, for scheduling, no-go zones and the home map."
+      }
+    ],
+    "articles": [],
+    "related": [
+      "shark-powerdetect-uv-reveal-rv3020xe",
+      "eufy-omni-c30-edge",
+      "narwal-freo-20-edge"
+    ],
+    "announced": "2026-09-29",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "SharkNinja Navigator 2-in-1 announcement",
+        "url": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+      }
+    ],
+    "imageSource": "https://s202.q4cdn.com/977000893/files/doc_multimedia/2026/9/1011588760/JPG-R_RVA120E2_Hero_Front.jpg",
+    "launchYear": 2026,
+    "launchNote": "Announced on 29 September 2026, with the 60-day-base version on sale at SharkNinja.com the same day.",
+    "launchSource": "https://ir.sharkninja.com/news/news-details/2026/Shark-Expands-Its-Robot-Vacuum-Lineup-with-Navigator-2-in-1-Robot-Vacuum-and-Mop/default.aspx"
+  },
+  {
+    "slug": "irobot-roomba-max-875-combo",
+    "name": "iRobot Roomba Max 875 Combo",
+    "brand": "iRobot",
+    "brandSlug": "irobot",
+    "category": "Robot vacuums",
+    "market": "United States · MSRP $1,199 with AutoWash dock; North American retail from late September 2026",
+    "summary": "iRobot's 2026 flagship: 35,000 Pa suction, a 300 rpm roller mop that extends 45 mm to edges, heated mist and a dock that washes at 176°F.",
+    "fit": "Mixed-floor homes that want strong carpet cleaning and a roller mop that lifts away from carpet, from a brand with established US service.",
+    "caution": "Several claims are relative to other Roomba models; read the comparison basis before comparing with other brands.",
+    "facts": [
+      {
+        "label": "Suction and airflow",
+        "value": "35,000 Pa; 20 L/s airflow with SealForce",
+        "meaning": "SealForce uses a skirt to keep airflow close to the carpet."
+      },
+      {
+        "label": "Roller mop",
+        "value": "PowerSpin Max: 300 rpm, 18 N; PerfectEdge extends up to 45 mm",
+        "meaning": "Edge reach is the roller's extension toward walls."
+      },
+      {
+        "label": "Dock",
+        "value": "AutoWash: 176°F (80°C) wash, 131°F (55°C) drying; bag up to 90 days",
+        "meaning": "Also dispenses mopping concentrate automatically."
+      },
+      {
+        "label": "Navigation and size",
+        "value": "Dual-line LiDAR, 300+ objects; 9.98 cm tall; 3.5 cm thresholds",
+        "meaning": "Object recognition by PrecisionVision AI."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did it launch?",
+        "answer": "iRobot announced it on 2 September 2026. It was available at irobot.com immediately, with North American retail later in September."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "The launch release gives an MSRP of USD 1,199 with the AutoWash dock."
+      },
+      {
+        "question": "What is ThermaMist?",
+        "answer": "A heated-mist pretreatment that iRobot says doubles stain removal compared with mopping without it."
+      },
+      {
+        "question": "Does the roller touch carpet?",
+        "answer": "A DriLift self-lifting roller shield is designed to keep the wet roller away from carpet."
+      },
+      {
+        "question": "How does it differ from the Plus 678 Combo?",
+        "answer": "The 875 has more suction (35,000 vs 30,000 Pa), more airflow (20 vs 18 L/s), a faster 300 rpm roller with 18 N pressure and ThermaMist; the 678 uses SprayForce AI pretreatment instead."
+      },
+      {
+        "question": "Who owns iRobot now?",
+        "answer": "iRobot completed its acquisition by Picea in January 2026; the Roomba brand continues under that ownership."
+      }
+    ],
+    "articles": [
+      "irobot-decline-and-the-new-robot-vacuum-order",
+      "roborock-vs-roomba-robot-vacuums"
+    ],
+    "related": [
+      "irobot-roomba-plus-678-combo",
+      "roborock-saros-20",
+      "dreame-x60-ultra"
+    ],
+    "announced": "2026-09-02",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "iRobot Roomba Max 875 Combo and Plus 678 Combo launch release",
+        "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      }
+    ],
+    "imageSource": "https://www.multivu.com/irobot/image/9358751-Roomba-Max-875-Combo-AutoWash-Black.jpg",
+    "launchYear": 2026,
+    "launchNote": "Announced on 2 September 2026 and available at irobot.com the same day.",
+    "launchSource": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+  },
+  {
+    "slug": "irobot-roomba-plus-678-combo",
+    "name": "iRobot Roomba Plus 678 Combo",
+    "brand": "iRobot",
+    "brandSlug": "irobot",
+    "category": "Robot vacuums",
+    "market": "United States · MSRP $899 with AutoWash dock; North American retail from late September 2026",
+    "summary": "A 30,000 Pa roller-mop Roomba with SprayForce AI stain pretreatment, a 45 mm edge-extending roller and a hot-water AutoWash dock.",
+    "fit": "Buyers who want iRobot's carpet airflow system and a washing dock at a lower price than the Max 875 Combo.",
+    "caution": "The release does not state roller speed for the 678, and some dock features listed for the 875 are not listed for it.",
+    "facts": [
+      {
+        "label": "Suction and airflow",
+        "value": "30,000 Pa; 18 L/s with SealForce",
+        "meaning": "Lower than the Max 875 Combo's 35,000 Pa and 20 L/s."
+      },
+      {
+        "label": "Stain pretreatment",
+        "value": "SprayForce AI: 40,000 Pa high-pressure spray",
+        "meaning": "iRobot claims up to 40% better mopping efficiency."
+      },
+      {
+        "label": "Roller mop",
+        "value": "PowerSpin roller with heated water, 15 N; extends up to 45 mm",
+        "meaning": "Automatically lifts 10 mm when carpet is detected."
+      },
+      {
+        "label": "Dock and size",
+        "value": "176°F wash, 131°F drying; up to 90 days; 9.95 cm tall",
+        "meaning": "Concentrate auto-dosing is not listed for this model."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did it launch?",
+        "answer": "iRobot announced it alongside the Max 875 Combo on 2 September 2026, available at irobot.com immediately."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "The launch release gives an MSRP of USD 899 with the AutoWash dock."
+      },
+      {
+        "question": "What is SprayForce AI?",
+        "answer": "A high-pressure spray, rated at 40,000 Pa, that pretreats detected stains before the roller passes."
+      },
+      {
+        "question": "Does it have ThermaMist?",
+        "answer": "No. ThermaMist heated mist is listed for the Max 875 Combo only."
+      },
+      {
+        "question": "Can it climb thresholds?",
+        "answer": "iRobot lists thresholds of up to 3.5 cm, the same figure as the Max 875 Combo."
+      },
+      {
+        "question": "How tall is it?",
+        "answer": "The release gives a 9.95 cm profile."
+      }
+    ],
+    "articles": [
+      "irobot-decline-and-the-new-robot-vacuum-order",
+      "roborock-vs-roomba-robot-vacuums"
+    ],
+    "related": [
+      "irobot-roomba-max-875-combo",
+      "ecovacs-deebot-t90-pro-omni",
+      "eufy-omni-e35"
+    ],
+    "announced": "2026-09-02",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "iRobot Roomba Max 875 Combo and Plus 678 Combo launch release",
+        "url": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+      }
+    ],
+    "imageSource": "https://www.multivu.com/irobot/image/9358751-Roomba-Plus-678-Combo-AutoWash-Black.jpg",
+    "launchYear": 2026,
+    "launchNote": "Announced with the Max 875 Combo on 2 September 2026 and available at irobot.com the same day.",
+    "launchSource": "https://www.prnewswire.com/news-releases/irobot-redefines-hands-free-cleaning-with-its-most-powerful-robot-ever-the-roomba-max-875-combo-302865200.html"
+  },
+  {
+    "slug": "roborock-qrevo-2-pro",
+    "name": "Roborock Qrevo 2 Pro",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Robot vacuums",
+    "market": "United Kingdom · official specification; Japan sale from 2 October 2026",
+    "summary": "A 25,000 Pa dual-mop robot with a reversible corner side brush, 15 mm mop lift and a dock that washes at 75°C.",
+    "fit": "Homes that want a full-feature washing dock and corner-reaching side brush below Roborock's Saros flagships.",
+    "caution": "The UK page lists both 25,000 Pa HyperForce and an 18,500 Pa digital motor figure; compare like with like.",
+    "facts": [
+      {
+        "label": "Suction",
+        "value": "25,000 Pa HyperForce",
+        "meaning": "The same page also lists 18,500 Pa as the digital motor power figure."
+      },
+      {
+        "label": "Mopping",
+        "value": "Dual spinning mops up to 200 rpm; lift up to 15 mm",
+        "meaning": "200 rpm applies with extreme water flow in custom mode."
+      },
+      {
+        "label": "Side brush",
+        "value": "Reversible side brush; up to 30% more corner coverage",
+        "meaning": "Compared with a standard side brush in Roborock's tests."
+      },
+      {
+        "label": "Dock and size",
+        "value": "75°C mop wash, 45°C drying, up to 65 days; robot 96.6 mm tall",
+        "meaning": "Wash temperature is measured at the heater output."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did it go on sale in Japan?",
+        "answer": "Roborock Japan took reservations from 24 September and began sales on 2 October 2026 through Yamada Denki stores and Yamada Webcom."
+      },
+      {
+        "question": "What is the reversible side brush?",
+        "answer": "A side brush that reverses its spin in corners; Roborock says it covers up to 30% more of the corner than a standard brush."
+      },
+      {
+        "question": "Which suction figure should I use?",
+        "answer": "The UK page headlines 25,000 Pa HyperForce suction and lists 18,500 Pa as the digital motor power. Use the same basis when comparing models."
+      },
+      {
+        "question": "How tall is it?",
+        "answer": "The UK specification gives 96.6 mm for the robot; the dock measures 402 × 494 × 450 mm."
+      },
+      {
+        "question": "How long can it go without emptying?",
+        "answer": "Roborock states up to 65 days without manual emptying, and a cleaning-tray maintenance interval of up to 170 days."
+      },
+      {
+        "question": "Is it the same as the Qrevo Curv 2 Pro?",
+        "answer": "No. The Qrevo Curv 2 Pro is a separate model; do not transfer its specifications."
+      }
+    ],
+    "articles": [
+      "roborock-vs-ecovacs-robot-vacuums",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "roborock-qrevo-edge-3-pro",
+      "roborock-qrevo-curv-2-flow",
+      "roborock-s10-maxv-ultra-steam"
+    ],
+    "announced": "2026-09-24",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Roborock UK Qrevo 2 Pro product page",
+        "url": "https://uk.roborock.com/pages/roborock-qrevo-2-pro"
+      },
+      {
+        "label": "Roborock Japan Qrevo 2 Pro sales notice",
+        "url": "https://jp.roborock.com/blogs/news/roborock-qrevo-2-pro-%E3%82%92%E7%99%BA%E5%A3%B2"
+      }
+    ],
+    "imageSource": "https://uk.roborock.com/cdn/shop/files/Quinn_White_ID.png",
+    "launchYear": 2026,
+    "launchNote": "Roborock Japan took reservations from 24 September and began sales on 2 October 2026; the UK page carries the full specification.",
+    "launchSource": "https://jp.roborock.com/blogs/news/roborock-qrevo-2-pro-%E3%82%92%E7%99%BA%E5%A3%B2"
+  },
+  {
+    "slug": "roborock-s10-maxv-ultra-steam",
+    "name": "Roborock S10 MaxV Ultra Steam",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Robot vacuums",
+    "market": "South Korea · official page; preorders 1–11 October, sale from 12 October 2026",
+    "summary": "A 36,000 Pa flagship with VibraRise 5.0 vibrating mop, a steam-cleaning dock and a chassis that climbs 8.8 cm double thresholds.",
+    "fit": "Homes with raised thresholds between rooms and households that want steam-based mop hygiene at the dock.",
+    "caution": "Korea is the first announced market; specifications and dock options can differ in later markets.",
+    "facts": [
+      {
+        "label": "Suction",
+        "value": "36,000 Pa HyperForce digital motor",
+        "meaning": "Manufacturer maximum motor output."
+      },
+      {
+        "label": "Mopping",
+        "value": "VibraRise 5.0: 14 N, 4,000 vibrations per minute, extending mop",
+        "meaning": "Single extending mop for edges and corners."
+      },
+      {
+        "label": "Dock",
+        "value": "Hot-water wash, VaporFlow steam, up to 100°C dock self-clean; 65 days",
+        "meaning": "Hot air dries the dust path at up to 63°C."
+      },
+      {
+        "label": "Chassis and size",
+        "value": "AdaptiLift 3.0: 8.8 cm double thresholds (4.5 + 4.3 cm); 7.95 cm tall",
+        "meaning": "The 8.8 cm figure applies to a two-step threshold."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did it launch in Korea?",
+        "answer": "Aju Press reported preorders from 1 to 11 October and a retail launch on 12 October 2026, making Korea the first announced market."
+      },
+      {
+        "question": "What does the steam do?",
+        "answer": "Roborock Korea says the RockDock combines hot-water washing, VaporFlow steam deep cleaning and hot-air drying for the mop, and states 99.99% removal of four common bacteria and fungi in its tests."
+      },
+      {
+        "question": "Can it climb an 8.8 cm step?",
+        "answer": "The 8.8 cm figure is for a double threshold of 4.5 cm plus 4.3 cm. A single vertical ledge of 8.8 cm is a different obstacle."
+      },
+      {
+        "question": "How low can it go?",
+        "answer": "The retractable LiDAR lets it enter spaces with at least 7.95 cm of clearance."
+      },
+      {
+        "question": "How many objects does it recognise?",
+        "answer": "Roborock Korea lists 300+ object types using structured light, an RGB camera and VertiBeam side structured light."
+      },
+      {
+        "question": "What about the battery?",
+        "answer": "The Korean page lists a 6,400 mAh battery that fully charges in 150 minutes."
+      }
+    ],
+    "articles": [
+      "roborock-vs-ecovacs-robot-vacuums",
+      "roborock-vs-dreame-robot-vacuums"
+    ],
+    "related": [
+      "roborock-saros-20",
+      "roborock-qrevo-2-pro",
+      "dreame-aqua20-pro-ultra-roller-x-complete"
+    ],
+    "announced": "2026-10-01",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Roborock Korea S10 MaxV Ultra Steam page",
+        "url": "https://kr.roborock.com/pages/roborock-s10-maxv-ultra-steam"
+      },
+      {
+        "label": "Aju Press Korean launch report",
+        "url": "https://www.ajupress.com/view/20261001085670269"
+      }
+    ],
+    "imageSource": "https://kr.roborock.com/cdn/shop/files/VDSH_White_ID.png",
+    "launchYear": 2026,
+    "launchNote": "Announced for South Korea on 1 October 2026, with preorders until 11 October and retail launch on 12 October.",
+    "launchSource": "https://www.ajupress.com/view/20261001085670269"
+  },
+  {
+    "slug": "dyson-r3-nurovi-spot-scrub-uv",
+    "name": "Dyson R3 Nurovi Spot+Scrub UV",
+    "brand": "Dyson",
+    "brandSlug": "dyson",
+    "category": "Robot vacuums",
+    "market": "United States · on sale at dyson.com (owner reviews from October 2026)",
+    "summary": "Dyson's flagship robot: an AI stain scanner with UV that checks floors between passes, a 70°C heated-water roller and a bagless cyclone dock.",
+    "fit": "Hard-floor homes where stains and spills are the main concern and buyers want a bagless dock.",
+    "caution": "Availability and price differ by market; the checked US page did not display a price in text.",
+    "facts": [
+      {
+        "label": "Stain detection",
+        "value": "AI stain scanner with UV; identifies almost 200 spills, stains and objects",
+        "meaning": "Can use up to 15 passes on the toughest stains."
+      },
+      {
+        "label": "Roller",
+        "value": "158°F (70°C) heated water, 12-point hydration; extends up to 1.57 in (40 mm)",
+        "meaning": "Lifts 0.39 in (10 mm) on soft floors."
+      },
+      {
+        "label": "Suction",
+        "value": "30,000 Pa motor suction",
+        "meaning": "Dyson states 65% more suction pressure than its earlier Spot+Scrub AI."
+      },
+      {
+        "label": "Dock",
+        "value": "10 cyclones, bagless; 158°F roller wash, 131°F drying; 100 days",
+        "meaning": "Auto-doses Dyson 02 Probiotic solution."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When did it launch?",
+        "answer": "Dyson presented the R3 with its Nurovi robot range on 3 September 2026. The US product page was selling it, with verified-owner reviews, by October 2026."
+      },
+      {
+        "question": "What does the UV do?",
+        "answer": "Between passes the robot analyses the floor with UV light to check that a stain has been removed before moving on."
+      },
+      {
+        "question": "Is the dock bagless?",
+        "answer": "Yes. Ten cyclones separate dust and debris at the dock, which Dyson rates for 100 days of hands-free cleaning."
+      },
+      {
+        "question": "How does it handle carpet?",
+        "answer": "It senses soft floors and lifts the wet roller by 0.39 in (10 mm)."
+      },
+      {
+        "question": "How does it differ from the R1 and R2?",
+        "answer": "The R3 adds the UV stain scanner to the Nurovi range; the R1 is dry-only and the R2 adds washing and drying."
+      },
+      {
+        "question": "Is it available in my country?",
+        "answer": "It was on sale in the US by October 2026. Other markets follow their own schedules; check Dyson's local site."
+      }
+    ],
+    "articles": [
+      "dyson-new-product-push-premium-innovation",
+      "dysons-anxiety"
+    ],
+    "related": [
+      "dyson-r2-nurovi-wash-dry",
+      "dyson-r1-nurovi-dry",
+      "irobot-roomba-max-875-combo"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Dyson US R3 Nurovi Spot+Scrub UV product page",
+        "url": "https://www.dyson.com/vacuum-cleaners/robot/r3-nurovi-spot-scrub-uv/light-grey"
+      },
+      {
+        "label": "Journal du Geek report on the R3 Nurovi presentation, 3 September 2026",
+        "url": "https://www.journaldugeek.com/2026/09/03/dyson-presente-son-r3-nurovi-le-robot-laveur-qui-traque-les-taches-invisibles-a-la-lumiere-uv/"
+      }
+    ],
+    "imageSource": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary/686860-01.png",
+    "launchYear": 2026,
+    "launchNote": "Presented with Dyson's Nurovi robot range on 3 September 2026 and on sale in the US by October 2026.",
+    "launchSource": "https://www.journaldugeek.com/2026/09/03/dyson-presente-son-r3-nurovi-le-robot-laveur-qui-traque-les-taches-invisibles-a-la-lumiere-uv/"
+  },
+  {
+    "slug": "roborock-rockneo-q2-lidar",
+    "name": "Roborock RockNeo Q2 LiDAR",
+    "brand": "Roborock",
+    "brandSlug": "roborock",
+    "category": "Robot mowers",
+    "market": "Europe · official product page; €899 RRP reported at preorder",
+    "summary": "A wire-free robot mower that navigates by 360° LiDAR and dual cameras without an RTK station, with a 3 cm edge blade and 45% slopes.",
+    "fit": "Small and medium European gardens where trees or buildings make RTK signals unreliable.",
+    "caution": "The official page did not yet list price, lawn area or cutting width; reported figures come from launch coverage.",
+    "facts": [
+      {
+        "label": "Navigation",
+        "value": "360° LiDAR with dual-camera vision; no boundary wire",
+        "meaning": "Builds its own garden map; no RTK station is mentioned."
+      },
+      {
+        "label": "Edge cutting",
+        "value": "3 cm from the boundary",
+        "meaning": "Structural hardware distance of the side auxiliary blade."
+      },
+      {
+        "label": "Slopes",
+        "value": "Up to 45%",
+        "meaning": "Manufacturer testing."
+      },
+      {
+        "label": "Narrow passages",
+        "value": "As narrow as 0.6 m",
+        "meaning": "Manufacturer testing."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was it announced?",
+        "answer": "Roborock presented the RockNeo Q2 LiDAR at IFA in Berlin in early September 2026."
+      },
+      {
+        "question": "Does it need an RTK antenna or boundary wire?",
+        "answer": "No. Roborock's page describes LiDAR and dual-camera navigation without boundary wires; no RTK station is mentioned."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "Notebookcheck reported a €899 recommended retail price at preorder. The checked official page did not show a price."
+      },
+      {
+        "question": "How big a lawn can it handle?",
+        "answer": "Launch coverage cited lawns up to 800 m²; the checked official page did not state an area."
+      },
+      {
+        "question": "How close does it cut to edges?",
+        "answer": "The side auxiliary blade sits 3 cm from the boundary, measured as a structural distance."
+      },
+      {
+        "question": "Is it sold in the US?",
+        "answer": "Coverage at launch described a European focus, with US availability not announced."
+      }
+    ],
+    "articles": [
+      "roborock-robot-mowers-product-line-dealer-rollout",
+      "roborock-rockmow-first-generation"
+    ],
+    "related": [
+      "segway-navimow-i215-lidar",
+      "ecovacs-goat-o1200-lidar-pro",
+      "mova-lidax-ultra-1000"
+    ],
+    "announced": "2026-09-03",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Roborock RockNeo Q2 LiDAR product page (Ireland)",
+        "url": "https://garden.roborock.com/ie/products/roborock-rockneo-q2-lidar"
+      },
+      {
+        "label": "Notebookcheck preorder and price report",
+        "url": "https://www.notebookcheck.com/Neuer-Maehroboter-von-Roborock-bietet-LiDAR-und-Kantenmaehwerk-fuer-nur-899-Euro.1439920.0.html"
+      }
+    ],
+    "imageSource": "https://garden-files.roborock.com/frontend-static/assets/products/rockneo-q2-lidar/section1_web_pic1.b6d19a70.jpg",
+    "launchYear": 2026,
+    "launchNote": "Presented at IFA 2026 in Berlin; Notebookcheck reported preorders at €899 RRP.",
+    "launchSource": "https://www.notebookcheck.com/Neuer-Maehroboter-von-Roborock-bietet-LiDAR-und-Kantenmaehwerk-fuer-nur-899-Euro.1439920.0.html"
+  },
+  {
+    "slug": "mammotion-luba-4-awd",
+    "name": "Mammotion LUBA 4 AWD",
+    "brand": "Mammotion",
+    "brandSlug": "mammotion",
+    "category": "Robot mowers",
+    "market": "Global · IFA 2026 announcement; preorders expected in Q4 2026",
+    "summary": "An all-wheel-drive robot mower with four cameras, 360° LiDAR and NetRTK, independent front-wheel steering and 80% slope capability.",
+    "fit": "Large, sloped or complex lawns that need AWD traction and multi-sensor positioning.",
+    "caution": "Mammotion had not announced prices or a single global retail date at launch.",
+    "facts": [
+      {
+        "label": "Positioning",
+        "value": "Four wide-angle cameras, 360° LiDAR and NetRTK",
+        "meaning": "Mammotion calls the combination Tri-Fusion positioning."
+      },
+      {
+        "label": "Variants",
+        "value": "3000F, 6000F and 12000F: 3,000 / 6,000 / 12,000 m²",
+        "meaning": "Cutting width 440 mm (3000F, 6000F) and 530 mm (12000F)."
+      },
+      {
+        "label": "Terrain",
+        "value": "Up to 80% (38.6°) slopes; 60 mm obstacles",
+        "meaning": "Manufacturer figures."
+      },
+      {
+        "label": "Drive",
+        "value": "AWD with independent front-wheel steering, bidirectional driving",
+        "meaning": "Edge-trimming module supported on 3000F and 6000F only."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was it announced?",
+        "answer": "Mammotion unveiled LUBA 4 AWD at IFA on 4 September 2026."
+      },
+      {
+        "question": "When can I buy it?",
+        "answer": "Mammotion said preorders were expected in Q4 2026 and had not published a single global retail date."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "No official pricing had been announced in the launch information."
+      },
+      {
+        "question": "Which variant fits my lawn?",
+        "answer": "The 3000F covers up to 3,000 m², the 6000F up to 6,000 m² and the 12000F up to 12,000 m²."
+      },
+      {
+        "question": "Does the edge trimmer work with all versions?",
+        "answer": "No. The edge-trimming module supports the 3000F and 6000F but not the 12000F."
+      },
+      {
+        "question": "How fast does it mow?",
+        "answer": "Mammotion lists a maximum mowing speed of up to 1.0 m/s."
+      }
+    ],
+    "articles": [
+      "mammotion-luba-vs-yuka-robot-mowers",
+      "roborock-rockmow-z1-vs-mammotion-luba-3-awd"
+    ],
+    "related": [
+      "mammotion-luba-3-awd-1500",
+      "mammotion-luba-mini-2-awd-1500",
+      "segway-navimow-x430"
+    ],
+    "announced": "2026-09-04",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Mammotion LUBA 4 AWD model guide",
+        "url": "https://us.mammotion.com/blogs/news/luba-4-awd"
+      }
+    ],
+    "imageSource": "https://us.mammotion.com/cdn/shop/articles/luba4_AWD_36cfeacd-bf7b-447c-871a-2a12bd39fc28.jpg",
+    "launchYear": 2026,
+    "launchNote": "Unveiled at IFA on 4 September 2026, with preorders expected in Q4 2026.",
+    "launchSource": "https://us.mammotion.com/blogs/news/luba-4-awd"
+  },
+  {
+    "slug": "pudu-gt5",
+    "name": "PUDU GT5",
+    "brand": "PUDU Robotics",
+    "brandSlug": "pudu-robotics",
+    "category": "Robot mowers",
+    "market": "Global · launch release; debut at GaLaBau 2026, Nuremberg, 15–18 September",
+    "summary": "A commercial 60-inch rotary robotic mower that cuts and collects in one pass, targeting about 2 acres per hour and up to 10 hours per charge.",
+    "fit": "Large commercial lawns such as campuses, parks and business sites where collection and long runtime matter.",
+    "caution": "Pudu did not publish price, cutting height or slope figures for the GT5 in the launch release.",
+    "facts": [
+      {
+        "label": "Cutting width",
+        "value": "60 in (152 cm) rotary deck",
+        "meaning": "Cuts and collects clippings, leaves and light debris in one pass."
+      },
+      {
+        "label": "Productivity",
+        "value": "About 2 acres (8,090 m²) per hour",
+        "meaning": "Pudu's target operating efficiency."
+      },
+      {
+        "label": "Runtime",
+        "value": "Up to 10 hours; up to 16 acres (65,000 m²) per charge",
+        "meaning": "Depends on conditions."
+      },
+      {
+        "label": "Autonomy",
+        "value": "LiDAR, camera vision and depth sensing; autonomous dumping by configuration",
+        "meaning": "Manual driving is available for repositioning."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was it launched?",
+        "answer": "Pudu Robotics announced the GT Series on 1 September 2026 and debuted it at GaLaBau in Nuremberg on 15–18 September."
+      },
+      {
+        "question": "What jobs is it for?",
+        "answer": "Large commercial lawns; it cuts and collects in one pass and can return to dump its load autonomously, depending on configuration."
+      },
+      {
+        "question": "How much area can it cover?",
+        "answer": "Pudu targets about 2 acres per hour and up to 16 acres per charge, depending on conditions."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "Pricing was not stated in the launch release."
+      },
+      {
+        "question": "How does it differ from the GT3 and GT7?",
+        "answer": "The GT3 is a compact 36-inch model that also sweeps paved areas; the GT7 is a 62-inch triplex reel mower for golf and sports turf."
+      },
+      {
+        "question": "Can an operator drive it manually?",
+        "answer": "Yes. The series supports manual driving for repositioning or intervention."
+      }
+    ],
+    "articles": [
+      "commercial-robotic-lawn-mowers",
+      "commercial-robotic-mower-market-navimow-mammotion"
+    ],
+    "related": [
+      "pudu-gt7",
+      "mova-lidax-ultra-2000-awd",
+      "dreame-a3-awd-pro-2500"
+    ],
+    "announced": "2026-09-01",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Pudu Robotics GT Series launch release",
+        "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Pudu Robotics GT Series announcement page",
+        "url": "https://www.pudurobotics.com/en/news/pudu-robotics-launches-gt-series-robotic-mowers"
+      }
+    ],
+    "imageSource": "https://cdn.pudutech.com/1_26b16ca5f8.webp",
+    "launchYear": 2026,
+    "launchNote": "Announced on 1 September 2026 and debuted at GaLaBau 2026 (15–18 September). Product image cropped from Pudu's official GT Series launch image.",
+    "launchSource": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+  },
+  {
+    "slug": "pudu-gt7",
+    "name": "PUDU GT7",
+    "brand": "PUDU Robotics",
+    "brandSlug": "pudu-robotics",
+    "category": "Robot mowers",
+    "market": "Global · launch release; debut at GaLaBau 2026, Nuremberg, 15–18 September",
+    "summary": "A 62-inch triplex reel robotic mower for golf courses and sports turf, with RTK positioning to ±2.5 cm and 30° slope capability.",
+    "fit": "Golf courses, sports fields and professional turf that need precise reel cutting and repeatable patterns.",
+    "caution": "Pudu did not give a numeric cutting-height range, runtime or price in the launch release.",
+    "facts": [
+      {
+        "label": "Cutting system",
+        "value": "62 in (160 cm) triplex reel; three floating reel units",
+        "meaning": "Reel cutting suits fine turf."
+      },
+      {
+        "label": "Positioning",
+        "value": "RTK, LiDAR and camera vision; RTK accuracy up to ±2.5 cm",
+        "meaning": "Accuracy applies under supported conditions."
+      },
+      {
+        "label": "Slopes",
+        "value": "Up to 30 degrees",
+        "meaning": "Pudu's stated capability."
+      },
+      {
+        "label": "Cut adjustment",
+        "value": "Tool-free height-of-cut adjustment; configurable mowing patterns",
+        "meaning": "No numeric height range was published."
+      }
+    ],
+    "faq": [
+      {
+        "question": "When was it launched?",
+        "answer": "Pudu announced the GT Series on 1 September 2026 and debuted it at GaLaBau in Nuremberg on 15–18 September."
+      },
+      {
+        "question": "What is it designed for?",
+        "answer": "Golf courses, professional sports fields and other professional turf environments."
+      },
+      {
+        "question": "How precise is its positioning?",
+        "answer": "Pudu states RTK positioning accuracy of up to ±2.5 cm under supported conditions."
+      },
+      {
+        "question": "Can it mow slopes?",
+        "answer": "Pudu says it can climb slopes of up to 30 degrees."
+      },
+      {
+        "question": "What does it cost?",
+        "answer": "Pricing was not stated in the launch release."
+      },
+      {
+        "question": "How does it differ from the GT5?",
+        "answer": "The GT7 uses three floating reel units for fine turf, while the GT5 is a 60-inch rotary mower that collects clippings on large lawns."
+      }
+    ],
+    "articles": [
+      "commercial-robotic-lawn-mowers",
+      "commercial-robotic-mower-market-navimow-mammotion"
+    ],
+    "related": [
+      "pudu-gt5",
+      "mova-lidax-ultra-2000-awd",
+      "dreame-a3-awd-pro-2500"
+    ],
+    "announced": "2026-09-01",
+    "verifiedAt": "2026-11-07",
+    "sources": [
+      {
+        "label": "Pudu Robotics GT Series launch release",
+        "url": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
+      },
+      {
+        "label": "Pudu Robotics GT Series announcement page",
+        "url": "https://www.pudurobotics.com/en/news/pudu-robotics-launches-gt-series-robotic-mowers"
+      }
+    ],
+    "imageSource": "https://cdn.pudutech.com/1_26b16ca5f8.webp",
+    "launchYear": 2026,
+    "launchNote": "Announced on 1 September 2026 and debuted at GaLaBau 2026 (15–18 September). Product image cropped from Pudu's official GT Series launch image.",
+    "launchSource": "https://www.prnewswire.com/news-releases/pudu-robotics-launches-pudu-gt-series-a-three-model-lineup-of-commercial-robotic-mowers-for-professional-grounds-and-turf-management-302866160.html"
   }
 ]

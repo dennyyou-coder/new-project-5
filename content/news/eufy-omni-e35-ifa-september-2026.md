@@ -8,7 +8,7 @@ publishedAt: "2026-10-06T13:54:17+08:00"
 sortDate: "2026-10-06T13:54:17+08:00"
 eventDate: "2026-09-03"
 brand_slugs: ["eufy"]
-product_slugs: []
+product_slugs: ["eufy-omni-e35"]
 related_articles: []
 source_titles: ["Engadget — eufy IFA 2026 announcements"]
 source_urls: ["https://www.engadget.com/2249106/anker-eufy-at-ifa-2026-new-security-cameras-plus-a-robot-vacuum-and-a-robot-lawnmower/"]
