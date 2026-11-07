@@ -1,3 +1,5 @@
+import { TopicLinks } from "@/components/topics/TopicLinks";
+import { getTopicsFor } from "@/lib/topics";
 import { ArticleProductLinks, ArticleVideoLinks } from "@/components/editorial/EditorialConnections";
 import { TallyButton } from "@/components/LeadForms";
 import { getBlogCta } from "@/lib/blogConversion";
@@ -324,6 +326,8 @@ export default async function InsightDetailPage({ params }: Props) {
                 </nav>
               </details>
             ) : null}
+
+            <TopicLinks topics={getTopicsFor("insight", article.slug)} />
 
             <div className="blog-reading-body" dangerouslySetInnerHTML={{ __html: reading.content }} />
 
