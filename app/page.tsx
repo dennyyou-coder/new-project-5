@@ -217,7 +217,7 @@ export default function HomePage() {
         <div className="home-b-container">
           <div className="home-b-head">
             <h2 id="home-feed-title">Across the industry this week</h2>
-            <Link href="/news">All news →</Link>
+            <Link className="wcb-more" href="/news">All news</Link>
           </div>
           <div className="home-b-feed">
             {lead ? (
@@ -258,7 +258,7 @@ export default function HomePage() {
         <div className="home-b-container">
           <div className="home-b-head">
             <h2 id="home-categories-title">Browse by category</h2>
-            <Link href="/categories">All categories →</Link>
+            <Link className="wcb-more" href="/categories">All categories</Link>
           </div>
           <div className="home-b-categories">
             {hubs.map((data) => {
@@ -297,7 +297,7 @@ export default function HomePage() {
           <div className="home-b-container">
             <div className="home-b-head">
               <h2 id="home-products-title">New products</h2>
-              <Link href="/products">All {featuredProductModels.length} new {productSelectionYear} models →</Link>
+              <Link className="wcb-more" href="/products">All {featuredProductModels.length} new {productSelectionYear} models</Link>
             </div>
             <div className="home-b-products">
               {newModels.map((model) => (
@@ -319,7 +319,7 @@ export default function HomePage() {
           <div className="home-b-container">
             <div className="home-b-head">
               <h2 id="home-analysis-title">Deep analysis</h2>
-              <Link href="/blog/archive">All analysis →</Link>
+              <Link className="wcb-more" href="/blog/archive">All analysis</Link>
             </div>
             <p className="home-b-sub">Supply chains, company strategy and the forces behind the brands.</p>
             <div className="home-b-cards">
@@ -344,7 +344,7 @@ export default function HomePage() {
           <div className="home-b-companies-main">
             <div className="home-b-head">
               <h2 id="home-companies-title">Companies</h2>
-              <Link href="/brands">All {brands.length} profiles →</Link>
+              <Link className="wcb-more" href="/brands">All {brands.length} profiles</Link>
             </div>
             <div className="home-b-companies">
               {topCompanies.map((brand) => (
@@ -370,7 +370,7 @@ export default function HomePage() {
                   </span>
                 </Link>
               ))}
-              <Link className="home-b-owners-all" href="/brands#company-owners-title">All ownership groups →</Link>
+              <Link className="wcb-more home-b-owners-all" href="/brands#company-owners-title">All ownership groups</Link>
             </div>
           ) : null}
         </div>
@@ -382,7 +382,7 @@ export default function HomePage() {
             <div id="markets">
               <div className="home-b-head">
                 <h2><span className="home-b-head-icon"><Icon name="trending" /></span>Markets</h2>
-                <Link href="/markets">All results →</Link>
+                <Link className="wcb-more" href="/markets">All results</Link>
               </div>
               <ul className="home-b-list home-b-results">
                 {results.map((item) => {
@@ -408,7 +408,7 @@ export default function HomePage() {
             <div id="policy">
               <div className="home-b-head">
                 <h2><span className="home-b-head-icon"><Icon name="clipboard" /></span>Policy and standards</h2>
-                <Link href={newsHref("policy-standards")}>More →</Link>
+                <Link className="wcb-more" href={newsHref("policy-standards")}>More</Link>
               </div>
               <ul className="home-b-list">
                 {policy.map((item) => (
@@ -426,7 +426,7 @@ export default function HomePage() {
           <div id="events">
             <div className="home-b-head">
               <h2><span className="home-b-head-icon"><Icon name="calendar" /></span>Events</h2>
-              <Link href="/wcb-expo">WCB Expo →</Link>
+              <Link className="wcb-more" href="/wcb-expo">WCB Expo</Link>
             </div>
             <div className="home-b-event">
               <p className="home-b-event-date"><span>Nov</span>18–20</p>
@@ -469,7 +469,7 @@ export default function HomePage() {
           <div className="home-b-container">
             <div className="home-b-head">
               <h2 id="home-guides-title">Guides for professionals</h2>
-              <Link href="/guides">All {guides.length} guides →</Link>
+              <Link className="wcb-more" href="/guides">All {guides.length} guides</Link>
             </div>
             <div className="home-b-cards home-b-cards-3">
               {professionalGuides.map((guide) => (

@@ -37,8 +37,8 @@ export function ArticleCompanyCard({ profile }: { profile: BrandProfile }) {
           </div>
         ))}
       </dl>
-      <Link className="article-company-card__link" href={`/brands/${profile.slug}`}>
-        Full {profile.name} company profile →
+      <Link className="article-company-card__link wcb-more" href={`/brands/${profile.slug}`}>
+        Full {profile.name} company profile
       </Link>
     </aside>
   );

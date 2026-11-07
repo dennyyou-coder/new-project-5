@@ -153,7 +153,7 @@ export default async function CategoryHubPage({ params }: Props) {
               <div className="ch-latest" id="hub-latest">
                 <div className="ch-head">
                   <h2>Latest</h2>
-                  {data.news.length ? <Link href={lists.news}>All {hub.name.toLowerCase()} news →</Link> : null}
+                  {data.news.length ? <Link className="wcb-more" href={lists.news}>All {hub.name.toLowerCase()} news</Link> : null}
                 </div>
                 <ul>
                   {latest.map((item) => {
@@ -188,7 +188,7 @@ export default async function CategoryHubPage({ params }: Props) {
           <section className="ch-section" id="hub-companies" aria-labelledby="hub-companies-heading">
             <div className="ch-head">
               <h2 id="hub-companies-heading">Companies in {hub.name.toLowerCase()}</h2>
-              <Link href="/brands">All company profiles →</Link>
+              <Link className="wcb-more" href="/brands">All company profiles</Link>
             </div>
             <div className="ch-companies">
               {companies.map((brand) => (
@@ -207,7 +207,7 @@ export default async function CategoryHubPage({ params }: Props) {
           <section className="ch-section" id="hub-models" aria-labelledby="hub-models-heading">
             <div className="ch-head">
               <h2 id="hub-models-heading">New {productSelectionYear} models</h2>
-              <Link href={lists.products}>All {hub.name.toLowerCase()} models →</Link>
+              <Link className="wcb-more" href={lists.products}>All {hub.name.toLowerCase()} models</Link>
             </div>
             <div className="ch-grid4">
               {models.map((model) => (
@@ -226,7 +226,7 @@ export default async function CategoryHubPage({ params }: Props) {
               ))}
               {showMoreModels ? (
                 <Link className="ch-more" href={lists.products}>
-                  <b>See all {hub.name.toLowerCase()} models →</b>
+                  <b className="wcb-more-label">See all {hub.name.toLowerCase()} models</b>
                   <span>Opens the product library filtered to {hub.name.toLowerCase()}</span>
                 </Link>
               ) : null}
@@ -238,7 +238,7 @@ export default async function CategoryHubPage({ params }: Props) {
           <section className="ch-section" aria-labelledby="hub-essential-heading">
             <div className="ch-head">
               <h2 id="hub-essential-heading">Essential reading</h2>
-              <Link href={lists.analysis}>All {hub.name.toLowerCase()} analysis →</Link>
+              <Link className="wcb-more" href={lists.analysis}>All {hub.name.toLowerCase()} analysis</Link>
             </div>
             <div className="ch-grid4">
               {essential.map((article) => (
@@ -258,7 +258,7 @@ export default async function CategoryHubPage({ params }: Props) {
               <div>
                 <div className="ch-head">
                   <h2>Buyer guides</h2>
-                  <Link href="/guides">All guides →</Link>
+                  <Link className="wcb-more" href="/guides">All guides</Link>
                 </div>
                 <div className="ch-grid3">
                   {guides.map((guide) => (
@@ -277,7 +277,7 @@ export default async function CategoryHubPage({ params }: Props) {
                   <b>Sourcing {hub.name.toLowerCase()}?</b>
                   <span>Product platforms, channels and supplier checks for this category.</span>
                 </span>
-                <i>Category sourcing →</i>
+                <i>Category sourcing</i>
               </Link>
             ) : null}
           </section>

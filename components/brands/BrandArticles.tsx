@@ -28,7 +28,7 @@ export function BrandArticles({
     <section className="bp-card" id="analysis" aria-labelledby="analysis-title">
       <div className="bp-card-head">
         <h2 id="analysis-title"><span className="bp-card-icon"><Icon name="newspaper" /></span>News &amp; analysis</h2>
-        {analysisLink ? <Link className="bp-card-more" href={analysisLink.href}>{analysisLink.label} →</Link> : null}
+        {analysisLink ? <Link className="bp-card-more wcb-more" href={analysisLink.href}>{analysisLink.label}</Link> : null}
       </div>
       {articles.length ? (
         <div className="bp-articles">
