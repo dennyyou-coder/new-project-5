@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 import { getInsights, markdownToHtml } from "../lib/content.ts";
+import { getNews } from "../lib/news.ts";
 import { GET as sitemapIndex } from "../app/sitemap.xml/route.ts";
 import {
   buildBlogSitemap,
@@ -147,4 +148,24 @@ test("child sitemaps preserve trustworthy page dates and intentional discovery r
     updatedArticle?.lastModified?.toISOString(),
     "2026-06-20T16:00:00.000Z"
   );
+});
+
+test("sitemaps leave out paginated lists and never report a bulk timestamp as a news update", () => {
+  const entries = [...buildBlogSitemap(), ...buildDiscoverySitemap()];
+  assert.ok(entries.every(({ url }) => !/[?&]page=\d+/.test(url)), "no paginated list URLs");
+
+  const news = getNews();
+  const shared = new Map();
+  for (const { updatedAt } of news) shared.set(updatedAt, (shared.get(updatedAt) ?? 0) + 1);
+  const sitemapDate = new Map(buildBlogSitemap().map(({ url, lastModified }) => [url, lastModified?.toISOString()]));
+  for (const article of news) {
+    const reported = sitemapDate.get(`https://worldcleanbiz.com/news/${article.slug}`);
+    assert.ok(reported, `${article.slug} has a date`);
+    if (shared.get(article.updatedAt) > 20) {
+      assert.equal(reported, new Date(article.publishedAt).toISOString(), `${article.slug} uses its publication date`);
+    }
+  }
+
+  const models = buildDiscoverySitemap().filter(({ url }) => /\/products\/[^/]+$/.test(url));
+  assert.ok(models.length > 0 && models.every(({ lastModified }) => lastModified), "product models carry their verification date");
 });
