@@ -11,6 +11,24 @@
   "description": "A source-backed profile of Breville and Sage, separating the regional consumer marks, Breville Group, operating companies, premium appliance portfolio, channels and model-level buyer checks.",
   "metaDescription": "Breville Sage brand profile: regional brand rights, premium kitchen appliances, channels and buyer verification.",
   "quickAnswer": "Breville and Sage belong to Breville Group, listed in Australia. The company sells as Sage in the UK and Europe, where it does not own the Breville name.",
+  "faq": [
+    {
+      "question": "Who owns Breville?",
+      "answer": "Breville Group Limited, a company listed in Australia, is the parent of the Breville and Sage appliance business."
+    },
+    {
+      "question": "Are Breville and Sage the same company?",
+      "answer": "Yes. Breville Group sells its premium appliances as Sage in the UK and Europe, where it says it does not own or operate the Breville brand."
+    },
+    {
+      "question": "What country is Breville from?",
+      "answer": "Australia. Breville was founded in Sydney in 1932, and Breville Group is based there."
+    },
+    {
+      "question": "What does Breville Group make?",
+      "answer": "Premium kitchen appliances: espresso machines, grinders and coffee makers, countertop ovens and air fryers, and food processors, blenders, juicers and kettles."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Breville Group Limited. Group and brand evidence does not identify the legal manufacturer, factory, importer, seller or warrantor for every Breville- or Sage-branded product.",
   "headquarters": "Sydney, Australia (Breville Group Limited)",
   "founded": "Breville founded in Sydney in 1932",
@@ -67,5 +85,5 @@
   ],
   "publishedAt": "2026-08-07T14:52:59+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-08-07T14:52:59+08:00"
+  "lastModified": "2026-11-07T12:00:00+08:00"
 }

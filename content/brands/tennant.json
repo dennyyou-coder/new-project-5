@@ -12,6 +12,24 @@
   "description": "A source-backed profile of Tennant Company, its professional floor-cleaning and autonomous equipment portfolio, global manufacturing footprint, sales channels and buyer verification points.",
   "metaDescription": "Tennant profile: listed-company identity, leadership, scrubbers, sweepers, autonomous equipment, manufacturing, channels, service and buyer checks.",
   "quickAnswer": "Tennant Company is an independent company listed on the New York Stock Exchange (TNC). It has no parent company.",
+  "faq": [
+    {
+      "question": "Who owns Tennant Company?",
+      "answer": "Tennant is an independent company listed on the New York Stock Exchange under TNC. Its filings identify no parent company."
+    },
+    {
+      "question": "Where is Tennant headquartered?",
+      "answer": "Eden Prairie, Minnesota, in the United States. The company was founded in 1870."
+    },
+    {
+      "question": "What does Tennant make?",
+      "answer": "Commercial and industrial floor scrubbers and sweepers, autonomous cleaning machines, and vacuums and extractors, with parts and service programmes. It also owns the IPC brand."
+    },
+    {
+      "question": "Where does Tennant make its machines?",
+      "answer": "Tennant's 2025 annual report lists 11 global manufacturing locations. Check the serial plate and shipping documents for a specific machine's country of origin."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Tennant Company. Company-level disclosures do not establish the manufacturer, origin, software provider, seller or warranty entity for every model and market.",
   "headquarters": "Eden Prairie, Minnesota, United States",
   "founded": "1870",
@@ -212,5 +230,5 @@
   ],
   "publishedAt": "2026-08-08T01:38:00+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-11-05T22:30:00+08:00"
+  "lastModified": "2026-11-07T12:00:00+08:00"
 }

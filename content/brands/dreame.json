@@ -13,6 +13,28 @@
   "description": "Dreame is a privately held Chinese company based in Suzhou, founded and led by Yu Hao. Xiaomi and Shunwei Capital are documented investors and Dreame joined the Xiaomi ecosystem in 2017, but Xiaomi is not its parent. MOVA is a separate Dreame family brand.",
   "metaDescription": "Dreame is privately held, based in Suzhou, China, and led by founder Yu Hao. Xiaomi and Shunwei invested but are not its parent. Products, factories, MOVA.",
   "quickAnswer": "Dreame is privately held and led by founder Yu Hao. Xiaomi and Shunwei Capital are investors, but Xiaomi is not its parent company.",
+  "faq": [
+    {
+      "question": "Is Dreame owned by Xiaomi?",
+      "answer": "No. Xiaomi and Shunwei Capital are investors, and Dreame joined the Xiaomi ecosystem in 2017, but Dreame's 2020 financing announcement did not identify Xiaomi as its parent or controller."
+    },
+    {
+      "question": "Who owns Dreame?",
+      "answer": "Dreame is privately held and was founded and is led by Yu Hao. Its full current ownership and voting structure is not publicly disclosed."
+    },
+    {
+      "question": "What country is Dreame from?",
+      "answer": "China. Dreame is headquartered in Suzhou, Jiangsu."
+    },
+    {
+      "question": "Where are Dreame products made?",
+      "answer": "Dreame lists a factory and headquarters site on Wuzhong Boulevard in Suzhou and says it runs three production lines with annual throughput of one million units. It also accepts ODM orders, so confirm the manufacturer for a specific product."
+    },
+    {
+      "question": "Is MOVA part of Dreame?",
+      "answer": "Yes. MOVA is a Dreame Group brand that uses shared group technology and channels, but its products, apps and contracting entities are separate from Dreame's."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Dreame, MOVA or Xiaomi. Dreame is privately held, and historical financing announcements do not establish a complete current cap table.",
   "headquarters": "Suzhou, Jiangsu, China",
   "founded": "2015 or 2017 (official Dreame pages differ)",
@@ -204,6 +226,6 @@
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
   "lastVerified": "2026-09-12",
-  "lastModified": "2026-09-14T17:01:09+08:00",
+  "lastModified": "2026-11-07T12:00:00+08:00",
   "metaTitle": "Who Owns Dreame? Chinese Origin, Founder and Xiaomi Links"
 }

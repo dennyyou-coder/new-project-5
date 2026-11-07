@@ -1,3 +1,4 @@
+import { BrandFaq } from "@/components/brands/BrandFaq";
 import { buildBrandAnalysisLink } from "@/components/brands/brandAnalysisLink";
 import { getAvailableCompanyKeywords } from "@/lib/companyKeywords";
 import { getEditorialInsights } from "@/lib/insightCollections";
@@ -166,6 +167,7 @@ export default async function BrandPage({ params }: PageProps) {
             competitors={competitors}
             ownershipAnalysisHref={ownershipAnalysis ? `/blog/${ownershipAnalysis.slug}` : undefined}
           />
+          <BrandFaq profile={profile} />
           <BrandFinancials brand={profile.slug} />
           <BrandTimeline profile={profile} />
           <BrandArticles

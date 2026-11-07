@@ -51,6 +51,8 @@ export type BrandProfile = {
   metaTitle?: string;
   /** One plain-language sentence answering who owns the brand, shown first on the profile. */
   quickAnswer?: string;
+  /** Short answers to the questions people search for, drawn from the sourced sections below. */
+  faq?: Array<{ question: string; answer: string }>;
   disclaimer: string;
   headquarters: string;
   founded: string;
@@ -547,6 +549,23 @@ export function validateBrandProfile(profile: unknown, articles: BrandTaggedArti
     });
   }
 
+  if (candidate.faq !== undefined) {
+    if (!Array.isArray(candidate.faq)) {
+      errors.push("faq must be an array.");
+    } else {
+      if (candidate.faq.length > 8) errors.push("faq must include at most 8 items.");
+      candidate.faq.forEach((item, index) => {
+        const label = `faq item ${index + 1}`;
+        if (!isRecord(item)) {
+          errors.push(`${label} must be an object.`);
+          return;
+        }
+        recordText(item, "question", `${label} question`, errors);
+        recordText(item, "answer", `${label} answer`, errors);
+      });
+    }
+  }
+
   const manufacturingRecords = recordArray(
     candidate.manufacturingSupplyChain,
     "manufacturingSupplyChain",
@@ -856,7 +875,18 @@ export function buildBrandPageSchemas(
           item: pageUrl
         }
       ]
-    }
+    },
+    ...(profile.faq?.length
+      ? [{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: profile.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: { "@type": "Answer", text: item.answer }
+          }))
+        }]
+      : [])
   ];
 }
 
