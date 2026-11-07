@@ -790,7 +790,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-midea-appliances-brand-portfolio"
   },
   "electrolux": {
-    "src": "/images/blog/electrolux-shareholders-brands-manufacturing-cover.webp",
+    "src": "/images/articles/who-owns-electrolux-brands-manufacturing/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Electrolux? Shareholders, Brands and Manufacturing Explained",
     "width": 1600,
     "height": 900,
@@ -843,7 +843,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "sourceLabel": "Shanghai Securities News / CNStock"
   },
   "mova": {
-    "src": "/images/blog/mova-robot-mower-dreame-group-cover.webp",
+    "src": "/images/articles/who-makes-mova-robot-mowers-dreame-group/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns MOVA? Dreame Group, Country of Origin & Mowers",
     "width": 1600,
     "height": 900,
@@ -857,7 +857,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-makes-mova-robot-mowers-dreame-group"
   },
   "karcher": {
-    "src": "/images/blog/who-owns-karcher-family-cover.webp",
+    "src": "/images/articles/who-owns-karcher-family-professional-cleaning-network/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Kärcher? Family Ownership, Origin and Factories",
     "width": 1600,
     "height": 900,
@@ -884,7 +884,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "sourceLabel": "Shanghai Securities News / CNStock"
   },
   "shark": {
-    "src": "/images/blog/who-owns-sharkninja-js-global-joyoung-cover.webp",
+    "src": "/images/articles/who-owns-sharkninja-js-global-joyoung/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns SharkNinja? The Real Relationship Between JS Global, Joyoung and SharkNinja",
     "width": 1600,
     "height": 900,
@@ -898,7 +898,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-sharkninja-js-global-joyoung"
   },
   "bosch-home-appliances": {
-    "src": "/images/blog/who-owns-bosch-appliances-cover.webp",
+    "src": "/images/articles/who-owns-bosch-appliances-bsh-siemens-brands/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Bosch Appliances? BSH and Siemens Explained",
     "width": 1600,
     "height": 900,
@@ -912,7 +912,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-bosch-appliances-bsh-siemens-brands"
   },
   "hilti": {
-    "src": "/images/blog/hilti-family-trust-manufacturing-cover.webp",
+    "src": "/images/articles/who-owns-hilti-family-trust-manufacturing/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Hilti? Family Trust, Manufacturing and Direct-Sales Model Explained",
     "width": 1600,
     "height": 900,
@@ -926,7 +926,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-hilti-family-trust-manufacturing"
   },
   "bissell": {
-    "src": "/images/blog/who-owns-bissell-family-sanitaire-cover.webp",
+    "src": "/images/articles/who-owns-bissell-family-sanitaire/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns BISSELL? Family Ownership & Sanitaire",
     "width": 1600,
     "height": 900,
@@ -940,7 +940,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-bissell-family-sanitaire"
   },
   "husqvarna": {
-    "src": "/images/blog/husqvarna-automower-ownership-map-cover.webp",
+    "src": "/images/articles/who-owns-husqvarna-automower-motorcycles/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Husqvarna? Automower, Motorcycles and Manufacturing Explained",
     "width": 1600,
     "height": 900,
@@ -980,7 +980,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "sourceLabel": "Aiper, via PR Newswire"
   },
   "eufy": {
-    "src": "/images/blog/who-owns-eufy-anker-smart-home-cover.webp",
+    "src": "/images/articles/who-owns-eufy-anker-smart-home/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Eufy? How Anker Built a Smart-Home Brand Beyond Robot Vacuums",
     "width": 1600,
     "height": 900,
@@ -994,7 +994,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-eufy-anker-smart-home"
   },
   "narwal": {
-    "src": "/images/blog/who-owns-narwal-cover.webp",
+    "src": "/images/articles/who-owns-narwal-yunjing-investors-manufacturing/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Narwal? Yunjing, Its Investors and Manufacturing Network Explained",
     "width": 1600,
     "height": 900,
@@ -1036,7 +1036,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-haier-appliances-brand-portfolio"
   },
   "greenworks": {
-    "src": "/images/blog/greenworks-ownership-cover.webp",
+    "src": "/images/articles/who-owns-greenworks-globe-stihl/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Greenworks? Globe Tools, STIHL and Manufacturing Explained",
     "width": 1600,
     "height": 900,
@@ -1050,7 +1050,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-greenworks-globe-stihl"
   },
   "philips-home-appliances": {
-    "src": "/images/blog/philips-versuni-ownership-cover.webp",
+    "src": "/images/articles/who-makes-philips-vacuum-cleaners-versuni/01-cover.webp",
     "alt": "WCB editorial cover: Who Makes Philips Vacuums? Versuni Ownership Explained",
     "width": 1600,
     "height": 900,
@@ -1064,7 +1064,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-makes-philips-vacuum-cleaners-versuni"
   },
   "flex": {
-    "src": "/images/blog/flex-chervon-lowes-cover.webp",
+    "src": "/images/articles/who-owns-flex-tools-chervon-lowes/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns FLEX Tools? Chervon, Lowe's Distribution and Manufacturing Explained",
     "width": 1600,
     "height": 900,
@@ -1078,7 +1078,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-flex-tools-chervon-lowes"
   },
   "skil": {
-    "src": "/images/blog/skil-chervon-history-cover.webp",
+    "src": "/images/articles/who-owns-skil-tools-chervon/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns SKIL Tools? Chervon, Bosch History and Manufacturing Explained",
     "width": 1600,
     "height": 900,
@@ -1092,7 +1092,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-skil-tools-chervon"
   },
   "milwaukee": {
-    "src": "/images/blog/milwaukee-ownership-cover.webp",
+    "src": "/images/articles/who-owns-milwaukee-tools-tti-manufacturing/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Milwaukee Tools? TTI and Where They Are Made",
     "width": 1600,
     "height": 900,
@@ -1106,7 +1106,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-milwaukee-tools-tti-manufacturing"
   },
   "dewalt": {
-    "src": "/images/blog/dewalt-ownership-cover.webp",
+    "src": "/images/articles/who-owns-dewalt-stanley-black-decker/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns DeWalt? Stanley Black & Decker and Manufacturing Explained",
     "width": 1600,
     "height": 900,
@@ -1120,7 +1120,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-dewalt-stanley-black-decker"
   },
   "segway-navimow": {
-    "src": "/images/blog/segway-navimow-ninebot-willand-ownership-cover.webp",
+    "src": "/images/articles/who-owns-segway-navimow-ninebot-willand/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Segway Navimow? Ninebot, Willand and Manufacturing",
     "width": 1600,
     "height": 900,
@@ -1134,7 +1134,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-segway-navimow-ninebot-willand"
   },
   "ryobi": {
-    "src": "/images/blog/ryobi-ownership-cover.webp",
+    "src": "/images/articles/who-owns-ryobi-tti-kyocera/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Ryobi? Ryobi Limited, TTI and Kyocera Explained",
     "width": 1600,
     "height": 900,
@@ -1148,7 +1148,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-ryobi-tti-kyocera"
   },
   "hoover": {
-    "src": "/images/blog/who-owns-hoover-tti-haier-candy-cover.webp",
+    "src": "/images/articles/who-owns-hoover-tti-haier-candy/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Hoover? TTI, Haier and the Brand's Regional Split Explained",
     "width": 1600,
     "height": 900,
@@ -1162,7 +1162,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-hoover-tti-haier-candy"
   },
   "whirlpool": {
-    "src": "/images/blog/whirlpool-beko-europe-ownership-cover.webp",
+    "src": "/images/articles/who-owns-whirlpool-appliances-beko-europe/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Whirlpool Appliances? Whirlpool Corporation, Beko Europe and Regional Brand Rights Explained",
     "width": 1600,
     "height": 900,
@@ -1176,7 +1176,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-whirlpool-appliances-beko-europe"
   },
   "makita": {
-    "src": "/images/blog/makita-ownership-cover.webp",
+    "src": "/images/articles/who-owns-makita-company-manufacturing/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Makita? Public Company, Manufacturing Network and Battery Platforms Explained",
     "width": 1600,
     "height": 900,
@@ -1190,7 +1190,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-makita-company-manufacturing"
   },
   "black-decker": {
-    "src": "/images/blog/black-decker-stanley-ownership-manufacturing-map.webp",
+    "src": "/images/articles/who-owns-black-and-decker-stanley-tools/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns BLACK+DECKER? Stanley Black & Decker Explained",
     "width": 1600,
     "height": 900,
@@ -1204,7 +1204,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-black-and-decker-stanley-tools"
   },
   "craftsman": {
-    "src": "/images/blog/craftsman-ownership-cover.webp",
+    "src": "/images/articles/who-owns-craftsman-tools-stanley-black-decker/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Craftsman Tools? Stanley Black & Decker, Lowe's and Manufacturing Explained",
     "width": 1600,
     "height": 900,
@@ -1232,7 +1232,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-makes-lg-appliances-manufacturing-network"
   },
   "sunseeker": {
-    "src": "/images/blog/sunseeker-robot-mower-company-manufacturer-cover.webp",
+    "src": "/images/articles/who-makes-sunseeker-robot-mowers-zhejiang-sunseeker/01-cover.webp",
     "alt": "WCB editorial cover: Who Makes Sunseeker Robot Mowers? Zhejiang Sunseeker",
     "width": 1600,
     "height": 900,
@@ -1259,7 +1259,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "sourceLabel": "Green Industry Pros"
   },
   "wybot": {
-    "src": "/images/blog/wybot-wybotics-wangyuan-manufacturer-cover.webp",
+    "src": "/images/articles/who-makes-wybot-pool-cleaners-wybotics-wangyuan/01-cover.webp",
     "alt": "WCB editorial cover: Who Makes WYBOT Pool Cleaners? WYBOTICS and Made in China",
     "width": 1600,
     "height": 900,
@@ -1273,7 +1273,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-makes-wybot-pool-cleaners-wybotics-wangyuan"
   },
   "beatbot": {
-    "src": "/images/blog/beatbot-xingmai-ownership-cover.webp",
+    "src": "/images/articles/who-owns-beatbot-xingmai-manufacturing/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Beatbot? Xingmai and Where Its Cleaners Are Made",
     "width": 1600,
     "height": 900,
@@ -1301,7 +1301,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-makes-samsung-appliances-manufacturing-bespoke-ai"
   },
   "worx": {
-    "src": "/images/blog/worx-positec-landroid-ownership-map-cover.webp",
+    "src": "/images/articles/who-owns-worx-positec-landroid-manufacturing/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns WORX? Positec, Landroid and Manufacturing Explained",
     "width": 1600,
     "height": 900,
@@ -1315,7 +1315,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-worx-positec-landroid-manufacturing"
   },
   "metabo": {
-    "src": "/images/blog/metabo-hpt-hikoki-ownership-cover.webp",
+    "src": "/images/articles/who-owns-metabo-metabo-hpt-hikoki/01-cover.webp",
     "alt": "WCB editorial cover: Metabo vs Metabo HPT: Ownership, HiKOKI and Batteries",
     "width": 1600,
     "height": 900,
@@ -1329,7 +1329,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-metabo-metabo-hpt-hikoki"
   },
   "hikoki": {
-    "src": "/images/blog/metabo-hpt-hikoki-ownership-cover.webp",
+    "src": "/images/articles/who-owns-metabo-metabo-hpt-hikoki/01-cover.webp",
     "alt": "WCB editorial cover: Metabo vs Metabo HPT: Ownership, HiKOKI and Batteries",
     "width": 1600,
     "height": 900,
@@ -1343,7 +1343,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-metabo-metabo-hpt-hikoki"
   },
   "oreck": {
-    "src": "/images/blog/who-owns-tti-cover.webp",
+    "src": "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns TTI? Milwaukee, Ryobi, Hoover, Vax and Oreck Explained",
     "width": 1600,
     "height": 900,
@@ -1357,7 +1357,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck"
   },
   "dirt-devil": {
-    "src": "/images/blog/who-owns-tti-cover.webp",
+    "src": "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns TTI? Milwaukee, Ryobi, Hoover, Vax and Oreck Explained",
     "width": 1600,
     "height": 900,
@@ -1371,7 +1371,7 @@ export const newsCompanyVisuals: Record<string, NewsVisual> = {
     "relatedArticleSlug": "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck"
   },
   "fluidra": {
-    "src": "/images/blog/polaris-fluidra-zodiac-ownership-cover.webp",
+    "src": "/images/articles/who-owns-polaris-pool-cleaners-fluidra-zodiac/01-cover.webp",
     "alt": "WCB editorial cover: Who Owns Polaris Pool Cleaners? Fluidra & Zodiac",
     "width": 1600,
     "height": 900,
