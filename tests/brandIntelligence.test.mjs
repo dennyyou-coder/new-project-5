@@ -860,6 +860,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "dolphin-vs-polaris-pool-cleaners": ["polaris",  "pentair"],
     "dreame-new-disruptor-in-vacuums": ["dreame"],
     "dreame-rise-to-10-billion-in-five-years": ["dreame"],
+    "dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone": ["dreame",  "ecovacs"],
     "dual-wash-stations-next-cleaning-category": ["roborock",  "midea",  "switchbot"],
     "dyson-at-a-crossroads": ["dyson"],
     "dyson-camerajet-toothbrush-review": ["dyson"],
@@ -880,6 +881,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "hayward-vs-pentair-vs-fluidra": ["hayward",  "pentair",  "fluidra"],
     "hoover-cleanslate-vs-shark-stainstriker": ["hoover",  "shark"],
     "horst-pudwill-man-who-built-tti": ["tti",  "milwaukee",  "ryobi"],
+    "husqvarna-automower-312v-vs-worx-landroid-vision-cloud-4wd": ["husqvarna",  "worx"],
     "husqvarna-automower-vs-mammotion-luba": ["husqvarna",  "mammotion"],
     "husqvarna-fcc-exemption-robotic-mowers": ["husqvarna"],
     "ifa-2019-vacuum-cleaner-new-products-by-major-brands": ["philips-home-appliances",  "aeg",  "samsung-home-appliances"],
@@ -905,6 +907,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "milwaukee-2761-quiet-revolution-power-tools": ["milwaukee"],
     "milwaukee-next-stop-20-billion": ["milwaukee"],
     "mova-took-me-to-meet-a-celebrity": ["mova"],
+    "narwal-flow-2-vs-roborock-qrevo-curv-2-flow": ["narwal",  "roborock"],
     "narwal-vs-ecovacs-robot-vacuums": ["narwal",  "ecovacs"],
     "navimow-h5-pro-edgemaestro-edge-mowing": ["segway-navimow"],
     "nilfisk-2018-annual-report-commercial-cleaning": ["nilfisk"],
@@ -916,6 +919,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "roborock-channel-shift-online-to-offline-experience": ["roborock"],
     "roborock-ipo-prospectus-signals": ["roborock"],
     "roborock-rockaqua-p1-pool-robot": ["roborock"],
+    "roborock-saros-20-vs-dreame-x60-ultra": ["roborock",  "dreame"],
     "roborock-targets-70-billion-rmb-by-2029": ["roborock"],
     "roborock-vs-narwal-robot-vacuums": ["roborock",  "narwal"],
     "robotic-mower-sales-channels": ["worx",  "greenworks"],
@@ -929,6 +933,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "steve-richman-milwaukee-growth": ["milwaukee",  "tti"],
     "sunseeker-from-oem-to-robot-mower-brand": ["sunseeker"],
     "sunseeker-vs-mammotion-robot-mowers": ["sunseeker",  "mammotion"],
+    "tineco-floor-one-s9-master-vs-roborock-f25-ace-pro": ["tineco",  "roborock"],
     "tineco-lacks-innovation": ["tineco"],
     "tineco-vs-bissell-crosswave-floor-washers": ["tineco",  "bissell"],
     "tti-cleaning-appliance-strategy": ["ryobi",  "vax",  "oreck",  "dirt-devil"],
@@ -1037,8 +1042,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 166);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 296);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 171);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 306);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
