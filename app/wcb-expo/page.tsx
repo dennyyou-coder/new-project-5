@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     description:
       "Meet cleaning appliance brands, manufacturers, supply-chain companies and industry professionals in Suzhou, China.",
     url: "/wcb-expo",
-    images: ["/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"]
+    images: ["/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en.webp"]
   },
   twitter: {
     card: "summary_large_image",
     title: "2026 WCB International Cleaning Appliance Expo",
     description: "18–20 November 2026 · Suzhou, China",
-    images: ["/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"]
+    images: ["/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en.webp"]
   }
 };
 
@@ -111,7 +111,7 @@ export default function WcbExpoPage() {
     </p>
    </div>
    <figure>
-    <ExpoImage alt="Official WCB 2026 exhibition artwork" priority src="/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"/>
+    <ExpoImage alt="WCB Expo 2026 key visual: Cleaning Appliances Expo, 18–20 November 2026, Suzhou Shishan Convention Center" priority src="/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en.webp"/>
     <figcaption>
      WCB International Cleaning Appliance Expo 2026
     </figcaption>

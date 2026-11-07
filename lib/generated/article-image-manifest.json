@@ -13744,6 +13744,24 @@
         "outputHash": "sha256:3d8b31f17ab51a7e66d5d915fb5b7a03c8b487bfb86eb5925845c834ccb5132e"
       }
     },
+    "/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 85786,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ff75c8962d00c06e0d0b9be4e057de5c6e72fff32197cca13df0ef0b9e227be4",
+      "outputHash": "sha256:58daf55ba1465dbc4054f494bd80fcdd955ef5560193a5cfd6abaf4073ae9788",
+      "mobile": {
+        "src": "/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25712,
+        "outputHash": "sha256:f57c56a2addd867f73f2e9a48f02d089074f4d3ad644fb383ee81b6abafd8c54"
+      }
+    },
     "/images/articles/what-sharkninja-makes-us-think-about/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -43026,7 +43044,8 @@
       "budgetClass": "standard",
       "cover": "/images/articles/wcb-expo-programme/01-cover.webp",
       "body": [
-        "/images/articles/wcb-expo-programme/02-exhibitor-directory.webp"
+        "/images/articles/wcb-expo-programme/02-exhibitor-directory.webp",
+        "/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en.webp"
       ]
     },
     "what-brands-does-fluidra-own": {
@@ -48205,6 +48224,11 @@
           "status": "matched",
           "primary": "/images/articles/wcb-expo-programme/02-exhibitor-directory.webp",
           "hash": "sha256:53881e1d0edcae2251831b0062d18501567286924711cb3ec975d52f8fc3c81d"
+        },
+        "03-wcb-2026-key-visual-en.png": {
+          "status": "matched",
+          "primary": "/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en.webp",
+          "hash": "sha256:ff75c8962d00c06e0d0b9be4e057de5c6e72fff32197cca13df0ef0b9e227be4"
         }
       }
     },
