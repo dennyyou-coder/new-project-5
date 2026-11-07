@@ -1,5 +1,5 @@
 import { productModels } from "@/lib/products";
-import { getNews, NEWS_PAGE_SIZE, newsHref } from "@/lib/news";
+import { getNews } from "@/lib/news";
 import type { MetadataRoute } from "next";
 import { getBlogSeriesSlugs } from "@/lib/blogSeries";
 import {
@@ -8,10 +8,6 @@ import {
 } from "@/lib/brands";
 import { buildBrandCategorySitemapEntries } from "@/lib/brandCategories";
 import { getInsights } from "@/lib/content";
-import {
-  DIRECTORY_PAGE_SIZE,
-  directoryHref
-} from "@/lib/contentDirectory";
 import {
   buildComponentSitemapEntries,
   getPublishedComponentProfiles
@@ -22,10 +18,6 @@ import {
 } from "@/lib/equipment";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
 import { HUB_CATEGORIES } from "@/lib/hubCategories";
-import {
-  getEditorialInsights,
-  getGuideInsights
-} from "@/lib/insightCollections";
 
 const baseUrl = "https://worldcleanbiz.com";
 
@@ -38,11 +30,22 @@ function wcbDate(value?: string) {
   return Number.isNaN(parsed.getTime()) ? undefined : parsed;
 }
 
-function paginatedRoutes(pathname: string, itemCount: number) {
-  const totalPages = Math.ceil(itemCount / DIRECTORY_PAGE_SIZE);
-  return Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) =>
-    directoryHref(pathname, index + 2)
-  );
+// A timestamp shared by many stories comes from bulk maintenance, not from an editorial
+// update. Reporting it as lastmod tells Google that every story changed at once, which
+// makes the field untrustworthy, so those stories fall back to their publication date.
+const BULK_UPDATE_THRESHOLD = 20;
+
+export function newsLastModified(articles: { updatedAt?: string; publishedAt: string }[]) {
+  const counts = new Map<string, number>();
+  for (const article of articles) {
+    if (article.updatedAt) counts.set(article.updatedAt, (counts.get(article.updatedAt) ?? 0) + 1);
+  }
+  return (article: { updatedAt?: string; publishedAt: string }) => {
+    const updated = article.updatedAt && (counts.get(article.updatedAt) ?? 0) <= BULK_UPDATE_THRESHOLD
+      ? article.updatedAt
+      : undefined;
+    return wcbDate(updated || article.publishedAt);
+  };
 }
 
 function routeEntries(routes: string[]): MetadataRoute.Sitemap {
@@ -51,17 +54,15 @@ function routeEntries(routes: string[]): MetadataRoute.Sitemap {
 
 export function buildBlogSitemap(): MetadataRoute.Sitemap {
   const insights = getInsights();
-  const editorial = getEditorialInsights(insights).filter((article) => !article.series);
+  const news = getNews();
+  const newsDate = newsLastModified(news);
 
+  // Paginated list pages stay crawlable through their links but are left out of the
+  // sitemap: every story and article they list already has its own entry.
   return [
     { url: `${baseUrl}/news` },
-    ...Array.from({ length: Math.max(0, Math.ceil(getNews().length / NEWS_PAGE_SIZE) - 1) }, (_, index) => ({ url: `${baseUrl}${newsHref(undefined, index + 2)}` })),
-    ...getNews().map((article) => ({ url: `${baseUrl}/news/${article.slug}`, lastModified: wcbDate(article.updatedAt) })),
-    ...routeEntries([
-      "/blog",
-      "/blog/archive",
-      ...paginatedRoutes("/blog/archive", editorial.length)
-    ]),
+    ...news.map((article) => ({ url: `${baseUrl}/news/${article.slug}`, lastModified: newsDate(article) })),
+    ...routeEntries(["/blog", "/blog/archive"]),
     ...getBlogSeriesSlugs(insights).map((series) => ({
       url: `${baseUrl}/blog/series/${series}`
     })),
@@ -73,12 +74,8 @@ export function buildBlogSitemap(): MetadataRoute.Sitemap {
 }
 
 export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
-  const insights = getInsights();
-  const guides = getGuideInsights(insights);
-  const guideRoutes = GUIDE_TYPE_CONFIG.flatMap((config) => [
-    config.href,
-    ...paginatedRoutes(config.href, getGuideInsights(insights, config.type).length)
-  ]);
+  const guideRoutes = GUIDE_TYPE_CONFIG.map((config) => config.href);
+  const modelDate = new Map(productModels.map((model) => [`/products/${model.slug}`, wcbDate(model.verifiedAt)]));
 
   return routeEntries([
     "",
@@ -89,7 +86,6 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
     "/products",
     ...productModels.map((model) => `/products/${model.slug}`),
     "/guides",
-    ...paginatedRoutes("/guides", guides.length),
     ...guideRoutes,
     "/sourcing",
     "/sourcing/lawn-robots",
@@ -103,7 +99,10 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
     "/about",
     "/contact",
     "/quality-compliance"
-  ]);
+  ]).map((entry) => {
+    const lastModified = modelDate.get(entry.url.slice(baseUrl.length));
+    return lastModified ? { ...entry, lastModified } : entry;
+  });
 }
 
 export function buildBrandsSitemap(): MetadataRoute.Sitemap {
