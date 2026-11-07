@@ -4,6 +4,8 @@ import { siteVisualProps } from "@/lib/siteVisuals";
 import ExpoHistory from "./ExpoHistory";
 import history from "./history-data.json";
 import "./expo-story.css";
+import { LogoTileImage } from "@/components/ui/LogoTileImage";
+import { brandLogoTile } from "@/lib/brandLogoTiles";
 
 export const metadata: Metadata = {
   title: "WCB Expo 2026 | Suzhou",
@@ -45,6 +47,26 @@ function ExpoImage({ src, alt, sizes = "(max-width: 760px) 90vw, (max-width: 138
     fetchPriority={priority ? "high" : "auto"} decoding="async" />;
 }
 
+// From the organizer's 2026 invitation.
+const FEATURED_BRANDS = [
+  { slug: "ecovacs", name: "ECOVACS" },
+  { slug: "roborock", name: "Roborock" },
+  { slug: "midea", name: "Midea cleaning" },
+  { slug: "segway-navimow", name: "Navimow (Segway-Ninebot)" },
+  { slug: "wybot", name: "WYBOT" },
+  { slug: "bissell", name: "BISSELL" }
+];
+
+// Confirmed exhibitors listed in the organizer's 2026 invitation, in its order (Chinese company names).
+const CONFIRMED_EXHIBITORS = ["华盛电机", "欣扬科技", "宏伟电器", "德宇鑫科技", "东裕华芯电子", "英斐逊环境", "摩路新材料", "莫之比智能", "精锐昌科技", "清洋流体科技（苏州）", "纽莱克电子", "舍孚勒轴承", "德欣电机", "铱鑫电子", "佳音机电", "纳声电子设备", "韬略科技", "弈博智能", "洽洁电子", "蓝体半导体", "春桥电子", "莱恩科技", "多密特密封", "本末动力（广东）", "锐科兰电器", "赋贵荣科技", "成就智能", "实隆轴承", "米多", "东海电器", "德晟智能", "荣采创新", "绍鼎密封", "斯卫浦", "创源", "晨光电机", "冠宇达电源", "德良齐科技", "力佳隆毛刷", "高斯贝金属软管", "巨腾电子", "乾泰翔科技", "华瑷科技", "量能科技", "润英联新材料", "瑞莱达电器", "恩牧必精密轴承制造", "普沃特净化器材", "汇龙电器", "兆力电机集团", "永捷电机", "西腾毛刷", "罗素科技", "施奈仕实业", "捷宝金属集团", "固辉胶粘制品", "舟水电器", "的家电器", "凯航电机", "索瑞达电子", "湛华传感", "长锦成智能制造", "畅彻电器", "中驱电机", "壹洁智能", "恒讯电器（苏州）", "科维津宏环保", "中科芯亿达电子", "宏联电子", "小科清洁", "璟博方精密电子", "奕雅达生物", "普力生连接", "长曜创新", "宏鹏传动", "凯豪电器", "康沃特变频电机", "旭益达无刷电机", "钜泰泵业", "北醒（北京）光子", "荣亿电器", "梵凯刀具", "东亿磁业", "元晶光电", "虹光新材料", "好易捷电器", "速能达电机", "日讯新材料", "景腾精工橡塑制品", "新鼎泰智能", "乐宝电机", "征承科技", "德威控制系统", "华昀电子", "科宏轴承", "精微科（苏州）电子", "点石驱动", "倍增电子", "闪联电气", "合泰电机电器", "馨源（深圳）电子", "密姆科技", "凯艺美净化", "顺都印刷", "时达创马达", "清水智能机器人", "富迪电子", "兴邦维科", "西格传动智能", "国梦电机", "鑫华煦橡胶制品"];
+
+const WHY_VISIT = [
+  { title: "Hear where the industry is going, for free", text: "Entrepreneurs and industry experts share their view of what comes next for cleaning appliances." },
+  { title: "See leading brands’ new products", text: "Navimow (Segway-Ninebot), Roborock, ECOVACS, BISSELL, Midea and WYBOT in one place in Suzhou, without travelling to IFA." },
+  { title: "Meet more than ten finished-product makers", text: "Robot vacuums, floor washers, vacuum cleaners, window robots, robotic mowers and pool cleaners, all on one visit." },
+  { title: "Talk to dozens of component suppliers", text: "Motors, pumps, moulds and other core components on show, with suppliers ready to discuss projects on the spot." }
+];
+
 export default function WcbExpoPage() {
   return (
 <div id="wcb-expo-story">
@@ -52,13 +74,14 @@ export default function WcbExpoPage() {
   <div className="shell v6-hero-grid">
    <div>
     <span className="eyebrow">
-     01 / WCB EXPO 2026
+     01 / WCB INTERNATIONAL CLEANING APPLIANCE EXPO
     </span>
     <h1>
-     The cleaning industry,
-     <br/>
-     in one place.
+     WCB Expo 2026
     </h1>
+    <p className="v6-tagline">
+     The road to a trillion-yuan cleaning industry.
+    </p>
     <p className="v6-lead">
      An exhibition for cleaning appliances and their supply chains—bringing brands, manufacturers, technology companies and professional buyers together.
     </p>
@@ -70,6 +93,11 @@ export default function WcbExpoPage() {
       Suzhou Shishan Convention Center · Suzhou, China
      </span>
     </p>
+    <ul className="v6-stats" aria-label="WCB Expo 2026 at a glance">
+     <li><strong>3 days</strong><span>Forums, matchmaking, launches</span></li>
+     <li><strong>100+</strong><span>Exhibiting companies</span></li>
+     <li><strong>Full chain</strong><span>Brands, finished products, supply chain</span></li>
+    </ul>
     <div className="expo-actions">
      <a className="button" href="/contact?inquiry=expo_visitor#project-form">
       Plan your visit
@@ -78,6 +106,9 @@ export default function WcbExpoPage() {
       Exhibit or partner
      </a>
     </div>
+    <p className="v6-register">
+     Free admission for visitors. In China, you can also register through the WeChat mini program “WCB会展通”.
+    </p>
    </div>
    <figure>
     <ExpoImage alt="Official WCB 2026 exhibition artwork" priority src="/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp"/>
@@ -92,11 +123,17 @@ export default function WcbExpoPage() {
    <a href="#wcb2026">
     WCB 2026
    </a>
+   <a href="#why">
+    Why visit
+   </a>
    <a href="#origins">
     Our story
    </a>
    <a href="#showcase">
     Products &amp; people
+   </a>
+   <a href="#exhibitors">
+    Exhibitors
    </a>
    <a href="#programme">
     On site
@@ -106,11 +143,67 @@ export default function WcbExpoPage() {
    </a>
   </div>
  </nav>
+ <section className="shell section" id="why">
+  <div className="v6-heading">
+   <span className="eyebrow">
+    02 / WHY VISIT
+   </span>
+   <h2>
+    New products, partners and channels,
+    <br/>
+    in three days.
+   </h2>
+  </div>
+  <ol className="v9-why">
+   {WHY_VISIT.map((item, index) => (
+    <li key={item.title}>
+     <span className="v9-why-number">{String(index + 1).padStart(2, "0")}</span>
+     <h3>{item.title}</h3>
+     <p>{item.text}</p>
+    </li>
+   ))}
+  </ol>
+  <p className="v9-audience">
+   For brand owners, cross-border e-commerce sellers, finished-product manufacturers, component suppliers, agents and distributors.
+  </p>
+  <div className="v9-brands">
+   <h3>Featured exhibiting brands</h3>
+   <ul>
+    {FEATURED_BRANDS.map((brand) => (
+     <li key={brand.slug}>
+      <a href={`/brands/${brand.slug}`}>
+       <span className="v9-brand-logo" aria-hidden="true">
+        <LogoTileImage slug={brand.slug} fallbackSrc={brandLogoTile(brand.slug)?.src ?? ""} boxRatio={2.4} />
+       </span>
+       <span>{brand.name}</span>
+      </a>
+     </li>
+    ))}
+   </ul>
+  </div>
+  <div className="v9-view">
+   <div>
+    <span className="eyebrow">WCB’S VIEW</span>
+    <h3>The road to a trillion-yuan cleaning industry</h3>
+    <p>
+     WCB expects the market for finished cleaning appliances to grow from under CNY 300 billion today, mainly household cleaning appliances, to about CNY 1 trillion in retail sales within ten years, driven by new categories, robotics and global expansion.
+    </p>
+   </div>
+   <dl>
+    <div><dt>CNY 1 trillion</dt><dd>Brand retail sales of finished products</dd></div>
+    <div><dt>About CNY 250 billion</dt><dd>OEM and ODM manufacturing</dd></div>
+    <div><dt>About CNY 185 billion</dt><dd>Core components: motors, batteries, pumps, sensors</dd></div>
+   </dl>
+   <p className="v9-view-note">
+    WCB scenario estimate, not verified industry statistics or a third-party forecast. Segments: household, commercial and pool cleaning, and robotic mowing.
+   </p>
+  </div>
+ </section>
  <section className="shell section" id="origins">
   <div className="section-head">
    <div>
     <span className="eyebrow">
-     02 / OUR STORY
+     03 / OUR STORY
     </span>
     <h2>
      Built through years of bringing
@@ -135,7 +228,7 @@ export default function WcbExpoPage() {
  <section className="shell section" id="showcase">
   <div className="v6-heading">
    <span className="eyebrow">
-    03 / PRODUCTS &amp; PEOPLE
+    04 / PRODUCTS &amp; PEOPLE
    </span>
    <h2>
     From finished appliances
@@ -188,11 +281,32 @@ export default function WcbExpoPage() {
    </article>
   </div>
  </section>
+ <section className="shell section" id="exhibitors">
+  <div className="v6-heading">
+   <span className="eyebrow">
+    CONFIRMED EXHIBITORS
+   </span>
+   <h2>
+    More than 100 companies
+    <br/>
+    from across the supply chain.
+   </h2>
+  </div>
+  <p className="v9-exhibitors-intro">
+   Besides the featured brands above, the exhibitors include more than ten finished-product makers and dozens of component suppliers, from motors and pumps to moulds and other core parts. Names are shown in Chinese, as listed by the organizer.
+  </p>
+  <details className="v9-exhibitors">
+   <summary>Show all {CONFIRMED_EXHIBITORS.length} confirmed exhibitors</summary>
+   <ul lang="zh-CN">
+    {CONFIRMED_EXHIBITORS.map((name) => <li key={name}>{name}</li>)}
+   </ul>
+  </details>
+ </section>
  <section className="v6-onsite" id="programme">
   <div className="shell section">
    <div className="v6-heading">
     <span className="eyebrow">
-     04 / ON SITE
+     05 / ON SITE
     </span>
     <h2>
      See the products.
@@ -280,7 +394,7 @@ export default function WcbExpoPage() {
   <div className="v7-schedule-head">
    <div>
     <span className="eyebrow">
-     05 / PLAN YOUR VISIT
+     06 / PLAN YOUR VISIT
     </span>
     <h2>
      Your three days at WCB.
@@ -319,6 +433,8 @@ export default function WcbExpoPage() {
       <h4>
        Entrepreneur forum
       </h4>
+      <span className="v9-tag">Free</span>
+      <p className="v9-session-detail">4–5 speakers on where the industry is heading: Denny You; a WYBOT representative; a robotic-mower speaker; a robot-vacuum speaker.</p>
      </div>
      <figure className="v8-thumb">
       <ExpoImage alt="Audience at a previous Shenzhen industry forum" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/about-denny-expo-2026/01-cover.webp"/>
@@ -338,6 +454,8 @@ export default function WcbExpoPage() {
       <h4>
        Industry expert forum
       </h4>
+      <span className="v9-tag">Free</span>
+      <p className="v9-session-detail">4–5 experts, including a securities research analyst and an investment banking expert; further names to be announced.</p>
      </div>
      <figure className="v8-thumb">
       <ExpoImage alt="Expert presentation at the previous supply-chain exhibition" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/about-denny-expo-2025/03-photo-39.webp"/>
@@ -345,6 +463,21 @@ export default function WcbExpoPage() {
        November 2025
       </figcaption>
      </figure>
+    </div>
+    <div className="v7-session">
+     <div className="v8-session-copy">
+      <span className="v7-period">
+       Afternoon
+      </span>
+      <time>
+       14:00–17:00
+      </time>
+      <h4>
+       AVC workshop: evaluation metrics for home service robots
+      </h4>
+      <span className="v9-tag">By invitation</span>
+      <p className="v9-session-detail">A closed-door session hosted by AVC (All View Cloud) in the Yushan Hall, 2nd floor, Hall A.</p>
+     </div>
     </div>
     <div className="v7-session">
      <div className="v8-session-copy">
@@ -357,6 +490,8 @@ export default function WcbExpoPage() {
       <h4>
        Exhibitor dinner
       </h4>
+      <span className="v9-tag">Seat confirmation required</span>
+      <p className="v9-session-detail">Exhibitors and invited guests meet face to face.</p>
      </div>
      <figure className="v8-thumb">
       <ExpoImage alt="Illustration of a networking dinner" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/wcb-expo-programme/01-cover.webp"/>
@@ -389,6 +524,8 @@ export default function WcbExpoPage() {
       <h4>
        Procurement matchmaking
       </h4>
+      <span className="v9-tag">By invitation</span>
+      <p className="v9-session-detail">Invited buyers meet exhibitors on site.</p>
      </div>
      <figure className="v8-thumb">
       <ExpoImage alt="Procurement discussions at the previous Shenzhen exhibition" sizes="(max-width: 760px) 110px, 140px" src="/images/industry/expo-business-matching-2026.jpg"/>
@@ -411,6 +548,8 @@ export default function WcbExpoPage() {
         Session 1
        </small>
       </h4>
+      <span className="v9-tag">Open to visitors</span>
+      <p className="v9-session-detail">5–6 exhibitors present new products and technology.</p>
      </div>
      <figure className="v8-thumb">
       <ExpoImage alt="Product presentation at the previous Shenzhen exhibition" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/about-denny-expo-2026/11-photo-97.webp"/>
@@ -454,6 +593,8 @@ export default function WcbExpoPage() {
         Session 2
        </small>
       </h4>
+      <span className="v9-tag">Open to visitors</span>
+      <p className="v9-session-detail">5–6 exhibitors present new products and technology.</p>
      </div>
      <figure className="v8-thumb">
       <ExpoImage alt="Robotics presentation at the previous Shenzhen exhibition" sizes="(max-width: 760px) 110px, 140px" src="/images/articles/about-denny-expo-2026/12-photo-98.webp"/>
@@ -481,7 +622,7 @@ export default function WcbExpoPage() {
    </div>
   </div>
   <p className="note">
-   Proposed programme · China Standard Time (UTC+8). Final sessions and exhibition admission hours will be confirmed by the organizer.
+   China Standard Time (UTC+8). Speaker names, talk titles and the order of launches will be announced later; the organizer’s latest notice applies. Exhibition admission hours will be confirmed by the organizer.
   </p>
   <div className="v7-location">
    <div>
