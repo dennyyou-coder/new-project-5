@@ -57,8 +57,8 @@ export const EXPO_2026 = {
   name: "WCB Expo 2026",
   dates: "18–20 November 2026",
   venue: "Suzhou Shishan Convention Center · Suzhou, China",
-  /** The organiser's official 2026 key visual (a -800 variant sits beside it). */
-  image: "/images/articles/about-denny-profile/03-wcb-2026-key-visual.webp",
+  /** English version of the organiser's 2026 key visual (a -800 variant sits beside it). */
+  image: "/images/articles/wcb-expo-programme/03-wcb-2026-key-visual-en.webp",
   closesAt: Date.parse("2026-11-21T00:00:00+08:00")
 };
 
