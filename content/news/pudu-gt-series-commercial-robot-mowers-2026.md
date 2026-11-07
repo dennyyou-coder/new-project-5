@@ -11,6 +11,7 @@ brand_slugs: ["pudu-robotics"]
 source_titles: ["Pudu Introduces GT3, GT5 and GT7 Commercial Robotic Mowers — original source"]
 source_urls: ["https://www.pudurobotics.com/en/news/pudu-robotics-launches-gt-series-robotic-mowers"]
 updatedAt: "2026-10-07T12:00:00+08:00"
+product_slugs: ["pudu-gt5", "pudu-gt7"]
 ---
 [Pudu Robotics](/brands/pudu-robotics) launched the GT Series on September 1, 2026, entering professional grounds care with three robotic mowers. GT3, GT5 and GT7 address different jobs, from mixed commercial properties to large lawns and precision sports turf.
 

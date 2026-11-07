@@ -8,7 +8,7 @@ publishedAt: "2026-10-06T13:54:17+08:00"
 sortDate: "2026-10-06T13:54:17+08:00"
 eventDate: "2026-10-01"
 brand_slugs: ["roborock"]
-product_slugs: []
+product_slugs: ["roborock-s10-maxv-ultra-steam"]
 related_articles: []
 source_titles: ["Aju Press — S10 MaxV Ultra Steam Korean launch"]
 source_urls: ["https://www.ajupress.com/view/20261001085670269"]

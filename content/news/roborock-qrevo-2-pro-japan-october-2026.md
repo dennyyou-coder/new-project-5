@@ -9,7 +9,7 @@ updatedAt: "2026-10-25T23:04:14+08:00"
 sortDate: "2026-10-25T23:04:14+08:00"
 eventDate: "2026-10-02"
 brand_slugs: ["roborock"]
-product_slugs: []
+product_slugs: ["roborock-qrevo-2-pro"]
 related_articles: []
 source_titles: ["Roborock Japan announces Qrevo 2 Pro"]
 source_urls: ["https://jp.roborock.com/blogs/news/roborock-qrevo-2-pro-%E3%82%92%E7%99%BA%E5%A3%B2"]

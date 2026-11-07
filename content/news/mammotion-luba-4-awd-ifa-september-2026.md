@@ -9,7 +9,7 @@ updatedAt: "2026-10-25T22:43:56+08:00"
 sortDate: "2026-10-25T22:43:56+08:00"
 eventDate: "2026-09-04"
 brand_slugs: ["mammotion"]
-product_slugs: []
+product_slugs: ["mammotion-luba-4-awd"]
 related_articles: []
 source_titles: ["Mammotion LUBA 4 AWD: IFA 2026 Launch, Features, Specs, and Release Date"]
 source_urls: ["https://us.mammotion.com/blogs/news/luba-4-awd"]

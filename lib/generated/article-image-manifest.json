@@ -4545,6 +4545,24 @@
         "outputHash": "sha256:5abc5e0846467a04ecec60db16c8de3f5d1856f546b8b112172c57e288c5fd04"
       }
     },
+    "/images/articles/dyson-r3-nurovi-spot-scrub-uv/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1200,
+      "bytes": 49076,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:493e8329f9b621751e900d9b22ed7dda5946d4c04135e0b47dc1114081ca8d96",
+      "outputHash": "sha256:65bb72a7842601160b4c6af21d2d592f6bacbfb1c490a01b5ee8c8145a489c5d",
+      "mobile": {
+        "src": "/images/articles/dyson-r3-nurovi-spot-scrub-uv/01-cover-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 20038,
+        "outputHash": "sha256:d0b93c0819cbcd8cb31abf9bee5e60a6206f0334777183934f6a2e63a337cefa"
+      }
+    },
     "/images/articles/dyson-v10-konical/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -4959,6 +4977,42 @@
         "height": 800,
         "bytes": 35076,
         "outputHash": "sha256:3a3cc1f583464fe44c59164e24398b205ca280f8a9e48dd9c4553ed431685b75"
+      }
+    },
+    "/images/articles/eufy-omni-c30-edge/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1384,
+      "height": 1384,
+      "bytes": 63904,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:6839f966a362e36504be7e3fd17ab3051ebb20c6917af67c284f60c69d115d8d",
+      "outputHash": "sha256:5d27edc6042b857b2469fefe021d9e721d731b5a48d79e704357e6351be958a4",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-c30-edge/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 11712,
+        "outputHash": "sha256:f8fc2cfa83b4b52b34debcc21aaa356e5e537faa8b9302e112ce15245a9365ea"
+      }
+    },
+    "/images/articles/eufy-omni-e35/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 67468,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:fc855a41ce30b892741608b9426b668cf6e3ef18b01efc028d2408b71f71e3d6",
+      "outputHash": "sha256:bf2d86e0a1c769505d0938858567ac0c8e41ed449cb3927a02cbfeb3082fc06a",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-e35/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 26930,
+        "outputHash": "sha256:cccab6ebe1fe03ffbbfb453784efb745236805a69a5ac5f4e2f1485d79235257"
       }
     },
     "/images/articles/eufy-omni-s2/01-cover.webp": {
@@ -7410,6 +7464,42 @@
         "outputHash": "sha256:c9a448c072ec344defc97405b9afda33767cc4a2bf32a6525ee5c53e68f74068"
       }
     },
+    "/images/articles/irobot-roomba-max-875-combo/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1600,
+      "bytes": 44430,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:24c8b7faaea4db08e1ed9300ad108dbc27bf993aa5e1c012a83e31609ba1c06a",
+      "outputHash": "sha256:6ecd183f714014dc0bfb65cae561889e402b280606097175998c6bda64471739",
+      "mobile": {
+        "src": "/images/articles/irobot-roomba-max-875-combo/01-cover-800.webp",
+        "width": 800,
+        "height": 800,
+        "bytes": 14002,
+        "outputHash": "sha256:ee9c350a154f8bbb0831d2e404028eb4d9eae9cd4a277aeea5838bd051bc304b"
+      }
+    },
+    "/images/articles/irobot-roomba-plus-678-combo/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1595,
+      "bytes": 85398,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bd2ce7d228bdf1b8e571dad4442ed629cce08d7b0ef4b251af54c50746eb7525",
+      "outputHash": "sha256:9c6ec449facd5d3c4aaa8761014d8af653197894f83c320370ad51297fd5b35f",
+      "mobile": {
+        "src": "/images/articles/irobot-roomba-plus-678-combo/01-cover-800.webp",
+        "width": 800,
+        "height": 798,
+        "bytes": 23518,
+        "outputHash": "sha256:337e7afd202b3a93affe9b7442e5dfe58ab8aaf7a9a5a8e09d2a3613ee78af08"
+      }
+    },
     "/images/articles/joseph-galli-chervon-dewalt-milwaukee/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -8281,6 +8371,24 @@
         "height": 800,
         "bytes": 27012,
         "outputHash": "sha256:6dbc3af45a4fee3db57a3069334a65c8b5ff226d78f26f671d72ea24f4cdb80d"
+      }
+    },
+    "/images/articles/mammotion-luba-4-awd/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1024,
+      "height": 469,
+      "bytes": 58518,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:154ef93beebe608baf002835c35520a56b7c6751803378465241bf76ea2fb395",
+      "outputHash": "sha256:aa62a73354d60cd5d57fae4773d76d6ffb16a000ec37b5aca4db45a49122ee5d",
+      "mobile": {
+        "src": "/images/articles/mammotion-luba-4-awd/01-cover-800.webp",
+        "width": 800,
+        "height": 366,
+        "bytes": 28798,
+        "outputHash": "sha256:f5be70e68b0ebc3a4dce09befa091b9842eae8e92eda3c5e6a1c456e05bf641a"
       }
     },
     "/images/articles/mammotion-luba-mini-2-awd-1500/01-cover.webp": {
@@ -9638,6 +9746,28 @@
         "outputHash": "sha256:ba687c37ccffa95a63dc5cbef19397e612d8cabaad8048af935d63263355cb56"
       }
     },
+    "/images/articles/pudu-gt5/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 316,
+      "height": 262,
+      "bytes": 10408,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:caf4f8bfeec29f3489294657f92be3fb42d6da9c0c5cac019a09f2acb91c391b",
+      "outputHash": "sha256:235e04189cbd8fafb116cd7c181ada8154b0cfa929e6ba597cbddb171d4c8611"
+    },
+    "/images/articles/pudu-gt7/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 384,
+      "height": 262,
+      "bytes": 13928,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:13abd2d5dcf72b8c2d6ee6e275e02bad5dfc2f62ba546c7ddd4c722255d87ecf",
+      "outputHash": "sha256:76b5f3dd0ab23276aa8f8152c03ee46f95bbb97722fbf7710942f48202f3a97b"
+    },
     "/images/articles/roborock-f25-ace-pro/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -9670,6 +9800,17 @@
       "quality": 90,
       "sourceHash": "sha256:ee3c6e95584def9dfd3a2c9133bf89ca41e08184f10aa6532f8fa467f571a7ff",
       "outputHash": "sha256:229e3f78db9a330a97dbe410428c91ab0d2a5488ab429a25ff0973a44c1e8a02"
+    },
+    "/images/articles/roborock-qrevo-2-pro/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 22858,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:589fd418619206383bca82665c53c4cc8f6348d89d6e9654db43fbe9c59ed634",
+      "outputHash": "sha256:d4394bd3cfdd2140a4af44791a43783b3be86d2465aad92ff4082ea5e171f7eb"
     },
     "/images/articles/roborock-qrevo-curv-2-flow/01-cover.webp": {
       "role": "cover",
@@ -9879,6 +10020,35 @@
         "bytes": 15128,
         "outputHash": "sha256:d7357a9e32fb0aee36aef1e040160961edc566ccd3f1f111e3f3f6ae2b18f8a9"
       }
+    },
+    "/images/articles/roborock-rockneo-q2-lidar/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 908,
+      "bytes": 91688,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ffa15bd8be6d1f5a9f85559285d3eeffaf9a179f8be98c163482495abd81eb09",
+      "outputHash": "sha256:01968c8f8feb27c52bf81cd9cd7dcc68bf2961eb9a021fd40b2a839fa0aabfb4",
+      "mobile": {
+        "src": "/images/articles/roborock-rockneo-q2-lidar/01-cover-800.webp",
+        "width": 800,
+        "height": 454,
+        "bytes": 25596,
+        "outputHash": "sha256:060d9dc1b5879513f58550cd672096dde8ebaa82958a0bd875f86cff20b89742"
+      }
+    },
+    "/images/articles/roborock-s10-maxv-ultra-steam/01-cover.webp": {
+      "role": "cover",
+      "kind": "transparent",
+      "width": 1000,
+      "height": 1000,
+      "bytes": 40710,
+      "format": "webp",
+      "quality": 90,
+      "sourceHash": "sha256:fdbcc17c93a9ae0309d77e236ee4a8abb8ad849bb591a7e6df4c4a354202301c",
+      "outputHash": "sha256:f087fd21b89ab5bd38cb7cd9410ef892cb89d1bbe60bac91072d802a0b497628"
     },
     "/images/articles/roborock-saros-20-flow/01-cover.webp": {
       "role": "cover",
@@ -11646,6 +11816,24 @@
         "height": 800,
         "bytes": 64818,
         "outputHash": "sha256:9863ab1ac3b67362ec96ef7d59b0f23bd04e662c0f613feb020d2b60f8365fb6"
+      }
+    },
+    "/images/articles/shark-navigator-2-in-1/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 1331,
+      "bytes": 48258,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:03ccdaca02d4c2053cd539024b8409cfaf9324f1015574256d31b5bb71b670f2",
+      "outputHash": "sha256:6b1366388c339cdc263864c0cd4e3c5480bc845e8913be68728bc825ef080be5",
+      "mobile": {
+        "src": "/images/articles/shark-navigator-2-in-1/01-cover-800.webp",
+        "width": 800,
+        "height": 666,
+        "bytes": 13996,
+        "outputHash": "sha256:678f64e0a6f18025d5a82e1accb3a058c2901d22be0ac8dd5e8c1b8a7e8de153"
       }
     },
     "/images/articles/shark-powerdetect-speed-ia3241/01-cover.webp": {
@@ -40012,6 +40200,11 @@
       "cover": "/images/articles/dyson-r2-nurovi-wash-dry/01-cover.webp",
       "body": []
     },
+    "dyson-r3-nurovi-spot-scrub-uv": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-r3-nurovi-spot-scrub-uv/01-cover.webp",
+      "body": []
+    },
     "dyson-v10-konical": {
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-v10-konical/01-cover.webp",
@@ -40239,6 +40432,16 @@
     "eufy-omni-c28": {
       "budgetClass": "standard",
       "cover": "/images/articles/eufy-omni-c28/01-cover.webp",
+      "body": []
+    },
+    "eufy-omni-c30-edge": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eufy-omni-c30-edge/01-cover.webp",
+      "body": []
+    },
+    "eufy-omni-e35": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eufy-omni-e35/01-cover.webp",
       "body": []
     },
     "eufy-omni-s2": {
@@ -40997,6 +41200,16 @@
         "/images/insights/irobot-fourth-quarter-and-full-year-revenue-image-003.jpg"
       ]
     },
+    "irobot-roomba-max-875-combo": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/irobot-roomba-max-875-combo/01-cover.webp",
+      "body": []
+    },
+    "irobot-roomba-plus-678-combo": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/irobot-roomba-plus-678-combo/01-cover.webp",
+      "body": []
+    },
     "irobot-uncertain-future": {
       "budgetClass": "standard",
       "cover": "/images/insights/irobot-uncertain-future-cover.jpg",
@@ -41229,6 +41442,11 @@
     "mammotion-luba-3-awd-1500": {
       "budgetClass": "standard",
       "cover": "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp",
+      "body": []
+    },
+    "mammotion-luba-4-awd": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/mammotion-luba-4-awd/01-cover.webp",
       "body": []
     },
     "mammotion-luba-mini-2-awd-1500": {
@@ -41692,6 +41910,16 @@
       "cover": "/images/articles/prulde-first-half-results-august-2026/01-cover.webp",
       "body": []
     },
+    "pudu-gt5": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/pudu-gt5/01-cover.webp",
+      "body": []
+    },
+    "pudu-gt7": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/pudu-gt7/01-cover.webp",
+      "body": []
+    },
     "quality-control-cleaning-appliances-china": {
       "budgetClass": "standard",
       "cover": "/images/blog/quality-control-cleaning-appliances-china-cover.webp",
@@ -41788,6 +42016,11 @@
         "/images/insights/roborock-ipo-prospectus-signals-image-037.jpg"
       ]
     },
+    "roborock-qrevo-2-pro": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-qrevo-2-pro/01-cover.webp",
+      "body": []
+    },
     "roborock-qrevo-curv-2-flow": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-qrevo-curv-2-flow/01-cover.webp",
@@ -41838,6 +42071,16 @@
     "roborock-rockmow-z1-vs-mammotion-luba-3-awd": {
       "budgetClass": "standard",
       "cover": "/images/blog/roborock-rockmow-z1-vs-mammotion-luba-3-awd.webp",
+      "body": []
+    },
+    "roborock-rockneo-q2-lidar": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-rockneo-q2-lidar/01-cover.webp",
+      "body": []
+    },
+    "roborock-s10-maxv-ultra-steam": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-s10-maxv-ultra-steam/01-cover.webp",
       "body": []
     },
     "roborock-saros-20": {
@@ -42477,6 +42720,11 @@
     "shark-hydrovac-vs-bissell-crosswave": {
       "budgetClass": "standard",
       "cover": "/images/blog/shark-hydrovac-vs-bissell-crosswave.webp",
+      "body": []
+    },
+    "shark-navigator-2-in-1": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-navigator-2-in-1/01-cover.webp",
       "body": []
     },
     "shark-powerdetect-speed-ia3241": {
@@ -45271,6 +45519,15 @@
         }
       }
     },
+    "dyson-r3-nurovi-spot-scrub-uv": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-r3-nurovi-spot-scrub-uv/01-cover.webp",
+          "hash": "sha256:493e8329f9b621751e900d9b22ed7dda5946d4c04135e0b47dc1114081ca8d96"
+        }
+      }
+    },
     "dyson-v10-konical": {
       "files": {
         "01-cover.png": {
@@ -45483,6 +45740,24 @@
           "status": "matched",
           "primary": "/images/articles/eufy-omni-c28/01-cover.webp",
           "hash": "sha256:3bd93a0f9e04da8c0a3b3fb77b11a4caad33a42c02839d91b37f3e748432468b"
+        }
+      }
+    },
+    "eufy-omni-c30-edge": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-c30-edge/01-cover.webp",
+          "hash": "sha256:6839f966a362e36504be7e3fd17ab3051ebb20c6917af67c284f60c69d115d8d"
+        }
+      }
+    },
+    "eufy-omni-e35": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-e35/01-cover.webp",
+          "hash": "sha256:fc855a41ce30b892741608b9426b668cf6e3ef18b01efc028d2408b71f71e3d6"
         }
       }
     },
@@ -46166,6 +46441,24 @@
         }
       }
     },
+    "irobot-roomba-max-875-combo": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/irobot-roomba-max-875-combo/01-cover.webp",
+          "hash": "sha256:24c8b7faaea4db08e1ed9300ad108dbc27bf993aa5e1c012a83e31609ba1c06a"
+        }
+      }
+    },
+    "irobot-roomba-plus-678-combo": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/irobot-roomba-plus-678-combo/01-cover.webp",
+          "hash": "sha256:bd2ce7d228bdf1b8e571dad4442ed629cce08d7b0ef4b251af54c50746eb7525"
+        }
+      }
+    },
     "joseph-galli-chervon-dewalt-milwaukee": {
       "files": {
         "01-cover.webp": {
@@ -46502,6 +46795,15 @@
           "status": "matched",
           "primary": "/images/articles/mammotion-luba-3-awd-1500/01-cover.webp",
           "hash": "sha256:e78a53e22617b58a86e17add05cc577b39801735eda1f2ebfdfc33b7b8ab5a29"
+        }
+      }
+    },
+    "mammotion-luba-4-awd": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/mammotion-luba-4-awd/01-cover.webp",
+          "hash": "sha256:154ef93beebe608baf002835c35520a56b7c6751803378465241bf76ea2fb395"
         }
       }
     },
@@ -46982,6 +47284,24 @@
         }
       }
     },
+    "pudu-gt5": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/pudu-gt5/01-cover.webp",
+          "hash": "sha256:caf4f8bfeec29f3489294657f92be3fb42d6da9c0c5cac019a09f2acb91c391b"
+        }
+      }
+    },
+    "pudu-gt7": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/pudu-gt7/01-cover.webp",
+          "hash": "sha256:13abd2d5dcf72b8c2d6ee6e275e02bad5dfc2f62ba546c7ddd4c722255d87ecf"
+        }
+      }
+    },
     "roborock-f25-ace-pro": {
       "files": {
         "01-cover.png": {
@@ -47006,6 +47326,15 @@
           "status": "matched",
           "primary": "/images/articles/roborock-f25-ultra-steam-gen-2/01-cover.webp",
           "hash": "sha256:ee3c6e95584def9dfd3a2c9133bf89ca41e08184f10aa6532f8fa467f571a7ff"
+        }
+      }
+    },
+    "roborock-qrevo-2-pro": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-qrevo-2-pro/01-cover.webp",
+          "hash": "sha256:589fd418619206383bca82665c53c4cc8f6348d89d6e9654db43fbe9c59ed634"
         }
       }
     },
@@ -47057,6 +47386,24 @@
           "status": "matched",
           "primary": "/images/articles/roborock-rockaqua-p1-pool-robot/04-financial-capacity.webp",
           "hash": "sha256:97e3415b20ac02641b1f978b65cb84938dbcf5123109ad35a3e59db1e1495f11"
+        }
+      }
+    },
+    "roborock-rockneo-q2-lidar": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-rockneo-q2-lidar/01-cover.webp",
+          "hash": "sha256:ffa15bd8be6d1f5a9f85559285d3eeffaf9a179f8be98c163482495abd81eb09"
+        }
+      }
+    },
+    "roborock-s10-maxv-ultra-steam": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-s10-maxv-ultra-steam/01-cover.webp",
+          "hash": "sha256:fdbcc17c93a9ae0309d77e236ee4a8abb8ad849bb591a7e6df4c4a354202301c"
         }
       }
     },
@@ -47613,6 +47960,15 @@
           "status": "matched",
           "primary": "/images/articles/shark-aquareach-wd551/01-cover.webp",
           "hash": "sha256:201a82f3ff83a330f8016eb0b259f0ca223529c437a6b946635c7c362404ef3e"
+        }
+      }
+    },
+    "shark-navigator-2-in-1": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/shark-navigator-2-in-1/01-cover.webp",
+          "hash": "sha256:03ccdaca02d4c2053cd539024b8409cfaf9324f1015574256d31b5bb71b670f2"
         }
       }
     },
