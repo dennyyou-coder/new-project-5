@@ -3824,6 +3824,24 @@
         "outputHash": "sha256:dd7f3b5f5fd81273deb874fd629bd2681369597b4ef6c40cce19569e358ddcf8"
       }
     },
+    "/images/articles/dji-romo-2-launch-analysis/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 32270,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:cb984f53f0cee2fa4947db3799406bca1e25fa48d1d4201033aecfcc158569b5",
+      "outputHash": "sha256:11faec54e238f92cc4d876bf8c3ebc0778afa1ed54eb3499b978aa114e2fde16",
+      "mobile": {
+        "src": "/images/articles/dji-romo-2-launch-analysis/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12670,
+        "outputHash": "sha256:3cd67b348d59217fa222cf7964b9b351a837ba9e5f16410d97059df915d6ff09"
+      }
+    },
     "/images/articles/dolphin-eon-120d/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -5872,6 +5890,24 @@
         "outputHash": "sha256:ada6bf21b30c143d8f64d99becc369fe3243b1fb878cfecfa4030eb25b74748a"
       }
     },
+    "/images/articles/floor-washers-good-product-hard-business/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 28276,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1608b2e32ef20866a15e6399921b105ef9ba6ed56128bab567c18d44aeb0cad1",
+      "outputHash": "sha256:517c37790f1e227fbd349bc73ca5dacdce9e04d7dbccc473182cfeaf932f05a2",
+      "mobile": {
+        "src": "/images/articles/floor-washers-good-product-hard-business/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 10410,
+        "outputHash": "sha256:aa9a94bc85e2b26b559a3f30b811a6cde8a066ed2f3509b6023b6acf22c7c5f1"
+      }
+    },
     "/images/articles/fujia-first-half-results-august-2026/01-cover.webp": {
       "role": "cover",
       "kind": "graphic",
@@ -7581,6 +7617,42 @@
         "height": 798,
         "bytes": 23518,
         "outputHash": "sha256:337e7afd202b3a93affe9b7442e5dfe58ab8aaf7a9a5a8e09d2a3613ee78af08"
+      }
+    },
+    "/images/articles/is-steam-the-next-robot-vacuum-feature/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42054,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5d1406c2d8db72cd445a9baf9c56e924b96c73b49bf54bbb47c532a7219ccbc2",
+      "outputHash": "sha256:7803cc3bc07bd3cc2b718539f8a02083b9be1334764125cc97320942c5f1561c",
+      "mobile": {
+        "src": "/images/articles/is-steam-the-next-robot-vacuum-feature/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16910,
+        "outputHash": "sha256:3ee65c2f2cd4ef8b1111ecad2031c1040849382fe2cdf5edd7f5aa38d01b7e7b"
+      }
+    },
+    "/images/articles/is-steam-the-next-robot-vacuum-feature/02-steam-roller.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1170,
+      "height": 1216,
+      "bytes": 119724,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a1da31b72ced9aa4fa0815b3f03760805e6c4e444ef3d85db3050327b435056b",
+      "outputHash": "sha256:e1a1ca1a454cd0435422d460ee640a4055c4ebf85d6cfa3d4b3a9c60aca480fe",
+      "mobile": {
+        "src": "/images/articles/is-steam-the-next-robot-vacuum-feature/02-steam-roller-800.webp",
+        "width": 770,
+        "height": 800,
+        "bytes": 51410,
+        "outputHash": "sha256:8e3694ce95c863f6306fd0ebc3274858df2b90051b1e0b9193276ac95eb72832"
       }
     },
     "/images/articles/joseph-galli-chervon-dewalt-milwaukee/01-cover.webp": {
@@ -11548,6 +11620,24 @@
         "outputHash": "sha256:04c8ded5a33112506ed10237396462b5c55e95a448491fc99277370df42650bf"
       }
     },
+    "/images/articles/robotic-mower-players-2026/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 47766,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:abcdbc37b88f7a03a12a5806c40610dca1171a3a51d9c2e5169ca65a1cf456b0",
+      "outputHash": "sha256:8a565933607050a1a2ca3386600b34e1cc732ed87cd9132be1b4bc9747319bb6",
+      "mobile": {
+        "src": "/images/articles/robotic-mower-players-2026/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16994,
+        "outputHash": "sha256:7bcf0c70bcf1ed0baf5f81f436adc81d2dba509f7b136dd181b6b524f0a10d30"
+      }
+    },
     "/images/articles/robotic-pool-cleaner-not-charging/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -12295,6 +12385,24 @@
         "height": 450,
         "bytes": 15080,
         "outputHash": "sha256:2483cb79734f46fb3bd3f14a03c4e3fe00d4b72fdcb1f51a5d2cc3fb84ae3d88"
+      }
+    },
+    "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1440,
+      "height": 810,
+      "bytes": 214496,
+      "format": "webp",
+      "quality": 76,
+      "sourceHash": "sha256:27246138cd8389f4d27e90bda1ef304b78e31763d80372f405e4f35a60dc587e",
+      "outputHash": "sha256:f82af7f13ebf3bc28116a4e66f0861b219bd385f0bd1e0b884f5803781d2f8f8",
+      "mobile": {
+        "src": "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 102312,
+        "outputHash": "sha256:c239328887a657d532551b75d680e4890d4eaaccf63fc3a11912c0173eb64398"
       }
     },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover.webp": {
@@ -40058,6 +40166,11 @@
         "/images/insights/dji-is-running-out-of-time-image-02.jpg"
       ]
     },
+    "dji-romo-2-launch-analysis": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dji-romo-2-launch-analysis/01-cover.webp",
+      "body": []
+    },
     "dji-romo-launch-analysis": {
       "budgetClass": "standard",
       "cover": "/images/insights/dji-romo-launch-analysis-cover.jpg",
@@ -40797,6 +40910,11 @@
       "cover": "/images/blog/floor-washer-oem-odm-water-path-development.webp",
       "body": []
     },
+    "floor-washers-good-product-hard-business": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/floor-washers-good-product-hard-business/01-cover.webp",
+      "body": []
+    },
     "fluidra-largest-market-north-america": {
       "budgetClass": "standard",
       "cover": "/images/blog/fluidra-largest-market-cover.webp",
@@ -41432,6 +41550,13 @@
       "cover": "/images/blog/is-roborock-owned-by-xiaomi-cover.webp",
       "body": [
         "/images/blog/xiaomi-ecosystem-relationship-types.webp"
+      ]
+    },
+    "is-steam-the-next-robot-vacuum-feature": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/is-steam-the-next-robot-vacuum-feature/01-cover.webp",
+      "body": [
+        "/images/articles/is-steam-the-next-robot-vacuum-feature/02-steam-roller.webp"
       ]
     },
     "jan-6-2026-yard-cleaning-and-tool-news": {
@@ -42683,6 +42808,11 @@
         "/images/articles/robotic-mower-new-king-2026/05.webp"
       ]
     },
+    "robotic-mower-players-2026": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robotic-mower-players-2026/01-cover.webp",
+      "body": []
+    },
     "robotic-mower-sales-channels": {
       "budgetClass": "standard",
       "cover": "/images/blog/robotic-mower-sales-channels-cover.webp",
@@ -43024,6 +43154,11 @@
         "/images/blog/cleaning-appliance-category-spare-parts-map.webp",
         "/images/blog/spare-parts-warranty-cleaning-appliances-checklist.webp"
       ]
+    },
+    "spoga-gafa-2026-chinese-robotic-mowers": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp",
+      "body": []
     },
     "spot-cleaner-manufacturing-cost": {
       "budgetClass": "standard",
@@ -45486,6 +45621,15 @@
         }
       }
     },
+    "dji-romo-2-launch-analysis": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dji-romo-2-launch-analysis/01-cover.webp",
+          "hash": "sha256:cb984f53f0cee2fa4947db3799406bca1e25fa48d1d4201033aecfcc158569b5"
+        }
+      }
+    },
     "dolphin-eon-120d": {
       "files": {
         "01-cover.webp": {
@@ -46245,6 +46389,15 @@
         }
       }
     },
+    "floor-washers-good-product-hard-business": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/floor-washers-good-product-hard-business/01-cover.webp",
+          "hash": "sha256:1608b2e32ef20866a15e6399921b105ef9ba6ed56128bab567c18d44aeb0cad1"
+        }
+      }
+    },
     "fujia-first-half-results-august-2026": {
       "files": {
         "01-cover.png": {
@@ -46717,6 +46870,20 @@
           "status": "matched",
           "primary": "/images/articles/irobot-roomba-plus-678-combo/01-cover.webp",
           "hash": "sha256:bd2ce7d228bdf1b8e571dad4442ed629cce08d7b0ef4b251af54c50746eb7525"
+        }
+      }
+    },
+    "is-steam-the-next-robot-vacuum-feature": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/is-steam-the-next-robot-vacuum-feature/01-cover.webp",
+          "hash": "sha256:5d1406c2d8db72cd445a9baf9c56e924b96c73b49bf54bbb47c532a7219ccbc2"
+        },
+        "02-steam-roller.png": {
+          "status": "matched",
+          "primary": "/images/articles/is-steam-the-next-robot-vacuum-feature/02-steam-roller.webp",
+          "hash": "sha256:a1da31b72ced9aa4fa0815b3f03760805e6c4e444ef3d85db3050327b435056b"
         }
       }
     },
@@ -48092,6 +48259,15 @@
         }
       }
     },
+    "robotic-mower-players-2026": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robotic-mower-players-2026/01-cover.webp",
+          "hash": "sha256:abcdbc37b88f7a03a12a5806c40610dca1171a3a51d9c2e5169ca65a1cf456b0"
+        }
+      }
+    },
     "robotic-pool-cleaner-not-charging": {
       "files": {
         "01-cover.png": {
@@ -48338,6 +48514,15 @@
           "status": "matched",
           "primary": "/images/articles/sky-001-engineering-world-model/06-official-founder.webp",
           "hash": "sha256:d30e61e5fcc1b82a52756418c7020fea0e6d667237a81f54289391b4357738b4"
+        }
+      }
+    },
+    "spoga-gafa-2026-chinese-robotic-mowers": {
+      "files": {
+        "01-cover.jpg": {
+          "status": "matched",
+          "primary": "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp",
+          "hash": "sha256:27246138cd8389f4d27e90bda1ef304b78e31763d80372f405e4f35a60dc587e"
         }
       }
     },

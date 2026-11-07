@@ -851,6 +851,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "commercial-robotic-mower-market-navimow-mammotion": ["mammotion",  "sunseeker"],
     "delonghi-family-global-coffee-business": ["delonghi"],
     "dewalts-rise-harvard-case": ["dewalt"],
+    "dji-romo-2-launch-analysis": ["dji-romo"],
     "dji-romo-launch-analysis": ["dji-romo"],
     "dji-romo-p-vs-ecovacs-deebot-x11": ["dji-romo",  "ecovacs"],
     "dji-romo-p-vs-roborock-saros-10r": ["dji-romo",  "roborock"],
@@ -891,6 +892,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "irobot-financial-crisis": ["irobot"],
     "is-dreame-owned-by-xiaomi": ["dreame",  "mova"],
     "is-roborock-owned-by-xiaomi": ["roborock"],
+    "is-steam-the-next-robot-vacuum-feature": ["dreame"],
     "joseph-galli-chervon-dewalt-milwaukee": ["chervon",  "tti",  "dewalt",  "milwaukee",  "ego",  "skil",  "flex"],
     "karcher-family-business-alfred-irene-hartmut-jenner": ["karcher"],
     "karcher-hidden-champion-in-cleaning-appliances": ["karcher"],
@@ -1042,8 +1044,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 171);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 306);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 173);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 308);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
