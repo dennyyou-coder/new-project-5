@@ -24545,6 +24545,42 @@
         "outputHash": "sha256:5f50833adaacdeb5e6c45e7a59cd7a4360a8f18bb976eb65927e9f805c60c8fc"
       }
     },
+    "/images/articles/who-owns-clarke-nilfisk-freudenberg/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 91502,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e4d6692ccf79e6822810efaf3b34315952907b3b970b59f16d2de72a72510933",
+      "outputHash": "sha256:1893f3187a363abb517ac0b43c3209bf8245d6f486abc4f027c84c9887a9417e",
+      "mobile": {
+        "src": "/images/articles/who-owns-clarke-nilfisk-freudenberg/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 32184,
+        "outputHash": "sha256:c888dd00bf7f8963cf7ccd3a26968e39d2cef7b48f19d4ba83dfde35808fbeed"
+      }
+    },
+    "/images/articles/who-owns-clarke-nilfisk-freudenberg/02-clarke-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35954,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:721f50e536593cfcc830d98556335f61bae6d383aa5a7a9fc53ff76ea5e35bc8",
+      "outputHash": "sha256:3b9766210b0c55010b9b07e97dd9b2ca77c61c6b8ce0f40d018da28d5eefce93",
+      "mobile": {
+        "src": "/images/articles/who-owns-clarke-nilfisk-freudenberg/02-clarke-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13668,
+        "outputHash": "sha256:55463d0bffe223a1c9110af8ba244cd69d34b2a893e7639b2a00edfa08be2b77"
+      }
+    },
     "/images/articles/who-owns-craftsman-tools-stanley-black-decker/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -24741,6 +24777,42 @@
         "height": 450,
         "bytes": 22248,
         "outputHash": "sha256:3d4f893e17ea898968a8f991b168e8f821c832521a2b489ba7e442e415dd71fb"
+      }
+    },
+    "/images/articles/who-owns-ego-power-plus-chervon/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 60704,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e675b4e35981d2228af9f6ce2f405b06d5c6a6af68de2c8c9e620b27e6148cdf",
+      "outputHash": "sha256:2217c33c0bc4acebef9800fb40ba940524431be4d50daf51b16625c2e629fb65",
+      "mobile": {
+        "src": "/images/articles/who-owns-ego-power-plus-chervon/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23592,
+        "outputHash": "sha256:2660033fd6745cc019263d62e4372e4042dc65494a0bf578022c04cdabd06e98"
+      }
+    },
+    "/images/articles/who-owns-ego-power-plus-chervon/02-ego-power-plus-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39710,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bfa8cbf4812c07a6796827933bc1c6292deb36370b5632cbc2b9dbeaef82911b",
+      "outputHash": "sha256:2c1c636ca6638dd4d35bee9e62ead5b3b2d0917d4b6105d9b15f1c74f660a828",
+      "mobile": {
+        "src": "/images/articles/who-owns-ego-power-plus-chervon/02-ego-power-plus-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15850,
+        "outputHash": "sha256:e4d162d66ff97a93c97e22b1689b27f4b76b249bea92cd36666f8b6f2a1368ed"
       }
     },
     "/images/articles/who-owns-electrolux-brands-manufacturing/01-cover.webp": {
@@ -24977,6 +25049,42 @@
         "outputHash": "sha256:fbac36b37196ba50be6f3bcf74f3acb5b38fa0f30f4638969a5c7946989eb4ce"
       }
     },
+    "/images/articles/who-owns-gardena-husqvarna-group/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40124,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d8c4650e376bc4a47d470cd79d2dc961beb414df1da1ebe5abbadcce419473f4",
+      "outputHash": "sha256:8d5519c6ce9fa77432e7daf64023c994774fca09a5127c5fca2bf9b368493eb9",
+      "mobile": {
+        "src": "/images/articles/who-owns-gardena-husqvarna-group/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18466,
+        "outputHash": "sha256:21f8b78ab0d0e35981bc1689a0970358eed1d3a069d69d981b2b8ac9f4c40f23"
+      }
+    },
+    "/images/articles/who-owns-gardena-husqvarna-group/02-gardena-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35214,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:959309b77e746b218e7ac0f51ed7b2e656aa2acfa4f6095fd920b48eac8bf70c",
+      "outputHash": "sha256:594af3137a34e196c6429afce45e512ae2c1be02136a64ed6dc69b966859d840",
+      "mobile": {
+        "src": "/images/articles/who-owns-gardena-husqvarna-group/02-gardena-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13426,
+        "outputHash": "sha256:34f070120f723d1fb3fb50e5ebc3a61cdb1828d50f4bac226844baaa24ef61b7"
+      }
+    },
     "/images/articles/who-owns-gardena-husqvarna-sileno-manufacturing/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25065,6 +25173,42 @@
         "height": 450,
         "bytes": 15334,
         "outputHash": "sha256:8e4482381b1ea10595a5159ed05d859382defb9898077ae7f8609de03faef1ca"
+      }
+    },
+    "/images/articles/who-owns-ghibli-riello-cleaning-machines/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 145818,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5356ec0e0ebf5fd79483d1345d0b8e7964cea249c1fe9c21a25f17e60c284e0b",
+      "outputHash": "sha256:69c501bfc837e26dbf3dad67da1b1d098a4197773862d87d5c92beaedf81472d",
+      "mobile": {
+        "src": "/images/articles/who-owns-ghibli-riello-cleaning-machines/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43786,
+        "outputHash": "sha256:d5d358f7c047381d7ca51e3d4694af82fb439d44510fff60d458803c70b60378"
+      }
+    },
+    "/images/articles/who-owns-ghibli-riello-cleaning-machines/02-ghibli-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35926,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ebdde75a02a74da0466e8417c20969c816ef2f9f2bf2edd5d7faa51e34c9d736",
+      "outputHash": "sha256:97e7449d8b4fce2fcf1011b413f42061158d0270eddb848b5d5763114db8a16c",
+      "mobile": {
+        "src": "/images/articles/who-owns-ghibli-riello-cleaning-machines/02-ghibli-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13638,
+        "outputHash": "sha256:9b22f15b9bc7ee813a5771765c9948c0550fd67c6f96b6f4280d39336c190baf"
       }
     },
     "/images/articles/who-owns-gorenje-appliances-hisense/01-cover.webp": {
@@ -25553,6 +25697,42 @@
         "outputHash": "sha256:60ebe5d8c93c614ac472b53d4a0bf1c1bd670f5405ee5de0d48044028ebbedc7"
       }
     },
+    "/images/articles/who-owns-lavor-comet-group/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 106420,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2b7d47e5b98187df9ea5c892442d0fd8481d451be77936f13b7f96651d351ed9",
+      "outputHash": "sha256:7a1897e050f97dac3387cfe79f69520d96d4509c55493ec8d80e78e84e9845a4",
+      "mobile": {
+        "src": "/images/articles/who-owns-lavor-comet-group/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36266,
+        "outputHash": "sha256:a24e448ee63d7b43352114f51444953ccb769be7d78bc6f511599ba81fb83be3"
+      }
+    },
+    "/images/articles/who-owns-lavor-comet-group/02-lavor-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34552,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:207863ca9f4eef0f14b41b0ed80c2c02c8f2d5388818c4d63f4eb9f5e02bd6c7",
+      "outputHash": "sha256:d87f71ef9e0f932b22a9d8f7bb6409d8f230ca1aec00a4aafcb8c74e505556ad",
+      "mobile": {
+        "src": "/images/articles/who-owns-lavor-comet-group/02-lavor-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12938,
+        "outputHash": "sha256:eda9455c5dcebf2063fd09f380ace597ac56bf0efe5a28721cc426b3b68806c1"
+      }
+    },
     "/images/articles/who-owns-lawnmaster-cleva-manufacturing/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25859,6 +26039,42 @@
         "outputHash": "sha256:ded5c183c544910ce2ab8d2e0fccceb251d3f95f7a6eb686a81554a764e9a4b1"
       }
     },
+    "/images/articles/who-owns-nss-taski-solenis/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 85386,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:93d3dc02efec909fc3455cd6803473a5b55ccfb2a0a74a4d085f9a32f94a5d7b",
+      "outputHash": "sha256:b2b681372d9d577dd6fb4cc0d9648e06ce456c9f510baf7d9aefeb2a6a1cdedc",
+      "mobile": {
+        "src": "/images/articles/who-owns-nss-taski-solenis/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36906,
+        "outputHash": "sha256:d47098555ae5f5beb4f93c0cf1e7a0eb5d293b6108bf48f4b9b7f4eb3b155cb4"
+      }
+    },
+    "/images/articles/who-owns-nss-taski-solenis/02-nss-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34956,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c9797696e4f7997562985fe4c57bca9fe9180cf47abac24eca959e160f0c1d57",
+      "outputHash": "sha256:85b7cbc2bfed47509a6152de3a3dd9d208611c7386711e2453116faf797fa2a8",
+      "mobile": {
+        "src": "/images/articles/who-owns-nss-taski-solenis/02-nss-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13278,
+        "outputHash": "sha256:d00bf1a7f7618e5eaa9838cec63cfe15b31f0a8d317f706e49895f6344d99331"
+      }
+    },
     "/images/articles/who-owns-panasonic-appliances-vacuum-manufacturing/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25913,6 +26129,42 @@
         "outputHash": "sha256:5852508010785c9c14a307b9d00a8270ce25dd1f0ca5fa7b727c82c6c45c97e3"
       }
     },
+    "/images/articles/who-owns-pentair-pool-brands/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31722,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:57744b5aace2f23ac1df690474ad72c5c5b27103a3cd6e63dadf85bdb7fc0af0",
+      "outputHash": "sha256:7e6c66016878d6f067e12ddf7c459bafe58460c42cb6459e19fcca1b4b788a74",
+      "mobile": {
+        "src": "/images/articles/who-owns-pentair-pool-brands/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13312,
+        "outputHash": "sha256:e3f1bafcfe1dec33099ad263afce9d3684c5afbc1cfa17f6be195c9cb5bfa0d2"
+      }
+    },
+    "/images/articles/who-owns-pentair-pool-brands/02-pentair-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40366,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7ad14009cfabb6fdbad02ee3b0c55e067563847ff8300224422be45b93d1ff4f",
+      "outputHash": "sha256:dd5066c2e90a08505da5c7b1307b7da471fd16a1d9cafc0e55cb3ab1d8a6c926",
+      "mobile": {
+        "src": "/images/articles/who-owns-pentair-pool-brands/02-pentair-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15456,
+        "outputHash": "sha256:636c36a243f44a337323b13306408a777b24dd89b7602a702b93709b17ee1bb5"
+      }
+    },
     "/images/articles/who-owns-polaris-pool-cleaners-fluidra-zodiac/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25947,6 +26199,42 @@
         "height": 450,
         "bytes": 69030,
         "outputHash": "sha256:026b2b4a30f8eb8357698bbf5e59e0146f0ed11fce31ab502be374da7b49c8e1"
+      }
+    },
+    "/images/articles/who-owns-powerboss-minuteman-hako/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61856,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fa3f9f73e86b48ac3cc14005cde148d40a33ca56a799615739fa35da4e1a5b8b",
+      "outputHash": "sha256:3b5e003fe64ca8afbee195c85d8ec5e13db27ea5db978fd72ded444a01b3b86e",
+      "mobile": {
+        "src": "/images/articles/who-owns-powerboss-minuteman-hako/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26384,
+        "outputHash": "sha256:5db79dd625e602988b31d7175b77ea8097bd40b535f092387d3f3c73adc9f22d"
+      }
+    },
+    "/images/articles/who-owns-powerboss-minuteman-hako/02-powerboss-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35270,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d0b3b73cc325dc39e3e1bfac3261c49d9c55e6d726a1d0576b00bc98ea1404b8",
+      "outputHash": "sha256:04c764ece1d6ab85362013768dd9ce947daf75e082c126dc84dfeb06d281eaba",
+      "mobile": {
+        "src": "/images/articles/who-owns-powerboss-minuteman-hako/02-powerboss-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13646,
+        "outputHash": "sha256:4ac1fd3fc6e60d48a6f48196e50ebfe76d5b9aee8114819c67f757764b4cff2e"
       }
     },
     "/images/articles/who-owns-pudu-robotics/01-cover.webp": {
@@ -26453,6 +26741,78 @@
         "outputHash": "sha256:0d0a2b390983d7add9b7644f7090ea5156ec5e66ff96daf8fdaee63317d5faed"
       }
     },
+    "/images/articles/who-owns-tornado-floor-care-tacony/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38724,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2a13a748adc7290fc071c4995eb4acc9d27d7d79a747ff870596559110906e95",
+      "outputHash": "sha256:1ce33f8142c0c5cf46b95c3d6ab7b8016d316d422010a1170ab6b41f7c8ad95b",
+      "mobile": {
+        "src": "/images/articles/who-owns-tornado-floor-care-tacony/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16816,
+        "outputHash": "sha256:23df0ab86431fe2bb3e2d7eee24165fb9a01f9e936695788f5f8704949206848"
+      }
+    },
+    "/images/articles/who-owns-tornado-floor-care-tacony/02-tornado-industries-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36912,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:90c01b4e0c35f7c6b9775261d63eb040e325107dabf133b7b88b86aceae8b948",
+      "outputHash": "sha256:5ded251aa8317038d1a415eff137a5822ddcd7920a608e504375cafb08acbcb3",
+      "mobile": {
+        "src": "/images/articles/who-owns-tornado-floor-care-tacony/02-tornado-industries-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14188,
+        "outputHash": "sha256:2b27d17f82803987eaad7dc8118c24a4e2aa23bcaa71b68d97544c3ad763bb4e"
+      }
+    },
+    "/images/articles/who-owns-toro-the-toro-company/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 29722,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8e10f01ba3e0485a94360ad7f9c967d5b996a13f269a5bf9a80b727dd5390481",
+      "outputHash": "sha256:dfd2f20fab5db615cb8191973bf7caf2dcd65c75d5fa06960b2e05466a46fba7",
+      "mobile": {
+        "src": "/images/articles/who-owns-toro-the-toro-company/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13818,
+        "outputHash": "sha256:8c1bd81dfe40be879b98a7b06c6e2b2ce4590c8d37e382fffc65fb814d911f8b"
+      }
+    },
+    "/images/articles/who-owns-toro-the-toro-company/02-toro-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40558,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fa352226b0069d841f3a164bbf6334e891ea55e020e0b4a2a925fdff9495e1ae",
+      "outputHash": "sha256:e33b486b8895b653afe74ebfcba7b337eb772432e79dc4adcca1b0fc2f62d65f",
+      "mobile": {
+        "src": "/images/articles/who-owns-toro-the-toro-company/02-toro-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15910,
+        "outputHash": "sha256:a3f49d188d2069aa161909c2d263c0cb85d018f1c0bfe293685d1b778acf7d76"
+      }
+    },
     "/images/articles/who-owns-toshiba-appliances-midea-lifestyle/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -26505,6 +26865,42 @@
         "height": 450,
         "bytes": 26610,
         "outputHash": "sha256:e0b40ef99c4e5d2f88367dbf6696b605a360387393361561ab2e00794176fd75"
+      }
+    },
+    "/images/articles/who-owns-truvox-tacony/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61874,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4bce1429dbbd1bb044b0040a36c1da8fe09caf97d5763654201071fbe63f415b",
+      "outputHash": "sha256:723a274b2bf73c7647738b0f9029c52fbaaafccce24ef1a554a7ce162760c8a2",
+      "mobile": {
+        "src": "/images/articles/who-owns-truvox-tacony/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25746,
+        "outputHash": "sha256:7d4389a21d72d0fcc834877d27dc837463f26f6badac55c02977afe5b3f9abaa"
+      }
+    },
+    "/images/articles/who-owns-truvox-tacony/02-truvox-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38220,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e3d3dfb0a8a43cee8ea4b23cc17148210e669d4459ad5da3be7a6d603831b734",
+      "outputHash": "sha256:0041ae7ea349706eed8d2523e8dc2813420db8a59bd2d4816f531436ad3e511e",
+      "mobile": {
+        "src": "/images/articles/who-owns-truvox-tacony/02-truvox-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14708,
+        "outputHash": "sha256:85c80e45e1098c787a1fb7bab4660b10c637a8cf98fd91c24fabe63aea83d3f0"
       }
     },
     "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/01-cover.webp": {
@@ -44663,6 +45059,13 @@
         "/images/articles/who-owns-chervon-ego-flex-skil/03-chervon-manufacturing-network-map.webp"
       ]
     },
+    "who-owns-clarke-nilfisk-freudenberg": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-clarke-nilfisk-freudenberg/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-clarke-nilfisk-freudenberg/02-clarke-ownership-structure.webp"
+      ]
+    },
     "who-owns-craftsman-tools-stanley-black-decker": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-craftsman-tools-stanley-black-decker/01-cover.webp",
@@ -44705,6 +45108,13 @@
       "body": [
         "/images/articles/who-owns-ecovacs-tineco-manufacturing/02-ecovacs-listed-group-brand-map.webp",
         "/images/articles/who-owns-ecovacs-tineco-manufacturing/03-ecovacs-manufacturing-verification-map.webp"
+      ]
+    },
+    "who-owns-ego-power-plus-chervon": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-ego-power-plus-chervon/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-ego-power-plus-chervon/02-ego-power-plus-ownership-structure.webp"
       ]
     },
     "who-owns-ego-power-plus-chervon-manufacturing": {
@@ -44798,6 +45208,13 @@
         "/images/blog/frigidaire-manufacturing-model-verification-map.webp"
       ]
     },
+    "who-owns-gardena-husqvarna-group": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-gardena-husqvarna-group/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-gardena-husqvarna-group/02-gardena-ownership-structure.webp"
+      ]
+    },
     "who-owns-gardena-husqvarna-sileno-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-gardena-husqvarna-sileno-manufacturing/01-cover.webp",
@@ -44819,6 +45236,13 @@
       "body": [
         "/images/blog/ge-appliances-ownership-brand-map.svg",
         "/images/blog/ge-appliances-manufacturing-verification-map.svg"
+      ]
+    },
+    "who-owns-ghibli-riello-cleaning-machines": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-ghibli-riello-cleaning-machines/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-ghibli-riello-cleaning-machines/02-ghibli-ownership-structure.webp"
       ]
     },
     "who-owns-gorenje-appliances-hisense": {
@@ -44939,6 +45363,13 @@
         "/images/blog/kress-ownership-system-map.svg"
       ]
     },
+    "who-owns-lavor-comet-group": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-lavor-comet-group/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-lavor-comet-group/02-lavor-ownership-structure.webp"
+      ]
+    },
     "who-owns-lawnmaster-cleva-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-lawnmaster-cleva-manufacturing/01-cover.webp",
@@ -45030,12 +45461,26 @@
         "/images/blog/nilfisk-product-service-verification-map.svg"
       ]
     },
+    "who-owns-nss-taski-solenis": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-nss-taski-solenis/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-nss-taski-solenis/02-nss-ownership-structure.webp"
+      ]
+    },
     "who-owns-panasonic-appliances-vacuum-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-panasonic-appliances-vacuum-manufacturing/01-cover.webp",
       "body": [
         "/images/articles/who-owns-panasonic-appliances-vacuum-manufacturing/02-panasonic-appliance-organization-map.webp",
         "/images/articles/who-owns-panasonic-appliances-vacuum-manufacturing/03-panasonic-model-verification-map.webp"
+      ]
+    },
+    "who-owns-pentair-pool-brands": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-pentair-pool-brands/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-pentair-pool-brands/02-pentair-ownership-structure.webp"
       ]
     },
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": {
@@ -45050,6 +45495,13 @@
       "cover": "/images/blog/porter-cable-sbd-manufacturing-cover.webp",
       "body": [
         "/images/blog/porter-cable-ownership-position-map.svg"
+      ]
+    },
+    "who-owns-powerboss-minuteman-hako": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-powerboss-minuteman-hako/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-powerboss-minuteman-hako/02-powerboss-ownership-structure.webp"
       ]
     },
     "who-owns-pudu-robotics": {
@@ -45158,12 +45610,26 @@
         "/images/articles/who-owns-tineco-ecovacs-group/02-tineco-ecovacs-company-structure.webp"
       ]
     },
+    "who-owns-tornado-floor-care-tacony": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-tornado-floor-care-tacony/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-tornado-floor-care-tacony/02-tornado-industries-ownership-structure.webp"
+      ]
+    },
     "who-owns-toro-company-brands-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/blog/toro-company-brands-manufacturing-cover.webp",
       "body": [
         "/images/blog/toro-company-ownership-brand-map.svg",
         "/images/blog/toro-product-responsibility-map.svg"
+      ]
+    },
+    "who-owns-toro-the-toro-company": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-toro-the-toro-company/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-toro-the-toro-company/02-toro-ownership-structure.webp"
       ]
     },
     "who-owns-toshiba-appliances-midea-lifestyle": {
@@ -45180,6 +45646,13 @@
       "body": [
         "/images/blog/triton-ownership-transition-map.svg",
         "/images/blog/triton-manufacturing-verification-map.svg"
+      ]
+    },
+    "who-owns-truvox-tacony": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-truvox-tacony/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-truvox-tacony/02-truvox-ownership-structure.webp"
       ]
     },
     "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck": {
@@ -53648,6 +54121,20 @@
         }
       }
     },
+    "who-owns-clarke-nilfisk-freudenberg": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-clarke-nilfisk-freudenberg/01-cover.webp",
+          "hash": "sha256:e4d6692ccf79e6822810efaf3b34315952907b3b970b59f16d2de72a72510933"
+        },
+        "02-clarke-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-clarke-nilfisk-freudenberg/02-clarke-ownership-structure.webp",
+          "hash": "sha256:721f50e536593cfcc830d98556335f61bae6d383aa5a7a9fc53ff76ea5e35bc8"
+        }
+      }
+    },
     "who-owns-craftsman-tools-stanley-black-decker": {
       "files": {
         "01-cover.png": {
@@ -53720,6 +54207,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-ecovacs-tineco-manufacturing/03-ecovacs-manufacturing-verification-map.webp",
           "hash": "sha256:4e818f526666dd9c7440954798a347013b9a4ecad1bba2e4b2105c2543ed8746"
+        }
+      }
+    },
+    "who-owns-ego-power-plus-chervon": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ego-power-plus-chervon/01-cover.webp",
+          "hash": "sha256:e675b4e35981d2228af9f6ce2f405b06d5c6a6af68de2c8c9e620b27e6148cdf"
+        },
+        "02-ego-power-plus-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ego-power-plus-chervon/02-ego-power-plus-ownership-structure.webp",
+          "hash": "sha256:bfa8cbf4812c07a6796827933bc1c6292deb36370b5632cbc2b9dbeaef82911b"
         }
       }
     },
@@ -53856,6 +54357,20 @@
         }
       }
     },
+    "who-owns-gardena-husqvarna-group": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-gardena-husqvarna-group/01-cover.webp",
+          "hash": "sha256:d8c4650e376bc4a47d470cd79d2dc961beb414df1da1ebe5abbadcce419473f4"
+        },
+        "02-gardena-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-gardena-husqvarna-group/02-gardena-ownership-structure.webp",
+          "hash": "sha256:959309b77e746b218e7ac0f51ed7b2e656aa2acfa4f6095fd920b48eac8bf70c"
+        }
+      }
+    },
     "who-owns-gardena-husqvarna-sileno-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -53908,6 +54423,20 @@
           "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
           "primary": "/images/blog/ge-appliances-manufacturing-verification-map.svg",
           "hash": "sha256:24a339ac0ee3cba0ca907e750e5395bcb9a8034f87895a860b475c5ebd8feb57"
+        }
+      }
+    },
+    "who-owns-ghibli-riello-cleaning-machines": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ghibli-riello-cleaning-machines/01-cover.webp",
+          "hash": "sha256:5356ec0e0ebf5fd79483d1345d0b8e7964cea249c1fe9c21a25f17e60c284e0b"
+        },
+        "02-ghibli-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ghibli-riello-cleaning-machines/02-ghibli-ownership-structure.webp",
+          "hash": "sha256:ebdde75a02a74da0466e8417c20969c816ef2f9f2bf2edd5d7faa51e34c9d736"
         }
       }
     },
@@ -54138,6 +54667,20 @@
         }
       }
     },
+    "who-owns-lavor-comet-group": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lavor-comet-group/01-cover.webp",
+          "hash": "sha256:2b7d47e5b98187df9ea5c892442d0fd8481d451be77936f13b7f96651d351ed9"
+        },
+        "02-lavor-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lavor-comet-group/02-lavor-ownership-structure.webp",
+          "hash": "sha256:207863ca9f4eef0f14b41b0ed80c2c02c8f2d5388818c4d63f4eb9f5e02bd6c7"
+        }
+      }
+    },
     "who-owns-lawnmaster-cleva-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -54281,6 +54824,20 @@
         }
       }
     },
+    "who-owns-nss-taski-solenis": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-nss-taski-solenis/01-cover.webp",
+          "hash": "sha256:93d3dc02efec909fc3455cd6803473a5b55ccfb2a0a74a4d085f9a32f94a5d7b"
+        },
+        "02-nss-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-nss-taski-solenis/02-nss-ownership-structure.webp",
+          "hash": "sha256:c9797696e4f7997562985fe4c57bca9fe9180cf47abac24eca959e160f0c1d57"
+        }
+      }
+    },
     "who-owns-panasonic-appliances-vacuum-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -54300,6 +54857,20 @@
         }
       }
     },
+    "who-owns-pentair-pool-brands": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-pentair-pool-brands/01-cover.webp",
+          "hash": "sha256:57744b5aace2f23ac1df690474ad72c5c5b27103a3cd6e63dadf85bdb7fc0af0"
+        },
+        "02-pentair-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-pentair-pool-brands/02-pentair-ownership-structure.webp",
+          "hash": "sha256:7ad14009cfabb6fdbad02ee3b0c55e067563847ff8300224422be45b93d1ff4f"
+        }
+      }
+    },
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": {
       "files": {
         "01-cover.png": {
@@ -54311,6 +54882,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-polaris-pool-cleaners-fluidra-zodiac/02-polaris-fluidra-regional-responsibility-map.webp",
           "hash": "sha256:fa64fd4aa16fcb2efda1c0857f19fdf430da214d5dd89c2cfd3f59064bda248d"
+        }
+      }
+    },
+    "who-owns-powerboss-minuteman-hako": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-powerboss-minuteman-hako/01-cover.webp",
+          "hash": "sha256:fa3f9f73e86b48ac3cc14005cde148d40a33ca56a799615739fa35da4e1a5b8b"
+        },
+        "02-powerboss-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-powerboss-minuteman-hako/02-powerboss-ownership-structure.webp",
+          "hash": "sha256:d0b3b73cc325dc39e3e1bfac3261c49d9c55e6d726a1d0576b00bc98ea1404b8"
         }
       }
     },
@@ -54502,6 +55087,20 @@
         }
       }
     },
+    "who-owns-tornado-floor-care-tacony": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-tornado-floor-care-tacony/01-cover.webp",
+          "hash": "sha256:2a13a748adc7290fc071c4995eb4acc9d27d7d79a747ff870596559110906e95"
+        },
+        "02-tornado-industries-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-tornado-floor-care-tacony/02-tornado-industries-ownership-structure.webp",
+          "hash": "sha256:90c01b4e0c35f7c6b9775261d63eb040e325107dabf133b7b88b86aceae8b948"
+        }
+      }
+    },
     "who-owns-toro-company-brands-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -54524,6 +55123,20 @@
         }
       }
     },
+    "who-owns-toro-the-toro-company": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-toro-the-toro-company/01-cover.webp",
+          "hash": "sha256:8e10f01ba3e0485a94360ad7f9c967d5b996a13f269a5bf9a80b727dd5390481"
+        },
+        "02-toro-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-toro-the-toro-company/02-toro-ownership-structure.webp",
+          "hash": "sha256:fa352226b0069d841f3a164bbf6334e891ea55e020e0b4a2a925fdff9495e1ae"
+        }
+      }
+    },
     "who-owns-toshiba-appliances-midea-lifestyle": {
       "files": {
         "01-cover.png": {
@@ -54540,6 +55153,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-toshiba-appliances-midea-lifestyle/03-toshiba-appliances-product-verification-map.webp",
           "hash": "sha256:696952da3ae23f169af6cba5ea0f8de9b91554ea3adc5d5a75efe2ecfba029c2"
+        }
+      }
+    },
+    "who-owns-truvox-tacony": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-truvox-tacony/01-cover.webp",
+          "hash": "sha256:4bce1429dbbd1bb044b0040a36c1da8fe09caf97d5763654201071fbe63f415b"
+        },
+        "02-truvox-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-truvox-tacony/02-truvox-ownership-structure.webp",
+          "hash": "sha256:e3d3dfb0a8a43cee8ea4b23cc17148210e669d4459ad5da3be7a6d603831b734"
         }
       }
     },
