@@ -121,11 +121,13 @@ test("sitemap index exposes focused child sitemaps without mixing page URLs", ()
   return response.text().then((xml) => {
     assert.equal(response.headers.get("content-type"), "application/xml; charset=utf-8");
     assert.match(xml, /<sitemapindex/);
-    assert.equal((xml.match(/<sitemap>/g) || []).length, 4);
+    assert.equal((xml.match(/<sitemap>/g) || []).length, 5);
     assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/blog\/sitemap\.xml/);
     assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/discovery\/sitemap\.xml/);
     assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/brands\/sitemap\.xml/);
     assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/technical\/sitemap\.xml/);
+    // The Google News sitemap lists only the last two days of news.
+    assert.match(xml, /https:\/\/worldcleanbiz\.com\/sitemaps\/news\/sitemap\.xml/);
     assert.doesNotMatch(xml, /<url>/);
   });
 });

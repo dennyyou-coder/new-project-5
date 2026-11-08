@@ -2,7 +2,8 @@ const sitemapUrls = [
   "https://worldcleanbiz.com/sitemaps/blog/sitemap.xml",
   "https://worldcleanbiz.com/sitemaps/discovery/sitemap.xml",
   "https://worldcleanbiz.com/sitemaps/brands/sitemap.xml",
-  "https://worldcleanbiz.com/sitemaps/technical/sitemap.xml"
+  "https://worldcleanbiz.com/sitemaps/technical/sitemap.xml",
+  "https://worldcleanbiz.com/sitemaps/news/sitemap.xml"
 ];
 
 export function GET() {

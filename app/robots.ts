@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://worldcleanbiz.com/sitemap.xml"
+    sitemap: ["https://worldcleanbiz.com/sitemap.xml", "https://worldcleanbiz.com/sitemaps/news/sitemap.xml"]
   };
 }

@@ -236,11 +236,42 @@
   display: none;
 }
 
+/* Search: an icon in the header actions on wide screens, next to the menu button on narrow ones. */
+.wcb-header .wcb-header-search {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  color: var(--chrome-ink);
+}
+.wcb-header .wcb-header-search:hover {
+  background: var(--chrome-soft);
+  color: var(--chrome-accent);
+}
+.wcb-header .wcb-header-search--compact {
+  display: none;
+}
+
 @media (max-width: 1180px) {
   .wcb-header-inner {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 8px 16px;
+  }
+
+  .wcb-header .wcb-header-search--compact {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: 8px;
+    border: 1px solid var(--chrome-line);
+  }
+
+  .wcb-header .wcb-header-search--wide {
+    display: none;
   }
 
   .wcb-header-toggle {

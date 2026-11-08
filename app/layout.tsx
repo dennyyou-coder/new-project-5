@@ -91,6 +91,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`structure-refresh design-a approved-design ${manrope.variable}`}>
+        <link rel="alternate" type="application/rss+xml" title="World Clean Biz" href="/rss.xml" />
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>

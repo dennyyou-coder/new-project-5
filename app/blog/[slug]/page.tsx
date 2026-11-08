@@ -1,3 +1,4 @@
+import { authorFor, authorHref } from "@/lib/authors";
 import { TopicLinks } from "@/components/topics/TopicLinks";
 import { getTopicsFor } from "@/lib/topics";
 import { ArticleProductLinks, ArticleVideoLinks } from "@/components/editorial/EditorialConnections";
@@ -214,9 +215,9 @@ export default async function InsightDetailPage({ params }: Props) {
       url: `${siteUrl}${collectionHref}`
     },
     author: {
-      "@type": "Person",
-      name: article.author,
-      url: `${siteUrl}/about`
+      "@type": authorFor(article.author).type,
+      name: authorFor(article.author).name,
+      url: `${siteUrl}${authorHref(article.author)}`
     },
     publisher: {
       "@type": "Organization",
@@ -276,7 +277,7 @@ export default async function InsightDetailPage({ params }: Props) {
           ) : null}
           <h1>{article.title}</h1>
           <p>{article.excerpt}</p>
-          <p className="signal-detail-author">By <Link href="/about">{article.author}</Link></p>
+          <p className="signal-detail-author">By <Link href={authorHref(article.author)}>{authorFor(article.author).name}</Link></p>
           <ArticleBrandLinks
             brandSlugs={article.primaryBrands}
             profiles={publishedBrandProfiles}
