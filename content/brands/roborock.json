@@ -40,6 +40,14 @@
       "caption": "This diagram helps buyers compare Roborock and Dreame across their cleaning-product platforms."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/roborock/photos/01.webp",
+      "caption": "Roborock Q8 Max+ with auto-empty dock on a retail shelf",
+      "credit": "Photo: Ssu, CC BY-SA 4.0",
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Roborock_Q8_Max_plus_robotst%C3%B8vsuger.jpg"
+    }
+  ],
   "ownership": {
     "summary": "Roborock is a Shanghai Stock Exchange-listed company, not a Xiaomi subsidiary. Its 2026 half-year report identified founder Chang Jing as controlling shareholder and actual controller with 20.97% at 30 June 2026. Tianjin Jinmi, an investment entity controlled within Xiaomi Communications' consolidated structure, held 2.49%; that is a minority investment, not legal control.",
     "displayLabel": "Shanghai-listed company controlled by founder Chang Jing"

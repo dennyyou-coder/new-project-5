@@ -37,3 +37,14 @@ test("topic pages are listed in the blog sitemap", () => {
   assert.ok(urls.includes("https://worldcleanbiz.com/topics"));
   for (const topic of getTopics()) assert.ok(urls.includes(`https://worldcleanbiz.com/topics/${topic.slug}`));
 });
+
+test("company photos exist on disk with a small version and a credit", () => {
+  for (const file of fs.readdirSync("content/brands").filter((name) => name.endsWith(".json"))) {
+    const profile = JSON.parse(fs.readFileSync(`content/brands/${file}`, "utf8"));
+    for (const photo of profile.photos ?? []) {
+      assert.ok(fs.existsSync(`public${photo.src}`), `${file} ${photo.src}`);
+      assert.ok(fs.existsSync(`public${photo.src.replace(/\.webp$/, "-600.webp")}`), `${file} small ${photo.src}`);
+      assert.ok(photo.caption && photo.credit, `${file} caption/credit`);
+    }
+  }
+});

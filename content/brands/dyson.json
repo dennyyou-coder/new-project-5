@@ -37,8 +37,17 @@
       "caption": "This map helps readers understand the dated facility evidence behind Dyson's global manufacturing network."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/dyson/photos/01.webp",
+      "caption": "Dyson demo store on Oxford Street, London",
+      "credit": "Photo: Tristan Surtel, CC BY-SA 4.0",
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Dyson_Demo_Store,_London.jpg"
+    }
+  ],
   "ownership": {
-    "summary": "Dyson's company-information page identifies Dyson Technology Limited as one company that operates its websites, apps and connected products with Dyson Limited; it does not identify that entity as the legal company for every Dyson operation. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. That filing proves control of Dyson UK Group Limited, not by itself ultimate control across every Dyson group entity. Dyson's April 2026 California disclosure separately names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting scopes.", "displayLabel": "Privately held; controlled by Sir James Dyson"
+    "summary": "Dyson's company-information page identifies Dyson Technology Limited as one company that operates its websites, apps and connected products with Dyson Limited; it does not identify that entity as the legal company for every Dyson operation. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. That filing proves control of Dyson UK Group Limited, not by itself ultimate control across every Dyson group entity. Dyson's April 2026 California disclosure separately names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting scopes.",
+    "displayLabel": "Privately held; controlled by Sir James Dyson"
   },
   "leadership": [
     {

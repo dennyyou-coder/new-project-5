@@ -1,3 +1,4 @@
+import { BrandPhotos } from "@/components/brands/BrandPhotos";
 import { BrandLatest, type BrandLatestItem } from "@/components/brands/BrandLatest";
 import { formatAmount, resultsForBrand, revenueChange } from "@/lib/financials";
 import { BrandFaq } from "@/components/brands/BrandFaq";
@@ -203,6 +204,7 @@ export default async function BrandPage({ params }: PageProps) {
             ownershipAnalysisHref={ownershipAnalysis ? `/blog/${ownershipAnalysis.slug}` : undefined}
             latest={<BrandLatest name={profile.name} items={latestItems} />}
           />
+          <BrandPhotos profile={profile} />
           <BrandFaq profile={profile} />
           <BrandFinancials brand={profile.slug} />
           <BrandTimeline profile={profile} />

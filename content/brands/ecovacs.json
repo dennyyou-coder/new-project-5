@@ -41,6 +41,14 @@
       "caption": "This diagram helps readers compare ECOVACS with Roborock across robot-vacuum product systems."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/ecovacs/photos/01.webp",
+      "caption": "ECOVACS service robot in Hanqingqiao metro station",
+      "credit": "Photo: Shwangtianyuan, CC BY-SA 4.0",
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Ecovacs_Bot_at_Hanqingqiao_station-20240715.jpg"
+    }
+  ],
   "ownership": {
     "summary": "ECOVACS Robotics is the service-robot brand of Shanghai-listed Ecovacs Robotics Co., Ltd. The 2025 annual report names Suzhou Chuangling Smart Investment Management Co., Ltd. as controlling shareholder and Qian Dongqi and David Cheng Qian as actual controllers. Tineco is a separate consumer brand inside the same listed group through wholly owned subsidiaries; its wet-and-dry appliances should not be presented as ECOVACS-branded products.",
     "displayLabel": "Shanghai-listed group; ECOVACS and Tineco are separate consumer brands"
