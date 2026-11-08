@@ -36,12 +36,24 @@ export default async function NewsPage({ searchParams }: Props) {
   const selected = selectNews(allNews, first(params.topic), first(params.page), first(params.category));
   const hubCounts = new Map(HUB_CATEGORIES.map((hub) => [hub.slug, allNews.filter((article) => (!selected.topic || article.topic === selected.topic) && hubCategoriesForNews(article).includes(hub.slug)).length]));
   const brands = getPublishedBrandProfiles(getInsights());
+  const hub = selected.category ? getHubCategory(selected.category) : undefined;
   const schema = { "@context": "https://schema.org", "@type": "CollectionPage", name: "Cleaning Industry News", url: `${siteUrl}${newsHref(selected.topic, selected.page, selected.category)}`, mainEntity: { "@type": "ItemList", itemListElement: selected.articles.map((article, index) => ({ "@type": "ListItem", position: (selected.page - 1) * 12 + index + 1, name: article.title, url: `${siteUrl}/news/${article.slug}` })) } };
   return <>
     <header className="news-intro news-container"><h1>Cleaning Industry News</h1><p>Product launches, company developments and market updates from across the cleaning industry.</p></header>
     <div className="news-container">
-      <nav className="news-filters" aria-label="News topics"><Link href={newsHref(undefined, 1, selected.category)} aria-current={!selected.topic ? "page" : undefined}>All News</Link>{NEWS_TOPICS.filter((topic) => allNews.some((article) => article.topic === topic.slug)).map((topic) => <Link key={topic.slug} href={newsHref(topic.slug, 1, selected.category)} aria-current={selected.topic === topic.slug ? "page" : undefined}>{topic.label}</Link>)}</nav>
-      <nav className="news-filters news-category-filters" aria-label="News categories"><span className="news-filter-label">Category</span><Link href={newsHref(selected.topic)} aria-current={!selected.category ? "page" : undefined}>All categories</Link>{HUB_CATEGORIES.filter((hub) => (hubCounts.get(hub.slug) ?? 0) > 0).map((hub) => <Link key={hub.slug} href={newsHref(selected.topic, 1, hub.slug)} aria-current={selected.category === hub.slug ? "page" : undefined}><span className="news-category-dot" style={{ background: hub.color }} aria-hidden="true" />{hub.name}</Link>)}</nav>
+      <div className="news-filter-bar">
+        <nav className="news-filters" aria-label="News topics"><Link href={newsHref(undefined, 1, selected.category)} aria-current={!selected.topic ? "page" : undefined}>All News</Link>{NEWS_TOPICS.filter((topic) => allNews.some((article) => article.topic === topic.slug)).map((topic) => <Link key={topic.slug} href={newsHref(topic.slug, 1, selected.category)} aria-current={selected.topic === topic.slug ? "page" : undefined}>{topic.label}</Link>)}</nav>
+        <details className="news-category-menu">
+          <summary>
+            {selected.category && hub ? <span className="news-category-dot" style={{ background: hub.color }} aria-hidden="true" /> : null}
+            {selected.category && hub ? hub.name : "All categories"}
+          </summary>
+          <nav aria-label="News categories">
+            <Link href={newsHref(selected.topic)} aria-current={!selected.category ? "page" : undefined}>All categories</Link>
+            {HUB_CATEGORIES.filter((item) => (hubCounts.get(item.slug) ?? 0) > 0).map((item) => <Link key={item.slug} href={newsHref(selected.topic, 1, item.slug)} aria-current={selected.category === item.slug ? "page" : undefined}><span className="news-category-dot" style={{ background: item.color }} aria-hidden="true" />{item.name}</Link>)}
+          </nav>
+        </details>
+      </div>
       <div className="news-columns"><section aria-labelledby="latest-news-heading"><div className="news-list-heading"><h2 id="latest-news-heading">{[selected.category ? getHubCategory(selected.category)?.name : undefined, selected.topic ? newsTopicLabel(selected.topic) : undefined].filter(Boolean).join(" · ") || "Latest stories"}</h2><span>{selected.total} {selected.total === 1 ? "story" : "stories"}</span></div>
         <div className="news-list">{selected.articles.map((article) => { const visual = getNewsVisual(article); const figureThumb = article.keyFigures[0] && (!visual || isBorrowedNewsVisual(visual)); return <article className={`news-row${visual || figureThumb ? " has-image" : ""}`} key={article.slug}>
           {figureThumb ? <figure className="news-row-media"><Link className="news-row-image news-row-figure" href={`/news/${article.slug}`} aria-label={article.title}><NewsKeyFigureThumb company={brands.find((brand) => article.brandSlugs.includes(brand.slug))?.name} logo={brands.find((brand) => article.brandSlugs.includes(brand.slug))?.logoImage} logoSlug={brands.find((brand) => article.brandSlugs.includes(brand.slug))?.slug} figure={article.keyFigures[0]} /></Link></figure> : visual ? <figure className="news-row-media"><Link className="news-row-image" href={`/news/${article.slug}`} aria-label={article.title}><NewsImage article={article} /></Link><figcaption><NewsImageCaption article={article} /></figcaption></figure> : null}
