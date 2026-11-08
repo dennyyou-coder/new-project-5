@@ -14,26 +14,30 @@ export function Footer() {
         </div>
         <nav className="wcb-footer-links" aria-label="Footer">
           <div>
-            <h2>Explore</h2>
+            <h2>Coverage</h2>
             <ul>
               <li><Link href="/news">News</Link></li>
-              <li><Link href="/categories">Categories</Link></li>
+              <li><Link href="/topics">Topics</Link></li>
               <li><Link href="/blog">Insights</Link></li>
-              <li><Link href="/blog/archive">Deep Analysis</Link></li>
-              <li><Link href="/brands">Companies &amp; Brands</Link></li>
-              <li><Link href="/products">Products</Link></li>
               <li><Link href="/guides">Guides</Link></li>
               <li><Link href="/reports">Reports</Link></li>
               <li><Link href="/videos">Videos</Link></li>
-              <li><Link href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">Founder Series</Link></li>
             </ul>
           </div>
           <div>
-            <h2>Connect</h2>
+            <h2>Industry</h2>
+            <ul>
+              <li><Link href="/brands">Companies &amp; Brands</Link></li>
+              <li><Link href="/products">Products</Link></li>
+              <li><Link href="/categories">Categories</Link></li>
+              <li><Link href="/markets">Markets</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h2>WCB</h2>
             <ul>
               <li><Link href="/wcb-expo">WCB Expo</Link></li>
-              <li><Link href="/contact">Contact &amp; partnerships</Link></li>
-              <li><Link href="/sourcing">Sourcing Services</Link></li>
+              <li><Link href="/blog/series/building-worlds-no-1-cleaning-show-from-scratch">Founder Series</Link></li>
               <li>
                 <TallyButton className="wcb-footer-button" ctaLocation="footer_updates" form="newsletter">
                   Newsletter
@@ -47,9 +51,11 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h2>Information</h2>
+            <h2>About</h2>
             <ul>
-              <li><Link href="/about">About</Link></li>
+              <li><Link href="/about">About WCB</Link></li>
+              <li><Link href="/contact">Contact &amp; partnerships</Link></li>
+              <li><Link href="/sourcing">Sourcing Services</Link></li>
               <li><Link href="/quality-compliance">Quality &amp; Compliance</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <li><Link href="/terms">Terms of Use</Link></li>

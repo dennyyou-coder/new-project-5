@@ -1,0 +1,51 @@
+/*
+ * One page-header look across the listing pages (Nov 2026 site review).
+ * Each page keeps its own markup; this file aligns the band colour, the small label above the title,
+ * the title size and the filter rows, which had drifted apart across page stylesheets.
+ * !important is used deliberately: several older page stylesheets set these with higher specificity.
+ */
+:is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero) {
+  background: #f5f7fa !important;
+  border-bottom: 1px solid #e3e7ee;
+}
+
+:is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero) h1 {
+  font-size: clamp(32px, 4vw, 46px) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 700 !important;
+}
+
+:is(.news-intro, .blog-home-intro, .content-directory-hero, .company-directory-hero, .product-library-hero, .hub-hero, .markets-hero, .reports-library-hero, .video-intro, .contact-hero, .topic-hero)
+  :is(.news-eyebrow, .eyebrow, .product-eyebrow, .reports-kicker, .topic-eyebrow, .company-directory-breadcrumb, .hub-breadcrumb, .markets-breadcrumb) {
+  margin: 0 0 10px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: #2b50c8 !important;
+}
+
+:is(.company-directory-breadcrumb, .hub-breadcrumb, .markets-breadcrumb) a {
+  color: inherit !important;
+}
+
+/* Filter rows stay on one line and scroll sideways when they run out of room, instead of leaving one item on a second line. */
+.news-page .news-filters {
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.news-page .news-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.news-page .news-filters > * {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.news-page .news-category-filters {
+  gap: 4px 14px !important;
+}
