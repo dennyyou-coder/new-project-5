@@ -1,7 +1,7 @@
 export type ShareData = { title: string; url: string };
 
 export type ArticleShareLink = {
-  id: "linkedin" | "x" | "facebook" | "whatsapp";
+  id: "linkedin" | "x" | "facebook" | "whatsapp" | "email";
   label: string;
   href: string;
 };
@@ -36,7 +36,8 @@ export function getArticleShareLinks(title: string, url: string): ArticleShareLi
     { id: "linkedin", label: "Share on LinkedIn", href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}` },
     { id: "x", label: "Share on X", href: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}` },
     { id: "facebook", label: "Share on Facebook", href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}` },
-    { id: "whatsapp", label: "Share on WhatsApp", href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}` }
+    { id: "whatsapp", label: "Share on WhatsApp", href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}` },
+    { id: "email", label: "Share by email", href: `mailto:?subject=${encodedTitle}&body=${encodedTitle}%0A%0A${encodedUrl}` }
   ];
 }
 

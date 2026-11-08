@@ -1,3 +1,4 @@
+import { ShareBar } from "@/components/share/ShareBar";
 import { getNews } from "@/lib/news";
 import { ProductRelatedNews } from "@/components/products/ProductRelatedNews";
 import type { Metadata } from "next";
@@ -77,6 +78,7 @@ export default async function ProductPage({ params }: Props) {
         {modelPrices[0] ? <p className="pv-hero-price"><span>{modelPrices[0].kind}</span><b>{modelPrices[0].amount}</b><span>{modelPrices[0].market} · {productDate(modelPrices[0].date)}</span></p> : null}
         <div className="product-meta"><span>{model.market}</span><span>{model.launchYear} model</span></div><p className="product-note">Sources checked {productDate(model.verifiedAt)}{model.announced ? ` · Announced ${productDate(model.announced)}` : ""} · {model.launchNote} <a href={model.launchSource}>Launch source</a></p>
         <div className="product-actions pv-hero-actions"><a href={model.sources[0].url} className="product-button">Official product page</a><a href="#compare" className="product-text-link">Compare models</a></div>
+        <ShareBar title={model.name} url={`https://worldcleanbiz.com/products/${model.slug}`} />
       </div></header>
       <nav className="product-section-nav" aria-label="On this page">
         <a href="#fit">Verdict</a><a href={guide && overview.length ? `#${overview[0].id}` : "#ownership"}>Product &amp; operation</a><a href="#specifications">Specifications</a>{guide && <a href={versions.length ? `#${versions[0].id}` : "#pricing"}>Versions &amp; price</a>}<a href="#compare">Model comparison</a>{maintenance.length > 0 && <a href={`#${maintenance[0].id}`}>Maintenance &amp; parts</a>}<a href="#faq">FAQ &amp; sources</a>

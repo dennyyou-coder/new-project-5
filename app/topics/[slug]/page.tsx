@@ -8,6 +8,7 @@ import { getPublishedBrandProfiles } from "@/lib/brands";
 import { buildBrandMarkIndex } from "@/lib/brandMarks";
 import { CompanyMark } from "@/components/ui/CompanyMark";
 import { TopicChart } from "@/components/topics/TopicChart";
+import { ShareBar } from "@/components/share/ShareBar";
 import { compareKeyBrands } from "@/lib/keyBrands";
 import { seoDescription, seoTitle } from "@/lib/seo";
 import { getTopic, getTopics, topicDate, topicImageSmall } from "@/lib/topics";
@@ -125,6 +126,7 @@ export default async function TopicPage({ params }: { params: PageParams }) {
             <strong>{topic.status.label}</strong>
             <p>{topic.status.text}</p>
           </div>
+          <ShareBar title={topic.title} url={url} />
           </div>
           {topic.coverImage ? (
             <figure className="topic-hero-media">
