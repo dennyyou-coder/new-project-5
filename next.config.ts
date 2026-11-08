@@ -200,6 +200,57 @@ const nextConfig: NextConfig = {
         destination: "/blog/anker-shallow-sea-strategy-and-talent-platform",
         permanent: true
       },
+      // Mistyped or retired article slugs that Google still requests.
+      {
+        source: "/blog/stanley-black-excel-sale-outdoor-strategy",
+        destination: "/blog/stanley-black-decker-excel-sale-outdoor-strategy",
+        permanent: true
+      },
+      {
+        source: "/blog/who-asko",
+        destination: "/blog/who-owns-asko-appliances-hisense-gorenje",
+        permanent: true
+      },
+      {
+        source: "/blog/who-makes-ozito-einhell-bunnings",
+        destination: "/blog/who-makes-ozito-tools-einhell-bunnings",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-globe-stihl-greenworks",
+        destination: "/blog/who-owns-greenworks-globe-stihl",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-globe-stihl",
+        destination: "/blog/who-owns-greenworks-globe-stihl",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-home-james-dyson-singapore-manufacturing",
+        destination: "/blog/who-owns-dyson-james-dyson-singapore-manufacturing",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-james-dyson-singapore-manufacturing",
+        destination: "/blog/who-owns-dyson-james-dyson-singapore-manufacturing",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-james-dyson-private-status-and-origin",
+        destination: "/blog/who-owns-dyson-james-dyson-singapore-manufacturing",
+        permanent: true
+      },
+      {
+        source: "/blog/two-companies-control-65-of-every-power-tool-sold-and-you-dont-",
+        destination: "/blog/global-power-tool-companies",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-jame-dyson-singapore-manufacturing",
+        destination: "/blog/who-owns-dyson-james-dyson-singapore-manufacturing",
+        permanent: true
+      },
       {
         source: "/insights/:path*",
         destination: "/blog/:path*",

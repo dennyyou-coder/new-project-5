@@ -1,0 +1,10 @@
+.site-index .container { display: grid; gap: 28px; }
+.site-index-group h2 { display: flex; align-items: baseline; gap: 8px; margin: 0 0 10px; font-size: 20px; line-height: 1.3; color: #101828; }
+.site-index-group h2 span { font-size: 13px; font-weight: 500; color: #667085; }
+.site-index-group ul { margin: 0; padding: 0; list-style: none; columns: 3 260px; column-gap: 28px; }
+.site-index-group li { break-inside: avoid; padding: 3px 0; font-size: 14px; line-height: 1.45; }
+.site-index-group a { color: #1d2b4f; text-decoration: none; }
+.site-index-group a:hover { color: #2447d6; text-decoration: underline; }
+.site-index .site-index-more { display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 10px; }
+.site-index .site-index-more a { display: inline-block; padding: 8px 14px; border: 1px solid #d0d5dd; border-radius: 8px; font-size: 14px; font-weight: 600; color: #1d2b4f; text-decoration: none; }
+.site-index-more a:hover { border-color: #2447d6; color: #2447d6; }

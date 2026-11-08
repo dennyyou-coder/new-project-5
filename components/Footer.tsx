@@ -58,6 +58,7 @@ export function Footer() {
               <li><Link href="/contact">Contact &amp; partnerships</Link></li>
               <li><Link href="/sourcing">Sourcing Services</Link></li>
               <li><Link href="/editorial-policy">Editorial Standards</Link></li>
+              <li><Link href="/site-index">Site index</Link></li>
               <li><Link href="/quality-compliance">Quality &amp; Compliance</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <li><Link href="/terms">Terms of Use</Link></li>
