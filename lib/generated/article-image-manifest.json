@@ -13225,6 +13225,42 @@
         "outputHash": "sha256:bb6ccc4bedc02435f749db03ad595d05272b7bfdd581eb5e92fa6a8d24e09665"
       }
     },
+    "/images/articles/is-dyson-publicly-traded-stock/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 65028,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4724afe2bdcbd7e3793e890eb4fb1083d35f60ccce7babe6277e70286032a0b1",
+      "outputHash": "sha256:ee11d076c486935dacda46e060cca9190e1768975719738cabee7e12f9267e84",
+      "mobile": {
+        "src": "/images/articles/is-dyson-publicly-traded-stock/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22942,
+        "outputHash": "sha256:9eb9bde9a7ef6f0a7b48b07940a55cef99e6a8a371918be3d548a42b83ccc062"
+      }
+    },
+    "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40632,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d6bc600dfd1fd6e5820d8f88139e8ba2ded9f733849dd91c98923a3da61ff471",
+      "outputHash": "sha256:eeee4820191062245503883de968c566d7898d0027b5b350ba04de62bf452c16",
+      "mobile": {
+        "src": "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15864,
+        "outputHash": "sha256:00989e8a223a4e102073e77681bc9d70d50f1bab54fc665ae6d7d8c8a64bf3f8"
+      }
+    },
     "/images/articles/is-roborock-owned-by-xiaomi/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -42169,6 +42205,13 @@
         "/images/articles/is-dreame-owned-by-xiaomi/02-dreame-xiaomi-mova-relationship-map.webp"
       ]
     },
+    "is-dyson-publicly-traded-stock": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/is-dyson-publicly-traded-stock/01-cover.webp",
+      "body": [
+        "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership.webp"
+      ]
+    },
     "is-kingclean-mojie-a-good-product": {
       "budgetClass": "standard",
       "cover": "/images/insights/is-kingclean-mojie-a-good-product-cover.jpg",
@@ -49684,6 +49727,20 @@
           "status": "matched",
           "primary": "/images/articles/is-dreame-owned-by-xiaomi/02-dreame-xiaomi-mova-relationship-map.webp",
           "hash": "sha256:dbe33337ebc022b6c0ebd75d607987252ad82876d63e073658d57248b95a88e1"
+        }
+      }
+    },
+    "is-dyson-publicly-traded-stock": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/is-dyson-publicly-traded-stock/01-cover.webp",
+          "hash": "sha256:4724afe2bdcbd7e3793e890eb4fb1083d35f60ccce7babe6277e70286032a0b1"
+        },
+        "02-dyson-private-ownership.png": {
+          "status": "matched",
+          "primary": "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership.webp",
+          "hash": "sha256:d6bc600dfd1fd6e5820d8f88139e8ba2ded9f733849dd91c98923a3da61ff471"
         }
       }
     },
