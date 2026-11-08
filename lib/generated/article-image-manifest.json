@@ -9333,6 +9333,96 @@
         "outputHash": "sha256:91f2dd5d07df7b045b2757894834450f766e0945d51910dcde0309228a59371d"
       }
     },
+    "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 71592,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2830ff07303650977e34585a786f0c975bf0b8bf4be04153cc6ca3576d7e9b9a",
+      "outputHash": "sha256:56015b49b413f04c8acab12b5f57b28caf14fc8cc03d26ac484aaeb5e64842c9",
+      "mobile": {
+        "src": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29666,
+        "outputHash": "sha256:bb64b83aed55e455555b6576f127543c21317ea21705c60416f1ae5930ae5f45"
+      }
+    },
+    "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/02-husqvarna-footprint.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 84838,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:35764f9dab95fb872ec1086a79581aa48c8d7f971762968cb86a506e71f74bec",
+      "outputHash": "sha256:8eda42eff9393498cfd898dbe1aaf3d753de70f7630b4aba9511fd6a5b75c46d",
+      "mobile": {
+        "src": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/02-husqvarna-footprint-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 33124,
+        "outputHash": "sha256:41e9547566165f695becdc5499b674cba7f5d6ad4ce269675ce2c46b655b3683"
+      }
+    },
+    "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/03-three-lists.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69068,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ba2b89e611d50c77927540c81f294f6d1d5ccdc68eeb4ab190bcee1f6cb061d4",
+      "outputHash": "sha256:123070dc788913f100b08c7fd0c7098f2c0c6054c8f7b38192b18afefe3dbfbf",
+      "mobile": {
+        "src": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/03-three-lists-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27236,
+        "outputHash": "sha256:c00bca787caf59668d146cacfc25aac4b798e726eb57882e3282379fb8c99eda"
+      }
+    },
+    "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/04-fcc-certifications.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44352,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:88443125d634eb666c40f3200f1ed1774ea92f1f6c9104ad2353b87a88eddced",
+      "outputHash": "sha256:ffe9166e58b22a2ee48971ee878732911a4fedd7a5974f92cee110c7f697c510",
+      "mobile": {
+        "src": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/04-fcc-certifications-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19122,
+        "outputHash": "sha256:5515a9b6a7f0c26fb0e9500fa1aadcba3c8e63f5dc35c9f03389518d24d72ebd"
+      }
+    },
+    "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/05-precedents.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 74318,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3759170fe30c942871f8f9f58c8ab9e59fc9bdb867b885a843eb1dbd237acfcd",
+      "outputHash": "sha256:27f9b5fd24a2810e67f3a8e87b71d31f6bf42e9223f96084c609aaf31745e23d",
+      "mobile": {
+        "src": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/05-precedents-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29098,
+        "outputHash": "sha256:ad62d42f3850738991da610b6aef5ddba17b7bf3989eaaba3c2efb3959836b04"
+      }
+    },
     "/images/articles/flex-history-chervon-galli/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -41008,6 +41098,16 @@
       "cover": "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover.webp",
       "body": []
     },
+    "fcc-robot-ban-paths-chinese-robot-vacuums-mowers": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/01-cover.webp",
+      "body": [
+        "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/02-husqvarna-footprint.webp",
+        "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/03-three-lists.webp",
+        "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/04-fcc-certifications.webp",
+        "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/05-precedents.webp"
+      ]
+    },
     "fcc-robot-vacuum-lawn-mower-restrictions": {
       "budgetClass": "standard",
       "cover": "/images/blog/fcc-robot-restriction-cover.webp",
@@ -47898,6 +47998,35 @@
           "status": "matched",
           "primary": "/images/articles/fcc-foreign-uas-covered-list-december-2025/01-cover.webp",
           "hash": "sha256:6b12d792a0291a331596eb89d6744275d398010e58ee4dc0a12279591400b6e6"
+        }
+      }
+    },
+    "fcc-robot-ban-paths-chinese-robot-vacuums-mowers": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/01-cover.webp",
+          "hash": "sha256:2830ff07303650977e34585a786f0c975bf0b8bf4be04153cc6ca3576d7e9b9a"
+        },
+        "02-husqvarna-footprint.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/02-husqvarna-footprint.webp",
+          "hash": "sha256:35764f9dab95fb872ec1086a79581aa48c8d7f971762968cb86a506e71f74bec"
+        },
+        "03-three-lists.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/03-three-lists.webp",
+          "hash": "sha256:ba2b89e611d50c77927540c81f294f6d1d5ccdc68eeb4ab190bcee1f6cb061d4"
+        },
+        "04-fcc-certifications.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/04-fcc-certifications.webp",
+          "hash": "sha256:88443125d634eb666c40f3200f1ed1774ea92f1f6c9104ad2353b87a88eddced"
+        },
+        "05-precedents.png": {
+          "status": "matched",
+          "primary": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/05-precedents.webp",
+          "hash": "sha256:3759170fe30c942871f8f9f58c8ab9e59fc9bdb867b885a843eb1dbd237acfcd"
         }
       }
     },
