@@ -193,38 +193,6 @@ export default function HomePage() {
     <div className="home-b">
       <h1 className="home-b-sr-only">World Clean Biz: news and intelligence on the global cleaning industry</h1>
 
-      {watch.length ? (
-        <section className="home-b-watch" aria-labelledby="home-watch-title">
-          <div className="home-b-container">
-            <div className="home-b-watch-head">
-              <h2 id="home-watch-title" className="home-b-watch-title"><span className="home-b-watch-live" aria-hidden="true" />Industry watch</h2>
-              <Link className="home-b-watch-all" href="/topics">All topics</Link>
-            </div>
-            <div className="home-b-watch-grid">
-              {watch.map(({ topic, latest, next }) => (
-                <article key={topic.slug} className="home-b-watch-card">
-                  {topic.coverImage ? (
-                    <Link className="home-b-watch-image" href={topicHref(topic.slug)} tabIndex={-1} aria-hidden="true">
-                      <img {...responsiveImageProps(topic.coverImage, "card")} alt="" loading="eager" />
-                      <span className="home-b-watch-status">{topic.status.label}</span>
-                    </Link>
-                  ) : null}
-                  <div className="home-b-watch-body">
-                    {topic.coverImage ? null : <p className="home-b-watch-status home-b-watch-status--plain">{topic.status.label}</p>}
-                    <h3><Link href={topicHref(topic.slug)}>{topic.title}</Link></h3>
-                    <p className="home-b-watch-text">{topic.status.text}</p>
-                    <dl className="home-b-watch-dates">
-                      {latest ? (<div><dt>Latest</dt><dd><time dateTime={latest.date}>{topicDate(latest.date)}</time> · {latest.title}</dd></div>) : null}
-                      {next ? (<div><dt>Next</dt><dd><time dateTime={next.date}>{topicDate(next.date)}</time> · {next.title}</dd></div>) : null}
-                    </dl>
-                    <Link className="home-b-watch-more" href={topicHref(topic.slug)}>Follow the topic →</Link>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
 
       {expoUpcoming ? (
         <section className="home-b-expo" id="expo" aria-labelledby="home-expo-title">
@@ -245,6 +213,37 @@ export default function HomePage() {
             <Link className="home-b-expo-image" href="/wcb-expo" tabIndex={-1} aria-hidden="true">
               <img src={EXPO_2026.image} srcSet={`${EXPO_2026.image.replace(/\.webp$/, "-800.webp")} 800w, ${EXPO_2026.image} 1600w`} sizes="(max-width: 900px) calc(100vw - 32px), 50vw" alt="" width={1600} height={900} loading="eager" decoding="async" fetchPriority="high" />
             </Link>
+          </div>
+        </section>
+      ) : null}
+
+      {watch.length ? (
+        <section className="home-b-section home-b-watch" aria-labelledby="home-watch-title">
+          <div className="home-b-container">
+            <div className="home-b-head">
+              <h2 id="home-watch-title">Industry watch</h2>
+              <Link className="wcb-more" href="/topics">All topics</Link>
+            </div>
+            <div className="home-b-watch-grid">
+              {watch.map(({ topic, latest, next }) => (
+                <Link key={topic.slug} className="home-b-watch-card" href={topicHref(topic.slug)}>
+                  {topic.coverImage ? (
+                    <span className="home-b-watch-image">
+                      <img {...responsiveImageProps(topic.coverImage, "card")} alt="" />
+                    </span>
+                  ) : null}
+                  <span className="home-b-watch-body">
+                    <span className="home-b-watch-status">{topic.status.label}</span>
+                    <span className="home-b-watch-title">{topic.title}</span>
+                    {next ? (
+                      <span className="home-b-watch-date"><strong>Next</strong> {topicDate(next.date)} · {next.title}</span>
+                    ) : latest ? (
+                      <span className="home-b-watch-date"><strong>Latest</strong> {topicDate(latest.date)} · {latest.title}</span>
+                    ) : null}
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       ) : null}
