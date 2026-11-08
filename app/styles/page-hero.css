@@ -31,24 +31,21 @@
 }
 
 /* Filter rows stay on one line and scroll sideways when they run out of room, instead of leaving one item on a second line. */
-.news-page .news-filters,
-.company-directory-categories {
+.news-page .news-filters {
   flex-wrap: nowrap !important;
   overflow-x: auto;
   scrollbar-width: none;
 }
 
-.news-page .news-filters::-webkit-scrollbar,
-.company-directory-categories::-webkit-scrollbar {
+.news-page .news-filters::-webkit-scrollbar {
   display: none;
 }
 
-.news-page .news-filters > *,
-.company-directory-categories > * {
+.news-page .news-filters > * {
   flex: 0 0 auto;
   white-space: nowrap;
 }
 
 .news-page .news-category-filters {
-  gap: 4px 18px !important;
+  gap: 4px 14px !important;
 }
