@@ -966,18 +966,20 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-beatbot-xingmai-manufacturing": ["beatbot"],
     "who-owns-beko-appliances-beko-europe": ["beko"],
     "who-owns-bissell-family-sanitaire": ["bissell"],
-    "who-owns-black-and-decker-stanley-tools": ["black-decker"],
+    "who-owns-black-and-decker-stanley-tools": ["black-decker", "stanley-black-decker"],
     "who-owns-bosch-appliances-bsh-siemens-brands": ["bosch-home-appliances"],
     "who-owns-bosch-power-tools-robert-bosch": ["bosch-power-tools"],
     "who-owns-braun-appliances-delonghi-pg-license": ["braun-household"],
     "who-owns-breville-sage-regional-brand-rights": ["breville-sage"],
     "who-owns-chervon-ego-flex-skil": ["chervon"],
+    "who-owns-clarke-nilfisk-freudenberg": ["clarke"],
     "who-owns-craftsman-tools-stanley-black-decker": ["craftsman"],
     "who-owns-delonghi-appliance-group-brands": ["delonghi"],
     "who-owns-dewalt-stanley-black-decker": ["dewalt",  "black-decker",  "craftsman"],
     "who-owns-dremel-bosch-manufacturing": ["dremel",  "bosch-power-tools"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
     "who-owns-ecovacs-tineco-manufacturing": ["ecovacs",  "tineco"],
+    "who-owns-ego-power-plus-chervon": ["ego-power-plus"],
     "who-owns-electrolux-brands-manufacturing": ["electrolux",  "aeg"],
     "who-owns-eufy-anker-smart-home": ["eufy"],
     "who-owns-eureka-midea-electrolux-manufacturing": ["midea",  "eureka",  "electrolux"],
@@ -986,8 +988,10 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-fisher-paykel-haier-manufacturing": ["fisher-paykel"],
     "who-owns-flex-tools-chervon-lowes": ["flex"],
     "who-owns-frigidaire-electrolux-manufacturing": ["electrolux"],
+    "who-owns-gardena-husqvarna-group": ["gardena"],
     "who-owns-gausium": ["gausium"],
     "who-owns-ge-appliances-haier-manufacturing": ["ge-appliances"],
+    "who-owns-ghibli-riello-cleaning-machines": ["ghibli"],
     "who-owns-gorenje-appliances-hisense": ["gorenje"],
     "who-owns-greenworks-globe-stihl": ["greenworks",  "stihl"],
     "who-owns-groupe-seb-brands-supor": ["groupe-seb"],
@@ -1003,6 +1007,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-ipc-tennant": ["ipc"],
     "who-owns-irobot-roomba-picea-robotics": ["irobot"],
     "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
+    "who-owns-lavor-comet-group": ["lavor"],
     "who-owns-lawnmaster-cleva-manufacturing": ["lawnmaster"],
     "who-owns-lionsbot": ["lionsbot"],
     "who-owns-makita-company-manufacturing": ["makita"],
@@ -1014,8 +1019,11 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-minuteman-hako-powerboss": ["minuteman"],
     "who-owns-narwal-yunjing-investors-manufacturing": ["narwal"],
     "who-owns-nilfisk-freudenberg-manufacturing": ["nilfisk"],
+    "who-owns-nss-taski-solenis": ["nss"],
     "who-owns-panasonic-appliances-vacuum-manufacturing": ["panasonic"],
+    "who-owns-pentair-pool-brands": ["pentair"],
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris",  "fluidra"],
+    "who-owns-powerboss-minuteman-hako": ["powerboss"],
     "who-owns-pudu-robotics": ["pudu-robotics"],
     "who-owns-rowenta-groupe-seb-vacuums": ["rowenta"],
     "who-owns-ryobi-tti-kyocera": ["ryobi"],
@@ -1028,7 +1036,10 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-teka-appliances-midea": ["teka"],
     "who-owns-tennant-company-ipc-robotics": ["tennant"],
     "who-owns-tineco-ecovacs-group": ["tineco"],
+    "who-owns-tornado-floor-care-tacony": ["tornado-industries"],
+    "who-owns-toro-the-toro-company": ["toro"],
     "who-owns-toshiba-appliances-midea-lifestyle": ["toshiba-appliances"],
+    "who-owns-truvox-tacony": ["truvox"],
     "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck": ["ryobi",  "milwaukee",  "vax",  "oreck",  "dirt-devil"],
     "who-owns-wetrok-diethelm-keller": ["wetrok"],
     "who-owns-whirlpool-appliances-beko-europe": ["whirlpool"],
@@ -1075,8 +1086,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 204);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 342);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 215);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 354);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
