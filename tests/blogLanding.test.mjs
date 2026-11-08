@@ -42,7 +42,8 @@ test("navigation links practical guides and the deep analysis archive", () => {
   assert.match(headerSource, /id: "insights",\s*label: "Insights"/);
   assert.match(headerSource, /href: "\/guides", label: "Guides"/);
   assert.match(headerSource, /href: "\/blog\/archive", label: "Deep analysis"/);
-  assert.match(footerSource, /<Link href="\/blog\/archive">Deep Analysis<\/Link>/);
+  // The footer links the Insights home once; the archive is reached from Insights and the header menu.
+  assert.match(footerSource, /<Link href="\/blog">Insights<\/Link>/);
 });
 
 test("Blog grids use three, two, and one columns at responsive breakpoints", () => {
