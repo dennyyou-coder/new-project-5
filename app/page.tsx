@@ -224,22 +224,26 @@ export default function HomePage() {
               <h2 id="home-watch-title">Industry watch</h2>
               <Link className="wcb-more" href="/topics">All topics</Link>
             </div>
+            <p className="home-b-sub">Special topics on the stories reshaping the industry: timeline, key facts, questions and every related story in one place.</p>
             <div className="home-b-watch-grid">
               {watch.map(({ topic, latest, next }) => (
                 <Link key={topic.slug} className="home-b-watch-card" href={topicHref(topic.slug)}>
-                  {topic.coverImage ? (
-                    <span className="home-b-watch-image">
-                      <img {...responsiveImageProps(topic.coverImage, "card")} alt="" />
-                    </span>
-                  ) : null}
+                  <span className="home-b-watch-image">
+                    {topic.coverImage ? <img {...responsiveImageProps(topic.coverImage, "card")} alt="" /> : null}
+                    <span className="home-b-watch-badge">WCB Topic</span>
+                  </span>
                   <span className="home-b-watch-body">
                     <span className="home-b-watch-status">{topic.status.label}</span>
                     <span className="home-b-watch-title">{topic.title}</span>
-                    {next ? (
-                      <span className="home-b-watch-date"><strong>Next</strong> {topicDate(next.date)} · {next.title}</span>
-                    ) : latest ? (
-                      <span className="home-b-watch-date"><strong>Latest</strong> {topicDate(latest.date)} · {latest.title}</span>
-                    ) : null}
+                    <span className="home-b-watch-dek">{topic.dek}</span>
+                    <span className="home-b-watch-dates">
+                      {latest ? <span><strong>Latest</strong> {topicDate(latest.date)} · {latest.title}</span> : null}
+                      {next ? <span><strong>Next</strong> {topicDate(next.date)} · {next.title}</span> : null}
+                    </span>
+                    <span className="home-b-watch-foot">
+                      <span>{topic.timeline.length} milestones · {topic.news.length + topic.insights.length} stories · Updated {topicDate(topic.updated)}</span>
+                      <span className="home-b-watch-open">Open the topic →</span>
+                    </span>
                   </span>
                 </Link>
               ))}
