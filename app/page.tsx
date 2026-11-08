@@ -4,7 +4,6 @@ import type { CSSProperties } from "react";
 import "./styles/home.css";
 import "./styles/approved-home.css";
 import "./styles/home-b.css";
-import { HomeSearch, type HomeSearchEntry } from "@/components/HomeSearch";
 import { Icon } from "@/components/Icon";
 import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import { CompanyMark } from "@/components/ui/CompanyMark";
@@ -152,22 +151,6 @@ export default function HomePage() {
   const leadVisual = leadNews ? getNewsVisual(leadNews) : undefined;
   const weekNews = recent.filter((item) => item.slug !== leadNews?.slug).slice(0, 6);
 
-  const searchEntries: HomeSearchEntry[] = [
-    ...HUB_CATEGORIES.map((hub) => ({ label: hub.name, kind: "Category", href: `/categories/${hub.slug}`, terms: hub.name.toLowerCase() })),
-    ...brands.map((brand) => ({
-      label: brand.name,
-      kind: "Company",
-      href: `/brands/${brand.slug}`,
-      terms: [brand.name, ...brand.aliases].join(" ").toLowerCase()
-    })),
-    ...featuredProductModels.map((model) => ({
-      label: model.name,
-      kind: `Product · ${productCategoryLabel(model.category)}`,
-      href: `/products/${model.slug}`,
-      terms: `${model.name} ${model.brand} ${model.category}`.toLowerCase()
-    }))
-  ];
-
   const schemas = [
     {
       "@context": "https://schema.org",
@@ -192,22 +175,43 @@ export default function HomePage() {
     }
   ];
 
-  const intro = (
-    <section className={`home-b-intro${expoUpcoming ? "" : " home-b-intro--first"}`} aria-labelledby="home-title">
-      <div className="home-b-container home-b-intro-grid">
-        <div>
-          <h1 id="home-title">The global cleaning industry, in one place.</h1>
-          <p className="home-b-lead">
-            News, new products, companies, supply chains, markets and events across floor care, pool, lawn and commercial cleaning.
-          </p>
-        </div>
-        <HomeSearch entries={searchEntries} />
-      </div>
-    </section>
-  );
-
   return (
     <div className="home-b">
+      <h1 className="home-b-sr-only">World Clean Biz: news and intelligence on the global cleaning industry</h1>
+
+      {watch.length ? (
+        <section className="home-b-watch" aria-labelledby="home-watch-title">
+          <div className="home-b-container">
+            <div className="home-b-watch-head">
+              <h2 id="home-watch-title" className="home-b-watch-title"><span className="home-b-watch-live" aria-hidden="true" />Industry watch</h2>
+              <Link className="home-b-watch-all" href="/topics">All topics</Link>
+            </div>
+            <div className="home-b-watch-grid">
+              {watch.map(({ topic, latest, next }) => (
+                <article key={topic.slug} className="home-b-watch-card">
+                  {topic.coverImage ? (
+                    <Link className="home-b-watch-image" href={topicHref(topic.slug)} tabIndex={-1} aria-hidden="true">
+                      <img {...responsiveImageProps(topic.coverImage, "card")} alt="" loading="eager" />
+                      <span className="home-b-watch-status">{topic.status.label}</span>
+                    </Link>
+                  ) : null}
+                  <div className="home-b-watch-body">
+                    {topic.coverImage ? null : <p className="home-b-watch-status home-b-watch-status--plain">{topic.status.label}</p>}
+                    <h3><Link href={topicHref(topic.slug)}>{topic.title}</Link></h3>
+                    <p className="home-b-watch-text">{topic.status.text}</p>
+                    <dl className="home-b-watch-dates">
+                      {latest ? (<div><dt>Latest</dt><dd><time dateTime={latest.date}>{topicDate(latest.date)}</time> · {latest.title}</dd></div>) : null}
+                      {next ? (<div><dt>Next</dt><dd><time dateTime={next.date}>{topicDate(next.date)}</time> · {next.title}</dd></div>) : null}
+                    </dl>
+                    <Link className="home-b-watch-more" href={topicHref(topic.slug)}>Follow the topic →</Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {expoUpcoming ? (
         <section className="home-b-expo" id="expo" aria-labelledby="home-expo-title">
           <div className="home-b-container home-b-expo-grid">
@@ -227,33 +231,6 @@ export default function HomePage() {
             <Link className="home-b-expo-image" href="/wcb-expo" tabIndex={-1} aria-hidden="true">
               <img src={EXPO_2026.image} srcSet={`${EXPO_2026.image.replace(/\.webp$/, "-800.webp")} 800w, ${EXPO_2026.image} 1600w`} sizes="(max-width: 900px) calc(100vw - 32px), 50vw" alt="" width={1600} height={900} loading="eager" decoding="async" fetchPriority="high" />
             </Link>
-          </div>
-        </section>
-      ) : null}
-
-      {intro}
-
-      {watch.length ? (
-        <section className="home-b-watch" aria-labelledby="home-watch-title">
-          <div className="home-b-container">
-            <div className="home-b-head">
-              <h2 id="home-watch-title">Industry watch</h2>
-              <Link className="wcb-more" href="/topics">All topics</Link>
-            </div>
-            <div className="home-b-watch-grid">
-              {watch.map(({ topic, latest, next }) => (
-                <article key={topic.slug} className="home-b-watch-card">
-                  <p className="home-b-watch-status">{topic.status.label}</p>
-                  <h3><Link href={topicHref(topic.slug)}>{topic.title}</Link></h3>
-                  <p className="home-b-watch-text">{topic.status.text}</p>
-                  <dl className="home-b-watch-dates">
-                    {latest ? (<div><dt>Latest</dt><dd><time dateTime={latest.date}>{topicDate(latest.date)}</time> · {latest.title}</dd></div>) : null}
-                    {next ? (<div><dt>Next</dt><dd><time dateTime={next.date}>{topicDate(next.date)}</time> · {next.title}</dd></div>) : null}
-                  </dl>
-                  <Link className="wcb-more home-b-watch-more" href={topicHref(topic.slug)}>Follow the topic</Link>
-                </article>
-              ))}
-            </div>
           </div>
         </section>
       ) : null}
