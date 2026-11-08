@@ -65,6 +65,7 @@ export default function MarketsPage() {
           </nav>
           <h1>Markets</h1>
           <p>Results from the listed companies that make cleaning, pool, lawn and tool products, and what each report says.</p>
+          <p className="markets-ranking-link"><Link href="/rankings">See the quarterly revenue growth ranking →</Link></p>
         </div>
       </section>
 

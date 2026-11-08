@@ -1,3 +1,4 @@
+import type React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -39,7 +40,8 @@ export function BrandSections({
   parentMark,
   models,
   competitors,
-  ownershipAnalysisHref
+  ownershipAnalysisHref,
+  latest
 }: {
   profile: BrandProfile;
   brandMark: BrandMark;
@@ -47,6 +49,8 @@ export function BrandSections({
   models: BrandModelCard[];
   competitors: BrandCompetitorCard[];
   ownershipAnalysisHref?: string;
+  /** "Latest at …" card, shown right after the ownership answer. */
+  latest?: React.ReactNode;
 }) {
   const visuals = selectBrandContentVisuals(profile.contentVisuals);
   const operationsVisual = visuals.get("operations");
@@ -106,6 +110,8 @@ export function BrandSections({
           </p>
         </section>
       ) : null}
+
+      {latest}
 
       <section className={`bp-card bp-overview${profile.heroImage ? "" : " bp-overview--text"}`} id="overview" aria-label="Overview">
         <p>{overview}</p>
