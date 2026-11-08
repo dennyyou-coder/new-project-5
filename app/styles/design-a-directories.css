@@ -272,7 +272,8 @@
   background: #fff;
 }
 .structure-refresh.design-a .content-directory .content-directory-feed-image {
-  align-self: start;
+  /* Centred against the text column so a long excerpt doesn't leave the image stranded at the top. */
+  align-self: center;
   border: 1px solid #dce5ec;
   border-radius: 5px;
   background: #f3f7fa;

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ContactProjectInquiry } from "@/components/ContactProjectInquiry";
+import { Suspense } from "react";
+import { ContactProjectInquiry, ContactProjectInquiryFromUrl } from "@/components/ContactProjectInquiry";
 import "../styles/approved-platform.css";
 
 export const metadata: Metadata = {
@@ -23,19 +24,17 @@ export const metadata: Metadata = {
   },
 };
 
-type ContactSearchParams = { inquiry?: string | string[]; intent?: string | string[] };
-export default async function ContactPage({ searchParams }: { searchParams: Promise<ContactSearchParams> }) {
-  const query = await searchParams;
-  const requested = typeof query.inquiry === "string" ? query.inquiry : "";
-  const fallbackIntent = typeof query.intent === "string" ? query.intent : "";
-  const initialInquiry = requested || (fallbackIntent === "sourcing" ? "sourcing" : fallbackIntent === "expo" ? "expo" : "");
+// Static page: the requested inquiry type (?inquiry=) is read in the browser by ContactProjectInquiryFromUrl.
+export default function ContactPage() {
   return (
     <div className="approved-platform contact-page">
       <section className="contact-hero mist"><div className="container">
         <p className="eyebrow">Contact World Clean Biz</p><h1>Work With World Clean Biz</h1>
         <p className="hero-intro">Choose a cooperation area and tell us about your company, market and project.</p>
       </div></section>
-      <ContactProjectInquiry initialInquiry={initialInquiry} />
+      <Suspense fallback={<ContactProjectInquiry initialInquiry="" />}>
+        <ContactProjectInquiryFromUrl />
+      </Suspense>
       <section className="contact-preparation" aria-labelledby="contact-preparation-title">
         <div className="container contact-preparation-layout">
           <figure className="denny-card">
