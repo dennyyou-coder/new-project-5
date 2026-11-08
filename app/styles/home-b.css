@@ -944,27 +944,26 @@
 
 /* Industry watch: the running WCB topics, as compact cards under the hero. */
 .home-b .home-b-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.home-b .home-b-watch { padding-bottom: 16px; }
-.home-b .home-b-watch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.home-b .home-b-watch-card { display: grid; grid-template-rows: auto 1fr; overflow: hidden; border: 1px solid var(--hb-line); border-top: 3px solid #c8352b; border-radius: 14px; background: #fff; color: var(--hb-text); text-decoration: none; min-width: 0; transition: box-shadow 0.2s ease, transform 0.2s ease; }
-.home-b .home-b-watch-card:hover { box-shadow: 0 14px 30px rgba(14, 21, 38, 0.1); transform: translateY(-2px); }
+.home-b .home-b-watch { padding: 28px 0 0; }
+.home-b .home-b-watch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.home-b .home-b-watch-card { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); overflow: hidden; border: 1px solid var(--hb-line); border-radius: 14px; background: #fff; color: var(--hb-text); text-decoration: none; min-width: 0; transition: box-shadow 0.2s ease; }
+.home-b .home-b-watch-card:hover { box-shadow: 0 12px 26px rgba(14, 21, 38, 0.09); }
 .home-b .home-b-watch-card:hover .home-b-watch-title { color: var(--hb-link); }
-.home-b .home-b-watch-image { position: relative; display: block; aspect-ratio: 16 / 7; overflow: hidden; background: #eef1f6; }
+.home-b .home-b-watch-image { display: block; min-height: 170px; background: #eef1f6; }
 .home-b .home-b-watch-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.home-b .home-b-watch-badge { position: absolute; top: 14px; left: 14px; padding: 6px 11px; border-radius: 6px; background: #0e1526; color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
-.home-b .home-b-watch-body { display: flex; flex-direction: column; gap: 8px; padding: 18px 22px 20px; min-width: 0; }
-.home-b .home-b-watch-status { font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #b42d24; }
-.home-b .home-b-watch-title { font-size: clamp(21px, 2.1vw, 25px); font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; color: var(--hb-ink); }
-.home-b .home-b-watch-dek { font-size: 15px; line-height: 1.5; color: var(--hb-muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.home-b .home-b-watch-dates { display: grid; gap: 4px; padding: 10px 0; border-top: 1px solid var(--hb-line); border-bottom: 1px solid var(--hb-line); font-size: 14px; line-height: 1.4; color: var(--hb-text); }
-.home-b .home-b-watch-dates strong { display: inline-block; min-width: 50px; color: #b42d24; }
-.home-b .home-b-watch-foot { margin-top: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: center; font-size: 13px; color: var(--hb-subtle); }
-.home-b .home-b-watch-open { font-size: 15px; font-weight: 700; color: var(--hb-link); }
-@media (max-width: 900px) {
-  .home-b .home-b-watch-grid { grid-template-columns: 1fr; gap: 16px; }
+.home-b .home-b-watch-body { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px; min-width: 0; }
+.home-b .home-b-watch-badge { align-self: flex-start; padding: 4px 9px; border-radius: 5px; background: #c8352b; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.home-b .home-b-watch-title { font-size: 20px; font-weight: 700; line-height: 1.22; color: var(--hb-ink); }
+.home-b .home-b-watch-dek { font-size: 15px; line-height: 1.45; color: var(--hb-muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.home-b .home-b-watch-open { margin-top: auto; font-size: 14px; font-weight: 700; color: var(--hb-link); }
+@media (max-width: 960px) {
+  .home-b .home-b-watch-grid { grid-template-columns: 1fr; gap: 14px; }
 }
 @media (max-width: 560px) {
-  .home-b .home-b-watch-image { aspect-ratio: 16 / 8; }
-  .home-b .home-b-watch-body { padding: 14px 16px 16px; }
-  .home-b .home-b-watch-dek { font-size: 14px; }
+  .home-b .home-b-watch { padding-top: 20px; }
+  .home-b .home-b-watch-card { grid-template-columns: 120px minmax(0, 1fr); }
+  .home-b .home-b-watch-image { min-height: 0; }
+  .home-b .home-b-watch-body { padding: 12px 14px; gap: 6px; }
+  .home-b .home-b-watch-title { font-size: 16px; }
+  .home-b .home-b-watch-dek { font-size: 13px; -webkit-line-clamp: 2; }
 }

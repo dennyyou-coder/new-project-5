@@ -21,7 +21,7 @@ import { getNews, getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel 
 import { EXPO_2026, isExpoUpcoming } from "@/lib/hubPresentation";
 import { homeVideos } from "@/lib/wcbVideos";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
-import { getTopics, topicDate, topicHref } from "@/lib/topics";
+import { getTopics, topicHref } from "@/lib/topics";
 import { compareKeyBrands, isKeyBrand } from "@/lib/keyBrands";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
@@ -57,13 +57,8 @@ export default function HomePage() {
   const marks = buildBrandMarkIndex(brands);
   const expoUpcoming = isExpoUpcoming();
 
-  // The industry's running stories: each WCB topic with its status, latest development and next date.
-  const today = new Date().toISOString().slice(0, 10);
-  const watch = getTopics().map((topic) => ({
-    topic,
-    latest: [...topic.timeline].reverse().find((event) => event.date <= today),
-    next: topic.timeline.find((event) => event.date > today)
-  }));
+  // The industry's running stories: each WCB topic as an image card under the hero.
+  const watch = getTopics().map((topic) => ({ topic }));
 
   // One model from each product category: a key brand's newest 2026 model when there is one, else the newest.
   const thisYear = (model: (typeof featuredProductModels)[number]) => String(model.announced ?? "").startsWith("2026");
@@ -220,30 +215,18 @@ export default function HomePage() {
       {watch.length ? (
         <section className="home-b-section home-b-watch" aria-labelledby="home-watch-title">
           <div className="home-b-container">
-            <div className="home-b-head">
-              <h2 id="home-watch-title">Industry watch</h2>
-              <Link className="wcb-more" href="/topics">All topics</Link>
-            </div>
-            <p className="home-b-sub">Special topics on the stories reshaping the industry: timeline, key facts, questions and every related story in one place.</p>
+            <h2 id="home-watch-title" className="home-b-sr-only">Industry watch: WCB topics</h2>
             <div className="home-b-watch-grid">
-              {watch.map(({ topic, latest, next }) => (
+              {watch.map(({ topic }) => (
                 <Link key={topic.slug} className="home-b-watch-card" href={topicHref(topic.slug)}>
                   <span className="home-b-watch-image">
                     {topic.coverImage ? <img {...responsiveImageProps(topic.coverImage, "card")} alt="" /> : null}
-                    <span className="home-b-watch-badge">WCB Topic</span>
                   </span>
                   <span className="home-b-watch-body">
-                    <span className="home-b-watch-status">{topic.status.label}</span>
+                    <span className="home-b-watch-badge">WCB Topic</span>
                     <span className="home-b-watch-title">{topic.title}</span>
                     <span className="home-b-watch-dek">{topic.dek}</span>
-                    <span className="home-b-watch-dates">
-                      {latest ? <span><strong>Latest</strong> {topicDate(latest.date)} · {latest.title}</span> : null}
-                      {next ? <span><strong>Next</strong> {topicDate(next.date)} · {next.title}</span> : null}
-                    </span>
-                    <span className="home-b-watch-foot">
-                      <span>{topic.timeline.length} milestones · {topic.news.length + topic.insights.length} stories · Updated {topicDate(topic.updated)}</span>
-                      <span className="home-b-watch-open">Open the topic →</span>
-                    </span>
+                    <span className="home-b-watch-open">Follow the topic →</span>
                   </span>
                 </Link>
               ))}
