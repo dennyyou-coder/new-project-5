@@ -58,7 +58,7 @@ export type BrandProfile = {
   founded: string;
   heroImage?: string;
   /** Photographs of the company in the real world (stands, stores, products in use), each credited. */
-  photos?: { src: string; width: number; caption: string; credit: string; creditUrl?: string }[];
+  photos?: { src: string; width: number; caption: string; credit: string; creditUrl?: string; position?: string }[];
   heroImageAlt?: string;
   heroImageCaption?: string;
   heroSourceUrl?: string;
