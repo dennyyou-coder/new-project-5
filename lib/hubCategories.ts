@@ -9,6 +9,7 @@ export const HUB_CATEGORY_SLUGS = [
   "robot-vacuums",
   "vacuum-cleaners",
   "floor-washers",
+  "carpet-spot-cleaners",
   "pool-robots",
   "robotic-mowers",
   "commercial-cleaning",
@@ -105,6 +106,28 @@ export const HUB_CATEGORIES: HubCategory[] = [
       newsCategories: ["Floor Washers"],
       newsTitleTerms: ["floor washer", "wet-dry floor cleaner", "wet dry floor cleaner"],
       productCategories: ["Floor washers"]
+    }
+  },
+  {
+    slug: "carpet-spot-cleaners",
+    name: "Carpet & spot cleaners",
+    group: "core-cleaning",
+    intro: "Portable spot cleaners, carpet cleaners and commercial carpet extractors: comparisons, buying guides and manufacturing.",
+    color: "#b4532a",
+    searchPicks: ["bissell-little-green-hydrosteam-vs-shark-stainstriker-hairpro", "hoover-cleanslate-vs-shark-stainstriker"],
+    rules: {
+      articleTags: [
+        "spot cleaner",
+        "spot cleaners",
+        "portable carpet cleaner",
+        "carpet cleaner",
+        "carpet extractor",
+        "commercial carpet extractor",
+        "carpet cleaning equipment",
+        "upholstery cleaner"
+      ],
+      newsTitleTerms: ["spot cleaner", "carpet cleaner", "carpet extractor", "upholstery cleaner"],
+      brandSlugs: ["bissell", "hoover", "shark", "karcher"]
     }
   },
   {
