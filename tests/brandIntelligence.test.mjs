@@ -980,6 +980,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-ge-appliances-haier-manufacturing": ["ge-appliances"],
     "who-owns-greenworks-globe-stihl": ["greenworks",  "stihl"],
     "who-owns-haier-appliances-brand-portfolio": ["haier-home-appliances"],
+    "who-owns-hako-possehl-group": ["hako"],
     "who-owns-hayward-pool-products": ["hayward"],
     "who-owns-hilti-family-trust-manufacturing": ["hilti"],
     "who-owns-hoover-tti-haier-candy": ["hoover",  "dirt-devil"],
@@ -999,8 +1000,11 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-sharkninja-js-global-joyoung": ["shark"],
     "who-owns-skil-tools-chervon": ["skil"],
     "who-owns-stihl-family-manufacturing": ["stihl"],
+    "who-owns-taski-solenis-diversey": ["taski"],
+    "who-owns-tennant-company-ipc-robotics": ["tennant"],
     "who-owns-tineco-ecovacs-group": ["tineco"],
     "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck": ["ryobi",  "milwaukee",  "vax",  "oreck",  "dirt-devil"],
+    "who-owns-wetrok-diethelm-keller": ["wetrok"],
     "who-owns-whirlpool-appliances-beko-europe": ["whirlpool"],
     "who-owns-worx-positec-landroid-manufacturing": ["worx"],
     "who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era": ["vax",  "oreck",  "dirt-devil"],
@@ -1045,8 +1049,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 174);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 311);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 178);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 315);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -1151,10 +1155,12 @@ test("commercial-cleaning batch twenty publishes Factory Cat, NSS and Tornado wi
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1237,10 +1243,12 @@ test("commercial-cleaning batch nineteen publishes Fiorentini, Ghibli and Lindha
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
   }
@@ -1312,10 +1320,12 @@ test("commercial-cleaning batch eighteen publishes Clarke, Lavor and RCM without
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1376,10 +1386,12 @@ test("commercial-cleaning batch seventeen publishes Minuteman, Oertzen and Power
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1439,10 +1451,12 @@ test("commercial-cleaning batch sixteen publishes Columbus, Truvox and Wetrok wi
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1501,10 +1515,12 @@ test("commercial-cleaning batch fifteen publishes Cleanfix, Comac and Fimap with
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1552,10 +1568,12 @@ test("commercial-cleaning batch fourteen publishes PUDU Robotics, LionsBot and D
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1664,7 +1682,7 @@ test("commercial-cleaning batch twelve publishes Tennant, Hako and TASKI without
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    assert.deepEqual(taggedArticles.filter((article) => article.guideType !== "ownership"), [], `${slug} must not create article relationships beyond its ownership guide`);
     const memberships = categories
       .filter(({ profiles }) => profiles.some((profile) => profile.slug === slug))
       .map(({ category }) => category.slug);
@@ -1769,7 +1787,7 @@ test("outdoor-equipment batch ten profiles publish with verified brand and opera
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    assert.deepEqual(taggedArticles.filter((article) => article.guideType !== "ownership"), [], `${slug} must not create article relationships beyond its ownership guide`);
     assert.deepEqual(membershipsFor(slug), ["lawn-garden-equipment"]);
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "lawn-garden-equipment");
   }
@@ -1826,7 +1844,7 @@ test("home-appliance batch nine profiles publish with verified brand and operati
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    assert.deepEqual(taggedArticles.filter((article) => article.guideType !== "ownership"), [], `${slug} must not create article relationships beyond its ownership guide`);
     assert.deepEqual(
       membershipsFor(slug),
       slug === "russell-hobbs"

@@ -25103,6 +25103,42 @@
         "outputHash": "sha256:de4fede21e9693336d75454243e5c43f27f86222e727e4347aebebc96750ec36"
       }
     },
+    "/images/articles/who-owns-hako-possehl-group/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 51372,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3fe0adcf79608139671bbead293cfe7ab24aaceee1dbbd779053cb887220f1c8",
+      "outputHash": "sha256:b07bda5bb6338a9790b95e2b31b6045b423a02c890d4ce7dcb56635b92e86d82",
+      "mobile": {
+        "src": "/images/articles/who-owns-hako-possehl-group/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21980,
+        "outputHash": "sha256:cef3c51e85bc649efa981a5521f3b47b353e890a7a78aa15ef3906de39b55462"
+      }
+    },
+    "/images/articles/who-owns-hako-possehl-group/02-hako-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 37146,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5d89bd5bbdaea65f832b766c4092a42294ad5384cf44d8d53aae450bea4aed05",
+      "outputHash": "sha256:8db5f70f9c26bf51285f8d83b6daa02420c10305734dfb103d654dd8b9919f55",
+      "mobile": {
+        "src": "/images/articles/who-owns-hako-possehl-group/02-hako-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13942,
+        "outputHash": "sha256:79c18ac5114398fc4bdbd5fd5b362edfbfc568cada6c1a2e1b741acf5aa1c60d"
+      }
+    },
     "/images/articles/who-owns-hayward-pool-products/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -26003,6 +26039,42 @@
         "outputHash": "sha256:396a6be0f37327c700c7f99e66a388fd5419b4e626b4b86457a38ec6722f78db"
       }
     },
+    "/images/articles/who-owns-taski-solenis-diversey/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35482,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9e208ec6588bed8c78018787fda3e678c13baa23a32943802dcae16b808ee011",
+      "outputHash": "sha256:3d9a14bf7747d6677555cb8336e3b05b5f4626adcec7479a2592c0b09f201d37",
+      "mobile": {
+        "src": "/images/articles/who-owns-taski-solenis-diversey/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15888,
+        "outputHash": "sha256:6f59cc5bceb4e274553e4c06f4c266df145b5fe95deec250e7d285b30c089b29"
+      }
+    },
+    "/images/articles/who-owns-taski-solenis-diversey/02-taski-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33174,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:151aea4401898ad835c348ad8c81f9a8daea974ce04ee7baffbb265b0ffae137",
+      "outputHash": "sha256:7b25ca9cf20e691f55ac6974b91f991716826ab94864324dda24ffbd37318f0a",
+      "mobile": {
+        "src": "/images/articles/who-owns-taski-solenis-diversey/02-taski-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12338,
+        "outputHash": "sha256:e97203b9d125ce9353e566c26999df455f49c0a4a6768eda5aeac33b63d48c42"
+      }
+    },
     "/images/articles/who-owns-teka-appliances-midea/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -26055,6 +26127,42 @@
         "height": 450,
         "bytes": 25734,
         "outputHash": "sha256:0d96eba63ce3fa26deeaa09555d457dad7d94764f8acfdcad00f88c18fdc0586"
+      }
+    },
+    "/images/articles/who-owns-tennant-company-ipc-robotics/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33276,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8fbe064ef09500081689da5c583046648b4683f8d9c9e5410bc34d884dfa7b3d",
+      "outputHash": "sha256:a55e8b74cff0ee0d88f8d5dd655a01367a1e547a35ae9376b9da1ea6e2ddc093",
+      "mobile": {
+        "src": "/images/articles/who-owns-tennant-company-ipc-robotics/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15394,
+        "outputHash": "sha256:0b9e883f8c258fcd6b94e387369fa8a3adeefdf84168fe017aa73f952c48f5ae"
+      }
+    },
+    "/images/articles/who-owns-tennant-company-ipc-robotics/02-tennant-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35934,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:083c1fa463bf3a8332732e529657bd58feb47e5486135366433f46d9f853e305",
+      "outputHash": "sha256:1233811a3c9171bdfb2eebb8949335e3ad5516a718d6a3f903e8ce5d75fc8716",
+      "mobile": {
+        "src": "/images/articles/who-owns-tennant-company-ipc-robotics/02-tennant-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13844,
+        "outputHash": "sha256:efee56ab39cde53eeddbd110f8a8a981c083c8c4b074d22398fdb1dc9af90cf0"
       }
     },
     "/images/articles/who-owns-tineco-ecovacs-group/01-cover.webp": {
@@ -26181,6 +26289,42 @@
         "height": 450,
         "bytes": 50164,
         "outputHash": "sha256:acb335e717737be418ad28bd70ae04cec8759396a7fc81e9662d048f3c82b1b9"
+      }
+    },
+    "/images/articles/who-owns-wetrok-diethelm-keller/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 156394,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3fc14ef78c305fe626d7da193b99ebc2fa25901fb3420747db3b12eac9a8ef72",
+      "outputHash": "sha256:75d50391da9643afa78edf41c1e26df6146df0a17d41def0afdda8621fba59ea",
+      "mobile": {
+        "src": "/images/articles/who-owns-wetrok-diethelm-keller/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 50156,
+        "outputHash": "sha256:c4e9db7ea8b8a9a4f0cc1373ff4ce0d91d5b9b8087db71f8196c97e200e9f250"
+      }
+    },
+    "/images/articles/who-owns-wetrok-diethelm-keller/02-wetrok-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36626,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:25c2af8cace7c3ea3f41361c5f59769c6c1be2d88ef7627bf1da29f5f308f9ee",
+      "outputHash": "sha256:b8c177dd2b4dec6fc766d89083da45f482d19b1ba62c84883639bde2a3d7d260",
+      "mobile": {
+        "src": "/images/articles/who-owns-wetrok-diethelm-keller/02-wetrok-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13896,
+        "outputHash": "sha256:1c93d5e7b5a30f7f5120a11bdcb386b92301d1997335c9028711da6a8bcf2aa3"
       }
     },
     "/images/articles/who-owns-whirlpool-appliances-beko-europe/01-cover.webp": {
@@ -44435,6 +44579,13 @@
         "/images/blog/haier-regional-ownership-verification-map.svg"
       ]
     },
+    "who-owns-hako-possehl-group": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-hako-possehl-group/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-hako-possehl-group/02-hako-ownership-structure.webp"
+      ]
+    },
     "who-owns-hamilton-beach-brands-sourcing": {
       "budgetClass": "standard",
       "cover": "/images/blog/hamilton-beach-brands-sourcing-cover.webp",
@@ -44677,12 +44828,26 @@
         "/images/articles/who-owns-supor-groupe-seb-manufacturing/03-supor-product-supply-verification-map.webp"
       ]
     },
+    "who-owns-taski-solenis-diversey": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-taski-solenis-diversey/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-taski-solenis-diversey/02-taski-ownership-structure.webp"
+      ]
+    },
     "who-owns-teka-appliances-midea": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-teka-appliances-midea/01-cover.webp",
       "body": [
         "/images/articles/who-owns-teka-appliances-midea/02-teka-midea-ownership-map.webp",
         "/images/articles/who-owns-teka-appliances-midea/03-teka-product-verification-map.webp"
+      ]
+    },
+    "who-owns-tennant-company-ipc-robotics": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-tennant-company-ipc-robotics/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-tennant-company-ipc-robotics/02-tennant-ownership-structure.webp"
       ]
     },
     "who-owns-tineco-ecovacs-group": {
@@ -44721,6 +44886,13 @@
       "cover": "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/01-cover.webp",
       "body": [
         "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/02-tti-owned-licensed-regional-brands-map.webp"
+      ]
+    },
+    "who-owns-wetrok-diethelm-keller": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-wetrok-diethelm-keller/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-wetrok-diethelm-keller/02-wetrok-ownership-structure.webp"
       ]
     },
     "who-owns-whirlpool-appliances-beko-europe": {
@@ -53470,6 +53642,20 @@
         }
       }
     },
+    "who-owns-hako-possehl-group": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-hako-possehl-group/01-cover.webp",
+          "hash": "sha256:3fe0adcf79608139671bbead293cfe7ab24aaceee1dbbd779053cb887220f1c8"
+        },
+        "02-hako-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-hako-possehl-group/02-hako-ownership-structure.webp",
+          "hash": "sha256:5d89bd5bbdaea65f832b766c4092a42294ad5384cf44d8d53aae450bea4aed05"
+        }
+      }
+    },
     "who-owns-hayward-pool-products": {
       "files": {
         "01-cover.png": {
@@ -53856,6 +54042,20 @@
         }
       }
     },
+    "who-owns-taski-solenis-diversey": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-taski-solenis-diversey/01-cover.webp",
+          "hash": "sha256:9e208ec6588bed8c78018787fda3e678c13baa23a32943802dcae16b808ee011"
+        },
+        "02-taski-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-taski-solenis-diversey/02-taski-ownership-structure.webp",
+          "hash": "sha256:151aea4401898ad835c348ad8c81f9a8daea974ce04ee7baffbb265b0ffae137"
+        }
+      }
+    },
     "who-owns-teka-appliances-midea": {
       "files": {
         "01-cover.png": {
@@ -53872,6 +54072,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-teka-appliances-midea/03-teka-product-verification-map.webp",
           "hash": "sha256:0195e63a6c2e43b076fd4d35bb62596af3703f1a57b019fc4fb6db7f22c0722d"
+        }
+      }
+    },
+    "who-owns-tennant-company-ipc-robotics": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-tennant-company-ipc-robotics/01-cover.webp",
+          "hash": "sha256:8fbe064ef09500081689da5c583046648b4683f8d9c9e5410bc34d884dfa7b3d"
+        },
+        "02-tennant-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-tennant-company-ipc-robotics/02-tennant-ownership-structure.webp",
+          "hash": "sha256:083c1fa463bf3a8332732e529657bd58feb47e5486135366433f46d9f853e305"
         }
       }
     },
@@ -53941,6 +54155,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/02-tti-owned-licensed-regional-brands-map.webp",
           "hash": "sha256:394f00e6f9fc8f4424466878e6415c27a0ab8dca61a3f39928604abb935307cb"
+        }
+      }
+    },
+    "who-owns-wetrok-diethelm-keller": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-wetrok-diethelm-keller/01-cover.webp",
+          "hash": "sha256:3fc14ef78c305fe626d7da193b99ebc2fa25901fb3420747db3b12eac9a8ef72"
+        },
+        "02-wetrok-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-wetrok-diethelm-keller/02-wetrok-ownership-structure.webp",
+          "hash": "sha256:25c2af8cace7c3ea3f41361c5f59769c6c1be2d88ef7627bf1da29f5f308f9ee"
         }
       }
     },
