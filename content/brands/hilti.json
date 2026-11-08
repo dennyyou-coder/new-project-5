@@ -2,14 +2,33 @@
   "status": "published",
   "slug": "hilti",
   "name": "Hilti",
+  "metaTitle": "Who Owns Hilti? Martin Hilti Family Trust, Liechtenstein",
   "aliases": ["Hilti Group", "Hilti Tools"],
   "legalName": "Hilti Aktiengesellschaft",
   "legalEntityNote": "Hilti is a privately held group. Hilti, Inc. is the named U.S. sales and origin-information contact in reviewed terms, but it is not a statement that the U.S. entity manufactures or warrants every global Hilti product.",
   "officialWebsite": "https://www.hilti.com/",
   "headline": "Hilti family-trust ownership, direct model and construction workflow strategy",
   "description": "A source-backed profile of Hilti's Martin Hilti Family Trust ownership, construction-tool and services offer, direct customer model and regional buyer checks.",
-  "metaDescription": "Hilti profile: Martin Hilti Family Trust ownership, construction tools, direct channels, service, warranty and buyer checks.",
+  "metaDescription": "Hilti is privately owned by the Martin Hilti Family Trust and based in Schaan, Liechtenstein. It is not listed. Owner, CEO, tools and channels.",
   "quickAnswer": "Hilti, based in Schaan, Liechtenstein, is privately owned by the Martin Hilti Family Trust. It is not publicly listed.",
+  "faq": [
+    {
+      "question": "Who owns Hilti?",
+      "answer": "Hilti is privately owned by the Martin Hilti Family Trust."
+    },
+    {
+      "question": "What country is Hilti from?",
+      "answer": "Liechtenstein. Hilti was founded in 1941 and is headquartered in Schaan."
+    },
+    {
+      "question": "Is Hilti publicly traded?",
+      "answer": "No. Hilti is not listed on a stock exchange."
+    },
+    {
+      "question": "Who is Hilti's CEO?",
+      "answer": "Jahangir Doongaji is chief executive officer of the Hilti Group."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Hilti. Group ownership, direct sales and country-specific warranty terms do not identify the factory or origin for every Hilti SKU.",
   "headquarters": "Schaan, Liechtenstein",
   "founded": "1941",
@@ -70,5 +89,5 @@
   ],
   "publishedAt": "2026-08-01T12:20:00+08:00",
   "lastVerified": "2026-08-05",
-  "lastModified": "2026-11-06T00:30:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

@@ -2,14 +2,29 @@
   "status": "published",
   "slug": "vax",
   "name": "Vax",
+  "metaTitle": "Who Owns Vax? TTI Ownership of the UK Floorcare Brand",
   "aliases": ["VAX", "Vax UK"],
   "legalName": "Vax Limited",
   "legalEntityNote": "Vax is a TTI-owned floorcare brand centered on the United Kingdom. Vax Limited, Techtronic Cordless GP, group factories, logistics providers, retailers and service partners can hold distinct roles.",
   "officialWebsite": "https://www.vax.co.uk/",
   "headline": "Vax ownership, ONEPWR floorcare portfolio and UK channel strategy",
   "description": "A source-backed profile of Vax's TTI ownership, UK floorcare range, ONEPWR platform, manufacturing scope and direct-to-consumer route to market.",
-  "metaDescription": "Vax profile: TTI ownership, ONEPWR vacuums, carpet washers, floor cleaners, manufacturing, UK channels and buyer checks.",
+  "metaDescription": "Vax is owned by Techtronic Industries (TTI) of Hong Kong, which bought the UK floorcare brand in 1999. Products, base in Droitwich and channels.",
   "quickAnswer": "Vax is owned by Techtronic Industries (TTI) of Hong Kong, which bought the brand and its floorcare business in 1999.",
+  "faq": [
+    {
+      "question": "Who owns Vax?",
+      "answer": "Techtronic Industries (TTI) of Hong Kong owns Vax. It bought the brand and its floorcare business in 1999."
+    },
+    {
+      "question": "Is Vax a British company?",
+      "answer": "Vax is a UK brand dating to 1977 and based in Droitwich, Worcestershire, but its parent is Hong Kong-listed TTI."
+    },
+    {
+      "question": "Who founded Vax?",
+      "answer": "Alan Brazier founded Vax."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Vax or Techtronic Industries. TTI ownership does not identify the factory or warranty provider for every Vax product.",
   "headquarters": "Droitwich, Worcestershire, United Kingdom",
   "founded": "1977 brand history; acquired by TTI in 1999",
@@ -156,5 +171,5 @@
   ],
   "publishedAt": "2026-07-31T21:45:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T21:45:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

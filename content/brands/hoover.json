@@ -2,14 +2,29 @@
   "status": "published",
   "slug": "hoover",
   "name": "Hoover",
+  "metaTitle": "Who Owns Hoover? TTI in North America, Haier (Candy) in Europe",
   "aliases": ["Hoover US", "Hoover Europe", "TTI Floor Care North America", "Candy Hoover"],
   "legalName": "Royal Appliance Mfg. Co. d/b/a TTI Floor Care North America",
   "legalEntityNote": "The named legal entity applies to the U.S. route. Hoover in Europe operates through Haier Europe's Candy-Hoover structure, so there is no single universal Hoover contracting entity.",
   "officialWebsite": "https://hoover.com/",
   "headline": "Hoover ownership, regional brand split, floorcare portfolio and channel responsibility",
   "description": "A source-backed profile explaining Hoover's TTI North America and Haier Europe ownership split, current floorcare categories, channels and buyer checks.",
-  "metaDescription": "Hoover brand profile: TTI North America and Haier Europe ownership, vacuums, carpet cleaners, channels, service and manufacturing boundaries.",
+  "metaDescription": "Hoover has two owners: Techtronic Industries (TTI) in North America and Haier, through Candy, in Europe. History, products and who makes them.",
   "quickAnswer": "Hoover has two owners: Techtronic Industries (TTI) in North America, and Haier in Europe through Candy.",
+  "faq": [
+    {
+      "question": "Who owns Hoover?",
+      "answer": "Hoover has two owners. Techtronic Industries (TTI) owns it in North America through TTI Floor Care North America; in Europe it belongs to Haier through Candy."
+    },
+    {
+      "question": "Is Hoover owned by Haier?",
+      "answer": "Only in Europe, where Hoover is run through the Candy-Hoover business inside Haier Europe. In North America it belongs to TTI."
+    },
+    {
+      "question": "Is Hoover an American company?",
+      "answer": "Hoover began in the United States in 1908. Today its North American business is part of Hong Kong-listed TTI, based in Charlotte, North Carolina."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Hoover, TTI, Candy, Haier or Haier Europe. Hoover ownership, products, seller entities and warranties differ by region and must be verified in the target market.",
   "headquarters": "Charlotte, North Carolina, United States (TTI Floor Care North America); European Hoover operations sit within Haier Europe.",
   "founded": "1908 brand and company origin, following Murray Spangler's 1907 suction-sweeper invention.",
@@ -186,5 +201,5 @@
   ],
   "publishedAt": "2026-07-30T23:35:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T23:35:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

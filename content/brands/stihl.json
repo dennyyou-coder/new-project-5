@@ -2,13 +2,15 @@
   "status":"published",
   "slug":"stihl",
   "name":"STIHL",
+  "metaTitle":"Who Owns STIHL? German Family-Owned Group, Not Listed",
   "aliases":["Stihl","STIHL Group","Andreas Stihl"],
   "legalEntityNote":"STIHL is a family-owned group with several legal entities, including the founding company Andreas Stihl AG & Co. KG and the holding company Stihl Holding AG & Co. KG. Product, importer, dealer and factory responsibility varies by market and SKU.",
   "officialWebsite":"https://corporate.stihl.com/",
   "headline":"STIHL ownership, outdoor cleaning equipment and specialist-dealer network",
   "description":"A source-backed profile of STIHL's family ownership, outdoor-power and cleaning-equipment portfolio, manufacturing network and authorized dealer model.",
-  "metaDescription":"STIHL profile: family ownership, wet-dry vacuums, outdoor power equipment, global manufacturing, dealers and buyer checks.",
+  "metaDescription":"STIHL is a family-owned, unlisted German group founded in 1926 in Waiblingen. Stihl Holding AG & Co. KG is its holding company. Products and dealers.",
   "quickAnswer":"STIHL is a family-owned group in Germany and is not listed. Stihl Holding AG & Co. KG is its holding company.",
+  "faq":[{"question": "Who owns STIHL?", "answer": "STIHL is family-owned and not listed. Stihl Holding AG & Co. KG is the group holding company."}, {"question": "Is STIHL a German company?", "answer": "Yes. STIHL was founded in 1926 and is headquartered in Waiblingen, Germany."}, {"question": "Is STIHL publicly traded?", "answer": "No. STIHL is a non-listed family group."}],
   "disclaimer":"World Clean Biz is an independent industry publication and is not affiliated with STIHL. Group figures and network disclosures must not be treated as a factory or warranty statement for every SKU.",
   "headquarters":"Waiblingen, Germany",
   "founded":"1926",
@@ -108,5 +110,5 @@
   ],
   "publishedAt":"2026-07-31T22:00:00+08:00",
   "lastVerified":"2026-07-31",
-  "lastModified":"2026-10-25T23:04:14+08:00"
+  "lastModified":"2026-11-08T23:00:00+08:00"
 }

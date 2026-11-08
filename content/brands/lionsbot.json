@@ -2,6 +2,7 @@
   "status": "published",
   "slug": "lionsbot",
   "name": "LionsBot",
+  "metaTitle": "LionsBot: Singapore Cleaning Robot Company, Founders and Robots",
   "aliases": ["Lionsbot", "LionsBot International", "LionsBot International Pte. Ltd."],
   "legalName": "LionsBot International Pte. Ltd.",
   "legalEntityNote": "LionsBot International Pte. Ltd. is the Singapore company named in the official privacy policy and site footer. Its Singapore factory, regional offices, distributors, certified technicians and collaboration partners have different operational and contractual roles.",
@@ -9,8 +10,22 @@
   "officialWebsite": "https://www.lionsbot.com/",
   "headline": "LionsBot autonomous cleaning robots, Singapore manufacturing and service checks",
   "description": "A source-backed profile of LionsBot International, its founders, Singapore cleaning-robot factory, product and software portfolio, regional channels and lifecycle checks.",
-  "metaDescription": "LionsBot profile: Singapore company, founders, R3 and R12 cleaning robots, factory, LionsOS, dealers, support and buyer checks.",
+  "metaDescription": "LionsBot is a Singapore company founded in 2018 by Dylan Ng, Michelle Seow and Prof. Mohan Rajesh Elara. Its R3 and R12 robots, factory and dealers.",
   "quickAnswer": "LionsBot is a Singapore company founded by Dylan Ng, Michelle Seow and Professor Mohan Rajesh Elara. It names no parent company.",
+  "faq": [
+    {
+      "question": "Who owns LionsBot?",
+      "answer": "LionsBot International Pte. Ltd. is a Singapore company founded by Dylan Ng, Michelle Seow and Professor Mohan Rajesh Elara. Official sources name no parent company."
+    },
+    {
+      "question": "Where is LionsBot from?",
+      "answer": "Singapore. The company was founded in 2018."
+    },
+    {
+      "question": "Who is LionsBot's CEO?",
+      "answer": "Co-founder Dylan Ng is chief executive officer."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with LionsBot. Factory capacity, global-office and dealer statements do not identify the seller, importer, software terms or warranty provider for every country and project.",
   "headquarters": "Singapore",
   "founded": "2018",
@@ -207,5 +222,5 @@
   ],
   "publishedAt": "2026-08-08T06:21:18+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-10-25T22:43:56+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }
