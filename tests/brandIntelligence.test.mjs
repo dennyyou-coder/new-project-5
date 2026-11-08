@@ -933,6 +933,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "shark-hydrovac-vs-bissell-crosswave": ["shark",  "bissell"],
     "shark-powerdetect-speed-vs-dyson-v16-piston-animal": ["shark",  "dyson"],
     "sharkninja-q2-growth-outside-cleaning": ["shark"],
+    "spot-cleaner-battle-bissell-shark-hoover": ["bissell", "shark", "hoover"],
     "stanley-black-decker-excel-sale-outdoor-strategy": ["stanley-black-decker",  "dewalt"],
     "steve-richman-milwaukee-growth": ["milwaukee",  "tti"],
     "sunseeker-from-oem-to-robot-mower-brand": ["sunseeker"],
@@ -1086,8 +1087,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 215);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 354);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 216);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 357);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
