@@ -183,7 +183,7 @@ export default function HomePage() {
         <section className="home-b-watch" aria-labelledby="home-watch-title">
           <div className="home-b-container">
             <div className="home-b-watch-head">
-              <h2 id="home-watch-title"><span className="home-b-watch-live" aria-hidden="true" />Industry watch</h2>
+              <h2 id="home-watch-title" className="home-b-watch-title"><span className="home-b-watch-live" aria-hidden="true" />Industry watch</h2>
               <Link className="home-b-watch-all" href="/topics">All topics</Link>
             </div>
             <div className="home-b-watch-grid">
