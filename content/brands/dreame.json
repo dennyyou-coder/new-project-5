@@ -68,10 +68,45 @@
   "photos": [
     {
       "src": "/images/brands/dreame/photos/01.webp",
-      "caption": "Dreame billboard on Marszałkowska Street, Warsaw",
-      "credit": "Photo: Wistula, CC BY-SA 4.0",
-      "creditUrl": "https://commons.wikimedia.org/wiki/File:Marsza%C5%82kowska_107,_Warsaw,_Billboard_Dreame.jpg",
-      "width": 1000
+      "width": 1200,
+      "caption": "Dreame stand at CES 2025, Las Vegas",
+      "credit": "Image: Dreame",
+      "creditUrl": "https://in.dreametech.com/blogs/newsroom/all-dreams-in-one-dreame-dreame-technology-unveils-next-generation-smart-home-ecosystem-at-ces-2025"
+    },
+    {
+      "src": "/images/brands/dreame/photos/02.webp",
+      "width": 1200,
+      "caption": "Motor production line at a Dreame factory",
+      "credit": "Image: Dreame via PR Newswire",
+      "creditUrl": "https://www.prnewswire.com/news-releases/dreame-technologys-smart-factory-breaks-suction-speed-barrier-to-mass-produce-150-000rpm-vacuum-motors-301196364.html"
+    },
+    {
+      "src": "/images/brands/dreame/photos/03.webp",
+      "width": 1200,
+      "caption": "Dreame store front in Riga, Latvia",
+      "credit": "Image: Dreame",
+      "creditUrl": "https://lt.dreametech.com/pages/dreame-veikals-baltija"
+    },
+    {
+      "src": "/images/brands/dreame/photos/04.webp",
+      "width": 1200,
+      "caption": "Opening of the Dreame store in Riga",
+      "credit": "Image: Dreame",
+      "creditUrl": "https://lt.dreametech.com/pages/dreame-veikals-baltija"
+    },
+    {
+      "src": "/images/brands/dreame/photos/05.webp",
+      "width": 1200,
+      "caption": "Founder Yu Hao",
+      "credit": "Image: EY",
+      "creditUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-cn/campaigns/entrepreneur-of-the-year-program/documents/ey-eoy-2024-awards-gala-brochure-bilingual.pdf#page=44"
+    },
+    {
+      "src": "/images/brands/dreame/photos/06.webp",
+      "width": 1200,
+      "caption": "Dreame X60 Ultra in a family living room",
+      "credit": "Image: Dreame",
+      "creditUrl": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
     }
   ],
   "ownership": {

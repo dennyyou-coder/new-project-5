@@ -43,10 +43,24 @@
   "photos": [
     {
       "src": "/images/brands/irobot/photos/01.webp",
-      "caption": "iRobot Roomba i7+ with Clean Base on sale in a store",
-      "credit": "Photo: Auledas, CC BY-SA 4.0",
-      "creditUrl": "https://commons.wikimedia.org/wiki/File:IRobot_Roomba_i7%2B.jpg",
-      "width": 1000
+      "width": 1200,
+      "caption": "Roomba Max 705 Combo with AutoWash dock",
+      "credit": "Image: iRobot media kit",
+      "creditUrl": "https://media.irobot.com/media-kits?item=51"
+    },
+    {
+      "src": "/images/brands/irobot/photos/02.webp",
+      "width": 1200,
+      "caption": "Roomba Max 705 Combo cleaning a rug",
+      "credit": "Image: iRobot media kit",
+      "creditUrl": "https://media.irobot.com/media-kits?item=51"
+    },
+    {
+      "src": "/images/brands/irobot/photos/03.webp",
+      "width": 1200,
+      "caption": "Roomba Max 705 Combo extending its roller to the edge",
+      "credit": "Image: iRobot media kit",
+      "creditUrl": "https://media.irobot.com/media-kits?item=51"
     }
   ],
   "ownership": {

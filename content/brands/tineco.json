@@ -43,15 +43,29 @@
   "photos": [
     {
       "src": "/images/brands/tineco/photos/01.webp",
+      "width": 684,
       "caption": "Tineco stand at AWE in Shanghai",
-      "credit": "Photo: World Clean Biz",
-      "width": 684
+      "credit": "Photo: World Clean Biz"
     },
     {
       "src": "/images/brands/tineco/photos/02.webp",
+      "width": 729,
       "caption": "Tineco cordless and wet-dry vacuums on display at AWE",
-      "credit": "Photo: World Clean Biz",
-      "width": 729
+      "credit": "Photo: World Clean Biz"
+    },
+    {
+      "src": "/images/brands/tineco/photos/03.webp",
+      "width": 1200,
+      "caption": "FLOOR ONE S9 Artist Steam cleaning a kitchen floor",
+      "credit": "Image: Tineco",
+      "creditUrl": "https://global.tineco.com/products/floor-one-s9-artist-steam.html"
+    },
+    {
+      "src": "/images/brands/tineco/photos/04.webp",
+      "width": 1200,
+      "caption": "FLOOR ONE S9 Artist Steam working around living-room furniture",
+      "credit": "Image: Tineco",
+      "creditUrl": "https://global.tineco.com/products/floor-one-s9-artist-steam.html"
     }
   ],
   "ownership": {

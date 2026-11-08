@@ -46,9 +46,44 @@
   "photos": [
     {
       "src": "/images/brands/karcher/photos/01.webp",
+      "width": 740,
       "caption": "Kärcher stand at AWE in Shanghai",
-      "credit": "Photo: World Clean Biz",
-      "width": 740
+      "credit": "Photo: World Clean Biz"
+    },
+    {
+      "src": "/images/brands/karcher/photos/02.webp",
+      "width": 1200,
+      "caption": "Assembly line at Kärcher’s Obersontheim plant",
+      "credit": "Image: Kärcher",
+      "creditUrl": "https://www.kaercher.com/int/inside-kaercher/company/factory-tours/factory-tours-at-the-obersontheim-site.html"
+    },
+    {
+      "src": "/images/brands/karcher/photos/03.webp",
+      "width": 1200,
+      "caption": "Inside the Kärcher Experience Center",
+      "credit": "Image: Kärcher",
+      "creditUrl": "https://www.kaercher.com/int/inside-kaercher/company/factory-tours/virtual-factory-tours.html"
+    },
+    {
+      "src": "/images/brands/karcher/photos/04.webp",
+      "width": 1200,
+      "caption": "Hartmut Jenner, chairman of the board of management, as listed by Kärcher",
+      "credit": "Image: Kärcher",
+      "creditUrl": "https://www.kaercher.com/rs/inside-kaercher/preduzece/uskladenost-i-integritet.html"
+    },
+    {
+      "src": "/images/brands/karcher/photos/05.webp",
+      "width": 1200,
+      "caption": "Puzzi 10/1 spray extraction cleaner in a hotel room",
+      "credit": "Image: Kärcher",
+      "creditUrl": "https://www.kaercher.com/int/professional/carpet-cleaner/spray-extraction-machines/puzzi-10-1-with-upholstery-nozzle-11001380.html"
+    },
+    {
+      "src": "/images/brands/karcher/photos/06.webp",
+      "width": 1200,
+      "caption": "OC 4 mobile outdoor cleaner rinsing a bicycle",
+      "credit": "Image: Kärcher",
+      "creditUrl": "https://www.kaercher.com/int/home-garden/mobile-cleaning/oc-4-15993500.html"
     }
   ],
   "ownership": {

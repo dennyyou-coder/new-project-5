@@ -44,10 +44,45 @@
   "photos": [
     {
       "src": "/images/brands/ecovacs/photos/01.webp",
-      "caption": "ECOVACS service robot in Hanqingqiao metro station",
-      "credit": "Photo: Shwangtianyuan, CC BY-SA 4.0",
-      "creditUrl": "https://commons.wikimedia.org/wiki/File:Ecovacs_Bot_at_Hanqingqiao_station-20240715.jpg",
-      "width": 1000
+      "width": 1200,
+      "caption": "ECOVACS stand at IFA 2026, Berlin",
+      "credit": "Image: ECOVACS via PR Newswire",
+      "creditUrl": "https://www.prnewswire.com/news-releases/ecovacs-at-ifa-berlin-2026-named-as-no1-brand-in-global-home-robotics-bringing-robotics-to-more-of-everyday-life-302869629.html"
+    },
+    {
+      "src": "/images/brands/ecovacs/photos/02.webp",
+      "width": 1200,
+      "caption": "ECOVACS stand at AWE 2026, Shanghai",
+      "credit": "Photo: National Business Daily",
+      "creditUrl": "https://www.nbd.com.cn/articles/2026-03-24/4306106.html"
+    },
+    {
+      "src": "/images/brands/ecovacs/photos/03.webp",
+      "width": 1200,
+      "caption": "ECOVACS’s new headquarters building in Suzhou",
+      "credit": "Photo: National Business Daily",
+      "creditUrl": "https://www.nbd.com.cn/articles/2026-03-24/4306106.html"
+    },
+    {
+      "src": "/images/brands/ecovacs/photos/04.webp",
+      "width": 1200,
+      "caption": "Inside the ECOVACS commercial-robot production base in Nanxun",
+      "credit": "Image: ECOVACS",
+      "creditUrl": "https://www.ecovacsb2b.com/news/detail?id=101"
+    },
+    {
+      "src": "/images/brands/ecovacs/photos/05.webp",
+      "width": 1200,
+      "caption": "Founder and chairman Qian Dongqi",
+      "credit": "Image: ECOVACS via National Business Daily",
+      "creditUrl": "https://www.nbd.com.cn/articles/2026-03-24/4306106.html"
+    },
+    {
+      "src": "/images/brands/ecovacs/photos/06.webp",
+      "width": 1200,
+      "caption": "ECOVACS K1 VAC commercial robot cleaning a hotel in Wollongong",
+      "credit": "Image: ECOVACS",
+      "creditUrl": "https://www.ecovacsb2b.com/news/detail?id=144"
     }
   ],
   "ownership": {

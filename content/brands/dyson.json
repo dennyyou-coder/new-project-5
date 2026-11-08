@@ -40,10 +40,38 @@
   "photos": [
     {
       "src": "/images/brands/dyson/photos/01.webp",
-      "caption": "Dyson demo store on Oxford Street, London",
-      "credit": "Photo: Tristan Surtel, CC BY-SA 4.0",
-      "creditUrl": "https://commons.wikimedia.org/wiki/File:Dyson_Demo_Store,_London.jpg",
-      "width": 1200
+      "width": 1200,
+      "caption": "Suction test rig in Dyson’s research and development laboratories",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com.sg/newsroom/inside-dyson-research-development-labs/inside-dyson-research-development-labs-pick-up-lab"
+    },
+    {
+      "src": "/images/brands/dyson/photos/02.webp",
+      "width": 1200,
+      "caption": "Microbiology lab equipment at Dyson R&D",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com.sg/newsroom/inside-dyson-research-development-labs/inside-dyson-research-development-labs-microbiology-labs"
+    },
+    {
+      "src": "/images/brands/dyson/photos/03.webp",
+      "width": 1200,
+      "caption": "James Dyson unveiling the PencilVac",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com/discover/news/latest/james-dyson-unveils-problem-solving-products-in-berlin"
+    },
+    {
+      "src": "/images/brands/dyson/photos/04.webp",
+      "width": 834,
+      "caption": "James Dyson with the G-Force vacuum cleaner, an early design",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com.au/james-dyson/invention-a-life/05"
+    },
+    {
+      "src": "/images/brands/dyson/photos/05.webp",
+      "width": 1200,
+      "caption": "Dyson PencilVac cleaning under furniture",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com/discover/news/latest/james-dyson-unveils-problem-solving-products-in-berlin"
     }
   ],
   "ownership": {

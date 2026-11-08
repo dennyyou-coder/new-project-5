@@ -43,10 +43,38 @@
   "photos": [
     {
       "src": "/images/brands/roborock/photos/01.webp",
-      "caption": "Roborock Q8 Max+ with auto-empty dock on a retail shelf",
-      "credit": "Photo: Ssu, CC BY-SA 4.0",
-      "creditUrl": "https://commons.wikimedia.org/wiki/File:Roborock_Q8_Max_plus_robotst%C3%B8vsuger.jpg",
-      "width": 1000
+      "width": 1200,
+      "caption": "Roborock launch stage and audience at IFA 2026, Berlin",
+      "credit": "Image: Roborock",
+      "creditUrl": "https://us.roborock.com/pages/ifa-2026"
+    },
+    {
+      "src": "/images/brands/roborock/photos/02.webp",
+      "width": 1024,
+      "caption": "Production line at Roborock’s manufacturing base in Huizhou",
+      "credit": "Photo: Xinhua",
+      "creditUrl": "https://www.xinhuanet.com/photo/20251025/32394580517042d0b717d1d6add691e4/c.html"
+    },
+    {
+      "src": "/images/brands/roborock/photos/03.webp",
+      "width": 1024,
+      "caption": "Aerial view of the Huizhou manufacturing base and loading bays",
+      "credit": "Photo: Xinhua",
+      "creditUrl": "https://www.xinhuanet.com/photo/20251025/32394580517042d0b717d1d6add691e4/c.html"
+    },
+    {
+      "src": "/images/brands/roborock/photos/04.webp",
+      "width": 1024,
+      "caption": "Roborock brand store near Seoul, South Korea",
+      "credit": "Photo: Xinhua",
+      "creditUrl": "https://www.xinhuanet.com/photo/20251025/32394580517042d0b717d1d6add691e4/c.html"
+    },
+    {
+      "src": "/images/brands/roborock/photos/05.webp",
+      "width": 1200,
+      "caption": "Saros 20 Flow cleaning a living room",
+      "credit": "Image: Roborock",
+      "creditUrl": "https://global.roborock.com/pages/roborock-saros-20-flow"
     }
   ],
   "ownership": {
