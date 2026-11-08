@@ -41,6 +41,8 @@ function harness({ widget = true } = {}) {
   modules['@/lib/tallySubmission'] = load('lib/tallySubmission.ts');
   modules['@/lib/tallyForms'] = load('lib/tallyForms.ts');
   modules['./TallyFallbackDialog'] = load('components/TallyFallbackDialog.tsx');
+  // The WCB lead forms are off in these tests, so the Tally transport is exercised as before.
+  modules['@/components/leads/WcbLeadForms'] = { WcbLeadDialog: () => null, WcbLeadForm: () => null, useNativeLeads: () => false };
   const { TallyButton, TallyInlineEmbed } = load('components/LeadForms.tsx');
   return { events, listeners, refs, effects, modules, window, popup: () => popup,
     renderInline(props = {}) { si = ri = 0; return TallyInlineEmbed({ form: 'contact', ctaLocation: 'contact_general', sourcePage: '/contact', title: 'Inquiry', ...props }); },

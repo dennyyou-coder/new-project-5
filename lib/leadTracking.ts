@@ -81,7 +81,7 @@ type LeadEventParameters = Partial<LeadAttribution> & {
   language: string;
   response_id?: string;
   error_reason?: string;
-  open_method?: "popup" | "fallback" | "inline";
+  open_method?: "popup" | "fallback" | "inline" | "wcb_dialog";
   cta_type?: string;
   article_slug?: string;
   article_category?: string;

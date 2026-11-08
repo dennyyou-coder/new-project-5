@@ -21,7 +21,7 @@ export default function PrivacyPage() {
             browse World Clean Biz, request reports, subscribe for updates or
             submit a business inquiry.
           </p>
-          <p className="trust-effective-date">Effective: July 12, 2026</p>
+          <p className="trust-effective-date">Effective: November 8, 2026</p>
         </div>
       </section>
 
@@ -61,16 +61,31 @@ export default function PrivacyPage() {
           </article>
           <article>
             <span>04</span>
+            <h2>Email Updates</h2>
+            <p>
+              If you subscribe to the WCB weekly brief or tick the box to receive
+              it, we use your email address and any details you choose to share,
+              such as your role, company and the product categories you follow,
+              to send you news, analysis and WCB Expo updates that match your
+              interests. Subscriptions are confirmed by a link we email to you,
+              every email includes an unsubscribe link, and you can unsubscribe
+              at any time. Business inquiries and Expo registrations are used to
+              reply to you and are not added to the newsletter unless you ask.
+            </p>
+          </article>
+          <article>
+            <span>05</span>
             <h2>Service Providers And International Processing</h2>
             <p>
               We use service providers, including website hosting, Google
-              Analytics and Tally, to operate the site and process requests.
+              Analytics, Tally and Brevo (email delivery and contact management),
+              to operate the site and process requests.
               These providers may process information in locations different
               from your own and apply their own privacy and security practices.
             </p>
           </article>
           <article>
-            <span>05</span>
+            <span>06</span>
             <h2>How We Share Information</h2>
             <p>
               World Clean Biz does not sell your personal information. We may
@@ -81,7 +96,7 @@ export default function PrivacyPage() {
             </p>
           </article>
           <article>
-            <span>06</span>
+            <span>07</span>
             <h2>Retention And Security</h2>
             <p>
               We keep information for a reasonable period based on the purpose
@@ -91,7 +106,7 @@ export default function PrivacyPage() {
             </p>
           </article>
           <article>
-            <span>07</span>
+            <span>08</span>
             <h2>Your Choices And Requests</h2>
             <p>
               You may browse without submitting a form and may choose not to
@@ -100,7 +115,7 @@ export default function PrivacyPage() {
             </p>
           </article>
           <article>
-            <span>08</span>
+            <span>09</span>
             <h2>Business Audience And Children</h2>
             <p>
               World Clean Biz is intended for business and industry audiences.
@@ -109,7 +124,7 @@ export default function PrivacyPage() {
             </p>
           </article>
           <article>
-            <span>09</span>
+            <span>10</span>
             <h2>Policy Updates</h2>
             <p>
               This policy may be updated as the website, services or applicable
@@ -118,7 +133,7 @@ export default function PrivacyPage() {
             </p>
           </article>
           <article>
-            <span>10</span>
+            <span>11</span>
             <h2>Contact</h2>
             <p>
               For privacy questions connected with World Clean Biz, submit a
