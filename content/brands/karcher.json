@@ -2,6 +2,7 @@
   "status": "published",
   "slug": "karcher",
   "name": "Kärcher",
+  "metaTitle": "Who Owns Kärcher? German Family Business, Winnenden HQ and CEO",
   "aliases": [
     "Kaercher",
     "Karcher",
@@ -13,8 +14,26 @@
   "officialWebsite": "https://www.kaercher.com/int/",
   "headline": "Kärcher ownership, professional cleaning portfolio, manufacturing network and channels",
   "description": "A source-backed profile of Kärcher's family ownership, professional management, consumer and commercial cleaning portfolio, global production network and route to market.",
-  "metaDescription": "Kärcher brand profile: family ownership, management, pressure washers, professional cleaning equipment, factories, dealers, service and buyer checks.",
+  "metaDescription": "Kärcher is a privately held German family business based in Winnenden, led by CEO Hartmut Jenner. Ownership, sales, factories, dealers and buyer checks.",
   "quickAnswer": "Kärcher is a privately held German family business based in Winnenden. It does not publish a shareholder table.",
+  "faq": [
+    {
+      "question": "Who owns Kärcher?",
+      "answer": "Kärcher is a privately held German family business. Alfred Kärcher SE & Co. KG is its main operating company; it does not publish a shareholder table."
+    },
+    {
+      "question": "Is Kärcher a German company?",
+      "answer": "Yes. Kärcher was founded in 1935 and is headquartered in Winnenden, near Stuttgart, Germany."
+    },
+    {
+      "question": "Who runs Kärcher?",
+      "answer": "Hartmut Jenner is CEO and chairman of the management board, a role he has held since 2001. Franziska Kärcher chairs the supervisory board."
+    },
+    {
+      "question": "How big is Kärcher?",
+      "answer": "Kärcher generated almost EUR 3.5 billion of turnover in 2025, 86% of it outside Germany, and employs about 17,000 people, according to a November 2026 Euronews article by its CEO."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Kärcher. Group statements, regional-company roles and factory disclosures are identified separately and must not be generalized to every product or market.",
   "headquarters": "Winnenden, Baden-Württemberg, Germany",
   "founded": "1935",
@@ -285,5 +304,5 @@
   ],
   "publishedAt": "2026-07-30T23:40:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-10-25T23:04:14+08:00"
+  "lastModified": "2026-11-08T21:00:00+08:00"
 }
