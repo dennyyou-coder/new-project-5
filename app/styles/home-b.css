@@ -968,9 +968,3 @@
   .home-b .home-b-watch-body { padding: 14px 16px 16px; }
   .home-b .home-b-watch-dek { font-size: 14px; }
 }
-@media (max-width: 560px) {
-  .home-b .home-b-watch-card { grid-template-columns: 110px minmax(0, 1fr); }
-  .home-b .home-b-watch-body { padding: 12px 14px; }
-  .home-b .home-b-watch-title { font-size: 16px; }
-  .home-b .home-b-watch-date { font-size: 13px; }
-}
