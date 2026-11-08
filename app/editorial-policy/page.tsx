@@ -38,10 +38,6 @@ const SECTIONS: { title: string; body: React.ReactNode }[] = [
     body: "Coverage decisions are editorial. Companies cannot pay to be covered, to change a story or to be placed higher in rankings or lists. WCB also runs WCB Expo and business services; companies that exhibit or work with WCB receive no different editorial treatment. If WCB ever publishes paid content, it will be clearly labelled as sponsored or partner content and kept apart from news and analysis."
   },
   {
-    title: "Use of tools",
-    body: "We use software tools, including AI tools, to help with research, translation and drafting. They do not decide what we publish: every story is checked against its sources and approved by the editor before publication, and the editor is responsible for what appears on the site."
-  },
-  {
     title: "Images",
     body: "We use official company images, photographs from events we attend, public-domain material and openly licensed photographs, credited as their licences require. Product renders are not presented as photographs of real use, and images are not altered to change what they show."
   }

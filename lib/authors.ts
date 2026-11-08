@@ -16,10 +16,11 @@ export const AUTHORS: AuthorProfile[] = [
     name: "Denny You",
     aliases: ["You Denny", "游丹尼"],
     type: "Person",
-    role: "Founder and editor, World Clean Biz",
+    role: "Founder of WCB Expo and World Clean Biz · China's most influential cleaning-industry blogger · 20 years in cleaning appliances",
     bio: [
-      "Denny You (游丹尼) has worked in cleaning appliances for 20 years. He began in vacuum cleaner export sales, started writing about the industry in 2017 and later led product development at Glorison Innovation.",
-      "He founded World Clean Biz and WCB Expo to connect brands, manufacturers, component suppliers and buyers across floor care, pool, lawn and commercial cleaning. He writes WCB's analysis and approves every news story before it is published."
+      "Denny You (游丹尼) is China's most influential cleaning-industry blogger and the founder of WCB Expo, the cleaning appliance industry conference and supply-chain exhibition held in Suzhou. He has worked in cleaning appliances for 20 years.",
+      "He began in vacuum cleaner export sales, selling more than a million units, started writing about the industry in 2017 and later led product development at Glorison Innovation. Through his articles, videos, forums and trade shows he connects brands, manufacturers, component suppliers and buyers across floor care, pool, lawn and commercial cleaning.",
+      "He founded World Clean Biz, writes its analysis and approves every news story before it is published."
     ],
     covers: ["Company strategy and ownership", "Chinese cleaning appliance makers", "Supply chains and OEM/ODM", "Trade policy and market shifts"],
     image: "/images/site-refresh/about/about-hero-denny.webp",

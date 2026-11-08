@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const author = getAuthor((await params).slug);
   if (!author) return {};
   return {
-    title: `${author.name}: ${author.role}`,
+    title: author.type === "Person" ? `${author.name}, Founder of WCB Expo` : author.name,
     description: author.bio[0],
     alternates: { canonical: `/authors/${author.slug}` }
   };
@@ -40,7 +40,7 @@ export default async function AuthorPage({ params }: Props) {
     mainEntity: {
       "@type": author.type,
       name: author.name,
-      ...(author.type === "Person" ? { jobTitle: author.role, worksFor: { "@type": "Organization", name: "World Clean Biz", url: siteUrl } } : { parentOrganization: { "@type": "Organization", name: "World Clean Biz", url: siteUrl } }),
+      ...(author.type === "Person" ? { jobTitle: "Founder, WCB Expo and World Clean Biz", worksFor: { "@type": "Organization", name: "World Clean Biz", url: siteUrl } } : { parentOrganization: { "@type": "Organization", name: "World Clean Biz", url: siteUrl } }),
       description: author.bio[0],
       url: `${siteUrl}/authors/${author.slug}`,
       ...(author.image ? { image: `${siteUrl}${author.image}` } : {}),
