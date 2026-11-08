@@ -11,6 +11,8 @@ export type TopicSource = { title: string; url: string };
 export type Topic = {
   slug: string;
   title: string;
+  /** Two or three words shown over the topic image on the homepage, e.g. "FCC Ban". */
+  shortLabel?: string;
   seoTitle?: string;
   dek: string;
   description: string;

@@ -232,6 +232,7 @@ export default function HomePage() {
                         decoding="async"
                       />
                     ) : null}
+                    {topic.shortLabel ? <span className="home-b-watch-label" aria-hidden="true">{topic.shortLabel}</span> : null}
                   </span>
                   <span className="home-b-watch-body">
                     <span className="home-b-watch-badge">WCB Topic</span>
