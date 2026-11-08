@@ -103,6 +103,9 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
     "/quality-compliance",
     "/editorial-policy",
     "/rankings",
+    "/site-index",
+    "/site-index/articles",
+    "/site-index/news",
     "/authors/denny-you",
     "/authors/wcb-editorial"
   ]).map((entry) => {
