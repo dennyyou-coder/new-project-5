@@ -1,7 +1,7 @@
 import { getPublishedBrandCategories } from "@/lib/brandCategories";
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getPublishedComponentProfiles } from "@/lib/componentProfiles";
-import { getInsights } from "@/lib/content";
+import { getInsights, type Insight } from "@/lib/content";
 import { getPublishedEquipmentProfiles } from "@/lib/equipment";
 import { HUB_CATEGORIES } from "@/lib/hubCategories";
 import { getNews } from "@/lib/news";
@@ -41,12 +41,19 @@ function periodTitle(key: string, monthly: boolean) {
 }
 
 export function getArticleIndex(): IndexGroup[] {
-  return groupByPeriod(
-    getInsights(),
-    (article) => article.sortDate || article.date,
-    (article) => ({ href: `/blog/${article.slug}`, label: article.title }),
-    false
-  );
+  const groups = new Map<string, Insight[]>();
+  for (const article of getInsights()) {
+    const key = article.category || "Other";
+    groups.set(key, [...(groups.get(key) ?? []), article]);
+  }
+  return [...groups.entries()]
+    .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
+    .map(([title, articles]) => ({
+      title,
+      links: articles
+        .sort((a, b) => (b.sortDate || b.date).localeCompare(a.sortDate || a.date))
+        .map((article) => ({ href: `/blog/${article.slug}`, label: article.title }))
+    }));
 }
 
 export function getNewsIndex(): IndexGroup[] {
