@@ -4,7 +4,7 @@
   "seoTitle": "EU Anti-Dumping Duties on Chinese Robotic Mowers",
   "dek": "Europe's anti-dumping investigation into robotic lawn mowers from China: what is covered, where the case stands, the duty rates reported at disclosure, and what it means for brands, factories and dealers before the 2027 season.",
   "description": "WCB's running file on EU anti-dumping case AD745 against Chinese robotic lawn mowers: timeline, scope, reported duty rates, the January 2027 deadline and analysis for Husqvarna, Positec, Mammotion and other brands.",
-  "coverImage": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/01-cover.webp",
+  "coverImage": "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp",
   "updated": "2026-11-07",
   "status": {
     "label": "Disclosure stage · decision due by 19 January 2027",
@@ -16,12 +16,30 @@
     "Europe is the most developed robotic mower market and the main battleground for Chinese brands that have grown on wire-free navigation, RTK, vision and all-wheel drive. A definitive duty would raise the cost of China-made mowers just as dealers place orders for the 2027 spring season, and would reward companies that have already moved production elsewhere."
   ],
   "keyFacts": [
-    { "label": "Case", "value": "AD745, opened 19 November 2025" },
-    { "label": "Complainant", "value": "Husqvarna Manufacturing CZ" },
-    { "label": "Scope", "value": "Electric robotic lawn mowers from China, wired or wire-free, with or without docks and navigation equipment" },
-    { "label": "Registration", "value": "Imports registered from 24 January 2026, allowing retroactive duties if legal conditions are met" },
-    { "label": "Provisional duties", "value": "None; the Commission continued the investigation in June 2026" },
-    { "label": "Decision deadline", "value": "19 January 2027 for definitive measures" }
+    {
+      "label": "Case",
+      "value": "AD745, opened 19 November 2025"
+    },
+    {
+      "label": "Complainant",
+      "value": "Husqvarna Manufacturing CZ"
+    },
+    {
+      "label": "Scope",
+      "value": "Electric robotic lawn mowers from China, wired or wire-free, with or without docks and navigation equipment"
+    },
+    {
+      "label": "Registration",
+      "value": "Imports registered from 24 January 2026, allowing retroactive duties if legal conditions are met"
+    },
+    {
+      "label": "Provisional duties",
+      "value": "None; the Commission continued the investigation in June 2026"
+    },
+    {
+      "label": "Decision deadline",
+      "value": "19 January 2027 for definitive measures"
+    }
   ],
   "callout": {
     "title": "Reported duty rates at disclosure (unconfirmed)",
@@ -29,19 +47,62 @@
     "href": "https://ideamower.com/en/blogs/blog-1/robotic-mowers-possible-eu-duties-2027"
   },
   "timeline": [
-    { "date": "2025-10-06", "title": "Complaint lodged", "text": "Husqvarna Manufacturing CZ files a complaint alleging dumping of Chinese robotic mowers and injury to EU producers." },
-    { "date": "2025-11-19", "title": "Investigation opened", "text": "The Commission publishes the notice of initiation for robotic lawn mowers originating in China.", "href": "/news/eu-chinese-robot-mower-investigation-november-2025" },
-    { "date": "2026-01-23", "title": "Imports made subject to registration", "text": "Implementing Regulation (EU) 2026/142 orders customs to register imports, preserving the option of retroactive duties.", "href": "/news/eu-robotic-mower-import-registration-january-2026" },
-    { "date": "2026-06-19", "title": "No provisional duties", "text": "The Commission continues the investigation without provisional measures, citing technical complexity.", "href": "/news/eu-robot-mower-provisional-measures-june-2026" },
-    { "date": "2026-10-21", "title": "Disclosure of essential facts", "text": "Interested parties receive the Commission's confidential disclosure and can comment before the final decision.", "href": "/news/husqvarna-eu-mower-disclosure-october-2026" },
-    { "date": "2027-01-19", "title": "Deadline for definitive measures", "text": "The statutory deadline for the Commission to decide on definitive anti-dumping duties." }
+    {
+      "date": "2025-10-06",
+      "title": "Complaint lodged",
+      "text": "Husqvarna Manufacturing CZ files a complaint alleging dumping of Chinese robotic mowers and injury to EU producers."
+    },
+    {
+      "date": "2025-11-19",
+      "title": "Investigation opened",
+      "text": "The Commission publishes the notice of initiation for robotic lawn mowers originating in China.",
+      "href": "/news/eu-chinese-robot-mower-investigation-november-2025"
+    },
+    {
+      "date": "2026-01-23",
+      "title": "Imports made subject to registration",
+      "text": "Implementing Regulation (EU) 2026/142 orders customs to register imports, preserving the option of retroactive duties.",
+      "href": "/news/eu-robotic-mower-import-registration-january-2026"
+    },
+    {
+      "date": "2026-06-19",
+      "title": "No provisional duties",
+      "text": "The Commission continues the investigation without provisional measures, citing technical complexity.",
+      "href": "/news/eu-robot-mower-provisional-measures-june-2026"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Disclosure of essential facts",
+      "text": "Interested parties receive the Commission's confidential disclosure and can comment before the final decision.",
+      "href": "/news/husqvarna-eu-mower-disclosure-october-2026"
+    },
+    {
+      "date": "2027-01-19",
+      "title": "Deadline for definitive measures",
+      "text": "The statutory deadline for the Commission to decide on definitive anti-dumping duties."
+    }
   ],
   "questions": [
-    { "q": "Are EU anti-dumping duties already being charged on Chinese robotic mowers?", "a": "Not yet. No provisional duty was imposed, and as of early November 2026 no definitive measure had been published. Imports have, however, been registered since January 2026, so duties could in principle be applied retroactively to registered imports if the final decision and legal conditions allow it." },
-    { "q": "Which products are covered?", "a": "Electric robotic lawn mowers originating in China that cut grass without direct human control, whether they use boundary wires or wire-free navigation, and whether they are sold alone or with charging stations and navigation equipment." },
-    { "q": "How high could the duties be?", "a": "The Commission has not published rates. A trade publication reported proposed rates between 45.6% and 53.3% from the October disclosure. Those figures are unconfirmed and can change before the final regulation." },
-    { "q": "Does production outside China avoid the duties?", "a": "Anti-dumping duties apply by country of origin, so mowers genuinely produced outside China are not covered. Simply routing Chinese products through another country can be treated as circumvention, and the EU can extend duties to such flows." },
-    { "q": "How does this connect to the US FCC restrictions?", "a": "They are separate measures. The EU case concerns pricing and origin, and only covers China. The US FCC Covered List concerns national security and covers robotic mowers produced anywhere outside the US. Together they squeeze China-made mowers in both of the category's largest markets at once." }
+    {
+      "q": "Are EU anti-dumping duties already being charged on Chinese robotic mowers?",
+      "a": "Not yet. No provisional duty was imposed, and as of early November 2026 no definitive measure had been published. Imports have, however, been registered since January 2026, so duties could in principle be applied retroactively to registered imports if the final decision and legal conditions allow it."
+    },
+    {
+      "q": "Which products are covered?",
+      "a": "Electric robotic lawn mowers originating in China that cut grass without direct human control, whether they use boundary wires or wire-free navigation, and whether they are sold alone or with charging stations and navigation equipment."
+    },
+    {
+      "q": "How high could the duties be?",
+      "a": "The Commission has not published rates. A trade publication reported proposed rates between 45.6% and 53.3% from the October disclosure. Those figures are unconfirmed and can change before the final regulation."
+    },
+    {
+      "q": "Does production outside China avoid the duties?",
+      "a": "Anti-dumping duties apply by country of origin, so mowers genuinely produced outside China are not covered. Simply routing Chinese products through another country can be treated as circumvention, and the EU can extend duties to such flows."
+    },
+    {
+      "q": "How does this connect to the US FCC restrictions?",
+      "a": "They are separate measures. The EU case concerns pricing and origin, and only covers China. The US FCC Covered List concerns national security and covers robotic mowers produced anywhere outside the US. Together they squeeze China-made mowers in both of the category's largest markets at once."
+    }
   ],
   "insights": [
     "fcc-eu-anti-dumping-robotic-mower-market-2027",
@@ -59,10 +120,25 @@
     "eu-chinese-robot-mower-investigation-november-2025"
   ],
   "sources": [
-    { "title": "Notice of initiation, robotic lawn mowers originating in China (OJ C/2025/6235)", "url": "https://eur-lex.europa.eu/eli/C/2025/6235/oj/eng" },
-    { "title": "Implementing Regulation (EU) 2026/142 making imports subject to registration", "url": "https://eur-lex.europa.eu/eli/reg_impl/2026/142" },
-    { "title": "Note to the file: information at provisional stage (AD745)", "url": "https://www.wko.at/noe/aussenwirtschaft/information-at-provisional-stage--pre-disclosure.pdf" },
-    { "title": "Husqvarna Group notes EU Commission's disclosure (21 October 2026)", "url": "https://www.husqvarnagroup.com/en/press/husqvarna-group-notes-eu-commissions-disclosure-robotic-mower-anti-dumping-investigation" },
-    { "title": "Ideamower: robotic mowers and possible EU duties (citing Motorist)", "url": "https://ideamower.com/en/blogs/blog-1/robotic-mowers-possible-eu-duties-2027" }
+    {
+      "title": "Notice of initiation, robotic lawn mowers originating in China (OJ C/2025/6235)",
+      "url": "https://eur-lex.europa.eu/eli/C/2025/6235/oj/eng"
+    },
+    {
+      "title": "Implementing Regulation (EU) 2026/142 making imports subject to registration",
+      "url": "https://eur-lex.europa.eu/eli/reg_impl/2026/142"
+    },
+    {
+      "title": "Note to the file: information at provisional stage (AD745)",
+      "url": "https://www.wko.at/noe/aussenwirtschaft/information-at-provisional-stage--pre-disclosure.pdf"
+    },
+    {
+      "title": "Husqvarna Group notes EU Commission's disclosure (21 October 2026)",
+      "url": "https://www.husqvarnagroup.com/en/press/husqvarna-group-notes-eu-commissions-disclosure-robotic-mower-anti-dumping-investigation"
+    },
+    {
+      "title": "Ideamower: robotic mowers and possible EU duties (citing Motorist)",
+      "url": "https://ideamower.com/en/blogs/blog-1/robotic-mowers-possible-eu-duties-2027"
+    }
   ]
 }
