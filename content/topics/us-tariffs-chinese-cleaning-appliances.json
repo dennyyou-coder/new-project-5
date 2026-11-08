@@ -20,6 +20,67 @@
     "The tariffs of 2025 have gone. On 20 February 2026 the Supreme Court ruled 6–3 that the International Emergency Economic Powers Act does not authorise tariffs, and collection of the IEEPA fentanyl and reciprocal duties stopped on 24 February. The government replaced them with a temporary 10% surcharge under Section 122, which lapsed after its 150-day limit on 24 July, the day the forced-labor duties began. Refunds of IEEPA duties, which the Bureau of Economic Analysis puts at about USD 166 billion, go to the importer of record, not to the overseas supplier.",
     "The gap with Southeast Asia has changed shape. Vietnam and Thailand face the same 12.5% forced-labor duty as China, and Malaysia, Indonesia, Mexico and India face 10%, but none of them carry the 25% China-specific duty. For cleaning appliances, moving final assembly out of China still saves roughly 25 percentage points of duty on a US-bound product, provided origin rules are met. The US–China truce agreed in Busan has been extended to 10 January 2027."
   ],
+  "chart": {
+    "type": "bars",
+    "title": "Additional US duty on a vacuum cleaner (HTS 8508) by country of origin",
+    "unit": "%",
+    "legend": [
+      "China-specific Section 301 duty",
+      "Section 301 forced-labor duty"
+    ],
+    "note": "Ordinary duty on HTS 8508 is zero. Rates as of November 2026; confirm classification with a customs broker.",
+    "rows": [
+      {
+        "label": "China",
+        "segments": [
+          25,
+          12.5
+        ]
+      },
+      {
+        "label": "Vietnam",
+        "segments": [
+          0,
+          12.5
+        ]
+      },
+      {
+        "label": "Thailand",
+        "segments": [
+          0,
+          12.5
+        ]
+      },
+      {
+        "label": "Malaysia",
+        "segments": [
+          0,
+          10
+        ]
+      },
+      {
+        "label": "Indonesia",
+        "segments": [
+          0,
+          10
+        ]
+      },
+      {
+        "label": "Mexico",
+        "segments": [
+          0,
+          10
+        ]
+      },
+      {
+        "label": "India",
+        "segments": [
+          0,
+          10
+        ]
+      }
+    ]
+  },
   "keyFacts": [
     {
       "label": "Chinese-made vacuum or robot vacuum",

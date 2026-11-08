@@ -4,7 +4,7 @@ import { BrandFaq } from "@/components/brands/BrandFaq";
 import { buildBrandAnalysisLink } from "@/components/brands/brandAnalysisLink";
 import { getAvailableCompanyKeywords } from "@/lib/companyKeywords";
 import { getEditorialInsights } from "@/lib/insightCollections";
-import { getNews, newsDate } from "@/lib/news";
+import { getNews, getNewsVisual, newsDate } from "@/lib/news";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
@@ -167,13 +167,19 @@ export default async function BrandPage({ params }: PageProps) {
           title: `${latestResult.period}: ${latestResult.revenueLabel.toLowerCase()} ${formatAmount(latestResult.revenue, latestResult.currency)}`,
           note: revenueChange(latestResult) ? `${revenueChange(latestResult)} year on year` : undefined,
           href: latestResult.news ? `/news/${latestResult.news}` : "#financials",
+          image: profile.logoImage,
+          imageContain: true,
           date: latestResult.reported ?? latestResult.periodEnd,
           dateLabel: newsDate(latestResult.reported ?? latestResult.periodEnd)
         }]
       : []),
-    ...relatedNews.slice(0, 3).map((item) => ({ kind: "News" as const, title: item.title, href: `/news/${item.slug}`, date: item.eventDate, dateLabel: newsDate(item.eventDate) })),
-    ...(newestModel ? [{ kind: "New product" as const, title: newestModel.name, href: `/products/${newestModel.slug}`, date: String(newestModel.announced), dateLabel: newsDate(String(newestModel.announced)) }] : []),
-    ...(latestAnalysis ? [{ kind: "Analysis" as const, title: latestAnalysis.title, href: `/blog/${latestAnalysis.slug}`, date: latestAnalysis.sortDate, dateLabel: newsDate(latestAnalysis.sortDate) }] : [])
+    ...relatedNews.slice(0, 3).map((item) => {
+      const visual = getNewsVisual(item);
+      const useful = visual && visual.label !== "Industry context";
+      return { kind: "News" as const, title: item.title, href: `/news/${item.slug}`, date: item.eventDate, dateLabel: newsDate(item.eventDate), image: useful ? visual.src : undefined, imageContain: useful ? visual.fit === "contain" : undefined };
+    }),
+    ...(newestModel ? [{ kind: "New product" as const, title: newestModel.name, href: `/products/${newestModel.slug}`, date: String(newestModel.announced), dateLabel: newsDate(String(newestModel.announced)), image: productCover(newestModel.slug), imageContain: true }] : []),
+    ...(latestAnalysis ? [{ kind: "Analysis" as const, title: latestAnalysis.title, href: `/blog/${latestAnalysis.slug}`, date: latestAnalysis.sortDate, dateLabel: newsDate(latestAnalysis.sortDate), image: latestAnalysis.coverImage }] : [])
   ]
     .filter((item, index, all) => all.findIndex((other) => other.href === item.href) === index)
     .sort((a, b) => b.date.localeCompare(a.date))

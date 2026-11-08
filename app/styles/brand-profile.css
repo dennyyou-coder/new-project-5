@@ -242,7 +242,7 @@ body.structure-refresh.design-a .approved-catalog.brand-detail .bp-fin-note { ma
 /* Latest at this company (BrandLatest) */
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-updated { font-size: 13px; color: #5a6378; }
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-list { margin: 0; padding: 0; list-style: none; }
-body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-list li { display: grid; grid-template-columns: 104px minmax(0, 1fr) auto; gap: 12px; align-items: baseline; padding: 11px 0; border-top: 1px solid #E6ECF4; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-list li { display: grid; grid-template-columns: 64px 104px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid #E6ECF4; }
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-list li:first-child { border-top: 0; padding-top: 0; }
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-kind { justify-self: start; padding: 3px 8px; border-radius: 5px; background: #EEF2FD; color: #2B50C8; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-kind--results { background: #E8F5EE; color: #1F7A45; }
@@ -259,4 +259,14 @@ body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-list t
 @media (max-width: 560px) {
   body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-list li { grid-template-columns: minmax(0, 1fr) auto; row-gap: 6px; }
   body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-kind { grid-column: 1 / -1; }
+}
+
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-thumb { display: block; width: 64px; height: 44px; overflow: hidden; border-radius: 6px; background: #eef2f7; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-thumb.is-contain { background: #fff; border: 1px solid #E6ECF4; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-thumb.is-contain img { object-fit: contain; padding: 3px; box-sizing: border-box; }
+@media (max-width: 560px) {
+  body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-list li { grid-template-columns: 56px minmax(0, 1fr) auto; }
+  body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-thumb { grid-row: span 2; width: 56px; height: 42px; }
+  body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-kind { grid-column: 2 / -1; }
 }

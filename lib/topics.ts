@@ -8,6 +8,19 @@ export type TopicEvent = { date: string; title: string; text: string; href?: str
 export type TopicQuestion = { q: string; a: string };
 export type TopicSource = { title: string; url: string };
 
+/** A small data chart drawn on the topic page from the topic file (no image needed). */
+export type TopicChart =
+  | {
+      type: "bars";
+      title: string;
+      note?: string;
+      unit?: string;
+      legend?: string[];
+      rows: { label: string; segments: number[]; display?: string; href?: string }[];
+    }
+  /** Revenue growth for the latest reported quarter, from the results tracker. */
+  | { type: "results-growth"; title: string; note?: string };
+
 export type Topic = {
   slug: string;
   title: string;
@@ -24,6 +37,7 @@ export type Topic = {
   summary: string[];
   keyFacts: TopicFact[];
   callout?: { title: string; text: string; href?: string };
+  chart?: TopicChart;
   timeline: TopicEvent[];
   questions: TopicQuestion[];
   insights: string[];
