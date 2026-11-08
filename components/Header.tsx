@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { TallyButton } from "@/components/LeadForms";
-import { HUB_CATEGORIES, HUB_CATEGORY_GROUPS } from "@/lib/hubCategories";
+import { LISTED_HUB_CATEGORIES, HUB_CATEGORY_GROUPS } from "@/lib/hubCategories";
 
 type NavLink = { href: string; label: string };
 type NavMenu = { id: string; label: string; current: string[]; columns: { heading?: string; links: NavLink[] }[] };
@@ -18,7 +18,7 @@ const NAV: NavItem[] = [
     current: ["/categories"],
     columns: HUB_CATEGORY_GROUPS.map((group) => ({
       heading: group.label,
-      links: HUB_CATEGORIES.filter((hub) => hub.group === group.slug).map((hub) => ({
+      links: LISTED_HUB_CATEGORIES.filter((hub) => hub.group === group.slug).map((hub) => ({
         href: `/categories/${hub.slug}`,
         label: hub.name
       }))

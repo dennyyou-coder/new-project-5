@@ -93,7 +93,8 @@ test("hub pages are in the discovery sitemap and each has content to show", asyn
   const urls = new Set(buildDiscoverySitemap().map((entry) => entry.url));
   assert.ok(urls.has("https://worldcleanbiz.com/categories"));
   for (const hub of HUB_CATEGORIES) {
-    assert.ok(urls.has(`https://worldcleanbiz.com/categories/${hub.slug}`), `${hub.slug} in sitemap`);
+    // Unlisted (thin) hubs are kept out of the sitemap until they have coverage.
+    assert.equal(urls.has(`https://worldcleanbiz.com/categories/${hub.slug}`), !hub.unlisted, `${hub.slug} in sitemap`);
   }
   for (const data of getAllHubCategoryData()) {
     const modules = [data.feed, data.newModels, data.essential, data.companies, data.guides].filter((list) => list.length > 0);

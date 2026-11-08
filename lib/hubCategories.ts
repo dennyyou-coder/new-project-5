@@ -53,6 +53,11 @@ export type HubCategory = {
    * (last 3 months, all pages). Only set where the data shows a clear lead.
    */
   searchPicks?: string[];
+  /**
+   * Kept out of navigation, listings and the sitemap (and marked noindex) while
+   * the hub has too little coverage to stand as a page of its own.
+   */
+  unlisted?: boolean;
 };
 
 export const HUB_CATEGORY_GROUPS: { slug: HubCategoryGroup; label: string }[] = [
@@ -155,6 +160,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     slug: "window-robots",
     name: "Window robots",
     group: "core-cleaning",
+    unlisted: true,
     intro: "Window-cleaning robots and the brands that make them.",
     color: "#4a6b8a",
     rules: {
@@ -188,6 +194,9 @@ export const HUB_CATEGORIES: HubCategory[] = [
     }
   }
 ];
+
+/** Hubs shown in navigation, listings, search and the sitemap. */
+export const LISTED_HUB_CATEGORIES: HubCategory[] = HUB_CATEGORIES.filter((hub) => !hub.unlisted);
 
 const hubBySlug = new Map(HUB_CATEGORIES.map((hub) => [hub.slug, hub]));
 

@@ -3,7 +3,7 @@ import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getPublishedComponentProfiles } from "@/lib/componentProfiles";
 import { getInsights, type Insight } from "@/lib/content";
 import { getPublishedEquipmentProfiles } from "@/lib/equipment";
-import { HUB_CATEGORIES } from "@/lib/hubCategories";
+import { LISTED_HUB_CATEGORIES } from "@/lib/hubCategories";
 import { getNews } from "@/lib/news";
 import { productModels } from "@/lib/products";
 import { getTopics } from "@/lib/topics";
@@ -86,7 +86,7 @@ export function getSiteIndexOverview() {
       ]
     },
     { title: "Topics", links: getTopics().map((topic) => ({ href: `/topics/${topic.slug}`, label: topic.title })) },
-    { title: "Categories", links: HUB_CATEGORIES.map((hub) => ({ href: `/categories/${hub.slug}`, label: hub.name })) },
+    { title: "Categories", links: LISTED_HUB_CATEGORIES.map((hub) => ({ href: `/categories/${hub.slug}`, label: hub.name })) },
     {
       title: "Companies by sector",
       links: getPublishedBrandCategories(brands)
