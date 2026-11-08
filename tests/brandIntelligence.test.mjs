@@ -957,15 +957,22 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-makes-samsung-appliances-manufacturing-bespoke-ai": ["samsung-home-appliances"],
     "who-makes-sunseeker-robot-mowers-zhejiang-sunseeker": ["sunseeker"],
     "who-makes-wybot-pool-cleaners-wybotics-wangyuan": ["wybot"],
+    "who-makes-xiaomi-mijia-home-appliances": ["xiaomi-mijia"],
     "who-owns-aeg-electrolux-relationship": ["aeg",  "electrolux"],
+    "who-owns-aeg-power-tools-tti-license": ["aeg"],
     "who-owns-aiper-fluidra-stake": ["aiper"],
+    "who-owns-asko-appliances-hisense-gorenje": ["asko"],
     "who-owns-beatbot-xingmai-manufacturing": ["beatbot"],
     "who-owns-beko-appliances-beko-europe": ["beko"],
     "who-owns-bissell-family-sanitaire": ["bissell"],
     "who-owns-black-and-decker-stanley-tools": ["black-decker"],
     "who-owns-bosch-appliances-bsh-siemens-brands": ["bosch-home-appliances"],
     "who-owns-bosch-power-tools-robert-bosch": ["bosch-power-tools"],
+    "who-owns-braun-appliances-delonghi-pg-license": ["braun-household"],
+    "who-owns-breville-sage-regional-brand-rights": ["breville-sage"],
+    "who-owns-chervon-ego-flex-skil": ["chervon"],
     "who-owns-craftsman-tools-stanley-black-decker": ["craftsman"],
+    "who-owns-delonghi-appliance-group-brands": ["delonghi"],
     "who-owns-dewalt-stanley-black-decker": ["dewalt",  "black-decker",  "craftsman"],
     "who-owns-dremel-bosch-manufacturing": ["dremel",  "bosch-power-tools"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
@@ -978,14 +985,20 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-flex-tools-chervon-lowes": ["flex"],
     "who-owns-frigidaire-electrolux-manufacturing": ["electrolux"],
     "who-owns-ge-appliances-haier-manufacturing": ["ge-appliances"],
+    "who-owns-gorenje-appliances-hisense": ["gorenje"],
     "who-owns-greenworks-globe-stihl": ["greenworks",  "stihl"],
+    "who-owns-groupe-seb-brands-supor": ["groupe-seb"],
     "who-owns-haier-appliances-brand-portfolio": ["haier-home-appliances"],
+    "who-owns-hamilton-beach-brands-sourcing": ["hamilton-beach"],
     "who-owns-hayward-pool-products": ["hayward"],
     "who-owns-hilti-family-trust-manufacturing": ["hilti"],
+    "who-owns-hisense-appliances-gorenje-asko": ["hisense"],
     "who-owns-hoover-tti-haier-candy": ["hoover",  "dirt-devil"],
+    "who-owns-hotpoint-appliances-regional-split": ["hotpoint"],
     "who-owns-husqvarna-automower-motorcycles": ["husqvarna"],
     "who-owns-irobot-roomba-picea-robotics": ["irobot"],
     "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
+    "who-owns-lawnmaster-cleva-manufacturing": ["lawnmaster"],
     "who-owns-makita-company-manufacturing": ["makita"],
     "who-owns-maytag-whirlpool-manufacturing": ["whirlpool"],
     "who-owns-metabo-metabo-hpt-hikoki": ["metabo",  "hikoki"],
@@ -993,13 +1006,19 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-miele-family-manufacturing-network": ["miele"],
     "who-owns-milwaukee-tools-tti-manufacturing": ["milwaukee",  "tti"],
     "who-owns-narwal-yunjing-investors-manufacturing": ["narwal"],
+    "who-owns-nilfisk-freudenberg-manufacturing": ["nilfisk"],
+    "who-owns-panasonic-appliances-vacuum-manufacturing": ["panasonic"],
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris",  "fluidra"],
+    "who-owns-rowenta-groupe-seb-vacuums": ["rowenta"],
     "who-owns-ryobi-tti-kyocera": ["ryobi"],
     "who-owns-segway-navimow-ninebot-willand": ["segway-navimow"],
     "who-owns-sharkninja-js-global-joyoung": ["shark"],
     "who-owns-skil-tools-chervon": ["skil"],
     "who-owns-stihl-family-manufacturing": ["stihl"],
+    "who-owns-supor-groupe-seb-manufacturing": ["supor"],
+    "who-owns-teka-appliances-midea": ["teka"],
     "who-owns-tineco-ecovacs-group": ["tineco"],
+    "who-owns-toshiba-appliances-midea-lifestyle": ["toshiba-appliances"],
     "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck": ["ryobi",  "milwaukee",  "vax",  "oreck",  "dirt-devil"],
     "who-owns-whirlpool-appliances-beko-europe": ["whirlpool"],
     "who-owns-worx-positec-landroid-manufacturing": ["worx"],
@@ -1045,8 +1064,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 174);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 311);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 193);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 330);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -2212,7 +2231,7 @@ test("home-appliance batch five profiles publish independently with dedicated of
 test("home-appliance batch four profiles publish independently with dedicated official assets", async () => {
   const newSlugs = ["hotpoint", "panasonic", "toshiba-appliances"];
   const expectedTaggedArticles = new Map([
-    ["hotpoint", []],
+    ["hotpoint", ["who-owns-hotpoint-appliances-regional-split"]],
     ["panasonic", ["who-owns-panasonic-appliances-vacuum-manufacturing"]],
     ["toshiba-appliances", ["who-owns-toshiba-appliances-midea-lifestyle"]],
   ]);
