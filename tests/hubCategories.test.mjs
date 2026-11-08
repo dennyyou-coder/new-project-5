@@ -16,10 +16,10 @@ import { productModels } from "../lib/products.ts";
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
 import { getBrandCategoriesForProfile } from "../lib/brandCategories.ts";
 
-test("nine hubs with unique slugs, names, groups and colours", () => {
-  assert.equal(HUB_CATEGORIES.length, 9);
+test("ten hubs with unique slugs, names, groups and colours", () => {
+  assert.equal(HUB_CATEGORIES.length, 10);
   assert.deepEqual(HUB_CATEGORIES.map((hub) => hub.slug), [...HUB_CATEGORY_SLUGS]);
-  assert.equal(new Set(HUB_CATEGORIES.map((hub) => hub.name)).size, 9);
+  assert.equal(new Set(HUB_CATEGORIES.map((hub) => hub.name)).size, 10);
   for (const hub of HUB_CATEGORIES) {
     assert.match(hub.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.match(hub.color, /^#[0-9a-f]{6}$/);

@@ -1,6 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
 
-/** Line icons for the nine hub categories, drawn on a 24px grid. */
+/** Line icons for the hub categories, drawn on a 24px grid. */
 const CATEGORY_ICON_PATHS: Record<string, ReactNode> = {
   "robot-vacuums": (
     <>
@@ -44,6 +44,14 @@ const CATEGORY_ICON_PATHS: Record<string, ReactNode> = {
       <path d="M16 11h3l1 3v3h-4" />
       <circle cx="8" cy="19" r="1.6" />
       <circle cx="17" cy="19" r="1.6" />
+    </>
+  ),
+  "carpet-spot-cleaners": (
+    <>
+      <rect x="7" y="4" width="8" height="9" rx="2" />
+      <path d="M15 7h2.5a1.5 1.5 0 0 1 1.5 1.5V10" />
+      <path d="M9 13v3h4v-3" />
+      <path d="M3 20.5h18M6 18c.8-.6 1.6-.6 2.4 0s1.6.6 2.4 0 1.6-.6 2.4 0 1.6.6 2.4 0" />
     </>
   ),
   "window-robots": (
