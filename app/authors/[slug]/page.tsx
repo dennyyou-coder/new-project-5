@@ -49,8 +49,8 @@ export default async function AuthorPage({ params }: Props) {
   };
 
   return (
-    <div className="trust-page author-page">
-      <section className="trust-hero">
+    <div className="trust-page trust-legal-page author-page">
+      <section className="trust-hero trust-legal-hero">
         <div className="container trust-hero-inner author-hero">
           {author.image ? <img className="author-photo" src={author.image} alt={author.name} width={160} height={160} /> : <span className="author-mark" aria-hidden="true">WCB</span>}
           <div>
