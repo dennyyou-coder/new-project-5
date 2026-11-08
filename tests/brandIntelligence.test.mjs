@@ -873,6 +873,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "ecovacs-x5-hybrid-dreame-triform-market": ["dreame",  "ecovacs"],
     "european-tool-brands-battery-alliances": ["stihl",  "makita"],
     "fcc-eu-anti-dumping-robotic-mower-market-2027": ["husqvarna",  "segway-navimow",  "mammotion"],
+    "fcc-robot-ban-paths-chinese-robot-vacuums-mowers": ["husqvarna",  "roborock",  "ecovacs"],
     "flex-history-chervon-galli": ["flex",  "chervon",  "milwaukee"],
     "freudenberg-acquires-nilfisk": ["nilfisk",  "karcher"],
     "galli-chervon-new-team": ["chervon",  "flex",  "ego",  "skil"],
@@ -1044,8 +1045,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 173);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 308);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 174);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 311);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
