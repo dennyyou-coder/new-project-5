@@ -2,14 +2,33 @@
   "status": "published",
   "slug": "miele",
   "name": "Miele",
+  "metaTitle": "Who Owns Miele? Miele and Zinkann Family Ownership Explained",
   "aliases": ["Miele & Cie. KG", "Miele Professional", "Miele floorcare"],
   "legalName": "Miele & Cie. KG",
   "legalEntityNote": "Miele & Cie. KG is the principal German entity. Miele Professional is a business unit, while regional subsidiaries, factories and sales companies have distinct operating responsibilities.",
   "officialWebsite": "https://www.miele.com/en/com/",
   "headline": "Miele ownership, vacuum portfolio, manufacturing network and family-company strategy",
   "description": "A source-backed profile of Miele's two-family ownership, management structure, floorcare and appliance portfolio, production network and market channels.",
-  "metaDescription": "Miele brand profile: Miele and Zinkann family ownership, management, vacuums, appliances, Professional products, factories, channels and buyer checks.",
+  "metaDescription": "Miele is privately owned by the Miele and Zinkann founding families, with about 80 family shareholders, and based in Gütersloh, Germany since 1899.",
   "quickAnswer": "Miele is privately owned by the Miele and Zinkann founding families, with around 80 family shareholders.",
+  "faq": [
+    {
+      "question": "Who owns Miele?",
+      "answer": "Miele is privately owned by the Miele and Zinkann founding families, with around 80 family shareholders descended from founders Carl Miele and Reinhard Zinkann."
+    },
+    {
+      "question": "Is Miele a German company?",
+      "answer": "Yes. Miele was founded in 1899 and is headquartered in Gütersloh, Germany."
+    },
+    {
+      "question": "Who runs Miele?",
+      "answer": "Dr Markus Miele and Dr Reinhard Zinkann are executive directors and co-proprietors, alongside non-family executive directors."
+    },
+    {
+      "question": "Is Miele publicly traded?",
+      "answer": "No. Miele & Cie. KG is a private family company."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Miele. Historical ownership percentages, current group disclosures and factory statements are dated and scoped separately; model origin and local responsibility require product-level verification.",
   "headquarters": "Gütersloh, North Rhine-Westphalia, Germany",
   "founded": "1899",
@@ -213,5 +232,5 @@
   ],
   "publishedAt": "2026-07-30T23:45:00+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-07-30T23:45:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

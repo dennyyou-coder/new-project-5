@@ -2201,14 +2201,11 @@ test("home-appliance batch five profiles publish independently with dedicated of
       schemas.find((schema) => schema["@id"] === "#brand")["@type"],
       candidate.schemaEntityType
     );
-    assert.match(
-      schemas.find((schema) => schema["@type"] === "WebPage").name,
-      candidate.schemaEntityType === "Brand" ? /Brand Profile/ : /Corporate Profile/
-    );
-    assert.match(
-      buildBrandPageTitle(candidate),
-      candidate.schemaEntityType === "Brand" ? /Brand Profile/ : /Corporate Profile/
-    );
+    const expectedTitle = candidate.metaTitle
+      ? new RegExp(candidate.metaTitle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+      : candidate.schemaEntityType === "Brand" ? /Brand Profile/ : /Corporate Profile/;
+    assert.match(schemas.find((schema) => schema["@type"] === "WebPage").name, expectedTitle);
+    assert.match(buildBrandPageTitle(candidate), expectedTitle);
   }
 });
 

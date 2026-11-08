@@ -2,14 +2,25 @@
   "status": "published",
   "slug": "russell-hobbs",
   "name": "Russell Hobbs",
+  "metaTitle": "Who Owns Russell Hobbs? Spectrum Brands Ownership Explained",
   "aliases": ["Russell Hobbs®", "RUSSELL HOBBS"],
   "legalEntityNote": "Russell Hobbs is a consumer appliance brand owned within Spectrum Brands, not the same entity as Spectrum Brands Holdings, Inc., Spectrum Brands, Inc. or a regional operator. Spectrum Brands (UK) Limited, Russell Hobbs Deutschland GmbH, Spectrum Brands Australia Pty Ltd, local distributors, retailers and warranty providers can each hold different market responsibilities.",
   "schemaEntityType": "Brand",
   "officialWebsite": "https://en.russellhobbs.com/",
   "headline": "Russell Hobbs small appliances across Spectrum Brands and regional operators",
   "description": "A source-backed profile of Russell Hobbs, separating the owned consumer brand, Spectrum Brands holding and operating companies, regional legal entities, small-appliance portfolio, outsourced supply chain and market-specific buyer checks.",
-  "metaDescription": "Russell Hobbs brand profile: Spectrum Brands ownership, regional operators, small appliances, outsourced supply chain and buyer checks.",
+  "metaDescription": "Russell Hobbs is owned by Spectrum Brands Holdings, a U.S.-listed consumer products company. Origins in 1952, products and regional operators.",
   "quickAnswer": "Russell Hobbs is owned by Spectrum Brands Holdings, a U.S.-listed consumer products company.",
+  "faq": [
+    {
+      "question": "Who owns Russell Hobbs?",
+      "answer": "Spectrum Brands Holdings, Inc., a U.S.-listed consumer products company, owns Russell Hobbs."
+    },
+    {
+      "question": "Is Russell Hobbs a British brand?",
+      "answer": "Yes. Russell Hobbs was founded in 1952 and its European operations are based in Manchester; its parent is headquartered in Middleton, Wisconsin."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Russell Hobbs or Spectrum Brands. Brand ownership and segment disclosures do not establish the factory, origin, importer, seller, legal manufacturer or warrantor for every Russell Hobbs SKU or market.",
   "headquarters": "Manchester, United Kingdom (European operating context); parent headquartered in Middleton, Wisconsin",
   "founded": "1952",
@@ -63,5 +74,5 @@
   ],
   "publishedAt": "2026-08-07T22:20:00+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-08-07T22:20:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

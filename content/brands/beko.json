@@ -10,6 +10,24 @@
   "metaTitle": "Who Makes Beko? Arçelik, Koç Group and Beko Europe",
   "metaDescription": "Beko appliances come from Türkiye's Arçelik, part of the Koç Group. Since June 2026 it owns Beko Europe outright and licenses Whirlpool in set markets.",
   "quickAnswer": "Beko belongs to Türkiye's Arçelik, part of the Koç Group. Since June 2026 it fully owns Beko Europe.",
+  "faq": [
+    {
+      "question": "Who owns Beko?",
+      "answer": "Beko belongs to Arçelik A.Ş. of Türkiye, part of the Koç Group."
+    },
+    {
+      "question": "What country is Beko from?",
+      "answer": "Türkiye. Beko and Arçelik are based in Istanbul."
+    },
+    {
+      "question": "Does Beko own Whirlpool?",
+      "answer": "No. Beko fully owns Beko Europe since June 2026 and uses the Whirlpool brand under licence in specified European markets, but Whirlpool Corporation owns the brand."
+    },
+    {
+      "question": "Who runs Beko?",
+      "answer": "Can Dinçer is chief executive officer of Beko."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Beko, Arçelik A.Ş., Beko Europe or Whirlpool Corporation. Corporate identity, listed entity, brand ownership, regional licences, factories and product warranties must be verified separately.",
   "headquarters": "Istanbul, Türkiye (Beko / Arçelik A.Ş.)",
   "founded": "1955 for the enterprise history reported by Beko",
@@ -186,5 +204,5 @@
   ],
   "publishedAt": "2026-08-06T14:30:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-11-05T12:00:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

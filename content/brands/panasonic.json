@@ -2,13 +2,28 @@
   "status": "published",
   "slug": "panasonic",
   "name": "Panasonic",
+  "metaTitle": "Who Owns Panasonic Appliances? Panasonic Holdings and Origin",
   "aliases": ["Panasonic Corporation", "Panasonic Group"],
   "legalEntityNote": "Panasonic is a group brand, not a single legal entity for every product and market. Panasonic Holdings Corporation governs the group brand. From 1 April 2026, the reorganized Panasonic Corporation operates the group's consumer major-appliance, small-appliance and AVC businesses, including vacuum cleaners. Regional sales companies, legal manufacturers, importers, distributors and warranty providers remain model- and market-specific roles.",
   "officialWebsite": "https://www.panasonic.com/global/",
   "headline": "Panasonic home appliances, floorcare and operating responsibility",
   "description": "A source-backed profile of Panasonic consumer appliances, separating the group brand, holding company, current operating company, regional channels, product scope and model-level buyer checks.",
-  "metaDescription": "Panasonic brand profile: current consumer-appliance operator, home appliances, vacuum cleaners, regional channels and buyer verification.",
+  "metaDescription": "Panasonic appliances are run by Panasonic Corporation within Japan's Panasonic Holdings. Founded in 1918, Tokyo-based, 2026 reorganization explained.",
   "quickAnswer": "Panasonic appliances are run by Panasonic Corporation, part of Japan's Panasonic Holdings group.",
+  "faq": [
+    {
+      "question": "Who owns Panasonic?",
+      "answer": "Panasonic Holdings Corporation is the group holding company. Since 1 April 2026, Panasonic Corporation runs its major and small appliances business."
+    },
+    {
+      "question": "What country is Panasonic from?",
+      "answer": "Japan. The Panasonic Group traces its founding to 1918; the Panasonic brand was first used in 1955."
+    },
+    {
+      "question": "Who runs Panasonic's appliance business?",
+      "answer": "Akira Toyoshima is chief executive officer of Panasonic Corporation."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Panasonic Holdings Corporation or Panasonic Corporation. Group structure and portfolio evidence do not identify the manufacturer, factory, importer, seller or warrantor for every Panasonic-branded SKU.",
   "headquarters": "Tokyo, Japan (Panasonic Corporation)",
   "founded": "Panasonic Group traces its founding to 1918; the Panasonic brand was first used in 1955; the current Panasonic Corporation began operations on 1 April 2026",
@@ -204,5 +219,5 @@
   ],
   "publishedAt": "2026-08-06T19:30:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-11-06T00:30:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

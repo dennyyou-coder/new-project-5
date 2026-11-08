@@ -2,6 +2,7 @@
   "status": "published",
   "slug": "midea",
   "name": "Midea",
+  "metaTitle": "Who Owns Midea? Listed Chinese Group, Founder and Brands",
   "aliases": [
     "Midea Group",
     "Midea Smart Home",
@@ -12,8 +13,26 @@
   "officialWebsite": "https://www.midea.com/global",
   "headline": "Midea ownership, cleaning-appliance portfolio, manufacturing network and channels",
   "description": "A source-backed profile of Midea Group's listed ownership, cleaning-appliance portfolio, Robozone and Eureka boundaries, global production network and channels.",
-  "metaDescription": "Midea brand profile: listed ownership, leadership, floor care, Midea Robozone, Eureka, factories, global channels and buyer checks.",
+  "metaDescription": "Midea Group is listed in Shenzhen and based in Foshan, China; founder He Xiangjian remains a key shareholder. Brands include Eureka and Toshiba appliances.",
   "quickAnswer": "Midea Group is listed in Shenzhen. Founder He Xiangjian and related parties remain important shareholders.",
+  "faq": [
+    {
+      "question": "Who owns Midea?",
+      "answer": "Midea Group Co., Ltd. is listed in Shenzhen. Founder He Xiangjian and related parties remain important shareholders."
+    },
+    {
+      "question": "What is Midea's parent company?",
+      "answer": "Midea Group Co., Ltd. is itself the listed parent; its product subsidiaries and regional companies sit beneath it."
+    },
+    {
+      "question": "What country is Midea from?",
+      "answer": "China. Midea was founded in 1968 and is headquartered in Beijiao, Foshan, Guangdong."
+    },
+    {
+      "question": "Who runs Midea?",
+      "answer": "Fang Hongbo is chairman and president of Midea Group."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Midea or Eureka. Group disclosures, regional-company roles, the separately marketed Eureka brand and model-specific factory records are identified separately and should not be generalized to every Midea product.",
   "headquarters": "Beijiao, Foshan, Guangdong, China",
   "founded": "1968",
@@ -210,5 +229,5 @@
   ],
   "publishedAt": "2026-07-31T15:30:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-11-06T12:00:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }
