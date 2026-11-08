@@ -20,6 +20,11 @@
     "The large appliance groups went the other way. Midea's revenue fell 4.12%, Haier's 10.13% and Whirlpool's 8.8%, with Whirlpool reporting a loss after an India impairment. SharkNinja grew 21.2%, but its Cleaning Appliances category grew only 4.1%; cooking, food preparation and beauty drove the group. Electrolux grew 3.5% organically and still reported a net loss.",
     "Outdoor and pool were mixed. Husqvarna's sales fell and it reported an operating loss as European robotic-mower demand weakened. Pentair's pool sales fell 18% as a channel inventory reset ended, while Hayward grew 6.5%. Tennant's robotics sales rose 71%. In the US, refunds of the IEEPA tariffs struck down in February lifted reported profits at SharkNinja and Stanley Black & Decker, so headline profit growth there needs to be read with the refund taken out."
   ],
+  "chart": {
+    "type": "results-growth",
+    "title": "Q3 2026 revenue growth, as each company reported it",
+    "note": "Year-on-year change in each company's own currency; organic or like-for-like where that is all the company states."
+  },
   "keyFacts": [
     {
       "label": "Fastest growth",

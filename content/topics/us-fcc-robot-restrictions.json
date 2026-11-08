@@ -20,6 +20,35 @@
     "The category is defined by where a robot is produced, not by who owns the brand. A robot that moves over the ground, navigates or avoids obstacles, carries environmental sensors and network connectivity, and weighs more than about 2 kg with its dock falls inside it. That describes almost every LiDAR or camera robot vacuum, every RTK or vision robotic mower and most commercial floor-cleaning robots, whether the brand is Chinese, American or European.",
     "The rule bites on the next product cycle rather than today's shelves. Models the FCC authorized before 28 July can still be imported and sold, and owners can keep using them. New models need Conditional Approval, which so far has gone only to producers with a US manufacturing or onshoring plan."
   ],
+  "chart": {
+    "type": "bars",
+    "title": "Producers granted Conditional Approval so far",
+    "note": "Each approval covers named models only. Previously authorized models of any brand can still be sold.",
+    "rows": [
+      {
+        "label": "Husqvarna",
+        "segments": [
+          4
+        ],
+        "display": "4 robotic mower platforms · 9 Sep 2026",
+        "href": "/brands/husqvarna"
+      },
+      {
+        "label": "ANSCER",
+        "segments": [
+          3
+        ],
+        "display": "3 warehouse robots · 18 Sep 2026"
+      },
+      {
+        "label": "Matic",
+        "segments": [
+          2
+        ],
+        "display": "Floor cleaner and dock · 2 Oct 2026"
+      }
+    ]
+  },
   "keyFacts": [
     {
       "label": "Effective",
