@@ -80,7 +80,7 @@ test("landing pages carry company logos, the ownership card and guide ordering",
   assert.match(read("app/categories/page.tsx"), /<CategoryIcon slug=\{data\.hub\.slug\}/);
   assert.match(read("app/markets/page.tsx"), /figure-chip figure-chip--\$\{figureDirection\(growth\)\}/);
   assert.match(read("app/brands/page.tsx"), /brandMonogram\(group\.parent\)/);
-  const guides = read("app/guides/page.tsx");
+  const guides = read("app/guides/listing.tsx");
   assert.match(guides, /const guideTypeOrder = \["ownership", "comparison", "buying", "explainer", "sourcing", "maintenance"\]/);
 });
 
