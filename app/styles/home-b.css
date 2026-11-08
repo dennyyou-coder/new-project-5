@@ -942,85 +942,31 @@
 .home-b .home-b-lead-credit:empty { display: none; }
 .home-b .home-b-lead-credit a { color: inherit; text-decoration: underline; }
 
-/* Industry watch: the running WCB topics open the homepage. */
+/* Industry watch: the running WCB topics, as compact cards under the hero. */
 .home-b .home-b-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
-.home-b .home-b-watch { padding: 36px 0 44px; background: #0e1526; color: #fff; }
-.home-b .home-b-watch-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
-.home-b .home-b-watch .home-b-watch-head .home-b-watch-title { margin: 0; display: flex; align-items: center; gap: 12px; font-size: clamp(26px, 3vw, 36px); font-weight: 700; letter-spacing: -0.02em; color: #fff; }
-.home-b .home-b-watch-live { width: 12px; height: 12px; border-radius: 50%; background: #ef4135; box-shadow: 0 0 0 5px rgba(239, 65, 53, 0.25); flex: none; }
-.home-b .home-b-watch-all { color: #c9d4ff; font-weight: 600; min-height: 40px; display: inline-flex; align-items: center; }
-.home-b .home-b-watch-all:hover { color: #fff; }
-.home-b .home-b-watch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.home-b .home-b-watch-card { display: grid; grid-template-rows: auto 1fr; overflow: hidden; border-radius: 16px; background: #fff; color: var(--hb-text); min-width: 0; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25); }
-.home-b .home-b-watch-image { position: relative; display: block; aspect-ratio: 16 / 8; overflow: hidden; background: #1b2438; }
-.home-b .home-b-watch-image img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
-.home-b .home-b-watch-card:hover .home-b-watch-image img { transform: scale(1.03); }
-.home-b .home-b-watch-status { position: absolute; left: 16px; bottom: 16px; margin: 0; max-width: calc(100% - 32px); padding: 7px 12px; border-radius: 8px; background: #c8352b; color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; line-height: 1.3; }
-.home-b .home-b-watch-status--plain { position: static; justify-self: start; }
-.home-b .home-b-watch-body { display: grid; gap: 10px; align-content: start; padding: 22px 24px 24px; }
-.home-b .home-b-watch-card h3 { margin: 0; font-size: clamp(22px, 2.3vw, 28px); line-height: 1.18; letter-spacing: -0.015em; }
-.home-b .home-b-watch-card h3 a { color: var(--hb-ink); text-decoration: none; }
-.home-b .home-b-watch-card h3 a:hover { color: var(--hb-link); }
-.home-b .home-b-watch-text { margin: 0; font-size: 16px; line-height: 1.55; color: var(--hb-muted); }
-.home-b .home-b-watch-dates { margin: 4px 0 0; display: grid; gap: 6px; padding-top: 12px; border-top: 1px solid var(--hb-line); }
-.home-b .home-b-watch-dates div { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 8px; font-size: 15px; line-height: 1.45; }
-.home-b .home-b-watch-dates dt { font-weight: 700; color: #b42d24; }
-.home-b .home-b-watch-dates dd { margin: 0; color: var(--hb-text); }
-.home-b .home-b-watch-more { justify-self: start; min-height: 40px; display: inline-flex; align-items: center; font-weight: 700; color: var(--hb-link); }
-@media (max-width: 900px) {
-  .home-b .home-b-watch-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 640px) {
-  .home-b .home-b-watch { padding: 24px 0 28px; }
-  .home-b .home-b-watch-body { padding: 18px; }
-  .home-b .home-b-watch-status { left: 12px; bottom: 12px; font-size: 12px; }
-}
-
-/* Leading companies and the Q3 results league, right under Industry watch. */
-.home-b .home-b-leaders { background: var(--hb-soft); border-bottom: 1px solid var(--hb-line); }
-.home-b .home-b-leaders-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
-.home-b .home-b-leader { display: grid; grid-template-rows: auto 1fr; overflow: hidden; border: 1px solid var(--hb-line); border-radius: 14px; background: #fff; min-width: 0; transition: box-shadow 0.2s ease, transform 0.2s ease; }
-.home-b .home-b-leader:hover { box-shadow: 0 12px 28px rgba(14, 21, 38, 0.1); transform: translateY(-2px); }
-.home-b .home-b-leader-image { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: #eef1f6; }
-.home-b .home-b-leader-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.home-b .home-b-leader-body { display: grid; gap: 10px; align-content: start; padding: 14px 16px 16px; }
-.home-b .home-b-leader-name { display: inline-flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 700; color: var(--hb-ink); text-decoration: none; }
-.home-b .home-b-leader-name:hover { color: var(--hb-link); }
-.home-b .home-b-leader .figure-chip { justify-self: start; }
-.home-b .home-b-leader-story { display: grid; gap: 4px; padding-top: 10px; border-top: 1px solid var(--hb-line); color: var(--hb-text); text-decoration: none; font-size: 15px; line-height: 1.4; }
-.home-b .home-b-leader-story span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.home-b .home-b-leader-story:hover span { color: var(--hb-link); }
-.home-b .home-b-leader-story time { font-size: 13px; color: var(--hb-subtle); }
-.home-b .home-b-league { margin-top: 32px; padding: 22px 24px; border: 1px solid var(--hb-line); border-radius: 14px; background: #fff; }
-.home-b .home-b-league h3 { margin: 0; font-size: 21px; }
-.home-b .home-b-league-list { list-style: none; margin: 14px 0 0; padding: 0; display: grid; }
-.home-b .home-b-league-list li { display: grid; grid-template-columns: 28px minmax(150px, 1.4fr) minmax(110px, 1fr) minmax(80px, 1.6fr) 150px; gap: 14px; align-items: center; padding: 9px 0; border-top: 1px solid var(--hb-line); font-size: 15px; }
-.home-b .home-b-league-list li:first-child { border-top: 0; }
-.home-b .home-b-league-rank { font-weight: 700; color: var(--hb-subtle); text-align: right; }
-.home-b .home-b-league-name { display: inline-flex; align-items: center; gap: 10px; min-width: 0; font-weight: 600; color: var(--hb-ink); text-decoration: none; }
-.home-b .home-b-league-name:hover { color: var(--hb-link); }
-.home-b .home-b-league-revenue { color: var(--hb-muted); font-variant-numeric: tabular-nums; }
-.home-b .home-b-league-bar { display: block; height: 10px; border-radius: 5px; background: #eef1f6; overflow: hidden; }
-.home-b .home-b-league-bar span { display: block; height: 100%; border-radius: 5px; }
-.home-b .home-b-league-bar .is-up, .home-b .home-b-league-change.is-up { background: #1f8a4c; color: #1f7a45; }
-.home-b .home-b-league-bar .is-down, .home-b .home-b-league-change.is-down { background: #c8352b; color: #b42d24; }
-.home-b .home-b-league-change { background: none !important; font-weight: 700; font-variant-numeric: tabular-nums; font-size: 14px; }
-.home-b .home-b-league-note { margin: 12px 0 0; font-size: 13px; color: var(--hb-subtle); }
-@media (max-width: 1100px) {
-  .home-b .home-b-leaders-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 760px) {
-  .home-b .home-b-league { padding: 16px; }
-  .home-b .home-b-league-list li { grid-template-columns: 22px minmax(0, 1fr) auto; grid-template-areas: "rank name change" ". revenue revenue" ". bar bar"; row-gap: 6px; }
-  .home-b .home-b-league-rank { grid-area: rank; }
-  .home-b .home-b-league-name { grid-area: name; }
-  .home-b .home-b-league-change { grid-area: change; text-align: right; }
-  .home-b .home-b-league-revenue { grid-area: revenue; font-size: 13px; }
-  .home-b .home-b-league-bar { grid-area: bar; }
+.home-b .home-b-watch { padding: 28px 0 0; }
+.home-b .home-b-watch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.home-b .home-b-watch-card { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); overflow: hidden; border: 1px solid var(--hb-line); border-radius: 14px; background: #fff; color: var(--hb-text); text-decoration: none; min-width: 0; transition: box-shadow 0.2s ease; }
+.home-b .home-b-watch-card:hover { box-shadow: 0 12px 26px rgba(14, 21, 38, 0.09); }
+.home-b .home-b-watch-card:hover .home-b-watch-title { color: var(--hb-link); }
+.home-b .home-b-watch-image { position: relative; display: block; min-height: 170px; background: #eef1f6; }
+.home-b .home-b-watch-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14, 21, 38, 0) 35%, rgba(14, 21, 38, 0.82) 100%); pointer-events: none; }
+.home-b .home-b-watch-label { position: absolute; left: 14px; right: 14px; bottom: 12px; z-index: 1; color: #fff; font-size: clamp(22px, 2.4vw, 30px); font-weight: 800; line-height: 1.05; letter-spacing: -0.01em; text-transform: uppercase; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35); }
+.home-b .home-b-watch-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.home-b .home-b-watch-body { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px; min-width: 0; }
+.home-b .home-b-watch-badge { align-self: flex-start; padding: 4px 9px; border-radius: 5px; background: #c8352b; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.home-b .home-b-watch-title { font-size: 20px; font-weight: 700; line-height: 1.22; color: var(--hb-ink); }
+.home-b .home-b-watch-dek { font-size: 15px; line-height: 1.45; color: var(--hb-muted); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.home-b .home-b-watch-open { margin-top: auto; font-size: 14px; font-weight: 700; color: var(--hb-link); }
+@media (max-width: 960px) {
+  .home-b .home-b-watch-grid { grid-template-columns: 1fr; gap: 14px; }
 }
 @media (max-width: 560px) {
-  .home-b .home-b-leaders-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .home-b .home-b-leader-body { padding: 10px 12px 12px; }
-  .home-b .home-b-leader-name { font-size: 15px; gap: 8px; }
-  .home-b .home-b-leader-story { font-size: 13px; }
+  .home-b .home-b-watch { padding-top: 20px; }
+  .home-b .home-b-watch-card { grid-template-columns: 120px minmax(0, 1fr); }
+  .home-b .home-b-watch-image { min-height: 0; }
+  .home-b .home-b-watch-label { left: 10px; right: 10px; bottom: 10px; font-size: 17px; }
+  .home-b .home-b-watch-body { padding: 12px 14px; gap: 6px; }
+  .home-b .home-b-watch-title { font-size: 16px; }
+  .home-b .home-b-watch-dek { font-size: 13px; -webkit-line-clamp: 2; }
 }

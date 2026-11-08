@@ -11,10 +11,14 @@ export type TopicSource = { title: string; url: string };
 export type Topic = {
   slug: string;
   title: string;
+  /** Two or three words shown over the topic image on the homepage, e.g. "FCC Ban". */
+  shortLabel?: string;
   seoTitle?: string;
   dek: string;
   description: string;
   coverImage?: string;
+  /** Credit and licence for the cover image, shown with the sources. */
+  coverCredit?: { text: string; url: string };
   updated: string;
   status: { label: string; text: string };
   summary: string[];
@@ -72,4 +76,9 @@ export function topicDate(value: string) {
   const [year, month, day] = value.split("-").map(Number);
   const monthName = new Date(Date.UTC(year, (month || 1) - 1, 1)).toLocaleString("en-GB", { month: "short", timeZone: "UTC" });
   return day ? `${day} ${monthName} ${year}` : `${monthName} ${year}`;
+}
+
+/** The smaller 600px version that sits next to a topic cover ("cover.webp" → "cover-600.webp"). */
+export function topicImageSmall(url: string) {
+  return url.replace(/\.webp$/, "-600.webp");
 }

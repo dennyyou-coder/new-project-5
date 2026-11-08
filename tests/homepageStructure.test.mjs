@@ -24,16 +24,15 @@ test("home retains a single main heading and search guides stay outside editoria
   assert.match(home, /getEditorialInsights\(articles\)/);
 });
 
-test("home order: Industry watch, leading companies, WCB Expo, news, From Denny, categories, products, companies, subscribe", () => {
+test("home order: WCB Expo, Industry watch, news, From Denny, categories, products, companies, subscribe", () => {
   // The running WCB topics open the page; the old intro and search block is gone.
   assert.doesNotMatch(home, /The global cleaning industry, in one place\.|<HomeSearch/);
   assert.match(home, /getTopics\(\)/);
   assert.match(home, /\{expoUpcoming \? \(\s*<section className="home-b-expo"/);
   const body = home.slice(home.indexOf("  return (\n    <div className=\"home-b\">"));
   const order = [
-    'id="home-watch-title"',
-    'id="home-leaders-title"',
     'id="home-expo-title"',
+    'id="home-watch-title"',
     'id="home-feed-title"',
     'id="home-denny-title"',
     'id="home-categories-title"',

@@ -1,10 +1,15 @@
 {
   "slug": "us-fcc-robot-restrictions",
   "title": "US FCC Robot Restrictions",
+  "shortLabel": "FCC Ban",
   "seoTitle": "US FCC Robot Restrictions: Robot Vacuums and Mowers",
   "dek": "How the FCC Covered List reaches foreign-produced robot vacuums, robotic mowers and commercial cleaning robots, who has been exempted, and what it means for the next product cycle.",
   "description": "WCB's running file on the US FCC Covered List for foreign-produced advanced robotic devices: scope, exemptions granted, timeline and analysis for robot vacuums, robotic mowers and pool robots.",
-  "coverImage": "/images/articles/fcc-eu-anti-dumping-robotic-mower-market-2027/01-cover.webp",
+  "coverImage": "/images/topics/us-fcc-robot-restrictions/cover.webp",
+  "coverCredit": {
+    "text": "FCC Chairman Brendan Carr, official portrait, 2025. Federal Communications Commission, public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Brendan_Carr,_official_portrait_2025.jpg"
+  },
   "updated": "2026-11-07",
   "status": {
     "label": "In force since 28 July 2026",

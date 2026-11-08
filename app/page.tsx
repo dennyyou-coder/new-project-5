@@ -21,8 +21,8 @@ import { getNews, getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel 
 import { EXPO_2026, isExpoUpcoming } from "@/lib/hubPresentation";
 import { homeVideos } from "@/lib/wcbVideos";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
-import { getTopics, topicDate, topicHref } from "@/lib/topics";
-import { formatAmount, latestResults, revenueChange } from "@/lib/financials";
+import { getTopics, topicHref, topicImageSmall } from "@/lib/topics";
+import { compareKeyBrands, isKeyBrand } from "@/lib/keyBrands";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 // Re-render a few times a day so the expo band drops off after the expo closes without a deploy.
@@ -57,45 +57,16 @@ export default function HomePage() {
   const marks = buildBrandMarkIndex(brands);
   const expoUpcoming = isExpoUpcoming();
 
-  // The industry's running stories: each WCB topic with its status, latest development and next date.
-  const today = new Date().toISOString().slice(0, 10);
-  const watch = getTopics().map((topic) => ({
-    topic,
-    latest: [...topic.timeline].reverse().find((event) => event.date <= today),
-    next: topic.timeline.find((event) => event.date > today)
-  }));
+  // The industry's running stories: each WCB topic as an image card under the hero.
+  const watch = getTopics().map((topic) => ({ topic }));
 
-  // Leading companies: an editorial pick of the brands that set the pace, each with its newest story and latest reported revenue change.
-  const leaderSlugs = ["roborock", "ecovacs", "dreame", "shark", "dyson", "irobot", "midea", "husqvarna"];
-  const reported = latestResults();
-  const leaders = leaderSlugs
-    .map((slug) => brands.find((brand) => brand.slug === slug))
-    .filter((brand): brand is NonNullable<typeof brand> => Boolean(brand))
-    .map((brand) => {
-      const result = reported.find((item) => item.brand === brand.slug);
-      return {
-        brand,
-        image: brand.heroImage ? brand.heroImage.replace(/\.webp$/, "-640.webp") : undefined,
-        story: news.find((item) => item.brandSlugs.includes(brand.slug)),
-        figure: result ? { label: `${result.period} revenue`, change: revenueChange(result) } : undefined
-      };
-    });
-
-  // Results league: every company's Q3 2026 revenue change as reported, fastest growth first.
-  const growthOf = (change?: string) => {
-    const match = change?.match(/([+−-])?(\d+(?:\.\d+)?)%/);
-    return match ? (match[1] === "−" || match[1] === "-" ? -1 : 1) * Number(match[2]) : undefined;
-  };
-  const league = reported
-    .filter((result) => result.period === "Q3 2026")
-    .map((result) => ({ result, change: revenueChange(result), growth: growthOf(revenueChange(result)), company: brands.find((brand) => brand.slug === result.brand) }))
-    .filter((row): row is typeof row & { growth: number } => row.growth !== undefined)
-    .sort((a, b) => b.growth - a.growth);
-  const leagueMax = Math.max(1, ...league.map((row) => Math.abs(row.growth)));
-
-  // One newest model from each product category.
+  // One model from each product category: a key brand's newest 2026 model when there is one, else the newest.
+  const thisYear = (model: (typeof featuredProductModels)[number]) => String(model.announced ?? "").startsWith("2026");
   const newModels = [...featuredProductModels]
-    .sort((a, b) => String(b.announced ?? "").localeCompare(String(a.announced ?? "")))
+    .sort((a, b) =>
+      Number(isKeyBrand(b.brandSlug) && thisYear(b)) - Number(isKeyBrand(a.brandSlug) && thisYear(a)) ||
+      String(b.announced ?? "").localeCompare(String(a.announced ?? ""))
+    )
     .filter((model, index, all) => all.findIndex((other) => other.category === model.category) === index)
     .slice(0, 6);
 
@@ -140,8 +111,12 @@ export default function HomePage() {
       articleCount.set(slug, (articleCount.get(slug) ?? 0) + 1);
     }
   }
+  // Key brands first (lib/keyBrands.ts), then by how much WCB has written about each company.
   const byCoverage = [...brands].sort(
-    (a, b) => (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0) || a.name.localeCompare(b.name)
+    (a, b) =>
+      compareKeyBrands(a.slug, b.slug) ||
+      (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0) ||
+      a.name.localeCompare(b.name)
   );
   const topCompanies = byCoverage.slice(0, 12);
   // Caption each company with the hub where it has the most product models, else its first hub.
@@ -156,10 +131,13 @@ export default function HomePage() {
       }
     }
   }
-  // Brand → parent pairs, one per parent, preferring parents that have their own profile.
+  // Brand → parent pairs, one per parent, preferring parents that have their own profile; pairs involving a key brand first.
   const ownershipPairs = byCoverage
     .map((brand) => ({ brand, parentProfile: findParentProfile(brand, brands), parentName: shortParentName(brand.ownership.parentCompany) }))
     .filter((pair) => pair.parentName && pair.parentProfile)
+    .sort((a, b) =>
+      Number(isKeyBrand(b.brand.slug) || isKeyBrand(b.parentProfile?.slug)) - Number(isKeyBrand(a.brand.slug) || isKeyBrand(a.parentProfile?.slug))
+    )
     .filter((pair, index, all) => all.findIndex((other) => other.parentProfile?.slug === pair.parentProfile?.slug) === index)
     .slice(0, 4);
 
@@ -174,8 +152,10 @@ export default function HomePage() {
     (visual) => visual.label === "Company image",
     (visual) => !isBorrowedNewsVisual(visual)
   ];
+  // Within each picture tier, a key brand's story leads before other companies' stories.
+  const recentKeyFirst = [...recent].sort((a, b) => compareKeyBrands(a.brandSlugs.find(isKeyBrand), b.brandSlugs.find(isKeyBrand)));
   const leadNews = leadTiers
-    .map((tier) => recent.find((item) => { const visual = getNewsVisual(item); return visual ? tier(visual) : false; }))
+    .map((tier) => recentKeyFirst.find((item) => { const visual = getNewsVisual(item); return visual ? tier(visual) : false; }))
     .find(Boolean);
   const leadVisual = leadNews ? getNewsVisual(leadNews) : undefined;
   const weekNews = recent.filter((item) => item.slug !== leadNews?.slug).slice(0, 6);
@@ -208,98 +188,6 @@ export default function HomePage() {
     <div className="home-b">
       <h1 className="home-b-sr-only">World Clean Biz: news and intelligence on the global cleaning industry</h1>
 
-      {watch.length ? (
-        <section className="home-b-watch" aria-labelledby="home-watch-title">
-          <div className="home-b-container">
-            <div className="home-b-watch-head">
-              <h2 id="home-watch-title" className="home-b-watch-title"><span className="home-b-watch-live" aria-hidden="true" />Industry watch</h2>
-              <Link className="home-b-watch-all" href="/topics">All topics</Link>
-            </div>
-            <div className="home-b-watch-grid">
-              {watch.map(({ topic, latest, next }) => (
-                <article key={topic.slug} className="home-b-watch-card">
-                  {topic.coverImage ? (
-                    <Link className="home-b-watch-image" href={topicHref(topic.slug)} tabIndex={-1} aria-hidden="true">
-                      <img {...responsiveImageProps(topic.coverImage, "card")} alt="" loading="eager" />
-                      <span className="home-b-watch-status">{topic.status.label}</span>
-                    </Link>
-                  ) : null}
-                  <div className="home-b-watch-body">
-                    {topic.coverImage ? null : <p className="home-b-watch-status home-b-watch-status--plain">{topic.status.label}</p>}
-                    <h3><Link href={topicHref(topic.slug)}>{topic.title}</Link></h3>
-                    <p className="home-b-watch-text">{topic.status.text}</p>
-                    <dl className="home-b-watch-dates">
-                      {latest ? (<div><dt>Latest</dt><dd><time dateTime={latest.date}>{topicDate(latest.date)}</time> · {latest.title}</dd></div>) : null}
-                      {next ? (<div><dt>Next</dt><dd><time dateTime={next.date}>{topicDate(next.date)}</time> · {next.title}</dd></div>) : null}
-                    </dl>
-                    <Link className="home-b-watch-more" href={topicHref(topic.slug)}>Follow the topic →</Link>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
-
-      {leaders.length ? (
-        <section className="home-b-section home-b-leaders" id="leading-companies" aria-labelledby="home-leaders-title">
-          <div className="home-b-container">
-            <div className="home-b-head">
-              <h2 id="home-leaders-title">Leading companies</h2>
-              <Link className="wcb-more" href="/brands">All {brands.length} companies</Link>
-            </div>
-            <p className="home-b-sub">The companies setting the pace in cleaning appliances, with their latest news and reported results.</p>
-            <div className="home-b-leaders-grid">
-              {leaders.map(({ brand, image, story, figure }) => (
-                <article key={brand.slug} className="home-b-leader">
-                  <Link className="home-b-leader-image" href={`/brands/${brand.slug}`} tabIndex={-1} aria-hidden="true">
-                    {image ? <img src={image} alt="" width={640} height={400} loading="lazy" decoding="async" /> : null}
-                  </Link>
-                  <div className="home-b-leader-body">
-                    <Link className="home-b-leader-name" href={`/brands/${brand.slug}`}>
-                      <CompanyMark mark={marks.get(brand.slug)!} size="sm" />
-                      <span>{brand.name}</span>
-                    </Link>
-                    {figure?.change ? <FigureChip label={figure.label} change={figure.change} /> : null}
-                    {story ? (
-                      <Link className="home-b-leader-story" href={`/news/${story.slug}`}>
-                        <span>{story.title}</span>
-                        <time dateTime={story.eventDate}>{newsDate(story.eventDate)}</time>
-                      </Link>
-                    ) : null}
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            {league.length ? (
-              <div className="home-b-league">
-                <div className="home-b-head">
-                  <h3>Q3 2026 results: revenue growth league</h3>
-                  <Link className="wcb-more" href="/markets">All results</Link>
-                </div>
-                <ol className="home-b-league-list">
-                  {league.map(({ result, change, growth, company }, index) => (
-                    <li key={result.company}>
-                      <span className="home-b-league-rank">{index + 1}</span>
-                      <Link className="home-b-league-name" href={result.news ? `/news/${result.news}` : `/brands/${result.brand}`}>
-                        {company ? <CompanyMark mark={marks.get(company.slug)!} size="xs" /> : null}
-                        <span>{result.name}</span>
-                      </Link>
-                      <span className="home-b-league-revenue">{formatAmount(result.revenue, result.currency)}</span>
-                      <span className="home-b-league-bar" aria-hidden="true">
-                        <span className={growth < 0 ? "is-down" : "is-up"} style={{ width: `${(Math.abs(growth) / leagueMax) * 100}%` }} />
-                      </span>
-                      <span className={`home-b-league-change ${growth < 0 ? "is-down" : "is-up"}`}>{change}</span>
-                    </li>
-                  ))}
-                </ol>
-                <p className="home-b-league-note">Reported year-on-year revenue change in each company’s own currency. Some companies state organic or like-for-like growth only, as marked.</p>
-              </div>
-            ) : null}
-          </div>
-        </section>
-      ) : null}
 
       {expoUpcoming ? (
         <section className="home-b-expo" id="expo" aria-labelledby="home-expo-title">
@@ -320,6 +208,41 @@ export default function HomePage() {
             <Link className="home-b-expo-image" href="/wcb-expo" tabIndex={-1} aria-hidden="true">
               <img src={EXPO_2026.image} srcSet={`${EXPO_2026.image.replace(/\.webp$/, "-800.webp")} 800w, ${EXPO_2026.image} 1600w`} sizes="(max-width: 900px) calc(100vw - 32px), 50vw" alt="" width={1600} height={900} loading="eager" decoding="async" fetchPriority="high" />
             </Link>
+          </div>
+        </section>
+      ) : null}
+
+      {watch.length ? (
+        <section className="home-b-section home-b-watch" aria-labelledby="home-watch-title">
+          <div className="home-b-container">
+            <h2 id="home-watch-title" className="home-b-sr-only">Industry watch: WCB topics</h2>
+            <div className="home-b-watch-grid">
+              {watch.map(({ topic }) => (
+                <Link key={topic.slug} className="home-b-watch-card" href={topicHref(topic.slug)}>
+                  <span className="home-b-watch-image">
+                    {topic.coverImage ? (
+                      <img
+                        src={topicImageSmall(topic.coverImage)}
+                        srcSet={`${topicImageSmall(topic.coverImage)} 600w, ${topic.coverImage} 1200w`}
+                        sizes="(max-width: 560px) 120px, (max-width: 960px) 45vw, 300px"
+                        alt=""
+                        width={600}
+                        height={375}
+                        loading="eager"
+                        decoding="async"
+                      />
+                    ) : null}
+                    {topic.shortLabel ? <span className="home-b-watch-label" aria-hidden="true">{topic.shortLabel}</span> : null}
+                  </span>
+                  <span className="home-b-watch-body">
+                    <span className="home-b-watch-badge">WCB Topic</span>
+                    <span className="home-b-watch-title">{topic.title}</span>
+                    <span className="home-b-watch-dek">{topic.dek}</span>
+                    <span className="home-b-watch-open">Follow the topic →</span>
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       ) : null}
@@ -407,10 +330,10 @@ export default function HomePage() {
           </div>
           <div className="home-b-categories">
             {hubs.map((data) => {
-              // Companies whose main category is this hub first, then by coverage.
+              // Companies whose main category is this hub first, key brands among them first, then by coverage.
               const isHome = (slug: string) => (hubOfBrand.get(slug) === data.hub.name ? 1 : 0);
               const leaders = [...data.companies]
-                .sort((a, b) => isHome(b.slug) - isHome(a.slug) || (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0))
+                .sort((a, b) => isHome(b.slug) - isHome(a.slug) || compareKeyBrands(a.slug, b.slug) || (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0))
                 .slice(0, 3);
               return (
                 <Link
