@@ -1,6 +1,6 @@
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
-import { HUB_CATEGORIES, productCategoryLabel } from "@/lib/hubCategories";
+import { LISTED_HUB_CATEGORIES, productCategoryLabel } from "@/lib/hubCategories";
 import { getNews, newsDate } from "@/lib/news";
 import { productModels } from "@/lib/products";
 import { getTopics, topicHref } from "@/lib/topics";
@@ -50,7 +50,7 @@ export function getSearchIndex(): SearchEntry[] {
       primary: [brand.name, ...brand.aliases, brand.legalName ?? ""].join(" "),
       secondary: `${brand.headline} ${brand.description}`
     })),
-    ...HUB_CATEGORIES.map((hub) => ({
+    ...LISTED_HUB_CATEGORIES.map((hub) => ({
       kind: "Categories" as const,
       title: hub.name,
       href: `/categories/${hub.slug}`,

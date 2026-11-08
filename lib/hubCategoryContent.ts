@@ -2,7 +2,7 @@ import { getBrandCategoriesForProfile } from "@/lib/brandCategories";
 import { getPublishedBrandProfiles, type BrandProfile } from "@/lib/brands";
 import { getInsights, type Insight } from "@/lib/content";
 import {
-  HUB_CATEGORIES,
+  LISTED_HUB_CATEGORIES,
   hubCategoriesForBrand,
   hubCategoriesForInsight,
   hubCategoriesForNews,
@@ -108,5 +108,5 @@ export function getAllHubCategoryData(): HubCategoryData[] {
     products: productModels,
     brands: getPublishedBrandProfiles(insights)
   };
-  return HUB_CATEGORIES.map((hub) => buildHubCategoryData(hub, source));
+  return LISTED_HUB_CATEGORIES.map((hub) => buildHubCategoryData(hub, source));
 }

@@ -11,6 +11,7 @@ import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
 import { BrandCategoryPage } from "@/components/brands/BrandCategoryPage";
 import { BrandHero } from "@/components/brands/BrandHero";
+import { pickOwnershipGuide } from "@/lib/brandProfileView";
 import { BrandFinancials } from "@/components/brands/BrandFinancials";
 import { BrandFactRail } from "@/components/brands/BrandFactRail";
 import { BrandSections, type BrandCompetitorCard, type BrandModelCard } from "@/components/brands/BrandSections";
@@ -186,9 +187,7 @@ export default async function BrandPage({ params }: PageProps) {
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 5);
 
-  const ownershipAnalysis = articles.find(
-    (article) => article.contentClass === "search" && article.guideType === "ownership" && article.primaryBrands.includes(profile.slug)
-  );
+  const ownershipAnalysis = pickOwnershipGuide(profile, articles);
 
   return (
     <div className="guides-hub brand-hub brand-detail approved-catalog">
@@ -201,7 +200,7 @@ export default async function BrandPage({ params }: PageProps) {
             parentMark={parentProfile ? markIndex.get(parentProfile.slug) : undefined}
             models={models}
             competitors={competitors}
-            ownershipAnalysisHref={ownershipAnalysis ? `/blog/${ownershipAnalysis.slug}` : undefined}
+            ownershipGuide={ownershipAnalysis ? { href: `/blog/${ownershipAnalysis.slug}`, title: ownershipAnalysis.title } : undefined}
             latest={<BrandLatest name={profile.name} items={latestItems} />}
           />
           <BrandPhotos profile={profile} />

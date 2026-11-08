@@ -18,7 +18,7 @@ import {
   getPublishedEquipmentProfiles
 } from "@/lib/equipment";
 import { GUIDE_TYPE_CONFIG } from "@/lib/guideTaxonomy";
-import { HUB_CATEGORIES } from "@/lib/hubCategories";
+import { LISTED_HUB_CATEGORIES } from "@/lib/hubCategories";
 
 const baseUrl = "https://worldcleanbiz.com";
 
@@ -83,7 +83,7 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
     "",
     "/categories",
     "/markets",
-    ...HUB_CATEGORIES.map((hub) => `/categories/${hub.slug}`),
+    ...LISTED_HUB_CATEGORIES.map((hub) => `/categories/${hub.slug}`),
     "/videos",
     "/products",
     ...productModels.map((model) => `/products/${model.slug}`),

@@ -34,3 +34,32 @@ test("article redirects point at articles that exist", () => {
     assert.ok(existsSync(`content/insights/${slug}.mdx`) || existsSync(`content/insights/${slug}.md`), slug);
   }
 });
+
+test("every listed category hub has enough coverage; thin hubs stay out of the sitemap", async () => {
+  const { HUB_CATEGORIES, LISTED_HUB_CATEGORIES } = await import("@/lib/hubCategories");
+  const { getHubCategoryData } = await import("@/lib/hubCategoryContent");
+  const urls = new Set(buildDiscoverySitemap().map((entry) => entry.url));
+  for (const hub of HUB_CATEGORIES) {
+    const data = getHubCategoryData(hub);
+    const coverage = data.analysis.length + data.guides.length + data.news.length;
+    const listed = LISTED_HUB_CATEGORIES.includes(hub);
+    if (listed) assert.ok(coverage >= 3, `${hub.slug} is listed with only ${coverage} items`);
+    assert.equal(urls.has(`https://worldcleanbiz.com/categories/${hub.slug}`), listed, hub.slug);
+  }
+});
+
+test("company pages link the ownership guide about that company", async () => {
+  const { pickOwnershipGuide } = await import("@/lib/brandProfileView");
+  const articles = getInsights();
+  const brands = new Map(getPublishedBrandProfiles(articles).map((brand) => [brand.slug, brand]));
+  const expected = {
+    dyson: "who-owns-dyson-james-dyson-singapore-manufacturing",
+    whirlpool: "who-owns-whirlpool-appliances-beko-europe",
+    tineco: "who-owns-tineco-ecovacs-group",
+    electrolux: "who-owns-electrolux-brands-manufacturing",
+    "bosch-power-tools": "who-owns-bosch-power-tools-robert-bosch"
+  };
+  for (const [slug, guide] of Object.entries(expected)) {
+    assert.equal(pickOwnershipGuide(brands.get(slug), articles)?.slug, guide, slug);
+  }
+});
