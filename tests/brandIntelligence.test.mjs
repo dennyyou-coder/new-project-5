@@ -892,6 +892,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "irobot-decline-and-the-new-robot-vacuum-order": ["irobot"],
     "irobot-financial-crisis": ["irobot"],
     "is-dreame-owned-by-xiaomi": ["dreame",  "mova"],
+    "is-dyson-publicly-traded-stock": ["dyson"],
     "is-roborock-owned-by-xiaomi": ["roborock"],
     "is-steam-the-next-robot-vacuum-feature": ["dreame"],
     "joseph-galli-chervon-dewalt-milwaukee": ["chervon",  "tti",  "dewalt",  "milwaukee",  "ego",  "skil",  "flex"],
@@ -1074,8 +1075,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 203);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 341);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 204);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 342);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
