@@ -65,6 +65,51 @@
       "caption": "This diagram helps readers compare how Dreame and Roborock extend from core floorcare into adjacent categories."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/dreame/photos/01.webp",
+      "width": 1200,
+      "caption": "Dreame stand at CES 2025, Las Vegas",
+      "credit": "Image: Dreame",
+      "creditUrl": "https://in.dreametech.com/blogs/newsroom/all-dreams-in-one-dreame-dreame-technology-unveils-next-generation-smart-home-ecosystem-at-ces-2025"
+    },
+    {
+      "src": "/images/brands/dreame/photos/02.webp",
+      "width": 1200,
+      "caption": "Motor production line at a Dreame factory",
+      "credit": "Image: Dreame via PR Newswire",
+      "creditUrl": "https://www.prnewswire.com/news-releases/dreame-technologys-smart-factory-breaks-suction-speed-barrier-to-mass-produce-150-000rpm-vacuum-motors-301196364.html"
+    },
+    {
+      "src": "/images/brands/dreame/photos/03.webp",
+      "width": 1200,
+      "caption": "Dreame store front in Riga, Latvia",
+      "credit": "Image: Dreame",
+      "creditUrl": "https://lt.dreametech.com/pages/dreame-veikals-baltija"
+    },
+    {
+      "src": "/images/brands/dreame/photos/04.webp",
+      "width": 1200,
+      "caption": "Opening of the Dreame store in Riga",
+      "credit": "Image: Dreame",
+      "creditUrl": "https://lt.dreametech.com/pages/dreame-veikals-baltija"
+    },
+    {
+      "src": "/images/brands/dreame/photos/05.webp",
+      "width": 1200,
+      "position": "50% 12%",
+      "caption": "Founder Yu Hao",
+      "credit": "Image: EY",
+      "creditUrl": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-cn/campaigns/entrepreneur-of-the-year-program/documents/ey-eoy-2024-awards-gala-brochure-bilingual.pdf#page=44"
+    },
+    {
+      "src": "/images/brands/dreame/photos/06.webp",
+      "width": 1200,
+      "caption": "Dreame X60 Ultra in a family living room",
+      "credit": "Image: Dreame",
+      "creditUrl": "https://www.dreametech.com/products/x60-ultra-robot-vacuum"
+    }
+  ],
   "ownership": {
     "summary": "Dreame is a privately held company founded and led by Yu Hao. A 2020 company financing announcement identified Xiaomi Corporation and Shunwei Capital as returning shareholders and said Dreame had joined the Xiaomi ecosystem in 2017; it did not identify Xiaomi as parent or controller. The current complete ownership and voting structure is not publicly disclosed. MOVA is a separate consumer brand described on its regional site as powered by Dreame Technology, but its products, apps and contracting entities should not be treated as interchangeable with Dreame.",
     "displayLabel": "Privately held company founded by Yu Hao; full current cap table not public"

@@ -2,7 +2,11 @@
   "status": "published",
   "slug": "midea",
   "name": "Midea",
-  "aliases": ["Midea Group", "Midea Smart Home", "美的"],
+  "aliases": [
+    "Midea Group",
+    "Midea Smart Home",
+    "美的"
+  ],
   "legalName": "Midea Group Co., Ltd.",
   "legalEntityNote": "Midea is a brand and listed group spanning several business units and legal entities. Cleaning appliances can involve Midea Smart Home, Midea Robozone, regional Midea companies and model-specific factories; the separately marketed Eureka brand also belongs to Midea Group.",
   "officialWebsite": "https://www.midea.com/global",
@@ -30,6 +34,26 @@
       "src": "/images/blog/who-owns-eureka-midea-cover.webp",
       "alt": "Midea and Eureka cleaning-appliance ownership overview",
       "caption": "Midea reaches floor care through its own brand, specialized robotics operations and the separately marketed Eureka portfolio."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/images/brands/midea/photos/01.webp",
+      "caption": "Midea handheld cleaner at AWE in Shanghai",
+      "credit": "Photo: World Clean Biz",
+      "width": 648
+    },
+    {
+      "src": "/images/brands/midea/photos/02.webp",
+      "caption": "Midea mite cleaner on display at AWE",
+      "credit": "Photo: World Clean Biz",
+      "width": 685
+    },
+    {
+      "src": "/images/brands/midea/photos/03.webp",
+      "caption": "Midea robot vacuum at AWE",
+      "credit": "Photo: World Clean Biz",
+      "width": 689
     }
   ],
   "ownership": {
@@ -113,26 +137,36 @@
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Midea's advantage is manufacturing scale, broad appliance distribution and the ability to combine core Midea products with specialized robotics and the Eureka brand. Its cleaning portfolio can move quickly across price tiers, but that breadth creates buyer complexity: group, business unit, brand, regional seller, legal manufacturer and physical factory may be different layers.",
-    "competitorSlugs": ["tineco", "dreame", "philips-home-appliances"]
+    "competitorSlugs": [
+      "tineco",
+      "dreame",
+      "philips-home-appliances"
+    ]
   },
   "developments": [
     {
       "date": "2026",
       "title": "Midea reports RMB 458.5 billion in 2025 revenue",
       "summary": "The current investor page also reports RMB 195.9 billion in overseas revenue, 29 R&D centers and 43 major overseas manufacturing bases.",
-      "sourceIds": ["midea-investors"]
+      "sourceIds": [
+        "midea-investors"
+      ]
     },
     {
       "date": "2024",
       "title": "Midea expands smart cleaning and robotic product development",
       "summary": "The 2024 annual report describes continued product development in cleaning appliances within the Smart Home business.",
-      "sourceIds": ["midea-annual-2024"]
+      "sourceIds": [
+        "midea-annual-2024"
+      ]
     },
     {
       "date": "2016-12",
       "title": "Midea acquires the Eureka brand business from Electrolux",
       "summary": "The transaction moved Eureka into Midea Group while leaving Sanitaire and Eureka Forbes outside that ownership answer.",
-      "sourceIds": ["electrolux-eureka-sale"]
+      "sourceIds": [
+        "electrolux-eureka-sale"
+      ]
     }
   ],
   "sources": [

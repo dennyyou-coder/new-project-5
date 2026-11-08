@@ -41,6 +41,36 @@
       "caption": "This map compares Shark and Dyson cordless-vacuum product systems without treating brand claims as model-level test results."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/shark/photos/01.webp",
+      "width": 1200,
+      "caption": "Mark Rosenzweig, who led Euro-Pro, later SharkNinja, as chief executive",
+      "credit": "Image: markrosenzweig.com",
+      "creditUrl": "https://markrosenzweig.com/"
+    },
+    {
+      "src": "/images/brands/shark/photos/02.webp",
+      "width": 1200,
+      "caption": "Shark PowerDetect cordless vacuum in a home with a pet",
+      "credit": "Image: SharkNinja",
+      "creditUrl": "https://sharkninja.com.au/products/shark-powerdetect-cordless-stick-vacuum"
+    },
+    {
+      "src": "/images/brands/shark/photos/03.webp",
+      "width": 1200,
+      "caption": "PowerDetect’s bending wand reaching under a dining table",
+      "credit": "Image: SharkNinja",
+      "creditUrl": "https://sharkninja.com.au/products/shark-powerdetect-cordless-stick-vacuum"
+    },
+    {
+      "src": "/images/brands/shark/photos/04.webp",
+      "width": 1200,
+      "caption": "Shark PowerDetect cleaning high shelves",
+      "credit": "Image: SharkNinja",
+      "creditUrl": "https://sharkninja.com.au/products/shark-powerdetect-cordless-stick-vacuum"
+    }
+  ],
   "ownership": {
     "summary": "Shark is a consumer brand within SharkNinja, Inc., an independent NYSE-listed company. SharkNinja separated from former parent JS Global Lifestyle in July 2023. The 2026 proxy reported CJ Xuning Wang as the largest disclosed beneficial shareholder, mainly through JS&W entities; that holding is not the same as ownership by JS Global or Joyoung. JS Global retains licensed Shark and Ninja operations in specified Asia-Pacific markets under post-separation agreements.",
     "parentCompany": "SharkNinja, Inc."

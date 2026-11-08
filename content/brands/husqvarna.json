@@ -2,7 +2,11 @@
   "status": "published",
   "slug": "husqvarna",
   "name": "Husqvarna",
-  "aliases": ["Husqvarna Group", "Husqvarna Automower", "Automower"],
+  "aliases": [
+    "Husqvarna Group",
+    "Husqvarna Automower",
+    "Automower"
+  ],
   "legalName": "Husqvarna AB (publ)",
   "officialWebsite": "https://www.husqvarna.com/",
   "headline": "Husqvarna ownership, Automower robotics and global manufacturing network",
@@ -35,6 +39,29 @@
       "src": "/images/blog/automower-vs-luba-platform-decision-map.webp",
       "alt": "Decision map comparing Husqvarna Automower and Mammotion LUBA platforms",
       "caption": "This comparison places Automower's broad dealer-supported range against a newer wire-free AWD challenger."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/images/brands/husqvarna/photos/01.webp",
+      "width": 1200,
+      "caption": "Husqvarna Automower at work on a lawn in Esbjerg, Denmark",
+      "credit": "Photo: Kent Madsen, CC BY-SA 2.0",
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Husqvarna_Automower,_Esbjerg,_1.jpg"
+    },
+    {
+      "src": "/images/brands/husqvarna/photos/02.webp",
+      "width": 1200,
+      "caption": "Husqvarna Automower, Esbjerg, Denmark",
+      "credit": "Photo: Kent Madsen, CC BY-SA 2.0",
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Husqvarna_Automower,_Esbjerg,_10.jpg"
+    },
+    {
+      "src": "/images/brands/husqvarna/photos/03.webp",
+      "width": 1200,
+      "caption": "Husqvarna 350i battery chainsaw in yard work",
+      "credit": "Image: Husqvarna",
+      "creditUrl": "https://www.husqvarna.com/us/chainsaws/350i-power-axe-battery-and-charger-included/"
     }
   ],
   "ownership": {
@@ -112,7 +139,10 @@
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Husqvarna's main advantage is not one headline specification but a mature Automower portfolio connecting residential, AWD and professional products with installation, parts and dealer service. Its manufacturing history and outdoor-power channel depth create a different proposition from app-led robotics challengers. The pressure comes from faster wire-free product cycles and lower-friction direct sales, so buyers should price the complete installed and supported system rather than compare only area, slope or navigation claims.",
-    "competitorSlugs": ["mammotion", "segway-navimow"]
+    "competitorSlugs": [
+      "mammotion",
+      "segway-navimow"
+    ]
   },
   "developments": [
     {
@@ -127,25 +157,33 @@
       "date": "2025-08-11",
       "title": "Glen Instone becomes chief executive",
       "summary": "Husqvarna Group appointed Glen Instone to lead the group after serving as president of the Forest and Garden division.",
-      "sourceIds": ["husqvarna-ceo"]
+      "sourceIds": [
+        "husqvarna-ceo"
+      ]
     },
     {
       "date": "2025",
       "title": "Husqvarna expands its wire-free Automower range",
       "summary": "The 2025 annual report described 13 new wire-free robotic-mower models and robotics equal to approximately 17% of group sales.",
-      "sourceIds": ["husqvarna-annual-2025"]
+      "sourceIds": [
+        "husqvarna-annual-2025"
+      ]
     },
     {
       "date": "2006",
       "title": "Husqvarna becomes independently listed",
       "summary": "Electrolux distributed Husqvarna shares to its shareholders and Husqvarna was listed on the Stockholm Stock Exchange.",
-      "sourceIds": ["husqvarna-listing"]
+      "sourceIds": [
+        "husqvarna-listing"
+      ]
     },
     {
       "date": "1995",
       "title": "Husqvarna launches its first commercial robotic mower",
       "summary": "Husqvarna's company history dates its first commercial robotic lawn mower to 1995.",
-      "sourceIds": ["husqvarna-history"]
+      "sourceIds": [
+        "husqvarna-history"
+      ]
     }
   ],
   "sources": [

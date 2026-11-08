@@ -37,6 +37,36 @@
       "caption": "This comparison places Navimow's consumer-first wire-free platforms against Automower's broader dealer-led system."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/segway-navimow/photos/01.webp",
+      "width": 720,
+      "caption": "Navimow CEO George Ren showing the X3 in 2025",
+      "credit": "Photo: Elektronikkbransjen",
+      "creditUrl": "https://www.elektronikkbransjen.no/navimow-robotgressklipper-smaelektrisk/forstevalget-for-plenen/258064"
+    },
+    {
+      "src": "/images/brands/segway-navimow/photos/02.webp",
+      "width": 1200,
+      "caption": "Navimow i2 LiDAR in a family garden",
+      "credit": "Image: Segway Navimow",
+      "creditUrl": "https://navimow.com/pages/navimow-i2-lidar-robot-lawn-mower"
+    },
+    {
+      "src": "/images/brands/segway-navimow/photos/03.webp",
+      "width": 1200,
+      "caption": "Navimow i2 LiDAR Pro mowing a sloped garden",
+      "credit": "Image: Segway Navimow",
+      "creditUrl": "https://navimow.segway.com/pages/navimow-i2-lidar-pro-robot-lawn-mower"
+    },
+    {
+      "src": "/images/brands/segway-navimow/photos/04.webp",
+      "width": 1200,
+      "caption": "Navimow X4 mowing around obstacles on a slope",
+      "credit": "Image: Segway Navimow",
+      "creditUrl": "https://navimow.segway.com/pages/navimow-x4-robot-lawn-mower"
+    }
+  ],
   "ownership": {
     "summary": "Segway Navimow is controlled by Ninebot Limited through its majority interest in Willand (Beijing) Technology and related Navimow entities. Ninebot reported a 69.26% group interest at 31 December 2025 after employee and core-team equity incentives, so the business is controlled but not wholly owned. Willand is the core operating company, owner of key Navimow trademarks and legal manufacturer named in current manuals. Xiaomi remains a minority investor in Ninebot and is not Navimow's parent company.", "displayLabel": "Controlled by Ninebot (69.26% group interest)"
   },

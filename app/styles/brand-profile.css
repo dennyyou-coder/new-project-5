@@ -270,3 +270,17 @@ body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-thumb.
   body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-thumb { grid-row: span 2; width: 56px; height: 42px; }
   body.structure-refresh.design-a .approved-catalog.brand-detail .bp-latest-kind { grid-column: 2 / -1; }
 }
+
+/* Company in photos (BrandPhotos) */
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0; padding: 0; list-style: none; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid.is-1 { grid-template-columns: minmax(0, 1fr); }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid.is-1 .bp-photos-frame { aspect-ratio: 16 / 9; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid.is-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid figure { margin: 0; display: grid; gap: 8px; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-frame { display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 10px; background: #eef2f7; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid figcaption { display: grid; gap: 2px; font-size: 13px; line-height: 1.4; color: #2a3245; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid figcaption a, body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid figcaption small { font-size: 12px; color: #5a6378; }
+@media (max-width: 760px) {
+  body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid, body.structure-refresh.design-a .approved-catalog.brand-detail .bp-photos-grid.is-2 { grid-template-columns: minmax(0, 1fr); }
+}
