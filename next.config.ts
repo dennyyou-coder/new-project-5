@@ -242,6 +242,16 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
+        source: "/blog/two-companies-control-65-of-every-power-tool-sold-and-you-dont-",
+        destination: "/blog/global-power-tool-companies",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-jame-dyson-singapore-manufacturing",
+        destination: "/blog/who-owns-dyson-james-dyson-singapore-manufacturing",
+        permanent: true
+      },
+      {
         source: "/insights/:path*",
         destination: "/blog/:path*",
         permanent: true
