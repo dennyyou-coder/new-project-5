@@ -22,7 +22,6 @@ import { EXPO_2026, isExpoUpcoming } from "@/lib/hubPresentation";
 import { homeVideos } from "@/lib/wcbVideos";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
 import { getTopics, topicDate, topicHref } from "@/lib/topics";
-import { formatAmount, latestResults, revenueChange } from "@/lib/financials";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 // Re-render a few times a day so the expo band drops off after the expo closes without a deploy.
@@ -64,34 +63,6 @@ export default function HomePage() {
     latest: [...topic.timeline].reverse().find((event) => event.date <= today),
     next: topic.timeline.find((event) => event.date > today)
   }));
-
-  // Leading companies: an editorial pick of the brands that set the pace, each with its newest story and latest reported revenue change.
-  const leaderSlugs = ["roborock", "ecovacs", "dreame", "shark", "dyson", "irobot", "midea", "husqvarna"];
-  const reported = latestResults();
-  const leaders = leaderSlugs
-    .map((slug) => brands.find((brand) => brand.slug === slug))
-    .filter((brand): brand is NonNullable<typeof brand> => Boolean(brand))
-    .map((brand) => {
-      const result = reported.find((item) => item.brand === brand.slug);
-      return {
-        brand,
-        image: brand.heroImage ? brand.heroImage.replace(/\.webp$/, "-640.webp") : undefined,
-        story: news.find((item) => item.brandSlugs.includes(brand.slug)),
-        figure: result ? { label: `${result.period} revenue`, change: revenueChange(result) } : undefined
-      };
-    });
-
-  // Results league: every company's Q3 2026 revenue change as reported, fastest growth first.
-  const growthOf = (change?: string) => {
-    const match = change?.match(/([+−-])?(\d+(?:\.\d+)?)%/);
-    return match ? (match[1] === "−" || match[1] === "-" ? -1 : 1) * Number(match[2]) : undefined;
-  };
-  const league = reported
-    .filter((result) => result.period === "Q3 2026")
-    .map((result) => ({ result, change: revenueChange(result), growth: growthOf(revenueChange(result)), company: brands.find((brand) => brand.slug === result.brand) }))
-    .filter((row): row is typeof row & { growth: number } => row.growth !== undefined)
-    .sort((a, b) => b.growth - a.growth);
-  const leagueMax = Math.max(1, ...league.map((row) => Math.abs(row.growth)));
 
   // One newest model from each product category.
   const newModels = [...featuredProductModels]
@@ -237,66 +208,6 @@ export default function HomePage() {
                 </article>
               ))}
             </div>
-          </div>
-        </section>
-      ) : null}
-
-      {leaders.length ? (
-        <section className="home-b-section home-b-leaders" id="leading-companies" aria-labelledby="home-leaders-title">
-          <div className="home-b-container">
-            <div className="home-b-head">
-              <h2 id="home-leaders-title">Leading companies</h2>
-              <Link className="wcb-more" href="/brands">All {brands.length} companies</Link>
-            </div>
-            <p className="home-b-sub">The companies setting the pace in cleaning appliances, with their latest news and reported results.</p>
-            <div className="home-b-leaders-grid">
-              {leaders.map(({ brand, image, story, figure }) => (
-                <article key={brand.slug} className="home-b-leader">
-                  <Link className="home-b-leader-image" href={`/brands/${brand.slug}`} tabIndex={-1} aria-hidden="true">
-                    {image ? <img src={image} alt="" width={640} height={400} loading="lazy" decoding="async" /> : null}
-                  </Link>
-                  <div className="home-b-leader-body">
-                    <Link className="home-b-leader-name" href={`/brands/${brand.slug}`}>
-                      <CompanyMark mark={marks.get(brand.slug)!} size="sm" />
-                      <span>{brand.name}</span>
-                    </Link>
-                    {figure?.change ? <FigureChip label={figure.label} change={figure.change} /> : null}
-                    {story ? (
-                      <Link className="home-b-leader-story" href={`/news/${story.slug}`}>
-                        <span>{story.title}</span>
-                        <time dateTime={story.eventDate}>{newsDate(story.eventDate)}</time>
-                      </Link>
-                    ) : null}
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            {league.length ? (
-              <div className="home-b-league">
-                <div className="home-b-head">
-                  <h3>Q3 2026 results: revenue growth league</h3>
-                  <Link className="wcb-more" href="/markets">All results</Link>
-                </div>
-                <ol className="home-b-league-list">
-                  {league.map(({ result, change, growth, company }, index) => (
-                    <li key={result.company}>
-                      <span className="home-b-league-rank">{index + 1}</span>
-                      <Link className="home-b-league-name" href={result.news ? `/news/${result.news}` : `/brands/${result.brand}`}>
-                        {company ? <CompanyMark mark={marks.get(company.slug)!} size="xs" /> : null}
-                        <span>{result.name}</span>
-                      </Link>
-                      <span className="home-b-league-revenue">{formatAmount(result.revenue, result.currency)}</span>
-                      <span className="home-b-league-bar" aria-hidden="true">
-                        <span className={growth < 0 ? "is-down" : "is-up"} style={{ width: `${(Math.abs(growth) / leagueMax) * 100}%` }} />
-                      </span>
-                      <span className={`home-b-league-change ${growth < 0 ? "is-down" : "is-up"}`}>{change}</span>
-                    </li>
-                  ))}
-                </ol>
-                <p className="home-b-league-note">Reported year-on-year revenue change in each company’s own currency. Some companies state organic or like-for-like growth only, as marked.</p>
-              </div>
-            ) : null}
           </div>
         </section>
       ) : null}
