@@ -9338,17 +9338,17 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 103568,
+      "bytes": 154874,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:43367311d7a8ecd8ffbbe72b58e54f419700a70c63e12e71d732f081e44ac60a",
-      "outputHash": "sha256:7cd29c5bffcaabc5de4c21a4dbd6eb6a545ba8d96653b5ba48394ec0647ee0d0",
+      "sourceHash": "sha256:34cc0d18914737e25ef72b5b97a517c8cc070a9e1ea82703b8b0fa4a967e1aeb",
+      "outputHash": "sha256:aeb609e8e1e1bca6e24b7f9f987950b2e549737fd3f5c88556333ed07e7cf6bc",
       "mobile": {
         "src": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 32160,
-        "outputHash": "sha256:b07f1f4c75b90c8cb7dde8c4219c1e51e802fadb83f4b4974cff069964365376"
+        "bytes": 50326,
+        "outputHash": "sha256:739ddb00584fbe7c25aef07b98a6177cb8816f7cd41d478013351d4145ce5406"
       }
     },
     "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/02-husqvarna-footprint.webp": {
@@ -48006,7 +48006,7 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/fcc-robot-ban-paths-chinese-robot-vacuums-mowers/01-cover.webp",
-          "hash": "sha256:43367311d7a8ecd8ffbbe72b58e54f419700a70c63e12e71d732f081e44ac60a"
+          "hash": "sha256:34cc0d18914737e25ef72b5b97a517c8cc070a9e1ea82703b8b0fa4a967e1aeb"
         },
         "02-husqvarna-footprint.png": {
           "status": "matched",
