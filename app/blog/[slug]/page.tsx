@@ -187,7 +187,7 @@ export default async function InsightDetailPage({ params }: Props) {
   const url = `${siteUrl}/blog/${article.slug}`;
   const isGuide = article.contentClass === "search" && article.guideType;
   const ctaForm = getBlogCta(article.category, isGuide ? article.guideType : undefined).form;
-  const articleHubs = hubCategoriesForInsight(article).map((slug) => getHubCategory(slug)).filter((hub) => hub !== undefined);
+  const articleHubs = hubCategoriesForInsight(article).map((slug) => getHubCategory(slug)).filter((hub): hub is NonNullable<typeof hub> => hub !== undefined && !hub.unlisted);
   const collectionHref = isGuide ? `/guides/${article.guideType}` : "/blog";
   const collectionName = isGuide ? "Guides" : "Blog";
   const publishedTime = article.publishedAt || article.date;

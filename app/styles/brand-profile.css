@@ -39,6 +39,10 @@ body.structure-refresh.design-a .approved-catalog.brand-detail .bp-answer p { ma
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-answer-question { font-size: 12px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #2F6BFF; }
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-answer-text { font-size: 19px; font-weight: 800; line-height: 1.45; color: #163B67; }
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-answer-meta { font-size: 12.5px; color: #52677D; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-answer-guide { display: grid; gap: 2px; margin-top: 4px; padding: 10px 14px; border: 1px solid #D6E2F5; border-radius: 10px; background: #F5F8FE; text-decoration: none; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-answer-guide span { font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #2F6BFF; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-answer-guide b { font-size: 15px; line-height: 1.4; color: #163B67; }
+body.structure-refresh.design-a .approved-catalog.brand-detail .bp-answer-guide:hover b { color: #2F6BFF; text-decoration: underline; }
 
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: 20px; align-items: center; }
 body.structure-refresh.design-a .approved-catalog.brand-detail .bp-overview--text { grid-template-columns: 1fr; }

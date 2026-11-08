@@ -149,3 +149,32 @@ export function foundedShort(founded: string): string {
   if (/\b\d{4}\s+or\s+\d{4}\b/.test(founded)) return founded.replace(/\s*\([^)]*\)/g, "").trim();
   return foundedYear(founded) ?? founded;
 }
+
+const GENERIC_BRAND_WORDS = new Set(["home", "appliances", "household", "power", "tools", "robotics", "industries", "group", "and"]);
+
+/**
+ * The ownership guide a company page should point to. Several guides can name
+ * the same company (a parent's portfolio piece, a sister brand's guide); the
+ * one about this company comes first: its name right after "who owns" or
+ * "who makes" in the slug, then its name anywhere in the slug or title.
+ */
+export function pickOwnershipGuide<T extends { slug: string; title: string; contentClass?: string; guideType?: string; primaryBrands: string[] }>(
+  profile: { slug: string; name: string },
+  articles: readonly T[]
+): T | undefined {
+  const candidates = articles.filter(
+    (article) => article.contentClass === "search" && article.guideType === "ownership" && article.primaryBrands.includes(profile.slug)
+  );
+  const tokens = profile.slug.split("-").filter((word) => word.length > 2 && !GENERIC_BRAND_WORDS.has(word));
+  const lead = tokens[0];
+  const score = (article: T) => {
+    let value = 0;
+    if (lead && new RegExp(`^(who-owns|who-makes|is)-(the-)?${lead}\\b`).test(article.slug)) value += 3;
+    if (tokens.some((token) => article.slug.includes(token))) value += 1;
+    if (article.title.toLowerCase().includes(profile.name.toLowerCase())) value += 1;
+    return value;
+  };
+  return candidates
+    .map((article, index) => ({ article, index, value: score(article) }))
+    .sort((a, b) => b.value - a.value || a.index - b.index)[0]?.article;
+}
