@@ -12,21 +12,21 @@ for (const key of assets) {
   byArticle.set(match[1], list);
 }
 
-/** Body images that are charts, maps, report pages or other non-photographs. */
-const NOT_A_PHOTO = /(map|chart|timeline|diagram|flow|table|matrix|pathway|framework|structure|logo|prospectus|translation|cost|signals|ranking|share|diagnostic|scorecard|comparison|landscape|overview|summary|process|steps|checklist|infographic|-en-v\d|\.png$)/i;
+/** Images that are logos, raw filing scans or files kept only as PNG sources. */
+const SKIP = /(logo|prospectus|translation|annual-report|\.png$)/i;
 /** Articles whose pictures are mostly scanned filings rather than photographs. */
 const DOCUMENT_ARTICLE = /(annual-report|prospectus|faithful-translation|interim-report|report-reading)/i;
 
 /**
- * Photographs from a company's own WCB articles (not their covers, which the news and analysis list
- * already shows), newest article first, at most two per article.
+ * Graphics and photographs from WCB articles where the company is the main subject (not their covers,
+ * which the news and analysis list already shows), newest article first, at most two per article.
  */
 export function galleryForArticles(articles: { slug: string; title: string }[], limit = 8): GalleryImage[] {
   const images: GalleryImage[] = [];
   for (const article of articles) {
     if (DOCUMENT_ARTICLE.test(article.slug)) continue;
     const files = (byArticle.get(article.slug) ?? [])
-      .filter((src) => !/\/01-cover\.webp$/.test(src) && !NOT_A_PHOTO.test(src.split("/").pop() ?? ""))
+      .filter((src) => !/\/01-cover\.webp$/.test(src) && !SKIP.test(src.split("/").pop() ?? ""))
       .sort()
       .slice(0, 2);
     for (const src of files) {

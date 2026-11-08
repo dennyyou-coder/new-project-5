@@ -205,7 +205,7 @@ export default async function BrandPage({ params }: PageProps) {
             ownershipAnalysisHref={ownershipAnalysis ? `/blog/${ownershipAnalysis.slug}` : undefined}
             latest={<BrandLatest name={profile.name} items={latestItems} />}
           />
-          <BrandGallery name={profile.name} images={galleryForArticles([...data.primaryArticles, ...data.relatedArticles].sort((a, b) => b.sortDate.localeCompare(a.sortDate)))} />
+          <BrandGallery name={profile.name} images={galleryForArticles([...data.primaryArticles].sort((a, b) => b.sortDate.localeCompare(a.sortDate)), 6)} />
           <BrandFaq profile={profile} />
           <BrandFinancials brand={profile.slug} />
           <BrandTimeline profile={profile} />
