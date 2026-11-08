@@ -21145,6 +21145,42 @@
         "outputHash": "sha256:c239328887a657d532551b75d680e4890d4eaaccf63fc3a11912c0173eb64398"
       }
     },
+    "/images/articles/spot-cleaner-battle-bissell-shark-hoover/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36374,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:38668665a1fa0bfbf4900a4cb4e169f1dd34fea9a9b862e4e71baca4a14e50e8",
+      "outputHash": "sha256:c509b07e37471e76d9a0268e2cbadbfed3378f2735163ddc9af0a999a1687d2c",
+      "mobile": {
+        "src": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15302,
+        "outputHash": "sha256:6278c632b55e2ef8cbb929efbb59662235c22478684d9f8e439aebd1c05aa07e"
+      }
+    },
+    "/images/articles/spot-cleaner-battle-bissell-shark-hoover/02-spot-cleaner-timeline.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53858,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b12d63e315bc08df5ed5a3adcb12dd77051de7122c20e975db94a1e2ef44c6a4",
+      "outputHash": "sha256:833fa0c306e01f4a3181bcd72be7d18da0fcfbd2a87203575d788f4195ede4f6",
+      "mobile": {
+        "src": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/02-spot-cleaner-timeline-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20760,
+        "outputHash": "sha256:865aa88a4a5d0281eca1644293321fcde865fdefeb67a2708196111a433c1933"
+      }
+    },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -44235,6 +44271,13 @@
       "cover": "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp",
       "body": []
     },
+    "spot-cleaner-battle-bissell-shark-hoover": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/01-cover.webp",
+      "body": [
+        "/images/articles/spot-cleaner-battle-bissell-shark-hoover/02-spot-cleaner-timeline.webp"
+      ]
+    },
     "spot-cleaner-manufacturing-cost": {
       "budgetClass": "standard",
       "cover": "/images/blog/spot-cleaner-manufacturing-cost.webp",
@@ -52934,6 +52977,20 @@
           "status": "matched",
           "primary": "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp",
           "hash": "sha256:27246138cd8389f4d27e90bda1ef304b78e31763d80372f405e4f35a60dc587e"
+        }
+      }
+    },
+    "spot-cleaner-battle-bissell-shark-hoover": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/01-cover.webp",
+          "hash": "sha256:38668665a1fa0bfbf4900a4cb4e169f1dd34fea9a9b862e4e71baca4a14e50e8"
+        },
+        "02-spot-cleaner-timeline.png": {
+          "status": "matched",
+          "primary": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/02-spot-cleaner-timeline.webp",
+          "hash": "sha256:b12d63e315bc08df5ed5a3adcb12dd77051de7122c20e975db94a1e2ef44c6a4"
         }
       }
     },
