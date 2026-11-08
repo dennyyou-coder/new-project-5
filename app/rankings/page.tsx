@@ -43,7 +43,7 @@ function RankingTable({ rows, id, title, note, marks }: { rows: RankingRow[]; id
               <span className={`rank-change ${growth < 0 ? "is-down" : "is-up"}`}>{change}</span>
               <span className="rank-source">
                 {result.news ? <Link href={`/news/${result.news}`}>WCB story</Link> : null}
-                <a href={result.source.url} target="_blank" rel="noopener noreferrer">{result.source.label}</a>
+                <a href={result.source.url} target="_blank" rel="noopener noreferrer" title={result.source.label}>Company release</a>
               </span>
             </li>
           );

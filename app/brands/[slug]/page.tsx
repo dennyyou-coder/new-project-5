@@ -161,7 +161,6 @@ export default async function BrandPage({ params }: PageProps) {
     .filter((model) => model.brandSlug === profile.slug && model.announced)
     .sort((a, b) => String(b.announced).localeCompare(String(a.announced)))[0];
   const latestItems: BrandLatestItem[] = [
-    ...relatedNews.slice(0, 2).map((item) => ({ kind: "News" as const, title: item.title, href: `/news/${item.slug}`, date: item.eventDate, dateLabel: newsDate(item.eventDate) })),
     ...(latestResult
       ? [{
           kind: "Results" as const,
@@ -172,6 +171,7 @@ export default async function BrandPage({ params }: PageProps) {
           dateLabel: newsDate(latestResult.reported ?? latestResult.periodEnd)
         }]
       : []),
+    ...relatedNews.slice(0, 3).map((item) => ({ kind: "News" as const, title: item.title, href: `/news/${item.slug}`, date: item.eventDate, dateLabel: newsDate(item.eventDate) })),
     ...(newestModel ? [{ kind: "New product" as const, title: newestModel.name, href: `/products/${newestModel.slug}`, date: String(newestModel.announced), dateLabel: newsDate(String(newestModel.announced)) }] : []),
     ...(latestAnalysis ? [{ kind: "Analysis" as const, title: latestAnalysis.title, href: `/blog/${latestAnalysis.slug}`, date: latestAnalysis.sortDate, dateLabel: newsDate(latestAnalysis.sortDate) }] : [])
   ]
