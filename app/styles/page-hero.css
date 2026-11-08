@@ -65,10 +65,13 @@
   margin: 0 !important;
 }
 .news-page .news-filters {
-  padding: 2px 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
 }
 .news-page .news-filters a {
   min-height: 40px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   font-size: 14px !important;
 }
 .news-page .news-category-filters {
@@ -77,6 +80,8 @@
 .news-page .news-category-filters a,
 .news-page .news-filter-label {
   min-height: 36px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   font-size: 13px !important;
 }
 .news-page .news-columns {
