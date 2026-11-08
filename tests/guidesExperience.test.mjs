@@ -8,7 +8,7 @@ const read = (path) =>
 
 const [landing, category, directory, css] = await Promise.all([
   read("app/guides/listing.tsx"),
-  read("app/guides/[type]/page.tsx") + read("app/guides/[type]/listing.tsx"),
+  Promise.all([read("app/guides/[type]/page.tsx"), read("app/guides/[type]/listing.tsx")]).then((parts) => parts.join("\n")),
   read("components/ContentDirectory.tsx"),
   Promise.resolve(readRouteStyles("content-directories.css"))
 ]);
