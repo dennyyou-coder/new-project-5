@@ -8,6 +8,7 @@ import { getPublishedBrandProfiles } from "@/lib/brands";
 import { buildBrandMarkIndex } from "@/lib/brandMarks";
 import { CompanyMark } from "@/components/ui/CompanyMark";
 import { TopicChart } from "@/components/topics/TopicChart";
+import { compareKeyBrands } from "@/lib/keyBrands";
 import { seoDescription, seoTitle } from "@/lib/seo";
 import { getTopic, getTopics, topicDate, topicImageSmall } from "@/lib/topics";
 
@@ -68,7 +69,7 @@ export default async function TopicPage({ params }: { params: PageParams }) {
   }
   const companies = [...mentions.entries()]
     .filter(([brand]) => marks.has(brand))
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .sort((a, b) => b[1] - a[1] || compareKeyBrands(a[0], b[0]) || a[0].localeCompare(b[0]))
     .slice(0, 12)
     .map(([brand]) => marks.get(brand)!);
 
