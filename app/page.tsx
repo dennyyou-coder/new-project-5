@@ -22,6 +22,7 @@ import { EXPO_2026, isExpoUpcoming } from "@/lib/hubPresentation";
 import { homeVideos } from "@/lib/wcbVideos";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
 import { getTopics, topicDate, topicHref } from "@/lib/topics";
+import { compareKeyBrands, isKeyBrand } from "@/lib/keyBrands";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 // Re-render a few times a day so the expo band drops off after the expo closes without a deploy.
@@ -64,9 +65,13 @@ export default function HomePage() {
     next: topic.timeline.find((event) => event.date > today)
   }));
 
-  // One newest model from each product category.
+  // One model from each product category: a key brand's newest 2026 model when there is one, else the newest.
+  const thisYear = (model: (typeof featuredProductModels)[number]) => String(model.announced ?? "").startsWith("2026");
   const newModels = [...featuredProductModels]
-    .sort((a, b) => String(b.announced ?? "").localeCompare(String(a.announced ?? "")))
+    .sort((a, b) =>
+      Number(isKeyBrand(b.brandSlug) && thisYear(b)) - Number(isKeyBrand(a.brandSlug) && thisYear(a)) ||
+      String(b.announced ?? "").localeCompare(String(a.announced ?? ""))
+    )
     .filter((model, index, all) => all.findIndex((other) => other.category === model.category) === index)
     .slice(0, 6);
 
@@ -111,8 +116,12 @@ export default function HomePage() {
       articleCount.set(slug, (articleCount.get(slug) ?? 0) + 1);
     }
   }
+  // Key brands first (lib/keyBrands.ts), then by how much WCB has written about each company.
   const byCoverage = [...brands].sort(
-    (a, b) => (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0) || a.name.localeCompare(b.name)
+    (a, b) =>
+      compareKeyBrands(a.slug, b.slug) ||
+      (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0) ||
+      a.name.localeCompare(b.name)
   );
   const topCompanies = byCoverage.slice(0, 12);
   // Caption each company with the hub where it has the most product models, else its first hub.
@@ -127,10 +136,13 @@ export default function HomePage() {
       }
     }
   }
-  // Brand → parent pairs, one per parent, preferring parents that have their own profile.
+  // Brand → parent pairs, one per parent, preferring parents that have their own profile; pairs involving a key brand first.
   const ownershipPairs = byCoverage
     .map((brand) => ({ brand, parentProfile: findParentProfile(brand, brands), parentName: shortParentName(brand.ownership.parentCompany) }))
     .filter((pair) => pair.parentName && pair.parentProfile)
+    .sort((a, b) =>
+      Number(isKeyBrand(b.brand.slug) || isKeyBrand(b.parentProfile?.slug)) - Number(isKeyBrand(a.brand.slug) || isKeyBrand(a.parentProfile?.slug))
+    )
     .filter((pair, index, all) => all.findIndex((other) => other.parentProfile?.slug === pair.parentProfile?.slug) === index)
     .slice(0, 4);
 
@@ -145,8 +157,10 @@ export default function HomePage() {
     (visual) => visual.label === "Company image",
     (visual) => !isBorrowedNewsVisual(visual)
   ];
+  // Within each picture tier, a key brand's story leads before other companies' stories.
+  const recentKeyFirst = [...recent].sort((a, b) => compareKeyBrands(a.brandSlugs.find(isKeyBrand), b.brandSlugs.find(isKeyBrand)));
   const leadNews = leadTiers
-    .map((tier) => recent.find((item) => { const visual = getNewsVisual(item); return visual ? tier(visual) : false; }))
+    .map((tier) => recentKeyFirst.find((item) => { const visual = getNewsVisual(item); return visual ? tier(visual) : false; }))
     .find(Boolean);
   const leadVisual = leadNews ? getNewsVisual(leadNews) : undefined;
   const weekNews = recent.filter((item) => item.slug !== leadNews?.slug).slice(0, 6);
@@ -318,10 +332,10 @@ export default function HomePage() {
           </div>
           <div className="home-b-categories">
             {hubs.map((data) => {
-              // Companies whose main category is this hub first, then by coverage.
+              // Companies whose main category is this hub first, key brands among them first, then by coverage.
               const isHome = (slug: string) => (hubOfBrand.get(slug) === data.hub.name ? 1 : 0);
               const leaders = [...data.companies]
-                .sort((a, b) => isHome(b.slug) - isHome(a.slug) || (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0))
+                .sort((a, b) => isHome(b.slug) - isHome(a.slug) || compareKeyBrands(a.slug, b.slug) || (articleCount.get(b.slug) ?? 0) - (articleCount.get(a.slug) ?? 0))
                 .slice(0, 3);
               return (
                 <Link
