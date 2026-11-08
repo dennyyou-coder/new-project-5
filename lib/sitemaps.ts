@@ -100,7 +100,10 @@ export function buildDiscoverySitemap(): MetadataRoute.Sitemap {
     "/wcb-expo",
     "/about",
     "/contact",
-    "/quality-compliance"
+    "/quality-compliance",
+    "/editorial-policy",
+    "/authors/denny-you",
+    "/authors/wcb-editorial"
   ]).map((entry) => {
     const lastModified = modelDate.get(entry.url.slice(baseUrl.length));
     return lastModified ? { ...entry, lastModified } : entry;

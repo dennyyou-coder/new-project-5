@@ -1,0 +1,21 @@
+/* Author pages (/authors/[slug]) */
+.author-page .author-hero { display: flex; align-items: center; gap: 24px; }
+.author-page .author-photo { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; flex: none; }
+.author-page .author-mark { display: inline-flex; align-items: center; justify-content: center; width: 112px; height: 112px; border-radius: 50%; background: #2b50c8; color: #fff; font-weight: 800; font-size: 26px; flex: none; }
+.author-page .author-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 48px; }
+.author-page .author-about p { margin: 0 0 14px; font-size: 16px; line-height: 1.7; }
+.author-page .author-body h2 { margin: 24px 0 10px; font-size: 20px; }
+.author-page .author-pieces h2 { margin-top: 0; }
+.author-page .author-pieces h2 span { font-weight: 600; color: #4a5367; font-size: 15px; }
+.author-page .author-covers { margin: 0; padding-left: 18px; line-height: 1.8; }
+.author-page .author-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px !important; font-weight: 700; }
+.author-page .author-pieces ul { margin: 0; padding: 0; list-style: none; }
+.author-page .author-pieces li { display: grid; gap: 2px; padding: 11px 0; border-top: 1px solid #e3e7ee; }
+.author-page .author-pieces li a { font-weight: 700; color: #0e1526; text-decoration: none; }
+.author-page .author-pieces li a:hover { color: #2b50c8; }
+.author-page .author-pieces li span { font-size: 13px; color: #4a5367; }
+@media (max-width: 760px) {
+  .author-page .author-body { grid-template-columns: 1fr; gap: 24px; }
+  .author-page .author-hero { gap: 16px; }
+  .author-page .author-photo, .author-page .author-mark { width: 80px; height: 80px; font-size: 20px; }
+}

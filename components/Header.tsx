@@ -123,6 +123,10 @@ export function Header() {
           <span className="wcb-header-name">World Clean Biz</span>
         </Link>
 
+        <Link className="wcb-header-search wcb-header-search--compact" href="/search" onClick={closeAll} aria-label="Search">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+        </Link>
+
         <button
           className="wcb-header-toggle"
           type="button"
@@ -141,6 +145,9 @@ export function Header() {
 
         <div className={`wcb-header-panel${isMenuOpen ? " is-open" : ""}`}>
           <div className="wcb-header-actions">
+            <Link className="wcb-header-search wcb-header-search--wide" href="/search" onClick={closeAll} aria-label="Search">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            </Link>
             <Link className="wcb-header-expo" href="/wcb-expo" onClick={closeAll}>
               WCB Expo
             </Link>
