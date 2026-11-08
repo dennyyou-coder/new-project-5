@@ -46,13 +46,15 @@
       "src": "/images/brands/husqvarna/photos/01.webp",
       "caption": "Husqvarna Automower at work on a lawn in Esbjerg, Denmark",
       "credit": "Photo: Kent Madsen, CC BY-SA 2.0",
-      "creditUrl": "https://commons.wikimedia.org/wiki/File:Husqvarna_Automower,_Esbjerg,_1.jpg"
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Husqvarna_Automower,_Esbjerg,_1.jpg",
+      "width": 1200
     },
     {
       "src": "/images/brands/husqvarna/photos/02.webp",
       "caption": "Husqvarna Automower, Esbjerg, Denmark",
       "credit": "Photo: Kent Madsen, CC BY-SA 2.0",
-      "creditUrl": "https://commons.wikimedia.org/wiki/File:Husqvarna_Automower,_Esbjerg,_10.jpg"
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Husqvarna_Automower,_Esbjerg,_10.jpg",
+      "width": 1000
     }
   ],
   "ownership": {

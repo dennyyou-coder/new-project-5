@@ -17,7 +17,7 @@ export function BrandPhotos({ profile }: { profile: BrandProfile }) {
           <li key={photo.src}>
             <figure>
               <span className="bp-photos-frame">
-                <img src={small(photo.src)} srcSet={`${small(photo.src)} 600w, ${photo.src} 1200w`} sizes="(max-width: 760px) 100vw, 360px" alt={photo.caption} loading="lazy" decoding="async" />
+                <img src={small(photo.src)} srcSet={`${small(photo.src)} 600w, ${photo.src} ${photo.width}w`} sizes="(max-width: 760px) 100vw, 360px" alt={photo.caption} loading="lazy" decoding="async" />
               </span>
               <figcaption>
                 <span>{photo.caption}</span>

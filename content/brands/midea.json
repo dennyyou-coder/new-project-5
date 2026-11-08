@@ -40,17 +40,20 @@
     {
       "src": "/images/brands/midea/photos/01.webp",
       "caption": "Midea handheld cleaner at AWE in Shanghai",
-      "credit": "Photo: World Clean Biz"
+      "credit": "Photo: World Clean Biz",
+      "width": 648
     },
     {
       "src": "/images/brands/midea/photos/02.webp",
       "caption": "Midea mite cleaner on display at AWE",
-      "credit": "Photo: World Clean Biz"
+      "credit": "Photo: World Clean Biz",
+      "width": 685
     },
     {
       "src": "/images/brands/midea/photos/03.webp",
       "caption": "Midea robot vacuum at AWE",
-      "credit": "Photo: World Clean Biz"
+      "credit": "Photo: World Clean Biz",
+      "width": 689
     }
   ],
   "ownership": {

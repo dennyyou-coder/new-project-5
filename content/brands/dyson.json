@@ -42,7 +42,8 @@
       "src": "/images/brands/dyson/photos/01.webp",
       "caption": "Dyson demo store on Oxford Street, London",
       "credit": "Photo: Tristan Surtel, CC BY-SA 4.0",
-      "creditUrl": "https://commons.wikimedia.org/wiki/File:Dyson_Demo_Store,_London.jpg"
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Dyson_Demo_Store,_London.jpg",
+      "width": 1200
     }
   ],
   "ownership": {

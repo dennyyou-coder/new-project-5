@@ -47,7 +47,8 @@
     {
       "src": "/images/brands/karcher/photos/01.webp",
       "caption": "Kärcher stand at AWE in Shanghai",
-      "credit": "Photo: World Clean Biz"
+      "credit": "Photo: World Clean Biz",
+      "width": 740
     }
   ],
   "ownership": {

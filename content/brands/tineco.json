@@ -44,12 +44,14 @@
     {
       "src": "/images/brands/tineco/photos/01.webp",
       "caption": "Tineco stand at AWE in Shanghai",
-      "credit": "Photo: World Clean Biz"
+      "credit": "Photo: World Clean Biz",
+      "width": 684
     },
     {
       "src": "/images/brands/tineco/photos/02.webp",
       "caption": "Tineco cordless and wet-dry vacuums on display at AWE",
-      "credit": "Photo: World Clean Biz"
+      "credit": "Photo: World Clean Biz",
+      "width": 729
     }
   ],
   "ownership": {
