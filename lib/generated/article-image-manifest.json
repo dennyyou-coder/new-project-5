@@ -24869,6 +24869,42 @@
         "outputHash": "sha256:5f28745ce68100c3dc1f5f7bdfdcc93a09dfec71565400ebdebc62408d1f0402"
       }
     },
+    "/images/articles/who-owns-fimap-comac-group/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 79654,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:69d505cd0004bf7b3ae29c2e913e31fd84973052d5bab22c118b5c13c3e22c35",
+      "outputHash": "sha256:5b14356a2c492a7f9af485005f97b890eaca4f5b58139a5516e63c58d1be4a9e",
+      "mobile": {
+        "src": "/images/articles/who-owns-fimap-comac-group/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 32136,
+        "outputHash": "sha256:fbd70a875e0da9966a88acbafca1f3938325cb0e2c06b1341ed02fa99af39735"
+      }
+    },
+    "/images/articles/who-owns-fimap-comac-group/02-fimap-comac-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 37842,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:83ec616a9409619ccb632466bb55045d0f07f0b36a34b4a6b3e984f17ddad50b",
+      "outputHash": "sha256:e0d5709e105b302ea5780ad8db0bcace9c0e410bfafbf7c6bc9cb7ab160796d0",
+      "mobile": {
+        "src": "/images/articles/who-owns-fimap-comac-group/02-fimap-comac-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14414,
+        "outputHash": "sha256:6920ee7888feb84265ce636a8110e0ce5fc4aec0b59999248153d209ccaee75b"
+      }
+    },
     "/images/articles/who-owns-flex-tools-chervon-lowes/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -24957,6 +24993,42 @@
         "height": 450,
         "bytes": 25150,
         "outputHash": "sha256:715edc003a208d4238216669a766eafc772c88a8512387c5f76edaa79b0b8c4f"
+      }
+    },
+    "/images/articles/who-owns-gausium/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 60688,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9dff7f5d142fe2136a8ebf6e232293092eff66bf7a8f69fecbbde69c0517ed0c",
+      "outputHash": "sha256:592a293369954ffdba371800e624796146410cad94f95946da99ad8a11ff57d0",
+      "mobile": {
+        "src": "/images/articles/who-owns-gausium/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26062,
+        "outputHash": "sha256:35734700777d3504ace934ddd8af0a45f1f77559aee442a1f5950bb018f2ab07"
+      }
+    },
+    "/images/articles/who-owns-gausium/02-gausium-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40120,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:38fda72da5f2ef1a8692a4d8d3581b3ccbcde33bfe914f4e4dfe59f17d5c6e44",
+      "outputHash": "sha256:b203f915d98932a791c93e8f2d3b78c275f1e2db793aade9b251b5e44f6d27e9",
+      "mobile": {
+        "src": "/images/articles/who-owns-gausium/02-gausium-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15334,
+        "outputHash": "sha256:8e4482381b1ea10595a5159ed05d859382defb9898077ae7f8609de03faef1ca"
       }
     },
     "/images/articles/who-owns-gorenje-appliances-hisense/01-cover.webp": {
@@ -25337,6 +25409,42 @@
         "outputHash": "sha256:ec87519622ccb3ab4978862f83983f16e7e408319b92011d927d2aead0484880"
       }
     },
+    "/images/articles/who-owns-ipc-tennant/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31186,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c63f87c0c2417688d3c48e143da6d9b97f37ee9e4d94cce41d1e3504153883a9",
+      "outputHash": "sha256:1cbb7f3cdf7af3c95b69384386d7fb26b8e8bff3e9ae3a9aa7949268ecd0d190",
+      "mobile": {
+        "src": "/images/articles/who-owns-ipc-tennant/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14032,
+        "outputHash": "sha256:2555b45305f5dec9e5bef987ab786bca3f26045c3a879a92fa8df8e3d8bc646d"
+      }
+    },
+    "/images/articles/who-owns-ipc-tennant/02-ipc-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38890,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:aa7dc170fb2be8bd6c498e8a6072eba7c2545a7c360aa3131d0106d384a2905c",
+      "outputHash": "sha256:f563d2f46fb965f6f959eda237957cc14d5c366cb6b87350eebf285eaf2cf6e1",
+      "mobile": {
+        "src": "/images/articles/who-owns-ipc-tennant/02-ipc-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14732,
+        "outputHash": "sha256:f70cf781fa4040dbedaa55873e93ee24a4b7f8cbf1010c7aeec0d6404f384287"
+      }
+    },
     "/images/articles/who-owns-irobot-roomba-picea-robotics/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25461,6 +25569,42 @@
         "height": 450,
         "bytes": 27084,
         "outputHash": "sha256:11e4572fd4171f7f0def39d49692945cf687e4ba4bf5eaadeef1b8dfb324e9d2"
+      }
+    },
+    "/images/articles/who-owns-lionsbot/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 98552,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:349d8f3a1beff9892f3d01e2772fc18cfc708d66f7c4b1e4ec6f0204e44ece08",
+      "outputHash": "sha256:034640eb218e72546a34bb0b1b7395f819184bb39e8336b4668beb93453de808",
+      "mobile": {
+        "src": "/images/articles/who-owns-lionsbot/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36150,
+        "outputHash": "sha256:5cff7b3548819a1e2947abb698ca3288b8fedd7bcea4e9f85bb28ffd84281912"
+      }
+    },
+    "/images/articles/who-owns-lionsbot/02-lionsbot-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45810,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e43d93c371b45d38784ac1aec38be66f24ef9c26ec2529c16e9f61f58bc7667a",
+      "outputHash": "sha256:6d6c3a4616e760d889fd2b95b544169ad6328c0631a7794e426bb4b1b6b48bc1",
+      "mobile": {
+        "src": "/images/articles/who-owns-lionsbot/02-lionsbot-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18394,
+        "outputHash": "sha256:10407bebb33fdb46ba4d47b612405437a2167681693e16a97dbb58e7a89bac12"
       }
     },
     "/images/articles/who-owns-makita-company-manufacturing/01-cover.webp": {
@@ -25607,6 +25751,42 @@
         "outputHash": "sha256:9e90f4ca4a01635c010ed736a75bd93d386e29d092113fcddc87cb447b3b2906"
       }
     },
+    "/images/articles/who-owns-minuteman-hako-powerboss/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69628,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9aa2934f7e07cca0f9f1a90cf16c8a790cc41003ddc32c59c96634b8378de35c",
+      "outputHash": "sha256:3af07a9a31aa84d994fc43ad9f34b7228c9a697e29621bff8b6933a69c7e5535",
+      "mobile": {
+        "src": "/images/articles/who-owns-minuteman-hako-powerboss/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30814,
+        "outputHash": "sha256:a82532736329669d58478c3eb98986d112c10385b59d4b710d51f4b749cebd84"
+      }
+    },
+    "/images/articles/who-owns-minuteman-hako-powerboss/02-minuteman-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39518,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fb040cadd62471d827ee9879e334e5de214c6a4db178cc34823bf8952ac29884",
+      "outputHash": "sha256:8f4a9e3c32496aa04cb4e91b7f8b59bba255e35dd3769d151035fc911c55efe7",
+      "mobile": {
+        "src": "/images/articles/who-owns-minuteman-hako-powerboss/02-minuteman-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15112,
+        "outputHash": "sha256:afe28a4d6e17953372710288bfe76797014054503d74a6ac38b7a5fe1cfe70c7"
+      }
+    },
     "/images/articles/who-owns-narwal-yunjing-investors-manufacturing/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25731,6 +25911,42 @@
         "height": 450,
         "bytes": 69030,
         "outputHash": "sha256:026b2b4a30f8eb8357698bbf5e59e0146f0ed11fce31ab502be374da7b49c8e1"
+      }
+    },
+    "/images/articles/who-owns-pudu-robotics/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53986,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e6010492e5074f9ace72d9f169a710fceeb268ab3ca4b0e2dbfa99870b6e7625",
+      "outputHash": "sha256:05f5b073dd9adb07aabbc2e4acbfcf8ed72c2808ca83bee57dbc1ad4281f65f1",
+      "mobile": {
+        "src": "/images/articles/who-owns-pudu-robotics/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22962,
+        "outputHash": "sha256:066dd007601ecb9b6ad214e3646f1309058f5e192f1c2b035e81eeec0975110c"
+      }
+    },
+    "/images/articles/who-owns-pudu-robotics/02-pudu-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41808,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:46b625408a24a9f3ea067c0fb312fe1aa0b83341d7ead39cd4eea648d829cefc",
+      "outputHash": "sha256:73630cc53ac643279b3d60dc9b94409790a278b56a9546433ab0257d8d2d95c4",
+      "mobile": {
+        "src": "/images/articles/who-owns-pudu-robotics/02-pudu-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16618,
+        "outputHash": "sha256:c62078e1e687d4dbe91538948b1292325552cad33b679464ce9767c8c4d021c5"
       }
     },
     "/images/articles/who-owns-rowenta-groupe-seb-vacuums/01-cover.webp": {
@@ -44509,6 +44725,13 @@
         "/images/articles/who-owns-festool-tts-tooltechnic-systems/02-festool-ownership-system-map.webp"
       ]
     },
+    "who-owns-fimap-comac-group": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-fimap-comac-group/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-fimap-comac-group/02-fimap-comac-ownership-structure.webp"
+      ]
+    },
     "who-owns-fisher-paykel-haier-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/blog/fisher-paykel-haier-manufacturing-cover.webp",
@@ -44538,6 +44761,13 @@
       "body": [
         "/images/articles/who-owns-gardena-husqvarna-sileno-manufacturing/02-gardena-ownership-product-system-map.webp",
         "/images/articles/who-owns-gardena-husqvarna-sileno-manufacturing/03-gardena-product-verification-map.webp"
+      ]
+    },
+    "who-owns-gausium": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-gausium/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-gausium/02-gausium-ownership-structure.webp"
       ]
     },
     "who-owns-ge-appliances-haier-manufacturing": {
@@ -44638,6 +44868,13 @@
         "/images/articles/who-owns-husqvarna-automower-motorcycles/02-husqvarna-automower-manufacturing-region-checklist.webp"
       ]
     },
+    "who-owns-ipc-tennant": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-ipc-tennant/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-ipc-tennant/02-ipc-ownership-structure.webp"
+      ]
+    },
     "who-owns-irobot-roomba-picea-robotics": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-irobot-roomba-picea-robotics/01-cover.webp",
@@ -44665,6 +44902,13 @@
       "body": [
         "/images/articles/who-owns-lawnmaster-cleva-manufacturing/02-lawnmaster-cleva-ownership-map.webp",
         "/images/articles/who-owns-lawnmaster-cleva-manufacturing/03-lawnmaster-model-region-verification-map.webp"
+      ]
+    },
+    "who-owns-lionsbot": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-lionsbot/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-lionsbot/02-lionsbot-ownership-structure.webp"
       ]
     },
     "who-owns-mac-tools-stanley-black-decker": {
@@ -44721,6 +44965,13 @@
       "cover": "/images/articles/who-owns-milwaukee-tools-tti-manufacturing/01-cover.webp",
       "body": []
     },
+    "who-owns-minuteman-hako-powerboss": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-minuteman-hako-powerboss/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-minuteman-hako-powerboss/02-minuteman-ownership-structure.webp"
+      ]
+    },
     "who-owns-narwal-yunjing-investors-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-narwal-yunjing-investors-manufacturing/01-cover.webp",
@@ -44756,6 +45007,13 @@
       "cover": "/images/blog/porter-cable-sbd-manufacturing-cover.webp",
       "body": [
         "/images/blog/porter-cable-ownership-position-map.svg"
+      ]
+    },
+    "who-owns-pudu-robotics": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-pudu-robotics/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-pudu-robotics/02-pudu-ownership-structure.webp"
       ]
     },
     "who-owns-ridgid-wet-dry-vacuums-emerson": {
@@ -53491,6 +53749,20 @@
         }
       }
     },
+    "who-owns-fimap-comac-group": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-fimap-comac-group/01-cover.webp",
+          "hash": "sha256:69d505cd0004bf7b3ae29c2e913e31fd84973052d5bab22c118b5c13c3e22c35"
+        },
+        "02-fimap-comac-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-fimap-comac-group/02-fimap-comac-ownership-structure.webp",
+          "hash": "sha256:83ec616a9409619ccb632466bb55045d0f07f0b36a34b4a6b3e984f17ddad50b"
+        }
+      }
+    },
     "who-owns-fisher-paykel-haier-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -53543,6 +53815,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-gardena-husqvarna-sileno-manufacturing/03-gardena-product-verification-map.webp",
           "hash": "sha256:8c146b68b40d43564af117bb853b69b9c0cd944a1615115dbc724cb9c3a102b6"
+        }
+      }
+    },
+    "who-owns-gausium": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-gausium/01-cover.webp",
+          "hash": "sha256:9dff7f5d142fe2136a8ebf6e232293092eff66bf7a8f69fecbbde69c0517ed0c"
+        },
+        "02-gausium-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-gausium/02-gausium-ownership-structure.webp",
+          "hash": "sha256:38fda72da5f2ef1a8692a4d8d3581b3ccbcde33bfe914f4e4dfe59f17d5c6e44"
         }
       }
     },
@@ -53753,6 +54039,20 @@
         }
       }
     },
+    "who-owns-ipc-tennant": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ipc-tennant/01-cover.webp",
+          "hash": "sha256:c63f87c0c2417688d3c48e143da6d9b97f37ee9e4d94cce41d1e3504153883a9"
+        },
+        "02-ipc-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ipc-tennant/02-ipc-ownership-structure.webp",
+          "hash": "sha256:aa7dc170fb2be8bd6c498e8a6072eba7c2545a7c360aa3131d0106d384a2905c"
+        }
+      }
+    },
     "who-owns-irobot-roomba-picea-robotics": {
       "files": {
         "01-cover.png": {
@@ -53797,6 +54097,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-lawnmaster-cleva-manufacturing/03-lawnmaster-model-region-verification-map.webp",
           "hash": "sha256:09bf7adc4d2dd830da93a880ae879694fade185d485f2e538dc178ee9cb1985d"
+        }
+      }
+    },
+    "who-owns-lionsbot": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lionsbot/01-cover.webp",
+          "hash": "sha256:349d8f3a1beff9892f3d01e2772fc18cfc708d66f7c4b1e4ec6f0204e44ece08"
+        },
+        "02-lionsbot-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lionsbot/02-lionsbot-ownership-structure.webp",
+          "hash": "sha256:e43d93c371b45d38784ac1aec38be66f24ef9c26ec2529c16e9f61f58bc7667a"
         }
       }
     },
@@ -53882,6 +54196,20 @@
         }
       }
     },
+    "who-owns-minuteman-hako-powerboss": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-minuteman-hako-powerboss/01-cover.webp",
+          "hash": "sha256:9aa2934f7e07cca0f9f1a90cf16c8a790cc41003ddc32c59c96634b8378de35c"
+        },
+        "02-minuteman-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-minuteman-hako-powerboss/02-minuteman-ownership-structure.webp",
+          "hash": "sha256:fb040cadd62471d827ee9879e334e5de214c6a4db178cc34823bf8952ac29884"
+        }
+      }
+    },
     "who-owns-narwal-yunjing-investors-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -53926,6 +54254,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-polaris-pool-cleaners-fluidra-zodiac/02-polaris-fluidra-regional-responsibility-map.webp",
           "hash": "sha256:fa64fd4aa16fcb2efda1c0857f19fdf430da214d5dd89c2cfd3f59064bda248d"
+        }
+      }
+    },
+    "who-owns-pudu-robotics": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-pudu-robotics/01-cover.webp",
+          "hash": "sha256:e6010492e5074f9ace72d9f169a710fceeb268ab3ca4b0e2dbfa99870b6e7625"
+        },
+        "02-pudu-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-pudu-robotics/02-pudu-ownership-structure.webp",
+          "hash": "sha256:46b625408a24a9f3ea067c0fb312fe1aa0b83341d7ead39cd4eea648d829cefc"
         }
       }
     },

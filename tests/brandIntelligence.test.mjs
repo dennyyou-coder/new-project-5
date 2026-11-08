@@ -981,9 +981,11 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-eufy-anker-smart-home": ["eufy"],
     "who-owns-eureka-midea-electrolux-manufacturing": ["midea",  "eureka",  "electrolux"],
     "who-owns-festool-tts-tooltechnic-systems": ["festool"],
+    "who-owns-fimap-comac-group": ["comac", "fimap"],
     "who-owns-fisher-paykel-haier-manufacturing": ["fisher-paykel"],
     "who-owns-flex-tools-chervon-lowes": ["flex"],
     "who-owns-frigidaire-electrolux-manufacturing": ["electrolux"],
+    "who-owns-gausium": ["gausium"],
     "who-owns-ge-appliances-haier-manufacturing": ["ge-appliances"],
     "who-owns-gorenje-appliances-hisense": ["gorenje"],
     "who-owns-greenworks-globe-stihl": ["greenworks",  "stihl"],
@@ -997,19 +999,23 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-owns-hoover-tti-haier-candy": ["hoover",  "dirt-devil"],
     "who-owns-hotpoint-appliances-regional-split": ["hotpoint"],
     "who-owns-husqvarna-automower-motorcycles": ["husqvarna"],
+    "who-owns-ipc-tennant": ["ipc"],
     "who-owns-irobot-roomba-picea-robotics": ["irobot"],
     "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
     "who-owns-lawnmaster-cleva-manufacturing": ["lawnmaster"],
+    "who-owns-lionsbot": ["lionsbot"],
     "who-owns-makita-company-manufacturing": ["makita"],
     "who-owns-maytag-whirlpool-manufacturing": ["whirlpool"],
     "who-owns-metabo-metabo-hpt-hikoki": ["metabo",  "hikoki"],
     "who-owns-midea-appliances-brand-portfolio": ["midea"],
     "who-owns-miele-family-manufacturing-network": ["miele"],
     "who-owns-milwaukee-tools-tti-manufacturing": ["milwaukee",  "tti"],
+    "who-owns-minuteman-hako-powerboss": ["minuteman"],
     "who-owns-narwal-yunjing-investors-manufacturing": ["narwal"],
     "who-owns-nilfisk-freudenberg-manufacturing": ["nilfisk"],
     "who-owns-panasonic-appliances-vacuum-manufacturing": ["panasonic"],
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris",  "fluidra"],
+    "who-owns-pudu-robotics": ["pudu-robotics"],
     "who-owns-rowenta-groupe-seb-vacuums": ["rowenta"],
     "who-owns-ryobi-tti-kyocera": ["ryobi"],
     "who-owns-segway-navimow-ninebot-willand": ["segway-navimow"],
@@ -1068,8 +1074,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 197);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 334);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 203);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 341);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -1641,6 +1647,7 @@ test("commercial-cleaning batch thirteen publishes Numatic, Gausium and IPC with
     assert.equal(heroMetadata.height, 1000);
 
     const relationships = realArticles
+      .filter((article) => !(article.guideType === "ownership" && article.slug.startsWith("who-owns-")))
       .filter((article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       .map((article) => article.slug);
     assert.deepEqual(
