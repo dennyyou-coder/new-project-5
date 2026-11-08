@@ -26,6 +26,11 @@ const nextConfig: NextConfig = {
         permanent: true
       },
       {
+        source: "/world-clean-expo",
+        destination: "/wcb-expo",
+        permanent: true
+      },
+      {
         source: "/insights/a-century-of-cleaning-appliances",
         destination: "/blog/hundred-years-of-cleaning-appliance-history",
         permanent: true
@@ -122,7 +127,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/insights/global-cleaning-industry-center-vision",
-        destination: "/world-clean-expo",
+        destination: "/wcb-expo",
         permanent: true
       },
       {

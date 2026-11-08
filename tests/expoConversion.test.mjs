@@ -6,10 +6,8 @@ const expoSource = await readFile(
   new URL("../app/wcb-expo/page.tsx", import.meta.url),
   "utf8"
 );
-const legacyRouteSource = await readFile(
-  new URL("../app/world-clean-expo/page.tsx", import.meta.url),
-  "utf8"
-);
+// The old /world-clean-expo address is a permanent redirect in next.config.
+const legacyRouteSource = await readFile(new URL("../next.config.ts", import.meta.url), "utf8");
 // app/styles/wcb-expo.css was never imported by the page and was removed.
 const expoStyles = "";
 
@@ -33,7 +31,7 @@ test("WCB Expo uses the confirmed event identity and canonical route", () => {
   assert.match(expoSource, /Suzhou Shishan Convention Center/);
   assert.match(expoSource, /Suzhou, China/);
   assert.match(expoSource, /canonical: "\/wcb-expo"/);
-  assert.match(legacyRouteSource, /permanentRedirect\("\/wcb-expo"\)/);
+  assert.match(legacyRouteSource, /source: "\/world-clean-expo",\s*destination: "\/wcb-expo",\s*permanent: true/);
 });
 
 test("WCB Expo gives visitors an image-led reason to attend", () => {
