@@ -1,0 +1,195 @@
+{
+  "slug": "q3-2026-cleaning-industry-results",
+  "title": "Q3 2026 Results: The Global Cleaning Industry",
+  "shortLabel": "Q3 Results",
+  "seoTitle": "Q3 2026 Cleaning Industry Results: Who Grew, Who Lost",
+  "dek": "Third-quarter results from listed cleaning, pool, outdoor and appliance companies worldwide: who grew, who lost money, and what tariffs and refunds did to the numbers.",
+  "description": "WCB's running file on the Q3 2026 results season across the global cleaning industry, from Roborock, ECOVACS and SharkNinja to Midea, Haier, Whirlpool, Electrolux, Husqvarna, Pentair and Tennant, with reported figures and sources.",
+  "coverImage": "/images/topics/q3-2026-cleaning-industry-results/cover.webp",
+  "coverCredit": {
+    "text": "Sign of the New York Stock Exchange, Broad Street. Photo: Billie Grace Ward, CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:Sign_of_the_New_York_Stock_Exchange,_Broad_Street.jpg"
+  },
+  "updated": "2026-11-08",
+  "status": {
+    "label": "Results season · 16 companies reported",
+    "text": "Fourteen listed companies have reported July–September 2026, plus Fluidra's nine-month and Makita's half-year figures. Robot-vacuum specialists grew fastest; large appliance groups shrank; tariff refunds lifted several US profits."
+  },
+  "summary": [
+    "The third quarter split the cleaning industry into clear groups. Robot-vacuum specialists kept growing fast: Roborock's revenue rose 34.85% to CNY 5.61 billion with profit up 33%, and ECOVACS grew 10.61% to CNY 4.65 billion. But ECOVACS's attributable net profit fell 72.43%, a reminder that growth in robot vacuums is no longer the same as profit.",
+    "The large appliance groups went the other way. Midea's revenue fell 4.12%, Haier's 10.13% and Whirlpool's 8.8%, with Whirlpool reporting a loss after an India impairment. SharkNinja grew 21.2%, but its Cleaning Appliances category grew only 4.1%; cooking, food preparation and beauty drove the group. Electrolux grew 3.5% organically and still reported a net loss.",
+    "Outdoor and pool were mixed. Husqvarna's sales fell and it reported an operating loss as European robotic-mower demand weakened. Pentair's pool sales fell 18% as a channel inventory reset ended, while Hayward grew 6.5%. Tennant's robotics sales rose 71%. In the US, refunds of the IEEPA tariffs struck down in February lifted reported profits at SharkNinja and Stanley Black & Decker, so headline profit growth there needs to be read with the refund taken out."
+  ],
+  "keyFacts": [
+    {
+      "label": "Fastest growth",
+      "value": "Roborock +34.85% (CNY 5.61bn), SharkNinja +21.2% (USD 1.98bn), ECOVACS +10.61% (CNY 4.65bn)"
+    },
+    {
+      "label": "Profit squeeze",
+      "value": "ECOVACS attributable net profit −72.43% despite revenue growth"
+    },
+    {
+      "label": "Appliance groups",
+      "value": "Midea −4.12%, Haier −10.13%, Whirlpool −8.8% (net loss)"
+    },
+    {
+      "label": "Outdoor and pool",
+      "value": "Husqvarna −2.1% with an operating loss; Pentair −4.5% (pool −18%); Hayward +6.5%"
+    },
+    {
+      "label": "Commercial robotics",
+      "value": "Tennant robotics sales about USD 37.3m, +71%"
+    },
+    {
+      "label": "Tariff refunds",
+      "value": "SharkNinja recognised USD 109.6m and Stanley Black & Decker USD 180.7m from IEEPA refunds in Q3"
+    }
+  ],
+  "callout": {
+    "title": "Full ranking",
+    "text": "Every company that reported Q3, ranked by revenue growth with links to each release, is on the WCB rankings page.",
+    "href": "/rankings"
+  },
+  "timeline": [
+    {
+      "date": "2026-10-21",
+      "title": "Husqvarna opens the season with a loss",
+      "text": "Sales fall to SEK 9.01 billion and the group reports an operating loss as European robotic-mower demand weakens.",
+      "href": "/news/husqvarna-q3-2026-robotics-and-production-update"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Groupe SEB flat like-for-like",
+      "text": "Q3 sales of EUR 1.96 billion, up 2.5% reported and down 0.1% like-for-like.",
+      "href": "/news/groupe-seb-nine-month-sales-october-2026"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Electrolux grows, still loses money",
+      "text": "Organic growth of 3.5% on sales of SEK 33.9 billion, with a SEK 340 million net loss.",
+      "href": "/news/electrolux-q3-2026-results-and-midea-jvs"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Whirlpool sales fall 8.8%",
+      "text": "An India impairment drives a quarterly loss.",
+      "href": "/news/whirlpool-third-quarter-results-october-2026"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Pentair pool sales fall 18%",
+      "text": "The company says its channel inventory reset is complete.",
+      "href": "/news/pentair-third-quarter-results-october-2026"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Hayward grows 6.5% and raises guidance",
+      "href": "/news/hayward-third-quarter-results-october-2026",
+      "text": "Net pricing and modest volume growth lift North American sales."
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Haier revenue falls 10.13%",
+      "text": "Weaker demand in China pulls revenue down to CNY 69.7 billion.",
+      "href": "/news/haier-third-quarter-results-october-2026"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Midea revenue falls, reported profit rises",
+      "text": "Revenue down 4.12%; attributable net profit up 25.93% while recurring profit falls.",
+      "href": "/news/midea-third-quarter-results-october-2026"
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Roborock and ECOVACS report",
+      "text": "Roborock grows 34.85% with profit up 33%; ECOVACS grows 10.61% while profit falls 72.43%.",
+      "href": "/news/roborock-third-quarter-results-october-2026"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Tennant robotics up 71%",
+      "text": "Net sales rise 6.2% and orders 9.5%.",
+      "href": "/news/tennant-third-quarter-2026-results"
+    },
+    {
+      "date": "2026-11-04",
+      "title": "SharkNinja and Stanley Black & Decker close the season",
+      "text": "SharkNinja grows 21.2% and raises its outlook; both companies book IEEPA tariff refunds.",
+      "href": "/news/sharkninja-third-quarter-results-november-2026"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Which cleaning companies grew fastest in Q3 2026?",
+      "a": "Among companies that reported July–September, Roborock grew fastest at 34.85%, followed by SharkNinja at 21.2% and ECOVACS at 10.61%. SharkNinja's growth came mainly from categories outside cleaning; its Cleaning Appliances sales rose 4.1%."
+    },
+    {
+      "q": "Is robot-vacuum growth turning into profit?",
+      "a": "Not evenly. Roborock's attributable net profit rose 33.01% alongside revenue, while ECOVACS's fell 72.43% to about CNY 121 million despite 10.61% revenue growth. Price competition and spending are absorbing much of the growth."
+    },
+    {
+      "q": "Why are the big appliance groups shrinking?",
+      "a": "Midea, Haier and Whirlpool all reported lower revenue. Haier cited weaker demand in China, and Whirlpool cited soft North American demand and booked an India impairment. Their figures cover whole groups, so cleaning is a small part of the picture."
+    },
+    {
+      "q": "What happened in pool and outdoor equipment?",
+      "a": "Pentair's pool sales fell 18% as it finished reducing channel inventory, while Hayward grew 6.5% and Fluidra grew 4% at constant exchange rates over nine months. Husqvarna reported an operating loss as European robotic-mower demand weakened."
+    },
+    {
+      "q": "Do the US results include tariff refunds?",
+      "a": "Yes, for some companies. After the Supreme Court struck down the IEEPA tariffs, SharkNinja recognised USD 109.6 million and Stanley Black & Decker a USD 180.7 million pre-tax gain from refunds in Q3. SharkNinja excludes the refund from its adjusted results."
+    }
+  ],
+  "insights": [
+    "china-cleaning-appliance-earnings-q3-2026",
+    "ieepa-tariff-refunds-who-gets-the-money",
+    "china-cleaning-appliance-financial-reality-check",
+    "roborock-targets-70-billion-rmb-by-2029",
+    "sharkninja-q2-growth-outside-cleaning",
+    "global-power-tool-brands-reshaping-portfolios"
+  ],
+  "news": [
+    "sharkninja-third-quarter-results-november-2026",
+    "stanley-black-decker-third-quarter-november-2026",
+    "tennant-third-quarter-2026-results",
+    "roborock-third-quarter-results-october-2026",
+    "ecovacs-third-quarter-results-october-2026",
+    "midea-third-quarter-results-october-2026",
+    "makita-interim-results-october-2026",
+    "haier-third-quarter-results-october-2026",
+    "fluidra-nine-month-results-october-2026",
+    "hayward-third-quarter-results-october-2026",
+    "pentair-third-quarter-results-october-2026",
+    "whirlpool-third-quarter-results-october-2026",
+    "electrolux-q3-2026-results-and-midea-jvs",
+    "groupe-seb-nine-month-sales-october-2026",
+    "husqvarna-q3-2026-robotics-and-production-update"
+  ],
+  "sources": [
+    {
+      "title": "Roborock third-quarter 2026 report (Shanghai Stock Exchange announcement)",
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12682146&stockid=688169"
+    },
+    {
+      "title": "SharkNinja Q3 2026 results release (SEC 8-K, Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001957132/000195713226000055/exhibit991pressreleaseofsh.htm"
+    },
+    {
+      "title": "Stanley Black & Decker Q3 2026 quarterly report (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000093556/000009355626000039/swk-20261003.htm"
+    },
+    {
+      "title": "Haier Smart Home Q3 2026 quarterly report",
+      "url": "https://stockmc.xueqiu.com/202610/600690_20261030_U42K.pdf"
+    },
+    {
+      "title": "Electrolux Group interim report Q3 2026",
+      "url": "https://www.electroluxgroup.com/en/electrolux-group-interim-report-q3-2026-47822/"
+    },
+    {
+      "title": "Tennant Q3 2026 results release (SEC)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0000097134/000009713426000027/tnc-20261102xexx991.htm"
+    }
+  ]
+}

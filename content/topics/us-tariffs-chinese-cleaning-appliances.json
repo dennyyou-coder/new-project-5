@@ -1,0 +1,167 @@
+{
+  "slug": "us-tariffs-chinese-cleaning-appliances",
+  "title": "US Tariffs on Chinese Cleaning Appliances",
+  "shortLabel": "US Tariffs",
+  "seoTitle": "US Tariffs on Chinese Vacuums and Robot Vacuums in 2026",
+  "dek": "What a vacuum or robot vacuum made in China pays to enter the United States after the Supreme Court IEEPA ruling and the new Section 301 duties, how Southeast Asia compares, and what changes next.",
+  "description": "WCB's running file on US tariffs affecting cleaning appliances made in China: Section 301 duties, the 2026 Supreme Court IEEPA ruling and refunds, the Section 122 surcharge, the Section 301 forced-labor tariffs, the US–China truce and Southeast Asian alternatives.",
+  "coverImage": "/images/topics/us-tariffs-chinese-cleaning-appliances/cover.webp",
+  "coverCredit": {
+    "text": "Container ship being loaded in the Port of Long Beach. Photo: biofriendly, CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Container_ship_being_loaded_in_Long_Beach_container_port.jpg"
+  },
+  "updated": "2026-11-08",
+  "status": {
+    "label": "US–China truce runs to 10 January 2027",
+    "text": "IEEPA tariffs ended in February. Chinese-made vacuums now carry the 25% Section 301 duty plus a 12.5% Section 301 forced-labor duty in force since 24 July 2026. Some Section 301 exclusions are due to expire on 10 November."
+  },
+  "summary": [
+    "For a vacuum cleaner or robot vacuum made in China, the US tariff now comes almost entirely from Section 301 of the Trade Act. The ordinary duty on HTS heading 8508 is zero. The 2018–2019 Section 301 action adds 25% for Chinese-origin vacuums, and since 24 July 2026 a separate Section 301 forced-labor action adds 12.5%. Trade-law firms describe the new duty as stacking on top, which puts a typical Chinese-made robot vacuum at about 37.5% in additional duties, depending on its exact classification and any exclusion.",
+    "The tariffs of 2025 have gone. On 20 February 2026 the Supreme Court ruled 6–3 that the International Emergency Economic Powers Act does not authorise tariffs, and collection of the IEEPA fentanyl and reciprocal duties stopped on 24 February. The government replaced them with a temporary 10% surcharge under Section 122, which lapsed after its 150-day limit on 24 July, the day the forced-labor duties began. Refunds of IEEPA duties, which the Bureau of Economic Analysis puts at about USD 166 billion, go to the importer of record, not to the overseas supplier.",
+    "The gap with Southeast Asia has changed shape. Vietnam and Thailand face the same 12.5% forced-labor duty as China, and Malaysia, Indonesia, Mexico and India face 10%, but none of them carry the 25% China-specific duty. For cleaning appliances, moving final assembly out of China still saves roughly 25 percentage points of duty on a US-bound product, provided origin rules are met. The US–China truce agreed in Busan has been extended to 10 January 2027."
+  ],
+  "keyFacts": [
+    {
+      "label": "Chinese-made vacuum or robot vacuum",
+      "value": "0% ordinary duty + 25% Section 301 + 12.5% Section 301 forced-labor ≈ 37.5% additional"
+    },
+    {
+      "label": "Vietnam, Thailand",
+      "value": "12.5% forced-labor duty; no China Section 301 duty"
+    },
+    {
+      "label": "Malaysia, Indonesia, Mexico, India",
+      "value": "10% forced-labor duty"
+    },
+    {
+      "label": "IEEPA tariffs",
+      "value": "Struck down 20 February 2026; refunds about USD 166bn go to importers of record"
+    },
+    {
+      "label": "Truce",
+      "value": "US–China arrangement agreed in Busan extended to 10 January 2027"
+    },
+    {
+      "label": "Separate barrier",
+      "value": "New foreign-produced robot vacuums and mowers also need FCC clearance under the Covered List"
+    }
+  ],
+  "callout": {
+    "title": "Check the classification",
+    "text": "Duty depends on the exact HTS line, origin and any exclusion. Rates here are for vacuum cleaners under heading 8508 and should be confirmed with a customs broker before pricing a shipment. The FCC Covered List is a separate requirement covered in its own WCB topic.",
+    "href": "/topics/us-fcc-robot-restrictions"
+  },
+  "timeline": [
+    {
+      "date": "2019-05",
+      "title": "Section 301 duty on Chinese vacuums reaches 25%",
+      "text": "The 2018–2019 Section 301 action against China puts a 25% additional duty on vacuum cleaners classified under HTS heading 8508, still in force today."
+    },
+    {
+      "date": "2025-04",
+      "title": "IEEPA tariffs stack on Chinese goods",
+      "text": "Fentanyl-related and 'reciprocal' tariffs under IEEPA are added on top of Section 301, briefly pushing combined rates on Chinese goods far higher.",
+      "href": "/blog/impact-of-trump-reciprocal-tariffs"
+    },
+    {
+      "date": "2025-11-10",
+      "title": "Busan truce takes effect",
+      "text": "The fentanyl tariff is cut from 20% to 10%, further reciprocal increases are suspended and 178 Section 301 exclusions are extended for a year."
+    },
+    {
+      "date": "2026-02-20",
+      "title": "Supreme Court strikes down IEEPA tariffs",
+      "text": "A 6–3 ruling holds that IEEPA does not authorise tariffs; collection stops on 24 February and refunds follow.",
+      "href": "/blog/ieepa-tariff-refunds-who-gets-the-money"
+    },
+    {
+      "date": "2026-02-24",
+      "title": "10% Section 122 surcharge begins",
+      "text": "A temporary import surcharge replaces the IEEPA duties for up to 150 days."
+    },
+    {
+      "date": "2026-07-24",
+      "title": "Section 301 forced-labor duties replace Section 122",
+      "text": "USTR's action on 60 economies takes effect: 12.5% for China, Vietnam and Thailand; 10% for Malaysia, Indonesia, Mexico and India."
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Truce extended to 10 January 2027",
+      "text": "Treasury Secretary Scott Bessent says the Busan arrangement will run to 10 January 2027."
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Section 301 exclusions due to expire",
+      "text": "The 178 remaining China exclusions lapse unless USTR extends them; no extension had been published as of 8 November."
+    },
+    {
+      "date": "2027-01-10",
+      "title": "Truce deadline",
+      "text": "The extended US–China arrangement is due to end unless renewed."
+    }
+  ],
+  "questions": [
+    {
+      "q": "What US tariff does a Chinese-made robot vacuum pay now?",
+      "a": "For a robot vacuum classified under HTS 8508.11, the ordinary duty is zero, the China Section 301 duty is 25% and the Section 301 forced-labor duty in force since 24 July 2026 is 12.5%, about 37.5% in additional duties in total. The exact figure depends on classification and any exclusion."
+    },
+    {
+      "q": "Did the Supreme Court ruling end tariffs on Chinese goods?",
+      "a": "No. It ended the IEEPA tariffs from 24 February 2026, but Section 301 duties on China were not affected, and new Section 301 forced-labor duties have applied since 24 July 2026."
+    },
+    {
+      "q": "Who receives the IEEPA tariff refunds?",
+      "a": "The importer of record that paid the duty to US Customs, such as a retailer, a brand's US subsidiary or another US importer. A Chinese supplier that cut its price or shipped on DDP terms has no direct claim unless it was the importer of record; any share has to be negotiated."
+    },
+    {
+      "q": "Does moving production to Southeast Asia still pay?",
+      "a": "For US-bound vacuums, yes in duty terms: products made in Vietnam or Thailand face the 12.5% forced-labor duty, and those from Malaysia or Indonesia 10%, but not the 25% China Section 301 duty. Origin has to be genuine; simple transshipment does not change it."
+    },
+    {
+      "q": "What could change next?",
+      "a": "The 178 Section 301 exclusions are due to expire on 10 November 2026, the US–China truce runs to 10 January 2027, and the forced-labor duties and the Section 122 surcharge both face challenges at the Court of International Trade."
+    }
+  ],
+  "insights": [
+    "ieepa-tariff-refunds-who-gets-the-money",
+    "who-benefits-from-china-us-trade-war-in-vacuums",
+    "how-to-understand-complete-supply-chain-transfer",
+    "vietnam-development-and-industrial-hollowing",
+    "trade-war-scenario-analysis",
+    "fcc-robot-ban-paths-chinese-robot-vacuums-mowers"
+  ],
+  "news": [
+    "sharkninja-third-quarter-results-november-2026",
+    "stanley-black-decker-third-quarter-november-2026"
+  ],
+  "sources": [
+    {
+      "title": "USTR: USTR takes action in forced labor Section 301 investigations (23 July 2026)",
+      "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ustr-takes-action-forced-labor-section-301-investigations"
+    },
+    {
+      "title": "Holland & Knight: new Section 301 forced-labor tariffs imposed on 60 countries",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/07/and-the-tariff-beat-goes-on"
+    },
+    {
+      "title": "Holland & Knight: Supreme Court strikes down IEEPA tariffs",
+      "url": "https://www.hklaw.com/en/insights/publications/2026/02/supreme-court-strikes-down-ieepa-tariffs"
+    },
+    {
+      "title": "White House fact sheet: deal on economic and trade relations with China (November 2025)",
+      "url": "https://www.whitehouse.gov/fact-sheets/2025/11/fact-sheet-president-donald-j-trump-strikes-deal-on-economic-and-trade-relations-with-china/"
+    },
+    {
+      "title": "US Customs ruling N305154: robot vacuum classification and Section 301 duty",
+      "url": "https://rulings.cbp.gov/ruling/N305154"
+    },
+    {
+      "title": "Bureau of Economic Analysis: treatment of IEEPA tariff refunds",
+      "url": "https://www.bea.gov/help/faq/1488"
+    },
+    {
+      "title": "CNBC: US–China trade truce extended, Bessent says (24 September 2026)",
+      "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html"
+    }
+  ]
+}

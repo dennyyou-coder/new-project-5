@@ -224,7 +224,7 @@ export default function HomePage() {
                       <img
                         src={topicImageSmall(topic.coverImage)}
                         srcSet={`${topicImageSmall(topic.coverImage)} 600w, ${topic.coverImage} 1200w`}
-                        sizes="(max-width: 560px) 120px, (max-width: 960px) 45vw, 300px"
+                        sizes="(max-width: 560px) 120px, (max-width: 1100px) 50vw, 300px"
                         alt=""
                         width={600}
                         height={375}
