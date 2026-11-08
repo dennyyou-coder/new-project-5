@@ -197,6 +197,11 @@ export default async function TopicPage({ params }: { params: PageParams }) {
               <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a>
             </li>
           ))}
+          {topic.coverCredit ? (
+            <li>
+              Image: <a href={topic.coverCredit.url} target="_blank" rel="noopener noreferrer">{topic.coverCredit.text}</a>
+            </li>
+          ) : null}
         </ul>
       </footer>
 

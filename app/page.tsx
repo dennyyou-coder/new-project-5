@@ -21,7 +21,7 @@ import { getNews, getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel 
 import { EXPO_2026, isExpoUpcoming } from "@/lib/hubPresentation";
 import { homeVideos } from "@/lib/wcbVideos";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
-import { getTopics, topicHref } from "@/lib/topics";
+import { getTopics, topicHref, topicImageSmall } from "@/lib/topics";
 import { compareKeyBrands, isKeyBrand } from "@/lib/keyBrands";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
@@ -220,7 +220,18 @@ export default function HomePage() {
               {watch.map(({ topic }) => (
                 <Link key={topic.slug} className="home-b-watch-card" href={topicHref(topic.slug)}>
                   <span className="home-b-watch-image">
-                    {topic.coverImage ? <img {...responsiveImageProps(topic.coverImage, "card")} alt="" /> : null}
+                    {topic.coverImage ? (
+                      <img
+                        src={topicImageSmall(topic.coverImage)}
+                        srcSet={`${topicImageSmall(topic.coverImage)} 600w, ${topic.coverImage} 1200w`}
+                        sizes="(max-width: 560px) 120px, (max-width: 960px) 45vw, 300px"
+                        alt=""
+                        width={600}
+                        height={375}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : null}
                   </span>
                   <span className="home-b-watch-body">
                     <span className="home-b-watch-badge">WCB Topic</span>
