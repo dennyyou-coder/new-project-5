@@ -1,8 +1,10 @@
+import { BrandLatest, type BrandLatestItem } from "@/components/brands/BrandLatest";
+import { formatAmount, resultsForBrand, revenueChange } from "@/lib/financials";
 import { BrandFaq } from "@/components/brands/BrandFaq";
 import { buildBrandAnalysisLink } from "@/components/brands/brandAnalysisLink";
 import { getAvailableCompanyKeywords } from "@/lib/companyKeywords";
 import { getEditorialInsights } from "@/lib/insightCollections";
-import { getNews } from "@/lib/news";
+import { getNews, newsDate } from "@/lib/news";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
@@ -150,6 +152,33 @@ export default async function BrandPage({ params }: PageProps) {
       };
     });
 
+  // Latest at this company: newest news story, latest reported results, newest 2026 model and newest analysis.
+  const latestResult = resultsForBrand(profile.slug, 1)[0];
+  const latestAnalysis = [...data.primaryArticles, ...data.relatedArticles]
+    .filter((article) => article.sortDate)
+    .sort((a, b) => b.sortDate.localeCompare(a.sortDate))[0];
+  const newestModel = productModels
+    .filter((model) => model.brandSlug === profile.slug && model.announced)
+    .sort((a, b) => String(b.announced).localeCompare(String(a.announced)))[0];
+  const latestItems: BrandLatestItem[] = [
+    ...(latestResult
+      ? [{
+          kind: "Results" as const,
+          title: `${latestResult.period}: ${latestResult.revenueLabel.toLowerCase()} ${formatAmount(latestResult.revenue, latestResult.currency)}`,
+          note: revenueChange(latestResult) ? `${revenueChange(latestResult)} year on year` : undefined,
+          href: latestResult.news ? `/news/${latestResult.news}` : "#financials",
+          date: latestResult.reported ?? latestResult.periodEnd,
+          dateLabel: newsDate(latestResult.reported ?? latestResult.periodEnd)
+        }]
+      : []),
+    ...relatedNews.slice(0, 3).map((item) => ({ kind: "News" as const, title: item.title, href: `/news/${item.slug}`, date: item.eventDate, dateLabel: newsDate(item.eventDate) })),
+    ...(newestModel ? [{ kind: "New product" as const, title: newestModel.name, href: `/products/${newestModel.slug}`, date: String(newestModel.announced), dateLabel: newsDate(String(newestModel.announced)) }] : []),
+    ...(latestAnalysis ? [{ kind: "Analysis" as const, title: latestAnalysis.title, href: `/blog/${latestAnalysis.slug}`, date: latestAnalysis.sortDate, dateLabel: newsDate(latestAnalysis.sortDate) }] : [])
+  ]
+    .filter((item, index, all) => all.findIndex((other) => other.href === item.href) === index)
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 5);
+
   const ownershipAnalysis = articles.find(
     (article) => article.contentClass === "search" && article.guideType === "ownership" && article.primaryBrands.includes(profile.slug)
   );
@@ -166,6 +195,7 @@ export default async function BrandPage({ params }: PageProps) {
             models={models}
             competitors={competitors}
             ownershipAnalysisHref={ownershipAnalysis ? `/blog/${ownershipAnalysis.slug}` : undefined}
+            latest={<BrandLatest name={profile.name} items={latestItems} />}
           />
           <BrandFaq profile={profile} />
           <BrandFinancials brand={profile.slug} />

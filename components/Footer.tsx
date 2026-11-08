@@ -31,6 +31,7 @@ export function Footer() {
               <li><Link href="/products">Products</Link></li>
               <li><Link href="/categories">Categories</Link></li>
               <li><Link href="/markets">Markets</Link></li>
+              <li><Link href="/rankings">Rankings</Link></li>
             </ul>
           </div>
           <div>

@@ -1,0 +1,41 @@
+/* Company rankings (/rankings) */
+.rankings-page { --r-ink: #0e1526; --r-text: #2a3245; --r-muted: #4a5367; --r-line: #e3e7ee; --r-soft: #f5f7fa; --r-accent: #2b50c8; color: var(--r-text); }
+.rank-container { max-width: 1180px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; }
+.rankings-hero { padding: 32px 0 28px; }
+.rankings-hero p { max-width: 820px; margin: 10px 0 0; font-size: 16px; line-height: 1.6; color: var(--r-muted); }
+.rankings-breadcrumb a { text-decoration: none; }
+.rank-body { padding-top: 12px; padding-bottom: 56px; }
+.rank-section { padding-top: 28px; }
+.rank-section h2, .rank-method h2 { margin: 0 0 4px; font-size: 22px; color: var(--r-ink); }
+.rank-note { margin: 0 0 12px; font-size: 14px; color: var(--r-muted); }
+.rank-list { margin: 0; padding: 0; list-style: none; border: 1px solid var(--r-line); border-radius: 14px; background: #fff; }
+.rank-list li { display: grid; grid-template-columns: 32px minmax(170px, 1.3fr) minmax(150px, 1fr) minmax(90px, 1.2fr) 170px minmax(120px, 1fr); gap: 14px; align-items: center; padding: 12px 18px; border-top: 1px solid var(--r-line); font-size: 15px; }
+.rank-list li:first-child { border-top: 0; }
+.rank-pos { font-weight: 800; color: var(--r-muted); text-align: right; }
+.rank-name { display: inline-flex; align-items: center; gap: 10px; min-width: 0; font-weight: 700; color: var(--r-ink); text-decoration: none; }
+.rank-name:hover { color: var(--r-accent); }
+.rank-revenue { display: grid; font-variant-numeric: tabular-nums; color: var(--r-text); }
+.rank-revenue small { font-size: 12px; color: var(--r-muted); }
+.rank-bar { display: block; height: 10px; border-radius: 5px; background: #eef1f6; overflow: hidden; }
+.rank-bar span { display: block; height: 100%; border-radius: 5px; }
+.rank-bar .is-up { background: #1f8a4c; }
+.rank-bar .is-down { background: #c8352b; }
+.rank-change { font-weight: 800; font-size: 14px; font-variant-numeric: tabular-nums; }
+.rank-change.is-up { color: #1f7a45; }
+.rank-change.is-down { color: #b42d24; }
+.rank-source { display: flex; flex-wrap: wrap; gap: 2px 10px; font-size: 13px; }
+.rank-source a { color: var(--r-accent); }
+.rank-method { margin-top: 36px; padding: 22px 24px; border-radius: 14px; background: var(--r-soft); }
+.rank-method ul { margin: 8px 0 0; padding-left: 18px; line-height: 1.7; font-size: 15px; }
+@media (max-width: 900px) {
+  .rank-list li { grid-template-columns: 26px minmax(0, 1fr) auto; grid-template-areas: "pos name change" ". revenue revenue" ". bar bar" ". source source"; row-gap: 6px; padding: 12px 14px; }
+  .rank-pos { grid-area: pos; }
+  .rank-name { grid-area: name; }
+  .rank-change { grid-area: change; text-align: right; }
+  .rank-revenue { grid-area: revenue; font-size: 14px; }
+  .rank-bar { grid-area: bar; }
+  .rank-source { grid-area: source; }
+}
+@media (max-width: 560px) {
+  .rank-container { padding: 0 16px; }
+}
