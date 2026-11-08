@@ -228,7 +228,7 @@ export default function HomePage() {
                         alt=""
                         width={600}
                         height={375}
-                        loading="lazy"
+                        loading="eager"
                         decoding="async"
                       />
                     ) : null}
