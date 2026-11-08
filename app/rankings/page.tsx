@@ -8,6 +8,7 @@ import { getInsights } from "@/lib/content";
 import { formatAmount } from "@/lib/financials";
 import { newsDate } from "@/lib/news";
 import { revenueGrowthRanking, type RankingRow } from "@/lib/rankings";
+import { ShareBar } from "@/components/share/ShareBar";
 
 const siteUrl = "https://worldcleanbiz.com";
 const ranking = revenueGrowthRanking();
@@ -72,6 +73,7 @@ export default function RankingsPage() {
           <nav className="rankings-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link> / <Link href="/markets">Markets</Link> / <span aria-current="page">Rankings</span></nav>
           <h1>{ranking.period} Revenue Growth Ranking</h1>
           <p>Listed companies in cleaning appliances, pool and outdoor equipment, ranked by the year-on-year revenue change each one reported for {ranking.period}.{latestReport ? ` Updated ${newsDate(latestReport)}.` : ""}</p>
+          <ShareBar title={`${ranking.period} revenue growth ranking: cleaning industry companies`} url={`${siteUrl}/rankings`} />
         </div>
       </header>
       <div className="rank-container rank-body">

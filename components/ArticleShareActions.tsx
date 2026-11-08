@@ -14,6 +14,7 @@ import {
   ARTICLE_NATIVE_SHARE_ICON,
   ARTICLE_SHARE_ICONS
 } from "@/lib/articleShareIcons";
+import { WeChatShare } from "@/components/share/WeChatShare";
 
 export function ArticleShareActions({ title, url, heading = "Share this analysis" }: { title: string; url: string; heading?: string }) {
   const data = { title, url };
@@ -88,6 +89,7 @@ export function ArticleShareActions({ title, url, heading = "Share this analysis
               </a>
             );
           })}
+          <WeChatShare url={url} />
           <button
             aria-label="Copy article link"
             className="article-share-action"
@@ -136,6 +138,7 @@ export function ArticleShareActions({ title, url, heading = "Share this analysis
               </a>
             );
           })}
+          <WeChatShare url={url} showLabel />
           <button className="article-share-action" onClick={handleCopy} type="button">
             <ARTICLE_COPY_ICON aria-hidden="true" focusable="false" />
             <span>Copy link</span>
