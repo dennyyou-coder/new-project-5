@@ -16,13 +16,12 @@ export default function SiteIndexPage() {
   return (
     <div className="trust-page trust-legal-page">
       <SiteIndexHero title="Site index" lead="Every page on World Clean Biz in one place: sections, topics, companies, products, equipment and components." />
-      <section className="section site-index">
-        <div className="container site-index-more">
+      <SiteIndexGroups groups={groups}>
+        <nav className="site-index-more" aria-label="Full lists">
           <Link href="/site-index/articles">All {articleCount} articles</Link>
           <Link href="/site-index/news">All {newsCount} news stories</Link>
-        </div>
-      </section>
-      <SiteIndexGroups groups={groups} />
+        </nav>
+      </SiteIndexGroups>
     </div>
   );
 }

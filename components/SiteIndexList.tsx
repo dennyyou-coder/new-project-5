@@ -13,10 +13,11 @@ export function SiteIndexHero({ title, lead, back }: { title: string; lead: stri
   );
 }
 
-export function SiteIndexGroups({ groups }: { groups: IndexGroup[] }) {
+export function SiteIndexGroups({ groups, children }: { groups: IndexGroup[]; children?: React.ReactNode }) {
   return (
     <section className="section site-index">
       <div className="container">
+        {children}
         {groups.map((group) => (
           <section className="site-index-group" key={group.title} aria-labelledby={`si-${slug(group.title)}`}>
             <h2 id={`si-${slug(group.title)}`}>{group.title} <span>{group.links.length}</span></h2>
