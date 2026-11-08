@@ -22,6 +22,7 @@ import { getNews, getNewsVisual, isBorrowedNewsVisual, newsDate, newsTopicLabel 
 import { EXPO_2026, isExpoUpcoming } from "@/lib/hubPresentation";
 import { homeVideos } from "@/lib/wcbVideos";
 import { featuredProductModels, productCover, productSelectionYear } from "@/lib/products";
+import { getTopics, topicDate, topicHref } from "@/lib/topics";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 // Re-render a few times a day so the expo band drops off after the expo closes without a deploy.
@@ -55,6 +56,14 @@ export default function HomePage() {
   const latestFounderSeries = getLatestSeriesInsight(articles, founderSeries);
   const marks = buildBrandMarkIndex(brands);
   const expoUpcoming = isExpoUpcoming();
+
+  // The industry's running stories: each WCB topic with its status, latest development and next date.
+  const today = new Date().toISOString().slice(0, 10);
+  const watch = getTopics().map((topic) => ({
+    topic,
+    latest: [...topic.timeline].reverse().find((event) => event.date <= today),
+    next: topic.timeline.find((event) => event.date > today)
+  }));
 
   // One newest model from each product category.
   const newModels = [...featuredProductModels]
@@ -223,6 +232,31 @@ export default function HomePage() {
       ) : null}
 
       {intro}
+
+      {watch.length ? (
+        <section className="home-b-watch" aria-labelledby="home-watch-title">
+          <div className="home-b-container">
+            <div className="home-b-head">
+              <h2 id="home-watch-title">Industry watch</h2>
+              <Link className="wcb-more" href="/topics">All topics</Link>
+            </div>
+            <div className="home-b-watch-grid">
+              {watch.map(({ topic, latest, next }) => (
+                <article key={topic.slug} className="home-b-watch-card">
+                  <p className="home-b-watch-status">{topic.status.label}</p>
+                  <h3><Link href={topicHref(topic.slug)}>{topic.title}</Link></h3>
+                  <p className="home-b-watch-text">{topic.status.text}</p>
+                  <dl className="home-b-watch-dates">
+                    {latest ? (<div><dt>Latest</dt><dd><time dateTime={latest.date}>{topicDate(latest.date)}</time> · {latest.title}</dd></div>) : null}
+                    {next ? (<div><dt>Next</dt><dd><time dateTime={next.date}>{topicDate(next.date)}</time> · {next.title}</dd></div>) : null}
+                  </dl>
+                  <Link className="wcb-more home-b-watch-more" href={topicHref(topic.slug)}>Follow the topic</Link>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="home-b-section" id="feed" aria-labelledby="home-feed-title">
         <div className="home-b-container">
