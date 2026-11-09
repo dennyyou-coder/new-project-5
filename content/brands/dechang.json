@@ -80,8 +80,8 @@
   ],
   "marketsChannels": [
     {
-      "evidence": "TTI is Dechang's largest customer. Dechang began supplying TTI with vacuum motors in 2007 and complete vacuum cleaners in 2012, and a 2024 broker report said TTI accounted for more than half of Dechang's 2023 sales.",
-      "scope": "Broker research citing company disclosures; the exact share is not published in Dechang's own reports reviewed here",
+      "evidence": "TTI is Dechang's largest customer. Dechang began supplying TTI with vacuum motors in 2007 and complete vacuum cleaners in 2012. A 2024 broker report said TTI accounted for more than half of Dechang's 2023 sales; industry sources consulted by World Clean Biz estimate the share at more than 80%.",
+      "scope": "Broker research citing company disclosures, plus a World Clean Biz industry estimate; Dechang's own reports reviewed here do not publish the exact share",
       "buyerCheck": "Products Dechang makes for TTI carry TTI brands such as Hoover and Dirt Devil in some markets; contact the brand owner for warranty."
     },
     {
@@ -91,7 +91,7 @@
     }
   ],
   "competitivePosition": {
-    "summary": "World Clean Biz assessment: Dechang (YDC) is one of China's larger vacuum contract manufacturers and depends heavily on TTI, which a 2024 broker report put at more than half of its 2023 sales. It has been adding customers such as SharkNinja and Helen of Troy, and its automotive EPS motor business is small but growing fast.",
+    "summary": "World Clean Biz assessment: Dechang (YDC) is one of China's larger vacuum contract manufacturers and depends heavily on TTI. A 2024 broker report put TTI at more than half of Dechang's 2023 sales; industry sources familiar with the business estimate TTI's share is now above 80%. Dechang has been adding customers such as SharkNinja and Helen of Troy, and its automotive EPS motor business is small but growing fast.",
     "competitorSlugs": [
       "kingclean",
       "tti"
@@ -174,5 +174,5 @@
   ],
   "publishedAt": "2026-11-09T11:00:00+08:00",
   "lastVerified": "2026-11-09",
-  "lastModified": "2026-11-09T11:00:00+08:00"
+  "lastModified": "2026-11-09T12:30:00+08:00"
 }
