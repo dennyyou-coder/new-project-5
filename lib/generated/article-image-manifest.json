@@ -11368,6 +11368,42 @@
       "sourceHash": "sha256:c1a2a91579f3664201b081d96296d46636a6469dc107fc195630c0c0240c78e4",
       "outputHash": "sha256:714de22326534dfd0bef18d4fc6fff343c11578519492814a418daa274996bc0"
     },
+    "/images/articles/hard-floor-washer-buying-guide/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 67492,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e140eb95ae2f1d4e5a5f89686f98793d2b17b023c0518cffe6430805677b8689",
+      "outputHash": "sha256:1eac7ac8316f96ec5ebf75c8566cbb784b96773ef6693faa2abfc3c5ac757a79",
+      "mobile": {
+        "src": "/images/articles/hard-floor-washer-buying-guide/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30388,
+        "outputHash": "sha256:501d5c682cf4588ba38e2ba50faa9dfb1fe9c9d389bd0392bce80947cc5dbb65"
+      }
+    },
+    "/images/articles/hard-floor-washer-buying-guide/02-floor-washer-decision-chart.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 46368,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:411b2011e32ac260b271605d58c6af7831616333b5ae5af41adbcdb4f63b82ac",
+      "outputHash": "sha256:6c6a4cfbe6922d2a856f4b8317c624f64f7d065edde3e591b91da1f19326cafc",
+      "mobile": {
+        "src": "/images/articles/hard-floor-washer-buying-guide/02-floor-washer-decision-chart-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18170,
+        "outputHash": "sha256:aeefcce15c5ea3fafd029d7faed2cf8f0af9753ffa370c8612abcd853974622a"
+      }
+    },
     "/images/articles/hayward-vs-pentair-vs-fluidra/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -18954,6 +18990,42 @@
         "height": 450,
         "bytes": 31032,
         "outputHash": "sha256:6f957395917b72e8e282aeb78430a3d352e350a3b118cdbc60e83fceff81260d"
+      }
+    },
+    "/images/articles/robot-vacuum-buying-guide/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 27466,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ba1e1fa370f907d4744659584389454c95cf1630d751c4c2b86b4fad6b1b73e1",
+      "outputHash": "sha256:f8b9e3e8ad3303509b315db0acc69b95f7ba62d19b5021f7d17b25b3214924fe",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-buying-guide/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12948,
+        "outputHash": "sha256:bb43c624879949beb90ad4bde745620757bcca77524fc5cdd17954770ebe3059"
+      }
+    },
+    "/images/articles/robot-vacuum-buying-guide/02-robot-vacuum-decision-chart.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56016,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:38630f1020f7e04578a653057480a8e5e7198921987eb1628c3a0919f874d54f",
+      "outputHash": "sha256:ca041da1846c3d97ee5cb9a37e58719ef3c4dae2d16b50168d5cb1d6b3763f51",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-buying-guide/02-robot-vacuum-decision-chart-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21930,
+        "outputHash": "sha256:fd687e5a7e998469b7706f3012a0d37d15d2a882b44aa42964624e7b442e85cb"
       }
     },
     "/images/articles/robot-vacuum-going-in-circles/01-cover.webp": {
@@ -34158,141 +34230,6 @@
         "outputHash": "sha256:0f2708c60f70e0eaf77cc84f2d1f21f4a294c5b5a083b193c93dfeddd416950d"
       }
     },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 679,
-      "height": 561,
-      "bytes": 42349,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:13df45b03c79988598c8b83297c29865a7be741ada5289573e58a41a4db60baa",
-      "outputHash": "sha256:fa06adcd5d871cee030fcbc856fb2ca44dd5367f47325ee3b9cb72f5452a98f8"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-001.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 679,
-      "height": 561,
-      "bytes": 42349,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:13df45b03c79988598c8b83297c29865a7be741ada5289573e58a41a4db60baa",
-      "outputHash": "sha256:fa06adcd5d871cee030fcbc856fb2ca44dd5367f47325ee3b9cb72f5452a98f8"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 685,
-      "height": 443,
-      "bytes": 29667,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:ef1074712bc3059b890a5df655a99dc2cb741513a6836bac233d2a455f6a5769",
-      "outputHash": "sha256:b57ca0db4060c13d4625204d6cb8f32c3bf1a86da4f51d6eb1bf212f69a443e9"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 709,
-      "height": 471,
-      "bytes": 35937,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:19f708cd003f02b9f362f3a36c7e87a1b03d4bdee55bb087771a94b6b7fd0539",
-      "outputHash": "sha256:4e835a6aa15242df076af00689b4b24c451ff2e5df4a5047948ae37bf504648d"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1044,
-      "height": 426,
-      "bytes": 59055,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:283c124e48acee7ef1ba004b3d82d96bbdf2381bae09ca82f683761ca5722e15",
-      "outputHash": "sha256:623f9077acf1909ca5d84ff4aaccc7b8418d98d14c287fb07047d940d65ad42e",
-      "mobile": {
-        "src": "/images/insights/best-robot-vacuum-buying-guide-2022-image-004-800.webp",
-        "width": 800,
-        "height": 326,
-        "bytes": 27370,
-        "outputHash": "sha256:cca85b4ba85618690f07390241bf0f994a20ab3fd69270d43815f2adde3eea6f"
-      }
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1044,
-      "height": 496,
-      "bytes": 54185,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:90411178d90f71e28968e692163ef318623e4530acf2bc3f2533717371dbfb21",
-      "outputHash": "sha256:1859804358cb5e9ce3deeccf5ae2876aae711255fb187918e94a905d30e2d9b7",
-      "mobile": {
-        "src": "/images/insights/best-robot-vacuum-buying-guide-2022-image-005-800.webp",
-        "width": 800,
-        "height": 380,
-        "bytes": 23358,
-        "outputHash": "sha256:b18ef5ae8db22e54cf127f342ed4f3e2b711a6790c6460f47d97318487b12175"
-      }
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 678,
-      "height": 416,
-      "bytes": 28422,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2e22bd86cca2ed55f33812a7f327cc1020deea9dc382f1423242c2fe835e5fa4",
-      "outputHash": "sha256:9f32b27ddd0f1d1fa64eb27ed44771f528a525dc416f2bc9f3805c169183927a"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-007.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 399,
-      "height": 406,
-      "bytes": 20385,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:aa583866bd6acb798312ac536e7f6a4bb60c925e49e316ebc654a80489ac3c22",
-      "outputHash": "sha256:06034c6b2025c6269367e39c4106fcff022ed4b04c08dde7e91b090d39f2ad6d"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-008.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 706,
-      "height": 441,
-      "bytes": 22108,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2ebf22efe1a706bae0cfa92bbf6fe773cdb764cae5e6a7d9cb62f54532eddc36",
-      "outputHash": "sha256:dc62ef11fd54aecdf8011543423f15ffd4ddb4fc99b51c7db0cc521695f47fae"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-009.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 725,
-      "height": 582,
-      "bytes": 28155,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:909735f7c301ad9ae6c881c5f8b4e4edcdcc0954840e6815a6c85d4a9e617bf6",
-      "outputHash": "sha256:c3469c7851d6e9d85f1a2224a22f8802f784ce51bb1ed328417759acff491b1c"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-010.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 685,
-      "height": 436,
-      "bytes": 34021,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:093cfd30ad53fae3b733846a91b1fc99d1c2c22325e2762c09be8d0fc030cfd5",
-      "outputHash": "sha256:a1e962c40e1a2412efd6925bb73f6765c49e789e71bb50911534dc333848241c"
-    },
     "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-001.png": {
       "role": "cover",
       "kind": "photo",
@@ -36082,96 +36019,6 @@
         "height": 296,
         "bytes": 23750,
         "outputHash": "sha256:d0a8ce6fc1911b82ba8c9650f6ddbbf21d43629fe4a63ef75d02b11bad0de195"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 42575,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6cfd0277a0e27bd1693baed9a3be01a5e24d8393b395402cf608e433c75e42d4",
-      "outputHash": "sha256:c6b10c20820b41ea484c7c2a8c651efc81760f6ea005ff50a66c3e8179756bb9",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 10592,
-        "outputHash": "sha256:e7713b5c5fed797281f3aa1f2b60c73b6c961fcd11e8abf3f193d9c8273b74ac"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-image-001.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 42575,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6cfd0277a0e27bd1693baed9a3be01a5e24d8393b395402cf608e433c75e42d4",
-      "outputHash": "sha256:c6b10c20820b41ea484c7c2a8c651efc81760f6ea005ff50a66c3e8179756bb9",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-image-001-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 10592,
-        "outputHash": "sha256:e7713b5c5fed797281f3aa1f2b60c73b6c961fcd11e8abf3f193d9c8273b74ac"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 22887,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2b9a2be64db7fb17adb0cf783c8d300944753d5f30e0a43b2007a703749099c7",
-      "outputHash": "sha256:63e360389b60180ac64f50a6cfad9b870cd43ecbb654bfd395d7ad4a0bc9be23",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-image-002-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 5764,
-        "outputHash": "sha256:b190a5592f0ff7ad4fe0dd6cac4581e19960dca83d9dd40347458b0ac18a61d5"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 22165,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:72e9bfb733390c55b47e5df4e8003d9fa4237fa78d9abb940e5368c9aad2c3e5",
-      "outputHash": "sha256:35c47ff8d65c2b6d876a95481815fd77d4ce5d04c6eee1173254bb80a74b8010",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-image-003-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 5870,
-        "outputHash": "sha256:38ee44007ceabc76e0bcaf56011097770439d8e13ed430e2221b2129454dd628"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 49293,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:95eef466c9b4fc1c5f38fc6a3e5f1c395ce94ebd3aa32774bb037a75155cce48",
-      "outputHash": "sha256:3b8afeb513d0b90b2dd29a91eacd7c19339a6305df5efdd866cae89096d6b14b",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-image-004-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 12632,
-        "outputHash": "sha256:d6e9a2601c60c5237eae93e741bea476f5fd7fabf864a7fb0edb56d78b9ea13d"
       }
     },
     "/images/insights/hard-floor-washers-have-no-profit-cover.jpg": {
@@ -40968,22 +40815,6 @@
       "cover": "/images/articles/beatbot-vs-polaris-robotic-pool-cleaners/01-cover.webp",
       "body": []
     },
-    "best-robot-vacuum-buying-guide-2022": {
-      "budgetClass": "standard",
-      "cover": "/images/insights/best-robot-vacuum-buying-guide-2022-cover.jpg",
-      "body": [
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-002.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-003.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-006.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-001.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-004.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-005.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-007.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-008.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-009.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-010.jpg"
-      ]
-    },
     "bissell-barkbath-pet-vacuum-cleaner": {
       "budgetClass": "standard",
       "cover": "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-001.png",
@@ -42614,14 +42445,11 @@
         "/images/articles/hamilton-beach-2018-annual-report-faithful-translation/22-hamilton-beach-2018-annual-report-faithful-translation-image-22.webp"
       ]
     },
-    "hard-floor-washer-buying-guide-2022": {
+    "hard-floor-washer-buying-guide": {
       "budgetClass": "standard",
-      "cover": "/images/insights/hard-floor-washer-buying-guide-2022-cover.jpg",
+      "cover": "/images/articles/hard-floor-washer-buying-guide/01-cover.webp",
       "body": [
-        "/images/insights/hard-floor-washer-buying-guide-2022-image-001.jpg",
-        "/images/insights/hard-floor-washer-buying-guide-2022-image-002.jpg",
-        "/images/insights/hard-floor-washer-buying-guide-2022-image-003.jpg",
-        "/images/insights/hard-floor-washer-buying-guide-2022-image-004.jpg"
+        "/images/articles/hard-floor-washer-buying-guide/02-floor-washer-decision-chart.webp"
       ]
     },
     "hard-floor-washer-market-brands-oem-opportunities": {
@@ -44113,6 +43941,13 @@
       "body": [
         "/images/articles/robot-vacuum-brush-not-spinning/02-brush-not-spinning-checks.png",
         "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary.png"
+      ]
+    },
+    "robot-vacuum-buying-guide": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-buying-guide/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-buying-guide/02-robot-vacuum-decision-chart.webp"
       ]
     },
     "robot-vacuum-ceiling-question": {
@@ -50184,6 +50019,20 @@
         }
       }
     },
+    "hard-floor-washer-buying-guide": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/hard-floor-washer-buying-guide/01-cover.webp",
+          "hash": "sha256:e140eb95ae2f1d4e5a5f89686f98793d2b17b023c0518cffe6430805677b8689"
+        },
+        "02-floor-washer-decision-chart.png": {
+          "status": "matched",
+          "primary": "/images/articles/hard-floor-washer-buying-guide/02-floor-washer-decision-chart.webp",
+          "hash": "sha256:411b2011e32ac260b271605d58c6af7831616333b5ae5af41adbcdb4f63b82ac"
+        }
+      }
+    },
     "hayward-vs-pentair-vs-fluidra": {
       "files": {
         "01-cover.png": {
@@ -52786,6 +52635,20 @@
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary.png",
           "hash": "sha256:25fb4180726bf6770cd49c3cb903993d10bc16f71f395d75e1f0266832fe583e"
+        }
+      }
+    },
+    "robot-vacuum-buying-guide": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-buying-guide/01-cover.webp",
+          "hash": "sha256:ba1e1fa370f907d4744659584389454c95cf1630d751c4c2b86b4fad6b1b73e1"
+        },
+        "02-robot-vacuum-decision-chart.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-buying-guide/02-robot-vacuum-decision-chart.webp",
+          "hash": "sha256:38630f1020f7e04578a653057480a8e5e7198921987eb1628c3a0919f874d54f"
         }
       }
     },
