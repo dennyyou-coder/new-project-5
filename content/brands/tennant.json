@@ -57,6 +57,36 @@
       "caption": "Equipment buyers should verify the machine, autonomy stack, batteries, service coverage and data terms as separate workstreams."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/tennant/photos/01.webp",
+      "width": 1200,
+      "caption": "Tennant X16 robotic sweeper in a warehouse",
+      "credit": "Image: Tennant",
+      "creditUrl": "https://www.tennantco.com/en_us/robotics/robotic-technology/about-tennant-robotics.html"
+    },
+    {
+      "src": "/images/brands/tennant/photos/02.webp",
+      "width": 830,
+      "caption": "Tennant T600 walk-behind scrubber in an industrial plant",
+      "credit": "Image: Tennant",
+      "creditUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/t600-t600e/t600-industrial-brochure-en-au.pdf#page=1"
+    },
+    {
+      "src": "/images/brands/tennant/photos/03.webp",
+      "width": 705,
+      "caption": "Autonomous Tennant X6 ROVR cleaning a shopping centre (Domus case study)",
+      "credit": "Image: Tennant",
+      "creditUrl": "https://www.tennantco.com/en_eu/resources/resource-center/case-studies/cleaning-professionals/domus-building-cleaning-alpine-x6-rovr.html"
+    },
+    {
+      "src": "/images/brands/tennant/photos/04.webp",
+      "width": 705,
+      "caption": "Tennant T16AMR robotic scrubber in a food distribution warehouse",
+      "credit": "Image: Tennant",
+      "creditUrl": "https://www.tennantco.com/en_us/resources/resource-center/case-studies/food-beverage/performance-food-group-t16amr.html"
+    }
+  ],
   "ownership": {
     "summary": "Tennant Company is a Minnesota corporation whose common stock trades on the New York Stock Exchange under TNC. The reviewed filings identify no parent company. Tennant also reports the IPC group brand within its business, but brand, subsidiary and regional seller responsibilities remain distinct."
   },

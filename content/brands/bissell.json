@@ -59,6 +59,43 @@
       "caption": "This comparison helps readers understand how BISSELL CrossWave competes with Tineco floor-washer systems."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/bissell/photos/01.webp",
+      "width": 1200,
+      "caption": "BISSELL PowerClean DualBrush cordless vacuum picking up debris under a table",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/powerclean-dualbrush"
+    },
+    {
+      "src": "/images/brands/bissell/photos/02.webp",
+      "width": 1200,
+      "caption": "SpotClean HydroSteam cleaning a pet bed",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/spotclean-hydrosteam-3689f"
+    },
+    {
+      "src": "/images/brands/bissell/photos/03.webp",
+      "width": 1200,
+      "caption": "SpotClean HydroSteam treating a stain on a sofa",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/spotclean-hydrosteam-3689f"
+    },
+    {
+      "src": "/images/brands/bissell/photos/04.webp",
+      "width": 1200,
+      "caption": "SpotClean HydroSteam cleaning a car boot",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/spotclean-hydrosteam-3689f"
+    },
+    {
+      "src": "/images/brands/bissell/photos/05.webp",
+      "width": 1200,
+      "caption": "Revolution HydroSteam carpet cleaner in use",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/revolution-hydrosteam-3670f"
+    }
+  ],
   "ownership": {
     "summary": "BISSELL describes itself as a fifth-generation, family-owned and family-led private company. A U.S. federal-court filing by the companies states that BISSELL Homecare, Inc. is wholly owned by BISSELL Inc. Public sources do not provide a complete shareholder list or individual family ownership percentages, so the supported description is Bissell-family ownership rather than a percentage assigned to one person.",
     "parentCompany": "BISSELL Inc."

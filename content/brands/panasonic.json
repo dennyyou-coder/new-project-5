@@ -47,6 +47,30 @@
       "caption": "Portfolio-level evidence establishes category participation; buyers still need model- and destination-specific responsibility records."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/panasonic/photos/01.webp",
+      "width": 1200,
+      "caption": "Founder Konosuke Matsushita examining products, from Panasonic’s history archive",
+      "credit": "Image: Panasonic",
+      "creditUrl": "https://news.panasonic.com/global/stories/17953"
+    },
+    {
+      "src": "/images/brands/panasonic/photos/02.webp",
+      "width": 1200,
+      "caption": "Konosuke Matsushita with employees, from Panasonic’s history archive",
+      "credit": "Image: Panasonic",
+      "creditUrl": "https://news.panasonic.com/global/stories/18597"
+    },
+    {
+      "src": "/images/brands/panasonic/photos/03.webp",
+      "width": 790,
+      "caption": "Konosuke Matsushita addressing a company gathering",
+      "credit": "Image: Panasonic",
+      "creditUrl": "https://news.panasonic.com/global/stories/18597",
+      "position": "50% 78%"
+    }
+  ],
   "ownership": {
     "summary": "Panasonic Holdings Corporation is the group holding company and steward of the Panasonic group brand. Panasonic's official April 2026 reorganization created the current Panasonic Corporation as the operating company for Major Appliances, Small Appliances and AVC businesses. The published organization explicitly places refrigerators and laundry in Major Appliances and vacuum cleaners and kitchen appliances in Small Appliances.", "displayLabel": "Panasonic Holdings group company",
     "parentCompany": "Panasonic Holdings Corporation"

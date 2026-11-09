@@ -33,6 +33,29 @@
       "caption": "Newberry evidence supports specified U.S. residential washers, not every Samsung appliance or cleaning product."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/samsung-home-appliances/photos/01.webp",
+      "width": 1200,
+      "caption": "Samsung Connect keynote at IFA 2026, Berlin",
+      "credit": "Image: Samsung Newsroom",
+      "creditUrl": "https://news.samsung.com/uk/samsung-connect-opens-at-ifa-2026-bringing-the-future-of-ai-powered-living-to-life"
+    },
+    {
+      "src": "/images/brands/samsung-home-appliances/photos/02.webp",
+      "width": 1000,
+      "caption": "Samsung engineers with the Bespoke Jet AI cordless vacuum and Clean Station",
+      "credit": "Image: Samsung Newsroom",
+      "creditUrl": "https://news.samsung.com/global/interview-clean-smarter-not-harder-the-story-behind-the-new-bespoke-jet-ai"
+    },
+    {
+      "src": "/images/brands/samsung-home-appliances/photos/03.webp",
+      "width": 1000,
+      "caption": "A Samsung designer discussing the Bespoke Jet cordless vacuum",
+      "credit": "Image: Samsung Newsroom",
+      "creditUrl": "https://news.samsung.com/global/interview-refining-the-innovative-design-of-samsungs-bespoke-jet"
+    }
+  ],
   "ownership": {
     "summary": "Samsung Home Appliances is a consumer business of Samsung Electronics Co., Ltd. The company's Digital Appliances organization develops and markets major appliances and cleaning products under Samsung, Bespoke and Jet product names. Samsung Electronics is part of the wider Samsung group, but the group name does not replace the listed operating company, regional contracting entity, manufacturer, factory, importer or warrantor for a transaction.",
     "parentCompany": "Samsung Electronics Co., Ltd."

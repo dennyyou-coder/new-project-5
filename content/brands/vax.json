@@ -47,6 +47,36 @@
       "caption": "Vax sits inside TTI's wider floorcare portfolio and has adopted the group's cordless platform logic."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/vax/photos/01.webp",
+      "width": 1200,
+      "caption": "VAX SpotWash Max Pet-Design cleaning a car boot",
+      "credit": "Image: VAX",
+      "creditUrl": "https://www.vax.co.uk/carpet-cleaners-and-washers/spotwash-range/vax-spotwash-max-pet-design-and-car"
+    },
+    {
+      "src": "/images/brands/vax/photos/02.webp",
+      "width": 1200,
+      "caption": "VAX SpotWash cleaning a spill under a dining table",
+      "credit": "Image: VAX",
+      "creditUrl": "https://www.vax.co.uk/carpet-cleaners-and-washers/spotwash-range/vax-spotwash-max-pet-design-and-car"
+    },
+    {
+      "src": "/images/brands/vax/photos/03.webp",
+      "width": 1200,
+      "caption": "VAX Steam Fresh Total Home steam mop on a kitchen floor",
+      "credit": "Image: VAX",
+      "creditUrl": "https://www.vax.co.uk/steam-floor-cleaners/steam-fresh-home-floor-cleaner/vax-steam-fresh-total-home-steam-cleaner"
+    },
+    {
+      "src": "/images/brands/vax/photos/04.webp",
+      "width": 1200,
+      "caption": "VAX Steam Fresh handheld steamer cleaning an oven",
+      "credit": "Image: VAX",
+      "creditUrl": "https://www.vax.co.uk/steam-floor-cleaners/steam-fresh-home-floor-cleaner/vax-steam-fresh-total-home-steam-cleaner"
+    }
+  ],
   "ownership": {
     "summary": "Techtronic Industries Company Limited owns Vax. TTI's history records its acquisition of the Vax brand and floorcare business in 1999, and the 2025 annual report lists Vax Limited as an indirectly held 100%-owned principal subsidiary.",
     "parentCompany": "Techtronic Industries Company Limited"

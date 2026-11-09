@@ -53,6 +53,15 @@
       "caption": "This map compares Hoover's tools, tanks, hose cleaning and parts route with a competing spot-cleaner system."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/hoover/photos/01.webp",
+      "width": 1200,
+      "caption": "Hoover ONEPWR cordless cleaners in a family home",
+      "credit": "Image: Hoover",
+      "creditUrl": "https://hoover.com/pages/onepwr"
+    }
+  ],
   "ownership": {
     "summary": "Hoover does not have one simple worldwide owner. In North America, Hoover floorcare is part of TTI Floor Care North America within Hong Kong-listed Techtronic Industries; U.S. legal notices name Royal Appliance Mfg. Co. doing business as TTI Floor Care North America. In Europe, Hoover is operated through the Candy-Hoover structure inside Haier Europe, part of Haier Smart Home. Candy acquired Hoover European Appliances in 1995, TTI acquired the Hoover floor-care business from Whirlpool in 2007, and Haier acquired Candy in 2019.", "displayLabel": "Split ownership: TTI in North America, Haier in Europe",
     "parentCompany": "Techtronic Industries in North American floorcare; Haier Smart Home through Haier Europe/Candy in Europe"

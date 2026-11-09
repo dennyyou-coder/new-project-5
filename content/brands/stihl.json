@@ -24,6 +24,36 @@
     {"placement":"portfolio","src":"/images/insights/robotic-mowers-outdoor-power-equipment-channels-cover.jpg","alt":"Outdoor power equipment and robotic mower channel visual","caption":"Dealer capability, installation and after-sales service are central to outdoor equipment adoption."},
     {"placement":"operations","src":"/images/blog/european-tool-brands-battery-alliances-image-004-en-v2.webp","alt":"European tool-brand manufacturing and channel comparison","caption":"Global brand reach does not substitute for a model-specific origin, importer and parts check."}
   ],
+  "photos": [
+    {
+      "src": "/images/brands/stihl/photos/01.webp",
+      "width": 1200,
+      "caption": "Automated battery-pack assembly at STIHL in Waiblingen",
+      "credit": "Image: STIHL",
+      "creditUrl": "https://www.stihl.com.br/pt/profissionais/dicas-uteis/nos-bastidores/producao-baterias-stihl"
+    },
+    {
+      "src": "/images/brands/stihl/photos/02.webp",
+      "width": 1200,
+      "caption": "Battery lawn mower in a STIHL acoustic test chamber",
+      "credit": "Image: STIHL",
+      "creditUrl": "https://www.stihl.com.au/en/professional/behind-the-scenes/battery-lawn-mower-in-test"
+    },
+    {
+      "src": "/images/brands/stihl/photos/03.webp",
+      "width": 1200,
+      "caption": "Lawn mower endurance testing on a STIHL outdoor test track",
+      "credit": "Image: STIHL",
+      "creditUrl": "https://www.stihl.com.au/en/professional/behind-the-scenes/battery-lawn-mower-in-test"
+    },
+    {
+      "src": "/images/brands/stihl/photos/04.webp",
+      "width": 1200,
+      "caption": "Quality laboratory, from the STIHL 2023 annual report",
+      "credit": "Image: STIHL",
+      "creditUrl": "https://ar.stihl.com/2023/quality-made-by-stihl.html"
+    }
+  ],
   "ownership":{"summary":"STIHL is a family-owned, non-listed group. Its 2025 reporting describes Stihl Holding AG & Co. KG as the group holding company and Andreas Stihl AG & Co. KG as the founding company. This ownership structure is distinct from an individual dealer, importer or regional sales subsidiary.","parentCompany":"Stihl Holding AG & Co. KG"},
   "leadership":[{"name":"Andreas Stihl","role":"Founder","context":"STIHL traces the group to Andreas Stihl's 1926 foundation in Germany."},
     {
