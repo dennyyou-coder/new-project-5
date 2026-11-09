@@ -1,0 +1,158 @@
+{
+  "status": "published",
+  "slug": "kingclean",
+  "name": "Kingclean",
+  "aliases": [
+    "Kingclean Electric",
+    "莱克电气",
+    "莱克",
+    "LEXY",
+    "Lexy"
+  ],
+  "legalName": "Kingclean Electric Co., Ltd.",
+  "legalEntityNote": "Kingclean Electric Co., Ltd. (莱克电气股份有限公司) is listed on the Shanghai Stock Exchange (603355) and based in Suzhou. It sells under its own brands, including LEXY (莱克) and 碧云泉 water purifiers, and also makes motors, components and finished cleaning appliances for other brands. Group disclosures do not identify the maker or seller of every product that carries another brand's name.",
+  "schemaEntityType": "Organization",
+  "officialWebsite": "https://www.lexy.cn",
+  "headline": "Kingclean: the Suzhou motor and vacuum maker behind LEXY",
+  "description": "A source-backed profile of Kingclean Electric (莱克电气): its Shanghai listing and founder Ni Zugen, high-speed motor technology, own brands and contract manufacturing, 2025 results and the currency losses that cut 2026 profit.",
+  "metaDescription": "Kingclean Electric (莱克电气, 603355) profile: founder Ni Zugen, LEXY brand, motors and contract manufacturing, 2025 and Q3 2026 results.",
+  "quickAnswer": "Kingclean (莱克电气) is listed in Shanghai (603355). Founder Ni Zugen is its actual controller; he founded the company in Suzhou in 1994.",
+  "disclaimer": "World Clean Biz is independent and is not affiliated with Kingclean. Company-level disclosures do not establish the trademark owner, legal manufacturer, factory, importer, seller or warrantor for every product Kingclean makes or sells.",
+  "headquarters": "Suzhou, Jiangsu, China",
+  "founded": "1994",
+  "logoImage": "/images/brands/kingclean/logo.webp",
+  "logoImageAlt": "Kingclean (LEXY) logo",
+  "logoSourceUrl": "https://www.lexy.cn/",
+  "contentVisuals": [
+    {
+      "placement": "ownership",
+      "src": "/images/brands/kingclean/shareholders-q3-2026.svg",
+      "alt": "Kingclean's largest shareholders at 30 September 2026: Kingclean Electric Investment Group 35.86%, GOLDVAC TRADING 27.42%, Ni Zugen 15.99%",
+      "caption": "Largest shareholders at 30 September 2026, as listed in Kingclean's third-quarter report. Founder Ni Zugen is the actual controller."
+    },
+    {
+      "placement": "operations",
+      "src": "/images/brands/kingclean/results-2025-q3-2026.svg",
+      "alt": "Kingclean 2025 revenue CNY 9.87 billion and Q3 2026 revenue CNY 2.41 billion with profit down 52.4% on currency losses",
+      "caption": "2025 revenue rose 1.05%; in the first nine months of 2026 currency losses of CNY 511 million cut profit."
+    }
+  ],
+  "ownership": {
+    "summary": "Kingclean Electric Co., Ltd. is listed on the Shanghai Stock Exchange (603355). Its third-quarter 2026 report lists Kingclean Electric Investment Group (35.86%), GOLDVAC TRADING LIMITED (27.42%) and founder Ni Zugen (15.99%) as its three largest shareholders. Ni Zugen is the company's actual controller. Kingclean is the group head, so no separate parent company is listed.",
+    "displayLabel": "Shanghai-listed (603355); founder Ni Zugen is the actual controller"
+  },
+  "leadership": [
+    {
+      "name": "Ni Zugen",
+      "role": "Founder and Chairman",
+      "context": "Left the Suzhou Chunhua vacuum cleaner factory in October 1994 to found the predecessor of Kingclean, Suzhou Kingclean Electrical Appliances. He is the company's legal representative and actual controller."
+    }
+  ],
+  "productPortfolio": [
+    {
+      "name": "Cleaning appliances and garden tools",
+      "positioning": "Cordless and corded vacuum cleaners, floor cleaners and garden tools under Kingclean's own brands and for other brands. Cleaning, health appliances and garden tools made up most of 2025 revenue.",
+      "buyerRelevance": "Confirm whether a product is sold under a Kingclean brand or made by Kingclean for another brand, and which entity provides warranty."
+    },
+    {
+      "name": "Motors and components",
+      "positioning": "High-speed digital motors are Kingclean's core technology; motors and other components, including automotive parts, are a large second business.",
+      "buyerRelevance": "For component sourcing, confirm the producing subsidiary, specifications and certification for each part."
+    },
+    {
+      "name": "Water purifiers and kitchen appliances",
+      "positioning": "Sold under the 碧云泉 brand and other Kingclean brands, mainly in China.",
+      "buyerRelevance": "These ranges are mostly sold in China; check availability and certification for other markets."
+    }
+  ],
+  "manufacturingSupplyChain": [
+    {
+      "evidence": "Kingclean describes itself as a research, development and manufacturing company built around ultra-high-speed digital motors, with cleaning appliances, water purifiers, kitchen appliances and garden tools as its main products.",
+      "scope": "Company-level description from its website and annual report",
+      "buyerCheck": "Confirm the factory and country of origin for each product and production run."
+    },
+    {
+      "evidence": "In the first nine months of 2026 Kingclean recorded currency losses of CNY 510.5 million, against CNY 55.8 million a year earlier, as the US dollar fell against the yuan.",
+      "scope": "Third-quarter 2026 report",
+      "buyerCheck": "Export pricing may shift with exchange rates; confirm currency and price-adjustment terms in contracts."
+    }
+  ],
+  "marketsChannels": [
+    {
+      "evidence": "Kingclean founded its own brands in 2009 to move from contract manufacturing to branded sales, and sells under LEXY (莱克) and 碧云泉 in China.",
+      "scope": "Company history and 2025 annual report",
+      "buyerCheck": "Kingclean's own brands are mainly sold in China; outside China its products usually carry other brands."
+    }
+  ],
+  "competitivePosition": {
+    "summary": "World Clean Biz assessment: Kingclean is one of China's longest-established vacuum and motor makers. Its motor business and contract manufacturing give it scale, while its own brands face fierce competition in China. In 2026 a weaker US dollar caused large currency losses, cutting profit even as underlying operations grew.",
+    "competitorSlugs": [
+      "dyson",
+      "ecovacs",
+      "dreame",
+      "tti"
+    ]
+  },
+  "developments": [
+    {
+      "date": "2026-10-28",
+      "title": "Third-quarter 2026 results",
+      "summary": "Q3 revenue fell 4.73% to CNY 2.41 billion and attributable net profit fell 52.38% to CNY 92.1 million, mainly because of currency losses.",
+      "sourceIds": [
+        "kingclean-q3-2026"
+      ]
+    },
+    {
+      "date": "2026-04-16",
+      "title": "2025 annual report",
+      "summary": "2025 revenue rose 1.05% to CNY 9.87 billion and attributable net profit fell 35.04% to CNY 799 million.",
+      "sourceIds": [
+        "kingclean-ar-2025"
+      ]
+    },
+    {
+      "date": "2009",
+      "title": "Own brands launched",
+      "summary": "Kingclean launched its own brands to move beyond contract manufacturing.",
+      "sourceIds": [
+        "kingclean-ar-2025"
+      ]
+    },
+    {
+      "date": "1994-10",
+      "title": "Company founded",
+      "summary": "Ni Zugen founded Suzhou Kingclean Electrical Appliances.",
+      "sourceIds": [
+        "kingclean-ar-2025"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kingclean-q3-2026",
+      "title": "2026 Third-Quarter Report",
+      "publisher": "Kingclean Electric (Shanghai Stock Exchange filing, via Sina Finance)",
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=603355&id=12672133",
+      "publishedAt": "2026-10-28",
+      "accessedAt": "2026-11-09"
+    },
+    {
+      "id": "kingclean-ar-2025",
+      "title": "2025 Annual Report",
+      "publisher": "Kingclean Electric (CNINFO)",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-04-16/1225106543.PDF",
+      "publishedAt": "2026-04-16",
+      "accessedAt": "2026-11-09"
+    },
+    {
+      "id": "kingclean-home",
+      "title": "LEXY official website",
+      "publisher": "Kingclean Electric",
+      "url": "https://www.lexy.cn/",
+      "accessedAt": "2026-11-09"
+    }
+  ],
+  "publishedAt": "2026-11-09T11:00:00+08:00",
+  "lastVerified": "2026-11-09",
+  "lastModified": "2026-11-09T11:00:00+08:00"
+}

@@ -71,6 +71,10 @@
     "src": "/images/brands/craftsman/logo-tile.webp",
     "ratio": 3.435
   },
+  "dechang": {
+    "src": "/images/brands/dechang/logo-tile.webp",
+    "ratio": 8.437
+  },
   "delonghi": {
     "src": "/images/brands/delonghi/logo-tile.webp",
     "ratio": 2.483
@@ -231,6 +235,10 @@
   "karcher": {
     "src": "/images/brands/karcher/logo-tile.webp",
     "ratio": 3.311
+  },
+  "kingclean": {
+    "src": "/images/brands/kingclean/logo-tile.webp",
+    "ratio": 8.535
   },
   "kitchenaid": {
     "src": "/images/brands/kitchenaid/logo-tile.webp",
