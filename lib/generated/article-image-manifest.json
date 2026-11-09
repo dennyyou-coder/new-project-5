@@ -4159,6 +4159,42 @@
         "outputHash": "sha256:8e408432979782f56544e46ff69efdcbe1d4fb72f760aff8d0137135e3637885"
       }
     },
+    "/images/articles/commercial-robot-mower-service-contract/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 257332,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:acea990783501a046073c9cd5edba39befd518547bb7716d12d0cb05b8417f86",
+      "outputHash": "sha256:38483c3d7ea6a58dceab41e475cf51020f38a52463d8a9cd71d32b2fb2afaa4d",
+      "mobile": {
+        "src": "/images/articles/commercial-robot-mower-service-contract/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 59952,
+        "outputHash": "sha256:fe6d492a1965334ebc97fd91e3b67451c025592c41454a4c0593b93ebfbe7155"
+      }
+    },
+    "/images/articles/commercial-robot-mower-service-contract/02-contract-checklist.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53390,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:31c25042d8a0b0aeafaf87bdf6e8ba5d41617cdee6453771d14ea95c75af0d95",
+      "outputHash": "sha256:3a370b70eb0b7a4eb1acf7648ee59addbd9e7dde894a38c64c2af317a5a45ee3",
+      "mobile": {
+        "src": "/images/articles/commercial-robot-mower-service-contract/02-contract-checklist-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20608,
+        "outputHash": "sha256:66ea4813838e461590835008fe960077d87118cb688e36fa8e1a16e75ad586e1"
+      }
+    },
     "/images/articles/commercial-robotic-mower-market-navimow-mammotion/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -41312,6 +41348,13 @@
         "/images/blog/floor-scrubber-specs-to-field-test.webp"
       ]
     },
+    "commercial-robot-mower-service-contract": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/commercial-robot-mower-service-contract/01-cover.webp",
+      "body": [
+        "/images/articles/commercial-robot-mower-service-contract/02-contract-checklist.webp"
+      ]
+    },
     "commercial-robot-mower-supplier-evaluation": {
       "budgetClass": "standard",
       "cover": "/images/blog/commercial-robot-mower-supplier-evaluation.webp",
@@ -47424,6 +47467,20 @@
           "status": "matched",
           "primary": "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp",
           "hash": "sha256:56ab2b99c25eb3b37dcc5945ccd68c4e13457ef13bf0403f37c5a41e88524553"
+        }
+      }
+    },
+    "commercial-robot-mower-service-contract": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-robot-mower-service-contract/01-cover.webp",
+          "hash": "sha256:acea990783501a046073c9cd5edba39befd518547bb7716d12d0cb05b8417f86"
+        },
+        "02-contract-checklist.png": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-robot-mower-service-contract/02-contract-checklist.webp",
+          "hash": "sha256:31c25042d8a0b0aeafaf87bdf6e8ba5d41617cdee6453771d14ea95c75af0d95"
         }
       }
     },
