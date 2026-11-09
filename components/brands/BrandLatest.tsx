@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 
-export type BrandLatestItem = { kind: "News" | "Results" | "New product" | "Analysis"; title: string; href: string; date: string; dateLabel: string; note?: string };
+export type BrandLatestItem = { kind: "News" | "Results" | "New product" | "Analysis"; title: string; href: string; date: string; dateLabel: string; note?: string; image?: string; imageContain?: boolean };
 
 /** What happened at this company most recently: newest news, results, product and analysis, newest first. */
 export function BrandLatest({ name, items }: { name: string; items: BrandLatestItem[] }) {
@@ -15,6 +15,9 @@ export function BrandLatest({ name, items }: { name: string; items: BrandLatestI
       <ul className="bp-latest-list">
         {items.map((item) => (
           <li key={`${item.kind}-${item.href}`}>
+            <span className={`bp-latest-thumb${item.imageContain ? " is-contain" : ""}`} aria-hidden="true">
+              {item.image ? <img src={item.image} alt="" loading="lazy" decoding="async" /> : null}
+            </span>
             <span className={`bp-latest-kind bp-latest-kind--${item.kind.toLowerCase().replace(/\s+/g, "-")}`}>{item.kind}</span>
             <span className="bp-latest-copy">
               <Link href={item.href}>{item.title}</Link>

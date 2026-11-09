@@ -32,7 +32,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return buildWebsiteMetadata({
     title: `${hub.name}: News, Companies & New Models | World Clean Biz`,
     description: hub.intro,
-    canonical: `/categories/${hub.slug}`
+    canonical: `/categories/${hub.slug}`,
+    robots: hub.unlisted ? { index: false, follow: true } : undefined
   });
 }
 
@@ -67,12 +68,18 @@ export default async function CategoryHubPage({ params }: Props) {
   const models = data.newModels.slice(0, 4);
   const companies = data.companies.slice(0, 12);
   const guides = data.guides.slice(0, 5);
+  // Everything else in the category, so no article depends on paginated lists to be found.
+  const shown = new Set([...analysis, ...guides].map((article) => article.slug));
+  const archive = [...data.analysis, ...data.guides]
+    .filter((article, index, all) => !shown.has(article.slug) && all.findIndex((other) => other.slug === article.slug) === index)
+    .sort((a, b) => (b.sortDate || b.date).localeCompare(a.sortDate || a.date));
 
   const quickLinks = [
     news.length ? { label: "News", href: "#hub-news" } : null,
     analysis.length ? { label: "Analysis", href: "#hub-analysis" } : null,
     models.length ? { label: `${productSelectionYear} models`, href: "#hub-models" } : null,
     companies.length ? { label: "Companies", href: "#hub-companies" } : null,
+    data.equipment.length ? { label: "Equipment", href: "#hub-equipment" } : null,
     sourcing ? { label: "Sourcing", href: "#hub-sourcing" } : null
   ].filter((item): item is { label: string; href: string } => Boolean(item));
 
@@ -247,6 +254,20 @@ export default async function CategoryHubPage({ params }: Props) {
           </section>
         ) : null}
 
+        {data.equipment.length ? (
+          <section className="ch-section ch-equipment" id="hub-equipment" aria-labelledby="hub-equipment-heading">
+            <div className="ch-head">
+              <h2 id="hub-equipment-heading">Equipment types</h2>
+              <Link className="wcb-more" href="/equipment">All equipment types</Link>
+            </div>
+            <ul>
+              {data.equipment.map((item) => (
+                <li key={item.slug}><Link href={`/equipment/${item.slug}`}>{item.name}</Link></li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
         {sourcing ? (
           <section className="ch-section" id="hub-sourcing" aria-label={`Sourcing ${hub.name.toLowerCase()}`}>
             <Link className="ch-sourcing" href={sourcing}>
@@ -270,6 +291,23 @@ export default async function CategoryHubPage({ params }: Props) {
                 <li key={guide.slug}><Link href={`/blog/${guide.slug}`}>{guide.title}</Link></li>
               ))}
             </ul>
+          </section>
+        ) : null}
+
+        {archive.length ? (
+          <section className="ch-section ch-guides ch-archive" id="hub-all" aria-labelledby="hub-all-heading">
+            <div className="ch-head">
+              <h2 id="hub-all-heading">More {hub.name.toLowerCase()} articles</h2>
+              <Link className="wcb-more" href="/site-index/articles">All articles</Link>
+            </div>
+            <details>
+              <summary>Show all {archive.length} articles</summary>
+              <ul>
+                {archive.map((article) => (
+                  <li key={article.slug}><Link href={`/blog/${article.slug}`} prefetch={false}>{article.title}</Link></li>
+                ))}
+              </ul>
+            </details>
           </section>
         ) : null}
 

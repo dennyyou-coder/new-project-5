@@ -2,14 +2,29 @@
   "status": "published",
   "slug": "ryobi",
   "name": "RYOBI",
+  "metaTitle": "Who Owns Ryobi? Ryobi Limited, TTI Licence and Kyocera Explained",
   "aliases": ["Ryobi Tools", "Ryobi Power Tools"],
   "legalName": "Ryobi Limited",
   "legalEntityNote": "Ryobi Limited owns the RYOBI trademark. Techtronic Industries uses it under licence for power tools and outdoor equipment in specified regions, while KYOCERA Industrial Tools succeeded to Ryobi Limited's former power-tool operation. Brand owner, licensee, seller and manufacturer are not interchangeable.",
   "officialWebsite": "https://www.ryobi-group.co.jp/en/",
   "headline": "RYOBI ownership, TTI licensing, Kyocera boundary and cleaning equipment",
   "description": "A source-backed profile separating Ryobi Limited's trademark ownership from TTI and Kyocera operating routes, with cleaning products, manufacturing and channels.",
-  "metaDescription": "RYOBI profile: Ryobi Limited trademark ownership, TTI licence, Kyocera tool business, cleaning products, manufacturing and channels.",
+  "metaDescription": "Ryobi Limited of Japan owns the RYOBI name; TTI makes and sells RYOBI tools under licence in the US, Canada, Europe, Australia and New Zealand.",
   "quickAnswer": "Japan-listed Ryobi Limited owns the RYOBI name. TTI makes and sells RYOBI tools under licence in the US, Canada, Europe and Australia.",
+  "faq": [
+    {
+      "question": "Who owns Ryobi?",
+      "answer": "Japan-listed Ryobi Limited owns the RYOBI trademark. Techtronic Industries (TTI) uses the name under licence."
+    },
+    {
+      "question": "Does TTI own Ryobi?",
+      "answer": "No. TTI makes and distributes RYOBI power tools and lawn-and-garden equipment under licence in the United States, Canada, Europe, Australia and New Zealand, but does not own the trademark."
+    },
+    {
+      "question": "What is the link between Ryobi and Kyocera?",
+      "answer": "Kyocera acquired Ryobi Limited's former power-tool business in 2018 and runs it through KYOCERA Industrial Tools, separate from the TTI-licensed RYOBI range."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Ryobi Limited, TTI or Kyocera. Trademark ownership does not identify the seller, factory or warranty provider for every RYOBI product or country.",
   "headquarters": "Fuchu, Hiroshima, Japan for Ryobi Limited",
   "founded": "1943",
@@ -30,6 +45,36 @@
       "src": "/images/blog/ryobi-tti-kyocera-regional-map.webp",
       "alt": "Regional map of RYOBI brand owner, TTI licence and Kyocera power-tool business",
       "caption": "The responsible company can change by country and product category even when the same RYOBI mark appears."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/images/brands/ryobi/photos/01.webp",
+      "width": 1200,
+      "caption": "RYOBI ONE+ cordless fan in a home workshop",
+      "credit": "Image: RYOBI",
+      "creditUrl": "https://www.ryobitools.com/products/33287192748"
+    },
+    {
+      "src": "/images/brands/ryobi/photos/02.webp",
+      "width": 1200,
+      "caption": "RYOBI ONE+ cordless fan at a campsite",
+      "credit": "Image: RYOBI",
+      "creditUrl": "https://www.ryobitools.com/products/33287192748"
+    },
+    {
+      "src": "/images/brands/ryobi/photos/03.webp",
+      "width": 1200,
+      "caption": "RYOBI ONE+ HP brushless drill boring through timber",
+      "credit": "Image: RYOBI",
+      "creditUrl": "https://www.ryobitools.com/products/33287190560"
+    },
+    {
+      "src": "/images/brands/ryobi/photos/04.webp",
+      "width": 1200,
+      "caption": "RYOBI ONE+ fan and lamp on a hobby workbench",
+      "credit": "Image: RYOBI",
+      "creditUrl": "https://www.ryobitools.com/products/33287192748"
     }
   ],
   "ownership": {
@@ -165,5 +210,5 @@
   ],
   "publishedAt": "2026-07-31T19:15:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T19:15:00+08:00"
+  "lastModified": "2026-11-08T21:00:00+08:00"
 }

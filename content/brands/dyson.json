@@ -37,8 +37,46 @@
       "caption": "This map helps readers understand the dated facility evidence behind Dyson's global manufacturing network."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/dyson/photos/01.webp",
+      "width": 1200,
+      "caption": "Suction test rig in Dyson’s research and development laboratories",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com.sg/newsroom/inside-dyson-research-development-labs/inside-dyson-research-development-labs-pick-up-lab"
+    },
+    {
+      "src": "/images/brands/dyson/photos/02.webp",
+      "width": 1200,
+      "caption": "Microbiology lab equipment at Dyson R&D",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com.sg/newsroom/inside-dyson-research-development-labs/inside-dyson-research-development-labs-microbiology-labs"
+    },
+    {
+      "src": "/images/brands/dyson/photos/03.webp",
+      "width": 1200,
+      "caption": "James Dyson unveiling the PencilVac",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com/discover/news/latest/james-dyson-unveils-problem-solving-products-in-berlin"
+    },
+    {
+      "src": "/images/brands/dyson/photos/04.webp",
+      "width": 834,
+      "caption": "James Dyson with the G-Force vacuum cleaner, an early design",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com.au/james-dyson/invention-a-life/05"
+    },
+    {
+      "src": "/images/brands/dyson/photos/05.webp",
+      "width": 1200,
+      "caption": "Dyson PencilVac cleaning under furniture",
+      "credit": "Image: Dyson",
+      "creditUrl": "https://www.dyson.com/discover/news/latest/james-dyson-unveils-problem-solving-products-in-berlin"
+    }
+  ],
   "ownership": {
-    "summary": "Dyson's company-information page identifies Dyson Technology Limited as one company that operates its websites, apps and connected products with Dyson Limited; it does not identify that entity as the legal company for every Dyson operation. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. That filing proves control of Dyson UK Group Limited, not by itself ultimate control across every Dyson group entity. Dyson's April 2026 California disclosure separately names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting scopes.", "displayLabel": "Privately held; controlled by Sir James Dyson"
+    "summary": "Dyson's company-information page identifies Dyson Technology Limited as one company that operates its websites, apps and connected products with Dyson Limited; it does not identify that entity as the legal company for every Dyson operation. Companies House records Sir James Dyson as the sole active person with significant control of Dyson UK Group Limited, with 75% or more of its shares and voting rights and the right to appoint or remove directors. That filing proves control of Dyson UK Group Limited, not by itself ultimate control across every Dyson group entity. Dyson's April 2026 California disclosure separately names Dyson Holdings Pte. Limited as ultimate parent of the reporting U.S. entities. These are different operating, control and reporting scopes.",
+    "displayLabel": "Privately held; controlled by Sir James Dyson"
   },
   "leadership": [
     {

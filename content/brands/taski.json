@@ -33,6 +33,23 @@
       "caption": "Swiss manufacturing evidence applies to named products and operations, so buyers should verify each model, market seller and service agreement."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/taski/photos/01.webp",
+      "width": 1200,
+      "caption": "TASKI ULTIMAXX 360 floor machine in a washroom",
+      "credit": "Image: TASKI",
+      "creditUrl": "https://taski.com/ultimaxx-360-landing/"
+    },
+    {
+      "src": "/images/brands/taski/photos/02.webp",
+      "width": 1200,
+      "caption": "TASKI steam cleaner used on office seating",
+      "credit": "Image: TASKI",
+      "creditUrl": "https://taski.com/taski-products/steam-sdv8/",
+      "position": "50% 15%"
+    }
+  ],
   "ownership": {
     "summary": "TASKI's official website calls TASKI a Solenis brand. Solenis acquired Diversey in July 2023, and official TASKI materials describe TASKI as one of Diversey's business areas while assigning relevant marks to Diversey, Inc. or its licensors. These statements support a group and brand relationship, not a single universal legal entity for every market contract.",
     "parentCompany": "Solenis"

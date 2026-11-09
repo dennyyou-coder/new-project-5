@@ -223,12 +223,12 @@ export default function HomePage() {
                     {topic.coverImage ? (
                       <img
                         src={topicImageSmall(topic.coverImage)}
-                        srcSet={`${topicImageSmall(topic.coverImage)} 600w, ${topic.coverImage} 1200w`}
-                        sizes="(max-width: 560px) 120px, (max-width: 1100px) 50vw, 300px"
+                        srcSet={`${topicImageSmall(topic.coverImage)} 600w, ${topic.coverImage} 1000w`}
+                        sizes="(max-width: 560px) 120px, (max-width: 1100px) 45vw, 290px"
                         alt=""
                         width={600}
                         height={375}
-                        loading="eager"
+                        loading="lazy"
                         decoding="async"
                       />
                     ) : null}

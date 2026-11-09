@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { TallyInlineEmbed } from "@/components/LeadForms";
 import { CONTACT_INQUIRIES } from "@/lib/inquiryConversion";
@@ -60,4 +61,13 @@ export function ContactProjectInquiry({ initialInquiry = "" }: { initialInquiry?
       </div>
     </section>
   </>;
+}
+
+/** Reads ?inquiry= (or the older ?intent=) in the browser, so the Contact page itself can be static. */
+export function ContactProjectInquiryFromUrl() {
+  const query = useSearchParams();
+  const requested = query.get("inquiry") || "";
+  const fallbackIntent = query.get("intent") || "";
+  const initialInquiry = requested || (fallbackIntent === "sourcing" ? "sourcing" : fallbackIntent === "expo" ? "expo" : "");
+  return <ContactProjectInquiry initialInquiry={initialInquiry} />;
 }

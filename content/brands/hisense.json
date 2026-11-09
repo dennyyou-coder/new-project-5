@@ -2,14 +2,33 @@
   "status": "published",
   "slug": "hisense",
   "name": "Hisense",
+  "metaTitle": "Who Owns Hisense? Hisense Group, Chinese Origin and Its Brands",
   "aliases": ["Hisense Group", "Hisense Group Holdings Co., Ltd."],
   "legalEntityNote": "Hisense is a consumer brand used across multiple companies in the Hisense group, not one universal legal entity for every product or market. Hisense's official legal statement defines the referenced group as Hisense Group Holdings Co., Ltd. and its affiliated companies. Hisense Home Appliances Group Co., Ltd., regional operating companies, distributors, product manufacturers, importers and warranty providers can hold different roles for a specific model.",
   "schemaEntityType": "Brand",
   "officialWebsite": "https://global.hisense.com/",
   "headline": "Hisense home appliances, floorcare and regional responsibility",
   "description": "A source-backed profile of Hisense home appliances and floorcare, separating the consumer brand, group companies, listed appliance platform, regional operators and model-level buyer checks.",
-  "metaDescription": "Hisense brand profile: home appliances, vacuum cleaners, group-company boundaries, regional channels and buyer verification.",
+  "metaDescription": "Hisense is a Chinese group founded in 1969 in Qingdao. Hisense Group Holdings also runs listed Hisense Home Appliances and owns Gorenje and ASKO.",
   "quickAnswer": "Hisense brands sit within China's Hisense Group Holdings, which also runs the listed Hisense Home Appliances Group.",
+  "faq": [
+    {
+      "question": "Who owns Hisense?",
+      "answer": "Hisense brands sit within China's Hisense Group Holdings, which also runs the listed Hisense Home Appliances Group."
+    },
+    {
+      "question": "What country is Hisense from?",
+      "answer": "China. Hisense was founded in 1969 and is headquartered in Qingdao, Shandong."
+    },
+    {
+      "question": "Does Hisense own Gorenje?",
+      "answer": "Yes. Gorenje has been part of Hisense Group since 2018, and ASKO is also a Hisense brand."
+    },
+    {
+      "question": "Who is Hisense's CEO?",
+      "answer": "Fisher Yu is chief executive officer of Hisense Group."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Hisense. Group and portfolio evidence do not identify the legal manufacturer, factory, origin, importer, seller or warrantor for every Hisense-branded SKU.",
   "headquarters": "Qingdao, Shandong, China (Hisense group)",
   "founded": "1969",
@@ -206,5 +225,5 @@
   ],
   "publishedAt": "2026-08-06T22:54:58+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T22:54:58+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

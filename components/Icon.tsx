@@ -18,6 +18,7 @@ export type IconName =
   | "file"
   | "files"
   | "globe"
+  | "image"
   | "handshake"
   | "layers"
   | "lightbulb"
@@ -46,6 +47,7 @@ export type IconName =
 
 const paths: Record<IconName, ReactNode> = {
   activity: <path d="M3 12h4l2-7 4 14 2-7h6" />,
+  image: <path d="M4 5h16v14H4zM9 10.5a1.5 1.5 0 1 0-.01 0M20 15l-5-5-9 9" />,
   arrow: <path d="M5 12h14M13 6l6 6-6 6" />,
   badge: <path d="m8 21 4-2 4 2V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16Z" />,
   "bar-chart": <path d="M4 19V5M8 19v-7M12 19V8M16 19v-4M20 19V4" />,

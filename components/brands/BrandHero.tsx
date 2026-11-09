@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ShareBar } from "@/components/share/ShareBar";
 import type { BrandProfile } from "@/lib/brands";
 import { formatBrandDate } from "@/lib/brandDates";
 import { getBrandCategoryForProfile } from "@/lib/brandCategories";
@@ -65,6 +66,7 @@ export function BrandHero({
               </TallyButton>
               <Link className="bp-button" href="/contact?inquiry=correction#project-form">Suggest a correction</Link>
             </div>
+            <ShareBar className="bp-share" title={`${profile.name}: company profile`} url={`https://worldcleanbiz.com/brands/${profile.slug}`} />
           </div>
         </div>
       </section>

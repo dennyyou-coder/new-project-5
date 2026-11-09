@@ -2,14 +2,37 @@
   "status": "published",
   "slug": "midea",
   "name": "Midea",
-  "aliases": ["Midea Group", "Midea Smart Home", "美的"],
+  "metaTitle": "Who Owns Midea? Listed Chinese Group, Founder and Brands",
+  "aliases": [
+    "Midea Group",
+    "Midea Smart Home",
+    "美的"
+  ],
   "legalName": "Midea Group Co., Ltd.",
   "legalEntityNote": "Midea is a brand and listed group spanning several business units and legal entities. Cleaning appliances can involve Midea Smart Home, Midea Robozone, regional Midea companies and model-specific factories; the separately marketed Eureka brand also belongs to Midea Group.",
   "officialWebsite": "https://www.midea.com/global",
   "headline": "Midea ownership, cleaning-appliance portfolio, manufacturing network and channels",
   "description": "A source-backed profile of Midea Group's listed ownership, cleaning-appliance portfolio, Robozone and Eureka boundaries, global production network and channels.",
-  "metaDescription": "Midea brand profile: listed ownership, leadership, floor care, Midea Robozone, Eureka, factories, global channels and buyer checks.",
+  "metaDescription": "Midea Group is listed in Shenzhen and based in Foshan, China; founder He Xiangjian remains a key shareholder. Brands include Eureka and Toshiba appliances.",
   "quickAnswer": "Midea Group is listed in Shenzhen. Founder He Xiangjian and related parties remain important shareholders.",
+  "faq": [
+    {
+      "question": "Who owns Midea?",
+      "answer": "Midea Group Co., Ltd. is listed in Shenzhen. Founder He Xiangjian and related parties remain important shareholders."
+    },
+    {
+      "question": "What is Midea's parent company?",
+      "answer": "Midea Group Co., Ltd. is itself the listed parent; its product subsidiaries and regional companies sit beneath it."
+    },
+    {
+      "question": "What country is Midea from?",
+      "answer": "China. Midea was founded in 1968 and is headquartered in Beijiao, Foshan, Guangdong."
+    },
+    {
+      "question": "Who runs Midea?",
+      "answer": "Fang Hongbo is chairman and president of Midea Group."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Midea or Eureka. Group disclosures, regional-company roles, the separately marketed Eureka brand and model-specific factory records are identified separately and should not be generalized to every Midea product.",
   "headquarters": "Beijiao, Foshan, Guangdong, China",
   "founded": "1968",
@@ -30,6 +53,26 @@
       "src": "/images/blog/who-owns-eureka-midea-cover.webp",
       "alt": "Midea and Eureka cleaning-appliance ownership overview",
       "caption": "Midea reaches floor care through its own brand, specialized robotics operations and the separately marketed Eureka portfolio."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/images/brands/midea/photos/01.webp",
+      "caption": "Midea handheld cleaner at AWE in Shanghai",
+      "credit": "Photo: World Clean Biz",
+      "width": 648
+    },
+    {
+      "src": "/images/brands/midea/photos/02.webp",
+      "caption": "Midea mite cleaner on display at AWE",
+      "credit": "Photo: World Clean Biz",
+      "width": 685
+    },
+    {
+      "src": "/images/brands/midea/photos/03.webp",
+      "caption": "Midea robot vacuum at AWE",
+      "credit": "Photo: World Clean Biz",
+      "width": 689
     }
   ],
   "ownership": {
@@ -113,26 +156,36 @@
   ],
   "competitivePosition": {
     "summary": "World Clean Biz assessment: Midea's advantage is manufacturing scale, broad appliance distribution and the ability to combine core Midea products with specialized robotics and the Eureka brand. Its cleaning portfolio can move quickly across price tiers, but that breadth creates buyer complexity: group, business unit, brand, regional seller, legal manufacturer and physical factory may be different layers.",
-    "competitorSlugs": ["tineco", "dreame", "philips-home-appliances"]
+    "competitorSlugs": [
+      "tineco",
+      "dreame",
+      "philips-home-appliances"
+    ]
   },
   "developments": [
     {
       "date": "2026",
       "title": "Midea reports RMB 458.5 billion in 2025 revenue",
       "summary": "The current investor page also reports RMB 195.9 billion in overseas revenue, 29 R&D centers and 43 major overseas manufacturing bases.",
-      "sourceIds": ["midea-investors"]
+      "sourceIds": [
+        "midea-investors"
+      ]
     },
     {
       "date": "2024",
       "title": "Midea expands smart cleaning and robotic product development",
       "summary": "The 2024 annual report describes continued product development in cleaning appliances within the Smart Home business.",
-      "sourceIds": ["midea-annual-2024"]
+      "sourceIds": [
+        "midea-annual-2024"
+      ]
     },
     {
       "date": "2016-12",
       "title": "Midea acquires the Eureka brand business from Electrolux",
       "summary": "The transaction moved Eureka into Midea Group while leaving Sanitaire and Eureka Forbes outside that ownership answer.",
-      "sourceIds": ["electrolux-eureka-sale"]
+      "sourceIds": [
+        "electrolux-eureka-sale"
+      ]
     }
   ],
   "sources": [
@@ -176,5 +229,5 @@
   ],
   "publishedAt": "2026-07-31T15:30:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-11-06T12:00:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

@@ -2483,6 +2483,42 @@
         "outputHash": "sha256:0920ee583d8d9c1cf5ad63f96c2dcee827cecd10423d04d9e914769cc3406539"
       }
     },
+    "/images/articles/beatbot-vs-wybot-pool-cleaners/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44476,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:95549ec00bebbcf27109524468a750a267d075eb05067f5380868fb94b47dbb4",
+      "outputHash": "sha256:71cf970cf967e498d5e1c030b0dc74f8528f889f84d762850f76ff197325addb",
+      "mobile": {
+        "src": "/images/articles/beatbot-vs-wybot-pool-cleaners/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17058,
+        "outputHash": "sha256:8d2bf8822839128c1faa104892b817a634f0eef77c01214c26646b023fb02643"
+      }
+    },
+    "/images/articles/beatbot-vs-wybot-pool-cleaners/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45834,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:498a5ddbf8003a833b94255313ddd12dccd645f5f5df1f773c64e37b1e067d29",
+      "outputHash": "sha256:5dd9cdf8b792d561649ed730098b7c829ad6918df9e45ce6358e7c0252bd05b2",
+      "mobile": {
+        "src": "/images/articles/beatbot-vs-wybot-pool-cleaners/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17774,
+        "outputHash": "sha256:12aa20fed840f8d38674de3be8fc31b0ee0105975fd9ba4236956155a5f64cf7"
+      }
+    },
     "/images/articles/bissell-crosswave-edge-cordless-4328f/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -4157,6 +4193,42 @@
         "height": 450,
         "bytes": 35722,
         "outputHash": "sha256:8e408432979782f56544e46ff69efdcbe1d4fb72f760aff8d0137135e3637885"
+      }
+    },
+    "/images/articles/commercial-robot-mower-service-contract/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 257332,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:acea990783501a046073c9cd5edba39befd518547bb7716d12d0cb05b8417f86",
+      "outputHash": "sha256:38483c3d7ea6a58dceab41e475cf51020f38a52463d8a9cd71d32b2fb2afaa4d",
+      "mobile": {
+        "src": "/images/articles/commercial-robot-mower-service-contract/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 59952,
+        "outputHash": "sha256:fe6d492a1965334ebc97fd91e3b67451c025592c41454a4c0593b93ebfbe7155"
+      }
+    },
+    "/images/articles/commercial-robot-mower-service-contract/02-contract-checklist.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53390,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:31c25042d8a0b0aeafaf87bdf6e8ba5d41617cdee6453771d14ea95c75af0d95",
+      "outputHash": "sha256:3a370b70eb0b7a4eb1acf7648ee59addbd9e7dde894a38c64c2af317a5a45ee3",
+      "mobile": {
+        "src": "/images/articles/commercial-robot-mower-service-contract/02-contract-checklist-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20608,
+        "outputHash": "sha256:66ea4813838e461590835008fe960077d87118cb688e36fa8e1a16e75ad586e1"
       }
     },
     "/images/articles/commercial-robotic-mower-market-navimow-mammotion/01-cover.webp": {
@@ -5878,6 +5950,42 @@
         "outputHash": "sha256:e8f342030f98dc081ed59c726478d5a597020e0310beec29170e7e41c6f21734"
       }
     },
+    "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61342,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3cdad206abb2ff8ad656de63eae34f7a2dbb5e1cc826de38e849d7b9d64605bc",
+      "outputHash": "sha256:7b0397aaa39091123518a5f3996ee4e6a5ede84254ae2dbcf0819926de8980b1",
+      "mobile": {
+        "src": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27016,
+        "outputHash": "sha256:7ceb13ef35e922d7970fbb0f8d5d09162fb0ad079985fdeade4d139fb7c39ed8"
+      }
+    },
+    "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43142,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5e18d1438867076a38a91ad27a30225effb232f5a903b578787ac78a531dc132",
+      "outputHash": "sha256:e09e3e679bf610b9de06c88b0353e2dcfdc5a4cfbec576488bd735339c19b935",
+      "mobile": {
+        "src": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16972,
+        "outputHash": "sha256:b87f0b00abe1e57ae5d3b267474d07f46dcdca9ac6f4ff24e69908af6d3cd741"
+      }
+    },
     "/images/articles/dreame-t16-pro-heat/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -5948,6 +6056,42 @@
         "height": 450,
         "bytes": 10028,
         "outputHash": "sha256:95aebe37098bcbe4e3ea7b1c90bb5b49f0f151feb95670a08c8fd5de53b1ac31"
+      }
+    },
+    "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 25360,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:970b0d98a81e9efb17f0a9b7298e3756e074a00a7fd677888502d2129a1ff1e6",
+      "outputHash": "sha256:8fdb91505241bf176eb67ce2a6fe903eb5cc277fb245c9cb4d0d4958d465c555",
+      "mobile": {
+        "src": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 11896,
+        "outputHash": "sha256:0dc57c6eed1709e8a3790a76e696fbb427e44ac41ac1862214d9e34d6f53f519"
+      }
+    },
+    "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35404,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3a8fcb3e917ac7df2aa76b4a97701b8fbbbc359126f4e451a2e8b5995c6e5cb9",
+      "outputHash": "sha256:caa0c772ebbfa8e4af11dc3059f6bc654b95ceb4f380f4806f6961ace95622cb",
+      "mobile": {
+        "src": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13486,
+        "outputHash": "sha256:6fee903bbac79ce5eb3cd04ab650da23627ba10929688ef1000710d3492a44ac"
       }
     },
     "/images/articles/dreame-x60-ultra/01-cover.webp": {
@@ -7258,6 +7402,42 @@
         "outputHash": "sha256:d0b93c0819cbcd8cb31abf9bee5e60a6206f0334777183934f6a2e63a337cefa"
       }
     },
+    "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40628,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7df7159796291bcda3deaba81e840676279647d10079e309a07b69bc68aec3d3",
+      "outputHash": "sha256:cab239d5abc27445739e73de8335789696111bf39e0fcf1cba4aeb939b76902f",
+      "mobile": {
+        "src": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17668,
+        "outputHash": "sha256:ae8634922a7b767e2b07d84e3faff8753a2e990c909bb7beaef0f3649fc83722"
+      }
+    },
+    "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39354,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b66651866674260195980c3942deff941f605b8eb06e37c6fb1bd90f1cd25727",
+      "outputHash": "sha256:a958630805b5c4a112048c118a1c7f78abfb5d2e3c76e9efca25fb4374e934c3",
+      "mobile": {
+        "src": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15266,
+        "outputHash": "sha256:5c270598205f29ef93c48dda372ec30966ccaeaa1d7501f7e3ca90008b202d60"
+      }
+    },
     "/images/articles/dyson-v10-konical/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -8494,6 +8674,42 @@
         "outputHash": "sha256:721cb3732ebb706551465ddf37de54d523d9d1b86e004e9407120c8867c4d49c"
       }
     },
+    "/images/articles/ego-vs-greenworks-battery-outdoor-tools/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 59820,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8eef3af828679b33bf56e7a9747093529a9331f8d39d39bcae88a76d5df7f972",
+      "outputHash": "sha256:a1ed9cbe5d2ba03b7d74c4b86aa2b528b8d90e38acdb09a852d9d2c51e06a658",
+      "mobile": {
+        "src": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23156,
+        "outputHash": "sha256:a5b28883a1409fac04968e0f53c2296bf5086a75965e6964d4bb9cd578d103c5"
+      }
+    },
+    "/images/articles/ego-vs-greenworks-battery-outdoor-tools/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44292,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f51bb77ca7468c20e5c92169d699d3b956835530c9524c41de6873ef1ed005bf",
+      "outputHash": "sha256:270181e77e5ec9f6ac99c4faef4eec83c15e1fe8c80b1eefd85b5bc9d5752677",
+      "mobile": {
+        "src": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17010,
+        "outputHash": "sha256:8ef60be3a9250690f86e11624a6fd578a800aca2db9219b091157b5216601e6e"
+      }
+    },
     "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -8636,6 +8852,42 @@
         "height": 800,
         "bytes": 26930,
         "outputHash": "sha256:cccab6ebe1fe03ffbbfb453784efb745236805a69a5ac5f4e2f1485d79235257"
+      }
+    },
+    "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 27544,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9403b13ff8c78ac571484c8f6c11bbe6ad3010a831d006aa9d3d322b98628c27",
+      "outputHash": "sha256:0c1f6db8d10f0bcf36b06d9695fa1d3595f94d348c0330093c0fe2bae929a728",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12804,
+        "outputHash": "sha256:14b99baaa843078aa2f6ea48be887cac04f089cd057d29998f58c166f1a3a411"
+      }
+    },
+    "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39370,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0bdbb202d9ad741f2a1c6a95130161ff095ab7fe400be12b63e214e3509bc2b3",
+      "outputHash": "sha256:c611b7ac64129812e7e2d14420157ca1e5466118695c4f3b5bc6da2f18c02181",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15358,
+        "outputHash": "sha256:0e87e7df42d8c0d30fa8f7b5d90d53cae38f98798e22069f7ac31044a6c6f1ca"
       }
     },
     "/images/articles/eufy-omni-s2/01-cover.webp": {
@@ -9853,6 +10105,42 @@
         "height": 450,
         "bytes": 28262,
         "outputHash": "sha256:9a7a2796dc63d84e05f3105159412357637fe6f5a73b6a23d09ff24dc3022d66"
+      }
+    },
+    "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56910,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3911c178673362f035f5ce202f43002c2cd78647e0b1a86bc18bd2b28c66364b",
+      "outputHash": "sha256:b83e1987b6378ef5a8bdc9f7fc9b26b90a2f279087226700bf8a3c57b4fb1cee",
+      "mobile": {
+        "src": "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24280,
+        "outputHash": "sha256:756afc825bc33140fac3543d61a829e5139c72bbb88b894717419086c49d1aff"
+      }
+    },
+    "/images/articles/gausium-vs-pudu-cleaning-robots/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 52560,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:131e171912c5e3731fbe1759bac5889d4864c22c0eb110e8ca946eb5bdd7fa0f",
+      "outputHash": "sha256:971892c1c5443327418311447792b10596046c4020ada2ec32591eebd6f495e1",
+      "mobile": {
+        "src": "/images/articles/gausium-vs-pudu-cleaning-robots/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20190,
+        "outputHash": "sha256:54e2564f141fad851a35a80bc2cf180c3108f89c507f4632f1b2ec42329f893a"
       }
     },
     "/images/articles/german-vacuum-brands-in-the-cordless-wave/01-cover.webp": {
@@ -11367,6 +11655,42 @@
       "quality": 84,
       "sourceHash": "sha256:c1a2a91579f3664201b081d96296d46636a6469dc107fc195630c0c0240c78e4",
       "outputHash": "sha256:714de22326534dfd0bef18d4fc6fff343c11578519492814a418daa274996bc0"
+    },
+    "/images/articles/hard-floor-washer-buying-guide/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 67492,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e140eb95ae2f1d4e5a5f89686f98793d2b17b023c0518cffe6430805677b8689",
+      "outputHash": "sha256:1eac7ac8316f96ec5ebf75c8566cbb784b96773ef6693faa2abfc3c5ac757a79",
+      "mobile": {
+        "src": "/images/articles/hard-floor-washer-buying-guide/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30388,
+        "outputHash": "sha256:501d5c682cf4588ba38e2ba50faa9dfb1fe9c9d389bd0392bce80947cc5dbb65"
+      }
+    },
+    "/images/articles/hard-floor-washer-buying-guide/02-floor-washer-decision-chart.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 46368,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:411b2011e32ac260b271605d58c6af7831616333b5ae5af41adbcdb4f63b82ac",
+      "outputHash": "sha256:6c6a4cfbe6922d2a856f4b8317c624f64f7d065edde3e591b91da1f19326cafc",
+      "mobile": {
+        "src": "/images/articles/hard-floor-washer-buying-guide/02-floor-washer-decision-chart-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18170,
+        "outputHash": "sha256:aeefcce15c5ea3fafd029d7faed2cf8f0af9753ffa370c8612abcd853974622a"
+      }
     },
     "/images/articles/hayward-vs-pentair-vs-fluidra/01-cover.webp": {
       "role": "cover",
@@ -13223,6 +13547,42 @@
         "height": 450,
         "bytes": 48094,
         "outputHash": "sha256:bb6ccc4bedc02435f749db03ad595d05272b7bfdd581eb5e92fa6a8d24e09665"
+      }
+    },
+    "/images/articles/is-dyson-publicly-traded-stock/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 65028,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4724afe2bdcbd7e3793e890eb4fb1083d35f60ccce7babe6277e70286032a0b1",
+      "outputHash": "sha256:ee11d076c486935dacda46e060cca9190e1768975719738cabee7e12f9267e84",
+      "mobile": {
+        "src": "/images/articles/is-dyson-publicly-traded-stock/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22942,
+        "outputHash": "sha256:9eb9bde9a7ef6f0a7b48b07940a55cef99e6a8a371918be3d548a42b83ccc062"
+      }
+    },
+    "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40632,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d6bc600dfd1fd6e5820d8f88139e8ba2ded9f733849dd91c98923a3da61ff471",
+      "outputHash": "sha256:eeee4820191062245503883de968c566d7898d0027b5b350ba04de62bf452c16",
+      "mobile": {
+        "src": "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15864,
+        "outputHash": "sha256:00989e8a223a4e102073e77681bc9d70d50f1bab54fc665ae6d7d8c8a64bf3f8"
       }
     },
     "/images/articles/is-roborock-owned-by-xiaomi/01-cover.webp": {
@@ -18405,6 +18765,42 @@
       "sourceHash": "sha256:fdbcc17c93a9ae0309d77e236ee4a8abb8ad849bb591a7e6df4c4a354202301c",
       "outputHash": "sha256:f087fd21b89ab5bd38cb7cd9410ef892cb89d1bbe60bac91072d802a0b497628"
     },
+    "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39580,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a6e56419072d2a0373580b0e9a1b4445bdf5f1f8f1eb643ef0bf030c99893228",
+      "outputHash": "sha256:3e4eb883eb2e6ec4187992b9cb57be6f828a81c41c1d2a9771f74e945d87f4c8",
+      "mobile": {
+        "src": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17448,
+        "outputHash": "sha256:b391e30c7daf570e91044bdd63a257d18895e8ec89245662015d88a997142736"
+      }
+    },
+    "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43488,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1a85b85b24244ed3d95939ee425a6a0647d513241581b3c1fabf25092d4ffe89",
+      "outputHash": "sha256:594ac37aed9635085b35350f3b517d8f358e44c3242f2e983a8569327ffdf843",
+      "mobile": {
+        "src": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16676,
+        "outputHash": "sha256:a6055df921ad9311ccc8f42119026f2bda04f87710edea124e05f067c1274f84"
+      }
+    },
     "/images/articles/roborock-saros-20-flow/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -18918,6 +19314,42 @@
         "height": 450,
         "bytes": 31032,
         "outputHash": "sha256:6f957395917b72e8e282aeb78430a3d352e350a3b118cdbc60e83fceff81260d"
+      }
+    },
+    "/images/articles/robot-vacuum-buying-guide/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 27466,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ba1e1fa370f907d4744659584389454c95cf1630d751c4c2b86b4fad6b1b73e1",
+      "outputHash": "sha256:f8b9e3e8ad3303509b315db0acc69b95f7ba62d19b5021f7d17b25b3214924fe",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-buying-guide/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12948,
+        "outputHash": "sha256:bb43c624879949beb90ad4bde745620757bcca77524fc5cdd17954770ebe3059"
+      }
+    },
+    "/images/articles/robot-vacuum-buying-guide/02-robot-vacuum-decision-chart.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56016,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:38630f1020f7e04578a653057480a8e5e7198921987eb1628c3a0919f874d54f",
+      "outputHash": "sha256:ca041da1846c3d97ee5cb9a37e58719ef3c4dae2d16b50168d5cb1d6b3763f51",
+      "mobile": {
+        "src": "/images/articles/robot-vacuum-buying-guide/02-robot-vacuum-decision-chart-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21930,
+        "outputHash": "sha256:fd687e5a7e998469b7706f3012a0d37d15d2a882b44aa42964624e7b442e85cb"
       }
     },
     "/images/articles/robot-vacuum-going-in-circles/01-cover.webp": {
@@ -20695,6 +21127,42 @@
         "outputHash": "sha256:c4367a151ea382b10db73f0dca05dced684c524d9ece109183b4f99d0b4e4af8"
       }
     },
+    "/images/articles/shark-vs-roomba-robot-vacuums/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42572,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:363acef59ba149e4bbd82daf2703578aa1fb13237add7389b75e16e5e69927b8",
+      "outputHash": "sha256:b30df2f1cc9bc0b387d4ab702576ef69558dd474d7ff8e70b9de561f8b831357",
+      "mobile": {
+        "src": "/images/articles/shark-vs-roomba-robot-vacuums/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17254,
+        "outputHash": "sha256:22765fb748c6733ee18489a3ce3b86f7e86b4c57d5efe060fb5694da1b14db87"
+      }
+    },
+    "/images/articles/shark-vs-roomba-robot-vacuums/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43038,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:90414470799112930aabbd0cd8ac7aa73475a97fc5baf79e12926ae6ea4bd3a1",
+      "outputHash": "sha256:90b138b1d6ce634c7b1714daa628fa03ac3e820f5cfa07a1f2881ccc4b0d7e2f",
+      "mobile": {
+        "src": "/images/articles/shark-vs-roomba-robot-vacuums/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16272,
+        "outputHash": "sha256:00f5706d9601e88b73bc9e6e9458111b7d2025e3af510d7b57affd2e7c8f6da2"
+      }
+    },
     "/images/articles/sharkninja-hit-product-pipeline/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -21109,6 +21577,42 @@
         "outputHash": "sha256:c239328887a657d532551b75d680e4890d4eaaccf63fc3a11912c0173eb64398"
       }
     },
+    "/images/articles/spot-cleaner-battle-bissell-shark-hoover/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36374,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:38668665a1fa0bfbf4900a4cb4e169f1dd34fea9a9b862e4e71baca4a14e50e8",
+      "outputHash": "sha256:c509b07e37471e76d9a0268e2cbadbfed3378f2735163ddc9af0a999a1687d2c",
+      "mobile": {
+        "src": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15302,
+        "outputHash": "sha256:6278c632b55e2ef8cbb929efbb59662235c22478684d9f8e439aebd1c05aa07e"
+      }
+    },
+    "/images/articles/spot-cleaner-battle-bissell-shark-hoover/02-spot-cleaner-timeline.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53858,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b12d63e315bc08df5ed5a3adcb12dd77051de7122c20e975db94a1e2ef44c6a4",
+      "outputHash": "sha256:833fa0c306e01f4a3181bcd72be7d18da0fcfbd2a87203575d788f4195ede4f6",
+      "mobile": {
+        "src": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/02-spot-cleaner-timeline-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20760,
+        "outputHash": "sha256:865aa88a4a5d0281eca1644293321fcde865fdefeb67a2708196111a433c1933"
+      }
+    },
     "/images/articles/stanley-black-decker-excel-sale-outdoor-strategy/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -21507,6 +22011,42 @@
         "height": 450,
         "bytes": 20508,
         "outputHash": "sha256:76d569a4064b2e714bff772c2e521f032fdd0b3ec4c1de144496f26f2f171e7c"
+      }
+    },
+    "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 32936,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:66bb55c384b6dc31c6ee794788fa18398868c11718e8fe2b2596fdc235d18f31",
+      "outputHash": "sha256:547cf4464b8e33d9ce50c32e4da926ee9f60003712d129a7de42ede6b430a32f",
+      "mobile": {
+        "src": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15248,
+        "outputHash": "sha256:2aedc61a0a77d7e99fa616c9ed1aac31fc85f56d7b54996eddd1ca6dce19d7e6"
+      }
+    },
+    "/images/articles/tennant-vs-nilfisk-floor-scrubbers/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 50158,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:608430af4aa56fc8e686d51fa395c37dbe6e05d36cf832bc09bdbf2c425aef3b",
+      "outputHash": "sha256:dd4566ffc8a65bc488e32e775f80bfb1eb0d51c7e1c2f97987017e490c20112f",
+      "mobile": {
+        "src": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19262,
+        "outputHash": "sha256:5c33584417f3327b6f1e982e1f69a8352abecd48e12c53e5c6a5da2d8e632b89"
       }
     },
     "/images/articles/thoughts-on-mijia-mite-removal-vacuum/01-cover.webp": {
@@ -24509,6 +25049,114 @@
         "outputHash": "sha256:5f50833adaacdeb5e6c45e7a59cd7a4360a8f18bb976eb65927e9f805c60c8fc"
       }
     },
+    "/images/articles/who-owns-clarke-nilfisk-freudenberg/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 91502,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e4d6692ccf79e6822810efaf3b34315952907b3b970b59f16d2de72a72510933",
+      "outputHash": "sha256:1893f3187a363abb517ac0b43c3209bf8245d6f486abc4f027c84c9887a9417e",
+      "mobile": {
+        "src": "/images/articles/who-owns-clarke-nilfisk-freudenberg/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 32184,
+        "outputHash": "sha256:c888dd00bf7f8963cf7ccd3a26968e39d2cef7b48f19d4ba83dfde35808fbeed"
+      }
+    },
+    "/images/articles/who-owns-clarke-nilfisk-freudenberg/02-clarke-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35954,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:721f50e536593cfcc830d98556335f61bae6d383aa5a7a9fc53ff76ea5e35bc8",
+      "outputHash": "sha256:3b9766210b0c55010b9b07e97dd9b2ca77c61c6b8ce0f40d018da28d5eefce93",
+      "mobile": {
+        "src": "/images/articles/who-owns-clarke-nilfisk-freudenberg/02-clarke-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13668,
+        "outputHash": "sha256:55463d0bffe223a1c9110af8ba244cd69d34b2a893e7639b2a00edfa08be2b77"
+      }
+    },
+    "/images/articles/who-owns-cleanfix-swiss-family-company/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 119602,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bcfd95752c62e6c56777454125e2011f99501c2cf3dd50f062e9187dce8d5a9f",
+      "outputHash": "sha256:e5f9f5346d6c6817eccbb34a6400ed08da4354255500d22ddb9ad26e25464ec5",
+      "mobile": {
+        "src": "/images/articles/who-owns-cleanfix-swiss-family-company/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 44516,
+        "outputHash": "sha256:6ed889eae06bf25564f9a4cb3f42e5a2da85802cd9784e050322f643051a2739"
+      }
+    },
+    "/images/articles/who-owns-cleanfix-swiss-family-company/02-cleanfix-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40070,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8ff861c62e635dfbf17683a911ecb0329692201c2c14b8b24c3c199a33273c92",
+      "outputHash": "sha256:e2e4644db15dd5146e9511b7a8f8e68077c497b344eed5ba5050f3b34674cead",
+      "mobile": {
+        "src": "/images/articles/who-owns-cleanfix-swiss-family-company/02-cleanfix-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15252,
+        "outputHash": "sha256:24de3597d16a303dee0839230a29cc6b0fb559c977ff67e4253ddcb3febacc67"
+      }
+    },
+    "/images/articles/who-owns-columbus-staehle-family/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 50848,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:80461f42c2dea242f361d491c7e3253c31e21b7436db506ce198b0a0416ed6d1",
+      "outputHash": "sha256:251721f407f24d5a2d62d7ab7ad5afe13cc2df5437c06db55eac898df585506d",
+      "mobile": {
+        "src": "/images/articles/who-owns-columbus-staehle-family/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22022,
+        "outputHash": "sha256:2faea89ac7e91a80a25be2bfb9ef93882a7bcaa7c6866ef1b327190b27ccc393"
+      }
+    },
+    "/images/articles/who-owns-columbus-staehle-family/02-columbus-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38020,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0a268b805326d92e3d72862c8d42acfb253ff85740bc38470a1684fd5f8bc3a3",
+      "outputHash": "sha256:6cae48e953217a96805932ac9ecd0f6ff484579426aeadf25f55da80d48209a7",
+      "mobile": {
+        "src": "/images/articles/who-owns-columbus-staehle-family/02-columbus-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14392,
+        "outputHash": "sha256:323d4d143a3e2347e9a0cd41956c1893f8704df1f8b1994c296a8a01d1e17a64"
+      }
+    },
     "/images/articles/who-owns-craftsman-tools-stanley-black-decker/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -24581,6 +25229,42 @@
         "outputHash": "sha256:f5aea318b357e0a4b61839150654bef7e3a6d72f222f2c5729ff21e79793b473"
       }
     },
+    "/images/articles/who-owns-dji-romo-robot-vacuum/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 60164,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:83581e77a3b1dc665cf221891921689faad10e9035fe6b7d54d6fd6c2c3ae39f",
+      "outputHash": "sha256:7d522f124b2014e5e6b8869e00f63eb618156a6ec088efdbdcdd4bdd083d1b52",
+      "mobile": {
+        "src": "/images/articles/who-owns-dji-romo-robot-vacuum/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20414,
+        "outputHash": "sha256:26267b13f058cbc1f69ededc89e4c2cc237c890e310e2a3c92692152db845257"
+      }
+    },
+    "/images/articles/who-owns-dji-romo-robot-vacuum/02-dji-romo-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 29312,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8ee4bd2c44e6f5c7fabe0a425e3f05e45b29931c1c6fb33e33af7b15a664defe",
+      "outputHash": "sha256:ae855e1b678a84f84a1eeeeb269906519da64ae8874e9607ac9413fbad9bc8a6",
+      "mobile": {
+        "src": "/images/articles/who-owns-dji-romo-robot-vacuum/02-dji-romo-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 11326,
+        "outputHash": "sha256:6865b6ab0e8decaa067d4d8efae4e511afb4ddce8c573646665b7e06dcf24147"
+      }
+    },
     "/images/articles/who-owns-dremel-bosch-manufacturing/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -24615,6 +25299,42 @@
         "height": 450,
         "bytes": 40048,
         "outputHash": "sha256:50da6d6370840cb3be2fd2ea80b23a9b6bd965981f40864a965ece86b4eb3b13"
+      }
+    },
+    "/images/articles/who-owns-dulevo-fayat-group/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 55028,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c80a7bf030208827f36477679580e01074a69b9435a46f298efee27da3c7d417",
+      "outputHash": "sha256:34da6a214c22507a366081a5ef5c9a3ecc7de475bab095f4c800622436b48d6b",
+      "mobile": {
+        "src": "/images/articles/who-owns-dulevo-fayat-group/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20856,
+        "outputHash": "sha256:dc389ca25d317a381ec696214e5c6b0fb8449295c4dc584dc66587218185b9af"
+      }
+    },
+    "/images/articles/who-owns-dulevo-fayat-group/02-dulevo-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36536,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ba5ebc6abfd10d4ded01aa95633a720ea834a56d961fcf8fef089dd36f0241ea",
+      "outputHash": "sha256:5a5f41077938b4923272d71e376db9da046c87c75d4c0d3db8df30656f36356f",
+      "mobile": {
+        "src": "/images/articles/who-owns-dulevo-fayat-group/02-dulevo-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14166,
+        "outputHash": "sha256:c2a3adc20f3ac533e41d59fa2adfebbd5521796d64efc7ffaa5fcc608f5a4661"
       }
     },
     "/images/articles/who-owns-dyson-james-dyson-singapore-manufacturing/01-cover.webp": {
@@ -24833,6 +25553,42 @@
         "outputHash": "sha256:ea324094581bd36fb949893aba1c505aca5d0a61689f001f14f94ba54dde7025"
       }
     },
+    "/images/articles/who-owns-factory-cat-rps-corporation/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 103146,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e08cdf53ffff2937eeb2eea60c10fafb872e0b7e5e6c0e79b261f7c11f98d4ff",
+      "outputHash": "sha256:1898af34b2e0ec74becdef1bb313d1a69b82fadbe9b2e9bf6d72c0a54706b487",
+      "mobile": {
+        "src": "/images/articles/who-owns-factory-cat-rps-corporation/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 42836,
+        "outputHash": "sha256:5fb8149a3a762604accc5d4775e9baeee760a40f82dafde0948bcf328483843e"
+      }
+    },
+    "/images/articles/who-owns-factory-cat-rps-corporation/02-factory-cat-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35806,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1bbc25d83658d1bbbbb7d942e0e805c14e4628cf1e61a08b6355cf5c6b559b4e",
+      "outputHash": "sha256:3b5f5cf72e7a7294e59b706adb855050f14f2605dfec803d1add9df3f0f204eb",
+      "mobile": {
+        "src": "/images/articles/who-owns-factory-cat-rps-corporation/02-factory-cat-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13750,
+        "outputHash": "sha256:b3b8213314f75ca73c37895117d732c208a5370535ff5823685b4337efb1899b"
+      }
+    },
     "/images/articles/who-owns-festool-tts-tooltechnic-systems/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -24867,6 +25623,78 @@
         "height": 450,
         "bytes": 37642,
         "outputHash": "sha256:5f28745ce68100c3dc1f5f7bdfdcc93a09dfec71565400ebdebc62408d1f0402"
+      }
+    },
+    "/images/articles/who-owns-fimap-comac-group/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 79654,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:69d505cd0004bf7b3ae29c2e913e31fd84973052d5bab22c118b5c13c3e22c35",
+      "outputHash": "sha256:5b14356a2c492a7f9af485005f97b890eaca4f5b58139a5516e63c58d1be4a9e",
+      "mobile": {
+        "src": "/images/articles/who-owns-fimap-comac-group/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 32136,
+        "outputHash": "sha256:fbd70a875e0da9966a88acbafca1f3938325cb0e2c06b1341ed02fa99af39735"
+      }
+    },
+    "/images/articles/who-owns-fimap-comac-group/02-fimap-comac-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 37842,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:83ec616a9409619ccb632466bb55045d0f07f0b36a34b4a6b3e984f17ddad50b",
+      "outputHash": "sha256:e0d5709e105b302ea5780ad8db0bcace9c0e410bfafbf7c6bc9cb7ab160796d0",
+      "mobile": {
+        "src": "/images/articles/who-owns-fimap-comac-group/02-fimap-comac-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14414,
+        "outputHash": "sha256:6920ee7888feb84265ce636a8110e0ce5fc4aec0b59999248153d209ccaee75b"
+      }
+    },
+    "/images/articles/who-owns-fiorentini-cleaning-machines/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 71600,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6de90ef07f8a656c70f06a82960f580f19db5b8cfbafae14c8d8c16eae926eab",
+      "outputHash": "sha256:84a24ea13a7bee80a914c02c06e72e70cd7d153b30f2471bc5da484c17af7e18",
+      "mobile": {
+        "src": "/images/articles/who-owns-fiorentini-cleaning-machines/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 29640,
+        "outputHash": "sha256:46f9f9eb6bbb6c22bda648221150cc9585271710eb44b2ee07d1cc85c24465bc"
+      }
+    },
+    "/images/articles/who-owns-fiorentini-cleaning-machines/02-fiorentini-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38374,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7d232348d5152c9ad92c9869c1ac2075549b16553e7bb712cfbb339abad65ca2",
+      "outputHash": "sha256:bbd21021c1ebb869e225727cc21e0f17fd52c12df5f9a59a1f0f9256e4c017fb",
+      "mobile": {
+        "src": "/images/articles/who-owns-fiorentini-cleaning-machines/02-fiorentini-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14694,
+        "outputHash": "sha256:0eb1d758176e2b57c565716302a57f413ba651ac0b558f7d2bce2a26754c7ae4"
       }
     },
     "/images/articles/who-owns-flex-tools-chervon-lowes/01-cover.webp": {
@@ -24957,6 +25785,78 @@
         "height": 450,
         "bytes": 25150,
         "outputHash": "sha256:715edc003a208d4238216669a766eafc772c88a8512387c5f76edaa79b0b8c4f"
+      }
+    },
+    "/images/articles/who-owns-gausium/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 60688,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9dff7f5d142fe2136a8ebf6e232293092eff66bf7a8f69fecbbde69c0517ed0c",
+      "outputHash": "sha256:592a293369954ffdba371800e624796146410cad94f95946da99ad8a11ff57d0",
+      "mobile": {
+        "src": "/images/articles/who-owns-gausium/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26062,
+        "outputHash": "sha256:35734700777d3504ace934ddd8af0a45f1f77559aee442a1f5950bb018f2ab07"
+      }
+    },
+    "/images/articles/who-owns-gausium/02-gausium-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40120,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:38fda72da5f2ef1a8692a4d8d3581b3ccbcde33bfe914f4e4dfe59f17d5c6e44",
+      "outputHash": "sha256:b203f915d98932a791c93e8f2d3b78c275f1e2db793aade9b251b5e44f6d27e9",
+      "mobile": {
+        "src": "/images/articles/who-owns-gausium/02-gausium-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15334,
+        "outputHash": "sha256:8e4482381b1ea10595a5159ed05d859382defb9898077ae7f8609de03faef1ca"
+      }
+    },
+    "/images/articles/who-owns-ghibli-riello-cleaning-machines/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 145818,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5356ec0e0ebf5fd79483d1345d0b8e7964cea249c1fe9c21a25f17e60c284e0b",
+      "outputHash": "sha256:69c501bfc837e26dbf3dad67da1b1d098a4197773862d87d5c92beaedf81472d",
+      "mobile": {
+        "src": "/images/articles/who-owns-ghibli-riello-cleaning-machines/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43786,
+        "outputHash": "sha256:d5d358f7c047381d7ca51e3d4694af82fb439d44510fff60d458803c70b60378"
+      }
+    },
+    "/images/articles/who-owns-ghibli-riello-cleaning-machines/02-ghibli-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35926,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ebdde75a02a74da0466e8417c20969c816ef2f9f2bf2edd5d7faa51e34c9d736",
+      "outputHash": "sha256:97e7449d8b4fce2fcf1011b413f42061158d0270eddb848b5d5763114db8a16c",
+      "mobile": {
+        "src": "/images/articles/who-owns-ghibli-riello-cleaning-machines/02-ghibli-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13638,
+        "outputHash": "sha256:9b22f15b9bc7ee813a5771765c9948c0550fd67c6f96b6f4280d39336c190baf"
       }
     },
     "/images/articles/who-owns-gorenje-appliances-hisense/01-cover.webp": {
@@ -25101,6 +26001,42 @@
         "height": 450,
         "bytes": 26084,
         "outputHash": "sha256:de4fede21e9693336d75454243e5c43f27f86222e727e4347aebebc96750ec36"
+      }
+    },
+    "/images/articles/who-owns-hako-possehl-group/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 51372,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3fe0adcf79608139671bbead293cfe7ab24aaceee1dbbd779053cb887220f1c8",
+      "outputHash": "sha256:b07bda5bb6338a9790b95e2b31b6045b423a02c890d4ce7dcb56635b92e86d82",
+      "mobile": {
+        "src": "/images/articles/who-owns-hako-possehl-group/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 21980,
+        "outputHash": "sha256:cef3c51e85bc649efa981a5521f3b47b353e890a7a78aa15ef3906de39b55462"
+      }
+    },
+    "/images/articles/who-owns-hako-possehl-group/02-hako-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 37146,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5d89bd5bbdaea65f832b766c4092a42294ad5384cf44d8d53aae450bea4aed05",
+      "outputHash": "sha256:8db5f70f9c26bf51285f8d83b6daa02420c10305734dfb103d654dd8b9919f55",
+      "mobile": {
+        "src": "/images/articles/who-owns-hako-possehl-group/02-hako-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13942,
+        "outputHash": "sha256:79c18ac5114398fc4bdbd5fd5b362edfbfc568cada6c1a2e1b741acf5aa1c60d"
       }
     },
     "/images/articles/who-owns-hayward-pool-products/01-cover.webp": {
@@ -25301,6 +26237,42 @@
         "outputHash": "sha256:ec87519622ccb3ab4978862f83983f16e7e408319b92011d927d2aead0484880"
       }
     },
+    "/images/articles/who-owns-ipc-tennant/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31186,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c63f87c0c2417688d3c48e143da6d9b97f37ee9e4d94cce41d1e3504153883a9",
+      "outputHash": "sha256:1cbb7f3cdf7af3c95b69384386d7fb26b8e8bff3e9ae3a9aa7949268ecd0d190",
+      "mobile": {
+        "src": "/images/articles/who-owns-ipc-tennant/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14032,
+        "outputHash": "sha256:2555b45305f5dec9e5bef987ab786bca3f26045c3a879a92fa8df8e3d8bc646d"
+      }
+    },
+    "/images/articles/who-owns-ipc-tennant/02-ipc-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38890,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:aa7dc170fb2be8bd6c498e8a6072eba7c2545a7c360aa3131d0106d384a2905c",
+      "outputHash": "sha256:f563d2f46fb965f6f959eda237957cc14d5c366cb6b87350eebf285eaf2cf6e1",
+      "mobile": {
+        "src": "/images/articles/who-owns-ipc-tennant/02-ipc-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14732,
+        "outputHash": "sha256:f70cf781fa4040dbedaa55873e93ee24a4b7f8cbf1010c7aeec0d6404f384287"
+      }
+    },
     "/images/articles/who-owns-irobot-roomba-picea-robotics/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25373,6 +26345,42 @@
         "outputHash": "sha256:60ebe5d8c93c614ac472b53d4a0bf1c1bd670f5405ee5de0d48044028ebbedc7"
       }
     },
+    "/images/articles/who-owns-lavor-comet-group/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 106420,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2b7d47e5b98187df9ea5c892442d0fd8481d451be77936f13b7f96651d351ed9",
+      "outputHash": "sha256:7a1897e050f97dac3387cfe79f69520d96d4509c55493ec8d80e78e84e9845a4",
+      "mobile": {
+        "src": "/images/articles/who-owns-lavor-comet-group/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36266,
+        "outputHash": "sha256:a24e448ee63d7b43352114f51444953ccb769be7d78bc6f511599ba81fb83be3"
+      }
+    },
+    "/images/articles/who-owns-lavor-comet-group/02-lavor-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34552,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:207863ca9f4eef0f14b41b0ed80c2c02c8f2d5388818c4d63f4eb9f5e02bd6c7",
+      "outputHash": "sha256:d87f71ef9e0f932b22a9d8f7bb6409d8f230ca1aec00a4aafcb8c74e505556ad",
+      "mobile": {
+        "src": "/images/articles/who-owns-lavor-comet-group/02-lavor-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12938,
+        "outputHash": "sha256:eda9455c5dcebf2063fd09f380ace597ac56bf0efe5a28721cc426b3b68806c1"
+      }
+    },
     "/images/articles/who-owns-lawnmaster-cleva-manufacturing/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25425,6 +26433,78 @@
         "height": 450,
         "bytes": 27084,
         "outputHash": "sha256:11e4572fd4171f7f0def39d49692945cf687e4ba4bf5eaadeef1b8dfb324e9d2"
+      }
+    },
+    "/images/articles/who-owns-lindhaus-padua-family-business/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 48042,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:ac9f40f9adaaff5df044e4b9655e681684e11c73696a1e8ed261c4003b47733f",
+      "outputHash": "sha256:c987cc02dc81cfd27cc9ef0d6402a8d9fd4c525a40e2a1ef99baba3146924ae2",
+      "mobile": {
+        "src": "/images/articles/who-owns-lindhaus-padua-family-business/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20534,
+        "outputHash": "sha256:4b8004fbe721e551253ebc5a062d3fd29126378b2b9e23c494fff6b20838c383"
+      }
+    },
+    "/images/articles/who-owns-lindhaus-padua-family-business/02-lindhaus-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33130,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0e58f20500f0a0b522b1012389c3ec208050d4573aa977936e9745348946fd7c",
+      "outputHash": "sha256:aa3ec1e07d99abf922346f546d2a7a195ca52afaf5ea2d962ab34ea69f81cbe6",
+      "mobile": {
+        "src": "/images/articles/who-owns-lindhaus-padua-family-business/02-lindhaus-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12548,
+        "outputHash": "sha256:6b8e1232760133c493e2eec754135b655c9cc93c59faa0f9f9b427637cd1f579"
+      }
+    },
+    "/images/articles/who-owns-lionsbot/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 98552,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:349d8f3a1beff9892f3d01e2772fc18cfc708d66f7c4b1e4ec6f0204e44ece08",
+      "outputHash": "sha256:034640eb218e72546a34bb0b1b7395f819184bb39e8336b4668beb93453de808",
+      "mobile": {
+        "src": "/images/articles/who-owns-lionsbot/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36150,
+        "outputHash": "sha256:5cff7b3548819a1e2947abb698ca3288b8fedd7bcea4e9f85bb28ffd84281912"
+      }
+    },
+    "/images/articles/who-owns-lionsbot/02-lionsbot-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45810,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e43d93c371b45d38784ac1aec38be66f24ef9c26ec2529c16e9f61f58bc7667a",
+      "outputHash": "sha256:6d6c3a4616e760d889fd2b95b544169ad6328c0631a7794e426bb4b1b6b48bc1",
+      "mobile": {
+        "src": "/images/articles/who-owns-lionsbot/02-lionsbot-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 18394,
+        "outputHash": "sha256:10407bebb33fdb46ba4d47b612405437a2167681693e16a97dbb58e7a89bac12"
       }
     },
     "/images/articles/who-owns-makita-company-manufacturing/01-cover.webp": {
@@ -25571,6 +26651,42 @@
         "outputHash": "sha256:9e90f4ca4a01635c010ed736a75bd93d386e29d092113fcddc87cb447b3b2906"
       }
     },
+    "/images/articles/who-owns-minuteman-hako-powerboss/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 69628,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9aa2934f7e07cca0f9f1a90cf16c8a790cc41003ddc32c59c96634b8378de35c",
+      "outputHash": "sha256:3af07a9a31aa84d994fc43ad9f34b7228c9a697e29621bff8b6933a69c7e5535",
+      "mobile": {
+        "src": "/images/articles/who-owns-minuteman-hako-powerboss/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 30814,
+        "outputHash": "sha256:a82532736329669d58478c3eb98986d112c10385b59d4b710d51f4b749cebd84"
+      }
+    },
+    "/images/articles/who-owns-minuteman-hako-powerboss/02-minuteman-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39518,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fb040cadd62471d827ee9879e334e5de214c6a4db178cc34823bf8952ac29884",
+      "outputHash": "sha256:8f4a9e3c32496aa04cb4e91b7f8b59bba255e35dd3769d151035fc911c55efe7",
+      "mobile": {
+        "src": "/images/articles/who-owns-minuteman-hako-powerboss/02-minuteman-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15112,
+        "outputHash": "sha256:afe28a4d6e17953372710288bfe76797014054503d74a6ac38b7a5fe1cfe70c7"
+      }
+    },
     "/images/articles/who-owns-narwal-yunjing-investors-manufacturing/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25605,6 +26721,78 @@
         "height": 450,
         "bytes": 51518,
         "outputHash": "sha256:ded5c183c544910ce2ab8d2e0fccceb251d3f95f7a6eb686a81554a764e9a4b1"
+      }
+    },
+    "/images/articles/who-owns-nss-taski-solenis/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 85386,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:93d3dc02efec909fc3455cd6803473a5b55ccfb2a0a74a4d085f9a32f94a5d7b",
+      "outputHash": "sha256:b2b681372d9d577dd6fb4cc0d9648e06ce456c9f510baf7d9aefeb2a6a1cdedc",
+      "mobile": {
+        "src": "/images/articles/who-owns-nss-taski-solenis/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 36906,
+        "outputHash": "sha256:d47098555ae5f5beb4f93c0cf1e7a0eb5d293b6108bf48f4b9b7f4eb3b155cb4"
+      }
+    },
+    "/images/articles/who-owns-nss-taski-solenis/02-nss-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 34956,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:c9797696e4f7997562985fe4c57bca9fe9180cf47abac24eca959e160f0c1d57",
+      "outputHash": "sha256:85b7cbc2bfed47509a6152de3a3dd9d208611c7386711e2453116faf797fa2a8",
+      "mobile": {
+        "src": "/images/articles/who-owns-nss-taski-solenis/02-nss-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13278,
+        "outputHash": "sha256:d00bf1a7f7618e5eaa9838cec63cfe15b31f0a8d317f706e49895f6344d99331"
+      }
+    },
+    "/images/articles/who-owns-oertzen-hako-possehl/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 111676,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4c0f588399b58633313bccabd00d89a22e146cf3f2efa00fd83661ddc4d1a33f",
+      "outputHash": "sha256:ecad55fba535a656b786160d9a68b3e1203a9aa4300ac5c2ab615242189c5411",
+      "mobile": {
+        "src": "/images/articles/who-owns-oertzen-hako-possehl/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43156,
+        "outputHash": "sha256:68a48b5c74dbb539164aeda1f499a4bd63b8d63f090d02465b29d1ffda472bc3"
+      }
+    },
+    "/images/articles/who-owns-oertzen-hako-possehl/02-oertzen-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33830,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:6cf1ea40aaf638e4b592672b917ad05851456a49016b8712000d9336d27daddf",
+      "outputHash": "sha256:7f3b539b44014ca0336483c2d209f4ac8a088971a595fa2697963698e98b637f",
+      "mobile": {
+        "src": "/images/articles/who-owns-oertzen-hako-possehl/02-oertzen-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12974,
+        "outputHash": "sha256:d8110953e12b4ec85ea19e455eadb75e1eab803efc5a4d12e07663cf7061b680"
       }
     },
     "/images/articles/who-owns-panasonic-appliances-vacuum-manufacturing/01-cover.webp": {
@@ -25661,6 +26849,42 @@
         "outputHash": "sha256:5852508010785c9c14a307b9d00a8270ce25dd1f0ca5fa7b727c82c6c45c97e3"
       }
     },
+    "/images/articles/who-owns-pentair-pool-brands/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31722,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:57744b5aace2f23ac1df690474ad72c5c5b27103a3cd6e63dadf85bdb7fc0af0",
+      "outputHash": "sha256:7e6c66016878d6f067e12ddf7c459bafe58460c42cb6459e19fcca1b4b788a74",
+      "mobile": {
+        "src": "/images/articles/who-owns-pentair-pool-brands/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13312,
+        "outputHash": "sha256:e3f1bafcfe1dec33099ad263afce9d3684c5afbc1cfa17f6be195c9cb5bfa0d2"
+      }
+    },
+    "/images/articles/who-owns-pentair-pool-brands/02-pentair-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40366,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7ad14009cfabb6fdbad02ee3b0c55e067563847ff8300224422be45b93d1ff4f",
+      "outputHash": "sha256:dd5066c2e90a08505da5c7b1307b7da471fd16a1d9cafc0e55cb3ab1d8a6c926",
+      "mobile": {
+        "src": "/images/articles/who-owns-pentair-pool-brands/02-pentair-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15456,
+        "outputHash": "sha256:636c36a243f44a337323b13306408a777b24dd89b7602a702b93709b17ee1bb5"
+      }
+    },
     "/images/articles/who-owns-polaris-pool-cleaners-fluidra-zodiac/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25695,6 +26919,114 @@
         "height": 450,
         "bytes": 69030,
         "outputHash": "sha256:026b2b4a30f8eb8357698bbf5e59e0146f0ed11fce31ab502be374da7b49c8e1"
+      }
+    },
+    "/images/articles/who-owns-powerboss-minuteman-hako/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61856,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:fa3f9f73e86b48ac3cc14005cde148d40a33ca56a799615739fa35da4e1a5b8b",
+      "outputHash": "sha256:3b5e003fe64ca8afbee195c85d8ec5e13db27ea5db978fd72ded444a01b3b86e",
+      "mobile": {
+        "src": "/images/articles/who-owns-powerboss-minuteman-hako/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26384,
+        "outputHash": "sha256:5db79dd625e602988b31d7175b77ea8097bd40b535f092387d3f3c73adc9f22d"
+      }
+    },
+    "/images/articles/who-owns-powerboss-minuteman-hako/02-powerboss-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35270,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:d0b3b73cc325dc39e3e1bfac3261c49d9c55e6d726a1d0576b00bc98ea1404b8",
+      "outputHash": "sha256:04c764ece1d6ab85362013768dd9ce947daf75e082c126dc84dfeb06d281eaba",
+      "mobile": {
+        "src": "/images/articles/who-owns-powerboss-minuteman-hako/02-powerboss-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13646,
+        "outputHash": "sha256:4ac1fd3fc6e60d48a6f48196e50ebfe76d5b9aee8114819c67f757764b4cff2e"
+      }
+    },
+    "/images/articles/who-owns-pudu-robotics/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 53986,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e6010492e5074f9ace72d9f169a710fceeb268ab3ca4b0e2dbfa99870b6e7625",
+      "outputHash": "sha256:05f5b073dd9adb07aabbc2e4acbfcf8ed72c2808ca83bee57dbc1ad4281f65f1",
+      "mobile": {
+        "src": "/images/articles/who-owns-pudu-robotics/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 22962,
+        "outputHash": "sha256:066dd007601ecb9b6ad214e3646f1309058f5e192f1c2b035e81eeec0975110c"
+      }
+    },
+    "/images/articles/who-owns-pudu-robotics/02-pudu-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 41808,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:46b625408a24a9f3ea067c0fb312fe1aa0b83341d7ead39cd4eea648d829cefc",
+      "outputHash": "sha256:73630cc53ac643279b3d60dc9b94409790a278b56a9546433ab0257d8d2d95c4",
+      "mobile": {
+        "src": "/images/articles/who-owns-pudu-robotics/02-pudu-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16618,
+        "outputHash": "sha256:c62078e1e687d4dbe91538948b1292325552cad33b679464ce9767c8c4d021c5"
+      }
+    },
+    "/images/articles/who-owns-rcm-raimondi-family/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 200930,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2a9626917a8c032733a27b12f7533683af24b9cdb0467cc5037d920412ed211a",
+      "outputHash": "sha256:03011b59d286acba8687eb7ad5283a7108152e138ad186c255ddb5dbf07869a0",
+      "mobile": {
+        "src": "/images/articles/who-owns-rcm-raimondi-family/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 45728,
+        "outputHash": "sha256:362dda68f98cc45832121972f4e3c48002be46d44b29b206319029e5a97e204e"
+      }
+    },
+    "/images/articles/who-owns-rcm-raimondi-family/02-rcm-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 31402,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4aa6594455fc866f0a6656e76733060ba8a1713345b34ebe65ef86ce1a45ee9c",
+      "outputHash": "sha256:e8061887e1f05f9c6cace7518d1cb19d9bdeaaf8217c15156e498f2af95e8845",
+      "mobile": {
+        "src": "/images/articles/who-owns-rcm-raimondi-family/02-rcm-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12046,
+        "outputHash": "sha256:8428e6f06f04ad05340c6f3a0dbbb9787366646b9b34f3a53424c8e9314ad6cf"
       }
     },
     "/images/articles/who-owns-rowenta-groupe-seb-vacuums/01-cover.webp": {
@@ -25749,6 +27081,42 @@
         "height": 450,
         "bytes": 24498,
         "outputHash": "sha256:bfd56a719db8eb57bfe2d3a4983838bebc5fe8b7a7f98d0be0babe2e176ca473"
+      }
+    },
+    "/images/articles/who-owns-russell-hobbs-spectrum-brands/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42142,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:57cfc8a5edfc31d6477cef865e27dc914210a25c54f4eea4db958b6f0797c42f",
+      "outputHash": "sha256:51602f6bde5758dc9feabf2d665c981f3e6335d32eabf606ae5d4303ecf3e261",
+      "mobile": {
+        "src": "/images/articles/who-owns-russell-hobbs-spectrum-brands/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19740,
+        "outputHash": "sha256:37310bde1934648ab57f77b2c32aa6e6c011161419449116d29e18f143b1bd96"
+      }
+    },
+    "/images/articles/who-owns-russell-hobbs-spectrum-brands/02-russell-hobbs-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44338,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:bbb2e308111b6166ebb0d6470cbaa88a113492734490ef0ed31fcb5a79e6d78d",
+      "outputHash": "sha256:a00efd3dafd3cfca3b18182966f9333dea763843fef3ccc613bd83148ac832dd",
+      "mobile": {
+        "src": "/images/articles/who-owns-russell-hobbs-spectrum-brands/02-russell-hobbs-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17102,
+        "outputHash": "sha256:220d75e6de4918645d17043ca9b1b6d3febed8f84a41ca0bf06fc8f446734cc6"
       }
     },
     "/images/articles/who-owns-ryobi-tti-kyocera/01-cover.webp": {
@@ -25857,6 +27225,42 @@
         "height": 450,
         "bytes": 57582,
         "outputHash": "sha256:eb2b04d9dc8198486b522d73ef3b22580b688b74c79f02b26d84c2741ee3eba0"
+      }
+    },
+    "/images/articles/who-owns-sharp-foxconn-hon-hai/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 64658,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:740d37a034a18a81ee9346ac7318247824be510eeb3759cd65e65027c742bc9d",
+      "outputHash": "sha256:610da57769d290fc756203d7419bec4a1fff0b1d6654d354bc1e1fe18797e3f2",
+      "mobile": {
+        "src": "/images/articles/who-owns-sharp-foxconn-hon-hai/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 26636,
+        "outputHash": "sha256:2113b4a54cf760624a671f9f10f464b7bc5c272668f4a7be5e81b1c25d29e932"
+      }
+    },
+    "/images/articles/who-owns-sharp-foxconn-hon-hai/02-sharp-appliances-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36382,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7779ee66ce54f9d6cb777fa6c9b8e51da092080fae27c7fe38e7ebd87adcf93d",
+      "outputHash": "sha256:102213ac7c20d0e164154155908a74266b27fad3ba734be7acdc44c1a1250b9c",
+      "mobile": {
+        "src": "/images/articles/who-owns-sharp-foxconn-hon-hai/02-sharp-appliances-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14448,
+        "outputHash": "sha256:d755cf776806eeb44d3e76a1eddb68eb2f2847dce489485d852c80e9e800371a"
       }
     },
     "/images/articles/who-owns-skil-tools-chervon/01-cover.webp": {
@@ -26003,6 +27407,42 @@
         "outputHash": "sha256:396a6be0f37327c700c7f99e66a388fd5419b4e626b4b86457a38ec6722f78db"
       }
     },
+    "/images/articles/who-owns-taski-solenis-diversey/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35482,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9e208ec6588bed8c78018787fda3e678c13baa23a32943802dcae16b808ee011",
+      "outputHash": "sha256:3d9a14bf7747d6677555cb8336e3b05b5f4626adcec7479a2592c0b09f201d37",
+      "mobile": {
+        "src": "/images/articles/who-owns-taski-solenis-diversey/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15888,
+        "outputHash": "sha256:6f59cc5bceb4e274553e4c06f4c266df145b5fe95deec250e7d285b30c089b29"
+      }
+    },
+    "/images/articles/who-owns-taski-solenis-diversey/02-taski-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33174,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:151aea4401898ad835c348ad8c81f9a8daea974ce04ee7baffbb265b0ffae137",
+      "outputHash": "sha256:7b25ca9cf20e691f55ac6974b91f991716826ab94864324dda24ffbd37318f0a",
+      "mobile": {
+        "src": "/images/articles/who-owns-taski-solenis-diversey/02-taski-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12338,
+        "outputHash": "sha256:e97203b9d125ce9353e566c26999df455f49c0a4a6768eda5aeac33b63d48c42"
+      }
+    },
     "/images/articles/who-owns-teka-appliances-midea/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -26057,6 +27497,42 @@
         "outputHash": "sha256:0d96eba63ce3fa26deeaa09555d457dad7d94764f8acfdcad00f88c18fdc0586"
       }
     },
+    "/images/articles/who-owns-tennant-company-ipc-robotics/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33276,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8fbe064ef09500081689da5c583046648b4683f8d9c9e5410bc34d884dfa7b3d",
+      "outputHash": "sha256:a55e8b74cff0ee0d88f8d5dd655a01367a1e547a35ae9376b9da1ea6e2ddc093",
+      "mobile": {
+        "src": "/images/articles/who-owns-tennant-company-ipc-robotics/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15394,
+        "outputHash": "sha256:0b9e883f8c258fcd6b94e387369fa8a3adeefdf84168fe017aa73f952c48f5ae"
+      }
+    },
+    "/images/articles/who-owns-tennant-company-ipc-robotics/02-tennant-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35934,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:083c1fa463bf3a8332732e529657bd58feb47e5486135366433f46d9f853e305",
+      "outputHash": "sha256:1233811a3c9171bdfb2eebb8949335e3ad5516a718d6a3f903e8ce5d75fc8716",
+      "mobile": {
+        "src": "/images/articles/who-owns-tennant-company-ipc-robotics/02-tennant-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13844,
+        "outputHash": "sha256:efee56ab39cde53eeddbd110f8a8a981c083c8c4b074d22398fdb1dc9af90cf0"
+      }
+    },
     "/images/articles/who-owns-tineco-ecovacs-group/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -26091,6 +27567,42 @@
         "height": 450,
         "bytes": 53970,
         "outputHash": "sha256:0d0a2b390983d7add9b7644f7090ea5156ec5e66ff96daf8fdaee63317d5faed"
+      }
+    },
+    "/images/articles/who-owns-tornado-floor-care-tacony/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38724,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:2a13a748adc7290fc071c4995eb4acc9d27d7d79a747ff870596559110906e95",
+      "outputHash": "sha256:1ce33f8142c0c5cf46b95c3d6ab7b8016d316d422010a1170ab6b41f7c8ad95b",
+      "mobile": {
+        "src": "/images/articles/who-owns-tornado-floor-care-tacony/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16816,
+        "outputHash": "sha256:23df0ab86431fe2bb3e2d7eee24165fb9a01f9e936695788f5f8704949206848"
+      }
+    },
+    "/images/articles/who-owns-tornado-floor-care-tacony/02-tornado-industries-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36912,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:90c01b4e0c35f7c6b9775261d63eb040e325107dabf133b7b88b86aceae8b948",
+      "outputHash": "sha256:5ded251aa8317038d1a415eff137a5822ddcd7920a608e504375cafb08acbcb3",
+      "mobile": {
+        "src": "/images/articles/who-owns-tornado-floor-care-tacony/02-tornado-industries-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14188,
+        "outputHash": "sha256:2b27d17f82803987eaad7dc8118c24a4e2aa23bcaa71b68d97544c3ad763bb4e"
       }
     },
     "/images/articles/who-owns-toshiba-appliances-midea-lifestyle/01-cover.webp": {
@@ -26147,6 +27659,42 @@
         "outputHash": "sha256:e0b40ef99c4e5d2f88367dbf6696b605a360387393361561ab2e00794176fd75"
       }
     },
+    "/images/articles/who-owns-truvox-tacony/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61874,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:4bce1429dbbd1bb044b0040a36c1da8fe09caf97d5763654201071fbe63f415b",
+      "outputHash": "sha256:723a274b2bf73c7647738b0f9029c52fbaaafccce24ef1a554a7ce162760c8a2",
+      "mobile": {
+        "src": "/images/articles/who-owns-truvox-tacony/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 25746,
+        "outputHash": "sha256:7d4389a21d72d0fcc834877d27dc837463f26f6badac55c02977afe5b3f9abaa"
+      }
+    },
+    "/images/articles/who-owns-truvox-tacony/02-truvox-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 38220,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:e3d3dfb0a8a43cee8ea4b23cc17148210e669d4459ad5da3be7a6d603831b734",
+      "outputHash": "sha256:0041ae7ea349706eed8d2523e8dc2813420db8a59bd2d4816f531436ad3e511e",
+      "mobile": {
+        "src": "/images/articles/who-owns-truvox-tacony/02-truvox-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 14708,
+        "outputHash": "sha256:85c80e45e1098c787a1fb7bab4660b10c637a8cf98fd91c24fabe63aea83d3f0"
+      }
+    },
     "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -26181,6 +27729,78 @@
         "height": 450,
         "bytes": 50164,
         "outputHash": "sha256:acb335e717737be418ad28bd70ae04cec8759396a7fc81e9662d048f3c82b1b9"
+      }
+    },
+    "/images/articles/who-owns-vestel-zorlu-holding/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35842,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8e8b1f65482555527aac96935e0de088c0e3153880db0df07f96a534366dd49d",
+      "outputHash": "sha256:e6b38fdbbf8e3acf0b843fef0f023cb6e872690e3ba1b9555ae324faaa9035b0",
+      "mobile": {
+        "src": "/images/articles/who-owns-vestel-zorlu-holding/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15408,
+        "outputHash": "sha256:1db44d81ead882737e1e0c504bb555838a24b18bdec0a92bf89b442a1c1452f8"
+      }
+    },
+    "/images/articles/who-owns-vestel-zorlu-holding/02-vestel-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 33904,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1ca72cffd0144c0704d423b078473d02914eb0f1a13967188451a16fffd4b980",
+      "outputHash": "sha256:5bc2c7da83b701f1297e3ad22bb1ff15853dfb308c7f45a612ade817ccd2d18b",
+      "mobile": {
+        "src": "/images/articles/who-owns-vestel-zorlu-holding/02-vestel-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13194,
+        "outputHash": "sha256:53fd9426c4f230446075104ffefa6a40bc0e9f6fedb592908c0b78bfd219f970"
+      }
+    },
+    "/images/articles/who-owns-wetrok-diethelm-keller/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 156394,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3fc14ef78c305fe626d7da193b99ebc2fa25901fb3420747db3b12eac9a8ef72",
+      "outputHash": "sha256:75d50391da9643afa78edf41c1e26df6146df0a17d41def0afdda8621fba59ea",
+      "mobile": {
+        "src": "/images/articles/who-owns-wetrok-diethelm-keller/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 50156,
+        "outputHash": "sha256:c4e9db7ea8b8a9a4f0cc1373ff4ce0d91d5b9b8087db71f8196c97e200e9f250"
+      }
+    },
+    "/images/articles/who-owns-wetrok-diethelm-keller/02-wetrok-ownership-structure.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 36626,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:25c2af8cace7c3ea3f41361c5f59769c6c1be2d88ef7627bf1da29f5f308f9ee",
+      "outputHash": "sha256:b8c177dd2b4dec6fc766d89083da45f482d19b1ba62c84883639bde2a3d7d260",
+      "mobile": {
+        "src": "/images/articles/who-owns-wetrok-diethelm-keller/02-wetrok-ownership-structure-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13896,
+        "outputHash": "sha256:1c93d5e7b5a30f7f5120a11bdcb386b92301d1997335c9028711da6a8bcf2aa3"
       }
     },
     "/images/articles/who-owns-whirlpool-appliances-beko-europe/01-cover.webp": {
@@ -32898,141 +34518,6 @@
         "outputHash": "sha256:0f2708c60f70e0eaf77cc84f2d1f21f4a294c5b5a083b193c93dfeddd416950d"
       }
     },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 679,
-      "height": 561,
-      "bytes": 42349,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:13df45b03c79988598c8b83297c29865a7be741ada5289573e58a41a4db60baa",
-      "outputHash": "sha256:fa06adcd5d871cee030fcbc856fb2ca44dd5367f47325ee3b9cb72f5452a98f8"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-001.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 679,
-      "height": 561,
-      "bytes": 42349,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:13df45b03c79988598c8b83297c29865a7be741ada5289573e58a41a4db60baa",
-      "outputHash": "sha256:fa06adcd5d871cee030fcbc856fb2ca44dd5367f47325ee3b9cb72f5452a98f8"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 685,
-      "height": 443,
-      "bytes": 29667,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:ef1074712bc3059b890a5df655a99dc2cb741513a6836bac233d2a455f6a5769",
-      "outputHash": "sha256:b57ca0db4060c13d4625204d6cb8f32c3bf1a86da4f51d6eb1bf212f69a443e9"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 709,
-      "height": 471,
-      "bytes": 35937,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:19f708cd003f02b9f362f3a36c7e87a1b03d4bdee55bb087771a94b6b7fd0539",
-      "outputHash": "sha256:4e835a6aa15242df076af00689b4b24c451ff2e5df4a5047948ae37bf504648d"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1044,
-      "height": 426,
-      "bytes": 59055,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:283c124e48acee7ef1ba004b3d82d96bbdf2381bae09ca82f683761ca5722e15",
-      "outputHash": "sha256:623f9077acf1909ca5d84ff4aaccc7b8418d98d14c287fb07047d940d65ad42e",
-      "mobile": {
-        "src": "/images/insights/best-robot-vacuum-buying-guide-2022-image-004-800.webp",
-        "width": 800,
-        "height": 326,
-        "bytes": 27370,
-        "outputHash": "sha256:cca85b4ba85618690f07390241bf0f994a20ab3fd69270d43815f2adde3eea6f"
-      }
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-005.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1044,
-      "height": 496,
-      "bytes": 54185,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:90411178d90f71e28968e692163ef318623e4530acf2bc3f2533717371dbfb21",
-      "outputHash": "sha256:1859804358cb5e9ce3deeccf5ae2876aae711255fb187918e94a905d30e2d9b7",
-      "mobile": {
-        "src": "/images/insights/best-robot-vacuum-buying-guide-2022-image-005-800.webp",
-        "width": 800,
-        "height": 380,
-        "bytes": 23358,
-        "outputHash": "sha256:b18ef5ae8db22e54cf127f342ed4f3e2b711a6790c6460f47d97318487b12175"
-      }
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-006.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 678,
-      "height": 416,
-      "bytes": 28422,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2e22bd86cca2ed55f33812a7f327cc1020deea9dc382f1423242c2fe835e5fa4",
-      "outputHash": "sha256:9f32b27ddd0f1d1fa64eb27ed44771f528a525dc416f2bc9f3805c169183927a"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-007.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 399,
-      "height": 406,
-      "bytes": 20385,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:aa583866bd6acb798312ac536e7f6a4bb60c925e49e316ebc654a80489ac3c22",
-      "outputHash": "sha256:06034c6b2025c6269367e39c4106fcff022ed4b04c08dde7e91b090d39f2ad6d"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-008.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 706,
-      "height": 441,
-      "bytes": 22108,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2ebf22efe1a706bae0cfa92bbf6fe773cdb764cae5e6a7d9cb62f54532eddc36",
-      "outputHash": "sha256:dc62ef11fd54aecdf8011543423f15ffd4ddb4fc99b51c7db0cc521695f47fae"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-009.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 725,
-      "height": 582,
-      "bytes": 28155,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:909735f7c301ad9ae6c881c5f8b4e4edcdcc0954840e6815a6c85d4a9e617bf6",
-      "outputHash": "sha256:c3469c7851d6e9d85f1a2224a22f8802f784ce51bb1ed328417759acff491b1c"
-    },
-    "/images/insights/best-robot-vacuum-buying-guide-2022-image-010.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 685,
-      "height": 436,
-      "bytes": 34021,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:093cfd30ad53fae3b733846a91b1fc99d1c2c22325e2762c09be8d0fc030cfd5",
-      "outputHash": "sha256:a1e962c40e1a2412efd6925bb73f6765c49e789e71bb50911534dc333848241c"
-    },
     "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-001.png": {
       "role": "cover",
       "kind": "photo",
@@ -34822,96 +36307,6 @@
         "height": 296,
         "bytes": 23750,
         "outputHash": "sha256:d0a8ce6fc1911b82ba8c9650f6ddbbf21d43629fe4a63ef75d02b11bad0de195"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-cover.jpg": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 42575,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6cfd0277a0e27bd1693baed9a3be01a5e24d8393b395402cf608e433c75e42d4",
-      "outputHash": "sha256:c6b10c20820b41ea484c7c2a8c651efc81760f6ea005ff50a66c3e8179756bb9",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 10592,
-        "outputHash": "sha256:e7713b5c5fed797281f3aa1f2b60c73b6c961fcd11e8abf3f193d9c8273b74ac"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-image-001.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 42575,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:6cfd0277a0e27bd1693baed9a3be01a5e24d8393b395402cf608e433c75e42d4",
-      "outputHash": "sha256:c6b10c20820b41ea484c7c2a8c651efc81760f6ea005ff50a66c3e8179756bb9",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-image-001-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 10592,
-        "outputHash": "sha256:e7713b5c5fed797281f3aa1f2b60c73b6c961fcd11e8abf3f193d9c8273b74ac"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-image-002.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 22887,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:2b9a2be64db7fb17adb0cf783c8d300944753d5f30e0a43b2007a703749099c7",
-      "outputHash": "sha256:63e360389b60180ac64f50a6cfad9b870cd43ecbb654bfd395d7ad4a0bc9be23",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-image-002-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 5764,
-        "outputHash": "sha256:b190a5592f0ff7ad4fe0dd6cac4581e19960dca83d9dd40347458b0ac18a61d5"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-image-003.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 22165,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:72e9bfb733390c55b47e5df4e8003d9fa4237fa78d9abb940e5368c9aad2c3e5",
-      "outputHash": "sha256:35c47ff8d65c2b6d876a95481815fd77d4ce5d04c6eee1173254bb80a74b8010",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-image-003-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 5870,
-        "outputHash": "sha256:38ee44007ceabc76e0bcaf56011097770439d8e13ed430e2221b2129454dd628"
-      }
-    },
-    "/images/insights/hard-floor-washer-buying-guide-2022-image-004.jpg": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 49293,
-      "format": "jpeg",
-      "quality": 84,
-      "sourceHash": "sha256:95eef466c9b4fc1c5f38fc6a3e5f1c395ce94ebd3aa32774bb037a75155cce48",
-      "outputHash": "sha256:3b8afeb513d0b90b2dd29a91eacd7c19339a6305df5efdd866cae89096d6b14b",
-      "mobile": {
-        "src": "/images/insights/hard-floor-washer-buying-guide-2022-image-004-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 12632,
-        "outputHash": "sha256:d6e9a2601c60c5237eae93e741bea476f5fd7fabf864a7fb0edb56d78b9ea13d"
       }
     },
     "/images/insights/hard-floor-washers-have-no-profit-cover.jpg": {
@@ -39708,20 +41103,11 @@
       "cover": "/images/articles/beatbot-vs-polaris-robotic-pool-cleaners/01-cover.webp",
       "body": []
     },
-    "best-robot-vacuum-buying-guide-2022": {
+    "beatbot-vs-wybot-pool-cleaners": {
       "budgetClass": "standard",
-      "cover": "/images/insights/best-robot-vacuum-buying-guide-2022-cover.jpg",
+      "cover": "/images/articles/beatbot-vs-wybot-pool-cleaners/01-cover.webp",
       "body": [
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-002.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-003.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-006.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-001.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-004.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-005.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-007.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-008.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-009.jpg",
-        "/images/insights/best-robot-vacuum-buying-guide-2022-image-010.jpg"
+        "/images/articles/beatbot-vs-wybot-pool-cleaners/02-verdict.webp"
       ]
     },
     "bissell-barkbath-pet-vacuum-cleaner": {
@@ -40221,6 +41607,13 @@
         "/images/blog/floor-scrubber-specs-to-field-test.webp"
       ]
     },
+    "commercial-robot-mower-service-contract": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/commercial-robot-mower-service-contract/01-cover.webp",
+      "body": [
+        "/images/articles/commercial-robot-mower-service-contract/02-contract-checklist.webp"
+      ]
+    },
     "commercial-robot-mower-supplier-evaluation": {
       "budgetClass": "standard",
       "cover": "/images/blog/commercial-robot-mower-supplier-evaluation.webp",
@@ -40576,6 +41969,13 @@
       "cover": "/images/articles/dreame-t16-pro-heat/01-cover.webp",
       "body": []
     },
+    "dreame-t16-pro-heat-vs-tineco-floor-one-s9-master": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/01-cover.webp",
+      "body": [
+        "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/02-verdict.webp"
+      ]
+    },
     "dreame-t16-pro-steam": {
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-t16-pro-steam/01-cover.webp",
@@ -40597,6 +41997,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone/01-cover.webp",
       "body": []
+    },
+    "dreame-x60-ultra-vs-narwal-flow-2": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/01-cover.webp",
+      "body": [
+        "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/02-verdict.webp"
+      ]
     },
     "dreame-z30-pro-aqua-a": {
       "budgetClass": "standard",
@@ -40764,6 +42171,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-r3-nurovi-spot-scrub-uv/01-cover.webp",
       "body": []
+    },
+    "dyson-r3-spot-scrub-vs-roborock-saros-20": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/01-cover.webp",
+      "body": [
+        "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/02-verdict.webp"
+      ]
     },
     "dyson-v10-konical": {
       "budgetClass": "standard",
@@ -40975,6 +42389,13 @@
         "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/05-triform-three-forms.webp"
       ]
     },
+    "ego-vs-greenworks-battery-outdoor-tools": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/01-cover.webp",
+      "body": [
+        "/images/articles/ego-vs-greenworks-battery-outdoor-tools/02-verdict.webp"
+      ]
+    },
     "eu-battery-rules-smartphones-power-tools": {
       "budgetClass": "standard",
       "cover": "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp",
@@ -41009,6 +42430,13 @@
       "cover": "/images/articles/eufy-omni-s2/01-cover.webp",
       "body": [
         "/images/articles/eufy-omni-s2/02-dust-bag-access.webp"
+      ]
+    },
+    "eufy-omni-s2-vs-roborock-saros-20-flow": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover.webp",
+      "body": [
+        "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/02-verdict.webp"
       ]
     },
     "eureka-floorshine-830": {
@@ -41231,6 +42659,13 @@
       "cover": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
       "body": []
     },
+    "gausium-vs-pudu-cleaning-robots": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover.webp",
+      "body": [
+        "/images/articles/gausium-vs-pudu-cleaning-robots/02-verdict.webp"
+      ]
+    },
     "german-vacuum-brands-in-the-cordless-wave": {
       "budgetClass": "standard",
       "cover": "/images/articles/german-vacuum-brands-in-the-cordless-wave/01-cover.webp",
@@ -41354,14 +42789,11 @@
         "/images/articles/hamilton-beach-2018-annual-report-faithful-translation/22-hamilton-beach-2018-annual-report-faithful-translation-image-22.webp"
       ]
     },
-    "hard-floor-washer-buying-guide-2022": {
+    "hard-floor-washer-buying-guide": {
       "budgetClass": "standard",
-      "cover": "/images/insights/hard-floor-washer-buying-guide-2022-cover.jpg",
+      "cover": "/images/articles/hard-floor-washer-buying-guide/01-cover.webp",
       "body": [
-        "/images/insights/hard-floor-washer-buying-guide-2022-image-001.jpg",
-        "/images/insights/hard-floor-washer-buying-guide-2022-image-002.jpg",
-        "/images/insights/hard-floor-washer-buying-guide-2022-image-003.jpg",
-        "/images/insights/hard-floor-washer-buying-guide-2022-image-004.jpg"
+        "/images/articles/hard-floor-washer-buying-guide/02-floor-washer-decision-chart.webp"
       ]
     },
     "hard-floor-washer-market-brands-oem-opportunities": {
@@ -41807,6 +43239,13 @@
       "cover": "/images/articles/is-dreame-owned-by-xiaomi/01-cover.webp",
       "body": [
         "/images/articles/is-dreame-owned-by-xiaomi/02-dreame-xiaomi-mova-relationship-map.webp"
+      ]
+    },
+    "is-dyson-publicly-traded-stock": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/is-dyson-publicly-traded-stock/01-cover.webp",
+      "body": [
+        "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership.webp"
       ]
     },
     "is-kingclean-mojie-a-good-product": {
@@ -42695,6 +44134,13 @@
       "cover": "/images/articles/roborock-saros-20-flow/01-cover.webp",
       "body": []
     },
+    "roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/01-cover.webp",
+      "body": [
+        "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/02-verdict.webp"
+      ]
+    },
     "roborock-saros-20-sonic": {
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-saros-20-sonic/01-cover.webp",
@@ -42846,6 +44292,13 @@
       "body": [
         "/images/articles/robot-vacuum-brush-not-spinning/02-brush-not-spinning-checks.png",
         "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary.png"
+      ]
+    },
+    "robot-vacuum-buying-guide": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/robot-vacuum-buying-guide/01-cover.webp",
+      "body": [
+        "/images/articles/robot-vacuum-buying-guide/02-robot-vacuum-decision-chart.webp"
       ]
     },
     "robot-vacuum-ceiling-question": {
@@ -43367,6 +44820,13 @@
       "cover": "/images/articles/shark-vs-dyson-cordless-vacuums/01-cover.webp",
       "body": []
     },
+    "shark-vs-roomba-robot-vacuums": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-vs-roomba-robot-vacuums/01-cover.webp",
+      "body": [
+        "/images/articles/shark-vs-roomba-robot-vacuums/02-verdict.webp"
+      ]
+    },
     "sharkninja-hit-product-pipeline": {
       "budgetClass": "standard",
       "cover": "/images/articles/sharkninja-hit-product-pipeline/01-cover.webp",
@@ -43435,6 +44895,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp",
       "body": []
+    },
+    "spot-cleaner-battle-bissell-shark-hoover": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/01-cover.webp",
+      "body": [
+        "/images/articles/spot-cleaner-battle-bissell-shark-hoover/02-spot-cleaner-timeline.webp"
+      ]
     },
     "spot-cleaner-manufacturing-cost": {
       "budgetClass": "standard",
@@ -43545,6 +45012,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
       "body": []
+    },
+    "tennant-vs-nilfisk-floor-scrubbers": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover.webp",
+      "body": [
+        "/images/articles/tennant-vs-nilfisk-floor-scrubbers/02-verdict.webp"
+      ]
     },
     "the-counterattack-of-chyson-vacuum-brands": {
       "budgetClass": "standard",
@@ -44260,6 +45734,27 @@
         "/images/articles/who-owns-chervon-ego-flex-skil/03-chervon-manufacturing-network-map.webp"
       ]
     },
+    "who-owns-clarke-nilfisk-freudenberg": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-clarke-nilfisk-freudenberg/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-clarke-nilfisk-freudenberg/02-clarke-ownership-structure.webp"
+      ]
+    },
+    "who-owns-cleanfix-swiss-family-company": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-cleanfix-swiss-family-company/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-cleanfix-swiss-family-company/02-cleanfix-ownership-structure.webp"
+      ]
+    },
+    "who-owns-columbus-staehle-family": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-columbus-staehle-family/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-columbus-staehle-family/02-columbus-ownership-structure.webp"
+      ]
+    },
     "who-owns-craftsman-tools-stanley-black-decker": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-craftsman-tools-stanley-black-decker/01-cover.webp",
@@ -44282,11 +45777,25 @@
         "/images/articles/who-owns-dewalt-stanley-black-decker/02-dewalt-product-responsibility-map.webp"
       ]
     },
+    "who-owns-dji-romo-robot-vacuum": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-dji-romo-robot-vacuum/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-dji-romo-robot-vacuum/02-dji-romo-ownership-structure.webp"
+      ]
+    },
     "who-owns-dremel-bosch-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-dremel-bosch-manufacturing/01-cover.webp",
       "body": [
         "/images/articles/who-owns-dremel-bosch-manufacturing/02-dremel-bosch-business-map.webp"
+      ]
+    },
+    "who-owns-dulevo-fayat-group": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-dulevo-fayat-group/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-dulevo-fayat-group/02-dulevo-ownership-structure.webp"
       ]
     },
     "who-owns-dyson-james-dyson-singapore-manufacturing": {
@@ -44350,6 +45859,13 @@
         "/images/blog/evolution-manufacturing-cutting-map.svg"
       ]
     },
+    "who-owns-factory-cat-rps-corporation": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-factory-cat-rps-corporation/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-factory-cat-rps-corporation/02-factory-cat-ownership-structure.webp"
+      ]
+    },
     "who-owns-fein-tools-company-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/blog/fein-family-manufacturing-cover.webp",
@@ -44363,6 +45879,20 @@
       "cover": "/images/articles/who-owns-festool-tts-tooltechnic-systems/01-cover.webp",
       "body": [
         "/images/articles/who-owns-festool-tts-tooltechnic-systems/02-festool-ownership-system-map.webp"
+      ]
+    },
+    "who-owns-fimap-comac-group": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-fimap-comac-group/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-fimap-comac-group/02-fimap-comac-ownership-structure.webp"
+      ]
+    },
+    "who-owns-fiorentini-cleaning-machines": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-fiorentini-cleaning-machines/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-fiorentini-cleaning-machines/02-fiorentini-ownership-structure.webp"
       ]
     },
     "who-owns-fisher-paykel-haier-manufacturing": {
@@ -44396,12 +45926,26 @@
         "/images/articles/who-owns-gardena-husqvarna-sileno-manufacturing/03-gardena-product-verification-map.webp"
       ]
     },
+    "who-owns-gausium": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-gausium/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-gausium/02-gausium-ownership-structure.webp"
+      ]
+    },
     "who-owns-ge-appliances-haier-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/blog/ge-appliances-haier-manufacturing-cover.webp",
       "body": [
         "/images/blog/ge-appliances-ownership-brand-map.svg",
         "/images/blog/ge-appliances-manufacturing-verification-map.svg"
+      ]
+    },
+    "who-owns-ghibli-riello-cleaning-machines": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-ghibli-riello-cleaning-machines/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-ghibli-riello-cleaning-machines/02-ghibli-ownership-structure.webp"
       ]
     },
     "who-owns-gorenje-appliances-hisense": {
@@ -44433,6 +45977,13 @@
       "body": [
         "/images/blog/haier-smart-home-brand-portfolio-map.svg",
         "/images/blog/haier-regional-ownership-verification-map.svg"
+      ]
+    },
+    "who-owns-hako-possehl-group": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-hako-possehl-group/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-hako-possehl-group/02-hako-ownership-structure.webp"
       ]
     },
     "who-owns-hamilton-beach-brands-sourcing": {
@@ -44487,6 +46038,13 @@
         "/images/articles/who-owns-husqvarna-automower-motorcycles/02-husqvarna-automower-manufacturing-region-checklist.webp"
       ]
     },
+    "who-owns-ipc-tennant": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-ipc-tennant/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-ipc-tennant/02-ipc-ownership-structure.webp"
+      ]
+    },
     "who-owns-irobot-roomba-picea-robotics": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-irobot-roomba-picea-robotics/01-cover.webp",
@@ -44508,12 +46066,33 @@
         "/images/blog/kress-ownership-system-map.svg"
       ]
     },
+    "who-owns-lavor-comet-group": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-lavor-comet-group/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-lavor-comet-group/02-lavor-ownership-structure.webp"
+      ]
+    },
     "who-owns-lawnmaster-cleva-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-lawnmaster-cleva-manufacturing/01-cover.webp",
       "body": [
         "/images/articles/who-owns-lawnmaster-cleva-manufacturing/02-lawnmaster-cleva-ownership-map.webp",
         "/images/articles/who-owns-lawnmaster-cleva-manufacturing/03-lawnmaster-model-region-verification-map.webp"
+      ]
+    },
+    "who-owns-lindhaus-padua-family-business": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-lindhaus-padua-family-business/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-lindhaus-padua-family-business/02-lindhaus-ownership-structure.webp"
+      ]
+    },
+    "who-owns-lionsbot": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-lionsbot/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-lionsbot/02-lionsbot-ownership-structure.webp"
       ]
     },
     "who-owns-mac-tools-stanley-black-decker": {
@@ -44570,6 +46149,13 @@
       "cover": "/images/articles/who-owns-milwaukee-tools-tti-manufacturing/01-cover.webp",
       "body": []
     },
+    "who-owns-minuteman-hako-powerboss": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-minuteman-hako-powerboss/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-minuteman-hako-powerboss/02-minuteman-ownership-structure.webp"
+      ]
+    },
     "who-owns-narwal-yunjing-investors-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-narwal-yunjing-investors-manufacturing/01-cover.webp",
@@ -44585,12 +46171,33 @@
         "/images/blog/nilfisk-product-service-verification-map.svg"
       ]
     },
+    "who-owns-nss-taski-solenis": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-nss-taski-solenis/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-nss-taski-solenis/02-nss-ownership-structure.webp"
+      ]
+    },
+    "who-owns-oertzen-hako-possehl": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-oertzen-hako-possehl/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-oertzen-hako-possehl/02-oertzen-ownership-structure.webp"
+      ]
+    },
     "who-owns-panasonic-appliances-vacuum-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-panasonic-appliances-vacuum-manufacturing/01-cover.webp",
       "body": [
         "/images/articles/who-owns-panasonic-appliances-vacuum-manufacturing/02-panasonic-appliance-organization-map.webp",
         "/images/articles/who-owns-panasonic-appliances-vacuum-manufacturing/03-panasonic-model-verification-map.webp"
+      ]
+    },
+    "who-owns-pentair-pool-brands": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-pentair-pool-brands/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-pentair-pool-brands/02-pentair-ownership-structure.webp"
       ]
     },
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": {
@@ -44607,6 +46214,27 @@
         "/images/blog/porter-cable-ownership-position-map.svg"
       ]
     },
+    "who-owns-powerboss-minuteman-hako": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-powerboss-minuteman-hako/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-powerboss-minuteman-hako/02-powerboss-ownership-structure.webp"
+      ]
+    },
+    "who-owns-pudu-robotics": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-pudu-robotics/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-pudu-robotics/02-pudu-ownership-structure.webp"
+      ]
+    },
+    "who-owns-rcm-raimondi-family": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-rcm-raimondi-family/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-rcm-raimondi-family/02-rcm-ownership-structure.webp"
+      ]
+    },
     "who-owns-ridgid-wet-dry-vacuums-emerson": {
       "budgetClass": "standard",
       "cover": "/images/blog/who-owns-ridgid-wet-dry-vacuums-emerson.webp",
@@ -44618,6 +46246,13 @@
       "body": [
         "/images/articles/who-owns-rowenta-groupe-seb-vacuums/02-rowenta-ownership-operating-map.webp",
         "/images/articles/who-owns-rowenta-groupe-seb-vacuums/03-rowenta-vacuum-verification-map.webp"
+      ]
+    },
+    "who-owns-russell-hobbs-spectrum-brands": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-russell-hobbs-spectrum-brands/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-russell-hobbs-spectrum-brands/02-russell-hobbs-ownership-structure.webp"
       ]
     },
     "who-owns-ryobi-tti-kyocera": {
@@ -44639,6 +46274,13 @@
       "cover": "/images/articles/who-owns-sharkninja-js-global-joyoung/01-cover.webp",
       "body": [
         "/images/articles/who-owns-sharkninja-js-global-joyoung/02-sharkninja-js-global-joyoung-relationship-map.webp"
+      ]
+    },
+    "who-owns-sharp-foxconn-hon-hai": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-sharp-foxconn-hon-hai/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-sharp-foxconn-hon-hai/02-sharp-appliances-ownership-structure.webp"
       ]
     },
     "who-owns-shop-vac-greatstar-manufacturing": {
@@ -44677,6 +46319,13 @@
         "/images/articles/who-owns-supor-groupe-seb-manufacturing/03-supor-product-supply-verification-map.webp"
       ]
     },
+    "who-owns-taski-solenis-diversey": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-taski-solenis-diversey/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-taski-solenis-diversey/02-taski-ownership-structure.webp"
+      ]
+    },
     "who-owns-teka-appliances-midea": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-teka-appliances-midea/01-cover.webp",
@@ -44685,11 +46334,25 @@
         "/images/articles/who-owns-teka-appliances-midea/03-teka-product-verification-map.webp"
       ]
     },
+    "who-owns-tennant-company-ipc-robotics": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-tennant-company-ipc-robotics/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-tennant-company-ipc-robotics/02-tennant-ownership-structure.webp"
+      ]
+    },
     "who-owns-tineco-ecovacs-group": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-tineco-ecovacs-group/01-cover.webp",
       "body": [
         "/images/articles/who-owns-tineco-ecovacs-group/02-tineco-ecovacs-company-structure.webp"
+      ]
+    },
+    "who-owns-tornado-floor-care-tacony": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-tornado-floor-care-tacony/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-tornado-floor-care-tacony/02-tornado-industries-ownership-structure.webp"
       ]
     },
     "who-owns-toro-company-brands-manufacturing": {
@@ -44716,11 +46379,32 @@
         "/images/blog/triton-manufacturing-verification-map.svg"
       ]
     },
+    "who-owns-truvox-tacony": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-truvox-tacony/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-truvox-tacony/02-truvox-ownership-structure.webp"
+      ]
+    },
     "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck": {
       "budgetClass": "standard",
       "cover": "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/01-cover.webp",
       "body": [
         "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/02-tti-owned-licensed-regional-brands-map.webp"
+      ]
+    },
+    "who-owns-vestel-zorlu-holding": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-vestel-zorlu-holding/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-vestel-zorlu-holding/02-vestel-ownership-structure.webp"
+      ]
+    },
+    "who-owns-wetrok-diethelm-keller": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/who-owns-wetrok-diethelm-keller/01-cover.webp",
+      "body": [
+        "/images/articles/who-owns-wetrok-diethelm-keller/02-wetrok-ownership-structure.webp"
       ]
     },
     "who-owns-whirlpool-appliances-beko-europe": {
@@ -45476,6 +47160,20 @@
         }
       }
     },
+    "beatbot-vs-wybot-pool-cleaners": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-vs-wybot-pool-cleaners/01-cover.webp",
+          "hash": "sha256:95549ec00bebbcf27109524468a750a267d075eb05067f5380868fb94b47dbb4"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-vs-wybot-pool-cleaners/02-verdict.webp",
+          "hash": "sha256:498a5ddbf8003a833b94255313ddd12dccd645f5f5df1f773c64e37b1e067d29"
+        }
+      }
+    },
     "bissell-crosswave-edge-cordless-4328f": {
       "files": {
         "01-cover.png": {
@@ -46084,6 +47782,20 @@
           "status": "matched",
           "primary": "/images/articles/commercial-cleaning-robots-next/03-buyer-value.webp",
           "hash": "sha256:56ab2b99c25eb3b37dcc5945ccd68c4e13457ef13bf0403f37c5a41e88524553"
+        }
+      }
+    },
+    "commercial-robot-mower-service-contract": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-robot-mower-service-contract/01-cover.webp",
+          "hash": "sha256:acea990783501a046073c9cd5edba39befd518547bb7716d12d0cb05b8417f86"
+        },
+        "02-contract-checklist.png": {
+          "status": "matched",
+          "primary": "/images/articles/commercial-robot-mower-service-contract/02-contract-checklist.webp",
+          "hash": "sha256:31c25042d8a0b0aeafaf87bdf6e8ba5d41617cdee6453771d14ea95c75af0d95"
         }
       }
     },
@@ -46708,6 +48420,20 @@
         }
       }
     },
+    "dreame-t16-pro-heat-vs-tineco-floor-one-s9-master": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/01-cover.webp",
+          "hash": "sha256:3cdad206abb2ff8ad656de63eae34f7a2dbb5e1cc826de38e849d7b9d64605bc"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/02-verdict.webp",
+          "hash": "sha256:5e18d1438867076a38a91ad27a30225effb232f5a903b578787ac78a531dc132"
+        }
+      }
+    },
     "dreame-t16-pro-steam": {
       "files": {
         "01-cover.png": {
@@ -46746,6 +48472,20 @@
           "status": "matched",
           "primary": "/images/articles/dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone/01-cover.webp",
           "hash": "sha256:49aed41a27b5bd9d8a0385d3d0c4a9e85908ce567b73fdcd7a1ade7edc6bd2ff"
+        }
+      }
+    },
+    "dreame-x60-ultra-vs-narwal-flow-2": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/01-cover.webp",
+          "hash": "sha256:970b0d98a81e9efb17f0a9b7298e3756e074a00a7fd677888502d2129a1ff1e6"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/02-verdict.webp",
+          "hash": "sha256:3a8fcb3e917ac7df2aa76b4a97701b8fbbbc359126f4e451a2e8b5995c6e5cb9"
         }
       }
     },
@@ -47252,6 +48992,20 @@
         }
       }
     },
+    "dyson-r3-spot-scrub-vs-roborock-saros-20": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/01-cover.webp",
+          "hash": "sha256:7df7159796291bcda3deaba81e840676279647d10079e309a07b69bc68aec3d3"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/02-verdict.webp",
+          "hash": "sha256:b66651866674260195980c3942deff941f605b8eb06e37c6fb1bd90f1cd25727"
+        }
+      }
+    },
     "dyson-v10-konical": {
       "files": {
         "01-cover.png": {
@@ -47738,6 +49492,20 @@
         }
       }
     },
+    "ego-vs-greenworks-battery-outdoor-tools": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/01-cover.webp",
+          "hash": "sha256:8eef3af828679b33bf56e7a9747093529a9331f8d39d39bcae88a76d5df7f972"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/02-verdict.webp",
+          "hash": "sha256:f51bb77ca7468c20e5c92169d699d3b956835530c9524c41de6873ef1ed005bf"
+        }
+      }
+    },
     "eu-battery-rules-smartphones-power-tools": {
       "files": {
         "01-cover.png": {
@@ -47809,6 +49577,20 @@
           "status": "matched",
           "primary": "/images/articles/eufy-omni-s2/02-dust-bag-access.webp",
           "hash": "sha256:89c0303a186e85ffcd016e926f0fe849e0a4194e9fd53bcf10e89d1bc6338543"
+        }
+      }
+    },
+    "eufy-omni-s2-vs-roborock-saros-20-flow": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover.webp",
+          "hash": "sha256:9403b13ff8c78ac571484c8f6c11bbe6ad3010a831d006aa9d3d322b98628c27"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/02-verdict.webp",
+          "hash": "sha256:0bdbb202d9ad741f2a1c6a95130161ff095ab7fe400be12b63e214e3509bc2b3"
         }
       }
     },
@@ -48187,6 +49969,20 @@
           "status": "matched",
           "primary": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
           "hash": "sha256:c35f9a3cb4408aa727d7dec2c4eb58f75190cf0966035436cf12da32ae8a3440"
+        }
+      }
+    },
+    "gausium-vs-pudu-cleaning-robots": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover.webp",
+          "hash": "sha256:3911c178673362f035f5ce202f43002c2cd78647e0b1a86bc18bd2b28c66364b"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/gausium-vs-pudu-cleaning-robots/02-verdict.webp",
+          "hash": "sha256:131e171912c5e3731fbe1759bac5889d4864c22c0eb110e8ca946eb5bdd7fa0f"
         }
       }
     },
@@ -48676,6 +50472,20 @@
           "status": "matched",
           "primary": "/images/articles/hamilton-beach-2018-annual-report-faithful-translation/22-hamilton-beach-2018-annual-report-faithful-translation-image-22.webp",
           "hash": "sha256:c1a2a91579f3664201b081d96296d46636a6469dc107fc195630c0c0240c78e4"
+        }
+      }
+    },
+    "hard-floor-washer-buying-guide": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/hard-floor-washer-buying-guide/01-cover.webp",
+          "hash": "sha256:e140eb95ae2f1d4e5a5f89686f98793d2b17b023c0518cffe6430805677b8689"
+        },
+        "02-floor-washer-decision-chart.png": {
+          "status": "matched",
+          "primary": "/images/articles/hard-floor-washer-buying-guide/02-floor-washer-decision-chart.webp",
+          "hash": "sha256:411b2011e32ac260b271605d58c6af7831616333b5ae5af41adbcdb4f63b82ac"
         }
       }
     },
@@ -49254,6 +51064,20 @@
           "status": "matched",
           "primary": "/images/articles/is-dreame-owned-by-xiaomi/02-dreame-xiaomi-mova-relationship-map.webp",
           "hash": "sha256:dbe33337ebc022b6c0ebd75d607987252ad82876d63e073658d57248b95a88e1"
+        }
+      }
+    },
+    "is-dyson-publicly-traded-stock": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/is-dyson-publicly-traded-stock/01-cover.webp",
+          "hash": "sha256:4724afe2bdcbd7e3793e890eb4fb1083d35f60ccce7babe6277e70286032a0b1"
+        },
+        "02-dyson-private-ownership.png": {
+          "status": "matched",
+          "primary": "/images/articles/is-dyson-publicly-traded-stock/02-dyson-private-ownership.webp",
+          "hash": "sha256:d6bc600dfd1fd6e5820d8f88139e8ba2ded9f733849dd91c98923a3da61ff471"
         }
       }
     },
@@ -51112,6 +52936,20 @@
         }
       }
     },
+    "roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/01-cover.webp",
+          "hash": "sha256:a6e56419072d2a0373580b0e9a1b4445bdf5f1f8f1eb643ef0bf030c99893228"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/02-verdict.webp",
+          "hash": "sha256:1a85b85b24244ed3d95939ee425a6a0647d513241581b3c1fabf25092d4ffe89"
+        }
+      }
+    },
     "roborock-saros-20-sonic": {
       "files": {
         "01-cover.png": {
@@ -51267,6 +53105,20 @@
           "status": "matched",
           "primary": "/images/articles/robot-vacuum-brush-not-spinning/03-brush-motor-service-boundary.png",
           "hash": "sha256:25fb4180726bf6770cd49c3cb903993d10bc16f71f395d75e1f0266832fe583e"
+        }
+      }
+    },
+    "robot-vacuum-buying-guide": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-buying-guide/01-cover.webp",
+          "hash": "sha256:ba1e1fa370f907d4744659584389454c95cf1630d751c4c2b86b4fad6b1b73e1"
+        },
+        "02-robot-vacuum-decision-chart.png": {
+          "status": "matched",
+          "primary": "/images/articles/robot-vacuum-buying-guide/02-robot-vacuum-decision-chart.webp",
+          "hash": "sha256:38630f1020f7e04578a653057480a8e5e7198921987eb1628c3a0919f874d54f"
         }
       }
     },
@@ -51867,6 +53719,20 @@
         }
       }
     },
+    "shark-vs-roomba-robot-vacuums": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/shark-vs-roomba-robot-vacuums/01-cover.webp",
+          "hash": "sha256:363acef59ba149e4bbd82daf2703578aa1fb13237add7389b75e16e5e69927b8"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/shark-vs-roomba-robot-vacuums/02-verdict.webp",
+          "hash": "sha256:90414470799112930aabbd0cd8ac7aa73475a97fc5baf79e12926ae6ea4bd3a1"
+        }
+      }
+    },
     "sharkninja-hit-product-pipeline": {
       "files": {
         "01-cover.png": {
@@ -51974,6 +53840,20 @@
           "status": "matched",
           "primary": "/images/articles/spoga-gafa-2026-chinese-robotic-mowers/01-cover.webp",
           "hash": "sha256:27246138cd8389f4d27e90bda1ef304b78e31763d80372f405e4f35a60dc587e"
+        }
+      }
+    },
+    "spot-cleaner-battle-bissell-shark-hoover": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/01-cover.webp",
+          "hash": "sha256:38668665a1fa0bfbf4900a4cb4e169f1dd34fea9a9b862e4e71baca4a14e50e8"
+        },
+        "02-spot-cleaner-timeline.png": {
+          "status": "matched",
+          "primary": "/images/articles/spot-cleaner-battle-bissell-shark-hoover/02-spot-cleaner-timeline.webp",
+          "hash": "sha256:b12d63e315bc08df5ed5a3adcb12dd77051de7122c20e975db94a1e2ef44c6a4"
         }
       }
     },
@@ -52108,6 +53988,20 @@
           "status": "matched",
           "primary": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
           "hash": "sha256:e964c9f79c5fb5f09d8bcaed4cc5f01ad4a6165ac1f3fc7386d23e233d09a3fa"
+        }
+      }
+    },
+    "tennant-vs-nilfisk-floor-scrubbers": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover.webp",
+          "hash": "sha256:66bb55c384b6dc31c6ee794788fa18398868c11718e8fe2b2596fdc235d18f31"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/02-verdict.webp",
+          "hash": "sha256:608430af4aa56fc8e686d51fa395c37dbe6e05d36cf832bc09bdbf2c425aef3b"
         }
       }
     },
@@ -53161,6 +55055,48 @@
         }
       }
     },
+    "who-owns-clarke-nilfisk-freudenberg": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-clarke-nilfisk-freudenberg/01-cover.webp",
+          "hash": "sha256:e4d6692ccf79e6822810efaf3b34315952907b3b970b59f16d2de72a72510933"
+        },
+        "02-clarke-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-clarke-nilfisk-freudenberg/02-clarke-ownership-structure.webp",
+          "hash": "sha256:721f50e536593cfcc830d98556335f61bae6d383aa5a7a9fc53ff76ea5e35bc8"
+        }
+      }
+    },
+    "who-owns-cleanfix-swiss-family-company": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-cleanfix-swiss-family-company/01-cover.webp",
+          "hash": "sha256:bcfd95752c62e6c56777454125e2011f99501c2cf3dd50f062e9187dce8d5a9f"
+        },
+        "02-cleanfix-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-cleanfix-swiss-family-company/02-cleanfix-ownership-structure.webp",
+          "hash": "sha256:8ff861c62e635dfbf17683a911ecb0329692201c2c14b8b24c3c199a33273c92"
+        }
+      }
+    },
+    "who-owns-columbus-staehle-family": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-columbus-staehle-family/01-cover.webp",
+          "hash": "sha256:80461f42c2dea242f361d491c7e3253c31e21b7436db506ce198b0a0416ed6d1"
+        },
+        "02-columbus-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-columbus-staehle-family/02-columbus-ownership-structure.webp",
+          "hash": "sha256:0a268b805326d92e3d72862c8d42acfb253ff85740bc38470a1684fd5f8bc3a3"
+        }
+      }
+    },
     "who-owns-craftsman-tools-stanley-black-decker": {
       "files": {
         "01-cover.png": {
@@ -53189,6 +55125,20 @@
         }
       }
     },
+    "who-owns-dji-romo-robot-vacuum": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-dji-romo-robot-vacuum/01-cover.webp",
+          "hash": "sha256:83581e77a3b1dc665cf221891921689faad10e9035fe6b7d54d6fd6c2c3ae39f"
+        },
+        "02-dji-romo-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-dji-romo-robot-vacuum/02-dji-romo-ownership-structure.webp",
+          "hash": "sha256:8ee4bd2c44e6f5c7fabe0a425e3f05e45b29931c1c6fb33e33af7b15a664defe"
+        }
+      }
+    },
     "who-owns-dremel-bosch-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -53200,6 +55150,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-dremel-bosch-manufacturing/02-dremel-bosch-business-map.webp",
           "hash": "sha256:62286a92a3d485d614dc65236bb21599d793ed43b604d8e36802e476a0d1c8d6"
+        }
+      }
+    },
+    "who-owns-dulevo-fayat-group": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-dulevo-fayat-group/01-cover.webp",
+          "hash": "sha256:c80a7bf030208827f36477679580e01074a69b9435a46f298efee27da3c7d417"
+        },
+        "02-dulevo-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-dulevo-fayat-group/02-dulevo-ownership-structure.webp",
+          "hash": "sha256:ba5ebc6abfd10d4ded01aa95633a720ea834a56d961fcf8fef089dd36f0241ea"
         }
       }
     },
@@ -53305,6 +55269,20 @@
         }
       }
     },
+    "who-owns-factory-cat-rps-corporation": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-factory-cat-rps-corporation/01-cover.webp",
+          "hash": "sha256:e08cdf53ffff2937eeb2eea60c10fafb872e0b7e5e6c0e79b261f7c11f98d4ff"
+        },
+        "02-factory-cat-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-factory-cat-rps-corporation/02-factory-cat-ownership-structure.webp",
+          "hash": "sha256:1bbc25d83658d1bbbbb7d942e0e805c14e4628cf1e61a08b6355cf5c6b559b4e"
+        }
+      }
+    },
     "who-owns-festool-tts-tooltechnic-systems": {
       "files": {
         "01-cover.png": {
@@ -53316,6 +55294,34 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-festool-tts-tooltechnic-systems/02-festool-ownership-system-map.webp",
           "hash": "sha256:059b097e3411828a1dd3779f906e7284607378ce59bb35bbc520a2c42f54a44e"
+        }
+      }
+    },
+    "who-owns-fimap-comac-group": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-fimap-comac-group/01-cover.webp",
+          "hash": "sha256:69d505cd0004bf7b3ae29c2e913e31fd84973052d5bab22c118b5c13c3e22c35"
+        },
+        "02-fimap-comac-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-fimap-comac-group/02-fimap-comac-ownership-structure.webp",
+          "hash": "sha256:83ec616a9409619ccb632466bb55045d0f07f0b36a34b4a6b3e984f17ddad50b"
+        }
+      }
+    },
+    "who-owns-fiorentini-cleaning-machines": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-fiorentini-cleaning-machines/01-cover.webp",
+          "hash": "sha256:6de90ef07f8a656c70f06a82960f580f19db5b8cfbafae14c8d8c16eae926eab"
+        },
+        "02-fiorentini-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-fiorentini-cleaning-machines/02-fiorentini-ownership-structure.webp",
+          "hash": "sha256:7d232348d5152c9ad92c9869c1ac2075549b16553e7bb712cfbb339abad65ca2"
         }
       }
     },
@@ -53374,6 +55380,20 @@
         }
       }
     },
+    "who-owns-gausium": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-gausium/01-cover.webp",
+          "hash": "sha256:9dff7f5d142fe2136a8ebf6e232293092eff66bf7a8f69fecbbde69c0517ed0c"
+        },
+        "02-gausium-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-gausium/02-gausium-ownership-structure.webp",
+          "hash": "sha256:38fda72da5f2ef1a8692a4d8d3581b3ccbcde33bfe914f4e4dfe59f17d5c6e44"
+        }
+      }
+    },
     "who-owns-ge-appliances-haier-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -53393,6 +55413,20 @@
           "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
           "primary": "/images/blog/ge-appliances-manufacturing-verification-map.svg",
           "hash": "sha256:24a339ac0ee3cba0ca907e750e5395bcb9a8034f87895a860b475c5ebd8feb57"
+        }
+      }
+    },
+    "who-owns-ghibli-riello-cleaning-machines": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ghibli-riello-cleaning-machines/01-cover.webp",
+          "hash": "sha256:5356ec0e0ebf5fd79483d1345d0b8e7964cea249c1fe9c21a25f17e60c284e0b"
+        },
+        "02-ghibli-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ghibli-riello-cleaning-machines/02-ghibli-ownership-structure.webp",
+          "hash": "sha256:ebdde75a02a74da0466e8417c20969c816ef2f9f2bf2edd5d7faa51e34c9d736"
         }
       }
     },
@@ -53467,6 +55501,20 @@
           "code": "INCOMPATIBLE_HISTORICAL_PRIMARY_FORMAT",
           "primary": "/images/blog/haier-regional-ownership-verification-map.svg",
           "hash": "sha256:41feaaf9720d14e94ed11d97145a760f72178cc16c5efb16a17db6d9ce4e940e"
+        }
+      }
+    },
+    "who-owns-hako-possehl-group": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-hako-possehl-group/01-cover.webp",
+          "hash": "sha256:3fe0adcf79608139671bbead293cfe7ab24aaceee1dbbd779053cb887220f1c8"
+        },
+        "02-hako-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-hako-possehl-group/02-hako-ownership-structure.webp",
+          "hash": "sha256:5d89bd5bbdaea65f832b766c4092a42294ad5384cf44d8d53aae450bea4aed05"
         }
       }
     },
@@ -53567,6 +55615,20 @@
         }
       }
     },
+    "who-owns-ipc-tennant": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ipc-tennant/01-cover.webp",
+          "hash": "sha256:c63f87c0c2417688d3c48e143da6d9b97f37ee9e4d94cce41d1e3504153883a9"
+        },
+        "02-ipc-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-ipc-tennant/02-ipc-ownership-structure.webp",
+          "hash": "sha256:aa7dc170fb2be8bd6c498e8a6072eba7c2545a7c360aa3131d0106d384a2905c"
+        }
+      }
+    },
     "who-owns-irobot-roomba-picea-robotics": {
       "files": {
         "01-cover.png": {
@@ -53595,6 +55657,20 @@
         }
       }
     },
+    "who-owns-lavor-comet-group": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lavor-comet-group/01-cover.webp",
+          "hash": "sha256:2b7d47e5b98187df9ea5c892442d0fd8481d451be77936f13b7f96651d351ed9"
+        },
+        "02-lavor-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lavor-comet-group/02-lavor-ownership-structure.webp",
+          "hash": "sha256:207863ca9f4eef0f14b41b0ed80c2c02c8f2d5388818c4d63f4eb9f5e02bd6c7"
+        }
+      }
+    },
     "who-owns-lawnmaster-cleva-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -53611,6 +55687,34 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-lawnmaster-cleva-manufacturing/03-lawnmaster-model-region-verification-map.webp",
           "hash": "sha256:09bf7adc4d2dd830da93a880ae879694fade185d485f2e538dc178ee9cb1985d"
+        }
+      }
+    },
+    "who-owns-lindhaus-padua-family-business": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lindhaus-padua-family-business/01-cover.webp",
+          "hash": "sha256:ac9f40f9adaaff5df044e4b9655e681684e11c73696a1e8ed261c4003b47733f"
+        },
+        "02-lindhaus-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lindhaus-padua-family-business/02-lindhaus-ownership-structure.webp",
+          "hash": "sha256:0e58f20500f0a0b522b1012389c3ec208050d4573aa977936e9745348946fd7c"
+        }
+      }
+    },
+    "who-owns-lionsbot": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lionsbot/01-cover.webp",
+          "hash": "sha256:349d8f3a1beff9892f3d01e2772fc18cfc708d66f7c4b1e4ec6f0204e44ece08"
+        },
+        "02-lionsbot-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-lionsbot/02-lionsbot-ownership-structure.webp",
+          "hash": "sha256:e43d93c371b45d38784ac1aec38be66f24ef9c26ec2529c16e9f61f58bc7667a"
         }
       }
     },
@@ -53696,6 +55800,20 @@
         }
       }
     },
+    "who-owns-minuteman-hako-powerboss": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-minuteman-hako-powerboss/01-cover.webp",
+          "hash": "sha256:9aa2934f7e07cca0f9f1a90cf16c8a790cc41003ddc32c59c96634b8378de35c"
+        },
+        "02-minuteman-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-minuteman-hako-powerboss/02-minuteman-ownership-structure.webp",
+          "hash": "sha256:fb040cadd62471d827ee9879e334e5de214c6a4db178cc34823bf8952ac29884"
+        }
+      }
+    },
     "who-owns-narwal-yunjing-investors-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -53707,6 +55825,34 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-narwal-yunjing-investors-manufacturing/02-narwal-yunjing-company-manufacturing-map.webp",
           "hash": "sha256:092687b51406366c841e5c60a39c6489ef8d6f3e77595780956fe047e9661e6e"
+        }
+      }
+    },
+    "who-owns-nss-taski-solenis": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-nss-taski-solenis/01-cover.webp",
+          "hash": "sha256:93d3dc02efec909fc3455cd6803473a5b55ccfb2a0a74a4d085f9a32f94a5d7b"
+        },
+        "02-nss-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-nss-taski-solenis/02-nss-ownership-structure.webp",
+          "hash": "sha256:c9797696e4f7997562985fe4c57bca9fe9180cf47abac24eca959e160f0c1d57"
+        }
+      }
+    },
+    "who-owns-oertzen-hako-possehl": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-oertzen-hako-possehl/01-cover.webp",
+          "hash": "sha256:4c0f588399b58633313bccabd00d89a22e146cf3f2efa00fd83661ddc4d1a33f"
+        },
+        "02-oertzen-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-oertzen-hako-possehl/02-oertzen-ownership-structure.webp",
+          "hash": "sha256:6cf1ea40aaf638e4b592672b917ad05851456a49016b8712000d9336d27daddf"
         }
       }
     },
@@ -53729,6 +55875,20 @@
         }
       }
     },
+    "who-owns-pentair-pool-brands": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-pentair-pool-brands/01-cover.webp",
+          "hash": "sha256:57744b5aace2f23ac1df690474ad72c5c5b27103a3cd6e63dadf85bdb7fc0af0"
+        },
+        "02-pentair-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-pentair-pool-brands/02-pentair-ownership-structure.webp",
+          "hash": "sha256:7ad14009cfabb6fdbad02ee3b0c55e067563847ff8300224422be45b93d1ff4f"
+        }
+      }
+    },
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": {
       "files": {
         "01-cover.png": {
@@ -53740,6 +55900,48 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-polaris-pool-cleaners-fluidra-zodiac/02-polaris-fluidra-regional-responsibility-map.webp",
           "hash": "sha256:fa64fd4aa16fcb2efda1c0857f19fdf430da214d5dd89c2cfd3f59064bda248d"
+        }
+      }
+    },
+    "who-owns-powerboss-minuteman-hako": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-powerboss-minuteman-hako/01-cover.webp",
+          "hash": "sha256:fa3f9f73e86b48ac3cc14005cde148d40a33ca56a799615739fa35da4e1a5b8b"
+        },
+        "02-powerboss-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-powerboss-minuteman-hako/02-powerboss-ownership-structure.webp",
+          "hash": "sha256:d0b3b73cc325dc39e3e1bfac3261c49d9c55e6d726a1d0576b00bc98ea1404b8"
+        }
+      }
+    },
+    "who-owns-pudu-robotics": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-pudu-robotics/01-cover.webp",
+          "hash": "sha256:e6010492e5074f9ace72d9f169a710fceeb268ab3ca4b0e2dbfa99870b6e7625"
+        },
+        "02-pudu-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-pudu-robotics/02-pudu-ownership-structure.webp",
+          "hash": "sha256:46b625408a24a9f3ea067c0fb312fe1aa0b83341d7ead39cd4eea648d829cefc"
+        }
+      }
+    },
+    "who-owns-rcm-raimondi-family": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-rcm-raimondi-family/01-cover.webp",
+          "hash": "sha256:2a9626917a8c032733a27b12f7533683af24b9cdb0467cc5037d920412ed211a"
+        },
+        "02-rcm-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-rcm-raimondi-family/02-rcm-ownership-structure.webp",
+          "hash": "sha256:4aa6594455fc866f0a6656e76733060ba8a1713345b34ebe65ef86ce1a45ee9c"
         }
       }
     },
@@ -53759,6 +55961,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-rowenta-groupe-seb-vacuums/03-rowenta-vacuum-verification-map.webp",
           "hash": "sha256:fac6e097f4f7239270209a73d8dd6c234c1aa1210d140687fb4983c6d5dde824"
+        }
+      }
+    },
+    "who-owns-russell-hobbs-spectrum-brands": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-russell-hobbs-spectrum-brands/01-cover.webp",
+          "hash": "sha256:57cfc8a5edfc31d6477cef865e27dc914210a25c54f4eea4db958b6f0797c42f"
+        },
+        "02-russell-hobbs-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-russell-hobbs-spectrum-brands/02-russell-hobbs-ownership-structure.webp",
+          "hash": "sha256:bbb2e308111b6166ebb0d6470cbaa88a113492734490ef0ed31fcb5a79e6d78d"
         }
       }
     },
@@ -53801,6 +56017,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-sharkninja-js-global-joyoung/02-sharkninja-js-global-joyoung-relationship-map.webp",
           "hash": "sha256:8892dee217582a62804c714af36636b24f6a3392459b18c2c2c106ce5b9ea1b6"
+        }
+      }
+    },
+    "who-owns-sharp-foxconn-hon-hai": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-sharp-foxconn-hon-hai/01-cover.webp",
+          "hash": "sha256:740d37a034a18a81ee9346ac7318247824be510eeb3759cd65e65027c742bc9d"
+        },
+        "02-sharp-appliances-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-sharp-foxconn-hon-hai/02-sharp-appliances-ownership-structure.webp",
+          "hash": "sha256:7779ee66ce54f9d6cb777fa6c9b8e51da092080fae27c7fe38e7ebd87adcf93d"
         }
       }
     },
@@ -53856,6 +56086,20 @@
         }
       }
     },
+    "who-owns-taski-solenis-diversey": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-taski-solenis-diversey/01-cover.webp",
+          "hash": "sha256:9e208ec6588bed8c78018787fda3e678c13baa23a32943802dcae16b808ee011"
+        },
+        "02-taski-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-taski-solenis-diversey/02-taski-ownership-structure.webp",
+          "hash": "sha256:151aea4401898ad835c348ad8c81f9a8daea974ce04ee7baffbb265b0ffae137"
+        }
+      }
+    },
     "who-owns-teka-appliances-midea": {
       "files": {
         "01-cover.png": {
@@ -53875,6 +56119,20 @@
         }
       }
     },
+    "who-owns-tennant-company-ipc-robotics": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-tennant-company-ipc-robotics/01-cover.webp",
+          "hash": "sha256:8fbe064ef09500081689da5c583046648b4683f8d9c9e5410bc34d884dfa7b3d"
+        },
+        "02-tennant-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-tennant-company-ipc-robotics/02-tennant-ownership-structure.webp",
+          "hash": "sha256:083c1fa463bf3a8332732e529657bd58feb47e5486135366433f46d9f853e305"
+        }
+      }
+    },
     "who-owns-tineco-ecovacs-group": {
       "files": {
         "01-cover.png": {
@@ -53886,6 +56144,20 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-tineco-ecovacs-group/02-tineco-ecovacs-company-structure.webp",
           "hash": "sha256:36dd51e304e0c04da3c76b5c704f9a0443c785927097e4e73507cb5335c4e908"
+        }
+      }
+    },
+    "who-owns-tornado-floor-care-tacony": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-tornado-floor-care-tacony/01-cover.webp",
+          "hash": "sha256:2a13a748adc7290fc071c4995eb4acc9d27d7d79a747ff870596559110906e95"
+        },
+        "02-tornado-industries-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-tornado-floor-care-tacony/02-tornado-industries-ownership-structure.webp",
+          "hash": "sha256:90c01b4e0c35f7c6b9775261d63eb040e325107dabf133b7b88b86aceae8b948"
         }
       }
     },
@@ -53930,6 +56202,20 @@
         }
       }
     },
+    "who-owns-truvox-tacony": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-truvox-tacony/01-cover.webp",
+          "hash": "sha256:4bce1429dbbd1bb044b0040a36c1da8fe09caf97d5763654201071fbe63f415b"
+        },
+        "02-truvox-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-truvox-tacony/02-truvox-ownership-structure.webp",
+          "hash": "sha256:e3d3dfb0a8a43cee8ea4b23cc17148210e669d4459ad5da3be7a6d603831b734"
+        }
+      }
+    },
     "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck": {
       "files": {
         "01-cover.png": {
@@ -53941,6 +56227,34 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-tti-milwaukee-ryobi-hoover-vax-oreck/02-tti-owned-licensed-regional-brands-map.webp",
           "hash": "sha256:394f00e6f9fc8f4424466878e6415c27a0ab8dca61a3f39928604abb935307cb"
+        }
+      }
+    },
+    "who-owns-vestel-zorlu-holding": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-vestel-zorlu-holding/01-cover.webp",
+          "hash": "sha256:8e8b1f65482555527aac96935e0de088c0e3153880db0df07f96a534366dd49d"
+        },
+        "02-vestel-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-vestel-zorlu-holding/02-vestel-ownership-structure.webp",
+          "hash": "sha256:1ca72cffd0144c0704d423b078473d02914eb0f1a13967188451a16fffd4b980"
+        }
+      }
+    },
+    "who-owns-wetrok-diethelm-keller": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-wetrok-diethelm-keller/01-cover.webp",
+          "hash": "sha256:3fc14ef78c305fe626d7da193b99ebc2fa25901fb3420747db3b12eac9a8ef72"
+        },
+        "02-wetrok-ownership-structure.png": {
+          "status": "matched",
+          "primary": "/images/articles/who-owns-wetrok-diethelm-keller/02-wetrok-ownership-structure.webp",
+          "hash": "sha256:25c2af8cace7c3ea3f41361c5f59769c6c1be2d88ef7627bf1da29f5f308f9ee"
         }
       }
     },

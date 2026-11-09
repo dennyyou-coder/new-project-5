@@ -2,7 +2,7 @@
   "status": "published",
   "slug": "tennant",
   "name": "Tennant",
-  "metaTitle": "Tennant Company (NYSE: TNC): Profile, Products and Ownership",
+  "metaTitle": "Tennant Company (NYSE: TNC): Owner, Scrubbers and Cleaning Robots",
   "aliases": ["Tennant Company", "Tennant Co."],
   "legalName": "Tennant Company",
   "legalEntityNote": "Tennant Company is the listed operating company behind the Tennant equipment brand. The company, its IPC group brand, regional subsidiaries, distributors and model-specific technology partners should not be treated as interchangeable contracting, manufacturing or warranty entities.",
@@ -28,6 +28,10 @@
     {
       "question": "Where does Tennant make its machines?",
       "answer": "Tennant's 2025 annual report lists 11 global manufacturing locations. Check the serial plate and shipping documents for a specific machine's country of origin."
+    },
+    {
+      "question": "How large is Tennant's robotics business?",
+      "answer": "Tennant reported robotics sales of approximately USD 37.3 million in the third quarter of 2026, up 71% from a year earlier, within total net sales of USD 322.3 million."
     }
   ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Tennant Company. Company-level disclosures do not establish the manufacturer, origin, software provider, seller or warranty entity for every model and market.",
@@ -51,6 +55,36 @@
       "src": "/images/brands/tennant/fleet-buyer-check.svg",
       "alt": "Tennant professional cleaning fleet buyer verification checklist",
       "caption": "Equipment buyers should verify the machine, autonomy stack, batteries, service coverage and data terms as separate workstreams."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/images/brands/tennant/photos/01.webp",
+      "width": 1200,
+      "caption": "Tennant X16 robotic sweeper in a warehouse",
+      "credit": "Image: Tennant",
+      "creditUrl": "https://www.tennantco.com/en_us/robotics/robotic-technology/about-tennant-robotics.html"
+    },
+    {
+      "src": "/images/brands/tennant/photos/02.webp",
+      "width": 830,
+      "caption": "Tennant T600 walk-behind scrubber in an industrial plant",
+      "credit": "Image: Tennant",
+      "creditUrl": "https://www.tennantco.com/content/dam/tennant/tennantco/products/machines/scrubber%20walk-behinds/t600-t600e/t600-industrial-brochure-en-au.pdf#page=1"
+    },
+    {
+      "src": "/images/brands/tennant/photos/03.webp",
+      "width": 705,
+      "caption": "Autonomous Tennant X6 ROVR cleaning a shopping centre (Domus case study)",
+      "credit": "Image: Tennant",
+      "creditUrl": "https://www.tennantco.com/en_eu/resources/resource-center/case-studies/cleaning-professionals/domus-building-cleaning-alpine-x6-rovr.html"
+    },
+    {
+      "src": "/images/brands/tennant/photos/04.webp",
+      "width": 705,
+      "caption": "Tennant T16AMR robotic scrubber in a food distribution warehouse",
+      "credit": "Image: Tennant",
+      "creditUrl": "https://www.tennantco.com/en_us/resources/resource-center/case-studies/food-beverage/performance-food-group-t16amr.html"
     }
   ],
   "ownership": {
@@ -230,5 +264,5 @@
   ],
   "publishedAt": "2026-08-08T01:38:00+08:00",
   "lastVerified": "2026-08-08",
-  "lastModified": "2026-11-07T12:00:00+08:00"
+  "lastModified": "2026-11-08T21:00:00+08:00"
 }

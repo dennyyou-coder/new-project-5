@@ -703,7 +703,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the one-hundred-and-sixteen published profiles and approved article relationships", () => {
+test("the release gate validates the one-hundred-and-eighteen published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -731,7 +731,9 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "columbus",
     "comac",
     "craftsman",
+    // Profile-name order: "De’Longhi" sorts before "Dechang".
     "delonghi",
+    "dechang",
     "dewalt",
     "dirt-devil",
     "dji-romo",
@@ -771,6 +773,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "ipc",
     "irobot",
     "karcher",
+    "kingclean",
     "kitchenaid",
     "kobalt",
     "lavor",
@@ -892,11 +895,13 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "irobot-decline-and-the-new-robot-vacuum-order": ["irobot"],
     "irobot-financial-crisis": ["irobot"],
     "is-dreame-owned-by-xiaomi": ["dreame",  "mova"],
+    "is-dyson-publicly-traded-stock": ["dyson"],
     "is-roborock-owned-by-xiaomi": ["roborock"],
     "is-steam-the-next-robot-vacuum-feature": ["dreame"],
     "joseph-galli-chervon-dewalt-milwaukee": ["chervon",  "tti",  "dewalt",  "milwaukee",  "ego",  "skil",  "flex"],
     "karcher-family-business-alfred-irene-hartmut-jenner": ["karcher"],
     "karcher-hidden-champion-in-cleaning-appliances": ["karcher"],
+    "kingclean-ai-factory-teams": ["kingclean"],
     "lawn-mowing-history": ["husqvarna",  "segway-navimow",  "irobot",  "ego",  "mammotion",  "ecovacs",  "dreame",  "mova",  "roborock"],
     "luba-vs-navimow-mammotion-ninebot": ["mammotion",  "segway-navimow"],
     "mammotion-luba-vs-yuka-robot-mowers": ["mammotion"],
@@ -932,6 +937,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "shark-hydrovac-vs-bissell-crosswave": ["shark",  "bissell"],
     "shark-powerdetect-speed-vs-dyson-v16-piston-animal": ["shark",  "dyson"],
     "sharkninja-q2-growth-outside-cleaning": ["shark"],
+    "spot-cleaner-battle-bissell-shark-hoover": ["bissell", "shark", "hoover"],
     "stanley-black-decker-excel-sale-outdoor-strategy": ["stanley-black-decker",  "dewalt"],
     "steve-richman-milwaukee-growth": ["milwaukee",  "tti"],
     "sunseeker-from-oem-to-robot-mower-brand": ["sunseeker"],
@@ -957,50 +963,102 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "who-makes-samsung-appliances-manufacturing-bespoke-ai": ["samsung-home-appliances"],
     "who-makes-sunseeker-robot-mowers-zhejiang-sunseeker": ["sunseeker"],
     "who-makes-wybot-pool-cleaners-wybotics-wangyuan": ["wybot"],
+    "who-makes-xiaomi-mijia-home-appliances": ["xiaomi-mijia"],
     "who-owns-aeg-electrolux-relationship": ["aeg",  "electrolux"],
+    "who-owns-aeg-power-tools-tti-license": ["aeg"],
     "who-owns-aiper-fluidra-stake": ["aiper"],
+    "who-owns-asko-appliances-hisense-gorenje": ["asko"],
     "who-owns-beatbot-xingmai-manufacturing": ["beatbot"],
     "who-owns-beko-appliances-beko-europe": ["beko"],
     "who-owns-bissell-family-sanitaire": ["bissell"],
-    "who-owns-black-and-decker-stanley-tools": ["black-decker"],
+    "who-owns-black-and-decker-stanley-tools": ["black-decker", "stanley-black-decker"],
     "who-owns-bosch-appliances-bsh-siemens-brands": ["bosch-home-appliances"],
     "who-owns-bosch-power-tools-robert-bosch": ["bosch-power-tools"],
+    "who-owns-braun-appliances-delonghi-pg-license": ["braun-household"],
+    "who-owns-breville-sage-regional-brand-rights": ["breville-sage"],
+    "who-owns-chervon-ego-flex-skil": ["chervon"],
+    "who-owns-clarke-nilfisk-freudenberg": ["clarke"],
+    "who-owns-cleanfix-swiss-family-company": ["cleanfix"],
+    "who-owns-columbus-staehle-family": ["columbus"],
     "who-owns-craftsman-tools-stanley-black-decker": ["craftsman"],
+    "who-owns-delonghi-appliance-group-brands": ["delonghi"],
     "who-owns-dewalt-stanley-black-decker": ["dewalt",  "black-decker",  "craftsman"],
+    "who-owns-dji-romo-robot-vacuum": ["dji-romo"],
     "who-owns-dremel-bosch-manufacturing": ["dremel",  "bosch-power-tools"],
+    "who-owns-dulevo-fayat-group": ["dulevo"],
     "who-owns-dyson-james-dyson-singapore-manufacturing": ["dyson"],
     "who-owns-ecovacs-tineco-manufacturing": ["ecovacs",  "tineco"],
+    "who-owns-ego-power-plus-chervon-manufacturing": ["ego-power-plus"],
     "who-owns-electrolux-brands-manufacturing": ["electrolux",  "aeg"],
     "who-owns-eufy-anker-smart-home": ["eufy"],
     "who-owns-eureka-midea-electrolux-manufacturing": ["midea",  "eureka",  "electrolux"],
+    "who-owns-factory-cat-rps-corporation": ["factory-cat"],
     "who-owns-festool-tts-tooltechnic-systems": ["festool"],
+    "who-owns-fimap-comac-group": ["comac", "fimap"],
+    "who-owns-fiorentini-cleaning-machines": ["fiorentini"],
     "who-owns-fisher-paykel-haier-manufacturing": ["fisher-paykel"],
     "who-owns-flex-tools-chervon-lowes": ["flex"],
     "who-owns-frigidaire-electrolux-manufacturing": ["electrolux"],
+    "who-owns-gardena-husqvarna-sileno-manufacturing": ["gardena"],
+    "who-owns-gausium": ["gausium"],
     "who-owns-ge-appliances-haier-manufacturing": ["ge-appliances"],
+    "who-owns-ghibli-riello-cleaning-machines": ["ghibli"],
+    "who-owns-gorenje-appliances-hisense": ["gorenje"],
     "who-owns-greenworks-globe-stihl": ["greenworks",  "stihl"],
+    "who-owns-groupe-seb-brands-supor": ["groupe-seb"],
     "who-owns-haier-appliances-brand-portfolio": ["haier-home-appliances"],
+    "who-owns-hako-possehl-group": ["hako"],
+    "who-owns-hamilton-beach-brands-sourcing": ["hamilton-beach"],
     "who-owns-hayward-pool-products": ["hayward"],
     "who-owns-hilti-family-trust-manufacturing": ["hilti"],
+    "who-owns-hisense-appliances-gorenje-asko": ["hisense"],
     "who-owns-hoover-tti-haier-candy": ["hoover",  "dirt-devil"],
+    "who-owns-hotpoint-appliances-regional-split": ["hotpoint"],
     "who-owns-husqvarna-automower-motorcycles": ["husqvarna"],
+    "who-owns-ipc-tennant": ["ipc"],
     "who-owns-irobot-roomba-picea-robotics": ["irobot"],
     "who-owns-karcher-family-professional-cleaning-network": ["karcher"],
+    "who-owns-lavor-comet-group": ["lavor"],
+    "who-owns-lawnmaster-cleva-manufacturing": ["lawnmaster"],
+    "who-owns-lindhaus-padua-family-business": ["lindhaus"],
+    "who-owns-lionsbot": ["lionsbot"],
     "who-owns-makita-company-manufacturing": ["makita"],
     "who-owns-maytag-whirlpool-manufacturing": ["whirlpool"],
     "who-owns-metabo-metabo-hpt-hikoki": ["metabo",  "hikoki"],
     "who-owns-midea-appliances-brand-portfolio": ["midea"],
     "who-owns-miele-family-manufacturing-network": ["miele"],
     "who-owns-milwaukee-tools-tti-manufacturing": ["milwaukee",  "tti"],
+    "who-owns-minuteman-hako-powerboss": ["minuteman"],
     "who-owns-narwal-yunjing-investors-manufacturing": ["narwal"],
+    "who-owns-nilfisk-freudenberg-manufacturing": ["nilfisk"],
+    "who-owns-nss-taski-solenis": ["nss"],
+    "who-owns-oertzen-hako-possehl": ["oertzen"],
+    "who-owns-panasonic-appliances-vacuum-manufacturing": ["panasonic"],
+    "who-owns-pentair-pool-brands": ["pentair"],
     "who-owns-polaris-pool-cleaners-fluidra-zodiac": ["polaris",  "fluidra"],
+    "who-owns-powerboss-minuteman-hako": ["powerboss"],
+    "who-owns-pudu-robotics": ["pudu-robotics"],
+    "who-owns-rcm-raimondi-family": ["rcm"],
+    "who-owns-rowenta-groupe-seb-vacuums": ["rowenta"],
+    "who-owns-russell-hobbs-spectrum-brands": ["russell-hobbs"],
     "who-owns-ryobi-tti-kyocera": ["ryobi"],
     "who-owns-segway-navimow-ninebot-willand": ["segway-navimow"],
     "who-owns-sharkninja-js-global-joyoung": ["shark"],
+    "who-owns-sharp-foxconn-hon-hai": ["sharp-appliances"],
     "who-owns-skil-tools-chervon": ["skil"],
     "who-owns-stihl-family-manufacturing": ["stihl"],
+    "who-owns-supor-groupe-seb-manufacturing": ["supor"],
+    "who-owns-taski-solenis-diversey": ["taski"],
+    "who-owns-teka-appliances-midea": ["teka"],
+    "who-owns-tennant-company-ipc-robotics": ["tennant"],
     "who-owns-tineco-ecovacs-group": ["tineco"],
+    "who-owns-tornado-floor-care-tacony": ["tornado-industries"],
+    "who-owns-toro-company-brands-manufacturing": ["toro"],
+    "who-owns-toshiba-appliances-midea-lifestyle": ["toshiba-appliances"],
+    "who-owns-truvox-tacony": ["truvox"],
     "who-owns-tti-milwaukee-ryobi-hoover-vax-oreck": ["ryobi",  "milwaukee",  "vax",  "oreck",  "dirt-devil"],
+    "who-owns-vestel-zorlu-holding": ["vestel"],
+    "who-owns-wetrok-diethelm-keller": ["wetrok"],
     "who-owns-whirlpool-appliances-beko-europe": ["whirlpool"],
     "who-owns-worx-positec-landroid-manufacturing": ["worx"],
     "who-will-be-eliminated-in-the-cordless-vacuum-cleaner-era": ["vax",  "oreck",  "dirt-devil"],
@@ -1018,8 +1076,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
       .sort(([a], [b]) => a.localeCompare(b))
   );
 
-  assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 116);
+  assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), [...expectedSlugs].sort());
+  assert.equal(loadedProfiles.length, 118);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1045,8 +1103,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 174);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 311);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 229);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 370);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -1085,7 +1143,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 116);
+  assert.equal(profiles.length, 118);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
@@ -1151,10 +1209,12 @@ test("commercial-cleaning batch twenty publishes Factory Cat, NSS and Tornado wi
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1237,10 +1297,12 @@ test("commercial-cleaning batch nineteen publishes Fiorentini, Ghibli and Lindha
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
   }
@@ -1312,10 +1374,12 @@ test("commercial-cleaning batch eighteen publishes Clarke, Lavor and RCM without
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1376,10 +1440,12 @@ test("commercial-cleaning batch seventeen publishes Minuteman, Oertzen and Power
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1439,10 +1505,12 @@ test("commercial-cleaning batch sixteen publishes Columbus, Truvox and Wetrok wi
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1501,10 +1569,12 @@ test("commercial-cleaning batch fifteen publishes Cleanfix, Comac and Fimap with
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1552,10 +1622,12 @@ test("commercial-cleaning batch fourteen publishes PUDU Robotics, LionsBot and D
 
     assert.deepEqual(
       realArticles.filter(
-        (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
+        (article) =>
+          article.guideType !== "ownership" &&
+          (article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       ),
       [],
-      `${slug} must not create article relationships`
+      `${slug} must not create article relationships beyond its ownership guide`
     );
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "commercial-industrial-cleaning");
     assert.deepEqual(
@@ -1604,6 +1676,7 @@ test("commercial-cleaning batch thirteen publishes Numatic, Gausium and IPC with
     assert.equal(heroMetadata.height, 1000);
 
     const relationships = realArticles
+      .filter((article) => !(article.guideType === "ownership" && article.slug.startsWith("who-owns-")))
       .filter((article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug))
       .map((article) => article.slug);
     assert.deepEqual(
@@ -1664,7 +1737,7 @@ test("commercial-cleaning batch twelve publishes Tennant, Hako and TASKI without
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    assert.deepEqual(taggedArticles.filter((article) => article.guideType !== "ownership"), [], `${slug} must not create article relationships beyond its ownership guide`);
     const memberships = categories
       .filter(({ profiles }) => profiles.some((profile) => profile.slug === slug))
       .map(({ category }) => category.slug);
@@ -1769,7 +1842,7 @@ test("outdoor-equipment batch ten profiles publish with verified brand and opera
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    assert.deepEqual(taggedArticles.filter((article) => article.guideType !== "ownership"), [], `${slug} must not create article relationships beyond its ownership guide`);
     assert.deepEqual(membershipsFor(slug), ["lawn-garden-equipment"]);
     assert.equal(getBrandCategoryForProfile(slug)?.slug, "lawn-garden-equipment");
   }
@@ -1826,7 +1899,7 @@ test("home-appliance batch nine profiles publish with verified brand and operati
     const taggedArticles = realArticles.filter(
       (article) => article.primaryBrands.includes(slug) || article.relatedBrands.includes(slug)
     );
-    assert.deepEqual(taggedArticles, [], `${slug} must not create article relationships`);
+    assert.deepEqual(taggedArticles.filter((article) => article.guideType !== "ownership"), [], `${slug} must not create article relationships beyond its ownership guide`);
     assert.deepEqual(
       membershipsFor(slug),
       slug === "russell-hobbs"
@@ -2201,21 +2274,18 @@ test("home-appliance batch five profiles publish independently with dedicated of
       schemas.find((schema) => schema["@id"] === "#brand")["@type"],
       candidate.schemaEntityType
     );
-    assert.match(
-      schemas.find((schema) => schema["@type"] === "WebPage").name,
-      candidate.schemaEntityType === "Brand" ? /Brand Profile/ : /Corporate Profile/
-    );
-    assert.match(
-      buildBrandPageTitle(candidate),
-      candidate.schemaEntityType === "Brand" ? /Brand Profile/ : /Corporate Profile/
-    );
+    const expectedTitle = candidate.metaTitle
+      ? new RegExp(candidate.metaTitle.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+      : candidate.schemaEntityType === "Brand" ? /Brand Profile/ : /Corporate Profile/;
+    assert.match(schemas.find((schema) => schema["@type"] === "WebPage").name, expectedTitle);
+    assert.match(buildBrandPageTitle(candidate), expectedTitle);
   }
 });
 
 test("home-appliance batch four profiles publish independently with dedicated official assets", async () => {
   const newSlugs = ["hotpoint", "panasonic", "toshiba-appliances"];
   const expectedTaggedArticles = new Map([
-    ["hotpoint", []],
+    ["hotpoint", ["who-owns-hotpoint-appliances-regional-split"]],
     ["panasonic", ["who-owns-panasonic-appliances-vacuum-manufacturing"]],
     ["toshiba-appliances", ["who-owns-toshiba-appliances-midea-lifestyle"]],
   ]);

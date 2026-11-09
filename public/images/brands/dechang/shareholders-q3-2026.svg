@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Dechang largest shareholders</title>
+  <desc id="desc">Huang Yuchang 24.36 percent, Changshuo (Ningbo) 20.08 percent, Zhang Liying 11.99 percent, Huang Shi 6.00 percent at 30 September 2026.</desc>
+  <rect width="1600" height="900" fill="#f5f7fa"/>
+  <text x="110" y="112" fill="#0e1526" font-family="Arial, sans-serif" font-size="52" font-weight="700">Who owns Dechang</text>
+  <text x="110" y="162" fill="#4a5367" font-family="Arial, sans-serif" font-size="25">Largest shareholders at 30 September 2026 (Dechang third-quarter report).</text>
+  <text x="110" y="260" fill="#0e1526" font-family="Arial, sans-serif" font-size="28" font-weight="700">Huang Yuchang (founder)</text>
+  <rect x="110" y="278" width="812" height="44" rx="10" fill="#2f5bd3"/>
+  <text x="942" y="312" fill="#0e1526" font-family="Arial, sans-serif" font-size="30" font-weight="700">24.36%<tspan font-size="22" font-weight="400" fill="#4a5367">  </tspan></text>
+  <text x="110" y="385" fill="#0e1526" font-family="Arial, sans-serif" font-size="28" font-weight="700">Changshuo (Ningbo) Enterprise Management</text>
+  <rect x="110" y="403" width="669" height="44" rx="10" fill="#2f5bd3"/>
+  <text x="799" y="437" fill="#0e1526" font-family="Arial, sans-serif" font-size="30" font-weight="700">20.08%<tspan font-size="22" font-weight="400" fill="#4a5367">  owned by the Huang family</tspan></text>
+  <text x="110" y="510" fill="#0e1526" font-family="Arial, sans-serif" font-size="28" font-weight="700">Zhang Liying</text>
+  <rect x="110" y="528" width="399" height="44" rx="10" fill="#2f5bd3"/>
+  <text x="529" y="562" fill="#0e1526" font-family="Arial, sans-serif" font-size="30" font-weight="700">11.99%<tspan font-size="22" font-weight="400" fill="#4a5367">  </tspan></text>
+  <text x="110" y="635" fill="#0e1526" font-family="Arial, sans-serif" font-size="28" font-weight="700">Huang Shi (son)</text>
+  <rect x="110" y="653" width="200" height="44" rx="10" fill="#2f5bd3"/>
+  <text x="330" y="687" fill="#0e1526" font-family="Arial, sans-serif" font-size="30" font-weight="700">6.00%<tspan font-size="22" font-weight="400" fill="#4a5367">  </tspan></text>
+  <text x="110" y="780" fill="#4a5367" font-family="Arial, sans-serif" font-size="22">Changshuo is owned 52% by Huang Yuchang, 28% by Zhang Liying and 20% by Huang Shi. Shanghai Stock Exchange: 605555.</text>
+</svg>

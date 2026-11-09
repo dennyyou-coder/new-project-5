@@ -9,6 +9,7 @@ export const HUB_CATEGORY_SLUGS = [
   "robot-vacuums",
   "vacuum-cleaners",
   "floor-washers",
+  "carpet-spot-cleaners",
   "pool-robots",
   "robotic-mowers",
   "commercial-cleaning",
@@ -53,6 +54,53 @@ export type HubCategory = {
    * (last 3 months, all pages). Only set where the data shows a clear lead.
    */
   searchPicks?: string[];
+  /**
+   * Kept out of navigation, listings and the sitemap (and marked noindex) while
+   * the hub has too little coverage to stand as a page of its own.
+   */
+  unlisted?: boolean;
+};
+
+/**
+ * Equipment-type profiles (content/equipment) linked from each hub's
+ * "Equipment types" module, so every technical profile has a contextual link.
+ */
+export const HUB_EQUIPMENT: Partial<Record<HubCategorySlug, string[]>> = {
+  "robot-vacuums": ["household-robot-vacuum", "commercial-robot-vacuum"],
+  "vacuum-cleaners": [
+    "cordless-stick-vacuum",
+    "handheld-vacuum-cleaner",
+    "upright-vacuum-cleaner",
+    "canister-vacuum-cleaner",
+    "wet-dry-vacuum",
+    "backpack-vacuum"
+  ],
+  "floor-washers": ["cordless-wet-dry-floor-cleaner", "steam-mop"],
+  "carpet-spot-cleaners": ["portable-carpet-upholstery-cleaner", "household-carpet-cleaner", "carpet-spot-extractor", "carpet-extractor"],
+  "pool-robots": ["robotic-pool-cleaner", "robotic-pool-skimmer"],
+  "commercial-cleaning": [
+    "floor-scrubber",
+    "walk-behind-floor-scrubber",
+    "ride-on-floor-scrubber",
+    "autonomous-floor-scrubber",
+    "combination-sweeper-scrubber",
+    "floor-sweeper",
+    "walk-behind-floor-sweeper",
+    "ride-on-floor-sweeper",
+    "floor-burnisher",
+    "single-disc-floor-machine",
+    "commercial-dry-vacuum",
+    "upright-commercial-vacuum",
+    "wide-area-vacuum",
+    "industrial-dust-extractor",
+    "commercial-steam-cleaner",
+    "commercial-air-mover",
+    "escalator-cleaner",
+    "commercial-pressure-washer",
+    "carpet-extractor"
+  ],
+  "small-appliances": ["air-purifier", "dehumidifier", "dishwasher", "front-load-washing-machine", "heat-pump-dryer", "washer-dryer-combo"],
+  "power-tools-outdoor": ["electric-pressure-washer", "cold-water-pressure-washer", "hot-water-pressure-washer"]
 };
 
 export const HUB_CATEGORY_GROUPS: { slug: HubCategoryGroup; label: string }[] = [
@@ -100,6 +148,28 @@ export const HUB_CATEGORIES: HubCategory[] = [
       newsCategories: ["Floor Washers"],
       newsTitleTerms: ["floor washer", "wet-dry floor cleaner", "wet dry floor cleaner"],
       productCategories: ["Floor washers"]
+    }
+  },
+  {
+    slug: "carpet-spot-cleaners",
+    name: "Carpet & spot cleaners",
+    group: "core-cleaning",
+    intro: "Portable spot cleaners, carpet cleaners and commercial carpet extractors: comparisons, buying guides and manufacturing.",
+    color: "#b4532a",
+    searchPicks: ["bissell-little-green-hydrosteam-vs-shark-stainstriker-hairpro", "hoover-cleanslate-vs-shark-stainstriker"],
+    rules: {
+      articleTags: [
+        "spot cleaner",
+        "spot cleaners",
+        "portable carpet cleaner",
+        "carpet cleaner",
+        "carpet extractor",
+        "commercial carpet extractor",
+        "carpet cleaning equipment",
+        "upholstery cleaner"
+      ],
+      newsTitleTerms: ["spot cleaner", "carpet cleaner", "carpet extractor", "upholstery cleaner"],
+      brandSlugs: ["bissell", "hoover", "shark", "karcher"]
     }
   },
   {
@@ -155,6 +225,7 @@ export const HUB_CATEGORIES: HubCategory[] = [
     slug: "window-robots",
     name: "Window robots",
     group: "core-cleaning",
+    unlisted: true,
     intro: "Window-cleaning robots and the brands that make them.",
     color: "#4a6b8a",
     rules: {
@@ -188,6 +259,9 @@ export const HUB_CATEGORIES: HubCategory[] = [
     }
   }
 ];
+
+/** Hubs shown in navigation, listings, search and the sitemap. */
+export const LISTED_HUB_CATEGORIES: HubCategory[] = HUB_CATEGORIES.filter((hub) => !hub.unlisted);
 
 const hubBySlug = new Map(HUB_CATEGORIES.map((hub) => [hub.slug, hub]));
 

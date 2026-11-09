@@ -2,13 +2,36 @@
   "status": "published",
   "slug": "whirlpool",
   "name": "Whirlpool",
+  "metaTitle": "Who Owns Whirlpool? Whirlpool Corporation, Beko Europe Licence and Brands",
   "aliases": ["Whirlpool Appliances", "Whirlpool brand"],
   "legalEntityNote": "Whirlpool is a consumer appliance brand owned by Whirlpool Corporation. Regional Whirlpool companies operate retained markets, while Beko Europe B.V. uses the Whirlpool brand under a licence limited to specified European jurisdictions. The legal seller, manufacturer, importer and warrantor vary by product and country.",
   "officialWebsite": "https://www.whirlpool.com/",
   "headline": "Whirlpool brand ownership, Beko Europe licensing and appliance responsibility",
   "description": "A source-backed profile separating the Whirlpool consumer brand, Whirlpool Corporation, Beko Europe's regional licence and model-level manufacturing and warranty responsibility.",
-  "metaDescription": "Whirlpool brand profile: Whirlpool Corporation ownership, Beko Europe licensing, products, manufacturing, channels and buyer verification.",
+  "metaDescription": "Whirlpool Corporation owns the Whirlpool brand; Beko Europe uses it under licence in parts of Europe. Ownership, CEO, factories and buyer checks.",
   "quickAnswer": "Whirlpool Corporation owns the Whirlpool brand. Beko Europe uses the name under licence in parts of Europe.",
+  "faq": [
+    {
+      "question": "Who owns the Whirlpool brand?",
+      "answer": "Whirlpool Corporation owns the Whirlpool brand. Beko Europe B.V. operates Whirlpool-branded major appliances under a licence limited to specified European countries."
+    },
+    {
+      "question": "Does Beko own Whirlpool?",
+      "answer": "No. Beko acquired Whirlpool Corporation's remaining 25% interest in Beko Europe in June 2026, but Beko Europe is a licensee of the Whirlpool name, not the global brand owner."
+    },
+    {
+      "question": "Is Whirlpool an American company?",
+      "answer": "Yes. Whirlpool Corporation is an American company headquartered in Benton Harbor, Michigan, and traces its history to 1911. In parts of Europe, Whirlpool-branded appliances are sold by Beko Europe under licence."
+    },
+    {
+      "question": "Where is Whirlpool headquartered?",
+      "answer": "Whirlpool Corporation is headquartered in Benton Harbor, Michigan, United States. Marc Bitzer is chairman and chief executive officer."
+    },
+    {
+      "question": "Where are Whirlpool appliances made?",
+      "answer": "Whirlpool Corporation reported that 80% of the major appliances it sold in the United States in 2025 came from its U.S. factories. Check the rating plate of a specific model for its origin."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Whirlpool Corporation or Beko Europe. Global brand ownership, regional licences, operating companies, factories, importers and warranties are separate layers and should not be generalized to every Whirlpool appliance.",
   "headquarters": "Benton Harbor, Michigan, United States (Whirlpool Corporation)",
   "founded": "1911 for the company that became Whirlpool Corporation",
@@ -183,5 +206,5 @@
   ],
   "publishedAt": "2026-08-06T14:30:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-11-05T22:00:00+08:00"
+  "lastModified": "2026-11-08T21:00:00+08:00"
 }

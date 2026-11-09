@@ -2,13 +2,28 @@
   "status": "published",
   "slug": "hotpoint",
   "name": "Hotpoint",
+  "metaTitle": "Who Owns Hotpoint? Beko Europe in Europe, GE Appliances (Haier) in the Americas",
   "aliases": ["Hotpoint Appliances", "Hotpoint UK", "Hotpoint Americas"],
   "legalEntityNote": "Hotpoint is a consumer appliance brand with separate regional rights and operating structures. In Europe, Hotpoint is operated within Beko Europe; in North America and the wider Americas, Hotpoint is owned and operated by GE Appliances, a Haier company. The trademark owner, seller, manufacturer, importer and warrantor must therefore be identified by market and product rather than inferred from the brand name alone.",
   "officialWebsite": "https://www.hotpoint.co.uk/",
   "headline": "Hotpoint appliances, regional operators and buyer responsibility",
   "description": "A source-backed Hotpoint brand profile separating the European Beko Europe operation from GE Appliances in the Americas, with products, manufacturing evidence, channels and model-level buyer checks.",
-  "metaDescription": "Hotpoint brand profile: European and Americas operators, appliances, manufacturing evidence, channels, warranties and buyer verification.",
+  "metaDescription": "Hotpoint has two owners: Beko Europe runs it in Europe and GE Appliances, a Haier company, owns it in the Americas. Factories, service and buyer checks.",
   "quickAnswer": "Hotpoint has two owners: Beko Europe runs it in Europe, and GE Appliances, a Haier company, owns it in the Americas.",
+  "faq": [
+    {
+      "question": "Who owns Hotpoint?",
+      "answer": "Hotpoint has separate regional owners. Beko Europe runs the brand in Europe, including the UK, and GE Appliances, a Haier company, owns it in the Americas."
+    },
+    {
+      "question": "Is Hotpoint owned by Haier?",
+      "answer": "Only in the Americas, where GE Appliances, a Haier company, owns the Hotpoint brand. In Europe, Hotpoint is part of Beko Europe."
+    },
+    {
+      "question": "Where are Hotpoint appliances made?",
+      "answer": "Beko Europe reports 11 production sites in Italy, Poland, Romania and Slovakia for its European brands, including Hotpoint. Check the exact model's rating plate and documents for its factory."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Hotpoint, Beko Europe, Beko, GE Appliances or Haier. Hotpoint rights and responsibilities differ by territory; this profile does not assign a factory, importer or warranty provider to an individual model without model-specific evidence.",
   "headquarters": "No single global Hotpoint operating headquarters; regional operations include Beko Europe and GE Appliances",
   "founded": "Official regional histories trace Hotpoint to 1903 in the United States and 1911 in the United Kingdom",
@@ -175,5 +190,5 @@
   ],
   "publishedAt": "2026-08-06T18:00:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T18:00:00+08:00"
+  "lastModified": "2026-11-08T21:00:00+08:00"
 }

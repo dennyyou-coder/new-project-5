@@ -32,7 +32,7 @@ export function hubVisual(data: HubCategoryData): HubVisual | undefined {
   if (photo) return { src: photo.src, kind: "photo", credit: photo.credit };
   const model = data.newModels[0];
   if (model) return { src: productCover(model.slug), kind: "product" };
-  const article = [...data.essential, ...data.analysis].find((item) => item.coverImage);
+  const article = [...data.essential, ...data.analysis, ...data.guides].find((item) => item.coverImage);
   return article?.coverImage ? { src: article.coverImage, kind: "cover" } : undefined;
 }
 

@@ -24,8 +24,9 @@ const data = {
 
 test("share links encode the canonical URL and title", () => {
   const links = getArticleShareLinks(data.title, data.url);
-  assert.deepEqual(links.map(({ id }) => id), ["linkedin", "x", "facebook", "whatsapp"]);
+  assert.deepEqual(links.map(({ id }) => id), ["linkedin", "x", "facebook", "whatsapp", "email"]);
   assert.ok(links.every(({ href }) => href.includes(encodeURIComponent(data.url))));
+  assert.match(links.find(({ id }) => id === "email").href, /^mailto:\?subject=/);
   assert.match(links.find(({ id }) => id === "x").href, /text=/);
   assert.match(links.find(({ id }) => id === "whatsapp").href, /text=/);
 });

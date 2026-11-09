@@ -1,8 +1,10 @@
 import { getBrandCategoriesForProfile } from "@/lib/brandCategories";
 import { getPublishedBrandProfiles, type BrandProfile } from "@/lib/brands";
 import { getInsights, type Insight } from "@/lib/content";
+import { getPublishedEquipmentProfiles } from "@/lib/equipment";
 import {
-  HUB_CATEGORIES,
+  LISTED_HUB_CATEGORIES,
+  HUB_EQUIPMENT,
   hubCategoriesForBrand,
   hubCategoriesForInsight,
   hubCategoriesForNews,
@@ -27,6 +29,8 @@ export type HubCategoryData = {
   newModels: ProductModel[];
   companies: BrandProfile[];
   feed: HubFeedItem[];
+  /** Equipment-type profiles for the hub, in the order listed in HUB_EQUIPMENT. */
+  equipment: { slug: string; name: string }[];
 };
 
 function dateKey(value: string) {
@@ -41,6 +45,7 @@ export function buildHubCategoryData(
     news: NewsArticle[];
     products: ProductModel[];
     brands: BrandProfile[];
+    equipment?: { slug: string; name: string }[];
   }
 ): HubCategoryData {
   const inHub = <T,>(items: T[], classify: (item: T) => string[]) =>
@@ -87,26 +92,39 @@ export function buildHubCategoryData(
     ...analysis.map((article) => ({ kind: "analysis" as const, date: article.sortDate || article.date, article }))
   ].sort((a, b) => dateKey(b.date) - dateKey(a.date));
 
-  return { hub, news, analysis, guides, essential, products, newModels, companies, feed };
+  const equipmentBySlug = new Map((source.equipment ?? []).map((item) => [item.slug, item]));
+  const equipment = (HUB_EQUIPMENT[hub.slug] ?? [])
+    .map((slug) => equipmentBySlug.get(slug))
+    .filter((item): item is { slug: string; name: string } => Boolean(item));
+
+  return { hub, news, analysis, guides, essential, products, newModels, companies, feed, equipment };
+}
+
+function publishedEquipment(brands: BrandProfile[]) {
+  return getPublishedEquipmentProfiles(new Set(brands.map(({ slug }) => slug))).map(({ slug, name }) => ({ slug, name }));
 }
 
 export function getHubCategoryData(hub: HubCategory): HubCategoryData {
   const insights = getInsights();
+  const brands = getPublishedBrandProfiles(insights);
   return buildHubCategoryData(hub, {
     insights,
     news: getNews(),
     products: productModels,
-    brands: getPublishedBrandProfiles(insights)
+    brands,
+    equipment: publishedEquipment(brands)
   });
 }
 
 export function getAllHubCategoryData(): HubCategoryData[] {
   const insights = getInsights();
+  const brands = getPublishedBrandProfiles(insights);
   const source = {
     insights,
     news: getNews(),
     products: productModels,
-    brands: getPublishedBrandProfiles(insights)
+    brands,
+    equipment: publishedEquipment(brands)
   };
-  return HUB_CATEGORIES.map((hub) => buildHubCategoryData(hub, source));
+  return LISTED_HUB_CATEGORIES.map((hub) => buildHubCategoryData(hub, source));
 }

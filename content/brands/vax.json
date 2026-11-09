@@ -2,14 +2,29 @@
   "status": "published",
   "slug": "vax",
   "name": "Vax",
+  "metaTitle": "Who Owns Vax? TTI Ownership of the UK Floorcare Brand",
   "aliases": ["VAX", "Vax UK"],
   "legalName": "Vax Limited",
   "legalEntityNote": "Vax is a TTI-owned floorcare brand centered on the United Kingdom. Vax Limited, Techtronic Cordless GP, group factories, logistics providers, retailers and service partners can hold distinct roles.",
   "officialWebsite": "https://www.vax.co.uk/",
   "headline": "Vax ownership, ONEPWR floorcare portfolio and UK channel strategy",
   "description": "A source-backed profile of Vax's TTI ownership, UK floorcare range, ONEPWR platform, manufacturing scope and direct-to-consumer route to market.",
-  "metaDescription": "Vax profile: TTI ownership, ONEPWR vacuums, carpet washers, floor cleaners, manufacturing, UK channels and buyer checks.",
+  "metaDescription": "Vax is owned by Techtronic Industries (TTI) of Hong Kong, which bought the UK floorcare brand in 1999. Products, base in Droitwich and channels.",
   "quickAnswer": "Vax is owned by Techtronic Industries (TTI) of Hong Kong, which bought the brand and its floorcare business in 1999.",
+  "faq": [
+    {
+      "question": "Who owns Vax?",
+      "answer": "Techtronic Industries (TTI) of Hong Kong owns Vax. It bought the brand and its floorcare business in 1999."
+    },
+    {
+      "question": "Is Vax a British company?",
+      "answer": "Vax is a UK brand dating to 1977 and based in Droitwich, Worcestershire, but its parent is Hong Kong-listed TTI."
+    },
+    {
+      "question": "Who founded Vax?",
+      "answer": "Alan Brazier founded Vax."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Vax or Techtronic Industries. TTI ownership does not identify the factory or warranty provider for every Vax product.",
   "headquarters": "Droitwich, Worcestershire, United Kingdom",
   "founded": "1977 brand history; acquired by TTI in 1999",
@@ -30,6 +45,36 @@
       "src": "/images/articles/tti-cleaning-appliance-strategy/02.webp",
       "alt": "TTI cleaning appliance brand portfolio including Vax",
       "caption": "Vax sits inside TTI's wider floorcare portfolio and has adopted the group's cordless platform logic."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/images/brands/vax/photos/01.webp",
+      "width": 1200,
+      "caption": "VAX SpotWash Max Pet-Design cleaning a car boot",
+      "credit": "Image: VAX",
+      "creditUrl": "https://www.vax.co.uk/carpet-cleaners-and-washers/spotwash-range/vax-spotwash-max-pet-design-and-car"
+    },
+    {
+      "src": "/images/brands/vax/photos/02.webp",
+      "width": 1200,
+      "caption": "VAX SpotWash cleaning a spill under a dining table",
+      "credit": "Image: VAX",
+      "creditUrl": "https://www.vax.co.uk/carpet-cleaners-and-washers/spotwash-range/vax-spotwash-max-pet-design-and-car"
+    },
+    {
+      "src": "/images/brands/vax/photos/03.webp",
+      "width": 1200,
+      "caption": "VAX Steam Fresh Total Home steam mop on a kitchen floor",
+      "credit": "Image: VAX",
+      "creditUrl": "https://www.vax.co.uk/steam-floor-cleaners/steam-fresh-home-floor-cleaner/vax-steam-fresh-total-home-steam-cleaner"
+    },
+    {
+      "src": "/images/brands/vax/photos/04.webp",
+      "width": 1200,
+      "caption": "VAX Steam Fresh handheld steamer cleaning an oven",
+      "credit": "Image: VAX",
+      "creditUrl": "https://www.vax.co.uk/steam-floor-cleaners/steam-fresh-home-floor-cleaner/vax-steam-fresh-total-home-steam-cleaner"
     }
   ],
   "ownership": {
@@ -156,5 +201,5 @@
   ],
   "publishedAt": "2026-07-31T21:45:00+08:00",
   "lastVerified": "2026-07-31",
-  "lastModified": "2026-07-31T21:45:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

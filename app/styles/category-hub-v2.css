@@ -119,7 +119,7 @@
 .hub-page.ch .ch-analysis-more li:first-child { border-top: 0; }
 .hub-page.ch .ch-analysis-more a { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 16px; align-items: center; padding: 14px 0; color: inherit; text-decoration: none; }
 .hub-page.ch .ch-analysis-more li:first-child a { padding-top: 0; }
-.hub-page.ch .ch-analysis-more .ch-thumb { aspect-ratio: 16 / 10; }
+.hub-page.ch .ch-analysis-more .ch-thumb { display: block; aspect-ratio: 16 / 9; }
 .hub-page.ch .ch-analysis-more b { display: block; margin-top: 3px; font-size: 16px; line-height: 1.35; color: var(--hub-ink); }
 .hub-page.ch .ch-analysis-more a:hover b { color: var(--hub-link); }
 
@@ -133,6 +133,14 @@
 .hub-page.ch .ch-guides li { padding: 10px 0; border-top: 1px solid var(--hub-line); }
 .hub-page.ch .ch-guides li a { font-size: 15px; font-weight: 600; line-height: 1.45; color: var(--hub-ink); }
 .hub-page.ch .ch-guides li a:hover { color: var(--hub-link); }
+.hub-page.ch .ch-equipment ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.hub-page.ch .ch-equipment a { display: inline-block; padding: 7px 12px; border: 1px solid var(--hub-line); border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--hub-ink); text-decoration: none; }
+.hub-page.ch .ch-equipment a:hover { border-color: var(--hub-link); color: var(--hub-link); }
+.hub-page.ch .ch-archive summary { display: inline-block; margin-bottom: 12px; padding: 8px 14px; border: 1px solid var(--hub-line); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--hub-ink); cursor: pointer; list-style: none; }
+.hub-page.ch .ch-archive summary::-webkit-details-marker { display: none; }
+.hub-page.ch .ch-archive summary:hover { color: var(--hub-link); border-color: var(--hub-link); }
+.hub-page.ch .ch-archive li { padding: 7px 0; }
+.hub-page.ch .ch-archive li a { font-size: 14px; font-weight: 500; }
 
 @media (max-width: 860px) {
   .hub-page.ch .ch-news, .hub-page.ch .ch-analysis, .hub-page.ch .ch-guides ul { grid-template-columns: 1fr; }

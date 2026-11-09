@@ -10,8 +10,26 @@
   "officialWebsite": "https://global.roborock.com/",
   "headline": "Roborock: listed-company ownership and expansion beyond floor care",
   "description": "Roborock is a Shanghai-listed cleaning technology company controlled by founder Chang Jing. Its portfolio now spans robot vacuums, wet-and-dry cleaners, washer-dryers, robotic mowers and RockAqua pool robots. Xiaomi-linked investment is a minority holding, not parent-company ownership.",
-  "metaDescription": "Roborock company profile: Chang Jing’s control, Xiaomi-linked minority stake, 2026 results, Saros floorcare, RockMow and RockAqua pool robots.",
+  "metaDescription": "Roborock is listed in Shanghai and controlled by founder Chang Jing (20.97%). Xiaomi holds a minority stake. Products, results and expansion.",
   "quickAnswer": "Roborock is listed in Shanghai and controlled by founder Chang Jing. Xiaomi is only a minority investor.",
+  "faq": [
+    {
+      "question": "Who owns Roborock?",
+      "answer": "Roborock is listed on the Shanghai Stock Exchange and controlled by founder Chang Jing, who held 20.97% at 30 June 2026."
+    },
+    {
+      "question": "Is Roborock owned by Xiaomi?",
+      "answer": "No. An investment entity within Xiaomi's structure held 2.49% at 30 June 2026, a minority stake rather than control."
+    },
+    {
+      "question": "What country is Roborock from?",
+      "answer": "China. Roborock was founded in July 2014 and is headquartered in Beijing."
+    },
+    {
+      "question": "What does Roborock make?",
+      "answer": "Robot vacuums and other floorcare products, plus RockMow robotic mowers and RockAqua pool robots."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Roborock or Xiaomi. Company statements and filings are identified separately from World Clean Biz analysis.",
   "headquarters": "Beijing, China",
   "founded": "July 2014",
@@ -38,6 +56,43 @@
       "src": "/images/blog/roborock-vs-dreame-platform-comparison.webp",
       "alt": "Platform comparison of Roborock and Dreame cleaning products",
       "caption": "This diagram helps buyers compare Roborock and Dreame across their cleaning-product platforms."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/images/brands/roborock/photos/01.webp",
+      "width": 1200,
+      "caption": "Roborock launch stage and audience at IFA 2026, Berlin",
+      "credit": "Image: Roborock",
+      "creditUrl": "https://us.roborock.com/pages/ifa-2026"
+    },
+    {
+      "src": "/images/brands/roborock/photos/02.webp",
+      "width": 1024,
+      "caption": "Production line at Roborock’s manufacturing base in Huizhou",
+      "credit": "Photo: Xinhua",
+      "creditUrl": "https://www.xinhuanet.com/photo/20251025/32394580517042d0b717d1d6add691e4/c.html"
+    },
+    {
+      "src": "/images/brands/roborock/photos/03.webp",
+      "width": 1024,
+      "caption": "Aerial view of the Huizhou manufacturing base and loading bays",
+      "credit": "Photo: Xinhua",
+      "creditUrl": "https://www.xinhuanet.com/photo/20251025/32394580517042d0b717d1d6add691e4/c.html"
+    },
+    {
+      "src": "/images/brands/roborock/photos/04.webp",
+      "width": 1024,
+      "caption": "Roborock brand store near Seoul, South Korea",
+      "credit": "Photo: Xinhua",
+      "creditUrl": "https://www.xinhuanet.com/photo/20251025/32394580517042d0b717d1d6add691e4/c.html"
+    },
+    {
+      "src": "/images/brands/roborock/photos/05.webp",
+      "width": 1200,
+      "caption": "Saros 20 Flow cleaning a living room",
+      "credit": "Image: Roborock",
+      "creditUrl": "https://global.roborock.com/pages/roborock-saros-20-flow"
     }
   ],
   "ownership": {
@@ -271,6 +326,6 @@
   ],
   "publishedAt": "2026-07-30T00:27:34+08:00",
   "lastVerified": "2026-09-12",
-  "lastModified": "2026-10-25T11:01:21+08:00",
-  "metaTitle": "Roborock Company Profile: Ownership, Products & Expansion"
+  "lastModified": "2026-11-08T23:00:00+08:00",
+  "metaTitle": "Who Owns Roborock? Founder Chang Jing, Xiaomi Stake and Products"
 }

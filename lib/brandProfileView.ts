@@ -149,3 +149,56 @@ export function foundedShort(founded: string): string {
   if (/\b\d{4}\s+or\s+\d{4}\b/.test(founded)) return founded.replace(/\s*\([^)]*\)/g, "").trim();
   return foundedYear(founded) ?? founded;
 }
+
+const GENERIC_BRAND_WORDS = new Set(["home", "appliances", "household", "power", "tools", "robotics", "industries", "group", "and"]);
+
+/**
+ * The ownership guide a company page should point to. Several guides can name
+ * the same company (a parent's portfolio piece, a sister brand's guide); the
+ * one about this company comes first: its name right after "who owns" or
+ * "who makes" in the slug, then its name anywhere in the slug or title.
+ */
+export function pickOwnershipGuide<T extends { slug: string; title: string; contentClass?: string; guideType?: string; primaryBrands: string[] }>(
+  profile: { slug: string; name: string },
+  articles: readonly T[]
+): T | undefined {
+  const candidates = articles.filter(
+    (article) => article.contentClass === "search" && article.guideType === "ownership" && article.primaryBrands.includes(profile.slug)
+  );
+  const tokens = profile.slug.split("-").filter((word) => word.length > 2 && !GENERIC_BRAND_WORDS.has(word));
+  const lead = tokens[0];
+  const score = (article: T) => {
+    let value = 0;
+    if (lead && new RegExp(`^(who-owns|who-makes|is)-(the-)?${lead}\\b`).test(article.slug)) value += 3;
+    if (tokens.some((token) => article.slug.includes(token))) value += 1;
+    if (article.title.toLowerCase().includes(profile.name.toLowerCase())) value += 1;
+    return value;
+  };
+  return candidates
+    .map((article, index) => ({ article, index, value: score(article) }))
+    .sort((a, b) => b.value - a.value || a.index - b.index)[0]?.article;
+}
+
+/** URL-style tokens a comparison slug uses for this company: its slug, name and aliases. */
+function brandSlugTokens(profile: { slug: string; name: string; aliases?: string[] }) {
+  const slugify = (value: string) => value.toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return [...new Set([profile.slug, profile.name, ...(profile.aliases ?? [])].map(slugify).filter((token) => token.length > 2))];
+}
+
+/**
+ * Comparison guides about a company, for its "Compare" block. Many comparisons
+ * carry no primary brands, so they are matched by the company's name in the
+ * slug (roborock-vs-dreame-…, …-vs-roborock-…) as well as by primary brands.
+ */
+export function pickComparisonGuides<T extends { slug: string; guideType?: string; primaryBrands: string[]; sortDate?: string; date?: string }>(
+  profile: { slug: string; name: string; aliases?: string[] },
+  articles: readonly T[],
+  limit = 4
+): T[] {
+  const tokens = brandSlugTokens(profile);
+  const mentions = (slug: string) => tokens.some((token) => new RegExp(`(^|-)${token}(-|$)`).test(slug));
+  return articles
+    .filter((article) => article.guideType === "comparison" && (article.primaryBrands.includes(profile.slug) || mentions(article.slug)))
+    .sort((a, b) => String(b.sortDate || b.date || "").localeCompare(String(a.sortDate || a.date || "")))
+    .slice(0, limit);
+}

@@ -16,10 +16,10 @@ import { productModels } from "../lib/products.ts";
 import { getPublishedBrandProfiles } from "../lib/brands.ts";
 import { getBrandCategoriesForProfile } from "../lib/brandCategories.ts";
 
-test("nine hubs with unique slugs, names, groups and colours", () => {
-  assert.equal(HUB_CATEGORIES.length, 9);
+test("ten hubs with unique slugs, names, groups and colours", () => {
+  assert.equal(HUB_CATEGORIES.length, 10);
   assert.deepEqual(HUB_CATEGORIES.map((hub) => hub.slug), [...HUB_CATEGORY_SLUGS]);
-  assert.equal(new Set(HUB_CATEGORIES.map((hub) => hub.name)).size, 9);
+  assert.equal(new Set(HUB_CATEGORIES.map((hub) => hub.name)).size, 10);
   for (const hub of HUB_CATEGORIES) {
     assert.match(hub.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.match(hub.color, /^#[0-9a-f]{6}$/);
@@ -93,7 +93,8 @@ test("hub pages are in the discovery sitemap and each has content to show", asyn
   const urls = new Set(buildDiscoverySitemap().map((entry) => entry.url));
   assert.ok(urls.has("https://worldcleanbiz.com/categories"));
   for (const hub of HUB_CATEGORIES) {
-    assert.ok(urls.has(`https://worldcleanbiz.com/categories/${hub.slug}`), `${hub.slug} in sitemap`);
+    // Unlisted (thin) hubs are kept out of the sitemap until they have coverage.
+    assert.equal(urls.has(`https://worldcleanbiz.com/categories/${hub.slug}`), !hub.unlisted, `${hub.slug} in sitemap`);
   }
   for (const data of getAllHubCategoryData()) {
     const modules = [data.feed, data.newModels, data.essential, data.companies, data.guides].filter((list) => list.length > 0);
@@ -123,4 +124,15 @@ test("robotic mowers list the Automower, Landroid and other mower makers without
   for (const slug of ["husqvarna", "worx", "segway-navimow", "mammotion"]) assert.ok(slugs.includes(slug), slug);
   const published = new Set((await import("../lib/brands.ts")).getPublishedBrandProfiles((await import("../lib/content.ts")).getInsights()).map((p) => p.slug));
   for (const hub of HUB_CATEGORIES) for (const slug of hub.rules.brandSlugs ?? []) assert.ok(published.has(slug), `${hub.slug}: ${slug} is a published profile`);
+});
+
+test("every published equipment type is linked from a category hub", async () => {
+  const { HUB_EQUIPMENT } = await import("../lib/hubCategories.ts");
+  const { getAllHubCategoryData } = await import("../lib/hubCategoryContent.ts");
+  const { getEquipmentProfiles } = await import("../lib/equipment.ts");
+  const published = getEquipmentProfiles().filter((profile) => profile && profile.status === "published").map((profile) => profile.slug);
+  const known = new Set(getEquipmentProfiles().map((profile) => profile?.slug));
+  for (const slugs of Object.values(HUB_EQUIPMENT)) for (const slug of slugs) assert.ok(known.has(slug), `unknown equipment ${slug}`);
+  const linked = new Set(getAllHubCategoryData().flatMap((data) => data.equipment.map((item) => item.slug)));
+  for (const slug of published) assert.ok(linked.has(slug), `${slug} is on no hub`);
 });

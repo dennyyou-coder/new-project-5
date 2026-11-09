@@ -2,14 +2,29 @@
   "status": "published",
   "slug": "braun-household",
   "name": "Braun Household",
+  "metaTitle": "Who Owns Braun Household Appliances? P&G Trademark, De'Longhi Licence",
   "aliases": ["Braun Haushaltsgeräte", "BRAUN Household", "Braun small household appliances"],
   "legalEntityNote": "Braun Household is the consumer identity for small household appliances operated under De’Longhi's perpetual licence; it is not a universal Braun legal entity. Procter & Gamble holds the Braun trademark, while De’Longhi's official filings say P&G assigned the group a perpetual licence for Braun-branded small household appliances. Braun personal care, shavers and Oral-B remain outside this household-appliance scope, and regional De’Longhi companies can hold different sales, website and warranty roles.",
   "schemaEntityType": "Brand",
   "officialWebsite": "https://www.braunhousehold.com/en",
   "headline": "Braun Household appliances across trademark, licence and operating boundaries",
   "description": "A source-backed profile of Braun Household, separating P&G trademark ownership, De’Longhi's household-appliance licence, regional operators, product portfolio, channels and model checks.",
-  "metaDescription": "Braun Household brand profile: P&G trademark, De’Longhi licence, appliance portfolio, channels and buyer verification.",
+  "metaDescription": "Procter & Gamble owns the Braun trademark; De'Longhi makes and sells Braun household appliances under a perpetual licence since 2012.",
   "quickAnswer": "Procter & Gamble owns the Braun trademark. De'Longhi makes and sells Braun household appliances under a perpetual licence from P&G.",
+  "faq": [
+    {
+      "question": "Who owns Braun?",
+      "answer": "Procter & Gamble owns the Braun trademark."
+    },
+    {
+      "question": "Who makes Braun kitchen appliances?",
+      "answer": "De'Longhi makes and sells Braun household appliances under a perpetual licence from P&G, in place since 2012."
+    },
+    {
+      "question": "Is Braun a German brand?",
+      "answer": "Yes. Braun was founded in Germany in 1921; the Braun Household brand office is in Neu-Isenburg."
+    }
+  ],
   "disclaimer": "World Clean Biz is independent and is not affiliated with Braun, P&G or De’ Longhi S.p.A. Trademark and licence evidence does not identify the legal manufacturer, factory, importer, seller or warrantor for every Braun household appliance.",
   "headquarters": "Neu-Isenburg, Germany (Braun Household brand office); Treviso, Italy (De’ Longhi S.p.A.)",
   "founded": "Braun founded in 1921; household-appliance licence transferred to De’Longhi in 2012",
@@ -65,5 +80,5 @@
   ],
   "publishedAt": "2026-08-07T14:52:59+08:00",
   "lastVerified": "2026-08-07",
-  "lastModified": "2026-08-07T14:52:59+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

@@ -20,6 +20,34 @@
     "The case has moved slowly but steadily. Imports have been subject to registration since January 2026, which keeps open the possibility of collecting duties retroactively. In June the Commission decided not to impose provisional duties, citing the case's technical complexity. In October it issued its disclosure of essential facts, the last major step before a final decision.",
     "Europe is the most developed robotic mower market and the main battleground for Chinese brands that have grown on wire-free navigation, RTK, vision and all-wheel drive. A definitive duty would raise the cost of China-made mowers just as dealers place orders for the 2027 spring season, and would reward companies that have already moved production elsewhere."
   ],
+  "chart": {
+    "type": "bars",
+    "title": "Proposed anti-dumping duty rates reported at disclosure",
+    "unit": "%",
+    "note": "Reported by Motorist via Ideamower; not published by the European Commission and not confirmed. Final rates are due by 19 January 2027.",
+    "rows": [
+      {
+        "label": "Mammotion",
+        "segments": [
+          45.6
+        ],
+        "href": "/brands/mammotion"
+      },
+      {
+        "label": "Other cooperating producers",
+        "segments": [
+          47
+        ]
+      },
+      {
+        "label": "Positec and all other producers",
+        "segments": [
+          53.3
+        ],
+        "href": "/brands/worx"
+      }
+    ]
+  },
   "keyFacts": [
     {
       "label": "Case",

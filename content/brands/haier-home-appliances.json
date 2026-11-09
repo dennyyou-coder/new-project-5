@@ -2,14 +2,33 @@
   "status": "published",
   "slug": "haier-home-appliances",
   "name": "Haier Home Appliances",
+  "metaTitle": "Who Owns Haier? Haier Group, Haier Smart Home and Its Brands",
   "aliases": ["Haier Appliances", "Haier Smart Home", "海尔智家"],
   "legalName": "Haier Smart Home Co., Ltd.",
   "legalEntityNote": "Haier is a consumer appliance brand operated within Haier Smart Home Co., Ltd., the listed home-appliance platform controlled within the wider Haier Group. GE Appliances, Fisher & Paykel, Candy and other portfolio businesses retain separate brand and operating identities; regional Haier entities can hold local sales, manufacturing, import or service roles.",
   "officialWebsite": "https://www.haier.com/global/",
   "headline": "Haier appliance ownership, global portfolio, manufacturing and channels",
   "description": "A source-backed profile separating the Haier consumer brand, Haier Smart Home and Haier Group, with products, global operations, regional entities and buyer checks.",
-  "metaDescription": "Haier Home Appliances profile: Haier Smart Home and Haier Group boundaries, product portfolio, global operations, channels and buyer verification.",
+  "metaDescription": "Haier is a Chinese brand from Qingdao, run by listed Haier Smart Home within Haier Group, which also owns GE Appliances and Fisher & Paykel.",
   "quickAnswer": "Haier is the core brand of listed Haier Smart Home, controlled within China's Haier Group, which also owns GE Appliances and Fisher & Paykel.",
+  "faq": [
+    {
+      "question": "Who owns Haier?",
+      "answer": "Haier is the core brand of Haier Smart Home Co., Ltd., a listed company controlled within China's Haier Group."
+    },
+    {
+      "question": "What country is Haier from?",
+      "answer": "China. Haier is headquartered in Qingdao, Shandong; the enterprise that became today's Haier dates to 1984."
+    },
+    {
+      "question": "What brands does Haier own?",
+      "answer": "Haier Smart Home reports a multi-brand portfolio that includes GE Appliances and Fisher & Paykel, alongside the Haier brand."
+    },
+    {
+      "question": "Is GE Appliances owned by Haier?",
+      "answer": "Yes. GE Appliances is part of Haier Smart Home's portfolio, though it operates as a separate company from the Haier brand."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with Haier. Haier Group, Haier Smart Home, the Haier consumer brand, acquired portfolio companies, regional entities and physical factories are distinct layers and should not be generalized to every appliance or SKU.",
   "headquarters": "Qingdao, Shandong, China",
   "founded": "1984 for the enterprise that developed into today's Haier",
@@ -167,5 +186,5 @@
   ],
   "publishedAt": "2026-08-06T11:33:00+08:00",
   "lastVerified": "2026-08-06",
-  "lastModified": "2026-08-06T11:33:00+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

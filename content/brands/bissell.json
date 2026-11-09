@@ -2,6 +2,7 @@
   "status": "published",
   "slug": "bissell",
   "name": "BISSELL",
+  "metaTitle": "Who Owns BISSELL? Family-Owned Company in Grand Rapids, Michigan",
   "aliases": [
     "Bissell",
     "Bissell Homecare"
@@ -10,8 +11,26 @@
   "officialWebsite": "https://www.bissell.com",
   "headline": "BISSELL family ownership, floorcare portfolio and Sanitaire boundary",
   "description": "A source-backed profile of BISSELL's family ownership, consumer floorcare portfolio, international supply chain and separately positioned Sanitaire commercial brand.",
-  "metaDescription": "BISSELL company profile: family ownership, Homecare structure, Sanitaire scope, products, supply chain, channels and competitive strategy.",
+  "metaDescription": "BISSELL is a private, fifth-generation family company founded in 1876 and based in Grand Rapids, Michigan. Owners, CEO, products and channels.",
   "quickAnswer": "BISSELL is a private company owned and led by the BISSELL family for five generations.",
+  "faq": [
+    {
+      "question": "Who owns BISSELL?",
+      "answer": "BISSELL is a private company owned and led by the BISSELL family for five generations. BISSELL Homecare, Inc. is wholly owned by BISSELL Inc."
+    },
+    {
+      "question": "Is BISSELL an American company?",
+      "answer": "Yes. BISSELL was founded in 1876 and is headquartered in Grand Rapids, Michigan."
+    },
+    {
+      "question": "Who runs BISSELL?",
+      "answer": "Adam Madigan is chief executive officer and Mark Bissell is executive chairman."
+    },
+    {
+      "question": "Is BISSELL publicly traded?",
+      "answer": "No. BISSELL is privately held and does not publish a shareholder list."
+    }
+  ],
   "disclaimer": "World Clean Biz is an independent industry publication and is not affiliated with BISSELL or Sanitaire. Supply-chain countries do not identify the factory for a specific model, and Sanitaire commercial products are not presented as the entire BISSELL consumer portfolio.",
   "headquarters": "Grand Rapids, Michigan, United States",
   "founded": "1876",
@@ -38,6 +57,43 @@
       "src": "/images/blog/tineco-vs-bissell-crosswave-floor-washer-systems.webp",
       "alt": "System comparison of Tineco floor washers and BISSELL CrossWave",
       "caption": "This comparison helps readers understand how BISSELL CrossWave competes with Tineco floor-washer systems."
+    }
+  ],
+  "photos": [
+    {
+      "src": "/images/brands/bissell/photos/01.webp",
+      "width": 1200,
+      "caption": "BISSELL PowerClean DualBrush cordless vacuum picking up debris under a table",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/powerclean-dualbrush"
+    },
+    {
+      "src": "/images/brands/bissell/photos/02.webp",
+      "width": 1200,
+      "caption": "SpotClean HydroSteam cleaning a pet bed",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/spotclean-hydrosteam-3689f"
+    },
+    {
+      "src": "/images/brands/bissell/photos/03.webp",
+      "width": 1200,
+      "caption": "SpotClean HydroSteam treating a stain on a sofa",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/spotclean-hydrosteam-3689f"
+    },
+    {
+      "src": "/images/brands/bissell/photos/04.webp",
+      "width": 1200,
+      "caption": "SpotClean HydroSteam cleaning a car boot",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/spotclean-hydrosteam-3689f"
+    },
+    {
+      "src": "/images/brands/bissell/photos/05.webp",
+      "width": 1200,
+      "caption": "Revolution HydroSteam carpet cleaner in use",
+      "credit": "Image: BISSELL",
+      "creditUrl": "https://bissell.com.au/products/revolution-hydrosteam-3670f"
     }
   ],
   "ownership": {
@@ -244,5 +300,5 @@
   ],
   "publishedAt": "2026-07-30T01:06:01+08:00",
   "lastVerified": "2026-07-30",
-  "lastModified": "2026-10-18T11:12:39+08:00"
+  "lastModified": "2026-11-08T23:00:00+08:00"
 }

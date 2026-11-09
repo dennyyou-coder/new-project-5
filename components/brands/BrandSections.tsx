@@ -40,7 +40,7 @@ export function BrandSections({
   parentMark,
   models,
   competitors,
-  ownershipAnalysisHref,
+  ownershipGuide,
   latest
 }: {
   profile: BrandProfile;
@@ -48,7 +48,8 @@ export function BrandSections({
   parentMark?: BrandMark;
   models: BrandModelCard[];
   competitors: BrandCompetitorCard[];
-  ownershipAnalysisHref?: string;
+  /** The in-depth "who owns" guide for this company, linked under the answer. */
+  ownershipGuide?: { href: string; title: string };
   /** "Latest at …" card, shown right after the ownership answer. */
   latest?: React.ReactNode;
 }) {
@@ -106,8 +107,13 @@ export function BrandSections({
           <p className="bp-answer-text">{quickAnswer}</p>
           <p className="bp-answer-meta">
             Verified {formatBrandDate(profile.lastVerified, "long")} · {profile.sources.length} sources
-            {ownershipAnalysisHref ? <> · <Link className="wcb-more" href={ownershipAnalysisHref}>Full ownership analysis</Link></> : null}
           </p>
+          {ownershipGuide ? (
+            <Link className="bp-answer-guide" href={ownershipGuide.href}>
+              <span>Full ownership guide</span>
+              <b>{ownershipGuide.title}</b>
+            </Link>
+          ) : null}
         </section>
       ) : null}
 

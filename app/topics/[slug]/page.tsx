@@ -2,9 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { responsiveImageProps } from "@/lib/articleImages";
-import { newsDate } from "@/lib/news";
+import { getNews, getNewsVisual, newsDate } from "@/lib/news";
+import { getInsights } from "@/lib/content";
+import { getPublishedBrandProfiles } from "@/lib/brands";
+import { buildBrandMarkIndex } from "@/lib/brandMarks";
+import { CompanyMark } from "@/components/ui/CompanyMark";
+import { TopicChart } from "@/components/topics/TopicChart";
+import { ShareBar } from "@/components/share/ShareBar";
+import { compareKeyBrands } from "@/lib/keyBrands";
 import { seoDescription, seoTitle } from "@/lib/seo";
-import { getTopic, getTopics, topicDate } from "@/lib/topics";
+import { getTopic, getTopics, topicDate, topicImageSmall } from "@/lib/topics";
 
 type PageParams = Promise<{ slug: string }>;
 
@@ -35,6 +42,37 @@ export default async function TopicPage({ params }: { params: PageParams }) {
   const { slug } = await params;
   const topic = getTopic(slug);
   if (!topic) notFound();
+
+  // Pictures for timeline and news entries: the story's own visual, or the analysis cover.
+  const news = getNews();
+  const insights = getInsights();
+  const thumbFor = (href?: string) => {
+    if (!href) return undefined;
+    const [, kind, itemSlug] = href.split("/");
+    if (kind === "news") {
+      const item = news.find((entry) => entry.slug === itemSlug);
+      const visual = item ? getNewsVisual(item) : undefined;
+      return visual && visual.label !== "Industry context" ? { src: visual.src, contain: visual.fit === "contain" } : undefined;
+    }
+    if (kind === "blog") {
+      const article = insights.find((entry) => entry.slug === itemSlug);
+      return article?.coverImage ? { src: article.coverImage, contain: false } : undefined;
+    }
+    return undefined;
+  };
+
+  // Companies in this topic: those tagged on its news and analysis, most-mentioned first.
+  const profiles = getPublishedBrandProfiles(insights);
+  const marks = buildBrandMarkIndex(profiles);
+  const mentions = new Map<string, number>();
+  for (const slugs of [...topic.newsArticles.map((item) => item.brandSlugs), ...topic.insightArticles.map((item) => item.primaryBrands)]) {
+    for (const brand of new Set(slugs)) mentions.set(brand, (mentions.get(brand) ?? 0) + 1);
+  }
+  const companies = [...mentions.entries()]
+    .filter(([brand]) => marks.has(brand))
+    .sort((a, b) => b[1] - a[1] || compareKeyBrands(a[0], b[0]) || a[0].localeCompare(b[0]))
+    .slice(0, 12)
+    .map(([brand]) => marks.get(brand)!);
 
   const url = `${siteUrl}/topics/${topic.slug}`;
   const schema = [
@@ -74,7 +112,8 @@ export default async function TopicPage({ params }: { params: PageParams }) {
   return (
     <article className="topic-page">
       <header className="topic-hero">
-        <div className="topic-container">
+        <div className={`topic-container${topic.coverImage ? " topic-hero-grid" : ""}`}>
+          <div className="topic-hero-copy">
           <nav className="topic-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link>
             <span aria-hidden="true">/</span>
@@ -87,8 +126,41 @@ export default async function TopicPage({ params }: { params: PageParams }) {
             <strong>{topic.status.label}</strong>
             <p>{topic.status.text}</p>
           </div>
+          <ShareBar title={topic.title} url={url} />
+          </div>
+          {topic.coverImage ? (
+            <figure className="topic-hero-media">
+              <img
+                src={topicImageSmall(topic.coverImage)}
+                srcSet={`${topicImageSmall(topic.coverImage)} 600w, ${topic.coverImage} 1000w`}
+                sizes="(max-width: 900px) calc(100vw - 32px), 460px"
+                alt=""
+                width={600}
+                height={375}
+                fetchPriority="high"
+              />
+              {topic.coverCredit ? <figcaption>{topic.coverCredit.text}</figcaption> : null}
+            </figure>
+          ) : null}
         </div>
       </header>
+
+      {companies.length ? (
+        <nav className="topic-companies" aria-label="Companies in this topic">
+          <div className="topic-container">
+            <span className="topic-companies-label">Companies in this topic</span>
+            <ul>
+              {companies.map((mark) => (
+                <li key={mark.slug}>
+                  <Link href={`/brands/${mark.slug}`} title={mark.name}>
+                    <CompanyMark mark={mark} size="sm" showName />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      ) : null}
 
       <div className="topic-container topic-layout">
         <div className="topic-main">
@@ -97,6 +169,7 @@ export default async function TopicPage({ params }: { params: PageParams }) {
             {topic.summary.map((paragraph) => (
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
+            {topic.chart ? <TopicChart chart={topic.chart} /> : null}
           </section>
 
           {topic.callout ? (
@@ -115,9 +188,19 @@ export default async function TopicPage({ params }: { params: PageParams }) {
               {topic.timeline.map((event) => (
                 <li key={`${event.date}-${event.title}`}>
                   <time dateTime={event.date}>{topicDate(event.date)}</time>
-                  <div>
-                    <h3>{event.href ? <Link href={event.href}>{event.title}</Link> : event.title}</h3>
-                    <p>{event.text}</p>
+                  <div className="topic-event">
+                    <div>
+                      <h3>{event.href ? <Link href={event.href}>{event.title}</Link> : event.title}</h3>
+                      <p>{event.text}</p>
+                    </div>
+                    {(() => {
+                      const thumb = thumbFor(event.href);
+                      return thumb && event.href ? (
+                        <Link className={`topic-event-thumb${thumb.contain ? " is-contain" : ""}`} href={event.href} tabIndex={-1} aria-hidden="true">
+                          <img src={thumb.src} alt="" loading="lazy" decoding="async" />
+                        </Link>
+                      ) : null;
+                    })()}
                   </div>
                 </li>
               ))}
@@ -156,8 +239,18 @@ export default async function TopicPage({ params }: { params: PageParams }) {
               <ul className="topic-news">
                 {topic.newsArticles.map((article) => (
                   <li key={article.slug}>
-                    <time dateTime={article.eventDate}>{newsDate(article.eventDate)}</time>
-                    <Link href={`/news/${article.slug}`}>{article.title}</Link>
+                    {(() => {
+                      const thumb = thumbFor(`/news/${article.slug}`);
+                      return thumb ? (
+                        <span className={`topic-news-thumb${thumb.contain ? " is-contain" : ""}`} aria-hidden="true">
+                          <img src={thumb.src} alt="" loading="lazy" decoding="async" />
+                        </span>
+                      ) : null;
+                    })()}
+                    <span className="topic-news-copy">
+                      <time dateTime={article.eventDate}>{newsDate(article.eventDate)}</time>
+                      <Link href={`/news/${article.slug}`}>{article.title}</Link>
+                    </span>
                   </li>
                 ))}
               </ul>

@@ -7,8 +7,8 @@ const read = (path) =>
   readFile(new URL(`../${path}`, import.meta.url), "utf8").catch(() => "");
 
 const [landing, category, directory, css] = await Promise.all([
-  read("app/guides/page.tsx"),
-  read("app/guides/[type]/page.tsx"),
+  read("app/guides/listing.tsx"),
+  Promise.all([read("app/guides/[type]/page.tsx"), read("app/guides/[type]/listing.tsx")]).then((parts) => parts.join("\n")),
   read("components/ContentDirectory.tsx"),
   Promise.resolve(readRouteStyles("content-directories.css"))
 ]);

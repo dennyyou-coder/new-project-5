@@ -1,3 +1,4 @@
+import { ShareBar } from "@/components/share/ShareBar";
 import type { Metadata } from "next";
 import { getArticleImage } from "@/lib/articleImages";
 import { siteVisualProps } from "@/lib/siteVisuals";
@@ -93,6 +94,7 @@ export default function WcbExpoPage() {
       Suzhou Shishan Convention Center · Suzhou, China
      </span>
     </p>
+    <ShareBar title="WCB Expo 2026 · 18–20 November · Suzhou" url="https://worldcleanbiz.com/wcb-expo" />
     <ul className="v6-stats" aria-label="WCB Expo 2026 at a glance">
      <li><strong>3 days</strong><span>Forums, matchmaking, launches</span></li>
      <li><strong>100+</strong><span>Exhibiting companies</span></li>

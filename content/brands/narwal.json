@@ -42,6 +42,29 @@
       "caption": "This map compares the product-system positioning of Narwal and Roborock without treating brand-level claims as model test results."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/narwal/photos/01.webp",
+      "width": 1200,
+      "caption": "Narwal Freo Z10 Turbo in a family living room",
+      "credit": "Image: Narwal",
+      "creditUrl": "https://us.narwal.com/products/freo-z10-turbo-robot-vacuum-and-mop"
+    },
+    {
+      "src": "/images/brands/narwal/photos/02.webp",
+      "width": 1200,
+      "caption": "Freo Z10 Turbo and its base station in a pet household",
+      "credit": "Image: Narwal",
+      "creditUrl": "https://us.narwal.com/products/freo-z10-turbo-robot-vacuum-and-mop"
+    },
+    {
+      "src": "/images/brands/narwal/photos/03.webp",
+      "width": 1200,
+      "caption": "Freo Z10 Turbo in an open-plan living space",
+      "credit": "Image: Narwal",
+      "creditUrl": "https://us.narwal.com/products/freo-z10-turbo-robot-vacuum-and-mop"
+    }
+  ],
   "ownership": {
     "summary": "Narwal is a privately held Chinese home-robotics business built around Yunjing Intelligence Innovation (Shenzhen) Co., Ltd. Founder and CEO Junbin Zhang remains central to the company. Tencent, ByteDance, Source Code Capital, HongShan, Hillhouse and other institutions have participated in financing, but the complete current cap table and voting-control structure are not public. These investments do not establish Narwal as a subsidiary of Tencent, ByteDance, Xiaomi, Roborock or ECOVACS.",
     "displayLabel": "Privately held business; complete current ownership and voting structure not public"
