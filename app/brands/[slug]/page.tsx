@@ -11,7 +11,8 @@ import { notFound } from "next/navigation";
 import { BrandArticles } from "@/components/brands/BrandArticles";
 import { BrandCategoryPage } from "@/components/brands/BrandCategoryPage";
 import { BrandHero } from "@/components/brands/BrandHero";
-import { pickOwnershipGuide } from "@/lib/brandProfileView";
+import { pickComparisonGuides, pickOwnershipGuide } from "@/lib/brandProfileView";
+import { BrandComparisons } from "@/components/brands/BrandComparisons";
 import { BrandFinancials } from "@/components/brands/BrandFinancials";
 import { BrandFactRail } from "@/components/brands/BrandFactRail";
 import { BrandSections, type BrandCompetitorCard, type BrandModelCard } from "@/components/brands/BrandSections";
@@ -188,6 +189,7 @@ export default async function BrandPage({ params }: PageProps) {
     .slice(0, 5);
 
   const ownershipAnalysis = pickOwnershipGuide(profile, articles);
+  const comparisons = pickComparisonGuides(profile, articles);
 
   return (
     <div className="guides-hub brand-hub brand-detail approved-catalog">
@@ -203,6 +205,7 @@ export default async function BrandPage({ params }: PageProps) {
             ownershipGuide={ownershipAnalysis ? { href: `/blog/${ownershipAnalysis.slug}`, title: ownershipAnalysis.title } : undefined}
             latest={<BrandLatest name={profile.name} items={latestItems} />}
           />
+          <BrandComparisons name={profile.name} guides={comparisons} />
           <BrandPhotos profile={profile} />
           <BrandFaq profile={profile} />
           <BrandFinancials brand={profile.slug} />

@@ -63,3 +63,17 @@ test("company pages link the ownership guide about that company", async () => {
     assert.equal(pickOwnershipGuide(brands.get(slug), articles)?.slug, guide, slug);
   }
 });
+
+test("company pages list comparison guides that name the company", async () => {
+  const { pickComparisonGuides } = await import("@/lib/brandProfileView");
+  const articles = getInsights();
+  const brands = new Map(getPublishedBrandProfiles(articles).map((brand) => [brand.slug, brand]));
+  for (const slug of ["roborock", "segway-navimow", "bissell"]) {
+    const guides = pickComparisonGuides(brands.get(slug), articles);
+    assert.ok(guides.length > 0 && guides.length <= 4, `${slug} has ${guides.length} comparisons`);
+    for (const guide of guides) assert.equal(guide.guideType, "comparison");
+  }
+  for (const guide of pickComparisonGuides(brands.get("roborock"), articles)) {
+    assert.match(guide.slug, /(^|-)roborock(-|$)/);
+  }
+});
