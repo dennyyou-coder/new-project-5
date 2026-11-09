@@ -34,6 +34,22 @@
       "caption": "Buyers should connect the exact Rowenta reference to its declaration, factory evidence, authorized channel and destination-market support terms."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/rowenta/photos/01.webp",
+      "width": 960,
+      "caption": "Rowenta X-Clean 10 wet-dry floor cleaner in a kitchen",
+      "credit": "Image: Rowenta",
+      "creditUrl": "https://www.rowenta.si/x-clean-SL"
+    },
+    {
+      "src": "/images/brands/rowenta/photos/02.webp",
+      "width": 1200,
+      "caption": "Rowenta X-Clean 10 picking up a wet spill",
+      "credit": "Image: Rowenta",
+      "creditUrl": "https://www.rowenta.si/x-clean-SL"
+    }
+  ],
   "ownership": {
     "summary": "Groupe SEB acquired Rowenta and its subsidiaries in 1988. Rowenta is now one of the group's consumer brands under listed parent SEB S.A.; Rowenta France S.A.S. and other Groupe SEB entities may perform manufacturing, compliance, website, sales or service roles without being interchangeable.",
     "parentCompany": "SEB S.A."

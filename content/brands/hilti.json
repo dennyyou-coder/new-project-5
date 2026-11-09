@@ -41,6 +41,36 @@
     {"placement":"ownership","src":"/images/brands/hilti/ownership-map.webp","alt":"Hilti trust ownership and direct business model map","caption":"The Martin Hilti Family Trust owns the group; Hilti Aktiengesellschaft and country sales entities carry different responsibilities."},
     {"placement":"operations","src":"/images/brands/hilti/evidence-boundary.webp","alt":"Hilti owner, operating company and country entity boundary","caption":"Private ownership and direct sales do not identify one factory, importer or warranty route for every Hilti product."}
   ],
+  "photos": [
+    {
+      "src": "/images/brands/hilti/photos/01.webp",
+      "width": 1200,
+      "caption": "Hilti TE 2-22 cordless rotary hammer drilling overhead",
+      "credit": "Image: Hilti",
+      "creditUrl": "https://www.hilti.com/c/CLS_POWER_TOOLS_7125/CLS_ROTARY_HAMMERS_7125/r13250310"
+    },
+    {
+      "src": "/images/brands/hilti/photos/02.webp",
+      "width": 1200,
+      "caption": "Hilti SC 30WR-22 cordless circular saw with dust extraction",
+      "credit": "Image: Hilti",
+      "creditUrl": "https://www.hilti.com/c/CLS_POWER_TOOLS_7125/CLS_SAWS_7125/r21975965"
+    },
+    {
+      "src": "/images/brands/hilti/photos/03.webp",
+      "width": 1200,
+      "caption": "Hilti TE 60-22 rotary hammer on a brick wall",
+      "credit": "Image: Hilti",
+      "creditUrl": "https://www.hilti.com/c/CLS_POWER_TOOLS_7125/CLS_ROTARY_HAMMERS_7125/r17417545"
+    },
+    {
+      "src": "/images/brands/hilti/photos/04.webp",
+      "width": 1200,
+      "caption": "Hilti TE 60-22 breaking concrete on a construction site",
+      "credit": "Image: Hilti",
+      "creditUrl": "https://www.hilti.com/c/CLS_POWER_TOOLS_7125/CLS_ROTARY_HAMMERS_7125/r17417545"
+    }
+  ],
   "ownership": {"summary":"Hilti is privately owned by the Martin Hilti Family Trust, according to Hilti Group's 2025 official business-results release. The group operates as a global construction-technology supplier rather than a publicly listed brand owner.","parentCompany":"Martin Hilti Family Trust"},
   "leadership": [{"name":"Jahangir Doongaji","role":"Hilti Group CEO","context":"Hilti's 2025 annual report identifies Jahangir Doongaji as Group CEO.","portrait":{"src":"/images/brands/hilti/leader-jahangir-doongaji.webp","alt":"Jahangir Doongaji, CEO of the Hilti Group","credit":"Hilti Corporation Executive Board page (CEO section); cropped by World Clean Biz","sourceUrl":"https://www.hilti.group/content/hilti/CP/XX/en/company/corporate-information/executive-board.html","objectPosition":"center top"}}],
   "productPortfolio": [

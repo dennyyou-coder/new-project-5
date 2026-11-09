@@ -48,6 +48,43 @@
     {"placement":"portfolio","src":"/images/blog/who-owns-aeg-electrolux-cover.webp","alt":"Electrolux and AEG appliance portfolio graphic","caption":"Electrolux and AEG are group brands, but consumer positioning and local distribution vary by market."},
     {"placement":"operations","src":"/images/blog/eureka-ownership-timeline-midea-electrolux.webp","alt":"Eureka and Electrolux ownership timeline","caption":"Historic Electrolux connections should not be treated as proof of current ownership for every Eureka or regional product."}
   ],
+  "photos": [
+    {
+      "src": "/images/brands/electrolux/photos/01.webp",
+      "width": 1200,
+      "caption": "Production hall at an Electrolux Group appliance plant",
+      "credit": "Image: Electrolux Group",
+      "creditUrl": "https://www.electroluxgroup.com/en/images/production/"
+    },
+    {
+      "src": "/images/brands/electrolux/photos/02.webp",
+      "width": 1200,
+      "caption": "Washing machines on an Electrolux Group production line",
+      "credit": "Image: Electrolux Group",
+      "creditUrl": "https://www.electroluxgroup.com/en/images/production/"
+    },
+    {
+      "src": "/images/brands/electrolux/photos/03.webp",
+      "width": 1200,
+      "caption": "Acoustic testing of a vacuum cleaner in an Electrolux Group lab",
+      "credit": "Image: Electrolux Group",
+      "creditUrl": "https://www.electroluxgroup.com/en/images/rd/"
+    },
+    {
+      "src": "/images/brands/electrolux/photos/04.webp",
+      "width": 1200,
+      "caption": "Vacuum cleaner testing at Electrolux Group research and development",
+      "credit": "Image: Electrolux Group",
+      "creditUrl": "https://www.electroluxgroup.com/en/images/rd/"
+    },
+    {
+      "src": "/images/brands/electrolux/photos/05.webp",
+      "width": 1200,
+      "caption": "Staff at an Electrolux Group office",
+      "credit": "Image: Electrolux Group",
+      "creditUrl": "https://www.electroluxgroup.com/en/images/offices/"
+    }
+  ],
   "ownership":{"summary":"AB Electrolux (publ) is a Swedish public limited company listed on Nasdaq Stockholm and the parent of the Electrolux Group. Investor AB was the largest shareholder at the end of 2025, with 17.9% of share capital and 30.4% of voting rights, according to the 2025 annual report. The Group identifies Electrolux, AEG and Frigidaire as leading appliance brands. Brand use, operating companies and product availability remain market-specific.","parentCompany":"AB Electrolux (publ)"},
   "leadership":[{"name":"Yannick Fierling","role":"President and CEO","context":"Electrolux Group's 2025 annual report identifies Yannick Fierling as President and CEO from 1 January 2025.","portrait":{"src":"/images/brands/electrolux/leader-yannick-fierling.webp","alt":"Yannick Fierling, president and CEO of Electrolux Group","credit":"Electrolux Group image bank; cropped by World Clean Biz","sourceUrl":"https://www.electroluxgroup.com/en/images/president-ceo/","objectPosition":"center top"}}],
   "productPortfolio":[

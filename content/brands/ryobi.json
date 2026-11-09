@@ -47,6 +47,36 @@
       "caption": "The responsible company can change by country and product category even when the same RYOBI mark appears."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/ryobi/photos/01.webp",
+      "width": 1200,
+      "caption": "RYOBI ONE+ cordless fan in a home workshop",
+      "credit": "Image: RYOBI",
+      "creditUrl": "https://www.ryobitools.com/products/33287192748"
+    },
+    {
+      "src": "/images/brands/ryobi/photos/02.webp",
+      "width": 1200,
+      "caption": "RYOBI ONE+ cordless fan at a campsite",
+      "credit": "Image: RYOBI",
+      "creditUrl": "https://www.ryobitools.com/products/33287192748"
+    },
+    {
+      "src": "/images/brands/ryobi/photos/03.webp",
+      "width": 1200,
+      "caption": "RYOBI ONE+ HP brushless drill boring through timber",
+      "credit": "Image: RYOBI",
+      "creditUrl": "https://www.ryobitools.com/products/33287190560"
+    },
+    {
+      "src": "/images/brands/ryobi/photos/04.webp",
+      "width": 1200,
+      "caption": "RYOBI ONE+ fan and lamp on a hobby workbench",
+      "credit": "Image: RYOBI",
+      "creditUrl": "https://www.ryobitools.com/products/33287192748"
+    }
+  ],
   "ownership": {
     "summary": "Ryobi Limited, a Tokyo Stock Exchange-listed Japanese company, owns the RYOBI trademark. TTI states that it uses RYOBI under licence and manufactures and distributes RYOBI power tools and lawn-and-garden equipment in the United States, Canada, Europe, Australia and New Zealand. Kyocera acquired Ryobi Limited's former power-tool business in 2018 and operates a separate route through KYOCERA Industrial Tools.",
     "parentCompany": "Ryobi Limited is the independent public trademark owner"

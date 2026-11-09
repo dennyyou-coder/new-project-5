@@ -57,6 +57,22 @@
       "caption": "This buyer map separates Spacewalker regional operations, product compliance, local sellers and after-sales responsibility."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/mova/photos/01.webp",
+      "width": 1200,
+      "caption": "MOVA P50 Ultra robot vacuum in a living room",
+      "credit": "Image: MOVA",
+      "creditUrl": "https://www.mova.tech/products/mova-p50-ultra-robot-vacuum"
+    },
+    {
+      "src": "/images/brands/mova/photos/02.webp",
+      "width": 1200,
+      "caption": "Emptying the MOVA P50 Ultra base station",
+      "credit": "Image: MOVA",
+      "creditUrl": "https://www.mova.tech/products/mova-p50-ultra-robot-vacuum"
+    }
+  ],
   "ownership": {
     "summary": "MOVA is presented by Dreame as a member of the Dreame family and uses shared group technology, supply-chain, digital and channel resources. It should not be treated as a separate listed company. Official materials name Spacewalker Technology entities for the brand, MOVAhome app and regional websites, while robotic-mower declarations name Kutting Technology (Suzhou) Co., Ltd. These related roles do not make one entity the universal manufacturer or seller for every MOVA category.",
     "parentCompany": "Dreame Group"

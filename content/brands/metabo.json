@@ -32,6 +32,36 @@
       "caption": "Metabowerke GmbH, Koki Holdings and each regional subsidiary or dealer carry different legal and commercial roles."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/metabo/photos/01.webp",
+      "width": 1000,
+      "caption": "Metabo MKS 18 LTX BL 58 cordless metal circular saw cutting roof sheeting",
+      "credit": "Image: Metabo",
+      "creditUrl": "https://www.metabo.com/de/de/maschinen/akku-geraete/saegen/akku-handkreissaegen/mks-18-ltx-bl-58-akku-handkreissaege/600773840"
+    },
+    {
+      "src": "/images/brands/metabo/photos/02.webp",
+      "width": 1000,
+      "caption": "Metabo WEBA 20-125 angle grinder in a steel workshop",
+      "credit": "Image: Metabo",
+      "creditUrl": "https://www.metabo.com/com/en/tools/cutting-sanding-milling/angle-grinder/angle-grinders-o100-150-mm/weba-20-125-quick-bl-angle-grinder/600642000"
+    },
+    {
+      "src": "/images/brands/metabo/photos/03.webp",
+      "width": 1000,
+      "caption": "Metabo angle grinder on steel fabrication",
+      "credit": "Image: Metabo",
+      "creditUrl": "https://www.metabo.com/com/en/tools/cutting-sanding-milling/angle-grinder/angle-grinders-o100-150-mm/weba-20-125-quick-bl-angle-grinder/600642000"
+    },
+    {
+      "src": "/images/brands/metabo/photos/04.webp",
+      "width": 1000,
+      "caption": "Metabo KS 18 LTX 66 BL cordless circular saw with dust extractor",
+      "credit": "Image: Metabo",
+      "creditUrl": "https://www.metabo.com/de/de/maschinen/akku-geraete/saegen/akku-handkreissaegen/ks-18-ltx-66-bl-akku-handkreissaege/611866850"
+    }
+  ],
   "ownership": {
     "summary": "Koki Holdings owns Metabo. Koki Holdings' corporate history records the 2016 acquisition, while Metabo's official imprint identifies Metabowerke GmbH as the operating company in Nürtingen. Metabo remains distinct from HiKOKI and the Metabo HPT North American brand route.",
     "parentCompany": "Koki Holdings Co., Ltd."

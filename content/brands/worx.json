@@ -37,6 +37,37 @@
       "caption": "This comparison contrasts Landroid's established retail and power-tool ecosystem with Navimow's wire-free robotics platform."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/worx/photos/01.webp",
+      "width": 900,
+      "caption": "WORX WX845 cordless sliding mitre saw in use outdoors",
+      "credit": "Image: WORX",
+      "creditUrl": "https://uk.worx.com/20v-cordless-sliding-mitre-saw-nitro-220mm-tool-only-wx845-9/"
+    },
+    {
+      "src": "/images/brands/worx/photos/02.webp",
+      "width": 900,
+      "caption": "WORX WX845 sliding mitre saw cutting timber",
+      "credit": "Image: WORX",
+      "creditUrl": "https://uk.worx.com/20v-cordless-sliding-mitre-saw-nitro-220mm-tool-only-wx845-9/"
+    },
+    {
+      "src": "/images/brands/worx/photos/03.webp",
+      "width": 900,
+      "caption": "WORX Axis WX550 saw at a workshop bench",
+      "credit": "Image: WORX",
+      "creditUrl": "https://uk.worx.com/20v-axis-cordless-transforming-recip-saw-jigsaw-tool-only-wx550-9/",
+      "position": "50% 15%"
+    },
+    {
+      "src": "/images/brands/worx/photos/04.webp",
+      "width": 900,
+      "caption": "WORX WX531 compact circular saw cutting a board",
+      "credit": "Image: WORX",
+      "creditUrl": "https://uk.worx.com/20v-powershare-cordless-120mm-brushless-compact-circular-saw-with-x1-2-0ah-battery-wx531/"
+    }
+  ],
   "ownership": {
     "summary": "WORX is a brand of privately held Positec Group. Reviewed trademark records name Positec Group Limited as owner for WORX rights in the relevant jurisdiction, and Positec describes WORX and Kress as group brands. A 2025 equity financing introduced institutional investors but did not publish a current shareholder-percentage table. Founder Don Gao remains the group's CEO.",
     "parentCompany": "Positec Group"

@@ -31,6 +31,36 @@
       "caption": "The brand now spans robot, wet-dry, upright, stick, canister and carpet-cleaning categories."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/eureka/photos/01.webp",
+      "width": 1000,
+      "caption": "Eureka NEY100 portable carpet cleaner lifting a spill",
+      "credit": "Image: Eureka",
+      "creditUrl": "https://uk.eureka.com/products/ney100-portable-carpet-cleaner"
+    },
+    {
+      "src": "/images/brands/eureka/photos/02.webp",
+      "width": 1000,
+      "caption": "Eureka NEY100 cleaning a stain on an armchair",
+      "credit": "Image: Eureka",
+      "creditUrl": "https://uk.eureka.com/products/ney100-portable-carpet-cleaner"
+    },
+    {
+      "src": "/images/brands/eureka/photos/03.webp",
+      "width": 751,
+      "caption": "Eureka DashSprint upright vacuum on a kitchen floor",
+      "credit": "Image: Eureka",
+      "creditUrl": "https://uk.eureka.com/products/neu610"
+    },
+    {
+      "src": "/images/brands/eureka/photos/04.webp",
+      "width": 1000,
+      "caption": "Eureka J15 Ultra robot vacuum in a living room",
+      "credit": "Image: Eureka",
+      "creditUrl": "https://us.eureka.com/products/eureka-j15-ultra-flagship-robot-vacuum"
+    }
+  ],
   "ownership": {
     "summary": "Midea Group owns Eureka. Electrolux sold its North American Eureka vacuum brand and most related assets to Midea in December 2016. Electrolux's annual-report note disclosed gross consideration of about USD 40 million; the widely repeated USD 60 million figure was the business's prior annual sales.",
     "parentCompany": "Midea Group Co., Ltd."

@@ -34,6 +34,29 @@
       "caption": "Hako's group production and service footprint is useful context, but buyers still need model, factory, seller and local-support confirmation."
     }
   ],
+  "photos": [
+    {
+      "src": "/images/brands/hako/photos/01.webp",
+      "width": 1200,
+      "caption": "Hako Citymaster 1650 multifunctional municipal sweeper",
+      "credit": "Image: Hako",
+      "creditUrl": "https://www.hako.com/en/products/municipal-technology/multifunctional-outdoor-cleaning-machines/citymaster-1650"
+    },
+    {
+      "src": "/images/brands/hako/photos/02.webp",
+      "width": 1200,
+      "caption": "Hako Scrubmaster B75 R ride-on scrubber in a car park",
+      "credit": "Image: Hako",
+      "creditUrl": "https://www.hako.com/produkte/reinigungstechnik/scheuersaugmaschinen/ride-on-scheuersaugmaschinen/scrubmaster-b75-r"
+    },
+    {
+      "src": "/images/brands/hako/photos/03.webp",
+      "width": 1024,
+      "caption": "Hako Scrubmaster B5 compact scrubber in a shop",
+      "credit": "Image: Hako",
+      "creditUrl": "https://www.hako.com/produkte/reinigungstechnik/scheuersaugmaschinen/walk-behind-scheuersaugmaschinen/scrubmaster-b5-orb"
+    }
+  ],
   "ownership": {
     "summary": "Hako GmbH has been wholly owned by the family-controlled Possehl Group since 2007. Hako operates as a professional-cleaning and municipal-technology business with subsidiaries and additional group brands, while Possehl ownership should not be read as model-level manufacturing or warranty evidence.",
     "parentCompany": "Possehl Group"
