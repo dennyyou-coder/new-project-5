@@ -26764,17 +26764,17 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 41664,
+      "bytes": 42142,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:aa532a9b0138201f0cc25d05914b61e73ee43737ee7918688d2819c771acdc18",
-      "outputHash": "sha256:1ee324d3d7ca055a0d3f9c37f07af7eec420c5519767bca56a504507415ab0e3",
+      "sourceHash": "sha256:57cfc8a5edfc31d6477cef865e27dc914210a25c54f4eea4db958b6f0797c42f",
+      "outputHash": "sha256:51602f6bde5758dc9feabf2d665c981f3e6335d32eabf606ae5d4303ecf3e261",
       "mobile": {
         "src": "/images/articles/who-owns-russell-hobbs-spectrum-brands/01-cover-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 19240,
-        "outputHash": "sha256:217f2df28b5b4f236029ed4e56c716e470e4e59b7ebd0ef4d8a5d2175bfa5d45"
+        "bytes": 19740,
+        "outputHash": "sha256:37310bde1934648ab57f77b2c32aa6e6c011161419449116d29e18f143b1bd96"
       }
     },
     "/images/articles/who-owns-russell-hobbs-spectrum-brands/02-russell-hobbs-ownership-structure.webp": {
@@ -26782,17 +26782,17 @@
       "kind": "photo",
       "width": 1600,
       "height": 900,
-      "bytes": 41088,
+      "bytes": 44338,
       "format": "webp",
       "quality": 84,
-      "sourceHash": "sha256:1f7305b34de1dde5480e55b3fb3331e2b3fc4f9aadc221920ed738c3ba92021d",
-      "outputHash": "sha256:b915722a85a46b3c34db6204627d7af4b12df31992152940cc53ae6a87f6a141",
+      "sourceHash": "sha256:bbb2e308111b6166ebb0d6470cbaa88a113492734490ef0ed31fcb5a79e6d78d",
+      "outputHash": "sha256:a00efd3dafd3cfca3b18182966f9333dea763843fef3ccc613bd83148ac832dd",
       "mobile": {
         "src": "/images/articles/who-owns-russell-hobbs-spectrum-brands/02-russell-hobbs-ownership-structure-800.webp",
         "width": 800,
         "height": 450,
-        "bytes": 16076,
-        "outputHash": "sha256:eb481f9ffdf4cb7401fb05e87afce4b3b1a1bd480db98642e0211396fb5cdaa5"
+        "bytes": 17102,
+        "outputHash": "sha256:220d75e6de4918645d17043ca9b1b6d3febed8f84a41ca0bf06fc8f446734cc6"
       }
     },
     "/images/articles/who-owns-ryobi-tti-kyocera/01-cover.webp": {
@@ -55499,12 +55499,12 @@
         "01-cover.png": {
           "status": "matched",
           "primary": "/images/articles/who-owns-russell-hobbs-spectrum-brands/01-cover.webp",
-          "hash": "sha256:aa532a9b0138201f0cc25d05914b61e73ee43737ee7918688d2819c771acdc18"
+          "hash": "sha256:57cfc8a5edfc31d6477cef865e27dc914210a25c54f4eea4db958b6f0797c42f"
         },
         "02-russell-hobbs-ownership-structure.png": {
           "status": "matched",
           "primary": "/images/articles/who-owns-russell-hobbs-spectrum-brands/02-russell-hobbs-ownership-structure.webp",
-          "hash": "sha256:1f7305b34de1dde5480e55b3fb3331e2b3fc4f9aadc221920ed738c3ba92021d"
+          "hash": "sha256:bbb2e308111b6166ebb0d6470cbaa88a113492734490ef0ed31fcb5a79e6d78d"
         }
       }
     },
