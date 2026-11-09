@@ -10,10 +10,10 @@
     "text": "FCC Chairman Brendan Carr, official portrait, 2025. Federal Communications Commission, public domain",
     "url": "https://commons.wikimedia.org/wiki/File:Brendan_Carr,_official_portrait_2025.jpg"
   },
-  "updated": "2026-11-07",
+  "updated": "2026-11-09",
   "status": {
     "label": "In force since 28 July 2026",
-    "text": "New foreign-produced advanced robotic devices cannot receive FCC equipment authorization unless the Department of War grants Conditional Approval. Three producers have been exempted so far: Husqvarna, ANSCER and Matic."
+    "text": "New foreign-produced advanced robotic devices cannot receive FCC equipment authorization unless the Department of War grants Conditional Approval. Fifteen producers had been approved by 6 November 2026. Only two make cleaning or lawn products, Husqvarna and Matic, and none is Chinese."
   },
   "summary": [
     "On 28 July 2026 the US Federal Communications Commission added foreign-produced advanced robotic devices to its Covered List, following a national-security determination by an executive-branch interagency body. Equipment on the list cannot receive FCC equipment authorization, and most electronic devices need that authorization before they can be imported, marketed or sold in the United States.",
@@ -22,30 +22,65 @@
   ],
   "chart": {
     "type": "bars",
-    "title": "Producers granted Conditional Approval so far",
-    "note": "Each approval covers named models only. Previously authorized models of any brand can still be sold.",
+    "title": "Producers granted Conditional Approval, by date",
+    "note": "Each approval covers named models or product classes only. Previously authorized models of any brand can still be sold. Source: FCC Covered List, updated 6 November 2026.",
     "rows": [
       {
-        "label": "Husqvarna",
+        "label": "9 Sep",
         "segments": [
-          4
+          1
         ],
-        "display": "4 robotic mower platforms · 9 Sep 2026",
+        "display": "Husqvarna · 4 robotic mower platforms",
         "href": "/brands/husqvarna"
       },
       {
-        "label": "ANSCER",
+        "label": "18 Sep",
         "segments": [
-          3
+          1
         ],
-        "display": "3 warehouse robots · 18 Sep 2026"
+        "display": "ANSCER · warehouse robots"
       },
       {
-        "label": "Matic",
+        "label": "2 Oct",
+        "segments": [
+          1
+        ],
+        "display": "Matic · floor cleaner and dock"
+      },
+      {
+        "label": "16 Oct",
+        "segments": [
+          1
+        ],
+        "display": "Volley Automation · AGV/AMR"
+      },
+      {
+        "label": "21 Oct",
+        "segments": [
+          1
+        ],
+        "display": "Vulcan Robotics · mobile platform"
+      },
+      {
+        "label": "23 Oct",
         "segments": [
           2
         ],
-        "display": "Floor cleaner and dock · 2 Oct 2026"
+        "display": "Haystack Robotics · T-Robotics (all AGVs)"
+      },
+      {
+        "label": "30 Oct",
+        "segments": [
+          6
+        ],
+        "display": "OMRON · ATI Motors · ARAPL · Lightberry · SunScout · Swap Robotics"
+      },
+      {
+        "label": "6 Nov",
+        "segments": [
+          2
+        ],
+        "display": "ABB Robotics · Pantograph"
       }
     ]
   },
@@ -68,7 +103,7 @@
     },
     {
       "label": "Exempted so far",
-      "value": "Husqvarna (4 mower platforms), ANSCER (3 AMRs), Matic (floor robot and dock)"
+      "value": "15 producers by 6 Nov 2026, including Husqvarna (4 mower platforms) and Matic (floor robot and dock); none Chinese"
     },
     {
       "label": "Explicitly excluded",
@@ -104,6 +139,22 @@
       "title": "Matic becomes the first floor-cleaning robot exempted",
       "text": "Matic's robot (4MA0001) and dock (4DK0008), assembled in California, receive Conditional Approval tied to its onshoring plan.",
       "href": "/news/matic-fcc-conditional-approval-october-2026"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Industrial robots join the list",
+      "text": "Volley Automation (16 Oct), Vulcan Robotics (21 Oct), Haystack Robotics and T-Robotics (23 Oct) are approved; T-Robotics' approval covers its entire class of automated guided vehicles."
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Six approvals in one day",
+      "text": "OMRON, ATI Motors, ARAPL, Lightberry, SunScout and Swap Robotics receive Conditional Approval, mostly for warehouse, industrial and solar-site robots."
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Approvals reach 15, none Chinese",
+      "text": "ABB Robotics and Pantograph are added. Husqvarna and Matic remain the only lawn or cleaning producers approved.",
+      "href": "/news/fcc-robot-conditional-approvals-reach-15-november-2026"
     }
   ],
   "questions": [
@@ -125,7 +176,7 @@
     },
     {
       "q": "How does a company get an exemption?",
-      "a": "Producers apply for Conditional Approval, which the Department of War grants after reviewing ownership, supply chain and manufacturing information, together with a plan to establish or expand US production. Approvals so far name specific models rather than whole brands."
+      "a": "Producers apply for Conditional Approval, which the Department of War grants after reviewing ownership, supply chain and manufacturing information, together with a plan to establish or expand US production. Most approvals name specific models; one, for T-Robotics, covers its entire class of automated guided vehicles."
     }
   ],
   "insights": [
@@ -138,6 +189,7 @@
     "compliance-certification-cleaning-appliances-china"
   ],
   "news": [
+    "fcc-robot-conditional-approvals-reach-15-november-2026",
     "matic-fcc-conditional-approval-october-2026",
     "husqvarna-fcc-mower-conditional-approval-september-2026",
     "fcc-foreign-produced-advanced-robots-covered-list-july-2026",
@@ -163,6 +215,10 @@
     {
       "title": "Robotics 24/7: ANSCER Robotics secures FCC Conditional Approval for three AMRs",
       "url": "https://www.robotics247.com/article/anscer-robotics-secures-fcc-conditional-approval-for-three-amrs"
+    },
+    {
+      "title": "FCC Covered List and Conditional Approvals (updated 6 November 2026)",
+      "url": "https://www.fcc.gov/supplychain/coveredlist"
     }
   ]
 }
