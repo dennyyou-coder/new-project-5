@@ -5950,6 +5950,42 @@
         "outputHash": "sha256:e8f342030f98dc081ed59c726478d5a597020e0310beec29170e7e41c6f21734"
       }
     },
+    "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61342,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3cdad206abb2ff8ad656de63eae34f7a2dbb5e1cc826de38e849d7b9d64605bc",
+      "outputHash": "sha256:7b0397aaa39091123518a5f3996ee4e6a5ede84254ae2dbcf0819926de8980b1",
+      "mobile": {
+        "src": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 27016,
+        "outputHash": "sha256:7ceb13ef35e922d7970fbb0f8d5d09162fb0ad079985fdeade4d139fb7c39ed8"
+      }
+    },
+    "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43142,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:5e18d1438867076a38a91ad27a30225effb232f5a903b578787ac78a531dc132",
+      "outputHash": "sha256:e09e3e679bf610b9de06c88b0353e2dcfdc5a4cfbec576488bd735339c19b935",
+      "mobile": {
+        "src": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16972,
+        "outputHash": "sha256:b87f0b00abe1e57ae5d3b267474d07f46dcdca9ac6f4ff24e69908af6d3cd741"
+      }
+    },
     "/images/articles/dreame-t16-pro-heat/01-cover.webp": {
       "role": "cover",
       "kind": "transparent",
@@ -6020,6 +6056,42 @@
         "height": 450,
         "bytes": 10028,
         "outputHash": "sha256:95aebe37098bcbe4e3ea7b1c90bb5b49f0f151feb95670a08c8fd5de53b1ac31"
+      }
+    },
+    "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 25360,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:970b0d98a81e9efb17f0a9b7298e3756e074a00a7fd677888502d2129a1ff1e6",
+      "outputHash": "sha256:8fdb91505241bf176eb67ce2a6fe903eb5cc277fb245c9cb4d0d4958d465c555",
+      "mobile": {
+        "src": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 11896,
+        "outputHash": "sha256:0dc57c6eed1709e8a3790a76e696fbb427e44ac41ac1862214d9e34d6f53f519"
+      }
+    },
+    "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 35404,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3a8fcb3e917ac7df2aa76b4a97701b8fbbbc359126f4e451a2e8b5995c6e5cb9",
+      "outputHash": "sha256:caa0c772ebbfa8e4af11dc3059f6bc654b95ceb4f380f4806f6961ace95622cb",
+      "mobile": {
+        "src": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 13486,
+        "outputHash": "sha256:6fee903bbac79ce5eb3cd04ab650da23627ba10929688ef1000710d3492a44ac"
       }
     },
     "/images/articles/dreame-x60-ultra/01-cover.webp": {
@@ -7328,6 +7400,42 @@
         "height": 600,
         "bytes": 20038,
         "outputHash": "sha256:d0b93c0819cbcd8cb31abf9bee5e60a6206f0334777183934f6a2e63a337cefa"
+      }
+    },
+    "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 40628,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:7df7159796291bcda3deaba81e840676279647d10079e309a07b69bc68aec3d3",
+      "outputHash": "sha256:cab239d5abc27445739e73de8335789696111bf39e0fcf1cba4aeb939b76902f",
+      "mobile": {
+        "src": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17668,
+        "outputHash": "sha256:ae8634922a7b767e2b07d84e3faff8753a2e990c909bb7beaef0f3649fc83722"
+      }
+    },
+    "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39354,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:b66651866674260195980c3942deff941f605b8eb06e37c6fb1bd90f1cd25727",
+      "outputHash": "sha256:a958630805b5c4a112048c118a1c7f78abfb5d2e3c76e9efca25fb4374e934c3",
+      "mobile": {
+        "src": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15266,
+        "outputHash": "sha256:5c270598205f29ef93c48dda372ec30966ccaeaa1d7501f7e3ca90008b202d60"
       }
     },
     "/images/articles/dyson-v10-konical/01-cover.webp": {
@@ -8744,6 +8852,42 @@
         "height": 800,
         "bytes": 26930,
         "outputHash": "sha256:cccab6ebe1fe03ffbbfb453784efb745236805a69a5ac5f4e2f1485d79235257"
+      }
+    },
+    "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 27544,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:9403b13ff8c78ac571484c8f6c11bbe6ad3010a831d006aa9d3d322b98628c27",
+      "outputHash": "sha256:0c1f6db8d10f0bcf36b06d9695fa1d3595f94d348c0330093c0fe2bae929a728",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 12804,
+        "outputHash": "sha256:14b99baaa843078aa2f6ea48be887cac04f089cd057d29998f58c166f1a3a411"
+      }
+    },
+    "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39370,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:0bdbb202d9ad741f2a1c6a95130161ff095ab7fe400be12b63e214e3509bc2b3",
+      "outputHash": "sha256:c611b7ac64129812e7e2d14420157ca1e5466118695c4f3b5bc6da2f18c02181",
+      "mobile": {
+        "src": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15358,
+        "outputHash": "sha256:0e87e7df42d8c0d30fa8f7b5d90d53cae38f98798e22069f7ac31044a6c6f1ca"
       }
     },
     "/images/articles/eufy-omni-s2/01-cover.webp": {
@@ -18620,6 +18764,42 @@
       "quality": 90,
       "sourceHash": "sha256:fdbcc17c93a9ae0309d77e236ee4a8abb8ad849bb591a7e6df4c4a354202301c",
       "outputHash": "sha256:f087fd21b89ab5bd38cb7cd9410ef892cb89d1bbe60bac91072d802a0b497628"
+    },
+    "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 39580,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:a6e56419072d2a0373580b0e9a1b4445bdf5f1f8f1eb643ef0bf030c99893228",
+      "outputHash": "sha256:3e4eb883eb2e6ec4187992b9cb57be6f828a81c41c1d2a9771f74e945d87f4c8",
+      "mobile": {
+        "src": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17448,
+        "outputHash": "sha256:b391e30c7daf570e91044bdd63a257d18895e8ec89245662015d88a997142736"
+      }
+    },
+    "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43488,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:1a85b85b24244ed3d95939ee425a6a0647d513241581b3c1fabf25092d4ffe89",
+      "outputHash": "sha256:594ac37aed9635085b35350f3b517d8f358e44c3242f2e983a8569327ffdf843",
+      "mobile": {
+        "src": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16676,
+        "outputHash": "sha256:a6055df921ad9311ccc8f42119026f2bda04f87710edea124e05f067c1274f84"
+      }
     },
     "/images/articles/roborock-saros-20-flow/01-cover.webp": {
       "role": "cover",
@@ -41789,6 +41969,13 @@
       "cover": "/images/articles/dreame-t16-pro-heat/01-cover.webp",
       "body": []
     },
+    "dreame-t16-pro-heat-vs-tineco-floor-one-s9-master": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/01-cover.webp",
+      "body": [
+        "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/02-verdict.webp"
+      ]
+    },
     "dreame-t16-pro-steam": {
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-t16-pro-steam/01-cover.webp",
@@ -41810,6 +41997,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone/01-cover.webp",
       "body": []
+    },
+    "dreame-x60-ultra-vs-narwal-flow-2": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/01-cover.webp",
+      "body": [
+        "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/02-verdict.webp"
+      ]
     },
     "dreame-z30-pro-aqua-a": {
       "budgetClass": "standard",
@@ -41977,6 +42171,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/dyson-r3-nurovi-spot-scrub-uv/01-cover.webp",
       "body": []
+    },
+    "dyson-r3-spot-scrub-vs-roborock-saros-20": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/01-cover.webp",
+      "body": [
+        "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/02-verdict.webp"
+      ]
     },
     "dyson-v10-konical": {
       "budgetClass": "standard",
@@ -42229,6 +42430,13 @@
       "cover": "/images/articles/eufy-omni-s2/01-cover.webp",
       "body": [
         "/images/articles/eufy-omni-s2/02-dust-bag-access.webp"
+      ]
+    },
+    "eufy-omni-s2-vs-roborock-saros-20-flow": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover.webp",
+      "body": [
+        "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/02-verdict.webp"
       ]
     },
     "eureka-floorshine-830": {
@@ -43925,6 +44133,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/roborock-saros-20-flow/01-cover.webp",
       "body": []
+    },
+    "roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/01-cover.webp",
+      "body": [
+        "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/02-verdict.webp"
+      ]
     },
     "roborock-saros-20-sonic": {
       "budgetClass": "standard",
@@ -48205,6 +48420,20 @@
         }
       }
     },
+    "dreame-t16-pro-heat-vs-tineco-floor-one-s9-master": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/01-cover.webp",
+          "hash": "sha256:3cdad206abb2ff8ad656de63eae34f7a2dbb5e1cc826de38e849d7b9d64605bc"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-t16-pro-heat-vs-tineco-floor-one-s9-master/02-verdict.webp",
+          "hash": "sha256:5e18d1438867076a38a91ad27a30225effb232f5a903b578787ac78a531dc132"
+        }
+      }
+    },
     "dreame-t16-pro-steam": {
       "files": {
         "01-cover.png": {
@@ -48243,6 +48472,20 @@
           "status": "matched",
           "primary": "/images/articles/dreame-x60-ultra-vs-ecovacs-deebot-x12-omnicyclone/01-cover.webp",
           "hash": "sha256:49aed41a27b5bd9d8a0385d3d0c4a9e85908ce567b73fdcd7a1ade7edc6bd2ff"
+        }
+      }
+    },
+    "dreame-x60-ultra-vs-narwal-flow-2": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/01-cover.webp",
+          "hash": "sha256:970b0d98a81e9efb17f0a9b7298e3756e074a00a7fd677888502d2129a1ff1e6"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/dreame-x60-ultra-vs-narwal-flow-2/02-verdict.webp",
+          "hash": "sha256:3a8fcb3e917ac7df2aa76b4a97701b8fbbbc359126f4e451a2e8b5995c6e5cb9"
         }
       }
     },
@@ -48746,6 +48989,20 @@
           "status": "matched",
           "primary": "/images/articles/dyson-r3-nurovi-spot-scrub-uv/01-cover.webp",
           "hash": "sha256:493e8329f9b621751e900d9b22ed7dda5946d4c04135e0b47dc1114081ca8d96"
+        }
+      }
+    },
+    "dyson-r3-spot-scrub-vs-roborock-saros-20": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/01-cover.webp",
+          "hash": "sha256:7df7159796291bcda3deaba81e840676279647d10079e309a07b69bc68aec3d3"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/dyson-r3-spot-scrub-vs-roborock-saros-20/02-verdict.webp",
+          "hash": "sha256:b66651866674260195980c3942deff941f605b8eb06e37c6fb1bd90f1cd25727"
         }
       }
     },
@@ -49320,6 +49577,20 @@
           "status": "matched",
           "primary": "/images/articles/eufy-omni-s2/02-dust-bag-access.webp",
           "hash": "sha256:89c0303a186e85ffcd016e926f0fe849e0a4194e9fd53bcf10e89d1bc6338543"
+        }
+      }
+    },
+    "eufy-omni-s2-vs-roborock-saros-20-flow": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/01-cover.webp",
+          "hash": "sha256:9403b13ff8c78ac571484c8f6c11bbe6ad3010a831d006aa9d3d322b98628c27"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/eufy-omni-s2-vs-roborock-saros-20-flow/02-verdict.webp",
+          "hash": "sha256:0bdbb202d9ad741f2a1c6a95130161ff095ab7fe400be12b63e214e3509bc2b3"
         }
       }
     },
@@ -52662,6 +52933,20 @@
           "status": "matched",
           "primary": "/images/articles/roborock-saros-20-flow/01-cover.webp",
           "hash": "sha256:9db4c53e461c79eeaf1465bdff8ef9b047597056410baeda4798205abcfa55f9"
+        }
+      }
+    },
+    "roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/01-cover.webp",
+          "hash": "sha256:a6e56419072d2a0373580b0e9a1b4445bdf5f1f8f1eb643ef0bf030c99893228"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/roborock-saros-20-flow-vs-ecovacs-deebot-x12s-omnicyclone/02-verdict.webp",
+          "hash": "sha256:1a85b85b24244ed3d95939ee425a6a0647d513241581b3c1fabf25092d4ffe89"
         }
       }
     },
