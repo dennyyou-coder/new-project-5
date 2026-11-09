@@ -703,7 +703,7 @@ test("home-appliance analysis exposes only the verified primary and related bran
   }
 });
 
-test("the release gate validates the one-hundred-and-sixteen published profiles and approved article relationships", () => {
+test("the release gate validates the one-hundred-and-eighteen published profiles and approved article relationships", () => {
   const expectedCategorySlugs = [
     "power-tools",
     "lawn-garden-equipment",
@@ -731,7 +731,9 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "columbus",
     "comac",
     "craftsman",
+    // Profile-name order: "De’Longhi" sorts before "Dechang".
     "delonghi",
+    "dechang",
     "dewalt",
     "dirt-devil",
     "dji-romo",
@@ -771,6 +773,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "ipc",
     "irobot",
     "karcher",
+    "kingclean",
     "kitchenaid",
     "kobalt",
     "lavor",
@@ -898,6 +901,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     "joseph-galli-chervon-dewalt-milwaukee": ["chervon",  "tti",  "dewalt",  "milwaukee",  "ego",  "skil",  "flex"],
     "karcher-family-business-alfred-irene-hartmut-jenner": ["karcher"],
     "karcher-hidden-champion-in-cleaning-appliances": ["karcher"],
+    "kingclean-ai-factory-teams": ["kingclean"],
     "lawn-mowing-history": ["husqvarna",  "segway-navimow",  "irobot",  "ego",  "mammotion",  "ecovacs",  "dreame",  "mova",  "roborock"],
     "luba-vs-navimow-mammotion-ninebot": ["mammotion",  "segway-navimow"],
     "mammotion-luba-vs-yuka-robot-mowers": ["mammotion"],
@@ -1072,8 +1076,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
       .sort(([a], [b]) => a.localeCompare(b))
   );
 
-  assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), expectedSlugs);
-  assert.equal(loadedProfiles.length, 116);
+  assert.deepEqual(publishedProfiles.map(({ slug }) => slug).sort(), [...expectedSlugs].sort());
+  assert.equal(loadedProfiles.length, 118);
   for (const candidate of loadedProfiles) {
     assert.deepEqual(validateBrandProfile(candidate, realArticles), []);
   }
@@ -1099,8 +1103,8 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
     );
   }
 
-  assert.equal(Object.keys(expectedPrimaryBrands).length, 228);
-  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 369);
+  assert.equal(Object.keys(expectedPrimaryBrands).length, 229);
+  assert.equal(Object.values(expectedPrimaryBrands).flat().length, 370);
   assert.deepEqual(actualPrimaryBrands, expectedPrimaryBrands);
   for (const slug of Object.keys(expectedPrimaryBrands)) assert.ok(articleBySlug.has(slug));
   assert.ok(
@@ -1139,7 +1143,7 @@ test("the release gate validates the one-hundred-and-sixteen published profiles 
 
 test("all published brand profiles have local official logos and two to three local visuals", () => {
   const profiles = getBrandProfiles().filter((profile) => profile.status === "published");
-  assert.equal(profiles.length, 116);
+  assert.equal(profiles.length, 118);
 
   for (const candidate of profiles) {
     assert.equal(candidate.status, "published");
