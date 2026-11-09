@@ -202,6 +202,21 @@ const nextConfig: NextConfig = {
       },
       // Mistyped or retired article slugs that Google still requests.
       {
+        source: "/blog/who-owns-toro-the-toro-company",
+        destination: "/blog/who-owns-toro-company-brands-manufacturing",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-ego-power-plus-chervon",
+        destination: "/blog/who-owns-ego-power-plus-chervon-manufacturing",
+        permanent: true
+      },
+      {
+        source: "/blog/who-owns-gardena-husqvarna-group",
+        destination: "/blog/who-owns-gardena-husqvarna-sileno-manufacturing",
+        permanent: true
+      },
+      {
         source: "/blog/best-robot-vacuum-buying-guide-2022",
         destination: "/blog/robot-vacuum-buying-guide",
         permanent: true
