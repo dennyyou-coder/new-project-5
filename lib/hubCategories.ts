@@ -61,6 +61,48 @@ export type HubCategory = {
   unlisted?: boolean;
 };
 
+/**
+ * Equipment-type profiles (content/equipment) linked from each hub's
+ * "Equipment types" module, so every technical profile has a contextual link.
+ */
+export const HUB_EQUIPMENT: Partial<Record<HubCategorySlug, string[]>> = {
+  "robot-vacuums": ["household-robot-vacuum", "commercial-robot-vacuum"],
+  "vacuum-cleaners": [
+    "cordless-stick-vacuum",
+    "handheld-vacuum-cleaner",
+    "upright-vacuum-cleaner",
+    "canister-vacuum-cleaner",
+    "wet-dry-vacuum",
+    "backpack-vacuum"
+  ],
+  "floor-washers": ["cordless-wet-dry-floor-cleaner", "steam-mop"],
+  "carpet-spot-cleaners": ["portable-carpet-upholstery-cleaner", "household-carpet-cleaner", "carpet-spot-extractor", "carpet-extractor"],
+  "pool-robots": ["robotic-pool-cleaner", "robotic-pool-skimmer"],
+  "commercial-cleaning": [
+    "floor-scrubber",
+    "walk-behind-floor-scrubber",
+    "ride-on-floor-scrubber",
+    "autonomous-floor-scrubber",
+    "combination-sweeper-scrubber",
+    "floor-sweeper",
+    "walk-behind-floor-sweeper",
+    "ride-on-floor-sweeper",
+    "floor-burnisher",
+    "single-disc-floor-machine",
+    "commercial-dry-vacuum",
+    "upright-commercial-vacuum",
+    "wide-area-vacuum",
+    "industrial-dust-extractor",
+    "commercial-steam-cleaner",
+    "commercial-air-mover",
+    "escalator-cleaner",
+    "commercial-pressure-washer",
+    "carpet-extractor"
+  ],
+  "small-appliances": ["air-purifier", "dehumidifier", "dishwasher", "front-load-washing-machine", "heat-pump-dryer", "washer-dryer-combo"],
+  "power-tools-outdoor": ["electric-pressure-washer", "cold-water-pressure-washer", "hot-water-pressure-washer"]
+};
+
 export const HUB_CATEGORY_GROUPS: { slug: HubCategoryGroup; label: string }[] = [
   { slug: "core-cleaning", label: "Core cleaning" },
   { slug: "adjacent-industries", label: "Adjacent industries" }
