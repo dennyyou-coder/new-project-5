@@ -400,7 +400,8 @@
 
 .home-b-card-image {
   display: block;
-  aspect-ratio: 16 / 10;
+  /* Article covers and video posters are 16:9; a 16:10 frame cut their edges and cover text. */
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 10px;
   background: #e9edf4;
