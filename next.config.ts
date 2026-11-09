@@ -202,6 +202,16 @@ const nextConfig: NextConfig = {
       },
       // Mistyped or retired article slugs that Google still requests.
       {
+        source: "/blog/best-robot-vacuum-buying-guide-2022",
+        destination: "/blog/robot-vacuum-buying-guide",
+        permanent: true
+      },
+      {
+        source: "/blog/hard-floor-washer-buying-guide-2022",
+        destination: "/blog/hard-floor-washer-buying-guide",
+        permanent: true
+      },
+      {
         source: "/blog/stanley-black-excel-sale-outdoor-strategy",
         destination: "/blog/stanley-black-decker-excel-sale-outdoor-strategy",
         permanent: true
