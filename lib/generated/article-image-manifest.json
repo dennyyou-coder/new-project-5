@@ -25067,42 +25067,6 @@
         "outputHash": "sha256:3d4f893e17ea898968a8f991b168e8f821c832521a2b489ba7e442e415dd71fb"
       }
     },
-    "/images/articles/who-owns-ego-power-plus-chervon/01-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 60704,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:e675b4e35981d2228af9f6ce2f405b06d5c6a6af68de2c8c9e620b27e6148cdf",
-      "outputHash": "sha256:2217c33c0bc4acebef9800fb40ba940524431be4d50daf51b16625c2e629fb65",
-      "mobile": {
-        "src": "/images/articles/who-owns-ego-power-plus-chervon/01-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 23592,
-        "outputHash": "sha256:2660033fd6745cc019263d62e4372e4042dc65494a0bf578022c04cdabd06e98"
-      }
-    },
-    "/images/articles/who-owns-ego-power-plus-chervon/02-ego-power-plus-ownership-structure.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 39710,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:bfa8cbf4812c07a6796827933bc1c6292deb36370b5632cbc2b9dbeaef82911b",
-      "outputHash": "sha256:2c1c636ca6638dd4d35bee9e62ead5b3b2d0917d4b6105d9b15f1c74f660a828",
-      "mobile": {
-        "src": "/images/articles/who-owns-ego-power-plus-chervon/02-ego-power-plus-ownership-structure-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 15850,
-        "outputHash": "sha256:e4d162d66ff97a93c97e22b1689b27f4b76b249bea92cd36666f8b6f2a1368ed"
-      }
-    },
     "/images/articles/who-owns-electrolux-brands-manufacturing/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -25407,42 +25371,6 @@
         "height": 450,
         "bytes": 39304,
         "outputHash": "sha256:fbac36b37196ba50be6f3bcf74f3acb5b38fa0f30f4638969a5c7946989eb4ce"
-      }
-    },
-    "/images/articles/who-owns-gardena-husqvarna-group/01-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 40124,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:d8c4650e376bc4a47d470cd79d2dc961beb414df1da1ebe5abbadcce419473f4",
-      "outputHash": "sha256:8d5519c6ce9fa77432e7daf64023c994774fca09a5127c5fca2bf9b368493eb9",
-      "mobile": {
-        "src": "/images/articles/who-owns-gardena-husqvarna-group/01-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 18466,
-        "outputHash": "sha256:21f8b78ab0d0e35981bc1689a0970358eed1d3a069d69d981b2b8ac9f4c40f23"
-      }
-    },
-    "/images/articles/who-owns-gardena-husqvarna-group/02-gardena-ownership-structure.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 35214,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:959309b77e746b218e7ac0f51ed7b2e656aa2acfa4f6095fd920b48eac8bf70c",
-      "outputHash": "sha256:594af3137a34e196c6429afce45e512ae2c1be02136a64ed6dc69b966859d840",
-      "mobile": {
-        "src": "/images/articles/who-owns-gardena-husqvarna-group/02-gardena-ownership-structure-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 13426,
-        "outputHash": "sha256:34f070120f723d1fb3fb50e5ebc3a61cdb1828d50f4bac226844baaa24ef61b7"
       }
     },
     "/images/articles/who-owns-gardena-husqvarna-sileno-manufacturing/01-cover.webp": {
@@ -27315,42 +27243,6 @@
         "height": 450,
         "bytes": 14188,
         "outputHash": "sha256:2b27d17f82803987eaad7dc8118c24a4e2aa23bcaa71b68d97544c3ad763bb4e"
-      }
-    },
-    "/images/articles/who-owns-toro-the-toro-company/01-cover.webp": {
-      "role": "cover",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 29722,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:8e10f01ba3e0485a94360ad7f9c967d5b996a13f269a5bf9a80b727dd5390481",
-      "outputHash": "sha256:dfd2f20fab5db615cb8191973bf7caf2dcd65c75d5fa06960b2e05466a46fba7",
-      "mobile": {
-        "src": "/images/articles/who-owns-toro-the-toro-company/01-cover-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 13818,
-        "outputHash": "sha256:8c1bd81dfe40be879b98a7b06c6e2b2ce4590c8d37e382fffc65fb814d911f8b"
-      }
-    },
-    "/images/articles/who-owns-toro-the-toro-company/02-toro-ownership-structure.webp": {
-      "role": "body",
-      "kind": "photo",
-      "width": 1600,
-      "height": 900,
-      "bytes": 40558,
-      "format": "webp",
-      "quality": 84,
-      "sourceHash": "sha256:fa352226b0069d841f3a164bbf6334e891ea55e020e0b4a2a925fdff9495e1ae",
-      "outputHash": "sha256:e33b486b8895b653afe74ebfcba7b337eb772432e79dc4adcca1b0fc2f62d65f",
-      "mobile": {
-        "src": "/images/articles/who-owns-toro-the-toro-company/02-toro-ownership-structure-800.webp",
-        "width": 800,
-        "height": 450,
-        "bytes": 15910,
-        "outputHash": "sha256:a3f49d188d2069aa161909c2d263c0cb85d018f1c0bfe293685d1b778acf7d76"
       }
     },
     "/images/articles/who-owns-toshiba-appliances-midea-lifestyle/01-cover.webp": {
@@ -45491,13 +45383,6 @@
         "/images/articles/who-owns-ecovacs-tineco-manufacturing/03-ecovacs-manufacturing-verification-map.webp"
       ]
     },
-    "who-owns-ego-power-plus-chervon": {
-      "budgetClass": "standard",
-      "cover": "/images/articles/who-owns-ego-power-plus-chervon/01-cover.webp",
-      "body": [
-        "/images/articles/who-owns-ego-power-plus-chervon/02-ego-power-plus-ownership-structure.webp"
-      ]
-    },
     "who-owns-ego-power-plus-chervon-manufacturing": {
       "budgetClass": "standard",
       "cover": "/images/blog/ego-power-plus-chervon-cover.webp",
@@ -45601,13 +45486,6 @@
       "body": [
         "/images/blog/frigidaire-ownership-history-map.webp",
         "/images/blog/frigidaire-manufacturing-model-verification-map.webp"
-      ]
-    },
-    "who-owns-gardena-husqvarna-group": {
-      "budgetClass": "standard",
-      "cover": "/images/articles/who-owns-gardena-husqvarna-group/01-cover.webp",
-      "body": [
-        "/images/articles/who-owns-gardena-husqvarna-group/02-gardena-ownership-structure.webp"
       ]
     },
     "who-owns-gardena-husqvarna-sileno-manufacturing": {
@@ -46053,13 +45931,6 @@
       "body": [
         "/images/blog/toro-company-ownership-brand-map.svg",
         "/images/blog/toro-product-responsibility-map.svg"
-      ]
-    },
-    "who-owns-toro-the-toro-company": {
-      "budgetClass": "standard",
-      "cover": "/images/articles/who-owns-toro-the-toro-company/01-cover.webp",
-      "body": [
-        "/images/articles/who-owns-toro-the-toro-company/02-toro-ownership-structure.webp"
       ]
     },
     "who-owns-toshiba-appliances-midea-lifestyle": {
@@ -54759,20 +54630,6 @@
         }
       }
     },
-    "who-owns-ego-power-plus-chervon": {
-      "files": {
-        "01-cover.png": {
-          "status": "matched",
-          "primary": "/images/articles/who-owns-ego-power-plus-chervon/01-cover.webp",
-          "hash": "sha256:e675b4e35981d2228af9f6ce2f405b06d5c6a6af68de2c8c9e620b27e6148cdf"
-        },
-        "02-ego-power-plus-ownership-structure.png": {
-          "status": "matched",
-          "primary": "/images/articles/who-owns-ego-power-plus-chervon/02-ego-power-plus-ownership-structure.webp",
-          "hash": "sha256:bfa8cbf4812c07a6796827933bc1c6292deb36370b5632cbc2b9dbeaef82911b"
-        }
-      }
-    },
     "who-owns-ego-power-plus-chervon-manufacturing": {
       "files": {
         "01-cover.png": {
@@ -54931,20 +54788,6 @@
           "status": "matched",
           "primary": "/images/articles/who-owns-flex-tools-chervon-lowes/02-flex-chervon-lowes-relationship-map.webp",
           "hash": "sha256:441ca329ac9ecfaba45dad053f9fb1b809067279e1ed207c5da324b6a1348425"
-        }
-      }
-    },
-    "who-owns-gardena-husqvarna-group": {
-      "files": {
-        "01-cover.png": {
-          "status": "matched",
-          "primary": "/images/articles/who-owns-gardena-husqvarna-group/01-cover.webp",
-          "hash": "sha256:d8c4650e376bc4a47d470cd79d2dc961beb414df1da1ebe5abbadcce419473f4"
-        },
-        "02-gardena-ownership-structure.png": {
-          "status": "matched",
-          "primary": "/images/articles/who-owns-gardena-husqvarna-group/02-gardena-ownership-structure.webp",
-          "hash": "sha256:959309b77e746b218e7ac0f51ed7b2e656aa2acfa4f6095fd920b48eac8bf70c"
         }
       }
     },
@@ -55767,20 +55610,6 @@
           "code": "HISTORICAL_SVG_PREFIX_NORMALIZED",
           "primary": "/images/blog/toro-product-responsibility-map.svg",
           "hash": "sha256:740becd8bf8f1da495940bfe6d8f12f12e279e8ed48fbab25deabcc844f20bf3"
-        }
-      }
-    },
-    "who-owns-toro-the-toro-company": {
-      "files": {
-        "01-cover.png": {
-          "status": "matched",
-          "primary": "/images/articles/who-owns-toro-the-toro-company/01-cover.webp",
-          "hash": "sha256:8e10f01ba3e0485a94360ad7f9c967d5b996a13f269a5bf9a80b727dd5390481"
-        },
-        "02-toro-ownership-structure.png": {
-          "status": "matched",
-          "primary": "/images/articles/who-owns-toro-the-toro-company/02-toro-ownership-structure.webp",
-          "hash": "sha256:fa352226b0069d841f3a164bbf6334e891ea55e020e0b4a2a925fdff9495e1ae"
         }
       }
     },
