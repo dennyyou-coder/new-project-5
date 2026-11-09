@@ -1,3 +1,4 @@
+import { confirmEmailHtml, createConfirmToken } from "@/lib/leadConfirm";
 import { brevoAttributes, directListFor, looksAutomated, validateLead, wantsNewsletter, type Lead } from "@/lib/leads";
 
 export const runtime = "nodejs";
@@ -77,13 +78,24 @@ export async function POST(request: Request) {
     }
     if (wantsNewsletter(lead) && settings.lists.newsletter) {
       if (settings.doiTemplate) {
-        // Double opt-in: Brevo sends the confirmation email and adds the contact to the list once they click it.
+        // Double opt-in with a Brevo template: Brevo sends the email and adds the contact once they click it.
         await brevo(settings.key, "/contacts/doubleOptinConfirmation", {
           email: lead.email,
           attributes,
           includeListIds: [settings.lists.newsletter],
           templateId: settings.doiTemplate,
           redirectionUrl: "https://worldcleanbiz.com/subscribed"
+        });
+      } else if (settings.sender) {
+        // Double opt-in run by the site: a signed link to /subscribe/confirm; the list is added on confirmation.
+        const token = createConfirmToken(lead.email, attributes, process.env.LEAD_CONFIRM_SECRET || settings.key);
+        const confirmUrl = `${new URL(request.url).origin}/subscribe/confirm?token=${encodeURIComponent(token)}`;
+        await brevo(settings.key, "/smtp/email", {
+          sender: { email: settings.sender, name: "World Clean Biz" },
+          to: [{ email: lead.email, ...(lead.name ? { name: lead.name } : {}) }],
+          subject: "Confirm your WCB weekly brief subscription",
+          htmlContent: confirmEmailHtml(confirmUrl),
+          tags: ["newsletter-confirm"]
         });
       } else {
         await brevo(settings.key, "/contacts", { email: lead.email, attributes, listIds: [settings.lists.newsletter], updateEnabled: true });
@@ -103,5 +115,5 @@ export async function POST(request: Request) {
     return Response.json({ ok: false, error: "Something went wrong. Please try again or email us." }, { status: 502 });
   }
 
-  return Response.json({ ok: true, doubleOptIn: wantsNewsletter(lead) && Boolean(settings.doiTemplate) });
+  return Response.json({ ok: true, doubleOptIn: wantsNewsletter(lead) && Boolean(settings.doiTemplate || settings.sender) });
 }

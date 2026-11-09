@@ -44,3 +44,29 @@ test("honeypot and instant submissions are treated as automated", () => {
   assert.equal(looksAutomated({ startedAt: 1000 }, 1500), true);
   assert.equal(looksAutomated({ startedAt: 1000 }, 9000), false);
 });
+
+test("newsletter confirmation tokens are signed and expire after 7 days", async () => {
+  const { createConfirmToken, readConfirmToken, CONFIRM_MAX_AGE_MS, confirmEmailHtml } = await import("../lib/leadConfirm.ts");
+  const now = Date.UTC(2026, 10, 9);
+  const token = createConfirmToken("a@b.co", { SOURCE_PAGE: "/news" }, "secret", now);
+  const ok = readConfirmToken(token, "secret", now + 1000);
+  assert.ok(ok.ok);
+  assert.equal(ok.payload.email, "a@b.co");
+  assert.deepEqual(ok.payload.attributes, { SOURCE_PAGE: "/news" });
+  assert.deepEqual(readConfirmToken(token, "other-secret", now), { ok: false, reason: "invalid" });
+  const [body] = token.split(".");
+  const forged = Buffer.from(JSON.stringify({ email: "x@y.co", attributes: {}, issuedAt: now })).toString("base64url");
+  assert.equal(readConfirmToken(`${forged}.${token.split(".")[1]}`, "secret", now).ok, false);
+  assert.equal(readConfirmToken(`${body}`, "secret", now).ok, false);
+  assert.deepEqual(readConfirmToken(token, "secret", now + CONFIRM_MAX_AGE_MS + 1), { ok: false, reason: "expired" });
+  assert.match(confirmEmailHtml("https://worldcleanbiz.com/subscribe/confirm?token=a&b"), /token=a&amp;b/);
+});
+
+test("confirmation link lands on a page that confirms with a POST button, not on GET", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const page = await readFile(new URL("../app/subscribe/confirm/page.tsx", import.meta.url), "utf8");
+  assert.match(page, /method="post" action="\/api\/leads\/confirm"/);
+  const api = await readFile(new URL("../app/api/leads/confirm/route.ts", import.meta.url), "utf8");
+  assert.match(api, /export async function POST/);
+  assert.doesNotMatch(api, /export async function GET/);
+});
