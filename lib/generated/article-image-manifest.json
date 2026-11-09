@@ -2483,6 +2483,42 @@
         "outputHash": "sha256:0920ee583d8d9c1cf5ad63f96c2dcee827cecd10423d04d9e914769cc3406539"
       }
     },
+    "/images/articles/beatbot-vs-wybot-pool-cleaners/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44476,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:95549ec00bebbcf27109524468a750a267d075eb05067f5380868fb94b47dbb4",
+      "outputHash": "sha256:71cf970cf967e498d5e1c030b0dc74f8528f889f84d762850f76ff197325addb",
+      "mobile": {
+        "src": "/images/articles/beatbot-vs-wybot-pool-cleaners/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17058,
+        "outputHash": "sha256:8d2bf8822839128c1faa104892b817a634f0eef77c01214c26646b023fb02643"
+      }
+    },
+    "/images/articles/beatbot-vs-wybot-pool-cleaners/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 45834,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:498a5ddbf8003a833b94255313ddd12dccd645f5f5df1f773c64e37b1e067d29",
+      "outputHash": "sha256:5dd9cdf8b792d561649ed730098b7c829ad6918df9e45ce6358e7c0252bd05b2",
+      "mobile": {
+        "src": "/images/articles/beatbot-vs-wybot-pool-cleaners/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17774,
+        "outputHash": "sha256:12aa20fed840f8d38674de3be8fc31b0ee0105975fd9ba4236956155a5f64cf7"
+      }
+    },
     "/images/articles/bissell-crosswave-edge-cordless-4328f/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -8530,6 +8566,42 @@
         "outputHash": "sha256:721cb3732ebb706551465ddf37de54d523d9d1b86e004e9407120c8867c4d49c"
       }
     },
+    "/images/articles/ego-vs-greenworks-battery-outdoor-tools/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 59820,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:8eef3af828679b33bf56e7a9747093529a9331f8d39d39bcae88a76d5df7f972",
+      "outputHash": "sha256:a1ed9cbe5d2ba03b7d74c4b86aa2b528b8d90e38acdb09a852d9d2c51e06a658",
+      "mobile": {
+        "src": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 23156,
+        "outputHash": "sha256:a5b28883a1409fac04968e0f53c2296bf5086a75965e6964d4bb9cd578d103c5"
+      }
+    },
+    "/images/articles/ego-vs-greenworks-battery-outdoor-tools/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 44292,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:f51bb77ca7468c20e5c92169d699d3b956835530c9524c41de6873ef1ed005bf",
+      "outputHash": "sha256:270181e77e5ec9f6ac99c4faef4eec83c15e1fe8c80b1eefd85b5bc9d5752677",
+      "mobile": {
+        "src": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17010,
+        "outputHash": "sha256:8ef60be3a9250690f86e11624a6fd578a800aca2db9219b091157b5216601e6e"
+      }
+    },
     "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -9889,6 +9961,42 @@
         "height": 450,
         "bytes": 28262,
         "outputHash": "sha256:9a7a2796dc63d84e05f3105159412357637fe6f5a73b6a23d09ff24dc3022d66"
+      }
+    },
+    "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 56910,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:3911c178673362f035f5ce202f43002c2cd78647e0b1a86bc18bd2b28c66364b",
+      "outputHash": "sha256:b83e1987b6378ef5a8bdc9f7fc9b26b90a2f279087226700bf8a3c57b4fb1cee",
+      "mobile": {
+        "src": "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 24280,
+        "outputHash": "sha256:756afc825bc33140fac3543d61a829e5139c72bbb88b894717419086c49d1aff"
+      }
+    },
+    "/images/articles/gausium-vs-pudu-cleaning-robots/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 52560,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:131e171912c5e3731fbe1759bac5889d4864c22c0eb110e8ca946eb5bdd7fa0f",
+      "outputHash": "sha256:971892c1c5443327418311447792b10596046c4020ada2ec32591eebd6f495e1",
+      "mobile": {
+        "src": "/images/articles/gausium-vs-pudu-cleaning-robots/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 20190,
+        "outputHash": "sha256:54e2564f141fad851a35a80bc2cf180c3108f89c507f4632f1b2ec42329f893a"
       }
     },
     "/images/articles/german-vacuum-brands-in-the-cordless-wave/01-cover.webp": {
@@ -20839,6 +20947,42 @@
         "outputHash": "sha256:c4367a151ea382b10db73f0dca05dced684c524d9ece109183b4f99d0b4e4af8"
       }
     },
+    "/images/articles/shark-vs-roomba-robot-vacuums/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 42572,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:363acef59ba149e4bbd82daf2703578aa1fb13237add7389b75e16e5e69927b8",
+      "outputHash": "sha256:b30df2f1cc9bc0b387d4ab702576ef69558dd474d7ff8e70b9de561f8b831357",
+      "mobile": {
+        "src": "/images/articles/shark-vs-roomba-robot-vacuums/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 17254,
+        "outputHash": "sha256:22765fb748c6733ee18489a3ce3b86f7e86b4c57d5efe060fb5694da1b14db87"
+      }
+    },
+    "/images/articles/shark-vs-roomba-robot-vacuums/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 43038,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:90414470799112930aabbd0cd8ac7aa73475a97fc5baf79e12926ae6ea4bd3a1",
+      "outputHash": "sha256:90b138b1d6ce634c7b1714daa628fa03ac3e820f5cfa07a1f2881ccc4b0d7e2f",
+      "mobile": {
+        "src": "/images/articles/shark-vs-roomba-robot-vacuums/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 16272,
+        "outputHash": "sha256:00f5706d9601e88b73bc9e6e9458111b7d2025e3af510d7b57affd2e7c8f6da2"
+      }
+    },
     "/images/articles/sharkninja-hit-product-pipeline/01-cover.webp": {
       "role": "cover",
       "kind": "photo",
@@ -21687,6 +21831,42 @@
         "height": 450,
         "bytes": 20508,
         "outputHash": "sha256:76d569a4064b2e714bff772c2e521f032fdd0b3ec4c1de144496f26f2f171e7c"
+      }
+    },
+    "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover.webp": {
+      "role": "cover",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 32936,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:66bb55c384b6dc31c6ee794788fa18398868c11718e8fe2b2596fdc235d18f31",
+      "outputHash": "sha256:547cf4464b8e33d9ce50c32e4da926ee9f60003712d129a7de42ede6b430a32f",
+      "mobile": {
+        "src": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 15248,
+        "outputHash": "sha256:2aedc61a0a77d7e99fa616c9ed1aac31fc85f56d7b54996eddd1ca6dce19d7e6"
+      }
+    },
+    "/images/articles/tennant-vs-nilfisk-floor-scrubbers/02-verdict.webp": {
+      "role": "body",
+      "kind": "photo",
+      "width": 1600,
+      "height": 900,
+      "bytes": 50158,
+      "format": "webp",
+      "quality": 84,
+      "sourceHash": "sha256:608430af4aa56fc8e686d51fa395c37dbe6e05d36cf832bc09bdbf2c425aef3b",
+      "outputHash": "sha256:dd4566ffc8a65bc488e32e775f80bfb1eb0d51c7e1c2f97987017e490c20112f",
+      "mobile": {
+        "src": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/02-verdict-800.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 19262,
+        "outputHash": "sha256:5c33584417f3327b6f1e982e1f69a8352abecd48e12c53e5c6a5da2d8e632b89"
       }
     },
     "/images/articles/thoughts-on-mijia-mite-removal-vacuum/01-cover.webp": {
@@ -40851,6 +41031,13 @@
       "cover": "/images/articles/beatbot-vs-polaris-robotic-pool-cleaners/01-cover.webp",
       "body": []
     },
+    "beatbot-vs-wybot-pool-cleaners": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/beatbot-vs-wybot-pool-cleaners/01-cover.webp",
+      "body": [
+        "/images/articles/beatbot-vs-wybot-pool-cleaners/02-verdict.webp"
+      ]
+    },
     "bissell-barkbath-pet-vacuum-cleaner": {
       "budgetClass": "standard",
       "cover": "/images/insights/bissell-barkbath-pet-vacuum-cleaner-image-001.png",
@@ -42109,6 +42296,13 @@
         "/images/articles/ecovacs-x5-hybrid-dreame-triform-market/05-triform-three-forms.webp"
       ]
     },
+    "ego-vs-greenworks-battery-outdoor-tools": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/01-cover.webp",
+      "body": [
+        "/images/articles/ego-vs-greenworks-battery-outdoor-tools/02-verdict.webp"
+      ]
+    },
     "eu-battery-rules-smartphones-power-tools": {
       "budgetClass": "standard",
       "cover": "/images/articles/eu-battery-rules-smartphones-power-tools/01-cover.webp",
@@ -42364,6 +42558,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
       "body": []
+    },
+    "gausium-vs-pudu-cleaning-robots": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover.webp",
+      "body": [
+        "/images/articles/gausium-vs-pudu-cleaning-robots/02-verdict.webp"
+      ]
     },
     "german-vacuum-brands-in-the-cordless-wave": {
       "budgetClass": "standard",
@@ -44512,6 +44713,13 @@
       "cover": "/images/articles/shark-vs-dyson-cordless-vacuums/01-cover.webp",
       "body": []
     },
+    "shark-vs-roomba-robot-vacuums": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/shark-vs-roomba-robot-vacuums/01-cover.webp",
+      "body": [
+        "/images/articles/shark-vs-roomba-robot-vacuums/02-verdict.webp"
+      ]
+    },
     "sharkninja-hit-product-pipeline": {
       "budgetClass": "standard",
       "cover": "/images/articles/sharkninja-hit-product-pipeline/01-cover.webp",
@@ -44697,6 +44905,13 @@
       "budgetClass": "standard",
       "cover": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
       "body": []
+    },
+    "tennant-vs-nilfisk-floor-scrubbers": {
+      "budgetClass": "standard",
+      "cover": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover.webp",
+      "body": [
+        "/images/articles/tennant-vs-nilfisk-floor-scrubbers/02-verdict.webp"
+      ]
     },
     "the-counterattack-of-chyson-vacuum-brands": {
       "budgetClass": "standard",
@@ -46856,6 +47071,20 @@
           "status": "matched",
           "primary": "/images/articles/beatbot-vs-polaris-robotic-pool-cleaners/01-cover.webp",
           "hash": "sha256:f79c99c8c2ab9380bc008de8640679c97925ff164c84352d566702044c965fc8"
+        }
+      }
+    },
+    "beatbot-vs-wybot-pool-cleaners": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-vs-wybot-pool-cleaners/01-cover.webp",
+          "hash": "sha256:95549ec00bebbcf27109524468a750a267d075eb05067f5380868fb94b47dbb4"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/beatbot-vs-wybot-pool-cleaners/02-verdict.webp",
+          "hash": "sha256:498a5ddbf8003a833b94255313ddd12dccd645f5f5df1f773c64e37b1e067d29"
         }
       }
     },
@@ -49135,6 +49364,20 @@
         }
       }
     },
+    "ego-vs-greenworks-battery-outdoor-tools": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/01-cover.webp",
+          "hash": "sha256:8eef3af828679b33bf56e7a9747093529a9331f8d39d39bcae88a76d5df7f972"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/ego-vs-greenworks-battery-outdoor-tools/02-verdict.webp",
+          "hash": "sha256:f51bb77ca7468c20e5c92169d699d3b956835530c9524c41de6873ef1ed005bf"
+        }
+      }
+    },
     "eu-battery-rules-smartphones-power-tools": {
       "files": {
         "01-cover.png": {
@@ -49584,6 +49827,20 @@
           "status": "matched",
           "primary": "/images/articles/gausium-mira-issa-innovation-award-november-2025/01-cover.webp",
           "hash": "sha256:c35f9a3cb4408aa727d7dec2c4eb58f75190cf0966035436cf12da32ae8a3440"
+        }
+      }
+    },
+    "gausium-vs-pudu-cleaning-robots": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/gausium-vs-pudu-cleaning-robots/01-cover.webp",
+          "hash": "sha256:3911c178673362f035f5ce202f43002c2cd78647e0b1a86bc18bd2b28c66364b"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/gausium-vs-pudu-cleaning-robots/02-verdict.webp",
+          "hash": "sha256:131e171912c5e3731fbe1759bac5889d4864c22c0eb110e8ca946eb5bdd7fa0f"
         }
       }
     },
@@ -53306,6 +53563,20 @@
         }
       }
     },
+    "shark-vs-roomba-robot-vacuums": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/shark-vs-roomba-robot-vacuums/01-cover.webp",
+          "hash": "sha256:363acef59ba149e4bbd82daf2703578aa1fb13237add7389b75e16e5e69927b8"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/shark-vs-roomba-robot-vacuums/02-verdict.webp",
+          "hash": "sha256:90414470799112930aabbd0cd8ac7aa73475a97fc5baf79e12926ae6ea4bd3a1"
+        }
+      }
+    },
     "sharkninja-hit-product-pipeline": {
       "files": {
         "01-cover.png": {
@@ -53561,6 +53832,20 @@
           "status": "matched",
           "primary": "/images/articles/tennant-p1-vac-autonomous-vacuum-october-2026/01-cover.webp",
           "hash": "sha256:e964c9f79c5fb5f09d8bcaed4cc5f01ad4a6165ac1f3fc7386d23e233d09a3fa"
+        }
+      }
+    },
+    "tennant-vs-nilfisk-floor-scrubbers": {
+      "files": {
+        "01-cover.png": {
+          "status": "matched",
+          "primary": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/01-cover.webp",
+          "hash": "sha256:66bb55c384b6dc31c6ee794788fa18398868c11718e8fe2b2596fdc235d18f31"
+        },
+        "02-verdict.png": {
+          "status": "matched",
+          "primary": "/images/articles/tennant-vs-nilfisk-floor-scrubbers/02-verdict.webp",
+          "hash": "sha256:608430af4aa56fc8e686d51fa395c37dbe6e05d36cf832bc09bdbf2c425aef3b"
         }
       }
     },
