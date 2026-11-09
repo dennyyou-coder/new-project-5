@@ -79,6 +79,7 @@ export default async function CategoryHubPage({ params }: Props) {
     analysis.length ? { label: "Analysis", href: "#hub-analysis" } : null,
     models.length ? { label: `${productSelectionYear} models`, href: "#hub-models" } : null,
     companies.length ? { label: "Companies", href: "#hub-companies" } : null,
+    data.equipment.length ? { label: "Equipment", href: "#hub-equipment" } : null,
     sourcing ? { label: "Sourcing", href: "#hub-sourcing" } : null
   ].filter((item): item is { label: string; href: string } => Boolean(item));
 
@@ -250,6 +251,20 @@ export default async function CategoryHubPage({ params }: Props) {
                 );
               })}
             </div>
+          </section>
+        ) : null}
+
+        {data.equipment.length ? (
+          <section className="ch-section ch-equipment" id="hub-equipment" aria-labelledby="hub-equipment-heading">
+            <div className="ch-head">
+              <h2 id="hub-equipment-heading">Equipment types</h2>
+              <Link className="wcb-more" href="/equipment">All equipment types</Link>
+            </div>
+            <ul>
+              {data.equipment.map((item) => (
+                <li key={item.slug}><Link href={`/equipment/${item.slug}`}>{item.name}</Link></li>
+              ))}
+            </ul>
           </section>
         ) : null}
 

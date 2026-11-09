@@ -125,3 +125,14 @@ test("robotic mowers list the Automower, Landroid and other mower makers without
   const published = new Set((await import("../lib/brands.ts")).getPublishedBrandProfiles((await import("../lib/content.ts")).getInsights()).map((p) => p.slug));
   for (const hub of HUB_CATEGORIES) for (const slug of hub.rules.brandSlugs ?? []) assert.ok(published.has(slug), `${hub.slug}: ${slug} is a published profile`);
 });
+
+test("every published equipment type is linked from a category hub", async () => {
+  const { HUB_EQUIPMENT } = await import("../lib/hubCategories.ts");
+  const { getAllHubCategoryData } = await import("../lib/hubCategoryContent.ts");
+  const { getEquipmentProfiles } = await import("../lib/equipment.ts");
+  const published = getEquipmentProfiles().filter((profile) => profile && profile.status === "published").map((profile) => profile.slug);
+  const known = new Set(getEquipmentProfiles().map((profile) => profile?.slug));
+  for (const slugs of Object.values(HUB_EQUIPMENT)) for (const slug of slugs) assert.ok(known.has(slug), `unknown equipment ${slug}`);
+  const linked = new Set(getAllHubCategoryData().flatMap((data) => data.equipment.map((item) => item.slug)));
+  for (const slug of published) assert.ok(linked.has(slug), `${slug} is on no hub`);
+});

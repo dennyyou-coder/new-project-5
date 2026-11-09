@@ -133,6 +133,9 @@
 .hub-page.ch .ch-guides li { padding: 10px 0; border-top: 1px solid var(--hub-line); }
 .hub-page.ch .ch-guides li a { font-size: 15px; font-weight: 600; line-height: 1.45; color: var(--hub-ink); }
 .hub-page.ch .ch-guides li a:hover { color: var(--hub-link); }
+.hub-page.ch .ch-equipment ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.hub-page.ch .ch-equipment a { display: inline-block; padding: 7px 12px; border: 1px solid var(--hub-line); border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--hub-ink); text-decoration: none; }
+.hub-page.ch .ch-equipment a:hover { border-color: var(--hub-link); color: var(--hub-link); }
 .hub-page.ch .ch-archive summary { display: inline-block; margin-bottom: 12px; padding: 8px 14px; border: 1px solid var(--hub-line); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--hub-ink); cursor: pointer; list-style: none; }
 .hub-page.ch .ch-archive summary::-webkit-details-marker { display: none; }
 .hub-page.ch .ch-archive summary:hover { color: var(--hub-link); border-color: var(--hub-link); }
