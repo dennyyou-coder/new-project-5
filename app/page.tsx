@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import "./styles/home.css";
 import "./styles/approved-home.css";
 import "./styles/home-b.css";
@@ -13,6 +13,7 @@ import { findParentProfile, shortParentName } from "@/lib/brandProfileView";
 import { TallyButton, TallyReportButton } from "@/components/LeadForms";
 import { eventBadge, upcomingEvents } from "@/lib/industryEvents";
 import { FEATURED_REPORT } from "@/lib/reports";
+import { WCB_TOOLS, type ToolId } from "@/lib/tools/catalog";
 import { responsiveImageProps } from "@/lib/articleImages";
 import { getPublishedBrandProfiles } from "@/lib/brands";
 import { getInsights } from "@/lib/content";
@@ -33,6 +34,28 @@ export const revalidate = 21600;
 const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 const founderCoverFallback = "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp";
 // Supplier requests by category: each links to that category's sourcing page.
+const svg = (path: string) => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d={path} />
+  </svg>
+);
+
+// Line icons for the homepage tool cards: a container, a checklist and a rising chart.
+const TOOL_ICONS: Record<ToolId, ReactNode> = {
+  "landed-cost": svg("M3 9h18v10H3zM3 9l3-4h12l3 4M8 9v10M16 9v10M12 9v10"),
+  "export-compliance": svg("M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"),
+  "cleaning-robot-roi": svg("M4 20V10M10 20V4M16 20v-7M22 20H2")
+};
+
+// Short titles and one-liners so the three cards stay the same height.
+const TOOL_CARDS: Record<ToolId, { title: string; line: string }> = {
+  "landed-cost": { title: "Landed cost calculator", line: "US, EU and UK duties, fees and VAT on your shipment" },
+  "export-compliance": { title: "Export compliance checklist", line: "FCC, CE, UKCA and the 2027 deadlines for your product" },
+  "cleaning-robot-roi": { title: "Robot payback calculator", line: "Hours freed and months to pay back a floor robot" }
+};
+
+const homeTools = WCB_TOOLS.map((tool) => ({ ...tool, ...TOOL_CARDS[tool.id] }));
+
 const sourcingLinks = [
   { label: "Robot vacuums", href: "/sourcing/robotic-vacuums" },
   { label: "Vacuum cleaners", href: "/sourcing/vacuum-cleaners" },
@@ -338,39 +361,51 @@ export default function HomePage() {
         <div className="home-b-container">
           <div className="home-b-head">
             <h2 id="home-business-title">For your business</h2>
+            <Link className="wcb-more" href="/tools">All tools</Link>
           </div>
           <div className="home-b-business">
+            {homeTools.map((tool) => (
+              <Link key={tool.id} className="home-b-tool" href={tool.href}>
+                <span className="home-b-tool-icon" aria-hidden="true">{TOOL_ICONS[tool.id]}</span>
+                <span className="home-b-tool-copy">
+                  <span className="home-b-biz-kicker">Free tool</span>
+                  <strong>{tool.title}</strong>
+                  <span>{tool.line}</span>
+                </span>
+                <span className="home-b-tool-go" aria-hidden="true">→</span>
+              </Link>
+            ))}
             <article className="home-b-biz home-b-biz-report">
-              <span className="home-b-biz-kicker">Free report · {FEATURED_REPORT.pages} pages</span>
-              <div className="home-b-biz-report-row">
-                <img className="home-b-biz-cover" src={FEATURED_REPORT.cover} alt={`${FEATURED_REPORT.title} report cover`} loading="lazy" decoding="async" />
-                <div>
-                  <h3>{FEATURED_REPORT.title}</h3>
-                  <p>How growth is spreading from indoor appliances to yard, pool and commercial cleaning robots, with checklists for buyers and suppliers.</p>
+              <img className="home-b-biz-cover" src={FEATURED_REPORT.cover} alt={`${FEATURED_REPORT.title} report cover`} loading="lazy" decoding="async" />
+              <div className="home-b-biz-body">
+                <span className="home-b-biz-kicker">Free report · {FEATURED_REPORT.pages} pages</span>
+                <h3>{FEATURED_REPORT.title}</h3>
+                <p>How growth is spreading from indoor appliances to yard, pool and commercial cleaning robots, with checklists for buyers and suppliers.</p>
+                <div className="home-b-biz-actions">
+                  <TallyReportButton className="home-b-biz-button" ctaLocation="home_business_report" reportId={FEATURED_REPORT.id}>
+                    Get the free PDF
+                  </TallyReportButton>
+                  <Link href="/reports">All reports</Link>
                 </div>
-              </div>
-              <div className="home-b-biz-actions">
-                <TallyReportButton className="home-b-biz-button" ctaLocation="home_business_report" reportId={FEATURED_REPORT.id}>
-                  Get the free PDF
-                </TallyReportButton>
-                <Link href="/reports">All reports</Link>
               </div>
             </article>
             <article className="home-b-biz home-b-biz-sourcing">
-              <span className="home-b-biz-kicker">Sourcing</span>
-              <h3>Looking for a supplier or factory?</h3>
-              <p>Tell us the product and your market. The WCB team knows the factories behind the brands and replies within two working days.</p>
+              <div className="home-b-biz-body">
+                <span className="home-b-biz-kicker">Sourcing</span>
+                <h3>Looking for a supplier or factory?</h3>
+                <p>Tell us the product and your market. The WCB team knows the factories behind the brands and replies within two working days.</p>
+                <div className="home-b-biz-actions">
+                  <TallyButton className="home-b-biz-button" ctaLocation="home_business_sourcing" form="sourcing">
+                    Send a sourcing request
+                  </TallyButton>
+                  <Link href="/sourcing">How it works</Link>
+                </div>
+              </div>
               <ul className="home-b-biz-pills" aria-label="Sourcing by category">
                 {sourcingLinks.map((link) => (
                   <li key={link.href}><Link href={link.href}>{link.label}</Link></li>
                 ))}
               </ul>
-              <div className="home-b-biz-actions">
-                <TallyButton className="home-b-biz-button" ctaLocation="home_business_sourcing" form="sourcing">
-                  Send a sourcing request
-                </TallyButton>
-                <Link href="/sourcing">How it works</Link>
-              </div>
             </article>
             <article className="home-b-biz home-b-biz-events">
               <div className="home-b-biz-events-head">
