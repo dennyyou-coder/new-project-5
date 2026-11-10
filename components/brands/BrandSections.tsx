@@ -186,7 +186,7 @@ export function BrandSections({
         action={models.length ? <Link className="bp-card-more wcb-more" href="/products">Product library</Link> : undefined}
       >
         {models.length ? (
-          <div className="bp-models">
+          <div className={`bp-models is-${Math.min(models.length, 4)}`}>
             {models.slice(0, 4).map((model) => (
               <Link key={model.slug} className="bp-model" href={`/products/${model.slug}`}>
                 <span className="bp-model-image"><img src={model.cover} alt="" loading="lazy" decoding="async" /></span>

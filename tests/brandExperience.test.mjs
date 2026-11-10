@@ -419,7 +419,7 @@ test("company page cards: ownership chain, product images, operations and buyer 
   assert.match(sections, /selectBrandContentVisuals\(profile\.contentVisuals\)/);
   assert.match(sections, /visuals\.get\("operations"\)/);
   assert.match(sections, /<ol className="bp-chain" aria-label="Ownership chain">/);
-  assert.match(sections, /className="bp-models"/);
+  assert.match(sections, /className=\{`bp-models is-\$\{Math\.min\(models\.length, 4\)\}`\}/);
   assert.match(sections, /profile\.manufacturingSupplyChain\.slice\(0, 3\)/);
   assert.match(sections, /profile\.marketsChannels\.slice\(0, 3\)/);
   assert.match(sections, /<details className="bp-checks">/);

@@ -1026,11 +1026,13 @@
 .home-b-events { display: grid; margin: 0; padding: 0; list-style: none; }
 .home-b-events li { display: grid; grid-template-columns: 48px 1fr; gap: 12px; align-items: center; padding: 10px 0; border-top: 1px solid var(--hb-line); }
 .home-b-events li:first-child { border-top: 0; padding-top: 2px; }
-.home-b-event-date { display: grid; justify-items: center; padding: 4px 0; border-radius: 8px; background: var(--hb-soft); line-height: 1.1; }
-.home-b-event-date span { font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--hb-muted); }
-.home-b-event-date strong { font-size: 18px; color: var(--hb-ink); }
-.home-b-events li.is-wcb .home-b-event-date { background: var(--hb-link); }
-.home-b-events li.is-wcb .home-b-event-date span, .home-b-events li.is-wcb .home-b-event-date strong { color: #ffffff; }
+/* Tear-off calendar: red month band over a white day, the WCB Expo in WCB blue. */
+.home-b-event-date { display: grid; grid-template-rows: auto 1fr; overflow: hidden; border: 1px solid #e3e7ee; border-radius: 8px; background: #ffffff; line-height: 1; text-align: center; box-shadow: 0 1px 2px rgba(14, 21, 38, 0.08); }
+.home-b-event-date span { padding: 4px 0 3px; background: #d92d20; font-size: 10px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: #ffffff; }
+.home-b-event-date strong { display: grid; place-items: center; padding: 5px 0 6px; font-size: 19px; font-weight: 800; color: var(--hb-ink); }
+.home-b-events li.is-wcb .home-b-event-date { border-color: var(--hb-link); }
+.home-b-events li.is-wcb .home-b-event-date span { background: var(--hb-link); }
+.home-b-events li.is-wcb .home-b-event-date strong { color: var(--hb-link); }
 .home-b-event-copy { display: grid; gap: 2px; min-width: 0; }
 .home-b-event-copy a { font-size: 15px; font-weight: 700; line-height: 1.3; }
 .home-b-event-copy .home-b-meta { font-size: 13px; color: var(--hb-subtle); }
@@ -1116,3 +1118,16 @@
   .home-b .home-zone--news .home-b-watch-card { grid-template-columns: 1fr; }
   .home-b .home-zone--news .home-b-watch-image { min-height: 56px; aspect-ratio: 16 / 7; }
 }
+
+/* Radar columns: a coloured mark and a plain name for each tracker. */
+.home-b-radar-head { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--hb-line); }
+.home-b-radar-mark { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; color: #ffffff; }
+.home-b-radar-mark.is-recall { background: #d92d20; }
+.home-b-radar-mark.is-fcc { background: #6941c6; }
+.home-b-radar-mark.is-rules { background: #0e7c86; }
+.home-b-radar-title { display: grid; gap: 1px; min-width: 0; }
+.home-b-radar-title strong { font-size: 17px; line-height: 1.2; color: var(--hb-ink); }
+.home-b-radar-title span { font-size: 12px; line-height: 1.35; color: var(--hb-subtle); }
+.home-b .home-b-radar-head > a { font-size: 13px; font-weight: 700; }
+.home-b-radar-list li:first-child { padding-top: 10px; }
+.home-b .home-b-radar-id { display: block; margin-top: 2px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 600; color: var(--hb-muted); }

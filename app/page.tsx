@@ -38,6 +38,20 @@ export const revalidate = 21600;
 const founderSeries = "building-worlds-no-1-cleaning-show-from-scratch";
 const founderCoverFallback = "/images/blog/building-worlds-no-1-cleaning-show-episode-01-cover.webp";
 // Supplier requests by category: each links to that category's sourcing page.
+const radarIcon = (paths: string[]) => (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+    {paths.map((d) => <path key={d} d={d} />)}
+  </svg>
+);
+
+// Each radar column gets its own mark so readers see three trackers, not one list:
+// a warning triangle for recalls, radio waves for FCC filings, a calendar for trade rules.
+const RADAR_ICONS = {
+  recall: radarIcon(["M12 3.5 2.8 19.5h18.4z", "M12 9.5v4.5", "M12 17h.01"]),
+  fcc: radarIcon(["M12 13v8", "M9.5 21h5", "M12 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z", "M8 7.5a5.5 5.5 0 0 0 0 7.8", "M16 7.5a5.5 5.5 0 0 1 0 7.8", "M5.2 4.8a9.5 9.5 0 0 0 0 13.4", "M18.8 4.8a9.5 9.5 0 0 1 0 13.4"]),
+  rules: radarIcon(["M4 5.5h16v15H4z", "M4 10h16", "M8.5 3.5v4", "M15.5 3.5v4", "M8.5 14.5l2 2 4-4"])
+};
+
 const sourcingLinks = [
   { label: "Robot vacuums", href: "/sourcing/robotic-vacuums" },
   { label: "Vacuum cleaners", href: "/sourcing/vacuum-cleaners" },
@@ -440,9 +454,13 @@ export default function HomePage() {
           </div>
           <div className="home-b-radar">
             <article className="home-b-radar-col">
-              <div className="home-b-biz-events-head">
-                <span className="home-b-biz-kicker">Latest recalls</span>
-                <Link href="/recalls">All recalls</Link>
+              <div className="home-b-radar-head">
+                <span className="home-b-radar-mark is-recall" aria-hidden="true">{RADAR_ICONS.recall}</span>
+                <span className="home-b-radar-title">
+                  <strong>Recalls</strong>
+                  <span>US CPSC and EU Safety Gate</span>
+                </span>
+                <Link href="/recalls">All</Link>
               </div>
               <ul className="home-b-radar-list">
                 {radarRecalls.map((recall) => (
@@ -457,24 +475,32 @@ export default function HomePage() {
               </ul>
             </article>
             <article className="home-b-radar-col">
-              <div className="home-b-biz-events-head">
-                <span className="home-b-biz-kicker">New FCC filings</span>
-                <Link href="/launch-radar">Launch radar</Link>
+              <div className="home-b-radar-head">
+                <span className="home-b-radar-mark is-fcc" aria-hidden="true">{RADAR_ICONS.fcc}</span>
+                <span className="home-b-radar-title">
+                  <strong>FCC filings</strong>
+                  <span>New radio approvals before launch</span>
+                </span>
+                <Link href="/launch-radar">All</Link>
               </div>
               <ul className="home-b-radar-list">
                 {radarFilings.map((filing) => (
                   <li key={`${filing.fccId}-${filing.date}`}>
                     <span className="home-b-meta">{shortDate(filing.date)}</span>
-                    <a href={fccIdUrl(filing.fccId)} target="_blank" rel="noopener noreferrer">{filing.company}: {filing.fccId}</a>
+                    <a href={fccIdUrl(filing.fccId)} target="_blank" rel="noopener noreferrer">{filing.company} <span className="home-b-radar-id">FCC ID {filing.fccId}</span></a>
                     <span className="home-b-radar-note">{filing.bands.join(", ") || "New product"}</span>
                   </li>
                 ))}
               </ul>
             </article>
             <article className="home-b-radar-col">
-              <div className="home-b-biz-events-head">
-                <span className="home-b-biz-kicker">Rules coming up</span>
-                <Link href="/rules-calendar">Calendar</Link>
+              <div className="home-b-radar-head">
+                <span className="home-b-radar-mark is-rules" aria-hidden="true">{RADAR_ICONS.rules}</span>
+                <span className="home-b-radar-title">
+                  <strong>Trade rules</strong>
+                  <span>Tariff and regulation deadlines</span>
+                </span>
+                <Link href="/rules-calendar">All</Link>
               </div>
               <ul className="home-b-radar-list">
                 {radarRules.map((rule) => (
