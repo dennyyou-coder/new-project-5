@@ -1119,15 +1119,22 @@
   .home-b .home-zone--news .home-b-watch-image { min-height: 56px; aspect-ratio: 16 / 7; }
 }
 
-/* Radar columns: a coloured mark and a plain name for each tracker. */
-.home-b-radar-head { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--hb-line); }
-.home-b-radar-mark { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; color: #ffffff; }
-.home-b-radar-mark.is-recall { background: #d92d20; }
-.home-b-radar-mark.is-fcc { background: #6941c6; }
-.home-b-radar-mark.is-rules { background: #0e7c86; }
-.home-b-radar-title { display: grid; gap: 1px; min-width: 0; }
-.home-b-radar-title strong { font-size: 17px; line-height: 1.2; color: var(--hb-ink); }
-.home-b-radar-title span { font-size: 12px; line-height: 1.35; color: var(--hb-subtle); }
-.home-b .home-b-radar-head > a { font-size: 13px; font-weight: 700; }
+/* Radar columns: a coloured banner with line art, the tracker's name and its source. */
+.home-b .home-b-radar-col { padding: 0; overflow: hidden; }
+.home-b .home-b-radar-col > ul { padding: 4px 22px 18px; }
+.home-b-radar-head { position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; align-items: center; min-height: 92px; padding: 16px 20px; overflow: hidden; color: #ffffff; }
+.home-b-radar-head.is-recall { background: linear-gradient(120deg, #b42318 0%, #e0402f 100%); }
+.home-b-radar-head.is-fcc { background: linear-gradient(120deg, #4a2a9e 0%, #7a50d8 100%); }
+.home-b-radar-head.is-rules { background: linear-gradient(120deg, #0b5f68 0%, #14919b 100%); }
+.home-b-radar-art { position: absolute; right: -8px; bottom: -8px; width: 118px; height: 84px; color: rgba(255, 255, 255, 0.2); pointer-events: none; }
+.home-b-radar-art svg { width: 100%; height: 100%; }
+.home-b-radar-mark { position: relative; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; background: rgba(255, 255, 255, 0.18); color: #ffffff; }
+.home-b-radar-title { position: relative; display: grid; gap: 2px; min-width: 0; }
+.home-b-radar-title strong { font-size: 18px; line-height: 1.2; color: #ffffff; }
+.home-b-radar-title span { font-size: 12px; line-height: 1.35; color: rgba(255, 255, 255, 0.85); }
+.home-b-radar-title { padding-right: 104px; }
+.home-b .home-b-radar-col { display: flex; flex-direction: column; }
+.home-b .home-b-radar-all { margin: auto 22px 18px; padding-top: 12px; border-top: 1px solid var(--hb-line); font-size: 14px; font-weight: 700; }
 .home-b-radar-list li:first-child { padding-top: 10px; }
 .home-b .home-b-radar-id { display: block; margin-top: 2px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 600; color: var(--hb-muted); }
+.home-b-radar-note.is-one-line { -webkit-line-clamp: 1; }
